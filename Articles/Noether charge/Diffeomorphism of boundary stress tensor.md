@@ -324,4 +324,8 @@ $$\tag{5.2}
  & + 
 \end{align}
 $$
-
+$$\tag{2.10}
+\begin{align}
+\gamma^{\mu.,.Q}_{\nu}
+\end{align}
+$$
