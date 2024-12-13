@@ -320,12 +320,45 @@ $$\tag{5.2}
  & =\left.\int_{\partial \Sigma} \frac{1}{2\pi}g^{(0)ab}(X_{\xi}\cdot \delta T^{(0)}_{bc})\zeta^{(0)c}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}\right|_{\tilde{\mathcal{P}}} \\
  & =\frac{1}{2\pi}\int_{\partial \Sigma} g^{(0)ab}(T^{(0)}_{dc}D_{b}^{(0)}\xi^{(0)d}\zeta^{(0)c}+T^{(0)}_{bd}D_{c}^{(0)}\xi^{(0)d}\zeta^{(0)c}+\xi^{(0)d}D_{d}^{(0)}T^{(0)}_{bc}\zeta^{(0)c})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
  & \left. \frac{1}{16\pi G}\int_{\partial \Sigma}\left(g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}D_{d}^{(0)}\xi^{(0)d}\zeta^{(0)c}-\zeta^{(0)a}g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{e}^{(0)}\xi^{(0)e}\right)\right|_{\tilde{\mathcal{P}}} \\
- & =\int_{\partial \Sigma}-\frac{1}{2\pi}g^{(0)ab}T_{bc}^{(0)}(\xi^{(0)d}D_{d}^{(0)}\zeta^{(0)c}-\zeta^{(0)d}D_{d}^{(0)}\xi^{(0)c}) \\
- & + 
+ & =\int_{\partial \Sigma}\left(-\frac{1}{2\pi}g^{(0)ab}T_{bc}^{(0)}(\xi^{(0)d}D_{d}^{(0)}\zeta^{(0)c}-\zeta^{(0)d}D_{d}^{(0)}\xi^{(0)c}) \right.\\
+ & +\frac{1}{4\pi}\xi^{(0)a}g^{(0)bc}T^{(0)}_{bc}D_{d}^{(0)}\zeta^{(0)d}+\frac{1}{2\pi}\xi^{(0)a}g^{(0)bc}D_{b}^{(0)}T^{(0)}_{cd}\zeta^{(0)d} \\
+ & +\frac{1}{2\pi}g^{(0)ab}(g^{(0)}_{cd}D_{b}^{(0)}\xi^{(0)d}+g^{(0)}_{bd}D_{c}^{(0)}\xi^{(0)d}-g^{(0)}_{bc}D_{d}^{(0)}\xi^{(0)d})g^{(0)ce}T^{(0)}_{ef}\zeta^{(0)f} \\
+ & +\frac{1}{4\pi}\xi^{(0)a}T^{(0)}_{bc}g^{(0)bd}g^{(0)ce}(g^{(0)}_{ef}D_{d}^{(0)}\zeta^{(0)f}+g^{(0)}_{df}D_{e}^{(0)}\zeta^{(0)f}-g^{(0)}_{de}D_{f}^{(0)}\zeta^{(0)f}) \\
+ & +\frac{1}{2\pi}D_{b}^{(0)}(g^{(0)ac}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)b}-g^{(0)bc}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)a}) \\
+ & \left.\left.+\frac{1}{16\pi G}(g^{(0)ab}D^{(0)}_{b}D_{c}^{(0)}D_{d}^{(0)}\xi^{(0)d}\zeta^{(0)c}-\zeta^{(0)a}g^{(0)bd}D_{b}^{(0)}D_{c}^{(0)}D_{e}^{(0)}\xi^{(0)e})\right)\varepsilon_{aa_{1}}\mathrm{d}x^{a_{1}}\right|_{\tilde{\mathcal{P}}} \\
+ & =Q_{\left\{\xi,\zeta\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}+\frac{1}{16\pi G}(g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}D_{d}^{(0)}\xi^{(0)d}\zeta^{(0)c}-\zeta^{(0)a}g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{e}^{(0)}\xi^{(0)e})\right)\varepsilon_{aa_{1}}\mathrm{d}x^{a_{1}}
 \end{align}
 $$
-$$\tag{2.10}
+
+原文中有少许typo
+
+$$\tag{5.3}
 \begin{align}
-\gamma^{\mu.,.Q}_{\nu}
+ & =-\frac{1}{2\pi}g^{(0)ab}T_{bc}^{(0)}\xi^{(0)d}D_{d}^{(0)}\zeta^{(0)c}+\frac{1}{2\pi}g^{(0)ab}T_{bc}^{(0)}\zeta^{(0)d}D_{d}^{(0)}\xi^{(0)c} \\
+ & +\frac{1}{4\pi}\xi^{(0)a}g^{(0)bc}T_{bc}^{(0)}D_{d}^{(0)}\zeta^{(0)d}+\frac{1}{2\pi}\xi^{(0)a}g^{(0)bc}D_{b}^{(0)}T_{cd}^{(0)}\zeta^{(0)d} \\
+ & +\frac{1}{2\pi}g^{(0)ab}g^{(0)cd}D_{b}^{(0)}\xi^{(0)d}g^{(0)ce}T_{ef}^{(0)}\zeta^{(0)f}+\frac{1}{2\pi}g^{(0)ab}g^{(0)}_{bd}D_{c}^{(0)}\xi^{(0)d}g^{(0)ce}T^{(0)}_{ef}\zeta^{(0)f}-\frac{1}{2\pi}g^{(0)ab}g^{(0)}_{bc}D_{d}^{(0)}\xi^{(0)d}g^{(0)ce}T^{(0)}_{ef}\zeta^{(0)f} \\
+ & +\frac{1}{4\pi}\xi^{(0)a}T^{(0)}_{bc}g^{(0)bd}g^{(0)ce}g^{(0)}_{ef}D_{d}^{(0)}\zeta^{(0)f}+\frac{1}{4\pi}\xi^{(0)a}T_{bc}^{(0)}g^{(0)bd}g^{(0)ce}g_{df}^{(0)}D_{e}^{(0)}\zeta^{(0)f}-\frac{1}{4\pi}\xi^{(0)a}T_{bc}^{(0)}g^{(0)bd}g^{(0)ce}g_{de}^{(0)}D_{f}^{(0)}\zeta^{(0)f} \\
+ & +\frac{1}{2\pi}D_{b}^{(0)}(g^{(0)ac}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)b}-g^{(0)bc}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)a})
 \end{align}
 $$
+
+$$\tag{5.4}
+\begin{align}
+& -\frac{1}{2\pi}g^{(0)ab}T_{bc}^{(0)}\xi^{(0)d}D_{d}^{(0)}\zeta^{(0)c}+\frac{1}{2\pi}g^{(0)ab}T_{bc}^{(0)}\zeta^{(0)d}D_{d}^{(0)}\xi^{(0)c} \\
+ & +\frac{1}{4\pi}\xi^{(0)a}g^{(0)bc}T_{bc}^{(0)}D_{d}^{(0)}\zeta^{(0)d}+\frac{1}{2\pi}\xi^{(0)a}g^{(0)bc}D_{b}^{(0)}T_{cd}^{(0)}\zeta^{(0)d} \\
+ & +\frac{1}{2\pi}g^{(0)ab}D_{b}^{(0)}\xi^{(0)c}T_{cd}^{(0)}\zeta^{(0)d}+\frac{1}{2\pi}D^{(0)b}\xi^{(0)a}T^{(0)}_{bc}\zeta^{(0)c}-\frac{1}{2\pi}g^{(0)ab}D_{d}^{(0)}\xi^{(0)d}T^{(0)}_{bc}\zeta^{(0)c} \\
+ & +\frac{1}{4\pi}\xi^{(0)a}T^{(0)}_{bc}D^{(0)b}\zeta^{(0)c}+\frac{1}{4\pi}\xi^{(0)a}T_{bc}^{(0)}D^{(0)c}\zeta^{(0)b}-\frac{1}{4\pi}\xi^{(0)a}T_{bc}^{(0)}g^{(0)bc}D_{d}^{(0)}\zeta^{(0)d} \\
+ & +\frac{1}{2\pi}g^{(0)ac}D_{b}^{(0)}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)b}+\frac{1}{2\pi}g^{(0)ac}T_{cd}^{(0)}D_{b}^{(0)}\zeta^{(0)d}\xi^{(0)b}+\frac{1}{2\pi}g^{(0)ac}T_{cd}^{(0)}\zeta^{(0)d}D_{b}^{(0)}\xi^{(0)b} \\
+ & -\frac{1}{2\pi}g^{(0)bc}D_{c}^{(0)}T_{cd}^{(0)}\zeta^{(0)d}\xi^{(0)a}-\frac{1}{2\pi}g^{(0)bc}T^{(0)}_{cd}D_{c}^{(0)}\zeta^{(0)d}\xi^{(0)a}-\frac{1}{2\pi}g^{(0)bc}T^{(0)}_{cd}\zeta^{(0)d}D_{c}^{(0)}\xi^{(0)a}
+\end{align}
+$$
+
+$$\tag{5.5}
+\begin{align}
+& \frac{1}{2\pi}g^{(0)ab}T_{bc}^{(0)}\zeta^{(0)d}D_{d}^{(0)}\xi^{(0)c}+\frac{1}{2\pi}g^{(0)ab}D_{b}^{(0)}\xi^{(0)c}T_{cd}^{(0)}\zeta^{(0)d} +\frac{1}{2\pi}g^{(0)ac}D_{b}^{(0)}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)b} \\
+= & \frac{1}{2\pi}g^{(0)ab}\left(T^{(0)}_{bd}\zeta^{(0)c}D_{c}^{(0)}\xi^{(0)d}+T_{dc}^{(0)}\zeta^{(0)c}D_{b}^{(0)}\xi^{(0)d}+\xi^{(0)d}D_{d}^{(0)}T^{(0)}_{bc}\zeta^{(0)c}\right)
+\end{align}
+$$
+
+the basic idea is to gather terms that are proportional to the conformal Killing equation.
+
