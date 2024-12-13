@@ -367,3 +367,65 @@ $$\tag{5.6}
 D_{a}^{(0)}\xi^{(0)}_{b}+D_{b}^{(0)}\xi^{(0)}_{a}-g^{(0)}_{ab}D_{c}^{(0)}\xi^{(0)c}=0
 \end{align}
 $$
+
+we will consider another example to feel the idea. consider a current $\displaystyle{j^{a}}$ satisfying $\displaystyle{D_{a}^{(0)}j^{a}=0}$, and a vector satisfying $\displaystyle{D_{a}^{(0)}\xi^{(0)}_{b}+D_{b}^{(0)}\xi_{a}^{(0)}=0}$, then on the one hand
+
+$$\tag{5.7}
+\begin{align}
+\int_{\partial \Sigma}\mathcal{L}_{\xi^{(0)}}j^{(0)a}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} & =\int_{\partial \Sigma}(\xi^{(0)b}D_{b}^{(0)}j^{(0)a}-j^{(0)b}D_{b}^{(0)}\xi^{(0)a})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
+ & =\int_{\partial \Sigma}\left(D_{b}^{(0)}(\xi^{(0)b}j^{(0)a}-j^{(0)b}\xi^{(0)a})-D_{b}^{(0)}\xi^{(0)b}j^{(0)a}+D_{b}^{(0)}j^{(0)b}\xi^{(0)a}\right)\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
+ & =0
+\end{align}
+$$
+
+on the other hand
+
+$$\tag{5.8}
+\begin{align}
+\int_{\partial \Sigma}g^{(0)ab}\mathcal{L}_{\xi^{(0)}}j^{(0)}_{b}\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\int_{\partial \Sigma}g^{(0)ab}(\xi^{(0)c}D_{c}^{(0)}j^{(0)}_{b}+j_{c}^{(0)}D_{b}^{(0)}\xi^{(0)c})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
+ & =\int_{\partial \Sigma}D_{c}^{(0)}(g^{(0)ab}\xi^{(0)c}j^{(0)}_{b})-g^{(0)av}D_{c}^{(0)}\xi^{(0)c}j^{(0)}_{b} \\
+ & +g^{(0)ab}j_{c}^{(0)}(D_{b}^{(0)}\xi^{(0)c}+D^{(0)c}\xi^{(0)b})-g^{(0)ab}j_{c}^{(0)}D^{(0)c}\xi^{(0)}_{b} )\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}}\\
+ & =\int_{\partial \Sigma}D_{c}^{(0)}(g^{(0)ab}\xi^{(0)c}j_{b}^{(0)}-g^{(0)ab}j^{(0)c}\xi_{b}^{(0)}) \\
+ & +g^{(0)ab}j_{c}^{(0)}(D_{b}^{(0)}j^{(0)c}+D^{(0)c}j^{(0)}_{b})-g^{(0)ab}D_{c}^{(0)}\xi^{(0)c}j_{b}^{(0)}+g^{(0)ab}D_{c}^{(0)}j^{(0)c}\xi_{b}^{(0)})\varepsilon_{aa_{1}}\mathrm{d}x^{a_{1}}
+\end{align}
+$$
+
+or another equivalent way
+
+$$\tag{5.9}
+\begin{align}
+\int_{\partial \Sigma}g^{(0)ab}\mathcal{L}_{\xi^{(0)}}j_{b}^{(0)}\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\int_{\partial \Sigma}(\mathcal{L}_{\xi}^{(0)}(g^{(0)ab}j^{(0)}_{b})-j^{(0)}_{b}\mathcal{L}_{\xi^{(0)}}g^{(0)ab})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
+ & =\int_{\partial \Sigma}(\xi^{(0)c}D_{c}^{(0)}(g^{(0)ab}j_{b}^{(0)})-g^{(0)bc}j^{(0)}_{c}D_{b}^{(0)}\xi^{(0)a}+g^{(0)ac}g^{(0)bd}(D_{c}^{(0)}\xi^{(0)}_{d}+D_{d}^{(0)}\xi_{c}^{(0)})j_{b}^{(0)})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
+ & =\int_{\partial \Sigma}D_{c}^{(0)}(g^{(0)ab}j_{b}^{(0)}\xi^{(0)c})-g^{(0)bc}j_{b}^{(0)}D_{c}^{(0)}\xi^{(0)a}+D^{(0)a}\xi^{(0)b}j_{b}^{(0)}+D^{(0)b}\xi^{(0)a}j_{b}^{(0)} \\
+ & -g^{(0)ab}j^{(0)}_{b}D_{c}^{(0)}\xi^{(0)c})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
+ & =\int_{\partial \Sigma}D_{c}^{(0)}(g^{(0)ab}j_{b}^{(0)}\xi^{(0)c})-D_{c}^{(0)}(g^{(0)ab}\xi^{(0)}_{b}j^{(0)c})+g^{(0)ab}\xi^{(0)}_{b}D_{c}^{(0)}j^{(0)c} \\
+ & +g^{(0)ab}j^{(0)c}(D_{b}^{(0)}\xi^{(0)}_{c}+D_{c}^{(0)}\xi_{b}^{(0)})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}}
+\end{align}
+$$
+
+now we will prove (5.2)
+
+$$\tag{5.9}
+\begin{align}
+ & \frac{1}{2\pi}\int_{\partial \Sigma} g^{(0)ab}(T^{(0)}_{dc}D_{b}^{(0)}\xi^{(0)d}\zeta^{(0)c}+T^{(0)}_{bd}D_{c}^{(0)}\xi^{(0)d}\zeta^{(0)c}+\xi^{(0)d}D_{d}^{(0)}T^{(0)}_{bc}\zeta^{(0)c})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}}  \\
+= & \frac{1}{2\pi}\int_{\partial \Sigma}g^{(0)ab}\mathcal{L}_{\xi^{(0)}}T^{(0)}_{bc}\zeta^{(0)c}\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}}=\frac{1}{2\pi}\int_{\partial \Sigma}g^{(0)ab}(\mathcal{L}_{\xi^{(0)}}(T^{(0)}_{bc}\zeta^{(0)c})-T^{(0)}_{bc}\mathcal{L}_{\xi^{(0)}}\zeta^{(0)c})\varepsilon_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+= & \frac{1}{2\pi}\int_{\partial \Sigma}g^{(0)ab}(\xi^{(0)d}D_{d}^{(0)}(T^{(0)}_{bc}\zeta^{(0)c})+T_{dc}^{(0)}\zeta^{(0)c}D_{b}^{(0)}\xi^{(0)d})\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+ & -\frac{1}{2\pi}\int_{\partial \Sigma}g^{(0)ab}T^{(0)}_{bc}(\xi^{(0)d}D_{d}^{(0)}\zeta^{(0)c}-\zeta^{(0)d}D_{d}^{(0)}\xi^{(0)c})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
+= & -\frac{1}{2\pi}\int_{\partial \Sigma}g^{(0)ab}T^{(0)}_{bc}(\xi^{(0)d}D_{d}^{(0)}\zeta^{(0)c}-\zeta^{(0)d}D_{d}^{(0)}\xi^{(0)c})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
+ & \frac{1}{2\pi}\int_{\partial \Sigma}D_{b}^{(0)}(g^{(0)ac}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)b})-\frac{1}{2\pi}\int_{\partial \Sigma}T^{(0)}_{bc}\zeta^{(0)c}D_{d}^{(0)}(g^{(0)ab}\xi^{(0)d})+\frac{1}{2\pi}\int_{\partial \Sigma}g^{(0)ab}T^{(0)}_{dc}\zeta^{(0)c}D_{b}^{(0)}\xi^{(0)d} \\
+= & -\frac{1}{2\pi}\int_{\partial \Sigma}g^{(0)ab}T^{(0)}_{bc}(\xi^{(0)d}D_{d}^{(0)}\zeta^{(0)c}-\zeta^{(0)d}D_{d}^{(0)}\xi^{(0)c})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
+ & +\frac{1}{2\pi}\int_{\partial \Sigma}g^{(0)ab}T^{(0)}_{bc}\zeta^{(0)}_{d}(-g^{(0)}D_{e}^{(0)}\xi^{(0)e})
+\end{align}
+$$
+
+$$
+\tag{5.2}
+\begin{align}
+ & \frac{1}{2\pi}\int_{\partial \Sigma} g^{(0)ab}(T^{(0)}_{dc}D_{b}^{(0)}\xi^{(0)d}\zeta^{(0)c}+T^{(0)}_{bd}D_{c}^{(0)}\xi^{(0)d}\zeta^{(0)c}+\xi^{(0)d}D_{d}^{(0)}T^{(0)}_{bc}\zeta^{(0)c})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
+ & =\int_{\partial \Sigma}\left(-\frac{1}{2\pi}g^{(0)ab}T_{bc}^{(0)}(\xi^{(0)d}D_{d}^{(0)}\zeta^{(0)c}-\zeta^{(0)d}D_{d}^{(0)}\xi^{(0)c}) \right.\\
+ & +\frac{1}{4\pi}\xi^{(0)a}g^{(0)bc}T^{(0)}_{bc}D_{d}^{(0)}\zeta^{(0)d}+\frac{1}{2\pi}\xi^{(0)a}g^{(0)bc}D_{b}^{(0)}T^{(0)}_{cd}\zeta^{(0)d} \\
+ & +\frac{1}{2\pi}g^{(0)ab}(g^{(0)}_{cd}D_{b}^{(0)}\xi^{(0)d}+g^{(0)}_{bd}D_{c}^{(0)}\xi^{(0)d}-g^{(0)}_{bc}D_{d}^{(0)}\xi^{(0)d})g^{(0)ce}T^{(0)}_{ef}\zeta^{(0)f} \\
+ & +\frac{1}{4\pi}\xi^{(0)a}T^{(0)}_{bc}g^{(0)bd}g^{(0)ce}(g^{(0)}_{ef}D_{d}^{(0)}\zeta^{(0)f}+g^{(0)}_{df}D_{e}^{(0)}\zeta^{(0)f}-g^{(0)}_{de}D_{f}^{(0)}\zeta^{(0)f}) \\
+ & +\frac{1}{2\pi}D_{b}^{(0)}(g^{(0)ac}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)b}-g^{(0)bc}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)a}) \\
+\end{align}
+$$
