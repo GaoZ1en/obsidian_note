@@ -362,3 +362,8 @@ $$
 
 the basic idea is to gather terms that are proportional to the conformal Killing equation.
 
+$$\tag{5.6}
+\begin{align}
+D_{a}^{(0)}\xi^{(0)}_{b}+D_{b}^{(0)}\xi^{(0)}_{a}-g^{(0)}_{ab}D_{c}^{(0)}\xi^{(0)c}=0
+\end{align}
+$$
