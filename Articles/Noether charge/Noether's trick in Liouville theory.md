@@ -41,33 +41,21 @@ by acting the symmetry to the action, we have
 
 $$\tag{1.5}
 \begin{align}
-X_{\tilde{\xi}}\cdot \delta S & =\int_{M}\mathrm{d}x^{2}\sqrt{ -g }\left(-\frac{1}{2\pi}\nabla^{\mu}\phi \nabla_{\mu}\left(\xi^{\nu}\nabla_{\nu}\phi+\frac{2}{\gamma}\xi^{(1)}\right)-\frac{1}{2\pi \gamma}R\left( \xi^{\nu}\nabla_{\nu}\phi+\frac{2}{\gamma}\xi^{(1)} \right)-\frac{\mu}{4\pi \gamma}e^{\gamma \phi}\left(\xi^{\nu}\nabla_{\nu}\phi+\frac{2}{\gamma}\xi^{(1)}\right)\right) \\
- & +\int_{M}\mathrm{d}x^{2}\sqrt{ -g }\left(\frac{1}{4\pi}\left(\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}-g_{\mu \nu}\xi^{(1)}\right)\nabla^{\mu}\phi \nabla^{\nu}\phi-\frac{1}{2\pi \gamma}\phi \nabla^{\mu}\nabla^{\nu}\left(\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}-g_{\mu \nu}\xi^{(1)}\right)\right. \\
- & +\frac{1}{2\pi \gamma}\phi g^{\mu \nu}\nabla^{\rho}\nabla_{\rho}\left(\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}-g_{\mu \nu}\xi^{(1)}\right)+\frac{1}{2}g^{\mu \nu}\left(\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}-g_{\mu \nu}\xi^{(1)}\right)\left(-\frac{1}{4\pi}\nabla^{\rho}\phi \nabla_{\rho}\phi-\frac{\mu}{4\pi \gamma^{2}}e^{\gamma \phi}\right) 
+X_{\tilde{\xi}}\cdot \delta S & =\int_{M}\mathrm{d}^{2}x\sqrt{ -g }\left(-\frac{1}{2\pi}\nabla^{\mu}\phi \nabla_{\mu}\left(\xi^{\nu}\nabla_{\nu}\phi+\frac{2}{\gamma}\xi^{(1)}\right)-\frac{1}{2\pi \gamma}R\left( \xi^{\nu}\nabla_{\nu}\phi+\frac{2}{\gamma}\xi^{(1)} \right)-\frac{\mu}{4\pi \gamma}e^{\gamma \phi}\left(\xi^{\nu}\nabla_{\nu}\phi+\frac{2}{\gamma}\xi^{(1)}\right)\right) \\
+ & +\int_{M}\mathrm{d}^{2}x\sqrt{ -g }\left(\frac{1}{4\pi}\left(\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}-g_{\mu \nu}\xi^{(1)}\right)\nabla^{\mu}\phi \nabla^{\nu}\phi-\frac{1}{2\pi \gamma}\phi \nabla^{\mu}\nabla^{\nu}\left(\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}-g_{\mu \nu}\xi^{(1)}\right)\right. \\
+ & +\frac{1}{2\pi \gamma}\phi g^{\mu \nu}\nabla^{\rho}\nabla_{\rho}\left(\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}-g_{\mu \nu}\xi^{(1)}\right)+\frac{1}{2}g^{\mu \nu}\left(\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}-g_{\mu \nu}\xi^{(1)}\right)\left(-\frac{1}{4\pi}\nabla^{\rho}\phi \nabla_{\rho}\phi-\frac{\mu}{4\pi \gamma^{2}}e^{\gamma \phi}\right) \\
+ & =\alpha_{\xi}|_{\Sigma_{f}-\Sigma_{i}}+\beta_{\xi}|_{M_{\varepsilon}}
 \end{align}
 $$
+
+where
 
 $$\tag{1.6}
 \begin{align}
- & =\int_{M} \mathrm{d}x^{2}\sqrt{ -g }\left(-\frac{1}{2\pi}\nabla^{\mu}\phi \nabla_{\mu}\xi^{\nu}\nabla_{\nu}\phi-\frac{1}{2\pi}\nabla^{\mu}\phi \nabla_{\mu}\nabla_{\nu}\phi \xi^{\nu}-\frac{1}{\pi \gamma}\nabla^{\mu}\phi \nabla_{\mu}\xi^{(1)}-\frac{1}{2\pi \gamma}R\xi^{\nu}\nabla_{\nu}\phi-\frac{1}{\pi \gamma^{2}}R\xi^{(1)}\right. \\
- & -\frac{\mu}{4\pi \gamma}e^{\gamma \phi}\xi^{\nu}\nabla_{\nu}\phi-\frac{\mu}{2\pi \gamma^{2}}e^{\gamma \phi}\xi^{(1)}+\frac{1}{4\pi}(\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}-g_{\mu \nu}\xi^{(1)})\nabla^{\mu}\phi \nabla^{\nu}\phi-\frac{1}{2\pi \gamma}\phi \nabla^{\mu}\nabla^{\nu}(\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}-g_{\mu \nu}\xi^{(1)}) \\
- & \left.+\frac{1}{\pi \gamma}\phi\nabla^{\rho}\nabla_{\rho}\left(\nabla_{\mu}\xi^{\mu}-\xi^{(1)}\right)-\frac{1}{4\pi}\nabla^{\mu}\xi_{\mu}\nabla^{\rho}\phi \nabla_{\rho}\phi+\frac{1}{4\pi}\nabla^{\rho}\phi \nabla_{\rho}\phi \xi^{(1)}-\frac{\mu}{4\pi \gamma^{2}}\nabla_{\mu}\xi^{\mu}e^{\gamma \phi}+\frac{\mu}{4\pi \gamma^{2}}e^{\gamma \phi}\xi^{(1)} \right)\\
+\alpha_{\xi}|_{\Sigma} & =\int_{\Sigma}\mathrm{d}x\sqrt{ \sigma }\left(\frac{1}{4\pi}g^{\mu \nu}\nabla_{\mu}\phi \nabla_{\nu}\phi \tau_{\alpha}\xi^{\alpha}+\frac{1}{2\pi}R\phi \tau_{\alpha}\xi^{\alpha}+\frac{\mu}{4\pi \gamma^{2}}e^{\gamma \phi}\tau_{\alpha}\xi^{\alpha}+\frac{1}{\pi \gamma}\tau^{\mu}\nabla_{\mu}\xi^{(1)}\phi\right) \\
+\beta_{\xi}|_{M} & =\int_{M}\mathrm{d}^{2}x\sqrt{ -g } \frac{-1}{\pi \gamma^{2}}R\xi^{(1)}
 \end{align}
 $$
 
-$$\tag{1.7}
-\begin{align}
- & =\int_{M}\mathrm{d}x^{2}\sqrt{ -g }\left(-\frac{1}{4\pi}\nabla^{\mu}(\xi_{\mu}\nabla^{\rho}\phi \nabla_{\rho}\phi)-\frac{1}{\pi \gamma}\nabla^{\mu}(\phi \nabla_{\mu}\xi^{(1)})\right. \\
- & -\frac{1}{2\pi \gamma}\nabla_{\mu}(R\xi^{\mu}\phi)-\frac{1}{\pi \gamma^{2}}R\xi^{(1)}-\frac{\mu}{4\pi \gamma}\nabla_{\mu}(e^{\gamma \phi}\xi^{\mu})-\frac{\mu}{4\pi \gamma^{2}}e^{\gamma \phi}\xi^{(1)} \\
- & +\frac{1}{2\pi \gamma}\phi \nabla^{2}\xi^{(1)}
-\end{align}
-$$
+## $\displaystyle{X_{\xi}\cdot \delta S}$
 
-here we use
-$$\tag{1.8}
-\begin{align}
-\nabla^{\mu}\nabla^{\nu}\nabla_{\mu}\xi_{\nu}+\nabla^{\mu}\nabla^{\nu}\nabla_{\nu}\xi_{\mu}-2\nabla^{\rho}\nabla_{\rho}\nabla_{\mu}\xi^{\mu} & =2\nabla^{\mu}[\nabla_{\nu},\nabla_{\mu}]\xi^{\nu} \\
- & =2\nabla^{\mu}(R_{\rho\mu}\xi^{\rho}) \\
- & =\nabla_{\mu}(R\xi^{\mu})=\nabla_{\mu}R\xi^{\mu}+R\nabla_{\mu}\xi^{\mu}
- \end{align}
-$$
