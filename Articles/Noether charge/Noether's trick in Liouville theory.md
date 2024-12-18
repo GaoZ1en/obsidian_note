@@ -235,7 +235,7 @@ $$\tag{3.1}
 \begin{align}
 \mathcal{L}_{\xi}\delta S & =X_{\xi}\cdot \delta^{2}S+\delta(X_{\xi}\cdot \delta S) \\
  & =\delta(X_{\xi}\cdot \delta S) \\
- & =\delta \alpha_{\xi}|_{\Sigma_{f}-\Sigma_{i}}+\beta_{\xi}|_{M}
+ & =\delta \alpha_{\xi}|_{\Sigma_{f}-\Sigma_{i}}+\delta\beta_{\xi}|_{M}
 \end{align}
 $$
 
@@ -272,17 +272,53 @@ $$\tag{3.4}
 \int_{M}\left(-\frac{1}{4\pi}(X_{\xi}\cdot \mathbf{E}^{\mu \nu}_{g})\delta g_{\mu \nu}-\frac{1}{4\pi}\mathbf{E}^{\mu \nu}_{g}\delta(X_{\xi}\cdot \delta g_{\mu \nu})\right) & =\int_{M}\left(-\frac{1}{4\pi}\left( X_{\xi}\cdot \delta T^{\mu \nu}+\frac{1}{2}g^{\rho \sigma}(X_{\xi}\cdot \delta g_{\rho \sigma})T^{\mu \nu} \right)\delta g_{\mu \nu}-\frac{1}{4\pi}T^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu})\right)\varepsilon \\
  & =-\frac{1}{4\pi}\int_{M}\varepsilon\left((X_{\xi}\cdot \delta g^{\mu \rho})g^{\nu\sigma}T_{\rho \sigma}+g^{\mu \rho}(X_{\xi}\cdot \delta g^{\nu \sigma})T_{\rho \sigma}+g^{\mu \rho}g^{\nu \sigma}(X_{\xi}\cdot \delta T_{\mu \nu})+(\nabla^{\rho}\xi_{\rho}-2\xi^{(1)})T^{\mu \nu}\right. \\
  & \left.+T^{\mu \nu}(\delta g_{\rho \nu}\nabla_{\mu}\xi^{\rho}+\delta g_{\mu \rho}\nabla_{\nu}\xi^{\rho}+\nabla_{\rho}\delta g_{\mu \nu}\xi^{\rho}-2\delta g_{\mu \nu}\xi^{(1)})\right) \\
- & =
+ & = -\frac{1}{4\pi}\int_{M}\varepsilon\left(-(\nabla^{\mu}\xi^{\rho}+\nabla^{\rho}\xi^{\mu}-2g^{\mu \rho}\xi^{(1)})g^{\nu \sigma}T_{\rho \sigma}\delta g_{\mu \nu}-g^{\mu \rho}(\nabla^{\nu}\xi^{\sigma}+\nabla^{\sigma}\xi^{\nu}-2g^{\nu \sigma}\xi^{(1)})T_{\rho \sigma}\delta g_{\mu \nu}\right. \\
+ & \left.+g^{\mu \rho}g^{\nu \sigma}(X_{\xi}\cdot \delta T_{\rho \sigma})\delta g_{\mu \nu}+(\nabla^{\rho}\xi_{\rho}-2\xi^{(1)})T^{\mu \nu}\delta g_{\mu \nu}+T^{\mu \nu}(\delta g_{\rho \nu}\nabla_{\mu}\xi^{\rho}+\delta g_{\mu \rho}\nabla_{\nu}\xi^{\rho}+\nabla_{\rho}\delta g_{\mu \nu}\xi^{\rho}-2\delta g_{\mu \nu}\xi^{(1)})\right) \\
+ & =-\frac{1}{4\pi}\int_{M}\varepsilon\left(g^{\mu \rho}g^{\nu \sigma}(X_{\xi}\cdot \delta T_{\rho \sigma})-T^{\rho \nu}\nabla^{\mu}\xi_{\rho}-T^{\mu \rho}\nabla^{\nu}\xi_{\rho}+T^{\mu \nu}\nabla_{\rho}\xi^{\rho}\right)\delta g_{\mu \nu}+T^{\mu \nu}\nabla_{\rho}\delta g_{\mu \nu}\xi^{\rho} \\
+ & =-\frac{1}{4\pi}\int_{M}\varepsilon(g^{\mu \rho}g^{\nu \sigma}(X_{\xi}\cdot \delta T_{\rho \sigma})-T^{\rho \nu}\nabla^{\mu}\xi_{\rho}-T^{\mu \rho}\nabla^{\nu}\xi_{\rho}-\xi^{\rho}\nabla_{\rho}T^{\mu \nu})\delta g_{\mu \nu}+\frac{1}{4\pi}\int_{M}\varepsilon\nabla_{\rho}(T^{\mu \nu}\delta g_{\mu \nu}\xi^{\rho})
 \end{align}
 $$
 
-terms support on $\displaystyle{\Sigma}$ gives the Noether theorem ?? not verified
-
-$$\tag{3.10}
+$$\tag{3.4}
 \begin{align}
-(X_{\xi}\cdot \omega)|_{\Sigma}=-\delta(X_{\xi}\cdot \theta-\alpha_{\xi})|_{\Sigma}=\frac{1}{2\pi}\delta \int_{\Sigma}\mathrm{d}x\sqrt{ \sigma }T_{\mu \nu}\tau^{\mu}\xi^{\nu}
+\delta \beta_{\xi}|_{M} =\delta\int_{M}\frac{-1}{\pi \gamma^{2}}R\xi^{(1)}\varepsilon & =-\frac{1}{\pi \gamma^{2}}\int_{M}\xi^{(1)}(\nabla^{\mu}\nabla^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla^{\rho}\nabla_{\rho}\delta g_{\mu \nu})\varepsilon \\
+ & =-\frac{1}{\pi \gamma^{2}}\int_{M}\varepsilon\left(\nabla^{\mu}(\xi^{(1)}\nabla^{\nu}\delta g_{\mu \nu})-\nabla^{\mu}\xi^{(1)}\nabla^{\nu}\delta g_{\mu \nu}-\nabla^{\rho}(\xi^{(1)}g^{\mu \nu}\nabla_{\rho}\delta g_{\mu \nu})+\nabla^{\rho}\xi^{(1)}g^{\mu \nu}\nabla_{\rho}\delta g_{\mu \nu}\right) \\
+ & =-\frac{1}{\pi \gamma^{2}}\int_{M}\varepsilon\left(\nabla^{\mu}(\xi^{(1)}\nabla^{\nu}\delta g_{\mu \nu})-\nabla^{\rho}(\xi^{(1)}g^{\mu \nu}\nabla_{\rho}\delta g_{\mu \nu})-\nabla^{\nu}(\nabla^{\mu}\xi^{(1)}\delta g_{\mu \nu})+\nabla^{\rho}\nabla_{\rho}(\xi^{(1)}g^{\mu \nu}\delta g_{\mu \nu})\right. \\
+ & \left.+(\nabla^{\mu}\nabla^{\nu}\xi^{(1)}-g^{\mu \nu}\nabla^{\rho}\nabla_{\rho}\xi^{(1)})\delta g_{\mu \nu}\right)
 \end{align}
 $$
+
+then we have
+
+$$\tag{3.5}
+\begin{align}
+X_{\xi}\cdot \delta T_{\mu \nu}=T_{\rho \nu}\nabla_{\mu}\xi^{\rho}+T_{\mu \rho}\nabla_{\nu}\xi^{\rho}+\xi^{\rho}\nabla_{\rho}T_{\mu \nu}+\frac{1}{\pi \gamma^{2}}(\nabla_{\mu}\nabla_{\nu}\xi^{(1)}-g_{\mu \nu}\nabla^{\rho}\nabla_{\rho}\xi^{(1)})
+\end{align}
+$$
+
+terms proportional to $\displaystyle{\delta \phi}$
+
+$$\tag{3.5}
+\begin{align}
+\int_{M}\left(\frac{1}{2\pi}(X_{\xi}\cdot \delta \mathbf{E}_{\phi})\delta \phi+\frac{1}{2\pi}\mathbf{E}_{\phi}\delta(X_{\xi}\cdot \delta \phi)\right) & =\frac{1}{2\pi}\int_{M}\varepsilon\left((X_{\xi}\cdot \delta E_{\phi})\delta \phi+\frac{1}{2}E_{\phi}g^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})\delta \phi+E_{\phi}\delta(X_{\xi}\cdot \delta \phi)\right) \\
+ & =\frac{1}{2\pi}\int_{M}\varepsilon\left((X_{\xi}\cdot \delta E_{\phi})\delta \phi+E_{\phi}(\nabla_{\mu}\xi^{\mu}-2\xi^{(1)})\delta \phi+E_{\phi}\xi^{\mu}\nabla_{\mu}\delta \phi\right) \\
+ & =\frac{1}{2\pi}\int_{M}\varepsilon\left((X_{\xi}\cdot \delta E_{\phi})-\xi^{\mu}\nabla_{\mu}E_{\phi}-2E_{\phi}\xi^{(1)}\right)\delta \phi+\frac{1}{2\pi}\int_{M}\varepsilon \nabla_{\mu}(E_{\phi}\xi^{\mu}\delta \phi)
+\end{align}
+$$
+
+then we have
+
+$$\tag{3.6}
+\begin{align}
+X_{\xi}\cdot \delta E_{\phi} & =\xi^{\mu}\nabla_{\mu}E_{\phi}+2E_{\phi}\xi^{(1)}
+\end{align}
+$$
+
+which vanishes on-shell.
+
+terms support on $\displaystyle{\Sigma}$ gives the Noether theorem 
+
+
 
 ---
 
