@@ -292,7 +292,7 @@ then we have
 
 $$\tag{3.5}
 \begin{align}
-X_{\xi}\cdot \delta T_{\mu \nu}=T_{\rho \nu}\nabla_{\mu}\xi^{\rho}+T_{\mu \rho}\nabla_{\nu}\xi^{\rho}+\xi^{\rho}\nabla_{\rho}T_{\mu \nu}+\frac{1}{\pi \gamma^{2}}(\nabla_{\mu}\nabla_{\nu}\xi^{(1)}-g_{\mu \nu}\nabla^{\rho}\nabla_{\rho}\xi^{(1)})
+X_{\xi}\cdot \delta T_{\mu \nu}=T_{\rho \nu}\nabla_{\mu}\xi^{\rho}+T_{\mu \rho}\nabla_{\nu}\xi^{\rho}+\xi^{\rho}\nabla_{\rho}T_{\mu \nu}+\frac{4}{\gamma^{2}}(\nabla_{\mu}\nabla_{\nu}\xi^{(1)}-g_{\mu \nu}\nabla^{\rho}\nabla_{\rho}\xi^{(1)})
 \end{align}
 $$
 
@@ -314,20 +314,64 @@ X_{\xi}\cdot \delta E_{\phi} & =\xi^{\mu}\nabla_{\mu}E_{\phi}+2E_{\phi}\xi^{(1)}
 \end{align}
 $$
 
-which vanishes on-shell.
 
-terms support on $\displaystyle{\Sigma}$ gives the Noether theorem 
+terms support on $\displaystyle{\Sigma}$ gives
 
+$$\tag{2.7}
+\begin{align}
+X_{\xi}\cdot \omega & =-\delta(X_{\xi}\cdot \theta-\alpha_{\xi})+\int_{\Sigma} \mathrm{d}x\sqrt{ \sigma }\tau^{\mu}\left(\frac{1}{2\pi}E_{\phi}\xi_{\mu}\delta \phi-\frac{1}{4\pi}T^{\rho \sigma}\xi_{\mu}\delta g_{\rho \sigma}\right. \\
+ & \left.+\frac{1}{\pi \gamma^{2}}\nabla^{\nu}\delta g_{\mu \nu}-\frac{1}{\pi \gamma^{2}}g^{\nu \rho}\nabla^{\mu}\delta g_{\nu \rho}-\frac{1}{\pi \gamma^{2}}\delta g_{\mu \nu}\nabla^{\nu}\xi^{(1)}+\frac{1}{\pi \gamma^{2}}\nabla_{\mu}\xi^{(1)}g^{\nu \rho}\delta g_{\nu \rho}\right) \\
+ & =\int_{\Sigma}\mathrm{d}x\sqrt{ \sigma }\tau^{\mu}\left(\frac{1}{2\pi}\delta T_{\mu \nu}\xi^{\nu}+\frac{1}{4\pi}g^{\rho \sigma}\delta g_{\rho \sigma}T_{\mu \nu}\xi^{\nu}-\frac{1}{2\pi}T_{\rho \sigma}\xi^{\sigma}g^{\rho \nu}\delta g_{\mu \nu}-\frac{1}{4\pi}\xi_{\mu}T^{\rho \sigma}\delta g_{\rho \sigma}\right. \\
+ & \left.+\frac{1}{2\pi}E\xi_{\mu}\delta \pi+\frac{1}{\pi \gamma^{2}}\nabla^{\nu}\delta g_{\mu \nu}-\frac{1}{\pi \gamma^{2}}g^{\nu \rho}\nabla^{\mu}\delta g_{\nu \rho}-\frac{1}{\pi \gamma^{2}}\delta g_{\mu \nu}\nabla^{\nu}\xi^{(1)}+\frac{1}{\pi \gamma^{2}}\nabla_{\mu}\xi^{(1)}g^{\nu \rho}\delta g_{\nu \rho}\right)
+\end{align}
+$$
 
 
 ---
 
 direct calculation
 
+$$\tag{4.1}
+\begin{align}
+X_{\xi}\cdot \delta E_{\phi} & =X_{\xi}\cdot \delta\left( \nabla^{2}\phi-\frac{1}{\gamma}R -\frac{\mu}{2\gamma}e^{\gamma \phi}\right) \\
+ & =(X_{\xi}\cdot \delta g^{\rho \sigma})\nabla_{\rho}\nabla_{\sigma}\phi-g^{\rho \sigma}(X_{\xi}\cdot \delta \Gamma^{\lambda}_{\rho \sigma})\nabla_{\lambda}\phi+g^{\rho \sigma}\nabla_{\rho}\nabla_{\sigma}(X_{\xi}\cdot \delta \phi)-\frac{1}{\gamma}X_{\xi}\cdot \delta R-\frac{\mu}{2}e^{\gamma \phi}(X_{\xi}\cdot \delta \phi) \\
+ & =-(\nabla^{\rho}\xi^{\sigma}+\nabla^{\sigma}\xi^{\rho}-2g^{\rho \sigma}\xi^{(1)})\nabla_{\rho}\nabla_{\sigma}\phi-g^{\rho \sigma}\left(\frac{1}{2}g^{\lambda \eta}\nabla_{\rho}\nabla_{\sigma}\xi_{\eta}+\frac{1}{2}g^{\lambda \eta}\nabla_{\sigma}\nabla_{\rho}\xi_{\eta}+\frac{1}{2}R^{\lambda}_{\rho \sigma \eta}\xi^{\eta}+\frac{1}{2}R^{\lambda}_{\sigma \rho \eta}\xi^{\eta}-\delta^{\lambda}_{\rho}\nabla_{\sigma}\xi^{(1)}-\delta^{\lambda}_{\sigma}\nabla_{\rho}\xi^{(1)}+g_{\rho \sigma}\nabla^{\lambda}\xi^{(1)}\right)\nabla_{\lambda}\phi\\
+ & +g^{\rho \sigma}\nabla_{\rho}\nabla_{\sigma}\left( \xi^{\lambda}\nabla_{\lambda}\phi+\frac{2}{\gamma}\xi^{(1)} \right) -\frac{1}{\gamma}(\xi^{\rho}\nabla_{\rho}R+2\nabla_{\rho}\nabla^{\rho}\xi^{(1)})-\frac{\mu}{2}e^{\gamma \phi}\left( \xi^{\rho}\nabla_{\rho}\phi+\frac{2}{\gamma} \xi^{(1)}\right) \\
+ & =\xi^{\lambda}\nabla_{\lambda}\left( \nabla^{2}\phi-\frac{1}{\gamma}R-\frac{\mu}{2\gamma}e^{\gamma \phi} \right)-\frac{\mu}{2\gamma}e^{\gamma \phi}\cdot 2\xi^{(1)}-2\nabla^{\rho}\xi^{\sigma}\nabla_{\rho}\nabla_{\sigma}\phi+2\xi^{(1)}\nabla^{2}\phi-\nabla_{\rho}\nabla^{\rho}\xi^{\lambda}\nabla_{\lambda}\phi+\frac{1}{2}R\xi^{\rho}\nabla_{\rho}\phi \\
+ & =\xi^{\lambda}\nabla_{\lambda}E_{\phi}+2\xi^{(1)}\left( \nabla^{2}\phi-\frac{\mu}{2\gamma}e^{\gamma \phi} \right)
+\end{align}
+$$
+
 $$\tag{3.8}
 \begin{align}
-X_{\xi}\cdot \delta T_{\mu \nu} & =X_{\xi}\cdot \delta\left(-\nabla_{\mu}\phi \nabla_{\nu}\phi+\frac{1}{2}g^{\mu \nu}g^{\rho \sigma}\nabla_{\rho}\phi \nabla_{\sigma}\phi+\frac{\mu}{2\gamma^{2}}g^{\mu \nu}e^{\gamma \phi}+\frac{2}{\gamma}(g^{\mu \rho}g^{\nu \sigma}-g^{\mu \nu}g^{\rho \sigma})\nabla_{\rho}\nabla_{\sigma}\phi-\frac{2}{\gamma}g^{\mu \nu}g^{\rho \sigma}\nabla_{\rho}\nabla_{\sigma}\phi\right) \\
+X_{\xi}\cdot \delta T_{\mu \nu} & =X_{\xi}\cdot \delta\left(-\nabla_{\mu}\phi \nabla_{\nu}\phi+\frac{1}{2}g^{\mu \nu}g^{\rho \sigma}\nabla_{\rho}\phi \nabla_{\sigma}\phi+\frac{\mu}{2\gamma^{2}}g^{\mu \nu}e^{\gamma \phi}+\frac{2}{\gamma}(g^{\mu \rho}g^{\nu \sigma}-g^{\mu \nu}g^{\rho \sigma})\nabla_{\rho}\nabla_{\sigma}\phi\right) \\
  & =-\nabla_{\mu}(X_{\xi}\cdot \delta \phi)\nabla_{\nu}\phi-\nabla_{\mu}\phi \nabla_{\nu}(X_{\xi}\cdot \delta \phi)+\frac{1}{2}(X_{\xi}\cdot \delta g^{\mu \nu})g^{\rho \sigma}\nabla_{\rho}\phi \nabla_{\sigma}\phi+\frac{1}{2}g^{\mu \nu}(X_{\xi}\cdot \delta g^{\rho \sigma})\nabla_{\rho}\phi \nabla_{\sigma}\phi &  \\
- & -\frac{1}{2}g^{\mu \nu}g^{\rho \sigma}X_{\xi}\cdot\delta \Gamma^{\lambda}_{\rho \sigma}
+ & +g^{\mu \nu}g^{\rho \sigma}\nabla_{\rho}\phi \nabla_{\sigma}(X_{\xi}\cdot \delta \phi)+\frac{\mu}{2\gamma^{2}}(X_{\xi}\cdot \delta g^{\mu \nu})e^{\gamma \phi}+\frac{\mu}{2\gamma}g^{\mu \nu}g^{\gamma \phi}(X_{\xi}\cdot \delta \phi)+\frac{2}{\gamma}((X_{\xi}\cdot \delta g^{\mu \rho})g^{\nu \sigma}+g^{\mu \rho}(X_{\xi}\cdot \delta g^{\nu \sigma}) \\
+ & -(X_{\xi}\cdot \delta g^{\mu \nu})g^{\rho \sigma}-g^{\mu \nu}(X_{\xi}\cdot \delta g^{\rho \sigma}))\nabla_{\rho}\nabla_{\sigma}\phi-\frac{2}{\gamma}(g^{\mu \rho}g^{\nu \sigma}-g^{\mu \nu}g^{\rho \sigma})\nabla_{\rho}\nabla_{\sigma}(X_{\xi}\cdot \delta \phi) \\
+ & =-\nabla_{\mu}\left( \xi^{\rho}\nabla_{\rho}\phi+\frac{2}{\gamma}\xi^{(1)} \right)\nabla_{\nu}\phi-\nabla_{\mu}\phi \nabla_{\nu}\left( \xi^{\rho}\nabla_{\rho}\phi+\frac{2}{\gamma}\xi^{(1)}\right)-\frac{1}{2}(\nabla^{\mu}\xi^{\nu}+\nabla^{\nu}\xi^{\mu}-2g^{\mu \nu}\xi^{(1)})g^{\rho \sigma}\nabla_{\rho}\phi \nabla_{\sigma}\phi \\
+ & +\frac{1}{2}g^{\mu \nu}(\nabla^{\rho}\xi^{\sigma}+\nabla^{\sigma}\xi^{\rho}-2g^{\rho \sigma}\xi^{(1)})\nabla_{\rho}\phi \nabla_{\sigma}\phi+g^{\mu \nu}g^{\rho \sigma}\nabla_{\rho}\phi \nabla_{\sigma}\left( \xi^{\lambda}\nabla_{\lambda}\phi+\frac{2}{\gamma}\xi^{(1)} \right)-\frac{\mu}{2\gamma^{2}}(\nabla^{\mu}\xi^{\nu}+\nabla^{\nu}\xi^{\mu}-2g^{\mu \nu}\xi^{(1)})e^{\gamma \phi} \\
+ & +\frac{\mu}{2\gamma}g^{\mu \nu}e^{\gamma \phi}\left( \xi^{\rho}\nabla_{\rho}\phi+\frac{2}{\gamma}\xi^{(1)} \right)-\frac{2}{\gamma}(g^{\mu \rho}g^{\nu \sigma}-g^{\mu \nu}g^{\rho \sigma})\nabla_{\rho}\nabla_{\sigma}\left( \xi^{\lambda}\nabla_{\lambda}\phi+\frac{2}{\gamma}\xi^{(1)} \right) \\
+ & -\frac{2}{\gamma}((\nabla^{\mu}\xi^{\rho}+\nabla^{\rho}\xi^{\mu}-2g^{\mu \rho}\xi^{(1)})g^{\nu \sigma}+g^{\mu \rho}(\nabla^{\nu}\xi^{\sigma}+\nabla^{\sigma}\xi^{\nu}-2g^{\nu \sigma}\xi^{(1)}) \\
+ & -(\nabla^{\mu}\xi^{\nu}+\nabla^{\nu}\xi^{\mu}-2g^{\mu \nu}\xi^{(1)})g^{\rho \sigma}-g^{\mu \nu}(\nabla^{\rho}\xi^{\sigma}+\nabla^{\sigma}\xi^{\rho}-2g^{\rho \sigma}\xi^{(1)}))\nabla_{\rho}\nabla_{\sigma}\phi
+\end{align}
+$$
+
+
+
+here we use
+
+$$\tag{4.3}
+\begin{align}
+X_{\xi}\cdot \delta g_{\mu \nu} & =\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}-2g_{\mu \nu}\xi^{(1)} \\
+X_{\xi}\cdot \delta g^{\mu \nu} & =-g^{\mu \rho}g^{\nu \sigma}(X_{\xi}\cdot \delta g_{\rho \sigma}) \\
+ & =-\nabla^{\mu}\xi^{\nu}-\nabla^{\nu}\xi^{\mu}+2g^{\nu \nu}\xi^{(1)} \\
+X_{\xi}\cdot \delta \Gamma^{\rho}_{\mu \nu} & =\frac{1}{2}g^{\rho \sigma}(\nabla_{\mu}\delta(X_{\xi}\cdot g_{\sigma \nu})+\nabla_{\nu}(X_{\xi}\cdot \delta g_{\mu \sigma})-\nabla_{\sigma}(X_{\xi}\cdot \delta g_{\mu \nu})) \\
+ & =\frac{1}{2}g^{\rho \sigma}\nabla_{\mu}\nabla_{\nu}\xi_{\sigma}+\frac{1}{2}g^{\rho \sigma}\nabla_{\nu}\nabla_{\mu}\xi_{\sigma}+\frac{1}{2}R^{\rho}_{\mu \nu \lambda}\xi^{\lambda}+\frac{1}{2}R^{\rho}_{\nu \mu \lambda}\xi^{\lambda}-g^{\rho \sigma}\left(\nabla_{\mu}(g_{\sigma \nu}\xi^{(1)})+\nabla_{\nu}(g_{\mu \sigma}\xi^{(1)})-\nabla_{\sigma}(g_{\mu \nu}\xi^{(1)})\right) \\
+ & =\frac{1}{2}g^{\rho \sigma}\nabla_{\mu}\nabla_{\nu}\xi_{\sigma}+\frac{1}{2}g^{\rho \sigma}\nabla_{\nu}\nabla_{\mu}\xi_{\sigma}+\frac{1}{2}R^{\rho}_{\mu \nu \lambda}\xi^{\lambda}+\frac{1}{2}R^{\rho}_{\nu \mu \lambda}\xi^{\lambda}-\delta^{\rho}_{\mu}\nabla_{\nu}\xi^{(1)}-\delta^{\rho}_{\nu}\nabla_{\mu}\xi^{(1)}+g_{\mu \nu}\nabla^{\rho}\xi^{(1)} \\
+X_{\xi}\cdot \delta R^{\rho}_{\sigma \mu \nu} & =\nabla_{\mu}(X_{\xi}\cdot \delta \Gamma^{\rho}_{\sigma \nu})-\nabla_{\nu}(X_{\xi}\cdot \delta \Gamma^{\rho}_{\mu \sigma}) \\
+ & =\xi^{\lambda}\nabla_{\lambda}R^{\rho}_{\sigma \mu \nu}-R^{\lambda}_{\sigma \mu \nu}\nabla_{\lambda}\xi^{\rho}+R^{\rho}_{\lambda \mu \nu}\nabla_{\sigma}\xi^{\lambda}+R^{\rho}_{\sigma \lambda \nu}\nabla_{\mu}\xi^{\lambda}+R^{\rho}_{\sigma \mu \lambda}\nabla_{\nu}\xi^{\lambda}+\nabla_{\mu}(-\delta^{\rho}_{\sigma}\nabla_{\nu}\xi^{(1)}-\delta^{\rho}_{\nu}\nabla_{\sigma}\xi^{(1)}+g_{\sigma \nu}\nabla^{\rho}\xi^{(1)})-\nabla_{\nu}(-\delta^{\rho}_{\sigma}\nabla_{\mu}\xi^{(1)}-\delta^{\rho}_{\mu}\nabla_{\sigma}\xi^{(1)}+g_{\sigma \mu}\nabla^{\rho}\xi^{(1)}) \\
+ & =\xi^{\lambda}\nabla_{\lambda}R^{\rho}_{\sigma \mu \nu}-R^{\lambda}_{\sigma \mu \nu}\nabla_{\lambda}\xi^{\rho}+R^{\rho}_{\lambda \mu \nu}\nabla_{\sigma}\xi^{\lambda}+R^{\rho}_{\sigma \lambda \nu}\nabla_{\mu}\xi^{\lambda}+R^{\rho}_{\sigma \mu \lambda}\nabla_{\nu}\xi^{\lambda}+\delta^{\rho}_{\mu}\nabla_{\sigma}\nabla_{\nu}\xi^{(1)}-\delta^{\rho}_{\nu}\nabla_{\mu}\nabla_{\sigma}\xi^{(1)}+g_{\sigma \nu}\nabla_{\mu}\nabla^{\rho}\xi^{(1)}-g_{\mu \sigma}\nabla_{\nu}\nabla^{\rho}\xi^{(1)} \\
+ X_{\xi}\cdot \delta R_{\mu \nu}& =\xi^{\rho}\nabla_{\rho}R_{\mu \nu}+R_{\rho \nu}\nabla_{\mu}\xi^{\rho}+R_{\mu \rho}\nabla_{\nu}\xi^{\rho}+g_{\mu \nu}\nabla_{\rho}\nabla^{\rho}\xi^{(1)} \\
+X_{\xi}\cdot \delta R & =\xi^{\rho}\nabla_{\rho}R+2\nabla_{\rho}\xi^{\rho}\xi^{(1)}
 \end{align}
 $$
