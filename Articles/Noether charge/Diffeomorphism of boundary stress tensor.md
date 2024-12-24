@@ -429,3 +429,38 @@ $$
  & +\frac{1}{2\pi}D_{b}^{(0)}(g^{(0)ac}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)b}-g^{(0)bc}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)a}) \\
 \end{align}
 $$
+
+we now transform (5.2) into a more symmetric form.
+
+$$\tag{5.?}
+\begin{align}
+\left\{Q_{\xi},Q_{\zeta}\right\}|_{\tilde{\mathcal{P}}} & =Q_{\left\{\xi,\zeta\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}+\frac{1}{16\pi G}g^{(0)ab}(D_{c}^{(0)}D_{b}^{(0)}\zeta^{(0)c}-D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c})D_{d}^{(0)}\xi^{(0)d}\right. \\
+ & +\frac{1}{32\pi G}g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c}D_{d}^{(0)}\xi^{(0)d}-\frac{1}{32\pi G}g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}\xi^{(0)c}D_{d}^{(0)}\zeta^{(0)d} \\
+ & +\frac{1}{16\pi G}g^{(0)ab}(g^{(0)}_{bd}D_{c}^{(0)}\zeta^{(0)d}+g_{cd}^{(0)}D_{b}^{(0)}\zeta^{(0)d}-g_{bc}^{(0)}D_{d}^{(0)}\zeta^{(0)d})g^{(0)ce}D_{e}^{(0)}D_{d}^{(0)}D_{f}^{(0)}\xi^{(0)f} \\
+ & -\frac{1}{32\pi G}g^{(0)ab}g^{(0)ce}D_{e}^{(0)}(g^{(0)ab}g^{(0)ce}(g_{bd}^{(0)}D_{c}^{(0)}\zeta^{(0)d}+g^{(0)cd}D_{b}^{(0)}\zeta^{(0)d}-g^{(0)}_{bc}D_{d}\zeta^{(0)d})D_{f}^{(0)}\zeta^{(0)f}) \\
+ & +\frac{1}{16\pi G}D_{b}^{(0)}(g^{(0)ac}D_{c}^{(0)}D_{d}^{(0)}\xi^{(0)d}\zeta^{(0)b}-g^{(0)bc}D_{c}^{(0)}D_{d}^{(0)}\xi^{(0)d}\zeta^{(0)a}) \\
+ & \left.-\frac{1}{32\pi G}D_{b}^{(0)}((g^{(0)ac}D_{c}^{(0)}\zeta^{(0)b}-g^{(0)bc}D_{c}^{(0)}\zeta^{(0)a})D_{d}^{(0)}\xi^{(0)d})\right)\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
+ & =Q_{\left\{\xi,\zeta\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}-\zeta^{(0)a}D_{b}^{(0)}\xi^{(0)b})\right. \\
+ & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}\xi^{(0)c}D_{d}^{(0)}\zeta^{(0)d}-D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c}D_{d}^{(0)}\xi^{(0)d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}
+\end{align}
+$$
+
+then we will show that the bracket is time-independent. this can be easily verified by
+
+$$\tag{5.?}
+\begin{align}
+\left\{Q_{\xi},Q_{\zeta}\right\}|_{\Sigma_{f}-\Sigma_{i}}=X_{\xi}\cdot X_{\zeta}\cdot \omega|_{\Sigma_{f}-\Sigma_{i}}=0
+\end{align}
+$$
+
+since $\displaystyle{\omega|_{\Sigma_{f}-\Sigma_{i},\tilde{\mathcal{P}}}=0}$. we now present a direct calculation
+
+$$\tag{5.?}
+\begin{align}
+\left\{Q_{\xi},Q_{\zeta}\right\}|_{\Sigma_{f}-\Sigma_{i}} & =-\frac{1}{32\pi G}\int_{\Gamma}R^{(0)}D^{(0)}_{a}\left\{\xi,\zeta\right\}^{(0)a}\varepsilon^{(\Gamma)}-\frac{1}{32\pi G}\int_{\Gamma}D_{a}^{(0)}\left[-R^{(0)}(\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}-\zeta^{(0)a}D_{b}^{(0)}\zeta^{(0)b})\right. \\
+ & \left.-g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}\xi^{(0)c}D_{d}^{(0)}\zeta^{(0)d}+g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c}D_{d}^{(0)}\xi^{(0)d}\right]\varepsilon^{(\Gamma)} \\
+ & =\frac{1}{32\pi G}\int_{\Gamma}\left(-R^{(0)}\xi^{(0)a}(D_{b}^{(0)}D_{a}^{(0)}\zeta^{(0)b}-D_{a}^{(0)}D_{b}^{(0)}\zeta^{(0)b})+R^{(0)}\zeta^{(0)a}(D_{b}^{(0)}D_{a}^{(0)}\xi^{(0)b}-D_{a}^{(0)}D_{b}^{(0)}\xi^{(0)b})\right. \\
+ & \left.+(g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{a}^{(0)}\xi^{(0)a}+\xi^{(0)a}D_{a}^{(0)}R^{(0)})D_{d}^{(0)}\zeta^{(0)d}-(g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{a}^{(0)}\xi^{(0)a}+\xi^{(0)a}D_{a}^{(0)}R^{(0)})D_{d}^{(0)}\xi^{(0)d}\right)\varepsilon^{(\Gamma)} \\
+ & =0
+\end{align}
+$$
