@@ -92,14 +92,58 @@ D_{a}^{(0)}D_{b}^{(0)}D^{b}_{n} & =0
 \end{align}
 $$
 
+and Lie brackets
+
 $$\tag{2.3}
 \begin{align}
 \left\{A_{m},A_{n}\right\}_{a} & =A_{m}^{b}D_{b}^{(0)}A_{n,a}-A^{b}_{n}D_{b}^{(0)}A_{m,a} \\
  & =\left(A^{t}_{m}D^{(0)}_{t}A_{n,t}-A^{t}_{n}D_{t}^{(0)}A_{m,t}+A^{\phi}_{m}D_{\phi}^{(0)}A_{n,t}-A^{\phi}_{n}D_{\phi}^{(0)}A_{m,t}\right)\left(\frac{\partial}{\partial t}\right)_{a} \\
  & +\left(A^{t}_{m}D^{(0)}_{t}A_{n,\phi}-A^{t}_{n}D_{t}^{(0)}A_{m,\phi}+A^{\phi}_{m}D_{\phi}^{(0)}A_{n,\phi}-A^{\phi}_{n}D_{\phi}^{(0)}A_{m,\phi}\right)\left(\frac{\partial}{\partial \phi}\right)_{a} \\
- & =
+ & =\sin nt(n\cos n\phi(\cos mt\cos m\phi \partial_{t}+\sin mt\sin m\phi \partial_{\phi})-m\sin n\phi(\sin mt\cos m\phi \partial_{t}+\cos mt\sin m\phi \partial_{\phi})) \\
+ & +\cos nt(-m\cos n\phi(\sin mt\cos m\phi \partial_{t}+\cos mt\sin m\phi \partial_{\phi})+n\sin n\phi(\sin mt\sin m\phi \partial_{t}+\cos mt\cos m\phi \partial_{\phi})) \\
+ & =-m\cos n(t-\phi)C_{m,a}+n\cos m(t-\phi)C_{n,a}
 \end{align}
 $$
+
+the following are waiting to be recalculated.
+
+$$\tag{2.3}
+\begin{align}
+\left\{A_{m},B_{n}\right\}_{a} & =A_{m}^{b}D_{b}^{(0)}B_{n,a}-B^{b}_{n}D_{b}^{(0)}A_{m,a} \\
+ & =\left(A^{t}_{m}D^{(0)}_{t}B_{n,t}-B^{t}_{n}D_{t}^{(0)}A_{m,t}+A^{\phi}_{m}D_{\phi}^{(0)}B_{n,t}-B^{\phi}_{n}D_{\phi}^{(0)}A_{m,t}\right)\left(\frac{\partial}{\partial t}\right)_{a} \\
+ & +\left(A^{t}_{m}D^{(0)}_{t}B_{n,\phi}-B^{t}_{n}D_{t}^{(0)}A_{m,\phi}+A^{\phi}_{m}D_{\phi}^{(0)}B_{n,\phi}-B^{\phi}_{n}D_{\phi}^{(0)}A_{m,\phi}\right)\left(\frac{\partial}{\partial \phi}\right)_{a} \\
+ & =m\cos n(t-\phi)D_{m,a}-n\cos mt\cos m\phi D_{n,a}-n\sin mt\sin m\phi C_{n,a}
+\end{align}
+$$
+
+$$\tag{2.3}
+\begin{align}
+\left\{A_{m},C_{n}\right\}_{a} & =A_{m}^{b}D_{b}^{(0)}C_{n,a}-C^{b}_{n}D_{b}^{(0)}A_{m,a} \\
+ & =\left(A^{t}_{m}D^{(0)}_{t}C_{n,t}-C^{t}_{n}D_{t}^{(0)}A_{m,t}+A^{\phi}_{m}D_{\phi}^{(0)}C_{n,t}-C^{\phi}_{n}D_{\phi}^{(0)}A_{m,t}\right)\left(\frac{\partial}{\partial t}\right)_{a} \\
+ & +\left(A^{t}_{m}D^{(0)}_{t}C_{n,\phi}-C^{t}_{n}D_{t}^{(0)}A_{m,\phi}+A^{\phi}_{m}D_{\phi}^{(0)}C_{n,\phi}-C^{\phi}_{n}D_{\phi}^{(0)}A_{m,\phi}\right)\left(\frac{\partial}{\partial \phi}\right)_{a} \\
+ & =m\cos n(t+\phi)A_{m,a}-n\cos n(t+\phi)A_{n,a}
+\end{align}
+$$
+
+$$\tag{2.3}
+\begin{align}
+\left\{A_{m},D_{n}\right\}_{a} & =A_{m}^{b}D_{b}^{(0)}D_{n,a}-D^{b}_{n}D_{b}^{(0)}A_{m,a} \\
+ & =\left(A^{t}_{m}D^{(0)}_{t}D_{n,t}-D^{t}_{n}D_{t}^{(0)}A_{m,t}+A^{\phi}_{m}D_{\phi}^{(0)}D_{n,t}-D^{\phi}_{n}D_{\phi}^{(0)}A_{m,t}\right)\left(\frac{\partial}{\partial t}\right)_{a} \\
+ & +\left(A^{t}_{m}D^{(0)}_{t}D_{n,\phi}-D^{t}_{n}D_{t}^{(0)}A_{m,\phi}+A^{\phi}_{m}D_{\phi}^{(0)}D_{n,\phi}-D^{\phi}_{n}D_{\phi}^{(0)}A_{m,\phi}\right)\left(\frac{\partial}{\partial \phi}\right)_{a} \\
+ & =(m-n)\sin nt\sin n\phi A_{m,a}+(n-m)\cos mt\cos m\phi B_{m,a}
+\end{align}
+$$
+
+$$\tag{2.3}
+\begin{align}
+\left\{B_{m},D_{n}\right\}_{a} & =B_{m}^{b}D_{b}^{(0)}D_{n,a}-D^{b}_{n}D_{b}^{(0)}B_{m,a} \\
+ & =\left(B^{t}_{m}D^{(0)}_{t}D_{n,t}-D^{t}_{n}D_{t}^{(0)}B_{m,t}+B^{\phi}_{m}D_{\phi}^{(0)}D_{n,t}-D^{\phi}_{n}D_{\phi}^{(0)}B_{m,t}\right)\left(\frac{\partial}{\partial t}\right)_{a} \\
+ & +\left(B^{t}_{m}D^{(0)}_{t}D_{n,\phi}-D^{t}_{n}D_{t}^{(0)}B_{m,\phi}+B^{\phi}_{m}D_{\phi}^{(0)}D_{n,\phi}-D^{\phi}_{n}D_{\phi}^{(0)}B_{m,\phi}\right)\left(\frac{\partial}{\partial \phi}\right)_{a} \\
+ & =(m-n)\sin nt\sin n\phi A_{m,a}+(n-m)\cos mt\cos m\phi B_{m,a}
+\end{align}
+$$
+
+
 
 ---
 
