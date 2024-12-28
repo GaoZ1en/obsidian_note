@@ -1,3 +1,5 @@
+## flat boundary
+
 choose boundary coordinates
 
 $$\tag{1.1}
@@ -246,3 +248,47 @@ $$\tag{3.10}
 \end{align}
 $$
 
+## $\displaystyle{dS_{2}}$ boundary
+
+in this section the conformal Killing vectors remain unchanged, and the metric becomes
+
+$$\tag{4.1}
+\begin{align}
+g^{(0)}_{ab}\mathrm{d}x^{a}\mathrm{d}x^{b} & =\frac{1}{\cos^{2}t}(-\mathrm{d}t^{2}+\mathrm{d}\phi^{2})
+\end{align}
+$$
+
+then we have
+
+$$\tag{4.2}
+\begin{align}
+g^{(0)}_{tt} & =-\frac{1}{\cos^{2}t},g^{(0)}_{\phi \phi}=\frac{1}{\cos^{2}t},g^{(0)}_{t\phi}=0 \\
+g^{(0)tt} & =-\cos^{2}t,g^{(0)\phi \phi}=\cos^{2}t,g^{(0)t\phi}=0 \\
+\Gamma^{(0)t}_{tt} & =\Gamma^{(0)t}_{\phi \phi}=\Gamma^{(0)\phi}_{t\phi}=\tan t,\Gamma^{(0)t}_{t\phi}=\Gamma^{(0)\phi}_{tt}=\Gamma^{(0)\phi}_{\phi \phi}=0\\
+R^{(0)t}_{~~~~~~~\phi t\phi} & =\frac{1}{\cos^{2}t} \\
+R^{(0)}_{tt} & =-R^{(0)}_{\phi \phi}=-\frac{1}{\cos^{2}t},R^{(0)}_{t\phi}=0 \\
+R^{(0)} & =2
+\end{align}
+$$
+
+and the Lie brackets of conformal Killing vectors remain unchanged, since they do not depend on the connection.
+
+$$\tag{4.3}
+\begin{align}
+D^{(0)}_{a}A^{a}_{n} & =-2n\sin nt\cos n\phi+\tan t \cos n(t+\phi)\\
+D^{(0)}_{a}B^{a}_{n} & =2n\cos nt\sin n\phi-\tan t\cos n(t+\phi) \\
+D_{a}^{(0)}C^{a}_{n} & =2n\cos nt\cos n\phi+\tan t\sin n(t+\phi) \\
+D_{a}^{(0)}D_{n}^{a} & =-2n\sin nt\sin n\phi+\tan t\sin n(t+\phi)
+\end{align}
+$$
+
+$$\tag{4.4}
+\begin{align}
+\left\{Q_{A_{m}},Q_{A_{n}}\right\}& =Q_{\left\{A_{m},A_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(A_{m}^{a}D_{b}^{(0)}A_{n}^{b}-A_{n}^{a}D_{b}^{(0)}A_{m}^{b})\right. \\
+ & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}A_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}A_{n}^{c}D_{d}^{(0)}A_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}R^{(0)}(A^{a}_{m}D_{b}^{(0)}A_{n}^{b}-A^{a}_{n}D_{b}^{(0)}A_{m}^{b})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{16\pi G}\int_{0}^{2\pi} \frac{A^{t}_{m}D_{b}^{(0)}A_{n}^{b}-A_{n}^{t}D_{b}^{(0)}A_{m}^{b}}{\cos^{2}t} \mathrm{d}\phi\\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}A^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}A_{n}^{c}D_{d}^{(0)}A^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\frac{1}{32\pi G}\int^{2\pi}_{0}(D_{t}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}A_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}A^{c}_{n}D_{d}^{(0)}A^{d}_{m})\mathrm{d}\phi=0 \\
+\left\{Q_{A_{m}},Q_{A_{n}}\right\} & =Q_{\left\{A_{m},A_{n}\right\}} \\
+ & =\frac{1}{2}(m-n)Q_{C_{m+n}}+\frac{1}{2}(m+n)Q_{C_{m-n}}
+\end{align}
+$$
