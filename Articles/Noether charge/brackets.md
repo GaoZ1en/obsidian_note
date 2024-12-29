@@ -286,9 +286,144 @@ $$\tag{4.4}
 \begin{align}
 \left\{Q_{A_{m}},Q_{A_{n}}\right\}& =Q_{\left\{A_{m},A_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(A_{m}^{a}D_{b}^{(0)}A_{n}^{b}-A_{n}^{a}D_{b}^{(0)}A_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}A_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}A_{n}^{c}D_{d}^{(0)}A_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
--\frac{1}{32\pi G}\int_{\partial \Sigma}R^{(0)}(A^{a}_{m}D_{b}^{(0)}A_{n}^{b}-A^{a}_{n}D_{b}^{(0)}A_{m}^{b})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{16\pi G}\int_{0}^{2\pi} \frac{A^{t}_{m}D_{b}^{(0)}A_{n}^{b}-A_{n}^{t}D_{b}^{(0)}A_{m}^{b}}{\cos^{2}t} \mathrm{d}\phi\\
--\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}A^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}A_{n}^{c}D_{d}^{(0)}A^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\frac{1}{32\pi G}\int^{2\pi}_{0}(D_{t}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}A_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}A^{c}_{n}D_{d}^{(0)}A^{d}_{m})\mathrm{d}\phi=0 \\
-\left\{Q_{A_{m}},Q_{A_{n}}\right\} & =Q_{\left\{A_{m},A_{n}\right\}} \\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}R^{(0)}(A^{a}_{m}D_{b}^{(0)}A_{n}^{b}-A^{a}_{n}D_{b}^{(0)}A_{m}^{b})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{16\pi G}\int_{0}^{2\pi} \frac{A^{t}_{m}D_{b}^{(0)}A_{n}^{b}-A_{n}^{t}D_{b}^{(0)}A_{m}^{b}}{\cos^{2}t} \mathrm{d}\phi \\
+ & =0\\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}A^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}A_{n}^{c}D_{d}^{(0)}A^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\frac{1}{32\pi G}\int^{2\pi}_{0} \frac{D_{t}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}A_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}A^{c}_{n}D_{d}^{(0)}A^{d}_{m}}{\cos^{2}t}\mathrm{d}\phi=0 \\
+\left\{Q_{A_{m}},Q_{A_{n}}\right\} & =Q_{\left\{A_{m},A_{n}\right\}}\\
  & =\frac{1}{2}(m-n)Q_{C_{m+n}}+\frac{1}{2}(m+n)Q_{C_{m-n}}
+\end{align}
+$$
+
+$$\tag{4.5}
+\begin{align}
+\left\{Q_{A_{m}},Q_{B_{n}}\right\}& =Q_{\left\{A_{m},B_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(A_{m}^{a}D_{b}^{(0)}B_{n}^{b}-B_{n}^{a}D_{b}^{(0)}A_{m}^{b})\right. \\
+ & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}B_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}B_{n}^{c}D_{d}^{(0)}A_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}R^{(0)}(A^{a}_{m}D_{b}^{(0)}B_{n}^{b}-B^{a}_{n}D_{b}^{(0)}A_{m}^{b})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{16\pi G}\int_{0}^{2\pi} \frac{A^{t}_{m}D_{b}^{(0)}B_{n}^{b}-B_{n}^{t}D_{b}^{(0)}A_{m}^{b}}{\cos^{2}t} \mathrm{d}\phi \\
+ & =\frac{1}{16G}\cos 2mt\tan t\sec^{2}t(\delta_{m,n}+\delta_{m,-n}) \\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}B^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}B_{n}^{c}D_{d}^{(0)}A^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\frac{1}{32\pi G}\int^{2\pi}_{0} \frac{D_{t}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}B_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}B^{c}_{n}D_{d}^{(0)}A^{d}_{m}}{\cos^{2}t}\mathrm{d}\phi \\
+ & =-\frac{1}{32G}(\cos 2mt\tan t+2m\sin 2mt\sec^{2}t)\sec^{2}t (\delta_{m,n}+\delta_{m,-n})\\
+\left\{Q_{A_{m}},Q_{B_{n}}\right\} & =Q_{\left\{A_{m},B_{n}\right\}}+\frac{1}{32G}(\cos 2mt\tan t-2m\sec^{2}t\sin 2mt)\sec^{2}t(\delta_{m,n}+\delta_{m,-n})\\
+ & =-\frac{1}{2}(m-n)Q_{D_{m+n}}-\frac{1}{2}(m+n)Q_{D_{m-n}}+\frac{1}{32G}(\cos 2mt\tan t-2m\sec^{2}t\sin 2mt)\sec^{2}t(\delta_{m,n}+\delta_{m,-n})
+\end{align}
+$$
+
+$$\tag{4.6}
+\begin{align}
+\left\{Q_{A_{m}},Q_{C_{n}}\right\}& =Q_{\left\{A_{m},C_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(A_{m}^{a}D_{b}^{(0)}C_{n}^{b}-C_{n}^{a}D_{b}^{(0)}A_{m}^{b})\right. \\
+ & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}C_{n}^{c}D_{d}^{(0)}A_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}R^{(0)}(A^{a}_{m}D_{b}^{(0)}C_{n}^{b}-C^{a}_{n}D_{b}^{(0)}A_{m}^{b})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{16\pi G}\int_{0}^{2\pi} \frac{A^{t}_{m}D_{b}^{(0)}C_{n}^{b}-C_{n}^{t}D_{b}^{(0)}A_{m}^{b}}{\cos^{2}t} \mathrm{d}\phi \\
+ & =-\frac{1}{8G}m\sec^{2}t(\delta_{m,n}-\delta_{m,-n})\\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}C^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}C_{n}^{c}D_{d}^{(0)}A^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\frac{1}{32\pi G}\int^{2\pi}_{0} \frac{D_{t}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}C^{c}_{n}D_{d}^{(0)}A^{d}_{m}}{\cos^{2}t}\mathrm{d}\phi \\
+ & =\frac{1}{16G}m(1-2m^{2})\sec^{2}t(\delta_{m,n}-\delta_{m,-n})\\
+\left\{Q_{A_{m}},Q_{C_{n}}\right\} & =Q_{\left\{A_{m},C_{n}\right\}}+\frac{1}{16G}m(1-4m^{2})\sec^{2}t(\delta_{m,n}-\delta_{m,-n})\\
+ & =-\frac{1}{2}(m-n)Q_{A_{m+n}}+\frac{1}{2}(m+n)Q_{A_{m-n}}-\frac{1}{16G}m(1+2m^{2})\sec^{2}t(\delta_{m,n}-\delta_{m,-n})
+\end{align}
+$$
+
+$$\tag{4.7}
+\begin{align}
+\left\{Q_{A_{m}},Q_{D_{n}}\right\}& =Q_{\left\{A_{m},D_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(A_{m}^{a}D_{b}^{(0)}D_{n}^{b}-D_{n}^{a}D_{b}^{(0)}A_{m}^{b})\right. \\
+ & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}A_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}R^{(0)}(A^{a}_{m}D_{b}^{(0)}D_{n}^{b}-D^{a}_{n}D_{b}^{(0)}A_{m}^{b})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{16\pi G}\int_{0}^{2\pi} \frac{A^{t}_{m}D_{b}^{(0)}D_{n}^{b}-D_{n}^{t}D_{b}^{(0)}A_{m}^{b}}{\cos^{2}t} \mathrm{d}\phi \\
+ & =-\frac{1}{16G}\sin 2mt\tan t\sec^{2}t(\delta_{m,n}-\delta_{m,-n})\\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}D^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}A^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\frac{1}{32\pi G}\int^{2\pi}_{0} \frac{D_{t}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}D^{c}_{n}D_{d}^{(0)}A^{d}_{m}}{\cos^{2}t}\mathrm{d}\phi \\
+ & =\frac{1}{32G}(\sin 2mt-2m\tan t)\tan t\sec^{2}t(\delta_{m,n}-\delta_{m,-n})\\
+\left\{Q_{A_{m}},Q_{D_{n}}\right\} & =Q_{\left\{A_{m},D_{n}\right\}}-\frac{1}{32G}(\sin 2mt+2m\tan t)\tan t(\delta_{m,n}-\delta_{-m,-n})\\
+ & =\frac{1}{2}(m-n)Q_{B_{m+n}}-\frac{1}{2}(m+n)Q_{B_{m-n}}-\frac{1}{32G}(\sin 2mt+2m\tan t)\tan t\sec^{2}t(\delta_{m,n}-\delta_{m,-n})
+\end{align}
+$$
+
+$$\tag{4.8}
+\begin{align}
+\left\{Q_{B_{m}},Q_{B_{n}}\right\}& =Q_{\left\{B_{m},B_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(B_{m}^{a}D_{b}^{(0)}B_{n}^{b}-B_{n}^{a}D_{b}^{(0)}B_{m}^{b})\right. \\
+ & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}B_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}B_{n}^{c}D_{d}^{(0)}B_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}R^{(0)}(B^{a}_{m}D_{b}^{(0)}B_{n}^{b}-B^{a}_{n}D_{b}^{(0)}B_{m}^{b})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{16\pi G}\int_{0}^{2\pi} \frac{B^{t}_{m}D_{b}^{(0)}B_{n}^{b}-B_{n}^{t}D_{b}^{(0)}B_{m}^{b}}{\cos^{2}t} \mathrm{d}\phi \\
+ & =0\\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}B^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}B_{n}^{c}D_{d}^{(0)}B^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\frac{1}{32\pi G}\int^{2\pi}_{0} \frac{D_{t}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}B_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}B^{c}_{n}D_{d}^{(0)}B^{d}_{m}}{\cos^{2}t}\mathrm{d}\phi \\
+ & =0\\
+\left\{Q_{B_{m}},Q_{B_{n}}\right\} & =Q_{\left\{B_{m},B_{n}\right\}}\\
+ & =\frac{1}{2}(m-n)Q_{C_{m+n}}+\frac{1}{2}(m+n)Q_{C_{m-n}}
+\end{align}
+$$
+
+$$\tag{4.9}
+\begin{align}
+\left\{Q_{B_{m}},Q_{C_{n}}\right\}& =Q_{\left\{B_{m},C_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(B_{m}^{a}D_{b}^{(0)}C_{n}^{b}-C_{n}^{a}D_{b}^{(0)}B_{m}^{b})\right. \\
+ & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}C_{n}^{c}D_{d}^{(0)}B_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}R^{(0)}(B^{a}_{m}D_{b}^{(0)}C_{n}^{b}-C^{a}_{n}D_{b}^{(0)}B_{m}^{b})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{16\pi G}\int_{0}^{2\pi} \frac{B^{t}_{m}D_{b}^{(0)}C_{n}^{b}-C_{n}^{t}D_{b}^{(0)}B_{m}^{b}}{\cos^{2}t} \mathrm{d}\phi \\
+ & =-\frac{1}{16G}\sin 2mt\tan t\sec^{2}t(\delta_{m,n}-\delta_{m,-n})\\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}C^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}C_{n}^{c}D_{d}^{(0)}B^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\frac{1}{32\pi G}\int^{2\pi}_{0} \frac{D_{t}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}C^{c}_{n}D_{d}^{(0)}B^{d}_{m}}{\cos^{2}t}\mathrm{d}\phi \\
+ & =\frac{1}{16G}m(\tan^{2}t-\cos^{2}mt\sec^{2}t)\sec^{2}t(\delta_{m,n}-\delta_{m,-n})\\
+\left\{Q_{B_{m}},Q_{C_{n}}\right\} & =Q_{\left\{B_{m},C_{n}\right\}}+\frac{1}{16G}(\tan^{2}t-\cos^{2}mt\sec^{2}t-\sin 2mt\tan t)\sec^{2}(\delta_{m,n}-\delta_{m,-n})\\
+ & =-\frac{1}{2}(m-n)Q_{B_{m+n}}+\frac{1}{2}(m+n)Q_{B_{m-n}}+\frac{1}{16G}(\tan^{2}t-\cos^{2}mt\sec^{2}t-\sin 2mt\tan t)\sec^{2}t(\delta_{m,n}-\delta_{m,-n})
+\end{align}
+$$
+
+$$\tag{4.10}
+\begin{align}
+\left\{Q_{B_{m}},Q_{D_{n}}\right\}& =Q_{\left\{B_{m},D_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(B_{m}^{a}D_{b}^{(0)}D_{n}^{b}-D_{n}^{a}D_{b}^{(0)}B_{m}^{b})\right. \\
+ & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}B_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}R^{(0)}(B^{a}_{m}D_{b}^{(0)}D_{n}^{b}-D^{a}_{n}D_{b}^{(0)}B_{m}^{b})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{16\pi G}\int_{0}^{2\pi} \frac{B^{t}_{m}D_{b}^{(0)}D_{n}^{b}-D_{n}^{t}D_{b}^{(0)}B_{m}^{b}}{\cos^{2}t} \mathrm{d}\phi \\
+ & =\frac{1}{8 G}m\sec^{2}t(\delta_{m,n}-\delta_{m,-n})\\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}D^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}B^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\frac{1}{32\pi G}\int^{2\pi}_{0} \frac{D_{t}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}D^{c}_{n}D_{d}^{(0)}B^{d}_{m}}{\cos^{2}t}\mathrm{d}\phi \\
+ & =-\frac{1}{16G}m(1-2m^{2})\sec^{2}t(\delta_{m,n}-\delta_{m,-n})\\
+\left\{Q_{B_{m}},Q_{D_{n}}\right\} & =Q_{\left\{B_{m},D_{n}\right\}}+\frac{1}{16G}m(1+2m^{2})\sec^{2}t(\delta_{m,n}-\delta_{m,-n})\\
+ & =\frac{1}{2}(m-n)Q_{A_{m+n}}-\frac{1}{2}(m+n)Q_{A_{m-n}}+\frac{1}{16G}m(1+2m^{2})\sec^{2}t(\delta_{m,n}-\delta_{m,-n})
+\end{align}
+$$
+
+$$\tag{4.11}
+\begin{align}
+\left\{Q_{C_{m}},Q_{C_{n}}\right\}& =Q_{\left\{C_{m},C_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(C_{m}^{a}D_{b}^{(0)}C_{n}^{b}-C_{n}^{a}D_{b}^{(0)}C_{m}^{b})\right. \\
+ & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}C_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}C_{n}^{c}D_{d}^{(0)}C_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}R^{(0)}(C^{a}_{m}D_{b}^{(0)}C_{n}^{b}-C^{a}_{n}D_{b}^{(0)}C_{m}^{b})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{16\pi G}\int_{0}^{2\pi} \frac{C^{t}_{m}D_{b}^{(0)}C_{n}^{b}-C_{n}^{t}D_{b}^{(0)}C_{m}^{b}}{\cos^{2}t} \mathrm{d}\phi \\
+ & =0\\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}C_{m}^{c}D_{d}^{(0)}C^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}C_{n}^{c}D_{d}^{(0)}C^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\frac{1}{32\pi G}\int^{2\pi}_{0} \frac{D_{t}^{(0)}D_{c}^{(0)}C_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}C^{c}_{n}D_{d}^{(0)}C^{d}_{m}}{\cos^{2}t}\mathrm{d}\phi \\
+ & =0\\
+\left\{Q_{C_{m}},Q_{C_{n}}\right\} & =Q_{\left\{C_{m},C_{n}\right\}}\\
+ & =-\frac{1}{2}(m-n)Q_{C_{m+n}}+\frac{1}{2}(m+n)Q_{C_{m-n}}
+\end{align}
+$$
+
+$$\tag{4.12}
+\begin{align}
+\left\{Q_{C_{m}},Q_{D_{n}}\right\}& =Q_{\left\{C_{m},D_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(C_{m}^{a}D_{b}^{(0)}D_{n}^{b}-D_{n}^{a}D_{b}^{(0)}C_{m}^{b})\right. \\
+ & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}C_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}C_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}R^{(0)}(C^{a}_{m}D_{b}^{(0)}D_{n}^{b}-D^{a}_{n}D_{b}^{(0)}C_{m}^{b})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{16\pi G}\int_{0}^{2\pi} \frac{C^{t}_{m}D_{b}^{(0)}D_{n}^{b}-D_{n}^{t}D_{b}^{(0)}C_{m}^{b}}{\cos^{2}t} \mathrm{d}\phi \\
+ & =\frac{1}{16G}\cos 2mt\tan t \sec^{2}t(\delta_{m,n}-\delta_{m,-n})\\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}C_{m}^{c}D_{d}^{(0)}D^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}C^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\frac{1}{32\pi G}\int^{2\pi}_{0} \frac{D_{t}^{(0)}D_{c}^{(0)}C_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}D^{c}_{n}D_{d}^{(0)}C^{d}_{m}}{\cos^{2}t}\mathrm{d}\phi \\
+ & =-\frac{1}{16G}m\sin 2mt\sec^{4}t(\delta_{m,n}-\delta_{m,-n})\\
+\left\{Q_{C_{m}},Q_{D_{n}}\right\} & =Q_{\left\{C_{m},D_{n}\right\}}+\frac{1}{16G}(\cos 2mt\tan t-m\sin 2mt\sec^{2}t)\sec^{2}t(\delta_{m,n}-\delta_{m,n})\\
+ & =-\frac{1}{2}(m-n)Q_{D_{m+n}}+\frac{1}{2}(m+n)Q_{D_{m-n}}+\frac{1}{16G}(\cos 2mt\tan t-m\sin 2mt\sec^{2}t)\sec^{2}t(\delta_{m,n}-\delta_{m,n})
+\end{align}
+$$
+
+$$\tag{4.13}
+\begin{align}
+\left\{Q_{D_{m}},Q_{D_{n}}\right\}& =Q_{\left\{D_{m},D_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(D_{m}^{a}D_{b}^{(0)}D_{n}^{b}-D_{n}^{a}D_{b}^{(0)}D_{m}^{b})\right. \\
+ & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}D_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}D_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}R^{(0)}(D^{a}_{m}D_{b}^{(0)}D_{n}^{b}-D^{a}_{n}D_{b}^{(0)}D_{m}^{b})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{16\pi G}\int_{0}^{2\pi} \frac{D^{t}_{m}D_{b}^{(0)}D_{n}^{b}-D_{n}^{t}D_{b}^{(0)}D_{m}^{b}}{\cos^{2}t} \mathrm{d}\phi \\
+ & =0\\
+-\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}D_{m}^{c}D_{d}^{(0)}D^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}D^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\frac{1}{32\pi G}\int^{2\pi}_{0} \frac{D_{t}^{(0)}D_{c}^{(0)}D_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}D^{c}_{n}D_{d}^{(0)}D^{d}_{m}}{\cos^{2}t}\mathrm{d}\phi \\
+ & =0\\
+\left\{Q_{D_{m}},Q_{D_{n}}\right\} & =Q_{\left\{D_{m},D_{n}\right\}}\\
+ & =-\frac{1}{2}(m-n)Q_{C_{m+n}}+\frac{1}{2}(m+n)Q_{C_{m-n}}
+\end{align}
+$$
+
+as a summary, we have
+
+$$\tag{4.14}
+\begin{align}
+\left\{Q_{A_{m}},Q_{A_{n}}\right\} & =\frac{1}{2}(m-n)Q_{C_{m+n}}+\frac{1}{2}(m+n)Q_{C_{m-n}} \\
+\left\{Q_{A_{m}},Q_{B_{n}}\right\} & =-\frac{1}{2}(m-n)Q_{D_{m+n}}-\frac{1}{2}(m+n)Q_{D_{m-n}}+\frac{1}{32G}(\cos 2mt\tan t-2m\sec^{2}t\sin 2mt)\sec^{2}t(\delta_{m,n}+\delta_{m,-n}) \\
+\left\{Q_{A_{m}},Q_{C_{n}}\right\} & =-\frac{1}{2}(m-n)Q_{A_{m+n}}+\frac{1}{2}(m+n)Q_{A_{m-n}}-\frac{1}{16G}m(1+2m^{2})\sec^{2}t(\delta_{m,n}-\delta_{m,-n}) \\
+\left\{Q_{A_{m}},Q_{D_{n}}\right\} & =\frac{1}{2}(m-n)Q_{B_{m+n}}-\frac{1}{2}(m+n)Q_{B_{m-n}}-\frac{1}{32G}(\sin 2mt+2m\tan t)\tan t\sec^{2}t(\delta_{m,n}-\delta_{m,-n}) \\
+\left\{Q_{B_{m}},Q_{B_{n}}\right\} & =\frac{1}{2}(m-n)Q_{C_{m+n}}+\frac{1}{2}(m+n)Q_{C_{m-n}} \\
+\left\{Q_{B_{m}},Q_{C_{n}}\right\} & =-\frac{1}{2}(m-n)Q_{B_{m+n}}+\frac{1}{2}(m+n)Q_{B_{m-n}}+\frac{1}{16G}(\tan^{2}t-\cos^{2}mt\sec^{2}t-\sin 2mt\tan t)\sec^{2}t(\delta_{m,n}-\delta_{m,-n}) \\
+\left\{Q_{B_{m}},Q_{D_{n}}\right\} & =\frac{1}{2}(m-n)Q_{A_{m+n}}-\frac{1}{2}(m+n)Q_{A_{m-n}}+\frac{1}{16G}m(1+2m^{2})\sec^{2}t(\delta_{m,n}-\delta_{m,-n}) \\
+\left\{Q_{C_{m}},Q_{C_{n}}\right\} & =-\frac{1}{2}(m-n)Q_{C_{m+n}}+\frac{1}{2}(m+n)Q_{C_{m-n}} \\
+\left\{Q_{C_{m}},Q_{D_{n}}\right\} & =-\frac{1}{2}(m-n)Q_{D_{m+n}}+\frac{1}{2}(m+n)Q_{D_{m-n}}+\frac{1}{16G}(\cos 2mt\tan t-m\sin 2mt\sec^{2}t)\sec^{2}t(\delta_{m,n}-\delta_{m,n}) \\
+\left\{Q_{D_{m}},Q_{D_{n}}\right\} & =-\frac{1}{2}(m-n)Q_{C_{m+n}}+\frac{1}{2}(m+n)Q_{C_{m-n}}
 \end{align}
 $$
