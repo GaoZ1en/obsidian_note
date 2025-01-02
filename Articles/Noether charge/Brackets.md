@@ -1,4 +1,4 @@
-J## flat boundary
+## flat boundary
 
 choose boundary coordinates
 
