@@ -88,4 +88,130 @@ L_{E}[x(\tau)] & =-L[x(t\to-i\tau)]
 \end{align}
 $$
 
-Unless indicated, we shall from now on work within the Euclidean formalism, and we will drop the subscript $\displaystyle{E}$ and replace $\displaystyle{\tau}$ with $\displaystyle{t}$. 
+Unless indicated, we shall from now on work within the Euclidean formalism, and we will drop the subscript $\displaystyle{E}$ and replace $\displaystyle{\tau}$ with $\displaystyle{t}$. the Euclidean formalism also affects the spacetime metric
+
+$$\tag{1.3.11}
+\begin{align}
+\eta_{\mu \nu} & =\begin{cases}
+\mathrm{diag}(1,-1,\dots,-1) & \text{Minkowski} \\
+\mathrm{diag}(1,1,\dots,1) & \text{Euclidean}
+\end{cases}
+\end{align}
+$$
+
+the Minkowski metric is not the usual one we have ever used ($\displaystyle{\eta_{\mu \nu}=\mathrm{diag}(-1,1,\dots,1)}$).
+
+## the generating functional
+
+here we define the generating functional
+
+$$\tag{1.3.12}
+\begin{align}
+Z[j] & =\int \mathcal{D}xe^{-S[x(t)]+\int \mathrm{d}tj(t)x(t)}
+\end{align}
+$$
+
+where $\displaystyle{j(t)}$ is an auxiliary current coupled linearly to the dynamical variable $\displaystyle{x}$. 
+
+$$\tag{1.3.13}
+\begin{align}
+Z[j] & =Z[0]\int \mathcal{D}xe^{\int \mathrm{d}tj(t)x)t}=Z[0]\left\langle  e^{\int \mathrm{d}tj(t)x(t)} \right\rangle \\
+ & =Z[0]\sum^{\infty}_{n=0}\int \mathrm{d}t_{1}\dots \mathrm{d}t_{n} \frac{1}{n!}j(t_{1})\dots j(t_{n})\langle x(t_{1})\dots x(t_{n})\rangle \\
+\langle x(t_{1})\dots x(t_{n})\rangle & =Z[0]^{-1} \frac{\delta}{\delta j(t_{1})}\dots \frac{\delta}{\delta j(t_{n})}Z[j]|_{j=0}
+\end{align}
+$$
+
+this definition can be easily extended to a quantum field $\displaystyle{\phi(x)}$.
+
+## example: the free boson
+
+consider the following two-dimensional free boson Euclidean action
+
+$$\tag{1.3.14}
+\begin{align}
+S & =\int \mathrm{d}^{2}x \frac{1}{2}g\left( \partial_{\mu}\phi\partial^{\mu}\phi+m^{2}\phi^{2} \right)
+\end{align}
+$$
+
+where $\displaystyle{g}$ is some normalization parameter left unspecified at this moment. we first calculate the propagator
+
+$$\tag{1.3.15}
+\begin{align}
+K(x,y) & =\langle \phi(x)\phi(y)\rangle
+\end{align}
+$$
+
+if we write the action as
+
+$$\tag{1.3.16}
+\begin{align}
+S & =\int \mathrm{d}^{2}x \frac{1}{2}g\phi(-\partial^{2}+m^{2})\phi+(\text{total derivative term}) \\
+ & =\int \mathrm{d}^{2}x\mathrm{d}^{2}y \frac{1}{2}\phi(x)A(x,y)\phi(y)+(\text{total derivative term}) \\
+A(x,y) & =g\delta(x-y)(-\partial^{2}+m^{2})
+\end{align}
+$$
+
+then the propagator is then $\displaystyle{K(x,y)=A^{-1}(x,y)}$, that is,
+
+$$\tag{1.3.17}
+\begin{align}
+g(-\partial^{2}+m^{2})K(x,y) & =\delta(x-y)
+\end{align}
+$$
+
+by symmetry, we have $\displaystyle{K(x,y)=K(\rho)}$, where $\displaystyle{\rho=|x-y|}$. integrating (1.3.17) over $\displaystyle{x}$ within a disk $\displaystyle{D}$ of radius $\displaystyle{r}$ centered around $\displaystyle{y}$, we have
+
+$$\tag{1.3.18}
+\begin{align}
+1 & =2\pi g\int^{r}_{0}\mathrm{d}\rho \rho\left(-\frac{1}{\rho} \frac{\partial}{\partial \rho}(\rho K'(\rho))+m^{2}K(\rho)\right) \\
+ & =-2\pi grK'(r)+2\pi gm^{2}\int^{r}_{0}\mathrm{d}\rho \rho K(\rho)
+\end{align}
+$$
+
+for massless boson, we have simply
+
+$$\tag{1.3.19}
+\begin{align}
+K(r) & =-\frac{1}{2\pi g}\ln r \\
+\langle \phi(x)\phi(y) & =-\frac{1}{4\pi G}\ln(x-y)^{2}
+\end{align}
+$$
+
+and for massive boson, (1.3.18) becomes the modified Bessel equation of order 0
+
+$$\tag{1.3.20}
+\begin{align}
+K''+\frac{1}{r}K'-m^{2}K=0 \\
+K(\rho)=\frac{1}{2\pi g}K_{0}(m\rho) \\
+K_{0}(x)=\int^{\infty}_{0}\mathrm{d}t \frac{\cos(xt)}{\sqrt{ 1+t^{2} }}
+\end{align}
+$$
+
+at large distances, the modified Bessel function decays exponentially. this is also obvious from (1.3.20) by neglecting the second derivative term.
+
+## Wick's theorem
+
+Wick's theorem related normal ordering, which places all annihilation operators on the right, and time ordering, which sorts operators in chronological order. we have the following statement
+
+>[!Wick's theorem]
+>the time-ordered product is equal to the normal-ordered product, plus all possible ways of contracting pairs of fields within it.
+
+for example
+
+$$\tag{1.3.21}
+\begin{align}
+\mathcal{T}(\phi_{1}\phi_{2}\phi_{3}\phi_{4}) & =:\phi_{1}\phi_{2}\phi_{3}\phi_{4}:+\langle \phi_{1}\phi_{2}\rangle:\phi_{3}\phi_{4}:+\langle \phi_{1}\phi_{3}\rangle:\phi_{2}\phi_{4}:+\langle \phi_{1}\phi_{4}\rangle:\phi_{2}\phi_{3}: \\
+ & \langle \phi_{2}\phi_{3}\rangle:\phi_{1}\phi_{4}:+\langle \phi_{2}\phi_{4}\rangle:\phi_{1}\phi_{3}:+\langle \phi_{3}\phi_{4}\rangle:\phi_{1}\phi_{2}:+\langle \phi_{1}\phi_{2}\rangle\langle \phi_{3}\phi_{4}\rangle \\
+ & +\langle \phi_{1}\phi_{3}\rangle\langle \phi_{2}\phi_{4}\rangle+\langle \phi_{1}\phi_{4}\rangle\langle \phi_{2}\phi_{4}\rangle
+\end{align}
+$$
+
+and for fermions, we need take anti-commuting into accounts
+
+$$\tag{1.3.22}
+\begin{align}
+\mathcal{T}(\psi_{1}\psi_{2}\psi_{3}\psi_{4}) & =:\psi_{1}\psi_{2}\psi_{3}\psi_{4}:+\langle \psi_{1}\psi_{2}\rangle:\psi_{3}\psi_{4}:-\langle \psi_{1}\psi_{3}\rangle:\psi_{2}\psi_{4}:+\langle \psi_{1}\psi_{4}\rangle:\psi_{2}\psi_{3}: \\
+ & \langle \psi_{2}\psi_{3}\rangle:\psi_{1}\psi_{4}:-\langle \psi_{2}\psi_{4}\rangle:\psi_{1}\psi_{3}:+\langle \psi_{3}\psi_{4}\rangle:\psi_{1}\psi_{2}:+\langle \psi_{1}\psi_{2}\rangle\langle \psi_{3}\psi_{4}\rangle \\
+ & +\langle \psi_{1}\psi_{3}\rangle\langle \psi_{2}\psi_{4}\rangle-\langle \psi_{1}\psi_{4}\rangle\langle \psi_{2}\psi_{4}\rangle
+\end{align}
+$$
