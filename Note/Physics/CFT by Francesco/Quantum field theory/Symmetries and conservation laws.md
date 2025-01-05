@@ -68,3 +68,59 @@ $$
 
 ## Ward identities
 
+suppose an infinitesimal transformation can be written in terms of the generators as
+
+$$\tag{1.4.8}
+\begin{align}
+\Phi'(x) & =\Phi(x)-i\omega_{a}G_{a}\Phi(x)
+\end{align}
+$$
+
+where $\displaystyle{\omega_{a}}$ is a collection of infinitesimal, constant parameters. denoting by $\displaystyle{X}$ the collection $\displaystyle{\Phi(x_{1})\dots \Phi(x_{n})}$ of fields, consider the transformation of the correlation function
+
+$$\tag{1.4.9}
+\begin{align}
+\langle X\rangle & =\frac{1}{Z}\int \mathcal{D}\Phi'(X+\delta_{\omega} X)\exp\left(-S[\Phi]-\int \mathrm{d}x\partial_{\mu}j^{\mu}_{a}\omega_{a}\right)
+\end{align}
+$$
+
+we again assume that the functional integration measure is invariant under the local transformation. when expanded to the first order in $\displaystyle{\omega_{a}}$, we have
+
+$$\tag{1.4.10}
+\begin{align}
+\langle \delta_{\omega}X\rangle & =\int \mathrm{d}x\partial_{\mu}(j^{\mu}_{a}(x)X)\omega_{a}(x)
+\end{align}
+$$
+
+the variation $\displaystyle{\delta X}$ is explicitly given by
+
+$$\tag{1.4.11}
+\begin{align}
+\delta_{\omega} X & =-i\sum^{n}_{i=1}(\Phi(x_{1})\dots G_{a}\Phi(x_{i})\dots \Phi(x_{n}))\omega_{a}(x_{i}) \\
+ & =-i \int \mathrm{d}x\omega_{a}(x)\sum^{n}_{i=1}(\Phi(x_{1})\dots G_{a}\Phi(x_{i})\dots \Phi(x_{n}))\delta(x-x_{i})
+\end{align}
+$$
+
+then combining (1.4.10) and (1.4.11), we have obtain the Ward identity
+
+$$\tag{1.4.12}
+\begin{align}
+\frac{\partial}{\partial x^{\mu}}\langle j^{\mu}_{a}(x)\Phi(x_{1})\dots \Phi(x_{n})\rangle=-i\sum^{n}_{i=1}\delta(x-x_{i})\langle \Phi(x_{1})\dots G_{a}\Phi(x_{i})\dots \Phi(x_{n})\rangle
+\end{align}
+$$
+
+a direct corollary is that
+
+$$\tag{1.4.13}
+\begin{align}
+[Q_{a},\Phi]=-iG_{a}\Phi
+\end{align}
+$$
+
+where $\displaystyle{Q_{a}}$ is the charge associated with $\displaystyle{j^{\mu}_{a}}$ as
+
+$$\tag{1.4.14}
+\begin{align}
+Q_{a} & =\int \mathrm{d}^{d-1}xj^{0}_{a}(x)
+\end{align}
+$$

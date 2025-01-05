@@ -1,6 +1,6 @@
 this is a note for CFT by Francesco et. al.
 
-the initial motivation is to understand the Virasoro algebra appeared in $\displaystyle{\mathrm{dS}_{2}}$ boundary gravity [[Articles/Noether charge/Virasoro Algebra|Virasoro Algebra]]:
+the initial motivation is to understand the Virasoro algebra appeared in $\displaystyle{\mathrm{dS}_{2}}$ boundary gravity [[Articles/Noether charge/Virasoro algebra|Virasoro algebra]]:
 
 $$\tag{0.0.1}
 \begin{align}
