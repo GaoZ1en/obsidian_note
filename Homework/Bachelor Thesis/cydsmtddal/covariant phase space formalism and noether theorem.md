@@ -36,5 +36,3 @@
 [14] V. Chandrasekaran and A. J. Speranza, “Anomalies in gravitational charge algebras of null boundaries and black hole entropy,” JHEP 01 (2021), 137 doi:10.1007/JHEP01(2021)137 [arXiv:2009.10739 [hep-th]].
 [15] K. Shi, X. Wang, Y. Xiu and H. Zhang, “Covariant phase space with null boundaries,” Commun. Theor. Phys. 73 (2021) no.12, 125401 doi:10.1088/1572-9494/ac2a1b [arXiv:2008.10551 [hep-th]]
 
-
-

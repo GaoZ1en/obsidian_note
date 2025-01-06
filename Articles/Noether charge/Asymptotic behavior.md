@@ -335,6 +335,3 @@ $$
 \end{align}
 $$
 
-$$
-\text{thank you}
-$$
