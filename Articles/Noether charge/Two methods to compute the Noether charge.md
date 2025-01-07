@@ -61,6 +61,39 @@ $$
 $$\tag{2.5}
 \begin{align}
 \int_{\Sigma}\mathrm{d}(\xi \cdot \theta) & =\int_{\partial \Sigma}\xi \cdot \theta \\
- & =\frac{1}{16\pi G}\int_{\partial \Sigma}\left(2\xi^{(0)a}\delta g_{zz}\right)
+ & =\frac{1}{16\pi G}\int_{\partial \Sigma}\left(2\xi^{(0)a}\delta g_{zz}-4z^{2}\xi^{(0)a}g^{(0)cd}g_{zc}\delta g_{zd}-z\xi^{(0)a}g^{(0)cd}D_{d}^{(0)}\delta g_{zc}+\xi^{(0)a}g^{(0)cd}\delta g_{cd}\right. \\
+ & \left.+z\xi^{(0)a}g^{(0)cd}\partial_{z}\delta g_{cd}-\frac{1}{2}zg^{(0)ad}\delta g_{zd}D_{c}^{(0)}\xi^{(0)c}+\frac{1}{2}z^{2}g^{(0)ad}\partial_{z}\delta g_{zd}D_{c}^{(0)}\xi^{(0)c}+\mathcal{O}(z^{2})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}
+\end{align}
+$$
+
+sum over (2.3-5), we have
+
+$$\tag{2.6}
+\begin{align}
+-X_{\xi}\cdot \Omega & =\frac{1}{16\pi G}\int_{\partial \Sigma}\left(\xi^{(0)a}\delta g_{zz}+2\xi^{(0)a}g^{(0)cd}\delta g_{cd}-2\xi^{(0)c}g^{(0)ad}\delta g_{cd}-zg^{(0)ad}\delta g_{zd}D_{c}^{(0)}\xi^{(0)c}-z\xi^{(0)a}g^{(0)cd}D_{c}^{(0)}\delta g_{zd}\right. \\
+ & \left.+z\xi^{(0)a}g^{(0)cd}\partial_{z}\delta g_{cd}+z\xi^{(0)c}g^{(0)ad}D_{d}^{(0)}\delta g_{zc}-z\xi^{(0)c}g^{(0)ad}\partial_{z}\delta g_{cd}+zg^{(0)cd}\delta g_{zc}D_{d}^{(0)}\xi^{(0)a}-2z^{2}\xi^{(0)a}g^{(0)cd}\delta g_{zc}g_{zd}+\mathcal{O}(z^{2})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+ & =\delta\left(\frac{1}{16\pi G}\int_{\partial \Sigma}\left(\xi^{(0)a}\delta g_{zz}+2\xi^{(0)a}g^{(0)cd}g_{cd}-2\xi^{(0)c}g^{(0)ad}g_{cd}-zg^{(0)ad}g_{zd}D_{c}^{(0)}\xi^{(0)c}-z\xi^{(0)a}g^{(0)cd}D_{c}^{(0)}g_{zd}\right.\right. \\
+ & \left.\left.-z\xi^{(0)a}g^{(0)cd}D_{c}^{(0)}g_{zd}+z\xi^{(0)c}g^{(0)ad}D_{d}^{(0)}g_{zc}+zg^{(0)cd}g_{zc}D_{d}^{(0)}\xi^{(0)a}-z^{2}\xi^{(0)a}g^{(0)cd}g_{zc}g_{zd}\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}\right)
+\end{align}
+$$
+
+then
+
+$$\tag{2.7}
+\begin{align}
+Q_{\xi} & =\lim_{ \varepsilon \to 0 } \frac{1}{16\pi G}\int_{\partial \Sigma}\left(\xi^{(0)a}\Delta g_{zz}+2\xi^{(0)a}g^{(0)cd}\Delta g_{cd}-2\xi^{(0)c}g^{(0)ad}\Delta g_{cd}-zg^{(0)ad}g_{zd}D_{c}\xi^{(0)c}-z\xi^{(0)a}g^{(0)cd}D_{c}^{(0)}g_{zd}\right. \\
+ & \left.+z\xi^{(0)c}g^{(0)ad}D_{d}^{(0)}g_{zc}+zg^{(0)cd}g_{zc}D_{d}^{(0)}\xi^{(0)a}-z^{2}\xi^{(0)a}g^{(0)cd}g_{zc}g_{zd}\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}|_{z=\varepsilon} \\
+ & =\frac{1}{8\pi G}\int_{\partial \Sigma}\xi^{(0)d}g^{(0)ac}(K_{ab}-K\gamma_{ab}+\gamma_{ab})\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}+\lim_{ \varepsilon \to 0 } \frac{\varepsilon}{16\pi G}\int_{\partial \Sigma}D_{c}^{(0)}(\xi^{(0)a}g^{(0)cd}g_{zd}-\xi^{(0)c}g^{(0)ad}g_{zd})\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}
+\end{align}
+$$
+
+the second term is a total derivative term, which vanishes under the assumption of compact $\displaystyle{\partial \Sigma}$
+
+in deriving (2.3-4), we use the following argument
+
+$$\tag{2.8}
+\begin{align}
+X_{\xi}\cdot \theta-\xi \cdot \mathbf{L} & =\mathrm{d}Q_{\xi}-\mathbf{E}^{\mu \nu}\xi_{\nu}\frac{1}{2!}\varepsilon_{\mu \mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{1}}\mathrm{d}x^{\mu_{2}} \\
+Q_{\xi} & =\frac{1}{32\pi G}(\nabla^{\nu}\xi^{\mu}-\nabla^{\mu}\xi^{\nu})\varepsilon_{\mu \nu \mu_{1}}\mathrm{d}x^{\mu_{1}}
 \end{align}
 $$
