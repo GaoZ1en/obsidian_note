@@ -25,10 +25,49 @@ j^{\mu \nu \rho} & =T^{\mu \nu}_{B}x^{\rho}-T^{\mu \rho}_{B}x^{\nu}
 \end{align}
 $$
 
-which ensures that $\displaystyle{T^{\mu \nu}_{B}=T^{\nu \mu}_{B}}$.
+which ensures that $\displaystyle{T^{\mu \nu}_{B}=T^{\nu \mu}_{B}}$. an explicit expression for $\displaystyle{B^{\rho \mu \nu}}$ is
 
 $$\tag{1.5.4}
 \begin{align}
 B^{\mu \rho \nu} & =\frac{i}{4}\left\{\frac{\partial \mathcal{L}}{\partial(\partial_{\mu}\Phi)}S^{\nu \rho}\Phi+\frac{\partial \mathcal{L}}{\partial(\partial_{\rho}\Phi)}S^{\mu \nu}\Phi+\frac{\partial \mathcal{L}}{\partial(\partial_{\nu}\Phi)}S^{\mu \rho}\Phi\right\}
+\end{align}
+$$
+
+## alternative definition of the energy-momentum tensor
+
+in classical theory, we have the well-known one
+
+$$\tag{1.5.5}
+\begin{align}
+\delta S & =-\frac{1}{2}\int\mathrm{d}^{d}x\sqrt{ -g }T^{\mu \nu}\delta g_{\mu \nu} \\
+T^{\mu \nu} & =-\frac{2}{\sqrt{ -g }} \frac{\delta S}{\delta g_{\mu \nu}} 
+\end{align}
+$$
+
+in quantum theory (1.5.5) takes the following meaning. consider the vacuum functional $\displaystyle{Z[g]}$ with respect to the metric
+
+$$\tag{1.5.6}
+\begin{align}
+Z[g] & =\int \mathcal{D}\Phi_{g}e^{-S[\Phi,g]} \\
+ & =e^{-W[g]}
+\end{align}
+$$
+
+where we have defined the connected vacuum functional $\displaystyle{W[g]}$. under an infinitesimal variation $\displaystyle{\delta g}$ of the metric, we have
+
+$$\tag{1.5.7}
+\begin{align}
+Z[g+\delta g] & =\int \mathcal{D}\Phi_{g+\delta g}\exp(-S[\Phi,g+\delta g]) \\
+ & =\int \mathcal{D}\Phi_{g}\left(1+\frac{1}{2}\mathrm{d}^{d}x\sqrt{ -g }\delta g_{\mu \nu}T^{\mu \nu}\right)\exp(-S[\Phi,g]) \\
+ & =Z[g] +\frac{1}{2}Z[g]\int \mathrm{d}^{d}x\sqrt{ -g }\delta g_{\mu \nu}\braket{ T^{\mu \nu} } 
+\end{align}
+$$
+
+we have assumed that the energy-momentum tensor takes care of the variation of the action and of the integration measure. and this is the essential difference between the classical and quantum definitions of the energy-momentum tensor(?). the variation of the connected functional $\displaystyle{W[g]}$ is then
+
+$$\tag{1.5.8}
+\begin{align}
+\delta W[g] & =-\frac{\delta Z[g]}{Z[g]}=-\frac{1}{2}\int \mathrm{d}^{d}x\sqrt{ -g }\delta g_{\mu \nu}\braket{ T^{\mu \nu} } \\
+\braket{ T^{\mu \nu}(x) }  & =-\frac{2}{\sqrt{ -g }} \frac{\delta W[g]}{\delta g_{\mu \nu}(x)} 
 \end{align}
 $$
