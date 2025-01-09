@@ -6,6 +6,7 @@ $$\tag{1.1}
 \begin{align}
 S=\int_{M}\mathrm{d}^{2}x\sqrt{ -g }\left(-\frac{1}{4\pi}g^{\mu \nu}\nabla_{\mu}\phi \nabla_{\nu}\phi-\frac{1}{2\pi \gamma}R\phi-\frac{\mu}{4\pi \gamma^{2}}e^{\gamma \phi}\right)
 \end{align}
+
 $$
 
 here we view $\displaystyle{\phi}$ as dynamical field, and $\displaystyle{g_{\mu \nu}}$ as background field. then take a variation of the action (1.1)
