@@ -23,7 +23,7 @@ this ordinary method is based on the Noether theorem
 
 $$\tag{2.1}
 \begin{align}
--\delta Q_{\xi} & =X_{\xi}\cdot \Omega
+-\delta Q_{\xi} & =\int_{\Sigma}X_{\xi}\cdot \Omega
 \end{align}
 $$
 
@@ -210,6 +210,8 @@ terms supports on $\displaystyle{\partial \Sigma}$ are neglected under the assum
 
 it is seems that $\displaystyle{\delta}$ are not the same symbol in the ordinary method and our current method. in the ordinary method, $\displaystyle{\delta}$ acts not only on the dynamical variables, but also the vector $\displaystyle{\xi^{\mu}}$ introduced in the definition of $\displaystyle{X_{\xi}}$ in the ordinary approach, while $\displaystyle{\delta}$ acts only on the dynamical variables in our current approach...?
 
+the **fact** is that we have assumed that the leading terms of $\displaystyle{\xi^{\mu}}$ are independent of the dynamical variables, i.e., $\displaystyle{\delta \xi^{\mu}=0}$. however in general, they actually may depend on dynamical variables. therefore the two methods are consistent with each other.
+
 consider a exact 1-form of the configuration space $\displaystyle{\vartheta=\delta \phi}$, we have
 
 $$\tag{5.1}
@@ -221,3 +223,27 @@ $$\tag{5.1}
 \end{align}
 $$
 
+here we use $\displaystyle{\phi}$ as a scalar. however $\displaystyle{\mathcal{L}_{X_{\xi}}\vartheta=\mathcal{L}_{\xi}\vartheta+X_{\delta \xi}\cdot \vartheta}$ holds for general spacetime tensor. for simplicity, we will only show the case of a vector $\displaystyle{A_{\mu}}$, higher rank tensor can be treated in a similar way
+
+$$\tag{5.2}
+\begin{align}
+\mathcal{L}_{X_{\xi}}\vartheta & =X_{\xi}\cdot \delta^{2} A_{\mu}+\delta(X_{\xi}\cdot \delta A_{\mu}) \\
+ & =\delta(\mathcal{L}_{\xi}A_{\mu})=\delta(\xi^{\nu}\nabla_{\nu}A_{\mu}+A_{\nu}\nabla_{\mu}\xi^{\nu}) \\
+ & =\delta \xi^{\nu}\nabla_{\nu}A_{\mu}+A_{\nu}\nabla_{\mu}\delta \xi^{\nu}+\xi^{\nu}\nabla_{\nu}\delta A_{\mu}+\delta A_{\nu}\nabla_{\mu}\xi^{\nu} \\
+ & =\mathcal{L}_{\delta \xi}A_{\mu}+\mathcal{L}_{\xi}\delta A_{\mu} \\
+ & =\mathcal{L}_{\xi}\vartheta+X_{\delta \xi}\cdot \vartheta
+\end{align}
+$$
+
+we have discuss a general situation is that $\displaystyle{\vartheta=\phi_{1}\delta \phi_{2}}$, we can see that $\displaystyle{\mathcal{L}_{X_{\xi}}\vartheta=\mathcal{L}_{\xi}\vartheta+X_{\delta \xi}\cdot \vartheta}$ also holds
+
+$$\tag{5.2}
+\begin{align}
+\mathcal{L}_{X_{\xi}}\vartheta & =X_{\xi}\cdot \delta(\phi_{1}\delta \phi_{2})+\delta(X_{\xi}\cdot(\phi_{1}\delta \phi_{2})) \\
+ & =X_{\xi}\cdot(\delta \phi_{1}\wedge \delta \phi_{2})+\delta(\phi_{1}(X_{\xi}\cdot \delta \phi_{2})) \\
+ & =(X_{\xi}\cdot \delta \phi_{1})\delta \phi_{2}-(X_{\xi}\cdot \delta \phi_{2})\delta \phi_{1}+\delta \phi_{1}(X_{\xi}\cdot \delta \phi_{2})+\phi_{1}\delta(X_{\xi}\cdot \delta \phi_{2}) \\
+ & =\mathcal{L}_{\xi}\phi_{1}\delta\phi_{2}+\phi_{1}\mathcal{L}_{\xi}\delta \phi_{2}+\phi_{1}X_{\delta \xi}\cdot \delta \phi_{2} \\
+ & =\mathcal{L}_{\xi}(\phi_{1}\delta \phi_{2})+X_{\delta \xi}\cdot(\phi_{1}\delta \phi_{2}) \\
+ & =\mathcal{L}_{\xi}\vartheta+X_{\delta \xi}\cdot \vartheta
+\end{align}
+$$

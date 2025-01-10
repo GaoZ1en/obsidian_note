@@ -22,9 +22,34 @@ $$
 $$\tag{1.3}
 \begin{align}
 -\delta Q_{\xi} & =X_{\xi}\cdot \Omega \\
--X_{\xi}\cdot \omega & =\delta(X_{\xi}\cdot \Theta-\xi \cdot L)-(X_{\delta \xi}\cdot \Theta-\delta \xi \cdot L)-\mathrm{d}(\xi \cdot \Theta)
+-X_{\xi}\cdot \omega & =\delta(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L})-(X_{\delta \xi}\cdot \Theta-\delta \xi \cdot \mathbf{L})-\mathrm{d}(\xi \cdot \Theta) \\
+X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L} & =\mathrm{d}Q_{\xi}-\tilde{E}
 \end{align}
 $$
 
 where $\displaystyle{\omega=\delta \Theta}$ and $\displaystyle{\Omega=\int_{\Sigma}\omega}$
 
+consider the following asymptotic flat spacetime metric
+
+$$\tag{1.4}
+\begin{align}
+g_{\mu \nu} & =\eta_{\mu \nu}+\mathcal{O}(r^{-1}) \\
+\partial_{\alpha}g_{\mu \nu} & =\mathcal{O}(r^{-2})
+\end{align}
+$$
+
+$$\tag{1.5}
+\begin{align}
+\int_{\Sigma}\delta(X_{\xi}\cdot \theta-\xi \cdot \mathbf{L}) & =\delta \int_{\partial\Sigma} \frac{1}{16\pi}\varepsilon_{\mu \nu \mu_{1}}(\nabla^{\nu}\xi^{\mu}-\nabla^{\mu}\xi^{\nu})\mathrm{d}x^{\mu_{1}} \\
+ & =\int_{\Sigma}(X_{\delta \xi}\cdot \theta-\delta \xi \cdot \mathbf{L})+\delta'\int_{\partial \Sigma} \frac{1}{16\pi}\varepsilon_{\mu \nu \mu_{1}}(\nabla^{\nu}\xi^{\mu}-\nabla^{\mu}\xi^{\nu})\mathrm{d}x^{\mu_{1}}
+\end{align}
+$$
+
+again we again take that terms supports on $\displaystyle{\partial \Sigma}=S_{2}|_{r=\infty}$  vanishes due to the compactness of $\displaystyle{\partial \Sigma}$.  if we choose $\displaystyle{\xi^{\mu}=(\partial_{t})^{\mu}}$, we have simply
+
+$$\tag{1.6}
+\begin{align}
+H & =-\frac{1}{16\pi}\int_{\partial \Sigma}\varepsilon_{\mu \nu \mu_{1}}(\nabla^{\nu}\xi^{\mu}-\nabla^{\mu}\xi^{\nu})\mathrm{d}x^{\mu_{1}} \\
+ & =-\frac{1}{16\pi}\lim_{ r \to \infty } \int_{S_{2}}\mathrm{d}S
+\end{align}
+$$
