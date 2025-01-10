@@ -220,3 +220,4 @@ $$\tag{5.1}
  & =\mathcal{L}_{\xi}\delta \phi+X_{\delta \xi}\cdot \delta \phi=\mathcal{L}_{\xi}\vartheta+X_{\delta \xi}\cdot \vartheta
 \end{align}
 $$
+
