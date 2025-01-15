@@ -19,22 +19,28 @@ where $\displaystyle{\Gamma^{a}_{ b}}$ is the connection 1-form, and $\displayst
 $$\tag{1.2}
 \begin{align}
 \delta S & =\int_{M} \frac{1}{16\pi G}\left( -R^{\mu \nu}+\frac{1}{2}Rg^{\mu \nu}-\Lambda g^{\mu \nu} \right)\delta g_{\mu \nu}\cdot \frac{1}{3!}\varepsilon_{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
- & +\int_{\Sigma_{f}-\Sigma_{i}} \frac{1}{16\pi G}(g^{\rho \mu}\nabla^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla^{\rho}\delta g_{\mu \nu})\cdot \frac{1}{2!}\varepsilon_{\rho \mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
+ & +\int_{\partial M} \frac{1}{16\pi G}(g^{\rho \mu}\nabla^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla^{\rho}\delta g_{\mu \nu})\cdot \frac{1}{2!}\varepsilon_{\rho \mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
  & +\frac{1}{16\pi G\mu}\delta S_{SC} \\
 \delta S_{SC} & =
 \end{align}
 $$
 
-$$\tag{1.3}
+$$\tag{1.4}
 \begin{align}
-\delta S_{SC} & =\int_{M}\left(\delta \Gamma^{\mu}_{ \nu \sigma}\partial_{\lambda}\Gamma^{\nu}_{ \mu \tau}+\Gamma^{\mu}_{\nu \sigma}\partial_{\lambda}\delta \Gamma^{\nu}_{ \mu \tau}+2\delta\Gamma^{\mu}_{ \nu \sigma}\Gamma^{\nu}_{ \rho \lambda}\Gamma^{\rho}_{ \mu \tau}\right)\mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda}\wedge \mathrm{d}x^{\tau} \\
- & =\int_{M}\left(\delta \Gamma^{\mu}_{ \nu \sigma}\left(\partial_{\lambda}\Gamma^{\nu}_{ \mu \tau}+\Gamma^{\nu}_{\rho \lambda}\Gamma^{\rho}_{ \mu \tau}\right)+\Gamma^{\mu}_{ \nu \sigma}\left(\partial_{\lambda}\delta \Gamma^{\nu}_{ \mu \tau}+\Gamma^{\nu}_{ \rho \lambda}\delta\Gamma^{\rho}_{ \mu \tau}\right)\right)\mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda}\wedge \mathrm{d}x^{\tau} \\
- & =\int_{M}\left(\delta \Gamma^{\mu}_{\nu \sigma}(\partial_{\lambda}\Gamma^{\nu}_{ \mu \tau}+\Gamma^{\nu}_{ \rho \lambda}\Gamma^{\rho}_{ \mu \tau}-\Gamma^{\rho}_{ \lambda \mu}\Gamma^{\nu}_{ \rho \lambda}-\Gamma^{\rho}_{ \lambda \tau}\Gamma^{\nu}_{ \mu \rho})+\delta \Gamma^{\mu}_{ \nu \sigma}\Gamma^{\rho}_{ \lambda \mu}\Gamma^{\nu}_{ \rho \tau}+\delta \Gamma^{\mu}_{\nu \sigma}\Gamma^{\rho}_{ \lambda \tau}\Gamma^{\nu}_{ \mu\rho}\right. \\
- & \left.+\Gamma^{\mu}_{ \nu \sigma}\left(\partial_{\lambda}\delta \Gamma^{\nu}_{ \mu \tau}+\Gamma^{\nu}_{ \rho \lambda}\delta \Gamma^{\rho}_{ \mu \tau}-\Gamma^{\rho}_{\lambda \mu}\delta \Gamma^{\nu}_{\rho \tau}-\Gamma^{\rho}_{\lambda \tau}\delta \Gamma^{\nu}_{\mu\rho}\right)+\Gamma^{\mu}_{\nu \sigma}\Gamma^{\rho}_{\lambda \mu}\delta \Gamma^{\nu}_{\rho \tau}+\Gamma^{\mu}_{\nu \sigma}\Gamma^{\rho}_{\lambda \tau}\delta \Gamma^{\nu}_{\mu\rho}\right)\mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda}\wedge \mathrm{d}x^{\tau} \\
- & =\int_{M}\left(\delta \Gamma^{\mu}_{\nu \sigma}\nabla_{\lambda}\Gamma^{\nu}_{\mu \tau}-\Gamma^{\nu}_{\mu \tau}\nabla_{\lambda}\delta \Gamma^{\mu}_{\nu \sigma}\right)\mathrm{d}x^{\lambda}\wedge \mathrm{d}x^{\tau}\wedge\mathrm{d}x^{\sigma}
+\delta S_{SC} & =\int_{M}\mathrm{Tr}\left(\delta \Gamma \wedge \mathrm{d}\Gamma+\Gamma \wedge \mathrm{d}\delta \Gamma+2\Gamma \wedge \Gamma \wedge \delta\Gamma\right) \\
+ & =\int_{M}\mathrm{Tr}\left(\mathrm{d}(\Gamma \wedge \delta \Gamma)-\mathrm{d}\Gamma\wedge \delta \Gamma+\delta \Gamma \wedge \mathrm{d}\Gamma+2\Gamma \wedge \Gamma \wedge \delta \Gamma\right) \\
+ & =\int_{\partial M}\mathrm{Tr}(\Gamma \wedge \delta \Gamma)+2\int_{M}\delta \Gamma \wedge(\mathrm{d}\Gamma+\Gamma \wedge \Gamma) \\
+ & =\int_{\partial M}\mathrm{Tr}(\Gamma \wedge \delta \Gamma)-2\int_{M}\Omega \wedge \delta \Gamma
 \end{align}
 $$
 
+where $\displaystyle{\Omega=\mathrm{d}\Gamma+\Gamma \wedge \Gamma}$ is the curvature 2-form with matrix element $\displaystyle{\Omega^{\mu}_{~\nu}=\frac{1}{2!}R^{\mu}_{~\nu \rho \sigma}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}}$, which satisfies the following Bianchi identities
+
+$$\tag{1.5}
+\begin{align}
+\mathrm{d}\Omega=\Omega \wedge \Gamma-\Gamma \wedge \Omega
+\end{align}
+$$
 ## vielbein and spin connection
 
 in order to define action of fermions in curved spacetime, we need to introduce vielbein and spin connection
