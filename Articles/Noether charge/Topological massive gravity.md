@@ -25,12 +25,20 @@ $$\tag{1.2}
 \end{align}
 $$
 
-$$\tag{1.4}
+$$\tag{1.3}
 \begin{align}
 \delta S_{SC} & =\int_{M}\mathrm{Tr}\left(\delta \Gamma \wedge \mathrm{d}\Gamma+\Gamma \wedge \mathrm{d}\delta \Gamma+2\Gamma \wedge \Gamma \wedge \delta\Gamma\right) \\
  & =\int_{M}\mathrm{Tr}\left(\mathrm{d}(\Gamma \wedge \delta \Gamma)-\mathrm{d}\Gamma\wedge \delta \Gamma+\delta \Gamma \wedge \mathrm{d}\Gamma+2\Gamma \wedge \Gamma \wedge \delta \Gamma\right) \\
- & =\int_{\partial M}\mathrm{Tr}(\Gamma \wedge \delta \Gamma)+2\int_{M}\delta \Gamma \wedge(\mathrm{d}\Gamma+\Gamma \wedge \Gamma) \\
- & =\int_{\partial M}\mathrm{Tr}(\Gamma \wedge \delta \Gamma)-2\int_{M}\Omega \wedge \delta \Gamma
+ & =\int_{\partial M}\mathrm{Tr}(\Gamma \wedge \delta \Gamma)+2\int_{M}\mathrm{Tr}(\delta \Gamma \wedge(\mathrm{d}\Gamma+\Gamma \wedge \Gamma)) \\
+ & =\int_{\partial M}\mathrm{Tr}(\Gamma \wedge \delta \Gamma)-2\int_{M}\mathrm{Tr}(\Omega \wedge \delta \Gamma)
+\end{align}
+$$
+
+$$\tag{1.4}
+\begin{align}
+\int_{M}\mathrm{Tr}(\Omega \wedge \delta \Gamma) & =\int_{M}\Omega^{\mu}_{\nu}\wedge \delta \Gamma^{\nu}_{\mu} \\
+ & =\int_{M} \frac{1}{2!}R^{\mu}_{~\nu \rho \sigma}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \delta \Gamma^{\nu}_{\mu \lambda}\mathrm{d}x^{\lambda} \\
+ & =\int_{M}R^{\mu}_{~\nu \rho \sigma}\delta \Gamma^{\nu}_{\mu \lambda}\cdot \frac{1}{2!}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda}
 \end{align}
 $$
 
