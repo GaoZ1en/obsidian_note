@@ -4,6 +4,8 @@
 
 首先我们介绍一种证明积分有限的方法
 
+%%TO BE COMPLETED%%
+
 ## 作用量
 
 计算拉氏量密度 $\displaystyle{\mathbf{L}}$ 和 $\displaystyle{\ell}$ 的渐进行为
@@ -390,3 +392,4 @@ $$\tag{C.36}
 $$
 
 因此(C.35)是有限的。
+
