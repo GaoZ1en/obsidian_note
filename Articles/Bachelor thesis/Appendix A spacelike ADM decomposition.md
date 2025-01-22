@@ -29,7 +29,7 @@ $$
 $$\tag{A.4}
 \begin{align}
 K_{\mu \nu} & =\gamma^{\rho}_{\mu}\gamma^{\sigma}_{\nu}\nabla_{\rho}n_{\sigma} \\
-a_{\mu} & =n^{\nu}\nabla_{\nu}n_{\mu}=-D_{\mu}\ln N
+a_{\mu} & =n^{\nu}\nabla_{\nu}n_{\mu}=D_{\mu}\ln N
 \end{align}
 $$
 
@@ -216,7 +216,9 @@ $$
 
 $$\tag{A.24}
 \begin{align}
-
+X_{\xi}\cdot \delta n_{\mu} & =\frac{1}{2}n_{\mu}n^{\rho}n^{\sigma}(X_{\xi}\cdot \delta g_{\rho \sigma}) \\
+ & =\frac{1}{2}n_{\mu}n^{\rho}n^{\sigma}(\nabla_{\rho}\xi_{\sigma}+\nabla_{\sigma}\xi_{\rho}) \\
+ & =
 \end{align}
 $$
 
