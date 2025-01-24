@@ -234,3 +234,39 @@ X_{\lambda} & =\int \mathrm{d}^{d}x\mathcal\delta_{\lambda}\phi(x)\frac{\delta}{
 \end{align}
 $$
 
+将 $\displaystyle{X_{\lambda}}$ 作用于作用量 $\displaystyle{S}$，得到
+
+$$\tag{2.27}
+\begin{align}
+X_{\lambda}\cdot \delta S & =\alpha_{\lambda}|_{\Sigma_{\pm}}+\beta_{\lambda}
+\end{align}
+$$
+
+其中 $\displaystyle{\beta_{\lambda}}$ 独立于位形 $\displaystyle{\phi(x)}$，我们称之为反常项（脚注）。定义Noether荷
+
+$$\tag{2.28}
+\begin{align}
+H_{\lambda} & =X_{\lambda}\cdot \theta-\alpha_{\lambda}
+\end{align}
+$$
+
+于是Noether定理成为
+
+1. $$\tag{2.29}
+\begin{align}
+\left.H_{\lambda}\right|_{\Sigma_{\pm},\tilde{\mathcal{P}}} & =\beta_{\lambda}
+\end{align}
+$$
+2. 对称性将一个解映射到另一个解 $$\tag{2.30}
+\begin{align}
+X_{\lambda}\cdot \delta E^{a}|_{\tilde{\mathcal{P}}} & =0
+\end{align}
+$$
+3. Hamilton方程 $$\tag{2.31}
+\begin{align}
+X_{\lambda}\cdot \omega|_{\tilde{\mathcal{P}}} & =-\delta H_{\lambda}|_{\tilde{\mathcal{P}}}
+\end{align}
+$$
+
+下面我们将给出证明
+
