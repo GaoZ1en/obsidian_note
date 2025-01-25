@@ -207,5 +207,9 @@ $$
 
 ## Weyl anomaly by Zhe Feng
 
-see Polyakov... basically Fadeev-Popov formalism (BRST formalism)
+see Polchinski... basically Fadeev-Popov formalism (BRST formalism)
 
+## Xiao-Shuai Wang
+
+generalized symmetry
+algebraic quantum field theory

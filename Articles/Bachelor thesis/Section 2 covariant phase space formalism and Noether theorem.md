@@ -1,5 +1,3 @@
-## 形式理论
-
 ## Hamilton力学的辛几何形式
 
 传统的Hamilton力学由以下几个概念构成
@@ -268,5 +266,48 @@ X_{\lambda}\cdot \omega|_{\tilde{\mathcal{P}}} & =-\delta H_{\lambda}|_{\tilde{\
 \end{align}
 $$
 
-下面我们将给出证明
+下面我们将给出证明。将(2.22)代入(2.27)得
 
+$$\tag{2.16}
+\begin{align}
+\int \mathbf{E}(X_{\lambda}\cdot \delta \phi_{a})+H_{\lambda}|_{\Sigma_{\pm}}-\beta_{\lambda} & =0
+\end{align}
+$$
+
+将其拉回到预相空间 $\displaystyle{\tilde{\mathcal{P}}}$ 便得到(2.29)。然后证明(2.30)和(2.31)。将 $\displaystyle{\mathcal{L}_{X_{\xi}}}$ 作用于(2.22)得到
+
+$$\tag{2.17}
+\begin{align}
+LHS=\mathcal{L}_{X_{\lambda}}\delta S & =X_{\lambda}\cdot \delta^{2}S+\delta(X_{\lambda}\cdot \delta S) \\
+ & =\delta\left(\alpha_{\lambda}|_{\Sigma_{\pm}}+\beta_{\lambda}\right) \\
+ & =\delta \alpha_{\lambda}|_{\Sigma_{\pm}}
+\end{align}
+$$
+ 
+$$\tag{2.18}
+\begin{align}
+RHS=\mathcal{L}_{X_{\lambda}}\left( E^{a}\delta q_{a}+\frac{\mathrm{d}}{\mathrm{d}t}\theta \right) & =X_{\lambda}\cdot \delta\left( E^{a}\delta q_{a}+\frac{\mathrm{d}}{\mathrm{d}t}\theta \right)+\delta\left( X_{\lambda}\cdot\left( E^{a}\delta q_{a}+\frac{\mathrm{d}}{\mathrm{d}t}\theta \right) \right) \\
+ & =X_{\lambda}\cdot\left( \delta E^{a}\wedge \delta q_{a}+\frac{\mathrm{d}}{\mathrm{d}t}\omega \right)+\delta\left( E^{a}(X_{\lambda}\cdot \delta q_{a})+\frac{\mathrm{d}}{\mathrm{d}t}(X_{\lambda}\cdot \theta) \right) \\
+ & =(X_{\lambda}\cdot \delta E^{a})\delta q_{a}-\delta E^{a}(X_{\lambda}\cdot \delta q_{a})-\frac{\mathrm{d}}{\mathrm{d}t}(X_{\lambda}\cdot \omega) \\
+ & +\delta E^{a}(X_{\lambda}\cdot \delta q_{a})+E^{a}\delta(X_{\lambda}\cdot \delta q_{a})+\frac{\mathrm{d}}{\mathrm{d}t}\delta(X_{\lambda}\cdot \theta) \\
+ & =E^{a}\delta(X_{\lambda}\cdot \delta q_{a})+(X_{\lambda}\cdot \delta E^{a})\delta q_{a}+\frac{\mathrm{d}}{\mathrm{d}t}(X_{\lambda}\cdot \omega+\delta(X_{\lambda}\cdot \theta))
+\end{align}
+$$
+
+因此有
+
+$$\tag{2.19}
+\begin{align}
+E^{a}\delta(X_{\lambda}\cdot \delta q_{a})+(X_{\lambda}\cdot \delta E^{a})\delta q_{a}+\frac{\mathrm{d}}{\mathrm{d}t}(X_{\lambda}\cdot \omega+\delta H_{\lambda}) & =0
+\end{align}
+$$
+
+用矢量 $\displaystyle{Y=\int \mathrm{d}tf_{a}(t) \frac{\delta}{\delta q_{a}(t)}}$ 与(2.19)缩并，得到
+
+$$\tag{2.20}
+\begin{align}
+(X_{\lambda}\cdot \delta E^{a}|_{\tilde{\mathcal{P}}})f_{a}(t)+\frac{\mathrm{d}}{\mathrm{d}t}(Y\cdot(X_{\lambda}\cdot \omega+\delta H_{\lambda})|_{\tilde{\mathcal{P}}})=0
+\end{align}
+$$
+
+由于 $\displaystyle{f_{a}(t)}$ 是任意的，就有(2.14)和(2.15)成立
