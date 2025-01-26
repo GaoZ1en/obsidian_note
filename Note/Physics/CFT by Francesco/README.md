@@ -32,3 +32,6 @@ D_{m} & =\cos mt\sin m\phi \partial_{t}+\sin mt\cos m\phi \partial_{\phi}
 $$
 
 another motivation is my own interest for better understanding string theory and other topics, such as Wess-Zumino-Witten models
+
+
+This README provides an overview of the motivation and key mathematical structures related to the study of the Virasoro algebra in the context of $\mathrm{dS}_2$ boundary gravity, as well as connections to string theory and Wess-Zumino-Witten (WZW) models.

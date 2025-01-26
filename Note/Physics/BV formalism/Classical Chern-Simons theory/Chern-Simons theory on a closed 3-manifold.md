@@ -1,0 +1,1 @@
+for simplicity, let $\displaystyle{G=\mathrm{SU}(2)}$ and $\displaystyle{M}$ be a closed oriented 3-manifold. let $\displaystyle{\mathcal{P}}$ be the trivial $\displaystyle{G}$-bundle over $\displaystyle{M}$.
