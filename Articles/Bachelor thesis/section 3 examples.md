@@ -1,6 +1,6 @@
 ## 经典Liouville理论
 
-我们首先分析经典Liouville理论的共性对称性，这为反常项 $\displaystyle{\beta_{\xi}}$ 提供了一个例子。我们考虑以下作用量
+我们首先分析经典Liouville理论的共形对称性，这为反常项 $\displaystyle{\beta_{\xi}}$ 提供了一个例子。我们考虑以下作用量
 
 $$\tag{3.1}
 \begin{align}
