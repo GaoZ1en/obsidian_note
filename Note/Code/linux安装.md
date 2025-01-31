@@ -1,4 +1,0 @@
-## gentoo
-
-## archlinux
-

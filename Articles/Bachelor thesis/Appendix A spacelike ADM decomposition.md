@@ -197,38 +197,104 @@ $$
 
 $$\tag{A.22}
 \begin{align}
+\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\delta K_{\mu \nu} & =\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\delta(\gamma^{\rho}_{\mu}\gamma^{\sigma}_{\nu}\nabla_{\rho}n_{\sigma}) \\
+ & =\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\delta \gamma^{\rho}_{\mu}\gamma^{\sigma}_{\nu}\nabla_{\rho}n_{\sigma}+\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\gamma^{\rho}_{\mu}\delta \gamma^{\sigma}_{\nu}\nabla_{\rho}n_{\sigma}-\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\delta \Gamma^{\lambda}_{~\rho \sigma}n_{\lambda}+\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\gamma^{\rho}_{\mu}\gamma^{\sigma}_{\nu}\nabla_{\rho}\delta n_{\sigma} \\
+ & =-\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}(\nabla_{\mu}\delta g_{\rho \nu}+\nabla_{\nu}\delta g_{\mu \rho}-\nabla_{\rho}\delta g_{\mu \nu})+\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\nabla_{\mu}(n_{\nu}n^{\rho}n^{\sigma}\delta g_{\rho \sigma})
+\end{align}
+$$
 
+其中我们使用了
+
+$$\tag{A.23}
+\begin{align}
+\gamma^{\mu}_{\alpha}\delta \gamma^{\rho}_{\mu} & =\gamma^{\mu}_{\alpha}\delta(\delta^{\rho}_{\mu}-n_{\mu}n^{\rho}) \\
+ & =-\gamma^{\mu}_{\alpha}\delta(n_{\mu}n^{\rho})=-\gamma^{\mu}_{\alpha}\delta n_{\mu}n^{\rho}-\gamma^{\mu}_{\alpha}n_{\mu}n^{\rho} \\
+ & =-\frac{1}{2}\gamma^{\mu}_{\alpha}n_{\mu}n^{\rho}n^{\sigma}n^{\lambda}\delta g_{\sigma \lambda}=0
+\end{align}
+$$
+
+以及 $\displaystyle{\delta \Gamma^{\rho}_{~\mu \nu}=\frac{1}{2}g^{\rho \sigma}(\nabla_{\mu}\delta g_{\sigma \nu}+\nabla_{\nu}\delta g_{\mu\sigma}-\nabla_{\sigma}\delta g_{\mu \nu})}$。第一项有
+
+$$\tag{A.24}
+\begin{align}
+-\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}\nabla_{\mu}\delta g_{\rho \nu} & =-\frac{1}{2}\gamma^{\mu}_{\alpha}\nabla_{\mu}(\gamma^{\nu}_{\beta}n^{\rho}\delta g_{\rho \nu})+\frac{1}{2}\gamma^{\mu}_{\alpha}\nabla_{\mu}\gamma^{\nu}_{\beta}n^{\rho}\delta g_{\rho \nu}+\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\nabla_{\mu}n^{\rho}\delta g_{\rho \nu} \\
+ & =-\frac{1}{2}D_{\alpha}(\gamma^{\mu}_{\beta}n^{\nu}\delta g_{\mu \nu})-\frac{1}{2}\gamma^{\mu}_{\alpha}\nabla_{\mu}(n^{\nu}n_{\beta})n^{\rho}\delta g_{\rho \nu}+\frac{1}{2}K^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\delta g_{\mu \nu} \\
+ & =-\frac{1}{2}D_{\alpha}(\gamma^{\mu}_{\beta}n^{\nu}\delta g_{\mu \nu})+\frac{1}{2}K^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\delta g_{\mu \nu}-\frac{1}{2}K_{\alpha \beta}n^{\mu}n^{\nu}\delta g_{\mu \nu}-\frac{1}{2}K_{\alpha}^{\mu}n_{\beta}n^{\nu}\delta g_{\mu \nu}
+\end{align}
+$$
+
+第二项类似于第一项，有
+
+$$\tag{A.25}
+\begin{align}
+-\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}\nabla_{\nu}\delta g_{\mu \rho} & =-\frac{1}{2}D_{\beta}(\gamma^{\mu}_{\alpha}n^{\nu}\delta g_{\mu \nu})+\frac{1}{2}K^{\mu}_{\beta}\gamma^{\nu}_{\alpha}\delta g_{\mu \nu}-\frac{1}{2}K_{\alpha \beta}n^{\mu}n^{\nu}\delta g_{\mu \nu}-\frac{1}{2}K^{\mu}_{\beta}n_{\alpha}n^{\nu}\delta g_{\mu \nu}
+\end{align}
+$$
+
+第三项有
+
+$$\tag{A.26}
+\begin{align}
+\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}\nabla_{\rho}\delta g_{\mu \nu} & =\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}\nabla_{\rho}(\delta^{\sigma}_{\mu}\delta^{\lambda}_{\nu}\delta g_{\sigma \lambda}) \\
+ & =\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}\nabla_{\rho}((\gamma^{\sigma}_{\mu}+n^{\sigma}n_{\mu})(\gamma^{\lambda}_{\nu}+n^{\lambda}n_{\nu})\delta g_{\sigma \lambda}) \\
+ & =\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}n_{\rho}\nabla_{\rho}(\gamma^{\sigma}_{\mu}\gamma^{\lambda}_{\nu}\delta g_{\sigma \lambda})+\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\nabla_{\rho}(\gamma^{\sigma}_{\mu}n^{\lambda}n_{\nu}\delta g_{\sigma \lambda})+\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}\nabla_{\rho}(n^{\sigma}n_{\mu}\gamma^{\lambda}_{\nu}\delta g_{\sigma \lambda}) \\
+ & =\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}\nabla_{\rho}(\gamma^{\sigma}_{\mu}\gamma^{\lambda}_{\nu}\delta g_{\sigma \lambda})+\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}\nabla_{\rho}n_{\nu}\gamma^{\sigma}_{\mu}n^{\lambda}\delta g_{\sigma \lambda}+\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}n^{\sigma}\nabla_{\rho}n_{\mu}\gamma^{\lambda}_{\nu}\delta g_{\sigma \lambda} \\
+ & =\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}\nabla_{\rho}(\gamma^{\sigma}_{\mu}\gamma^{\lambda}_{\nu}\delta g_{\sigma \lambda})+\frac{1}{2}D_{\beta}\ln N\gamma^{\mu}_{\alpha}n^{\nu}\delta g_{\mu \nu}+\frac{1}{2}D_{\alpha}\ln N\gamma^{\mu}_{\beta}n^{\nu}\delta g_{\mu \nu}
+\end{align}
+$$
+
+第四项有
+
+$$\tag{A.27}
+\begin{align}
+\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\gamma^{\rho}_{\mu}\gamma^{\sigma}_{\nu}\nabla_{\rho}\delta n_{\sigma} & =\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\nabla_{\mu}(n_{\nu}n^{\rho}n^{\sigma}\delta g_{\rho \sigma}) \\
+ & =\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\nabla_{\mu}n_{\nu}n^{\rho}n^{\sigma}\delta g_{\rho \sigma} \\
+ & =\frac{1}{2}K_{\alpha \beta}n^{\mu}n^{\nu}\delta g_{\mu \nu}
+\end{align}
+$$
+
+将(A.24)，(A.25)，(A.26)和(A.27)求和，得到
+
+$$\tag{A.28}
+\begin{align}
+\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\delta K_{\mu \nu} & =\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}\nabla_{\rho}(\gamma^{\sigma}_{\mu}\gamma^{\lambda}_{\nu}\delta g_{\sigma \lambda})+\frac{1}{2}K^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\delta g_{\mu \nu}+\frac{1}{2}K^{\mu}_{\beta}\gamma^{\nu}_{\alpha}\delta g_{\mu \nu} \\
+ & -\frac{1}{2}K^{\mu}_{\alpha}n_{\beta}n^{\nu}\delta g_{\mu \nu}-\frac{1}{2}K^{\mu}_{\beta}n_{\alpha}n^{\nu}\delta g_{\mu \nu}-\frac{1}{2}D_{\alpha}(\gamma^{\mu}_{\beta}n^{\nu}\delta g_{\mu \nu})-\frac{1}{2}D_{\beta}(\gamma^{\mu}_{\alpha}n^{\nu}\delta g_{\mu \nu}) \\
+ & -\frac{1}{2}K_{\alpha \beta}n^{\mu}n^{\nu}\delta g_{\mu \nu}+\frac{1}{2}D_{\alpha}\ln N\gamma^{\mu}_{\beta}n^{\nu}\delta g_{\mu \nu}+\frac{1}{2}D_{\beta}\ln N\gamma^{\mu}_{\alpha}n^{\nu}\delta g_{\mu \nu}
 \end{align}
 $$
 
 总之，有
 
-$$\tag{A.23}
+$$\tag{A.29}
 \begin{align}
 \gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\delta \gamma_{\mu \nu} & =\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\delta g_{\mu \nu} \\
 \gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\delta K_{\mu \nu} & =\frac{1}{2}\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}\nabla_{\rho}(\gamma^{\sigma}_{\mu}\gamma^{\lambda}_{\nu}\delta g_{\sigma \lambda})+\frac{1}{2}K^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\delta g_{\mu \nu}+\frac{1}{2}K^{\mu}_{\beta}\gamma^{\nu}_{\alpha}\delta g_{\mu \nu} \\
- & -\frac{1}{2}D_{\alpha}(\gamma^{\mu}_{\beta}n^{\nu}\delta g_{\mu \nu})-\frac{1}{2}D_{\beta}(\gamma^{\mu}_{\alpha}n^{\nu}\delta g_{\mu \nu})-\frac{1}{2}K_{\alpha \beta}n^{\mu}n^{\nu}\delta g_{\mu \nu}\\
- & +\frac{1}{2N}D_{\beta}N\gamma^{\mu}_{\alpha}n^{\nu}\delta g_{\mu \nu}+\frac{1}{2N}D_{\alpha}N\gamma^{\mu}_{\beta}n^{\nu}\delta g_{\mu \nu} 
+ & -\frac{1}{2}K^{\mu}_{\alpha}n_{\beta}n^{\nu}\delta g_{\mu \nu}-\frac{1}{2}K^{\mu}_{\beta}n_{\alpha}n^{\nu}\delta g_{\mu \nu}-\frac{1}{2}D_{\alpha}(\gamma^{\mu}_{\beta}n^{\nu}\delta g_{\mu \nu})-\frac{1}{2}D_{\beta}(\gamma^{\mu}_{\alpha}n^{\nu}\delta g_{\mu \nu}) \\
+ & -\frac{1}{2}K_{\alpha \beta}n^{\mu}n^{\nu}\delta g_{\mu \nu}+\frac{1}{2}D_{\alpha}\ln N\gamma^{\mu}_{\beta}n^{\nu}\delta g_{\mu \nu}+\frac{1}{2}D_{\beta}\ln N\gamma^{\mu}_{\alpha}n^{\nu}\delta g_{\mu \nu}
 \end{align}
 $$
 
 进一步计算他们在无穷小变换下的行为
 
-$$\tag{A.24}
+$$\tag{A.30}
 \begin{align}
 X_{\xi}\cdot \delta n_{\mu} & =\frac{1}{2}n_{\mu}n^{\rho}n^{\sigma}(X_{\xi}\cdot \delta g_{\rho \sigma}) \\
- & =\frac{1}{2}n_{\mu}n^{\rho}n^{\sigma}(\nabla_{\rho}\xi_{\sigma}+\nabla_{\sigma}\xi_{\rho}) \\
- & =
+ & =\frac{1}{2}n_{\mu}n^{\rho}n^{\sigma}(\nabla_{\rho}\xi_{\sigma}+\nabla_{\sigma}\xi_{\rho})= n_{\mu}n^{\rho}n^{\sigma}\nabla_{\rho}\xi_{\sigma}\\
+ & =n_{\mu}[n^{\rho}\nabla_{\rho}(n_{\sigma}\xi^{\sigma})-n^{\rho}\nabla_{\rho}n^{\sigma}\xi_{\sigma}] \\
+ & =[n^{\rho}\nabla_{\rho}(n_{\sigma}\xi^{\sigma})-a^{\sigma}\xi_{\sigma}]n_{\mu}
 \end{align}
 $$
 
-$$\tag{A.25}
+$$\tag{A.31}
 \begin{align}
-
+\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}X_{\xi}\cdot \delta \gamma_{\mu \nu} & =\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}X_{\xi}\cdot \delta g_{\mu \nu} \\
+ & =\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}(\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}) \\
+ & =\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\nabla_{\mu}((\gamma_{\nu \rho}+n_{\nu}n_{\rho})\xi^{\rho})+\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\nabla_{\nu}((\gamma_{\mu \rho}+n_{\mu}n_{\rho})\xi^{\rho}) \\
+ & =D_{\alpha}(\gamma_{\beta \gamma}\xi^{\gamma})+D_{\beta}(\gamma_{\alpha \gamma}\xi^{\gamma})+2K_{\alpha \beta}n_{\rho}\xi^{\rho}
 \end{align}
 $$
 
-$$\tag{A.26}
+$$\tag{A.32}
 \begin{align}
 
 \end{align}
@@ -236,7 +302,7 @@ $$
 
 总之，有
 
-$$\tag{A.27}
+$$\tag{A.33}
 \begin{align}
 X_{\xi}\cdot \delta n_{\mu} & =[n^{\rho}\nabla_{\rho}(n_{\sigma}\xi^{\sigma})-a_{\rho}\gamma^{\rho}_{\sigma}\xi^{\sigma}]n_{\mu} \\
 \gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}X_{\xi}\cdot \delta\gamma_{\mu \nu} & =D_{\alpha}(\gamma_{\beta \gamma}\xi^{\gamma})+D_{\beta}(\gamma_{\alpha \gamma}\xi^{\gamma})+2K_{\alpha \beta}n_{\gamma}\xi^{\gamma} \\
@@ -247,7 +313,7 @@ $$
 
 这里我们仍取
 
-$$\tag{A.28}
+$$\tag{A.34}
 \begin{align}
 X_{\xi}=\int_{M}\mathrm{d}^{3}x\mathcal{L}_{\xi}g_{\mu \nu} \frac{\delta}{\delta g_{\mu \nu}}
 \end{align}
