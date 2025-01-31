@@ -203,7 +203,7 @@ VarAction[L,g[a,b]]
 
 ### Lovelock invariant
 
-See [[../../Physics/Lovelock theorem|Lovelock theorem]]. Now we will consider the Gauss-Bonnet term, $\displaystyle{\mathcal{L}_{2}}$
+See [[Note/Physics/Miscellaneous/Lovelock theorem|Lovelock theorem]]. Now we will consider the Gauss-Bonnet term, $\displaystyle{\mathcal{L}_{2}}$
 
 ``` Mathematica
 L=RiemannCD[a,b,c,d]Riemann[-a,-b,-c,-d]-4RicciCD[a,b]RicciCD[-a,-b]+RicciScalarCD[]RicciScalarCD[]

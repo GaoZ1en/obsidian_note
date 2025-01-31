@@ -1,7 +1,6 @@
 ## 基本方法
 
 文中我们使用一系列等 $\displaystyle{z}$ 类空面 $\displaystyle{\Gamma_{z}}$ 对时空进行ADM分解。首先定义垂直于 $\displaystyle{\Gamma_{z}}$ 的单位法余矢
-
 $$\tag{A.1}
 \begin{align}
 n_{\mu} & =N\partial_{\mu}z
