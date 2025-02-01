@@ -1,4 +1,4 @@
-## 理论的定义
+### 理论的定义
 
 首先我们确定位形空间 $\displaystyle{\mathcal{C}}$。考虑具有拓扑 $\displaystyle{D_{2}\times \mathbb{R}}$ 的，只有渐进边界的系统。位形空间 $\displaystyle{\mathcal{C}}$ 即为满足渐进边界条件（下面将会给出）的所有位形。
 
@@ -104,3 +104,219 @@ $$\tag{3.2.6}
 $$
 其中 $\displaystyle{|_{\Gamma_{z}}}$ 表示拉回到 $\displaystyle{\Gamma_{z}}$。
 
+### 协变相空间方法
+
+对拉氏量密度(3.2.5)取变分，有
+
+$$\tag{3.2.7}
+\begin{align}
+\delta \mathbf{L} & =\mathbf{E}^{\mu \nu}\delta g_{\mu \nu}+\mathrm{d}\Theta \\
+(\Theta+\delta \ell)|_{\Gamma_{z}} & =(\mathbf{F}^{\mu \nu}\delta g_{\mu \nu}+\mathrm{d}\mathbf{C})|_{\Gamma_{z}}
+\end{align}
+$$
+
+其中
+
+$$\tag{3.2.8}
+\begin{align}
+\mathbf{E}^{\mu \nu} &  =\frac{1}{16\pi G}\left( -R^{\mu \nu}+\frac{1}{2}Rg^{\mu \nu}+g^{\mu \nu} \right)\cdot \frac{1}{3!}\varepsilon_{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
+\Theta & =\frac{1}{16\pi G}(g^{\rho \mu}\nabla^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla^{\rho}\delta g_{\mu \nu})\cdot \frac{1}{2!}\varepsilon_{\rho \mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
+\mathbf{F}^{\mu \nu}|_{\Gamma_{z}} & =\frac{1}{16\pi G}(-K^{\mu \nu}+K\gamma^{\mu \nu}-\gamma^{\mu \nu}) \cdot \frac{1}{2!}\varepsilon^{(\Gamma_{z})}_{\mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}|_{\Gamma_{z}} \\
+\mathbf{C}|_{\Gamma_{z}} & =\left[-\frac{1}{16\pi G}\gamma^{\mu \nu}n^{\rho}\delta g_{\nu \rho}\varepsilon^{(\Gamma_{z})}_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}} \right. \\
+ & +\frac{1}{16\pi G}\log z(\gamma^{ab}\gamma^{cd}D_{d}\delta \gamma_{bc}-\gamma^{ad}\gamma^{bc}D_{d}\delta \gamma_{bc})\varepsilon^{(\Gamma_{z})}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+ & \left.+\frac{1}{16\pi G}z\log z(-2\gamma^{ab}\delta g_{zb}+2\gamma^{ab}\gamma^{cd}g_{zd}\delta \gamma_{bc}-\gamma^{ab}\gamma^{cd}g_{zb}\delta \gamma_{cd})\varepsilon^{(\Gamma_{z})}_{aa_{1}}\mathrm{d}x^{a_{1}}\right]|_{\Gamma_{z}}
+\end{align}
+$$
+
+在推导的过程中我们使用了[cite]
+
+$$\tag{3.2.9}
+\begin{align}
+\delta \varepsilon_{\mu_{0}\mu_{1}\mu_{2}} & =\frac{1}{2}g^{\mu \nu}\delta g_{\mu \nu}\varepsilon_{\mu_{0}\mu_{1}\mu_{2}} \\
+\delta \varepsilon^{(\Gamma_{z})}_{\mu_{0}\mu_{1}} & =\frac{1}{2}\gamma^{\mu \nu}\delta g_{\mu \nu}\varepsilon^{(\Gamma_{z})}_{\mu_{0}\mu_{1}} \\
+\delta \Gamma^{\rho}_{~\mu \nu} & =\frac{1}{2}g^{\rho \sigma}(\nabla_{\mu}\delta g_{\sigma \nu}+\nabla_{\nu}\delta g_{\mu \sigma}-\nabla_{\sigma}\delta g_{\mu \nu}) \\
+\delta R & =-R^{\mu \nu}\delta g_{\mu \nu}+\nabla^{\mu}\nabla^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla_{\rho}\nabla^{\rho}\delta g_{\mu \nu} \\
+\delta n_{\mu} & =\frac{1}{2}n_{\mu}n^{\rho}n^{\sigma}\delta g_{\rho \sigma} \\
+\delta K & =-\frac{1}{2}K^{\mu \nu}\delta g_{\mu \nu}+\frac{1}{2}g^{\mu \nu}n^{\rho}\nabla_{\rho}\delta g_{\mu \nu}-\frac{1}{2}n^{\mu}\nabla^{\nu}\delta g_{\mu \nu}-\frac{1}{2}D_{\mu}(\gamma^{\mu \nu}n^{\rho}\delta g_{\nu \rho})
+\end{align}
+$$
+
+以及
+
+$$\tag{3.2.10}
+\begin{align}
+\tilde{R}_{\mu \nu} & =\frac{1}{2}\tilde{R}\gamma_{\mu \nu}
+\end{align}
+$$
+
+我们进一步将 $\displaystyle{\mathbf{C}}$ 分解为
+
+$$\tag{3.2.11}
+\begin{align}
+\mathbf{C}|_{\Gamma_{z}} & =(\mathbf{C}_{1}+\mathbf{C}_{2})|_{\Gamma_{z}} \\
+\mathbf{C}_{1}|_{\Gamma_{z}} & =-\frac{1}{16\pi G}\gamma^{\mu \nu}n^{\rho}\delta g_{\nu \rho}\varepsilon^{(\Gamma_{z})}_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}}|_{\Gamma_{z}} \\
+\mathbf{C}_{2}|_{\Gamma_{z}} & =\left[ \frac{1}{16\pi G}\log z(\gamma^{ab}\gamma^{cd}D_{d}\delta \gamma_{bc}-\gamma^{ad}\gamma^{bc}D_{d}\delta \gamma_{bc})\varepsilon^{(\Gamma_{z})}_{aa_{1}}\mathrm{d}x^{a_{1}}\right. \\
+ & \left.+\frac{1}{16\pi G}z\log z(-2\gamma^{ab}\delta g_{zb}+2\gamma^{ab}\gamma^{cd}g_{zd}\delta \gamma_{bc}-\gamma^{ab}\gamma^{cd}g_{zb}\delta \gamma_{cd})\varepsilon^{(\Gamma_{z})}_{aa_{1}}\mathrm{d}x^{a_{1}}\right]
+\end{align}
+$$
+
+从而有
+
+$$\tag{3.2.12}
+\begin{align}
+(\Theta+\delta \ell_{1})|_{\Gamma_{z}} & =(\mathbf{F}^{\mu \nu}\delta g_{\mu \nu}+\mathrm{d}\mathbf{C}_{1})|_{\Gamma_{z}} \\
+\delta \ell_{2}|_{\Gamma_{z}} & =\mathrm{d}\mathbf{C}_{2}|_{\Gamma_{z}}
+\end{align}
+$$
+
+为了下文讨论方便，引入
+
+$$\tag{3.2.13}
+\begin{align}
+\tilde{E}_{\mu \nu} & =\frac{1}{16\pi G}\left( -R_{\mu \nu}+\frac{1}{2}Rg_{\mu \nu}+g_{\mu \nu} \right) \\
+T_{\mu \nu} & =\frac{1}{4G}(K_{\mu \nu}-K\gamma_{\mu \nu}+\gamma_{\mu \nu})
+\end{align}
+$$
+
+从而我们可以将 $\displaystyle{\mathbf{E}^{\mu \nu}}$ 和 $\displaystyle{\mathbf{F}^{\mu \nu}}$ 重写为
+
+$$\tag{3.2.14}
+\begin{align}
+\mathbf{E}^{\mu \nu} & =\tilde{E}^{\mu \nu}\cdot \frac{1}{3!}\varepsilon_{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
+\mathbf{F}^{\mu \nu}|_{\Gamma} & =-\frac{1}{4\pi}T^{\mu \nu}\cdot \frac{1}{2!}\varepsilon^{(\Gamma_{z})}_{\mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}
+\end{align}
+$$
+
+根据(3.2.8)，我们可以将作用量(3.2.5)的变分写为
+
+$$\tag{3.2.15}
+\begin{align}
+\delta S & =\lim_{ \varepsilon \to 0 }\left(  \int_{M_{\varepsilon}} \mathbf{E}^{\mu \nu}\delta g_{\mu \nu}+\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta \gamma_{\mu \nu}+\left( \int_{\Sigma_{f,\varepsilon}}\Theta-\int_{\partial \Sigma_{f,\varepsilon}}\mathbf{C} \right)-\left(\int_{\Sigma_{i,\varepsilon}}\Theta-\int_{\partial \Sigma_{i,\varepsilon}}\mathbf{C}\right)\right)
+\end{align}
+$$
+
+在附录C.2中我们展示了(3.2.15)中第一项和第三、四项的有限性，以及第二项等于0。因此该变分是良定义的。因此我们可以将(3.2.15)整理成
+
+$$\tag{3.2.16}
+\begin{align}
+\delta S & =\int_{M}\mathbf{E}^{\mu \nu}\delta g_{\mu \nu}+\theta|_{\Sigma_{f}}-\theta_{\Sigma_{i}}
+\end{align}
+$$
+
+其中辛势 $\displaystyle{\theta}$ 定义为
+
+$$\tag{3.2.17}
+\begin{align}
+\theta|_{\Sigma} & =\lim_{ \varepsilon \to 0 } \left( \int_{\Sigma_{\varepsilon}} \Theta-\int_{\partial \Sigma_{\varepsilon}}\mathbf{C}\right)
+\end{align}
+$$
+
+因此我们可以定义预辛形式 $\displaystyle{\tilde{\omega}}$ 为
+
+$$\tag{3.2.18}
+\begin{align}
+\tilde{\omega}|_{\Sigma}=\delta \theta|_{\Sigma} & =\lim_{ \varepsilon \to 0 } \left(\int_{\Sigma_{\varepsilon}}\delta \Theta-\int_{\partial \Sigma_{\varepsilon}}\delta\mathbf{C}\right)
+\end{align}
+$$
+
+### 渐进对称性
+
+对于纯AdS3引力，渐进对称性是保持渐进边界条件(3.2.1)不变的微分同胚变换，可以用位形空间 $\displaystyle{\mathcal{C}}$ 上的矢量来表示
+
+$$\tag{3.2.19}
+\begin{align}
+X_{\xi} & =\int \mathrm{d}^{3}x\mathcal{L}_{\xi}g_{\mu \nu} \frac{\delta}{\delta g_{\mu \nu}}
+\end{align}
+$$
+
+更准确的来说，对于渐进对称性，微分同胚参数 $\displaystyle{\xi^{\mu}}$ 应在局部坐标 $\displaystyle{(z,x^{a})}$ 下具有以下渐进行为
+
+$$\tag{3.2.20}
+\begin{align}
+\xi^{z} & =\frac{z}{2}D_{a}^{(0)}\xi^{(0)a}+\mathcal{O}(z^{3}) \\
+\xi^{a} & =\xi^{(0)a}+\mathcal{O}(z^{2})
+\end{align}
+$$
+
+其中 $\displaystyle{\xi^{(0)a}}$ 只依赖于边界坐标 $\displaystyle{x^{a}}$ ，且是边界度规 $\displaystyle{g^{(0)}_{ab}}$ 的共形Killing矢量场，即满足共形Killing方程
+
+$$\tag{3.2.21}
+\begin{align}
+g^{(0)}_{bc}D_{a}^{(0)}\xi^{(0)c}+g^{(0)}_{ac}D_{b}^{(0)}\xi^{(0)c}-g^{(0)}_{ab}D_{c}^{(0)}\xi^{(0)c} & =0
+\end{align}
+$$
+
+下面我们将渐进对称性(3.2.19)作用于拉氏量密度(3.2.2)，有
+
+$$\tag{3.2.22}
+\begin{align}
+X_{\xi}\cdot \delta \mathbf{L} & =\mathrm{d}(\xi \cdot \mathbf{L}) \\
+(\xi \cdot \mathbf{L}+X_{\xi}\cdot \delta \ell)|_{\Gamma_{z}} &  =(\mathrm{d}\mu_{\xi}+\nu_{\xi})|_{\Gamma_{\varepsilon}}
+\end{align}
+$$
+
+其中
+
+$$\tag{3.2.23}
+\begin{align}
+\mu_{\xi}|_{\Gamma_{z}} & =\left[ \frac{1}{8\pi G}((K-1)\gamma^{\mu}_{\nu}\xi^{\nu}-\gamma^{\mu \nu}D_{\nu}(n_{\rho}\xi^{\rho}))\varepsilon^{(\Gamma_{z})}_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}}\right. \\
+ & +\frac{1}{16\pi G}\log z(\gamma^{ac}\gamma^{bd}D_{b}(X_{\xi}\cdot \delta \gamma_{cd})-\gamma^{ab}\gamma^{cd}D_{b}(X_{\xi}\cdot \delta \gamma_{cd}))\varepsilon^{(\Gamma_{z})}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+ & \left.\left. \frac{1}{16\pi G}z\log z(-2\gamma^{ab}X_{\xi}\cdot \delta g_{zb}+2\gamma^{ab}\gamma^{cd}g_{zd}(X_{\xi}\cdot \delta \gamma_{bc})-\gamma^{ab}\gamma^{cd}g_{zb}(X_{\xi}\cdot \delta \gamma_{cd}))\varepsilon^{(\Gamma_{z})}_{aa_{1}}\mathrm{d}x^{a_{1}}\right] \right|_{\Gamma_{z}}\\
+\nu_{\xi}|_{\Gamma_{z}} & =\left.\left[\frac{1}{16\pi G}(\tilde{R}-K_{\mu \nu}K^{\mu \nu}+K^{2}-2K+2)n_{\rho}n^{\rho}\cdot \frac{1}{2!}\varepsilon^{(\Gamma_{z})}_{\mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\right]\right|
+\end{align}
+$$
+
+其中 $\displaystyle{X_{\xi}\cdot \delta \mathbf{L}=\xi \cdot \mathbf{L}}$ 的合理性我们在附录D中给出。我们进一步将 $\displaystyle{\mu_{\xi}}$ 分解为
+
+$$\tag{3.2.24}
+\begin{align}
+\mu_{\xi}|_{\Gamma_{z}} & =(\mu_{\xi,1}+\mu_{\xi,2})|_{\Gamma_{z}} \\
+\mu_{\xi,1}|_{\Gamma_{z}} & =\frac{1}{8\pi G}((K-1)\gamma^{\mu}_{\nu}\xi^{\nu}-\gamma^{\mu \nu}D_{\nu}(n_{\rho}\xi^{\rho}))\varepsilon^{(\Gamma_{z})}_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}} \\
+\mu_{\xi,2}|_{\Gamma_{z}} & =\left[ \frac{1}{16\pi G}\log z(\gamma^{ac}\gamma^{bd}D_{b}(X_{\xi}\cdot \delta \gamma_{cd})-\gamma^{ab}\gamma^{cd}D_{b}(X_{\xi}\cdot \delta \gamma_{cd}))\varepsilon^{(\Gamma_{z})}_{aa_{1}}\mathrm{d}x^{a_{1}}\right. \\
+ & \left.\left. \frac{1}{16\pi G}z\log z(-2\gamma^{ab}X_{\xi}\cdot \delta g_{zb}+2\gamma^{ab}\gamma^{cd}g_{zd}(X_{\xi}\cdot \delta \gamma_{bc})-\gamma^{ab}\gamma^{cd}g_{zb}(X_{\xi}\cdot \delta \gamma_{cd}))\varepsilon^{(\Gamma_{z})}_{aa_{1}}\mathrm{d}x^{a_{1}}\right] \right|_{\Gamma_{z}}\\
+\end{align}
+$$
+
+这样(3.2.22)成为
+
+$$\tag{3.2.25}
+\begin{align}
+\xi \cdot \mathbf{L}+X_{\xi}\cdot \delta \ell_{1} & =\mathrm{d}\mu_{\xi,1}+\nu_{\xi} \\
+X_{\xi}\cdot \delta \ell_{2} & =\mathrm{d}\mu_{\xi,2} \\
+X_{\xi}\cdot \delta \mathbf{C}_{2} & =\mu_{\xi,2}
+\end{align}
+$$
+
+根据(3.2.22)，将渐进对称性(3.2.19)作用于作用量(3.2.5)，得到
+
+$$\tag{3.2.26}
+\begin{align}
+X_{\xi}\cdot \delta S &  =\lim_{ \varepsilon \to 0 } \left[\left( \int_{\Sigma_{f,\varepsilon}}\xi \cdot \mathbf{L} -\int_{\partial \Sigma_{f,\varepsilon}}\mu_{\xi}\right)-\left( \int_{\Sigma_{i,\varepsilon}}\xi \cdot \mathbf{L} -\int_{\partial \Sigma_{f,\varepsilon}}\mu_{\xi}\right)+\int_{\Gamma_{\varepsilon}}\nu_{\xi}\right]
+\end{align}
+$$
+
+定义 $\displaystyle{\alpha_{\xi}|_{\Sigma}}$ 和 $\displaystyle{\beta_{\xi}|_{\Gamma}}$ 
+
+$$\tag{3.2.27}
+\begin{align}
+\alpha_{\xi}|_{\Sigma} & =\lim_{ \varepsilon \to 0 } \left(\int_{\Sigma_{\varepsilon}}\xi \cdot \mathbf{L}-\int_{\partial \Sigma_{\varepsilon}}\mu_{\xi}\right)  \\
+\beta_{\xi}|_{\Gamma} & =\lim_{ \varepsilon \to 0 } \int_{\Gamma_{\varepsilon}}\nu_{\xi} \\
+ & =-\int_{\Gamma} \frac{1}{32\pi G}R^{(0)}D_{a}^{(0)}\xi^{(0)a}\cdot  \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}}
+\end{align}
+$$
+
+这样(3.2.26)就可以写成(2.27)的形式。在附录C.3中我们展示了 $\displaystyle{\alpha_{\xi}|_{\Sigma}}$ 和 $\displaystyle{\beta_{\xi}|_{\Gamma}}$ 的有限性，因此作用量的微分同胚变换(3.2.26)是良定义的。
+
+### Noether荷与Noether定理
+
+最后我们给出Noether荷的形式与对应的Noether定理。根据(2.28)，有
+
+$$\tag{3.2.28}
+\begin{align}
+H_{\xi} & =X_{\xi}\cdot \theta-\alpha_{\xi} \\
+ & =\lim_{ \varepsilon \to 0 } \left(\int_{\Sigma_{\varepsilon}}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L})-\int_{\partial \Sigma_{\varepsilon}}(-X_{\xi}\cdot \mathbf{C}+\mu_{\xi})\right) \\
+ & =\lim_{ \varepsilon \to 0 } \left( \int_{\Sigma_{\varepsilon}}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L})-\int_{\partial \Sigma_{\varepsilon}}(-X_{\xi}\cdot\mathbf{C}_{1}+\mu_{\xi,1}) \right)
+\end{align}
+$$
+
+其中我们使用了(3.2.25)。
