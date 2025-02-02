@@ -314,9 +314,142 @@ $$
 $$\tag{3.2.28}
 \begin{align}
 H_{\xi} & =X_{\xi}\cdot \theta-\alpha_{\xi} \\
- & =\lim_{ \varepsilon \to 0 } \left(\int_{\Sigma_{\varepsilon}}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L})-\int_{\partial \Sigma_{\varepsilon}}(-X_{\xi}\cdot \mathbf{C}+\mu_{\xi})\right) \\
- & =\lim_{ \varepsilon \to 0 } \left( \int_{\Sigma_{\varepsilon}}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L})-\int_{\partial \Sigma_{\varepsilon}}(-X_{\xi}\cdot\mathbf{C}_{1}+\mu_{\xi,1}) \right)
+ & =\lim_{ \varepsilon \to 0 } \left(\int_{\Sigma_{\varepsilon}}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L})+\int_{\partial \Sigma_{\varepsilon}}(-X_{\xi}\cdot \mathbf{C}+\mu_{\xi})\right) \\
+ & =\lim_{ \varepsilon \to 0 } \left( \int_{\Sigma_{\varepsilon}}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L})+\int_{\partial \Sigma_{\varepsilon}}(-X_{\xi}\cdot\mathbf{C}_{1}+\mu_{\xi,1}) \right)
 \end{align}
 $$
 
-其中我们使用了(3.2.25)。
+其中我们使用了(3.2.25)。我们计算被积函数，有
+
+$$\tag{3.2.29}
+\begin{align}
+X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L} & =\mathrm{d}Q_{\xi}-\tilde{E}^{\mu \nu}\xi_{\nu}\varepsilon_{\mu \mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
+(Q_{\xi}-X_{\xi}\cdot \mathbf{C}_{1}+\mu_{\xi,1})|_{\Gamma_{z}} & =-\frac{1}{2\pi}\gamma^{\mu \nu}T_{\nu \rho}\xi^{\rho}\varepsilon^{(\Gamma_{\varepsilon})}_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}}
+\end{align}
+$$
+
+其中
+
+$$\tag{3.2.30}
+\begin{align}
+Q_{\xi} & =\frac{1}{32\pi G}(\nabla^{\nu}\xi^{\mu}-\nabla^{\nu}\xi^{\mu})\varepsilon_{\mu \nu \mu_{1}}\mathrm{d}x^{\mu_{1}}
+\end{align}
+$$
+
+以及 $\displaystyle{\tilde{E}_{\mu \nu}}$ 和 $\displaystyle{T_{\mu \nu}}$ 已经在(3.2.13)中给出。因此我们有
+
+$$\tag{3.2.31}
+\begin{align}
+H_{\xi} & =\lim_{ \varepsilon \to 0 } \left(\int_{\Sigma_{\varepsilon}}(-1)\tilde{E}^{\mu \nu}\xi_{\nu}\varepsilon_{\mu \mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}}+\int_{\partial \Sigma_{\varepsilon}}(-1) \frac{1}{2\pi}\gamma^{\mu \nu}T_{\nu \rho}\xi^{\rho}\varepsilon^{(\Gamma_{\varepsilon})}_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}}\right)
+\end{align}
+$$
+
+将(3.2.31)限制到解空间 $\displaystyle{\tilde{\mathcal{P}}}$ 上，得到
+
+$$\tag{3.2.32}
+\begin{align}
+H_{\xi}|_{\tilde{\mathcal{P}}} & =\lim_{ \varepsilon \to 0 } \left(\int_{\partial \Sigma_{\varepsilon}}(-1) \frac{1}{2\pi}\gamma^{\mu \nu}T_{\nu \rho}\xi^{\rho}\varepsilon^{(\Gamma_{\varepsilon})}_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}}\right)|_{\tilde{\mathcal{P}}}
+\end{align}
+$$
+
+其中 $\displaystyle{\Sigma_{\varepsilon}}$ 上的项因运动方程而为0，只留下 $\displaystyle{\partial \Sigma_{\varepsilon}}$ 上的项。最后代入渐进行为(...)，得到Noether荷的表达式
+
+$$\tag{3.2.33}
+\begin{align}
+H_{\xi}|_{\tilde{\mathcal{P}}} & =\left.\left(-\frac{1}{2\pi}\int_{\partial \Sigma}g^{(0)ab}T^{(0)}_{bc}\xi^{(0)c}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}\right)\right|_{\tilde{\mathcal{P}}}
+\end{align}
+$$
+
+其中 $\displaystyle{T^{(0)}_{ab}}$ 为边界能量动量张量，有
+
+$$\tag{3.2.34}
+\begin{align}
+T^{(0)}_{ab} & =\lim_{ \varepsilon \to 0 } T_{ab}|_{z=\varepsilon} \\
+ & =\lim_{ \varepsilon \to 0 } \frac{1}{4G}\left[\frac{1}{2}\left( g_{zz}-\frac{1}{z^{2}} \right)g^{(0)}_{ab}-\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)-\frac{1}{2}z\partial_{z}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab}\right)+g^{(0)}_{ab}g^{(0)cd}\left( g_{cd}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)\right. \\
+ & \left.\left.+\frac{1}{2}zg^{(0)}_{ab}g^{(0)cd}\partial_{z}\left( g_{cd}-\frac{1}{z^{2}}g^{(0)}_{cd} \right)+\frac{1}{2}z(D_{a}^{(0)}g_{zb}+D_{b}^{(0)}g_{za})-zg^{(0)}_{ab}g^{(0)cd}D_{c}^{(0)}g_{zd}-\frac{1}{2}z^{2}g^{(0)}_{ab}g^{(0)cd}g_{zc}g_{zd}\right]\right|_{z=\varepsilon}
+\end{align}
+$$
+
+我们再来验证Noether定理(2.29)。首先我们给出边界能量动量张量 $\displaystyle{T^{(0)}_{ab}}$ 满足的关系
+
+$$\tag{3.2.35}
+\begin{align}
+g^{(0)ab}T^{(0)}_{ab}|_{\tilde{\mathcal{P}}} & =-\frac{1}{8G}R^{(0)} \\
+g^{(0)bc}D_{c}^{(0)}T^{(0)}_{ab}|_{\tilde{\mathcal{P}}} & =0
+\end{align}
+$$
+
+这可以直接计算验证，也可以从
+
+$$\tag{3.2.36}
+\begin{align}
+\lim_{ z \to 0 } \frac{1}{z^{2}}n^{\mu}n^{\nu}\tilde{E}_{\mu \nu}|_{\tilde{\mathcal{P}}} & =0 \\
+\lim_{ z \to 0 } \frac{1}{z^{2}}\gamma^{\mu}_{a}n^{\nu}\tilde{E}_{\mu \nu}|_{\tilde{\mathcal{P}}} & =0
+\end{align}
+$$
+
+中读出。我们现在展示Noether荷的时间不依赖性。我们进行以下计算
+
+$$\tag{3.2.37}
+\begin{align}
+H_{\xi}|_{\Sigma_{f},\tilde{\mathcal{P}}}-H_{\xi}|_{\Sigma_{i},\tilde{\mathcal{P}}} & =-\int_{\partial \Sigma_{f}-\partial \Sigma_{i}} \frac{1}{2\pi}g^{(0)ab}T^{(0)}_{bc}\xi^{(0)c}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
+ & =\int_{\Gamma} \frac{1}{2\pi}D_{a}^{(0)}(g^{(0)ab}T^{(0)}_{bc}\xi^{(0)c})\cdot \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}} \\
+ & =\int_{\Gamma} \frac{1}{2\pi}g^{(0)ab}T^{(0)}_{bc}D_{a}^{(0)}\xi^{(0)c}\cdot \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}} \\
+ & =\int_{\Gamma} \frac{1}{4\pi}T^{(0)}_{ab}(g^{(0)ac}D_{c}\xi^{(0)b}+g^{(0)bc}D_{c}^{(0)}\xi^{(0)a})\cdot \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}} \\
+ & =\int_{\Gamma} \frac{1}{4\pi}T^{(0)}_{ab}g^{(0)ab}D_{c}^{(0)}\xi^{(0)c}\cdot \frac{1}{2!}\varepsilon_{a_{0}a_{1}}^{(0)}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}} \\
+ & =-\int_{\Gamma} \frac{1}{32\pi G}R^{(0)}D_{a}^{(0)}\xi^{(0)a}\cdot \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}}=\beta_{\xi}|_{\Gamma}
+\end{align}
+$$
+
+在推导过程中，我们使用了...。这与Noether定理(2.29)一致。
+
+### Noether荷的Poisson括号
+
+最后我们计算Noether荷的Poisson括号。我们首先考虑一般的边界度规，然后再讨论两个特殊情况——平直边界度规与 $\displaystyle{\mathrm{dS}_{2}}$ 边界度规。
+
+我们考虑两个Noether荷 $\displaystyle{H_{\xi}}$ 和 $\displaystyle{H_{\zeta}}$。对应渐进对称性的无穷小参数 $\displaystyle{\xi^{\mu}}$ 和 $\displaystyle{\zeta^{\mu}}$ 满足共形Killing方程
+
+$$\tag{3.2.38}
+\begin{align}
+g^{(0)}_{ac}D_{b}^{(0)}\xi^{(0)c}+g^{(0)}_{bc}D_{a}^{(0)}\xi^{(0)c}-g^{(0)}_{ab}D_{c}^{(0)}\xi^{(0)c} & =0 \\
+g^{(0)}_{ac}D_{b}^{(0)}\zeta^{(0)c}+g^{(0)}_{bc}D_{a}^{(0)}\zeta^{(0)c}-g^{(0)}_{ab}D_{c}^{(0)}\zeta^{(0)c} & =0 \\
+\end{align}
+$$
+
+以及渐进行为
+
+$$\tag{3.2.39}
+\begin{align}
+\xi^{z} & =\frac{z}{2}D_{a}^{(0)}\xi^{(0)a}+\mathcal{O}(z^{3}) \\
+\xi^{a} & =\xi^{(0)a}+\mathcal{O}(z^{2}) \\
+\zeta^{z} & =\frac{z}{2}D_{a}^{(0)}\zeta^{(0)a}+\mathcal{O}(z^{3}) \\
+\zeta^{a} & =\zeta^{(0)a}+\mathcal{O}(z^{2}) 
+\end{align}
+$$
+
+于是Noether荷 $\displaystyle{H_{\xi}}$ 和 $\displaystyle{H_{\zeta}}$ 具有以下表达式
+
+$$\tag{3.2.40}
+\begin{align}
+H_{\xi}|_{\tilde{\mathcal{P}}} & =\left.\left[-1\int_{\partial \Sigma} \frac{1}{2\pi}g^{(0)ab}T^{(0)}_{bc}\xi^{(0)c}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}\right]\right|_{\tilde{\mathcal{P}}} \\
+H_{\zeta}|_{\tilde{\mathcal{P}}} & =\left.\left[-1\int_{\partial \Sigma} \frac{1}{2\pi}g^{(0)ab}T^{(0)}_{bc}\zeta^{(0)c}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}\right]\right|_{\tilde{\mathcal{P}}}
+\end{align}
+$$
+
+我们将计算 $\displaystyle{\left\{H_{\xi},H_{\zeta}\right\}|_{\tilde{\mathcal{P}}}}$。根据(2.2)和(2.3)，有
+
+$$\tag{3.2.41}
+\begin{align}
+\left\{H_{\xi},H_{\zeta}\right\}|_{\tilde{\mathcal{P}}} & =-X_{\xi}\cdot \delta H_{\zeta}|_{\tilde{\mathcal{P}}}=X_{\zeta}\cdot \delta H_{\xi}|_{\tilde{\mathcal{P}}}
+\end{align}
+$$
+
+因此
+
+$$\tag{3.2.42}
+\begin{align}
+\left\{H_{\xi},H_{\zeta}\right\}|_{\tilde{\mathcal{P}}} & =-X_{\xi}\cdot \delta H_{\zeta}|_{\tilde{\mathcal{P}}} \\
+ & =\left.\frac{1}{2\pi}\int_{\partial \Sigma}g^{(0)}(X_{\xi}\cdot \delta T^{(0)}_{bc})\zeta^{(0)c}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \right|_{\tilde{\mathcal{P}}}\\
+ & = \left[\right]
+\end{align}
+$$
