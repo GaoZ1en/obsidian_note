@@ -190,4 +190,6 @@ $$\tag{1.9*}
 S_{\text{gauge-fixed}} & =S_{\text{classical}}+\int \mathrm{d}^4x\sqrt{ -g }\left[\frac{1}{2\xi}(\nabla_{\mu}A^{\mu})^{2}+\nabla_{\mu}\bar{c}\nabla^{\mu}c\right]
 \end{align}
 $$
-a
+
+## example 2: 3D Chern-Simons theory with gauge group $\displaystyle{SU(2)}$
+
