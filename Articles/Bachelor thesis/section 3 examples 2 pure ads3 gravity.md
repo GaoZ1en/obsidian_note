@@ -535,16 +535,138 @@ $$\tag{3.2.49}
 \begin{align}
 \left\{H_{\xi},H_{\zeta}\right\}|_{\Sigma_{f},\tilde{\mathcal{P}}}-\left\{H_{\xi},H_{\zeta}\right\}|_{\Sigma_{i},\tilde{\mathcal{P}}} & =\int_{\Gamma} \frac{-1}{32\pi G}R^{(0)}D_{a}^{(0)}[\xi^{(0)},\zeta^{(0)}]^{a}\cdot \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}} \\
  & -\frac{1}{32\pi G}\int_{\Gamma}D_{a}^{(0)}\left[-R^{(0)}(\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}-\zeta^{(0)a}D_{b}^{(0)}\xi^{(0)a})\right. \\
- & \left.-g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}\xi^{(0)c}D_{d}^{(0)}\zeta^{(0)d}-D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c}D_{d}^{(0)}\xi^{(0)d})\right]\cdot \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}}
+ & \left.-g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}\xi^{(0)c}D_{d}^{(0)}\zeta^{(0)d}-D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c}D_{d}^{(0)}\xi^{(0)d})\right]\cdot \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}} \\
+ & =\frac{1}{32\pi G}\int_{\Gamma}\left[-R^{(0)}\xi^{(0)a}(D_{b}^{(0)}D_{a}^{(0)}\zeta^{(0)b}-D_{a}^{(0)}D_{b}^{(0)}\zeta^{(0)a})+R^{(0)}\zeta^{(0)a}(D_{b}^{(0)}D_{a}^{(0)}\xi^{(0)b}-D_{a}^{(0)}D_{b}^{(0)}\xi^{(0)a}) \right.\\
+ & +(g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{a}^{(0)}\xi^{(0)a}+\xi^{(0)a}D_{a}^{(0)}R^{(0)})D_{d}^{(0)}\zeta^{(0)d} \\
+ & \left.-(g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{a}^{(0)}\zeta^{(0)a}+\zeta^{(0)a}D_{a}^{(0)}R^{(0)})D_{d}^{(0)}\xi^{(0)d}\right]\cdot \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}} \\
+ & =0
 \end{align}
 $$
 
-#### 特殊情况1：平直边界坐标
+其中我们使用了(...)以及共形Killing方程(3.2.38)的推论
+
+$$\tag{3.2.50}
+\begin{align}
+g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{a}^{(0)}\xi^{(0)a}+\xi^{(0)a}D_{a}^{(0)}R^{(0)}+R^{(0)}D_{a}^{(0)}\xi^{(0)a}=0 \\
+g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{a}^{(0)}\zeta^{(0)a}+\zeta^{(0)a}D_{a}^{(0)}R^{(0)}+R^{(0)}D_{a}^{(0)}\zeta^{(0)a}=0
+\end{align}
+$$
+
+推导过程类似于(3.4)。
+
+#### 特殊情况1：平直边界
 
 我们选择边界坐标
 
-$$\tag{3.2.49}
+$$\tag{3.2.51}
 \begin{align}
-X
+x^{a} & =\left\{t,\phi\right\} & \phi\sim \phi+2\pi
 \end{align}
 $$
+
+以及边界度规
+
+$$\tag{3.2.52}
+\begin{align}
+g^{(0)}_{ab}\mathrm{d}x^{a}\mathrm{d}x^{b} & =-\mathrm{d}t^{2}+\mathrm{d}\phi^{2}
+\end{align}
+$$
+
+在此局部坐标下共形Killing矢量场可以表达为
+
+$$\tag{3.2.53}
+\begin{align}
+A_{n}=A_{n} & =\cos(nt)\cos(n\phi) \frac{\partial}{\partial t}-\sin(nt)\sin(n\phi) \frac{\partial}{\partial \phi} \\
+B_{n}=B_{n} & =\sin(nt)\sin(n\phi) \frac{\partial}{\partial t}-\cos(nt)\cos(n\phi) \frac{\partial}{\partial \phi} \\
+C_{n}=-C_{n} & =\sin(nt)\cos(n\phi) \frac{\partial}{\partial t}+\cos(nt)\sin(n\phi) \frac{\partial}{\partial \phi} \\
+D_{n}=-D_{n} & =\cos(nt)\sin(n\phi) \frac{\partial}{\partial t}+\sin(nt)\sin(n\phi) \frac{\partial}{\partial \phi}
+\end{align}
+$$
+
+对应于(3.2.52)的Noether荷记为 $\displaystyle{H_{A_{n}},H_{B_{n}},H_{C_{n}}}$ 以及 $\displaystyle{H_{D_{n}}}$。现在我们计算 $\displaystyle{H_{A_{n}},H_{B_{n}},H_{C_{n}},H_{D_{n}}}$ 间的Poisson括号。计算得到
+
+$$\tag{3.2.54}
+\begin{align}
+\left\{H_{A_{m}},H_{A_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{A_{m}},H_{B_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[-\frac{1}{2}(m-n)H_{D_{m+n}}-\frac{1}{2}(m+n)H_{D_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{A_{m}},H_{C_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[-\frac{1}{2}(m-n)H_{A_{m+n}}+\frac{1}{2}(m+n)H_{A_{m-n}}+\frac{1}{8G}m^{3}(\delta_{m,n}-\delta_{m,-n})\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{A_{m}},H_{D_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[\frac{1}{2}(m-n)H_{B_{m+n}}-\frac{1}{2}(m+n)H_{B_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{B_{m}},H_{B_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{B_{m}},H_{C_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[-\frac{1}{2}(m-n)H_{B_{m+n}}+\frac{1}{2}(m+n)H_{B_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{B_{m}},H_{D_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[\frac{1}{2}(m-n)H_{A_{m+n}}-\frac{1}{2}(m+n)H_{A_{m-n}}\right]-\frac{1}{8G}m^{3}(\delta_{m,n}-\delta_{m,-n})\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{C_{m}},H_{C_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[-\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{C_{m}},H_{D_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[-\frac{1}{2}(m-n)H_{D_{m+n}}+\frac{1}{2}(m+n)H_{D_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{D_{m}},H_{D_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[-\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}}\right]\right|_{\tilde{\mathcal{P}}}
+\end{align}
+$$
+
+将Noether荷重新组织，定义
+
+$$\tag{3.2.55}
+\begin{align}
+L_{n}|_{\tilde{\mathcal{P}}} & =\left.\left(\frac{1}{2}H_{A_{n}}+\frac{1}{2}H_{B_{n}}+\frac{i}{2}H_{C_{n}}-\frac{i}{2}H_{D_{n}}+\frac{1}{16G}\delta_{n,0}\right)\right|_{\tilde{\mathcal{P}}} \\
+\bar{L}_{n}|_{\tilde{\mathcal{P}}} & =\left.\left(\frac{1}{2}H_{A_{n}}-\frac{1}{2}H_{B_{n}}+\frac{i}{2}H_{C_{n}}+\frac{i}{2}H_{D_{n}}+\frac{1}{16G}\delta_{n,0}\right)\right|_{\tilde{\mathcal{P}}}
+\end{align}
+$$
+
+于是(3.2.54)成为
+
+$$\tag{3.2.56}
+\begin{align}
+\{L_{m},L_{n}\}|_{\tilde{\mathcal{P}}} & =-i\left[(m-n)L_{m+n}|_{\tilde{\mathcal{P}}}+\frac{1}{8G}m(m^{2}-1)\delta_{m,-n}\right] \\
+\{\bar{L}_{m},\bar{L}_{n}\}|_{\tilde{\mathcal{P}}} & =-i\left[(m-n)\bar{L}_{m+n}|_{\tilde{\mathcal{P}}}+\frac{1}{8G}m(m^{2}-1)\delta_{m,-n}\right] \\
+\{L_{m},L_{n}\}|_{\tilde{\mathcal{P}}} & =0
+\end{align}
+$$
+
+这正是中心荷为$\displaystyle{c=\frac{3}{2}}$的Virasoro代数，这与[cite]中的结果一致。
+
+#### 特殊情况2：$\displaystyle{\text{dS}_{2}}$ 边界
+
+我们仍选择边界坐标(3.2.51)，但是选择边界度规为
+
+$$\tag{3.2.57}
+\begin{align}
+g^{(0)}_{ab}\mathrm{d}x^{a}\mathrm{d}x^{b} & =\frac{1}{\cos^{2}t}(-\mathrm{d}t^{2}+\mathrm{d}\phi^{2})
+\end{align}
+$$
+
+注意到(3.2.58)是(3.2.52)的Weyl变换，因此共形Killing矢量场仍然是(3.2.53)。仍然将Noether荷记作 $\displaystyle{H_{A_{n}},H_{B_{n}},H_{C_{n}},H_{D_{n}}}$，计算得到
+
+$$\tag{3.2.58}
+\begin{align}
+\left\{H_{A_{m}},H_{A_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{A_{m}},H_{B_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[-\frac{1}{2}(m-n)H_{D_{m+n}}-\frac{1}{2}(m+n)H_{D_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{A_{m}},H_{C_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[-\frac{1}{2}(m-n)H_{A_{m+n}}+\frac{1}{2}(m+n)H_{A_{m-n}}+\frac{1}{8G}(m^{2}+m\tan^{2}t)(\delta_{m,n}-\delta_{m,-n})\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{A_{m}},H_{D_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[\frac{1}{2}(m-n)H_{B_{m+n}}-\frac{1}{2}(m+n)H_{B_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{B_{m}},H_{B_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{B_{m}},H_{C_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[-\frac{1}{2}(m-n)H_{B_{m+n}}+\frac{1}{2}(m+n)H_{B_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{B_{m}},H_{D_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[\frac{1}{2}(m-n)H_{A_{m+n}}-\frac{1}{2}(m+n)H_{A_{m-n}}\right]-\frac{1}{8G}(m^{3}+m\tan^{2}t)(\delta_{m,n}-\delta_{m,-n})\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{C_{m}},H_{C_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[-\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{C_{m}},H_{D_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[-\frac{1}{2}(m-n)H_{D_{m+n}}+\frac{1}{2}(m+n)H_{D_{m-n}}\right]\right|_{\tilde{\mathcal{P}}} \\
+\left\{H_{D_{m}},H_{D_{n}}\right\}|_{\tilde{\mathcal{P}}} & =\left.\left[-\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}}\right]\right|_{\tilde{\mathcal{P}}}
+\end{align}
+$$
+
+我们仍然可以将(3.2.58)重新组织成(3.2.56)的形式。定义
+
+$$\tag{3.2.59}
+\begin{align}
+L_{n}|_{\tilde{\mathcal{P}}} & =\left.\left(\frac{1}{2}H_{A_{n}}+\frac{1}{2}H_{B_{n}}+\frac{i}{2}H_{C_{n}}-\frac{i}{2}H_{D_{n}}+\frac{1}{16G}\sec^{2}t\delta_{n,0}\right)\right|_{\tilde{\mathcal{P}}} \\
+\bar{L}_{n}|_{\tilde{\mathcal{P}}} & =\left.\left(\frac{1}{2}H_{A_{n}}-\frac{1}{2}H_{B_{n}}+\frac{i}{2}H_{C_{n}}+\frac{i}{2}H_{D_{n}}+\frac{1}{16G}\sec^{2}t\delta_{n,0}\right)\right|_{\tilde{\mathcal{P}}}
+\end{align}
+$$
+这样(3.2.58)成为
+
+$$\tag{3.2.60}
+\begin{align}
+\{L_{m},L_{n}\}|_{\tilde{\mathcal{P}}} & =-i\left[(m-n)L_{m+n}|_{\tilde{\mathcal{P}}}+\frac{1}{8G}m(m^{2}-1)\delta_{m,-n}\right] \\
+\{\bar{L}_{m},\bar{L}_{n}\}|_{\tilde{\mathcal{P}}} & =-i\left[(m-n)\bar{L}_{m+n}|_{\tilde{\mathcal{P}}}+\frac{1}{8G}m(m^{2}-1)\delta_{m,-n}\right] \\
+\{L_{m},L_{n}\}|_{\tilde{\mathcal{P}}} & =0
+\end{align}
+$$
+
+这与(3.2.56)一致。
+
+### 传统的协变相空间方法
+
