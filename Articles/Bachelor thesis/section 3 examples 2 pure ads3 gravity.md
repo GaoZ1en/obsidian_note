@@ -440,7 +440,7 @@ $$
 
 $$\tag{3.2.41}
 \begin{align}
-\left\{H_{\xi},H_{\zeta}\right\}|_{\tilde{\mathcal{P}}} & =-X_{\xi}\cdot \delta H_{\zeta}|_{\tilde{\mathcal{P}}}=X_{\zeta}\cdot \delta H_{\xi}|_{\tilde{\mathcal{P}}}
+\left\{H_{\xi},H_{\zeta}\right\}|_{\tilde{\mathcal{P}}} & =-X_{\xi}\cdot \delta H_{\zeta}|_{\tilde{\mathcal{P}}}=X_{\zeta}\cdot \delta H_{\xi}|_{\tilde{\mathcal{P}}}=X_{\xi}\cdot X_{\zeta}\cdot \omega|_{\tilde{\mathcal{P}}}
 \end{align}
 $$
 
@@ -450,6 +450,101 @@ $$\tag{3.2.42}
 \begin{align}
 \left\{H_{\xi},H_{\zeta}\right\}|_{\tilde{\mathcal{P}}} & =-X_{\xi}\cdot \delta H_{\zeta}|_{\tilde{\mathcal{P}}} \\
  & =\left.\frac{1}{2\pi}\int_{\partial \Sigma}g^{(0)}(X_{\xi}\cdot \delta T^{(0)}_{bc})\zeta^{(0)c}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \right|_{\tilde{\mathcal{P}}}\\
- & = \left[\right]
+\end{align}
+$$
+
+我们首先计算
+
+$$\tag{3.2.43}
+\begin{align}
+\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}X_{\xi}\cdot \delta T_{\mu \nu} & =\frac{1}{4G}\left[\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}(X_{\xi}\cdot \delta K_{\mu \nu})-\gamma^{\mu \nu}\gamma_{\alpha \beta}(X_{\xi}\cdot \delta K_{\mu \nu})+\gamma_{\alpha \beta}K^{\mu \nu}(X_{\xi}\cdot \delta \gamma_{\mu \nu})\right. \\
+ & \left.-K\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}(X_{\xi}\cdot \delta \gamma_{\mu \nu})+\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}(X_{\xi}\cdot \delta \gamma_{\mu \nu})\right] \\
+ & =T_{\alpha \mu}D_{\beta}(\gamma^{\mu}_{\nu}\xi^{\nu})+T_{\mu \beta}D_{\alpha}(\gamma^{\mu}_{\nu}\xi^{\nu})+D_{\mu}T_{\alpha \beta}\gamma^{\mu}_{\nu}\xi^{\nu} \\
+ & -\frac{1}{4G}(D_{\alpha}D_{\beta}(n_{\mu}\xi^{\mu})-\gamma_{\alpha \beta}D^{2}(n_{\mu}\xi^{\mu}))+4\pi \gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\tilde{E}_{\mu \nu}n_{\rho}\xi^{\rho} \\
+ & +\frac{1}{4G}\left( 2K_{\alpha \mu}K^{\mu}_{\beta}-3KK_{\alpha \beta}+2K_{\alpha \beta}+\left( \frac{1}{2}K^{2}+\frac{1}{2}K_{\mu \nu}K^{\mu \nu}-1 \right)\gamma_{\alpha \beta} \right)n_{\rho}\xi^{\rho}
+\end{align}
+$$
+
+其中我们使用了(A....)以及
+
+$$\tag{3.2.44}
+\begin{align}
+\tilde{R}_{\mu \nu} & =\frac{1}{2}\tilde{R}\gamma_{\mu \nu}
+\end{align}
+$$
+
+继续代入渐进行为(B....)，得
+
+$$\tag{3.2.45}
+\begin{align}
+X_{\xi}\cdot \delta T^{(0)}_{ab}|_{\tilde{\mathcal{P}}} & =\left[T^{(0)}_{ac}D_{b}^{(0)}\xi^{(0)c}+T^{(0)}_{bc}D_{a}^{(0)}\xi^{(0)c}+\xi^{(0)c}D_{c}^{(0)}T^{(0)}_{ab}\right. \\
+ & \left.\left.+\frac{1}{8G}(D_{a}^{(0)}D_{b}^{(0)}D_{c}^{(0)}\xi^{(0)c}-g^{(0)}_{ab}g^{(0)cd}D_{c}^{(0)}D_{d}^{(0)}D_{e}^{(0)}\xi^{(0)e})\right]\right|_{\tilde{\mathcal{P}}}
+\end{align}
+$$
+
+代入(3.2.42)，得到
+
+$$\tag{3.2.46}
+\begin{align}
+\left\{H_{\xi},H_{\zeta}\right\}|_{\tilde{\mathcal{P}}} & =\int_{\partial \Sigma}\left[\frac{1}{2\pi}g^{(0)ab}(T^{(0)}_{dc}D_{b}^{(0)}\xi^{(0)d}\zeta^{(0)c}+T^{(0)}_{bd}D_{c}^{(0)}\xi^{(0)d}\zeta^{(0)c}+\xi^{(0)d}D_{d}^{(0)}T^{(0)}_{bc}\zeta^{(0)c})\right. \\
+ & \left.\left.+\frac{1}{16\pi G}(g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}D_{d}^{(0)}\xi^{(0)d}\zeta^{(0)c}-\zeta^{(0)a}g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{e}^{(0)}\xi^{(0)e})\right]\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}\right|_{\tilde{\mathcal{P}}} \\
+ & =\int_{\partial \Sigma}\left[-\frac{1}{2\pi}g^{(0)ab}T^{(0)}_{bc}(\xi^{(0)d}D_{d}^{(0)}\zeta^{(0)c}-\zeta^{(0)d}D_{d}^{(0)}\xi^{(0)c})\right. \\
+ & +\frac{1}{4\pi}\xi^{(0)a}g^{(0)bc}T^{(0)}_{bc}D_{d}^{(0)}\zeta^{(0)d}+\frac{1}{2\pi}\xi^{(0)a}g^{(0)bc}D_{b}^{(0)}T^{(0)}_{cd}\zeta^{(0)d} \\
+ & +\frac{1}{2\pi}g^{(0)ab}g^{(0)ce}T^{(0)}_{ef}\zeta^{(0)f}(g^{(0)}_{cd}D_{b}^{(0)}\xi^{(0)d}+g^{(0)}_{bd}D_{c}^{(0)}\xi^{(0)d}-g^{(0)}_{bc}D_{d}^{(0)}\xi^{(0)d}) \\
+ & +\frac{1}{4\pi}\xi^{(0)a}T^{(0)}_{bc}g^{(0)bd}g^{(0)ce}(g^{(0)}_{ef}D_{d}^{(0)}\zeta^{(0)f}+g^{(0)}_{df}D_{e}^{(0)}\zeta^{(0)f}-g^{(0)}_{de}D_{f}^{(0)}\zeta^{(0)f}) \\
+ & +\frac{1}{2\pi}D_{b}^{(0)}(g^{(0)ac}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)b}-g^{(0)bc}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)a}) \\
+ & \left.\left.+\frac{1}{16\pi G}(g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}D_{d}^{(0)}\xi^{(0)d}\zeta^{(0)c}-\zeta^{(0)a}g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{d}^{(0)}\xi^{(0)d})\right]\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}\right|_{\tilde{\mathcal{P}}} \\
+ & =H_{[\xi,\zeta]}|_{\tilde{\mathcal{P}}}+\int_{\partial \Sigma}\left[-\frac{1}{32\pi G}R^{(0)}\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}\right. \\
+ & +\left.\frac{1}{16\pi G}(g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}D_{d}^{(0)}\xi^{(0)d}\zeta^{(0)c}-\zeta^{(0)a}g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{d}^{(0)}\xi^{(0)d})\right]\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}
+\end{align}
+$$
+
+$$\tag{3.2.46}
+\begin{align}
+ & =H_{[\xi,\zeta]}|_{\tilde{\mathcal{P}}}+\int_{\partial \Sigma}\left[-\frac{1}{32\pi G}R^{(0)}\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}+\frac{1}{16\pi G}g^{(0)ab}(D_{c}^{(0)}D_{b}^{(0)}\zeta^{(0)c}-D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c})D_{b}^{(0)}\xi^{(0)d}\right. \\
+ & -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}\xi^{(0)c}D_{d}^{(0)}\zeta^{(0)d}-D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c}D_{d}^{(0)}\xi^{(0)d}) \\
+ & +\frac{1}{32\pi G}g^{(0)ab}g^{(0)ce}D_{e}^{(0)}D_{f}^{(0)}\xi^{(0)f}(g^{(0)}_{bd}D_{c}^{(0)}\zeta^{(0)d}+g^{(0)}_{cd}D_{b}^{(0)}\zeta^{(0)d}-g^{(0)}_{bc}D_{d}^{(0)}\xi^{(0)d}) \\
+ & -\frac{1}{32\pi G}g^{(0)ab}g^{(0)ce}D_{f}^{(0)}\xi^{(0)f}D_{e}^{(0)}(g^{(0)}_{bd}D_{c}^{(0)}\zeta^{(0)d}+g^{(0)}_{cd}D_{b}^{(0)}\zeta^{(0)d}-g^{(0)}_{bc}D_{d}^{(0)}\xi^{(0)d}) \\
+ & +\frac{1}{16\pi G}D_{b}^{(0)}(g^{(0)ac}D_{c}^{(0)}D_{d}^{(0)}\xi^{(0)d}\zeta^{(0)b}-g^{(0)bc}D_{c}^{(0)}D_{d}^{(0)}\xi^{(0)d}\zeta^{(0)a}) \\
+ & \left.+\frac{1}{32\pi G}D_{b}^{(0)}((-g^{(0)ac}D_{c}^{(0)}\zeta^{(0)b}+g^{(0)bc}D_{c}^{(0)}\zeta^{(0)a})D_{d}^{(0)}\xi^{(0)d})\right]\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
+ & =H_{[\xi ,\zeta]}|_{\tilde{\mathcal{P}}}+\frac{1}{32\pi G}\int_{\partial \Sigma}\left[-R^{(0)}(\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}-\zeta^{(0)a}D_{b}^{(0)}\xi^{(0)b})\right. \\
+ & \left.-g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}\xi^{(0)c}D_{d}^{(0)}\zeta^{(0)d}-D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c}D_{d}^{(0)}\xi^{(0)d})\right]\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}
+\end{align}
+$$
+
+在推导过程中我们使用了共形Killing方程(3.2.38)、Stokes定理以及
+
+$$\tag{3.2.47}
+\begin{align}
+R^{(0)}_{ab}=\frac{1}{2}R^{(0)}g^{(0)}_{ab}
+\end{align}
+$$
+
+我们再验证 $\displaystyle{\left\{H_{\xi},H_{\zeta}\right\}}|_{\tilde{\mathcal{P}}}$ 的时间不依赖性。根据(3.2.41)以及(2.25)，有
+
+$$\tag{3.2.48}
+\begin{align}
+\left\{H_{\xi},H_{\zeta}\right\}|_{\Sigma_{f},\tilde{\mathcal{P}}}-\left\{H_{\xi},H_{\zeta}\right\}|_{\Sigma_{i},\tilde{\mathcal{P}}} & =X_{\xi}\cdot X_{\zeta}\cdot(\omega|_{\Sigma_{f},\tilde{\mathcal{P}}}-\omega|_{\Sigma_{i},\tilde{\mathcal{P}}}) \\
+ & =0
+\end{align}
+$$
+
+或者直接计算得到
+
+$$\tag{3.2.49}
+\begin{align}
+\left\{H_{\xi},H_{\zeta}\right\}|_{\Sigma_{f},\tilde{\mathcal{P}}}-\left\{H_{\xi},H_{\zeta}\right\}|_{\Sigma_{i},\tilde{\mathcal{P}}} & =\int_{\Gamma} \frac{-1}{32\pi G}R^{(0)}D_{a}^{(0)}[\xi^{(0)},\zeta^{(0)}]^{a}\cdot \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}} \\
+ & -\frac{1}{32\pi G}\int_{\Gamma}D_{a}^{(0)}\left[-R^{(0)}(\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}-\zeta^{(0)a}D_{b}^{(0)}\xi^{(0)a})\right. \\
+ & \left.-g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}\xi^{(0)c}D_{d}^{(0)}\zeta^{(0)d}-D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c}D_{d}^{(0)}\xi^{(0)d})\right]\cdot \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}}
+\end{align}
+$$
+
+#### 特殊情况1：平直边界坐标
+
+我们选择边界坐标
+
+$$\tag{3.2.49}
+\begin{align}
+X
 \end{align}
 $$

@@ -1,4 +1,4 @@
-## Hamilton力学的辛几何形式
+	## Hamilton力学的辛几何形式
 
 传统的Hamilton力学由以下几个概念构成
 
