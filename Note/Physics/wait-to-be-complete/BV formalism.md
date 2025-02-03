@@ -261,5 +261,3 @@ $$\tag{2.8}
 S_{\text{gf}} & =S_{\text{CS}}+\int_{M}\mathrm{d}^{3}x\sqrt{ -g }\left[\frac{1}{2\xi}(\nabla_{\mu}A^{\mu a})^{2}+\nabla_{\mu}\bar{c}_{a}\nabla^{\mu}c^{a}\right]
 \end{align}
 $$
-
-关于主方程的量子修正，规范对称性在量子层面被破坏，这是否是某种t'Hooft anomaly?瞬子同样会引入非微扰修正，这是否是其他的anomaly？
