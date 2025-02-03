@@ -193,3 +193,73 @@ $$
 
 ## example 2: 3D Chern-Simons theory with gauge group $\displaystyle{SU(2)}$
 
+classical action for 3D Chern-Simons theory with gauge group $\displaystyle{SU(2)}$ is
+
+$$\tag{2.1}
+\begin{align}
+S_{\text{CS}} & =\frac{k}{4\pi}\int \mathrm{Tr}\left( A\wedge \mathrm{d}A+\frac{2}{3}A\wedge A\wedge A \right)
+\end{align}
+$$
+
+where $\displaystyle{A=A_{\mu}^{a}T^{a}\mathrm{d}x^{\mu}}$ is the $\displaystyle{SU(2)}$ gauge field, $\displaystyle{T^{a}}$ is the $\displaystyle{SU(2)}$ generator, which satisfies $\displaystyle{\mathrm{Tr}(T^{a}T^{b})=-\frac{1}{2}\delta^{ab}}$ and $\displaystyle{[T^{a},T^{b}]=i\varepsilon^{abc}T^{c}}$, and $\displaystyle{k}$ is the Chern-Simons level. this theory has the non-Abelian gauge symmetry
+
+$$\tag{2.2}
+\begin{align}
+\delta A & =\mathrm{d}\Lambda+[A,\Lambda],\Lambda\in \mathfrak{su}(2)
+\end{align}
+$$
+
+original fields are gauge fields $\displaystyle{A_{\mu}^{a}}$. for each gauge parameter $\displaystyle{\Lambda^{a}}$, introduce the corresponding anti-commuting scalar ghost field $\displaystyle{c^{a}}$. for original fields $\displaystyle{A^{a}_{\mu}}$ and ghost field $\displaystyle{c^{a}}$, introduce the corresponding anti-fields $\displaystyle{A_{a}^{*\mu}}$ and $\displaystyle{c^{*}_{a}}$. since the gauge algebra is closed, there is no need for higher ghosts.
+
+promote the gauge symmetry to BRST transformation. introduce the BRST operator $\displaystyle{s}$, which satisfies
+
+$$\tag{2.3}
+\begin{align}
+sA^{a}_{\mu} & =\nabla_{\mu}c^{a}+i\varepsilon^{abc}A_{\mu}^{b}c^{c} \\
+sc^{a} & =-\frac{i}{2}\varepsilon^{abc}c^{b}c^{c}
+\end{align}
+$$
+
+it can be verified that the BRST operator $\displaystyle{s}$ is nilpotent, which means that $\displaystyle{s^{2}=0}$. the master action contains the classical action and the anti-fields term
+
+$$\tag{2.4}
+\begin{align}
+S & =S_{\text{CS}}+\int_{M}\mathrm{Tr}(A^{*}\wedge sA+c^{*}\cdot sc)
+\end{align}
+$$
+
+it is easy to verify that $\displaystyle{S}$ satisfies the master equation.
+
+choose Lorentz gauge $\displaystyle{\nabla_{\mu}A^{\mu}=0}$, define the gauge fixing fermion
+
+$$\tag{2.5}
+\begin{align}
+\Psi & =\int_{M}\mathrm{d}^{3}x \sqrt{ -g }\bar{c}_{a}\left( \nabla_{\mu}A^{\mu a}+\frac{\xi}{2}B^{a} \right)
+\end{align}
+$$
+
+where $\displaystyle{\bar{c}_{a}}$ is the anti-ghost, and $\displaystyle{B^{a}}$ is the auxiliary field. substitute anti-fields with functional derivative of the gauge fixing fermion in the master action, i.e.,
+
+$$\tag{2.6}
+\begin{align}
+A^{*\mu}_{a} & =\nabla^{\mu}\bar{c}_{a},c^{*}_{a}=\nabla_{\mu}A^{\mu}_{a}+\xi B_{a}
+\end{align}
+$$
+
+we get the gauge-fixed action
+
+$$\tag{2.7}
+\begin{align}
+S_{\text{gauge-fixed}}=S_{\text{CS}}+\int_{M}\mathrm{d}^{3}x\sqrt{ -g }\left[\nabla_{\mu}\bar{c}_{a}\nabla^{\mu}c^{a}+B^{a}\nabla_{\mu}A^{\mu a}+\frac{\xi}{2}B^{a}B^{a}\right]
+\end{align}
+$$
+
+integrate out the auxiliary field $\displaystyle{B^{a}}$, we finally have
+
+$$\tag{2.8}
+\begin{align}
+S_{\text{gf}} & =S_{\text{CS}}+\int_{M}\mathrm{d}^{3}x\sqrt{ -g }\left[\frac{1}{2\xi}(\nabla_{\mu}A^{\mu a})^{2}+\nabla_{\mu}\bar{c}_{a}\nabla^{\mu}c^{a}\right]
+\end{align}
+$$
+
+关于主方程的量子修正，规范对称性在量子层面被破坏，这是否是某种t'Hooft anomaly?瞬子同样会引入非微扰修正，这是否是其他的anomaly？
