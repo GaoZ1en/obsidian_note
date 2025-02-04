@@ -159,3 +159,62 @@ X_{\xi}\cdot \delta E & =\xi^{\mu}\nabla_{\mu}\left( \nabla^{2}\phi-\frac{1}{\ga
 $$
 
 在推导(3.16)的过程中我们使用了(3.3)、(3.4)、(3.5)、(3.6)以及运动方程(3.7)。
+
+---
+
+最后我们考虑Noether荷间的Poisson括号。我们考虑两个Noether荷 $\displaystyle{H_{\xi},H_{\zeta}}$ ，对应的无穷小变换参数 $\displaystyle{\xi,\zeta}$ 满足共形Killing方程
+
+$$\tag{3.17}
+\begin{align}
+\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}-g_{\mu \nu}\nabla_{\rho}\xi^{\rho} & =0 \\
+\nabla_{\mu}\zeta_{\nu}+\nabla_{\nu}\zeta_{\mu}-g_{\mu \nu}\nabla_{\rho}\zeta^{\rho} & =0
+\end{align}
+$$
+
+根据(2.2)和(2.3)，有
+
+$$\tag{3.18}
+\begin{align}
+\left\{H_{\xi},H_{\zeta}\right\}|_{\tilde{\mathcal{P}}} & =-X_{\xi}\cdot \delta H_{\zeta}|_{\tilde{\mathcal{P}}}=X_{\zeta}\cdot \delta H_{\xi}|_{\tilde{\mathcal{P}}}=X_{\xi}\cdot X_{\zeta}\cdot \omega|_{\tilde{\mathcal{P}}}
+\end{align}
+$$
+
+我们根据(3.18)计算 $\displaystyle{\left\{H_{\xi},H_{\zeta}\right\}|_{\tilde{\mathcal{P}}}}$。
+
+$$\tag{3.19}
+\begin{align}
+X_{\zeta}\cdot \delta H_{\xi}|_{\tilde{\mathcal{P}}} & =X_{\zeta}\cdot \delta \int_{\Sigma}\mathrm{d}x\sqrt{ \sigma } \frac{-1}{2\pi}\tau^{\mu}\xi^{\nu}T_{\mu \nu} \\
+ & =\int_{\Sigma}\mathrm{d}x\sqrt{ \sigma } \frac{-1}{2\pi}\tau^{\mu}\xi^{\nu}(X_{\zeta}\cdot\delta T_{\mu \nu})
+\end{align}
+$$
+
+now we will first consider $\displaystyle{X_{\zeta}\cdot \delta T_{\mu \nu}}$
+
+$$\tag{3.20}
+\begin{align}
+X_{\zeta}\cdot \delta T_{\mu \nu} & =X_{\xi}\cdot \delta\left( -\nabla_{\mu}\phi \nabla_{\nu}\phi+\frac{1}{2}g_{\mu \nu}\nabla_{\rho}\phi \nabla^{\rho}\phi+\frac{2}{\gamma}\nabla_{\mu}\nabla_{\nu}\phi-\frac{2}{\gamma}g_{\mu \nu}\nabla^{2}\phi+\frac{\mu}{2\gamma^{2}}g_{\mu \nu}e^{\gamma \phi} \right) \\
+ & =X_{\xi}\cdot\left(-\nabla_{\mu}\delta \phi \nabla_{\nu}\phi-\nabla_{\mu}\phi \nabla_{\nu}\delta \phi+g_{\mu \nu}\nabla^{\rho}\phi \nabla_{\rho}\delta \phi+\frac{2}{\gamma}\nabla_{\mu}\nabla_{\nu}\delta \phi-\frac{2}{\gamma}g_{\mu \nu}\nabla^{2}\delta \phi+\frac{\mu}{2\gamma}g_{\mu \nu}e^{\gamma \phi}\delta \phi\right) \\
+ & =-\nabla_{\mu}(X_{\xi}\cdot \delta \phi)\nabla_{\nu}\phi-\nabla_{\mu}\phi \nabla_{\nu}(X_{\xi}\cdot \delta \phi)+g_{\mu \nu}\nabla^{\rho}\phi \nabla_{\rho}(X_{\xi}\cdot \delta \phi)+\frac{2}{\gamma}\nabla_{\mu}\nabla_{\nu}(X_{\xi}\cdot \delta \phi) \\
+ & -\frac{2}{\gamma}g_{\mu \nu}\nabla^{2}(X_{\xi}\cdot \delta \phi)+\frac{\mu}{2\gamma}g_{\mu \nu}e^{\gamma \phi}(X_{\xi}\cdot \delta \phi) \\
+ & =-\nabla_{\mu}\left( \xi^{\rho}\nabla_{\rho}\phi+\frac{1}{\gamma}\nabla_{\rho}\xi^{\rho}\right)\nabla_{\nu}\phi-\nabla_{\mu}\phi \nabla_{\nu}\left( \xi^{\rho}\nabla_{\rho}\phi+\frac{1}{\gamma}\nabla_{\rho}\xi^{\rho} \right)+g_{\mu \nu}\nabla^{\rho}\phi \nabla_{\rho}\left( \xi^{\rho}\nabla_{\rho}\phi+\frac{1}{\gamma}\nabla_{\sigma}\xi^{\sigma} \right) \\
+ & +\frac{2}{\gamma}\nabla_{\mu}\nabla_{\nu}\left( \xi^{\rho}\nabla_{\rho}\phi+\frac{1}{\gamma}\nabla_{\rho}\xi^{\rho} \right)-\frac{2}{\gamma}g_{\mu \nu}\nabla^{2}\left( \xi^{\rho}\nabla_{\rho}\phi+\frac{1}{\gamma}\nabla_{\rho}\xi^{\rho} \right)+\frac{\mu}{2\gamma}g_{\mu \nu}e^{\gamma \phi}\left( \xi^{\rho}\nabla_{\rho}\phi+\frac{1}{\gamma}\nabla_{\rho}\xi^{\rho} \right)
+\end{align}
+$$
+
+$$\tag{3.2}
+\begin{align}
+X_{\xi} & =\int \mathrm{d}^{2}x\left( \xi^{\mu}\nabla_{\mu}\phi+\frac{1}{\gamma}\nabla_{\mu}\xi^{\mu} \right) \frac{\delta}{\delta \phi}
+\end{align}
+$$
+
+$$\tag{3.12}
+\begin{align}
+T_{\mu \nu} & =-\nabla_{\mu}\phi \nabla_{\nu}\phi+\frac{1}{2}g_{\mu \nu}\nabla_{\rho}\phi \nabla^{\rho}\phi+\frac{2}{\gamma}\nabla_{\mu}\nabla_{\nu}\phi-\frac{2}{\gamma}g_{\mu \nu}\nabla^{2}\phi+\frac{\mu}{2\gamma^{2}}g_{\mu \nu}e^{\gamma \phi}
+\end{align}
+$$
+
+$$\tag{3.11}
+\begin{align}
+H_{\xi} &=\int_{M}\mathrm{d}x\sqrt{ \sigma } \frac{-1}{2\pi}\tau^{\mu}\xi^{\nu}T_{\mu \nu}
+\end{align}
+$$
