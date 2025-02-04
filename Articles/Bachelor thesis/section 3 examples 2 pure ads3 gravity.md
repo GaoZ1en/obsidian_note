@@ -246,7 +246,7 @@ g^{(0)}_{bc}D_{a}^{(0)}\xi^{(0)c}+g^{(0)}_{ac}D_{b}^{(0)}\xi^{(0)c}-g^{(0)}_{ab}
 \end{align}
 $$
 
-下面我们将渐进对称性(3.2.19)作用于拉氏量密度(3.2.2)，有
+为了讨论方便，我们假设 $\displaystyle{\xi^{(0)a}}$ 是位形不依赖的。下面我们将渐进对称性(3.2.19)作用于拉氏量密度(3.2.2)，有
 
 $$\tag{3.2.22}
 \begin{align}
@@ -707,15 +707,19 @@ $$
 
 $$\tag{3.2.65}
 \begin{align}
-\mathcal{L}_{X_{\xi}}(\psi \delta \phi) & =
+\mathcal{L}_{X_{\xi}}(\psi \delta \phi) & =X_{\xi}\cdot \delta(\psi \delta \phi)+\delta(\psi X_{\xi}\cdot \delta \phi) \\
+ & =X_{\xi}\cdot(\delta \psi \wedge \delta \phi)+\delta \psi(X_{\xi}\cdot \delta \phi)+\psi \delta(X_{\xi}\cdot \delta \phi) \\
+ & =(X_{\xi}\cdot \delta \psi)\delta \phi+\psi \delta(X_{\xi}\cdot \delta \phi) \\
+ & =\mathcal{L}_{\xi}\psi \delta \phi+\psi \delta(\xi^{\mu}\nabla_{\mu}\phi) \\
+ & =\mathcal{L}_{\xi}\psi \delta \phi+\psi \xi^{\mu}\nabla_{\mu}\delta \phi+\psi \delta \xi^{\mu}\nabla_{\mu}\phi \\
+ & =\mathcal{L}_{\xi}\psi \delta \phi+\psi \mathcal{L}_{\xi}\delta \phi+\psi X_{\delta \xi}\cdot \delta \phi \\
+ & =\mathcal{L}_{\xi}(\psi \delta \phi)+X_{\delta \xi}\cdot (\psi \delta \phi)
 \end{align}
 $$
 
+然后根据(2.31)，计算 $\displaystyle{X_{\xi}\cdot \Omega}$
 
-
-计算 $\displaystyle{X_{\xi}\cdot \Omega}$
-
-$$\tag{3.2.65}
+$$\tag{3.2.66}
 \begin{align}
 X_{\xi}\cdot \Omega &  =\int_{\Sigma}\mathcal{L}_{X_{\xi}}\Theta-\int_{\Sigma}\delta(X_{\xi}\cdot \Theta) \\
  & =\int_{\Sigma}\mathcal{L}_{\xi}\Theta+\int_{\Sigma}X_{\delta \xi}\cdot \Theta-\int_{\Sigma}\delta(X_{\xi}\cdot \Theta) \\
@@ -724,3 +728,24 @@ X_{\xi}\cdot \Omega &  =\int_{\Sigma}\mathcal{L}_{X_{\xi}}\Theta-\int_{\Sigma}\d
  & =\int_{\Sigma}\delta(\xi \cdot \mathbf{L}-X_{\xi}\cdot \Theta)-\int_{\Sigma}(\delta \xi \cdot \mathbf{L}-X_{\delta \xi}\cdot \Theta)+\int_{\partial \Sigma}\xi \cdot \Theta-\int_{\Sigma}\xi \cdot \mathbf{E}^{\mu \nu}\delta g_{\mu \nu}
 \end{align}
 $$
+
+其中第二步我们使用了(3.2.65)，并且这里我们没有假设 $\displaystyle{\xi^{\mu}}$ 是位形不依赖的。那么我们有
+
+$$\tag{3.2.67}
+\begin{align}
+\delta H_{\xi}|_{\tilde{\mathcal{P}}} & =-X_{\xi}\cdot \Omega|_{\tilde{\mathcal{P}}} \\
+ & =\lim_{ \varepsilon \to 0 } \delta \int_{\partial \Sigma} \frac{1}{16\pi G}\left[\xi^{(0)a}\left( g_{zz}-\frac{1}{z^{2}} \right)+2(\xi^{(0)a}g^{(0)bc}-\xi^{(0)c}g^{(0)ab})\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)-zg^{(0)ab}g_{zb}D_{c}^{(0)}\xi^{(0)c}\right. \\
+ & \left.\left.-z(\xi^{(0)a}g^{(0)bc}-\xi^{(0)c}g^{(0)ab})D_{b}^{(0)}g_{zc}+zg^{(0)bc}g_{zb}D_{c}^{(0)}\xi^{(0)a}-z^{2}\xi^{(0)a}g^{(0)bc}g_{zb}g_{zc}\right]\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}\right|_{z=\varepsilon} \\
+ & =\delta\left[\frac{1}{8\pi G}\int_{\partial \Sigma}g^{(0)ab}(K_{bc}-K\gamma_{bc}+\gamma_{bc})\xi^{(0)c}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}+\lim_{ \varepsilon \to 0 } \frac{\varepsilon}{16\pi G}\int_{\partial \Sigma}D_{b}^{(0)}(\xi^{(0)a}g^{(0)bc}g_{zc}-\xi^{(0)b}g^{(0)ac}g_{zc})\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}\right]
+\end{align}
+$$
+
+进而得到Noether荷
+
+$$\tag{3.2.68}
+\begin{align}
+H_{\xi} & = \frac{1}{8\pi G}\int_{\partial \Sigma} g^{(0)ab}(K_{bc}-K\gamma_{bc}+\gamma_{bc})\xi^{(0)c}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}
+\end{align}
+$$
+
+在推导过程中我们使用了(3.2.29)以及渐进行为(B....)。此结果与(3.2.33)一致。
