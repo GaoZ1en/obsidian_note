@@ -670,3 +670,57 @@ $$
 
 ### 传统的协变相空间方法
 
+现在我们使用传统的协变相空间方法给出Noether荷，实际上就是根据(2.31)来计算Noether荷。我们只考虑体内拉氏量
+
+$$\tag{3.2.61}
+\begin{align}
+\mathbf{L} & =\frac{1}{16\pi G}(R+2)\cdot \frac{1}{3!}\varepsilon_{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}}
+\end{align}
+$$
+
+取变分，得到
+
+$$\tag{3.2.62}
+\begin{align}
+\delta \mathbf{L} & =\mathbf{E}^{\mu \nu}\delta g_{\mu \nu}+\mathrm{d}\Theta
+\end{align}
+$$
+
+其中
+
+$$\tag{3.2.63}
+\begin{align}
+\mathbf{E}^{\mu \nu} &  =\frac{1}{16\pi G}\left( -R^{\mu \nu}+\frac{1}{2}Rg^{\mu \nu}+g^{\mu \nu} \right)\cdot \frac{1}{3!}\varepsilon_{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
+\Theta & =\frac{1}{16\pi G}(g^{\mu \rho}\nabla^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla^{\rho}\delta g_{\mu \nu})\cdot \frac{1}{2!}\varepsilon_{\rho \mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}}
+\end{align}
+$$
+
+定义辛形式
+
+$$\tag{3.2.64}
+\begin{align}
+\Omega & =\int_{\Sigma}\delta \Theta
+\end{align}
+$$
+
+我们首先考虑对于位形空间 $\displaystyle{\mathcal{C}}$ 中的标量 $\displaystyle{\phi,\psi\in \Omega^{0}(\mathcal{C})}$ 以及1-形式 $\displaystyle{\psi \delta \phi\in \Omega^{1}(\mathcal{C})}$，那么
+
+$$\tag{3.2.65}
+\begin{align}
+\mathcal{L}_{X_{\xi}}(\psi \delta \phi) & =
+\end{align}
+$$
+
+
+
+计算 $\displaystyle{X_{\xi}\cdot \Omega}$
+
+$$\tag{3.2.65}
+\begin{align}
+X_{\xi}\cdot \Omega &  =\int_{\Sigma}\mathcal{L}_{X_{\xi}}\Theta-\int_{\Sigma}\delta(X_{\xi}\cdot \Theta) \\
+ & =\int_{\Sigma}\mathcal{L}_{\xi}\Theta+\int_{\Sigma}X_{\delta \xi}\cdot \Theta-\int_{\Sigma}\delta(X_{\xi}\cdot \Theta) \\
+ & =\int_{\Sigma}\xi \cdot \mathrm{d}\Theta+\int_{\Sigma}\mathrm{d}(\xi \cdot \Theta)+\int_{\Sigma}X_{\delta \xi}\cdot \Theta-\int_{\Sigma}\delta(X_{\xi}\cdot \Theta) \\
+ & =\int_{\Sigma}\xi \cdot(\delta \mathbf{L}-\mathbf{E}^{\mu \nu}\delta g_{\mu \nu})+\int_{\partial \Sigma}\xi \cdot \Theta+\int_{\Sigma}(X_{\delta \xi}\cdot \Theta)-\int_{\Sigma}\delta(X_{\xi}\cdot \Theta) \\
+ & =\int_{\Sigma}\delta(\xi \cdot \mathbf{L}-X_{\xi}\cdot \Theta)-\int_{\Sigma}(\delta \xi \cdot \mathbf{L}-X_{\delta \xi}\cdot \Theta)+\int_{\partial \Sigma}\xi \cdot \Theta-\int_{\Sigma}\xi \cdot \mathbf{E}^{\mu \nu}\delta g_{\mu \nu}
+\end{align}
+$$
