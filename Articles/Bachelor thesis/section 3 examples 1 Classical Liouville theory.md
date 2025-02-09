@@ -226,3 +226,4 @@ $$\tag{3.22}
 \nabla_{\nu}\nabla^{\nu}\nabla_{\mu}\xi^{\mu}+\xi^{\mu}\nabla_{\mu}R+R\nabla_{\mu}\xi^{\mu} & =0
 \end{align}
 $$
+
