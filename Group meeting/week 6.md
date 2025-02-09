@@ -2,7 +2,7 @@
 
 三天写完毕业论文
 
-## Boyang Yu
+## Bo-yang Yu
 
 完全听不清
 
@@ -17,4 +17,12 @@
 5. 
 
 ## Kang Liu
+
+some nonsense
+
+## Xiao-Shuai Wang
+
+heat kernel method...
+
+## Zi-Qian Hu
 
