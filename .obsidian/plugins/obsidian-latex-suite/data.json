@@ -25,6 +25,6 @@
   "wordDelimiters": "., +-\\n\t:;!?\\/{}[]()=~$",
   "autofractionExcludedEnvs": "[\n\t\t[\"^{\", \"}\"],\n\t\t[\"\\\\pu{\", \"}\"]\n\t]",
   "matrixShortcutsEnvNames": "pmatrix, cases, align, bmatrix, Bmatrix, vmatrix, Vmatrix, array, matrix",
-  "autoEnlargeBracketsTriggers": "sum, int, frac, prod, bigcup, bigcap",
+  "autoEnlargeBracketsTriggers": "sum, int, frac, prod, bigcup, bigcap, lim",
   "forceMathLanguages": "math,tex"
 }

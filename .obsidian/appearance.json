@@ -8,5 +8,8 @@
   "baseFontSizeAction": true,
   "showViewHeader": true,
   "textFontFamily": "Comic Sans MS",
-  "showRibbon": false
+  "showRibbon": false,
+  "enabledCssSnippets": [
+    "theme"
+  ]
 }
