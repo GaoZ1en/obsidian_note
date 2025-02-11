@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/Bachelor thesis/section 3 examples 2 pure ads3 gravity.md",
+                "file": "periodic note/daily note/2025-02-12.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "section 3 examples 2 pure ads3 gravity"
+              "title": "2025-02-12"
             }
           }
         ]
@@ -96,27 +96,13 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.deepseek.com/a/chat/s/ab0c7aad-71ad-4372-8b4c-beedee7a0901",
+                "url": "https://chat.deepseek.com/a/chat/s/7558556d-0ee0-448b-bb1b-474587c2683e",
                 "title": "DeepSeek - 探索未至之境",
                 "mode": "webview"
               },
               "pinned": true,
               "icon": "globe-2",
               "title": "DeepSeek - 探索未至之境"
-            }
-          },
-          {
-            "id": "424ddd8550493538",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://haichatv3.ihep.ac.cn/c/6f317bde-10f6-409f-bb1d-67322a174d36",
-                "title": "HaiChat",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "HaiChat"
             }
           },
           {
@@ -127,12 +113,12 @@
               "type": "webviewer",
               "state": {
                 "url": "https://github.com/dzhng/deep-research",
-                "title": "dzhng/deep-research: An AI-powered research assistant that performs iterative, deep research on any topic by combining search engines, web scraping, and large language models. The goal of this repo is to provide the simplest implementation of a deep research agent - e.g. an agent that can refine its research direction overtime and deep dive into a topic.",
-                "mode": "webview"
+                "title": "github.com/dzhng/deep-research",
+                "mode": "error"
               },
               "pinned": true,
               "icon": "globe-2",
-              "title": "dzhng/deep-research: An AI-powered research assistant that performs iterative, deep research on any topic by combining search engines, web scraping, and large language models. The goal of this repo is to provide the simplest implementation of a deep research agent - e.g. an agent that can refine its research direction overtime and deep dive into a topic."
+              "title": "github.com/dzhng/deep-research"
             }
           }
         ],
@@ -140,7 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 565.5
+    "width": 743.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,8 +135,9 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3bcd9ff8231fb6bc",
+  "active": "b3787b3512ab8cd7",
   "lastOpenFiles": [
+    "periodic note/daily note/2025-02-12.md",
     "Articles/Bachelor thesis/section 3 examples 2 pure ads3 gravity.md",
     "Articles/Bachelor thesis/section 3 examples 1 Classical Liouville theory.md",
     "Articles/Bachelor thesis/section 2 covariant phase space formalism and Noether theorem.md",
