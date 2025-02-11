@@ -137,7 +137,7 @@ $$\tag{B.10}
  & +\frac{1}{2}z^{2}g^{(0)bc}\left( D_{a}^{(0)}\partial_{z}\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)-D_{c}^{(0)}\partial_{z}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right) \right)+\frac{3}{2}z^{3}g^{(0)bc}\left( \partial_{z}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)g_{zc}-\partial_{z}\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)g_{za} \right) \\
  & +\frac{1}{2}z^{4}g^{(0)bc}\left( \partial_{z}^{2}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)g_{zc}-\partial_{z}^{2}\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)g_{za} \right)-\frac{1}{2}z^{2}g^{(0)bc}(D_{b}^{(0)}D_{a}^{(0)}g_{zc}-D_{b}^{(0)}D_{c}^{(0)}g_{za})+z^{3}g^{(0)bc}g_{za}D_{b}^{(0)}g_{zc} \\
  & -\frac{1}{2}z^{3}g^{(0)bc}(D_{a}^{(0)}g_{zb}+D_{b}^{(0)}g_{za})g_{zc}+\frac{1}{2}z^{4}g^{(0)bc}(D_{a}^{(0)}\partial_{z}g_{zb}+D_{b}^{(0)}\partial_{z}g_{za})g_{zc}+z^{4}g^{(0)bc}g_{za}D_{b}^{(0)}\partial_{z}g_{zc}+z^{4}g^{(0)bc}g_{za}g_{zb}g_{zc} \\
- & \left.+z^{5}g^{(0)bc}g_{za}g_{zb}\partial_{z}g_{zc}+\mathcal{O}(z^{2})\right]
+ & \left.+z^{5}g^{(0)bc}g_{za}g_{zb}\partial_{z}g_{zc}+\mathcal{O}(z^{2})\right] \\
 \end{align}
 $$
 
@@ -177,6 +177,13 @@ $$\tag{B.13}
 $$
 
 诱导度规 $\displaystyle{\gamma_{\mu \nu}}$ 的行列式以及 $\displaystyle{\varepsilon^{(\Gamma_{z})}_{\mu \nu}}$ 
+
+$$\tag{.}
+\begin{align}
+\sqrt{ -\gamma } & =\frac{1}{z^{2}}\sqrt{ -g^{(0)} }\left[1+\frac{1}{2}z^{2}g^{(0)ab}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)+\mathcal{O}(z^{4})\right] \\
+\varepsilon^{(\Gamma_{z})}_{a_{0}a_{1}} & =\frac{1}{z^{2}}\left[ 1+\frac{1}{2}z^{2}g^{(0)ab}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)+\mathcal{O}(z^{4}) \right]\varepsilon^{(0)}_{a_{0}a_{1}}
+\end{align}
+$$
 
 进而可以得到关于 $\displaystyle{\gamma_{ab}}$ 的克氏符 $\displaystyle{\tilde{\Gamma}^{c}_{~ab}}$、Ricci张量 $\displaystyle{\tilde{R}_{ab}}$ 和Ricci标量 $\displaystyle{\tilde{R}}$ 的渐进行为
 

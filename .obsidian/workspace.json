@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/Bachelor thesis/section 2 covariant phase space formalism and Noether theorem.md",
+                "file": "Articles/Bachelor thesis/section 3 examples 2 pure ads3 gravity.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "section 2 covariant phase space formalism and Noether theorem"
+              "title": "section 3 examples 2 pure ads3 gravity"
             }
           }
         ]
@@ -138,6 +138,9 @@
   "active": "3bcd9ff8231fb6bc",
   "lastOpenFiles": [
     "Articles/Bachelor thesis/section 3 examples 1 Classical Liouville theory.md",
+    "Articles/Bachelor thesis/section 2 covariant phase space formalism and Noether theorem.md",
+    "Articles/Bachelor thesis/Appendix C finiteness of relevant quantities.md",
+    "Articles/Bachelor thesis/Appendix B asymptotic behavior.md",
     "Articles/Bachelor thesis/section 4 conclusion.md",
     "Home.md",
     "Group meeting/week 6.md",
