@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/Bachelor thesis/section 3 examples 1 Classical Liouville theory.md",
+                "file": "Articles/Bachelor thesis/section 3 examples 2 pure ads3 gravity.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "section 3 examples 1 Classical Liouville theory"
+              "title": "section 3 examples 2 pure ads3 gravity"
             }
           }
         ]
@@ -96,13 +96,27 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.deepseek.com/",
+                "url": "https://chat.deepseek.com/a/chat/s/ab0c7aad-71ad-4372-8b4c-beedee7a0901",
                 "title": "DeepSeek - 探索未至之境",
                 "mode": "webview"
               },
               "pinned": true,
               "icon": "globe-2",
               "title": "DeepSeek - 探索未至之境"
+            }
+          },
+          {
+            "id": "424ddd8550493538",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://haichatv3.ihep.ac.cn/c/6f317bde-10f6-409f-bb1d-67322a174d36",
+                "title": "HaiChat",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "HaiChat"
             }
           },
           {
@@ -113,20 +127,20 @@
               "type": "webviewer",
               "state": {
                 "url": "https://github.com/dzhng/deep-research",
-                "title": "dzhng/deep-research: My own open source implementation of OpenAI's new Deep Research agent. Get the same capability without paying $200. You can even tweak the behavior of the agent with adjustable breadth and depth. Run it for 5 min or 5 hours, it'll auto adjust.",
+                "title": "dzhng/deep-research: An AI-powered research assistant that performs iterative, deep research on any topic by combining search engines, web scraping, and large language models. The goal of this repo is to provide the simplest implementation of a deep research agent - e.g. an agent that can refine its research direction overtime and deep dive into a topic.",
                 "mode": "webview"
               },
               "pinned": true,
               "icon": "globe-2",
-              "title": "dzhng/deep-research: My own open source implementation of OpenAI's new Deep Research agent. Get the same capability without paying $200. You can even tweak the behavior of the agent with adjustable breadth and depth. Run it for 5 min or 5 hours, it'll auto adjust."
+              "title": "dzhng/deep-research: An AI-powered research assistant that performs iterative, deep research on any topic by combining search engines, web scraping, and large language models. The goal of this repo is to provide the simplest implementation of a deep research agent - e.g. an agent that can refine its research direction overtime and deep dive into a topic."
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 565.5,
-    "collapsed": true
+    "width": 565.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -137,9 +151,9 @@
   },
   "active": "3bcd9ff8231fb6bc",
   "lastOpenFiles": [
-    "Articles/Bachelor thesis/section 2 covariant phase space formalism and Noether theorem.md",
-    "Articles/Bachelor thesis/section 3 examples 1 Classical Liouville theory.md",
     "Articles/Bachelor thesis/section 3 examples 2 pure ads3 gravity.md",
+    "Articles/Bachelor thesis/section 3 examples 1 Classical Liouville theory.md",
+    "Articles/Bachelor thesis/section 2 covariant phase space formalism and Noether theorem.md",
     "Articles/Bachelor thesis/Appendix C finiteness of relevant quantities.md",
     "Articles/Bachelor thesis/Appendix B asymptotic behavior.md",
     "Articles/Bachelor thesis/section 4 conclusion.md",

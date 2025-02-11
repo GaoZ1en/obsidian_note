@@ -1,4 +1,4 @@
-### 理论的定义
+****### 理论的定义
 
 首先我们确定位形空间 $\displaystyle{\mathcal{C}}$。考虑具有拓扑 $\displaystyle{D_{2}\times \mathbb{R}}$ 的，只有渐进边界的系统。位形空间 $\displaystyle{\mathcal{C}}$ 即为满足渐进边界条件（下面将会给出）的所有位形。
 
