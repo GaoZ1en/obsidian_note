@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/Bachelor thesis/Appendix A spacelike ADM decomposition.md",
+                "file": "Articles/Bachelor thesis/section 1 introduction.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Appendix A spacelike ADM decomposition"
+              "title": "section 1 introduction"
             }
           }
         ]
@@ -138,13 +138,23 @@
   },
   "active": "3bcd9ff8231fb6bc",
   "lastOpenFiles": [
-    "Articles/Bachelor thesis/section 3 examples 2 pure ads3 gravity.md",
-    "periodic note/daily note/2025-02-12.md",
-    "Articles/Bachelor thesis/section 3 examples 1 Classical Liouville theory.md",
     "Articles/Bachelor thesis/section 2 covariant phase space formalism and Noether theorem.md",
+    "Articles/Bachelor thesis/section 1 introduction.md",
+    "Articles/Bachelor thesis/section 3 examples 1 Classical Liouville theory.md",
+    "Articles/Bachelor thesis/Appendix A spacelike ADM decomposition.md",
+    "Articles/Bachelor thesis/Acknowledgement.md",
+    "Articles/Bachelor thesis/Abstract.md",
+    "Articles/Bachelor thesis/README.md",
+    "Articles/Bachelor thesis/Reference.md",
+    "Articles/Bachelor thesis/proof of some conclusions.md",
+    "Articles/Bachelor thesis/section 4 conclusion.md",
+    "Articles/Bachelor thesis/section 3 examples 2 pure ads3 gravity.md",
+    "Articles/Bachelor thesis/terminology.md",
+    "Articles/Bachelor thesis/topics.md",
+    "periodic note/daily note/2025-02-13.md",
+    "periodic note/daily note/2025-02-12.md",
     "Articles/Bachelor thesis/Appendix C finiteness of relevant quantities.md",
     "Articles/Bachelor thesis/Appendix B asymptotic behavior.md",
-    "Articles/Bachelor thesis/section 4 conclusion.md",
     "Home.md",
     "Group meeting/week 6.md",
     "Group meeting/week 4.md",
