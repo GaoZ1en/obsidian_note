@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Group meeting/week 7.md",
+                "file": "periodic note/daily note/2025-02-16.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "week 7"
+              "title": "2025-02-16"
             }
           }
         ]
@@ -137,9 +137,11 @@
   },
   "active": "3f295cebe0fda132",
   "lastOpenFiles": [
+    "Group meeting/week 7.md",
+    "periodic note/daily note/2025-02-16.md",
+    "periodic note/daily note/2025-02-15.md~",
     "Articles/Topologically massive gravity/finiteness.md",
     "Attachments",
-    "Group meeting/week 7.md",
     "Attachments/Pasted image 20250214190351.png",
     "periodic note/weekly note/2025-W07.md",
     "Articles/Topologically massive gravity/finite spacetime region.md",
