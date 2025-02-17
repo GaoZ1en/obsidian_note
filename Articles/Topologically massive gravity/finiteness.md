@@ -93,8 +93,16 @@ $$
 
 the final result is
 
-$$\tag{.}
+G$$\tag{.}
 \begin{align}
 \mathbf{L}_{CS} & =
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\nabla_{a}\Gamma^{z}_{zz} & =\partial_{a}\Gamma^{z}_{zz}-\Gamma^{z}_{ab}\Gamma^{b}_{zz}+\Gamma^{z}_{za}\Gamma^{z}_{zz}+2\Gamma^{b}_{za}\Gamma^{z}_{zb} \\
+\nabla_{a}\Gamma^{z}_{zb} & =\partial_{a}\Gamma^{z}_{zb}-\Gamma^{z}_{ac}\Gamma^{c}_{zb}+\Gamma^{c}_{za}\Gamma^{z}_{bc}+\Gamma^{z}_{ab}\Gamma^{z}_{zz}+\Gamma^{c}_{ab}\Gamma^{z}_{zc} \\
+\nabla
 \end{align}
 $$
