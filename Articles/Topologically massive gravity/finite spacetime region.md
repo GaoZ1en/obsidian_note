@@ -38,6 +38,6 @@ $$\tag{.}
 \begin{align}
 \varepsilon^{\rho \sigma \lambda}R^{\mu}_{~\nu \rho \sigma}\delta \Gamma^{\nu}_{~\mu \lambda} & =\varepsilon^{\rho \sigma \lambda}R^{\mu}_{~\nu \rho \sigma}\cdot \frac{1}{2}g^{\nu \eta}(\nabla_{\mu}\delta g_{\eta \lambda}+\nabla_{\lambda}\delta g_{\mu \eta}-\nabla_{\eta}\delta g_{\mu \lambda}) \\
  & =\frac{1}{2}\nabla_{\mu}(\varepsilon^{\rho \sigma \lambda}R^{\mu}_{~\nu \rho \sigma}\delta g_{\eta \lambda})+\frac{1}{2}\nabla_{\lambda}(\varepsilon^{\rho \sigma \lambda}R^{\mu}_{~\nu \rho \sigma}\delta g_{\mu \eta})-\frac{1}{2}\nabla_{\eta}(\varepsilon^{\rho \sigma \lambda}R^{\mu}_{~\nu \rho \sigma}\delta g_{\mu \lambda}) \\
- & -\frac{1}{2}\varepsilon^{\rho \sigma \lambda}\nabla_{\mu}R^{\mu}_{\nu \rho \sigma}\delta g_{\eta \lambda}-\frac{1}{2}\varepsilon^{\rho \sigma \lambda}\nabla_{\lambda}R^{\mu}_{~\nu \rho \sigma}\delta g_{\mu \eta}+\frac{1}{2}\varepsilon^{\rho \sigma \lambda?}\nabla_{\eta}R^{\mu}_{~\nu \rho \sigma}\delta g_{\mu \lambda}
+ & -\frac{1}{2}\varepsilon^{\rho \sigma \lambda}\nabla_{\mu}R^{\mu}_{\nu \rho \sigma}\delta g_{\eta \lambda}-\frac{1}{2}\varepsilon^{\rho \sigma \lambda}\nabla_{\lambda}R^{\mu}_{~\nu \rho \sigma}\delta g_{\mu \eta}+\frac{1}{2}\varepsilon^{\rho \sigma \lambda}\nabla_{\eta}R^{\mu}_{~\nu \rho \sigma}\delta g_{\mu \lambda}
 \end{align}
 $$
