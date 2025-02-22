@@ -1,4 +1,4 @@
-in this file we will perform the same calculation on topological massive gravity.
+**in** this file we will perform the same calculation on topological massive gravity.
 
 ## action
 
@@ -24,20 +24,43 @@ $$\tag{1.2}
 \end{align}
 $$
 
-$$\tag{1.3}
+$$\tag{.}
 \begin{align}
-\delta S_{SC} & =\int_{M}\mathrm{Tr}\left(\delta \Gamma \wedge \mathrm{d}\Gamma+\Gamma \wedge \mathrm{d}\delta \Gamma+2\Gamma \wedge \Gamma \wedge \delta\Gamma\right) \\
- & =\int_{M}\mathrm{Tr}\left(\mathrm{d}(\Gamma \wedge \delta \Gamma)-\mathrm{d}\Gamma\wedge \delta \Gamma+\delta \Gamma \wedge \mathrm{d}\Gamma+2\Gamma \wedge \Gamma \wedge \delta \Gamma\right) \\
- & =\int_{\partial M}\mathrm{Tr}(\Gamma \wedge \delta \Gamma)+2\int_{M}\mathrm{Tr}(\delta \Gamma \wedge(\mathrm{d}\Gamma+\Gamma \wedge \Gamma)) \\
- & =\int_{\partial M}\mathrm{Tr}(\Gamma \wedge \delta \Gamma)-2\int_{M}\mathrm{Tr}(\Omega \wedge \delta \Gamma)
+S_{\mathrm{CS}} & =\int _{M}\left( \Gamma \wedge \mathrm{d}\Gamma+\frac{2}{3}\Gamma \wedge \Gamma \wedge \Gamma \right) \\
+ & =\int _{M}\left( \Gamma \wedge \Omega-\frac{1}{3}\Gamma \wedge \Gamma \wedge \Gamma \right) \\
+\delta S_{\mathrm{CS}} & =\int _{M}(\delta \Gamma \wedge \Omega+\Gamma \wedge \delta \Omega-\delta \Gamma \wedge \Gamma \wedge \Gamma) \\
+ & =\int _{M}(-\mathrm{d}(\Gamma \wedge \delta \Gamma)+2\delta \Gamma \wedge \Omega) 
 \end{align}
 $$
 
-$$\tag{1.4}
+where
+
+$$\tag{.}
 \begin{align}
-\int_{M}\mathrm{Tr}(\Omega \wedge \delta \Gamma) & =\int_{M}\Omega^{\mu}_{\nu}\wedge \delta \Gamma^{\nu}_{\mu} \\
- & =\int_{M} \frac{1}{2!}R^{\mu}_{~\nu \rho \sigma}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \delta \Gamma^{\nu}_{\mu \lambda}\mathrm{d}x^{\lambda} \\
- & =\int_{M}R^{\mu}_{~\nu \rho \sigma}\delta \Gamma^{\nu}_{\mu \lambda}\cdot \frac{1}{2!}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda}
+2\delta \Gamma \wedge \Omega & = \delta \Gamma ^{\mu}_{\nu \rho}R^{\nu}_{\mu \sigma \lambda}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} \\
+ & =\frac{1}{2}(\nabla _{\nu}\delta g_{\mu \rho}+\nabla _{\rho}\delta g_{\mu \nu}-\nabla _{\mu}\delta g_{\nu \rho})R^{\nu \mu}_{~~~~\sigma \lambda}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} \\ \\
+ & =\frac{1}{2}(\nabla _{\nu}(R^{\nu \mu}_{~~~~\sigma \lambda}\delta g_{\mu \rho})+\nabla _{\rho}(R^{\nu \mu}_{~~~~\sigma \lambda}\delta g_{\mu \nu})-\nabla _{\mu}(R^{\nu \mu}_{~~~~\sigma \lambda}\delta g_{\nu \rho}))\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} \\
+ & -\frac{1}{2}(\delta g_{\mu \rho}\nabla _{\nu}R^{\nu \mu}_{~~~~\sigma \lambda}+\delta g_{\mu \nu}\nabla _{\rho}R^{\nu \mu}_{~~~~\sigma \lambda}-\delta g_{\nu \rho}\nabla _{\mu}R^{\nu \mu}_{~~~~\sigma \lambda})\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} \\ \\
+ & =\nabla _{\nu}(R^{\nu \mu}_{~~~~\sigma \lambda}\delta g_{\mu \rho})\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda}+\delta g_{\nu \rho}\nabla _{\mu}R^{\nu \mu}_{~~~~\sigma \lambda}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{la}\ \\
+ & =\nabla _{\nu}(R^{\nu \mu}_{~~~~\sigma \lambda}\delta g_{\mu \rho}\varepsilon ^{\rho \sigma \lambda})\cdot \frac{1}{3!}\varepsilon _{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
+ & +C^{\mu \nu}\delta g_{\mu \nu}\cdot \frac{1}{3!}\varepsilon _{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}}
+\end{align}
+$$
+
+where
+
+$$\tag{.}
+\begin{align}
+C^{\mu \nu}  & = \varepsilon ^{\mu\sigma \lambda}\nabla _{\rho}R^{\nu \rho}_{~~~~\sigma \lambda} \\
+ & =\varepsilon ^{\mu \sigma \lambda}\nabla _{\sigma}\left( R^{\mu}_{\lambda}-\frac{1}{4}\delta ^{\mu}_{\lambda}R \right)
+\end{align}
+$$
+
+is the Cotton tensor. we have used that
+
+$$\tag{.}
+\begin{align}
+\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda}=\frac{1}{3!}\varepsilon ^{\rho \sigma \lambda}\varepsilon _{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}}
 \end{align}
 $$
 
@@ -48,64 +71,25 @@ $$\tag{1.5}
 \mathrm{d}\Omega=\Omega \wedge \Gamma-\Gamma \wedge \Omega
 \end{align}
 $$
-## vielbein and spin connection
 
-in order to define action of fermions in curved spacetime, we need to introduce vielbein and spin connection
+the symplectic potential is
 
-in quantum field theory the fermions lie in a four dimensional representation of the Lorentz group $\displaystyle{\mathrm{SO}(3,1)}$ give by the gamma matrices which span a Clifford algebra with the following anticommuting rules as
-
-$$\tag{?.1}
+$$\tag{.}
 \begin{align}
-\left\{\gamma^{a},\gamma^{b}\right\}=2\eta^{ab}
+\Theta _{\mathrm{gCS}} & =-\mathrm{Tr}(\Gamma \wedge \delta \Gamma)+\delta g_{\mu \rho}R^{\nu \mu}_{~~~~\sigma \lambda}\varepsilon ^{\rho \sigma \lambda}\cdot \frac{1}{2!}\varepsilon _{\nu \mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}} \\
+ & =-\mathrm{Tr}(\Gamma \wedge \delta \Gamma)+2\varepsilon ^{\rho \sigma \nu}S^{\mu}_{\sigma}\delta g_{\mu \nu}\cdot \frac{1}{2!}\varepsilon _{\rho \mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}} \\
+ & =\Gamma ^{\mu}_{\nu \lambda}\delta \Gamma ^{\lambda}_{\mu \sigma}\varepsilon ^{\rho \sigma \nu}\cdot \frac{1}{2!}\varepsilon _{\rho \mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}+2\varepsilon ^{\rho \sigma \nu}S^{\mu}_{\sigma}\delta g_{\mu \nu}\cdot \frac{1}{2!}\varepsilon _{\rho \mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}} \\
+ & =2\varepsilon ^{\rho \sigma \nu}\left( S^{\mu}_{\sigma}\delta g_{\mu \nu}+\frac{1}{2}\Gamma ^{\mu}_{\nu \lambda}\delta \Gamma ^{\lambda}_{\mu \sigma} \right)\cdot \frac{1}{2!}\varepsilon _{\rho \mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}
 \end{align}
 $$
 
-one defines the gamma matrices in the curved spacetime as
-
-$$\tag{?.2}
+$$\tag{.}
 \begin{align}
-\gamma^{\mu}(x) & =\gamma^{a}e^{\mu}_{a}
+R^{\nu \mu}_{~~~~\sigma \lambda} & =(\delta ^{\nu}_{\sigma}R^{\mu}_{\lambda}+\delta ^{\mu}_{\lambda}R^{\nu}_{\sigma}-\delta ^{\nu}_{\lambda}R^{\mu}_{\sigma}-\delta ^{\mu}_{\sigma}R^{\nu}_{\rho})-\frac{1}{2}R(\delta ^{\nu}_{\sigma}\delta ^{\mu}_{\lambda}-\delta ^{\mu}_{\sigma}\delta ^{\nu}_{\lambda})C \\
+\delta g_{\mu \rho}R^{\nu \mu}_{~~~~\sigma \lambda}\varepsilon ^{\rho \sigma \lambda} & =\delta g_{\mu \rho}\left((\delta ^{\nu}_{\sigma}R^{\mu}_{\lambda}+\delta ^{\mu}_{\lambda}R^{\nu}_{\sigma}-\delta ^{\nu}_{\lambda}R^{\mu}_{\sigma}-\delta ^{\mu}_{\sigma}R^{\nu}_{\rho})-\frac{1}{2}R(\delta ^{\nu}_{\sigma}\delta ^{\mu}_{\lambda}-\delta ^{\mu}_{\sigma}\delta ^{\nu}_{\lambda}) \right)\varepsilon ^{\rho \sigma \lambda} \\
+ & =2\varepsilon ^{\rho \nu \lambda}S^{\mu}_{\lambda}\delta g_{\mu \rho}\\
 \end{align}
 $$
 
-where $\displaystyle{\gamma^{\mu}}$ depend on the coordinates, $\displaystyle{\mu}$ is the index in the spacetime and $\displaystyle{a}$ is the index in the flat spacetime. $\displaystyle{e^{\mu}_{a}}$ are called vielbein/tetrad and satisfy the relation
+where $\displaystyle{S^{\mu}_{\lambda}=R^{\mu}_{\lambda}-\frac{1}{4}R\delta ^{\mu}_{\lambda}}$ is the Schouten tensor.
 
-$$\tag{?.3}
-\begin{align}
-g^{\mu \nu}=e^{\mu}_{a}e^{\nu}_{b}\eta^{ab}
-\end{align}
-$$
-
-and then $\displaystyle{\gamma^{\mu}}$ satisfy a generalized Clifford algebra with anticommuting relation
-
-$$\tag{?.4}
-\begin{align}
-\left\{\gamma^{\mu},\gamma^{\nu}\right\}=2g^{\mu \nu}
-\end{align}
-$$
-
-one requires further that the operations of parallel transport and projection on flat and curved spacetime indices commute, one arrives (just like the Christoffel symbol in the ordinary approach of general relativity)
-
-$$\tag{?.5}
-\begin{align}
-D_{\mu}e^{a}_{\nu}=\partial_{\mu}e^{a}_{\nu}-\Gamma^{\rho}_{\mu \nu}e^{a}_{\rho}-\omega^{a}_{\mu b}e^{b}_{\nu}=0
-\end{align}
-$$
-
-where $\displaystyle{\omega^{a}_{~\mu b}}$ is the spin connection
-
-$$\tag{?.6}
-\begin{align}
-\omega^{a~b}_{~\mu}=e^{a}_{\nu}\Gamma^{\nu}_{~\mu \sigma}e^{\sigma b}+e^{a}_{\nu}\partial_{\mu}e^{\nu b}
-\end{align}
-$$
-
-then the covariant derivative of a Dirac fermion in the curved spacetime is written as
-
-$$\tag{?.7}
-\begin{align}
-D_{\mu}\Psi=\partial_{\mu}\Psi-\frac{i}{4}\omega^{a~b}_{~\mu}\sigma_{ab}\Psi
-\end{align}
-$$
-
-where $\displaystyle{\sigma^{ab}=\frac{i}{2}[\gamma^{a},\gamma^{b}]}$. 
