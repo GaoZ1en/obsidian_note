@@ -135,3 +135,4 @@ $$\tag{.}
  & -\frac{1}{2}\varepsilon _{\gamma \kappa}^{~~~\lambda}R_{\alpha \lambda \beta \eta}\xi ^{\alpha}\nabla ^{\kappa}\Gamma ^{\beta \gamma \eta}-\frac{1}{2}\varepsilon _{\beta \eta \kappa}\nabla ^{\kappa}\Gamma _{\gamma \alpha}^{~~~\eta}\nabla ^{\gamma}\nabla ^{\beta}\xi ^{\alpha}
 \end{align}
 $$
+## 

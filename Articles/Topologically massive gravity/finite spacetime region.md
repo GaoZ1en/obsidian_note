@@ -41,3 +41,45 @@ $$\tag{.}
  & -\frac{1}{2}\varepsilon^{\rho \sigma \lambda}\nabla_{\mu}R^{\mu}_{\nu \rho \sigma}\delta g_{\eta \lambda}-\frac{1}{2}\varepsilon^{\rho \sigma \lambda}\nabla_{\lambda}R^{\mu}_{~\nu \rho \sigma}\delta g_{\mu \eta}+\frac{1}{2}\varepsilon^{\rho \sigma \lambda}\nabla_{\eta}R^{\mu}_{~\nu \rho \sigma}\delta g_{\mu \lambda}
 \end{align}
 $$
+
+## variation of symplectic potential
+
+in this section we will show that there exists a spacetime 1-form and configuration space 1-form  $\displaystyle{\mathbf{C}}$ that we have the following equation
+
+$$\tag{.}
+\begin{align}
+\delta \Theta|_{\Gamma _{z}} =\mathrm{d}(\delta \mathbf{C})
+\end{align}
+$$
+
+
+$$\tag{.}
+\begin{align}
+\Theta & = \frac{1}{16\pi G\mu}\varepsilon ^{\rho \sigma \nu}(S^{\mu}_{\sigma}\delta g_{\mu \nu}+\frac{1}{2}\Gamma ^{\mu}_{\nu \lambda}\delta \Gamma ^{\lambda}_{\mu \sigma})\cdot \frac{1}{2!}\varepsilon _{\rho \mu_0\mu_1}\mathrm{d} x^{\mu_0}\wedge \mathrm{d} x^{\mu_1}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\delta \Theta & =\frac{1}{16\pi G\mu}\left( \delta S^{\mu}_{\sigma}\wedge \delta g_{\mu \nu}+\frac{1}{2}\delta \Gamma ^{\mu}_{\nu \lambda}\wedge \delta \Gamma ^{\lambda}_{\mu \sigma} \right)\mathrm{d}x^{\sigma}\wedge dx^{\nu} \\
+ & =-\frac{1}{32\pi G\mu}\mathrm{Tr}(\delta \Gamma \wedge \delta \Gamma) \\
+ \Theta _{\mathrm{gCS}} & =-\mathrm{Tr}(\Gamma \wedge \delta \Gamma)+\delta g_{\mu \rho}R^{\nu \mu}_{~~~~\sigma \lambda}\varepsilon ^{\rho \sigma \lambda}\cdot \frac{1}{2!}\varepsilon _{\nu \mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}} \\
+\delta \Theta & =-\frac{1}{32\pi G}\mathrm{Tr}(\delta \Gamma \wedge \delta \Gamma)+\delta g_{\mu \rho}R^{\nu \mu}_{~~~~\sigma \lambda}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\Omega ^{\mu}_{\nu} & =\frac{1}{2!}R^{\mu}_{\nu \rho \sigma}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma} \\
+ & =\frac{1}{2!}\left( \delta ^{\mu}_{\rho}R_{\nu \sigma}+g_{\nu \sigma}R^{\mu}_{\rho}-\delta ^{\mu}_{\sigma}R_{\nu \rho}-g_{\nu \rho}R^{\mu}_{\sigma}-\frac{1}{2}R(\delta ^{\mu}_{\rho}g_{\nu \sigma}-\delta ^{\mu}_{\sigma}g_{\nu \rho}) \right)\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma} \\
+ & =(R_{\nu \rho}\mathrm{d}x^{\mu}\wedge \mathrm{d}x^{\rho}+g_{\nu \sigma}R^{\mu}_{\rho}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma})-\frac{1}{2}Rg_{\nu \rho}\mathrm{d}x^{\mu}\wedge \mathrm{d}x^{\rho} \\
+ & =S_{\nu \rho}\mathrm{d}x^{\mu}\wedge \mathrm{d}x^{\rho}+g_{\nu \sigma}S^{\mu}_{\rho}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\Omega ^{\mu \nu} & =S^{\nu}_{\rho}\mathrm{d}x^{\mu}\wedge dx^{\rho}-S^{\mu}_{\rho}\mathrm{d}x^{\nu}\wedge \mathrm{d}x^{\rho} \\
+ & =-2S^{[\mu}_{\rho}\mathrm{d}x^{\nu]}\wedge dx^{\rho}
+\end{align}
+$$
