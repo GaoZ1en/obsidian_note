@@ -93,3 +93,45 @@ $$
 
 where $\displaystyle{S^{\mu}_{\lambda}=R^{\mu}_{\lambda}-\frac{1}{4}R\delta ^{\mu}_{\lambda}}$ is the Schouten tensor.
 
+## diffeomorphism of the action
+
+$$\tag{.}
+\begin{align}
+\xi \cdot \Omega \wedge \Omega=0 \\
+\xi ^{\rho}R^{\mu}_{\nu\rho \sigma}\mathrm{d}x^{\sigma}\wedge \frac{1}{2!}R^{\nu}_{\lambda \alpha \beta}\mathrm{d}x^{\alpha}\wedge \mathrm{d}x^{\beta} & =\xi ^{\rho}R^{\mu}_{\nu \rho \sigma}R^{\nu}_{\lambda \alpha \beta}\varepsilon ^{\sigma \alpha \beta} \frac{1}{3!}\varepsilon _{\mu_{0}\mu_{1}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
+ & =\varepsilon ^{\sigma \alpha \beta}\xi ^{\rho}R^{\mu}_{\nu \rho \sigma}R^{\nu}_{\lambda \alpha \beta}\cdot \frac{1}{3!}\varepsilon _{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
+ & 
+\end{align}
+$$
+
+some characteristics class theory?
+
+$$\tag{.}
+\begin{align}
+R^{\mu \nu}_{~~~~\rho \sigma} & =(\delta ^{\mu}_{\rho}R^{\nu}_{\sigma}+\delta ^{\nu}_{\sigma}R^{\mu}_{\rho}-\delta ^{\mu}_{\sigma}R^{\nu}_{\rho}-\delta ^{\nu}_{\rho}R^{\mu}_{\sigma})-\frac{R}{2}(\delta ^{\mu}_{\rho}\delta ^{\nu}_{\sigma}-\delta ^{\mu}_{\sigma}\delta ^{\nu}_{\rho}) \\
+R^{\mu}_{~\nu \rho \sigma} & =(\delta ^{\mu}_{\rho}R_{\nu \sigma}+g_{\nu \sigma}R^{\mu}_{\rho}-\delta ^{\mu}_{\sigma}R_{\nu \rho}-g_{\nu \rho}R^{\mu}_{\sigma})-\frac{R}{2}(\delta ^{\mu}_{\rho}g_{\nu \sigma}-\delta ^{\mu}_{\sigma}g_{\nu \rho}) \\
+R^{\nu}_{\lambda \alpha \beta} & =(\delta ^{\nu}_{\alpha}R_{\lambda \beta}+g_{\lambda \beta}R^{\nu}_{\alpha}-\delta ^{\nu}_{\beta}R_{\lambda \alpha}-g_{\lambda \alpha}R^{\nu}_{\beta})-\frac{R}{2}(\delta ^{\nu}_{\alpha}g_{\lambda \beta}-\delta ^{\nu}_{\beta}g_{\lambda \alpha})
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+S & =\int _{M}\left( \Gamma \wedge \Omega-\frac{1}{3}\Gamma \wedge \Gamma \wedge \Gamma \right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+X_{\xi}\cdot \delta S & =\int _{M}\varepsilon ^{\rho \sigma \lambda}\left( (X_{\xi}\cdot \delta \Gamma ^{\mu}_{\nu \rho})\partial _{\sigma}\Gamma ^{\nu}_{\mu \lambda}+\frac{1}{2}\Gamma ^{\mu}_{\nu \rho}(X_{\xi}\cdot \delta R^{\nu}_{\mu \sigma \lambda}) \right)\cdot \frac{1}{3!}\varepsilon _{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+ & \varepsilon ^{\rho \sigma \lambda}\left( (X_{\xi}\cdot \delta \Gamma ^{\mu}_{\nu \rho})\partial _{\sigma}\Gamma ^{\nu}_{\mu \lambda}+\frac{1}{2}\Gamma ^{\mu}_{\nu \rho}(X_{\xi}\cdot \delta R^{\nu}_{\mu \sigma \lambda}) \right) \\
+= & \Gamma ^{\beta \gamma \eta}\Gamma _{\gamma}^{~\kappa \lambda}\varepsilon _{\eta \kappa}^{~~~~\mu}(R_{\alpha \beta \lambda u}-R_{\alpha \mu \beta \lambda})\xi ^{\alpha}-\frac{1}{2}\Gamma ^{\beta \gamma \eta}\varepsilon _{\gamma}^{~\kappa \lambda}\xi ^{\alpha}\nabla _{\alpha}R_{\beta \eta \kappa \lambda}+\frac{1}{2}\Gamma ^{\gamma~\eta}_{~\beta}\varepsilon _{\eta}^{~\kappa \lambda}R_{\alpha \gamma \kappa \lambda}\nabla^{\beta}\xi ^{\alpha} \\
+ & -\frac{1}{2}\Gamma _{\beta}^{~\gamma \eta}\varepsilon _{\gamma}^{~\kappa \lambda}R_{\alpha \eta \kappa \lambda}\nabla ^{\beta}\xi ^{\alpha}+\Gamma ^{\gamma \eta \kappa}\varepsilon _{\beta \eta}^{~~~\lambda}R_{\alpha \lambda \gamma \kappa}\nabla^{\beta}\xi ^{\alpha}-\Gamma _{\gamma}^{~\eta \kappa}\Gamma _{\eta \alpha}^{~~~\lambda}\varepsilon _{\beta \kappa \lambda}\nabla ^{\gamma}\nabla ^{\beta}\xi ^{\alpha} \\
+ & -\Gamma _{\beta}^{~\eta \kappa}\Gamma _{\eta \alpha}^{~~~\lambda}\varepsilon _{\gamma \kappa \lambda}\nabla ^{\gamma}\nabla ^{\beta}\xi ^{\alpha}-\frac{1}{2}\varepsilon _{\gamma \eta \kappa}\nabla ^{\kappa}\Gamma _{\beta \alpha}^{~~~\eta}\nabla ^{\gamma}\nabla ^{\beta}\xi ^{\alpha}+\frac{1}{2}\varepsilon _{\gamma \kappa}^{~~~\lambda}R_{\alpha \beta \eta \lambda}\xi ^{\alpha}\nabla ^{\kappa}\Gamma ^{\beta \gamma \eta} \\
+ & -\frac{1}{2}\varepsilon _{\gamma \kappa}^{~~~\lambda}R_{\alpha \lambda \beta \eta}\xi ^{\alpha}\nabla ^{\kappa}\Gamma ^{\beta \gamma \eta}-\frac{1}{2}\varepsilon _{\beta \eta \kappa}\nabla ^{\kappa}\Gamma _{\gamma \alpha}^{~~~\eta}\nabla ^{\gamma}\nabla ^{\beta}\xi ^{\alpha}
+\end{align}
+$$
