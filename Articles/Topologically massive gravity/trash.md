@@ -100,7 +100,8 @@ $$\tag{.}
 \xi \cdot \Omega \wedge \Omega=0 \\
 \xi ^{\rho}R^{\mu}_{\nu\rho \sigma}\mathrm{d}x^{\sigma}\wedge \frac{1}{2!}R^{\nu}_{\lambda \alpha \beta}\mathrm{d}x^{\alpha}\wedge \mathrm{d}x^{\beta} & =\xi ^{\rho}R^{\mu}_{\nu \rho \sigma}R^{\nu}_{\lambda \alpha \beta}\varepsilon ^{\sigma \alpha \beta} \frac{1}{3!}\varepsilon _{\mu_{0}\mu_{1}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
  & =\varepsilon ^{\sigma \alpha \beta}\xi ^{\rho}R^{\mu}_{\nu \rho \sigma}R^{\nu}_{\lambda \alpha \beta}\cdot \frac{1}{3!}\varepsilon _{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
- & 
+ & =\varepsilon ^{\sigma \alpha \beta}\xi ^{\rho}\left( \delta ^{\mu}_{\rho}R_{\nu \sigma}+g_{\nu \sigma}R^{\mu}_{\rho}-\delta ^{\mu}_{\sigma}R_{\nu \rho}-g_{\nu \rho}R^{\mu}_{\sigma}-\frac{R}{2}(\delta ^{\mu}_{\rho}g_{\nu \sigma}-\delta ^{\mu}_{\sigma}g_{\nu \rho}) \right)\left( \delta ^{\nu}_{\alpha}R_{\lambda \beta}+g_{\lambda \beta}R^{\nu}_{\alpha}-\delta ^{\nu}_{\beta}R_{\lambda \alpha}-g_{\lambda \alpha}R^{\nu}_{\beta}-\frac{R}{2}(\delta ^{\nu}_{\alpha}g_{\lambda \beta}-\delta ^{\nu}_{\beta}g_{\lambda \alpha}) \right)\cdot \frac{1}{3!}\varepsilon _{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
+ & =
 \end{align}
 $$
 
@@ -135,4 +136,28 @@ $$\tag{.}
  & -\frac{1}{2}\varepsilon _{\gamma \kappa}^{~~~\lambda}R_{\alpha \lambda \beta \eta}\xi ^{\alpha}\nabla ^{\kappa}\Gamma ^{\beta \gamma \eta}-\frac{1}{2}\varepsilon _{\beta \eta \kappa}\nabla ^{\kappa}\Gamma _{\gamma \alpha}^{~~~\eta}\nabla ^{\gamma}\nabla ^{\beta}\xi ^{\alpha}
 \end{align}
 $$
-## 
+## asymptotic behavior
+
+in this section we will compute the asymptotic behavior of $\displaystyle{\mathbf{E}^{\mu \nu}\delta g_{\mu \nu}}$ and $\displaystyle{\Theta}$
+
+$$\tag{.}
+\begin{align}
+\mathbf{E}^{\mu \nu}\delta g_{\mu \nu} & =\frac{1}{16\pi G\mu}C^{\mu \nu}\delta g_{\mu \nu}\cdot \frac{1}{3!}\varepsilon _{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge\mathrm{d}x^{\mu_{2}} \\
+32\pi G\mu \Theta & =-\Gamma ^{\mu}_{\nu \rho}\delta \Gamma ^{\nu}_{\mu \sigma}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}+\delta g_{\mu \rho}R^{\nu \mu}_{~~~~\sigma \lambda}\varepsilon ^{\rho \sigma \lambda}\cdot \frac{1}{2!}\varepsilon _{\nu \mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}} 
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+C^{\mu \nu} & =\varepsilon ^{\mu \rho \sigma}\nabla _{\rho}S^{\nu}_{\sigma} \\
+S^{\mu}_{\nu} & =R^{\mu}_{\nu}-\frac{1}{4}\delta ^{\mu}_{\nu}R
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+-\Gamma ^{\mu}_{z\nu}\delta \Gamma ^{\nu}_{a\mu}\mathrm{d}z\wedge \mathrm{d}x^{a} & =-\Gamma ^{z}_{zz}\delta \Gamma ^{z}_{za}\mathrm{d}z\wedge \mathrm{d}x^{a}-\Gamma ^{z}_{zb}\delta \Gamma ^{b}_{za}\mathrm{d}z\wedge \mathrm{d}x^{a}-\Gamma ^{b}_{zz}\delta \Gamma ^{z}_{za}\mathrm{d}z\wedge \mathrm{d}x^{a}-\Gamma ^{b}_{zc}\delta \Gamma ^{c}_{ab}\mathrm{d}z\wedge \mathrm{d}x^{a} \\
+-\Gamma ^{\mu}_{a\nu}\delta \Gamma ^{\nu}_{b\mu}\mathrm{d}x^{a}\wedge \mathrm{d}x^{b} & =-\Gamma ^{z}_{za}\delta \Gamma ^{z}_{zb}\mathrm{d}x^{a}\wedge \mathrm{d}x^{b}-\Gamma ^{z}_{ac}\delta \Gamma ^{c}_{zb}\mathrm{d}x^{a}\wedge \mathrm{d}x^{b}-\Gamma ^{c}_{za}\delta \Gamma ^{z}_{bc}\mathrm{d}x^{a}\wedge \mathrm{d}x^{b}-\Gamma ^{c}_{ad}\delta \Gamma ^{d}_{bc}\mathrm{d}x^{a}\wedge \mathrm{d}x^{b} \\
+
+\end{align}
+$$
