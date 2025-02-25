@@ -1,4 +1,4 @@
-**in** this file we will perform the same calculation on topological massive gravity.
+in this file we will perform the same calculation on topological massive gravity.
 
 ## action
 
@@ -157,7 +157,9 @@ $$
 $$\tag{.}
 \begin{align}
 -\Gamma ^{\mu}_{z\nu}\delta \Gamma ^{\nu}_{a\mu}\mathrm{d}z\wedge \mathrm{d}x^{a} & =-\Gamma ^{z}_{zz}\delta \Gamma ^{z}_{za}\mathrm{d}z\wedge \mathrm{d}x^{a}-\Gamma ^{z}_{zb}\delta \Gamma ^{b}_{za}\mathrm{d}z\wedge \mathrm{d}x^{a}-\Gamma ^{b}_{zz}\delta \Gamma ^{z}_{za}\mathrm{d}z\wedge \mathrm{d}x^{a}-\Gamma ^{b}_{zc}\delta \Gamma ^{c}_{ab}\mathrm{d}z\wedge \mathrm{d}x^{a} \\
+ & =g^{(0)bc}g_{zb}\delta g^{(0)}_{ac}+\frac{1}{2z}g^{(0)bc}D_{a}^{(0)}\delta g_{bc}^{(0)}+\mathcal{O}(z) \\
 -\Gamma ^{\mu}_{a\nu}\delta \Gamma ^{\nu}_{b\mu}\mathrm{d}x^{a}\wedge \mathrm{d}x^{b} & =-\Gamma ^{z}_{za}\delta \Gamma ^{z}_{zb}\mathrm{d}x^{a}\wedge \mathrm{d}x^{b}-\Gamma ^{z}_{ac}\delta \Gamma ^{c}_{zb}\mathrm{d}x^{a}\wedge \mathrm{d}x^{b}-\Gamma ^{c}_{za}\delta \Gamma ^{z}_{bc}\mathrm{d}x^{a}\wedge \mathrm{d}x^{b}-\Gamma ^{c}_{ad}\delta \Gamma ^{d}_{bc}\mathrm{d}x^{a}\wedge \mathrm{d}x^{b} \\
-
+ & =\mathcal{O}(z^0)
 \end{align}
 $$
+
