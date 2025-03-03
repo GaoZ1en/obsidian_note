@@ -1,0 +1,115 @@
+{
+  "main": {
+    "id": "bd92e17e514b2bd2",
+    "type": "split",
+    "children": [
+      {
+        "id": "8fa2080361e9cfbb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3bcd9ff8231fb6bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/Noether charge/Asymptotic behavior.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Asymptotic behavior"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4ea2b6d029fb28fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "5fd9d00ec14b2f12",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "57493beef54bdf2b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "be754014b7083e79",
+    "type": "split",
+    "children": [
+      {
+        "id": "e41278d8658f728b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d3d4ecdcd0b7b58b",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://chat.deepseek.com/",
+                "title": "DeepSeek - 探索未至之境",
+                "mode": "webview"
+              },
+              "pinned": true,
+              "icon": "globe-2",
+              "title": "DeepSeek - 探索未至之境"
+            }
+          },
+          {
+            "id": "2d946b2cc39e0110",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://github.com/",
+                "title": "data:text/plain,",
+                "mode": "blank"
+              },
+              "pinned": true,
+              "icon": "globe-2",
+              "title": "data:text/plain,"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 615.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "command-palette:打开命令面板": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "2d946b2cc39e0110",
+  "lastOpenFiles": [
+    "Articles/Noether charge/Asymptotic behavior.md"
+  ]
+}
