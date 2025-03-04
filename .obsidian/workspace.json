@@ -21,8 +21,51 @@
               "icon": "lucide-file",
               "title": "Asymptotic behavior"
             }
+          },
+          {
+            "id": "764eb98d46e65fec",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.bing.com/search?q=liangziduotililun%20wenxiaogang&qs=n&form=QBRE&sp=-1&lq=0&pq=liangziduotililun%20wenxiaogang&sc=3-29&sk=&cvid=1756DDE2FDA241E6A596319F6826985A&ghsh=0&ghacc=0&ghpl=",
+                "title": "liangziduotililun wenxiaogang - 搜索",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "liangziduotililun wenxiaogang - 搜索"
+            }
+          },
+          {
+            "id": "df8cf0dbee575b42",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.ustcif.org.cn/default.php/content/3116",
+                "title": "无冕之王文小刚摘凝聚态物理最高荣誉Buckley奖 - 中国科学技术大学新创校友基金会",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "无冕之王文小刚摘凝聚态物理最高荣誉Buckley奖 - 中国科学技术大学新创校友基金会"
+            }
+          },
+          {
+            "id": "17711decf394b5e0",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://onevpn.bnu.edu.cn/http/77726476706e69737468656265737421e3f8478830317a55300a87b9d65027206feb1c/downsofts/%E5%BE%AE%E8%BD%AF%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Windows%2010/Windows10_64%E4%BD%8D%E4%B8%AD%E6%96%87%E4%B8%93%E4%B8%9A%E7%89%88.iso",
+                "title": "data:text/plain,",
+                "mode": "blank"
+              },
+              "icon": "globe-2",
+              "title": "data:text/plain,"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -94,8 +137,7 @@
               "title": "github.com"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -108,8 +150,16 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2d946b2cc39e0110",
+  "active": "17711decf394b5e0",
   "lastOpenFiles": [
-    "Articles/Noether charge/Asymptotic behavior.md"
+    "Lecture/Hongbao Zhang/saturnday",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/quantum mechanics.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/classical mechanics.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/TODO.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics",
+    "Lecture/Hongbao Zhang",
+    "Articles/Noether charge/Asymptotic behavior.md",
+    "Lecture/未命名.md",
+    "Lecture/未命名"
   ]
 }
