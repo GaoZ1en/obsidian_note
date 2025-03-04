@@ -65,4 +65,7 @@ for var in list:
   code
 ```
 
-weishenme
+break and continue. break will jump out of the loop, and continue will jump to the next iteration.
+
+assert is a function that will raise an error if the expression is false.
+

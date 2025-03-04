@@ -84,7 +84,7 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.deepseek.com/",
+                "url": "https://chat.deepseek.com/a/chat/s/34e86946-e77d-47e0-8467-ca865b1813ea",
                 "title": "DeepSeek - 探索未至之境",
                 "mode": "webview"
               },
@@ -122,10 +122,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3bcd9ff8231fb6bc",
+  "active": "d3d4ecdcd0b7b58b",
   "lastOpenFiles": [
-    "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/python for physics/basic.md",
+    "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/python for physics/if, for and while.md",
     "Articles/Noether charge/Asymptotic behavior.md",
     "Lecture/2025 spring/python for general purpose",
