@@ -86,12 +86,12 @@
               "type": "webviewer",
               "state": {
                 "url": "https://github.com/",
-                "title": "data:text/plain,",
-                "mode": "blank"
+                "title": "github.com",
+                "mode": "error"
               },
               "pinned": true,
               "icon": "globe-2",
-              "title": "data:text/plain,"
+              "title": "github.com"
             }
           }
         ],
