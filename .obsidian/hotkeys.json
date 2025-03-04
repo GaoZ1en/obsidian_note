@@ -135,5 +135,15 @@
       "key": "Enter"
     }
   ],
-  "editor:open-link-in-new-window": []
+  "editor:open-link-in-new-window": [],
+  "webviewer:search": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "W"
+    }
+  ],
+  "workspace:close-window": []
 }
