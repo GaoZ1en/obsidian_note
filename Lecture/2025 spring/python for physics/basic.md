@@ -41,3 +41,28 @@ dictName.values()
 dictName.items()
 ```
 
+## if, for and while
+
+```python
+
+if exp1:
+	code1
+elif exp2:
+	code2
+...
+else:
+	codeN
+
+```
+
+```python
+while exp1:
+	code
+```
+
+```
+for var in list:
+  code
+```
+
+weishenme
