@@ -23,21 +23,35 @@
             }
           },
           {
-            "id": "f52fa4bc86520f9f",
+            "id": "1bd5ff3402994e07",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "http://1.92.75.62:16384/project/67c03cdb6ade99c92068ef3e",
-                "title": "Bachelor Resume Chinese 2 - Online LaTeX Editor Our Overleaf Instance",
+                "url": "https://cn.bing.com/search?q=chengtongwangpan",
+                "title": "chengtongwangpan - 搜索",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Bachelor Resume Chinese 2 - Online LaTeX Editor Our Overleaf Instance"
+              "title": "chengtongwangpan - 搜索"
+            }
+          },
+          {
+            "id": "249df8eff0b70f66",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://app.ctfile.com/#/account/settings",
+                "title": "城通网盘",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "城通网盘"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -123,7 +137,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "f52fa4bc86520f9f",
+  "active": "249df8eff0b70f66",
   "lastOpenFiles": [
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/python for physics/basic.md",
