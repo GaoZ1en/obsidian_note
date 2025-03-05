@@ -37,17 +37,13 @@
             }
           },
           {
-            "id": "766e3ccd95fbe39e",
+            "id": "56b416f486a2c6ff",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://www.bilibili.com/video/BV1DT421m7mD?spm_id_from=333.788.player.player_end_recommend_autoplay",
-                "title": "《 渔 猫 换 太 子 》_哔哩哔哩_bilibili",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "《 渔 猫 换 太 子 》_哔哩哔哩_bilibili"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ],
