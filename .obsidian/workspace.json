@@ -35,37 +35,8 @@
               "icon": "globe-2",
               "title": "phase space in nLab"
             }
-          },
-          {
-            "id": "7b39355daee16e9f",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://one.bnu.edu.cn/dcp/forward.action?path=/portal/portal&p=home",
-                "title": "数字京师 | Digitalized DCP",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "数字京师 | Digitalized DCP"
-            }
-          },
-          {
-            "id": "da180430d6bf21d3",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "http://zyfw.bnu.edu.cn/frame/homes.html?v=11281174122998428560828",
-                "title": "KINGOSOFT高校教学综合管理服务平台",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "KINGOSOFT高校教学综合管理服务平台"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -152,7 +123,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "da180430d6bf21d3",
+  "active": "6241e99098c7389f",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/TODO.md",

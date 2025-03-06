@@ -88,3 +88,20 @@ $$\tag{2.4}
 X_{\xi} & =\int \mathrm{d}t\delta _{\xi}q(t) \frac{\delta}{\delta q(t)}
 \end{align}
 $$
+
+act this symmetry on the Lagrangian
+
+$$\tag{2.5}
+\begin{align}
+X_{\xi}\cdot \delta \mathbf{L} & =\mathrm{d}\alpha _{\xi}+\beta _{\xi}
+\end{align}
+$$
+
+and then define the Noether current
+
+$$\tag{.}
+\begin{align}
+H_{\xi} & =X_{\xi}\cdot \Theta-\alpha _{\xi}
+\end{align}
+$$
+
