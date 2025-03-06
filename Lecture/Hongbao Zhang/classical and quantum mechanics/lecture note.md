@@ -45,7 +45,18 @@ then we return to the traditional Hamiltonian formalism.
 
 ## covariant phase space
 
-what does the "covariant" stand for???
+what does the "covariant" stand for? the "covariant" in "covariant phase space" is to indicate that it is obtained without any choices of foliation of spacetime by Cauchy surfaces.
 
-there are two routes to the construction of the covariant phase space.
+there are two routes to the construction of the covariant phase space, presymplectic structure and the Poisson structure(can not understand)
 
+### 0+1 dimensional systems
+
+spacetime, configuration, the set of configuration, target space.
+
+Lagrangian
+
+$$\tag{2.1}
+\begin{align}
+\mathbb{L}=
+\end{align}
+$$

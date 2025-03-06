@@ -28,16 +28,15 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://ncatlab.org/nlab/show/Dolbeault+complex",
-                "title": "Dolbeault complex in nLab",
+                "url": "https://ncatlab.org/nlab/show/phase+space",
+                "title": "phase space in nLab",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Dolbeault complex in nLab"
+              "title": "phase space in nLab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -124,7 +123,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4a822cbd54eed08d",
+  "active": "6241e99098c7389f",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/TODO.md",
