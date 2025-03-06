@@ -140,8 +140,9 @@ $$\tag{.}
 \begin{align}
 \delta \mathbf{L} & =\delta \Gamma \wedge \Omega+\Gamma \wedge \delta \Omega-\delta \Gamma \wedge \Gamma \wedge \Gamma \\
 X_{\xi}\cdot \delta \mathbf{L} & =(X_{\xi}\cdot \delta \Gamma)\wedge \mathrm{d}\Gamma+\Gamma \wedge \delta \Omega \\
- & =\left[ (X_{\xi}\cdot \delta \Gamma ^{\mu}_{\nu \rho})\partial _{\sigma}\Gamma ^{\nu}_{\mu \lambda}+\frac{1}{2}\Gamma ^{\mu}_{\nu \rho}(X_{\xi}\cdot \delta R^{\nu}_{\mu \sigma \lambda m})\right]\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} \\
- & =\left[\partial _{\sigma}\Gamma ^{\nu}_{\mu \lambda}(\nabla _{\nu}\nabla _{\rho}\xi ^{\mu}+R^{\mu}_{})\right]
+ & =\left[ (X_{\xi}\cdot \delta \Gamma ^{\mu}_{\nu \rho})\partial _{\sigma}\Gamma ^{\nu}_{\mu \lambda}+\frac{1}{2}\Gamma ^{\mu}_{\nu \rho}(X_{\xi}\cdot \delta R^{\nu}_{\mu \sigma \lambda})\right]\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} \\
+ & =\left[\partial _{\sigma}\Gamma ^{\nu}_{\mu \lambda}(\nabla _{\nu}\nabla _{\rho}\xi ^{\mu}+R^{\mu}_{\rho \eta \nu}\xi ^{\eta})+\Gamma ^{\mu}_{\nu \rho}\nabla _{\sigma}R^{\nu}_{\mu}+\frac{1}{2}\Gamma ^{\mu}_{\nu \rho}(+R^{\nu}_{\eta \sigma \lambda}\nabla _{\mu}\xi ^{\eta}-R^{\lambda}_{\mu \sigma \lambda}\nabla _{\lambda}\xi ^{\nu})\right]\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} \\
+ & =
 \end{align}
 $$
 ## asymptotic behavior
