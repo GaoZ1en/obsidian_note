@@ -21,23 +21,8 @@
               "icon": "lucide-file",
               "title": "trash"
             }
-          },
-          {
-            "id": "15e22b87c611e88d",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://app.ctfile.com/#/private/all",
-                "title": "城通网盘",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "城通网盘"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +108,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "15e22b87c611e88d",
+  "active": "4a822cbd54eed08d",
   "lastOpenFiles": [
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/日本文艺史.md",
