@@ -21,8 +21,23 @@
               "icon": "lucide-file",
               "title": "lecture note"
             }
+          },
+          {
+            "id": "4a822cbd54eed08d",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://ncatlab.org/nlab/show/Dolbeault+complex",
+                "title": "Dolbeault complex in nLab",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Dolbeault complex in nLab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,10 +124,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "6241e99098c7389f",
+  "active": "4a822cbd54eed08d",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/TODO.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/TODO.md",
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/python for physics/basic.md",
     "Lecture/2025 spring/python for physics/if, for and while.md",

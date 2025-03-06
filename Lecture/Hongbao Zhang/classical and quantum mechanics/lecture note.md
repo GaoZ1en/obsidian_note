@@ -1,9 +1,9 @@
 ### reference
 
-1. nlab
+1. nlab, phase space
 2. covariant phase space with boundaries
 3. 物理学家用微分几何
-## some symplectic geometry
+## some symplectic geometry, canonical phase space.
 
 symplectic manifold is a even-dimensional manifold $\displaystyle{M}$ with a symplectic structure $\displaystyle{\omega}$, which is closed and non-degenerate 2-form.
 
@@ -36,7 +36,16 @@ in symplectic geometry, there always exists a local coordinates that $\displayst
 $$\tag{1.4}
 \begin{align}
 \omega & =\mathrm{d}p_{i}\wedge dq^{i} \\
-X_{H} & =\left(\frac{\partial H}{\partial p_{i}} \frac{\partial}{\partial q^{i}}-\frac{\partial H}{\partial q^{i}} \frac{\partial}{\partial p_{i}}\right) \\
-\left\{f,g\right\} & =\left(\frac{\partial f}{\partial q^{i}} \frac{\partial g}{\partial p_{i}}-\frac{\partial f}{\partial p_{i}} \frac{\partial g}{\partial q^{i}}\right)
+X_{H} & =\frac{\partial H}{\partial q^{i}} \frac{\partial}{\partial p_{i}}-\frac{\partial H}{\partial p_{i}} \frac{\partial}{\partial q^{i}} \\
+\left\{f,g\right\} & =\frac{\partial f}{\partial q^{i}} \frac{\partial g}{\partial p_{i}}-\frac{\partial f}{\partial p_{i}} \frac{\partial g}{\partial q^{i}}
 \end{align}
 $$
+
+then we return to the traditional Hamiltonian formalism.
+
+## covariant phase space
+
+what does the "covariant" stand for???
+
+there are two routes to the construction of the covariant phase space.
+
