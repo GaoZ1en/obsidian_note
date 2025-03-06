@@ -132,14 +132,16 @@ $$\tag{.}
 X_{\xi}\cdot \delta \Gamma ^{\rho}_{\mu \nu} & =\frac{1}{2}(\nabla _{\mu}\nabla _{\nu}\xi ^{\rho}+\nabla _{\nu}\nabla _{\mu}\xi ^{\rho}+R^{\rho}_{\mu \sigma \nu}\xi ^{\sigma}+R^{\rho}_{\nu \sigma \mu}\xi ^{\sigma}) \\
  & =\nabla _{\mu}\nabla _{\nu}\xi ^{\rho}+R^{\rho}_{\nu \sigma \mu}\xi ^{\sigma} \\
 X_{\xi}\cdot \delta R^{\mu}_{\nu \rho \sigma} & =\nabla _{\rho}(X_{\xi}\cdot \delta \Gamma ^{\mu}_{\nu \sigma})-\nabla _{\sigma}(X_{\xi}\cdot \delta \Gamma ^{\mu}_{\rho \nu})=\xi ^{\lambda}\nabla _{\lambda}R^{\mu}_{\nu \rho \sigma}-R^{\lambda}_{\nu \rho \sigma}\nabla _{\lambda}\xi ^{\mu}+R^{\mu}_{\lambda \rho \sigma}\nabla _{\nu}\xi ^{\lambda}+R^{\mu}_{\nu \lambda \sigma}\nabla _{\rho}\xi ^{\lambda}+R^{\mu}_{\nu \rho \lambda}\nabla _{\sigma}\xi ^{\lambda} \\
- & =
+ & =\nabla _{\rho}(R^{\mu}_{\mu \lambda \sigma}\xi ^{\lambda})+\nabla _{\sigma}(R^{\mu}_{\mu \rho \lambda}\xi ^{\lambda})+R^{\mu}_{\lambda \rho \sigma}\nabla _{\nu}\xi ^{\lambda}-R^{\lambda}_{\nu \rho \sigma}\nabla _{\lambda}\xi ^{\mu}
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
 \delta \mathbf{L} & =\delta \Gamma \wedge \Omega+\Gamma \wedge \delta \Omega-\delta \Gamma \wedge \Gamma \wedge \Gamma \\
- & =
+X_{\xi}\cdot \delta \mathbf{L} & =(X_{\xi}\cdot \delta \Gamma)\wedge \mathrm{d}\Gamma+\Gamma \wedge \delta \Omega \\
+ & =\left[ (X_{\xi}\cdot \delta \Gamma ^{\mu}_{\nu \rho})\partial _{\sigma}\Gamma ^{\nu}_{\mu \lambda}+\frac{1}{2}\Gamma ^{\mu}_{\nu \rho}(X_{\xi}\cdot \delta R^{\nu}_{\mu \sigma \lambda m})\right]\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} \\
+ & =\left[\partial _{\sigma}\Gamma ^{\nu}_{\mu \lambda}(\nabla _{\nu}\nabla _{\rho}\xi ^{\mu}+R^{\mu}_{})\right]
 \end{align}
 $$
 ## asymptotic behavior
