@@ -35,23 +35,9 @@
               "icon": "globe-2",
               "title": "城通网盘"
             }
-          },
-          {
-            "id": "0201cdd7135c317a",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://arxiv.org/pdf/2312.10229",
-                "title": "2312.10229",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "2312.10229"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -137,7 +123,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "0201cdd7135c317a",
+  "active": "15e22b87c611e88d",
   "lastOpenFiles": [
     "Lecture/2025 spring/日本文艺史.md~",
     "Lecture/2025 spring/日本文艺史.md",
