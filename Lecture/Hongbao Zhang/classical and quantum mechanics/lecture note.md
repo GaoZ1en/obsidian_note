@@ -99,9 +99,18 @@ $$
 
 and then define the Noether current
 
-$$\tag{.}
+$$\tag{2.6}
 \begin{align}
 H_{\xi} & =X_{\xi}\cdot \Theta-\alpha _{\xi}
 \end{align}
 $$
 
+we can show that under the requirement of the Lagrangian is "covariant" under the symmetry, i.e.,
+
+$$\tag{2.7}
+\begin{align}
+X_{\xi}\cdot \delta \mathbf{L} & =\mathcal{L}_{\xi}\mathbf{L}=\mathrm{d}(\xi \cdot \mathbf{L})
+\end{align}
+$$
+
+???
