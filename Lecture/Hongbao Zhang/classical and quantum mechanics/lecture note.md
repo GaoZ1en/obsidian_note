@@ -57,6 +57,34 @@ Lagrangian
 
 $$\tag{2.1}
 \begin{align}
-\mathbb{L}=
+\mathbf{L} & =L[q(t)]\mathrm{d}t
+\end{align}
+$$
+
+take a variation
+
+$$\tag{2.2}
+\begin{align}
+\delta \mathbf{L}=\mathbf{E}\delta q+\mathrm{d}\Theta
+\end{align}
+$$
+
+how to understand variation? 
+
+where $\displaystyle{\mathbf{E}}$ is the Euler-Lagrange operator, and $\displaystyle{\Theta}$ is the presymplectic potential.
+
+the presymplectic form is
+
+$$\tag{2.3}
+\begin{align}
+\omega=\delta \Theta
+\end{align}
+$$
+
+symmetric transformation can be represented as vector in 
+
+$$\tag{2.4}
+\begin{align}
+X_{\xi} & =\int \mathrm{d}t\delta _{\xi}q(t) \frac{\delta}{\delta q(t)}
 \end{align}
 $$
