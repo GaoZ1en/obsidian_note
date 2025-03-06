@@ -131,7 +131,7 @@ $$\tag{.}
 \begin{align}
 X_{\xi}\cdot \delta \Gamma ^{\rho}_{\mu \nu} & =\frac{1}{2}(\nabla _{\mu}\nabla _{\nu}\xi ^{\rho}+\nabla _{\nu}\nabla _{\mu}\xi ^{\rho}+R^{\rho}_{\mu \sigma \nu}\xi ^{\sigma}+R^{\rho}_{\nu \sigma \mu}\xi ^{\sigma}) \\
  & =\nabla _{\mu}\nabla _{\nu}\xi ^{\rho}+R^{\rho}_{\nu \sigma \mu}\xi ^{\sigma} \\
-X_{\xi}\cdot \delta R^{\mu}_{\nu \rho \sigma} & =\nabla _{\rho}(X_{\xi}\cdot \delta \Gamma ^{\mu})=\xi ^{\lambda}\nabla _{\lambda}R^{\mu}_{\nu \rho \sigma}-R^{\lambda}_{\nu \rho \sigma}\nabla _{\lambda}\xi ^{\mu}+R^{\mu}_{\lambda \rho \sigma}\nabla _{\nu}\xi ^{\lambda}+R^{\mu}_{\nu \lambda \sigma}\nabla _{\rho}\xi ^{\lambda}+R^{\mu}_{\nu \rho \lambda}\nabla _{\sigma}\xi ^{\lambda} \\
+X_{\xi}\cdot \delta R^{\mu}_{\nu \rho \sigma} & =\nabla _{\rho}(X_{\xi}\cdot \delta \Gamma ^{\mu}_{\nu \sigma})-\nabla _{\sigma}(X_{\xi}\cdot \delta \Gamma ^{\mu}_{\rho \nu})=\xi ^{\lambda}\nabla _{\lambda}R^{\mu}_{\nu \rho \sigma}-R^{\lambda}_{\nu \rho \sigma}\nabla _{\lambda}\xi ^{\mu}+R^{\mu}_{\lambda \rho \sigma}\nabla _{\nu}\xi ^{\lambda}+R^{\mu}_{\nu \lambda \sigma}\nabla _{\rho}\xi ^{\lambda}+R^{\mu}_{\nu \rho \lambda}\nabla _{\sigma}\xi ^{\lambda} \\
  & =
 \end{align}
 $$
