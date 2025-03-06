@@ -28,26 +28,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://ncatlab.org/nlab/show/phase+space",
-                "title": "phase space in nLab",
+                "url": "https://ncatlab.org/nlab/search?query=groupoid",
+                "title": "Search results for \"groupoid\" in nLab",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "phase space in nLab"
-            }
-          },
-          {
-            "id": "8e122e00de24b749",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://home.ctfile.com/#item-pfiles/action-index",
-                "title": "城通网盘",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "城通网盘"
+              "title": "Search results for \"groupoid\" in nLab"
             }
           },
           {
@@ -65,7 +51,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
