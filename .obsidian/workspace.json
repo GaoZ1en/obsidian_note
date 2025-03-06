@@ -21,8 +21,51 @@
               "icon": "lucide-file",
               "title": "trash"
             }
+          },
+          {
+            "id": "a0b39ca8413ff0e5",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://arch.icekylin.online/guide/rookie/desktop-env-and-app",
+                "title": "桌面环境与常用应用安装 | archlinux 简明指南",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "桌面环境与常用应用安装 | archlinux 简明指南"
+            }
+          },
+          {
+            "id": "88fe4bf8901737b9",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://cn.bing.com/search?q=dwm%20fcitx5",
+                "title": "dwm fcitx5 - 搜索",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "dwm fcitx5 - 搜索"
+            }
+          },
+          {
+            "id": "a5ef396897c7a134",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://zhuanlan.zhihu.com/p/611572984",
+                "title": "Arch Linux dwm安装fcitx5输入法 - 知乎",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Arch Linux dwm安装fcitx5输入法 - 知乎"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -108,7 +151,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4a822cbd54eed08d",
+  "active": "a5ef396897c7a134",
   "lastOpenFiles": [
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/日本文艺史.md",
