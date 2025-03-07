@@ -21,8 +21,65 @@
               "icon": "lucide-file",
               "title": "trash"
             }
+          },
+          {
+            "id": "3bef544416c68611",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.bing.com/search?q=dunst",
+                "title": "dunst - 搜索",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "dunst - 搜索"
+            }
+          },
+          {
+            "id": "d7f64064b9a648c7",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.bing.com/search?q=dunst+notification&FORM=R5FD6",
+                "title": "dunst notification - 搜索",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "dunst notification - 搜索"
+            }
+          },
+          {
+            "id": "aa2da065f3244a85",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://cn.linux-console.net/?p=11778",
+                "title": "通过 Dunst 在您的 WM 中获得更好的通知",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "通过 Dunst 在您的 WM 中获得更好的通知"
+            }
+          },
+          {
+            "id": "420b0b6964e0880c",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://wiki.archlinuxcn.org/wiki/Dunst",
+                "title": "Dunst - Arch Linux 中文维基",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Dunst - Arch Linux 中文维基"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -108,7 +165,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "fb74400bafe3aa3c",
+  "active": "d7f64064b9a648c7",
   "lastOpenFiles": [
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/python for general purpose/fstring.md",
