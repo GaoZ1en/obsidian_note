@@ -40,14 +40,15 @@
             "id": "d7f64064b9a648c7",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "markdown",
               "state": {
-                "url": "https://www.bing.com/search?q=dunst+notification&FORM=R5FD6",
-                "title": "dunst notification - 搜索",
-                "mode": "webview"
+                "file": "Articles/Topologically massive gravity/trash.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "globe-2",
-              "title": "dunst notification - 搜索"
+              "icon": "lucide-file",
+              "title": "trash"
             }
           },
           {
@@ -167,6 +168,7 @@
   },
   "active": "d7f64064b9a648c7",
   "lastOpenFiles": [
+    "Articles/Topologically massive gravity/Maxwell-Chern-Simons theory.md",
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/python for general purpose/fstring.md",
     "Lecture/2025 spring/python for general purpose/venv.md",
