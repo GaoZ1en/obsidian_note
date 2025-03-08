@@ -6,3 +6,4 @@ effective field theory
 
 it is impossible to get a TOE. EFT is the only way(?)
 
+UV-IR duality???

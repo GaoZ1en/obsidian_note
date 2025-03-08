@@ -178,5 +178,19 @@ H & = X\cdot \Theta-\alpha \\
 \end{align}
 $$
 
-have got the usual result.
+have got the usual result. suppose the potential $\displaystyle{V(x)}$ only depend on $\displaystyle{|x|}$, then consider the rotation transformation
 
+$$\tag{2.13}
+\begin{align}
+X_{ij} & =\int \mathrm{d}t\theta _{ij}x^{j}(t) \frac{\delta}{\delta x^{i}(t)}
+\end{align}
+$$
+
+where $\displaystyle{\theta _{ij}}$ is a antisymmetric parameter. act this to the action, we have
+
+$$\tag{2.14}
+\begin{align}
+X_{ij}\cdot \delta S & =\int \mathrm{d}t'\theta _{ij}x^{j}(t') \frac{\delta}{\delta x^{i}(t')}\cdot\int ^{t_{f}}_{t_{i}}\left( m\dot{x}^{k}(t)\delta \dot{x}^{k}(t)-\frac{\partial V}{\partial x^{k}}\delta x^{k}(t) \right) \\
+ & =
+\end{align}
+$$
