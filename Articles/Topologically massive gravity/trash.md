@@ -204,8 +204,8 @@ $$
 
 $$\tag{.}
 \begin{align}
-X_{\xi}\cdot \delta \mathbf{L} & =\mathrm{d}(\xi \cdot \mathbf{L}) \\
-(X_{\xi}\cdot \ell+\xi \cdot \mathbf{L})|_{\Gamma _{z}} & =\mathrm{d}\mu _{\xi}+\nu _{\xi}
+X_{\xi}\cdot \delta \mathbf{L} & =\mathrm{d}A \\
+(X_{\xi}\cdot \delta \ell+A)|_{\Gamma _{z}} & =\mathrm{d}\mu _{\xi}+\nu _{\xi}
 \end{align}
 $$
 

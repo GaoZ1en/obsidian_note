@@ -2,7 +2,7 @@
 
 1. nlab, phase space
 2. covariant phase space with boundaries
-3. 物理学家用微分几何
+3. the following paper, not published
 ## some symplectic geometry, canonical phase space.
 
 symplectic manifold is a even-dimensional manifold $\displaystyle{M}$ with a symplectic structure $\displaystyle{\omega}$, which is closed and non-degenerate 2-form.
@@ -97,6 +97,14 @@ X_{\xi}\cdot \delta \mathbf{L} & =\mathrm{d}\alpha _{\xi}+\beta _{\xi}
 \end{align}
 $$
 
+here we do not assume that the Lagrangian is covariant, i.e., we have
+
+$$\tag{2.6}
+\begin{align}
+X_{\xi}\cdot \delta \mathbf{L} & =\mathrm{d}(\xi \cdot \mathbf{L})
+\end{align}
+$$
+
 and then define the Noether current
 
 $$\tag{2.6}
@@ -105,12 +113,18 @@ H_{\xi} & =X_{\xi}\cdot \Theta-\alpha _{\xi}
 \end{align}
 $$
 
-we can show that under the requirement of the Lagrangian is "covariant" under the symmetry, i.e.,
+we can see that (2.5) and (2.6) are some generalization of $\displaystyle{H_{\xi}=X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L}}$.
+
+then we can show that the Noether current satisfies the Noether theorem
+
+1. $\displaystyle{\frac{\mathrm{d}}{\mathrm{d}t}H_{\xi}\Big|_{\tilde{\mathcal{P}}}=\beta _{\xi}}$
+2. $\displaystyle{X_{\xi}\cdot \delta E}$
+#### example 1: particle with potential
+
+consider the action
 
 $$\tag{2.7}
 \begin{align}
-X_{\xi}\cdot \delta \mathbf{L} & =\mathcal{L}_{\xi}\mathbf{L}=\mathrm{d}(\xi \cdot \mathbf{L})
+
 \end{align}
 $$
-
-???
