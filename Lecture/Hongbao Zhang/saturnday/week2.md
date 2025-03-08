@@ -54,5 +54,5 @@ in qft, the entanglement entropy between inside and outside in vaccum state dive
 
 gravity play a very important role in this.
 
-小心老外（笑）
+小心老外
 
