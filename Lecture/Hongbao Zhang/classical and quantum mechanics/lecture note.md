@@ -118,12 +118,41 @@ we can see that (2.5) and (2.6) are some generalization of $\displaystyle{H_{\xi
 then we can show that the Noether current satisfies the Noether theorem
 
 1. $\displaystyle{\frac{\mathrm{d}}{\mathrm{d}t}H_{\xi}\Big|_{\tilde{\mathcal{P}}}=\beta _{\xi}}$
-2. $\displaystyle{X_{\xi}\cdot \delta E}$
+2. $\displaystyle{X_{\xi}\cdot \delta E|_{\tilde{\mathcal{P}}}=0}$
+3. $\displaystyle{X_{\xi}\cdot \omega|_{\tilde{\mathcal{P}}}=-\delta H_{\xi}|_{\tilde{\mathcal{P}}}}$
+
+here we give the prove...
 #### example 1: particle with potential
 
 consider the action
 
 $$\tag{2.7}
+\begin{align}
+S=\int ^{t_{f}}_{t_{i}}\left( \frac{1}{2}m\dot{x}^{2}-V(x) \right)\mathrm{d}t=\int ^{t_{f}}_{t_{i}}\mathbf{L}[x(t);t]
+\end{align}
+$$
+
+make a variation
+
+$$\tag{2.8}
+\begin{align}
+\delta S & =\int ^{t_{f}}_{t_{i}}\left(-m\ddot{x}-\frac{\partial V}{\partial x}\right)\delta t\delta x+m\dot{x}\delta x|^{t_{f}}_{t_{i}}
+\end{align}
+$$
+
+in some articles, expecially in mathematical articles, one write down $\displaystyle{\{\mathrm{d},\delta\}=0}$, and we now have $\displaystyle{[\mathrm{d},\delta]=0}$. I think this is because they take integration-by-part into consideration, and change the definition of $\displaystyle{\mathrm{d}}$
+
+$$\tag{2.9}
+\begin{align}
+\text{waiting to be completed}
+\end{align}
+$$
+
+what is a symmetry?
+
+consider the following symmetry transformation
+
+$$\tag{2.10}
 \begin{align}
 
 \end{align}
