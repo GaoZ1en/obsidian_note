@@ -154,6 +154,29 @@ consider the following symmetry transformation
 
 $$\tag{2.10}
 \begin{align}
-
+X=\int \mathrm{d}t \dot{x}(t) \frac{\delta}{\delta x(t)}
 \end{align}
 $$
+
+act this symmetry on the action, we have
+
+$$\tag{2.11}
+\begin{align}
+X\cdot \delta S & =\int \mathrm{d}t'\dot{x}(t') \frac{\delta}{\delta x(t')}\cdot \int ^{t_{f}}_{t_{i}}\left( m\dot{x}\delta \dot{x}(t)-\frac{\partial V}{\partial x}\delta x(t) \right)\mathrm{d}t \\
+ & =\int ^{t_{f}}_{t_{i}}\mathrm{d}t\int \mathrm{d}t'\delta(t-t')\left( m\dot{x}\ddot{x}(t')-\frac{\partial V}{\partial x}\dot{x}(t') \right) \\
+ & =\int ^{t_{f}}_{t_{i}} \frac{\mathrm{d}}{\mathrm{d}t}\left( \frac{1}{2}m \dot{x}^{2}-V \right)\mathrm{d}t=\left( \frac{1}{2}m\dot{x}^{2}-V \right)\Big|^{t_{f}}_{t_{i}}=\alpha|^{t_{f}}_{t_{i}}
+\end{align}
+$$
+
+then
+
+$$\tag{2.12}
+\begin{align}
+H & = X\cdot \Theta-\alpha \\
+ & = \int \mathrm{d}t'\dot{x}(t') \frac{\delta}{\delta x(t')}\cdot m\dot{x}\delta x(t)-\left( \frac{1}{2}m\dot{x}^{2}-V \right) \\
+ & =\frac{1}{2}m\dot{x}^{2}+V(x)
+\end{align}
+$$
+
+have got the usual result.
+
