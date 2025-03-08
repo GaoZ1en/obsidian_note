@@ -37,8 +37,7 @@
               "title": "lecture note"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -124,10 +123,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "acf2b85ec1ab7f25",
+  "active": "cbed33ed108f2e63",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/saturnday/week2.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
+    "Lecture/Hongbao Zhang/saturnday/week2.md",
     "未命名.md",
     "Articles/Topologically massive gravity/trash.md",
     "Articles/Topologically massive gravity/Maxwell-Chern-Simons theory.md",

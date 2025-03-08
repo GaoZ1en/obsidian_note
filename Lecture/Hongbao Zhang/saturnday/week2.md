@@ -7,3 +7,11 @@ effective field theory
 it is impossible to get a TOE. EFT is the only way(?)
 
 UV-IR duality???
+
+prove that
+
+$$\tag{1.1}
+\begin{align}
+S_{\text{vn}}leqslant
+\end{align}
+$$
