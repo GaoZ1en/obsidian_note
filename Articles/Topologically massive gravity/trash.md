@@ -143,23 +143,17 @@ X_{\xi}\cdot \delta \mathbf{L} & =(X_{\xi}\cdot \delta \Gamma)\wedge \mathrm{d}\
  & =\left[ (X_{\xi}\cdot \delta \Gamma ^{\mu}_{\nu \rho})\partial _{\sigma}\Gamma ^{\nu}_{\mu \lambda}+\frac{1}{2}\Gamma ^{\mu}_{\nu \rho}(X_{\xi}\cdot \delta R^{\nu}_{\mu \sigma \lambda})\right]\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} \\
  & =\left[\partial _{\sigma}\Gamma ^{\nu}_{\mu \lambda}(\nabla _{\nu}\nabla _{\rho}\xi ^{\mu}+R^{\mu}_{\rho \eta \nu}\xi ^{\eta})+\Gamma ^{\mu}_{\nu \rho}\nabla _{\sigma}(R^{\nu}_{\mu \eta \lambda}\xi ^{\eta})+\frac{1}{2}\Gamma ^{\mu}_{\nu \rho}(R^{\nu}_{\eta \sigma \lambda}\nabla _{\mu}\xi ^{\eta}-R^{\lambda}_{\mu \sigma \lambda}\nabla _{\lambda}\xi ^{\nu})\right]\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} \\
  & =[\partial _{\rho}([\partial _{\sigma}\Gamma ^{\mu}_{\nu \lambda}\nabla _{\mu}\xi ^{\sigma}-\Gamma ^{\mu}_{\nu \sigma}R^{\nu}_{\mu \eta \lambda}\xi ^{\eta})+\xi ^{\eta}R^{\mu}_{\nu \eta \rho}R^{\nu}_{\mu \sigma \lambda}]\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} \\
- & =\mathrm{d}[(\partial _{\rho}\Gamma ^{\mu}_{\nu \sigma}\nabla _{\mu}\xi ^{\nu}+\Gamma ^{\mu}_{\nu \rho}R^{\nu}_{\mu \sigma \lambda}\xi ^{\lambda})\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}]
+ & =\mathrm{d}[(\partial _{\rho}\Gamma ^{\mu}_{\nu \sigma}\nabla _{\mu}\xi ^{\nu}+\Gamma ^{\mu}_{\nu \rho}R^{\nu}_{\mu \sigma \lambda}\xi ^{\lambda})\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}] \\
+ & =\mathrm{d}\left[ \left( \frac{1}{2}R^{\mu}_{\nu \rho \sigma}\nabla _{\mu}\xi ^{\nu} +\Gamma ^{\mu}_{\nu \rho}\Gamma ^{\nu}_{\lambda \sigma}\nabla _{\mu}\xi ^{\lambda}-R^{\mu}_{\nu \rho \eta}\Gamma ^{\nu}_{\mu \sigma}\xi ^{\eta}\right)\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma} \right]
 \end{align}
 $$
 
-here we use $\displaystyle{\xi \cdot \mathrm{Tr}(\Omega \wedge \Omega)=0}$
+here we use $\displaystyle{\xi \cdot \mathrm{Tr}(\Omega \wedge \Omega)=0}$, and
 
 $$\tag{.}
 \begin{align}
-X_{\xi}\cdot \delta \mathbf{L} & =\mathrm{d}\mathrm{Tr}(\Gamma \wedge (\xi \cdot \Omega)) \\
 \partial _{\sigma}\Gamma ^{\mu}_{\nu \lambda}\nabla _{\mu}\xi ^{\sigma}\mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} & =\frac{1}{2}(\partial _{\rho}\Gamma ^{\mu}_{\nu \sigma}-\partial _{\sigma}\Gamma ^{\mu}_{\nu \rho})\nabla _{\mu}\xi ^{\nu}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma} \\
- & =\frac{1}{2}(\partial _{\rho}\Gamma ^{\mu}_{\nu \sigma}-\partial _{\sigma}\Gamma ^{\mu}_{\nu \rho}+\Gamma ^{\mu}_{\rho \lambda}\Gamma ^{\lambda}_{\nu \sigma}-\Gamma ^{\mu}_{\sigma \lambda}\Gamma ^{\lambda}_{\nu \rho})
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-R^{\mu}_{\nu \rho \sigma} & =\partial _{\rho}\Gamma ^{\mu}_{\nu \sigma}-\partial _{\sigma}\Gamma ^{\mu}_{\nu \rho}+\Gamma ^{\mu}_{\rho \lambda}\Gamma ^{\lambda}_{\nu \sigma}-\Gamma ^{\mu}_{\sigma \lambda}\Gamma ^{\lambda}_{\nu \rho}
+ & =\frac{1}{2}R^{\mu}_{\nu \rho \sigma}\nabla _{\mu}\xi ^{\nu}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}-\Gamma ^{\mu}_{\rho \lambda}\Gamma ^{\nu}_{\mu\sigma}\nabla _{\nu}\xi ^{\lambda}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}
 \end{align}
 $$
 
@@ -190,5 +184,28 @@ $$\tag{.}
 \end{align}
 $$
 
-possible boundary term
+then we have
+
+$$\tag{.}
+\begin{align}
+32\pi G\mu\Theta _{\mathrm{gCS}}|_{\Gamma _{z}} & =[-zg^{(0)}_{ac}\Gamma ^{(0)c}_{bd}g^{(0)de}\delta g_{ze}+\mathcal{O}(z^{2})]\mathrm{d}x^{a}\wedge \mathrm{d}x^{b}
+\end{align}
+$$
+
+## boundary term
+
+in order to cancel the divergence of gravitational Chern-Simons term, we introduce the following counterterm.
+
+$$\tag{.}
+\begin{align}
+\ell _{\mathrm{gCS}} & =\frac{1}{32\pi G\mu}(-z\log zD_{a}g_{zb}+z\gamma _{ac}\tilde{\Gamma}^{c}_{bd}\gamma ^{de}g_{ze})\mathrm{d}x^{a}\wedge \mathrm{d}x^{b}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+X_{\xi}\cdot \delta \mathbf{L} & =\mathrm{d}(\xi \cdot \mathbf{L}) \\
+(X_{\xi}\cdot \ell+\xi \cdot \mathbf{L})|_{\Gamma _{z}} & =\mathrm{d}\mu _{\xi}+\nu _{\xi}
+\end{align}
+$$
 
