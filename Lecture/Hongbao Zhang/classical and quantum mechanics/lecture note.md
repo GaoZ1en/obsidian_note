@@ -182,3 +182,4 @@ have got the usual result. suppose the potential $\displaystyle{V(x)}$ only depe
 
 I can not gives some natural example for $\displaystyle{\beta _{\xi}}$...
 
+### 
