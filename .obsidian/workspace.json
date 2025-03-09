@@ -38,31 +38,17 @@
             }
           },
           {
-            "id": "09a7b3c8950bf830",
+            "id": "4f3810d7cd20fddf",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "http://1.92.75.62:16384/project/66666e656ade99c9205d4d8f",
-                "title": "Bachelor Resume Chinese - Online LaTeX Editor Our Overleaf Instance",
-                "mode": "webview"
+                "url": "https://user.vcsite04.com/",
+                "title": "user.vcsite04.com",
+                "mode": "error"
               },
               "icon": "globe-2",
-              "title": "Bachelor Resume Chinese - Online LaTeX Editor Our Overleaf Instance"
-            }
-          },
-          {
-            "id": "f9ee93ccbc2d042d",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "http://1.92.75.62:16384/project/67c03cdb6ade99c92068ef3e",
-                "title": "Bachelor Resume Chinese 2 - Online LaTeX Editor Our Overleaf Instance",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Bachelor Resume Chinese 2 - Online LaTeX Editor Our Overleaf Instance"
+              "title": "user.vcsite04.com"
             }
           }
         ],
@@ -141,7 +127,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 615.5
+    "width": 464.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -150,7 +136,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "09a7b3c8950bf830",
+  "active": "4f3810d7cd20fddf",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "Lecture/Hongbao Zhang/saturnday/week2.md",
