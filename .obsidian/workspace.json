@@ -36,9 +36,37 @@
               "icon": "lucide-file",
               "title": "lecture note"
             }
+          },
+          {
+            "id": "09a7b3c8950bf830",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "http://1.92.75.62:16384/project/66666e656ade99c9205d4d8f",
+                "title": "Bachelor Resume Chinese - Online LaTeX Editor Our Overleaf Instance",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Bachelor Resume Chinese - Online LaTeX Editor Our Overleaf Instance"
+            }
+          },
+          {
+            "id": "f9ee93ccbc2d042d",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "http://1.92.75.62:16384/project/67c03cdb6ade99c92068ef3e",
+                "title": "Bachelor Resume Chinese 2 - Online LaTeX Editor Our Overleaf Instance",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Bachelor Resume Chinese 2 - Online LaTeX Editor Our Overleaf Instance"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +113,7 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.deepseek.com/a/chat/s/34e86946-e77d-47e0-8467-ca865b1813ea",
+                "url": "https://chat.deepseek.com/",
                 "title": "DeepSeek - 探索未至之境",
                 "mode": "webview"
               },
@@ -95,27 +123,25 @@
             }
           },
           {
-            "id": "2d946b2cc39e0110",
+            "id": "a653e3e8b065cbbf",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://github.com/",
-                "title": "github.com",
-                "mode": "error"
+                "url": "https://chat.qwen.ai/",
+                "title": "Qwen",
+                "mode": "webview"
               },
-              "pinned": true,
               "icon": "globe-2",
-              "title": "github.com"
+              "title": "Qwen"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 615.5,
-    "collapsed": true
+    "width": 615.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -124,10 +150,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "acf2b85ec1ab7f25",
+  "active": "09a7b3c8950bf830",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/saturnday/week2.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
+    "Lecture/Hongbao Zhang/saturnday/week2.md",
     "未命名.md",
     "Articles/Topologically massive gravity/trash.md",
     "Articles/Topologically massive gravity/Maxwell-Chern-Simons theory.md",
