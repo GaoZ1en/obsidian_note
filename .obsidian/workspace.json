@@ -36,23 +36,9 @@
               "icon": "lucide-file",
               "title": "lecture note"
             }
-          },
-          {
-            "id": "4f3810d7cd20fddf",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://user.vcsite04.com/",
-                "title": "user.vcsite04.com",
-                "mode": "error"
-              },
-              "icon": "globe-2",
-              "title": "user.vcsite04.com"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -136,7 +122,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4f3810d7cd20fddf",
+  "active": "acf2b85ec1ab7f25",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "Lecture/Hongbao Zhang/saturnday/week2.md",
