@@ -180,6 +180,34 @@ $$
 
 have got the usual result. suppose the potential $\displaystyle{V(x)}$ only depend on $\displaystyle{|x|}$, then consider the rotation transformation
 
+$$\tag{2.13}
+\begin{align}
+X_{\vec{n}} & =\int \mathrm{d}t\theta \varepsilon _{ijk}n_{i}x_{j}(t)\frac{\delta}{\delta x_{k}(t)}
+\end{align}
+$$
+
+act this symmetry on the action
+
+$$\tag{2.14}
+\begin{align}
+X_{\vec{n}}\cdot \delta S & =\int \mathrm{d}t'\theta \varepsilon _{ijk}n_{i}x_{j}(t') \frac{\delta}{\delta x_{k}(t')}\cdot \int ^{t_{f}}_{t_{i}}\left(m\dot{x}_{l}\delta \dot{x}_{l}-\partial _{l}V\delta x_{l}\right)\mathrm{d}t \\
+ & =\int ^{t_{f}}_{t_{i}}\mathrm{d}t\int \mathrm{d}t'(m\dot{x}_{l}(t)\theta \varepsilon _{ijk}n_{i}\dot{x}_{j}(t')\delta _{kl}-\partial _{l}V(x(t))\theta\varepsilon _{ijk}n_{i}x_{j}(t')\delta _{kl})\delta(t-t') \\
+ & =\int ^{t_{f}}_{t_{i}}\theta \varepsilon _{ijk}(mn_{i}\dot{x}_{j}\dot{x}_{k}-n_{i}x_{j}\partial _{k}V) \\
+ & =0\implies \alpha _{\vec{n}}=0
+\end{align}
+$$
+
+then the corresponding Noether charge is
+
+$$\tag{2.15}
+\begin{align}
+J_{\vec{n}} & =X_{\vec{n}}\cdot \Theta -\alpha _{\vec{n}} \\
+ & =\int \mathrm{d}t' \theta \varepsilon _{ijk}n_{i}x_{j}(t') \frac{\delta}{\delta x_{k}(t')}\cdot m\dot{x}_{l}\delta x_{l}(t) \\
+ & =\int \mathrm{d}t'\theta \varepsilon _{ijk}n_{i}x_{j}(t')m\dot{x}_{l}\delta _{kl} \delta(t-t')\\
+ & =\theta m\varepsilon _{ijk}n_{i}x_{j} \dot{x}_{k}=\theta \vec{n}\cdot\vec{J}
+\end{align}
+$$
+
 I can not gives some natural example for $\displaystyle{\beta _{\xi}}$...
 
 ### higher dimensional generalization
