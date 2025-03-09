@@ -23,25 +23,11 @@ X_{H}\cdot \omega=-\mathrm{d}H
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-X_{H}
-\end{align}
-$$
-
 then we can define the Poisson bracket. for two functions $\displaystyle{f,g\in \Omega ^{0}(M)}$, we have
 
 $$\tag{1.3}
 \begin{align}
 \left\{f,g\right\} & =\omega(X_{f},X_{g})
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\left\{f,g\right\} & =\omega ^{-1}(\mathrm{d}f,\mathrm{d}g) \\
- & =(\omega^{-1})^{ab}(\mathrm{d}f)_{a}(\mathrm{d}g)_{b} \\
- & =
 \end{align}
 $$
 
@@ -225,3 +211,5 @@ $$
 I can not gives some natural example for $\displaystyle{\beta _{\xi}}$...
 
 ### higher dimensional generalization
+
+
