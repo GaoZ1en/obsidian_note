@@ -2,7 +2,7 @@
 
 1. nlab, phase space
 2. covariant phase space with boundaries
-3. the following paper, not published
+3. the working paper, not published
 ## some symplectic geometry, canonical phase space.
 
 symplectic manifold is a even-dimensional manifold $\displaystyle{M}$ with a symplectic structure $\displaystyle{\omega}$, which is closed and non-degenerate 2-form.
@@ -13,7 +13,7 @@ $$\tag{1.1}
 \end{align}
 $$
 
-the simplest example is the cotangent bundle $\displaystyle{T^*M}$ of some manifold $\displaystyle{M}$, which is called the canonical phase space.
+the simplest example is the cotangent bundle $\displaystyle{T^*M}$ of some manifold $\displaystyle{M}$, with natural symplectic structure $\displaystyle{\omega=\mathrm{d}p\wedge \mathrm{d}q}$, which is called the canonical phase space.
 
 given a function $\displaystyle{H\in \Omega ^{0}(M):M\to \mathbb{R}}$, if we can define a Hamilton vector $\displaystyle{X_{H}\in TM}$, such that
 
@@ -23,11 +23,25 @@ X_{H}\cdot \omega=-\mathrm{d}H
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+X_{H}
+\end{align}
+$$
+
 then we can define the Poisson bracket. for two functions $\displaystyle{f,g\in \Omega ^{0}(M)}$, we have
 
 $$\tag{1.3}
 \begin{align}
 \left\{f,g\right\} & =\omega(X_{f},X_{g})
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\left\{f,g\right\} & =\omega ^{-1}(\mathrm{d}f,\mathrm{d}g) \\
+ & =(\omega^{-1})^{ab}(\mathrm{d}f)_{a}(\mathrm{d}g)_{b} \\
+ & =
 \end{align}
 $$
 
@@ -211,5 +225,3 @@ $$
 I can not gives some natural example for $\displaystyle{\beta _{\xi}}$...
 
 ### higher dimensional generalization
-
-t
