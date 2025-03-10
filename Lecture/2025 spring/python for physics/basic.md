@@ -100,3 +100,76 @@ print("name:", name, "age:", age)
 print(f"name:{name},age:{age}") // recommended
 ```
 
+## io
+
+```python
+file = open("file.txt", "r")
+file.readline()
+l = file.readlines()
+file.write("hello")
+file.writelines(["hello", "world"])
+file.close()
+```
+
+```
+with open("file.txt", "r") as file:
+  file.readline()
+  l = file.readlines()
+  file.write("hello")
+  file.writelines(["hello", "world"]
+```
+
+## format
+
+```python
+print("hello, {}".format("world"))
+print("hello, {0}".format("world"))
+print("hello, {name}".format(name="world"))
+```
+
+numbers
+```python
+print("{:d}".format(42))
+print("{:f}".format(42.0))
+print("{:e}".format(42.0))
+print("{:x}".format(42))
+```
+
+float numbers
+```python
+print("{:.2f}".format(42.0))
+print("{:10.2f}".format(42.0))
+```
+
+## string
+
+```python
+str1 = "hello"
+str2 = "world"
+str3 = "\n a b c d e \n"
+
+print(str1 + str2)
+print(str1 * 3)
+
+l = str1.split() # split by whitespace
+str4 = str3.strip() # remove whitespace
+```
+
+## error handling
+
+```python
+try:
+  code
+except:
+  code
+```
+
+for example
+
+```python
+try:
+  a = 1/0
+except Wrong_Denominator[ZeroDivisionError]:
+  print("denominator cannot be zero")
+```
+
