@@ -23,21 +23,35 @@
             }
           },
           {
-            "id": "acf2b85ec1ab7f25",
+            "id": "f941197ad2ac7e46",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "webviewer",
               "state": {
-                "file": "Lecture/2025 spring/python for physics/basic.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "url": "https://cn.bing.com/search?q=%e8%8f%9c%e9%b8%9f%e6%95%99%e7%a8%8b&qs=SC&pq=cainiao&sc=12-7&cvid=EB97CF038F624A6AAA319F59C1833B4C&FORM=QBRE&sp=1&lq=0",
+                "title": "菜鸟教程 - 搜索",
+                "mode": "webview"
               },
-              "icon": "lucide-file",
-              "title": "basic"
+              "icon": "globe-2",
+              "title": "菜鸟教程 - 搜索"
+            }
+          },
+          {
+            "id": "ab9de0ff0dd8c118",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.runoob.com/cplusplus/cpp-classes-objects.html",
+                "title": "C++ 类 & 对象 | 菜鸟教程",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "C++ 类 & 对象 | 菜鸟教程"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,15 +136,15 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "cbed33ed108f2e63",
+  "active": "ab9de0ff0dd8c118",
   "lastOpenFiles": [
     "Lecture/2025 spring/python for physics/basic.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Lecture/2025 spring/python for physics/input.md",
     "Lecture/2025 spring/python for general purpose/venv.md",
     "Lecture/2025 spring/python for general purpose/fstring.md",
     "Lecture/未命名.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/quantum mechanics.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/classical mechanics.md",
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/Hongbao Zhang/saturnday/week2.md",
