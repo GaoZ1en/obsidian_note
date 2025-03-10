@@ -69,3 +69,34 @@ break and continue. break will jump out of the loop, and continue will jump to t
 
 assert is a function that will raise an error if the expression is false.
 
+## input
+
+```
+a = input("what is your name")
+print(type(a))
+```
+
+## 
+
+转义字符\
+
+## ',", and """
+
+```python
+print("I'm a student")
+print('I\'m a student')
+print("""I'm a student""")
+```
+
+## fstring
+
+use fstring to print string
+
+```python
+name = "Koishi"
+age = "14"
+
+print("name:", name, "age:", age)
+print(f"name:{name},age:{age}") // recommended
+```
+
