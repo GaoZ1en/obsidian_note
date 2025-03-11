@@ -53,7 +53,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -100,7 +100,7 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.deepseek.com/a/chat/s/0d8e01a5-03e4-40f3-b2a4-e64e52ecc437",
+                "url": "https://chat.deepseek.com/a/chat/s/1066564c-3ea0-4410-902e-359a47f77725",
                 "title": "DeepSeek - 探索未至之境",
                 "mode": "webview"
               },
@@ -135,12 +135,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "65886d72cf5508d8",
+  "active": "d3d4ecdcd0b7b58b",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "Lecture/2025 spring/python for physics/function.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Note/Mathematics/Bäcklund transformation.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "Lecture/2025 spring/python for physics/references.md",
     "未命名.md",
     "未命名 1.md",

@@ -66,7 +66,7 @@ $$
 
 by solving (2.4), we have $\displaystyle{u_{1}=4\arctan(e^{a_{1}x-t/a_{1}+c_{1}})}$, where $\displaystyle{c_{1}}$ is a integration constant corresponding to the initial position of a soliton.
 
-then perform the Bäcklund transformation again, using the Bianchi identity (this means that the )
+then perform the Bäcklund transformation again, using the Bianchi identity (this means that the order of the Bäcklund transformation is not important)
 
 $$\tag{2.5}
 \begin{align}
@@ -74,7 +74,13 @@ $$\tag{2.5}
 \end{align}
 $$
 
+we have
 
+$$\tag{2.6}
+\begin{align}
+u_{12} & =4\arctan\left( \frac{a_{1}+a_{2}}{a_{1}-a_{2}} \left( \frac{\sinh\left( \frac{a_{1}x-t/a_{1}-a_{2}x+t/a_{2}}{2} \right)}{\cosh\left( \frac{a_{1}x-t/a_{1}+a_{2}x-t/a_{2}}{2} \right)} \right) \right)
+\end{align}
+$$
 
 ## Hirota bilinear formalism
 
@@ -86,30 +92,52 @@ u_{t}+6uu_{x}+u_{xxx}=0
 \end{align}
 $$
 
-assume the Bäcklund transformation is
+introduce new function $\displaystyle{\tau}$ which satisfies
 
 $$\tag{3.2}
 \begin{align}
-v_{x} & =u_{x}+2a\frac{D_{x}u}{D_{x}v} \\
-v_{t} & =-u_{t}+\frac{2}{a}\frac{D_{t}u}{D_{t}v}
+u & =2 \partial _{x}^{2}\ln \tau
 \end{align}
 $$
-
-where $\displaystyle{D_{x},D_{t}}$ are Hirota's bilinear operators. then
+  
+  then the KdV equation becomes
 
 $$\tag{3.3}
 \begin{align}
-v_{t}+6vv_{x}+v_{xxx}=0
+(D_{x}D_{t}+D_{x}^{4})\tau \cdot \tau=0
 \end{align}
 $$
 
-is satisfied. the Bäcklund transformation is valid.
-
-what is Hirota's bibilinear operator? it is defined as
+where the Hirota derivatives $\displaystyle{D_{x}, D_{t}}$ are defined as
 
 $$\tag{3.4}
 \begin{align}
-D_{x}^{n}f\cdot g & =\left( \frac{\partial }{\partial x}-\frac{\partial }{\partial x'} \right)^{n}f(x)g(x')|_{x=x'} \\
-D_{t}^{n}f\cdot g & =\left( \frac{\partial }{\partial t}-\frac{\partial }{\partial t'} \right)^{n}f(t)g(t')|_{t=t'}
+D_{x}^{n}D_{t}^{m}f\cdot g & =(\partial _{x}-\partial _{x'})^{n}(\partial _{t}-\partial _{t'})^{m}f(x,t)\cdot g(x',t')
 \end{align}
 $$
+
+suppose
+
+$$\tag{3.5}
+\begin{align}
+\tau=1+e^{\eta_{1}}, \eta_{1}=k_{1}x-\omega _{1}t+\delta_{1}
+\end{align}
+$$
+
+where $\displaystyle{\omega_{1}=k_{1}^{3}}$ (determined by dispersion relation). we can verify that (3.5) automatically satisfies (3.3), then we have the classic single-soliton solution.
+
+$$\tag{3.6}
+\begin{align}
+u & =\frac{k_{1}^{2}}{2}\mathrm{sech}^{2}\left( \frac{\eta_{1}}{2} \right)
+\end{align}
+$$
+
+generalized to $\displaystyle{N}$-soliton solution
+
+$$\tag{3.7}
+\begin{align}
+\tau =\sum _{\mu=0,1}\exp\left( \sum ^{N}_{i=1}\mu _{i}\eta _{i}+\sum _{i\leqslant i<j\leqslant N}\mu _{i}\mu _{j}\ln A_{ij} \right)
+\end{align}
+$$
+
+where $\displaystyle{\mu _{i}\in\left\{0,1\right\}}$ and coefficients $\displaystyle{A_{ij}}$ are determined by interaction of each other.

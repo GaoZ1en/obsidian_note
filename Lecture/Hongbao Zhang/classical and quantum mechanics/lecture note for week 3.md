@@ -27,3 +27,12 @@ $$\tag{1.3}
 x^{\pm} & =\frac{x^{0}\pm x^{1}}{\sqrt{ 2 }}
 \end{align}
 $$
+
+the solution $\displaystyle{1.3}$ is form invariant against the replacement of the functions $\displaystyle{F,G}$ by their transformations
+
+$$\tag{1.4}
+\begin{align}
+\frac{m}{2}F\to \frac{ \gamma\frac{m}{2}F-\delta}{\varepsilon \frac{m}{2}F+\eta}, \frac{m}{2}G\to \frac{\eta \frac{m}{2}G-\varepsilon}{\delta \frac{m}{2}G+\gamma}
+\end{align}
+$$
+For particle physicists the theory was important in the study of instantons and solitons, and more recently in reformulations of the dual string model.
