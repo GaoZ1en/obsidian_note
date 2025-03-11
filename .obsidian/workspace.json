@@ -52,8 +52,7 @@
               "title": "function"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,11 +134,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d3d4ecdcd0b7b58b",
+  "active": "cbed33ed108f2e63",
   "lastOpenFiles": [
-    "Lecture/2025 spring/python for physics/function.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Note/Mathematics/Bäcklund transformation.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
+    "Lecture/2025 spring/python for physics/function.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "Lecture/2025 spring/python for physics/references.md",
     "未命名.md",
