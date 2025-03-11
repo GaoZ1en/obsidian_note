@@ -236,10 +236,23 @@ X_{\xi}'=X_{\xi}+\frac{1}{\gamma}X_{\partial \xi}=\int \mathrm{d}^{2}x\left( \xi
 \end{align}
 $$
 
-where $\displaystyle{\gamma}$ is an arbitrary parameter. then
+where $\displaystyle{\gamma}$ is an arbitrary constant. then
 
 $$\tag{2.17}
 \begin{align}
-X_{\xi}'\cdot \delta S & =
+X_{\xi}'\cdot \delta S & =-\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}\phi \nabla ^{\mu}\left( \xi ^{\mu}\nabla _{\mu}\phi+\frac{1}{\gamma}\nabla _{\mu}\xi ^{\mu} \right) \\
+ & =-\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}\phi \left( \nabla ^{\mu}\xi ^{\nu}\nabla _{\nu}\phi+\xi ^{\nu}\nabla ^{\mu}\nabla _{\nu}\phi+\frac{1}{\gamma}\nabla ^{\mu}\nabla _{\nu}\xi ^{\nu} \right) \\
+ & =-\int \mathrm{d}^{2}x\sqrt{ -g }\left( \frac{1}{2}(\nabla ^{\mu}\xi ^{\nu}+\nabla ^{\nu}\xi ^{\mu})\nabla _{\mu}\phi \nabla _{\nu}\phi+\xi ^{\nu}\nabla _{\mu}\phi \nabla _{\nu}\nabla ^{\mu}\phi+\frac{1}{\gamma}\nabla _{\mu}\phi \nabla ^{\mu}\nabla _{\nu}\xi ^{\nu} \right) \\
+ & =-\int \mathrm{d}^{2}x\sqrt{ -g }\left( \frac{1}{2}\nabla _{\mu}\phi \nabla ^{\mu}\phi \nabla _{\nu}\xi ^{\nu}+\frac{1}{2}\xi ^{\nu}\nabla _{\nu}(\nabla _{\mu}\phi \nabla ^{\mu}\phi) \right)
+\end{align}
+$$
+
+here we use
+
+$$\tag{2.18}
+\begin{align}
+\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu}-g_{\mu \nu}\nabla _{\rho}\xi ^{\rho} & =0 \\
+\nabla ^{\nu}\nabla _{\nu}\xi _{\mu}+\frac{1}{2}Rg_{\mu \nu}\xi ^{\nu} & =0 \\
+\nabla ^{2}(\nabla _{\mu}\xi ^{\mu})+\xi ^{\mu}\nabla _{\mu}R+R\nabla _{\mu}\xi ^{\mu} & =0
 \end{align}
 $$
