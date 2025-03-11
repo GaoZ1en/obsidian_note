@@ -28,26 +28,26 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://cn.bing.com/search?q=%e8%8f%9c%e9%b8%9f%e6%95%99%e7%a8%8b&qs=SC&pq=cainiao&sc=12-7&cvid=EB97CF038F624A6AAA319F59C1833B4C&FORM=QBRE&sp=1&lq=0",
-                "title": "菜鸟教程 - 搜索",
+                "url": "https://cn.bing.com/search?q=rust%20project&qs=n&form=QBRE&sp=-1&lq=0&pq=rust%20project&sc=12-12&sk=&cvid=53E1441E256441A8B0FAA00BD891A305&ghsh=0&ghacc=0&ghpl=",
+                "title": "rust project - 搜索",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "菜鸟教程 - 搜索"
+              "title": "rust project - 搜索"
             }
           },
           {
-            "id": "ab9de0ff0dd8c118",
+            "id": "cec791b82da5895c",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.runoob.com/cplusplus/cpp-classes-objects.html",
-                "title": "C++ 类 & 对象 | 菜鸟教程",
+                "url": "https://www.zhihu.com/question/512163948",
+                "title": "Github上有哪些Rust写的知名项目？ - 知乎",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "C++ 类 & 对象 | 菜鸟教程"
+              "title": "Github上有哪些Rust写的知名项目？ - 知乎"
             }
           }
         ],
@@ -136,7 +136,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "ab9de0ff0dd8c118",
+  "active": "cec791b82da5895c",
   "lastOpenFiles": [
     "Lecture/2025 spring/python for physics/basic.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
