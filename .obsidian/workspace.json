@@ -28,13 +28,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "在报告里面应该讲什么呢.md",
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "在报告里面应该讲什么呢"
+              "title": "lecture note for week 3"
+            }
+          },
+          {
+            "id": "f8f847e3c620ae68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/Topologically massive gravity/trash.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "trash"
             }
           }
         ]
@@ -67,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -121,14 +137,15 @@
   },
   "active": "cbed33ed108f2e63",
   "lastOpenFiles": [
+    "Articles/Topologically massive gravity/trash.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Group meeting/week 9.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "在报告里面应该讲什么呢.md",
     "Articles/Noether charge/An example of constrained Hamiltonian systems.md",
     "Articles/Noether charge/Complex Klein-Gordon scalar.md",
     "Lecture/2025 spring/python for physics/function.md",
     "Note/Mathematics/Bäcklund transformation.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "Lecture/2025 spring/python for physics/references.md",
     "未命名 1.md",
     "Lecture/2025 spring/python for physics/basic.md",
@@ -138,7 +155,6 @@
     "Lecture/未命名.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/quantum mechanics.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/classical mechanics.md",
-    "Articles/Topologically massive gravity/trash.md",
     "Lecture/Hongbao Zhang/saturnday/week2.md",
     "Homework/未命名.md",
     "Homework/统计学导论/作业6.md",
