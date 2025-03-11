@@ -219,9 +219,10 @@ X_{\Omega}\cdot \delta S & =-\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}\phi \n
 \end{align}
 $$
 
-$$\tag{.}
+then the corresponding Noether charge is
+
+$$\tag{2.15}
 \begin{align}
-S' & =-\frac{1}{2}\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}(\phi+\Omega)\nabla ^{\mu}(\phi+\Omega) \\
- & =-\frac{1}{2}\int \mathrm{d}^{2}x\sqrt{ -g }(\nabla _{\mu}\phi \nabla ^{\mu})
+H_{\Omega} & =
 \end{align}
 $$
