@@ -53,7 +53,28 @@ v_{xt} & =u_{xt}+2a\cos\left( \frac{v+u}{2} \right) \frac{v_{t}+u_{t}}{2} \\
 v_{xt} & =-u_{xt}+\frac{2}{a}\cos\left( \frac{v-u}{2} \right) \frac{v_{x}-u_{x}}{2}
 \end{align}
 $$
-it is easy to verify that $\displaystyle{v_{xt}=v_{tx}}$. thus the Bäcklund transformation is valid.
+it is easy to verify that $\displaystyle{v_{xt}=v_{tx}}$. thus the Bäcklund transformation is valid. then we will see how the Bäcklund transformation generates a sequence of solutions.
+
+we have a trivial solution $\displaystyle{u=0}$ for the sine-Gordon equation. then the Bäcklund transformation gives
+
+$$\tag{2.4}
+\begin{align}
+u_{1x} & =2a_{1}\sin\left( \frac{u_{1}}{2} \right) \\
+u_{1t} & =\frac{2}{a_{1}}\sin\left( \frac{u_{1}}{2} \right)
+\end{align}
+$$
+
+by solving (2.4), we have $\displaystyle{u_{1}=4\arctan(e^{a_{1}x-t/a_{1}+c_{1}})}$, where $\displaystyle{c_{1}}$ is a integration constant corresponding to the initial position of a soliton.
+
+then perform the Bäcklund transformation again, using the Bianchi identity (this means that the )
+
+$$\tag{2.5}
+\begin{align}
+\tan\left( \frac{u_{12}-u_{0}}{4} \right) & =\frac{a_{1}+a_{2}}{a_{1}-a_{2}}\tan\left( \frac{u_{1}-u_{2}}{4} \right)
+\end{align}
+$$
+
+
 
 ## Hirota bilinear formalism
 

@@ -212,4 +212,3 @@ I can not gives some natural example for $\displaystyle{\beta _{\xi}}$...
 
 ### higher dimensional generalization
 
-
