@@ -97,9 +97,11 @@ a naive thinking
 
 $$\tag{.}
 \begin{align}
-\ell _{\mathrm{gCS}} & =\frac{1}{32\pi G\mu}\int _{\Gamma}\mathrm{Tr}(\tilde{\Gamma}\wedge \tilde{\Gamma})???
+\ell _{\mathrm{gCS}} & \propto\int _{\Gamma}\mathrm{Tr}(\tilde{\Gamma}\wedge \tilde{\Gamma})???
 \end{align}
 $$
+
+tomorrow give some calculation
 
 ## diffeomorphism of the action
 
