@@ -92,7 +92,7 @@ $$
 
 the variation of the action is
 
-$$\tag{2.2}
+$$
 \begin{align}
 \delta S & =-\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}\phi \nabla _{\nu}\delta \phi g^{\mu \nu} \\
  & =\int \mathrm{d}^{2}x\sqrt{ -g }\nabla ^{2}\phi \delta \phi+\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\nabla _{\mu}\phi \delta \phi
@@ -139,4 +139,89 @@ H_{\xi} & =X_{\xi}\cdot \Theta-\alpha _{\xi} \\
 \end{align}
 $$
 
-now return to the flat metric case. $\displaystyle{\theta _{\mu \nu}}$ is traceless and conserved when $\displaystyle{\phi}$ solves the equation of motion $\displaystyle}$
+now return to the flat metric case. $\displaystyle{\theta _{\mu \nu}}$ is traceless and conserved when $\displaystyle{\phi}$ solves the equation of motion $\displaystyle{\partial ^{2}\phi=0}$. the general solution of the equation of motion is
+
+$$\tag{2.6}
+\begin{align}
+\phi(x) & =\phi ^{+}(x^{+})+\phi ^{-}(x^{-})
+\end{align}
+$$
+
+then $\displaystyle{\theta _{--}}$ depends only on $\displaystyle{x^{-}}$, and $\displaystyle{\theta _{++}}$ depends only on $\displaystyle{x^{+}}$. Consequently, two sets of constants of motion may be defined
+
+$$\tag{2.7}
+\begin{align}
+H_{f}^{-} & =\int \mathrm{d}x^{-}f^{-}(x^{-})\theta _{--}(x^{-}) \\
+H^{+}_{f} & =\int \mathrm{d}x^{+}f^{+}(x^{+})\theta _{++}(x^{+}) \\
+H_{f} & =H_{f}^{-}+H_{f}^{+}
+\end{align}
+$$
+
+the Poisson brackets of $\displaystyle{\phi(x)}$ and $\displaystyle{\phi(y)}$ are given by
+
+$$\tag{2.8}
+\begin{align}
+\left\{\phi(x),\phi(y)\right\}|_{x^{+}=y^{+}} & =\frac{1}{4}\varepsilon(x^{-}-y^{-}) \\
+\left\{\phi(x),\phi(y)\right\}|_{x^{-}=y^{-}} & =\frac{1}{4}\varepsilon(x^{+}-y^{+})
+\end{align}
+$$
+
+here we use
+
+$$\tag{2.9}
+\begin{align}
+x^{\pm} & =\frac{x\pm \tau}{\sqrt{ 2 }},& x=\frac{x^{+}+x^{-}}{\sqrt{ 2 }},  &  & \tau=\frac{x^{+}-x^{-}}{\sqrt{ 2 }} \\
+\partial _{\pm} & =\frac{1}{\sqrt{ 2 }}(\partial _{x}\pm \partial _{\tau}), & \partial _{x}=\frac{1}{\sqrt{ 2 }}(\partial _{+}+\partial _{-}), &  & \partial _{\tau}=\frac{1}{\sqrt{ 2 }}(\partial _{+}-\partial _{-})
+\end{align}
+$$
+
+equivalently we have
+
+$$\tag{2.10}
+\begin{align}
+\left\{\phi ^{-}(x^{-}),\phi ^{-}(y^{-})\right\} & =\frac{1}{4}\varepsilon(x^{-}-y^{-}) \\
+\left\{\phi ^{+}(x^{+}),\phi ^{+}(y^{+})\right\} & =\frac{1}{4}\varepsilon(x^{+}-y^{+}) \\
+\left\{\phi ^{+}(x^{+}),\phi ^{-}(y^{-})\right\} & =0
+\end{align}
+$$
+
+the (usual) Poisson brackets of two quantities $\displaystyle{A}$ and $\displaystyle{B}$ are defined by
+
+$$\tag{2.11}
+\begin{align}
+\left\{A,B\right\} & =\frac{1}{4}\int \mathrm{d}z\mathrm{d}z'\varepsilon(z-z')\left\{\frac{\delta A}{\delta \phi ^{+}(z)} \frac{\delta B}{\delta \phi ^{+}(z')}+\frac{\delta A}{\delta \phi ^{-}(z)} \frac{\delta B}{\delta \phi ^{-}(z')}\right\}
+\end{align}
+$$
+
+the charges generate the transformation
+
+$$\tag{2.12}
+\begin{align}
+\left\{Q_{f},\phi\right\} & =f^{\alpha}\partial _{\alpha}\phi
+\end{align}
+$$
+
+consider another transformation
+
+$$\tag{2.13}
+\begin{align}
+X_{\Omega} & =\int \mathrm{d}^{2}x \Omega  \frac{\delta}{\delta \phi}
+\end{align}
+$$
+
+where $\displaystyle{\Omega}$ is a harmonic function, i.e., $\displaystyle{\Omega}$ satisfies $\displaystyle{\Box\Omega=0}$. 
+
+$$\tag{2.14}
+\begin{align}
+X_{\Omega}\cdot \delta S & =-\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}\phi \nabla ^{\mu}\Omega \\
+ & =-\int \mathrm{d}^{2}x\nabla ^{\mu}(\phi \nabla _{\mu}\Omega) \\
+ & =\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}x\tau ^{\mu}\phi \nabla _{\mu}\Omega
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+S' & =-\frac{1}{2}\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}(\phi+\Omega)\nabla ^{\mu}(\phi+\Omega) \\
+ & =-\frac{1}{2}\int \mathrm{d}^{2}x\sqrt{ -g }(\nabla _{\mu}\phi \nabla ^{\mu})
+\end{align}
+$$
