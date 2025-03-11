@@ -23,35 +23,22 @@
             }
           },
           {
-            "id": "f941197ad2ac7e46",
+            "id": "65886d72cf5508d8",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "markdown",
               "state": {
-                "url": "https://cn.bing.com/search?q=rust%20project&qs=n&form=QBRE&sp=-1&lq=0&pq=rust%20project&sc=12-12&sk=&cvid=53E1441E256441A8B0FAA00BD891A305&ghsh=0&ghacc=0&ghpl=",
-                "title": "rust project - 搜索",
-                "mode": "webview"
+                "file": "Note/Mathematics/Bäcklund transformation.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "globe-2",
-              "title": "rust project - 搜索"
-            }
-          },
-          {
-            "id": "cec791b82da5895c",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://www.zhihu.com/question/512163948",
-                "title": "Github上有哪些Rust写的知名项目？ - 知乎",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Github上有哪些Rust写的知名项目？ - 知乎"
+              "icon": "lucide-file",
+              "title": "Bäcklund transformation"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,15 +81,13 @@
           {
             "id": "d3d4ecdcd0b7b58b",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.deepseek.com/",
+                "url": "https://chat.deepseek.com/a/chat/s/0d8e01a5-03e4-40f3-b2a4-e64e52ecc437",
                 "title": "DeepSeek - 探索未至之境",
                 "mode": "webview"
               },
-              "pinned": true,
               "icon": "globe-2",
               "title": "DeepSeek - 探索未至之境"
             }
@@ -114,20 +99,18 @@
               "type": "webviewer",
               "state": {
                 "url": "https://chat.qwen.ai/",
-                "title": "Qwen",
-                "mode": "webview"
+                "title": "chat.qwen.ai",
+                "mode": "error"
               },
               "icon": "globe-2",
-              "title": "Qwen"
+              "title": "chat.qwen.ai"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 464.5,
-    "collapsed": true
+    "width": 464.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -136,10 +119,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "cec791b82da5895c",
+  "active": "d3d4ecdcd0b7b58b",
   "lastOpenFiles": [
-    "Lecture/2025 spring/python for physics/basic.md",
+    "Note/Mathematics/Bäcklund transformation.md",
+    "未命名.md",
+    "未命名 1.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
+    "Lecture/2025 spring/python for physics/basic.md",
     "Lecture/2025 spring/python for physics/input.md",
     "Lecture/2025 spring/python for general purpose/venv.md",
     "Lecture/2025 spring/python for general purpose/fstring.md",
@@ -151,7 +137,6 @@
     "Homework/未命名.md",
     "Homework/统计学导论/作业6.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
-    "未命名.md",
     "Articles/Topologically massive gravity/Maxwell-Chern-Simons theory.md",
     "Lecture/2025 spring/日本文艺史.md",
     "Lecture/2025 spring/日本文艺史.md~",
