@@ -80,3 +80,63 @@ $$\tag{1.4}
 \end{align}
 $$
 
+### free scalar
+
+consider a 2d free scalar with action
+
+$$\tag{2.1}
+\begin{align}
+S & =-\frac{1}{2}\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}\phi \nabla _{\nu}\phi g^{\mu \nu}
+\end{align}
+$$
+
+the variation of the action is
+
+$$\tag{2.2}
+\begin{align}
+\delta S & =-\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}\phi \nabla _{\nu}\delta \phi g^{\mu \nu} \\
+ & =\int \mathrm{d}^{2}x\sqrt{ -g }\nabla ^{2}\phi \delta \phi+\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\nabla _{\mu}\phi \delta \phi
+\end{align}
+$$
+
+under the conformal transformation
+
+$$\tag{2.2}
+\begin{align}
+X_{\xi} & =\int \mathrm{d}^{2}x \xi ^{\mu}\nabla _{\mu}\phi  \frac{\delta}{\delta \phi}
+\end{align}
+$$
+
+where $\displaystyle{\xi ^{\mu}}$ is a conformal Killing vector which satisfies the following conformal Killing equation
+
+$$\tag{2.3}
+\begin{align}
+\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu}-g_{\mu \nu}\nabla _{\rho}\xi ^{\rho} & =0
+\end{align}
+$$
+
+then
+
+$$\tag{2.4}
+\begin{align}
+X_{\xi}\cdot \delta S & =\int \mathrm{d}^{2}x \xi ^{\mu}\nabla _{\mu}\phi  \frac{\delta}{\delta \phi}\cdot -\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\nu}\phi \nabla ^{\nu}\delta \phi \\
+ & =-\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}\phi \nabla ^{\mu}(\xi ^{\rho}\nabla _{\rho}\phi) \\
+ & =-\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}\phi(\nabla ^{\mu}\xi ^{\rho}\nabla _{\rho}\phi+\xi ^{\rho}\nabla ^{\mu}\nabla _{\rho}\phi) \\
+ & =-\int \mathrm{d}^{2}x\sqrt{ -g }\left( \frac{1}{2}(\nabla ^{\mu}\xi ^{\rho}+\nabla ^{\rho}\xi ^{\mu})\nabla _{\mu}\phi \nabla _{\rho}\phi+\xi ^{\rho}\nabla _{\mu}\phi\nabla ^{\mu}\nabla _{\rho}\phi \right) \\
+ & =-\int \mathrm{d}^{2}x\sqrt{ -g }\left( \frac{1}{2}g^{\mu \rho}\nabla _{\nu}\xi ^{\nu}\nabla _{\mu}\phi \nabla _{\rho}\phi+\frac{1}{2}\xi ^{\rho}\nabla _{\rho}(\nabla _{\mu}\phi \nabla ^{\mu}\phi) \right) \\
+ & =-\frac{1}{2}\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}(\xi ^{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi)=\frac{1}{2}\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\xi _{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi
+\end{align}
+$$
+
+the Noether current associated with $\displaystyle{X_{\xi}}$ is then
+
+$$\tag{2.5}
+\begin{align}
+H_{\xi} & =X_{\xi}\cdot \Theta-\alpha _{\xi} \\
+ & =\int _{\Sigma} \mathrm{d}x\sqrt{ h }\tau ^{\mu}\nabla _{\mu}\phi \xi ^{\nu}\nabla _{\nu}\phi-\frac{1}{2}\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\xi _{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi \\
+ & =\int _{Sgm}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\xi ^{\nu}\theta _{\mu \nu} \\
+\theta _{\mu \nu} & = \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi
+\end{align}
+$$
+
+now return to the flat metric case. $\displaystyle{\theta _{\mu \nu}}$ is traceless and conserved when $\displaystyle{\phi}$ solves the equation of motion $\displaystyle}$

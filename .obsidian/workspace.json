@@ -23,33 +23,17 @@
             }
           },
           {
-            "id": "65886d72cf5508d8",
+            "id": "237580a996741e96",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "webviewer",
               "state": {
-                "file": "Note/Mathematics/Bäcklund transformation.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "url": "http://1.92.75.62:16384/project/668e3f9c6ade99c9205eb10f",
+                "title": "Covariant phase space - Online LaTeX Editor Our Overleaf Instance",
+                "mode": "webview"
               },
-              "icon": "lucide-file",
-              "title": "Bäcklund transformation"
-            }
-          },
-          {
-            "id": "9e02655fedc2e6fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/2025 spring/python for physics/function.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "function"
+              "icon": "globe-2",
+              "title": "Covariant phase space - Online LaTeX Editor Our Overleaf Instance"
             }
           }
         ]
@@ -82,8 +66,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -125,7 +108,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 464.5
+    "width": 464.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -136,9 +120,11 @@
   },
   "active": "cbed33ed108f2e63",
   "lastOpenFiles": [
-    "Note/Mathematics/Bäcklund transformation.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
+    "Articles/Noether charge/An example of constrained Hamiltonian systems.md",
+    "Articles/Noether charge/Complex Klein-Gordon scalar.md",
     "Lecture/2025 spring/python for physics/function.md",
+    "Note/Mathematics/Bäcklund transformation.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "Lecture/2025 spring/python for physics/references.md",
     "未命名.md",
