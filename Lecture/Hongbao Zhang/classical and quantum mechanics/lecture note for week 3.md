@@ -223,6 +223,23 @@ then the corresponding Noether charge is
 
 $$\tag{2.15}
 \begin{align}
-H_{\Omega} & =
+H_{\Omega} & =X_{\Omega}\cdot \theta-\alpha _{\Omega} \\
+ & =\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}(\Omega\nabla _{\mu}\phi -\phi \nabla _{\mu}\Omega)
+\end{align}
+$$
+
+then consider a combined transformation
+
+$$\tag{2.16}
+\begin{align}
+X_{\xi}'=X_{\xi}+\frac{1}{\gamma}X_{\partial \xi}=\int \mathrm{d}^{2}x\left( \xi ^{\mu}\nabla _{\mu}\phi+\frac{1}{\gamma}\nabla _{\mu}\xi ^{\mu} \right) \frac{\delta}{\delta \phi}
+\end{align}
+$$
+
+where $\displaystyle{\gamma}$ is an arbitrary parameter. then
+
+$$\tag{2.17}
+\begin{align}
+X_{\xi}'\cdot \delta S & =
 \end{align}
 $$
