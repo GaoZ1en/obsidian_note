@@ -93,6 +93,14 @@ $$
 
 where $\displaystyle{S^{\mu}_{\lambda}=R^{\mu}_{\lambda}-\frac{1}{4}R\delta ^{\mu}_{\lambda}}$ is the Schouten tensor.
 
+a naive thinking
+
+$$\tag{.}
+\begin{align}
+\ell _{\mathrm{gCS}} & =\frac{1}{32\pi G\mu}\int _{\Gamma}\mathrm{Tr}(\tilde{\Gamma}\wedge \tilde{\Gamma})???
+\end{align}
+$$
+
 ## diffeomorphism of the action
 
 $$\tag{.}
