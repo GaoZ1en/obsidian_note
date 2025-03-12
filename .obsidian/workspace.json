@@ -36,37 +36,8 @@
               "icon": "lucide-file",
               "title": "week 3"
             }
-          },
-          {
-            "id": "aa9ff4918eca2650",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://cn.bing.com/search?q=pdf%20viewer%20in%20linux",
-                "title": "pdf viewer in linux - 搜索",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "pdf viewer in linux - 搜索"
-            }
-          },
-          {
-            "id": "be87f2d9ba2490eb",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://linuxconfig.org/best-pdf-reader-for-linux",
-                "title": "Best PDF Reader for Linux - LinuxConfig",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Best PDF Reader for Linux - LinuxConfig"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -149,7 +120,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "be87f2d9ba2490eb",
+  "active": "bb4171226f514300",
   "lastOpenFiles": [
     "Lecture/2025 spring/english/week 3.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
