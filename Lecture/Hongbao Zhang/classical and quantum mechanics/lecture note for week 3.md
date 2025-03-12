@@ -289,6 +289,14 @@ $$\tag{2.21}
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+\xi ^{\nu}\zeta ^{\rho}\partial _{\mu}\partial _{\rho}\phi \partial _{\nu}\phi+\xi ^{\nu}\partial _{\mu}\phi \zeta ^{\rho}\partial _{\nu}\partial _{\rho}\phi & =-\zeta ^{\rho}\partial _{\rho}\xi ^{\nu}\partial _{\mu}\phi \partial _{\nu}\phi-\xi ^{\nu}\partial _{\rho}\zeta ^{\rho}\partial _{\mu}\phi \partial _{\nu}\phi \\
+\xi ^{\nu}\partial _{\mu}\zeta ^{\rho}\partial _{\rho}\phi \partial _{\nu}\phi & =\xi ^{\nu}\partial _{\mu}(\zeta ^{\rho}\partial _{\rho}\phi)\partial _{\nu}\phi-\xi ^{\nu}\zeta ^{\rho}\partial _{\mu}\partial _{\rho}\phi \partial _{\nu}\phi \\
+ & =\partial _{\mu}(\mathcal{L_{\zeta}\phi})\mathcal{L}_{\xi}\phi-\xi ^{\nu}\partial _{\rho}(\zeta ^{\rho}\partial _{\mu}\phi)\partial _{\nu}\phi+\xi ^{\nu}\partial _{\rho}\zeta ^{\rho}\partial _{\mu}\phi \partial _{\nu}\phi
+\end{align}
+$$
+
 $$\tag{2.22}
 \begin{align}
 H_{\left\{\xi,\zeta\right\}}' & =H_{\left\{\xi,\zeta\right\}}+\frac{1}{\gamma}H_{\partial\left\{\xi,\zeta\right\}} \\
@@ -301,11 +309,7 @@ H_{\left\{\xi,\zeta\right\}}' & =H_{\left\{\xi,\zeta\right\}}+\frac{1}{\gamma}H_
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
--g_{\mu \nu}\partial _{\rho}\phi \partial _{\sigma}\phi \partial ^{\rho}\zeta ^{\sigma}=-\frac{1}{2}g_{\mu \nu}\partial _{\rho}\phi \partial _{\sigma}\phi(\partial ^{\rho}\zeta ^{\sigma}+\partial ^{\sigma}\zeta ^{\rho})=-\frac{1}{2}g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\phi \partial _{\sigma}\zeta ^{\sigma}
-\end{align}
-$$
+
 
 here we again use (2.18)
 
