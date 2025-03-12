@@ -9,3 +9,20 @@ I remember that I have very few conflicts with my parents. the only few happened
 5. what does the word "home" mean to you?
 I am the 2nd child in my home, and because of the family planning policy, I have been moving constantly from my childhood until now. I have lived over about 20 places. I think "home" is that parents, my elder-sister and I can come together wherever and whenever we want. 
 
+best-friend
+1. do you have 
+Zhang Yongqi I think. 
+2. how did you meet? how long
+I met him in the first year of my high school, and we are in the same class. it takes half a year to become my best friend.
+3. similarities. why do you think you get along so well?
+once we went outside for physics olympliad training, and we were allocated to the same room. we talked about our study, and I told him what music and games I like. after that, we often came together to have fun. in the last year 
+4. how to maintain the friendship?
+
+childhood
+1. cannot remember, no talk, 
+2. tell everything, 
+3. tidy, father do what she want
+4. security, 
+
+I do not know the table
+
