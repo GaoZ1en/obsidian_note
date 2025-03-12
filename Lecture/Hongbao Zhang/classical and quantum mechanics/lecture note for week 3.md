@@ -289,17 +289,6 @@ $$\tag{2.21}
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-\xi ^{\nu}\zeta ^{\rho}\partial _{\mu}\partial _{\rho}\phi \partial _{\nu}\phi+\xi ^{\nu}\partial _{\mu}\phi \zeta ^{\rho}\partial _{\nu}\partial _{\rho}\phi & =-\zeta ^{\rho}\partial _{\rho}\xi ^{\nu}\partial _{\mu}\phi \partial _{\nu}\phi-\xi ^{\nu}\partial _{\rho}\zeta ^{\rho}\partial _{\mu}\phi \partial _{\nu}\phi \\
-\xi ^{\nu}\partial _{\mu}\zeta ^{\rho}\partial _{\rho}\phi \partial _{\nu}\phi & =\xi ^{\nu}\partial _{\mu}(\zeta ^{\rho}\partial _{\rho}\phi)\partial _{\nu}\phi-\xi ^{\nu}\zeta ^{\rho}\partial _{\mu}\partial _{\rho}\phi \partial _{\nu}\phi \\
- & =\partial _{\mu}(\mathcal{L_{\zeta}\phi})\mathcal{L}_{\xi}\phi-\xi ^{\nu}\partial _{\rho}(\zeta ^{\rho}\partial _{\mu}\phi)\partial _{\nu}\phi+\xi ^{\nu}\partial _{\rho}\zeta ^{\rho}\partial _{\mu}\phi \partial _{\nu}\phi \\
-\xi ^{\nu}\partial _{\mu}\phi \partial _{\nu}\zeta ^{\rho}\partial _{\rho}\phi & =\xi ^{\rho}\partial _{\rho}\zeta ^{\nu}\partial _{\mu}\phi \partial _{\nu}\phi \\
--\xi^{\nu}g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\zeta ^{\sigma}\partial _{\sigma}\phi & =-\frac{1}{2}\partial _{\rho}\phi \partial ^{\rho}\phi \xi _{\mu}\partial _{\sigma}\zeta ^{\sigma} \\
- & =-\partial ^{\rho}\phi \partial _{\rho}\partial _{\sigma}\phi \xi _{\mu}\zeta ^{\sigma}+\frac{1}{2}\partial _{\rho}\phi \partial ^{\rho}\phi \zeta ^{\sigma}\partial _{\sigma}\xi _{\mu}
-\end{align}
-$$
-
 $$\tag{2.22}
 \begin{align}
 H_{\left\{\xi,\zeta\right\}}' & =H_{\left\{\xi,\zeta\right\}}+\frac{1}{\gamma}H_{\partial\left\{\xi,\zeta\right\}} \\
@@ -309,6 +298,14 @@ H_{\left\{\xi,\zeta\right\}}' & =H_{\left\{\xi,\zeta\right\}}+\frac{1}{\gamma}H_
  & +\frac{1}{\gamma}\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}(\partial _{\mu}\phi \partial _{\nu}\xi ^{\rho}\partial _{\rho}\zeta ^{\nu}+\partial _{\mu}\phi \xi ^{\rho}\partial _{\nu}\partial _{\rho}\zeta ^{\nu}-\partial _{\mu}\phi \partial _{\nu}\zeta ^{\rho}\partial _{\rho}\xi ^{\nu}-\partial _{\mu}\phi \zeta ^{\rho}\partial _{\nu}\partial _{\rho}\xi ^{\nu}) \\
  & -\frac{1}{\gamma}\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}(\phi \partial _{\mu}\partial _{\nu}\xi ^{\rho}\partial _{\rho}\zeta ^{\nu}+\phi \partial _{\nu}\xi ^{\rho}\partial _{\mu}\partial _{\rho}\zeta ^{\nu}+\phi \partial _{\mu}\xi ^{\rho}\partial _{\nu}\partial _{\rho}\zeta ^{\nu}+\phi \xi ^{\rho}\partial _{\mu}\partial _{\nu}\partial _{\rho}\zeta ^{\nu} \\
  & -\phi \partial _{\mu}\partial _{\nu}\zeta ^{\rho}\partial _{\rho}\xi ^{\nu}-\phi \partial _{\nu}\zeta ^{\rho}\partial _{\mu}\partial _{\rho}\xi ^{\nu}-\phi \partial _{\mu}\zeta ^{\rho}\partial _{\nu}\partial _{\rho}\xi ^{\nu}-\phi \zeta ^{\rho}\partial _{\mu}\partial _{\nu}\partial _{\rho}\xi ^{\nu})
+\end{align}
+$$
+
+after a huge amount of algebra, we find that
+
+$$\tag{2.23}
+\begin{align}
+\left\{H'_{\xi},H'_{\zeta}\right\} & =H'_{\left\{\xi,\zeta\right\}}+\frac{1}{\gamma ^{2}}\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}(\partial _{\nu}\xi ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}-\partial _{\rho}\zeta ^{\rho}\partial _{\mu}\partial _{\nu}\xi ^{\nu})
 \end{align}
 $$
 
@@ -354,4 +351,13 @@ $$
 
 and the Liouville theory satisfies the same algebra as the free theory.
 
-the central charge is $\displaystyle{c=\frac{48\pi}{\beta ^{2}}}$
+I guess we have
+
+$$\tag{2.4}
+\begin{align}
+\left\{H_{\xi},H_{\zeta}\right\} & =H_{\left\{\xi,\zeta\right\}}+\frac{1}{\gamma ^{2}}\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}(\nabla _{\nu}\xi ^{\nu}\nabla _{\mu}\nabla _{\rho}\zeta ^{\rho}-\nabla _{\nu}\zeta ^{\nu}\nabla _{\mu}\nabla _{\rho}\xi ^{\rho})
+\end{align}
+$$
+
+it is hard to verify...
+

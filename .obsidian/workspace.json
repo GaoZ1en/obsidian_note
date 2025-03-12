@@ -37,8 +37,7 @@
               "title": "trash"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -111,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 464.5
+    "width": 464.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -120,11 +120,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d3d4ecdcd0b7b58b",
+  "active": "bb4171226f514300",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
-    "在报告里面应该讲什么呢.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
+    "在报告里面应该讲什么呢.md",
     "Lecture/2025 spring/english/week 3.md",
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/english",
