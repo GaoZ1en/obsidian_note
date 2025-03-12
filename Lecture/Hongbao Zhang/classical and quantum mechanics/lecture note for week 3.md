@@ -293,7 +293,10 @@ $$\tag{.}
 \begin{align}
 \xi ^{\nu}\zeta ^{\rho}\partial _{\mu}\partial _{\rho}\phi \partial _{\nu}\phi+\xi ^{\nu}\partial _{\mu}\phi \zeta ^{\rho}\partial _{\nu}\partial _{\rho}\phi & =-\zeta ^{\rho}\partial _{\rho}\xi ^{\nu}\partial _{\mu}\phi \partial _{\nu}\phi-\xi ^{\nu}\partial _{\rho}\zeta ^{\rho}\partial _{\mu}\phi \partial _{\nu}\phi \\
 \xi ^{\nu}\partial _{\mu}\zeta ^{\rho}\partial _{\rho}\phi \partial _{\nu}\phi & =\xi ^{\nu}\partial _{\mu}(\zeta ^{\rho}\partial _{\rho}\phi)\partial _{\nu}\phi-\xi ^{\nu}\zeta ^{\rho}\partial _{\mu}\partial _{\rho}\phi \partial _{\nu}\phi \\
- & =\partial _{\mu}(\mathcal{L_{\zeta}\phi})\mathcal{L}_{\xi}\phi-\xi ^{\nu}\partial _{\rho}(\zeta ^{\rho}\partial _{\mu}\phi)\partial _{\nu}\phi+\xi ^{\nu}\partial _{\rho}\zeta ^{\rho}\partial _{\mu}\phi \partial _{\nu}\phi
+ & =\partial _{\mu}(\mathcal{L_{\zeta}\phi})\mathcal{L}_{\xi}\phi-\xi ^{\nu}\partial _{\rho}(\zeta ^{\rho}\partial _{\mu}\phi)\partial _{\nu}\phi+\xi ^{\nu}\partial _{\rho}\zeta ^{\rho}\partial _{\mu}\phi \partial _{\nu}\phi \\
+\xi ^{\nu}\partial _{\mu}\phi \partial _{\nu}\zeta ^{\rho}\partial _{\rho}\phi & =\xi ^{\rho}\partial _{\rho}\zeta ^{\nu}\partial _{\mu}\phi \partial _{\nu}\phi \\
+-\xi^{\nu}g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\zeta ^{\sigma}\partial _{\sigma}\phi & =-\frac{1}{2}\partial _{\rho}\phi \partial ^{\rho}\phi \xi _{\mu}\partial _{\sigma}\zeta ^{\sigma} \\
+ & =-\partial ^{\rho}\phi \partial _{\rho}\partial _{\sigma}\phi \xi _{\mu}\zeta ^{\sigma}+\frac{1}{2}\partial _{\rho}\phi \partial ^{\rho}\phi \zeta ^{\sigma}\partial _{\sigma}\xi _{\mu}
 \end{align}
 $$
 
@@ -309,8 +312,6 @@ H_{\left\{\xi,\zeta\right\}}' & =H_{\left\{\xi,\zeta\right\}}+\frac{1}{\gamma}H_
 \end{align}
 $$
 
-
-
 here we again use (2.18)
 
 $$\tag{2.18}
@@ -320,3 +321,27 @@ $$\tag{2.18}
 \nabla ^{2}(\nabla _{\mu}\xi ^{\mu})+\xi ^{\mu}\nabla _{\mu}R+R\nabla _{\mu}\xi ^{\mu} =0 & \implies \partial _{\mu}\partial ^{\mu}(\partial _{\nu}\xi ^{\nu})=0
 \end{align}
 $$
+
+the algebra is not close here, the central extension term is independent of dynamical variables $\displaystyle{\phi}$. (although there is no anomaly).
+
+## Liouville theory
+
+the general solution of the eom of the Liouville theory
+
+$$\tag{3.1}
+\begin{align}
+\phi(x) & =\frac{1}{\beta}\ln \frac{F'(x^{+})G'(x^{-})}{\left[ 1+\frac{1}{4}m^{2}F(x^{+})G(x^{-}) \right]^{2}}
+\end{align}
+$$
+
+is form invariant under the following transformation
+
+$$\tag{.}
+\begin{align}
+x^{+} & \to y^{+}(x^{+}) \\
+x^{-} & \to y^{-}(x^{-}) \\
+\phi(x^{+},x^{-}) & \to \phi(y^{+},y^{-})-\ln(\partial _{+}y^{+})\ln(\partial _{-}y^{-})
+\end{align}
+$$
+
+the Lagrangian changes by a total derivative term under the transforma
