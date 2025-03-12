@@ -36,20 +36,6 @@
               "icon": "lucide-file",
               "title": "week 3"
             }
-          },
-          {
-            "id": "50e06f5c114a67d3",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://cn.bing.com/search?q=%E6%90%AC%E5%AE%B6",
-                "title": "搬家 - 搜索",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "搬家 - 搜索"
-            }
           }
         ],
         "currentTab": 1
@@ -125,7 +111,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 464.5
+    "width": 464.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -134,12 +121,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d3d4ecdcd0b7b58b",
+  "active": "f8f847e3c620ae68",
   "lastOpenFiles": [
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Lecture/2025 spring/english/week 3.md",
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/english",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Group meeting/week 9.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "在报告里面应该讲什么呢.md",

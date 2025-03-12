@@ -273,7 +273,16 @@ then we will consider the Poisson brackets between $\displaystyle{H'_{\xi}}$ and
 
 $$\tag{2.20}
 \begin{align}
-\left\{H_{\xi}',H_{\zeta}'\right\} & =X_{\xi}'\cdot X_{\zeta}'\cdot \omega =X_{\zeta}'\cdot \delta H'_{\xi} \\
- & =
+\left\{H_{\xi}',H_{\zeta}'\right\} & =X_{\xi}'\cdot X_{\zeta}'\cdot \omega =X_{\zeta}'\cdot \delta H'_{\xi}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\delta H_{\xi}' & =\delta\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\xi ^{\nu}\left( \partial _{\mu}\phi \partial _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\phi\right)+\frac{1}{\gamma}\delta\int \mathrm{d}x\sqrt{ h }\tau ^{\mu}(\partial _{\mu}\phi\partial _{\nu}\xi ^{\nu}-\phi \partial _{\mu}\partial _{\nu}\xi ^{\nu}) \\
+ & =\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\xi ^{\nu}\left( \partial _{\mu}\delta \phi \partial _{\nu}\phi+\partial _{\mu}\phi \partial _{\nu}\delta \phi-g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\delta \phi \right)+\frac{1}{\gamma}\int _{\Sigma} \mathrm{d}x\sqrt{ h }\tau ^{\mu}(\partial _{\mu}\delta \phi \partial _{\nu}\xi ^{\nu}-\delta \phi \partial _{\mu}\partial _{\nu}\xi ^{\nu}) \\
+\left\{H_{\xi}',H_{\zeta}'\right\} & =\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\xi ^{\nu}\left( \partial _{\mu}\left( \xi ^{\rho}\partial _{\rho}\phi+\frac{1}{\gamma}\partial _{\rho}\xi ^{\rho} \right)\partial _{\nu}\phi+\partial _{\mu}\phi \partial _{\nu}\left( \xi ^{\rho}\partial _{\rho}\phi+\frac{1}{\gamma}\partial _{\rho}\xi ^{\rho} \right)-g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\left( \xi ^{\sigma}\partial _{\sigma}\phi+\frac{1}{\gamma}\partial _{\sigma}\xi ^{\sigma} \right) \right) \\
+ & +\frac{1}{\gamma}\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\left( \partial _{\mu}\left( \xi ^{\nu}\partial _{\nu}\phi+\frac{1}{\gamma}\partial _{\nu}\xi ^{\nu} \right)\partial _{\rho}\xi ^{\rho}-\left( \xi ^{\nu}\partial _{\nu}\phi+\frac{1}{\gamma}\partial _{\nu}\xi ^{\nu} \right)\partial _{\mu}(\partial _{\nu}\xi ^{\nu}) \right) \\
+
 \end{align}
 $$
