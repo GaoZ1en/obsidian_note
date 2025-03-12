@@ -19,10 +19,17 @@ once we went outside for physics olympliad training, and we were allocated to th
 4. how to maintain the friendship?
 
 childhood
-1. cannot remember, no talk, 
-2. tell everything, 
-3. tidy, father do what she want
-4. security, 
+1. cannot remember, no talk, not close
+2. tell everything, get well
+3. mother always let her do something, father let her do what she want
+4. feel security,
 
 I do not know the table
 
+conflicts
+1. Roni: 
+	1. mother: feeling rejected and upset, taking personally, hope dauther take her experience
+	2. dauther: mother not listen to her, and say nothing right
+2. Victoria: 
+	1. mothers: hopes their dauthers follow their footsteps, feeling betrayed, criticisms.
+	2. dauther: live a different life

@@ -52,21 +52,21 @@
             }
           },
           {
-            "id": "aace185e02af0067",
+            "id": "be87f2d9ba2490eb",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://zhuanlan.zhihu.com/p/656807888",
-                "title": "Linux 下的 10 个 PDF 软件 - 知乎",
+                "url": "https://linuxconfig.org/best-pdf-reader-for-linux",
+                "title": "Best PDF Reader for Linux - LinuxConfig",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Linux 下的 10 个 PDF 软件 - 知乎"
+              "title": "Best PDF Reader for Linux - LinuxConfig"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -149,10 +149,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "aace185e02af0067",
+  "active": "f8f847e3c620ae68",
   "lastOpenFiles": [
-    "Lecture/2025 spring/english/week 3.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
+    "Lecture/2025 spring/english/week 3.md",
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/english",
     "Group meeting/week 9.md",
