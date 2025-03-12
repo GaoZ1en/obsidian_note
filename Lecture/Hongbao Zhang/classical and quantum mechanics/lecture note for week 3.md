@@ -277,13 +277,53 @@ $$\tag{2.20}
 \end{align}
 $$
 
-$$\tag{.}
+$$\tag{2.21}
 \begin{align}
 \delta H_{\xi}' & =\delta\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\xi ^{\nu}\left( \partial _{\mu}\phi \partial _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\phi\right)+\frac{1}{\gamma}\delta\int \mathrm{d}x\sqrt{ h }\tau ^{\mu}(\partial _{\mu}\phi\partial _{\nu}\xi ^{\nu}-\phi \partial _{\mu}\partial _{\nu}\xi ^{\nu}) \\
  & =\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\xi ^{\nu}\left( \partial _{\mu}\delta \phi \partial _{\nu}\phi+\partial _{\mu}\phi \partial _{\nu}\delta \phi-g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\delta \phi \right)+\frac{1}{\gamma}\int _{\Sigma} \mathrm{d}x\sqrt{ h }\tau ^{\mu}(\partial _{\mu}\delta \phi \partial _{\nu}\xi ^{\nu}-\delta \phi \partial _{\mu}\partial _{\nu}\xi ^{\nu}) \\
 \left\{H_{\xi}',H_{\zeta}'\right\} & =\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\xi ^{\nu}\left( \partial _{\mu}\left( \zeta ^{\rho}\partial _{\rho}\phi+\frac{1}{\gamma}\partial _{\rho}\zeta ^{\rho} \right)\partial _{\nu}\phi+\partial _{\mu}\phi \partial _{\nu}\left(\zeta^{\rho}\partial _{\rho}\phi+\frac{1}{\gamma}\partial _{\rho}\zeta^{\rho} \right)-g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\left( \zeta^{\sigma}\partial _{\sigma}\phi+\frac{1}{\gamma}\partial _{\sigma}\zeta^{\sigma} \right) \right) \\
  & +\frac{1}{\gamma}\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\left( \partial _{\mu}\left( \zeta^{\nu}\partial _{\nu}\phi+\frac{1}{\gamma}\partial _{\nu}\zeta^{\nu} \right)\partial _{\rho}\zeta^{\rho}-\left( \zeta^{\nu}\partial _{\nu}\phi+\frac{1}{\gamma}\partial _{\nu}\zeta^{\nu} \right)\partial _{\mu}(\partial _{\nu}\zeta^{\nu}) \right) \\
- & =\int \mathrm{d}x\sqrt{ h }\tau ^{\mu}\xi ^{\nu}\left( \partial _{\mu}\zeta ^{\rho}\partial _{\rho}\phi \partial _{\nu}\phi+\zeta ^{\rho}\partial _{\mu}\partial _{\rho}\phi \partial _{\nu}\phi+\frac{1}{\gamma}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}\partial _{\nu}\phi+\partial _{\mu}\phi \partial _{\nu}\zeta ^{\rho}\partial _{\rho}\phi+\partial _{\mu}\phi \zeta ^{\rho}\partial _{\nu}\partial _{\rho}\phi+\frac{1}{\gamma}\partial _{\mu}\phi \partial _{\nu}\partial _{\rho}\zeta ^{\rho} \right. \\
- & -g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\zeta ^{\sigma}\partial _{\sigma}\phi-\frac{1}{\gamma}g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}
+ & =\int _{\Sigma} \mathrm{d}x\sqrt{ h }\tau ^{\mu}\xi ^{\nu}\left( \partial _{\mu}\zeta ^{\rho}\partial _{\rho}\phi \partial _{\nu}\phi+\zeta ^{\rho}\partial _{\mu}\partial _{\rho}\phi \partial _{\nu}\phi+\frac{1}{\gamma}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}\partial _{\nu}\phi+\partial _{\mu}\phi \partial _{\nu}\zeta ^{\rho}\partial _{\rho}\phi+\partial _{\mu}\phi \zeta ^{\rho}\partial _{\nu}\partial _{\rho}\phi+\frac{1}{\gamma}\partial _{\mu}\phi \partial _{\nu}\partial _{\rho}\zeta ^{\rho} \right. \\
+ & \left.-g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\zeta ^{\sigma}\partial _{\sigma}\phi-\frac{1}{\gamma}g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\partial _{\sigma}\zeta ^{\sigma}\right)+\frac{1}{\gamma}\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\left( \partial _{\mu}\zeta ^{\nu}\partial _{\nu}\phi \partial _{\rho}\xi ^{\rho}+\zeta ^{\nu}\partial _{\mu}\partial _{\nu}\phi \partial _{\rho}\xi ^{\rho}+\frac{1}{\gamma}\partial _{\mu}\partial _{\nu}\zeta ^{\nu}\partial _{\rho}\xi ^{\rho} \right. \\
+ & \left.-\zeta ^{\nu}\partial _{\nu}\phi \partial _{\mu}\partial _{\rho}\xi ^{\rho}-\frac{1}{\gamma}\partial _{\nu}\zeta ^{\nu}\partial _{\mu}\partial _{\rho}\xi ^{\rho}\right)
+\end{align}
+$$
+
+$$\tag{2.22}
+\begin{align}
+H_{\left\{\xi,\zeta\right\}}' & =H_{\left\{\xi,\zeta\right\}}+\frac{1}{\gamma}H_{\partial\left\{\xi,\zeta\right\}} \\
+ & =\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}(\xi ^{\sigma}\partial _{\sigma}\zeta ^{\nu}-\zeta ^{\sigma}\partial _{\sigma}\xi ^{\nu})\left( \partial _{\mu}\phi \partial _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\phi \right) \\
+ & +\frac{1}{\gamma}\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}(\partial _{\mu}\phi \partial _{\nu}(\xi ^{\rho}\partial _{\rho}\zeta ^{\nu}-\zeta ^{\rho}\partial _{\rho}\xi ^{\nu})-\phi \partial _{\mu}\partial _{\nu}(\xi ^{\rho}\partial _{\rho}\zeta ^{\nu}-\zeta ^{\rho}\partial _{\rho}\xi ^{\nu})) \\
+ & =\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\left( \partial _{\mu}\phi \partial _{\nu}\phi \xi ^{\sigma}\partial _{\sigma}\zeta ^{\nu}-\partial _{\mu}\phi \partial _{\nu}\phi \zeta ^{\sigma}\partial _{\sigma}\xi ^{\nu}-\frac{1}{2}\partial _{\rho}\phi \partial ^{\rho}\phi \xi ^{\sigma}\partial _{\sigma}\zeta _{\mu}+\frac{1}{2}\partial _{\rho}\phi \partial ^{\rho}\phi \zeta ^{\sigma}\partial _{\sigma}\xi _{\mu} \right) \\
+ & +\frac{1}{\gamma}\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}(\partial _{\mu}\phi \partial _{\nu}\xi ^{\rho}\partial _{\rho}\zeta ^{\nu}+\partial _{\mu}\phi \xi ^{\rho}\partial _{\nu}\partial _{\rho}\zeta ^{\nu}-\partial _{\mu}\phi \partial _{\nu}\zeta ^{\rho}\partial _{\rho}\xi ^{\nu}-\partial _{\mu}\phi \zeta ^{\rho}\partial _{\nu}\partial _{\rho}\xi ^{\nu})
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\phi \partial _{\mu}(\partial _{\nu}\xi ^{\rho}\partial _{\rho}\zeta ^{\nu}+\xi ^{\rho}\partial _{\nu}\partial _{\rho}\zeta ^{\nu}-\partial _{\nu}\zeta ^{\rho})
+\end{align}
+$$
+
+
+$$\tag{.}
+\begin{align}
+-g_{\mu \nu}\partial _{\rho}\phi \partial _{\sigma}\phi \partial ^{\rho}\zeta ^{\sigma}=-\frac{1}{2}g_{\mu \nu}\partial _{\rho}\phi \partial _{\sigma}\phi(\partial ^{\rho}\zeta ^{\sigma}+\partial ^{\sigma}\zeta ^{\rho})=-\frac{1}{2}g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\phi \partial _{\sigma}\zeta ^{\sigma}
+\end{align}
+$$
+
+here we again use (2.18)
+
+$$\tag{2.18}
+\begin{align}
+\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu}-g_{\mu \nu}\nabla _{\rho}\xi ^{\rho} =0 & \implies \partial _{\mu}\xi _{\nu}+\partial _{\nu}\xi_{\mu}-g_{\mu \nu}\partial _{\rho}\xi ^{\rho} =0 \\
+\nabla ^{\nu}\nabla _{\nu}\xi _{\mu}+\frac{1}{2}Rg_{\mu \nu}\xi ^{\nu} =0  & \implies \partial _{\nu}\partial ^{\nu}\xi _{\mu}=0\\
+\nabla ^{2}(\nabla _{\mu}\xi ^{\mu})+\xi ^{\mu}\nabla _{\mu}R+R\nabla _{\mu}\xi ^{\mu} =0 & \implies \partial _{\mu}\partial ^{\mu}(\partial _{\nu}\xi ^{\nu})=0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\left\{\xi,\zeta\right\}^{\mu} & =\xi ^{\nu}\partial _{\nu}\zeta ^{\mu}-\zeta ^{\nu}\partial _{\nu}\xi ^{\mu}
 \end{align}
 $$
