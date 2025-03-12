@@ -21,8 +21,23 @@
               "icon": "lucide-file",
               "title": "lecture note for week 3"
             }
+          },
+          {
+            "id": "86e974aa24bf43e3",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=173&id=264960&wreply=https%3a%2f%2fcn.bing.com%2fsecure%2fPassport.aspx%3fedge_suppress_profile_switch%3d1%26requrl%3dhttps%253a%252f%252fcn.bing.com%252f%253fwlexpsignin%253d1%26sig%3d1534384C2C2563E328D72DE12D0B6295%26nopa%3d2&wp=MBI_SSL&lc=2052&CSRFToken=c831c460-c990-4427-9a1e-5d3915afdf5e&cobrandid=c333cba8-c15c-4458-b082-7c8ce81bee85&aadredir=1&nopa=2",
+                "title": "login.live.com/login.srf?wa=wsignin1.0&rpsnv=173&id=264960&wreply=https%3a%2f%2fcn.bing.com%2fsecure%2fPassport.aspx%3fedge_suppress_profile_switch%3d1%26requrl%3dhttps%253a%252f%252fcn.bing.com%252f%253fwlexpsignin%253d1%26sig%3d1534384C2C2563E328D72DE12D0B6295%26nopa%3d2&wp=MBI_SSL&lc=2052&CSRFToken=c831c460-c990-4427-9a1e-5d3915afdf5e&cobrandid=c333cba8-c15c-4458-b082-7c8ce81bee85&aadredir=1&nopa=2",
+                "mode": "error"
+              },
+              "icon": "globe-2",
+              "title": "login.live.com/login.srf?wa=wsignin1.0&rpsnv=173&id=264960&wreply=https%3a%2f%2fcn.bing.com%2fsecure%2fPassport.aspx%3fedge_suppress_profile_switch%3d1%26requrl%3dhttps%253a%252f%252fcn.bing.com%252f%253fwlexpsignin%253d1%26sig%3d1534384C2C2563E328D72DE12D0B6295%26nopa%3d2&wp=MBI_SSL&lc=2052&CSRFToken=c831c460-c990-4427-9a1e-5d3915afdf5e&cobrandid=c333cba8-c15c-4458-b082-7c8ce81bee85&aadredir=1&nopa=2"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,10 +120,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "bb4171226f514300",
+  "active": "86e974aa24bf43e3",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
     "在报告里面应该讲什么呢.md",
     "Lecture/2025 spring/english/week 3.md",
     "Articles/Topologically massive gravity/trash.md",
