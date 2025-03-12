@@ -348,8 +348,10 @@ the Lagrangian changes by a total derivative term under the transformation
 
 $$\tag{3.3}
 \begin{align}
-X_{\xi}\cdot \delta \phi & =\xi ^{\mu}\partial _{\mu}\phi+\partial _{\mu}\xi ^{\mu}
+X_{\xi}\cdot \delta \phi & =\xi ^{\mu}\partial _{\mu}\phi+\frac{1}{\gamma}\partial _{\mu}\xi ^{\mu}
 \end{align}
 $$
 
 and the Liouville theory satisfies the same algebra as the free theory.
+
+the central charge is $\displaystyle{c=\frac{48\pi}{\beta ^{2}}}$
