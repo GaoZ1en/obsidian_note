@@ -243,7 +243,9 @@ $$\tag{2.17}
 X_{\xi}'\cdot \delta S & =-\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}\phi \nabla ^{\mu}\left( \xi ^{\mu}\nabla _{\mu}\phi+\frac{1}{\gamma}\nabla _{\mu}\xi ^{\mu} \right) \\
  & =-\int \mathrm{d}^{2}x\sqrt{ -g }\nabla _{\mu}\phi \left( \nabla ^{\mu}\xi ^{\nu}\nabla _{\nu}\phi+\xi ^{\nu}\nabla ^{\mu}\nabla _{\nu}\phi+\frac{1}{\gamma}\nabla ^{\mu}\nabla _{\nu}\xi ^{\nu} \right) \\
  & =-\int \mathrm{d}^{2}x\sqrt{ -g }\left( \frac{1}{2}(\nabla ^{\mu}\xi ^{\nu}+\nabla ^{\nu}\xi ^{\mu})\nabla _{\mu}\phi \nabla _{\nu}\phi+\xi ^{\nu}\nabla _{\mu}\phi \nabla _{\nu}\nabla ^{\mu}\phi+\frac{1}{\gamma}\nabla _{\mu}\phi \nabla ^{\mu}\nabla _{\nu}\xi ^{\nu} \right) \\
- & =-\int \mathrm{d}^{2}x\sqrt{ -g }\left( \frac{1}{2}\nabla _{\mu}\phi \nabla ^{\mu}\phi \nabla _{\nu}\xi ^{\nu}+\frac{1}{2}\xi ^{\nu}\nabla _{\nu}(\nabla _{\mu}\phi \nabla ^{\mu}\phi) \right)
+\text{under flat background} & =-\int \mathrm{d}^{2}x\left( \frac{1}{2}\partial_{\mu}\xi ^{\mu}\partial_{\nu}\phi \partial ^{\nu}\phi+\frac{1}{2}\xi ^{\mu}\partial _{\mu}(\partial_{\nu}\phi \partial ^{\nu}\phi)+\frac{1}{\gamma}\partial _{\mu}(\phi \partial ^{\mu}\partial _{\nu}\xi ^{\nu}) \right) \\
+ & =-\int \mathrm{d}^{2}x\partial ^{\mu}\left( \frac{1}{2}\xi _{\mu}\partial _{\nu}\phi \partial ^{\nu}\phi +\frac{1}{\gamma}\phi \partial _{\mu}\partial _{\nu}\xi ^{\nu}\right) \\
+ & =\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\left( \frac{1}{2}\xi _{\mu}\partial _{\nu}\phi \partial ^{\nu}\phi+\frac{1}{\gamma}\phi \partial _{\mu}\partial _{\nu}\xi ^{\nu} \right)
 \end{align}
 $$
 
@@ -257,3 +259,21 @@ $$\tag{2.18}
 \end{align}
 $$
 
+then the corresponding Noether charge is 
+
+$$\tag{2.19}
+\begin{align}
+H_{\xi}' & =X_{\xi}'\cdot \theta-\alpha _{\xi}' \\
+ & =\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\partial _{\mu}\phi\left( \xi ^{\nu}\partial _{\nu}\phi+\frac{1}{\gamma}\partial _{\nu}\xi ^{\nu} \right)-\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\left(\frac{1}{2}\xi _{\mu}\partial _{\nu}\phi \partial ^{\nu}\phi+\frac{1}{\gamma}\phi \partial _{\mu}\partial _{\nu}\xi ^{\nu}\right) \\
+ & =H_{\xi}+\frac{1}{\gamma}H_{\partial \xi}
+\end{align}
+$$
+
+then we will consider the Poisson brackets between $\displaystyle{H'_{\xi}}$ and $\displaystyle{H'_{\zeta}}$
+
+$$\tag{2.20}
+\begin{align}
+\left\{H_{\xi}',H_{\zeta}'\right\} & =X_{\xi}'\cdot X_{\zeta}'\cdot \omega =X_{\zeta}'\cdot \delta H'_{\xi} \\
+ & =
+\end{align}
+$$
