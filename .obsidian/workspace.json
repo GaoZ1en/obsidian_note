@@ -23,17 +23,17 @@
             }
           },
           {
-            "id": "86e974aa24bf43e3",
+            "id": "9f3daac1ddc45bf8",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=173&id=264960&wreply=https%3a%2f%2fcn.bing.com%2fsecure%2fPassport.aspx%3fedge_suppress_profile_switch%3d1%26requrl%3dhttps%253a%252f%252fcn.bing.com%252f%253fwlexpsignin%253d1%26sig%3d1534384C2C2563E328D72DE12D0B6295%26nopa%3d2&wp=MBI_SSL&lc=2052&CSRFToken=c831c460-c990-4427-9a1e-5d3915afdf5e&cobrandid=c333cba8-c15c-4458-b082-7c8ce81bee85&aadredir=1&nopa=2",
-                "title": "login.live.com/login.srf?wa=wsignin1.0&rpsnv=173&id=264960&wreply=https%3a%2f%2fcn.bing.com%2fsecure%2fPassport.aspx%3fedge_suppress_profile_switch%3d1%26requrl%3dhttps%253a%252f%252fcn.bing.com%252f%253fwlexpsignin%253d1%26sig%3d1534384C2C2563E328D72DE12D0B6295%26nopa%3d2&wp=MBI_SSL&lc=2052&CSRFToken=c831c460-c990-4427-9a1e-5d3915afdf5e&cobrandid=c333cba8-c15c-4458-b082-7c8ce81bee85&aadredir=1&nopa=2",
-                "mode": "error"
+                "url": "https://mooc1.chaoxing.com/mooc-ans/resourcescontroller/showpreview?attachmentId=1687513596&courseId=241603584&fid=0&knowledgeId=837851698&objectId=b166c9883ccecdcd12fbfb01ee53028b",
+                "title": "在线观看",
+                "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "login.live.com/login.srf?wa=wsignin1.0&rpsnv=173&id=264960&wreply=https%3a%2f%2fcn.bing.com%2fsecure%2fPassport.aspx%3fedge_suppress_profile_switch%3d1%26requrl%3dhttps%253a%252f%252fcn.bing.com%252f%253fwlexpsignin%253d1%26sig%3d1534384C2C2563E328D72DE12D0B6295%26nopa%3d2&wp=MBI_SSL&lc=2052&CSRFToken=c831c460-c990-4427-9a1e-5d3915afdf5e&cobrandid=c333cba8-c15c-4458-b082-7c8ce81bee85&aadredir=1&nopa=2"
+              "title": "在线观看"
             }
           }
         ],
@@ -84,7 +84,7 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.deepseek.com/a/chat/s/18393622-acff-42ee-86a9-3aa7b7cd8ea8",
+                "url": "https://chat.deepseek.com/a/chat/s/4569860a-37e5-4600-9570-cd07b0810d97",
                 "title": "DeepSeek - 探索未至之境",
                 "mode": "webview"
               },
@@ -110,8 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 464.5,
-    "collapsed": true
+    "width": 464.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -120,7 +119,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "86e974aa24bf43e3",
+  "active": "d3d4ecdcd0b7b58b",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
