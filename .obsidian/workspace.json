@@ -21,37 +21,8 @@
               "icon": "lucide-file",
               "title": "lecture note for week 3"
             }
-          },
-          {
-            "id": "9f3daac1ddc45bf8",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://mooc1.chaoxing.com/nodedetailcontroller/visitnodedetail?courseId=241603584&knowledgeId=837851777&enc=&mooc2=1",
-                "title": "课程门户-章节详情",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "课程门户-章节详情"
-            }
-          },
-          {
-            "id": "419000b77320d8e4",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://cn.bing.com/search?q=%e6%9f%a5%e7%9c%8b%e6%8c%82%e8%bd%bd%e4%bf%a1%e6%81%af&qs=SC&pq=%e6%9f%a5%e7%9c%8b%e6%8c%82%e8%bd%bd&sc=12-4&cvid=E15308DA24584BC3885C192365EDE2E7&FORM=QBRE&sp=1&lq=0",
-                "title": "查看挂载信息 - 搜索",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "查看挂载信息 - 搜索"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -124,7 +95,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 825.5
+    "width": 825.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -133,7 +105,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d3d4ecdcd0b7b58b",
+  "active": "bb4171226f514300",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
