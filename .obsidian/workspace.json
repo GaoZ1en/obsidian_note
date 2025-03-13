@@ -28,7 +28,7 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://mooc1.chaoxing.com/mooc-ans/resourcescontroller/showpreview?attachmentId=1687513598&courseId=241603584&fid=0&knowledgeId=837851700&objectId=e0c0b362b8bb11ce4a0907a4fe36dba9",
+                "url": "https://mooc1.chaoxing.com/mooc-ans/resourcescontroller/showpreview?attachmentId=1687513616&courseId=241603584&fid=0&knowledgeId=837851722&objectId=3c9601b07b52d0d715f03d51b5c4d264",
                 "title": "在线观看",
                 "mode": "webview"
               },
@@ -84,7 +84,7 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.deepseek.com/a/chat/s/4569860a-37e5-4600-9570-cd07b0810d97",
+                "url": "https://chat.deepseek.com/a/chat/s/68fe0674-9fb8-4144-9a8e-41ccdc929a0e",
                 "title": "DeepSeek - 探索未至之境",
                 "mode": "webview"
               },
