@@ -66,3 +66,20 @@ $$\tag{1.7}
 $$
 
 and the procedure are similar for fermions.
+
+Kruskal-Szekeres coordinates
+
+$$\tag{1.8}
+\begin{align}
+U & =-\left( \frac{r}{2GM}-1 \right)^{1/2}e^{r/4GM}e^{-t/4GM} \\
+V & =\left( \frac{r}{2GM} \right)^{1/2}e^{r/4GM}e^{t/4GM}
+\end{align}
+$$
+
+the Schwarzschild metric is
+
+$$\tag{1.9}
+\begin{align}
+\mathrm{d}s^{2} & =\dots
+\end{align}
+$$

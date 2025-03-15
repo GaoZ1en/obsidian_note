@@ -33,5 +33,4 @@ direct generalization of isotropic and Lagrangian subspaces.
 > $$\begin{align}\forall x \in M \forall v\in T_{x}M, \iota _{v}\omega=0\implies v=0\end{align}$$
 > if $\displaystyle{\omega}$ is an $\displaystyle{n}$-plectic form on $\displaystyle{M}$ we call the pair $\displaystyle{(M,\omega)}$ an $\displaystyle{n}$-plectic manifold.
 
-generalization of symplectic manifold. notice that there is no Darboux-like theorem for a general $\displaystyle{n}$-plectic manifold.
-
+generalization of symplectic manifold. notice that there is no Darboux-like theorem for a general $\displaystyle{n}$-plectic manifold. the simplest 
