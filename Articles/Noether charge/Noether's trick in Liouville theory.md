@@ -357,8 +357,6 @@ X_{\xi}\cdot \delta T_{\mu \nu} & =X_{\xi}\cdot \delta\left(-\nabla_{\mu}\phi \n
 \end{align}
 $$
 
-
-
 here we use
 
 $$\tag{4.3}

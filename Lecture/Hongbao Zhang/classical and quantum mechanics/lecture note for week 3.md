@@ -301,7 +301,7 @@ H_{\left\{\xi,\zeta\right\}}' & =H_{\left\{\xi,\zeta\right\}}+\frac{1}{\gamma}H_
 \end{align}
 $$
 
-after a huge amount of algebra, we find that
+after a huge amount of algebra, we find that all terms contains $\displaystyle{\phi}$ vanishes due to equation of motion or conformal Killing equations of $\displaystyle{\xi ^{\mu}}$ and $\displaystyle{\zeta ^{\mu}}$, and we have
 
 $$\tag{2.23}
 \begin{align}

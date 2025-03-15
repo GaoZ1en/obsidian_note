@@ -13,16 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Note/Physics/Higher geometry in physics/Higher gauge theories.md",
+                "file": "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Higher gauge theories"
+              "title": "Higher symplectic geometry"
+            }
+          },
+          {
+            "id": "452a953be9307160",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "lecture note for week 3"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,21 +120,27 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "bb4171226f514300",
+  "active": "452a953be9307160",
   "lastOpenFiles": [
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
+    "Articles/Noether charge/Noether's trick in Liouville theory.md",
+    "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
+    "Home.md",
     "Note/Code/tikz/tikzcd exercise.md",
-    "Note/Physics/Higher geometry in physics/Higher gauge theories.md",
+    "Note/Code/search engine.md",
+    "Note/Code/browser.md",
+    "Note/Code/lua.md",
+    "Note/Code/mermaid.md",
     "Lecture/2025 spring/日本文艺史.md",
     "Note/Physics/Higher geometry in physics",
     "Lecture/未命名.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
     "在报告里面应该讲什么呢.md",
     "Lecture/2025 spring/english/week 3.md",
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/english",
     "Group meeting/week 9.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "Articles/Noether charge/An example of constrained Hamiltonian systems.md",
     "Articles/Noether charge/Complex Klein-Gordon scalar.md",
     "Lecture/2025 spring/python for physics/function.md",
@@ -128,12 +150,6 @@
     "Lecture/2025 spring/python for physics/basic.md",
     "Lecture/2025 spring/python for physics/input.md",
     "Lecture/2025 spring/python for general purpose/venv.md",
-    "Lecture/2025 spring/python for general purpose/fstring.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/quantum mechanics.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/classical mechanics.md",
-    "Lecture/Hongbao Zhang/saturnday/week2.md",
-    "Homework/未命名.md",
-    "Homework/统计学导论/作业6.md",
     "Lecture/2025 spring/日本文艺史.md~",
     "Lecture/2025 spring/python for general purpose",
     "Lecture/2025 spring/python for physics",
