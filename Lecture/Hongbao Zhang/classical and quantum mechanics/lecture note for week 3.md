@@ -359,5 +359,5 @@ $$\tag{2.4}
 \end{align}
 $$
 
-it is hard to verify...
+I think we need extra terms containing $\displaystyle{R}$...?
 
