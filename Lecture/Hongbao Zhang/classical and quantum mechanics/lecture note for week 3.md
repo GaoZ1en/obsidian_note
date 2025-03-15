@@ -228,7 +228,15 @@ H_{\Omega} & =X_{\Omega}\cdot \theta-\alpha _{\Omega} \\
 \end{align}
 $$
 
-then consider a combined transformation
+consider the poisson brackets 
+
+$$\tag{.}
+\begin{align}
+\left\{H_{\Omega_{1}},H_{\Omega_{2}}\right\} & =X_{\Omega}
+\end{align}
+$$
+
+finally consider a combined transformation
 
 $$\tag{2.16}
 \begin{align}

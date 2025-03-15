@@ -58,4 +58,4 @@ $$\tag{2.1}
 \end{align}
 $$
 
-be the graded commutative algebra of multivector fields. there is a $\displaystyle{\mathbb{R}}$-bilinear map $\displaystyle{[\cdot,\cdot]:\mathfrak{X}^{\wedge\cdot}(M)\times \mathfrak{X}^{\wedge\cdot}(M)\to \mathfrak{X}^{\wedge\cdot}(M)}$ called the Schouten bracket, which 
+be the graded commutative algebra of multivector fields. there is a $\displaystyle{\mathbb{R}}$-bilinear map $\displaystyle{[\cdot,\cdot]:\mathfrak{X}^{\wedge\cdot}(M)\times \mathfrak{X}^{\wedge\cdot}(M)\to \mathfrak{X}^{\wedge\cdot}(M)}$ called the Schouten bracket, which gives $\displaystyle{\mathfrak{X}^{\wedge\cdot}(M)}$ the structure of a Gerstenhaber algebra (graded Lie algebra). the Schouten bracket

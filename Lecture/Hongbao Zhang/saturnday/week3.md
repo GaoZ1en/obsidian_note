@@ -128,10 +128,31 @@ $$\tag{2.5}
 \begin{align}
 \left( -\frac{\mathrm{d}^{2}}{\mathrm{d}r^{2}_{*}}+V_{\mathrm{eff}}(r_{*}) \right)\tilde{\lambda}(r_{*})=\omega ^{2}\lambda(r_{*}) \\
 \implies \tilde{\lambda} _{\omega}(r^{*})\sim \begin{cases}
-e^{i \omega r_{*}}+\tilde{R}(\omega)e^{-i \omega r_{*}} & r_{*}\to -\infty \\
-\tilde{T}(\omega)e^{i \omega r_{*}}, & r_{*}\to \infty \\
+e^{-i \omega r_{*}}+\tilde{R}(\omega)e^{+i \omega r_{*}} & r_{*}\to \infty \\
+\tilde{T}(\omega)e^{-i \omega r_{*}}, & r_{*}\to -\infty \\
 \end{cases}
 \end{align}
 $$
+by calculating the Wronskian $\displaystyle{\lambda _{\omega}\overleftrightarrow{\frac{\mathrm{d}}{\mathrm{d}r_{*}}}\tilde{\lambda} _{\omega}}$ is independent of $\displaystyle{r_{*}}$, and we have $\displaystyle{T(\omega)=\tilde{T}(\omega)}$ (equilibrium)
 
-then we have $\displaystyle{\lambda _{\omega}\overleftrightarrow}$
+seems like quantum mechanics and some optics.
+
+consider the operator
+
+$$\tag{2.6}
+\begin{align}
+W=\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ h }(a(x)\sigma(x)+b(x)\dot{\sigma}(x))
+\end{align}
+$$
+
+where $\displaystyle{\dot{\sigma}}$ is the derivative long the normal vector of $\displaystyle{\Sigma}$. one can view $\displaystyle{a}$ and $\displaystyle{b}$ as initial condition for a solution $\displaystyle{f}$ of the Klein-Gorgon equation $\displaystyle{D^{2}f=0}$, then
+
+$$\tag{2.7}
+\begin{align}
+W=\int _{S}\mathrm{d}\Sigma ^{\mu}f \overset{\leftrightarrow}{\partial}_{\mu}\sigma
+\end{align}
+$$
+
+this is a conserved charge...
+
+
