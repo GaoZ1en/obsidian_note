@@ -80,6 +80,31 @@ the Schwarzschild metric is
 
 $$\tag{1.9}
 \begin{align}
-\mathrm{d}s^{2} & =\dots
+\mathrm{d}s^{2} & =-\frac{32G^{3}M^{3}}{r}e^{-r/2GM}\mathrm{d}U\mathrm{d}V+r^{2}\mathrm{d}\Omega ^{2}
+\end{align}
+$$
+
+gray body
+
+consider a massless scalar $\displaystyle{\phi}$ interacts with gravity. in schwarzschild background, the action for a mode of angular momentum $\displaystyle{l}$ is
+
+$$\tag{2.1}
+\begin{align}
+S & = \int \mathrm{d}t\mathrm{d}r \left(\frac{r^{2}}{2} \frac{1}{1-\frac{2GM}{r}} \left( \frac{\mathrm{d}\phi}{\mathrm{d}t} \right)^{2}-\frac{r^{2}}{2}\left( 1-\frac{2GM}{r} \right) \left( \frac{\mathrm{d}\phi}{\mathrm{d}t} \right)^{2}-\frac{l(l+1)}{2}\phi ^{2}\right)
+\end{align}
+$$
+
+under tortoise coordinate $\displaystyle{r_{*}=r+2GM\log(r-2GM)}$ and setting $\displaystyle{\phi=\frac{\sigma}{r}}$, we have
+
+$$\tag{2.2}
+\begin{align}
+S=\int \mathrm{d}t\mathrm{d}r_{*}\left(\frac{1}{2}\left( \frac{\mathrm{d}\sigma}{\mathrm{d}t} \right)^{2}-\frac{1}{2}\left( \frac{\mathrm{d}\sigma}{\mathrm{d}r_{*}} \right)^{2}-\left( 1-\frac{2GM}{r} \right)\left( \frac{l(l+1)}{2r^{2}}+\frac{GM}{r^{3}} \right)\sigma ^{2}\right)
+\end{align}
+$$
+
+we have the following effective potential
+$$\tag{.}
+\begin{align}
+
 \end{align}
 $$
