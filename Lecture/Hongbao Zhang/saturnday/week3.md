@@ -36,3 +36,33 @@ there is a anti-periodic with $\displaystyle{t\to t+8\pi GMi}$, which correspond
 
 acturally $\displaystyle{1.4}$ is exactly the 2-pt function of a chiral free fermion at temperature $\displaystyle{T_{H}}$ (see Levin Wen or my note on quantum manybody theory, $\displaystyle{\braket{ \psi(t)\psi(t') }=\frac{1}{Z}\mathrm{Tr}e^{-\beta H}\psi(t)\psi(t')}$). 
 
+here we give a proof of (anti)periodicity of 2-pt thermal correlation function of boson (fermion), defined as 
+
+$$\tag{1.5}
+\begin{align}
+\braket{ \phi(t)\phi(t') } & =\frac{1}{Z}\mathrm{Tr}(e^{-\beta H}T[\phi(t)\phi(t')])
+\end{align}
+$$
+
+denote $\displaystyle{Z=\mathrm{Tr}e^{-\beta H}=e^{-\beta \Omega}}$
+
+$$\tag{1.6}
+\begin{align}
+\braket{ \phi(t)\phi(t') } & =\mathrm{Tr}(e^{-\beta(H-\Omega)}T[\phi(t)\phi(t')]) \\
+ & =\theta(t-t')\mathrm{Tr}(e^{-\beta(H-\Omega)}\phi(t)\phi(t'))+\theta(t-t')\mathrm{Tr}(e^{-\beta(H-\Omega)}\phi(t')\phi(t))
+\end{align}
+$$
+
+for simplicity, choose $\displaystyle{t'=0}$ and consider $\displaystyle{t<0}$, then
+
+$$\tag{1.7}
+\begin{align}
+\braket{ \phi(t)\phi(0) } & =\mathrm{Tr}(e^{-\beta(H-\Omega)}\phi(0)\phi(t)) \\
+ & =e^{\beta \Omega}\mathrm{Tr}(e^{-\beta H}\phi(0)e^{iHt}\phi(0)e^{-iHt}) \\
+ & =e^{\beta \Omega}\mathrm{Tr}(e^{-i(t+i\beta)H}\phi(0)e^{i(t+i\beta)H}e^{\beta H}\phi(0)e^{-\beta H}) \\
+ & =e^{\beta \Omega}\mathrm{Tr}(e^{-\beta H}\phi(t+i\beta)\phi(0)) \\
+ & = \braket{ \phi(t+i\beta)\phi(0) } 
+\end{align}
+$$
+
+and the procedure are similar for fermions.

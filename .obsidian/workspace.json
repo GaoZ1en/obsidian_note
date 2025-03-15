@@ -53,7 +53,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -135,12 +135,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "452a953be9307160",
+  "active": "f3aff12bd2374f0e",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/saturnday/week3.md",
     "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
-    "Note/Physics/Quantization",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
+    "Note/Physics/Quantization",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
     "Articles/Noether charge/Noether's trick in Liouville theory.md",

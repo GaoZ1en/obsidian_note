@@ -27,6 +27,11 @@ direct generalization of isotropic and Lagrangian subspaces.
 ### $\displaystyle{n}$-plectic manifold
 
 >[!Defnition 1.6]
->
+> an $\displaystyle{(n+1)}$-form $\displaystyle{\omega}$ on a smooth manifold $\displaystyle{M}$ is $\displaystyle{n}$-plectic, or more specifically an $\displaystyle{n}$-plectic structure, if it is both closed
+> $$\begin{align}\mathrm{d}\omega & =0\end{align}$$
+> and nondegenerate:
+> $$\begin{align}\forall x \in M \forall v\in T_{x}M, \iota _{v}\omega=0\implies v=0\end{align}$$
+> if $\displaystyle{\omega}$ is an $\displaystyle{n}$-plectic form on $\displaystyle{M}$ we call the pair $\displaystyle{(M,\omega)}$ an $\displaystyle{n}$-plectic manifold.
 
+generalization of symplectic manifold. notice that there is no Darboux-like theorem for a general $\displaystyle{n}$-plectic manifold.
 
