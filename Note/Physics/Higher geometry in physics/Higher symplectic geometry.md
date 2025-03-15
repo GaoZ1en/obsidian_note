@@ -13,5 +13,20 @@ this is a direct generalization of symplectic vector space. notice that $\displa
 > let $\displaystyle{(V,\omega)}$ be an $\displaystyle{n}$-plectic vector space and $\displaystyle{W\subseteq V}$ be a subspace. the $\displaystyle{k}$-orthogonal complement of $\displaystyle{W}$ is the subspace
 > $$\begin{align}W^{\bot,k}=\left\{v\in V|\omega(w,\omega_{1},\dots,\omega _{k})=0, \forall w_{1},\dots,\omega _{k}\in W\right\}\end{align}$$
 
+>[!Definition 1.3]
+> a subspace $\displaystyle{W}$ of an $\displaystyle{n}$-plectic vector space $\displaystyle{(V,\omega)}$ is $\displaystyle{k}$-isotropic iff $\displaystyle{W\subseteq W^{\bot,k}}$, and $\displaystyle{k}$-Lagrangian iff $\displaystyle{W=W^{\bot,k}}$
+
+direct generalization of isotropic and Lagrangian subspaces.
+
+>[!Proposition 1.4]
+> let $\displaystyle{(V,\omega)}$ be an $\displaystyle{n}$-plectic vector space. if $\displaystyle{W\subseteq V}$ is a $\displaystyle{k}$-isotropic subspace, then for all $\displaystyle{k'\geqslant k}$ there exists a $\displaystyle{k'}$-Lagrangian subspace containing $\displaystyle{W}$
+
+>[!Proposition 1.5]
+> if $\displaystyle{(V,\omega)}$ is an $\displaystyle{n}$-plectic vector space with $\displaystyle{\dim V=n+1}$, then a subspace $\displaystyle{W\subseteq V}$ is $\displaystyle{n}$-Lagrangian iff $\displaystyle{\dim W=n}$
+
+### $\displaystyle{n}$-plectic manifold
+
+>[!Defnition 1.6]
+>
 
 
