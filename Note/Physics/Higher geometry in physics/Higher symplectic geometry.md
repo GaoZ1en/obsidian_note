@@ -50,3 +50,12 @@ I do not know why Lagrangian submanifold are invented.
 
 ## algebraic structures on $\displaystyle{n}$-plectic manifolds
 
+let $\displaystyle{\mathfrak{X}(M)}$ be the $\displaystyle{C^{\infty}(M)}$-module of vector fields on a manifold $\displaystyle{M}$ and let
+
+$$\tag{2.1}
+\begin{align}
+\mathfrak{X}^{\wedge \cdot}(M) & =\bigoplus^{\dim M}_{k=0}\wedge ^{k}(\mathfrak{X}(M))
+\end{align}
+$$
+
+be the graded commutative algebra of multivector fields. there is a $\displaystyle{\mathbb{R}}$-bilinear map $\displaystyle{[\cdot,\cdot]:\mathfrak{X}^{\wedge\cdot}(M)\times \mathfrak{X}^{\wedge\cdot}(M)\to \mathfrak{X}^{\wedge\cdot}(M)}$ called the Schouten bracket, which 

@@ -103,8 +103,35 @@ S=\int \mathrm{d}t\mathrm{d}r_{*}\left(\frac{1}{2}\left( \frac{\mathrm{d}\sigma}
 $$
 
 we have the following effective potential
-$$\tag{.}
-\begin{align}
 
+$$\tag{2.3}
+\begin{align}
+V_{\mathrm{eff}} & = \left( 1-\frac{2GM}{r} \right)\left( \frac{l(l+1)}{2r^{2}}+\frac{GM}{r^{3}} \right)
 \end{align}
 $$
+
+then the Klein-Gordon equation $\displaystyle{\sigma(r_{*},t)=\lambda(r_{*})e^{-i \omega t}}$
+
+$$\tag{2.4}
+\begin{align}
+\left( -\frac{\mathrm{d}^{2}}{\mathrm{d}r^{2}_{*}}+V_{\mathrm{eff}}(r_{*}) \right)\lambda(r_{*})=\omega ^{2}\lambda(r_{*}) \\
+\implies \lambda _{\omega}(r^{*})\sim \begin{cases}
+e^{i \omega r_{*}}+R(\omega)e^{-i \omega r_{*}} & r_{*}\to -\infty \\
+T(\omega)e^{i \omega r_{*}}, & r_{*}\to \infty
+\end{cases}
+\end{align}
+$$
+
+then we have the transmission and reflection amplitudes. consider a particle shoot from the infinity.
+
+$$\tag{2.5}
+\begin{align}
+\left( -\frac{\mathrm{d}^{2}}{\mathrm{d}r^{2}_{*}}+V_{\mathrm{eff}}(r_{*}) \right)\tilde{\lambda}(r_{*})=\omega ^{2}\lambda(r_{*}) \\
+\implies \tilde{\lambda} _{\omega}(r^{*})\sim \begin{cases}
+e^{i \omega r_{*}}+\tilde{R}(\omega)e^{-i \omega r_{*}} & r_{*}\to -\infty \\
+\tilde{T}(\omega)e^{i \omega r_{*}}, & r_{*}\to \infty \\
+\end{cases}
+\end{align}
+$$
+
+then we have $\displaystyle{\lambda _{\omega}\overleftrightarrow}$
