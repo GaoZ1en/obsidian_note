@@ -59,3 +59,19 @@ $$\tag{2.1}
 $$
 
 be the graded commutative algebra of multivector fields. there is a $\displaystyle{\mathbb{R}}$-bilinear map $\displaystyle{[\cdot,\cdot]:\mathfrak{X}^{\wedge\cdot}(M)\times \mathfrak{X}^{\wedge\cdot}(M)\to \mathfrak{X}^{\wedge\cdot}(M)}$ called the Schouten bracket, which gives $\displaystyle{\mathfrak{X}^{\wedge\cdot}(M)}$ the structure of a Gerstenhaber algebra (graded Lie algebra). the Schouten bracket
+
+$$\tag{2.2}
+\begin{align}
+[u_{1}\wedge\dots \wedge u_{m},v_{1}\wedge\dots \wedge v_{n}] & =\sum ^{m}_{i=1}\sum ^{n}_{j=1}(-1)^{i+j}[u_{i},v_{j}]\wedge u_{1}\wedge\dots \wedge u_{m}\wedge v_{1}\wedge\dots \wedge v_{n}
+\end{align}
+$$
+
+where $\displaystyle{[u_{i},u_{j}]}$ is the Lie brackets of vector fields. then given a form $\displaystyle{\alpha \in \Omega ^{\cdot}(M)}$, the interior product of a decompoable multivector field $\displaystyle{v_{1}\wedge\dots \wedge v_{n}}$ with $\displaystyle{\alpha}$ is
+
+$$\tag{2.3}
+\begin{align}
+\iota(v_{1}\wedge\dots \wedge v_{n})\alpha & =\iota _{v_{n}}\dots \iota _{v_{1}}\alpha
+\end{align}
+$$
+
+then the Lie derivative $\displaystyle{\mathcal{L}_{v}}$ of a form $\displaystyle{\alpha}$ along a multivector $\displaystyle{v\in \mathfrak{X}^{\wedge\cdot}(M)}$

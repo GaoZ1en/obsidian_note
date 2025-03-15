@@ -155,4 +155,4 @@ $$
 
 this is a conserved charge...
 
-
+gray body factor gairantees the finiteness of luminosity.s
