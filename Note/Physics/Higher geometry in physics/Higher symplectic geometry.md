@@ -233,7 +233,20 @@ therefore the augmented complex
 \usepackage{tikz-cd}
 \usepackage{amsmath, amssymb}
 \begin{document}\begin{tikzcd}
-0\ar[r] & \mathbb{R}
+0\ar[r] & \mathbb{R} \ar[r,hook] & C^{\infty}(M)\ar[r,"\mathrm{d}"] & \Omega ^{1}(M) \ar[r,"\mathrm{d}"] & \dots \ar[r,"\mathrm{d}"] & \Omega ^{n-2}(M)\ar[r,"\mathrm{d}"] & \Omega ^{n-1}_{\mathrm{Ham}}(M)
 \end{tikzcd}\end{document}
 ```
+
+is a resolution of $\displaystyle{\mathfrak{g}}$. we have the following proposition
+
+>[!Proposition 2.13]
+> given a contractible $\displaystyle{n}$-plectic manifold $\displaystyle{(M,\omega)}$, there is an $\displaystyle{L_{\infty}}$-algebra $\displaystyle{(\tilde{L},\left\{l_{k}\right\})}$ with underlying graded vector space
+> $$\begin{align}\tilde{L}_{i} & \begin{cases}\Omega ^{n-1}_{\mathrm{Ham}}(M) & i=0 \\\Omega ^{n-i-1}(M) & 0<i\leqslant n-1 \\\mathbb{R} & i=n\end{cases}\end{align}$$
+> and $\displaystyle{l_{1}:\tilde{L}\to \tilde{L}}$ defined as
+> $$\begin{align}l_{1}(\alpha) & =\begin{cases}\alpha & \text{if }|\alpha|=n \\\mathrm{d}\alpha & \text{if }|\alpha|\neq n\end{cases}\end{align}$$
+> and all higher maps $\displaystyle{\left\{l_{k}:\tilde{L}^{\otimes k}\to \tilde{L}|2\leqslant k<\infty\right\}}$ are constructed inductively by using the bracket
+> $$\begin{align}\left\{\cdot,\cdot\right\}:\tilde{L}_{0}\otimes \tilde{L}_{0}\to \tilde{L}_{0},\quad\left\{\alpha_{1},\alpha_{2}\right\}=\iota _{v_{\alpha _{1}}}\iota _{v_{\alpha_{2}}}\omega\end{align}$$
+> where $\displaystyle{v_{\alpha_{1}},v_{\alpha_{2}}}$ are the Hamiltonian vector fields corresponding to the Hamiltonian forms $\displaystyle{\alpha_{1},\alpha_{2}}$. moreover the maps $\displaystyle{\left\{l_{k}\right\}}$ may be constructed so that
+> $$\begin{align}l_{k}(\alpha_{1},\dots,\alpha _{k})\neq_{0}, \text{only if all }\alpha _{k}\text{ have degree 0}\end{align}$$
+> for $\displaystyle{k\geqslant_{2}}$
 
