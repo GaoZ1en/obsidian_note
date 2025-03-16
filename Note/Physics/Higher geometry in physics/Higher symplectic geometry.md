@@ -175,8 +175,57 @@ we will feel the definition in the following subsections.
 > 2. an skew-symmetric chain homotopy $\displaystyle{J:L\otimes L\otimes L\to L}$ from the chain map
 > $$\begin{align}L\otimes L\otimes L & \to L \\x\otimes y\otimes z & \mapsto [x,[y,z]]\end{align}$$
 > to the chain map
-> $$
+> $$\begin{align}L\otimes L\otimes L & \to L \\x\otimes y\otimes z & \mapsto -[y,[z,x]]-[z,[x,y]]\end{align}$$
+> called the Jacobiator, such that the following equation holds:
+> $$\begin{align}[x,J(y,z,w)]+J(x,[y,z],w)+J(x,z,[y,w])+[J(x,y,z),w]+[z,J(x,y,w)] \\
+=J(x,y,[z,w])+J([x,y],z,w)+[y,J(x,z,w)]+J(u,[x,z],w)+J(y,z,[x,w])\end{align}$$
+
+>[!Definition 2.11]
+> given Lie 2-algebras $\displaystyle{L=(L,[\cdot,\cdot],J)}$ and $\displaystyle{L'=(L',[\cdot,\cdot]',J')}$ a morphism from $\displaystyle{L}$ to $\displaystyle{L'}$ consists of
+> 1. a chain map $\displaystyle{\phi:L\to L'}$
+> 2. a chain homotopy $\displaystyle{\Phi:L\otimes L\to L'}$ from the chain map
+> $$\begin{align}L\otimes L & \to L' \\x\otimes y & \mapsto \phi([x,y])\end{align}$$
+> to the chain map
+> $$\begin{align}L\otimes L & \to L' \\x\otimes y & \mapsto [\phi(x),\phi(y)]'\end{align}$$
+> such that the following equation holds:
+> $$\begin{align}\phi_{1}(J(x,y,z))-J'(\phi_{0}(x),\phi_{0}(y),\phi_{0}(z)) \\=\Phi(x,[y,z])+\Phi(y,[z,x])+\Phi(z,[x,y])+[\phi_{0}(x),\Phi(y,z)]'+[\phi_{0}(y),\Phi(z,x)]'+[\phi_{0}(z),\Phi(x,y)]'\end{align}$$
+> we say a morphism is strict iff $\displaystyle{\Phi=0}$
+
+>[!Definition 2.12]
+> a Lie 2-algebra morphism $\displaystyle{(\phi,\Phi):L\to L'}$ is a quasi-isomorphism iff the chain map $\displaystyle{\phi}$ induces an isomorphism on the homology of the underlying chain complexes of $\displaystyle{L}$ and $\displaystyle{L'}$
+
+### Lie $\displaystyle{n}$-algebras from $\displaystyle{n}$-plectic manifolds
+
+for an $\displaystyle{n}$-plectic manifold, we should look for Lie $\displaystyle{n}$-algebra structures on the chain complex
+
+```tikz
+\usepackage{tikz-cd}
+\begin{document}\begin{tikzcd}
+C^{\infty}(M)\ar[r,"\mathrm{d}"] & \Omega^{1}(M)\ar[r,"\mathrm{d}"] & \dots\ar[r,"\mathrm{d}"] & \Omega^{n-2}(M)\ar[r,"\mathrm{d}"] & \Omega^{n-1}_{\mathrm{Ham}}(M)
+\end{tikzcd}\end{document}
+```
+
+with the $\displaystyle{l_{1}}$ map equal to $\displaystyle{\mathrm{d}}$. we denote this complex as $\displaystyle{(L,\mathrm{d})}$. Note that here we are using the de Rham differential as a degree-1 operator. hence$\displaystyle{L_{0}=\Omega ^{n-1}_{\mathrm{Ham}}(M)}$, while $\displaystyle{L_{n-1}=C^{\infty}(M)}$.
+
+the bracket induces a well-defined bracket $\displaystyle{[\cdot,\cdot]'}$ on the quotient
+
+$$
 \begin{align}
-L\otimes L\otimes L & 
+\mathfrak{g} & =\Omega ^{n-1}_{\mathrm{Ham}}(M)/\mathrm{d}\Omega ^{n-2}(M)
 \end{align}
 $$
+
+then $\displaystyle{(\mathfrak{g},[\cdot,\cdot])}$ is a Lie algebra.
+
+if $\displaystyle{M}$ is contractible, then the homology of $\displaystyle{(L,\mathrm{d})}$ is
+
+$$
+\begin{align}
+H_{0}(L) & =\mathfrak{g} \\
+H_{k}(L) & =0 & \text{for }0<k<n-1 &  \\
+H_{n-1} & =\mathbb{R}
+\end{align}
+$$
+
+therefore the augmented complex
+
