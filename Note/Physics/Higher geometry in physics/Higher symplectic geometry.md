@@ -97,3 +97,52 @@ $$
 
 and we have a generalization of the Liouville theory, i.e., the Hamiltonian vector field preserved the $\displaystyle{n}$-plectic structure.
 
+>[!Lemma 2.2]
+> if $\displaystyle{v_{\alpha}}$ is a Hamiltonian vector field, then $\displaystyle{\mathcal{L}_{v_{\alpha}}\omega=0}$
+
+proof. $$
+\begin{align}
+\mathcal{L}_{v_{\alpha}}\omega=\iota _{v_{\alpha}}\mathrm{d}\omega+\mathrm{d}(i_{v_{\alpha}}\omega)=-\mathrm{d}^{2}\alpha=0
+\end{align}
+$$
+
+>[!Definition 2.3 (Poisson) bracket]
+>given $\displaystyle{\alpha,\beta \in\Omega ^{n-1}_{\mathrm{Ham}}(M)}$, the Poisson bracket $\displaystyle{\left\{\alpha,\beta\right\}}$ is the $\displaystyle{n-1}$-form given by
+> $$\begin{align}\left\{\alpha,\beta\right\} & =\iota _{v_{\beta}}\iota _{v_{\alpha}}\omega\end{align}$$
+
+>[!Proposition 2.4]
+> let $\displaystyle{\alpha,\beta \in \Omega ^{n-1}_{\mathrm{Ham}}(M)}$ and $\displaystyle{v_{\alpha},v_{\beta}}$ be their respective Hamiltonian vector fields. the bracket $\displaystyle{\left\{\cdot,\cdot\right\}}$ has the following properties.
+> 1. the brackets is skew-symmetric: $\displaystyle{\left\{\alpha,\beta\right\}=-\left\{\alpha,\beta\right\}}$
+> 2. the bracket of Hamiltonian forms is Hamiltonian: $\displaystyle{\mathrm{d}\left\{\alpha,\beta\right\}=-\iota _{\left\{\alpha,\beta\right\}}\omega}$, in particular we have $\displaystyle{v_{\left\{\alpha,\beta\right\}}=[v_{\alpha},v_{\beta}]}$
+ 
+proof. the first statement follows from the antisymmetry of $\displaystyle{\omega}$, and the second statement.
+
+$$
+\begin{align}
+\mathrm{d}\left\{\alpha,\beta\right\} & =\mathrm{d}(\iota _{v_{\beta}}\iota _{v_{\alpha}}\omega) \\
+ & =\mathcal{L}_{v_{\beta}}(\iota _{v_{\alpha}}\omega)-\iota _{v_{\beta}}\mathrm{d}\iota _{v_{\alpha}}\omega \\
+ & =\iota _{[v_{\beta},v_{\alpha}]}\omega+\iota _{v_{\beta}}\mathcal{L}_{v_{\alpha}}\omega \\
+ & =-\iota _{[v_{\alpha},v_{\beta}]}\omega
+\end{align}
+$$
+
+>[!Proposition 2.5 Jacobi identity]
+> the bracket $\displaystyle{\left\{\cdot,\cdot\right\}}$ satisfies the Jacobi identity up to an exact $\displaystyle{(n-1)}$-form:
+> $$\begin{align}\left\{\alpha_{1},\left\{\alpha_{2},\alpha_{3}\right\}\right\}+\left\{\alpha_{2},\left\{\alpha_{3},\alpha_{1}\right\}\right\}+\left\{\alpha_{3},\left\{\alpha_{1},\alpha_{2}\right\}\right\}=-\mathrm{d}\iota _{v_{\alpha_{1}}\wedge v_{\alpha_{2}}\wedge v_{\alpha_{3}}}\omega\end{align}$$
+
+>[!Lemma 2.6]
+> if $\displaystyle{(M,\omega)}$ is an $\displaystyle{n}$-plectic manifold and $\displaystyle{v_{1},\dots,v_{m}\in \mathfrak{X}_{\mathrm{Ham}}(M)}$ with $\displaystyle{m\geqslant 2}$, then
+> $$\begin{align}\mathrm{d}\iota _{v_{1}\wedge\dots \wedge v_{m}}\omega=(-1)^{m}\sum _{1\leqslant i<j\leqslant m}(-1)^{i+j}\iota _{[v_{i},v_{j}]\wedge v_{1}\wedge\dots v_{m}}\omega\end{align}$$
+
+### $\displaystyle{L_{\infty}}$-algebras and Lie $\displaystyle{n}$-algebras
+
+let $\displaystyle{V}$ be a graded vector space. let $\displaystyle{x_{1},\dots,x_{n}}$ be elements of $\displaystyle{V}$ and $\displaystyle{\sigma \in \mathcal{S}_{n}}$ a permutation. the Koszul sign $\displaystyle{\varepsilon(\sigma)}$ is defined as
+
+$$
+\begin{align}
+x_{1}\wedge\dots \wedge x_{n}=\varepsilon(\sigma)x_{\sigma(1)}\wedge\dots \wedge x_{\sigma(n)}
+\end{align}
+$$
+
+we say $\displaystyle{\sigma \in \mathcal{S}_{p+q}}$ is a $\displaystyle{(p,q)}$-unshuffle iff $\displaystyle{\sigma(i)<\sigma(i+1)}$ whenever $\displaystyle{i\neq p}$
+
