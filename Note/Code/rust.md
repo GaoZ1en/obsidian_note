@@ -22,3 +22,17 @@ while creating a new project, cargo creates a `Cargo.toml` file which contains t
 
 ### rand
 
+## 
+可以使用match匹配来处理错误
+
+也可以使用match替代if简化代码
+
+```rust
+let result = match x {
+    0 => "zero",
+    1 => "one",
+    _ => "many",
+};
+```
+## rustup
+
