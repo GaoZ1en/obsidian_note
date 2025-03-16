@@ -144,5 +144,39 @@ x_{1}\wedge\dots \wedge x_{n}=\varepsilon(\sigma)x_{\sigma(1)}\wedge\dots \wedge
 \end{align}
 $$
 
-we say $\displaystyle{\sigma \in \mathcal{S}_{p+q}}$ is a $\displaystyle{(p,q)}$-unshuffle iff $\displaystyle{\sigma(i)<\sigma(i+1)}$ whenever $\displaystyle{i\neq p}$
+we say $\displaystyle{\sigma \in \mathcal{S}_{p+q}}$ is a $\displaystyle{(p,q)}$-unshuffle iff $\displaystyle{\sigma(i)<\sigma(i+1)}$ whenever $\displaystyle{i\neq p}$. the set of $\displaystyle{(p,q)}$-unshuffles is denoted by $\displaystyle{\mathrm{Sh}(p,q)}$.
 
+if $\displaystyle{V}$ and $\displaystyle{W}$ are graded vector spaces, a linear map $\displaystyle{f:V^{\otimes n}\to W}$ is skew-symmetric iff
+
+$$
+\begin{align}
+f(v_{\sigma(1)},\dots,v_{\sigma(n)})=(-1)^{\sigma}\varepsilon(\sigma)f(v_{1},\dots,v_{n})
+\end{align}
+$$
+
+for all $\displaystyle{\sigma \in \mathcal{S}_{n}}$. proposition 2.5 implies that we should not expecy $\displaystyle{\Omega ^{n-1}_{\mathrm{Ham}}(M)}$ to be a Lie algebra unless $\displaystyle{n=1}$, however it suggests we conisder what are known as strongly homotopy Lie algebras, or $\displaystyle{L_{\infty}}$-algebras.
+
+>[!Definition 2.7]
+> an $\displaystyle{L_{\infty}}$-algebra is a graded vector space $\displaystyle{L}$ equipped with a collection
+> $$\tag(2.6)\begin{align}\left\{l_{k}:L^{\otimes k}\to L|1\leqslant k<\infty\right\}\end{align}$$
+> of skew-symmetric linear maps with $\displaystyle{|l_{k}|=k-2}$ such that the following identity holds for $\displaystyle{1\leqslant m<\infty}$:
+> $$\begin{align}\sum _{i+j=m+1,\sigma \in \mathrm{Sh}(i,m-i)}(-1)^{\sigma}\varepsilon(\sigma)(-1)^{i(j-1)}l_{j}(l_{i}(x_{\sigma(1)},\dots,x_{\sigma(i)}),x_{\sigma(i+1),\dots,x_{\sigma(m)}})=0\end{align}$$
+
+>[!Definition 2.8]
+> an $\displaystyle{L_{\infty}}$-algebra $\displaystyle{(L,\left\{l_{k}\right\})}$ is a Lie $\displaystyle{n}$-algebra iff the underlying graded vector space $\displaystyle{L}$ is concentrated in degrees $\displaystyle{0,\dots,n-1}$.
+
+we will feel the definition in the following subsections.
+
+#### Lie 2-algebras
+
+>[!Proposition 2.10]
+> a Lie 2-algebra is a 2-term chain complex of vector spaces $\displaystyle{L=(L_{1}\overset{\mathrm{d}}{\to}L_{0})}$ equipped with:
+> 1. skew-symmetric chain map: $\displaystyle{[\cdot,\cdot]:L\otimes L\to L}$ called the brackets;
+> 2. an skew-symmetric chain homotopy $\displaystyle{J:L\otimes L\otimes L\to L}$ from the chain map
+> $$\begin{align}L\otimes L\otimes L & \to L \\x\otimes y\otimes z & \mapsto [x,[y,z]]\end{align}$$
+> to the chain map
+> $$
+\begin{align}
+L\otimes L\otimes L & 
+\end{align}
+$$
