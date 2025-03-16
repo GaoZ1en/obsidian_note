@@ -229,3 +229,11 @@ $$
 
 therefore the augmented complex
 
+```tikz
+\usepackage{tikz-cd}
+\usepackage{amsmath, amssymb}
+\begin{document}\begin{tikzcd}
+0\ar[r] & \mathbb{R}
+\end{tikzcd}\end{document}
+```
+
