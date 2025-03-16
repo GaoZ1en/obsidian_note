@@ -74,4 +74,26 @@ $$\tag{2.3}
 \end{align}
 $$
 
-then the Lie derivative $\displaystyle{\mathcal{L}_{v}}$ of a form $\displaystyle{\alpha}$ along a multivector $\displaystyle{v\in \mathfrak{X}^{\wedge\cdot}(M)}$
+then the Lie derivative $\displaystyle{\mathcal{L}_{v}}$ of a form $\displaystyle{\alpha}$ along a multivector $\displaystyle{v\in \mathfrak{X}^{\wedge\cdot}(M)}$ is defined as a generalization of the Cartan magic formula
+
+$$\tag{2.4}
+\begin{align}
+\mathcal{L}_{v}\alpha & =\mathrm{d}\iota _{v}\alpha-(-1)^{|v|}\iota _{v}\mathrm{d}\alpha
+\end{align}
+$$
+
+and we have a generalization of $\displaystyle{\iota _{[u,v]}\alpha=\mathcal{L}_{u}\iota _{v}\alpha-\iota _{v}\mathcal{L}_{u}\alpha}$
+
+$$\tag{2.5}
+\begin{align}
+\iota _{[u,v]}\alpha  & =(-1)^{(|u|-1)|v|}\mathcal{L}_{u}\alpha-\iota _{v}\mathcal{L}_{u}\alpha
+\end{align}
+$$
+
+>[!Definition 2.1]
+> let $\displaystyle{(M,\omega)}$ be an $\displaystyle{n}$-plectic manifold. an $\displaystyle{(n-1)}$-form $\displaystyle{\alpha}$ is Hamiltonian iff there exists a vector fields $\displaystyle{v_{\alpha}\in \mathfrak{X}(M)}$ such that
+> $$\begin{align}\mathrm{d}\alpha & =-i_{v_{\alpha}}\omega\end{align}$$
+> we say $\displaystyle{v_{\alpha}}$ is the Hamiltonian vector field corresponding to $\displaystyle{\alpha}$. the set of Hamiltonian $\displaystyle{(n-1)}$-forms and the set of Hamiltonian vector fields on an $\displaystyle{n}$-plectic manifold are both vector spaces and are denoted as $\displaystyle{\Omega ^{n-1}(\mathrm{Ham})(M)}$ and $\displaystyle{\mathfrak{X}_{\mathrm{Ham}}(M)}$, respectively.
+
+and we have a generalization of the Liouville theory, i.e., the Hamiltonian vector field preserved the $\displaystyle{n}$-plectic structure.
+

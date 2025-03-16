@@ -52,7 +52,8 @@
               "title": "Higher symplectic geometry"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -134,12 +135,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "bb4171226f514300",
+  "active": "f3aff12bd2374f0e",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/saturnday/week3.md",
-    "Note/Code/rust.md",
-    "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
+    "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
+    "Note/Code/rust.md",
+    "Lecture/Hongbao Zhang/saturnday/week3.md",
     "Note/Physics/wait-to-be-complete/Maurer-Cartan form.md",
     "Note/Physics/Quantization",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",

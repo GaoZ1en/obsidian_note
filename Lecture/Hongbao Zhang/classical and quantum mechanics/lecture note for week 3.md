@@ -232,7 +232,8 @@ consider the poisson brackets
 
 $$\tag{.}
 \begin{align}
-\left\{H_{\Omega_{1}},H_{\Omega_{2}}\right\} & =X_{\Omega}
+\left\{H_{\Omega_{1}},H_{\Omega_{2}}\right\} & =X_{\Omega_{2}}\cdot \delta H_{\Omega_{1}} \\
+ & =\int _{\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}(\Omega _{1}\nabla _{\mu}\Omega _{2}-\Omega _{2}\nabla _{\mu}\Omega _{1})
 \end{align}
 $$
 
