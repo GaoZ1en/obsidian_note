@@ -64,6 +64,25 @@ T^{\mu \nu}=\frac{-2}{\sqrt{ -g }} \frac{\delta S}{\delta g_{\mu \nu}} & =-2\lef
  & =\nabla ^{\mu}\phi \nabla ^{\nu}\phi-\frac{1}{2}g^{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi-\frac{d-3}{4(d-2)}\phi ^{2}\left( R^{\mu \nu}+\frac{1}{2} Rg^{\mu \nu}\right)
 \end{align}
 $$
+
+### another consideration
+
+$$\tag{.}
+\begin{align}
+X_{\xi} & =\int \mathrm{d}^{d}x\left( \mathcal{L}_{\xi}g_{\mu \nu} \frac{\delta}{\delta g_{\mu \nu}}+\mathcal{L}_{\xi}\phi \frac{\delta}{\delta \phi} \right)
+\end{align}
+$$
+
+where $\displaystyle{\xi _{\mu}}$ is a conformal Killing vector, i.e., satisfies
+
+$$\tag{.}
+\begin{align}
+\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu}-\frac{2}{d}g_{\mu \nu}\nabla _{\rho}\xi ^{\rho} & =0
+\end{align}
+$$
+
+and then 
+
 ## (conformal) Killing vector
 
 consider a Killing vector $\displaystyle{\xi _{\mu}}$ which satisfies
