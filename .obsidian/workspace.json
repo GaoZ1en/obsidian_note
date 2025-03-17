@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/Maxwell theory.md",
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 4.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Maxwell theory"
+              "title": "lecture note for week 4"
             }
           }
         ],
@@ -120,13 +120,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "57493beef54bdf2b",
+  "active": "08c5073fdf1f0eeb",
   "lastOpenFiles": [
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 4.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/Maxwell theory.md",
     "Articles/Noether charge/Diffeomorphism of some quantities.md",
     "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/Maxwell theory.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Note/Code/rust.md",
     "Lecture/Hongbao Zhang/saturnday/week3.md",
     "Note/Physics/wait-to-be-complete/Maurer-Cartan form.md",
