@@ -81,19 +81,31 @@ $$
  & -\frac{1}{2}\int _{M}\left( \nabla ^{\mu}\phi \nabla ^{\nu}\phi \delta g_{\mu \nu}+\frac{d-2}{4(d-1)}(-R^{\mu \nu}\delta g_{\mu \nu}+\nabla ^{\mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla  ^{2}\delta g_{\mu \nu})\phi ^{2} \right)\varepsilon \\
  & -\frac{1}{2}\int _{M}\left( \nabla _{\rho}\phi \nabla ^{\rho}\phi+\frac{d-2}{4(d-1)}R\phi ^{2} \right) \frac{1}{2}g^{\mu \nu}\delta g_{\mu \nu}\varepsilon \\
  & =\int _{M}\left( \nabla ^{2}\phi-\frac{d-2}{4(d-1)}R\phi \right)\varepsilon \delta \phi+\int _{\Sigma _{f}-\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\nabla _{\mu}\phi \delta \phi \\
- & -\frac{1}{2}\int _{M}\left( \nabla ^{\mu}\phi \nabla ^{\nu}\phi-\frac{1}{2}g^{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi-\frac{d-2}{4(d-1)}G^{\mu \nu}\phi ^{2} +\frac{d-2}{4(d-1)}(\nabla ^{\mu}\nabla ^{\nu}\phi ^{2}-g^{\mu \nu}\nabla ^{2}\phi ^{2})\right)\delta g_{\mu \nu}
+ & -\frac{1}{2}\int _{M}\left( \nabla ^{\mu}\phi \nabla ^{\nu}\phi-\frac{1}{2}g^{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi-\frac{d-2}{4(d-1)}G^{\mu \nu}\phi ^{2} +\frac{d-2}{4(d-1)}(\nabla ^{\mu}\nabla ^{\nu}\phi ^{2}-g^{\mu \nu}\nabla ^{2}\phi ^{2})\right)\delta g_{\mu \nu}\varepsilon \\
+ & =\int _{M}\left( E_{\phi}\delta \phi-\frac{1}{2}T^{\mu \nu}\delta g_{\mu \nu} \right)\varepsilon+\theta|_{\Sigma _{f}}-\theta|_{\Sigma _{i}}
 \end{align}
 $$
 
+where
+
 $$\tag{.}
 \begin{align}
--\frac{(d-2)}{8(d-1)}\int _{M}(\nabla ^{\mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla  ^{2}\delta g_{\mu \nu})\phi ^{2} \varepsilon & =-\frac{d-2}{8(d-1)}\int _{M}(\nabla ^{\mu}(\nabla ^{\nu}\delta g_{\mu \nu}\phi)-2\nabla ^{\nu}\delta g_{\mu \nu}\phi \nabla ^{\mu}\phi-\nabla ^{\rho}(g^{\mu \nu}\nabla _{\rho}\delta g_{\mu \nu}\phi ^{2})+2g^{\mu \nu}\nabla _{\rho}\delta g_{\mu \nu}\phi\nabla ^{\rho}\phi)\varepsilon \\
- & =\frac{d-2}{8(d-1)}\int _{\Sigma _{f}-\Sigma _{i}}\varepsilon _{\partial M}(\tau ^{\mu}\nabla ^{\nu}\delta g_{\mu \nu}\phi ^{2}-\tau ^{\rho}g^{\mu \nu}\nabla _{\rho}\delta g_{\mu \nu}\phi ^{2}) \\
- & +\frac{d-2}{4(d-1)}\int _{M}(\nabla ^{\nu}\delta g_{\mu \nu}\phi \nabla ^{\mu}\phi-2g^{\mu \nu}\nabla _{\rho}\delta g_{\mu \nu}\phi \nabla ^{\rho}\phi)\varepsilon \\
- & =-\frac{d-2}{4(d-1)}\int _{M}(\delta g_{\mu \nu}\nabla ^{\nu}(\phi \nabla ^{\mu}\phi)-g^{\mu \nu}\delta g_{\mu \nu}\nabla _{\rho}(\phi \nabla ^{\rho}\phi))\varepsilon \\
- & =-\frac{1}{2}\int _{M} \frac{d-2}{4(d-1)}(\nabla ^{\mu}\nabla ^{\nu}\phi ^{2}-g^{\mu \nu}\nabla ^{2}\phi ^{2})\delta g_{\mu \nu}\varepsilon
+E_{\phi} & =\nabla ^{2}\phi-\frac{d-2}{4(d-1)}R\phi \\
+T^{\mu \nu} & =\nabla ^{\mu}\phi \nabla ^{\nu}\phi-\frac{1}{2}g^{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi-\frac{d-2}{4(d-1)}G^{\mu \nu}\phi ^{2} +\frac{d-2}{4(d-1)}(\nabla ^{\mu}\nabla ^{\nu}\phi ^{2}-g^{\mu \nu}\nabla ^{2}\phi ^{2}) \\
+\theta|_{\Sigma} & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\nabla _{\mu}\phi \delta \phi
 \end{align}
 $$
+
+and we noted that the stress tensor satisfies
+
+$$\tag{.}
+\begin{align}
+g^{\mu \nu}T_{\mu \nu} & =0 \\
+\nabla ^{\mu}T_{\mu \nu} & =0
+\end{align}
+$$
+
+on-shell. then consider the following symmetry(?)
 
 $$\tag{.}
 \begin{align}
@@ -113,9 +125,14 @@ and then we have
 
 $$\tag{.}
 \begin{align}
-X_{\xi}\cdot \delta S & -
+H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
+ & =\int _{M}
 \end{align}
 $$
+
+for a general theory consists of background metric $\displaystyle{g_{\mu \nu}}$ and dynamical fields $\displaystyle{\phi}$, we have
+
+
 
 ## (conformal) Killing vector
 
