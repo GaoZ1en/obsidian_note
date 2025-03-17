@@ -2,7 +2,7 @@
   "nodePath": "/usr/bin/node",
   "enabled": true,
   "hotkeys": {
-    "accept": "Tab",
+    "accept": "Ctrl-j",
     "cancel": "Escape",
     "request": "Ctrl-Shift-?",
     "partial": "Ctrl-Shift->",
