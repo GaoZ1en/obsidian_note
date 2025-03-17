@@ -30,7 +30,7 @@ on the action, we have
 
 $$\tag{1.4}
 \begin{align}
-X_{\xi}\cdot \delta S & =\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau _{\mu}\left( \frac{1}{2}\xi ^{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi+\frac{d-2}{8d}R\xi ^{\mu}\phi ^{2}+\frac{d-2}{4d}\nabla ^{\mu}(\nabla _{\nu}\xi ^{\nu})\phi ^{2} \right)
+X_{\xi}\cdot \delta S & =\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau _{\mu}\left( \frac{1}{2}\xi ^{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi+\frac{d-2}{8(d-1)}R\xi ^{\mu}\phi ^{2}+\frac{d-2}{4d}\nabla ^{\mu}(\nabla _{\nu}\xi ^{\nu})\phi ^{2} \right)
 \end{align}
 $$
 
@@ -46,12 +46,24 @@ then
 
 $$\tag{1.6}
 \begin{align}
-\alpha _{\xi} & =\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau _{\mu}\left( \frac{1}{2}\xi ^{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi+\frac{d-2}{8d} \right)
+\alpha _{\xi} & =\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau _{\mu}\left(\frac{1}{2}\xi ^{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi+\frac{d-2}{8(d-1)}R\xi ^{\mu}\phi ^{2}+\frac{1}{4}\phi ^{2}(-\nabla ^{2}\xi ^{\mu}-R^{\mu \nu}\xi _{\nu})\right)
 \end{align}
 $$
 
-another consideration
+$$\tag{.}
+\begin{align}
+H_{\xi} & =\int _{\Sigma}\mathrm{d}^{d}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}T'_{\mu \nu} \\
+T'_{\mu \nu} & =
+\end{align}
+$$
 
+$$\tag{.}
+\begin{align}
+S & =-\frac{1}{2}\int \mathrm{d}^{d}x\sqrt{ -g }\left( \nabla _{\mu}\phi \nabla ^{\mu}\phi+\frac{d-3}{4(d-2)}R\phi ^{2} \right) \\
+T^{\mu \nu}=\frac{-2}{\sqrt{ -g }} \frac{\delta S}{\delta g_{\mu \nu}} & =-2\left(-\frac{1}{2}\left( \nabla ^{\mu}\phi \nabla ^{\nu}\phi-\frac{d-3}{4(d-2)}R^{\mu \nu}\phi ^{2} \right)+\frac{1}{4}g^{\mu \nu}\left( \nabla _{\rho}\phi \nabla ^{\rho}\phi+\frac{d-3}{4(d-2)}R\phi ^{2} \right)\right) \\ \\
+ & =\nabla ^{\mu}\phi \nabla ^{\nu}\phi-\frac{1}{2}g^{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi-\frac{d-3}{4(d-2)}\phi ^{2}\left( R^{\mu \nu}+\frac{1}{2} Rg^{\mu \nu}\right)
+\end{align}
+$$
 ## (conformal) Killing vector
 
 consider a Killing vector $\displaystyle{\xi _{\mu}}$ which satisfies
@@ -66,7 +78,7 @@ then we have
 
 $$\tag{2.2}
 \begin{align}
-\nabla _{\mu}\nabla _{\nu}\xi _{\rho}=R_{\mu \nu \rho \sigma}\xi ^{\sigma}
+\nabla _{\mu}\nabla _{\nu}\xi _{\rho}=R_{\rho \nu \mu \sigma}\xi ^{\sigma}
 \end{align}
 $$
 
@@ -82,6 +94,6 @@ then we have a similar equation
 
 $$\tag{2.4}
 \begin{align}
-\nabla _{\mu}\nabla _{\nu}\xi _{\rho} & = R_{\mu \nu \rho \sigma}\xi ^{\sigma}+\frac{1}{d}[g_{\mu \rho}\nabla _{\nu}\nabla _{\sigma}\xi ^{\sigma}+g_{\nu \rho}\nabla _{\mu}\nabla _{\sigma}\xi ^{\sigma}-g_{\mu \nu}\nabla _{\rho}\nabla _{\sigma}\xi ^{\sigma}]
+\nabla _{\mu}\nabla _{\nu}\xi _{\rho} & = R_{\rho \nu \mu \sigma}\xi ^{\sigma}+\frac{1}{d}[g_{\mu \rho}\nabla _{\nu}\nabla _{\sigma}\xi ^{\sigma}+g_{\nu \rho}\nabla _{\mu}\nabla _{\sigma}\xi ^{\sigma}-g_{\mu \nu}\nabla _{\rho}\nabla _{\sigma}\xi ^{\sigma}]
 \end{align}
 $$
