@@ -64,8 +64,36 @@ T^{\mu \nu}=\frac{-2}{\sqrt{ -g }} \frac{\delta S}{\delta g_{\mu \nu}} & =-2\lef
  & =\nabla ^{\mu}\phi \nabla ^{\nu}\phi-\frac{1}{2}g^{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi-\frac{d-3}{4(d-2)}\phi ^{2}\left( R^{\mu \nu}+\frac{1}{2} Rg^{\mu \nu}\right)
 \end{align}
 $$
-
+NO YOU!!!
 ### another consideration
+
+in this subsection we will take $\displaystyle{g_{\mu \nu}}$ as a dynamical field, and the variation of the action is
+
+$$
+\begin{align}
+S=-\frac{1}{2}\int \left( \nabla _{\mu}\phi \nabla ^{\mu}\phi+\frac{d-2}{4(d-1)}R\phi ^{2} \right)\varepsilon
+\end{align}
+$$
+
+$$
+\begin{align}
+\delta S & =-\int _{M}\left( \nabla _{\mu}\phi \nabla ^{\mu}\delta \phi+\frac{d-2}{4(d-1)}R\phi \delta \phi \right)\varepsilon \\
+ & -\frac{1}{2}\int _{M}\left( \nabla ^{\mu}\phi \nabla ^{\nu}\phi \delta g_{\mu \nu}+\frac{d-2}{4(d-1)}(-R^{\mu \nu}\delta g_{\mu \nu}+\nabla ^{\mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla  ^{2}\delta g_{\mu \nu})\phi ^{2} \right)\varepsilon \\
+ & -\frac{1}{2}\int _{M}\left( \nabla _{\rho}\phi \nabla ^{\rho}\phi+\frac{d-2}{4(d-1)}R\phi ^{2} \right) \frac{1}{2}g^{\mu \nu}\delta g_{\mu \nu}\varepsilon \\
+ & =\int _{M}\left( \nabla ^{2}\phi-\frac{d-2}{4(d-1)}R\phi \right)\varepsilon \delta \phi+\int _{\Sigma _{f}-\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\nabla _{\mu}\phi \delta \phi \\
+ & -\frac{1}{2}\int _{M}\left( \nabla ^{\mu}\phi \nabla ^{\nu}\phi-\frac{1}{2}g^{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi-\frac{d-2}{4(d-1)}G^{\mu \nu}\phi ^{2} +\frac{d-2}{4(d-1)}(\nabla ^{\mu}\nabla ^{\nu}\phi ^{2}-g^{\mu \nu}\nabla ^{2}\phi ^{2})\right)\delta g_{\mu \nu}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+-\frac{(d-2)}{8(d-1)}\int _{M}(\nabla ^{\mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla  ^{2}\delta g_{\mu \nu})\phi ^{2} \varepsilon & =-\frac{d-2}{8(d-1)}\int _{M}(\nabla ^{\mu}(\nabla ^{\nu}\delta g_{\mu \nu}\phi)-2\nabla ^{\nu}\delta g_{\mu \nu}\phi \nabla ^{\mu}\phi-\nabla ^{\rho}(g^{\mu \nu}\nabla _{\rho}\delta g_{\mu \nu}\phi ^{2})+2g^{\mu \nu}\nabla _{\rho}\delta g_{\mu \nu}\phi\nabla ^{\rho}\phi)\varepsilon \\
+ & =\frac{d-2}{8(d-1)}\int _{\Sigma _{f}-\Sigma _{i}}\varepsilon _{\partial M}(\tau ^{\mu}\nabla ^{\nu}\delta g_{\mu \nu}\phi ^{2}-\tau ^{\rho}g^{\mu \nu}\nabla _{\rho}\delta g_{\mu \nu}\phi ^{2}) \\
+ & +\frac{d-2}{4(d-1)}\int _{M}(\nabla ^{\nu}\delta g_{\mu \nu}\phi \nabla ^{\mu}\phi-2g^{\mu \nu}\nabla _{\rho}\delta g_{\mu \nu}\phi \nabla ^{\rho}\phi)\varepsilon \\
+ & =-\frac{d-2}{4(d-1)}\int _{M}(\delta g_{\mu \nu}\nabla ^{\nu}(\phi \nabla ^{\mu}\phi)-g^{\mu \nu}\delta g_{\mu \nu}\nabla _{\rho}(\phi \nabla ^{\rho}\phi))\varepsilon \\
+ & =-\frac{1}{2}\int _{M} \frac{d-2}{4(d-1)}(\nabla ^{\mu}\nabla ^{\nu}\phi ^{2}-g^{\mu \nu}\nabla ^{2}\phi ^{2})\delta g_{\mu \nu}\varepsilon
+\end{align}
+$$
 
 $$\tag{.}
 \begin{align}
@@ -81,7 +109,13 @@ $$\tag{.}
 \end{align}
 $$
 
-and then 
+and then we have
+
+$$\tag{.}
+\begin{align}
+X_{\xi}\cdot \delta S & -
+\end{align}
+$$
 
 ## (conformal) Killing vector
 
