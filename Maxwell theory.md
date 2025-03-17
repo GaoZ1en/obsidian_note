@@ -45,19 +45,8 @@ so we have the Noether charge
 $$\tag{2.5}
 \begin{align}
 H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
- & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(X_{\xi}\cdot \delta A^{\nu})F_{\mu \nu}-\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu} \frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-X_{\xi}\cdot \theta & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}F_{\mu \nu}(X_{\xi}\cdot \delta A^{\nu}) \\
- & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}F_{\mu \nu}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-X_{\xi} & =\int \mathrm{d}^{d}x\mathcal{L}_{\xi}A \frac{\delta}{\delta A}=
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(X_{\xi}\cdot \delta A^{\nu})F_{\mu \nu}-\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu} \frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\partial _{\rho}A_{\nu}+A_{\rho}\partial ^{\rho}\xi_{\nu})-\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu} \frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau _{\mu}\xi ^{\rho} F^{\mu \nu}\partial _{\rho}A_{\nu}
 \end{align}
 $$
