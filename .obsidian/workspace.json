@@ -8,36 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bb4171226f514300",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Note/Code/rust.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "rust"
-            }
-          },
-          {
-            "id": "452a953be9307160",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "lecture note for week 3"
-            }
-          },
-          {
             "id": "f3aff12bd2374f0e",
             "type": "leaf",
             "state": {
@@ -66,9 +36,24 @@
               "icon": "lucide-file",
               "title": "Maxwell theory"
             }
+          },
+          {
+            "id": "ae3b2378739801c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/Noether charge/Diffeomorphism of some quantities.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Diffeomorphism of some quantities"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -155,6 +140,7 @@
     "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Note/Code/rust.md",
+    "Articles/Noether charge/Diffeomorphism of some quantities.md",
     "Maxwell theory.md",
     "Lecture/Hongbao Zhang/saturnday/week3.md",
     "Note/Physics/wait-to-be-complete/Maurer-Cartan form.md",
@@ -180,7 +166,6 @@
     "Articles/Noether charge/Complex Klein-Gordon scalar.md",
     "Lecture/2025 spring/python for physics/function.md",
     "Note/Mathematics/Bäcklund transformation.md",
-    "Lecture/2025 spring/python for physics/references.md",
     "Lecture/2025 spring/日本文艺史.md~",
     "Lecture/2025 spring/python for general purpose",
     "Lecture/2025 spring/python for physics",
