@@ -2,6 +2,8 @@
 
 higher form symmetry act on extended objects... how to understand it?
 
+### usual formalism
+
 
 
 ## CPS formalism
