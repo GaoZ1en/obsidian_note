@@ -181,6 +181,15 @@ H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi}=\int _{\Sigma}\varepsilon _{\Sigma}
 \end{align}
 $$
 
+then we need to argue that $\displaystyle{Y_{\xi}\cdot \delta S=X_{\xi}\cdot \delta S}$. for simplicity, we will only consider $\displaystyle{\phi}$ is a scalar. we have
+
+$$\tag{.}
+\begin{align}
+Y_{\xi} & =\int \mathrm{d}^{d}x\left( \xi ^{\mu}\nabla _{\mu}\phi+\frac{d-2}{2d}\nabla _{\mu}\xi ^{\mu}\phi \right)\frac{\delta}{\delta \phi}
+\end{align}
+$$
+
+
 
 ## (conformal) Killing vector
 
