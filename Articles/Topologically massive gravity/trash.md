@@ -101,7 +101,7 @@ $$\tag{.}
 \end{align}
 $$
 
-however for a general 2-dimensional manifold, we have $\displaystyle{\Gamma \wedge \Gamma}$ vanishess. we need to consider other boundary terms.
+however for a general 2-dimensional manifold, we have $\displaystyle{\Gamma \wedge \Gamma}$ vanishess. we need to consider other boundary terms. jut antisymmetric symmetric tensor equals 0. 
 
 
 
