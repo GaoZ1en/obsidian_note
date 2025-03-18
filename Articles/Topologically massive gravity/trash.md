@@ -97,11 +97,13 @@ a naive thinking
 
 $$\tag{.}
 \begin{align}
-\ell _{\mathrm{gCS}} & = \frac{1}{64\pi G\mu}\int _{\Gamma}\mathrm{Tr}(\tilde{\Gamma}\wedge \tilde{\Gamma})
+\ell _{\mathrm{gCS}} & = \frac{1}{64\pi G\mu}\int _{\Gamma}\mathrm{Tr}(\tilde{\Gamma}\wedge \tilde{\Gamma})=0\dots
 \end{align}
 $$
 
-today
+however for a general 2-dimensional manifold, we have $\displaystyle{\Gamma \wedge \Gamma}$ vanishess. we need to consider other boundary terms.
+
+
 
 
 ## diffeomorphism of the action
