@@ -130,8 +130,56 @@ H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
 \end{align}
 $$
 
-for a general theory consists of background metric $\displaystyle{g_{\mu \nu}}$ and dynamical fields $\displaystyle{\phi}$, we have
+### a possible 
 
+for a general theory consists of background metric $\displaystyle{g_{\mu \nu}}$ and dynamical fields $\displaystyle{\phi}$, we write down the action
+
+$$\
+\begin{align}
+S & = \int _{M}L[g_{\mu \nu},\phi]
+\end{align}
+$$
+
+the variation of the action is
+
+$$
+\begin{align}
+\delta S & =\int _{M}\left( E_{\phi}\delta \phi-\frac{1}{2}T^{\mu \nu}\delta g_{\mu \nu} \right)\varepsilon+\theta|_{\Sigma _{f}}-\theta|_{\Sigma _{i}}
+\end{align}
+$$
+
+where $\displaystyle{E_{\phi}}$ is the EoM for $\displaystyle{\phi}$, and $\displaystyle{T^{\mu \nu}=\frac{-2}{\sqrt{ -g }} \frac{\delta S}{\delta g_{\mu \nu}}}$ is the stress tensor for $\displaystyle{\phi}$, satisfying
+
+$$
+\begin{align}
+\nabla _{\mu}T^{\mu \nu} & =0
+\end{align}
+$$
+
+(assume there is no anomaly). consider the following symmetry
+
+$$
+\begin{align}
+X_{\xi}=\int \mathrm{d}^{d}x\left( \mathcal{L}_{\xi}g_{\mu \nu} \frac{\delta}{\delta g_{\mu \nu}}+\mathcal{L}_{\xi}\phi  \frac{\delta}{\delta \phi} \right)
+\end{align}
+$$
+
+(whatever the $\displaystyle{\xi _{\mu}}$ is Killing vector or conformal Killing vector), we have
+
+$$\tag{.}
+\begin{align}
+X_{\xi}\cdot \delta S & =\int _{M}\left(E_{\phi}(X_{\xi}\cdot \delta \phi)-\frac{1}{2}T^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})\right)\varepsilon+X_{\xi}\cdot \theta|_{\Sigma _{f}}-X_{\xi}\cdot \theta|_{\Sigma _{i}} \\
+ & =\int _{M}E_{\phi}(X_{\xi}\cdot \delta \phi)\varepsilon+\left(X_{\xi}\cdot \theta-\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}\right){\Huge|}_{\Sigma _{f}-\Sigma _{i}}
+\end{align}
+$$
+
+and finally we have
+
+$$
+\begin{align}
+H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi}=\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}
+\end{align}
+$$
 
 
 ## (conformal) Killing vector
