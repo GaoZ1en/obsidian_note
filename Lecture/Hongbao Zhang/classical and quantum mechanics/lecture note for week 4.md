@@ -189,8 +189,6 @@ Y_{\xi} & =\int \mathrm{d}^{d}x\left( \xi ^{\mu}\nabla _{\mu}\phi+\frac{d-2}{2d}
 \end{align}
 $$
 
-
-
 ## (conformal) Killing vector
 
 consider a Killing vector $\displaystyle{\xi _{\mu}}$ which satisfies
