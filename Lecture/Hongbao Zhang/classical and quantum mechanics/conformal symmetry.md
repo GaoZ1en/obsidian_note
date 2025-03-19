@@ -134,7 +134,15 @@ where $\displaystyle{\xi ^{\mu}}$ satisfies the conformal Killing equation
 
 $$\tag{1.15}
 \begin{align}
-\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu}-g_{\mu \nu}\nabla _{\rho}\xi ^{\rho}
+\partial _{\mu}\xi _{\nu}+\partial_{\nu}\xi _{\mu}-g_{\mu \nu}\partial_{\rho}\xi ^{\rho}=0
+\end{align}
+$$
+
+we have the following corollary
+
+$$\tag{1.15'}
+\begin{align}
+\partial ^{\nu}\partial _{\nu}\xi ^{\mu}=0 
 \end{align}
 $$
 
@@ -142,8 +150,8 @@ act $\displaystyle{X_{\xi}}$ on $\displaystyle{\delta S}$, we have
 
 $$\tag{1.16}
 \begin{align}
-X_{\xi}\cdot \delta S & =-\int _{M}\varepsilon \nabla _{\mu}\phi \nabla ^{\mu}(\xi ^{\nu}\nabla _{\nu}\phi) \\
- & =\int _{\Sigma _{f}}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu} \frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi-\int _{\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu} \frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi
+X_{\xi}\cdot \delta S & =-\int _{M}\varepsilon \nabla _{\mu}\phi \partial^{\mu}(\xi ^{\nu}\partial_{\nu}\phi) \\
+ & =\int _{\Sigma _{f}}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu} \frac{1}{2}g_{\mu \nu}\partial_{\rho}\phi \partial^{\rho}\phi-\int _{\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu} \frac{1}{2}g_{\mu \nu}\partial_{\rho}\phi \partial^{\rho}\phi
 \end{align}
 $$
 
@@ -152,8 +160,54 @@ then the Noether charge is
 $$\tag{1.17}
 \begin{align}
 H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
- & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi \right) \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \partial_{\mu}\phi \partial_{\nu}\phi-\frac{1}{2}g_{\mu \nu}\partial_{\rho}\phi \partial^{\rho}\phi \right) \\
  & = \int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}
 \end{align}
 $$
+
+action (1.14) allows another translation symmetry
+
+$$\tag{1.18}
+\begin{align}
+X_{\Omega}=\int \mathrm{d}^{2}x\Omega  \frac{\delta}{\delta \phi}
+\end{align}
+$$
+
+where $\displaystyle{\Omega}$ satisfies $\displaystyle{\nabla ^{2}\Omega=0}$. act this symmetry on the action, we have
+
+$$\tag{1.19}
+\begin{align}
+X_{\Omega}\cdot \delta S & =-\int _{M}\varepsilon \partial_{\mu}\phi \partial^{\mu}\Omega \\
+ & =\int _{\Sigma _{f}}\varepsilon _{\Sigma}\tau ^{\mu}\partial_{\mu}\Omega \phi-\int _{\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\partial_{\mu}\Omega \phi
+\end{align}
+$$
+
+and the corresponding Noether charge is
+
+$$\tag{1.20}
+\begin{align}
+H'_{\Omega} & =X_{\Omega}\cdot \theta-\alpha _{\Omega} \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\Omega \partial_{\mu}\phi -\phi \partial_{\mu}\Omega)
+\end{align}
+$$
+
+finally consider a combined symmetry
+
+$$\tag{1.21}
+\begin{align}
+X_{\xi}' & =X_{\xi}+\frac{1}{\gamma}X_{\partial \xi} \\
+ & =\int _{M}\mathrm{d}^{2}x\left( \xi ^{\rho}\partial_{\rho}\phi+\frac{1}{\gamma}\partial_{\rho}\xi ^{\rho} \right) \frac{\delta}{\delta \phi}
+\end{align}
+$$
+
+then the corresponding Noether charge is
+
+$$\tag{1.22}
+\begin{align}
+H'_{\xi} & =H_{\xi}+\frac{1}{\gamma}H_{\partial \xi} \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}+\frac{1}{\gamma}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial_{\nu}\xi ^{\nu}\partial_{\mu}\phi-\phi \partial_{\mu}\partial_{\nu}\xi ^{\nu})
+\end{align}
+$$
+
+and finally we will consider the Poisson brackets between Noether charges.
 
