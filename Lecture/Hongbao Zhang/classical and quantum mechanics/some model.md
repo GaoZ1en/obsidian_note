@@ -416,8 +416,20 @@ act $\displaystyle{X_{\xi}}$ on $\displaystyle{\delta S}$, we have
 
 $$\tag{2.14}
 \begin{align}
-X_{\xi}\cdot \delta S_{1} & =-\int _{M} \varepsilon \nabla _{\mu}\phi\nabla ^{\mu}\left( \xi ^{\nu}\nabla _{\nu}\phi+\frac{d-2}{2d}\nabla _{\nu}\xi ^{\nu}\phi \right) \\
- & =-\int _{M}\varepsilon \nabla _{\mu}\phi\left( \nabla ^{\mu}\xi ^{\nu}\nabla _{\nu}\phi+\xi ^{\nu}\nabla _{\nu}\nabla ^{\mu}\phi+\frac{d-2}{2d}\nabla ^{\mu}\nabla _{\nu}\xi ^{\nu}\phi +\frac{d-2}{2d}\nabla _{\nu}\xi ^{\nu}\nabla _{\mu}\phi\right) \\
- & =-\int _{M}\varepsilon\left(\frac{1}{d}\nabla _{\rho}\xi ^{\rho}\nabla _{\nu}\phi\nabla ^{\nu}\phi+\frac{1}{2}\xi ^{\mu}\nabla _{\mu}(\nabla _{\nu}\phi \nabla ^{\nu}\phi)\right)
+X_{\xi}\cdot \delta S_{1} & =-\int _{M} \varepsilon \nabla _{\mu}\phi\nabla ^{\mu}\left( \xi ^{\nu}\nabla _{\nu}\phi+\frac{d-2}{2d}\nabla _{\nu}\xi ^{\nu}\phi \right)-\int _{M}\varepsilon \frac{(d-2)}{4(d-1)}R\phi\left( \xi ^{\mu}\nabla _{\mu}\phi+\frac{d-2}{2d}\nabla _{\mu}\xi ^{\mu}\phi \right) \\
+ & =-\int _{M}\varepsilon \nabla ^{\mu}\left( \frac{1}{2}\xi _{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi+\frac{d-2}{8(d-1)}R\xi ^{\mu}\phi ^{2}+\frac{d-2}{4d}\nabla ^{\mu}\nabla _{\nu}\xi ^{\nu}\phi ^{2} \right) \\
+ & +\frac{d-2}{8(d-1)}\int _{M}\varepsilon \phi ^{2}\left(  \frac{2(d-1)}{d}\nabla ^{2}(\nabla _{\nu}\xi ^{\nu}) +\xi ^{\mu}\nabla _{\mu}R+\frac{2}{d}R\nabla _{\mu}\xi ^{\mu}\right) \\
+ & =\int _{\Sigma _{f}-\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\left( \frac{1}{2}\xi _{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi+\frac{d-2}{8(d-1)}R\xi ^{\mu}\phi ^{2}+\frac{d-2}{4d}\nabla ^{\mu}\nabla _{\nu}\xi ^{\nu}\phi ^{2} \right)
+\end{align}
+$$
+
+and the corresponding Noether charge is
+
+$$\tag{2.15}
+\begin{align}
+H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\left( \xi ^{\nu}\nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}\xi _{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi-\frac{d-2}{8(d-1)}R\xi _{\mu}\phi ^{2}-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}\phi ^{2}+\frac{d-2}{4d}\nabla _{\mu}\phi ^{2}\nabla _{\nu}\xi ^{\nu}\right) \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi +\frac{d-2}{4(d-1)}G_{\mu \nu}\phi ^{2}\right) \\
+ & +\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\left( -\frac{d-2}{4(d-1)}\phi ^{2}\left( \frac{d-2}{d}\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}+\nabla ^{2}\xi _{\mu}+R_{\mu \nu}\xi ^{\nu} \right)-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}\phi ^{2}+\frac{d-2}{4d}\nabla _{\mu}\phi ^{2}\nabla _{\nu}\xi ^{\nu} \right)
 \end{align}
 $$
