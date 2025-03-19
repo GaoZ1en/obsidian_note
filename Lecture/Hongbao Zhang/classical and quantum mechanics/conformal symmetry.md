@@ -217,7 +217,7 @@ $$\tag{1.23}
 \begin{align}
 \left\{H_{\xi}',H_{\zeta}'\right\} & =X_{\zeta}\cdot \delta H_{\xi}' \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}(\zeta ^{\rho}\partial _{\rho}\Theta _{\mu \nu}+\Theta _{\rho \nu}\partial _{\mu}\zeta ^{\rho}+\Theta _{\mu \rho}\partial _{\nu}\zeta ^{\rho})+\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial _{\nu}\xi ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}-\partial _{\nu}\zeta ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}) \\
- & =H'_{\left\{\xi,\zeta\right\}}+\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial _{\nu}\xi ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}-\partial _{\nu}\zeta ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho})
+ & =H'_{\left\{\xi,\zeta\right\}}+\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial _{\nu}\xi ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}-\partial _{\nu}\zeta ^{\nu}\partial _{\mu}\partial _{\rho}\xi ^{\rho})
 \end{align}
 $$
 
@@ -248,4 +248,44 @@ $$\tag{1.25}
 \left\{D_{m},D_{n}\right\} & =-\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m-n}
 \end{align}
 $$
+
+then we have
+
+$$\tag{1.26}
+\begin{align}
+\left\{H_{A_{m}}',H_{A_{n}}'\right\} & =\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}} \\
+\left\{H_{A_{m}}',H_{B_{n}}'\right\} & =-\frac{1}{2}(m-n)H_{D_{m+n}}-\frac{1}{2}(m+n)H_{D_{m-n}} \\
+\left\{H_{A_{m}}',H_{C_{n}}'\right\} & =\frac{1}{2}(m-n)H_{A_{m+n}}+\frac{1}{2}(m+n)H_{A_{m-n}}+\frac{4\pi}{\gamma ^{2}}m^{3}(\delta _{m,n}-\delta _{m,-n}) \\
+\left\{H_{A_{m}}',H_{D_{n}}'\right\} & =\frac{1}{2}(m-n)H_{B_{m+n}}+\frac{1}{2}(m+n)H_{B_{m-n}} \\
+\left\{H_{B_{m}}',H_{B_{n}}'\right\} & =\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}} \\
+\left\{H_{B_{m}}',H_{C_{n}}'\right\} & =\frac{1}{2}(m-n)H_{B_{m+n}}+\frac{1}{2}(m+n)H_{B_{m-n}} \\
+\left\{H_{B_{m}}',H_{D_{n}}'\right\} & =\frac{1}{2}(m-n)H_{A_{m+n}}+\frac{1}{2}(m+n)H_{A_{m-n}}-\frac{4\pi}{\gamma ^{2}}(\delta _{m,n}-\delta _{m,-n}) \\
+\left\{H_{C_{m}}',H_{C_{n}}'\right\} & =\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}} \\
+\left\{H_{C_{m}}',H_{D_{n}}'\right\} & =\frac{1}{2}(m-n)H_{D_{m+n}}+\frac{1}{2}(m+n)H_{D_{m-n}} \\
+\left\{H_{D_{m}}',H_{D_{n}}'\right\} & =\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}} 
+\end{align}
+$$
+
+define Virasoro modes as
+
+$$\tag{1.27}
+\begin{align}
+L_{n} & =\frac{1}{2}H_{A_{n}}+\frac{1}{2}H_{B_{n}}+\frac{i}{2}H_{C_{n}}-\frac{i}{2}H_{D_{n}}+\frac{2\pi}{\gamma ^{2}}\delta _{n,0} \\
+\bar{L}_{n} & =\frac{1}{2}H_{A_{n}}-\frac{1}{2}H_{B_{n}}+\frac{i}{2}H_{C_{n}}+\frac{i}{2}H_{D_{n}}+\frac{2\pi}{\gamma ^{2}}\delta _{n,0}
+\end{align}
+$$
+
+then we have
+
+$$\tag{1.28}
+\begin{align}
+\left\{L_{m},L_{n}\right\} & =-i(m-n)L_{m+n}+\frac{4\pi}{\gamma ^{2}}m(m^{2}-1)\delta _{m,-n} \\
+\left\{\bar{L}_{m},\bar{L}_{n}\right\} & =-i(m-n)\bar{L}_{m+n}+\frac{4\pi}{\gamma ^{2}}m(m^{2}-1)\delta _{m,-n} \\
+\left\{L_{m},\bar{L}_{n}\right\} & =0
+\end{align}
+$$
+
+which is exactly the Virasoro algebra with central charge $\displaystyle{c=\frac{48\pi}{\gamma ^{2}}}$
+
+## conformally coupled scalar
 
