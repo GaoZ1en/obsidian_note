@@ -205,7 +205,8 @@ then the corresponding Noether charge is
 $$\tag{1.22}
 \begin{align}
 H'_{\xi} & =H_{\xi}+\frac{1}{\gamma}H_{\partial \xi} \\
- & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \partial_{\mu}\phi \partial_{\nu}\phi-\frac{1}{2}g_{\mu \nu}\partial_{\rho}\phi \partial^{\rho}\phi \right)+\frac{1}{\gamma}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial_{\nu}\xi ^{\nu}\partial_{\mu}\phi-\phi \partial_{\mu}\partial_{\nu}\xi ^{\nu}) \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \partial_{\mu}\phi \partial_{\nu}\phi-\frac{1}{2}g_{\mu \nu}\partial_{\rho}\phi \partial^{\rho}\phi \right) \\
+ & +\frac{1}{\gamma}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial_{\nu}\xi ^{\nu}\partial_{\mu}\phi-\phi \partial_{\mu}\partial_{\nu}\xi ^{\nu}) \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\Theta _{\mu \nu} \\
 \Theta _{\mu \nu} & =\partial _{\mu}\phi \partial _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\phi-\frac{2}{\gamma}\partial _{\mu}\partial _{\nu}\phi
 \end{align}
@@ -216,7 +217,8 @@ and finally we will consider the Poisson brackets between Noether charges.
 $$\tag{1.23}
 \begin{align}
 \left\{H_{\xi}',H_{\zeta}'\right\} & =X_{\zeta}\cdot \delta H_{\xi}' \\
- & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}(\zeta ^{\rho}\partial _{\rho}\Theta _{\mu \nu}+\Theta _{\rho \nu}\partial _{\mu}\zeta ^{\rho}+\Theta _{\mu \rho}\partial _{\nu}\zeta ^{\rho})+\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial _{\nu}\xi ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}-\partial _{\nu}\zeta ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}) \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}(\zeta ^{\rho}\partial _{\rho}\Theta _{\mu \nu}+\Theta _{\rho \nu}\partial _{\mu}\zeta ^{\rho}+\Theta _{\mu \rho}\partial _{\nu}\zeta ^{\rho}) \\
+ & +\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial _{\nu}\xi ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}-\partial _{\nu}\zeta ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}) \\
  & =H'_{\left\{\xi,\zeta\right\}}+\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial _{\nu}\xi ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}-\partial _{\nu}\zeta ^{\nu}\partial _{\mu}\partial _{\rho}\xi ^{\rho})
 \end{align}
 $$
@@ -321,7 +323,8 @@ $$\tag{2.4}
 \begin{align}
 \tilde{\Gamma}^{\rho}_{~\mu \nu} & =\Gamma ^{\rho}_{~\mu \nu}+\delta ^{\rho}_{\mu}\nabla _{\nu}\sigma+\delta ^{\rho}_{\nu}\nabla _{\mu}\sigma+g_{\mu \nu}\nabla ^{\rho}\sigma \\
 \tilde{R}_{\mu \nu \rho \sigma} & =R_{\mu \nu \rho \sigma}+g_{\mu \rho}\nabla _{\nu}\nabla _{\sigma}\sigma-g_{\nu \rho}\nabla _{\mu}\nabla _{\sigma}\sigma+g_{\nu \sigma}\nabla _{\mu}\nabla _{\rho}\sigma-g_{\mu \sigma}\nabla _{\nu}\nabla _{\rho}\sigma \\
- & +g_{\mu \rho}\nabla _{\nu}\sigma \nabla _{\sigma}\sigma-g_{\nu \rho}\nabla _{\mu}\sigma \nabla _{\sigma}\sigma+g_{\nu \sigma}\nabla _{\mu}\sigma \nabla _{\rho}\sigma-g_{\mu \sigma}\nabla _{\nu}\sigma \nabla _{\rho}\sigma-(g_{\mu \rho}g_{\nu \sigma}-g_{\mu \sigma}g_{\nu \rho})\nabla _{\lambda}\sigma \nabla ^{\lambda}\sigma \\
+ & +g_{\mu \rho}\nabla _{\nu}\sigma \nabla _{\sigma}\sigma-g_{\nu \rho}\nabla _{\mu}\sigma \nabla _{\sigma}\sigma+g_{\nu \sigma}\nabla _{\mu}\sigma \nabla _{\rho}\sigma-g_{\mu \sigma}\nabla _{\nu}\sigma \nabla _{\rho}\sigma \\
+ & -(g_{\mu \rho}g_{\nu \sigma}-g_{\mu \sigma}g_{\nu \rho})\nabla _{\lambda}\sigma \nabla ^{\lambda}\sigma \\
 \tilde{R}_{\mu \nu} & =R_{\mu \nu}-(d-2)\nabla _{\mu}\nabla _{\nu}\sigma-g_{\mu \nu}\nabla ^{2}\sigma+(d-2)\nabla _{\mu}\sigma \nabla _{\nu}\sigma-(d-2)g_{\mu \nu}\nabla _{\rho}\sigma \nabla ^{\rho}\sigma \\
 \tilde{R} & =e^{-2\sigma}(R-2(d-1)\nabla ^{2}\sigma-(d-1)(d-2)\nabla _{\mu}\sigma \nabla ^{\mu}\sigma) \\
 \tilde{\nabla}_{\mu}\tilde{\phi} & =e^{-(d-2)\sigma/2}\left( \nabla _{\mu}\phi-\frac{d-2}{2}\nabla _{\mu}\sigma \phi \right) \\
@@ -416,7 +419,8 @@ act $\displaystyle{X_{\xi}}$ on $\displaystyle{\delta S}$, we have
 
 $$\tag{2.14}
 \begin{align}
-X_{\xi}\cdot \delta S_{1} & =-\int _{M} \varepsilon \nabla _{\mu}\phi\nabla ^{\mu}\left( \xi ^{\nu}\nabla _{\nu}\phi+\frac{d-2}{2d}\nabla _{\nu}\xi ^{\nu}\phi \right)-\int _{M}\varepsilon \frac{(d-2)}{4(d-1)}R\phi\left( \xi ^{\mu}\nabla _{\mu}\phi+\frac{d-2}{2d}\nabla _{\mu}\xi ^{\mu}\phi \right) \\
+X_{\xi}\cdot \delta S & =-\int _{M} \varepsilon \nabla _{\mu}\phi\nabla ^{\mu}\left( \xi ^{\nu}\nabla _{\nu}\phi+\frac{d-2}{2d}\nabla _{\nu}\xi ^{\nu}\phi \right) \\
+ & -\int _{M}\varepsilon \frac{(d-2)}{4(d-1)}R\phi\left( \xi ^{\mu}\nabla _{\mu}\phi+\frac{d-2}{2d}\nabla _{\mu}\xi ^{\mu}\phi \right) \\
  & =-\int _{M}\varepsilon \nabla ^{\mu}\left( \frac{1}{2}\xi _{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi+\frac{d-2}{8(d-1)}R\xi ^{\mu}\phi ^{2}+\frac{d-2}{4d}\nabla ^{\mu}\nabla _{\nu}\xi ^{\nu}\phi ^{2} \right) \\
  & +\frac{d-2}{8(d-1)}\int _{M}\varepsilon \phi ^{2}\left(  \frac{2(d-1)}{d}\nabla ^{2}(\nabla _{\nu}\xi ^{\nu}) +\xi ^{\mu}\nabla _{\mu}R+\frac{2}{d}R\nabla _{\mu}\xi ^{\mu}\right) \\
  & =\int _{\Sigma _{f}-\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\left( \frac{1}{2}\xi _{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi+\frac{d-2}{8(d-1)}R\xi ^{\mu}\phi ^{2}+\frac{d-2}{4d}\nabla ^{\mu}\nabla _{\nu}\xi ^{\nu}\phi ^{2} \right)
@@ -428,8 +432,10 @@ and the corresponding Noether charge is
 $$\tag{2.15}
 \begin{align}
 H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
- & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\left( \xi ^{\nu}\nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}\xi _{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi-\frac{d-2}{8(d-1)}R\xi _{\mu}\phi ^{2}-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}\phi ^{2}+\frac{d-2}{4d}\nabla _{\mu}\phi ^{2}\nabla _{\nu}\xi ^{\nu}\right) \\
- & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi +\frac{d-2}{4(d-1)}G_{\mu \nu}\phi ^{2}-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\phi ^{2}+\frac{d-2}{4d}g_{\mu \nu}\nabla ^{2}\phi ^{2}\right) \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\left( \xi ^{\nu}\nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}\xi _{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi-\frac{d-2}{8(d-1)}R\xi _{\mu}\phi ^{2}\right. \\
+ & \left.-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}\phi ^{2}+\frac{d-2}{4d}\nabla _{\mu}\phi ^{2}\nabla _{\nu}\xi ^{\nu}\right) \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi +\frac{d-2}{4(d-1)}G_{\mu \nu}\phi ^{2}\right. \\
+ & \left.-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\phi ^{2}+\frac{d-2}{4d}g_{\mu \nu}\nabla ^{2}\phi ^{2}\right) \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}
 \end{align}
 $$
@@ -444,6 +450,28 @@ $$
 
 $$\tag{.}
 \begin{align}
-X_{\zeta}\cdot \delta H_{\xi} & =\int _{\Sigma}
+X_{\zeta}\cdot \delta H_{\xi} & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}(X_{\zeta}\cdot \delta \phi)\nabla _{\nu}\phi+\nabla _{\mu}\phi \nabla _{\nu}(X_{\zeta}\cdot \delta \phi)-g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}(X_{\zeta}\cdot \delta \phi)+\frac{d-2}{2(d-1)}G_{\mu \nu}\phi(X_{\zeta}\cdot \delta \phi) \right. \\
+ & -\frac{d-2}{2d}\nabla _{\mu}\nabla _{\nu}(\phi(X_{\zeta}\cdot \delta \phi))+\frac{d-2}{2d}g_{\mu \nu}\nabla ^{2}(\phi(X_{\zeta}\cdot \delta \phi)) \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\left( \zeta ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\zeta^{\rho}\phi \right)\nabla _{\nu}\phi+\nabla _{\mu}\phi \nabla _{\nu}\left( \zeta ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho}\phi \right) \right. \\
+ & -g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\left( \zeta ^{\sigma}\nabla _{\sigma}\phi+\frac{d-2}{2d}\nabla _{\sigma}\zeta ^{\sigma}\phi \right)+\frac{d-2}{2(d-1)}G_{\mu \nu}\phi\left( \zeta ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho}\phi\right) \\
+ & \left. -\frac{d-2}{2d}\nabla _{\mu}\nabla _{\nu}\left( \phi\left( \zeta ^{\rho}\nabla _{\rho}+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho}\phi \right) \right)+\frac{d-2}{2d}g_{\mu \nu}\nabla ^{2}\left( \phi\left( \zeta ^{\rho}\nabla _{\rho}+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho} \phi\right) \right) \right)
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+X_{\xi} & =\int _{M} \mathrm{d}^{d}x\left(\xi ^{\mu}\nabla _{\mu}\phi+\frac{d-2}{2d}\nabla _{\mu}\xi ^{\mu}\phi\right) \frac{\delta}{\delta \phi}
+\end{align}
+$$
+
+## Liouville theory
+
+we have
+
+$$\tag{.}
+\begin{align}
+\left\{H_{\xi},H_{\zeta}\right\} & =H_{\left\{\xi,\zeta\right\}}-\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(R(\xi _{\mu}\nabla _{\nu}\zeta ^{\nu}-\zeta _{\mu}\nabla _{\nu}\xi ^{\nu})+\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}\nabla _{\rho}\zeta ^{\rho}-\nabla _{\mu}\nabla _{\nu}\zeta ^{\rho}\nabla _{\nu}\xi ^{\rho})
+\end{align}
+$$
+
+every Virasoro algebras takes the same form...

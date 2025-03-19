@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/some model.md",
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "some model"
+              "title": "models"
             }
           }
         ],
@@ -140,7 +140,7 @@
   "active": "f30c5dbd5d1e44cd",
   "lastOpenFiles": [
     "Articles/Noether charge/Virasoro algebra.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/some model.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
     "Articles/Noether charge/Brackets.md",
     "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
     "Articles/Topologically massive gravity/trash.md",
