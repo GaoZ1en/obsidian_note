@@ -205,9 +205,34 @@ then the corresponding Noether charge is
 $$\tag{1.22}
 \begin{align}
 H'_{\xi} & =H_{\xi}+\frac{1}{\gamma}H_{\partial \xi} \\
- & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}+\frac{1}{\gamma}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial_{\nu}\xi ^{\nu}\partial_{\mu}\phi-\phi \partial_{\mu}\partial_{\nu}\xi ^{\nu})
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \partial_{\mu}\phi \partial_{\nu}\phi-\frac{1}{2}g_{\mu \nu}\partial_{\rho}\phi \partial^{\rho}\phi \right)+\frac{1}{\gamma}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial_{\nu}\xi ^{\nu}\partial_{\mu}\phi-\phi \partial_{\mu}\partial_{\nu}\xi ^{\nu}) \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\Theta _{\mu \nu} \\
+\Theta _{\mu \nu} & =\partial _{\mu}\phi \partial _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\phi-\frac{2}{\gamma}\partial _{\mu}\partial _{\nu}\phi
 \end{align}
 $$
 
 and finally we will consider the Poisson brackets between Noether charges.
 
+$$\tag{1.23}
+\begin{align}
+\left\{H_{\xi}',H_{\zeta}'\right\} & =X_{\zeta}\cdot \delta H_{\xi}'
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+X_{\zeta}\cdot \delta H'_{\xi} & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}(X_{\zeta}\cdot \delta \Theta _{\mu \nu}) \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \partial _{\mu}\left( \zeta^{\rho}\partial _{\rho}\phi+\frac{1}{\gamma}\partial _{\rho}\zeta^{\rho} \right)\partial _{\nu}\phi+\partial _{\mu}\phi \partial _{\nu}\left( \zeta^{\rho}\partial _{\rho}\phi+\frac{1}{\gamma}\partial _{\rho}\zeta^{\rho} \right)-g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\left( \zeta^{\sigma}\partial _{\sigma}\phi+\frac{1}{\gamma}\partial _{\sigma}\zeta^{\sigma} \right) \right. \\
+ & \left. - \frac{2}{\gamma}\partial _{\mu}\partial _{\nu}\left( \zeta ^{\rho}\partial _{\rho}\phi+\frac{1}{\gamma}\partial _{\rho}\zeta ^{\rho} \right) \right) \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \partial _{\mu}\zeta ^{\rho}\partial _{\rho}\phi \partial _{\nu}\phi+\zeta ^{\rho}\partial _{\rho}\partial _{\mu}\phi \partial _{\nu}+\frac{1}{\gamma}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}\partial _{\nu}\phi+\partial _{\mu}\phi \partial _{\nu}\zeta ^{\rho}\partial _{\rho}\phi+\zeta ^{\rho}\partial _{\mu}\phi \partial _{\rho}\partial _{\nu}\phi+\frac{1}{\gamma} \partial _{\mu}\phi \partial _{\nu}\partial _{\rho}\zeta ^{\rho}\right. \\
+ & \left.-g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\zeta ^{\sigma}\partial _{\sigma}\phi-g_{\mu \nu}\partial _{\rho}\phi \zeta ^{\sigma}\partial _{\sigma}\partial _{\rho}\phi-\frac{1}{\gamma}g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\partial _{\sigma}\zeta ^{\sigma}-\frac{2}{\gamma}\partial _{\mu}\partial _{\nu}\zeta ^{\rho}\partial _{\rho}\phi-\frac{2}{\gamma}\partial _{\nu}\zeta ^{\rho}\partial _{\mu}\partial _{\rho}\phi-\frac{2}{\gamma}\partial _{\mu}\zeta ^{\rho}\partial _{\rho}\partial _{\nu}\phi-\frac{2}{\gamma ^{2}}\partial _{\mu}\partial _{\nu}\partial _{\rho}\zeta ^{\rho}\right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left(\zeta ^{\rho}\partial _{\rho}(\partial)+\frac{1}{\gamma}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}\partial _{\nu}\phi+\zeta ^{\rho}\partial _{\mu}\phi \partial _{\rho}\partial _{\nu}\phi+\frac{1}{\gamma} \partial _{\mu}\phi \partial _{\nu}\partial _{\rho}\zeta ^{\rho}\right. \\
+ & \left.-g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\zeta ^{\sigma}\partial _{\sigma}\phi-g_{\mu \nu}\partial _{\rho}\phi \zeta ^{\sigma}\partial _{\sigma}\partial _{\rho}\phi-\frac{1}{\gamma}g_{\mu \nu}\partial _{\rho}\phi \partial ^{\rho}\partial _{\sigma}\zeta ^{\sigma}-\frac{2}{\gamma}\partial _{\mu}\partial _{\nu}\zeta ^{\rho}\partial _{\rho}\phi-\frac{2}{\gamma ^{2}}\partial _{\mu}\partial _{\nu}\partial _{\rho}\zeta ^{\rho}\right) \\
+ & +\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}(\Theta _{\rho \nu}\partial _{\mu}\zeta ^{\rho}+\Theta _{\mu \rho}\partial _{\nu}\zeta ^{\rho})
+\end{align}
+$$
