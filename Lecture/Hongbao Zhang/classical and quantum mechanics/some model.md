@@ -429,7 +429,10 @@ $$\tag{2.15}
 \begin{align}
 H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\left( \xi ^{\nu}\nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}\xi _{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi-\frac{d-2}{8(d-1)}R\xi _{\mu}\phi ^{2}-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}\phi ^{2}+\frac{d-2}{4d}\nabla _{\mu}\phi ^{2}\nabla _{\nu}\xi ^{\nu}\right) \\
- & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi +\frac{d-2}{4(d-1)}G_{\mu \nu}\phi ^{2}\right) \\
- & +\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\left( -\frac{d-2}{4(d-1)}\phi ^{2}\left( \frac{d-2}{d}\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}+\nabla ^{2}\xi _{\mu}+R_{\mu \nu}\xi ^{\nu} \right)-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}\phi ^{2}+\frac{d-2}{4d}\nabla _{\mu}\phi ^{2}\nabla _{\nu}\xi ^{\nu} \right)
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi +\frac{d-2}{4(d-1)}G_{\mu \nu}\phi ^{2}-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\phi ^{2}+\frac{d-2}{4d}g_{\mu \nu}\nabla ^{2}\phi ^{2}\right) \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}
 \end{align}
 $$
+
+finally we consider the Poisson bracket between Noether charges.
+
