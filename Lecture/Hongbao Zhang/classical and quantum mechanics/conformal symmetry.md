@@ -221,4 +221,31 @@ $$\tag{1.23}
 \end{align}
 $$
 
-compactify 
+compactify the space coordiante $\displaystyle{\phi}$ to $\displaystyle{S^{1}}$, and the spacetime topology becomes $\displaystyle{\mathbb{R}\times S^{1}}$, we have conformal Killing fields
+
+$$\tag{1.24}
+\begin{align}
+A_{n,a}=A_{-n,a} & =\cos nt\cos n\phi \left(\frac{\partial}{\partial t}\right)_{a}-\sin nt\sin n\phi \left(\frac{\partial}{\partial \phi}\right)_{a} \\
+B_{n,a}=B_{-n,a} & =\sin nt\sin n\phi \left(\frac{\partial}{\partial t}\right)_{a}-\cos nt\cos n\phi \left(\frac{\partial}{\partial \phi} \right)_{a}\\
+C_{n,a}=-C_{-n,a} & =\sin nt\cos n\phi \left(\frac{\partial}{\partial t}\right)_{a}+\cos nt\sin n\phi \left(\frac{\partial}{\partial \phi}\right)_{a} \\
+D_{n,a}=-D_{-n,a} & =\cos nt\sin n\phi \left(\frac{\partial}{\partial t}\right)_{a}+\sin nt\cos n\phi \left(\frac{\partial}{\partial \phi}\right)_{a}
+\end{align}
+$$
+
+then
+
+$$\tag{1.25}
+\begin{align}
+\left\{A_{m},A_{n}\right\} & =+\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m-n} \\
+\left\{A_{m},B_{n}\right\} & =-\frac{1}{2}(m-n)D_{m+n}-\frac{1}{2}(m+n)D_{m-n} \\
+\left\{A_{m},C_{n}\right\} & =-\frac{1}{2}(m-n)A_{m+n}+\frac{1}{2}(m+n)A_{m-n} \\
+\left\{A_{m},D_{n}\right\} & =+\frac{1}{2}(m-n)B_{m+n}-\frac{1}{2}(m+n)B_{m-n} \\
+\left\{B_{m},B_{n}\right\} & =+\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m-n} \\
+\left\{B_{m},C_{n}\right\} & =-\frac{1}{2}(m-n)B_{m+n}+\frac{1}{2}(m+n)B_{m-n} \\
+\left\{B_{m},D_{n}\right\} & =+\frac{1}{2}(m-n)A_{m+n}-\frac{1}{2}(m+n)A_{m-n} \\
+\left\{C_{m},C_{n}\right\} & =-\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m+n} \\
+\left\{C_{m},D_{n}\right\} & =-\frac{1}{2}(m-n)D_{m+n}+\frac{1}{2}(m+n)D_{m-n} \\
+\left\{D_{m},D_{n}\right\} & =-\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m-n}
+\end{align}
+$$
+
