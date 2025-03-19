@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/2025 spring/english/week 4.md",
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "week 4"
+              "title": "trash"
             }
           },
           {
@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -150,10 +150,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "08c5073fdf1f0eeb",
+  "active": "e65941a2a5f85abd",
   "lastOpenFiles": [
-    "Lecture/2025 spring/python for physics/iterate.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
     "Lecture/2025 spring/english/week 4.md",
+    "Lecture/2025 spring/python for physics/iterate.md",
     "在报告里面应该讲什么呢.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 4.md",
     "Articles/Topologically massive gravity/trash.md",
@@ -168,7 +169,6 @@
     "Note/Physics/wait-to-be-complete/Maurer-Cartan form.md",
     "Note/Physics/Quantization",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
     "Articles/Noether charge/Noether's trick in Liouville theory.md",
     "Home.md",
     "Note/Code/tikz/tikzcd exercise.md",
