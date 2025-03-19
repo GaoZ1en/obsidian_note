@@ -320,8 +320,104 @@ under this transformation, we have
 $$\tag{2.4}
 \begin{align}
 \tilde{\Gamma}^{\rho}_{~\mu \nu} & =\Gamma ^{\rho}_{~\mu \nu}+\delta ^{\rho}_{\mu}\nabla _{\nu}\sigma+\delta ^{\rho}_{\nu}\nabla _{\mu}\sigma+g_{\mu \nu}\nabla ^{\rho}\sigma \\
-\tilde{R}^{\rho}_{~\sigma \mu \nu} & =R^{\rho}_{~\sigma \mu \nu}+\delta ^{\rho}_{\nu}\nabla _{\mu}\nabla _{\sigma}\sigma-g_{\nu} \\
 \tilde{R}_{\mu \nu \rho \sigma} & =R_{\mu \nu \rho \sigma}+g_{\mu \rho}\nabla _{\nu}\nabla _{\sigma}\sigma-g_{\nu \rho}\nabla _{\mu}\nabla _{\sigma}\sigma+g_{\nu \sigma}\nabla _{\mu}\nabla _{\rho}\sigma-g_{\mu \sigma}\nabla _{\nu}\nabla _{\rho}\sigma \\
- & +g_{\mu \rho}\nabla _{\nu}\sigma \nabla _{\sigma}\sigma-g_{\nu \rho}\nabla _{\mu}\sigma \nabla _{s}
+ & +g_{\mu \rho}\nabla _{\nu}\sigma \nabla _{\sigma}\sigma-g_{\nu \rho}\nabla _{\mu}\sigma \nabla _{\sigma}\sigma+g_{\nu \sigma}\nabla _{\mu}\sigma \nabla _{\rho}\sigma-g_{\mu \sigma}\nabla _{\nu}\sigma \nabla _{\rho}\sigma-(g_{\mu \rho}g_{\nu \sigma}-g_{\mu \sigma}g_{\nu \rho})\nabla _{\lambda}\sigma \nabla ^{\lambda}\sigma \\
+\tilde{R}_{\mu \nu} & =R_{\mu \nu}-(d-2)\nabla _{\mu}\nabla _{\nu}\sigma-g_{\mu \nu}\nabla ^{2}\sigma+(d-2)\nabla _{\mu}\sigma \nabla _{\nu}\sigma-(d-2)g_{\mu \nu}\nabla _{\rho}\sigma \nabla ^{\rho}\sigma \\
+\tilde{R} & =e^{-2\sigma}(R-2(d-1)\nabla ^{2}\sigma-(d-1)(d-2)\nabla _{\mu}\sigma \nabla ^{\mu}\sigma) \\
+\tilde{\nabla}_{\mu}\tilde{\phi} & =e^{-(d-2)\sigma/2}\left( \nabla _{\mu}\phi-\frac{d-2}{2}\nabla _{\mu}\sigma \phi \right) \\
+\tilde{\nabla}_{\mu}\tilde{\nabla}_{\nu}\tilde{\phi} & =e^{-(d-2)\sigma/2}\left( \nabla _{\mu}\nabla _{\nu}\phi-\frac{d}{2}\nabla _{\mu}\sigma \nabla _{\nu}\phi-\frac{d}{2}\nabla _{\mu}\phi \nabla _{\nu}\sigma+g_{\mu \nu}\nabla ^{\rho}\sigma \nabla _{\rho}\phi \right. \\
+ &\left.  \frac{1}{4}(d-2)(d+2)\nabla _{\mu}\sigma \nabla _{\nu}\sigma \phi-\frac{d-2}{2}g_{\mu \nu}\nabla _{\rho}\sigma \sigma ^{\rho}\sigma \phi-\frac{d-2}{2}\nabla _{\mu}\nabla _{\nu}\sigma \phi \right) \\
+\tilde{\nabla}^{2}\tilde{\phi} & =e^{-(d+2)\sigma/2}\left( \nabla ^{2}\phi-\frac{d-2}{2}\nabla ^{2}\sigma \phi-\frac{1}{4}(d-2)^{2}\nabla _{\mu}\sigma \nabla ^{\mu}\sigma \phi \right)
+\end{align}
+$$
+
+then
+
+$$\tag{2.5}
+\begin{align}
+\tilde{S} & =-\frac{1}{2}\int _{M}\tilde{\varepsilon}\left( \tilde{\nabla}_{\mu}\tilde{\phi}\tilde{\nabla}^{\mu}\tilde{\phi}+\frac{d-2}{4(d-1)}\tilde{R}\tilde{\phi}^{2} \right) \\
+ & =S+\frac{d-2}{4}\int _{M}\varepsilon \nabla _{\mu}(\nabla ^{\mu}\sigma \phi ^{2})
+\end{align}
+$$
+
+the action invariant up to a term supports on the Cauchy surface.
+
+generally speaking, the conformal transformation can be viewed as a diffeomorphism together with a Weyl transformation. we denote the origin metric as $\displaystyle{g_{\mu \nu}}$ and the dynamical field as $\displaystyle{\phi(x)}$. under a diffeomorphism
+
+$$\tag{2.6}
+\begin{align}
+x\mapsto f^{-1}(x)=x-\xi
+\end{align}
+$$
+
+the metric and the dynamical field transform to
+
+$$\tag{2.7}
+\begin{align}
+g'_{\mu \nu}(x)=g_{\alpha \beta}(f(x)) \frac{\partial f^{\alpha}}{\partial x^{\mu}} \frac{\partial f^{\beta}}{\partial x^{\nu}}, \phi'(x)=\phi(f(x))
+\end{align}
+$$
+
+then under an associated Weyl transformation, the metric and the dynamical fields transform to
+
+$$\tag{2.8}
+\begin{align}
+g''_{\mu \nu}(x) & =e^{2\sigma}g_{\mu \nu}'(x) \\
+ & =e^{2\sigma}g_{\alpha \beta}(f(x)) \frac{\partial f^{\alpha}}{\partial x^{\mu}} \frac{\partial f^{\beta}}{\partial x^{\nu}} \\
+ & =g_{\mu \nu}+2\sigma g_{\mu \nu}+\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu} \\
+\phi'(x) & =e^{-(d-2)\sigma/2}\phi'(x) \\
+ & =e^{-(d-2)\sigma/2}\phi(f(x)) \\
+ & =\phi-\frac{d-2}{2}\sigma \phi+\xi ^{\mu}\nabla _{\mu}\phi
+\end{align}
+$$
+
+we would like to consider a special class of transformation such that the metric is invariant, and actually, only such transformation can be viewed as a symmetry in the sense of Noether theorem. (why?) then we have
+
+$$\tag{2.9}
+\begin{align}
+\sigma=-\frac{2}{d}\nabla _{\rho}\xi ^{\rho}
+\end{align}
+$$
+
+and $\displaystyle{\xi ^{\mu}}$ satisfies the conformal Killing equation
+
+$$\tag{2.10}
+\begin{align}
+\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu}-\frac{2}{d}g_{\mu \nu}\nabla _{\rho}\xi ^{\rho} & =0
+\end{align}
+$$
+
+and the transformation of $\displaystyle{\phi}$ is
+
+$$\tag{2.11}
+\begin{align}
+\phi''=\phi+\xi ^{\mu}\nabla _{\mu}\phi+\frac{d-2}{2d}\nabla _{\rho}\xi ^{\rho}\phi
+\end{align}
+$$
+
+therefore we consider the symmetry vector
+
+$$\tag{2.12}
+\begin{align}
+X_{\xi} & =\int _{M} \mathrm{d}^{d}x\left(\xi ^{\mu}\nabla _{\mu}\phi+\frac{d-2}{2d}\nabla _{\mu}\xi ^{\mu}\phi\right) \frac{\delta}{\delta \phi}
+\end{align}
+$$
+
+we have the following two equations as the corollaries of (2.12)
+
+$$\tag{2.13}
+\begin{align}
+\frac{d-2}{d}\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}+\nabla ^{2}\xi _{\mu}+R_{\mu \nu}\xi ^{\nu}=0 \\
+\frac{2(d-1)}{d}\nabla ^{2}(\nabla _{\mu}\xi ^{\mu})+\xi ^{\mu}\nabla _{\mu}R+\frac{2}{d}R\nabla _{\mu}\xi ^{\mu} =0
+\end{align}
+$$
+
+act $\displaystyle{X_{\xi}}$ on $\displaystyle{\delta S}$, we have
+
+$$\tag{2.14}
+\begin{align}
+X_{\xi}\cdot \delta S_{1} & =-\int _{M} \varepsilon \nabla _{\mu}\phi\nabla ^{\mu}\left( \xi ^{\nu}\nabla _{\nu}\phi+\frac{d-2}{2d}\nabla _{\nu}\xi ^{\nu}\phi \right) \\
+ & =-\int _{M}\varepsilon \nabla _{\mu}\phi\left( \nabla ^{\mu}\xi ^{\nu}\nabla _{\nu}\phi+\xi ^{\nu}\nabla _{\nu}\nabla ^{\mu}\phi+\frac{d-2}{2d}\nabla ^{\mu}\nabla _{\nu}\xi ^{\nu}\phi +\frac{d-2}{2d}\nabla _{\nu}\xi ^{\nu}\nabla _{\mu}\phi\right) \\
+ & =-\int _{M}\varepsilon\left(\frac{1}{d}\nabla _{\rho}\xi ^{\rho}\nabla _{\nu}\phi\nabla ^{\nu}\phi+\frac{1}{2}\xi ^{\mu}\nabla _{\mu}(\nabla _{\nu}\phi \nabla ^{\nu}\phi)\right)
 \end{align}
 $$
