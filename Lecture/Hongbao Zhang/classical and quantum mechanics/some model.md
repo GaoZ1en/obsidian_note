@@ -436,3 +436,14 @@ $$
 
 finally we consider the Poisson bracket between Noether charges.
 
+$$\tag{2.16}
+\begin{align}
+\left\{H_{\xi},H_{\zeta}\right\} & =X_{\zeta}\cdot \delta H_{\xi}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+X_{\zeta}\cdot \delta H_{\xi} & =\int _{\Sigma}
+\end{align}
+$$
