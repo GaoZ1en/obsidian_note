@@ -460,14 +460,12 @@ $$
 
 $$\tag{.}
 \begin{align}
- & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\left( \zeta ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\zeta^{\rho}\phi \right)\nabla _{\nu}\phi+\nabla _{\mu}\phi \nabla _{\nu}\left( \zeta ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho}\phi \right) \right. \\
- & -g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\left( \zeta ^{\sigma}\nabla _{\sigma}\phi+\frac{d-2}{2d}\nabla _{\sigma}\zeta ^{\sigma}\phi \right)+\frac{d-2}{2(d-1)}G_{\mu \nu}\phi\left( \zeta ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho}\phi\right) \\
- & \left. -\frac{d-2}{2d}\nabla _{\mu}\nabla _{\nu}\left( \phi\left( \zeta ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho}\phi \right) \right)+\frac{d-2}{2d}g_{\mu \nu}\nabla ^{2}\left( \phi\left( \zeta ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho} \phi\right) \right) \right) \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\zeta ^{\rho}\nabla _{\rho}\phi \nabla _{\nu}\phi+\zeta ^{\rho}\nabla _{\mu}\nabla _{\rho}\phi \nabla _{\nu}\phi+\frac{d-2}{2d}\nabla _{\mu}\nabla _{\rho}\zeta ^{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho}\nabla _{\mu}\phi \nabla _{\nu}\phi \right. \\
  & +\nabla _{\mu}\phi \nabla _{\nu}\zeta ^{\rho}\nabla _{\rho}\phi+\nabla _{\mu}\phi \zeta ^{\rho}\nabla _{\nu}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\mu}\phi \nabla _{\nu}\nabla _{\rho}\zeta ^{\rho}\phi+\frac{d-2}{2d}\nabla _{\mu}\phi \nabla _{\rho}\zeta ^{\rho}\nabla _{\nu}\phi \\
  & -g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\zeta ^{\sigma}\nabla _{\sigma}\phi-g_{\mu \nu}\nabla _{\rho}\phi \zeta ^{\sigma}\nabla _{\sigma}\nabla ^{\rho}\phi-\frac{d-2}{2d}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\nabla _{\sigma}\zeta ^{\sigma}\phi-\frac{d-2}{2d}g_{\mu \nu}\nabla _{\rho}\phi \nabla _{\sigma}\zeta ^{\sigma}\nabla ^{\rho}\phi \\
  & +\frac{d-2}{2(d-1)}G_{\mu \nu}\phi \zeta ^{\rho}\nabla _{\rho}\phi+\frac{(d-2)^{2}}{4d(d-1)}G_{\mu \nu}\nabla _{\rho}\zeta ^{\rho}\phi ^{2}-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\zeta ^{\rho}\nabla _{\rho}\phi ^{2}-\frac{d-2}{4d}\nabla _{\nu}\zeta ^{\rho}\nabla _{\mu}\nabla _{\rho}\phi ^{2} \\
- & -\frac{d-2}{4d}\nabla _{\mu}\zeta ^{\rho}\nabla _{\nu}\nabla _{\rho}\phi ^{2}-\frac{d-2}{4d}\zeta ^{\rho}\nabla _{\rho}\nabla _{\mu}\nabla _{\nu}\phi ^{2}-\frac{(d-2)^{2}}{4d^{2}}\nabla _{\mu}\nabla _{\nu}\nabla _{\rho}\zeta ^{\rho}\phi ^{2}-\frac{(d-2)^{2}}{4d^{2}}\nabla _{\nu}\nabla _{\rho}\zeta ^{\rho}\nabla _{\mu}\phi ^{2}
+ & -\frac{d-2}{4d}\nabla _{\mu}\zeta ^{\rho}\nabla _{\nu}\nabla _{\rho}\phi ^{2}-\frac{d-2}{4d}\zeta ^{\rho}\nabla _{\rho}\nabla _{\mu}\nabla _{\nu}\phi ^{2}-\frac{(d-2)^{2}}{4d^{2}}\nabla _{\mu}\nabla _{\nu}\nabla _{\rho}\zeta ^{\rho}\phi ^{2}-\frac{(d-2)^{2}}{4d^{2}}\nabla _{\nu}\nabla _{\rho}\zeta ^{\rho}\nabla _{\mu}\phi ^{2} \\
+ & -\frac{(d-2)^{2}}{4d^{2}}\nabla _{\mu}\nabla _{\rho}\zeta ^{\rho}\nabla _{\nu}\phi ^{2}-\frac{(d-2)^{2}}{4d^{2}}\nabla _{\rho}\zeta ^{\rho}\nabla _{\mu}\nabla _{\nu}\phi ^{2}+\frac{d-2}{4d}g_{\mu \nu}\nabla ^{2}\zeta ^{\sigma}\nabla _{\sigma}\phi ^{2}+\frac{d-2}{4d}g_{\mu \nu}\nabla ^{\rho}\zeta ^{\sigma}\nabla _{\rho}\nabla _{\sigma}\phi ^{2}
 \end{align}
 $$
 
@@ -477,6 +475,18 @@ $$\tag{.}
 & =-\frac{d-2}{2d}\nabla _{\mu}\left( \frac{1}{2}\nabla _{\nu}\zeta ^{\rho}\nabla _{\rho}\phi ^{2}+\frac{1}{2}\zeta ^{\rho}\nabla _{\nu}\nabla _{\rho}\phi ^{2} +\frac{d-2}{2d}\nabla _{\nu}\nabla _{\rho}\zeta ^{\rho}\phi ^{2}+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho}\nabla _{\nu}\phi ^{2}\right) \\
  & =-\frac{d-2}{2d}\left( \frac{1}{2}\nabla _{\mu}\nabla _{\nu}\zeta ^{\rho}\nabla _{\rho}\phi ^{2}+\frac{1}{2}\nabla _{\nu}\zeta ^{\rho}\nabla _{\mu}\nabla _{\rho}\phi ^{2}+\frac{1}{2}\nabla _{\mu}\zeta ^{\rho}\nabla _{\nu}\nabla _{\rho}\phi ^{2}+\frac{1}{2}\zeta ^{\rho}\nabla _{\mu}\nabla _{\nu}\nabla _{\rho}\phi ^{2}\right. \\
  & \left.+\frac{d-2}{2d}\nabla _{\mu}\nabla _{\nu}\nabla _{\rho}\zeta ^{\rho}\phi ^{2}+\frac{d-2}{2d}\nabla _{\nu}\nabla _{\rho}\zeta ^{\rho}\nabla _{\mu}\phi ^{2}+\frac{d-2}{2d}\nabla _{\mu}\nabla _{\rho}\zeta ^{\rho}\nabla _{\nu}\phi ^{2}+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho}\nabla _{\mu}\nabla _{\nu}\phi ^{2} \right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+ & +\frac{d-2}{2d}g_{\mu \nu}\nabla ^{2}\left( \phi\left( \zeta ^{\rho}\nabla _{\rho}+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho} \phi\right) \right) =\frac{d-2}{2d}g_{\mu \nu}\nabla _{\rho}\nabla ^{\rho}\left( \frac{1}{2}\zeta ^{\sigma}\nabla _{\sigma}\phi ^{2} +\frac{d-2}{2d}\nabla _{\sigma}\zeta ^{\sigma}\phi ^{2}\right)\\
+ & =\frac{d-2}{2d}g_{\mu \nu}\nabla _{\rho}\left( \frac{1}{2}\nabla ^{\rho}\zeta ^{\sigma}\nabla _{\sigma}\phi ^{2}+\frac{1}{2}\zeta ^{\sigma}\nabla _{\sigma}\nabla ^{\rho}\phi ^{2}+\frac{d-2}{2d}\nabla _{\rho}\nabla _{\sigma}\zeta ^{\sigma}\phi ^{2}+\frac{d-2}{2d}\nabla _{\sigma}\zeta ^{\sigma}\nabla _{\rho}\phi ^{2} \right) \\
+ & =\frac{d-2}{2d}g_{\mu \nu}\left( \frac{1}{2}\nabla ^{2}\zeta ^{\sigma}\nabla _{\sigma}\phi ^{2}+\frac{1}{2}\nabla ^{\rho}\zeta ^{\sigma}\nabla _{\rho}\nabla _{\sigma}\phi ^{2}+\frac{1}{2}\nabla _{\rho}\zeta ^{\sigma}\nabla _{\sigma}\nabla ^{\rho}\phi ^{2}+\frac{1}{2}\zeta ^{\sigma}\nabla _{\sigma}\nabla ^{2}\phi ^{2} \right. \\
+ & +\frac{d-2}{2d}\nabla ^{2}(\nabla _{\sigma}\zeta ^{\sigma})\phi ^{2}+\frac{d-2}{2d}\nabla ^{\rho}\nabla _{\sigma}\zeta ^{\sigma}\nabla _{\rho}\phi ^{2}+\frac{d-2}{2d}\nabla _{\rho}\nabla _{\sigma}\zeta ^{\sigma}\nabla ^{\rho}\phi ^{2}+\frac{d-2}{2d}\nabla _{\sigma}\zeta ^{\sigma}\nabla ^{2}\phi ^{2} \\
+ & =\frac{d-2}{4d}g_{\mu \nu}\nabla ^{2}\zeta ^{\sigma}\nabla _{\sigma}\phi ^{2}+\frac{d-2}{4d}g_{\mu \nu}\nabla ^{\rho}\zeta ^{\sigma}\nabla _{\rho}\nabla _{\sigma}\phi ^{2} \\
+ & +\frac{d-2}{4d}g_{\mu \nu}\nabla _{\rho}\zeta ^{\sigma}\nabla _{\sigma}\nabla ^{\rho}\phi ^{2}+\frac{d-2}{4d}g_{\mu \nu}\zeta ^{\sigma}\nabla _{\sigma}\nabla ^{2}\phi ^{2}+\frac{(d-2)^{2}}{4d^{2}}g_{\mu \nu}\nabla ^{2}(\nabla _{\sigma}\zeta ^{\sigma})\phi ^{2}+\frac{(d-2)^{2}}{4d^{2}}g_{\mu \nu}\nabla ^{\rho}\nabla _{\sigma}\zeta ^{\sigma}\nabla _{\rho}\phi ^{2} \\
+ & +\frac{(d-2)^{2}}{4d^{2}}g_{\mu \nu}\nabla _{\rho}\nabla _{\sigma}\zeta ^{\sigma \nabla}
 \end{align}
 $$
 
