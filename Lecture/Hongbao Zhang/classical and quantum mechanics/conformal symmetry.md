@@ -119,3 +119,41 @@ H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}
 \end{align}
 $$
+
+### 2-dimensional free scalar
+
+for 2-dimensional free scalar, the action allows a conformal transformation
+
+$$\tag{1.14}
+\begin{align}
+X_{\xi}=\int _{M}\mathrm{d}^{2}x\mathcal{L}_{\xi}\phi  \frac{\delta}{\delta \phi}
+\end{align}
+$$
+
+where $\displaystyle{\xi ^{\mu}}$ satisfies the conformal Killing equation
+
+$$\tag{1.15}
+\begin{align}
+\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu}-g_{\mu \nu}\nabla _{\rho}\xi ^{\rho}
+\end{align}
+$$
+
+act $\displaystyle{X_{\xi}}$ on $\displaystyle{\delta S}$, we have
+
+$$\tag{1.16}
+\begin{align}
+X_{\xi}\cdot \delta S & =-\int _{M}\varepsilon \nabla _{\mu}\phi \nabla ^{\mu}(\xi ^{\nu}\nabla _{\nu}\phi) \\
+ & =\int _{\Sigma _{f}}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu} \frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi-\int _{\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu} \frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi
+\end{align}
+$$
+
+then the Noether charge is
+
+$$\tag{1.17}
+\begin{align}
+H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi \right) \\
+ & = \int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}
+\end{align}
+$$
+

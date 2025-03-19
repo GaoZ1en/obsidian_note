@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/未命名.md",
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/conformal symmetry.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "conformal symmetry"
             }
           }
         ],
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -139,7 +138,7 @@
   },
   "active": "2c1f016eb712ef6f",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/未命名.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/conformal symmetry.md",
     "Lecture/2025 spring/python for physics/iterate.md",
     "Articles/Topologically massive gravity/trash.md",
     "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
