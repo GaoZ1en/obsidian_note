@@ -289,3 +289,39 @@ which is exactly the Virasoro algebra with central charge $\displaystyle{c=\frac
 
 ## conformally coupled scalar
 
+the action of a conformally coupled scalar is
+
+$$\tag{2.1}
+\begin{align}
+S & =-\frac{1}{2}\int \varepsilon\left(\nabla _{\mu}\phi \nabla ^{\mu}\phi+\frac{d-2}{4(d-1)}R\phi ^{2}\right)
+\end{align}
+$$
+
+the variation of the action is
+
+$$\tag{2.2}
+\begin{align}
+\delta S & =-\int _{M}\varepsilon\left( \nabla _{\mu}\phi \nabla ^{\mu}\delta \phi+\frac{d-2}{4(d-1)}R\phi \delta \phi \right) \\
+ & =\int _{M}\varepsilon\left( \nabla ^{2}\phi-\frac{d-2}{4(d-1)}R\phi \right)\delta \phi +\int _{\Sigma _{f}}\varepsilon _{\Sigma}\tau ^{\mu}\nabla _{\mu}\phi \delta \phi-\int _{\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\nabla _{\mu}\phi \delta \phi
+\end{align}
+$$
+
+consider a conformal transformation
+
+$$\tag{2.3}
+\begin{align}
+g_{\mu \nu} & \mapsto e^{2\sigma}g_{\mu \nu} \\
+\phi & \mapsto e^{-(d-2)\sigma/2}\phi
+\end{align}
+$$
+
+under this transformation, we have
+
+$$\tag{2.4}
+\begin{align}
+\tilde{\Gamma}^{\rho}_{~\mu \nu} & =\Gamma ^{\rho}_{~\mu \nu}+\delta ^{\rho}_{\mu}\nabla _{\nu}\sigma+\delta ^{\rho}_{\nu}\nabla _{\mu}\sigma+g_{\mu \nu}\nabla ^{\rho}\sigma \\
+\tilde{R}^{\rho}_{~\sigma \mu \nu} & =R^{\rho}_{~\sigma \mu \nu}+\delta ^{\rho}_{\nu}\nabla _{\mu}\nabla _{\sigma}\sigma-g_{\nu} \\
+\tilde{R}_{\mu \nu \rho \sigma} & =R_{\mu \nu \rho \sigma}+g_{\mu \rho}\nabla _{\nu}\nabla _{\sigma}\sigma-g_{\nu \rho}\nabla _{\mu}\nabla _{\sigma}\sigma+g_{\nu \sigma}\nabla _{\mu}\nabla _{\rho}\sigma-g_{\mu \sigma}\nabla _{\nu}\nabla _{\rho}\sigma \\
+ & +g_{\mu \rho}\nabla _{\nu}\sigma \nabla _{\sigma}\sigma-g_{\nu \rho}\nabla _{\mu}\sigma \nabla _{s}
+\end{align}
+$$
