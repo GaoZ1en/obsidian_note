@@ -550,3 +550,4 @@ $$\tag{.}
 \end{align}
 $$
 
+and this is a Virasoro algebra with $\displaystyle{c=\frac{48\pi}{\gamma ^{2}}}$
