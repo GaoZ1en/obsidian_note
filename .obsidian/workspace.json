@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "edec63d06a4ecf8e",
+        "id": "4af2c0dc200a8867",
         "type": "tabs",
         "children": [
           {
-            "id": "f3aff12bd2374f0e",
+            "id": "4f78ae85afa664ff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Higher symplectic geometry"
+              "title": "新标签页"
             }
           }
         ]
@@ -52,8 +47,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -106,13 +100,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "f3aff12bd2374f0e",
+  "active": "4f78ae85afa664ff",
   "lastOpenFiles": [
+    "Lecture/2025 spring/python for general purpose/短路.md",
+    "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
     "Articles/Noether charge/Virasoro algebra.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md.bak",
     "Articles/Noether charge/Brackets.md",
-    "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/python for physics/iterate.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
