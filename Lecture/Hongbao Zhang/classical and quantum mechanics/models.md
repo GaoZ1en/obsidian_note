@@ -461,14 +461,92 @@ S & =\int _{M}\varepsilon\left( -\frac{1}{2}g^{\mu \nu}\nabla _{\mu}\phi \nabla 
 \end{align}
 $$
 
+the variation of the action is
 
-
-we have
-
-$$\tag{.}
+$$\tag{3.2}
 \begin{align}
-\left\{H_{\xi},H_{\zeta}\right\} & =H_{\left\{\xi,\zeta\right\}}-\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(R(\xi _{\mu}\nabla _{\nu}\zeta ^{\nu}-\zeta _{\mu}\nabla _{\nu}\xi ^{\nu})+\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}\nabla _{\rho}\zeta ^{\rho}-\nabla _{\mu}\nabla _{\nu}\zeta ^{\rho}\nabla _{\nu}\xi ^{\rho})
+\delta S & =\int _{M}\varepsilon\left( \nabla ^{2}\phi-\frac{1}{\gamma}R-\frac{\mu}{2\gamma ^{2}}e^{\gamma \phi} \right)+\int _{\Sigma _{f}-\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\nabla _{\mu}\phi \delta \phi
 \end{align}
 $$
 
-every Virasoro algebras takes the same form...
+consider a conformal transformation
+
+$$\tag{3.3}
+\begin{align}
+g_{\mu \nu} & \mapsto e^{2\sigma}g_{\mu \nu} \\
+\phi & \mapsto \phi-\frac{2\sigma}{\gamma}
+\end{align}
+$$
+
+the action transforms as
+
+$$\tag{3.4}
+\begin{align}
+\tilde{S} & =S-\int _{M}\varepsilon\left( -\frac{2}{\gamma}\nabla _{\mu}(\phi \nabla ^{\mu}\sigma)+\frac{2}{\gamma ^{2}}\nabla _{\mu}(\sigma \nabla ^{\mu}\sigma)-\frac{2}{\gamma ^{2}}(R-\nabla ^{2}\sigma)\sigma \right)
+\end{align}
+$$
+
+is not invariant up to a term supports on the Cauchy surface. however
+
+$$\tag{3.5}
+\begin{align}
+\tilde{E} & =e^{-2\sigma}E
+\end{align}
+$$
+
+the equation of motion holds under the conformal transformation. following the same procedure, we have the symmetry vector
+
+$$\tag{3.6}
+\begin{align}
+X_{\xi} & =\int _{M}\mathrm{d}^{2}x\left( \xi ^{\mu}\nabla _{\mu}\phi+\frac{1}{\gamma}\nabla _{\rho}\xi ^{\rho} \right) \frac{\delta}{\delta \phi}
+\end{align}
+$$
+
+where $\displaystyle{\xi ^{\mu}}$ satisfies the conformal Killing equation
+
+$$\tag{3.7}
+\begin{align}
+\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu}-g_{\mu \nu}\nabla _{\rho}\xi ^{\rho} & =0
+\end{align}
+$$
+
+and two equations as the corollaries of (3.7)
+
+$$\tag{3.8}
+\begin{align}
+\nabla ^{2}\xi _{\mu}+\frac{1}{2}R\xi _{\mu} & =0 \\
+\nabla ^{2}(\nabla _{\mu}\xi ^{\mu})+\xi ^{\mu}\nabla _{\mu}R+R\nabla _{\mu}\xi ^{\mu} & =0
+\end{align}
+$$
+
+act $\displaystyle{X_{\xi}}$ on $\displaystyle{\delta S}$, we have
+
+$$\tag{3.9}
+\begin{align}
+X_{\xi}\cdot \delta S & =-\int _{M}\varepsilon \left( \nabla _{\mu}\phi \nabla ^{\mu}(X_{\xi}\cdot \delta \phi)+\frac{1}{\gamma}R(X_{\xi}\cdot \delta \phi)+\frac{\mu}{2\gamma}e^{\gamma \phi}(X_{\xi}\cdot \delta \phi)\right) \\
+ & =\int _{\Sigma _{f}-\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\left( \frac{1}{2}\xi ^{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi+\frac{1}{\gamma}\phi \nabla _{\mu}(\nabla _{\nu}\xi ^{\nu})+\frac{1}{\gamma}R\xi _{\mu}\phi +\frac{1}{\gamma ^{2}}R\xi _{\mu}+\frac{\mu}{2\gamma ^{2}}e^{\gamma \phi}\xi _{\mu}\right) \\
+ & +\frac{1}{ \gamma ^{2}}\int _{M}\varepsilon \xi ^{\mu}\nabla _{\mu}R
+\end{align}
+$$
+
+then the Noether charge is
+
+$$\tag{3.10}
+\begin{align}
+H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
+ & =\int _{\Sigma}\varepsilon \tau ^{\mu}\xi ^{\nu}T_{\mu \nu} \\
+ T_{\mu \nu} & =\nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi-\frac{\mu}{2\gamma ^{2}}g_{\mu \nu}e^{\gamma \phi} +\frac{2}{\gamma}(g_{\mu \nu}\nabla ^{2}\phi-\nabla _{\mu}\nabla _{\nu}\phi)
+\end{align}
+$$
+
+note that the energy momentum tensor satisfies
+
+finally we consider the Poisson bracket between Noether charges. we have
+
+$$\tag{.}
+\begin{align}
+\left\{H_{\xi},H_{\zeta}\right\} & = X_{\zeta}\cdot \delta H_{\xi}\\
+ & =H_{\left\{\xi,\zeta\right\}}-\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(R(\xi _{\mu}\nabla _{\nu}\zeta ^{\nu}-\zeta _{\mu}\nabla _{\nu}\xi ^{\nu})+\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}\nabla _{\rho}\zeta ^{\rho}-\nabla _{\mu}\nabla _{\nu}\zeta ^{\rho}\nabla _{\nu}\xi ^{\rho})
+\end{align}
+$$
+
