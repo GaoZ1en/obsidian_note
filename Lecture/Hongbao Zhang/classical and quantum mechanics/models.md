@@ -150,7 +150,7 @@ act $\displaystyle{X_{\xi}}$ on $\displaystyle{\delta S}$, we have
 
 $$\tag{1.16}
 \begin{align}
-X_{\xi}\cdot \delta S & =-\int _{M}\varepsilon \nabla _{\mu}\phi \partial^{\mu}(\xi ^{\nu}\partial_{\nu}\phi) \\
+X_{\xi}\cdot \delta S & =-\int _{M}\varepsilon \partial _{\mu}\phi \partial^{\mu}(\xi ^{\nu}\partial_{\nu}\phi) \\
  & =\int _{\Sigma _{f}}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu} \frac{1}{2}g_{\mu \nu}\partial_{\rho}\phi \partial^{\rho}\phi-\int _{\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu} \frac{1}{2}g_{\mu \nu}\partial_{\rho}\phi \partial^{\rho}\phi
 \end{align}
 $$
@@ -186,7 +186,7 @@ and the corresponding Noether charge is
 
 $$\tag{1.20}
 \begin{align}
-H'_{\Omega} & =X_{\Omega}\cdot \theta-\alpha _{\Omega} \\
+H_{\Omega} & =X_{\Omega}\cdot \theta-\alpha _{\Omega} \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\Omega \partial_{\mu}\phi -\phi \partial_{\mu}\Omega)
 \end{align}
 $$
@@ -204,7 +204,7 @@ then the corresponding Noether charge is
 
 $$\tag{1.22}
 \begin{align}
-H'_{\xi} & =H_{\xi}+\frac{1}{\gamma}H_{\partial \xi} \\
+H'_{\xi} & =H_{\xi}+\frac{1}{\gamma}H_{\partial \xi}\\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \partial_{\mu}\phi \partial_{\nu}\phi-\frac{1}{2}g_{\mu \nu}\partial_{\rho}\phi \partial^{\rho}\phi \right) \\
  & +\frac{1}{\gamma}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial_{\nu}\xi ^{\nu}\partial_{\mu}\phi-\phi \partial_{\mu}\partial_{\nu}\xi ^{\nu}) \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\Theta _{\mu \nu} \\
@@ -212,11 +212,17 @@ H'_{\xi} & =H_{\xi}+\frac{1}{\gamma}H_{\partial \xi} \\
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+H'_{\xi}|_{\Sigma _{f}}-H'_{\xi}|_{\Sigma _{i}}=0
+\end{align}
+$$
+
 and finally we will consider the Poisson brackets between Noether charges.
 
 $$\tag{1.23}
 \begin{align}
-\left\{H_{\xi}',H_{\zeta}'\right\} & =X_{\zeta}\cdot \delta H_{\xi}' \\
+\left\{H_{\xi}',H_{\zeta}'\right\} & =X'_{\zeta}\cdot \delta H_{\xi}' \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}(\zeta ^{\rho}\partial _{\rho}\Theta _{\mu \nu}+\Theta _{\rho \nu}\partial _{\mu}\zeta ^{\rho}+\Theta _{\mu \rho}\partial _{\nu}\zeta ^{\rho}) \\
  & +\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial _{\nu}\xi ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}-\partial _{\nu}\zeta ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}) \\
  & =H'_{\left\{\xi,\zeta\right\}}+\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\partial _{\nu}\xi ^{\nu}\partial _{\mu}\partial _{\rho}\zeta ^{\rho}-\partial _{\nu}\zeta ^{\nu}\partial _{\mu}\partial _{\rho}\xi ^{\rho})

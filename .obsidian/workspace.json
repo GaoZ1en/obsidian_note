@@ -37,7 +37,8 @@
               "title": "models"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,10 +122,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4f78ae85afa664ff",
+  "active": "3a653471148c4ca1",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
     "Group meeting/week 10.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
     "Lecture/未命名.md",
     "Lecture/2025 spring/python for general purpose/短路.md",
