@@ -68,3 +68,8 @@ summarize it tomorrow and give it a talk.
 CFT is the fixed point of RG flow...?
 
 about dimension. 
+
+## Witten time
+
+negative heat capacity in gravity system lead to unstability...
+
