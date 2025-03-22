@@ -52,4 +52,19 @@ $$\tag{.}
 \end{align}
 $$
 
-this is more elegant than my formulation.
+this is more elegant than my formulation. this is the short cut...
+
+then
+
+$$\tag{.}
+\begin{align}
+\mathcal{L}_{\xi}\mathbf{L}=\mathrm{d}(\xi \cdot \mathbf{L})=\xi ^{a}\nabla _{a}\mathbf{L} \\
+ \implies J^{a}=\frac{\delta \mathbf{L}}{\delta \phi}\delta _{\xi}\phi ^{a}-\xi ^{a}\mathbf{L}
+\end{align}
+$$
+
+summarize it tomorrow and give it a talk.
+
+CFT is the fixed point of RG flow...?
+
+about dimension. 
