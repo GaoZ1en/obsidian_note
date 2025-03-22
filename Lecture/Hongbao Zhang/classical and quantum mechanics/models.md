@@ -549,7 +549,7 @@ note that the energy momentum tensor satisfies
 
 finally we consider the Poisson bracket between Noether charges. we have
 
-$$\tag{.}
+$$\tag{3.11}
 \begin{align}
 \left\{H_{\xi},H_{\zeta}\right\} & = X_{\zeta}\cdot \delta H_{\xi}\\
  & =H_{\left\{\xi,\zeta\right\}}-\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(R(\xi _{\mu}\nabla _{\nu}\zeta ^{\nu}-\zeta _{\mu}\nabla _{\nu}\xi ^{\nu})+\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}\nabla _{\rho}\zeta ^{\rho}-\nabla _{\mu}\nabla _{\nu}\zeta ^{\rho}\nabla _{\nu}\xi ^{\rho})
