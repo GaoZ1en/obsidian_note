@@ -37,7 +37,8 @@
               "title": "week 4"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -120,11 +121,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3a653471148c4ca1",
+  "active": "63c877d5de5687ab",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/saturnday/week 4.md",
-    "Articles/Topologically massive gravity/rework of 2104.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
+    "Articles/Topologically massive gravity/rework of 2104.md",
     "Group meeting/week 10.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
     "Lecture/未命名.md",

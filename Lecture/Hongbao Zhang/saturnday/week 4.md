@@ -77,3 +77,12 @@ hawking radiation
 
 ### Rindler space and Unrah effect
 
+canonical quantization and path integral quantization
+
+the boost generator is exactly the Hamiltonian in the Rindler space...
+
+$$\tag{.}
+\begin{align}
+\frac{\partial}{\partial \tau} & =x\frac{\partial}{\partial t}+t \frac{\partial}{\partial x}
+\end{align}
+$$
