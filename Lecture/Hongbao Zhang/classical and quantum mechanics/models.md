@@ -557,3 +557,57 @@ $$\tag{3.11}
 $$
 
 and this is a Virasoro algebra with $\displaystyle{c=\frac{48\pi}{\gamma ^{2}}}$
+
+## JT gravity
+
+consider a JT gravity in asymptotic $\displaystyle{\mathrm{AdS}_{2}}$ with Lagrangian
+
+$$\tag{4.1}
+\begin{align}
+L & =\Phi\left( R+2 \right)\varepsilon \\
+\ell |_{\Gamma} & =\Phi(K-1)\varepsilon
+\end{align}
+$$
+
+make a variation
+
+$$\tag{4.2}
+\begin{align}
+\delta L & =E_{\Phi}\delta \Phi+E^{\mu \nu}\delta g_{\mu \nu}+\mathrm{d}\Theta \\
+(\Theta+\delta \ell)|_{\Gamma} & =F_{\Phi}\delta \Phi+F^{\alpha \beta}\delta g_{\alpha \beta}+\mathrm{d}C
+\end{align}
+$$
+
+where
+
+$$\tag{4.3}
+\begin{align}
+E_{\Phi}\delta \Phi & =(R+2)\delta \Phi \frac{1}{2!}\varepsilon _{\mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}} \\
+E^{\mu \nu}\delta g_{\mu \nu} & =(\nabla ^{\mu}\nabla ^{\nu}\Phi-\nabla ^{2}\Phi g^{\mu \nu}+\Phi g^{\mu \nu})\delta g_{\mu \nu}\cdot \frac{1}{2!}\varepsilon _{\mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}} \\
+\Theta & =[\Phi(g^{\mu \alpha}\nabla ^{\beta}-g^{\alpha \beta}\nabla ^{\mu})\delta g_{\alpha \beta}+(\nabla ^{\mu}\Phi g^{\alpha \beta}-\nabla ^{\alpha}\Phi g^{\mu \beta})\delta g_{\alpha \beta}]\varepsilon _{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}} \\
+F_{\Phi}\delta \Phi & =2(K-1)\delta \Phi \\
+F^{\alpha \beta}\delta \gamma _{\alpha \beta} & =(n^{\mu}\nabla _{\mu}\Phi-\Phi)\gamma ^{\alpha \beta}\delta \gamma _{\alpha \beta} \varepsilon _{\gamma}\mathrm{d}x^{\gamma} \\
+C & =-\Phi \gamma ^{\mu \nu}n^{\alpha}\delta g_{\nu \alpha}\varepsilon _{\mu}
+\end{align}
+$$
+
+then the symplectic potential is
+
+$$\tag{4.4}
+\begin{align}
+\theta & =\int _{\Sigma}\Theta-\int _{\partial \Sigma}C \\
+ & =\int _{\Sigma}[\Phi(g^{\mu \alpha}\nabla ^{\beta}-g^{\alpha \beta}\nabla ^{\mu})\delta g_{\alpha \beta}+(\nabla ^{\mu}\Phi g^{\alpha \beta}-\nabla ^{\alpha}\Phi g^{\mu \beta})\delta g_{\alpha \beta}]\varepsilon _{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}} \\
+ & -\Phi \gamma ^{\mu \nu}n^{\alpha}\delta g_{\nu \alpha}\varepsilon _{\mu}
+\end{align}
+$$
+
+and the symplectic form
+
+$$\tag{.}
+\begin{align}
+\omega & =\delta \theta \\
+ & =\int _{\Sigma}[\delta \Phi \wedge(g^{\mu \alpha}\nabla ^{\beta}-g^{\alpha \beta}\nabla ^{\mu})\delta g_{\mu \alpha}+\Phi(\delta g^{\mu \alpha}\wedge\nabla ^{\beta}-\delta g^{\alpha \beta}\wedge \nabla ^{\mu})\delta g_{\alpha \beta}]
+\end{align}
+$$
+
+??
