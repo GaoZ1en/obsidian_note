@@ -654,7 +654,20 @@ $$
 
 $$\tag{5.6}
 \begin{align}
-e^{(d-2)\sigma _{\xi}/2}f^{*}_{\xi}\phi & =\left( 1+\frac{d-2}{2d}\nabla _{a}\xi ^{a} \right)(\phi+\mathcal{L}_{\xi}\phi) \\
- & =\phi+\xi ^{a}\nabla _{a}\phi
+e^{(d-2)\sigma _{\xi}/2}f^{*}_{\xi}\phi & \approx \left( 1+\frac{d-2}{2d}\nabla _{a}\xi ^{a} +\mathcal{O}(\xi ^{2})\right)(\phi+\mathcal{L}_{\xi}\phi+\mathcal{O}(\xi ^{2})) \\
+ & =\phi+\xi ^{a}\nabla _{a}\phi+\frac{d-2}{2d}\nabla _{a}\xi ^{a}\phi+\mathcal{O}(\xi ^{2})
 \end{align}
 $$
+
+define $\displaystyle{\delta _{\xi}\phi=\xi ^{a}\nabla _{a}\phi+\frac{d-2}{2d}\nabla _{a}\xi ^{a}\phi}$. then we have
+
+$$\tag{5.7}
+\begin{align}
+\mathcal{L}_{\xi}\mathbf{L} & =\mathrm{d}(\xi \cdot \mathbf{L}) \\
+ & =\mathbf{L}\left[\phi+\delta _{\xi}\phi,g_{ab} \right]+\mathrm{d}\Lambda _{\xi}-\mathbf{L}[\phi,g_{ab}] \\
+ & =\frac{\delta \mathbf{L}}{\delta \phi}\delta _{\xi}\phi+\frac{\delta \mathbf{L}}{\delta(\nabla _{a}\phi)}\nabla _{a}\delta _{\xi}\phi+\mathrm{d}\Lambda _{\xi} \\
+ & =\mathbf{E}\delta _{\xi}\phi+\mathrm{d}\left( \Lambda _{\xi}+\frac{\delta \mathbf{L}}{\delta(\nabla _{a}\phi)}\delta _{\xi}\phi \right) \\
+\implies J^{a} & =\frac{\delta \mathbf{L}}{\delta(\nabla _{a}\phi)}\delta _{\xi}\phi-\xi \cdot \mathbf{L}+\Lambda _{\xi}
+\end{align}
+$$
+
