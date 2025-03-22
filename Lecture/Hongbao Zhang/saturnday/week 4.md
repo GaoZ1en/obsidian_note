@@ -75,7 +75,5 @@ negative heat capacity in gravity system lead to unstability...
 
 hawking radiation
 
-
-
 ### Rindler space and Unrah effect
 
