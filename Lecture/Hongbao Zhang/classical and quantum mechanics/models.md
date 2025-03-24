@@ -671,3 +671,13 @@ $$\tag{5.7}
 \end{align}
 $$
 
+## a proof of (1.8) and (2.16)
+
+$$\tag{6.1}
+\begin{align}
+\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\mathcal{L}_{\zeta}T_{\mu \nu} & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\mathcal{L}_{\zeta}(\xi ^{\nu}T_{\mu \nu})-\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\mathcal{L}_{\zeta}\xi ^{\nu}T_{\mu \nu} \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}[\xi,\zeta]^{\nu}T_{\mu \nu}+\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\zeta ^{\rho}\nabla _{\rho}(\xi ^{\nu}T_{\mu \nu})+\nabla _{\mu}\zeta ^{\rho}\xi ^{\nu}T_{\rho \nu}) \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}[\xi,\zeta]^{\nu}T_{\mu \nu}+\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\zeta ^{\nu}\nabla _{\nu}(\xi ^{\nu}T_{\mu \nu})+(-\nabla ^{\rho}\zeta ^{\mu}\xi ^{\nu}T_{\rho \nu}+\delta ^{\rho}_{\mu}\xi ^{\nu}T_{\rho \nu}))
+\end{align}
+$$
+
