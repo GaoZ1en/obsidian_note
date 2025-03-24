@@ -708,6 +708,17 @@ $$\tag{.}
 \begin{align}
  & -\zeta ^{\mu}T_{\nu \rho}\nabla ^{\nu}\xi ^{\rho} \\
  & -\nabla _{\nu}(g^{\nu \rho}T_{\rho \sigma}\xi ^{\sigma}\zeta ^{\mu}) \\
-= &-g^{\nu \rho}T_{\rho \sigma}\nabla _{\nu}\xi ^{\sigma}\zeta ^{\mu}-g^{\nu \rho}T_{\rho \sigma}\xi ^{\sigma}\nabla _{\nu}\zeta ^{\mu}
+= &-g^{\nu \rho}T_{\rho \sigma}\nabla _{\nu}\xi ^{\sigma}\zeta ^{\mu}-g^{\nu \rho}T_{\rho \sigma}\xi ^{\sigma}\nabla _{\nu}\zeta ^{\mu}-g^{\nu \rho}\nabla _{\nu}T_{\rho \sigma}\xi ^{\sigma}\zeta ^{\mu}
+\end{align}
+$$
+
+### for Killing vector
+
+$$\tag{.}
+\begin{align}
+ & \xi ^{\nu}(\nabla _{\mu}\zeta ^{\rho}T_{\nu \rho}+\nabla _{\nu}\zeta ^{\rho}T_{\mu \rho}+\zeta ^{\rho}\nabla _{\rho}T_{\mu \nu})\varepsilon ^{\mu}_{\Sigma} \\
+= &  \xi ^{\nu}\mathcal{L}_{\zeta}T_{\mu \nu}\varepsilon ^{\mu}_{\Sigma} \\
+= & \mathcal{L}_{\zeta}(\varepsilon ^{\mu}_{\Sigma}\xi ^{\nu}T_{\mu \nu})-\mathcal{L}_{\zeta}\varepsilon ^{\mu}_{\Sigma}\xi ^{\nu}T_{\mu \nu}+\varepsilon ^{\mu}_{\Sigma}\mathcal{L}_{\xi}\zeta ^{\nu}T_{\mu \nu} \\
+ & =
 \end{align}
 $$
