@@ -107,9 +107,22 @@ we can verify that under such Lie derivatives, we have
 $$\tag{7.9}
 \begin{align}
 \mathcal{L}_{\xi}(\bar{\psi}\psi) & =\xi ^{\mu}\partial _{\mu}(\bar{\psi}\psi) \\
-\mathcal{L}_{\xi}(\bar{\psi}\gamma ^{\mu}\psi) & =
+\mathcal{L}_{\xi}(\bar{\psi}\gamma ^{\mu}\psi) & =\mathcal{L}_{\xi}\bar{\psi}\gamma ^{\mu}\psi+\bar{\psi}\gamma ^{\mu}\mathcal{L}_{\xi}\psi \\
+ & =\bar{\psi}\overleftarrow{\partial} _{\nu}\xi ^{\nu}\gamma ^{\mu}\psi-\frac{1}{4}\partial _{\nu}\xi _{\rho}\bar{\psi}(\gamma ^{\nu}\gamma ^{\rho}-\gamma ^{\rho}\gamma ^{\nu})\gamma ^{\mu}\psi \\
+ & +\bar{\psi}\gamma ^{\mu}\left( \xi ^{\nu}\partial _{\nu}\psi+\frac{1}{4}\partial _{\nu}\xi _{\rho}(\gamma ^{\nu}\gamma ^{\rho}-\gamma ^{\rho}\gamma ^{\nu})\psi \right) \\
+ & =\xi ^{\nu}\partial _{\nu}(\bar{\psi}\gamma ^{\mu}\psi)+\frac{1}{4}\bar{\psi}(\gamma ^{\mu}\gamma ^{\nu}\gamma ^{\rho}-\gamma ^{\mu}\gamma ^{\rho}\gamma ^{\nu}-\gamma ^{\nu}\gamma ^{\rho}\gamma ^{\mu}+\gamma ^{\rho}\gamma ^{\nu}\gamma ^{\mu})\psi\partial _{\nu}\xi _{\rho} \\
+ & =\xi ^{\nu}\partial _{\nu}(\bar{\psi}\gamma ^{\mu}\psi)+\bar{\psi}(\gamma ^{\rho}\eta ^{\mu \nu}-\gamma ^{\nu}\eta ^{\mu \rho})\psi \partial _{\nu}\xi _{\rho} \\
+ & =\xi ^{\nu}\partial _{\nu}(\bar{\psi}\gamma ^{\mu}\psi)+\bar{\psi}\gamma ^{\rho}\psi \partial ^{\mu}\xi _{\rho}-\bar{\psi}\gamma ^{\nu}\psi \partial _{\nu}\xi ^{\mu}
 \end{align}
 $$
+
+
+$$\tag{.}
+\begin{align}
+[\gamma ^{\mu},\gamma ^{\nu}\gamma ^{\rho}]+[\gamma ^{\rho}\gamma ^{\nu},\gamma ^{\mu}] & =
+\end{align}
+$$
+
 
 act it on the action, we have
 
