@@ -673,34 +673,3 @@ $$
 
 ## a proof of (1.8) and (2.16)
 
-## ABJ anomaly
-
-the action is
-
-$$\tag{7.1}
-\begin{align}
-S & =\int _{M} \mathrm{d}^{4}x\left( i\bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi+i\bar{\psi}\gamma ^{\mu}A_{\mu}\psi-\frac{1}{4}F_{\mu \nu}F^{\mu \nu} \right)
-\end{align}
-$$
-
-make a variation, we have
-
-$$\tag{7.2}
-\begin{align}
-\delta S & =\int _{M} \mathrm{d}^{4}x\left(i\delta \bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi+i\bar{\psi}\gamma ^{\mu}\partial _{\mu}\delta \psi+i\delta\bar{\psi}\gamma ^{\mu}\psi A_{\mu}+i\bar{\psi}\gamma ^{\mu}\delta \psi A_{\mu}+i\bar{\psi}\gamma ^{\mu}\psi \delta A_{\mu}+F^{\mu \nu}\partial _{\nu}\delta A_{\mu}\right) \\
- & =\int _{M}\mathrm{d}^{4}x(\delta \bar{\psi}(i\gamma ^{\mu}\partial _{\mu}\psi+\gamma ^{\mu}A_{\mu}\psi)+\partial _{\mu}(i\bar{\psi}\gamma ^{\mu}\delta\psi)+(-i\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}+\bar{\psi}\gamma ^{\mu}A_{\mu})\delta \psi+\partial _{\nu}(F^{\mu \nu}\delta A_{\mu})-\partial _{\nu}F^{\mu \nu}\delta A_{\mu}) \\
- & =\int _{M}\mathrm{d}^{4}x(\delta \bar{\psi}E_{\psi}+E_{\bar{\psi}}\delta \psi+E^{\mu}_{A}\delta A_{\mu})+\theta|_{\Sigma _{f}}-\theta|_{\Sigma _{i}} \\
-E_{\psi} & =i\gamma ^{\mu}\partial _{\mu}\psi+\gamma ^{\mu}A_{\mu}\psi \\
-E_{\bar{\psi}} & =-i\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}+\bar{\psi}\gamma ^{\mu}A_{\mu} \\
-E^{\mu}_{A} & =i\bar{\psi}\gamma ^{\mu}\psi-\partial _{\nu}F^{\mu \nu} \\
-\theta & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(-i\bar{\psi}\gamma ^{\mu}\delta \psi)
-\end{align}
-$$
-
-consider the $\displaystyle{U(1)_{V}}$ symmetry
-
-$$\tag{7.2}
-\begin{align}
-X_{\xi}
-\end{align}
-$$
