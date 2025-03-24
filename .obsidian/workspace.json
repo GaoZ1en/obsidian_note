@@ -98,12 +98,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.qwen.ai/c/684ace3f-cc30-46ef-b5c2-d0092d04726c",
-                "title": "协变相空间分析QED | Qwen",
+                "url": "https://chat.qwen.ai/",
+                "title": "Qwen",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "协变相空间分析QED | Qwen"
+              "title": "Qwen"
             }
           }
         ],

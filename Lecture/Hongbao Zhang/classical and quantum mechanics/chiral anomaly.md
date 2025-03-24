@@ -2,6 +2,12 @@
 
 the action is
 
+$$\tag{1.1}
+\begin{align}
+S & =\int _{M}\mathrm{d}^{4}x\left( \frac{i}{2}\bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\psi+\bar{\psi}\gamma ^{\mu}\psi A_{\mu}-\frac{1}{4}F_{\mu \nu}F^{\mu \nu} \right)
+\end{align}
+$$
+
 $$\tag{7.1}
 \begin{align}
 S & =\int _{M} \mathrm{d}^{4}x\left( i\bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi+\bar{\psi}\gamma ^{\mu}(V_{\mu}+A_{\mu}\gamma ^{5})\psi\right)
@@ -9,6 +15,23 @@ S & =\int _{M} \mathrm{d}^{4}x\left( i\bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi
 $$
 
 where $\displaystyle{\psi}$ and $\displaystyle{\bar{\psi}}$ are dynamical fields, and $\displaystyle{V_{\mu}}$ and $\displaystyle{A_{\mu}}$ are background fields. make a variation, we have
+
+$$\tag{1.2}
+\begin{align}
+\delta S & =\int \mathrm{d}^{4}x\left( \frac{i}{2}\delta \bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi+\frac{i}{2}\bar{\psi}\gamma ^{\mu}\partial _{\mu}\delta \psi-\frac{i}{2}\delta \bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\psi\right. \\
+ & \left.+\delta \bar{\psi}\gamma ^{\mu}\psi A_{\mu}+\bar{\psi}\gamma ^{\mu}\delta \psi A_{\mu}+\bar{\psi}\gamma ^{\mu}\psi \delta A_{\mu}-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\delta\psi-F^{\mu \nu}\partial _{\mu}\delta A_{\nu} \right) \\
+ & =\int \mathrm{d}^{4}x(\delta \bar{\psi}E_{\psi}+E_{\bar{\psi}}\delta \psi+E_{A}^{\mu}\delta A_{\mu})+\theta|_{\Sigma _{f}}-\theta|_{\Sigma _{i}}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+E_{\psi} & =i\gamma ^{\mu}\partial _{\mu}\psi+\gamma ^{\mu}A_{\mu}\psi \\
+E_{\bar{\psi}} & =-i\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}+\bar{\psi}\gamma ^{\mu}A_{\mu} \\
+E_{A}^{\mu} & =\bar{\psi}\gamma ^{\mu}\psi+\partial _{\nu}F^{\nu \mu} \\
+\theta & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left( \frac{i}{2}\delta \bar{\psi}\gamma ^{\mu}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\delta \psi+F^{\mu \nu}\delta A_{\nu} \right)
+\end{align}
+$$
 
 $$
 \begin{align}
