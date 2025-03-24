@@ -98,12 +98,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.qwen.ai/c/43cdcb72-6dfc-43cd-bfcf-4989793d66d1",
-                "title": "化简Gamma矩阵表达式 | Qwen",
+                "url": "https://chat.qwen.ai/c/684ace3f-cc30-46ef-b5c2-d0092d04726c",
+                "title": "协变相空间分析QED | Qwen",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "化简Gamma矩阵表达式 | Qwen"
+              "title": "协变相空间分析QED | Qwen"
             }
           }
         ],
@@ -111,8 +111,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 526.5,
-    "collapsed": true
+    "width": 526.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -121,7 +120,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3a653471148c4ca1",
+  "active": "a653e3e8b065cbbf",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/classical and quantum mechanics/chiral anomaly.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
