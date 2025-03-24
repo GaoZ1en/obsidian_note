@@ -83,12 +83,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.qwen.ai/",
-                "title": "Qwen",
+                "url": "https://chat.qwen.ai/c/3d384322-567b-4818-bdb2-8f61e30781b6",
+                "title": "Conformal Killing Equation Pro... | Qwen",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Qwen"
+              "title": "Conformal Killing Equation Pro... | Qwen"
             }
           }
         ],
@@ -108,8 +108,8 @@
   },
   "active": "3a653471148c4ca1",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/saturnday/week 4.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
+    "Lecture/Hongbao Zhang/saturnday/week 4.md",
     "未命名.md",
     "Articles/Topologically massive gravity/rework of 2104.md",
     "Group meeting/week 10.md",
