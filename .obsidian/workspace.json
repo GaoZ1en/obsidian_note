@@ -98,12 +98,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.qwen.ai/c/b311a0b4-07ed-4753-a62a-24116b43c4ea",
-                "title": "协变导数作用于边界体积元 | Qwen",
+                "url": "https://chat.qwen.ai/c/684ace3f-cc30-46ef-b5c2-d0092d04726c",
+                "title": "Qwen",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "协变导数作用于边界体积元 | Qwen"
+              "title": "Qwen"
             }
           }
         ],
@@ -111,8 +111,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 825.5,
-    "collapsed": true
+    "width": 526.5
   },
   "left-ribbon": {
     "hiddenItems": {
