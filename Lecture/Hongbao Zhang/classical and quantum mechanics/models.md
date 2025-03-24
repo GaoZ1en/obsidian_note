@@ -673,11 +673,13 @@ $$
 
 ## a proof of (1.8) and (2.16)
 
-$$\tag{6.1}
+$$\tag{.}
 \begin{align}
-\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\mathcal{L}_{\zeta}T_{\mu \nu} & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\mathcal{L}_{\zeta}(\xi ^{\nu}T_{\mu \nu})-\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\mathcal{L}_{\zeta}\xi ^{\nu}T_{\mu \nu} \\
- & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}[\xi,\zeta]^{\nu}T_{\mu \nu}+\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\zeta ^{\rho}\nabla _{\rho}(\xi ^{\nu}T_{\mu \nu})+\nabla _{\mu}\zeta ^{\rho}\xi ^{\nu}T_{\rho \nu}) \\
- & =H_{[\xi,\zeta]}+\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\zeta ^{\rho}\nabla _{\rho}(\xi ^{\nu}T_{\mu \nu})+\nabla _{\mu}(\zeta ^{\rho}\xi ^{\nu}T_{\mu \nu})-\zeta ^{\rho}\nabla _{\mu}\xi ^{\nu}T_{\rho \nu}-\zeta ^{\rho}\xi ^{\nu}\nabla _{\mu}T_{\rho \nu})
+ & \int _{\Sigma}g^{\mu \nu}\xi ^{\rho}(T_{\sigma \rho}\nabla _{\nu}\zeta ^{\sigma}+T_{\nu \sigma}\nabla _{\rho}\zeta ^{\sigma}+\zeta ^{\sigma}\nabla _{\sigma}T_{\nu \rho})\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
+= & \int _{\Sigma}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}}\left(g^{\mu \nu}T_{\nu \rho}(\xi ^{\sigma}\nabla _{\sigma}\zeta ^{\rho}-\zeta ^{\sigma}\nabla _{\sigma}\xi ^{\rho})\right. \\
+ & +\frac{1}{2}\zeta ^{\mu}g^{\nu \rho}T_{\nu \rho}\nabla _{\sigma}\xi ^{\sigma}+\zeta ^{\mu}g^{\nu \rho}\nabla _{\nu}T_{\rho \sigma}\xi ^{\sigma} \\
+ & +g^{\mu \nu}g^{\rho \lambda}T_{\lambda \tau}\xi ^{\tau}(g_{\rho \sigma}\nabla _{\nu}\zeta ^{\sigma}+g_{\nu \sigma}\nabla _{\rho}\zeta ^{\sigma}-g_{\nu \rho}\nabla _{\sigma}\zeta ^{\sigma}) \\
+ & +\frac{1}{2}\zeta ^{\mu}T_{\nu \rho}g^{\nu \sigma}g^{\rho \lambda}(g_{\lambda \tau}\nabla _{\sigma}\xi ^{\tau}+g_{\sigma \tau}\nabla _{\lambda}\xi ^{\tau}-g_{\sigma \lambda}\nabla _{\tau}\xi ^{\tau}) \\
+ & +\nabla _{\nu}(g^{\mu \rho}T_{\rho \sigma}\xi ^{\sigma}\zeta^{\nu}-g^{\nu \rho}T_{\rho \sigma}\xi ^{\sigma}\zeta ^{\mu})
 \end{align}
 $$
-
