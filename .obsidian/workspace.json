@@ -21,6 +21,21 @@
               "icon": "lucide-file",
               "title": "models"
             }
+          },
+          {
+            "id": "b2167a1cf6371bea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/Noether charge/Diffeomorphism of some quantities.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Diffeomorphism of some quantities"
+            }
           }
         ]
       }
@@ -83,12 +98,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.qwen.ai/c/3d384322-567b-4818-bdb2-8f61e30781b6",
-                "title": "Conformal Killing Equation Pro... | Qwen",
+                "url": "https://chat.qwen.ai/c/b311a0b4-07ed-4753-a62a-24116b43c4ea",
+                "title": "协变导数作用于边界体积元 | Qwen",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Conformal Killing Equation Pro... | Qwen"
+              "title": "协变导数作用于边界体积元 | Qwen"
             }
           }
         ],
@@ -109,6 +124,7 @@
   "active": "3a653471148c4ca1",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
+    "Articles/Noether charge/Diffeomorphism of some quantities.md",
     "Lecture/Hongbao Zhang/saturnday/week 4.md",
     "未命名.md",
     "Articles/Topologically massive gravity/rework of 2104.md",
@@ -129,7 +145,6 @@
     "Lecture/Hongbao Zhang/classical and quantum mechanics/Maxwell theory.md",
     "Note/Physics/Higher symmetry",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
-    "Articles/Noether charge/Diffeomorphism of some quantities.md",
     "Note/Code/rust.md",
     "Lecture/Hongbao Zhang/saturnday/week3.md",
     "Note/Physics/wait-to-be-complete/Maurer-Cartan form.md",

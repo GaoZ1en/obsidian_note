@@ -673,52 +673,12 @@ $$
 
 ## a proof of (1.8) and (2.16)
 
-$$\tag{.}
-\begin{align}
- & \int _{\Sigma}g^{\mu \nu}\xi ^{\rho}(T_{\sigma \rho}\nabla _{\nu}\zeta ^{\sigma}+T_{\nu \sigma}\nabla _{\rho}\zeta ^{\sigma}+\zeta ^{\sigma}\nabla _{\sigma}T_{\nu \rho}) \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
-= & \int _{\Sigma} \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}}\left(g^{\mu \nu}T_{\nu \rho}(\xi ^{\sigma}\nabla _{\sigma}\zeta ^{\rho}-\zeta ^{\sigma}\nabla _{\sigma}\xi ^{\rho})\right. \\
- & +\frac{1}{2}\zeta ^{\mu}g^{\nu \rho}T_{\nu \rho}\nabla _{\sigma}\xi ^{\sigma}+\zeta ^{\mu}g^{\nu \rho}\nabla _{\nu}T_{\rho \sigma}\xi ^{\sigma} \\
- & +g^{\mu \nu}g^{\rho \lambda}T_{\lambda \tau}\xi ^{\tau}\left( g_{\rho \sigma}\nabla _{\nu}\zeta ^{\sigma}+g_{\nu \sigma}\nabla _{\rho}\zeta ^{\sigma}-\frac{2}{d}g_{\nu \rho}\nabla _{\sigma}\zeta ^{\sigma} \right) \\
- & +\frac{1}{2}\zeta ^{\mu}T_{\nu \rho}g^{\nu \sigma}g^{\rho \lambda}\left( g_{\lambda \tau}\nabla _{\sigma}\xi ^{\tau}+g_{\sigma \tau}\nabla _{\lambda}\xi ^{\tau}-\frac{2}{d}g_{\sigma \lambda}\nabla _{\tau}\xi ^{\tau} \right) \\
- & \left.+\nabla _{\nu}\left( \frac{2}{d}g^{\mu \rho}T_{\rho \sigma}\xi ^{\sigma}\zeta^{\nu}-g^{\nu \rho}T_{\rho \sigma}\xi ^{\sigma}\zeta ^{\mu} \right)\right)  \\
-= & \int _{\Sigma}g^{\mu \nu}T_{\nu \rho}[\xi,\zeta]^{\rho}\cdot \frac{1}{(d-1!)}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}}=H_{[\xi,\zeta]}
-\end{align}
-$$
+## ABJ anomaly
 
-$$\tag{.}
-\begin{align}
- & \int _{\Sigma}g^{\mu \nu}\xi ^{\rho}(T_{\sigma \rho}\nabla _{\nu}\zeta ^{\sigma}+T_{\nu \sigma}\nabla _{\rho}\zeta ^{\sigma}+\zeta ^{\sigma}\nabla _{\sigma}T_{\nu \rho})\cdot \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
-= & \int _{\Sigma} g^{\mu \nu}T_{\nu \rho}(\xi ^{\sigma}\nabla _{\sigma}\zeta ^{\rho}-\zeta ^{\sigma}\nabla _{\sigma}\xi ^{\rho})\cdot \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
- & +\int _{\Sigma}g^{\mu \nu}\xi ^{\rho}(T_{\sigma \rho}\nabla _{\nu}\zeta ^{\sigma}+T_{\nu \sigma}\nabla _{\rho}\zeta ^{\sigma})\cdot \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
- & +\int _{\Sigma}(-g^{\mu \nu}T_{\nu \rho}\xi ^{\sigma}\nabla _{\sigma}\zeta ^{\rho}+g^{\mu \nu}\nabla _{\sigma}(\xi ^{\rho}\zeta ^{\sigma})T_{\nu \rho})\cdot \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge \dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
-= & \int _{\Sigma}g^{\mu \nu}T_{\nu \rho}[\xi,\zeta]^{\rho}\cdot \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
- & +\int _{\Sigma}g^{\mu \nu}g^{\rho \lambda}T_{\lambda \tau}\xi ^{\tau}\left( g_{\rho \sigma}\nabla _{\nu}\zeta ^{\sigma}+g_{\nu \sigma}\nabla _{\rho}\zeta ^{\sigma}-\frac{2}{d}g_{\nu \rho}\nabla _{\sigma}\zeta ^{\sigma} \right)\cdot \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
- & +\int _{\Sigma}\left( -g^{\mu \nu}T_{\rho \sigma}\xi ^{\sigma}\nabla ^{\rho}\zeta _{\nu}\right)\cdot \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
- & +\int _{\Sigma}(g^{\mu \nu}\xi ^{\rho}T_{\nu \sigma}\nabla _{\rho}\zeta ^{\sigma})\cdot \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
- & +\int _{\Sigma}(-g^{\mu \nu}T_{\nu \rho}\xi ^{\sigma}\nabla _{\sigma}\zeta ^{\rho}+g^{\mu \nu}\zeta ^{\sigma}\nabla _{\sigma}\xi ^{\rho}T_{\nu \rho}+g^{\mu \nu}\xi ^{\rho}\nabla _{\sigma}\zeta ^{\sigma}T_{\nu \rho})\cdot \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge \dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
- & +\frac{2}{d}\int _{\Sigma}\nabla _{\nu}(g^{\mu \rho}T_{\rho \sigma}\xi ^{\sigma}\zeta ^{\nu})\cdot \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
- & +\int _{\Sigma}\left( -\frac{2}{d}g^{\mu \rho}\nabla _{\nu}T_{\rho \sigma}\xi ^{\sigma}\zeta ^{\nu}-\frac{2}{d}g^{\mu \rho}T_{\rho \sigma}\nabla _{\nu}\xi ^{\sigma}\zeta ^{\nu} \right)\cdot \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
- & +\int _{\Sigma} \frac{1}{2}\zeta ^{\mu}T_{\nu \rho}g^{\nu \sigma}g^{\rho \lambda}\left( g_{\lambda \tau}\nabla _{\sigma}\xi ^{\tau}+g_{\sigma \tau}\nabla _{\lambda}\xi ^{\tau}-\frac{2}{d}g_{\sigma \lambda}\nabla _{\tau}\xi ^{\tau} \right)\cdot \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge \dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
- & +\int _{\Sigma} \left( \frac{1}{d}\zeta ^{\mu}g^{\nu \rho}T_{\nu \rho}\nabla _{\sigma}\xi ^{\sigma} \right)\cdot \frac{1}{(d-1)!}\varepsilon _{\mu \mu_{1}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}} \\
- & +\int _{\Sigma}(-\zeta ^{\mu}T_{\nu \rho}\nabla ^{\nu}\xi ^{\rho})\cdot \frac{1}{(d-1)!}\dots
-\end{align}
-$$
+the action is
 
-$$\tag{.}
+$$\tag{7.1}
 \begin{align}
- & -\zeta ^{\mu}T_{\nu \rho}\nabla ^{\nu}\xi ^{\rho} \\
- & -\nabla _{\nu}(g^{\nu \rho}T_{\rho \sigma}\xi ^{\sigma}\zeta ^{\mu}) \\
-= &-g^{\nu \rho}T_{\rho \sigma}\nabla _{\nu}\xi ^{\sigma}\zeta ^{\mu}-g^{\nu \rho}T_{\rho \sigma}\xi ^{\sigma}\nabla _{\nu}\zeta ^{\mu}-g^{\nu \rho}\nabla _{\nu}T_{\rho \sigma}\xi ^{\sigma}\zeta ^{\mu}
-\end{align}
-$$
-
-### for Killing vector
-
-$$\tag{.}
-\begin{align}
- & \xi ^{\nu}(\nabla _{\mu}\zeta ^{\rho}T_{\nu \rho}+\nabla _{\nu}\zeta ^{\rho}T_{\mu \rho}+\zeta ^{\rho}\nabla _{\rho}T_{\mu \nu})\varepsilon ^{\mu}_{\Sigma} \\
-= &  \xi ^{\nu}\mathcal{L}_{\zeta}T_{\mu \nu}\varepsilon ^{\mu}_{\Sigma} \\
-= & \mathcal{L}_{\zeta}(\varepsilon ^{\mu}_{\Sigma}\xi ^{\nu}T_{\mu \nu})-\mathcal{L}_{\zeta}\varepsilon ^{\mu}_{\Sigma}\xi ^{\nu}T_{\mu \nu}+\varepsilon ^{\mu}_{\Sigma}\mathcal{L}_{\xi}\zeta ^{\nu}T_{\mu \nu} \\
- & =
+S & =\int \mathrm{d}^{4}x(i\bar{\psi}\partial)
 \end{align}
 $$
