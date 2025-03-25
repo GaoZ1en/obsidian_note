@@ -144,16 +144,18 @@ $$\tag{1.15}
 H_{\xi} & =X_{\xi}\cdot \delta \theta-\alpha _{\xi} \\
  & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left( \frac{i}{2}\left( \bar{\psi}\overleftarrow{\partial _{\rho}}\xi ^{\rho}+\frac{i}{2}\partial _{\rho}\xi _{\sigma}\bar{\psi}\Sigma ^{\rho \sigma} \right)\gamma ^{\mu}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\left( \xi ^{\rho}\partial _{\rho}\psi-\frac{i}{2}\Sigma ^{\rho \sigma}\partial _{\rho}\xi _{\sigma}\psi \right) \right. \\
  & +F^{\mu \nu}(\xi ^{\rho}\partial _{\rho}A_{\nu}+\partial _{\nu}A_{\rho}\xi ^{\rho})+\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\eta _{\mu \nu}\left( \frac{i}{2}\bar{\psi}\gamma ^{\rho}\partial _{\rho}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\rho}\overleftarrow{\partial _{\rho}}\psi+\bar{\psi}\gamma ^{\rho}\psi A_{\rho}-\frac{1}{4}F_{\rho \sigma}F^{\rho \sigma} \right) \\
- & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu \rho}F_{\rho}^{~\nu}-\frac{1}{4}\eta ^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} \right)
+ & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left(- \frac{i}{2}\eta ^{\nu [\rho}\bar{\psi}\gamma ^{\mu]}\overleftrightarrow{\partial _{\rho}}\psi+F^{\mu \rho}F_{\rho}^{~\nu}-\frac{1}{4}\eta ^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} \right)
 \end{align}
 $$
+
+where $\displaystyle{\bar{\psi}\overleftrightarrow{\partial _{\rho}}\psi=\bar{\psi}\partial _{\rho}\psi-\bar{\psi}\overleftarrow{\partial _{\rho}}\psi}$
 
 $$\tag{1.15}
 \begin{align}
 H_{\xi} & =X_{\xi}\cdot \delta \theta-\alpha _{\xi} \\
- & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left( \frac{i}{2}\left( \bar{\psi}\overleftarrow{\partial _{\rho}}\xi ^{\rho}+\frac{i}{2}\partial _{\rho}\xi _{\sigma}\bar{\psi}\Sigma ^{\rho \sigma} \right)\gamma ^{\mu}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\left( \xi ^{\rho}\partial _{\rho}\psi-\frac{i}{2}\Sigma ^{\rho \sigma}\partial _{\rho}\xi _{\sigma}\psi \right) \right. \\
- & +\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\eta _{\mu \nu}\left( \frac{i}{2}\bar{\psi}\gamma ^{\rho}\partial _{\rho}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\rho}\overleftarrow{\partial _{\rho}}\psi+\bar{\psi}\gamma ^{\rho}\psi A_{\rho} \right) \\
- & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu \rho}F_{\rho}^{~\nu}-\frac{1}{4}\eta ^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} +\bar{\psi}\gamma ^{\rho}\psi A_{\rho}\right)
+ & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left( \frac{i}{2}\left( +\frac{i}{2}\partial _{\rho}\xi _{\sigma}\bar{\psi}\Sigma ^{\rho \sigma} \right)\gamma ^{\mu}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\left( -\frac{i}{2}\Sigma ^{\rho \sigma}\partial _{\rho}\xi _{\sigma}\psi \right) \right. \\
+  & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left( -\frac{1}{4}\partial _{\rho}\xi _{\sigma}\bar{\psi}\left\{\Sigma ^{\rho \sigma},\gamma ^{\mu}\right\}\psi\right)
+ 
 \end{align}
 $$
 
@@ -168,5 +170,13 @@ X_{\xi} & =\int \mathrm{d}^{4}x\left(\overleftarrow{\frac{\delta}{\delta \psi}}\
 \mathcal{L}_{\xi}\psi & =\xi ^{\mu}\partial _{\mu}\psi-\frac{i}{2}\Sigma ^{\mu \nu}\partial _{\mu}\xi _{\nu}\psi \\
 \mathcal{L}_{\xi}\bar{\psi} & =\bar{\psi}\overleftarrow{\partial _{\mu}}\xi ^{\mu}+\frac{i}{2}\partial _{\mu}\xi _{\nu}\bar{\psi}\Sigma ^{\mu \nu} \\
 \mathcal{L}_{\xi}A_{\mu} & =\xi ^{\nu}\partial _{\nu}A_{\mu}+\partial _{\mu}A_{\nu}\xi ^{\nu}
+\end{align}
+$$
+
+
+$$\tag{.}
+\begin{align}
+\left\{AB,C\right\} & = A\left\{B,C\right\}+\left\{A,C\right\}B  \\
+\left\{\Sigma ^{\rho \sigma},\gamma ^{\mu}\right\} & =
 \end{align}
 $$
