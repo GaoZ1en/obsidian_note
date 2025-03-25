@@ -23,21 +23,6 @@
             }
           },
           {
-            "id": "b2167a1cf6371bea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/Noether charge/Diffeomorphism of some quantities.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Diffeomorphism of some quantities"
-            }
-          },
-          {
             "id": "9fa2ad0f9f682065",
             "type": "leaf",
             "state": {
@@ -52,7 +37,8 @@
               "title": "微积分"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,12 +120,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3a653471148c4ca1",
+  "active": "9fa2ad0f9f682065",
   "lastOpenFiles": [
-    "Lecture/2025 spring/python for physics/微积分.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/ABJ anomaly.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
+    "Lecture/2025 spring/python for physics/微积分.md",
     "Articles/Noether charge/Diffeomorphism of some quantities.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
     "Lecture/Hongbao Zhang/saturnday/week 4.md",
     "未命名.md",
     "Articles/Topologically massive gravity/rework of 2104.md",
