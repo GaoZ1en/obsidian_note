@@ -8,23 +8,17 @@ S & =\int _{M}\mathrm{d}^{4}x\left( \frac{i}{2}\bar{\psi}\gamma ^{\mu}\partial _
 \end{align}
 $$
 
-$$\tag{7.1}
-\begin{align}
-S & =\int _{M} \mathrm{d}^{4}x\left( i\bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi+\bar{\psi}\gamma ^{\mu}(V_{\mu}+A_{\mu}\gamma ^{5})\psi\right)
-\end{align}
-$$
-
 where $\displaystyle{\psi}$ and $\displaystyle{\bar{\psi}}$ are dynamical fields, and $\displaystyle{V_{\mu}}$ and $\displaystyle{A_{\mu}}$ are background fields. make a variation, we have
 
 $$\tag{1.2}
 \begin{align}
-\delta S & =\int \mathrm{d}^{4}x\left( \frac{i}{2}\delta \bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi+\frac{i}{2}\bar{\psi}\gamma ^{\mu}\partial _{\mu}\delta \psi-\frac{i}{2}\delta \bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\psi\right. \\
- & \left.+\delta \bar{\psi}\gamma ^{\mu}\psi A_{\mu}+\bar{\psi}\gamma ^{\mu}\delta \psi A_{\mu}+\bar{\psi}\gamma ^{\mu}\psi \delta A_{\mu}-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\delta\psi-F^{\mu \nu}\partial _{\mu}\delta A_{\nu} \right) \\
- & =\int \mathrm{d}^{4}x(\delta \bar{\psi}E_{\psi}+E_{\bar{\psi}}\delta \psi+E_{A}^{\mu}\delta A_{\mu})+\theta|_{\Sigma _{f}}-\theta|_{\Sigma _{i}}
+\delta S & =\int _{M} \mathrm{d}^{4}x\left( \frac{i}{2}\delta \bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi+\frac{i}{2}\bar{\psi}\gamma ^{\mu}\partial _{\mu}\delta \psi-\frac{i}{2}\delta \bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\delta\psi\right. \\
+ & \left.+\delta \bar{\psi}\gamma ^{\mu}\psi A_{\mu}+\bar{\psi}\gamma ^{\mu}\delta \psi A_{\mu}+\bar{\psi}\gamma ^{\mu}\psi \delta A_{\mu}-F^{\mu \nu}\partial _{\mu}\delta A_{\nu} \right) \\
+ & =\int _{M} \mathrm{d}^{4}x(\delta \bar{\psi}E_{\psi}+E_{\bar{\psi}}\delta \psi+E_{A}^{\mu}\delta A_{\mu})+\theta|_{\Sigma _{f}}-\theta|_{\Sigma _{i}}
 \end{align}
 $$
 
-$$\tag{.}
+$$\tag{1.3}
 \begin{align}
 E_{\psi} & =i\gamma ^{\mu}\partial _{\mu}\psi+\gamma ^{\mu}A_{\mu}\psi \\
 E_{\bar{\psi}} & =-i\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}+\bar{\psi}\gamma ^{\mu}A_{\mu} \\
@@ -33,36 +27,20 @@ E_{A}^{\mu} & =\bar{\psi}\gamma ^{\mu}\psi+\partial _{\nu}F^{\nu \mu} \\
 \end{align}
 $$
 
-$$
-\begin{align}
-\delta S & =\int _{M}\mathrm{d}^{4}x(i\delta \bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi+i\bar{\psi}\gamma ^{\mu}\partial _{\mu}\delta \psi+\delta \bar{\psi}\gamma ^{\mu}\psi V_{\mu}+\delta \bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi A_{\mu} \\
- & +\bar{\psi}\gamma ^{\mu}V_{\mu}\delta \psi+\bar{\psi}\gamma ^{\mu}\gamma ^{5}A_{\mu}\delta \psi+\bar{\psi}\gamma ^{\mu}\psi \delta V_{\mu}+\bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi \delta A_{\mu})
-\end{align}
-$$
-
-$$\tag{7.2}
-\begin{align}
-\delta S & =\int _{M}\mathrm{d}^{4}x(\delta \bar{\psi}E_{\psi}+E_{\bar{\psi}}\delta \psi)+\theta|_{\Sigma _{f}}-\theta|_{\Sigma _{i}} \\
-E_{\psi} & =i\gamma ^{\mu}\partial _{\mu}\psi+\gamma ^{\mu}(V_{\mu}+A_{\mu}\gamma ^{5})\psi \\
-E_{\bar{\psi}} & =-i\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}+\bar{\psi}\gamma ^{\mu}(V_{\mu}+A_{\mu}\gamma ^{5}) \\
-\theta & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(-i\bar{\psi}\gamma ^{\mu}\delta \psi)
-\end{align}
-$$
-
 then we have the symplectic form
 
-$$\tag{7.3}
+$$\tag{1.4}
 \begin{align}
 \omega & =\delta \theta \\
- & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(-i\delta \bar{\psi}\gamma ^{\mu}\wedge\delta \psi-\delta F^{\mu \nu}\wedge \delta A_{\nu})
+ & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\delta F^{\mu \nu}\wedge \delta A_{\nu}
 \end{align}
 $$
 
-consider the vector $\displaystyle{U(1)_{V}}$ symmetry
+we notice that the symplectic form does not have terms involving $\displaystyle{\psi}$ and $\displaystyle{\bar{\psi}}$. consider the vector $\displaystyle{U(1)_{V}}$ symmetry
 
 $$
 \begin{align}
-X^{V}_{\alpha}=\int \mathrm{d}^{4}x\left(\overleftarrow{\frac{\delta}{\delta \psi}}i\alpha \psi-i\alpha \bar{\psi}\overrightarrow{\frac{\delta}{\delta \bar{\psi}}}+\partial _{\mu}\alpha   \frac{\delta}{\delta V_{\mu}}\right)
+X^{V}_{\alpha}=\int _{M} \mathrm{d}^{4}x\left(\overleftarrow{\frac{\delta}{\delta \psi}}i\alpha \psi-i\alpha \bar{\psi}\overrightarrow{\frac{\delta}{\delta \bar{\psi}}}+\partial _{\mu}\alpha   \frac{\delta}{\delta A_{\mu}}\right)
 \end{align}
 $$
 
@@ -70,15 +48,20 @@ act it on the action, we have
 
 $$\tag{7.4}
 \begin{align}
-X^{V}_{\alpha}\cdot \delta S & =0
+X^{V}_{\alpha}\cdot \delta S & =\int _{M}\mathrm{d}^{4}x\left(\frac{1}{2}\alpha \bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi-\frac{1}{2}\bar{\psi}\gamma ^{\mu}\partial _{\mu}(\alpha \psi)-\frac{1}{2}(\alpha \bar{\psi})\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\psi+\frac{1}{2}\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\alpha \psi\right. \\
+ & \left.-i\alpha \bar{\psi}\gamma ^{\mu}\psi A_{\mu}+i\alpha \bar{\psi}\gamma ^{\mu}\psi A_{\mu}+\bar{\psi}\gamma ^{\mu}\psi \partial _{\mu}\alpha-F^{\mu \nu}\partial _{\mu}\partial _{\nu}\alpha\right) \\
+ & =0
 \end{align}
 $$
+
+
 the corresponding Noether charge is
 
 $$\tag{7.5}
 \begin{align}
 J^{V}_{\alpha} & =X_{\alpha}\cdot \theta-\alpha _{\alpha} \\
- & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\alpha\bar{\psi}\gamma ^{\mu}\psi
+ & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\alpha\left(\bar{\psi}\gamma ^{\mu}\psi -\partial _{\nu}F^{\mu \nu}\right) \\
+ & \approx \int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\alpha \bar{\psi}\gamma ^{\mu}\psi
 \end{align}
 $$
 
@@ -86,7 +69,7 @@ then consider the axial $\displaystyle{U(1)_{A}}$ symmetry
 
 $$
 \begin{align}
-X^{A}_{\beta}=\int \mathrm{d}^{4}x\left(\overleftarrow{\frac{\delta}{\delta \psi}}i\beta \gamma ^{5}\psi+i\beta \bar{\psi}\gamma ^{5}\overrightarrow{\frac{\delta}{\delta \bar{\psi}}}+\partial _{\mu}\beta   \frac{\delta}{\delta A_{\mu}}\right)
+X^{A}_{\beta}=\int \mathrm{d}^{4}x\left(\overleftarrow{\frac{\delta}{\delta \psi}}i\beta \gamma ^{5}\psi+i\beta \bar{\psi}\gamma ^{5}\overrightarrow{\frac{\delta}{\delta \bar{\psi}}}+\gamma ^{5}\partial _{\mu}\beta   \frac{\delta}{\delta A_{\mu}}\right)
 \end{align}
 $$
 
@@ -94,17 +77,25 @@ act it on the action, we have
 
 $$\tag{7.6}
 \begin{align}
-X^{A}_{\beta}\cdot \delta S & =0
+X^{A}_{\beta}\cdot \delta S & =\int _{M}\mathrm{d}^{4}x\left( -\frac{1}{2}\bar{\psi}\gamma ^{5}\gamma ^{\mu}\partial _{\mu}\psi-\frac{1}{2}\bar{\psi}\gamma ^{\mu}\gamma ^{5}\partial _{\mu}(\beta \psi)+\frac{1}{2}(\beta \bar{\psi})\gamma ^{5}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\psi+\frac{1}{2}\bar{\psi}\gamma ^{\mu}\gamma ^{5}\overleftarrow{\partial _{\mu}}\beta \psi \right. \\
+ & \left.+i\bar{\psi}\gamma ^{5}\gamma ^{\mu}\psi A_{\mu}+i\bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi A_{\mu}+\bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi \partial_{\mu}\beta-\gamma ^{5}F^{\mu \nu}\partial _{\mu}\partial _{\nu}\beta\right) \\
+ & =0
 \end{align}
 $$
+
+here we use $\displaystyle{\left\{\gamma ^{\mu},\gamma ^{5}\right\}=0}$
 
 then the corresponding Noether charge is
 
 $$\tag{7.7}
 \begin{align}
-J^{A}_{\mu}=\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\beta \bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi
+J^{A}_{\mu} & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left( -\frac{1}{2}\beta\bar{\psi}\gamma ^{5}\gamma ^{\mu}\psi+\frac{1}{2}\beta\bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi+\gamma ^{5}F^{\mu \nu}\partial _{\nu}\beta\right) \\
+ & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\beta(\bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi-\partial _{\nu}F^{\mu \nu}) \\
+ & \approx \int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\beta \bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi
 \end{align}
 $$
+
+
 
 and finally the diffeomorphism symmetry
 
@@ -113,7 +104,7 @@ $$\tag{7.8}
 X_{\xi} & =\int \mathrm{d}^{4}x\left(\overleftarrow{\frac{\delta}{\delta \psi}}\mathcal{L}_{\xi}\psi+\mathcal{L}_{\xi}\bar{\psi}\overrightarrow{\frac{\delta}{\delta \bar{\psi}}}+\mathcal{L}_{\xi}V_{\mu}\frac{\delta}{\delta V_{\mu}}+\mathcal{L}_{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}}\right) \\
 \mathcal{L}_{\xi}\psi & =\xi ^{\mu}\partial _{\mu}\psi+\frac{1}{4}\partial _{\mu}\xi _{\nu}(\gamma ^{\mu}\gamma ^{\nu}-\gamma ^{\nu}\gamma ^{\mu})\psi \\
 \mathcal{L}_{\xi}\bar{\psi} & =\bar{\psi}\overleftarrow\partial _{\mu}\xi ^{\mu}-\frac{1}{4}\partial _{\mu}\xi _{\nu}\bar{\psi}(\gamma ^{\mu}\gamma ^{\nu}-\gamma ^{\nu}\gamma ^{\mu}) \\
-\mathcal{L}_{\xi}(V,A)_{\mu} & =\xi ^{\nu}\partial _{\nu}(V,A)_{\mu}+\partial _{\mu}(V,A)_{\nu}\xi ^{\nu}
+\mathcal{L}_{\xi}A_{\mu} & =\xi ^{\nu}\partial _{\nu}A_{\mu}+\partial _{\mu}A_{\nu}\xi ^{\nu}
 \end{align}
 $$
 
@@ -137,28 +128,14 @@ $$\tag{7.9}
 \end{align}
 $$
 
-act it on the action, we have
-
-$$\tag{7.9}
+thus the Lagrangian is covariant. act it on the action, we have
+$$\tag{1.2}
 \begin{align}
-X_{\xi}\cdot \delta S & =\int _{M} \mathrm{d}(\xi \cdot \mathbf{L}) \\
- & =\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{3}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}g_{\mu \nu}(i\bar{\psi}\gamma ^{\rho}\partial _{\rho}\psi+\bar{\psi}\gamma ^{\rho}\psi V_{\rho}+\bar{\psi}\gamma ^{\rho}\gamma ^{5}\psi A_{\rho})
+\delta S & =\int \mathrm{d}^{4}x\left( \frac{i}{2}\delta \bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi+\frac{i}{2}\bar{\psi}\gamma ^{\mu}\partial _{\mu}\delta \psi-\frac{i}{2}\delta \bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\delta \psi\right. \\
+ & \left.+\delta \bar{\psi}\gamma ^{\mu}\psi A_{\mu}+\bar{\psi}\gamma ^{\mu}\delta \psi A_{\mu}+\bar{\psi}\gamma ^{\mu}\psi \delta A_{\mu}-F^{\mu \nu}\partial _{\mu}\delta A_{\nu} \right) \\
+\theta & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left( \frac{i}{2}\delta \bar{\psi}\gamma ^{\mu}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\delta \psi+F^{\mu \nu}\delta A_{\nu} \right)
 \end{align}
 $$
 
 and the corresponding Noether charge
 
-$$\tag{7.10}
-\begin{align}
-H_{\xi} & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left( -i\bar{\psi}\gamma ^{\mu}\left( \xi ^{\rho}\partial _{\rho}\psi+\frac{1}{4}\partial _{\nu}\xi _{\rho}(\gamma ^{\nu}\gamma ^{\rho}-\gamma ^{\rho}\gamma ^{\nu})\psi \right) \right) \\
- & -\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}g_{\mu \nu}(i\bar{\psi}\gamma ^{\rho}\partial _{\rho}\psi+\bar{\psi}\gamma ^{\rho}\psi V_{\rho}+\bar{\psi}\gamma ^{\rho}\gamma ^{5}\psi A_{\rho}) \\
- & =
-\end{align}
-$$
-
-$$\tag{7.1}
-\begin{align}
-S & =\int _{M} \mathrm{d}^{4}x\left( i\bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi+\bar{\psi}\gamma ^{\mu}(V_{\mu}+A_{\mu}\gamma ^{5})\psi\right) \\
-\theta & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(-i\bar{\psi}\gamma ^{\mu}\delta \psi)
-\end{align}
-$$
