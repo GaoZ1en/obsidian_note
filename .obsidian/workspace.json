@@ -37,8 +37,7 @@
               "title": "微积分"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -111,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 526.5
+    "width": 526.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -120,10 +120,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "9fa2ad0f9f682065",
+  "active": "3a653471148c4ca1",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/ABJ anomaly.md",
     "Lecture/2025 spring/python for physics/微积分.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/ABJ anomaly.md",
     "Articles/Noether charge/Diffeomorphism of some quantities.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
     "Lecture/Hongbao Zhang/saturnday/week 4.md",
