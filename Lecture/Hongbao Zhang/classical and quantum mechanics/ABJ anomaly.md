@@ -101,7 +101,7 @@ and finally the diffeomorphism symmetry
 
 $$\tag{1.11}
 \begin{align}
-X_{\xi} & =\int \mathrm{d}^{4}x\left(\overleftarrow{\frac{\delta}{\delta \psi}}\mathcal{L}_{\xi}\psi+\mathcal{L}_{\xi}\bar{\psi}\overrightarrow{\frac{\delta}{\delta \bar{\psi}}}+\mathcal{L}_{\xi}V_{\mu}\frac{\delta}{\delta V_{\mu}}+\mathcal{L}_{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}}\right) \\
+X_{\xi} & =\int \mathrm{d}^{4}x\left(\overleftarrow{\frac{\delta}{\delta \psi}}\mathcal{L}_{\xi}\psi+\mathcal{L}_{\xi}\bar{\psi}\overrightarrow{\frac{\delta}{\delta \bar{\psi}}}+\mathcal{L}_{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}}\right) \\
 \mathcal{L}_{\xi}\psi & =\xi ^{\mu}\partial _{\mu}\psi-\frac{i}{2}\Sigma ^{\mu \nu}\partial _{\mu}\xi _{\nu}\psi \\
 \mathcal{L}_{\xi}\bar{\psi} & =\bar{\psi}\overleftarrow\partial _{\mu}\xi ^{\mu}+\frac{i}{2}\Sigma ^{\mu \nu}\partial _{\mu}\xi _{\nu}\psi \\
 \mathcal{L}_{\xi}A_{\mu} & =\xi ^{\nu}\partial _{\nu}A_{\mu}+\partial _{\mu}A_{\nu}\xi ^{\nu}
@@ -116,15 +116,15 @@ $$\tag{1.12}
 \end{align}
 $$
 
-we can verify that under such Lie derivatives, we have
+we can verify that under such transformation, we have
 
 $$\tag{1.13}
 \begin{align}
-\mathcal{L}_{\xi}(\bar{\psi}\psi) & =\xi ^{\mu}\partial _{\mu}(\bar{\psi}\psi) \\
-\mathcal{L}_{\xi}(\bar{\psi}\gamma ^{\mu}\psi) & =\xi ^{\nu}\partial _{\nu}(\bar{\psi}\gamma ^{\mu}\psi)-\bar{\psi}\gamma ^{\nu}\psi \partial _{\nu}\xi ^{\mu} \\
-\mathcal{L}_{\xi}(\bar{\psi}\Sigma ^{\mu \nu}\psi) & =\xi ^{\rho}\partial _{\rho}(\bar{\psi}\Sigma ^{\mu \nu}\psi)-\bar{\psi}\Sigma ^{\rho \nu}\psi \partial _{\rho}\xi ^{\mu}-\bar{\psi}\Sigma ^{\mu \rho}\psi \partial _{\rho}\xi ^{\nu} \\
-\mathcal{L}_{\xi}(\bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi) & =\xi ^{\nu}\partial _{\nu}(\bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi)-\bar{\psi}\gamma ^{\nu}\gamma ^{5}\psi \partial _{\nu}\xi ^{\mu} \\
-\mathcal{L}_{\xi}(\bar{\psi}\gamma ^{5}\psi) & =\xi ^{\mu}\partial _{\mu}(\bar{\psi}\gamma ^{5}\psi)
+X_{\xi}\cdot \delta(\bar{\psi}\psi)=\mathcal{L}_{\xi}(\bar{\psi}\psi) & =\xi ^{\mu}\partial _{\mu}(\bar{\psi}\psi) \\
+X_{\xi}\cdot \delta(\bar{\psi}\gamma ^{\mu}\psi)=\mathcal{L}_{\xi}(\bar{\psi}\gamma ^{\mu}\psi) & =\xi ^{\nu}\partial _{\nu}(\bar{\psi}\gamma ^{\mu}\psi)-\bar{\psi}\gamma ^{\nu}\psi \partial _{\nu}\xi ^{\mu} \\
+X_{\xi}\cdot \delta(\bar{\psi}\Sigma ^{\mu \nu}\psi)=\mathcal{L}_{\xi}(\bar{\psi}\Sigma ^{\mu \nu}\psi) & =\xi ^{\rho}\partial _{\rho}(\bar{\psi}\Sigma ^{\mu \nu}\psi)-\bar{\psi}\Sigma ^{\rho \nu}\psi \partial _{\rho}\xi ^{\mu}-\bar{\psi}\Sigma ^{\mu \rho}\psi \partial _{\rho}\xi ^{\nu} \\
+X_{\xi}\cdot \delta(\bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi)=\mathcal{L}_{\xi}(\bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi) & =\xi ^{\nu}\partial _{\nu}(\bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi)-\bar{\psi}\gamma ^{\nu}\gamma ^{5}\psi \partial _{\nu}\xi ^{\mu} \\
+X_{\xi}\cdot \delta(\bar{\psi}\gamma ^{5}\psi)=\mathcal{L}_{\xi}(\bar{\psi}\gamma ^{5}\psi) & =\xi ^{\mu}\partial _{\mu}(\bar{\psi}\gamma ^{5}\psi)
 \end{align}
 $$
 
@@ -144,39 +144,17 @@ $$\tag{1.15}
 H_{\xi} & =X_{\xi}\cdot \delta \theta-\alpha _{\xi} \\
  & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left( \frac{i}{2}\left( \bar{\psi}\overleftarrow{\partial _{\rho}}\xi ^{\rho}+\frac{i}{2}\partial _{\rho}\xi _{\sigma}\bar{\psi}\Sigma ^{\rho \sigma} \right)\gamma ^{\mu}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\left( \xi ^{\rho}\partial _{\rho}\psi-\frac{i}{2}\Sigma ^{\rho \sigma}\partial _{\rho}\xi _{\sigma}\psi \right) \right. \\
  & +F^{\mu \nu}(\xi ^{\rho}\partial _{\rho}A_{\nu}+\partial _{\nu}A_{\rho}\xi ^{\rho})+\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\eta _{\mu \nu}\left( \frac{i}{2}\bar{\psi}\gamma ^{\rho}\partial _{\rho}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\rho}\overleftarrow{\partial _{\rho}}\psi+\bar{\psi}\gamma ^{\rho}\psi A_{\rho}-\frac{1}{4}F_{\rho \sigma}F^{\rho \sigma} \right) \\
- & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left(- \frac{i}{2}\eta ^{\nu [\rho}\bar{\psi}\gamma ^{\mu]}\overleftrightarrow{\partial _{\rho}}\psi+F^{\mu \rho}F_{\rho}^{~\nu}-\frac{1}{4}\eta ^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} \right)
+ & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left(- \frac{i}{2}\eta ^{\nu [\rho}\bar{\psi}\gamma ^{\mu]}\overleftrightarrow{\partial _{\rho}}\psi+F^{\mu \rho}F_{\rho}^{~\nu}-\frac{1}{4}\eta ^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} +\eta ^{\mu \nu}\bar{\psi}\gamma ^{\rho}\psi A_{\rho}\right)
 \end{align}
 $$
 
-where $\displaystyle{\bar{\psi}\overleftrightarrow{\partial _{\rho}}\psi=\bar{\psi}\partial _{\rho}\psi-\bar{\psi}\overleftarrow{\partial _{\rho}}\psi}$
+finally we will consider the Poisson bracket $\displaystyle{\left\{H_{\xi},J^{A}_{\mu}\right\}}$
 
-$$\tag{1.15}
+$$\tag{1.16}
 \begin{align}
-H_{\xi} & =X_{\xi}\cdot \delta \theta-\alpha _{\xi} \\
- & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left( \frac{i}{2}\left( +\frac{i}{2}\partial _{\rho}\xi _{\sigma}\bar{\psi}\Sigma ^{\rho \sigma} \right)\gamma ^{\mu}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\left( -\frac{i}{2}\Sigma ^{\rho \sigma}\partial _{\rho}\xi _{\sigma}\psi \right) \right. \\
-  & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left( -\frac{1}{4}\partial _{\rho}\xi _{\sigma}\bar{\psi}\left\{\Sigma ^{\rho \sigma},\gamma ^{\mu}\right\}\psi\right)
- 
+\left\{H_{\xi},J^{A}_{\mu}\right\} & =-X_{\xi}\cdot \delta J^{A}_{\mu} \\
+ & =-X_{\xi}\cdot \int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\beta (\delta\bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi+\bar{\psi}\gamma ^{\mu}\gamma ^{5}\delta \psi)=0
 \end{align}
 $$
 
-
-$$\tag{1.2}
-\begin{align}
-\delta S & =\int \mathrm{d}^{4}x\left( \frac{i}{2}\delta \bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi+\frac{i}{2}\bar{\psi}\gamma ^{\mu}\partial _{\mu}\delta \psi-\frac{i}{2}\delta \bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\delta \psi\right. \\
- & \left.+\delta \bar{\psi}\gamma ^{\mu}\psi A_{\mu}+\bar{\psi}\gamma ^{\mu}\delta \psi A_{\mu}+\bar{\psi}\gamma ^{\mu}\psi \delta A_{\mu}-F^{\mu \nu}\partial _{\mu}\delta A_{\nu} \right) \\
-\theta & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left( \frac{i}{2}\delta \bar{\psi}\gamma ^{\mu}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\delta \psi+F^{\mu \nu}\delta A_{\nu} \right) \\
-S & =\int _{M}\mathrm{d}^{4}x\left( \frac{i}{2}\bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\psi+\bar{\psi}\gamma ^{\mu}\psi A_{\mu}-\frac{1}{4}F_{\mu \nu}F^{\mu \nu} \right) \\
-X_{\xi} & =\int \mathrm{d}^{4}x\left(\overleftarrow{\frac{\delta}{\delta \psi}}\mathcal{L}_{\xi}\psi+\mathcal{L}_{\xi}\bar{\psi}\overrightarrow{\frac{\delta}{\delta \bar{\psi}}}+\mathcal{L}_{\xi}V_{\mu}\frac{\delta}{\delta V_{\mu}}+\mathcal{L}_{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}}\right) \\
-\mathcal{L}_{\xi}\psi & =\xi ^{\mu}\partial _{\mu}\psi-\frac{i}{2}\Sigma ^{\mu \nu}\partial _{\mu}\xi _{\nu}\psi \\
-\mathcal{L}_{\xi}\bar{\psi} & =\bar{\psi}\overleftarrow{\partial _{\mu}}\xi ^{\mu}+\frac{i}{2}\partial _{\mu}\xi _{\nu}\bar{\psi}\Sigma ^{\mu \nu} \\
-\mathcal{L}_{\xi}A_{\mu} & =\xi ^{\nu}\partial _{\nu}A_{\mu}+\partial _{\mu}A_{\nu}\xi ^{\nu}
-\end{align}
-$$
-
-
-$$\tag{.}
-\begin{align}
-\left\{AB,C\right\} & = A\left\{B,C\right\}+\left\{A,C\right\}B  \\
-\left\{\Sigma ^{\rho \sigma},\gamma ^{\mu}\right\} & =
-\end{align}
-$$
+thus the ABJ anomaly is a pure quantum effect...
