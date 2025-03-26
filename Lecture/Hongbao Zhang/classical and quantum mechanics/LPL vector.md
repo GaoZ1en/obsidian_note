@@ -30,14 +30,9 @@ $$\tag{1.4}
 \begin{align}
 M_{i} & =X_{i}\cdot \theta-\alpha _{i} \\
  & =\dot{x}_{j}(2x_{i}\dot{x}_{j}-\dot{x}_{i}x_{j}-\delta _{ij}x_{k}\dot{x}_{k})-\left( x_{i}\dot{x}_{j}\dot{x}_{j}-\dot{x}_{i}x_{j}\dot{x}_{j}+\frac{\alpha}{r}x_{i} \right) \\
- & =2x_{i}\dot{x}_{j}\dot{x}_{j}-\dot{x}_{i}x_{j}\dot{x}_{j}-x
+ & =x_{i}\dot{x}_{j}\dot{x}_{j}-\dot{x}_{i}x_{j}\dot{x}_{j}-\frac{\alpha}{r}x_{i}
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-\delta L & =\dot{x}_{i}\delta \dot{x}_{i}+\frac{\alpha}{r^{3}}x_{i}\delta x_{i} \\
- & =\left( -m \ddot{x}_{i}+\frac{\alpha}{r^{3}}x_{i} \right)\delta x_{i}+ \frac{\mathrm{d}}{\mathrm{d}t}(\dot{x}_{i}\delta x_{i})
-\end{align}
-$$
+which is exacly the Laplace-Runge-Lenz vector.
 
