@@ -10,8 +10,7 @@ where $\displaystyle{i=1,2,3}$. consider the following transformation
 
 $$\tag{1.2}
 \begin{align}
-X_{\varepsilon} & =\int \mathrm{d}t\delta _{\varepsilon}x_{i} \frac{\delta}{\delta x_{i}} \\
-\delta _{\varepsilon}x_{i} & =\varepsilon _{k}\left( 2\dot{x}_{i}x_{k}-x_{i} \dot{x}_{k}-\vec{x}\cdot \vec{\dot{x}}\delta _{ik} \right)
+X_{i} & =\int \mathrm{d}t(2\dot{x}_{i}x_{j}-x_{i}\dot{x}_{j}-\delta _{ij}x_{k}\dot{x}_{k}) \frac{\delta}{\delta x_{j}}
 \end{align}
 $$
 
@@ -19,10 +18,7 @@ then
 
 $$\tag{1.3}
 \begin{align}
-X_{\varepsilon}\cdot \delta L & = \dot{x}_{i} \varepsilon _{j}\frac{\mathrm{d}}{\mathrm{d}t}\left( 2\dot{x}_{i}x_{j}-x_{i}\dot{x}_{j}-\delta _{kl}x_{k}\dot{x}_{l}\delta _{ij} \right)+\frac{\alpha}{r^{3}}x_{i}\varepsilon _{j}\left( 2\dot{x}_{i}x_{j}-x_{i}\dot{x}_{j}-\delta _{kl}x_{k}\dot{x}_{l}\delta _{ij} \right) \\
- & =\varepsilon _{j}\left( 2\dot{x}_{i}\ddot{x}_{i}x_{j}+\dot{x}_{i}\dot{x}_{i}\dot{x}_{j}-\dot{x}_{i}x_{i}\ddot{x}_{j}-\delta _{ij}\delta _{kl}\dot{x}_{i}\dot{x}_{k}\dot{x}_{l}-\delta _{ij}\delta _{kl}\dot{x}_{i}x_{k}\ddot{x}_{l} \right) \\
- & +\frac{\alpha}{r^{3}}\varepsilon _{j}\left( 2x_{i}\ddot{x}_{i}x_{j}+x_{i}\dot{x}_{i}\dot{x}_{j}-x_{i}x_{i}\ddot{x}_{j}-\delta _{ij}\delta _{kl}x_{i}\dot{x}_{k}\dot{x}_{l}-\delta _{ij}\delta _{kl}x_{i}x_{k}\ddot{x}_{l} \right) \\
- & =
+X_{\xi}\cdot \delta L & =\dot{x}_{i} \frac{\mathrm{d}}{\mathrm{d}t}(2\dot{x}_{j}x_{i}-x_{j}\dot{x}_{i}-\delta _{ij}x_{k}\dot{x}_{k})7
 \end{align}
 $$
 
