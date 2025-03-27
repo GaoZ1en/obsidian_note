@@ -31,7 +31,7 @@ $$\tag{1.1}
 \end{align}
 $$
 
-here we use (0.1), 
+here we use (0.1), and 
 
 $$\tag{1.2}
 \begin{align}
@@ -52,6 +52,23 @@ $$
 
 $$\tag{2.1}
 \begin{align}
-\tau ^{\mu}\xi ^{\nu}(\zeta ^{\rho}\partial _{\rho}T_{\mu \nu}+T_{\mu \rho}\partial _{\nu}\zeta ^{\rho}+T_{\rho \nu}\partial _{\mu}\zeta ^{\rho}) & =\tau ^{\mu}(\xi ^{\rho}\nabla _{\rho}\zeta ^{\nu}-\zeta ^{\rho}\nabla _{\rho}\xi ^{\nu})T_{\mu \nu}+
+\tau ^{\mu}\xi ^{\nu}(\zeta ^{\rho}\nabla _{\rho}T_{\mu \nu}+T_{\mu \rho}\nabla _{\nu}\zeta ^{\rho}+T_{\rho \nu}\nabla _{\mu}\zeta ^{\rho}) & =\tau ^{\mu}(\xi ^{\rho}\nabla _{\rho}\zeta ^{\nu}-\zeta ^{\rho}\nabla _{\rho}\xi ^{\nu})T_{\mu \nu}+\tau ^{\mu}(\xi ^{\nu}\zeta ^{\rho}\nabla _{\rho}T_{\mu \nu}+\zeta ^{\nu}\nabla _{\nu}\xi ^{\rho}T_{\mu \rho}+\xi ^{\nu}\nabla _{\mu}\zeta ^{\rho}T_{\rho \nu}) \\
+ & =\tau ^{\mu}[\xi,\zeta]^{\nu}T_{\mu \nu}+\tau _{\sigma}\nabla _{\rho}(g^{\mu \sigma}\xi ^{\nu}\zeta ^{\rho}T_{\mu \nu}-g^{\mu \rho}\xi ^{\nu}\zeta ^{\sigma}T_{\mu \nu})+\tau _{\sigma}\nabla ^{\mu}(\xi ^{\nu}\zeta ^{\sigma}T_{\mu \nu}) \\
+ & -\tau ^{\mu}\nabla _{\rho}(\xi ^{\nu}\zeta ^{\rho})T_{\mu \nu}+\tau ^{\mu}\zeta ^{\nu}\nabla _{\nu}\xi ^{\rho}T_{\mu \rho}+\tau ^{\mu}\xi ^{\nu}\nabla _{\mu}\zeta ^{\rho}T_{\mu \nu} \\
+ & =\tau ^{\mu}[\xi,\zeta]^{\nu}T_{\mu \nu}+\tau _{\rho}\nabla _{\sigma}(g^{\mu \rho}\xi ^{\nu}\zeta ^{\sigma}T_{\mu \nu}-g^{\mu \sigma}\xi ^{\nu}\zeta ^{\rho}T_{\mu \nu}) \\
+ & +\frac{1}{2}\tau _{\rho}(\nabla ^{\mu}\xi ^{\nu}+\nabla ^{\nu}\xi ^{\mu}-g^{\mu \nu}\nabla _{\sigma}\xi ^{\sigma})\zeta ^{\rho}T_{\mu \nu}+\frac{1}{2}\tau _{\rho}\zeta ^{\rho}g^{\mu \nu}T_{\mu \nu}\nabla _{\sigma}\xi ^{\sigma}+\tau _{\rho}\xi ^{\nu}\zeta ^{\rho}\nabla ^{\mu}T_{\mu \nu} \\
+ & +\tau _{\rho}\xi ^{\nu}\nabla ^{\mu}\zeta ^{\rho}T_{\mu \nu}-\tau ^{\mu}\zeta ^{\rho}\nabla _{\rho}\xi ^{\nu}T_{\mu \nu}-\tau ^{\mu}\xi ^{\nu}\nabla _{\rho}\zeta ^{\rho}T_{\mu \nu}+\tau ^{\mu}\zeta ^{\nu}\nabla _{\nu}\xi ^{\rho}T_{\mu \rho}+\tau ^{\mu}\xi ^{\nu}\nabla _{\mu}\zeta ^{\rho}T_{\mu \nu} \\
+ & =
+\end{align}
+$$
+
+$$\tag{1.1}
+\begin{align}
+\tau ^{\mu}\xi ^{\nu}(\zeta ^{\rho}\partial _{\rho}T_{\mu \nu}+T_{\mu \rho}\partial _{\nu}\zeta ^{\rho}+T_{\rho \nu}\partial _{\mu}\zeta ^{\rho}) & =\tau ^{\mu}(\xi ^{\nu}\partial _{\nu}\zeta ^{\rho}-\zeta ^{\nu}\partial _{\nu}\xi ^{\rho})T_{\mu \rho}+\tau ^{\mu}(\xi ^{\nu}\zeta ^{\rho}\partial _{\rho}T_{\mu \nu}+\zeta ^{\nu}\partial _{\nu}\xi ^{\rho}T_{\mu \rho}+\xi ^{\nu}\partial _{\mu}\zeta ^{\rho}T_{\rho \nu}) \\
+ & =\tau ^{\mu}[\xi,\zeta]^{\nu}T_{\mu \nu}+\tau _{\sigma}\partial _{\rho}(g^{\mu \sigma}\xi ^{\nu}\zeta ^{\rho}T_{\mu \nu}-g^{\mu \rho}\xi ^{\nu}\zeta ^{\sigma}T_{\mu \nu})+\tau _{\sigma}\partial _{\rho}(g^{\mu \rho}\xi ^{\nu}\zeta ^{\sigma}T_{\mu \nu}) \\
+ & -\tau ^{\mu}\partial _{\rho}(\xi ^{\nu}\zeta ^{\rho})T_{\mu \nu}+\tau ^{\mu}\zeta ^{\nu}\partial _{\nu}\xi ^{\rho}T_{\mu \rho}+\tau ^{\mu}\xi ^{\nu}\partial _{\mu}\zeta ^{\rho}T_{\rho \nu} \\
+ & =\tau ^{\mu}[\xi,\zeta]^{\nu}T_{\mu \nu}+\tau _{\rho}\partial _{\sigma}(g^{\mu \rho}\xi ^{\nu}\zeta ^{\sigma}T_{\mu \nu}-g^{\mu \sigma}\xi ^{\nu}\zeta ^{\rho}T_{\mu \nu}) \\
+ & +\frac{1}{2}\tau _{\rho}(\partial ^{\mu}\xi ^{\nu}+\partial ^{\nu}\xi ^{\mu})\zeta ^{\rho}T_{\mu \nu}+\tau _{\rho}\xi ^{\nu}(\partial ^{\mu}\zeta ^{\rho}+\partial ^{\rho}\zeta ^{\mu})T_{\mu \nu}+\tau _{\rho}\xi ^{\nu}\zeta ^{\rho}\partial ^{\mu}T_{\mu \nu} \\
+ & -\tau ^{\mu}\zeta ^{\rho}\partial _{\rho}\xi ^{\nu}T_{\mu \nu}-\tau ^{\mu}\xi ^{\nu}\partial _{\rho}\zeta ^{\rho}T_{\mu \nu}+\tau ^{\mu}\zeta ^{\nu}\partial _{\nu}\xi ^{\rho}T_{\mu \rho}
 \end{align}
 $$
