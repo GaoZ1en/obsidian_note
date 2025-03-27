@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/LPL vector.md",
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/classical mechanics.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "LPL vector"
+              "title": "classical mechanics"
             }
           },
           {
@@ -32,8 +32,7 @@
               "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,8 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -117,16 +115,21 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3388b26a579903b8",
+  "active": "99cdd3840716a9cd",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/LPL vector.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 4.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/quantum mechanics.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/reconsider of models.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/Maxwell theory.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/LPL vector.md",
     "Lecture/2025 spring/english/week 5.md",
     "Lecture/2025 spring/english/week 4.md",
     "Lecture/2025 spring/python for physics/微积分.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/ABJ anomaly.md",
     "Articles/Noether charge/Diffeomorphism of some quantities.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md",
     "Lecture/Hongbao Zhang/saturnday/week 4.md",
     "未命名.md",
     "Articles/Topologically massive gravity/rework of 2104.md",
@@ -141,12 +144,7 @@
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/2025 spring/python for physics/iterate.md",
     "在报告里面应该讲什么呢.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 4.md",
-    "Note/Physics/Higher symmetry/未命名.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/Maxwell theory.md",
     "Note/Physics/Higher symmetry",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
-    "Note/Code/rust.md",
     "Note/Physics/Quantization",
     "Note/Physics/Higher geometry in physics",
     "Lecture/2025 spring/english",
