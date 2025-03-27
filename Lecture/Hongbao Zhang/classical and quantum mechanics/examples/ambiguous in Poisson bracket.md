@@ -89,9 +89,19 @@ $$
 
 $$\tag{.}
 \begin{align}
-X_{\xi} & =\int \mathrm{d}^{d}x\left( \xi ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\xi ^{\rho}\phi \right) \frac{\delta}{\delta \phi} \\
 X_{\zeta}\cdot \delta \phi & =\zeta ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho}\phi \\
 X_{\zeta}\cdot \delta \phi ^{2} & =\zeta ^{\rho}\nabla _{\rho}\phi ^{2}+\frac{d-2}{d}\nabla _{\rho}\zeta ^{\rho}\phi ^{2}
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+X_{\zeta}\cdot \delta H_{\xi} & =\int _{\Sigma}\varepsilon _{\Sigma}
+\end{align}
+$$
+
+$$\tag{2.15}
+\begin{align}
+H_{\xi} & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi +\frac{d-2}{4(d-1)}G_{\mu \nu}\phi ^{2}-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\phi ^{2}+\frac{d-2}{4d}g_{\mu \nu}\nabla ^{2}\phi ^{2}\right)
+\end{align}
+$$

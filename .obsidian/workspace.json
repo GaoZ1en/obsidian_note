@@ -26,10 +26,15 @@
             "id": "3388b26a579903b8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "models"
             }
           }
         ]
