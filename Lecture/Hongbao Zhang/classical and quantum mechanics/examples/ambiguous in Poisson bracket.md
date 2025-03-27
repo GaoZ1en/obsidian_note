@@ -52,8 +52,6 @@ $$
 
 $$\tag{2.1}
 \begin{align}
-\tau ^{\mu}\xi ^{\nu}(\zeta ^{\rho}\partial _{\rho}T_{\mu \nu}+T_{\mu \rho}\partial _{\nu}\zeta ^{\rho}+T_{\rho \nu}\partial _{\mu}\zeta ^{\rho}) & =\tau ^{\mu}(\xi ^{\rho}\nabla _{\rho}\zeta ^{\nu}-\zeta ^{\rho}\nabla _{\rho}\xi ^{\nu})T_{\mu \nu} \\
- & +\frac{1}{2}\tau ^{\mu}\zeta _{\mu}\nabla _{\nu}\xi ^{\nu}g^{\rho \sigma}T_{\rho \sigma}+\frac{1}{2}\tau ^{\mu}\zeta _{\mu}\nabla ^{\nu}T_{\nu \rho}\xi ^{\rho} \\
- & +\tau ^{\mu}()
+\tau ^{\mu}\xi ^{\nu}(\zeta ^{\rho}\partial _{\rho}T_{\mu \nu}+T_{\mu \rho}\partial _{\nu}\zeta ^{\rho}+T_{\rho \nu}\partial _{\mu}\zeta ^{\rho}) & =\tau ^{\mu}(\xi ^{\rho}\nabla _{\rho}\zeta ^{\nu}-\zeta ^{\rho}\nabla _{\rho}\xi ^{\nu})T_{\mu \nu}+
 \end{align}
 $$
