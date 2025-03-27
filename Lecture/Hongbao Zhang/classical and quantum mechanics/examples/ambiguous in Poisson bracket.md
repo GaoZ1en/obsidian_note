@@ -73,17 +73,25 @@ $$\tag{3.1}
  & -\tau ^{\mu}\nabla _{\rho}(\xi ^{\nu}\zeta ^{\rho})T_{\mu \nu}+\tau ^{\mu}\zeta ^{\nu}\nabla _{\nu}\xi ^{\rho}T_{\mu \rho}+\tau ^{\mu}\xi ^{\nu}\nabla _{\mu}\zeta ^{\rho}T_{\rho \nu} \\
  & =\tau ^{\mu}[\xi,\zeta]^{\nu }T_{\mu \nu}+\tau _{\rho}\nabla _{\sigma}(g^{\mu \rho}\xi ^{\nu}\zeta ^{\sigma}T_{\mu \nu}-g^{\mu \sigma}\xi ^{\nu}\zeta ^{\rho}T_{\mu \nu}) \\
  & +\frac{1}{2}\tau _{\rho}\left( \nabla ^{\mu}\xi ^{\nu}+\nabla ^{\nu}\xi ^{\mu}-\frac{2}{d}g^{\mu \nu}\nabla _{\sigma}\xi ^{\sigma} \right)\zeta ^{\rho}T_{\mu \nu}+\frac{1}{d}\tau _{\rho}\zeta ^{\rho}\nabla _{\sigma}\xi ^{\sigma}g^{\mu \nu}T_{\mu \nu} \\
- & +\tau _{\rho}\xi ^{\nu}\nabla ^{\mu}\zeta ^{\rho}T_{\mu \nu}-\tau ^{\mu}\zeta ^{\rho}\nabla _{\rho}\xi ^{\nu}T_{\mu \nu}-\tau ^{\mu}\xi ^{\nu}\nabla _{\rho}\zeta ^{\rho}T_{\mu \nu}+\tau ^{\mu}\zeta ^{\nu}\nabla _{\nu}\xi ^{\rho}T_{\mu \rho}+\tau ^{\mu}\xi ^{\nu}\nabla _{\mu}\zeta ^{\rho}T_{\rho \nu}
+ & +(\tau _{\rho}\xi ^{\nu}\nabla ^{\mu}\zeta ^{\rho}T_{\mu \nu}+\tau ^{\mu}\xi ^{\nu}\nabla _{\mu}\zeta ^{\rho}T_{\rho \nu}-\tau ^{\mu}\xi ^{\nu}\nabla _{\rho}\zeta ^{\rho}T_{\mu \nu})+(\tau ^{\mu}\zeta ^{\nu}\nabla _{\nu}\xi ^{\rho}T_{\mu \rho}-\tau ^{\mu}\zeta ^{\rho}\nabla _{\rho}\xi ^{\nu}T_{\mu \nu}) \\
+ & =\frac{2-d}{d}\tau ^{\mu}\xi ^{\nu}\nabla _{\rho}\zeta ^{\rho}T_{\mu \nu}
 \end{align}
 $$
 
-$$\tag{1.1}
+and in the conformally coupled scalar, we have
+
+$$\tag{.}
 \begin{align}
-\tau ^{\mu}\xi ^{\nu}(\zeta ^{\rho}\partial _{\rho}T_{\mu \nu}+T_{\mu \rho}\partial _{\nu}\zeta ^{\rho}+T_{\rho \nu}\partial _{\mu}\zeta ^{\rho}) & =\tau ^{\mu}(\xi ^{\nu}\partial _{\nu}\zeta ^{\rho}-\zeta ^{\nu}\partial _{\nu}\xi ^{\rho})T_{\mu \rho}+\tau ^{\mu}(\xi ^{\nu}\zeta ^{\rho}\partial _{\rho}T_{\mu \nu}+\zeta ^{\nu}\partial _{\nu}\xi ^{\rho}T_{\mu \rho}+\xi ^{\nu}\partial _{\mu}\zeta ^{\rho}T_{\rho \nu}) \\
- & =\tau ^{\mu}[\xi,\zeta]^{\nu}T_{\mu \nu}+\tau _{\sigma}\partial _{\rho}(g^{\mu \sigma}\xi ^{\nu}\zeta ^{\rho}T_{\mu \nu}-g^{\mu \rho}\xi ^{\nu}\zeta ^{\sigma}T_{\mu \nu})+\tau _{\sigma}\partial _{\rho}(g^{\mu \rho}\xi ^{\nu}\zeta ^{\sigma}T_{\mu \nu}) \\
- & -\tau ^{\mu}\partial _{\rho}(\xi ^{\nu}\zeta ^{\rho})T_{\mu \nu}+\tau ^{\mu}\zeta ^{\nu}\partial _{\nu}\xi ^{\rho}T_{\mu \rho}+\tau ^{\mu}\xi ^{\nu}\partial _{\mu}\zeta ^{\rho}T_{\rho \nu} \\
- & =\tau ^{\mu}[\xi,\zeta]^{\nu}T_{\mu \nu}+\tau _{\rho}\partial _{\sigma}(g^{\mu \rho}\xi ^{\nu}\zeta ^{\sigma}T_{\mu \nu}-g^{\mu \sigma}\xi ^{\nu}\zeta ^{\rho}T_{\mu \nu}) \\
- & +\frac{1}{2}\tau _{\rho}(\partial ^{\mu}\xi ^{\nu}+\partial ^{\nu}\xi ^{\mu})\zeta ^{\rho}T_{\mu \nu}+\tau _{\rho}\xi ^{\nu}(\partial ^{\mu}\zeta ^{\rho}+\partial ^{\rho}\zeta ^{\mu})T_{\mu \nu}+\tau _{\rho}\xi ^{\nu}\zeta ^{\rho}\partial ^{\mu}T_{\mu \nu} \\
- & -\tau ^{\mu}\zeta ^{\rho}\partial _{\rho}\xi ^{\nu}T_{\mu \nu}-\tau ^{\mu}\xi ^{\nu}\partial _{\rho}\zeta ^{\rho}T_{\mu \nu}+\tau ^{\mu}\zeta ^{\nu}\partial _{\nu}\xi ^{\rho}T_{\mu \rho}
+\left\{H_{\xi},H_{\zeta}\right\} & =X_{\zeta}\cdot \delta H_{\xi} \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}(\zeta ^{\rho}\nabla _{\rho}T_{\mu \nu}+T_{\mu \rho}\nabla _{\nu}\zeta ^{\rho}+T_{\rho \nu}\nabla _{\mu}\zeta ^{\rho})+\frac{d-2}{d}\int _{\Sigma}\tau ^{\mu}\xi ^{\nu}\nabla _{\rho}\zeta ^{\rho}T_{\mu \nu}\dots?
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+X_{\xi} & =\int \mathrm{d}^{d}x\left( \xi ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\xi ^{\rho}\phi \right) \frac{\delta}{\delta \phi} \\
+X_{\zeta}\cdot \delta \phi & =\zeta ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\zeta ^{\rho}\phi \\
+X_{\zeta}\cdot \delta \phi ^{2} & =\zeta ^{\rho}\nabla _{\rho}\phi ^{2}+\frac{d-2}{d}\nabla _{\rho}\zeta ^{\rho}\phi ^{2}
+\end{align}
+$$
+
