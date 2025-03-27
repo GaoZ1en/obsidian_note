@@ -670,6 +670,3 @@ $$\tag{5.7}
 \implies J^{a} & =\frac{\delta \mathbf{L}}{\delta(\nabla _{a}\phi)}\delta _{\xi}\phi-\xi \cdot \mathbf{L}+\Lambda _{\xi}
 \end{align}
 $$
-
-## a proof of (1.8) and (2.16)
-
