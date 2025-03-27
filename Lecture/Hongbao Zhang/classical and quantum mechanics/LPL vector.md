@@ -35,4 +35,3 @@ M_{i} & =X_{i}\cdot \theta-\alpha _{i} \\
 $$
 
 which is exacly the Laplace-Runge-Lenz vector.
-

@@ -21,8 +21,19 @@
               "icon": "lucide-file",
               "title": "LPL vector"
             }
+          },
+          {
+            "id": "3388b26a579903b8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,10 +117,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "99cdd3840716a9cd",
+  "active": "3388b26a579903b8",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/reconsider of models.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/LPL vector.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/reconsider of models.md",
     "Lecture/2025 spring/english/week 5.md",
     "Lecture/2025 spring/english/week 4.md",
     "Lecture/2025 spring/python for physics/微积分.md",
