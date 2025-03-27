@@ -1,3 +1,4 @@
+## hydrogen atom
 we have the Lagrangian
 
 $$\tag{1.1}
@@ -35,3 +36,38 @@ M_{i} & =X_{i}\cdot \theta-\alpha _{i} \\
 $$
 
 which is exacly the Laplace-Runge-Lenz vector.
+
+## d-dim oscillator
+
+$$\tag{2.1}
+\begin{align}
+L & =\frac{1}{2}\dot{x}_{i}\dot{x}_{i}-\frac{1}{2}\omega ^{2}x_{i}x_{i}
+\end{align}
+$$
+
+consider
+
+$$\tag{2.2}
+\begin{align}
+X_{ij} & =\int \mathrm{d}t(\delta _{ik}\dot{x}_{j}+\delta _{jk}\dot{x}_{i}) \frac{\delta}{\delta x_{k}}
+\end{align}
+$$
+
+then we have
+
+$$\tag{2.3}
+\begin{align}
+X_{ij}\cdot \delta L & =\dot{x}_{k} \frac{\mathrm{d}}{\mathrm{d}t}(\delta _{ik}\dot{x}_{j}+\delta _{jk}\dot{x}_{i})-\omega ^{2}x_{k}(\delta _{ik}\dot{x}_{j}+\delta _{jk}\dot{x}_{i}) \\
+ & =\dot{x}_{i}\ddot{x}_{j}+\dot{x}_{j}\ddot{x}_{i}-\omega ^{2}(x_{i}\dot{x}_{j}+x_{j}\dot{x}_{i}) \\
+ & =\frac{\mathrm{d}}{\mathrm{d}t}(\dot{x}_{i}\dot{x}_{j}-\omega ^{2}x_{i}x_{j})
+\end{align}
+$$
+
+then the corresponding Noether charge is
+
+$$\tag{2.4}
+\begin{align}
+H_{ij} & =X_{ij}\cdot \theta-\alpha _{ij} \\
+ & =\dot{x}_{i}\dot{x}_{j}+\omega ^{2}x_{i}x_{j}
+\end{align}
+$$
