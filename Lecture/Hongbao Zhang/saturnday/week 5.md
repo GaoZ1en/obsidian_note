@@ -1,0 +1,3 @@
+open problem:
+how to prove wald formula in formalism of conical singularity...
+
