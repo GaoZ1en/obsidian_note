@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/discussion for Poisson bracket.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "models"
+              "title": "discussion for Poisson bracket"
             }
           }
         ],
@@ -68,8 +68,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -124,13 +123,13 @@
   },
   "active": "dc2a5ae4011f8b56",
   "lastOpenFiles": [
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/LPL vector.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models revisted.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/discussion for Poisson bracket.md",
     "Lecture/Hongbao Zhang/saturnday/week 5.md",
     "Lecture/Hongbao Zhang/saturnday/week 3.md",
     "Lecture/Hongbao Zhang/saturnday/week 2.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/LPL vector.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models revisted.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/TODO.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/quantum mechanics.md",
