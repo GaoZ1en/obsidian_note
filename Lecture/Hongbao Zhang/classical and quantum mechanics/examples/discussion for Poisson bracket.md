@@ -91,3 +91,11 @@ $$\tag{.}
 $$
 
 so the calculation last week is wrong...
+
+## free scalar
+
+$$\tag{.}
+\begin{align}
+
+\end{align}
+$$
