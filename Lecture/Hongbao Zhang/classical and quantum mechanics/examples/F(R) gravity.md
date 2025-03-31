@@ -94,36 +94,77 @@ we denote $\displaystyle{\delta a=\frac{\varepsilon}{2}n^{\rho}n^{\sigma}\delta 
 
 $$\tag{2.2}
 \begin{align}
-\delta n^{\mu}=\delta g^{\mu \nu}
+0=\delta \varepsilon & =\delta n_{\mu}n^{\mu}+n_{\mu}\delta n^{\mu} \\
+ & =\varepsilon \delta a+n_{\mu}\delta n^{\mu} \\
+\implies \delta n^{\mu} & =-n^{\mu}\delta a-\varepsilon \delta A^{\mu} \\
+\delta A^{\mu} & =-\varepsilon \gamma ^{\mu}_{\nu}\delta g^{\nu \rho}n_{\rho} \\
+ & =-\varepsilon \gamma ^{\mu \nu}\delta g_{\rho \nu}n^{\rho}
 \end{align}
 $$
 
 then the induced metric $\displaystyle{\gamma _{\mu \nu}=g_{\mu \nu}-\varepsilon n_{\mu}n_{\nu}}$
 
-$$\tag{2.2}
+$$\tag{2.3}
 \begin{align}
 \delta \gamma _{\mu \nu} & =\delta g_{\mu \nu}-\varepsilon \delta n_{\mu}n_{\nu}-\varepsilon n_{\mu}\delta n_{\nu} \\
- & =\delta g_{\mu \nu}-\varepsilon n_{\mu}n_{\nu}n^{\rho}n^{\sigma}\delta g_{\rho \sigma}
+  & =\delta g_{\mu \nu}-\varepsilon n_{\mu}n_{\nu}\delta a
+\end{align}
+$$
+
+$$\tag{2.4}
+\begin{align}
+\delta g^{\mu \nu} & =\delta(\gamma ^{\mu \nu}+\varepsilon n^{\mu}n^{\nu}) \\
+ & =\delta \gamma ^{\mu \nu}-2\varepsilon n^{\mu}n^{\nu}\delta a-\delta A^{\mu}n^{\nu}-n^{\mu}\delta A^{\nu} \\
+\delta g_{\mu \nu} & =\delta(\gamma _{\mu \nu}+\varepsilon n_{\mu}n_{\nu}) \\
+ & =\delta \gamma _{\mu \nu}+2\varepsilon n_{\mu}n_{\nu}\delta a
 \end{align}
 $$
 
 and
 
-$$\tag{2.3}
+$$\tag{2.5}
 \begin{align}
-\gamma _{\mu} ^{\sigma}\gamma _{\nu} ^{\lambda}\gamma _{\rho} ^{\tau}\nabla _{\sigma}\delta g_{\lambda \tau} & =\gamma _{\mu} ^{\sigma}\gamma _{\nu} ^{\lambda}\gamma _{\rho} ^{\tau}\nabla _{\sigma}(\delta g_{\lambda \tau}-\varepsilon n_{\lambda}n_{\tau}n^{\alpha}n^{\beta}\delta g_{\alpha \beta})+\gamma _{\mu} ^{\sigma}\gamma _{\nu} ^{\lambda}\gamma _{\rho} ^{\tau}\nabla _{\sigma}(\varepsilon n_{\lambda}n_{\tau}n^{\alpha}n^{\beta}\delta g_{\alpha \beta}) \\
- & =D_{\mu}\delta \gamma _{\nu \rho}+\varepsilon K_{\mu \nu}\gamma ^{\tau}_{\rho}n_{\tau}n^{\alpha}n^{\beta}\delta g_{\alpha \beta}+\varepsilon K_{\mu \rho}\gamma ^{\lambda}_{\nu}n_{\lambda}n^{\alpha}n^{\beta}\delta g_{\alpha \beta}
+\gamma ^{\mu \sigma}\gamma ^{\nu}_{~\lambda}\gamma ^{\rho}_{~\tau}\nabla _{\sigma}\delta g^{\lambda \tau} & =D^{\mu}\delta \gamma ^{\nu \rho}-K^{\mu \rho}\delta A^{\nu}-K^{\mu \nu}\delta A^{\rho}
 \end{align}
 $$
 
 and finally the extrinsic curvature $\displaystyle{K_{\alpha \beta}=\gamma _{\alpha}^{\mu}\gamma ^{\nu}_{\beta}\nabla _{\mu}n_{\nu}}$
 
-$$\tag{2.4}
+$$\tag{2.6}
 \begin{align}
-\delta K_{\alpha \beta} & =\delta(\gamma ^{\mu}_{\alpha}\gamma ^{\nu}_{\beta}\nabla _{\mu}n_{\nu}) \\
- & =\delta \gamma ^{\mu}_{\alpha}\gamma ^{\nu}_{\beta}\nabla _{\mu}n_{\nu}+\gamma ^{\mu}_{\alpha}\delta \gamma ^{\nu}_{\beta}\nabla _{\mu}n_{\nu}+\gamma ^{\mu}_{\alpha}\gamma ^{\nu}_{\beta}\delta \nabla _{\mu}n_{\nu}+\gamma ^{\mu}_{\alpha}\gamma ^{\nu}_{\beta}\nabla _{\mu}\delta n_{\nu} \\
- & =
+\delta K^{\mu \nu} & =\delta(\gamma^{\mu \rho}\gamma^{\nu \sigma}\nabla _{\rho}n_{\sigma}) \\
+ & =\delta \gamma ^{\mu \rho}K^{\nu}_{~\rho}+\delta \gamma ^{\rho \nu}K^{\mu}_{~\rho}+\delta aK^{\mu \nu}-\gamma ^{\mu \rho}\gamma ^{\nu \sigma}n_{\lambda}\delta \Gamma ^{\lambda}_{~\rho \sigma}
 \end{align}
 $$
 
-we start from 
+and
+
+$$\tag{2.7}
+\begin{align}
+\delta K^{\mu \nu} & =\delta(\gamma ^{\mu \rho}\gamma ^{\nu}_{~\sigma}\nabla _{\rho}n^{\sigma}) \\
+ & =\delta \gamma ^{\mu \rho}K^{\nu}_{~\rho}-\gamma ^{\mu \rho}\delta A^{\nu}n_{\sigma}\nabla _{\rho}n^{\sigma}+\gamma^{\mu \rho}\gamma ^{\nu}_{\sigma}\delta \Gamma ^{\sigma}_{~\rho \lambda}n^{\lambda}+\gamma ^{\mu \rho}\gamma ^{\nu}_{~\sigma}\nabla _{\rho}(-n^{\sigma}\delta a-\varepsilon \delta A^{\sigma}) \\
+ & =\delta \gamma ^{\mu \rho}K^{\nu}_{~\rho}+\gamma ^{\mu \rho}\gamma ^{\nu}_{~\sigma}n^{\lambda}\delta \Gamma ^{\sigma}_{~\rho \lambda}-\delta aK^{\mu \nu}-\varepsilon D^{\mu}\delta A^{\nu}
+\end{align}
+$$
+
+## boundary term
+
+we start from (1.7)
+
+$$\tag{3.1}
+\begin{align}
+\int _{\Sigma}\delta v^{\rho}\mathrm{d}\Sigma _{\rho} & =\varepsilon\int _{\Sigma}n_{\rho}\delta v^{\rho}\varepsilon _{\Sigma} \\
+ & =\varepsilon \int _{\Sigma}\varepsilon _{\Sigma}(2n_{\rho}\psi _{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{~\rho \sigma}+2n_{\rho}\delta g_{\nu \sigma}\nabla _{\mu}\psi ^{\mu \nu \rho \sigma})
+\end{align}
+$$
+
+the general direction is that convert $\displaystyle{\delta \Gamma ^{\mu}_{\rho \sigma}}$ and $\displaystyle{\delta g_{\mu \rho}}$ into $\displaystyle{\delta K^{\mu \nu}}$ and $\displaystyle{\delta \gamma ^{\mu \nu}}$... the first term is
+
+$$\tag{3.2}
+\begin{align}
+2n_{\rho}\psi _{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{\nu \sigma} & =2n_{\rho}\psi _{\mu}^{~\nu \rho \sigma}\delta ^{\mu}_{\alpha}\delta _{\nu}^{\beta}\delta ^{\gamma}_{\sigma}\delta \Gamma ^{\alpha}_{~\beta \gamma} \\
+ & = 2n_{\rho}\psi _{\mu}^{~\nu \rho \sigma}(\gamma ^{\mu}_{\alpha}+\varepsilon n^{\mu}n_{\alpha})(\gamma ^{\beta}_{\nu}+\varepsilon n^{\beta}n_{\nu})\gamma ^{\gamma}_{\sigma}\delta \Gamma ^{\alpha}_{~\beta \gamma} \\
+ & = 2n_{\rho}\psi _{\mu}^{~\nu \rho \sigma}\gamma ^{\mu}_{\alpha}\gamma ^{\beta}_{\nu}\gamma ^{\gamma}_{\sigma}\delta \Gamma ^{\alpha}_{~\beta \gamma}+2n_{\rho}\psi _{\mu}^{~\nu \rho \sigma}\gamma ^{\mu}_{\alpha}\varepsilon n^{\beta}n_{\nu}\gamma ^{\gamma}_{\sigma}\delta \Gamma ^{\alpha}_{\beta \gamma}+2\varepsilon n_{\rho}\psi _{\mu}^{~\nu \rho \sigma}n^{\mu}n_{\alpha}\gamma ^{\beta}_{\nu}\gamma ^{\gamma}_{\sigma}\delta \Gamma ^{\alpha}_{~\beta \gamma} \\
+ & =2n^{\rho}\gamma ^{\mu}_{\alpha}\gamma ^{\beta \nu}\gamma ^{\gamma \sigma}\psi _{\mu \nu \rho \sigma}\delta \Gamma ^{\alpha}_{\beta \gamma}+2\varepsilon(n^{\rho}n^{\beta}n^{\nu}\gamma ^{\mu}_{\alpha}\gamma ^{\gamma \sigma}\psi _{\mu \nu \rho \sigma})
+\end{align}
+$$
