@@ -13,28 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/discussion for Poisson bracket.md",
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/未命名.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "discussion for Poisson bracket"
-            }
-          },
-          {
-            "id": "dc2a5ae4011f8b56",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "models"
+              "title": "未命名"
             }
           },
           {
@@ -52,8 +37,7 @@
               "title": "covariant phase space with boundaries"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -137,9 +120,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "dc2a5ae4011f8b56",
+  "active": "99cdd3840716a9cd",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/discussion for Poisson bracket.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/未命名.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/covariant phase space with boundaries.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/LPL vector.md",
@@ -165,7 +149,6 @@
     "未命名.md",
     "Articles/Topologically massive gravity/rework of 2104.md",
     "Group meeting/week 10.md",
-    "Lecture/未命名.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md.bak",
     "Note/Physics/Higher symmetry",
     "Note/Physics/Quantization",
