@@ -16,6 +16,22 @@ $$\tag{1.2}
 \end{align}
 $$
 
+$$\tag{1.2*}
+\begin{align}
+\delta S_{\text{bulk}} & =\int _{M}\varepsilon \left(  P_{\mu}^{~\nu \rho \sigma}\delta R^{\mu}_{~\nu \rho \sigma}+\frac{\delta F}{\delta g_{\mu \nu}}\delta g_{\mu \nu}+\frac{1}{2}Fg^{\mu \nu}\delta g_{\mu \nu} \right) \\
+ & =\int _{M}\varepsilon \left( 2P_{\mu}^{~\nu \rho \sigma}\nabla _{\rho}\delta \Gamma ^{\mu}_{~\nu \sigma}+\frac{\delta F}{\delta g_{\mu \nu}}\delta g_{\mu \nu}+\frac{1}{2}Fg^{\mu \nu}\delta g_{\mu \nu}\right) \\
+ & =\int _{M}\varepsilon\left( 2\nabla _{\rho}(P_{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{~\nu \sigma})-2\nabla _{\rho}P_{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{\nu \sigma}+\frac{\delta F}{\delta g_{\mu \nu}}\delta g_{\mu \nu}+\frac{1}{2}Fg^{\mu \nu}\delta g_{\mu \nu} \right) \\
+ & =\int _{\partial M}\mathrm{d}\Sigma _{\rho}(2P_{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{\nu \sigma})-2\int _{M}\varepsilon \nabla _{\rho}P_{\mu}^{~\nu \rho \sigma}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\delta R^{\rho}_{~\sigma \mu \nu} & =\nabla _{\mu}\delta \Gamma ^{\rho}_{~\sigma \nu}-\nabla _{\nu}\delta \Gamma ^{\rho}_{~\mu \sigma} \\
+\delta \Gamma ^{\rho}_{~\mu \nu} & =\frac{1}{2}g^{\rho \sigma}(\nabla _{\mu}\delta g_{\sigma \nu}+\nabla _{\nu}\delta g_{\mu \sigma}-\nabla _{\sigma}\delta g_{\mu \nu})
+\end{align}
+$$
+
 here $\displaystyle{\mathrm{d}\Sigma _{\mu}}$ is the outward-directed surface element on $\displaystyle{\partial M}$, and
 
 $$\tag{1.3}
@@ -25,3 +41,4 @@ $$\tag{1.3}
 $$
 
 with $\displaystyle{P^{\mu \nu \rho \sigma}=\frac{\delta F}{\delta R_{\mu \nu \rho \sigma}}}$. 
+
