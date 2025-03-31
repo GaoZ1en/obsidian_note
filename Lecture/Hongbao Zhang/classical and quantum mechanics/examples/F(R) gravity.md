@@ -18,11 +18,11 @@ $$
 
 $$\tag{1.2*}
 \begin{align}
-\delta S_{\text{bulk}} & =\int _{M}\varepsilon \left(  P_{\mu}^{~\nu \rho \sigma}\delta R^{\mu}_{~\nu \rho \sigma}+\frac{\delta F}{\delta g_{\mu \nu}}\delta g_{\mu \nu}+\frac{1}{2}Fg^{\mu \nu}\delta g_{\mu \nu} \right) \\
- & =\int _{M}\varepsilon \left( 2P_{\mu}^{~\nu \rho \sigma}\nabla _{\rho}\delta \Gamma ^{\mu}_{~\nu \sigma}+\frac{\delta F}{\delta g_{\mu \nu}}\delta g_{\mu \nu}+\frac{1}{2}Fg^{\mu \nu}\delta g_{\mu \nu}\right) \\
- & =\int _{M}\varepsilon\left( 2\nabla _{\rho}(P_{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{~\nu \sigma})-2\nabla _{\rho}P_{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{\nu \sigma}+\frac{\delta F}{\delta g_{\mu \nu}}\delta g_{\mu \nu}+\frac{1}{2}Fg^{\mu \nu}\delta g_{\mu \nu} \right) \\
- & =\int _{\partial M}\mathrm{d}\Sigma _{\rho}(2P_{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{\nu \sigma})+\int _{M}\varepsilon \left( 2\nabla _{\rho}P^{\mu \nu \rho \sigma}\nabla _{\mu}\delta g_{\nu\sigma}+\frac{\delta F}{\delta g_{\mu \nu}}\delta g_{\mu \nu}+\frac{1}{2}Fg^{\mu \nu}\delta g_{\mu \nu} \right) \\
- & =\int _{\partial M}\mathrm{d}\Sigma _{\rho}(2\nabla _{\mu}P^{\mu \nu \rho \sigma}\delta g_{\nu \sigma}+2P_{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{~\nu \sigma})+\int _{M}\varepsilon\left( -2\nabla _{\mu}\nabla _{\rho}P^{\mu \nu \rho \sigma}\delta g_{\nu \sigma}+P^{\mu \nu}\delta g_{\mu \nu} +\frac{1}{2}Fg^{\mu \nu}\delta g_{\mu \nu}\right) \\
+\delta S_{\text{bulk}} & =\int _{M}\varepsilon \left(  P_{\mu}^{~\nu \rho \sigma}\delta R^{\mu}_{~\nu \rho \sigma}+\frac{1}{2}Fg^{\mu \nu}\delta g_{\mu \nu} \right) \\
+ & =\int _{M}\varepsilon \left( 2P_{\mu}^{~\nu \rho \sigma}\nabla _{\rho}\delta \Gamma ^{\mu}_{~\nu \sigma}+\frac{1}{2}Fg^{\mu \nu}\delta g_{\mu \nu}\right) \\
+ & =\int _{M}\varepsilon\left( 2\nabla _{\rho}(P_{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{~\nu \sigma})-2\nabla _{\rho}P_{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{\nu \sigma}+\frac{1}{2}Fg^{\mu \nu}\delta g_{\mu \nu} \right) \\
+ & =\int _{\partial M}\mathrm{d}\Sigma _{\rho}(2P_{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{\nu \sigma})+\int _{M}\varepsilon \left( 2\nabla _{\rho}P^{\mu \nu \rho \sigma}\nabla _{\mu}\delta g_{\nu\sigma}+\frac{1}{2}Fg^{\mu \nu}\delta g_{\mu \nu} \right) \\
+ & =\int _{\partial M}\mathrm{d}\Sigma _{\rho}(2\nabla _{\mu}P^{\mu \nu \rho \sigma}\delta g_{\nu \sigma}+2P_{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{~\nu \sigma})+\int _{M}\varepsilon\left( -2\nabla _{\mu}\nabla _{\rho}P^{\mu \nu \rho \sigma}\delta g_{\nu \sigma}+\frac{1}{2}Fg^{\mu \nu}\delta g_{\mu \nu}\right) \\
  & =\int _{M}\varepsilon E^{\mu \nu}\delta g_{\mu \nu}+\int _{\partial M}v^{\mu}\mathrm{d}\Sigma _{\mu}
 \end{align}
 $$
@@ -36,7 +36,7 @@ $$\tag{*}
 \end{align}
 $$
 
-we define $\displaystyle{P^{\mu \nu \rho \sigma}=\frac{\delta F}{\delta R_{\mu \nu \rho \sigma}}, P^{\mu \nu}=\frac{\delta F}{\delta g_{\mu \nu}}}$, and $\displaystyle{\mathrm{d}\Sigma _{\mu}}$ is the outward-directed surface element on $\displaystyle{\partial M}$, and
+we define $\displaystyle{P^{\mu \nu \rho \sigma}=\frac{\delta F}{\delta R_{\mu \nu \rho \sigma}}}$, and $\displaystyle{\mathrm{d}\Sigma _{\mu}}$ is the outward-directed surface element on $\displaystyle{\partial M}$, and
 
 $$\tag{1.3}
 \begin{align}
@@ -66,7 +66,29 @@ the variation of the new action can be expressed as
 
 $$\tag{1.6}
 \begin{align}
-\delta S_{\text{bulk}} & =\int _{M}\varepsilon\left( \frac{\delta F}{\delta \varrho _{\mu \nu \rho \sigma}}\delta \varrho _{\mu \nu \rho \sigma}+\frac{\delta F}{\delta g_{\mu \nu}}\delta g_{\mu \nu}-\delta \psi ^{\mu \nu \rho \sigma}(\varrho _{\mu \nu \rho \sigma}-R_{\mu \nu \rho \sigma})-\psi ^{\mu \nu \rho \sigma}(\delta \varrho _{\mu \nu \rho \sigma}-\delta R_{\mu \nu \rho \sigma}) \right) \\
- & =
+\delta S_{\text{bulk}} & =\int _{M}\varepsilon\left( \frac{\delta F}{\delta \varrho _{\mu \nu \rho \sigma}}\delta \varrho _{\mu \nu \rho \sigma}-\delta \psi ^{\mu \nu \rho \sigma}(\varrho _{\mu \nu \rho \sigma}-R_{\mu \nu \rho \sigma})-\psi ^{\mu \nu \rho \sigma}(\delta \varrho _{\mu \nu \rho \sigma}-\delta R_{\mu \nu \rho \sigma}) \right)+\frac{1}{2}g^{\mu \nu}\delta g_{\mu \nu}(F(\varrho _{\mu \nu \rho \sigma},g_{\mu \nu})-\psi ^{\mu \nu \rho \sigma}(\varrho _{\mu \nu \rho \sigma}-R_{\mu \nu \rho \sigma}))\\
+ & =\int _{M}\varepsilon\left(\frac{\delta F}{\delta \varrho _{\mu \nu \rho \sigma}}-\psi ^{\mu \nu \rho \sigma}\right)\delta \varrho _{\mu \nu \rho \sigma}+(R_{\mu \nu \rho \sigma}-\varrho _{\mu \nu \rho \sigma})\delta \psi ^{\mu \nu \rho \sigma}+\left( \nabla _{\mu}\nabla _{\rho}\psi ^{\mu \nu \rho \sigma}\delta g_{\nu \sigma}+\frac{1}{2}g^{\mu \nu}(F(\varrho _{\mu \nu \rho \sigma},g_{\mu \nu})-\psi ^{\mu \nu \rho \sigma}(\varrho _{\mu \nu \rho \sigma}-R_{\mu \nu \rho \sigma})) \delta g_{\mu \nu}\right) \\
+ & +\int _{\partial M}\delta v^{\rho}\mathrm{d}\Sigma _{\rho}
 \end{align}
 $$
+
+where
+
+$$\tag{1.7}
+\begin{align}
+\delta v^{\rho} & =2\psi _{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{~\nu \sigma}+2\delta g_{\nu \sigma}\nabla _{\mu}\psi ^{\mu \nu \rho \sigma}
+\end{align}
+$$
+
+## variation of boundary geometric quantities
+
+outward-directed normal vector $\displaystyle{n_{\mu}}$
+
+$$\tag{2.1}
+\begin{align}
+\delta n_{\mu}=\frac{\varepsilon}{2}n_{\mu}n^{\rho}n^{\sigma}\delta g_{\rho \sigma}
+\end{align}
+$$
+
+then the induced metric $\displaystyle{\gamma _{\mu \nu}=g_{\mu \nu}-\varepsilon n_{\mu}n_{\nu}}$
+
