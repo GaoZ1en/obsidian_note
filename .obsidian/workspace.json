@@ -53,7 +53,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -136,7 +137,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "07bce163c8679f84",
+  "active": "dc2a5ae4011f8b56",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/covariant phase space with boundaries.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
