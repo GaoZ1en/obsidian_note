@@ -93,18 +93,3 @@ $$
 so the calculation last week is wrong...
 
 ## free scalar
-
-$$\tag{.}
-\begin{align}
-
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-H_{\xi}|_{\Sigma _{f},\tilde{\mathcal{P}}}-H_{\xi}|_{\Sigma _{i},\tilde{\mathcal{P}}} & = \int _{\Sigma _{f}-\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}\Big|_{\tilde{\mathcal{P}}} \\
- & =-\int _{M}\varepsilon \nabla ^{\mu}(\xi ^{\nu}T_{\mu \nu})\Big|_{\tilde{\mathcal{P}}} \\
- & =-\int _{M}\varepsilon\left(\frac{1}{2}\left( \nabla ^{\mu}\xi ^{\nu}+\nabla ^{\nu}\xi ^{\mu}-\frac{2}{d}g^{\mu \nu}\nabla _{\rho}\xi ^{\rho} \right)T_{\mu \nu}+\frac{1}{d}g^{\mu \nu}T_{\mu \nu}\nabla _{\rho}\xi ^{\rho}+\xi ^{\nu}\nabla ^{\mu}T_{\mu \nu}\right) \\
- & =0
-\end{align}
-$$
