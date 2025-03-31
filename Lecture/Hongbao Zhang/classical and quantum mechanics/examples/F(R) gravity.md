@@ -90,5 +90,40 @@ $$\tag{2.1}
 \end{align}
 $$
 
+we denote $\displaystyle{\delta a=\frac{\varepsilon}{2}n^{\rho}n^{\sigma}\delta g_{\rho \sigma}}$ and
+
+$$\tag{2.2}
+\begin{align}
+\delta n^{\mu}=\delta g^{\mu \nu}
+\end{align}
+$$
+
 then the induced metric $\displaystyle{\gamma _{\mu \nu}=g_{\mu \nu}-\varepsilon n_{\mu}n_{\nu}}$
 
+$$\tag{2.2}
+\begin{align}
+\delta \gamma _{\mu \nu} & =\delta g_{\mu \nu}-\varepsilon \delta n_{\mu}n_{\nu}-\varepsilon n_{\mu}\delta n_{\nu} \\
+ & =\delta g_{\mu \nu}-\varepsilon n_{\mu}n_{\nu}n^{\rho}n^{\sigma}\delta g_{\rho \sigma}
+\end{align}
+$$
+
+and
+
+$$\tag{2.3}
+\begin{align}
+\gamma _{\mu} ^{\sigma}\gamma _{\nu} ^{\lambda}\gamma _{\rho} ^{\tau}\nabla _{\sigma}\delta g_{\lambda \tau} & =\gamma _{\mu} ^{\sigma}\gamma _{\nu} ^{\lambda}\gamma _{\rho} ^{\tau}\nabla _{\sigma}(\delta g_{\lambda \tau}-\varepsilon n_{\lambda}n_{\tau}n^{\alpha}n^{\beta}\delta g_{\alpha \beta})+\gamma _{\mu} ^{\sigma}\gamma _{\nu} ^{\lambda}\gamma _{\rho} ^{\tau}\nabla _{\sigma}(\varepsilon n_{\lambda}n_{\tau}n^{\alpha}n^{\beta}\delta g_{\alpha \beta}) \\
+ & =D_{\mu}\delta \gamma _{\nu \rho}+\varepsilon K_{\mu \nu}\gamma ^{\tau}_{\rho}n_{\tau}n^{\alpha}n^{\beta}\delta g_{\alpha \beta}+\varepsilon K_{\mu \rho}\gamma ^{\lambda}_{\nu}n_{\lambda}n^{\alpha}n^{\beta}\delta g_{\alpha \beta}
+\end{align}
+$$
+
+and finally the extrinsic curvature $\displaystyle{K_{\alpha \beta}=\gamma _{\alpha}^{\mu}\gamma ^{\nu}_{\beta}\nabla _{\mu}n_{\nu}}$
+
+$$\tag{2.4}
+\begin{align}
+\delta K_{\alpha \beta} & =\delta(\gamma ^{\mu}_{\alpha}\gamma ^{\nu}_{\beta}\nabla _{\mu}n_{\nu}) \\
+ & =\delta \gamma ^{\mu}_{\alpha}\gamma ^{\nu}_{\beta}\nabla _{\mu}n_{\nu}+\gamma ^{\mu}_{\alpha}\delta \gamma ^{\nu}_{\beta}\nabla _{\mu}n_{\nu}+\gamma ^{\mu}_{\alpha}\gamma ^{\nu}_{\beta}\delta \nabla _{\mu}n_{\nu}+\gamma ^{\mu}_{\alpha}\gamma ^{\nu}_{\beta}\nabla _{\mu}\delta n_{\nu} \\
+ & =
+\end{align}
+$$
+
+we start from 
