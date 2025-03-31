@@ -44,8 +44,8 @@ $$\tag{1.6}
 X_{\xi}\cdot \delta S & = \int _{M}X_{\xi}\cdot \delta \mathbf{L}+\int _{\Gamma}X_{\xi}\cdot \delta \ell \\
  & =\int _{M}\mathrm{d}\mu _{\xi}+\int _{\Gamma}X_{\xi}\cdot \delta \ell \\
  & =\int _{\Sigma _{f}-\Sigma _{i}}\mu _{\xi}+\int _{\Gamma}(\mu _{\xi}+X_{\xi}\cdot \delta \ell) \\
- & =\int _{\Sigma _{f}-\Sigma _{i}}\mu _{\xi}+\int _{\Gamma}(\mathrm{d}\nu _{\xi}+\beta _{\xi}) \\
- & =\int _{\Sigma _{f}-\Sigma _{i}}\mu _{\xi}-\int _{\partial\Sigma _{f}-\partial\Sigma _{i}}\nu _{\xi}+\int _{\Gamma}\beta _{\xi}
+ & =\int _{\Sigma _{f}-\Sigma _{i}}\mu _{\xi}+\int _{\Gamma}\mathrm{d}\nu _{\xi} \\
+ & =\int _{\Sigma _{f}-\Sigma _{i}}\mu _{\xi}-\int _{\partial\Sigma _{f}-\partial\Sigma _{i}}\nu _{\xi}
 \end{align}
 $$
 
@@ -85,4 +85,33 @@ here we use the following lemma
 \end{align}
 $$
 
-here we assume that $\displaystyle{\delta \xi=0}$ so we have $\displaystyle{\Theta}$ and $\displaystyle{C}$ are covariant 
+here we assume that $\displaystyle{\delta \xi=0}$, so $\displaystyle{\Theta}$ and $\displaystyle{C}$ are covariant. then we have
+
+$$\tag{1.11}
+\begin{align}
+\mathcal{L}_{X_{\xi}}\Theta & =\mathcal{L}_{\xi}\Theta \\
+ & =\xi \cdot \mathrm{d}\Theta+\mathrm{d}(\xi \cdot \Theta) \\
+ & =\xi \cdot(\delta\mathbf{L}-\mathbf{E}_{\psi}\delta \psi)+\mathrm{d}(\xi \cdot \Theta) \\
+ & =\delta(\xi \cdot \mathbf{L})-\xi \cdot \mathbf{E}_{\psi}\delta \psi+\mathrm{d}(\xi \cdot \Theta)
+\end{align}
+$$
+
+$$\tag{1.12}
+\begin{align}
+\mathcal{L}_{X_{\xi}}C & =\mathcal{L}_{\xi}C \\
+ & =\xi \cdot \mathrm{d}C+\mathrm{d}(\xi \cdot C) \\
+ & =\xi \cdot(\Theta+\delta \ell-\mathbf{F}^{\mu \nu}\delta \gamma _{\mu \nu})+\mathrm{d}(\xi \cdot C) \\
+ & =\xi \cdot \Theta+\xi \cdot \delta \ell-\xi \cdot \mathbf{F}^{\mu \nu}\delta \gamma _{\mu \nu}+\mathrm{d}(\xi \cdot C)
+\end{align}
+$$
+
+then we have
+
+$$\tag{1.11}
+\begin{align}
+\delta H_{\xi} & =\int _{\Sigma}(\delta(\xi \cdot \mathbf{L}-\mu _{\xi})-\xi \cdot \mathbf{E}_{\psi}\delta \psi+\mathrm{d}(\xi \cdot \Theta)) \\
+ & -\int _{\partial \Sigma}(\xi \cdot \delta \ell-\delta \nu _{\xi}+\xi \cdot \Theta-\xi \cdot \mathbf{F}^{\mu \nu}\delta \gamma _{\mu \nu})-X_{\xi}\cdot \omega \\
+ & \approx -X_{\xi}\cdot \omega
+\end{align}
+$$
+
