@@ -1,5 +1,6 @@
 ### reference
 
+```bibtex
 @article{jiangSurfaceTermCorner2019,
   title = {Surface Term, Corner Term, and Action Growth in {{F}}({{Riemann}}) Gravity Theory},
   author = {Jiang, Jie and Zhang, Hongbao},
@@ -15,8 +16,7 @@
   doi = {10.1103/PhysRevD.99.086005},
   urldate = {2025-03-31},
   abstract = {After reformulating \$F(\$Riemann\$)\$ gravity theory as a second derivative theory by introducing two auxiliary fields to the bulk action, we derive the surface term as well as the corner term supplemented to the bulk action for a generic non-smooth boundary such that the variational principle is well posed. We also introduce the counter term to make the boundary term invariant under the reparametrization for the null segment. Then as a demonstration of the power of our formalism, not only do we apply our expression for the full action to evaluate the corresponding action growth rate of the Wheeler-DeWitt patch in the Schwarzchild anti-de Sitter black hole for the \$F(R)\$ gravity and critical gravity, where the corresponding late time behavior recovers the previous one derived by other approaches, but also in the asymptotically Anti-de Sitter black hole for the critical Einsteinian cubic gravity, where the late time growth rate vanishes but still saturates the Lloyd bound.},
-  archiveprefix = {arXiv},
-  file = {/home/koishi/Zotero/storage/Y4FJFX48/Jiang和Zhang - 2019 - Surface term, corner term, and action growth in F(Riemann) gravity theory.pdf;/home/koishi/Zotero/storage/3FAS9AZ5/1806.html}
+  archiveprefix = {arXiv}
 }
 
 @article{guoEquivalenceNoetherCharge2024,
@@ -34,10 +34,9 @@
   doi = {10.1103/PhysRevD.110.064071},
   urldate = {2025-03-31},
   abstract = {By working with the covariant phase space formalism, we have shown that not only can the Hamiltonian conjugate to a Killing vector field \${\textbackslash}xi\$ be expressed as the sum of the associated Noether charge and \${\textbackslash}xi\$ contracted with the Hilbert action boundary term for \$F(R\_\{abcd\})\$ gravity, but also be written as its contraction with another \${\textbackslash}xi\$ independent tensor field. With this, we have proven the equivalence of Noether charge and Hilbert action boundary term formulae for the stationary black hole entropy in \$F(R\_\{abcd\})\$ gravity, which is further substantiated by our explicit computation using both formulae.},
-  archiveprefix = {arXiv},
-  file = {/home/koishi/Zotero/storage/YW3PF682/Guo 等 - 2024 - Equivalence of Noether charge and Hilbert action boundary term formulas for the black hole entropy i.pdf;/home/koishi/Zotero/storage/WQQKQCTV/2406.html}
+  archiveprefix = {arXiv}
 }
-
+```
 
 ## general comment for variational principle of gravitational theory.
 
@@ -338,6 +337,25 @@ here we only consider that the spacetime region $\displaystyle{M}$ is bounded by
 
 $$\tag{4.1}
 \begin{align}
+S & =\int _{M}\varepsilon(F(\varrho _{\mu \nu \rho \sigma},g_{\mu \nu})+\psi ^{\mu \nu \rho \sigma}(R_{\mu \nu \rho \sigma}-\varrho _{\mu \nu \rho \sigma}))+\int _{\Gamma}4\Psi_{\alpha \beta}K^{\alpha \beta}\varepsilon _{\Gamma}
+\end{align}
+$$
 
+where $\displaystyle{\Psi_{\alpha \beta}=\psi _{\alpha \mu \beta \nu}n^{\mu}n^{\nu}}$, and $\displaystyle{n^{\mu}}$ is the outward-directed unit norm vector of space boundary $\displaystyle{\Gamma}$.
+
+consider the variation of the action
+
+$$\tag{4.2}
+\begin{align}
+\delta \mathbf{L} & =\mathbf{E}_{\phi}\delta \phi+\mathrm{d}\Theta \\
+(\delta \Theta+\delta \ell)|_{\Gamma} & =\mathbf{F}_{\phi}\delta \phi+\mathrm{d}\mathbf{C}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\delta \mathbf{L} & =\varepsilon\left( P^{\mu \nu \rho \sigma}-\psi ^{\mu \nu \rho \sigma} \right)\delta \varrho _{\mu \nu \rho \sigma}+\varepsilon(R_{\mu \nu \rho \sigma}-\varrho _{\mu \nu \rho \sigma})\delta \psi ^{\mu \nu \rho \sigma} \\
+ & +\left(\frac{1}{2}g^{\mu \nu}F+\frac{1}{2}g^{\mu \nu}\psi ^{\rho \sigma \lambda \tau}(R_{\rho \sigma \lambda \tau}-\varrho _{\rho \sigma \lambda \tau})+\frac{\delta F}{\delta g_{\mu \nu}}+2\nabla _{\rho}\nabla _{\sigma}\psi ^{\rho(\mu \nu)\sigma}+\psi ^{\rho \sigma \lambda(\mu}R_{\rho \sigma \lambda}^{~~~~~~\nu)}\right)\delta g_{\mu \nu} \\
+ & +\mathrm{d}(2\tau _{\rho}(\nabla _{\mu}\psi ^{\mu \nu \rho \sigma}\delta g_{\nu \sigma}-\psi ^{\mu \nu \rho \sigma}\nabla _{\mu}\delta g_{\nu \sigma}))
 \end{align}
 $$
