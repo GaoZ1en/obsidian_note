@@ -442,4 +442,3 @@ X_{\xi}\cdot \mathbf{L} & =\mathrm{d}(\xi \cdot \mathbf{L}) \\
 \end{align}
 $$
 
-8x4/2=16
