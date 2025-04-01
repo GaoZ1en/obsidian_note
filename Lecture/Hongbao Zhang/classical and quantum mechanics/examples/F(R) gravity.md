@@ -80,7 +80,8 @@ $$\tag{1.7}
 \end{align}
 $$
 
-## variation of boundary geometric quantities
+## timelike/spacelike boundary
+### variation of boundary geometric quantities
 
 outward-directed normal vector $\displaystyle{n_{\mu}}$
 
@@ -147,7 +148,7 @@ $$\tag{2.7}
 \end{align}
 $$
 
-## boundary term
+### boundary term
 
 we start from (1.7)
 
@@ -229,10 +230,57 @@ add (3.6) and (3.7) together, we have
 
 $$\tag{3.8}
 \begin{align}
-n_{\mu}\delta v^{\mu} & =2\varepsilon \Psi_{\mu \nu}(-2\delta K^{\mu \nu}+2K^{\mu}_{\rho}\delta \gamma ^{\rho \nu}-\varepsilon D^{\mu}\delta A^{\nu})+2n^{\rho}\psi _{\mu \nu \rho \sigma}(K^{\nu \rho}\delta A^{\mu}-D^{\nu}\delta \gamma ^{\mu \sigma}) \\
+n_{\mu}\delta v^{\mu} & =2\varepsilon \Psi_{\mu \nu}(-2\delta K^{\mu \nu}+3K^{\mu}_{\rho}\delta \gamma ^{\rho \nu}-\varepsilon D^{\mu}\delta A^{\nu})+2n^{\rho}\psi _{\mu \nu \rho \sigma}(K^{\nu \rho}\delta A^{\mu}-D^{\nu}\delta \gamma ^{\mu \sigma}) \\
  & -2n^{\rho}\delta \gamma ^{\nu \sigma}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}-2\delta A^{\mu}D^{\nu}\Psi_{\mu \nu}+2\delta A^{\mu}\psi _{\mu \rho \nu \sigma}K^{\nu \rho}n^{\sigma} \\
- & =+4\varepsilon \Psi_{\mu \nu}K^{\mu}_{\rho}\delta \gamma ^{\rho \nu}+2n^{\rho}\psi _{\mu \nu \rho \sigma}K^{\nu \rho}\delta A^{\mu}-2n^{\rho}\psi _{\mu \nu \rho \sigma}D^{\nu}\delta \gamma ^{\mu \sigma} \\
- & -2n^{\rho}\delta \gamma ^{\nu \sigma}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}-2\delta A^{\mu}D^{\nu}\Psi_{\mu \nu}+2\delta A^{\mu}\psi _{\mu \rho \nu \sigma}K^{\nu \rho}n^{\sigma} \\
- & -4\varepsilon \Psi_{\mu \nu}\delta K^{\mu \nu}-2D^{\mu}(\Psi_{\mu \nu}\delta A^{\nu})
+ & =+6\varepsilon \Psi_{\mu \nu}K^{\mu}_{\rho}\delta \gamma ^{\rho \nu}-2n^{\rho}\psi _{\mu \nu \rho \sigma}D^{\nu}\delta \gamma ^{\mu \sigma} \\
+ & -2n^{\rho}\delta \gamma ^{\nu \sigma}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma} \\
+ & -4\varepsilon \Psi_{\mu \nu}\delta K^{\mu \nu}-2D^{\mu}(\Psi_{\mu \nu}\delta A^{\nu})+(2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}+6\varepsilon \Psi_{\mu \nu}K^{\mu}_{\rho})\delta \gamma ^{\nu \rho}-2n^{\sigma}\psi _{\mu \nu \rho \sigma}D^{\mu}\delta \gamma ^{\nu \rho}
 \end{align}
 $$
+
+requiring both $\displaystyle{\delta \gamma ^{\nu \rho}}$ and $\displaystyle{\delta \Psi_{\mu \nu}}$ vanish on the boundary, then we have
+
+$$\tag{3.9}
+\begin{align}
+\int _{\Sigma}\delta v^{\rho}\mathrm{d}\Sigma _{\rho} & =-4\delta \int _{\Sigma}\Psi_{\mu \nu}K^{\mu \nu}\delta \Sigma-2\varepsilon \int _{\partial \Sigma}\delta A^{\nu}\Psi_{\mu \nu}\mathrm{d}S^{\mu}
+\end{align}
+$$
+
+where we have the proper surface term
+
+$$\tag{3.10}
+\begin{align}
+S_{\text{surf}} & =4\int _{\partial M}\Psi_{\mu \nu}K^{\mu \nu}\mathrm{d}\Sigma
+\end{align}
+$$
+
+### corner term
+
+we just present the result here
+
+#### timelike joints
+
+$$\tag{3.1.1}
+\begin{align}
+S_{\text{corner}} & =\int _{\mathcal{C}}\hat{\Psi}\theta \mathrm{d}S
+\end{align}
+$$
+
+where $\displaystyle{\hat{\Psi}=\psi ^{\mu \nu \rho \sigma}\varepsilon _{\mu \nu}\varepsilon _{\rho \sigma}}$, and $\displaystyle{\varepsilon _{\mu \nu}=n_{s\mu}\wedge r_{s\nu}}$, where $\displaystyle{n_{s\mu}}$ is the outward-directed normal vector of the timelike boundary $\displaystyle{B_{s}}$ and $\displaystyle{r_{s\mu}}$ is the unit tangent vector which points outwards from $\displaystyle{B_{s}}$ and satisfies $\displaystyle{n_{s\mu}r_{s}^{\mu}=0}$, and $\displaystyle{\theta}$ is the angle between the two normal vectors $\displaystyle{n_{s\mu}}$.
+
+#### spacelike joints
+
+$$\tag{3.1.2}
+\begin{align}
+S_{\text{corner}} & =-\int _{\mathcal{C}}\hat{\Psi}\eta \mathrm{d}S
+\end{align}
+$$
+
+definitions are basically not changed, while $\displaystyle{\eta=n_{1\mu}n^{\mu}_{2}}$.
+
+#### other joints
+
+we only need to add all the corner terms together
+
+## null boundary
+
