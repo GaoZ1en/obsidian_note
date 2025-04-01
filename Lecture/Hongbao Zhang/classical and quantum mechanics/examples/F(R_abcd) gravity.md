@@ -442,3 +442,6 @@ X_{\xi}\cdot \mathbf{L} & =\mathrm{d}(\xi \cdot \mathbf{L}) \\
 \end{align}
 $$
 
+...
+
+I think I can use this method in the research of tmg...
