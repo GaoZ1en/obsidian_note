@@ -401,7 +401,7 @@ plug it into $\displaystyle{\Theta|_{\Gamma}}$, we have
 
 $$\tag{4.3}
 \begin{align}
-\Theta|_{\Gamma} & =(-4 \Psi_{\mu \nu}\delta K^{\mu \nu}-2D^{\mu}(\Psi_{\mu \nu}\delta A^{\nu})+(2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}+6 \Psi_{\mu \nu}K^{\mu}_{\rho})\delta \gamma ^{\nu \rho}-2n^{\sigma}\psi _{\mu \nu \rho \sigma}D^{\mu}\delta \gamma ^{\nu \rho})\varepsilon _{\Gamma}
+\Theta|_{\Gamma} & =(-4 \Psi_{\mu \nu}\delta K^{\mu \nu}-2D^{\mu}(\Psi_{\mu \nu}\delta A^{\nu})+(2n^{\sigma}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}+6 \Psi_{\mu \nu}K^{\mu}_{\rho})\delta \gamma ^{\nu \rho}-2n^{\sigma}\psi _{\mu \nu \rho \sigma}D^{\mu}\delta \gamma ^{\nu \rho})\varepsilon _{\Gamma}
 \end{align}
 $$
 
@@ -410,7 +410,7 @@ then we have
 $$\tag{4.4}
 \begin{align}
 (\Theta+\delta \ell)|_{\Gamma} & =(4K^{\mu \nu}\delta \Psi_{\mu \nu}-2D^{\mu}(\Psi_{\mu \nu}\delta A^{\nu})-2D^{\mu}(n^{\sigma}\psi _{\mu \nu \rho \sigma}\delta \gamma ^{\nu \rho})+2D^{\mu}(n^{\sigma}\psi _{\mu \nu \rho \sigma})\delta \gamma ^{\nu \rho} \\
- & +2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}\delta \gamma ^{\nu \rho}+6\Psi_{\mu \nu}K^{\mu}_{\rho}\delta \gamma ^{\nu \rho}-2\Psi_{\rho \sigma}K^{\rho \sigma} \gamma _{\mu \nu}\delta \gamma ^{\mu \nu})\varepsilon _{\Gamma} \\
+ & +2n^{\sigma}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}\delta \gamma ^{\nu \rho}-2\Psi_{\mu \nu}K^{\mu}_{\rho}\delta \gamma ^{\nu \rho}-2\Psi_{\rho \sigma}K^{\rho \sigma} \gamma _{\mu \nu}\delta \gamma ^{\mu \nu})\varepsilon _{\Gamma} \\
  & =\mathrm{d}\mathbf{C}+\mathbf{F}_{\phi}d\phi
 \end{align}
 $$
@@ -419,6 +419,18 @@ where
 
 $$\tag{4.5}
 \begin{align}
-\mathbf{C} & =(-2\Psi^{\mu}_{~\nu}\delta A^{\nu}-2n^{\sigma}\gamma^{\mu \lambda}\psi _{\lambda \nu \rho \sigma}\delta \gamma ^{\nu \rho})\varepsilon _{\mu}^{}
+\mathbf{C} & =(-2\Psi^{\mu}_{~\nu}\delta A^{\nu}-2n^{\sigma}\gamma^{\mu \lambda}\psi _{\lambda \nu \rho \sigma}\delta \gamma ^{\nu \rho})\varepsilon _{\mu}^{\partial \Sigma} \\
+\mathbf{F}_{\gamma,\mu \nu} & =(-2\gamma _{\mu \nu}\Psi_{\rho \sigma}K^{\rho \sigma}-2\Psi_{\rho (\mu}K_{~\nu)}^{\rho}-2n^{\sigma}\gamma ^{\lambda}_{(\mu}\gamma ^{\tau}_{\nu)}\nabla ^{\rho}\psi _{\rho \lambda \sigma \tau}+2\gamma ^{\lambda}_{(\mu}\gamma ^{\tau}_{\nu)}D^{\rho}(n^{\sigma}\psi _{\rho \lambda \sigma \tau}))\varepsilon _{\Gamma} \\
+\mathbf{F}_{\Psi,\mu \nu} & =4K^{\mu \nu}
 \end{align}
 $$
+
+suppose this action is diffeomorphism invariant
+
+$$\tag{4.6}
+\begin{align}
+X_{\xi} & =\int _{M}\hat{\varepsilon}_{M}\mathcal{L}_{\xi}\phi  \frac{\delta}{\delta \phi}
+\end{align}
+$$
+
+where $\displaystyle{\hat{\varepsilon}_{M}}$ denote the unit total antisymmetric tensor.
