@@ -348,14 +348,55 @@ consider the variation of the action
 $$\tag{4.2}
 \begin{align}
 \delta \mathbf{L} & =\mathbf{E}_{\phi}\delta \phi+\mathrm{d}\Theta \\
-(\delta \Theta+\delta \ell)|_{\Gamma} & =\mathbf{F}_{\phi}\delta \phi+\mathrm{d}\mathbf{C}
+(\Theta+\delta \ell)|_{\Gamma} & =\mathbf{F}_{\phi}\delta \phi+\mathrm{d}\mathbf{C}
+\end{align}
+$$
+
+$$
+\begin{align}
+\delta \mathbf{L} & =\varepsilon\left( P^{\mu \nu \rho \sigma}-\psi ^{\mu \nu \rho \sigma} \right)\delta \varrho _{\mu \nu \rho \sigma}+\varepsilon(R_{\mu \nu \rho \sigma}-\varrho _{\mu \nu \rho \sigma})\delta \psi ^{\mu \nu \rho \sigma} \\
+ & +\left(\frac{1}{2}g^{\mu \nu}F+\frac{1}{2}g^{\mu \nu}\psi ^{\rho \sigma \lambda \tau}(R_{\rho \sigma \lambda \tau}-\varrho _{\rho \sigma \lambda \tau})+\frac{\delta F}{\delta g_{\mu \nu}}+2\nabla _{\rho}\nabla _{\sigma}\psi ^{\rho(\mu \nu)\sigma}+\psi ^{\rho \sigma \lambda(\mu}R_{\rho \sigma \lambda}^{~~~~~~\nu)}\right)\delta g_{\mu \nu} \\
+ & +\mathrm{d}(2n _{\rho}(\nabla _{\mu}\psi ^{\mu \nu \rho \sigma}\delta g_{\nu \sigma}-\psi ^{\mu \nu \rho \sigma}\nabla _{\mu}\delta g_{\nu \sigma}))
+\end{align}
+$$
+
+$$
+\begin{align}
+\Theta|_{\Gamma} & =2n_{\rho}\nabla _{\mu}\psi ^{\mu \nu \rho \sigma}\delta g_{\nu \sigma}-2n_{\rho}\psi ^{\mu \nu \rho \sigma}\nabla _{\mu}\delta g_{\nu \sigma} \\
+ & =2n^{\rho}\psi _{\mu \nu \rho \sigma}\nabla ^{\mu}\delta g^{\nu \sigma}-2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}\delta g^{\nu \sigma} \\
+ & =
+\end{align}
+$$
+
+notice that
+
+$$\tag{.}
+\begin{align}
+\gamma _{\mu \nu} & =g_{\mu \nu}-n_{\mu}n_{\nu}
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-\delta \mathbf{L} & =\varepsilon\left( P^{\mu \nu \rho \sigma}-\psi ^{\mu \nu \rho \sigma} \right)\delta \varrho _{\mu \nu \rho \sigma}+\varepsilon(R_{\mu \nu \rho \sigma}-\varrho _{\mu \nu \rho \sigma})\delta \psi ^{\mu \nu \rho \sigma} \\
- & +\left(\frac{1}{2}g^{\mu \nu}F+\frac{1}{2}g^{\mu \nu}\psi ^{\rho \sigma \lambda \tau}(R_{\rho \sigma \lambda \tau}-\varrho _{\rho \sigma \lambda \tau})+\frac{\delta F}{\delta g_{\mu \nu}}+2\nabla _{\rho}\nabla _{\sigma}\psi ^{\rho(\mu \nu)\sigma}+\psi ^{\rho \sigma \lambda(\mu}R_{\rho \sigma \lambda}^{~~~~~~\nu)}\right)\delta g_{\mu \nu} \\
- & +\mathrm{d}(2\tau _{\rho}(\nabla _{\mu}\psi ^{\mu \nu \rho \sigma}\delta g_{\nu \sigma}-\psi ^{\mu \nu \rho \sigma}\nabla _{\mu}\delta g_{\nu \sigma}))
+\delta n_{\mu} & =\frac{1}{2}n_{\mu}n^{\rho}n^{\sigma}\delta g_{\rho \sigma}=-\frac{1}{2}n_{\mu}n_{\rho}n_{\sigma}\delta g^{\rho \sigma}=n_{\mu}\delta a \\
+\delta a & =-\frac{1}{2}n_{\rho}n_{\sigma}\delta g^{\rho \sigma}
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+\delta n^{\mu} & =\delta g^{\mu \nu}n_{\nu}+g^{\mu \nu}\delta n_{\nu} \\
+ & =(\gamma ^{\mu}_{\nu}+n^{\mu}n_{\nu})\delta g^{\nu \rho}n_{\rho}+g^{\mu \nu}n_{\nu}\delta a \\
+ & =\gamma ^{\mu}_{\nu}\delta g^{\nu \rho}n_{\rho}-n^{\mu}\delta a \\
+ & =-\delta A^{\mu}-n^{\mu}\delta a \\
+\delta A^{\mu} & =-\gamma ^{\mu}_{\nu}\delta g^{\nu \rho}n_{\rho}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\delta g^{\mu \nu} & =\delta(\gamma ^{\mu \nu}+n^{\mu}n^{\nu})=\delta \gamma ^{\mu \nu}-2n^{\mu}n^{\mu}\delta a-n^{\mu}\delta A^{\nu}+\delta A^{\mu}n^{\nu}
+\end{align}
+$$
+
+plug it into $\displaystyle{\Theta|_{\Gamma}}$, we have
