@@ -441,3 +441,5 @@ X_{\xi}\cdot \mathbf{L} & =\mathrm{d}(\xi \cdot \mathbf{L}) \\
 (\xi \cdot \mathbf{L}+X_{\xi}\cdot \delta \ell)|_{\Gamma} & =\mathrm{d}\mu _{\xi}
 \end{align}
 $$
+
+8x4/2=16
