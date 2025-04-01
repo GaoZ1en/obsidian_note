@@ -364,7 +364,7 @@ $$
 \begin{align}
 \Theta|_{\Gamma} & =2n_{\rho}\nabla _{\mu}\psi ^{\mu \nu \rho \sigma}\delta g_{\nu \sigma}-2n_{\rho}\psi ^{\mu \nu \rho \sigma}\nabla _{\mu}\delta g_{\nu \sigma} \\
  & =2n^{\rho}\psi _{\mu \nu \rho \sigma}\nabla ^{\mu}\delta g^{\nu \sigma}-2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}\delta g^{\nu \sigma} \\
- & =
+ 
 \end{align}
 $$
 
@@ -395,8 +395,17 @@ $$
 
 $$\tag{.}
 \begin{align}
-\delta g^{\mu \nu} & =\delta(\gamma ^{\mu \nu}+n^{\mu}n^{\nu})=\delta \gamma ^{\mu \nu}-2n^{\mu}n^{\mu}\delta a-n^{\mu}\delta A^{\nu}+\delta A^{\mu}n^{\nu}
+\delta g^{\mu \nu} & =\delta(\gamma ^{\mu \nu}+n^{\mu}n^{\nu})=\delta \gamma ^{\mu \nu}-2n^{\mu}n^{\mu}\delta a-n^{\mu}\delta A^{\nu}-\delta A^{\mu}n^{\nu}
 \end{align}
 $$
 
 plug it into $\displaystyle{\Theta|_{\Gamma}}$, we have
+
+$$
+\begin{align}
+\Theta|_{\Gamma} & =2n^{\rho}\psi _{\mu \nu \rho \sigma}\nabla ^{\mu}\delta g^{\nu \sigma}-2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}\delta g^{\nu \sigma} \\
+ & =2n^{\rho}\psi _{\mu \nu \rho \sigma}\nabla ^{\mu}(\delta \gamma ^{\nu \sigma}-2n^{\nu}n^{\sigma}\delta a-n^{\nu}\delta A^{\sigma}-\delta A^{\nu}n^{\sigma}) \\
+ & -2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}(\delta \gamma ^{\nu \sigma}-n^{\nu}\delta A^{\sigma}) \\
+ & =
+\end{align}
+$$
