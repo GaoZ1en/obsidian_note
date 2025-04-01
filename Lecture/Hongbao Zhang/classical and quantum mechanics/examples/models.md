@@ -120,6 +120,8 @@ H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
 \end{align}
 $$
 
+at least on-shell...
+
 ### 2-dimensional free scalar
 
 for 2-dimensional free scalar, the action allows a conformal transformation
