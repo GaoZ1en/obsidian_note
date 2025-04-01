@@ -272,9 +272,7 @@ $$\tag{3.8}
 \begin{align}
 n_{\mu}\delta v^{\mu} & =2\varepsilon \Psi_{\mu \nu}(-2\delta K^{\mu \nu}+3K^{\mu}_{\rho}\delta \gamma ^{\rho \nu}-\varepsilon D^{\mu}\delta A^{\nu})+2n^{\rho}\psi _{\mu \nu \rho \sigma}(K^{\nu \rho}\delta A^{\mu}-D^{\nu}\delta \gamma ^{\mu \sigma}) \\
  & -2n^{\rho}\delta \gamma ^{\nu \sigma}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}-2\delta A^{\mu}D^{\nu}\Psi_{\mu \nu}+2\delta A^{\mu}\psi _{\mu \rho \nu \sigma}K^{\nu \rho}n^{\sigma} \\
- & =+6\varepsilon \Psi_{\mu \nu}K^{\mu}_{\rho}\delta \gamma ^{\rho \nu}-2n^{\rho}\psi _{\mu \nu \rho \sigma}D^{\nu}\delta \gamma ^{\mu \sigma} \\
- & -2n^{\rho}\delta \gamma ^{\nu \sigma}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma} \\
- & -4\varepsilon \Psi_{\mu \nu}\delta K^{\mu \nu}-2D^{\mu}(\Psi_{\mu \nu}\delta A^{\nu})+(2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}+6\varepsilon \Psi_{\mu \nu}K^{\mu}_{\rho})\delta \gamma ^{\nu \rho}-2n^{\sigma}\psi _{\mu \nu \rho \sigma}D^{\mu}\delta \gamma ^{\nu \rho}
+ & =-4\varepsilon \Psi_{\mu \nu}\delta K^{\mu \nu}-2D^{\mu}(\Psi_{\mu \nu}\delta A^{\nu})+(2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}+6\varepsilon \Psi_{\mu \nu}K^{\mu}_{\rho})\delta \gamma ^{\nu \rho}-2n^{\sigma}\psi _{\mu \nu \rho \sigma}D^{\mu}\delta \gamma ^{\nu \rho}
 \end{align}
 $$
 
@@ -370,20 +368,20 @@ $$
 
 notice that
 
-$$\tag{.}
+$$
 \begin{align}
 \gamma _{\mu \nu} & =g_{\mu \nu}-n_{\mu}n_{\nu}
 \end{align}
 $$
 
-$$\tag{.}
+$$
 \begin{align}
 \delta n_{\mu} & =\frac{1}{2}n_{\mu}n^{\rho}n^{\sigma}\delta g_{\rho \sigma}=-\frac{1}{2}n_{\mu}n_{\rho}n_{\sigma}\delta g^{\rho \sigma}=n_{\mu}\delta a \\
 \delta a & =-\frac{1}{2}n_{\rho}n_{\sigma}\delta g^{\rho \sigma}
 \end{align}
 $$
 
-$$\tag{.}
+$$
 \begin{align}
 \delta n^{\mu} & =\delta g^{\mu \nu}n_{\nu}+g^{\mu \nu}\delta n_{\nu} \\
  & =(\gamma ^{\mu}_{\nu}+n^{\mu}n_{\nu})\delta g^{\nu \rho}n_{\rho}+g^{\mu \nu}n_{\nu}\delta a \\
@@ -393,7 +391,7 @@ $$\tag{.}
 \end{align}
 $$
 
-$$\tag{.}
+$$
 \begin{align}
 \delta g^{\mu \nu} & =\delta(\gamma ^{\mu \nu}+n^{\mu}n^{\nu})=\delta \gamma ^{\mu \nu}-2n^{\mu}n^{\mu}\delta a-n^{\mu}\delta A^{\nu}-\delta A^{\mu}n^{\nu}
 \end{align}
@@ -401,11 +399,26 @@ $$
 
 plug it into $\displaystyle{\Theta|_{\Gamma}}$, we have
 
-$$
+$$\tag{4.3}
 \begin{align}
-\Theta|_{\Gamma} & =2n^{\rho}\psi _{\mu \nu \rho \sigma}\nabla ^{\mu}\delta g^{\nu \sigma}-2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}\delta g^{\nu \sigma} \\
- & =2n^{\rho}\psi _{\mu \nu \rho \sigma}\nabla ^{\mu}(\delta \gamma ^{\nu \sigma}-2n^{\nu}n^{\sigma}\delta a-n^{\nu}\delta A^{\sigma}-\delta A^{\nu}n^{\sigma}) \\
- & -2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}(\delta \gamma ^{\nu \sigma}-n^{\nu}\delta A^{\sigma}) \\
- & =
+\Theta|_{\Gamma} & =(-4 \Psi_{\mu \nu}\delta K^{\mu \nu}-2D^{\mu}(\Psi_{\mu \nu}\delta A^{\nu})+(2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}+6 \Psi_{\mu \nu}K^{\mu}_{\rho})\delta \gamma ^{\nu \rho}-2n^{\sigma}\psi _{\mu \nu \rho \sigma}D^{\mu}\delta \gamma ^{\nu \rho})\varepsilon _{\Gamma}
+\end{align}
+$$
+
+then we have
+
+$$\tag{4.4}
+\begin{align}
+(\Theta+\delta \ell)|_{\Gamma} & =(4K^{\mu \nu}\delta \Psi_{\mu \nu}-2D^{\mu}(\Psi_{\mu \nu}\delta A^{\nu})-2D^{\mu}(n^{\sigma}\psi _{\mu \nu \rho \sigma}\delta \gamma ^{\nu \rho})+2D^{\mu}(n^{\sigma}\psi _{\mu \nu \rho \sigma})\delta \gamma ^{\nu \rho} \\
+ & +2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}\delta \gamma ^{\nu \rho}+6\Psi_{\mu \nu}K^{\mu}_{\rho}\delta \gamma ^{\nu \rho}-2\Psi_{\rho \sigma}K^{\rho \sigma} \gamma _{\mu \nu}\delta \gamma ^{\mu \nu})\varepsilon _{\Gamma} \\
+ & =\mathrm{d}\mathbf{C}+\mathbf{F}_{\phi}d\phi
+\end{align}
+$$
+
+where
+
+$$\tag{4.5}
+\begin{align}
+\mathbf{C} & =(-2\Psi^{\mu}_{~\nu}\delta A^{\nu}-2n^{\sigma}\gamma^{\mu \lambda}\psi _{\lambda \nu \rho \sigma}\delta \gamma ^{\nu \rho})\varepsilon _{\mu}^{}
 \end{align}
 $$
