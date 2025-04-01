@@ -3,5 +3,6 @@
   "periodic-notes",
   "obsidian-tikzjax",
   "typewriter-mode",
-  "convert-katex-to-mathjax"
+  "convert-katex-to-mathjax",
+  "github-copilot"
 ]
