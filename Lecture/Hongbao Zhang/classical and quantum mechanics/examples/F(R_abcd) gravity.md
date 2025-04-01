@@ -1,3 +1,44 @@
+### reference
+
+@article{jiangSurfaceTermCorner2019,
+  title = {Surface Term, Corner Term, and Action Growth in {{F}}({{Riemann}}) Gravity Theory},
+  author = {Jiang, Jie and Zhang, Hongbao},
+  year = {2019},
+  month = apr,
+  journal = {Physical Review D},
+  volume = {99},
+  number = {8},
+  eprint = {1806.10312},
+  primaryclass = {hep-th},
+  pages = {086005},
+  issn = {2470-0010, 2470-0029},
+  doi = {10.1103/PhysRevD.99.086005},
+  urldate = {2025-03-31},
+  abstract = {After reformulating \$F(\$Riemann\$)\$ gravity theory as a second derivative theory by introducing two auxiliary fields to the bulk action, we derive the surface term as well as the corner term supplemented to the bulk action for a generic non-smooth boundary such that the variational principle is well posed. We also introduce the counter term to make the boundary term invariant under the reparametrization for the null segment. Then as a demonstration of the power of our formalism, not only do we apply our expression for the full action to evaluate the corresponding action growth rate of the Wheeler-DeWitt patch in the Schwarzchild anti-de Sitter black hole for the \$F(R)\$ gravity and critical gravity, where the corresponding late time behavior recovers the previous one derived by other approaches, but also in the asymptotically Anti-de Sitter black hole for the critical Einsteinian cubic gravity, where the late time growth rate vanishes but still saturates the Lloyd bound.},
+  archiveprefix = {arXiv},
+  file = {/home/koishi/Zotero/storage/Y4FJFX48/Jiang和Zhang - 2019 - Surface term, corner term, and action growth in F(Riemann) gravity theory.pdf;/home/koishi/Zotero/storage/3FAS9AZ5/1806.html}
+}
+
+@article{guoEquivalenceNoetherCharge2024,
+  title = {Equivalence of {{Noether}} Charge and {{Hilbert}} Action Boundary Term Formulas for the Black Hole Entropy in \${{F}}({{R}}\_\{abcd\})\$ Gravity Theory},
+  author = {Guo, Wei and Guo, Xiyao and Li, Mingfeng and Mou, Zili and Zhang, Hongbao},
+  year = {2024},
+  month = sep,
+  journal = {Physical Review D},
+  volume = {110},
+  number = {6},
+  eprint = {2406.15138},
+  primaryclass = {hep-th},
+  pages = {064071},
+  issn = {2470-0010, 2470-0029},
+  doi = {10.1103/PhysRevD.110.064071},
+  urldate = {2025-03-31},
+  abstract = {By working with the covariant phase space formalism, we have shown that not only can the Hamiltonian conjugate to a Killing vector field \${\textbackslash}xi\$ be expressed as the sum of the associated Noether charge and \${\textbackslash}xi\$ contracted with the Hilbert action boundary term for \$F(R\_\{abcd\})\$ gravity, but also be written as its contraction with another \${\textbackslash}xi\$ independent tensor field. With this, we have proven the equivalence of Noether charge and Hilbert action boundary term formulae for the stationary black hole entropy in \$F(R\_\{abcd\})\$ gravity, which is further substantiated by our explicit computation using both formulae.},
+  archiveprefix = {arXiv},
+  file = {/home/koishi/Zotero/storage/YW3PF682/Guo 等 - 2024 - Equivalence of Noether charge and Hilbert action boundary term formulas for the black hole entropy i.pdf;/home/koishi/Zotero/storage/WQQKQCTV/2406.html}
+}
+
+
 ## general comment for variational principle of gravitational theory.
 
 consider a bulk action (take $\displaystyle{F(R)}$ gravity as example)
@@ -280,7 +321,23 @@ definitions are basically not changed, while $\displaystyle{\eta=n_{1\mu}n^{\mu}
 
 #### other joints
 
-we only need to add all the corner terms together
+we need to introduce a auxiliary boundary and then add the two corner term relevant to the auxiliary boundary.
 
 ## null boundary
 
+we will consider it in the future... when i have to consider null boundaries...
+
+## some important examples of $\displaystyle{F(R_{\mu \nu \rho \sigma})}$ gravity
+
+1. $\displaystyle{F(R)}$ gravity
+2. critical gravity
+
+## covariant phase space formalism
+
+here we only consider that the spacetime region $\displaystyle{M}$ is bounded by a timelike surface $\displaystyle{\Gamma}$ and sandwiched by two spacelike surfaces $\displaystyle{\Sigma _{f,i}}$ with another spacelike surface $\displaystyle{\Sigma}$ in between. we can write down the 
+
+$$\tag{4.1}
+\begin{align}
+
+\end{align}
+$$
