@@ -357,7 +357,32 @@ $$\tag{4.4}
 \end{align}
 $$
 
-which give ris
+which give rise to
+
+$$\tag{4.5}
+\begin{align}
+\delta \Gamma ^{\rho}_{~\mu \nu}l^{\mu}k^{\nu}k _{\rho}-\delta \Gamma ^{\mu}_{\nu \rho}l_{\mu}k^{\nu}k^{\rho} & =2\delta \kappa-k^{\mu}\nabla _{\mu}\delta \alpha
+\end{align}
+$$
+
+### surface term
+
+$$\tag{4.6}
+\begin{align}
+\int _{\mathcal{N}}\delta v^{\mu}\mathrm{d}\Sigma _{\mu} & =\int _{\mathcal{N}}k _{\mu}\delta v^{\mu}\mathrm{d}\lambda \mathrm{d}S \\
+ & =\int _{\mathcal{N}}(2k _{\rho}\psi _{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{~\nu \sigma}+2k _{\rho}\delta g_{\nu \sigma}\nabla _{\mu}\psi ^{\mu \nu \rho \sigma})\mathrm{d}\lambda \mathrm{d}S
+\end{align}
+$$
+
+then the first term
+
+$$\tag{4.7}
+\begin{align}
+k _{\rho}\psi _{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{~\nu \sigma} & =k _{\rho}g^{\nu \alpha}g^{\rho \beta}g^{\sigma \gamma}\psi _{\mu \alpha \beta \gamma}\delta \Gamma ^{\mu}_{\nu \sigma} \\
+ & =(\sigma ^{\nu \alpha}-k^{\nu}l^{\alpha}-k^{\alpha}l^{\nu})(k _{\rho}\sigma ^{\rho \beta}+k^{\beta})(\sigma ^{\sigma \gamma}-k^{\sigma}l^{\gamma}-k^{\gamma}l^{\sigma})\psi _{\mu \alpha \beta \gamma}\delta \Gamma ^{\mu}_{\nu \sigma} \\
+  & =
+\end{align}
+$$
 
 ## some important examples of $\displaystyle{F(R_{\mu \nu \rho \sigma})}$ gravity
 
