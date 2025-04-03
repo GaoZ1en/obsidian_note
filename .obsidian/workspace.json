@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/TMG.md",
+                "file": "Lecture/2025 spring/python for general purpose/未命名.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "TMG"
+              "title": "未命名"
             }
           },
           {
@@ -67,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -137,8 +136,9 @@
   },
   "active": "894eaf13f245de01",
   "lastOpenFiles": [
-    "Articles/Topologically massive gravity/trash.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/TMG.md",
+    "Lecture/2025 spring/python for general purpose/未命名.md",
+    "Articles/Topologically massive gravity/trash.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/F(R_abcd) gravity.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/TMG.md~",
     "Lecture/2025 spring/english/week 6.md",
@@ -165,7 +165,6 @@
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/classical mechanics.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md.bak",
     "Note/Physics/Higher symmetry",
     "Note/Physics/Quantization",
