@@ -322,7 +322,42 @@ we need to introduce a auxiliary boundary and then add the two corner term relev
 
 ## null boundary
 
-we will consider it in the future... when i have to consider null boundaries...
+now consider the null boundary $\displaystyle{\mathcal{N}}$, which is foliated by an outward-directed null geodesic $\displaystyle{k^{a}=\left( \frac{\partial}{\partial \lambda} \right)^{\mu}}$ of a cross section $\displaystyle{\mathcal{S}}$. we further introduce a null vector field $\displaystyle{l_{a}}$ on $\displaystyle{\mathcal{N}}$, which is normal to $\displaystyle{S}$ and satisfies $\displaystyle{k^{a}l_{a}=-1}$. the metric can be decomposed as $\displaystyle{g^{\mu \nu}=\sigma ^{\mu \nu}-k^{\mu}l^{\nu}-k^{\nu}l^{\mu}}$, where $\displaystyle{\sigma ^{\mu \nu}}$ is tangent to $\displaystyle{\mathcal{S}}$. then we have
+
+$$\tag{4.1}
+\begin{align}
+\delta k _{\mu}=\delta \alpha k _{a}, \delta k^{a}=0, \delta l_{a}=\delta \beta k _{a} \\
+\delta a =\delta g^{\mu \nu}k _{\mu}l_{\nu}, \delta \beta=\frac{1}{2}\delta g^{\mu \nu}l_{\mu}l_{\nu} \\
+\delta l^{\mu}=-\delta \beta k^{\mu}-\delta \alpha l^{a}+\bar{\delta}l^{\mu}
+\end{align}
+$$
+
+with $\displaystyle{\bar{\delta}l^{\mu}}$ tangent to $\displaystyle{\mathcal{S}}$. then we have
+
+$$\tag{4.2}
+\begin{align}
+\delta g^{\mu \nu} & =2\delta \beta k^{\mu}k^{\nu}+\delta \alpha(k^{\mu}l^{\nu}+k^{\nu}l^{\mu})-k^{\mu}\bar{\delta}l^{\nu}-k^{\nu}\bar{\delta}l^{\mu}+\delta \sigma ^{\mu \nu}
+\end{align}
+$$
+
+the geodesic equation re$\mathrm{AdS}$
+
+$$\tag{4.3}
+\begin{align}
+k^{\mu}\nabla _{\mu}k^{\nu} & =\kappa k^{\nu}
+\end{align}
+$$
+
+where $\displaystyle{\kappa}$ measures the failure of $\displaystyle{\lambda}$ to be an affine parameter. we express $\displaystyle{\delta \kappa}$ via $\displaystyle{\delta \Gamma}$
+
+$$\tag{4.4}
+\begin{align}
+\delta \kappa & =-\delta(l^{\mu}k^{\nu}\nabla _{\nu}k _{\mu})=k^{\mu}\nabla _{\mu}\delta \alpha+\delta \Gamma ^{\rho}_{~\mu \nu}l^{\mu}k^{\nu}k _{\rho} \\
+\delta \kappa & =-\delta(l_{\mu}k^{\nu}\nabla _{\nu}k^{\mu})=-\delta \Gamma ^{\mu}_{\nu \rho}l_{\mu}k^{\nu}k^{\rho}
+\end{align}
+$$
+
+which give ris
 
 ## some important examples of $\displaystyle{F(R_{\mu \nu \rho \sigma})}$ gravity
 
