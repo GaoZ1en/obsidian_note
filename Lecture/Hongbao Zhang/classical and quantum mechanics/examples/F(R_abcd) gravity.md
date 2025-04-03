@@ -361,8 +361,7 @@ $$
 $$
 \begin{align}
 \Theta|_{\Gamma} & =2n_{\rho}\nabla _{\mu}\psi ^{\mu \nu \rho \sigma}\delta g_{\nu \sigma}-2n_{\rho}\psi ^{\mu \nu \rho \sigma}\nabla _{\mu}\delta g_{\nu \sigma} \\
- & =2n^{\rho}\psi _{\mu \nu \rho \sigma}\nabla ^{\mu}\delta g^{\nu \sigma}-2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}\delta g^{\nu \sigma} \\
- 
+ & =2n^{\rho}\psi _{\mu \nu \rho \sigma}\nabla ^{\mu}\delta g^{\nu \sigma}-2n^{\rho}\nabla ^{\mu}\psi _{\mu \nu \rho \sigma}\delta g^{\nu \sigma}
 \end{align}
 $$
 
@@ -442,6 +441,23 @@ X_{\xi}\cdot \mathbf{L} & =\mathrm{d}(\xi \cdot \mathbf{L}) \\
 \end{align}
 $$
 
-...
+here we assume that the boundary Lagrangian $\displaystyle{\ell}$ is covariant, i.e., we have
 
-I think I can use this method in the research of tmg...
+$$\tag{.}
+\begin{align}
+X_{\xi}\cdot \delta \ell & =\mathcal{L}_{\xi}\ell=\mathrm{d}(\xi \cdot \ell)
+\end{align}
+$$
+
+and finally the Noether charge is
+
+$$\tag{.}
+\begin{align}
+H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
+ & =\int _{\Sigma}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L})-\int _{\partial \Sigma}(X_{\xi}\cdot \mathbf{C}-\xi \cdot \ell) \\
+ & =\int _{\partial \Sigma}(-2T_{h~c}^{~a}+2\Psi^{ab}T_{\Psi cb})\xi ^{c}\varepsilon ^{\partial \Sigma}_{a}
+\end{align}
+$$
+
+we get the same result as 2406.15138
+q
