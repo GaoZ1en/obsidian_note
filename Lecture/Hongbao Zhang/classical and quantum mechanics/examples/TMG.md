@@ -56,39 +56,6 @@ the symplectic potential is
 
 $$\tag{1.6}
 \begin{align}
-\Theta _{\text{gCS}} & =-\mathrm{Tr}(\Gamma \wedge \delta \Gamma)+n_{\nu}\varepsilon ^{\rho \sigma \lambda}R^{\nu \mu}_{~~~~\sigma \lambda}\delta g_{\mu \rho}\varepsilon _{\Gamma} \\
-& =2n_{\rho}\varepsilon ^{\rho \sigma \nu}\left( S^{\mu}_{\sigma}\delta g_{\mu \nu}+\frac{1}{2}\Gamma ^{\mu}_{\nu \lambda}\delta \Gamma ^{\lambda}_{\mu \sigma} \right)\varepsilon _{\Gamma}
-\end{align}
-$$
-
-where $\displaystyle{S^{\mu}_{\lambda}=R^{\mu}_{\lambda}-\frac{1}{4}R\delta ^{\mu}_{\lambda}}$ is the Schouten tensor.
-
-$$\tag{.}
-\begin{align}
-n_{\rho}\varepsilon ^{\rho \sigma \nu}\Gamma ^{\mu}_{\nu \lambda}\delta \Gamma ^{\lambda}_{\mu \sigma} & =n_{\rho}\varepsilon ^{\rho \sigma \nu}\Gamma ^{\mu}_{\nu \lambda}\delta ^{\lambda}_{\alpha}\delta ^{\beta}_{\mu}\delta ^{\gamma}_{\sigma}\delta \Gamma ^{\alpha}_{\beta \gamma} \\
- & =n_{\rho}\varepsilon ^{\rho \sigma \nu}\Gamma ^{\mu}_{\nu \lambda}(\gamma ^{\lambda}_{\alpha}+n^{\lambda}n_{\alpha})(\gamma ^{\beta}_{\mu}+n^{\beta}n_{\mu})\gamma ^{\gamma}_{\sigma}\delta \Gamma ^{\alpha}_{\beta \gamma} \\
- & =n_{\rho}\varepsilon ^{\rho \sigma \nu}\Gamma ^{\mu}_{\nu \lambda}\gamma ^{\lambda}_{\alpha}\gamma ^{\beta}_{\mu}\gamma ^{\gamma}_{\sigma}\delta \Gamma ^{\alpha}_{\beta \gamma} \\
- & +n_{\rho}\varepsilon ^{\rho \sigma \nu}\Gamma ^{\mu}_{\nu \lambda}\gamma ^{\lambda}_{\alpha}\gamma ^{\gamma}_{\sigma}n^{\beta}n_{\mu}\delta \Gamma ^{\alpha}_{\beta \gamma} \\
- & +n_{\rho}\varepsilon ^{\rho \sigma \nu}\Gamma ^{\mu}_{\nu \lambda}\gamma ^{\beta}_{\mu}\gamma ^{\gamma}_{\sigma}n^{\lambda}n_{\alpha}\delta \Gamma ^{\alpha}_{\beta \gamma} \\
- & +n_{\rho}\varepsilon ^{\rho \sigma \nu}\Gamma ^{\mu}_{\nu \lambda}\gamma ^{\gamma}_{\sigma}n^{\lambda}n^{\beta}n_{\alpha}n_{\mu}\delta \Gamma ^{\alpha}_{\beta \gamma}
-\end{align}
-$$
-
-where the first term is
-
-$$\tag{.}
-\begin{align}
-n_{\rho}\varepsilon ^{\rho \sigma \nu}\Gamma ^{\mu}_{\nu \lambda}\gamma ^{\lambda}_{\alpha}\gamma ^{\beta}_{\mu}\gamma ^{\gamma}_{\sigma}\delta \Gamma ^{\alpha}_{\beta \gamma} & =n^{\rho}\varepsilon _{\rho \sigma \nu}\Gamma _{\mu~\lambda}^{~~\nu}\gamma ^{\lambda}_{\alpha}\gamma ^{\beta \mu}\gamma ^{\gamma \sigma}\delta \Gamma ^{\alpha}_{\beta \gamma} \\
- & =\frac{1}{2}n^{\rho}\varepsilon _{\rho \sigma \nu}\Gamma ^{~~\nu}_{\mu~\lambda}\gamma ^{\alpha\lambda}\gamma ^{\beta \mu}\gamma ^{\gamma \sigma}(\nabla _{\beta}\delta g_{\alpha \gamma}+\nabla _{\gamma}\delta g_{\alpha \beta}-\nabla _{\alpha}\delta g_{\beta \gamma}) \\
- & =\frac{1}{2}n^{\rho}\varepsilon _{\rho \sigma \nu}\Gamma ^{~~\nu}_{\mu~\lambda}(K^{\mu \sigma}\delta A^{\lambda}-D^{\mu}\delta \gamma ^{\sigma\lambda}+K^{\sigma \mu}\delta A^{\lambda}-D^{\sigma}\delta \gamma ^{\mu \lambda}+D^{\lambda}\delta \gamma ^{\mu \sigma}) \\
- & =n^{\rho}\varepsilon _{\rho \sigma \nu}\Gamma ^{~~\nu}_{\mu~\lambda}K^{\mu \sigma}\delta A^{\lambda}-\frac{1}{2}n^{\rho}\varepsilon _{\rho \sigma \nu}\Gamma ^{~~\nu}_{\mu~\lambda}(D^{\mu}\delta \gamma ^{\sigma \lambda}+D^{\sigma}\delta \gamma ^{\mu \lambda}-D^{\lambda}\delta \gamma ^{\mu \sigma})
-\end{align}
-$$
-
-the second term is
-
-$$\tag{.}
-\begin{align}
-n_{\rho}\varepsilon ^{\rho \sigma \nu}\Gamma ^{\mu}_{\nu \lambda}\gamma ^{\lambda}_{\alpha}\gamma ^{\gamma}_{\sigma}n^{\beta}n_{\mu}\delta \Gamma ^{\alpha}_{\beta \gamma} & =n^{\rho}\varepsilon _{\rho \sigma \nu}\Gamma ^{~~\nu} _{\mu~\lambda}n^{\mu}(\gamma ^{\lambda}_{\alpha}\gamma ^{\gamma \sigma}n^{\beta}\delta \Gamma ^{\alpha}_{\beta \gamma})
+\Theta _{\text{gCS}} & =-\mathrm{Tr}(\Gamma \wedge \delta \Gamma)+n_{\nu}\varepsilon ^{\rho \sigma \lambda}R^{\nu \mu}_{~~~~\sigma \lambda}\delta g_{\mu \rho}\varepsilon _{\Gamma}
 \end{align}
 $$
