@@ -384,6 +384,13 @@ k _{\rho}\psi _{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{~\nu \sigma} & =k _
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+h^{\mu \nu}k _{\nu}=0 \\
+ 
+\end{align}
+$$
+
 ## some important examples of $\displaystyle{F(R_{\mu \nu \rho \sigma})}$ gravity
 
 1. $\displaystyle{F(R)}$ gravity
