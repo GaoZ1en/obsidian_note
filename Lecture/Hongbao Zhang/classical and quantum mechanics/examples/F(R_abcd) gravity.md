@@ -380,7 +380,12 @@ $$\tag{4.7}
 \begin{align}
 k _{\rho}\psi _{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{~\nu \sigma} & =k _{\rho}g^{\nu \alpha}g^{\rho \beta}g^{\sigma \gamma}\psi _{\mu \alpha \beta \gamma}\delta \Gamma ^{\mu}_{\nu \sigma} \\
  & =(\sigma ^{\nu \alpha}-k^{\nu}l^{\alpha}-k^{\alpha}l^{\nu})(k _{\rho}\sigma ^{\rho \beta}+k^{\beta})(\sigma ^{\sigma \gamma}-k^{\sigma}l^{\gamma}-k^{\gamma}l^{\sigma})\psi _{\mu \alpha \beta \gamma}\delta \Gamma ^{\mu}_{\nu \sigma} \\
-  & =
+ & =\frac{1}{4}\hat{\Psi}(\delta \Gamma ^{\mu}_{\nu \rho}k _{\mu}k^{\nu}l^{\rho}-\delta \Gamma ^{\rho}_{\mu \nu}k^{\mu}k^{\nu}l_{\rho}) \\
+ & +k^{\mu}\psi _{\mu \rho \sigma \tau}\sigma ^{\nu \rho}\sigma ^{\lambda \sigma}\sigma ^{\sigma \alpha}\nabla _{\alpha}\delta g_{\nu \lambda}-k^{\mu}k^{\nu}\psi _{\nu \rho \sigma \tau}l^{\rho}\sigma ^{\lambda \sigma}\sigma ^{\tau \alpha}\nabla _{\alpha}\delta g_{\mu \lambda} \\
+ & +k^{\mu}k^{\nu}k^{\rho}\psi _{\rho \lambda \sigma \tau}l^{\sigma}l^{\lambda}\sigma ^{\tau \alpha}(\nabla _{\alpha}\delta g_{\mu \nu}-\nabla _{\nu}\delta g_{\mu \alpha}) \\
+ & +k^{\mu}k^{\nu}\psi _{\nu \sigma \rho \tau}k^{\rho}l^{\sigma}l^{\lambda}\sigma ^{\tau \alpha}(\nabla _{\mu}\delta g_{\lambda \alpha}+\nabla _{\alpha}\delta g_{\mu \lambda}-2\nabla _{\lambda}\delta _{\mu \alpha}) \\
+ & +k^{\mu}\psi _{\mu \sigma \nu \tau}k^{\nu}l^{\rho}\sigma ^{\lambda \sigma}\sigma ^{\alpha \tau}(\nabla _{\rho}\delta g_{\lambda \alpha}-\nabla _{\alpha}\delta g_{\rho \lambda}) \\
+ & +k^{\mu}k^{\nu}\psi _{\nu \sigma \rho \tau}l^{\rho}\sigma ^{\lambda \sigma}\sigma ^{\alpha \tau}(\nabla _{\mu}\delta g_{\lambda \alpha}-\nabla _{\alpha}\delta g_{\mu \lambda})
 \end{align}
 $$
 
