@@ -389,7 +389,24 @@ k _{\rho}\psi _{\mu}^{~\nu \rho \sigma}\delta \Gamma ^{\mu}_{~\nu \sigma} & =k _
 \end{align}
 $$
 
+where $\displaystyle{\hat{\Psi}=4\psi _{\mu \nu \rho \sigma}k^{\mu}l^{\nu}k^{\rho}l^{\sigma}=\psi ^{\mu \nu \rho \sigma}\varepsilon _{\mu \nu}\varepsilon _{\rho \sigma}}$ with $\displaystyle{\varepsilon _{\mu \nu}=(k\wedge l)_{\mu \nu}}$. use (4.5), we have
 
+$$\tag{4.8}
+\begin{align}
+\int _{\mathcal{N}}\delta v^{\mu}\delta \Sigma _{\mu} & =\int _{\mathcal{N}}\hat{\Psi}\delta \kappa \mathrm{d}\lambda \mathrm{d}S \\
+ & -\int _{\mathcal{N}} \frac{\mathrm{d}}{\mathrm{d}\lambda}\left[\left(\frac{1}{2}\hat{\Psi}-2k^{\mu}k^{\nu}\psi _{\mu \rho \nu \sigma}l^{\rho}\bar{\delta}l^{\sigma}\right)\mathrm{d}S\right]\mathrm{d}\lambda \\
+ & -2\int _{\mathcal{N}}\left[\tilde{D}_{\lambda}(k^{\mu}k^{\nu}l^{\rho}\sigma ^{\sigma \lambda}\psi _{\mu \rho \nu \sigma}\delta \alpha-k^{\mu}k^{\nu}\sigma ^{\lambda \sigma}\psi _{\mu \rho \nu \sigma}\bar{\delta}l^{\rho})\right]\mathrm{d}\lambda \mathrm{d}S
+\end{align}
+$$
+
+here we have already used $\displaystyle{\delta \sigma ^{\mu \nu}=0}$ with $\displaystyle{\tilde{D}_{\rho}}$ the covariant derivative operator on $\displaystyle{\mathcal{S}}$. we will focus on the case with $\displaystyle{\partial \mathcal{S}=0}$. then we have
+
+$$\tag{4.9}
+\begin{align}
+\int _{\mathcal{N}}\delta v^{\mu}\mathrm{d}\Sigma _{\mu} & =\delta \int _{\mathcal{N}}\hat{\Psi}\kappa \mathrm{d}\lambda \mathrm{d}S \\
+ & \dots
+\end{align}
+$$
 
 ## some important examples of $\displaystyle{F(R_{\mu \nu \rho \sigma})}$ gravity
 
