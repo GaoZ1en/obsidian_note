@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/F(R_abcd) gravity.md",
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models revisted.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "F(R_abcd) gravity"
+              "title": "models revisted"
             }
           }
         ]
@@ -123,13 +123,13 @@
   },
   "active": "64baa141fbf3833b",
   "lastOpenFiles": [
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/F(R_abcd) gravity.md",
     "Note/Mathematics/Bäcklund transformation.md",
     "Note/Mathematics/Applications of residue theorem in integration calculating.md",
     "Note/Mathematics/Applications of Laplace transform in integration calculating.md",
     "Note/Mathematics/algebraic geometry.md",
     "Lecture/2025 spring/python for general purpose/未命名.md",
     "Lecture/2025 spring/python for general purpose/短路.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/F(R_abcd) gravity.md",
     "Reading/variational bicomplex.md",
     "Reading/BRST CPS.md",
     "Reading/Covariant phase space formalism and Pierels bracket.md",
