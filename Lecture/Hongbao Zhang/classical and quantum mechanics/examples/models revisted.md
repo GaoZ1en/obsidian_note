@@ -22,12 +22,12 @@ $$\tag{.}
 X_{\zeta}\cdot \delta H_{\xi} & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}(X_{\zeta}\cdot \delta \phi)\nabla _{\nu}\phi+\nabla _{\mu}\phi \nabla _{\nu}(X_{\xi}\cdot \delta \phi)-g_{\mu \nu}\nabla ^{\rho}\phi \nabla _{\rho}(X_{\xi}\cdot \delta \phi)-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}(X_{\xi}\cdot \delta \phi ^{2})+\frac{d-2}{4d}g_{\mu \nu}\nabla ^{\rho}\nabla _{\rho}(X_{\xi}\cdot \delta \phi ^{2}) \right) \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\left( \xi ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\xi ^{\rho}\phi  \right)\nabla _{\nu}\phi+\nabla _{\mu}\phi \nabla _{\nu}\left( \xi ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\xi ^{\rho}\phi \right)-g_{\mu \nu}\nabla ^{\rho}\phi \nabla _{\rho}\left( \xi ^{\rho}\nabla _{\rho}\phi+\frac{d-2}{2d}\nabla _{\rho}\xi ^{\rho}\phi  \right) \right. \\
  & \left. -\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\left( \xi ^{\rho}\nabla _{\rho}\phi ^{2}+\frac{d-2}{d}\nabla _{\rho}\xi ^{\rho}\phi ^{2}  \right)+\frac{d-2}{4d}\nabla _{\rho}\nabla ^{\rho}\left( \xi ^{\sigma}\nabla _{\sigma}\phi^{2}+\frac{d-2}{d}\nabla _{\sigma}\xi ^{\sigma}\phi ^{2} \right) \right) \\
- & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( +\frac{d-2}{2d}\nabla _{\mu}\nabla _{\rho}\xi ^{\rho}\phi \nabla _{\nu}\phi\right. +\frac{d-2}{2d}\nabla _{\mu}\phi \nabla _{\nu}\nabla _{\rho}\xi ^{\rho}\phi\\
- & -g_{\mu \nu}\nabla ^{\rho}\phi \nabla _{\rho}\xi _{\sigma}\nabla ^{\sigma}\phi-\frac{d-2}{2d}g_{\mu \nu}\nabla ^{\rho}\phi \nabla _{\rho}\nabla _{\sigma}\xi ^{\sigma}\phi +\frac{d-2}{4(d-1)}G_{\mu \nu}\xi ^{\rho}\nabla _{\rho}\phi ^{2}\\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( +\frac{d-2}{4d}\nabla _{\mu}\nabla _{\rho}\xi ^{\rho}\nabla _{\nu}\phi ^{2}\right. +\frac{d-2}{4d}\nabla _{\mu}\phi ^{2} \nabla _{\nu}\nabla _{\rho}\xi ^{\rho}\\
+ & -\frac{d-2}{2d}g_{\mu \nu}\nabla ^{\rho}\phi \nabla _{\rho}\nabla _{\sigma}\xi ^{\sigma}\phi +\frac{d-2}{4(d-1)}G_{\mu \nu}\xi ^{\rho}\nabla _{\rho}\phi ^{2}\\
  & -\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\xi ^{\rho}\nabla _{\rho}\phi ^{2}-\frac{(d-2)^{2}}{4d^{2}}\nabla _{\mu}\nabla _{\nu}\nabla _{\rho}\xi ^{\rho}\phi ^{2}-\frac{(d-2)^{2}}{4d^{2}}\nabla _{\mu}\nabla _{\rho}\xi ^{\rho}\nabla _{\nu}\phi ^{2}-\frac{(d-2)^{2}}{4d^{2}}\nabla _{\nu}\nabla _{\rho}\xi ^{\rho}\nabla _{\mu}\phi ^{2} \\
  & +\frac{d-2}{4d}\nabla ^{2}\xi ^{\sigma}\nabla _{\sigma}\phi ^{2}+\frac{d-2}{2d}\nabla ^{\rho}\xi ^{\sigma}\nabla _{\rho}\nabla _{\sigma}\phi ^{2}+\frac{(d-2)^{2}}{4d^{2}}\nabla ^{2}(\nabla _{\rho}\xi ^{\rho})\phi ^{2}+\frac{(d-2)^{2}}{2d^{2}}\nabla _{\rho}\nabla _{\sigma}\xi ^{\sigma}\nabla ^{\rho}\phi ^{2} \\
- & +\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\zeta ^{\rho}(\nabla _{\rho}\phi \nabla _{\nu}\phi)-\frac{d-2}{4d}\nabla _{\nu}\nabla _{\rho}\phi ^{2} \right) \\
- & +\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\nu}\zeta ^{\rho}(\nabla _{\mu}\phi \nabla _{\rho}\phi)-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\rho}\phi ^{2} \right) \\
+ & +\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\zeta ^{\rho}\left( \nabla _{\rho}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\rho \nu}\nabla _{\sigma}\phi \nabla ^{\sigma}\phi-\frac{d-2}{4d}\nabla _{\nu}\nabla _{\rho}\phi ^{2}  \right)\right) \\
+ & +\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\nu}\zeta ^{\rho}\left( \nabla _{\mu}\phi \nabla _{\rho}\phi-\frac{1}{2}g_{\mu \rho}\nabla _{\sigma}\phi \nabla ^{\sigma}\phi-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\rho}\phi ^{2}  \right)\right) \\
  & +\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\zeta ^{\rho}\nabla _{\rho}\left( \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\sigma}\phi \nabla ^{\sigma}\phi \right)  \\
  & +\frac{d-2}{d}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\nabla _{\rho}\xi ^{\rho}\left( \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla ^{\sigma}\phi \nabla _{\sigma}\phi +\frac{d-2}{4(d-1)}G_{\mu \nu}\phi ^{2}-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\phi ^{2}+\frac{d-2}{4d}g_{\mu \nu}\nabla ^{2}\phi ^{2}\right)
 \end{align}
@@ -37,5 +37,11 @@ $$\tag{.}
 \begin{align}
 \frac{d-2}{d}\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}+\nabla ^{2}\xi _{\mu}+R_{\mu \nu}\xi ^{\nu} & =0 \\
 \frac{2(d-1)}{d}\nabla ^{2}(\nabla _{\mu}\xi ^{\mu})+\xi ^{\mu}\nabla _{\mu}R+\frac{2}{d}R\nabla _{\mu}\xi ^{\mu} & =0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
++\frac{1}{d}g_{\mu \nu}\nabla _{\rho}\zeta ^{\rho}\nabla _{\sigma}\phi \nabla ^{\sigma}\phi
 \end{align}
 $$
