@@ -169,3 +169,25 @@ R_{\mu \nu \rho \sigma}\xi ^{\mu}\zeta ^{\nu}\phi ^{\rho}\psi ^{\sigma} & =K(p)(
 $$
 
 then perform a covariant derivative
+
+$$
+\begin{align}
+\xi ^{\mu}\nabla _{\mu}R_{\nu \rho \sigma \lambda}\zeta ^{\rho}\phi ^{\sigma}\psi ^{\lambda} & =\xi ^{\mu}\nabla _{\mu}K(p)(\phi _{\nu}\zeta _{\rho}\psi ^{\rho}-\psi _{\nu}\zeta _{\rho}\phi ^{\rho})
+\end{align}
+$$
+
+by Bianchi identity $\displaystyle{\nabla _{\mu}R_{\nu \rho \sigma \lambda}+\nabla _{\nu}R_{\rho \mu \sigma \lambda}+\nabla _{\rho}R_{\mu \nu \sigma \lambda}=0}$, and choose $\displaystyle{\zeta _{\rho},\phi _{\sigma},\psi _{\lambda}}$ to be vertical to each other, and choose $\displaystyle{\xi _{\mu}=\zeta _{\mu},\xi _{\mu}\xi ^{\mu}=1}$, we have
+
+$$
+\begin{align}
+\phi ^{\mu}\nabla _{\mu}K(p)\psi _{\nu}-\psi ^{\mu}\nabla _{\mu}K(p)\phi _{\nu}=0
+\end{align}
+$$
+
+since $\displaystyle{\phi _{\mu}}$ and $\displaystyle{\psi _{\mu}}$ are independent of each other, we have
+
+$$
+\begin{align}
+\phi ^{\mu}\nabla _{\mu}K(p)=\psi ^{\mu}\nabla _{\mu}K(p) & =0
+\end{align}
+$$
