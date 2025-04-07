@@ -23,18 +23,13 @@
             }
           },
           {
-            "id": "bfeb7b14649b6d53",
+            "id": "c07e0a55bd9e52eb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/discussion for Poisson bracket.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "discussion for Poisson bracket"
+              "title": "新标签页"
             }
           }
         ],
@@ -137,8 +132,9 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "bfeb7b14649b6d53",
+  "active": "c07e0a55bd9e52eb",
   "lastOpenFiles": [
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/discussion for Poisson bracket.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/covariant phase space with boundaries.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models revisted.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/F(R_abcd) gravity.md",
@@ -164,7 +160,6 @@
     "Lecture/未命名 1.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
     "Group meeting/week 13.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/discussion for Poisson bracket.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/Maxwell theory.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples",
