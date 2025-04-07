@@ -98,3 +98,40 @@ then we call $\displaystyle{\alpha _{r}}$ as harmonic $\displaystyle{r}$-form. w
 
 ## decomposition of Riemann tensor
 
+Riemann tensor $\displaystyle{R_{\mu \nu \rho \sigma}}$ has $\displaystyle{\frac{1}{12}n^{2}(n^{2}-1)}$ independent components, and can be decomposed in terms of the representations of holonomy group $\displaystyle{\mathrm{O}(n)}$ as
+
+$$\tag{2.9}
+\begin{align}
+R_{\mu \nu \rho \sigma} & =W_{\mu \nu \rho \sigma}+S_{\mu \nu \rho \sigma}+G_{\mu \nu \rho \sigma} \\
+G_{\mu \nu \rho \sigma} & =\frac{R}{n(n-1)}(g_{\mu \rho}g_{\nu \sigma}-g_{\mu \sigma}g_{\nu \rho}) \\
+S_{\mu \nu \rho \sigma} & =\frac{1}{n-2}(g_{\mu \rho}S_{\nu \sigma}+g_{\nu \sigma}S_{\mu \rho}-g_{\mu \sigma}S_{\nu \rho}-g_{\nu \rho}S_{\mu \sigma}) \\
+S_{\mu \nu} & =R_{\mu \nu}-\frac{1}{n}g_{\mu \nu}R
+\end{align}
+$$
+
+where $\displaystyle{W_{\mu \nu \rho \sigma},S_{\mu \nu \rho \sigma},G_{\mu \nu \rho \sigma}}$ has the same permutation symmetry as $\displaystyle{R_{\mu \nu \rho \sigma}}$. $\displaystyle{G_{\mu \nu \rho \sigma}}$, which describes the global curvature information of the manifold, has the same trace as $\displaystyle{R_{\mu \nu \rho \sigma}}$
+
+$$
+\begin{align}
+g^{\mu \rho}g^{\nu \sigma}G_{\mu \nu \rho \sigma}=g^{\mu \rho}g^{\nu \sigma}R_{\mu \nu \rho \sigma}=R
+\end{align}
+$$
+
+$\displaystyle{S_{\mu \nu}}$ is the traceless part of the Ricci tensor $\displaystyle{R_{\mu \nu}}$, and $\displaystyle{S_{\mu \nu \rho \sigma}}$, which describes some local curvature information of the manifold, its trace is exactly $\displaystyle{S_{\mu \nu}}$
+
+$$
+\begin{align}
+g^{\mu \rho}S_{\mu \nu \rho \sigma} & =S_{\nu \sigma}
+\end{align}
+$$
+
+and $\displaystyle{W_{\mu \nu \rho \sigma}}$, which is known as the Weyl tensor and has $\displaystyle{\frac{1}{12}n(n+1)(n+2)(n-3)}$ independent components, encodes the conformal structure of the manifold, and its any trace vanishes.
+
+then we have some comments about Riemann tensor on low dimension manifolds
+
+1. for 1-folds, $\displaystyle{R_{\mu \nu \rho \sigma}=0}$
+2. for 2-folds, $\displaystyle{R_{\mu \nu \rho \sigma}=G_{\mu \nu \rho \sigma}=\frac{1}{2}R(g_{\mu \rho}g_{\nu \sigma}-g_{\mu \sigma}g_{\nu \rho})}$, and we have only one independent component $\displaystyle{R_{1212}=R}$
+3. for 3-folds, $\displaystyle{R_{\mu \nu \rho \sigma}}$ has 6 independent components, which is exactly the number of independent components of symmetric order 2 tensor $\displaystyle{R_{\mu \nu}}$, then we have $\displaystyle{R_{\mu \nu \rho \sigma}=S_{\mu \nu \rho \sigma}+G_{\mu \nu \rho \sigma}=g_{\mu \rho}R_{\nu \sigma}+g_{\nu \sigma}R_{\mu \rho}-g_{\mu \sigma}R_{\nu \rho}-g_{\nu \rho}R_{\mu \sigma}-\frac{1}{2}R(g_{\mu \rho}g_{\nu \sigma}-g_{\mu \sigma}g_{\nu \rho})}$. and $\displaystyle{W_{\mu \nu \rho \sigma}}$ vanishes.
+
+## sectional curvature
+
