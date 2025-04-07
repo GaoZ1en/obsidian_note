@@ -1,11 +1,5 @@
-```tikz
-\usepackage{tikz-cd}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\begin{document}\begin{tikzcd}
+## differential forms
 
-\end{tikzcd}\end{document}
-```
+### Hodge star
 
-
+the Hodge star $\displaystyle{\star}$
