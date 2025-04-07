@@ -52,4 +52,3 @@ f\star g-g\star f & =\left\{f,g\right\}
 $$
 
 which is exactly the Poisson bracket in classical mechanics.
-
