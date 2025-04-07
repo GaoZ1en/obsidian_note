@@ -169,9 +169,3 @@ R_{\mu \nu \rho \sigma}\xi ^{\mu}\zeta ^{\nu}\phi ^{\rho}\psi ^{\sigma} & =K(p)(
 $$
 
 then perform a covariant derivative
-
-$$
-\begin{align}
-
-\end{align}
-$$
