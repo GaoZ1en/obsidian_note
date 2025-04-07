@@ -135,3 +135,43 @@ then we have some comments about Riemann tensor on low dimension manifolds
 
 ## sectional curvature
 
+for two vector field $\displaystyle{\xi _{\mu},\zeta _{\mu}\in T_{p}M}$, we define the sectional curvature 
+
+$$\tag{2.10}
+\begin{align}
+K(S_{p}) & =\frac{R_{\mu \nu \rho \sigma}\xi ^{\mu}\zeta ^{\nu}\xi ^{\rho}\zeta ^{\sigma}}{\xi _{\mu}\xi ^{\mu}\zeta _{\nu}\zeta ^{\nu}-\xi _{\mu}\zeta ^{\mu}\xi _{\nu}\zeta ^{\nu}}{\Huge|}_{p}
+\end{align}
+$$
+
+where $\displaystyle{S_{p}}$ is the plain spanned by $\displaystyle{\xi _{\mu}}$ and $\displaystyle{\zeta _{\mu}}$. we can proove that $\displaystyle{K(S_{p})}$ depends only on the direction of $\displaystyle{S_{p}}$ and is independent from the choice of $\displaystyle{\xi _{\mu}}$ and $\displaystyle{\zeta _{\mu}}$. 
+
+all geodesics passed $\displaystyle{p}$ and tangent to $\displaystyle{S_{p}}$ span a 2-dimensional surface, and the Gauss curvature at $\displaystyle{p}$ is exactly the sectional curvature $\displaystyle{K(S_{p})}$. 
+
+if $\displaystyle{K(S_{p})}$ is independent from the direction of $\displaystyle{S_{p}}$, then we call $\displaystyle{M}$ is isotropic at $\displaystyle{p}$. in this case, we have
+
+$$\tag{2.11}
+\begin{align}
+R_{\mu \nu \rho \sigma}|_{p} & =K(p)(g_{\mu \rho}g_{\nu \sigma}-g_{\mu \sigma}g_{\nu \rho})|_{p} \\
+\Omega _{\mu \nu}|_{p} & =\frac{1}{2!}R_{\mu \nu \rho \sigma}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}|_{p} \\
+ & =K(p) \frac{\partial}{\partial x^{\mu}}\wedge \frac{\partial}{\partial x^{\nu}}{\Huge|}_{p}
+\end{align}
+$$
+
+>[!Theorem]
+> suppose $\displaystyle{M}$ is a $\displaystyle{d\geqslant 3}$ dimensional connected Riemann manifold. if $\displaystyle{\forall p \in M}$ is isotropic, then sectional curvature is constant on $\displaystyle{M}$
+
+proof: since we have
+
+$$
+\begin{align}
+R_{\mu \nu \rho \sigma}\xi ^{\mu}\zeta ^{\nu}\phi ^{\rho}\psi ^{\sigma} & =K(p)(\xi _{\mu}\phi ^{\mu}\zeta _{\nu}\psi ^{\nu}-\xi _{\mu}\psi ^{\mu}\zeta _{\nu}\phi ^{\nu})
+\end{align}
+$$
+
+then perform a covariant derivative
+
+$$
+\begin{align}
+
+\end{align}
+$$
