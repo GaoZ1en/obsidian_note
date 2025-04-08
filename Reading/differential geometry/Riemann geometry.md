@@ -293,6 +293,34 @@ D_{\mu}\psi & =\partial _{\mu}\psi+\frac{1}{2}\omega ^{a~b}_{~\mu}\Sigma _{ab}\p
 \end{align}
 $$
 
-and finnaly we require the spin connection to have no torsion (Levi-Civita connection), then we have
+we require the spin connection to have no torsion, then we have
 
 1. $\displaystyle{\omega _{ab}=-\omega _{ba}}$
+2. $\displaystyle{\nabla _{a}e_{b}-\nabla _{b}e_{a}=[e_{a},e_{b}]=f^{c}_{~ab}e_{c}}$
+
+which implies
+
+$$\tag{2.23}
+\begin{align}
+\omega ^{a~b}_{~\mu}=\frac{1}{2}\vartheta^{a\nu}(\partial _{\mu}\vartheta^{b}_{\nu}-\partial _{\nu}\vartheta^{b}_{\mu})-\frac{1}{2}\vartheta^{b\nu}(\partial _{\mu}\vartheta ^{a}_{\nu}-\partial _{\nu}\vartheta_{\mu}^{a})-\frac{1}{2}\vartheta ^{a\nu}\vartheta ^{b\rho}(\partial _{\nu}e_{c\rho}-\partial _{\rho}e_{c\nu})\vartheta ^{c}_{\mu}
+\end{align}
+$$
+
+and finally we consider the relation between Levi-Civita connection and spin connection. we have
+
+$$\tag{2.24}
+\begin{align}
+\Omega ^{a}_{~b}=\mathrm{d}\omega ^{a}_{~b}+\omega ^{a}_{~c}\wedge \omega ^{c}_{~b} & =\vartheta ^{a}_{\mu}(\mathrm{d}\Gamma ^{\mu}_{~\nu}+\Gamma ^{\mu}_{~\rho}\wedge \Gamma ^{\rho}_{~\nu})e^{\nu}_{b}=\vartheta ^{a}_{\mu}\Omega ^{\mu}_{~\nu}e^{\nu}_{b} \\
+\omega ^{a}_{~b} & =\vartheta ^{a}_{\mu}(\delta ^{\mu}_{~\nu}\mathrm{d}+\Gamma ^{\mu}_{~\nu})e^{\nu}_{b} \\
+\Gamma ^{\mu}_{~\nu} & =e^{\mu}_{a}(\mathrm{d}\theta ^{a}_{\nu}+\omega ^{a}_{~b}\vartheta ^{b}_{\nu})
+\end{align}
+$$
+
+for simplicity, we write
+
+$$\tag{2.25}
+\begin{align}
+\nabla _{\mu}\xi ^{\nu} & = \partial _{\mu}\xi ^{\nu}+\Gamma ^{\nu}_{~\mu \rho}\xi ^{\rho}\\
+\nabla _{\mu}\xi ^{a} & =\partial _{\mu}\xi ^{a}+\omega _{\mu~b}^{~a}\xi ^{b}
+\end{align}
+$$

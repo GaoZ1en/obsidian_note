@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading/differential geometry/Riemann geometry.md",
+                "file": "Reading/differential geometry/Homogeneous Riemann manifold.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Riemann geometry"
+              "title": "Homogeneous Riemann manifold"
             }
           },
           {
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -154,8 +153,9 @@
   },
   "active": "c07e0a55bd9e52eb",
   "lastOpenFiles": [
-    "Reading/differential geometry/general concepts.md",
     "Reading/differential geometry/Riemann geometry.md",
+    "Reading/differential geometry/Homogeneous Riemann manifold.md",
+    "Reading/differential geometry/general concepts.md",
     "Note/Code/tikz/tikzcd exercise.md",
     "Reading/deformation quantization.md",
     "Reading/differential geometry",
@@ -182,7 +182,6 @@
     "Lecture/Hongbao Zhang/classical and quantum mechanics/trash.md",
     "Lecture/2025 summer school",
     "未命名.md",
-    "Lecture/未命名.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md.bak",
     "Note/Physics/Higher symmetry",
