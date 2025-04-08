@@ -192,7 +192,9 @@ $$
 \end{align}
 $$
 
-then for $\displaystyle{n}$-dimensional manifold with constant sectional curvature $\displaystyle{K}$ and signature $\displaystyle{0}$, the metric can be expressed as
+for manifold with constant sectional curvature, it allows to have $\displaystyle{\frac{1}{2}n(n+1)}$ Killing vectors. and in contrast, if there exists $\displaystyle{\frac{1}{2}n(n+1)}$ Killing vectors, then the manifold is called maximal symmetric manifold, and the sectional curvature is constant.
+
+for $\displaystyle{n}$-dimensional manifold with constant sectional curvature $\displaystyle{K}$ and signature $\displaystyle{0}$, the metric can be expressed as
 
 $$\tag{2.12}
 \begin{align}
@@ -200,3 +202,40 @@ $$\tag{2.12}
 \end{align}
 $$
 
+and for $\displaystyle{n}$-dimensional manifold with constant sectional curvature $\displaystyle{K}$ and signature $\displaystyle{n-2}$, the metric can be expressed as (de-Sitter metric)
+
+$$\tag{2.13}
+\begin{align}
+\mathrm{d}\tau ^{2} & =-(1-K|x|)\mathrm{d}t^{2}+|dx|^{2}+\frac{K(x\cdot \mathrm{d}x)^{2}}{1-K|x|^{2}}
+\end{align}
+$$
+
+and if a manifold can be decomposed to a maximal symmetric subspace, the metric can be largely simplified. for example, the Robinson-Walker metric has a spherical homogeneous subspace and the metric can be expressed as
+
+$$\tag{2.14}
+\begin{align}
+\mathrm{d}\tau ^{2} & =-\mathrm{d}t^{2}+R^{2}(t)\left( \frac{\mathrm{d}r^{2}}{1-Kr^{2}}+r^{2}\mathrm{d}\theta ^{2}+r^{2}\sin ^{2}\theta \mathrm{d}\varphi ^{2} \right)
+\end{align}
+$$
+
+### spinor connection
+
+the transformation matrix induced by a local coordinate transformation on $\displaystyle{n}$ dimensional manifold is an element of $\displaystyle{\mathrm{GL}(n,\mathbb{R})}$. however $\displaystyle{\mathrm{GL}(n,\mathbb{R})}$ has only tensor representation, and does not have spinor representation. so if we talk about spinor field, we have to turn to **vielbein**. 
+
+we can introduce tangent vielbein field $\displaystyle{e^{\mu}_{a}}$
+
+$$\tag{2.15}
+\begin{align}
+e_{\mu}(x)=e^{\nu}_{\mu}(x) \frac{\partial}{\partial x^{\nu}}, \mu=1,\dots,n
+\end{align}
+$$
+
+with
+
+$$\tag{2.16}
+\begin{align}
+g_{\mu \nu}e^{\mu}_{\rho}e^{\nu}_{\sigma}=\eta _{\rho \sigma}, g^{\mu \nu}=\eta ^{\rho \sigma}e^{\mu}_{\rho}e^{\nu}_{\sigma}
+\end{align}
+$$
+
+where $\displaystyle{\eta _{\mu \nu}}$ is flat metric. then we introduce the dual base vectors 
