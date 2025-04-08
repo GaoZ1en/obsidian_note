@@ -218,15 +218,15 @@ $$\tag{2.14}
 \end{align}
 $$
 
-### spinor connection
+### spin connection
 
-the transformation matrix induced by a local coordinate transformation on $\displaystyle{n}$ dimensional manifold is an element of $\displaystyle{\mathrm{GL}(n,\mathbb{R})}$. however $\displaystyle{\mathrm{GL}(n,\mathbb{R})}$ has only tensor representation, and does not have spinor representation. so if we talk about spinor field, we have to turn to **vielbein**. 
+the transformation matrix induced by a local coordinate transformation on $\displaystyle{n}$ dimensional manifold is an element of $\displaystyle{\mathrm{GL}(n,\mathbb{R})}$. however $\displaystyle{\mathrm{GL}(n,\mathbb{R})}$ has only tensor representation, and does not have spinor representation. so if we talk about spinor field, we have to turn to **vielbein**. here we adopt abstract index in Liang's book.
 
 we can introduce tangent vielbein field $\displaystyle{e^{\mu}_{a}}$
 
 $$\tag{2.15}
 \begin{align}
-e_{\mu}(x)=e^{\nu}_{\mu}(x) \frac{\partial}{\partial x^{\nu}}, \mu=1,\dots,n
+e_{a}(x)=e^{\nu}_{a}(x) \frac{\partial}{\partial x^{\nu}}, \mu=1,\dots,n
 \end{align}
 $$
 
@@ -234,8 +234,65 @@ with
 
 $$\tag{2.16}
 \begin{align}
-g_{\mu \nu}e^{\mu}_{\rho}e^{\nu}_{\sigma}=\eta _{\rho \sigma}, g^{\mu \nu}=\eta ^{\rho \sigma}e^{\mu}_{\rho}e^{\nu}_{\sigma}
+g_{\mu \nu}e^{\mu}_{a}e^{\nu}_{b}=\eta _{ab}, g^{\mu \nu}=\eta ^{ab}e^{\mu}_{a}e^{\nu}_{b}
 \end{align}
 $$
 
-where $\displaystyle{\eta _{\mu \nu}}$ is flat metric. then we introduce the dual base vectors 
+where $\displaystyle{\eta _{\mu \nu}}$ is flat metric. then we introduce the dual base vectors $\displaystyle{\vartheta ^{a}_{\mu}}$
+
+$$\tag{2.17}
+\begin{align}
+\vartheta ^{a}(x) & =\vartheta ^{a}_{\mu}(x)\mathrm{d}x^{\mu}
+\end{align}
+$$
+
+with
+
+$$\tag{2.18}
+\begin{align}
+\braket{ \theta ^{a},e_{b} }  & =\delta ^{a}_{b} \\
+g_{\mu \nu} & =\eta _{ab}\vartheta ^{a}_{\mu}\vartheta ^{b}_{\nu} \\
+\eta ^{ab} & =g^{\mu \nu}\vartheta ^{a}_{\mu}\vartheta ^{b}_{\nu}
+\end{align}
+$$
+
+then the metric can be decomposed as
+
+$$\tag{2.19}
+\begin{align}
+\mathrm{d}s^{2}=g_{\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu}=\eta _{ab}\vartheta ^{a}_{\mu}\vartheta ^{b}_{\nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu}=\eta _{ab}\vartheta ^{a}\vartheta ^{b}
+\end{align}
+$$
+
+using vielbein formalism, it can naturally emerge two local transformation group
+
+1. local coordinate transformation. correspond to general covariant principle. the corresponding connection is the usual Levi-Civita connection
+2. local Lorentz transformation. if we require physical laws are invariant under local Lorentz transformation (just like Yang-Mills theory), we have to replace the usual derivative with covariant derivative with spinor connection
+
+$$\tag{2.20}
+\begin{align}
+D_{\mu}e_{a} & =\omega _{\mu ~a}^{~~b}e_{b}
+\end{align}
+$$
+
+we write $\displaystyle{\omega ^{b}_{~a}=\omega ^{~b}_{\mu ~a}\mathrm{d}x^{\mu}}$ as (spin) connection 1-form. and the curvature 2-form $\displaystyle{\Omega ^{b}_{~a}=\mathrm{d}\omega ^{b}_{~a}+\omega ^{b}_{~c}\wedge \omega ^{c}_{~a}}$.
+
+using spin connection, we can discuss the couple of spinor field $\displaystyle{\psi}$ and the gravity (metric or vielbein). let $\displaystyle{\Sigma ^{a}_{~b}}$ be the generator of spinor representation of Lorentz group, which satisfies
+
+$$\tag{2.21}
+\begin{align}
+[\Sigma _{ab},\Sigma _{cd}] & =\eta _{bc}\Sigma _{ad}+\eta _{ad}\Sigma _{bc}-\eta _{ac}\Sigma _{bd}-\eta _{bd}\Sigma _{ac}
+\end{align}
+$$
+
+then the covariant derivatvie of spinor field can be expressed as
+
+$$\tag{2.22}
+\begin{align}
+D_{\mu}\psi & =\partial _{\mu}\psi+\frac{1}{2}\omega ^{a~b}_{~\mu}\Sigma _{ab}\psi
+\end{align}
+$$
+
+and finnaly we require the spin connection to have no torsion (Levi-Civita connection), then we have
+
+1. $\displaystyle{\omega _{ab}=-\omega _{ba}}$
