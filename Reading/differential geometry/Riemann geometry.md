@@ -191,3 +191,12 @@ $$
 \phi ^{\mu}\nabla _{\mu}K(p)=\psi ^{\mu}\nabla _{\mu}K(p) & =0
 \end{align}
 $$
+
+then for $\displaystyle{n}$-dimensional manifold with constant sectional curvature $\displaystyle{K}$ and signature $\displaystyle{0}$, the metric can be expressed as
+
+$$\tag{2.12}
+\begin{align}
+\mathrm{d}s^{2}=|\mathrm{d}x|^{2}+\frac{K(x\cdot \mathrm{d}x)^{2}}{1-K|x|^{2}}
+\end{align}
+$$
+
