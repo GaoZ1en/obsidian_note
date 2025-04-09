@@ -121,3 +121,39 @@ t\sim t+i\beta,\text{with }\beta=8\pi M\implies T= \frac{1}{8\pi M}
 $$
 
 which is exactly the Hawking temperature.
+
+#### exercise: Kerr periodicity
+
+field theory at finite temperature and angular potential is periodic in imaginary time and angular coordinate
+
+$$\tag{2.13}
+\begin{align}
+(t,\phi)\sim(t+i\beta,\phi-i\beta \Omega)
+\end{align}
+$$
+
+derive (2.13) by an argument similar to (2.10)
+
+$$\tag{2.14}
+\begin{align}
+G(\tau,\phi) & =-\frac{1}{Z}\mathrm{Tr}e^{-\beta (H-\Omega J)}T_{E}O(\tau,\phi)O(0,0) \\
+ & =-\frac{1}{Z}\mathrm{Tr}O(0,0)e^{-\beta(H-\Omega J)}O(\tau,\phi) \\
+ & =-\frac{1}{Z}\mathrm{Tr}O(0,0)e^{-\beta(H-\Omega J)}e^{\tau H-\phi \Omega J}O(0,0)e^{-\tau H+\phi \Omega J} \\
+ & =-\frac{1}{Z}\mathrm{Tr}e^{-\beta (H-\Omega J)}O(\tau-\beta,\phi+\beta \Omega)O(0,0) \\
+ & =G(\tau-\beta,\phi+\beta \Omega)
+\end{align}
+$$
+
+???
+
+then start from the Kerr metric (1.15). derive the corresponding periodicity condition.
+
+here we set $\displaystyle{\theta=\frac{\pi}{2}}$. 
+
+$$\tag{2.15}
+\begin{align}
+\mathrm{d}s^{2} & =-\frac{(r-r_{+})(r-r_{-})}{r ^{2}}(\mathrm{d}t-a \mathrm{d}\phi)^{2}+\frac{r ^{2}}{(r-r_{+})(r-r_{-})}\mathrm{d}r^{2}+\frac{1}{r ^{2}}(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi)^{2}
+\end{align}
+$$
+
+plug in $\displaystyle{r=r_{}}$
