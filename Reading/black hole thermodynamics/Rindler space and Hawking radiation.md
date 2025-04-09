@@ -91,5 +91,33 @@ G_{\beta}(\tau,x) & \equiv -\frac{1}{Z}\mathrm{Tr}e^{-\beta H} T_{E}[O(\tau,x)O(
 \end{align}
 $$
 
-where $\displaystyle{T_{E}}$ is the Euclidean time ordering, and $\displaystyle{\tau=it}$ is the imagindary time.
+where $\displaystyle{T_{E}}$ is the Euclidean time ordering, and $\displaystyle{\tau=it}$ is the imagindary time. suppose $\displaystyle{\tau<0<\beta}$, we have
 
+$$\tag{2.10}
+\begin{align}
+G_{\beta}(\tau-\beta,x) & =-\frac{1}{Z}\mathrm{Tr}e^{-\beta H}T_{E}[O(\tau-\beta,x)O(0,0)] \\
+ & =-\frac{1}{Z}\mathrm{Tr}e^{-\beta H}O(0,0)O(\tau-\beta,x) \\
+ & =-\frac{1}{Z}\mathrm{Tr}e^{-\beta H}O(0,0)e^{(\tau-\beta)H}O(0,x)e^{-(\tau-\beta)H} \\
+ & =-\frac{1}{Z}\mathrm{Tr}e^{-\beta H}O(0,x)e^{-\tau H}O(0,0)e^{\tau H} \\
+ & =-\frac{1}{Z}\mathrm{Tr}e^{-\beta H}O(0,x)O(\tau,0) \\
+ & =G_{\beta}(\tau,x)
+\end{align}
+$$
+
+fermionic Green functions can be obtained in similar way. now returning back to black holes. since Rindler space is related to polar coordiantes, then the $\displaystyle{\eta}$ coordinate is periodic in the imaginary direction (Unrah effect)
+
+$$\tag{2.11}
+\begin{align}
+\eta \sim \eta+2\pi i
+\end{align}
+$$
+
+which implies that the Schwarzschild coordinate $\displaystyle{t}$ has an imaginary periodicity
+
+$$\tag{2.12}
+\begin{align}
+t\sim t+i\beta,\text{with }\beta=8\pi M\implies T= \frac{1}{8\pi M}
+\end{align}
+$$
+
+which is exactly the Hawking temperature.
