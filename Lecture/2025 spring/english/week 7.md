@@ -17,4 +17,16 @@ No.
 
 ## Problem: obesity
 
-1. 
+summarize the following sentences. 
+
+An average man needs around 2, 500 calories per day, while an average woman requires around 2, 000 per day. We should eat a balanced diet which consists of a variety of foods in order to maintain a healthy weight.
+
+$$
+\begin{equation}\tag{1.2}
+\begin{align}
+\mathrm{d} (\Gamma \wedge\mathrm{d}\Gamma+\frac{2}{3}\Gamma \wedge \Gamma \wedge \Gamma ) & = \mathrm{d}\Gamma \wedge \mathrm{d} \Gamma+2 \mathrm{d}\Gamma \wedge \Gamma \wedge \Gamma \\
+& = 
+\end{align}
+\end{equation}
+$$
+
