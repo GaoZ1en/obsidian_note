@@ -187,7 +187,7 @@ then
 
 $$\tag{1.18}
 \begin{align}
-g_{\mu \nu}l^{\mu}l^{\nu} & =g_{tt}l^{t}l^{t}+2g_{t\theta}l^{t}l^{\theta}+g_{\theta \theta}l^{\theta}l^{\theta}+g_{\phi \phi}l^{\phi}l^{\phi}=0
+g_{\mu \nu}l^{\mu}l^{\nu} & =g_{tt}l^{t}l^{t}+2g_{t\phi}l^{t}l^{\phi}+g_{\theta \theta}l^{\theta}l^{\theta}+g_{\phi \phi}l^{\phi}l^{\phi}=0
 \end{align}
 $$
 
@@ -195,6 +195,50 @@ first by evaluating (1.18) at $\displaystyle{r_{+}}$, we have
 
 $$\tag{1.19}
 \begin{align}
-
+\left( \frac{2Mr_{+}\sin \theta}{\rho _{+}} \right)^{2}\left( l^{\phi}-\frac{a}{2Mr_{+}}l^{t} \right)^{2}+\rho _{+}^{2}l^{\theta}l^{\theta}=0 \\
+\implies l^{\phi}=\Omega l^{t}=\frac{a}{2Mr_{+}}l^{t},l^{\theta}=0
 \end{align}
 $$
+
+then we applt $\displaystyle{r=r_{+}}$ and $\displaystyle{t=\text{Const.}}$, we have the induced metric of the horizon
+
+$$\tag{1.20}
+\begin{align}
+\mathrm{d}\Sigma ^{2} & =\rho _{+}^{2}(\theta)\mathrm{d}\theta ^{2}+\left( \frac{2Mr_{+}}{\rho _{+}(\theta)} \right)^{2}\sin ^{2}\theta \mathrm{d}\phi ^{2}
+\end{align}
+$$
+
+this is a donut with surface area $\displaystyle{A=8\pi Mr_{+}}$. the by Bekenstein formula, the entropy is
+
+$$\tag{1.21}
+\begin{align}
+S & =\frac{1}{4}A =2\pi Mr_{+}=2\pi M(M+\sqrt{ M^{2}-a^{2} }) \\
+ & =2\pi(M^{2}+\sqrt{ M^{4}-J^{2} })
+\end{align}
+$$
+
+make a variation, we have
+
+$$\tag{1.22}
+\begin{align}
+T\mathrm{d}S & =\mathrm{d}M-\Omega \mathrm{d}J
+\end{align}
+$$
+
+where
+
+$$\tag{1.23}
+\begin{align}
+T & =\frac{\sqrt{ M^{2}-a^{2} }}{4\pi M(M+\sqrt{ M^{2}-a^{2} })} \\
+\Omega & =\frac{a}{2M(M+\sqrt{ M^{2}-a^{2} })}
+\end{align}
+$$
+
+## the second law
+
+the second law of black hole thermodynamics states that in any physical process the area of the event horizon can never decrease. this is proved by Hawking via directly(?) the Einstein equation. here we donot give the general proof.
+
+#### exercise: black hole collision
+
+for example, argue that if two uncharged, non-rotating black holes collide violently to make one bigger black hole, then at most 29% of their inital rest energy can be radiated in gravitational waves.
+
