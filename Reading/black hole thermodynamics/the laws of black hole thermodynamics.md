@@ -93,7 +93,87 @@ where $\displaystyle{A}$ is the area of (event?) horizon. in the case of RN blac
 
 $$\tag{1.9}
 \begin{align}
-A & =4\pi r_{+}^{2} & =4\pi(M+\sqrt{ M^{2}-Q^{2} })
+A & =4\pi r_{+}^{2} \\
+ &  =4\pi(M+\sqrt{ M^{2}-Q^{2} })^{2}
 \end{align}
 $$
+
+then
+
+$$\tag{1.9}
+\begin{align}
+\mathrm{d}S & =\frac{1}{T}(\mathrm{d}M-\Phi \mathrm{d}Q)
+\end{align}
+$$
+
+where
+
+$$\tag{1.10}
+\begin{align}
+T & =\frac{\sqrt{ M^{2}-Q^{2} }}{2\pi(M+\sqrt{ M^{2}-Q^{2} })^{2}}, \\
+\Phi & =\frac{Q}{M+\sqrt{ M^{2}-Q^{2} }}
+\end{align}
+$$
+
+"temperature" $\displaystyle{T}$ is related to the surface gravity $\displaystyle{\kappa}$ of the black hole
+
+$$\tag{1.11}
+\begin{align}
+T & =\frac{\kappa}{2\pi}
+\end{align}
+$$
+
+where $\displaystyle{\kappa}$ is defined as the accelaration due to gravity near the horizon.
+
+#### exercise: thermodynamics of 3d BTZ blackholes
+
+the non-rotating BTZ black hole is 
+
+$$\tag{1.12}
+\begin{align}
+\mathrm{d}s^{2} & =\ell ^{2}\left[ -(r^{2}-8M)\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{r^{2}-8M}+r^{2}\mathrm{d}\phi ^{2} \right]
+\end{align}
+$$
+
+where $\displaystyle{\phi \sim \phi+2\pi}$ is an angular coordiante. this metric describes a blackhole of mass $\displaystyle{M}$ in a spacetime with cosmological constant $\displaystyle{\Lambda=-\frac{1}{\ell ^{2}}}$.
+
+the area of the horizon is
+
+$$\tag{1.13}
+\begin{align}
+A & =2\pi r_{\text{horizon}} \\
+ & =4\pi \sqrt{ 2M }
+\end{align}
+$$
+
+here we assume the Bekenstein entropy is still valid. by variation, we have
+
+$$\tag{1.14}
+\begin{align}
+T\delta S & =\mathrm{d}M \\
+T & =\frac{\sqrt{ 2M }}{\pi}
+\end{align}
+$$
+
+#### exercise: thermodynamics of rotating blackholes
+
+the Kerr metric is
+
+$$\tag{1.15}
+\begin{align}
+\mathrm{d}s^{2} & =-\frac{\Delta(r)}{\rho ^{2}}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)^{2}+\frac{\rho ^{2}}{\Delta(r)}\mathrm{d}r^{2}+\rho ^{2}\mathrm{d}\theta ^{2}+\frac{1}{\rho ^{2}}\sin ^{2}\theta(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi)^{2}
+\end{align}
+$$
+
+where
+
+$$\tag{1.16}
+\begin{align}
+\Delta(r)=r^{2}+a^{2}-2Mr,  & & \rho ^{2}=r^{2}+a^{2}\cos ^{2}\theta
+\end{align}
+$$
+
+and $\displaystyle{|a|<M}$. this metric describes a rotating black hole with mass $\displaystyle{M}$ and angular momentum $\displaystyle{J=aM}$
+
+the entropy is
 
