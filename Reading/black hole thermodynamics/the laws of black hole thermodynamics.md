@@ -175,5 +175,26 @@ $$
 
 and $\displaystyle{|a|<M}$. this metric describes a rotating black hole with mass $\displaystyle{M}$ and angular momentum $\displaystyle{J=aM}$
 
-the entropy is
+the horizon of a black hole is defined as the interior of boundary surface of the region in spacetime where light can escape to infinity from any point... we write a null vector tangent to this horizon as
 
+$$\tag{1.17}
+\begin{align}
+l^{\mu}=(l^{t},0,l^{\theta},l^{\phi})
+\end{align}
+$$
+
+then
+
+$$\tag{1.18}
+\begin{align}
+g_{\mu \nu}l^{\mu}l^{\nu} & =g_{tt}l^{t}l^{t}+2g_{t\theta}l^{t}l^{\theta}+g_{\theta \theta}l^{\theta}l^{\theta}+g_{\phi \phi}l^{\phi}l^{\phi}=0
+\end{align}
+$$
+
+first by evaluating (1.18) at $\displaystyle{r_{+}}$, we have
+
+$$\tag{1.19}
+\begin{align}
+
+\end{align}
+$$
