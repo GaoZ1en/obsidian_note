@@ -242,3 +242,15 @@ the second law of black hole thermodynamics states that in any physical process 
 
 for example, argue that if two uncharged, non-rotating black holes collide violently to make one bigger black hole, then at most 29% of their inital rest energy can be radiated in gravitational waves.
 
+consider a Carnot heat engine. we can easily compute the minimal final energy as (suppose $\displaystyle{M_{2}<M_{1}}$, so $\displaystyle{T_{2}>T_{1}}$)
+
+$$\tag{1.24}
+\begin{align}
+\frac{\mathrm{d}M_{1}}{T_{1}}+\frac{\mathrm{d}M_{2}}{T_{2}}=0 \\
+\implies M_{1}^{2}+M_{2}^{2}=M_{10}^{2}+M_{20}^{2} \\
+\implies \Delta E & =\sqrt{ M_{10}^{2}+M_{20}^{2} }-M_{10}-M_{20} \\
+ & \geqslant-\left( 1-\frac{\sqrt{ 2 }}{2} \right)(M_{10}+M_{20}) \\
+ & \approx-29\%(M_{10}+M_{20})
+\end{align}
+$$
+
