@@ -124,5 +124,33 @@ T_{\text{obs}} & =\frac{a}{2\pi}
 \end{align}
 $$
 
-### aside: transient acceleration
+## importance of entanglement
 
+...
+
+#### exercise: entanglement warm-up
+
+consider a pure state
+
+$$\tag{4.14}
+\begin{align}
+\ket{\psi} & =\ket{0} _{A}\ket{1} _{B}+\ket{1} _{A}\ket{0} _{B}
+\end{align}
+$$
+
+then calculate the entanglement entropy which defined as
+
+$$\tag{4.15}
+\begin{align}
+S_{A}=-\mathrm{Tr}_{A}\rho _{A}\log \rho _{A}
+\end{align}
+$$
+
+first we calculate the reduced density matrix
+
+$$\tag{4.16}
+\begin{align}
+\rho _{A} & =\mathrm{Tr}_{B}\ket{ \psi }\bra{\psi}   \\
+ & =
+\end{align}
+$$
