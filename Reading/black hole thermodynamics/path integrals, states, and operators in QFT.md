@@ -101,3 +101,16 @@ Z(\beta) & =\mathrm{Tr}e^{-\beta H}=\sum _{\phi}\braket{ \phi|e^{-\beta H}|\phi 
 $$
 
 this seems like to perform a path integral on a torus, since we make a trace.
+
+## thermal correlators
+
+equal-time correlator at finite temperature are defined by
+
+$$\tag{3.11}
+\begin{align}
+\braket{ O_{1}(t=0,\vec{x}_{1})O_{2}(t=0,\vec{x}_{2})\dots }_{\beta} & =\mathrm{Tr}e^{-\beta H}O_{1}(0,\vec{x}_{1})O_{2}(0,\vec{x}_{2})\dots
+\end{align}
+$$
+
+#### exercise: finite-temperature correlators in 2d CFT
+
