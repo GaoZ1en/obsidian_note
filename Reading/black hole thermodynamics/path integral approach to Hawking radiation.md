@@ -134,7 +134,7 @@ consider a pure state
 
 $$\tag{4.14}
 \begin{align}
-\ket{\psi} & =\ket{0} _{A}\ket{1} _{B}+\ket{1} _{A}\ket{0} _{B}
+\ket{\psi} & =\frac{1}{\sqrt{ 2 }}(\ket{0} _{A}\ket{1} _{B}+\ket{1} _{A}\ket{0} _{B})
 \end{align}
 $$
 
@@ -151,6 +151,19 @@ first we calculate the reduced density matrix
 $$\tag{4.16}
 \begin{align}
 \rho _{A} & =\mathrm{Tr}_{B}\ket{ \psi }\bra{\psi}   \\
- & =
+ & =\frac{1}{2}\mathrm{Tr}_{B}\left(\ket{0} _{A}\ket{1} _{B}+\ket{1} _{A}\ket{0} _{B}\right)\left(\bra {0} _{A}\bra {1} _{B}+\bra {1} _{A}\bra {0} _{B}\right) \\
+ & =\frac{1}{2}(\ket{0} _{A}\bra{0} _{A}+\ket{1} _{A}\bra{1} _{A} )
 \end{align}
 $$
+
+then the entanglement entropy is
+
+$$\tag{4.17}
+\begin{align}
+S_{A} & =\frac{1}{2}\ln 2\mathrm{Tr}_{A}(\ket{0} _{A}\bra{0} _{A}+\ket{1} _{A}\bra{1} _{A} ) \\
+ & =\ln 2
+\end{align}
+$$
+
+#### exercise: thermofield double
+
