@@ -156,4 +156,36 @@ $$\tag{2.15}
 \end{align}
 $$
 
-plug in $\displaystyle{r=r_{}}$
+plug in $\displaystyle{r=r_{+}(1+\varepsilon ^{2})}$, we have
+
+$$\tag{2.16}
+\begin{align}
+\mathrm{d}s^{2} & =-\frac{\varepsilon ^{2}(r_{+}-r_{-})}{r_{+}}(\mathrm{d}t-a\mathrm{d}\phi)^{2}+\frac{4r_{+}^{3}\mathrm{d}\varepsilon ^{2}}{(r_{+}-r_{-})}+\frac{1}{r_{+}^{2}(1+2\varepsilon ^{2})}(a\mathrm{d}t-(r_{+}^{2}+a^{2})\mathrm{d}\phi)^{2} \\
+ & =\left( \frac{a}{r_{+}}\mathrm{d}t-\left( r_{+}+\frac{a^{2}}{r_{+}} \right)\mathrm{d}\phi \right)^{2}+\frac{4r_{+}^{2}}{1-\frac{r_{-}}{r_{+}}}\mathrm{d}\varepsilon ^{2}-\varepsilon ^{2}\left( 1-\frac{r_{-}}{r_{+}} \right)(\mathrm{d}t-a\mathrm{d}\phi)^{2}-2\varepsilon ^{2}\left( \frac{a}{r_{+}}\mathrm{d}t-\left( r_{+}+\frac{a^{2}}{r_{+}} \right)\mathrm{d}\phi \right)^{2} \\
+ & =a\mathrm{d}\varepsilon ^{2}+(b\mathrm{d}\phi-c\mathrm{d}t)^{2}+\varepsilon ^{2}(e\mathrm{d}\phi+f\mathrm{d}t+\dots)
+\end{align}
+$$
+
+$$
+\begin{align}
+ & -\left( 1-\frac{r_{-}}{r_{+}} \right)(\mathrm{d}t^{2}+a^{2}\mathrm{d}\phi ^{2}-2a\mathrm{d}t\mathrm{d}\phi)-2\left( \frac{a^{2}}{r_{+}^{2}}\mathrm{d}t^{2}+\left( r_{+}+\frac{a^{2}}{r_{+}} \right)^{2}\mathrm{d}\phi ^{2}-2a\left( 1+\frac{a^{2}}{r_{+}^{2}} \right)\mathrm{d}t\mathrm{d}\phi \right)\dots \\
+= & -\left( 1-\frac{r_{-}}{r_{+}}+\frac{2a^{2}}{r_{+}^{2}} \right)\mathrm{d}t^{2}-\left( a^{2}\left( 1-\frac{r_{-}}{r_{+}} \right)+2\left( r_{+}+\frac{a^{2}}{r_{+}} \right)^{2} \right)\mathrm{d}\phi ^{2}+2\left( a\left( 1-\frac{r_{-}}{r_{+}} \right)+2a\left( 1+\frac{a^{2}}{r_{+}^{2}} \right) \right)\mathrm{d}t\mathrm{d}\phi
+\end{align}
+$$
+
+then define the corotating angular coordinate $\displaystyle{\tilde{\phi}=\left( 1+\frac{a^{2}}{r_{+}^{2}} \right)\phi-\frac{a}{r_{+}^{2}}t}$. then when keep $\displaystyle{\tilde{\phi}}$ fixed, we have
+$$\tag{2.17}
+\begin{align}
+T & =\frac{\sqrt{ M^{2}-a^{2} }}{4\pi M(M+\sqrt{ M^{2}-a^{2} })} \\
+\Omega & =\frac{a}{2M(M+\sqrt{ M^{2}-a^{2} })}
+\end{align}
+$$
+
+we return the result of (1.23)...
+
+## Unrah radiation
+
+Unrah radiation states that an observer in a uniform acceleration $\displaystyle{a}$ will see a thermal bath of radiation with temperature $\displaystyle{T=\frac{a}{2\pi}}$, which means a Minkowski vacuum is actually a thermal state in Rindler coordinates.
+
+## Hawking radiation
+

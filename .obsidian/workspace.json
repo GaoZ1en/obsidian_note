@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading/black hole thermodynamics/Rindler space and Hawking radiation.md",
+                "file": "Reading/black hole thermodynamics/path integrals, states, and operators in QFT.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Rindler space and Hawking radiation"
+              "title": "path integrals, states, and operators in QFT"
             }
           },
           {
@@ -67,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -138,8 +137,9 @@
   },
   "active": "c07e0a55bd9e52eb",
   "lastOpenFiles": [
-    "Reading/black hole thermodynamics/the laws of black hole thermodynamics.md",
     "Reading/black hole thermodynamics/Rindler space and Hawking radiation.md",
+    "Reading/black hole thermodynamics/path integrals, states, and operators in QFT.md",
+    "Reading/black hole thermodynamics/the laws of black hole thermodynamics.md",
     "Reading/black hole thermodynamics/未命名",
     "Reading/differential geometry/homotopy and homology.md",
     "Reading/black hole thermodynamics",
@@ -168,7 +168,6 @@
     "Articles/Topologically massive gravity/trash.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/TMG.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/TMG.md~",
-    "Lecture/2025 spring/english/week 6.md",
     "Lecture/2025 summer school",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/models.md.bak",
