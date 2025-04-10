@@ -32,3 +32,20 @@ $$\tag{4.4}
 \end{align}
 $$
 
+this looks like just like a thermal state at temperature $\displaystyle{\frac{1}{2\pi}}$. when we go back to Minkowski space $\displaystyle{\phi\to i\eta}$, this becomes the boost generator corresponding to the causal development of the Rindler wedge. $\displaystyle{H_{\text{Rindler}}}$ is exactly what we called $\displaystyle{H_{\eta}}$ above.
+
+and this is the complete path-integral derivation of the statement that the Minkowski vacuum leads to a thermal state in Rindler space.
+
+### modular Hamiltonian
+
+$\displaystyle{H_{\text{Rindler}}}$ is a special case of a modular Hamiltonian, which is defined as a log of a density matrix (up to normalization) and is useful for characterizing entanglement, both in quantum gravity and in condensed matter physics.
+
+## example: free fields
+
+a massless free field in 2d Rindler space obeys the wave equation
+
+$$\tag{.}
+\begin{align}
+
+\end{align}
+$$
