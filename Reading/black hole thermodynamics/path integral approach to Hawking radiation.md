@@ -167,3 +167,32 @@ $$
 
 #### exercise: thermofield double
 
+consider a quantum system with Hilbert space $\displaystyle{\mathcal{H}}$. any mixed state $\displaystyle{\rho}$ can be thought of as a pure state in an enlarged system (purification?). that is, we can always add an auxiliary Hilbert space $\displaystyle{\mathcal{H}'}$ and find a pure state
+
+$$\tag{4.18}
+\begin{align}
+\ket{\Psi} \in \mathcal{H}'\otimes \mathcal{H}
+\end{align}
+$$
+
+such that
+
+$$\tag{4.19}
+\begin{align}
+\rho & =\mathrm{Tr}_{\mathcal{H}'}\ket{\Psi} \bra{\Psi} 
+\end{align}
+$$
+
+this is called purifying the mixed state. we will show that Minkowski space is a purification of Rindler space.
+
+The Minkowski Hilbert space factorize into two copies of the Rindler Hilbert space
+
+$$\tag{4.20}
+\begin{align}
+\mathcal{H}_{M} & =\tilde{\mathcal{H}}_{R}\otimes \mathcal{H}_{R}
+\end{align}
+$$
+
+which are the Hilbert spaces associated to the left Rindler $\displaystyle{x<0}$ and the right Rindler $\displaystyle{x>0}$.
+
+t
