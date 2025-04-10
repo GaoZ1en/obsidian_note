@@ -248,6 +248,7 @@ maps the half-line in the $\displaystyle{z}$-coordiante to the interval $\displa
 
 $$\tag{4.26}
 \begin{align}
-
+\zeta & =\partial _{\phi} \\
+ & =
 \end{align}
 $$
