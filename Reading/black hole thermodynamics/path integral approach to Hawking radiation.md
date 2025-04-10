@@ -76,4 +76,53 @@ $$
 
 it is clear that this is not the Minkowski vacuum state, which is defined as the Minkowski annihilation operators $\displaystyle{a_{k}^{\dagger}}$, which are not same as the Rindler ones.
 
-the fact that Rindler space has a different choice of time means it has a different 
+the fact that Rindler space has a different choice of time means it has a different choice of energy and therefore a different notion of particle and vacuum...
+
+we can define n-particle state just as Minkowski case... for example, the 1-Rindler-particle state
+
+$$\tag{4.9}
+\begin{align}
+\ket{k} _{R} & =b_{k}^{\dagger}\ket{0} _{R}, & \text{with }H_{\text{Rindler}}\ket{k} _{R}=\omega \ket{k} _{R}
+\end{align}
+$$
+
+we can use the density matrix $\displaystyle{\rho _{\text{Rindler}}=e^{-2\pi H_{\text{Rindler}}}}$ to calculate observables. for example, the occupation number of a mode
+
+$$\tag{4.10}
+\begin{align}
+\braket{ n_{k} } & =\frac{1}{Z}\mathrm{Tr}e^{-2\pi H_{\text{Rindler}}}b_{k}^{\dagger}b_{k} \\
+ & =\left( \sum _{n\geqslant 0} ne^{-2\pi n|k|} \right)/\left(\sum _{n\geqslant 0}e^{-2\pi n|k|}\right) \\
+ & = \frac{1}{e^{2\pi|k|}-1}
+\end{align}
+$$
+
+which is of course the Planck blackbody spectrum (we will discuss grey body factor later (probably)).
+
+### what does an observer actually see?
+
+the proper time element of a Rindler observer is
+
+$$\tag{4.11}
+\begin{align}
+\mathrm{d}\tau _{\text{obs}} & =R_{\text{obs}}\mathrm{d}\eta =\frac{1}{a}\mathrm{d}\eta
+\end{align}
+$$
+
+so the observer will see a mode $\displaystyle{e^{-i\omega\eta}}$ to have energy
+
+$$\tag{4.12}
+\begin{align}
+\omega _{\text{obs}} & =a\omega
+\end{align}
+$$
+
+accordingly, the temperature shown on an accelerating thermometer will be
+
+$$\tag{4.13}
+\begin{align}
+T_{\text{obs}} & =\frac{a}{2\pi}
+\end{align}
+$$
+
+### aside: transient acceleration
+
