@@ -64,8 +64,18 @@ $$
 
 following the above discussion, we can define the vacuum-to-vacuum amplitude as
 
-$$\tag{3.6}
+$$\tag{3.7}
 \begin{align}
-
+\braket{ 0|0 }  & =\int \mathcal{D}\phi e^{-S_{E}[\phi]}
 \end{align}
 $$
+
+expectation values of local operator are computed by similar path integrals, but with extra operator insertions
+
+$$\tag{3.8}
+\begin{align}
+\braket{ O_{1}(x_{1})O_{2}(x_{2}) }  & = \braket{ 0|O_{1}(x_{1})O_{2}(x_{2})|0 }  \\
+ & =\int \mathcal{D}\phi O_{1}(x_{1})O_{2}(x_{2})e^{-S_{E}[\phi]}
+\end{align}
+$$
+
