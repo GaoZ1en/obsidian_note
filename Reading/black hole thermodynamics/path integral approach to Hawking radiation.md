@@ -195,4 +195,30 @@ $$
 
 which are the Hilbert spaces associated to the left Rindler $\displaystyle{x<0}$ and the right Rindler $\displaystyle{x>0}$.
 
-t
+consider the transition amplitude (here we set $\displaystyle{t=0}$)
+
+$$\tag{4.21}
+\begin{align}
+\Psi_{0}[\tilde{\phi}_{R},\phi _{R}] & = {}_{M}\braket{ \tilde{\phi}_{R},\phi _{R}|0 } _{M} \\
+ & =\int _{-\infty}^{\phi(x<0)=\tilde{\phi}_{R},\phi(x>0)=\phi _{R}}\mathcal{D}\phi e^{-S_{E}[\phi]} \\
+ & ={}_{R}\bra{\tilde{\phi}_{R}}e^{-\pi H}\ket{\phi _{R}} _{R}
+\end{align}
+$$
+
+we want to argue that the Minkowski vacuum $\displaystyle{\ket{0}_{M}}$ is the same as the following thermofield double state
+
+$$\tag{4.22}
+\begin{align}
+\ket{\text{TFD}}_{R\otimes R} & \equiv \sum _{n}e^{-\beta E_{n}/2}\ket{n} _{R}\ket{n} ^{*}_{R}
+\end{align}
+$$
+
+where $\displaystyle{\beta=2\pi}$ is the Rindler temperature and $\displaystyle{*}$ means CPT conjugate. we write
+
+$$\tag{4.23}
+\begin{align}
+{}_{M}\braket {\tilde{\phi}_{R},\phi _{R}|\text{TFD}} _{M} & =\sum _{n}e^{-\beta E_{n}/2}{}_{R}\braket{ \tilde{\phi}|n } _{R}{}_{R}\braket{ \phi|n } _{R} \\
+ & = \sum _{n}e^{-\beta E_{n}/2}{}_{R}\braket{ \phi|n } _{R}{}_{R}\braket{ n|\tilde{\phi} } _{R} \\
+ & =\braket{ \phi|e^{-\beta H/2}|\tilde{\phi} } 
+\end{align}
+$$
