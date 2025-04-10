@@ -99,3 +99,5 @@ Z(\beta) & =\mathrm{Tr}e^{-\beta H}=\sum _{\phi}\braket{ \phi|e^{-\beta H}|\phi 
  & =\sum _{\phi}\int _{\phi(\tau=0)=\phi}^{\phi(\tau=\beta)=\phi}\mathcal{D}\phi e^{-\beta H}
 \end{align}
 $$
+
+this seems like to perform a path integral on a torus, since we make a trace.
