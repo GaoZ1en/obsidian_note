@@ -79,3 +79,23 @@ $$\tag{3.8}
 \end{align}
 $$
 
+## density matrices
+
+as definition, we have
+
+$$\tag{3.9}
+\begin{align}
+\rho & \equiv e^{-\beta H}=\int _{\phi(\tau=0)=??}^{\phi(\tau=\beta)=??}\mathcal{D}\phi e^{-S_{E}[\phi]}
+\end{align}
+$$
+
+## thermal partition function
+
+as definition, the partition function is the trace of the density matrix
+
+$$\tag{3.10}
+\begin{align}
+Z(\beta) & =\mathrm{Tr}e^{-\beta H}=\sum _{\phi}\braket{ \phi|e^{-\beta H}|\phi }  \\
+ & =\sum _{\phi}\int _{\phi(\tau=0)=\phi}^{\phi(\tau=\beta)=\phi}\mathcal{D}\phi e^{-\beta H}
+\end{align}
+$$
