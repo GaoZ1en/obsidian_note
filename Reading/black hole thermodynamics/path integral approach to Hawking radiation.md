@@ -248,7 +248,32 @@ maps the half-line in the $\displaystyle{z}$-coordiante to the interval $\displa
 
 $$\tag{4.26}
 \begin{align}
-\zeta & =\partial _{\phi} \\
- & =
+\zeta & =\partial _{\phi}
 \end{align}
 $$
+
+## Hartle-Hawking state
+
+we have seen that there is no (universal) vacuum state in quantum field theory (for example, the Minkowski vaccum and the Rindler vaccum). the same is true on a black hole background. a natural state to consider, which is analogous to the vaccum state we defined in Minkowski space, is the Hartal-Hawking state. consider the analytically continued Euclidean spacetime
+
+$$\tag{4.27}
+\begin{align}
+\mathrm{d}s^{2}=\left( 1-\frac{2M}{r} \right)\mathrm{d}\tau ^{2}+\frac{\mathrm{d}r^{2}}{1-\frac{2M}{r}}+r^{2}\mathrm{d}\Omega ^{2}_{2}
+\end{align}
+$$
+
+with the imaginary time identification $\displaystyle{\tau \sim \tau+\beta}$. sending $\displaystyle{\tau \to \tau+\frac{\beta}{2}}$ takes us to the other side of the Penrose digram.
+
+the path integral prepares an entangled state on $\displaystyle{\tilde{M}\times M}$. the reduced density matrix on our spacetime $\displaystyle{M}$ will be a mixed state
+
+$$\tag{4.28}
+\begin{align}
+\rho _{HH} & =e^{-\beta H}
+\end{align}
+$$
+
+where $\displaystyle{H}$ is the ordinary Minkowski Hamiltonian associated to time translations $\displaystyle{\partial _{t}}$. this is called the Hartle-Hawking state, which describes a black hole in equilibrium with a bath of radiation outside the black hole (why?).
+
+### graybody factors
+
+the Hartle-Hawking vacuum (4.28) is time-independent. this means that in each mode, the flux of outgoing Hawking radiation is equal to the flux of ingoing radiation. howe
