@@ -4,37 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8bc55d6cb4941d33",
+        "id": "5b7dc71ca2471dc8",
         "type": "tabs",
         "children": [
           {
-            "id": "c07e0a55bd9e52eb",
+            "id": "b34663cce2200a18",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/problem set/cambridge/partII/2001/quantum physics.md",
+                "file": "Homework/problem set/cambridge/partIII/2001/59 quantum field theory.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "quantum physics"
-            }
-          },
-          {
-            "id": "404735db44d5012c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reading/black hole thermodynamics/path integrals, states, and operators in QFT.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "path integrals, states, and operators in QFT"
+              "title": "59 quantum field theory"
             }
           }
         ]
@@ -135,10 +120,15 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "c07e0a55bd9e52eb",
+  "active": "b34663cce2200a18",
   "lastOpenFiles": [
-    "Homework/problem set/README.md",
+    "Homework/problem set/cambridge/partIII.md",
+    "Homework/problem set/cambridge/partIII/2001/59 quantum field theory.md",
+    "Homework/problem set/cambridge/partIII/2001",
+    "Homework/problem set/cambridge/partIII",
+    "Reading/black hole thermodynamics/path integrals, states, and operators in QFT.md",
     "Homework/problem set/cambridge/partII/2001/quantum physics.md",
+    "Homework/problem set/README.md",
     "Homework/problem set/cambridge/partII/未命名.md",
     "Homework/problem set/cambridge/partII/2001",
     "Homework/problem set/cambridge/partII",
@@ -148,7 +138,6 @@
     "未命名",
     "Reading/black hole thermodynamics/the gravitational path integral.md",
     "Reading/black hole thermodynamics/path integral approach to Hawking radiation.md",
-    "Reading/black hole thermodynamics/path integrals, states, and operators in QFT.md",
     "Reading/black hole thermodynamics/the laws of black hole thermodynamics.md",
     "Reading/black hole thermodynamics/Rindler space and Hawking radiation.md",
     "Reading/black hole thermodynamics/未命名",
@@ -160,7 +149,6 @@
     "Reading/differential geometry/general concepts.md",
     "Note/Code/tikz/tikzcd exercise.md",
     "Reading/deformation quantization.md",
-    "Reading/differential geometry",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/discussion for Poisson bracket.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/covariant phase space with boundaries.md",
@@ -169,9 +157,6 @@
     "Note/Mathematics/Bäcklund transformation.md",
     "Note/Mathematics/Applications of residue theorem in integration calculating.md",
     "Note/Mathematics/Applications of Laplace transform in integration calculating.md",
-    "Note/Mathematics/algebraic geometry.md",
-    "Lecture/2025 spring/python for general purpose/未命名.md",
-    "Lecture/2025 spring/python for general purpose/短路.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/TMG.md~"
+    "Note/Mathematics/algebraic geometry.md"
   ]
 }
