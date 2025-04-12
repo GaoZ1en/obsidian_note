@@ -276,4 +276,6 @@ where $\displaystyle{H}$ is the ordinary Minkowski Hamiltonian associated to tim
 
 ### graybody factors
 
-the Hartle-Hawking vacuum (4.28) is time-independent. this means that in each mode, the flux of outgoing Hawking radiation is equal to the flux of ingoing radiation. howe
+the Hartle-Hawking vacuum (4.28) is time-independent. this means that in each mode, the flux of outgoing Hawking radiation is equal to the flux of ingoing radiation. howeever, not interested
+
+#### exercise: superradiance
