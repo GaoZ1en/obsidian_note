@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 8.md",
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "lecture note for week 8"
+              "title": "models"
             }
           }
         ]
@@ -123,8 +123,8 @@
   },
   "active": "b34663cce2200a18",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 8.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
     "Homework/problem set/cambridge/partIII/2001/59 quantum field theory.md",
     "Homework/problem set/cambridge/partIII.md",
     "Homework/problem set/cambridge/partIII/2001",
