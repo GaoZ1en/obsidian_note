@@ -275,19 +275,31 @@ a_{\mu}(k)\ket{0}  & =0
 \end{align}
 $$
 
-explain how the Gupta-Bleuler method incorporates the Lorentz gauge condition. What are the resulting conditions on the state $\displaystyle{\ket{k,\varepsilon}=\varepsilon ^{\mu}a^{\dagger}_{\mu}(k)\ket{0}}$? What are the allowed
-solutions for the polarisation vector ϵµ? Among the solutions identify the longitudinal
-and transverse polarisations. Explain why longitudinal photons correpond to states of
-zero norm and why the transverse photons represent the true physical states.
-The contribution of O(e2) to the amplitude for the electron-positron annihilation
-process
-e−(p) + e+(q) →γ(k, ϵ) + γ(k′, ϵ′) ,
+explain how the Gupta-Bleuler method incorporates the Lorentz gauge condition. What are the resulting conditions on the state $\displaystyle{\ket{k,\varepsilon}=\varepsilon ^{\mu}a^{\dagger}_{\mu}(k)\ket{0}}$? What are the allowed solutions for the polarisation vector $\displaystyle{\varepsilon _{\mu}}$? Among the solutions identify the longitudinal and transverse polarisations. Explain why longitudinal photons correpond to states of zero norm and why the transverse photons represent the true physical states. 
+
+The contribution of $\displaystyle{O(e^{2})}$ to the amplitude for the electron-positron annihilation process
+
+$$
+\begin{align}
+e^{-}(p)+e^{+}(q)\longrightarrow\gamma(k,\varepsilon)+\gamma(k',\varepsilon')
+\end{align}
+$$
+
 is
-T = −e2¯v(q)Mu(p) ,
+
+$$
+\begin{align}
+T=-e^{2}\bar{v}(q)Mu(p)
+\end{align}
+$$
+
 where
-M = ϵ′.γ γ.(p −k) + m
-(p −k)2 −m2 ϵ.γ + ϵ.γ γ.(p −k′) + m
-(p −k′)2 −m2 ϵ′.γ ,
-and where u(p) and v(q) are the electron and positron spinor wave functions respectively.
-Verify that if ϵ is replaced by k then T = 0. What does this suggest about the production
-of longitudinal photons in physical scattering processes?
+
+$$
+\begin{align}
+M=\varepsilon'\cdot \gamma\frac{(\gamma \cdot(p-k)+m)}{(p-k)^{2}-m^{2}}\varepsilon \cdot \gamma+\varepsilon \cdot \gamma\frac{(\gamma \cdot(p-k')+m)}{(p-k')^{2}-m^{2}}\varepsilon' \cdot \gamma
+\end{align}
+$$
+
+and where $\displaystyle{u(p)}$ and $\displaystyle{v(q)}$ are the electron and positron spinor wave functions respectively. Verify that if $\displaystyle{\varepsilon}$ is replaced by $\displaystyle{k}$ then $\displaystyle{T=0}$. What does this suggest about the production of longitudinal photons in physical scattering processes?
+
