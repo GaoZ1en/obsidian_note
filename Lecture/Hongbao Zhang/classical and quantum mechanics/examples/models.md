@@ -386,7 +386,7 @@ we would like to consider a special class of transformation such that the metric
 
 $$\tag{2.9}
 \begin{align}
-\sigma=-\frac{2}{d}\nabla _{\rho}\xi ^{\rho}
+\sigma=-\frac{1}{d}\nabla _{\rho}\xi ^{\rho}
 \end{align}
 $$
 
