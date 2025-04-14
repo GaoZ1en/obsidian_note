@@ -137,7 +137,32 @@ $$
 
 $$\tag{.}
 \begin{align}
-\int _{M}\varepsilon T^{\mu \nu}\nabla _{\mu}\xi _{\nu}+\frac{1}{2}\int _{M}(X_{\xi}\cdot \delta \varepsilon)T^{\mu \nu}\delta g_{\mu \nu}+\frac{1}{2}\int _{M}\varepsilon(X_{\xi}\cdot \delta T^{\mu \nu})\delta g_{\mu \nu}+\delta \beta _{\xi}=0 \\
+\int _{M}\varepsilon T^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu})+\frac{1}{2}\int _{M}(X_{\xi}\cdot \delta \varepsilon)T^{\mu \nu}\delta g_{\mu \nu}+\frac{1}{2}\int _{M}\varepsilon(X_{\xi}\cdot \delta T^{\mu \nu})\delta g_{\mu \nu}+\delta \beta _{\xi}=0 \\
 
+\end{align}
+$$
+
+what can be derived?
+
+$$\tag{.}
+\begin{align}
+X_{\xi}\cdot \delta\varepsilon & =\frac{1}{2}\varepsilon g^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})T^{\mu \nu}\delta g_{\mu \nu}
+\end{align}
+$$
+
+### for diffeomorphism transformation
+
+$$\tag{.}
+\begin{align}
+\delta(X_{\xi}\cdot \delta g_{\mu \nu}) & =\delta(\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu}) \\
+ & =-2\delta \Gamma ^{\rho}_{\mu \nu}\xi _{\rho}+\nabla _{\mu}(\delta g_{\nu \rho}\xi ^{\rho})+\nabla _{\nu}(\delta g_{\mu \rho}\xi ^{\rho}) \\
+ & =-(\nabla _{\mu}\delta g_{\rho \nu}+\nabla _{\nu}\delta g_{\mu \rho}-\nabla _{\rho}\delta g_{\mu \nu})\xi ^{\rho}+\nabla _{\mu}\delta g_{\nu \rho}\xi ^{\rho}+\delta g_{\nu \rho}\nabla _{\mu}\xi ^{\rho}+\nabla _{\nu}\delta g_{\mu \rho}\xi ^{\rho}+\delta g_{\mu \rho}\nabla _{\nu}\xi ^{\rho}  \\
+ & =\delta g_{\nu \rho}\nabla _{\mu}\xi ^{\rho}+\delta g_{\mu \rho}\nabla _{\nu}\xi ^{\rho}+\nabla _{\rho}\delta g_{\mu \nu}\xi ^{\rho}
+\end{align}
+$$
+$$\tag{.}
+\begin{align}
+\frac{1}{2}\int _{M}\varepsilon T^{\mu \nu}(\delta g_{\nu \rho}\nabla _{\mu}\xi ^{\rho}+\delta g_{\mu \rho}\nabla _{\nu}\xi ^{\rho}+\nabla _{\rho}\delta g_{\mu \nu}\xi ^{\rho})+\frac{1}{4}\int _{M}\varepsilon g^{\rho \sigma}(\nabla _{\rho}\xi _{\sigma}+\nabla _{\sigma}\xi _{\rho})T^{\mu \nu}\delta g_{\mu \nu}+\frac{1}{2}\int _{M}\varepsilon(X_{\xi}\cdot \delta T^{\mu \nu})\delta g_{\mu \nu}+\delta \beta _{\xi} & =0 \\
+\int _{M}\varepsilon(T^{\rho \nu}\nabla _{\rho}\xi ^{\mu}+T^{\mu \rho}\nabla _{\rho}\xi ^{\nu})\delta g_{\mu \nu}
 \end{align}
 $$
