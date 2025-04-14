@@ -1,4 +1,4 @@
-in this file, we will apply the trick in deriving the Noether theorem to a general theory. the aim is to argue that the Noether charge must be related to the stress tensor.
+nihin this file, we will apply the trick in deriving the Noether theorem to a general theory. the aim is to argue that the Noether charge must be related to the stress tensor.
 
 ## $\displaystyle{X_{\xi}\cdot \delta S}$
 
