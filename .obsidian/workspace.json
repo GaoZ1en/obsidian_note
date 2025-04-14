@@ -37,7 +37,8 @@
               "title": "Noether's trick in Liouville theory"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -136,10 +137,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "b34663cce2200a18",
+  "active": "863f843b97348de6",
   "lastOpenFiles": [
-    "Articles/Noether charge/Noether's trick in Liouville theory.md",
     "Articles/Noether charge/Noether's trick in a general field theory.md",
+    "Articles/Noether charge/Noether's trick in Liouville theory.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 4.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 8.md",

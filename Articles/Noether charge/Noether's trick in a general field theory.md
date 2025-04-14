@@ -76,6 +76,8 @@ we have another argument. consider $\displaystyle{\mathcal{L}_{X_{\xi}}\delta S}
 
 $$\tag{1.6}
 \begin{align}
-\mathcal{L}_{\xi}\delta S & =
+\mathcal{L}_{\xi}\delta S & =X_{\xi}\cdot \delta ^{2}S+\delta(X_{\xi}\cdot \delta S) \\
+ & =\delta(X_{\xi}\cdot \delta S) \\
+ & =\delta\left( \int _{M}\mathbf{E}_{\phi}(X_{\xi}\cdot\delta \phi)-\frac{1}{2}\varepsilon T^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})+X_{\xi}\cdot \theta|_{\Sigma _{f}-\Sigma _{i}} \right)
 \end{align}
 $$
