@@ -1,4 +1,4 @@
-nihin this file, we will apply the trick in deriving the Noether theorem to a general theory. the aim is to argue that the Noether charge must be related to the stress tensor.
+in this file, we will apply the trick in deriving the Noether theorem to a general theory. the aim is to argue that the Noether charge must be related to the stress tensor.
 
 ## $\displaystyle{X_{\xi}\cdot \delta S}$
 
@@ -72,12 +72,72 @@ $$\tag{.}
 \end{align}
 $$
 
-we have another argument. consider $\displaystyle{\mathcal{L}_{X_{\xi}}\delta S}$
+we have another argument. consider $\displaystyle{\mathcal{L}_{X_{\xi}}\delta S}$. on the one hand, we have
 
-$$\tag{1.6}
+$$\tag{1.8}
 \begin{align}
-\mathcal{L}_{\xi}\delta S & =X_{\xi}\cdot \delta ^{2}S+\delta(X_{\xi}\cdot \delta S) \\
- & =\delta(X_{\xi}\cdot \delta S) \\
- & =\delta\left( \int _{M}\mathbf{E}_{\phi}(X_{\xi}\cdot\delta \phi)-\frac{1}{2}\varepsilon T^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})+X_{\xi}\cdot \theta|_{\Sigma _{f}-\Sigma _{i}} \right)
+\mathcal{L}_{X_{\xi}}\delta S & =\delta(X_{\xi}\cdot \delta S) \\
+ & =\delta \alpha _{\xi}|_{\Sigma _{f}-\Sigma _{i}}+\delta \beta _{\xi}
+\end{align}
+$$
+
+on the other hand
+
+$$\tag{1.9}
+\begin{align}
+\mathcal{L}_{X_{\xi}}\delta S & =\delta(X_{\xi}\cdot \delta S)+X_{\xi}\cdot \delta ^{2}S
+\end{align}
+$$
+
+the first term
+
+$$\tag{1.10}
+\begin{align}
+\delta(X_{\xi}\cdot \delta S) & =\delta\left( \int _{M}\mathbf{E}_{\phi}(X_{\xi}\cdot \delta \phi)-\frac{1}{2}\int _{M}\varepsilon T^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})+X_{\xi}\cdot \theta|_{\Sigma _{f}-\Sigma _{i}} \right) \\
+ & =\int _{M}\delta \mathbf{E}_{\phi}(X_{\xi}\cdot \delta \phi)+\int _{M}\mathbf{E}_{\phi}\delta(X_{\xi}\cdot \delta \phi)-\frac{1}{2}\int _{M}\delta \mathbf{E}_{g}^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})-\frac{1}{2}\int _{M}\mathbf{E}_{g}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu}) \\
+ & +\delta(X_{\xi}\cdot \theta)|_{\Sigma _{f}-\Sigma _{i}}
+\end{align}
+$$
+
+the second term
+
+$$\tag{1.11}
+\begin{align}
+X_{\xi}\cdot \delta ^{2}S & =X_{\xi}\cdot \delta\left( \int _{M}\mathbf{E}_{\phi}\delta \phi-\frac{1}{2}\int _{M}\mathbf{E}_{g}^{\mu \nu}\delta g_{\mu \nu}+\theta|_{\Sigma _{f}-\Sigma _{i}} \right) \\
+ & =X_{\xi}\cdot\left( \int _{M}\delta \mathbf{E}_{\phi}\wedge \delta \phi -\frac{1}{2}\int _{M}\delta \mathbf{E}_{g}^{\mu \nu}\wedge\delta g_{\mu \nu}+\delta \theta|_{\Sigma _{f}-\Sigma _{i}}\right) \\
+ & =\int _{M}(X_{\xi}\cdot \delta \mathbf{E}_{\phi})\delta \phi-\int _{M}\delta \mathbf{E}_{\phi}(X_{\xi}\cdot \delta \phi)-\frac{1}{2}\int _{M}(X_{\xi}\cdot \delta \mathbf{E}_{g}^{\mu \nu})\delta g_{\mu \nu}-\frac{1}{2}\int _{M}\delta \mathbf{E}_{g}^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu}) \\
+ & +X_{\xi}\cdot \delta \theta|_{\Sigma _{f}-\Sigma _{i}}
+\end{align}
+$$
+
+add (1.10) and (1.11), we have
+
+$$\tag{1.12}
+\begin{align}
+\mathcal{L}_{X_{\xi}}\delta S & =\int _{M}(X_{\xi}\cdot \delta \mathbf{E}_{\phi})\delta \phi-\frac{1}{2}\int _{M}(X_{\xi}\cdot \delta \mathbf{E}_{g}^{\mu \nu})\delta g_{\mu \nu} \\
+ & +\int _{M}\mathbf{E}_{\phi}(X_{\xi}\cdot \delta \phi)-\frac{1}{2}\int _{M}\mathbf{E}^{\mu \nu}_{g}(X_{\xi}\cdot \delta g_{\mu \nu})+(X_{\xi}\cdot \delta \theta+\delta(X_{\xi}\cdot \theta))|_{\Sigma _{f}-\Sigma _{i}}
+\end{align}
+$$
+
+compare with (1.8), we have
+
+$$\tag{1.13}
+\begin{align}
+\int _{M}(X_{\xi}\cdot \delta \mathbf{E}_{\phi})\delta \phi-\frac{1}{2}\int _{M}(X_{\xi}\cdot \delta \mathbf{E}_{g}^{\mu \nu})\delta g_{\mu \nu}+\int _{M}\mathbf{E}_{\phi}(X_{\xi}\cdot \delta \phi)-\frac{1}{2}\int _{M}\mathbf{E}_{g}^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})+X_{\xi}\cdot \omega|_{\Sigma _{f}-\Sigma _{i}}+\delta(X_{\xi}\cdot \theta-\alpha _{\xi})|_{\Sigma _{f}-\Sigma _{i}}-\delta \beta _{\xi}
+\end{align}
+$$
+
+then apply the Noether theorem and pull back to the prephase space, we have
+
+$$\tag{1.14}
+\begin{align}
+-\frac{1}{2}\int _{M}\mathbf{E}_{g}^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})-\frac{1}{2}\int _{M}(X_{\xi}\cdot \delta \mathbf{E}_{g}^{\mu \nu})\delta g_{\mu \nu}-\delta \beta _{\xi}=0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\int _{M}\varepsilon T^{\mu \nu}\nabla _{\mu}\xi _{\nu}+\frac{1}{2}\int _{M}(X_{\xi}\cdot \delta \varepsilon)T^{\mu \nu}\delta g_{\mu \nu}+\frac{1}{2}\int _{M}\varepsilon(X_{\xi}\cdot \delta T^{\mu \nu})\delta g_{\mu \nu}+\delta \beta _{\xi}=0 \\
+
 \end{align}
 $$
