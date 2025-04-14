@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/Noether charge/Noether's trick in Liouville theory.md",
+                "file": "Articles/Noether charge/Noether's trick in a general field theory.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Noether's trick in Liouville theory"
+              "title": "Noether's trick in a general field theory"
             }
           },
           {
@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
+                "file": "Articles/Noether charge/Noether's trick in Liouville theory.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "models"
+              "title": "Noether's trick in Liouville theory"
             }
           }
         ]
@@ -138,9 +138,9 @@
   },
   "active": "b34663cce2200a18",
   "lastOpenFiles": [
+    "Articles/Noether charge/Noether's trick in Liouville theory.md",
     "Articles/Noether charge/Noether's trick in a general field theory.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
-    "Articles/Noether charge/Noether's trick in Liouville theory.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 4.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 8.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
