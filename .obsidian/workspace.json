@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
+                "file": "Articles/Noether charge/Noether's trick in Liouville theory.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "models"
+              "title": "Noether's trick in Liouville theory"
             }
           }
         ]
@@ -123,8 +123,14 @@
   },
   "active": "b34663cce2200a18",
   "lastOpenFiles": [
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 4.md",
+    "Articles/Noether charge/未命名.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 8.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
+    "在报告里面应该讲什么呢.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
+    "未命名.md",
     "Homework/problem set/cambridge/partIII/2001/59 quantum field theory.md",
     "Homework/problem set/cambridge/partIII.md",
     "Homework/problem set/cambridge/partIII/2001",
@@ -152,12 +158,6 @@
     "Reading/differential geometry/general concepts.md",
     "Note/Code/tikz/tikzcd exercise.md",
     "Reading/deformation quantization.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/discussion for Poisson bracket.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/covariant phase space with boundaries.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models revisted.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/F(R_abcd) gravity.md",
-    "Note/Mathematics/Bäcklund transformation.md",
-    "Note/Mathematics/Applications of residue theorem in integration calculating.md"
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/discussion for Poisson bracket.md"
   ]
 }
