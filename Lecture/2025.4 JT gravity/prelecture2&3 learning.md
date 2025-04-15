@@ -103,4 +103,29 @@ $$
 
 the $\displaystyle{\delta}$-functions implement the boundary length constraint and convenient gauge fixing conditions for the $\displaystyle{\mathrm{PSL}(2,\mathbb{R})}$ disk automorphisms, with associated Fadeev-Popov determinant given by $\displaystyle{\exp\left(\sigma\left(\frac{2\pi}{3}\right)+\sigma\left(\frac{4\pi}{3}\right)\right)}$. the determinant $\displaystyle{|\det(\Delta _{\sigma}-2\eta)|}$ must be computed with Dirichlet boundary conditions and comes from treating the $\displaystyle{R=2\eta}$ constraine. the action $\displaystyle{S_{\mathrm{L}}}$ is the standart Liouville action, with the familiar $\displaystyle{\frac{26-c}{24\pi}}$ factor produced by the ghosts plus matter CFTs.
 
-now restrict to the flat $\displaystyle{\eta=0}$ case. the determinant is equivalent to the contribution of a $\displaystyle{c=2}$ CFT (dilaton $\displaystyle{\Phi}$ and Liouville field itself). thus the determinant is absorbed by replacing $\displaystyle{26-c}$ by $\displaystyle{24-c}$. rescaling $\displaystyle{\Sigma _{\sigma}=\sigma}$
+now restrict to the flat $\displaystyle{\eta=0}$ case. the determinant is equivalent to the contribution of a $\displaystyle{c=2}$ CFT (dilaton $\displaystyle{\Phi}$ and Liouville field itself). thus the determinant is absorbed by replacing $\displaystyle{26-c}$ by $\displaystyle{24-c}$. rescaling $\displaystyle{\Sigma _{\sigma}=\frac{\phi}{Q}}$ with $\displaystyle{Q=\sqrt{ \frac{24-c}{6} }}$ and write $\displaystyle{\phi|_{\partial \mathcal{D}}=\varphi}$, one finds that the action reduces to a nice non-local $\displaystyle{\mathrm{PSL}(2,\mathbb{R})}$-invariant Hilbert-Liouville action for $\displaystyle{\varphi}$
+
+$$\tag{1.5}
+\begin{align}
+S=\frac{1}{4\pi}\int _{0}^{2\pi}(\varphi \mathrm{Hilb}[\varphi']+2Q\varphi)\mathrm{d}\theta & =\sum _{n\geqslant1}n|\varphi _{n}^{2}|+Q\varphi _{0}
+\end{align}
+$$
+
+where $\displaystyle{\mathrm{Hilb}}$ denotes the Hilbert transform and the $\displaystyle{\varphi _{n}}$ are the Fourier coefficients of $\displaystyle{\varphi}$. this action implies that a typical boundary field has $\displaystyle{\varphi _{n}=Q\sigma _{n}}$ of order $\displaystyle{\frac{1}{\sqrt{ n }}}$, and thus diverges pointwise everywhere almost surely...? the field $\displaystyle{\varphi}$ is a random distribution, but a fundamental point is that the field $\displaystyle{\phi}$ in the interior is still uniquely determined by $\displaystyle{\varphi}$ and smooth. writing $\displaystyle{\varphi=\varphi _{0}+\tilde{\varphi}}$, the action (1.5) implies that $\displaystyle{\tilde{\varphi}}$ is a one-dimension log-correlated Gaussian free field, matching with the boundary field in ordinary Liouville theory. however, its extension in the interior is smooth, with a Green function $\displaystyle{G_{\tilde{\phi}\tilde{\phi}}=-2\ln|1-\bar{z}_{1}z_{2}|}$ that is regular at coinciding bulk points. 
+
+the correct boundary length operator is renormalized and is given by $\displaystyle{\beta=\int ^{2\pi}_{0}:e^{\gamma \varphi/2}:\mathrm{d}\theta}$ with $\displaystyle{Q=\frac{2}{\gamma}+\frac{\gamma}{2}}$. the bulk area operator is not renormalized and is given by $\displaystyle{A=\int _{\mathcal{D}}e^{2\phi/Q}\mathrm{d}^{2}z}$. this is of course the consequence of the fact that the bulk geometry does not fluctuate in JT gravity. these remarks allow one to write the correct, rigorously defined partition fucntion, by replacing the boundary conformal factor $\displaystyle{e^{\sigma}}$ by its renormalized version $\displaystyle{:e^{\gamma \varphi/2}:}$. a direct argument a la DDK then yields a partition function of the form of (1.3), with
+
+$$\tag{1.6}
+\begin{align}
+\nu=\frac{1}{2}\left(1+\sqrt{ \frac{c}{c-24} }\right), \quad \vartheta=2-\frac{c}{12}
+\end{align}
+$$
+
+the pure gravity $\displaystyle{c=0}$ case corresponds to $\displaystyle{\nu=\frac{1}{2}}$ and $\displaystyle{\vartheta=2}$, and we have a barrier at $\displaystyle{c=0}$ (alike the $\displaystyle{c=1}$ barrier in ordinary Liouville). the limit $\displaystyle{c\to -\infty}$ is semi-classical, with $\displaystyle{\nu\to1^{-}}$. at $\displaystyle{c>0}$, we conjecture that the geometru is made of multiple "baby universes" connected by narrow wormholes...
+
+## outlook
+
+this work ports some techniques from Liouville theory to the JT gravity.
+
+---
+
