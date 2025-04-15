@@ -32,3 +32,17 @@ lecture 2&3: discretized, lattice, approach (formulation, matrix model descripti
   archiveprefix = {arXiv},
 }
 ```
+
+JT gravity is a two-dimensional quantum gravitational theory in which the bulk curvature is fixed, but the extrinsic curvature of the boundary is allowed to fluctuate. in the case of disk topology, the partition function can be formally written as a path integral
+
+$$\tag{1.1}
+\begin{align}
+\mathscr{Z}^{(\eta)}(\ell,\Lambda) & =\int _{\mathrm{Met}^{(\eta)}_{\ell}(\mathcal{D})}\exp\left(-\frac{\Lambda}{16\pi}A[g]\right)\mathrm{d}\mu[g]
+\end{align}
+$$
+
+over $\displaystyle{\mathrm{Met}^{(\eta)}_{\ell}(\mathcal{D})}$, the space of constant curvature $\displaystyle{R=2\eta}$ metrics $\displaystyle{g}$ of fixed boundary length $\displaystyle{\ell}$ on the disk $\displaystyle{\mathcal{D}}$, with $\displaystyle{\eta=-1,0,+1}$. $\displaystyle{A[g]}$ is the area functional, $\displaystyle{\Lambda}$ is the cosmological constant and $\displaystyle{\mathrm{d}\mu[g]}$ is the appropriate diffeomorphism-invariant integration measure. 
+
+the motivation is that the theoretical foundation of JT quantum gravity is poorly understood compared to the Liouville quantum gravity. the UV definition of the models has not been proposed so far and the meaning of (1.1) remains elusive.
+
+we propose two approaches, which are conjectured to be equivalent... one approach is discrete, random polygon model and something else. another approach is based on techniques in the Liouvile theory.
