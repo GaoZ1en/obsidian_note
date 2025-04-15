@@ -32,4 +32,3 @@ lecture 2&3: discretized, lattice, approach (formulation, matrix model descripti
   archiveprefix = {arXiv},
 }
 ```
-
