@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/Noether charge/Noether's trick in a general field theory.md",
+                "file": "Articles/Noether charge/An example of constrained Hamiltonian systems.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Noether's trick in a general field theory"
+              "title": "An example of constrained Hamiltonian systems"
             }
           },
           {
@@ -35,28 +35,6 @@
               },
               "icon": "lucide-file",
               "title": "Noether's trick in Liouville theory"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "780efbaf1b45ddaf",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "56dae40971565501",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/Noether charge/Noether's trick in a general field theory.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Noether's trick in a general field theory"
             }
           }
         ]
@@ -89,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -158,43 +135,43 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "56dae40971565501",
+  "active": "b34663cce2200a18",
   "lastOpenFiles": [
-    "Articles/Noether charge/Noether's trick in Liouville theory.md",
+    "Articles/Noether charge/Asymptotic behavior.md",
+    "Articles/Noether charge/Boundary stress tensor.md",
+    "Articles/Noether charge/Brackets.md",
+    "Articles/Noether charge/Complex Klein-Gordon scalar.md",
+    "Articles/Noether charge/Conserved charge.md",
+    "Articles/Noether charge/Convergence of α and θ.md",
+    "Articles/Noether charge/Covariant phase space.md",
+    "Articles/Noether charge/Diffeomorphism of some quantities.md",
+    "Articles/Noether charge/Examples of classical anomaly.md",
+    "Articles/Noether charge/Gauss, Codazzi relations and Ricci equation.md",
+    "Articles/Noether charge/Gravitational energy in 3+1D asymptotic flat spacetime.md",
     "Articles/Noether charge/Noether's trick in a general field theory.md",
+    "Articles/Noether charge/Noether's trick in Liouville theory.md",
+    "Articles/Noether charge/Poisson bracket of conserved charges.md",
+    "Articles/Noether charge/README.md",
+    "Articles/Noether charge/Regularized action of pure AdS3 gravity.md",
+    "Articles/Noether charge/Tasks.md",
+    "Articles/Noether charge/Two methods to compute the Noether charge.md",
+    "Articles/Noether charge/Virasoro algebra.md",
+    "Articles/Noether charge/Diffeomorphism of boundary stress tensor.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 4.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 8.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "在报告里面应该讲什么呢.md",
-    "未命名.md",
-    "Homework/problem set/cambridge/partIII/2001/59 quantum field theory.md",
-    "Homework/problem set/cambridge/partIII.md",
     "Homework/problem set/cambridge/partIII/2001",
     "Homework/problem set/cambridge/partIII",
-    "Reading/black hole thermodynamics/path integrals, states, and operators in QFT.md",
-    "Homework/problem set/cambridge/partII/2001/quantum physics.md",
-    "Homework/problem set/README.md",
-    "Homework/problem set/cambridge/partII/未命名.md",
     "Homework/problem set/cambridge/partII/2001",
     "Homework/problem set/cambridge/partII",
     "Homework/problem set/cambridge",
     "Homework/problem set",
-    "Reading/algebra/set theory.md",
     "未命名",
-    "Reading/black hole thermodynamics/the gravitational path integral.md",
-    "Reading/black hole thermodynamics/path integral approach to Hawking radiation.md",
-    "Reading/black hole thermodynamics/the laws of black hole thermodynamics.md",
-    "Reading/black hole thermodynamics/Rindler space and Hawking radiation.md",
     "Reading/black hole thermodynamics/未命名",
-    "Reading/differential geometry/homotopy and homology.md",
     "Reading/black hole thermodynamics",
-    "Reading/algebra",
-    "Reading/differential geometry/Riemann geometry.md",
-    "Reading/differential geometry/Homogeneous Riemann manifold.md",
-    "Reading/differential geometry/general concepts.md",
-    "Note/Code/tikz/tikzcd exercise.md",
-    "Reading/deformation quantization.md"
+    "Reading/algebra"
   ]
 }
