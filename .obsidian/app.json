@@ -4,8 +4,8 @@
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
   "newLinkFormat": "absolute",
-  "showUnsupportedFiles": false,
-  "attachmentFolderPath": "./",
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "Attachments",
   "showInlineTitle": false,
   "pdfExportSettings": {
     "includeName": true,

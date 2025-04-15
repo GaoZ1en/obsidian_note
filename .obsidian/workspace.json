@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/Noether charge/An example of constrained Hamiltonian systems.md",
+                "file": "Lecture/2025.4 JT gravity/prelecture learning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "An example of constrained Hamiltonian systems"
+              "title": "prelecture learning"
             }
           },
           {
@@ -67,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -137,6 +138,12 @@
   },
   "active": "b34663cce2200a18",
   "lastOpenFiles": [
+    "Lecture/2025.4 JT gravity/README.md",
+    "Lecture/2025.4 JT gravity/prelecture learning.md",
+    "Attachments/Pasted image 20250214190351.png",
+    "Attachments/微信图片_20250414131423_29.jpg",
+    "Articles/Noether charge/An example of constrained Hamiltonian systems.md",
+    "Lecture/2025.4 JT gravity",
     "Articles/Noether charge/Asymptotic behavior.md",
     "Articles/Noether charge/Boundary stress tensor.md",
     "Articles/Noether charge/Brackets.md",
@@ -160,9 +167,6 @@
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/models.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 4.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 8.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
-    "在报告里面应该讲什么呢.md",
     "Homework/problem set/cambridge/partIII/2001",
     "Homework/problem set/cambridge/partIII",
     "Homework/problem set/cambridge/partII/2001",
@@ -171,7 +175,6 @@
     "Homework/problem set",
     "未命名",
     "Reading/black hole thermodynamics/未命名",
-    "Reading/black hole thermodynamics",
-    "Reading/algebra"
+    "Reading/black hole thermodynamics"
   ]
 }
