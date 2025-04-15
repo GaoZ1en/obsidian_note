@@ -73,6 +73,8 @@ $$
 
 and matches with the JT partition function. 
 
+the construction can be generalized to the cases of negative or positive curvatures, in the same way as one  can define random walks in hyperbolic space or on the sphere. the fact that the boundary curves are fractal, of dimension $\displaystyle{\frac{1}{\nu}>1}$, is a short-distance effect and will thus be equally valid for zero, negative or positive curvature. this implies that the naive boundary length $\displaystyle{\ell}$ is replaced in all the models by a renormalized parameter $\displaystyle{\beta}$, with $\displaystyle{\beta ^{\nu}}$ having the dimension of length.  
+
 
 ## continuum approach and CFT1
 
