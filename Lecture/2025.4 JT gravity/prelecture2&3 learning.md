@@ -46,3 +46,18 @@ over $\displaystyle{\mathrm{Met}^{(\eta)}_{\ell}(\mathcal{D})}$, the space of co
 the motivation is that the theoretical foundation of JT quantum gravity is poorly understood compared to the Liouville quantum gravity. the UV definition of the models has not been proposed so far and the meaning of (1.1) remains elusive.
 
 we propose two approaches, which are conjectured to be equivalent... one approach is discrete, random polygon model and something else. another approach is based on techniques in the Liouvile theory.
+
+## random self-overlapping polygons
+
+constant curvature metrics on the disk can be described by immersions $\displaystyle{F:\mathcal{D}\to \mathbb{T}_{\eta}}$ from $\displaystyle{\mathcal{D}}$ into a canonical target space, which is the Euclidean plane, the hyperbolic space or the round two-sphere for $\displaystyle{\eta=0, -1,+1}$, respectively. the metric is obtained by pullbacks, $\displaystyle{g=F^{*}\delta}$, where $\displaystyle{\delta}$ is the canonical metric on $\displaystyle{\mathbb{T}_{\eta}}$. the image of the source disk $\displaystyle{\mathcal{D}}$ is called a distorted disk. for a typical configuration, the boundary curve of a distorted disk has self-intersections, the immersion $\displaystyle{F}$ is not an embedding and the distorted disk has self-overlaps.
+
+characterizing the set of allowed closed curves has been studied extensively in the mathematical literature, 
+
+## continuum approach and CFT1
+
+the continuum approach is based on the following observations. acting with diffeomorphisms, we can put any metric on $\displaystyle{\mathcal{D}}$ in the conformal gauge $\displaystyle{g=e^{2\Sigma}\delta _{0}}$, where $\displaystyle{\delta _{0}=\mathrm{d}\rho^{2}+\rho ^{2}\mathrm{d}\theta ^{2}}$. we call $\displaystyle{\Sigma}$ the Liouville field. the constraint of constant curvature $\displaystyle{R=2\eta}$ is equivalent to $\displaystyle{\Delta \Sigma=\eta e^{2\Sigma}}$, where $\displaystyle{\Delta _{0}}$ is the positive Laplacian for the metric $\displaystyle{\delta _{0}}$.
+
+>[!Theorem ]
+> let $\displaystyle{\sigma:S^{1}\to \mathbb{R}}$ be a continuous fucntion defined on the boundary of the disk. then when $\displaystyle{\eta=0}$ or $\displaystyle{\eta=-1}$, there exists a unique solution $\displaystyle{\Sigma _{\sigma}\in C^{\infty}(\mathcal{D})}$ of $\displaystyle{\Delta _{0}\Sigma=\eta e^{2\Sigma}}$ such that $\displaystyle{\Sigma _{\sigma}|_{\partial \mathcal{D}}=\sigma}$.
+
+in these cases, the degrees of freedom of JT gravity are thus encoded in the boundary Liouville field $\displaystyle{\sigma}$, modulo the action of the group $\displaystyle{\mathrm{PSL}(2,\mathbb{R})}$ of disk automorphisms. when $\displaystyle{\eta=+1}$, the situation is more subtle and will be discussed elsewhere. 
