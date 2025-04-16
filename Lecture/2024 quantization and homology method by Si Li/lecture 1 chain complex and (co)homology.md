@@ -26,14 +26,14 @@ let $\displaystyle{R}$ be a commutative ring, a chain complex is a sequence of $
 \end{tikzcd}\end{document}
 ```
 
-such that $\displaystyle{\partial _{n}\circ\partial _{n+1}=0}$. where $\displaystyle{R}$ is not specified, we mean chain complex of Abelian group (i.e. $\displaystyle{R=\mathbb{Z}}$). we write $\displaystyle{(C_{\cdot},\partial)}$ for the complex and $\displaystyle{\partial ^{2}=0}$ for $\displaystyle{\partial _{n}\circ\partial _{n+1}=0}$
+such that $\displaystyle{\partial _{n}\circ\partial _{n+1}=0}$. where $\displaystyle{R}$ is not specified, we mean chain complex of Abelian group (i.e. $\displaystyle{R=\mathbb{Z}}$). we write $\displaystyle{(C_{*},\partial)}$ for the complex and $\displaystyle{\partial ^{2}=0}$ for $\displaystyle{\partial _{n}\circ\partial _{n+1}=0}$
 
 >[!Lemma]
 >$\displaystyle{\mathrm{Im}(\partial _{n+1})\subset \mathrm{Ker}(\partial _{n})}$
 
 > [!Definition homology group]
-> the $\displaystyle{n}$-th homology group of $\displaystyle{(C_{\cdot},\partial)}$ is defined as
-> $$\begin{align}H_{n}(C_{\cdot},\partial)=\frac{\mathrm{Ker}(\partial _{n})}{\mathrm{Im}(\partial _{n+1})}\end{align}$$
+> the $\displaystyle{n}$-th homology group of $\displaystyle{(C_{*},\partial)}$ is defined as
+> $$\begin{align}H_{n}(C_{*},\partial)=\frac{\mathrm{Ker}(\partial _{n})}{\mathrm{Im}(\partial _{n+1})}\end{align}$$
 
 if we inverse all the arrows, we have the dual concepts:
 
@@ -46,13 +46,13 @@ A cochain complex is a sequence of $\displaystyle{R}$-module maps
 \end{tikzcd}\end{document}
 ```
 
-such that $\displaystyle{\mathrm{d}_{n}\circ \mathrm{d}_{n+1}=0}$. we write $\displaystyle{(C^{\cdot},\mathrm{d})}$, and $\displaystyle{\mathrm{d}^{2}=0}$.
+such that $\displaystyle{\mathrm{d}_{n}\circ \mathrm{d}_{n+1}=0}$. we write $\displaystyle{(C^{*},\mathrm{d})}$, and $\displaystyle{\mathrm{d}^{2}=0}$.
 
 and the $\displaystyle{n}$-th cohomology group is defined as
 
 $$
 \begin{align}
-H^{n}(C^{\cdot},\mathrm{d}) & = \frac{\mathrm{Ker}(\mathrm{d}_{n})}{\mathrm{Im}(\mathrm{d}_{n-1})}
+H^{n}(C^{*},\mathrm{d}) & = \frac{\mathrm{Ker}(\mathrm{d}_{n})}{\mathrm{Im}(\mathrm{d}_{n-1})}
 \end{align}
 $$
 
@@ -69,7 +69,7 @@ let $\displaystyle{U\subset \mathbb{R}^{n}}$ be open set by coordinate $\display
 \end{tikzcd}\end{document}
 ```
 
-a $\displaystyle{p}$-form $\displaystyle{\alpha}$ is called closed if $\displaystyle{\mathrm{d}\alpha=0}$, and is called exact if $\displaystyle{\alpha=\mathrm{d}\beta, \exists \beta \in \Omega ^{p-1}(U)}$. $\displaystyle{H^{n}_{\mathrm{dR}}=H^{n}(\Omega ^{\cdot}(U),\mathrm{d}):=\frac{\text{closed }p\text{-form}}{\text{exact }p\text{-form}}}$ is the $\displaystyle{n}$-th de Rham cohomology group.
+a $\displaystyle{p}$-form $\displaystyle{\alpha}$ is called closed if $\displaystyle{\mathrm{d}\alpha=0}$, and is called exact if $\displaystyle{\alpha=\mathrm{d}\beta, \exists \beta \in \Omega ^{p-1}(U)}$. $\displaystyle{H^{n}_{\mathrm{dR}}=H^{n}(\Omega ^{*}(U),\mathrm{d}):=\frac{\text{closed }p\text{-form}}{\text{exact }p\text{-form}}}$ is the $\displaystyle{n}$-th de Rham cohomology group.
 
 we can also consider differential forms with compact support. and we can define the corresponding de Rham cohomology group with compact support.
 
@@ -87,4 +87,30 @@ H^{p}_{c}(\mathbb{R}^{n})=\begin{cases}\mathbb{R}, & p=n \\0, & p<n\end{cases}\e
 
 we prove the case for $\displaystyle{n=1}$. if $\displaystyle{f\in H^{0}(\mathbb{R})}$, then we have $\displaystyle{\mathrm{d}f=0\implies f\equiv \mathrm{Const}.}$
 if $\displaystyle{f\in H^{0}_{c}(\mathbb{R})}$, then we have $\displaystyle{\mathrm{d}f=0}$ and $\displaystyle{f}$ has compact support $\displaystyle{\implies f\equiv 0}$
-let $\displaystyle{\alpha=f(x)\mathrm{d}x}$ is a exact form, $\displaystyle{\mathrm{d}\alpha=0}$, then we have
+let $\displaystyle{\alpha=f(x)\mathrm{d}x}$ is a closed form, $\displaystyle{\mathrm{d}\alpha=0}$, then let $\displaystyle{g(\alpha)=\int _{a}^{x}\alpha}$, and we have $\displaystyle{\alpha=\mathrm{d}g(\alpha)}$, so we have $\displaystyle{H^{1}(\mathbb{R})=0}$. 
+consider the integral map $\displaystyle{\int _{\mathbb{R}}:\Omega ^{1}_{c}(\mathbb{R})\to \mathbb{R}}$. this map is surjective. we know that
+
+$$\tag(1.1)
+\begin{align}
+\int _{\mathbb{R}}\mathrm{d}f & =0
+\end{align}
+$$
+
+conversely, if $\displaystyle{\int _{\mathbb{R}}\alpha=0}$. define $\displaystyle{g(\alpha) = \int _{-\infty}^{x}\alpha}$, then we have $\displaystyle{\int _{\mathbb{R}}\alpha=\int _{\mathbb{R}}\mathrm{d}g(\alpha)=0}$. then $\displaystyle{\int _{\mathbb{R}}}$ induce a isomorphism $\displaystyle{H^{1}_{c}(\mathbb{R})\to \mathbb{R}}$.
+
+for $\displaystyle{n>1}$, we have a similar proof. see Bott-Tu, Differential forms in algebraic topology.
+
+algebraically, the integral is exactly cohomology.
+
+$$\tag{1.2}
+\begin{align}
+\int _{\mathbb{R}^{n}}=H^{*}_{c}
+\end{align}
+$$
+
+---
+
+so we can use homology to study integral (and path integral).
+
+if $\displaystyle{U\subset \mathbb{R}^{n}}$ has non-trivial topology $\displaystyle{\implies}$ nontrivial cohomology
+

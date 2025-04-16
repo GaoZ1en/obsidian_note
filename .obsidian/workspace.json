@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/2024 quantization and homology method by Si Li/lecture 1 chain complex and (co)homology.md",
+                "file": "Lecture/2024 quantization and homology method by Si Li/lecture 3 noncommutative calculus.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "lecture 1 chain complex and (co)homology"
+              "title": "lecture 3 noncommutative calculus"
             }
           },
           {
@@ -154,9 +154,10 @@
   },
   "active": "879828142c2d9f04",
   "lastOpenFiles": [
+    "Lecture/2024 quantization and homology method by Si Li/lecture 1 chain complex and (co)homology.md",
+    "Lecture/2024 quantization and homology method by Si Li/lecture 3 noncommutative calculus.md",
     "Reading/supergravity/relativistic field theory in Minkowski spacetime/scalar field theory and its symmetries.md",
     "Articles/Noether charge/Complex Klein-Gordon scalar.md",
-    "Lecture/2024 quantization and homology method by Si Li/lecture 1 chain complex and (co)homology.md",
     "Lecture/2024 quantization and homology method by Si Li",
     "TODO.md",
     "Reading/supergravity/relativistic field theory in Minkowski spacetime",
@@ -185,7 +186,6 @@
     "Articles/Noether charge/Gauss, Codazzi relations and Ricci equation.md",
     "Articles/Noether charge/Gravitational energy in 3+1D asymptotic flat spacetime.md",
     "Articles/Noether charge/Noether's trick in a general field theory.md",
-    "Articles/Noether charge/Noether's trick in Liouville theory.md",
     "Homework/problem set/cambridge/partIII/2001",
     "Homework/problem set/cambridge/partIII",
     "Homework/problem set/cambridge/partII/2001",
