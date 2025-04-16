@@ -31,3 +31,42 @@ such that $\displaystyle{\partial _{n}\circ\partial _{n+1}=0}$. where $\displays
 >[!Lemma]
 >$\displaystyle{\mathrm{Im}(\partial _{n+1})\subset \mathrm{Ker}(\partial _{n})}$
 
+> [!Definition homology group]
+> the $\displaystyle{n}$-th homology group of $\displaystyle{(C_{\cdot},\partial)}$ is defined as
+> $$\begin{align}H_{n}(C_{\cdot},\partial)=\frac{\mathrm{Ker}(\partial _{n})}{\mathrm{Im}(\partial _{n+1})}\end{align}$$
+
+if we inverse all the arrows, we have the dual concepts:
+
+A cochain complex is a sequence of $\displaystyle{R}$-module maps
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+\dots & C^{n-1} \arrow[r,"\mathrm{d}_{n-1}"] & C^{n} \arrow[r,"\mathrm{d}_{n}"] & C^{n+1} \arrow[r,"\mathrm{d}_{n+1}"] & \dots
+\end{tikzcd}\end{document}
+```
+
+such that $\displaystyle{\mathrm{d}_{n}\circ \mathrm{d}_{n+1}=0}$. we write $\displaystyle{(C^{\cdot},\mathrm{d})}$, and $\displaystyle{\mathrm{d}^{2}=0}$.
+
+and the $\displaystyle{n}$-th cohomology group is defined as
+
+$$
+\begin{align}
+H^{n}(C^{\cdot},\mathrm{d}) & = \frac{\mathrm{Ker}(\mathrm{d}_{n})}{\mathrm{Im}(\mathrm{d}_{n-1})}
+\end{align}
+$$
+
+### examples
+
+#### De Rham complex
+
+let $\displaystyle{U\subset \mathbb{R}^{n}}$ be open set by coordinate $\displaystyle{\left\{x^{1},\dots ,x^{n}\right\}}$. Denote $\displaystyle{\Omega ^{0}(U)=C^{\infty}(U)}$, and $\displaystyle{\Omega ^{n}(U)}$ be the space of smooth $\displaystyle{n}$-form supporting on $\displaystyle{U}$. then we have the De Rham complex
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+\Omega ^{0}(U) \arrow[r,"\mathrm{d}"] & \Omega ^{1}(U) \arrow[r,"\mathrm{d}"] & \dots \arrow[r,"\mathrm{d}"] & \Omega ^{n-1}(U) \arrow[r,"\mathrm{d}"] & \Omega ^{n}(U)
+\end{tikzcd}\end{document}
+```
+
+a $\displaystyle{p}$-form $\displaystyle{\alpha}$ is called closed if $\displaystyle{\mathrm{d}\alpha=0}$, and is called exact if $\displaystyle{\alpha=\mathrm{d}\beta, \exists \beta \in \Omega ^{p-1}(U)}$. $\displaystyle{H^{n}_{\mathrm{dR}}=H^{n}(\Omega ^{\cdot}(U),\mathrm{d}):=\frac{\text{closed }p\text{-form}}{\text{exact }p\text{-form}}}$ is called the n
