@@ -69,7 +69,7 @@ R=\exp\left(-\frac{1}{2}\theta ^{ij}r_{(i,j)}\right)
 \end{align}
 $$
 
-### general internal symmetry
+#### general internal symmetry
 
 it will be useful to establish the notation for the general situation of linearly realized internal symmetry under an arbitrary connected Lie group $\displaystyle{G}$, usually a compact group, of dimension $\displaystyle{\dim G}$. will be interested in an $\displaystyle{n}$-dimensional representation of $\displaystyle{G}$ in which the generators of its Lie algebra are a set of $\displaystyle{n\times n}$ matrices $\displaystyle{(t_{A})^{i}_{~j}}$. the corresponding Lie algebra $\displaystyle{\mathfrak{g}}$ is given by
 
@@ -95,3 +95,41 @@ U(\Theta) & =\exp(-\Theta)=\exp(-\theta ^{A}t_{A})
 \end{align}
 $$
 
+---
+
+back to the action (1.1). consider a infinitesimal transformation
+
+$$\tag{1.12}
+\begin{align}
+X_{ab}=\int \mathrm{d}^{D}x r_{(a,b)~j}^{~~~~~~~~i}\phi ^{j} \frac{\delta}{\delta \phi ^{i}}
+\end{align}
+$$
+then act this symmetry on the action (1.1), we have
+
+$$\tag{1.13}
+\begin{align}
+X_{ab}\cdot \delta S & =-\int \mathrm{d}^{D}x(\eta ^{\mu \nu}\partial _{\mu}\phi ^{i}\partial _{\nu}(X_{ab}\cdot\delta \phi ^{i})+m^{2}\phi ^{i}(X_{ab}\cdot\delta \phi ^{i})) \\
+	 & = -\int \mathrm{d}^{D}x(\eta ^{\mu \nu}\partial _{\mu}\phi ^{i}\partial _{\nu}(r_{(a,b)~j}^{~~~~~~~~i}\phi ^{j})+m^{2}\phi ^{i}(r_{(a,b)~j}^{~~~~~~~~i}\phi ^{j})) \\
+	 & = 0
+\end{align}
+$$
+
+then the corresponding Noether charge is
+
+$$\tag{1.14}
+\begin{align}
+H_{ab} & =X_{ab}\cdot \theta-\alpha _{ab} \\
+ & =\int _{\Sigma}\mathrm{d}^{D-1}x\tau ^{\mu}\partial _{\mu}\phi ^{i}r_{(a,b)~j}^{~~~~~~~~i}\phi ^{j} \\
+ & =r_{(a,b)~j}^{~~~~~~~~i}\int _{\Sigma}\mathrm{d}^{D-1}x\tau ^{\mu}\partial _{\mu}\phi ^{i}\phi ^{j}
+\end{align}
+$$
+
+### spacetime symmetries - the Lorentz and Poincaré groups
+
+the Lorentz group is defined as the group of homeogeneous linear transformations of coordinates in $\displaystyle{D}$-dimensional Minkowski spacetime that preserve the Minkowski norm of any vector. we write
+
+$$\tag{.}
+\begin{align}
+
+\end{align}
+$$

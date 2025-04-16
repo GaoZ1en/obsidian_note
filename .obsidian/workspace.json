@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading/supergravity/relativistic field theory in Minkowski spacetime/scalar field theory and its symmetries.md",
+                "file": "Lecture/2024 quantization and homology method by Si Li/lecture 1 chain complex and (co)homology.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "scalar field theory and its symmetries"
+              "title": "lecture 1 chain complex and (co)homology"
             }
           },
           {
@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/Noether charge/Complex Klein-Gordon scalar.md",
+                "file": "Reading/supergravity/relativistic field theory in Minkowski spacetime/scalar field theory and its symmetries.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Complex Klein-Gordon scalar"
+              "title": "scalar field theory and its symmetries"
             }
           }
         ],
@@ -154,8 +154,10 @@
   },
   "active": "879828142c2d9f04",
   "lastOpenFiles": [
-    "Articles/Noether charge/Complex Klein-Gordon scalar.md",
     "Reading/supergravity/relativistic field theory in Minkowski spacetime/scalar field theory and its symmetries.md",
+    "Articles/Noether charge/Complex Klein-Gordon scalar.md",
+    "Lecture/2024 quantization and homology method by Si Li/lecture 1 chain complex and (co)homology.md",
+    "Lecture/2024 quantization and homology method by Si Li",
     "TODO.md",
     "Reading/supergravity/relativistic field theory in Minkowski spacetime",
     "Reading/supergravity",
@@ -189,7 +191,6 @@
     "Homework/problem set/cambridge/partII/2001",
     "Homework/problem set/cambridge/partII",
     "Homework/problem set/cambridge",
-    "Homework/problem set",
-    "未命名"
+    "Homework/problem set"
   ]
 }
