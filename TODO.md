@@ -5,4 +5,7 @@
 	1.   ramdom disk and something else.
 3. [Freedman] Supergravit.pdf
 4. [McGreevy] Topologic in physics
-5. 
+5. [李文威] 代数学方法
+6. 黑洞热力学
+	1. [Hartman] lectures
+7. 
