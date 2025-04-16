@@ -69,4 +69,22 @@ let $\displaystyle{U\subset \mathbb{R}^{n}}$ be open set by coordinate $\display
 \end{tikzcd}\end{document}
 ```
 
-a $\displaystyle{p}$-form $\displaystyle{\alpha}$ is called closed if $\displaystyle{\mathrm{d}\alpha=0}$, and is called exact if $\displaystyle{\alpha=\mathrm{d}\beta, \exists \beta \in \Omega ^{p-1}(U)}$. $\displaystyle{H^{n}_{\mathrm{dR}}=H^{n}(\Omega ^{\cdot}(U),\mathrm{d}):=\frac{\text{closed }p\text{-form}}{\text{exact }p\text{-form}}}$ is called the n
+a $\displaystyle{p}$-form $\displaystyle{\alpha}$ is called closed if $\displaystyle{\mathrm{d}\alpha=0}$, and is called exact if $\displaystyle{\alpha=\mathrm{d}\beta, \exists \beta \in \Omega ^{p-1}(U)}$. $\displaystyle{H^{n}_{\mathrm{dR}}=H^{n}(\Omega ^{\cdot}(U),\mathrm{d}):=\frac{\text{closed }p\text{-form}}{\text{exact }p\text{-form}}}$ is the $\displaystyle{n}$-th de Rham cohomology group.
+
+we can also consider differential forms with compact support. and we can define the corresponding de Rham cohomology group with compact support.
+
+Stokes' theorem
+
+$$
+\begin{align}
+\int _{M}\mathrm{d}\omega & =\int _{\partial M}\omega
+\end{align}
+$$
+
+>[!Theorem Poincare Lemma]
+> $$\begin{align}H^{p}(\mathbb{R}^{n})=\begin{cases}\mathbb{R}, & p=0 \\0, & p>0\end{cases},\quad
+H^{p}_{c}(\mathbb{R}^{n})=\begin{cases}\mathbb{R}, & p=n \\0, & p<n\end{cases}\end{align}$$
+
+we prove the case for $\displaystyle{n=1}$. if $\displaystyle{f\in H^{0}(\mathbb{R})}$, then we have $\displaystyle{\mathrm{d}f=0\implies f\equiv \mathrm{Const}.}$
+if $\displaystyle{f\in H^{0}_{c}(\mathbb{R})}$, then we have $\displaystyle{\mathrm{d}f=0}$ and $\displaystyle{f}$ has compact support $\displaystyle{\implies f\equiv 0}$
+let $\displaystyle{\alpha=f(x)\mathrm{d}x}$ is a exact form, $\displaystyle{\mathrm{d}\alpha=0}$, then we have
