@@ -142,8 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 411.5,
-    "collapsed": true
+    "width": 411.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -152,10 +151,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "879828142c2d9f04",
+  "active": "841fa8e2e663e1cf",
   "lastOpenFiles": [
-    "Lecture/2024 quantization and homology method by Si Li/lecture 1 chain complex and (co)homology.md",
     "Lecture/2024 quantization and homology method by Si Li/lecture 3 noncommutative calculus.md",
+    "Lecture/2024 quantization and homology method by Si Li/lecture 1 chain complex and (co)homology.md",
     "Reading/supergravity/relativistic field theory in Minkowski spacetime/scalar field theory and its symmetries.md",
     "Articles/Noether charge/Complex Klein-Gordon scalar.md",
     "Lecture/2024 quantization and homology method by Si Li",
