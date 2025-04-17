@@ -181,4 +181,18 @@ $$
 
 $\displaystyle{H_{n}(\Delta,A)}$ is actually an $\displaystyle{A}$-module. the dimension of $\displaystyle{H_{n}(\Delta,A)}$ is called the $\displaystyle{n}$-th Betti number $\displaystyle{b_{n}}$, and is a topological invariant of the manifold $\displaystyle{X}$. if $\displaystyle{A}$ is not a field, there can be more information called torsion. $\displaystyle{H_{n}(X,A)}$ is also a group.
 
-note that the states in $\displaystyle{\Omega _{1}(X,\mathbb{Z}_{2})}$ label a basis of the Hilbert space of the $\displaystyle{\mathbb{Z}_{2}}$ toric code.
+note that the states in $\displaystyle{\Omega _{1}(X,\mathbb{Z}_{2})}$ label a basis of the Hilbert space of the $\displaystyle{\mathbb{Z}_{2}}$ toric code. and $\displaystyle{H_{1}(X,\mathbb{Z}_{2})}$ labels a basis of ground states.
+
+## $\displaystyle{p}$-form $\displaystyle{\mathbb{Z}_{N}}$ toric code
+
+then we will consider a generalization of the toric code model.
+
+consider putting a spin variable on the $\displaystyle{p}$-cells of $\displaystyle{\Delta}$ (as compared to the 1-cells in the toric code). more generally, let's put an $\displaystyle{N}$-dimensional Hilbert space $\displaystyle{\mathcal{H}_{N}\equiv \mathrm{span}\left\{\ket{n},n=0,\dots,N-1\right\}}$ on each $\displaystyle{p}$-cells, on which act the operators
+
+$$\tag{1.16}
+\begin{align}
+\mathbf{Z} &=\sum ^{N-1}_{n=0}\ket{n} \bra{n} \omega ^{n},\quad \mathbf{X}\equiv \sum ^{N-1}_{n=0}\ket{n} \bra{n+1} 
+\end{align}
+$$
+
+where $\displaystyle{\omega\equiv \zeta _{N}}$. $\displaystyle{\mathbf{Z}}$ and $\displaystyle{\mathbf{X}}$ satisfy the Heisenberg algebra $\displaystyle{\mathbf{XZ}=\omega \mathbf{ZX}}$. we have to choose the orientation $\displaystyle{\sigma}$ of each $\displaystyle{p}$-cell. we define $\displaystyle{\mathbf{Z}_{-\sigma}=\mathbf{Z}_{\sigma}^{-1}}$. 
