@@ -5,6 +5,36 @@
 
 * for non-contractible loop $\displaystyle{C_{\hat{x},\hat{y}}}$, we have two sets of operators $\displaystyle{W_{\hat{x},\hat{y}}}$ and $\displaystyle{V_{\hat{x},\hat{y}}}$ with the following algebra
 
+$$\tag{1.1}
+\begin{align}
+W_{\hat{x}}V_{\hat{y}}=\omega V_{\hat{y}}W_{\hat{x}} \\
+W_{\hat{y}}V_{\hat{x}}=\omega ^{-1} V_{\hat{x}}W_{\hat{y}}
+\end{align}
+$$
+
+since $\displaystyle{W^{N}_{\hat{x},\hat{y}}=V^{N}_{\hat{x},\hat{y}}=1}$, their eigenvalues are $\displaystyle{\zeta ^{k}_{N}}$. the common eigenstate of $\displaystyle{W_{\hat{x}}}$ and $\displaystyle{W_{\hat{y}}}$ are denoted by $\displaystyle{\ket{k,l}}$.
+
+$$\tag{1.2}
+\begin{align}
+W_{\hat{x}}V_{\hat{y}}\ket{k,l} & =\omega V_{\hat{y}}W_{\hat{x}}\ket{k,l}  \\
+ & =\omega ^{k+1}V_{\hat{y}}\ket{k,l}  \\
+\implies V_{\hat{y}}\ket{k,l}  & = \ket{k+1,l}  \\
+W_{\hat{y}}V_{\hat{x}}\ket{k,l}  & =\omega ^{-1}V_{\hat{x}}W_{\hat{y}}\ket{k,l}  \\
+ & =\omega ^{l-1}V_{\hat{x}}\ket{k,l}  \\
+\implies V_{\hat{x}}\ket{k,l}  & = \ket{k,l-1} 
+\end{align}
+$$
+
+then we can write
+
+$$\tag{1.3}
+\begin{align}
+\ket{k,-l} =V^{k}_{\hat{x}}V_{\hat{y}}^{l}\ket{0,0} 
+\end{align}
+$$
+
+
+
 1. anyons in the toric code
 	2. show that when acting on a toric code ground state the operator $$\begin{align}W_{C}=\prod _{\ell \in C}X_{\ell}\end{align}$$ creates a state which violates only the star operators at the sites in the boundary of $\displaystyle{C,\partial C}$, a pair of $\displaystyle{e}$-particles
 	3. show that when acting on a toric code ground state the operator $$\begin{align}V_{\hat{C}} & =\prod _{\ell \bot\hat{C}}Z_{\ell}\end{align}$$creates a state which violates only the plaquette operators in the boundary of $\displaystyle{\hat{C}}$, $\displaystyle{\partial \hat{C}}$
