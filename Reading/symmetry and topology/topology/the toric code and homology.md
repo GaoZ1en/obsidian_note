@@ -128,4 +128,6 @@ $$
 
 here $\displaystyle{C}$ is a curve in the lattice and $\displaystyle{\hat{C}}$ is a curve in the dual lattice. endpoints of $\displaystyle{W_{C}}$ violates $\displaystyle{A_{s}}$ are are called $\displaystyle{e}$-particles, with $\displaystyle{\Delta H=-g\sum _{\ell}X_{\ell}}$ the kinetic term for them. while endpoints of $\displaystyle{V_{\hat{C}}}$ violates $\displaystyle{B_{p}}$ and are called $\displaystyle{m}$-particles with $\displaystyle{\Delta H=-h\sum _{\ell}Z_{\ell}}$ the kinetic term. 
 
-the $\displaystyle{e}$-particles and $\displaystyle{m}$-particles are both bosons. and they are their own antiparticles (just like photon and magnetic monopole). 
+the $\displaystyle{e}$-particles and $\displaystyle{m}$-particles are both bosons in the sense of the wave function is symmetrized. and they are their own antiparticles (just like photon and magnetic monopole). but the $\displaystyle{e}$-particles and $\displaystyle{m}$-particles are mutual semions, which means that if we put an $\displaystyle{m}$-particle and move an $\displaystyle{e}$ particle around it, the wave function acquires a phase of $\displaystyle{\pi}$. this is because (1.6). from the gauge theory point of view, this is just the Bohm-Aharonov effect of moving an electric charge around a clump of $\displaystyle{\pi}$-flux. this also means that a bound state of $\displaystyle{e}$ an $\displaystyle{m}$ is a fermion. 
+
+t
