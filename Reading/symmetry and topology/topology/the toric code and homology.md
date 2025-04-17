@@ -130,4 +130,28 @@ here $\displaystyle{C}$ is a curve in the lattice and $\displaystyle{\hat{C}}$ i
 
 the $\displaystyle{e}$-particles and $\displaystyle{m}$-particles are both bosons in the sense of the wave function is symmetrized. and they are their own antiparticles (just like photon and magnetic monopole). but the $\displaystyle{e}$-particles and $\displaystyle{m}$-particles are mutual semions, which means that if we put an $\displaystyle{m}$-particle and move an $\displaystyle{e}$ particle around it, the wave function acquires a phase of $\displaystyle{\pi}$. this is because (1.6). from the gauge theory point of view, this is just the Bohm-Aharonov effect of moving an electric charge around a clump of $\displaystyle{\pi}$-flux. this also means that a bound state of $\displaystyle{e}$ an $\displaystyle{m}$ is a fermion. 
 
-t
+the mutual statistics of $\displaystyle{e}$ and $\displaystyle{m}$ implies the topological ground state degeneracy.
+
+### the phase diagram
+
+perturbations $\displaystyle{\Delta H=-\sum _{\ell}(gX_{\ell}+hZ_{\ell})}$ produce a nonzero correlation length. these couplings $\displaystyle{h}$ and $\displaystyle{g}$ are respectively an electric string tension and a hopping amplitude and fugacity for the $\displaystyle{e}$-particles. make these two big and the model is confined or higgsed, respectively. 
+
+![[Attachments/Pasted image 20250417145002.png]]
+
+see Fradkin-Shenker 1979 for more details.
+ 
+ (...)
+ 
+now jump into abstract topology:
+
+## cell complexes and homology
+
+take a $\displaystyle{d}$-dimensional manifold $\displaystyle{X}$ whose topology is interest and chop it up into simply-connected cells. the gluing data is encoded in a boundary map $\displaystyle{\partial}$. let $\displaystyle{\Delta _{k}}$ be the set of $\displaystyle{k}$-cells in the triangulation of $\displaystyle{X}$, and choose an abelian group $\displaystyle{A}$(some rings $\displaystyle{R}$ with unitary). define a vector space
+
+$$\tag{1.13}
+\begin{align}
+\Omega _{k}\equiv \Omega _{k}(\Delta,A)\equiv \mathrm{span}_{A}\left\{\sigma \in \Delta _{k}\right\}
+\end{align}
+$$
+
+to be spanned by vectors associated with $\displaystyle{k}$-cells $\displaystyle{\sigma}$, with coefficients in $\displaystyle{A}$, a $\displaystyle{A}$-module
