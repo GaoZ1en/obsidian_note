@@ -11,10 +11,15 @@
             "id": "07f4589b2f868cbf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Reading/symmetry and topology/topology/the toric code and homology.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "the toric code and homology"
             }
           }
         ]
@@ -106,7 +111,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 411.5
+    "width": 411.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -118,6 +124,9 @@
   "active": "07f4589b2f868cbf",
   "lastOpenFiles": [
     "Reading/supergravity/relativistic field theory in Minkowski spacetime/scalar field theory and its symmetries.md",
+    "Reading/symmetry and topology/topology/the toric code and homology.md",
+    "Reading/symmetry and topology/topology",
+    "Reading/symmetry and topology",
     "Reading/differential geometry/homotopy and homology.md",
     "Lecture/2024 quantization and homology method by Si Li/lecture 3 noncommutative calculus.md",
     "TODO.md",
@@ -148,12 +157,9 @@
     "Articles/Noether charge/Examples of classical anomaly.md",
     "Articles/Noether charge/Gauss, Codazzi relations and Ricci equation.md",
     "Articles/Noether charge/Gravitational energy in 3+1D asymptotic flat spacetime.md",
-    "Articles/Noether charge/Noether's trick in a general field theory.md",
     "Homework/problem set/cambridge/partIII/2001",
     "Homework/problem set/cambridge/partIII",
     "Homework/problem set/cambridge/partII/2001",
-    "Homework/problem set/cambridge/partII",
-    "Homework/problem set/cambridge",
-    "Homework/problem set"
+    "Homework/problem set/cambridge/partII"
   ]
 }
