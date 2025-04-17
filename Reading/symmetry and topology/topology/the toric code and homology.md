@@ -30,4 +30,34 @@ $$\tag{1.3}
 \end{align}
 $$
 
-if the space has non-
+if the space has non-contractible loops (for example, in the torus), there are inequivalent ground states. if the space has genus $\displaystyle{g}$, there are $\displaystyle{2^{2g}}$ independent ground states. denote $\displaystyle{P=\prod _{p} \frac{1}{2}(1+B_{p})}$. the ground states subspace is spanned by
+
+![[Attachments/Pasted image 20250417093901.png]]
+
+it is notable that the degeneracy is stable to local perturbations of the Hamiltonian. these groundstates are connected by the action of Wilson loops $\displaystyle{W_{C}}$
+
+$$\tag{1.4}
+\begin{align}
+W_{C}\equiv \prod _{\ell \in C}X_{\ell}
+\end{align}
+$$
+
+where $\displaystyle{C}$ is a non-contractable curve. Note that $\displaystyle{[W_{C},P]=0}$, we can use $\displaystyle{W_{C}}$ to get other ground states. to see that the remaining state must be independent of $\displaystyle{\ket{\Omega}}$ and to understand the multiplicity better, define the conjugate (magnetic) loop operator ('t Hooft loop) $\displaystyle{V_{\hat{C}}}$ as
+
+$$\tag{1.5}
+\begin{align}
+V_{\hat{C}} & =\prod _{\ell \bot \hat{C}}Z_{\ell}
+\end{align}
+$$
+
+where $\displaystyle{\hat{C}}$ is a path which passes in between the lattice points, and $\displaystyle{\ell\bot\hat{C}}$ means $\displaystyle{\ell}$ is a link crossed by this path. we will learn to view $\displaystyle{\hat{C}}$ as a path in the dual lattice.
+
+we have the following relations
+
+$$\tag{1.6}
+\begin{align}
+V_{\hat{C}}W_{C} & =(-1)^{\#C\cap \hat{C}}W_{C}V_{\hat{C}}
+\end{align}
+$$
+
+this algebra must be represented on the groundstates (and actually on every energy states).  
