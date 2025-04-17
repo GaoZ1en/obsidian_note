@@ -3,7 +3,7 @@
 	2. now suppose in a different system we have just one set of string operators $\displaystyle{W_{C}}$ satisfying $\displaystyle{W_{C}W_{C'}=\omega ^{\#(C\cap C')}}W_{C'}W_{C}$, with the same definitions as above. how many groundstates does this system have on the two-torus? this is what happens in the Laughlin fractional quantum Hall state with filling fraction $\displaystyle{\frac{1}{N}}$
 	3. redo the previous problems for a genus $\displaystyle{g}$ Riemann surface. in all parts of this problem you should make the assumption that the string operators are deformable: $\displaystyle{W_{C}}$ acts in the same way as $\displaystyle{W_{C+\partial p}}$ on ground states.
 
-* for non-contractible loop $\displaystyle{C_{\hat{x},\hat{y}}}$, we have two sets of operators $\displaystyle{W_{\hat{x},\hat{y}}}$ and $\displaystyle{V_{\hat{x},\hat{y}}}$ with the following algebra
+* for non-contractible loops $\displaystyle{C_{\hat{x},\hat{y}}}$, we have two sets of operators $\displaystyle{W_{\hat{x},\hat{y}}}$ and $\displaystyle{V_{\hat{x},\hat{y}}}$ with the following algebra
 
 $$\tag{1.1}
 \begin{align}
@@ -33,10 +33,32 @@ $$\tag{1.3}
 \end{align}
 $$
 
+there are $\displaystyle{N^{2}}$ linearly independent states, which gives $\displaystyle{N^{2}}$ linearly independent ground states. for Riemann surface with genus $\displaystyle{g}$, we have $\displaystyle{2g}$ independent non-contractible loops and give rise to $\displaystyle{N^{2g}}$ linearly independent ground states.
+* for $\displaystyle{W_{\hat{x}},\hat{y}}$, we have the following algebra
 
+$$\tag{1.4}
+\begin{align}
+W_{\hat{x}}W_{\hat{y}}=\omega W_{\hat{y}}W_{\hat{x}}
+\end{align}
+$$
+
+denote $\displaystyle{\ket{k}}$ by the eigenstate of $\displaystyle{W_{\hat{x}}}$. consider
+
+$$\tag{1.5}
+\begin{align}
+W_{\hat{x}}W_{\hat{y}}\ket{k} =\omega ^{k+1}W_{\hat{y}}\ket{k}  \\
+\implies W_{\hat{y}}\ket{k} =\ket{k+1}  \\
+\implies \ket{k} =W_{\hat{y}}^{k}\ket{0} 
+\end{align}
+$$
+
+we obtain $\displaystyle{N}$ independent states, which give rise to $\displaystyle{N}$ linearly independent ground states. for Riemann surface with genus $\displaystyle{g}$, we have $\displaystyle{N^{g}}$ ground states.
 
 1. anyons in the toric code
-	2. show that when acting on a toric code ground state the operator $$\begin{align}W_{C}=\prod _{\ell \in C}X_{\ell}\end{align}$$ creates a state which violates only the star operators at the sites in the boundary of $\displaystyle{C,\partial C}$, a pair of $\displaystyle{e}$-particles
-	3. show that when acting on a toric code ground state the operator $$\begin{align}V_{\hat{C}} & =\prod _{\ell \bot\hat{C}}Z_{\ell}\end{align}$$creates a state which violates only the plaquette operators in the boundary of $\displaystyle{\hat{C}}$, $\displaystyle{\partial \hat{C}}$
-	4. show that a bound state of an $\displaystyle{e}$ partivle and an $\displaystyle{m}$ particle in the $\displaystyle{2\mathrm{d}}$ toric code must be a fermion.
+	1. show that when acting on a toric code ground state the operator $$\begin{align}W_{C}=\prod _{\ell \in C}X_{\ell}\end{align}$$ creates a state which violates only the star operators at the sites in the boundary of $\displaystyle{C,\partial C}$, a pair of $\displaystyle{e}$-particles
+	2. show that when acting on a toric code ground state the operator $$\begin{align}V_{\hat{C}} & =\prod _{\ell \bot\hat{C}}Z_{\ell}\end{align}$$creates a state which violates only the plaquette operators in the boundary of $\displaystyle{\hat{C}}$, $\displaystyle{\partial \hat{C}}$
+	3. show that a bound state of an $\displaystyle{e}$ partivle and an $\displaystyle{m}$ particle in the $\displaystyle{2\mathrm{d}}$ toric code must be a fermion.
 
+* 1
+* take dual of question one.
+* 
