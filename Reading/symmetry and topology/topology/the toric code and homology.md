@@ -60,4 +60,54 @@ V_{\hat{C}}W_{C} & =(-1)^{\#C\cap \hat{C}}W_{C}V_{\hat{C}}
 \end{align}
 $$
 
-this algebra must be represented on the groundstates (and actually on every energy states).  
+this algebra must be represented on the groundstates (and actually on every energy states). and it has no one-dimensional representations. 
+
+(this means that the ground state degeneracy is at least $\displaystyle{2^{2g}}$. to see that it is exactly $\displaystyle{2^{2g}}$, we can use the fact that the algebra of operators $\displaystyle{W_{C}}$ and $\displaystyle{V_{\hat{C}}}$ has a representation on the homology of the lattice. this means that there are $\displaystyle{2^{2g}}$ independent ground states, and they are all connected by the action of $\displaystyle{W_{C}}$ and $\displaystyle{V_{\hat{C}}}$.)
+
+consider a perturbation of the toric code Hamiltonian
+
+$$\tag{1.7}
+\begin{align}
+H' & =H-g\sum _{\ell}X_{\ell}-h\sum _{\ell}Z_{\ell}
+\end{align}
+$$
+
+at finite $\displaystyle{g,h}$, there is tunneling between the topologically degenerate groundstates, since in that case
+
+$$\tag{1.8}
+\begin{align}
+\left[ H,\sum _{\ell \in C} X_{\ell}\right],\left[ H,\sum _{\ell \in\hat{C}}Z_{\ell} \right]\neq0
+\end{align}
+$$
+
+this means
+
+$$\tag{1.9}
+\begin{align}
+\braket{ \Omega _{0}|H|\Omega _{1} } \equiv \Gamma\neq 0
+\end{align}
+$$
+
+which will lead to a splitting of the topological degeneracy. the amplitude $\displaystyle{\Gamma}$ goes like
+
+$$\tag{1.10}
+\begin{align}
+\Gamma \sim e^{-L|\log g/4|}
+\end{align}
+$$
+
+is extremely small in the thermodynamic limit ($\displaystyle{L\gg1}$). 
+
+### spontaneous breaking of 1-form symmetries
+
+topological order is spontaneous breaking of discrete higher-form symmetries, just as in the case of Landau paradigm. 
+
+string condensation. notice that the phase with topological order involves the condensation of the electric flux strings, in the sense that the operator $\displaystyle{W_{C}}$ for contractable loops which create these strings have a nonzero ground state expactation
+
+$$\tag{1.11}
+\begin{align}
+\braket{ \Omega|W_{C}|\Omega } \overset{g=\infty}{=} 1
+\end{align}
+$$
+
+this is the order parameter for the 1-form symmetry breaking. 
