@@ -154,4 +154,31 @@ $$\tag{1.13}
 \end{align}
 $$
 
-to be spanned by vectors associated with $\displaystyle{k}$-cells $\displaystyle{\sigma}$, with coefficients in $\displaystyle{A}$, a $\displaystyle{A}$-module
+to be spanned by vectors associated with $\displaystyle{k}$-cells $\displaystyle{\sigma}$, with coefficients in $\displaystyle{A}$, (actually, an $\displaystyle{A}$-module). an element $\displaystyle{C\in \Omega _{k}}$ is called a $\displaystyle{k}$-chain. the boundary map defines a map between $\displaystyle{\Omega _{k}}$ and $\displaystyle{\Omega _{k-1}}$, and has the following core property
+
+$$\tag{1.14}
+\begin{align}
+\partial _{k-1}\circ\partial _{k} & =0
+\end{align}
+$$
+
+we write $\displaystyle{\partial ^{2}=0}$ for simplicity. then $\displaystyle{(\Omega _{*},\partial)}$ forms a chain complex of the form
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+\Omega _{0}\arrow{r}{\partial _{0}} & \Omega _{1} \arrow{r}{\partial _{1}} & \cdots \arrow{r}{\partial _{d-2}} & \Omega _{d-1} \arrow{r}{\partial _{d-1}} & \Omega _{d}
+\end{tikzcd}\end{document}
+```
+
+we can define the $\displaystyle{n}$-th homology group of this chain complex
+
+$$\tag{1.15}
+\begin{align}
+H_{n}(\Delta,A) & \equiv \frac{\mathrm{Ker}(\partial _{n})}{\mathrm{Im}(\partial _{n+1})}
+\end{align}
+$$
+
+$\displaystyle{H_{n}(\Delta,A)}$ is actually an $\displaystyle{A}$-module. the dimension of $\displaystyle{H_{n}(\Delta,A)}$ is called the $\displaystyle{n}$-th Betti number $\displaystyle{b_{n}}$, and is a topological invariant of the manifold $\displaystyle{X}$. if $\displaystyle{A}$ is not a field, there can be more information called torsion. $\displaystyle{H_{n}(X,A)}$ is also a group.
+
+note that the states in $\displaystyle{\Omega _{1}(X,\mathbb{Z}_{2})}$ label a basis of the Hilbert space of the $\displaystyle{\mathbb{Z}_{2}}$ toric code.
