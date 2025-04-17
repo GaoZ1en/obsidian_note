@@ -111,3 +111,21 @@ $$\tag{1.11}
 $$
 
 this is the order parameter for the 1-form symmetry breaking. 
+
+### gauge theory notation
+
+### excitations
+
+there are two kinds of particle excitations in the $\displaystyle{2\mathrm{d}}$ toric code: violations of $\displaystyle{A_{s}=1}$ and violations of $\displaystyle{B_{p}=1}$. notice that the former kinds of defects would be strictly forbidden in "pure gauge theory" (Gauss law constraint). So pure gauge theory is the limit where the coefficient of $\displaystyle{A_{s}}$ goes to $\displaystyle{\infty}$.
+
+notice that it is not possible to creat a single excitation from the ground state. instead, the excitations are created by the endpoints of open Wilson lines. again there are two kinds
+
+$$\tag{1.12}
+\begin{align}
+W_{C}=\prod _{\ell \in C}X_{\ell}, V_{\hat{C}}=\prod _{\ell \bot\hat{C}}Z_{\ell}
+\end{align}
+$$
+
+here $\displaystyle{C}$ is a curve in the lattice and $\displaystyle{\hat{C}}$ is a curve in the dual lattice. endpoints of $\displaystyle{W_{C}}$ violates $\displaystyle{A_{s}}$ are are called $\displaystyle{e}$-particles, with $\displaystyle{\Delta H=-g\sum _{\ell}X_{\ell}}$ the kinetic term for them. while endpoints of $\displaystyle{V_{\hat{C}}}$ violates $\displaystyle{B_{p}}$ and are called $\displaystyle{m}$-particles with $\displaystyle{\Delta H=-h\sum _{\ell}Z_{\ell}}$ the kinetic term. 
+
+the $\displaystyle{e}$-particles and $\displaystyle{m}$-particles are both bosons. and they are their own antiparticles (just like photon and magnetic monopole). 
