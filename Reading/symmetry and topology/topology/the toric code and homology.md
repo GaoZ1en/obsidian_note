@@ -98,7 +98,7 @@ $$
 
 is extremely small in the thermodynamic limit ($\displaystyle{L\gg1}$). 
 
-### spontaneous breaking of 1-form symmetries
+### spontaneous breaking of 1-form symmetries, Landau paradigm beyond Landau paradigm :)
 
 topological order is spontaneous breaking of discrete higher-form symmetries, just as in the case of Landau paradigm. 
 
