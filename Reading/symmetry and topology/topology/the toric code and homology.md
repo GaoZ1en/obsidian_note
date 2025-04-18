@@ -246,8 +246,36 @@ $$
 
 as in the toric code, we require
 
-$$\tag{1.}
+$$\tag{1.23}
 \begin{align}
-
+\sum _{\sigma \in v(s)} k _{\sigma}=0\mod N, \forall s\in \Delta _{p-1}
 \end{align}
 $$
+
+## examples of chain complex
+
+### single point
+
+the chain complex is simply
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+p \arrow{r}{\partial} & 0
+\end{tikzcd}\end{document}
+```
+
+and the only homology group is $\displaystyle{H_{0}(p,A)=A}$. for several distinct points, we have $\displaystyle{H_{0}(k\text{ pts},A)=A^{k}}$
+
+### circle
+
+the chain complex is
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+S^{1} \arrow{r}{\partial} & p \\
+\end{tikzcd}\end{document}
+```
+
+where $\displaystyle{p}$ is a point on the cirble $\displaystyle{S^{1}}$. 
