@@ -195,4 +195,59 @@ $$\tag{1.16}
 \end{align}
 $$
 
-where $\displaystyle{\omega\equiv \zeta _{N}}$. $\displaystyle{\mathbf{Z}}$ and $\displaystyle{\mathbf{X}}$ satisfy the Heisenberg algebra $\displaystyle{\mathbf{XZ}=\omega \mathbf{ZX}}$. we have to choose the orientation $\displaystyle{\sigma}$ of each $\displaystyle{p}$-cell. we define $\displaystyle{\mathbf{Z}_{-\sigma}=\mathbf{Z}_{\sigma}^{-1}}$. 
+where $\displaystyle{\omega\equiv \zeta _{N}}$. $\displaystyle{\mathbf{Z}}$ and $\displaystyle{\mathbf{X}}$ satisfy the Heisenberg algebra $\displaystyle{\mathbf{XZ}=\omega \mathbf{ZX}}$. we have to choose the orientation $\displaystyle{\sigma}$ of each $\displaystyle{p}$-cell. we define $\displaystyle{\mathbf{Z}_{-\sigma}=\mathbf{Z}_{\sigma}^{-1}}$. we need to define the vicinity map $\displaystyle{v}$ (the dual map of $\displaystyle{\partial}$)
+
+$$\tag{1.17}
+\begin{align}
+v & :\Omega _{p}\to \Omega _{p+1} \\
+\sigma & \mapsto v(\sigma)\equiv\left\{\mu \in \Delta _{p+1}|\partial \mu=+\sigma+\dots\right\}
+\end{align}
+$$
+
+and we have
+
+$$\tag{1.18}
+\begin{align}
+\braket{ \sigma,v\mu }  & = \braket{ \partial \sigma ,v}
+\end{align}
+$$
+
+consider the Hamiltonian
+
+$$\tag{1.19}
+\begin{align}
+H & =-J_{p-1}\sum _{s \in \Delta _{p-1}}A_{s}-J_{p+1}\sum _{\mu \in \Delta _{p+1}}B_{\mu}-\Gamma _{p}\sum _{\sigma \in \Delta _{p}}\mathbb{Z}_{\sigma}+\mathrm{h.c.}
+\end{align}
+$$
+
+with
+
+$$\tag{1.20}
+\begin{align}
+A_{s} & \equiv \prod _{\sigma \in v(s)}\mathbf{Z}_{\sigma},\quad B_{\mu} =\prod _{\sigma \in \partial \mu} \mathbf{X}_{\sigma}
+\end{align}
+$$
+
+one has the following algebra
+
+$$\tag{1.21}
+\begin{align}
+[A_{s},A_{s'}]=0, [B_{\mu},B_{\mu'}]=0, [A_{s},B_{\mu}]=0, \forall s,s'\in \Delta _{p-1}, \mu, \mu'\in \Delta _{p+1}
+\end{align}
+$$
+
+for $\displaystyle{\Gamma _{p}=0}$ this Hamiltonian is exactly solvable, since we have
+
+$$\tag{1.22}
+\begin{align}
+B_{\mu}A_{s} & =\prod _{\sigma'\in \partial \mu}\mathbf{X}_{\sigma'}\prod _{\sigma \in v(s)}\mathbf{Z}_{\sigma}=A_{s}B_{\mu}\prod _{\sigma'\in \partial \mu}\prod _{\sigma \in vs}\omega ^{\braket{ \sigma,\sigma' } }=A_{s}B_{\mu}\omega ^{\braket{ v(s),\partial \mu } }=0
+\end{align}
+$$
+
+as in the toric code, we require
+
+$$\tag{1.}
+\begin{align}
+
+\end{align}
+$$
