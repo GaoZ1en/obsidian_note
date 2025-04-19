@@ -317,7 +317,40 @@ A' \arrow{r}{f'} & B' \arrow{r}{g'} & C' \arrow{r}{h'} & D' \arrow{r}{k'} & E'
 \end{tikzcd}\end{document}
 ```
 
-if $\displaystyle{\beta,\gamma}$ are isomorphisms, $\displaystyle{\alpha}$ is , then $\displaystyle{\beta}$ is also an isomorphism.
+if $\displaystyle{\beta,\delta}$ are isomorphisms, $\displaystyle{\alpha}$ is surjective and $\displaystyle{\varepsilon}$ is injective, then $\displaystyle{\gamma}$ is also an isomorphism.
+
+* surjectivity
+1. consider $\displaystyle{c'\in C'}$.
+2. since $\displaystyle{\delta}$ is surjective, $\displaystyle{\exists d\in D \text{ s.t. }\delta(d)=h'(c')}$
+3. by commutation, $\displaystyle{k'(\delta(d))=\varepsilon(k(d))}$
+4. by exactness, $\displaystyle{\mathrm{Im}h'=\mathrm{Ker}k'\implies k'(h'(c'))=k'(\delta(d))=\varepsilon(k(d))=0}$
+5. since $\displaystyle{\varepsilon}$ is injective, $\displaystyle{k(d)=0\implies d\in \mathrm{Ker}(k)}$
+6. by exactness, $\displaystyle{d\in \mathrm{Im}(h)}$, that is $\displaystyle{\exists c\in C, \text{ s.t. }h(c)=d}$
+7. by commutation, $\displaystyle{h'(\gamma(c))=\delta(h(c))=\delta(d)=h'(c')\implies h'(\gamma(c)-c')=0}\implies \gamma(c)-c'\in \mathrm{Ker}h'$
+8. by exactness, $\displaystyle{\gamma(c)-c'\in \mathrm{Im}g'\implies \exists b'\in B',\text{ s.t. }g'(b')=\gamma(c)-c'}$
+9. since $\displaystyle{\beta}$ is surjective, $\displaystyle{\exists b\in B,\text{ s.t. }\beta(b)=b'}$
+10. by commutation $\displaystyle{g'(\beta(b))=\gamma(g(b))=g'(b')=\gamma(c)-c'}$
+11. since $\displaystyle{\gamma}$ is homomorphism, $\displaystyle{\gamma(c-g(b))=c'}$, thus $\displaystyle{\gamma}$ is surjective.
+* injective
+1. consider $\displaystyle{c\in C,\text{ s.t. }\gamma(c)=0}$ (we only need to verify that $\displaystyle{c=0}$)
+2. $\displaystyle{h'(\gamma(c))=0\implies \gamma(c)\in \mathrm{Ker}(h')}$
+3. by commutation, $\displaystyle{\delta(h(c))=h'(\gamma(c))=0}$
+4. since $\displaystyle{\delta}$ is injective, $\displaystyle{h(c)=0\implies c\in \mathrm{Ker}(h)}$
+5. by exactness $\displaystyle{c\in \mathrm{Im}(g)\implies \exists b\in B,\text{ s.t. }g(b)=c}$
+6. by commutation, $\displaystyle{\gamma(g(b))=\gamma(c)=0=g'(\beta(b))\implies \beta(b)\in \mathrm{Ker}(g')}$
+7. by exactness $\displaystyle{\beta(b)\in \mathrm{Im}(f')\implies \exists a'\in A',f'(a')=\beta(b)}$
+8. since $\displaystyle{\alpha}$ is surjective, $\displaystyle{\exists a\in A, \text{ s.t. }\alpha(a)=a'}$
+9. by commutation, $\displaystyle{f'(\alpha(a))=\beta(f(a))=f'(a')=\beta(b)=> \beta(b-f(a))=0}$
+10. since $\displaystyle{\beta}$ is injective, $\displaystyle{b=f(a)}$
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+A \arrow{r}{f} \arrow{d}{\alpha} & B \arrow{r}{g} \arrow{d}{\beta} & C \arrow{r}{h} \arrow{d}{\gamma} & D \arrow{r}{k} \arrow{d}{\delta} & E \arrow{d}{\varepsilon}\\
+A' \arrow{r}{f'} & B' \arrow{r}{g'} & C' \arrow{r}{h'} & D' \arrow{r}{k'} & E'
+\end{tikzcd}\end{document}
+```
+
 
 * injectivity
 suppose $\displaystyle{\beta(b)=0, b\in B}$. 
@@ -332,7 +365,4 @@ Short Five Lemma: consider the following commutative diagram of short exact sequ
 \end{tikzcd}\end{document}
 ```
 
-if $\displaystyle{\alpha,\gamma}$ are isomorphisms, then $\displaystyle{\beta}$ is also an isomorphism.
-
-* injectivity
-1. $\displaystyle{\forall b\in B}$, 
+if $\displaystyle{\alpha,\gamma}$ are isomorphisms, then $\displaystyle{\beta}$ is also an isomorphism. this is a direct corollary of the Five Lemma
