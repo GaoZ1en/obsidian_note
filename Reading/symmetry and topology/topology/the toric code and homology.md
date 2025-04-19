@@ -258,3 +258,31 @@ see another file
 
 ## Higgsing, change of coefficients, exact sequences
 
+the problem is that how the two toric code model with gauge group $\displaystyle{A_{1}}$ and $\displaystyle{A_{2}}$, with $\displaystyle{A_{2}\subset A_{1}}$, are related? one way they are related is by Higgsing, and finally we end up with a toric code with gauge group $\displaystyle{A_{1}/A_{2}}$. consider the exact sequence
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+0\arrow{r}& A_{2} \arrow{r}{i} & A_{1} \arrow{r}{\pi} & A_{1}/A_{2} \arrow{r} & 0
+\end{tikzcd}\end{document}
+```
+
+exact sequence like this is called a group extension. this short sequence produces a corresponding short exact sequence on the chain complexes
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+0\arrow{r} & \Omega _{\cdot}(A_{2})\arrow{r}{i} & \Omega _{\cdot}(A_{1})\arrow{r}{\pi} & \Omega _{\cdot}(A_{1}/A_{2})\arrow{r} & 0
+\end{tikzcd}\end{document}
+```
+
+as long as $\displaystyle{i}$ and $\displaystyle{\pi}$ (they are called chain maps) commutes with the boundary operator $\displaystyle{\partial}$, any such short sequence on chain complexes produces the following long exact sequence on their homology
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+\dots \arrow{r} & H_{p+1}(A_{1}/A_{2}) \arrow{r} & H_{p}(A_{2}) \arrow{r} & H_{p}(A_{1}) \arrow{r} & H_{p}(A_{1}/A_{2}) \arrow{r}{\partial _{\star}} & H_{p-1}(A_{2}) \arrow{r} & H_{p-1}(A_{1}) \arrow{r} & H_{p-1}(A_{1}/A_{2}) \arrow{r}{\partial _{\star}} & H_{p-2}(A_{2}) \arrow{r} & \dots
+\end{tikzcd}\end{document}
+```
+
+the only mystery is the Bockstein $\displaystyle{\partial _{\star}}$. 
