@@ -276,7 +276,7 @@ exact sequence like this is called a group extension. this short sequence produc
 \end{tikzcd}\end{document}
 ```
 
-as long as $\displaystyle{i}$ and $\displaystyle{\pi}$ (they are called chain maps) commutes with the boundary operator $\displaystyle{\partial}$, any such short sequence on chain complexes produces the following long exact sequence on their homology
+as long as $\displaystyle{i}$ and $\displaystyle{\pi}$ (they are called chain maps) commutes with the boundary operator $\displaystyle{\partial}$, any such short sequence on chain complexes produces the following long exact sequence on their homology (this is called snake lemma)
 
 ```tikz
 \usepackage{tikz-cd,amsmath,amssymb}
@@ -285,4 +285,17 @@ as long as $\displaystyle{i}$ and $\displaystyle{\pi}$ (they are called chain ma
 \end{tikzcd}\end{document}
 ```
 
-the only mystery is the Bockstein $\displaystyle{\partial _{\star}}$. 
+the only mystery is the Bockstein $\displaystyle{\partial _{\star}}$. here is the idea. consider the following commuting diagram
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+ & \vdots \arrow{d}{\partial} & \vdots \arrow{d}{\partial} & \vdots \arrow{d}{\partial} & \\
+0 \arrow{r} & \Omega _{p+1}(A_{2}) \arrow{r}{i} \arrow{d}{\partial} & \Omega _{p+1}(A_{1}) \arrow{r}{\pi} \arrow{d}{\partial} & \Omega _{p+1}(A_{1}/A_{2}) \arrow{r} \arrow{d}{\partial} & 0 \\
+0 \arrow{r} & \Omega _{p}(A_{2}) \arrow{r}{i} \arrow{d}{\partial} & \Omega _{p}(A_{1}) \arrow{r}{\pi} \arrow{d}{\partial} & \Omega _{p}(A_{1}/A_{2}) \arrow{r} \arrow{d}{\partial} & 0 \\
+0 \arrow{r} & \Omega _{p-1}(A_{2}) \arrow{r}{i} \arrow{d}{\partial} & \Omega _{p-1}(A_{1}) \arrow{r}{\pi} \arrow{d}{\partial} & \Omega _{p-1}(A_{1}/A_{2}) \arrow{r} \arrow{d}{\partial} & 0 \\
+& \vdots & \vdots & \vdots &
+\end{tikzcd}\end{document}
+```
+
+the technique here is called the diagram chase. we start with an element $\displaystyle{c\in \mathrm{Ker}\partial \subset \Omega _{p}(A_{1}/A_{2})}$ 
