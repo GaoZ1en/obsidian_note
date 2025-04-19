@@ -108,3 +108,22 @@ R\oplus R & n=1 \\
 \end{cases}
 \end{align}
 $$
+
+more generally, for Riemann surface of genus $\displaystyle{g}$, we have ...
+
+## $\displaystyle{S^{n}}$
+
+we can make it iteratively. start from $\displaystyle{S^{0}=\left\{-1,1\right\}}$, which we call $\displaystyle{\sigma _{0}}$ and $\displaystyle{T\sigma _{0}}$, then glue them by $\displaystyle{\sigma _{1}}$ and $\displaystyle{T\sigma _{1}}$ with $\displaystyle{\partial _{1}\sigma _{1}=\sigma _{0}-T\sigma _{0}, \partial _{1}T\sigma _{1}=T\sigma _{0}-\sigma _{0}}$. then glue on 2-cells by $\displaystyle{\sigma _{2}}$ and $\displaystyle{T\sigma _{2}}$, with $\displaystyle{\partial _{2}\sigma _{2}=\sigma _{1}+T\sigma _{1}=-\partial _{2}T\sigma _{2}}$. on and on. finally we have $\displaystyle{\partial _{k}\sigma _{k}=\sigma _{k-1}+(-1)^{k}T\sigma _{k-1}}$. so we have
+
+$$\tag{1.7}
+\begin{align}
+H_{m}(S^{n},R) & =\begin{cases}
+R & m=0,n \\
+0 & \text{otherwise}
+\end{cases}
+\end{align}
+$$
+
+## $\displaystyle{\mathbb{RP}^{n}}$
+
+$\displaystyle{\mathbb{RP}^{n}}$ is the space of lines through the origin
