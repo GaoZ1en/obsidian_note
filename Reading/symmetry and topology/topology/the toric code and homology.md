@@ -254,3 +254,7 @@ $$
 
 ## examples of chain complex
 
+see another file
+
+## Higgsing, change of coefficients, exact sequences
+

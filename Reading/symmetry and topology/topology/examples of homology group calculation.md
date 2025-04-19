@@ -126,4 +126,15 @@ $$
 
 ## $\displaystyle{\mathbb{RP}^{n}}$
 
-$\displaystyle{\mathbb{RP}^{n}}$ is the space of lines through the origin
+$\displaystyle{\mathbb{RP}^{n}}$ is the space of lines through the origin in $\displaystyle{\mathbb{R}^{n+1}}$. we can make similar construction as $\displaystyle{S^{n}}$ but with $\displaystyle{\partial _{n}\sigma _{n}=(1+(-1)^{i})\sigma _{i-1}}$, which gives rise to 
+
+$$\tag{1.8}
+\begin{align}
+H_{m}(\mathbb{RP}^{n},R)=\begin{cases}
+R & i=0 \text{ or } n \text{ with } n \text{ odd} \\
+\mathbb{Z}_{2} & i \text{ odd, <n} \\
+0 & \text{else}
+\end{cases}
+\end{align}
+$$
+
