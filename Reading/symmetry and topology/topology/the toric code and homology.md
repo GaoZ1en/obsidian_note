@@ -359,3 +359,15 @@ if $\displaystyle{\alpha,\gamma}$ are isomorphisms, then $\displaystyle{\beta}$ 
 
 Weak Four Lemma
 
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+A \arrow{r}{f} \arrow{d}{\alpha} & B \arrow{r}{g} \arrow{d}{\beta} & C \arrow{r}{h} \arrow{d}{\gamma} & D \arrow{d}{\delta} \\
+A' \arrow{r}{f'} & B' \arrow{r}{g'} & C' \arrow{r}{h'} & D'
+\end{tikzcd}\end{document}
+```
+
+each line is exact. if $\displaystyle{\alpha}$ is surjective and $\displaystyle{\beta,\delta}$ are injective, then $\displaystyle{\gamma}$ is injective. dually, if $\displaystyle{\delta}$ is injective and $\displaystyle{\alpha,\gamma}$ are surjective, then $\displaystyle{\beta}$ is surjective.
+
+1. consider $\displaystyle{c\in C, \text{ s.t. }\gamma(c)=0}$
+2. 
