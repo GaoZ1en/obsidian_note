@@ -306,6 +306,7 @@ the technique here is called the diagram chase.
 4. finally $\displaystyle{i(\partial (a))=\partial(i(a))=\partial ^{2}(b)=0\implies \partial a=0\implies a\in \mathrm{Ker}\partial \subset \Omega _{p-1}(A_{2})}$, define $\displaystyle{\partial _{\star}c=a}$
 
 ---
+in this part we will prove some important theorems via diagram chasing
 
 Five Lemma: consider the following commutative diagram with exact rows:
 
@@ -341,19 +342,8 @@ if $\displaystyle{\beta,\delta}$ are isomorphisms, $\displaystyle{\alpha}$ is su
 7. by exactness $\displaystyle{\beta(b)\in \mathrm{Im}(f')\implies \exists a'\in A',f'(a')=\beta(b)}$
 8. since $\displaystyle{\alpha}$ is surjective, $\displaystyle{\exists a\in A, \text{ s.t. }\alpha(a)=a'}$
 9. by commutation, $\displaystyle{f'(\alpha(a))=\beta(f(a))=f'(a')=\beta(b)=> \beta(b-f(a))=0}$
-10. since $\displaystyle{\beta}$ is injective, $\displaystyle{b=f(a)}$
-
-```tikz
-\usepackage{tikz-cd,amsmath,amssymb}
-\begin{document}\begin{tikzcd}
-A \arrow{r}{f} \arrow{d}{\alpha} & B \arrow{r}{g} \arrow{d}{\beta} & C \arrow{r}{h} \arrow{d}{\gamma} & D \arrow{r}{k} \arrow{d}{\delta} & E \arrow{d}{\varepsilon}\\
-A' \arrow{r}{f'} & B' \arrow{r}{g'} & C' \arrow{r}{h'} & D' \arrow{r}{k'} & E'
-\end{tikzcd}\end{document}
-```
-
-
-* injectivity
-suppose $\displaystyle{\beta(b)=0, b\in B}$. 
+10. since $\displaystyle{\beta}$ is injective $\displaystyle{b=f(a)}$
+11. then $\displaystyle{c=g(b)=g(f(a))=0}$ by exactness.
 
 Short Five Lemma: consider the following commutative diagram of short exact sequences:
 
@@ -366,3 +356,6 @@ Short Five Lemma: consider the following commutative diagram of short exact sequ
 ```
 
 if $\displaystyle{\alpha,\gamma}$ are isomorphisms, then $\displaystyle{\beta}$ is also an isomorphism. this is a direct corollary of the Five Lemma
+
+Weak Four Lemma
+
