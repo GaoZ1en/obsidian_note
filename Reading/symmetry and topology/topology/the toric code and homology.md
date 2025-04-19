@@ -298,4 +298,41 @@ the only mystery is the Bockstein $\displaystyle{\partial _{\star}}$. here is th
 \end{tikzcd}\end{document}
 ```
 
-the technique here is called the diagram chase. we start with an element $\displaystyle{c\in \mathrm{Ker}\partial \subset \Omega _{p}(A_{1}/A_{2})}$. since the sequence is exact, then $\displaystyle{c=\pi(b)}$ for some $\displaystyle{b\in \Omega _{p+1}(A_{1})}$. then consider $\displaystyle{\partial b\in \Omega _{p}(A_{1})}$, we have $\displaystyle{\pi(\partial(b))=\partial(\pi(b))=\partial c=0}$ since $\displaystyle{c\in \mathrm{Ker}\partial}$. by exactness, this means that $\displaystyle{\partial b\in \mathrm{Ker}(\pi:\Omega _{p-1}(A_{1})\to \Omega _{p-1}(A_{1}/A_{2}))=\mathrm{Im}(i:\Omega _{p-1}(A_{2})\to \Omega _{p-1}(A_{1}))}$, which means there exists some $\displaystyle{a\in \Omega _{p-1}(A_{2})}$ that $\displaystyle{\partial b=i(a)}$. finnaly consider $\displaystyle{\partial (i(a))=i(\partial a)=\partial ^{2}b=0\implies \partial a=0}$, so $\displaystyle{a}$ determines an element of $\displaystyle{H_{p-1}(A_{2})}$ and it is what we are looking for $\displaystyle{\partial _{\star}c=a}$. 
+the technique here is called the diagram chase.
+
+1. start with an element $\displaystyle{c\in \mathrm{Ker}\partial \subset \Omega _{p}(A_{1}/A_{2})}$. by exactness we have $\displaystyle{c=\pi(b), b\in \Omega _{p}(A_{1})}$.
+2. consider $\displaystyle{\partial b\in \Omega _{p-1}(A_{1})}$. by commutation we have $\displaystyle{\pi(\partial b)=\partial(\pi (b))=\partial c=0\implies \partial b\in \mathrm{Ker}(\pi :\Omega _{p-1}(A_{1})\to \Omega _{p-1}(A_{1}/A_{2}))}$
+3. by exactness, $\displaystyle{\partial b\in \mathrm{Im}(i:\Omega _{p-1}(A_{2})\to \Omega _{p-1}(A_{1}))\implies \partial b=i(c),a\in \Omega _{p-1}(A_{2})}$
+4. finally $\displaystyle{i(\partial (a))=\partial(i(a))=\partial ^{2}(b)=0\implies \partial a=0\implies a\in \mathrm{Ker}\partial \subset \Omega _{p-1}(A_{2})}$, define $\displaystyle{\partial _{\star}c=a}$
+
+---
+
+Five Lemma: consider the following commutative diagram with exact rows:
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+A \arrow{r}{f} \arrow{d}{\alpha} & B \arrow{r}{g} \arrow{d}{\beta} & C \arrow{r}{h} \arrow{d}{\gamma} & D \arrow{r}{k} \arrow{d}{\delta} & E \arrow{d}{\varepsilon}\\
+A' \arrow{r}{f'} & B' \arrow{r}{g'} & C' \arrow{r}{h'} & D' \arrow{r}{k'} & E'
+\end{tikzcd}\end{document}
+```
+
+if $\displaystyle{\beta,\gamma}$ are isomorphisms, $\displaystyle{\alpha}$ is , then $\displaystyle{\beta}$ is also an isomorphism.
+
+* injectivity
+suppose $\displaystyle{\beta(b)=0, b\in B}$. 
+
+Short Five Lemma: consider the following commutative diagram of short exact sequences:
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+0 \arrow{r} & A \arrow{r}{f} \arrow{d}{\alpha} & B \arrow{r}{g} \arrow{d}{\beta} & C \arrow{r} \arrow{d}{\gamma} & 0 \\
+0 \arrow{r} & A' \arrow{r}{f'} & B' \arrow{r}{g'} & C' \arrow{r} & 0
+\end{tikzcd}\end{document}
+```
+
+if $\displaystyle{\alpha,\gamma}$ are isomorphisms, then $\displaystyle{\beta}$ is also an isomorphism.
+
+* injectivity
+1. $\displaystyle{\forall b\in B}$, 

@@ -11,4 +11,4 @@
 7. [Si Li] 量子化与同调方法
 	1. 基本上来说就是用同调的方法来研究路径积分
 8. TMG计算往后稍稍
-9. 
+9. 计算代数几何，singular software，ideals, variaties and algorithms
