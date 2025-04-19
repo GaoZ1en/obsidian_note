@@ -370,4 +370,10 @@ A' \arrow{r}{f'} & B' \arrow{r}{g'} & C' \arrow{r}{h'} & D'
 each line is exact. if $\displaystyle{\alpha}$ is surjective and $\displaystyle{\beta,\delta}$ are injective, then $\displaystyle{\gamma}$ is injective. dually, if $\displaystyle{\delta}$ is injective and $\displaystyle{\alpha,\gamma}$ are surjective, then $\displaystyle{\beta}$ is surjective.
 
 1. consider $\displaystyle{c\in C, \text{ s.t. }\gamma(c)=0}$
-2. 
+2. $\displaystyle{h'(\gamma(c))=0\implies \gamma(c)\in \mathrm{Ker}(h')}$
+3. by commutation, $\displaystyle{\delta(h(c))=h'(\gamma(c))=0}$
+4. since $\displaystyle{\delta}$ is injective, $\displaystyle{h(c)=0\implies c\in \mathrm{Ker}(h)}$
+5. by exactness, $\displaystyle{c\in \mathrm{Im}(g)\implies \exists b\in B,\text{ s.t. }g(b)=c}$
+6. by commutation, $\displaystyle{g'(\beta(b))=\gamma(g(b))=\gamma(c)=0\implies \beta(b)\in \mathrm{Ker}(g')}$
+7. by exactness $\displaystyle{\beta(b)\in \mathrm{Im}(g')\implies \exists a'\in A', \text{ s.t. }f'(a')=\beta(b)}$
+8. 
