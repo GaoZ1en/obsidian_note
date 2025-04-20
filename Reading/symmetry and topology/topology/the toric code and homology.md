@@ -376,4 +376,27 @@ each line is exact. if $\displaystyle{\alpha}$ is surjective and $\displaystyle{
 5. by exactness, $\displaystyle{c\in \mathrm{Im}(g)\implies \exists b\in B,\text{ s.t. }g(b)=c}$
 6. by commutation, $\displaystyle{g'(\beta(b))=\gamma(g(b))=\gamma(c)=0\implies \beta(b)\in \mathrm{Ker}(g')}$
 7. by exactness $\displaystyle{\beta(b)\in \mathrm{Im}(g')\implies \exists a'\in A', \text{ s.t. }f'(a')=\beta(b)}$
-8. 
+8. since $\displaystyle{\alpha}$ is surjective, $\displaystyle{\exists a\in A, \text{ s.t. }\alpha(a)=a'}$
+9. by commutation, $\displaystyle{\beta(f(a))=f'(\alpha(a))=f'(a')=\beta(b)\implies \beta(b-f(a))=0}$
+10. since $\displaystyle{\beta}$ is injective, $\displaystyle{b-f(a)=0}$
+11. then $\displaystyle{c=g(b)=g(f(a))=0}$ by exactness
+
+sharp 3x3 Lemma
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+& 0 \arrow{d} & 0 \arrow{d} & 0 \arrow{d} \\
+0 \arrow{r} & A \arrow{r}{f} \arrow{d}{\alpha} & B \arrow{r}{g} \arrow{d}{\beta} & C \arrow{d}{\gamma} \\
+0 \arrow{r} & A' \arrow{r}{f'} \arrow{d}{\alpha'} & B' \arrow{r}{g'} \arrow{d}{\beta'} & C' \arrow{d}{\gamma'} \\
+0 \arrow{r} & A'' \arrow{r}{f''} & B'' \arrow{r}{g''} & C \\
+\end{tikzcd}\end{document}
+```
+
+every columns are exact and the lower two lines are exact, then the first line is also exact
+
+and salamander lemma provides a universal description of above theorems.
+
+---
+
+back to our 
