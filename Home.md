@@ -23,4 +23,3 @@ This vault are mainly summarized as follows
 
 >[!Lecture]
 >This module contains my lecture notes
-

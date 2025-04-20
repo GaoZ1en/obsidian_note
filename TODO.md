@@ -1,6 +1,8 @@
+## Learn from research
+
 1. 协变相空间框架下的量子化
-	1. 几何量子化?
-	2. 形变量子化?
+	1. 几何量子化和形变量子化都不是我想要的
+	2. 研究一下谐振子
 2. JT引力
 	1.   ramdom disk and something else.
 3. [Freedman] Supergravit.pdf
@@ -14,4 +16,3 @@
 9. 计算代数几何
 	1. singular computer language
 	2. ideals, variaties and algorithms
-	3. 
