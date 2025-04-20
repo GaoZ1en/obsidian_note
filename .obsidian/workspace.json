@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading/symmetry and topology/topology/README.md",
+                "file": "Reading/computational algebraic geometry/geometru, algebra and algorithms.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "geometru, algebra and algorithms"
             }
           }
         ]
@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -123,7 +122,10 @@
   },
   "active": "e29bc7689de7184b",
   "lastOpenFiles": [
+    "Reading/computational algebraic geometry/README.md",
+    "Reading/computational algebraic geometry/geometru, algebra and algorithms.md",
     "TODO.md",
+    "Reading/computational algebraic geometry",
     "Reading/symmetry and topology/topology/README.md",
     "Home.md",
     "Reading/symmetry and topology/topology/homework3.md",
@@ -157,11 +159,8 @@
     "Articles/Noether charge/An example of constrained Hamiltonian systems.md",
     "Lecture/2025.4 JT gravity",
     "Articles/Noether charge/Asymptotic behavior.md",
-    "Articles/Noether charge/Boundary stress tensor.md",
-    "Articles/Noether charge/Brackets.md",
     "Homework/problem set/cambridge/partIII/2001",
     "Homework/problem set/cambridge/partIII",
-    "Homework/problem set/cambridge/partII/2001",
-    "Homework/problem set/cambridge/partII"
+    "Homework/problem set/cambridge/partII/2001"
   ]
 }
