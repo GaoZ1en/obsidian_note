@@ -32,3 +32,5 @@ the rows are exact sequences.
 7. by exactness $\displaystyle{c'-\gamma(c)\in \mathrm{Im}(j')\implies \exists b'\in B',\text{ s.t. }j'(b')=c'-\gamma(c)}$
 8. since $\displaystyle{\beta}$ is surjective, $\displaystyle{\exists b\in B,\text{ s.t. }\beta(b)=b'}$
 9. by commutation, $\displaystyle{j'(\beta(b))=\gamma(j(b))=j'(b')=c'-\gamma(c)\implies c'=\gamma(c+j(b))}$. so $\displaystyle{\gamma}$ is surjective.
+
+老师我想问一下怎么在协变相空间的框架下做量子化？（或许先考虑标量场或单粒子比较好？）我之前问过张宏宝老师，他说做通常的正则量子化就可以，我觉得不太妥因为如果这样时间演化该怎么体现？
