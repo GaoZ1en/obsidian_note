@@ -417,3 +417,7 @@ A=\mathbb{Z}^{r}\oplus \mathbb{Z}_{p_{1}}\oplus \cdots \oplus \mathbb{Z}_{p_{k}}
 $$
 
 **universal coefficients theorem** states that taking $\displaystyle{A=\mathbb{Z}}$ in the homology contains all the information we would get by choosing other Abelian groups. 
+
+## duality
+
+...

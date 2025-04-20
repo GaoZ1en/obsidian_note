@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading/symmetry and topology/topology/the toric code and homology.md",
+                "file": "Reading/symmetry and topology/topology/homework3.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "the toric code and homology"
+              "title": "homework3"
             }
           }
         ]
@@ -123,11 +123,13 @@
   },
   "active": "07f4589b2f868cbf",
   "lastOpenFiles": [
-    "TODO.md",
     "Reading/symmetry and topology/topology/the toric code and homology.md",
+    "Reading/symmetry and topology/topology/homework3.md",
+    "Reading/symmetry and topology/topology/homework2.md",
+    "TODO.md",
     "Reading/symmetry and topology/topology/supersymmetry and morse theory.md",
     "Reading/symmetry and topology/topology/examples of homology group calculation.md",
-    "Reading/symmetry and topology/topology/homework 1.md",
+    "Reading/symmetry and topology/topology/homework1.md",
     "Attachments/Pasted image 20250417145002.png",
     "Attachments/Pasted image 20250417093901.png",
     "Reading/supergravity/relativistic field theory in Minkowski spacetime/scalar field theory and its symmetries.md",
@@ -157,8 +159,6 @@
     "Articles/Noether charge/Brackets.md",
     "Articles/Noether charge/Conserved charge.md",
     "Articles/Noether charge/Convergence of α and θ.md",
-    "Articles/Noether charge/Covariant phase space.md",
-    "Articles/Noether charge/Diffeomorphism of some quantities.md",
     "Homework/problem set/cambridge/partIII/2001",
     "Homework/problem set/cambridge/partIII",
     "Homework/problem set/cambridge/partII/2001",
