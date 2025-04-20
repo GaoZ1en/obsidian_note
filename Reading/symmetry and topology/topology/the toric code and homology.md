@@ -387,16 +387,33 @@ sharp 3x3 Lemma
 \usepackage{tikz-cd,amsmath,amssymb}
 \begin{document}\begin{tikzcd}
 & 0 \arrow{d} & 0 \arrow{d} & 0 \arrow{d} \\
-0 \arrow{r} & A \arrow{r}{f} \arrow{d}{\alpha} & B \arrow{r}{g} \arrow{d}{\beta} & C \arrow{d}{\gamma} \\
-0 \arrow{r} & A' \arrow{r}{f'} \arrow{d}{\alpha'} & B' \arrow{r}{g'} \arrow{d}{\beta'} & C' \arrow{d}{\gamma'} \\
-0 \arrow{r} & A'' \arrow{r}{f''} & B'' \arrow{r}{g''} & C \\
+0 \arrow{r} & A \arrow{r}{f} \arrow{d}{\alpha} & B \arrow{r}{g} \arrow{d}{\beta} & C \arrow{r} \arrow{d}{\gamma} & 0 \\
+0 \arrow{r} & A' \arrow{r}{f'} \arrow{d}{\alpha'} & B' \arrow{r}{g'} \arrow{d}{\beta'} & C' \arrow{r} \arrow{d}{\gamma'} & 0 \\
+0 \arrow{r} & A'' \arrow{r}{f''} \arrow{d} & B'' \arrow{r}{g''} \arrow{d} & C'' \arrow{r} \arrow{d} & 0 \\
+& 0 & 0 & 0 &
 \end{tikzcd}\end{document}
 ```
 
 every columns are exact and the lower two lines are exact, then the first line is also exact
 
-and salamander lemma provides a universal description of above theorems.
+* $\displaystyle{g}$ is surjective
+
+* $\displaystyle{f}$ is injective
+
+* $\displaystyle{\mathrm{Ker}g=\mathrm{Im}f}$
+
+
+
+salamander lemma provides a universal description of above theorems.
 
 ---
 
-back to our 
+back to our main discussion.  any discrete Abelian group is of the form
+
+$$\tag{1.24}
+\begin{align}
+A=\mathbb{Z}^{r}\oplus \mathbb{Z}_{p_{1}}\oplus \cdots \oplus \mathbb{Z}_{p_{k}}\oplus\dots
+\end{align}
+$$
+
+**universal coefficients theorem** states that taking $\displaystyle{A=\mathbb{Z}}$ in the homology contains all the information we would get by choosing other Abelian groups. 
