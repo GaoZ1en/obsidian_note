@@ -1,4 +1,4 @@
-## Learn from research
+## Learn from research, goto Europe or Canada (CSC)
 
 1. 协变相空间框架下的量子化
 	1. 几何量子化和形变量子化都不是我想要的
@@ -16,3 +16,11 @@
 9. 计算代数几何
 	1. singular computer language
 	2. ideals, variaties and algorithms
+
+## career
+
+1. 2-3years, master
+2. 3-4years, phd
+3. 2x(2-3) postdoc, search for faculty position
+
+go outside...
