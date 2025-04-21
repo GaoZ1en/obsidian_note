@@ -132,6 +132,18 @@ eigenstates of $\displaystyle{H}$ can be obtained via usual procedure. the corre
 $$\tag{1.15}
 \begin{align}
 X_{H} & = \frac{\delta H}{\delta(ia_{0}^{\dagger})} \frac{\delta}{\delta a_{0}}-\frac{\delta H}{\delta a_{0}} \frac{\delta}{\delta (ia_{0}^{\dagger})} \\
- & = 
+ & = -ia_{0} \frac{\delta}{\delta a_{0}}+ia_{0}^{\dagger} \frac{\delta}{\delta a_{0}^{\dagger}}
+\end{align}
+$$
+
+quantum states are evolved via the Schrodinger equation. but in CPS formalism. 
+
+## usual quantum mechanics
+
+the Hamiltonian is
+
+$$\tag{2.1}
+\begin{align}
+H & =
 \end{align}
 $$
