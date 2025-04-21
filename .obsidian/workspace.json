@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization under CPS/harmonic oscillator.md",
+                "file": "Articles/Noether charge/asymptotic symmetry vector.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "harmonic oscillator"
+              "title": "asymptotic symmetry vector"
             }
           }
         ]
@@ -123,9 +123,11 @@
   },
   "active": "e29bc7689de7184b",
   "lastOpenFiles": [
+    "Articles/Topologically massive gravity/asymptotic calculation.md",
+    "Articles/Noether charge/asymptotic symmetry vector.md",
+    "Articles/quantization under CPS/harmonic oscillator.md",
     "TODO.md",
     "Lecture/2025 spring/python for general purpose/未命名 1.md",
-    "Articles/quantization under CPS/harmonic oscillator.md",
     "Homework/未命名.md",
     "未命名.md",
     "Home.md",
@@ -157,8 +159,6 @@
     "Reading/differential geometry/Riemann geometry.md",
     "Reading/differential geometry/Homogeneous Riemann manifold.md",
     "Reading/differential geometry/general concepts.md",
-    "Reading/black hole thermodynamics/the laws of black hole thermodynamics.md",
-    "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
     "Attachments/Pasted image 20250214190351.png",
     "Attachments/微信图片_20250414131423_29.jpg",
     "Lecture/2025.4 JT gravity",
