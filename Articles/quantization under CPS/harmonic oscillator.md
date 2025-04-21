@@ -1,6 +1,6 @@
 $$\tag{1.1}
 \begin{align}
-S & =\int _{t_{i}}^{t_{f}} \left( \frac{1}{2}\dot{x}^{2}-\frac{1}{2}\omega ^{2}x^{2} \right)\mathrm{d}t
+S & =\int _{t_{i}}^{t_{f}} \left( \frac{1}{2}\dot{x}^{2}-\frac{1}{2}x^{2} \right)\mathrm{d}t
 \end{align}
 $$
 
@@ -8,7 +8,7 @@ make a variation
 
 $$\tag{1.2}
 \begin{align}
-\delta S & =-\int _{t_{i}}^{t_{f}}(\ddot{x}+\omega ^{2}x)\delta x\mathrm{d}t+\int _{t_{i}}^{t_{f}}\mathrm{d}(\dot{x}\dot{x}) \\
+\delta S & =-\int _{t_{i}}^{t_{f}}(\ddot{x}+x)\delta x\mathrm{d}t+\int _{t_{i}}^{t_{f}}\mathrm{d}(\dot{x}\dot{x}) \\
  & =\int _{t_{i}}^{t_{f}}E\delta x+\theta|_{t_{i}}^{t_{f}}
 \end{align}
 $$
@@ -17,7 +17,7 @@ the equation of motion and the symplectic potential is
 
 $$\tag{1.3}
 \begin{align}
-E & =-(\ddot{x}+\omega ^{2}x)\delta x \\
+E & =-(\ddot{x}+x)\delta x \\
 \theta & =\dot{x}\delta x
 \end{align}
 $$
@@ -84,7 +84,7 @@ $$\tag{1.10}
 \end{align}
 $$
 
-quantum observables are defined via Weyl quantization. reorganize $\displaystyle{x_{0}}$ and $\displaystyle{p_{0}}$ as
+quantum observables $\displaystyle{\hat{f}}$ are defined via Weyl quantization. reorganize $\displaystyle{x_{0}}$ and $\displaystyle{p_{0}}$ as
 
 $$\tag{1.11}
 \begin{align}
@@ -109,4 +109,29 @@ $$\tag{1.12}
 \end{align}
 $$
 
-so $\displaystyle{a_{0}^{\dagger}}$ and $\displaystyle{a_{0}}$ is also a set of Darboux coordinates.
+so $\displaystyle{ia_{0}^{\dagger}}$ and $\displaystyle{a_{0}}$ is also a set of Darboux coordinates, and the commutator between $\displaystyle{a_{0}}$ and $\displaystyle{a_{0}^{\dagger}}$ is
+
+$$\tag{1.13}
+\begin{align}
+[a_{0},a_{0}^{\dagger}]=i\{a_{0},a_{0}^{\dagger}\}=1
+\end{align}
+$$
+
+the Hamiltonian becomes
+
+$$\tag{1.14}
+\begin{align}
+H & =\frac{1}{2}\dot{x}^{2}+\frac{1}{2}x^{2}=\frac{p^{2}}{2}+\frac{1}{2}x^{2} \\
+ & =\frac{1}{4}(a_{0}+a_{0}^{\dagger})^{2}-\frac{1}{4}(a_{0}^{\dagger}-a_{0})^{2} \\
+ & =\frac{1}{2}(a_{0}a_{0}^{\dagger}+a_{0}^{\dagger}a_{0})=a_{0}^{\dagger}a_{0}+\frac{1}{2}
+\end{align}
+$$
+
+eigenstates of $\displaystyle{H}$ can be obtained via usual procedure. the corresponding Hamilton vector of $\displaystyle{H}$ is
+
+$$\tag{1.15}
+\begin{align}
+X_{H} & = \frac{\delta H}{\delta(ia_{0}^{\dagger})} \frac{\delta}{\delta a_{0}}-\frac{\delta H}{\delta a_{0}} \frac{\delta}{\delta (ia_{0}^{\dagger})} \\
+ & = 
+\end{align}
+$$
