@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization under CPS/harmonic oscillator.md",
+                "file": "Lecture/2025 spring/python for general purpose/未命名 1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "harmonic oscillator"
+              "title": "未命名 1"
             }
           }
         ],
@@ -68,8 +68,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -139,8 +138,11 @@
   },
   "active": "1ebf04870786aaf2",
   "lastOpenFiles": [
-    "TODO.md",
     "Articles/quantization under CPS/harmonic oscillator.md",
+    "Lecture/2025 spring/python for general purpose/未命名 1.md",
+    "Homework/未命名.md",
+    "未命名.md",
+    "TODO.md",
     "Home.md",
     "Articles/quantization under CPS",
     "Reading/computational algebraic geometry/geometry, algebra and algorithms.md",
@@ -172,11 +174,8 @@
     "Reading/differential geometry/general concepts.md",
     "Reading/black hole thermodynamics/the laws of black hole thermodynamics.md",
     "Note/Physics/Higher geometry in physics/Higher symplectic geometry.md",
-    "Lecture/2025.4 JT gravity/prelecture2&3 learning.md",
-    "Lecture/2025.4 JT gravity/README.md",
     "Attachments/Pasted image 20250214190351.png",
     "Attachments/微信图片_20250414131423_29.jpg",
-    "Articles/Noether charge/An example of constrained Hamiltonian systems.md",
     "Lecture/2025.4 JT gravity",
     "Homework/problem set/cambridge/partIII/2001"
   ]
