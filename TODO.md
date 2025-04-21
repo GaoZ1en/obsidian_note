@@ -25,3 +25,10 @@
 3. 2x(2-3) postdoc, search for faculty position
 
 go outside...
+
+## thesis
+修改摘要，添加创新点
+添加附录，给出渐进对称性代数
+继续添加参考文献
+写slide
+删除部分讨论
