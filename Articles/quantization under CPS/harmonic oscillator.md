@@ -46,7 +46,33 @@ the Hamilton vector corresponding to $\displaystyle{f(x_{0},p_{0})}$ is
 
 $$\tag{1.6}
 \begin{align}
-X_{f} =& \omega ^{-1}df=\frac{\partial f}{\partial}
+X_{f} =& \omega ^{-1}df=\frac{\delta f}{\delta p_{0}} \frac{\delta}{\delta x_{0}}- \frac{\delta f}{\delta x_{0}} \frac{\delta}{\delta p_{0}}
+\end{align}
+$$
+
+as special cases, we have
+
+$$\tag{1.7}
+\begin{align}
+X_{x_{0}} & =-\frac{\delta}{\delta p_{0}} \\
+X_{p_{0}} & = \frac{\delta}{\delta x_{0}} \\
+X_{H} & = p_{0} \frac{\delta}{\delta x_{0}}
+\end{align}
+$$
+
+the Poisson bracket between $\displaystyle{f}$ and $\displaystyle{g}$ are defined as
+
+$$\tag{1.8}
+\begin{align}
+\left\{f,g\right\} & =X_{f}\cdot X_{g}\cdot \omega
+\end{align}
+$$
+
+and in particular, we have
+
+$$\tag{1.9}
+\begin{align}
+\left\{x_{0},p_{0}\right\}=1
 \end{align}
 $$
 
