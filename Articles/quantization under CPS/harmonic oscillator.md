@@ -137,13 +137,3 @@ X_{H} & = \frac{\delta H}{\delta(ia_{0}^{\dagger})} \frac{\delta}{\delta a_{0}}-
 $$
 
 quantum states are evolved via the Schrodinger equation. but in CPS formalism. 
-
-## usual quantum mechanics
-
-the Hamiltonian is
-
-$$\tag{2.1}
-\begin{align}
-H & =
-\end{align}
-$$
