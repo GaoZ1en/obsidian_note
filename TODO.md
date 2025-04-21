@@ -3,6 +3,7 @@
 1. 协变相空间框架下的量子化
 	1. 几何量子化和形变量子化都不是我想要的
 	2. 研究一下谐振子
+	3. wjq给了一个例子，来看看
 2. JT引力
 	1.   ramdom disk and something else.
 3. [Freedman] Supergravit.pdf

@@ -76,3 +76,37 @@ $$\tag{1.9}
 \end{align}
 $$
 
+in quantum mechanics, $\displaystyle{x_{0},p_{0}}$ are operators, and the Poisson bracket is replaced by the commutator
+
+$$\tag{1.10}
+\begin{align}
+[x_{0},p_{0}] & =i\left\{x_{0},p_{0}\right\}=i
+\end{align}
+$$
+
+quantum observables are defined via Weyl quantization. reorganize $\displaystyle{x_{0}}$ and $\displaystyle{p_{0}}$ as
+
+$$\tag{1.11}
+\begin{align}
+\begin{cases}
+a_{0} =\frac{1}{\sqrt{2}}(x_{0}+ip_{0}) \\
+a_{0}^{\dagger} =\frac{1}{\sqrt{2}}(x_{0}-ip_{0})
+\end{cases}\implies
+\begin{cases}
+x_{0}=\frac{1}{\sqrt{2}}(a_{0}+a_{0}^{\dagger}) \\
+p_{0}=\frac{i}{\sqrt{2}}(a_{0}^{\dagger}-a_{0})
+\end{cases}
+\end{align}
+$$
+
+then the symplectic form is
+
+$$\tag{1.12}
+\begin{align}
+\omega & =\delta p_{0}\wedge \delta x_{0} \\
+ & =\frac{i}{\sqrt{ 2 }}(\delta a^{\dagger}_{0}-\delta a_{0})\wedge \frac{1}{\sqrt{ 2 }}(\delta a_{0}+\delta a^{\dagger}_{0}) \\
+ & =i\delta a_{0}^{\dagger}\wedge \delta a_{0}
+\end{align}
+$$
+
+so $\displaystyle{a_{0}^{\dagger}}$ and $\displaystyle{a_{0}}$ is also a set of Darboux coordinates.
