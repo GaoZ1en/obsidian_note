@@ -18,6 +18,12 @@ X_{\xi}\cdot \delta \ell & = z((X_{\xi}\cdot \delta \gamma _{ac})\tilde{\Gamma}^
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+D_{b}(X_{\xi}\cdot \delta \gamma _{ac})=\partial _{b}(X_{\xi}\cdot \delta \gamma _{ac})-\tilde{\Gamma}^{f}_{ba}X_{\xi}\cdot \delta \gamma _{fc}-\tilde{\Gamma}^{f}_{bc}(X_{\xi}\cdot \delta \gamma _{\alpha})
+\end{align}
+$$
+
 the first term is
 
 $$\tag{1.4}
