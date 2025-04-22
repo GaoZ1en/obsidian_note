@@ -135,4 +135,11 @@ $$\tag{1.13}
 \end{align}
 $$
 
-where $\displaystyle{\mathbf{K}_{\xi}=\delta Q_{\xi}+\xi \cdot \Theta+\mathrm{d}(\dots)}$. $\displaystyle{\delta(X_{\xi}\cdot \Theta)}$
+where $\displaystyle{\mathbf{K}_{\xi}=\delta Q_{\xi}+\xi \cdot \Theta+\mathrm{d}(\dots)}$. $\displaystyle{\delta(X_{\xi}\cdot \Theta)}$ vanishes since $\displaystyle{\delta \Phi ^{i}}$ solves linearzed equation of motion.
+
+## conserved surface charges
+
+### definition of the charges
+
+### representation theorem
+
