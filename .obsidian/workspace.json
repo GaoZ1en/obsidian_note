@@ -37,7 +37,8 @@
               "title": "prelecture2&3 learning"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -136,10 +137,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e29bc7689de7184b",
+  "active": "5d9cebfa50ccf9d9",
   "lastOpenFiles": [
-    "Lecture/2025.4 JT gravity/prelecture2&3 learning.md",
     "Group meeting/Week 16.md",
+    "Lecture/2025.4 JT gravity/prelecture2&3 learning.md",
     "TODO.md",
     "Reading/differential geometry/Riemann geometry.md",
     "Articles/Topologically massive gravity/asymptotic calculation.md",
