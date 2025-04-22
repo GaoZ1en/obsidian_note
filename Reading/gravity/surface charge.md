@@ -21,7 +21,7 @@ take any physical theory described by a Lagrangian density $\displaystyle{L}$ de
 
 ## CPS formalism
 
-## field fibration and symplectic structure
+### field fibration and symplectic structure
 
 the configuration space consists in the fields $\displaystyle{\Phi ^{i}}$ (matter $\displaystyle{\phi}$ and metric $\displaystyle{g_{\mu \nu}}$) and a set of "symmetrized derivatices of fields" $\displaystyle{\left\{\Phi ^{i},\Phi ^{i}_{\mu},\Phi ^{i}_{\mu \nu},\dots\right\}}$. the exterior derivative $\displaystyle{\delta}$ is defined as
 
@@ -54,7 +54,7 @@ the classical physics of the fields is encoded into a Lagrangian $\displaystyle{
 
 $$\tag{1.5}
 \begin{align}
-\delta \mathbf{L} & =E_{i}\delta \Phi ^{i}-\mathrm{d}\Theta
+\delta \mathbf{L} & = \frac{\delta \mathbf{L}}{\delta \Phi ^{i}}\delta \Phi ^{i}-\mathrm{d}\Theta
 \end{align}
 $$
 
@@ -74,7 +74,7 @@ given a generally covariant Lagrangian $\displaystyle{n}$-form $\displaystyle{\m
 
 $$\tag{1.7}
 \begin{align}
-\frac{\delta \mathbf{L}}{\delta \Phi ^{i}}(X_{\xi}\cdot \delta\Phi ^{i})=\mathrm{d}\mathbf{S}_{\xi}
+\frac{\delta \mathbf{L}}{\delta \Phi ^{i}}(X_{\xi}\cdot \delta\Phi ^{i})=-\mathrm{d}\mathbf{S}_{\xi}
 \end{align}
 $$
 
@@ -92,9 +92,47 @@ $$
 
 #### Noether-Wald surface charge
 
+here we consider the diffeomorphism symmetry of a generally covariant theory.
+
 $$\tag{1.9}
 \begin{align}
 X_{\xi}\cdot \delta \mathbf{L} & =\mathcal{L}_{\xi}\mathbf{L}=\mathrm{d}(\xi \cdot \mathbf{L}) \\
- & =
+ & =\frac{\delta \mathbf{L}}{\delta \Phi}(X_{\xi}\cdot \delta \Phi)+\mathrm{d}(X_{\xi}\cdot \Theta) \\
+\mathrm{d}(\xi \cdot \mathbf{L}) & =-\mathrm{d}\mathbf{S}_{\xi}+\mathrm{d}(X_{\xi}\cdot \Theta)
 \end{align}
 $$
+
+define Noether current
+
+$$\tag{1.10}
+\begin{align}
+J_{\xi} & =X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L} \\
+\mathrm{d}J_{\xi} & =\mathrm{d}S_{\xi}\implies \mathrm{d}J_{\xi}\approx 0 \\
+\implies J_{\xi} & =S_{\xi}+\mathrm{d}Q_{\xi}
+\end{align}
+$$
+
+where $\displaystyle{Q_{\xi}\in \Omega ^{n-2}}$ is called the Noether-Wald surface charge.
+
+>[!Theorem Fundamental theorem of the CPS formalism]
+> in the Grassmann odd convention for $\displaystyle{\delta}$, we have
+> $$\tag{1.11}\begin{align}X_{\xi}\cdot \omega & \approx\mathrm{d}\mathbf{K}_{\xi}\end{align}$$
+> where 
+> $$\tag{1.12}\begin{align}\mathbf{K}_{\xi}=\delta Q_{\xi}+\xi \cdot \Theta+\mathrm{d}(\text{ something })\end{align}$$
+
+here we present a direct proof:
+
+$$\tag{1.13}
+\begin{align}
+\delta \mathbf{S} & =\delta J_{\xi}-\delta \mathrm{d}Q_{\xi} \\
+ & =\delta(X_{\xi}\cdot \Theta)-\delta(\xi \cdot \mathbf{L})+\mathrm{d}\delta Q_{\xi} \\
+ & =\xi \cdot \delta \mathbf{L}+\delta(X_{\xi}\cdot \Theta)+\mathrm{d}\delta Q_{\xi} \\
+ & =\xi \cdot\left( \frac{\delta \mathbf{L}}{\delta \Phi ^{i}}\delta \Phi ^{i}-\mathrm{d}\Theta \right)+\delta(X_{\xi}\cdot \Theta)+\mathrm{d}\delta Q_{\xi} \\
+ & \approx-\xi \cdot \mathrm{d}\Theta+\delta(X_{\xi}\cdot \Theta)+\mathrm{d}\delta Q_{\xi} \\
+ & =-\mathcal{L}_{\xi}\Theta+\mathrm{d}(\xi \cdot \Theta)+\delta(X_{\xi}\cdot \Theta)+\mathrm{d}\delta Q_{\xi} \\
+ & =-X_{\xi}\cdot \delta\Theta+\delta(X_{\xi}\cdot \Theta)+\mathrm{d}(\delta Q_{\xi}+\xi \cdot \Theta) \\
+ & =-X_{\xi}\cdot \omega+\mathrm{d}\mathbf{K}_{\xi}
+\end{align}
+$$
+
+where $\displaystyle{\mathbf{K}_{\xi}=\delta Q_{\xi}+\xi \cdot \Theta+\mathrm{d}(\dots)}$. $\displaystyle{\delta(X_{\xi}\cdot \Theta)}$
