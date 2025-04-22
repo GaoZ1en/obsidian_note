@@ -18,14 +18,17 @@ X_{\xi}\cdot \delta \ell & = z((X_{\xi}\cdot \delta \gamma _{ac})\tilde{\Gamma}^
 \end{align}
 $$
 
-$$\tag{.}
+the first term is
+
+$$\tag{1.4}
 \begin{align}
-(X_{\xi}\cdot \delta g^{(0)}_{ac})\Gamma ^{(0)c}_{bd}g^{(0)de} +D_{b}^{(0)}(X_{\xi}\cdot \delta g^{(0)}_{ac})g^{(0)ce}-g^{(0)}_{ac}\Gamma ^{(0)c}_{bd}g^{(0)df}g^{(0)eg}(X_{\xi}\cdot \delta g^{(0)}_{fg})
+(X_{\xi}\cdot \delta \gamma _{ac})\tilde{\Gamma}^{c}_{bd}\gamma ^{de}g_{ze} & =(\nabla _{a}\xi _{c}+\nabla _{c}\xi _{a})\tilde{\Gamma}^{c}_{bd}\gamma ^{de}g_{ze} \\
+X_{\xi}\cdot \delta g^{(0)}_{ac}\Gamma ^{(0)c}_{bd}g_{ze} & 
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-R_{\mu \nu \rho \sigma} = \frac{R}{2}(g_{\mu \rho}g_{\nu \sigma}-g_{\nu \rho}g_{\mu \sigma})
+\nabla _{a}\xi _{c}
 \end{align}
 $$
