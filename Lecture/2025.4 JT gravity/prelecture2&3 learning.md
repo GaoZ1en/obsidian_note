@@ -81,7 +81,23 @@ W(\gamma)= \frac{1}{2\pi i}\int ^{2\pi}_{0} \frac{\gamma''}{\gamma'}\mathrm{d}\t
 \end{align}
 $$
 
-allowed closed curves must
+allowed closed curves must have Whitnet index/winding number 1, $\displaystyle{\implies}$ self intersects even times. this rule out multiple winding "instanton like" configurations.
+
+$$
+\begin{align}
+\nu _{\gamma}(P) & = \frac{1}{2\pi i}\int _{\partial \mathcal{D}} \frac{F'(z)}{F(z)-w_{p}} \mathrm{d}z
+\end{align}
+$$
+
+this is the "self-overlap" index, and configurations with parts of negative number of self-overlap will also be rule out.
+
+so random walk loops set is too large (includes negative number of self-overlap) and the self-avoiding loops set is too small (rule out self-overlap).
+
+**blank cut**??? seems like a method to decompose self-overlapping loops into no-self-overlapping loops.
+
+for example, consider the following blank word, $\displaystyle{a_{5}a_{1}a_{2}a_{4}a_{3}a_{5}^{-1}a_{2}a_{3}^{-1}a_{2}a_{4}a_{3}}$, can be decomposed into $\displaystyle{a_{5}a_{1}a_{2}a_{3}a_{3}a_{5}^{-1}}$, $\displaystyle{a_{2}}$ and $\displaystyle{a_{3}^{-1}a_{2}a_{4}a_{3}}$. each word corresponding to one loop, and in each word, if the first letter is the inverse of the final letter, this word corresponds to a no-self-overlapping loops.
+
+consider Milnor curve. it has two ways to decompose...
 
 characterizing the set of allowed closed curves has been studied extensively in the mathematical literature (thanks to studies about Liouville theory.) the allowed curves are called self-overlapping, and must satisfy a set of non-trivial, non-local constraints. 
 
