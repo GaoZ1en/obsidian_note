@@ -17,6 +17,8 @@
 9. 计算代数几何
 	1. singular computer language
 	2. ideals, variaties and algorithms
+10. AdS/CFT
+	1. ???
 
 ## career
 
@@ -32,3 +34,5 @@ go outside...
 继续添加参考文献
 写slide
 删除部分讨论
+
+Bousso

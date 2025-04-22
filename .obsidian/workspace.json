@@ -37,8 +37,7 @@
               "title": "prelecture2&3 learning"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -137,10 +136,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "5d9cebfa50ccf9d9",
+  "active": "e29bc7689de7184b",
   "lastOpenFiles": [
-    "Group meeting/Week 16.md",
     "Lecture/2025.4 JT gravity/prelecture2&3 learning.md",
+    "Group meeting/Week 16.md",
+    "TODO.md",
     "Reading/differential geometry/Riemann geometry.md",
     "Articles/Topologically massive gravity/asymptotic calculation.md",
     "Lecture/2025.4 JT gravity/lecture 2.md",
@@ -152,7 +152,6 @@
     "Articles/some generalization CPS/p-form symmetry.md",
     "Reading/supergravity/relativistic field theory in Minkowski spacetime/scalar field theory and its symmetries.md",
     "Reading/gravity",
-    "TODO.md",
     "Articles/Noether charge/asymptotic symmetry vector.md",
     "Articles/some generalization CPS/harmonic oscillator.md",
     "Lecture/2025 spring/python for general purpose/未命名 1.md",
