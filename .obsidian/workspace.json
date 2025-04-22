@@ -13,28 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/Topologically massive gravity/asymptotic calculation.md",
+                "file": "Lecture/2025.4 JT gravity/prelecture2&3 learning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "asymptotic calculation"
-            }
-          },
-          {
-            "id": "056570e783658d6b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reading/differential geometry/Riemann geometry.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Riemann geometry"
+              "title": "prelecture2&3 learning"
             }
           }
         ]
@@ -138,10 +123,10 @@
   "active": "e29bc7689de7184b",
   "lastOpenFiles": [
     "Reading/differential geometry/Riemann geometry.md",
-    "Articles/Topologically massive gravity/asymptotic calculation.md",
-    "Articles/Noether charge/Brackets.md",
     "Lecture/2025.4 JT gravity/prelecture2&3 learning.md",
+    "Articles/Topologically massive gravity/asymptotic calculation.md",
     "Lecture/2025.4 JT gravity/lecture 2.md",
+    "Articles/Noether charge/Brackets.md",
     "Reading/gravity/3-dimensional Einstein's gravity.md",
     "Reading/gravity/surface charge.md",
     "Articles/Noether charge/Asymptotic behavior.md",
