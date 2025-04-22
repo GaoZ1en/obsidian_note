@@ -101,6 +101,9 @@ consider Milnor curve. it has two ways to decompose...
 
 characterizing the set of allowed closed curves has been studied extensively in the mathematical literature (thanks to studies about Liouville theory.) the allowed curves are called self-overlapping, and must satisfy a set of non-trivial, non-local constraints. 
 
+1. all three models ($\displaystyle{0, \pm1}$ curvature) have the same UV-completion
+2. as a consequence, SYK model is not a good candidates. 
+
 the most surprising feature revealed by the mathematical analysis is that a given self-overlapping curve may bound several distinct distorted disks, the number of which we call the multiplicity of the curve. one can show that all these disks must have the same area, yet the associated metrics are diffeomorphism-inequivalent and thus physical distinct. this phenomenon shows that the degrees of freedom of JT gravity are not in one-to-one correspondence with the shape of the boundary. however, it is possible to find a boundary description that takes into account the multiplicity.
 
 put these together yields a proposal for a microscopic definition of the JT gravity. we first consider the $\displaystyle{\eta=0}$ case. we discretize the closed loops by considering clozed polygons on the flat square lattice. Working at fixed boundary length for convenience, the generating function is
@@ -123,6 +126,23 @@ and matches with the JT partition function.
 
 the construction can be generalized to the cases of negative or positive curvatures, in the same way as one  can define random walks in hyperbolic space or on the sphere. the fact that the boundary curves are fractal, of dimension $\displaystyle{\frac{1}{\nu}>1}$, is a short-distance effect and will thus be equally valid for zero, negative or positive curvature. this implies that the naive boundary length $\displaystyle{\ell}$ is replaced in all the models by a renormalized parameter $\displaystyle{\beta}$, with $\displaystyle{\beta ^{\nu}}$ having the dimension of length.  
 
+gluing $\displaystyle{q}$ $\displaystyle{p}$-gones at a vertex produces a localized curvature
+
+$$
+\begin{align}
+R(x)=R_{p,q} \frac{\delta(x-x_{V})}{\sqrt{ g(x) }}, R_{p,q}= \frac{2\pi}{p}(4-(p-2)(q-2))
+\end{align}
+$$
+
+similarly, a boundary vertex with $\displaystyle{q}$ $\displaystyle{p}$-gones has
+
+$$
+\begin{align}
+k(x)=k_{p,q} \delta(s-s_{V}), k _{p,q}=\frac{\pi}{p}(4-(p-2)(q-2))
+\end{align}
+$$
+
+we can use boundary code
 
 ## continuum approach and CFT1
 
