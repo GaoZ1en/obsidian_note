@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading/gravity/3-dimensional Einstein's gravity.md",
+                "file": "Lecture/2025.4 JT gravity/prelecture2&3 learning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "3-dimensional Einstein's gravity"
+              "title": "prelecture2&3 learning"
             }
           }
         ]
@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -123,8 +122,10 @@
   },
   "active": "e29bc7689de7184b",
   "lastOpenFiles": [
-    "Reading/gravity/surface charge.md",
+    "Lecture/2025.4 JT gravity/lecture 2.md",
+    "Lecture/2025.4 JT gravity/prelecture2&3 learning.md",
     "Reading/gravity/3-dimensional Einstein's gravity.md",
+    "Reading/gravity/surface charge.md",
     "Articles/Noether charge/Asymptotic behavior.md",
     "Articles/Noether charge/An example of constrained Hamiltonian systems.md",
     "Articles/some generalization CPS/p-form symmetry.md",
@@ -155,8 +156,6 @@
     "Attachments/Pasted image 20250417093901.png",
     "Reading/symmetry and topology/topology",
     "Reading/symmetry and topology",
-    "Reading/differential geometry/homotopy and homology.md",
-    "Lecture/2024 quantization and homology method by Si Li/lecture 3 noncommutative calculus.md",
     "Lecture/2024 quantization and homology method by Si Li",
     "Reading/supergravity/relativistic field theory in Minkowski spacetime",
     "Reading/supergravity",

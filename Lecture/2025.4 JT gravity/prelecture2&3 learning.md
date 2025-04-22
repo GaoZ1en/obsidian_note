@@ -49,7 +49,39 @@ we propose two approaches, which are conjectured to be equivalent... one approac
 
 ## random self-overlapping polygons
 
-constant curvature metrics on the disk can be described by immersions $\displaystyle{F:\mathcal{D}\to \mathbb{T}_{\eta}}$ from $\displaystyle{\mathcal{D}}$ into a canonical target space, which is the Euclidean plane, the hyperbolic space or the round two-sphere for $\displaystyle{\eta=0, -1,+1}$, respectively. the metric is obtained by pullbacks, $\displaystyle{g=F^{*}\delta}$, where $\displaystyle{\delta}$ is the canonical metric on $\displaystyle{\mathbb{T}_{\eta}}$. the image of the source disk $\displaystyle{\mathcal{D}}$ is called a distorted disk. for a typical configuration, the boundary curve of a distorted disk has self-intersections, the immersion $\displaystyle{F}$ is not an embedding and the distorted disk has self-overlaps.
+constant curvature metrics on the disk can be described by immersions $\displaystyle{F:\mathcal{D}\to \mathbb{T}_{\eta}}$ from $\displaystyle{\mathcal{D}}$ into a canonical target space, which is the Euclidean plane, the hyperbolic space or the round two-sphere for $\displaystyle{\eta=0, -1,+1}$, respectively.
+
+$\displaystyle{\mathcal{D}=\left\{z\in Z||z|<1\right\}}$
+
+write the $\displaystyle{\mathbb{E}^{2}, S^{2}, \mathrm{H}^{2}}$ canonical metric and their isomorphism group. 
+
+the metric is obtained by pullbacks, $\displaystyle{g=F^{*}\delta}$, where $\displaystyle{\delta}$ is the canonical metric on $\displaystyle{\mathbb{T}_{\eta}}$. 
+
+and the metric space is
+
+$$
+\begin{align}
+\mathrm{Met}^{\eta}(\mathcal{D}) & =\frac{\mathrm{Imm}(\mathcal{D},\mathbb{T}_{\eta})}{\mathrm{Iso}(\mathbf{T}_{\eta})\otimes\mathrm{Diff}_{+}(\bar{\mathcal{D}})}
+\end{align}
+$$
+$\displaystyle{\mathrm{Diff}_{+}(\bar{\mathcal{D}})}$ contains large diffeomorphisms.
+
+the image of the source disk $\displaystyle{\mathcal{D}}$ is called a distorted disk. for a typical configuration, the boundary curve of a distorted disk has self-intersections, the immersion $\displaystyle{F}$ is not an embedding and the distorted disk could have self-overlaps.
+
+* see Maldacena-Stanford-Yang 2016, Stanford-Yang 2020
+* the question is
+	* what does the most general distorted disk looks like?
+	* is it characterized by its boundary?
+
+winding number, Whitney index
+
+$$
+\begin{align}
+W(\gamma)= \frac{1}{2\pi i}\int ^{2\pi}_{0} \frac{\gamma''}{\gamma'}\mathrm{d}\theta
+\end{align}
+$$
+
+allowed closed curves must
 
 characterizing the set of allowed closed curves has been studied extensively in the mathematical literature (thanks to studies about Liouville theory.) the allowed curves are called self-overlapping, and must satisfy a set of non-trivial, non-local constraints. 
 

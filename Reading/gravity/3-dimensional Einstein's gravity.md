@@ -30,3 +30,13 @@ R_{\mu \nu \rho \sigma}\approx 2\Lambda g_{\mu [\rho}g_{\nu]\sigma}
 \end{align}
 $$
 
+- if $\displaystyle{\Lambda>0}$, locally dS
+- if $\displaystyle{\Lambda=0}$, locally Minkowski
+- if $\displaystyle{\Lambda<0}$, locally AdS
+
+here we mainly study the case $\displaystyle{\Lambda\leqslant 0}$, since we don't know how to handle with dS space.
+
+## asymptotically AdS phase space
+
+### global properties of $\displaystyle{\mathrm{AdS}_{3}}$
+
