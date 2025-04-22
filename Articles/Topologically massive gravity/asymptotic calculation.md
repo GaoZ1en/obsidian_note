@@ -27,8 +27,21 @@ X_{\xi}\cdot \delta g^{(0)}_{ac}\Gamma ^{(0)c}_{bd}g_{ze} &
 \end{align}
 $$
 
+
+
 $$\tag{.}
 \begin{align}
-\nabla _{a}\xi _{c}
+\nabla _{a}\xi _{b}+\nabla _{b}\xi _{a} & =g_{za}\nabla _{b}\xi ^{z}+g_{zb}\nabla _{a} \xi ^{z}+g_{ac}\nabla _{b}\xi ^{c}+g_{bc}\nabla _{a}\xi ^{c} \\
+ & =g_{za}\partial _{b}\xi ^{z}+g_{za}\Gamma ^{z}_{bz}\xi ^{z}+g_{za}\Gamma ^{z}_{bc}\xi ^{c}+g_{zb}\partial _{a}\xi ^{z}+g_{zb}\Gamma ^{z}_{za}\xi ^{z}+g_{za}\Gamma ^{z}_{ac}\xi ^{c} \\
+ & +g_{ac}\partial _{b}\xi ^{c}+g_{ac}\Gamma ^{c}_{zb}\xi ^{z}+g_{ac}\Gamma ^{c}_{bd}\xi ^{d}+g_{bc}\partial _{a}\xi ^{c}+g_{bc}\Gamma ^{c}_{za}\xi ^{z}+g_{bc}\Gamma ^{c}_{ad}\xi ^{d} 
+\end{align}
+$$
+
+$$\tag{1.5}
+\begin{align}
+X_{\xi}\cdot \delta g_{za} & =\nabla _{z}\xi _{a}+\nabla _{a}\xi _{z} \\
+ & =g_{za}\nabla _{z}\xi ^{z}+g_{ab}\nabla _{z}\xi ^{b}+g_{zz}\nabla _{a}\xi ^{z}+g_{zb}\nabla _{a}\xi ^{b} \\
+ & =g_{za}\partial _{z}\xi ^{z}+g_{za}\Gamma ^{z}_{zz}\xi ^{z}+g_{za}\Gamma ^{z}_{zb}\xi ^{a}+g_{ab}\partial _{z}\xi ^{b}+g_{ab}\Gamma ^{b}_{zz}\xi ^{z}+g_{ab}\Gamma ^{b}_{zc}\xi ^{c} \\
+ & +g_{zz}\partial _{a}\xi ^{z}+g_{zz}\Gamma ^{z}_{za}\xi ^{z}+g_{zz}\Gamma ^{z}_{ab}\xi ^{b}+g_{zb}\partial _{a}\xi ^{b}+g_{zb}\Gamma ^{b}_{za}\xi ^{z}+g_{zb}\Gamma ^{b}_{ac}\xi ^{c}
 \end{align}
 $$
