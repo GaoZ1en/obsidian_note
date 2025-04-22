@@ -39,7 +39,7 @@ $$\tag{1.3}
 \end{align}
 $$
 
-the jet bundle is the space with local coordinates $\displaystyle{(x^{\mu},\Phi ^{i}_{(\mu)})}$. taking a section of this bundle, we obtain the coordinates-dependent fields and their derivatives $\displaystyle{\left\{\Phi ^{i}(x^{\mu}),\partial _{\mu}\Phi ^{i}(x^{\mu}),\partial _{\mu}\partial _{\nu}\Phi ^{i}(x^{\mu}),\dots\right\}}$ (prolongation). the standard differential operator $\displaystyle{\mathrm{d}}$ is defined as
+and so on. the jet bundle is the space with local coordinates $\displaystyle{(x^{\mu},\Phi ^{i}_{(\mu)})}$. taking a section of this bundle, we obtain the coordinates-dependent fields and their derivatives $\displaystyle{\left\{\Phi ^{i}(x^{\mu}),\partial _{\mu}\Phi ^{i}(x^{\mu}),\partial _{\mu}\partial _{\nu}\Phi ^{i}(x^{\mu}),\dots\right\}}$ (prolongation). the standard differential operator $\displaystyle{\mathrm{d}}$ is defined as
 
 $$\tag{1.4}
 \begin{align}
@@ -58,4 +58,43 @@ $$\tag{1.5}
 \end{align}
 $$
 
-$\displaystyle{\Theta}$ is calle
+$\displaystyle{\Theta \in \Omega ^{n-1,1}}$ is called the presymplectic potential. by taking $\displaystyle{\delta}$, we have the presymplectic form
+
+$$\tag{1.6}
+\begin{align}
+\omega=\delta \Theta \in \Omega ^{n-1,2}
+\end{align}
+$$
+
+### Noether's second theorem
+
+here we present a restricted form:
+
+given a generally covariant Lagrangian $\displaystyle{n}$-form $\displaystyle{\mathbf{L}}$ and an arbitrary infinitesimal diffeomorphism $\displaystyle{\xi ^{\mu}}$, one has
+
+$$\tag{1.7}
+\begin{align}
+\frac{\delta \mathbf{L}}{\delta \Phi ^{i}}(X_{\xi}\cdot \delta\Phi ^{i})=\mathrm{d}\mathbf{S}_{\xi}
+\end{align}
+$$
+
+where $\displaystyle{\mathbf{S}_{\xi}}$ is a $\displaystyle{(n-1)}$ form proportional to the equations of motion and its derivatives. 
+
+### fundamental theorem of the covariant phase space formalism
+
+#### Cartan's magic formula
+
+$$\tag{1.8}
+\begin{align}
+\mathcal{L}_{\xi}=\mathrm{d}i_{\xi}+i_{\xi}\mathrm{d}
+\end{align}
+$$
+
+#### Noether-Wald surface charge
+
+$$\tag{1.9}
+\begin{align}
+X_{\xi}\cdot \delta \mathbf{L} & =\mathcal{L}_{\xi}\mathbf{L}=\mathrm{d}(\xi \cdot \mathbf{L}) \\
+ & =
+\end{align}
+$$
