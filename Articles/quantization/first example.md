@@ -332,3 +332,17 @@ $$
 
 ## equivalence between Hamiltonian formalism and Lagrangian formalism
 
+I think we only need to verify that the EL equations can be derived from the Hamiltonian equations. 
+
+$$\tag{8.1}
+\begin{align}
+\dot{x}^{a} & =\left\{x^{a},H\right\}_{\mathrm{D}}=\left\{x^{a},H\right\} \\
+ & =
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+H & =\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a}\phi)(p_{b}-B_{b}\phi)+V(x)-(B^{-1})^{a} \frac{\partial V}{\partial x^{a}}p_{\phi}
+\end{align}
+$$
