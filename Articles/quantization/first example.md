@@ -296,7 +296,7 @@ the Poisson brackets should be replaced by Dirac brackets. consider Poisson brac
 
 $$\tag{7.6}
 \begin{align}
-\left\{\varphi _{1}, \varphi _{2}\right\} & =\left\{p_{\phi}, (A^{-1})^{ab}B_{a}(p_{b}-B_{b})\phi\right\}=(A^{-1})^{ab}B_{a}B_{b}:=\Delta
+\left\{\varphi _{1}, \varphi _{2}\right\} & =\left\{p_{\phi}, (A^{-1})^{ab}B_{a}(p_{b}-B_{b}\phi)\right\}=(A^{-1})^{ab}B_{a}B_{b}:=\Delta
 \end{align}
 $$
 
@@ -336,13 +336,32 @@ I think we only need to verify that the EL equations can be derived from the Ham
 
 $$\tag{8.1}
 \begin{align}
-\dot{x}^{a} & =\left\{x^{a},H\right\}_{\mathrm{D}}=\left\{x^{a},H\right\} \\
- & =
+\dot{x}^{a} & =\left\{x^{a},H\right\}_{\mathrm{D}}=\left\{x^{a},H\right\}=\frac{\partial H}{\partial p_{a}} \\
+ & =(A^{-1})^{ab}(p_{b}-B_{b}\phi) \\
+\dot{p}_{a} & =\left\{p_{a},H\right\}_{\mathrm{D}}=\left\{p_{a},H\right\}=-\frac{\partial H}{\partial x^{a}} \\
+ & =-\frac{\partial V}{\partial x^{a}}+(B^{-1})^{b} \frac{\partial ^{2}V}{\partial x^{a}\partial x^{b}}p_{\phi}  \\
+\dot{\phi} & =\left\{\phi,H\right\}_{\mathrm{D}}=\left\{\phi,H\right\}=\frac{\partial H}{\partial p_{\phi}} \\
+ & =-(B^{-1})^{a} \frac{\partial V}{\partial x^{a}} \\
+\dot{p}_{\phi} & =\left\{p_{\phi},H\right\}_{\mathrm{D}}=\left\{p_{\phi},H\right\}=-\frac{\partial H}{\partial \phi} \\
+ & =(A^{-1})^{ab}(p_{a}-B_{a}\phi)B_{b}
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
+\left\{p_{\phi},\varphi _{1}\right\} & =0 \\
+\left\{p_{\phi},\varphi _{2}\right\} & =\Delta \\
+\left\{\phi,\varphi _{1}\right\} & =1 \\
+\left\{\phi,\varphi _{2}\right\} & =0
+\end{align}
+$$
+
+
+$$\tag{.}
+\begin{align}
+p_{a}=A_{ab}\dot{x}^{b}+B_{a}\phi \\
+A_{ab}\ddot{x}^{b}+B_{a}\dot{\phi} & =-\frac{\partial V}{\partial x^{a}}+(B^{-1})^{b} \frac{\partial ^{2}V}{\partial x^{a}\partial x^{b}}p_{\phi} \\
 H & =\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a}\phi)(p_{b}-B_{b}\phi)+V(x)-(B^{-1})^{a} \frac{\partial V}{\partial x^{a}}p_{\phi}
+
 \end{align}
 $$
