@@ -275,12 +275,12 @@ $$\tag{7.3}
 \end{align}
 $$
 
-then we have a secondary constraint $\displaystyle{\varphi _{2}=p_{a}-B_{a}\phi=0}$. then consider the Poisson bracket between $\displaystyle{H}$ and $\displaystyle{\varphi _{2}}$
+then we have a secondary constraint $\displaystyle{\varphi _{2}=(A^{-1})B_{a}(p_{b}-B_{b}\phi)=0}$. then consider the Poisson bracket between $\displaystyle{H}$ and $\displaystyle{\varphi _{2}}$
 
 $$\tag{7.4}
 \begin{align}
-\dot{\varphi}_{2} & =\left\{\varphi _{2},H\right\}=\left\{p_{a}-B_{a}\phi,H\right\} =- \frac{\partial H}{\partial x^{a}}-B_{a} \frac{\partial H}{\partial p_{\phi}} \\
- & =-\frac{\partial V}{\partial x^{a}}-B_{a}u
+\dot{\varphi}_{2} & =\left\{\varphi _{2},H\right\}=(A^{-1})^{ab}B_{a}\left\{p_{b}-B_{b}\phi,H\right\} =(A^{-1})^{ab}B_{a}\left( - \frac{\partial H}{\partial x^{b}}-B_{b} \frac{\partial H}{\partial p_{\phi}} \right) \\
+ & =(A^{-1})^{ab}B_{a}\left( -\frac{\partial V}{\partial x^{b}}-B_{b}u \right)
 \end{align}
 $$
 
@@ -296,6 +296,36 @@ the Poisson brackets should be replaced by Dirac brackets. consider Poisson brac
 
 $$\tag{7.6}
 \begin{align}
-\left\{\varphi _{1}, \varphi _{2}\right\} & =
+\left\{\varphi _{1}, \varphi _{2}\right\} & =\left\{p_{\phi}, (A^{-1})^{ab}B_{a}(p_{b}-B_{b})\phi\right\}=(A^{-1})^{ab}B_{a}B_{b}:=\Delta
+\end{align}
+$$
+
+then the Dirac brackets is defined as
+
+$$\tag{7.7}
+\begin{align}
+\left\{f,g\right\}_{\mathrm{D}} & =\left\{f,g\right\}+\left\{f,\varphi _{i}\right\}(C^{-1})^{ij}\left\{\varphi _{j},g\right\}
+\end{align}
+$$
+
+where
+
+$$\tag{7.8}
+\begin{align}
+C_{ij} =\begin{pmatrix}0 & \Delta \\-\Delta & 0\end{pmatrix}\quad
+(C^{-1})^{ij}=\begin{pmatrix}
+0 & -\Delta ^{-1} \\
+\Delta ^{-1} & 0
+\end{pmatrix}
+\end{align}
+$$
+
+since $\displaystyle{\left\{\varphi _{1},x^{a}\right\}=\left\{\varphi _{1},p_{a}\right\}=0}$, we have
+
+$$\tag{7.9}
+\begin{align}
+\left\{x^{a},x^{b}\right\}_{\mathrm{D}} & =\left\{x^{a},x^{b}\right\}=0 \\
+\left\{p_{a},p_{b}\right\}_{\mathrm{D}} & =\left\{p^{a},p^{b}\right\}=0 \\
+\left\{x^{a},p_{b}\right\}_{\mathrm{D}} & =1
 \end{align}
 $$
