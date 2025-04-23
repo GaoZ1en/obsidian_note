@@ -52,4 +52,4 @@ $$\tag{1.6}
 \end{align}
 $$
 
-good. then impose quantization, quantum observables
+good. then impose quantization. quantum observables $\displaystyle{f(\hat{\xi}^{a},\hat{\pi}_{a})}$ can be obtained via Weyl quantization. 

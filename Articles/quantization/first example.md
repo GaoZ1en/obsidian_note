@@ -1,4 +1,4 @@
-$$\tag{1.1}
+$$\tag{0.1}
 \begin{align}
 L & =\frac{1}{2}A_{ab}\dot{x}^{a}\dot{x}^{b}-V(x)
 \end{align}
@@ -74,3 +74,133 @@ $$\tag{2.2}
 X_{f}= \frac{\delta f}{\delta x^{a}} \frac{\delta}{\delta p _{a}}- \frac{\delta f}{\delta p_{a}} \frac{\delta}{\delta x^{a}}
 \end{align}
 $$
+
+and the Poisson brackets between $\displaystyle{f}$ and $\displaystyle{g}$ is defined as
+
+$$\tag{2.3}
+\begin{align}
+\left\{f,g\right\} & =X_{f}\cdot X_{g}\cdot \omega \\
+ & = \frac{\delta f}{\delta x^{a}} \frac{\delta g}{\delta p_{a}}-\frac{\delta f}{\delta p_{a}} \frac{\delta g}{\delta x^{a}}
+\end{align}
+$$
+
+in particular, we have
+
+$$\tag{2.4}
+\begin{align}
+\left\{x^{a},p_{b}\right\}=\delta ^{a}_{p}
+\end{align}
+$$
+
+then canonical formalism is equivalent to the CPS formalism.
+
+---
+
+$$\tag{0.2}
+\begin{align}
+L & =\frac{1}{2}A_{ab}\dot{x}^{a}\dot{x}^{b}+B_{a}\dot{x}^{a}-V(x)
+\end{align}
+$$
+
+## canonical formalism
+
+$$\tag{3.1}
+\begin{align}
+p_{a}= \frac{\partial L}{\partial \dot{x}^{a}}= A_{ab}\dot{x}^{b}+B_{a}\implies \dot{x}^{a}=(A^{-1})^{ab}(p_{a}-B_{a})
+\end{align}
+$$
+
+the Hamiltonian is
+
+$$\tag{3.2}
+\begin{align}
+H & =p_{a}\dot{x}^{a}-L &  \\
+ & =p_{a}(A^{-1})^{ab}(p_{b}-B_{b})-\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a})(p_{b}-B_{b})+V(x) \\
+ & -B_{a}(A^{-1})^{ab}(p_{b}-B_{b}) \\
+ & =\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a})(p_{b}-B_{b})+V(x)
+\end{align}
+$$
+
+again the symplectic manifold $\displaystyle{\mathbb{R}^{2n}}$ can be parameterized by $\displaystyle{x^{a}}$ and $\displaystyle{p_{a}}$, with symplectic structure $\displaystyle{\omega=\mathrm{d}p_{a}\wedge \mathrm{d}x^{a}}$. the Hamiltonian vector corresponding to $\displaystyle{f(x^{a},p_{a})}$ is
+
+$$\tag{3.3}
+\begin{align}
+f(x^{a},p_{a}) & =\frac{\partial f}{\partial x^{a}} \frac{\partial}{\partial p_{a}}- \frac{\partial f}{\partial p_{a}} \frac{\partial}{\partial x^{a}}
+\end{align}
+$$
+
+and the Poisson brackets between $\displaystyle{f}$ and $\displaystyle{g}$ is defined as
+
+$$\tag{3.4}
+\begin{align}
+\left\{f,g\right\} & =X_{f}\cdot X_{g}\cdot \omega \\
+ & =\frac{\partial f}{\partial x^{a}} \frac{\partial g}{\partial p_{a}}-\frac{\partial f}{\partial p_{a}} \frac{\partial g}{\partial x^{a}}
+\end{align}
+$$
+
+in particular, we have
+
+$$\tag{3.5}
+\begin{align}
+\left\{x^{a},p_{b}\right\} & =\delta ^{a}_{b}
+\end{align}
+$$
+
+## CPS formalism
+
+$$\tag{4.1}
+\begin{align}
+\delta L & =A_{ab}\dot{x}^{a}\delta \dot{x}^{b}+B_{a}\delta\dot{x}^{a}-\frac{\partial V}{\partial x^{a}} \delta x^{a} \\
+ & =-\left( A_{ab}\ddot{x}^{b}+B_{a}+ \frac{\partial V}{\partial x^{a}} \right)\delta x^{a}+\frac{\mathrm{d}}{\mathrm{d}t}((A_{ab}\dot{x}^{b}+B_{a})\delta x^{a}) \\
+\theta & =(A_{ab}\dot{x}^{b}+B_{a})\delta x^{a} \\
+\implies \omega=\delta \theta & =\delta(A_{ab}\dot{x}^{b}+B_{a})\wedge \delta x^{a}
+\end{align}
+$$
+
+for convenience, we define $\displaystyle{p_{a}=A_{ab}\dot{x}^{b}+B_{a}}$, then the symplectic form can be written as $\displaystyle{\omega=\delta p_{a}\wedge \delta x^{a}}$. the Hamilton vector corresponding to $\displaystyle{f(x^{a},p_{a})}$ can be written as
+
+$$\tag{4.2}
+\begin{align}
+f(x^{a},p_{a}) & =\frac{\delta f}{\delta x^{a}} \frac{\delta}{\delta p_{a}}- \frac{\delta f}{\delta p_{a}} \frac{\delta}{\delta x^{a}}
+\end{align}
+$$
+
+and the Poisson brackets between $\displaystyle{f}$ and $\displaystyle{g}$ is defined as
+
+$$\tag{4.3}
+\begin{align}
+\left\{f,g\right\} & =X_{f}\cdot X_{g}\cdot \omega \\
+ & = \frac{\delta f}{\delta x^{a}} \frac{\delta g}{\delta p_{a}}-\frac{\delta f}{\delta p_{a}} \frac{\delta g}{\delta x^{a}}
+\end{align}
+$$
+
+in particular, we have
+
+$$\tag{4.4}
+\begin{align}
+\left\{x^{a},p_{b}\right\} & =\delta ^{a}_{b}
+\end{align}
+$$
+
+---
+
+$$\tag{0.3}
+\begin{align}
+L & =\frac{1}{2}A_{ab}\dot{x}^{a}\dot{x}^{b}+B_{a}\dot{x}^{a}\phi-\frac{1}{2}\phi ^{2}
+\end{align}
+$$
+
+## $\displaystyle{\phi}$ as dynamical variable
+
+$$\tag{5.1}
+\begin{align}
+\delta L & =-(A_{ab}\ddot{x}^{b}+B_{a}\dot{\phi})\delta x^{a}+(B_{a}\dot{x}^{a}-\phi)\delta \phi+\frac{\mathrm{d}}{\mathrm{d}t}(A_{ab}\dot{x}^{a}\delta x^{b}+B_{a}\phi \delta x^{a}) \\
+
+\end{align}
+$$
+
+## $\displaystyle{\phi}$ as Lagrangian multiplier
+
+
+## canonical formalism with constraints
+
