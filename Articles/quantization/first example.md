@@ -195,12 +195,57 @@ $$
 $$\tag{5.1}
 \begin{align}
 \delta L & =-(A_{ab}\ddot{x}^{b}+B_{a}\dot{\phi})\delta x^{a}+(B_{a}\dot{x}^{a}-\phi)\delta \phi+\frac{\mathrm{d}}{\mathrm{d}t}(A_{ab}\dot{x}^{a}\delta x^{b}+B_{a}\phi \delta x^{a}) \\
-
+E_{x} & =-(A_{ab}\ddot{x}^{b}+B_{a}\dot{\phi}) \\
+E_{\phi} & =B_{a}\dot{x}^{a}-\phi \\
+\theta & =A_{ab}\dot{x}^{a}\delta x^{b}+B_{a}\phi \delta x^{a} \\
+\implies \omega =\delta \theta & =A_{ab}\delta \dot{x}^{a}\wedge \delta x^{b}+B_{a}\delta \phi \wedge \delta x^{a}
 \end{align}
 $$
 
+the general solutions of equation of motion
+
+$$\tag{5.2}
+\begin{align}
+(A_{ab}+B_{a}B_{b})\ddot{x}^{b}=0 \\
+\phi-B_{a}\dot{x}^{a}=0
+\end{align}
+$$
+
+assume that $\displaystyle{\mathrm{rank}(A_{ab}+B_{a}B_{b})=n}$, then the only possibility is $\displaystyle{\ddot{x}^{a}=0\implies x^{a}=p^{a}_{0}t+x_{0}^{a},\phi=B_{a}p_{0}^{a}}$. then the symplectic form becomes
+
+$$\tag{5.3}
+\begin{align}
+\omega=(A_{ab}+B_{a}B_{b})\delta p_{0}^{a}\wedge \delta x_{0}^{a}
+\end{align}
+$$
 ## $\displaystyle{\phi}$ as Lagrangian multiplier
 
+make a variation respect to $\displaystyle{\phi}$
+
+$$\tag{6.1}
+\begin{align}
+\frac{\delta L}{\delta \phi} & =(B_{a}\dot{x}^{a}-\phi)\delta \phi=0 \\
+\implies \phi & =B_{a}\dot{x}^{a}
+\end{align}
+$$
+
+then plug (6.1) back into the Lagrangian (0.3), we have
+
+$$\tag{6.2}
+\begin{align}
+L & =\frac{1}{2}(A_{ab}+B_{a}B_{b})\dot{x}^{a}\dot{x}^{b}
+\end{align}
+$$
+
+then by similar construction in section 2, we derive the symplectic form
+
+$$\tag{6.3}
+\begin{align}
+\omega=\delta p_{a}\wedge \delta x^{a}
+\end{align}
+$$
+
+where $\displaystyle{p_{a}=(A_{ab}+B_{a}B_{b})\dot{x}^{b}}$. and this is equivalent with (5.4)
 
 ## canonical formalism with constraints
 
