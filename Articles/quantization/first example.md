@@ -266,7 +266,7 @@ H & = p_{a}\dot{x}^{a}-L+u\varphi _{1} \\
 \end{align}
 $$
 
-then consider the Poisson bracket between $\displaystyle{H}$ and $\displaystyle{\varphi=p_{\phi}}$
+then consider the Poisson bracket between $\displaystyle{H}$ and $\displaystyle{\varphi _{1}=p_{\phi}}$
 
 $$\tag{7.3}
 \begin{align}
@@ -334,34 +334,27 @@ $$
 
 I think we only need to verify that the EL equations can be derived from the Hamiltonian equations. 
 
+EL equation gives that
+
 $$\tag{8.1}
 \begin{align}
-\dot{x}^{a} & =\left\{x^{a},H\right\}_{\mathrm{D}}=\left\{x^{a},H\right\}=\frac{\partial H}{\partial p_{a}} \\
- & =(A^{-1})^{ab}(p_{b}-B_{b}\phi) \\
-\dot{p}_{a} & =\left\{p_{a},H\right\}_{\mathrm{D}}=\left\{p_{a},H\right\}=-\frac{\partial H}{\partial x^{a}} \\
- & =-\frac{\partial V}{\partial x^{a}}+(B^{-1})^{b} \frac{\partial ^{2}V}{\partial x^{a}\partial x^{b}}p_{\phi}  \\
-\dot{\phi} & =\left\{\phi,H\right\}_{\mathrm{D}}=\left\{\phi,H\right\}=\frac{\partial H}{\partial p_{\phi}} \\
- & =-(B^{-1})^{a} \frac{\partial V}{\partial x^{a}} \\
-\dot{p}_{\phi} & =\left\{p_{\phi},H\right\}_{\mathrm{D}}=\left\{p_{\phi},H\right\}=-\frac{\partial H}{\partial \phi} \\
- & =(A^{-1})^{ab}(p_{a}-B_{a}\phi)B_{b}
+(A_{ab}+B_{a}B_{b})\ddot{x}^{b} & =0
 \end{align}
 $$
 
-$$\tag{.}
+and Hamilton equations are
+
+$$\tag{8.2}
 \begin{align}
-\left\{p_{\phi},\varphi _{1}\right\} & =0 \\
-\left\{p_{\phi},\varphi _{2}\right\} & =\Delta \\
-\left\{\phi,\varphi _{1}\right\} & =1 \\
-\left\{\phi,\varphi _{2}\right\} & =0
+\dot{x}^{a} & =\left\{x^{a},H\right\}= \frac{\partial H}{\partial p_{a}} \\
+ & =(A^{-1})^{ab}(p_{b}-B_{b}\phi)\approx \\
+\dot{p}_{a} & =\left\{p_{a},H\right\}=-\frac{\partial H}{\partial x^{a}} \\
+ & =- \frac{\partial V}{\partial x^{a}}-(B^{-1})^{b} \frac{\partial ^{2}V}{\partial x^{a}\partial x^{b}}p_{\phi} \approx -\frac{\partial V}{\partial x^{a}}
 \end{align}
 $$
 
-
-$$\tag{.}
+$$\tag{7.5}
 \begin{align}
-p_{a}=A_{ab}\dot{x}^{b}+B_{a}\phi \\
-A_{ab}\ddot{x}^{b}+B_{a}\dot{\phi} & =-\frac{\partial V}{\partial x^{a}}+(B^{-1})^{b} \frac{\partial ^{2}V}{\partial x^{a}\partial x^{b}}p_{\phi} \\
 H & =\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a}\phi)(p_{b}-B_{b}\phi)+V(x)-(B^{-1})^{a} \frac{\partial V}{\partial x^{a}}p_{\phi}
-
 \end{align}
 $$
