@@ -256,11 +256,11 @@ p_{\phi} & =\frac{\partial L}{\partial \phi}=0
 \end{align}
 $$
 
-the we have the primary constraint $\displaystyle{\varphi=p_{\phi}=0}$. then the Hamiltonian is
+the we have the primary constraint $\displaystyle{\varphi _{1}=p_{\phi}=0}$. then the Hamiltonian is
 
 $$\tag{7.2}
 \begin{align}
-H & = p_{a}\dot{x}^{a}-L+u\varphi \\
+H & = p_{a}\dot{x}^{a}-L+u\varphi _{1} \\
  & =p_{a}(A^{-1})^{ab}(p_{b}-B_{b}\phi)-\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a}\phi)(p_{b}-B_{b}\phi)+B_{a}\phi(A^{-1})^{ab}(p_{b}-B_{b}\phi)+V(x)+up_{\phi} \\
  & =\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a}\phi)(p_{b}-B_{b}\phi)+V(x)+up_{\phi}
 \end{align}
@@ -270,23 +270,32 @@ then consider the Poisson bracket between $\displaystyle{H}$ and $\displaystyle{
 
 $$\tag{7.3}
 \begin{align}
-\dot{\varphi} & =\left\{\varphi,H\right\}=- \frac{\partial H}{\partial \phi} \\
+\dot{\varphi}_{1} & =\left\{\varphi _{1},H\right\}=- \frac{\partial H}{\partial \phi} \\
  & =(A^{-1})^{ab}B_{a}(p_{b}-B_{b}\phi)
 \end{align}
 $$
 
-then we have a secondary constraint $\displaystyle{\chi=p_{a}-B_{a}\phi=0}$. then consider the Poisson bracket between $\displaystyle{H}$ and $\displaystyle{\chi}$
+then we have a secondary constraint $\displaystyle{\varphi _{2}=p_{a}-B_{a}\phi=0}$. then consider the Poisson bracket between $\displaystyle{H}$ and $\displaystyle{\varphi _{2}}$
 
 $$\tag{7.4}
 \begin{align}
-\dot{\chi} & =\left\{\chi,H\right\}=\left\{p_{a}-B_{a}\phi,H\right\} =- \frac{\partial H}{\partial x^{a}}-B_{a} \frac{\partial H}{\partial p_{\phi}} \\
- & =
+\dot{\varphi}_{2} & =\left\{\varphi _{2},H\right\}=\left\{p_{a}-B_{a}\phi,H\right\} =- \frac{\partial H}{\partial x^{a}}-B_{a} \frac{\partial H}{\partial p_{\phi}} \\
+ & =-\frac{\partial V}{\partial x^{a}}-B_{a}u
 \end{align}
 $$
 
-$$\tag{4.3}
+then we have the Hamiltonian(?) multiplier $\displaystyle{u=-(B^{-1})^{a} \frac{\partial V}{\partial x^{a}}}$, where we denote $\displaystyle{(B^{-1})^{a}=\frac{B^{a}}{B_{a}B^{a}}}$. then we have the following Hamiltonian
+
+$$\tag{7.5}
 \begin{align}
-\left\{f,g\right\} & =X_{f}\cdot X_{g}\cdot \omega \\
- & = \frac{\delta f}{\delta x^{a}} \frac{\delta g}{\delta p_{a}}-\frac{\delta f}{\delta p_{a}} \frac{\delta g}{\delta x^{a}}
+H & =\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a}\phi)(p_{b}-B_{b}\phi)+V(x)-(B^{-1})^{a} \frac{\partial V}{\partial x^{a}}p_{\phi}
+\end{align}
+$$
+
+the Poisson brackets should be replaced by Dirac brackets. consider Poisson brackets between $\displaystyle{\varphi _{1}}$ and $\displaystyle{\varphi _{2}}$
+
+$$\tag{7.6}
+\begin{align}
+\left\{\varphi _{1}, \varphi _{2}\right\} & =
 \end{align}
 $$
