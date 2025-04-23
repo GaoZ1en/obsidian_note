@@ -2,4 +2,3 @@ primary constraints $\displaystyle{\phi _{m}(q,p),m=1,\dots,M}$ are constraints 
 
 primary constraints define a submanifold of phase space, we call this submanifold as the primary constraint surface.
 
-
