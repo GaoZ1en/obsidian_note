@@ -261,8 +261,8 @@ the we have the primary constraint $\displaystyle{\varphi _{1}=p_{\phi}=0}$. the
 $$\tag{7.2}
 \begin{align}
 H & = p_{a}\dot{x}^{a}-L+u\varphi _{1} \\
- & =p_{a}(A^{-1})^{ab}(p_{b}-B_{b}\phi)-\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a}\phi)(p_{b}-B_{b}\phi)+B_{a}\phi(A^{-1})^{ab}(p_{b}-B_{b}\phi)+V(x)+up_{\phi} \\
- & =\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a}\phi)(p_{b}-B_{b}\phi)+V(x)+up_{\phi}
+ & =p_{a}(A^{-1})^{ab}(p_{b}-B_{b}\phi)-\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a}\phi)(p_{b}-B_{b}\phi)+B_{a}\phi(A^{-1})^{ab}(p_{b}-B_{b}\phi)+\frac{1}{2}\phi ^{2}+up_{\phi} \\
+ & =\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a}\phi)(p_{b}-B_{b}\phi)+\frac{1}{2}\phi ^{2}+up_{\phi}
 \end{align}
 $$
 
@@ -271,24 +271,24 @@ then consider the Poisson bracket between $\displaystyle{H}$ and $\displaystyle{
 $$\tag{7.3}
 \begin{align}
 \dot{\varphi}_{1} & =\left\{\varphi _{1},H\right\}=- \frac{\partial H}{\partial \phi} \\
- & =(A^{-1})^{ab}B_{a}(p_{b}-B_{b}\phi)
+ & =(A^{-1})^{ab}B_{a}(p_{b}-B_{b}\phi)-\phi
 \end{align}
 $$
 
-then we have a secondary constraint $\displaystyle{\varphi _{2}=(A^{-1})B_{a}(p_{b}-B_{b}\phi)=0}$. then consider the Poisson bracket between $\displaystyle{H}$ and $\displaystyle{\varphi _{2}}$
+then we have a secondary constraint $\displaystyle{\varphi _{2}=(A^{-1})B_{a}(p_{b}-B_{b}\phi)-\phi=0}$. then consider the Poisson bracket between $\displaystyle{H}$ and $\displaystyle{\varphi _{2}}$
 
 $$\tag{7.4}
 \begin{align}
-\dot{\varphi}_{2} & =\left\{\varphi _{2},H\right\}=(A^{-1})^{ab}B_{a}\left\{p_{b}-B_{b}\phi,H\right\} =(A^{-1})^{ab}B_{a}\left( - \frac{\partial H}{\partial x^{b}}-B_{b} \frac{\partial H}{\partial p_{\phi}} \right) \\
- & =(A^{-1})^{ab}B_{a}\left( -\frac{\partial V}{\partial x^{b}}-B_{b}u \right)
+\dot{\varphi}_{2} & =\left\{\varphi _{2},H\right\}=\left\{((A^{-1})^{ab}B_{a}B_{b}+1)\phi,H\right\}  \\
+ & =(1+(A^{-1})^{ab}B_{a}B_{b})u
 \end{align}
 $$
 
-then we have the Hamiltonian(?) multiplier $\displaystyle{u=-(B^{-1})^{a} \frac{\partial V}{\partial x^{a}}}$, where we denote $\displaystyle{(B^{-1})^{a}=\frac{B^{a}}{B_{a}B^{a}}}$. then we have the following Hamiltonian
+then we have the Hamiltonian(?) multiplier $\displaystyle{u=0}$. then we have the following Hamiltonian
 
 $$\tag{7.5}
 \begin{align}
-H & =\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a}\phi)(p_{b}-B_{b}\phi)+V(x)-(B^{-1})^{a} \frac{\partial V}{\partial x^{a}}p_{\phi}
+H & =\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a}\phi)(p_{b}-B_{b}\phi)+\frac{1}{2}\phi ^{2}
 \end{align}
 $$
 
@@ -296,7 +296,7 @@ the Poisson brackets should be replaced by Dirac brackets. consider Poisson brac
 
 $$\tag{7.6}
 \begin{align}
-\left\{\varphi _{1}, \varphi _{2}\right\} & =\left\{p_{\phi}, (A^{-1})^{ab}B_{a}(p_{b}-B_{b}\phi)\right\}=(A^{-1})^{ab}B_{a}B_{b}:=\Delta
+\left\{\varphi _{1}, \varphi _{2}\right\} & =\left\{p_{\phi}, (A^{-1})^{ab}B_{a}(p_{b}-B_{b}\phi)-\phi\right\}=(A^{-1})^{ab}B_{a}B_{b}+1:=\Delta
 \end{align}
 $$
 
@@ -346,15 +346,11 @@ and Hamilton equations are
 
 $$\tag{8.2}
 \begin{align}
-\dot{x}^{a} & =\left\{x^{a},H\right\}= \frac{\partial H}{\partial p_{a}} \\
- & =(A^{-1})^{ab}(p_{b}-B_{b}\phi)\approx \\
-\dot{p}_{a} & =\left\{p_{a},H\right\}=-\frac{\partial H}{\partial x^{a}} \\
- & =- \frac{\partial V}{\partial x^{a}}-(B^{-1})^{b} \frac{\partial ^{2}V}{\partial x^{a}\partial x^{b}}p_{\phi} \approx -\frac{\partial V}{\partial x^{a}}
+\dot{x}^{a} & =\left\{x^{a},H\right\}_{\mathrm{D}}=\left\{x^{a},H\right\}+\left\{x^{a},\varphi _{2}\right\}(C^{-1})^{21}\left\{\varphi _{1},H\right\} \\
+ & =(A^{-1})^{ab}(p_{b}-B_{b}\phi)+\left(A^{-1}\right)^{ab}B_{b}(C^{-1})^{21}\varphi _{2}\approx(A^{-1})^{ab}(p_{b}-B_{b}\phi) \\
+\dot{p}_{a} & =\left\{p_{a},H\right\}_{\mathrm{D}}=\left\{p_{a},H\right\} \\
+ & =0 \\
+\dot{\phi} & =\left\{\phi,H\right\}_{D}=\left\{\phi,H\right\}+\left\{\phi,\varphi _{1}\right\}(C^{-1})^{12}\left\{\varphi _{2},H\right\}=0
 \end{align}
 $$
 
-$$\tag{7.5}
-\begin{align}
-H & =\frac{1}{2}(A^{-1})^{ab}(p_{a}-B_{a}\phi)(p_{b}-B_{b}\phi)+V(x)-(B^{-1})^{a} \frac{\partial V}{\partial x^{a}}p_{\phi}
-\end{align}
-$$
