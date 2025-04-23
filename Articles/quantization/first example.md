@@ -329,3 +329,6 @@ $$\tag{7.9}
 \left\{x^{a},p_{b}\right\}_{\mathrm{D}} & =1
 \end{align}
 $$
+
+## equivalence between Hamiltonian formalism and Lagrangian formalism
+
