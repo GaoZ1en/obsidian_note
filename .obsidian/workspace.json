@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/first example.md",
+                "file": "Articles/quantization/quantization of gauged system.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "first example"
+              "title": "quantization of gauged system"
             }
           }
         ]
@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -123,8 +122,9 @@
   },
   "active": "c3306cb08b31df8c",
   "lastOpenFiles": [
-    "Articles/quantization/systems with gauge symmetry.md",
     "Articles/quantization/first example.md",
+    "Articles/quantization/quantization of gauged system.md",
+    "Articles/quantization/systems with gauge symmetry.md",
     "Articles/quantization/examples.md",
     "Articles/some generalization CPS/harmonic oscillator.md",
     "Articles/quantization",
@@ -153,7 +153,6 @@
     "Reading/computational algebraic geometry/README.md",
     "Reading/computational algebraic geometry",
     "Reading/symmetry and topology/topology/README.md",
-    "Reading/symmetry and topology/topology/homework3.md",
     "Attachments/Pasted image 20250417145002.png",
     "Attachments/Pasted image 20250417093901.png",
     "Reading/symmetry and topology/topology",

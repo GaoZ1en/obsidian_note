@@ -270,7 +270,7 @@ then consider the Poisson bracket between $\displaystyle{H}$ and $\displaystyle{
 
 $$\tag{7.3}
 \begin{align}
-\dot{\varphi}_{1} & =\left\{\varphi _{1},H\right\}=- \frac{\partial H}{\partial \phi} \\
+\dot{\varphi}_{1} & =\left\{p_{\phi},H\right\}=- \frac{\partial H}{\partial \phi} \\
  & =(A^{-1})^{ab}B_{a}(p_{b}-B_{b}\phi)-\phi
 \end{align}
 $$
@@ -342,21 +342,16 @@ $$\tag{8.1}
 \end{align}
 $$
 
-and Hamilton equations are
+and Hamilton equations are (notice that if we use Dirac brackets in the Hamiltonian formalism, we need to drop the multiplier terms. for (7.5) this term vanishes, so we can only use the Poisson brackets)
 
 $$\tag{8.2}
 \begin{align}
-\dot{x}^{a} & =\left\{x^{a},H\right\}_{\mathrm{D}}=\left\{x^{a},H\right\}+\left\{x^{a},\varphi _{2}\right\}(C^{-1})^{21}\left\{\varphi _{1},H\right\} \\
- & =(A^{-1})^{ab}(p_{b}-B_{b}\phi)+\left(A^{-1}\right)^{ab}B_{b}(C^{-1})^{21}\varphi _{2}\approx(A^{-1})^{ab}(p_{b}-B_{b}\phi) \\
-\dot{p}_{a} & =\left\{p_{a},H\right\}_{\mathrm{D}}=\left\{p_{a},H\right\} \\
- & =0 \\
-\dot{\phi} & =\left\{\phi,H\right\}_{D}=\left\{\phi,H\right\}+\left\{\phi,\varphi _{1}\right\}(C^{-1})^{12}\left\{\varphi _{2},H\right\}=0 \\
-\dot{p}_{\phi} & =\left\{p_{\phi},H\right\}_{\mathrm{D}}\approx0 \\
-\implies A_{ab}\ddot{x}^{b} & =0
+\dot{x}^{a} & =\left\{x^{a},H\right\}=(A^{-1})^{ab}(p_{b}-B_{b}\phi) \\
+\dot{p}_{a} & =\left\{p_{a},H\right\}=0 \\
+\dot{\phi} & =\left\{\phi,H\right\}=\frac{\partial H}{\partial p_{\phi}}=0 \\
+\dot{p}_{\phi} & =(A^{-1})^{ab}B_{a}(p_{b}-B_{b}\phi)-\phi \approx 0 \\
+\implies A_{ab}\ddot{x}^{a} & =0
 \end{align}
 $$
 
-although (8.1) and (8.2) gives the same solution, but I think they are not equivalent... why?
-
-we consider another example
-
+I don't know why... I think the problem is that $\displaystyle{p_{\phi}=0}$ is not a holonomic constraints, and these two formalism are only equivalent when all the constraints are holonomic???
