@@ -275,12 +275,12 @@ $$\tag{7.3}
 \end{align}
 $$
 
-then we have a secondary constraint $\displaystyle{\varphi _{2}=(A^{-1})B_{a}(p_{b}-B_{b}\phi)-\phi=0}$. then consider the Poisson bracket between $\displaystyle{H}$ and $\displaystyle{\varphi _{2}}$
+then we have a secondary constraint $\displaystyle{\varphi _{2}=(A^{-1})^{ab}B_{a}(p_{b}-B_{b}\phi)-\phi=0}$. then consider the Poisson bracket between $\displaystyle{H}$ and $\displaystyle{\varphi _{2}}$
 
 $$\tag{7.4}
 \begin{align}
-\dot{\varphi}_{2} & =\left\{\varphi _{2},H\right\}=\left\{((A^{-1})^{ab}B_{a}B_{b}+1)\phi,H\right\}  \\
- & =(1+(A^{-1})^{ab}B_{a}B_{b})u
+\dot{\varphi}_{2} & =\left\{\varphi _{2},H\right\}=\left\{(A^{-1})^{ab}B_{a}(p_{b}-B_{b}\phi)-\phi,H\right\}= -((A^{-1})^{ab}B_{a}B_{b}+1) \frac{\partial H}{\partial p_{\phi}} \\
+ & =-((A^{-1})^{ab}B_{a}B_{b}+1)u
 \end{align}
 $$
 
@@ -350,7 +350,13 @@ $$\tag{8.2}
  & =(A^{-1})^{ab}(p_{b}-B_{b}\phi)+\left(A^{-1}\right)^{ab}B_{b}(C^{-1})^{21}\varphi _{2}\approx(A^{-1})^{ab}(p_{b}-B_{b}\phi) \\
 \dot{p}_{a} & =\left\{p_{a},H\right\}_{\mathrm{D}}=\left\{p_{a},H\right\} \\
  & =0 \\
-\dot{\phi} & =\left\{\phi,H\right\}_{D}=\left\{\phi,H\right\}+\left\{\phi,\varphi _{1}\right\}(C^{-1})^{12}\left\{\varphi _{2},H\right\}=0
+\dot{\phi} & =\left\{\phi,H\right\}_{D}=\left\{\phi,H\right\}+\left\{\phi,\varphi _{1}\right\}(C^{-1})^{12}\left\{\varphi _{2},H\right\}=0 \\
+\dot{p}_{\phi} & =\left\{p_{\phi},H\right\}_{\mathrm{D}}\approx0 \\
+\implies A_{ab}\ddot{x}^{b} & =0
 \end{align}
 $$
+
+although (8.1) and (8.2) gives the same solution, but I think they are not equivalent... why?
+
+we consider another example
 
