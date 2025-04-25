@@ -173,3 +173,11 @@ S & =\int _{M}\varepsilon \left( -\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m
 \end{align}
 $$
 
+where $\displaystyle{F_{\mu \nu}=\nabla _{\mu}A_{\nu}-\nabla _{\nu}A_{\mu}}$. make a variation
+
+$$\tag{2.2}
+\begin{align}
+\delta S & =\int _{M}\varepsilon E^{\mu}\delta A_{\mu}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
+E^{\mu} & =
+\end{align}
+$$
