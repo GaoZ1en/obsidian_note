@@ -169,6 +169,7 @@ consider a free Proca field in $\displaystyle{d}$-dimension
 
 $$\tag{2.1}
 \begin{align}
-S & =-\frac{1}{4}\int _{M}\varepsilon(\nabla _{\mu}A_{\nu}-\nabla _{\nu}A_{\mu})(\nabla ^{\mu}A^{\nu}-\nabla ^{\nu}A^{\mu})+\frac{1}{2}m^{2}A_{\mu}A^{\mu}
+S & =\int _{M}\varepsilon \left( -\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu} \right)
 \end{align}
 $$
+
