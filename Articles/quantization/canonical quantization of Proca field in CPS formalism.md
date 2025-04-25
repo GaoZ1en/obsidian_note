@@ -50,9 +50,9 @@ in particular, we have the following standard results
 
 $$\tag{1.6}
 \begin{align}
-\left\{\phi(x),\phi(y)\right\} & =0  \\
-\left\{\pi(x),\pi(y)\right\} & =0 \\
-\left\{\phi(x),\pi(x)\right\} & =\delta ^{d}(x-y)
+\left\{\phi(x),\phi(y)\right\}_{\Sigma} & =0  \\
+\left\{\pi(x),\pi(y)\right\}_{\Sigma} & =0 \\
+\left\{\phi(x),\pi(x)\right\}_{\Sigma} & =\delta ^{d-1}(x-y)
 \end{align}
 $$
 
@@ -68,9 +68,9 @@ in particular, we have the following canonical commutation relations (for simpli
 
 $$\tag{1.8}
 \begin{align}
-[\phi(x),\phi(y)] & =0 \\
-[\pi(x),\pi(y)] & =0 \\
-[\phi(x),\pi(y)] & =i\delta ^{d}(x-y)
+[\phi(x),\phi(y)]_{\Sigma} & =0 \\
+[\pi(x),\pi(y)]_{\Sigma} & =0 \\
+[\phi(x),\pi(y)]_{\Sigma} & =i\delta ^{d-1}(x-y)
 \end{align}
 $$
 
@@ -118,21 +118,46 @@ $$\tag{1.12}
 \end{align}
 $$
 
-where we choose the following Klein-Gordon norm
+where we define the Klein-Gordon inner product as
 
 $$\tag{1.13}
 \begin{align}
-(\sigma _{n},\sigma _{m}) & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\sigma ^{*}_{m}\nabla _{\mu}\sigma _{n}-\sigma ^{*}_{n}\nabla _{\mu}\sigma _{m}) \\
- & =
+(\sigma _{n},\sigma _{m})_{\mathrm{KG}} & =-i\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\sigma ^{*}_{m}\nabla _{\mu}\sigma _{n}-\sigma ^{*}_{n}\nabla _{\mu}\sigma _{m}) \\
+ & =\delta _{n,m}
 \end{align}
 $$
 
+then we consider the commutator between $\displaystyle{[\phi(x),\phi(y)]}$
 
-then the time-ordered correlation function is defined as
-
-$$\tag{1.9}
+$$\tag{1.14}
 \begin{align}
-\langle \phi(x)\phi(y)\rangle & =\langle 0|\mathcal{T}[\phi(x)\phi(y)]|0\rangle \\
- & =\theta(x^{0}-y^{0})\langle 0|\phi(x)\phi(y)|0\rangle +\theta(y^{0}-x^{0})\langle 0|\phi(y)\phi(x)|0\rangle
- \end{align}
- $$
+[\phi(x),\phi(y)] & =iX_{\phi(x)}\cdot X_{\phi(y)}\cdot \omega \\
+ & =\sum _{n}(\sigma _{n}(x)\sigma ^{*}_{n}(y)-\sigma _{n}^{*}(x)\sigma _{n}(y))
+\end{align}
+$$
+
+---
+
+if we choose the familar basis $\displaystyle{\sigma _{k}(x)= \frac{e^{ik\cdot x}}{(2\pi)^{(d-1)/2}\sqrt{ 2\omega _{k} }}}$, we have the familiar result in the Minkowski spacetime
+
+$$\tag{1.15}
+\begin{align}
+[\phi(x),\phi(y)] & = \int _{\mathcal{C}} \frac{\mathrm{d}^{d}k}{(2\pi)^{d}} \frac{i}{k^{2}+m^{2}} e^{ik\cdot(x+y)}=\Delta(x,y)
+\end{align}
+$$
+
+where the contour $\displaystyle{\mathcal{C}}$ encloses the poles $\displaystyle{k^{0}=\pm \omega _{k}}$ as
+
+![[Attachments/Pasted image 20250425232210.png]]
+
+---
+
+another quantity of interest is the Feynman propagator. a naive definition is
+
+$$\tag{1.16}
+\begin{align}
+\braket{ \phi(x)\phi(y) } = \braket{ 0|\mathcal{T}\phi(x)\phi(y)|0 } 
+\end{align}
+$$
+
+where $\displaystyle{\mathcal{T}}$ is the time ordering operator. I think we need to verify that this definition is independent of the choice of $\displaystyle{\Sigma}$s...
