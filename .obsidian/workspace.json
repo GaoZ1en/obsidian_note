@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/quantization of gauged system.md",
+                "file": "Articles/quantization/canonical quantization of Proca field in CPS formalism.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "quantization of gauged system"
+              "title": "canonical quantization of Proca field in CPS formalism"
             }
           }
         ]
@@ -52,7 +52,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -122,8 +123,9 @@
   },
   "active": "c3306cb08b31df8c",
   "lastOpenFiles": [
-    "Articles/quantization/first example.md",
     "Articles/quantization/quantization of gauged system.md",
+    "Articles/quantization/canonical quantization of Proca field in CPS formalism.md",
+    "Articles/quantization/first example.md",
     "Articles/quantization/systems with gauge symmetry.md",
     "Articles/quantization/examples.md",
     "Articles/some generalization CPS/harmonic oscillator.md",
@@ -152,7 +154,6 @@
     "Drafts",
     "Reading/computational algebraic geometry/README.md",
     "Reading/computational algebraic geometry",
-    "Reading/symmetry and topology/topology/README.md",
     "Attachments/Pasted image 20250417145002.png",
     "Attachments/Pasted image 20250417093901.png",
     "Reading/symmetry and topology/topology",
