@@ -33,7 +33,7 @@ here we define the momentum $\displaystyle{\pi}$ conjugate to $\displaystyle{\ph
 $$\tag{1.4}
 \begin{align}
 X_{f}
- & =\int _{M,\Sigma?}\varepsilon\left( \frac{\delta f}{\delta \phi} \frac{\delta}{\delta \pi}- \frac{\delta f}{\delta \pi} \frac{\delta}{\delta \phi}\right)
+ & =\int _{M}\mathrm{d}^{d}x\left( \frac{\delta f}{\delta \phi} \frac{\delta}{\delta \pi}- \frac{\delta f}{\delta \pi} \frac{\delta}{\delta \phi}\right)
 \end{align}
 $$
 
@@ -42,7 +42,43 @@ then the Poisson bracket between $\displaystyle{f}$ and $\displaystyle{g}$ is de
 $$\tag{1.5}
 \begin{align}
 \left\{f,g\right\} &=X_{f}\cdot X_{g}\cdot \omega \\
- & =\int _{M}\varepsilon\left(\frac{\delta f}{\delta \phi} \frac{\delta g}{\delta \pi}-\frac{\delta f}{\delta \pi} \frac{\delta g}{\delta \phi}\right) 
+ & =\int _{\Sigma}\mathrm{d}^{d-1}x\left(\frac{\delta f}{\delta \phi} \frac{\delta g}{\delta \pi}-\frac{\delta f}{\delta \pi} \frac{\delta g}{\delta \phi}\right) 
 \end{align}
 $$
 
+in particular, we have the following standard results
+
+$$\tag{1.6}
+\begin{align}
+\left\{\phi(x),\phi(y)\right\} & =0  \\
+\left\{\pi(x),\pi(y)\right\} & =0 \\
+\left\{\phi(x),\pi(x)\right\} & =\delta ^{d}(x-y)
+\end{align}
+$$
+
+after quantization, i.e. classical observable $\displaystyle{f[\phi,\pi]}$ is replaced by the quantum operators $\displaystyle{\hat{f}[\hat{\phi},\hat{\pi}]}$, the Poisson brackets should be replaced by the commutators
+
+$$\tag{1.7}
+\begin{align}
+[\hat{f},\hat{g}] & =i\widehat{\left\{f,g\right\}}
+\end{align}
+$$
+
+in particular, we have the following canonical commutation relations (for simplicity, we drop the hat for the quantum operators)
+
+$$\tag{1.8}
+\begin{align}
+[\phi(x),\phi(y)] & =0 \\
+[\pi(x),\pi(y)] & =0 \\
+[\phi(x),\pi(y)] & =i\delta ^{d}(x-y)
+\end{align}
+$$
+
+then the time-ordered correlation function is defined as
+
+$$\tag{1.9}
+\begin{align}
+\langle \phi(x)\phi(y)\rangle & =\langle 0|\mathcal{T}[\phi(x)\phi(y)]|0\rangle \\
+ & =\theta(x^{0}-y^{0})\langle 0|\phi(x)\phi(y)|0\rangle +\theta(y^{0}-x^{0})\langle 0|\phi(y)\phi(x)|0\rangle
+ \end{align}
+ $$
