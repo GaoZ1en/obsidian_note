@@ -98,6 +98,36 @@ waiting to be completed...
 
 ---
 
+make the following mode expansion of $\displaystyle{\phi(x)}$ and $\displaystyle{\pi(x)}$
+
+$$\tag{1.11}
+\begin{align}
+\phi(x) & =\sum _{n}(\sigma _{n}a_{n}+\sigma _{n}^{*}a^{\dagger}_{n}) \\
+\pi(x)=\tau ^{\mu}\nabla _{\mu}\phi(x) & =\sum _{n}(\tau ^{\mu}\nabla _{\mu}\sigma _{n}a_{n}+\tau ^{\mu}\nabla _{\mu}\sigma _{n}^{*}a^{\dagger}_{n})
+\end{align}
+$$
+
+where $\displaystyle{\sigma _{n}}$ satisfies the same equation of motion of $\displaystyle{\phi(x)}$ and forms a complete basis (positive frequency solution). then the symplectic form can be written as
+
+$$\tag{1.12}
+\begin{align}
+\omega & =\int _{\Sigma}\varepsilon _{\Sigma}\delta \pi \wedge \delta \phi \\
+ & = \int _{\Sigma}\varepsilon _{\Sigma}\sum _{m,n}(\tau ^{\mu}\nabla _{\mu}\sigma _{m}\delta a_{n}+\tau ^{\mu}\nabla _{\mu}\sigma ^{*}_{n}\delta a^{\dagger}_{n})(\sigma _{m}\delta a_{m}+\sigma ^{*}_{m}\delta a_{m}^{\dagger}) \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\sum _{m,n}(\sigma ^{*}_{m}\nabla _{\mu}\sigma _{n}-\sigma ^{*}_{n}\nabla _{\mu}\sigma _{m})\delta a_{n}\wedge \delta a_{m}^{\dagger} \\
+ & =i\sum _{n}\delta a_{n}^{\dagger}\wedge \delta a_{n}
+\end{align}
+$$
+
+where we choose the following Klein-Gordon norm
+
+$$\tag{1.13}
+\begin{align}
+(\sigma _{n},\sigma _{m}) & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(\sigma ^{*}_{m}\nabla _{\mu}\sigma _{n}-\sigma ^{*}_{n}\nabla _{\mu}\sigma _{m}) \\
+ & =
+\end{align}
+$$
+
+
 then the time-ordered correlation function is defined as
 
 $$\tag{1.9}
