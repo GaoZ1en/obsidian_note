@@ -198,13 +198,28 @@ $$\tag{2.4}
 E^{\nu} & =\nabla ^{2}A^{\nu}+m^{2}A^{\nu}+R^{~\nu}_{\mu}A^{\mu}
 \end{align}
 $$
-plus a constraint $\displaystyle{\nabla _{\mu}A^{\mu}=0}$. the symplectic form is
+plus a constraint $\displaystyle{\nabla _{\mu}A^{\mu}=0}$. we choose $\displaystyle{A_{i}, i=1,2,\dots,d-1}$ as independent variables. the symplectic form is
 
 $$\tag{2.3}
 \begin{align}
-\omega=\delta \theta & =\int _{\Sigma}\varepsilon _{\Sigma}\tau _{\mu}\delta F^{\mu \nu}\wedge \delta A_{\nu} \\
- & =\int _{\Sigma}\varepsilon _{\Sigma}\delta \pi ^{\mu}\wedge \delta A_{\mu}
+\omega=\delta \theta & =\int _{\Sigma}\varepsilon _{\Sigma}\tau _{\mu}\delta F^{\mu i}\wedge \delta A_{i} \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\delta \pi ^{i}\wedge \delta A_{i}
 \end{align}
 $$
 
-we we denote $\displaystyle{\pi ^{\nu}=\tau _{\mu}F^{\mu \nu}}$
+we we denote $\displaystyle{\pi ^{\nu}=\tau _{\mu}F^{\mu \nu}}$. the Hamilton vector $\displaystyle{X_{f}}$ corresponding observable $\displaystyle{f[A,\pi]}$ can be written as
+
+$$\tag{2.4}
+\begin{align}
+X_{f} & =\int _{M}\mathrm{d}^{d}x \left(\frac{\delta f}{\delta A_{i}} \frac{\delta}{\delta \pi ^{i}}-\frac{\delta f}{\delta \pi ^{i}} \frac{\delta}{\delta A_{i}}\right)
+\end{align}
+$$
+
+the Poisson bracket between $\displaystyle{f}$ and $\displaystyle{g}$ is defined as
+
+$$\tag{2.5}
+\begin{align}
+\left\{f,g\right\} & =X_{f}\cdot X_{g}\cdot \omega \\
+ & =\int _{\Sigma}\mathrm{d}^{d-1}x\left(\right)
+\end{align}
+$$
