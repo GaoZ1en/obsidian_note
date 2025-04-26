@@ -178,14 +178,26 @@ where $\displaystyle{F_{\mu \nu}=\nabla _{\mu}A_{\nu}-\nabla _{\nu}A_{\mu}}$. ma
 $$\tag{2.2}
 \begin{align}
 \delta S & =\int _{M}\varepsilon E^{\mu}\delta A_{\mu}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
-E^{\mu} & =
-\end{align}
-$$
-
-$$
-\begin{align}
-\delta S & =\int _{M}\varepsilon\left(-F^{\mu \nu}\nabla _{\mu}\delta A_{\nu}+m^{2}A^{\mu}\delta A_{\mu}\right) \\
- & =\int _{M}\varepsilon (\nabla _{\mu}F^{\mu \nu}+m^{2}A^{\nu})\delta A_{\nu}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
+E^{\nu} & =\nabla _{\mu}F^{\mu \nu}+m^{2}A^{\nu} \\
 \theta & =\int _{\Sigma}\varepsilon _{\Sigma}\tau _{\mu}F^{\mu \nu}\delta A_{\nu}
 \end{align}
 $$
+
+from the equation of motion we have
+
+$$\tag{2.3}
+\begin{align}
+\nabla _{\mu}\nabla _{\nu}F^{\mu \nu}+m^{2}\nabla _{\mu}A^{\mu} & 
+\end{align}
+$$
+
+then the symplectic form is
+
+$$\tag{2.3}
+\begin{align}
+\omega=\delta \theta & =\int _{\Sigma}\varepsilon _{\Sigma}\tau _{\mu}\delta F^{\mu \nu}\wedge \delta A_{\nu} \\
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\delta \pi ^{\mu}\wedge \delta A_{\mu}
+\end{align}
+$$
+
+we we denote $\displaystyle{\pi ^{\nu}=\tau _{\mu}F^{\mu \nu}}$
