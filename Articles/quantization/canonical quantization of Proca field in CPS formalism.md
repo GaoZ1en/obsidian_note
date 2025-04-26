@@ -181,3 +181,11 @@ $$\tag{2.2}
 E^{\mu} & =
 \end{align}
 $$
+
+$$
+\begin{align}
+\delta S & =\int _{M}\varepsilon\left(-F^{\mu \nu}\nabla _{\mu}\delta A_{\nu}+m^{2}A^{\mu}\delta A_{\mu}\right) \\
+ & =\int _{M}\varepsilon (\nabla _{\mu}F^{\mu \nu}+m^{2}A^{\nu})\delta A_{\nu}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
+\theta & =\int _{\Sigma}\varepsilon _{\Sigma}\tau _{\mu}F^{\mu \nu}\delta A_{\nu}
+\end{align}
+$$
