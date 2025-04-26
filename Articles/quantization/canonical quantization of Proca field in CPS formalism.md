@@ -161,9 +161,7 @@ $$\tag{1.16}
 \end{align}
 $$
 
-where $\displaystyle{\mathcal{T}}$ is the time ordering operator. I think we need to verify that this definition is independent of the choice of $\displaystyle{\Sigma}$s...
-
-
+where $\displaystyle{\mathcal{T}}$ is the time ordering operator. I think we need to verify that this definition is independent of the choice of $\displaystyle{\Sigma}$s... doesn't matter. we will calculate (1.16) explicitly for the case of 4d Minkowski spacetime with $\displaystyle{\Sigma}$ as the constant time slice, and $\displaystyle{\sigma _{k}(x)=\frac{e^{ik\cdot x}}{(2\pi)^{}}}$
 
 
 ## Proca field
