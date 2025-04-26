@@ -24,3 +24,19 @@ $$\tag{1.3}
 \omega =\delta \theta & =\int _{\Sigma}\mathrm{d}^{3}x\partial _{0}\delta \phi \wedge \delta \phi
 \end{align}
 $$
+
+make the following parameterization
+
+$$\tag{1.4}
+\begin{align}
+\phi(x)=\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3/2}\sqrt{ 2\omega _{k} }}(\sigma _{k}(x)a_{k}+\sigma _{k}^{*}(x)a_{k}^{\dagger})
+\end{align}
+$$
+
+where $\displaystyle{\sigma _{k}(x)}$s are solutions of Klein-Gordon equation and form a complete basis of the space of solutions. then the symplectic form becomes
+
+$$\tag{1.5}
+\begin{align}
+\omega=\int _{\Sigma}\mathrm{d}^{3}x\iint \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }}(\partial _{0}\sigma _{k}(x)\delta a_{k}+\partial _{0}\sigma ^{*}_{k}\delta a_{k}^{\dagger})\wedge()
+\end{align}
+$$
