@@ -156,11 +156,14 @@ another quantity of interest is the Feynman propagator. a naive definition is
 
 $$\tag{1.16}
 \begin{align}
-\braket{ \phi(x)\phi(y) } = \braket{ 0|\mathcal{T}\phi(x)\phi(y)|0 } 
+\braket{ \phi(x)\phi(y) }  & = \braket{ 0|\mathcal{T}\phi(x)\phi(y)|0 }  \\
+ & =\sum _{n}(\theta(\Sigma _{x}-\Sigma _{y}))\sigma _{n}(x)\sigma ^{*}_{n}(y)+\theta(\Sigma _{y}-\Sigma _{x})\sigma ^{*}_{n}(x)\sigma _{n}(y))
 \end{align}
 $$
 
 where $\displaystyle{\mathcal{T}}$ is the time ordering operator. I think we need to verify that this definition is independent of the choice of $\displaystyle{\Sigma}$s...
+
+
 
 
 ## Proca field
@@ -262,7 +265,7 @@ $$
 
 make the following mode expansion of $\displaystyle{A^{\mu}(x)}$
 
-$$\tag{1.11}
+$$\tag{2.10}
 \begin{align}
 A_{\mu}(x) & =\sum _{n,s}\left(\sigma ^{s}_{n\mu}(x)a_{ns}+\sigma ^{s*}_{n\mu}(x)a_{ns}^{\dagger}\right) \\
 \pi ^{\nu}(x) & =\tau _{\mu}(\nabla ^{\mu}A^{\nu}-\nabla ^{\nu}A^{\mu}) \\
@@ -272,8 +275,28 @@ $$
 
 and $\displaystyle{\sigma ^{s}_{n,\mu},s=1,2,\dots,d-1}$ satisfies the same equation of motion of $\displaystyle{A^{\mu}(x)}$ and the constraint $\displaystyle{\nabla _{\mu}\sigma ^{s}_{n\mu}}$. $\displaystyle{\sigma ^{s}_{n\mu}}$ forms a complete basis. then the symplectic form can be written as
 
-$$\tag{1.12}
+$$\tag{2.11}
 \begin{align}
 \omega & =i\sum _{n,s}\delta a_{ns}^{\dagger}\wedge \delta a_{ns}
 \end{align}
 $$
+
+then we consider the commutator $\displaystyle{[A_{i}(x),A_{j}(y)]}$
+
+$$\tag{2.12}
+\begin{align}
+[A_{i}(x),A_{j}(y)] & =iX_{A_{i}(x)}\cdot X_{A_{j}(y)}\cdot \omega \\
+ & =\sum _{n,s}(\sigma _{ni}^{s}(x)\sigma ^{s*}_{nj}(y)-\sigma _{ni}^{s*}(x)\sigma ^{s} _{nj}(y))
+\end{align}
+$$
+
+and we have the time ordered correlation function
+
+$$\tag{2.13}
+\begin{align}
+\braket{ A_{i}(x)A_{j}(y) }  & =\braket{ 0|\mathcal{T}A_{i}(x)A_{j}(y)|0 }  \\
+ & =\sum _{n,s}\left(\theta(\Sigma _{x}-\Sigma _{y})\sigma ^{s}_{ni}(x)\sigma ^{s*}_{nj}(y)+\theta(\Sigma _{y}-\Sigma _{x})\sigma ^{s*}_{ni}(x)\sigma ^{s}_{nj}(y)\right)
+\end{align}
+$$
+
+here we also meets the problem that whether the above definition is independent of the choice of $\displaystyle{\Sigma}$s
