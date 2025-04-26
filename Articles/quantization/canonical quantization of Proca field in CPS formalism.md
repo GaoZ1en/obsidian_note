@@ -270,7 +270,7 @@ A_{\mu}(x) & =\sum _{n,s}\left(\sigma ^{s}_{n\mu}(x)a_{ns}+\sigma ^{s*}_{n\mu}(x
 \end{align}
 $$
 
-and $\displaystyle{\sigma ^{s}_{n,\mu},s=1,2,\dots,d-1}$ satisfies the same equation of motion of $\displaystyle{A^{\mu}(x)}$ and forms a complete basis. then the symplectic form can be written as
+and $\displaystyle{\sigma ^{s}_{n,\mu},s=1,2,\dots,d-1}$ satisfies the same equation of motion of $\displaystyle{A^{\mu}(x)}$ and the constraint $\displaystyle{\nabla _{\mu}\sigma ^{s}_{n\mu}}$. $\displaystyle{\sigma ^{s}_{n\mu}}$ forms a complete basis. then the symplectic form can be written as
 
 $$\tag{1.12}
 \begin{align}
