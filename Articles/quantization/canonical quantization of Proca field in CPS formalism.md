@@ -187,11 +187,18 @@ from the equation of motion we have
 
 $$\tag{2.3}
 \begin{align}
-\nabla _{\mu}\nabla _{\nu}F^{\mu \nu}+m^{2}\nabla _{\mu}A^{\mu} & 
+\nabla _{\nu}\nabla _{\mu}F^{\mu \nu}+m^{2}\nabla _{\mu}A^{\mu} & =m^{2}\nabla _{\mu}A^{\mu}=0
 \end{align}
 $$
 
-then the symplectic form is
+and the equation of motion becomes
+
+$$\tag{2.4}
+\begin{align}
+E^{\nu} & =\nabla ^{2}A^{\nu}+m^{2}A^{\nu}+R^{~\nu}_{\mu}A^{\mu}
+\end{align}
+$$
+plus a constraint $\displaystyle{\nabla _{\mu}A^{\mu}=0}$. the symplectic form is
 
 $$\tag{2.3}
 \begin{align}
