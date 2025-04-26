@@ -264,17 +264,16 @@ make the following mode expansion of $\displaystyle{A^{\mu}(x)}$
 
 $$\tag{1.11}
 \begin{align}
-A^{\mu}(x) & =\sum _{n}
+A_{\mu}(x) & =\sum _{n,s}\left(\sigma ^{s}_{n\mu}(x)a_{ns}+\sigma ^{s*}_{n\mu}(x)a_{ns}^{\dagger}\right) \\
+\pi ^{\nu}(x) & =\tau _{\mu}(\nabla ^{\mu}A^{\nu}-\nabla ^{\nu}A^{\mu}) \\
+ & =\sum _{n,s}[\tau _{\mu}(\nabla ^{\mu}\sigma ^{s\nu}_{n}-\nabla ^{\nu}\sigma ^{s\mu}_{n})a_{ns}+\tau _{\mu}(\nabla ^{\mu}\sigma ^{s\nu*}_{n}-\nabla ^{\nu}\sigma ^{s\mu*}_{n})a_{ns}^{\dagger}]
 \end{align}
 $$
 
-where $\displaystyle{\sigma _{n}}$ satisfies the same equation of motion of $\displaystyle{\phi(x)}$ and forms a complete basis (positive frequency solution). then the symplectic form can be written as
+and $\displaystyle{\sigma ^{s}_{n,\mu},s=1,2,\dots,d-1}$ satisfies the same equation of motion of $\displaystyle{A^{\mu}(x)}$ and forms a complete basis. then the symplectic form can be written as
 
 $$\tag{1.12}
 \begin{align}
-\omega & =\int _{\Sigma}\varepsilon _{\Sigma}\delta \pi \wedge \delta \phi \\
- & = \int _{\Sigma}\varepsilon _{\Sigma}\sum _{m,n}(\tau ^{\mu}\nabla _{\mu}\sigma _{m}\delta a_{n}+\tau ^{\mu}\nabla _{\mu}\sigma ^{*}_{n}\delta a^{\dagger}_{n})(\sigma _{m}\delta a_{m}+\sigma ^{*}_{m}\delta a_{m}^{\dagger}) \\
- & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\sum _{m,n}(\sigma ^{*}_{m}\nabla _{\mu}\sigma _{n}-\sigma ^{*}_{n}\nabla _{\mu}\sigma _{m})\delta a_{n}\wedge \delta a_{m}^{\dagger} \\
- & =i\sum _{n}\delta a_{n}^{\dagger}\wedge \delta a_{n}
+\omega & =i\sum _{n,s}\delta a_{ns}^{\dagger}\wedge \delta a_{ns}
 \end{align}
 $$
