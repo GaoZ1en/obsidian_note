@@ -161,14 +161,21 @@ $$\tag{1.16}
 \end{align}
 $$
 
-where $\displaystyle{\mathcal{T}}$ is the time ordering operator. I think we need to verify that this definition is independent of the choice of $\displaystyle{\Sigma}$s... doesn't matter. we will calculate (1.16) explicitly for the case of 4d Minkowski spacetime with $\displaystyle{\Sigma}$ as the constant time slice, and $\displaystyle{\sigma _{k}(x)=\frac{e^{ik\cdot x}}{(2\pi)^{3/2}\sqrt{ 2\omega _{k} }}}$
+where $\displaystyle{\mathcal{T}}$ is the time ordering operator. I think we need to verify that this definition is independent of the choice of $\displaystyle{\Sigma}$s... doesn't matter. we will calculate (1.16) explicitly for the case of 4d Minkowski spacetime with $\displaystyle{\Sigma}$ as the constant time slice, and $\displaystyle{\sigma _{k}(x)=\frac{e^{-ik\cdot x}}{(2\pi)^{3/2}\sqrt{ 2\omega _{k} }}}$
 
 $$\tag{1.17}
 \begin{align}
-\braket{ \phi(x)\phi(y) }  & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{-i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot (x-y)}
+\braket{ \phi(x)\phi(y) }  & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{-ik\cdot (x-y)}
 \end{align}
 $$
 
+when $\displaystyle{x^{0}>y^{0}}$, the contour $\displaystyle{\mathcal{C}}$ is closed in the upper half plane, and we have
+
+$$\tag{1.18}
+\begin{align}
+\braket{ \phi(x)\phi(y) }  & =\int \frac{\mathrm{d}k^{0}\mathrm{d}^{3}\vec{k}}{(2\pi)^{4}} \frac{-i}{(k^{0})^{2}-\omega _{k}^{2}+i\varepsilon} e^{-ik\cdot(x-y)}
+\end{align}
+$$
 ## Proca field
 
 consider a free Proca field in $\displaystyle{d}$-dimension
