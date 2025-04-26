@@ -178,15 +178,12 @@ $$\tag{1.18}
  & =\int _{0}^{\infty}\int _{0}^{\pi}\int_{0}^{2\pi} \frac{k\sin \theta \mathrm{d}k\mathrm{d}\theta\mathrm{d}\phi}{(2\pi)^{3}} \frac{1}{2\omega _{k}} e^{ik\cos \theta|\vec{x}-\vec{y}|-i\omega _{k}(x^{0}-y^{0})} \\
  & =-\int _{0}^{\infty}\int _{0}^{\pi} \frac{k\mathrm{d}k\mathrm{d}\cos\theta}{(2\pi)^{2}} \frac{1}{2\omega _{k}} e^{ik\cos \theta r-i \omega _{k}t} \\
  & =\frac{1}{4\pi ^{2}r}\int _{0}^{\infty} \mathrm{d}k \frac{\sin kr}{\omega _{k}}  e^{-i\omega _{k}t} \\
- & =\frac{m}{4\pi ^{2}}
+ & =\frac{m}{4\pi ^{2}|x^{\mu}-y^{\mu}|} K_{1}(m|x^{\mu}-y^{\mu}|)
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-\int ^{1}_{-1}\mathrm{d}x e^{ikrx}= \frac{e^{ikr}-e^{-ikr}}{ikr}=2\frac{\sin kr}{kr}
-\end{align}
-$$
+where $\displaystyle{K_{1}}$ is the modified Bessel function of the second kind, and $\displaystyle{|x^{\mu}-y^{\mu}|=\sqrt{ -(x^{\mu}-y^{\mu})(x_{\mu}-y_{\mu}) }}$. when $\displaystyle{x^{0}<y^{0}}$, the contour $\displaystyle{\mathcal{C}}$ is closed in the upper half plane, and after a similar calculation, we have the same result as (1.18). 
+
 ## Proca field
 
 consider a free Proca field in $\displaystyle{d}$-dimension
