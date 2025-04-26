@@ -220,6 +220,24 @@ the Poisson bracket between $\displaystyle{f}$ and $\displaystyle{g}$ is defined
 $$\tag{2.5}
 \begin{align}
 \left\{f,g\right\} & =X_{f}\cdot X_{g}\cdot \omega \\
- & =\int _{\Sigma}\mathrm{d}^{d-1}x\left(\right)
+ & =\int _{\Sigma}\varepsilon _{\Sigma}\left( \frac{\delta f}{\delta A_{i}} \frac{\delta g}{\delta \pi ^{i}}-\frac{\delta f}{\delta \pi ^{i}} \frac{\delta g}{\delta A_{i}}\right)
+\end{align}
+$$
+
+in particular, we have the following standard results
+
+$$\tag{2.6}
+\begin{align}
+\left\{A^{i}(x),A^{j}(y)\right\}_{\Sigma} & =0 \\
+\left\{\pi _{i}(x),\pi _{j}(y)\right\}_{\Sigma} & =0 \\
+\left\{A^{i}(x),\pi _{j}(y)\right\}_{\Sigma} & =\delta ^{i}_{j}\delta ^{(d-1)}(x-y)
+\end{align}
+$$
+
+after quantization, we have the following canonical commutation relations
+
+$$\tag{2.7}
+\begin{align}
+
 \end{align}
 $$
