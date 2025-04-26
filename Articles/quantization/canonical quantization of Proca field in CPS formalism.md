@@ -165,10 +165,9 @@ where $\displaystyle{\mathcal{T}}$ is the time ordering operator. I think we nee
 
 $$\tag{1.17}
 \begin{align}
-\braket{ \phi(x)\phi(y) }  & =\int  
+\braket{ \phi(x)\phi(y) }  & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{-i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot (x-y)}
 \end{align}
 $$
-
 
 ## Proca field
 
