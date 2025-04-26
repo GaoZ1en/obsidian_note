@@ -175,11 +175,18 @@ $$\tag{1.18}
 \begin{align}
 \braket{ \phi(x)\phi(y) }  & =\int \frac{\mathrm{d}k^{0}\mathrm{d}^{3}\vec{k}}{(2\pi)^{4}} \frac{-i}{(k^{0})^{2}-\omega _{k}^{2}+i\varepsilon} e^{i\vec{k}\cdot(\vec{x}-\vec{y})-ik^{0}(x^{0}-y^{0})} \\
  & = \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}} \frac{1}{2\omega _{k}} e^{i\vec{k}\cdot(\vec{x}-\vec{y})-i\omega _{k}(x^{0}-y^{0})} \\
- & =\int _{0}^{\infty}\int _{0}^{\pi}\int_{0}^{2\pi} \frac{k^{2}\sin \theta \mathrm{d}k\mathrm{d}\theta\mathrm{d}\phi}{(2\pi)^{3}} \frac{1}{2\omega _{k}} e^{ik\cos \theta|\vec{x}-\vec{y}|-i\omega _{k}(x^{0}-y^{0})} \\
- & =-\int _{0}^{\infty}\int _{0}^{\pi} \frac{k^{2}\mathrm{d}k\mathrm{d}\cos\theta}{(2\pi)^{2}} \frac{1}{2\omega _{k}} e^{ik\cos \theta r-i \omega _{k}t}
+ & =\int _{0}^{\infty}\int _{0}^{\pi}\int_{0}^{2\pi} \frac{k\sin \theta \mathrm{d}k\mathrm{d}\theta\mathrm{d}\phi}{(2\pi)^{3}} \frac{1}{2\omega _{k}} e^{ik\cos \theta|\vec{x}-\vec{y}|-i\omega _{k}(x^{0}-y^{0})} \\
+ & =-\int _{0}^{\infty}\int _{0}^{\pi} \frac{k\mathrm{d}k\mathrm{d}\cos\theta}{(2\pi)^{2}} \frac{1}{2\omega _{k}} e^{ik\cos \theta r-i \omega _{k}t} \\
+ & =\frac{1}{4\pi ^{2}r}\int _{0}^{\infty} \mathrm{d}k \frac{\sin kr}{\omega _{k}}  e^{-i\omega _{k}t} \\
+ & =\frac{m}{4\pi ^{2}}
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+\int ^{1}_{-1}\mathrm{d}x e^{ikrx}= \frac{e^{ikr}-e^{-ikr}}{ikr}=2\frac{\sin kr}{kr}
+\end{align}
+$$
 ## Proca field
 
 consider a free Proca field in $\displaystyle{d}$-dimension
