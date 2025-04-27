@@ -14,3 +14,7 @@ the basic toolkit is OPE and conformal bootstrap.
 
 the result is massless scattering amplitude and thus the celestial amplitudes can be derived from a single conformal block coefficient in CCFT. (probably the consequence of asymptotic symmetry)
 
+$\mathrm{AdS/CFT}$
+1. entropy
+2. $\mathrm{AdS}$ amplitude
+3. 
