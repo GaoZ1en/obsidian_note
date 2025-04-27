@@ -29,7 +29,7 @@ make the following parameterization
 
 $$\tag{1.4}
 \begin{align}
-\phi(x)=\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3/2}\sqrt{ 2\omega _{k} }}(\sigma _{k}(x)a_{k}+\sigma _{k}^{*}(x)a_{k}^{\dagger})
+\phi(x)=\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3/2}}(\sigma _{k}(x)a_{k}+\sigma _{k}^{*}(x)a_{k}^{\dagger})
 \end{align}
 $$
 
@@ -37,10 +37,10 @@ where $\displaystyle{\sigma _{k}(x)=\frac{e^{ik\cdot x}}{(2\pi)^{3/2}\sqrt{ 2\om
 
 $$\tag{1.5}
 \begin{align}
-\omega & =\int _{\Sigma} \mathrm{d}^{3}x \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }}(\partial _{0}\sigma _{k}\delta a_{k}+\partial _{0}\sigma _{k}^{*}\delta a_{k}^{\dagger} )\wedge(\sigma _{k'}\delta a_{k'}+\sigma _{k'}^{*}\delta a_{k'}^{\dagger}) \\
- & =\int _{\Sigma}\mathrm{d}^{3}x \int \frac{\mathrm{d}^{3}\vec{k} \mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }} \left(\partial _{0}\sigma _{k}^{*}\sigma _{k'} -\sigma ^{*}_{k}\partial _{0}\sigma _{k'}\right)\delta a_{k}^{\dagger}\wedge \delta a_{k'} \\
- & =i \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }}\delta ^{3}(\vec{k}-\vec{k}')\delta a_{k}^{\dagger}\wedge \delta a_{k'} \\
- & =i \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \delta a_{k}^{\dagger}\wedge \delta a_{k}
+\omega & =\int _{\Sigma} \mathrm{d}^{3}x \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}}(\partial _{0}\sigma _{k}\delta a_{k}+\partial _{0}\sigma _{k}^{*}\delta a_{k}^{\dagger} )\wedge(\sigma _{k'}\delta a_{k'}+\sigma _{k'}^{*}\delta a_{k'}^{\dagger}) \\
+ & =\int _{\Sigma}\mathrm{d}^{3}x \int \frac{\mathrm{d}^{3}\vec{k} \mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}} \left(\partial _{0}\sigma _{k}^{*}\sigma _{k'} -\sigma ^{*}_{k}\partial _{0}\sigma _{k'}\right)\delta a_{k}^{\dagger}\wedge \delta a_{k'} \\
+ & =i \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}}\delta ^{3}(\vec{k}-\vec{k}')\delta a_{k}^{\dagger}\wedge \delta a_{k'} \\
+ & =i \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}} \delta a_{k}^{\dagger}\wedge \delta a_{k}
 \end{align}
 $$
 
@@ -75,25 +75,72 @@ we can consider the commutator between $\displaystyle{\phi(x),\phi(y)}$. first w
 
 $$\tag{1.9}
 \begin{align}
-X_{\phi(x)} & =-i \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3/2}\sqrt{ 2\omega _{k} }}\left(\frac{\delta \phi(x)}{\delta a_{k}} \frac{\delta}{\delta a_{k}^{\dagger}}-\frac{\delta \phi(x)}{\delta a_{k}^{\dagger}} \frac{\delta}{\delta a_{k}}\right) \\
- & =-i \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }}\left(\sigma _{k'} \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma _{k'}^{*} \frac{\delta}{\delta a_{k}}\right)\delta ^{3}(\vec{k}-\vec{k}') \\
- & =-i \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \left(\sigma _{k} \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma ^{*}_{k} \frac{\delta}{\delta a_{k}}\right)
+X_{\phi(x)} & =-i \int \mathrm{d}^{3}\vec{k}\left(\frac{\delta \phi(x)}{\delta a_{k}} \frac{\delta}{\delta a_{k}^{\dagger}}-\frac{\delta \phi(x)}{\delta a_{k}^{\dagger}} \frac{\delta}{\delta a_{k}}\right) \\
+ & =-i \int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\left(\sigma _{k'} \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma _{k'}^{*} \frac{\delta}{\delta a_{k}}\right)\delta ^{3}(\vec{k}-\vec{k}') \\
+ & =-i \int \mathrm{d}^{3}\vec{k} \left(\sigma _{k} \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma ^{*}_{k} \frac{\delta}{\delta a_{k}}\right)
 \end{align}
 $$
 
-then we have the following commutation relation
+then we have the following commutator
 
 $$\tag{1.10}
 \begin{align}
 [\phi(x),\phi(y)] & =iX_{\phi(x)}\cdot X_{\phi(y)}\cdot \omega \\
- & =\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}'''}{(2\pi)^{9}8\omega _{k}\omega _{k'}\omega _{k''}} \left(\sigma _{k}(x) \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma _{k}^{*}(x) \frac{\delta}{\delta a_{k}}\right)\left( \sigma _{k'}(y) \frac{\delta}{\delta a_{k'}^{\dagger}}-\sigma _{k'}^{*}(y) \frac{\delta}{\delta a_{k'}} \right)\cdot \delta a_{k''}^{\dagger}\wedge \delta a_{k''} \\
- & =\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}''}{(2\pi)^{9}8\omega _{k}\omega _{k'}\omega _{k''}} \left(\sigma _{k}(x)\sigma ^{*}_{k'}(y)-\sigma ^{*}_{k}(x)\sigma _{k'}(y)\right)\delta ^{3}(\vec{k}'-\vec{k}'')\delta ^{3}(\vec{k}-\vec{k}'') \\
- & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{9}8\omega _{k}^{3}}(\sigma _{k}(x)\sigma _{k'}^{*}(y)-\sigma ^{*}_{k}(x)\sigma _{k'}(y)) 
+ & =\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}'''}{(2\pi)^{3}} \left(\sigma _{k}(x) \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma _{k}^{*}(x) \frac{\delta}{\delta a_{k}}\right)\left( \sigma _{k'}(y) \frac{\delta}{\delta a_{k'}^{\dagger}}-\sigma _{k'}^{*}(y) \frac{\delta}{\delta a_{k'}} \right)\cdot \delta a_{k''}^{\dagger}\wedge \delta a_{k''} \\
+ & =\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}''}{(2\pi)^{3}} \left(\sigma _{k}(x)\sigma ^{*}_{k'}(y)-\sigma ^{*}_{k}(x)\sigma _{k'}(y)\right)\delta ^{3}(\vec{k}'-\vec{k}'')\delta ^{3}(\vec{k}-\vec{k}'') \\
+ & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}}(\sigma _{k}(x)\sigma _{k}^{*}(y)-\sigma ^{*}_{k}(x)\sigma _{k}(y)) \\
+ & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(e^{ik\cdot (x-y)}-e^{-ik\cdot(x-y)}) \\
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}}e^{ik\cdot (x-y)}
 \end{align}
 $$
 
-$$\tag{.}
+and the Feynmann propagator is
+
+$$\tag{1.11}
 \begin{align}
- \omega & =i \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \delta a_{k}^{\dagger}\wedge \delta a_{k}
+\braket{ \phi(x)\phi(y) }  & = \braket{ 0|\mathcal{T}\phi(x)\phi(y)|0 }  \\
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot (x-y)}
+\end{align}
+$$
+
+## Proca field
+
+$$\tag{2.1}
+\begin{align}
+S & =\int _{M}\mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)
+\end{align}
+$$
+
+where $\displaystyle{F_{\mu \nu}=\partial _{\mu}A_{\nu}-\partial _{\nu}A_{\mu}}$. make a variation
+
+$$\tag{2.2}
+\begin{align}
+\delta S & =\int _{M}\mathrm{d}^{4}x E^{\nu}\delta A_{\nu}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
+E^{\nu} & =\partial _{\mu}F^{\mu \nu}+m^{2}A^{\nu} \\
+\theta & =\int _{\Sigma}\mathrm{d}^{3}xF^{0\nu}\delta A_{\nu}
+\end{align}
+$$
+
+from the equation of motion we have
+
+$$\tag{2.3}
+\begin{align}
+\partial _{\nu}\partial _{\mu}F^{\mu \nu}+m^{2}\partial _{\mu}A^{\mu}=m^{2}\partial _{\mu}A^{\mu}=0\implies \partial _{\mu}A^{\mu}=0
+\end{align}
+$$
+
+and the equation of motion becomes
+
+$$\tag{2.4}
+\begin{align}
+E^{\nu}=\nabla ^{2}A^{\nu}+m^{2}A^{\nu}
+\end{align}
+$$
+
+we choose $\displaystyle{A_{i},i=1,2,3}$ as independent variables. the symplectic form is
+
+$$\tag{2.5}
+\begin{align}
+\omega = \delta \theta & =
 \end{align}
 $$

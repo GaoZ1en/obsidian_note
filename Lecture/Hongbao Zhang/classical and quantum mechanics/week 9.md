@@ -4,6 +4,8 @@
 
 a method to solve PDE with some Cauchy data.
 
+differential geometry, integral curves
+
 
 
 
