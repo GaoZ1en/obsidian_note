@@ -33,7 +33,7 @@ $$\tag{1.4}
 \end{align}
 $$
 
-where $\displaystyle{\sigma _{k}(x)}$s are solutions of Klein-Gordon equation and form a complete basis of the space of solutions. then the symplectic form becomes
+where $\displaystyle{\sigma _{k}(x)=\frac{e^{ik\cdot x}}{(2\pi)^{3/2}\sqrt{ 2 }}}$s are solutions of Klein-Gordon equation and form a complete basis of the space of solutions. then the symplectic form becomes
 
 $$\tag{1.5}
 \begin{align}
