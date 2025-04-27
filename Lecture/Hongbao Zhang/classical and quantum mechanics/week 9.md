@@ -6,14 +6,7 @@ a method to solve PDE with some Cauchy data.
 
 differential geometry, integral curves
 
-
-
-
-
-
-
-
-
+characteristic curve method...
 
 ## Amplitude from crossing-symmetric celestial OPE
 

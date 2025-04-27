@@ -29,7 +29,7 @@ make the following parameterization
 
 $$\tag{1.4}
 \begin{align}
-\phi(x)=\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3/2}}(\sigma _{k}(x)a_{k}+\sigma _{k}^{*}(x)a_{k}^{\dagger})
+\phi(x)=\int \mathrm{d}^{3}\vec{k}(\sigma _{k}(x)a_{k}+\sigma _{k}^{*}(x)a_{k}^{\dagger})
 \end{align}
 $$
 
@@ -37,10 +37,10 @@ where $\displaystyle{\sigma _{k}(x)=\frac{e^{ik\cdot x}}{(2\pi)^{3/2}\sqrt{ 2\om
 
 $$\tag{1.5}
 \begin{align}
-\omega & =\int _{\Sigma} \mathrm{d}^{3}x \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}}(\partial _{0}\sigma _{k}\delta a_{k}+\partial _{0}\sigma _{k}^{*}\delta a_{k}^{\dagger} )\wedge(\sigma _{k'}\delta a_{k'}+\sigma _{k'}^{*}\delta a_{k'}^{\dagger}) \\
- & =\int _{\Sigma}\mathrm{d}^{3}x \int \frac{\mathrm{d}^{3}\vec{k} \mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}} \left(\partial _{0}\sigma _{k}^{*}\sigma _{k'} -\sigma ^{*}_{k}\partial _{0}\sigma _{k'}\right)\delta a_{k}^{\dagger}\wedge \delta a_{k'} \\
- & =i \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}}\delta ^{3}(\vec{k}-\vec{k}')\delta a_{k}^{\dagger}\wedge \delta a_{k'} \\
- & =i \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}} \delta a_{k}^{\dagger}\wedge \delta a_{k}
+\omega & =\int _{\Sigma} \mathrm{d}^{3}x \int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'(\partial _{0}\sigma _{k}\delta a_{k}+\partial _{0}\sigma _{k}^{*}\delta a_{k}^{\dagger} )\wedge(\sigma _{k'}\delta a_{k'}+\sigma _{k'}^{*}\delta a_{k'}^{\dagger}) \\
+ & =\int _{\Sigma}\mathrm{d}^{3}x \int \mathrm{d}^{3}\vec{k} \mathrm{d}^{3}\vec{k}' \left(\partial _{0}\sigma _{k}^{*}\sigma _{k'} -\sigma ^{*}_{k}\partial _{0}\sigma _{k'}\right)\delta a_{k}^{\dagger}\wedge \delta a_{k'} \\
+ & =i \int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\delta ^{3}(\vec{k}-\vec{k}')\delta a_{k}^{\dagger}\wedge \delta a_{k'} \\
+ & =i \int \mathrm{d}^{3}\vec{k} \delta a_{k}^{\dagger}\wedge \delta a_{k}
 \end{align}
 $$
 
@@ -86,9 +86,9 @@ then we have the following commutator
 $$\tag{1.10}
 \begin{align}
 [\phi(x),\phi(y)] & =iX_{\phi(x)}\cdot X_{\phi(y)}\cdot \omega \\
- & =\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}'''}{(2\pi)^{3}} \left(\sigma _{k}(x) \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma _{k}^{*}(x) \frac{\delta}{\delta a_{k}}\right)\left( \sigma _{k'}(y) \frac{\delta}{\delta a_{k'}^{\dagger}}-\sigma _{k'}^{*}(y) \frac{\delta}{\delta a_{k'}} \right)\cdot \delta a_{k''}^{\dagger}\wedge \delta a_{k''} \\
- & =\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}''}{(2\pi)^{3}} \left(\sigma _{k}(x)\sigma ^{*}_{k'}(y)-\sigma ^{*}_{k}(x)\sigma _{k'}(y)\right)\delta ^{3}(\vec{k}'-\vec{k}'')\delta ^{3}(\vec{k}-\vec{k}'') \\
- & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}}(\sigma _{k}(x)\sigma _{k}^{*}(y)-\sigma ^{*}_{k}(x)\sigma _{k}(y)) \\
+ & =\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}'' \left(\sigma _{k}(x) \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma _{k}^{*}(x) \frac{\delta}{\delta a_{k}}\right)\left( \sigma _{k'}(y) \frac{\delta}{\delta a_{k'}^{\dagger}}-\sigma _{k'}^{*}(y) \frac{\delta}{\delta a_{k'}} \right)\cdot \delta a_{k''}^{\dagger}\wedge \delta a_{k''} \\
+ & =\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}'' \left(\sigma _{k}(x)\sigma ^{*}_{k'}(y)-\sigma ^{*}_{k}(x)\sigma _{k'}(y)\right)\delta ^{3}(\vec{k}'-\vec{k}'')\delta ^{3}(\vec{k}-\vec{k}'') \\
+ & =\int \mathrm{d}^{3}\vec{k}(\sigma _{k}(x)\sigma _{k}^{*}(y)-\sigma ^{*}_{k}(x)\sigma _{k}(y)) \\
  & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(e^{ik\cdot (x-y)}-e^{-ik\cdot(x-y)}) \\
  & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}}e^{ik\cdot (x-y)}
 \end{align}
@@ -141,6 +141,63 @@ we choose $\displaystyle{A_{i},i=1,2,3}$ as independent variables. the symplecti
 
 $$\tag{2.5}
 \begin{align}
-\omega = \delta \theta & =
+\omega = \delta \theta & =\int _{\Sigma}\mathrm{d}^{3}x\delta F^{0\mu}\wedge \delta A_{\mu}
+\end{align}
+$$
+
+make the following mode expansion of $\displaystyle{A_{\mu}(x)}$
+
+$$\tag{2.6}
+\begin{align}
+A_{\mu}(x)=\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}e^{s}_{k\mu}(\sigma _{k}a_{ks}+\sigma ^{*}_{k}a^{\dagger}_{ks})
+\end{align}
+$$
+
+where $\displaystyle{e^{s}_{k\mu}}$ satisfies $\displaystyle{k^{\mu}e^{s}_{k\mu}=0}$.
+
+then the symplectic form becomes
+
+$$\tag{2.6}
+\begin{align}
+\omega & =\int _{\Sigma}\mathrm{d}^{3}x (\partial ^{0}\delta A^{\mu}-\partial ^{\mu}\delta A^{0})\wedge \delta A_{\mu} \\
+ & =\int _{\Sigma}\mathrm{d}^{3}x\partial ^{0}\delta A^{i}\wedge \delta A_{i} \\
+ & =i \int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}\delta a_{ks}^{\dagger}\wedge \delta a_{ks}
+\end{align}
+$$
+
+then we read out the Poisson brackets
+
+$$\tag{2.7}
+\begin{align}
+\left\{a_{ks},a_{k's'}\right\} & =\{a_{ks}^{\dagger},a_{k's'}^{\dagger}\}=0 \\
+\{a_{ks},a_{k's'}^{\dagger}\} & =-i \delta _{ss'}\delta ^{3}(\vec{k}-\vec{k}')
+\end{align}
+$$
+
+after quantization, we have the following commutators
+
+$$\tag{2.8}
+\begin{align}
+[a_{ks},a_{k's'}] & =[a_{ks}^{\dagger},a_{k's'}^{\dagger}]=0 \\
+[a_{ks},a_{k's'}^{\dagger}] & =\delta _{ss'}\delta ^{3}(\vec{k}-\vec{k}')
+\end{align}
+$$
+
+we write down the Hamilton vector corresponding to $\displaystyle{A_{i}(x)}$
+
+$$\tag{2.9}
+\begin{align}
+X_{A_{i}(x)} & =-i\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}\left(\frac{\delta A_{i}(x)}{\delta a_{ks}} \frac{\delta}{\delta a_{ks}^{\dagger}}-\frac{\delta A_{i}(x)}{\delta a_{ks}^{\dagger}} \frac{\delta}{\delta a_{ks}}\right) \\
+ & =-i \int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1} e^{s}_{ki}\left(\sigma _{k}(x) \frac{\delta}{\delta a^{\dagger}_{ks}}-\sigma _{k}^{*}(x) \frac{\delta}{\delta a_{ks}}\right)
+\end{align}
+$$
+
+then we have the following commutator
+
+$$\tag{2.10}
+\begin{align}
+[A_{i}(x),A_{j}(y)] & =iX_{A_{i}(x)}\cdot X_{A_{j}(x)}\cdot \omega \\
+ & =\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}''\sum _{s,s',s''}e^{s}_{ki}e^{s'}_{k'j}\left(\sigma _{k}(x) \frac{\delta}{\delta a^{^{\dagger}}_{ks}}-\sigma ^{*}_{k}(x) \frac{\delta}{\delta a_{ks}}\right)\left( \sigma _{k'}(y) \frac{\delta}{\delta a_{k's'}^{\dagger}}-\sigma ^{*}_{k'}(y) \frac{\delta}{\delta a_{k's}} \right)\delta a_{k''s''}^{\dagger}\wedge \delta a_{k''s''} \\
+ & =\int \mathrm{d}^{3}\vec{k}\left(\sigma _{k}(x)\sigma _{k}^{*}(y)-\sigma ^{*}_{k}(x)\right)
 \end{align}
 $$
