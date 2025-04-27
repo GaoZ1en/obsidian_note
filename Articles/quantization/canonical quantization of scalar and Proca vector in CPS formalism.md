@@ -59,4 +59,14 @@ $$\tag{1.7}
 \end{align}
 $$
 
-after canonical quantization, $\displaystyle{a_{k}}$ and $\displaystyle{a_{k}^{\dagger}}$ are promoted to operators, and we have the f
+after canonical quantization, $\displaystyle{a_{k}}$ and $\displaystyle{a_{k}^{\dagger}}$ are promoted to operators, and Poisson brackets are replaced by commutators. we have the following commutation relations
+
+$$\tag{1.8}
+\begin{align}
+\left[a_{k},a_{k'}\right] & =[a_{k}^{\dagger},a_{k'}^{\dagger}] =0 \\
+[a_{k},a_{k'}^{\dagger}] & =i\delta ^{3}(\vec{k}-\vec{k'})
+\end{align}
+$$
+
+we can consider the commutator between $\displaystyle{\phi(x),\phi(y)}$
+
