@@ -4,27 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "7a241cbf2d85cb5f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c3306cb08b31df8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/canonical quantization of Proca field in CPS formalism.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "canonical quantization of Proca field in CPS formalism"
-            }
-          }
-        ]
-      },
-      {
         "id": "ec5eb44cdf0db003",
         "type": "tabs",
         "children": [
@@ -34,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/week 9.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "canonical quantization of scalar and Proca vector in CPS formalism"
+              "title": "week 9"
             }
           }
         ]
@@ -73,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -144,8 +122,12 @@
   },
   "active": "a264c525d628eaa3",
   "lastOpenFiles": [
-    "Articles/quantization/canonical quantization of Proca field in CPS formalism.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/discussion for Poisson bracket.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/week 9.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/covariant phase space with boundaries.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+    "Articles/quantization/canonical quantization of Proca field in CPS formalism.md",
     "Attachments/Pasted image 20250425232210.png",
     "Articles/quantization/examples.md",
     "Articles/some generalization CPS/harmonic oscillator.md",
@@ -169,11 +151,7 @@
     "Reading/gravity",
     "Articles/Noether charge/asymptotic symmetry vector.md",
     "Lecture/2025 spring/python for general purpose/未命名 1.md",
-    "Homework/未命名.md",
-    "未命名.md",
-    "Home.md",
     "Articles/some generalization CPS",
-    "Reading/computational algebraic geometry/geometry, algebra and algorithms.md",
     "Drafts",
     "Reading/computational algebraic geometry",
     "Attachments/Pasted image 20250417145002.png",
