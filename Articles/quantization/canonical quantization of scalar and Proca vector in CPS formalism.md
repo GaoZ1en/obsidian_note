@@ -86,7 +86,8 @@ then we have the following commutator
 $$\tag{1.10}
 \begin{align}
 [\phi(x),\phi(y)] & =iX_{\phi(x)}\cdot X_{\phi(y)}\cdot \omega \\
- & =\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}'' \left(\sigma _{k}(x) \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma _{k}^{*}(x) \frac{\delta}{\delta a_{k}}\right)\left( \sigma _{k'}(y) \frac{\delta}{\delta a_{k'}^{\dagger}}-\sigma _{k'}^{*}(y) \frac{\delta}{\delta a_{k'}} \right)\cdot \delta a_{k''}^{\dagger}\wedge \delta a_{k''} \\
+ & =\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}'' \left(\sigma _{k}(x) \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma _{k}^{*}(x) \frac{\delta}{\delta a_{k}}\right)\cdot \\
+ & \left( \sigma _{k'}(y) \frac{\delta}{\delta a_{k'}^{\dagger}}-\sigma _{k'}^{*}(y) \frac{\delta}{\delta a_{k'}} \right)\cdot \delta a_{k''}^{\dagger}\wedge \delta a_{k''} \\
  & =\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}'' \left(\sigma _{k}(x)\sigma ^{*}_{k'}(y)-\sigma ^{*}_{k}(x)\sigma _{k'}(y)\right)\delta ^{3}(\vec{k}'-\vec{k}'')\delta ^{3}(\vec{k}-\vec{k}'') \\
  & =\int \mathrm{d}^{3}\vec{k}(\sigma _{k}(x)\sigma _{k}^{*}(y)-\sigma ^{*}_{k}(x)\sigma _{k}(y)) \\
  & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(e^{ik\cdot (x-y)}-e^{-ik\cdot(x-y)}) \\
@@ -94,7 +95,7 @@ $$\tag{1.10}
 \end{align}
 $$
 
-and the Feynmann propagator is
+and the Feynman propagator is
 
 $$\tag{1.11}
 \begin{align}
@@ -187,8 +188,8 @@ we write down the Hamilton vector corresponding to $\displaystyle{A_{i}(x)}$
 
 $$\tag{2.9}
 \begin{align}
-X_{A_{i}(x)} & =-i\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}\left(\frac{\delta A_{i}(x)}{\delta a_{ks}} \frac{\delta}{\delta a_{ks}^{\dagger}}-\frac{\delta A_{i}(x)}{\delta a_{ks}^{\dagger}} \frac{\delta}{\delta a_{ks}}\right) \\
- & =-i \int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1} e^{s}_{ki}\left(\sigma _{k}(x) \frac{\delta}{\delta a^{\dagger}_{ks}}-\sigma _{k}^{*}(x) \frac{\delta}{\delta a_{ks}}\right)
+X_{A_{\mu}(x)} & =-i\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}\left(\frac{\delta A_{\mu}(x)}{\delta a_{ks}} \frac{\delta}{\delta a_{ks}^{\dagger}}-\frac{\delta A_{\mu}(x)}{\delta a_{ks}^{\dagger}} \frac{\delta}{\delta a_{ks}}\right) \\
+ & =-i \int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1} e^{s}_{k\mu}\left(\sigma _{k}(x) \frac{\delta}{\delta a^{\dagger}_{ks}}-\sigma _{k}^{*}(x) \frac{\delta}{\delta a_{ks}}\right)
 \end{align}
 $$
 
@@ -196,8 +197,40 @@ then we have the following commutator
 
 $$\tag{2.10}
 \begin{align}
-[A_{i}(x),A_{j}(y)] & =iX_{A_{i}(x)}\cdot X_{A_{j}(x)}\cdot \omega \\
- & =\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}''\sum _{s,s',s''}e^{s}_{ki}e^{s'}_{k'j}\left(\sigma _{k}(x) \frac{\delta}{\delta a^{^{\dagger}}_{ks}}-\sigma ^{*}_{k}(x) \frac{\delta}{\delta a_{ks}}\right)\left( \sigma _{k'}(y) \frac{\delta}{\delta a_{k's'}^{\dagger}}-\sigma ^{*}_{k'}(y) \frac{\delta}{\delta a_{k's}} \right)\delta a_{k''s''}^{\dagger}\wedge \delta a_{k''s''} \\
- & =\int \mathrm{d}^{3}\vec{k}\left(\sigma _{k}(x)\sigma _{k}^{*}(y)-\sigma ^{*}_{k}(x)\right)
+[A_{\mu}(x),A_{\nu}(y)] & =iX_{A_{0}(x)}\cdot X_{A_{0}(y)}\cdot \omega \\
+ & =\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}'' \sum _{s,s',s''}e^{s}_{k\mu}e^{s'}_{k'\nu}\left(\sigma _{k}(x) \frac{\delta}{\delta a^{\dagger}_{ks}}-\sigma ^{*}_{k}(x) \frac{\delta}{\delta a_{ks}}\right)\cdot \\
+ & \left( \sigma _{k'}(y) \frac{\delta}{\delta a^{\dagger}_{k's'}}-\sigma ^{*}_{k'}(y) \frac{\delta}{\delta a_{k's'}} \right)\cdot \delta a_{k''s''}^{\dagger}\wedge \delta a_{k''s''} \\
+ & =
 \end{align}
 $$
+
+$$\tag{2.10}
+\begin{align}
+[A_{i}(x),A_{j}(y)] & =iX_{A_{i}(x)}\cdot X_{A_{j}(x)}\cdot \omega \\
+ & =\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}''\sum _{s,s',s''}e^{s}_{ki}e^{s'}_{k'j}\left(\sigma _{k}(x) \frac{\delta}{\delta a^{^{\dagger}}_{ks}}-\sigma ^{*}_{k}(x) \frac{\delta}{\delta a_{ks}}\right)\cdot \\
+ & \left( \sigma _{k'}(y) \frac{\delta}{\delta a_{k's'}^{\dagger}}-\sigma ^{*}_{k'}(y) \frac{\delta}{\delta a_{k's}} \right)\cdot\delta a_{k''s''}^{\dagger}\wedge \delta a_{k''s''} \\
+ & =\int \mathrm{d}^{3}\vec{k}\sum _{s=1}^{3}e^{s}_{ki}e^{s}_{kj}\left(\sigma _{k}(x)\sigma _{k}^{*}(y)-\sigma ^{*}_{k}(x)\sigma _{k}(y)\right) \\
+ & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left( \delta_{ij}+\frac{k_{i}k_{j}}{m^{2}} \right) (e^{ik\cdot(x-y)}-e^{-ik\cdot(x-y)}) \\
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \left( \delta _{ij}+\frac{k_{i}k_{j}}{m^{2}} \right)\frac{i}{k^{2}+m^{2}} e^{ik\cdot(x-y)}
+\end{align}
+$$
+
+here we used
+
+$$\tag{2.11}
+\begin{align}
+\sum ^{3}_{s=1}e^{s}_{k\mu}e^{s}_{k\nu}=\eta _{\mu \nu}+\frac{k_{\mu}k_{\nu}}{m^{2}}
+\end{align}
+$$
+
+and the Feynman propagator is
+
+$$\tag{2.12}
+\begin{align}
+\braket{ A_{i}(x)A_{j}(y) } & = \braket{ 0|\mathcal{T}A_{i}(x)A_{j}(y)|0 } \\
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \left( \delta _{ij}+\frac{k_{i}k_{j}}{m^{2}} \right) \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)}
+\end{align}
+$$
+
+the contour chosen is the same as the case of scalar
+
