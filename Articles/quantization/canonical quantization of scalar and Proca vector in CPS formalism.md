@@ -55,7 +55,7 @@ then we have the following Poisson brackets
 $$\tag{1.7}
 \begin{align}
 \left\{a_{k},a_{k'}\right\} & =\{a_{k}^{\dagger},a_{k'}^{\dagger}\} =0 \\
-\{a_{k},a_{k'}^{\dagger}\} & =\delta ^{3}(\vec{k}-\vec{k'})
+\{a_{k},a_{k'}^{\dagger}\} & =-i\delta ^{3}(\vec{k}-\vec{k'})
 \end{align}
 $$
 
@@ -69,4 +69,3 @@ $$\tag{1.8}
 $$
 
 we can consider the commutator between $\displaystyle{\phi(x),\phi(y)}$
-
