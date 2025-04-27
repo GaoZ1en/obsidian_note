@@ -2,7 +2,16 @@
 
 ### what is hyperboloidal formalism?
 
-a method to solve PDE...
+a method to solve PDE with some Cauchy data.
+
+
+
+
+
+
+
+
+
 
 ## Amplitude from crossing-symmetric celestial OPE
 
@@ -17,4 +26,6 @@ the result is massless scattering amplitude and thus the celestial amplitudes ca
 $\mathrm{AdS/CFT}$
 1. entropy
 2. $\mathrm{AdS}$ amplitude
-3. 
+3. tensor network
+4. ...
+

@@ -75,9 +75,9 @@ we can consider the commutator between $\displaystyle{\phi(x),\phi(y)}$. first w
 
 $$\tag{1.9}
 \begin{align}
-X_{\phi(x)} & =-i\int \mathrm{d}^{4}x \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3/2}\sqrt{ 2\omega _{k} }}\left(\frac{\delta \phi(x)}{\delta a_{k}} \frac{\delta}{\delta a_{k}^{\dagger}}-\frac{\delta \phi(x)}{\delta a_{k}^{\dagger}} \frac{\delta}{\delta a_{k}}\right) \\
- & =-i \int \mathrm{d}^{4}x \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }}\left(\sigma _{k'} \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma _{k'}^{*} \frac{\delta}{\delta a_{k}}\right)\delta ^{3}(\vec{k}-\vec{k}') \\
- & =-i \int \mathrm{d}^{4}x  \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \left(\sigma _{k} \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma ^{*}_{k} \frac{\delta}{\delta a_{k}}\right)
+X_{\phi(x)} & =-i \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3/2}\sqrt{ 2\omega _{k} }}\left(\frac{\delta \phi(x)}{\delta a_{k}} \frac{\delta}{\delta a_{k}^{\dagger}}-\frac{\delta \phi(x)}{\delta a_{k}^{\dagger}} \frac{\delta}{\delta a_{k}}\right) \\
+ & =-i \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }}\left(\sigma _{k'} \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma _{k'}^{*} \frac{\delta}{\delta a_{k}}\right)\delta ^{3}(\vec{k}-\vec{k}') \\
+ & =-i \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \left(\sigma _{k} \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma ^{*}_{k} \frac{\delta}{\delta a_{k}}\right)
 \end{align}
 $$
 
@@ -86,10 +86,12 @@ then we have the following commutation relation
 $$\tag{1.10}
 \begin{align}
 [\phi(x),\phi(y)] & =iX_{\phi(x)}\cdot X_{\phi(y)}\cdot \omega \\
- & =\int \mathrm{d}^{4}x\mathrm{d}^{4}y \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}'''}{(2\pi)^{9}8\omega _{k}\omega _{k'}\omega _{k''}} \left(\sigma _{k}(x) \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma _{k}^{*}(x) \frac{\delta}{\delta a_{k}}\right)\left( \sigma _{k'}(y) \frac{\delta}{\delta a_{k'}^{\dagger}}-\sigma _{k'}^{*}(y) \frac{\delta}{\delta a_{k'}} \right)\cdot \delta a_{k''}^{\dagger}\wedge \delta a_{k''} \\
- & =
+ & =\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}'''}{(2\pi)^{9}8\omega _{k}\omega _{k'}\omega _{k''}} \left(\sigma _{k}(x) \frac{\delta}{\delta a_{k}^{\dagger}}-\sigma _{k}^{*}(x) \frac{\delta}{\delta a_{k}}\right)\left( \sigma _{k'}(y) \frac{\delta}{\delta a_{k'}^{\dagger}}-\sigma _{k'}^{*}(y) \frac{\delta}{\delta a_{k'}} \right)\cdot \delta a_{k''}^{\dagger}\wedge \delta a_{k''} \\
+ & =\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}''}{(2\pi)^{9}8\omega _{k}\omega _{k'}\omega _{k''}} \left(\sigma _{k}(x)\sigma ^{*}_{k'}(y)-\sigma ^{*}_{k}(x)\sigma _{k'}(y)\right)\delta ^{3}(\vec{k}'-\vec{k}'')\delta ^{3}(\vec{k}-\vec{k}'') \\
+ & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{9}8\omega _{k}^{3}}(\sigma _{k}(x)\sigma _{k'}^{*}(y)-\sigma ^{*}_{k}(x)\sigma _{k'}(y)) 
 \end{align}
 $$
+
 $$\tag{.}
 \begin{align}
  \omega & =i \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \delta a_{k}^{\dagger}\wedge \delta a_{k}
