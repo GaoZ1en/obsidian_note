@@ -37,6 +37,13 @@ where $\displaystyle{\sigma _{k}(x)=\frac{e^{ik\cdot x}}{(2\pi)^{3/2}\sqrt{ 2\om
 
 $$\tag{1.5}
 \begin{align}
+\omega & =\int _{\Sigma} \mathrm{d}^{3}x \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }}(\partial _{0}\sigma _{k}\delta a_{k}+\partial _{0}\sigma _{k}^{*}\delta a_{k}^{\dagger} )\wedge(\sigma _{k'}\delta a_{k}+\sigma _{k'}^{*}\delta a_{k}^{\dagger}) \\
+ & =
+\end{align}
+$$
+
+$$\tag{1.5}
+\begin{align}
 \omega & =i \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \delta a_{k}^{\dagger}\wedge \delta a_{k}
 \end{align}
 $$
