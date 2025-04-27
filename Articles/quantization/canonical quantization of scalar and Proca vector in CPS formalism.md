@@ -197,15 +197,6 @@ then we have the following commutator
 
 $$\tag{2.10}
 \begin{align}
-[A_{\mu}(x),A_{\nu}(y)] & =iX_{A_{0}(x)}\cdot X_{A_{0}(y)}\cdot \omega \\
- & =\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}'' \sum _{s,s',s''}e^{s}_{k\mu}e^{s'}_{k'\nu}\left(\sigma _{k}(x) \frac{\delta}{\delta a^{\dagger}_{ks}}-\sigma ^{*}_{k}(x) \frac{\delta}{\delta a_{ks}}\right)\cdot \\
- & \left( \sigma _{k'}(y) \frac{\delta}{\delta a^{\dagger}_{k's'}}-\sigma ^{*}_{k'}(y) \frac{\delta}{\delta a_{k's'}} \right)\cdot \delta a_{k''s''}^{\dagger}\wedge \delta a_{k''s''} \\
- & =
-\end{align}
-$$
-
-$$\tag{2.10}
-\begin{align}
 [A_{i}(x),A_{j}(y)] & =iX_{A_{i}(x)}\cdot X_{A_{j}(x)}\cdot \omega \\
  & =\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}''\sum _{s,s',s''}e^{s}_{ki}e^{s'}_{k'j}\left(\sigma _{k}(x) \frac{\delta}{\delta a^{^{\dagger}}_{ks}}-\sigma ^{*}_{k}(x) \frac{\delta}{\delta a_{ks}}\right)\cdot \\
  & \left( \sigma _{k'}(y) \frac{\delta}{\delta a_{k's'}^{\dagger}}-\sigma ^{*}_{k'}(y) \frac{\delta}{\delta a_{k's}} \right)\cdot\delta a_{k''s''}^{\dagger}\wedge \delta a_{k''s''} \\
@@ -232,5 +223,5 @@ $$\tag{2.12}
 \end{align}
 $$
 
-the contour chosen is the same as the case of scalar
+the contour chosen is the same as the case of scalar. as for $\displaystyle{A_{0}}$, here are some subtleties. from the equation of motion we have
 
