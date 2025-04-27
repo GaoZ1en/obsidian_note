@@ -37,14 +37,10 @@ where $\displaystyle{\sigma _{k}(x)=\frac{e^{ik\cdot x}}{(2\pi)^{3/2}\sqrt{ 2\om
 
 $$\tag{1.5}
 \begin{align}
-\omega & =\int _{\Sigma} \mathrm{d}^{3}x \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }}(\partial _{0}\sigma _{k}\delta a_{k}+\partial _{0}\sigma _{k}^{*}\delta a_{k}^{\dagger} )\wedge(\sigma _{k'}\delta a_{k}+\sigma _{k'}^{*}\delta a_{k}^{\dagger}) \\
- & =
-\end{align}
-$$
-
-$$\tag{1.5}
-\begin{align}
-\omega & =i \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \delta a_{k}^{\dagger}\wedge \delta a_{k}
+\omega & =\int _{\Sigma} \mathrm{d}^{3}x \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }}(\partial _{0}\sigma _{k}\delta a_{k}+\partial _{0}\sigma _{k}^{*}\delta a_{k}^{\dagger} )\wedge(\sigma _{k'}\delta a_{k'}+\sigma _{k'}^{*}\delta a_{k'}^{\dagger}) \\
+ & =\int _{\Sigma}\mathrm{d}^{3}x \int \frac{\mathrm{d}^{3}\vec{k} \mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }} \left(\partial _{0}\sigma _{k}^{*}\sigma _{k'} -\sigma ^{*}_{k}\partial _{0}\sigma _{k'}\right)\delta a_{k}^{\dagger}\wedge \delta a_{k'} \\
+ & =i \int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }}\delta ^{3}(\vec{k}-\vec{k}')\delta a_{k}^{\dagger}\wedge \delta a_{k'} \\
+ & =i \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \delta a_{k}^{\dagger}\wedge \delta a_{k}
 \end{align}
 $$
 
@@ -52,7 +48,7 @@ here we use the Klein-Gordon inner product as
 
 $$\tag{1.6}
 \begin{align}
-(\sigma _{k},\sigma _{k'})_{\mathrm{KG}} & =-i \int _{\Sigma}\mathrm{d}^{3}x(\sigma _{k}^{*}\partial _{0}\sigma _{k'}-\sigma ^{*}_{k'}\partial _{0}\sigma _{k}) \\
+(\sigma _{k},\sigma _{k'})_{\mathrm{KG}} & =i \int _{\Sigma}\mathrm{d}^{3}x(\sigma _{k}^{*}\partial _{0}\sigma _{k'}-\sigma ^{*}_{k'}\partial _{0}\sigma _{k}) \\
  & =\delta ^{3}(\vec{k}-\vec{k'})
 \end{align}
 $$
@@ -71,8 +67,16 @@ after canonical quantization, $\displaystyle{a_{k}}$ and $\displaystyle{a_{k}^{\
 $$\tag{1.8}
 \begin{align}
 \left[a_{k},a_{k'}\right] & =[a_{k}^{\dagger},a_{k'}^{\dagger}] =0 \\
-[a_{k},a_{k'}^{\dagger}] & =i\delta ^{3}(\vec{k}-\vec{k'})
+[a_{k},a_{k'}^{\dagger}] & =\delta ^{3}(\vec{k}-\vec{k'})
 \end{align}
 $$
 
-we can consider the commutator between $\displaystyle{\phi(x),\phi(y)}$
+we can consider the commutator between $\displaystyle{\phi(x),\phi(y)}$. first we write down the Hamilton vector of $\displaystyle{\phi(x)}$
+
+$$\tag{1.9}
+\begin{align}
+X_{\phi(x)} & =-i\int \mathrm{d}^{4}x \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left(\frac{\delta \phi(x)}{\delta a_{k}} \frac{\delta}{\delta a_{k}^{\dagger}}-\frac{\delta \phi(x)}{\delta a_{k}^{\dagger}} \frac{\delta}{\delta a_{k}}\right) \\
+ & =-i \int \mathrm{d}^{4}x \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}
+\end{align}
+$$
+
