@@ -259,7 +259,7 @@ $$\tag{2.13}
  & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \frac{k^{2}}{m^{2}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
  & =-\frac{\nabla ^{2}_{x}}{m^{2}}\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
  & =-\frac{\nabla ^{2}_{x}}{m^{2}} \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)} \\
- & =\left( \eta _{00}+\frac{\partial ^{x}_{0}\partial ^{x}_{0}}{m^{2}} \right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon}-\frac{i}{m^{2}}\delta ^{4}(x-y)
+ & =\left( \eta _{00}+\frac{\partial ^{x}_{0}\partial ^{x}_{0}}{m^{2}} \right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon}e^{ik\cdot(x-y)}-\frac{i}{m^{2}}\delta ^{4}(x-y)
 \end{align}
 $$
 

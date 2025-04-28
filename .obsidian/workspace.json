@@ -37,7 +37,8 @@
               "title": "canonical quantization of scalar and Proca vector in CPS formalism"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -136,10 +137,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4b24ea228a5e6f26",
+  "active": "10bca92dbd86769f",
   "lastOpenFiles": [
-    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/harmonic oscillator with multiplier.md",
+    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism.md",
     "Articles/quantization/first example.md",
     "Attachments/Pasted image 20250425232210.png",
