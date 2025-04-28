@@ -1,6 +1,6 @@
 $$\tag{1.1}
 \begin{align}
-L & =\frac{1}{2}m\dot{x}^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}-\frac{1}{2}kx^{2}
+L & =\frac{1}{2}m\dot{x}^{2}+\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}-\frac{1}{2}kx^{2}
 \end{align}
 $$
 
@@ -86,7 +86,7 @@ $$\tag{1.9}
 \begin{align}
 [\phi(t),\phi(t')] & =iX_{\phi(t)}\cdot X_{\phi(t')}\cdot \omega \\
  & =-\frac{\lambda ^{2}\omega}{2m'}\left( e^{-i \omega t} \frac{\delta}{\delta a^{\dagger}}+e^{i \omega t} \frac{\delta}{\delta a} \right)\cdot\left( e^{-i \omega t'} \frac{\delta}{\delta a^{\dagger}}+e^{i \omega t'} \frac{\delta}{\delta a} \right)\cdot \delta a^{\dagger}\wedge \delta a \\
- & =-\frac{\lambda ^{2}\omega}{2m'}(e^{i \omega(t-t')}-e^{-i \omega(t-t')})=-\frac{\lambda ^{2}\omega}{m'}\cos \omega(t-t')
+ & =-\frac{\lambda ^{2}\omega}{2m'}(e^{i \omega(t-t')}-e^{-i \omega(t-t')})=\frac{i\lambda ^{2}\omega}{m'}\sin\omega(t-t')
 \end{align}
 $$
 
@@ -96,16 +96,27 @@ $$\tag{1.10}
  & =-\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})|0 } \\
  & -\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})|0 } \\
  & =\frac{\lambda ^{2}\omega}{2m'}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')}) \\
- & =\frac{\lambda ^{2}\omega}{2m'}
+ & =\frac{\lambda ^{2}\omega}{2m'}e^{-i \omega|t-t'|}
 \end{align}
 $$
 
+and finally
 
-$$\tag{1.5}
+$$\tag{1.10}
 \begin{align}
-x & =\frac{1}{\sqrt{ 2m'\omega }}e^{-i\omega t}a+ \frac{1}{\sqrt{ 2m'\omega }}e^{i\omega t}a^{\dagger} \\
-\phi=\lambda \dot{x} & = \frac{-i\omega \lambda}{\sqrt{ 2m'\omega }} e^{-i \omega t}a+\frac{i\omega \lambda}{\sqrt{ 2m'\omega }} e^{i\omega t}a^{\dagger} \\
- & =-i\lambda \sqrt{ \frac{\omega}{2m'} }(e^{-i \omega t}a-e^{i\omega t}a^{\dagger}) \\
-X_{\phi} & =-\lambda \sqrt{ \frac{\omega}{2m'} } \left( e^{-i \omega t} \frac{\delta}{\delta a^{\dagger}}+e^{i \omega t} \frac{\delta}{\delta a} \right)
+[x(t),\phi(t')] & =iX_{x(t)}\cdot X_{\phi(t')}\cdot \omega \\
+ & =-\frac{i\lambda}{2m'}\left(e^{-i \omega t} \frac{\delta}{\delta a^{\dagger}}-e^{i \omega t} \frac{\delta}{\delta a}\right)\cdot\left( e^{-i \omega t'} \frac{\delta}{\delta a^{\dagger}}+e^{i\omega t'} \frac{\delta}{\delta a} \right)\cdot \delta a^{\dagger}\wedge \delta a \\
+ & =-\frac{i\lambda}{2m'}\left(-e^{i \omega t-i \omega t'}-e^{ -i \omega t+i \omega t'}\right)=\frac{i\lambda}{m'}\cos \omega(t-t')
 \end{align}
 $$
+
+$$\tag{1.11}
+\begin{align}
+\braket{ 0|\mathcal{T}x(t)\phi(t')|0 } & = \theta(t-t') \braket{ 0|x(t)\phi(t')|0 }+\theta(t'-t) \braket{ 0|\phi(t')x(t)|0 } \\
+ & =-\frac{i\lambda}{2m'}\theta(t-t')\braket{ 0|\left( e^{-i\omega t} a+e^{i \omega t}a^{\dagger} \right)(e^{-i \omega t'} a+e^{i \omega t'}a^{\dagger})|0 } \\
+ & -\frac{i\lambda}{2m'}\theta(t-t')\braket{ 0|\left( e^{-i\omega t'} a-e^{i \omega t'}a^{\dagger} \right)(e^{-i \omega t} a-e^{i \omega t}a^{\dagger})|0 } \\
+ & =-\frac{i\lambda}{2m'}(\theta(t-t')e^{-i \omega(t-t')}-\theta(t'-t)e^{i \omega(t-t')}) \\
+ & =-\frac{i\lambda}{m'}\mathrm{sgn}( t-t' )e^{-i \omega|t-t'|}
+\end{align}
+$$
+
