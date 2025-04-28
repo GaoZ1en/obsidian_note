@@ -244,12 +244,7 @@ $$\tag{2.13}
 \begin{align}
 [A_{0}(x),A_{0}(y)] & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left( \eta _{00}+\frac{k_{0}k_{0}}{m^{2}} \right)(e^{ik\cdot(x-y)}-e^{-ik\cdot(x-y)}) \\
  & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \frac{k^{2}}{m^{2}} (e^{ik(x-y)}-e^{-ik\cdot(x-y)}) \\
- & =-\frac{\partial_{i}\partial ^{i}}{m^{2}} \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}} e^{ik\cdot(x-y)}
-\end{align}
-$$
-
-$$\tag{2.14}
-\begin{align}
+ & =-\frac{\partial_{i}\partial ^{i}}{m^{2}} \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}} e^{ik\cdot(x-y)} \\
 [A_{0}(x),A_{i}(y)] & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left( \eta _{0i}+\frac{k_{0}k_{i}}{m^{2}} \right)(e^{ik\cdot (x-y)}-e^{-ik\cdot(x-y)})
 \end{align}
 $$
