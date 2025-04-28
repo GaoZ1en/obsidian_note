@@ -4,6 +4,8 @@ L & =\frac{1}{2}m\dot{x}^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}-\frac{1}{2
 \end{align}
 $$
 
+## canonical quantization
+
 make a variation
 
 $$\tag{1.2}
@@ -104,23 +106,11 @@ $$\tag{1.10}
  & =-\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})|0 } \\
  & -\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})|0 } \\
  & =\frac{\lambda ^{2}\omega}{2m'}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')}) \\
- & =\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0}\frac{e^{i\omega(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}
+ & =\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0}\frac{e^{i\omega(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}+\frac{ \omega\lambda ^{2}}{\pi m'}\delta(t-t')
 \end{align}
 $$
 
-$$
-\begin{align}
--\frac{\lambda ^{2}}{2m'\omega} \partial _{t}^{2}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
--\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0}\frac{e^{i\omega(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} & =-\frac{\lambda ^{2}}{2m'\omega}\partial _{t}^{2}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')})
-\end{align}
-$$
-
-and finally
+we get a contact term again. and finally
 
 $$\tag{1.10}
 \begin{align}
@@ -139,3 +129,8 @@ $$\tag{1.11}
  & =-\frac{\lambda}{2\pi im'}\partial _{t}\int \mathrm{d}p_{0} \frac{e^{i\omega(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} 
 \end{align}
 $$
+
+---
+
+## path integral quantization
+
