@@ -33,6 +33,47 @@ make the following mode expansion
 
 $$\tag{1.5}
 \begin{align}
-x= \frac{1}{}e^{i\omega t}a+ \frac{1}{}e^{-i\omega t}a^{\dagger}
+x= \frac{1}{\sqrt{ 2m'\omega }}e^{-i\omega t}a+ \frac{1}{\sqrt{ 2m'\omega }}e^{i\omega t}a^{\dagger}
 \end{align}
 $$
+
+where $\displaystyle{m'=m+\lambda ^{2},\omega=\sqrt{ \frac{k}{m'} }}$. then the symplectic form becomes
+
+$$\tag{1.5}
+\begin{align}
+\omega & =\frac{-i\omega}{2\omega}(e^{-i \omega t}\delta a- e^{i\omega t}\delta a^{\dagger})\wedge(e^{-i \omega t}\delta a+e^{i \omega t}\delta a^{\dagger}) \\
+ & =i\delta a^{\dagger}\wedge \delta a
+\end{align}
+$$
+
+then
+
+$$\tag{1.6}
+\begin{align}
+X_{x(t)} & =-\frac{i}{\sqrt{ 2m'\omega }}\left( e^{-i \omega t} \frac{\delta}{\delta a^{\dagger}} -e^{i \omega t} \frac{\delta}{\delta a}\right)
+\end{align}
+$$
+
+then the commutator
+
+$$\tag{1.7}
+\begin{align}
+[x(t),x(t')] & =iX_{x(t)}\cdot X_{x(t')}\cdot \omega \\
+ & = \frac{1}{2m'\omega} \left( e^{-i \omega t} \frac{\delta}{\delta a^{\dagger}}-e^{i \omega t} \frac{\delta}{\delta a} \right)\cdot\left( e^{-i \omega t'} \frac{\delta}{\delta a^{\dagger}}-e^{i \omega t'} \frac{\delta}{\delta a} \right)\cdot \delta a^{\dagger}\wedge \delta a \\
+ & = \frac{1}{2m'\omega}(e^{i \omega(t-t')}-e^{-i\omega(t-t')})=\frac{i}{m'\omega}\sin \omega(t-t')
+\end{align}
+$$
+
+and the time-ordered correlation function
+
+$$\tag{1.8}
+\begin{align}
+\braket{ 0|\mathcal{T}x(t)x(t')|0 } & =\theta(t-t') \braket{ 0|x(t)x(t')|0 }+\theta(t'-t) \braket{ 0|x(t')x(t)|0 } \\
+ & = \theta(t-t') \frac{1}{2m'\omega} \braket{ 0|\left( e^{-i\omega t} a+e^{i \omega t}a^{\dagger} \right)(e^{-i \omega t'}a+e^{i \omega t'}a^{\dagger})|0 } \\
+ & +\theta(t'-t) \frac{1}{2m'\omega} \braket{ 0|\left( e^{-i\omega t'} a+e^{i \omega t'}a^{\dagger} \right)(e^{-i \omega t}a+e^{i \omega t}a^{\dagger})|0 } \\
+ & = \frac{1}{2m'\omega}(\theta(t-t')  e^{-i\omega(t-t')}+\theta(t'-t)e^{i\omega(t-t')}) \\
+ & =\frac{1}{2m'\omega}e^{-i \omega|t-t'|}
+\end{align}
+$$
+
+
