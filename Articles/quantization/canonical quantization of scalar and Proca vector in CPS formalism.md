@@ -244,6 +244,9 @@ $$\tag{2.12}
  & +\theta(y^{0}-x^{0})\braket{ 0|\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\sum _{s,s'=1}^{3}e^{s}_{k0}e^{s'}_{k'i}(\sigma _{k}(y)a_{ks}+\sigma _{k}^{*}(y)a_{ks}^{\dagger})(\sigma _{k'}(x)a_{k's'}+\sigma _{k'}^{*}(x)a_{k's'}^{\dagger})|0 } \\
  & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\frac{k_{0}k_{i}}{m^{2}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
  & =-\frac{\partial ^{x}_{0}\partial ^{x}_{i}}{m^{2}}\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
+ & + \frac{\partial _{i}^{x}}{m^{2}} \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\partial ^{x}_{0}\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\partial _{0}^{x}\theta(x^{0}-y^{0})e^{-ik\cdot(x-y)}) \\
+ & =-\frac{\partial ^{x}_{0}\partial ^{x}_{i}}{m^{2}}\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}}  \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)} \\
+ & +\frac{\partial _{i}^{x}}{m^{2}}\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\delta(x^{0}-y^{0})-\delta(x^{0}-y^{0}))e^{ik\cdot(x-y)} \\
  & =-\frac{\partial ^{x}_{0}\partial ^{x}_{i}}{m^{2}}\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}}  \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)}
 \end{align}
 $$
@@ -255,11 +258,18 @@ $$\tag{2.13}
 \braket{ A_{0}(x)A_{0}(y) } & = \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left( -1+\frac{\omega _{k}^{2}}{m^{2}} \right)(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
  & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \frac{k^{2}}{m^{2}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
  & =-\frac{\nabla ^{2}_{x}}{m^{2}}\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
- & =-\frac{\nabla ^{2}_{x}}{m^{2}} \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)}
+ & =-\frac{\nabla ^{2}_{x}}{m^{2}} \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)} \\
+ & =\left( \eta _{00}+\frac{\partial ^{x}_{0}\partial ^{x}_{0}}{m^{2}} \right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon}-\frac{i}{m^{2}}\delta ^{4}(x-y)
 \end{align}
 $$
 
-where $\displaystyle{\nabla ^{2}_{x}=\delta ^{ij}\partial ^{x}_{i}\partial ^{x}_{j}}$
+where $\displaystyle{\nabla ^{2}_{x}=\delta ^{ij}\partial ^{x}_{i}\partial ^{x}_{j}}$, and finally we have
+
+$$\tag{2.14}
+\begin{align}
+\braket{ A_{\mu}(x)A_{\nu}(y) }  & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon}e^{ik\cdot(x-y)}\left( \eta _{\mu \nu}+\frac{k_{\mu}k_{\nu}}{m^{2}} \right)-\frac{i}{m^{2}}\delta ^{0}_{\mu}\delta ^{0}_{\nu}\delta ^{4}(x-y)
+\end{align}
+$$
 
 ---
 
@@ -275,6 +285,7 @@ make a variation
 
 $$\tag{3.2}
 \begin{align}
-\delta S & =\int _{M}\mathrm{d}^{4}x\left(-\frac{1}{2}F^{\mu \nu}\delta F_{\mu \nu}\right)
+\delta S & =\int _{M}\mathrm{d}^{4}x\left(-F^{\mu \nu}\partial _{\mu}\delta A_{\nu}+m^{2}A^{\mu}\delta A_{\mu}+\lambda \eta ^{\mu \nu}\partial _{\rho}A^{\rho}\partial _{\mu}\delta A_{\nu}\right) \\
+ & =
 \end{align}
 $$
