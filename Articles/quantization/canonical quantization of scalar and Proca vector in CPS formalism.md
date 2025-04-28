@@ -206,7 +206,9 @@ $$\tag{2.10}
  & =\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\mathrm{d}^{3}\vec{k}''\sum _{s,s',s''}e^{s}_{k\mu}e^{s'}_{k'\nu}\left(\sigma _{k}(x) \frac{\delta}{\delta a^{^{\dagger}}_{ks}}-\sigma ^{*}_{k}(x) \frac{\delta}{\delta a_{ks}}\right)\cdot \\
  & \left( \sigma _{k'}(y) \frac{\delta}{\delta a_{k's'}^{\dagger}}-\sigma ^{*}_{k'}(y) \frac{\delta}{\delta a_{k's}} \right)\cdot\delta a_{k''s''}^{\dagger}\wedge \delta a_{k''s''} \\
  & =\int \mathrm{d}^{3}\vec{k}\sum _{s=1}^{3}e^{s}_{k\mu}e^{s}_{k\nu}\left(\sigma _{k}(x)\sigma _{k}^{*}(y)-\sigma ^{*}_{k}(x)\sigma _{k}(y)\right) \\
- & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left( \eta_{\mu \nu}+\frac{k_{\mu}k_{\nu}}{m^{2}} \right) (e^{ik\cdot(x-y)}-e^{-ik\cdot(x-y)})
+ & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left( \eta_{\mu \nu}+\frac{k_{\mu}k_{\nu}}{m^{2}} \right) (e^{ik\cdot(x-y)}-e^{-ik\cdot(x-y)}) \\
+ & =\left( \eta _{\mu \nu}-\frac{\partial ^{x}_{\mu}\partial _{\nu}^{x}}{m^{2}} \right)\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} (e^{ik\cdot(x-y)}-e^{-ik\cdot(x-y)}) \\
+ & =\left( \eta _{\mu \nu}-\frac{\partial ^{x}_{\mu}\partial ^{x}_{\nu}}{m^{2}} \right) \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}} e^{ik\cdot(x-y)}
 \end{align}
 $$
 
@@ -245,7 +247,9 @@ $$\tag{2.13}
 [A_{0}(x),A_{0}(y)] & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left( \eta _{00}+\frac{k_{0}k_{0}}{m^{2}} \right)(e^{ik\cdot(x-y)}-e^{-ik\cdot(x-y)}) \\
  & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \frac{k^{2}}{m^{2}} (e^{ik(x-y)}-e^{-ik\cdot(x-y)}) \\
  & =-\frac{\partial_{i}\partial ^{i}}{m^{2}} \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}} e^{ik\cdot(x-y)} \\
-[A_{0}(x),A_{i}(y)] & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left( \eta _{0i}+\frac{k_{0}k_{i}}{m^{2}} \right)(e^{ik\cdot (x-y)}-e^{-ik\cdot(x-y)})
+[A_{0}(x),A_{i}(y)] & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left( \eta _{0i}+\frac{k_{0}k_{i}}{m^{2}} \right)(e^{ik\cdot (x-y)}-e^{-ik\cdot(x-y)}) \\
+ & =-i\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \frac{\omega _{k}}{m^{2}}\partial _{i}(e^{ik\cdot(x-y)}-e^{-ik\cdot(x-y)}) \\
+ & =-i \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{\omega _{k}}{m^{2}} \frac{i}{k^{2}+m^{2}}e^{ik\cdot(x-y)}
 \end{align}
 $$
 
