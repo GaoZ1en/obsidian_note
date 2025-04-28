@@ -1,6 +1,6 @@
 $$\tag{1.1}
 \begin{align}
-L & =\frac{1}{2}m\dot{x}^{2}+\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}-\frac{1}{2}kx^{2}
+L & =\frac{1}{2}m\dot{x}^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}-\frac{1}{2}kx^{2}
 \end{align}
 $$
 
@@ -16,7 +16,7 @@ integrate out $\displaystyle{\phi}$, we have
 
 $$\tag{1.3}
 \begin{align}
-\delta L & =-((m+\lambda ^{2})\ddot{x}+kx)\delta x + \frac{\mathrm{d}}{\mathrm{d}t}((m+\lambda ^{2})\dot{x}\delta x) \\
+\delta L & =-((m-\lambda ^{2})\ddot{x}+kx)\delta x + \frac{\mathrm{d}}{\mathrm{d}t}((m-\lambda ^{2})\dot{x}\delta x) \\
  & =E\delta x+\frac{\mathrm{d}}{\mathrm{d}t}\theta
 \end{align}
 $$
@@ -25,7 +25,7 @@ then the symplectic form is
 
 $$\tag{1.4}
 \begin{align}
-\omega=\delta \theta & =(m+\lambda ^{2})\delta \dot{x}\wedge \delta x
+\omega=\delta \theta & =(m-\lambda ^{2})\delta \dot{x}\wedge \delta x
 \end{align}
 $$
 
@@ -37,7 +37,7 @@ x= \frac{1}{\sqrt{ 2m'\omega }}e^{-i\omega t}a+ \frac{1}{\sqrt{ 2m'\omega }}e^{i
 \end{align}
 $$
 
-where $\displaystyle{m'=m+\lambda ^{2},\omega=\sqrt{ \frac{k}{m'} }}$. then the symplectic form becomes
+where $\displaystyle{m'=m-\lambda ^{2},\omega=\sqrt{ \frac{k}{m'} }}$. then the symplectic form becomes
 
 $$\tag{1.5}
 \begin{align}
@@ -72,7 +72,8 @@ $$\tag{1.8}
  & = \theta(t-t') \frac{1}{2m'\omega} \braket{ 0|\left( e^{-i\omega t} a+e^{i \omega t}a^{\dagger} \right)(e^{-i \omega t'}a+e^{i \omega t'}a^{\dagger})|0 } \\
  & +\theta(t'-t) \frac{1}{2m'\omega} \braket{ 0|\left( e^{-i\omega t'} a+e^{i \omega t'}a^{\dagger} \right)(e^{-i \omega t}a+e^{i \omega t}a^{\dagger})|0 } \\
  & = \frac{1}{2m'\omega}(\theta(t-t')  e^{-i\omega(t-t')}+\theta(t'-t)e^{i\omega(t-t')}) \\
- & =\frac{1}{2m'\omega}e^{-i \omega|t-t'|}
+ & =\frac{1}{2m'\omega}e^{-i \omega|t-t'|} \\
+ & =
 \end{align}
 $$
 
