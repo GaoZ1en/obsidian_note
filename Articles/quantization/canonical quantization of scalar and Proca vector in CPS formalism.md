@@ -223,5 +223,4 @@ $$\tag{2.12}
 \end{align}
 $$
 
-the contour chosen is the same as the case of scalar. as for $\displaystyle{A_{0}}$, here are some subtleties. from the equation of motion we have
-
+the contour chosen is the same as the case of scalar. as for $\displaystyle{A_{0}}$, 
