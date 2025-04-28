@@ -97,7 +97,7 @@ $$
 
 with the following contour for $\displaystyle{k^{0}}$
 
-obsidian://open?vault=Note&file=Attachments%2FPasted%20image%2020250425232210.png
+![[Attachments/Pasted image 20250425232210.png]]
 
 and the Feynman propagator is
 
@@ -228,29 +228,42 @@ and the Feynman propagator is
 
 $$\tag{2.12}
 \begin{align}
-\braket{ A_{\mu}(x)A_{\nu}(y) } & = \braket{ 0|\mathcal{T}A_{\mu}(x)A_{\nu}(y)|0 } \\
- & =\theta(x^{0}-y^{0})\braket{ 0|\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\sum _{s,s'=1}^{3}e^{s}_{k\mu}e^{s'}_{k'\nu}(\sigma _{k}(x)a_{ks}+\sigma _{k}^{*}(x)a_{ks}^{\dagger})(\sigma _{k'}(y)a_{k's'}+\sigma _{k'}^{*}(y)a_{k's'}^{\dagger})|0 } \\
- & +\theta(y^{0}-x^{0})\braket{ 0|\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\sum _{s,s'=1}^{3}e^{s}_{k\mu}e^{s'}_{k'\nu}(\sigma _{k}(y)a_{ks}+\sigma _{k}^{*}(y)a_{ks}^{\dagger})(\sigma _{k'}(x)a_{k's'}+\sigma _{k'}^{*}(x)a_{k's'}^{\dagger})|0 } \\
- & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left( \eta _{\mu \nu}+\frac{k_{\mu}k_{\nu}}{m^{2}} \right)(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
- & =\left( \eta _{\mu \nu}-\frac{\partial ^{x}_{\mu}\partial ^{x}_{\nu}}{m^{2}} \right) \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
- & =\left( \eta _{\mu \nu}-\frac{\partial ^{x}_{\mu}\partial ^{x}_{\nu}}{m^{2}} \right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}}  \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)}
+\braket{ A_{i}(x)A_{j}(y) } & = \braket{ 0|\mathcal{T}A_{i}(x)A_{j}(y)|0 } \\
+ & =\theta(x^{0}-y^{0})\braket{ 0|\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\sum _{s,s'=1}^{3}e^{s}_{ki}e^{s'}_{k'j}(\sigma _{k}(x)a_{ks}+\sigma _{k}^{*}(x)a_{ks}^{\dagger})(\sigma _{k'}(y)a_{k's'}+\sigma _{k'}^{*}(y)a_{k's'}^{\dagger})|0 } \\
+ & +\theta(y^{0}-x^{0})\braket{ 0|\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\sum _{s,s'=1}^{3}e^{s}_{ki}e^{s'}_{k'j}(\sigma _{k}(y)a_{ks}+\sigma _{k}^{*}(y)a_{ks}^{\dagger})(\sigma _{k'}(x)a_{k's'}+\sigma _{k'}^{*}(x)a_{k's'}^{\dagger})|0 } \\
+ & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left( \delta_{ij}+\frac{k_{i}k_{j}}{m^{2}} \right)(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
+ & =\left( \delta _{ij}-\frac{\partial ^{x}_{i}\partial ^{x}_{j}}{m^{2}} \right) \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
+ & =\left( \delta _{ij}-\frac{\partial ^{x}_{i}\partial ^{x}_{j}}{m^{2}} \right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}}  \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)}
 \end{align}
 $$
 
-(2.12) is only right for $\displaystyle{ij}$ and $\displaystyle{0i}$ components. for $\displaystyle{00}$ components, we start from the third "=" in (2.12)
+$$\tag{2.12}
+\begin{align}
+\braket{ A_{0}(x)A_{i}(y) } & = \braket{ 0|\mathcal{T}A_{0}(x)A_{i}(y)|0 } \\
+ & =\theta(x^{0}-y^{0})\braket{ 0|\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\sum _{s,s'=1}^{3}e^{s}_{k0}e^{s'}_{k'i}(\sigma _{k}(x)a_{ks}+\sigma _{k}^{*}(x)a_{ks}^{\dagger})(\sigma _{k'}(y)a_{k's'}+\sigma _{k'}^{*}(y)a_{k's'}^{\dagger})|0 } \\
+ & +\theta(y^{0}-x^{0})\braket{ 0|\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\sum _{s,s'=1}^{3}e^{s}_{k0}e^{s'}_{k'i}(\sigma _{k}(y)a_{ks}+\sigma _{k}^{*}(y)a_{ks}^{\dagger})(\sigma _{k'}(x)a_{k's'}+\sigma _{k'}^{*}(x)a_{k's'}^{\dagger})|0 } \\
+ & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\frac{k_{0}k_{i}}{m^{2}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
+ & =-\frac{\partial ^{x}_{0}\partial ^{x}_{i}}{m^{2}}\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
+ & =-\frac{\partial ^{x}_{0}\partial ^{x}_{i}}{m^{2}}\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}}  \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)}
+\end{align}
+$$
+
+(2.12) is only right for $\displaystyle{ij}$ and $\displaystyle{0i}$ components. for $\displaystyle{00}$ components, we have (?)
 
 $$\tag{2.13}
 \begin{align}
 \braket{ A_{0}(x)A_{0}(y) } & = \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left( -1+\frac{\omega _{k}^{2}}{m^{2}} \right)(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
  & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} \frac{k^{2}}{m^{2}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
- & =-\frac{\partial ^{x}_{i}\partial ^{ix}}{m^{2}}\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
- & =
+ & =-\frac{\nabla ^{2}_{x}}{m^{2}}\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
+ & =-\frac{\nabla ^{2}_{x}}{m^{2}} \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)}
 \end{align}
 $$
 
+where $\displaystyle{\nabla ^{2}_{x}=\delta ^{ij}\partial ^{x}_{i}\partial ^{x}_{j}}$
+
 ---
 
-or we should consider add $\displaystyle{\frac{\lambda}{2}(\partial _{\mu}A^{\mu})^{2}}$ term in the Lagrangian (2.1), where $\displaystyle{\lambda}$ is a Lagrangian multiplier.
+or we should add $\displaystyle{\frac{\lambda}{2}(\partial _{\mu}A^{\mu})^{2}}$ term in the Lagrangian (2.1), where $\displaystyle{\lambda}$ is a Lagrangian multiplier.
 
 $$\tag{3.1}
 \begin{align}
@@ -258,3 +271,10 @@ S & =\int _{M} \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{
 \end{align}
 $$
 
+make a variation
+
+$$\tag{3.2}
+\begin{align}
+\delta S & =\int _{M}\mathrm{d}^{4}x\left(-\frac{1}{2}F^{\mu \nu}\delta F_{\mu \nu}\right)
+\end{align}
+$$
