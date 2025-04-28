@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "be754014b7083e79",
@@ -123,13 +122,17 @@
   },
   "active": "4b24ea228a5e6f26",
   "lastOpenFiles": [
-    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/week 9.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism.md",
+    "Attachments/Pasted image 20250425232210.png",
+    "Attachments/Pasted image 20250417145002.png",
+    "Attachments/微信图片_20250414131423_29.jpg",
+    "Attachments/Pasted image 20250417093901.png",
+    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+    "Attachments/Pasted image 20250214190351.png",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/week 9.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/discussion for Poisson bracket.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/covariant phase space with boundaries.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
-    "Attachments/Pasted image 20250425232210.png",
     "Articles/quantization/examples.md",
     "Articles/some generalization CPS/harmonic oscillator.md",
     "Articles/quantization/first example.md",
@@ -151,18 +154,13 @@
     "Reading/supergravity/relativistic field theory in Minkowski spacetime/scalar field theory and its symmetries.md",
     "Reading/gravity",
     "Articles/Noether charge/asymptotic symmetry vector.md",
-    "Lecture/2025 spring/python for general purpose/未命名 1.md",
     "Articles/some generalization CPS",
     "Drafts",
     "Reading/computational algebraic geometry",
-    "Attachments/Pasted image 20250417145002.png",
-    "Attachments/Pasted image 20250417093901.png",
     "Reading/symmetry and topology/topology",
     "Reading/symmetry and topology",
     "Lecture/2024 quantization and homology method by Si Li",
     "Reading/supergravity/relativistic field theory in Minkowski spacetime",
-    "Reading/supergravity",
-    "Attachments/Pasted image 20250214190351.png",
-    "Attachments/微信图片_20250414131423_29.jpg"
+    "Reading/supergravity"
   ]
 }
