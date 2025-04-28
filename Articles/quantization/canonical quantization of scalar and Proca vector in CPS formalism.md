@@ -286,6 +286,8 @@ make a variation
 $$\tag{3.2}
 \begin{align}
 \delta S & =\int _{M}\mathrm{d}^{4}x\left(-F^{\mu \nu}\partial _{\mu}\delta A_{\nu}+m^{2}A^{\mu}\delta A_{\mu}+\lambda \eta ^{\mu \nu}\partial _{\rho}A^{\rho}\partial _{\mu}\delta A_{\nu}\right) \\
- & =
+ & =\int _{M}\mathrm{d}^{4}xE^{\nu}\delta A_{\nu}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
+E^{\nu} & =\partial _{\mu}F^{\mu \nu}+m^{2}A^{\nu}-\lambda \eta ^{\mu \nu}\partial _{\nu}(\partial _{\rho}A^{\rho}) \\
+\theta & =\int _{\Sigma}\mathrm{d}^{3}x\tau _{\mu}\left(F^{\mu \nu}\delta A_{\nu}-\lambda \eta ^{\mu \nu}\partial _{\rho}A^{\rho}\delta A_{\nu}\right)
 \end{align}
 $$
