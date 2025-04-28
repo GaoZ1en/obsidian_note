@@ -76,4 +76,36 @@ $$\tag{1.8}
 \end{align}
 $$
 
+$$\tag{1.9}
+\begin{align}
+X_{\phi(t)} & = -\lambda \sqrt{ \frac{\omega}{2m'} }\left(e^{-i\omega t} \frac{\delta}{\delta a^{\dagger}}+ e^{i \omega t} \frac{\delta}{\delta a}\right)
+\end{align}
+$$
 
+$$\tag{1.9}
+\begin{align}
+[\phi(t),\phi(t')] & =iX_{\phi(t)}\cdot X_{\phi(t')}\cdot \omega \\
+ & =-\frac{\lambda ^{2}\omega}{2m'}\left( e^{-i \omega t} \frac{\delta}{\delta a^{\dagger}}+e^{i \omega t} \frac{\delta}{\delta a} \right)\cdot\left( e^{-i \omega t'} \frac{\delta}{\delta a^{\dagger}}+e^{i \omega t'} \frac{\delta}{\delta a} \right)\cdot \delta a^{\dagger}\wedge \delta a \\
+ & =-\frac{\lambda ^{2}\omega}{2m'}(e^{i \omega(t-t')}-e^{-i \omega(t-t')})=-\frac{\lambda ^{2}\omega}{m'}\cos \omega(t-t')
+\end{align}
+$$
+
+$$\tag{1.10}
+\begin{align}
+\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & =\theta(t-t') \braket{ 0|\phi(t)\phi(t')|0 }+\theta(t'-t) \braket{ 0|\phi(t')\phi(t)|0 } \\
+ & =-\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})|0 } \\
+ & -\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})|0 } \\
+ & =\frac{\lambda ^{2}\omega}{2m'}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')}) \\
+ & =\frac{\lambda ^{2}\omega}{2m'}
+\end{align}
+$$
+
+
+$$\tag{1.5}
+\begin{align}
+x & =\frac{1}{\sqrt{ 2m'\omega }}e^{-i\omega t}a+ \frac{1}{\sqrt{ 2m'\omega }}e^{i\omega t}a^{\dagger} \\
+\phi=\lambda \dot{x} & = \frac{-i\omega \lambda}{\sqrt{ 2m'\omega }} e^{-i \omega t}a+\frac{i\omega \lambda}{\sqrt{ 2m'\omega }} e^{i\omega t}a^{\dagger} \\
+ & =-i\lambda \sqrt{ \frac{\omega}{2m'} }(e^{-i \omega t}a-e^{i\omega t}a^{\dagger}) \\
+X_{\phi} & =-\lambda \sqrt{ \frac{\omega}{2m'} } \left( e^{-i \omega t} \frac{\delta}{\delta a^{\dagger}}+e^{i \omega t} \frac{\delta}{\delta a} \right)
+\end{align}
+$$
