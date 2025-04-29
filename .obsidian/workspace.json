@@ -79,6 +79,20 @@
         "type": "tabs",
         "children": [
           {
+            "id": "a653e3e8b065cbbf",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://chat.qwen.ai/",
+                "title": "Qwen",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Qwen"
+            }
+          },
+          {
             "id": "d3d4ecdcd0b7b58b",
             "type": "leaf",
             "state": {
@@ -90,20 +104,6 @@
               },
               "icon": "globe-2",
               "title": "DeepSeek - 探索未至之境"
-            }
-          },
-          {
-            "id": "a653e3e8b065cbbf",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://chat.qwen.ai/auth",
-                "title": "Qwen",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Qwen"
             }
           },
           {
@@ -121,13 +121,11 @@
               "title": "TODO"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 411.5,
-    "collapsed": true
+    "width": 411.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -136,10 +134,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4b24ea228a5e6f26",
+  "active": "a653e3e8b065cbbf",
   "lastOpenFiles": [
-    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+    "TODO.md",
     "Articles/quantization/harmonic oscillator with multiplier.md",
+    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism.md",
     "Articles/quantization/first example.md",
     "Attachments/Pasted image 20250425232210.png",
@@ -158,7 +157,6 @@
     "Articles/quantization",
     "Lecture/2025.4 JT gravity/prelecture2&3 learning.md",
     "Group meeting/Week 16.md",
-    "TODO.md",
     "Reading/differential geometry/Riemann geometry.md",
     "Articles/Topologically massive gravity/asymptotic calculation.md",
     "Lecture/2025.4 JT gravity/lecture 2.md",

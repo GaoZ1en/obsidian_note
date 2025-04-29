@@ -187,3 +187,6 @@ $$\tag{2.6}
 $$
 
 ...
+
+## path integral quantization in constrained system
+
