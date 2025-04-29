@@ -142,8 +142,48 @@ L & =\frac{1}{2}m\dot{x}^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}-\frac{1}{2
 \end{align}
 $$
 
-$$\tag{.}
+$$\tag{2.2}
 \begin{align}
-
+Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi e^{i \int \mathrm{d}t(L[x,\phi]+J\phi+\eta \phi)}
 \end{align}
 $$
+
+integrate out $\displaystyle{\phi}$, we have
+
+$$\tag{2.3}
+\begin{align}
+Z[J,\eta] & =\int \mathcal{D}x \exp\left(i \int \mathrm{d}t\left[\frac{1}{2}(m-\lambda ^{2})\dot{x}^{2}-\frac{1}{2}kx^{2}+Jx+\lambda \eta \dot{x}-\frac{1}{2}\eta ^{2}\right]\right)
+\end{align}
+$$
+
+then the generation functional is
+
+$$\tag{2.4}
+\begin{align}
+W[J,\eta] &= -i\ln Z[J,\eta] \\
+ &  =-\frac{1}{2}\int \mathrm{d}t \eta ^{2}+\frac{1}{2}\int \mathrm{d}t\mathrm{d}t'K(t)G(t,t')K(t')
+\end{align}
+$$
+
+where $\displaystyle{K=J-\lambda \dot{\eta}}$, and the propagator $\displaystyle{G(t,t')}$ satisfies
+
+$$\tag{2.5}
+\begin{align}
+\left(M \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k\right)G(t-t')=\delta(t-t')
+\end{align}
+$$
+
+where $\displaystyle{M=m-\lambda ^{2}}$. then we have
+
+$$\tag{2.6}
+\begin{align}
+\braket{ 0|\mathcal{T}x(t)x(t')|0 } & = \frac{\delta ^{2}W}{\delta J(t)\delta J(t')}|_{J=\eta=0} \\
+ & =G(t,t') \\
+\braket{ 0|\mathcal{T}x(t)\phi(t')|0 } & =\frac{\delta ^{2}W}{\delta J(t)\delta \eta(t')}|_{J=\eta=0} \\
+ & =\frac{\lambda \partial}{\partial t'}G(t-t') \\
+\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & =\frac{\delta ^{2}W}{\delta \eta(t)\delta \eta(t')}|_{J=\eta=0} \\
+ & =-\delta(t-t')+\lambda ^{2} \frac{\partial^{2}}{\partial t\partial t'} G(t-t') \\ 
+\end{align}
+$$
+
+...
