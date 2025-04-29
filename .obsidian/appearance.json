@@ -10,7 +10,6 @@
   "textFontFamily": "Comic Sans MS",
   "showRibbon": false,
   "enabledCssSnippets": [
-    "picture",
     "math_block"
   ],
   "baseFontSize": 16
