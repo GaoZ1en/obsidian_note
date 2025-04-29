@@ -132,61 +132,33 @@ $$
 
 ---
 
-## path integral quantization in constrained system
+## path integral quantization from canonical quantization in constrained system
 
-here we formally write something
 
-$$\tag{1.1}
+$$L=\frac{1}{2}m\dot{x}^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}-\frac{1}{2}kx^{2}$$
+
+$$\tag{2.1}
 \begin{align}
-L & =\frac{1}{2}m\dot{x}^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}-\frac{1}{2}kx^{2}
+p_{x} & = \frac{\partial L}{\partial \dot{x}}=m\dot{x}-\lambda \phi \\
+p_{\phi} & =\frac{\partial L}{\partial \dot{\phi}} =0
 \end{align}
 $$
+
+we get a primary constraint $\displaystyle{\varphi _{1}=p_{\phi}=0}$. the Hamiltonian is
 
 $$\tag{2.2}
 \begin{align}
-Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi e^{i \int \mathrm{d}t(L[x,\phi]+J\phi+\eta \phi)}
+H & =p_{x}\dot{x}-L \\
+ & =\frac{p_{x}(p_{x}+\lambda \phi)}{m}-\frac{1}{2m}(p_{x}+\lambda \phi)^{2}+\frac{\lambda \phi}{m}(p_{x}+\lambda \phi)-\frac{1}{2}\phi ^{2}+\frac{1}{2}kx^{2} \\
+ & =-\frac{\lambda ^{2}\phi ^{2}}{2m}+\frac{\lambda \phi p_{x}}{m}+\frac{\lambda ^{2}\phi ^{2}}{m}-\frac{1}{2}\phi ^{2}+\frac{1}{2}kx^{2} \\
+ & =\frac{p_{x}^{2}}{2m}+\frac{\lambda p_{x}\phi}{m}+\left( \frac{\lambda ^{2}}{2m}-\frac{1}{2} \right)\phi ^{2}+\frac{1}{2}kx^{2}
 \end{align}
 $$
 
-integrate out $\displaystyle{\phi}$, we have
+consider the Poisson bracket between $\displaystyle{\varphi _{1}}$ and $\displaystyle{H}$
 
 $$\tag{2.3}
 \begin{align}
-Z[J,\eta] & =\int \mathcal{D}x \exp\left(i \int \mathrm{d}t\left[\frac{1}{2}(m-\lambda ^{2})\dot{x}^{2}-\frac{1}{2}kx^{2}+Jx+\lambda \eta \dot{x}-\frac{1}{2}\eta ^{2}\right]\right)
+\left\{\varphi _{1},H\right\} & =\left\{p_{\phi},H\right\}= \frac{\partial H}{\partial \phi}
 \end{align}
 $$
-
-then the generation functional is
-
-$$\tag{2.4}
-\begin{align}
-W[J,\eta] &= -i\ln Z[J,\eta] \\
- &  =-\frac{1}{2}\int \mathrm{d}t \eta ^{2}+\frac{1}{2}\int \mathrm{d}t\mathrm{d}t'K(t)G(t,t')K(t')
-\end{align}
-$$
-
-where $\displaystyle{K=J-\lambda \dot{\eta}}$, and the propagator $\displaystyle{G(t,t')}$ satisfies
-
-$$\tag{2.5}
-\begin{align}
-\left(M \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k\right)G(t-t')=\delta(t-t')
-\end{align}
-$$
-
-where $\displaystyle{M=m-\lambda ^{2}}$. then we have
-
-$$\tag{2.6}
-\begin{align}
-\braket{ 0|\mathcal{T}x(t)x(t')|0 } & = \frac{\delta ^{2}W}{\delta J(t)\delta J(t')}|_{J=\eta=0} \\
- & =G(t,t') \\
-\braket{ 0|\mathcal{T}x(t)\phi(t')|0 } & =\frac{\delta ^{2}W}{\delta J(t)\delta \eta(t')}|_{J=\eta=0} \\
- & =\frac{\lambda \partial}{\partial t'}G(t-t') \\
-\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & =\frac{\delta ^{2}W}{\delta \eta(t)\delta \eta(t')}|_{J=\eta=0} \\
- & =-\delta(t-t')+\lambda ^{2} \frac{\partial^{2}}{\partial t\partial t'} G(t-t') \\ 
-\end{align}
-$$
-
-...
-
-## path integral quantization in constrained system
-
