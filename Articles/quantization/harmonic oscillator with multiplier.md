@@ -106,7 +106,7 @@ $$\tag{1.10}
  & =-\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})|0 } \\
  & -\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})|0 } \\
  & =-\frac{\lambda ^{2}\omega}{2m'}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')}) \\
- & =-\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0}\frac{e^{i\omega(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\frac{ \omega\lambda ^{2}}{\pi m'}\delta(t-t')
+ & =-\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0}\frac{e^{ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\frac{ \omega\lambda ^{2}}{\pi m'}\delta(t-t')
 \end{align}
 $$
 
@@ -126,11 +126,11 @@ $$\tag{1.11}
  & =-\frac{i\lambda}{2m'}\theta(t-t')\braket{ 0|\left( e^{-i\omega t} a+e^{i \omega t}a^{\dagger} \right)(e^{-i \omega t'} a+e^{i \omega t'}a^{\dagger})|0 } \\
  & -\frac{i\lambda}{2m'}\theta(t-t')\braket{ 0|\left( e^{-i\omega t'} a-e^{i \omega t'}a^{\dagger} \right)(e^{-i \omega t} a-e^{i \omega t}a^{\dagger})|0 } \\
  & =-\frac{i\lambda}{2m'}(\theta(t-t')e^{-i \omega(t-t')}-\theta(t'-t)e^{i \omega(t-t')}) \\
- & =-\frac{\lambda}{2\pi im'}\partial _{t}\int \mathrm{d}p_{0} \frac{e^{i\omega(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} 
+ & =-\frac{\lambda}{2\pi im'}\partial _{t}\int \mathrm{d}p_{0} \frac{e^{ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} 
 \end{align}
 $$
 
 ---
 
-## path integral quantization in system with constraints
+## path integral quantization in constrained system
 
