@@ -144,7 +144,7 @@ p_{\phi} & =\frac{\partial L}{\partial \dot{\phi}} =0
 \end{align}
 $$
 
-we get a primary constraint $\displaystyle{\varphi _{1}=p_{\phi}=0}$. the Hamiltonian is
+we get a primary constraint $\displaystyle{\varphi _{1}=p_{\phi}\approx0}$. the Hamiltonian is
 
 $$\tag{2.2}
 \begin{align}
@@ -159,6 +159,59 @@ consider the Poisson bracket between $\displaystyle{\varphi _{1}}$ and $\display
 
 $$\tag{2.3}
 \begin{align}
-\left\{\varphi _{1},H\right\} & =\left\{p_{\phi},H\right\}= \frac{\partial H}{\partial \phi}
+\left\{\varphi _{1},H\right\} & =\left\{p_{\phi},H\right\}= -\frac{\partial H}{\partial \phi} \\
+ & =-\frac{\lambda p_{x}}{m}-\left(\frac{\lambda ^{2}}{m}-1\right)\phi 
+\end{align}
+$$
+
+we get a secondary constraint $\displaystyle{\varphi _{2}=\frac{\lambda p_{x}}{m}+\left( \frac{\lambda ^{2}}{m}-1 \right)\phi \approx0}$. and finally
+
+$$\tag{2.4}
+\begin{align}
+\left\{\varphi _{1},\varphi _{2}\right\} & =\left\{p_{\phi},\lambda p_{x}+\left(\frac{\lambda ^{2}}{m}-1\right)\phi\right\} \\
+ & =1-\frac{\lambda ^{2}}{m}
+\end{align}
+$$
+
+integrate out the constraints, we have
+
+$$\tag{2.5}
+\begin{align}
+\phi=\frac{\lambda p_{x}}{ m-\lambda ^{2}}
+\end{align}
+$$
+
+and the effective Hamiltonian
+
+$$\tag{2.6}
+\begin{align}
+H_{\mathrm{eff}}=\frac{p_{x}^{2}}{2(m-\lambda ^{2})}+\frac{1}{2}kx^{2}
+\end{align}
+$$
+
+the partition function is
+
+$$\tag{2.7}
+\begin{align}
+Z & =\int \mathcal{D}x\mathcal{D}p_{x}\mathcal{D}\phi \mathcal{D}p_{\phi}\delta(\varphi _{1})\delta(\varphi _{2})\det(\left\{\varphi _{i},\varphi _{2}\right\})^{1/2}\exp \left(i \int \mathrm{d}t(p_{x}\dot{x}-H)\right) \\
+ & =\int \mathcal{D}x\mathcal{D}p_{x} \exp\left(i \int \mathrm{d}t(p_{x}\dot{x}-H_{\mathrm{eff}})\right)
+\end{align}
+$$
+
+then integrate out $\displaystyle{p_{x}}$, we have
+
+$$\tag{2.8}
+\begin{align}
+Z & =\int \mathcal{D}x\exp\left(i \int \mathrm{d}t\left(\frac{1}{2}(m-\lambda ^{2})\dot{x}^{2}-\frac{1}{2}kx^{2}\right)\right)
+\end{align}
+$$
+
+then we can compute the time-ordered correlation functions
+
+$$\tag{2.9}
+\begin{align}
+\braket{ 0|\mathcal{T}x(t)x(t')|0 } & =  \\
+\braket{ 0|\mathcal{T}x(t)\phi(t')|0 } & = \\
+\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & =
 \end{align}
 $$
