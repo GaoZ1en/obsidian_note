@@ -85,11 +85,11 @@
               "type": "webviewer",
               "state": {
                 "url": "https://chat.qwen.ai/c/68e79378-a7d0-45f9-b8c0-239dd52584db",
-                "title": "Qwen",
+                "title": "Path Integral from Constraints | Qwen",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Qwen"
+              "title": "Path Integral from Constraints | Qwen"
             }
           },
           {
@@ -125,7 +125,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 411.5
+    "width": 411.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -134,7 +135,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a653e3e8b065cbbf",
+  "active": "4b24ea228a5e6f26",
   "lastOpenFiles": [
     "Articles/quantization/harmonic oscillator with multiplier.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
