@@ -134,3 +134,16 @@ $$
 
 ## path integral quantization in constrained system
 
+here we formally write something
+
+$$\tag{1.1}
+\begin{align}
+L & =\frac{1}{2}m\dot{x}^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}-\frac{1}{2}kx^{2}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+
+\end{align}
+$$
