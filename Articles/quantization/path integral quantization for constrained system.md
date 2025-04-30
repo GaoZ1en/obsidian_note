@@ -115,20 +115,12 @@ $$
 
 ---
 
-or we should not integrate out $\displaystyle{\phi}$ first.
-
-$$\tag{1.7'}
-\begin{align}
-Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi \exp\left( i \int _{-\infty}^{+\infty}\mathrm{d}t(L[x,\phi]+Jx+\eta \phi) \right) \\
- & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}+Jx+\eta \phi\right)\right)
-\end{align}
-$$
+or we should not integrate out $\displaystyle{\phi}$ first????
 
 $$\tag{1.7}
 \begin{align}
 Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi \exp\left( i \int _{-\infty}^{+\infty}\mathrm{d}t(L[xe^{-i\alpha},\phi e^{-i\beta}]+Jxe^{-i\alpha}+\eta \phi e^{-i\beta}) \right) \\
  & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{-i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{-i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}+Jxe^{-i\alpha}+\eta \phi e^{-i\beta}\right)\right) \\
- & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t \left(-\frac{1}{2}\dot{x}\left( m' \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k \right)\dot{x} e^{-i\alpha}+Jxe^{-i\alpha}+\frac{1}{2}(\phi e^{-i\beta/2} +(\lambda e^{-i\beta/2}-\lambda \dot{x}e^{-i\alpha/2}))^{2}-\frac{1}{2}\eta ^{2} e^{-i\beta}+\lambda \eta \dot{x}e^{-i(\alpha+\beta)/2}\right)\right) \\
- & =\exp\left(\frac{i}{2}\int ^{+\infty}_{-\infty}\mathrm{d}t\mathrm{d}t'(J-\lambda \dot{\eta})(t)G(t,t')(J-\lambda \dot{\eta})(t')\right)\exp\left(-\frac{i}{2}\int _{-\infty}^{+\infty}\mathrm{d}t\eta ^{2}e^{-i\beta}\right)
+ ???
 \end{align}
 $$
