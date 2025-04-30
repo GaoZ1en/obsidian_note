@@ -112,3 +112,15 @@ $$\tag{1.9}
  & =-\delta(t-t')+\lambda ^{2} \frac{\partial^{2}}{\partial t\partial t'}G(t,t')
 \end{align}
 $$
+
+---
+
+or we should not integrate out $\displaystyle{\phi}$ first.
+
+$$\tag{1.7'}
+\begin{align}
+Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi \exp\left( i \int _{-\infty}^{+\infty}\mathrm{d}t(L[xe^{-i\alpha},\phi e^{-i\beta}]+Jxe^{-i\alpha}+\eta \phi e^{-i\beta}) \right) \\
+ & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{-i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{-i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}+Jxe^{-i\alpha}+\eta \phi e^{-i\beta}\right)\right) \\
+ & =\int \mathcal{D}x\mathcal{D}\phi
+\end{align}
+$$
