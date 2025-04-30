@@ -103,12 +103,14 @@ $$
 $$\tag{1.10}
 \begin{align}
 \braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & =\theta(t-t') \braket{ 0|\phi(t)\phi(t')|0 }+\theta(t'-t) \braket{ 0|\phi(t')\phi(t)|0 } \\
- & =-\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})|0 } \\
- & -\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})|0 } \\
- & =-\frac{\lambda ^{2}\omega}{2m'}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')}) \\
- & =-\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0}\frac{e^{ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\frac{ \omega\lambda ^{2}}{\pi m'}\delta(t-t')
+ & =\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})|0 } \\
+ & +\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})|0 } \\
+ & =\frac{\lambda ^{2}\omega}{2m'}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')}) \\
+ & =\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0}\frac{e^{ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\frac{ \omega\lambda ^{2}}{\pi m'}\delta(t-t')
 \end{align}
 $$
+
+there may be some error in the signal, but the coefficient is correct.
 
 we get a contact term again. and finally
 
