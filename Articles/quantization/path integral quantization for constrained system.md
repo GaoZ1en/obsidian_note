@@ -119,8 +119,32 @@ or we should not integrate out $\displaystyle{\phi}$ first????
 
 $$\tag{1.7}
 \begin{align}
-Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi \exp\left( i \int _{-\infty}^{+\infty}\mathrm{d}t(L[xe^{-i\alpha},\phi e^{-i\beta}]+Jxe^{-i\alpha}+\eta \phi e^{-i\beta}) \right) \\
- & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{-i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{-i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}+Jxe^{-i\alpha}+\eta \phi e^{-i\beta}\right)\right) \\
- ???
+Z[J_{x},J_{\phi}] & =\int \mathcal{D}x\mathcal{D}\phi \exp\left( i \int _{-\infty}^{+\infty}\mathrm{d}t(L[x,\phi]+J_{x}x+J_{\phi} \phi) \right) \\
+ & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left( -\frac{1}{2}X DX^{T}+XJ^{T} \right)\right) \\
+ & =\exp\left[-\frac{1}{2}\int _{-\infty}^{+\infty}\mathrm{d}t\mathrm{d}t'J(t)D^{-1}(t,t')J^{T}(t')\right] \\
+X & =\begin{pmatrix}x & \phi\end{pmatrix} \\
+J & =\begin{pmatrix}J_{x} & J_{\phi}\end{pmatrix} \\
+D & =\begin{pmatrix}m\frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k & \lambda\frac{\mathrm{d}}{\mathrm{d}t} \\\lambda\frac{\mathrm{d}}{\mathrm{d}t} & -1\end{pmatrix}
+\end{align}
+$$
+
+and $\displaystyle{D^{-1}(t,t')}$ satisfies
+
+$$\tag{1.8}
+\begin{align}
+iD(t)D^{-1}(t,t') & =\delta(t-t')\mathbb{1}_{2\times2} \\
+\implies D^{-1}(t,t') & =-\int \frac{\mathrm{d}p_{0}}{2\pi m'} \frac{i}{p_{0}^{2}-\omega ^{2}+i\varepsilon}e^{-ip_{0}(t-t')} \begin{pmatrix}
+1 & i\lambda \omega \\
+-i\lambda \omega & mp_{0}^{2}-k
+\end{pmatrix}
+\end{align}
+$$
+
+then
+
+$$\tag{1.9}
+\begin{align}
+\braket{ 0|\mathcal{T}x(t)x(t')|0 } & =-\frac{\delta ^{2}\log Z[J]}{\delta J_{x}(t)\delta J_{x}(t')}\Big|_{J=0} \\
+ & =D^{-1}(t,t')_{xx}= -\frac{1}{2\pi im'} \int \mathrm{d}p_{0} e^{-ip_{0}}
 \end{align}
 $$
