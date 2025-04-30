@@ -30,7 +30,19 @@ $$
 
 here we choose $\displaystyle{x_{n}=x_{f},x_{0}=x_{i}}$, and $\displaystyle{0<\beta\leqslant \frac{\pi}{2}}$ plays the same rule as $\displaystyle{\alpha}$. 
 
-then consider the time ordered correlation function
+then consider the time ordered correlation function (assuming $\displaystyle{t_{i}< t'<t<t_{f}}$)
+
+$$\tag{1.4}
+\begin{align}
+ & ~~~~~\braket{ x_{f}|e^{-iHt_{f}e^{-i\alpha}}\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})e^{iHt_{i}e^{-i\alpha}}|x_{i} } \\
+ & =\braket{ x_{f}|e^{-iHt_{f}e^{-i\alpha}}x(te^{-i\alpha})x(t'e^{-i\alpha})e^{iHt_{i}e^{-i\alpha}}|x_{i} }   \\
+ & =\braket{ x_{f}|e^{-iH(t_{f}-t)e^{-i\alpha}}xe^{-iH(t-t')e^{-i\alpha}}xe^{-iH(t'-t_{i})e^{-i\alpha}}|x_{i} } \\
+ & =\int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i} \braket{ x_{f}|e^{-iH(t_{f}-t)e^{-i\alpha}/n}|x_{3n-1} }\dots\braket{x_{2n}|x|x_{2n}}\braket{x_{2n}|e^{-iH(t-t')e^{-i\alpha}/n}|x_{2n-1} }\dots\braket{ x_{n}|x|x_{n} }\braket{x_{n}|e^{-iH(t'-t_{i})e^{-i\alpha}/n}|x_{n-1}  }\dots\braket{x_{1}|e^{-iH(t'-t_{i})e^{-i\alpha}/n}|x_{i}  }  \\
+ & =\int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i} \prod ^{3n}_{j=1}\mathrm{d}p_{i}x_{2n}x_{n}\braket{ x_{f}|e^{-iH\Delta t_{1}e^{-i\alpha}}|p_{3n} }\braket{ p_{3n}|x_{3n-1} }\dots   \braket{ x_{2n+1}|e^{-iH\Delta t_{1}}|p_{2n+1} }\braket{p_{2n+1}|x_{2n}  } \\
+ & \cdot \braket{ x_{2n}|e^{-iH\Delta t_{2}e^{-i\alpha}}|p_{2n} }\braket{ p_{2n}|x_{2n-1} }\dots\braket{ x_{n+1}|e^{-iH\Delta t_{2}}|p_{n+1} }\braket{ p_{n+1}|x_{n} }\cdot \braket{x_{n}|e^{-iH\Delta t_{3}e^{-i\alpha}}|p_{n} }\braket{ p_{n}|x_{n-1} } \dots\braket{ x_{1}|e^{-iH\Delta t_{3}e^{-i\alpha}}|p_{1} }\braket{ p_{1}|x_{i} } \\
+ & =
+\end{align}
+$$
 
 $$\tag{1.4}
 \begin{align}
