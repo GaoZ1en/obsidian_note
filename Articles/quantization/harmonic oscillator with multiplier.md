@@ -218,3 +218,18 @@ $$\tag{2.9}
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi e^{i \int _{-\infty}^{+\infty}\mathrm{d}t (L[x,\phi]+Jx+\eta \phi)} \\
+ & =\int \mathcal{D}x\mathcal{D}\phi \exp \left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}+Jx+\eta \phi\right)\right) \\
+ & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m'\dot{x}^{2}-\frac{1}{2}kx^{2}+Jx+\frac{1}{2}(\phi-\lambda \dot{x})^{2}+\eta \phi\right)\right)
+\end{align}
+$$
+
+define 
+
+$$\tag{.}
+\begin{align}
+
+\end{align}
+$$

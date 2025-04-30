@@ -47,11 +47,12 @@ $$\tag{1.5}
 \end{align}
 $$
 
-by taking $\displaystyle{t_{f}\to+\infty, t_{i}\to-\infty}$, we get the vacuum correlation function (Gel-Mann-Low theorem)
+by taking $\displaystyle{t_{f}\to+\infty, t_{i}\to-\infty}$, we get the vacuum correlation function (Gell-Mann-Low theorem)
 
 $$\tag{1.6}
 \begin{align}
-\frac{\braket{ 0|T(x(te^{-i\alpha})x(t'e^{-i\alpha})|0 }}{\braket{ 0|0 } }  & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi x(t)x(t') \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{-i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{-i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{-i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{-i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}
+\frac{\braket{ 0|T(x(te^{-i\alpha})x(t'e^{-i\alpha})|0 }}{\braket{ 0|0 } }  & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi x(t)x(t') \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{-i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{-i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{-i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{-i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}} \\
+
 \end{align}
 $$
 
@@ -65,6 +66,9 @@ $$
 
 $$\tag{1.8}
 \begin{align}
-\braket{ 0| } 
+\frac{\braket{ 0|\mathcal{T}\phi(te^{-i\beta})\phi(t'e^{-i\beta})|0 }}{\braket{ 0|0 } } & =\frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \phi(t)\phi(t') \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{-i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{-i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{-i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{-i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}
 \end{align}
 $$
+
+how to compute this?
+
