@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+                "file": "Articles/quantization/path integral quantization for constrained system.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "canonical quantization of Proca field in CPS formalism (formal calculation)"
+              "title": "path integral quantization for constrained system"
             }
           }
         ]
@@ -52,7 +52,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -121,16 +122,16 @@
   },
   "active": "10bca92dbd86769f",
   "lastOpenFiles": [
+    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+    "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/first example.md",
     "Articles/quantization/examples.md",
     "Articles/quantization/harmonic oscillator with multiplier.md",
     "Articles/quantization/quantization of gauged system.md",
-    "Articles/quantization/Untitled.md",
     "Articles/quantization/systems with gauge symmetry.md",
     "Group meeting/week 17.md",
     "TODO.md",
-    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Attachments/Pasted image 20250425232210.png",
     "Attachments/Pasted image 20250417145002.png",
     "Attachments/微信图片_20250414131423_29.jpg",
