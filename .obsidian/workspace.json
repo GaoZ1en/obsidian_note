@@ -8,33 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4b24ea228a5e6f26",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Group meeting/week 17.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "week 17"
-            }
-          },
-          {
             "id": "10bca92dbd86769f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+                "file": "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "canonical quantization of scalar and Proca vector in CPS formalism"
+              "title": "canonical quantization of Proca field in CPS formalism (formal calculation)"
             }
           }
         ]
@@ -134,15 +119,18 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4b24ea228a5e6f26",
+  "active": "10bca92dbd86769f",
   "lastOpenFiles": [
-    "Articles/quantization/Untitled.md",
-    "Group meeting/week 17.md",
-    "Articles/quantization/harmonic oscillator with multiplier.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
-    "TODO.md",
-    "Articles/quantization/canonical quantization of Proca field in CPS formalism.md",
     "Articles/quantization/first example.md",
+    "Articles/quantization/examples.md",
+    "Articles/quantization/harmonic oscillator with multiplier.md",
+    "Articles/quantization/quantization of gauged system.md",
+    "Articles/quantization/Untitled.md",
+    "Articles/quantization/systems with gauge symmetry.md",
+    "Group meeting/week 17.md",
+    "TODO.md",
+    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Attachments/Pasted image 20250425232210.png",
     "Attachments/Pasted image 20250417145002.png",
     "Attachments/微信图片_20250414131423_29.jpg",
@@ -152,10 +140,7 @@
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/discussion for Poisson bracket.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/covariant phase space with boundaries.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
-    "Articles/quantization/examples.md",
     "Articles/some generalization CPS/harmonic oscillator.md",
-    "Articles/quantization/systems with gauge symmetry.md",
-    "Articles/quantization/quantization of gauged system.md",
     "Articles/quantization",
     "Lecture/2025.4 JT gravity/prelecture2&3 learning.md",
     "Group meeting/week 16.md",
