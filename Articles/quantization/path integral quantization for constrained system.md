@@ -76,11 +76,44 @@ $$\tag{1.7}
 \begin{align}
 Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi \exp\left( i \int _{-\infty}^{+\infty}\mathrm{d}t(L[xe^{-i\alpha},\phi e^{-i\beta}]+Jxe^{-i\alpha}+\eta \phi e^{-i\beta}) \right) \\
  & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{-i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{-i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}+Jxe^{-i\alpha}+\eta \phi e^{-i\beta}\right)\right) \\
- & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t \left(-\frac{1}{2}\phi\left( m' \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k \right)\phi e^{-i\alpha}+Jxe^{-i\alpha}+\frac{1}{2}(\phi -\lambda \dot{x})^{2}+\eta \phi e^{-i\beta}\right)\right)
+ & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t \left(-\frac{1}{2}\dot{x}\left( m' \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k \right)\dot{x} e^{-i\alpha}+Jxe^{-i\alpha}+\frac{1}{2}(\phi e^{-i\beta/2} +(\lambda e^{-i\beta/2}-\lambda \dot{x}e^{-i\alpha/2}))^{2}-\frac{1}{2}\eta ^{2} e^{-i\beta}+\lambda \eta \dot{x}e^{-i(\alpha+\beta)/2}\right)\right) \\
+ & =\exp\left(-\frac{i}{2}\int ^{+\infty}_{-\infty}\mathrm{d}t\mathrm{d}t'J(t)G(t,t')J(t')\right)\exp\left(-\frac{i}{2}\int _{-\infty}^{+\infty}\mathrm{d}t\eta ^{2}e^{-i\beta}\right)
 \end{align}
 $$
 
+where $\displaystyle{G(t,t')}$ satisfies
+
+$$\tag{1.8}
+\begin{align}
+\left( m' \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k -i\varepsilon\right)G(t,t')=\delta(t-t')\implies G(t,t')\approx \int _{-\infty}^{+\infty} \frac{\mathrm{d}p_{0}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}e^{-ip_{0}(t-t')}
+\end{align}
+$$
+
+then
+
+$$\tag{1.8}
+\begin{align}
+W[J,\eta] & =-i\ln Z[J,\eta] \\
+ & =-\frac{1}{2}\int _{-\infty}^{+\infty}\mathrm{d}t\eta ^{2}-\frac{1}{2}\int ^{+\infty}_{-\infty}\mathrm{d}t\mathrm{d}t'J(t)G(t,t')J(t')
+\end{align}
+$$
+
+then
+
+$$\tag{1.9}
+\begin{align}
+\frac{\braket{ 0|\mathcal{T}x(t)\phi(t')|0 }}{\braket{ 0|0 } }  & = \frac{\delta ^{2}W[J,\eta]}{\delta iJ(t)\delta iJ(t')}\Big|_{J=0,\eta=0} \\
+ & = G(t,t') \\
+\frac{\braket{ 0|\mathcal{T}x(t)\phi(t')|0 }}{\braket{ 0|0 } } & = \frac{\delta ^{2}W[J,\eta]}{\delta iJ(t)\delta i\eta(t')}\Big|_{J=0,\eta=0} \\
+ & = 
+\end{align}
+$$
+
+
+
 similarly, we have
+
+
 
 $$\tag{1.7}
 \begin{align}
