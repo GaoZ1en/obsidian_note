@@ -76,10 +76,10 @@ introduce
 
 $$\tag{1.7}
 \begin{align}
-Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi \exp\left( i \int _{-\infty}^{+\infty}\mathrm{d}t(L[xe^{-i\alpha},\phi e^{-i\beta}]+Jx+\eta \phi) \right) \\
- & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}+Jxe^{-i\alpha}+\eta \phi e^{-i\beta}\right)\right) \\
- & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t \left(-\frac{1}{2}\dot{x}\left( m' \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k \right)\dot{x} e^{-i\alpha}+Jxe^{-i\alpha}+\frac{1}{2}(\phi e^{-i\beta/2} +(\lambda e^{-i\beta/2}-\lambda \dot{x}e^{-i\alpha/2}))^{2}-\frac{1}{2}\eta ^{2} e^{-i\beta}+\lambda \eta \dot{x}e^{-i(\alpha+\beta)/2}\right)\right) \\
- & =\exp\left(\frac{i}{2}\int ^{+\infty}_{-\infty}\mathrm{d}t\mathrm{d}t'(J-\lambda \dot{\eta})(t)G(t,t')(J-\lambda \dot{\eta})(t')\right)\exp\left(-\frac{i}{2}\int _{-\infty}^{+\infty}\mathrm{d}t\eta ^{2}e^{-i\beta}\right)
+Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi \exp\left( i \int _{-\infty}^{+\infty}\mathrm{d}t(L[x,\phi]+Jx+\eta \phi) \right) \\
+ & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi +\frac{1}{2}\phi ^{2}+Jx+\eta \phi\right)\right) \\
+ & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t \left(-\frac{1}{2}\dot{x}\left( m' \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k \right)\dot{x}+Jx+\frac{1}{2}(\phi +(\eta-\lambda \dot{x}))^{2}-\frac{1}{2}\eta ^{2}+\lambda \eta \dot{x}\right)\right) \\
+ & =\exp\left(-\frac{1}{2}\int ^{+\infty}_{-\infty}\mathrm{d}t\mathrm{d}t'(J-\lambda \dot{\eta})(t)G(t,t')(J-\lambda \dot{\eta})(t')\right)\exp\left(-\frac{i}{2}\int _{-\infty}^{+\infty}\mathrm{d}t\eta ^{2}\right)
 \end{align}
 $$
 
@@ -87,16 +87,7 @@ where $\displaystyle{G(t,t')}$ satisfies
 
 $$\tag{1.8}
 \begin{align}
-\left( m' \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k -i\varepsilon\right)G(t,t')=\delta(t-t')\implies G(t,t')\approx \int _{-\infty}^{+\infty} \frac{\mathrm{d}p_{0}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}e^{-ip_{0}(t-t')}
-\end{align}
-$$
-
-then
-
-$$\tag{1.8}
-\begin{align}
-W[J,\eta] & =-i\ln Z[J,\eta] \\
- & =-\frac{1}{2}\int _{-\infty}^{+\infty}\mathrm{d}t\eta ^{2}+\frac{1}{2}\int ^{+\infty}_{-\infty}\mathrm{d}t\mathrm{d}t'(J-\lambda \dot{\eta})(t)G(t,t')(J-\lambda \dot{\eta})(t')
+\left( m' \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k -i\varepsilon\right)G(t,t')=\delta(t-t')\implies G(t,t')=-\frac{1}{2\pi im'} \int _{-\infty}^{+\infty} \frac{\mathrm{d}p_{0}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}e^{-ip_{0}(t-t')}
 \end{align}
 $$
 
@@ -104,12 +95,13 @@ then
 
 $$\tag{1.9}
 \begin{align}
-\frac{\braket{ 0|\mathcal{T}x(t)\phi(t')|0 }}{\braket{ 0|0 } } & = \frac{\delta ^{2}W[J,\eta]}{\delta J(t)\delta J(t')}\Big|_{J=0,\eta=0} \\
+\frac{\braket{ 0|\mathcal{T}x(t)\phi(t')|0 }}{\braket{ 0|0 } } & = -\frac{\delta ^{2}\log Z[J,\eta]}{\delta J(t)\delta J(t')}\Big|_{J=0,\eta=0} \\
  & = G(t,t') \\
-\frac{\braket{ 0|\mathcal{T}x(t)\phi(t')|0 }}{\braket{ 0|0 } } & = \frac{\delta ^{2}W[J,\eta]}{\delta J(t)\delta \eta(t')}\Big|_{J=0,\eta=0} \\
- & =\lambda\frac{\partial}{\partial t}G(t,t') \\
-\frac{\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 }}{\braket{ 0|0 } } & = \frac{\delta ^{2}W[J,\eta]}{\delta \eta(t)\delta \eta(t')}\Big|_{J=0,\eta=0} \\
- & =-\delta(t-t')+\lambda ^{2} \frac{\partial^{2}}{\partial t\partial t'}G(t,t')
+\frac{\braket{ 0|\mathcal{T}x(t)\phi(t')|0 }}{\braket{ 0|0 } } & = -\frac{\delta ^{2}\log Z[J,\eta]}{\delta J(t)\delta \eta(t')}\Big|_{J=0,\eta=0} \\
+ & =-\lambda \partial _{t}G(t,t') \\
+\frac{\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 }}{\braket{ 0|0 } } & = -\frac{\delta ^{2}\log Z[J,\eta]}{\delta \eta(t)\delta \eta(t')}\Big|_{J=0,\eta=0} \\
+ & =-\delta(t-t')+\lambda ^{2} \frac{\partial^{2}}{\partial t\partial t'}G(t,t') \\
+ & =-\delta(t-t')-\lambda ^{2} \partial _{t}^{2}G(t,t')
 \end{align}
 $$
 
@@ -148,8 +140,15 @@ $$\tag{1.9}
  & =D^{-1}(t,t')_{xx}= -\frac{1}{2\pi im'} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} \\
 \braket{ 0|\mathcal{T}x(t)\phi(t')|0 } & = -\frac{\delta ^{2}\log Z[J]}{\delta J_{x}(t)\delta J_{\phi}(t')}\Big|_{J=0} \\
  & =D^{-1}(t,t')_{x\phi}=- \frac{1}{2\pi im'} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} i\lambda p_{0} \\
- & =\frac{\lambda}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} \\
+ & =\frac{\lambda}{2\pi im'} \partial _{t}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} \\
 \braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & =-\frac{\delta ^{2}\log Z[J]}{\delta J_{\phi}(t)\delta J_{\phi}(t')}\Big|_{J=0} \\
  & =D^{-1}(t,t')_{\phi \phi}=-\frac{1}{2\pi im'}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}(mp_{0}^{2}-k)
+\end{align}
+$$
+
+$$\tag{1.10}
+\begin{align}
+-\frac{1}{2\pi im'} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}(m'p_{0}^{2}+\lambda ^{2}p_{0}^{2}-m'\omega ^{2}) & =\frac{\lambda ^{2}}{2\pi im'}\partial _{t}^{2} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\frac{1}{2\pi i} \int \mathrm{d}p_{0} \frac{(p_{0}^{2}-\omega ^{2})e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} \\
+ & =\frac{\lambda ^{2}}{2\pi im'}\partial _{t}^{2}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\delta(t-t')
 \end{align}
 $$
