@@ -106,7 +106,7 @@ $$\tag{1.10}
  & =\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})|0 } \\
  & +\frac{\lambda ^{2}\omega}{2m'}\theta(t-t')\braket{ 0|(e^{-i\omega t'}a-e^{i \omega t'}a^{\dagger})(e^{-i\omega t}a-e^{i \omega t}a^{\dagger})|0 } \\
  & =\frac{\lambda ^{2}\omega}{2m'}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')}) \\
- & =\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0}\frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\frac{ \omega\lambda ^{2}}{\pi m'}\delta(t-t')
+ & =\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0}\frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\frac{i \lambda ^{2}}{m'}\delta(t-t')
 \end{align}
 $$
 
@@ -116,7 +116,7 @@ $$\tag{1.11}
  & =\frac{\lambda ^{2}}{m'} -\frac{1}{2\omega}(\theta(t-t') \partial _{t}^{2}e^{-i\omega(t-t')}+\theta(t'-t)\partial _{t}^{2}e^{i\omega(t-t')}) \\
  & =\frac{\lambda ^{2}}{m'} -\frac{1}{2\omega}[\partial _{t}^{2}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')})-(\partial _{t}\theta(t-t'))\partial _{t}e^{-i \omega(t-t')}+\partial _{t}\theta(t'-t)e^{i \omega(t-t')})] \\
  & =\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}+\frac{\lambda ^{2}}{2m'\omega} (-i \omega\delta(t-t')e^{-i\omega(t-t')}-i \omega \delta(t'-t)e^{i \omega(t-t')}) \\
- & =\frac{\lambda ^{2}}{2\pi im'}\partial _{t}^{2} \int \mathrm{d}p_{0} e^{-ipj}
+ & =\frac{\lambda ^{2}}{2\pi im'}\partial _{t}^{2} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\frac{i\lambda ^{2}}{m'}\delta(t-t') \\
 \end{align}
 $$
 

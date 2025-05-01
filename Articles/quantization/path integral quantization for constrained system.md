@@ -142,13 +142,15 @@ $$\tag{1.9}
  & =D^{-1}(t,t')_{x\phi}=- \frac{1}{2\pi im'} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} i\lambda p_{0} \\
  & =\frac{\lambda}{2\pi im'} \partial _{t}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} \\
 \braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & =-\frac{\delta ^{2}\log Z[J]}{\delta J_{\phi}(t)\delta J_{\phi}(t')}\Big|_{J=0} \\
- & =D^{-1}(t,t')_{\phi \phi}=-\frac{1}{2\pi im'}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}(mp_{0}^{2}-k)
+ & =D^{-1}(t,t')_{\phi \phi}=-\frac{1}{2\pi im'}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}(mp_{0}^{2}-k) \\
+ & =\frac{\lambda ^{2}}{2\pi im'}\partial _{t}^{2} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\delta(t-t')
 \end{align}
 $$
 
+in canonical formalism, we have
+
 $$\tag{1.10}
 \begin{align}
--\frac{1}{2\pi im'} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}(m'p_{0}^{2}+\lambda ^{2}p_{0}^{2}-m'\omega ^{2}) & =\frac{\lambda ^{2}}{2\pi im'}\partial _{t}^{2} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\frac{1}{2\pi i} \int \mathrm{d}p_{0} \frac{(p_{0}^{2}-\omega ^{2})e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} \\
- & =\frac{\lambda ^{2}}{2\pi im'}\partial _{t}^{2}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\delta(t-t')
+\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & =\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0}\frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\frac{i \lambda ^{2}}{m'}\delta(t-t')
 \end{align}
 $$
