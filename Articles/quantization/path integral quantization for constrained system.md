@@ -37,12 +37,15 @@ $$\tag{1.4}
  & ~~~~~\braket{ x_{f}|e^{-iHt_{f}e^{-i\alpha}}\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})e^{iHt_{i}e^{-i\alpha}}|x_{i} } \\
  & =\braket{ x_{f}|e^{-iHt_{f}e^{-i\alpha}}x(te^{-i\alpha})x(t'e^{-i\alpha})e^{iHt_{i}e^{-i\alpha}}|x_{i} }   \\
  & =\braket{ x_{f}|e^{-iH(t_{f}-t)e^{-i\alpha}}xe^{-iH(t-t')e^{-i\alpha}}xe^{-iH(t'-t_{i})e^{-i\alpha}}|x_{i} } \\
- & =\int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i} \braket{ x_{f}|e^{-iH(t_{f}-t)e^{-i\alpha}/n}|x_{3n-1} }\dots\braket{x_{2n}|x|x_{2n}}\braket{x_{2n}|e^{-iH(t-t')e^{-i\alpha}/n}|x_{2n-1} }\dots\braket{ x_{n}|x|x_{n} }\braket{x_{n}|e^{-iH(t'-t_{i})e^{-i\alpha}/n}|x_{n-1}  }\dots\braket{x_{1}|e^{-iH(t'-t_{i})e^{-i\alpha}/n}|x_{i}  }  \\
+ & =\int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i} \braket{ x_{f}|e^{-iH(t_{f}-t)e^{-i\alpha}/n}|x_{3n-1} }\dots\braket{x_{2n}|x|x_{2n}}\braket{x_{2n}|e^{-iH(t-t')e^{-i\alpha}/n}|x_{2n-1} }\dots\braket{ x_{n}|x|x_{n} } \\
+ & \braket{x_{n}|e^{-iH(t'-t_{i})e^{-i\alpha}/n}|x_{n-1}  }\dots\braket{x_{1}|e^{-iH(t'-t_{i})e^{-i\alpha}/n}|x_{i}  }  \\
  & =\int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i} \prod ^{3n}_{j=1} \frac{\mathrm{d}p_{i}}{2\pi}x_{2n}x_{n}\braket{ x_{f}|e^{-iH\Delta t_{3}e^{-i\alpha}}|p_{3n} }\braket{ p_{3n}|x_{3n-1} }\dots   \braket{ x_{2n+1}|e^{-iH\Delta t_{3}}|p_{2n+1} }\braket{p_{2n+1}|x_{2n}  } \\
- & \cdot \braket{ x_{2n}|e^{-iH\Delta t_{2}e^{-i\alpha}}|p_{2n} }\braket{ p_{2n}|x_{2n-1} }\dots\braket{ x_{n+1}|e^{-iH\Delta t_{2}}|p_{n+1} }\braket{ p_{n+1}|x_{n} }\cdot \braket{x_{n}|e^{-iH\Delta t_{1}e^{-i\alpha}}|p_{n} }\braket{ p_{n}|x_{n-1} } \dots\braket{ x_{1}|e^{-iH\Delta t_{1}e^{-i\alpha}}|p_{1} }\braket{ p_{1}|x_{i} } \\
+ & \cdot \braket{ x_{2n}|e^{-iH\Delta t_{2}e^{-i\alpha}}|p_{2n} }\braket{ p_{2n}|x_{2n-1} }\dots\braket{ x_{n+1}|e^{-iH\Delta t_{2}}|p_{n+1} }\braket{ p_{n+1}|x_{n} } \\
+ & \cdot \braket{x_{n}|e^{-iH\Delta t_{1}e^{-i\alpha}}|p_{n} }\braket{ p_{n}|x_{n-1} } \dots\braket{ x_{1}|e^{-iH\Delta t_{1}e^{-i\alpha}}|p_{1} }\braket{ p_{1}|x_{i} } \\
  & =\int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i}\prod ^{3n}_{j=1} \frac{\mathrm{d}p_{i}}{2\pi}x_{2n}x_{n}\exp\left(i\sum ^{3n}_{i=1}p_{i}(x_{i}-x_{i-1})-i\sum _{j=1}^{3}\sum ^{jn}_{i=(j-1)n+1} \frac{p_{i}^{2}}{2m'}\Delta t_{j}e^{-i\alpha}-i\sum ^{3}_{j=1}\sum ^{jn}_{i=(j-1)n+1} \frac{1}{2}kx_{i}^{2}\Delta t_{j}e^{-i\alpha}\right) \\
  & =\prod ^{3}_{i=1}\left(\frac{m'}{2\pi i\Delta t_{i}e^{-i\alpha}}\right)^{n/2} \int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i}x_{2n}x_{n}\exp\left(i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}m' \left( \frac{x_{i}-x_{i-1}}{\Delta t_{j}} \right)^{2}\Delta t_{j}e^{-i\alpha}-i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}kx_{i}^{2}\Delta t_{j}e^{-i\alpha}\right) \\
- & =\prod ^{3}_{i=1}\left(\frac{m'}{2\pi i\Delta t_{i}e^{-i\alpha}}\right)^{n/2} \int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i}\prod ^{3n}_{j=1}\mathrm{d}\phi _{j}x_{2n}x_{n}\exp\left(i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}m \left( \frac{x_{j}-x_{j-1}}{\Delta t_{i}} \right)^{2}\Delta t_{i}e^{i\alpha}-i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}kx_{j}^{2}\Delta t_{i}e^{-i\alpha}-i\lambda \sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1}\phi _{j} \frac{x_{j}-x_{j-1}}{\Delta t_{i}}\Delta t_{i}e^{i(\alpha+\beta)/2}+i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}\phi _{j}^{2}\Delta t_{i}e^{i\beta}\right) \\
+ & =\prod ^{3}_{i=1}\left(\frac{m'}{2\pi i\Delta t_{i}e^{-i\alpha}}\right)^{n/2} \int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i}\prod ^{3n}_{j=1}\mathrm{d}\phi _{j}x_{2n}x_{n}\exp\left(i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}m \left( \frac{x_{j}-x_{j-1}}{\Delta t_{i}} \right)^{2}\Delta t_{i}e^{i\alpha}\right. \\
+ & \left.-i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}kx_{j}^{2}\Delta t_{i}e^{-i\alpha}-i\lambda \sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1}\phi _{j} \frac{x_{j}-x_{j-1}}{\Delta t_{i}}\Delta t_{i}e^{i(\alpha+\beta)/2}+i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}\phi _{j}^{2}\Delta t_{i}e^{i\beta}\right) \\
  & =\mathcal{N}\int [\mathcal{D}x\mathcal{D}\phi]_{x_{f}=x(t_{f}),x_{i}=x(t_{i})} x(t)x(t') \exp\left(i \int _{t_{i}}^{t_{f}}\mathrm{d}t L[x,\phi]\right)
 \end{align}
 $$
@@ -154,3 +157,8 @@ $$\tag{1.10}
 \braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & =\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0}\frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\frac{i \lambda ^{2}}{m'}\delta(t-t')
 \end{align}
 $$
+
+---
+
+keep $\displaystyle{\alpha}$ and $\displaystyle{\beta}$ finite and do the path integral again...
+
