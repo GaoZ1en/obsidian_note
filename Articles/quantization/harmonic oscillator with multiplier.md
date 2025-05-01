@@ -74,7 +74,7 @@ $$\tag{1.8}
  & = \theta(t-t') \frac{1}{2m'\omega} \braket{ 0|\left( e^{-i\omega t} a+e^{i \omega t}a^{\dagger} \right)(e^{-i \omega t'}a+e^{i \omega t'}a^{\dagger})|0 } \\
  & +\theta(t'-t) \frac{1}{2m'\omega} \braket{ 0|\left( e^{-i\omega t'} a+e^{i \omega t'}a^{\dagger} \right)(e^{-i \omega t}a+e^{i \omega t}a^{\dagger})|0 } \\
  & = \frac{1}{2m'\omega}(\theta(t-t')  e^{-i\omega(t-t')}+\theta(t'-t)e^{i\omega(t-t')}) \\
- & = -\frac{1}{2\pi im'} \int \mathrm{d}p_{0} \frac{e^{ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}
+ & = -\frac{1}{2\pi im'} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}
 \end{align}
 $$
 
@@ -128,7 +128,7 @@ $$\tag{1.11}
  & =-\frac{i\lambda}{2m'}\theta(t-t')\braket{ 0|\left( e^{-i\omega t} a+e^{i \omega t}a^{\dagger} \right)(e^{-i \omega t'} a+e^{i \omega t'}a^{\dagger})|0 } \\
  & -\frac{i\lambda}{2m'}\theta(t-t')\braket{ 0|\left( e^{-i\omega t'} a-e^{i \omega t'}a^{\dagger} \right)(e^{-i \omega t} a-e^{i \omega t}a^{\dagger})|0 } \\
  & =-\frac{i\lambda}{2m'}(\theta(t-t')e^{-i \omega(t-t')}-\theta(t'-t)e^{i \omega(t-t')}) \\
- & =-\frac{\lambda}{2\pi im'}\partial _{t}\int \mathrm{d}p_{0} \frac{e^{ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} 
+ & =\frac{\lambda}{2\pi im'}\partial _{t}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} 
 \end{align}
 $$
 
