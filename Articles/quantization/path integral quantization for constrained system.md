@@ -22,8 +22,8 @@ $$\tag{1.3}
  & = \int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1} \int \frac{\mathrm{d}p_{1}}{2\pi}\dots \frac{\mathrm{d}p_{n}}{2\pi} \braket{ x_{f}|e^{-iH\Delta te^{-i\alpha}}|p_{n} } \braket{ p_{n}|x_{n-1} }\dots\braket{ x_{1}|e^{-iH\Delta e^{ ^{-i\alpha} }}|p_{1} }\braket{ p_{1}|x_{i} }  \\
  & = \int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\int \frac{\mathrm{d}p_{1}}{2\pi}\dots \frac{\mathrm{d}p_{n}}{2\pi}\exp\left(i\sum ^{n}_{i=1}p_{i}(x_{i}-x_{i-1})-i\sum ^{n}_{i=1} \frac{p_{i}^{2}}{2m'}\Delta te^{-i\alpha}-i\sum ^{n}_{i=1} \frac{1}{2}kx_{i}^{2}\Delta te^{-i\alpha}\right)  \\
  & =\left( \frac{m'}{2\pi i\Delta te^{-i\alpha}} \right)^{n/2} \int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\exp\left(i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}m' \left( \frac{x_{i}-x_{i-1}}{\Delta t}\right)^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}kx_{i}^{2}\right) \\
- & =\left(\frac{m'}{2\pi i\Delta te^{-i\alpha}}\right)^{n/2} \int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\exp\left(i\Delta te^{i\alpha}\sum ^{n}_{i=1} \frac{1}{2}m\left(\frac{x_{i}-x_{i-1}}{\Delta t}\right)^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}kx_{i}^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}\lambda ^{2} \left(\frac{x_{i}-x_{i-1}}{\Delta t}\right)^{2}\right) \\
- & =\left(\frac{m'}{2\pi i\Delta te^{-i\alpha}}\right)^{n/2}\int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\mathrm{d}\phi _{1}\dots \mathrm{d}\phi _{n}\exp\left(i\Delta te^{i\alpha}\sum ^{n}_{t=1} \frac{1}{2}m \left( \frac{x_{i}-x_{i-1}}{\Delta t} \right)^{2}-i\Delta te^{-i(\alpha+\beta)/2}\sum ^{n}_{i=1}\lambda \phi _{i} \frac{x_{i}-x_{i-1}}{\Delta t}+i\Delta te^{-i\beta}\sum ^{n}_{i=1}\phi _{i}^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}kx_{i}^{2}\right) \\
+ & =\left(\frac{m'}{2\pi i\Delta te^{-i\alpha}}\right)^{n/2}\left(\frac{\Delta t}{2\pi ie^{-i\beta}}\right)^{n/2} \int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\exp\left(i\Delta te^{i\alpha}\sum ^{n}_{i=1} \frac{1}{2}m\left(\frac{x_{i}-x_{i-1}}{\Delta t}\right)^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}kx_{i}^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}\lambda ^{2} \left(\frac{x_{i}-x_{i-1}}{\Delta t}\right)^{2}\right) \\
+ & =\left(\frac{m'}{2\pi i\Delta te^{-i\alpha}}\right)^{n/2}\left(\frac{\Delta t}{2\pi ie^{-i\beta}}\right)^{n/2}\int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\mathrm{d}\phi _{1}\dots \mathrm{d}\phi _{n}\exp\left(i\Delta te^{i\alpha}\sum ^{n}_{t=1} \frac{1}{2}m \left( \frac{x_{i}-x_{i-1}}{\Delta t} \right)^{2}-i\Delta te^{-i(\alpha+\beta)/2}\sum ^{n}_{i=1}\lambda \phi _{i} \frac{x_{i}-x_{i-1}}{\Delta t}+i\Delta te^{-i\beta}\sum ^{n}_{i=1}\phi _{i}^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}kx_{i}^{2}\right) \\
  & =\mathcal{N}\int [\mathcal{D}x\mathcal{D}\phi]_{x(t_{i})=x_{i},x(t_{f})=x_{f}} \exp\left[i \int _{t_{i}}^{t_{f}} \mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{e\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}-\frac{1}{2}kx^{2}e^{-i\alpha}\right)\right]
 \end{align}
 $$
@@ -43,17 +43,17 @@ $$\tag{1.4}
  & \cdot \braket{ x_{2n}|e^{-iH\Delta t_{2}e^{-i\alpha}}|p_{2n} }\braket{ p_{2n}|x_{2n-1} }\dots\braket{ x_{n+1}|e^{-iH\Delta t_{2}}|p_{n+1} }\braket{ p_{n+1}|x_{n} } \\
  & \cdot \braket{x_{n}|e^{-iH\Delta t_{1}e^{-i\alpha}}|p_{n} }\braket{ p_{n}|x_{n-1} } \dots\braket{ x_{1}|e^{-iH\Delta t_{1}e^{-i\alpha}}|p_{1} }\braket{ p_{1}|x_{i} } \\
  & =\int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i}\prod ^{3n}_{j=1} \frac{\mathrm{d}p_{i}}{2\pi}x_{2n}x_{n}\exp\left(i\sum ^{3n}_{i=1}p_{i}(x_{i}-x_{i-1})-i\sum _{j=1}^{3}\sum ^{jn}_{i=(j-1)n+1} \frac{p_{i}^{2}}{2m'}\Delta t_{j}e^{-i\alpha}-i\sum ^{3}_{j=1}\sum ^{jn}_{i=(j-1)n+1} \frac{1}{2}kx_{i}^{2}\Delta t_{j}e^{-i\alpha}\right) \\
- & =\prod ^{3}_{i=1}\left(\frac{m'}{2\pi i\Delta t_{i}e^{-i\alpha}}\right)^{n/2} \int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i}x_{2n}x_{n}\exp\left(i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}m' \left( \frac{x_{i}-x_{i-1}}{\Delta t_{j}} \right)^{2}\Delta t_{j}e^{-i\alpha}-i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}kx_{i}^{2}\Delta t_{j}e^{-i\alpha}\right) \\
- & =\prod ^{3}_{i=1}\left(\frac{m'}{2\pi i\Delta t_{i}e^{-i\alpha}}\right)^{n/2} \int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i}\prod ^{3n}_{j=1}\mathrm{d}\phi _{j}x_{2n}x_{n}\exp\left(i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}m \left( \frac{x_{j}-x_{j-1}}{\Delta t_{i}} \right)^{2}\Delta t_{i}e^{i\alpha}\right. \\
+ & =\prod ^{3}_{i=1}\left(\frac{m'}{2\pi i\Delta t_{i}e^{-i\alpha}}\right)^{n/2} \int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i}x_{2n}x_{n}\exp\left(i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}m' \left( \frac{x_{i}-x_{i-1}}{\Delta t_{j}} \right)^{2}\Delta t_{j}e^{i\alpha}-i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}kx_{i}^{2}\Delta t_{j}e^{-i\alpha}\right) \\
+ & =\prod ^{3}_{i=1}\left(\frac{m'}{2\pi i\Delta t_{i}e^{-i\alpha}}\right)^{n/2}\left(\frac{\Delta t_{i}}{2\pi ie^{-i\beta}}\right)^{n/2} \int \prod ^{3n-1}_{i=1}\mathrm{d}x_{i}\prod ^{3n}_{j=1}\mathrm{d}\phi _{j}x_{2n}x_{n}\exp\left(i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}m \left( \frac{x_{j}-x_{j-1}}{\Delta t_{i}} \right)^{2}\Delta t_{i}e^{i\alpha}\right. \\
  & \left.-i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}kx_{j}^{2}\Delta t_{i}e^{-i\alpha}-i\lambda \sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1}\phi _{j} \frac{x_{j}-x_{j-1}}{\Delta t_{i}}\Delta t_{i}e^{i(\alpha+\beta)/2}+i\sum ^{3}_{i=1}\sum ^{in}_{j=(i-1)n+1} \frac{1}{2}\phi _{j}^{2}\Delta t_{i}e^{i\beta}\right) \\
- & =\mathcal{N}\int [\mathcal{D}x\mathcal{D}\phi]_{x_{f}=x(t_{f}),x_{i}=x(t_{i})} x(t)x(t') \exp\left(i \int _{t_{i}}^{t_{f}}\mathrm{d}t L[x,\phi]\right)
+ & =\mathcal{N}\int [\mathcal{D}x\mathcal{D}\phi]_{x_{f}=x(t_{f}),x_{i}=x(t_{i})} x(t)x(t') \exp\left(i \int _{t_{i}}^{t_{f}}\mathrm{d}t \left(\frac{1}{2}m \dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \phi \dot{x}e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)
 \end{align}
 $$
 
 $$\tag{1.4}
 \begin{align}
  & ~~~~~\braket{ x_{f}|e^{-iHt_{f}e^{-i\alpha}}\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})e^{iHt_{i}e^{-i\alpha}}|x_{i} } \\
- & =\mathcal{N}\int [\mathcal{D}x\mathcal{\phi}]_{x(t_{i})=x_{i},x(t_{f})=x_{f}} x(t)x(t')\exp\left[i \int _{t_{i}}^{t_{f}}\mathrm{d}t\left( \frac{1}{2}m\dot{x}^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{-i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}-\frac{1}{2}kx^{2}e^{-i\alpha}\right)\right]
+ & =\mathcal{N}\int [\mathcal{D}x\mathcal{\phi}]_{x(t_{i})=x_{i},x(t_{f})=x_{f}} x(t)x(t')\exp\left[i \int _{t_{i}}^{t_{f}}\mathrm{d}t\left( \frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}-\frac{1}{2}kx^{2}e^{-i\alpha}\right)\right]
 \end{align}
 $$
 
@@ -69,7 +69,7 @@ by taking $\displaystyle{t_{f}\to+\infty, t_{i}\to-\infty}$, we get the vacuum c
 
 $$\tag{1.6}
 \begin{align}
-\frac{\braket{ 0|\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})|0 }}{\braket{ 0|0 } }  & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi x(t)x(t') \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{-i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{-i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{-i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{-i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}
+\frac{\braket{ 0|\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})|0 }}{\braket{ 0|0 } }  & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi x(t)x(t') \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}
 \end{align}
 $$
 
@@ -162,3 +162,49 @@ $$
 
 keep $\displaystyle{\alpha}$ and $\displaystyle{\beta}$ finite and do the path integral again...
 
+$$\tag{1.6}
+\begin{align}
+\frac{\braket{ 0|\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})|0 }}{\braket{ 0|0 } }  & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi x(t)x(t') \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}
+\end{align}
+$$
+
+introduce
+
+$$\tag{1.7}
+\begin{align}
+Z[J_{x},J_{\phi}] & = \int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}+J_{x}x+J_{\phi}\phi\right)\right) \\
+ & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(\int _{-\infty}^{+\infty}\mathrm{d}t\left(-\frac{i}{2}XDX^{T}+iJX^{T}\right)\right) \\
+ & =\exp\left(-\frac{1}{2}\int \mathrm{d}t\mathrm{d}t'J(t)D^{-1}(t,t')J^{T}(t')\right)
+\end{align}
+$$
+
+where
+
+$$\tag{1.8}
+\begin{align}
+X & =\begin{pmatrix}x & \phi\end{pmatrix} \\
+D & =\begin{pmatrix}me^{i\alpha} \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+ke^{-i\alpha} & -e^{i(\alpha+\beta)/2}\lambda \frac{\mathrm{d}}{\mathrm{d}t} \\e^{i(\alpha+\beta)/2}\lambda \frac{\mathrm{d}}{\mathrm{d}t} & -e^{-i\beta} \\\end{pmatrix} \\
+J & =\begin{pmatrix}J_{x} & J_{\phi}\end{pmatrix}
+\end{align}
+$$
+
+and $\displaystyle{D^{-1}(t,t')}$ satisfies
+
+$$\tag{1.9}
+\begin{align}
+iDD^{-1}(t,t') & =\delta(t-t')\mathbb{1}_{2\times2} \\
+\implies D^{-1}(t,t') & =
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+-iD^{-1}(p_{0}) & = \begin{pmatrix}
+mp_{0}^{2}e^{i\alpha}-ke^{-i\alpha} & -ie^{i(\alpha+\beta)/2}\lambda p_{0}  \\
+ie^{i(\alpha+\beta)/2}\lambda p_{0} & e^{i\beta}
+\end{pmatrix}^{-1} \\
+ & = \frac{1}{mp_{0}^{2}e^{i(\alpha+\beta)}-ke^{-i(\alpha-\beta)}-}\begin{pmatrix}
+
+\end{pmatrix}\\
+\end{align}
+$$
