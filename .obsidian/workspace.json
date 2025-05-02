@@ -21,15 +21,9 @@
               "icon": "lucide-file",
               "title": "path integral quantization for constrained system"
             }
-          }
-        ]
-      },
-      {
-        "id": "bfedcd8e00b4df70",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "0d4e3e6ddf0174b6",
+            "id": "25129053e8347076",
             "type": "leaf",
             "state": {
               "type": "markdown",

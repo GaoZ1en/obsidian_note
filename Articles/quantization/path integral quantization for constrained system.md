@@ -223,6 +223,65 @@ this section is referred from the Chapter sixteen in the *Quantization of Gauge 
 
 $$\tag{5.1}
 \begin{align}
-L & =\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{}
+L & =\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}
+\end{align}
+$$
+
+$$\tag{5.2}
+\begin{align}
+p_{x} & = \frac{\partial L}{\partial \dot{x}}=m\dot{x}-\lambda \phi \\
+p_{\phi} & = \frac{\partial L}{\partial \dot{\phi}} =0
+\end{align}
+$$
+
+then we get a primary constraint $\displaystyle{\varphi _{1}=p_{\phi}\approx 0}$. the Hamiltonian is
+
+$$\tag{5.3}
+\begin{align}
+H & =p_{x}\dot{x}-L \\
+ & =\frac{p_{x}^{2}}{2m}+\frac{\lambda p_{x}\phi}{m}+\left( \frac{\lambda ^{2}}{2m}-\frac{1}{2} \right)\phi ^{2}+\frac{1}{2}kx^{2}
+\end{align}
+$$
+
+consider the Poisson bracket between $\displaystyle{\varphi _{1}}$ and $\displaystyle{H}$
+
+$$\tag{5.4}
+\begin{align}
+\left\{\varphi _{1},H\right\} & =- \frac{\partial H}{\partial \phi} \\
+ & =-\frac{\lambda p_{x}}{m}-\left( \frac{\lambda ^{2}}{m}-1 \right)\phi
+\end{align}
+$$
+
+then we get a secondary constraint $\displaystyle{\varphi _{2}=-\frac{\lambda p_{x}}{m}-\left(\frac{\lambda ^{2}}{m}-1\right)\phi \approx 0}$, and
+
+$$\tag{5.5}
+\begin{align}
+\left\{\varphi _{1},\varphi _{2}\right\} & =\frac{\lambda ^{2}}{m}-1
+\end{align}
+$$
+
+define (here we do not concern about the overall factor $\displaystyle{\mathcal{N}}$)
+
+$$\tag{5.6}
+\begin{align}
+Z[J_{x},J_{\phi}] & =\mathcal{N}\int \mathcal{D}x\mathcal{D}p_{x}\mathcal{D}\phi \mathcal{D}p_{\phi} \prod ^{2}_{i=1}\delta(\varphi _{i}) \det\left(\left\{\varphi _{i},\varphi _{j}\right\}\right)^{1/2} \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t (p_{x}\dot{x}-H[x,\phi]+J_{x}x+J_{\phi}\phi)\right) \\
+ & =\mathcal{N}\int \mathcal{D}x\mathcal{D}p_{x}\mathcal{D}\phi \mathcal{D}p_{\phi} \delta(p_{\phi}) \delta\left( -\frac{\lambda p_{x}}{m}-\left( \frac{\lambda ^{2}}{m}-1 \right)\phi \right)\exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(p_{x}\dot{x}-\frac{p_{x}^{2}}{2m}\right.\right. \\
+ & \left.\left.-\frac{\lambda p_{x}\phi}{m}-\left( \frac{\lambda ^{2}}{2m}-\frac{1}{2} \right)\phi ^{2}-\frac{1}{2}kx^{2}+J_{x}x+J_{\phi}\phi\right)\right) \\
+ & =\mathcal{N} \int \mathcal{D}x\mathcal{D}\phi \exp\left( i\int _{-\infty}^{+\infty}\mathrm{d}t\left( \lambda\dot{x}\phi\left( \frac{m}{\lambda ^{2}}-1 \right)-\frac{1}{2}\phi ^{2}\left( \frac{m}{\lambda ^{2}}-1 \right)-\frac{1}{2}kx^{2}+J_{x}x+J_{\phi}\phi \right)\right) \\
+ & =\mathcal{N}\int \mathcal{D}x \exp\left(\right)
+\end{align}
+$$
+
+here we integrate out $\displaystyle{\phi}$ first
+
+$$\tag{5.6'}
+\begin{align}
+Z[J] & = \mathcal{N}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+-\frac{1}{2}\left( \frac{m}{\lambda ^{2}}-1 \right)(\phi ^{2}-2(\lambda \dot{x}+J_{\phi})\phi+\lambda ^{2}\dot{x}^{2})+\frac{1}{2}m'\dot{x}^{2}
 \end{align}
 $$
