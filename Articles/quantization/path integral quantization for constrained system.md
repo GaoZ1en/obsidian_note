@@ -268,20 +268,53 @@ Z[J_{x},J_{\phi}] & =\mathcal{N}\int \mathcal{D}x\mathcal{D}p_{x}\mathcal{D}\phi
  & =\mathcal{N}\int \mathcal{D}x\mathcal{D}p_{x}\mathcal{D}\phi \mathcal{D}p_{\phi} \delta(p_{\phi}) \delta\left( -\frac{\lambda p_{x}}{m}-\left( \frac{\lambda ^{2}}{m}-1 \right)\phi \right)\exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(p_{x}\dot{x}-\frac{p_{x}^{2}}{2m}\right.\right. \\
  & \left.\left.-\frac{\lambda p_{x}\phi}{m}-\left( \frac{\lambda ^{2}}{2m}-\frac{1}{2} \right)\phi ^{2}-\frac{1}{2}kx^{2}+J_{x}x+J_{\phi}\phi\right)\right) \\
  & =\mathcal{N} \int \mathcal{D}x\mathcal{D}\phi \exp\left( i\int _{-\infty}^{+\infty}\mathrm{d}t\left( \lambda\dot{x}\phi\left( \frac{m}{\lambda ^{2}}-1 \right)-\frac{1}{2}\phi ^{2}\left( \frac{m}{\lambda ^{2}}-1 \right)-\frac{1}{2}kx^{2}+J_{x}x+J_{\phi}\phi \right)\right) \\
- & =\mathcal{N}\int \mathcal{D}x \exp\left(\right)
+ & =\mathcal{N}\int \mathcal{D}x \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left( \frac{1}{2}m'\dot{x}^{2}-\frac{1}{2}kx^{2}+J_{x}x+\lambda \dot{x}J_{\phi} \right)\right) \\
+ & =\mathcal{N} \int \mathcal{D}x\exp\left(-\frac{1}{2}\int _{-\infty}^{+\infty}ixDx+i \int _{-\infty}^{+\infty}\mathrm{d}t(J_{x}-\lambda \dot{J}_{\phi})x\right) \\
+ & =\mathcal{N} \exp\left(-\frac{1}{2}\int \mathrm{d}t \mathrm{d}t'(J_{x}-\lambda \dot{J}_{\phi})(t)D^{-1}(t,t')(J_{x}-\lambda \dot{J}_{\phi})(t')\right)\exp\left( -\frac{1}{2}\int ^{+\infty}_{-\infty}\mathrm{d}t J_{\phi}^{2} \right)
 \end{align}
 $$
 
-here we integrate out $\displaystyle{\phi}$ first
+here we integrate out $\displaystyle{\phi}$. $\displaystyle{D= m' \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k}$ and $\displaystyle{D^{-1}(t,t')}$ satisfies
+
+$$\tag{5.7}
+\begin{align}
+iDD^{-1}(t,t') & =\delta(t-t') \\
+\implies D^{-1}(t,t') & =-\frac{1}{2\pi im} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}
+\end{align}
+$$
+
+then we get the results in (2.3). if we do not integrate out $\displaystyle{\phi}$
 
 $$\tag{5.6'}
 \begin{align}
-Z[J] & = \mathcal{N}
+Z[J_{x},J_{\phi}]  & =\mathcal{N} \int \mathcal{D}x\mathcal{D}\phi \exp\left( i\int _{-\infty}^{+\infty}\mathrm{d}t\left( \lambda\dot{x}\phi\left( \frac{m}{\lambda ^{2}}-1 \right)-\frac{1}{2}\phi ^{2}\left( \frac{m}{\lambda ^{2}}-1 \right)-\frac{1}{2}kx^{2}+J_{x}x+J_{\phi}\phi \right)\right) \\
+ & =\mathcal{N}\int \mathcal{D}x\mathcal{D}\phi \exp\left(-\frac{1}{2}\int _{-\infty}^{+\infty}\mathrm{d}t iXDX^{T}+i \int _{-\infty}^{+\infty}JX^{T}\right) \\
+ & =\mathcal{N}\exp\left(-\frac{1}{2}\int \mathrm{d}t\mathrm{d}t'J(t)D^{-1}(t,t')J^{T}(t')\right)
 \end{align}
 $$
 
+where $\displaystyle{D=\begin{pmatrix}k & \frac{m'}{\lambda}\frac{\mathrm{d}}{\mathrm{d}t} \\-\frac{m'}{\lambda} \frac{\mathrm{d}}{\mathrm{d}t} & \frac{m'}{\lambda ^{2}}\end{pmatrix},X=\begin{pmatrix}x  & \phi\end{pmatrix},J=\begin{pmatrix}J_{x} & J_{\phi}\end{pmatrix}}$, and $\displaystyle{D^{-1}(t,t')}$ satisfies
+
+$$\tag{5.7}
+\begin{align}
+iDD^{-1}(t,t') & =\delta(t-t')\mathbb{1}_{2\times2} \\
+\implies D^{-1}(t,t') & 
+\end{align}
+$$
+
+$$\tag{5.8}
+\begin{align}
+i\begin{pmatrix}
+k & \frac{ip_{0}m'}{\lambda} \\
+-\frac{ip_{0}m'}{\lambda} & \frac{m'}{\lambda ^{2}}
+\end{pmatrix}D^{-1}(p_{0}) & = \\
+\end{align}
+$$
+
+
+
 $$\tag{.}
 \begin{align}
--\frac{1}{2}\left( \frac{m}{\lambda ^{2}}-1 \right)(\phi ^{2}-2(\lambda \dot{x}+J_{\phi})\phi+\lambda ^{2}\dot{x}^{2})+\frac{1}{2}m'\dot{x}^{2}
+-\frac{1}{2}iXDX=-\frac{1}{2}\begin{pmatrix}x & \phi\end{pmatrix}\begin{pmatrix}k & \frac{m'}{\lambda}\frac{\mathrm{d}}{\mathrm{d}t} \\-\frac{m'}{\lambda} \frac{\mathrm{d}}{\mathrm{d}t} & \frac{m'}{\lambda ^{2}}\end{pmatrix}\begin{pmatrix}x \\\phi\end{pmatrix}
 \end{align}
 $$
