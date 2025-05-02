@@ -21,10 +21,12 @@ $$\tag{1.3}
  & = \int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\braket{ x=x_{f}|e^{-iH\Delta te^{-i\alpha}}|x_{n-1} } \braket{ x_{n-1}|e^{-iH\Delta te^{-i\alpha}}|x_{n-2} }\dots\braket{ x_{1}|e^{-iH\Delta te^{-i\alpha}}|x=x_{i} }  \\
  & = \int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1} \int \frac{\mathrm{d}p_{1}}{2\pi}\dots \frac{\mathrm{d}p_{n}}{2\pi} \braket{ x_{f}|e^{-iH\Delta te^{-i\alpha}}|p_{n} } \braket{ p_{n}|x_{n-1} }\dots\braket{ x_{1}|e^{-iH\Delta e^{ ^{-i\alpha} }}|p_{1} }\braket{ p_{1}|x_{i} }  \\
  & = \int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\int \frac{\mathrm{d}p_{1}}{2\pi}\dots \frac{\mathrm{d}p_{n}}{2\pi}\exp\left(i\sum ^{n}_{i=1}p_{i}(x_{i}-x_{i-1})-i\sum ^{n}_{i=1} \frac{p_{i}^{2}}{2m'}\Delta te^{-i\alpha}-i\sum ^{n}_{i=1} \frac{1}{2}kx_{i}^{2}\Delta te^{-i\alpha}\right)  \\
- & =\left( \frac{m'}{2\pi i\Delta te^{-i\alpha}} \right)^{n/2} \int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\exp\left(i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}m' \left( \frac{x_{i}-x_{i-1}}{\Delta t}\right)^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}kx_{i}^{2}\right) \\
- & =\left(\frac{m'}{2\pi i\Delta te^{-i\alpha}}\right)^{n/2}\left(\frac{\Delta t}{2\pi ie^{-i\beta}}\right)^{n/2} \int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\exp\left(i\Delta te^{i\alpha}\sum ^{n}_{i=1} \frac{1}{2}m\left(\frac{x_{i}-x_{i-1}}{\Delta t}\right)^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}kx_{i}^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}\lambda ^{2} \left(\frac{x_{i}-x_{i-1}}{\Delta t}\right)^{2}\right) \\
- & =\left(\frac{m'}{2\pi i\Delta te^{-i\alpha}}\right)^{n/2}\left(\frac{\Delta t}{2\pi ie^{-i\beta}}\right)^{n/2}\int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\mathrm{d}\phi _{1}\dots \mathrm{d}\phi _{n}\exp\left(i\Delta te^{i\alpha}\sum ^{n}_{t=1} \frac{1}{2}m \left( \frac{x_{i}-x_{i-1}}{\Delta t} \right)^{2}-i\Delta te^{-i(\alpha+\beta)/2}\sum ^{n}_{i=1}\lambda \phi _{i} \frac{x_{i}-x_{i-1}}{\Delta t}+i\Delta te^{-i\beta}\sum ^{n}_{i=1}\phi _{i}^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}kx_{i}^{2}\right) \\
- & =\mathcal{N}\int [\mathcal{D}x\mathcal{D}\phi]_{x(t_{i})=x_{i},x(t_{f})=x_{f}} \exp\left[i \int _{t_{i}}^{t_{f}} \mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{e\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}-\frac{1}{2}kx^{2}e^{-i\alpha}\right)\right]
+ & =\left( \frac{m'}{2\pi i\Delta te^{-i\alpha}} \right)^{n/2} \int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\exp\left(i\Delta te^{i\alpha}\sum ^{n}_{i=1} \frac{1}{2}m' \left( \frac{x_{i}-x_{i-1}}{\Delta t}\right)^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}kx_{i}^{2}\right) \\
+ & =\left(\frac{m'}{2\pi i\Delta te^{-i\alpha}}\right)^{n/2}\left(\frac{\Delta t}{2\pi ie^{-i\beta}}\right)^{n/2} \int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\exp\left(i\Delta te^{i\alpha}\sum ^{n}_{i=1} \frac{1}{2}m\left(\frac{x_{i}-x_{i-1}}{\Delta t}\right)^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}kx_{i}^{2}\right. \\
+ & \left.-i\Delta te^{i\alpha}\sum ^{n}_{i=1} \frac{1}{2}\lambda ^{2} \left(\frac{x_{i}-x_{i-1}}{\Delta t}\right)^{2}\right) \\
+ & =\left(\frac{m'}{2\pi i\Delta te^{-i\alpha}}\right)^{n/2}\left(\frac{\Delta t}{2\pi ie^{-i\beta}}\right)^{n/2}\int \mathrm{d}x_{1}\dots \mathrm{d}x_{n-1}\mathrm{d}\phi _{1}\dots \mathrm{d}\phi _{n}\exp\left(i\Delta te^{i\alpha}\sum ^{n}_{t=1} \frac{1}{2}m \left( \frac{x_{i}-x_{i-1}}{\Delta t} \right)^{2}\right. \\
+ & \left.-i\Delta te^{i(\alpha+\beta)/2}\sum ^{n}_{i=1}\lambda \phi _{i} \frac{x_{i}-x_{i-1}}{\Delta t}+i\Delta te^{i\beta}\sum ^{n}_{i=1}\phi _{i}^{2}-i\Delta te^{-i\alpha}\sum ^{n}_{i=1} \frac{1}{2}kx_{i}^{2}\right) \\
+ & =\mathcal{N}\int [\mathcal{D}x\mathcal{D}\phi]_{x(t_{i})=x_{i},x(t_{f})=x_{f}} \exp\left[i \int _{t_{i}}^{t_{f}} \mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}-\frac{1}{2}kx^{2}e^{-i\alpha}\right)\right]
 \end{align}
 $$
 
@@ -77,7 +79,7 @@ $$
 
 introduce 
 
-$$\tag{1.7}
+$$\tag{2.1}
 \begin{align}
 Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi \exp\left( i \int _{-\infty}^{+\infty}\mathrm{d}t(L[x,\phi]+Jx+\eta \phi) \right) \\
  & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi +\frac{1}{2}\phi ^{2}+Jx+\eta \phi\right)\right) \\
@@ -88,7 +90,7 @@ $$
 
 where $\displaystyle{G(t,t')}$ satisfies
 
-$$\tag{1.8}
+$$\tag{2.2}
 \begin{align}
 \left( m' \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k -i\varepsilon\right)G(t,t')=\delta(t-t')\implies G(t,t')=-\frac{1}{2\pi im'} \int _{-\infty}^{+\infty} \frac{\mathrm{d}p_{0}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}e^{-ip_{0}(t-t')}
 \end{align}
@@ -96,7 +98,7 @@ $$
 
 then
 
-$$\tag{1.9}
+$$\tag{2.3}
 \begin{align}
 \frac{\braket{ 0|\mathcal{T}x(t)\phi(t')|0 }}{\braket{ 0|0 } } & = -\frac{\delta ^{2}\log Z[J,\eta]}{\delta J(t)\delta J(t')}\Big|_{J=0,\eta=0} \\
  & = G(t,t') \\
@@ -112,20 +114,20 @@ $$
 
 or we should not integrate out $\displaystyle{\phi}$ first????
 
-$$\tag{1.7}
+$$\tag{3.1}
 \begin{align}
 Z[J_{x},J_{\phi}] & =\int \mathcal{D}x\mathcal{D}\phi \exp\left( i \int _{-\infty}^{+\infty}\mathrm{d}t(L[x,\phi]+J_{x}x+J_{\phi} \phi) \right) \\
  & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left( -\frac{1}{2}X DX^{T}+XJ^{T} \right)\right) \\
  & =\exp\left[-\frac{1}{2}\int _{-\infty}^{+\infty}\mathrm{d}t\mathrm{d}t'J(t)D^{-1}(t,t')J^{T}(t')\right] \\
 X & =\begin{pmatrix}x & \phi\end{pmatrix} \\
 J & =\begin{pmatrix}J_{x} & J_{\phi}\end{pmatrix} \\
-D & =\begin{pmatrix}m\frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k & \lambda\frac{\mathrm{d}}{\mathrm{d}t} \\\lambda\frac{\mathrm{d}}{\mathrm{d}t} & -1\end{pmatrix}
+D & =\begin{pmatrix}m\frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k & -\lambda\frac{\mathrm{d}}{\mathrm{d}t} \\\lambda\frac{\mathrm{d}}{\mathrm{d}t} & -1\end{pmatrix}
 \end{align}
 $$
 
 and $\displaystyle{D^{-1}(t,t')}$ satisfies
 
-$$\tag{1.8}
+$$\tag{3.2}
 \begin{align}
 iD(t)D^{-1}(t,t') & =\delta(t-t')\mathbb{1}_{2\times2} \\
 \implies D^{-1}(t,t') & =\int \frac{\mathrm{d}p_{0}}{2\pi m'} \frac{i}{p_{0}^{2}-\omega ^{2}+i\varepsilon}e^{-ip_{0}(t-t')} \begin{pmatrix}
@@ -137,7 +139,7 @@ $$
 
 then
 
-$$\tag{1.9}
+$$\tag{3.3}
 \begin{align}
 \braket{ 0|\mathcal{T}x(t)x(t')|0 } & =-\frac{\delta ^{2}\log Z[J]}{\delta J_{x}(t)\delta J_{x}(t')}\Big|_{J=0} \\
  & =D^{-1}(t,t')_{xx}= -\frac{1}{2\pi im'} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} \\
@@ -152,7 +154,7 @@ $$
 
 in canonical formalism, we have
 
-$$\tag{1.10}
+$$\tag{3.4}
 \begin{align}
 \braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & =\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0}\frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\frac{i \lambda ^{2}}{m'}\delta(t-t')
 \end{align}
@@ -162,7 +164,7 @@ $$
 
 keep $\displaystyle{\alpha}$ and $\displaystyle{\beta}$ finite and do the path integral again...
 
-$$\tag{1.6}
+$$\tag{4.1}
 \begin{align}
 \frac{\braket{ 0|\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})|0 }}{\braket{ 0|0 } }  & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi x(t)x(t') \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}
 \end{align}
@@ -170,7 +172,7 @@ $$
 
 introduce
 
-$$\tag{1.7}
+$$\tag{4.2}
 \begin{align}
 Z[J_{x},J_{\phi}] & = \int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}+J_{x}x+J_{\phi}\phi\right)\right) \\
  & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(\int _{-\infty}^{+\infty}\mathrm{d}t\left(-\frac{i}{2}XDX^{T}+iJX^{T}\right)\right) \\
@@ -180,7 +182,7 @@ $$
 
 where
 
-$$\tag{1.8}
+$$\tag{4.3}
 \begin{align}
 X & =\begin{pmatrix}x & \phi\end{pmatrix} \\
 D & =\begin{pmatrix}me^{i\alpha} \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+ke^{-i\alpha} & -e^{i(\alpha+\beta)/2}\lambda \frac{\mathrm{d}}{\mathrm{d}t} \\e^{i(\alpha+\beta)/2}\lambda \frac{\mathrm{d}}{\mathrm{d}t} & -e^{-i\beta} \\\end{pmatrix} \\
@@ -190,21 +192,37 @@ $$
 
 and $\displaystyle{D^{-1}(t,t')}$ satisfies
 
-$$\tag{1.9}
+$$\tag{4.4}
 \begin{align}
 iDD^{-1}(t,t') & =\delta(t-t')\mathbb{1}_{2\times2} \\
-\implies D^{-1}(t,t') & =
+\implies D^{-1}(t,t') & = -\frac{1}{2\pi im'} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}e^{i\alpha}-\omega ^{2}e^{-i\alpha}}\begin{pmatrix}
+1 & i\lambda p_{0}e^{i(\alpha-\beta)/2} \\
+-i\lambda p_{0}e^{i(\alpha-\beta)/2} & -mp_{0}^{2}e^{i(\alpha-\beta)}+ke^{-i(\alpha+\beta)}
+\end{pmatrix}
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
--iD^{-1}(p_{0}) & = \begin{pmatrix}
-mp_{0}^{2}e^{i\alpha}-ke^{-i\alpha} & -ie^{i(\alpha+\beta)/2}\lambda p_{0}  \\
-ie^{i(\alpha+\beta)/2}\lambda p_{0} & e^{i\beta}
-\end{pmatrix}^{-1} \\
- & = \frac{1}{mp_{0}^{2}e^{i(\alpha+\beta)}-ke^{-i(\alpha-\beta)}-}\begin{pmatrix}
+this can be done by some Fourier analysis and linear algebra. then we have
 
-\end{pmatrix}\\
+$$\tag{4.5}
+\begin{align}
+\braket{ x(t)x(t') }_{\alpha,\beta} & = \frac{\delta ^{2}\log Z[J]}{i^{2}\delta J_{x}(t)\delta J_{x}(t')}\Big|_{J=0} \\
+ & =-\frac{1}{2\pi im'}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}e^{i\alpha}-\omega ^{2} e^{-i\alpha}} \\
+\braket{ x(t)\phi(t') }_{\alpha,\beta} & = \frac{\delta ^{2}\log Z[J]}{i^{2}\delta J_{x}(t)\delta J_{\phi}(t')}\Big|_{J=0} \\
+ & =-\frac{1}{2\pi im'}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}}(t-t')}{p_{0}^{2}e^{i\alpha}-\omega ^{2}e^{-i\alpha}} i\lambda p_{0} e^{i(\alpha-\beta)/2} \\
+\braket{ \phi(t)\phi(t') }_{\alpha,\beta} & = \frac{\delta ^{2}\log Z[J]}{i^{2}\delta J_{\phi}(t)\delta J_{\phi}(t')}\Big|_{J=0} \\
+ & =-\frac{1}{2\pi im'}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}}(t-t')}{p_{0}^{2}e^{i\alpha}-\omega ^{2}e^{-i\alpha}}(-mp_{0}^{2}e^{i(\alpha-\beta)}+ke^{-i(\alpha+\beta)})
+\end{align}
+$$
+
+by taking $\displaystyle{\alpha,\beta\to0}$, we return the result in (3.3)
+
+---
+
+this section is referred from the Chapter sixteen in the *Quantization of Gauge Systems* by Henneaux and Teitelboim. 
+
+$$\tag{5.1}
+\begin{align}
+L & =\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{}
 \end{align}
 $$
