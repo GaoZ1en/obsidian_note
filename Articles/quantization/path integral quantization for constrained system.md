@@ -333,3 +333,15 @@ $$\tag{6.4}
 \end{align}
 $$
 
+
+$$\tag{6.5}
+\begin{align}
+\braket{ \phi(t)\phi(t') } _{\alpha,\beta} & =e^{i(\alpha-\beta)}\lambda ^{2}\partial _{t}\partial _{t'}\braket{ 0|\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})|0 } +i\delta(t-t')e^{-i\beta} \\
+ & =e^{i(\alpha-\beta)/2}\lambda \partial _{t}\braket{ 0|\mathcal{T}x(te^{-i\alpha})\phi(t'e^{-i\alpha})|0 } +i\delta(t-t')e^{-i\beta} \\
+ & = \braket{ 0|\mathcal{T}\phi(te^{-i\alpha})\phi(t'e^{-i\alpha})|0 }+i\delta(t-t')e^{-i\beta}+e^{i(\alpha-\beta)/2}\lambda \delta(t-t')\braket{ 0|[x(te^{-i\alpha}),\phi(t'e^{-i\alpha})]|0 }  \\
+ & = \braket{ 0|\mathcal{T}\phi(te^{-i\alpha})\phi(t')e^{-i\alpha}|0 } +i\delta(t-t')e^{-i\beta}+i \frac{m}{m-\lambda ^{2}}\delta(t-t')e^{-i\beta}  \\
+ & = \braket{ 0|\mathcal{T}\phi(te^{-i\alpha})\phi(t'e^{-i\alpha})|0 } +i \frac{\lambda ^{2}}{m'}\delta(t-t')e^{-i\beta}
+\end{align}
+$$
+
+and the extra term is exactly the difference between 
