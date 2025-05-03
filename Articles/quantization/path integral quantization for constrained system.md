@@ -293,10 +293,28 @@ $$\tag{6.1}
 \end{align}
 $$
 
-integrate out $\displaystyle{\phi}$. we first write (6.1) in a discrete form.
+integrate out $\displaystyle{\phi}$.
 
 $$\tag{6.2}
 \begin{align}
-\braket{ x(t)\phi(t') }_{\alpha,\beta}  & = \int \mathcal{D}x\mathcal{D}
+\braket{ x(t)\phi(t') }_{\alpha,\beta}  & = \frac{\displaystyle\int \mathcal{D}x\mathcal{D}\phi x(t)\phi(t') \exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)}{\displaystyle \int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left( \frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)} \\
+ & = \frac{\displaystyle{\int \mathcal{D}xx(t) e^{i(\alpha-\beta)/2}\lambda \dot{x}(t')\exp\left(i \int ^{+\infty}_{-\infty} \mathrm{d}t\left( \frac{1}{2}m'\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha} \right)\right)}}{\displaystyle{\int \mathcal{D}x \exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m'\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}\right)\right)}} \\
+ & =e^{i(\alpha-\beta)/2}\lambda\braket{ x(t)\dot{x}(t') }_{\alpha} \\
+ & =e^{i(\alpha-\beta)/2}\lambda \partial _{t'}\braket{ x(t)x(t') }_{\alpha} \\
+ & =e^{i(\alpha-\beta)/2}\lambda \partial _{t'} \braket{ 0|\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})|0 } \\
+ & =e^{i(\alpha-\beta)/2}\lambda \braket{ 0|\mathcal{T}x(te^{-i\alpha})\dot{x}(t'e^{-i\alpha})|0 }  \\
+ & = \braket{ 0|\mathcal{T}x(te^{-i\alpha})\phi(t'e^{-i\alpha})|0 } 
+\end{align}
+$$
+
+similarly, we have
+
+$$\tag{6.3}
+\begin{align}
+\braket{ \phi(t)\phi(t') } _{\alpha,\beta} & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \phi(t)\phi(t')\exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)}} \\
+ & = \frac{\displaystyle{\int \prod _{i}\mathrm{d}x_{i}\mathrm{d}\phi _{i}\phi _{i_{1}}\phi _{i_{2}}\exp\left(i\sum _{i}\Delta t\left(\frac{1}{2}m \left( \frac{x_{i+1}-x_{i}}{\Delta t} \right)^{2}e^{i\alpha}-\frac{1}{2}kx_{i}^{2}e^{-i\alpha}-\lambda\frac{x_{i+1}-x_{i}}{\Delta t}\phi _{i}e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}_{i}e^{i\beta}\right)\right)}}{\displaystyle{\int \prod _{i}\mathrm{d}x_{i}\mathrm{d}\phi _{i}\exp\left(i\sum _{i}\Delta t\left(\frac{1}{2}m \left( \frac{x_{i+1}-x_{i}}{\Delta t} \right)^{2}e^{i\alpha}-\frac{1}{2}kx_{i}^{2}e^{-i\alpha}-\lambda\frac{x_{i+1}-x_{i}}{\Delta t}\phi _{i}e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}_{i}e^{i\beta}\right)\right)}} \\
+ & = \frac{\displaystyle{\int \prod _{i}\mathrm{d}x_{i}\mathrm{d}\phi _{i}\phi_{i_{1}}\phi _{i_{2}}\exp\left(i \sum _{i}\Delta t\left(\frac{1}{2}m'\left( \frac{x_{i+1}-x_{i}}{\Delta t} \right)^{2}e^{i\alpha}-\frac{1}{2}kx_{i}^{2}e^{-i\alpha}+\frac{1}{2}\left( \phi _{i}-\lambda\frac{x_{i+1}-x_{i}}{\Delta t}e^{i(\alpha-\beta)/2} \right)^{2}e^{i\beta}\right)\right)}}{\displaystyle{\int \prod _{i}\mathrm{d}x_{i}\mathrm{d}\phi _{i}\exp\left(i \sum _{i}\Delta t\left(\frac{1}{2}m'\left( \frac{x_{i+1}-x_{i}}{\Delta t} \right)^{2}e^{i\alpha}-\frac{1}{2}kx_{i}^{2}e^{-i\alpha}+\frac{1}{2}\left( \phi _{i}-\lambda\frac{x_{i+1}-x_{i}}{\Delta t}e^{i(\alpha-\beta)/2} \right)^{2}e^{i\beta}\right)\right)}} \\
+ & =\frac{\displaystyle{\int \prod _{i}\mathrm{d}x_{i}\left( e^{i(\alpha-\beta)/2}\lambda  \frac{x_{i_{1+1}}-x_{i}}{\Delta t} e^{i(\alpha-\beta)/2}\lambda  \frac{x_{i_{2}+1}-x_{i_{2}}}{\Delta t}+\delta _{i_{1}i_{2}} \frac{i}{\Delta te^{i\beta}} \right)\exp\left(i\sum _{i}\Delta t\left(\frac{1}{2}m'  \left( \frac{x_{i+1}-x_{i}}{\Delta t} \right)^{2}e^{i\alpha}-\frac{1}{2}kx_{i}^{2}e^{-i\alpha}\right)\right)}}{\displaystyle{\int \prod _{i}\mathrm{d}x_{i}\exp\left(i\sum _{i}\Delta t\left(\frac{1}{2}m'\left( \frac{x_{i+1}-x_{i}}{\Delta t} \right)^{2}e^{i\alpha}-\frac{1}{2}kx_{i}^{2}e^{-i\alpha}\right)\right)}} \\
+ & =\displaystyle{}
 \end{align}
 $$
