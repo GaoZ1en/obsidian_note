@@ -105,8 +105,8 @@ $$\tag{2.3}
 \frac{\braket{ 0|\mathcal{T}x(t)\phi(t')|0 }}{\braket{ 0|0 } } & = -\frac{\delta ^{2}\log Z[J,\eta]}{\delta J(t)\delta \eta(t')}\Big|_{J=0,\eta=0} \\
  & =-\lambda \partial _{t}G(t,t') \\
 \frac{\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 }}{\braket{ 0|0 } } & = -\frac{\delta ^{2}\log Z[J,\eta]}{\delta \eta(t)\delta \eta(t')}\Big|_{J=0,\eta=0} \\
- & =-\delta(t-t')+\lambda ^{2} \frac{\partial^{2}}{\partial t\partial t'}G(t,t') \\
- & =-\delta(t-t')-\lambda ^{2} \partial _{t}^{2}G(t,t')
+ & =-i\delta(t-t')+\lambda ^{2} \frac{\partial^{2}}{\partial t\partial t'}G(t,t') \\
+ & =-i\delta(t-t')-\lambda ^{2} \partial _{t}^{2}G(t,t')
 \end{align}
 $$
 
@@ -148,7 +148,7 @@ $$\tag{3.3}
  & =\frac{\lambda}{2\pi im'} \partial _{t}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} \\
 \braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & =-\frac{\delta ^{2}\log Z[J]}{\delta J_{\phi}(t)\delta J_{\phi}(t')}\Big|_{J=0} \\
  & =D^{-1}(t,t')_{\phi \phi}=-\frac{1}{2\pi im'}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}(mp_{0}^{2}-k) \\
- & =\frac{\lambda ^{2}}{2\pi im'}\partial _{t}^{2} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\delta(t-t')
+ & =\frac{\lambda ^{2}}{2\pi im'}\partial _{t}^{2} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-i\delta(t-t')
 \end{align}
 $$
 
@@ -270,7 +270,7 @@ Z[J_{x},J_{\phi}] & =\mathcal{N}\int \mathcal{D}x\mathcal{D}p_{x}\mathcal{D}\phi
  & =\mathcal{N} \int \mathcal{D}x\mathcal{D}\phi \exp\left( i\int _{-\infty}^{+\infty}\mathrm{d}t\left( \lambda\dot{x}\phi\left( \frac{m}{\lambda ^{2}}-1 \right)-\frac{1}{2}\phi ^{2}\left( \frac{m}{\lambda ^{2}}-1 \right)-\frac{1}{2}kx^{2}+J_{x}x+J_{\phi}\phi \right)\right) \\
  & =\mathcal{N}\int \mathcal{D}x \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left( \frac{1}{2}m'\dot{x}^{2}-\frac{1}{2}kx^{2}+J_{x}x+\lambda \dot{x}J_{\phi} \right)\right) \\
  & =\mathcal{N} \int \mathcal{D}x\exp\left(-\frac{1}{2}\int _{-\infty}^{+\infty}ixDx+i \int _{-\infty}^{+\infty}\mathrm{d}t(J_{x}-\lambda \dot{J}_{\phi})x\right) \\
- & =\mathcal{N} \exp\left(-\frac{1}{2}\int \mathrm{d}t \mathrm{d}t'(J_{x}-\lambda \dot{J}_{\phi})(t)D^{-1}(t,t')(J_{x}-\lambda \dot{J}_{\phi})(t')\right)\exp\left( -\frac{1}{2}\int ^{+\infty}_{-\infty}\mathrm{d}t J_{\phi}^{2} \right)
+ & =\mathcal{N} \exp\left(-\frac{1}{2}\int \mathrm{d}t \mathrm{d}t'(J_{x}-\lambda \dot{J}_{\phi})(t)D^{-1}(t,t')(J_{x}-\lambda \dot{J}_{\phi})(t')\right)\exp\left( -\frac{i}{2}\int ^{+\infty}_{-\infty}\mathrm{d}t J_{\phi}^{2} \right)
 \end{align}
 $$
 
@@ -311,7 +311,8 @@ similarly, we have
 
 $$\tag{6.3}
 \begin{align}
-\braket{ \phi(t)\phi(t') } _{\alpha,\beta} & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \phi(t)\phi(t')\exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)}} \\
+ & \braket{ \phi(t)\phi(t') } _{\alpha,\beta}  \\
+ & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \phi(t)\phi(t')\exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)}} \\
  & = \frac{\displaystyle{\int \prod _{i}\mathrm{d}x_{i}\mathrm{d}\phi _{i}\phi _{i_{1}}\phi _{i_{2}}\exp\left(i\sum _{i}\Delta t\left(\frac{1}{2}m \left( \frac{x_{i+1}-x_{i}}{\Delta t} \right)^{2}e^{i\alpha}-\frac{1}{2}kx_{i}^{2}e^{-i\alpha}-\lambda\frac{x_{i+1}-x_{i}}{\Delta t}\phi _{i}e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}_{i}e^{i\beta}\right)\right)}}{\displaystyle{\int \prod _{i}\mathrm{d}x_{i}\mathrm{d}\phi _{i}\exp\left(i\sum _{i}\Delta t\left(\frac{1}{2}m \left( \frac{x_{i+1}-x_{i}}{\Delta t} \right)^{2}e^{i\alpha}-\frac{1}{2}kx_{i}^{2}e^{-i\alpha}-\lambda\frac{x_{i+1}-x_{i}}{\Delta t}\phi _{i}e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}_{i}e^{i\beta}\right)\right)}} \\
  & = \frac{\displaystyle{\int \prod _{i}\mathrm{d}x_{i}\mathrm{d}\phi _{i}\phi_{i_{1}}\phi _{i_{2}}\exp\left(i \sum _{i}\Delta t\left(\frac{1}{2}m'\left( \frac{x_{i+1}-x_{i}}{\Delta t} \right)^{2}e^{i\alpha}-\frac{1}{2}kx_{i}^{2}e^{-i\alpha}+\frac{1}{2}\left( \phi _{i}-\lambda\frac{x_{i+1}-x_{i}}{\Delta t}e^{i(\alpha-\beta)/2} \right)^{2}e^{i\beta}\right)\right)}}{\displaystyle{\int \prod _{i}\mathrm{d}x_{i}\mathrm{d}\phi _{i}\exp\left(i \sum _{i}\Delta t\left(\frac{1}{2}m'\left( \frac{x_{i+1}-x_{i}}{\Delta t} \right)^{2}e^{i\alpha}-\frac{1}{2}kx_{i}^{2}e^{-i\alpha}+\frac{1}{2}\left( \phi _{i}-\lambda\frac{x_{i+1}-x_{i}}{\Delta t}e^{i(\alpha-\beta)/2} \right)^{2}e^{i\beta}\right)\right)}} \\
  & =\frac{\displaystyle{\int \prod _{i}\mathrm{d}x_{i}\left( e^{i(\alpha-\beta)/2}\lambda  \frac{x_{i_{1+1}}-x_{i}}{\Delta t} e^{i(\alpha-\beta)/2}\lambda  \frac{x_{i_{2}+1}-x_{i_{2}}}{\Delta t}+\delta _{i_{1}i_{2}} \frac{i}{\Delta te^{i\beta}} \right)\exp\left(i\sum _{i}\Delta t\left(\frac{1}{2}m'  \left( \frac{x_{i+1}-x_{i}}{\Delta t} \right)^{2}e^{i\alpha}-\frac{1}{2}kx_{i}^{2}e^{-i\alpha}\right)\right)}}{\displaystyle{\int \prod _{i}\mathrm{d}x_{i}\exp\left(i\sum _{i}\Delta t\left(\frac{1}{2}m'\left( \frac{x_{i+1}-x_{i}}{\Delta t} \right)^{2}e^{i\alpha}-\frac{1}{2}kx_{i}^{2}e^{-i\alpha}\right)\right)}} \\
@@ -321,16 +322,13 @@ $$\tag{6.3}
 \end{align}
 $$
 
-$$\tag{6.4}
-\begin{align}
-\int \prod _{i}\mathrm{d}\phi _{i}\phi _{i_{1}}\phi _{i_{2}}\exp \left(i\sum _{i}\Delta t \frac{1}{2}(\phi _{i}-\phi _{i,\mathrm{cl}})^{2}e^{i\beta}\right) & =\int \prod _{i}\mathrm{d}
-\end{align}
-$$
+where $\displaystyle{\delta _{i_{1}i_{2}}}$ term comes from the quantum fluctuation of $\displaystyle{\phi}$, 
 
 $$\tag{6.4}
 \begin{align}
-\braket{ \phi(t)\phi(t') } _{\alpha,\beta} & =e^{i(\alpha-\beta)}\lambda ^{2}\partial _{t}\partial _{t'}\braket{ 0|\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})|0 } +i\delta(t-t')e^{-i\beta} \\
- & =e^{i(\alpha-\beta)/2}\lambda \partial _{t}\braket{ 0|\mathcal{T}x(te^{-i\alpha})\phi(t'e^{-i\alpha})|0 } +i\delta(t-t')e^{-i\beta} \\
- & =
+ & \int \prod _{i}\mathrm{d}\phi _{i}\phi _{i_{1}}\phi _{i_{2}}\exp \left(i\sum _{i}\Delta t \frac{1}{2}(\phi _{i}-\phi _{i,\mathrm{cl}})^{2}e^{i\beta}\right)  \\
+& =\int \prod _{i}\mathrm{d}\phi'_{i}\phi _{i_{1}}'\phi _{i_{2}}'\exp\left(i \sum _{i}\Delta t \frac{1}{2}\phi_{i}^{'2}e^{i\beta}\right)+\int \prod _{i}\mathrm{d}\phi _{i}\phi _{i_{1},\mathrm{cl}}\phi _{i_{2},\mathrm{cl}}\exp\left(i \sum _{i}\Delta t \frac{1}{2}\phi _{i}^{'2}e^{i\beta}\right) \\
+ & =\delta _{i_{1}i_{2}} \frac{i}{\Delta te^{i\beta}}\int \prod _{i}\mathrm{d}\phi _{i}'\exp\left(i\sum _{i}\Delta t \frac{1}{2}\phi _{i}^{'2}e^{i\beta}\right)+\int \prod _{i}\mathrm{d}\phi _{i}\phi _{i_{1},\mathrm{cl}}\phi _{i_{2},\mathrm{cl}}\exp\left(i\sum_{i}\Delta t \frac{1}{2}\phi _{i}^{'2}e^{i\beta}\right) \\
+ & =\int \prod _{i}\mathrm{d}\phi _{i}\left(\phi _{i_{1},\mathrm{cl}}\phi _{i_{2},\mathrm{cl}}+\delta _{i_{1}i_{2}} \frac{i}{\Delta te^{i\beta}}\right)\exp\left(i\sum _{i}\Delta t \frac{1}{2}(\phi _{i}-\phi _{i,\mathrm{cl}})^{2}e^{i\beta}\right)
 \end{align}
 $$
