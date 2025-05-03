@@ -332,3 +332,4 @@ $$\tag{6.4}
  & =\int \prod _{i}\mathrm{d}\phi _{i}\left(\phi _{i_{1},\mathrm{cl}}\phi _{i_{2},\mathrm{cl}}+\delta _{i_{1}i_{2}} \frac{i}{\Delta te^{i\beta}}\right)\exp\left(i\sum _{i}\Delta t \frac{1}{2}(\phi _{i}-\phi _{i,\mathrm{cl}})^{2}e^{i\beta}\right)
 \end{align}
 $$
+
