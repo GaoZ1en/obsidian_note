@@ -297,6 +297,6 @@ integrate out $\displaystyle{\phi}$. we first write (6.1) in a discrete form.
 
 $$\tag{6.2}
 \begin{align}
-\braket{ x(t)\phi(t') }_{\alpha,\beta}  & = 
+\braket{ x(t)\phi(t') }_{\alpha,\beta}  & = \int \mathcal{D}x\mathcal{D}
 \end{align}
 $$
