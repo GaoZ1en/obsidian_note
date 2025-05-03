@@ -285,3 +285,18 @@ $$
 
 then we get the results in (2.3).
 
+---
+
+$$\tag{6.1}
+\begin{align}
+\braket{ x(t)\phi(t') }   & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi x(t)\phi(t') \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}
+\end{align}
+$$
+
+integrate out $\displaystyle{\phi}$. we first write (6.1) in a discrete form.
+
+$$\tag{6.2}
+\begin{align}
+\braket{ x(t)\phi(t') }_{\alpha,\beta}  & = 
+\end{align}
+$$
