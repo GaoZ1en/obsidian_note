@@ -48,7 +48,7 @@ integrate out $\displaystyle{A_{0}}$, ($\displaystyle{A_{0}}=-\frac{1}{m^{2}}\pa
 $$\tag{2.2}
 \begin{align}
 \braket{ A_{0}(x)A_{i}(x') }  & = \frac{\displaystyle{\int \mathcal{D}A_{i} \left(-\frac{1}{m^{2}}\partial ^{j}\pi _{j}(x)A_{i}(x')\right)\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A_{i}]\right)}}{\displaystyle{\int \mathcal{D}A_{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A_{i}]\right)}} \\
- & = -\frac{1}{m^{2}}\partial ^{j} \braket{ \pi _{j}(x)A_{i}(x') } \\
+ & = -\frac{1}{m^{2}}\partial _{j} \braket{ \pi ^{j}(x)A_{i}(x') } \\
  & = \dots 
 \end{align}
 $$
@@ -72,3 +72,28 @@ $$\tag{2.4}
 $$
 
 where the last term is exactly the extra contact term in the canonical formalism, which comes from quantum fluctuation of $\displaystyle{A_{0}}$.
+
+$$\tag{.}
+\begin{align}
+\pi ^{i} & =F^{i0} \\
+ & =\partial ^{i}A^{0}-\partial ^{0}A^{i} \\
+ & =\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}e^{s0}_{k}(\partial ^{i}\sigma _{k}a_{ks}+\partial ^{i}\sigma ^{*}_{k}a_{ks}^{\dagger})-e^{si}_{k}(\partial ^{0}\sigma _{k}a_{ks}+\partial ^{0}\sigma ^{*}_{ks}a_{ks}^{\dagger}) \\
+X_{\pi ^{i}(x)} & =-i \int \mathrm{d}^3\vec{k}\sum ^{3}_{s=1} \left(\frac{\delta \pi ^{i}}{\delta a_{ks}} \frac{\delta}{\delta a^{\dagger}_{ks}}-\frac{\delta \pi ^{i}}{\delta a^{\dagger}_{ks}} \frac{\delta}{\delta a_{ks}}\right) \\
+ & =-i \int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}\left(\partial ^{i} \frac{\delta A^{0}}{\delta a_{ks}} \frac{\delta}{\delta a^{\dagger}_{ks}}-\partial ^{i} \frac{\delta A^{0}}{\delta a^{\dagger}_{ks}} \frac{\delta}{\delta a_{ks}}-\partial ^{0} \frac{\delta A^{i}}{\delta a_{ks}} \frac{\delta}{\delta a^{\dagger}_{ks}}+\partial ^{0} \frac{\delta A^{i}}{\delta a_{ks}^{\dagger}} \frac{\delta}{\delta a_{ks}}\right) \\
+ & =-i \int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1} \left(e^{s 0}_{k}\left( \partial ^{i}\sigma _{ks} \frac{\delta}{\delta a^{\dagger}_{ks}}-\partial ^{i}\sigma _{ks}^{*} \frac{\delta}{\delta a_{ks}} \right)-e^{si}_{k}\left(\partial ^{0}\sigma _{ks} \frac{\delta}{\delta a^{\dagger}_{ks}}-\partial ^{0}\sigma ^{*}_{ks} \frac{\delta}{\delta a_{ks}}\right)\right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\pi ^{i} & =\partial ^{i}A^{0}-\partial ^{0}A^{i} \\
+ & =-\frac{1}{m^{2}}\partial ^{i}\partial _{j}F^{j0}-\partial ^{0}A^{i} \\
+ & =-\frac{1}{m^{2}}\partial ^{i}\partial _{j}\pi ^{j}-\partial ^{0}A^{i}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\braket{ \pi ^{j}(x)A_{i}(x') }  & =\theta(x^{0}-x^{'0})\braket{ 0|\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\sum ^{3}_{s,s'=1}|0 } 
+\end{align}
+$$
