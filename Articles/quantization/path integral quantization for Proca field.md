@@ -39,21 +39,36 @@ $$
 
 $$\tag{2.1}
 \begin{align}
-\braket{ A_{0}A_{i} }  & = \frac{\displaystyle{\int \mathcal{D}A_{\mu}A_{0}A_{i} \exp\left(i \int \mathrm{d}^{4}xL[A_{i},A_{0}]\right)}}{\displaystyle{\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}xL[A_{i},A_{0}]\right)}}
+\braket{ A_{0}(x)A_{i}(x') }  & = \frac{\displaystyle{\int \mathcal{D}A_{\mu}A_{0}(x)A_{i}(x') \exp\left(i \int \mathrm{d}^{4}x\mathcal{L}[A_{i},A_{0}]\right)}}{\displaystyle{\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}[A_{i},A_{0}]\right)}}
 \end{align}
 $$
 
-integrate out $\displaystyle{A_{0}}$, ($\displaystyle{A_{0}}=-\frac{1}{m^{2}}\partial ^{\mu}F_{\mu 0}$)
+integrate out $\displaystyle{A_{0}}$, ($\displaystyle{A_{0}}=-\frac{1}{m^{2}}\partial ^{\mu}F_{\mu 0}=-\frac{1}{m^{2}}\nabla \cdot \pi$)
 
 $$\tag{2.2}
 \begin{align}
-\braket{ A_{0}A_{i} } 
+\braket{ A_{0}(x)A_{i}(x') }  & = \frac{\displaystyle{\int \mathcal{D}A_{i} \left(-\frac{1}{m^{2}}\partial ^{j}\pi _{j}(x)A_{i}(x')\right)\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A_{i}]\right)}}{\displaystyle{\int \mathcal{D}A_{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A_{i}]\right)}} \\
+ & = -\frac{1}{m^{2}}\partial ^{j} \braket{ \pi _{j}(x)A_{i}(x') } \\
+ & = \dots 
 \end{align}
 $$
 
-$$\tag{.}
+similarly
+
+$$\tag{2.3}
 \begin{align}
-S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A^{\mu}A_{\mu}\right) \\
- & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{ij}F^{ij}-\frac{1}{4}F_{0i}F^{0i}+\frac{1}{2}m^{2}A^{i}A_{i}+\frac{1}{2}m^{2}A^{0}A_{0}\right)
+\braket{ A_{0}(x)A_{0}(x') }  & =\frac{\displaystyle{\int \mathcal{D}A_{\mu}A_{0}(x)A_{0}(x')\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}[A_{i},A_{0}]\right)}}{\displaystyle{\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}[A_{i},A_{0}]\right)}} \\
+ & =\frac{\displaystyle{\int \mathcal{D}A_{i}\left(\frac{1}{m^{4}}\partial _{i}\pi ^{i}(x)\partial _{j}\pi ^{j}(x')+\frac{i\delta ^{4}(x-x')}{m^{2}}\right)\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A_{i}]\right)}}{\displaystyle{\int \mathcal{D}A_{i}}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A_{i}]\right)} \\
+ & =\dots+\frac{i}{m^{2}}\delta ^{4}(x-x')
 \end{align}
 $$
+
+as a summary, we have
+
+$$\tag{2.4}
+\begin{align}
+\braket{ A_{\mu}(x)A_{\nu}(x') }  & =\braket{ 0|\mathcal{T}A_{\mu}(x)A_{\nu}(x')|0 }+\frac{i}{m^{2}}\delta ^{0}_{\mu}\delta ^{0}_{\nu}\delta ^{4}(x-x') 
+\end{align}
+$$
+
+where the last term is exactly the extra contact term in the canonical formalism, which comes from quantum fluctuation of $\displaystyle{A_{0}}$.
