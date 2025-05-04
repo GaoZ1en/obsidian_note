@@ -19,13 +19,20 @@ where $\displaystyle{D^{\mu \nu}=\partial ^{\mu}\partial ^{\nu}-\eta ^{\mu \nu}\
 
 $$\tag{2.3}
 \begin{align}
-iD^{\mu \nu}(x)(D^{-1})_{\nu \rho}(x,x') & =\delta ^{\mu}_{\rho}\delta ^{4}(x-x')
+iD^{\mu \nu}(x)(D^{-1})_{\nu \rho}(x,x') & =\delta ^{\mu}_{\rho}\delta ^{4}(x-x') \\
+(D^{-1})_{\mu \nu}(x,x') & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon}e^{-ik\cdot (x-x')}\left( \eta _{\mu \nu}+\frac{k _{\mu}k _{\nu}}{m^{2}} \right)
 \end{align}
 $$
 
-$$\tag{.}
+then we have the time-ordered correlation function
+
+$$\tag{2.4}
 \begin{align}
-i(-k^{\mu}k^{\nu}+\eta ^{\mu \nu}k^{2}-m^{2}\eta ^{\mu \nu})(D^{-1})_{\mu \nu}(k)=\delta ^{\mu}_{\rho} \\
-\implies (D^{-1})_{\mu \nu}=\frac{i}{k^{2}+\mu ^{2}-i\varepsilon}\left(\eta _{\mu \nu}-\right)
+\braket{ A_{\mu}(x)A_{\nu}(x') }  & = \frac{\braket{ 0|\mathcal{T}A_{\mu}(x)A_{\nu}(x')|0 }}{\braket{ 0|0 } } \\
+ & = \frac{\delta ^{2}Z[J]}{i^{2}\delta J^{\mu}(x)\delta J^{\nu}(x')}\Big|_{J=0} \\
+ & =  (D^{-1})_{\mu \nu}(x,x')
 \end{align}
 $$
+
+---
+
