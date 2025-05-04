@@ -340,7 +340,7 @@ $$\tag{6.5}
  & =e^{i(\alpha-\beta)/2}\lambda \partial _{t}\braket{ 0|\mathcal{T}x(te^{-i\alpha})\phi(t'e^{-i\alpha})|0 } +i\delta(t-t')e^{-i\beta} \\
  & = \braket{ 0|\mathcal{T}\phi(te^{-i\alpha})\phi(t'e^{-i\alpha})|0 }+i\delta(t-t')e^{-i\beta}+e^{i(\alpha-\beta)/2}\lambda \delta(t-t')\braket{ 0|[x(te^{-i\alpha}),\phi(t'e^{-i\alpha})]|0 }  \\
  & = \braket{ 0|\mathcal{T}\phi(te^{-i\alpha})\phi(t')e^{-i\alpha}|0 } +i\delta(t-t')e^{-i\beta}+i \frac{m}{m-\lambda ^{2}}\delta(t-t')e^{-i\beta}  \\
- & = \braket{ 0|\mathcal{T}\phi(te^{-i\alpha})\phi(t'e^{-i\alpha})|0 } +i \frac{\lambda ^{2}}{m'}\delta(t-t')e^{-i\beta}
+ & = \braket{ 0|\mathcal{T}\phi(te^{-i\alpha})\phi(t'e^{-i\alpha})|0 } +i \frac{m}{m'}\delta(t-t')e^{-i\beta}
 \end{align}
 $$
 
