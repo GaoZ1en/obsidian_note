@@ -39,6 +39,21 @@ $$
 
 $$\tag{2.1}
 \begin{align}
-\braket{ A_{i}A_{j} } 
+\braket{ A_{0}A_{i} }  & = \frac{\displaystyle{\int \mathcal{D}A_{\mu}A_{0}A_{i} \exp\left(i \int \mathrm{d}^{4}xL[A_{i},A_{0}]\right)}}{\displaystyle{\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}xL[A_{i},A_{0}]\right)}}
+\end{align}
+$$
+
+integrate out $\displaystyle{A_{0}}$, ($\displaystyle{A_{0}}=-\frac{1}{m^{2}}\partial ^{\mu}F_{\mu 0}$)
+
+$$\tag{2.2}
+\begin{align}
+\braket{ A_{0}A_{i} } 
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A^{\mu}A_{\mu}\right) \\
+ & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{ij}F^{ij}-\frac{1}{4}F_{0i}F^{0i}+\frac{1}{2}m^{2}A^{i}A_{i}+\frac{1}{2}m^{2}A^{0}A_{0}\right)
 \end{align}
 $$
