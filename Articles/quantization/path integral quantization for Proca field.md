@@ -86,14 +86,9 @@ $$
 
 $$\tag{.}
 \begin{align}
-\pi ^{i} & =\partial ^{i}A^{0}-\partial ^{0}A^{i} \\
- & =-\frac{1}{m^{2}}\partial ^{i}\partial _{j}F^{j0}-\partial ^{0}A^{i} \\
- & =-\frac{1}{m^{2}}\partial ^{i}\partial _{j}\pi ^{j}-\partial ^{0}A^{i}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\braket{ \pi ^{j}(x)A_{i}(x') }  & =\theta(x^{0}-x^{'0})\braket{ 0|\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\sum ^{3}_{s,s'=1}|0 } 
+\braket{ \pi ^{j}(x)A_{i}(x') }  & =\theta(x^{0}-x^{'0})\braket{ 0|\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\sum ^{3}_{s,s'=1}(e^{s0}_{k}(\partial ^{j}\sigma _{k}(x)a_{ks}+\partial ^{j}\sigma ^{*}_{k}(x)a^{\dagger}_{ks})-e^{si}_{k}(\partial ^{0}\sigma _{k}(x)a_{ks}+\partial ^{0}\sigma ^{*}_{k}(x)a^{\dagger}_{ks}))e^{s'}_{k'i}(\sigma _{k'}(x')a_{k's'}+\sigma ^{*}_{k'}(x')a^{\dagger}_{k's'})|0 }+\theta(x^{'0}-x^{0})\dots \\
+  & =\theta(x^{0}-x^{'0})\braket{ 0|\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\sum ^{3}_{s,s'=1}(e^{s 0}_{k}\partial ^{j}\sigma_{k}(x)-e^{si}_{k}\partial ^{0}\sigma_{k}(x))e^{s'}_{k'i}\sigma ^{*}_{k'}(x')a_{ks}a^{\dagger}_{k's'} |0}+\theta(x^{'0}-x^{0}) \dots \\
+ & =\theta(x^{0}-x^{'0})\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}[(e^{s 0}_{k}e^{s}_{ki})(\sigma ^{*}_{k}(x')\partial ^{j}\sigma _{k}(x))-(e^{sj}_{k}e^{s}_{ki})(\sigma ^{*}_{k}(x')\partial ^{0}\sigma _{k}(x))]  +\theta(x^{'0}-x^{0})\dots \\
+ & =\frac{k^{0}k _{i}}{m^{2}} \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} (\theta(x^{0}-x^{'0})ik^{j}e^{ik(x-x')})
 \end{align}
 $$
