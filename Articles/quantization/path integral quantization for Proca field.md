@@ -91,6 +91,7 @@ the equation of motion for $\displaystyle{A_{0}}$ is then
 
 $$\tag{1.2}
 \begin{align}
-\delta S & =\int \mathrm{d}^{4}x\left(\dots+(\partial _{0}A_{i}-\partial _{i}A_{0})\right)
+\delta S & =\int \mathrm{d}^{4}x\left(-(\partial _{i}\partial _{0}A^{i}+\partial ^{2} _{i}A^{0})\delta A^{0}-m^{2}A^{0}\delta A^{0}\right) \\
+(\partial _{i}^{2}+m^{2})A^{0} & =
 \end{align}
 $$
