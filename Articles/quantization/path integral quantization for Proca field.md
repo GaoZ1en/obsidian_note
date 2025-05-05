@@ -83,7 +83,14 @@ where the last term is exactly the extra contact term in the canonical formalism
 $$\tag{1.1}
 \begin{align}
 S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right) \\
-  & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A_{j}-\partial _{j}A_{i})(\partial ^{i}A^{j}-\partial ^{j}A^{i})+\frac{1}{2}(\partial _{0}A_{i}+\partial _{i}A_{0})^{2}+\frac{1}{2}m^{2}A_{0}^{2}+\frac{1}{2}m^{2}A_{i}^{2}\right)
- & =\int \mathrm{d}^{4}x\left(-\frac{1}{2}A_{i}(\partial ^{i}\partial ^{j}-\delta ^{ij}\partial ^{2}-m^{2}\delta ^{ij})A_{j}-\frac{1}{2}A_{0}(\nabla ^{2}-m^{2})A_{0}-A_{i}(\partial ^{i}\partial ^{0})A_{0}\right)
+  & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A_{j}-\partial _{j}A_{i})(\partial ^{i}A^{j}-\partial ^{j}A^{i})+\frac{1}{2}(\partial _{0}A_{i}-\partial _{i}A_{0})(\partial ^{0}A^{i}-\partial ^{i}A^{0})-\frac{1}{2}m^{2}A_{0}^{2}+\frac{1}{2}m^{2}A_{i}^{2}\right)
+\end{align}
+$$
+
+the equation of motion for $\displaystyle{A_{0}}$ is then
+
+$$\tag{1.2}
+\begin{align}
+\delta S & =\int \mathrm{d}^{4}x\left(\dots+(\partial _{0}A_{i}-\partial _{i}A_{0})\right)
 \end{align}
 $$
