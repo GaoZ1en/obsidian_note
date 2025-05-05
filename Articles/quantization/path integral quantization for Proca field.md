@@ -49,7 +49,9 @@ $$\tag{2.2}
 \begin{align}
 \braket{ A_{0}(x)A_{i}(x') }  & = \frac{\displaystyle{\int \mathcal{D}A_{i} \left(-\frac{1}{m^{2}}\partial ^{j}\pi _{j}(x)A_{i}(x')\right)\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A_{i}]\right)}}{\displaystyle{\int \mathcal{D}A_{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A_{i}]\right)}} \\
  & = -\frac{1}{m^{2}}\partial _{j} \braket{ \pi ^{j}(x)A_{i}(x') } \\
- & = \dots 
+ & = -\frac{1}{m^{2}}\partial _{j}\braket{ 0|\mathcal{T}\pi ^{j}(x)A_{i}(x')|0 }  \\
+ & = \braket{ 0|\mathcal{T}\left( -\frac{1}{m^{2}}\partial _{j}\pi ^{j}(x) \right)A_{i}(x')|0 }  \\
+ & = \braket{ 0|\mathcal{T}A_{0}(x)A_{i}(x')|0 } 
 \end{align}
 $$
 
@@ -58,8 +60,11 @@ similarly
 $$\tag{2.3}
 \begin{align}
 \braket{ A_{0}(x)A_{0}(x') }  & =\frac{\displaystyle{\int \mathcal{D}A_{\mu}A_{0}(x)A_{0}(x')\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}[A_{i},A_{0}]\right)}}{\displaystyle{\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}[A_{i},A_{0}]\right)}} \\
- & =\frac{\displaystyle{\int \mathcal{D}A_{i}\left(\frac{1}{m^{4}}\partial _{i}\pi ^{i}(x)\partial _{j}\pi ^{j}(x')+\frac{i\delta ^{4}(x-x')}{m^{2}}\right)\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A_{i}]\right)}}{\displaystyle{\int \mathcal{D}A_{i}}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A_{i}]\right)} \\
- & =\dots+\frac{i}{m^{2}}\delta ^{4}(x-x')
+ & =\frac{\displaystyle{\int \mathcal{D}A_{i}\left(\frac{1}{m^{4}}\partial _{i}\pi ^{i}(x)\partial _{j}'\pi ^{j}(x')+\frac{i\delta ^{4}(x-x')}{m^{2}}\right)\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A_{i}]\right)}}{\displaystyle{\int \mathcal{D}A_{i}}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A_{i}]\right)} \\
+ & =\frac{1}{m^{4}}\partial _{i}\partial _{j}'\braket{ \pi ^{i}(x)\pi ^{j}(x') } +\frac{i}{m^{2}}\delta ^{4}(x-x') \\
+ & =\frac{1}{m^{4}}\partial _{i}\partial _{j}'\braket{ 0|\mathcal{T}\pi ^{i}(x)\pi ^{j}(x')|0 } +\frac{i}{m^{2}}\delta ^{4}(x-x') \\
+ & = \braket{ 0|\mathcal{T}\left( -\frac{1}{m^{2}}\partial _{i}\pi ^{i}(x) \right)\left(-\frac{1}{m^{2}}\partial _{j}'\pi ^{j}(x')\right)|0 }+\frac{i}{m^{2}}\delta ^{4}(x-x') \\
+ & = \braket{ 0|\mathcal{T}A_{0}(x)A_{0}(x')|0 } +\frac{i}{m^{2}}\delta ^{4}(x-x')
 \end{align}
 $$
 
@@ -73,22 +78,12 @@ $$
 
 where the last term is exactly the extra contact term in the canonical formalism, which comes from quantum fluctuation of $\displaystyle{A_{0}}$.
 
-$$\tag{.}
-\begin{align}
-\pi ^{i} & =F^{i0} \\
- & =\partial ^{i}A^{0}-\partial ^{0}A^{i} \\
- & =\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}e^{s0}_{k}(\partial ^{i}\sigma _{k}a_{ks}+\partial ^{i}\sigma ^{*}_{k}a_{ks}^{\dagger})-e^{si}_{k}(\partial ^{0}\sigma _{k}a_{ks}+\partial ^{0}\sigma ^{*}_{ks}a_{ks}^{\dagger}) \\
-X_{\pi ^{i}(x)} & =-i \int \mathrm{d}^3\vec{k}\sum ^{3}_{s=1} \left(\frac{\delta \pi ^{i}}{\delta a_{ks}} \frac{\delta}{\delta a^{\dagger}_{ks}}-\frac{\delta \pi ^{i}}{\delta a^{\dagger}_{ks}} \frac{\delta}{\delta a_{ks}}\right) \\
- & =-i \int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}\left(\partial ^{i} \frac{\delta A^{0}}{\delta a_{ks}} \frac{\delta}{\delta a^{\dagger}_{ks}}-\partial ^{i} \frac{\delta A^{0}}{\delta a^{\dagger}_{ks}} \frac{\delta}{\delta a_{ks}}-\partial ^{0} \frac{\delta A^{i}}{\delta a_{ks}} \frac{\delta}{\delta a^{\dagger}_{ks}}+\partial ^{0} \frac{\delta A^{i}}{\delta a_{ks}^{\dagger}} \frac{\delta}{\delta a_{ks}}\right) \\
- & =-i \int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1} \left(e^{s 0}_{k}\left( \partial ^{i}\sigma _{ks} \frac{\delta}{\delta a^{\dagger}_{ks}}-\partial ^{i}\sigma _{ks}^{*} \frac{\delta}{\delta a_{ks}} \right)-e^{si}_{k}\left(\partial ^{0}\sigma _{ks} \frac{\delta}{\delta a^{\dagger}_{ks}}-\partial ^{0}\sigma ^{*}_{ks} \frac{\delta}{\delta a_{ks}}\right)\right)
-\end{align}
-$$
+---
 
-$$\tag{.}
+$$\tag{1.1}
 \begin{align}
-\braket{ \pi ^{j}(x)A_{i}(x') }  & =\theta(x^{0}-x^{'0})\braket{ 0|\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\sum ^{3}_{s,s'=1}(e^{s0}_{k}(\partial ^{j}\sigma _{k}(x)a_{ks}+\partial ^{j}\sigma ^{*}_{k}(x)a^{\dagger}_{ks})-e^{si}_{k}(\partial ^{0}\sigma _{k}(x)a_{ks}+\partial ^{0}\sigma ^{*}_{k}(x)a^{\dagger}_{ks}))e^{s'}_{k'i}(\sigma _{k'}(x')a_{k's'}+\sigma ^{*}_{k'}(x')a^{\dagger}_{k's'})|0 }+\theta(x^{'0}-x^{0})\dots \\
-  & =\theta(x^{0}-x^{'0})\braket{ 0|\int \mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'\sum ^{3}_{s,s'=1}(e^{s 0}_{k}\partial ^{j}\sigma_{k}(x)-e^{si}_{k}\partial ^{0}\sigma_{k}(x))e^{s'}_{k'i}\sigma ^{*}_{k'}(x')a_{ks}a^{\dagger}_{k's'} |0}+\theta(x^{'0}-x^{0}) \dots \\
- & =\theta(x^{0}-x^{'0})\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}[(e^{s 0}_{k}e^{s}_{ki})(\sigma ^{*}_{k}(x')\partial ^{j}\sigma _{k}(x))-(e^{sj}_{k}e^{s}_{ki})(\sigma ^{*}_{k}(x')\partial ^{0}\sigma _{k}(x))]  +\theta(x^{'0}-x^{0})\dots \\
- & =\frac{k^{0}k _{i}}{m^{2}} \int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}} (\theta(x^{0}-x^{'0})ik^{j}e^{ik(x-x')})
+S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right) \\
+  & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A_{j}-\partial _{j}A_{i})(\partial ^{i}A^{j}-\partial ^{j}A^{i})+\frac{1}{2}(\partial _{0}A_{i}+\partial _{i}A_{0})^{2}+\frac{1}{2}m^{2}A_{0}^{2}+\frac{1}{2}m^{2}A_{i}^{2}\right)
+ & =\int \mathrm{d}^{4}x\left(-\frac{1}{2}A_{i}(\partial ^{i}\partial ^{j}-\delta ^{ij}\partial ^{2}-m^{2}\delta ^{ij})A_{j}-\frac{1}{2}A_{0}(\nabla ^{2}-m^{2})A_{0}-A_{i}(\partial ^{i}\partial ^{0})A_{0}\right)
 \end{align}
 $$
