@@ -117,7 +117,7 @@ $$
 
 $$\tag{2.1}
 \begin{align}
-S & =\int _{M}\mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)
+S & =\int _{M}\mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)
 \end{align}
 $$
 
@@ -126,7 +126,7 @@ where $\displaystyle{F_{\mu \nu}=\partial _{\mu}A_{\nu}-\partial _{\nu}A_{\mu}}$
 $$\tag{2.2}
 \begin{align}
 \delta S & =\int _{M}\mathrm{d}^{4}x E^{\nu}\delta A_{\nu}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
-E^{\nu} & =\partial _{\mu}F^{\mu \nu}+m^{2}A^{\nu} \\
+E^{\nu} & =\partial _{\mu}F^{\mu \nu}-m^{2}A^{\nu} \\
 \theta & =\int _{\Sigma}\mathrm{d}^{3}xF^{0\nu}\delta A_{\nu}
 \end{align}
 $$
@@ -143,7 +143,7 @@ and the equation of motion becomes
 
 $$\tag{2.4}
 \begin{align}
-E^{\nu}=\nabla ^{2}A^{\nu}+m^{2}A^{\nu}
+E^{\nu}=\nabla ^{2}A^{\nu}-m^{2}A^{\nu}
 \end{align}
 $$
 

@@ -82,8 +82,8 @@ where the last term is exactly the extra contact term in the canonical formalism
 
 $$\tag{1.1}
 \begin{align}
-S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right) \\
-  & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\partial _{0}A^{i}+\partial _{i}A^{0})^{2}-\frac{1}{2}m^{2}(A^{0})^{2}+\frac{1}{2}m^{2}(A^{i})^{2}\right)
+S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right) \\
+  & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\partial _{0}A^{i}+\partial _{i}A^{0})^{2}+\frac{1}{2}m^{2}(A^{0})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right)
 \end{align}
 $$
 
@@ -91,7 +91,16 @@ the equation of motion for $\displaystyle{A_{0}}$ is then
 
 $$\tag{1.2}
 \begin{align}
-\delta S & =\int \mathrm{d}^{4}x\left(-(\partial _{i}\partial _{0}A^{i}+\partial ^{2} _{i}A^{0})\delta A^{0}-m^{2}A^{0}\delta A^{0}\right) \\
-(\partial _{i}^{2}+m^{2})A^{0} & =
+\partial _{i}^{2}A^{0}-m^{2}A^{0}=-\partial _{i}\partial _{0}A^{i}
+\end{align}
+$$
+
+to solve this equation, we introduce Green function
+
+$$\tag{1.3}
+\begin{align}
+(\partial _{i}^{2}-m^{2})G(x,x') & =\delta ^{3}(x-x') \\
+\implies G(x,x') & = -\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}} \frac{e^{i\vec{k}\cdot(\vec{x}-\vec{y})}}{\vec{k}^{2}+m^{2}} \\
+\implies A^{0}(x) & =-\int \mathrm{d}^{3}y G(x,y)\partial _{i}\partial _{0}A^{i}(y)
 \end{align}
 $$
