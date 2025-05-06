@@ -101,3 +101,4 @@ $$\tag{1.6}
  & = \braket{ 0|\mathcal{T}A_{0}(x)A_{0}(y')|0 } +i\delta(x_{0}-x_{0}')G(\vec{x},\vec{x}')
 \end{align}
 $$
+
