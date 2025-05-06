@@ -101,6 +101,21 @@ $$\tag{1.3}
 \begin{align}
 (\partial _{i}^{2}-m^{2})G(x,x') & =\delta ^{3}(x-x') \\
 \implies G(x,x') & = -\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}} \frac{e^{i\vec{k}\cdot(\vec{x}-\vec{y})}}{\vec{k}^{2}+m^{2}} \\
-\implies A^{0}(x) & =-\int \mathrm{d}^{3}y G(x,y)\partial _{i}\partial _{0}A^{i}(y)
+\implies A^{0}(x) & =-\int \mathrm{d}^{4}y G(x,y)\partial _{i}\partial _{0}A^{i}(y)
+\end{align}
+$$
+
+then the effective Lagrangian becomes
+
+$$\tag{1.4}
+\begin{align}
+\mathcal{L}_{\mathrm{eff}}[A^{i}] & =-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right) \\
+  & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\partial _{0}A^{i}+\partial _{i}A^{0})^{2}+\frac{1}{2}m^{2}(A^{0})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right)
 \end{align}
 $$
