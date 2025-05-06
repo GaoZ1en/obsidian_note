@@ -75,19 +75,6 @@ S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-S & =\frac{1}{2}(-\nabla ^{2}+m^{2})(A^{0})^{2}
-\end{align}
-$$
-
-$$\tag{1.6}
-\begin{align}
-S[A_{i},A_{0}] & =S[A_{i},A^{0}_{c}]+\frac{1}{2}\int \mathrm{d}^{4}xA^{0}_{q} \frac{\delta ^{2}S}{\delta A^{0}\delta A^{0}}\Big|_{A^{0} = A^{0}_{c}}A^{0}_{q}+\dots \\
- & =\int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]-\frac{1}{2}\int \mathrm{d}^{4}xA^{0}_{q}(\nabla ^{2}-m^{2})A^{0}_{q}+\dots
-\end{align}
-$$
-
 consider
 
 $$\tag{1.5}
@@ -106,12 +93,7 @@ where $\displaystyle{\mathcal{L}_{\mathrm{eff}}[A^{i}]}$ is given in (1.4). simi
 $$\tag{1.6}
 \begin{align}
 \braket{ A_{0}(x)A_{0}(x') }  & =\frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A_{0}(x)A_{0}(x')\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)\right)}}{\displaystyle{\int\mathcal{D}A^{0}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)\right)}} \\
- & =\frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A_{0}(x)A_{0}(x')\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)\exp\left(-\frac{i}{2}\int \mathrm{d}^{4}xA^{0}_{q}(\vec{\nabla} ^{2}-m^{2})A^{0}_{q}\right)}}{\displaystyle{\int \mathcal{D}A^{}}}
-\end{align}
-$$
-
-$$\tag{1.1}
-\begin{align}
-S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\partial _{0}A^{i}+\partial _{i}(A^{0}_{c}+A^{0}_{q}))^{2}+\frac{1}{2}m^{2}(A^{0}_{c}+A^{0}_{q})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right)
+ & =\frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A_{0}(x)A_{0}(x')\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)\exp\left(-\frac{i}{2}\int \mathrm{d}^{4}xA^{0}_{q}(\vec{\nabla} ^{2}-m^{2})A^{0}_{q}\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)\exp\left(-\frac{i}{2}\int \mathrm{d}^{4}xA^{0}_{q}(\vec{\nabla}^{2}-m^{2})A^{0}_{q}\right)}} \\
+ & =\displaystyle{\int \mathcal{D}A^{i}\left(\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,0}\partial _{y,j}A^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,}\right)}
 \end{align}
 $$
