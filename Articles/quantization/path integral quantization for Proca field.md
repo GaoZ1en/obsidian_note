@@ -25,7 +25,7 @@ iD^{\mu \nu}(x)(D^{-1})_{\nu \rho}(x,x') & =\delta ^{\mu}_{\rho}\delta ^{4}(x-x'
 \end{align}
 $$
 
-then we have the time-ordered correlation function
+then we have the correlation function
 
 $$\tag{1.4}
 \begin{align}
@@ -101,5 +101,3 @@ $$\tag{1.6}
  & = \braket{ 0|\mathcal{T}A_{0}(x)A_{0}(y')|0 } +i\delta(x_{0}-x_{0}')G(\vec{x},\vec{x}')
 \end{align}
 $$
-
-???
