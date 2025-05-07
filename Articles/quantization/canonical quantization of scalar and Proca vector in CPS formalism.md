@@ -277,7 +277,7 @@ or we should add $\displaystyle{\frac{\lambda}{2}(\partial _{\mu}A^{\mu})^{2}}$ 
 
 $$\tag{3.1}
 \begin{align}
-S & =\int _{M} \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu}+\frac{\lambda}{2}(\partial _{\mu}A^{\mu})^{2}\right)
+S & =\int _{M} \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}+\frac{\lambda}{2}(\partial _{\mu}A^{\mu})^{2}\right)
 \end{align}
 $$
 
@@ -285,9 +285,35 @@ make a variation
 
 $$\tag{3.2}
 \begin{align}
-\delta S & =\int _{M}\mathrm{d}^{4}x\left(-F^{\mu \nu}\partial _{\mu}\delta A_{\nu}+m^{2}A^{\mu}\delta A_{\mu}+\lambda \eta ^{\mu \nu}\partial _{\rho}A^{\rho}\partial _{\mu}\delta A_{\nu}\right) \\
+\delta S & =\int _{M}\mathrm{d}^{4}x\left(-F^{\mu \nu}\partial _{\mu}\delta A_{\nu}-m^{2}A^{\mu}\delta A_{\mu}+\lambda \eta ^{\mu \nu}\partial _{\rho}A^{\rho}\partial _{\mu}\delta A_{\nu}\right) \\
  & =\int _{M}\mathrm{d}^{4}xE^{\nu}\delta A_{\nu}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
-E^{\nu} & =\partial _{\mu}F^{\mu \nu}+m^{2}A^{\nu}-\lambda \eta ^{\mu \nu}\partial _{\nu}(\partial _{\rho}A^{\rho}) \\
+E^{\nu} & =\partial _{\mu}F^{\mu \nu}-m^{2}A^{\nu}-\lambda \eta ^{\mu \nu}\partial _{\nu}(\partial _{\rho}A^{\rho}) \\
 \theta & =\int _{\Sigma}\mathrm{d}^{3}x\tau _{\mu}\left(F^{\mu \nu}\delta A_{\nu}-\lambda \eta ^{\mu \nu}\partial _{\rho}A^{\rho}\delta A_{\nu}\right)
 \end{align}
 $$
+
+the symplectic form is then
+
+$$\tag{3.3}
+\begin{align}
+\omega=\delta \theta & =\int _{\Sigma}\mathrm{d}^{3}x\tau _{\mu}\left(\delta F^{\mu \nu}\wedge\delta A_{\nu}-\lambda \eta ^{\mu \nu}\partial _{\rho}\delta A^{\rho}\wedge \delta A_{\nu}\right)
+\end{align}
+$$
+
+make the following mode expansion of $\displaystyle{A_{\mu}(x)}$
+
+$$\tag{2.6}
+\begin{align}
+A_{\mu}(x)=\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}e^{s}_{k\mu}(\sigma _{k}a_{ks}+\sigma ^{*}_{k}a^{\dagger}_{ks})
+\end{align}
+$$
+
+where $\displaystyle{e^{s}_{k\mu}}$ satisfies $\displaystyle{k^{\mu}e^{s}_{k\mu}=0}$. then we have
+
+$$\tag{3.7}
+\begin{align}
+\omega & =i \int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}\delta a_{ks}^{\dagger}\wedge \delta a_{ks}
+\end{align}
+$$
+
+the following discussion are the same as the former section. 
