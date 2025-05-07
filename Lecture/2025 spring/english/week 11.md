@@ -23,4 +23,8 @@
 	4. front teeth->back teeth
 	5. above the moon->over the moon
 5. 
-	1. 
+	1. B
+	2. C
+	3. D
+	4. A
+	5. D
