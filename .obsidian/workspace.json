@@ -140,9 +140,11 @@
   "lastOpenFiles": [
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/path integral quantization for Proca field.md",
+    "TODO.md",
+    "Reading/supergravity",
+    "Reading/quantization of gauged system",
     "Lecture/2025 spring/english/week 11.md",
     "Articles/quantization/path integral quantization for constrained system.md",
-    "TODO.md",
     "Articles/quantization/harmonic oscillator with multiplier.md",
     "Articles/quantization/quantization of gauged system.md",
     "Articles/quantization/first example.md",
@@ -169,15 +171,12 @@
     "Articles/Noether charge/Brackets.md",
     "Reading/gravity/3-dimensional Einstein's gravity.md",
     "Reading/gravity/surface charge.md",
-    "Articles/Noether charge/Asymptotic behavior.md",
     "Reading/gravity",
     "Articles/some generalization CPS",
     "Drafts",
     "Reading/computational algebraic geometry",
     "Reading/symmetry and topology/topology",
     "Reading/symmetry and topology",
-    "Lecture/2024 quantization and homology method by Si Li",
-    "Reading/supergravity/relativistic field theory in Minkowski spacetime",
-    "Reading/supergravity"
+    "Lecture/2024 quantization and homology method by Si Li"
   ]
 }
