@@ -1,5 +1,5 @@
 
-$$\tag{1.1}
+$$\tag{0.1}
 \begin{align}
 S & =\int _{M}\mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)
 \end{align}
@@ -37,7 +37,7 @@ $$
 
 ---
 
-$$\tag{1.1}
+$$\tag{2.1}
 \begin{align}
 S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right) \\
   & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\partial _{0}A^{i}+\partial _{i}A^{0})^{2}+\frac{1}{2}m^{2}(A^{0})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right)
@@ -46,7 +46,7 @@ $$
 
 the equation of motion for $\displaystyle{A_{0}}$ is then
 
-$$\tag{1.2}
+$$\tag{2.2}
 \begin{align}
 \partial _{i}^{2}A^{0}-m^{2}A^{0}=-\partial _{i}\partial _{0}A^{i}
 \end{align}
@@ -54,7 +54,7 @@ $$
 
 to solve this equation, we introduce Green function
 
-$$\tag{1.3}
+$$\tag{2.3}
 \begin{align}
 (\partial _{i}^{2}-m^{2})G(\vec{x},\vec{x}') & =\delta ^{3}(\vec{x}-\vec{x}') \\
 \implies G(\vec{x},\vec{x}') & = -\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}} \frac{e^{i\vec{k}\cdot(\vec{x}-\vec{y})}}{\vec{k}^{2}+m^{2}} \\
@@ -64,7 +64,7 @@ $$
 
 then the effective Lagrangian becomes
 
-$$\tag{1.4}
+$$\tag{2.4}
 \begin{align}
 S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right) \\
  & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\partial _{0}A^{i}+\partial _{i}A^{0})^{2}+\frac{1}{2}m^{2}(A^{0})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right) \\
@@ -77,7 +77,7 @@ $$
 
 consider
 
-$$\tag{1.5}
+$$\tag{2.5}
 \begin{align}
 \braket{ A_{0}(x)A_{i}(x') }  & = \frac{\displaystyle{\int \mathcal{D}A^{i}\mathcal{D}A^{0}A_{0}(x)A_{i}(x')\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)\right) }}{\displaystyle{\int \mathcal{D}A^{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)\right)}} \\
  & =\frac{\displaystyle{\int \mathcal{D}A^{i}\left(\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{j}\partial _{0}A^{j}(y)A_{i}(x')\right)\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)}}{\displaystyle{\int \mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)}} \\
@@ -90,7 +90,7 @@ $$
 
 where $\displaystyle{\mathcal{L}_{\mathrm{eff}}[A^{i}]}$ is given in (1.4). similarly, we have
 
-$$\tag{1.6}
+$$\tag{2.6}
 \begin{align}
 \braket{ A_{0}(x)A_{0}(x') }  & =\frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A_{0}(x)A_{0}(x')\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)\right)}}{\displaystyle{\int\mathcal{D}A^{0}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)\right)}} \\
  & =\frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A_{0}(x)A_{0}(x')\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)\exp\left(-\frac{i}{2}\int \mathrm{d}^{4}xA^{0}_{q}(\vec{\nabla} ^{2}-m^{2})A^{0}_{q}\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)\exp\left(-\frac{i}{2}\int \mathrm{d}^{4}xA^{0}_{q}(\vec{\nabla}^{2}-m^{2})A^{0}_{q}\right)}} \\
@@ -100,10 +100,14 @@ $$\tag{1.6}
 \end{align}
 $$
 
-$$\tag{1.6'}
+$$\tag{2.6'}
 \begin{align}
  & \int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})G(\vec{x}',\vec{z})\partial _{z,k}\partial _{z,0}\braket{0|\mathcal{T} A^{j}(y)A^{k}(z)|0 } \\
  & =\int \mathrm{d}^{3}\vec{y} G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}\partial _{z,0} (\theta(y_{0}-z_{0})\braket{ 0|A^{j}(y)A^{k}(z)|0 }+\theta(z_{0}-y_{0})\braket{ 0|A^{k}(z)A^{j}(y)| }) \\
- & =\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}(\braket{ 0|\mathcal{T}\partial _{y,0}A^{j}(y)\partial _{z,0}A^{k}(z)|0 }+\delta(y_{0}-z_{0})\braket{ 0|[A^{j}(y),\partial _{z,0}A^{k}(z)]|0 }-\delta(y_{0}-z_{0})\braket{ 0|[\partial _{y,0}A^{j}(y),A^{k}(z)]|0 }) 
+ & =\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}(\braket{ 0|\mathcal{T}\partial _{y,0}A^{j}(y)\partial _{z,0}A^{k}(z)|0 }+\delta(y_{0}-z_{0})\braket{ 0|[A^{j}(y),\partial _{z,0}A^{k}(z)]|0 }-\delta(y_{0}-z_{0})\braket{ 0|[\partial _{y,0}A^{j}(y),A^{k}(z)]|0 })  \\
+ & = \braket{ 0|\mathcal{T}A_{0}(x)A_{0}(x')|0 }+\delta(x_{0}-x'_{0}) \left( \braket{ 0|\left[ \int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}A^{j}(y),A_{0}(x') \right]|0 }-\braket{ 0|\left[ A_{0}(x),\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}A^{k}(z) \right]|0 }  \right)
 \end{align}
 $$
+
+---
+

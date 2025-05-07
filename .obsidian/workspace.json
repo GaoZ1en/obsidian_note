@@ -37,7 +37,8 @@
               "title": "canonical quantization of scalar and Proca vector in CPS formalism"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -136,12 +137,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "25129053e8347076",
+  "active": "33eaffbc6e6d3b01",
   "lastOpenFiles": [
-    "Lecture/2025 spring/english/week 11.md",
-    "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/path integral quantization for Proca field.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+    "Lecture/2025 spring/english/week 11.md",
+    "Articles/quantization/path integral quantization for constrained system.md",
     "TODO.md",
     "Articles/quantization/harmonic oscillator with multiplier.md",
     "Articles/quantization/quantization of gauged system.md",
