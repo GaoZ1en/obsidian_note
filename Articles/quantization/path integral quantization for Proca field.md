@@ -103,11 +103,13 @@ $$
 $$\tag{2.6'}
 \begin{align}
  & \int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})G(\vec{x}',\vec{z})\partial _{z,k}\partial _{z,0}\braket{0|\mathcal{T} A^{j}(y)A^{k}(z)|0 } \\
- & =\int \mathrm{d}^{3}\vec{y} G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}\partial _{z,0} (\theta(y_{0}-z_{0})\braket{ 0|A^{j}(y)A^{k}(z)|0 }+\theta(z_{0}-y_{0})\braket{ 0|A^{k}(z)A^{j}(y)| }) \\
- & =\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}(\braket{ 0|\mathcal{T}\partial _{y,0}A^{j}(y)\partial _{z,0}A^{k}(z)|0 }+\delta(y_{0}-z_{0})\braket{ 0|[A^{j}(y),\partial _{z,0}A^{k}(z)]|0 }-\delta(y_{0}-z_{0})\braket{ 0|[\partial _{y,0}A^{j}(y),A^{k}(z)]|0 })  \\
- & = \braket{ 0|\mathcal{T}A_{0}(x)A_{0}(x')|0 }+\delta(x_{0}-x'_{0}) \left( \braket{ 0|\left[ \int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}A^{j}(y),A_{0}(x') \right]|0 }-\braket{ 0|\left[ A_{0}(x),\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}A^{k}(z) \right]|0 }  \right)
+ & =\left( \braket{ 0|\mathcal{T}\left( \int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}A^{j}(y) \right)\left( \int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}\partial _{z,0}A^{k}(z) \right)|0 } \right)+\delta(x_{0}-x_{0}')\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\braket{ 0|\left[ A^{j}(y), \int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}\partial _{z,0}A^{k}(z)  \right]|0 } \\
+ & = \braket{ 0|\mathcal{T}A_{0}(x)A_{0}(x')|0 }+\delta(x_{0}-x_{0}')\int \mathrm{d}^{3}\vec{y} G(\vec{x},\vec{y})\partial _{y,j}\braket{ 0|\left[A^{j}(y),A_{0}(x') \right]|0 } \\
+ & = \braket{ 0|\mathcal{T}A_{0}(x)A_{0}(x')|0 }-\delta(x_{0}-x_{0}')\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\frac{\vec{\nabla}^{2}_{y}\partial_{y,0}}{m^{2}} \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}} e^{ik\cdot(y-x')}
 \end{align}
 $$
+
+remember that $\displaystyle{y_{0}=x_{0},z_{0}=x_{0}'}$. 
 
 ---
 
