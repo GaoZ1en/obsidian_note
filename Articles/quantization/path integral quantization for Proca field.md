@@ -112,10 +112,10 @@ $$
 $$\tag{.}
 \begin{align}
  & \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}}\vec{\nabla}^{2}_{y}\partial _{y,0}e^{-i\omega(y_{0}-x_{0}')-i\vec{k}\cdot \vec{x}'}\int \mathrm{d}^{3}\vec{y} G(\vec{x},\vec{y})e^{i\vec{k}\cdot\vec{y}} \\
- & = \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{\omega _{k}\vec{k}^{2}}{k^{2}+m^{2}}e^{-i\omega(y_{0}-x_{0}')-i\vec{k}\cdot \vec{x}'} \int \mathrm{d}^{3}\vec{y} \int \frac{\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}} \frac{i}{\vec{k}'^{2}+m^{2}}e^{i\vec{k}'\cdot(\vec{x}-\vec{y})}e^{i\vec{k}\cdot \vec{y}} \\
- & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{\omega _{k}\vec{k}^{2}}{k^{2}+m^{2}}e^{-i \omega(x_{0}-x_{0}')-i\vec{k}\cdot \vec{x}'}\int \mathrm{d}^{3}\vec{k}' \frac{i}{\vec{k}'^{2}+m^{2}} e^{i\vec{k}'\cdot \vec{x}}\int \frac{\mathrm{d}^{3}\vec{y}}{(2\pi)^{3}}e^{i\vec{y}\cdot(\vec{k}-\vec{k}')} \\
- & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{\omega _{k}\vec{k}^{2}}{k^{2}+m^{2}}e^{-i \omega(x_{0}-x_{0}')-i\vec{k}\cdot \vec{x}'} \int \mathrm{d}^{3}\vec{k}' \frac{i}{\vec{k}'^{2}+m^{2}}e^{i\vec{k}'\cdot\vec{x}} \delta ^{3}(\vec{k}-\vec{k}') \\
- & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}\omega _{k}} \frac{i\vec{k}^{2}}{k^{2}+m^{2}} e^{ik\cdot(x-x')}
+ & = \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{\omega\vec{k}^{2}}{k^{2}+m^{2}}e^{-i\omega(y_{0}-x_{0}')-i\vec{k}\cdot \vec{x}'} \int \mathrm{d}^{3}\vec{y} \int \frac{\mathrm{d}^{3}\vec{k}'}{(2\pi)^{3}} \frac{i}{\vec{k}'^{2}+m^{2}}e^{i\vec{k}'\cdot(\vec{x}-\vec{y})}e^{i\vec{k}\cdot \vec{y}} \\
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{\omega\vec{k}^{2}}{k^{2}+m^{2}}e^{-i \omega(x_{0}-x_{0}')-i\vec{k}\cdot \vec{x}'}\int \mathrm{d}^{3}\vec{k}' \frac{i}{\vec{k}'^{2}+m^{2}} e^{i\vec{k}'\cdot \vec{x}}\int \frac{\mathrm{d}^{3}\vec{y}}{(2\pi)^{3}}e^{i\vec{y}\cdot(\vec{k}-\vec{k}')} \\
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{\omega\vec{k}^{2}}{k^{2}+m^{2}}e^{-i \omega(x_{0}-x_{0}')-i\vec{k}\cdot \vec{x}'} \int \mathrm{d}^{3}\vec{k}' \frac{i}{\vec{k}'^{2}+m^{2}}e^{i\vec{k}'\cdot\vec{x}} \delta ^{3}(\vec{k}-\vec{k}') \\
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i\omega\vec{k}^{2}}{(k^{2}+m^{2})(\vec{k}^{2}+m^{2})} e^{ik\cdot(x-x')}
 \end{align}
 $$
 
