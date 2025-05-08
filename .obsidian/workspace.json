@@ -8,33 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "25129053e8347076",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reading/computational algebraic geometry/geometry, algebra and algorithms.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "geometry, algebra and algorithms"
-            }
-          },
-          {
             "id": "7cf9d23082963738",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+                "file": "Reading/differential forms in algebraic topology/de Rham theory/Untitled.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "canonical quantization of scalar and Proca vector in CPS formalism"
+              "title": "Untitled"
             }
           },
           {
@@ -82,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -150,14 +136,16 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "57493beef54bdf2b",
+  "active": "7cf9d23082963738",
   "lastOpenFiles": [
+    "Reading/differential forms in algebraic topology/README.md",
+    "Reading/differential forms in algebraic topology/de Rham theory/Untitled.md",
+    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+    "Reading/computational algebraic geometry/geometry, algebra and algorithms.md",
     "Reading/differential forms in algebraic topology/de Rham theory",
     "Reading/differential forms in algebraic topology",
     "Reading/computational algebraic geometry/README.md",
-    "Reading/computational algebraic geometry/geometry, algebra and algorithms.md",
     "Articles/quantization/path integral quantization for Proca field.md",
-    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/path integral quantization for constrained system.md",
     "TODO.md",
     "Reading/supergravity",
@@ -186,12 +174,10 @@
     "Reading/differential geometry/Riemann geometry.md",
     "Articles/Topologically massive gravity/asymptotic calculation.md",
     "Lecture/2025.4 JT gravity/lecture 2.md",
-    "Articles/Noether charge/Brackets.md",
     "Reading/gravity",
     "Articles/some generalization CPS",
     "Drafts",
     "Reading/computational algebraic geometry",
-    "Reading/symmetry and topology/topology",
-    "Reading/symmetry and topology"
+    "Reading/symmetry and topology/topology"
   ]
 }
