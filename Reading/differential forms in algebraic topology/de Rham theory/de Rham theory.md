@@ -37,7 +37,7 @@ then by taking the difference of the last two maps $\displaystyle{\partial _{0}^
 >[!Proposition 1.1]
 > the Mayer-Vietoris sequence is exact
 
-the Mayer-Vietoris sequence induces a long exact sequence in cohomology, which is also called a Mayer-Vietoris sequence
+the Mayer-Vietoris sequence induces (by snake lemma) a long exact sequence in cohomology, which is also called a Mayer-Vietoris sequence
 
 ```tikz
 \usepackage{tikz-cd,amsmath,amssymb}
@@ -46,4 +46,17 @@ the Mayer-Vietoris sequence induces a long exact sequence in cohomology, which i
 \end{tikzcd}\end{document}
 ```
 
-which can be proven by the 
+we define the support of a form $\displaystyle{\omega}$ on a manifold $\displaystyle{M}$ to be $\displaystyle{\mathrm{Supp}\omega=\left\{p \in M|\omega|_{p}\neq0\right\}}$. we then consider differential forms with compact support $\displaystyle{\omega \in\Omega ^{*}_{c}(M)}$, with the functor $\displaystyle{\Omega ^{*}_{c}}$.
+
+>[!Proposition 1.2]
+> the Mayer-Vietoris sequence of forms with compact support
+> ```tikz
+> \usepackage{tikz-cd,amsmath,amssymb}\begin{document}\begin{tikzcd}0  & \Omega ^{*}_{c}(M) \arrow{l} & \Omega ^{*}_{c}(U)\oplus \Omega ^{*}_{c}(V) \arrow{l} & \Omega ^{*}_{c}(U\cap V) \arrow{l} & 0 \arrow{l}\end{tikzcd}\end{document}
+> ```
+> is exact
+
+so $\displaystyle{\Omega ^{*}_{c}}$ is a covariant functor
+
+## orientation and integration
+
+### orientation and the integral of a differential form
