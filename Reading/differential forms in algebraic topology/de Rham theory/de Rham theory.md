@@ -13,7 +13,7 @@ $$
 
 reverse the arrows, i.e., $\displaystyle{F(f):F(B)\to F(A)}$, $\displaystyle{F}$ is called a **contravariant** functor. then $\displaystyle{\Omega ^{*}}$ is a contravariant functor from the category of Euclidean space $\displaystyle{\left\{\mathbb{R}^{n}\right\}_{n\in \mathbb{Z}}}$ and smooth maps $\displaystyle{\mathbb{R}^{m}\to \mathbb{R}^{n}}$ to the category of commutative differential graded algebras and their homomorphisms.
 
-the functor $\displaystyle{\Omega ^{*}}$ may be extended to the category of differentiable manifolds. relevant concepts are emitted.
+the functor $\displaystyle{\Omega ^{*}}$ may be extended to the category of differentiable manifolds. relevant concepts are omitted.
 
 ### the Mayer-Vietoris sequence
 
@@ -21,4 +21,29 @@ suppose $\displaystyle{M=U\cup V}$ with $\displaystyle{U,V}$ open. then there is
 
 ![[Attachments/Pasted image 20250508165602.png]]
 
-where $\displaystyle{U\coprod V}$ is the disjoint union of $\displaystyle{U}$ and $\displaystyle{V}$ and $\displaystyle{\partial _{0}}$ and $\displaystyle{\partial _{1}}$ are the inclusions of $\displaystyle{U\cap V}$ in $\displaystyle{V}$ and in $\displaystyle{U}$ respectively. applying the contravariant funct
+where $\displaystyle{U\coprod V}$ is the disjoint union of $\displaystyle{U}$ and $\displaystyle{V}$ and $\displaystyle{\partial _{0}}$ and $\displaystyle{\partial _{1}}$ are the inclusions of $\displaystyle{U\cap V}$ in $\displaystyle{V}$ and in $\displaystyle{U}$ respectively. applying the contravariant functor $\displaystyle{\Omega ^{*}}$, we get a sequence of restrictions of forms
+
+![[Attachments/Pasted image 20250508170026.png]]
+
+then by taking the difference of the last two maps $\displaystyle{\partial _{0}^{*}}$ and $\displaystyle{\partial _{1}^{*}}$, we obtain the Mayer-Vietoris sequence
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+0 \arrow{r} & \Omega ^{*}(M) \arrow{r} & \Omega ^{*}(U)\oplus \Omega ^{*}(V) \arrow{r} & \Omega ^{*}(U\cap V) \arrow{r} & 0
+\end{tikzcd}\end{document}
+```
+
+>[!Proposition 1.1]
+> the Mayer-Vietoris sequence is exact
+
+the Mayer-Vietoris sequence induces a long exact sequence in cohomology, which is also called a Mayer-Vietoris sequence
+
+```tikz
+\usepackage{tikz-cd,amsmath,amssymb}
+\begin{document}\begin{tikzcd}
+\dots \arrow{r} & H^{q}(M) \arrow{r} & H^{q}(U)\oplus H^{q}(V) \arrow{r} & H^{q}(U\cap V) \arrow{r}{\mathrm{d}^{*}} & H^{q+1}(M) \arrow{r} & H^{q+1}(U)\oplus H^{q+1}(V) \arrow{r} & H^{q}(U\cap V) \arrow{r}{\mathrm{d}^{*}} & \dots
+\end{tikzcd}\end{document}
+```
+
+which can be proven by the 
