@@ -60,3 +60,12 @@ so $\displaystyle{\Omega ^{*}_{c}}$ is a covariant functor
 ## orientation and integration
 
 ### orientation and the integral of a differential form
+
+a manifold $\displaystyle{M}$ of dimension $\displaystyle{n}$ is orientable iff it has a global nowhere vanishing $\displaystyle{n}$-form
+
+## Poincare lemmas
+
+>[!Lemma Poincare lemma]
+> $$\begin{align}H^{p}(\mathbb{R}^{n})=\begin{cases}\mathbb{R}, & p=0 \\0, & p>0\end{cases},\quad
+H^{p}_{c}(\mathbb{R}^{n})=\begin{cases}\mathbb{R}, & p=n \\0, & p<n\end{cases}\end{align}$$
+
