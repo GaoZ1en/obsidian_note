@@ -129,12 +129,12 @@ remember that $\displaystyle{y_{0}=x_{0},z_{0}=x_{0}'}$.
 
 $$\tag{3.1}
 \begin{align}
-S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\int \mathrm{d}^{3}\vec{y} \partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{i}G(\vec{x},\vec{z})\partial _{k}\dot{A}^{k}(z)\right. \\
+S_{\mathrm{eff}} & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\int \mathrm{d}^{3}\vec{y} \partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{i}G(\vec{x},\vec{z})\partial _{k}\dot{A}^{k}(z)\right. \\
  & \left. +\frac{1}{2}m^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{k}\dot{A}^{k}(z)-\frac{1}{2}m^{2}(A^{i})^{2} \right)
 \end{align}
 $$
 
-the canonical momentum is 
+first, we have the functional derivative
 
 $$\tag{3.2}
 \begin{align}
@@ -142,12 +142,26 @@ $$\tag{3.2}
 \end{align}
 $$
 
-$$\tag{3.2}
+then we have canonical momentum
+
+$$\tag{3.3}
 \begin{align}
-\pi _{i}(x) & =\frac{\delta S}{\delta \dot{A}^{i}(x)} \\
- & =\dot{A}_{i}+\int \mathrm{d}^{3}\vec{y}\partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)+\int \mathrm{d}^{4}x'\dot{A}^{j}\int \mathrm{d}^{3}\vec{y}\partial _{i}G(\vec{x}',\vec{y})\partial _{y,k}\delta ^{k}_{i}\delta(x_{0}-y')
+\pi _{i}(x) & =\frac{\delta S_{\mathrm{eff}}}{\delta \dot{A}^{i}(x)} =\int \mathrm{d}^{4}x'\left(\frac{\delta L(x')}{\delta \dot{A}^{i}(x)}+\int \mathrm{d}^{4}x''\frac{\delta L(x')}{\delta A^{0}(x'')} \frac{\delta A^{0}(x'')}{\delta \dot{A}^{i}(x)}\right){\Big|}_{\tiny\displaystyle{A^{0}(x)=-\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{i}\dot{A}^{i}(y)}} \\
+ & =
 \end{align}
 $$
+
+$$\tag{2.4}
+\begin{align}
+S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\partial _{0}A^{i}+\partial _{i}A^{0})^{2}+\frac{1}{2}m^{2}(A^{0})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right) \\
+ & =\int \mathrm{d}^{4}x\left(\frac{1}{2}(\dot{A}^{i}(x))^{2}+\dot{A}^{i}(x)\partial _{i}A^{0}(x)+\frac{1}{2}(\partial _{i}A^{0}(x))^{2}+\frac{1}{2}m^{2}(A^{0})^{2}\right) \\
+\frac{\delta S}{\delta \dot{A}^{i}(x)} & =\int \mathrm{d}^{4}x'\left(\dot{A}_{i}(x')\delta ^{4}(x-x')+\delta ^{4}(x-x')\partial _{i}A^{0}(x)\right) \\
+ & =\dot{A}_{i}+\partial _{i}A^{0}(x) \\
+\frac{\delta S}{\delta A^{0}(x)} & =\int \mathrm{d}^{4}x'\left( \dot{A}^{i}(x')\partial _{i}\delta ^{4}(x-x')+\partial _{i}A^{0}(x')\partial _{i}\delta ^{4}(x-x')+m^{2}A^{0}(x')\delta ^{4}(x-x') \right) \\
+ & =-\partial _{i}\dot{A}^{i}(x)-\partial _{i}^{2}A^{0}(x)+m^{2}A^{0}(x')
+\end{align}
+$$
+
 
 then the effective Hamiltonian is
 
