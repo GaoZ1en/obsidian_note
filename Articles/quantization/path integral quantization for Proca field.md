@@ -168,7 +168,7 @@ $$\tag{3.4}
 \begin{align}
 L & =-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu} \\
 (D_{\mu \nu}) & =\begin{pmatrix}
-e^{i\beta}(\vec{\nabla}^{2}-m^{2}) & -e^{i(\alpha+\beta)/2}\partial _{0}\partial _{i} \\
+e^{i\beta}(\vec{\nabla}^{2}-m^{2}) & e^{i(\alpha+\beta)/2}\partial _{0}\partial _{i} \\
 e^{i(\alpha+\beta)/2}\partial _{0}\partial _{i} & e^{-i\alpha}\partial _{i}\partial _{j}+\delta _{ij}(-e^{-i\alpha}\vec{\nabla}^{2}+e^{i\alpha}\partial _{0}^{2}+e^{-i\alpha}m^{2})
 \end{pmatrix}
 \end{align}
@@ -188,10 +188,10 @@ where $\displaystyle{(D^{-1})^{\mu \nu}}$ satisfies
 $$\tag{3.6}
 \begin{align}
 (D^{-1})(x,x') & =i\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}}e^{ik\cdot(x-x')}\begin{pmatrix}
-e^{-i\beta}(\vec{k}^{2}+m^{2}) & -k_{0}k_{i}e^{i(\alpha+\beta)/2} \\
-k_{0}k _{i}e^{i(\alpha+\beta)/2} & e^{-i\alpha}k _{i}k _{j}+\delta _{ij}(e^{-i\alpha}\vec{k}^{2}-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}m^{2})
+e^{i\beta}(\vec{k}^{2}+m^{2}) & -k_{0}k_{i}e^{i(\alpha+\beta)/2} \\
+-k_{0}k _{i}e^{i(\alpha+\beta)/2} & -e^{-i\alpha}k _{i}k _{j}+\delta _{ij}(e^{-i\alpha}\vec{k}^{2}-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}m^{2})
 \end{pmatrix}^{-1} \\
-\implies (D^{-1})^{\nu \rho}(x,x') & = \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}\begin{pmatrix}
+\implies D^{-1}(x,x') & = \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}\begin{pmatrix}
 
 \end{pmatrix}
 \end{align}
@@ -200,28 +200,10 @@ $$
 $$\tag{.}
 \begin{align}
 \begin{pmatrix}
-e^{-i\beta}(\vec{k}^{2}+m^{2}) & -e^{i(\alpha+\beta)/2}k_{0}k_{i} \\
-e^{i(\alpha+\beta)/2}k_{0}k_{i} & e^{-i\alpha}k _{i}k _{j}+\delta _{ij}(e^{-i\alpha}(\vec{k}^{2}+m^{2})-e^{i\alpha}k_{0}^{2})
+e^{i\beta}(\vec{k}^{2}+m^{2}) & -e^{i(\alpha+\beta)/2}k_{0}k_{1} & -e^{i(\alpha+\beta)/2}k_{0}k_{2} & -e^{i(\alpha+\beta)/2}k_{0}k_{3} \\
+-e^{i(\alpha+\beta)/2}k_{0}k_{1} & -e^{-i\alpha}k_{1}^{2}-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2}) & -e^{-i\alpha}k_{1}k_{2} & -e^{-i\alpha}k_{1}k_{3} \\
+-e^{i(\alpha+\beta)/2}k_{0}k_{2} & -e^{-i\alpha}k_{1}k_{2} & -e^{-i\alpha}k_{2}^{2}-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2}) & -e^{-i\alpha}k_{2}k_{3} \\
+-e^{i(\alpha+\beta)/2}k_{0}k_{3} & -e^{-i\alpha}k_{1}k_{3} & -e^{-i\alpha}k_{2}k_{3} & -e^{-i\alpha}k_{3}^{2}-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})
 \end{pmatrix}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\begin{pmatrix}
-A & B \\
-C & D
-\end{pmatrix}^{-1} & 
-=\begin{pmatrix}
-A^{-1}+A^{-1}B(D-CA^{-1}B)^{-1}CA^{-1} & -A^{-1}B(D-CA^{-1}B)^{-1} \\
--(D-CA^{-1}B)^{-1}
-\end{pmatrix}
-\end{align}
-$$
-
-
-$$\tag{.}
-\begin{align}
-i(-k^{\mu}k^{\nu}+\eta ^{\mu \nu}k^{2}+\eta ^{\mu \nu}m^{2})(D^{-1})_{\nu \rho}(k)=
 \end{align}
 $$
