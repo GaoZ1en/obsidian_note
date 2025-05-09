@@ -147,27 +147,17 @@ then we have canonical momentum
 $$\tag{3.3}
 \begin{align}
 \pi _{i}(x) & =\frac{\delta S_{\mathrm{eff}}}{\delta \dot{A}^{i}(x)} =\int \mathrm{d}^{4}x'\left(\frac{\delta L(x')}{\delta \dot{A}^{i}(x)}+\int \mathrm{d}^{4}x''\frac{\delta L(x')}{\delta A^{0}(x'')} \frac{\delta A^{0}(x'')}{\delta \dot{A}^{i}(x)}\right){\Big|}_{\tiny\displaystyle{A^{0}(x)=-\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{i}\dot{A}^{i}(y)}} \\
- & =
+ & =\dot{A}_{i}(x)-\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)
 \end{align}
 $$
-
-$$\tag{2.4}
-\begin{align}
-S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\partial _{0}A^{i}+\partial _{i}A^{0})^{2}+\frac{1}{2}m^{2}(A^{0})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right) \\
- & =\int \mathrm{d}^{4}x\left(\frac{1}{2}(\dot{A}^{i}(x))^{2}+\dot{A}^{i}(x)\partial _{i}A^{0}(x)+\frac{1}{2}(\partial _{i}A^{0}(x))^{2}+\frac{1}{2}m^{2}(A^{0})^{2}\right) \\
-\frac{\delta S}{\delta \dot{A}^{i}(x)} & =\int \mathrm{d}^{4}x'\left(\dot{A}_{i}(x')\delta ^{4}(x-x')+\delta ^{4}(x-x')\partial _{i}A^{0}(x)\right) \\
- & =\dot{A}_{i}+\partial _{i}A^{0}(x) \\
-\frac{\delta S}{\delta A^{0}(x)} & =\int \mathrm{d}^{4}x'\left( \dot{A}^{i}(x')\partial _{i}\delta ^{4}(x-x')+\partial _{i}A^{0}(x')\partial _{i}\delta ^{4}(x-x')+m^{2}A^{0}(x')\delta ^{4}(x-x') \right) \\
- & =-\partial _{i}\dot{A}^{i}(x)-\partial _{i}^{2}A^{0}(x)+m^{2}A^{0}(x')
-\end{align}
-$$
-
 
 then the effective Hamiltonian is
 
 $$\tag{3.3}
 \begin{align}
-H & =\int \mathrm{d}^{4}x(\pi _{i}\dot{A}^{i}-L)
+H & =\int \mathrm{d}^{4}x(\pi _{i}\dot{A}^{i}-L) \\
+ & =\int \mathrm{d}^{4}x\left(\pi _{i}\dot{A}^{i}-L_{\mathrm{eff}}\right) \\
+ & =
 \end{align}
 $$
 
