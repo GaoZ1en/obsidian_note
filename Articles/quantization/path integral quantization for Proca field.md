@@ -128,15 +128,26 @@ remember that $\displaystyle{y_{0}=x_{0},z_{0}=x_{0}'}$.
 ---
 
 
-$$\tag{2.4}
+$$\tag{3.1}
 \begin{align}
-S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\partial _{0}A^{i}+\partial _{i}A^{0})^{2}+\frac{1}{2}m^{2}(A^{0})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right)
+S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\partial _{i}A^{0}+\frac{1}{2}(\partial _{i}A^{0})^{2}+\frac{1}{2}m^{2}(A^{0})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right)
 \end{align}
 $$
 
-the Hamiltonian is
+$$\tag{3.2}
+\begin{align}
+\pi _{i} & =\frac{\delta S}{\delta \dot{A}^{i}} \\
+ & =\dot{A}_{i}+\partial _{i}A^{0}
+\end{align}
+$$
 
+then the Hamiltonian is
 
+$$\tag{3.3}
+\begin{align}
+H & =\int \mathrm{d}^{4}x(\pi _{i}\dot{A}^{i}-L)
+\end{align}
+$$
 
 consider
 
