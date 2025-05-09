@@ -127,12 +127,22 @@ remember that $\displaystyle{y_{0}=x_{0},z_{0}=x_{0}'}$.
 
 ---
 
-$$\tag{3.1}
+
+$$\tag{2.4}
 \begin{align}
-S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right) \\
- & = \int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\partial _{0}A^{i}+\partial _{i}A^{0})^{2}+\frac{1}{2}m^{2}(A^{0})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right)
+S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\partial _{0}A^{i}+\partial _{i}A^{0})^{2}+\frac{1}{2}m^{2}(A^{0})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right)
 \end{align}
 $$
 
-not completed...
+the Hamiltonian is
 
+
+
+consider
+
+$$\tag{3.1}
+\begin{align}
+ & \braket{ A^{i}|_{t_{f}}|e^{-iH(t_{f}-t_{i})e^{-i\alpha}}|A^{i}|_{t_{i}} }  \\
+ & = \braket{ A^{i}|_{t_{f}}| } 
+\end{align}
+$$
