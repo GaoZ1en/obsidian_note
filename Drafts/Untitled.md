@@ -39,12 +39,10 @@ r
 \end{align}
 $$
 
+let $\displaystyle{\eta=-\frac{1}{2}(\cos \delta _{x}+\cos \delta _{y}\pm \sin \delta _{x}\sin \delta _{y}),\lambda=\frac{1}{2}(1+\sin ^{2}\delta _{x}\sin ^{2}\delta _{y}\pm 2\sin \delta _{x}\sin \delta _{y}\cos \delta _{y})}$
+
 $$\tag{.}
 \begin{align}
--\cos ^{2}\theta _{2} \begin{pmatrix}
-1 &  & -\frac{\sqrt{ 2 }}{2}\cos \theta_{1} &  & -\frac{1}{2}(\cos \delta _{x}+\cos \delta _{y}\pm \sin \delta _{x}\sin \delta _{y}) \\
--\frac{\sqrt{ 2 }}{2}\cos \theta_{1} &  & \cos ^{2}\theta_{1} &  & -\frac{\sqrt{ 2 }}{2}\cos \theta_{1}\cos \delta _{x} \\
--\frac{1}{2}(\cos \delta _{x}\cos \delta _{y}\pm \sin \delta _{x}\sin \delta _{y}) &  & -\frac{\sqrt{ 2 }}{2}\cos \theta_{1}\cos \delta _{x} &  & \frac{1}{2}(1+\sin ^{2}\delta _{x}\sin ^{2}\delta _{y}\pm2\sin \delta _{x}\sin \delta _{y}\cos \delta _{y})\\
-\end{pmatrix}
+\frac{1}{2}\cos \theta ^{2}_{1}\cos \theta _{2}^{2}(2\eta ^{2}-\lambda-\eta \cos \delta _{x}+\cos ^{2}\delta _{x})
 \end{align}
 $$
