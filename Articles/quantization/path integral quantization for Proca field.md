@@ -127,21 +127,29 @@ remember that $\displaystyle{y_{0}=x_{0},z_{0}=x_{0}'}$.
 
 ---
 
-
 $$\tag{3.1}
 \begin{align}
-S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\partial _{i}A^{0}+\frac{1}{2}(\partial _{i}A^{0})^{2}+\frac{1}{2}m^{2}(A^{0})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right)
+S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\int \mathrm{d}^{3}\vec{y} \partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{i}G(\vec{x},\vec{z})\partial _{k}\dot{A}^{k}(z)\right. \\
+ & \left. +\frac{1}{2}m^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{k}\dot{A}^{k}(z)-\frac{1}{2}m^{2}(A^{i})^{2} \right)
+\end{align}
+$$
+
+the canonical momentum is 
+
+$$\tag{3.2}
+\begin{align}
+\frac{\delta A^{0}(x)}{\delta \dot{A}^{i}(y)} & =-\delta(x_{0}-y_{0})\partial _{x,i}G(\vec{x},\vec{y})
 \end{align}
 $$
 
 $$\tag{3.2}
 \begin{align}
-\pi _{i} & =\frac{\delta S}{\delta \dot{A}^{i}} \\
- & =\dot{A}_{i}+\partial _{i}A^{0}
+\pi _{i}(x) & =\frac{\delta S}{\delta \dot{A}^{i}(x)} \\
+ & =\dot{A}_{i}+\int \mathrm{d}^{3}\vec{y}\partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)+\int \mathrm{d}^{4}x'\dot{A}^{j}\int \mathrm{d}^{3}\vec{y}\partial _{i}G(\vec{x}',\vec{y})\partial _{y,k}\delta ^{k}_{i}\delta(x_{0}-y')
 \end{align}
 $$
 
-then the Hamiltonian is
+then the effective Hamiltonian is
 
 $$\tag{3.3}
 \begin{align}
