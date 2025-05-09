@@ -162,10 +162,23 @@ H & =\int \mathrm{d}^{4}x(\pi _{i}\dot{A}^{i}[\pi _{i}]-L_{\mathrm{eff}}[A^{i},\
 \end{align}
 $$
 
-after Wick rotation, we have
+after a similar procedure as [[Articles/quantization/path integral quantization for constrained system]], we have the Wick-rotated Lagrangian (I don't know how to write the derivation here)
 
-$$\tag{2.4}
+$$\tag{3.4}
 \begin{align}
-L_{}
+L & =-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu} \\
+(D_{\mu \nu}) & =\begin{pmatrix}
+e^{i\beta}(\vec{\nabla}^{2}-m^{2}) & -e^{i(\alpha+\beta)/2}\partial _{0}\partial _{i} \\
+e^{i(\alpha+\beta)/2}\partial _{0}\partial _{i} & e^{-i\alpha}\partial _{i}\partial _{j}+\delta _{ij}(-e^{-i\alpha}\vec{\nabla}^{2}+e^{i\alpha}\partial _{0}^{2}+e^{-i\alpha}m^{2})
+\end{pmatrix}
+\end{align}
+$$
+
+consider the generating functional
+
+$$\tag{3.5}
+\begin{align}
+Z[J_{\mu}] & =\int \mathcal{D}A_{\mu}\exp\left(\int \mathrm{d}^{4}x\left(-\frac{i}{2}A^{\mu}D_{\mu \nu}A^{\nu}+iJ_{\mu}A^{\mu}\right)\right) \\
+ & =\exp\left(-\frac{1}{2}\int \mathrm{d}^{4}x\mathrm{d}^{4}x'J_{\mu}(x)D^{\mu \nu}(x,x')J_{\nu}(x')\right)
 \end{align}
 $$

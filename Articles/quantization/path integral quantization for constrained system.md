@@ -186,7 +186,7 @@ where
 $$\tag{4.3}
 \begin{align}
 X & =\begin{pmatrix}x & \phi\end{pmatrix} \\
-D & =\begin{pmatrix}me^{i\alpha} \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+ke^{-i\alpha} & -e^{i(\alpha+\beta)/2}\lambda \frac{\mathrm{d}}{\mathrm{d}t} \\e^{i(\alpha+\beta)/2}\lambda \frac{\mathrm{d}}{\mathrm{d}t} & -e^{-i\beta} \\\end{pmatrix} \\
+D & =\begin{pmatrix}me^{i\alpha} \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+ke^{-i\alpha} & -e^{i(\alpha+\beta)/2}\lambda \frac{\mathrm{d}}{\mathrm{d}t} \\e^{i(\alpha+\beta)/2}\lambda \frac{\mathrm{d}}{\mathrm{d}t} & -e^{i\beta} \\\end{pmatrix} \\
 J & =\begin{pmatrix}J_{x} & J_{\phi}\end{pmatrix}
 \end{align}
 $$
