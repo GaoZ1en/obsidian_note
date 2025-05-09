@@ -130,7 +130,9 @@ remember that $\displaystyle{y_{0}=x_{0},z_{0}=x_{0}'}$.
 $$\tag{3.1}
 \begin{align}
 S_{\mathrm{eff}} & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\int \mathrm{d}^{3}\vec{y} \partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{i}G(\vec{x},\vec{z})\partial _{k}\dot{A}^{k}(z)\right. \\
- & \left. +\frac{1}{2}m^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{k}\dot{A}^{k}(z)-\frac{1}{2}m^{2}(A^{i})^{2} \right)
+ & \left. +\frac{1}{2}m^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{k}\dot{A}^{k}(z)-\frac{1}{2}m^{2}(A^{i})^{2} \right) \\
+L_{\mathrm{eff}} & =-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{x,i}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z) \\
+ & +\frac{1}{2}m^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z)-\frac{1}{2}m^{2}(A^{i})^{2}
 \end{align}
 $$
 
@@ -147,7 +149,8 @@ then we have canonical momentum
 $$\tag{3.3}
 \begin{align}
 \pi _{i}(x) & =\frac{\delta S_{\mathrm{eff}}}{\delta \dot{A}^{i}(x)} =\int \mathrm{d}^{4}x'\left(\frac{\delta L(x')}{\delta \dot{A}^{i}(x)}+\int \mathrm{d}^{4}x''\frac{\delta L(x')}{\delta A^{0}(x'')} \frac{\delta A^{0}(x'')}{\delta \dot{A}^{i}(x)}\right){\Big|}_{\tiny\displaystyle{A^{0}(x)=-\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{i}\dot{A}^{i}(y)}} \\
- & =\dot{A}_{i}(x)-\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)
+ & =\dot{A}_{i}(x)-\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y) \\
+\implies \dot{A}^{i} & =\dot{A}^{i}[\pi _{i}]
 \end{align}
 $$
 
@@ -155,17 +158,14 @@ then the effective Hamiltonian is
 
 $$\tag{3.3}
 \begin{align}
-H & =\int \mathrm{d}^{4}x(\pi _{i}\dot{A}^{i}-L) \\
- & =\int \mathrm{d}^{4}x\left(\pi _{i}\dot{A}^{i}-L_{\mathrm{eff}}\right) \\
- & =
+H & =\int \mathrm{d}^{4}x(\pi _{i}\dot{A}^{i}[\pi _{i}]-L_{\mathrm{eff}}[A^{i},\dot{A}^{i}[\pi _{i}]])
 \end{align}
 $$
 
-consider
+after Wick rotation, we have
 
-$$\tag{3.1}
+$$\tag{2.4}
 \begin{align}
- & \braket{ A^{i}|_{t_{f}}|e^{-iH(t_{f}-t_{i})e^{-i\alpha}}|A^{i}|_{t_{i}} }  \\
- & = \braket{ A^{i}|_{t_{f}}| } 
+L_{}
 \end{align}
 $$
