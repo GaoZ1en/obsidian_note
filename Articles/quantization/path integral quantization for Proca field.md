@@ -189,8 +189,8 @@ $$\tag{3.6}
 \begin{align}
 iD_{\mu \nu}(D^{-1})^{\nu \rho}(x,x') & =\delta ^{\rho}_{\mu}\delta ^{4}(x-x') \\
 \implies D^{-1}(x,x') & = \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}\begin{pmatrix}
-e^{-i\beta}\left( -e^{-i\alpha}+e^{i\alpha}\frac{k_{0}^{2}}{m^{2}} \right) & -e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} \\
--e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} & \delta _{ij}+\frac{k _{i}k _{j}}{m^{2}}
+e^{-i\beta}\left( -e^{-i\alpha}+e^{i\alpha}\frac{k_{0}^{2}}{m^{2}} \right) & e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} \\
+e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} & \delta _{ij}+\frac{k _{i}k _{j}}{m^{2}}
 \end{pmatrix}
 \end{align}
 $$
@@ -202,8 +202,10 @@ $$\tag{3.7}
 \braket{ A^{i}(x)A^{j}(x') } & =-\frac{\delta ^{2}\ln Z[J]}{\delta J_{i}(x)\delta J_{j}(x')} \Big|_{J=0} \\
  & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}\left(\delta _{ij}+\frac{k _{i}k _{j}}{m^{2}}\right) \\
 \braket{ A^{i}(x)A^{0}(x') } & =-\frac{\left(\delta ^{2}\ln Z[J]\right)}{\delta J_{i}(x)\delta J_{0}(x')} \Big|_{J=0} \\
- & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})} \left(-e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}}\right) \\
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})} e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} \\
 \braket{ A^{0}(x)A^{0}(x') } & =-\frac{\delta ^{2}\ln Z[J]}{\delta J_{0}(x)\delta J_{0}(x')}\Big|_{J=0} \\
- & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k}
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})} e^{-i\beta}\left(-e^{-i\alpha}+e^{i\alpha} \frac{k_{0}^{2}}{m^{2}}\right)
 \end{align}
 $$
+
+when $\displaystyle{\alpha,\beta\to0}$, we return the result in (1.4)
