@@ -187,29 +187,21 @@ where $\displaystyle{(D^{-1})^{\mu \nu}}$ satisfies
 
 $$\tag{3.6}
 \begin{align}
-(D^{-1})(x,x') & =i\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}}e^{ik\cdot(x-x')}\begin{pmatrix}
-e^{i\beta}(\vec{k}^{2}+m^{2}) & -k_{0}k_{i}e^{i(\alpha+\beta)/2} \\
--k_{0}k _{i}e^{i(\alpha+\beta)/2} & -e^{-i\alpha}k _{i}k _{j}+\delta _{ij}(e^{-i\alpha}\vec{k}^{2}-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}m^{2})
-\end{pmatrix}^{-1} \\
+iD_{\mu \nu}(D^{-1})^{\nu \rho}(x,x') & =\delta ^{\rho}_{\mu}\delta ^{4}(x-x') \\
 \implies D^{-1}(x,x') & = \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}\begin{pmatrix}
-
+e^{-i\beta}\left( -1+\frac{k_{0}^{2}}{m^{2}} \right) & -e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} \\
+-e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} & \delta _{ij}+\frac{k _{i}k _{j}}{m^{2}}
 \end{pmatrix}
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-\begin{pmatrix}
-e^{i\beta}(\vec{k}^{2}+m^{2}) & -e^{i(\alpha+\beta)/2}k_{0}k_{1} & -e^{i(\alpha+\beta)/2}k_{0}k_{2} & -e^{i(\alpha+\beta)/2}k_{0}k_{3} \\
--e^{i(\alpha+\beta)/2}k_{0}k_{1} & -e^{-i\alpha}k_{1}^{2}-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2}) & -e^{-i\alpha}k_{1}k_{2} & -e^{-i\alpha}k_{1}k_{3} \\
--e^{i(\alpha+\beta)/2}k_{0}k_{2} & -e^{-i\alpha}k_{1}k_{2} & -e^{-i\alpha}k_{2}^{2}-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2}) & -e^{-i\alpha}k_{2}k_{3} \\
--e^{i(\alpha+\beta)/2}k_{0}k_{3} & -e^{-i\alpha}k_{1}k_{3} & -e^{-i\alpha}k_{2}k_{3} & -e^{-i\alpha}k_{3}^{2}-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})
+\frac{1}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}\begin{pmatrix}
+e^{-i\beta}\left( -1+\frac{k_{0}^{2}}{m^{2}} \right) & -e^{i(\alpha-\beta)/2} \frac{k_{0}k_{1}}{m^{2}} & -e^{i(\alpha-\beta)/2} \frac{k_{0}k_{2}}{m^{2}} & -e^{i(\alpha-\beta)/2} \frac{k_{0}k_{3}}{m^{2}} \\
+-e^{i(\alpha-\beta)/2} \frac{k_{0}k_{1}}{m^{2}} & 1+\frac{k_{1}^{2}}{m^{2}} & \frac{k_{1}k_{2}}{m^{2}} & \frac{k_{1}k_{3}}{m^{2}} \\
+-e^{i(\alpha-\beta)/2} \frac{k_{0}k_{2}}{m^{2}} & \frac{k_{1}k_{2}}{m^{2}} & 1+\frac{k_{1}k_{2}}{m^{2}} & \frac{k_{2}k_{3}}{m^{2}} \\
+-e^{i(\alpha-\beta)/2} \frac{k_{0}k_{3}}{m^{2}} & \frac{k_{1}k_{3}}{m^{2}} & \frac{k_{2}k_{3}}{m^{2}} & 1+\frac{k_{3}^{2}}{m^{2}}
 \end{pmatrix}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\frac{1}{2}A^{\mu}(\eta _{\mu \nu}\partial ^{\nu}\partial _{\nu}A_{\mu}-\partial _{\mu}\partial _{\nu}A^{\nu})-\frac{1}{2}m^{2}\eta _{\mu \nu}A^{\mu}A^{\nu}
 \end{align}
 $$
