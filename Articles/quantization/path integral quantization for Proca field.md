@@ -207,3 +207,9 @@ e^{i\beta}(\vec{k}^{2}+m^{2}) & -e^{i(\alpha+\beta)/2}k_{0}k_{1} & -e^{i(\alpha+
 \end{pmatrix}
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+\frac{1}{2}A^{\mu}(\eta _{\mu \nu}\partial ^{\nu}\partial _{\nu}-\partial _{\mu}\partial _{\nu})A^{\nu}-\frac{1}{2}m^{2}\eta _{\mu \nu}A^{\mu}A^{\nu}
+\end{align}
+$$
