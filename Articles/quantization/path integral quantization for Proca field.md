@@ -210,6 +210,6 @@ $$
 
 $$\tag{.}
 \begin{align}
-\frac{1}{2}A^{\mu}(\eta _{\mu \nu}\partial ^{\nu}\partial _{\nu}-\partial _{\mu}\partial _{\nu})A^{\nu}-\frac{1}{2}m^{2}\eta _{\mu \nu}A^{\mu}A^{\nu}
+\frac{1}{2}A^{\mu}(\eta _{\mu \nu}\partial ^{\nu}\partial _{\nu}A_{\mu}-\partial _{\mu}\partial _{\nu}A^{\nu})-\frac{1}{2}m^{2}\eta _{\mu \nu}A^{\mu}A^{\nu}
 \end{align}
 $$
