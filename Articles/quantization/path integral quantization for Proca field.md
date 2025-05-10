@@ -194,14 +194,17 @@ e^{-i\beta}\left( -1+\frac{k_{0}^{2}}{m^{2}} \right) & -e^{i(\alpha-\beta)/2} \f
 \end{pmatrix}
 \end{align}
 $$
+$$\tag{.}
+\begin{align}
+(D_{\mu \nu})(k) & =\begin{pmatrix}
+e^{i\beta}(-\vec{k}^{2}-m^{2}) & e^{i(\alpha+\beta)/2}\partial _{0}\partial _{i} \\
+e^{i(\alpha+\beta)/2}\partial _{0}\partial _{i} & e^{-i\alpha}\partial _{i}\partial _{j}+\delta _{ij}(-e^{-i\alpha}\vec{\nabla}^{2}+e^{i\alpha}\partial _{0}^{2}+e^{-i\alpha}m^{2}) \\
+\end{pmatrix}
+\end{align}
+$$
 
 $$\tag{.}
 \begin{align}
-\frac{1}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}\begin{pmatrix}
-e^{-i\beta}\left( -1+\frac{k_{0}^{2}}{m^{2}} \right) & -e^{i(\alpha-\beta)/2} \frac{k_{0}k_{1}}{m^{2}} & -e^{i(\alpha-\beta)/2} \frac{k_{0}k_{2}}{m^{2}} & -e^{i(\alpha-\beta)/2} \frac{k_{0}k_{3}}{m^{2}} \\
--e^{i(\alpha-\beta)/2} \frac{k_{0}k_{1}}{m^{2}} & 1+\frac{k_{1}^{2}}{m^{2}} & \frac{k_{1}k_{2}}{m^{2}} & \frac{k_{1}k_{3}}{m^{2}} \\
--e^{i(\alpha-\beta)/2} \frac{k_{0}k_{2}}{m^{2}} & \frac{k_{1}k_{2}}{m^{2}} & 1+\frac{k_{1}k_{2}}{m^{2}} & \frac{k_{2}k_{3}}{m^{2}} \\
--e^{i(\alpha-\beta)/2} \frac{k_{0}k_{3}}{m^{2}} & \frac{k_{1}k_{3}}{m^{2}} & \frac{k_{2}k_{3}}{m^{2}} & 1+\frac{k_{3}^{2}}{m^{2}}
-\end{pmatrix}
+
 \end{align}
 $$
