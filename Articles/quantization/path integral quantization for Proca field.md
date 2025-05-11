@@ -131,7 +131,7 @@ $$\tag{3.1}
 \begin{align}
 S_{\mathrm{eff}} & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\int \mathrm{d}^{3}\vec{y} \partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{i}G(\vec{x},\vec{z})\partial _{k}\dot{A}^{k}(z)\right. \\
  & \left. +\frac{1}{2}m^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{k}\dot{A}^{k}(z)-\frac{1}{2}m^{2}(A^{i})^{2} \right) \\
-L_{\mathrm{eff}} & =-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{x,i}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z) \\
+\mathcal{L}_{\mathrm{eff}} & =-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{x,i}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z) \\
  & +\frac{1}{2}m^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z)-\frac{1}{2}m^{2}(A^{i})^{2}
 \end{align}
 $$
@@ -169,7 +169,9 @@ $$\tag{3.4}
  & \braket{ A^{i}_{t_{f}}|e^{-iH(t_{f}-t_{i})e^{-i\alpha}}|A^{j}_{t_{i}} } \\
 = & \mathcal{N}\braket{ A^{i}_{t_{f}}|e^{-iH\Delta te^{-i\alpha}}\dots e^{-iH\Delta te^{-i\alpha}}|A^{j}_{t_{i}} } \\
 = & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\braket{A^{i}_{t_{f}}|e^{-iH\Delta te^{-i\alpha}}|A^{i_{n-1}}_{n-1} }\braket{ A^{i_{n-1}}_{n-1}|e^{-iH\Delta te^{-i\alpha}}|A^{i_{n-2}}_{n-2} }\dots\braket{ A^{i_{1}}_{1}|e^{-iH\Delta te^{-i\alpha}}|A^{j}_{t_{i}} } \\
-= & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}D\pi ^{b}_{i_{b}}\braket{ A^{i}_{t_{f}}|e^{-iH\Delta te^{-i\alpha}}|\pi ^{n}_{i_{n}} } \braket{ \pi ^{n}_{i_{n}}|A^{i_{n-1}}_{n-1} }\dots\braket{ A^{i_{1}}_{1}| }  
+= & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}D\pi ^{b}_{j_{b}}\braket{ A^{i}_{t_{f}}|e^{-iH\Delta te^{-i\alpha}}|\pi ^{n}_{j_{n}} } \braket{ \pi ^{n}_{j_{n}}|A^{i_{n-1}}_{n-1} }\dots\braket{ A^{i_{1}}_{1}|e^{-iH\Delta te^{-i\alpha}}|\pi ^{1}_{j_{1}}}\braket{ \pi ^{1}_{j_{1}}|A^{j}_{t_{i}} }  \\
+= & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}D\pi ^{b}_{j_{b}}\exp\left( i\sum ^{n}_{k=1}\pi ^{k}_{j_{k}}(A^{i_{k}}_{k}-A^{i_{k-1}}_{k-1})-i\Delta te^{-i\alpha}\int \mathrm{d}^{4}x(\pi _{i}\dot{A}^{i}[\pi _{i}]-\mathcal{L}_{\mathrm{eff}}[A^{i},\dot{A}^{i}[\pi _{i}]])\right) \\
+= & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}
 \end{align}
 $$
 
@@ -300,3 +302,7 @@ $$\tag{4.8}
  & -e^{-i(3\alpha+\beta)} \frac{i}{m^{2}}\delta ^{4}(x-y)
 \end{align}
 $$
+
+---
+
+finally we will prove 

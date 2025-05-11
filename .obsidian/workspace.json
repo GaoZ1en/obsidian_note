@@ -6,7 +6,7 @@
       {
         "id": "805322694e0be78a",
         "type": "tabs",
-        "dimension": 58.648648648648646,
+        "dimension": 53.783783783783775,
         "children": [
           {
             "id": "d684dcea5b602dc0",
@@ -28,7 +28,7 @@
       {
         "id": "38e4f75f23ab0dd5",
         "type": "tabs",
-        "dimension": 41.351351351351354,
+        "dimension": 46.21621621621622,
         "children": [
           {
             "id": "292c837041187751",
@@ -106,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -207,12 +207,12 @@
   },
   "active": "d684dcea5b602dc0",
   "lastOpenFiles": [
-    "Articles/quantization/path integral quantization for constrained system.md",
+    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/path integral quantization for Proca field.md",
+    "Articles/quantization/path integral quantization for constrained system.md",
+    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Articles/Bachelor thesis/section 2 covariant phase space formalism and Noether theorem.md",
     "Articles/Noether charge/An example of constrained Hamiltonian systems.md",
-    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
-    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Drafts/Untitled.md",
     "Reading/differential forms in algebraic topology/de Rham theory/de Rham theory.md",
     "Lecture/2025 spring/python for general purpose/Untitled.md",
