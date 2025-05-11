@@ -259,19 +259,20 @@ $$
 
 where $\displaystyle{\sigma _{k}(x)=\frac{\exp\left(i\vec{k}\cdot \vec{x}-ik_{0}te^{-i\alpha}\right)}{(2\pi)^{3/2}\sqrt{ 2\omega _{k} }}}$ satisfies
 
-$$\tag{.}
+$$\tag{4.6}
 \begin{align}
 \braket{ \sigma _{k},\sigma _{k'} }_{\mathrm{KG}} & =i e^{i\alpha}\int _{\Sigma}\mathrm{d}^{3}x\left(\sigma ^{*}_{k}\partial _{0}\sigma _{k'}-\sigma ^{*}_{k'}\partial _{0}\sigma _{k}\right) \\
  & =\delta ^{3}(\vec{k}-\vec{k}')
 \end{align}
 $$
 
-and $\displaystyle{e^{s}_{k\mu}}$ satisfies
+and $\displaystyle{e^{s}_{k\mu}}$ satisfies $\displaystyle{e^{-i\alpha}k^{i}e^{s}_{ki}+e^{i(\alpha+\beta)/2}k^{0}e^{s}_{k0}=0}$ and
 
-$$\tag{.}
+$$\tag{4.7}
 \begin{align}
-\int _{\Sigma}\mathrm{d}^{3}x \frac{1}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }}\left(k'_{0}\exp\left(-i\vec{k}\cdot \vec{x}+ik_{0}te^{-i\alpha}\right)\exp\left(i\vec{k}'\cdot x-ik_{0}'te^{i\alpha}\right)-k_{0}\exp\left(-i\vec{k}'\cdot \vec{x}+ik_{0}te^{i\alpha}\right)\exp\left(i\vec{k}\cdot \vec{x}-ik_{0}te^{-i\alpha}\right)\right)
+\sum ^{3}_{s=1}e^{s}_{k\mu}e^{s'}_{k\nu} & =\begin{pmatrix}
+-1+e^{i(\alpha+\beta)} \frac{k_{0}^{2}}{m^{2}} & e^{i(\beta-\alpha)/2}k_{0}k _{i} \\
+e^{i(\beta-\alpha)/2}k_{0}k _{i} & \delta _{ij}+e^{-2i\alpha}k _{i}k _{j}
+\end{pmatrix}
 \end{align}
 $$
-
-$\displaystyle{\exp\left(i\vec{k}\cdot \vec{x}-ik_{0}t\cos \alpha-k_{0}t\sin \alpha\right)}$
