@@ -251,15 +251,27 @@ $$
 
 the solution space of the equation of motion can be expanded via
 
-$$\tag{4.4}
-\begin{align}
-(e^{-i\alpha}(\delta _{ij}(-\vec{k}^{2}-m^{2})+k _{i}k _{j})+e^{i\alpha}\delta _{ij}k_{0}^{2})A^{j}+e^{i(\alpha+\beta)/2}k_{0}k _{i}A^{0}=0 \\
-e^{i\beta}(\vec{k}^{2}+m^{2})A^{0}+e^{i(\alpha+\beta)/2}k_{0}k_{i}A^{i}=0
-\end{align}
-$$
-
-$$\tag{.}
+$$\tag{4.5}
 \begin{align}
 A_{\mu} & =\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1} e^{s}_{k\mu}(\sigma _{k}a_{ks}+\sigma ^{*}_{k}a^{\dagger}_{ks})
 \end{align}
 $$
+
+where $\displaystyle{\sigma _{k}(x)=\frac{\exp\left(i\vec{k}\cdot \vec{x}-ik_{0}te^{-i\alpha}\right)}{(2\pi)^{3/2}\sqrt{ 2\omega _{k} }}}$ satisfies
+
+$$\tag{.}
+\begin{align}
+\braket{ \sigma _{k},\sigma _{k'} }_{\mathrm{KG}} & =i e^{i\alpha}\int _{\Sigma}\mathrm{d}^{3}x\left(\sigma ^{*}_{k}\partial _{0}\sigma _{k'}-\sigma ^{*}_{k'}\partial _{0}\sigma _{k}\right) \\
+ & =\delta ^{3}(\vec{k}-\vec{k}')
+\end{align}
+$$
+
+and $\displaystyle{e^{s}_{k\mu}}$ satisfies
+
+$$\tag{.}
+\begin{align}
+\int _{\Sigma}\mathrm{d}^{3}x \frac{1}{(2\pi)^{3}2\sqrt{ \omega _{k}\omega _{k'} }}\left(k'_{0}\exp\left(-i\vec{k}\cdot \vec{x}+ik_{0}te^{-i\alpha}\right)\exp\left(i\vec{k}'\cdot x-ik_{0}'te^{i\alpha}\right)-k_{0}\exp\left(-i\vec{k}'\cdot \vec{x}+ik_{0}te^{i\alpha}\right)\exp\left(i\vec{k}\cdot \vec{x}-ik_{0}te^{-i\alpha}\right)\right)
+\end{align}
+$$
+
+$\displaystyle{\exp\left(i\vec{k}\cdot \vec{x}-ik_{0}t\cos \alpha-k_{0}t\sin \alpha\right)}$
