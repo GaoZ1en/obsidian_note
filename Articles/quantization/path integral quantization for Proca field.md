@@ -189,8 +189,8 @@ $$\tag{3.6}
 \begin{align}
 iD_{\mu \nu}(D^{-1})^{\nu \rho}(x,x') & =\delta ^{\rho}_{\mu}\delta ^{4}(x-x') \\
 \implies D^{-1}(x,x') & = \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}\begin{pmatrix}
-e^{-i\beta}\left( -e^{-i\alpha}+e^{i\alpha}\frac{k_{0}^{2}}{m^{2}} \right) & e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} \\
-e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} & \delta _{ij}+\frac{k _{i}k _{j}}{m^{2}}
+e^{-i(3\alpha+\beta)}\left( -1+\frac{k_{0}^{2}}{m^{2}} \right) & e^{-i(3\alpha+\beta)/2} \frac{k_{0}k _{i}}{m^{2}} \\
+e^{-i(3\alpha+\beta)/2} \frac{k_{0}k _{i}}{m^{2}} & \delta _{ij}+\frac{k _{i}k _{j}}{m^{2}}
 \end{pmatrix}
 \end{align}
 $$
@@ -202,9 +202,9 @@ $$\tag{3.7}
 \braket{ A^{i}(x)A^{j}(x') } & =-\frac{\delta ^{2}\ln Z[J]}{\delta J_{i}(x)\delta J_{j}(x')} \Big|_{J=0} \\
  & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}\left(\delta _{ij}+\frac{k _{i}k _{j}}{m^{2}}\right) \\
 \braket{ A^{i}(x)A^{0}(x') } & =-\frac{\left(\delta ^{2}\ln Z[J]\right)}{\delta J_{i}(x)\delta J_{0}(x')} \Big|_{J=0} \\
- & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})} e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} \\
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})} e^{-i(3\alpha+\beta)/2} \frac{k_{0}k _{i}}{m^{2}} \\
 \braket{ A^{0}(x)A^{0}(x') } & =-\frac{\delta ^{2}\ln Z[J]}{\delta J_{0}(x)\delta J_{0}(x')}\Big|_{J=0} \\
- & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})} e^{-i\beta}\left(-e^{-i\alpha}+e^{i\alpha} \frac{k_{0}^{2}}{m^{2}}\right)
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})} e^{-i(3\alpha+\beta)}\left(-1+\frac{k_{0}^{2}}{m^{2}}\right)
 \end{align}
 $$
 
@@ -271,43 +271,19 @@ and $\displaystyle{e^{s}_{k\mu}}$ satisfies $\displaystyle{e^{-i\alpha}k^{i}e^{s
 $$\tag{4.7}
 \begin{align}
 \sum ^{3}_{s=1}e^{s}_{k\mu}e^{s'}_{k\nu} & =\begin{pmatrix}
--1+e^{i(\alpha+\beta)} \frac{k_{0}^{2}}{m^{2}} & e^{i(\beta-\alpha)/2}k_{0}k _{i} \\
-e^{i(\beta-\alpha)/2}k_{0}k _{i} & \delta _{ij}+e^{-2i\alpha}k _{i}k _{j}
+e^{-i(3\alpha+\beta)}\left( -1+\frac{k_{0}^{2}}{m^{2}} \right) & e^{-i(3\alpha+\beta)/2}k_{0}k _{i} \\
+e^{-i(3\alpha+\beta)/2}k_{0}k _{i} & \delta _{ij}+k _{i}k _{j}
 \end{pmatrix}
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-\begin{pmatrix}
-e^{i(\alpha+\beta)/2}k_{0} & e^{-i\alpha}k^{i}
-\end{pmatrix}\begin{pmatrix}
--1+e^{i(\alpha+\beta)} \frac{k_{0}^{2}}{m^{2}} & e^{i(\beta-\alpha)/2}k_{0}k _{i} \\
-e^{i(\beta-\alpha)/2}k_{0}k _{i} & \delta _{ij}+e^{-2i\alpha}k _{i}k _{j}
-\end{pmatrix} \\
-=\begin{pmatrix}
-e^{-i(\alpha+\beta)/2}k_{0}\left(\frac{\vec{k}^{2}}{m^{2}}\right)+e^{-i(\alpha+\beta)/2}k_{0}\vec{k}^{2} & e^{i\beta}k_{0}^{2}k _{i}+e^{-i\alpha}k_{i}
-\end{pmatrix}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\begin{pmatrix}
--e^{i(\alpha+\beta)/2}k_{0} & e^{-i\alpha}k^{i}
-\end{pmatrix}\begin{pmatrix}
--e^{-i(\alpha+\beta)}+e^{-i(\alpha+\beta)} \frac{k_{0}^{2}}{m^{2}} & e^{i(\alpha-\beta)/2}k_{0}k _{i} \\
-e^{i(\alpha-\beta)/2}k_{0} k_{i} & \delta _{ij}+k _{i}k _{j}
-\end{pmatrix} \\
-\begin{pmatrix}
--e^{-i(\alpha+\beta)/2}k_{0} \frac{\vec{k}^{2}}{m^{2}}+e^{-i(\alpha+\beta)/2} \frac{k_{0}\vec{k}^{2}}{m^{2}} & -e^{i\alpha} k_{i} \frac{k_{0}^{2}}{m^{2}}+e^{-i\alpha}k _{i}+e^{-i\alpha}k _{i} \frac{\vec{k}^{2}}{m^{2}}
-\end{pmatrix}
-\end{align}
-$$
-
+then follows the same procedure, we have
 
 $$\tag{4.8}
 \begin{align}
-\braket{ 0|\mathcal{T}A_{i}(x)A_{j}(y)|0 }  & =\left(\delta _{ij}-e^{-2i\alpha} \frac{\partial ^{x}_{i}\partial ^{x}_{j}}{m^{2}}\right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}}
+\braket{ 0|\mathcal{T}A_{i}(x)A_{j}(y)|0 }  & =\left(\delta _{ij}-\frac{\partial ^{x}_{i}\partial ^{x}_{j}}{m^{2}}\right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}e^{ik\cdot(x-y)} \\
+\braket{ 0|\mathcal{T}A_{i}(x)A_{0}(y)|0 }  & =-e^{-i(3\alpha+\beta)/2} \frac{\partial _{0}^{x}\partial _{i}^{x}}{m^{2}} \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}e^{ik\cdot(x-y)} \\
+\braket{ 0|\mathcal{T}A_{0}(x)A_{0}(y)|0 }  & =e^{-i(3\alpha+\beta)}\left(-1-\frac{\partial _{0}^{x}\partial _{0}^{x}}{m^{2}}\right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}e^{ik\cdot(x-y)} \\
+ & -e^{-i(3\alpha+\beta)} \frac{i}{m^{2}}\delta ^{4}(x-y)
 \end{align}
 $$
