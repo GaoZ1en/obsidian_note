@@ -224,7 +224,7 @@ make a variation
 
 $$\tag{4.2}
 \begin{align}
-\delta S & =\int \mathrm{d}^{4}x\left(-\frac{1}{2}(\partial _{i}A_{j}-\partial _{j}A_{i})\partial ^{i}\delta A^{j}e^{-i\alpha}+\dot{A}^{i} \partial _{0}\delta A^{i}e^{i\alpha}+\partial _{0}\delta A^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)}\right. \\
+\delta S & =\int \mathrm{d}^{4}x\left(-(\partial _{i}A_{j}-\partial _{j}A_{i})\partial ^{i}\delta A^{j}e^{-i\alpha}+\dot{A}^{i} \partial _{0}\delta A^{i}e^{i\alpha}+\partial _{0}\delta A^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)}\right. \\
  & \left.+\dot{A}^{i}\partial _{i}\delta A^{0}e^{i(\alpha+\beta)/2}+\partial _{i}A^{0}\partial _{i}\delta A^{0}e^{i\beta}+m^{2}A^{0}\delta A^{0}e^{-i\beta}-m^{2}A^{i}\delta A^{i}e^{-i\alpha}\right) \\
  & =\int \mathrm{d}^{4}x\left(\frac{1}{2}e^{-i\alpha}(\partial ^{i}\partial _{i}A_{j}-\partial ^{i}\partial _{j}A_{i})\delta A^{j}-e^{i(\alpha+\beta)/2}\partial _{i}\dot{A}^{i}\delta A^{0}\right) \\
  & +\int _{\Sigma _{f}-\Sigma _{i}}
@@ -233,15 +233,8 @@ $$
 
 $$\tag{4.2}
 \begin{align}
-\delta S & =\int \mathrm{d}^{4}x\left(+\dot{A}^{i} \partial _{0}\delta A^{i}e^{i\alpha}+\partial _{0}\delta A^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)}\right. \\
- & =\int \mathrm{d}^{4}x\left(\frac{1}{2}e^{-i\alpha}(\delta _{ij}\vec{\nabla}^{2}-\partial _{i}\partial _{j})A^{j}\delta A^{i}-e^{i(\alpha+\beta)/2}\partial _{i}\dot{A}^{i}\delta A^{0}\right. \\
- & -\partial _{i}^{2}A^{0}\delta A^{0}e^{i\beta}+m^{2}A^{0}\delta A^{0}e^{-i\beta}-m^{2}A^{i}\delta A^{i}e^{-i\alpha}-\ddot{A}^{i}\delta A^{i}e^{i\alpha}-\partial _{i}\partial _{0}A^{0}e^{i(\alpha+\beta)/2}\delta A^{i} \\
- & +\int \mathrm{d}^{4}x\partial _{0}\left(\dot{A}^{i}\delta A^{i}e^{i\alpha}+\partial _{i}A^{0}\delta A^{i}e^{i(\alpha+\beta)/2}\right)
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\int _{M}\mathrm{d}^{4}x\left(\partial _{\mu}F^{\mu \nu}\delta A_{\nu}-m^{2}A^{\mu}\delta A_{\mu}-\partial _{\mu}(F^{\mu \nu}\delta A_{\nu})\right)
+\delta S & =\int \mathrm{d}^{4}x\left(\left\{\left[e^{-i\alpha}(\delta _{ij}(\vec{\nabla}^{2}-m^{2})-\partial _{i}\partial _{j})-e^{i\alpha}\delta _{ij}\partial _{0}^{2}\right]A^{j}-e^{i(\alpha+\beta)/2}\partial _{i}\partial _{0}A^{0}\right\}\delta A^{i}\right. \\
+ & -(e^{i\beta}\partial _{i}^{2}A^{0}-e^{-i\beta}m^{2}A^{0}+e^{i(\alpha+\beta)/2}\partial _{i}\dot{A}^{i})\delta A^{0}) \\
+ & +\int _{\Sigma _{f}-\Sigma _{i}} \mathrm{d}^{3}x\left(e^{i\alpha}\dot{A}^{i}+e^{i(\alpha+\beta)/2}\partial _{i}A^{0}\right)\delta A^{i}
 \end{align}
 $$
