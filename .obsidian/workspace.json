@@ -23,6 +23,43 @@
             }
           }
         ]
+      },
+      {
+        "id": "ce0184956f27f86f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7bc6e58bf0bfb92f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/quantization/path integral quantization for constrained system.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "path integral quantization for constrained system"
+            }
+          },
+          {
+            "id": "1ce08546b6451d7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "canonical quantization of scalar and Proca vector in CPS formalism"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -124,8 +161,8 @@
   "active": "d684dcea5b602dc0",
   "lastOpenFiles": [
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
-    "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/path integral quantization for Proca field.md",
+    "Articles/quantization/path integral quantization for constrained system.md",
     "Drafts/Untitled.md",
     "Reading/differential forms in algebraic topology/de Rham theory/de Rham theory.md",
     "Lecture/2025 spring/python for general purpose/Untitled.md",
