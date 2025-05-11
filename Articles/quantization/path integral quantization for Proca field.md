@@ -162,7 +162,19 @@ H & =\int \mathrm{d}^{4}x(\pi _{i}\dot{A}^{i}[\pi _{i}]-L_{\mathrm{eff}}[A^{i},\
 \end{align}
 $$
 
-after a similar procedure as [[Articles/quantization/path integral quantization for constrained system]], we have the Wick-rotated Lagrangian (I don't know how to write the derivation here)
+after a similar procedure as [[Articles/quantization/path integral quantization for constrained system]],
+
+$$\tag{3.4}
+\begin{align}
+ & \braket{ A_{i}(t=t_{f})|e^{-iH(t_{f}-t_{i})e^{-i\alpha}}|A_{j}(t=t_{i}) } \\
+= & \braket{ A_{i}(t=t_{f})|e^{-iH\Delta te^{-i\alpha}}\dots e^{-iH\Delta te^{-i\alpha}}|A_{j}(t=t_{i}) } \\
+= & \int \prod ^{n}_{a=1}DA_{i_{1},1}\braket{  } 
+\end{align}
+$$
+
+we have the Wick-rotated Lagrangian
+
+
 
 $$\tag{3.4}
 \begin{align}
