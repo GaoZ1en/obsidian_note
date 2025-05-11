@@ -305,4 +305,26 @@ $$
 
 ---
 
-finally we will prove 
+finally we will prove that ()
+
+
+
+$$\tag{.}
+\begin{align}
+\braket{ 0|\pi _{i}A^{j}|0 } & =
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\pi _{i} & =\dot{A}_{i}+\partial _{i}A^{0} \\
+ & =\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}[(e^{s}_{ki}\partial _{0}\sigma _{k}+e^{s}_{k 0}\partial _{i}\sigma _{k})a_{ks}+(e^{s}_{ki}\partial _{0}\sigma _{k}^{*}+e^{s}_{k 0}\partial _{i}\sigma ^{*}_{k})a^{\dagger}_{ks}]
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\braket{ 0|\pi _{i}A^{j}|0 } & =\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}(e^{s}_{ki}\partial _{0}\sigma _{k}+e^{s}_{k 0}\partial _{i}\sigma _{k})e^{s,j}_{k}\sigma ^{*}_{k}  \\
+ & =\int \mathrm{d}^{3}\vec{k}
+\end{align}
+$$
