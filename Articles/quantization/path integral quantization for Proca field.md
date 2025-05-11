@@ -170,7 +170,7 @@ $$\tag{3.4}
 = & \mathcal{N}\braket{ A^{i}_{t_{f}}|e^{-iH\Delta te^{-i\alpha}}\dots e^{-iH\Delta te^{-i\alpha}}|A^{j}_{t_{i}} } \\
 = & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\braket{A^{i}_{t_{f}}|e^{-iH\Delta te^{-i\alpha}}|A^{i_{n-1}}_{n-1} }\braket{ A^{i_{n-1}}_{n-1}|e^{-iH\Delta te^{-i\alpha}}|A^{i_{n-2}}_{n-2} }\dots\braket{ A^{i_{1}}_{1}|e^{-iH\Delta te^{-i\alpha}}|A^{j}_{t_{i}} } \\
 = & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}D\pi ^{b}_{j_{b}}\braket{ A^{i}_{t_{f}}|e^{-iH\Delta te^{-i\alpha}}|\pi ^{n}_{j_{n}} } \braket{ \pi ^{n}_{j_{n}}|A^{i_{n-1}}_{n-1} }\dots\braket{ A^{i_{1}}_{1}|e^{-iH\Delta te^{-i\alpha}}|\pi ^{1}_{j_{1}}}\braket{ \pi ^{1}_{j_{1}}|A^{j}_{t_{i}} }  \\
-= & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}D\pi ^{b}_{j_{b}}\exp\left( i\sum ^{n}_{k=1}\pi ^{k}_{j_{k}}(A^{i_{k}}_{k}-A^{i_{k-1}}_{k-1})-i\Delta te^{-i\alpha}\int \mathrm{d}^{4}x(\pi _{i}\dot{A}^{i}[\pi _{i}]-\mathcal{L}_{\mathrm{eff}}[A^{i},\dot{A}^{i}[\pi _{i}]])\right) \\
+= & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}D\pi ^{b}_{j_{b}}\exp\left( i\Delta te^{-i\alpha}\int \mathrm{d}^{4}x\sum ^{n}_{k=1}\pi ^{k}_{j_{k}}(A^{i_{k}}_{k}-A^{i_{k-1}}_{k-1})-i\Delta te^{-i\alpha}\int \mathrm{d}^{4}x(\pi _{i}\dot{A}^{i}[\pi _{i}]-\mathcal{L}_{\mathrm{eff}}[A^{i},\dot{A}^{i}[\pi _{i}]])\right)? \\
 = & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}
 \end{align}
 $$
@@ -308,23 +308,3 @@ $$
 finally we will prove that ()
 
 
-
-$$\tag{.}
-\begin{align}
-\braket{ 0|\pi _{i}A^{j}|0 } & =
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\pi _{i} & =\dot{A}_{i}+\partial _{i}A^{0} \\
- & =\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}[(e^{s}_{ki}\partial _{0}\sigma _{k}+e^{s}_{k 0}\partial _{i}\sigma _{k})a_{ks}+(e^{s}_{ki}\partial _{0}\sigma _{k}^{*}+e^{s}_{k 0}\partial _{i}\sigma ^{*}_{k})a^{\dagger}_{ks}]
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\braket{ 0|\pi _{i}A^{j}|0 } & =\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1}(e^{s}_{ki}\partial _{0}\sigma _{k}+e^{s}_{k 0}\partial _{i}\sigma _{k})e^{s,j}_{k}\sigma ^{*}_{k}  \\
- & =\int \mathrm{d}^{3}\vec{k}
-\end{align}
-$$
