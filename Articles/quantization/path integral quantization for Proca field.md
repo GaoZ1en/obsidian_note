@@ -212,29 +212,54 @@ when $\displaystyle{\alpha,\beta\to0}$, we return the result in (1.4)
 
 ---
 
-in this part we will calculate two-point correlation function in canonical formalism as a cross verification
+in this part we will calculate two-point correlation function in canonical formalism as a cross verification. after Wick rotation
 
 $$\tag{4.1}
 \begin{align}
-S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}e^{-i\alpha}+\frac{1}{2}(\dot{A}^{i})^{2}e^{i\alpha}+\dot{A}^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)/2}+\frac{1}{2}(A^{0})^{2}e^{i\beta}+\frac{1}{2}m^{2}(A^{0})^{2}e^{-i\beta}-\frac{1}{2}m^{2}(A^{i})^{2}e^{-i\alpha}\right)
+A^{i}\to A^{i}e^{-i\alpha/2} \\
+A^{0}\to A^{0}e^{i\beta/2} \\
+t\to te^{-i\alpha}
+\end{align}
+$$
+
+we got the action
+
+$$\tag{4.2}
+\begin{align}
+S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}e^{-i\alpha}+\frac{1}{2}(\dot{A}^{i})^{2}e^{i\alpha}+\dot{A}^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)/2}+\frac{1}{2}(A^{0})^{2}e^{i\beta}+\frac{1}{2}m^{2}(A^{0})^{2}e^{i\beta}-\frac{1}{2}m^{2}(A^{i})^{2}e^{-i\alpha}\right)
 \end{align}
 $$
 
 make a variation
 
-$$\tag{4.2}
+$$\tag{4.3}
 \begin{align}
-\delta S & =\int \mathrm{d}^{4}x\left(-(\partial _{i}A_{j}-\partial _{j}A_{i})\partial ^{i}\delta A^{j}e^{-i\alpha}+\dot{A}^{i} \partial _{0}\delta A^{i}e^{i\alpha}+\partial _{0}\delta A^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)}\right. \\
- & \left.+\dot{A}^{i}\partial _{i}\delta A^{0}e^{i(\alpha+\beta)/2}+\partial _{i}A^{0}\partial _{i}\delta A^{0}e^{i\beta}+m^{2}A^{0}\delta A^{0}e^{-i\beta}-m^{2}A^{i}\delta A^{i}e^{-i\alpha}\right) \\
- & =\int \mathrm{d}^{4}x\left(\frac{1}{2}e^{-i\alpha}(\partial ^{i}\partial _{i}A_{j}-\partial ^{i}\partial _{j}A_{i})\delta A^{j}-e^{i(\alpha+\beta)/2}\partial _{i}\dot{A}^{i}\delta A^{0}\right) \\
- & +\int _{\Sigma _{f}-\Sigma _{i}}
+\delta S & =\int \mathrm{d}^{4}x\left(\left\{\left[e^{-i\alpha}(\delta _{ij}(\vec{\nabla}^{2}-m^{2})-\partial _{i}\partial _{j})-e^{i\alpha}\delta _{ij}\partial _{0}^{2}\right]A^{j}-e^{i(\alpha+\beta)/2}\partial _{i}\partial _{0}A^{0}\right\}\delta A^{i}\right. \\
+ & -(e^{i\beta}(\partial _{i}^{2}-m^{2})A^{0}+e^{i(\alpha+\beta)/2}\partial _{i}\dot{A}^{i})\delta A^{0}) \\
+ & +\int _{\Sigma _{f}-\Sigma _{i}} \mathrm{d}^{3}x\left(e^{i\alpha}\dot{A}^{i}+e^{i(\alpha+\beta)/2}\partial _{i}A^{0}\right)\delta A^{i}
 \end{align}
 $$
 
-$$\tag{4.2}
+we have the following equation of motion
+
+$$\tag{4.4}
 \begin{align}
-\delta S & =\int \mathrm{d}^{4}x\left(\left\{\left[e^{-i\alpha}(\delta _{ij}(\vec{\nabla}^{2}-m^{2})-\partial _{i}\partial _{j})-e^{i\alpha}\delta _{ij}\partial _{0}^{2}\right]A^{j}-e^{i(\alpha+\beta)/2}\partial _{i}\partial _{0}A^{0}\right\}\delta A^{i}\right. \\
- & -(e^{i\beta}\partial _{i}^{2}A^{0}-e^{-i\beta}m^{2}A^{0}+e^{i(\alpha+\beta)/2}\partial _{i}\dot{A}^{i})\delta A^{0}) \\
- & +\int _{\Sigma _{f}-\Sigma _{i}} \mathrm{d}^{3}x\left(e^{i\alpha}\dot{A}^{i}+e^{i(\alpha+\beta)/2}\partial _{i}A^{0}\right)\delta A^{i}
+E_{i} & =(e^{-i\alpha}(\delta _{ij}(\vec{\nabla}^{2}-m^{2})-\partial _{i}\partial _{j})-e^{i\alpha}\delta _{ij}\partial ^{2}_{0})A^{j}-e^{i(\alpha+\beta)/2}\partial _{i}\partial _{0}A^{0} \\
+E_{0} & =-e^{i\beta}(\vec{\nabla}^{2}-m^{2})A^{0}-e^{i(\alpha+\beta)/2}\partial _{i}\dot{A}^{i}
+\end{align}
+$$
+
+the solution space of the equation of motion can be expanded via
+
+$$\tag{4.4}
+\begin{align}
+(e^{-i\alpha}(\delta _{ij}(-\vec{k}^{2}-m^{2})+k _{i}k _{j})+e^{i\alpha}\delta _{ij}k_{0}^{2})A^{j}+e^{i(\alpha+\beta)/2}k_{0}k _{i}A^{0}=0 \\
+e^{i\beta}(\vec{k}^{2}+m^{2})A^{0}+e^{i(\alpha+\beta)/2}k_{0}k_{i}A^{i}=0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+A_{\mu} & =\int \mathrm{d}^{3}\vec{k}\sum ^{3}_{s=1} e^{s}_{k\mu}(\sigma _{k}a_{ks}+\sigma ^{*}_{k}a^{\dagger}_{ks})
 \end{align}
 $$
