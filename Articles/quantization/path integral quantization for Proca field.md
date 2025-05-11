@@ -166,9 +166,10 @@ after a similar procedure as [[Articles/quantization/path integral quantization 
 
 $$\tag{3.4}
 \begin{align}
- & \braket{ A_{i}(t=t_{f})|e^{-iH(t_{f}-t_{i})e^{-i\alpha}}|A_{j}(t=t_{i}) } \\
-= & \braket{ A_{i}(t=t_{f})|e^{-iH\Delta te^{-i\alpha}}\dots e^{-iH\Delta te^{-i\alpha}}|A_{j}(t=t_{i}) } \\
-= & \int \prod ^{n}_{a=1}DA_{i_{1},1}\braket{  } 
+ & \braket{ A^{i}_{t_{f}}|e^{-iH(t_{f}-t_{i})e^{-i\alpha}}|A^{j}_{t_{i}} } \\
+= & \mathcal{N}\braket{ A^{i}_{t_{f}}|e^{-iH\Delta te^{-i\alpha}}\dots e^{-iH\Delta te^{-i\alpha}}|A^{j}_{t_{i}} } \\
+= & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\braket{A^{i}_{t_{f}}|e^{-iH\Delta te^{-i\alpha}}|A^{i_{n-1}}_{n-1} }\braket{ A^{i_{n-1}}_{n-1}|e^{-iH\Delta te^{-i\alpha}}|A^{i_{n-2}}_{n-2} }\dots\braket{ A^{i_{1}}_{1}|e^{-iH\Delta te^{-i\alpha}}|A^{j}_{t_{i}} } \\
+= & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}D\pi ^{b}_{i_{b}}\braket{ A^{i}_{t_{f}}|e^{-iH\Delta te^{-i\alpha}}|\pi ^{n}_{i_{n}} } \braket{ \pi ^{n}_{i_{n}}|A^{i_{n-1}}_{n-1} }\dots\braket{ A^{i_{1}}_{1}| }  
 \end{align}
 $$
 
