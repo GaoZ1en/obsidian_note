@@ -182,7 +182,7 @@ we have the Wick-rotated Lagrangian
 
 $$\tag{3.5}
 \begin{align}
-L & =-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu} \\
+\mathcal{L}_{\alpha,\beta} & =-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu} \\
 (D_{\mu \nu}) & =\begin{pmatrix}
 e^{i\beta}(\vec{\nabla}^{2}-m^{2}) & e^{i(\alpha+\beta)/2}\partial _{0}\partial _{i} \\
 e^{i(\alpha+\beta)/2}\partial _{0}\partial _{i} & e^{-i\alpha}\partial _{i}\partial _{j}+\delta _{ij}(-e^{-i\alpha}\vec{\nabla}^{2}+e^{i\alpha}\partial _{0}^{2}+e^{-i\alpha}m^{2})
@@ -242,7 +242,7 @@ we got the action
 
 $$\tag{4.2}
 \begin{align}
-S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}e^{-i\alpha}+\frac{1}{2}(\dot{A}^{i})^{2}e^{i\alpha}+\dot{A}^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)/2}+\frac{1}{2}(A^{0})^{2}e^{i\beta}+\frac{1}{2}m^{2}(A^{0})^{2}e^{i\beta}-\frac{1}{2}m^{2}(A^{i})^{2}e^{-i\alpha}\right)
+S_{\alpha,\beta} & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}e^{-i\alpha}+\frac{1}{2}(\dot{A}^{i})^{2}e^{i\alpha}+\dot{A}^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)/2}+\frac{1}{2}(A^{0})^{2}e^{i\beta}+\frac{1}{2}m^{2}(A^{0})^{2}e^{i\beta}-\frac{1}{2}m^{2}(A^{i})^{2}e^{-i\alpha}\right)
 \end{align}
 $$
 
@@ -250,7 +250,7 @@ make a variation
 
 $$\tag{4.3}
 \begin{align}
-\delta S & =\int \mathrm{d}^{4}x\left(\left\{\left[e^{-i\alpha}(\delta _{ij}(\vec{\nabla}^{2}-m^{2})-\partial _{i}\partial _{j})-e^{i\alpha}\delta _{ij}\partial _{0}^{2}\right]A^{j}-e^{i(\alpha+\beta)/2}\partial _{i}\partial _{0}A^{0}\right\}\delta A^{i}\right. \\
+\delta S_{\alpha,\beta} & =\int \mathrm{d}^{4}x\left(\left\{\left[e^{-i\alpha}(\delta _{ij}(\vec{\nabla}^{2}-m^{2})-\partial _{i}\partial _{j})-e^{i\alpha}\delta _{ij}\partial _{0}^{2}\right]A^{j}-e^{i(\alpha+\beta)/2}\partial _{i}\partial _{0}A^{0}\right\}\delta A^{i}\right. \\
  & -(e^{i\beta}(\partial _{i}^{2}-m^{2})A^{0}+e^{i(\alpha+\beta)/2}\partial _{i}\dot{A}^{i})\delta A^{0}) \\
  & +\int _{\Sigma _{f}-\Sigma _{i}} \mathrm{d}^{3}x\left(e^{i\alpha}\dot{A}^{i}+e^{i(\alpha+\beta)/2}\partial _{i}A^{0}\right)\delta A^{i}
 \end{align}
@@ -319,7 +319,7 @@ then integrate out $\displaystyle{A^{0}}$, we get the effective Lagrangian
 
 $$\tag{5.2}
 \begin{align}
-\mathcal{L}_{\mathrm{eff}}(x) & =-\frac{1}{4}(\partial _{i}A^{j}(x)-\partial _{j}A^{i}(x))^{2}e^{-i\alpha}-\frac{1}{2}m^{2}(A^{i}(x))^{2}e^{-i\alpha}+\frac{1}{2}(\dot{A}^{i}(x))^{2}e^{i\alpha}-\dot{A}^{i}(x)\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)e^{i\alpha} \\
+\mathcal{L}_{\mathrm{eff},\alpha}(x) & =-\frac{1}{4}(\partial _{i}A^{j}(x)-\partial _{j}A^{i}(x))^{2}e^{-i\alpha}-\frac{1}{2}m^{2}(A^{i}(x))^{2}e^{-i\alpha}+\frac{1}{2}(\dot{A}^{i}(x))^{2}e^{i\alpha}-\dot{A}^{i}(x)\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)e^{i\alpha} \\
  & +\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{x,i}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z)+\frac{1}{2}m^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z)
 \end{align}
 $$
@@ -336,8 +336,19 @@ $$
 
 $$\tag{5.4}
 \begin{align}
-\braket{ A^{0}(x)A^{j}(x') }  & =\frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A^{0}(x)A^{i}(x')\exp\left(i \int \mathrm{d}^{4}x \mathcal{L}[A^{i},A^{0}]\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}}}
+\braket{ A^{0}(x)A^{i}(x') }  & =\frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A^{0}(x)A^{i}(x')\exp\left(i \int \mathrm{d}^{4}x \mathcal{L}_{\alpha,\beta}[A^{i},A^{0}]\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}}\exp\left(i \int \mathrm{d}^{4}\mathcal{L}_{\alpha,\beta}[A^{i},A^{0}]\right)} \\
+ & =\frac{\displaystyle{\int \mathcal{D}A^{i}\left(-e^{i(\alpha-\beta)/2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)\right)A^{i}(x')\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff},\alpha}[A^{i}]\right)}}{\displaystyle{\int \mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff},\alpha}[A^{i}]\right)}} \\
+ & =-e^{i(\alpha-\beta)/2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}\braket{ A^{j}(y)A^{i}(x') } \\
+ & =-e^{i(\alpha-\beta)/2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}\braket{ 0|\mathcal{T}A^{j}(y)A^{i}(x')|0 }  \\
+ & =\braket{ 0|\mathcal{T}\left(-e^{i(\alpha-\beta)/2}\int \mathrm{d}^{3}\vec{y}(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)\right)A^{i}(x')|0 }  \\
+ & =\braket{ 0|\mathcal{T}A^{0}(x)A^{i}(x')|0 } 
 \end{align}
 $$
 
+$$\tag{5.5}
+\begin{align}
+\braket{ A^{0}(x)A^{0}(x') } & =\frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A^{0}(x)A^{0}(x')\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\alpha,\beta}[A^{i},A^{0}]\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\alpha,\beta}[A^{i},A^{0}]\right)}} \\
+ & =
+\end{align}
+$$
 
