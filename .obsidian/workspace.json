@@ -6,7 +6,7 @@
       {
         "id": "805322694e0be78a",
         "type": "tabs",
-        "dimension": 53.783783783783775,
+        "dimension": 54,
         "children": [
           {
             "id": "d684dcea5b602dc0",
@@ -28,7 +28,7 @@
       {
         "id": "38e4f75f23ab0dd5",
         "type": "tabs",
-        "dimension": 46.21621621621622,
+        "dimension": 46,
         "children": [
           {
             "id": "292c837041187751",
@@ -204,7 +204,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "292c837041187751",
+  "active": "d684dcea5b602dc0",
   "lastOpenFiles": [
     "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",

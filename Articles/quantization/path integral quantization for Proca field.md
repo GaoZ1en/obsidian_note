@@ -70,7 +70,7 @@ $$\tag{2.4}
 S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right) \\
  & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})(\partial _{i}A^{j}-\partial _{j}A^{i})+\frac{1}{2}(\partial _{0}A^{i}+\partial _{i}A^{0})^{2}+\frac{1}{2}m^{2}(A^{0})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right) \\
  & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}\left( \partial _{0}A^{i}-\int \mathrm{d}^{3}\vec{y} \partial _{i}G(\vec{x},\vec{y})\partial _{i}\partial _{0}A^{i}(y)\right)^{2}+\frac{1}{2}m^{2}\left( \int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{i}\partial _{0}A^{i}(y) \right)^{2}-\frac{1}{2}m^{2}(A^{i})^{2}\right) \\
- & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}\partial _{0}A^{i}\partial _{0}A^{i}+\partial _{0}A^{i}\int \mathrm{d}^{3}\vec{y} \partial _{i}G(\vec{x},\vec{y})\partial _{j}\partial _{0}A^{j}+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{i}G(\vec{x},\vec{y})\partial _{j}\partial _{0}A^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{i}G(\vec{x},\vec{z})\partial _{k}\partial _{0}A^{k}(z)\right. \\
+ & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}\partial _{0}A^{i}\partial _{0}A^{i}-\partial _{0}A^{i}\int \mathrm{d}^{3}\vec{y} \partial _{i}G(\vec{x},\vec{y})\partial _{j}\partial _{0}A^{j}+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{i}G(\vec{x},\vec{y})\partial _{j}\partial _{0}A^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{i}G(\vec{x},\vec{z})\partial _{k}\partial _{0}A^{k}(z)\right. \\
  & \left. +\frac{1}{2}m^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{j}\partial _{0}A^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{k}\partial _{0}A^{k}(z)-\frac{1}{2}m^{2}(A^{i})^{2} \right) \\
  & =\int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]
 \end{align}
@@ -306,11 +306,37 @@ $$
 
 ---
 
-finally we will relate (3.8) and (4.8)
+finally we will relate (3.8) and (4.8). we first solve equation of motion (4.4) for $\displaystyle{A^{0}}$ 
 
 $$\tag{5.1}
 \begin{align}
-\braket{ A^{i}(x)A^{j}(x') } & = \int \mathcal{D}A^{0}\mathcal{D}A^{i}A^{i}(x)A^{j}(x')\exp\left(i \int \mathrm{d}^{4}x\left(\right)\right)
+(\vec{\nabla}^{2}-m^{2})A^{0}+e^{i(\alpha-\beta)/2}\partial _{i}\dot{A}^{i}=0 \\
+\implies A^{0}(x)=-e^{i(\alpha-\beta)/2}\int \mathrm{d}^{3}\vec{t} G(\vec{x},\vec{y})\partial _{i}\dot{A}^{i}(y)
+\end{align}
+$$
+
+then integrate out $\displaystyle{A^{0}}$, we get the effective Lagrangian
+
+$$\tag{5.2}
+\begin{align}
+\mathcal{L}_{\mathrm{eff}}(x) & =-\frac{1}{4}(\partial _{i}A^{j}(x)-\partial _{j}A^{i}(x))^{2}e^{-i\alpha}-\frac{1}{2}m^{2}(A^{i}(x))^{2}e^{-i\alpha}+\frac{1}{2}(\dot{A}^{i}(x))^{2}e^{i\alpha}-\dot{A}^{i}(x)\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)e^{i\alpha} \\
+ & +\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{x,i}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z)+\frac{1}{2}m^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z)
+\end{align}
+$$
+
+then
+
+$$\tag{5.3}
+\begin{align}
+\braket{ A^{i}(x)A^{j}(x') } & = \frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A^{i}(x)A^{j}(x')\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}e^{-i\alpha}-\frac{1}{2}m^{2}(A^{i})^{2}e^{-i\alpha}+\frac{1}{2}(\dot{A}^{i})^{2}e^{i\alpha}+\dot{A}^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)/2}+\frac{1}{2}(\partial _{i}A^{0})^{2}e^{i\beta}+\frac{1}{2}m^{2}(A^{0})^{2}e^{i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}e^{-i\alpha}-\frac{1}{2}m^{2}(A^{i})^{2}e^{-i\alpha}+\frac{1}{2}(\dot{A}^{i})^{2}e^{i\alpha}+\dot{A}^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)/2}+\frac{1}{2}(\partial _{i}A^{0})^{2}e^{i\beta}+\frac{1}{2}m^{2}(A^{0})^{2}e^{i\beta}\right)\right)}} \\
+ & =\frac{\displaystyle{\int \mathcal{D}A^{i}}A^{i}(x)A^{j}(x')\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)}{\displaystyle{\int \mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)}} \\
+ & = \braket{ 0|\mathcal{T}A^{i}(x)A^{j}(x')|0 } 
+\end{align}
+$$
+
+$$\tag{5.4}
+\begin{align}
+\braket{ A^{0}(x)A^{j}(x') }  & =\frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A^{0}(x)A^{i}(x')\exp\left(i \int \mathrm{d}^{4}x \mathcal{L}[A^{i},A^{0}]\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}}}
 \end{align}
 $$
 
