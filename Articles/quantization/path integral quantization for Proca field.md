@@ -287,8 +287,8 @@ and $\displaystyle{e^{s}_{k\mu}}$ satisfies $\displaystyle{e^{-i\alpha}k^{i}e^{s
 $$\tag{4.7}
 \begin{align}
 \sum ^{3}_{s=1}e^{s}_{k\mu}e^{s'}_{k\nu} & =\begin{pmatrix}
-e^{-i(3\alpha+\beta)}\left( -1+\frac{k_{0}^{2}}{m^{2}} \right) & e^{-i(3\alpha+\beta)/2}k_{0}k _{i} \\
-e^{-i(3\alpha+\beta)/2}k_{0}k _{i} & \delta _{ij}+k _{i}k _{j}
+e^{-i(3\alpha+\beta)}\left( -1+\frac{k_{0}^{2}}{m^{2}} \right) & e^{-i(3\alpha+\beta)/2}\frac{k_{0}k _{i}}{m^{2}} \\
+e^{-i(3\alpha+\beta)/2}\frac{k_{0}k _{i}}{m^{2}} & \delta _{ij}+\frac{k _{i}k _{j}}{m^{2}}
 \end{pmatrix}
 \end{align}
 $$
@@ -362,12 +362,16 @@ $$\tag{5.6}
  & e^{i(\alpha-\beta)}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}\partial _{z,0}\braket{ 0|\mathcal{T}A^{j}(y)A^{k}(z)|0 } \\
 = &-e^{i(\alpha-\beta)/2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}\braket{ 0|\mathcal{T}A^{j}(y)A^{0}(x')|0 } \\
 = & \braket{ 0|\mathcal{T}A^{0}(x)A^{0}(x')|0 } -e^{i(\alpha-\beta)/2}\delta(x_{0}-x_{0}')\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\braket{ 0|[A^{j}(y),A^{0}(x')]|0 } \\
-= & \braket{ 0|\mathcal{T}A^{0}(x)A^{0}(x')|0 } +e^{i(\alpha-\beta)}
+= & \braket{ 0|\mathcal{T}A^{0}(x)A^{0}(x')|0 } +e^{-i\beta}\delta(x_{0}-x_{0}')\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\left(\frac{i}{m^{2}}\vec{\nabla}^{2}_{y}\delta ^{3}(\vec{y}-\vec{x}')\right) \\
+= & \braket{ 0|\mathcal{T}A^{0}(x)A^{0}(x')|0 } +ie^{-i\beta}\delta(x_{0}-x_{0}')G(\vec{x},\vec{x}')+\frac{i}{m^{2}}e^{-i\beta}\delta ^{4}(x-x')
 \end{align}
 $$
 
-$$\tag{.}
+then we have
+
+$$\tag{5.7}
 \begin{align}
-[e^{-i\alpha/2}A^{j}(y),e^{i\beta/2}A^{0}(x')] & = -\frac{i}{m^{2}}\vec{\nabla}^{2}_{y}\delta ^{3}(\vec{y}-\vec{x}')
+\braket{ A^{0}(x)A^{0}(y) } &= \braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y)|0 }+\frac{i}{m^{2}}e^{-i\beta}\delta ^{4}(x-y) 
 \end{align}
 $$
+
