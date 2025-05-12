@@ -310,7 +310,7 @@ finally we will relate (3.8) and (4.8)
 
 $$\tag{5.1}
 \begin{align}
-\braket{ A^{i}(X)A^{j}(x') } & = \int \mathcal{D}
+\braket{ A^{i}(x)A^{j}(x') } & = \int \mathcal{D}A^{0}\mathcal{D}A^{i}A^{i}(x)A^{j}(x')\exp\left(i \int \mathrm{d}^{4}x\left(\right)\right)
 \end{align}
 $$
 
