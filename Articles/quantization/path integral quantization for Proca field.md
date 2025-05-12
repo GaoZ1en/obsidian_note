@@ -180,9 +180,7 @@ $$
 
 we have the Wick-rotated Lagrangian
 
-
-
-$$\tag{3.4}
+$$\tag{3.5}
 \begin{align}
 L & =-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu} \\
 (D_{\mu \nu}) & =\begin{pmatrix}
@@ -194,7 +192,7 @@ $$
 
 consider the generating functional
 
-$$\tag{3.5}
+$$\tag{3.6}
 \begin{align}
 Z[J_{\mu}] & =\int \mathcal{D}A_{\mu}\exp\left(\int \mathrm{d}^{4}x\left(-\frac{i}{2}A^{\mu}D_{\mu \nu}A^{\nu}+iJ_{\mu}A^{\mu}\right)\right) \\
  & =\exp\left(-\frac{1}{2}\int \mathrm{d}^{4}x\mathrm{d}^{4}x'J_{\mu}(x)(D^{-1})^{\mu \nu}(x,x')J_{\nu}(x')\right)
@@ -203,7 +201,7 @@ $$
 
 where $\displaystyle{(D^{-1})^{\mu \nu}}$ satisfies
 
-$$\tag{3.6}
+$$\tag{3.7}
 \begin{align}
 iD_{\mu \nu}(D^{-1})^{\nu \rho}(x,x') & =\delta ^{\rho}_{\mu}\delta ^{4}(x-x') \\
 \implies D^{-1}(x,x') & = \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}\begin{pmatrix}
@@ -215,7 +213,7 @@ $$
 
 then we have
 
-$$\tag{3.7}
+$$\tag{3.8}
 \begin{align}
 \braket{ A^{i}(x)A^{j}(x') } & =-\frac{\delta ^{2}\ln Z[J]}{\delta J_{i}(x)\delta J_{j}(x')} \Big|_{J=0} \\
  & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}\left(\delta _{ij}+\frac{k _{i}k _{j}}{m^{2}}\right) \\
@@ -308,6 +306,12 @@ $$
 
 ---
 
-finally we will prove that ()
+finally we will relate (3.8) and (4.8)
+
+$$\tag{5.1}
+\begin{align}
+\braket{ A^{i}(X)A^{j}(x') } & = \int \mathcal{D}
+\end{align}
+$$
 
 
