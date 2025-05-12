@@ -328,7 +328,7 @@ then
 
 $$\tag{5.3}
 \begin{align}
-\braket{ A^{i}(x)A^{j}(x') } & = \frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A^{i}(x)A^{j}(x')\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}e^{-i\alpha}-\frac{1}{2}m^{2}(A^{i})^{2}e^{-i\alpha}+\frac{1}{2}(\dot{A}^{i})^{2}e^{i\alpha}+\dot{A}^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)/2}+\frac{1}{2}(\partial _{i}A^{0})^{2}e^{i\beta}+\frac{1}{2}m^{2}(A^{0})^{2}e^{i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}e^{-i\alpha}-\frac{1}{2}m^{2}(A^{i})^{2}e^{-i\alpha}+\frac{1}{2}(\dot{A}^{i})^{2}e^{i\alpha}+\dot{A}^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)/2}+\frac{1}{2}(\partial _{i}A^{0})^{2}e^{i\beta}+\frac{1}{2}m^{2}(A^{0})^{2}e^{i\beta}\right)\right)}} \\
+\braket{ A^{i}(x)A^{j}(x') } & = \frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A^{i}(x)A^{j}(x')\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\alpha,\beta}[A^{i},A^{0}]\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\alpha,\beta}[A^{i},A^{0}]\right)}} \\
  & =\frac{\displaystyle{\int \mathcal{D}A^{i}}A^{i}(x)A^{j}(x')\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)}{\displaystyle{\int \mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)}} \\
  & = \braket{ 0|\mathcal{T}A^{i}(x)A^{j}(x')|0 } 
 \end{align}
