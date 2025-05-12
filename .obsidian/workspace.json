@@ -6,7 +6,6 @@
       {
         "id": "805322694e0be78a",
         "type": "tabs",
-        "dimension": 54,
         "children": [
           {
             "id": "d684dcea5b602dc0",
@@ -21,88 +20,6 @@
               },
               "icon": "lucide-file",
               "title": "path integral quantization for Proca field"
-            }
-          }
-        ]
-      },
-      {
-        "id": "38e4f75f23ab0dd5",
-        "type": "tabs",
-        "dimension": 46,
-        "children": [
-          {
-            "id": "292c837041187751",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/path integral quantization for Proca field.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "path integral quantization for Proca field"
-            }
-          },
-          {
-            "id": "c9a911e62297c50e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/path integral quantization for constrained system.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "path integral quantization for constrained system"
-            }
-          },
-          {
-            "id": "8b55cb290140becc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "canonical quantization of scalar and Proca vector in CPS formalism"
-            }
-          },
-          {
-            "id": "065c5731bc45982a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "canonical quantization of Proca field in CPS formalism (formal calculation)"
-            }
-          },
-          {
-            "id": "2a9f04bf859ac8e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/Bachelor thesis/section 2 covariant phase space formalism and Noether theorem.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "section 2 covariant phase space formalism and Noether theorem"
             }
           }
         ]

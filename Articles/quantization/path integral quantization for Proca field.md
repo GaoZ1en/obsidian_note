@@ -375,3 +375,22 @@ $$\tag{5.7}
 \end{align}
 $$
 
+
+
+$$\tag{.}
+\begin{align}
+(D_{\mu \nu})(k) & =\begin{pmatrix}
+-e^{i\beta}(\vec{k}^{2}+m^{2}) & -e^{i(\alpha+\beta)/2}k_{0}k _{i} \\
+-e^{i(\alpha+\beta)/2}k_{0}k _{i} & -e^{-i\alpha}k _{i}k _{j}+\delta _{ij}(e^{-i\alpha}(\vec{k}^{2}+m^{2})-e^{i\alpha}k_{0}^{2})
+\end{pmatrix}
+\end{align}
+$$
+
+schur complement
+
+$$\tag{.}
+\begin{align}
+S=\left(-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})\right)\left( \delta _{ij}-\frac{k _{i}k _{j}}{\vec{k}^{2}+m^{2}} \right)
+\end{align}
+$$
+
