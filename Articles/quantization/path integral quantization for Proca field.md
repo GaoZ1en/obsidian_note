@@ -348,7 +348,26 @@ $$
 $$\tag{5.5}
 \begin{align}
 \braket{ A^{0}(x)A^{0}(x') } & =\frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A^{0}(x)A^{0}(x')\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\alpha,\beta}[A^{i},A^{0}]\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\alpha,\beta}[A^{i},A^{0}]\right)}} \\
- & =
+ & =\frac{\displaystyle{\int \mathcal{D}A^{0}_{q}\mathcal{D}A^{i}(A^{0}_{c}(x)+A^{0}_{q}(x))(A^{0}_{c}(x')+A^{0}_{q}(x'))\exp\left(i \int \mathrm{d}^{4}\mathcal{L}_{\mathrm{eff},\alpha}[A^{i}]\right)\exp\left(-\frac{i}{2}e^{i\beta}\int \mathrm{d}^{4}xA^{0}_{q}(\vec{\nabla}^{2}-m^{2})A^{0}_{q}\right)}}{\displaystyle{\int \mathcal{D}A^{0}_{q}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff},\alpha}[A^{i}]\right)\exp\left(-\frac{i}{2} \int \mathrm{d}^{4}xA^{0}_{q}(\vec{\nabla}^{2}-m^{2})A^{0}_{q}\right)}} \\
+ & =\frac{\displaystyle{\int \mathcal{D}A^{i}\left(e^{i(\alpha-\beta)}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}A^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}\partial _{z,0}A^{k}(z)-ie^{-i\beta}\delta(x_{0}-x_{0}')G(\vec{x},\vec{x}')\right)\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff},\alpha}[A^{i}]\right)}}{\displaystyle{\int \mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff},\alpha}[A^{i}]\right)}} \\
+ & =e^{i(\alpha-\beta)}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}\partial _{z,0}\braket{ A^{j}(y)A^{k}(z) } -ie^{-i\beta}\delta(x_{0}-x_{0}')G(\vec{x},\vec{x}') \\
+ & =e^{i(\alpha-\beta)}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}\partial _{z,0}\braket{ 0|\mathcal{T}A^{j}(y)A^{k}(z)|0 } -ie^{-i\beta}\delta(x_{0}-x_{0}')G(\vec{x},\vec{x}')
 \end{align}
 $$
 
+where the first term is
+
+$$\tag{5.6}
+\begin{align}
+ & e^{i(\alpha-\beta)}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}\partial _{z,0}\braket{ 0|\mathcal{T}A^{j}(y)A^{k}(z)|0 } \\
+= &-e^{i(\alpha-\beta)/2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}\braket{ 0|\mathcal{T}A^{j}(y)A^{0}(x')|0 } \\
+= & \braket{ 0|\mathcal{T}A^{0}(x)A^{0}(x')|0 } -e^{i(\alpha-\beta)/2}\delta(x_{0}-x_{0}')\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\braket{ 0|[A^{j}(y),A^{0}(x')]|0 } \\
+= & \braket{ 0|\mathcal{T}A^{0}(x)A^{0}(x')|0 } +e^{i(\alpha-\beta)}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+[e^{-i\alpha/2}A^{j}(y),e^{i\beta/2}A^{0}(x')] & = -\frac{i}{m^{2}}\vec{\nabla}^{2}_{y}\delta ^{3}(\vec{y}-\vec{x}')
+\end{align}
+$$
