@@ -105,8 +105,7 @@
               "title": "section 2 covariant phase space formalism and Noether theorem"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -205,11 +204,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d684dcea5b602dc0",
+  "active": "292c837041187751",
   "lastOpenFiles": [
+    "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/path integral quantization for Proca field.md",
-    "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Articles/Bachelor thesis/section 2 covariant phase space formalism and Noether theorem.md",
     "Articles/Noether charge/An example of constrained Hamiltonian systems.md",
