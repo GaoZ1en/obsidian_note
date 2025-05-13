@@ -53,11 +53,12 @@ H & =\int \mathrm{d}^{2}x \frac{1}{2}(\pi _{1})^{2}
 \end{align}
 $$
 
-canonical commutation relation gives that
+the equation of motion is
 
 $$\tag{1.6}
 \begin{align}
-[A^{1}(x),\pi _{1}(y)] & =
+\dot{A}^{1} & =\left\{A^{1},H\right\} \\
+ & =
 \end{align}
 $$
 
@@ -122,7 +123,13 @@ $$\tag{2.6}
 \braket{0|\mathcal{T} A^{1}(t_{1})A^{1}(t_{2})|0} & =\theta(t_{1}-t_{2})\braket{ 0|A^{1}(t_{1})A^{1}(t_{2})|0 } +\theta(t_{2}-t_{1})\braket{ 0|A^{1}(t_{2})A^{1}(t_{1})|0 }  \\
  & =\theta(t_{1}-t_{2})\braket{ 0|(-E_{0}t_{1}+C_{0})(-E_{0}t_{2}+C_{0})|0 }+(t_{1}\leftrightarrow t_{2}) \\
  & =\theta(t_{1}-t_{2})t_{2}+\theta(t_{2}-t_{1})t_{1} \\
- & =
+ & =\int \frac{\mathrm{d}\omega}{2\pi i} e^{-i\omega(t_{1}-t_{2})}\left( \frac{t_{1}}{\omega-i\varepsilon}+\frac{t_{2}}{\omega+i\varepsilon}\right)​
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\min(t_{1},t_{2}) & =\int \frac{\mathrm{d}\omega}{2\pi i} e^{-i\omega(t_{1}-t_{2})}\left(\frac{t_{1}}{\omega-i\varepsilon}+ \frac{t_{2}}{\omega+i\varepsilon}\right)
 \end{align}
 $$
 
@@ -131,14 +138,6 @@ $$
 $$\tag{3.0}
 \begin{align}
 S & =\int \mathrm{d}^{2}x\left(\frac{1}{2}(\dot{A}^{1})^{2}+\dot{A}^{1}\partial _{1}A^{0}+\frac{1}{2}(\partial _{1}A^{0})^{2}\right)
-\end{align}
-$$
-
-$$\tag{3.1}
-\begin{align}
-Z[J_{\mu}] & =\int \mathcal{D}A^{\mu}\exp\left(i \int \mathrm{d}^{2}x\left(\frac{1}{2}(\dot{A}^{1})^{2}+\dot{A}^{i}\partial _{1}A^{0}+\frac{1}{2}(\partial _{1}A^{0})^{2}+J_{\mu}A^{\mu}\right)\right) \\
- & =\int \mathcal{D}A^{\mu}\exp\left(\int \mathrm{d}^{2}x\left(-\frac{i}{2}A^{\mu}D_{\mu \nu}A^{\nu}+iJ_{\mu}A^{\mu}\right)\right) \\
- & =\exp\left(-\frac{1}{2}\int \mathrm{d}^{2}x\mathrm{d}^{2}yJ_{\mu}(x)(D^{-1})^{\mu \nu}(x,y)J_{\nu}(y)\right)
 \end{align}
 $$
 
