@@ -62,7 +62,23 @@ $$\tag{1.6}
 \end{align}
 $$
 
-the general solution of (1.6) is $\displaystyle{A^{1}=-E_{0}t+C_{0},\pi _{1}=-E_{0}}$, where $\displaystyle{E_{0}}$ and $\displaystyle{C_{0}}$ are constants. so there is no local degrees of freedom. what is the canonical quantization?
+the general solution of (1.6) is $\displaystyle{A^{1}=-E_{0}t+C_{0},\pi _{1}=-E_{0}}$, where $\displaystyle{E_{0}}$ and $\displaystyle{C_{0}}$ are constants. so there is no local degrees of freedom. the canonical commutation relation is then
+
+$$\tag{1.7}
+\begin{align}
+[A^{1},\pi _{1}] & =i\implies [E_{0},C_{0}]=i
+\end{align}
+$$
+
+consider the time-ordered 2-pt function
+
+$$\tag{1.8}
+\begin{align}
+\braket{ 0|\mathcal{T}A^{1}(t_{1})A^{1}(t_{2})|0 }  & =\theta(t_{1}-t_{2})\braket{ 0|A^{1}(t_{1})A^{1}(t_{2})|0 }+(t_{1}\leftrightarrow t_{2}) \\
+ & =\theta(t_{1}-t_{2})\braket{ 0|(-E_{0}t_{1}+C_{0})(-E_{0}t_{2}+C_{0})|0 }+(t_{1}\leftrightarrow t_{2}) \\
+ & =\theta(t_{1}-t_{2})it_{2}+(t_{1}\leftrightarrow t_{2})
+\end{align}
+$$
 
 ---
 
@@ -124,8 +140,8 @@ $$\tag{2.6}
 \begin{align}
 \braket{0|\mathcal{T} A^{1}(t_{1})A^{1}(t_{2})|0} & =\theta(t_{1}-t_{2})\braket{ 0|A^{1}(t_{1})A^{1}(t_{2})|0 } +\theta(t_{2}-t_{1})\braket{ 0|A^{1}(t_{2})A^{1}(t_{1})|0 }  \\
  & =\theta(t_{1}-t_{2})\braket{ 0|(-E_{0}t_{1}+C_{0})(-E_{0}t_{2}+C_{0})|0 }+(t_{1}\leftrightarrow t_{2}) \\
- & =\theta(t_{1}-t_{2})t_{2}+\theta(t_{2}-t_{1})t_{1} \\
- & =\int \frac{\mathrm{d}\omega}{2\pi i} e^{-i\omega(t_{1}-t_{2})}\left( \frac{t_{1}}{\omega-i\varepsilon}+\frac{t_{2}}{\omega+i\varepsilon}\right)​
+ & =\theta(t_{1}-t_{2})it_{2}+\theta(t_{2}-t_{1})it_{1} \\
+ & =\int \frac{\mathrm{d}\omega}{2\pi} e^{-i\omega(t_{1}-t_{2})}\left( \frac{t_{1}}{\omega-i\varepsilon}+\frac{t_{2}}{\omega+i\varepsilon}\right)​
 \end{align}
 $$
 
@@ -140,7 +156,7 @@ S & =\int \mathrm{d}^{2}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{\theta}{
 \end{align}
 $$
 
-where the spatial dimension is $\displaystyle{S^{1}}$ with radius $\displaystyle{R}$
+where the spatial dimension is $\displaystyle{S^{1}}$ with radius $\displaystyle{R}$.
 
 ---
 
