@@ -93,7 +93,7 @@ choose Column gauge $\displaystyle{\partial _{1}A^{1}=0}$ and fix $\displaystyle
 
 $$\tag{2.4}
 \begin{align}
-\omega & =\int _{\Sigma}\mathrm{d}x \delta E^{0}\wedge \delta C_{0}
+\omega & =-\int _{\Sigma}\mathrm{d}x \delta E^{0}\wedge \delta C_{0}
 \end{align}
 $$
 
@@ -101,8 +101,8 @@ the Hamiltonian flow corresponding to $\displaystyle{A^{1}}$ is
 
 $$\tag{2.5}
 \begin{align}
-X_{A^{1}} & =\int \mathrm{d}x \left( \frac{\delta A^{1}}{\delta C_{0}} \frac{\delta}{\delta E^{0}}- \frac{\delta A^{1}}{\delta E^{0}} \frac{\delta}{\delta C_{0}}\right) \\
- & =\int \mathrm{d}x\left( \frac{\delta}{\delta E^{0}}-t\frac{\delta}{\delta C_{0}}\right)
+X_{A^{1}} & =\int \mathrm{d}^{2}x \left( \frac{\delta A^{1}}{\delta C_{0}} \frac{\delta}{\delta E^{0}}- \frac{\delta A^{1}}{\delta E^{0}} \frac{\delta}{\delta C_{0}} \right) \\
+ & = \int \mathrm{d}^{2}x\left( \frac{\delta}{\delta E^{0}}+t\frac{\delta}{\delta C_{0}} \right)
 \end{align}
 $$
 
@@ -110,7 +110,8 @@ we have
 
 $$\tag{2.6}
 \begin{align}
-[A^{1}(x_{1},t_{1}),A^{1}(x_{2},t_{2})]
+[A^{1}(x_{1},t_{1}),A^{1}(x_{2},t_{2})] & =iX_{A^{1}_{1}}\cdot X_{A^{1}_{2}}\cdot \omega \\
+ & =i(t_{1}-t_{2})
 \end{align}
 $$
 
@@ -118,8 +119,10 @@ then consider the time ordered correlation function
 
 $$\tag{2.6}
 \begin{align}
-\braket{0|\mathcal{T} A^{1}(x)A^{1}(y)|0} & =\theta(x_{0}-y_{0})\braket{ 0|A^{1}(x)A^{1}(y)|0 } +\theta(y_{0}-x_{0})\braket{ 0|A^{1}(y)A^{1}(x)|0 }  \\
- & =\theta(x_{0}-y_{0})
+\braket{0|\mathcal{T} A^{1}(t_{1})A^{1}(t_{2})|0} & =\theta(t_{1}-t_{2})\braket{ 0|A^{1}(t_{1})A^{1}(t_{2})|0 } +\theta(t_{2}-t_{1})\braket{ 0|A^{1}(t_{2})A^{1}(t_{1})|0 }  \\
+ & =\theta(t_{1}-t_{2})\braket{ 0|(-E_{0}t_{1}+C_{0})(-E_{0}t_{2}+C_{0})|0 }+(t_{1}\leftrightarrow t_{2}) \\
+ & =\theta(t_{1}-t_{2})t_{2}+\theta(t_{2}-t_{1})t_{1} \\
+ & =
 \end{align}
 $$
 
