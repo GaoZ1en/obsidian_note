@@ -55,9 +55,9 @@ $$
 
 canonical commutation relation gives that
 
-$$\tag{.}
+$$\tag{1.6}
 \begin{align}
-
+[A^{1}(x),\pi _{1}(y)] & =
 \end{align}
 $$
 
@@ -65,7 +65,7 @@ $$
 
 make a variation
 
-$$\tag{1.1}
+$$\tag{2.1}
 \begin{align}
 \delta S & =\int \mathrm{d}^{2}x\left(-F^{\mu \nu}\partial _{\mu}\delta A_{\nu}\right) \\
  & =\int \mathrm{d}^{2}x\partial _{\mu}F^{\mu \nu}\delta A_{\nu}+\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}xF^{01}\delta A_{1}
@@ -74,7 +74,7 @@ $$
 
 symplectic form
 
-$$\tag{1.2}
+$$\tag{2.2}
 \begin{align}
 \omega =\delta \theta & =\int _{\Sigma}\mathrm{d}x\delta F^{01}\wedge \delta A_{1}
 \end{align}
@@ -82,33 +82,44 @@ $$
 
 equation of motion
 
-$$\tag{1.3}
+$$\tag{2.3}
 \begin{align}
 \partial _{\mu}F^{\mu \nu} & =0 \\
 \implies F^{01} & = -E_{0}
 \end{align}
 $$
 
-choose gauge $\displaystyle{A^{0}=0}$, we have $\displaystyle{A^{1}=-E_{0}t+A_{0}}$. then the symplectic form becomes
+choose Column gauge $\displaystyle{\partial _{1}A^{1}=0}$ and fix $\displaystyle{A^{0}=0}$, we have $\displaystyle{A^{1}=-E_{0}t+C_{0}}$. then the symplectic form becomes
 
-$$\tag{1.4}
+$$\tag{2.4}
 \begin{align}
-\omega & =\int _{\Sigma}\mathrm{d}x \delta E^{0}\wedge \delta A_{0}
+\omega & =\int _{\Sigma}\mathrm{d}x \delta E^{0}\wedge \delta C_{0}
 \end{align}
 $$
 
-the Hamiltonian flow corresponding to $\displaystyle{A^{\mu}}$ is
+the Hamiltonian flow corresponding to $\displaystyle{A^{1}}$ is
 
-$$\tag{1.5}
+$$\tag{2.5}
 \begin{align}
-
+X_{A^{1}} & =\int \mathrm{d}x \left( \frac{\delta A^{1}}{\delta C_{0}} \frac{\delta}{\delta E^{0}}- \frac{\delta A^{1}}{\delta E^{0}} \frac{\delta}{\delta C_{0}}\right) \\
+ & =\int \mathrm{d}x\left( \frac{\delta}{\delta E^{0}}-t\frac{\delta}{\delta C_{0}}\right)
 \end{align}
 $$
 
-$$\tag{.}
+we have
+
+$$\tag{2.6}
 \begin{align}
-F_{01}=\partial _{0}A_{1}=-F^{01} \\
-F^{01}=\partial ^{0}A^{1}
+[A^{1}(x_{1},t_{1}),A^{1}(x_{2},t_{2})]
+\end{align}
+$$
+
+then consider the time ordered correlation function
+
+$$\tag{2.6}
+\begin{align}
+\braket{0|\mathcal{T} A^{1}(x)A^{1}(y)|0} & =\theta(x_{0}-y_{0})\braket{ 0|A^{1}(x)A^{1}(y)|0 } +\theta(y_{0}-x_{0})\braket{ 0|A^{1}(y)A^{1}(x)|0 }  \\
+ & =\theta(x_{0}-y_{0})
 \end{align}
 $$
 
