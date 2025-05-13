@@ -122,8 +122,9 @@ $$
 
 and $\displaystyle{(D^{-1})^{\mu \nu}}$ satisfies
 
-$$\tag{3.3}
+$$\tag{0.1}
 \begin{align}
-iD_{\mu \nu}(D^{-1})^{\nu \rho} & =\delta ^{\rho}_{\mu}\delta ^{2}(x-y)
+S & =\int \mathrm{d}^{2}x\left(-\frac{1}{2}F_{01}F^{01}\right) \\
+ & =\int \mathrm{d}^{2}x\left(\frac{1}{2}\dot{A}^{1}\dot{A}^{1}+\dot{A}^{1}\partial_{1}A^{0}+\frac{1}{2}(\partial _{1}A^{0})^{2}\right)
 \end{align}
 $$
