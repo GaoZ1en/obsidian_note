@@ -6,7 +6,7 @@ S & =\int \mathrm{d}^{2}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}\right) \\
 \end{align}
 $$
 
-the system is defined on a interval with length $\displaystyle{L}$ or a circle with radius $\displaystyle{R}$. then the discussion is separated by two parts.
+the system is defined on $\displaystyle{\mathbb{R}}$ or $\displaystyle{S^{1}}$ with radius $\displaystyle{R}$. then the discussion is separated by two parts.
 
 ---
 
@@ -107,18 +107,23 @@ $$
 $$\tag{3.1}
 \begin{align}
 Z[J_{\mu}] & =\int \mathcal{D}A^{\mu}\exp\left(i \int \mathrm{d}^{2}x\left(\frac{1}{2}(\dot{A}^{1})^{2}+\dot{A}^{i}\partial _{1}A^{0}+\frac{1}{2}(\partial _{1}A^{0})^{2}+J_{\mu}A^{\mu}\right)\right) \\
- & =\int \mathcal{D}A^{\mu}
+ & =\int \mathcal{D}A^{\mu}\exp\left(\int \mathrm{d}^{2}x\left(-\frac{i}{2}A^{\mu}D_{\mu \nu}A^{\nu}+iJ_{\mu}A^{\mu}\right)\right) \\
+ & =\exp\left(-\frac{1}{2}\int \mathrm{d}^{2}x\mathrm{d}^{2}yJ_{\mu}(x)(D^{-1})^{\mu \nu}(x,y)J_{\nu}(y)\right)
 \end{align}
 $$
 
-$$\tag{.}
+where
+
+$$\tag{3.2}
 \begin{align}
--\frac{1}{2}A^{1}\partial _{0}^{2}A^{1}-\frac{1}{2}A^{0}\partial _{1}^{2}A^{0}-\frac{1}{2}\partial _{0}\partial _{1}A^{0}=-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu}
+D_{\mu \nu} & =\begin{pmatrix}\partial_{1}^{2} & \partial _{0}\partial _{1} \\\partial_{0}\partial_{1} & \partial_{0}^{2}\end{pmatrix} \\
 \end{align}
 $$
 
-$$\tag{.}
+and $\displaystyle{(D^{-1})^{\mu \nu}}$ satisfies
+
+$$\tag{3.3}
 \begin{align}
-D_{\mu \nu} & =\partial ^{\mu}\partial ^{\nu}-\eta ^{\mu \nu}\partial ^{2}
+iD_{\mu \nu}(D^{-1})^{\nu \rho} & =\delta ^{\rho}_{\mu}\delta ^{2}(x-y)
 \end{align}
 $$
