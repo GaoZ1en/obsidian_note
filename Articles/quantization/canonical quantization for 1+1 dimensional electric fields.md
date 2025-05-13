@@ -6,7 +6,7 @@ S & =\int \mathrm{d}^{2}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}\right) \\
 \end{align}
 $$
 
-the system is defined on $\displaystyle{\mathbb{R}}$ or $\displaystyle{S^{1}}$ with radius $\displaystyle{R}$. then the discussion is separated by two parts.
+the system is defined on $\displaystyle{\mathbb{R}}$ or $\displaystyle{S^{1}}$ with radius $\displaystyle{R}$. then the discussion is separated by two parts. we first consider the $\displaystyle{\mathbb{R}}$ case.
 
 ---
 
@@ -57,8 +57,19 @@ the equation of motion is
 
 $$\tag{1.6}
 \begin{align}
-\dot{A}^{1} & =\left\{A^{1},H\right\} \\
- & =
+\dot{A}^{1} & =\left\{A^{1},H\right\} =\pi _{1} \\
+\dot{\pi}_{1} & =\left\{\pi _{1},H\right\}=0
+\end{align}
+$$
+
+the general solution of (1.6) is $\displaystyle{A^{1}=-E_{0}t+C_{0},\pi _{1}=-E_{0}}$, where $\displaystyle{E_{0}}$ and $\displaystyle{C_{0}}$ are constants. so there is no local degrees of freedom. what is the 
+which is equivalent to
+
+consider
+
+$$\tag{1.8}
+\begin{align}
+[A^{1}(x_{1},t_{1}),A^{2}(x_{2},t_{2})] & =
 \end{align}
 $$
 
@@ -86,7 +97,7 @@ equation of motion
 $$\tag{2.3}
 \begin{align}
 \partial _{\mu}F^{\mu \nu} & =0 \\
-\implies F^{01} & = -E_{0}
+\implies F^{01} & = E_{0}
 \end{align}
 $$
 
@@ -102,8 +113,8 @@ the Hamiltonian flow corresponding to $\displaystyle{A^{1}}$ is
 
 $$\tag{2.5}
 \begin{align}
-X_{A^{1}} & =\int \mathrm{d}^{2}x \left( \frac{\delta A^{1}}{\delta C_{0}} \frac{\delta}{\delta E^{0}}- \frac{\delta A^{1}}{\delta E^{0}} \frac{\delta}{\delta C_{0}} \right) \\
- & = \int \mathrm{d}^{2}x\left( \frac{\delta}{\delta E^{0}}+t\frac{\delta}{\delta C_{0}} \right)
+X_{A^{1}} & = \frac{\delta A^{1}}{\delta C_{0}} \frac{\delta}{\delta E^{0}}- \frac{\delta A^{1}}{\delta E^{0}} \frac{\delta}{\delta C_{0}}  \\
+ & =  \frac{\delta}{\delta E^{0}}+t\frac{\delta}{\delta C_{0}}
 \end{align}
 $$
 
@@ -127,17 +138,5 @@ $$\tag{2.6}
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-\min(t_{1},t_{2}) & =\int \frac{\mathrm{d}\omega}{2\pi i} e^{-i\omega(t_{1}-t_{2})}\left(\frac{t_{1}}{\omega-i\varepsilon}+ \frac{t_{2}}{\omega+i\varepsilon}\right)
-\end{align}
-$$
-
 ---
-
-$$\tag{3.0}
-\begin{align}
-S & =\int \mathrm{d}^{2}x\left(\frac{1}{2}(\dot{A}^{1})^{2}+\dot{A}^{1}\partial _{1}A^{0}+\frac{1}{2}(\partial _{1}A^{0})^{2}\right)
-\end{align}
-$$
 
