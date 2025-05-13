@@ -62,16 +62,7 @@ $$\tag{1.6}
 \end{align}
 $$
 
-the general solution of (1.6) is $\displaystyle{A^{1}=-E_{0}t+C_{0},\pi _{1}=-E_{0}}$, where $\displaystyle{E_{0}}$ and $\displaystyle{C_{0}}$ are constants. so there is no local degrees of freedom. what is the 
-which is equivalent to
-
-consider
-
-$$\tag{1.8}
-\begin{align}
-[A^{1}(x_{1},t_{1}),A^{2}(x_{2},t_{2})] & =
-\end{align}
-$$
+the general solution of (1.6) is $\displaystyle{A^{1}=-E_{0}t+C_{0},\pi _{1}=-E_{0}}$, where $\displaystyle{E_{0}}$ and $\displaystyle{C_{0}}$ are constants. so there is no local degrees of freedom. what is the canonical quantization?
 
 ---
 
@@ -140,3 +131,25 @@ $$
 
 ---
 
+then we will consider the following action
+
+$$\tag{0.2}
+\begin{align}
+S & =\int \mathrm{d}^{2}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{\theta}{2\pi}F_{01}\right) \\
+ & =\int \mathrm{d}^{2}x\left(\frac{1}{2}(\dot{A}^{1})^{2}+\dot{A}^{1}\partial _{1}A^{0}+\frac{1}{2}(\partial _{1}A^{0})^{2}+\frac{\theta}{2\pi}(\dot{A}^{1}+\partial _{1}A^{0})\right)
+\end{align}
+$$
+
+where the spatial dimension is $\displaystyle{S^{1}}$ with radius $\displaystyle{R}$
+
+---
+
+---
+
+make a variation
+
+$$\tag{4.1}
+\begin{align}
+\delta S & =
+\end{align}
+$$
