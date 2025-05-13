@@ -174,7 +174,7 @@ $$\tag{3.4}
 = & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\exp\left(i\Delta te^{i\alpha}\sum ^{n}_{k=1}\int \mathrm{d}^{3}x\left( \mathcal{L}_{\mathrm{eff}}\left[ A^{i_{k}}_{k}, \frac{A^{j_{k}}_{k}-A^{j_{k}}_{k-1}}{\Delta te^{-i\alpha}} \right] \right)\right) \\
 = & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}DA^{0}_{b}\exp\left(i\Delta t\sum ^{n}_{k=1}\int \mathrm{d}^{3}x\left(-\frac{1}{4}(\partial _{i}A^{j_{k}}_{k}-\partial _{j}A^{i_{k}}_{k})^{2}e^{-i\alpha}+\frac{1}{2} \left( \frac{A^{j_{k}}_{k}-A^{j_{k}}_{k-1}}{\Delta t} \right)^{2}e^{i\alpha}+\frac{A^{j_{k}}_{k}-A^{j_{k}}_{k-1}}{\Delta t}\partial _{j_{k}}A^{0}_{k}e^{i(\alpha+\beta)/2}\right)\right. \\
  & \left.+\frac{1}{2}(\partial _{i}A^{0}_{k})^{2}e^{i\beta}+\frac{1}{2}m^{2}(A^{0}_{k})e^{i\beta}-\frac{1}{2}m^{2}(A^{i_{k}}_{k})^{2}e^{-i\alpha}\right) \\
-= & \mathcal{N}\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}e^{-i\alpha}+\frac{1}{2}(\dot{A}^{i})^{2}e^{i\alpha}+\dot{A}^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)/2}+\frac{1}{2}(\partial _{i}A^{0})^{2}e^{i\beta}+\frac{1}{2}m^{2}(A^{0})^{2}e^{i\beta}-\frac{1}{2}m^{2}(A^{i})^{2}e^{-i\alpha}\right)\right)
+= & \mathcal{N}\int \mathcal{D}A^{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}e^{-i\alpha}+\frac{1}{2}(\dot{A}^{i})^{2}e^{i\alpha}+\dot{A}^{i}\partial _{i}A^{0}e^{i(\alpha+\beta)/2}+\frac{1}{2}(\partial _{i}A^{0})^{2}e^{i\beta}+\frac{1}{2}m^{2}(A^{0})^{2}e^{i\beta}-\frac{1}{2}m^{2}(A^{i})^{2}e^{-i\alpha}\right)\right)
 \end{align}
 $$
 

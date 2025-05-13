@@ -52,7 +52,8 @@
               "title": "canonical quantization for 1+1 dimensional electric fields"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -151,11 +152,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "eba5853790372a6e",
+  "active": "dd1bf893f7791ab1",
   "lastOpenFiles": [
+    "Articles/quantization/path integral quantization for Proca field.md",
     "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
-    "Articles/quantization/path integral quantization for Proca field.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Articles/Bachelor thesis/section 2 covariant phase space formalism and Noether theorem.md",
