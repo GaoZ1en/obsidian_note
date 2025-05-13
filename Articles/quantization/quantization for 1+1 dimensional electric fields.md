@@ -10,10 +10,38 @@ the system is defined on a interval with length $\displaystyle{L}$ or a circle w
 
 ---
 
+canonical momentum
+
 $$\tag{1.1}
 \begin{align}
 \pi _{0} & =\frac{\partial\mathcal{L}}{\partial \dot{A}^{0}}=0 \\
-\pi _{1} & =\frac{\partial \mathcal{L}}{\partial \dot{A}^{1}}=\dot{A}_{1}
+\pi _{1} & =\frac{\partial \mathcal{L}}{\partial \dot{A}^{1}}=\dot{A}_{1}+\partial _{1}A^{0}
+\end{align}
+$$
+
+then we have a primary constraint $\displaystyle{\varphi _{1}=\pi _{0}\approx0}$. the Hamiltonian is
+
+$$\tag{1.2}
+\begin{align}
+H & =\int \mathrm{d}^{2}x\left(\pi _{1}\dot{A}^{1}-\mathcal{L}[A^{1},A^{0}]\right) \\
+ & =\int \mathrm{d}^{2}x\left(\frac{1}{2}\pi _{1}\pi ^{1}-\pi ^{1}\partial _{1}A^{0}\right)
+\end{align}
+$$
+
+consider the Poisson bracket between $\displaystyle{\varphi _{1}}$ and $\displaystyle{H}$
+
+$$\tag{1.3}
+\begin{align}
+\left\{\varphi _{1},H\right\} & =\left\{\pi _{0},H\right\}=- \frac{\delta H}{\delta A^{0}} \\
+ & =-\partial _{1}\pi ^{1}
+\end{align}
+$$
+
+then we get a secondary constraints $\displaystyle{\varphi _{2}=-\partial _{1}\pi ^{1}=0}$. consider the Poisson bracket between $\displaystyle{\varphi _{1}}$ and $\displaystyle{\varphi _{2}}$
+
+$$\tag{1.4}
+\begin{align}
+\left\{\varphi _{1},\varphi _{2}\right\} & =\left\{\pi_{0},\right\}
 \end{align}
 $$
 
@@ -65,5 +93,32 @@ $$\tag{.}
 \begin{align}
 F_{01}=\partial _{0}A_{1}=-F^{01} \\
 F^{01}=\partial ^{0}A^{1}
+\end{align}
+$$
+
+---
+
+$$\tag{3.0}
+\begin{align}
+S & =\int \mathrm{d}^{2}x\left(\frac{1}{2}(\dot{A}^{1})^{2}+\dot{A}^{1}\partial _{1}A^{0}+\frac{1}{2}(\partial _{1}A^{0})^{2}\right)
+\end{align}
+$$
+
+$$\tag{3.1}
+\begin{align}
+Z[J_{\mu}] & =\int \mathcal{D}A^{\mu}\exp\left(i \int \mathrm{d}^{2}x\left(\frac{1}{2}(\dot{A}^{1})^{2}+\dot{A}^{i}\partial _{1}A^{0}+\frac{1}{2}(\partial _{1}A^{0})^{2}+J_{\mu}A^{\mu}\right)\right) \\
+ & =\int \mathcal{D}A^{\mu}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+-\frac{1}{2}A^{1}\partial _{0}^{2}A^{1}-\frac{1}{2}A^{0}\partial _{1}^{2}A^{0}-\frac{1}{2}\partial _{0}\partial _{1}A^{0}=-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+D_{\mu \nu} & =\partial ^{\mu}\partial ^{\nu}-\eta ^{\mu \nu}\partial ^{2}
 \end{align}
 $$
