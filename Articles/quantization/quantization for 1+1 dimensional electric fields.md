@@ -41,7 +41,23 @@ then we get a secondary constraints $\displaystyle{\varphi _{2}=-\partial _{1}\p
 
 $$\tag{1.4}
 \begin{align}
-\left\{\varphi _{1},\varphi _{2}\right\} & =\left\{\pi_{0},\right\}
+\left\{\varphi _{1},\varphi _{2}\right\} & =\left\{\pi_{0},-\partial _{1}\pi ^{1}\right\}=0
+\end{align}
+$$
+
+so $\displaystyle{\varphi _{1}}$ and $\displaystyle{\varphi _{2}}$ are first class constraints. choose Column gauge $\displaystyle{\partial _{1}A^{1}=0}$ and fix $\displaystyle{A^{0}=0}$ by a gauge transformation. then the Hamiltonian becomes
+
+$$\tag{1.5}
+\begin{align}
+H & =\int \mathrm{d}^{2}x \frac{1}{2}(\pi _{1})^{2}
+\end{align}
+$$
+
+canonical commutation relation gives that
+
+$$\tag{.}
+\begin{align}
+
 \end{align}
 $$
 
@@ -112,19 +128,3 @@ Z[J_{\mu}] & =\int \mathcal{D}A^{\mu}\exp\left(i \int \mathrm{d}^{2}x\left(\frac
 \end{align}
 $$
 
-where
-
-$$\tag{3.2}
-\begin{align}
-D_{\mu \nu} & =\begin{pmatrix}\partial_{1}^{2} & \partial _{0}\partial _{1} \\\partial_{0}\partial_{1} & \partial_{0}^{2}\end{pmatrix} \\
-\end{align}
-$$
-
-and $\displaystyle{(D^{-1})^{\mu \nu}}$ satisfies
-
-$$\tag{0.1}
-\begin{align}
-S & =\int \mathrm{d}^{2}x\left(-\frac{1}{2}F_{01}F^{01}\right) \\
- & =\int \mathrm{d}^{2}x\left(\frac{1}{2}\dot{A}^{1}\dot{A}^{1}+\dot{A}^{1}\partial_{1}A^{0}+\frac{1}{2}(\partial _{1}A^{0})^{2}\right)
-\end{align}
-$$
