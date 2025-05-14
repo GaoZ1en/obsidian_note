@@ -17,19 +17,14 @@ $$
 
 $$\tag{.}
 \begin{align}
-A^{0}(x) & =-\int \mathrm{d}^{3}\vec{y} \frac{1}{4\pi} \frac{e^{-im|\vec{x}-\vec{y}|}}{|\vec{x}-\vec{y}|}\partial _{i}\left(\delta ^{ij}-\frac{\partial ^{i}_{y}\partial ^{j}_{y}}{m^{2}}\right)\pi _{j}(y)
+A^{0}(x)=\frac{1}{m^{2}}\partial _{i}\pi ^{i}(x)
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-\mathcal{L} & =-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}\delta _{ij}\left( \delta ^{ik}-\frac{\partial ^{i}\partial ^{k}}{m^{2}} \right)\pi _{k}\left(\delta ^{kl}-\frac{\partial ^{k}\partial ^{l}}{m^{2}}\right)\pi _{l}+\left(\delta ^{ij}-\frac{\partial ^{i}\partial ^{j}}{m^{2}}\right)\pi _{j}\frac{\partial _{i}\partial ^{k}}{m^{2}}\pi _{k}+\frac{1}{2}\delta ^{ij}\frac{\partial _{i}\partial ^{k}\pi _{k}}{m^{2}} \frac{\partial _{j}\partial ^{l}\pi _{l}}{m^{2}}+\frac{1}{2}m^{2}(A^{0})^{2}-\frac{1}{2}m^{2}(A^{i})^{2}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\mathcal{L}_{\mathrm{eff}} & =-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{x,i}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z) \\
- & +\frac{1}{2}m^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z)-\frac{1}{2}m^{2}(A^{i})^{2}
+\mathcal{L}_{eff} & =-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}\delta _{ij}\left( \delta ^{ik}-\frac{\partial ^{i}\partial ^{k}}{m^{2}} \right)\pi _{k}\left(\delta ^{jl}-\frac{\partial ^{j}\partial ^{l}}{m^{2}}\right)\pi _{l}+\left(\delta ^{ij}-\frac{\partial ^{i}\partial ^{j}}{m^{2}}\right)\pi _{j}\frac{\partial _{i}\partial ^{k}}{m^{2}}\pi _{k}+\frac{1}{2}\delta ^{ij}\frac{\partial _{i}\partial ^{k}\pi _{k}}{m^{2}} \frac{\partial _{j}\partial ^{l}\pi _{l}}{m^{2}}+\frac{1}{2}m^{2} \frac{\partial _{i}\pi ^{i}}{m^{2}} \frac{\partial _{j}\pi ^{j}}{m^{2}}-\frac{1}{2}m^{2}(A^{i})^{2} \\
+ & =-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}\delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{2m^{2}}\partial ^{i}\pi _{i}\partial ^{j}\pi _{j}-\frac{1}{2}m^{2}\delta _{ij}A^{i}A^{j} \\
+\mathcal{H}_{\mathrm{eff}}[\pi _{i},A^{i}] & =\frac{1}{2}\delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{2m^{2}}\partial ^{i}\pi _{i}\partial ^{j}\pi _{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}m^{2}\delta _{ij}A^{i}A^{j}
 \end{align}
 $$
