@@ -5,7 +5,7 @@
   "errorNoticeTimeout": 0,
   "exposeInternalModules": true,
   "focusOnNewInstance": true,
-  "hideStatusBar": "never",
+  "hideStatusBar": "always",
   "interceptLogging": true,
   "language": "",
   "newInstanceBehavior": "newTab",
@@ -17,7 +17,7 @@
     "9550f2b5-4b1d-4842-b9a1-a68b7c2ce430": {
       "args": [],
       "executable": "/bin/bash",
-      "name": "",
+      "name": "main",
       "platforms": {
         "linux": true
       },
@@ -29,7 +29,9 @@
         "SIGTERM"
       ],
       "terminalOptions": {
-        "documentOverride": null
+        "documentOverride": null,
+        "fontFamily": "JetBrainsMono Nerd Font Mono",
+        "fontSize": 11
       },
       "type": "integrated",
       "useWin32Conhost": true
