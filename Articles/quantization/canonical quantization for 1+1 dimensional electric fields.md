@@ -217,6 +217,33 @@ the symplectic form becomes
 
 $$\tag{4.6}
 \begin{align}
-\omega=\frac{1}{2\pi R^{2}} \delta\dot{\phi}\wedge \delta \phi
+\omega & =\frac{1}{2\pi R^{2}} \delta\dot{\phi}\wedge \delta \phi \\
+ & =\frac{1}{2\pi R^{2}}\delta E_{0}\wedge \delta \phi _{0}
+\end{align}
+$$
+
+the Hamiltonian flow corresponding to $\displaystyle{\phi}$ is then
+
+$$\tag{4.7}
+\begin{align}
+X_{\phi} & =2\pi R^{2}\left(\frac{\delta \phi}{\delta \phi_{0}} \frac{\delta}{\delta E_{0}}-\frac{\delta \phi}{\delta E_{0}} \frac{\delta}{\delta \phi _{0}}\right) \\
+ & =2\pi R^{2}\left(\frac{\delta}{\delta E_{0}}-t \frac{\delta}{\delta \phi _{0}}\right)
+\end{align}
+$$
+
+$$\tag{4.8}
+\begin{align}
+[\phi(t_{1}),\phi(t_{2})] & =iX_{\phi(t_{1})}\cdot X_{\phi(t_{2})}\cdot \omega \\
+ & =2\pi iR^{2}(t_{2}-t_{1})
+\end{align}
+$$
+
+and the time ordered correlation function is
+
+$$\tag{4.9}
+\begin{align}
+\braket{ 0|\mathcal{T}\phi(t_{1})\phi(t_{2})|0 }  & =\theta(t_{1}-t_{2})\braket{ 0|\phi(t_{1})\phi(t_{2})|0 } +(t_{1}\leftrightarrow t_{2}) \\
+ & =2\pi R^{2}\theta(t_{1}-t_{2})t_{2}+(t_{1}\leftrightarrow t_{2}) \\
+ & =2\pi R^{2}\int \frac{\mathrm{d}\omega}{2\pi} e^{-i\omega(t_{1}-t_{2})}\left( \frac{t_{1}}{\omega-i\varepsilon}+\frac{t_{2}}{\omega+i\varepsilon}\right)​
 \end{align}
 $$
