@@ -150,7 +150,7 @@ $$\tag{3.3}
 \begin{align}
 \pi _{i}(x) & =\frac{\delta S_{\mathrm{eff}}}{\delta \dot{A}^{i}(x)} =\int \mathrm{d}^{4}x'\left(\frac{\delta L(x')}{\delta \dot{A}^{i}(x)}+\int \mathrm{d}^{4}x''\frac{\delta L(x')}{\delta A^{0}(x'')} \frac{\delta A^{0}(x'')}{\delta \dot{A}^{i}(x)}\right){\Big|}_{\tiny\displaystyle{A^{0}(x)=-\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{i}\dot{A}^{i}(y)}} \\
  & =\dot{A}_{i}(x)-\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y) \\
-\implies \dot{A}^{i} & =\dot{A}^{i}[\pi _{i}]
+\implies \dot{A}^{i}(x) & =\left(\delta ^{ij}-\frac{\partial ^{i}\partial ^{j}}{m^{2}}\right)\pi _{j}(x)
 \end{align}
 $$
 
@@ -158,7 +158,8 @@ then the effective Hamiltonian is
 
 $$\tag{3.3}
 \begin{align}
-H & =\int \mathrm{d}^{3}x(\pi _{i}\dot{A}^{i}[\pi _{i}]-L_{\mathrm{eff}}[A^{i},\dot{A}^{i}[\pi _{i}]])
+H & =\int \mathrm{d}^{3}x(\pi _{i}\dot{A}^{i}[\pi _{i}]-L_{\mathrm{eff}}[A^{i},\dot{A}^{i}[\pi _{i}]]) \\
+ & =
 \end{align}
 $$
 
