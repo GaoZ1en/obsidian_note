@@ -59,7 +59,7 @@ $$
 
 $$\tag{.}
 \begin{align}
--\frac{k _{i}k _{j}}{\vec{k}^{2}+m^{2}}\ddot{A}^{j}(k)=B_{i}(k) \\
-
+(\vec{k}^{2}+m^{2})A^{j}(\vec{k}) & =-\ddot{A}^{j}(\vec{k})
 \end{align}
 $$
+

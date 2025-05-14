@@ -405,9 +405,16 @@ which is exactly the ij component of the equation of motion $\displaystyle{\left
 
 the equation of motion is
 
-$$\tag{.}
+$$\tag{8.1}
 \begin{align}
-(\partial _{i}\partial _{j}-\delta _{ij}(-\partial _{0}^{2}+\vec{\nabla}^{2}-m^{2}))A^{j}=\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\ddot{A}^{j}(y)
+(\partial _{i}\partial _{j}-\delta _{ij}(-\partial _{0}^{2}+\vec{\nabla}^{2}-m^{2}))A^{j} & =\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\ddot{A}^{j}(y) \\
+\implies-k _{i}k _{j}A^{j}(\vec{k})+\delta _{ij}\ddot{A}^{j}(\vec{k})+\delta _{ij}(\vec{k}^{2}+m^{2})A^{j}(\vec{k}) & =+\frac{\delta _{ij}}{\vec{k}^{2}+m^{2}}\ddot{A}^{j}(\vec{k}) \\
+\implies \ddot{A}^{j}(\vec{k})+(\vec{k}^{2}+m^{2})A^{j}(\vec{k}) & =0 \\
+\implies (\partial _{\mu}\partial ^{\mu}-m^{2})A^{j}(x) & =0
 \end{align}
 $$
 
+which is exactly the Klein-Gordon equation.
+
+
+显式地从正则形式的Hamiltonian $H=\int \mathrm{d}^{3}x\left( \frac{1}{2}\delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{2m^{2}}\partial ^{i}\pi _{i}\partial ^{j}\pi _{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}m^{2}\delta _{ij}A^{i}A^{j} \right)$一步步推导Proca场的路径积分量子化，最终得到
