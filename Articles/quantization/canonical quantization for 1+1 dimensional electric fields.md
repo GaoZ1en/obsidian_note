@@ -185,22 +185,8 @@ $$\tag{.}
 \begin{align}
 \partial _{0}(\dot{A}^{1}+\partial _{1}A^{0}) & =\partial _{1}(\dot{A}^{1}+\partial _{1}A^{0})=0 \\
 \implies \dot{A}^{1}+\partial _{1}A^{0} & =-E_{0} \\
-\implies \frac{in}{R}A^{0}_{n} & =-E_{0}-\dot{A}^{1}_{n}
+\implies \frac{in}{R}A^{0}_{n} & =-E_{0}\delta _{0,n}-\dot{A}^{1}_{n}
 \end{align}
 $$
 
 where $\displaystyle{A^{\mu}_{n}=\frac{1}{2\pi R}\int ^{2\pi R}_{0}\mathrm{d}xA^{\mu}e^{-inx/R}}$
-
-$$\tag{.}
-\begin{align}
-\partial _{1}A^{0} & =-E_{0}-\dot{A}^{1} \\
-\frac{1}{2\pi R} \frac{in}{R}\sum ^{\infty}_{n=-\infty}A^{0}_{n} e^{i(n-m)x/R} & =-\frac{1}{2\pi R}E_{0}e^{-imx/R}-\frac{1}{2\pi R}\sum ^{\infty}_{n=-\infty}\dot{A}^{1}_{n}e^{i(n-m)x/R} \\
-\frac{in}{R}A^{0}_{n} & =-E_{0}-\dot{A}^{1}_{n}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\frac{1}{2\pi R}\int ^{2\pi R}_{0}\mathrm{d}x e^{i(n-m)x/R} & =\delta _{n,m}
-\end{align}
-$$
