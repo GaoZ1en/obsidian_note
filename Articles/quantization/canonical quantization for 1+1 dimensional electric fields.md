@@ -181,12 +181,42 @@ $$
 
 the equation of motion is
 
-$$\tag{.}
+$$\tag{4.3}
 \begin{align}
 \partial _{0}(\dot{A}^{1}+\partial _{1}A^{0}) & =\partial _{1}(\dot{A}^{1}+\partial _{1}A^{0})=0 \\
-\implies \dot{A}^{1}+\partial _{1}A^{0} & =-E_{0} \\
-\implies \frac{in}{R}A^{0}_{n} & =-E_{0}\delta _{0,n}-\dot{A}^{1}_{n}
+\implies \dot{A}^{1}+\partial _{1}A^{0} & =-E_{0}
 \end{align}
 $$
 
-where $\displaystyle{A^{\mu}_{n}=\frac{1}{2\pi R}\int ^{2\pi R}_{0}\mathrm{d}xA^{\mu}e^{-inx/R}}$
+choose temperal gauge $\displaystyle{A^{0}=0}$ and Column gauge $\displaystyle{\partial _{1}A^{1}=0\implies A^{1}=\mathrm{Const}.,E_{0}=0}$. so there is again no local degrees of freedom. the zero mode of $\displaystyle{A^{1}}$
+
+$$\tag{4.4}
+\begin{align}
+\phi(t) & =\int ^{2\pi R}_{0}\mathrm{d}xA_{1}(x,t)
+\end{align}
+$$
+
+is the only degree of freedom. the action becomes
+
+$$\tag{4.5}
+\begin{align}
+S & =\int \mathrm{d}t\left( \frac{1}{4\pi R^{2}}\dot{\phi}^{2}+\frac{\theta}{2\pi}\dot{\phi} \right)
+\end{align}
+$$
+
+the equation of motion for $\displaystyle{\phi}$ is
+
+$$\tag{4.7}
+\begin{align}
+E_{\phi} & =-\frac{1}{4\pi R^{2}}\ddot{\phi}=0 \\
+\implies \phi & =E_{0}t+\phi _{0}
+\end{align}
+$$
+
+the symplectic form becomes
+
+$$\tag{4.6}
+\begin{align}
+\omega=\frac{1}{2\pi R^{2}} \delta\dot{\phi}\wedge \delta \phi
+\end{align}
+$$
