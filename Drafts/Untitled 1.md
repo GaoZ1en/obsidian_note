@@ -35,45 +35,17 @@ $$\tag{.}
 \end{align}
 $$
 
-
 $$\tag{.}
 \begin{align}
-\mathcal{H}_{\mathrm{eff}}[\pi _{i},A^{i}] & =\frac{1}{2}\delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{2m^{2}}\partial ^{i}\pi _{i}\partial ^{j}\pi _{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}m^{2}\delta _{ij}A^{i}A^{j}
+\mathcal{L}_{\mathrm{eff}} & =-\frac{1}{2}A^{i}(\partial _{i}\partial _{j}-\delta _{ij}(\vec{\nabla}^{2}-m^{2}))A^{j}+\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{x,i}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z) \\
+ & +\frac{1}{2}m^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z)
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-\dot{A}^{i} & =\left\{A^{i},H\right\}=\int \mathrm{d}^{3}x \frac{\delta \mathcal{H}}{\delta \pi _{i}} \\
- & =\left(\delta ^{ij}-\frac{1}{m^{2}}\partial ^{i}\partial ^{j}\right)\pi _{j} \\
-\dot{\pi}_{i} & =\left\{\pi _{i},H\right\}=-\int \mathrm{d}^{3}x \frac{\delta \mathcal{H}}{\delta A^{i}} \\
- & =\delta _{ij}(\vec{\nabla}^{2}-m^{2})A^{j}-\partial _{i}\partial _{j}A^{j} \\
-\pi _{i}(x) & =\delta _{ij}\dot{A}^{j}(x)-\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\delta _{ij}\ddot{A}^{j}- & =\delta _{ij}(\vec{\nabla}^{2}-m^{2})A^{j}-\partial _{i}\partial _{j}A^{j}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\left( \delta ^{ij}+\frac{k^{i}k^{j}}{m^{2}} \right)\pi _{j}(\vec{k}) & =\dot{A}(\vec{k}) \\
-\implies \pi _{i}(x) & =\delta _{ij}\dot{A}^{j}(x)-\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\left( \delta ^{ij}+\frac{k^{i}k^{j}}{m^{2}} \right)^{-1} & =\left(\delta _{ij}-\frac{k _{i}k _{j}}{\vec{k}^{2}+m^{2}}\right)
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\left(\partial ^{\mu}\partial ^{\nu}-\eta ^{\mu \nu}\partial ^{2}+\eta ^{\mu \nu}m^{2}\right)A_{\nu} \\
-(\partial _{i}\partial _{j}-\eta _{ij}\partial ^{2}+\eta _{ij}m^{2})A^{j} & =0
+\frac{\delta S}{\delta A^{i}} & =-(\partial _{i}\partial _{j}-\delta _{ij}(\vec{\nabla}^{2}-m^{2}))A^{j} \\
+\frac{\delta S}{\delta \dot{A}^{i}} & = \delta _{ij}\dot{A}^{j}(x)+\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)+\int \mathrm{d}^{4}x\dot{A}^{j}(x)\int \mathrm{d}^{3}\vec{y}\partial _{x,j}G(\vec{x},\vec{y})\partial _{y,k}\left(\delta ^{k}_{i}\delta ^{4}(x-y)\right)+\int \mathrm{d}^{4}x\int \mathrm{d}^{3}\vec{y}\partial _{x,j}G(\vec{x},\vec{y})\partial _{y,k}\dot{A}^{k}(y)\int \mathrm{d}^{3}\vec{z}\partial _{x,j}G(\vec{x},\vec{z})\partial _{z,l}\left(\delta ^{l}_{i}\delta ^{4}(x-z)\right) \\
+ & +\int \mathrm{d}^{4}xm^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{z,k}\left(\delta ^{k}_{i}\delta ^{4}(x-z)\right)
 \end{align}
 $$
