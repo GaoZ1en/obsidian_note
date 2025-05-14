@@ -416,5 +416,3 @@ $$
 
 which is exactly the Klein-Gordon equation.
 
-
-显式地从正则形式的Hamiltonian $H=\int \mathrm{d}^{3}x\left( \frac{1}{2}\delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{2m^{2}}\partial ^{i}\pi _{i}\partial ^{j}\pi _{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}m^{2}\delta _{ij}A^{i}A^{j} \right)$一步步推导Proca场的路径积分量子化，最终得到
