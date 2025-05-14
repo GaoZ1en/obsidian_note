@@ -59,6 +59,7 @@ $$
 
 $$\tag{.}
 \begin{align}
-\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\ddot{A}^{j}(y)=B(x)
+-\frac{k _{i}k _{j}}{\vec{k}^{2}+m^{2}}\ddot{A}^{j}(k)=B_{i}(k) \\
+
 \end{align}
 $$
