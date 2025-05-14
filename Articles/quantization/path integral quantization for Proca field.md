@@ -171,7 +171,7 @@ $$\tag{3.4}
 = & \mathcal{N}\braket{ A^{i}_{t_{f}}|e^{-iH\Delta te^{-i\alpha}}\dots e^{-iH\Delta te^{-i\alpha}}|A^{j}_{t_{i}} } \\
 = & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\braket{A^{i}_{t_{f}}|e^{-iH\Delta te^{-i\alpha}}|A^{i_{n-1}}_{n-1} }\braket{ A^{i_{n-1}}_{n-1}|e^{-iH\Delta te^{-i\alpha}}|A^{i_{n-2}}_{n-2} }\dots\braket{ A^{i_{1}}_{1}|e^{-iH\Delta te^{-i\alpha}}|A^{j}_{t_{i}} } \\
 = & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}D\pi ^{b}_{j_{b}}\braket{ A^{i}_{t_{f}}|e^{-iH\Delta te^{-i\alpha}}|\pi ^{n}_{j_{n}} } \braket{ \pi ^{n}_{j_{n}}|A^{i_{n-1}}_{n-1} }\dots\braket{ A^{i_{1}}_{1}|e^{-iH\Delta te^{-i\alpha}}|\pi ^{1}_{j_{1}}}\braket{ \pi ^{1}_{j_{1}}|A^{j}_{t_{i}} }  \\
-= & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}D\pi ^{b}_{j_{b}}\exp\left( i\Delta te^{-i\alpha}\int \mathrm{d}^{3}x\sum ^{n}_{k=1}\pi ^{k}_{j_{k}}(\delta ^{j_{k}}_{i_{k}}A^{i_{k}}_{k}-\delta ^{j_{k}}_{i_{k-1}}A^{i_{k-1}}_{k-1})-i\Delta te^{-i\alpha}\sum ^{n}_{k=1}\int \mathrm{d}^{3}x\left(\frac{1}{2}\delta ^{ij}\pi ^{k} _{i}\pi ^{k} _{j}+\frac{1}{2m^{2}}\partial ^{i}\pi ^{k} _{i}\partial ^{j}\pi _{j}+\frac{1}{4}(\partial _{i}A_{k}^{j}-\partial _{j}A_{k}^{i})^{2}+\frac{1}{2}m^{2}\delta _{ij}A_{k}^{i}A_{k}^{j}\right)\right)? \\
+= & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}D\pi ^{b}_{j_{b}}\exp\left( i\Delta te^{-i\alpha}\int \mathrm{d}^{3}x\sum ^{n}_{k=1}\pi ^{k}_{j_{k}}(\delta ^{j_{k}}_{i_{k}}A^{i_{k}}_{k}-\delta ^{j_{k}}_{i_{k-1}}A^{i_{k-1}}_{k-1})-i\Delta te^{-i\alpha}\sum ^{n}_{k=1}\int \mathrm{d}^{3}x\left(\frac{1}{2}\delta ^{ij}\pi ^{k} _{i}\pi ^{k} _{j}+\frac{1}{2m^{2}}\partial ^{i}\pi ^{k} _{i}\partial ^{j}\pi _{j}+\frac{1}{4}(\partial _{i}A_{k}^{j}-\partial _{j}A_{k}^{i})^{2}+\frac{1}{2}m^{2}\delta _{ij}A_{k}^{i}A_{k}^{j}\right)\right) \\
 = & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\exp\left(i\Delta te^{i\alpha}\sum ^{n}_{k=1}\int \mathrm{d}^{3}x\left( \mathcal{L}_{\mathrm{eff}}\left[ A^{i_{k}}_{k}, \frac{A^{j_{k}}_{k}-A^{j_{k}}_{k-1}}{\Delta te^{-i\alpha}} \right] \right)\right) \\
 = & \mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}DA^{0}_{b}\exp\left(i\Delta t\sum ^{n}_{k=1}\int \mathrm{d}^{3}x\left(-\frac{1}{4}(\partial _{i}A^{j_{k}}_{k}-\partial _{j}A^{i_{k}}_{k})^{2}e^{-i\alpha}+\frac{1}{2} \left( \frac{A^{j_{k}}_{k}-A^{j_{k}}_{k-1}}{\Delta t} \right)^{2}e^{i\alpha}+\frac{A^{j_{k}}_{k}-A^{j_{k}}_{k-1}}{\Delta t}\partial _{j_{k}}A^{0}_{k}e^{i(\alpha+\beta)/2}\right)\right. \\
  & \left.+\frac{1}{2}(\partial _{i}A^{0}_{k})^{2}e^{i\beta}+\frac{1}{2}m^{2}(A^{0}_{k})e^{i\beta}-\frac{1}{2}m^{2}(A^{i_{k}}_{k})^{2}e^{-i\alpha}\right) \\
@@ -376,3 +376,27 @@ $$\tag{5.7}
 \end{align}
 $$
 
+---
+
+we will start from (3.3)
+
+$$\tag{3.3}
+\begin{align}
+H & =\int \mathrm{d}^{3}x\left( \frac{1}{2}\delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{2m^{2}}\partial ^{i}\pi _{i}\partial ^{j}\pi _{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}m^{2}\delta _{ij}A^{i}A^{j} \right)
+\end{align}
+$$
+
+and prove that the canonical equation of motion is equivalent to the equation of motion given by (3.1)
+
+$$\tag{7.1}
+\begin{align}
+\dot{A}^{i} & =\left\{A^{i},H\right\}=\int \mathrm{d}^{3}x \frac{\delta \mathcal{H}}{\delta \pi _{i}} \\
+ & =\left(\delta ^{ij}-\frac{1}{m^{2}}\partial ^{i}\partial ^{j}\right)\pi _{j} \\
+\dot{\pi}_{i} & =\left\{\pi _{i},H\right\}=-\int \mathrm{d}^{3}x \frac{\delta \mathcal{H}}{\delta A^{i}} \\
+ & =\delta _{ij}(\vec{\nabla}^{2}-m^{2})A^{j}-\partial _{i}\partial _{j}A^{j} \\
+\implies \pi _{i}(x) & =\delta _{ij}\dot{A}^{j}(x)-\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y) \\
+\implies \delta _{ij}\ddot{A}^{j}- & =\delta _{ij}(\vec{\nabla}^{2}-m^{2})A^{j}-\partial _{i}\partial _{j}A^{j}
+\end{align}
+$$
+
+which is exactly the ij component of the equation of motion $\displaystyle{\left(\partial _{\mu}\partial _{\nu}-\eta _{\mu \nu}\partial ^{2}+\eta _{\mu \nu}m^{2}\right)A^{\nu} \\}$
