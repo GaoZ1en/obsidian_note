@@ -31,7 +31,16 @@ $$
 
 $$\tag{.}
 \begin{align}
-\mathcal{N}\int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}D\pi ^{b}_{j_{b}}\exp\left( \sum ^{n}_{k=1}\int \mathrm{d}^{3}x-\frac{1}{2}\pi ^{k}_{i}i\Delta te^{-i\alpha}\left( \delta ^{ij}-\frac{1}{m^{2}}\partial ^{i}\partial ^{j} \right)\pi ^{k}_{j}+i\pi ^{k}_{j}\Delta te^{-i\alpha}(A^{j}_{k}-A^{j}_{k-1})-i\Delta te^{-i\alpha}\sum ^{n}_{k=1}\int \mathrm{d}^{3}x\left(\frac{1}{4}(\partial _{i}A_{k}^{j}-\partial _{j}A_{k}^{i})^{2}+\frac{1}{2}m^{2}\delta _{ij}A_{k}^{i}A_{k}^{j}\right)\right)
+\mathcal{N} & \int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}D\pi ^{b}_{j_{b}}\exp\left( \sum ^{n}_{k=1}\int \mathrm{d}^{3}x-\frac{1}{2}\pi ^{k}_{i}i\Delta te^{-i\alpha}\left( \delta ^{ij}-\frac{1}{m^{2}}\partial ^{i}\partial ^{j} \right)\pi ^{k}_{j}+i\pi ^{k}_{j}\Delta te^{-i\alpha}(A^{j}_{k}-A^{j}_{k-1})-i\Delta te^{-i\alpha}\sum ^{n}_{k=1}\int \mathrm{d}^{3}x\left(\frac{1}{4}(\partial _{i}A_{k}^{j}-\partial _{j}A_{k}^{i})^{2}+\frac{1}{2}m^{2}\delta _{ij}A_{k}^{i}A_{k}^{j}\right)\right) \\
+\mathcal{N} & \int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\exp\left(i\Delta t \sum ^{n}_{k=1}\int \mathrm{d}^{3}x\left(-\frac{1}{4}(\partial _{i}A_{k}^{j}-\partial _{j}A_{k}^{i})^{2}e^{-i\alpha}-\frac{1}{2}m^{2}(A^{i})^{2}e^{-i\alpha}+\frac{1}{2}\left(\frac{A^{j}_{k}-A^{j}_{k-1}}{\Delta t}\right)^{2}e^{i\alpha}+\right)\right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\mathcal{N} & \int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\prod ^{n}_{b=1}D\pi ^{b}_{j_{b}}\exp\left( \sum ^{n}_{k=1}\int \mathrm{d}^{3}x-\frac{1}{2}\pi ^{k}_{i}i\Delta te^{-i\alpha}\left( \delta ^{ij}-\frac{1}{m^{2}}\partial ^{i}\partial ^{j} \right)\pi ^{k}_{j}+i\pi ^{k}_{j}\Delta te^{-i\alpha}(A^{j}_{k}-A^{j}_{k-1})-i\Delta te^{-i\alpha}\sum ^{n}_{k=1}\int \mathrm{d}^{3}x\left(\frac{1}{4}(\partial _{i}A_{k}^{j}-\partial _{j}A_{k}^{i})^{2}+\frac{1}{2}m^{2}\delta _{ij}A_{k}^{i}A_{k}^{j}\right)\right) \\
+\mathcal{N} & \int \prod ^{n-1}_{a=1}DA^{i_{a}}_{a}\exp\left(i\Delta t \sum ^{n}_{k=1}\int \mathrm{d}^{3}x\left(-\frac{1}{4}(\partial _{i}A_{k}^{j}-\partial _{j}A_{k}^{i})^{2}e^{-i\alpha}-\frac{1}{2}m^{2}(A^{i})^{2}e^{-i\alpha}+\frac{1}{2}\left(\frac{A^{j}_{k}-A^{j}_{k-1}}{\Delta t}\right)^{2}e^{i\alpha}\right.\right. \\
+ & \left. \left. -\frac{A^{j}_{k}-A^{j}_{k-1}}{\Delta t}\int \mathrm{d}^{3}\vec{y}\partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)e^{i\alpha}+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{i}G(\vec{x},\vec{y})\partial _{j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{i}G(\vec{x},\vec{z})\partial _{k}\dot{A}^{k}(z)e^{i\alpha} \right) \right)
 \end{align}
 $$
 
