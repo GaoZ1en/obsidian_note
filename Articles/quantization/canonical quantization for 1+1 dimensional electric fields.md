@@ -160,12 +160,10 @@ where the spatial dimension is $\displaystyle{S^{1}}$ with radius $\displaystyle
 
 ---
 
----
-
 make a variation
 
 $$\tag{4.1}
 \begin{align}
-\delta S & =
+\delta S & =\int \mathrm{d}^{2}x\left(\dot{A}^{1} \frac{\mathrm{d}}{\mathrm{d}t}\delta A^{1}+\frac{\mathrm{d}}{\mathrm{d}t}\delta A^{1}\partial _{1}A^{0}+\dot{A}^{1}\partial _{1}A_{0}+\partial _{1}A^{0}\partial _{1}\delta A^{0}+\frac{\theta}{2\pi}\left(\frac{\mathrm{d}}{\mathrm{d}t}\delta Ak\right)\right)
 \end{align}
 $$
