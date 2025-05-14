@@ -45,7 +45,20 @@ $$
 $$\tag{.}
 \begin{align}
 \frac{\delta S}{\delta A^{i}} & =-(\partial _{i}\partial _{j}-\delta _{ij}(\vec{\nabla}^{2}-m^{2}))A^{j} \\
-\frac{\delta S}{\delta \dot{A}^{i}} & = \delta _{ij}\dot{A}^{j}(x)+\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)+\int \mathrm{d}^{4}x\dot{A}^{j}(x)\int \mathrm{d}^{3}\vec{y}\partial _{x,j}G(\vec{x},\vec{y})\partial _{y,k}\left(\delta ^{k}_{i}\delta ^{4}(x-y)\right)+\int \mathrm{d}^{4}x\int \mathrm{d}^{3}\vec{y}\partial _{x,j}G(\vec{x},\vec{y})\partial _{y,k}\dot{A}^{k}(y)\int \mathrm{d}^{3}\vec{z}\partial _{x,j}G(\vec{x},\vec{z})\partial _{z,l}\left(\delta ^{l}_{i}\delta ^{4}(x-z)\right) \\
- & +\int \mathrm{d}^{4}xm^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{z,k}\left(\delta ^{k}_{i}\delta ^{4}(x-z)\right)
+\frac{\delta S}{\delta \dot{A}^{i}} & = \dot{A}_{i}(x)-\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(\vec{y},x_{0})
+\end{align}
+$$
+
+the equation of motion is
+
+$$\tag{.}
+\begin{align}
+(\partial _{i}\partial _{j}-\delta _{ij}(-\partial _{0}^{2}+\vec{\nabla}^{2}-m^{2}))A^{j}=\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\ddot{A}^{j}(y)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\ddot{A}^{j}(y)=B(x)
 \end{align}
 $$

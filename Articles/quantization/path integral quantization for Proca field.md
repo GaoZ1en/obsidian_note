@@ -400,3 +400,14 @@ $$\tag{7.1}
 $$
 
 which is exactly the ij component of the equation of motion $\displaystyle{\left(\partial _{\mu}\partial _{\nu}-\eta _{\mu \nu}\partial ^{2}+\eta _{\mu \nu}m^{2}\right)A^{\nu} \\}$
+
+---
+
+the equation of motion is
+
+$$\tag{.}
+\begin{align}
+(\partial _{i}\partial _{j}-\delta _{ij}(-\partial _{0}^{2}+\vec{\nabla}^{2}-m^{2}))A^{j}=\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\ddot{A}^{j}(y)
+\end{align}
+$$
+
