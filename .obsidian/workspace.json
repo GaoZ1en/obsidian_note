@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 253,
+                    "columns": 153,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
                     "rows": 70
                   }
@@ -48,7 +48,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 bash"
+              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 nvim"
             }
           },
           {
@@ -72,17 +72,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Drafts/Untitled 1.md",
+                "file": "Drafts/Untitled.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "Untitled"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +111,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -191,14 +191,15 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "fdd2372b28005d44",
+  "active": "aa9eb9dcaf7d73d2",
   "lastOpenFiles": [
+    "Drafts/Untitled.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
+    "Drafts/Untitled 1.md",
     "TODO.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/path integral quantization for Proca field.md",
-    "Drafts/Untitled 1.md",
     "Drafts/complex constraint.md",
     "Drafts/Nambu-Goto action and cosmic string.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
@@ -230,7 +231,6 @@
     "Attachments/微信图片_20250414131423_29.jpg",
     "Attachments/Pasted image 20250417093901.png",
     "Attachments/Pasted image 20250214190351.png",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/week 9.md",
     "Articles/quantization",
     "Reading/gravity",
     "Articles/some generalization CPS",
