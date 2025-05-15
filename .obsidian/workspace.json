@@ -81,7 +81,8 @@
               "title": "prompt"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -191,12 +192,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "aa9eb9dcaf7d73d2",
+  "active": "537ae086c2472aa7",
   "lastOpenFiles": [
+    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Drafts/prompt.md",
     "Drafts/word cloud.md",
     "Drafts/Proca field calculation.md",
-    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "TODO.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/path integral quantization for constrained system.md",
