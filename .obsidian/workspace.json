@@ -48,7 +48,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 0 ● 2 python"
+              "title": "Terminal: KoishiLaptop ❐ 0 ● 3 bash"
             }
           },
           {
@@ -81,7 +81,8 @@
               "title": "project euler"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -191,7 +192,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c8d3e695c80d788",
+  "active": "2607ffa573912f9b",
   "lastOpenFiles": [
     "Drafts/project euler.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
