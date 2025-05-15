@@ -48,7 +48,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 2 ● 1 nvim"
+              "title": "Terminal: KoishiLaptop ❐ 2 ● 1 bash"
             }
           },
           {
@@ -81,8 +81,7 @@
               "title": "prompt"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -192,10 +191,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "537ae086c2472aa7",
+  "active": "aa9eb9dcaf7d73d2",
   "lastOpenFiles": [
-    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Drafts/prompt.md",
+    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Drafts/word cloud.md",
     "Drafts/Proca field calculation.md",
     "TODO.md",
