@@ -7,6 +7,7 @@ $$
 
 $$\tag{.}
 \begin{align}
-\frac{a(a+1)}{2} & =\frac{b(3n-1)}{2}=
+a^{2}+a & =3b^{2}-b \\
+a=\frac{-1+\sqrt{ 1+4(3b^2-b) }}{2}
 \end{align}
 $$
