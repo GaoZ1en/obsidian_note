@@ -35,3 +35,16 @@ a_{0}=b_{0}=c_{0}=d_{0}=1
 \end{align}
 $$
 
+
+
+$$\tag{.}
+\begin{align}
+10^{n+1}=y^{n}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+10^{2n}
+\end{align}
+$$
