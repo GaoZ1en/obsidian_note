@@ -29,9 +29,9 @@
         "SIGTERM"
       ],
       "terminalOptions": {
-        "documentOverride": null,
         "fontFamily": "JetBrainsMono Nerd Font Mono",
-        "fontSize": 11
+        "fontSize": 11,
+        "documentOverride": null
       },
       "type": "integrated",
       "useWin32Conhost": true
