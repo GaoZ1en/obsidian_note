@@ -48,3 +48,9 @@ $$\tag{.}
 10^{2n}
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+\frac{2}{7} & = \frac{n}{d}\implies n=\frac{2d}{7}
+\end{align}
+$$
