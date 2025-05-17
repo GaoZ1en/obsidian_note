@@ -44,15 +44,41 @@ $$
 
 here we choose parameterization $\displaystyle{\tau}$ such that $\displaystyle{\sqrt{ -g_{\mu \nu}\frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} }=1}$
 
-$$\tag{2.3}
-\begin{align}
--g_{\mu \nu}\frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}=
-\end{align}
-$$
 then make a variation on $\displaystyle{g_{\mu \nu}}$, we have
 
-$$\tag{.}
+$$\tag{2.3}
 \begin{align}
-
+\delta S & = -m\int \mathrm{d}\tau \frac{ \delta g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}}{2\sqrt{ -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} }} \\
+ & =-\int \mathrm{d}\tau  \frac{1}{2}m \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \delta g_{\mu \nu}
 \end{align}
 $$
+
+introduce covariant Dirac delta function $\displaystyle{\tilde{\delta}^{d}(x)}$, which satisfies
+
+$$\tag{2.4}
+\begin{align}
+\int \mathrm{d}^{d}x \sqrt{ -g } \tilde{\delta} ^{d}(x) =1
+\end{align}
+$$
+
+then the action becomes
+
+$$\tag{2.5}
+\begin{align}
+S & =-m \int \mathrm{d}\tau \sqrt{ -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} } \int \mathrm{d}^{d}x \sqrt{ -g } \tilde{\delta}^{d}(x) \\
+ & =-m\int \mathrm{d}^{d}x'\sqrt{ -g }\int \mathrm{d}\tau \sqrt{ -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} } \tilde{\delta}^{d}(x-x')
+\end{align}
+$$
+
+and the variation of the action
+
+$$\tag{2.6}
+\begin{align}
+\delta S & =-\int \mathrm{d}\tau  \frac{1}{2}m \frac{\mathrm{d}x'^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x'^{\nu}}{\mathrm{d}\tau} \delta g_{\mu \nu} \int \mathrm{d}^{d}x \sqrt{ -g } \frac{\delta ^{d}(x-x')}{\sqrt{ -g }} \\
+ & =-\int \mathrm{d}^{d}x\sqrt{ -g } \int \mathrm{d}\tau  \frac{1}{2}m \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \frac{\delta ^{d}(x-x')}{\sqrt{ -g }} \\
+\implies T^{\mu \nu} & = -\frac{2}{\sqrt{ -g }} \frac{\delta S}{\delta g^{\mu \nu}} \\
+ & =\int \mathrm{d}\tau  \frac{\delta ^{d}(x-x')}{\sqrt{ -g }} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \\
+ & =
+\end{align}
+$$
+
