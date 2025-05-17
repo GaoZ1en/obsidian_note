@@ -77,8 +77,42 @@ $$\tag{2.6}
 \delta S & =-\int \mathrm{d}\tau  \frac{1}{2}m \frac{\mathrm{d}x'^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x'^{\nu}}{\mathrm{d}\tau} \delta g_{\mu \nu} \int \mathrm{d}^{d}x \sqrt{ -g } \frac{\delta ^{d}(x-x')}{\sqrt{ -g }} \\
  & =-\int \mathrm{d}^{d}x\sqrt{ -g } \int \mathrm{d}\tau  \frac{1}{2}m \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \frac{\delta ^{d}(x-x')}{\sqrt{ -g }} \\
 \implies T^{\mu \nu} & = -\frac{2}{\sqrt{ -g }} \frac{\delta S}{\delta g^{\mu \nu}} \\
- & =\int \mathrm{d}\tau  \frac{\delta ^{d}(x-x')}{\sqrt{ -g }} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \\
- & =
+ & =\int \mathrm{d}\tau  \frac{\delta ^{d}(x-x')}{\sqrt{ -g }} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}
 \end{align}
 $$
+
+then we have the conserved charge
+
+$$\tag{2.7}
+\begin{align}
+H_{\xi} & =\int _{\Sigma}\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}
+\end{align}
+$$
+
+we have a diffeomorphism anomaly that
+
+$$\tag{2.8}
+\begin{align}
+\nabla _{\mu}T^{\mu \nu}\neq 0
+\end{align}
+$$
+
+under a infinitesimal diffeomorphism transformation
+
+$$\tag{2.9}
+\begin{align}
+g_{\mu \nu} & \to g_{\mu \nu}+\mathcal{L}_{\xi}g_{\mu \nu} \\
+A_{\mu}  & \to A_{\mu}+\mathcal{L}_{\xi}A_{\mu} \\
+x^{\mu} & \to x^{\mu}+\xi ^{\mu}
+\end{align}
+$$
+
+$$\tag{2.10}
+\begin{align}
+X_{\xi}\cdot \delta S & =\int \mathrm{d}\tau q \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}\mathcal{L}_{\xi}+ \int \mathrm{d}\tau \dots \\
+ & =\dots
+\end{align}
+$$
+
+in black hole.... make a perturbation by introduce a point particle and drop into the black hole. after the particle drop into the black hole, what is the $\displaystyle{(M',Q',J')}$ i
 
