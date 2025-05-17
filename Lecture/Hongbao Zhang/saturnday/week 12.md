@@ -114,5 +114,7 @@ X_{\xi}\cdot \delta S & =\int \mathrm{d}\tau q \frac{\mathrm{d}x^{\mu}}{\mathrm{
 \end{align}
 $$
 
-in black hole.... make a perturbation by introduce a point particle and drop into the black hole. after the particle drop into the black hole, what is the $\displaystyle{(M',Q',J')}$ i
+in black hole.... make a perturbation by introduce a point particle and drop into the black hole. after the particle drop into the black hole, how is the final state $\displaystyle{(M',Q',J')}$ related to the stress tensor $\displaystyle{T_{\mu \nu}}$?
+
+***do this problem next week***
 
