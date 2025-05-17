@@ -114,7 +114,6 @@
           {
             "id": "b622edcc0031077a",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "terminal:terminal",
               "state": {
@@ -150,7 +149,6 @@
                   }
                 }
               },
-              "pinned": true,
               "icon": "terminal",
               "title": "Terminal: KoishiLaptop ❐ 2 ● 1 bash"
             }
@@ -170,7 +168,8 @@
               "title": "TODO"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",

@@ -25,7 +25,7 @@ dive into the problem...
 
 use covariant phase space formalism... it is compatible for me.
 
-$$\tag{.}
+$$\tag{2.1}
 \begin{align}
 S & =-m\int \mathrm{d}\tau\sqrt{ -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} }-q\int \mathrm{d}\tau \frac{\mathrm{d}x^{\mu}}{\mathrm{d} \tau} A_{\mu}
 \end{align}
@@ -33,7 +33,7 @@ $$
 
 make a variation
 
-$$\tag{.}
+$$\tag{2.2}
 \begin{align}
 \delta S & =m\int\mathrm{d}\tau  \frac{2g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}\delta x^{\nu}}{\mathrm{d}\tau}+\partial _{\sigma}g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}\delta x^{\sigma}}{2\sqrt{ -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} }} -q\int \mathrm{d}\tau \frac{\mathrm{d}\delta x^{\mu}}{\mathrm{d}\tau}A_{\mu}-q\int \mathrm{d}\tau \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}\partial _{\nu}A_{\mu}\delta x^{\nu} \\
  & =\int \mathrm{d}\tau E_{\sigma}\delta x^{\sigma}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\ 
@@ -44,8 +44,15 @@ $$
 
 here we choose parameterization $\displaystyle{\tau}$ such that $\displaystyle{\sqrt{ -g_{\mu \nu}\frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} }=1}$
 
-$$\tag{.}
+$$\tag{2.3}
 \begin{align}
 -g_{\mu \nu}\frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}=
+\end{align}
+$$
+then make a variation on $\displaystyle{g_{\mu \nu}}$, we have
+
+$$\tag{.}
+\begin{align}
+
 \end{align}
 $$
