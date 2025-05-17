@@ -40,15 +40,15 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 57,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
+                    "columns": 151,
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m01:03:17 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session \u001b[1B\u001b[28D",
                     "rows": 70
                   }
                 }
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 bash"
+              "title": "Terminal: KoishiLaptop ❐ 5 ● 1 bash"
             }
           },
           {
@@ -80,9 +80,18 @@
               "icon": "lucide-file",
               "title": "word cloud"
             }
+          },
+          {
+            "id": "fff9df9dbb2318da",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,6 +131,50 @@
               "state": {},
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
+            }
+          },
+          {
+            "id": "b622edcc0031077a",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": null,
+                  "focus": false,
+                  "profile": {
+                    "args": [],
+                    "executable": "/bin/bash",
+                    "name": "leftside",
+                    "platforms": {
+                      "linux": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": true,
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {
+                      "fontFamily": "JetBrainsMono Nerd Font Mono",
+                      "fontSize": 8,
+                      "documentOverride": null
+                    },
+                    "type": "integrated",
+                    "useWin32Conhost": false
+                  },
+                  "serial": {
+                    "columns": 57,
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
+                    "rows": 44
+                  }
+                }
+              },
+              "pinned": true,
+              "icon": "terminal",
+              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 bash"
             }
           },
           {
@@ -206,7 +259,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "f05cfac16ab9e909",
+  "active": "3c8d3e695c80d788",
   "lastOpenFiles": [
     "Drafts/word cloud.md",
     "TODO.md",

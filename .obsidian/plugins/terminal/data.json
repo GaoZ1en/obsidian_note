@@ -14,6 +14,28 @@
   "pinNewInstance": true,
   "preferredRenderer": "webgl",
   "profiles": {
+    "9fa46e0a-5e47-47ca-ac2a-471afa4be2c5": {
+      "args": [],
+      "executable": "/bin/bash",
+      "name": "leftside",
+      "platforms": {
+        "linux": true
+      },
+      "pythonExecutable": "python3",
+      "restoreHistory": true,
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {
+        "documentOverride": null,
+        "fontFamily": "JetBrainsMono Nerd Font Mono",
+        "fontSize": 8
+      },
+      "type": "integrated",
+      "useWin32Conhost": false
+    },
     "9550f2b5-4b1d-4842-b9a1-a68b7c2ce430": {
       "args": [],
       "executable": "/bin/bash",
