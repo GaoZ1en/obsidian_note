@@ -118,3 +118,11 @@ in black hole.... make a perturbation by introduce a point particle and drop int
 
 ***do this problem next week***
 
+how is this problem emerges?
+
+the temperature of extremal black hole is 0, but still decay(?).
+1. Schwinger effect
+2. require electric force > gravitation
+these two requirements are somehow the same requirement.
+3. weak cosmic censorship conjecture
+

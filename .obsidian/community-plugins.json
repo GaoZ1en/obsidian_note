@@ -4,8 +4,8 @@
   "obsidian-tikzjax",
   "typewriter-mode",
   "convert-katex-to-mathjax",
-  "github-copilot",
   "obsidian-pretty-bibtex",
   "terminal",
-  "calendar"
+  "calendar",
+  "github-copilot"
 ]

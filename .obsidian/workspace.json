@@ -184,13 +184,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "77a159aef68c8761",
+            "id": "a7a94c222896e512",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "github-copilot-chat-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "pinned": true,
+              "icon": "bot-message-square",
+              "title": "Copilot Chat"
             }
           },
           {
@@ -225,8 +227,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 542.5,
-    "collapsed": true
+    "width": 542.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,7 +237,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d371a4392a460245",
+  "active": "a7a94c222896e512",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/saturnday/week 12.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
