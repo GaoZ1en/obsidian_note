@@ -10,7 +10,7 @@
     "next": "Ctrl-Shift-ArrowRight",
     "disable": "Cmd-Shift-ArrowRight"
   },
-  "suggestionDelay": 0,
+  "suggestionDelay": 200,
   "debug": false,
   "onlyOnHotkey": false,
   "onlyInCodeBlock": false,
