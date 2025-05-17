@@ -27,7 +27,25 @@ use covariant phase space formalism... it is compatible for me.
 
 $$\tag{.}
 \begin{align}
-S & =-\frac{1}{16\pi G}\int \varepsilon R-\frac{1}{4\pi}\int F\wedge \star F-m\int \mathrm{d}\tau-q\int U^{c}A_{c}
+S & =-m\int \mathrm{d}\tau\sqrt{ -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} }-q\int \mathrm{d}\tau \frac{\mathrm{d}x^{\mu}}{\mathrm{d} \tau} A_{\mu}
 \end{align}
 $$
 
+make a variation
+
+$$\tag{.}
+\begin{align}
+\delta S & =m\int\mathrm{d}\tau  \frac{2g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}\delta x^{\nu}}{\mathrm{d}\tau}+\partial _{\sigma}g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}\delta x^{\sigma}}{2\sqrt{ -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} }} -q\int \mathrm{d}\tau \frac{\mathrm{d}\delta x^{\mu}}{\mathrm{d}\tau}A_{\mu}-q\int \mathrm{d}\tau \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}\partial _{\nu}A_{\mu}\delta x^{\nu} \\
+ & =\int \mathrm{d}\tau E_{\sigma}\delta x^{\sigma}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\ 
+E_{\sigma} & = -mg_{\lambda \sigma}\left(\frac{\mathrm{d}^{2}x^{\lambda}}{\mathrm{d}\tau ^{2}}+\Gamma ^{\lambda}_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}\right)+q \frac{\mathrm{d}x^{\lambda}}{\mathrm{d}\tau}F_{\lambda \sigma} \\
+\theta & =\left( mg_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}-qA_{\nu} \right)\delta x^{\nu}
+\end{align}
+$$
+
+here we choose parameterization $\displaystyle{\tau}$ such that $\displaystyle{\sqrt{ -g_{\mu \nu}\frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} }=1}$
+
+$$\tag{.}
+\begin{align}
+-g_{\mu \nu}\frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}=
+\end{align}
+$$
