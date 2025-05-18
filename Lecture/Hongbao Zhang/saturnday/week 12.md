@@ -126,4 +126,4 @@ the temperature of extremal black hole is 0, but still decay(?).
 these two requirements are somehow the same requirement.
 3. weak cosmic censorship conjecture
 
-，。
+这篇论文的主体于2025年2月10日完成，但致谢一直拖到了5月18日才开始动笔。一方面是拖延，另一方面是不知道该说些什么。

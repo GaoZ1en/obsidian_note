@@ -40,15 +40,15 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 162,
+                    "columns": 234,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m04:56:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session \r\n-d  -t  \r\n\u001b[33m04:56:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n2          5          -d         -t         workspace  \r\n\u001b[33m04:56:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t 5 \u001b[1B\u001b[36D",
-                    "rows": 30
+                    "rows": 70
                   }
                 }
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 5 ● 1 nvim"
+              "title": "Terminal: KoishiLaptop ❐ 5 ● 1 bash"
             }
           },
           {
@@ -144,7 +144,7 @@
                   "serial": {
                     "columns": 61,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Sat May 17 2025 16:56:09 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m04:56:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux \r\nattach-session        new-window\r\nbind-key              next-layout\r\nbreak-pane            next-window\r\ncapture-pane          paste-buffer\r\nchoose-buffer         pipe-pane\r\nchoose-client         previous-layout\r\nchoose-tree           previous-window\r\nclear-history         refresh-client\r\nclear-prompt-history  rename-session\r\nclock-mode            rename-window\r\ncommand-prompt        resize-pane\r\nconfirm-before        resize-window\r\ncopy-mode             respawn-pane\r\ncustomize-mode        respawn-window\r\ndelete-buffer         rotate-window\r\ndetach-client         run-shell\r\ndisplay-menu          save-buffer\r\ndisplay-message       select-layout\r\ndisplay-panes         select-pane\r\ndisplay-popup         select-window\r\nfind-window           send-keys\r\nhas-session           send-prefix\r\nif-shell              server-access\r\njoin-pane             set-buffer\r\nkill-pane             set-environment\r\nkill-server           set-hook\r\nkill-session          set-option\r\nkill-window           set-window-option\r\nlast-pane             show-buffer\r\nlast-window           show-environment\r\nlink-window           show-hooks\r\nlist-buffers          show-messages\r\nlist-clients          show-options\r\nlist-commands         show-prompt-history\r\nlist-keys             show-window-options\r\nlist-panes            source-file\r\nlist-sessions         split-window\r\nlist-windows          start-server\r\nload-buffer           suspend-client\r\nlock-client           swap-pane\r\nlock-server           swap-window\r\nlock-session          switch-client\r\nmove-pane             unbind-key\r\n\u001b[33m04:56:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session \r\n-d  -t  \r\n\u001b[33m04:56:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n2          5          -d         -t         workspace\r\n\u001b[33m04:56:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t 2 \r\n",
-                    "rows": 15
+                    "rows": 40
                   }
                 }
               },
@@ -239,8 +239,8 @@
   },
   "active": "3c8d3e695c80d788",
   "lastOpenFiles": [
-    "TODO.md",
     "Lecture/Hongbao Zhang/saturnday/week 12.md",
+    "TODO.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Drafts/word cloud.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
