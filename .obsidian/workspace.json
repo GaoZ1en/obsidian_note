@@ -48,7 +48,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 2-3 ● 1 bash"
+              "title": "Terminal: KoishiLaptop ❐ 2-3 ● 1 nvim"
             }
           },
           {
@@ -230,12 +230,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.qwen.ai/c/16a532ac-e98c-4126-b462-d7644697b517",
-                "title": "Add Modules to mod.rs | Qwen",
+                "url": "https://chat.qwen.ai/c/c08deef2-c262-40c5-a90b-0f1cf1dc97ba",
+                "title": "Rust Project Euler 代码组织 | Qwen",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Add Modules to mod.rs | Qwen"
+              "title": "Rust Project Euler 代码组织 | Qwen"
             }
           },
           {
@@ -258,16 +258,15 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://pe-cn.github.io/10/",
-                "title": "Problem 10 | Project Euler | 欧拉计划",
+                "url": "https://pe-cn.github.io/11/",
+                "title": "Problem 11 | Project Euler | 欧拉计划",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Problem 10 | Project Euler | 欧拉计划"
+              "title": "Problem 11 | Project Euler | 欧拉计划"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -283,8 +282,8 @@
   },
   "active": "3c8d3e695c80d788",
   "lastOpenFiles": [
-    "Note/Project Euler/solutions.md",
     "Note/Project Euler/1-50/prob0001.md",
+    "Note/Project Euler/solutions.md",
     "TODO.md",
     "Home.md",
     "Note/Project Euler/1-50",
