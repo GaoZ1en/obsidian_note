@@ -40,33 +40,48 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 233,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m03:32:06 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t 6\u001b[1B\u001b[35D",
+                    "columns": 145,
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m06:03:35 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t 2\u001b[1B\u001b[32D",
                     "rows": 70
                   }
                 }
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 6 ● 1 bash"
+              "title": "Terminal: KoishiLaptop ❐ 2-3 ● 1 nvim"
             }
           },
           {
-            "id": "d371a4392a460245",
+            "id": "97bebc110a016fd4",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://cn.bing.com/search?q=project%20euler",
+                "title": "project euler - 搜索",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "project euler - 搜索"
+            }
+          },
+          {
+            "id": "5b2a004904260e5e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hongbao Zhang/saturnday/week 12.md",
+                "file": "Note/Project Euler/solutions.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "week 12"
+              "title": "solutions"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -143,13 +158,13 @@
                   },
                   "serial": {
                     "columns": 63,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m03:32:06 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session \r\n-d  -t  \r\n\u001b[33m03:32:06 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n5          6          -d         -t         workspace\r\n\u001b[33m03:32:06 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t 5\u001b[1B\u001b[35D",
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m06:03:35 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t workspace \r\n-d  -t  \r\n\u001b[33m06:03:35 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t 1\r\ncan't find session: 1\r\n\u001b[33m06:03:46 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new\r\nnew-session  new-window   \r\n\u001b[33m06:03:46 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session \r\n--  -d  -n  -s  -t  \r\n\u001b[33m06:03:46 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session --t 1\r\ncommand new-session: invalid flag --\r\n\u001b[33m06:03:57 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t 1\u001b[1B\u001b[32D",
                     "rows": 40
                   }
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 5 ● 2 nmtui"
+              "title": "Terminal: KoishiLaptop ❐ 1-2 ● 1 bash"
             }
           },
           {
@@ -166,9 +181,24 @@
               "icon": "lucide-file",
               "title": "TODO"
             }
+          },
+          {
+            "id": "c5432fbdcf77006b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Note/Project Euler/1-50/prob0001.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "prob0001"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -200,12 +230,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.qwen.ai/c/e904ca72-5d27-4adb-b167-0509cbd0683f",
-                "title": "Terminal Styling Tips | Qwen",
+                "url": "https://chat.qwen.ai/c/c08deef2-c262-40c5-a90b-0f1cf1dc97ba",
+                "title": "Rust Project Euler 代码组织 | Qwen",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Terminal Styling Tips | Qwen"
+              "title": "Rust Project Euler 代码组织 | Qwen"
             }
           },
           {
@@ -221,14 +251,27 @@
               "icon": "globe-2",
               "title": "DeepSeek - 探索未至之境"
             }
+          },
+          {
+            "id": "cde4122161d0efa0",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://pe-cn.github.io/2/",
+                "title": "Problem 2 | Project Euler | 欧拉计划",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Problem 2 | Project Euler | 欧拉计划"
+            }
           }
         ],
         "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 542.5,
-    "collapsed": true
+    "width": 559.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -238,8 +281,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "b622edcc0031077a",
+  "active": "5b2a004904260e5e",
   "lastOpenFiles": [
+    "Note/Project Euler/solutions.md",
+    "Note/Project Euler/1-50/prob0001.md",
+    "Note/Project Euler/1-50",
+    "Note/Project Euler/Problem 1.md",
+    "Note/Project Euler",
     "Lecture/Hongbao Zhang/saturnday/week 12.md",
     "TODO.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
@@ -270,9 +318,6 @@
     "Reading/supergravity",
     "Reading/quantization of gauged system",
     "Lecture/2025 spring/english/week 11.md",
-    "Articles/quantization/harmonic oscillator with multiplier.md",
-    "Articles/quantization/quantization of gauged system.md",
-    "Articles/quantization/first example.md",
     "Attachments/Pasted image 20250425232210.png",
     "Attachments/Pasted image 20250417145002.png",
     "Attachments/微信图片_20250414131423_29.jpg",
@@ -281,8 +326,6 @@
     "Articles/quantization",
     "Reading/gravity",
     "Articles/some generalization CPS",
-    "Drafts",
-    "Reading/computational algebraic geometry",
-    "Reading/symmetry and topology/topology"
+    "Drafts"
   ]
 }
