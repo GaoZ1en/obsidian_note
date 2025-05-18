@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 110,
+                    "columns": 148,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m06:03:35 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t 2\u001b[1B\u001b[32D",
                     "rows": 70
                   }
@@ -244,7 +244,7 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.deepseek.com/",
+                "url": "https://chat.deepseek.com/a/chat/s/a14fece8-21be-43e7-be22-d86ebfaf90d9",
                 "title": "DeepSeek - 探索未至之境",
                 "mode": "webview"
               },
@@ -258,20 +258,20 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://pe-cn.github.io/4/",
-                "title": "Problem 4 | Project Euler | 欧拉计划",
+                "url": "https://pe-cn.github.io/8/",
+                "title": "Problem 8 | Project Euler | 欧拉计划",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Problem 4 | Project Euler | 欧拉计划"
+              "title": "Problem 8 | Project Euler | 欧拉计划"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 781.5
+    "width": 537.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -283,8 +283,8 @@
   },
   "active": "3c8d3e695c80d788",
   "lastOpenFiles": [
-    "Note/Project Euler/solutions.md",
     "Note/Project Euler/1-50/prob0001.md",
+    "Note/Project Euler/solutions.md",
     "TODO.md",
     "Home.md",
     "Note/Project Euler/1-50",
