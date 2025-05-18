@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 234,
+                    "columns": 176,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m04:56:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session \r\n-d  -t  \r\n\u001b[33m04:56:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n2          5          -d         -t         workspace  \r\n\u001b[33m04:56:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t 5 \u001b[1B\u001b[36D",
                     "rows": 70
                   }
@@ -48,7 +48,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 5 ● 1 bash"
+              "title": "Terminal: KoishiLaptop ❐ 5 ● 1 nvim"
             }
           },
           {
@@ -66,7 +66,8 @@
               "title": "week 12"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,7 +169,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -237,11 +238,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c8d3e695c80d788",
+  "active": "d371a4392a460245",
   "lastOpenFiles": [
     "Lecture/Hongbao Zhang/saturnday/week 12.md",
-    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "TODO.md",
+    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Drafts/word cloud.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Drafts/project euler.md",
