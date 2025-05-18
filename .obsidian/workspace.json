@@ -52,20 +52,6 @@
             }
           },
           {
-            "id": "97bebc110a016fd4",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://cn.bing.com/search?q=project%20euler",
-                "title": "project euler - 搜索",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "project euler - 搜索"
-            }
-          },
-          {
             "id": "5b2a004904260e5e",
             "type": "leaf",
             "state": {
@@ -79,9 +65,23 @@
               "icon": "lucide-file",
               "title": "solutions"
             }
+          },
+          {
+            "id": "080a35e861a3b451",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TODO.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "TODO"
+            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -258,16 +258,16 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://pe-cn.github.io/2/",
-                "title": "Problem 2 | Project Euler | 欧拉计划",
+                "url": "https://pe-cn.github.io/4/",
+                "title": "Problem 4 | Project Euler | 欧拉计划",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Problem 2 | Project Euler | 欧拉计划"
+              "title": "Problem 4 | Project Euler | 欧拉计划"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -281,15 +281,16 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "5b2a004904260e5e",
+  "active": "3c8d3e695c80d788",
   "lastOpenFiles": [
     "Note/Project Euler/solutions.md",
+    "TODO.md",
+    "Home.md",
     "Note/Project Euler/1-50/prob0001.md",
     "Note/Project Euler/1-50",
     "Note/Project Euler/Problem 1.md",
     "Note/Project Euler",
     "Lecture/Hongbao Zhang/saturnday/week 12.md",
-    "TODO.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Drafts/word cloud.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
@@ -317,7 +318,6 @@
     "Reading/computational algebraic geometry/README.md",
     "Reading/supergravity",
     "Reading/quantization of gauged system",
-    "Lecture/2025 spring/english/week 11.md",
     "Attachments/Pasted image 20250425232210.png",
     "Attachments/Pasted image 20250417145002.png",
     "Attachments/微信图片_20250414131423_29.jpg",
