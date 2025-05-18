@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 145,
+                    "columns": 110,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m06:03:35 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t 2\u001b[1B\u001b[32D",
                     "rows": 70
                   }
@@ -48,7 +48,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 2-3 ● 1 nvim"
+              "title": "Terminal: KoishiLaptop ❐ 2-3 ● 1 bash"
             }
           },
           {
@@ -267,11 +267,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 559.5
+    "width": 781.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -284,9 +284,9 @@
   "active": "3c8d3e695c80d788",
   "lastOpenFiles": [
     "Note/Project Euler/solutions.md",
+    "Note/Project Euler/1-50/prob0001.md",
     "TODO.md",
     "Home.md",
-    "Note/Project Euler/1-50/prob0001.md",
     "Note/Project Euler/1-50",
     "Note/Project Euler/Problem 1.md",
     "Note/Project Euler",
