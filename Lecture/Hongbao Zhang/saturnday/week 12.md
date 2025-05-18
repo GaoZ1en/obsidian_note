@@ -126,4 +126,4 @@ the temperature of extremal black hole is 0, but still decay(?).
 these two requirements are somehow the same requirement.
 3. weak cosmic censorship conjecture
 
-，
+，。

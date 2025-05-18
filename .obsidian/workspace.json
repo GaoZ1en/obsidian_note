@@ -66,8 +66,7 @@
               "title": "week 12"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -169,7 +168,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -238,10 +237,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d371a4392a460245",
+  "active": "3c8d3e695c80d788",
   "lastOpenFiles": [
-    "Lecture/Hongbao Zhang/saturnday/week 12.md",
     "TODO.md",
+    "Lecture/Hongbao Zhang/saturnday/week 12.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Drafts/word cloud.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
