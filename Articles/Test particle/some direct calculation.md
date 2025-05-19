@@ -63,3 +63,62 @@ X_{\xi}\cdot \delta S & =m\int \mathrm{d}\tau \left( g_{\mu \nu} \frac{\mathrm{d
  & +m\int \mathrm{d}\tau  \nabla _{\mu}\xi _{\nu} \frac{dx^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}-q\int \mathrm{d}\tau (\xi ^{\nu}\nabla _{\nu}A_{\mu}-A^{\nu}\nabla _{\nu}\xi _{\mu}) \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}
 \end{align}
 $$
+
+
+---
+
+$$\tag{0.2}
+\begin{align}
+S & =-\alpha \int \mathrm{d}^{2}\xi\sqrt{ -g_{\mu \nu}\eta ^{ab} \frac{\mathrm{d}X^{\mu}}{\mathrm{d}\xi ^{a}} \frac{\mathrm{d}X^{\nu}}{\mathrm{d}\xi ^{b}} }
+\end{align}
+$$
+
+make a variation on $\displaystyle{X^{\mu}}$:
+
+$$\tag{2.1}
+\begin{align}
+\delta S \implies & =\int \mathrm{d}^{2}\xi E_{\sigma}\delta X^{\sigma}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
+ E_{\sigma} & =-g_{\lambda \sigma}\eta ^{ab}\left(\frac{\mathrm{d}^{2}X^{\mu}}{\mathrm{d}\xi ^{a}\mathrm{d}\xi ^{b}}+\Gamma ^{\lambda}_{~\mu \nu} \frac{\mathrm{d}X^{\mu}}{\mathrm{d}\xi ^{a}} \frac{\mathrm{d}X^{\nu}}{\mathrm{d}\xi ^{b}}\right) \\
+\theta & =\int _{\Sigma}\mathrm{d}\xi \tau _{a}\eta ^{ab}g_{\mu \nu} \frac{\mathrm{d}X^{\mu}}{\mathrm{d}\xi ^{b}}\delta X^{\nu}
+\end{align}
+$$
+
+here we choose a parameterization such that $\displaystyle{\sqrt{ -g_{\mu \nu}\eta ^{ab} \frac{\mathrm{d}X^{\mu}}{\mathrm{d}\xi ^{a}} \frac{\mathrm{d}X^{\nu}}{\mathrm{d}\xi ^{b}} }=1}$. by a conformal transformation on $\displaystyle{\eta ^{ab}}$, we can always bring it to the form $\displaystyle{\eta ^{ab}=\mathrm{diag}(1,-1)}$. consider flat spacetime $\displaystyle{g_{\mu \nu}=\eta _{\mu \nu}}$. we have simply
+
+$$\tag{2.2}
+\begin{align}
+\frac{\mathrm{d}^{2}X^{\mu}}{\mathrm{d}\tau ^{2}}-\frac{\mathrm{d}^{2}X^{\mu}}{\mathrm{d}\sigma ^{2}}=0
+\end{align}
+$$
+
+and we have the following constraints
+
+$$\tag{2.3}
+\begin{align}
+\eta_{\mu \nu}\frac{\mathrm{d}X^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}X^{\nu}}{\mathrm{d}\sigma} & =0 \\
+\eta _{\mu \nu} \left( \frac{\mathrm{d}X^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}X^{\nu}}{\mathrm{d}\tau} +\frac{\mathrm{d}X^{\mu}}{\mathrm{d}\sigma}\frac{\mathrm{d}X^{\nu}}{\mathrm{d}\sigma}\right) & =0
+\end{align}
+$$
+
+the general solution to (2.2) can be written as
+
+$$\tag{2.4}
+\begin{align}
+X^{\mu}(\tau,\sigma) & =\frac{1}{2}[a^{\mu}(\tau+\sigma)+b^{\mu}(\tau-\sigma)]
+\end{align}
+$$
+
+define the light-cone coordinates $\displaystyle{\xi ^{\pm}=\tau\pm \sigma}$, (2.3) can be rewritten as
+
+$$\tag{2.5}
+\begin{align}
+\eta _{\mu \nu}(a^{\mu}+b^{\mu})(a^{\mu}-b^{\mu})=0 \\
+\eta _{\mu \nu}(a^{\mu}+b^{\mu})(a^{\nu}+b^{\nu})+\eta _{\mu \nu}(a^{\mu}-b^{\mu})(a^{\nu}-b^{\nu})=0 \\
+\implies \eta _{\mu \nu}(a^{\mu}a^{\nu}-b^{\mu}b^{\nu})=0 \\
+\eta _{\mu \nu}(a^{\mu}a^{\nu}+b^{\mu}b^{\nu})=0 \\
+\implies \eta _{\mu \nu}a^{\mu}a^{\nu}=0 \\
+\implies \eta _{\mu \nu}b^{\mu}b^{\nu}=0
+\end{align}
+$$
+
+so we can see that $\displaystyle{a^{0}}$ and $\displaystyle{b^{0}}$ are not independent. 
