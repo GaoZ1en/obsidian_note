@@ -20,9 +20,3 @@ go outside...
 写slide
 
 Bousso
-
-$$\tag{.}
-\begin{align}
-mr^{2}\ddot{\phi}\dot{\phi}
-\end{align}
-$$

@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 112,
+                    "columns": 233,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m11:10:59 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t 1\r\n[exited]\r\n\u001b[33m01:24:30 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t 1\u001b[1B\u001b[32D",
                     "rows": 70
                   }
@@ -52,33 +52,40 @@
             }
           },
           {
-            "id": "5b2a004904260e5e",
+            "id": "8859b98a119ef40b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Note/Project Euler/solutions.md",
+                "file": "Articles/Test particle/some direct calculation.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "solutions"
+              "title": "some direct calculation"
             }
-          },
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "62bf6548c7b14a47",
+        "type": "tabs",
+        "children": [
           {
-            "id": "434eec3145ddc6d0",
+            "id": "de96ed4ca63475a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "Lecture/Hongbao Zhang/saturnday/week 12.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "TODO"
+              "title": "week 12"
             }
           }
         ]
@@ -198,11 +205,12 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 328.5
+    "width": 328.5,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -230,12 +238,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.qwen.ai/c/c08deef2-c262-40c5-a90b-0f1cf1dc97ba",
-                "title": "Rust Project Euler 代码组织 | Qwen",
+                "url": "https://chat.qwen.ai/c/53030e9b-3716-47db-aeed-b8bdeb12b922",
+                "title": "What Does Same Below Mean | Qwen",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Rust Project Euler 代码组织 | Qwen"
+              "title": "What Does Same Below Mean | Qwen"
             }
           },
           {
@@ -267,11 +275,12 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 769.5
+    "width": 769.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -281,16 +290,24 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c8d3e695c80d788",
+  "active": "8859b98a119ef40b",
   "lastOpenFiles": [
+    "Lecture/Hongbao Zhang/saturnday/week 12.md",
+    "Articles/Test particle/some direct calculation.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/week 9.md",
+    "Articles/Test particle",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/quantum mechanics.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 4.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/classical mechanics.md",
+    "TODO.md",
     "Note/Project Euler/solutions.md",
     "Note/Project Euler/1-50/prob0001.md",
-    "TODO.md",
     "Home.md",
     "Note/Project Euler/1-50",
     "Note/Project Euler/Problem 1.md",
     "Note/Project Euler",
-    "Lecture/Hongbao Zhang/saturnday/week 12.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Drafts/word cloud.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
@@ -304,18 +321,11 @@
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Articles/Bachelor thesis/section 2 covariant phase space formalism and Noether theorem.md",
     "Articles/Noether charge/An example of constrained Hamiltonian systems.md",
-    "Reading/differential forms in algebraic topology/de Rham theory/de Rham theory.md",
-    "Lecture/2025 spring/python for general purpose/Untitled.md",
     "Attachments/Pasted image 20250508202619.png",
-    "Lecture/2024 quantization and homology method by Si Li/lecture 1 chain complex and (co)homology.md",
     "Attachments/Pasted image 20250508170026.png",
     "Attachments/Pasted image 20250508165602.png",
-    "Reading/differential forms in algebraic topology/de Rham theory/Untitled.md",
-    "Reading/differential forms in algebraic topology/README.md",
-    "Reading/computational algebraic geometry/geometry, algebra and algorithms.md",
     "Reading/differential forms in algebraic topology/de Rham theory",
     "Reading/differential forms in algebraic topology",
-    "Reading/computational algebraic geometry/README.md",
     "Reading/supergravity",
     "Reading/quantization of gauged system",
     "Attachments/Pasted image 20250425232210.png",
@@ -325,7 +335,6 @@
     "Attachments/Pasted image 20250214190351.png",
     "Articles/quantization",
     "Reading/gravity",
-    "Articles/some generalization CPS",
-    "Drafts"
+    "Articles/some generalization CPS"
   ]
 }
