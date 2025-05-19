@@ -46,19 +46,20 @@ act this symmetry on the action
 
 $$\tag{1.5}
 \begin{align}
-X_{\xi}\cdot \delta S & =
+X_{\xi}\cdot \delta S & =-m\int \mathrm{d}\tau \left( -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}(X_{\xi}\cdot\delta x^{\nu})}{\mathrm{d}\tau}-\frac{1}{2}\partial _{\rho}g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}(X_{\xi}\cdot\delta x^{\rho}) \right) -q\int \mathrm{d}\tau \left( \partial _{\nu}A_{\mu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}(X_{\xi}\cdot\delta x^{\nu})+ A_{\mu} \frac{\mathrm{d}(X_{\xi}\cdot\delta x^{\mu})}{\mathrm{d}\tau}\right) \\
+ & -m\int \mathrm{d}\tau  \frac{-(X_{\xi}\cdot\delta g_{\mu \nu}) \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}}{2\sqrt{ -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} }}-q\int \mathrm{d}\tau (X_{\xi}\cdot\delta A_{\mu}) \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-S & =-m\int \mathrm{d}\tau \sqrt{ -g_{\mu \nu} \frac{\mathrm{d} x^{\mu}}{\mathrm{d} \tau} \frac{\mathrm{d} x^{\nu}}{\mathrm{d} \tau} }-q\int \mathrm{d}\tau A_{\mu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \\
-\delta S & =-m\int \mathrm{d}\tau -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}\delta x^{\nu}}{\mathrm{d}\tau}-\frac{1}{2}\partial _{\rho}g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}\delta x^{\rho} -q\int \mathrm{d}\tau \left( \partial _{\nu}A_{\mu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}\delta x^{\nu}+ A_{\mu} \frac{\mathrm{d}\delta x^{\mu}}{\mathrm{d}\tau}\right)
+mg_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}\xi ^{\nu}}{\mathrm{d}\tau}-\frac{1}{2}\xi ^{\rho}\partial _{\rho}g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} 
 \end{align}
 $$
 
-$$\tag{1.1}
+$$\tag{.}
 \begin{align}
-\delta S & =-m\int \mathrm{d}\tau \frac{-g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}\delta x^{\nu}}{\mathrm{d}\tau}-\frac{1}{2}\partial _{\rho}g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}\delta x^{\rho}}{\sqrt{ -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} }} -q\int \mathrm{d}\tau \left( \partial _{\nu}A_{\mu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}\delta x^{\nu}+ A_{\mu} \frac{\mathrm{d}\delta x^{\mu}}{\mathrm{d}\tau}\right)
+X_{\xi}\cdot \delta S & =m\int \mathrm{d}\tau \left( g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}\xi ^{\nu}}{\mathrm{d}\tau}+\frac{1}{2}\xi ^{\rho}\partial _{\rho}g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \right) -q\int \mathrm{d}\tau \left( \xi ^{\nu}\partial _{\nu}A_{\mu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}+ A_{\mu} \frac{\mathrm{d}\xi ^{\mu}}{\mathrm{d}\tau}\right) \\
+ & +m\int \mathrm{d}\tau  \nabla _{\mu}\xi _{\nu} \frac{dx^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}-q\int \mathrm{d}\tau (\xi ^{\nu}\nabla _{\nu}A_{\mu}-A^{\nu}\nabla _{\nu}\xi _{\mu}) \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}
 \end{align}
 $$
