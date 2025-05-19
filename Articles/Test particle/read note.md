@@ -60,6 +60,8 @@ on the other hand
 
 $$\tag{1.8}
 \begin{align}
-
+\delta H_{X} & =\int _{\Sigma}\delta(X\cdot \Theta-\mu) \\
+ & =\int _{\Sigma}(\mathcal{L}_{X}\Theta-X\cdot \delta \Theta-\delta \mu)
 \end{align}
 $$
+
