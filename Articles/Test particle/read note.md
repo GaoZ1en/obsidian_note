@@ -106,7 +106,7 @@ $$\tag{1.12}
 \end{align}
 $$
 
-if we choose $\displaystyle{\xi ^{a}=t^{a}+\Omega _{H}\varphi ^{a}}$ as the horizon Killing vector, where $\displaystyle{t^{a}}$ is the timelike Killing field, $\displaystyle{\varphi ^{a}}$ is the axial Killing field, and $\displaystyle{\Omega _{H}}$ is the angular velocity of the horizon.
+we will drop the subsription $\displaystyle{\tilde{\mathcal{P}}}$ in the following discussion. if we choose $\displaystyle{\xi ^{a}=t^{a}+\Omega _{H}\varphi ^{a}}$ as the horizon Killing vector, where $\displaystyle{t^{a}}$ is the timelike Killing field, $\displaystyle{\varphi ^{a}}$ is the axial Killing field, and $\displaystyle{\Omega _{H}}$ is the angular velocity of the horizon.
 
 ---
 
@@ -116,4 +116,55 @@ A horizon Killing field is a special Killing vector field in the context of blac
 3. Represents the symmetry associated with the horizon geometry
 
 ---
+
+we have
+
+$$\tag{1.13}
+\begin{align}
+\delta H_{\xi} & =\delta M-\Omega _{H}\delta J
+\end{align}
+$$
+
+where $\displaystyle{M}$ is the ADM mass and $\displaystyle{J}$ is the ADM angular momentum (in some former note we have verified this statement). since $\displaystyle{\xi ^{a}}$ vanishes on the horizon, we have
+
+$$\tag{1.14}
+\begin{align}
+\int _{B}(\delta Q^{\mathrm{GR}}_{\xi}-\xi \cdot \Theta ^{\mathrm{GR}}) & =\int _{B}\delta Q^{\mathrm{GR}}_{\xi}=\frac{\kappa}{8\pi}\delta A_{B}
+\end{align}
+$$
+
+where $\displaystyle{A}$ is the area of the horizon (Black hole entropy is Noether charge). and
+
+$$\tag{1.15}
+\begin{align}
+\int _{B}\left(\delta Q^{\mathrm{EM}}_{\xi}-\xi \cdot \Theta ^{\mathrm{EM}}\right) & =\int _{B}\delta Q_{\xi}^{\mathrm{EM}}=\Phi _{H}\delta Q_{B}
+\end{align}
+$$
+
+thus we have the the 1st law of black hole thermodynamics
+
+$$\tag{1.16}
+\begin{align}
+\delta M-\Omega _{H}\delta J-\Phi _{H}\delta Q_{B} & =\frac{\kappa}{8\pi}\delta A_{B}
+\end{align}
+$$
+
+---
+
+now we will study the Einstein-Maxwell theory with action
+
+$$\tag{2.0}
+\begin{align}
+S & =\frac{1}{16\pi G}\int _{M}\varepsilon R-\frac{1}{4\pi}\int _{M}\varepsilon F_{\mu \nu}F^{\mu \nu}
+\end{align}
+$$
+
+make a variation
+
+$$\tag{2.1}
+\begin{align}
+\delta S & =\frac{1}{16\pi G}\int _{M}\varepsilon _{M}\left(-R^{\mu \nu}+\frac{1}{2}g^{\mu \nu}R\right)\delta g_{\mu \nu}+\frac{1}{16\pi G}\int _{\partial M}\varepsilon _{\partial M} n_{\rho}(g^{\rho \mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla ^{\rho}\delta g_{\mu \nu}) \\
+ & -\frac{1}{4\pi} \int _{M}\left(F_{\mu \rho}F^{\rho}_{~\nu}-\frac{1}{2}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} \right)\delta g_{\mu \nu}
+\end{align}
+$$
 

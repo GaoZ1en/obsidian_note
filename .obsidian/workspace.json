@@ -257,8 +257,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 769.5,
-    "collapsed": true
+    "width": 769.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -268,7 +267,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "8859b98a119ef40b",
+  "active": "a7a94c222896e512",
   "lastOpenFiles": [
     "Articles/Test particle/read note.md",
     "Articles/Test particle/some direct calculation.md",
