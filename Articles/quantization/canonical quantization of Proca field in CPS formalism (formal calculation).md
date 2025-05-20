@@ -317,4 +317,4 @@ $$\tag{2.13}
 \end{align}
 $$
 
-here we also meets the problem that whether the above definition is independent of the choice of $\displaystyle{\Sigma}$s
+here we also meets the problem that whether the above definition is independent of the choice of $\displaystyle{\Sigma}$s. it should be independent.
