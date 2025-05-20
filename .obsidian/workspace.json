@@ -48,7 +48,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 2-3 ● 2 bash"
+              "title": "Terminal: KoishiLaptop ❐ 2-3 ● 2 nvim"
             }
           },
           {
@@ -95,9 +95,39 @@
               "icon": "lucide-file",
               "title": "quantization for 1+3 dimensional electric field"
             }
+          },
+          {
+            "id": "cf12c135913cc553",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "ABJ anomaly"
+            }
+          },
+          {
+            "id": "1681bd6ace76b296",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "canonical quantization of scalar and Proca vector in CPS formalism"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -109,7 +139,7 @@
       {
         "id": "5fd9d00ec14b2f12",
         "type": "tabs",
-        "dimension": 53.916211293260474,
+        "dimension": 42.25865209471767,
         "children": [
           {
             "id": "57493beef54bdf2b",
@@ -129,7 +159,7 @@
       {
         "id": "56384ae1a9e66525",
         "type": "tabs",
-        "dimension": 46.083788706739526,
+        "dimension": 57.74134790528234,
         "children": [
           {
             "id": "0c73ca6b61108aca",
@@ -247,7 +277,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 328.5
+    "width": 328.5,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -312,17 +343,19 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "17035fc083309f96",
+  "active": "cf12c135913cc553",
   "lastOpenFiles": [
+    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
+    "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+    "Articles/Test particle/some direct calculation.md",
     "Note/Project Euler/solutions.md",
     "Articles/Test particle/read note for black hole entropy.md",
-    "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Note/Project Euler/1-50/prob0001.md",
     "TODO.md",
-    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
-    "Articles/Test particle/some direct calculation.md",
     "Group meeting/week 21.md",
     "Lecture/Hongbao Zhang/saturnday/week 12.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/week 9.md",
@@ -337,12 +370,10 @@
     "Note/Project Euler/Problem 1.md",
     "Note/Project Euler",
     "Drafts/word cloud.md",
-    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Drafts/project euler.md",
     "Drafts/prompt.md",
     "Drafts/Proca field calculation.md",
     "Articles/quantization/path integral quantization for Proca field.md",
-    "Drafts/complex constraint.md",
     "Attachments/Pasted image 20250508202619.png",
     "Attachments/Pasted image 20250508170026.png",
     "Attachments/Pasted image 20250508165602.png",
