@@ -155,7 +155,7 @@ now we will study the Einstein-Maxwell theory with action
 
 $$\tag{2.0}
 \begin{align}
-S & =\frac{1}{16\pi G}\int _{M}\varepsilon R-\frac{1}{4\pi}\int _{M}\varepsilon F_{\mu \nu}F^{\mu \nu}
+S & =\frac{1}{16\pi G}\int _{M}\varepsilon R-\frac{1}{4}\int _{M}\varepsilon F_{\mu \nu}F^{\mu \nu}
 \end{align}
 $$
 
@@ -163,8 +163,10 @@ make a variation
 
 $$\tag{2.1}
 \begin{align}
-\delta S & =\frac{1}{16\pi G}\int _{M}\varepsilon _{M}\left(-R^{\mu \nu}+\frac{1}{2}g^{\mu \nu}R\right)\delta g_{\mu \nu}+\frac{1}{16\pi G}\int _{\partial M}\varepsilon _{\partial M} n_{\rho}(g^{\rho \mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla ^{\rho}\delta g_{\mu \nu}) \\
- & -\frac{1}{4\pi} \int _{M}\left(F_{\mu \rho}F^{\rho}_{~\nu}-\frac{1}{2}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} \right)\delta g_{\mu \nu}
+\delta \mathbf{L} & =\frac{1}{16\pi G}\int _{M}\varepsilon _{M}\left(-R^{\mu \nu}+\frac{1}{2}g^{\mu \nu}R\right)\delta g_{\mu \nu}+\frac{1}{16\pi G}\int _{\partial M}\varepsilon _{\partial M} n_{\rho}(g^{\rho \mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla ^{\rho}\delta g_{\mu \nu}) \\
+ & -\frac{1}{4} \int _{M}\varepsilon _{M}\left(-F^{\mu}_{~\rho}F^{\rho \nu}+\frac{1}{2}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} \right)\delta g_{\mu \nu} \\
+ & -\int _{M} \varepsilon _{M} F^{\mu \nu}\nabla _{\mu}\delta A_{\nu} +\int _{M}\varepsilon \nabla _{\mu}F^{\mu \nu}\delta A_{\nu}-\int _{\partial M}\varepsilon _{\partial M}\tau _{\mu}F^{\mu \nu}\delta A_{\nu} \\
+ & =\mathbf{E}^{\mu \nu}_{\mathrm{GR}}\delta g_{\mu \nu}+\mathbf{E}^{\nu}_{\mathrm{EM}}\delta A_{\nu}+\mathrm{d}\theta _{\mathrm{GR}}+\mathrm{d}\theta _{\mathrm{EM}} \\
+\mathbf{E}^{\mu \nu}_{\mathrm{GR}} & =\frac{1}{16\pi G}\varepsilon _{M}\left( -R^{\mu \nu}+\frac{1}{2}g^{\mu \nu}R \right)
 \end{align}
 $$
-
