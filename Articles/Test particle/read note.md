@@ -212,4 +212,38 @@ X_{\xi}\cdot \Theta _{\mathrm{EM}}-\xi \cdot \mathbf{L}_{\mathrm{EM}} & = \mathr
 \end{align}
 $$
 
-so $\displaystyle{\tilde{\mathbf{C}}_{\xi,\mathrm{GR}}}$ and $\displaystyle{\tilde{\mathbf{C}}_{\xi,\mathrm{EM}}}$ can be interpreted as external sources. (for example, test particle). we choose the gause $\displaystyle{\mathcal{L}_{\xi}A_{\mu}=0}$, where $\displaystyle{\xi ^{a}}$ is the horizon Killing vector.
+so $\displaystyle{\tilde{\mathbf{C}}_{\xi,\mathrm{GR}}}$ and $\displaystyle{\tilde{\mathbf{C}}_{\xi,\mathrm{EM}}}$ can be interpreted as external sources. (for example, test particle). we choose the gause $\displaystyle{\mathcal{L}_{\xi}A_{\mu}=0}$, where $\displaystyle{\xi ^{a}}$ is the horizon Killing vector. for a nonextremal blackhole, the horizon will be of bifurcate type (past and future event horizon), and $\displaystyle{\Sigma}$ will terminate at the bifucation surface $\displaystyle{B}$ ($\displaystyle{\partial \Sigma=B}$). we have
+
+$$\tag{2.6}
+\begin{align}
+\int _{B}\left(\delta \mathbf{Q}_{\xi,\mathrm{GR}}-\xi \cdot \Theta _{\mathrm{GR}}\right) & =\int _{B}\delta \mathbf{Q}_{\xi,\mathrm{GR}}=\frac{\kappa}{8\pi}\delta A_{B} \\
+\int _{B}(\delta \mathbf{Q}_{\xi,\mathrm{EM}}-\xi \cdot \Theta _{\mathrm{EM}}) & = \Phi _{H}\delta Q_{B}
+\end{align}
+$$
+
+and finally we have
+
+$$\tag{2.7}
+\begin{align}
+\delta M-\Omega _{H}\delta J-\frac{\kappa}{8\pi}\delta A_{B}-\Phi _{H}\delta Q_{B} & =-\int _{\Sigma}(\delta T_{\mu}^{~\rho}+A_{\mu}\delta J^{\rho})\xi ^{\mu}\cdot \frac{1}{3!}\varepsilon _{\rho \mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}}
+\end{align}
+$$
+
+---
+
+gedanken experiment. consider a extremal KN black hole with
+
+$$\tag{3.1}
+\begin{align}
+M^{2} & =\frac{J^{2}}{M^{2}}+Q^{2}
+\end{align}
+$$
+
+make a perturbation of this black hole which violate the W3C.
+
+$$\tag{3.2}
+\begin{align}
+2M\delta M<2 \frac{J}{M}(M\delta J-J\delta M)+2Q\delta Q
+\end{align}
+$$
+
