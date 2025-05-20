@@ -106,6 +106,14 @@ $$\tag{1.12}
 \end{align}
 $$
 
-if we choose $\displaystyle{\xi ^{a}=t^{a}+\Omega _{H}\varphi ^{a}}$ as the horizon Killing vector, 
+if we choose $\displaystyle{\xi ^{a}=t^{a}+\Omega _{H}\varphi ^{a}}$ as the horizon Killing vector, where $\displaystyle{t^{a}}$ is the timelike Killing field, $\displaystyle{\varphi ^{a}}$ is the axial Killing field, and $\displaystyle{\Omega _{H}}$ is the angular velocity of the horizon.
 
-$\displaystyle{t^{a}}$ is the timelike Killing field, $\displaystyle{\varphi ^{a}}$ is the axial Killing field, and $\displaystyle{\Omega _{H}}$ is the angular velocity of the horizon?
+---
+
+A horizon Killing field is a special Killing vector field in the context of black hole spacetimes that:
+1. Becomes null exactly at the event horizon
+2. Is tangent to the null generators of the horizon
+3. Represents the symmetry associated with the horizon geometry
+
+---
+
