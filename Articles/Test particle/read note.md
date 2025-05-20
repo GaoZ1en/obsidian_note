@@ -203,10 +203,13 @@ we have
 
 $$\tag{2.5}
 \begin{align}
-X_{\xi}\cdot \Theta _{\mathrm{GR}}-\xi \cdot \mathbf{L}_{\mathrm{GR}} & =\mathrm{d}\mathbf{Q}_{\xi,\mathrm{GR}}-\tilde{E}^{\mu \nu}n_{\mu}\xi _{\nu}\varepsilon _{\partial M} \\
-\mathbf{Q}_{\xi,\mathrm{GR}} & = -\frac{1}{16\pi G}\nabla ^{\mu}\xi ^{\nu} \cdot \frac{1}{2!}\varepsilon _{\mu \nu \mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\\ \\
-X_{\xi}\cdot \Theta _{\mathrm{EM}}-\xi \cdot \mathbf{L}_{\mathrm{EM}} & =-F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}-A^{\rho}\nabla _{\rho}\xi _{\nu})\cdot \frac{1}{3!}\varepsilon _{\mu \mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
- & +\frac{1}{2}F^{\mu \nu}\nabla _{\mu}A_{\nu}\xi ^{\rho}\cdot \frac{1}{3!}\varepsilon _{\rho \mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
- & = \mathrm{d}\mathbf{Q}_{\xi,\mathrm{EM}}-
+X_{\xi}\cdot \Theta _{\mathrm{GR}}-\xi \cdot \mathbf{L}_{\mathrm{GR}} & =\mathrm{d}\mathbf{Q}_{\xi,\mathrm{GR}}+\tilde{\mathbf{C}}_{\xi,\mathrm{GR}} \\
+\mathbf{Q}_{\xi,\mathrm{GR}} & = -\frac{1}{16\pi G}\nabla ^{\mu}\xi ^{\nu} \cdot \frac{1}{2!}\varepsilon _{\mu \nu \mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}} \\
+\tilde{\mathbf{C}}_{\xi,\mathrm{GR}} & =-\varepsilon _{M}\left(\frac{1}{16\pi G}G^{\mu \nu}-T^{\mu \nu}_{\mathrm{EM}}\right)\delta g_{\mu \nu}\\
+X_{\xi}\cdot \Theta _{\mathrm{EM}}-\xi \cdot \mathbf{L}_{\mathrm{EM}} & = \mathrm{d}\mathbf{Q}_{\xi,\mathrm{EM}}+\tilde{\mathbf{C}}_{\xi,EM} \\
+\mathbf{Q}_{\xi,\mathrm{EM}} & =-\frac{1}{2}F^{\mu \nu}A_{\rho}\xi ^{\rho}\cdot \frac{1}{2!}\varepsilon _{\mu \nu \mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge dx^{\mu_{1}} \\
+\tilde{\mathbf{C}}_{\xi,\mathrm{EM}} & =\varepsilon _{M}\nabla _{\mu}F^{\mu \nu}A_{\nu}
 \end{align}
 $$
+
+so $\displaystyle{\tilde{\mathbf{C}}_{\xi,\mathrm{GR}}}$ and $\displaystyle{\tilde{\mathbf{C}}_{\xi,\mathrm{EM}}}$ can be interpreted as external sources. (for example, test particle). we choose the gause $\displaystyle{\mathcal{L}_{\xi}A_{\mu}=0}$, where $\displaystyle{\xi ^{a}}$ is the horizon Killing vector.
