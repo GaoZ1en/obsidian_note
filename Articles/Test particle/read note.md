@@ -167,6 +167,35 @@ $$\tag{2.1}
  & -\frac{1}{4} \int _{M}\varepsilon _{M}\left(-F^{\mu}_{~\rho}F^{\rho \nu}+\frac{1}{2}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} \right)\delta g_{\mu \nu} \\
  & -\int _{M} \varepsilon _{M} F^{\mu \nu}\nabla _{\mu}\delta A_{\nu} +\int _{M}\varepsilon \nabla _{\mu}F^{\mu \nu}\delta A_{\nu}-\int _{\partial M}\varepsilon _{\partial M}\tau _{\mu}F^{\mu \nu}\delta A_{\nu} \\
  & =\mathbf{E}^{\mu \nu}_{\mathrm{GR}}\delta g_{\mu \nu}+\mathbf{E}^{\nu}_{\mathrm{EM}}\delta A_{\nu}+\mathrm{d}\theta _{\mathrm{GR}}+\mathrm{d}\theta _{\mathrm{EM}} \\
-\mathbf{E}^{\mu \nu}_{\mathrm{GR}} & =\frac{1}{16\pi G}\varepsilon _{M}\left( -R^{\mu \nu}+\frac{1}{2}g^{\mu \nu}R \right)
+\mathbf{E}^{\mu \nu}_{\mathrm{GR}} & =\frac{1}{16\pi G}\varepsilon _{M}\left( -R^{\mu \nu}+\frac{1}{2}g^{\mu \nu}R \right)+\frac{1}{4}\varepsilon _{M}\left(F^{\mu}_{~\rho}F^{\rho \nu}-\frac{1}{2}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}\right) \\
+\mathbf{E}^{\nu}_{\mathrm{EM}} & =\nabla _{\mu}F^{\mu \nu} \\
+\theta _{\mathrm{GR}} & =\frac{1}{16\pi G}\varepsilon _{\partial \Sigma}n_{\rho}\left(g^{\rho \mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla ^{\rho}\delta g_{\mu \nu}\right) \\
+\theta _{\mathrm{EM}} & =\varepsilon _{\partial M}\tau _{\mu}F^{\mu \nu}\delta A_{\nu}
 \end{align}
 $$
+
+consider a infinitesimal diffeomorphism transformation parameterized by $\displaystyle{\xi ^{\mu}}$:
+
+$$\tag{2.2}
+\begin{align}
+X_{\xi} & =\int \varepsilon \left( \mathcal{L}_{\xi}g_{\mu \nu} \frac{\delta}{\delta g_{\mu \nu}} +\mathcal{L}_{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}}\right)
+\end{align}
+$$
+
+act this on the Lagrangian
+
+$$\tag{2.3}
+\begin{align}
+X_{\xi}\cdot \delta \mathbf{L} & =\mathcal{L}_{\xi}\mathbf{L} \\
+ & =\mathrm{d}(\xi \cdot \mathbf{L})
+\end{align}
+$$
+
+then we have the Noether charge
+
+$$\tag{2.4}
+\begin{align}
+H_{\xi} & =\int _{\Sigma}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L})
+\end{align}
+$$
+
