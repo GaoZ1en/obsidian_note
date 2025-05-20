@@ -40,15 +40,15 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 116,
-                    "data": "    \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux \r\nattach-session        -d                    kill-window           lock-session          resize-pane           set-environment       suspend-client\r\nbind-key              delete-buffer         last-pane             move-pane             resize-window         set-hook              swap-pane\r\nbreak-pane            detach-client         last-window           move-window           respawn-pane          set-option            swap-window\r\ncapture-pane          display-menu          link-window           new-session           respawn-window        set-window-option     switch-client\r\nchoose-buffer         display-message       list-buffers          new-window            rotate-window         show-buffer           -t\r\nchoose-client         display-panes         list-clients          next-layout           run-shell             show-environment      unbind-key\r\nchoose-tree           display-popup         list-commands         next-window           save-buffer           show-hooks            unlink-window\r\nclear-history         find-window           list-keys             paste-buffer          select-layout         show-messages         wait-for\r\nclear-prompt-history  has-session           list-panes            pipe-pane             select-pane           show-options          \r\nclock-mode            if-shell              list-sessions         previous-layout       select-window         show-prompt-history   \r\ncommand-prompt        join-pane             list-windows          previous-window       send-keys             show-window-options   \r\nconfirm-before        kill-pane             load-buffer           refresh-client        send-prefix           source-file           \r\ncopy-mode             kill-server           lock-client           rename-session        server-access         split-window          \r\ncustomize-mode        kill-session          lock-server           rename-window         set-buffer            start-server          \r\n\u001b[33m07:01:26 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n2-3        2-5        -d         -t         workspace  \r\n\u001b[33m07:01:26 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t 2-3\r\n",
-                    "rows": 30
+                    "columns": 145,
+                    "data": "    \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux \r\nattach-session        -d                    kill-window           lock-session          resize-pane           set-environment       suspend-client\r\nbind-key              delete-buffer         last-pane             move-pane             resize-window         set-hook              swap-pane\r\nbreak-pane            detach-client         last-window           move-window           respawn-pane          set-option            swap-window\r\ncapture-pane          display-menu          link-window           new-session           respawn-window        set-window-option     switch-client\r\nchoose-buffer         display-message       list-buffers          new-window            rotate-window         show-buffer           -t\r\nchoose-client         display-panes         list-clients          next-layout           run-shell             show-environment      unbind-key\r\nchoose-tree           display-popup         list-commands         next-window           save-buffer           show-hooks            unlink-window\r\nclear-history         find-window           list-keys             paste-buffer          select-layout         show-messages         wait-for\r\nclear-prompt-history  has-session           list-panes            pipe-pane             select-pane           show-options          \r\nclock-mode            if-shell              list-sessions         previous-layout       select-window         show-prompt-history   \r\ncommand-prompt        join-pane             list-windows          previous-window       send-keys             show-window-options   \r\nconfirm-before        kill-pane             load-buffer           refresh-client        send-prefix           source-file           \r\ncopy-mode             kill-server           lock-client           rename-session        server-access         split-window          \r\ncustomize-mode        kill-session          lock-server           rename-window         set-buffer            start-server          \r\n\u001b[33m07:01:26 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n2-3        2-5        -d         -t         workspace  \r\n\u001b[33m07:01:26 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t 2-3\u001b[1B\u001b[37D",
+                    "rows": 70
                   }
                 }
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 2-3 ● 2 bash"
+              "title": "Terminal: KoishiLaptop ❐ 2-3 ● 2 nvim"
             }
           },
           {
@@ -218,12 +218,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://pe-cn.github.io/20/",
-                "title": "Problem 20 | Project Euler | 欧拉计划",
+                "url": "https://pe-cn.github.io/21/",
+                "title": "Problem 21 | Project Euler | 欧拉计划",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Problem 20 | Project Euler | 欧拉计划"
+              "title": "Problem 21 | Project Euler | 欧拉计划"
             }
           },
           {
@@ -242,7 +242,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
