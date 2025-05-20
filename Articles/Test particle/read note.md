@@ -243,7 +243,17 @@ make a perturbation of this black hole which violate the W3C.
 
 $$\tag{3.2}
 \begin{align}
-2M\delta M<2 \frac{J}{M}(M\delta J-J\delta M)+2Q\delta Q
+2M\delta M & <2 \frac{J}{M}(M\delta J-J\delta M)+2Q\delta Q \\
+\implies \delta M & < \frac{a}{M^{2}+a^{2}}\delta J+ \frac{QM}{M^{2}+a^{2}}\delta Q
 \end{align}
 $$
 
+and one can verify that any physical perturbation will satisfy
+
+$$\tag{3.3}
+\begin{align}
+\delta M & \geqslant \frac{a}{M^{2}+a^{2}} \delta J+\frac{QM}{M^{2}+a^{2}}\delta Q
+\end{align}
+$$
+
+for a slightly non-extremal blackhole, we need to consider second order variation.
