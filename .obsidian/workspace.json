@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 116,
+                    "columns": 197,
                     "data": "    \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux \r\nattach-session        -d                    kill-window           lock-session          resize-pane           set-environment       suspend-client\r\nbind-key              delete-buffer         last-pane             move-pane             resize-window         set-hook              swap-pane\r\nbreak-pane            detach-client         last-window           move-window           respawn-pane          set-option            swap-window\r\ncapture-pane          display-menu          link-window           new-session           respawn-window        set-window-option     switch-client\r\nchoose-buffer         display-message       list-buffers          new-window            rotate-window         show-buffer           -t\r\nchoose-client         display-panes         list-clients          next-layout           run-shell             show-environment      unbind-key\r\nchoose-tree           display-popup         list-commands         next-window           save-buffer           show-hooks            unlink-window\r\nclear-history         find-window           list-keys             paste-buffer          select-layout         show-messages         wait-for\r\nclear-prompt-history  has-session           list-panes            pipe-pane             select-pane           show-options          \r\nclock-mode            if-shell              list-sessions         previous-layout       select-window         show-prompt-history   \r\ncommand-prompt        join-pane             list-windows          previous-window       send-keys             show-window-options   \r\nconfirm-before        kill-pane             load-buffer           refresh-client        send-prefix           source-file           \r\ncopy-mode             kill-server           lock-client           rename-session        server-access         split-window          \r\ncustomize-mode        kill-session          lock-server           rename-window         set-buffer            start-server          \r\n\u001b[33m07:01:26 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n2-3        2-5        -d         -t         workspace  \r\n\u001b[33m07:01:26 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t 2-3\u001b[1B\u001b[37D",
                     "rows": 70
                   }
@@ -87,16 +87,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+                "file": "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "canonical quantization of Proca field in CPS formalism (formal calculation)"
+              "title": "canonical quantization for 1+1 dimensional electric fields"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -218,12 +219,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://pe-cn.github.io/19/",
-                "title": "data:text/plain,",
-                "mode": "blank"
+                "url": "https://pe-cn.github.io/20/",
+                "title": "Problem 20 | Project Euler | 欧拉计划",
+                "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "data:text/plain,"
+              "title": "Problem 20 | Project Euler | 欧拉计划"
             }
           }
         ],
@@ -296,10 +297,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c8d3e695c80d788",
+  "active": "84f605398c80d300",
   "lastOpenFiles": [
-    "Articles/Test particle/read note for black hole entropy.md",
+    "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+    "Articles/Test particle/read note for black hole entropy.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Articles/Test particle/some direct calculation.md",
     "Group meeting/week 21.md",
@@ -323,7 +325,6 @@
     "Drafts/project euler.md",
     "Drafts/prompt.md",
     "Drafts/Proca field calculation.md",
-    "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/path integral quantization for Proca field.md",
     "Drafts/complex constraint.md",
     "Drafts/Nambu-Goto action and cosmic string.md",

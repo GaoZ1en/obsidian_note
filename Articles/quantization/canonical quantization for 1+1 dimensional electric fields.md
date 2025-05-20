@@ -47,9 +47,16 @@ $$
 
 so $\displaystyle{\varphi _{1}}$ and $\displaystyle{\varphi _{2}}$ are first class constraints. choose Column gauge $\displaystyle{\partial _{1}A^{1}=0}$ and fix $\displaystyle{A^{0}=0}$ by a gauge transformation. then the Hamiltonian becomes
 
+$$\tag{.}
+\begin{align}
+A_{0}\to A_{0}+\partial _{0}\Lambda \\
+A_{1}\to \partial _{1}A_{1}=-\partial _{1}^{2}\Lambda\implies \Lambda?
+\end{align}
+$$
+
 $$\tag{1.5}
 \begin{align}
-H & =\int \mathrm{d}^{2}x \frac{1}{2}(\pi _{1})^{2}
+H & =\int \mathrm{d}x \frac{1}{2}(\pi _{1})^{2}
 \end{align}
 $$
 
