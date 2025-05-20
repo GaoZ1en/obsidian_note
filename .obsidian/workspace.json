@@ -40,15 +40,15 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 153,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m11:10:59 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t 1\r\n[exited]\r\n\u001b[33m01:24:30 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t 1\u001b[1B\u001b[32D",
+                    "columns": 116,
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m07:00:58 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m t\r\nDisplay all 175 possibilities? (y or n)\r\n\u001b[33m07:00:58 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session \r\n-d  -t  \r\n\u001b[33m07:00:58 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n1-2        1-6        1-8        2-3        2-5        -d         -t         workspace  \r\n\u001b[33m07:00:58 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session 1-2\r\ncommand attach-session: too many arguments (need at most 0)\r\n\u001b[33m07:01:13 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t 1-2\r\n[exited]\r\n\u001b[33m07:01:26 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux \r\nattach-session        -d                    kill-window           lock-session          resize-pane           set-environment       suspend-client\r\nbind-key              delete-buffer         last-pane             move-pane             resize-window         set-hook              swap-pane\r\nbreak-pane            detach-client         last-window           move-window           respawn-pane          set-option            swap-window\r\ncapture-pane          display-menu          link-window           new-session           respawn-window        set-window-option     switch-client\r\nchoose-buffer         display-message       list-buffers          new-window            rotate-window         show-buffer           -t\r\nchoose-client         display-panes         list-clients          next-layout           run-shell             show-environment      unbind-key\r\nchoose-tree           display-popup         list-commands         next-window           save-buffer           show-hooks            unlink-window\r\nclear-history         find-window           list-keys             paste-buffer          select-layout         show-messages         wait-for\r\nclear-prompt-history  has-session           list-panes            pipe-pane             select-pane           show-options          \r\nclock-mode            if-shell              list-sessions         previous-layout       select-window         show-prompt-history   \r\ncommand-prompt        join-pane             list-windows          previous-window       send-keys             show-window-options   \r\nconfirm-before        kill-pane             load-buffer           refresh-client        send-prefix           source-file           \r\ncopy-mode             kill-server           lock-client           rename-session        server-access         split-window          \r\ncustomize-mode        kill-session          lock-server           rename-window         set-buffer            start-server          \r\n\u001b[33m07:01:26 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n2-3        2-5        -d         -t         workspace  \r\n\u001b[33m07:01:26 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t 2-3\u001b[1B\u001b[37D",
                     "rows": 70
                   }
                 }
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 1-8 ● 2 bash"
+              "title": "Terminal: KoishiLaptop ❐ 2-3 ● 1 bash"
             }
           },
           {
@@ -65,9 +65,39 @@
               "icon": "lucide-file",
               "title": "read note"
             }
+          },
+          {
+            "id": "17035fc083309f96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/Test particle/some direct calculation.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "some direct calculation"
+            }
+          },
+          {
+            "id": "84f605398c80d300",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "canonical quantization of Proca field in CPS formalism (formal calculation)"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -144,13 +174,13 @@
                   },
                   "serial": {
                     "columns": 63,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m11:10:59 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t 2\u001b[1B\u001b[32D",
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
                     "rows": 40
                   }
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 2-5 ● 1 bash"
+              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 bash"
             }
           },
           {
@@ -183,8 +213,7 @@
               "title": "prob0001"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -268,10 +297,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "8859b98a119ef40b",
+  "active": "84f605398c80d300",
   "lastOpenFiles": [
-    "Articles/Test particle/read note.md",
+    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Articles/Test particle/some direct calculation.md",
+    "Group meeting/week 21.md",
+    "Note/Project Euler/1-50/prob0001.md",
+    "TODO.md",
+    "Articles/Test particle/read note.md",
     "Lecture/Hongbao Zhang/saturnday/week 12.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/week 9.md",
     "Articles/Test particle",
@@ -280,14 +313,11 @@
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note for week 3.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/lecture note.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/classical mechanics.md",
-    "TODO.md",
     "Note/Project Euler/solutions.md",
-    "Note/Project Euler/1-50/prob0001.md",
     "Home.md",
     "Note/Project Euler/1-50",
     "Note/Project Euler/Problem 1.md",
     "Note/Project Euler",
-    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Drafts/word cloud.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Drafts/project euler.md",
@@ -298,7 +328,6 @@
     "Drafts/complex constraint.md",
     "Drafts/Nambu-Goto action and cosmic string.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
-    "Articles/Bachelor thesis/section 2 covariant phase space formalism and Noether theorem.md",
     "Attachments/Pasted image 20250508202619.png",
     "Attachments/Pasted image 20250508170026.png",
     "Attachments/Pasted image 20250508165602.png",
