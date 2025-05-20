@@ -1,6 +1,17 @@
 {
   "conversations": [
     {
+      "id": "1747708096579",
+      "title": "New Conversation",
+      "messages": [],
+      "createdAt": 1747708096579,
+      "updatedAt": 1747708096579,
+      "model": {
+        "label": "Claude 3.7 Sonnet Thinking",
+        "value": "claude-3.7-sonnet-thought"
+      }
+    },
+    {
       "id": "1747569617805",
       "title": "What is a large gauge transfor...",
       "messages": [
@@ -132,5 +143,5 @@
       }
     }
   ],
-  "activeConversationId": "1747569617805"
+  "activeConversationId": "1747708096579"
 }

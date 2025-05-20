@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 233,
+                    "columns": 153,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m11:10:59 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t 1\r\n[exited]\r\n\u001b[33m01:24:30 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t 1\u001b[1B\u001b[32D",
                     "rows": 70
                   }
@@ -217,12 +217,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.qwen.ai/c/8e7cf7ca-6132-4d7f-9284-6a4c23457ae2",
-                "title": "规范不变性与守恒流 | Qwen",
+                "url": "https://chat.qwen.ai/",
+                "title": "Qwen",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "规范不变性与守恒流 | Qwen"
+              "title": "Qwen"
             }
           },
           {
@@ -253,13 +253,11 @@
               "title": "Problem 19 | Project Euler | 欧拉计划"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 769.5,
-    "collapsed": true
+    "width": 769.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -271,8 +269,8 @@
   },
   "active": "8859b98a119ef40b",
   "lastOpenFiles": [
-    "Articles/Test particle/some direct calculation.md",
     "Articles/Test particle/read note.md",
+    "Articles/Test particle/some direct calculation.md",
     "Lecture/Hongbao Zhang/saturnday/week 12.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/week 9.md",
     "Articles/Test particle",
