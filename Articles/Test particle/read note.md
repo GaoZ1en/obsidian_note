@@ -89,7 +89,7 @@ H_{\xi} & =\int _{\Sigma}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L}) \\
 \end{align}
 $$
 
-where $\displaystyle{\tilde{\mathbf{C}}}$s are the constraints of the theory. make a variation on (1.10) and then compare it to (1.8), we have
+where $\displaystyle{\tilde{\mathbf{C}}}$s are the constraints of the theory (and at least for $\displaystyle{\mathrm{AdS}_{3}}$, $\displaystyle{\tilde{\mathbf{C}_{\xi}}}$ is proportional to $\displaystyle{\mathbf{E}}$). make a variation on (1.10) and then compare it to (1.8), we have
 
 $$\tag{1.11}
 \begin{align}
@@ -102,6 +102,7 @@ then pull back to the pre-phase space $\displaystyle{\tilde{\mathcal{P}}}$, we h
 
 $$\tag{1.12}
 \begin{align}
-
+\delta H_{\xi}|_{\tilde{\mathcal{P}}} & =\int _{\partial \Sigma}(\delta Q_{\xi}-\xi \cdot \Theta)
 \end{align}
 $$
+
