@@ -170,7 +170,7 @@ $$\tag{2.1}
 \mathbf{E}^{\mu \nu}_{\mathrm{GR}} & =\frac{1}{16\pi G}\varepsilon _{M}\left( -R^{\mu \nu}+\frac{1}{2}g^{\mu \nu}R \right)+\frac{1}{4}\varepsilon _{M}\left(F^{\mu}_{~\rho}F^{\rho \nu}-\frac{1}{2}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}\right) \\
 \mathbf{E}^{\nu}_{\mathrm{EM}} & =\nabla _{\mu}F^{\mu \nu} \\
 \theta _{\mathrm{GR}} & =\frac{1}{16\pi G}\varepsilon _{\partial \Sigma}n_{\rho}\left(g^{\rho \mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla ^{\rho}\delta g_{\mu \nu}\right) \\
-\theta _{\mathrm{EM}} & =\varepsilon _{\partial M}\tau _{\mu}F^{\mu \nu}\delta A_{\nu}
+\theta _{\mathrm{EM}} & =-\varepsilon _{\partial M}n _{\mu}F^{\mu \nu}\delta A_{\nu}
 \end{align}
 $$
 
@@ -199,3 +199,14 @@ H_{\xi} & =\int _{\Sigma}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L})
 \end{align}
 $$
 
+we have
+
+$$\tag{2.5}
+\begin{align}
+X_{\xi}\cdot \Theta _{\mathrm{GR}}-\xi \cdot \mathbf{L}_{\mathrm{GR}} & =\mathrm{d}\mathbf{Q}_{\xi,\mathrm{GR}}-\tilde{E}^{\mu \nu}n_{\mu}\xi _{\nu}\varepsilon _{\partial M} \\
+\mathbf{Q}_{\xi,\mathrm{GR}} & = -\frac{1}{16\pi G}\nabla ^{\mu}\xi ^{\nu} \cdot \frac{1}{2!}\varepsilon _{\mu \nu \mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\\ \\
+X_{\xi}\cdot \Theta _{\mathrm{EM}}-\xi \cdot \mathbf{L}_{\mathrm{EM}} & =-F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}-A^{\rho}\nabla _{\rho}\xi _{\nu})\cdot \frac{1}{3!}\varepsilon _{\mu \mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
+ & +\frac{1}{2}F^{\mu \nu}\nabla _{\mu}A_{\nu}\xi ^{\rho}\cdot \frac{1}{3!}\varepsilon _{\rho \mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
+ & = \mathrm{d}\mathbf{Q}_{\xi,\mathrm{EM}}-
+\end{align}
+$$
