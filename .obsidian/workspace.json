@@ -332,8 +332,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 769.5,
-    "collapsed": true
+    "width": 769.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -343,7 +342,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "cf12c135913cc553",
+  "active": "a7a94c222896e512",
   "lastOpenFiles": [
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
