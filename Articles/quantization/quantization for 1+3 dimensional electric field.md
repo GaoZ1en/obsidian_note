@@ -5,11 +5,20 @@ S & =-\frac{1}{4}\int _{M}\mathrm{d}^{4}xF_{\mu \nu}F^{\mu \nu}
 $$
 
 ---
-we first do canonical quantization. impose temporal gauge $\displaystyle{A^{0}}$ and Column gauge $\displaystyle{\vec{\nabla}\cdot \vec{A}=0}$. then the action becomes
+we first do canonical quantization. impose temporal gauge $\displaystyle{A^{0}=0}$ (there is still gauge redundancy). then the action becomes
 
 $$\tag{1.1}
 \begin{align}
 S & =\int \mathrm{d}^{4}x\left(\frac{1}{2}(\dot{A}^{i})^{2}-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}\right)
+\end{align}
+$$
+
+make a variation
+
+$$\tag{1.2}
+\begin{align}
+\delta S & =\int \mathrm{d}^{4}x\left(\delta _{ij}\dot{A}^{i} \delta \dot{A}^{j}+(\delta _{ij}\vec{\nabla}^{2}-\partial _{i}\partial _{j})A^{i}\delta A^{j}\right) \\
+ & =\int \mathrm{d}^{4}x\left((\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})-\partial _{i}\partial _{j})A^{i}\delta A^{j}\right)+\int _{\Sigma _{f}-\Sigma _{i}} \mathrm{d}^{3}x\delta _{ij}\dot{A}^{i}\delta A^{j}
 \end{align}
 $$
 
