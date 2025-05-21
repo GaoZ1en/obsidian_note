@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 112,
+                    "columns": 233,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m09:15:15 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new\r\nnew-session  new-window   \r\n\u001b[33m09:15:15 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t main\u001b[1B\u001b[35D",
                     "rows": 70
                   }
@@ -96,7 +96,8 @@
               "title": "canonical quantization of fermionic systems"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -300,7 +301,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 769.5
+    "width": 769.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -310,7 +312,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c8d3e695c80d788",
+  "active": "84f605398c80d300",
   "lastOpenFiles": [
     "TODO.md",
     "Note/Project Euler/1-50/prob0001.md",
