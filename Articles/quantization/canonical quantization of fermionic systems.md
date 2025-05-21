@@ -114,7 +114,69 @@ $$\tag{2.2}
 \end{align}
 $$
 
-consider the following
+equation of motion gives
+
+$$\tag{2.3}
+\begin{align}
+\psi & =\psi_{0}e^{-i \omega t} \\
+\psi ^{\dagger} & =\psi_{0}^{\dagger}e^{i \omega t}
+\end{align}
+$$
+
+then the symplectic potential becomes
+
+$$\tag{2.4}
+\begin{align}
+\omega=i\delta \psi_{0} ^{\dagger}\wedge \delta \psi_{0}
+\end{align}
+$$
+
+the Hamiltonian flow corresponding to $\displaystyle{\psi}$ and $\displaystyle{\psi ^{\dagger}}$ is given by
+
+$$\tag{2.5}
+\begin{align}
+X_{\psi} & =-i\frac{\delta}{\delta \psi _{0}^{\dagger}}e^{-i \omega t} \\
+X_{\psi ^{\dagger}} & =i \frac{\delta}{\delta \psi _{0}}e^{i \omega t}
+\end{align}
+$$
+
+and the Poisson bracket between $\displaystyle{\psi}$ and $\displaystyle{\psi ^{\dagger}}$ is
+
+$$\tag{2.6}
+\begin{align}
+\left\{\psi,\psi ^{\dagger}\right\}_{\mathrm{P}} & =X_{\psi}\cdot X_{\psi ^{\dagger}}\cdot \omega \\
+ & =i \frac{\delta}{\delta \psi _{0}^{\dagger}}\cdot \frac{\delta}{\delta \psi_{0}}\cdot\delta \psi_{0}^{\dagger}\wedge \delta \psi_{0} \\
+ & =-i
+\end{align}
+$$
+
+after canonical quantization, we have
+
+$$\tag{2.7}
+\begin{align}
+\left\{\psi,\psi ^{\dagger}\right\} & =i\left\{\psi,\psi ^{\dagger}\right\}_{\mathrm{P}}=1 \\
+\left\{\psi,\psi\right\} & =\left\{\psi ^{\dagger},\psi ^{\dagger}\right\}=0
+\end{align}
+$$
+
+and
+
+$$\tag{2.8}
+\begin{align}
+\left\{\psi(t_{1}),\psi(t_{2})\right\} & =\left\{\psi ^{\dagger}(t_{1}),\psi ^{\dagger}(t_{2})\right\}=0 \\
+\left\{\psi(t_{1}),\psi ^{\dagger}(t_{2})\right\} & =e^{i\omega(t_{2}-t_{1})}
+\end{align}
+$$
+
+finnaly the time-ordered correlation function
+
+$$\tag{2.9}
+\begin{align}
+\braket{ \psi(t_{1})\psi ^{\dagger}(t_{2}) }  & = \braket{ 0|\mathcal{T}\psi(t_{1})\psi ^{\dagger}(t_{2})|0 }  \\
+ & =\theta(t_{1}-t_{2})\braket{ 0|\psi(t_{1})\psi ^{\dagger}(t_{2})|0 } -(t_{1}\leftrightarrow t_{2}) \\
+ & =\theta(t_{1}-t_{2})e^{i \omega(t_{2}-t_{1})}-(t_{1}\leftrightarrow t_{2})
+\end{align}
+$$
 
 ---
 introduce supersymmetry, we have
@@ -136,4 +198,4 @@ $$
 
 ---
 
-for a Majorana fermion, we have
+for a Majorana fermion, we have $\displaystyle{\psi ^{\dagger}=\psi=\chi}$...

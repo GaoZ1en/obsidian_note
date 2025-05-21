@@ -32,7 +32,7 @@ then we have the symplectic form
 $$\tag{1.4}
 \begin{align}
 \omega & =\delta \theta \\
- & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\delta F^{\mu \nu}\wedge \delta A_{\nu}+\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}
+ & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\delta F^{\mu \nu}\wedge \delta A_{\nu}+i\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\delta \bar{\psi}\wedge \gamma ^{\mu}\delta \psi
 \end{align}
 $$
 
