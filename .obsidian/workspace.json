@@ -72,13 +72,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
+                "file": "Articles/quantization/path integral quantization for Proca field.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "ABJ anomaly"
+              "title": "path integral quantization for Proca field"
             }
           }
         ],
@@ -158,7 +158,7 @@
                     "useWin32Conhost": false
                   },
                   "serial": {
-                    "columns": 53,
+                    "columns": 56,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m09:15:15 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session \r\n-d  -t  \r\n\u001b[33m09:15:15 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n-d         -t         workspace  \r\n\u001b[33m09:15:15 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t 1\r\ncan't find session: 1\r\n\u001b[33m09:15:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session \r\n--  -d  -n  -s  -t  \r\n\u001b[33m09:15:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t leftside\u001b[1B\u001b[39D",
                     "rows": 52
                   }
@@ -222,13 +222,11 @@
               "title": "solutions"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 298.5,
-    "collapsed": true
+    "width": 310.5
   },
   "right": {
     "id": "be754014b7083e79",
@@ -284,15 +282,16 @@
   },
   "active": "84f605398c80d300",
   "lastOpenFiles": [
+    "Articles/quantization/path integral quantization for Proca field.md",
+    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
+    "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Articles/quantization/canonical quantization of fermionic systems.md",
     "Articles/Test particle/read note for black hole entropy.md",
     "Articles/Test particle/some direct calculation.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
     "Note/Project Euler/solutions.md",
     "TODO.md",
     "Note/Project Euler/1-50/prob0001.md",
-    "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
@@ -312,7 +311,6 @@
     "Drafts/word cloud.md",
     "Drafts/project euler.md",
     "Drafts/prompt.md",
-    "Drafts/Proca field calculation.md",
     "Attachments/Pasted image 20250508202619.png",
     "Attachments/Pasted image 20250508170026.png",
     "Attachments/Pasted image 20250508165602.png",
