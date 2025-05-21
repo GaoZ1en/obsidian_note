@@ -5,7 +5,7 @@ S & =-\frac{1}{4}\int _{M}\mathrm{d}^{4}xF_{\mu \nu}F^{\mu \nu}
 $$
 
 ---
-we first do canonical quantization. impose temporal gauge $\displaystyle{A^{0}=0}$ (there is still gauge redundancy). then the action becomes
+we first do canonical quantization. impose temporal gauge $\displaystyle{A^{0}=0}$ and Column gauge $\displaystyle{\vec{\nabla}\cdot \vec{A}=0}$. then the action becomes
 
 $$\tag{1.1}
 \begin{align}
@@ -17,10 +17,38 @@ make a variation
 
 $$\tag{1.2}
 \begin{align}
-\delta S & =\int \mathrm{d}^{4}x\left(\delta _{ij}\dot{A}^{i} \delta \dot{A}^{j}+(\delta _{ij}\vec{\nabla}^{2}-\partial _{i}\partial _{j})A^{i}\delta A^{j}\right) \\
- & =\int \mathrm{d}^{4}x\left((\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})-\partial _{i}\partial _{j})A^{i}\delta A^{j}\right)+\int _{\Sigma _{f}-\Sigma _{i}} \mathrm{d}^{3}x\delta _{ij}\dot{A}^{i}\delta A^{j}
+\delta S & =\int \mathrm{d}^{4}x\left(\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})A^{i}\delta A^{j}\right)+\int _{\Sigma _{f}-\Sigma _{i}} \mathrm{d}^{3}x\delta _{ij}\dot{A}^{i}\delta A^{j} \\
+ & =\int \mathrm{d}^{4}xE_{j}\delta A^{j}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
+E_{j} & =\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})A^{i} \\
+\theta & =\int _{\Sigma}\mathrm{d}^{3}x\delta _{ij}\dot{A}^{i}\delta A^{j}
 \end{align}
 $$
+
+and the symplectic form is
+
+$$\tag{1.3}
+\begin{align}
+\omega=\delta \theta=\int _{\Sigma}\mathrm{d}^{3}x\delta _{ij}\delta \dot{A}^{i}\wedge \delta A^{j}
+\end{align}
+$$
+
+a general solution for the equation of motion $\displaystyle{E_{j}=0}$ is
+
+$$\tag{1.4}
+\begin{align}
+A^{i}(x) & =\int \mathrm{d}^{3}\vec{k} \sum ^{2}_{s=1}e^{s,i}_{k}[a_{ks}\varphi _{k}(x)+a^{\dagger}_{ks}\varphi _{k}^{*}(x)]
+\end{align}
+$$
+
+where $\displaystyle{\varphi ^{*}_{k}(x)= \frac{e^{ik\cdot x}}{(2\pi)^{3/2}\sqrt{ 2\omega _{k} }}}$ and $\displaystyle{e^{s,i}_{k}}$ satisfies $\displaystyle{k_{i}e^{s,i}_{k}=0\implies e^{s,i}_{k}e^{s',j}_{k}=\delta ^{ij}+\frac{k^{i}k^{j}}{k^{2}}}$. then the symplectic form becomes
+
+$$\tag{1.5}
+\begin{align}
+\omega & =\int \mathrm{d}^{3}k\sum ^{2}_{s=1} i\delta a^{\dagger}_{ks}\wedge \delta a_{ks}
+\end{align}
+$$
+
+then the Hamiltonian flow corresponding to $\displaystyle{A^{i}(x)}$
 
 
 ### Step 2: Identify Canonical Momenta
