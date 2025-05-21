@@ -47,7 +47,7 @@ in order to quantize the system, we need to impose the Dirac bracket. we first w
 
 $$\tag{1.5}
 \begin{align}
-\left\{\varphi _{1},\varphi _{2}\right\} & =\left\{\pi _{\psi}-\frac{i}{2}\psi ^{\dagger}, \pi _{\psi ^{\dagger}}+\frac{i}{2}\psi\right\} =-i
+\left\{\varphi _{1},\varphi _{2}\right\}_{\mathrm{P}} & =\left\{\pi _{\psi}-\frac{i}{2}\psi ^{\dagger}, \pi _{\psi ^{\dagger}}+\frac{i}{2}\psi\right\}_{\mathrm{P}} =-i
 \end{align}
 $$
 
@@ -55,18 +55,34 @@ then we have the Diract bracket
 
 $$\tag{1.6}
 \begin{align}
-\left\{A,B\right\}_{D}=\left\{A,B\right\}+\left\{A,\varphi _{a}\right\}(C^{-1})^{ab}\left\{\varphi _{b},B\right\}
+\left\{A,B\right\}_{\mathrm{D}}=\left\{A,B\right\}_{\mathrm{P}}-\left\{A,\varphi _{a}\right\}_{\mathrm{P}}(C^{-1})^{ab}\left\{\varphi _{b},B\right\}_{\mathrm{P}}
 \end{align}
 $$
 
-where $\displaystyle{C_{ab}=\left\{\varphi _{a},\varphi _{b}\right\}=\begin{pmatrix}0 & -i \\ i & 0\end{pmatrix}}$, and $\displaystyle{(C^{-1})^{ab}=\begin{pmatrix}0&i \\ -i&0\end{pmatrix}}$. then we have the Dirac bracket between $\displaystyle{\psi}$ and $\displaystyle{\psi ^{\dagger}}$
+where $\displaystyle{C_{ab}=\left\{\varphi _{a},\varphi _{b}\right\}_{\mathrm{P}}=\begin{pmatrix}0 & i \\ -i & 0\end{pmatrix}}$, and $\displaystyle{(C^{-1})^{ab}=\begin{pmatrix}0&i \\ -i&0\end{pmatrix}}$. then we have the Dirac bracket between $\displaystyle{\psi}$ and $\displaystyle{\psi ^{\dagger}}$
 
 $$\tag{1.7}
 \begin{align}
-\left\{\psi,\psi\right\}_{D} & =\left\{\psi,\psi\right\}+\left\{\psi,\varphi _{1}\right\}(C^{-1})^{12}\left\{\varphi _{2},\psi\right\}+\left\{\psi,\varphi _{2}\right\}(C^{-1})^{21}\left\{\varphi _{1},\psi\right\} \\
- & =
+\left\{\psi,\psi\right\}_{D} & =\left\{\psi,\psi\right\}_{\mathrm{P}}-\left\{\psi,\varphi _{1}\right\}_{\mathrm{P}}(C^{-1})^{12}\left\{\varphi _{2},\psi\right\}_{\mathrm{P}}+\left\{\psi,\varphi _{2}\right\}_{\mathrm{P}}(C^{-1})^{21}\left\{\varphi _{1},\psi\right\}_{\mathrm{P}} \\
+ & \approx0 \\
+\left\{\psi ^{\dagger},\psi ^{\dagger}\right\}_{D} & \approx0 \\
+\left\{\psi,\psi ^{\dagger}\right\}_{D} & =\left\{\psi,\psi ^{\dagger}\right\}_{\mathrm{P}}-\left\{\psi,\varphi _{1}\right\}_{\mathrm{P}}(C^{-1})^{12}\left\{\varphi _{2},\psi ^{\dagger}\right\}_{\mathrm{P}}-\left\{\psi,\varphi _{2}\right\}_{\mathrm{P}}(C^{-1})^{21}\left\{\varphi _{1},\psi ^{\dagger}\right\}_{\mathrm{P}} \\
+ & =\left\{\psi,\pi _{\psi}-\frac{i}{2}\psi ^{\dagger}\right\}_{\mathrm{P}}i\left\{\pi _{\psi ^{\dagger}}+\frac{i}{2}\psi,\psi ^{\dagger}\right\}_{\mathrm{P}} \\
+ & =i
 \end{align}
 $$
+
+after canonical quantization, 
+
+$$\tag{.}
+\begin{align}
+\left\{\psi,\psi\right\} & =\left\{\psi ^{\dagger},\psi ^{\dagger}\right\}=0 \\
+\left\{\psi,\psi ^{\dagger}\right\} & =\frac{1}{i}\left\{\psi,\psi ^{\dagger}\right\}_{\mathrm{D}}=1
+\end{align}
+$$
+
+the Hilbert space is spanned by the vacuum state $\displaystyle{\ket{0}}$ and the one-particle state $\displaystyle{\psi ^{\dagger}\ket{0}}$, with energy 
+
 
 ---
 introduce supersymmetry, we have
