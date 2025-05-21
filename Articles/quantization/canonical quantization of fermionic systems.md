@@ -63,12 +63,12 @@ where $\displaystyle{C_{ab}=\left\{\varphi _{a},\varphi _{b}\right\}_{\mathrm{P}
 
 $$\tag{1.7}
 \begin{align}
-\left\{\psi,\psi\right\}_{D} & =\left\{\psi,\psi\right\}_{\mathrm{P}}-\left\{\psi,\varphi _{1}\right\}_{\mathrm{P}}(C^{-1})^{12}\left\{\varphi _{2},\psi\right\}_{\mathrm{P}}+\left\{\psi,\varphi _{2}\right\}_{\mathrm{P}}(C^{-1})^{21}\left\{\varphi _{1},\psi\right\}_{\mathrm{P}} \\
+\left\{\psi,\psi\right\}_{D} & =\left\{\psi,\psi\right\}_{\mathrm{P}}-\left\{\psi,\varphi _{1}\right\}_{\mathrm{P}}(C^{-1})^{12}\left\{\varphi _{2},\psi\right\}_{\mathrm{P}}-\left\{\psi,\varphi _{2}\right\}_{\mathrm{P}}(C^{-1})^{21}\left\{\varphi _{1},\psi\right\}_{\mathrm{P}} \\
  & \approx0 \\
 \left\{\psi ^{\dagger},\psi ^{\dagger}\right\}_{D} & \approx0 \\
 \left\{\psi,\psi ^{\dagger}\right\}_{D} & =\left\{\psi,\psi ^{\dagger}\right\}_{\mathrm{P}}-\left\{\psi,\varphi _{1}\right\}_{\mathrm{P}}(C^{-1})^{12}\left\{\varphi _{2},\psi ^{\dagger}\right\}_{\mathrm{P}}-\left\{\psi,\varphi _{2}\right\}_{\mathrm{P}}(C^{-1})^{21}\left\{\varphi _{1},\psi ^{\dagger}\right\}_{\mathrm{P}} \\
- & =\left\{\psi,\pi _{\psi}-\frac{i}{2}\psi ^{\dagger}\right\}_{\mathrm{P}}i\left\{\pi _{\psi ^{\dagger}}+\frac{i}{2}\psi,\psi ^{\dagger}\right\}_{\mathrm{P}} \\
- & =i
+ & =-\left\{\psi,\pi _{\psi}-\frac{i}{2}\psi ^{\dagger}\right\}_{\mathrm{P}}i\left\{\pi _{\psi ^{\dagger}}+\frac{i}{2}\psi,\psi ^{\dagger}\right\}_{\mathrm{P}} \\
+ & =-i
 \end{align}
 $$
 
@@ -77,12 +77,44 @@ after canonical quantization,
 $$\tag{.}
 \begin{align}
 \left\{\psi,\psi\right\} & =\left\{\psi ^{\dagger},\psi ^{\dagger}\right\}=0 \\
-\left\{\psi,\psi ^{\dagger}\right\} & =\frac{1}{i}\left\{\psi,\psi ^{\dagger}\right\}_{\mathrm{D}}=1
+\left\{\psi,\psi ^{\dagger}\right\} & =i\left\{\psi,\psi ^{\dagger}\right\}_{\mathrm{D}}=1
 \end{align}
 $$
 
-the Hilbert space is spanned by the vacuum state $\displaystyle{\ket{0}}$ and the one-particle state $\displaystyle{\psi ^{\dagger}\ket{0}}$, with energy 
+the Hilbert space is spanned by the vacuum state $\displaystyle{\ket{0}}$ and the one-particle state $\displaystyle{\psi ^{\dagger}\ket{0}}$, with energy $\displaystyle{E_{0}=0}$ and $\displaystyle{E=\omega}$.
 
+---
+
+then we do canonical quantization in the framework of covariant phase space formalism. we start with the action
+
+$$\tag{0.1}
+\begin{align}
+S & =\int \mathrm{d}t\left(\frac{i}{2}\psi ^{\dagger}\dot{\psi}-\frac{i}{2}\dot{\psi}^{\dagger}\psi- \frac{1}{2}\omega\left\{\psi,\psi ^{\dagger}\right\}\right)
+\end{align}
+$$
+
+make a variation
+
+$$\tag{2.1}
+\begin{align}
+\delta S & =\int \mathrm{d}t\left(\frac{i}{2}\delta \psi ^{\dagger}\dot{\psi}+\frac{i}{2}\psi ^{\dagger} \frac{\mathrm{d}}{\mathrm{d}t}\delta \psi-\frac{i}{2} \frac{\mathrm{d}}{\mathrm{d}t}\delta\psi ^{\dagger}\psi-\frac{i}{2}\dot{\psi}^{\dagger}\delta \psi-\omega(\delta \psi ^{\dagger}\psi+\psi ^{\dagger}\delta\psi)\right) \\
+ & =\int \mathrm{d}t\left(\delta \psi ^{\dagger}\left(i\dot{\psi}-\omega \psi\right)+(-i\dot{\psi}^{\dagger}-\omega \psi ^{\dagger})\delta \psi+\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{i}{2}\psi ^{\dagger}\delta \psi-\frac{i}{2}\delta \psi ^{\dagger}\psi\right)\right) \\
+ & =\int \mathrm{d}t\left(E_{\psi}\delta \psi+\delta \psi ^{\dagger}E_{\psi ^{\dagger}}\right)+\theta|_{t_{f}-t_{i}} \\
+E_{\psi} & =-i\dot{\psi}^{\dagger}-\omega \psi ^{\dagger} \\
+E_{\psi ^{\dagger}} & =i\dot{\psi}-\omega \psi \\
+\theta & =\frac{i}{2}\psi ^{\dagger}\delta \psi-\frac{i}{2}\delta \psi ^{\dagger}\psi
+\end{align}
+$$
+
+and the symplectic potential
+
+$$\tag{2.2}
+\begin{align}
+\omega=\delta \theta & =i\delta \psi ^{\dagger}\wedge \delta \psi
+\end{align}
+$$
+
+consider the following
 
 ---
 introduce supersymmetry, we have
