@@ -21,7 +21,7 @@ $$\tag{1.2}
  & =\int \mathrm{d}^{4}xE_{j}\delta A^{j}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
 E_{j} & =\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})A^{i} \\
 \theta & =\int _{\Sigma}\mathrm{d}^{3}x\delta _{ij}\dot{A}^{i}\delta A^{j}
-\end{align}
+\end{align}i
 $$
 
 and the symplectic form is
@@ -36,11 +36,11 @@ a general solution for the equation of motion $\displaystyle{E_{j}=0}$ is
 
 $$\tag{1.4}
 \begin{align}
-A^{i}(x) & =\int \mathrm{d}^{3}\vec{k} \sum ^{2}_{s=1}e^{s,i}_{k}[a_{ks}\varphi _{k}(x)+a^{\dagger}_{ks}\varphi _{k}^{*}(x)]
+A^{i}(x) & =\int \mathrm{d}^{3}\vec{k} \sum ^{2}_{s=1}e^{s,i}_{k}[a_{ks}\sigma_{k}(x)+a^{\dagger}_{ks}\sigma_{k}^{*}(x)]
 \end{align}
 $$
 
-where $\displaystyle{\varphi ^{*}_{k}(x)= \frac{e^{ik\cdot x}}{(2\pi)^{3/2}\sqrt{ 2\omega _{k} }}}$ and $\displaystyle{e^{s,i}_{k}}$ satisfies $\displaystyle{k_{i}e^{s,i}_{k}=0\implies e^{s,i}_{k}e^{s',j}_{k}=\delta ^{ij}+\frac{k^{i}k^{j}}{k^{2}}}$. then the symplectic form becomes
+where $\displaystyle{\sigma ^{*}_{k}(x)= \frac{e^{ik\cdot x}}{(2\pi)^{3/2}\sqrt{ 2\omega _{k} }}}$ and $\displaystyle{e^{s,i}_{k}}$ satisfies $\displaystyle{k_{i}e^{s,i}_{k}=0\implies e^{s,i}_{k}e^{s',j}_{k}=\delta ^{ij}+\frac{k^{i}k^{j}}{k^{2}}}$. then the symplectic form becomes
 
 $$\tag{1.5}
 \begin{align}
@@ -48,72 +48,81 @@ $$\tag{1.5}
 \end{align}
 $$
 
-then the Hamiltonian flow corresponding to $\displaystyle{A^{i}(x)}$
+then the Hamiltonian flow corresponding to $\displaystyle{A^{i}(x)}$ is
 
+$$\tag{1.6}
+\begin{align}
+X_{A^{i}} & =-i\int \mathrm{d}^{4}x\sum ^{2}_{s=1}\left(\frac{\delta A^{i}}{\delta a_{ks}} \frac{\delta}{\delta a^{\dagger}_{ks}}-\frac{\delta A^{i}}{\delta a^{\dagger}_{ks}} \frac{\delta}{\delta a_{ks}}\right) \\
+ & =-i \int \mathrm{d}^{3}\vec{k}\sum ^{2}_{s=1}\left(\sigma _{k} \frac{\delta}{\delta a_{ks}^{\dagger}}-\sigma ^{*}_{k} \frac{\delta}{\delta a_{ks}}\right)
+\end{align}
+$$
 
-### Step 2: Identify Canonical Momenta
+then we have the following commutator
 
-The canonical momenta conjugate to $A_i$ are:
+$$\tag{1.7}
+\begin{align}
+[A^{i}(x),A^{j}(y)] & =iX_{A^{i}(x)}\cdot X_{A^{j}(x)}\cdot\omega \\
+ & =\int \mathrm{d}^{3}\vec{k}\sum ^{2}_{s=1}e^{s,i}_{k}e^{s,j}_{k}(\sigma _{k}(x)\sigma _{k}^{*}(y)-\sigma ^{*}_{k}(x)\sigma _{k}(y)) \\
+ & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left(\delta ^{ij}+\frac{k^{i}k^{j}}{k^{2}}\right) (e^{ik\cdot(x-y)}-e^{-ik(x-y)}) \\
+ & =\left(\delta ^{ij}+\frac{\partial _{x} ^{i}\partial _{x} ^{j}}{\vec{\nabla}^{2}_{x}}\right)\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(e^{ik\cdot(x-y)}-e^{-ik\cdot(x-y)})
+\end{align}
+$$
 
-$$\Pi_i(\mathbf{x},t) = \frac{\partial \mathcal{L}}{\partial(\partial_t A_i)} = \partial_t A_i = -E_i$$
+contour chosen is the same as usual. and the time ordered two point function
 
-This physically identifies the electric field as the momentum conjugate to the vector potential.
+$$\tag{1.8}
+\begin{align}
+\braket{ A^{i}(x)A^{j}(y) } & = \braket{ 0|\mathcal{T}A^{i}(x)A^{j}(y)|0 }  \\
+ & =\theta(x^{0}-y^{0})\int \mathrm{d}^{3}\vec{k}\sum ^{2}_{s=1}e^{s,i}_{k}e^{s,j}_{k}\sigma _{k}(x)\sigma _{k}^{*}(y)+(x^{0}\leftrightarrow y^{0}) \\
+ & =\left(\delta ^{ij}+\frac{\partial ^{i}_{x}\partial _{x} ^{j}}{\vec{\nabla}^{2}_{x}}\right)\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
+ & =\left(\delta ^{ij}+\frac{\partial ^{i}_{x}\partial ^{j}_{x}}{\vec{\nabla} _{x}}\right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)}
+\end{align}
+$$
 
-### Step 3: The Hamiltonian
+here we emphasis that the $\displaystyle{\vec{\nabla}^{2}_{x}}$ appeared in the denominator should only be understood in the context of Fourier expansion.
 
-The Hamiltonian density becomes:
+and finally the Hamiltonian. here we adopt the language of usual canonical formalism. the canonical momentum is
 
-$$\mathcal{H} = \frac{1}{2}\mathbf{\Pi}^2 + \frac{1}{2}(\nabla \times \mathbf{A})^2 = \frac{1}{2}\mathbf{E}^2 + \frac{1}{2}\mathbf{B}^2$$
+$$\tag{1.9}
+\begin{align}
+\pi _{i} & = \frac{\delta S}{\delta \dot{A}^{i}}=\delta _{ij}\dot{A}^{j} \\
+\implies \dot{A}^{i} & =\delta ^{ij}\pi _{j}
+\end{align}
+$$
 
-### Step 4: Impose Transversality Constraint
+and then the Hamiltonian is
 
-The Coulomb gauge condition $\nabla \cdot \mathbf{A} = 0$ restricts us to the transverse components of $\mathbf{A}$. We can decompose:
+$$\tag{1.10}
+\begin{align}
+H & =\int \mathrm{d}^{3}x\left(\pi _{i}\dot{A}^{i}-\mathcal{L}\right) \\
+ & =\int \mathrm{d}^{3}x\left( \delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2} \right)
+\end{align}
+$$
 
-$$\mathbf{A}(\mathbf{x},t) = \sum_{\lambda=1,2} \int \frac{d^3k}{(2\pi)^3} \frac{1}{\sqrt{2\omega_k}} \left[ a_{\lambda}(\mathbf{k},t) \mathbf{\epsilon}_{\lambda}(\mathbf{k}) e^{i\mathbf{k}\cdot\mathbf{x}} + a_{\lambda}^*(\mathbf{k},t) \mathbf{\epsilon}_{\lambda}^*(\mathbf{k}) e^{-i\mathbf{k}\cdot\mathbf{x}} \right]$$
+in CPS formalism, the conserved charge corresponding to $\displaystyle{ \tau _{\mu}=\left(1,0,0,0 \right) }$ is just
 
-where:
-- $\mathbf{\epsilon}_{\lambda}(\mathbf{k})$ are polarization vectors with $\mathbf{k} \cdot \mathbf{\epsilon}_{\lambda}(\mathbf{k}) = 0$
-- $\lambda = 1,2$ indexes the two physical polarization states
-- $\omega_k = |\mathbf{k}|$ for massless photons
+$$\tag{1.1}
+\begin{align}
+A_{i}
+\end{align}
+$$
 
-### Step 5: Canonical Quantization
+$$\tag{1.11}
+\begin{align}
+H & =\int _{\Sigma} \mathrm{d}^{3}x\left(X_{\tau}\cdot \Theta-\mathcal{L} \right) \\
+ & = \int _{\Sigma}\mathrm{d}^{3}x\left(\delta _{ij}\dot{A}^{i}\dot{A}^{j}-\frac{1}{2}\delta _{ij}\dot{A}^{i}\dot{A}^{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}\right) \\
+ & =\int _{\Sigma}\mathrm{d}^{3}x\left(\frac{1}{2}\delta _{ij}\dot{A}^{i}\dot{A}^{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}\right) \\
+ & =\int _{\Sigma}\mathrm{d}^{3}x\left(\frac{1}{2}\delta _{ij}\dot{A}^{i}\dot{A}^{j}-\frac{1}{2}\delta _{ij}A^{i}\vec{\nabla}^{2}A^{j}\right) \\
+ & =\frac{i}{2}\delta _{ij}\int _{\Sigma}\mathrm{d}^{3}x iA^{i} \overleftrightarrow{\partial}_{0}\dot{A}^{j} \\
+ & =\frac{i}{2}\delta _{ij}\int _{\Sigma}\mathrm{d}^{3}x \int \mathrm{d}^{3}\vec{k} \mathrm{d}^{3}\vec{k}' \sum ^{2}_{s,s'=1} e^{s,i}_{k}e^{s',j}_{k'} \left(a_{ks}\sigma _{k}+a^{\dagger}_{ks}\sigma ^{*}_{k}\right)\overleftrightarrow{\partial}_{0}\left(-i \omega a_{k's'}\sigma _{k'}+i \omega a_{k's'}^{\dagger}\sigma ^{*}_{k}\right)
+\end{align}
+$$
 
-To quantize, we promote $\mathbf{A}$ and $\mathbf{\Pi}$ to operators and impose commutation relations. However, because of the Coulomb gauge constraint, we must use the transverse delta function:
+$$\tag{.}
+\begin{align}
 
-$$[A_i(\mathbf{x},t), \Pi_j(\mathbf{y},t)] = i\hbar\left(\delta_{ij} - \frac{\partial_i \partial_j}{\nabla^2}\right)\delta^{(3)}(\mathbf{x}-\mathbf{y})$$
+\end{align}
+$$
 
-In terms of mode operators, this is equivalent to:
-
-$$[a_{\lambda}(\mathbf{k}), a_{\lambda'}^{\dagger}(\mathbf{k}')] = (2\pi)^3 \delta_{\lambda\lambda'} \delta^{(3)}(\mathbf{k}-\mathbf{k}')$$
-$$[a_{\lambda}(\mathbf{k}), a_{\lambda'}(\mathbf{k}')] = [a_{\lambda}^{\dagger}(\mathbf{k}), a_{\lambda'}^{\dagger}(\mathbf{k}')] = 0$$
-
-### Step 6: Field Evolution
-
-The equations of motion in the Heisenberg picture give:
-
-$$\frac{d a_{\lambda}(\mathbf{k},t)}{dt} = -i\omega_k a_{\lambda}(\mathbf{k},t)$$
-
-with solution:
-
-$$a_{\lambda}(\mathbf{k},t) = a_{\lambda}(\mathbf{k},0)e^{-i\omega_k t}$$
-
-### Step 7: Hamiltonian in Terms of Creation/Annihilation Operators
-
-The Hamiltonian becomes:
-
-$$H = \int d^3k \sum_{\lambda=1,2} \omega_k \left(a_{\lambda}^{\dagger}(\mathbf{k})a_{\lambda}(\mathbf{k}) + \frac{1}{2}[a_{\lambda}(\mathbf{k}),a_{\lambda}^{\dagger}(\mathbf{k})]\right)$$
-
-After normal ordering:
-
-$$H = \int d^3k \sum_{\lambda=1,2} \omega_k a_{\lambda}^{\dagger}(\mathbf{k})a_{\lambda}(\mathbf{k}) + E_0$$
-
-where $E_0$ is the (formally infinite) zero-point energy.
-
-## Physical Interpretation
-
-This formalism describes photons as quanta of the electromagnetic field with:
-- Two transverse polarization states (corresponding to $\lambda=1,2$)
-- Momentum $\hbar\mathbf{k}$ and energy $\hbar\omega_k = \hbar|\mathbf{k}|c$ (restoring $\hbar$ and $c$)
-- Creation/annihilation operators that add/remove photons from the quantum state
-
-The gauge fixing procedure has eliminated unphysical degrees of freedom, leaving only the two physical polarization states of the photon.
+---
+path integral quantization. 

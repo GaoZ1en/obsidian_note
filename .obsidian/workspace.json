@@ -241,7 +241,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5
+    "width": 310.5,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -297,10 +298,10 @@
   },
   "active": "69163c94ac4f82f3",
   "lastOpenFiles": [
-    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
-    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
+    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Articles/quantization/path integral quantization for Proca field.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
     "Articles/quantization/canonical quantization of fermionic systems.md",
