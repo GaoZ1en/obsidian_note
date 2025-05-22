@@ -41,7 +41,7 @@
                   },
                   "serial": {
                     "columns": 157,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m08:02:42 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t workspace\u001b[1B\u001b[43D",
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m08:41:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\nside-4     workspace  \r\n\u001b[33m08:41:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t workspace \u001b[1B\u001b[44D",
                     "rows": 70
                   }
                 }
@@ -166,7 +166,7 @@
                   },
                   "serial": {
                     "columns": 63,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m08:02:42 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session \r\n-d  -t  \r\n\u001b[33m08:02:42 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n-d         side-4     -t         workspace  \r\n\u001b[33m08:02:42 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t side-4 \u001b[1B\u001b[41D",
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m08:41:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t side-4 \u001b[1B\u001b[41D",
                     "rows": 36
                   }
                 }
@@ -214,12 +214,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://pe-cn.github.io/35/",
-                "title": "Problem 35 | Project Euler | 欧拉计划",
+                "url": "https://pe-cn.github.io/39/",
+                "title": "Problem 39 | Project Euler | 欧拉计划",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Problem 35 | Project Euler | 欧拉计划"
+              "title": "Problem 39 | Project Euler | 欧拉计划"
             }
           },
           {
