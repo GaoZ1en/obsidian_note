@@ -34,6 +34,14 @@ x^{\mu} & \to x^{\mu}+\xi ^{\mu}
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+g_{\mu \nu} & \to g_{\mu \nu}+\mathcal{L}_{\xi}g_{\mu \nu}=g_{\mu \nu}+\xi ^{\rho}\partial _{\rho}g_{\mu \nu}+g_{\rho \nu}\partial _{\mu}\xi ^{\rho}+g_{\mu \rho}\partial _{\nu}\xi ^{\rho} \\
+A_{\mu} & \to A_{\mu}+\mathcal{L}_{\xi}A_{\mu}=A_{\mu}+\xi ^{\nu}\partial _{\nu}A_{\mu}+A_{\nu}\partial _{\mu}\xi ^{\nu} \\
+x^{\mu} & \to x^{\mu}+\xi ^{\mu}
+\end{align}
+$$
+
 which can be represented as a vector in the set of configuration
 
 $$\tag{1.4}
@@ -51,6 +59,8 @@ X_{\xi}\cdot \delta S & =-m\int \mathrm{d}\tau \left( -g_{\mu \nu} \frac{\mathrm
 \end{align}
 $$
 
+
+
 $$\tag{.}
 \begin{align}
 mg_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}\xi ^{\nu}}{\mathrm{d}\tau}-\frac{1}{2}\xi ^{\rho}\partial _{\rho}g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} 
@@ -59,8 +69,8 @@ $$
 
 $$\tag{.}
 \begin{align}
-X_{\xi}\cdot \delta S & =m\int \mathrm{d}\tau \left( g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}\xi ^{\nu}}{\mathrm{d}\tau}+\frac{1}{2}\xi ^{\rho}\partial _{\rho}g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \right) -q\int \mathrm{d}\tau \left( \xi ^{\nu}\partial _{\nu}A_{\mu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}+ A_{\mu} \frac{\mathrm{d}\xi ^{\mu}}{\mathrm{d}\tau}\right) \\
- & +m\int \mathrm{d}\tau  \nabla _{\mu}\xi _{\nu} \frac{dx^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}-q\int \mathrm{d}\tau (\xi ^{\nu}\nabla _{\nu}A_{\mu}-A^{\nu}\nabla _{\nu}\xi _{\mu}) \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}
+X_{\xi}\cdot \delta S & =m\int \mathrm{d}\tau \left( g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}\xi ^{\nu}}{\mathrm{d}\tau}+\frac{1}{2}\xi ^{\rho}\partial _{\rho}g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \right) -q\int \mathrm{d}\tau \left( \xi ^{\nu}\partial _{\nu}A_{\mu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}+ A_{\mu} \partial _{\nu}\xi ^{\mu} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}\right) \\
+ & +\frac{m}{2}\int \mathrm{d}\tau (\xi ^{\rho}\partial _{\rho}g_{\mu \nu}+g_{\rho \nu}\partial _{\mu}\xi ^{\rho}+g_{\mu \rho}\partial _{\nu}\xi ^{\rho})\frac{dx^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}-q\int \mathrm{d}\tau (\xi ^{\nu}\partial_{\nu}A_{\mu}+A_{\nu}\partial _{\mu}\xi ^{\nu}) \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}
 \end{align}
 $$
 
