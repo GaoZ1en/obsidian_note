@@ -100,3 +100,24 @@ here we use the Klein-Gordon inner product for $\displaystyle{\sigma _{k}}$.
 ---
 path integral quantization. 
 
+
+
+---
+here we present how Bjorken and Drell do the canonical quantization. we still start from the action
+
+$$\tag{0.1}
+\begin{align}
+S & =-\frac{1}{4}\int \mathrm{d}^{4}xF_{\mu \nu}F^{\mu \nu} \\
+ & =\int \mathrm{d}^{4}x\left(\frac{1}{2}(\dot{A}^{i})^{2}+\right)
+\end{align}
+$$
+
+the canonical momentum is
+
+$$\tag{3.1}
+\begin{align}
+\pi _{0} & = \frac{\delta S}{\delta \dot{A}_{0}}=0,  & \pi ^{k}=\frac{\delta S}{\delta \dot{A}_{k}}=-\dot{A}_{k}- \partial _{k}A_{0}
+\end{align}
+$$
+
+then the Hamiltonian is

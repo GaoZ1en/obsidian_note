@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 236,
+                    "columns": 148,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m12:21:11 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux \r\nattach-session        clear-prompt-history  display-menu          kill-pane             list-clients          lock-server           paste-buffer          resize-window         select-window         set-window-option     source-file           unlink-window\r\nbind-key              clock-mode            display-message       kill-server           list-commands         lock-session          pipe-pane             respawn-pane          send-keys             show-buffer           split-window          wait-for\r\nbreak-pane            command-prompt        display-panes         kill-session          list-keys             move-pane             previous-layout       respawn-window        send-prefix           show-environment      start-server          \r\ncapture-pane          confirm-before        display-popup         kill-window           list-panes            move-window           previous-window       rotate-window         server-access         show-hooks            suspend-client        \r\nchoose-buffer         copy-mode             find-window           last-pane             list-sessions         new-session           refresh-client        run-shell             set-buffer            show-messages         swap-pane             \r\nchoose-client         customize-mode        has-session           last-window           list-windows          new-window            rename-session        save-buffer           set-environment       show-options          swap-window           \r\nchoose-tree           delete-buffer         if-shell              link-window           load-buffer           next-layout           rename-window         select-layout         set-hook              show-prompt-history   switch-client         \r\nclear-history         detach-client         join-pane             list-buffers          lock-client           next-window           resize-pane           select-pane           set-option            show-window-options   unbind-key            \r\n\u001b[33m12:21:11 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session \r\n-d  -t  \r\n\u001b[33m12:21:11 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n-d         -t         workspace  \r\n\u001b[33m12:21:11 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t workspace \u001b[1B\u001b[44D",
                     "rows": 70
                   }
@@ -96,7 +96,8 @@
               "title": "some direct calculation"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -241,7 +242,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5
+    "width": 310.5,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -295,7 +297,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c8d3e695c80d788",
+  "active": "69163c94ac4f82f3",
   "lastOpenFiles": [
     "Articles/Test particle/some direct calculation.md",
     "Lecture/2025 spring/python for general purpose/homework 9.md",
