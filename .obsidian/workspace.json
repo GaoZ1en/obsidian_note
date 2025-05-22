@@ -40,15 +40,15 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 236,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m08:16:06 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session \r\n-d  -t  \r\n\u001b[33m08:16:06 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n-d          leftside-2  leftside-5  main-3      -t          workspace   \r\n\u001b[33m08:16:06 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t main-3 \u001b[1B\u001b[41D",
+                    "columns": 284,
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m10:14:15 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t \r\nleftside-2  leftside-5  main-3      workspace   \r\n\u001b[33m10:14:15 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t main-3 \u001b[1B\u001b[38D",
                     "rows": 70
                   }
                 }
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ main-3 ● 1 bash"
+              "title": "Terminal: KoishiLaptop ❐ main-7 ● 1 bash"
             }
           },
           {
