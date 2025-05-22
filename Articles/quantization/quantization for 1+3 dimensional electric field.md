@@ -141,4 +141,34 @@ $$\tag{3.3}
 \end{align}
 $$
 
-then we have a secondary constraint $\displaystyle{\varphi _{2}=-\delta ^{ij}\partial _{i}\pi _{j}=0}$. the Poisson bracket between $\displaystyle{\varphi _{1}}$ and $\displaystyle{\varphi _{2}}$ is just 0, so this is system with first class constraints. 
+then we have a secondary constraint $\displaystyle{\varphi _{2}=-\delta ^{ij}\partial _{i}\pi _{j}=0}$. the Poisson bracket between $\displaystyle{\varphi _{1}}$ and $\displaystyle{\varphi _{2}}$ is just 0, so this is system with first class constraints. since we have the $\displaystyle{\varphi _{2}\approx0}$ constraints, the naive equal-time commutator
+
+$$\tag{3.4}
+\begin{align}
+[A^{i}(\vec{x},t),\pi _{j}(\vec{x}',t)]=i\delta ^{i}_{j} \delta ^{3}(\vec{x}-\vec{x}')
+\end{align}
+$$
+
+is wrong. we have to impose traceless $\displaystyle{\tilde{\delta}_{ij}}$ function as
+
+$$\tag{3.5}
+\begin{align}
+\tilde{\delta}_{ij}(\vec{x}-\vec{y}) & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}} e^{i\vec{k}\cdot(\vec{x}-\vec{y})}\left(\delta _{ij}-\frac{k _{i}k _{j}}{k^{2}}\right)
+\end{align}
+$$
+
+and (3.4) becomes
+
+$$\tag{3.6}
+\begin{align}
+[A^{i}(\vec{x},t),\pi _{j}(\vec{x}',t)]= i\tilde{\delta}^{i}_{j}(\vec{x}-\vec{x}')
+\end{align}
+$$
+
+choosing the temporal gauge $\displaystyle{A^{0}=0}$ and the Column guage $\displaystyle{\vec{\nabla}\cdot \vec{A}=0}$, we have the following mode expansion
+
+$$\tag{3.6}
+\begin{align}
+\vec{A}(x,t) & =\int \mathrm{d}^{3}\vec{k}\sum ^{2}_{s=1}\vec{e}^{s}_{k}\left(a_{ks}\sigma _{k}+a^{\dagger}_{ks}\sigma _{k}^{*}\right)
+\end{align}
+$$
