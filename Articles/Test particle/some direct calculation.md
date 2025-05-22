@@ -65,6 +65,28 @@ X_{\xi}\cdot \delta S & =m\int \mathrm{d}\tau \left( g_{\mu \nu} \frac{\mathrm{d
 $$
 
 
+
+gauge transformation
+
+$$\tag{1.?}
+\begin{align}
+X_{\alpha}=\int \mathrm{d}\tau \partial _{\mu}\alpha  \frac{\delta}{\delta A_{\mu}} 
+\end{align}
+$$
+
+act on the action, we have
+
+$$\tag{1.?}
+\begin{align}
+X_{\alpha}\cdot \delta S & =-q\int \mathrm{d}\tau \partial_{\mu}\alpha \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \\
+ & =-q\int \mathrm{d}\alpha=-q\alpha|_{\tau _{f}-\tau _{i}}
+\end{align}
+$$
+
+
+
+
+
 ---
 
 $$\tag{0.2}

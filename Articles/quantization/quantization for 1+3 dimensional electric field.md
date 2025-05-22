@@ -81,31 +81,7 @@ $$
 
 here we emphasis that the $\displaystyle{\vec{\nabla}^{2}_{x}}$ appeared in the denominator should only be understood in the context of Fourier expansion.
 
-and finally the Hamiltonian. here we adopt the language of usual canonical formalism. the canonical momentum is
-
-$$\tag{1.9}
-\begin{align}
-\pi _{i} & = \frac{\delta S}{\delta \dot{A}^{i}}=\delta _{ij}\dot{A}^{j} \\
-\implies \dot{A}^{i} & =\delta ^{ij}\pi _{j}
-\end{align}
-$$
-
-and then the Hamiltonian is
-
-$$\tag{1.10}
-\begin{align}
-H & =\int \mathrm{d}^{3}x\left(\pi _{i}\dot{A}^{i}-\mathcal{L}\right) \\
- & =\int \mathrm{d}^{3}x\left( \delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2} \right)
-\end{align}
-$$
-
-in CPS formalism, the conserved charge corresponding to $\displaystyle{ \tau _{\mu}=\left(1,0,0,0 \right) }$ is just
-
-$$\tag{1.1}
-\begin{align}
-A_{i}
-\end{align}
-$$
+the conserved charge, Hamiltonian, corresponding to $\displaystyle{ \tau _{\mu}=\left(1,0,0,0 \right) }$ is 
 
 $$\tag{1.11}
 \begin{align}
@@ -114,15 +90,13 @@ H & =\int _{\Sigma} \mathrm{d}^{3}x\left(X_{\tau}\cdot \Theta-\mathcal{L} \right
  & =\int _{\Sigma}\mathrm{d}^{3}x\left(\frac{1}{2}\delta _{ij}\dot{A}^{i}\dot{A}^{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}\right) \\
  & =\int _{\Sigma}\mathrm{d}^{3}x\left(\frac{1}{2}\delta _{ij}\dot{A}^{i}\dot{A}^{j}-\frac{1}{2}\delta _{ij}A^{i}\vec{\nabla}^{2}A^{j}\right) \\
  & =\frac{i}{2}\delta _{ij}\int _{\Sigma}\mathrm{d}^{3}x iA^{i} \overleftrightarrow{\partial}_{0}\dot{A}^{j} \\
- & =\frac{i}{2}\delta _{ij}\int _{\Sigma}\mathrm{d}^{3}x \int \mathrm{d}^{3}\vec{k} \mathrm{d}^{3}\vec{k}' \sum ^{2}_{s,s'=1} e^{s,i}_{k}e^{s',j}_{k'} \left(a_{ks}\sigma _{k}+a^{\dagger}_{ks}\sigma ^{*}_{k}\right)\overleftrightarrow{\partial}_{0}\left(-i \omega a_{k's'}\sigma _{k'}+i \omega a_{k's'}^{\dagger}\sigma ^{*}_{k}\right)
+ & =\frac{i}{2}\delta _{ij}\int _{\Sigma}\mathrm{d}^{3}x \int \mathrm{d}^{3}\vec{k} \mathrm{d}^{3}\vec{k}' \sum ^{2}_{s,s'=1} e^{s,i}_{k}e^{s',j}_{k'} \left(a_{ks}\sigma _{k}+a^{\dagger}_{ks}\sigma ^{*}_{k}\right)\overleftrightarrow{\partial}_{0}\left(-i \omega a_{k's'}\sigma _{k'}+i \omega a_{k's'}^{\dagger}\sigma ^{*}_{k'}\right) \\
+ & =\int \mathrm{d}^{3}\vec{k} \frac{\omega}{2}\sum ^{2}_{s=1}(a_{ks}a_{ks}^{\dagger}+a^{\dagger}_{ks}a_{ks})
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-
-\end{align}
-$$
+here we use the Klein-Gordon inner product for $\displaystyle{\sigma _{k}}$. 
 
 ---
 path integral quantization. 
+

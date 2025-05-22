@@ -40,8 +40,8 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 168,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m09:15:15 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new\r\nnew-session  new-window   \r\n\u001b[33m09:15:15 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t main\u001b[1B\u001b[35D",
+                    "columns": 236,
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m08:16:06 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session \r\n-d  -t  \r\n\u001b[33m08:16:06 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n-d          leftside-2  leftside-5  main-3      -t          workspace   \r\n\u001b[33m08:16:06 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t main-3 \u001b[1B\u001b[41D",
                     "rows": 70
                   }
                 }
@@ -49,21 +49,6 @@
               "pinned": true,
               "icon": "terminal",
               "title": "Terminal: KoishiLaptop ❐ main-3 ● 1 bash"
-            }
-          },
-          {
-            "id": "84f605398c80d300",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/quantization for 1+3 dimensional electric field.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "quantization for 1+3 dimensional electric field"
             }
           },
           {
@@ -95,6 +80,21 @@
               "icon": "lucide-file",
               "title": "quantization for 1+3 dimensional electric field"
             }
+          },
+          {
+            "id": "b1ee31c25d545bff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/Test particle/some direct calculation.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "some direct calculation"
+            }
           }
         ],
         "currentTab": 3
@@ -109,7 +109,7 @@
       {
         "id": "5fd9d00ec14b2f12",
         "type": "tabs",
-        "dimension": 42.25865209471767,
+        "dimension": 42.258652094717675,
         "children": [
           {
             "id": "57493beef54bdf2b",
@@ -129,7 +129,7 @@
       {
         "id": "56384ae1a9e66525",
         "type": "tabs",
-        "dimension": 57.74134790528233,
+        "dimension": 57.741347905282325,
         "children": [
           {
             "id": "c75300afee03a7a5",
@@ -173,14 +173,14 @@
                     "useWin32Conhost": false
                   },
                   "serial": {
-                    "columns": 56,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m09:15:15 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session \r\n-d  -t  \r\n\u001b[33m09:15:15 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n-d         -t         workspace  \r\n\u001b[33m09:15:15 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t 1\r\ncan't find session: 1\r\n\u001b[33m09:15:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session \r\n--  -d  -n  -s  -t  \r\n\u001b[33m09:15:23 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t leftside\u001b[1B\u001b[39D",
+                    "columns": 59,
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m08:16:06 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux new-session -t leftside-2\u001b[1B\u001b[41D",
                     "rows": 52
                   }
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ leftside-2 ● 1 bash"
+              "title": "Terminal: KoishiLaptop ❐ leftside-5 ● 1 bash"
             }
           },
           {
@@ -237,12 +237,12 @@
               "title": "solutions"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 310.5,
-    "collapsed": true
+    "width": 310.5
   },
   "right": {
     "id": "be754014b7083e79",
@@ -296,17 +296,17 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "69163c94ac4f82f3",
+  "active": "b1ee31c25d545bff",
   "lastOpenFiles": [
-    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+    "Articles/Test particle/some direct calculation.md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+    "Articles/quantization/path integral quantization for Proca field.md",
+    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
-    "Articles/quantization/path integral quantization for Proca field.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
     "Articles/quantization/canonical quantization of fermionic systems.md",
     "Articles/Test particle/read note for black hole entropy.md",
-    "Articles/Test particle/some direct calculation.md",
     "Note/Project Euler/solutions.md",
     "TODO.md",
     "Note/Project Euler/1-50/prob0001.md",
