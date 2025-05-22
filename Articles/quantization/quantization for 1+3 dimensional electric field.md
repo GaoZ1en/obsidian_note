@@ -98,7 +98,23 @@ $$
 here we use the Klein-Gordon inner product for $\displaystyle{\sigma _{k}}$. 
 
 ---
-path integral quantization. 
+path integral quantization. we start from the Hamiltonian (1.11)
+
+$$\tag{1.11}
+\begin{align}
+H & =\int _{\Sigma} \mathrm{d}^{3}x\left(\frac{1}{2}\delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}\right)
+\end{align}
+$$
+
+(suppose there is a derivation of path integral formalism)
+
+the generating functional is
+
+$$\tag{2.1}
+\begin{align}
+Z[J^{\mu}] & = \int \mathcal{D}A^{\mu}\exp\left(i \int \mathrm{d}^{4}x(\mathcal{L}[A_{\mu}]+A_{\mu}J^{\mu})\right)
+\end{align}
+$$
 
 
 
@@ -172,3 +188,5 @@ $$\tag{3.6}
 \vec{A}(x,t) & =\int \mathrm{d}^{3}\vec{k}\sum ^{2}_{s=1}\vec{e}^{s}_{k}\left(a_{ks}\sigma _{k}+a^{\dagger}_{ks}\sigma _{k}^{*}\right)
 \end{align}
 $$
+
+the following discussion is basically the same as above.
