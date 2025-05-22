@@ -80,6 +80,21 @@
               "icon": "lucide-file",
               "title": "path integral quantization for Proca field"
             }
+          },
+          {
+            "id": "c63535b43c627c95",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Drafts/project euler.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "project euler"
+            }
           }
         ]
       }
@@ -199,12 +214,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://pe-cn.github.io/28/",
-                "title": "Problem 28 | Project Euler | 欧拉计划",
+                "url": "https://pe-cn.github.io/29/",
+                "title": "Problem 29 | Project Euler | 欧拉计划",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Problem 28 | Project Euler | 欧拉计划"
+              "title": "Problem 29 | Project Euler | 欧拉计划"
             }
           },
           {
@@ -279,10 +294,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a653e3e8b065cbbf",
+  "active": "3c8d3e695c80d788",
   "lastOpenFiles": [
     "Note/Project Euler/solutions.md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+    "Drafts/project euler.md",
     "Articles/quantization/path integral quantization for Proca field.md",
     "TODO.md",
     "Articles/Test particle/some direct calculation.md",
@@ -309,7 +325,6 @@
     "Note/Project Euler/Problem 1.md",
     "Note/Project Euler",
     "Drafts/word cloud.md",
-    "Drafts/project euler.md",
     "Attachments/Pasted image 20250508202619.png",
     "Attachments/Pasted image 20250508170026.png",
     "Attachments/Pasted image 20250508165602.png",

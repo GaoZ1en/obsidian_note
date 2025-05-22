@@ -19,8 +19,7 @@ x = \frac{1}{2+\frac{1}{x}}
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
+$$\tag{.} \begin{align}
 a_{n} & = 4n^{2}-2n+1 \\
 b_{n}  & =4n^{2}+1 \\
 c_{n}  & =4n^{2}+2n+1 \\
@@ -54,3 +53,9 @@ $$\tag{.}
 \frac{2}{7} & = \frac{n}{d}\implies n=\frac{2d}{7}
 \end{align}
 $$
+
+
+1. $\displaystyle{(2n+1)^{2}=4n^{2}+4n+1}$
+2. $\displaystyle{(2n+1)^{2}-4n=4n^{2}+2n+1}$
+3. $\displaystyle{(2n+1)^{2}-8n=4n^{2}+1}$
+4. $\displaystyle{(2n+1)^{2}-12n=4n^{2}-2n+1}$

@@ -1,6 +1,17 @@
 {
   "conversations": [
     {
+      "id": "1747910359136",
+      "title": "New Conversation",
+      "messages": [],
+      "createdAt": 1747910359136,
+      "updatedAt": 1747910359136,
+      "model": {
+        "label": "Claude 3.7 Sonnet Thinking",
+        "value": "claude-3.7-sonnet-thought"
+      }
+    },
+    {
       "id": "1747829005655",
       "title": "how to do canonical quantizati...",
       "messages": [
@@ -252,5 +263,5 @@
       }
     }
   ],
-  "activeConversationId": "1747829005655"
+  "activeConversationId": "1747910359136"
 }
