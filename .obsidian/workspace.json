@@ -214,12 +214,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://pe-cn.github.io/39/",
-                "title": "Problem 39 | Project Euler | 欧拉计划",
+                "url": "https://pe-cn.github.io/40/",
+                "title": "Problem 40 | Project Euler | 欧拉计划",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Problem 39 | Project Euler | 欧拉计划"
+              "title": "Problem 40 | Project Euler | 欧拉计划"
             }
           },
           {
@@ -294,7 +294,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c8d3e695c80d788",
+  "active": "cde4122161d0efa0",
   "lastOpenFiles": [
     "Note/Project Euler/solutions.md",
     "Drafts/project euler.md",
