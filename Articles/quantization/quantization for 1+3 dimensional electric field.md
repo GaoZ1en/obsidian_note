@@ -121,13 +121,24 @@ $$\tag{3.1}
 \end{align}
 $$
 
-we have a primary constraint $\displaystyle{\varphi _{1}=\pi _{0}\approx_{0}}$.then the Hamiltonian is
+we have a primary constraint $\displaystyle{\varphi _{1}=\pi _{0}\approx_{0}}$. then the Hamiltonian is
 
 $$\tag{3.2}
 \begin{align}
 H & =\int \mathrm{d}^{3}x\left(\pi _{i}\dot{A}^{i}-\mathcal{L}\right) \\
  & =\int \mathrm{d}^{3}x\left(\pi _{i}\delta ^{ij}(\pi _{j}-\partial _{j}A^{0})-\frac{1}{2}\delta _{ij}\delta ^{ik}\delta ^{jl}\pi _{k}\pi _{l}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}\right) \\
- & =\int \mathrm{d}^{3}x\left(\frac{1}{2}\delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}-\delta ^{ij}\pi _{i}\partial _{j}A^{0}\right)
+ & =\int \mathrm{d}^{3}x\left(\frac{1}{2}\delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}-\delta ^{ij}\pi _{i}\partial _{j}A^{0}\right) \\
+ & \approx\int \mathrm{d}^{3}x\left(\frac{1}{2}\delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}\right)
 \end{align}
 $$
 
+in the final step we use ibp require $\displaystyle{\left\{\varphi _{1},H\right\}\approx0}$:
+
+$$\tag{3.3}
+\begin{align}
+\left\{\varphi _{1},H\right\} & =\left\{\pi _{0},H\right\} = -\frac{\delta H}{\delta A^{0}} \\
+ & =-\delta ^{ij}\partial _{i}\pi _{j}\approx0
+\end{align}
+$$
+
+then we have a secondary constraint $\displaystyle{\varphi _{2}=-\delta ^{ij}\partial _{i}\pi _{j}=0}$. the Poisson bracket between $\displaystyle{\varphi _{1}}$ and $\displaystyle{\varphi _{2}}$ is just 0, so this is system with first class constraints. 
