@@ -108,7 +108,7 @@ here we present how Bjorken and Drell do the canonical quantization. we still st
 $$\tag{0.1}
 \begin{align}
 S & =-\frac{1}{4}\int \mathrm{d}^{4}xF_{\mu \nu}F^{\mu \nu} \\
- & =\int \mathrm{d}^{4}x\left(\frac{1}{2}(\dot{A}^{i})^{2}+\frac{1}{2}(\dot{A}^{i}+\partial _{i}A^{0})^{2}-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}\right)
+ & =\int \mathrm{d}^{4}x\left(\frac{1}{2}(\dot{A}^{i}+\partial ^{i}A^{0})^{2}-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}\right)
 \end{align}
 $$
 
@@ -117,15 +117,17 @@ the canonical momentum is
 $$\tag{3.1}
 \begin{align}
 \pi _{0} & = \frac{\delta S}{\delta \dot{A}_{0}}=0,  & \pi _{i}=\frac{\delta S}{\delta \dot{A}^{i}}=\delta _{ij}\dot{A}^{j}+ \partial _{i}A^{0} \\
-\implies \dot{A}^{i} & =\delta ^{ij}(\pi _{j}-\partial _{i}A^{0})
+\implies \dot{A}^{i} & =\delta ^{ij}(\pi _{j}-\partial _{j}A^{0})
 \end{align}
 $$
 
-then the Hamiltonian is
+we have a primary constraint $\displaystyle{\varphi _{1}=\pi _{0}\approx_{0}}$.then the Hamiltonian is
 
 $$\tag{3.2}
 \begin{align}
 H & =\int \mathrm{d}^{3}x\left(\pi _{i}\dot{A}^{i}-\mathcal{L}\right) \\
- & =
+ & =\int \mathrm{d}^{3}x\left(\pi _{i}\delta ^{ij}(\pi _{j}-\partial _{j}A^{0})-\frac{1}{2}\delta _{ij}\delta ^{ik}\delta ^{jl}\pi _{k}\pi _{l}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}\right) \\
+ & =\int \mathrm{d}^{3}x\left(\frac{1}{2}\delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}-\delta ^{ij}\pi _{i}\partial _{j}A^{0}\right)
 \end{align}
 $$
+
