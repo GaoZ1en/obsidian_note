@@ -39,12 +39,16 @@
                     "type": "integrated",
                     "useWin32Conhost": true
                   },
-                  "serial": null
+                  "serial": {
+                    "columns": 157,
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m08:02:42 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t workspace\u001b[1B\u001b[43D",
+                    "rows": 70
+                  }
                 }
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: main"
+              "title": "Terminal: KoishiLaptop ❐ workspace ● 1 editor"
             }
           },
           {
@@ -162,13 +166,13 @@
                   },
                   "serial": {
                     "columns": 63,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m08:02:42 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session \r\n-d  -t  \r\n\u001b[33m08:02:42 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t \r\n-d         side-4     -t         workspace  \r\n\u001b[33m08:02:42 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t side-4 \u001b[1B\u001b[41D",
                     "rows": 36
                   }
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 bash"
+              "title": "Terminal: KoishiLaptop ❐ side-4 ● 1 bash"
             }
           }
         ],
@@ -210,12 +214,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://pe-cn.github.io/34/",
-                "title": "Problem 34 | Project Euler | 欧拉计划",
+                "url": "https://pe-cn.github.io/35/",
+                "title": "Problem 35 | Project Euler | 欧拉计划",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Problem 34 | Project Euler | 欧拉计划"
+              "title": "Problem 35 | Project Euler | 欧拉计划"
             }
           },
           {
