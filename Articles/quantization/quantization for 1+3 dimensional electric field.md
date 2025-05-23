@@ -98,25 +98,46 @@ $$
 here we use the Klein-Gordon inner product for $\displaystyle{\sigma _{k}}$. 
 
 ---
-path integral quantization. we start from the Hamiltonian (1.11)
-
-$$\tag{1.11}
-\begin{align}
-H & =\int _{\Sigma} \mathrm{d}^{3}x\left(\frac{1}{2}\delta ^{ij}\pi _{i}\pi _{j}+\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}\right)
-\end{align}
-$$
-
-(suppose there is a derivation of path integral formalism)
-
-the generating functional is
+path integral quantization. here we use the Faddeev-Popov formalism. the generating functional is
 
 $$\tag{2.1}
 \begin{align}
-Z[J^{\mu}] & = \int \mathcal{D}A^{\mu}\exp\left(i \int \mathrm{d}^{4}x(\mathcal{L}[A_{\mu}]+A_{\mu}J^{\mu})\right)
+Z[J^{\mu}] & =\int \mathcal{D}A_{\mu} \exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+J^{\mu}A_{\mu}\right)\right)
 \end{align}
 $$
 
+however the path integral is not well defined due to the gauge symmetry. choose Lorentz gauge $\displaystyle{\partial _{\mu}A^{\mu}=0}$, we have the Faddeev-Popov determinant
 
+$$\tag{2.2}
+\begin{align}
+1=\Delta _{F}[A_{\mu}] \int \mathcal{D}\alpha \delta(\partial _{\mu}A^{\mu,\alpha})
+\end{align}
+$$
+
+where $\displaystyle{A^{\mu,\alpha}=A^{\mu}+\partial ^{\mu}\alpha}$ and the Faddeev-Popov determinant is defined as
+
+$$\tag{2.3}
+\begin{align}
+\Delta _{F}[A_{\mu}] & =\det \left( \frac{\delta(\partial _{\mu}A^{\mu}_{\alpha})}{\delta \alpha} \right)_{\alpha=0}=\det(\partial ^{2})
+\end{align}
+$$
+
+make a second gauge transformation in (2.2), we have
+
+$$\tag{2.4}
+\begin{align}
+1=\Delta _{F}[A_{\mu}^{\alpha'}]\int \mathcal{D}\alpha'\delta(\partial _{\mu}A^{\mu,\alpha \alpha'})
+\end{align}
+$$
+
+gauge invariance requires that $\displaystyle{\int \mathcal{D}\alpha'\delta(\partial _{\mu}A^{\mu,\alpha \alpha'})=\int \mathcal{D}\alpha \delta(\partial _{\mu}A^{\mu,\alpha})}$, so the Faddeev-Popov determinant is independent of the gauge choice. insert (2.2) into (2.1), we have
+
+$$\tag{2.5}
+\begin{align}
+Z[J^{\mu}] & =\int \mathcal{D}\alpha \mathcal{D}A^{\mu}\Delta _{F}[A_{\mu}]\delta(\partial _{\mu}A^{\mu,\alpha})\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+J^{\mu}A_{\mu}\right)\right) \\
+ & =\int \mathcal{D}A^{\mu}\Delta _{F}[A_{\mu}]\delta(\partial _{\mu}A^{\mu})\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+J^{\mu}A_{\mu}\right)\right)
+\end{align}
+$$
 
 ---
 here we present how Bjorken and Drell do the canonical quantization. we still start from the action
