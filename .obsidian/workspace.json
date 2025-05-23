@@ -122,7 +122,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -310,12 +310,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "69163c94ac4f82f3",
+  "active": "b1ee31c25d545bff",
   "lastOpenFiles": [
+    "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Drafts/path integral quantization for first and second class constraints.md",
     "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/path integral quantization for Proca field.md",
-    "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Drafts/project euler.md",
     "Note/Project Euler/solutions.md",
