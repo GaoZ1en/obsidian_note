@@ -106,19 +106,19 @@ Z[J^{\mu}] & =\int \mathcal{D}A_{\mu} \exp\left(i \int \mathrm{d}^{4}x\left(-\fr
 \end{align}
 $$
 
-however the path integral is not well defined due to the gauge symmetry. choose Lorentz gauge $\displaystyle{\partial _{\mu}A^{\mu}=0}$, we have the Faddeev-Popov determinant
+however the path integral is not well defined due to the gauge symmetry. choose gauge $\displaystyle{G[A^{\mu}]=0}$, we have the Faddeev-Popov determinant
 
 $$\tag{2.2}
 \begin{align}
-1=\Delta _{F}[A_{\mu}] \int \mathcal{D}\alpha \delta(\partial _{\mu}A^{\mu,\alpha})
+1=\Delta _{F}[A_{\mu}] \int \mathcal{D}\alpha \delta(G[A^{\alpha}_{\mu}])
 \end{align}
 $$
 
-where $\displaystyle{A^{\mu,\alpha}=A^{\mu}+\partial ^{\mu}\alpha}$ and the Faddeev-Popov determinant is defined as
+where $\displaystyle{A^{\alpha}_{\mu}=A_{\mu}+\partial _{\mu}\alpha}$ and the Faddeev-Popov determinant is defined as
 
 $$\tag{2.3}
 \begin{align}
-\Delta _{F}[A_{\mu}] & =\det \left( \frac{\delta(\partial _{\mu}A^{\mu}_{\alpha})}{\delta \alpha} \right)_{\alpha=0}=\det(\partial ^{2})
+\Delta _{F}[A_{\mu}] & =\det \left( \frac{\delta(G[A_{\mu}^{\alpha}])}{\delta \alpha} \right)_{\alpha=0}
 \end{align}
 $$
 
@@ -126,19 +126,68 @@ make a second gauge transformation in (2.2), we have
 
 $$\tag{2.4}
 \begin{align}
-1=\Delta _{F}[A_{\mu}^{\alpha'}]\int \mathcal{D}\alpha'\delta(\partial _{\mu}A^{\mu,\alpha \alpha'})
+1=\Delta _{F}[A_{\mu}^{\alpha'}]\int \mathcal{D}\alpha'\delta(G[A^{\alpha \alpha'}_{\mu}])
 \end{align}
 $$
 
-gauge invariance requires that $\displaystyle{\int \mathcal{D}\alpha'\delta(\partial _{\mu}A^{\mu,\alpha \alpha'})=\int \mathcal{D}\alpha \delta(\partial _{\mu}A^{\mu,\alpha})}$, so the Faddeev-Popov determinant is independent of the gauge choice. insert (2.2) into (2.1), we have
+gauge invariance requires that $\displaystyle{\int \mathcal{D}\alpha'\delta(G[A^{\alpha \alpha'}_{\mu}])=\int \mathcal{D}\alpha \delta(G[A^{\alpha}_{\mu}])}$, so the Faddeev-Popov determinant is independent of the gauge choice. insert (2.2) into (2.1), we have
 
 $$\tag{2.5}
 \begin{align}
-Z[J^{\mu}] & =\int \mathcal{D}\alpha \mathcal{D}A^{\mu}\Delta _{F}[A_{\mu}]\delta(\partial _{\mu}A^{\mu,\alpha})\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+J^{\mu}A_{\mu}\right)\right) \\
- & =\int \mathcal{D}A^{\mu}\Delta _{F}[A_{\mu}]\delta(\partial _{\mu}A^{\mu})\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+J^{\mu}A_{\mu}\right)\right)
+Z[J^{\mu}] & =\int \mathcal{D}\alpha \mathcal{D}A_{\mu}\Delta _{F}[A_{\mu}]\delta(G[A_{\mu}^{\alpha}])\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+J^{\mu}A_{\mu}\right)\right) \\
+ & =\int \mathcal{D}A_{\mu}\Delta _{F}[A_{\mu}]\delta(G[A_{\mu}])\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+J^{\mu}A_{\mu}\right)\right)
 \end{align}
 $$
 
+write $\displaystyle{G[A_{\mu}]=\Omega[A_{\mu}]-\omega}$, then
+
+$$\tag{2.6}
+\begin{align}
+Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\mathcal{D}\omega \Delta _{F}[A_{\mu}] \delta(\Omega[A_{\mu}]-\omega)\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+J^{\mu}A_{\mu}\right)\right)\exp\left(-i \int \mathrm{d}^{4}x \frac{\omega ^{2}}{2\xi}\right) \\
+ & =\int \mathcal{D}A_{\mu}\Delta _{F}[A_{\mu}]\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}\Omega ^{2}+J^{\mu}A_{\mu}\right)\right)
+\end{align}
+$$
+
+and the Faddeev-Popov determinant can be written as
+
+$$\tag{2.7}
+\begin{align}
+\Delta_F[A] = \det\left(\frac{\delta (G[A^{\alpha}_{\mu}])}{\delta \alpha}\right)_{\alpha} = \int \mathcal{D}\bar{c}\mathcal{D}c \exp\left(-i\int d^4x\mathrm{d}^{4}y \bar{c}(x) \mathcal{M}(x,y) c(y)\right)
+\end{align}
+$$
+
+where the Faddeev-Popov operator $\displaystyle{\mathcal{M}}$ can be derived as
+
+$$\tag{2.8}
+\begin{align}
+\mathcal{M}(x,y) & = \frac{\delta G[A^{\alpha}_{\mu}](x)}{\delta \alpha(y)} \\
+ & =\int \mathrm{d}z \frac{\delta \Omega(x)}{\delta A^{\alpha}_{\mu}(z)}  \frac{\delta A^{\alpha}_{\mu}(z)}{\delta \alpha(y)} \\
+ & =\int \mathrm{d}z \frac{\delta \Omega(x)}{\delta A^{\alpha}_{\mu}(z)} \partial _{\mu}\delta ^{4}(z-y)
+\end{align}
+$$
+
+so the entire path integral can be written as
+
+$$\tag{2.9}
+\begin{align}
+Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\mathcal{D}\bar{c}\mathcal{D}c \exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}\Omega ^{2}+J^{\mu}A_{\mu}\right)-i\int \mathrm{d}^{4}x\mathrm{d}^{4}y \bar{c}(x)M(x,y)c(y)\right)
+\end{align}
+$$
+
+if we choose Lorentz gauge, we have
+
+$$\tag{2.10}
+\begin{align}
+Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\mathcal{D} \bar{c}\mathcal{D}c\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{\mu}A^{\mu})^{2}+J^{\mu}A_{\mu}\right)-i \int \mathrm{d}^{4}\right)
+\end{align}
+$$
+
+
+$$\tag{.}
+\begin{align}
+M(x,y) & =\int \mathrm{d}z \frac{\delta(\partial _{\rho}A^{\rho,\alpha}(x))}{\delta A^{\alpha},j}
+\end{align}
+$$
 ---
 here we present how Bjorken and Drell do the canonical quantization. we still start from the action
 
