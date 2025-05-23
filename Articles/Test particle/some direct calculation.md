@@ -31,7 +31,7 @@ first consider the reparametrization symmetry:
 
 $$\tag{1.3}
 \begin{align}
-X_{\varepsilon} & =-\int \mathrm{d}\tau \varepsilon \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\delta}{\delta x^{\mu}}
+X_{n} & =-\int \mathrm{d}\tau \tau ^{n} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\delta}{\delta x^{\mu}}
 \end{align}
 $$
 
@@ -39,6 +39,13 @@ act on the action, we have
 
 $$\tag{1.4}
 \begin{align}
-X_{\varepsilon}\cdot \delta S & =-m \int \mathrm{d}\tau \frac{ -2g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}(X_{\varepsilon}\cdot \delta x^{\nu})}{\mathrm{d}\tau}-\partial _{\rho}g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}(X_{\varepsilon}\cdot \delta x^{\rho}) }{\sqrt{ -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} }}+q\int \mathrm{d}\tau
+X_{\varepsilon}\cdot \delta S & =-m \int \mathrm{d}\tau \frac{ -2g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}(X_{\varepsilon}\cdot \delta x^{\nu})}{\mathrm{d}\tau}-\partial _{\rho}g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}(X_{\varepsilon}\cdot \delta x^{\rho}) }{\sqrt{ -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} }}+q\int \mathrm{d}\tau A_{\mu} \frac{\mathrm{d}(X_{\varepsilon}\cdot \delta x^{\mu})}{\mathrm{d}\tau}+\partial _{\nu}A_{\mu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau}(X_{\varepsilon}\cdot \delta x^{\nu}) \\
+ & =-m\int \mathrm{d}\tau  \frac{\left( 2g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}}{\mathrm{d}\tau}\left(\varepsilon \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \right)+\partial _{\rho}g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \varepsilon \right)}{\sqrt{ -g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} }} +q\int \mathrm{d}\tau A_{\mu} \frac{\mathrm{d}}{\mathrm{d}\tau}\left(\varepsilon \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \right)+\varepsilon \partial _{\nu}A_{\mu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+f(\tau)
 \end{align}
 $$
