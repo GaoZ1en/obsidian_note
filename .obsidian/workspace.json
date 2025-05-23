@@ -97,17 +97,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Drafts/j.md",
+                "file": "Articles/quantization/path integral quantization for constrained system.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "j"
+              "title": "path integral quantization for constrained system"
+            }
+          },
+          {
+            "id": "a163d1f0386b6278",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Drafts/path integral quantization for first and second class constraints.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "path integral quantization for first and second class constraints"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -294,11 +309,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "66d5c821fe27ead4",
+  "active": "c75300afee03a7a5",
   "lastOpenFiles": [
+    "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/path integral quantization for Proca field.md",
-    "Drafts/j.md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+    "Drafts/path integral quantization for first and second class constraints.md",
     "Drafts/project euler.md",
     "Note/Project Euler/solutions.md",
     "TODO.md",
@@ -306,12 +323,10 @@
     "Lecture/2025 spring/python for general purpose/homework 9.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
-    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
     "Articles/quantization/canonical quantization of fermionic systems.md",
     "Articles/Test particle/read note for black hole entropy.md",
     "Note/Project Euler/1-50/prob0001.md",
-    "Articles/quantization/path integral quantization for constrained system.md",
     "Group meeting/week 21.md",
     "Lecture/Hongbao Zhang/saturnday/week 12.md",
     "Lecture/Hongbao Zhang/classical and quantum mechanics/week 9.md",

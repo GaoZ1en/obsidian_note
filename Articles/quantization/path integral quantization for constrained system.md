@@ -346,3 +346,9 @@ $$\tag{6.5}
 $$
 
 and the extra term is exactly the difference between canonical formalism and the path integral formalism. we will extend this discussion we will extend this discussion to the Proca field.
+
+---
+
+$$Z = \int \mathcal{D}p\mathcal{D}q \, \prod_a \delta(\chi_a(p,q)) \, \text{det}^{1/2}(\{\chi_a, \chi_b\}) \, \exp\left(i\int dt (p\dot{q} - H)\right)$$
+
+The $\text{det}^{1/2}(\{\chi_a, \chi_b\})$ factor ensures the correct integration measure on the reduced phase space. this is the path integral quantization of a system with second class constraints.
