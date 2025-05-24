@@ -63,46 +63,24 @@ $$\tag{.}
 (D^{-1})^{\nu \rho}(k) & =i\begin{pmatrix}
 \vec{k}^{2} & k_{0}k _{i} \\
 k _{0}k _{i} & \left( 1-\frac{1}{\xi} \right)k _{i}k _{j}-\delta _{ij}(k_{0}^{2}-\vec{k}^{2})
-\end{pmatrix}^{-1}
+\end{pmatrix}^{-1} \\
+ & =\begin{pmatrix}
+
+\end{pmatrix}
 \end{align}
 $$
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-the equation of motion for $\displaystyle{A^{0}}$ is
 
 $$\tag{.}
 \begin{align}
--\frac{1}{2}A^{0}\partial ^{2}A^{0}-\frac{1}{2}A^{0}\partial _{0}\partial _{i}A^{i}
+\begin{pmatrix}
+k_{1}^{2}-(k_{0}^{2}-\vec{k}^{2}) & k_{1}k_{2} & k_{1}k_{3}\\
+k_{1}k_{2} & k_{2}^{2}-(k_{0}^{2}-\vec{k}^{2}) & k_{2}k_{3} \\
+k_{1}k_{3} & k_{2}k_{3} & k_{3}^{2}-(k_{0}^{2}-\vec{k}^{2})
+\end{pmatrix}-\frac{k_{0}^{2}}{\vec{k}^{2}}\begin{pmatrix}
+k_{1}
+\end{pmatrix} \\
+ -k^{2}\left( \delta _{ij}-\frac{k _{i}k _{j}}{\vec{k}^{2}} \right)
 \end{align}
 $$
 
-
-
-$$\tag{.}
-\begin{align}
-\vec{\nabla}^{2}A^{0} & =\partial _{i}\dot{A}^{i} \\
-\implies A^{0}(x) & = \int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{i}\dot{A}^{i} \\ 
-G(\vec{x},\vec{y}) & =-\int \frac{\mathrm{d}^{3}\vec{k}}{\vec{k}^{2}}e^{-i\vec{k}\cdot(\vec{x}-\vec{y})} \\
- & =-\frac{1}{4\pi} \frac{1}{|\vec{x}-\vec{y}|}
-\end{align}
-$$
+here we choose $\displaystyle{\xi=\infty}$, 
