@@ -257,3 +257,38 @@ $$\tag{3.3}
 $$
 
 for a slightly non-extremal blackhole, we need to consider second order variation.
+
+---
+now we consider Einstein-Yang-Mills theory with action
+
+$$\tag{4.1}
+\begin{align}
+S & =\frac{1}{16\pi G}\int \varepsilon R-\frac{1}{4\pi}\int \varepsilon F_{\mu \nu}^{\Lambda}F^{\mu \nu}_{\Lambda}
+\end{align}
+$$
+
+where
+
+$$\tag{4.2}
+\begin{align}
+F_{\mu \nu}^{\Lambda} & =\nabla _{\mu}A^{\Lambda}_{\nu}-\nabla _{\nu}A^{\Lambda}_{\mu}+c^{\Lambda}_{\Gamma \Delta}A^{\Gamma}_{\mu}A^{\Delta}_{\nu}
+\end{align}
+$$
+
+and $\displaystyle{c^{\Lambda}_{\Gamma \Delta}}$ is the structure tensor for $\displaystyle{\mathrm{SU}(2)}$ group, and Lie algebra indices are raised and lowered by the Killing metric $\displaystyle{g_{\Gamma\Sigma}=-\frac{1}{2}c^{\Lambda}_{~\Gamma \Delta}c^{\Delta}_{~\Sigma \Lambda}}$. similar to the previous case, we have
+
+$$\tag{4.3}
+\begin{align}
+\theta _{\mathrm{YM}} & =-\varepsilon _{\partial M}n _{\mu}F^{\mu \nu}_{\Lambda}\delta A_{\nu}^{\Lambda} \\
+\mathbf{Q}_{\xi,\mathrm{YM}} & =-\frac{1}{2}F_{\Lambda}^{\mu \nu}A^{\Lambda}_{\rho}\xi ^{\rho}\cdot \frac{1}{2!}\varepsilon _{\mu \nu \mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}} \\
+\tilde{\mathbf{C}}_{\xi,\mathrm{YM}} & =\varepsilon _{M}E^{\nu}_{\Lambda,\mathrm{YM}}A_{\nu}^{\Lambda}
+\end{align}
+$$
+
+and
+
+$$\tag{.}
+\begin{align}
+\int _{B}(\delta \mathbf{Q}_{\xi,\mathrm{YM}}-\xi \cdot \Theta _{\mathrm{YM}}) & = 
+\end{align}
+$$

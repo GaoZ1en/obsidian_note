@@ -41,3 +41,21 @@ $$\tag{1.4}
 $$
 
 by boundary condition $\displaystyle{A^{0}|_{\Gamma}=0}$, 
+
+---
+$$\tag{2.1}
+\begin{align}
+Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{i}A^{i})^{2}+J^{\mu}A_{\mu} \right)\right)
+\end{align}
+$$
+
+
+$$\tag{.}
+\begin{align}
+-\frac{1}{2}A^{\mu}(\partial _{\mu}\partial _{\nu}-\eta _{\mu \nu}\partial ^{2})A^{\nu}+\frac{1}{2\xi}A^{i}\partial _{i}\partial _{j}A^{j}=-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu} \\
+D_{\mu \nu} & =\begin{pmatrix}
+\vec{\nabla}^{2} & \partial _{0}\partial _{i} \\
+\partial _{0}\partial _{i} & \left( 1-\frac{1}{\xi} \right)\partial _{i}\partial _{j}-\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})
+\end{pmatrix}
+\end{align}
+$$
