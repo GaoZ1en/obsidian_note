@@ -121,7 +121,8 @@
               "title": "read note for black hole entropy"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -309,7 +310,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c8d3e695c80d788",
+  "active": "c75300afee03a7a5",
   "lastOpenFiles": [
     "Drafts/Untitled.md",
     "Articles/quantization/path integral quantization for Proca field.md",
