@@ -125,7 +125,7 @@ $$\tag{1.13}
 \end{align}
 $$
 
-where $\displaystyle{M}$ is the ADM mass and $\displaystyle{J}$ is the ADM angular momentum (in some former note we have verified this statement). since $\displaystyle{\xi ^{a}}$ vanishes on the horizon, we have
+where $\displaystyle{M}$ is the ADM mass (in some former note we have verified this statement) and $\displaystyle{J}$ is the ADM angular momentum. since $\displaystyle{\xi ^{a}}$ vanishes on the horizon, we have
 
 $$\tag{1.14}
 \begin{align}
