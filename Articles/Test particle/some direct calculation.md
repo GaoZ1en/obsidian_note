@@ -45,4 +45,3 @@ X_{\varepsilon}\cdot \delta S & =-m \int \mathrm{d}\tau \frac{ -2g_{\mu \nu} \fr
  & =
 \end{align}
 $$
-
