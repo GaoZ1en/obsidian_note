@@ -201,7 +201,7 @@
                     "useWin32Conhost": false
                   },
                   "serial": {
-                    "columns": 63,
+                    "columns": 56,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
                     "rows": 36
                   }
@@ -211,7 +211,8 @@
               "title": "Terminal: KoishiLaptop ❐ 0 ● 1 bash"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "56384ae1a9e66525",
@@ -322,8 +323,8 @@
   },
   "active": "9884ce76be4ee9c7",
   "lastOpenFiles": [
-    "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Articles/quantization/temporal gauge and Column gauge.md",
+    "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Articles/Test particle/some direct calculation.md",
     "Articles/Noether charge/Diffeomorphism of some quantities.md",

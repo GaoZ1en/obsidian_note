@@ -48,6 +48,10 @@ the equation of motion for
 
 $$\tag{.}
 \begin{align}
-\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\partial _{i}A^{0}+\frac{1}{2}\partial _{i}A^{0}
+\vec{\nabla}^{2}A^{0}=+J_{0}+\partial _{i}\dot{A}^{i} \\
+\vec{\nabla}^{2}G(\vec{x},\vec{y}) & =i\delta ^{3}(\vec{x}-\vec{y}) \\
+G(\vec{x},\vec{y}) & =-i\int \frac{\mathrm{d}^{3}\vec{k}}{\vec{k}^{2}}e^{-i\vec{k}\cdot(\vec{x}-\vec{y})} \\
+ & =-i \int _{0}^{\infty}\int _{0}^{\pi}\int _{0}^{2\pi}\sin \theta \mathrm{d}k\mathrm{d}\theta \mathrm{d}\varphi \exp\left(-ik|\vec{x}-\vec{y}|\cos \theta\right) \\
+ & =
 \end{align}
 $$
