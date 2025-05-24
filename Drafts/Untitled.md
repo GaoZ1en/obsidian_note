@@ -26,9 +26,18 @@ $$
 
 we need another gauge transformation to make $\displaystyle{\vec{\nabla}\cdot \vec{A}=0}$ in a time slice. and by time evolution, we generally have 
 
-$$\tag{.}
+$$\tag{1.3}
 \begin{align}
-
+\vec{\nabla}\cdot \vec{A} & =0
 \end{align}
 $$
 
+if we impose Column gauge $\displaystyle{\vec{\nabla}\cdot \vec{A}=0}$, then the equation of motion for $\displaystyle{A^{0}}$ gives
+
+$$\tag{1.4}
+\begin{align}
+\vec{\nabla}^{2}A^{0}=0
+\end{align}
+$$
+
+by boundary condition $\displaystyle{A^{0}|_{\Gamma}=0}$, 

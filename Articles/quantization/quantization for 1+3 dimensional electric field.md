@@ -17,9 +17,9 @@ make a variation
 
 $$\tag{1.2}
 \begin{align}
-\delta S & =\int \mathrm{d}^{4}x\left(\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})A^{i}\delta A^{j}\right)+\int _{\Sigma _{f}-\Sigma _{i}} \mathrm{d}^{3}x\delta _{ij}\dot{A}^{i}\delta A^{j} \\
- & =\int \mathrm{d}^{4}xE_{j}\delta A^{j}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
-E_{j} & =\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})A^{i}-\partial _{i}\partial _{j}A^{j} \\
+\delta S & =\int \mathrm{d}^{4}xE_{\nu}\delta A^{\nu}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
+E_{0} & =\vec{\nabla}^{2}A_{0}-\partial _{0}(\vec{\nabla}\cdot \vec{A}) \\
+E_{i} & =\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})A^{j}-\partial _{i}\partial _{j}A^{j} \\
 \theta & =\int _{\Sigma}\mathrm{d}^{3}x\delta _{ij}\dot{A}^{i}\delta A^{j}
 \end{align}
 $$
@@ -32,7 +32,7 @@ $$\tag{1.3}
 \end{align}
 $$
 
-a general solution for the equation of motion $\displaystyle{E_{j}=0}$ is
+if we impose Column gauge $\displaystyle{\vec{\nabla}\cdot \vec{A}=0}$, the equation of motion for $\displaystyle{A^{0}}$ gives $\displaystyle{A^{0}}$ vanishes everywhere. a general solution for the equation of motion $\displaystyle{E_{j}=0}$ is
 
 $$\tag{1.4}
 \begin{align}
@@ -205,13 +205,14 @@ $$\tag{2.12}
 \end{align}
 $$
 
-if we choose temporal gauge $\displaystyle{A_{0}=0}$,
+if we choose Column gauge $\displaystyle{\vec{\nabla}\cdot \vec{A}=0}$,
 
-$$\tag{.}
+$$\tag{2.10}
 \begin{align}
-
+Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{i}A^{i})^{2}+J^{\mu}A_{\mu} \right)\right)
 \end{align}
 $$
+
 
 ---
 here we present how Bjorken and Drell do the canonical quantization. we still start from the action
