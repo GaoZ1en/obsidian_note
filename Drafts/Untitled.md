@@ -24,5 +24,11 @@ $$\tag{1.2}
 \end{align}
 $$
 
-we need another gauge transformation to make $\displaystyle{\vec{\nabla}\cdot \vec{A}}$
+we need another gauge transformation to make $\displaystyle{\vec{\nabla}\cdot \vec{A}=0}$ in a time slice. and by time evolution, we generally have 
+
+$$\tag{.}
+\begin{align}
+
+\end{align}
+$$
 
