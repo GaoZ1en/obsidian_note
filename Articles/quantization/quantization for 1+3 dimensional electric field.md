@@ -191,16 +191,9 @@ where $\displaystyle{(D^{-1})_{\mu \nu}(x,y)}$ satisfies
 $$\tag{2.11}
 \begin{align}
 i\left( \left( 1-\frac{1}{\xi} \right)\partial ^{\mu}\partial ^{\nu}-\eta ^{\mu \nu}\partial ^{2} \right)_{x}(D^{-1})_{\nu \rho}(x,y) & =\delta ^{\mu}_{\rho}\delta ^{4}(x-x') \\
-(D^{-1})_{\mu \nu}(x,y) & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon}e^{-ik\cdot(x-y)}\left(\eta _{\mu \nu}+\left(1-\frac{1}{\xi}\right) \frac{k _{\mu}k _{\nu}}{k^{2}}\right)
+(D^{-1})_{\mu \nu}(x,y) & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon}e^{-ik\cdot(x-y)}\left(\eta _{\mu \nu}-\left(1-\frac{1}{\xi}\right) \frac{k _{\mu}k _{\nu}}{k^{2}}\right)
 \end{align}
 $$
-
-$$\tag{.}
-\begin{align}
-(D^{-1})_{\nu \rho}(x,y) & =i\delta ^{\mu}_{\rho}\left( \left( 1-\frac{1}{\xi} \right)k^{\mu}k^{\nu}-\eta ^{\mu \nu}k^{2} \right)^{-1} \\
-\end{align}
-$$
-
 
 so we have the following correlation functions
 
@@ -208,7 +201,7 @@ $$\tag{2.12}
 \begin{align}
 \braket{ A_{\mu}(x)A_{\nu}(y) }  & = \frac{\delta ^{2}Z[J]}{i^{2}\delta J^{\mu}(x)\delta J^{\nu}(y)}\Big|_{J=0} \\
  & =(D^{-1})_{\mu \nu}(x,y) \\
- & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon}e^{-ik\cdot(x-y)}\left(\eta _{\mu \nu}+\left(1-\frac{1}{\xi}\right) \frac{k _{\mu}k _{\nu}}{k^{2}}\right)
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon}e^{-ik\cdot(x-y)}\left(\eta _{\mu \nu}-\left(1-\frac{1}{\xi}\right) \frac{k _{\mu}k _{\nu}}{k^{2}}\right)
 \end{align}
 $$
 
