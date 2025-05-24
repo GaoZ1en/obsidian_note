@@ -202,7 +202,7 @@ $$\tag{2.12}
 \begin{align}
 \braket{ A_{\mu}(x)A_{\nu}(y) }  & = \frac{\delta ^{2}Z[J]}{i^{2}\delta J^{\mu}(x)\delta J^{\nu}(y)}\Big|_{J=0} \\
  & =(D^{-1})_{\mu \nu}(x,y) \\
- & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon}e^{-ik\cdot(x-y)}\left(\eta _{\mu \nu}-\left(1-\frac{1}{\xi}\right) \frac{k _{\mu}k _{\nu}}{k^{2}}\right)
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon}e^{-ik\cdot(x-y)}\left(\eta _{\mu \nu}-\left(1-\xi\right) \frac{k _{\mu}k _{\nu}}{k^{2}}\right)
 \end{align}
 $$
 
@@ -210,37 +210,24 @@ if we choose Column gauge $\displaystyle{\vec{\nabla}\cdot \vec{A}=0}$,
 
 $$\tag{2.10}
 \begin{align}
-Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{i}A^{i})^{2}+J^{\mu}A_{\mu} \right)\right)
-\end{align}
-$$
-
-it is happy to choose $\displaystyle{\xi=\infty}$, then the path integral becomes
-
-$$\tag{2.11}
-\begin{align}
-Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{2}A^{\mu}(\partial _{\mu}\partial _{\nu}-\eta _{\mu \nu}\partial ^{2})A^{\nu}+J_{\mu}A^{\mu}\right)\right) \\
+Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{i}A^{i})^{2}+J^{\mu}A_{\mu} \right)\right) \\
+ & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu}+J_{\mu}A^{\mu}\right)\right) \\
  & =\exp\left(-\frac{1}{2}\int \mathrm{d}^{4}x\mathrm{d}^{4}yJ_{\mu}(x)(D^{-1})^{\mu \nu}(x,y)J_{\nu}(y)\right)
 \end{align}
 $$
 
-where $\displaystyle{(D^{-1})^{\mu \nu}(x,y)}$ satisfies
+where $\displaystyle{D_{\mu \nu}}$ and $\displaystyle{(D^{-1})^{\mu \nu}(x,y)}$ satisfies
 
-$$\tag{2.12}
+$$\tag{2.11}
 \begin{align}
-i(\partial _{\mu}\partial _{\nu}-\eta _{\mu \nu}\partial ^{2})(D^{-1})^{\nu \rho}(x,y) & =\delta ^{\rho}_{\mu}\delta ^{4}(x-y) \\
-\implies(D^{-1})^{\mu \nu}(x,y) & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon} e^{-ik\cdot(x-y)}\left(\eta _{\mu \nu}- \frac{k _{\mu}k _{\nu}}{k^{2}}\right)
+D_{\mu \nu} & =\begin{pmatrix}
+\vec{\nabla}^{2} & \partial _{0}\partial _{i} \\
+\partial _{0}\partial _{i} & \left( 1-\frac{1}{\xi} \right)\partial _{i}\partial _{j}-\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})
+\end{pmatrix} \\
+
 \end{align}
 $$
 
-and we have
-
-$$\tag{2.13}
-\begin{align}
-\braket{ A^{\mu}(x)A^{\nu}(y) } & = \frac{\delta ^{2}Z[J]}{i^{2}\delta J_{\mu}(x)\delta J_{\nu}(y)}\Big|_{J=0} \\
- & =(D^{-1})^{\mu \nu}(x,y) \\
- & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon} e^{-ik\cdot(x-y)}\left(\eta ^{\mu \nu}- \frac{k ^{\mu}k ^{\nu}}{k^{2}}\right)
-\end{align}
-$$
 
 ---
 here we present how Bjorken and Drell do the canonical quantization. we still start from the action
