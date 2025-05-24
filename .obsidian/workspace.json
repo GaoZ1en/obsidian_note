@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 183,
+                    "columns": 154,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m08:53:16 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t workspace \u001b[1B\u001b[44D",
                     "rows": 70
                   }
@@ -77,36 +77,6 @@
             }
           },
           {
-            "id": "ddd8d9121105e183",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/Test particle/some direct calculation.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "some direct calculation"
-            }
-          },
-          {
-            "id": "d98c338ee309e1ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "canonical quantization of Proca field in CPS formalism (formal calculation)"
-            }
-          },
-          {
             "id": "9884ce76be4ee9c7",
             "type": "leaf",
             "state": {
@@ -125,14 +95,19 @@
             "id": "884f224aa2c8f4f5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Articles/quantization/path integral quantization for Proca field.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "path integral quantization for Proca field"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -323,14 +298,15 @@
   },
   "active": "9884ce76be4ee9c7",
   "lastOpenFiles": [
+    "Articles/quantization/path integral quantization for Proca field.md",
     "Articles/quantization/temporal gauge and Column gauge.md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+    "TODO.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Articles/Test particle/some direct calculation.md",
     "Articles/Noether charge/Diffeomorphism of some quantities.md",
     "Diffeomorphism Invariance.md",
     "Drafts/Untitled.md",
-    "Articles/quantization/path integral quantization for Proca field.md",
     "Articles/Test particle/read note for black hole entropy.md",
     "Articles/Test particle/Untitled.md",
     "Articles/Topologically massive gravity/finite spacetime region.md",
@@ -341,7 +317,6 @@
     "Articles/quantization/path integral quantization for constrained system.md",
     "Drafts/project euler.md",
     "Note/Project Euler/solutions.md",
-    "TODO.md",
     "Lecture/2025 spring/python for general purpose/homework 9.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",

@@ -7,6 +7,8 @@
 3. [Henneaux, Teitelboim] Quantization of gauge systems.pdf
 4. 黑洞热力学
 	1. [Hartman] lectures
+5. Project Euler
+	1. rust
 
 ## career
 
@@ -15,8 +17,5 @@
 3. 2x(2-3) postdoc, search for faculty position
 
 go outside...
-
-## thesis
-写slide
 
 Bousso
