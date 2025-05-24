@@ -57,9 +57,30 @@ D_{\mu \nu} & =\begin{pmatrix}
 \vec{\nabla}^{2} & \partial _{0}\partial _{i} \\
 \partial _{0}\partial _{i} & \left( 1-\frac{1}{\xi} \right)\partial _{i}\partial _{j}-\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})
 \end{pmatrix} \\
--i\begin{pmatrix}
+(D^{-1})^{\nu \rho}(k) & =i\begin{pmatrix}
 \vec{k}^{2} & k _{0}k _{i} \\
-k_{0}k _{i} & \left( 1-\frac{1}{\xi} \right)\partial _{i}\partial _{j}-\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})
-\end{pmatrix}(D^{-1})^{\nu \rho}(x,y) & =\delta ^{\rho}_{\mu}\delta ^{4}(x-y)
+k_{0}k _{i} & \left( 1-\frac{1}{\xi} \right)k _{i}k _{j}-\delta _{ij}(\vec{k}^{2}-k_{0}^{2})
+\end{pmatrix}^{-1}
+\end{align}
+$$
+
+$$
+M^{-1} = \begin{pmatrix}
+A^{-1} + A^{-1} B S^{-1} C A^{-1} & -A^{-1} B S^{-1} \\
+-S^{-1} C A^{-1} & S^{-1}
+\end{pmatrix}
+$$
+
+$$\tag{.}
+\begin{align}
+S & =D-C A^{-1} B \\
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+S & =\left( 1-\frac{1}{\xi} \right)k _{i}k _{j}-\delta _{ij}(\vec{k}^{2}-k_{0}^{2})-\frac{k_{0}^{2}}{\vec{k}^{2}}k _{i}k _{j} \\
+ & =\left( \delta _{ij}-\frac{k _{i}k _{j}}{\vec{k}^{2}} \right)k^{2}-\frac{1}{\xi}k _{i}k _{j} \\
+S^{-1} & =\frac{1}{k^{2}}\left(\frac{k_{i}k _{j}}{\vec{k}^{2}}\right)
 \end{align}
 $$
