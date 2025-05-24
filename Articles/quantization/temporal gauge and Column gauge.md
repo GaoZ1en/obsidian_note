@@ -38,7 +38,16 @@ then by boundary condition $\displaystyle{A_{\mu}|_{\Gamma}=0}$, the only soluti
 
 $$\tag{2.10}
 \begin{align}
-Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{i}A^{i})^{2}+J^{\mu}A_{\mu} \right)\right) \\
+Z[J_{\mu}] & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{i}A^{i})^{2}+J_{\mu}A^{\mu}\right)\right) \\
+ & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(\frac{1}{2}(\dot{A}^{i}+\partial _{i}A^{0})^{2}-\frac{1}{2}A^{i}\left( \left( 1-\frac{1}{\xi} \right)\partial _{i}\partial _{j}-\delta _{ij}\vec{\nabla}^{2} \right)A^{j}+J_{\mu}A^{\mu}\right)\right) \\
  & =
+\end{align}
+$$
+
+the equation of motion for 
+
+$$\tag{.}
+\begin{align}
+\frac{1}{2}(\dot{A}^{i})^{2}+\dot{A}^{i}\partial _{i}A^{0}+\frac{1}{2}\partial _{i}A^{0}
 \end{align}
 $$
