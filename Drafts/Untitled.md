@@ -52,10 +52,14 @@ $$
 
 $$\tag{.}
 \begin{align}
--\frac{1}{2}A^{\mu}(\partial _{\mu}\partial _{\nu}-\eta _{\mu \nu}\partial ^{2})A^{\nu}+\frac{1}{2\xi}A^{i}\partial _{i}\partial _{j}A^{j}=-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu} \\
+-\frac{1}{2}A^{\mu}(\partial _{\mu}\partial _{\nu}-\eta _{\mu \nu}\partial ^{2})A^{\nu}+\frac{1}{2\xi}A^{i}\partial _{i}\partial _{j}A^{j} & =-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu} \\
 D_{\mu \nu} & =\begin{pmatrix}
 \vec{\nabla}^{2} & \partial _{0}\partial _{i} \\
 \partial _{0}\partial _{i} & \left( 1-\frac{1}{\xi} \right)\partial _{i}\partial _{j}-\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})
-\end{pmatrix}
+\end{pmatrix} \\
+-i\begin{pmatrix}
+\vec{k}^{2} & k _{0}k _{i} \\
+k_{0}k _{i} & \left( 1-\frac{1}{\xi} \right)\partial _{i}\partial _{j}-\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})
+\end{pmatrix}(D^{-1})^{\nu \rho}(x,y) & =\delta ^{\rho}_{\mu}\delta ^{4}(x-y)
 \end{align}
 $$
