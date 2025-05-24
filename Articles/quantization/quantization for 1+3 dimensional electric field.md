@@ -21,7 +21,7 @@ $$\tag{1.2}
  & =\int \mathrm{d}^{4}xE_{j}\delta A^{j}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
 E_{j} & =\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})A^{i} \\
 \theta & =\int _{\Sigma}\mathrm{d}^{3}x\delta _{ij}\dot{A}^{i}\delta A^{j}
-\end{align}i
+\end{align}
 $$
 
 and the symplectic form is
@@ -161,8 +161,8 @@ where the Faddeev-Popov operator $\displaystyle{\mathcal{M}}$ can be derived as
 $$\tag{2.8}
 \begin{align}
 \mathcal{M}(x,y) & = \frac{\delta G[A^{\alpha}_{\mu}](x)}{\delta \alpha(y)} \\
- & =\int \mathrm{d}z \frac{\delta \Omega(x)}{\delta A^{\alpha}_{\mu}(z)}  \frac{\delta A^{\alpha}_{\mu}(z)}{\delta \alpha(y)} \\
- & =\int \mathrm{d}z \frac{\delta \Omega(x)}{\delta A^{\alpha}_{\mu}(z)} \partial _{\mu}\delta ^{4}(z-y)
+ & =\int \mathrm{d}^{4}z \frac{\delta \Omega(x)}{\delta A^{\alpha}_{\mu}(z)}  \frac{\delta A^{\alpha}_{\mu}(z)}{\delta \alpha(y)} \\
+ & =\int \mathrm{d}^{4}z \frac{\delta \Omega(x)}{\delta A^{\alpha}_{\mu}(z)} \partial _{\mu}\delta ^{4}(z-y)
 \end{align}
 $$
 
@@ -174,20 +174,36 @@ Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\mathcal{D}\bar{c}\mathcal{D}c \exp\left(i 
 \end{align}
 $$
 
-if we choose Lorentz gauge, we have
+if we choose temporal gauge $\displaystyle{A_{0}=0}$, we have
 
 $$\tag{2.10}
 \begin{align}
-Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\mathcal{D} \bar{c}\mathcal{D}c\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{\mu}A^{\mu})^{2}+J^{\mu}A_{\mu}\right)-i \int \mathrm{d}^{4}\right)
+Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\mathcal{D} \bar{c}\mathcal{D}c\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{\mu}A^{\mu})^{2}+J^{\mu}A_{\mu} -\bar{c}\partial ^{2}c\right)\right) \\
+ & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{\mu}A^{\mu})^{2}+J^{\mu}A_{\mu}\right)\right) \\
+ & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{2}A_{\mu}\left( \left( 1-\frac{1}{\xi} \right)\partial ^{\mu}\partial ^{\nu}-\eta ^{\mu \nu}\partial ^{2} \right)A_{\nu}+J^{\mu}A_{\mu}\right)\right) \\
+ & =\exp\left(-\frac{1}{2}\int \mathrm{d}^{4}x\mathrm{d}^{4}yJ^{\mu}(x)(D^{-1})_{\mu \nu}(x,y)J^{\nu}(y)\right)
 \end{align}
 $$
 
+where $\displaystyle{(D^{-1})_{\mu \nu}(x,y)}$ satisfies
 
-$$\tag{.}
+$$\tag{2.11}
 \begin{align}
-M(x,y) & =\int \mathrm{d}z \frac{\delta(\partial _{\rho}A^{\rho,\alpha}(x))}{\delta A^{\alpha},j}
+i\left( \left( 1-\frac{1}{\xi} \right)\partial ^{\mu}\partial ^{\nu}-\eta ^{\mu \nu}\partial ^{2} \right)_{x}(D^{-1})_{\nu \rho}(x,y) & =\delta ^{\mu}_{\rho}\delta ^{4}(x-x') \\
+(D^{-1})_{\mu \nu}(x,y) & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon}e^{-ik\cdot(x-y)}\left(\eta _{\mu \nu}+\left(1-\frac{1}{\xi}\right) \frac{k _{\mu}k _{\nu}}{k^{2}}\right)
 \end{align}
 $$
+
+so we have the following correlation functions
+
+$$\tag{2.12}
+\begin{align}
+\braket{ A_{\mu}(x)A_{\nu}(y) }  & = \frac{\delta ^{2}Z[J]}{i^{2}\delta J^{\mu}(x)\delta J^{\nu}(y)}\Big|_{J=0} \\
+ & =(D^{-1})_{\mu \nu}(x,y) \\
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon}e^{-ik\cdot(x-y)}\left(\eta _{\mu \nu}+\left(1-\frac{1}{\xi}\right) \frac{k _{\mu}k _{\nu}}{k^{2}}\right)
+\end{align}
+$$
+
 ---
 here we present how Bjorken and Drell do the canonical quantization. we still start from the action
 
