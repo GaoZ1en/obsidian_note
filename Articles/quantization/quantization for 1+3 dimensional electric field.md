@@ -174,12 +174,13 @@ Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\mathcal{D}\bar{c}\mathcal{D}c \exp\left(i 
 \end{align}
 $$
 
-if we choose temporal gauge $\displaystyle{A_{0}=0}$, we have
+for electric field, in general ghosts $\displaystyle{\bar{c},c}$ decouple with $\displaystyle{A_{\mu}}$. so we can just ignore the ghost action
+
+if we choose Lorentz gauge $\displaystyle{\partial _{\mu}A^{\mu}=0}$, we have
 
 $$\tag{2.10}
 \begin{align}
-Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\mathcal{D} \bar{c}\mathcal{D}c\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{\mu}A^{\mu})^{2}+J^{\mu}A_{\mu} -\bar{c}\partial ^{2}c\right)\right) \\
- & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{\mu}A^{\mu})^{2}+J^{\mu}A_{\mu}\right)\right) \\
+Z[J^{\mu}] & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{\mu}A^{\mu})^{2}+J^{\mu}A_{\mu} \right)\right) \\
  & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{2}A_{\mu}\left( \left( 1-\frac{1}{\xi} \right)\partial ^{\mu}\partial ^{\nu}-\eta ^{\mu \nu}\partial ^{2} \right)A_{\nu}+J^{\mu}A_{\mu}\right)\right) \\
  & =\exp\left(-\frac{1}{2}\int \mathrm{d}^{4}x\mathrm{d}^{4}yJ^{\mu}(x)(D^{-1})_{\mu \nu}(x,y)J^{\nu}(y)\right)
 \end{align}
@@ -194,6 +195,13 @@ i\left( \left( 1-\frac{1}{\xi} \right)\partial ^{\mu}\partial ^{\nu}-\eta ^{\mu 
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+(D^{-1})_{\nu \rho}(x,y) & =i\delta ^{\mu}_{\rho}\left( \left( 1-\frac{1}{\xi} \right)k^{\mu}k^{\nu}-\eta ^{\mu \nu}k^{2} \right)^{-1} \\
+\end{align}
+$$
+
+
 so we have the following correlation functions
 
 $$\tag{2.12}
@@ -201,6 +209,14 @@ $$\tag{2.12}
 \braket{ A_{\mu}(x)A_{\nu}(y) }  & = \frac{\delta ^{2}Z[J]}{i^{2}\delta J^{\mu}(x)\delta J^{\nu}(y)}\Big|_{J=0} \\
  & =(D^{-1})_{\mu \nu}(x,y) \\
  & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon}e^{-ik\cdot(x-y)}\left(\eta _{\mu \nu}+\left(1-\frac{1}{\xi}\right) \frac{k _{\mu}k _{\nu}}{k^{2}}\right)
+\end{align}
+$$
+
+if we choose temporal gauge $\displaystyle{A_{0}=0}$,
+
+$$\tag{.}
+\begin{align}
+
 \end{align}
 $$
 

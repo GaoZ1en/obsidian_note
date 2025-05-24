@@ -75,6 +75,16 @@
               "icon": "lucide-file",
               "title": "quantization for 1+3 dimensional electric field"
             }
+          },
+          {
+            "id": "809aa676c92ec559",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ],
         "currentTab": 2
@@ -267,8 +277,8 @@
   },
   "active": "014127e87ec2222e",
   "lastOpenFiles": [
-    "Articles/quantization/path integral quantization for Proca field.md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+    "Articles/quantization/path integral quantization for Proca field.md",
     "Drafts/path integral quantization for first and second class constraints.md",
     "Articles/Test particle/some direct calculation.md",
     "Articles/quantization/path integral quantization for constrained system.md",
