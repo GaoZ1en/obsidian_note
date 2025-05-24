@@ -121,8 +121,7 @@
               "title": "read note for black hole entropy"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -310,12 +309,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "9884ce76be4ee9c7",
+  "active": "3c8d3e695c80d788",
   "lastOpenFiles": [
-    "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Drafts/Untitled.md",
     "Articles/quantization/path integral quantization for Proca field.md",
     "Articles/Test particle/read note for black hole entropy.md",
+    "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Articles/quantization/temporal gauge and Column gauge.md",
     "Articles/Test particle/some direct calculation.md",
     "Attachments/Pasted image 20250524191924.png",

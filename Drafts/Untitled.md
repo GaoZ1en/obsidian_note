@@ -86,78 +86,33 @@ S^{-1} & =\frac{1}{k^{2}}\left(\delta _{ij}-\frac{k_{i}k _{j}}{\vec{k}^{2}}-k _{
 \end{align}
 $$
 
-# Computing the Inverse of a Block Matrix
-
-## Setting Up the Problem
-
-We have a matrix with block structure:
 
 $$M = \begin{pmatrix}
 \vec{k}^{2} & k _{0}k _{i} \\
 k_{0}k _{i} & \left( 1-\frac{1}{\xi} \right)k _{i}k _{j}-\delta _{ij}(\vec{k}^{2}-k_{0}^{2})
 \end{pmatrix}$$
 
-I'll compute the inverse step-by-step.
 
-## Step 1: Introduce Simplifying Notation
 
-Let's define:
-- $k^2 = k_0^2 - \vec{k}^2$ (the Lorentz invariant momentum squared)
-- The second block can be rewritten as: $\left(1-\frac{1}{\xi}\right)k_i k_j + \delta_{ij}k^2$
 
-## Step 2: Apply Block Matrix Inversion Formula
-
-For a block matrix of the form $\begin{pmatrix} A & B \\ C & D \end{pmatrix}$, the inverse is:
-
-$$\begin{pmatrix} A & B \\ C & D \end{pmatrix}^{-1} = 
-\begin{pmatrix} 
-(A-BD^{-1}C)^{-1} & -(A-BD^{-1}C)^{-1}BD^{-1} \\
--D^{-1}C(A-BD^{-1}C)^{-1} & D^{-1}+D^{-1}C(A-BD^{-1}C)^{-1}BD^{-1}
-\end{pmatrix}$$
-
-## Step 3: Calculate $D^{-1}$
-
-We need to invert $D = \left(1-\frac{1}{\xi}\right)k_i k_j + \delta_{ij}k^2$
-
-This is a rank-one update to a diagonal matrix. Using the Sherman-Morrison formula:
-
-If $M = \alpha uu^T + \beta I$, then:
-$$M^{-1} = \frac{1}{\beta}I - \frac{\alpha}{\beta(\beta + \alpha u^Tu)}uu^T$$
-
-Applying this with:
-- $\alpha = 1-\frac{1}{\xi}$
-- $u = (k_1,k_2,...)^T$
-- $\beta = k^2$
-
-We get:
-$$D^{-1} = \frac{\delta_{ij}}{k^2} - \frac{(1-\frac{1}{\xi})k_i k_j}{k^2(k^2 + (1-\frac{1}{\xi})\vec{k}^2)}$$
-$$\tag{.}
+$$\tag{3.5}
 \begin{align}
-D^{-1} & =\frac{1}{k^{2}}\left(\delta _{ij}-\frac{\left( 1-\frac{1}{\xi} \right)k _{i}k _{j}}{k^{2}+\left( 1-\frac{1}{\xi} \right)\vec{k}^{2}}\right)
+\mathcal{L}_{\alpha,\beta} & =-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu} \\
+(D_{\mu \nu}) & =\begin{pmatrix}
+e^{i\beta}\vec{\nabla}^{2} & e^{i(\alpha+\beta)/2}\partial _{0}\partial _{i} \\
+e^{i(\alpha+\beta)/2}\partial _{0}\partial _{i} & e^{-i\alpha}\partial _{i}\partial _{j}+\delta _{ij}(-e^{-i\alpha}\vec{\nabla}^{2}+e^{i\alpha}\partial _{0}^{2})
+\end{pmatrix}
 \end{align}
 $$
-After simplification:
-$$D^{-1} = \frac{\delta_{ij}}{k^2} + \frac{k_i k_j}{k^4}\frac{1}{\xi}$$
 
-## Step 4: Calculate Remaining Terms
+where $\displaystyle{(D^{-1})^{\mu \nu}}$ satisfies
 
-- $BD^{-1} = \frac{k_0 k_j}{k^2} + \frac{k_0 \vec{k}^2 k_j}{k^4}\frac{1}{\xi}$
-- $D^{-1}C = \frac{k_0 k_i}{k^2} + \frac{k_0 \vec{k}^2 k_i}{k^4}\frac{1}{\xi}$
-- $BD^{-1}C = \frac{k_0^2 \vec{k}^2}{k^2} + \frac{k_0^2 \vec{k}^4}{k^4}\frac{1}{\xi}$
-- $A - BD^{-1}C = \vec{k}^2 - \frac{k_0^2 \vec{k}^2}{k^2} - \frac{k_0^2 \vec{k}^4}{k^4}\frac{1}{\xi} = -k^2 - \frac{k_0^2 \vec{k}^4}{k^4}\frac{1}{\xi}$
-- $(A - BD^{-1}C)^{-1} = -\frac{1}{k^2} + \frac{k_0^2}{k^4}\frac{1}{\xi}$
-
-## Step 5: Assemble the Inverse Matrix
-
-Substituting into the block matrix inversion formula:
-
-$$M^{-1} = \begin{pmatrix}
--\frac{1}{k^2} + \frac{k_0^2}{k^4}\frac{1}{\xi} & \frac{k_0 k_j}{k^4}\frac{1}{\xi} \\
-\frac{k_0 k_i}{k^4}\frac{1}{\xi} & \frac{\delta_{ij}}{k^2} + \frac{k_i k_j}{k^4}\frac{1}{\xi}
-\end{pmatrix}$$
-
-## Step 6: Verification (Optional)
-
-You can verify this is correct by multiplying $M \cdot M^{-1}$ and confirming it equals the identity matrix.
-
-This form is familiar in physics as the gauge field propagator in the $\xi$-gauge, where the parameter $\xi$ controls the gauge fixing.
+$$\tag{3.7}
+\begin{align}
+iD_{\mu \nu}(D^{-1})^{\nu \rho}(x,x') & =\delta ^{\rho}_{\mu}\delta ^{4}(x-x') \\
+\implies D^{-1}(x,x') & = \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}\begin{pmatrix}
+e^{-i\beta}\left( -e^{-i\alpha}+e^{i\alpha}\frac{k_{0}^{2}}{m^{2}} \right) & e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} \\
+e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} & \delta _{ij}+\frac{k _{i}k _{j}}{m^{2}}
+\end{pmatrix}
+\end{align}
+$$
