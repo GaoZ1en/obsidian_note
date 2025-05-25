@@ -292,5 +292,3 @@ $$\tag{.}
 \int _{B}(\delta \mathbf{Q}_{\xi,\mathrm{YM}}-\xi \cdot \Theta _{\mathrm{YM}}) & = 
 \end{align}
 $$
-
-can a black hole have 10 parameters (mass, charge, angular momentum, BTZ parameters, etc.)?
