@@ -69,13 +69,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/Test particle/some direct calculation.md",
+                "file": "Drafts/BMS group.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "some direct calculation"
+              "title": "BMS group"
             }
           },
           {
@@ -293,10 +293,11 @@
   },
   "active": "49baa790dfd2320c",
   "lastOpenFiles": [
+    "Drafts/BMS group.md",
+    "Articles/Test particle/some direct calculation.md",
     "Articles/Test particle/read note for black hole entropy.md",
     "TODO.md",
     "Note/Project Euler/solutions.md",
-    "Articles/Test particle/some direct calculation.md",
     "Untitled.md",
     "Articles/Noether charge/Conserved charge.md",
     "Articles/Noether charge/Regularized action of pure AdS3 gravity.md",
@@ -319,7 +320,6 @@
     "Drafts/path integral quantization for first and second class constraints.md",
     "Articles/quantization/path integral quantization for constrained system.md",
     "Drafts/project euler.md",
-    "Lecture/2025 spring/python for general purpose/homework 9.md",
     "Articles/Test particle",
     "Note/Project Euler/1-50",
     "Note/Project Euler",
