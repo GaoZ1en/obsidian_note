@@ -24,8 +24,8 @@
     "deviceCode": "6a5f5b3434c446908d1e662bb24e81db9cc60057",
     "pat": "ghu_tjQkIclsMILQveRH0IGqd51S503wdi2tojMb",
     "accessToken": {
-      "token": "tid=7fefb9bbbda346b1efcfe40b01d5def1;exp=1748166420;sku=free_educational;proxy-ep=proxy.individual.githubcopilot.com;st=dotcom;chat=1;cit=1;malfil=1;editor_preview_features=1;ccr=1;rt=1;8kp=1;ip=114.254.3.59;asn=AS4808:83f9c1c24276da973c93948464747a319afb8fb89673c50df86524382282a162",
-      "expiresAt": 1748166420
+      "token": "tid=7fefb9bbbda346b1efcfe40b01d5def1;exp=1748176868;sku=free_educational;proxy-ep=proxy.individual.githubcopilot.com;st=dotcom;chat=1;cit=1;malfil=1;editor_preview_features=1;ccr=1;rt=1;8kp=1;ip=210.3.159.198;asn=AS9304:e18bc926101e4ec5e0ed478317ca1115cf5a81ea6b3083340939794586485701",
+      "expiresAt": 1748176868
     },
     "selectedModel": {
       "label": "Claude 3.7 Sonnet Thinking",

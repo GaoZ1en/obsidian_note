@@ -14,7 +14,7 @@
     "margin": "0",
     "downscalePercent": 70
   },
-  "promptDelete": false,
+  "promptDelete": true,
   "tabSize": 2,
   "showLineNumber": true,
   "strictLineBreaks": true
