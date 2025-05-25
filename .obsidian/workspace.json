@@ -67,13 +67,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+                "file": "Articles/Noether charge/Conserved charge.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "quantization for 1+3 dimensional electric field"
+              "title": "Conserved charge"
             }
           },
           {
@@ -107,7 +107,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -295,10 +295,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "809aa676c92ec559",
+  "active": "c75300afee03a7a5",
   "lastOpenFiles": [
-    "Articles/Test particle/some direct calculation.md",
+    "Articles/Noether charge/Regularized action of pure AdS3 gravity.md",
+    "Articles/Noether charge/Two methods to compute the Noether charge.md",
+    "Articles/Noether charge/Virasoro algebra.md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+    "Articles/Noether charge/Tasks.md",
+    "Articles/Test particle/some direct calculation.md",
     "Articles/Test particle/read note for black hole entropy.md",
     "Articles/quantization/path integral quantization for Proca field.md",
     "Drafts/Untitled.md",
@@ -320,9 +324,6 @@
     "Lecture/2025 spring/python for general purpose/homework 9.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
-    "Lecture/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
-    "Articles/quantization/canonical quantization of fermionic systems.md",
-    "Note/Project Euler/1-50/prob0001.md",
     "Articles/Test particle",
     "Note/Project Euler/1-50",
     "Note/Project Euler",

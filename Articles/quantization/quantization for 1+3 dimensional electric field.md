@@ -264,7 +264,7 @@ $$\tag{3.1}
 \end{align}
 $$
 
-we have a primary constraint $\displaystyle{\varphi _{1}=\pi _{0}\approx_{0}}$. then the Hamiltonian is
+we have a primary constraint $\displaystyle{\varphi _{1}=\pi _{0}\approx0}$. then the Hamiltonian is
 
 $$\tag{3.2}
 \begin{align}
