@@ -48,7 +48,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 yazi"
+              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 bash"
             }
           },
           {
@@ -297,9 +297,9 @@
   },
   "active": "f1219ecf396668f9",
   "lastOpenFiles": [
-    "Articles/Test particle/read note for black hole entropy.md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Articles/Test particle/some direct calculation.md",
+    "Articles/Test particle/read note for black hole entropy.md",
     "Articles/quantization/path integral quantization for Proca field.md",
     "Drafts/Untitled.md",
     "Articles/quantization/temporal gauge and Column gauge.md",

@@ -66,11 +66,13 @@ $$
 
 ---
 
-the problem is that it seems that in the second line, we cannot derive the LHS from the RHS. I will show it
+the problem is that it seems that in the second line, we cannot derive the LHS from the RHS. I will show it.
 
-$$\tag{.}
+$$\tag{1.7}
 \begin{align}
-
+\int _{\tau_{1}}^{\tau_{2}} \mathrm{d}\tau  \frac{\mathrm{d}}{\mathrm{d}\tau}(mU^{\mu}\xi _{\mu}) & =\int _{\tau_{1}}^{\tau_{2}} \mathrm{d}\tau  \frac{\mathrm{d}}{\mathrm{d}\tau}(mU^{\mu}\xi _{\mu}) \int _{N} \mathrm{d}^{4}x\sqrt{ -g } \frac{\delta^{4}(x-x(\tau))}{\sqrt{ -g }} \\
+ & =\int _{N}\mathrm{d}^{4}x\sqrt{ -g } \int _{\tau_{1}}^{\tau_{2}} \mathrm{d}\tau  \frac{\mathrm{d}}{\mathrm{d}\tau}(mU^{\mu}\xi _{\mu}) \frac{\delta ^{4}(x-x(\tau))}{\sqrt{ -g }} \\
+ & =\int _{N} \mathrm{d}^{4}x\sqrt{ -g }\left( mU^{\mu}\xi _{\mu} \frac{\delta^{4}(x-x(\tau))}{\sqrt{ -g } } \right)\Big|^{\tau_{2}}_{\tau_{1}}-\int _{N} \mathrm{d}^{4}x\sqrt{ -g }\int _{\tau_{1}}^{\tau_{2}} mU^{\mu}\xi _{\mu}  \frac{\mathrm{d}}{\sqrt{ -g }\mathrm{d}\tau} \delta ^{4}(x-x(\tau))
 \end{align}
 $$
 
