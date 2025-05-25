@@ -232,6 +232,18 @@ iD_{\mu \nu}(D^{-1})^{\nu \rho}(x,y) & =\delta ^{\rho}_{\mu}\delta ^{4}(x-y) \\
 \end{align}
 $$
 
+then the correlation functions are
+
+$$\tag{2.11}
+\begin{align}
+\braket{ A^{\mu}(x)A^{\nu}(y) }  & = \frac{\delta ^{2}Z[J]}{i^{2}\delta J^{\mu}(x)\delta J^{\nu}(y)}\Big|_{J=0}  \\
+ & =(D^{-1})^{\mu \nu}(x,y) \\
+ & =i\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} e^{ik\cdot(x-y)} \begin{pmatrix}
+-\frac{1}{\vec{k}^{2}}\left( 1-\frac{k_{0}^{2}}{\vec{k}^{2}}\xi \right) & -\frac{\xi k_{0}k _{i}}{(\vec{k}^{2})^{2}} \\
+-\frac{\xi k_{0}k _{i}}{(\vec{k}^{2})^{2}} & \frac{1}{k^{2}-i\varepsilon}\left(\delta _{ij}-\frac{k _{i}k _{j}}{\vec{k}^{2}}\left( 1-\frac{k^{2}\xi}{\vec{k}^{2}} \right)\right) \\
+\end{pmatrix}
+\end{align}
+$$
 
 ---
 here we present how Bjorken and Drell do the canonical quantization. we still start from the action
