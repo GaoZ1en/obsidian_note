@@ -78,7 +78,7 @@ $$
 
 back to the main point. for simplicity, we drop terms supporting on the space boundary $\displaystyle{\Gamma}$ (including $\displaystyle{\partial \Sigma}$). 
 
-$$\tag{1.1}
+$$\tag{2.1}
 \begin{align}
 \delta \mathbf{L}[\phi] & =\mathbf{E}[\phi]\delta \phi+\mathrm{d}\Theta[\phi,\delta \phi]
 \end{align}
@@ -86,7 +86,7 @@ $$
 
 here $\displaystyle{\phi=\left(\psi,g_{\mu \nu}\right)}$. the symplectic form is
 
-$$\tag{1.2}
+$$\tag{2.2}
 \begin{align}
 \omega & =\int _{\Sigma}\delta \Theta
 \end{align}
@@ -94,7 +94,7 @@ $$
 
 which satisfies
 
-$$\tag{1.3}
+$$\tag{2.3}
 \begin{align}
 \mathrm{d}\omega=0
 \end{align}
@@ -102,7 +102,7 @@ $$
 
 consider the following symmetry vector
 
-$$\tag{1.4}
+$$\tag{2.4}
 \begin{align}
 X_{\xi} & =\int \varepsilon\mathcal{L}_{\xi}\phi \frac{\delta}{\delta \phi}
 \end{align}
@@ -110,7 +110,7 @@ $$
 
 act on the Lagrangian
 
-$$\tag{1.5}
+$$\tag{2.5}
 \begin{align}
 X_{\xi}\cdot \delta \mathbf{L}=\mathrm{d}(\xi \cdot \mathbf{L})
 \end{align}
@@ -118,7 +118,7 @@ $$
 
 (here we assume that the Lagrangian $\displaystyle{L}$ is covariant) then we have the Noether charge
 
-$$\tag{1.6}
+$$\tag{2.6}
 \begin{align}
 H_{\xi} & =\int _{\Sigma}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L})
 \end{align}
@@ -126,7 +126,7 @@ $$
 
 we have the Noether theorem
 
-$$\tag{1.7}
+$$\tag{2.7}
 \begin{align}
 \delta H_{\xi} & =-X_{\xi}\cdot \omega
 \end{align}
@@ -134,7 +134,7 @@ $$
 
 on the other hand
 
-$$\tag{1.8}
+$$\tag{2.8}
 \begin{align}
 \delta H_{\xi} & =\int _{\Sigma}\delta(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L}) \\
   & =\int _{\Sigma}(\delta (X_{\xi}\cdot \Theta)-\xi \cdot \delta \mathbf{L}) \\
@@ -148,7 +148,7 @@ $$
 
 here we use
 
-$$\tag{1.9}
+$$\tag{2.9}
 \begin{align}
 \mathcal{L}_{X_{\xi}}\Theta = \mathcal{L}_{\xi}\Theta+X_{\delta \xi}\cdot \Theta
 \end{align}
@@ -156,16 +156,16 @@ $$
 
 and assume that $\displaystyle{\xi}$ does not depend on $\displaystyle{\phi}$. then pull back to the pre-phase space $\displaystyle{\tilde{\mathcal{P}}}$, we return to (1.7). we can veryfy that
 
-$$\tag{1.10}
+$$\tag{2.10}
 \begin{align}
 H_{\xi} & =\int _{\Sigma}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L}) \\
  & =\int _{\Sigma}(\mathrm{d}Q_{\xi}+\tilde{\mathbf{C}}_{\xi})
 \end{align}
 $$
 
-where $\displaystyle{\tilde{\mathbf{C}}}$s are the constraints of the theory (and at least for $\displaystyle{\mathrm{AdS}_{3}}$, $\displaystyle{\tilde{\mathbf{C}_{\xi}}}$ is proportional to $\displaystyle{\mathbf{E}}$). make a variation on (1.10) and then compare it to (1.8), we have
+where $\displaystyle{\tilde{\mathbf{C}}}$s are called the constraints of the theory (and at least for $\displaystyle{\mathrm{AdS}_{3}}$, $\displaystyle{\tilde{\mathbf{C}_{\xi}}}$ is proportional to $\displaystyle{\mathbf{E}}$). make a variation on (1.10) and then compare it to (1.8), we have
 
-$$\tag{1.11}
+$$\tag{2.11}
 \begin{align}
 \int _{\Sigma}(\mathrm{d}\delta Q_{\xi}+\delta \tilde{\mathbf{C}}_{\xi}) & =\int _{\Sigma}(-X_{\xi}\cdot \delta\Theta-(\xi \cdot \mathbf{E})\delta \phi+\mathrm{d}(\xi \cdot \Theta)) \\
 \implies \int _{\Sigma}\mathrm{d}(\delta Q_{\xi}-\xi \cdot \Theta) & =\int _{\Sigma}(-X_{\xi}\cdot \delta \Theta-\delta \tilde{\mathbf{C}}_{\xi}-(\xi \cdot \mathbf{E})\delta \phi)
@@ -174,10 +174,55 @@ $$
 
 then pull back to the pre-phase space $\displaystyle{\tilde{\mathcal{P}}}$, we have
 
-$$\tag{1.12}
+$$\tag{2.12}
 \begin{align}
 \delta H_{\xi}|_{\tilde{\mathcal{P}}} & =\int _{\partial \Sigma}(\delta Q_{\xi}-\xi \cdot \Theta)
 \end{align}
 $$
 
 we will drop the subsription $\displaystyle{\tilde{\mathcal{P}}}$ in the following discussion. if we choose $\displaystyle{\xi ^{a}=t^{a}+\Omega _{H}\varphi ^{a}}$ as the horizon Killing vector, where $\displaystyle{t^{a}}$ is the timelike Killing field, $\displaystyle{\varphi ^{a}}$ is the axial Killing field, and $\displaystyle{\Omega _{H}}$ is the angular velocity of the horizon.
+
+we have
+
+$$\tag{2.13}
+\begin{align}
+\delta H_{\xi} & =\delta M-\Omega _{H}\delta J
+\end{align}
+$$
+
+where $\displaystyle{M}$ is the ADM mass (in some former note we have verified this statement) and $\displaystyle{J}$ is the ADM angular momentum. since $\displaystyle{\xi ^{a}}$ vanishes on the horizon, we have
+
+$$\tag{2.14}
+\begin{align}
+\int _{B}(\delta Q^{\mathrm{GR}}_{\xi}-\xi \cdot \Theta ^{\mathrm{GR}}) & =\int _{B}\delta Q^{\mathrm{GR}}_{\xi}=\frac{\kappa}{8\pi}\delta A_{B}
+\end{align}
+$$
+
+where $\displaystyle{A}$ is the area of the horizon (**Black hole entropy is Noether charge** had argued this). and
+
+$$\tag{2.15}
+\begin{align}
+\int _{B}\left(\delta Q^{\mathrm{EM}}_{\xi}-\xi \cdot \Theta ^{\mathrm{EM}}\right) & =\int _{B}\delta Q_{\xi}^{\mathrm{EM}}=\Phi _{H}\delta Q_{B}
+\end{align}
+$$
+
+thus we have the the 1st law of black hole thermodynamics
+
+$$\tag{2.16}
+\begin{align}
+\delta M-\Omega _{H}\delta J-\Phi _{H}\delta Q_{B} & =\frac{\kappa}{8\pi}\delta A_{B}
+\end{align}
+$$
+
+applying the above discussion to the test particle, we have
+
+$$\tag{2.17}
+\begin{align}
+\delta M-\Omega _{H}\delta J-\frac{\kappa}{8\pi}\delta A_{B}-\Phi _{H}\delta Q_{B} & =-\int _{\Sigma}(\delta T_{\mu}^{~\rho}+A_{\mu}\delta J^{\rho})\xi ^{\mu}\cdot \frac{1}{3!}\varepsilon _{\rho \mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}}
+\end{align}
+$$
+
+here $\displaystyle{\delta T_{\mu}^{~\rho}}$ and $\displaystyle{\delta J^{\rho}}$ are the perturbations of the energy-momentum tensor and the current density by a test particle, which is defined in (1.2), respectively.
+
+Cardoso(1008.5159?) had calculated the perturbation by a test **ring** using a very ugly method. our goal is to calculate the perturbation by a test **particle** in a very general setting via CPS formalism.
+
