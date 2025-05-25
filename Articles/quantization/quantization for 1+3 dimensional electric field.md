@@ -64,8 +64,8 @@ $$\tag{1.7}
 [A^{i}(x),A^{j}(y)] & =iX_{A^{i}(x)}\cdot X_{A^{j}(x)}\cdot\omega \\
  & =\int \mathrm{d}^{3}\vec{k}\sum ^{2}_{s=1}e^{s,i}_{k}e^{s,j}_{k}(\sigma _{k}(x)\sigma _{k}^{*}(y)-\sigma ^{*}_{k}(x)\sigma _{k}(y)) \\
  & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left(\delta ^{ij}-\frac{k^{i}k^{j}}{k^{2}}\right) (e^{ik\cdot(x-y)}-e^{-ik(x-y)}) \\
- & =\left(\delta ^{ij}+\frac{\partial _{x} ^{i}\partial _{x} ^{j}}{\vec{\nabla}^{2}_{x}}\right)\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(e^{ik\cdot(x-y)}-e^{-ik\cdot(x-y)}) \\
- & =\left(\delta ^{ij}+ \frac{\partial ^{i}_{x}\partial ^{j}_{x}}{\vec{\nabla}^{2}_{x}}\right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon}e^{ik\cdot(x-y)}
+ & =\left(\delta ^{ij}-\frac{\partial _{x} ^{i}\partial _{x} ^{j}}{\vec{\nabla}^{2}_{x}}\right)\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(e^{ik\cdot(x-y)}-e^{-ik\cdot(x-y)}) \\
+ & =\left(\delta ^{ij}- \frac{\partial ^{i}_{x}\partial ^{j}_{x}}{\vec{\nabla}^{2}_{x}}\right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon}e^{ik\cdot(x-y)}
 \end{align}
 $$
 
@@ -75,8 +75,8 @@ $$\tag{1.8}
 \begin{align}
 \braket{ A^{i}(x)A^{j}(y) } & = \braket{ 0|\mathcal{T}A^{i}(x)A^{j}(y)|0 }  \\
  & =\theta(x^{0}-y^{0})\int \mathrm{d}^{3}\vec{k}\sum ^{2}_{s=1}e^{s,i}_{k}e^{s,j}_{k}\sigma _{k}(x)\sigma _{k}^{*}(y)+(x^{0}\leftrightarrow y^{0}) \\
- & =\left(\delta ^{ij}+\frac{\partial ^{i}_{x}\partial _{x} ^{j}}{\vec{\nabla}^{2}_{x}}\right)\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
- & =\left(\delta ^{ij}+\frac{\partial ^{i}_{x}\partial ^{j}_{x}}{\vec{\nabla}^{2} _{x}}\right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon} e^{ik\cdot(x-y)}
+ & =\left(\delta ^{ij}-\frac{\partial ^{i}_{x}\partial _{x} ^{j}}{\vec{\nabla}^{2}_{x}}\right)\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
+ & =\left(\delta ^{ij}-\frac{\partial ^{i}_{x}\partial ^{j}_{x}}{\vec{\nabla}^{2} _{x}}\right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-i\varepsilon} e^{ik\cdot(x-y)}
 \end{align}
 $$
 
@@ -224,7 +224,11 @@ D_{\mu \nu} & =\begin{pmatrix}
 \vec{\nabla}^{2} & \partial _{0}\partial _{i} \\
 \partial _{0}\partial _{i} & \left( 1-\frac{1}{\xi} \right)\partial _{i}\partial _{j}-\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})
 \end{pmatrix} \\
-
+iD_{\mu \nu}(D^{-1})^{\nu \rho}(x,y) & =\delta ^{\rho}_{\mu}\delta ^{4}(x-y) \\
+\implies (D^{-1})^{\nu \rho}(x,y) & =i\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} e^{ik\cdot(x-y)} \begin{pmatrix}
+-\frac{1}{\vec{k}^{2}}\left( 1-\frac{k_{0}^{2}}{\vec{k}^{2}}\xi \right) & -\frac{\xi k_{0}k _{i}}{(\vec{k}^{2})^{2}} \\
+-\frac{\xi k_{0}k _{i}}{(\vec{k}^{2})^{2}} & \frac{1}{k^{2}-i\varepsilon}\left(\delta _{ij}-\frac{k _{i}k _{j}}{\vec{k}^{2}}\left( 1-\frac{k^{2}\xi}{\vec{k}^{2}} \right)\right)
+\end{pmatrix}
 \end{align}
 $$
 
