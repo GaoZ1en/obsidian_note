@@ -57,11 +57,12 @@ D_{\mu \nu} & =\begin{pmatrix}
 \vec{\nabla}^{2} & \partial _{0}\partial _{i} \\
 \partial _{0}\partial _{i} & \left( 1-\frac{1}{\xi} \right)\partial _{i}\partial _{j}-\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})
 \end{pmatrix} \\
-(D^{-1})^{\nu \rho}(k) & =i\begin{pmatrix}
-\vec{k}^{2} & k _{0}k _{i} \\
-k_{0}k _{i} & \left( 1-\frac{1}{\xi} \right)k _{i}k _{j}-\delta _{ij}(\vec{k}^{2}-k_{0}^{2})
+(D^{-1})^{\nu \rho}(k) & =-i\begin{pmatrix}
+-\vec{k}^{2} & -k_{0}k _{i} \\
+-k_{0}k _{i} & -\left( 1-\frac{1}{\xi} \right)k _{i}k _{j}+\delta _{ij}k^{2}
 \end{pmatrix}^{-1}
 \end{align}
+
 $$
 
 $$
@@ -79,40 +80,12 @@ $$
 
 $$\tag{.}
 \begin{align}
-S & =\left( 1-\frac{1}{\xi} \right)k _{i}k _{j}-\delta _{ij}(\vec{k}^{2}-k_{0}^{2})-\frac{k_{0}^{2}}{\vec{k}^{2}}k _{i}k _{j} \\
- & =\left( \delta _{ij}-\frac{k _{i}k _{j}}{\vec{k}^{2}} \right)k^{2}-\frac{1}{\xi}k _{i}k _{j} \\
-S^{-1} & =\frac{1}{k^{2}}\left(\delta _{ij}-\frac{k_{i}k _{j}}{\vec{k}^{2}}-k _{i}k _{j} \frac{k^{2}\xi}{(\vec{k}^{2})^{2}}\right) \\
--A^{-1}BS^{-1} & =-\frac{1}{\vec{k}^{2}}
-\end{align}
-$$
-
-
-$$M = \begin{pmatrix}
-\vec{k}^{2} & k _{0}k _{i} \\
-k_{0}k _{i} & \left( 1-\frac{1}{\xi} \right)k _{i}k _{j}-\delta _{ij}(\vec{k}^{2}-k_{0}^{2})
-\end{pmatrix}$$
-
-
-
-
-$$\tag{3.5}
-\begin{align}
-\mathcal{L}_{\alpha,\beta} & =-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu} \\
-(D_{\mu \nu}) & =\begin{pmatrix}
-e^{i\beta}\vec{\nabla}^{2} & e^{i(\alpha+\beta)/2}\partial _{0}\partial _{i} \\
-e^{i(\alpha+\beta)/2}\partial _{0}\partial _{i} & e^{-i\alpha}\partial _{i}\partial _{j}+\delta _{ij}(-e^{-i\alpha}\vec{\nabla}^{2}+e^{i\alpha}\partial _{0}^{2})
-\end{pmatrix}
-\end{align}
-$$
-
-where $\displaystyle{(D^{-1})^{\mu \nu}}$ satisfies
-
-$$\tag{3.7}
-\begin{align}
-iD_{\mu \nu}(D^{-1})^{\nu \rho}(x,x') & =\delta ^{\rho}_{\mu}\delta ^{4}(x-x') \\
-\implies D^{-1}(x,x') & = \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{-e^{i\alpha}k_{0}^{2}+e^{-i\alpha}(\vec{k}^{2}+m^{2})}\begin{pmatrix}
-e^{-i\beta}\left( -e^{-i\alpha}+e^{i\alpha}\frac{k_{0}^{2}}{m^{2}} \right) & e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} \\
-e^{i(\alpha-\beta)/2} \frac{k_{0}k _{i}}{m^{2}} & \delta _{ij}+\frac{k _{i}k _{j}}{m^{2}}
-\end{pmatrix}
+S & =-\left( 1-\frac{1}{\xi} \right)k _{i}k _{j}+\delta _{ij}(\vec{k}^{2}-k_{0}^{2})+\frac{k_{0}^{2}}{\vec{k}^{2}}k _{i}k _{j} \\
+ & =\left( \delta _{ij}-\frac{k _{i}k _{j}}{\vec{k}^{2}} \right)k^{2}+\frac{1}{\xi}k _{i}k _{j} \\
+S^{-1} & =\frac{1}{k^{2}}\left(\delta _{ij}-\frac{k_{i}k _{j}}{\vec{k}^{2}}+k _{i}k _{j} \frac{k^{2}\xi}{(\vec{k}^{2})^{2}}\right) \\
+-A^{-1}BS^{-1} & =\frac{1}{\vec{k}^{2}}(-k_{0}) \left(+k _{j}\frac{\xi}{\vec{k}^{2}}\right) \\
+ & =-\frac{\xi k_{0}k _{j}}{(\vec{k}^{2})^{2}} \\
+A^{-1}+A^{-1}BS^{-1}CA^{-1} & =A^{-1}(1+BS^{-1}CA^{-1}) \\
+ & =-\frac{1}{\vec{k}^{2}}\left( 1-\frac{k_{0}^{2}\xi}{\vec{k}^{2}} \right)
 \end{align}
 $$

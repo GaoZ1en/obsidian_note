@@ -122,7 +122,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -310,10 +310,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "c75300afee03a7a5",
+  "active": "9884ce76be4ee9c7",
   "lastOpenFiles": [
-    "Drafts/Untitled.md",
     "Articles/quantization/path integral quantization for Proca field.md",
+    "Drafts/Untitled.md",
     "Articles/Test particle/read note for black hole entropy.md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Articles/quantization/temporal gauge and Column gauge.md",
