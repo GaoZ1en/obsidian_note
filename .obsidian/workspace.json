@@ -90,6 +90,21 @@
               "icon": "lucide-file",
               "title": "some direct calculation"
             }
+          },
+          {
+            "id": "49baa790dfd2320c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/Test particle/read note for black hole entropy.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "read note for black hole entropy"
+            }
           }
         ],
         "currentTab": 3
@@ -226,8 +241,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 297.5,
-    "collapsed": true
+    "width": 297.5
   },
   "right": {
     "id": "be754014b7083e79",
@@ -283,11 +297,11 @@
   "active": "f1219ecf396668f9",
   "lastOpenFiles": [
     "Articles/Test particle/read note for black hole entropy.md",
+    "Articles/Test particle/some direct calculation.md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Articles/quantization/path integral quantization for Proca field.md",
     "Drafts/Untitled.md",
     "Articles/quantization/temporal gauge and Column gauge.md",
-    "Articles/Test particle/some direct calculation.md",
     "Attachments/Pasted image 20250524191924.png",
     "TODO.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
