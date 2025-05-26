@@ -55,4 +55,46 @@ $$\tag{1.6}
 \end{align}
 $$
 
-here we assume that such solutions can be superposed, and $\displaystyle{\sigma ^{a}_{n}(x)}$s are 
+here we assume that such solutions can be superposed. and $\displaystyle{\sigma ^{a}_{n}(x)}$ is a set of complete orthonormal basis of the solution space $\displaystyle{\tilde{\mathcal{P}}}$, which satisfies suitable orthonormality condition that the pre-symplectic form can be written in a standard form
+
+$$\tag{1.7}
+\begin{align}
+\tilde{\omega} & =i\sum _{a,n}\delta a_{an}^{\dagger}\wedge \delta a_{an}
+\end{align}
+$$
+
+we define the Hamiltonian flow $\displaystyle{X_{\mathcal{O}}}$ corresponding to an observable $\displaystyle{\mathcal{O}[\phi ^{a}]}$ at time slice $\displaystyle{\Sigma}$ as
+
+$$\tag{1.8}
+\begin{align}
+X_{\mathcal{O},\Sigma} & = i \sum _{a,n}\int _{\Sigma}\left(  \frac{\delta \mathcal{O}}{\delta a_{an}^{\dagger}} \frac{\delta}{\delta a_{an}}-\frac{\delta \mathcal{O}}{\delta a_{an}} \frac{\delta}{\delta a^{\dagger}_{an}}\right)
+\end{align}
+$$
+
+then the Poisson bracket of two observables $\displaystyle{\mathcal{O}_{1}[\phi ^{a}]}$ and $\displaystyle{\mathcal{O}_{2}[\phi ^{a}]}$ is defined as
+
+$$\tag{1.9}
+\begin{align}
+\left\{\mathcal{O}_{1}|_{\Sigma},\mathcal{O}_{2}|_{\Sigma}\right\} & =X_{\mathcal{O}_{1},\Sigma}\cdot X_{\mathcal{O}_{2},\Sigma}\cdot \tilde{\omega}
+\end{align}
+$$
+
+in particular, we have
+
+$$\tag{1.10}
+\begin{align}
+\left\{a_{an},a^{\dagger}_{am}\right\}|_{\Sigma} & =\delta _{nm}\delta _{ab} \\
+\end{align}
+$$
+
+### canonical quantization in quantum level
+
+we promote the pre-phase space $\displaystyle{\tilde{\mathcal{P}}}$ to a Hilbert space $\displaystyle{\mathcal{H}}$ by imposing canonical quantization
+
+$$\tag{1.11}
+\begin{align}
+[\mathcal{O}_{1},\mathcal{O}_{2}] & =i\left\{\mathcal{O}_{1},\mathcal{O}_{2}\right\}
+\end{align}
+$$
+
+footnote: here we ignore the higher order terms in the 
