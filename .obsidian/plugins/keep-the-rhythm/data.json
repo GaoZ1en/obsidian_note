@@ -32,11 +32,11 @@
     "undefined": {},
     "14fe3a1f-e2a1-4150-902f-193b5d9192db": {
       "2025-05-26": {
-        "totalDelta": 314,
+        "totalDelta": 504,
         "files": {
           "Articles/quantization/quantization for 1+3 dimensional electric field.md": {
             "initial": 3202,
-            "current": 3202
+            "current": 3206
           },
           "Drafts/path integral quantization for first and second class constraints.md": {
             "initial": 4746,
@@ -60,11 +60,31 @@
           },
           "Drafts/electric field.md": {
             "initial": 238,
-            "current": 467
+            "current": 653
           },
-          "useful matrix inverse.md": {
+          "Note/Mathematics/algebraic geometry.md": {
+            "initial": 381,
+            "current": 381
+          },
+          "Note/Mathematics/Applications of Laplace transform in integration calculating.md": {
+            "initial": 402,
+            "current": 402
+          },
+          "Note/Mathematics/Applications of residue theorem in integration calculating.md": {
+            "initial": 6,
+            "current": 6
+          },
+          "Note/Mathematics/Bäcklund transformation.md": {
+            "initial": 713,
+            "current": 713
+          },
+          "Note/Mathematics/useful matrix inverse.md": {
             "initial": 0,
             "current": 85
+          },
+          "TODO.md": {
+            "initial": 71,
+            "current": 71
           }
         }
       }

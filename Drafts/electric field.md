@@ -66,3 +66,30 @@ k_{0}k _{i} & \left( 1-\frac{1}{\xi} \right)k _{i}k _{j}-\delta _{ij}k^{2}
 \end{pmatrix}^{-1}
 \end{align}
 $$
+
+
+
+$$\tag{.}
+\begin{align}
+\left( 1-\frac{1}{\xi} \right)k _{i}k _{j}-\delta _{ij}k^{2}- \frac{k_{0}^{2}}{\vec{k}^{2}}k _{i}k _{j} \\
+-k^{2}\left( \delta _{ij}-\frac{k _{i}k _{j}}{\vec{k}^{2}} \right)-\frac{1}{\xi}k _{i}k _{j} \\
+-k^{2}\delta _{ij}+\left( \frac{k^{2}}{\vec{k}^{2}}-\frac{1}{\xi} \right)k _{i}k _{j}
+\end{align}
+$$
+
+$$
+\begin{align}
+(A+uv^{T})^{-1} & =A^{-1}-\frac{A^{-1}uv^{T}A^{-1}}{1+v^{T}A^{-1}u}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+-\delta _{ij}+\frac{\left( \frac{1}{\xi}-\frac{k^{2}}{\vec{k}^{2}} \right)\frac{k _{i}k _{j}}{}}{\left( \frac{1}{\xi} \right) \frac{\vec{k}^{2}}{}} \\
+-\frac{1}{k^{2}}\left( \delta _{ij}-\frac{k _{i}k _{j}}{\vec{k}^{2}}\left( 1-\xi\frac{k^{2}}{\vec{k}^{2}} \right) \right)
+\end{align}
+$$
+
+i am right.
+
+ke
