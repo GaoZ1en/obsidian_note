@@ -87,7 +87,7 @@ $$\tag{1.10}
 \end{align}
 $$
 
-### canonical quantization in quantum level
+### covariant phase space formalism in quantum level
 
 we promote the pre-phase space $\displaystyle{\tilde{\mathcal{P}}}$ to a Hilbert space $\displaystyle{\mathcal{H}}$ by imposing canonical quantization
 
@@ -97,4 +97,7 @@ $$\tag{1.11}
 \end{align}
 $$
 
-footnote: here we ignore the higher order terms in the 
+footnote: here we ignore the higher order terms appearing in the geometric quantization or the deformation quantization, which is irrelevant to our discussion.
+
+the coefficients $\displaystyle{a_{an}}$ and $\displaystyle{a^{\dagger}_{an}}$ are promoted to operators, which is called the creation and annihilation operators. the vacuum state $\displaystyle{|0\rangle}$ is defined as the state that annihilated by all annihilation operators $\displaystyle{a_{an}}$. the Fock space $\displaystyle{\mathcal{H}}$ is spanned by the vacuum state $\displaystyle{|0\rangle}$, single particle states $\displaystyle{|n\rangle}$ which are defined by the action of the creation operators $\displaystyle{a^{\dagger}_{an}}$ on the vacuum state $\displaystyle{\ket{0}}$, and multi-particle states $\displaystyle{|n_{1},n_{2},\ldots \rangle}$, which are defined by tensor products of single particle states and suitable symmetrization for bosons or anti-symmetrization for fermions.
+
