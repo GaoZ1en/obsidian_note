@@ -32,7 +32,7 @@
     "undefined": {},
     "14fe3a1f-e2a1-4150-902f-193b5d9192db": {
       "2025-05-26": {
-        "totalDelta": 229,
+        "totalDelta": 314,
         "files": {
           "Articles/quantization/quantization for 1+3 dimensional electric field.md": {
             "initial": 3202,
@@ -61,6 +61,10 @@
           "Drafts/electric field.md": {
             "initial": 238,
             "current": 467
+          },
+          "useful matrix inverse.md": {
+            "initial": 0,
+            "current": 85
           }
         }
       }

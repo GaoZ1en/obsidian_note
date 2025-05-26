@@ -62,10 +62,7 @@ $$\tag{.}
 \begin{align}
 -i  (D^{-1})^{\nu \rho}(k) & =\begin{pmatrix}
 \vec{k}^{2} & k_{0}k _{i} \\
-k_{0}k _{i} & \left( 1-\frac{1}{\xi} \right)k _{i}k _{j}+\delta _{ij}k^{2}
+k_{0}k _{i} & \left( 1-\frac{1}{\xi} \right)k _{i}k _{j}-\delta _{ij}k^{2}
 \end{pmatrix}^{-1}
 \end{align}
 $$
-
-
-

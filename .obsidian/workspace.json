@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 158,
+                    "columns": 150,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
                     "rows": 70
                   }
@@ -107,9 +107,23 @@
               "icon": "lucide-file",
               "title": "electric field"
             }
+          },
+          {
+            "id": "8ba1169970a2c101",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "useful matrix inverse.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "useful matrix inverse"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,8 +212,7 @@
               "title": "Terminal: KoishiLaptop ❐ 0 ● 1 bash"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "56384ae1a9e66525",
@@ -284,7 +297,7 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.deepseek.com/a/chat/s/3d909a43-ebfe-43b1-9035-e5ad39fea520",
+                "url": "https://chat.deepseek.com/a/chat/s/c76ba2e6-be84-4128-9da9-aecc2e67035b",
                 "title": "DeepSeek - 探索未至之境",
                 "mode": "webview"
               },
@@ -292,12 +305,11 @@
               "title": "DeepSeek - 探索未至之境"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 483.5
+    "width": 533.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -309,10 +321,12 @@
       "obsidian-memos:Thino": false
     }
   },
-  "active": "e3ec0ae63a92352a",
+  "active": "3c8d3e695c80d788",
   "lastOpenFiles": [
-    "Drafts/BMS group.md",
     "Drafts/electric field.md",
+    "useful matrix inverse.md",
+    "Attachments/Pasted image 20250526114102.png",
+    "Drafts/BMS group.md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Drafts/prompt.md",
     "Drafts/project euler.md",
@@ -336,8 +350,6 @@
     "Diffeomorphism Invariance.md",
     "Articles/Test particle/Untitled.md",
     "Articles/Topologically massive gravity/finite spacetime region.md",
-    "Articles/Topologically massive gravity/finiteness.md",
-    "Articles/Topologically massive gravity/gravitation and scalar.md",
     "Articles/Test particle",
     "Note/Project Euler/1-50",
     "Note/Project Euler",
