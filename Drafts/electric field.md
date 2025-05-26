@@ -121,19 +121,15 @@ $$\tag{.}
  & =\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{i,z}\int \mathrm{d}^{3}\vec{w}G(\vec{y},\vec{w})\partial _{0,w}\partial _{j,w}\braket{ 0|\mathcal{T}A^{i}(z)A^{j}(w)|0 } \\
  & =\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{i,z}\braket{ 0|\mathcal{T}A^{i}(z)A^{0}(y)|0 }  \\
  & = \braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y)|0 } +\delta(x_{0}-y_{0})\int \mathrm{d}^{3}\vec{z} G(\vec{x},\vec{z})\partial _{j,z}\braket{ 0|[A^{i}(z),A^{0}(y)]|0 } \\
- & =
+ & = \braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y)|0 } 
 \end{align}
 $$
 
+so we have
 
-$$\tag{2.6'}
+$$\tag{.}
 \begin{align}
- & \int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0}\int \mathrm{d}^{3}\vec{z}G(\vec{x}',\vec{z})\partial _{z,k}\partial _{z,0} \braket{ 0|\mathcal{T}A^{j}(y)A^{k}(z)|0 }  \\
- & =\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\partial _{y,0} \braket{ 0|\mathcal{T}A^{j}(y)A_{0}(x')|0 }  \\
- & = \braket{ 0|\mathcal{T}A_{0}(x)A_{0}(x') } +\delta(x_{0}-x_{0}')\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\braket{ 0|[A^{j}(y),A_{0}(x')]|0 }  \\
- & = \braket{ 0|\mathcal{T}A_{0}(x)A_{0}(x') } +\delta(x_{0}-x_{0}')\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\left(\frac{i}{m^{2}}\vec{\nabla}^{2} _{y}\delta ^{3}(\vec{y}-\vec{x}')\right) \\
- & = \braket{ 0|\mathcal{T}A_{0}(x)A_{0}(x') } +\frac{i}{m^{2}}\delta(x_{0}-x_{0}')\int \mathrm{d}^{3}\vec{y}\vec{\nabla}^{2}_{y}G(\vec{x},\vec{y})\delta ^{3}(\vec{y}-\vec{x}') \\
- & = \braket{ 0|\mathcal{T}A_{0}(x)A_{0}(x') } +\frac{i}{m^{2}}\delta(x_{0}-x_{0}')\int \mathrm{d}^{3}\vec{y}\left(m^{2}G(\vec{x},\vec{y})+\delta ^{3}(\vec{x}-\vec{y})\right)\delta ^{3}(\vec{y}-\vec{x}') \\
- & = \braket{ 0|\mathcal{T}A_{0}(x)A_{0}(x') } +i\delta(x_{0}-x_{0}')G(\vec{x},\vec{x}')+\frac{i}{m^{2}}\delta ^{4}(x-x')
+\braket{ A^{0}(x)A^{0(y)} } & = \braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y)|0 } -i\delta(x_{0}-y_{0})G(\vec{x},\vec{y})
 \end{align}
 $$
+
