@@ -91,5 +91,3 @@ $$\tag{.}
 $$
 
 i am right.
-
-ke

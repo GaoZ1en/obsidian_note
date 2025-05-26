@@ -72,9 +72,25 @@ $$\tag{1.7}
 \begin{align}
 \int _{\tau_{1}}^{\tau_{2}} \mathrm{d}\tau  \frac{\mathrm{d}}{\mathrm{d}\tau}(mU^{\mu}\xi _{\mu}) & =\int _{\tau_{1}}^{\tau_{2}} \mathrm{d}\tau  \frac{\mathrm{d}}{\mathrm{d}\tau}(mU^{\mu}\xi _{\mu}) \int _{N} \mathrm{d}^{4}x\sqrt{ -g } \frac{\delta^{4}(x-x(\tau))}{\sqrt{ -g }} \\
  & =\int _{N}\mathrm{d}^{4}x\sqrt{ -g } \int _{\tau_{1}}^{\tau_{2}} \mathrm{d}\tau  \frac{\mathrm{d}}{\mathrm{d}\tau}(mU^{\mu}\xi _{\mu}) \frac{\delta ^{4}(x-x(\tau))}{\sqrt{ -g }} \\
- & =\int _{N} \mathrm{d}^{4}x\sqrt{ -g }\left( mU^{\mu}\xi _{\mu} \frac{\delta^{4}(x-x(\tau))}{\sqrt{ -g } } \right)\Big|^{\tau_{2}}_{\tau_{1}}-\int _{N} \mathrm{d}^{4}x\sqrt{ -g }\int _{\tau_{1}}^{\tau_{2}} mU^{\mu}\xi _{\mu}  \frac{\mathrm{d}}{\sqrt{ -g }\mathrm{d}\tau} \delta ^{4}(x-x(\tau))
+ & =\int _{N} \mathrm{d}^{4}x\sqrt{ -g }\left( mU^{\mu}\xi _{\mu} \frac{\delta^{4}(x-x(\tau))}{\sqrt{ -g } } \right)\Big|^{\tau_{2}}_{\tau_{1}}-\int _{N} \mathrm{d}^{4}x\sqrt{ -g }\int _{\tau_{1}}^{\tau_{2}} mU^{\mu}\xi _{\mu}  \frac{\mathrm{d}}{\sqrt{ -g }\mathrm{d}\tau} \delta ^{4}(x-x(\tau)) \\
+ & =mU^{\mu}\xi _{\mu}|_{\tau _{2}-\tau_{1}}-\int _{N}\mathrm{d}^{4}x\sqrt{ -g }\int ^{\tau_{2}}_{\tau_{1}}mU^{\mu}U^{\nu}\xi _{\mu} \frac{1}{\sqrt{ -g }} \frac{\partial}{\partial x^{\nu}(\tau)} \delta ^{4}(x-x(\tau)) \\
+ & =mU^{\mu}\xi _{\mu}|_{\tau_{2}-\tau_{1}}+\int _{N}\mathrm{d}^{4}x\sqrt{ -g }\int _{\tau_{1}}^{\tau_{2}}mU^{\mu}U^{\nu}\xi _{\mu} \frac{1}{\sqrt{ -g }} \partial _{\nu}\delta ^{4}(x-x(\tau)) \\
+ & =mU^{\mu}\xi _{\mu}|_{\tau_{2}-\tau_{1}}+\int _{N}\mathrm{d}^{4}x\sqrt{ -g }\int ^{\tau_{2}}_{\tau_{1}}mU^{\mu}U^{\nu}\xi _{\mu} \nabla _{\nu}\left(  \frac{\delta ^{4}(x-x(\tau))}{\sqrt{ -g }} \right) \\
+ & +\frac{1}{2}\int _{N}\mathrm{d}^{4}x\sqrt{ -g }g^{\rho \sigma}\partial _{\nu}g_{\rho \sigma}\int ^{\tau_{2}}_{\tau_{1}}mU^{\mu}U^{\nu}\xi _{\mu} \frac{\delta ^{4}(x-x(\tau))}{\sqrt{ -g }} \\
+ & =mU^{\mu}\xi _{\mu}|_{\tau_{2}-\tau_{1}}+\int _{N}\mathrm{d}^{4}x\sqrt{ -g }\nabla _{\mu}(T^{\mu \nu}\xi _{\nu}) +\frac{1}{2}\int _{N}\mathrm{d}^{4}x\sqrt{ -g }g^{\rho \sigma}\partial _{\mu}g_{\rho \sigma}T^{\mu \nu}\xi _{\nu}???
 \end{align}
 $$
+
+we have used
+
+$$\tag{1.8}
+\begin{align}
+\nabla _{\mu}\delta ^{4}(x-x(\tau)) & =\partial _{\mu}\delta ^{4}(x-x(\tau))-m\Gamma ^{\nu}_{~\nu \mu}\delta ^{4}(x-x(\tau)) \\
+ & =\partial _{\mu}\delta ^{4}(x-x(\tau))-\frac{1}{2}g^{\nu \rho}\partial _{\mu}g_{\nu \rho} \delta ^{4}(x-x(\tau))
+\end{align}
+$$
+
+where $\displaystyle{m=1}$ is the weight of the delta function $\displaystyle{\delta ^{4}(x-x(\tau))}$ as a scalar density. 
 
 ---
 
