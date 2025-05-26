@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 113,
+                    "columns": 197,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
                     "rows": 70
                   }
@@ -85,7 +85,7 @@
               "type": "markdown",
               "state": {
                 "file": "Articles/quantization/article/section 1.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
@@ -109,7 +109,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -309,8 +309,9 @@
       "obsidian-memos:Thino": false
     }
   },
-  "active": "f1219ecf396668f9",
+  "active": "e3ec0ae63a92352a",
   "lastOpenFiles": [
+    "Drafts/BMS group.md",
     "Articles/quantization/article/section 1.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/path integral quantization for Proca field.md",
@@ -326,7 +327,6 @@
     "Drafts/electric field.md",
     "Articles/Test particle/some direct calculation.md",
     "Articles/Test particle/Untitled.md",
-    "Drafts/BMS group.md",
     "Note/Mathematics/Bäcklund transformation.md",
     "Note/Mathematics/Applications of Laplace transform in integration calculating.md",
     "Note/Mathematics/Applications of residue theorem in integration calculating.md",
