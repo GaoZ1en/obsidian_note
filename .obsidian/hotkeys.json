@@ -117,14 +117,6 @@
       "key": "R"
     }
   ],
-  "contribution-graph:create-graph": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "Numpad1"
-    }
-  ],
   "terminal:open-terminal.developerConsole": [
     {
       "modifiers": [
@@ -145,5 +137,14 @@
       "key": "W"
     }
   ],
-  "workspace:close-window": []
+  "workspace:close-window": [],
+  "contribution-graph:create-graph": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "1"
+    }
+  ]
 }

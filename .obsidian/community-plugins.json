@@ -1,11 +1,12 @@
 [
   "obsidian-latex-suite",
-  "periodic-notes",
   "obsidian-tikzjax",
   "typewriter-mode",
   "convert-katex-to-mathjax",
   "obsidian-pretty-bibtex",
   "terminal",
   "calendar",
-  "github-copilot"
+  "github-copilot",
+  "contribution-graph",
+  "dataview"
 ]
