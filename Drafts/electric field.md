@@ -91,3 +91,25 @@ $$\tag{.}
 $$
 
 i am right.
+
+
+
+$$\tag{2.12}
+\begin{align}
+\braket{ A^{0}(x)A^{0}(y) } & = \frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i} A^{0}(x)A^{0}(y) \exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{i}A^{i})^{2}\right)\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{i}A^{i})^{2}\right)\right)}} \\
+ & =
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+S & =-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{i}A^{i})^{2} \\
+\delta S & =-\partial ^{\nu}(\partial _{0}A_{\nu}+\partial _{\nu}A^{0})\delta A^{0}-\frac{1}{\xi}\partial _{i}A^{i}\partial _{j}\delta A^{j}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\vec{\nabla}^{2}A_{0}-\partial _{0}(\vec{\nabla}\cdot \vec{A})
+\end{align}
+$$

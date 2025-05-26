@@ -245,7 +245,14 @@ $$\tag{2.11}
 \end{align}
 $$
 
-finally we will return 
+finally we will return to the canonical formalism.
+
+$$\tag{2.12}
+\begin{align}
+\braket{ A^{0}(x)A^{0}(y) } & = \frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i} A^{0}(x)A^{0}(y) \exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{i}A^{i})^{2}\right)\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{i}A^{i})^{2}\right)\right)}} \\
+ & =
+\end{align}
+$$
 
 ---
 here we present how Bjorken and Drell do the canonical quantization. we still start from the action

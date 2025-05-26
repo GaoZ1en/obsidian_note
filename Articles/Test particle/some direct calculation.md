@@ -224,7 +224,7 @@ $$\tag{2.15}
 \end{align}
 $$
 
-thus we have the the 1st law of black hole thermodynamics
+(this should be argued) thus we have the the 1st law of black hole thermodynamics
 
 $$\tag{2.16}
 \begin{align}
