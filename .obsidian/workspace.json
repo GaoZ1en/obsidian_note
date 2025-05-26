@@ -123,7 +123,8 @@
               "title": "useful matrix inverse"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -321,7 +322,7 @@
       "obsidian-memos:Thino": false
     }
   },
-  "active": "3c8d3e695c80d788",
+  "active": "ac6ded0997aaab30",
   "lastOpenFiles": [
     "Drafts/electric field.md",
     "useful matrix inverse.md",
