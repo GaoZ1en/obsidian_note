@@ -84,13 +84,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+                "file": "Articles/quantization/article/appendix A.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "quantization for 1+3 dimensional electric field"
+              "title": "appendix A"
             }
           },
           {
@@ -115,7 +115,7 @@
               "type": "markdown",
               "state": {
                 "file": "Drafts/electric field.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
@@ -124,7 +124,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -268,8 +268,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 321.5,
-    "collapsed": true
+    "width": 321.5
   },
   "right": {
     "id": "be754014b7083e79",
@@ -324,15 +323,24 @@
       "obsidian-memos:Thino": false
     }
   },
-  "active": "15a9310ae1fa22db",
+  "active": "841fa8e2e663e1cf",
   "lastOpenFiles": [
-    "Articles/quantization/path integral quantization for Proca field.md",
-    "Drafts/electric field.md",
+    "Articles/quantization/article/appendix A.md",
+    "TODO.md",
+    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+    "Articles/quantization/article/section 3.md",
+    "Articles/quantization/article/section 2.md",
+    "Articles/quantization/article/section 1.md",
+    "Articles/quantization/article/conclusion.md",
+    "Articles/quantization/article/introduction.md",
+    "Articles/quantization/article/abstract.md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+    "Drafts/electric field.md",
+    "Articles/quantization/path integral quantization for Proca field.md",
     "Articles/Test particle/some direct calculation.md",
     "Articles/Test particle/Untitled.md",
     "Drafts/BMS group.md",
-    "TODO.md",
     "Note/Mathematics/Bäcklund transformation.md",
     "Note/Mathematics/Applications of Laplace transform in integration calculating.md",
     "Note/Mathematics/Applications of residue theorem in integration calculating.md",
@@ -345,16 +353,7 @@
     "Drafts/Nambu-Goto action and cosmic string.md",
     "Drafts/path integral quantization for first and second class constraints.md",
     "Untitled.md",
-    "Articles/Test particle/read note for black hole entropy.md",
-    "Note/Project Euler/solutions.md",
-    "Articles/Noether charge/Conserved charge.md",
-    "Articles/Noether charge/Regularized action of pure AdS3 gravity.md",
-    "Articles/Noether charge/Two methods to compute the Noether charge.md",
-    "Articles/Noether charge/Virasoro algebra.md",
-    "Articles/Noether charge/Tasks.md",
-    "Articles/quantization/temporal gauge and Column gauge.md",
     "Attachments/Pasted image 20250524191924.png",
-    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Articles/Test particle",
     "Note/Project Euler/1-50",
     "Note/Project Euler",

@@ -312,7 +312,7 @@ and we have the time ordered correlation function
 
 $$\tag{2.13}
 \begin{align}
-\braket{ A_{i}(x)A_{j}(y) }  & =\braket{ 0|\mathcal{T}A_{i}(x)A_{j}(y)|0 }  \\
+\braket{ A_{i}(x)A_{j}(y) } & = \braket{ 0|\mathcal{T}A_{i}(x)A_{j}(y)|0 }  \\
  & =\sum _{n,s}\left(\theta(\Sigma _{x}-\Sigma _{y})\sigma ^{s}_{ni}(x)\sigma ^{s*}_{nj}(y)+\theta(\Sigma _{y}-\Sigma _{x})\sigma ^{s*}_{ni}(x)\sigma ^{s}_{nj}(y)\right)
 \end{align}
 $$

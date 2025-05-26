@@ -1,7 +1,7 @@
 ## Learn from research, goto Europe or Canada (CSC)
 
 1. 协变相空间框架下的量子化
-	1. on progress
+	1. 卧槽要写文章了
 2. [Freedman] Supergravity.pdf
 	1. mainly in ads/cft...
 3. [Henneaux, Teitelboim] Quantization of gauge systems.pdf
