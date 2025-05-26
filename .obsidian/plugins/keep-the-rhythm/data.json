@@ -1,0 +1,69 @@
+{
+  "settings": {
+    "intensityLevels": {
+      "low": 100,
+      "medium": 500,
+      "high": 1000
+    },
+    "colors": {
+      "light": {
+        "level_0": "#e0e0e0",
+        "level_1": "#9be9a8",
+        "level_2": "#6ad286",
+        "level_3": "#2ebd54",
+        "level_4": "#12a53e"
+      },
+      "dark": {
+        "level_0": "#ebedf015",
+        "level_1": "#0e4429",
+        "level_2": "#006d32",
+        "level_3": "#26a641",
+        "level_4": "#39d353"
+      }
+    },
+    "showOverview": true,
+    "showEntries": true,
+    "showHeatmap": true,
+    "enabledScripts": [
+      "LATIN"
+    ]
+  },
+  "devices": {
+    "undefined": {},
+    "14fe3a1f-e2a1-4150-902f-193b5d9192db": {
+      "2025-05-26": {
+        "totalDelta": 229,
+        "files": {
+          "Articles/quantization/quantization for 1+3 dimensional electric field.md": {
+            "initial": 3202,
+            "current": 3202
+          },
+          "Drafts/path integral quantization for first and second class constraints.md": {
+            "initial": 4746,
+            "current": 4746
+          },
+          "Drafts/Nambu-Goto action and cosmic string.md": {
+            "initial": 19,
+            "current": 19
+          },
+          "Drafts/project euler.md": {
+            "initial": 236,
+            "current": 236
+          },
+          "Drafts/prompt.md": {
+            "initial": 2,
+            "current": 2
+          },
+          "Drafts/BMS group.md": {
+            "initial": 1044,
+            "current": 1044
+          },
+          "Drafts/electric field.md": {
+            "initial": 238,
+            "current": 467
+          }
+        }
+      }
+    }
+  }
+}

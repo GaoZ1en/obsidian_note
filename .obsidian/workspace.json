@@ -92,9 +92,24 @@
               "icon": "lucide-file",
               "title": "quantization for 1+3 dimensional electric field"
             }
+          },
+          {
+            "id": "ac6ded0997aaab30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Drafts/electric field.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "electric field"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -129,6 +144,16 @@
               "state": {},
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
+            }
+          },
+          {
+            "id": "d39c9889905e5329",
+            "type": "leaf",
+            "state": {
+              "type": "keep-the-rhythm",
+              "state": {},
+              "icon": "calendar-days",
+              "title": "Keep the Rhythm"
             }
           },
           {
@@ -170,11 +195,11 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 [tmux]"
+              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 bash"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "56384ae1a9e66525",
@@ -245,7 +270,7 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.qwen.ai/c/66fefa26-a4a6-45d1-b31f-8eef29242161",
+                "url": "https://chat.qwen.ai/",
                 "title": "Qwen",
                 "mode": "webview"
               },
@@ -259,7 +284,7 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.deepseek.com/a/chat/s/a14fece8-21be-43e7-be22-d86ebfaf90d9",
+                "url": "https://chat.deepseek.com/a/chat/s/3d909a43-ebfe-43b1-9035-e5ad39fea520",
                 "title": "DeepSeek - 探索未至之境",
                 "mode": "webview"
               },
@@ -284,12 +309,17 @@
       "obsidian-memos:Thino": false
     }
   },
-  "active": "f1219ecf396668f9",
+  "active": "e3ec0ae63a92352a",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Articles/quantization/quantization for 1+3 dimensional electric field.md",
-    "Articles/Test particle/read note for black hole entropy.md",
     "Drafts/BMS group.md",
+    "Drafts/electric field.md",
+    "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+    "Drafts/prompt.md",
+    "Drafts/project euler.md",
+    "Drafts/Nambu-Goto action and cosmic string.md",
+    "Drafts/path integral quantization for first and second class constraints.md",
+    "Untitled.md",
+    "Articles/Test particle/read note for black hole entropy.md",
     "Articles/Test particle/some direct calculation.md",
     "TODO.md",
     "Note/Project Euler/solutions.md",
@@ -299,7 +329,6 @@
     "Articles/Noether charge/Virasoro algebra.md",
     "Articles/Noether charge/Tasks.md",
     "Articles/quantization/path integral quantization for Proca field.md",
-    "Drafts/Untitled.md",
     "Articles/quantization/temporal gauge and Column gauge.md",
     "Attachments/Pasted image 20250524191924.png",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
@@ -309,10 +338,6 @@
     "Articles/Topologically massive gravity/finite spacetime region.md",
     "Articles/Topologically massive gravity/finiteness.md",
     "Articles/Topologically massive gravity/gravitation and scalar.md",
-    "Articles/Topologically massive gravity/Maxwell-Chern-Simons theory.md",
-    "Drafts/path integral quantization for first and second class constraints.md",
-    "Articles/quantization/path integral quantization for constrained system.md",
-    "Drafts/project euler.md",
     "Articles/Test particle",
     "Note/Project Euler/1-50",
     "Note/Project Euler",
