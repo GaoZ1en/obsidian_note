@@ -6,11 +6,11 @@ we consider a system with the following Lagrangian
 
 $$\tag{1.1}
 \begin{align}
-L & =\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}
+L[x,\phi] & =\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}
 \end{align}
 $$
 
-here we assume that $\displaystyle{m-\lambda ^{2}>0}$. we take a variation of the Lagrangian as
+this action describes a harmonic oscillator with effective Lagrangian $\displaystyle{L[x]=\frac{1}{2}(m-\lambda ^{2})\dot{x}^{2}-\frac{1}{2}kx^{2}}$. here we assume that $\displaystyle{m-\lambda ^{2}>0}$. we take a variation of the Lagrangian as
 
 $$\tag{1.2}
 \begin{align}
@@ -87,7 +87,7 @@ $$\tag{1.9}
 \braket{ 0|\mathcal{T}x(t)\phi(t')|0 } & = \theta(t-t')\braket{ 0|x(t)\phi(t')|0 } +\theta(t'-t)\braket{ 0|\phi(t')x(t)|0 }  \\
  & =-\frac{i\lambda}{2m'}(\theta(t-t')e^{-i \omega(t-t')}-\theta(t'-t)e^{i \omega(t-t')}) \\ 
  & =-\frac{\lambda}{im'}\partial _{t}\int \frac{\mathrm{d}p_{0}}{2\pi} \frac{e^{-ip_{0}(t-t')}}{-p_{0}^{2}+\omega ^{2}-i\varepsilon} \\
-\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & = \theta(t-t')\braket{ 0|x(t)x(t')|0 } +\theta(t'-t)\braket{ 0|x(t')x(t)|0 }  \\
+\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & = \theta(t-t')\braket{ 0|\phi(t)\phi(t')|0 } +\theta(t'-t)\braket{ 0|\phi(t')\phi(t)|0 }  \\
  & =\frac{\lambda ^{2}\omega}{2m'}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')}) \\
  & =-\frac{\lambda ^{2}}{im'}\partial _{t}^{2}\int \frac{\mathrm{d}p_{0}}{2\pi} \frac{e^{-ip_{0}(t-t')}}{-p_{0}^{2}+\omega ^{2}-i\varepsilon} -\frac{i\lambda ^{2}}{m'}\delta(t-t')\\
 \end{align}
@@ -155,7 +155,7 @@ $$\tag{1.15}
 \begin{align}
 \braket{ \phi(t)\phi(t') } & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \phi(t)\phi(t')\exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}\right)\right)}} \\
  & =\frac{\displaystyle{\int \mathcal{D}x\left(\lambda ^{2}\dot{x}(t)\dot{x}(t')+i\delta(t-t')\right)\exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m'\dot{x}^{2}-\frac{1}{2}kx^{2}\right)\right)}}{\displaystyle{\int \mathcal{D}x\exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m'\dot{x}^{2}-\frac{1}{2}kx^{2}\right)\right)}} \\
- & =\lambda ^{2}\partial _{t}\partial _{t'}\braket{ 0|\mathcal{lT}x(t)x(t')|0 } +i\delta(t-t')
+ & =\lambda ^{2}\partial _{t}\partial _{t'}\braket{ 0|\mathcal{T}x(t)x(t')|0 } +i\delta(t-t')
 \end{align}
 $$
 

@@ -99,6 +99,21 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Articles/quantization/article/section 3.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "section 3"
+            }
+          },
+          {
+            "id": "b775edc33bb7eda4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Articles/quantization/article/section 2.md",
                 "mode": "source",
                 "source": false,
@@ -107,24 +122,9 @@
               "icon": "lucide-file",
               "title": "section 2"
             }
-          },
-          {
-            "id": "344754df6e7c697d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/article/appendix A.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "appendix A"
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -384,8 +384,8 @@
           }
         ],
         "direction": "vertical",
-        "x": 2240,
-        "y": 1012,
+        "x": 2242,
+        "y": 1014,
         "width": 956,
         "height": 984,
         "maximize": false,
@@ -393,17 +393,16 @@
       }
     ]
   },
-  "active": "344754df6e7c697d",
+  "active": "7c248e1345b4fc74",
   "lastOpenFiles": [
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
-    "Articles/quantization/article/appendix A.md",
     "Articles/quantization/article/section 3.md",
-    "Articles/quantization/path integral quantization for constrained system.md",
+    "Articles/quantization/article/section 2.md",
     "Articles/quantization/article/section 1_introduction.md",
-    "Articles/quantization/article/section 2.md",
-    "Articles/quantization/article/section 2.md",
-    "Drafts/BMS group.md",
+    "Articles/quantization/article/appendix A.md",
     "Articles/Test particle/some direct calculation.md",
+    "Articles/quantization/path integral quantization for constrained system.md",
+    "Drafts/BMS group.md",
     "Drafts/ward identity.md",
     "Articles/quantization/harmonic oscillator with multiplier.md",
     "Articles/quantization/first example.md",

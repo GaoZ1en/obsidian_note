@@ -75,7 +75,7 @@ we define the Hamiltonian flow $\displaystyle{X_{\mathcal{O}}}$ corresponding to
 
 $$\tag{1.9}
 \begin{align}
-X_{\mathcal{O},\Sigma} & = i \sum _{a,n}\int _{\Sigma}\left(  \frac{\delta \mathcal{O}}{\delta a_{an}^{\dagger}} \frac{\delta}{\delta a_{an}}-\frac{\delta \mathcal{O}}{\delta a_{an}} \frac{\delta}{\delta a^{\dagger}_{an}}\right)
+X_{\mathcal{O},\Sigma} & = -i \sum _{a,n}\int _{\Sigma}\left(  \frac{\delta \mathcal{O}}{\delta a_{an}^{\dagger}} \frac{\delta}{\delta a_{an}}-\frac{\delta \mathcal{O}}{\delta a_{an}} \frac{\delta}{\delta a^{\dagger}_{an}}\right)
 \end{align}
 $$
 
