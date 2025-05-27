@@ -70,11 +70,40 @@ $$\tag{1.8}
 \end{align}
 $$
 
-where the integral 
+where the integral contour for $\displaystyle{k^{0}}$ is chosen to be as follows
+
+![[Attachments/Pasted image 20250425232210.png]]
+
+the time ordered 2-pt correlation function is defined as
+
+$$\tag{1.9}
+\begin{align}
+\braket{ 0|\mathcal{T}\phi(x)\phi(y)|0 } & =\theta(x^{0}-y^{0})\braket{ 0|\phi(x)\phi(y)|0 }+\theta(y^{0}-x^{0})\braket{ 0|\phi(y)\phi(x)|0 } \\
+ & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}) \\
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)}
+\end{align}
+$$
 
 ## Proca field
 
 ### canonical quantization of Proca field
+
+the Proca field is a massive vector field, which is described by the action
+
+$$\tag{1.10}
+\begin{align}
+S & =\int _{M}\mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)
+\end{align}
+$$
+
+where the field strength $\displaystyle{F_{\mu \nu}}$ is defined as $\displaystyle{F_{\mu \nu}=\partial _{\mu}A_{\nu}-\partial _{\nu}A_{\mu}}$. we take a variation of the action
+
+$$\tag{1.11}
+\begin{align}
+\delta S & =\int _{M}\mathrm{d}^{4}xE^{\nu}\delta A_{\nu}+\theta|_{\Sigma _{f}-\Sigma _{i}}
+\end{align}
+$$
+
 
 ### path integral quantization of Proca field
 
