@@ -1,6 +1,8 @@
 # a system with second class constraints
 
-we first consider a system with the following Lagrangian
+## canonical formalism in covariant phase space
+
+we consider a system with the following Lagrangian
 
 $$\tag{1.1}
 \begin{align}
@@ -91,7 +93,11 @@ $$\tag{1.9}
 \end{align}
 $$
 
-we note that the $\displaystyle{\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 }}$ contains a delta function, which can be explained in path integral formalism. consider the following generating functional
+we note that the $\displaystyle{\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 }}$ contains a delta function, which can be explained in path integral formalism. 
+
+## path integral formalism
+
+consider the following generating functional
 
 $$\tag{1.10}
 \begin{align}
@@ -170,5 +176,7 @@ $$\tag{1.17}
 \braket{ \phi(t)\phi(t') } & =\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } +\frac{im}{m'}\delta(t-t')
 \end{align}
 $$
+
+the extra term is exactly the difference between canonical formalism and the path integral formalism. 
 
 ## 
