@@ -185,12 +185,27 @@ the extra term is exactly the difference between canonical formalism and the pat
 
 ## Faddeev-Senjanovic formalism
 
+
 for a system with second class constraints, Faddeev and Senjanovic proposed a formalism to calculate the path integral as
 
 $$\tag{1.18}
 \begin{align}
-Z[J_{a}] & =\int \mathcal{D}\phi ^{a}\mathcal{D}\pi _{a}\delta(\varphi _{i}) \det(\left\{\varphi _{i},\varphi _{j}\right\}_{\mathrm{PB}})^{1/2} \exp\left(i \int \mathrm{d}^{d}x(+J_{a}\phi ^{a})\right)
+Z & =\int \mathcal{D}\phi ^{a}\mathcal{D}\pi _{a}\prod _{i}\delta(\varphi _{i}) \det(\left\{\varphi _{i},\varphi _{j}\right\}_{\mathrm{PB}})^{1/2} \exp\left(i \int \mathrm{d}^{d}x(\pi _{a}\phi ^{a}-H[\phi ^{a},\pi _{a}])\right)
 \end{align}
 $$
 
-where 
+here $\displaystyle{\varphi _{i}}$ are second class constraints, $\displaystyle{\pi _{a}}$ is the canonical momentum corresponding to dynamical variable $\displaystyle{\phi ^{a}}$, and $\displaystyle{H[\phi ^{a},\pi _{a}]}$ is the Hamiltonian. $\displaystyle{\delta(\varphi _{i})}$ restrict the path integral to the subspace of phase space that satisfies the second class constraints, and $\displaystyle{\det(\left\{\varphi _{i},\varphi _{j}\right\}_{\mathrm{PB}})^{1/2}}$ is the Phaffian of the Poisson bracket matrix $\displaystyle{\left\{\varphi _{i},\varphi _{j}\right\}_{\mathrm{PB}}}$, which accounts for the change of measure in the path integral.
+
+having defined the path integral, we can first define the generating functional as
+
+$$\tag{1.19}
+\begin{align}
+Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}p_{x}\mathcal{D}\phi \mathcal{D}p_{\phi}\prod ^{2}_{i=1}\delta(\varphi _{i})\det\left(\left\{\varphi _{i},\varphi _{j}\right\}_{\mathrm{PB}}\right)^{1/2}\exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(p_{x}\dot{x}+p_{\phi}\dot{\phi}-H[x,\phi]+Jx+\eta \phi\right)\right) \\
+ & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\lambda \dot{x}\phi\left( \frac{m}{\lambda ^{2}}-1 \right)-\frac{1}{2}\phi ^{2}\left( \frac{m}{\lambda ^{2}}-1 \right)-\frac{1}{2}kx^{2}+Jx+\eta \phi\right)\right) \\
+ & =\exp\left(-\frac{i}{2}\int _{-\infty}^{+\infty}\mathrm{d}t\eta ^{2}\right)\exp\left(-\frac{1}{2}\int \mathrm{d}t\mathrm{d}t'(J-\lambda\dot{\eta})(t)G(t,t')(J-\lambda \dot{\eta})(t')\right)
+\end{align}
+$$
+
+and the following discussion is the same as subsection 2.
+
+cite [https://doi.org/10.1016/0003-4916(76)90062-2] and [Henneaux, Teitelboim]
