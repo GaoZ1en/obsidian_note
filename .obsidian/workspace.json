@@ -305,7 +305,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5
+    "width": 305.5,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -405,7 +406,7 @@
           }
         ],
         "direction": "vertical",
-        "x": 1762,
+        "x": -2878,
         "y": 1014,
         "width": 1436,
         "height": 984,
@@ -416,9 +417,9 @@
   },
   "active": "3f25fcd5be165342",
   "lastOpenFiles": [
-    "Articles/quantization/path integral quantization for constrained system.md",
-    "Articles/quantization/article/appendix A.md",
     "Articles/quantization/article/section 2.md",
+    "Articles/quantization/article/appendix A.md",
+    "Articles/quantization/path integral quantization for constrained system.md",
     "Articles/quantization/article/section 1.md",
     "Drafts/ward identity.md",
     "Articles/quantization/harmonic oscillator with multiplier.md",

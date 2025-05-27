@@ -141,7 +141,7 @@
         }
       },
       "2025-05-27": {
-        "totalDelta": 2800,
+        "totalDelta": 2883,
         "files": {
           "Articles/quantization/article/section 2.md": {
             "initial": 18,
@@ -149,7 +149,7 @@
           },
           "Articles/quantization/article/appendix A.md": {
             "initial": 8,
-            "current": 1572
+            "current": 1655
           },
           "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md": {
             "initial": 3516,

@@ -179,4 +179,18 @@ $$
 
 the extra term is exactly the difference between canonical formalism and the path integral formalism. 
 
-## 
+## Dirac approach to system with second class constraints
+
+
+
+## Faddeev-Senjanovic formalism
+
+for a system with second class constraints, Faddeev and Senjanovic proposed a formalism to calculate the path integral as
+
+$$\tag{1.18}
+\begin{align}
+Z[J_{a}] & =\int \mathcal{D}\phi ^{a}\mathcal{D}\pi _{a}\delta(\varphi _{i}) \det(\left\{\varphi _{i},\varphi _{j}\right\}_{\mathrm{PB}})^{1/2} \exp\left(i \int \mathrm{d}^{d}x(+J_{a}\phi ^{a})\right)
+\end{align}
+$$
+
+where 
