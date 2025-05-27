@@ -4,6 +4,13 @@ S & =-m\int \mathrm{d}\tau \sqrt{ -g_{\mu \nu} \frac{\mathrm{d} x^{\mu}}{\mathrm
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+=m\int \mathrm{d}\tau  \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} & =m \int \mathrm{d}\tau  \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \int \mathrm{d}^{4}x \sqrt{ -g } \frac{\delta ^{4}(x-x(\tau))}{\sqrt{ -g }} \\
+ & =\int \mathrm{d}^{4}x\sqrt{ -g } \int \mathrm{d}\tau  \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \frac{\delta ^{4}(x-x(\tau))}{\sqrt{ -g }}
+\end{align}
+$$
+
 ---
 
 make a variation
@@ -61,6 +68,12 @@ $$\tag{1.6}
 \begin{align}
 (-\nabla _{\mu}T^{\mu \nu}+F^{\nu \mu}j_{\mu})\xi _{\nu} & =\int _{\tau_{1}}^{\tau_{2}}\mathrm{d}\tau E_{x,\nu} \frac{\delta ^{4}(x-x(\tau))}{\sqrt{ -g }} \\
 \int _{N}\mathrm{d}^{4}x\sqrt{ -g }\nabla _{\mu}(T^{\mu \nu}\xi _{\nu}+j ^{\mu}A^{\nu}\xi _{\nu}) & =\int _{\tau_{1}}^{\tau_{2}}\mathrm{d}\tau  \frac{\mathrm{d}}{\mathrm{d}\tau}\left[ \left( mg_{\mu \nu} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}+qA_{\mu} \right)\xi ^{\mu} \right]
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\left( m g_{\mu \nu} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}+qA_{\mu} \right)\xi ^{\mu}
 \end{align}
 $$
 
