@@ -169,7 +169,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -226,8 +226,7 @@
               "title": "Keep the Rhythm"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "56384ae1a9e66525",
@@ -375,17 +374,17 @@
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
       "terminal:Open terminal": false,
-      "periodic-notes:Open today": false,
-      "keep-the-rhythm:Word Count Stats": false,
-      "obsidian-memos:Thino": false
+      "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "e3ec0ae63a92352a",
+  "active": "49baa790dfd2320c",
   "lastOpenFiles": [
-    "Drafts/ward identity.md",
-    "Articles/quantization/article/section 1.md",
-    "TODO.md",
+    "Articles/some generalization CPS/p-form symmetry.md",
     "Articles/quantization/article/section 2.md",
+    "Articles/some generalization CPS/harmonic oscillator.md",
+    "Articles/quantization/article/section 1.md",
+    "Drafts/ward identity.md",
+    "TODO.md",
     "Articles/Test particle/some direct calculation.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Drafts/BMS group.md",
@@ -408,8 +407,6 @@
     "Articles/quantization/article",
     "Attachments/Pasted image 20250526114102.png",
     "Drafts/prompt.md",
-    "Drafts/project euler.md",
-    "Drafts/Nambu-Goto action and cosmic string.md",
     "Attachments/Pasted image 20250524191924.png",
     "Articles/Test particle",
     "Note/Project Euler/1-50",

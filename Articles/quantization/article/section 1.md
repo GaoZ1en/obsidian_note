@@ -95,53 +95,11 @@ $$\tag{1.11}
 \end{align}
 $$
 
-now we consider symmetries and corresponding Noether charges. the symmetry can be represented by a vector field $\displaystyle{X_{\lambda}}$ on the the set of configuration
-
-$$\tag{1.12}
-\begin{align}
-X_{\lambda} & =\int \mathrm{d}^{d}x\delta _{\lambda}\phi ^{a}(x) \frac{\delta}{\delta \phi ^{a}(x)}
-\end{align}
-$$
-
-and act on the action $\displaystyle{S[\phi ^{a}]}$, we have
-
-$$\tag{1.13}
-\begin{align}
-X_{\lambda}\cdot S[\phi ^{a}] & =\alpha _{\lambda}[\phi ^{a}]|_{\Sigma _{f}}-\alpha _{\lambda}[\phi ^{a}]|_{\Sigma _{i}}
-\end{align}
-$$
-
-here we assume that there is no classical anomaly term $\displaystyle{\beta _{\lambda}}$, which is configuration independent and supports on $\displaystyle{M}$ and $\displaystyle{\Gamma}$. then the Noether charge is defined as
-
-$$\tag{1.14}
-\begin{align}
-H_{\lambda} & =X_{\lambda}\cdot \theta-\alpha _{\lambda}
-\end{align}
-$$
-
-the Noether theorem can be stated as follows
-
-1. the onshell Noether charge $\displaystyle{H_{\lambda}}$ is time independent
-
-$$\tag{1.15}
-\begin{align}
-H_{\lambda}|_{\Sigma _{f},\mathcal{P}}-H_{\lambda}|_{\Sigma _{i},\mathcal{P}} &=0
-\end{align}
-$$
-
-2. the symmetry $\displaystyle{X_{\lambda}}$ and the Noether charge $\displaystyle{H_{\lambda}}$ satisfy the following
-
-$$\tag{1.16}
-\begin{align}
-(X_{\lambda}\cdot \omega+\delta H_{\lambda})|_{\mathcal{P}} & =0
-\end{align}
-$$
-
 ### covariant phase space formalism in quantum level
 
 we promote the pre-phase space $\displaystyle{\tilde{\mathcal{P}}}$ to a Hilbert space $\displaystyle{\mathcal{H}}$ by imposing canonical quantization
 
-$$\tag{1.17}
+$$\tag{1.12}
 \begin{align}
 \begin{cases}
 [\mathcal{O}_{1},\mathcal{O}_{2}]=i\left\{\mathcal{O}_{1},\mathcal{O}_{2}\right\}_{\mathrm{PB}}  & \text{ for bosonic operators } \\
@@ -156,7 +114,7 @@ the coefficients $\displaystyle{a_{an}}$ and $\displaystyle{a^{\dagger}_{an}}$ a
 
 correlation functions are defined as the expectation value of the product of operators in the vacuum state as usual
 
-$$\tag{1.18}
+$$\tag{1.13}
 \begin{align}
 \braket{ \mathcal{O}_{1}\dots \mathcal{O}_{n} }= \braket{ 0|\mathcal{O}_{1}\dots \mathcal{O}_{n}|0 } 
 \end{align}
@@ -164,7 +122,7 @@ $$
 
 time ordered correlation functions are defined as
 
-$$\tag{1.19}
+$$\tag{1.14}
 \begin{align}
 \braket{ \mathcal{T}\mathcal{O}_{1}\dots \mathcal{O}_{n} } & =\braket{ 0|\mathcal{T}\mathcal{O}_{1}\dots \mathcal{O}_{n}|0 }
 \end{align}
@@ -172,10 +130,59 @@ $$
 
 where the time ordering operator $\displaystyle{\mathcal{T}}$ orders the operators according to their time arguments, with the earliest time on the right. we emphasize that the time ordering correlation function is independent of the choice of time slices $\displaystyle{\Sigma _{t}}$. 
 
-Noether theorem in classical level can be promoted to Ward identities in quantum level as
+### Noether theorem and Ward identity
+
+now we consider symmetries and corresponding Noether charges. the symmetry can be represented by a vector field $\displaystyle{X_{\lambda}}$ on the the set of configuration
+
+$$\tag{1.15}
+\begin{align}
+X_{\lambda} & =\int \mathrm{d}^{d}x\delta _{\lambda}\phi ^{a}(x) \frac{\delta}{\delta \phi ^{a}(x)}
+\end{align}
+$$
+
+and act on the action $\displaystyle{S[\phi ^{a}]}$, we have
+
+$$\tag{1.16}
+\begin{align}
+X_{\lambda}\cdot S[\phi ^{a}] & =\alpha _{\lambda}[\phi ^{a}]|_{\Sigma _{f}}-\alpha _{\lambda}[\phi ^{a}]|_{\Sigma _{i}}
+\end{align}
+$$
+
+here we assume that there is no classical anomaly term $\displaystyle{\beta _{\lambda}}$, which is configuration independent and supports on $\displaystyle{M}$ and $\displaystyle{\Gamma}$. then the Noether charge is defined as
+
+$$\tag{1.17}
+\begin{align}
+H_{\lambda} & =X_{\lambda}\cdot \theta-\alpha _{\lambda}
+\end{align}
+$$
+
+the Noether theorem can be stated as follows
+
+1. the onshell Noether charge $\displaystyle{H_{\lambda}}$ is time independent
+
+$$\tag{1.18}
+\begin{align}
+H_{\lambda}|_{\Sigma _{f},\mathcal{P}}-H_{\lambda}|_{\Sigma _{i},\mathcal{P}} &=0
+\end{align}
+$$
+
+2. the symmetry $\displaystyle{X_{\lambda}}$ and the Noether charge $\displaystyle{H_{\lambda}}$ satisfy the following
+
+$$\tag{1.19}
+\begin{align}
+(X_{\lambda}\cdot \omega+\delta H_{\lambda})|_{\mathcal{P}} & =0
+\end{align}
+$$
+
+Noether theorem (1.15) in classical level can be promoted to Ward identities in quantum level as
 
 $$\tag{1.20}
 \begin{align}
-\braket{ H_{\lambda}\mathcal{O}_{1}\dots \mathcal{O}_{n} }|_{\Sigma _{f},\mathcal{P}}-\braket{ \mathcal{O}_{1}\dots \mathcal{O}_{n}H_{\lambda} }|_{\Sigma _{i},\mathcal{P}}+\sum ^{n}_{i=1}\braket{ \mathcal{O}_{1}\dots X_{\lambda}\cdot \mathcal{O}_{i}\dots \mathcal{O}_{n} }=0
+\braket{ H_{\lambda}\mathcal{O}_{1}\dots \mathcal{O}_{n} }|_{\Sigma _{f},\mathcal{P}}-\braket{ \mathcal{O}_{1}\dots \mathcal{O}_{n}H_{\lambda} }|_{\Sigma _{i},\mathcal{P}}+\sum ^{n}_{i=1}\braket{ \mathcal{O}_{1}\dots (X_{\lambda}\cdot \delta\mathcal{O}_{i})\dots \mathcal{O}_{n} }=0
 \end{align}
 $$
+
+where $\displaystyle{X_{\lambda}\cdot \delta \mathcal{O}_{i}}$ is the infinitesimal transformation of the operator $\displaystyle{\mathcal{O}_{i}}$ under the symmetry $\displaystyle{X_{\lambda}}$.
+
+(proof)
+
