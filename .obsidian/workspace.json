@@ -108,7 +108,8 @@
               "title": "week 14"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -307,13 +308,13 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "3c8d3e695c80d788",
+  "active": "7c248e1345b4fc74",
   "lastOpenFiles": [
+    "Articles/quantization/article/section 2.md",
     "Lecture/2025 spring/english/week 14.md",
     "Articles/quantization/article/section 3.md",
     "Articles/Test particle/some direct calculation.md",
     "TODO.md",
-    "Articles/quantization/article/section 2.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/harmonic oscillator with multiplier.md",
     "Articles/quantization/article/section 1_introduction.md",
