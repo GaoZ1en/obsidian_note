@@ -141,7 +141,7 @@
         }
       },
       "2025-05-27": {
-        "totalDelta": 1011,
+        "totalDelta": 1209,
         "files": {
           "Articles/quantization/article/section 2.md": {
             "initial": 18,
@@ -161,7 +161,7 @@
           },
           "Articles/quantization/article/section 1.md": {
             "initial": 1155,
-            "current": 1390
+            "current": 1588
           },
           "Articles/Test particle/some direct calculation.md": {
             "initial": 2368,
