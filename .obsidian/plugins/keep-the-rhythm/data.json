@@ -141,11 +141,11 @@
         }
       },
       "2025-05-27": {
-        "totalDelta": 1725,
+        "totalDelta": 2096,
         "files": {
           "Articles/quantization/article/section 2.md": {
             "initial": 18,
-            "current": 498
+            "current": 871
           },
           "Articles/quantization/article/appendix A.md": {
             "initial": 8,
@@ -185,7 +185,7 @@
           },
           "Articles/quantization/path integral quantization for constrained system.md": {
             "initial": 5578,
-            "current": 5578
+            "current": 5576
           },
           "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md": {
             "initial": 1580,

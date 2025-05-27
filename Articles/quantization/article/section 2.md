@@ -81,7 +81,39 @@ and the 2-point time ordered correlation functions are given by
 
 $$\tag{1.9}
 \begin{align}
-\braket{ 0|\mathcal{T}x(t)x(t)|0 } & = \theta(t-t')\braket{ 0|x(t)x(t')|0 } +\theta(t'-t)\braket{ 0|x(t')x(t)|0 }  \\
- & =\frac{1}{2m'\omega}(\theta(t))
+\braket{ 0|\mathcal{T}x(t)x(t')|0 } & = \theta(t-t')\braket{ 0|x(t)x(t')|0 } +\theta(t'-t)\braket{ 0|x(t')x(t)|0 }  \\
+ & =\frac{1}{2m'\omega}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')}) \\
+ & =\frac{1}{im'} \int \frac{\mathrm{d}p_{0}}{2\pi} \frac{e^{-ip_{0}(t-t')}}{-p_{0}^{2}+\omega ^{2}-i\varepsilon} \\
+\braket{ 0|\mathcal{T}x(t)\phi(t')|0 } & = \theta(t-t')\braket{ 0|x(t)\phi(t')|0 } +\theta(t'-t)\braket{ 0|\phi(t')x(t)|0 }  \\
+ & =-\frac{i\lambda}{2m'}(\theta(t-t')e^{-i \omega(t-t')}-\theta(t'-t)e^{i \omega(t-t')}) \\ 
+ & =-\frac{\lambda}{im'}\partial _{t}\int \frac{\mathrm{d}p_{0}}{2\pi} \frac{e^{-ip_{0}(t-t')}}{-p_{0}^{2}+\omega ^{2}-i\varepsilon} \\
+\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & = \theta(t-t')\braket{ 0|x(t)x(t')|0 } +\theta(t'-t)\braket{ 0|x(t')x(t)|0 }  \\
+ & =\frac{\lambda ^{2}\omega}{2m'}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')}) \\
+ & =-\frac{\lambda ^{2}}{im'}\partial _{t}^{2}\int \frac{\mathrm{d}p_{0}}{2\pi} \frac{e^{-ip_{0}(t-t')}}{-p_{0}^{2}+\omega ^{2}-i\varepsilon} -\frac{i\lambda ^{2}}{m'}\delta(t-t')\\
+\end{align}
+$$
+
+we note that the $\displaystyle{\braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 }}$ contains a delta function, which can be explained in path integral formalism. consider the following generating functional
+
+$$\tag{1.10}
+\begin{align}
+Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\delta(L[x,\phi]+Jx+\eta \phi)\right) \\
+ & =\exp\left(-\frac{i}{2}\int _{-\infty}^{+\infty}\mathrm{d}t\eta ^{2}\right)\exp\left(-\frac{1}{2}\int _{-\infty}^{+\infty}\mathrm{d}t\mathrm{d}t'(J-\lambda \dot{\eta})(t)G(t,t')(J-\lambda \dot{\eta})(t')\right)
+\end{align}
+$$
+
+where the Green function $\displaystyle{G(t,t')}$ satisfies
+
+$$\tag{1.11}
+\begin{align}
+\left(m'\frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k-i\varepsilon\right)G(t,t')=\delta(t-t')
+\end{align}
+$$
+
+and the solution is given by
+
+$$\tag{1.12}
+\begin{align}
+G(t,t') & =\frac{1}{im}\int \frac{\mathrm{d}p_{0}}{2\pi} \frac{e^{-ip_{0}(t-t')}}{-p_{0}^{2}+\omega ^{2}-i\varepsilon}
 \end{align}
 $$
