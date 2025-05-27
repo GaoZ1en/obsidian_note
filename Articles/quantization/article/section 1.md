@@ -95,6 +95,24 @@ $$\tag{1.11}
 \end{align}
 $$
 
+now we consider symmetries and corresponding Noether charges. the symmetry can be represented by a vector field $\displaystyle{X_{\lambda}}$ on the the set of configuration
+
+$$\tag{1.12}
+\begin{align}
+X_{\lambda} & =\int \mathrm{d}^{d}x\delta _{\lambda}\phi ^{a}(x) \frac{\delta}{\delta \phi ^{a}(x)}
+\end{align}
+$$
+
+and act on the action $\displaystyle{S[\phi ^{a}]}$, we have
+
+$$\tag{1.13}
+\begin{align}
+X_{\lambda}\cdot S & =\alpha _{\lambda}|_{\Sigma _{f}}-\alpha _{\lambda}|_{\Sigma _{i}}+\beta _{\lambda}|_{M}
+\end{align}
+$$
+
+here $\displaystyle{\beta _{\lambda}|_{M}}$ is the configuration independent term 
+
 ### covariant phase space formalism in quantum level
 
 we promote the pre-phase space $\displaystyle{\tilde{\mathcal{P}}}$ to a Hilbert space $\displaystyle{\mathcal{H}}$ by imposing canonical quantization
