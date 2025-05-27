@@ -141,15 +141,15 @@
         }
       },
       "2025-05-27": {
-        "totalDelta": 3194,
+        "totalDelta": 3263,
         "files": {
           "Articles/quantization/article/section 2.md": {
-            "initial": 18,
-            "current": 12
+            "initial": 1155,
+            "current": 1623
           },
           "Articles/quantization/article/appendix A.md": {
             "initial": 8,
-            "current": 1966
+            "current": 1970
           },
           "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md": {
             "initial": 3516,
@@ -158,10 +158,6 @@
           "Drafts/BMS group.md": {
             "initial": 1044,
             "current": 1044
-          },
-          "Articles/quantization/article/section 1.md": {
-            "initial": 1155,
-            "current": 1623
           },
           "Articles/Test particle/some direct calculation.md": {
             "initial": 2368,
@@ -198,6 +194,14 @@
           "Articles/quantization/harmonic oscillator with multiplier.md": {
             "initial": 1954,
             "current": 1954
+          },
+          "Articles/quantization/article/section 3.md": {
+            "initial": 31,
+            "current": 96
+          },
+          "Articles/quantization/article/section 1_introduction.md": {
+            "initial": 0,
+            "current": 0
           }
         }
       }

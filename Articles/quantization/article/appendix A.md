@@ -181,7 +181,7 @@ the extra term is exactly the difference between canonical formalism and the pat
 
 ## Dirac approach to system with second class constraints
 
-
+(waiting to be completed)
 
 ## Faddeev-Senjanovic formalism
 
