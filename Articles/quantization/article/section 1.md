@@ -185,4 +185,3 @@ $$
 where $\displaystyle{X_{\lambda}\cdot \delta \mathcal{O}_{i}}$ is the infinitesimal transformation of the operator $\displaystyle{\mathcal{O}_{i}}$ under the symmetry $\displaystyle{X_{\lambda}}$.
 
 (proof)
-
