@@ -242,6 +242,6 @@ $$
 
 here $\displaystyle{\delta T_{\mu}^{~\rho}}$ and $\displaystyle{\delta J^{\rho}}$ are the perturbations of the energy-momentum tensor and the current density by a test particle, which is defined in (1.2), respectively.
 
-Cardoso(1102.4352) had calculated the perturbation of BTZ background in $\displaystyle{\mathrm{AdS}_{3}}$ by a test **ring** using a very ugly method. our goal is to calculate the perturbation by a test **particle** in a very general setting via CPS formalism. maybe we will also test the weak cosmic censorship conjecture.
+Cardoso(1102.4352) had calculated the perturbation of BTZ background in $\displaystyle{\mathrm{AdS}_{3}}$ by a test **ring** using a very ugly method (directly solve the equation of motion blabla). our goal is to calculate the perturbation by a test **particle** in a very general setting via CPS formalism. maybe we will also test the weak cosmic censorship conjecture.
 
-near extremal black hole?
+near extremal black hole? we need second order perturbation, which is not in the scope of this note.

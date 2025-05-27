@@ -32,7 +32,7 @@
     "undefined": {},
     "14fe3a1f-e2a1-4150-902f-193b5d9192db": {
       "2025-05-26": {
-        "totalDelta": 3476,
+        "totalDelta": 3519,
         "files": {
           "Articles/quantization/quantization for 1+3 dimensional electric field.md": {
             "initial": 3202,
@@ -100,7 +100,7 @@
           },
           "Articles/quantization/article/abstract.md": {
             "initial": 0,
-            "current": 0
+            "current": 19
           },
           "Articles/quantization/article/introduction.md": {
             "initial": 0,
@@ -116,11 +116,11 @@
           },
           "Articles/quantization/article/appendix A.md": {
             "initial": 0,
-            "current": 0
+            "current": 9
           },
           "Articles/quantization/article/section 2.md": {
             "initial": 0,
-            "current": 3
+            "current": 18
           },
           "Articles/quantization/article/section 3.md": {
             "initial": 0,
@@ -133,6 +133,39 @@
           "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md": {
             "initial": 2384,
             "current": 2384
+          },
+          "Articles/quantization/first example.md": {
+            "initial": 2190,
+            "current": 2190
+          }
+        }
+      },
+      "2025-05-27": {
+        "totalDelta": 21,
+        "files": {
+          "Articles/quantization/article/section 2.md": {
+            "initial": 18,
+            "current": 18
+          },
+          "Articles/quantization/article/appendix A.md": {
+            "initial": 8,
+            "current": 8
+          },
+          "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md": {
+            "initial": 3516,
+            "current": 3516
+          },
+          "Drafts/BMS group.md": {
+            "initial": 1044,
+            "current": 1044
+          },
+          "Articles/quantization/article/section 1.md": {
+            "initial": 1155,
+            "current": 1155
+          },
+          "Articles/Test particle/some direct calculation.md": {
+            "initial": 2368,
+            "current": 2389
           }
         }
       }
