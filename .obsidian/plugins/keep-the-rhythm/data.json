@@ -141,11 +141,11 @@
         }
       },
       "2025-05-27": {
-        "totalDelta": 2096,
+        "totalDelta": 2356,
         "files": {
           "Articles/quantization/article/section 2.md": {
             "initial": 18,
-            "current": 871
+            "current": 1131
           },
           "Articles/quantization/article/appendix A.md": {
             "initial": 8,

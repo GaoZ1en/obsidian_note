@@ -10,7 +10,7 @@ L & =\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\p
 \end{align}
 $$
 
-we take a variation of the Lagrangian as
+here we assume that $\displaystyle{m-\lambda ^{2}>0}$. we take a variation of the Lagrangian as
 
 $$\tag{1.2}
 \begin{align}
@@ -115,5 +115,27 @@ and the solution is given by
 $$\tag{1.12}
 \begin{align}
 G(t,t') & =\frac{1}{im}\int \frac{\mathrm{d}p_{0}}{2\pi} \frac{e^{-ip_{0}(t-t')}}{-p_{0}^{2}+\omega ^{2}-i\varepsilon}
+\end{align}
+$$
+
+the correlation functions can be computed as
+
+$$\tag{1.13}
+\begin{align}
+\braket{ x(t)x(t') } & =\frac{\delta ^{2}Z[J,\eta]}{i^{2}\delta J(t)\delta J(t')}\Big|_{J=\eta=0} \\
+ & =G(t,t') \\
+\braket{ x(t)\phi(t') } & = -\frac{\delta ^{2}\log Z[J,\eta]}{\delta J(t)\delta \eta(t')}\Big|_{J=0,\eta=0} \\
+ & =-\lambda \partial _{t}G(t,t') \\
+\braket{ \phi(t)\phi(t') } & = -\frac{\delta ^{2}\log Z[J,\eta]}{\delta \eta(t)\delta \eta(t')}\Big|_{J=0,\eta=0} \\
+ & =-i\delta(t-t')+\lambda ^{2} \frac{\partial^{2}}{\partial t\partial t'}G(t,t') \\
+ & =-i\delta(t-t')-\lambda ^{2} \partial _{t}^{2}G(t,t')
+\end{align}
+$$
+
+now we want relate the correlation functions (1.13) to the time ordered correlation functions (1.9). we note that the correlation functions (1.13) are defined as
+
+$$\tag{1.14}
+\begin{align}
+\braket{ x(t)x(t') } & =\frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi x(t)\phi(t')\exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}\right)\right)}}
 \end{align}
 $$

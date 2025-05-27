@@ -410,19 +410,19 @@
           }
         ],
         "direction": "vertical",
-        "x": 2082,
-        "y": 685,
-        "width": 1116,
-        "height": 654,
+        "x": -3518,
+        "y": 1014,
+        "width": 1756,
+        "height": 984,
         "maximize": false,
         "zoom": 3
       }
     ]
   },
-  "active": "df34f69e0ea75fc8",
+  "active": "aae3d9e71c0e68aa",
   "lastOpenFiles": [
-    "Articles/quantization/article/section 2.md",
     "Articles/quantization/path integral quantization for constrained system.md",
+    "Articles/quantization/article/section 2.md",
     "Articles/quantization/harmonic oscillator with multiplier.md",
     "Articles/quantization/article/appendix A.md",
     "Articles/quantization/article/section 1.md",
