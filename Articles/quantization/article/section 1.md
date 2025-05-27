@@ -111,3 +111,21 @@ $$
 footnote: the [[Groenewold-Van Hove theorem]] points out the impossibility of consistent quantization preserving all Poisson bracket relations. here we ignore the higher order terms appearing in the geometric quantization or the deformation quantization, which is irrelevant to our discussion. one may refer to [geometric quantization or deformation quantization] for more details.
 
 the coefficients $\displaystyle{a_{an}}$ and $\displaystyle{a^{\dagger}_{an}}$ are promoted to operators, which is called the creation and annihilation operators. the vacuum state $\displaystyle{|0\rangle}$ is defined as the state that annihilated by all annihilation operators $\displaystyle{a_{an}}$. the Fock space $\displaystyle{\mathcal{H}}$ is spanned by the vacuum state $\displaystyle{|0\rangle}$, single particle states $\displaystyle{|n\rangle}$ which are defined by the action of the creation operators $\displaystyle{a^{\dagger}_{an}}$ on the vacuum state $\displaystyle{\ket{0}}$, and multi-particle states $\displaystyle{|n_{1},n_{2},\ldots \rangle}$, which are defined by tensor products of single particle states and suitable symmetrization for bosons or anti-symmetrization for fermions.
+
+correlation functions are defined as the expectation value of the product of operators in the vacuum state as usual
+
+$$\tag{1.13}
+\begin{align}
+\braket{ \mathcal{O}_{1}\dots \mathcal{O}_{n} }= \braket{ 0|\mathcal{O}_{1}\dots \mathcal{O}_{n}|0 } 
+\end{align}
+$$
+
+time ordered correlation functions are defined as
+
+$$\tag{1.14}
+\begin{align}
+\braket{ \mathcal{T}\mathcal{O}_{1}\dots \mathcal{O}_{n} } & =\braket{ 0|\mathcal{T}\mathcal{O}_{1}\dots \mathcal{O}_{n}|0 }
+\end{align}
+$$
+
+where the time ordering operator $\displaystyle{\mathcal{T}}$ orders the operators according to their time arguments, with the earliest time on the right. we emphasize that the time ordering correlation function is independent of the choice of time slices $\displaystyle{\Sigma _{t}}$.
