@@ -141,15 +141,15 @@
         }
       },
       "2025-05-27": {
-        "totalDelta": 1244,
+        "totalDelta": 1725,
         "files": {
           "Articles/quantization/article/section 2.md": {
             "initial": 18,
-            "current": 18
+            "current": 498
           },
           "Articles/quantization/article/appendix A.md": {
             "initial": 8,
-            "current": 8
+            "current": 9
           },
           "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md": {
             "initial": 3516,
@@ -182,6 +182,22 @@
           "Articles/some generalization CPS/p-form symmetry.md": {
             "initial": 0,
             "current": 0
+          },
+          "Articles/quantization/path integral quantization for constrained system.md": {
+            "initial": 5578,
+            "current": 5578
+          },
+          "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md": {
+            "initial": 1580,
+            "current": 1580
+          },
+          "Articles/quantization/first example.md": {
+            "initial": 2190,
+            "current": 2190
+          },
+          "Articles/quantization/harmonic oscillator with multiplier.md": {
+            "initial": 1954,
+            "current": 1954
           }
         }
       }

@@ -1,2 +1,2 @@
-# Dirac quantization for systems with second class constraints
+# ordinary Dirac quantization for systems with second class constraints
 
