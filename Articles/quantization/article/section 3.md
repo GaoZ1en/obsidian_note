@@ -175,7 +175,7 @@ $$\tag{1.19}
 \braket{ 0|\mathcal{T}A^{0}(x)A^{i}(y) } & =\theta(x^{0}-y^{0})\braket{ 0|A^{0}(x)A^{i}(y)|0 } +\theta(y^{0}-x^{0})\braket{ 0|A^{i}(y)A^{0}(x)|0 }  \\
  & =-\frac{\partial ^{i}_{x}\partial ^{0}_{x}}{m^{2}}\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)} \\
 \braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y) } & =\theta(x^{0}-y^{0})\braket{ 0|A^{0}(x)A^{0}(y)|0 } +\theta(y^{0}-x^{0})\braket{ 0|A^{0}(y)A^{0}(x)|0 }  \\
- & =\left(-1 -\frac{\partial ^{i}_{x}\partial ^{0}_{x}}{m^{2}} \right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)}-\frac{i}{m^{2}}\delta ^{4}(x-y)
+ & =\left(-1 -\frac{\partial ^{0}_{x}\partial ^{0}_{x}}{m^{2}} \right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)}-\frac{i}{m^{2}}\delta ^{4}(x-y)
 \end{align}
 $$
 
@@ -204,7 +204,7 @@ here the Green functon $\displaystyle{G^{\mu \nu}(x,y)}$ satisfies
 
 $$\tag{1.22}
 \begin{align}
-i(\partial _{\mu}\partial _{\nu}-\eta _{\mu \nu}(\nabla^{2}+m^{2}))_{x}G^{\nu \rho}(x,y) & =\delta ^{\rho}_{\mu}\delta ^{4}(x-y)
+i(\partial _{\mu}\partial _{\nu}-\eta _{\mu \nu}(\nabla^{2}+m^{2}))G^{\nu \rho}(x,y) & =\delta ^{\rho}_{\mu}\delta ^{4}(x-y)
 \end{align}
 $$
 
@@ -247,11 +247,11 @@ $$\tag{1.26}
 \end{align}
 $$
 
-and $\displaystyle{G(\vec{x},\vec{y})}$ is the Green function corresponding to operator $\displaystyle{\vec{\nabla}^{2}+m^{2}}$ is defined as
+which is obtained by integrate out the $\displaystyle{A^{0}}$. and $\displaystyle{G(\vec{x},\vec{y})}$ is the Green function corresponding to operator $\displaystyle{\vec{\nabla}^{2}+m^{2}}$ is defined as
 
 $$\tag{1.27}
 \begin{align}
-G(\vec{x},\vec{y}) & =-\frac{1}{4\pi} \frac{e^{-im|\vec{x}-\vec{y}|}}{|\vec{x}-\vec{y}|}
+G(\vec{x},\vec{y}) & =-\frac{1}{4\pi} \frac{e^{-m|\vec{x}-\vec{y}|}}{|\vec{x}-\vec{y}|}
 \end{align}
 $$
 

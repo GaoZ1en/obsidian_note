@@ -77,6 +77,21 @@
               "icon": "lucide-file",
               "title": "appendix B"
             }
+          },
+          {
+            "id": "192de6ccb1b97eed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/quantization/article/section 3.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "section 3"
+            }
           }
         ],
         "currentTab": 2
@@ -136,7 +151,8 @@
               "title": "Vertical tabs"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "56384ae1a9e66525",
@@ -394,16 +410,31 @@
                   "icon": "lucide-file",
                   "title": "quantization for 1+3 dimensional electric field"
                 }
+              },
+              {
+                "id": "87aa2db71194a2a0",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Articles/quantization/article/section 3.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "section 3"
+                }
               }
             ],
             "currentTab": 6
           }
         ],
         "direction": "vertical",
-        "x": 2082,
-        "y": 27,
-        "width": 1116,
-        "height": 983,
+        "x": 1762,
+        "y": 1014,
+        "width": 1436,
+        "height": 984,
         "maximize": false,
         "zoom": 3
       }
@@ -413,13 +444,13 @@
   "lastOpenFiles": [
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Articles/quantization/article/appendix B.md",
-    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Articles/quantization/article/section 3.md",
+    "Articles/quantization/article/section 2.md",
+    "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Articles/quantization/path integral quantization for Proca field.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "TODO.md",
-    "Articles/quantization/article/section 2.md",
     "Articles/Test particle/some direct calculation.md",
     "Articles/quantization/article/appendix A.md",
     "Lecture/2025 spring/english/week 14.md",

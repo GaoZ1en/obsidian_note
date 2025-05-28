@@ -103,6 +103,8 @@ S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}\right)
 \end{align}
 $$
 
+### canonical formalism
+
 the variation of the action gives
 
 $$\tag{1.13}
@@ -130,3 +132,86 @@ $$\tag{1.15}
 \end{align}
 $$
 
+the Hamiltonian flow corresponding to $\displaystyle{A^{i}(x)}$ is defined as
+
+$$\tag{1.16}
+\begin{align}
+X_{A^{i}(x)} & =-i \int \mathrm{d}^{4}x\sum ^{2}_{s=1}\left(\frac{\delta A^{i}}{\delta a_{ks}} \frac{\delta}{\delta a^{\dagger}_{ks}}-\frac{\delta A^{i}}{\delta a^{\dagger}_{ks}} \frac{\delta}{\delta a_{ks}}\right) \\
+ & =-i \int \mathrm{d}^{3}\vec{k}\sum ^{2}_{s=1}\left(\sigma _{k} \frac{\delta}{\delta a^{\dagger}_{ks}}-\sigma ^{*}_{k} \frac{\delta}{\delta a_{ks}}\right)
+\end{align}
+$$
+
+after canonical quantization, we have the commutation relation
+
+$$\tag{1.17}
+\begin{align}
+[A^{i}(x),A^{j}(y)] & =iX_{A^{i}(x)}\cdot X_{A^{j}(x)}\cdot \omega \\
+ & =\left(\delta ^{ij}-\frac{\partial ^{i}_{x}\partial ^{j}_{x}}{\vec{\nabla}^{2}_{x}}\right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}} e^{ik\cdot(x-y)}
+\end{align}
+$$
+
+here the contour for $\displaystyle{k^{0}}$ is the same as before. the time ordered 2-point correlation function is given by
+
+$$\tag{1.18}
+\begin{align}
+\braket{ A^{i}(x)A^{j}(y) } & =\theta(x^{0}-y^{0})\braket{ A^{i}(x)A^{j}(y) } +\theta(y^{0}-x^{0})\braket{ A^{j}(y)A^{i}(x) }  \\
+ & =\left(\delta ^{ij}-\frac{\partial ^{i}_{x}\partial ^{j}_{x}}{\vec{\nabla}^{2}_{x}}\right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} e^{-ik\cdot(x-y)} \left(\frac{i}{k^{2}-i\varepsilon}\right)
+\end{align}
+$$
+
+### path integral formalism
+
+in this subsection we will use the Faddeev-Popov formalism to quantize the electric field in the Column gauge. introduce the generating functional
+
+$$\tag{1.19}
+\begin{align}
+Z[J_{\mu}] & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2\xi}(\partial _{i}A^{i})^{2}+J_{\mu}A^{\mu}\right)\right)
+\end{align}
+$$
+
+where the $\displaystyle{-\frac{1}{2\xi}(\partial _{i}A^{i})^{2}}$ is the gauge-fixing term introduced by Faddeev-Popov formalism. ghosts action is absorbed into overall factor due to decouple with $\displaystyle{A^{\mu}}$. then we have
+
+$$\tag{1.20}
+\begin{align}
+Z[J_{\mu}] & =\int \mathcal{D}A_{\mu}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{2}A^{\mu}D_{\mu \nu}A^{\nu}+J_{\mu}A^{\mu}\right)\right) \\
+ & =\exp\left(-\frac{1}{2}\int \mathrm{d}^{4}x\mathrm{d}^{4}yJ_{\mu}(x)G^{\mu \nu}(x,y)J_{\nu}(y)\right)
+\end{align}
+$$
+
+here the operator $\displaystyle{D_{\mu \nu}}$ and the Green function $\displaystyle{G^{\mu \nu}(x,y)}$ satisfies
+
+$$\tag{1.21}
+\begin{align}
+D_{\mu \nu} & =\begin{pmatrix}
+\vec{\nabla}^{2} & \partial _{0}\partial _{i} \\
+\partial _{0}\partial _{i} & \left( 1-\frac{1}{\xi} \right)\partial _{i}\partial _{j}-\delta _{ij}(\vec{\nabla}^{2}-\partial _{0}^{2})
+\end{pmatrix} \\
+iD_{\mu \nu}G^{\nu \rho}(x,y) & =\delta ^{\rho}_{\mu}\delta ^{4}(x-y)
+\end{align}
+$$
+
+which solves to
+
+$$\tag{1.22}
+\begin{align}
+G^{\mu \nu}(x,y) & =i \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}}e^{ik\cdot(x-y)}\begin{pmatrix}
+-\frac{1}{\vec{k}^{2}}\left(1-\frac{(k^{0})^{2}}{\vec{k}^{2}}\xi\right) & \frac{k^{0}k^{i}}{(\vec{k}^{2})^{2}}\xi \\
+\frac{k^{0}k^{i}}{(\vec{k}^{2})^{2}}\xi & \frac{1}{k^{2}-i\varepsilon}\left( \delta ^{ij}-\frac{k^{i}k^{j}}{\vec{k}^{2}}\left( 1-\frac{k^{2}\xi}{\vec{k}^{2}} \right) \right)
+\end{pmatrix}
+\end{align}
+$$
+
+then the correlation functions are
+
+$$\tag{1.23}
+\begin{align}
+\braket{ A^{\mu}(x)A^{\nu}(y) } & = \frac{\delta ^{2}Z[J_{\mu}]}{i^{2}\delta J_{\mu}(x)\delta J_{\nu}(y)}\Big|_{J=0} \\
+ & = G^{\mu \nu}(x,y) \\
+ & =i \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}}e^{ik\cdot(x-y)}\begin{pmatrix}
+-\frac{1}{\vec{k}^{2}}\left(1-\frac{(k^{0})^{2}}{\vec{k}^{2}}\xi\right) & \frac{k^{0}k^{i}}{(\vec{k}^{2})^{2}}\xi \\
+\frac{k^{0}k^{i}}{(\vec{k}^{2})^{2}}\xi & \frac{1}{k^{2}-i\varepsilon}\left( \delta ^{ij}-\frac{k^{i}k^{j}}{\vec{k}^{2}}\left( 1-\frac{k^{2}\xi}{\vec{k}^{2}} \right) \right)
+\end{pmatrix}
+\end{align}
+$$
+
+finally we will return to the canonical formalism. here we choose Landau gauge, i.e., $\displaystyle{\xi=0}$, and consider the 00 component of the
