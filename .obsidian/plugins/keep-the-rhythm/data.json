@@ -210,7 +210,7 @@
         }
       },
       "2025-05-28": {
-        "totalDelta": 4431,
+        "totalDelta": 13696,
         "files": {
           "Lecture/2025 spring/english/week 14.md": {
             "initial": 585,
@@ -259,6 +259,46 @@
           "Articles/quantization/quantization for 1+3 dimensional electric field.md": {
             "initial": 3937,
             "current": 3936
+          },
+          "Articles/quantization/article/section 1_introduction.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Articles/quantization/article/conclusion.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Articles/quantization/article 1/appendix A.md": {
+            "initial": 1997,
+            "current": 1997
+          },
+          "Articles/quantization/article 1/appendix B.md": {
+            "initial": 2346,
+            "current": 2346
+          },
+          "Articles/quantization/article 1/section 2.md": {
+            "initial": 1623,
+            "current": 1623
+          },
+          "Articles/quantization/article 1/section 3.md": {
+            "initial": 3294,
+            "current": 3294
+          },
+          "Articles/quantization/article 1/conclusion.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Articles/quantization/article 1/abstract.md": {
+            "initial": 19,
+            "current": 0
+          },
+          "Articles/quantization/article 1/section 1_introduction.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Articles/quantization/article/main.md": {
+            "initial": 0,
+            "current": 9284
           }
         }
       }
