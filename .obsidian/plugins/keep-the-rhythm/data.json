@@ -210,11 +210,11 @@
         }
       },
       "2025-05-28": {
-        "totalDelta": -382,
+        "totalDelta": -376,
         "files": {
           "Lecture/2025 spring/english/week 14.md": {
             "initial": 585,
-            "current": 203
+            "current": 209
           },
           "Articles/quantization/article/section 2.md": {
             "initial": 1623,
