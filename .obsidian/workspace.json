@@ -4,82 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "6f8d744da7aa8430",
+        "id": "4a6501a306750f06",
         "type": "tabs",
         "children": [
           {
-            "id": "3c8d3e695c80d788",
+            "id": "eaad33a8607dba58",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "terminal:terminal",
-              "state": {
-                "terminal:terminal": {
-                  "cwd": null,
-                  "focus": false,
-                  "profile": {
-                    "args": [],
-                    "executable": "/bin/bash",
-                    "name": "main",
-                    "platforms": {
-                      "linux": true
-                    },
-                    "pythonExecutable": "python3",
-                    "restoreHistory": true,
-                    "successExitCodes": [
-                      "0",
-                      "SIGINT",
-                      "SIGTERM"
-                    ],
-                    "terminalOptions": {
-                      "fontFamily": "JetBrainsMono Nerd Font Mono",
-                      "fontSize": 11,
-                      "documentOverride": null
-                    },
-                    "type": "integrated",
-                    "useWin32Conhost": true
-                  },
-                  "serial": {
-                    "columns": 135,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
-                    "rows": 70
-                  }
-                }
-              },
-              "pinned": true,
-              "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 bash"
-            }
-          },
-          {
-            "id": "e3ec0ae63a92352a",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "github-copilot-chat-view",
+              "type": "empty",
               "state": {},
-              "pinned": true,
-              "icon": "bot-message-square",
-              "title": "Copilot Chat"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           },
           {
-            "id": "7c248e1345b4fc74",
+            "id": "57771a80478b1013",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/article/section 3.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "section 3"
+              "title": "New tab"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -126,7 +75,8 @@
               "title": "Keep the Rhythm"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "56384ae1a9e66525",
@@ -219,8 +169,7 @@
               "title": "solutions"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -262,7 +211,8 @@
               "title": "DeepSeek - 探索未至之境"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -277,11 +227,11 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "7c248e1345b4fc74",
+  "active": "57771a80478b1013",
   "lastOpenFiles": [
+    "Articles/quantization/article/section 3.md",
     "Articles/quantization/article/section 2.md",
     "Articles/Test particle/some direct calculation.md",
-    "Articles/quantization/article/section 3.md",
     "Articles/quantization/article/appendix A.md",
     "Lecture/2025 spring/english/week 14.md",
     "TODO.md",
