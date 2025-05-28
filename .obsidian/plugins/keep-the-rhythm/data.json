@@ -210,7 +210,7 @@
         }
       },
       "2025-05-28": {
-        "totalDelta": 344,
+        "totalDelta": 998,
         "files": {
           "Lecture/2025 spring/english/week 14.md": {
             "initial": 585,
@@ -226,7 +226,7 @@
           },
           "Articles/quantization/article/section 3.md": {
             "initial": 832,
-            "current": 1552
+            "current": 2206
           },
           "Articles/Test particle/some direct calculation.md": {
             "initial": 2511,
@@ -243,6 +243,10 @@
           "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md": {
             "initial": 2384,
             "current": 2384
+          },
+          "Articles/quantization/path integral quantization for Proca field.md": {
+            "initial": 6572,
+            "current": 6572
           }
         }
       }

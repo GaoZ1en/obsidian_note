@@ -168,14 +168,72 @@ here the contour for $\displaystyle{k^{0}}$ is chosen to be same as the scalar f
 
 $$\tag{1.19}
 \begin{align}
-\braket{ 0|\mathcal{T}A^{i}(x)A^{j}(y)|0 }  & = \theta(x^{0}-y^{0})\braket{ 0|A^{i}(x)A^{j}(y)|0 }+\theta(y^{0}-x^{0})\braket{  }  \\
-  & =\left(\delta ^{ij}-\frac{\partial ^{i}_{x}\partial ^{j}_{x}}{m^{2}}\right)\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2\omega _{k}}\left(\theta(x^{0}-y^{0})e^{ik\cdot(x-y)}+\theta(y^{0}-x^{0})e^{-ik\cdot(x-y)}\right) \\
+\braket{ 0|\mathcal{T}A^{i}(x)A^{j}(y)|0 }  & = \theta(x^{0}-y^{0})\braket{ 0|A^{i}(x)A^{j}(y)|0 }+\theta(y^{0}-x^{0})\braket{ 0|A^{j}(y)A^{i}(x)|0 }  \\
  & =\left(\delta ^{ij}-\frac{\partial ^{i}_{x}\partial ^{j}_{x}}{m^{2}}\right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)} \\
-\braket{ 0|\mathcal{T}A^{i}(x)A^{0}(y) } & =\theta(x^{0}-y^{0})\braket{ 0|A^{i}(x)A^{0}(y)|0 } +\theta(y^{0}-x^{0})\braket{ 0|A^{0}(y)A^{i}(x)|0 } 
+\braket{ 0|\mathcal{T}A^{i}(x)A^{0}(y) } & =\theta(x^{0}-y^{0})\braket{ 0|A^{i}(x)A^{0}(y)|0 } +\theta(y^{0}-x^{0})\braket{ 0|A^{0}(y)A^{i}(x)|0 }  \\
+ & =-\frac{\partial ^{i}_{x}\partial ^{0}_{x}}{m^{2}}\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)} \\
+\braket{ 0|\mathcal{T}A^{0}(x)A^{i}(y) } & =\theta(x^{0}-y^{0})\braket{ 0|A^{0}(x)A^{i}(y)|0 } +\theta(y^{0}-x^{0})\braket{ 0|A^{i}(y)A^{0}(x)|0 }  \\
+ & =-\frac{\partial ^{i}_{x}\partial ^{0}_{x}}{m^{2}}\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)} \\
+\braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y) } & =\theta(x^{0}-y^{0})\braket{ 0|A^{0}(x)A^{0}(y)|0 } +\theta(y^{0}-x^{0})\braket{ 0|A^{0}(y)A^{0}(x)|0 }  \\
+ & =\left(-1 -\frac{\partial ^{i}_{x}\partial ^{0}_{x}}{m^{2}} \right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)}-\frac{i}{m^{2}}\delta ^{4}(x-y)
 \end{align}
 $$
 
+as a summary, we have
+
+$$\tag{1.20}
+\begin{align}
+\braket{ 0|\mathcal{T}A^{\mu}(x)A^{\nu}(y)|0 } & =\left(\eta ^{\mu \nu}-\frac{\partial ^{\mu}_{x}\partial ^{\nu}_{x}}{m^{2}}\right)\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon} e^{ik\cdot(x-y)}-\frac{i}{m^{2}}\delta ^{4}(x-y)
+\end{align}
+$$
+
+the time-ordered 2-pt correlation function $\displaystyle{(1.20)}$ has a non-covariant contact term, which can be interpreted via path integral formalism. 
+
 ### path integral quantization of Proca field
+
+introduce the generating functional
+
+$$\tag{1.21}
+\begin{align}
+Z[J_{\mu}] & =\int \mathcal{D}A_{\mu} \exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}+J_{\mu}A^{\mu}\right)\right) \\
+ & =\exp\left(-\frac{1}{2}\int \mathrm{d}^{4}x\mathrm{d}^{4}yJ_{\mu}(x)G^{\mu \nu}(x,y)J_{\nu}(y)\right)
+\end{align}
+$$
+
+here the Green functon $\displaystyle{G^{\mu \nu}(x,y)}$ satisfies
+
+$$\tag{1.22}
+\begin{align}
+i(\partial _{\mu}\partial _{\nu}-\eta _{\mu \nu}(\nabla^{2}+m^{2}))_{x}G^{\nu \rho}(x,y) & =\delta ^{\rho}_{\mu}\delta ^{4}(x-y)
+\end{align}
+$$
+
+solving this equation, we get
+
+$$\tag{1.23}
+\begin{align}
+G^{\mu \nu}(x,y) & = \int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon}e^{-ik\cdot(x-y)} \left(\eta ^{\mu \nu} +\frac{k^{\mu}k^{\nu}}{m^{2}}\right)
+\end{align}
+$$
+
+then the correlation function is given by
+
+$$\tag{1.24}
+\begin{align}
+\braket{ A^{\mu}(x)A^{\nu}(y) }  & = \frac{\delta ^{2}Z[J]}{i^{2}\delta J_{\mu}(x)\delta J_{\nu}(y)} \Big|_{J=0} \\
+ & =\int \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}+m^{2}-i\varepsilon}e^{-ik\cdot(x-y)} \left(\eta ^{\mu \nu} +\frac{k^{\mu}k^{\nu}}{m^{2}}\right)
+\end{align}
+$$
+
+now we consider the relationship between the correlation function $\displaystyle{\braket{ A^{\mu}(x)A^{\nu}(y) }}$ in (1.24) and the time-ordered 2-pt correlation function $\displaystyle{\braket{ 0|\mathcal{T}A^{\mu}(x)A^{\nu}(y)|0 }}$ in (1.20). we have
+
+$$\tag{1.25}
+\begin{align}
+\braket{ A^{0}(x)A^{i}(y) }  & =\frac{\displaystyle{\int \mathcal{D}A^{i}\mathcal{D}A^{0}A^{0}(x)A^{i}(y)\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)\right)}}{\displaystyle{\int \mathcal{D}A^{i}\mathcal{D}A^{0}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)\right)}} \\
+ & =\displaystyle{\int \mathcal{D}A^{i}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})(\vec{\nabla}\cdot \dot{\vec{A}})(\vec{y})A}
+\end{align}
+$$
 
 ### discussion
 
+??
