@@ -10,7 +10,7 @@ S & =\int \mathrm{d}^{2}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{\Theta}{
 \end{align}
 $$
 
-where $\displaystyle{F_{\mu \nu}=\partial _{\mu}A_{\nu}-\partial _{\nu}A_{\mu}}$ is the field strength, and $\displaystyle{\Theta}$ is a constant. we first take a variation of the action
+where $\displaystyle{F_{\mu \nu}=\partial _{\mu}A_{\nu}-\partial _{\nu}A_{\mu}}$ is the field strength, and $\displaystyle{\Theta}$ is a constant, which corresponds to a topological term. we first take a variation of the action
 
 $$\tag{1.2}
 \begin{align}
@@ -136,7 +136,7 @@ the Hamiltonian flow corresponding to $\displaystyle{A^{i}(x)}$ is defined as
 
 $$\tag{1.16}
 \begin{align}
-X_{A^{i}(x)} & =-i \int \mathrm{d}^{4}x\sum ^{2}_{s=1}\left(\frac{\delta A^{i}}{\delta a_{ks}} \frac{\delta}{\delta a^{\dagger}_{ks}}-\frac{\delta A^{i}}{\delta a^{\dagger}_{ks}} \frac{\delta}{\delta a_{ks}}\right) \\
+X_{A^{i}(x)} & =-i \int \mathrm{d}^{3}\vec{k}\sum ^{2}_{s=1}\left(\frac{\delta A^{i}}{\delta a_{ks}} \frac{\delta}{\delta a^{\dagger}_{ks}}-\frac{\delta A^{i}}{\delta a^{\dagger}_{ks}} \frac{\delta}{\delta a_{ks}}\right) \\
  & =-i \int \mathrm{d}^{3}\vec{k}\sum ^{2}_{s=1}\left(\sigma _{k} \frac{\delta}{\delta a^{\dagger}_{ks}}-\sigma ^{*}_{k} \frac{\delta}{\delta a_{ks}}\right)
 \end{align}
 $$
@@ -214,4 +214,50 @@ $$\tag{1.23}
 \end{align}
 $$
 
-finally we will return to the canonical formalism. here we choose Landau gauge, i.e., $\displaystyle{\xi=0}$, and consider the 00 component of the
+finally we will return to the canonical formalism. here we choose Landau gauge, i.e., $\displaystyle{\xi=0}$, and consider the 00 component of the correlation function
+
+$$\tag{1.24}
+\begin{align}
+\braket{ A^{0}(x)A^{0}(y) } & = \frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A^{0}(x)A^{0}(y)\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}\right)\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}\right)\right)}} \\
+ & =\frac{\displaystyle{\int \mathcal{D}A^{i}\left[ \left(\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{i,z}A^{i}(z)\right)\left(\int \mathrm{d}^{3}\vec{w}G(\vec{y},\vec{w})\partial _{0,w}\partial _{j,w}A^{j}(w)\right)-i\delta(x_{0}-y_{0})G(\vec{x},\vec{y}) \right]\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)}}{\displaystyle{\int \mathcal{D}A^{i}}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)} \\
+ & =\left(\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{i,z}\right)\left(\int \mathrm{d}^{3}\vec{w}G(\vec{y},\vec{w})\partial _{0,w}\partial _{j,w}\right)\braket{ A^{i}(z)A^{j}(w) } -i\delta(x_{0}-y_{0})G(\vec{x},\vec{y}) 
+\end{align}
+$$
+
+here the second term $\displaystyle{-i\delta(x_{0}-y_{0})G(\vec{x},\vec{y}) }$ comes from the quantum fluctuation of $\displaystyle{A^{0}}$. effective Lagrangian $\displaystyle{\mathcal{L}_{\mathrm{eff}}[A^{i}]}$ is obtained by integrate out $\displaystyle{A^{0}}$
+
+$$\tag{1.25}
+\begin{align}
+\mathcal{L}_{\mathrm{eff}}[A^{i}] & = \frac{1}{2}(\dot{A}^{i})^{2}-\dot{A}^{i}\int \mathrm{d}^{3}\vec{y}\partial _{i,x}G(\vec{x},\vec{y})\partial _{0}(\vec{\nabla}\cdot\vec{A})(y)+\frac{1}{2}\left( \int \mathrm{d}^{3}\vec{y}\partial _{i,x}G(\vec{x},\vec{y})\partial _{0}(\vec{\nabla}\cdot \vec{A})(y) \right)^{2}-\frac{1}{4}F_{ij}F^{ij}
+\end{align}
+$$
+
+and the Green function $\displaystyle{G(\vec{x},\vec{y})}$ corresponding to $\displaystyle{\vec{\nabla}^{2}}$ is given by
+
+$$\tag{1.26}
+\begin{align}
+G(\vec{x},\vec{y}) & =-\frac{1}{4\pi} \frac{1}{|\vec{x}-\vec{y}|}
+\end{align}
+$$
+
+the first term in (1.24) is then
+
+$$\tag{1.27}
+\begin{align}
+& \int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{i,z}\int \mathrm{d}^{3}\vec{w}G(\vec{y},\vec{w})\partial _{0,w}\partial _{j,w}\braket{ A^{i}(z)A^{j}(w) } \\
+ & =\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{i,z}\int \mathrm{d}^{3}\vec{w}G(\vec{y},\vec{w})\partial _{0,w}\partial _{j,w}\braket{ 0|\mathcal{T}A^{i}(z)A^{j}(w)|0 } \\
+ & =\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{i,z}\braket{ 0|\mathcal{T}A^{i}(z)A^{0}(y)|0 }  \\
+ & = \braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y)|0 } +\delta(x_{0}-y_{0})\int \mathrm{d}^{3}\vec{z} G(\vec{x},\vec{z})\partial _{j,z}\braket{ 0|[A^{i}(z),A^{0}(y)]|0 } \\
+ & = \braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y)|0 } 
+\end{align}
+$$
+
+so we have
+
+$$\tag{1.28}
+\begin{align}
+\braket{ A^{0}(x)A^{0}(y) }  & =\braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y) }-i\delta(x_{0}-y_{0})G(\vec{x},\vec{y})
+\end{align}
+$$
+
+the second term in (1.28) is exactly the difference between the correlation function defined in (1.23) and the time ordered 2-point correlation function defined in (1.18). 
