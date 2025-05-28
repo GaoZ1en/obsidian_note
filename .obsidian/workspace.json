@@ -8,27 +8,78 @@
         "type": "tabs",
         "children": [
           {
-            "id": "eaad33a8607dba58",
+            "id": "b0357530cb9d1c74",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": null,
+                  "focus": false,
+                  "profile": {
+                    "args": [],
+                    "executable": "/bin/bash",
+                    "name": "main",
+                    "platforms": {
+                      "linux": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": true,
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {
+                      "fontFamily": "JetBrainsMono Nerd Font Mono",
+                      "fontSize": 11,
+                      "documentOverride": null
+                    },
+                    "type": "integrated",
+                    "useWin32Conhost": true
+                  },
+                  "serial": {
+                    "columns": 134,
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
+                    "rows": 70
+                  }
+                }
+              },
+              "pinned": true,
+              "icon": "terminal",
+              "title": "Terminal: KoishiLaptop ❐ workspace ● 1 editor"
             }
           },
           {
-            "id": "57771a80478b1013",
+            "id": "cef33d621e94efd8",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
+              "pinned": true,
+              "icon": "bot-message-square",
+              "title": "Copilot Chat"
+            }
+          },
+          {
+            "id": "1e99cb50f80d0359",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Articles/quantization/article/section 3.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "section 3"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -74,9 +125,19 @@
               "icon": "calendar-days",
               "title": "Keep the Rhythm"
             }
+          },
+          {
+            "id": "3d4afbd4584e2bb3",
+            "type": "leaf",
+            "state": {
+              "type": "vertical-tabs",
+              "state": {},
+              "icon": "vertical-tabs",
+              "title": "Vertical tabs"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "56384ae1a9e66525",
@@ -169,7 +230,8 @@
               "title": "solutions"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -227,15 +289,71 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "57771a80478b1013",
+  "floating": {
+    "id": "a5eeba3d9fc0f0af",
+    "type": "floating",
+    "children": [
+      {
+        "id": "91b7b1d18a896604",
+        "type": "window",
+        "children": [
+          {
+            "id": "489006b88395ee17",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "1a8ea52211a7a52c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "canonical quantization of scalar and Proca vector in CPS formalism"
+                }
+              },
+              {
+                "id": "fea778b12dfe83de",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "canonical quantization of Proca field in CPS formalism (formal calculation)"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 2082,
+        "y": 27,
+        "width": 1116,
+        "height": 983,
+        "maximize": false,
+        "zoom": 3
+      }
+    ]
+  },
+  "active": "1e99cb50f80d0359",
   "lastOpenFiles": [
+    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/article/section 3.md",
+    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+    "TODO.md",
     "Articles/quantization/article/section 2.md",
     "Articles/Test particle/some direct calculation.md",
     "Articles/quantization/article/appendix A.md",
     "Lecture/2025 spring/english/week 14.md",
-    "TODO.md",
-    "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/harmonic oscillator with multiplier.md",
     "Articles/quantization/article/section 1_introduction.md",
     "Articles/quantization/path integral quantization for constrained system.md",
@@ -248,7 +366,6 @@
     "Articles/quantization/article/abstract.md",
     "Articles/quantization/path integral quantization for Proca field.md",
     "Articles/quantization/article/conclusion.md",
-    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Articles/quantization/article/introduction.md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
     "Drafts/electric field.md",
