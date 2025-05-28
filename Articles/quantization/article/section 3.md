@@ -225,14 +225,69 @@ $$\tag{1.24}
 \end{align}
 $$
 
-now we consider the relationship between the correlation function $\displaystyle{\braket{ A^{\mu}(x)A^{\nu}(y) }}$ in (1.24) and the time-ordered 2-pt correlation function $\displaystyle{\braket{ 0|\mathcal{T}A^{\mu}(x)A^{\nu}(y)|0 }}$ in (1.20). we have
+now we consider the relationship between the correlation function $\displaystyle{\braket{ A^{\mu}(x)A^{\nu}(y) }}$ in (1.24) and the time-ordered 2-pt correlation function $\displaystyle{\braket{ 0|\mathcal{T}A^{\mu}(x)A^{\nu}(y)|0 }}$ in (1.20). for $\displaystyle{0i}$ components of $\displaystyle{\braket{ A^{\mu}(x)A^{\nu}(y) }}$, we have
 
 $$\tag{1.25}
 \begin{align}
 \braket{ A^{0}(x)A^{i}(y) }  & =\frac{\displaystyle{\int \mathcal{D}A^{i}\mathcal{D}A^{0}A^{0}(x)A^{i}(y)\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)\right)}}{\displaystyle{\int \mathcal{D}A^{i}\mathcal{D}A^{0}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)\right)}} \\
- & =\displaystyle{\int \mathcal{D}A^{i}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})(\vec{\nabla}\cdot \dot{\vec{A}})(\vec{y})A}
+ & =\frac{\displaystyle{\int \mathcal{D}A^{i}\left(-\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0}\partial _{j}A^{j}(z) \right)A^{i}(y)\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)}}{\displaystyle{\int \mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\mathcal{L}_{\mathrm{eff}[A^{i}]}\right)}} \\
+ & =-\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{j,z}\braket{ A^{j}(z)A^{i}(y) }  \\
+ & =-\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{j,z}\braket{ 0|\mathcal{T}A^{j}(z)A^{i}(y)|0 }  \\
+ & =\braket{ 0|\mathcal{T}\left(-\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{j,z}A^{j}(z) \right)A^{i}(y)|0 }  \\
+ & =\braket{ 0|\mathcal{T}A^{0}(x)A^{i}(y)|0 }
 \end{align}
 $$
+
+here the effective Lagrangian is defined as
+
+$$\tag{1.26}
+\begin{align}
+\mathcal{L}_{\mathrm{eff}} & =-\frac{1}{4}(\partial _{i}A^{j}-\partial _{j}A^{i})^{2}+\frac{1}{2}(\dot{A}^{i})^{2}-\dot{A}^{i}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)+\frac{1}{2}\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}\partial _{x,i}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z) \\
+ & +\frac{1}{2}m^{2}\int \mathrm{d}^{3}\vec{y}G(\vec{x},\vec{y})\partial _{y,j}\dot{A}^{j}(y)\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{z,k}\dot{A}^{k}(z)-\frac{1}{2}m^{2}(A^{i})^{2}
+\end{align}
+$$
+
+and $\displaystyle{G(\vec{x},\vec{y})}$ is the Green function corresponding to operator $\displaystyle{\vec{\nabla}^{2}+m^{2}}$ is defined as
+
+$$\tag{1.27}
+\begin{align}
+G(\vec{x},\vec{y}) & =-\frac{1}{4\pi} \frac{e^{-im|\vec{x}-\vec{y}|}}{|\vec{x}-\vec{y}|}
+\end{align}
+$$
+
+and for 00 component, we have
+
+$$\tag{1.28}
+\begin{align}
+\braket{ A^{0}(x)A^{0}(y) }  & = \frac{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}A^{0}(x)A^{0}(y)\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)\right)}}{\displaystyle{\int \mathcal{D}A^{0}\mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu}\right)\right)}} \\
+ & =\frac{\displaystyle{\int \mathcal{D}A^{i}\left[ \left( -\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{i,z}A^{i}(z) \right)\left( -\int \mathrm{d}^{3}\vec{w}G(\vec{y},\vec{w})\partial _{0,w}\partial _{j,w}A^{j}(w) \right)-i\delta(x_{0}-y_{0})G(\vec{x},\vec{y})C \right]\exp\left(i \int \mathrm{d}^{4}\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)}}{\displaystyle{\int \mathcal{D}A^{i}\exp\left(i \int \mathrm{d}^{4}\mathcal{L}_{\mathrm{eff}}[A^{i}]\right)}} \\
+ & = \left( -\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{i,z} \right)\left( -\int \mathrm{d}^{3}\vec{w}G(\vec{y},\vec{w})\partial _{0,w}\partial _{j,w} \right)\braket{ A^{i}(z)A^{j}(w) } -i\delta(x_{0}-y_{0})G(\vec{x},\vec{y})
+\end{align}
+$$
+
+here quantum fluctuation of $\displaystyle{A^{0}}$ contributes the second term. the first term is
+
+$$\tag{1.29}
+\begin{align}
+ & \left( -\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{i,z} \right)\left( -\int \mathrm{d}^{3}\vec{w}G(\vec{y},\vec{w})\partial _{0,w}\partial _{j,w} \right)\braket{ A^{i}(z)A^{j}(w) } \\
+ & = \left( -\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{0,z}\partial _{i,z} \right)\left( -\int \mathrm{d}^{3}\vec{w}G(\vec{y},\vec{w})\partial _{0,w}\partial _{j,w} \right)\braket{ 0|\mathcal{T}A^{i}(z)A^{j}(w)|0 } \\
+ & =\left( -\int \mathrm{d}^{3}\vec{z} G(\vec{x},\vec{z})\partial _{0,z}\partial _{i,z}\right)\braket{ 0|\mathcal{T}A^{i}(x)A^{0}(y)|0 }  \\
+ & =\braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y)|0 }+\delta(x_{0}-y_{0})\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\partial _{i,z}\braket{ 0|[A^{i}(z),A^{0}(y)]|0 }  \\
+ & =\braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y)|0 }+\delta(x_{0}-y_{0})\int \mathrm{d}^{3}\vec{z}G(\vec{x},\vec{z})\left(-\frac{i}{m^{2}}\vec{\nabla}_{z}^{2}\delta ^{3}(\vec{z}-\vec{y})\right) \\
+ & =\braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y)|0 }-\frac{i}{m^{2}}\delta(x_{0}-y_{0})\int \mathrm{d}^{3}\vec{z}\vec{\nabla}_{z}^{2}G(\vec{x},\vec{z})\delta ^{3}(\vec{z}-\vec{y}) \\
+ & =\braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y)|0 } +i\delta(x_{0}-y_{0})G(\vec{x},\vec{y})+\frac{i}{m^{2}}\delta ^{4}(x-y)
+\end{align}
+$$
+
+and finally
+
+$$\tag{1.30}
+\begin{align}
+\braket{ A^{0}(x)A^{0}(y) } & =\braket{ 0|\mathcal{T}A^{0}(x)A^{0}(y)|0 } +\frac{i}{m^{2}}\delta ^{4}(x-y)
+\end{align}
+$$
+
+the contact term $\displaystyle{\frac{i}{m^{2}}\delta ^{4}(x-y)}$ in (1.30) is exactly the difference between the correlation function $\displaystyle{\braket{ A^{\mu}(x)A^{\nu}(y) }}$ in (1.24) and the time-ordered 2-pt correlation function $\displaystyle{\braket{ 0|\mathcal{T}A^{\mu}(x)A^{\nu}(y)|0 }}$ in (1.20). 
 
 ### discussion
 
