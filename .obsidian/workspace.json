@@ -99,17 +99,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/2025 spring/english/week 14.md",
+                "file": "Articles/quantization/article/section 3.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "week 14"
+              "title": "section 3"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -254,8 +254,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5,
-    "collapsed": true
+    "width": 305.5
   },
   "right": {
     "id": "be754014b7083e79",
@@ -308,17 +307,17 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "b775edc33bb7eda4",
+  "active": "7c248e1345b4fc74",
   "lastOpenFiles": [
-    "Lecture/2025 spring/english/week 14.md",
     "Articles/quantization/article/section 2.md",
+    "Articles/quantization/article/appendix A.md",
+    "Lecture/2025 spring/english/week 14.md",
     "Articles/quantization/article/section 3.md",
     "Articles/Test particle/some direct calculation.md",
     "TODO.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/harmonic oscillator with multiplier.md",
     "Articles/quantization/article/section 1_introduction.md",
-    "Articles/quantization/article/appendix A.md",
     "Articles/quantization/path integral quantization for constrained system.md",
     "Drafts/BMS group.md",
     "Drafts/ward identity.md",
