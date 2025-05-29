@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 134,
+                    "columns": 236,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
                     "rows": 70
                   }
@@ -108,8 +108,7 @@
               "title": "main"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -265,8 +264,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5,
-    "collapsed": true
+    "width": 305.5
   },
   "right": {
     "id": "be754014b7083e79",
@@ -320,10 +318,10 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "ab844d14d0f66d1f",
+  "active": "b0357530cb9d1c74",
   "lastOpenFiles": [
-    "Articles/quantization/article 1/section 1_introduction.md",
     "Articles/quantization/article/main.md",
+    "Articles/quantization/article 1/section 1_introduction.md",
     "Articles/quantization/article 1/abstract.md",
     "Articles/quantization/article 1/conclusion.md",
     "Articles/quantization/article 1/appendix B.md",

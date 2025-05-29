@@ -301,6 +301,15 @@
             "current": 9284
           }
         }
+      },
+      "2025-05-29": {
+        "totalDelta": 0,
+        "files": {
+          "Articles/quantization/article/main.md": {
+            "initial": 9284,
+            "current": 9284
+          }
+        }
       }
     }
   }
