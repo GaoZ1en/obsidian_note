@@ -303,7 +303,7 @@
         }
       },
       "2025-05-29": {
-        "totalDelta": 9169,
+        "totalDelta": 9951,
         "files": {
           "Articles/quantization/article/main.md": {
             "initial": 9284,
@@ -344,6 +344,14 @@
           "Articles/quantization/article/after ai/main.md": {
             "initial": 0,
             "current": 0
+          },
+          "Homework/Bachelor Thesis/cydsmtddal/covariant phase space formalism and noether theorem.md": {
+            "initial": 336,
+            "current": 336
+          },
+          "Lecture/2025 spring/python for general purpose/homework 10.md": {
+            "initial": 0,
+            "current": 782
           }
         }
       }

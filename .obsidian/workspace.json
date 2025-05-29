@@ -40,7 +40,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 120,
+                    "columns": 236,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
                     "rows": 70
                   }
@@ -64,123 +64,18 @@
             }
           },
           {
-            "id": "1e99cb50f80d0359",
+            "id": "40f32cdcbeb64f92",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/article/appendix B.md",
+                "file": "Lecture/2025 spring/python for general purpose/homework 10.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "appendix B"
-            }
-          },
-          {
-            "id": "192de6ccb1b97eed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/article/after ai/section 3.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "section 3"
-            }
-          },
-          {
-            "id": "ab844d14d0f66d1f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/article/main.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "main"
-            }
-          },
-          {
-            "id": "55e0625ed53b81ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/article/after ai/section 2.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "section 2"
-            }
-          },
-          {
-            "id": "a0bf93bc9479b95d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/article/after ai/appendix A.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "appendix A"
-            }
-          },
-          {
-            "id": "0a4fd48dd937a79e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/article/after ai/appendix B.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "appendix B"
-            }
-          },
-          {
-            "id": "b3dca575c012c2d6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/article/after ai/main.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "main"
-            }
-          },
-          {
-            "id": "35f128c1f863f484",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/quantization/article/after ai/appendix B.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "appendix B"
+              "title": "homework 10"
             }
           }
         ]
@@ -240,8 +135,7 @@
               "title": "Vertical tabs"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "56384ae1a9e66525",
@@ -287,7 +181,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 perl"
+              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 bash"
             }
           },
           {
@@ -394,18 +288,20 @@
   },
   "active": "b0357530cb9d1c74",
   "lastOpenFiles": [
-    "Articles/quantization/article/after ai/appendix B.md",
-    "Articles/quantization/article/after ai/appendix A.md",
-    "Articles/quantization/article/after ai/section 3.md",
-    "Articles/quantization/article/after ai/section 2.md",
+    "Lecture/2025 spring/python for general purpose/homework 10.md",
+    "Homework/Bachelor Thesis/cydsmtddal/covariant phase space formalism and noether theorem.md",
     "Articles/quantization/article/appendix B.md",
+    "Articles/quantization/article/after ai/appendix B.md",
+    "Articles/quantization/article/after ai/section 2.md",
+    "Articles/quantization/article/main.md",
+    "Articles/quantization/article/after ai/section 3.md",
+    "Articles/quantization/article/after ai/appendix A.md",
     "Articles/quantization/article/appendix A.md",
     "Articles/quantization/article/section 3.md",
     "Articles/quantization/article/section 2.md",
     "TODO.md",
     "Articles/quantization/article/after ai/main.md",
     "Articles/quantization/article/after ai",
-    "Articles/quantization/article/main.md",
     "Articles/quantization/article 1/section 1_introduction.md",
     "Articles/quantization/article 1/abstract.md",
     "Articles/quantization/article 1/conclusion.md",
@@ -420,8 +316,6 @@
     "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
     "Articles/quantization/path integral quantization for Proca field.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
-    "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
-    "Articles/Test particle/some direct calculation.md",
     "Articles/quantization/article",
     "Attachments/Pasted image 20250526114102.png",
     "Attachments/Pasted image 20250524191924.png",
