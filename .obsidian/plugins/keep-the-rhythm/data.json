@@ -303,11 +303,47 @@
         }
       },
       "2025-05-29": {
-        "totalDelta": 0,
+        "totalDelta": 9169,
         "files": {
           "Articles/quantization/article/main.md": {
             "initial": 9284,
             "current": 9284
+          },
+          "Articles/quantization/article/section 3.md": {
+            "initial": 3294,
+            "current": 3294
+          },
+          "Articles/quantization/article/after ai/section 3.md": {
+            "initial": 0,
+            "current": 3305
+          },
+          "Articles/quantization/article/section 2.md": {
+            "initial": 1623,
+            "current": 1623
+          },
+          "Articles/quantization/article/after ai/section 2.md": {
+            "initial": 0,
+            "current": 1343
+          },
+          "Articles/quantization/article/after ai/appendix A.md": {
+            "initial": 0,
+            "current": 2080
+          },
+          "Articles/quantization/article/appendix A.md": {
+            "initial": 1997,
+            "current": 1997
+          },
+          "Articles/quantization/article/after ai/appendix B.md": {
+            "initial": 0,
+            "current": 2441
+          },
+          "Articles/quantization/article/appendix B.md": {
+            "initial": 2346,
+            "current": 2346
+          },
+          "Articles/quantization/article/after ai/main.md": {
+            "initial": 0,
+            "current": 0
           }
         }
       }

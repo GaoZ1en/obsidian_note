@@ -64,6 +64,20 @@
             }
           },
           {
+            "id": "72ed764fa64da776",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Flogin%2Fdevice",
+                "title": "Sign in to GitHub · GitHub",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Sign in to GitHub · GitHub"
+            }
+          },
+          {
             "id": "1e99cb50f80d0359",
             "type": "leaf",
             "state": {
@@ -100,6 +114,66 @@
               "type": "markdown",
               "state": {
                 "file": "Articles/quantization/article/main.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "main"
+            }
+          },
+          {
+            "id": "55e0625ed53b81ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/quantization/article/section 2.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "section 2"
+            }
+          },
+          {
+            "id": "a0bf93bc9479b95d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/quantization/article/appendix A.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "appendix A"
+            }
+          },
+          {
+            "id": "0a4fd48dd937a79e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/quantization/article/appendix B.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "appendix B"
+            }
+          },
+          {
+            "id": "b3dca575c012c2d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/quantization/article/after ai/main.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
@@ -320,6 +394,17 @@
   },
   "active": "b0357530cb9d1c74",
   "lastOpenFiles": [
+    "TODO.md",
+    "Articles/quantization/article/after ai/appendix B.md",
+    "Articles/quantization/article/after ai/main.md",
+    "Articles/quantization/article/appendix B.md",
+    "Articles/quantization/article/after ai/appendix A.md",
+    "Articles/quantization/article/appendix A.md",
+    "Articles/quantization/article/after ai/section 2.md",
+    "Articles/quantization/article/section 2.md",
+    "Articles/quantization/article/after ai/section 3.md",
+    "Articles/quantization/article/after ai",
+    "Articles/quantization/article/section 3.md",
     "Articles/quantization/article/main.md",
     "Articles/quantization/article 1/section 1_introduction.md",
     "Articles/quantization/article 1/abstract.md",
@@ -328,11 +413,7 @@
     "Articles/quantization/article 1/appendix A.md",
     "Articles/quantization/article 1/section 3.md",
     "Articles/quantization/article 1/section 2.md",
-    "Articles/quantization/article/appendix A.md",
     "Articles/quantization/article 1",
-    "Articles/quantization/article/section 2.md",
-    "Articles/quantization/article/section 3.md",
-    "Articles/quantization/article/appendix B.md",
     "Articles/quantization/article/section 1_introduction.md",
     "Articles/quantization/article/conclusion.md",
     "Articles/quantization/quantization for 1+3 dimensional electric field.md",
@@ -340,13 +421,7 @@
     "Articles/quantization/path integral quantization for Proca field.md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
-    "TODO.md",
     "Articles/Test particle/some direct calculation.md",
-    "Lecture/2025 spring/english/week 14.md",
-    "Articles/quantization/harmonic oscillator with multiplier.md",
-    "Articles/quantization/path integral quantization for constrained system.md",
-    "Drafts/BMS group.md",
-    "Drafts/ward identity.md",
     "Articles/quantization/article",
     "Attachments/Pasted image 20250526114102.png",
     "Attachments/Pasted image 20250524191924.png",
@@ -364,7 +439,6 @@
     "Attachments/Pasted image 20250417145002.png",
     "Attachments/微信图片_20250414131423_29.jpg",
     "Attachments/Pasted image 20250417093901.png",
-    "Attachments/Pasted image 20250214190351.png",
-    "Articles/quantization"
+    "Attachments/Pasted image 20250214190351.png"
   ]
 }
