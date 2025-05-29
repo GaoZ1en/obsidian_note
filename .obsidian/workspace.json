@@ -64,20 +64,6 @@
             }
           },
           {
-            "id": "72ed764fa64da776",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Flogin%2Fdevice",
-                "title": "Sign in to GitHub · GitHub",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Sign in to GitHub · GitHub"
-            }
-          },
-          {
             "id": "1e99cb50f80d0359",
             "type": "leaf",
             "state": {
@@ -98,7 +84,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/article/section 3.md",
+                "file": "Articles/quantization/article/after ai/section 3.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
@@ -128,7 +114,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/article/section 2.md",
+                "file": "Articles/quantization/article/after ai/section 2.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
@@ -143,7 +129,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/article/appendix A.md",
+                "file": "Articles/quantization/article/after ai/appendix A.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
@@ -158,7 +144,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/quantization/article/appendix B.md",
+                "file": "Articles/quantization/article/after ai/appendix B.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
@@ -394,17 +380,17 @@
   },
   "active": "b0357530cb9d1c74",
   "lastOpenFiles": [
-    "TODO.md",
     "Articles/quantization/article/after ai/appendix B.md",
-    "Articles/quantization/article/after ai/main.md",
     "Articles/quantization/article/appendix B.md",
     "Articles/quantization/article/after ai/appendix A.md",
     "Articles/quantization/article/appendix A.md",
+    "Articles/quantization/article/after ai/section 3.md",
+    "Articles/quantization/article/section 3.md",
     "Articles/quantization/article/after ai/section 2.md",
     "Articles/quantization/article/section 2.md",
-    "Articles/quantization/article/after ai/section 3.md",
+    "TODO.md",
+    "Articles/quantization/article/after ai/main.md",
     "Articles/quantization/article/after ai",
-    "Articles/quantization/article/section 3.md",
     "Articles/quantization/article/main.md",
     "Articles/quantization/article 1/section 1_introduction.md",
     "Articles/quantization/article 1/abstract.md",
