@@ -40,9 +40,9 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 236,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
-                    "rows": 70
+                    "columns": 120,
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n",
+                    "rows": 3
                   }
                 }
               },
