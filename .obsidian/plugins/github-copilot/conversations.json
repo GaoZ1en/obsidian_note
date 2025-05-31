@@ -1,6 +1,28 @@
 {
   "conversations": [
     {
+      "id": "1748714291392",
+      "title": "New Conversation",
+      "messages": [],
+      "createdAt": 1748714291392,
+      "updatedAt": 1748714291392,
+      "model": {
+        "label": "Claude 3.7 Sonnet Thinking",
+        "value": "claude-3.7-sonnet-thought"
+      }
+    },
+    {
+      "id": "1748714195925",
+      "title": "New Conversation",
+      "messages": [],
+      "createdAt": 1748714195925,
+      "updatedAt": 1748714195925,
+      "model": {
+        "label": "Claude 3.7 Sonnet Thinking",
+        "value": "claude-3.7-sonnet-thought"
+      }
+    },
+    {
       "id": "1748259521321",
       "title": "## Canonical quantization in c...",
       "messages": [
@@ -309,28 +331,6 @@
       }
     },
     {
-      "id": "1748413893861",
-      "title": "New Conversation",
-      "messages": [],
-      "createdAt": 1748413893861,
-      "updatedAt": 1748413893861,
-      "model": {
-        "label": "Claude 3.7 Sonnet Thinking",
-        "value": "claude-3.7-sonnet-thought"
-      }
-    },
-    {
-      "id": "1748413888440",
-      "title": "New Conversation",
-      "messages": [],
-      "createdAt": 1748413888440,
-      "updatedAt": 1748413888440,
-      "model": {
-        "label": "Claude 3.7 Sonnet Thinking",
-        "value": "claude-3.7-sonnet-thought"
-      }
-    },
-    {
       "id": "1748311969496",
       "title": "what is the quantum version of...",
       "messages": [
@@ -415,5 +415,5 @@
       }
     }
   ],
-  "activeConversationId": "1748259521321"
+  "activeConversationId": "1748714291392"
 }
