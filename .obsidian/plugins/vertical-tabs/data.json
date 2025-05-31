@@ -9,7 +9,7 @@
   "trimTabNames": true,
   "showMoreButtons": true,
   "useTabEditing": true,
-  "zenMode": true,
+  "zenMode": false,
   "showActiveTabsInZenMode": true,
   "enableTabZoom": false,
   "enhancedKeyboardTabSwitch": true,
