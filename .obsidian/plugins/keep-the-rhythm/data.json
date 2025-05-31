@@ -358,6 +358,15 @@
             "current": 614
           }
         }
+      },
+      "2025-05-31": {
+        "totalDelta": 0,
+        "files": {
+          "Articles/Proca in AdS3/scalar.md": {
+            "initial": 0,
+            "current": 0
+          }
+        }
       }
     }
   }
