@@ -360,11 +360,15 @@
         }
       },
       "2025-05-31": {
-        "totalDelta": 0,
+        "totalDelta": 141,
         "files": {
           "Articles/Proca in AdS3/scalar.md": {
             "initial": 0,
-            "current": 0
+            "current": 141
+          },
+          "Lecture/2025 spring/python for general purpose/homework 10.md": {
+            "initial": 782,
+            "current": 782
           }
         }
       }
