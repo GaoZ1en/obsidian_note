@@ -355,3 +355,39 @@ $$
 
 # Stiff odes
 
+use 'radau' method.
+
+# Event
+
+at some point the system will reach the ground, we can use event to stop the integration.
+
+```python
+from scipy.integrate import solve_ivp
+def event_function(t, y):
+		return y[1]  # Stop when vertical velocity is zero
+		event_function.terminal = True  # Stop integration at event
+		event_function.direction = 0  # Detect zero crossing in either direction
+
+def ode_system(t, y):
+		g = 9.81  # gravitational acceleration
+		b = 0.1   # damping coefficient
+		m = 1.0   # mass
+		p = 2.0   # power for damping force
+		return [
+				y[1],  # dy/dt = velocity
+				-g - (b/m) * (y[1]**2 + y[0]**2)**(p/2) * y[1]  # acceleration
+		]
+
+sol = solve_ivp(
+		fun=ode_system,
+		t_span=(0, 10),
+		y0=[10, 0],  # initial position and velocity
+		method='Radau',
+		events=event_function,
+		rtol=1e-6,
+		atol=1e-9
+)
+
+	
+
+```
