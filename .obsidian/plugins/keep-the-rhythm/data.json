@@ -373,11 +373,11 @@
         }
       },
       "2025-06-01": {
-        "totalDelta": 3768,
+        "totalDelta": 5588,
         "files": {
           "Articles/Proca in AdS3/scalar.md": {
             "initial": 141,
-            "current": 1712
+            "current": 3420
           },
           "Lecture/2025 spring/python for physics/ode.md": {
             "initial": 0,
@@ -385,7 +385,7 @@
           },
           "Articles/Proca in AdS3/scalar in adsn.md": {
             "initial": 0,
-            "current": 224
+            "current": 336
           }
         }
       }
