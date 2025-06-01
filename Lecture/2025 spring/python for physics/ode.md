@@ -346,3 +346,10 @@ plt.show()
 - Offers more methods and better control than legacy solvers
 - Returns a more comprehensive result object
 
+$$
+\begin{align}
+\frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} & =-\frac{b}{m}|\dot{x}^{2}+\dot{y}^{2}|^{p/2} \dot{x} \\
+\frac{\mathrm{d}^{2}y}{\mathrm{d}t^{2}} & =-g-\frac{b}{m}|\dot{x}^{2}+\dot{y}^{2}|^{p/2} \dot{y}
+\end{align}
+$$
+
