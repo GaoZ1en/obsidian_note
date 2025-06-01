@@ -391,3 +391,9 @@ sol = solve_ivp(
 	
 
 ```
+
+# boundary value problem
+
+method
+1. initial guess
+2. shooting method
