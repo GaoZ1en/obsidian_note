@@ -44,6 +44,43 @@ substitute
 $$\tag{1.5}
 \begin{align}
 z & =\sin ^{2}\rho \\
-R(\rho) & =\sin ^{\ell} \rho \cos ^{\Delta}\rho F(z)
+R(\rho) & =(\sin \rho)^{\ell} (\cos\rho)^{\Delta} F(z)
+\end{align}
+$$
+
+then we have
+
+$$\tag{.}
+\begin{align}
+(1-z)(4z(1-z)\partial _{z}^{2}+2(1-2z)\partial _{z})()
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\partial _{\rho}^{2} & =4\sqrt{ z(1-z) }\partial _{z}(\sqrt{ z(1-z) }\partial _{z}) \\
+ & =4z(1-z)\partial _{z}^{2}+2(1-2z)\partial _{z} \\
+R(\rho) & =(\sin \rho)^{\ell} (\cos\rho)^{\Delta} F(z) \\
+ & =z^{\ell/2} (1-z)^{\Delta/2} F(z) \\
+\partial _{\rho}^{2}R & =4z(1-z)\partial _{z}^{2}(z^{\ell/2}(1-z)^{\Delta/2}F(z))+2(1-2z)\partial _{z}(z^{\ell/2}(1-z)^{\Delta/2}F(z)) \\
+ & =
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\partial _{z}(z^{\ell/2}(1-z)^{\Delta/2}F(z)) & =\frac{\ell}{2}z^{\ell/2-1}(1-z)^{\Delta/2}F(z)-\frac{\Delta}{2}z^{\ell/2}(1-z)^{\Delta/2-}F(z)+z^{\ell/2}(1-z)^{\Delta/2}\partial _{z}F(z) \\
+\partial _{z}^{2}(z^{\ell/2}(1-Z)^{\Delta/2}F(z)) & =\frac{\ell}{2}\left( \frac{\ell}{2}-1 \right)z^{\ell/2-2}(1-z)^{\Delta/2}F(z)+\frac{\Delta}{2}\left( \frac{\Delta}{2}-1 \right)z^{\ell/2}(1-z)^{\Delta/2-2}F(z)+z^{\ell/2}(1-z)^{\Delta/2}\partial _{z}^{2}F(z) \\
+ & +\frac{\Delta \ell}{2}
+\end{align}
+$$
+
+$$\tag{1.6}
+\begin{align}
+\cos ^{2}\rho & =1-z \\
+\sin ^{2} \rho & =z \\
+\tan \rho & =\frac{\sin \rho}{\cos \rho}=\sqrt{ \frac{z}{1-z} } \\
+\partial _{\rho} & =\frac{\mathrm{d}z}{\mathrm{d}\rho} \partial _{z} \\
+ & =2\sqrt{ z(1-z) }\partial _{z}
 \end{align}
 $$
