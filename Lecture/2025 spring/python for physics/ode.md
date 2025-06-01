@@ -65,10 +65,68 @@ y_{i+1} & =y_{i}+\lambda _{1}hf(t_{i}+y_{i})+\lambda_{2}h\left(f(t_{i},y_{i})+\f
 \end{align}
 $$
 
-let $\displaystyle{\alpha=\beta}$, we have
+let $\displaystyle{\alpha=\beta=p}$, we have
 
 $$\tag{1.7}
 \begin{align}
-
+y_{i+1} & =y_{i}+hf(t_{i},y_{i})(\lambda_{1}+\lambda_{2})+\frac{1}{2} \frac{\partial f}{\partial t}h^{2}+\frac{1}{2} \frac{\partial f}{\partial y}K_{1}h^{2} \\
+ & \begin{cases}
+\lambda _{1}+\lambda _{2}=1 \\
+\lambda_{2}p=\frac{1}{2}
+\end{cases}
 \end{align}
 $$
+
+1. $\displaystyle{\lambda _{1}=\lambda _{2}=\frac{1}{2},p=1}$, we got the Euler formula.
+2. $\displaystyle{\lambda _{1}=0,\lambda _{2}=1,p=\frac{1}{2}}$, we got the middle point formula
+
+
+## 3rd and 4st order Runge-Kutta
+
+3rd order is similar to the 2nd order
+
+$$\tag{1.8}
+\begin{align}
+y_{i+1} & = y_{i}+h(\lambda _{1}K_{1}+\lambda _{2}K_{2}+\lambda _{3}K_{3}) \\
+K_{1} & =f(t_{i},y_{i}) \\
+K_{2} & =f(t_{i}+ph,y_{i}+phK_{1}) \\
+K_{3} & =f(t_{i}+qh,y_{i}+qh(rK_{1}+sK_{2}))
+\end{align}
+$$
+
+after a long derivation, we have
+
+$$\tag{1.9}
+\begin{align}
+r+s & =1 \\
+\lambda _{1}+\lambda _{2}+\lambda _{3} & =1 \\
+\lambda _{2}p+\lambda _{3}q & =\frac{1}{2} \\
+\lambda _{2}p^{2}+\lambda _{3}q^{2} & =\frac{1}{3} \\
+\lambda _{3}pqs & =\frac{1}{6}
+\end{align}
+$$
+
+a useful formula is to choose 
+
+$$\tag{1.10}
+\begin{align}
+y_{i+1} & =y_{i}+\frac{h}{6}(K_{1}+4K_{2}+K_{3}) \\
+K_{1} & =f(t_{i},y_{i}) \\
+K_{2} & =f\left( t_{i}+\frac{h}{2},y_{i}+\frac{h}{2}K_{1} \right) \\
+K_{3} & =f\left( t_{i}+h,y_{i}+h(-K_{1}+2K_{2}) \right)
+\end{align}
+$$
+
+and a 4st order method is
+
+$$\tag{1.11}
+\begin{align}
+y_{i+1} & =y_{i}+\frac{1}{6}h(K_{1}+2K_{2}+2K_{3}+K_{4}) \\
+K_{1} & =f(t_{i},y_{i}) \\
+K_{2} & =f\left( t_{i}+\frac{h}{2},y_{i}+\frac{hK_{1}}{2} \right) \\
+K_{3} & =f\left( t_{i}+\frac{h}{2},y_{i}+\frac{hK_{2}}{2} \right) \\
+K_{4} & =f(t_{i}+h,y_{i}+hK_{3})
+\end{align}
+$$
+
+# 
