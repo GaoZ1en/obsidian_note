@@ -38,9 +38,9 @@ make the ansatz
 
 $$
 \begin{align}
-A^{0} & =e^{-i \omega t}f(\rho)Y_{\ell \mathbf{m}}(\Omega) \\
-A^{\rho} & =e^{-i \omega t}g(\rho)Y_{\mathrm{\ell}\mathbf{m}}(\Omega) \\
-A^{\Omega} & =e^{-i \omega t}(h(\rho)\mathbf{Y}^{(e)}_{\ell \mathbf{m}}(\Omega)+k(\rho)\mathbf{Y}^{(m)}_{\ell \mathbf{m}}(\Omega))
+A^{0} & =e^{-i \omega t}f(\rho)Y_{\ell \mathbf{m}}(\Omega _{n-2}) \\
+A^{\rho} & =e^{-i \omega t}g(\rho)Y_{\mathrm{\ell}\mathbf{m}}(\Omega _{n-2}) \\
+A^{\Omega} & =e^{-i \omega t}(h(\rho)\mathbf{Y}^{(e)}_{\ell \mathbf{m}}(\Omega)+k(\rho)\mathbf{Y}^{(m)}_{\ell \mathbf{m}}(\Omega _{n-2}))
 \end{align}
 $$
 
@@ -68,19 +68,77 @@ X_{k\ell}(\rho) & =\rho^{(3-n)/2}J_{\ell+\frac{n-3}{2}}(k\rho)
 \end{align}
 $$
 
-where we have the dispersion relation $\displaystyle{\omega ^{2}=k^{2}+m^{2}}$. by orthogonality relations, we have
+where we have the dispersion relation $\displaystyle{\omega ^{2}=k^{2}+m^{2}}$. the full solution is
 
 $$
-\begin{align} 
-f_{k\ell} & =\frac{k}{\sqrt{ \omega }} \sqrt{ \frac{\ell(\ell+n-3)}{\omega ^{2}+\ell(\ell+n-3)} } \\
-g_{k\ell} & =0 \\
-h_{k\ell} & =\frac{k}{\sqrt{ \omega }} \frac{1}{\sqrt{ 1+\frac{\ell(\ell+n-3)}{\omega ^{2}} }} \\
-k _{k\ell} & =\frac{k}{\sqrt{ \omega }}\rho ^{(3-n)/2}J_{\ell+\frac{n-3}{2}}(k\rho)
+\begin{align}
+A^{t}_{k\ell \mathbf{m}}(t,\rho,\Omega _{n-2}) & =(\text{ some function determined by } \partial _{\mu}A^{\mu}=0) \\
+A^{\rho}_{k\ell \mathbf{m}}(t,\rho,\Omega _{n-2}) & =N^{\rho}_{k\ell}e^{-i \omega t}X_{k\ell}(\rho)Y_{\ell \mathbf{m}}(\Omega _{n-2}) \\
+A^{\Omega}_{k\ell \mathbf{m}}(t,\rho,\Omega _{n-2}) & =N^{e}_{k\ell}e^{-i \omega t}X_{k\ell}(\rho)\mathbf{Y}^{(e)}_{\ell \mathbf{m}}(\Omega _{n-2})+N^{m}_{k\ell}e^{-i \omega t}X_{k\ell}(\rho) \mathbf{Y}^{(m)}_{\ell \mathbf{m}}(\Omega _{n-2})
 \end{align}
 $$
 
-here we choose $\displaystyle{g_{k\ell}=0}$ by constraint (1.2).
+here we don't write the explicit form of normalization constant $\displaystyle{N_{k\ell}}$. make the mode expansion
+
+$$
+\begin{align}
+A^{\mu}(t,\rho,\Omega _{n-2}) & =\sum _{k,\ell,\mathbf{m}}a_{k,\ell,\mathbf{m}}A_{k\ell \mathbf{m}}^{\mu}(t,\rho,\Omega _{n-2})
+\end{align}
+$$
+
+and the symplectic form is
+
+$$
+\begin{align}
+\omega & =i\sum _{k,\ell,\mathbf{m}}\delta a_{k\ell \mathbf{m}}^{\dagger}\wedge \delta a_{k\ell \mathbf{m}}
+\end{align}
+$$
 
 ---
 now we return to the AdS space.
 
+the equation of motion is
+
+$$\tag{1.3}
+\begin{align}
+\nabla ^{2}A^{\nu}-(m^{2}+n-1)A^{\nu}=0
+\end{align}
+$$
+
+make the ansatz
+
+$$\tag{1.4}
+\begin{align}
+A^{t} & =e^{-i \omega t}f(\rho)Y_{\ell \mathbf{m}}(\Omega _{n-2}) \\
+A^{\rho} & =e^{-i \omega t}g(\rho)Y_{\mathrm{\ell}\mathbf{m}}(\Omega _{n-2}) \\
+A^{\Omega} & =e^{-i \omega t}(h(\rho)\mathbf{Y}^{(e)}_{\ell \mathbf{m}}(\Omega)+k(\rho)\mathbf{Y}^{(m)}_{\ell \mathbf{m}}(\Omega _{n-2}))
+\end{align}
+$$
+
+then we have
+
+$$\tag{1.4}
+\begin{align}
+\cos ^{2}\rho  \frac{\mathrm{d}^{2}X}{\mathrm{d}\rho ^{2}}+\frac{n-2}{\tan \rho} \frac{\mathrm{d}X}{\mathrm{d}\rho}+\left( \omega ^{2}\cos ^{2}\rho -\frac{\ell(\ell+n-3)}{\tan ^{2}\rho} -(m^{2}+n-1)\right)X=0
+\end{align}
+$$
+
+where $\displaystyle{X=(f,g,h,k)}$. the solution is
+
+$$\tag{1.5}
+\begin{align}
+X_{k\ell}(\rho) & =(\sin \rho)^{\ell} (\cos\rho)^{\Delta} {}_{2}F_{1}\left( -k,\ell+\Delta+k;\Delta+\frac{n-3}{2};\cos ^{2}\rho \right)
+\end{align}
+$$
+
+here $\displaystyle{\Delta}$ satisfies $\displaystyle{\Delta(\Delta+n-1)=m^{2}+n-1\implies \Delta=\frac{n-1}{2}+\sqrt{ \frac{(n+1)^{2}}{4}+m^{2}-1 }}$. by some suitable choice of normalization, we have
+
+$$\tag{1.6}
+\begin{align}
+A_{k\ell}^{t}(t,\rho,\Omega _{n-2}) & =(\text{ some function determined by $\displaystyle{\partial _{\mu}A^{\mu}=0}$ }) \\
+A_{k\ell}^{\rho}(t,\rho,\Omega _{n-2}) & =N^{\rho}_{k\ell}e^{-i \omega _{k\ell}t}X_{k\ell}(\rho)Y_{\ell \mathbf{m}}(\Omega _{n-2}) \\
+A_{k\ell}^{\Omega}(t,\rho,\Omega _{n-2}) & =N^{e}_{k\ell}e^{-i \omega _{k\ell}t}X_{k\ell}(\rho)\mathbf{Y}^{(e)}_{\ell \mathbf{m}}(\Omega _{n-2}) +N^{m}_{k\ell}e^{-i \omega _{k\ell}t}X_{k\ell}(\rho) \mathbf{Y}^{(m)}_{\ell \mathbf{m}}(\Omega _{n-2})
+\end{align}
+$$
+
+with dispersion relation $\displaystyle{\omega _{k\ell}=\Delta+\ell+2k}$. the normalization constants
