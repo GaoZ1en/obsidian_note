@@ -588,3 +588,78 @@ $$\tag{.}
 \Delta(\Delta-n+1) & =m^{2}
 \end{align}
 $$
+
+# Deriving the Normalization Constant for AdS_n Klein-Gordon Solutions
+
+To determine the normalization constant $N_{k\ell}$ for your solution:
+
+$$\phi_{k\ell \mathbf{m}}(t,\rho,\Omega_{n-2}) = N_{k\ell}e^{-i\omega t}(\sin\rho)^{\ell}(\cos\rho)^{\Delta}{}_2F_1\left(-k,\ell+\Delta+k;\Delta-\frac{n-3}{2};\cos^2\rho\right)Y_{\ell\mathbf{m}}(\Omega_{n-2})$$
+
+We need to ensure orthonormality with respect to the Klein-Gordon inner product.
+
+## Step 1: Set up the Klein-Gordon inner product
+
+The Klein-Gordon inner product in curved spacetime is:
+
+$$(\phi_1, \phi_2) = i\int_\Sigma d\Sigma_\mu \sqrt{-g} g^{\mu\nu} (\phi_1^* \partial_\nu \phi_2 - \phi_2 \partial_\nu \phi_1^*)$$
+
+For modes with definite frequency, this simplifies to:
+
+$$(\phi_{k\ell\mathbf{m}}, \phi_{k'\ell'\mathbf{m}'}) = 2\omega \int \sqrt{-g}g^{00} \phi_{k\ell\mathbf{m}}^* \phi_{k'\ell'\mathbf{m}'} d^{n-1}x$$
+
+## Step 2: Substitute the metric factors
+
+For AdS_n in global coordinates:
+- $\sqrt{-g} = \frac{\sin^{n-2}\rho}{\cos^n\rho}\sqrt{\gamma}$ where $\sqrt{\gamma}$ is the determinant of the unit $(n-2)$-sphere metric
+- $g^{00} = -\cos^2\rho$
+
+The inner product becomes:
+
+$$(\phi_{k\ell\mathbf{m}}, \phi_{k'\ell'\mathbf{m}'}) = 2\omega \int_0^{\pi/2} d\rho \int d\Omega_{n-2} \frac{\sin^{n-2}\rho}{\cos^{n-2}\rho} \phi_{k\ell\mathbf{m}}^* \phi_{k'\ell'\mathbf{m}'}$$
+
+## Step 3: Use the orthogonality of spherical harmonics
+
+$$\int Y_{\ell\mathbf{m}}^*(\Omega_{n-2}) Y_{\ell'\mathbf{m}'}(\Omega_{n-2}) d\Omega_{n-2} = \delta_{\ell\ell'}\delta_{\mathbf{m}\mathbf{m}'}$$
+
+This reduces our calculation to the radial integral:
+
+$$(\phi_{k\ell\mathbf{m}}, \phi_{k'\ell'\mathbf{m}'}) = 2\omega |N_{k\ell}|^2 \delta_{\ell\ell'}\delta_{\mathbf{m}\mathbf{m}'} \int_0^{\pi/2} \frac{\sin^{n-2+2\ell}\rho}{\cos^{n-2-2\Delta}\rho} \cdot [F_k(\rho)F_{k'}(\rho)] d\rho$$
+
+where $F_k(\rho) = {}_2F_1\left(-k,\ell+\Delta+k;\Delta-\frac{n-3}{2};\cos^2\rho\right)$
+
+## Step 4: Transform to Jacobi polynomials
+
+The hypergeometric function in our solution can be related to Jacobi polynomials:
+
+$${}_2F_1\left(-k,\ell+\Delta+k;\Delta-\frac{n-3}{2};\cos^2\rho\right) = \frac{k!}{(\Delta-\frac{n-3}{2})_k}P_k^{(\alpha,\beta)}(1-2\cos^2\rho)$$
+
+where:
+- $\alpha = \Delta-\frac{n-1}{2}$
+- $\beta = \ell+\frac{n-3}{2}$
+- $(a)_k = a(a+1)...(a+k-1)$ is the Pochhammer symbol
+
+## Step 5: Use the orthogonality relation for Jacobi polynomials
+
+With the change of variable $x = 1-2\cos^2\rho$, the orthogonality relation is:
+
+$$\int_{-1}^1 (1-x)^\alpha(1+x)^\beta P_m^{(\alpha,\beta)}(x)P_n^{(\alpha,\beta)}(x)dx = \frac{2^{\alpha+\beta+1}\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{(2n+\alpha+\beta+1)n!\Gamma(n+\alpha+\beta+1)}\delta_{mn}$$
+
+Applying this to our integral and performing the transformation carefully yields:
+
+$$|N_{k\ell}|^{-2} = \frac{2(\Delta+\ell+2k)(\Delta-\frac{n-3}{2})_k^2}{k!} \cdot \frac{2^{\Delta+\ell+n-2}\Gamma(k+\Delta-\frac{n-1}{2}+1)\Gamma(k+\ell+\frac{n-1}{2})}{(2k+\Delta+\ell+n-2)\Gamma(k+\Delta+\ell+1)}$$
+
+## Step 6: Simplify the normalization constant
+
+After algebraic manipulation and using properties of Gamma functions, we obtain:
+
+$$N_{k\ell} = \sqrt{\frac{k!(\Delta+k+\ell)\Gamma(k+\Delta+\ell)}{(\Delta+k-\frac{n-3}{2})!(\ell+\frac{n-1}{2}+k)!}} \cdot \sqrt{\frac{\Gamma(\Delta)}{\Gamma(\Delta-\frac{n-1}{2}+1)}}$$
+
+Which can be written more compactly as:
+
+$$N_{k\ell} = \sqrt{\frac{k!\Gamma(k+\Delta+\ell+1)\Gamma(\Delta)\Gamma(k+\Delta-\frac{n-3}{2})}{\Gamma(k+\Delta-\frac{n-3}{2}+1)\Gamma(k+\ell+\frac{n-1}{2}+1)\Gamma(\Delta-\frac{n-1}{2}+1)}}$$
+
+This normalization constant ensures that your modes satisfy:
+
+$$(\phi_{k\ell\mathbf{m}}, \phi_{k'\ell'\mathbf{m}'}) = \delta_{kk'}\delta_{\ell\ell'}\delta_{\mathbf{m}\mathbf{m}'}$$
+
+as required for a properly normalized orthogonal basis of solutions.

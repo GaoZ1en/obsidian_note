@@ -80,3 +80,44 @@ $$\tag{1.9}
 \braket{ \phi _{k\ell \mathbf{m}}, \phi _{k'\ell'\mathbf{m}'}} & =\delta _{kk'}\delta _{\ell\ell'}\delta _{\mathbf{m}\mathbf{m'}}
 \end{align}
 $$
+
+which gives
+
+$$\tag{1.10}
+\begin{align}
+N_{k\ell} = \sqrt{\frac{k!\Gamma(k+\Delta+\ell+1)\Gamma(\Delta)\Gamma(k+\Delta-\frac{n-3}{2})}{\Gamma(k+\Delta-\frac{n-3}{2}+1)\Gamma(k+\ell+\frac{n-1}{2}+1)\Gamma(\Delta-\frac{n-1}{2}+1)}}
+\end{align}
+$$
+
+the energy spectrum is given by
+
+$$\tag{1.11}
+\begin{align}
+\omega _{k\ell} & =\Delta+\ell+2k
+\end{align}
+$$
+
+---
+## canonical quantization in CPS formalism
+
+we have found a complete set of solutions $\displaystyle{\left\{\phi _{k\ell \mathbf{m}}(t,\rho,\Omega _{n-2})\right\}}$ to the Klein-Gordon equation in $\mathrm{AdS}_{n}$. expand the field $\displaystyle{\phi(t,\rho,\Omega _{n-2})}$ in terms of these solutions
+
+$$\tag{2.1}
+\begin{align}
+\phi(t,\rho,\Omega _{n-2}) & =\sum _{k=0}^{\infty}\sum _{\ell=0}^{\infty}\sum _{\mathbf{m}} a_{k\ell \mathbf{m}}\phi _{k\ell \mathbf{m}}(t,\rho,\Omega _{n-2})
+\end{align}
+$$
+
+then the symplectic form becomes
+
+$$\tag{2.2}
+\begin{align}
+\omega & =i\sum ^{\infty}_{k=0}\sum ^{\infty}_{\ell=0}\sum _{\mathbf{m}}\delta a^{\dagger}_{k\ell \mathbf{m}}\wedge \delta a_{k\ell \mathbf{m}}
+\end{align}
+$$
+
+$$\tag{2.3}
+\begin{align}
+
+\end{align}
+$$
