@@ -109,7 +109,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -263,7 +263,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5
+    "width": 305.5,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -317,13 +318,13 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "cef33d621e94efd8",
+  "active": "17811b4919831ef5",
   "lastOpenFiles": [
-    "Articles/Proca in AdS3/scalar in adsn.md",
     "Drafts/adsn scalar.md",
+    "Articles/Proca in AdS3/scalar in adsn.md",
+    "Articles/Proca in AdS3/scalar.md",
     "Attachments/Pasted image 20250602105133.png",
     "Attachments/Pasted image 20250602105121.png",
-    "Articles/Proca in AdS3/scalar.md",
     "Lecture/2025 spring/python for physics/ode.md",
     "Lecture/2025 spring/python for general purpose/homework 10.md",
     "Articles/Proca in AdS3/some basics.md",
