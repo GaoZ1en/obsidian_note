@@ -2,8 +2,8 @@ equation of motion
 
 $$\tag{1.1}
 \begin{align}
-\nabla ^{2}A^{\nu}-m^{2}A^{\nu}+R^{~\nu}_{\mu}A^{\mu}=0 \\
-\implies \nabla ^{2}A^{\nu}-(m^{2}+n-1)A^{\nu}=0
+\nabla ^{2}A^{\nu}-m^{2}A^{\nu}-R^{~\nu}_{\mu}A^{\mu}=0 \\
+\implies \nabla ^{2}A^{\nu}-(m^{2}-n+1)A^{\nu}=0
 \end{align}
 $$
 
@@ -101,9 +101,10 @@ the equation of motion is
 
 $$\tag{1.3}
 \begin{align}
-\nabla ^{2}A^{\nu}-(m^{2}+n-1)A^{\nu}=0
+\nabla ^{2}A^{\nu}-(m^{2}-n+1)A^{\nu}=0
 \end{align}
 $$
 
 the problem is that different modes mix in the equations of motion.
 
+we first consider the case $\displaystyle{n=3}$. 
