@@ -48,6 +48,8 @@ R(\rho) & =(\sin \rho)^{\ell} (\cos\rho)^{\Delta} F(z)
 \end{align}
 $$
 
+by examine the behavior of the equation as $\displaystyle{\rho \to 0}$, we require
+
 then we have
 
 $$\tag{.}
@@ -71,7 +73,7 @@ $$\tag{.}
 \begin{align}
 \partial _{z}(z^{\ell/2}(1-z)^{\Delta/2}F(z)) & =\frac{\ell}{2}z^{\ell/2-1}(1-z)^{\Delta/2}F(z)-\frac{\Delta}{2}z^{\ell/2}(1-z)^{\Delta/2-}F(z)+z^{\ell/2}(1-z)^{\Delta/2}\partial _{z}F(z) \\
 \partial _{z}^{2}(z^{\ell/2}(1-Z)^{\Delta/2}F(z)) & =\frac{\ell}{2}\left( \frac{\ell}{2}-1 \right)z^{\ell/2-2}(1-z)^{\Delta/2}F(z)+\frac{\Delta}{2}\left( \frac{\Delta}{2}-1 \right)z^{\ell/2}(1-z)^{\Delta/2-2}F(z)+z^{\ell/2}(1-z)^{\Delta/2}\partial _{z}^{2}F(z) \\
- & +\frac{\Delta \ell}{2}
+ & -\frac{\Delta \ell}{2}z^{\ell/2-1}(1-z)^{\Delta/2-1}F(z)+\ell z^{\ell/2-1}(1-z)^{\Delta/2}\partial _{z}F(z)-\Delta z^{\ell/2}(1-z)^{\Delta/2-1}\partial _{z}F(z)
 \end{align}
 $$
 
