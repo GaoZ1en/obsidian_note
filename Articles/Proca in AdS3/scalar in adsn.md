@@ -81,7 +81,7 @@ $$\tag{1.9}
 \end{align}
 $$
 
-which gives
+which gives (? need check)
 
 $$\tag{1.10}
 \begin{align}
@@ -116,8 +116,25 @@ $$\tag{2.2}
 \end{align}
 $$
 
+Hamiltonian flow is given by
+
 $$\tag{2.3}
 \begin{align}
+X_{\phi(t,\rho,\Omega _{n-2})} & =-i\sum _{k,\ell,\mathbf{m}}\left(\phi _{k\ell \mathbf{m}} \frac{\delta}{\delta a_{k\ell \mathbf{m}}^{\dagger}}-\phi ^{*}_{k\ell \mathbf{m}} \frac{\delta}{\delta a_{k\ell \mathbf{m}}}\right)
+\end{align}
+$$
 
+and commutation relations are given by
+
+$$\tag{2.4}
+\begin{align}
+[\phi(t,\rho,\Omega _{n-2}),\phi(t',\rho',\Omega _{n-2}')] & =iX_{\phi(t,\rho,\Omega _{n-2})}\cdot X_{\phi(t',\rho',\Omega' _{n-2})}\cdot \omega \\
+ & =\sum _{k,\ell,\mathbf{m}}\left(\phi _{k\ell\mathbf{m}}(t,\rho,\Omega _{n-2})\phi ^{*}_{k\ell \mathbf{m}}(t',\rho',\Omega _{n-2}')-\phi ^{*}_{k\ell\mathbf{m}}(t,\rho,\Omega _{n-2})\phi_{k\ell \mathbf{m}}(t',\rho',\Omega _{n-2}')\right) \\
+ & =?
+\end{align}
+$$
+$$\tag{.}
+\begin{align}
+N_{k\ell}^{2}\sum _{k,\ell,\mathbf{m}}\left(\right)
 \end{align}
 $$

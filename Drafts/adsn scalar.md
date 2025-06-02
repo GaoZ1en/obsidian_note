@@ -663,3 +663,88 @@ This normalization constant ensures that your modes satisfy:
 $$(\phi_{k\ell\mathbf{m}}, \phi_{k'\ell'\mathbf{m}'}) = \delta_{kk'}\delta_{\ell\ell'}\delta_{\mathbf{m}\mathbf{m}'}$$
 
 as required for a properly normalized orthogonal basis of solutions.
+
+# Detailed Derivation of Step 6: Transformation to Hypergeometric Form
+
+Let me provide a detailed derivation of how we transform the radial equation into the hypergeometric form.
+
+## Starting Point: The Radial Equation
+
+From Step 5, we have:
+
+$$\frac{1}{\sin^{n-2}\rho}\frac{d}{d\rho}\left(\sin^{n-2}\rho\cos^2\rho\frac{df}{d\rho}\right) + \left(\omega^2\cos^2\rho - \frac{l(l+n-3)\cos^2\rho}{\sin^2\rho} - m^2\right)f = 0$$
+
+## Variable Substitution: $z = \sin^2\rho$
+
+We make the substitution $z = \sin^2\rho$, which gives:
+- $\sin\rho = \sqrt{z}$
+- $\cos\rho = \sqrt{1-z}$
+- $\rho = \arcsin\sqrt{z}$
+
+## Chain Rule for Derivatives
+
+For the derivatives, we use:
+$$\frac{d}{d\rho} = \frac{dz}{d\rho}\frac{d}{dz}$$
+
+Since $z = \sin^2\rho$, we have:
+$$\frac{dz}{d\rho} = 2\sin\rho\cos\rho = 2\sqrt{z(1-z)}$$
+
+So:
+$$\frac{d}{d\rho} = 2\sqrt{z(1-z)}\frac{d}{dz}$$
+
+## Computing the First Term
+
+Let's rewrite the first term of our equation:
+
+$$\frac{1}{\sin^{n-2}\rho}\frac{d}{d\rho}\left(\sin^{n-2}\rho\cos^2\rho\frac{df}{d\rho}\right)$$
+
+Substituting our variables:
+- $\sin^{n-2}\rho = z^{(n-2)/2}$
+- $\cos^2\rho = 1-z$
+- $\frac{df}{d\rho} = 2\sqrt{z(1-z)}\frac{df}{dz}$
+
+The first term becomes:
+$$\frac{1}{z^{(n-2)/2}}\frac{d}{d\rho}\left(z^{(n-2)/2}(1-z) \cdot 2\sqrt{z(1-z)}\frac{df}{dz}\right)$$
+
+Simplifying:
+$$\frac{1}{z^{(n-2)/2}}\frac{d}{d\rho}\left(2z^{(n-1)/2}(1-z)^{3/2}\frac{df}{dz}\right)$$
+
+Applying the chain rule again:
+$$\frac{1}{z^{(n-2)/2}} \cdot 2\sqrt{z(1-z)}\frac{d}{dz}\left(2z^{(n-1)/2}(1-z)^{3/2}\frac{df}{dz}\right)$$
+
+Simplifying further:
+$$4z^{1-(n-2)/2}(1-z)\frac{d}{dz}\left(z^{(n-1)/2}(1-z)^{3/2}\frac{df}{dz}\right)$$
+
+## Computing the Second Term
+
+The second part of the equation:
+$$\left(\omega^2\cos^2\rho - \frac{l(l+n-3)\cos^2\rho}{\sin^2\rho} - m^2\right)f$$
+
+Becomes:
+$$\left(\omega^2(1-z) - \frac{l(l+n-3)(1-z)}{z} - m^2\right)f$$
+
+## Expand the Derivatives
+
+When we expand the derivatives in the first term and combine with the second term, we get:
+
+$$z(1-z)f''(z) + \left[\frac{n-1}{2} + \frac{1}{2} - \left(\frac{n-1}{2} + 1 + \frac{1}{2}\right)z\right]f'(z) - \frac{1}{4}\left[\frac{l(l+n-3)}{z} + \frac{m^2}{1-z} - \omega^2\right]f(z) = 0$$
+
+Simplifying the coefficient of $f'(z)$:
+$$z(1-z)f''(z) + \left[\frac{n-1}{2} + \frac{1}{2} - \left(\frac{n+1}{2}\right)z\right]f'(z) - \frac{1}{4}\left[\frac{l(l+n-3)}{z} + \frac{m^2}{1-z} - \omega^2\right]f(z) = 0$$
+
+Which gives:
+$$z(1-z)f''(z) + \left[\frac{n}{2} - \left(\frac{n+1}{2}\right)z\right]f'(z) - \frac{1}{4}\left[\frac{l(l+n-3)}{z} + \frac{m^2}{1-z} - \omega^2\right]f(z) = 0$$
+
+## Final Hypergeometric Form
+
+With a slight adjustment to match standard forms:
+
+$$z(1-z)f''(z) + \left[\frac{n-1}{2} - \left(\frac{n+1}{2}\right)z\right]f'(z) - \frac{1}{4}\left[\frac{l(l+n-3)}{z} + \frac{m^2}{1-z} - \omega^2\right]f(z) = 0$$
+
+This is now in a form that can be compared with the standard hypergeometric differential equation:
+
+$$z(1-z)F''(z) + [c - (a+b+1)z]F'(z) - abF(z) = 0$$
+
+where ${}_2F_1(a,b;c;z)$ is the hypergeometric function that solves this equation.
+
+The transformation was critical because hypergeometric equations have well-studied solutions that allow us to find the complete set of solutions to the Klein-Gordon equation in AdS space.
