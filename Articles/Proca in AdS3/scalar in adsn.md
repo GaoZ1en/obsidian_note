@@ -48,4 +48,13 @@ R(\rho) & =(\sin \rho)^{\ell} (\cos\rho)^{\Delta} F(z)
 \end{align}
 $$
 
+where $\displaystyle{\Delta=\frac{n-1}{2}+\sqrt{ m^{2}+\frac{(n-1)^{2}}{4} }}$. then we have
 
+
+
+怎么解以下的方程
+\cos ^{2}\rho \partial _{\rho}^{2}R+\frac{n-2}{\tan \rho}\partial _{\rho}R+\left( \omega ^{2}\cos ^{2}\rho -\frac{l(l+n-3)}{\tan ^{2}\rho} -m^{2}\right)R=0
+要求R(rho)满足当rho->pi/2时R->(cos rho)^Delta，当rho->0时R有限？
+我记得解的形式大概是R(\rho) & =(\sin \rho)^{\ell} (\cos\rho)^{\Delta} F(z)，其中z & =\cos ^{2}\rho
+而且对于n=3, $\displaystyle{R(\rho)=(\sin \rho)^{\ell}(\cos \rho)^{\Delta}{}_{2}F_{1}(-n,\ell+\Delta+n,\Delta;\cos ^{2}\rho)}$
+这个方程来源于AdSn中global coordinate下Klein-Gordon方程的径向部分。请告诉我从哪里可以找到相关的计算结果
