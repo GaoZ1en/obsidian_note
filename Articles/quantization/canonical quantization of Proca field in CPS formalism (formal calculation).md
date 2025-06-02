@@ -190,7 +190,7 @@ consider a free Proca field in $\displaystyle{d}$-dimension
 
 $$\tag{2.1}
 \begin{align}
-S & =\int _{M}\varepsilon \left( -\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}m^{2}A_{\mu}A^{\mu} \right)
+S & =\int _{M}\varepsilon \left( -\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu} \right)
 \end{align}
 $$
 
@@ -199,7 +199,7 @@ where $\displaystyle{F_{\mu \nu}=\nabla _{\mu}A_{\nu}-\nabla _{\nu}A_{\mu}}$. ma
 $$\tag{2.2}
 \begin{align}
 \delta S & =\int _{M}\varepsilon E^{\mu}\delta A_{\mu}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
-E^{\nu} & =\nabla _{\mu}F^{\mu \nu}+m^{2}A^{\nu} \\
+E^{\nu} & =\nabla _{\mu}F^{\mu \nu}-m^{2}A^{\nu} \\
 \theta & =\int _{\Sigma}\varepsilon _{\Sigma}\tau _{\mu}F^{\mu \nu}\delta A_{\nu}
 \end{align}
 $$
@@ -208,7 +208,7 @@ from the equation of motion we have
 
 $$\tag{2.3}
 \begin{align}
-\nabla _{\nu}\nabla _{\mu}F^{\mu \nu}+m^{2}\nabla _{\mu}A^{\mu} & =m^{2}\nabla _{\mu}A^{\mu}=0
+\nabla _{\nu}\nabla _{\mu}F^{\mu \nu}-m^{2}\nabla _{\mu}A^{\mu} & =-m^{2}\nabla _{\mu}A^{\mu}=0
 \end{align}
 $$
 
@@ -216,7 +216,7 @@ and the equation of motion becomes
 
 $$\tag{2.4}
 \begin{align}
-E^{\nu} & =\nabla ^{2}A^{\nu}+m^{2}A^{\nu}+R^{~\nu}_{\mu}A^{\mu}
+E^{\nu} & =\nabla ^{2}A^{\nu}-m^{2}A^{\nu}+R^{~\nu}_{\mu}A^{\mu}
 \end{align}
 $$
 plus a constraint $\displaystyle{\nabla _{\mu}A^{\mu}=0}$. we choose $\displaystyle{A_{i}, i=1,2,\dots,d-1}$ as independent variables. the symplectic form is
