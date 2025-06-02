@@ -629,3 +629,4 @@ This condition has profound physical meaning:
    - Alternative quantization: $\Delta_-$ mode corresponds to the dual operator dimension (permitted when the mass is close to the BF bound)
 
 This relation is fundamental to understanding the holographic dictionary in AdS/CFT and the boundary conditions for fields in anti-de Sitter space.
+
