@@ -390,7 +390,7 @@
         }
       },
       "2025-06-02": {
-        "totalDelta": 1501,
+        "totalDelta": 2239,
         "files": {
           "Articles/Proca in AdS3/scalar in adsn.md": {
             "initial": 714,
@@ -410,7 +410,7 @@
           },
           "Articles/Proca in AdS3/proca in adsn.md": {
             "initial": 0,
-            "current": 158
+            "current": 366
           },
           "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md": {
             "initial": 2384,
@@ -422,7 +422,7 @@
           },
           "Drafts/adsn proca.md": {
             "initial": 0,
-            "current": 357
+            "current": 887
           }
         }
       }

@@ -34,4 +34,30 @@ $$
 \end{align}
 $$
 
-make the ansatz $\displaystyle{A^{\mu}=}$
+make the ansatz
+
+$$
+\begin{align}
+A^{0} & =e^{-i \omega t}f(\rho)Y_{\ell \mathbf{m}}(\Omega) \\
+A^{\rho} & =e^{-i \omega t}g(\rho)Y_{\mathrm{\ell}\mathbf{m}}(\Omega) \\
+A^{\Omega} & =e^{-i \omega t}(h(\rho)\mathbf{Y}^{(e)}_{\ell \mathbf{m}}(\Omega)+k(\rho)\mathbf{Y}^{(m)}_{\ell \mathbf{m}}(\Omega))
+\end{align}
+$$
+
+where $\displaystyle{\mathbf{Y}^{(e)}_{\ell \mathbf{m}}(\Omega)= \frac{r}{\sqrt{ \ell(\ell+n-3) }}\nabla _{\Omega}Y_{\ell \mathbf{m}}(\Omega)}$  and $\displaystyle{\mathbf{Y}^{(m)}_{\ell \mathbf{m}}(\Omega)=\frac{r}{\sqrt{ \ell(\ell+n-3) }}}\mathbf{L}Y_{\ell \mathbf{m}}(\Omega)$ are electric and magnetic vector spherical harmonics, respectively. they satisfy the following orthogonality relations:
+
+$$
+\begin{align}
+\int _{S^{n-2}}\mathbf{Y}^{(\alpha)*}_{\ell \mathbf{m}}\cdot \mathbf{Y}^{(\beta)}_{\ell'\mathbf{m}'} & =\delta _{\alpha \beta}\delta_{\ell \ell'}\delta_{\mathbf{m} \mathbf{m}'}
+\end{align}
+$$
+
+then we have
+
+$$
+\begin{align}
+\frac{\mathrm{d}^{2}X}{\mathrm{d}\rho ^{2}}+\frac{n-2}{r} \frac{\mathrm{d}X}{\mathrm{d}\rho}+\left(\omega ^{2}-m^{2}-\frac{\ell(\ell+n-3)}{r^{2}}\right)X=0
+\end{align}
+$$
+
+where $\displaystyle{X=f,g,h,k}$. 
