@@ -390,15 +390,15 @@
         }
       },
       "2025-06-02": {
-        "totalDelta": 390,
+        "totalDelta": 984,
         "files": {
           "Articles/Proca in AdS3/scalar in adsn.md": {
             "initial": 714,
-            "current": 972
+            "current": 958
           },
           "Articles/Proca in AdS3/scalar.md": {
             "initial": 3824,
-            "current": 300
+            "current": 908
           },
           "Drafts/adsn scalar.md": {
             "initial": 0,

@@ -130,11 +130,6 @@ $$\tag{2.4}
 \begin{align}
 [\phi(t,\rho,\Omega _{n-2}),\phi(t',\rho',\Omega _{n-2}')] & =iX_{\phi(t,\rho,\Omega _{n-2})}\cdot X_{\phi(t',\rho',\Omega' _{n-2})}\cdot \omega \\
  & =\sum _{k,\ell,\mathbf{m}}\left(\phi _{k\ell\mathbf{m}}(t,\rho,\Omega _{n-2})\phi ^{*}_{k\ell \mathbf{m}}(t',\rho',\Omega _{n-2}')-\phi ^{*}_{k\ell\mathbf{m}}(t,\rho,\Omega _{n-2})\phi_{k\ell \mathbf{m}}(t',\rho',\Omega _{n-2}')\right) \\
- & =?
-\end{align}
-$$
-$$\tag{.}
-\begin{align}
-N_{k\ell}^{2}\sum _{k,\ell,\mathbf{m}}\left(\right)
+ & =(\text{ too complicated! })
 \end{align}
 $$
