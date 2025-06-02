@@ -23,7 +23,7 @@ $$\tag{1.2}
 \end{align}
 $$
 
-make the ansatz $\displaystyle{\phi=e^{-i \omega t}Y_{\ell,\left\{m_{i}\right\}}(\Omega _{n-2})R(\rho)}$, where $\displaystyle{Y_{\ell,\left\{m_{i}\right\}}(\Omega _{n-2})}$ is the hyperspherical harmonics defined on $\displaystyle{S^{n-2}}$, which satisfy
+make the ansatz $\displaystyle{\phi=e^{-i \omega t}Y_{\ell \mathbf{m}}(\Omega _{n-2})R(\rho)}$, where $\displaystyle{Y_{\ell \mathbf{m}}(\Omega _{n-2})}$ is the hyperspherical harmonics defined on $\displaystyle{S^{n-2}}$, which satisfy
 
 $$\tag{1.3}
 \begin{align}
@@ -31,7 +31,7 @@ $$\tag{1.3}
 \end{align}
 $$
 
-$\displaystyle{\ell}$ is the principal angular momentum quantum number and $\displaystyle{\left\{m_{i}\right\}}$ represents the set of $\displaystyle{n-3}$ magnetic quantum numbers. then we have
+$\displaystyle{\ell}$ is the principal angular momentum quantum number and $\displaystyle{\mathbf{m}}$ represents the set of $\displaystyle{n-3}$ magnetic quantum numbers. then we have
 
 $$\tag{1.4}
 \begin{align}
@@ -60,7 +60,7 @@ here $\displaystyle{a,b=\frac{1}{2}(l+\Delta\pm\omega)}$. for $\displaystyle{F(z
 
 $$\tag{1.7}
 \begin{align}
-\phi _{k,\ell,\left\{m_{i}\right\}}(t,\rho,\Omega _{n-2}) & =N_{k\ell}e^{-i \omega t} (\sin \rho)^{\ell}(\cos \rho)^{\Delta}{}_{2}F_{1}\left( -k,\ell+\Delta+k;\Delta-\frac{n-3}{2};\cos ^{2}\rho \right)Y_{\ell,\left\{m_{i}\right\}}(\Omega _{n-2})
+\phi _{k\ell \mathbf{m}}(t,\rho,\Omega _{n-2}) & =N_{k\ell}e^{-i \omega t} (\sin \rho)^{\ell}(\cos \rho)^{\Delta}{}_{2}F_{1}\left( -k,\ell+\Delta+k;\Delta-\frac{n-3}{2};\cos ^{2}\rho \right)Y_{\ell \mathbf{m}}(\Omega _{n-2})
 \end{align}
 $$
 
@@ -68,19 +68,7 @@ where the normalization constant $\displaystyle{N_{kl}}$ is determined by Klein-
 
 $$\tag{1.8}
 \begin{align}
-\braket{ \phi _{1},\phi _{2} }  & =i\int _{\Sigma}(\phi _{1}^{*}\partial _{\mu}\phi _{2}-\phi _{2}\partial _{\mu}\phi ^{*}_{1})\sqrt{ -g }n^{\mu}\mathrm{d}\Sigma \\
-\braket{ \phi _{k\ell \mathbf{m}}, } 
+\braket{ \phi _{1},\phi _{2} }  & =i\int _{\Sigma}(\phi _{1}^{*}\partial _{\mu}\phi _{2}-\phi _{2}\partial _{\mu}\phi ^{*}_{1})\sqrt{ -h }n^{\mu}\mathrm{d}\Sigma \\
+\braket{ \phi _{k\ell \mathbf{m}}, \phi _{k'\ell'\mathbf{m}'}} & =\delta _{kk'}\delta _{\ell\ell'}\delta _{\mathbf{m}\mathbf{m'}}
 \end{align}
 $$
-
-$$
-\langle \phi_1, \phi_2 \rangle = i \int_{\Sigma} \left( \phi_1^* \partial_\mu \phi_2 - (\partial_\mu \phi_1^*) \phi_2 \right) \sqrt{-g}  n^\mu  \mathrm{d}\Sigma
-$$
-
-
-$$\tag{1.8}
-\begin{align}
-N_{k\ell} & =
-\end{align}
-$$
-

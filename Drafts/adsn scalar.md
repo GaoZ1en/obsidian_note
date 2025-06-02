@@ -506,7 +506,7 @@ $$
    - 此 $\mathcal{N}_{k\ell}$ 确保基础解系正交归一：
      
 $$
-\langle \phi_{k\ell\mathbf{m}}}, \phi_{k'\ell'\mathbf{m}'}} \rangle = \delta_{kk'} \delta_{\ell\ell'} \delta_{\mathbf{m}\mathbf{m}'}
+\langle \phi_{k\ell\mathbf{m}}, \phi_{k'\ell'\mathbf{m}'} \rangle = \delta_{kk'} \delta_{\ell\ell'} \delta_{\mathbf{m}\mathbf{m}'}
 $$
 
    - 不同量子数 $(k,\ell,\mathbf{m})$ 的解自动正交，相同量子数的解模为 1。
@@ -520,3 +520,52 @@ $$
    - **AdS$_2$ ($n=2$)**：$\ell = 0$（无角度部分），$\Delta = \frac{1}{2} + \sqrt{\frac{1}{4} + m^2}$，径向积分显式计算验证。
 
 此归一化系数是标准结果，广泛应用于 AdS 空间量子场论和全息对偶（AdS/CFT）中。计算中使用了超几何函数的积分性质和 Gamma 函数的恒等式，确保解的正交完备性。
+
+
+
+$$
+\begin{align}
+ \partial _{\rho}^{2}R-2(n-2)\partial _{z}R+\left( \omega ^{2} -\frac{\ell(\ell+n-3)}{1-z} -\frac{m^{2}}{z}\right)R=0
+\end{align}
+$$
+
+$$
+\begin{align}
+z & =\cos ^{2}\rho \\
+R(\rho) & =(\sin \rho)^{\ell} (\cos\rho)^{\Delta} F(z) \\
+ & =(1-z)^{\ell/2}z^{\Delta/2}F(z)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\mathrm{d}z & =-\sin \rho \cos \rho \mathrm{d}\rho\implies  \\
+\frac{\mathrm{d}}{\mathrm{d}\rho} & =-2\sqrt{ z(1-z) }\frac{\mathrm{d}}{\mathrm{d}z} \\
+\cos \rho & =\sqrt{ z } \\
+\sin \rho & =\sqrt{ 1-z } \\
+
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+4z(1-z)\partial _{z}^{2}R+2(3-2z-n)\partial _{z}R+\left( \omega ^{2}-\frac{\ell(\ell+n-2)}{1-z}-\frac{m^{2}}{z} \right)R=0
+\end{align}
+$$
+
+first term
+
+$$\tag{.}
+\begin{align}
+\partial _{z}((1-z)^{\ell/2}z^{\Delta/2}F(z)) & =-\frac{\ell}{2}(1-z)^{-1}F(z)+\frac{\Delta}{2}z^{-1}F(z)+F'(z) \\
+\partial _{z}^{2}R & =\frac{\ell(\ell-1)}{4}(1-z)^{-2}F(z)+\frac{\Delta(\Delta-1)}{4}z^{-2}F(z)+F''(z) \\
+ & -\frac{\ell \Delta}{2}(1-z)^{-1}z^{-1}F(z)-\ell(1-z)^{-1}F'(z)+\Delta z^{-1}F'(z)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+4z(1-z)F''(z)+\Delta(\Delta-1) \frac{1-z}{z}F(z)+ \ell(\ell-1) \frac{z}{1-z}F(z)-2\ell \Delta F(z)-4\ell zF'(z)+4\Delta(1-z)F'(z) \\
+-\frac{\ell(3-2z-n)}{1-z}
+\end{align}
+$$
