@@ -52,13 +52,21 @@ where $\displaystyle{\Delta=\frac{n-1}{2}+\sqrt{ m^{2}+\frac{(n-1)^{2}}{4} }}$. 
 
 $$\tag{1.6}
 \begin{align}
+z(1-z) \frac{\mathrm{d}^{2}F}{\mathrm{d}z^{2}}+\left[ \left( \Delta+\frac{3-n}{2} \right)-(\ell+\Delta+1)z \right] \frac{\mathrm{d}F}{\mathrm{d}z}-\frac{1}{4}((\ell+\Delta)^{2}-\omega ^{2})F=0
+\end{align}
+$$
+
+the general solution that satisfies the boundary condition of (1.6) is given by
+
+$$\tag{1.7}
+\begin{align}
 F(z)=C{}_{2}F_{1}\left( \frac{1}{2}(\ell+\Delta-\omega), \frac{1}{2}(\ell+\Delta+\omega);\Delta-\frac{n-3}{2};z \right)
 \end{align}
 $$
 
-here $\displaystyle{a,b=\frac{1}{2}(l+\Delta\pm\omega)}$. for $\displaystyle{F(z)}$ converges at $\displaystyle{z=0}$, we require $\displaystyle{\frac{1}{2}(l+\Delta-\omega)=-k,k\in \mathbb{N}\implies \omega _{k\ell}=\Delta+l+2k}$. then the complete solution is
+here $\displaystyle{a,b=\frac{1}{2}(l+\Delta\pm\omega)}$. for $\displaystyle{F(z)}$ converges at $\displaystyle{z=1}$, we require $\displaystyle{\frac{1}{2}(l+\Delta-\omega)=-k,k\in \mathbb{N}\implies \omega _{k\ell}=\Delta+l+2k}$. then the complete solution is
 
-$$\tag{1.7}
+$$\tag{1.8}
 \begin{align}
 \phi _{k\ell \mathbf{m}}(t,\rho,\Omega _{n-2}) & =N_{k\ell}e^{-i \omega t} (\sin \rho)^{\ell}(\cos \rho)^{\Delta}{}_{2}F_{1}\left( -k,\ell+\Delta+k;\Delta-\frac{n-3}{2};\cos ^{2}\rho \right)Y_{\ell \mathbf{m}}(\Omega _{n-2})
 \end{align}
@@ -66,7 +74,7 @@ $$
 
 where the normalization constant $\displaystyle{N_{kl}}$ is determined by Klein-Gordon inner product
 
-$$\tag{1.8}
+$$\tag{1.9}
 \begin{align}
 \braket{ \phi _{1},\phi _{2} }  & =i\int _{\Sigma}(\phi _{1}^{*}\partial _{\mu}\phi _{2}-\phi _{2}\partial _{\mu}\phi ^{*}_{1})\sqrt{ -h }n^{\mu}\mathrm{d}\Sigma \\
 \braket{ \phi _{k\ell \mathbf{m}}, \phi _{k'\ell'\mathbf{m}'}} & =\delta _{kk'}\delta _{\ell\ell'}\delta _{\mathbf{m}\mathbf{m'}}

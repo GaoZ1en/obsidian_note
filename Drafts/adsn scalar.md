@@ -565,7 +565,26 @@ $$
 
 $$\tag{.}
 \begin{align}
-4z(1-z)F''(z)+\Delta(\Delta-1) \frac{1-z}{z}F(z)+ \ell(\ell-1) \frac{z}{1-z}F(z)-2\ell \Delta F(z)-4\ell zF'(z)+4\Delta(1-z)F'(z) \\
--\frac{\ell(3-2z-n)}{1-z}
+4z(1-z)F''(z)-4\ell zF'(z)+4\Delta(1-z)F'(z) \\
++2(3-2z-n)F'(z) \\
++\left( \omega ^{2}-\ell(\ell+1)-\Delta(\Delta+1)-2\ell \Delta \right)F(z)=0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
++4\Delta+6-2n \\
+
+\end{align}
+$$
+
+
+
+$$\tag{.}
+\begin{align}
+\Delta _{\pm} & =\frac{n-1}{2}\pm \sqrt{ \frac{(n-1)^{2}}{4}+m^{2} } \\
+\Delta _{+}+\Delta _{-} & =n-1 \\
+\Delta _{+}\Delta _{-} & =-m^{2} \\
+\Delta(\Delta-n+1) & =m^{2}
 \end{align}
 $$
