@@ -135,10 +135,24 @@ here $\displaystyle{\Delta}$ satisfies $\displaystyle{\Delta(\Delta+n-1)=m^{2}+n
 
 $$\tag{1.6}
 \begin{align}
-A_{k\ell}^{t}(t,\rho,\Omega _{n-2}) & =(\text{ some function determined by $\displaystyle{\partial _{\mu}A^{\mu}=0}$ }) \\
-A_{k\ell}^{\rho}(t,\rho,\Omega _{n-2}) & =N^{\rho}_{k\ell}e^{-i \omega _{k\ell}t}X_{k\ell}(\rho)Y_{\ell \mathbf{m}}(\Omega _{n-2}) \\
-A_{k\ell}^{\Omega}(t,\rho,\Omega _{n-2}) & =N^{e}_{k\ell}e^{-i \omega _{k\ell}t}X_{k\ell}(\rho)\mathbf{Y}^{(e)}_{\ell \mathbf{m}}(\Omega _{n-2}) +N^{m}_{k\ell}e^{-i \omega _{k\ell}t}X_{k\ell}(\rho) \mathbf{Y}^{(m)}_{\ell \mathbf{m}}(\Omega _{n-2})
+A_{k\ell \mathbf{m}}^{t}(t,\rho,\Omega _{n-2}) & =(\text{ some function determined by $\displaystyle{\partial _{\mu}A^{\mu}=0}$ }) \\
+A_{k\ell \mathbf{m}}^{\rho}(t,\rho,\Omega _{n-2}) & =N^{\rho}_{k\ell}e^{-i \omega _{k\ell}t}X_{k\ell}(\rho)Y_{\ell \mathbf{m}}(\Omega _{n-2}) \\
+A_{k\ell \mathbf{m}}^{\Omega}(t,\rho,\Omega _{n-2}) & =N^{e}_{k\ell}e^{-i \omega _{k\ell}t}X_{k\ell}(\rho)\mathbf{Y}^{(e)}_{\ell \mathbf{m}}(\Omega _{n-2}) +N^{m}_{k\ell}e^{-i \omega _{k\ell}t}X_{k\ell}(\rho) \mathbf{Y}^{(m)}_{\ell \mathbf{m}}(\Omega _{n-2})
 \end{align}
 $$
 
-with dispersion relation $\displaystyle{\omega _{k\ell}=\Delta+\ell+2k}$. the normalization constants
+with dispersion relation $\displaystyle{\omega _{k\ell}=\Delta+\ell+2k}$. the normalization constants $\displaystyle{N^{\rho}_{k\ell},N^{e}_{k\ell},N^{m}_{k\ell}}$ are determined by the orthogonality relation defined by Klein-Gordon norm. then we have the following mode expansion
+
+$$\tag{1.7}
+\begin{align}
+A^{\mu}(t,\rho,\Omega _{n-2}) & =\sum _{k,\ell,\mathbf{m}}a_{k,\ell,\mathbf{m}}A_{k\ell \mathbf{m}}^{\mu}(t,\rho,\Omega _{n-2})
+\end{align}
+$$
+
+then we have the symplectic form
+
+$$\tag{1.8}
+\begin{align}
+\omega & =i\sum _{k,\ell,\mathbf{m}}\delta a^{\dagger}_{k,\ell,\mathbf{m}}\wedge \delta a_{k,\ell ,\mathbf{m}}
+\end{align}
+$$
