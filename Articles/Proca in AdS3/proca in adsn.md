@@ -3,7 +3,7 @@ equation of motion
 $$\tag{1.1}
 \begin{align}
 \nabla ^{2}A^{\nu}-m^{2}A^{\nu}+R^{~\nu}_{\mu}A^{\mu}=0 \\
-\implies qqq\nabla ^{2}A^{\nu}-(m^{2}+n-1)A^{\nu}=0
+\implies \nabla ^{2}A^{\nu}-(m^{2}+n-1)A^{\nu}=0
 \end{align}
 $$
 
@@ -60,4 +60,27 @@ $$
 \end{align}
 $$
 
-where $\displaystyle{X=f,g,h,k}$. 
+where $\displaystyle{X=f,g,h,k}$. this equation solves to
+
+$$
+\begin{align}
+X_{k\ell}(\rho) & =\rho^{(3-n)/2}J_{\ell+\frac{n-3}{2}}(k\rho)
+\end{align}
+$$
+
+where we have the dispersion relation $\displaystyle{\omega ^{2}=k^{2}+m^{2}}$. by orthogonality relations, we have
+
+$$
+\begin{align} 
+f_{k\ell} & =\frac{k}{\sqrt{ \omega }} \sqrt{ \frac{\ell(\ell+n-3)}{\omega ^{2}+\ell(\ell+n-3)} } \\
+g_{k\ell} & =0 \\
+h_{k\ell} & =\frac{k}{\sqrt{ \omega }} \frac{1}{\sqrt{ 1+\frac{\ell(\ell+n-3)}{\omega ^{2}} }} \\
+k _{k\ell} & =\frac{k}{\sqrt{ \omega }}\rho ^{(3-n)/2}J_{\ell+\frac{n-3}{2}}(k\rho)
+\end{align}
+$$
+
+here we choose $\displaystyle{g_{k\ell}=0}$ by constraint (1.2).
+
+---
+now we return to the AdS space.
+
