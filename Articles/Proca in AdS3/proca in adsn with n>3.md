@@ -11,16 +11,32 @@ where $\displaystyle{\mathrm{d}\Omega ^{2}_{n-2}}$ is the metric for unit sphere
 $$\tag{1.2}
 \begin{align}
 \Gamma ^{a}_{~bc} & =\tilde{\Gamma}^{a}_{~bc}, & \Gamma ^{a}_{ij} & =-\tan \rho\partial ^{a}\tan \rho g_{ij}, \\
-\Gamma ^{i}_{~aj} & =\cot \rho\partial _{a}\tan \rho, & \Gamma ^{i}_{~jk} & =\tilde{\Gamma}^{i}_{~jk}
+\Gamma ^{i}_{~aj} & =\cot \rho\partial _{a}\tan \rho \delta _{j}^{i}, & \Gamma ^{i}_{~jk} & =\tilde{\Gamma}^{i}_{~jk}
 \end{align}
 $$
 
-then the equation of motion for Proca field becomes
+then the equation of motion and constraint for Proca field becomes
 
 $$\tag{1.3}
 \begin{align}
-\nabla _{\mu}F^{\mu a}-m^{2}A^{a} & =0 \\
-\nabla _{b}F^{ba}-m^{2}A^{a}+\nabla _{i}F^{ia} & =0 \\
-\nabla _{\mu}F^{\mu i}-m^{2}A^{i} & =0
+\tilde{\nabla} _{b}F^{ba}+\tilde{\nabla} _{i}F^{ia}+(d-2)\cot \rho \partial _{b}\tan \rho F^{ba}-\mu ^{2}A^{a} & =0 \\
+\tilde{\nabla} _{b}F^{bi}+\tilde{\nabla} _{j}F^{ji}+(d-2)\cot \rho \partial _{b}\tan \rho F^{bi}-\mu ^{2}A^{i} & =0 \\
+\tilde{\nabla} _{a}A^{a}+\tilde{\nabla} _{i}A^{i}+(d-2) \cot \rho \partial _{a}\tan \rho A^{\rho} & =0
+\end{align}
+$$
+
+decompose $\displaystyle{A^{\mu}}$ into
+
+$$\tag{1.4}
+\begin{align}
+A^{\mu} & =A^{a}+A^{i}
+\end{align}
+$$
+
+and further
+
+$$\tag{1.5}
+\begin{align}
+A^{a} & =
 \end{align}
 $$
