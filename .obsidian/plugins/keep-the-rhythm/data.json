@@ -427,7 +427,7 @@
         }
       },
       "2025-06-03": {
-        "totalDelta": 587,
+        "totalDelta": 787,
         "files": {
           "Articles/Proca in AdS3/proca in adsn.md": {
             "initial": 654,
@@ -440,6 +440,10 @@
           "Drafts/adsn proca.md": {
             "initial": 3789,
             "current": 4042
+          },
+          "Articles/Proca in AdS3/proca in adsn with n>3.md": {
+            "initial": 0,
+            "current": 200
           }
         }
       }

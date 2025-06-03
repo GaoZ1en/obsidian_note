@@ -835,4 +835,4 @@ sol = solve_bvp(lambda x, y: system(x, y, omega, m, mu), bc, rho, y_guess)
 - Iqbal, N., & Liu, H. (2009). "Real-time correlators in AdS/CFT" [[0903.2596](https://arxiv.org/abs/0903.2596)]
 - Son, D. T., & Starinets, A. O. (2002). "Minkowski-space correlators in AdS/CFT" [[hep-th/0205051](https://arxiv.org/abs/hep-th/0205051)]
 
-要完全解决这一系统，可能需要更多关于边界条件、物理背景以及您感兴趣的具体解的信息。答辩完了吗
+要完全解决这一系统，可能需要更多关于边界条件、物理背景以及您感兴趣的具体解的信息。
