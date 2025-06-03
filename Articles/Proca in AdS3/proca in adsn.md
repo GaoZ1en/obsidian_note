@@ -107,4 +107,10 @@ $$
 
 the problem is that different modes mix in the equations of motion.
 
-we first consider the case $\displaystyle{n=3}$. 
+we first consider the case $\displaystyle{n=3}$. make the ansatz $\displaystyle{A^{\mu}=e^{-i \omega t}e^{im\theta}R^{\mu}(\rho)}$, the equation of motion becomes
+
+$$\tag{1.4}
+\begin{align}
+
+\end{align}
+$$

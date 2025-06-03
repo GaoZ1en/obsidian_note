@@ -425,6 +425,15 @@
             "current": 3789
           }
         }
+      },
+      "2025-06-03": {
+        "totalDelta": 26,
+        "files": {
+          "Articles/Proca in AdS3/proca in adsn.md": {
+            "initial": 654,
+            "current": 680
+          }
+        }
       }
     }
   }
