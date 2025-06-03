@@ -25,18 +25,10 @@ $$\tag{1.3}
 \end{align}
 $$
 
-decompose $\displaystyle{A^{\mu}}$ into
+make the following ansatz
 
 $$\tag{1.4}
 \begin{align}
-A^{\mu} & =A^{a}+A^{i}
-\end{align}
-$$
-
-and further
-
-$$\tag{1.5}
-\begin{align}
-A^{a} & =
+A^{a} & =Y_{\ell \mathbf{m}}(\Omega _{n-2})
 \end{align}
 $$
