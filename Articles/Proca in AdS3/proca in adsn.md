@@ -107,10 +107,13 @@ $$
 
 the problem is that different modes mix in the equations of motion.
 
-we first consider the case $\displaystyle{n=3}$. make the ansatz $\displaystyle{A^{\mu}=e^{-i \omega t}e^{im\theta}R^{\mu}(\rho)}$, the equation of motion becomes
+we first consider the case $\displaystyle{n=3}$. make the ansatz $\displaystyle{A^{\mu}=e^{-i \omega t}e^{im\theta}R^{\mu}(\rho)}$, the equation of motion and constraint becomes
 
 $$\tag{1.4}
 \begin{align}
-
+[-\omega ^{2}\cos ^{2}\rho+\cos ^{2}\rho \partial ^{2}_{\rho}+\cot \rho \partial _{\rho}-m^{2}\cot ^{2}\rho+(4-\mu ^{2})]R^{t} & =-i \omega\sin 2\rho R^{\rho}-\sin 2\rho \partial _{\rho}R^{t} \\
+[-\omega ^{2}\cos ^{2}\rho+\cos ^{2}\rho \partial ^{2}_{\rho}+\cot \rho \partial _{\rho}-m^{2}\cot ^{2}\rho+(4-\mu ^{2})]R^{\rho} & =-i \omega\sin 2\rho R^{t}-\sin 2\rho \partial _{\rho}R^{\rho}+2im\cot \rho R^{\theta}+\frac{1}{\sin ^{2}\rho}R^{\rho} \\
+[-\omega ^{2}\cos ^{2}\rho+\cos ^{2}\rho \partial ^{2}_{\rho}+\cot \rho \partial _{\rho}-m^{2}\cot ^{2}\rho+(4-\mu ^{2})]R^{\theta} & =-2\cot \rho \partial _{r}R^{\theta}-2im\frac{\cos\rho}{\sin ^{3}\rho}R^{\rho} \\
+-i \omega R^{t}+\partial _{\rho}R^{\rho}+imR^{\theta}+\left(2\tan \rho + \frac{1}{\sin \rho \cos \rho}\right)R^{\rho} & =0
 \end{align}
 $$
