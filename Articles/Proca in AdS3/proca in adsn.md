@@ -117,3 +117,19 @@ $$\tag{1.4}
 -i \omega R^{t}+\partial _{\rho}R^{\rho}+imR^{\theta}+\left(2\tan \rho + \frac{1}{\sin \rho \cos \rho}\right)R^{\rho} & =0
 \end{align}
 $$
+
+when $\displaystyle{m=0}$, $\displaystyle{R^{\theta}}$ decouples from the equations, and we can solve the system of equations as
+
+$$\tag{1.5}
+\begin{align}
+R^{\theta}(\rho) & =(\cos \rho)^{2+\mu}{}_{2}F_{1}\left( \frac{2-\omega+\mu}{2},\frac{2+\omega+\mu}{2};1+\mu;\cos ^{2}\rho \right)
+\end{align}
+$$
+
+for $\displaystyle{R^{\theta}(\rho)}$ converges at $\displaystyle{\rho=\frac{\pi}{2}}$, we have $\displaystyle{\frac{2-\omega+\mu}{2}=-n,n\in \mathbb{N}=\implies \omega=2+\mu+2n}$. then (1.5) becomes
+
+$$\tag{1.6}
+\begin{align}
+R_{n0}^{\theta}(\rho) & =(\cos \rho)^{2+\mu}{}_{2}F_{1}\left( -n,2+\mu+n;1+\mu;\cos ^{2}\rho \right)
+\end{align}
+$$
