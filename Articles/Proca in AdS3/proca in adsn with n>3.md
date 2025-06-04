@@ -41,9 +41,20 @@ $$
 $$\tag{.}
 \begin{align}
 g^{\mu \nu}\partial _{\mu}\Gamma ^{\rho}_{\nu \tau}A^{\tau} & =g^{\mu t}\partial _{\mu}\Gamma ^{\rho}_{tt}A^{t}+g^{\mu \rho}\partial _{\mu}\Gamma ^{\rho}_{\rho \rho}A^{\rho}+g^{\mu i}\partial _{\mu}\Gamma ^{\rho}_{ij}A^{j} \\
- & =A^{\rho}+\cos ^{2}\tilde{g}^{ik}\partial _{k}\tilde{\Gamma} ^{k}_{ij}A^{j} \\
+ & =A^{\rho}-\frac{\cos\rho}{\sin\rho}\partial _{k}\tilde{g}_{ij}A^{j} \\
 g^{\mu \nu}\Gamma ^{\rho}_{\mu \lambda}\Gamma ^{\lambda}_{\nu \tau}A^{\tau} & =g^{ik}\Gamma ^{\rho}_{ij}\Gamma ^{j}_{k \rho}A^{\rho} +g^{ik}\Gamma ^{\rho}_{ij}\Gamma ^{j}_{k l}A^{l}\\
- & =-\cos ^{2}\tilde{g}^{ik}\tan \rho \tilde{g}_{ij} \frac{1}{\sin \rho \cos \rho} \delta ^{j}_{k}A^{\rho}
+ & =-\frac{n-2}{\sin ^{2}\rho}A^{\rho}-\frac{\cos \rho}{\sin \rho}\tilde{\Gamma}^{i}_{ij}A^{j} \\
+-g^{\mu \nu}\Gamma ^{\lambda}_{\mu \nu}\Gamma ^{\rho}_{\lambda \tau}A^{\tau} & =-g^{\mu \nu}\Gamma ^{\rho}_{\mu \nu}\Gamma ^{\rho}_{\rho \rho}A^{\rho}-g^{\mu \nu}\Gamma ^{i}_{\mu \nu}\Gamma ^{\rho}_{ij}A^{j} \\
+ & =\frac{\cos \rho}{\sin \rho}\tilde{g}^{kl}\tilde{\Gamma} ^{i}_{kl}\tilde{g}_{ij}A^{j} \\
+2g^{\mu \nu}\Gamma ^{\rho}_{\mu \lambda}\partial _{\nu}A^{\lambda} & =2g^{t\nu}\Gamma ^{\rho}_{tt}\partial _{\nu}A^{t}+2g^{\rho \nu}\Gamma ^{\rho}_{\rho \rho}\partial _{\nu}A^{\rho}+2g^{i\nu}\Gamma ^{\rho}_{ij}\partial _{\nu}A^{j} \\
+ & =-2\sin \rho\cos\rho \partial _{t}A^{t}+2\sin \rho \cos \rho\partial _{\rho}A^{\rho}-2\frac{\cos \rho}{\sin \rho}\partial _{k}A^{k} \\
+-A^{\rho}+\frac{n-2}{\sin ^{2}\rho}A^{\rho}+\cot \rho \tilde{\Gamma}^{i}_{ij}A^{j}-\cot \rho &\tilde{g}^{kl}\tilde{\Gamma}^{i}_{kl}\tilde{g}_{ij}A^{j}+\sin2\rho \partial _{t}A^{t}-\sin 2\rho \partial _{\rho}A^{\rho}+2\cot \rho \partial _{k}A^{k}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+g^{kk}\Gamma ^{i}_{kk}g_{ii} & =
 \end{align}
 $$
 
@@ -67,3 +78,12 @@ A^{\Omega} & =\left(\phi _{\ell}\mathbf{Y}_{\ell \mathbf{m}}^{(e)}(\Omega _{n-2}
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+
+\end{align}
+$$
+
+$$\tag{.}
+
+$$
