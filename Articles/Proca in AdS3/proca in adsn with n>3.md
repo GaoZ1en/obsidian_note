@@ -26,19 +26,24 @@ $$\tag{1.3}
 \end{align}
 $$
 
-
-
 $$\tag{.}
 \begin{align}
-g^{\rho \sigma}(\partial _{\rho}\Gamma ^{t}_{~\sigma \tau}+\Gamma ^{\nu}_{~\rho \lambda}\Gamma ^{\lambda}_{~\sigma \tau}-\Gamma ^{\lambda}_{~\rho \sigma}\Gamma ^{t}_{~\lambda \tau})A^{\tau}+2g^{\rho \sigma}\Gamma ^{t}_{~\sigma \lambda}\partial _{\rho}A^{\lambda}
+-\cos ^{2}\rho \partial _{t}^{2}A^{t}+\cos ^{2}\rho \partial _{\rho}^{2}A^{t}+\frac{n-2}{\tan \rho}\partial _{\rho}A^{t}+\cot ^{2}\rho \Delta _{S^{n-2}}A^{\mu}-(m^{2}-n+1)A^{t}=-A^{t}+\sin 2\rho \partial _{t}A^{\rho}-\sin 2\rho \partial _{\rho}A^{t} \\
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-g^{\rho \sigma}\partial _{\rho}\Gamma ^{t}_{~\sigma \tau}A^{\tau} & =g^{\rho \rho}\partial _{\rho}\Gamma ^{t}_{~t\rho}A^{t} \\
- & =A^{t} \\
-g^{\rho \sigma}\Gamma ^{t}_{~\rho \lambda}\Gamma ^{\lambda}_{\sigma \tau}A^{\tau} & =
+g^{\mu \nu}(\partial _{\mu}\Gamma ^{\rho}_{~\nu \tau}+\Gamma ^{\rho}_{~\mu \lambda}\Gamma ^{\lambda}_{~\nu \tau}-\Gamma ^{\lambda}_{~\mu \nu}\Gamma ^{\rho}_{~\lambda \tau})A^{\tau}+2g^{\mu \nu}\Gamma ^{\rho}_{~\mu \lambda}\partial _{\nu}A^{\lambda}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+g^{\mu \nu}\partial _{\mu}\Gamma ^{\rho}_{\nu \tau}A^{\tau} & =g^{\mu t}\partial _{\mu}\Gamma ^{\rho}_{tt}A^{t}+g^{\mu \rho}\partial _{\mu}\Gamma ^{\rho}_{\rho \rho}A^{\rho}+g^{\mu i}\partial _{\mu}\Gamma ^{\rho}_{ij}A^{j} \\
+ & =A^{\rho}+\cos ^{2}\tilde{g}^{ik}\partial _{k}\tilde{\Gamma} ^{k}_{ij}A^{j} \\
+g^{\mu \nu}\Gamma ^{\rho}_{\mu \lambda}\Gamma ^{\lambda}_{\nu \tau}A^{\tau} & =g^{ik}\Gamma ^{\rho}_{ij}\Gamma ^{j}_{k \rho}A^{\rho} +g^{ik}\Gamma ^{\rho}_{ij}\Gamma ^{j}_{k l}A^{l}\\
+ & =-\cos ^{2}\tilde{g}^{ik}\tan \rho \tilde{g}_{ij} \frac{1}{\sin \rho \cos \rho} \delta ^{j}_{k}A^{\rho}
 \end{align}
 $$
 
@@ -50,6 +55,8 @@ $$\tag{1.2}
 \Gamma ^{i}_{jk} & =\tilde{\Gamma}^{i}_{~jk}
 \end{align}
 $$
+
+
 
 make the following ansatz
 
