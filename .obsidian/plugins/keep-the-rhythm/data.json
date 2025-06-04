@@ -448,11 +448,11 @@
         }
       },
       "2025-06-04": {
-        "totalDelta": 351,
+        "totalDelta": 123,
         "files": {
           "Articles/Proca in AdS3/proca in adsn with n>3.md": {
             "initial": 268,
-            "current": 619
+            "current": 391
           },
           "Articles/Proca in AdS3/scalar in adsn.md": {
             "initial": 958,
