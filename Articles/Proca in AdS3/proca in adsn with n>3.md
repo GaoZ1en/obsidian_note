@@ -17,25 +17,12 @@ $$
 
 $$\tag{1.2}
 \begin{align}
-\Gamma ^{t}_{~tt} & =0 \\
-\Gamma ^{t}_{~t\rho} & = \\
-\Gamma ^{t}_{~\rho \rho} & = \\
-\Gamma ^{\rho}_{~tt} & = \\
-\Gamma ^{\rho}_{~t\rho} & = \\
-\Gamma ^{\rho}_{~\rho \rho} & = \\
+\Gamma ^{t}_{~t\rho} & =\tan \rho \\
+\Gamma ^{\rho}_{~tt} & = \tan \rho\\
+\Gamma ^{\rho}_{~\rho \rho} & = \tan\rho\\
 \Gamma ^{\rho}_{~ij} & =-\tan \rho \partial ^{\rho}\tan \rho g_{ij} \\
 \Gamma ^{i}_{~\rho j} & =\cot \rho \partial _{\rho}\tan \rho \delta ^{i}_{~j} \\
 \Gamma ^{i}_{~jk} & =\tilde{\Gamma}^{i}_{~jk}
-\end{align}
-$$
-
-then the equation of motion and constraint for Proca field becomes
-
-$$\tag{1.3}
-\begin{align}
-\tilde{\nabla} _{b}F^{ba}+\tilde{\nabla} _{i}F^{ia}+(d-2)\cot \rho \partial _{b}\tan \rho F^{ba}-\mu ^{2}A^{a} & =0 \\
-\tilde{\nabla} _{b}F^{bi}+\tilde{\nabla} _{j}F^{ji}+(d-2)\cot \rho \partial _{b}\tan \rho F^{bi}-\mu ^{2}A^{i} & =0 \\
-\tilde{\nabla} _{a}A^{a}+\tilde{\nabla} _{i}A^{i}+(d-2) \cot \rho \partial _{a}\tan \rho A^{\rho} & =0
 \end{align}
 $$
 
@@ -48,16 +35,48 @@ A^{\Omega} & =\left(\phi _{\ell}\mathbf{Y}_{\ell \mathbf{m}}^{(e)}(\Omega _{n-2}
 \end{align}
 $$
 
-then the $\displaystyle{F^{\mu \nu}}$ can be decomposed as
-
-$$\tag{1.5}
+$$\tag{.}
 \begin{align}
-F^{ab} & =(\tilde{\nabla}^{a}\psi ^{b}_{\ell}-\tilde{\nabla}^{b}\psi ^{a}_{\ell})Y_{\ell \mathbf{m}}(\Omega _{n-2}) \\
-F^{ai} & =\nabla ^{a}A^{i}-\nabla ^{i}A^{a} \\
- & =g^{ab}\partial _{b}A^{i}+g^{ab}\Gamma ^{i}_{~bj}A^{j}-g^{ij}\partial _{j}A^{a}-g^{ij}\Gamma ^{a}_{~jk}A^{k} \\
- & =g^{ab}() \\
-F^{ij} & =\nabla ^{i}A^{j}-\nabla ^{j}A^{i} \\
- & =g^{ij}
+\Gamma ^{\rho}_{~\mu \nu} & =\frac{1}{2}g^{\rho \sigma}\left(\partial _{\mu}g_{\sigma \nu}+\partial _{\nu}g_{\mu \sigma}-\partial _{\sigma}g_{\mu \nu}\right)
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+\Gamma ^{\rho}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{\rho \sigma}\mathrm{d}g_{\sigma \nu}\mathrm{d}x^{\nu}-\frac{1}{2}g^{\rho \sigma}\partial _{\sigma}\mathrm{d}s^{2} \\
+\Gamma ^{\rho}_{~\mu \nu} & =g^{\rho \rho}\mathrm{d}g_{\rho \rho}\mathrm{d}x^{\rho}-\frac{1}{2}g^{\rho \rho}\partial _{\rho}\mathrm{d}s^{2} \\
+ & = \cos ^{2}\rho \mathrm{d}\left( \frac{1}{\cos ^{2}\rho} \right)\mathrm{d}\rho ^{2}-\frac{1}{2}\cos ^{2}\rho \partial _{\rho}\left( -\frac{1}{\cos ^{2}\rho}\mathrm{d}t^{2}+\frac{1}{\cos ^{2}\rho}\mathrm{d}\rho ^{2}+\frac{\sin ^{2}\rho}{\cos ^{2}\rho}\mathrm{d}\Omega ^{2}_{n-2} \right) \\
+ & = \tan \rho\mathrm{d}\rho ^{2}+\tan \rho \mathrm{d}t^{2}-\tan \rho \mathrm{d}\Omega _{n-2}^{2}\\
+
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\Gamma ^{t}_{~t\rho} =\Gamma ^{\rho}_{~tt}=\Gamma ^{\rho}_{~\rho \rho}& =\tan \rho \\
+\Gamma ^{\rho}_{ij} & =
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+x\mathrm{d}\left( \frac{1}{x} \right) & =-\frac{1}{x}\mathrm{d}x
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+
+\end{align}
+$$
+
+
+
+1. $$\Gamma^{0}_{01} = \Gamma^{0}_{10} = \tan\rho$$
+2. $$\Gamma^{1}_{00} = \tan\rho$$
+3. $$\Gamma^{1}_{11} = \tan\rho$$
+4. $$\Gamma^{1}_{ij} = -\tan\rho\cdot\Omega_{ij}$$ for $i,j \geq 2$
+5. $$\Gamma^{i}_{1j} = \Gamma^{i}_{j1} = \cot\rho\cdot\delta^i_j$$ for $i,j \geq 2$
+6. $$\Gamma^{i}_{jk} = \hat{\Gamma}^{i}_{jk}$$ for $i,j,k \geq 2$
+
+This is the complete set of non-zero Christoffel symbols for the given AdS metric.
