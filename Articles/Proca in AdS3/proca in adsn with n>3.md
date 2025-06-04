@@ -15,6 +15,12 @@ $$\tag{1.2}
 \end{align}
 $$
 
+$$\tag{1.2}
+\begin{align}
+\Gamma ^{a}_{~bc} & =
+\end{align}
+$$
+
 then the equation of motion and constraint for Proca field becomes
 
 $$\tag{1.3}
@@ -46,3 +52,4 @@ F^{ij} & =\nabla ^{i}A^{j}-\nabla ^{j}A^{i} \\
  & =g^{ij}
 \end{align}
 $$
+
