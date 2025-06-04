@@ -29,6 +29,7 @@ make the following ansatz
 
 $$\tag{1.4}
 \begin{align}
-A^{a} & =Y_{\ell \mathbf{m}}(\Omega _{n-2})
+A^{a} & =e^{-i \omega t}Y_{\ell \mathbf{m}}(\Omega _{n-2}) \\
+A^{\Omega} & =
 \end{align}
 $$
