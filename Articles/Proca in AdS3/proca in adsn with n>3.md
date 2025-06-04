@@ -17,7 +17,15 @@ $$
 
 $$\tag{1.2}
 \begin{align}
-\Gamma ^{a}_{~bc} & =
+\Gamma ^{t}_{~tt} & =0 \\
+\Gamma ^{t}_{~t\rho} & = \\
+\Gamma ^{t}_{~\rho \rho} & = \\
+\Gamma ^{\rho}_{~tt} & = \\
+\Gamma ^{\rho}_{~t\rho} & = \\
+\Gamma ^{\rho}_{~\rho \rho} & = \\
+\Gamma ^{\rho}_{~ij} & =-\tan \rho \partial ^{\rho}\tan \rho g_{ij} \\
+\Gamma ^{i}_{~\rho j} & =\cot \rho \partial _{\rho}\tan \rho \delta ^{i}_{~j} \\
+\Gamma ^{i}_{~jk} & =\tilde{\Gamma}^{i}_{~jk}
 \end{align}
 $$
 
