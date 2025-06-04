@@ -48,7 +48,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ workspace ● 1 editor"
+              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 bash"
             }
           },
           {
@@ -99,17 +99,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/Proca in AdS3/proca in adsn.md",
+                "file": "Drafts/adsn proca.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "proca in adsn"
+              "title": "adsn proca"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -166,7 +166,8 @@
               "title": "Vertical tabs"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "56384ae1a9e66525",
@@ -319,14 +320,14 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "17811b4919831ef5",
+  "active": "90f2abf235d07183",
   "lastOpenFiles": [
-    "Articles/Proca in AdS3/scalar in adsn.md",
-    "Articles/Proca in AdS3/proca in adsn.md",
     "Articles/Proca in AdS3/proca in adsn with n>3.md",
     "Drafts/adsn proca.md",
-    "Articles/Proca in AdS3/scalar.md",
+    "Articles/Proca in AdS3/scalar in adsn.md",
     "TODO.md",
+    "Articles/Proca in AdS3/proca in adsn.md",
+    "Articles/Proca in AdS3/scalar.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
     "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
     "Drafts/adsn scalar.md",

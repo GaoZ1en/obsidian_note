@@ -33,6 +33,12 @@ $$
 
 
 
+$$\tag{.}
+\begin{align}
+g^{\rho \sigma}\nabla _{\rho}\nabla _{\sigma}A^{\nu} & =g^{\rho \sigma}\partial _{\rho}\partial _{\sigma}A^{\nu}+g^{\rho \sigma}(\partial _{\rho}\Gamma ^{\nu}_{~\sigma \tau}+\Gamma ^{\nu}_{\rho \lambda}\Gamma ^{\lambda}_{\sigma \tau}-\Gamma ^{\lambda}_{\rho \sigma}\Gamma ^{\nu}_{\lambda \tau})A^{\tau}+g^{\rho \sigma}(2\Gamma ^{\nu}_{\sigma \lambda}\partial _{\rho}A^{\lambda}-\Gamma ^{\lambda}_{\rho \sigma}\partial _{\lambda}A^{\nu})
+\end{align}
+$$
+
 make the following ansatz
 
 $$\tag{1.4}
