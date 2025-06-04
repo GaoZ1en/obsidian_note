@@ -48,7 +48,35 @@ g^{\mu \nu}\Gamma ^{i}_{\mu \lambda}\Gamma ^{\lambda}_{\nu \tau}A^{\tau} & =g^{j
  & =\frac{\cos ^{2}\rho}{\sin ^{2}\rho}\tilde{g}^{jl}\tilde{\Gamma}^{i}_{j k}\tilde{\Gamma} ^{k}_{lm}A^{m}-\frac{\cos\rho}{\sin\rho}\tilde{g}^{jk}\tilde{\Gamma}^{i}_{j k}A^{\rho}-\frac{1}{\sin ^{2}\rho}A^{i} \\
 -g^{\mu \nu}\Gamma ^{\lambda}_{\mu \nu}\Gamma ^{i}_{\lambda \tau}A^{\tau} & =-g^{kl}\Gamma ^{\rho}_{kl}\Gamma ^{i}_{j\rho}A^{j}-g^{kl}\Gamma ^{j}_{kl}\Gamma ^{i}_{j\rho}A^{\rho}-g^{ml}\Gamma ^{j}_{ml}\Gamma ^{i}_{jk}A^{k} \\
  & =\frac{n-2}{\sin ^{2}\rho} A^{i}-\frac{\cos \rho}{\sin ^{3}\rho}\tilde{g}^{kl}\tilde{\Gamma}^{i}_{kl} A^{\rho}-\frac{\cos ^{2}\rho}{\sin ^{2}\rho}\tilde{g}^{ml}\tilde{\Gamma}^{j}_{ml}\tilde{\Gamma}^{i}_{jk}A^{k} \\
-2g^{\mu \nu}\Gamma ^{i}_{\mu \lambda}\partial _{\nu}A^{\lambda} & =2g^{\mu j}\Gamma ^{i}_{jk}\partial _{\nu}A^{k}+2g^{\mu \rho}\Gamma ^{i}_{j\rho}\partial _{\nu}A^{j}
+2g^{\mu \nu}\Gamma ^{i}_{\mu \lambda}\partial _{\nu}A^{\lambda} & =2g^{\mu j}\Gamma ^{i}_{jk}\partial _{\nu}A^{k}+2g^{\mu \rho}\Gamma ^{i}_{j\rho}\partial _{\nu}A^{j}+2g^{\mu j}\Gamma ^{i}_{j\rho}\partial _{\nu}A^{\rho} \\
+ & =2g^{jl}\Gamma ^{i}_{j k}\partial _{l}A^{k}+2g^{\rho \rho}\Gamma ^{i}_{j\rho}\partial _{\rho}A^{j}+2g^{jk}\Gamma ^{i}_{j\rho}\partial _{k}A^{\rho} \\
+ & =2\frac{\cos ^{2}\rho}{\sin ^{2}\rho}\tilde{g}^{jl}\tilde{\Gamma}^{i}_{jk}\partial _{l}A^{k}+2\cot\rho \partial _{\rho}A^{j}+2\frac{\cos \rho}{\sin ^{3}\rho}\partial ^{i}A^{\rho}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+ & -A^{i}+\frac{\cos ^{2}\rho}{\sin ^{2}\rho}A^{i}-\frac{\cos ^{2}\rho}{\sin ^{2}\rho}g^{jl}\Gamma ^{i}_{jk}\Gamma ^{k}_{lm}A^{m}+\frac{\cos \rho}{\sin \rho}g^{jk}\Gamma ^{i}_{jk}A^{\rho}+\frac{1}{\sin ^{2}\rho}A^{i}-\frac{n-2}{\sin ^{2}\rho}A^{i}+\frac{\cos \rho}{\sin ^{3}\rho}g^{kl}\Gamma ^{i}_{kl}A^{\rho}+\frac{\cos ^{2}\rho}{\sin ^{2}\rho}g^{ml}\Gamma ^{j}_{ml}\Gamma ^{i}_{jk}A^{k} \\
+ & -2\frac{\cos ^{2}\rho}{\sin ^{2}\rho}g^{jl}\Gamma ^{i}_{jk}\partial _{l}A^{k}-2\cot \rho \partial _{\rho}A^{j}-2\frac{\cos \rho}{\sin ^{3}\rho}\partial ^{i}A^{\rho}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+g^{jk}\Gamma ^{i}_{jk} & =\frac{1}{2}g^{jk}g^{il}(2\partial _{j}g_{lk}-\partial _{l}g_{jk}) \\
+ & =-\frac{1}{2}g^{jj}g^{ii}\partial _{i}g_{jj}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+g^{jl}\Gamma ^{i}_{jk} & =\frac{1}{2}g^{jl}g^{im}(\partial _{j}g_{mk}+\partial _{k}g_{mj}-\partial _{m}g_{jk}) \\
+ & =
+\end{align}
+$$
+$$\tag{.}
+\begin{align}
+
 \end{align}
 $$
 

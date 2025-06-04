@@ -167,7 +167,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "56384ae1a9e66525",
@@ -265,8 +265,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5,
-    "collapsed": true
+    "width": 305.5
   },
   "right": {
     "id": "be754014b7083e79",
@@ -320,7 +319,7 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "17811b4919831ef5",
+  "active": "0c73ca6b61108aca",
   "lastOpenFiles": [
     "Articles/Proca in AdS3/scalar in adsn.md",
     "Drafts/adsn proca.md",
