@@ -21,9 +21,7 @@ the equation of motion and the constraints can be written as
 
 $$\tag{1.5}
 \begin{align}
-\nabla _{\mu}F^{\mu \nu}-\mu ^{2}A^{\nu} & = \\
-
-
+\nabla ^{2}A^{\nu}-(\mu ^{2}-n+1)A^{\nu}=0
 \end{align}
 $$
 
@@ -34,21 +32,6 @@ $$\tag{.}
 $$
 
 
-$$\tag{1.2}
-\begin{align}
-\Gamma ^{t}_{~t\rho} =\Gamma ^{\rho}_{~tt}=\Gamma ^{\rho}_{~\rho \rho}& =\tan \rho \\
-\Gamma ^{\rho}_{ij} & =-\tan \rho \tilde{g}_{ij} \\
-\Gamma ^{i}_{~\rho j} & =\frac{1}{\sin \rho \cos \rho}\delta ^{i}_{j} \\
-\Gamma ^{i}_{jk} & =\tilde{\Gamma}^{i}_{~jk}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\nabla _{\mu}(\nabla ^{\mu}A^{\nu}-\nabla ^{\nu}A^{\mu})-\mu ^{2}A^{\nu} & = 0 \\
-\nabla ^{2}A^{\nu}-\mu ^{2}A^{\nu}-g^{\nu \rho}[\nabla _{\mu},\nabla _{\nu}]
-\end{align}
-$$
 
 make the following ansatz
 
@@ -58,3 +41,6 @@ A^{a} & =\psi ^{a}_{\ell}Y_{\ell \mathbf{m}}(\Omega _{n-2}) \\
 A^{\Omega} & =\left(\phi _{\ell}\mathbf{Y}_{\ell \mathbf{m}}^{(e)}(\Omega _{n-2})+\chi _{\ell}\mathbf{Y}_{\ell \mathbf{m}}^{(m)}(\Omega _{n-2})\right)
 \end{align}
 $$
+
+
+
