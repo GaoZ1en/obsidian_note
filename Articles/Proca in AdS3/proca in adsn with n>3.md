@@ -37,7 +37,8 @@ $$
 $$\tag{.}
 \begin{align}
 g^{\rho \sigma}\partial _{\rho}\Gamma ^{t}_{~\sigma \tau}A^{\tau} & =g^{\rho \rho}\partial _{\rho}\Gamma ^{t}_{~t\rho}A^{t} \\
- & =
+ & =A^{t} \\
+g^{\rho \sigma}\Gamma ^{t}_{~\rho \lambda}\Gamma ^{\lambda}_{\sigma \tau}A^{\tau} & =
 \end{align}
 $$
 
