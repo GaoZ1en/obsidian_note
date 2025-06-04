@@ -29,7 +29,20 @@ make the following ansatz
 
 $$\tag{1.4}
 \begin{align}
-A^{a} & =e^{-i \omega t}Y_{\ell \mathbf{m}}(\Omega _{n-2}) \\
-A^{\Omega} & =
+A^{a} & =\psi ^{a}_{\ell}Y_{\ell \mathbf{m}}(\Omega _{n-2}) \\
+A^{\Omega} & =\left(\phi _{\ell}\mathbf{Y}_{\ell \mathbf{m}}^{(e)}(\Omega _{n-2})+\chi _{\ell}\mathbf{Y}_{\ell \mathbf{m}}^{(m)}(\Omega _{n-2})\right)
+\end{align}
+$$
+
+then the $\displaystyle{F^{\mu \nu}}$ can be decomposed as
+
+$$\tag{1.5}
+\begin{align}
+F^{ab} & =(\tilde{\nabla}^{a}\psi ^{b}_{\ell}-\tilde{\nabla}^{b}\psi ^{a}_{\ell})Y_{\ell \mathbf{m}}(\Omega _{n-2}) \\
+F^{ai} & =\nabla ^{a}A^{i}-\nabla ^{i}A^{a} \\
+ & =g^{ab}\partial _{b}A^{i}+g^{ab}\Gamma ^{i}_{~bj}A^{j}-g^{ij}\partial _{j}A^{a}-g^{ij}\Gamma ^{a}_{~jk}A^{k} \\
+ & =g^{ab}() \\
+F^{ij} & =\nabla ^{i}A^{j}-\nabla ^{j}A^{i} \\
+ & =g^{ij}
 \end{align}
 $$
