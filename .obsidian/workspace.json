@@ -108,7 +108,8 @@
               "title": "adsn proca"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -165,8 +166,7 @@
               "title": "Vertical tabs"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "56384ae1a9e66525",
@@ -318,10 +318,10 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "b0357530cb9d1c74",
+  "active": "90f2abf235d07183",
   "lastOpenFiles": [
-    "Articles/Proca in AdS3/proca in adsn with n>3.md",
     "Articles/Proca in AdS3/scalar in adsn.md",
+    "Articles/Proca in AdS3/proca in adsn with n>3.md",
     "Drafts/adsn proca.md",
     "TODO.md",
     "Articles/Proca in AdS3/proca in adsn.md",
