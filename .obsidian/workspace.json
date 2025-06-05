@@ -48,7 +48,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 bash"
+              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 nvim"
             }
           },
           {
@@ -108,8 +108,7 @@
               "title": "adsn proca"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -319,7 +318,7 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "cef33d621e94efd8",
+  "active": "b0357530cb9d1c74",
   "lastOpenFiles": [
     "Articles/Proca in AdS3/proca in adsn with n>3.md",
     "Articles/Proca in AdS3/scalar in adsn.md",
