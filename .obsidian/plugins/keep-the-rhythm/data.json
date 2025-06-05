@@ -473,7 +473,7 @@
         }
       },
       "2025-06-05": {
-        "totalDelta": -2071,
+        "totalDelta": -1767,
         "files": {
           "Drafts/adsn proca.md": {
             "initial": 2087,
@@ -490,6 +490,34 @@
           "TODO.md": {
             "initial": 76,
             "current": 76
+          },
+          "Lecture/Homework/problem set/cambridge/partII/2001/quantum physics.md": {
+            "initial": 128,
+            "current": 128
+          },
+          "Lecture/Homework/2025 spring/python for physics/Untitled.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Lecture/Homework/Nambu-Goto.md": {
+            "initial": 0,
+            "current": 278
+          },
+          "Articles/quantization/article/after ai/main.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Articles/quantization/article/after ai/appendix A.md": {
+            "initial": 2080,
+            "current": 2080
+          },
+          "Articles/quantization/article/after ai/appendix B.md": {
+            "initial": 2441,
+            "current": 2441
+          },
+          "Articles/quantization/article/main.md": {
+            "initial": 9284,
+            "current": 9310
           }
         }
       }

@@ -63,7 +63,9 @@ here we assume that such solutions can be superposed. and $\displaystyle{\sigma 
 
 $$\tag{1.7}
 \begin{align}
-\omega(\sigma ^{a}_{n},\sigma ^{b}_{m})=\delta _{nm}\delta ^{ab}
+\omega(\sigma ^{a}_{n},\sigma ^{b*}_{m}) & =-i\delta _{nm}\delta ^{ab} \\
+\omega(\sigma ^{a}_{n},\sigma ^{b}_{m}) & =0 \\
+\omega(\sigma ^{a*}_{n},\sigma ^{b*}_{m}) & =0
 \end{align}
 $$
 

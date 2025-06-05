@@ -64,52 +64,22 @@
             }
           },
           {
-            "id": "17811b4919831ef5",
+            "id": "1f51b1b5a215f845",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Articles/Proca in AdS3/proca in adsn with n>3.md",
+                "file": "Articles/quantization/article/main.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "proca in adsn with n>3"
-            }
-          },
-          {
-            "id": "fd9c696831f8e8d4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Articles/Proca in AdS3/scalar in adsn.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "scalar in adsn"
-            }
-          },
-          {
-            "id": "90f2abf235d07183",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Drafts/adsn proca.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "adsn proca"
+              "title": "main"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -318,12 +288,18 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "841fa8e2e663e1cf",
+  "active": "1f51b1b5a215f845",
   "lastOpenFiles": [
-    "Drafts/adsn proca.md",
-    "Articles/Proca in AdS3/scalar in adsn.md",
-    "Articles/Proca in AdS3/proca in adsn with n>3.md",
+    "Articles/quantization/article/after ai/appendix B.md",
+    "Articles/quantization/article/after ai/appendix A.md",
+    "Articles/quantization/article/after ai/main.md",
     "TODO.md",
+    "Articles/Proca in AdS3/proca in adsn with n>3.md",
+    "Articles/Proca in AdS3/scalar in adsn.md",
+    "Drafts/adsn proca.md",
+    "Lecture/Homework/Nambu-Goto.md",
+    "Lecture/Homework/2025 spring/python for physics/Untitled.md",
+    "Lecture/Homework/problem set/cambridge/partII/2001/quantum physics.md",
     "Articles/Proca in AdS3/proca in adsn.md",
     "Articles/Proca in AdS3/scalar.md",
     "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
@@ -331,25 +307,19 @@
     "Drafts/adsn scalar.md",
     "Attachments/Pasted image 20250602105133.png",
     "Attachments/Pasted image 20250602105121.png",
-    "Lecture/2025 spring/python for physics/ode.md",
-    "Lecture/2025 spring/python for general purpose/homework 10.md",
+    "Lecture/Homework/2025 spring/python for physics/ode.md",
+    "Lecture/Homework/2025 spring/python for general purpose/homework 10.md",
     "Articles/Proca in AdS3/some basics.md",
     "Articles/Proca in AdS3",
-    "Homework/Bachelor Thesis/cydsmtddal/covariant phase space formalism and noether theorem.md",
+    "Lecture/Homework/Bachelor Thesis/cydsmtddal/covariant phase space formalism and noether theorem.md",
     "Articles/quantization/article/appendix B.md",
-    "Articles/quantization/article/after ai/appendix B.md",
     "Articles/quantization/article/after ai/section 2.md",
     "Articles/quantization/article/main.md",
     "Articles/quantization/article/after ai/section 3.md",
-    "Articles/quantization/article/after ai/appendix A.md",
     "Articles/quantization/article/appendix A.md",
     "Articles/quantization/article/section 3.md",
     "Articles/quantization/article/section 2.md",
-    "Articles/quantization/article/after ai/main.md",
     "Articles/quantization/article/after ai",
-    "Articles/quantization/article 1/section 1_introduction.md",
-    "Articles/quantization/article 1/abstract.md",
-    "Articles/quantization/article 1/conclusion.md",
     "Articles/quantization/article 1",
     "Articles/quantization/article",
     "Attachments/Pasted image 20250526114102.png",
