@@ -1,6 +1,17 @@
 {
   "conversations": [
     {
+      "id": "1749089126137",
+      "title": "New Conversation",
+      "messages": [],
+      "createdAt": 1749089126137,
+      "updatedAt": 1749089126137,
+      "model": {
+        "label": "Claude 3.7 Sonnet Thinking",
+        "value": "claude-3.7-sonnet-thought"
+      }
+    },
+    {
       "id": "1748921240412",
       "title": "你知道什么是sandtrix吗？",
       "messages": [
@@ -311,18 +322,7 @@
         "label": "Claude 3.7 Sonnet Thinking",
         "value": "claude-3.7-sonnet-thought"
       }
-    },
-    {
-      "id": "1748842744704",
-      "title": "New Conversation",
-      "messages": [],
-      "createdAt": 1748842744704,
-      "updatedAt": 1748842744704,
-      "model": {
-        "label": "Claude 3.7 Sonnet Thinking",
-        "value": "claude-3.7-sonnet-thought"
-      }
     }
   ],
-  "activeConversationId": "1748921240412"
+  "activeConversationId": "1749089126137"
 }
