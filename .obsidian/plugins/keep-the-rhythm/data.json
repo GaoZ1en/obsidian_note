@@ -473,7 +473,7 @@
         }
       },
       "2025-06-05": {
-        "totalDelta": -1767,
+        "totalDelta": -882,
         "files": {
           "Drafts/adsn proca.md": {
             "initial": 2087,
@@ -518,6 +518,10 @@
           "Articles/quantization/article/main.md": {
             "initial": 9284,
             "current": 9310
+          },
+          "Lecture/Homework/2025 spring/python for general purpose/homework11.md": {
+            "initial": 0,
+            "current": 885
           }
         }
       }
