@@ -59,8 +59,8 @@
               "type": "github-copilot-chat-view",
               "state": {},
               "pinned": true,
-              "icon": "bot-message-square",
-              "title": "Copilot Chat"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -234,7 +234,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5
+    "width": 305.5,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
