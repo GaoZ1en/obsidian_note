@@ -35,11 +35,55 @@ $$
 $$\tag{2.2}
 \begin{align}
 \delta S & =-T\int \mathrm{d}^{2}\xi  \frac{-g_{\mu \nu}\eta ^{ab} \frac{\mathrm{d}X^{\mu}}{\mathrm{d}\xi ^{a}} \frac{\mathrm{d}\delta X^{\nu}}{\mathrm{d}\xi ^{b}}-\partial _{\rho}g_{\mu \nu}\eta ^{\mu \nu} \frac{\mathrm{d}X^{\mu}}{\mathrm{d}\xi ^{a}} \frac{\mathrm{d}X^{\nu}}{\mathrm{d}\xi ^{b}}\delta X^{\nu}}{2\sqrt{ -g_{\mu \nu}\eta ^{ab} \frac{\mathrm{d}X^{\rho}}{\mathrm{d}\xi ^{a}} \frac{\mathrm{d}X^{\nu}}{\mathrm{d}\xi ^{b}} }} \\
- & =
+ & =-\frac{T}{2}\int \mathrm{d}^{2}\xi g_{\mu \nu}\eta ^{ab}\left(\frac{\mathrm{d}^{2}X^{\mu}}{\mathrm{d}\xi ^{a}\mathrm{d}\xi ^{b}}+\Gamma ^{\mu}_{~\rho \sigma} \frac{\mathrm{d}X^{\rho}}{\mathrm{d}\xi ^{a}} \frac{\mathrm{d}X^{\sigma}}{\mathrm{d}\xi ^{b}}\right)\delta X^{\nu}+(\text{ boundary terms })
 \end{align}
 $$
 
-这里我们注意到作用量(2.1)具有世界面上的微分同胚不变性，因此我们可以选择$\displaystyle{\sqrt{ -g_{\mu \nu}\eta ^{ab} \frac{\mathrm{d}X^{\mu}}{\mathrm{d}\xi ^{a}} \frac{\mathrm{d}X^{\nu}}{\mathrm{d}\xi ^{b}}= }}$
+这里我们注意到作用量(2.1)具有世界面上的微分同胚不变性，因此我们可以选择$\displaystyle{\sqrt{ -g_{\mu \nu}\eta ^{ab} \frac{\mathrm{d}X^{\mu}}{\mathrm{d}\xi ^{a}} \frac{\mathrm{d}X^{\nu}}{\mathrm{d}\xi ^{b}} }=1}$。这样我们就得到了运动方程
+
+$$\tag{2.3}
+\begin{align}
+\eta ^{ab}\frac{\mathrm{d}X^{\mu}}{\mathrm{d}\xi ^{a}\mathrm{d}\xi ^{b}}+\Gamma ^{\mu}_{\rho \sigma} \eta ^{ab}\frac{\mathrm{d}X^{\rho}}{\mathrm{d}\xi ^{a}} \frac{\mathrm{d}X^{\sigma}}{\mathrm{d}\xi ^{b}}=0
+\end{align}
+$$
+
+其中$\displaystyle{\Gamma ^{\mu}_{~\rho \sigma}=\frac{1}{2}g^{\mu \nu}(\partial _{\rho}g_{\nu \sigma}+\partial _{\sigma}g_{\rho \nu}-\partial _{\nu}g_{\rho \sigma}) }$为背景时空中的克氏符。在平直时空中$\displaystyle{g_{\mu \nu}=\eta _{\mu \nu},\Gamma ^{\mu}_{~\rho \sigma}=0}$，进一步做在世界面上做共形变换，就可以将运动方程转化为
+
+$$\tag{2.4}
+\begin{align}
+-\ddot{X}^{\mu}+X''^{\mu}=0
+\end{align}
+$$
+
+以及约束
+
+$$\tag{2.5}
+\begin{align}
+\eta _{\mu \nu}\dot{X}^{\mu}X'^{\nu} & =0 \\
+\eta _{\mu \nu}(\dot{X}^{\mu}\dot{X}^{\nu}+X'^{\mu}X'^{\nu}) & =0
+\end{align}
+$$
+
+其中$\displaystyle{\dot{X}^{\mu}}$表示对$\displaystyle{\xi ^{0}=\tau}$的导数，$\displaystyle{X'^{\mu}}$表示对$\displaystyle{\xi ^{1}=\sigma}$的导数。我们知道波动方程(2.4)的通解可以写为
+
+$$\tag{2.6}
+\begin{align}
+X^{\mu}(\tau,\sigma) & =\frac{1}{2}[a^{\mu}(\tau+\sigma)+b^{\mu}(\tau-\sigma)]
+\end{align}
+$$
+
+这样(2.5)成为
+
+$$\tag{2.7}
+\begin{align}
+\eta _{\mu \nu}a'^{\mu}a'^{\nu}=\eta _{\mu \nu}b'^{\mu}b'^{\nu}=1
+\end{align}
+$$
+
+## 编程模拟
+
+现在我们希望针对闭弦（即具有周期条件$\displaystyle{X^{\mu}(\tau,\sigma+2\pi)=X^{\mu}(\tau,\sigma)}$的弦）的运动进行模拟。
+
 
 ## 附录A：代码
 
@@ -51,39 +95,3 @@ $$
 3. Parkes Pulsar Timing Array (2018). "The NANOGrav 11-year Data Set: New Constraints on the Stochastic Gravitational-wave Background." Astrophys. J., 859(1), 47.
 4. Hindmarsh, M. et al. (2017). "Scaling from gauge and scalar radiation in Abelian Higgs string networks." Phys. Rev. D, 96, 023525.
 5. Vilenkin, A. & Shellard, E.P.S. (2000). "Cosmic Strings and Other Topological Defects." Cambridge University Press.
-
-# 宇宙弦运动方程的推导
-
-## Nambu-Goto作用量
-
-宇宙弦的动力学可以从Nambu-Goto作用量出发进行描述：
-
-$$S = -\mu \int d\tau d\sigma \sqrt{-\gamma}$$
-
-其中$$\mu$$是弦的线密度（等同于张力），$$\gamma = \det(\gamma_{ab})$$是弦世界面上诱导度规的行列式，$$\tau$$和$$\sigma$$是描述弦世界面的参数。诱导度规$$\gamma_{ab}$$由背景时空度规$$g_{\mu\nu}$$诱导得到：
-
-$$\gamma_{ab} = g_{\mu\nu} \frac{\partial X^\mu}{\partial \xi^a} \frac{\partial X^\nu}{\partial \xi^b}$$
-
-其中$$X^\mu(\tau,\sigma)$$描述弦在四维时空中的位置，$$\xi^a = (\tau,\sigma)$$。
-
-## 在膨胀宇宙中的运动方程
-
-考虑平坦FLRW宇宙背景，度规为：
-
-$$ds^2 = -dt^2 + a^2(t)(dx^2 + dy^2 + dz^2)$$
-
-其中$$a(t)$$是宇宙尺度因子。选择参数化使得$$\tau$$与宇宙时间$$t$$相同，并引入物理坐标$$\mathbf{x} = (x, y, z)$$。
-
-对作用量变分并应用欧拉-拉格朗日方程，得到：
-
-$$\frac{d}{dt}\left(\frac{\gamma_{ab}\dot{X}^b}{\sqrt{-\gamma}}\right) - \frac{1}{2}\partial_a(\gamma_{cd})\frac{\gamma^{cd}}{\sqrt{-\gamma}} = 0$$
-
-经过代数化简，在宇宙膨胀背景下的运动方程可表示为：
-
-$$\ddot{\mathbf{x}} + 2\frac{\dot{a}}{a}\dot{\mathbf{x}}(1-\dot{\mathbf{x}}^2) = \frac{1}{\epsilon}(\mathbf{x}'' \cdot \dot{\mathbf{x}})\dot{\mathbf{x}} + \frac{\mathbf{x}''}{\epsilon}$$
-
-其中点表示对时间$$t$$的导数，撇号表示对参数$$\sigma$$的导数，而$$\epsilon$$为：
-
-$$\epsilon = \frac{a^2\sqrt{\mathbf{x}'^2}}{1-\dot{\mathbf{x}}^2}$$
-
-这个方程捕捉了宇宙弦在膨胀宇宙中的关键动力学特征，包括宇宙膨胀带来的阻尼效应。方程中第二项描述了宇宙膨胀对弦运动的影响，右侧则反映了弦自身的张力效应。
