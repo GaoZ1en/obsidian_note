@@ -38,26 +38,12 @@ $$\tag{1.5}
 \end{align}
 $$
 
-eliminate $\displaystyle{R_{\rho}}$
+the general solution for (1.5) can be written as
 
-$$\tag{1.6}
-\begin{align}
-\cot \rho\left( \partial _{\rho}R_{\theta}+\frac{m}{\mu}\cot \rho(mR_{t}+\omega R_{\theta}) \right) & =-\mu R_{t} \\
-\sin \rho \cos \rho\left( -\frac{\omega}{\mu}(mR_{\rho}+\omega R_{\theta})+\partial _{\rho}R_{t} \right) & =-\mu R_{\theta}
-\end{align}
-$$
 
-let $\displaystyle{z=\cos ^{2}\rho}$,
 
-$$\tag{.}
-\begin{align}
-z & =\cos ^{2}\rho \\
-\cos \rho & =\sqrt{ z } \\
-\sin \rho & =\sqrt{ 1-z } \\
-\tan \rho & =\sqrt{ \frac{1-z}{z} } \\
 
-\end{align}
-$$
+
 
 # General Solution for Topologically Massive Vector Field in AdS₃ with Arbitrary μ
 
