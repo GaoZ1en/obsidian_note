@@ -38,7 +38,7 @@ $$\tag{1.5}
 \end{align}
 $$
 
-the general solution for (1.5) can be written as
+let $\displaystyle{z=\cos ^{2}\rho}$
 
 
 
@@ -101,27 +101,6 @@ For normalizable modes (when we set $C_2 = 0$ for μ > 0), the frequency must sa
 $$\omega = (2n + \Delta_+ + |m|)$$
 
 where n is a non-negative integer.
-
-
-## Step 3: Eliminate $f_\rho$ from the System
-
-From the second equation, we obtain:
-
-$$f_\rho = \frac{\cos^3\rho}{\mu\sin\rho}[-i\omega f_\theta - im f_t]$$
-
-Substituting this into the first and third equations:
-
-$$\begin{align}
-\frac{\cos^3\rho}{\sin\rho}[\partial_\rho f_\theta - \cot\rho f_\theta] + \frac{im\cos^3\rho}{\mu\sin\rho}[i\omega f_\theta + im f_t] &= -\mu f_t \\
--i\omega\frac{\cos^6\rho}{\mu\sin^2\rho}[-i\omega f_\theta - im f_t] - \cos^3\rho[\partial_\rho f_t - \tan\rho f_t] &= -\mu f_\theta
-\end{align}$$
-
-Simplifying:
-
-$$\begin{align}
-\frac{\cos^3\rho}{\sin\rho}[\partial_\rho f_\theta - \cot\rho f_\theta] - \frac{m\omega\cos^3\rho}{\mu\sin\rho}f_\theta + \frac{m^2\cos^3\rho}{\mu\sin\rho}f_t &= -\mu f_t \\
-\frac{\omega^2\cos^6\rho}{\mu\sin^2\rho}f_\theta + \frac{\omega m\cos^6\rho}{\mu\sin^2\rho}f_t - \cos^3\rho[\partial_\rho f_t - \tan\rho f_t] &= -\mu f_\theta
-\end{align}$$
 
 ## Step 4: Analyze the Asymptotic Behavior
 

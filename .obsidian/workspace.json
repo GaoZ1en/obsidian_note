@@ -79,7 +79,7 @@
             }
           },
           {
-            "id": "09e0159cc142ea2b",
+            "id": "4da96126b01b889c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -94,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -313,10 +313,10 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "09e0159cc142ea2b",
+  "active": "0b0163c7cf93c4f4",
   "lastOpenFiles": [
-    "Drafts/ads3 proca.md",
     "Articles/Proca in AdS3/proca in ads3.md",
+    "Drafts/ads3 proca.md",
     "TODO.md",
     "Articles/Proca in AdS3/proca in adsn with n>3.md",
     "Lecture/Homework/2025 spring/python for physics/final thesis.md",
