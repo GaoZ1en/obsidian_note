@@ -526,7 +526,7 @@
         }
       },
       "2025-06-06": {
-        "totalDelta": 1173,
+        "totalDelta": 1570,
         "files": {
           "Lecture/Homework/2025 spring/python for physics/final thesis.md": {
             "initial": 1249,
@@ -542,7 +542,7 @@
           },
           "Drafts/ads3 proca.md": {
             "initial": 0,
-            "current": 187
+            "current": 584
           },
           "TODO.md": {
             "initial": 76,
