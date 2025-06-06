@@ -15,9 +15,9 @@ $$
 or we can expand it
 
 $$\begin{align}\tag{1.3}
-\frac{\cos^3\rho}{\sin\rho}(\partial_\rho A_\theta - \cot\rho A_\theta - \partial_\theta A_\rho) &= -\mu A_t \\
-\frac{\cos^3\rho}{\sin\rho}(\partial_t A_\theta - \partial_\theta A_t-\tan \rho A_{th}) &= -\mu A_\rho \\
-\frac{\cos^3\rho}{\sin \rho}(\partial_\rho A_t - \partial_t A_\rho + \tan\rho A_t) &= -\mu A_\theta
+\frac{\cos \rho}{\sin \rho}(\partial_{\rho}A_{\theta}- \partial_{\theta}A_{\rho}+\cot \rho A_{\rho}) & =-\mu A_{t} \\
+-\frac{\cos \rho}{\sin \rho}(\partial_{\theta}A_{t}-\partial_{t}A_{\theta}) & =-\mu A_{\rho} \\
+-\frac{\cos \rho}{\sin \rho}(\partial _{t}A_{\rho}-\partial _{\rho}A_{t}) & =-\mu A_{\theta}
 \end{align}$$
 
 make the following ansatz
@@ -32,9 +32,9 @@ then the equation of motion becomes
 
 $$\tag{1.5}
 \begin{align}
-\frac{\cos ^{3}\rho}{\sin \rho}(\partial _{\rho}R_{\theta}-\cot \rho R_{\theta}-imR_{\rho}) & =-\mu R_{t} \\
-\frac{\cos ^{3}\rho}{\sin \rho}(-i \omega R_{\theta}-imR_{t}) & =-\mu R_{\rho} \\
-\cos ^{3}\rho(-i \omega R_{\rho}-\partial _{\rho}R_{t}+\tan \rho R_{t}) & =-\mu A_{\theta}
+\cot \rho(\partial_{\rho}R_{\theta}- i mR_{\rho}+\cot \rho R_{\rho}) & =-\mu R_{t} \\
+-\cot \rho(imR_{t}+i \omega R_{\theta}) & =-\mu R_{\rho} \\
+-\cot \rho(-i \omega R_{\rho}-\partial _{\rho}R_{t}) & =-\mu R_{\theta}
 \end{align}
 $$
 
