@@ -30,13 +30,6 @@ $$
 
 then the equation of motion becomes
 
-$$\begin{align}
-\frac{\cos^3\rho}{\sin\rho}[(\frac{df_\theta}{d\rho} - \cot\rho f_\theta) - im f_\rho] &= -\mu f_t \\
-\frac{\cos^3\rho}{\sin\rho}[-i\omega f_\theta - im f_t] &= -\mu f_\rho \\
-\cos^3\rho[-i\omega f_\rho - (\frac{df_t}{d\rho} - \tan\rho f_t)] &= -\mu f_\theta
-\end{align}$$
-
-
 $$\tag{1.5}
 \begin{align}
 \frac{\cos ^{3}\rho}{\sin \rho}(\partial _{\rho}R_{\theta}-\cot \rho R_{\theta}-imR_{\rho}) & =-\mu R_{t} \\
@@ -45,118 +38,26 @@ $$\tag{1.5}
 \end{align}
 $$
 
-$$\begin{pmatrix} 
-0 & \frac{im\cos^3\rho}{\sin\rho} & \frac{-\cos^3\rho}{\sin\rho}(\frac{d}{d\rho} - \cot\rho) \\
-\frac{im\cos^3\rho}{\sin\rho} & 0 & i\omega\frac{\cos^3\rho}{\sin\rho} \\
-\cos^3\rho(\frac{d}{d\rho} - \tan\rho) & i\omega\cos^3\rho & 0 
-\end{pmatrix}
-\begin{pmatrix} f_t \\ f_\rho \\ f_\theta \end{pmatrix} = 
-\begin{pmatrix} -\mu f_t \\ -\mu f_\rho \\ -\mu f_\theta \end{pmatrix}$$
+eliminate $\displaystyle{R_{\rho}}$
 
+$$\tag{1.6}
+\begin{align}
+\frac{\cos ^{3}\rho}{\sin \rho}\left( \partial _{\rho}R_{\theta}-\cot \rho R_{\theta}+\frac{m}{\mu}\frac{\cos ^{3}\rho}{\sin \rho}(\omega R_{\theta}+mR_{t}) \right) & =-\mu R_{t} \\
+\cos ^{3}\rho\left( \frac{\omega}{\mu} \frac{\cos ^{3}\rho}{\sin \rho}(\omega R_{\theta}+mR_{t})-\partial _{\rho}R_{t}+\tan \rho R_{t} \right) & =-\mu A_{\theta}
+\end{align}
+$$
 
-# Solving the Topologically Massive Vector Field in AdS₃
+let $\displaystyle{z=\cos ^{2}\rho}$,
 
-## Solution Strategy for the First-Order Equation
+$$\tag{.}
+\begin{align}
+z & =\cos ^{2}\rho \\
+\cos \rho & =\sqrt{ z } \\
+\sin \rho & =\sqrt{ 1-z } \\
+\tan \rho & =\sqrt{ \frac{1-z}{z} } \\
 
-To solve the topologically massive vector field equation in AdS₃:
-
-$$\varepsilon_{a}^{~bc}\nabla_{b}A_{c}=-\mu A_{a}$$
-
-with the metric:
-
-$$\mathrm{d}s^{2} = \frac{1}{\cos^{2}\rho}(-\mathrm{d}t^{2}+\mathrm{d}\rho^{2}+\sin^{2}\rho \mathrm{d}\theta^{2})$$
-
-I'll outline a systematic approach to find explicit solutions.
-
-## Step 1: Separation of Variables
-
-We can exploit the symmetries of AdS₃ by using the ansatz:
-
-$$A_a(t,\rho,\theta) = e^{-i\omega t} e^{im\theta} f_a(\rho)$$
-
-where:
-- $\omega$ represents the frequency/energy
-- $m$ is the angular momentum quantum number (integer)
-- $f_a(\rho)$ are radial functions to be determined
-
-## Step 2: Substituting into the System
-
-Recall our system of equations in component form:
-
-$$\begin{align}
-\frac{\cos^3\rho}{\sin\rho}[(\partial_\rho A_\theta - \cot\rho A_\theta) - \partial_\theta A_\rho] &= -\mu A_t \\
-\frac{\cos^3\rho}{\sin\rho}[\partial_t A_\theta - \partial_\theta A_t] &= -\mu A_\rho \\
-\cos^3\rho[\partial_t A_\rho - (\partial_\rho A_t - \tan\rho A_t)] &= -\mu A_\theta
-\end{align}$$
-
-Substituting our ansatz and evaluating the derivatives:
-
-$$\begin{align}
-\frac{\cos^3\rho}{\sin\rho}[(\frac{df_\theta}{d\rho} - \cot\rho f_\theta) - im f_\rho] &= -\mu f_t \\
-\frac{\cos^3\rho}{\sin\rho}[-i\omega f_\theta - im f_t] &= -\mu f_\rho \\
-\cos^3\rho[-i\omega f_\rho - (\frac{df_t}{d\rho} - \tan\rho f_t)] &= -\mu f_\theta
-\end{align}$$
-
-## Step 3: Solving the Radial Equations
-
-This system can be rewritten in matrix form:
-
-$$\begin{pmatrix} 
-0 & \frac{im\cos^3\rho}{\sin\rho} & \frac{-\cos^3\rho}{\sin\rho}(\frac{d}{d\rho} - \cot\rho) \\
-\frac{im\cos^3\rho}{\sin\rho} & 0 & i\omega\frac{\cos^3\rho}{\sin\rho} \\
-\cos^3\rho(\frac{d}{d\rho} - \tan\rho) & i\omega\cos^3\rho & 0 
-\end{pmatrix}
-\begin{pmatrix} f_t \\ f_\rho \\ f_\theta \end{pmatrix} = 
-\begin{pmatrix} -\mu f_t \\ -\mu f_\rho \\ -\mu f_\theta \end{pmatrix}$$
-
-## Step 4: Explicit Solutions
-
-The general solution involves hypergeometric functions. For certain values of $\mu$, $\omega$, and $m$, we can find exact solutions.
-
-### Example: Special Case Solution
-
-For $\mu = 1$ (in units of AdS radius), one particular solution is:
-
-$$\begin{pmatrix} f_t(\rho) \\ f_\rho(\rho) \\ f_\theta(\rho) \end{pmatrix} = 
-\begin{pmatrix} 
-\cos\rho \cdot {}_2F_1(\frac{1+\omega+m}{2}, \frac{1+\omega-m}{2}; \frac{3}{2}; \sin^2\rho) \\
-\frac{i\sin\rho}{\omega} \cdot {}_2F_1(\frac{1+\omega+m}{2}, \frac{3+\omega-m}{2}; \frac{5}{2}; \sin^2\rho) \\
-\frac{m\sin\rho}{\omega} \cdot {}_2F_1(\frac{1+\omega+m}{2}, \frac{3+\omega-m}{2}; \frac{5}{2}; \sin^2\rho) 
-\end{pmatrix}$$
-
-where ${}_2F_1(a,b;c;z)$ is the hypergeometric function.
-
-## Step 5: Normalizability and Boundary Conditions
-
-For physical solutions, we require:
-
-1. **Regularity at $\rho=0$** (center of AdS): This constrains the behavior of $f_a(\rho)$ near $\rho=0$.
-
-2. **Appropriate boundary behavior as $\rho\to\pi/2$** (AdS boundary): This depends on whether we want normalizable modes or boundary-sourced solutions.
-
-Normalizable modes satisfy:
-
-$$A_a \sim (\cos\rho)^{\Delta}$$ 
-
-as $\rho\to\pi/2$, where $\Delta = 1 + \sqrt{1 + \mu^2}$.
-
-## Quantization Conditions
-
-The frequency $\omega$ is quantized based on normalizable boundary conditions:
-
-$$\omega = \pm(2n + \Delta + |m|)$$
-
-where $n$ is a non-negative integer.
-
-## Holographic Interpretation
-
-In the AdS/CFT correspondence, these bulk solutions correspond to:
-- Boundary conserved currents with conformal dimension $\Delta = 1 + \sqrt{1 + \mu^2}$
-- The quantized frequencies correspond to the spectrum of operator dimensions in the dual CFT
-
-The solutions with $\omega > 0$ correspond to positive-energy modes, while those with $\omega < 0$ correspond to negative-energy modes. Both sets are needed for a complete basis of solutions.
-
-Would you like me to elaborate on any specific aspect of these solutions or provide more detailed calculations for a particular case?
+\end{align}
+$$
 
 # General Solution for Topologically Massive Vector Field in AdS₃ with Arbitrary μ
 
@@ -183,15 +84,6 @@ $$\begin{pmatrix} f_t^{(1)}(\rho) \\ f_\rho^{(1)}(\rho) \\ f_\theta^{(1)}(\rho) 
 \frac{m(\cos\rho)^{\Delta_+} (\sin\rho)^{|m|+1}}{|m|+1} \cdot \beta_1 \cdot {}_2F_1\left(\frac{\Delta_+ + |m| + \omega + 2}{2}, \frac{\Delta_+ + |m| - \omega + 2}{2}; |m|+2; \sin^2\rho\right)
 \end{pmatrix}$$
 
-## Second Solution (Non-normalizable for μ > 0)
-
-$$\begin{pmatrix} f_t^{(2)}(\rho) \\ f_\rho^{(2)}(\rho) \\ f_\theta^{(2)}(\rho) \end{pmatrix} = 
-\begin{pmatrix} 
-(\cos\rho)^{\Delta_-} (\sin\rho)^{|m|} \cdot {}_2F_1\left(\frac{\Delta_- + |m| + \omega}{2}, \frac{\Delta_- + |m| - \omega}{2}; |m|+1; \sin^2\rho\right) \\
-\frac{i(\cos\rho)^{\Delta_-} (\sin\rho)^{|m|+1}}{|m|+1} \cdot \alpha_2 \cdot {}_2F_1\left(\frac{\Delta_- + |m| + \omega + 2}{2}, \frac{\Delta_- + |m| - \omega + 2}{2}; |m|+2; \sin^2\rho\right) \\
-\frac{m(\cos\rho)^{\Delta_-} (\sin\rho)^{|m|+1}}{|m|+1} \cdot \beta_2 \cdot {}_2F_1\left(\frac{\Delta_- + |m| + \omega + 2}{2}, \frac{\Delta_- + |m| - \omega + 2}{2}; |m|+2; \sin^2\rho\right)
-\end{pmatrix}$$
-
 where:
 - $\Delta_{\pm} = 1 \pm \sqrt{1 + \mu^2}$ are the conformal dimensions
 - $\alpha_1, \alpha_2, \beta_1, \beta_2$ are coefficients that depend on μ, ω, and m, given by:
@@ -208,41 +100,99 @@ where j = 1,2 corresponds to $\Delta_+$ and $\Delta_-$ respectively.
 
 For normalizable modes (when we set $C_2 = 0$ for μ > 0), the frequency must satisfy:
 
-$$\omega = \pm(2n + \Delta_+ + |m|)$$
+$$\omega = (2n + \Delta_+ + |m|)$$
 
 where n is a non-negative integer.
 
-### Special Case: μ = 0
 
-When μ = 0, the equation describes a pure gauge field. The solution simplifies with $\Delta_+ = 2$ and $\Delta_- = 0$.
+## Step 3: Eliminate $f_\rho$ from the System
 
-### Special Case: |μ| = 1
+From the second equation, we obtain:
 
-When |μ| = 1 (in units of the AdS radius), we have $\Delta_+ = 1 + \sqrt{2}$ and $\Delta_- = 1 - \sqrt{2}$, and the hypergeometric functions simplify significantly.
+$$f_\rho = \frac{\cos^3\rho}{\mu\sin\rho}[-i\omega f_\theta - im f_t]$$
 
-## Behavior at Boundaries
+Substituting this into the first and third equations:
 
-1. **Center of AdS (ρ → 0)**:
-   - The solution is regular if the $\sin\rho$ terms have exponent ≥ |m|
+$$\begin{align}
+\frac{\cos^3\rho}{\sin\rho}[\partial_\rho f_\theta - \cot\rho f_\theta] + \frac{im\cos^3\rho}{\mu\sin\rho}[i\omega f_\theta + im f_t] &= -\mu f_t \\
+-i\omega\frac{\cos^6\rho}{\mu\sin^2\rho}[-i\omega f_\theta - im f_t] - \cos^3\rho[\partial_\rho f_t - \tan\rho f_t] &= -\mu f_\theta
+\end{align}$$
 
-2. **AdS Boundary (ρ → π/2)**:
-   - Normalizable modes: $A_a \sim (\cos\rho)^{\Delta_+}$
-   - Non-normalizable modes: $A_a \sim (\cos\rho)^{\Delta_-}$
+Simplifying:
 
-## Gauge Freedom and Constraints
+$$\begin{align}
+\frac{\cos^3\rho}{\sin\rho}[\partial_\rho f_\theta - \cot\rho f_\theta] - \frac{m\omega\cos^3\rho}{\mu\sin\rho}f_\theta + \frac{m^2\cos^3\rho}{\mu\sin\rho}f_t &= -\mu f_t \\
+\frac{\omega^2\cos^6\rho}{\mu\sin^2\rho}f_\theta + \frac{\omega m\cos^6\rho}{\mu\sin^2\rho}f_t - \cos^3\rho[\partial_\rho f_t - \tan\rho f_t] &= -\mu f_\theta
+\end{align}$$
 
-Although the system has three components $(A_t, A_\rho, A_\theta)$, there is a constraint:
+## Step 4: Analyze the Asymptotic Behavior
 
-$$\nabla^a A_a = 0$$
+For the behavior near the AdS boundary (ρ → π/2), we make the ansatz:
 
-This constraint is automatically satisfied by our solutions due to the structure of the first-order equation.
+$$f_t(\rho) \sim (\cos\rho)^{\Delta}$$
+$$f_\theta(\rho) \sim (\cos\rho)^{\Delta}$$
 
-## Holographic Interpretation
+Substituting this into our equations and examining the leading terms, we find that Δ must satisfy:
 
-In the AdS₃/CFT₂ correspondence:
-- The non-normalizable mode ($\sim (\cos\rho)^{\Delta_-}$) acts as the source for a boundary conserved current
-- The normalizable mode ($\sim (\cos\rho)^{\Delta_+}$) corresponds to the expectation value of this current
-- The quantization condition on ω corresponds to the spectrum of the dual CFT operator
+$$(\Delta^2 - 1) - \mu^2 = 0$$
 
-These solutions represent the complete set of modes for the topologically massive vector field with arbitrary mass parameter μ in AdS₃.
+This gives us:
 
+$$\Delta_{\pm} = 1 \pm \sqrt{1 + \mu^2}$$
+
+## Step 5: Account for Angular Momentum
+
+For regularity at the origin (ρ = 0), we need to include the angular momentum dependence:
+
+$$f_t(\rho) = (\cos\rho)^{\Delta} (\sin\rho)^{|m|} h_t(\sin^2\rho)$$
+$$f_\theta(\rho) = (\cos\rho)^{\Delta} (\sin\rho)^{|m|} h_\theta(\sin^2\rho)$$
+
+where $h_t$ and $h_\theta$ are functions to be determined.
+
+## Step 6: Derive the Hypergeometric Equation
+
+Substituting this ansatz into our coupled equations and setting $z = \sin^2\rho$, we obtain:
+
+$$z(1-z)h_t''(z) + [c - (a+b+1)z]h_t'(z) - abh_t(z) = \text{terms with } h_\theta$$
+$$z(1-z)h_\theta''(z) + [c' - (a'+b'+1)z]h_\theta'(z) - a'b'h_\theta(z) = \text{terms with } h_t$$
+
+where:
+- $c = |m| + 1$
+- $a + b = \Delta + |m|$
+- $ab = \frac{(\Delta+|m|)^2-\omega^2}{4}$
+
+## Step 7: Find the Solutions
+
+For well-behaved solutions, we can show that:
+
+$$a = \frac{\Delta + |m| + \omega}{2}, \quad b = \frac{\Delta + |m| - \omega}{2}$$
+
+The general solution for each conformal dimension $\Delta_{\pm}$ has the form:
+
+$$h_t(z) = {}_2F_1\left(\frac{\Delta + |m| + \omega}{2}, \frac{\Delta + |m| - \omega}{2}; |m|+1; z\right)$$
+
+$$h_\theta(z) = \gamma \cdot z \cdot {}_2F_1\left(\frac{\Delta + |m| + \omega + 2}{2}, \frac{\Delta + |m| - \omega + 2}{2}; |m|+2; z\right)$$
+
+where γ is a constant determined by the coupled equations.
+
+## Step 8: Calculate $f_\rho$ and Normalization
+
+Using our expression for $f_\rho$ from Step 3, and determining the appropriate normalization constants, we arrive at the full solution for each component.
+
+## Step 9: Quantization Condition
+
+For normalizable modes (using $\Delta_+$), the hypergeometric series must terminate, which happens when either $a$ or $b$ is a non-positive integer:
+
+$$\frac{\Delta_+ + |m| + \omega}{2} = -n \quad \text{or} \quad \frac{\Delta_+ + |m| - \omega}{2} = -n$$
+
+This gives the quantization condition:
+
+$$\omega = \pm(2n + \Delta_+ + |m|)$$
+
+## Complete Solution
+
+The complete solution is a linear combination of two independent solutions corresponding to $\Delta_+$ and $\Delta_-$, with the general structure I presented in my previous response.
+
+For explicit calculations, particularly in numerical applications, it's often convenient to express these solutions using the Frobenius method as a power series, or to use recursion relations between hypergeometric functions to simplify the expressions.
+
+This derivation shows why the solutions take the form of hypergeometric functions, which are the natural solutions to second-order differential equations with three regular singular points (as we have here in the radial equation).
