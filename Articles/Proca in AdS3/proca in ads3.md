@@ -15,9 +15,9 @@ $$
 or we can expand it
 
 $$\begin{align}\tag{1.3}
-\frac{\cos^3\rho}{\sin\rho}[(\partial_\rho A_\theta - \cot\rho A_\theta) - \partial_\theta A_\rho] &= -\mu A_t \\
-\frac{\cos^3\rho}{\sin\rho}[\partial_t A_\theta - \partial_\theta A_t] &= -\mu A_\rho \\
-\cos^3\rho[\partial_t A_\rho - (\partial_\rho A_t - \tan\rho A_t)] &= -\mu A_\theta
+\frac{\cos^3\rho}{\sin\rho}(\partial_\rho A_\theta - \cot\rho A_\theta - \partial_\theta A_\rho) &= -\mu A_t \\
+\frac{\cos^3\rho}{\sin\rho}(\partial_t A_\theta - \partial_\theta A_t-\tan \rho A_{th}) &= -\mu A_\rho \\
+\frac{\cos^3\rho}{\sin \rho}(\partial_\rho A_t - \partial_t A_\rho + \tan\rho A_t) &= -\mu A_\theta
 \end{align}$$
 
 make the following ansatz
@@ -37,6 +37,15 @@ $$\tag{1.5}
 \cos ^{3}\rho(-i \omega R_{\rho}-\partial _{\rho}R_{t}+\tan \rho R_{t}) & =-\mu A_{\theta}
 \end{align}
 $$
+
+$$\frac{\cos^3\rho}{\sin\rho}\left(\partial_\rho A_\theta - \partial_\theta A_\rho - \cot\rho\, A_\theta\right) = -\mu A_t$$
+
+Similarly for the other components:
+
+$$\frac{\cos^3\rho}{\sin\rho}\left(\partial_t A_\theta - \partial_\theta A_t - \tan\rho\, A_\theta\right) = -\mu A_\rho$$
+
+$$\frac{\cos^3\rho}{\sin\rho}\left(\partial_\rho A_t - \partial_t A_\rho + \tan\rho\, A_t\right) = -\mu A_\theta$$
+
 
 eliminate $\displaystyle{R_{\rho}}$
 
@@ -84,6 +93,12 @@ $$\begin{pmatrix} f_t^{(1)}(\rho) \\ f_\rho^{(1)}(\rho) \\ f_\theta^{(1)}(\rho) 
 \frac{m(\cos\rho)^{\Delta_+} (\sin\rho)^{|m|+1}}{|m|+1} \cdot \beta_1 \cdot {}_2F_1\left(\frac{\Delta_+ + |m| + \omega + 2}{2}, \frac{\Delta_+ + |m| - \omega + 2}{2}; |m|+2; \sin^2\rho\right)
 \end{pmatrix}$$
 
+$$\tag{.}
+\begin{align}
+
+\end{align}
+$$
+
 where:
 - $\Delta_{\pm} = 1 \pm \sqrt{1 + \mu^2}$ are the conformal dimensions
 - $\alpha_1, \alpha_2, \beta_1, \beta_2$ are coefficients that depend on μ, ω, and m, given by:
@@ -93,6 +108,12 @@ $$\alpha_j = \frac{(\Delta_j + |m| + \omega)(\Delta_j + |m| - \omega)}{2(|m|+1)}
 $$\beta_j = \frac{\text{sgn}(m)(\Delta_j + |m| + \omega)(\Delta_j + |m| - \omega)}{2\omega(|m|+1)}$$
 
 where j = 1,2 corresponds to $\Delta_+$ and $\Delta_-$ respectively.
+
+$$\tag{.}
+\begin{align}
+\Delta+1
+\end{align}
+$$
 
 ## Special Cases and Constraints
 
