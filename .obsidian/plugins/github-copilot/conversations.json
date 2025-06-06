@@ -1,6 +1,30 @@
 {
   "conversations": [
     {
+      "id": "1749189493406",
+      "title": "how can we determine the confo...",
+      "messages": [
+        {
+          "id": "1749197975600",
+          "content": "how can we determine the conformal dimension of Proca field in AdS3?",
+          "role": "user",
+          "timestamp": 1749197975600
+        },
+        {
+          "id": "msg_vrtx_01CNRgM1MsazFhKnKB3VjRoc",
+          "content": "# Conformal Dimension of Proca Field in AdS3\n\n## The AdS/CFT Framework\n\nIn the AdS/CFT correspondence, bulk fields in AdS space correspond to operators in the boundary CFT. The conformal dimension (Δ) of a boundary operator is directly related to the mass parameters of the corresponding bulk field.\n\nFor a Proca field (massive vector field) in AdS3, we need to analyze the field equations and their asymptotic behavior near the boundary.\n\n## Mass-Dimension Relation for Vector Fields\n\nThe standard relation between the mass of a vector field in AdS_{d+1} and the conformal dimension of its dual operator is:\n\n$$\\Delta_{\\pm} = \\frac{d}{2} \\pm \\sqrt{\\left(\\frac{d}{2}\\right)^2 + m^2L^2}$$\n\nwhere:\n- $d$ is the dimension of the boundary CFT\n- $m$ is the mass of the Proca field\n- $L$ is the AdS radius (which we often set to $L=1$)\n\nSince we're working in AdS3, we have $d=2$, giving:\n\n$$\\Delta_{\\pm} = 1 \\pm \\sqrt{1 + m^2}$$\n\n## Determining the Physical Solution\n\nFor vector fields, we need to consider:\n\n1. **Unitarity bound**: In a 2D CFT, vector operators must satisfy $\\Delta \\geq 1$\n2. **Quantization options**: \n   - Standard quantization: $\\Delta_+$ (typically used)\n   - Alternative quantization: $\\Delta_-$ (allowed when $0 \\leq m^2L^2 \\leq 1$)\n\n### Calculation Steps\n\n1. Start with the Proca action in AdS3:\n   $$S = -\\frac{1}{4}\\int d^3x \\sqrt{-g} (F_{\\mu\\nu}F^{\\mu\\nu} + 2m^2 A_{\\mu}A^{\\mu})$$\n   where $F_{\\mu\\nu} = \\partial_{\\mu}A_{\\nu} - \\partial_{\\nu}A_{\\mu}$\n\n2. The equation of motion is:\n   $$\\nabla_{\\mu}F^{\\mu\\nu} - m^2 A^{\\nu} = 0$$\n\n3. Solve this in the Poincaré patch of AdS3:\n   $$ds^2 = \\frac{L^2}{z^2}(dz^2 + dx^2 + dt^2)$$\n\n4. Near the boundary ($z \\to 0$), the components behave as:\n   $$A_{\\mu} \\sim z^{\\Delta-1} a_{\\mu} + \\ldots$$\n\n## Results and Interpretation\n\nFor a Proca field with mass $m$ in AdS3:\n\n- **Standard quantization**: $\\Delta_+ = 1 + \\sqrt{1 + m^2}$\n- **Alternative quantization** (when $0 \\leq m^2 \\leq 1$): $\\Delta_- = 1 - \\sqrt{1 + m^2}$\n\n### Special Cases\n\n1. **Massless limit** ($m^2 \\to 0$): \n   - $\\Delta_+ \\to 2$ (conserved current in CFT)\n   - $\\Delta_- \\to 0$ (corresponds to a gauge field)\n\n2. **Large mass limit**: $\\Delta \\sim m$ (as expected from AdS/CFT)\n\n## [[Open Problems]] in Vector Field Holography\n\n- Exact holographic dictionary for Proca fields with Chern-Simons terms in AdS3\n- Mapping of logarithmic modes at critical masses to logarithmic CFTs\n- Proper treatment of gauge redundancy in the massless limit\n\n^cite{Aharony1999}",
+          "role": "assistant",
+          "timestamp": 1749198010050
+        }
+      ],
+      "createdAt": 1749189493407,
+      "updatedAt": 1749198010050,
+      "model": {
+        "label": "Claude 3.7 Sonnet Thinking",
+        "value": "claude-3.7-sonnet-thought"
+      }
+    },
+    {
       "id": "1749189984453",
       "title": "$$\\tag{1.1}\n\\begin{align}\n\\mat...",
       "messages": [
@@ -90,17 +114,6 @@
       "messages": [],
       "createdAt": 1749189496957,
       "updatedAt": 1749189496957,
-      "model": {
-        "label": "Claude 3.7 Sonnet Thinking",
-        "value": "claude-3.7-sonnet-thought"
-      }
-    },
-    {
-      "id": "1749189493406",
-      "title": "New Conversation",
-      "messages": [],
-      "createdAt": 1749189493407,
-      "updatedAt": 1749189493407,
       "model": {
         "label": "Claude 3.7 Sonnet Thinking",
         "value": "claude-3.7-sonnet-thought"
@@ -359,5 +372,5 @@
       }
     }
   ],
-  "activeConversationId": "1749189984453"
+  "activeConversationId": "1749189493406"
 }
