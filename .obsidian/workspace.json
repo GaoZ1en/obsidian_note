@@ -59,8 +59,8 @@
               "type": "github-copilot-chat-view",
               "state": {},
               "pinned": true,
-              "icon": "bot-message-square",
-              "title": "Copilot Chat"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -293,8 +293,8 @@
             "state": {
               "type": "github-copilot-chat-view",
               "state": {},
-              "icon": "bot-message-square",
-              "title": "Copilot Chat"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -313,10 +313,10 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "4da96126b01b889c",
+  "active": "841fa8e2e663e1cf",
   "lastOpenFiles": [
-    "Drafts/ads3 proca.md",
     "Articles/Proca in AdS3/proca in ads3.md",
+    "Drafts/ads3 proca.md",
     "TODO.md",
     "Articles/Proca in AdS3/proca in adsn with n>3.md",
     "Lecture/Homework/2025 spring/python for physics/final thesis.md",
