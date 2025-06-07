@@ -3,7 +3,7 @@
 1. 协变相空间框架下的量子化
 	1. 继续考虑$\mathrm{AdS_{n}}$中的正则量子化
 		1. 问题在于$\mathrm{AdS_{n}}$中各分量是耦合的，但是似乎能解耦
-		2. 对于ads3可以化简为一解方程，试试
+		2. 对于ads3可以化简为一阶方程，试试
 2. [Freedman] Supergravity.pdf
 	1. mainly in ads/cft...
 3. [Henneaux, Teitelboim] Quantization of gauge systems.pdf
