@@ -93,7 +93,8 @@
               "title": "proca in ads3"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -313,11 +314,11 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "b0357530cb9d1c74",
+  "active": "0b0163c7cf93c4f4",
   "lastOpenFiles": [
+    "Articles/Proca in AdS3/proca in ads3.md",
     "Drafts/ads3 proca.md",
     "TODO.md",
-    "Articles/Proca in AdS3/proca in ads3.md",
     "Articles/Proca in AdS3/proca in adsn with n>3.md",
     "Lecture/Homework/2025 spring/python for physics/final thesis.md",
     "Articles/quantization/article/main.md",
