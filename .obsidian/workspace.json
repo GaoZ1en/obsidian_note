@@ -59,8 +59,8 @@
               "type": "github-copilot-chat-view",
               "state": {},
               "pinned": true,
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "bot-message-square",
+              "title": "Copilot Chat"
             }
           },
           {
@@ -94,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -313,7 +313,7 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "0b0163c7cf93c4f4",
+  "active": "cef33d621e94efd8",
   "lastOpenFiles": [
     "Drafts/ads3 proca.md",
     "TODO.md",
