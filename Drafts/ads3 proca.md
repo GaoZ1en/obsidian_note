@@ -98,18 +98,10 @@ $$
 
 $$\tag{.}
 \begin{align}
-\omega ^{2}R^{t}+\partial _{\rho}^{2}R^{t}+\left( 2\tan \rho+\frac{1}{\sin \rho \cos \rho} \right)\partial _{\rho}R^{t}+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}-\frac{m^{2}}{\sin ^{2}\rho} \right)R^{t} & =-2i \omega\tan \rho R^{t} \\
+\omega ^{2}R^{t}+\partial _{\rho}^{2}R^{t}+\left( 2\tan \rho+\frac{1}{\sin \rho \cos \rho} \right)\partial _{\rho}R^{t}+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}-\frac{m^{2}}{\sin ^{2}\rho} \right)R^{t} & =-2i \omega\tan \rho R^{\rho} \\
 \omega ^{2}R^{\rho}+\partial _{\rho}^{2}R^{\rho}+\left( 2\tan \rho +\frac{1}{\sin \rho \cos \rho} \right)\partial _{\rho}R^{t}+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}-\frac{m^{2}}{\sin ^{2}\rho}-\frac{1}{\sin ^{2}\rho \cos ^{2}\rho} \right)R^{\rho} & =-2i \omega\tan \rho R^{t}+\frac{2im}{\sin \rho \cos \rho}R^{\theta} \\
 \omega ^{2}R^{\theta}+\partial _{\rho}^{2}R^{\theta}+\frac{3}{\sin \rho \cos \rho} \partial _{\rho}R^{\theta}+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}-\frac{m^{2}}{\sin ^{2}\rho} \right)R^{\theta} & =-\frac{2im}{\sin ^{3}\rho \cos \rho}R^{\rho} \\
 -i \omega R^{t}+\partial _{\rho}R^{\rho}+imR^{\theta}+\left( 2\tan \rho +\frac{1}{\sin \rho \cos \rho} \right)R^{\rho} & =0
-\end{align}
-$$
-
-we first consider the case $\displaystyle{m=0}$. $\displaystyle{R^{\theta}}$ decouples from the other two equations.
-
-$$\tag{.}
-\begin{align}
-\partial _{\rho}^{2}R^{\theta}+\frac{3}{\sin \rho \cos \rho} \partial _{\rho}R^{\theta}+\left( \omega ^{2}+\frac{4-\mu ^{2}}{\cos ^{2}\rho} \right)R^{\theta} & =0
 \end{align}
 $$
 
@@ -127,32 +119,36 @@ $$
 
 $$\tag{.}
 \begin{align}
-z(1-z)\Theta''-\left( 1+\frac{z}{2} \right)\Theta'+\frac{1}{4}\left( \omega ^{2}+\frac{4-\mu ^{2}}{z} \right)\Theta & =0
+\omega ^{2}R^{t}+4z(1-z)\partial _{z}^{2}R^{t}-4\partial _{z}R^{t}+\left( \frac{4-\mu ^{2}}{z}-\frac{m^{2}}{1-z} \right)R^{t} & =-2i \omega \sqrt{ \frac{1-z}{z} }R^{\rho} \\
+\omega ^{2}R^{\rho}+4z(1-z)\partial _{z}^{2}R^{\rho}-4\partial _{z}R^{\rho}+\left( \frac{4-\mu ^{2}}{z}-\frac{m^{2}}{1-z}-\frac{1}{z(1-z)} \right)R^{\rho} & =-2i \omega \sqrt{ \frac{1-z}{z} }R^{t}+\frac{2im}{\sqrt{ z(1-z) }}R^{\theta} \\
+\omega ^{2}R^{\theta}+4z(1-z)\partial _{z}^{2}R^{\theta}-4(1+z)\partial _{z}R^{\theta}+\left( \frac{4-\mu ^{2}}{z}-\frac{m^{2}}{1-z} \right)R^{\theta} & =-\frac{2im}{\sqrt{ z(1-z)^{3} }}R^{\rho} \\
+-i \omega R^{t}-2\sqrt{ z(1-z) }\partial _{z}R^{\rho}+imR^{\theta}+\left( 2\sqrt{ \frac{1-z}{z} } +\frac{1}{\sqrt{ z(1-z) }} \right)R^{\rho} & =0
 \end{align}
 $$
 
-let $\displaystyle{\Theta=z^{1+ \mu/2}F}$
+by taking $\displaystyle{z\approx0}$, we get the asymptotic behavior
 
 $$\tag{.}
 \begin{align}
-\Theta' & =\left( 1+\frac{\mu}{2} \right)z^{-1}F+F' \\
-\Theta'' & =\left( 1+\frac{\mu}{2} \right) \frac{\mu}{2}z^{-2}F+(2+\mu) z^{-1}F'+F''
+R^{t},R^{\theta} & \sim z^{(\mu+2)/2} \\
+R^{\rho} & \sim z^{(\mu+3)/2}
+\end{align}
+$$
+
+and by taking $\displaystyle{z\approx 1}$, we get the asymptotic behavior
+
+$$\tag{.}
+\begin{align}
+4z\partial _{z}^{2}R^{t}+4\partial _{z}R^{t} -\frac{m^{2}}{z} R^{t} & =-2i \omega \sqrt{ z }R^{\rho} \\
+4z\partial _{z}^{2}R^{\rho}+4\partial _{z}R^{\rho} -\frac{m^{2}+1}{z} R^{\rho} & =-2i \omega \sqrt{ 1-z }R^{t}+\frac{2im}{\sqrt{ z }}R^{\theta} \\
+4z\partial _{z}^{2}R^{\theta}+8\partial _{z}R^{\theta} -\frac{m^{2}}{z} R^{\theta} & =-\frac{2im}{\sqrt{ z^{3} }}R^{\rho} \\
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-z(1-z)\left( F''+(2+\mu)z^{-1}F'+\left( 1+\frac{\mu}{2} \right) \frac{\mu}{2}z^{-2}F \right)-\left( 1+\frac{z}{2} \right)\left( \left( 1+\frac{\mu}{2} \right)z^{-1}F+F' \right)+\frac{1}{4}\left( \omega ^{2}+\frac{4-\mu ^{2}}{z} \right)F=0
+(4\alpha(\alpha-1)+4\alpha -m^{2})z^{\alpha-1} & =-2i \omega z^{\beta+1/2} \\
+(4\beta(\beta-1)+4\beta-(m^{2}+1))z^{\beta-1} & =-2i \omega z^{\alpha+1/2}+2i mz^{\gamma-1/2} \\
+(4\gamma(\gamma-1)+8\gamma-m^{2})z^{\gamma-1} & =-2i mz^{\beta-3/2}
 \end{align}
 $$
-
-$$\tag{.}
-\begin{align}
-F'' & :z(1-z) \\
-F' & :(2+\mu)(1-z)-\left( 1+\frac{z}{2} \right) \\
- & =\mu+1-z\left( \mu+\frac{1}{2}+1 \right) \\
-F & =\frac{(\mu ^{2}+2\mu)(1-z)}{z}-\frac{4+2z}{4z}+\frac{4-\mu ^{2}}{4z}+\frac{1}{4}\omega ^{2} \\
- & =
-\end{align}
-$$
-
