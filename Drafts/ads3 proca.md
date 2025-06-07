@@ -36,3 +36,4 @@ R_{\theta}\propto (\cos \rho)^{\mu+2}{}_{2}F_{1}\left( \frac{\mu+2-\omega}{2},\f
 \end{align}
 $$
 s
+

@@ -40,9 +40,9 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 120,
+                    "columns": 236,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
-                    "rows": 17
+                    "rows": 70
                   }
                 }
               },
@@ -315,9 +315,9 @@
   },
   "active": "0b0163c7cf93c4f4",
   "lastOpenFiles": [
+    "Drafts/ads3 proca.md",
     "TODO.md",
     "Articles/Proca in AdS3/proca in ads3.md",
-    "Drafts/ads3 proca.md",
     "Articles/Proca in AdS3/proca in adsn with n>3.md",
     "Lecture/Homework/2025 spring/python for physics/final thesis.md",
     "Articles/quantization/article/main.md",
