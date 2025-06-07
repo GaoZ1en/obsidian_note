@@ -39,7 +39,7 @@ $$\tag{1.4}
 \end{align}
 $$
 
-substitute 
+substitute (analysing the asymptotic behavior of the equation of motion) 
 
 $$\tag{1.5}
 \begin{align}

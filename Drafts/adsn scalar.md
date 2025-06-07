@@ -748,3 +748,39 @@ $$z(1-z)F''(z) + [c - (a+b+1)z]F'(z) - abF(z) = 0$$
 where ${}_2F_1(a,b;c;z)$ is the hypergeometric function that solves this equation.
 
 The transformation was critical because hypergeometric equations have well-studied solutions that allow us to find the complete set of solutions to the Klein-Gordon equation in AdS space.
+
+$$\tag{.}
+\begin{align}
+ \partial _{\rho}^{2}R+\frac{n-2}{\sin \rho \cos \rho}\partial _{\rho}R+\left( \omega ^{2} -\frac{\ell(\ell+n-3)}{\sin ^{2}\rho} -\frac{m^{2}}{\cos ^{2}\rho}\right)R=0
+\end{align}
+$$
+
+let $\displaystyle{z=\cos ^{2}\rho}$
+
+$$\tag{.}
+\begin{align}
+4z(1-z)\partial _{z}^{2}R+2(3-n-z)\partial _{z}R+\left(\omega ^{2}-\frac{\ell(\ell+n-3)}{1-z}-\frac{m^{2}}{z}\right)R=0
+\end{align}
+$$
+
+when $\displaystyle{z\to0}$
+
+$$\tag{.}
+\begin{align}
+4\Delta(\Delta-1)+2(3-n)\Delta-m^{2}=0 \\
+4\Delta ^{2}-2(1-n)\Delta-m^{2}=0 \\
+\implies \Delta= \frac{1\pm \sqrt{ 1+m^{2} }}{2}
+\end{align}
+$$
+
+when $\displaystyle{z\to1}$
+
+$$\tag{.}
+\begin{align}
+4z\partial _{z}^{2}R-2(2-n)\partial _{z}R-\frac{\ell(\ell+n-3)}{z}R=0 \\
+4\Delta(\Delta-1)-2(2-n)\Delta-\ell(\ell+n-3)=0 \\
+4\Delta ^{2}-2(6-n)\Delta-\ell(\ell+n-3) & =0 \\
+\Delta & = \frac{2(6-n)\pm 2\sqrt{ n^{2}-12n+36+4\ell ^{2}+4\ell n-12\ell }}{8} \\
+ & =\frac{\ell}{2}
+\end{align}
+$$

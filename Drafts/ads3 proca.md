@@ -147,8 +147,15 @@ $$
 
 $$\tag{.}
 \begin{align}
-(4\alpha(\alpha-1)+4\alpha -m^{2})z^{\alpha-1} & =-2i \omega z^{\beta+1/2} \\
-(4\beta(\beta-1)+4\beta-(m^{2}+1))z^{\beta-1} & =-2i \omega z^{\alpha+1/2}+2i mz^{\gamma-1/2} \\
-(4\gamma(\gamma-1)+8\gamma-m^{2})z^{\gamma-1} & =-2i mz^{\beta-3/2}
+(4\alpha ^{2} -m^{2})z^{\alpha-1} & =-2i \omega z^{\beta+1/2} \\
+(4\beta ^{2}-(m^{2}+1))z^{\beta-1} & =-2i \omega z^{\alpha+1/2}+2i mz^{\gamma-1/2} \\
+(4\gamma ^{2}+4\gamma-m^{2})z^{\gamma-1} & =-2i mz^{\beta-3/2}
+\end{align}
+$$
+$$\tag{.}
+\begin{align}
+\alpha=\frac{|m|-1}{2} \\
+\beta= \frac{|m|-4}{2} \\
+\gamma=\frac{|m|+1}{2}
 \end{align}
 $$
