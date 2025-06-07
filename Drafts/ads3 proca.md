@@ -139,23 +139,32 @@ and by taking $\displaystyle{z\approx 1}$, we get the asymptotic behavior
 
 $$\tag{.}
 \begin{align}
-4z\partial _{z}^{2}R^{t}+4\partial _{z}R^{t} -\frac{m^{2}}{z} R^{t} & =-2i \omega \sqrt{ z }R^{\rho} \\
-4z\partial _{z}^{2}R^{\rho}+4\partial _{z}R^{\rho} -\frac{m^{2}+1}{z} R^{\rho} & =-2i \omega \sqrt{ 1-z }R^{t}+\frac{2im}{\sqrt{ z }}R^{\theta} \\
-4z\partial _{z}^{2}R^{\theta}+8\partial _{z}R^{\theta} -\frac{m^{2}}{z} R^{\theta} & =-\frac{2im}{\sqrt{ z^{3} }}R^{\rho} \\
+R^{t} & \sim (1-z)^{|m|/2} \\
+R^{\rho} & \sim (1-z)^{\sqrt{ 1+m^{2} }/2} \\
+R^{\theta} & \sim (1-z)^{(1+\sqrt{ 1+m^{2} })/2}
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-(4\alpha ^{2} -m^{2})z^{\alpha-1} & =-2i \omega z^{\beta+1/2} \\
-(4\beta ^{2}-(m^{2}+1))z^{\beta-1} & =-2i \omega z^{\alpha+1/2}+2i mz^{\gamma-1/2} \\
-(4\gamma ^{2}+4\gamma-m^{2})z^{\gamma-1} & =-2i mz^{\beta-3/2}
+4z\partial _{z}^{2}R^{t}+4\partial _{z}R^{t}+\left( -\frac{m^{2}}{z} \right)R^{t} & =-2i \omega \sqrt{ z }R^{\rho} \\
+4z\partial _{z}^{2}R^{\rho}+4\partial _{z}R^{\rho}+\left( -\frac{m^{2}+1}{z}\right)R^{\rho} & =-2i \omega \sqrt{ 1-z }R^{t}+\frac{2im}{\sqrt{ z }}R^{\theta} \\
+4z\partial _{z}^{2}R^{\theta}+8\partial _{z}R^{\theta}+\left( -\frac{m^{2}}{z} \right)R^{\theta} & =-\frac{2im}{\sqrt{ z^{3} }}R^{\rho} \\
 \end{align}
 $$
+
 $$\tag{.}
 \begin{align}
-\alpha=\frac{|m|-1}{2} \\
-\beta= \frac{|m|-4}{2} \\
-\gamma=\frac{|m|+1}{2}
+(4\alpha ^{2}-m^{2}) \\
+(4\beta ^{2}-m^{2}-1) \\
+(4\gamma ^{2}+4\gamma-m^{2})
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\alpha & =\frac{|m|}{2} \\
+\beta & =\frac{|m|-3}{2} \\
+
 \end{align}
 $$
