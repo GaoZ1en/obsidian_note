@@ -40,7 +40,7 @@ $$
 
 let $\displaystyle{z=\cos ^{2}\rho}$
 
-
+i have no idea how to solve this here.
 
 
 

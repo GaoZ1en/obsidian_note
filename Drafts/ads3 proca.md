@@ -98,6 +98,61 @@ $$
 
 $$\tag{.}
 \begin{align}
-R_{\theta} & =(\cos ^{\rho})^{\mu}{}_{2}F_{1}\left( \frac{\mu-\sqrt{ 2\mu ^{2}-\omega ^{2} }}{2},\frac{\mu+\sqrt{ 2\mu ^{2}-\omega ^{2} }}{2};\mu+1;\cos ^{2}\rho \right)
+\omega ^{2}R^{t}+\partial _{\rho}^{2}R^{t}+\left( 2\tan \rho+\frac{1}{\sin \rho \cos \rho} \right)\partial _{\rho}R^{t}+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}-\frac{m^{2}}{\sin ^{2}\rho} \right)R^{t} & =-2i \omega\tan \rho R^{t} \\
+\omega ^{2}R^{\rho}+\partial _{\rho}^{2}R^{\rho}+\left( 2\tan \rho +\frac{1}{\sin \rho \cos \rho} \right)\partial _{\rho}R^{t}+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}-\frac{m^{2}}{\sin ^{2}\rho}-\frac{1}{\sin ^{2}\rho \cos ^{2}\rho} \right)R^{\rho} & =-2i \omega\tan \rho R^{t}+\frac{2im}{\sin \rho \cos \rho}R^{\theta} \\
+\omega ^{2}R^{\theta}+\partial _{\rho}^{2}R^{\theta}+\frac{3}{\sin \rho \cos \rho} \partial _{\rho}R^{\theta}+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}-\frac{m^{2}}{\sin ^{2}\rho} \right)R^{\theta} & =-\frac{2im}{\sin ^{3}\rho \cos \rho}R^{\rho} \\
+-i \omega R^{t}+\partial _{\rho}R^{\rho}+imR^{\theta}+\left( 2\tan \rho +\frac{1}{\sin \rho \cos \rho} \right)R^{\rho} & =0
 \end{align}
 $$
+
+we first consider the case $\displaystyle{m=0}$. $\displaystyle{R^{\theta}}$ decouples from the other two equations.
+
+$$\tag{.}
+\begin{align}
+\partial _{\rho}^{2}R^{\theta}+\frac{3}{\sin \rho \cos \rho} \partial _{\rho}R^{\theta}+\left( \omega ^{2}+\frac{4-\mu ^{2}}{\cos ^{2}\rho} \right)R^{\theta} & =0
+\end{align}
+$$
+
+let $\displaystyle{z=\cos ^{2}\rho}$, 
+
+$$\tag{.}
+\begin{align}
+\sin \rho \cos \rho & =\sqrt{ z(1-z) } \\
+\partial _{\rho} & =\frac{\mathrm{d}z}{\mathrm{d}\rho} \frac{\mathrm{d}}{\mathrm{d}z} \\
+ & =-2\sqrt{ z(1-z) } \partial _{z} \\
+\partial _{\rho}^{2} & =4\sqrt{ z(1-z) }\partial _{z}(\sqrt{ z(1-z)}\partial _{z} ) \\
+ & =4z(1-z)\partial _{z}^{2}+2(1-2z)\partial _{z}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+z(1-z)\Theta''-\left( 1+\frac{z}{2} \right)\Theta'+\frac{1}{4}\left( \omega ^{2}+\frac{4-\mu ^{2}}{z} \right)\Theta & =0
+\end{align}
+$$
+
+let $\displaystyle{\Theta=z^{1+ \mu/2}F}$
+
+$$\tag{.}
+\begin{align}
+\Theta' & =\left( 1+\frac{\mu}{2} \right)z^{-1}F+F' \\
+\Theta'' & =\left( 1+\frac{\mu}{2} \right) \frac{\mu}{2}z^{-2}F+(2+\mu) z^{-1}F'+F''
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+z(1-z)\left( F''+(2+\mu)z^{-1}F'+\left( 1+\frac{\mu}{2} \right) \frac{\mu}{2}z^{-2}F \right)-\left( 1+\frac{z}{2} \right)\left( \left( 1+\frac{\mu}{2} \right)z^{-1}F+F' \right)+\frac{1}{4}\left( \omega ^{2}+\frac{4-\mu ^{2}}{z} \right)F=0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+F'' & :z(1-z) \\
+F' & :(2+\mu)(1-z)-\left( 1+\frac{z}{2} \right) \\
+ & =\mu+1-z\left( \mu+\frac{1}{2}+1 \right) \\
+F & =\frac{(\mu ^{2}+2\mu)(1-z)}{z}-\frac{4+2z}{4z}+\frac{4-\mu ^{2}}{4z}+\frac{1}{4}\omega ^{2} \\
+ & =
+\end{align}
+$$
+
