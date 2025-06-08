@@ -68,10 +68,3 @@ $$\tag{.}
 F_{\theta}=-\frac{\left( \frac{m\omega}{\mu}z-|m|z+(\mu+2)(1-z)+2z(1-z)\partial _{z} \right)F_{t}}{\frac{\omega ^{2}}{\mu}z-\mu}
 \end{align}
 $$
-
-$$\tag{.}
-\begin{align}
-\left( \frac{\omega ^{2}}{\mu}z-\mu \right)\left( \frac{m^{2}}{\mu}z+(1-z)\mu \right)F_{t}-\left( \frac{m\omega}{\mu}z-(\mu+2)(1-z)+\frac{2\omega ^{2}z(1-z)}{\omega ^{2}z-\mu ^{2}}+|m|z-2z(1-z)\partial _{z} \right)\left( \frac{m\omega}{\mu}z-|m|z+(\mu+2)(1-z)+2z(1-z)\partial _{z} \right)F_{t} & =0 \\
-\end{align}
-$$
-
