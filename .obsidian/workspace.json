@@ -69,13 +69,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Drafts/ads3 proca.md",
+                "file": "Articles/Proca in AdS3/scalar in adsn.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "ads3 proca"
+              "title": "scalar in adsn"
             }
           },
           {
@@ -109,7 +109,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -264,7 +264,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5
+    "width": 305.5,
+    "collapsed": true
   },
   "right": {
     "id": "be754014b7083e79",
@@ -328,10 +329,10 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "24a431bd296f094d",
+  "active": "0b0163c7cf93c4f4",
   "lastOpenFiles": [
-    "arxiv manager.md",
     "Drafts/ads3 proca.md",
+    "arxiv manager.md",
     "Reading/p-form gauge field and edge mode.md",
     "Articles/Proca in AdS3/scalar in adsn.md",
     "Articles/Proca in AdS3/proca in ads3.md",

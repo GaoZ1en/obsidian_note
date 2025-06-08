@@ -104,7 +104,7 @@ we have found a complete set of solutions $\displaystyle{\left\{\phi _{k\ell \ma
 
 $$\tag{2.1}
 \begin{align}
-\phi(t,\rho,\Omega _{n-2}) & =\sum _{k=0}^{\infty}\sum _{\ell=0}^{\infty}\sum _{\mathbf{m}} a_{k\ell \mathbf{m}}\phi _{k\ell \mathbf{m}}(t,\rho,\Omega _{n-2})
+\phi(t,\rho,\Omega _{n-2}) & =\sum _{k=0}^{\infty}\sum _{\ell=0}^{\infty}\sum _{\mathbf{m}} (a_{k\ell \mathbf{m}}\phi _{k\ell \mathbf{m}}(t,\rho,\Omega _{n-2})+a^{\dagger}_{k\ell \mathbf{m}}\phi ^{*}_{k\ell \mathbf{m}}(t,\rho,\Omega _{n-2}))
 \end{align}
 $$
 
