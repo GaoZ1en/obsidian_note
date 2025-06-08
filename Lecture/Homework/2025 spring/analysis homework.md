@@ -480,4 +480,274 @@ $$= \sum_{k=1}^{n-1}F_k(x)h_k(x) + S(x)(g_1(x) - g_n(x))$$
 7. 运用比式判别法或根式判别法讨论下列级数的敛散性
 	1. $\displaystyle{\sum \frac{(n+1)!}{10^{n}}}$
 	2. $\displaystyle{\sum \frac{n!}{n^{n}}}$
-8. 设$\displaystyle{\sum u_{n}}$和$\displaystyle{\sum v_{n}}$为正项级数，且存在正数$\displaystyle{N_{0}}$，对一切$\displaystyle{n>N_{0}}$，有$\displaystyle{\frac{u_{n+1}}{u_{n}}\leqslant \frac{v_{n+1}}{v_{n}}}$。证明若级数$\displaystyle{\sum v_{n}}$收敛，则级数$\displaystyle{\sum u_{n}}$ye shou li
+8. 设$\displaystyle{\sum u_{n}}$和$\displaystyle{\sum v_{n}}$为正项级数，且存在正数$\displaystyle{N_{0}}$，对一切$\displaystyle{n>N_{0}}$，有$\displaystyle{\frac{u_{n+1}}{u_{n}}\leqslant \frac{v_{n+1}}{v_{n}}}$。证明若级数$\displaystyle{\sum v_{n}}$收敛，则级数$\displaystyle{\sum u_{n}}$也收敛；反之若$\displaystyle{\sum u_{n}}$发散，则$\displaystyle{\sum v_{n}}$也发散
+
+## 1. 讨论下列无穷积分为绝对收敛还是条件收敛
+
+### a. $\displaystyle{\int _{1}^{+\infty} \frac{\sin \sqrt{ x }}{x}\mathrm{d}x}$
+
+对于绝对收敛性，考察：
+$$\int _{1}^{+\infty} \left|\frac{\sin \sqrt{x}}{x}\right|\mathrm{d}x = \int _{1}^{+\infty} \frac{|\sin \sqrt{x}|}{x}\mathrm{d}x$$
+
+令$u = \sqrt{x}$，则$x = u^2$，$dx = 2u\,du$，积分区间变为$u \in [1, +\infty)$：
+$$\int _{1}^{+\infty} \frac{|\sin \sqrt{x}|}{x}\mathrm{d}x = \int_{1}^{+\infty} \frac{|\sin u|}{u^2} \cdot 2u\,du = 2\int_{1}^{+\infty} \frac{|\sin u|}{u}\mathrm{d}u$$
+
+考虑将积分区间划分为$[n\pi, (n+1)\pi]$的子区间，在每个子区间上$|\sin u|$完成一个完整的周期，且$\frac{1}{u}$在每个区间上递减，可知：
+$$\int_{n\pi}^{(n+1)\pi} \frac{|\sin u|}{u}\mathrm{d}u \sim \frac{2}{n\pi}$$
+
+由于$\sum_{n=1}^{\infty} \frac{1}{n}$发散，所以$\int_{1}^{+\infty} \frac{|\sin u|}{u}\mathrm{d}u$发散，因此原积分不是绝对收敛的。
+
+对于条件收敛性，使用Dirichlet判别法：$\frac{1}{u}$在$[1,+\infty)$上单调递减且趋于0，而$\int_{1}^{b} \sin u\,du = 1-\cos b$是有界的，所以积分$\int_{1}^{+\infty} \frac{\sin u}{u}\mathrm{d}u$是条件收敛的。
+
+因此，原积分是条件收敛的。
+
+## 2. 讨论下列瑕积分的敛散性
+
+### a. $\displaystyle{\int ^{2}_{0} \frac{\mathrm{d}x}{(x-1)^{2}}}$
+
+该积分在$x=1$处有瑕点，将其分解为：
+$$\int^{2}_{0} \frac{\mathrm{d}x}{(x-1)^{2}} = \lim_{\varepsilon \to 0^+} \left[\int^{1-\varepsilon}_{0} \frac{\mathrm{d}x}{(x-1)^{2}} + \int^{2}_{1+\varepsilon} \frac{\mathrm{d}x}{(x-1)^{2}}\right]$$
+
+计算：
+$$\int \frac{\mathrm{d}x}{(x-1)^{2}} = -\frac{1}{x-1}$$
+
+对于第一部分：
+$$\int^{1-\varepsilon}_{0} \frac{\mathrm{d}x}{(x-1)^{2}} = \left[-\frac{1}{x-1}\right]^{1-\varepsilon}_{0} = -\frac{1}{-\varepsilon} - \left(-\frac{1}{-1}\right) = \frac{1}{\varepsilon} - 1 \to \infty$$
+
+当$\varepsilon \to 0^+$时，积分值趋于无穷大，因此原积分发散。
+
+### b. $\displaystyle{\int ^{1}_{0} \frac{\mathrm{d}x}{\sqrt{ x }\ln x}}$
+
+该积分在$x=0$和$x=1$处有瑕点。将其分解：
+$$\int^{1}_{0} \frac{\mathrm{d}x}{\sqrt{x}\ln x} = \int^{1/2}_{0} \frac{\mathrm{d}x}{\sqrt{x}\ln x} + \int^{1}_{1/2} \frac{\mathrm{d}x}{\sqrt{x}\ln x}$$
+
+对于第一部分，令$u = \ln x$，则$x = e^u$，$dx = e^u du$。当$x \to 0^+$时，$u \to -\infty$；当$x = 1/2$时，$u = \ln(1/2) = -\ln 2$。
+$$\int^{1/2}_{0} \frac{\mathrm{d}x}{\sqrt{x}\ln x} = \int^{-\ln 2}_{-\infty} \frac{e^u du}{e^{u/2} \cdot u} = \int^{-\ln 2}_{-\infty} \frac{e^{u/2}}{u}du$$
+
+当$u \to -\infty$时，$e^{u/2} \to 0$迅速，而$\frac{1}{|u|}$减小缓慢，所以该积分收敛。
+
+对于第二部分，当$x \to 1^-$时，$\ln x \to 0^-$，此时被积函数的行为近似于$\frac{1}{\sqrt{1} \cdot (x-1)} = \frac{1}{x-1}$。
+$$\int^{1}_{1/2} \frac{\mathrm{d}x}{\sqrt{x}\ln x} \sim \int^{1}_{1/2} \frac{\mathrm{d}x}{x-1}$$
+
+而$\int^{1}_{1/2} \frac{\mathrm{d}x}{x-1}$发散，因此原积分发散。
+
+### c. $\displaystyle{\int _{0}^{\pi/2} \frac{1-\cos x}{x^{m}}\mathrm{d}x}$
+
+该积分在$x=0$处有潜在的瑕点。使用$\cos x$的泰勒展开：
+$$\cos x = 1 - \frac{x^2}{2} + \frac{x^4}{24} - \ldots$$
+
+所以：
+$$1-\cos x = \frac{x^2}{2} - \frac{x^4}{24} + \ldots \approx \frac{x^2}{2}$$（当$x$接近0时）
+
+因此：
+$$\frac{1-\cos x}{x^m} \approx \frac{x^2/2}{x^m} = \frac{1}{2}x^{2-m}$$（当$x$接近0时）
+
+积分$\int_{0}^{\pi/2} x^{2-m}dx$在$2-m > -1$，即$m < 3$时收敛。
+
+所以，原积分在$m < 3$时收敛，在$m \geq 3$时发散。
+
+### d. $\displaystyle{\int _{0}^{1} \frac{1}{x^{\alpha}} \sin \frac{1}{x}\mathrm{d}x}$
+
+该积分在$x=0$处有潜在的瑕点。令$u = \frac{1}{x}$，则$x = \frac{1}{u}$，$dx = -\frac{1}{u^2}du$。当$x \to 0^+$时，$u \to +\infty$；当$x = 1$时，$u = 1$。
+
+$$\int_{0}^{1} \frac{1}{x^{\alpha}} \sin \frac{1}{x}dx = \int_{+\infty}^{1} \frac{1}{(1/u)^{\alpha}} \sin u \cdot (-\frac{1}{u^2})du = -\int_{1}^{+\infty} u^{\alpha-2} \sin u\,du$$
+
+对于该积分收敛，需要$\alpha-2 < 0$，即$\alpha < 2$。
+
+因此，原积分在$\alpha < 2$时收敛，在$\alpha \geq 2$时发散。
+
+### e. $\displaystyle{\int ^{+\infty}_{0}e^{-x}\ln x\mathrm{d}x}$
+
+该积分有两个需要关注的点：$x=0$（因为$\ln 0$无定义）和$x \to +\infty$。
+
+对于$x \to 0^+$，$e^{-x} \to 1$，而$\ln x \to -\infty$。将积分分解：
+$$\int_{0}^{+\infty} e^{-x}\ln x\,dx = \int_{0}^{1} e^{-x}\ln x\,dx + \int_{1}^{+\infty} e^{-x}\ln x\,dx$$
+
+对于第一部分，令$u = -x$，则：
+$$\int_{0}^{1} e^{-x}\ln x\,dx = \int_{0}^{1} e^{-x}\ln x\,dx$$
+
+使用分部积分法，令$u = \ln x$，$dv = e^{-x}dx$，则$du = \frac{1}{x}dx$，$v = -e^{-x}$：
+$$\int_{0}^{1} e^{-x}\ln x\,dx = [-e^{-x}\ln x]_{0}^{1} - \int_{0}^{1} (-e^{-x})\frac{1}{x}dx$$
+
+当$x \to 0^+$时，$e^{-x}\ln x \to 0$，所以第一部分收敛。
+
+对于第二部分，当$x \to +\infty$时，$e^{-x}$的衰减速度比$\ln x$的增长速度快得多，所以积分收敛。
+
+因此，原积分收敛。
+
+## 3. 证明
+
+### a. $\displaystyle{\int _{0}^{\pi}\theta \ln \sin \theta \mathrm{d}\theta=-\frac{\pi ^{2}}{2}\ln 2}$
+
+设$I = \int_{0}^{\pi}\theta \ln \sin \theta \,d\theta$。
+
+利用换元$\theta = \pi - u$，得：
+$$I = \int_{0}^{\pi}\theta \ln \sin \theta \,d\theta = \int_{\pi}^{0}(\pi-u)\ln\sin(\pi-u)(-du) = \int_{0}^{\pi}(\pi-u)\ln\sin u \,du$$
+
+由于$\sin(\pi-u) = \sin u$，所以：
+$$I = \int_{0}^{\pi}(\pi-u)\ln\sin u \,du = \pi\int_{0}^{\pi}\ln\sin u \,du - \int_{0}^{\pi}u\ln\sin u \,du = \pi\int_{0}^{\pi}\ln\sin u \,du - I$$
+
+这意味着：
+$$2I = \pi\int_{0}^{\pi}\ln\sin u \,du$$
+
+而$\int_{0}^{\pi}\ln\sin u \,du = -\pi\ln 2$（这是一个标准结果，可通过复变函数方法证明）。
+
+因此：
+$$2I = \pi \cdot (-\pi\ln 2) = -\pi^2\ln 2$$
+
+所以$I = -\frac{\pi^2}{2}\ln 2$，证毕。
+
+### b. $\displaystyle{\int _{0}^{\pi} \frac{\theta \sin \theta}{1-\cos \theta} \mathrm{d}\theta=2\pi \ln2}$
+
+首先注意到：
+$$\frac{\sin \theta}{1-\cos \theta} = \frac{\sin \theta}{1-\cos \theta} \cdot \frac{1+\cos \theta}{1+\cos \theta} = \frac{\sin \theta(1+\cos \theta)}{1-\cos^2 \theta} = \frac{1+\cos \theta}{\sin \theta} = \cot\frac{\theta}{2}$$
+
+所以原积分变为：
+$$I = \int_{0}^{\pi} \theta \cot\frac{\theta}{2} \,d\theta$$
+
+令$u = \frac{\theta}{2}$，则$\theta = 2u$，$d\theta = 2du$，积分区间变为$[0, \frac{\pi}{2}]$：
+$$I = \int_{0}^{\pi/2} 2u \cdot 2\cot u \,du = 4\int_{0}^{\pi/2} u\cot u \,du$$
+
+使用分部积分，令$f(u) = u$，$g'(u) = \cot u$，则$f'(u) = 1$，$g(u) = \ln(\sin u)$：
+$$I = 4\left[u\ln(\sin u)\right]_{0}^{\pi/2} - 4\int_{0}^{\pi/2} \ln(\sin u) \,du$$
+
+当$u \to 0^+$时，$u\ln(\sin u) \to 0$（可用洛必达法则验证）。所以：
+$$I = 4\left[\frac{\pi}{2}\ln(\sin \frac{\pi}{2}) - 0\right] - 4\int_{0}^{\pi/2} \ln(\sin u) \,du$$
+$$= 4 \cdot \frac{\pi}{2} \cdot 0 - 4\int_{0}^{\pi/2} \ln(\sin u) \,du = -4\int_{0}^{\pi/2} \ln(\sin u) \,du$$
+
+已知$\int_{0}^{\pi/2} \ln(\sin u) \,du = -\frac{\pi}{2}\ln 2$，所以：
+$$I = -4 \cdot \left(-\frac{\pi}{2}\ln 2\right) = 2\pi\ln 2$$
+
+证毕。
+
+## 4. 讨论反常积分$\displaystyle{\int _{0}^{+\infty}\frac{\sin bx}{x^{\lambda}}\mathrm{d}x,b\neq0}$,$\displaystyle{\lambda}$取何值时绝对收敛或条件收敛
+
+这个积分在$x=0$和$x \to \infty$两处可能有瑕点。
+
+**在$x=0$处分析：**
+当$x \to 0^+$时，$\sin bx \approx bx$，所以被积函数近似于$\frac{bx}{x^{\lambda}} = bx^{1-\lambda}$。
+积分$\int_{0}^{1} x^{1-\lambda} \,dx$在$1-\lambda > -1$，即$\lambda < 2$时收敛。
+
+**在$x \to \infty$处分析：**
+使用Dirichlet判别法，由于$\frac{1}{x^{\lambda}}$在$\lambda > 0$时单调递减且趋于0，而$\int_{1}^{R} \sin bx \,dx$有界，所以积分在$\lambda > 0$时条件收敛。
+
+对于绝对收敛性，考察$\int_{0}^{+\infty}\frac{|\sin bx|}{x^{\lambda}}\mathrm{d}x$。
+将积分区间划分为$[n\pi/|b|, (n+1)\pi/|b|]$的子区间，在每个子区间上$|\sin bx|$完成一个周期。对于大的$x$值，在每个区间上有：
+$$\int_{n\pi/|b|}^{(n+1)\pi/|b|} \frac{|\sin bx|}{x^{\lambda}} \,dx \approx \frac{1}{(n\pi/|b|)^{\lambda}} \cdot C$$
+
+其中$C$是常数。由于$\sum_{n=1}^{\infty} \frac{1}{n^{\lambda}}$在$\lambda > 1$时收敛，所以积分在$\lambda > 1$时绝对收敛。
+
+综合以上分析：
+- 当$\lambda \geq 2$时，积分在$x=0$处发散。
+- 当$1 < \lambda < 2$时，积分绝对收敛。
+- 当$0 < \lambda \leq 1$时，积分条件收敛。
+- 当$\lambda \leq 0$时，积分在$x \to \infty$处发散。
+
+## 5. 运用Cauchy准则判别下列级数的敛散性
+
+### a. $\displaystyle{\sum \frac{\sin 2^{n}}{2^{n}}}$
+
+应用Cauchy准则：对于任意$\varepsilon > 0$，存在$N$使得对所有$m > n \geq N$，有：
+$$\left|\sum_{k=n+1}^{m} \frac{\sin 2^{k}}{2^{k}}\right| < \varepsilon$$
+
+由于$|\sin 2^k| \leq 1$，所以：
+$$\left|\sum_{k=n+1}^{m} \frac{\sin 2^{k}}{2^{k}}\right| \leq \sum_{k=n+1}^{m} \frac{|\sin 2^{k}|}{2^{k}} \leq \sum_{k=n+1}^{m} \frac{1}{2^{k}} = \frac{1}{2^n} - \frac{1}{2^m} < \frac{1}{2^n}$$
+
+对于任意$\varepsilon > 0$，取$N$使得$\frac{1}{2^N} < \varepsilon$，则对所有$m > n \geq N$，上述不等式成立。所以根据Cauchy准则，级数收敛。
+
+### b. $\displaystyle{\sum \frac{(-1)^{n}}{n}}$
+
+这是交错调和级数。对于$S_n = \sum_{k=1}^{n} \frac{(-1)^{k}}{k}$，我们需要验证$S_n$是否为Cauchy序列。
+
+对于$m > n$，有：
+$$|S_m - S_n| = \left|\sum_{k=n+1}^{m} \frac{(-1)^{k}}{k}\right|$$
+
+由于$\frac{1}{k}$单调递减，根据交错级数估计，有：
+$$\left|\sum_{k=n+1}^{m} \frac{(-1)^{k}}{k}\right| \leq \frac{1}{n+1}$$
+
+对于任意$\varepsilon > 0$，取$N$使得$\frac{1}{N+1} < \varepsilon$，则对所有$m > n \geq N$，上述不等式成立。所以根据Cauchy准则，级数收敛。
+
+## 6. 运用比较原则判别下列级数的敛散性
+
+### a. $\displaystyle{\sum 2^{n} \sin \frac{\pi}{3^{n}}}$
+
+当$n$很大时，$\frac{\pi}{3^n} \approx 0$，所以$\sin \frac{\pi}{3^n} \approx \frac{\pi}{3^n}$。因此级数近似于：
+$$\sum 2^{n} \cdot \frac{\pi}{3^{n}} = \pi \sum \left(\frac{2}{3}\right)^{n}$$
+
+这是公比为$\frac{2}{3} < 1$的几何级数，收敛。因此原级数收敛。
+
+### b. $\displaystyle{\sum ^{+\infty}_{n=2} \frac{1}{(\ln n)^{n}}}$
+
+比较$a_n = \frac{1}{(\ln n)^n}$和$b_n = \frac{1}{n^2}$。
+
+当$n$足够大时，$(\ln n)^n > n^2$，所以$a_n < b_n$。由于$\sum b_n$收敛，根据比较判别法，$\sum a_n$也收敛。
+
+### c. $\displaystyle{\sum(a^{1/n}+a^{-1/n}-2)}$，其中$a > 0$，$a \neq 1$
+
+使用泰勒展开：
+$$a^{1/n} = e^{\frac{\ln a}{n}} \approx 1 + \frac{\ln a}{n} + \frac{(\ln a)^2}{2n^2} + \ldots$$
+$$a^{-1/n} = e^{-\frac{\ln a}{n}} \approx 1 - \frac{\ln a}{n} + \frac{(\ln a)^2}{2n^2} + \ldots$$
+
+相加得：
+$$a^{1/n}+a^{-1/n}-2 \approx \frac{(\ln a)^2}{n^2} + O\left(\frac{1}{n^3}\right) \sim \frac{(\ln a)^2}{n^2}$$
+
+由于$\sum \frac{1}{n^2}$收敛，所以原级数收敛。
+
+### d. $\displaystyle{\sum \frac{1}{n^{2n\sin 1/n}}}$
+
+当$n$很大时，$\sin \frac{1}{n} \approx \frac{1}{n}$，所以$n^{2n\sin 1/n} \approx n^{2n \cdot \frac{1}{n}} = n^2$。
+
+因此级数近似于$\sum \frac{1}{n^2}$，这是收敛的。所以原级数收敛。
+
+## 7. 运用比式判别法或根式判别法讨论下列级数的敛散性
+
+### a. $\displaystyle{\sum \frac{(n+1)!}{10^{n}}}$
+
+使用比式判别法：
+$$\lim_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = \lim_{n \to \infty} \frac{(n+2)!/10^{n+1}}{(n+1)!/10^{n}} = \lim_{n \to \infty} \frac{n+2}{10} = \infty > 1$$
+
+所以级数发散。
+
+### b. $\displaystyle{\sum \frac{n!}{n^{n}}}$
+
+使用根式判别法：
+$$\lim_{n \to \infty} \sqrt[n]{\frac{n!}{n^{n}}} = \lim_{n \to \infty} \frac{\sqrt[n]{n!}}{n}$$
+
+根据Stirling公式，$n! \approx \sqrt{2\pi n}\left(\frac{n}{e}\right)^n$，所以$\sqrt[n]{n!} \approx \frac{n}{e}$。
+
+因此：
+$$\lim_{n \to \infty} \frac{\sqrt[n]{n!}}{n} \approx \lim_{n \to \infty} \frac{n/e}{n} = \frac{1}{e} < 1$$
+
+所以级数收敛。
+
+## 8. 设$\displaystyle{\sum u_{n}}$和$\displaystyle{\sum v_{n}}$为正项级数，且存在正数$\displaystyle{N_{0}}$，对一切$\displaystyle{n>N_{0}}$，有$\displaystyle{\frac{u_{n+1}}{u_{n}}\leqslant \frac{v_{n+1}}{v_{n}}}$。证明若级数$\displaystyle{\sum v_{n}}$收敛，则级数$\displaystyle{\sum u_{n}}$也收敛；反之若$\displaystyle{\sum u_{n}}$发散，则$\displaystyle{\sum v_{n}}$也发散
+
+**证明：**
+从不等式$\frac{u_{n+1}}{u_{n}} \leq \frac{v_{n+1}}{v_{n}}$开始，对$n > N_0$迭代这个不等式：
+
+$$\frac{u_{N_0+1}}{u_{N_0}} \leq \frac{v_{N_0+1}}{v_{N_0}}$$
+$$\frac{u_{N_0+2}}{u_{N_0+1}} \leq \frac{v_{N_0+2}}{v_{N_0+1}}$$
+$$\vdots$$
+$$\frac{u_{N_0+k}}{u_{N_0+k-1}} \leq \frac{v_{N_0+k}}{v_{N_0+k-1}}$$
+
+将这些不等式相乘，得到：
+$$\frac{u_{N_0+k}}{u_{N_0}} \leq \frac{v_{N_0+k}}{v_{N_0}}$$
+
+所以：
+$$u_{N_0+k} \leq u_{N_0} \cdot \frac{v_{N_0+k}}{v_{N_0}}$$
+
+如果$\sum v_n$收敛，那么根据比式判别法，$\lim_{n \to \infty} \frac{v_{n+1}}{v_n} < 1$。所以存在$0 < r < 1$和$N_1 \geq N_0$，使得对所有$n > N_1$，有$\frac{v_{n+1}}{v_n} \leq r$。
+
+因此，对于$k \geq 1$：
+$$\frac{v_{N_1+k}}{v_{N_1}} \leq r^k$$
+
+这意味着：
+$$u_{N_1+k} \leq u_{N_1} \cdot \frac{v_{N_1+k}}{v_{N_1}} \leq u_{N_1} \cdot r^k$$
+
+所以$\sum_{k=1}^{\infty} u_{N_1+k} \leq u_{N_1} \sum_{k=1}^{\infty} r^k = u_{N_1} \cdot \frac{r}{1-r} < \infty$。
+
+因此，级数$\sum u_n$收敛。
+
+反之，如果$\sum u_n$发散，假设$\sum v_n$收敛，根据上面的证明，$\sum u_n$也应收敛，这与假设矛盾。所以$\sum v_n$也必须发散。
+
+证毕。

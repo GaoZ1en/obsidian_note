@@ -576,15 +576,23 @@
         }
       },
       "2025-06-08": {
-        "totalDelta": 3534,
+        "totalDelta": 5556,
         "files": {
           "Drafts/ads3 proca.md": {
             "initial": 345,
             "current": 434
           },
-          "Lecture/Homework/2025 spring/analysis.md": {
+          "Lecture/Homework/2025 spring/analysis homework.md": {
             "initial": 0,
-            "current": 3445
+            "current": 5467
+          },
+          "Articles/Proca in AdS3/proca in ads3.md": {
+            "initial": 1574,
+            "current": 1574
+          },
+          "Drafts/adsn scalar.md": {
+            "initial": 3860,
+            "current": 3860
           }
         }
       }
