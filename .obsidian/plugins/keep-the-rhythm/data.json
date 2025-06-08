@@ -576,7 +576,7 @@
         }
       },
       "2025-06-08": {
-        "totalDelta": 151,
+        "totalDelta": 1027,
         "files": {
           "Drafts/ads3 proca.md": {
             "initial": 345,
@@ -584,7 +584,7 @@
           },
           "Lecture/Homework/2025 spring/analysis.md": {
             "initial": 0,
-            "current": 62
+            "current": 938
           }
         }
       }
