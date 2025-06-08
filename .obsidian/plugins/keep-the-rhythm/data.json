@@ -576,11 +576,11 @@
         }
       },
       "2025-06-08": {
-        "totalDelta": 5567,
+        "totalDelta": 15202,
         "files": {
           "Drafts/ads3 proca.md": {
             "initial": 345,
-            "current": 445
+            "current": 340
           },
           "Lecture/Homework/2025 spring/analysis homework.md": {
             "initial": 0,
@@ -588,11 +588,23 @@
           },
           "Articles/Proca in AdS3/proca in ads3.md": {
             "initial": 1574,
-            "current": 1574
+            "current": 797
           },
           "Drafts/adsn scalar.md": {
             "initial": 3860,
             "current": 3860
+          },
+          "Articles/Proca in AdS3/scalar in adsn.md": {
+            "initial": 967,
+            "current": 967
+          },
+          "Articles/Proca in AdS3/proca in adsn.md": {
+            "initial": 988,
+            "current": 988
+          },
+          "archive downloader.md": {
+            "initial": 83,
+            "current": 10600
           }
         }
       }
