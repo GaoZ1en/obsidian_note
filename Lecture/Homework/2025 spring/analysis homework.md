@@ -754,9 +754,6 @@ $$u_{N_1+k} \leq u_{N_1} \cdot \frac{v_{N_1+k}}{v_{N_1}} \leq u_{N_1} \cdot r^k$
 
 # homework 9
 
-习题14.1 题2（1，3），10（1），11，习题14.2 题1，题3（2），总练习题，题3（1，4），题4（1
-
-
 1. 应用逐项求导或逐项积分的方法求下列幂级数的和函数
 	1. $\displaystyle{\sum ^{\infty}_{n=0}\frac{x^{2n+1}}{2n+1}}$
 	2. $\displaystyle{\sum ^{\infty}_{n=1}n^{2}x^{n}}$
@@ -775,11 +772,5 @@ $$u_{N_1+k} \leq u_{N_1} \cdot \frac{v_{N_1+k}}{v_{N_1}} \leq u_{N_1} \cdot r^k$
 	1. $\displaystyle{\frac{x}{\sqrt{ 1-2x }}}$
 	2. $\displaystyle{\frac{e^{x}}{1-x}}$
 	3. $\displaystyle{\int ^{x}_{0} \frac{\sin t}{t}\mathrm{d}t}$
-	4. $$\tag{.}
-\begin{align}
-
-\end{align}
-$$
-
-
-习题14.2 题2（3，5，7，9），3（3），5
+	4. $\displaystyle{\ln(x+\sqrt{ 1+x^{2} })}$
+8. 试将$\displaystyle{\ln x}$按$\displaystyle{\frac{x-1}{x+1}}$的幂展开成幂级数

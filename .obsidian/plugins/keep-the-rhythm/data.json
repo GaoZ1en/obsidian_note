@@ -576,7 +576,7 @@
         }
       },
       "2025-06-08": {
-        "totalDelta": 4979,
+        "totalDelta": 4965,
         "files": {
           "Drafts/ads3 proca.md": {
             "initial": 345,
@@ -584,7 +584,7 @@
           },
           "Lecture/Homework/2025 spring/analysis homework.md": {
             "initial": 0,
-            "current": 5698
+            "current": 5684
           },
           "Articles/Proca in AdS3/proca in ads3.md": {
             "initial": 1574,
@@ -653,6 +653,27 @@
           "arxiv manager.md": {
             "initial": 83,
             "current": 74
+          }
+        }
+      },
+      "2025-06-09": {
+        "totalDelta": 0,
+        "files": {
+          "Articles/Proca in AdS3/scalar in adsn.md": {
+            "initial": 984,
+            "current": 984
+          },
+          "Reading/p-form gauge field and edge mode.md": {
+            "initial": 55,
+            "current": 55
+          },
+          "arxiv manager.md": {
+            "initial": 74,
+            "current": 74
+          },
+          "Lecture/Homework/2025 spring/analysis homework.md": {
+            "initial": 5684,
+            "current": 5684
           }
         }
       }
