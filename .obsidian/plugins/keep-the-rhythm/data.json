@@ -576,7 +576,7 @@
         }
       },
       "2025-06-08": {
-        "totalDelta": 4693,
+        "totalDelta": 4979,
         "files": {
           "Drafts/ads3 proca.md": {
             "initial": 345,
@@ -584,7 +584,7 @@
           },
           "Lecture/Homework/2025 spring/analysis homework.md": {
             "initial": 0,
-            "current": 5467
+            "current": 5698
           },
           "Articles/Proca in AdS3/proca in ads3.md": {
             "initial": 1574,
@@ -644,7 +644,7 @@
           },
           "Reading/p-form gauge field and edge mode.md": {
             "initial": 0,
-            "current": 0
+            "current": 55
           },
           "TODO.md": {
             "initial": 78,

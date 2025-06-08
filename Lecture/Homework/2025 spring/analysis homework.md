@@ -751,3 +751,35 @@ $$u_{N_1+k} \leq u_{N_1} \cdot \frac{v_{N_1+k}}{v_{N_1}} \leq u_{N_1} \cdot r^k$
 反之，如果$\sum u_n$发散，假设$\sum v_n$收敛，根据上面的证明，$\sum u_n$也应收敛，这与假设矛盾。所以$\sum v_n$也必须发散。
 
 证毕。
+
+# homework 9
+
+习题14.1 题2（1，3），10（1），11，习题14.2 题1，题3（2），总练习题，题3（1，4），题4（1
+
+
+1. 应用逐项求导或逐项积分的方法求下列幂级数的和函数
+	1. $\displaystyle{\sum ^{\infty}_{n=0}\frac{x^{2n+1}}{2n+1}}$
+	2. $\displaystyle{\sum ^{\infty}_{n=1}n^{2}x^{n}}$
+2. 求下列幂级数的收敛半径及其和函数
+	1. $\displaystyle{\sum ^{\infty}_{n=1} \frac{x^{n}}{n(n+1)}}$
+3. 设函数$\displaystyle{f}$在区间$\displaystyle{(a,b)}$上的各阶导数一致有界，即存在正数$\displaystyle{M}$，对一切$\displaystyle{x \in(a,b)}$，有$\displaystyle{|f^{(n)}(x)|\leqslant M,n=1,2,\dots}$。证明对$\displaystyle{(a,b)}$上任一点$\displaystyle{x}$和$\displaystyle{x_{0}}$有$\displaystyle{f(x)=\sum ^{\infty}_{n=0} \frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n},f^{(0)}(x)=f(x),0!=1}$
+4. 求下列函数在$\displaystyle{x=1}$处的泰勒展开式
+	1. $\displaystyle{f(x)=\frac{1}{x}}$
+	2. $\displaystyle{f(x)=\sqrt{ x^{3} }}$
+5. 确定下列幂级数的收敛域，并求其和函数
+	1. $\displaystyle{\sum ^{\infty}_{n=1}n^{2}x^{n-1}}$
+	2. $\displaystyle{\sum ^{\infty}_{n=1}(-1)^{n-1}\frac{x^{2n+1}}{(2n)^{2}-1}}$
+6. 应用幂级数性质求下列级数的和
+	1. $\displaystyle{\sum ^{\infty}_{n=1} \frac{n}{(n+1)!}}$
+7. 利用已知函数的幂级数展开式，求下列函数在$\displaystyle{x=0}$处的幂级数展开式，并确定他收敛于该函数的区间
+	1. $\displaystyle{\frac{x}{\sqrt{ 1-2x }}}$
+	2. $\displaystyle{\frac{e^{x}}{1-x}}$
+	3. $\displaystyle{\int ^{x}_{0} \frac{\sin t}{t}\mathrm{d}t}$
+	4. $$\tag{.}
+\begin{align}
+
+\end{align}
+$$
+
+
+习题14.2 题2（3，5，7，9），3（3），5

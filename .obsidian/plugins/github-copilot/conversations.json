@@ -1,24 +1,11 @@
 {
   "conversations": [
     {
-      "id": "1749383007349",
-      "title": "我想用rust写一个arxiv论文管理器。我可能会需要什么功...",
-      "messages": [
-        {
-          "id": "1749383009436",
-          "content": "我想用rust写一个arxiv论文管理器。我可能会需要什么功能？",
-          "role": "user",
-          "timestamp": 1749383009436
-        },
-        {
-          "id": "msg_vrtx_015bnU9Vm1uhvSCHgiZ1CEFv",
-          "content": "# arXiv 论文管理器功能设计\n\n作为理论物理和数学研究者，arXiv 论文管理是日常工作流程的核心部分。以下是一个 Rust 实现的 arXiv 管理器可能需要的关键功能：\n\n## 核心功能\n\n- **论文元数据获取**：通过 arXiv API 拉取论文信息（标题、作者、摘要、分类、日期）\n- **PDF 下载与存储**：自动下载并组织 PDF 文件，支持自定义命名规则（如 `YYMM.XXXXX_FirstAuthor.pdf`）\n- **引用格式导出**：生成 BibTeX、RIS 等学术引用格式\n- **本地数据库**：使用 SQLite 或 sled 存储元数据，实现离线访问\n\n## 搜索与组织\n\n- **全文搜索**：使用 tantivy（Rust 的全文搜索引擎）索引 PDF 内容\n- **标签系统**：自定义标签、集合和层级分类\n- **关联网络**：分析并可视化论文间引用关系，发现研究社区\n- **推荐系统**：基于阅读历史和标签推荐相关论文\n\n## 学术工作流集成\n\n- **阅读状态追踪**：未读/阅读中/已读/重要等状态标记\n- **注释与笔记**：支持 markdown 格式的笔记，与 Obsidian/Logseq 集成\n- **自动分类**：使用机器学习预测论文类别（如 QFT, GR, String Theory）\n- **警报系统**：新论文通知，支持按作者、关键词、分类设置筛选条件\n\n## 技术实现考量\n\n- **异步处理**：使用 tokio 处理并发下载和 API 请求\n- **PDF 解析**：通过 lopdf 或与 Python 库（如 PyMuPDF）集成解析 PDF\n- **Web 界面**：考虑 Tauri 或 yew 框架实现桌面/Web 界面\n- **API 集成**：\n  ```rust\n  // arXiv API 客户端示例\n  struct ArxivClient {\n      client: reqwest::Client,\n      base_url: String,\n  }\n  \n  impl ArxivClient {\n      async fn fetch_paper(&self, id: &str) -> Result<Paper, Error> {\n          // 实现 arXiv API 查询\n      }\n  }\n  ```\n\n## 高级功能\n\n- **LaTeX 公式提取**：识别并索引论文中的数学公式\n- **引用追踪**：监控论文被引用情况\n- **跨平台同步**：通过 WebDAV 或自定义协议同步多设备库\n- **arXiv 分类统计**：生成阅读偏好的可视化统计\n\n## 开放问题\n\n- **[[PDF 注释标准化]]**：PDF 注释在不同阅读器间的兼容性\n- **[[数学公式搜索算法]]**：如何有效索引和搜索数学表达式\n- **[[引用网络分析效率]]**：大规模引用图的高效构建和查询\n\n希望这些功能建议对你的 Rust arXiv 管理器项目有所帮助！",
-          "role": "assistant",
-          "timestamp": 1749383034363
-        }
-      ],
-      "createdAt": 1749383007349,
-      "updatedAt": 1749383034363,
+      "id": "1749388468756",
+      "title": "New Conversation",
+      "messages": [],
+      "createdAt": 1749388468757,
+      "updatedAt": 1749388468757,
       "model": {
         "label": "Claude 3.7 Sonnet Thinking",
         "value": "claude-3.7-sonnet-thought"
@@ -396,5 +383,5 @@
       }
     }
   ],
-  "activeConversationId": "1749383007349"
+  "activeConversationId": "1749388468756"
 }
