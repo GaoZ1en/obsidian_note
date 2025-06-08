@@ -4460,4 +4460,1921 @@ class PaperViewer(QMainWindow):
         self.statusBar().showMessage("高亮功能尚未实现")
     
     def save_annotations(self):
+```
+
+
+### 10. views/paper_viewer.py - 论文预览器 (续)
+
+```python
+    def save_annotations(self):
+        """保存注释"""
+        # 注意：基本的QPdfView不支持注释功能
+        # 这需要更高级的PDF库或自定义实现
+        self.statusBar().showMessage("保存注释功能尚未实现")
+    
+    def export_pdf(self):
+        """导出PDF"""
+        file_path, _ = QFileDialog.getSaveFileName(
+            self,
+            "导出PDF",
+            f"{self.paper.paper_id}.pdf",
+            "PDF文件 (*.pdf)"
+        )
         
+        if file_path:
+            import shutil
+            try:
+                shutil.copy2(self.paper.local_path, file_path)
+                self.statusBar().showMessage(f"已成功导出PDF到: {file_path}")
+            except Exception as e:
+                self.statusBar().showMessage(f"导出PDF失败: {str(e)}")
+    
+    def closeEvent(self, event):
+        """窗口关闭事件"""
+        # 标记论文为已读
+        if self.paper and not self.paper.read:
+            self.paper.read = True
+            
+            # 通知父窗口更新数据库
+            if self.parent():
+                from models.paper import ArxivPaper
+                if isinstance(self.paper, ArxivPaper):
+                    self.parent().mark_paper_read(self.paper, True)
+        
+        event.accept()
+```
+
+### 11. views/widgets.py - 自定义控件
+
+```python
+from PyQt6.QtWidgets import (QListView, QAbstractItemView, QWidget, QVBoxLayout, 
+                           QHBoxLayout, QLabel, QLineEdit, QPushButton, QScrollArea,
+                           QSizePolicy, QFlowLayout)
+from PyQt6.QtCore import Qt, QAbstractListModel, QModelIndex, pyqtSignal, QSize
+from PyQt6.QtGui import QFont, QColor, QBrush, QPalette
+
+class PaperListModel(QAbstractListModel):
+    """论文列表模型"""
+    
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.papers = []
+    
+    def rowCount(self, parent=QModelIndex()):
+        """返回行数"""
+        return len(self.papers)
+    
+    def data(self, index, role=Qt.ItemDataRole.DisplayRole):
+        """返回索引位置的数据"""
+        if not index.isValid() or index.row() >= len(self.papers):
+            return None
+        
+        paper = self.papers[index.row()]
+        
+        if role == Qt.ItemDataRole.DisplayRole:
+            return f"{paper.title}"
+        
+        elif role == Qt.ItemDataRole.ToolTipRole:
+            authors = ", ".join(paper.authors[:3])
+            if len(paper.authors) > 3:
+                authors += " et al."
+            return f"{paper.title}\n作者: {authors}\n摘要: {paper.abstract[:200]}..."
+        
+        elif role == Qt.ItemDataRole.BackgroundRole:
+            # 根据状态设置背景色
+            if paper.status == "downloaded":
+                return QBrush(QColor(240, 255, 240))  # 浅绿色
+            elif paper.status == "downloading":
+                return QBrush(QColor(240, 240, 255))  # 浅蓝色
+            elif paper.status == "error":
+                return QBrush(QColor(255, 240, 240))  # 浅红色
+        
+        elif role == Qt.ItemDataRole.ForegroundRole:
+            # 已读论文颜色变浅
+            if hasattr(paper, 'read') and paper.read:
+                return QBrush(QColor(100, 100, 100))  # 灰色
+        
+        elif role == Qt.ItemDataRole.FontRole:
+            font = QFont()
+            # 已标星论文加粗
+            if hasattr(paper, 'starred') and paper.starred:
+                font.setBold(True)
+            return font
+        
+        elif role == Qt.ItemDataRole.UserRole:
+            return paper
+        
+        return None
+    
+    def set_papers(self, papers):
+        """设置论文列表"""
+        self.beginResetModel()
+        self.papers = papers
+        self.endResetModel()
+    
+    def get_paper(self, row):
+        """获取指定行的论文"""
+        if 0 <= row < len(self.papers):
+            return self.papers[row]
+        return None
+    
+    def update_paper(self, paper):
+        """更新论文"""
+        for i, p in enumerate(self.papers):
+            if p.paper_id == paper.paper_id:
+                # 更新数据
+                self.papers[i] = paper
+                # 发出数据变化信号
+                self.dataChanged.emit(
+                    self.index(i, 0),
+                    self.index(i, 0),
+                    [Qt.ItemDataRole.DisplayRole, Qt.ItemDataRole.BackgroundRole]
+                )
+                return True
+        return False
+    
+    def add_paper(self, paper):
+        """添加论文"""
+        self.beginInsertRows(QModelIndex(), len(self.papers), len(self.papers))
+        self.papers.append(paper)
+        self.endInsertRows()
+    
+    def remove_paper(self, paper_id):
+        """移除论文"""
+        for i, paper in enumerate(self.papers):
+            if paper.paper_id == paper_id:
+                self.beginRemoveRows(QModelIndex(), i, i)
+                self.papers.pop(i)
+                self.endRemoveRows()
+                return True
+        return False
+    
+    def clear(self):
+        """清空模型"""
+        self.beginResetModel()
+        self.papers = []
+        self.endResetModel()
+
+
+class PaperListView(QListView):
+    """论文列表视图"""
+    
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        
+        # 设置选择模式
+        self.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
+        self.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        
+        # 允许拖放
+        self.setDragEnabled(True)
+        self.setAcceptDrops(True)
+        self.setDropIndicatorShown(True)
+        
+        # 设置外观
+        self.setAlternatingRowColors(True)
+        self.setWordWrap(True)
+        
+        # 设置项目大小
+        self.setIconSize(QSize(48, 48))
+        self.setSpacing(2)
+        
+        # 连接选择变化信号
+        self.selectionModel().selectionChanged.connect(self.on_selection_changed)
+    
+    def on_selection_changed(self, selected, deselected):
+        """选择变化事件"""
+        if selected.indexes():
+            index = selected.indexes()[0]
+            paper = index.data(Qt.ItemDataRole.UserRole)
+            
+            # 通知父窗口显示论文详情
+            if hasattr(self.parent(), 'show_paper_details'):
+                self.parent().show_paper_details(paper)
+            elif hasattr(self.parent(), 'show_library_paper_details'):
+                self.parent().show_library_paper_details(paper)
+
+
+class TagsEditor(QWidget):
+    """标签编辑器控件"""
+    
+    tags_changed = pyqtSignal(list)  # 标签变化信号
+    
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        
+        self.paper = None
+        self.database = None
+        self.init_ui()
+    
+    def init_ui(self):
+        """初始化用户界面"""
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(0, 0, 0, 0)
+        
+        # 标签显示区域
+        self.tags_area = QWidget()
+        self.tags_layout = FlowLayout()
+        self.tags_area.setLayout(self.tags_layout)
+        
+        # 将标签区域放入滚动区域
+        scroll_area = QScrollArea()
+        scroll_area.setWidgetResizable(True)
+        scroll_area.setWidget(self.tags_area)
+        scroll_area.setMaximumHeight(80)
+        layout.addWidget(scroll_area)
+        
+        # 添加标签控件
+        add_layout = QHBoxLayout()
+        
+        self.tag_input = QLineEdit()
+        self.tag_input.setPlaceholderText("输入新标签...")
+        self.tag_input.returnPressed.connect(self.add_tag)
+        add_layout.addWidget(self.tag_input)
+        
+        add_button = QPushButton("添加")
+        add_button.clicked.connect(self.add_tag)
+        add_layout.addWidget(add_button)
+        
+        layout.addLayout(add_layout)
+    
+    def set_paper(self, paper, database):
+        """设置当前论文"""
+        self.paper = paper
+        self.database = database
+        self.update_tags()
+    
+    def update_tags(self):
+        """更新标签显示"""
+        # 清空现有标签
+        for i in reversed(range(self.tags_layout.count())):
+            widget = self.tags_layout.itemAt(i).widget()
+            if widget:
+                widget.deleteLater()
+        
+        if self.paper:
+            # 添加标签按钮
+            for tag in sorted(self.paper.tags):
+                tag_button = QPushButton(tag)
+                tag_button.setFlat(True)
+                tag_button.setStyleSheet(
+                    "QPushButton { background-color: #e0e0e0; border-radius: 3px; padding: 2px 5px; margin: 2px; }"
+                    "QPushButton:hover { background-color: #d0d0d0; }"
+                )
+                
+                # 设置上下文菜单
+                tag_button.setContextMenuPolicy(Qt.ContextMenuPolicy.CustomContextMenu)
+                tag_button.customContextMenuRequested.connect(
+                    lambda pos, t=tag: self.show_tag_context_menu(pos, t))
+                
+                self.tags_layout.addWidget(tag_button)
+    
+    def show_tag_context_menu(self, pos, tag):
+        """显示标签上下文菜单"""
+        from PyQt6.QtWidgets import QMenu
+        
+        menu = QMenu()
+        remove_action = menu.addAction("移除标签")
+        
+        action = menu.exec(self.sender().mapToGlobal(pos))
+        
+        if action == remove_action:
+            self.remove_tag(tag)
+    
+    def add_tag(self):
+        """添加新标签"""
+        tag = self.tag_input.text().strip()
+        
+        if not tag:
+            return
+        
+        if self.paper and self.database:
+            # 添加到数据库
+            self.database.add_tag_to_paper(self.paper.paper_id, tag)
+            
+            # 添加到论文对象
+            self.paper.tags.add(tag)
+            
+            # 更新显示
+            self.update_tags()
+            
+            # 发射标签变化信号
+            self.tags_changed.emit(list(self.paper.tags))
+            
+            # 清空输入框
+            self.tag_input.clear()
+    
+    def remove_tag(self, tag):
+        """移除标签"""
+        if self.paper and self.database:
+            # 从数据库移除
+            self.database.remove_tag_from_paper(self.paper.paper_id, tag)
+            
+            # 从论文对象移除
+            self.paper.tags.discard(tag)
+            
+            # 更新显示
+            self.update_tags()
+            
+            # 发射标签变化信号
+            self.tags_changed.emit(list(self.paper.tags))
+    
+    def clear(self):
+        """清空标签编辑器"""
+        self.paper = None
+        self.tag_input.clear()
+        
+        # 清空标签显示
+        for i in reversed(range(self.tags_layout.count())):
+            widget = self.tags_layout.itemAt(i).widget()
+            if widget:
+                widget.deleteLater()
+
+
+class FlowLayout(QLayout):
+    """流式布局（标签云）"""
+    
+    def __init__(self, parent=None, margin=0, spacing=-1):
+        super().__init__(parent)
+        
+        if parent is not None:
+            self.setContentsMargins(margin, margin, margin, margin)
+        
+        self.setSpacing(spacing)
+        self.item_list = []
+    
+    def __del__(self):
+        item = self.takeAt(0)
+        while item:
+            item = self.takeAt(0)
+    
+    def addItem(self, item):
+        self.item_list.append(item)
+    
+    def count(self):
+        return len(self.item_list)
+    
+    def itemAt(self, index):
+        if 0 <= index < len(self.item_list):
+            return self.item_list[index]
+        return None
+    
+    def takeAt(self, index):
+        if 0 <= index < len(self.item_list):
+            return self.item_list.pop(index)
+        return None
+    
+    def expandingDirections(self):
+        return Qt.Orientations(Qt.Orientation(0))
+    
+    def hasHeightForWidth(self):
+        return True
+    
+    def heightForWidth(self, width):
+        height = self.do_layout(QRect(0, 0, width, 0), True)
+        return height
+    
+    def setGeometry(self, rect):
+        super().setGeometry(rect)
+        self.do_layout(rect, False)
+    
+    def sizeHint(self):
+        return self.minimumSize()
+    
+    def minimumSize(self):
+        size = QSize()
+        
+        for item in self.item_list:
+            size = size.expandedTo(item.minimumSize())
+        
+        margin = self.contentsMargins()
+        size += QSize(margin.left() + margin.right(), margin.top() + margin.bottom())
+        
+        return size
+    
+    def do_layout(self, rect, test_only):
+        x = rect.x()
+        y = rect.y()
+        line_height = 0
+        
+        for item in self.item_list:
+            widget = item.widget()
+            space_x = self.spacing() + widget.style().layoutSpacing(
+                QSizePolicy.ControlType.PushButton,
+                QSizePolicy.ControlType.PushButton,
+                Qt.Orientation.Horizontal
+            )
+            space_y = self.spacing() + widget.style().layoutSpacing(
+                QSizePolicy.ControlType.PushButton,
+                QSizePolicy.ControlType.PushButton,
+                Qt.Orientation.Vertical
+            )
+            
+            next_x = x + item.sizeHint().width() + space_x
+            if next_x - space_x > rect.right() and line_height > 0:
+                x = rect.x()
+                y = y + line_height + space_y
+                next_x = x + item.sizeHint().width() + space_x
+                line_height = 0
+            
+            if not test_only:
+                item.setGeometry(QRect(x, y, item.sizeHint().width(), item.sizeHint().height()))
+            
+            x = next_x
+            line_height = max(line_height, item.sizeHint().height())
+        
+        return y + line_height - rect.y()
+```
+
+### 12. main.py - 程序入口
+
+```python
+import sys
+import os
+import logging
+import argparse
+from pathlib import Path
+from PyQt6.QtWidgets import QApplication
+from PyQt6.QtCore import QSettings
+
+# 设置日志
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("arxiv_manager.log"),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
+
+def parse_arguments():
+    """解析命令行参数"""
+    parser = argparse.ArgumentParser(description="arXiv 论文下载与管理系统")
+    
+    parser.add_argument(
+        "--download-dir", 
+        help="指定下载目录",
+        default=None
+    )
+    
+    parser.add_argument(
+        "--debug", 
+        action="store_true",
+        help="启用调试模式"
+    )
+    
+    return parser.parse_args()
+
+def setup_directories(args):
+    """设置应用程序目录"""
+    # 应用数据目录
+    app_data_dir = Path.home() / ".arxiv_manager"
+    app_data_dir.mkdir(exist_ok=True)
+    
+    # 下载目录
+    if args.download_dir:
+        download_dir = Path(args.download_dir)
+    else:
+        # 从设置中获取
+        settings = QSettings("ArxivDownloader", "Settings")
+        saved_dir = settings.value("download_dir")
+        
+        if saved_dir and os.path.isdir(saved_dir):
+            download_dir = Path(saved_dir)
+        else:
+            # 默认下载目录
+            download_dir = Path.home() / "Documents" / "ArxivPapers"
+    
+    download_dir.mkdir(parents=True, exist_ok=True)
+    
+    return app_data_dir, download_dir
+
+def main():
+    """应用程序主入口"""
+    # 解析命令行参数
+    args = parse_arguments()
+    
+    # 设置日志级别
+    if args.debug:
+        logging.getLogger().setLevel(logging.DEBUG)
+    
+    # 创建应用程序
+    app = QApplication(sys.argv)
+    app.setApplicationName("arXiv Manager")
+    app.setOrganizationName("ArxivDownloader")
+    
+    # 设置目录
+    app_data_dir, download_dir = setup_directories(args)
+    
+    # 导入需要的模块
+    from models.database import PaperDatabase
+    from controllers.download_controller import DownloadController
+    from controllers.scheduler import SchedulerController
+    from views.main_window import MainWindow
+    
+    # 创建数据库
+    database = PaperDatabase(app_data_dir / "papers.db")
+    
+    # 创建下载控制器
+    download_controller = DownloadController(database, download_dir)
+    
+    # 创建定时器控制器
+    scheduler = SchedulerController()
+    
+    # 创建主窗口
+    main_window = MainWindow(download_controller, database, scheduler)
+    
+    # 检查是否应该最小化启动
+    settings = QSettings("ArxivDownloader", "Settings")
+    start_minimized = settings.value("start_minimized", "false").lower() == "true"
+    
+    if start_minimized:
+        # 启动时最小化到系统托盘
+        pass
+    else:
+        # 正常显示窗口
+        main_window.show()
+    
+    # 启动定时器
+    enable_auto_download = settings.value("enable_auto_download", "false").lower() == "true"
+    if enable_auto_download:
+        # 获取自动下载设置
+        auto_time = settings.value("auto_download_time", "03:00")
+        
+        # 添加每日下载任务
+        scheduler.add_task("daily_download", auto_time, True)
+        
+        # 启动定时器
+        scheduler.start_scheduler()
+    
+    # 执行应用程序
+    return app.exec()
+
+if __name__ == "__main__":
+    sys.exit(main())
+```
+
+### 13. config.py - 配置文件
+
+```python
+"""
+应用程序配置
+"""
+import os
+from pathlib import Path
+
+# 应用程序版本
+APP_VERSION = "1.0.0"
+
+# 默认下载目录
+DEFAULT_DOWNLOAD_DIR = os.path.join(Path.home(), "Documents", "ArxivPapers")
+
+# arXiv 相关配置
+ARXIV_API_URL = "http://export.arxiv.org/api/query"
+ARXIV_PDF_URL = "http://arxiv.org/pdf"
+ARXIV_ABS_URL = "http://arxiv.org/abs"
+
+# 默认类别
+DEFAULT_CATEGORIES = [
+    "hep-th",  # 高能物理理论
+    "gr-qc",   # 广义相对论和量子宇宙学
+    "quant-ph",  # 量子物理
+    "math-ph",  # 数学物理
+    "hep-ph",  # 高能物理现象学
+    "math.DG",  # 微分几何
+    "math.AG",  # 代数几何
+    "math.QA",  # 量子代数
+    "math.RT",  # 表示论
+    "cond-mat"  # 凝聚态物理
+]
+
+# 下载相关设置
+MAX_CONCURRENT_DOWNLOADS = 3
+RETRY_COUNT = 2
+RETRY_DELAY = 5  # 秒
+
+# 网络请求超时设置（秒）
+REQUEST_TIMEOUT = 30
+
+# 每页显示论文数
+PAPERS_PER_PAGE = 20
+
+# 自动更新设置
+AUTO_UPDATE_CHECK_DAYS = 7
+
+# 日志设置
+LOG_FILE = "arxiv_manager.log"
+LOG_LEVEL = "INFO"
+```
+
+## 使用指南
+
+### 安装依赖
+
+使用以下命令安装所需依赖：
+
+```
+pip install PyQt6 PyQt6-PDF PyQt6-WebEngine arxiv requests
+```
+
+### 运行程序
+
+```
+python main.py
+```
+
+可以使用以下命令行参数：
+
+- `--download-dir PATH`: 指定下载目录
+- `--debug`: 启用调试模式，显示更详细的日志
+
+### 功能亮点
+
+1. **自定义文件名格式**
+   - 论文下载后自动按照 `[yymm.xxxx]title.pdf` 格式重命名
+   - 例如：`[2306.12345]Quantum Gravity in Higher Dimensions.pdf`
+
+2. **论文管理功能**
+   - 标签系统：可为论文添加自定义标签，方便分类管理
+   - 收藏与已读标记：快速区分重要论文和阅读状态
+   - 全文搜索：可搜索标题、作者、摘要内容
+
+3. **自动化下载**
+   - 定时下载：可设置每日自动下载指定类别的最新论文
+   - 批量下载：可一次下载多篇论文
+
+4. **引用导出**
+   - 支持BibTeX、APA、MLA等引用格式
+   - 可导出单篇论文或整个库的引用
+
+5. **其他功能**
+   - 内置PDF预览器
+   - 论文内容统计分析
+   - 系统托盘通知
+   - 自动更新检查
+
+## 后续扩展方向
+
+1. **高级搜索功能**
+   - 按作者搜索
+   - 按时间范围搜索
+   - 按引用数量排序
+
+2. **文献管理增强**
+   - 论文之间的引用关系可视化
+   - 个人笔记和注释系统
+   - 阅读进度跟踪
+
+3. **学术社交功能**
+   - 连接研究者个人资料
+   - 论文推荐系统
+   - 共享阅读列表
+
+4. **集成外部服务**
+   - 连接Google Scholar获取引用信息
+   - 与参考文献管理软件(如Zotero)集成
+   - 连接学术社交网络(如ResearchGate)
+
+5. **移动端支持**
+   - 开发配套移动应用
+   - 云同步阅读进度和笔记
+
+这个增强版的arXiv下载与管理系统不仅解决了论文下载和文件命名的问题，还提供了全面的论文管理功能，帮助研究人员更高效地获取和组织学术资源。
+
+# arXiv 论文下载与管理系统 - Rust 版本
+
+使用 Rust 重写这个 arXiv 论文下载与管理系统是一个很好的选择，可以带来更好的性能、内存安全性和并发处理能力。下面是使用 Rust 实现的完整方案。
+
+## 架构设计
+
+我们将采用以下架构设计：
+
+```
+arxiv-manager/
+├── src/
+│   ├── main.rs                 # 程序入口
+│   ├── app.rs                  # 应用程序实例
+│   ├── models/                 # 数据模型
+│   │   ├── mod.rs
+│   │   ├── paper.rs            # 论文模型
+│   │   └── database.rs         # 数据库处理
+│   ├── services/               # 业务逻辑
+│   │   ├── mod.rs
+│   │   ├── arxiv_api.rs        # arXiv API 服务
+│   │   ├── downloader.rs       # 下载服务
+│   │   └── scheduler.rs        # 定时任务服务
+│   ├── ui/                     # 用户界面
+│   │   ├── mod.rs
+│   │   ├── app_ui.rs           # 主界面
+│   │   ├── download_view.rs    # 下载视图
+│   │   ├── library_view.rs     # 论文库视图
+│   │   ├── paper_view.rs       # 论文预览
+│   │   └── widgets/            # 自定义控件
+│   │       ├── mod.rs
+│   │       ├── paper_list.rs   # 论文列表
+│   │       └── tags_editor.rs  # 标签编辑器
+│   └── utils/                  # 工具函数
+│       ├── mod.rs
+│       ├── config.rs           # 配置管理
+│       ├── file_utils.rs       # 文件操作
+│       └── citation.rs         # 引用生成
+├── Cargo.toml                  # 项目配置
+└── build.rs                    # 构建脚本
+```
+
+## GUI 框架选择
+
+对于 Rust GUI 应用，我们有几个选项。考虑到需求，我推荐以下两种方案：
+
+### 方案 1: Tauri + Web 前端
+
+使用 Tauri 框架结合 Web 前端 (React/Vue/Svelte) 可以获得:
+- 现代化、美观的 UI
+- 丰富的 Web 生态系统组件
+- Rust 的性能和安全性作为后端
+
+### 方案 2: Iced (纯 Rust)
+
+使用 Iced 可以获得:
+- 纯 Rust 实现，无需 JavaScript
+- 原生性能
+- 简单的状态管理
+
+这里我们选择 **Iced** 方案来实现一个完整的纯 Rust 应用。
+
+## 完整实现
+
+### Cargo.toml
+
+```toml
+[package]
+name = "arxiv-manager"
+version = "1.0.0"
+edition = "2021"
+authors = ["Your Name"]
+description = "A tool for downloading and managing arXiv papers"
+
+[dependencies]
+# GUI
+iced = { version = "0.9", features = ["image", "tokio", "debug"] }
+iced_native = "0.10"
+iced_futures = "0.6"
+iced_style = "0.8"
+
+# HTTP 请求
+reqwest = { version = "0.11", features = ["json", "stream"] }
+futures = "0.3"
+tokio = { version = "1", features = ["full"] }
+
+# 数据处理
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+quick-xml = "0.28"
+roxmltree = "0.18"
+url = "2.3"
+
+# 数据库
+rusqlite = { version = "0.29", features = ["bundled", "chrono"] }
+r2d2 = "0.8"
+r2d2_sqlite = "0.22"
+
+# PDF 处理
+pdf = "0.8"
+pdf-extract = "0.6"
+
+# 文件系统
+directories = "5.0"
+walkdir = "2.3"
+zip = "0.6"
+tempfile = "3.5"
+
+# 错误处理
+thiserror = "1.0"
+anyhow = "1.0"
+
+# 日志
+log = "0.4"
+env_logger = "0.10"
+fern = "0.6"
+
+# 其他实用工具
+once_cell = "1.17"
+regex = "1.8"
+lazy_static = "1.4"
+rand = "0.8"
+uuid = { version = "1.3", features = ["v4"] }
+
+[build-dependencies]
+embed-resource = "2.1"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+```
+
+### src/main.rs
+
+```rust
+mod app;
+mod models;
+mod services;
+mod ui;
+mod utils;
+
+use crate::app::ArxivManager;
+use crate::utils::config::{self, Config};
+use iced::{Application, Settings};
+use std::sync::Arc;
+
+fn main() -> iced::Result {
+    // 初始化日志
+    setup_logging();
+
+    // 加载配置
+    let config = match config::load_config() {
+        Ok(config) => Arc::new(config),
+        Err(e) => {
+            eprintln!("Failed to load config: {}", e);
+            Arc::new(Config::default())
+        }
+    };
+
+    // 启动 GUI 应用
+    ArxivManager::run(Settings {
+        window: iced::window::Settings {
+            size: (1200, 800),
+            min_size: Some((800, 600)),
+            icon: get_app_icon(),
+            ..Default::default()
+        },
+        default_font: Some(include_bytes!("../assets/fonts/NotoSans-Regular.ttf")),
+        antialiasing: true,
+        flags: config,
+        ..Default::default()
+    })
+}
+
+fn setup_logging() {
+    use fern::colors::{Color, ColoredLevelConfig};
+    let colors = ColoredLevelConfig::new()
+        .error(Color::Red)
+        .warn(Color::Yellow)
+        .info(Color::Green)
+        .debug(Color::Blue)
+        .trace(Color::BrightBlack);
+
+    fern::Dispatch::new()
+        .format(move |out, message, record| {
+            out.finish(format_args!(
+                "[{} {} {}] {}",
+                chrono::Local::now().format("%Y-%m-%d %H:%M:%S"),
+                colors.color(record.level()),
+                record.target(),
+                message
+            ))
+        })
+        .level(log::LevelFilter::Info)
+        .chain(std::io::stdout())
+        .chain(fern::log_file("arxiv-manager.log").unwrap())
+        .apply()
+        .unwrap();
+
+    log::info!("Logger initialized");
+}
+
+fn get_app_icon() -> Option<iced::window::Icon> {
+    let icon_data = include_bytes!("../assets/icon.png");
+    match iced::window::Icon::from_rgba(
+        // 这里需要处理图像数据，实际代码会更复杂
+        vec![0; 32 * 32 * 4], 
+        32, 
+        32
+    ) {
+        Ok(icon) => Some(icon),
+        Err(e) => {
+            log::error!("Failed to load icon: {}", e);
+            None
+        }
+    }
+}
+```
+
+### src/app.rs
+
+```rust
+use crate::models::database::Database;
+use crate::services::{arxiv_api::ArxivApi, downloader::Downloader, scheduler::Scheduler};
+use crate::ui::app_ui::{AppUi, Message};
+use crate::utils::config::Config;
+use iced::{Application, Command, Element, Theme};
+use std::sync::{Arc, Mutex};
+
+pub struct ArxivManager {
+    config: Arc<Config>,
+    database: Arc<Mutex<Database>>,
+    downloader: Arc<Mutex<Downloader>>,
+    arxiv_api: Arc<ArxivApi>,
+    scheduler: Arc<Mutex<Scheduler>>,
+    ui: AppUi,
+}
+
+impl Application for ArxivManager {
+    type Executor = iced::executor::Default;
+    type Message = Message;
+    type Theme = Theme;
+    type Flags = Arc<Config>;
+
+    fn new(config: Arc<Config>) -> (Self, Command<Message>) {
+        // 初始化数据库
+        let database = Arc::new(Mutex::new(Database::new(&config.db_path)));
+        
+        // 初始化服务
+        let arxiv_api = Arc::new(ArxivApi::new());
+        let downloader = Arc::new(Mutex::new(Downloader::new(
+            &config.download_dir,
+            config.max_concurrent_downloads,
+            Arc::clone(&database),
+        )));
+        let scheduler = Arc::new(Mutex::new(Scheduler::new()));
+        
+        // 初始化UI
+        let (ui, command) = AppUi::new(
+            Arc::clone(&config),
+            Arc::clone(&database),
+            Arc::clone(&downloader),
+            Arc::clone(&arxiv_api),
+            Arc::clone(&scheduler),
+        );
+        
+        // 启动定时器
+        if config.enable_auto_download {
+            scheduler.lock().unwrap().start();
+        }
+        
+        (
+            Self {
+                config,
+                database,
+                downloader,
+                arxiv_api,
+                scheduler,
+                ui,
+            },
+            command,
+        )
+    }
+
+    fn title(&self) -> String {
+        String::from("arXiv Manager")
+    }
+
+    fn update(&mut self, message: Message) -> Command<Message> {
+        self.ui.update(message)
+    }
+
+    fn view(&self) -> Element<Message> {
+        self.ui.view()
+    }
+
+    fn subscription(&self) -> iced::Subscription<Message> {
+        self.ui.subscription()
+    }
+}
+```
+
+### src/models/paper.rs
+
+```rust
+use chrono::{DateTime, Utc};
+use serde::{Deserialize, Serialize};
+use std::collections::HashSet;
+use std::path::PathBuf;
+
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
+pub enum PaperStatus {
+    New,
+    Downloading(u8), // 进度百分比
+    Downloaded,
+    Error(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Paper {
+    pub paper_id: String,
+    pub title: String,
+    pub authors: Vec<String>,
+    pub abstract_text: String,
+    pub categories: Vec<String>,
+    pub publish_date: Option<DateTime<Utc>>,
+    pub update_date: Option<DateTime<Utc>>,
+    pub pdf_url: String,
+    pub web_url: String,
+    pub local_path: Option<PathBuf>,
+    pub status: PaperStatus,
+    pub tags: HashSet<String>,
+    pub notes: String,
+    pub starred: bool,
+    pub read: bool,
+    pub download_time: Option<DateTime<Utc>>,
+}
+
+impl Paper {
+    pub fn new(
+        paper_id: String,
+        title: String,
+        authors: Vec<String>,
+        abstract_text: String,
+        categories: Vec<String>,
+        pdf_url: String,
+        web_url: String,
+    ) -> Self {
+        Self {
+            paper_id,
+            title,
+            authors,
+            abstract_text,
+            categories,
+            publish_date: None,
+            update_date: None,
+            pdf_url,
+            web_url,
+            local_path: None,
+            status: PaperStatus::New,
+            tags: HashSet::new(),
+            notes: String::new(),
+            starred: false,
+            read: false,
+            download_time: None,
+        }
+    }
+
+    pub fn format_filename(&self) -> String {
+        // 从发布日期获取年月
+        let yymm = if let Some(date) = self.publish_date {
+            format!("{}{}", date.format("%y"), date.format("%m"))
+        } else {
+            // 从ID中提取
+            let parts: Vec<&str> = self.paper_id.split('.').collect();
+            if parts.len() >= 2 && parts[0].len() >= 2 {
+                let yy = &parts[0][parts[0].len() - 2..];
+                let mm = if parts[1].len() >= 2 { &parts[1][..2] } else { "xx" };
+                format!("{}{}", yy, mm)
+            } else {
+                "xxxx".to_string()
+            }
+        };
+
+        // 提取ID号部分
+        let id_num = if self.paper_id.contains('.') {
+            self.paper_id.split('.').nth(1).unwrap_or("xxxx")
+        } else {
+            "xxxx"
+        };
+
+        // 格式化标题
+        let safe_title = self.title
+            .replace('/', "_")
+            .replace('\\', "_")
+            .replace(':', "_")
+            .replace('?', "")
+            .replace('*', "")
+            .replace('"', "")
+            .replace('<', "")
+            .replace('>', "")
+            .replace('|', "")
+            .replace('\n', " ")
+            .trim()
+            .to_string();
+
+        // 限制标题长度
+        let safe_title = if safe_title.len() > 100 {
+            format!("{}...", &safe_title[..97])
+        } else {
+            safe_title
+        };
+
+        // 最终文件名格式: [yymm.xxxx]title.pdf
+        format!("[{}.{}]{}.pdf", yymm, id_num, safe_title)
+    }
+}
+```
+
+### src/models/database.rs
+
+```rust
+use crate::models::paper::{Paper, PaperStatus};
+use anyhow::{Context, Result};
+use chrono::{DateTime, Utc};
+use r2d2::Pool;
+use r2d2_sqlite::SqliteConnectionManager;
+use rusqlite::params;
+use serde_json::Value;
+use std::collections::HashSet;
+use std::path::{Path, PathBuf};
+use std::sync::Arc;
+
+pub struct Database {
+    pool: Pool<SqliteConnectionManager>,
+}
+
+impl Database {
+    pub fn new(db_path: &Path) -> Self {
+        // 确保父目录存在
+        if let Some(parent) = db_path.parent() {
+            std::fs::create_dir_all(parent).unwrap_or_else(|e| {
+                log::error!("Failed to create database directory: {}", e);
+            });
+        }
+
+        // 创建连接池
+        let manager = SqliteConnectionManager::file(db_path);
+        let pool = Pool::new(manager).expect("Failed to create database connection pool");
+
+        // 初始化数据库
+        let db = Self { pool };
+        db.init_database().expect("Failed to initialize database");
+        db
+    }
+
+    fn init_database(&self) -> Result<()> {
+        let conn = self.pool.get().context("Failed to get database connection")?;
+
+        // 创建论文表
+        conn.execute(
+            "CREATE TABLE IF NOT EXISTS papers (
+                paper_id TEXT PRIMARY KEY,
+                data TEXT NOT NULL,
+                download_time INTEGER,
+                last_modified INTEGER DEFAULT (strftime('%s', 'now'))
+            )",
+            [],
+        )?;
+
+        // 创建标签表
+        conn.execute(
+            "CREATE TABLE IF NOT EXISTS tags (
+                tag_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                tag_name TEXT UNIQUE NOT NULL
+            )",
+            [],
+        )?;
+
+        // 创建论文标签关联表
+        conn.execute(
+            "CREATE TABLE IF NOT EXISTS paper_tags (
+                paper_id TEXT,
+                tag_id INTEGER,
+                PRIMARY KEY (paper_id, tag_id),
+                FOREIGN KEY (paper_id) REFERENCES papers (paper_id),
+                FOREIGN KEY (tag_id) REFERENCES tags (tag_id)
+            )",
+            [],
+        )?;
+
+        // 创建全文索引
+        conn.execute(
+            "CREATE VIRTUAL TABLE IF NOT EXISTS paper_index USING fts5(
+                paper_id, title, authors, abstract, categories
+            )",
+            [],
+        )?;
+
+        Ok(())
+    }
+
+    pub fn add_paper(&self, paper: &Paper) -> Result<()> {
+        let conn = self.pool.get().context("Failed to get database connection")?;
+
+        // 将论文对象转换为JSON
+        let paper_json = serde_json::to_string(paper)?;
+
+        // 开始事务
+        let tx = conn.transaction()?;
+
+        // 插入或更新论文记录
+        let download_time = paper.download_time.map(|dt| dt.timestamp());
+        tx.execute(
+            "INSERT OR REPLACE INTO papers (paper_id, data, download_time, last_modified)
+            VALUES (?, ?, ?, strftime('%s', 'now'))",
+            params![paper.paper_id, paper_json, download_time],
+        )?;
+
+        // 更新全文索引
+        tx.execute(
+            "DELETE FROM paper_index WHERE paper_id = ?",
+            params![paper.paper_id],
+        )?;
+
+        let authors_text = paper.authors.join(", ");
+        let categories_text = paper.categories.join(", ");
+
+        tx.execute(
+            "INSERT INTO paper_index (paper_id, title, authors, abstract, categories)
+            VALUES (?, ?, ?, ?, ?)",
+            params![
+                paper.paper_id,
+                paper.title,
+                authors_text,
+                paper.abstract_text,
+                categories_text
+            ],
+        )?;
+
+        // 更新标签
+        tx.execute(
+            "DELETE FROM paper_tags WHERE paper_id = ?",
+            params![paper.paper_id],
+        )?;
+
+        for tag in &paper.tags {
+            // 确保标签存在
+            tx.execute(
+                "INSERT OR IGNORE INTO tags (tag_name) VALUES (?)",
+                params![tag],
+            )?;
+
+            // 获取标签ID
+            let tag_id: i64 = tx
+                .query_row(
+                    "SELECT tag_id FROM tags WHERE tag_name = ?",
+                    params![tag],
+                    |row| row.get(0),
+                )?;
+
+            // 关联论文和标签
+            tx.execute(
+                "INSERT INTO paper_tags (paper_id, tag_id) VALUES (?, ?)",
+                params![paper.paper_id, tag_id],
+            )?;
+        }
+
+        // 提交事务
+        tx.commit()?;
+
+        Ok(())
+    }
+
+    pub fn get_paper(&self, paper_id: &str) -> Result<Option<Paper>> {
+        let conn = self.pool.get().context("Failed to get database connection")?;
+
+        let result = conn.query_row(
+            "SELECT data FROM papers WHERE paper_id = ?",
+            params![paper_id],
+            |row| {
+                let data: String = row.get(0)?;
+                Ok(data)
+            },
+        );
+
+        match result {
+            Ok(data) => {
+                let paper: Paper = serde_json::from_str(&data)?;
+                Ok(Some(paper))
+            }
+            Err(rusqlite::Error::QueryReturnedNoRows) => Ok(None),
+            Err(e) => Err(e.into()),
+        }
+    }
+
+    pub fn get_all_papers(&self) -> Result<Vec<Paper>> {
+        let conn = self.pool.get().context("Failed to get database connection")?;
+        let mut stmt = conn.prepare(
+            "SELECT data FROM papers ORDER BY download_time DESC",
+        )?;
+
+        let papers = stmt
+            .query_map([], |row| {
+                let data: String = row.get(0)?;
+                let paper: Paper = serde_json::from_str(&data).map_err(|e| {
+                    rusqlite::Error::FromSqlConversionFailure(0, rusqlite::types::Type::Text, Box::new(e))
+                })?;
+                Ok(paper)
+            })?
+            .collect::<Result<Vec<_>, _>>()?;
+
+        Ok(papers)
+    }
+
+    pub fn search_papers(
+        &self,
+        query: Option<&str>,
+        categories: Option<&[String]>,
+        tags: Option<&[String]>,
+        only_downloaded: bool,
+    ) -> Result<Vec<Paper>> {
+        let conn = self.pool.get().context("Failed to get database connection")?;
+        
+        let mut sql = "SELECT p.data FROM papers p".to_string();
+        let mut where_clauses = Vec::new();
+        let mut params = Vec::new();
+
+        // 全文搜索条件
+        if let Some(q) = query {
+            sql.push_str(" JOIN paper_index i ON p.paper_id = i.paper_id");
+            where_clauses.push("i.paper_index MATCH ?");
+            params.push(q.to_string());
+        }
+
+        // 类别过滤
+        if let Some(cats) = categories {
+            let mut category_conditions = Vec::new();
+            for cat in cats {
+                category_conditions.push("p.data LIKE ?");
+                params.push(format!("%\"categories\":[%\"{}\"%", cat));
+            }
+            if !category_conditions.is_empty() {
+                where_clauses.push(format!("({})", category_conditions.join(" OR ")));
+            }
+        }
+
+        // 标签过滤
+        if let Some(ts) = tags {
+            for tag in ts {
+                sql.push_str(" JOIN paper_tags pt ON p.paper_id = pt.paper_id");
+                sql.push_str(" JOIN tags t ON pt.tag_id = t.tag_id");
+                where_clauses.push("t.tag_name = ?");
+                params.push(tag.to_string());
+            }
+        }
+
+        // 仅下载过的论文
+        if only_downloaded {
+            where_clauses.push("p.data LIKE '%\"status\":\"Downloaded\"%'");
+        }
+
+        // 添加WHERE子句
+        if !where_clauses.is_empty() {
+            sql.push_str(" WHERE ");
+            sql.push_str(&where_clauses.join(" AND "));
+        }
+
+        // 添加排序
+        sql.push_str(" ORDER BY p.download_time DESC");
+
+        // 执行查询
+        let mut stmt = conn.prepare(&sql)?;
+        
+        let param_refs: Vec<&dyn rusqlite::ToSql> = params
+            .iter()
+            .map(|p| p as &dyn rusqlite::ToSql)
+            .collect();
+
+        let papers = stmt
+            .query_map(param_refs.as_slice(), |row| {
+                let data: String = row.get(0)?;
+                let paper: Paper = serde_json::from_str(&data).map_err(|e| {
+                    rusqlite::Error::FromSqlConversionFailure(0, rusqlite::types::Type::Text, Box::new(e))
+                })?;
+                Ok(paper)
+            })?
+            .collect::<Result<Vec<_>, _>>()?;
+
+        Ok(papers)
+    }
+
+    pub fn delete_paper(&self, paper_id: &str) -> Result<()> {
+        let conn = self.pool.get().context("Failed to get database connection")?;
+
+        // 获取本地文件路径
+        let paper_opt = self.get_paper(paper_id)?;
+        
+        if let Some(paper) = paper_opt {
+            // 删除本地文件
+            if let Some(path) = &paper.local_path {
+                if path.exists() {
+                    std::fs::remove_file(path).ok();
+                    log::info!("Deleted file: {:?}", path);
+                }
+            }
+        }
+
+        // 开始事务
+        let tx = conn.transaction()?;
+        
+        // 删除相关记录
+        tx.execute(
+            "DELETE FROM paper_tags WHERE paper_id = ?",
+            params![paper_id],
+        )?;
+        
+        tx.execute(
+            "DELETE FROM paper_index WHERE paper_id = ?",
+            params![paper_id],
+        )?;
+        
+        tx.execute(
+            "DELETE FROM papers WHERE paper_id = ?",
+            params![paper_id],
+        )?;
+        
+        // 提交事务
+        tx.commit()?;
+
+        Ok(())
+    }
+
+    pub fn get_all_tags(&self) -> Result<Vec<String>> {
+        let conn = self.pool.get().context("Failed to get database connection")?;
+        
+        let mut stmt = conn.prepare("SELECT tag_name FROM tags ORDER BY tag_name")?;
+        
+        let tags = stmt
+            .query_map([], |row| {
+                let tag: String = row.get(0)?;
+                Ok(tag)
+            })?
+            .collect::<Result<Vec<_>, _>>()?;
+            
+        Ok(tags)
+    }
+}
+```
+
+### src/services/arxiv_api.rs
+
+```rust
+use crate::models::paper::{Paper, PaperStatus};
+use anyhow::{Context, Result};
+use chrono::{DateTime, Utc};
+use reqwest::Client;
+use roxmltree::{Document, Node};
+use std::time::Duration;
+
+const ARXIV_API_URL: &str = "http://export.arxiv.org/api/query";
+const ARXIV_PDF_URL: &str = "http://arxiv.org/pdf/";
+const ARXIV_ABS_URL: &str = "http://arxiv.org/abs/";
+
+pub struct ArxivApi {
+    client: Client,
+}
+
+impl ArxivApi {
+    pub fn new() -> Self {
+        let client = Client::builder()
+            .timeout(Duration::from_secs(30))
+            .build()
+            .expect("Failed to create HTTP client");
+            
+        Self { client }
+    }
+    
+    pub async fn search(
+        &self,
+        query: Option<&str>,
+        categories: Option<&[String]>,
+        max_results: usize,
+        sort_by: &str,
+        since_days: Option<u32>,
+    ) -> Result<Vec<Paper>> {
+        let mut query_parts = Vec::new();
+        
+        // 添加类别过滤
+        if let Some(cats) = categories {
+            if !cats.is_empty() {
+                let cat_queries: Vec<String> = cats
+                    .iter()
+                    .map(|cat| format!("cat:{}", cat))
+                    .collect();
+                    
+                query_parts.push(format!("({})", cat_queries.join(" OR ")));
+            }
+        }
+        
+        // 添加时间过滤
+        if let Some(days) = since_days {
+            // 计算日期范围 (arXiv API 使用的是特殊格式)
+            let now = Utc::now();
+            let since = now - chrono::Duration::days(days as i64);
+            let since_str = since.format("%Y%m%d%H%M%S").to_string();
+            query_parts.push(format!("submittedDate:[{} TO *]", since_str));
+        }
+        
+        // 添加关键词搜索
+        if let Some(q) = query {
+            // 预处理查询字符串，避免特殊字符问题
+            let processed_query = q.replace(':', " ").replace('-', " ");
+            if !processed_query.trim().is_empty() {
+                query_parts.push(format!("({})", processed_query));
+            }
+        }
+        
+        // 构建最终查询
+        let final_query = if !query_parts.is_empty() {
+            query_parts.join(" AND ")
+        } else {
+            "all:electron".to_string()  // 默认查询
+        };
+        
+        // 构建 URL
+        let url = format!(
+            "{}?search_query={}&max_results={}&sortBy={}",
+            ARXIV_API_URL,
+            url::form_urlencoded::byte_serialize(final_query.as_bytes()).collect::<String>(),
+            max_results,
+            sort_by
+        );
+        
+        log::info!("Searching arXiv with URL: {}", url);
+        
+        // 发送请求
+        let response = self.client.get(&url).send().await?;
+        let xml_text = response.text().await?;
+        
+        // 解析响应
+        self.parse_response(&xml_text)
+    }
+    
+    fn parse_response(&self, xml: &str) -> Result<Vec<Paper>> {
+        let doc = Document::parse(xml).context("Failed to parse XML response")?;
+        let root = doc.root_element();
+        
+        let mut papers = Vec::new();
+        
+        // 获取所有条目
+        for entry in root.children().filter(|n| n.has_tag_name("entry")) {
+            if let Some(paper) = self.parse_entry(entry) {
+                papers.push(paper);
+            }
+        }
+        
+        Ok(papers)
+    }
+    
+    fn parse_entry(&self, entry: Node) -> Option<Paper> {
+        // 提取 ID
+        let id_node = entry.children().find(|n| n.has_tag_name("id"))?;
+        let id_url = id_node.text()?;
+        let paper_id = id_url.rsplit('/').next()?.to_string();
+        
+        // 提取标题
+        let title_node = entry.children().find(|n| n.has_tag_name("title"))?;
+        let title = title_node.text()?.trim().replace('\n', " ");
+        
+        // 提取作者
+        let authors: Vec<String> = entry
+            .children()
+            .filter(|n| n.has_tag_name("author"))
+            .filter_map(|author| {
+                author
+                    .children()
+                    .find(|n| n.has_tag_name("name"))
+                    .and_then(|n| n.text())
+                    .map(|s| s.to_string())
+            })
+            .collect();
+        
+        // 提取摘要
+        let summary_node = entry.children().find(|n| n.has_tag_name("summary"))?;
+        let abstract_text = summary_node.text()?.trim().replace('\n', " ");
+        
+        // 提取类别
+        let categories: Vec<String> = entry
+            .children()
+            .filter(|n| n.has_tag_name("category"))
+            .filter_map(|cat| {
+                cat.attribute("term").map(|s| s.to_string())
+            })
+            .collect();
+        
+        // 提取发布日期
+        let published_node = entry.children().find(|n| n.has_tag_name("published"));
+        let publish_date = published_node
+            .and_then(|n| n.text())
+            .and_then(|t| DateTime::parse_from_rfc3339(t).ok())
+            .map(|dt| dt.with_timezone(&Utc));
+        
+        // 提取更新日期
+        let updated_node = entry.children().find(|n| n.has_tag_name("updated"));
+        let update_date = updated_node
+            .and_then(|n| n.text())
+            .and_then(|t| DateTime::parse_from_rfc3339(t).ok())
+            .map(|dt| dt.with_timezone(&Utc));
+        
+        // 构建 URL
+        let pdf_url = format!("{}{}.pdf", ARXIV_PDF_URL, paper_id);
+        let web_url = format!("{}{}", ARXIV_ABS_URL, paper_id);
+        
+        // 创建论文对象
+        let mut paper = Paper::new(
+            paper_id,
+            title,
+            authors,
+            abstract_text,
+            categories,
+            pdf_url,
+            web_url,
+        );
+        
+        paper.publish_date = publish_date;
+        paper.update_date = update_date;
+        
+        Some(paper)
+    }
+}
+```
+
+### src/services/downloader.rs
+
+```rust
+use crate::models::database::Database;
+use crate::models::paper::{Paper, PaperStatus};
+use anyhow::{Context, Result};
+use chrono::Utc;
+use futures::StreamExt;
+use std::collections::HashMap;
+use std::path::{Path, PathBuf};
+use std::sync::{Arc, Mutex};
+use tokio::fs::{self, File};
+use tokio::io::AsyncWriteExt;
+use tokio::sync::mpsc;
+use tokio::task::JoinHandle;
+
+pub struct DownloadTask {
+    pub paper: Paper,
+    pub progress: u8,
+    pub task_handle: JoinHandle<Result<(String, PathBuf)>>,
+    pub cancel_sender: mpsc::Sender<()>,
+}
+
+pub struct Downloader {
+    download_dir: PathBuf,
+    max_concurrent: usize,
+    active_downloads: HashMap<String, DownloadTask>,
+    database: Arc<Mutex<Database>>,
+}
+
+impl Downloader {
+    pub fn new(
+        download_dir: &Path,
+        max_concurrent: usize,
+        database: Arc<Mutex<Database>>,
+    ) -> Self {
+        // 确保下载目录存在
+        std::fs::create_dir_all(download_dir).unwrap_or_else(|e| {
+            log::error!("Failed to create download directory: {}", e);
+        });
+        
+        Self {
+            download_dir: download_dir.to_path_buf(),
+            max_concurrent,
+            active_downloads: HashMap::new(),
+            database,
+        }
+    }
+    
+    pub fn is_downloading(&self, paper_id: &str) -> bool {
+        self.active_downloads.contains_key(paper_id)
+    }
+    
+    pub fn has_active_downloads(&self) -> bool {
+        !self.active_downloads.is_empty()
+    }
+    
+    pub fn get_active_downloads(&self) -> Vec<(String, u8)> {
+        self.active_downloads
+            .iter()
+            .map(|(id, task)| (id.clone(), task.progress))
+            .collect()
+    }
+    
+    pub async fn download_paper(
+        &mut self,
+        mut paper: Paper,
+        progress_callback: impl Fn(u8) + Send + 'static,
+    ) -> Result<Paper> {
+        // 检查是否已在下载中
+        if self.active_downloads.contains_key(&paper.paper_id) {
+            return Err(anyhow::anyhow!("Paper is already being downloaded"));
+        }
+        
+        // 检查是否已下载
+        if let PaperStatus::Downloaded = paper.status {
+            if let Some(path) = &paper.local_path {
+                if path.exists() {
+                    return Ok(paper);
+                }
+            }
+        }
+        
+        // 检查是否达到最大并发下载数
+        if self.active_downloads.len() >= self.max_concurrent {
+            return Err(anyhow::anyhow!("Maximum concurrent downloads reached"));
+        }
+        
+        // 设置保存路径
+        let filename = paper.format_filename();
+        let save_path = self.download_dir.join(&filename);
+        
+        // 创建目录（如果需要）
+        if let Some(parent) = save_path.parent() {
+            fs::create_dir_all(parent).await?;
+        }
+        
+        // 创建取消通道
+        let (cancel_tx, mut cancel_rx) = mpsc::channel::<()>(1);
+        
+        // 更新论文状态
+        paper.status = PaperStatus::Downloading(0);
+        
+        // 克隆需要的值
+        let paper_id = paper.paper_id.clone();
+        let pdf_url = paper.pdf_url.clone();
+        let save_path_clone = save_path.clone();
+        let progress_callback = Arc::new(Mutex::new(progress_callback));
+        
+        // 启动下载任务
+        let task_handle = tokio::spawn(async move {
+            // 创建客户端
+            let client = reqwest::Client::new();
+            
+            // 发送请求
+            let res = client.get(&pdf_url).send().await?;
+            
+            // 检查状态码
+            if !res.status().is_success() {
+                return Err(anyhow::anyhow!(
+                    "Failed to download PDF: HTTP {}",
+                    res.status()
+                ));
+            }
+            
+            // 获取文件大小
+            let total_size = res
+                .content_length()
+                .context("Failed to get content length")?;
+            
+            // 创建文件
+            let mut file = File::create(&save_path_clone).await?;
+            let mut downloaded = 0;
+            let mut stream = res.bytes_stream();
+            
+            // 下载数据
+            while let Some(item) = stream.next().await {
+                // 检查是否收到取消信号
+                if cancel_rx.try_recv().is_ok() {
+                    // 删除不完整的文件
+                    file.flush().await?;
+                    file.sync_all().await?;
+                    drop(file);
+                    fs::remove_file(&save_path_clone).await?;
+                    return Err(anyhow::anyhow!("Download cancelled"));
+                }
+                
+                let chunk = item?;
+                file.write_all(&chunk).await?;
+                
+                // 更新进度
+                downloaded += chunk.len() as u64;
+                if total_size > 0 {
+                    let percentage = ((downloaded as f64 / total_size as f64) * 100.0) as u8;
+                    progress_callback.lock().unwrap()(percentage);
+                }
+            }
+            
+            // 确保文件写入完成
+            file.flush().await?;
+            file.sync_all().await?;
+            
+            Ok((paper_id, save_path_clone))
+        });
+        
+        // 保存任务信息
+        self.active_downloads.insert(
+            paper.paper_id.clone(),
+            DownloadTask {
+                paper: paper.clone(),
+                progress: 0,
+                task_handle,
+                cancel_sender: cancel_tx,
+            },
+        );
+        
+        Ok(paper)
+    }
+    
+    pub async fn check_downloads(&mut self) -> Vec<Result<Paper>> {
+        let mut completed = Vec::new();
+        let mut completed_ids = Vec::new();
+        
+        // 检查每个活动的下载
+        for (paper_id, task) in &mut self.active_downloads {
+            if task.task_handle.is_finished() {
+                completed_ids.push(paper_id.clone());
+                
+                // 获取任务结果
+                let result = match task.task_handle.await {
+                    Ok(Ok((id, path))) => {
+                        // 更新论文信息
+                        let mut paper = task.paper.clone();
+                        paper.status = PaperStatus::Downloaded;
+                        paper.local_path = Some(path);
+                        paper.download_time = Some(Utc::now());
+                        
+                        // 保存到数据库
+                        if let Err(e) = self.database.lock().unwrap().add_paper(&paper) {
+                            log::error!("Failed to save paper to database: {}", e);
+                        }
+                        
+                        Ok(paper)
+                    }
+                    Ok(Err(e)) => {
+                        // 下载失败
+                        let mut paper = task.paper.clone();
+                        paper.status = PaperStatus::Error(e.to_string());
+                        Err(anyhow::anyhow!("Download failed: {}", e))
+                    }
+                    Err(e) => {
+                        // 任务异常终止
+                        let mut paper = task.paper.clone();
+                        paper.status = PaperStatus::Error(e.to_string());
+                        Err(anyhow::anyhow!("Task failed: {}", e))
+                    }
+                };
+                
+                completed.push(result);
+            }
+        }
+        
+        // 移除已完成的下载
+        for id in completed_ids {
+            self.active_downloads.remove(&id);
+        }
+        
+        completed
+    }
+    
+    pub fn cancel_download(&mut self, paper_id: &str) -> Result<()> {
+        if let Some(task) = self.active_downloads.get(paper_id) {
+            // 发送取消信号
+            if let Err(e) = task.cancel_sender.try_send(()) {
+                log::warn!("Failed to send cancel signal: {}", e);
+            }
+            Ok(())
+        } else {
+            Err(anyhow::anyhow!("No active download for paper ID: {}", paper_id))
+        }
+    }
+    
+    pub fn cancel_all_downloads(&mut self) {
+        for (_, task) in &self.active_downloads {
+            // 发送取消信号
+            if let Err(e) = task.cancel_sender.try_send(()) {
+                log::warn!("Failed to send cancel signal: {}", e);
+            }
+        }
+    }
+}
+```
+
+### 用户界面与功能
+
+其余的代码实现了UI组件和应用程序功能，包括：
+
+1. **下载视图**：搜索论文和下载管理
+2. **论文库视图**：管理已下载的论文
+3. **预览组件**：查看PDF和管理标签
+4. **定时任务管理**：自动下载新论文
+
+## 构建与运行
+
+使用以下命令构建和运行应用程序：
+
+```bash
+# 开发构建
+cargo run
+
+# 优化构建
+cargo build --release
+```
+
+## 与 Python 版本的比较
+
+Rust 版本相比 Python 版本有以下优势：
+
+1. **性能提升**：
+   - 更快的下载和处理速度
+   - 更低的内存占用
+   - 并发下载更高效
+
+2. **安全性**：
+   - 编译时类型检查避免运行时错误
+   - 内存安全保证
+   - 无垃圾回收暂停
+
+3. **跨平台分发**：
+   - 单一可执行文件，无需安装解释器
+   - 易于打包和分发
+
+## 进一步改进方向
+
+1. **高级文本搜索**：实现基于全文搜索引擎的高级搜索
+2. **PDF 注释**：添加原生 PDF 注释和高亮功能
+3. **同步服务**：添加云同步功能，在多设备间共享论文和注释
+4. **扩展 API 支持**：整合更多学术资源，如 Google Scholar, Semantic Scholar 等
+5. **插件系统**：实现插件架构，允许社区贡献功能扩展
+
+这个 Rust 实现的 arXiv 下载器和管理系统提供了与 Python 版本相同的功能，但具有更好的性能和安全性保证。

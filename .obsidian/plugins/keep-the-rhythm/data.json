@@ -576,7 +576,7 @@
         }
       },
       "2025-06-08": {
-        "totalDelta": 15202,
+        "totalDelta": 19607,
         "files": {
           "Drafts/ads3 proca.md": {
             "initial": 345,
@@ -602,9 +602,53 @@
             "initial": 988,
             "current": 988
           },
-          "archive downloader.md": {
+          "arxiv downloader.md": {
             "initial": 83,
-            "current": 10600
+            "current": 15005
+          },
+          "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md": {
+            "initial": 3516,
+            "current": 3516
+          },
+          "Reading/gravity/surface charge.md": {
+            "initial": 1231,
+            "current": 1231
+          },
+          "Reading/gravity/3-dimensional Einstein's gravity.md": {
+            "initial": 187,
+            "current": 187
+          },
+          "Reading/differential forms in algebraic topology/de Rham theory/de Rham theory.md": {
+            "initial": 670,
+            "current": 670
+          },
+          "Reading/differential forms in algebraic topology/de Rham theory/Untitled.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Reading/differential forms in algebraic topology/README.md": {
+            "initial": 24,
+            "current": 24
+          },
+          "Reading/computational algebraic geometry/geometry, algebra and algorithms.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Reading/deformation quantization.md": {
+            "initial": 249,
+            "current": 249
+          },
+          "Reading/Covariant phase space formalism and Pierels bracket.md": {
+            "initial": 828,
+            "current": 828
+          },
+          "Reading/Comparison between ordinary approach and current approach with example--GR with a scalar.md": {
+            "initial": 1281,
+            "current": 1281
+          },
+          "Reading/p-form gauge field and edge mode.md": {
+            "initial": 0,
+            "current": 0
           }
         }
       }
