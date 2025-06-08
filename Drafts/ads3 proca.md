@@ -57,3 +57,9 @@ R_{\theta} & =z^{(\mu+2)/2}(1-z)^{|m|/2}F_{\theta}(z)
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+ \left( \frac{m^{2}}{\mu}z+(1-z)\mu \right) z^{(\mu+2)/2}(1-z)^{|m|/2}F_{t}+\left( \frac{m\omega}{\mu}z-2z(1-z)\partial _{z} \right) z^{(\mu+2)/2}(1-z)^{|m|/2}F_{\theta} & =0 \\
+\left( \frac{m\omega }{\mu} z +2z(1-z)\partial _{z} \right)z^{(\mu+2)/2}(1-z)^{|m|/2}F_{t}+\left( \frac{\omega ^{2}}{\mu}z-\mu \right) z^{(\mu+2)/2}(1-z)^{|m|/2}F_{\theta} & =0
+\end{align}
+$$
