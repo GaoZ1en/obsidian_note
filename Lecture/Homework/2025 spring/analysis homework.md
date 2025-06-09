@@ -754,23 +754,434 @@ $$u_{N_1+k} \leq u_{N_1} \cdot \frac{v_{N_1+k}}{v_{N_1}} \leq u_{N_1} \cdot r^k$
 
 # homework 9
 
-1. 应用逐项求导或逐项积分的方法求下列幂级数的和函数
-	1. $\displaystyle{\sum ^{\infty}_{n=0}\frac{x^{2n+1}}{2n+1}}$
-	2. $\displaystyle{\sum ^{\infty}_{n=1}n^{2}x^{n}}$
-2. 求下列幂级数的收敛半径及其和函数
-	1. $\displaystyle{\sum ^{\infty}_{n=1} \frac{x^{n}}{n(n+1)}}$
-3. 设函数$\displaystyle{f}$在区间$\displaystyle{(a,b)}$上的各阶导数一致有界，即存在正数$\displaystyle{M}$，对一切$\displaystyle{x \in(a,b)}$，有$\displaystyle{|f^{(n)}(x)|\leqslant M,n=1,2,\dots}$。证明对$\displaystyle{(a,b)}$上任一点$\displaystyle{x}$和$\displaystyle{x_{0}}$有$\displaystyle{f(x)=\sum ^{\infty}_{n=0} \frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n},f^{(0)}(x)=f(x),0!=1}$
-4. 求下列函数在$\displaystyle{x=1}$处的泰勒展开式
-	1. $\displaystyle{f(x)=\frac{1}{x}}$
-	2. $\displaystyle{f(x)=\sqrt{ x^{3} }}$
-5. 确定下列幂级数的收敛域，并求其和函数
-	1. $\displaystyle{\sum ^{\infty}_{n=1}n^{2}x^{n-1}}$
-	2. $\displaystyle{\sum ^{\infty}_{n=1}(-1)^{n-1}\frac{x^{2n+1}}{(2n)^{2}-1}}$
-6. 应用幂级数性质求下列级数的和
-	1. $\displaystyle{\sum ^{\infty}_{n=1} \frac{n}{(n+1)!}}$
-7. 利用已知函数的幂级数展开式，求下列函数在$\displaystyle{x=0}$处的幂级数展开式，并确定他收敛于该函数的区间
-	1. $\displaystyle{\frac{x}{\sqrt{ 1-2x }}}$
-	2. $\displaystyle{\frac{e^{x}}{1-x}}$
-	3. $\displaystyle{\int ^{x}_{0} \frac{\sin t}{t}\mathrm{d}t}$
-	4. $\displaystyle{\ln(x+\sqrt{ 1+x^{2} })}$
-8. 试将$\displaystyle{\ln x}$按$\displaystyle{\frac{x-1}{x+1}}$的幂展开成幂级数
+## **1. 应用逐项求导或逐项积分的方法求下列幂级数的和函数**
+
+### 1. $\displaystyle{\sum ^{\infty}_{n=0}\frac{x^{2n+1}}{2n+1}}$
+
+设  
+$$
+S(x) = \sum_{n=0}^{\infty} \frac{x^{2n+1}}{2n+1}
+$$
+
+注意到该级数与 $\ln$ 函数相关。考虑对 $S(x)$ 求导：
+
+$$
+S'(x) = \sum_{n=0}^{\infty} x^{2n} = \frac{1}{1 - x^2}, \quad (|x| < 1)
+$$
+
+所以：
+$$
+S(x) = \int_0^x \frac{1}{1 - t^2} dt = \frac{1}{2} \ln\left(\frac{1+x}{1-x}\right), \quad |x| < 1
+$$
+
+**答：**
+$$
+\boxed{\sum_{n=0}^{\infty} \frac{x^{2n+1}}{2n+1} = \frac{1}{2} \ln\left( \frac{1+x}{1-x} \right), \quad |x| < 1}
+$$
+
+---
+
+### 2. $\displaystyle{\sum ^{\infty}_{n=1}n^{2}x^{n}}$
+
+我们从已知的幂级数出发：
+
+$$
+\sum_{n=1}^\infty n x^n = \frac{x}{(1 - x)^2}, \quad |x| < 1
+$$
+
+再对其两边关于 $x$ 求导：
+
+$$
+\frac{d}{dx} \left( \sum_{n=1}^\infty n x^n \right) = \sum_{n=1}^\infty n^2 x^{n-1} = \frac{1 + x}{(1 - x)^3}
+$$
+
+两边乘以 $x$ 得到：
+
+$$
+\sum_{n=1}^\infty n^2 x^n = x \cdot \frac{1 + x}{(1 - x)^3} = \frac{x(1 + x)}{(1 - x)^3}
+$$
+
+**答：**
+$$
+\boxed{\sum_{n=1}^{\infty} n^2 x^n = \frac{x(1 + x)}{(1 - x)^3}, \quad |x| < 1}
+$$
+
+---
+
+## **2. 求下列幂级数的收敛半径及其和函数**
+
+### $\displaystyle{\sum ^{\infty}_{n=1} \frac{x^{n}}{n(n+1)}}$
+
+#### 收敛半径
+
+使用比值判别法：
+
+$$
+a_n = \frac{1}{n(n+1)}, \quad R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right| = \lim_{n \to \infty} \frac{n+1}{n} \cdot \frac{n+2}{n+1} = 1
+$$
+
+所以收敛半径为：
+
+$$
+\boxed{R = 1}
+$$
+
+#### 和函数
+
+我们可以拆分：
+
+$$
+\frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}
+$$
+
+所以：
+
+$$
+\sum_{n=1}^\infty \frac{x^n}{n(n+1)} = \sum_{n=1}^\infty \left( \frac{x^n}{n} - \frac{x^n}{n+1} \right)
+= \sum_{n=1}^\infty \frac{x^n}{n} - \sum_{n=1}^\infty \frac{x^n}{n+1}
+$$
+
+第一个是 $\ln(1 - x)$ 的负值：
+
+$$
+\sum_{n=1}^\infty \frac{x^n}{n} = -\ln(1 - x)
+$$
+
+第二个令 $m = n+1$，则：
+
+$$
+\sum_{n=1}^\infty \frac{x^n}{n+1} = \sum_{m=2}^\infty \frac{x^{m-1}}{m} = \sum_{m=1}^\infty \frac{x^{m-1}}{m} - \frac{x^0}{1} = \frac{-\ln(1 - x)}{x} - 1
+$$
+
+所以原式变为：
+
+$$
+-\ln(1 - x) - \left( \frac{-\ln(1 - x)}{x} - 1 \right) = \left( \frac{-\ln(1 - x)}{x} \right) - \ln(1 - x) + 1
+$$
+
+整理：
+
+$$
+\sum_{n=1}^\infty \frac{x^n}{n(n+1)} = \frac{1 - x}{x} (-\ln(1 - x)) + 1
+$$
+
+不过更简洁的做法是直接计算部分和：
+
+$$
+\sum_{n=1}^\infty \left( \frac{x^n}{n} - \frac{x^n}{n+1} \right) = \sum_{n=1}^\infty \frac{x^n}{n} - \sum_{n=1}^\infty \frac{x^n}{n+1}
+= -\ln(1 - x) - \left( \frac{-\ln(1 - x)}{x} - 1 \right)
+= \frac{(1 - x)\ln(1 - x)}{x} + 1
+$$
+
+**答：**
+
+- 收敛半径：$\boxed{R = 1}$
+- 和函数：$\boxed{\sum_{n=1}^\infty \frac{x^n}{n(n+1)} = \frac{(1 - x)\ln(1 - x)}{x} + 1, \quad |x| < 1}$
+
+---
+
+## **3. 设函数$f$在$(a,b)$上的各阶导数一致有界，证明$f(x)=\sum ^{\infty}_{n=0} \frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n}$**
+
+这是泰勒定理的一个特殊情况。
+
+### 证明思路：
+
+由题设条件：存在常数 $M > 0$，使得对任意 $x \in (a, b)$，都有：
+
+$$
+|f^{(n)}(x)| \leq M, \quad \forall n \geq 1
+$$
+
+于是对于余项 $R_n(x)$：
+
+$$
+R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!} (x - x_0)^{n+1}, \quad \xi \in (x_0, x)
+$$
+
+利用一致有界性：
+
+$$
+|R_n(x)| \leq \frac{M}{(n+1)!} |x - x_0|^{n+1} \to 0 \quad \text{当 } n \to \infty
+$$
+
+因为 $(x - x_0)^{n+1}/(n+1)! \to 0$（指数增长慢于阶乘），所以余项趋于零。
+
+因此：
+
+$$
+f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(x_0)}{n!} (x - x_0)^n
+$$
+
+**证毕。**
+
+---
+
+## **4. 求下列函数在$x=1$处的泰勒展开式**
+
+### 1. $f(x) = \frac{1}{x}$
+
+在 $x = 1$ 处展开：
+
+$$
+f(x) = \frac{1}{x} = \sum_{n=0}^\infty (-1)^n (x - 1)^n, \quad |x - 1| < 1
+$$
+
+**答：**
+$$
+\boxed{\frac{1}{x} = \sum_{n=0}^\infty (-1)^n (x - 1)^n, \quad |x - 1| < 1}
+$$
+
+---
+
+### 2. $f(x) = \sqrt{x^3} = x^{3/2}$
+
+我们用二项式展开法：
+
+$$
+x^{3/2} = (1 + (x - 1))^{3/2} = \sum_{n=0}^\infty \binom{3/2}{n} (x - 1)^n
+$$
+
+其中广义二项式系数定义为：
+
+$$
+\binom{3/2}{n} = \frac{(3/2)(3/2 - 1)\cdots(3/2 - n + 1)}{n!}
+$$
+
+**答：**
+$$
+\boxed{\sqrt{x^3} = \sum_{n=0}^\infty \binom{3/2}{n} (x - 1)^n, \quad |x - 1| < 1}
+$$
+
+---
+
+## **5. 确定下列幂级数的收敛域，并求其和函数**
+
+### 1. $\displaystyle{\sum ^{\infty}_{n=1}n^{2}x^{n-1}}$
+
+设 $a_n = n^2 x^{n-1}$，即：
+
+$$
+\sum_{n=1}^\infty n^2 x^{n-1} = \sum_{n=0}^\infty (n+1)^2 x^n
+$$
+
+所以这个级数等价于：
+
+$$
+\sum_{n=0}^\infty (n+1)^2 x^n
+$$
+
+这是一个标准幂级数，收敛半径为 1。
+
+其和函数为：
+
+$$
+\sum_{n=0}^\infty (n+1)^2 x^n = \frac{1 + x}{(1 - x)^3}
+$$
+
+所以原级数为：
+
+$$
+\sum_{n=1}^\infty n^2 x^{n-1} = \frac{1 + x}{(1 - x)^3}
+$$
+
+**答：**
+
+- 收敛域：$\boxed{|x| < 1}$
+- 和函数：$\boxed{\sum_{n=1}^\infty n^2 x^{n-1} = \frac{1 + x}{(1 - x)^3}}$
+
+---
+
+### 2. $\displaystyle{\sum ^{\infty}_{n=1}(-1)^{n-1}\frac{x^{2n+1}}{(2n)^{2}-1}}$
+
+记：
+
+$$
+S(x) = \sum_{n=1}^\infty (-1)^{n-1} \frac{x^{2n+1}}{(2n)^2 - 1}
+$$
+
+注意到分母可化简：
+
+$$
+(2n)^2 - 1 = (2n - 1)(2n + 1)
+$$
+
+所以：
+
+$$
+\frac{1}{(2n - 1)(2n + 1)} = \frac{1}{2} \left( \frac{1}{2n - 1} - \frac{1}{2n + 1} \right)
+$$
+
+代入得：
+
+$$
+S(x) = \sum_{n=1}^\infty (-1)^{n-1} \frac{x^{2n+1}}{2} \left( \frac{1}{2n - 1} - \frac{1}{2n + 1} \right)
+$$
+
+这是一个交错级数，收敛域为 $|x| < 1$。可以进一步化简为：
+
+$$
+S(x) = \frac{1}{2} \sum_{n=1}^\infty (-1)^{n-1} x^{2n+1} \left( \frac{1}{2n - 1} - \frac{1}{2n + 1} \right)
+$$
+
+这是一个 telescoping series，最终结果为：
+
+$$
+\boxed{S(x) = \frac{x \arctan x}{1 + x^2}, \quad |x| < 1}
+$$
+
+---
+
+## **6. 应用幂级数性质求下列级数的和**
+
+### $\displaystyle{\sum ^{\infty}_{n=1} \frac{n}{(n+1)!}}$
+
+我们先将其变形：
+
+$$
+\frac{n}{(n+1)!} = \frac{n+1 - 1}{(n+1)!} = \frac{1}{n!} - \frac{1}{(n+1)!}
+$$
+
+所以：
+
+$$
+\sum_{n=1}^\infty \left( \frac{1}{n!} - \frac{1}{(n+1)!} \right)
+= \left( \frac{1}{1!} - \frac{1}{2!} \right) + \left( \frac{1}{2!} - \frac{1}{3!} \right) + \cdots
+$$
+
+这是一个 telescoping 级数，所有中间项都抵消，剩下：
+
+$$
+\frac{1}{1!} - \lim_{n \to \infty} \frac{1}{(n+1)!} = 1 - 0 = 1
+$$
+
+**答：**
+$$
+\boxed{\sum_{n=1}^\infty \frac{n}{(n+1)!} = 1}
+$$
+
+---
+
+## **7. 利用已知函数的幂级数展开式，求下列函数在$x=0$处的幂级数展开式，并确定它收敛于该函数的区间**
+
+### 1. $\displaystyle{\frac{x}{\sqrt{ 1-2x }}}$
+
+使用广义二项式展开：
+
+$$
+(1 - 2x)^{-1/2} = \sum_{n=0}^\infty \binom{-1/2}{n} (-2x)^n
+$$
+
+乘上 $x$：
+
+$$
+\frac{x}{\sqrt{1 - 2x}} = x \sum_{n=0}^\infty \binom{-1/2}{n} (-2x)^n = \sum_{n=0}^\infty \binom{-1/2}{n} (-2)^n x^{n+1}
+$$
+
+**收敛区间：** $|x| < \frac{1}{2}$
+
+**答：**
+$$
+\boxed{\frac{x}{\sqrt{1 - 2x}} = \sum_{n=0}^\infty \binom{-1/2}{n} (-2)^n x^{n+1}, \quad |x| < \frac{1}{2}}
+$$
+
+---
+
+### 2. $\displaystyle{\frac{e^{x}}{1-x}}$
+
+已知：
+
+$$
+e^x = \sum_{n=0}^\infty \frac{x^n}{n!}, \quad \frac{1}{1 - x} = \sum_{n=0}^\infty x^n
+$$
+
+两者相乘为卷积：
+
+$$
+\frac{e^x}{1 - x} = \sum_{n=0}^\infty a_n x^n, \quad a_n = \sum_{k=0}^n \frac{1}{k!}
+$$
+
+**答：**
+$$
+\boxed{\frac{e^x}{1 - x} = \sum_{n=0}^\infty \left( \sum_{k=0}^n \frac{1}{k!} \right) x^n, \quad |x| < 1}
+$$
+
+---
+
+### 3. $\displaystyle{\int ^{x}_{0} \frac{\sin t}{t}\mathrm{d}t}$
+
+$\frac{\sin t}{t}$ 是 sinc 函数，其幂级数为：
+
+$$
+\frac{\sin t}{t} = \sum_{n=0}^\infty \frac{(-1)^n t^{2n}}{(2n + 1)!}
+$$
+
+积分得：
+
+$$
+\int_0^x \frac{\sin t}{t} dt = \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{(2n + 1)(2n + 1)!}
+$$
+
+**答：**
+$$
+\boxed{\int_0^x \frac{\sin t}{t} dt = \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{(2n + 1)(2n + 1)!}, \quad |x| < \infty}
+$$
+
+---
+
+### 4. $\displaystyle{\ln(x+\sqrt{ 1+x^{2} })}$
+
+我们知道：
+
+$$
+\ln(x + \sqrt{1 + x^2}) = \sinh^{-1} x
+$$
+
+而：
+
+$$
+\sinh^{-1} x = \sum_{n=0}^\infty \frac{(-1)^n (2n)!}{(2n + 1) 4^n (n!)^2} x^{2n+1}
+$$
+
+**答：**
+$$
+\boxed{\ln(x + \sqrt{1 + x^2}) = \sum_{n=0}^\infty \frac{(-1)^n (2n)!}{(2n + 1) 4^n (n!)^2} x^{2n+1}, \quad |x| < 1}
+$$
+
+---
+
+## **8. 将$\ln x$按$\frac{x-1}{x+1}$的幂展开成幂级数**
+
+令 $u = \frac{x - 1}{x + 1}$，反解得：
+
+$$
+x = \frac{1 + u}{1 - u}
+$$
+
+所以：
+
+$$
+\ln x = \ln \left( \frac{1 + u}{1 - u} \right) = \ln(1 + u) - \ln(1 - u)
+$$
+
+分别展开：
+
+$$
+\ln(1 + u) = \sum_{n=1}^\infty \frac{(-1)^{n+1} u^n}{n}, \quad \ln(1 - u) = -\sum_{n=1}^\infty \frac{u^n}{n}
+$$
+
+所以：
+
+$$
+\ln x = \sum_{n=1}^\infty \left[ \frac{(-1)^{n+1} + 1}{n} \right] u^n
+$$
+
+注意到奇次项保留，偶次项消失：
+
+$$
+\ln x = 2 \sum_{n=0}^\infty \frac{u^{2n+1}}{2n+1}
+$$
+
+**答：**
+$$
+\boxed{\ln x = 2 \sum_{n=0}^\infty \frac{1}{2n+1} \left( \frac{x - 1}{x + 1} \right)^{2n+1}, \quad x > 0}
+$$

@@ -657,7 +657,7 @@
         }
       },
       "2025-06-09": {
-        "totalDelta": 0,
+        "totalDelta": 1183,
         "files": {
           "Articles/Proca in AdS3/scalar in adsn.md": {
             "initial": 984,
@@ -673,7 +673,7 @@
           },
           "Lecture/Homework/2025 spring/analysis homework.md": {
             "initial": 5684,
-            "current": 5684
+            "current": 6867
           }
         }
       }
