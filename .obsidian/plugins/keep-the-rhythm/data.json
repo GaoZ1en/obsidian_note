@@ -686,7 +686,7 @@
         }
       },
       "2025-06-10": {
-        "totalDelta": 1233,
+        "totalDelta": 1232,
         "files": {
           "Reading/p-form gauge field and edge mode.md": {
             "initial": 55,
@@ -706,7 +706,7 @@
           },
           "Development/arxiv manager/present issues.md": {
             "initial": 0,
-            "current": 12
+            "current": 11
           }
         }
       }
