@@ -686,11 +686,11 @@
         }
       },
       "2025-06-10": {
-        "totalDelta": 13,
+        "totalDelta": 570,
         "files": {
           "Reading/p-form gauge field and edge mode.md": {
             "initial": 55,
-            "current": 68
+            "current": 625
           }
         }
       }
