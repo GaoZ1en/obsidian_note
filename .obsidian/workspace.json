@@ -109,7 +109,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -329,10 +329,10 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "32eac039ca88ee28",
+  "active": "e18c9ff43040c694",
   "lastOpenFiles": [
-    "Development/arxiv manager/phase 1.md",
     "Development/arxiv manager/basic.md",
+    "Development/arxiv manager/phase 1.md",
     "arxiv manager.md",
     "Development/arxiv manager",
     "Development",

@@ -9,3 +9,5 @@ S & =-\frac{1}{2}\int _{M}F\wedge \star F  \\
 \end{align}
 $$
 
+where $\displaystyle{F=\mathrm{d}A}$ is the field strength. take a variation
+
