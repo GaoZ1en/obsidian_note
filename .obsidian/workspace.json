@@ -69,13 +69,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading/p-form gauge field and edge mode.md",
+                "file": "Development/arxiv manager/present issues.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "p-form gauge field and edge mode"
+              "title": "present issues"
             }
           }
         ],
@@ -234,8 +234,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5,
-    "collapsed": true
+    "width": 305.5
   },
   "right": {
     "id": "be754014b7083e79",
@@ -301,10 +300,11 @@
   },
   "active": "e18c9ff43040c694",
   "lastOpenFiles": [
+    "Development/arxiv manager/phase 1.md",
+    "Development/arxiv manager/present issues.md",
     "Reading/p-form gauge field and edge mode.md",
     "Articles/Proca in AdS3/scalar in adsn.md",
     "Development/arxiv manager/basic.md",
-    "Development/arxiv manager/phase 1.md",
     "arxiv manager.md",
     "Development/arxiv manager",
     "Development",
@@ -329,7 +329,6 @@
     "Lecture/Homework/2025 spring/python for physics/final thesis.md",
     "Articles/quantization/article/main.md",
     "Lecture/Homework/2025 spring/python for general purpose/homework11.md",
-    "Articles/quantization/article/after ai/appendix B.md",
     "Attachments/Pasted image 20250602105133.png",
     "Attachments/Pasted image 20250602105121.png",
     "Articles/Proca in AdS3",

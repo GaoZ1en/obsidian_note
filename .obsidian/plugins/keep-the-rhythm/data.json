@@ -686,7 +686,7 @@
         }
       },
       "2025-06-10": {
-        "totalDelta": 1221,
+        "totalDelta": 1233,
         "files": {
           "Reading/p-form gauge field and edge mode.md": {
             "initial": 55,
@@ -699,6 +699,14 @@
           "Articles/Proca in AdS3/scalar in adsn.md": {
             "initial": 984,
             "current": 984
+          },
+          "Development/arxiv manager/phase 1.md": {
+            "initial": 643,
+            "current": 643
+          },
+          "Development/arxiv manager/present issues.md": {
+            "initial": 0,
+            "current": 12
           }
         }
       }
