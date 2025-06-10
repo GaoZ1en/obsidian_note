@@ -108,3 +108,60 @@ A & =A_{\text{ex}}+A_{\text{co}}+A_{\text{harm}} \\
 \mathcal{D}A & =\mathcal{D}A_{\text{ex}}\mathcal{D}A_{\text{co}}\mathcal{D}A_{\text{harm}}
 \end{align}
 $$
+
+we can do the similar decomposition for $\displaystyle{\phi}$
+
+$$\tag{1.13}
+\begin{align}
+\phi & =\phi _{\text{topo}}+\phi _{\text{co}}+\phi _{\text{const}}
+\end{align}
+$$
+
+with $\displaystyle{\mathrm{d}\phi _{\text{topo}}\in \frac{2\pi}{q}\mathcal{H}^{1}(\mathcal{M},\mathbb{Z})}$. we therefore have
+
+$$\tag{1.14}
+\begin{align}
+|\mathcal{G}| & =|\mathcal{G}_{\text{topo}}|\int \mathcal{D}\phi _{\text{const}}\int\mathcal{D}\phi _{\text{co}}
+\end{align}
+$$
+
+notice that only the coexact part contributes to the action, so $\displaystyle{A_{\text{ex}}}$ and $\displaystyle{A_{\text{harm}}}$ get integrated over freely, which leads to infinities if not for several cancellations. by definition, we have
+
+$$\tag{1.15}
+\begin{align}
+A_{\text{ex}}=\mathrm{d}\chi
+\end{align}
+$$
+
+for some $\displaystyle{\chi}$. we remove the zero mode ambiguity by requiring $\displaystyle{\chi}$ to integrate to zero. we get a Jacobian determinant $\displaystyle{\mathcal{D}A_{\text{ex}}=\mathcal{D}\chi=\det'(\Delta _{0})^{1/2}\mathcal{D'}\chi}$, where $\displaystyle{\Delta _{0}}$ is the Laplacian on zero-forms and the primes indicate the omission of the zero mode. we then have the cancellation
+
+$$\tag{1.16}
+\begin{align}
+\frac{\int \mathcal{D}'\chi}{\int \mathcal{D}\phi _{\mathrm{co}}}=1
+\end{align}
+$$
+
+the integration over harmonic 1-forms $\displaystyle{A_{\text{harm}}}$ gives the volume of $\displaystyle{H^{1}(\mathcal{M},\mathbb{R})}$. the quotient by $\displaystyle{\mathcal{G}_{\text{topo}}\simeq \frac{2\pi}{q}H^{1}(\mathcal{M},\mathbb{Z})}$ renders it finite. the integral $\displaystyle{|U(1)|\equiv \int \mathcal{D}\phi _{\text{const}}}$ over the constant gauge transformation gives the volume of $\displaystyle{U(1)}$ with a certain measure. overall we have
+
+$$\tag{1.17}
+\begin{align}
+\mathcal{Z}_{\mathrm{PI}}^{p=1}[\mathcal{M}] & =\sum _{\mathcal{F}\in \frac{2\pi}{q}\mathcal{H}^{2}(\mathcal{M},\mathbb{Z})}e^{-S[\mathcal{F}]}\det'(\Delta _{0})^{1/2} \left|\frac{H^{1}(\mathcal{M},\mathbb{R})}{\frac{2\pi}{q}H^{1}(\mathcal{M},\mathbb{Z})}\right| \frac{1}{|U(1)|}\int \mathcal{D}A_{\text{co}} e^{-S[\mathrm{d}A_{\text{co}}]}
+\end{align}
+$$
+
+note that $\displaystyle{\mathrm{d}\star A_{\text{co }}}$ by definition, then the action reduces to
+
+$$\tag{1.18}
+\begin{align}
+S[\mathrm{d}A_{\text{co}}] & =\frac{1}{2}\int _{\mathcal{M}} \mathrm{d}A_{\text{co}}\wedge \star \mathrm{d}A_{\text{co}} \\
+  & =\frac{1}{2}\int _{\mathcal{M}}A_{\text{co}}\wedge \star \Delta _{1}A_{\text{co}}
+\end{align}
+$$
+
+where $\displaystyle{\Delta _{1}=-(-1)^{D}\star \mathrm{d}\star \mathrm{d}-\mathrm{d}\star \mathrm{d}\star}$ is the Hodge Laplacian on 1-forms. the integration over $\displaystyle{A_{\text{co}}}$ is Gaussian, which gives
+
+$$\tag{1.18}
+\begin{align}
+\mathcal{Z}^{p=1}_{\text{ PI }}[\mathcal{M}] & =\frac{\det'(\Delta _{0})^{1/2}}{\det'(\Delta)}
+\end{align}
+$$
