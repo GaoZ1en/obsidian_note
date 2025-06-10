@@ -48,7 +48,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 0 ● 1 yay"
+              "title": "Terminal: KoishiLaptop ❐ workspace ● 1 editor"
             }
           },
           {
@@ -93,8 +93,7 @@
               "title": "p-form gauge field and edge mode"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -314,10 +313,10 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "e18c9ff43040c694",
+  "active": "b0357530cb9d1c74",
   "lastOpenFiles": [
-    "Articles/Proca in AdS3/scalar in adsn.md",
     "Reading/p-form gauge field and edge mode.md",
+    "Articles/Proca in AdS3/scalar in adsn.md",
     "Development/arxiv manager/basic.md",
     "Development/arxiv manager/phase 1.md",
     "arxiv manager.md",

@@ -162,6 +162,14 @@ where $\displaystyle{\Delta _{1}=-(-1)^{D}\star \mathrm{d}\star \mathrm{d}-\math
 
 $$\tag{1.18}
 \begin{align}
-\mathcal{Z}^{p=1}_{\text{ PI }}[\mathcal{M}] & =\frac{\det'(\Delta _{0})^{1/2}}{\det'(\Delta)}
+\mathcal{Z}^{p=1}_{\text{ PI }}[\mathcal{M}] & =\frac{\det'(\Delta _{0})^{1/2}}{\det'(\Delta _{1}^{T})^{1/2}} \frac{1}{|U(1)|} \left| \frac{H^{1}(\mathcal{M},\mathbb{R})}{\frac{2\pi}{q}H^{1}(\mathcal{M},\mathbb{R})}\right|\sum _{\mathcal{F}\in \frac{2\pi}{q}\mathcal{H}^{2}(\mathcal{M},\mathbb{Z})}e^{-S[\mathcal{F}]}
+\end{align}
+$$
+
+for a general $\displaystyle{p}$, the situation is similar, but we have gauge transformations for gauge transformations, and so on. we have
+
+$$\tag{1.19}
+\begin{align}
+\mathcal{Z}^{p}_{\text{ PI }}[\mathcal{M}] & =\sum _{\mathcal{F}\in \frac{2\pi}{q}\mathcal{H}^{p+1}(\mathcal{M},\mathbb{Z})}e^{-S[\mathcal{F}]}\prod ^{p}_{k=1}\left(\det'(\Delta _{k}^{T})^{-1/2} \left|\frac{H^{k}(\mathcal{M},\mathbb{R})}{\frac{2\pi}{q} H^{k}(\mathcal{M},\mathbb{Z})}\right|\right)^{(-)^{p-k}}
 \end{align}
 $$
