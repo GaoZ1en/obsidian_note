@@ -52425,7 +52425,10 @@ var CopilotAgent = class {
               ...this.plugin.settings.proxy.startsWith("http://") ? { HTTP_PROXY: this.plugin.settings.proxy } : {},
               ...this.plugin.settings.proxy.startsWith(
                 "https://"
-              ) ? { HTTPS_PROXY: this.plugin.settings.proxy } : {}
+              ) ? { HTTPS_PROXY: this.plugin.settings.proxy } : {},
+              ...this.plugin.settings.extraCACerts && this.plugin.settings.extraCACerts.trim() !== "" ? {
+                NODE_EXTRA_CA_CERTS: this.plugin.settings.extraCACerts.trim()
+              } : {}
             }
           }
         }
@@ -52942,13 +52945,16 @@ var sendMessage = async (data, accessToken) => {
 // src/copilot-chat/store/slices/message.tsx
 var defaultModels = [
   { label: "GPT-4o", value: "gpt-4o-2024-08-06" },
+  { label: "GPT-4.1", value: "gpt-4.1-2025-04-14" },
   { label: "GPT-o1", value: "o1-2024-12-17" },
   { label: "GPT-o3-mini", value: "o3-mini" },
+  { label: "GPT-o4-mini", value: "o4-mini" },
   { label: "Claude 3.7 Sonnet Thinking", value: "claude-3.7-sonnet-thought" },
   { label: "Claude 3.7 Sonnet", value: "claude-3.7-sonnet" },
   { label: "Claude 3.5 Sonnet", value: "claude-3.5-sonnet" },
+  { label: "Claude Sonnet 4", value: "claude-sonnet-4" },
   { label: "Gemini 2.0 Flash", value: "gemini-2.0-flash-001" },
-  { label: "Gemini 2.5 Pro", value: "gemini-2.5-pro-preview-03-25" }
+  { label: "Gemini 2.5 Pro", value: "gemini-2.5-pro-preview-05-06" }
 ];
 var createMessageSlice = (set, get) => ({
   messages: [],
@@ -53126,7 +53132,8 @@ var DEFAULT_SETTINGS = {
     selectedModel: defaultModels[4]
   },
   systemPrompt: "You are GitHub Copilot, an AI assistant. You are helping the user with their tasks in Obsidian.",
-  invertEnterSendBehavior: false
+  invertEnterSendBehavior: false,
+  extraCACerts: ""
 };
 var CopilotPluginSettingTab = class extends import_obsidian9.PluginSettingTab {
   constructor(app, plugin) {
@@ -53325,6 +53332,20 @@ var CopilotPluginSettingTab = class extends import_obsidian9.PluginSettingTab {
         (0, import_obsidian9.debounce)(
           async (value) => {
             this.plugin.settings.proxy = value;
+            await this.saveSettings();
+          },
+          1e3,
+          true
+        )
+      )
+    );
+    new import_obsidian9.Setting(containerEl).setName("Root certificates (NODE_EXTRA_CA_CERTS)").setDesc(
+      "Path to a PEM file containing additional root certificates. This will be set as NODE_EXTRA_CA_CERTS for the Copilot agent. Leave blank to use system defaults."
+    ).addText(
+      (text5) => text5.setPlaceholder("C:/path/to/cacert.pem").setValue(this.plugin.settings.extraCACerts || "").onChange(
+        (0, import_obsidian9.debounce)(
+          async (value) => {
+            this.plugin.settings.extraCACerts = value;
             await this.saveSettings();
           },
           1e3,
@@ -54393,6 +54414,14 @@ var NoHistory = () => {
     (0, import_jsx_runtime6.jsxs)("div", { className: "copilot-chat-model-warning", children: [
       (0, import_jsx_runtime6.jsx)("h6", { className: "copilot-chat-model-warning-title", children: "Model Activation Required" }),
       (0, import_jsx_runtime6.jsx)("p", { className: "copilot-chat-model-warning-text", children: 'To use Claude or Gemini models, you might need to enable them in your IDE first. Make a request in your IDE and click "Enable" when prompted.' })
+    ] }),
+    (0, import_jsx_runtime6.jsxs)("div", { className: "copilot-chat-model-warning", children: [
+      (0, import_jsx_runtime6.jsx)("h6", { className: "copilot-chat-model-warning-title", children: "Some users have seen their Copilot access suspended after using this Chat extension." }),
+      (0, import_jsx_runtime6.jsxs)("p", { className: "copilot-chat-model-warning-text", children: [
+        "If you experience this, you can try to restore your access by contacting GitHub support. Use this chat extension at your own risk. Please see",
+        " ",
+        (0, import_jsx_runtime6.jsx)("a", { href: "https://github.com/Pierrad/obsidian-github-copilot/issues/67", children: "the following issue for more details." })
+      ] })
     ] })
   ] });
 };
@@ -66476,7 +66505,7 @@ var crypt32_default = __toBinary("TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAA
 var CopilotPlugin = class extends import_obsidian18.Plugin {
   constructor() {
     super(...arguments);
-    this.version = "1.1.2";
+    this.version = "1.1.5";
     this.tabSize = Vault_default.DEFAULT_TAB_SIZE;
   }
   async onload() {
@@ -66550,6 +66579,17 @@ var CopilotPlugin = class extends import_obsidian18.Plugin {
     }
     this.registerView(CHAT_VIEW_TYPE, (leaf) => new ChatView(leaf, this));
     this.activateView();
+    this.addCommand({
+      id: "open-copilot-chat",
+      name: "Open Copilot Chat",
+      callback: () => {
+        this.activateView();
+        const leaves = this.app.workspace.getLeavesOfType(CHAT_VIEW_TYPE);
+        if (leaves.length > 0) {
+          this.app.workspace.revealLeaf(leaves[0]);
+        }
+      }
+    });
   }
   onunload() {
     var _a;

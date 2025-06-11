@@ -1,0 +1,724 @@
+{
+  "settings": {
+    "intensityLevels": {
+      "low": 100,
+      "medium": 500,
+      "high": 1000
+    },
+    "colors": {
+      "light": {
+        "level_0": "#e0e0e0",
+        "level_1": "#9be9a8",
+        "level_2": "#6ad286",
+        "level_3": "#2ebd54",
+        "level_4": "#12a53e"
+      },
+      "dark": {
+        "level_0": "#ebedf015",
+        "level_1": "#0e4429",
+        "level_2": "#006d32",
+        "level_3": "#26a641",
+        "level_4": "#39d353"
+      }
+    },
+    "showOverview": true,
+    "showEntries": true,
+    "showHeatmap": true,
+    "enabledScripts": [
+      "LATIN"
+    ]
+  },
+  "devices": {
+    "undefined": {},
+    "14fe3a1f-e2a1-4150-902f-193b5d9192db": {
+      "2025-05-26": {
+        "totalDelta": 3519,
+        "files": {
+          "Articles/quantization/quantization for 1+3 dimensional electric field.md": {
+            "initial": 3202,
+            "current": 3937
+          },
+          "Drafts/path integral quantization for first and second class constraints.md": {
+            "initial": 4746,
+            "current": 4746
+          },
+          "Drafts/Nambu-Goto action and cosmic string.md": {
+            "initial": 19,
+            "current": 19
+          },
+          "Drafts/project euler.md": {
+            "initial": 236,
+            "current": 236
+          },
+          "Drafts/prompt.md": {
+            "initial": 2,
+            "current": 2
+          },
+          "Drafts/BMS group.md": {
+            "initial": 1044,
+            "current": 1044
+          },
+          "Drafts/electric field.md": {
+            "initial": 238,
+            "current": 1377
+          },
+          "Note/Mathematics/algebraic geometry.md": {
+            "initial": 381,
+            "current": 381
+          },
+          "Note/Mathematics/Applications of Laplace transform in integration calculating.md": {
+            "initial": 402,
+            "current": 402
+          },
+          "Note/Mathematics/Applications of residue theorem in integration calculating.md": {
+            "initial": 6,
+            "current": 6
+          },
+          "Note/Mathematics/Bäcklund transformation.md": {
+            "initial": 713,
+            "current": 713
+          },
+          "Note/Mathematics/useful matrix inverse.md": {
+            "initial": 0,
+            "current": 85
+          },
+          "TODO.md": {
+            "initial": 71,
+            "current": 69
+          },
+          "Articles/Test particle/some direct calculation.md": {
+            "initial": 2038,
+            "current": 2368
+          },
+          "Articles/Test particle/Untitled.md": {
+            "initial": 242,
+            "current": 242
+          },
+          "Articles/quantization/path integral quantization for Proca field.md": {
+            "initial": 6572,
+            "current": 6572
+          },
+          "Articles/quantization/article/abstract.md": {
+            "initial": 0,
+            "current": 19
+          },
+          "Articles/quantization/article/introduction.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Articles/quantization/article/section 1.md": {
+            "initial": 0,
+            "current": 1155
+          },
+          "Articles/quantization/article/conclusion.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Articles/quantization/article/appendix A.md": {
+            "initial": 0,
+            "current": 9
+          },
+          "Articles/quantization/article/section 2.md": {
+            "initial": 0,
+            "current": 18
+          },
+          "Articles/quantization/article/section 3.md": {
+            "initial": 0,
+            "current": 31
+          },
+          "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md": {
+            "initial": 3516,
+            "current": 3516
+          },
+          "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md": {
+            "initial": 2384,
+            "current": 2384
+          },
+          "Articles/quantization/first example.md": {
+            "initial": 2190,
+            "current": 2190
+          }
+        }
+      },
+      "2025-05-27": {
+        "totalDelta": 4733,
+        "files": {
+          "Articles/quantization/article/section 2.md": {
+            "initial": 1155,
+            "current": 1623
+          },
+          "Articles/quantization/article/appendix A.md": {
+            "initial": 8,
+            "current": 1997
+          },
+          "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md": {
+            "initial": 3516,
+            "current": 3516
+          },
+          "Drafts/BMS group.md": {
+            "initial": 1044,
+            "current": 1044
+          },
+          "Articles/Test particle/some direct calculation.md": {
+            "initial": 2368,
+            "current": 2511
+          },
+          "TODO.md": {
+            "initial": 69,
+            "current": 71
+          },
+          "Drafts/ward identity.md": {
+            "initial": 0,
+            "current": 755
+          },
+          "Articles/some generalization CPS/harmonic oscillator.md": {
+            "initial": 744,
+            "current": 744
+          },
+          "Articles/some generalization CPS/p-form symmetry.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Articles/quantization/path integral quantization for constrained system.md": {
+            "initial": 5578,
+            "current": 5576
+          },
+          "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md": {
+            "initial": 1580,
+            "current": 1580
+          },
+          "Articles/quantization/first example.md": {
+            "initial": 2190,
+            "current": 2190
+          },
+          "Articles/quantization/harmonic oscillator with multiplier.md": {
+            "initial": 1954,
+            "current": 1954
+          },
+          "Articles/quantization/article/section 3.md": {
+            "initial": 31,
+            "current": 832
+          },
+          "Articles/quantization/article/section 1_introduction.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Lecture/2025 spring/english/week 14.md": {
+            "initial": 0,
+            "current": 583
+          }
+        }
+      },
+      "2025-05-28": {
+        "totalDelta": 13696,
+        "files": {
+          "Lecture/2025 spring/english/week 14.md": {
+            "initial": 585,
+            "current": 209
+          },
+          "Articles/quantization/article/section 2.md": {
+            "initial": 1623,
+            "current": 1623
+          },
+          "Articles/quantization/article/appendix A.md": {
+            "initial": 1997,
+            "current": 1997
+          },
+          "Articles/quantization/article/section 3.md": {
+            "initial": 832,
+            "current": 3294
+          },
+          "Articles/Test particle/some direct calculation.md": {
+            "initial": 2511,
+            "current": 2511
+          },
+          "TODO.md": {
+            "initial": 71,
+            "current": 71
+          },
+          "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md": {
+            "initial": 3516,
+            "current": 3516
+          },
+          "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md": {
+            "initial": 2384,
+            "current": 2384
+          },
+          "Articles/quantization/path integral quantization for Proca field.md": {
+            "initial": 6572,
+            "current": 6572
+          },
+          "Articles/quantization/article/appendix B.md": {
+            "initial": 0,
+            "current": 2346
+          },
+          "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md": {
+            "initial": 1580,
+            "current": 1580
+          },
+          "Articles/quantization/quantization for 1+3 dimensional electric field.md": {
+            "initial": 3937,
+            "current": 3936
+          },
+          "Articles/quantization/article/section 1_introduction.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Articles/quantization/article/conclusion.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Articles/quantization/article 1/appendix A.md": {
+            "initial": 1997,
+            "current": 1997
+          },
+          "Articles/quantization/article 1/appendix B.md": {
+            "initial": 2346,
+            "current": 2346
+          },
+          "Articles/quantization/article 1/section 2.md": {
+            "initial": 1623,
+            "current": 1623
+          },
+          "Articles/quantization/article 1/section 3.md": {
+            "initial": 3294,
+            "current": 3294
+          },
+          "Articles/quantization/article 1/conclusion.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Articles/quantization/article 1/abstract.md": {
+            "initial": 19,
+            "current": 0
+          },
+          "Articles/quantization/article 1/section 1_introduction.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Articles/quantization/article/main.md": {
+            "initial": 0,
+            "current": 9284
+          }
+        }
+      },
+      "2025-05-29": {
+        "totalDelta": 10565,
+        "files": {
+          "Articles/quantization/article/main.md": {
+            "initial": 9284,
+            "current": 9284
+          },
+          "Articles/quantization/article/section 3.md": {
+            "initial": 3294,
+            "current": 3294
+          },
+          "Articles/quantization/article/after ai/section 3.md": {
+            "initial": 0,
+            "current": 3305
+          },
+          "Articles/quantization/article/section 2.md": {
+            "initial": 1623,
+            "current": 1623
+          },
+          "Articles/quantization/article/after ai/section 2.md": {
+            "initial": 0,
+            "current": 1343
+          },
+          "Articles/quantization/article/after ai/appendix A.md": {
+            "initial": 0,
+            "current": 2080
+          },
+          "Articles/quantization/article/appendix A.md": {
+            "initial": 1997,
+            "current": 1997
+          },
+          "Articles/quantization/article/after ai/appendix B.md": {
+            "initial": 0,
+            "current": 2441
+          },
+          "Articles/quantization/article/appendix B.md": {
+            "initial": 2346,
+            "current": 2346
+          },
+          "Articles/quantization/article/after ai/main.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Homework/Bachelor Thesis/cydsmtddal/covariant phase space formalism and noether theorem.md": {
+            "initial": 336,
+            "current": 336
+          },
+          "Lecture/2025 spring/python for general purpose/homework 10.md": {
+            "initial": 0,
+            "current": 782
+          },
+          "Articles/Proca in AdS3/some basics.md": {
+            "initial": 0,
+            "current": 614
+          }
+        }
+      },
+      "2025-05-31": {
+        "totalDelta": 141,
+        "files": {
+          "Articles/Proca in AdS3/scalar.md": {
+            "initial": 0,
+            "current": 141
+          },
+          "Lecture/2025 spring/python for general purpose/homework 10.md": {
+            "initial": 782,
+            "current": 782
+          }
+        }
+      },
+      "2025-06-01": {
+        "totalDelta": 6370,
+        "files": {
+          "Articles/Proca in AdS3/scalar.md": {
+            "initial": 141,
+            "current": 3824
+          },
+          "Lecture/2025 spring/python for physics/ode.md": {
+            "initial": 0,
+            "current": 1973
+          },
+          "Articles/Proca in AdS3/scalar in adsn.md": {
+            "initial": 0,
+            "current": 714
+          }
+        }
+      },
+      "2025-06-02": {
+        "totalDelta": 5429,
+        "files": {
+          "Articles/Proca in AdS3/scalar in adsn.md": {
+            "initial": 714,
+            "current": 958
+          },
+          "Articles/Proca in AdS3/scalar.md": {
+            "initial": 3824,
+            "current": 908
+          },
+          "Drafts/adsn scalar.md": {
+            "initial": 0,
+            "current": 3656
+          },
+          "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md": {
+            "initial": 3516,
+            "current": 3516
+          },
+          "Articles/Proca in AdS3/proca in adsn.md": {
+            "initial": 0,
+            "current": 654
+          },
+          "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md": {
+            "initial": 2384,
+            "current": 2384
+          },
+          "TODO.md": {
+            "initial": 71,
+            "current": 73
+          },
+          "Drafts/adsn proca.md": {
+            "initial": 0,
+            "current": 3789
+          }
+        }
+      },
+      "2025-06-03": {
+        "totalDelta": 855,
+        "files": {
+          "Articles/Proca in AdS3/proca in adsn.md": {
+            "initial": 654,
+            "current": 988
+          },
+          "Articles/Proca in AdS3/scalar in adsn.md": {
+            "initial": 958,
+            "current": 958
+          },
+          "Drafts/adsn proca.md": {
+            "initial": 3789,
+            "current": 4042
+          },
+          "Articles/Proca in AdS3/proca in adsn with n>3.md": {
+            "initial": 0,
+            "current": 268
+          }
+        }
+      },
+      "2025-06-04": {
+        "totalDelta": -818,
+        "files": {
+          "Articles/Proca in AdS3/proca in adsn with n>3.md": {
+            "initial": 268,
+            "current": 1402
+          },
+          "Articles/Proca in AdS3/scalar in adsn.md": {
+            "initial": 958,
+            "current": 958
+          },
+          "Articles/Proca in AdS3/proca in adsn.md": {
+            "initial": 988,
+            "current": 988
+          },
+          "TODO.md": {
+            "initial": 73,
+            "current": 76
+          },
+          "Drafts/adsn proca.md": {
+            "initial": 4042,
+            "current": 2087
+          }
+        }
+      },
+      "2025-06-05": {
+        "totalDelta": 367,
+        "files": {
+          "Drafts/adsn proca.md": {
+            "initial": 2087,
+            "current": 16
+          },
+          "Articles/Proca in AdS3/proca in adsn with n>3.md": {
+            "initial": 1402,
+            "current": 1402
+          },
+          "Articles/Proca in AdS3/scalar in adsn.md": {
+            "initial": 958,
+            "current": 958
+          },
+          "TODO.md": {
+            "initial": 76,
+            "current": 76
+          },
+          "Lecture/Homework/problem set/cambridge/partII/2001/quantum physics.md": {
+            "initial": 128,
+            "current": 128
+          },
+          "Lecture/Homework/Nambu-Goto.md": {
+            "initial": 0,
+            "current": 278
+          },
+          "Articles/quantization/article/after ai/main.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Articles/quantization/article/after ai/appendix A.md": {
+            "initial": 2080,
+            "current": 2080
+          },
+          "Articles/quantization/article/after ai/appendix B.md": {
+            "initial": 2441,
+            "current": 2441
+          },
+          "Articles/quantization/article/main.md": {
+            "initial": 9284,
+            "current": 9310
+          },
+          "Lecture/Homework/2025 spring/python for general purpose/homework11.md": {
+            "initial": 0,
+            "current": 885
+          },
+          "Lecture/Homework/2025 spring/python for physics/final thesis.md": {
+            "initial": 0,
+            "current": 1249
+          }
+        }
+      },
+      "2025-06-06": {
+        "totalDelta": 1223,
+        "files": {
+          "Lecture/Homework/2025 spring/python for physics/final thesis.md": {
+            "initial": 1249,
+            "current": 1249
+          },
+          "Articles/Proca in AdS3/proca in adsn with n>3.md": {
+            "initial": 1402,
+            "current": 1396
+          },
+          "Articles/Proca in AdS3/proca in ads3.md": {
+            "initial": 0,
+            "current": 988
+          },
+          "Drafts/ads3 proca.md": {
+            "initial": 0,
+            "current": 237
+          },
+          "TODO.md": {
+            "initial": 76,
+            "current": 80
+          }
+        }
+      },
+      "2025-06-07": {
+        "totalDelta": 902,
+        "files": {
+          "Articles/Proca in AdS3/proca in ads3.md": {
+            "initial": 988,
+            "current": 1574
+          },
+          "TODO.md": {
+            "initial": 78,
+            "current": 78
+          },
+          "Drafts/ads3 proca.md": {
+            "initial": 237,
+            "current": 340
+          },
+          "Articles/Proca in AdS3/scalar in adsn.md": {
+            "initial": 958,
+            "current": 967
+          },
+          "Drafts/adsn scalar.md": {
+            "initial": 3656,
+            "current": 3860
+          }
+        }
+      },
+      "2025-06-08": {
+        "totalDelta": 4965,
+        "files": {
+          "Drafts/ads3 proca.md": {
+            "initial": 345,
+            "current": 340
+          },
+          "Lecture/Homework/2025 spring/analysis homework.md": {
+            "initial": 0,
+            "current": 5684
+          },
+          "Articles/Proca in AdS3/proca in ads3.md": {
+            "initial": 1574,
+            "current": 797
+          },
+          "Drafts/adsn scalar.md": {
+            "initial": 3860,
+            "current": 3860
+          },
+          "Articles/Proca in AdS3/scalar in adsn.md": {
+            "initial": 967,
+            "current": 984
+          },
+          "Articles/Proca in AdS3/proca in adsn.md": {
+            "initial": 988,
+            "current": 988
+          },
+          "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md": {
+            "initial": 3516,
+            "current": 3516
+          },
+          "Reading/gravity/surface charge.md": {
+            "initial": 1231,
+            "current": 1231
+          },
+          "Reading/gravity/3-dimensional Einstein's gravity.md": {
+            "initial": 187,
+            "current": 187
+          },
+          "Reading/differential forms in algebraic topology/de Rham theory/de Rham theory.md": {
+            "initial": 670,
+            "current": 670
+          },
+          "Reading/differential forms in algebraic topology/de Rham theory/Untitled.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Reading/differential forms in algebraic topology/README.md": {
+            "initial": 24,
+            "current": 24
+          },
+          "Reading/computational algebraic geometry/geometry, algebra and algorithms.md": {
+            "initial": 0,
+            "current": 0
+          },
+          "Reading/deformation quantization.md": {
+            "initial": 249,
+            "current": 249
+          },
+          "Reading/Covariant phase space formalism and Pierels bracket.md": {
+            "initial": 828,
+            "current": 828
+          },
+          "Reading/Comparison between ordinary approach and current approach with example--GR with a scalar.md": {
+            "initial": 1281,
+            "current": 1281
+          },
+          "Reading/p-form gauge field and edge mode.md": {
+            "initial": 0,
+            "current": 55
+          },
+          "TODO.md": {
+            "initial": 78,
+            "current": 78
+          },
+          "arxiv manager.md": {
+            "initial": 83,
+            "current": 74
+          }
+        }
+      },
+      "2025-06-09": {
+        "totalDelta": 1904,
+        "files": {
+          "Articles/Proca in AdS3/scalar in adsn.md": {
+            "initial": 984,
+            "current": 984
+          },
+          "Reading/p-form gauge field and edge mode.md": {
+            "initial": 55,
+            "current": 55
+          },
+          "arxiv manager.md": {
+            "initial": 74,
+            "current": 78
+          },
+          "Lecture/Homework/2025 spring/analysis homework.md": {
+            "initial": 5684,
+            "current": 6867
+          },
+          "Development/arxiv manager/basic.md": {
+            "initial": 0,
+            "current": 74
+          },
+          "Development/arxiv manager/phase 1.md": {
+            "initial": 0,
+            "current": 643
+          }
+        }
+      },
+      "2025-06-10": {
+        "totalDelta": 1232,
+        "files": {
+          "Reading/p-form gauge field and edge mode.md": {
+            "initial": 55,
+            "current": 1276
+          },
+          "Development/arxiv manager/basic.md": {
+            "initial": 74,
+            "current": 74
+          },
+          "Articles/Proca in AdS3/scalar in adsn.md": {
+            "initial": 984,
+            "current": 984
+          },
+          "Development/arxiv manager/phase 1.md": {
+            "initial": 643,
+            "current": 643
+          },
+          "Development/arxiv manager/present issues.md": {
+            "initial": 0,
+            "current": 11
+          }
+        }
+      },
+      "2025-06-11": {
+        "totalDelta": 0,
+        "files": {
+          "Development/arxiv manager/present issues.md": {
+            "initial": 11,
+            "current": 11
+          }
+        }
+      }
+    }
+  }
+}
