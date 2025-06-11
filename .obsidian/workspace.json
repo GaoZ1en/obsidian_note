@@ -62,24 +62,9 @@
               "icon": "bot-message-square",
               "title": "Copilot Chat"
             }
-          },
-          {
-            "id": "e18c9ff43040c694",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development/arxiv manager/present issues.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "present issues"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -298,10 +283,10 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "e18c9ff43040c694",
+  "active": "cef33d621e94efd8",
   "lastOpenFiles": [
-    "Development/arxiv manager/phase 1.md",
     "Development/arxiv manager/present issues.md",
+    "Development/arxiv manager/phase 1.md",
     "Reading/p-form gauge field and edge mode.md",
     "Articles/Proca in AdS3/scalar in adsn.md",
     "Development/arxiv manager/basic.md",
