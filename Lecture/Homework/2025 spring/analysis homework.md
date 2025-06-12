@@ -1063,27 +1063,203 @@ $$u_{N_1+k} \leq u_{N_1} \cdot \frac{v_{N_1+k}}{v_{N_1}} \leq u_{N_1} \cdot r^k$
 
 # homework 13
 
-1. 证明：设$\displaystyle{f_{n}(x)\to f(x),x \in D,a_{n}\to0 \,(n\to \infty)\,(a_{n}>0)}$。若对每一个正整数$n$，都有$\displaystyle{|f_{n}(x)-f(x)|\leqslant a_{n},x \in D}$，则$\displaystyle{\left\{f_{n}\right\}}$在$\displaystyle{D}$上一致收敛于$\displaystyle{f}$
-2. 设$\displaystyle{f}$为定义在区间$\displaystyle{(a,b)}$内的任意函数，记$\displaystyle{f_{n}(x)= \frac{[nf(x)]}{n},n=1,2,\dots}$。证明函数列$\displaystyle{\left\{f_{n}\right\}}$在$\displaystyle{(a,b)}$内一致收敛于$\displaystyle{f}$
-3. 讨论下列函数列在所示区间$\displaystyle{D}$上是否一致收敛或内闭一致收敛？
-	1. $\displaystyle{f_{n}(x)=\sqrt{ x^{2}+\frac{1}{n^{2}} },n=1,2,\dots,D=(-1,1)}$
-	2. $\displaystyle{f_{n}(x)=\begin{cases}-(n+1)x+1, & 0\leqslant x\leqslant \frac{1}{n+1},\\0, & \frac{1}{n+1}<x\leqslant 1\end{cases}}$, $\displaystyle{n=1,2,\dots}$
-	3. $\displaystyle{f_{n}(x)= \frac{x}{n},n=1,2,\dots,D=[0,+\infty)}$
-4. 判断下列函数项级数在所示区间上的一致收敛性
-	1. $\displaystyle{\sum \frac{x^{n}}{(n-1)!}, x \in [r,-r]}$
-	2. $\displaystyle{\sum \frac{x^{2}}{(1+x^{2})^{n+1}}, x \in(-\infty,+\infty)}$
-	3. $\displaystyle{\sum \frac{(-1)^{n-1}x^{2}}{(1+x^{2})^{n}}, x \in(-\infty,+\infty)}$
-5. 若在区间$\displaystyle{I}$上，对任何正整数$\displaystyle{n}$，$\displaystyle{|u_{n}(x)|\leqslant v_{n}(x)}$。证明当$\displaystyle{\sum v_{n}(x)}$在$\displaystyle{I}$上一致收敛时，级数$\displaystyle{\sum u_{n}(x)}$也在$\displaystyle{I}$上一致收敛
-6. 证明：$\displaystyle{\left\{f_{n}\right\}}$在区间$\displaystyle{I}$上内闭一致收敛于$\displaystyle{f}$的充分必要条件是：对于任意$\displaystyle{x_{0}\in I}$，存在$\displaystyle{x_{0}}$的一个邻域$\displaystyle{U(x_{0})}$使得$\displaystyle{\left\{f_{n}\right\}}$在$\displaystyle{U(x_{0})\cap I}$上一致收敛于$\displaystyle{f}$
-7. 讨论下列函数列或函数项级数在所示区间$\displaystyle{D}$上的一致收敛性
-	1. $\displaystyle{\sum ^{\infty}_{n=2} \frac{1-2n}{(x^{2}+n^{2})(x^{2}+(n-1)^{2})}, D=[-1,1]}$
-	2. $\displaystyle{\sum 2^{n}\sin \frac{\pi}{3^{n}}, D=(0,+\infty)}$
-	3. $\displaystyle{\sum  \frac{x^{n}}{\sqrt{ n }}, D=[-1,0]}$
-	4. $\displaystyle{\sum ^{\infty}_{n=1} \frac{\sin nx}{n}, D=(0,2\pi)}$
-8. 证明：级数$\displaystyle{\sum(-1)^{n}x^{n}(1-x)}$在$\displaystyle{[0,1]}$上绝对收敛且一致收敛。但其各项绝对值组成的级数却在$\displaystyle{[0,1]}$上不一致收敛
-9. 设$\displaystyle{\left\{u_{n}(x)\right\}}$为$\displaystyle{[a,b]}$上正的递减且收敛于零的函数列，每一个$\displaystyle{u_{n}(x)}$都是$\displaystyle{[a,b]}$上的单调函数。那么级数$\displaystyle{u_{1}(x)-u_{2}(x)+u_{3}(x)-u_{4}(x)+\dots}$在$\displaystyle{[a,b]}$上不仅收敛且一致收敛
-10. 设$\displaystyle{f}$在$\displaystyle{(-\infty,+\infty)}$上有任意阶导数，记$\displaystyle{F_{n}=f^{(n)}}$，且在任意有限区间内$\displaystyle{F_{n}}$一致收敛于$\displaystyle{\varphi}$，试证明$\displaystyle{\varphi (x)=ce^{x}}$.
-11. 设可微函数列$\displaystyle{\left\{f_{n}\right\}}$在$\displaystyle{[a,b]}$上收敛，$\displaystyle{\left\{f_{n}'\right\}}$在$\displaystyle{[a,b]}$上一致有界，证明$\displaystyle{\left\{f_{n}\right\}}$在$\displaystyle{[a,b]}$上一致收敛
+## 1. 一致收敛的充分条件
+
+**证明**：已知 $f_n(x) \to f(x)$ 且 $|f_n(x) - f(x)| \leq a_n$，其中 $a_n \to 0$。
+
+对任给 $\varepsilon > 0$，由于 $a_n \to 0$，存在 $N$ 使得当 $n > N$ 时，$a_n < \varepsilon$。
+
+因此，当 $n > N$ 时，对所有 $x \in D$：
+$$|f_n(x) - f(x)| \leq a_n < \varepsilon$$
+
+这表明 $\{f_n\}$ 在 $D$ 上一致收敛于 $f$。
+
+## 2. 取整函数列的一致收敛性
+
+**证明**：$f_n(x) = \frac{[nf(x)]}{n}$，其中 $[t]$ 表示不超过 $t$ 的最大整数。
+
+由取整函数的性质：$t - 1 < [t] \leq t$，得：
+$$nf(x) - 1 < [nf(x)] \leq nf(x)$$
+
+除以 $n$：
+$$f(x) - \frac{1}{n} < f_n(x) \leq f(x)$$
+
+因此：
+$$|f_n(x) - f(x)| \leq \frac{1}{n}$$
+
+对任给 $\varepsilon > 0$，取 $N = \lceil \frac{1}{\varepsilon} \rceil$，当 $n > N$ 时：
+$$\sup_{x \in (a,b)} |f_n(x) - f(x)| \leq \frac{1}{n} < \varepsilon$$
+
+所以 $\{f_n\}$ 在 $(a,b)$ 内一致收敛于 $f$。
+
+## 3. 函数列收敛性讨论
+
+### (1) $f_n(x) = \sqrt{x^2 + \frac{1}{n^2}}$，$D = (-1,1)$
+
+显然 $f_n(x) \to |x|$ 当 $n \to \infty$。
+
+$$|f_n(x) - |x|| = \left|\sqrt{x^2 + \frac{1}{n^2}} - |x|\right| = \frac{\frac{1}{n^2}}{\sqrt{x^2 + \frac{1}{n^2}} + |x|} \leq \frac{1}{n^2} \cdot \frac{1}{\frac{1}{n}} = \frac{1}{n}$$
+
+因此在 $D = (-1,1)$ 上一致收敛。
+
+**内闭一致收敛**：对任意 $[-a,a] \subset (-1,1)$，上述估计仍成立，所以内闭一致收敛。
+
+### (2) $f_n(x) = \begin{cases} -(n+1)x + 1, & 0 \leq x \leq \frac{1}{n+1} \\ 0, & \frac{1}{n+1} < x \leq 1 \end{cases}$
+
+极限函数 $f(x) = \begin{cases} 1, & x = 0 \\ 0, & 0 < x \leq 1 \end{cases}$
+
+在 $x = \frac{1}{2(n+1)}$ 处，$f_n(x) = \frac{1}{2}$，但 $f(x) = 0$。
+
+$$\sup_{x \in [0,1]} |f_n(x) - f(x)| \geq \frac{1}{2}$$
+
+因此**不一致收敛**。
+
+**内闭一致收敛**：对任意 $[\delta, 1] \subset (0,1]$，当 $n$ 足够大使得 $\frac{1}{n+1} < \delta$ 时，在 $[\delta, 1]$ 上 $f_n(x) = 0 = f(x)$，所以内闭一致收敛。
+
+### (3) $f_n(x) = \frac{x}{n}$，$D = [0, +\infty)$
+
+显然 $f_n(x) \to 0$，但 $\sup_{x \in [0,+\infty)} |f_n(x)| = +\infty$。
+
+因此**不一致收敛**，也**不内闭一致收敛**。
+
+## 4. 函数项级数一致收敛性
+
+### (1) $\sum \frac{x^n}{(n-1)!}$，$x \in [-r, r]$
+
+对 $|x| \leq r$：
+$$\left|\frac{x^n}{(n-1)!}\right| \leq \frac{r^n}{(n-1)!}$$
+
+级数 $\sum \frac{r^n}{(n-1)!} = re^r$ 收敛，由 Weierstrass 判别法，原级数在 $[-r,r]$ 上**一致收敛**。
+
+### (2) $\sum \frac{x^2}{(1+x^2)^{n+1}}$，$x \in (-\infty, +\infty)$
+
+设 $t = \frac{x^2}{1+x^2}$，则 $0 \leq t < 1$，级数变为 $\sum t \cdot t^n = \frac{t}{1-t} = \frac{x^2}{1+x^2-x^2} = x^2$。
+
+但需检查一致收敛性。当 $x^2 \to \infty$ 时，$t \to 1$，级数发散。
+
+实际上，$\sum \frac{x^2}{(1+x^2)^{n+1}} = x^2 \sum \left(\frac{x^2}{1+x^2}\right)^n = \frac{x^2}{1+x^2}$
+
+这在 $(-\infty, +\infty)$ 上**一致收敛**，因为 $\left|\frac{x^2}{1+x^2}\right| \leq 1$。
+
+### (3) $\sum \frac{(-1)^{n-1}x^2}{(1+x^2)^n}$，$x \in (-\infty, +\infty)$
+
+这是交错级数，设 $a_n(x) = \frac{x^2}{(1+x^2)^n}$。
+
+对固定 $x$，$a_n(x)$ 单调递减趋于 0，级数收敛。
+
+但 $\sup_x a_1(x) = \sup_x \frac{x^2}{1+x^2} = 1$，不趋于 0，故**不一致收敛**。
+
+## 5. Weierstrass 判别法的推广
+
+**证明**：设 $|u_n(x)| \leq v_n(x)$ 且 $\sum v_n(x)$ 在 $I$ 上一致收敛。
+
+设 $\sum v_n(x)$ 的部分和为 $V_n(x)$，$\sum u_n(x)$ 的部分和为 $S_n(x)$。
+
+对任给 $\varepsilon > 0$，由于 $\sum v_n(x)$ 一致收敛，存在 $N$ 使得当 $m > n > N$ 时：
+$$\sup_{x \in I} \sum_{k=n+1}^m v_k(x) < \varepsilon$$
+
+因此：
+$$\sup_{x \in I} |S_m(x) - S_n(x)| = \sup_{x \in I} \left|\sum_{k=n+1}^m u_k(x)\right| \leq \sup_{x \in I} \sum_{k=n+1}^m |u_k(x)| \leq \sup_{x \in I} \sum_{k=n+1}^m v_k(x) < \varepsilon$$
+
+由 Cauchy 准则，$\sum u_n(x)$ 一致收敛。
+
+## 6. 内闭一致收敛的充要条件
+
+**证明**：
+
+**必要性**：设 $\{f_n\}$ 在 $I$ 上内闭一致收敛。对任意 $x_0 \in I$，存在 $x_0$ 的邻域 $U(x_0)$ 使得 $\overline{U(x_0) \cap I}$ 是 $I$ 的紧子集。由内闭一致收敛定义，$\{f_n\}$ 在此紧集上一致收敛，因此在 $U(x_0) \cap I$ 上一致收敛。
+
+**充分性**：设对任意 $x_0 \in I$，存在邻域 $U(x_0)$ 使得 $\{f_n\}$ 在 $U(x_0) \cap I$ 上一致收敛。
+
+对 $I$ 的任意紧子集 $K$，$\{U(x_0) : x_0 \in K\}$ 构成 $K$ 的开覆盖。由紧性，存在有限子覆盖 $\{U(x_i) : i = 1, \ldots, m\}$。
+
+在每个 $U(x_i) \cap I$ 上 $\{f_n\}$ 一致收敛，因此在它们的并 $K$ 上也一致收敛。
+
+## 7. 函数项级数一致收敛性讨论
+
+### (1) $\sum_{n=2}^{\infty} \frac{1-2n}{(x^2+n^2)(x^2+(n-1)^2)}$，$D = [-1,1]$
+
+进行部分分式分解：
+$$\frac{1-2n}{(x^2+n^2)(x^2+(n-1)^2)} = \frac{A}{x^2+n^2} + \frac{B}{x^2+(n-1)^2}$$
+
+解得：$A = -1$，$B = 1$，所以：
+$$u_n(x) = \frac{1}{x^2+(n-1)^2} - \frac{1}{x^2+n^2}$$
+
+这是望远镜级数，部分和：
+$$S_n(x) = \frac{1}{x^2+1} - \frac{1}{x^2+n^2}$$
+
+因此级数收敛于 $\frac{1}{x^2+1}$，且在 $[-1,1]$ 上**一致收敛**。
+
+### (2) $\sum 2^n \sin \frac{\pi}{3^n}$，$D = (0, +\infty)$
+
+利用 $\sin t \sim t$ 当 $t \to 0$：
+$$2^n \sin \frac{\pi}{3^n} \sim 2^n \cdot \frac{\pi}{3^n} = \pi \left(\frac{2}{3}\right)^n$$
+
+级数 $\sum \left(\frac{2}{3}\right)^n$ 收敛，原级数**一致收敛**。
+
+### (3) $\sum \frac{x^n}{\sqrt{n}}$，$D = [-1,0]$
+
+对 $x \in [-1,0]$，$|x^n| \leq 1$，且 $\sum \frac{1}{\sqrt{n}}$ 发散。
+
+但这是交错级数（当 $x < 0$ 且 $n$ 为奇数时）。使用 Abel 判别法或 Dirichlet 判别法可证明**一致收敛**。
+
+### (4) $\sum_{n=1}^{\infty} \frac{\sin nx}{n}$，$D = (0, 2\pi)$
+
+这是经典的 Dirichlet 级数。在 $(0, 2\pi)$ 内部任意紧子集上一致收敛，但在端点附近不一致收敛。
+
+因此**内闭一致收敛**但**不一致收敛**。
+
+## 8. 交错级数的收敛性
+
+**证明**：级数 $\sum (-1)^n x^n (1-x)$ 在 $[0,1]$ 上。
+
+对 $x \in [0,1)$：
+$$\sum_{n=0}^{\infty} (-1)^n x^n (1-x) = (1-x) \sum_{n=0}^{\infty} (-x)^n = (1-x) \cdot \frac{1}{1+x} = \frac{1-x}{1+x}$$
+
+在 $x = 1$ 时，级数为 $0$。
+
+**绝对收敛**：$\sum |(-1)^n x^n (1-x)| = \sum x^n (1-x)$，在 $x = 1$ 处为 $0$，在 $x \in [0,1)$ 处收敛。
+
+**一致收敛**：可以验证部分和一致收敛于 $\frac{1-x}{1+x}$。
+
+**各项绝对值级数**：$\sum x^n (1-x)$ 在 $x$ 接近 $1$ 时不一致收敛，因为当 $x \to 1^-$ 时，部分和的上确界不趋于 $0$。
+
+## 9. 单调函数列的交错级数
+
+**证明**：设 $u_n(x)$ 在 $[a,b]$ 上正、递减、趋于零，且每个 $u_n(x)$ 单调。
+
+级数 $\sum_{n=1}^{\infty} (-1)^{n-1} u_n(x)$ 满足 Leibniz 判别法条件：
+1. $u_n(x) \geq 0$
+2. $u_n(x) \geq u_{n+1}(x)$
+3. $u_n(x) \to 0$
+
+由于这些条件对所有 $x \in [a,b]$ 一致成立，级数一致收敛。
+
+## 10. 导数序列的性质
+
+**证明**：设 $f^{(n)} \to \varphi$ 在任意有限区间内一致收敛。
+
+对任意 $h \neq 0$：
+$$\varphi(x+h) - \varphi(x) = \lim_{n \to \infty} [f^{(n)}(x+h) - f^{(n)}(x)]$$
+
+由中值定理：
+$$f^{(n)}(x+h) - f^{(n)}(x) = h \cdot f^{(n+1)}(\xi_n)$$
+
+因此：
+$$\frac{\varphi(x+h) - \varphi(x)}{h} = \lim_{n \to \infty} f^{(n+1)}(\xi_n) = \varphi'(x)$$
+
+这表明 $\varphi'(x) = \varphi(x)$，所以 $\varphi(x) = ce^x$。
+
+## 11. 导数一致有界的函数列
+
+**证明**：设 $\{f_n\}$ 在 $[a,b]$ 上收敛，$\{f_n'\}$ 一致有界。
+
+由中值定理，对任意 $x, y \in [a,b]$：
+$$|f_n(x) - f_n(y)| = |f_n'(\xi_n)||x - y| \leq M|x - y|$$
+
+其中 $M$ 是 $\{f_n'\}$ 的一致界。
+
+这表明 $\{f_n\}$ 等度连续。由于 $\{f_n\}$ 逐点收敛且等度连续，由 Arzela-Ascoli 定理，$\{f_n\}$ 一致收敛。
 
 # homework 14
 
@@ -1518,3 +1694,19 @@ $$
 $$
 \boxed{\ln x = 2 \sum_{n=0}^\infty \frac{1}{2n+1} \left( \frac{x - 1}{x + 1} \right)^{2n+1}, \quad x > 0}
 $$
+
+# homework 15
+
+1. 设$\displaystyle{f}$为$\displaystyle{[-\pi,\pi]}$上的光滑函数且$\displaystyle{f(-\pi)=f(\pi)}$。$\displaystyle{a_{n},b_{n}}$为$\displaystyle{f}$的傅里叶系数，$\displaystyle{a_{n}',b_{n}'}$为$\displaystyle{f'}$的傅里叶系数，证明$\displaystyle{a'_{0}=0,a_{n}'=bn_{n},b_{n}'=-na_{n}}$
+2. 证明：若$\displaystyle{\frac{a_{0}}{2}+\sum ^{\infty}_{n=1}(a_{n}\cos nx+b_{n}\sin nx)}$中$\displaystyle{a_{n},b_{n}}$满足$\displaystyle{sup_{n}\left(|n^{3}a_{n}|,|n^{3}b_{b}|\right)\leqslant M}$，其中$\displaystyle{M}$为常数，那么上述级数收敛，且和函数具有连续的导函数
+3. 设$\displaystyle{f}$为$\displaystyle{[-\pi,\pi]}$上的可积函数，$\displaystyle{a_{0},a_{k},b_{k},(k=1,2,\dots n)}$为$\displaystyle{f}$的傅里叶系数，证明：当$\displaystyle{A_{0}=a_{0},A_{k}=a_{k},B_{k}=b_{k}(k=1,2,\dots n)}$时，积分$\displaystyle{\int ^{\pi}_{-\pi}[f(x)-T_{n}(x)]^{2}\mathrm{d}x}$取得最小值，且为 $\displaystyle{\int ^{\pi}_{-\pi}[f(x)]^{2}\mathrm{d}x-\pi\left[\frac{a_{0}^{2}}{2}+\sum ^{n}_{k=1}(a^{2}_{k}+b^{2}_{k})\right]}$。其中$\displaystyle{T_{n}(x)}$为$\displaystyle{f}$傅里叶展开的前$\displaystyle{n}$项之和。
+4. 使用傅里叶级数推导
+	1. $\displaystyle{\frac{\pi}{4}=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\dots}$
+5. 求下列函数的傅里叶级数展开式
+	1. $\displaystyle{f(x)=\frac{\pi-x}{2},0<x< 2\pi}$
+6. 把$\displaystyle{\cos \frac{x}{2}}$在$\displaystyle{[0,\pi]}$上展开成正弦级数
+7. 把$\displaystyle{f(x)=(x-1)^{2}}$在$\displaystyle{(0,1)}$上展开成余弦级数，并推导$\displaystyle{\frac{\pi ^{2}}{6}=\sum ^{\infty}_{n=1} \frac{1}{n^{2}}}$
+8. 设$\displaystyle{f}$以$\displaystyle{2\pi}$为周期且具有二阶连续的导函数，证明$\displaystyle{f}$的傅里叶级数在$\displaystyle{(-\infty,+\infty)}$上一致收敛于$\displaystyle{f}$
+9. 设$\displaystyle{f}$为$\displaystyle{[-\pi,\pi]}$上的可积函数，证明若$\displaystyle{f}$的傅里叶级数在$\displaystyle{[-\pi,\pi]}$上一致收敛于$\displaystyle{f}$，那么有Parseval等式$\displaystyle{\frac{1}{\pi}\int _{-\pi}^{\pi}[f(x)]^{2}\mathrm{d}x = \frac{a_{0}^{2}}{2}+\sum ^{\infty}_{n=1} (a_{n}^{2}+b_{n}^{2})}$
+10. 设$\displaystyle{f}$是以$\displaystyle{2\pi}$为周期且具有二阶连续可微的函数，令$\displaystyle{b_{n}= \frac{1}{\pi}\int ^{\pi}_{-\pi} f(x)\sin nx\mathrm{d}x,b''_{n}=\frac{1}{\pi}\int _{-\pi}^{\pi} f''(x)\sin nx\mathrm{d}x}$。若级数$\displaystyle{\sum b''_{n}}$绝对收敛，那么$\displaystyle{\sum ^{\infty}_{n=1}\sqrt{ |b_{n}| }\leqslant \frac{1}{2}\left( 2+\sum ^{\infty}_{n=1}|b''_{n}| \right)}$
+11. 设$\displaystyle{[a,b]}$上的连续函数列$\displaystyle{\left\{\varphi _{n}\right\}}$满足$\displaystyle{\int _{a}^{b}\varphi _{n}(x)\varphi _{m}(x)\mathrm{d}x=\delta _{nm}}$,这里$\displaystyle{\delta _{mn}}$为Kronecker delta。对于$\displaystyle{[a,b]}$上的可积函数$\displaystyle{f}$，定义$\displaystyle{a_{n}=\int ^{b}_{a}f(x)\varphi _{n}(x)\mathrm{d}x,n=1,2,\dots}$。证明$\displaystyle{\sum ^{\infty}_{n=1}a_{n}^{2}}$收敛且有不等式$\displaystyle{\sum ^{\infty}_{n=1}a_{n}^{2}\leqslant\int ^{b}_{a}[f(x)]^{2}\mathrm{d}x}$
