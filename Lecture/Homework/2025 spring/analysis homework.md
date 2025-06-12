@@ -752,7 +752,7 @@ $$u_{N_1+k} \leq u_{N_1} \cdot \frac{v_{N_1+k}}{v_{N_1}} \leq u_{N_1} \cdot r^k$
 
 证毕。
 
-# homework 9
+# homework 14
 
 ## **1. 应用逐项求导或逐项积分的方法求下列幂级数的和函数**
 
