@@ -40,9 +40,9 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 120,
+                    "columns": 104,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\u001b[1B\u001b[42D",
-                    "rows": 70
+                    "rows": 69
                   }
                 }
               },
@@ -61,21 +61,6 @@
               "pinned": true,
               "icon": "bot-message-square",
               "title": "Copilot Chat"
-            }
-          },
-          {
-            "id": "635f6d16a4be52b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture/Homework/汉语.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "汉语"
             }
           },
           {
@@ -260,7 +245,7 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://chat.qwen.ai/",
+                "url": "https://chat.qwen.ai/auth",
                 "title": "Qwen",
                 "mode": "webview"
               },
@@ -275,19 +260,18 @@
               "type": "webviewer",
               "state": {
                 "url": "https://chat.deepseek.com/a/chat/s/c76ba2e6-be84-4128-9da9-aecc2e67035b",
-                "title": "DeepSeek",
+                "title": "DeepSeek - 探索未至之境",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "DeepSeek"
+              "title": "DeepSeek - 探索未至之境"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 533.5,
+    "width": 541.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -298,7 +282,7 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "635f6d16a4be52b3",
+  "active": "e6922d049025944a",
   "lastOpenFiles": [
     "Lecture/Homework/汉语.md",
     "Lecture/Homework/2025 spring/日本文艺史.md",
