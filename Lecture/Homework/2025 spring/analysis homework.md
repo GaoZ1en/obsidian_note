@@ -752,6 +752,44 @@ $$u_{N_1+k} \leq u_{N_1} \cdot \frac{v_{N_1+k}}{v_{N_1}} \leq u_{N_1} \cdot r^k$
 
 证毕。
 
+# homework 9
+
+1. 通过对积分区间作等分分割，并取适当的点集$\displaystyle{\left\{\xi _{i}\right\}}$，把定积分看作是对应的积分和的极限，来计算下列定积分
+	1. $\displaystyle{\int ^{1}_{0}x^{3}\mathrm{d}x}$
+	2. $\displaystyle{\int ^{b}_{a}e^{x}\mathrm{d}x}$
+2. 计算下列定积分
+	1. $\displaystyle{\int ^{1}_{0}(2x+3)\mathrm{d}x}$
+	2. $\displaystyle{\int ^{e^{2}}_{e} \frac{\mathrm{d}x}{x\ln x}}$
+	3. $\displaystyle{\int ^{\pi/3}_{0} \tan ^{2}x\mathrm{d}x}$
+3. 利用定积分求极限
+	1. $\displaystyle{\lim_{ n \to \infty } n\left(\frac{1}{(n+1)^{2}}+\frac{1}{(n+2)^{2}}+\dots+ \frac{1}{(n+n)^{2}}\right)}$
+	2. $\displaystyle{\lim_{ n \to \infty } \frac{1}{n}\left(\sin \frac{\pi}{n}+\sin \frac{2\pi}{n}+\dots \sin \frac{(n-1)\pi}{n}\right)}$
+4. 证明：若$\displaystyle{T'}$是$\displaystyle{T}$增加若干分点后所得的分割，则$\displaystyle{\sum _{T'}\omega _{i}'\Delta x_{i}'\leqslant\sum _{T}\omega _{i}\Delta x_{i}}$
+5. 设$\displaystyle{f,g}$均为定义在$\displaystyle{[a,b]}$上的有界函数，仅在有限个点处$\displaystyle{f(x)\neq g(x)}$。证明：若$\displaystyle{f}$在$\displaystyle{[a,b]}$上可积，则$\displaystyle{g}$在$\displaystyle{[a,b]}$上也可积，并且$\displaystyle{\int _{a}^{b}f(x)\mathrm{d}x=\int _{a}^{b}g(x)\mathrm{d}x}$
+6. 设函数$\displaystyle{f}$在$\displaystyle{[a,b]}$上有定义，且对任给的$\displaystyle{\varepsilon>0}$，存在$\displaystyle{[a,b]}$上的可积函数，使得$\displaystyle{|f(x)-g(x)|<\varepsilon,x \in[a,b]}$。证明$\displaystyle{f}$在$\displaystyle{[a,b]}$上可积
+7. 证明：若$\displaystyle{f}$在$\displaystyle{[a,b]}$上可积,$\displaystyle{[\alpha,\beta]\subset[a,b]}$，则$\displaystyle{f}$在$\displaystyle{[\alpha,\beta]}$上也可积
+8. 设$\displaystyle{f}$在$\displaystyle{[a,b]}$上有界，$\displaystyle{\left\{a_{n}\right\}\subset[a,b]}$，$\displaystyle{\lim_{ n \to \infty }a_{n}=c}$。，证明：若$\displaystyle{f}$在$\displaystyle{[a,b]}$上只有$\displaystyle{a_{n}}$为其间断点，则$\displaystyle{f}$在$\displaystyle{[a,b]}$上可积
+9. 证明函数$\displaystyle{f(x)=\begin{cases}0, &x=0 \\\frac{1}{x}-\left[\frac{1}{x}\right],& x \in(0,1]\end{cases}}$在$\displaystyle{[0,1]}$上可积
+10. 证明：若$\displaystyle{f,g}$在$\displaystyle{[a,b]}$上可积，那么$\displaystyle{\lim_{ \left|\left|T\right|\right| \to 0 }\sum ^{n}_{i=1}f(\xi _{i})g(\eta _{i})\Delta x_{i}=\int ^{b}_{a}f(x)g(x)\mathrm{d}x}$，其中$\displaystyle{\xi _{i},\eta _{i}}$为$\displaystyle{T}$所属小区间$\displaystyle{\Delta _{i}}$中的任意两点，$\displaystyle{i=1,2,\dots,n}$
+11. 设$\displaystyle{f}$在$\displaystyle{[a,b]}$上可积，且在$\displaystyle{[a,b]}$上满足$\displaystyle{|f(x)| \geqslant m>0}$。证明$\displaystyle{\frac{1}{f}}$在$\displaystyle{[a,b]}$上可积
+12. 证明：若$\displaystyle{\varphi}$在$\displaystyle{[0,a]}$上连续，$\displaystyle{f}$二阶可导且$\displaystyle{f''(x)\geqslant0}$，则有$\displaystyle{\frac{1}{a}\int _{0}^{a}f(\varphi(t))\mathrm{d}t\geqslant f\left( \frac{1}{a}\int _{0}^{a}\varphi(t)\mathrm{d}t \right)}$
+13. 证明Schwarz不等式：若$\displaystyle{f,g}$在$\displaystyle{[a,b]}$上可积，则$\displaystyle{\left(\int ^{b}_{a}f(x)g(x)\mathrm{d}x\right)^{2}\leqslant\int ^{b}_{a}f^{2}(x)\mathrm{d}x \int ^{b}_{a}g^{2}(x)\mathrm{d}x}$
+14. 不求出定积分的值，比较大小
+	1. $\displaystyle{\int _{0}^{1}x\mathrm{d}x,\int ^{1}_{0}x^{2}\mathrm{d}x}$
+	2. $\displaystyle{\int ^{\pi/2}_{0}x\mathrm{d}x,\int ^{\pi/2}_{0}\sin x\mathrm{d}x}$
+15. 证明下列不等式
+	1. $\displaystyle{\frac{\pi}{2}<\int ^{\pi/2}_{0} \frac{\mathrm{d}x}{\sqrt{ 1-\frac{1}{2}\sin ^{2}x }}< \frac{\pi}{\sqrt{ 2 }}}$
+	2. $\displaystyle{1<\int ^{1}_{0}e^{x^{2}} \mathrm{d}x<e}$
+	3. $\displaystyle{1<\int ^{\pi/2}_{0} \frac{\sin x}{x}< \frac{\pi}{2}}$
+	4. $\displaystyle{3\sqrt{ e }< \int ^{4e}_{e} \frac{\ln x}{\sqrt{ x }} \mathrm{d}x<6}$
+16. 设$\displaystyle{f,g}$在$\displaystyle{[a,b]}$上可积，证明$\displaystyle{M(x)=\underset{x \in[a,b]}{\mathrm{max}}\left\{f(x),g(x)\right\},m(x)=\underset{x \in[a,b]}{\mathrm{min}}\left\{f(x),g(x)\right\}}$在$\displaystyle{[a,b]}$上也都可积
+17. 试求心形线$\displaystyle{r=a(1+\cos \theta),0\leqslant\theta\leqslant 2\pi}$上各点极径的平均值
+18. 设$\displaystyle{f}$在$\displaystyle{[a,b]}$上连续，$\displaystyle{F(x)=\int ^{t}_{a}f(t)(x-t)\mathrm{d}t}$，证明$\displaystyle{F''(x)=f(x),x \in[a,b]}$
+19. 求下列极限
+	1. $\displaystyle{\lim_{ x \to 0 } \frac{1}{x}\int ^{x}_{0}\cos t^{2}\mathrm{d}t}$
+	2. $\displaystyle{\lim_{ x \to \infty } \frac{\left(\int ^{x}_{0} e^{t^{2}}\mathrm{d}t\right)^{2}}{\int _{0}^{x}e^{2t^{2}}\mathrm{d}t}}$
+20. 设$\displaystyle{f}$为$\displaystyle{(0,+\infty)}$上的连续减函数，$\displaystyle{f(x)>0}$，又设$\displaystyle{a_{n}=\sum ^{n}_{k=1}f(k)-\int ^{n}_{1}f(x)\mathrm{d}x}$，证明$\displaystyle{\left\{a_{n}\right\}}$为收敛数列
+
 # homework 14
 
 ## **1. 应用逐项求导或逐项积分的方法求下列幂级数的和函数**
