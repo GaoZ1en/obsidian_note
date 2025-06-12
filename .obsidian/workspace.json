@@ -77,6 +77,16 @@
               "icon": "lucide-file",
               "title": "汉语"
             }
+          },
+          {
+            "id": "e6922d049025944a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ],
         "currentTab": 2
@@ -290,8 +300,8 @@
   },
   "active": "635f6d16a4be52b3",
   "lastOpenFiles": [
-    "Lecture/Homework/2025 spring/日本文艺史.md",
     "Lecture/Homework/汉语.md",
+    "Lecture/Homework/2025 spring/日本文艺史.md",
     "Lecture/2025.4 JT gravity/prelecture2&3 learning.md",
     "TODO.md",
     "Development/arxiv manager/present issues.md",
