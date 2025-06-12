@@ -1,4 +1,313 @@
-# homework 6
+# homework 9
+
+## 1. 用积分和的极限计算定积分
+
+### (1) 计算 $\int_0^1 x^3 dx$
+
+将区间 $[0,1]$ 等分为 $n$ 份，分点为 $x_i = \frac{i}{n}$，取 $\xi_i = x_i = \frac{i}{n}$。
+
+积分和为：
+$$S_n = \sum_{i=1}^n f(\xi_i)\Delta x_i = \sum_{i=1}^n \left(\frac{i}{n}\right)^3 \cdot \frac{1}{n} = \frac{1}{n^4}\sum_{i=1}^n i^3$$
+
+利用恒等式 $\sum_{i=1}^n i^3 = \left[\frac{n(n+1)}{2}\right]^2$：
+
+$$S_n = \frac{1}{n^4} \cdot \frac{n^2(n+1)^2}{4} = \frac{(n+1)^2}{4n^2}$$
+
+因此：
+$$\int_0^1 x^3 dx = \lim_{n \to \infty} S_n = \lim_{n \to \infty} \frac{(n+1)^2}{4n^2} = \frac{1}{4}$$
+
+### (2) 计算 $\int_a^b e^x dx$
+
+将区间 $[a,b]$ 等分为 $n$ 份，$\Delta x = \frac{b-a}{n}$，取 $\xi_i = a + i\Delta x$。
+
+积分和为：
+$$S_n = \sum_{i=1}^n e^{a+i\Delta x} \cdot \Delta x = e^a \Delta x \sum_{i=1}^n e^{i\Delta x}$$
+
+这是等比数列求和：
+$$\sum_{i=1}^n e^{i\Delta x} = e^{\Delta x} \frac{1-e^{n\Delta x}}{1-e^{\Delta x}} = \frac{e^{\Delta x}(e^{b-a}-1)}{1-e^{\Delta x}}$$
+
+当 $n \to \infty$ 时，$\Delta x \to 0$，利用 $\lim_{h \to 0} \frac{e^h-1}{h} = 1$：
+
+$$\int_a^b e^x dx = \lim_{n \to \infty} S_n = e^a \cdot (b-a) \cdot \frac{e^{b-a}-1}{b-a} = e^b - e^a$$
+
+## 2. 计算定积分
+
+### (1) $\int_0^1 (2x+3) dx$
+
+$$\int_0^1 (2x+3) dx = \left[x^2 + 3x\right]_0^1 = (1+3) - 0 = 4$$
+
+### (2) $\int_e^{e^2} \frac{dx}{x\ln x}$
+
+令 $u = \ln x$，则 $du = \frac{dx}{x}$。当 $x = e$ 时 $u = 1$，当 $x = e^2$ 时 $u = 2$。
+
+$$\int_e^{e^2} \frac{dx}{x\ln x} = \int_1^2 \frac{du}{u} = [\ln u]_1^2 = \ln 2 - \ln 1 = \ln 2$$
+
+### (3) $\int_0^{\pi/3} \tan^2 x dx$
+
+利用恒等式 $\tan^2 x = \sec^2 x - 1$：
+
+$$\int_0^{\pi/3} \tan^2 x dx = \int_0^{\pi/3} (\sec^2 x - 1) dx = [\tan x - x]_0^{\pi/3} = \sqrt{3} - \frac{\pi}{3}$$
+
+## 3. 利用定积分求极限
+
+### (1) $\lim_{n \to \infty} n\left(\frac{1}{(n+1)^2}+\frac{1}{(n+2)^2}+\cdots+\frac{1}{(n+n)^2}\right)$
+
+重写为：
+$$\lim_{n \to \infty} \sum_{k=1}^n \frac{n}{(n+k)^2} = \lim_{n \to \infty} \sum_{k=1}^n \frac{1}{n} \cdot \frac{1}{(1+k/n)^2}$$
+
+这是 Riemann 和，对应积分：
+$$\int_0^1 \frac{dx}{(1+x)^2} = \left[-\frac{1}{1+x}\right]_0^1 = -\frac{1}{2} + 1 = \frac{1}{2}$$
+
+### (2) $\lim_{n \to \infty} \frac{1}{n}\left(\sin \frac{\pi}{n}+\sin \frac{2\pi}{n}+\cdots+\sin \frac{(n-1)\pi}{n}\right)$
+
+这是 Riemann 和：
+$$\lim_{n \to \infty} \frac{1}{n} \sum_{k=1}^{n-1} \sin \frac{k\pi}{n} = \int_0^1 \sin(\pi x) dx$$
+
+计算积分：
+$$\int_0^1 \sin(\pi x) dx = \left[-\frac{\cos(\pi x)}{\pi}\right]_0^1 = -\frac{1}{\pi}[\cos \pi - \cos 0] = \frac{2}{\pi}$$
+
+## 4. 分割加细后振幅和的性质
+
+**证明**：设 $T = \{x_0, x_1, \ldots, x_n\}$ 是 $[a,b]$ 的分割，$T'$ 是在 $T$ 基础上增加若干分点得到的分割。
+
+对于 $T$ 中的任一小区间 $[x_{i-1}, x_i]$，设在 $T'$ 中被分为若干个小区间。由于函数在更小区间上的振幅不会超过在大区间上的振幅，即：
+
+若 $[c, d] \subset [x_{i-1}, x_i]$，则 $\omega_f([c,d]) \leq \omega_f([x_{i-1}, x_i])$
+
+因此：
+$$\sum_{[c,d] \subset [x_{i-1}, x_i]} \omega_f([c,d]) \cdot |c-d| \leq \omega_f([x_{i-1}, x_i]) \cdot (x_i - x_{i-1})$$
+
+对所有区间求和得到：
+$$\sum_{T'} \omega_i' \Delta x_i' \leq \sum_T \omega_i \Delta x_i$$
+
+## 5. 有限个点不同的函数的可积性
+
+**证明**：设 $f$ 和 $g$ 仅在有限个点 $c_1, c_2, \ldots, c_k$ 处不同。
+
+对任给 $\varepsilon > 0$，由于 $f$ 可积，存在分割 $T$ 使得：
+$$\sum_T \omega_f(I_i) \Delta x_i < \frac{\varepsilon}{2}$$
+
+考虑包含所有 $c_j$ 的分割 $T'$，使得每个 $c_j$ 都是分点或位于某个小区间内部。
+
+对于不包含任何 $c_j$ 的区间，$f$ 和 $g$ 在该区间上相同，故振幅相等。
+
+对于包含 $c_j$ 的区间，由于只有有限个这样的区间，可以选择足够细的分割使得这些区间的总长度任意小。
+
+因此 $g$ 也可积，且积分值相等。
+
+## 6. 一致逼近函数的可积性
+
+**证明**：设对任给 $\varepsilon > 0$，存在可积函数 $g$ 使得 $|f(x) - g(x)| < \varepsilon$。
+
+由于 $g$ 可积，存在分割 $T$ 使得：
+$$\sum_T \omega_g(I_i) \Delta x_i < \varepsilon$$
+
+对任意区间 $I$，有：
+$$\omega_f(I) \leq \omega_g(I) + 2\varepsilon$$
+
+因此：
+$$\sum_T \omega_f(I_i) \Delta x_i \leq \sum_T \omega_g(I_i) \Delta x_i + 2\varepsilon(b-a) < \varepsilon(1 + 2(b-a))$$
+
+由于 $\varepsilon$ 任意，$f$ 可积。
+
+## 7. 可积函数在子区间上的可积性
+
+**证明**：设 $f$ 在 $[a,b]$ 上可积，$[\alpha, \beta] \subset [a,b]$。
+
+对任给 $\varepsilon > 0$，存在 $[a,b]$ 的分割 $T$ 使得：
+$$\sum_T \omega_f(I_i) \Delta x_i < \varepsilon$$
+
+考虑 $T$ 与 $\{\alpha, \beta\}$ 的并，得到新分割 $T'$。在 $[\alpha, \beta]$ 上的振幅和：
+$$\sum_{I_i \subset [\alpha, \beta]} \omega_f(I_i) \Delta x_i \leq \sum_{T'} \omega_f(I_i) \Delta x_i < \varepsilon$$
+
+因此 $f$ 在 $[\alpha, \beta]$ 上可积。
+
+## 8. 收敛间断点列的函数可积性
+
+**证明**：设 $f$ 在 $[a,b]$ 上有界，$\lim_{n \to \infty} a_n = c$，且 $f$ 只在点列 $\{a_n\}$ 处间断。
+
+对任给 $\varepsilon > 0$，选择 $N$ 使得当 $n > N$ 时，$|a_n - c| < \frac{\varepsilon}{4M}$，其中 $M$ 是 $f$ 的上界。
+
+构造分割，使得：
+1. 点 $c$ 周围有长度 $< \frac{\varepsilon}{4M}$ 的区间
+2. 每个 $a_n$ ($n \leq N$) 周围有长度 $< \frac{\varepsilon}{4NM}$ 的区间
+
+在其余区间上 $f$ 连续，振幅任意小。总振幅和可控制在 $\varepsilon$ 以内。
+
+## 9. 分段函数的可积性
+
+**证明**：函数 $f(x) = \begin{cases} 0, & x = 0 \\ \frac{1}{x} - \left[\frac{1}{x}\right], & x \in (0,1] \end{cases}$
+
+$f$ 的间断点为 $x = \frac{1}{n}$ ($n = 1, 2, 3, \ldots$) 和 $x = 0$。
+
+这些间断点形成收敛到 0 的数列，根据上一题的结果，$f$ 可积。
+
+具体地，在任意不包含间断点的区间上，$f$ 连续；在包含间断点的区间上，由于间断点可数且收敛，总的振幅和可以任意小。
+
+## 10. 乘积函数的 Riemann 积分
+
+**证明**：要证明 $\lim_{\|T\| \to 0} \sum_{i=1}^n f(\xi_i)g(\eta_i)\Delta x_i = \int_a^b f(x)g(x)dx$
+
+设 $S_T = \sum_{i=1}^n f(\xi_i)g(\eta_i)\Delta x_i$，$I = \int_a^b f(x)g(x)dx$。
+
+$$|S_T - I| = \left|\sum_{i=1}^n [f(\xi_i)g(\eta_i) - f(x_i)g(x_i)]\Delta x_i + \sum_{i=1}^n f(x_i)g(x_i)\Delta x_i - I\right|$$
+
+由于 $f, g$ 可积，第二项趋于 0。对于第一项：
+
+$$|f(\xi_i)g(\eta_i) - f(x_i)g(x_i)| \leq |f(\xi_i)||g(\eta_i) - g(x_i)| + |g(x_i)||f(\xi_i) - f(x_i)|$$
+
+利用 $f, g$ 的有界性和一致连续性，当 $\|T\| \to 0$ 时，此项也趋于 0。
+
+## 11. 倒数函数的可积性
+
+**证明**：设 $f$ 在 $[a,b]$ 上可积，且 $|f(x)| \geq m > 0$。
+
+函数 $h(x) = \frac{1}{f(x)}$ 满足 $|h(x)| \leq \frac{1}{m}$，故有界。
+
+对于振幅，设在区间 $I$ 上 $f$ 的振幅为 $\omega_f(I)$，则：
+
+$$\omega_h(I) = \sup_{x,y \in I} \left|\frac{1}{f(x)} - \frac{1}{f(y)}\right| = \sup_{x,y \in I} \frac{|f(y) - f(x)|}{|f(x)||f(y)|} \leq \frac{\omega_f(I)}{m^2}$$
+
+因此：
+$$\sum_T \omega_h(I_i)\Delta x_i \leq \frac{1}{m^2} \sum_T \omega_f(I_i)\Delta x_i$$
+
+由于 $f$ 可积，右边可以任意小，故 $\frac{1}{f}$ 可积。
+
+## 12. Jensen 不等式的积分形式
+
+**证明**：由于 $f''(x) \geq 0$，$f$ 是凸函数。
+
+设 $\bar{\varphi} = \frac{1}{a}\int_0^a \varphi(t)dt$，要证明：
+$$\frac{1}{a}\int_0^a f(\varphi(t))dt \geq f(\bar{\varphi})$$
+
+由于 $f$ 凸，对任意 $x$：
+$$f(x) \geq f(\bar{\varphi}) + f'(\bar{\varphi})(x - \bar{\varphi})$$
+
+将 $x = \varphi(t)$ 代入并在 $[0,a]$ 上积分：
+
+$$\frac{1}{a}\int_0^a f(\varphi(t))dt \geq f(\bar{\varphi}) + f'(\bar{\varphi}) \cdot \frac{1}{a}\int_0^a (\varphi(t) - \bar{\varphi})dt$$
+
+$$= f(\bar{\varphi}) + f'(\bar{\varphi}) \cdot 0 = f(\bar{\varphi})$$
+
+## 13. Schwarz 不等式
+
+**证明**：考虑函数 $F(\lambda) = \int_a^b [f(x) + \lambda g(x)]^2 dx \geq 0$
+
+展开得：
+$$F(\lambda) = \int_a^b f^2(x)dx + 2\lambda \int_a^b f(x)g(x)dx + \lambda^2 \int_a^b g^2(x)dx$$
+
+设 $A = \int_a^b f^2(x)dx$，$B = \int_a^b f(x)g(x)dx$，$C = \int_a^b g^2(x)dx$
+
+则 $F(\lambda) = A + 2B\lambda + C\lambda^2 \geq 0$ 对所有 $\lambda$ 成立。
+
+这要求判别式 $\Delta = 4B^2 - 4AC \leq 0$，即 $B^2 \leq AC$。
+
+## 14. 积分大小比较
+
+### (1) 比较 $\int_0^1 x dx$ 和 $\int_0^1 x^2 dx$
+
+在 $[0,1]$ 上，$0 \leq x^2 \leq x$（当 $x \in [0,1]$ 时），等号仅在端点成立。
+
+因此 $\int_0^1 x^2 dx < \int_0^1 x dx$。
+
+### (2) 比较 $\int_0^{\pi/2} x dx$ 和 $\int_0^{\pi/2} \sin x dx$
+
+在 $(0, \pi/2)$ 上，$\sin x < x$（可用凹凸性证明）。
+
+因此 $\int_0^{\pi/2} \sin x dx < \int_0^{\pi/2} x dx$。
+
+## 15. 积分不等式证明
+
+### (1) $\frac{\pi}{2} < \int_0^{\pi/2} \frac{dx}{\sqrt{1-\frac{1}{2}\sin^2 x}} < \frac{\pi}{\sqrt{2}}$
+
+在 $[0, \pi/2]$ 上：
+- $0 \leq \sin^2 x \leq 1$，所以 $\frac{1}{2} \leq 1 - \frac{1}{2}\sin^2 x \leq 1$
+- 因此 $1 \leq \frac{1}{\sqrt{1-\frac{1}{2}\sin^2 x}} \leq \frac{1}{\sqrt{1/2}} = \sqrt{2}$
+
+积分得：$\frac{\pi}{2} < \int_0^{\pi/2} \frac{dx}{\sqrt{1-\frac{1}{2}\sin^2 x}} < \frac{\pi}{\sqrt{2}}$
+
+### (2) $1 < \int_0^1 e^{x^2} dx < e$
+
+在 $[0,1]$ 上：$0 \leq x^2 \leq 1$，所以 $1 \leq e^{x^2} \leq e$
+
+积分得所需不等式。
+
+### (3) $1 < \int_0^{\pi/2} \frac{\sin x}{x} dx < \frac{\pi}{2}$
+
+在 $(0, \pi/2]$ 上：$\frac{2}{\pi} < \frac{\sin x}{x} < 1$
+
+积分得所需不等式。
+
+### (4) $3\sqrt{e} < \int_e^{4e} \frac{\ln x}{\sqrt{x}} dx < 6$
+
+在 $[e, 4e]$ 上分析 $\frac{\ln x}{\sqrt{x}}$ 的范围，利用端点值估计。
+
+## 16. 最大值最小值函数的可积性
+
+**证明**：利用恒等式：
+- $\max\{f(x), g(x)\} = \frac{f(x) + g(x) + |f(x) - g(x)|}{2}$
+- $\min\{f(x), g(x)\} = \frac{f(x) + g(x) - |f(x) - g(x)|}{2}$
+
+由于可积函数的线性组合可积，只需证明 $|f(x) - g(x)|$ 可积。
+
+设 $h(x) = f(x) - g(x)$，则 $h$ 可积。对于 $|h|$，有：
+$$\omega_{|h|}(I) \leq \omega_h(I)$$
+
+因此 $|h|$ 也可积，从而 $M(x)$ 和 $m(x)$ 都可积。
+
+## 17. 心形线极径平均值
+
+心形线 $r = a(1 + \cos\theta)$，$\theta \in [0, 2\pi]$。
+
+极径的平均值：
+$$\bar{r} = \frac{1}{2\pi} \int_0^{2\pi} a(1 + \cos\theta) d\theta = \frac{a}{2\pi}[2\pi + 0] = a$$
+
+## 18. 积分函数的二阶导数
+
+**证明**：$F(x) = \int_a^x f(t)(x-t) dt$
+
+利用 Leibniz 积分法则：
+$$F'(x) = \int_a^x f(t) dt$$
+
+再求导：
+$$F''(x) = f(x)$$
+
+## 19. 极限计算
+
+### (1) $\lim_{x \to 0} \frac{1}{x}\int_0^x \cos t^2 dt$
+
+利用 L'Hôpital 法则：
+$$\lim_{x \to 0} \frac{\int_0^x \cos t^2 dt}{x} = \lim_{x \to 0} \frac{\cos x^2}{1} = \cos 0 = 1$$
+
+### (2) $\lim_{x \to \infty} \frac{\left(\int_0^x e^{t^2} dt\right)^2}{\int_0^x e^{2t^2} dt}$
+
+利用 L'Hôpital 法则：
+$$\lim_{x \to \infty} \frac{2\int_0^x e^{t^2} dt \cdot e^{x^2}}{e^{2x^2}} = \lim_{x \to \infty} \frac{2\int_0^x e^{t^2} dt}{e^{x^2}}$$
+
+再次应用 L'Hôpital 法则：
+$$= \lim_{x \to \infty} \frac{2e^{x^2}}{2xe^{x^2}} = \lim_{x \to \infty} \frac{1}{x} = 0$$
+
+## 20. 数列收敛性证明
+
+**证明**：设 $a_n = \sum_{k=1}^n f(k) - \int_1^n f(x)dx$
+
+由于 $f$ 递减，对 $k-1 \leq x \leq k$ 有：
+$$f(k) \leq f(x) \leq f(k-1)$$
+
+积分得：
+$$f(k) \leq \int_{k-1}^k f(x)dx \leq f(k-1)$$
+
+因此：
+$$a_{n+1} - a_n = f(n+1) - \int_n^{n+1} f(x)dx \leq 0$$
+
+所以 $\{a_n\}$ 单调递减。
+
+又因为：
+$$a_n = f(1) + \sum_{k=2}^n [f(k) - \int_{k-1}^k f(x)dx] \geq f(1) - \int_0^1 f(x)dx$$
+
+所以 $\{a_n\}$ 有下界，因此收敛。
+
+# homework 10
 
 ## 1. 求由抛物线$\displaystyle{y=x^{2}}$与$\displaystyle{y=2-x^{2}}$所围图形的面积
 
@@ -137,7 +446,7 @@ $$x = \ln\frac{1}{\sqrt{2}} = -\frac{1}{2}\ln 2$$
 
 对应的$y = \frac{1}{\sqrt{2}}$，即曲率最大点为$(-\frac{1}{2}\ln 2, \frac{1}{\sqrt{2}})$
 
-# homework 7
+# homework 11
 
 1. 设$\displaystyle{f}$为$\displaystyle{[0,2\pi]}$上的单调递减函数。证明：对任何正整数$\displaystyle{n}$恒有$\displaystyle{\int _{0}^{2\pi}f(x)\sin nx\mathrm{d}x\geqslant 0}$
 2. 求下列平面曲线绕指定轴旋转所得旋转曲面的面积
@@ -454,7 +763,7 @@ $$= \sum_{k=1}^{n-1}F_k(x)h_k(x) + S(x)(g_1(x) - g_n(x))$$
 由于$\{g_n(x)\}$有界，$S_n(x)g_n(x)$和$S(x)g_n(x)$均一致收敛到0。
 因此，级数$\sum_{n=1}^{\infty}f_n(x)g_n(x)$在$[a,b]$上一致收敛。
 
-# homework 8
+# homework 12
 
 1. 讨论下列无穷积分为绝对收敛还是条件收敛
 	1. $\displaystyle{\int _{1}^{+\infty} \frac{\sin \sqrt{ x }}{x}\mathrm{d}x}$
@@ -752,43 +1061,29 @@ $$u_{N_1+k} \leq u_{N_1} \cdot \frac{v_{N_1+k}}{v_{N_1}} \leq u_{N_1} \cdot r^k$
 
 证毕。
 
-# homework 9
+# homework 13
 
-1. 通过对积分区间作等分分割，并取适当的点集$\displaystyle{\left\{\xi _{i}\right\}}$，把定积分看作是对应的积分和的极限，来计算下列定积分
-	1. $\displaystyle{\int ^{1}_{0}x^{3}\mathrm{d}x}$
-	2. $\displaystyle{\int ^{b}_{a}e^{x}\mathrm{d}x}$
-2. 计算下列定积分
-	1. $\displaystyle{\int ^{1}_{0}(2x+3)\mathrm{d}x}$
-	2. $\displaystyle{\int ^{e^{2}}_{e} \frac{\mathrm{d}x}{x\ln x}}$
-	3. $\displaystyle{\int ^{\pi/3}_{0} \tan ^{2}x\mathrm{d}x}$
-3. 利用定积分求极限
-	1. $\displaystyle{\lim_{ n \to \infty } n\left(\frac{1}{(n+1)^{2}}+\frac{1}{(n+2)^{2}}+\dots+ \frac{1}{(n+n)^{2}}\right)}$
-	2. $\displaystyle{\lim_{ n \to \infty } \frac{1}{n}\left(\sin \frac{\pi}{n}+\sin \frac{2\pi}{n}+\dots \sin \frac{(n-1)\pi}{n}\right)}$
-4. 证明：若$\displaystyle{T'}$是$\displaystyle{T}$增加若干分点后所得的分割，则$\displaystyle{\sum _{T'}\omega _{i}'\Delta x_{i}'\leqslant\sum _{T}\omega _{i}\Delta x_{i}}$
-5. 设$\displaystyle{f,g}$均为定义在$\displaystyle{[a,b]}$上的有界函数，仅在有限个点处$\displaystyle{f(x)\neq g(x)}$。证明：若$\displaystyle{f}$在$\displaystyle{[a,b]}$上可积，则$\displaystyle{g}$在$\displaystyle{[a,b]}$上也可积，并且$\displaystyle{\int _{a}^{b}f(x)\mathrm{d}x=\int _{a}^{b}g(x)\mathrm{d}x}$
-6. 设函数$\displaystyle{f}$在$\displaystyle{[a,b]}$上有定义，且对任给的$\displaystyle{\varepsilon>0}$，存在$\displaystyle{[a,b]}$上的可积函数，使得$\displaystyle{|f(x)-g(x)|<\varepsilon,x \in[a,b]}$。证明$\displaystyle{f}$在$\displaystyle{[a,b]}$上可积
-7. 证明：若$\displaystyle{f}$在$\displaystyle{[a,b]}$上可积,$\displaystyle{[\alpha,\beta]\subset[a,b]}$，则$\displaystyle{f}$在$\displaystyle{[\alpha,\beta]}$上也可积
-8. 设$\displaystyle{f}$在$\displaystyle{[a,b]}$上有界，$\displaystyle{\left\{a_{n}\right\}\subset[a,b]}$，$\displaystyle{\lim_{ n \to \infty }a_{n}=c}$。，证明：若$\displaystyle{f}$在$\displaystyle{[a,b]}$上只有$\displaystyle{a_{n}}$为其间断点，则$\displaystyle{f}$在$\displaystyle{[a,b]}$上可积
-9. 证明函数$\displaystyle{f(x)=\begin{cases}0, &x=0 \\\frac{1}{x}-\left[\frac{1}{x}\right],& x \in(0,1]\end{cases}}$在$\displaystyle{[0,1]}$上可积
-10. 证明：若$\displaystyle{f,g}$在$\displaystyle{[a,b]}$上可积，那么$\displaystyle{\lim_{ \left|\left|T\right|\right| \to 0 }\sum ^{n}_{i=1}f(\xi _{i})g(\eta _{i})\Delta x_{i}=\int ^{b}_{a}f(x)g(x)\mathrm{d}x}$，其中$\displaystyle{\xi _{i},\eta _{i}}$为$\displaystyle{T}$所属小区间$\displaystyle{\Delta _{i}}$中的任意两点，$\displaystyle{i=1,2,\dots,n}$
-11. 设$\displaystyle{f}$在$\displaystyle{[a,b]}$上可积，且在$\displaystyle{[a,b]}$上满足$\displaystyle{|f(x)| \geqslant m>0}$。证明$\displaystyle{\frac{1}{f}}$在$\displaystyle{[a,b]}$上可积
-12. 证明：若$\displaystyle{\varphi}$在$\displaystyle{[0,a]}$上连续，$\displaystyle{f}$二阶可导且$\displaystyle{f''(x)\geqslant0}$，则有$\displaystyle{\frac{1}{a}\int _{0}^{a}f(\varphi(t))\mathrm{d}t\geqslant f\left( \frac{1}{a}\int _{0}^{a}\varphi(t)\mathrm{d}t \right)}$
-13. 证明Schwarz不等式：若$\displaystyle{f,g}$在$\displaystyle{[a,b]}$上可积，则$\displaystyle{\left(\int ^{b}_{a}f(x)g(x)\mathrm{d}x\right)^{2}\leqslant\int ^{b}_{a}f^{2}(x)\mathrm{d}x \int ^{b}_{a}g^{2}(x)\mathrm{d}x}$
-14. 不求出定积分的值，比较大小
-	1. $\displaystyle{\int _{0}^{1}x\mathrm{d}x,\int ^{1}_{0}x^{2}\mathrm{d}x}$
-	2. $\displaystyle{\int ^{\pi/2}_{0}x\mathrm{d}x,\int ^{\pi/2}_{0}\sin x\mathrm{d}x}$
-15. 证明下列不等式
-	1. $\displaystyle{\frac{\pi}{2}<\int ^{\pi/2}_{0} \frac{\mathrm{d}x}{\sqrt{ 1-\frac{1}{2}\sin ^{2}x }}< \frac{\pi}{\sqrt{ 2 }}}$
-	2. $\displaystyle{1<\int ^{1}_{0}e^{x^{2}} \mathrm{d}x<e}$
-	3. $\displaystyle{1<\int ^{\pi/2}_{0} \frac{\sin x}{x}< \frac{\pi}{2}}$
-	4. $\displaystyle{3\sqrt{ e }< \int ^{4e}_{e} \frac{\ln x}{\sqrt{ x }} \mathrm{d}x<6}$
-16. 设$\displaystyle{f,g}$在$\displaystyle{[a,b]}$上可积，证明$\displaystyle{M(x)=\underset{x \in[a,b]}{\mathrm{max}}\left\{f(x),g(x)\right\},m(x)=\underset{x \in[a,b]}{\mathrm{min}}\left\{f(x),g(x)\right\}}$在$\displaystyle{[a,b]}$上也都可积
-17. 试求心形线$\displaystyle{r=a(1+\cos \theta),0\leqslant\theta\leqslant 2\pi}$上各点极径的平均值
-18. 设$\displaystyle{f}$在$\displaystyle{[a,b]}$上连续，$\displaystyle{F(x)=\int ^{t}_{a}f(t)(x-t)\mathrm{d}t}$，证明$\displaystyle{F''(x)=f(x),x \in[a,b]}$
-19. 求下列极限
-	1. $\displaystyle{\lim_{ x \to 0 } \frac{1}{x}\int ^{x}_{0}\cos t^{2}\mathrm{d}t}$
-	2. $\displaystyle{\lim_{ x \to \infty } \frac{\left(\int ^{x}_{0} e^{t^{2}}\mathrm{d}t\right)^{2}}{\int _{0}^{x}e^{2t^{2}}\mathrm{d}t}}$
-20. 设$\displaystyle{f}$为$\displaystyle{(0,+\infty)}$上的连续减函数，$\displaystyle{f(x)>0}$，又设$\displaystyle{a_{n}=\sum ^{n}_{k=1}f(k)-\int ^{n}_{1}f(x)\mathrm{d}x}$，证明$\displaystyle{\left\{a_{n}\right\}}$为收敛数列
+1. 证明：设$\displaystyle{f_{n}(x)\to f(x),x \in D,a_{n}\to0 \,(n\to \infty)\,(a_{n}>0)}$。若对每一个正整数$n$，都有$\displaystyle{|f_{n}(x)-f(x)|\leqslant a_{n},x \in D}$，则$\displaystyle{\left\{f_{n}\right\}}$在$\displaystyle{D}$上一致收敛于$\displaystyle{f}$
+2. 设$\displaystyle{f}$为定义在区间$\displaystyle{(a,b)}$内的任意函数，记$\displaystyle{f_{n}(x)= \frac{[nf(x)]}{n},n=1,2,\dots}$。证明函数列$\displaystyle{\left\{f_{n}\right\}}$在$\displaystyle{(a,b)}$内一致收敛于$\displaystyle{f}$
+3. 讨论下列函数列在所示区间$\displaystyle{D}$上是否一致收敛或内闭一致收敛？
+	1. $\displaystyle{f_{n}(x)=\sqrt{ x^{2}+\frac{1}{n^{2}} },n=1,2,\dots,D=(-1,1)}$
+	2. $\displaystyle{f_{n}(x)=\begin{cases}-(n+1)x+1, & 0\leqslant x\leqslant \frac{1}{n+1},\\0, & \frac{1}{n+1}<x\leqslant 1\end{cases}}$, $\displaystyle{n=1,2,\dots}$
+	3. $\displaystyle{f_{n}(x)= \frac{x}{n},n=1,2,\dots,D=[0,+\infty)}$
+4. 判断下列函数项级数在所示区间上的一致收敛性
+	1. $\displaystyle{\sum \frac{x^{n}}{(n-1)!}, x \in [r,-r]}$
+	2. $\displaystyle{\sum \frac{x^{2}}{(1+x^{2})^{n+1}}, x \in(-\infty,+\infty)}$
+	3. $\displaystyle{\sum \frac{(-1)^{n-1}x^{2}}{(1+x^{2})^{n}}, x \in(-\infty,+\infty)}$
+5. 若在区间$\displaystyle{I}$上，对任何正整数$\displaystyle{n}$，$\displaystyle{|u_{n}(x)|\leqslant v_{n}(x)}$。证明当$\displaystyle{\sum v_{n}(x)}$在$\displaystyle{I}$上一致收敛时，级数$\displaystyle{\sum u_{n}(x)}$也在$\displaystyle{I}$上一致收敛
+6. 证明：$\displaystyle{\left\{f_{n}\right\}}$在区间$\displaystyle{I}$上内闭一致收敛于$\displaystyle{f}$的充分必要条件是：对于任意$\displaystyle{x_{0}\in I}$，存在$\displaystyle{x_{0}}$的一个邻域$\displaystyle{U(x_{0})}$使得$\displaystyle{\left\{f_{n}\right\}}$在$\displaystyle{U(x_{0})\cap I}$上一致收敛于$\displaystyle{f}$
+7. 讨论下列函数列或函数项级数在所示区间$\displaystyle{D}$上的一致收敛性
+	1. $\displaystyle{\sum ^{\infty}_{n=2} \frac{1-2n}{(x^{2}+n^{2})(x^{2}+(n-1)^{2})}, D=[-1,1]}$
+	2. $\displaystyle{\sum 2^{n}\sin \frac{\pi}{3^{n}}, D=(0,+\infty)}$
+	3. $\displaystyle{\sum  \frac{x^{n}}{\sqrt{ n }}, D=[-1,0]}$
+	4. $\displaystyle{\sum ^{\infty}_{n=1} \frac{\sin nx}{n}, D=(0,2\pi)}$
+8. 证明：级数$\displaystyle{\sum(-1)^{n}x^{n}(1-x)}$在$\displaystyle{[0,1]}$上绝对收敛且一致收敛。但其各项绝对值组成的级数却在$\displaystyle{[0,1]}$上不一致收敛
+9. 设$\displaystyle{\left\{u_{n}(x)\right\}}$为$\displaystyle{[a,b]}$上正的递减且收敛于零的函数列，每一个$\displaystyle{u_{n}(x)}$都是$\displaystyle{[a,b]}$上的单调函数。那么级数$\displaystyle{u_{1}(x)-u_{2}(x)+u_{3}(x)-u_{4}(x)+\dots}$在$\displaystyle{[a,b]}$上不仅收敛且一致收敛
+10. 设$\displaystyle{f}$在$\displaystyle{(-\infty,+\infty)}$上有任意阶导数，记$\displaystyle{F_{n}=f^{(n)}}$，且在任意有限区间内$\displaystyle{F_{n}}$一致收敛于$\displaystyle{\varphi}$，试证明$\displaystyle{\varphi (x)=ce^{x}}$.
+11. 设可微函数列$\displaystyle{\left\{f_{n}\right\}}$在$\displaystyle{[a,b]}$上收敛，$\displaystyle{\left\{f_{n}'\right\}}$在$\displaystyle{[a,b]}$上一致有界，证明$\displaystyle{\left\{f_{n}\right\}}$在$\displaystyle{[a,b]}$上一致收敛
 
 # homework 14
 

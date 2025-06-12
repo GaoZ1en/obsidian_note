@@ -1362,9 +1362,63 @@
             "timeKey": "22:55",
             "w": 46,
             "c": 229
+          },
+          {
+            "timeKey": "23:00",
+            "w": 1029,
+            "c": 6669
+          },
+          {
+            "timeKey": "23:05",
+            "w": 1261,
+            "c": 7370
+          },
+          {
+            "timeKey": "23:10",
+            "w": -1523,
+            "c": -9137
+          },
+          {
+            "timeKey": "23:15",
+            "w": 7,
+            "c": 38
+          },
+          {
+            "timeKey": "23:20",
+            "w": 65,
+            "c": 407
           }
         ],
         "id": 78
+      },
+      {
+        "date": "2025-06-13",
+        "filePath": "Lecture/Homework/2025 spring/analysis homework.md",
+        "wordCountStart": 8465,
+        "charCountStart": 47217,
+        "changes": [
+          {
+            "timeKey": "00:10",
+            "w": 48,
+            "c": 284
+          },
+          {
+            "timeKey": "00:15",
+            "w": 131,
+            "c": 877
+          },
+          {
+            "timeKey": "00:20",
+            "w": 118,
+            "c": 683
+          },
+          {
+            "timeKey": "00:25",
+            "w": 43,
+            "c": 384
+          }
+        ],
+        "id": 79
       }
     ],
     "daysWithCompletedGoal": [
