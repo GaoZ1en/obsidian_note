@@ -1697,16 +1697,181 @@ $$
 
 # homework 15
 
-1. 设$\displaystyle{f}$为$\displaystyle{[-\pi,\pi]}$上的光滑函数且$\displaystyle{f(-\pi)=f(\pi)}$。$\displaystyle{a_{n},b_{n}}$为$\displaystyle{f}$的傅里叶系数，$\displaystyle{a_{n}',b_{n}'}$为$\displaystyle{f'}$的傅里叶系数，证明$\displaystyle{a'_{0}=0,a_{n}'=bn_{n},b_{n}'=-na_{n}}$
-2. 证明：若$\displaystyle{\frac{a_{0}}{2}+\sum ^{\infty}_{n=1}(a_{n}\cos nx+b_{n}\sin nx)}$中$\displaystyle{a_{n},b_{n}}$满足$\displaystyle{sup_{n}\left(|n^{3}a_{n}|,|n^{3}b_{b}|\right)\leqslant M}$，其中$\displaystyle{M}$为常数，那么上述级数收敛，且和函数具有连续的导函数
-3. 设$\displaystyle{f}$为$\displaystyle{[-\pi,\pi]}$上的可积函数，$\displaystyle{a_{0},a_{k},b_{k},(k=1,2,\dots n)}$为$\displaystyle{f}$的傅里叶系数，证明：当$\displaystyle{A_{0}=a_{0},A_{k}=a_{k},B_{k}=b_{k}(k=1,2,\dots n)}$时，积分$\displaystyle{\int ^{\pi}_{-\pi}[f(x)-T_{n}(x)]^{2}\mathrm{d}x}$取得最小值，且为 $\displaystyle{\int ^{\pi}_{-\pi}[f(x)]^{2}\mathrm{d}x-\pi\left[\frac{a_{0}^{2}}{2}+\sum ^{n}_{k=1}(a^{2}_{k}+b^{2}_{k})\right]}$。其中$\displaystyle{T_{n}(x)}$为$\displaystyle{f}$傅里叶展开的前$\displaystyle{n}$项之和。
-4. 使用傅里叶级数推导
-	1. $\displaystyle{\frac{\pi}{4}=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\dots}$
-5. 求下列函数的傅里叶级数展开式
-	1. $\displaystyle{f(x)=\frac{\pi-x}{2},0<x< 2\pi}$
-6. 把$\displaystyle{\cos \frac{x}{2}}$在$\displaystyle{[0,\pi]}$上展开成正弦级数
-7. 把$\displaystyle{f(x)=(x-1)^{2}}$在$\displaystyle{(0,1)}$上展开成余弦级数，并推导$\displaystyle{\frac{\pi ^{2}}{6}=\sum ^{\infty}_{n=1} \frac{1}{n^{2}}}$
-8. 设$\displaystyle{f}$以$\displaystyle{2\pi}$为周期且具有二阶连续的导函数，证明$\displaystyle{f}$的傅里叶级数在$\displaystyle{(-\infty,+\infty)}$上一致收敛于$\displaystyle{f}$
-9. 设$\displaystyle{f}$为$\displaystyle{[-\pi,\pi]}$上的可积函数，证明若$\displaystyle{f}$的傅里叶级数在$\displaystyle{[-\pi,\pi]}$上一致收敛于$\displaystyle{f}$，那么有Parseval等式$\displaystyle{\frac{1}{\pi}\int _{-\pi}^{\pi}[f(x)]^{2}\mathrm{d}x = \frac{a_{0}^{2}}{2}+\sum ^{\infty}_{n=1} (a_{n}^{2}+b_{n}^{2})}$
-10. 设$\displaystyle{f}$是以$\displaystyle{2\pi}$为周期且具有二阶连续可微的函数，令$\displaystyle{b_{n}= \frac{1}{\pi}\int ^{\pi}_{-\pi} f(x)\sin nx\mathrm{d}x,b''_{n}=\frac{1}{\pi}\int _{-\pi}^{\pi} f''(x)\sin nx\mathrm{d}x}$。若级数$\displaystyle{\sum b''_{n}}$绝对收敛，那么$\displaystyle{\sum ^{\infty}_{n=1}\sqrt{ |b_{n}| }\leqslant \frac{1}{2}\left( 2+\sum ^{\infty}_{n=1}|b''_{n}| \right)}$
-11. 设$\displaystyle{[a,b]}$上的连续函数列$\displaystyle{\left\{\varphi _{n}\right\}}$满足$\displaystyle{\int _{a}^{b}\varphi _{n}(x)\varphi _{m}(x)\mathrm{d}x=\delta _{nm}}$,这里$\displaystyle{\delta _{mn}}$为Kronecker delta。对于$\displaystyle{[a,b]}$上的可积函数$\displaystyle{f}$，定义$\displaystyle{a_{n}=\int ^{b}_{a}f(x)\varphi _{n}(x)\mathrm{d}x,n=1,2,\dots}$。证明$\displaystyle{\sum ^{\infty}_{n=1}a_{n}^{2}}$收敛且有不等式$\displaystyle{\sum ^{\infty}_{n=1}a_{n}^{2}\leqslant\int ^{b}_{a}[f(x)]^{2}\mathrm{d}x}$
+## 1. 傅里叶系数的导数关系
+
+**证明**：设 $f$ 为 $[-\pi,\pi]$ 上光滑函数且 $f(-\pi) = f(\pi)$。
+
+傅里叶系数定义：
+$$a_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)\cos nx \, dx, \quad b_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)\sin nx \, dx$$
+
+$f'$ 的傅里叶系数：
+$$a_n' = \frac{1}{\pi}\int_{-\pi}^{\pi} f'(x)\cos nx \, dx, \quad b_n' = \frac{1}{\pi}\int_{-\pi}^{\pi} f'(x)\sin nx \, dx$$
+
+**对于 $a_0'$**：
+$$a_0' = \frac{1}{\pi}\int_{-\pi}^{\pi} f'(x) dx = \frac{1}{\pi}[f(\pi) - f(-\pi)] = 0$$
+
+**对于 $a_n'$ ($n \geq 1$)**：
+使用分部积分：
+$$a_n' = \frac{1}{\pi}\int_{-\pi}^{\pi} f'(x)\cos nx \, dx = \frac{1}{\pi}\left[f(x)\cos nx\Big|_{-\pi}^{\pi} + n\int_{-\pi}^{\pi} f(x)\sin nx \, dx\right]$$
+
+由于 $f(-\pi) = f(\pi)$ 且 $\cos n\pi = \cos(-n\pi)$：
+$$a_n' = \frac{1}{\pi} \cdot 0 + n \cdot \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)\sin nx \, dx = nb_n$$
+
+**对于 $b_n'$**：
+$$b_n' = \frac{1}{\pi}\int_{-\pi}^{\pi} f'(x)\sin nx \, dx = \frac{1}{\pi}\left[f(x)\sin nx\Big|_{-\pi}^{\pi} - n\int_{-\pi}^{\pi} f(x)\cos nx \, dx\right]$$
+
+边界项为零（因为 $\sin n\pi = \sin(-n\pi) = 0$）：
+$$b_n' = -n \cdot \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)\cos nx \, dx = -na_n$$
+
+## 2. 高阶系数条件下的收敛性
+
+**证明**：若 $\sup_n(|n^3 a_n|, |n^3 b_n|) \leq M$，则 $|a_n| \leq \frac{M}{n^3}$，$|b_n| \leq \frac{M}{n^3}$。
+
+**级数收敛性**：
+$$\sum_{n=1}^{\infty} |a_n \cos nx| \leq M\sum_{n=1}^{\infty} \frac{1}{n^3}, \quad \sum_{n=1}^{\infty} |b_n \sin nx| \leq M\sum_{n=1}^{\infty} \frac{1}{n^3}$$
+
+由于 $\sum \frac{1}{n^3}$ 收敛，原级数绝对且一致收敛。
+
+**连续可微性**：
+逐项微分得：
+$$\sum_{n=1}^{\infty} (-na_n \sin nx + nb_n \cos nx)$$
+
+其中 $|na_n| \leq \frac{M}{n^2}$，$|nb_n| \leq \frac{M}{n^2}$，因为 $\sum \frac{1}{n^2}$ 收敛，微分级数一致收敛，故和函数连续可微。
+
+## 3. 最佳逼近性质（Bessel不等式）
+
+**证明**：设 $T_n(x) = \frac{A_0}{2} + \sum_{k=1}^n (A_k \cos kx + B_k \sin kx)$。
+
+考虑积分：
+$$I = \int_{-\pi}^{\pi} [f(x) - T_n(x)]^2 dx$$
+
+展开：
+$$I = \int_{-\pi}^{\pi} f^2(x) dx - 2\int_{-\pi}^{\pi} f(x)T_n(x) dx + \int_{-\pi}^{\pi} T_n^2(x) dx$$
+
+利用正交性：
+$$\int_{-\pi}^{\pi} f(x)T_n(x) dx = \pi\left[\frac{A_0 a_0}{2} + \sum_{k=1}^n (A_k a_k + B_k b_k)\right]$$
+
+$$\int_{-\pi}^{\pi} T_n^2(x) dx = \pi\left[\frac{A_0^2}{2} + \sum_{k=1}^n (A_k^2 + B_k^2)\right]$$
+
+因此：
+$$I = \int_{-\pi}^{\pi} f^2(x) dx - \pi\left[\frac{A_0^2}{2} + \sum_{k=1}^n (A_k^2 + B_k^2)\right] - \pi\left[\frac{(a_0 - A_0)^2}{2} + \sum_{k=1}^n ((a_k - A_k)^2 + (b_k - B_k)^2)\right]$$
+
+当 $A_0 = a_0$，$A_k = a_k$，$B_k = b_k$ 时，$I$ 取最小值：
+$$I_{\min} = \int_{-\pi}^{\pi} f^2(x) dx - \pi\left[\frac{a_0^2}{2} + \sum_{k=1}^n (a_k^2 + b_k^2)\right]$$
+
+## 4. 莱布尼茨-格雷戈里级数推导
+
+考虑函数 $f(x) = \begin{cases} 1, & 0 < x < \frac{\pi}{2} \\ -1, & \frac{\pi}{2} < x < \pi \end{cases}$，周期性延拓到 $[-\pi, \pi]$。
+
+计算傅里叶系数：
+$$a_0 = 0, \quad a_n = 0$$
+
+$$b_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)\sin nx \, dx = \frac{2}{\pi}\int_0^{\pi/2} \sin nx \, dx - \frac{2}{\pi}\int_{\pi/2}^{\pi} \sin nx \, dx$$
+
+$$= \frac{2}{\pi n}[-\cos nx]_0^{\pi/2} - \frac{2}{\pi n}[-\cos nx]_{\pi/2}^{\pi} = \frac{2}{\pi n}(1 - \cos \frac{n\pi}{2}) + \frac{2}{\pi n}(\cos \frac{n\pi}{2} - \cos n\pi)$$
+
+当 $n$ 为奇数时：$b_n = \frac{4}{\pi n}$
+
+因此：$f(x) = \frac{4}{\pi}\sum_{n=1,3,5,...} \frac{\sin nx}{n}$
+
+在 $x = \frac{\pi}{2}$ 处：$1 = \frac{4}{\pi}(1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots)$
+
+故：$\frac{\pi}{4} = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots$
+
+## 5. 傅里叶级数展开
+
+对于 $f(x) = \frac{\pi - x}{2}$，$0 < x < 2\pi$，周期延拓。
+
+$$a_0 = \frac{1}{\pi}\int_0^{2\pi} \frac{\pi - x}{2} dx = 0$$
+
+$$a_n = \frac{1}{\pi}\int_0^{2\pi} \frac{\pi - x}{2} \cos nx \, dx = 0$$
+
+$$b_n = \frac{1}{\pi}\int_0^{2\pi} \frac{\pi - x}{2} \sin nx \, dx = \frac{1}{n}$$
+
+因此：$$f(x) = \sum_{n=1}^{\infty} \frac{\sin nx}{n}$$
+
+## 6. 正弦级数展开
+
+要将 $\cos \frac{x}{2}$ 在 $[0,\pi]$ 上展开成正弦级数，需要将其延拓为奇函数。
+
+设 $g(x) = \cos \frac{x}{2}$ 在 $[0,\pi]$ 上，奇延拓到 $[-\pi,\pi]$。
+
+$$b_n = \frac{2}{\pi}\int_0^{\pi} \cos \frac{x}{2} \sin nx \, dx$$
+
+使用积化和差公式：
+$$\cos \frac{x}{2} \sin nx = \frac{1}{2}[\sin(n + \frac{1}{2})x - \sin(n - \frac{1}{2})x]$$
+
+计算得：$$b_n = \frac{4n}{\pi(4n^2 - 1)}$$
+
+因此：$$\cos \frac{x}{2} = \frac{4}{\pi}\sum_{n=1}^{\infty} \frac{n \sin nx}{4n^2 - 1}$$
+
+## 7. 余弦级数展开及 $\zeta(2)$ 推导
+
+$f(x) = (x-1)^2$ 在 $(0,1)$ 上，偶延拓到 $(-1,1)$。
+
+$$a_0 = 2\int_0^1 (x-1)^2 dx = \frac{2}{3}$$
+
+$$a_n = 2\int_0^1 (x-1)^2 \cos n\pi x \, dx$$
+
+分部积分两次得：$$a_n = \frac{4}{n^2\pi^2}$$
+
+因此：$$(x-1)^2 = \frac{1}{3} + \frac{4}{\pi^2}\sum_{n=1}^{\infty} \frac{\cos n\pi x}{n^2}$$
+
+在 $x = 0$ 处：$$1 = \frac{1}{3} + \frac{4}{\pi^2}\sum_{n=1}^{\infty} \frac{1}{n^2}$$
+
+解得：$$\frac{\pi^2}{6} = \sum_{n=1}^{\infty} \frac{1}{n^2}$$
+
+## 8. 二阶连续可微函数的一致收敛性
+
+**证明**：设 $f$ 以 $2\pi$ 为周期且二阶连续可微。
+
+由第1题结果：$|a_n| = \frac{|b_n'|}{n} = \frac{|a_n''|}{n^2}$，$|b_n| = \frac{|a_n'|}{n} = \frac{|b_n''|}{n^2}$
+
+由于 $f''$ 连续，其傅里叶系数 $a_n''$，$b_n''$ 趋于0。
+
+因此：$$\sum_{n=1}^{\infty} (|a_n| + |b_n|) \leq C\sum_{n=1}^{\infty} \frac{1}{n^2} < \infty$$
+
+由 Weierstrass 判别法，傅里叶级数一致收敛。
+
+## 9. Parseval等式
+
+**证明**：若傅里叶级数一致收敛于 $f$，则：
+
+$$\frac{1}{\pi}\int_{-\pi}^{\pi} f^2(x) dx = \lim_{n \to \infty} \frac{1}{\pi}\int_{-\pi}^{\pi} S_n^2(x) dx$$
+
+其中 $S_n(x)$ 是 $n$ 阶部分和。
+
+由正交性：
+$$\frac{1}{\pi}\int_{-\pi}^{\pi} S_n^2(x) dx = \frac{a_0^2}{2} + \sum_{k=1}^n (a_k^2 + b_k^2)$$
+
+取极限得 Parseval 等式。
+
+## 10. 二阶导数级数的收敛性
+
+**证明**：由题1的关系：$b_n = -\frac{a_n'}{n} = \frac{b_n''}{n^2}$
+
+因此：$|b_n| = \frac{|b_n''|}{n^2}$
+
+$$\sqrt{|b_n|} = \frac{\sqrt{|b_n''|}}{n}$$
+
+由 Cauchy-Schwarz 不等式：
+$$\sum_{n=1}^N \sqrt{|b_n|} = \sum_{n=1}^N \frac{\sqrt{|b_n''|}}{n} \leq \left(\sum_{n=1}^N \frac{1}{n^2}\right)^{1/2} \left(\sum_{n=1}^N |b_n''|\right)^{1/2}$$
+
+由于 $\sum \frac{1}{n^2} = \frac{\pi^2}{6}$ 且 $\sum |b_n''|$ 收敛，得到所需不等式。
+
+## 11. 广义Bessel不等式
+
+**证明**：对于正交函数系 $\{\varphi_n\}$ 和可积函数 $f$。
+
+考虑部分和：$$S_N(x) = \sum_{n=1}^N a_n \varphi_n(x)$$
+
+$$\int_a^b [f(x) - S_N(x)]^2 dx \geq 0$$
+
+展开并利用正交性：
+$$\int_a^b f^2(x) dx - 2\sum_{n=1}^N a_n^2 + \sum_{n=1}^N a_n^2 \geq 0$$
+
+即：$$\sum_{n=1}^N a_n^2 \leq \int_a^b f^2(x) dx$$
+
+取 $N \to \infty$ 得：$$\sum_{n=1}^{\infty} a_n^2 \leq \int_a^b f^2(x) dx$$
+
+这证明了级数 $\sum a_n^2$ 收敛且满足 Bessel 不等式。
