@@ -23,8 +23,8 @@
   "chatSettings": {
     "deviceCode": "2a476d2fd6bc233dfee30f53f5aea2ae4e22a5a4",
     "accessToken": {
-      "token": "tid=7fefb9bbbda346b1efcfe40b01d5def1;exp=1749749296;sku=free_educational;proxy-ep=proxy.individual.githubcopilot.com;st=dotcom;chat=1;cit=1;malfil=1;editor_preview_features=1;mcp=0;ccr=1;rt=1;8kp=1;ip=219.142.99.28;asn=AS4847:3288e7c2dddd8d4a95c64ed3c87576aaad2727774b5ee64a76a4faa31131a730",
-      "expiresAt": 1749749296
+      "token": "tid=7fefb9bbbda346b1efcfe40b01d5def1;exp=1750003824;sku=free_educational;proxy-ep=proxy.individual.githubcopilot.com;st=dotcom;chat=1;cit=1;malfil=1;editor_preview_features=1;mcp=0;ccr=1;rt=1;8kp=1;ip=210.3.159.198;asn=AS9304:a699b95e4a75af5d411be6fb7b97f0f5fc1a0256a1fc409541c8b788df4cba07",
+      "expiresAt": 1750003824
     },
     "selectedModel": {
       "label": "Claude Sonnet 4",
