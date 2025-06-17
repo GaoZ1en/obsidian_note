@@ -1450,7 +1450,13 @@
         "filePath": "TODO.md",
         "wordCountStart": 78,
         "charCountStart": 978,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "21:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
         "id": 81
       },
       {
@@ -1463,6 +1469,11 @@
             "timeKey": "20:10",
             "w": 60,
             "c": 3098
+          },
+          {
+            "timeKey": "21:50",
+            "w": 20,
+            "c": 406
           }
         ],
         "id": 82
