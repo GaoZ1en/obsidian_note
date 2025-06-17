@@ -60,4 +60,25 @@ the error of $\displaystyle{n}$-order Runge-Kutta method is $\displaystyle{\math
 
 we will turn higher order ode into first order ode to solve them.
 
+---
+pde
+
+* parabolic equations
+ 
+$$\tag{4.1}
+\begin{align}
+u_{t} & =a^{2}u_{xx} \\
+\frac{u_{x,t+\Delta t}-u_{x,t}}{\Delta t} & =a^{2} \frac{u_{x+\Delta x,t}-2u_{x,t}+u_{x-\Delta x,t}}{\Delta x^{2}} \\
+\implies u_{x,t+\Delta t} & =u_{x,t}+r(u_{x+\Delta x,t}-2u_{x,t}+u_{x-\Delta x,t}) \\
+ & =r(u_{x+\Delta x,t}+u_{x-\Delta x,t})+u_{x,t}(1-2r)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+u_{t}=a^{2}u_{xx}-bu_{x} \\
+\frac{u_{i,j+1}-u_{i,j}}{\Delta t} & =a^{2} \frac{u_{i+1,j}-2u_{i,j}+u_{i-1,j}}{\Delta x^{2}}-b \frac{u_{i+1,j}-u_{i-1,j}}{\Delta x} \\
+ & 
+\end{align}
+$$
 
