@@ -58,3 +58,6 @@ $$
 
 the error of $\displaystyle{n}$-order Runge-Kutta method is $\displaystyle{\mathcal{O}(h^{n+1})}$
 
+we will turn higher order ode into first order ode to solve them.
+
+
