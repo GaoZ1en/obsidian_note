@@ -1477,6 +1477,46 @@
           }
         ],
         "id": 82
+      },
+      {
+        "date": "2025-06-17",
+        "filePath": "Lecture/Homework/2025 spring/labor economics.md",
+        "wordCountStart": 80,
+        "charCountStart": 3504,
+        "changes": [],
+        "id": 85
+      },
+      {
+        "date": "2025-06-17",
+        "filePath": "TODO.md",
+        "wordCountStart": 78,
+        "charCountStart": 978,
+        "changes": [],
+        "id": 86
+      },
+      {
+        "date": "2025-06-17",
+        "filePath": "Lecture/Homework/2025 spring/computational physics.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:45",
+            "w": 83,
+            "c": 377
+          },
+          {
+            "timeKey": "19:50",
+            "w": 6,
+            "c": 34
+          },
+          {
+            "timeKey": "19:55",
+            "w": 132,
+            "c": 451
+          }
+        ],
+        "id": 87
       }
     ],
     "daysWithCompletedGoal": [
