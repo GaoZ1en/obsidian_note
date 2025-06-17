@@ -18,6 +18,26 @@ $$\tag{1.2}
  & =\sum ^{\infty}_{n=0} \frac{2h^{2n+1}f^{(2n)}(x_{2k+1})}{(2n)!(2n+1)} \\
  & =2hf(x_{2k+1})+\frac{h^{3}}{3}f''(x_{2k+1})+\mathcal{O}(h^{5}) \\
  & =2hf(x_{2k+1})+\frac{h^{3}}{3} \frac{f(x_{2k+2})-2f(x_{2k+1})+f(x_{2k})}{h^{2}}+\mathcal{O}(h^{5}) \\
- & =\frac{1}{3}h\left(f_{2k}+\right)
+ & =\frac{1}{3}h\left(f_{2k}+4f_{2k+1}+f_{2k+2}\right)+\mathcal{O}(h^{5})
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+f''(x) & = \frac{f(x+h)-2f(x)+f(x-h)}{h^{2}}
+\end{align}
+$$
+
+---
+interpolation, curve fitting
+
+least square method. suppose $\displaystyle{P(x)=a_{0}+a_{1}x+\dots+a_{m}x^{m}}$, and we require $\displaystyle{\Delta=\sum ^{N}_{n=1}(P(x_{n})-y_{n})^{2}}$ takes the minimum$\displaystyle{\implies}$$\displaystyle{\frac{\partial \Delta}{\partial a_{i}}=\sum ^{N}_{n=1}2(P(x_{n})-y_{n}) x_{n}^{i}=0}$
+
+$$\tag{.}
+\begin{align}
+\sum ^{m}_{i=1}\sum ^{N}_{n=1}a_{i}x^{i+j}_{n} & =\sum ^{N}_{n=1}y_{n}x_{n}^{j}, j=0,1,..,m
+\end{align}
+$$
+
+define $\displaystyle{(A)_{ij}= \sum ^{N}_{n=1}x^{i+j}_{n} ,B_{j1}=\sum ^{N}_{n=1}y_{n}x^{j}_{n},\alpha _{j1}=a_{j}\implies \alpha=A^{-1}B}$.
+
