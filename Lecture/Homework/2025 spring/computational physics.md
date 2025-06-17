@@ -78,7 +78,52 @@ $$\tag{.}
 \begin{align}
 u_{t}=a^{2}u_{xx}-bu_{x} \\
 \frac{u_{i,j+1}-u_{i,j}}{\Delta t} & =a^{2} \frac{u_{i+1,j}-2u_{i,j}+u_{i-1,j}}{\Delta x^{2}}-b \frac{u_{i+1,j}-u_{i-1,j}}{\Delta x} \\
- & 
+\implies u_{i,j+1} & =(1-r)u_{i,j}+(r+q) u_{i+1,j}+(r-q)u_{i-1,j}
 \end{align}
 $$
 
+where $\displaystyle{r=\frac{a^{2}\Delta t}{\Delta x^{2}},q=-\frac{b\Delta t}{\Delta x}}$
+
+or 
+
+$$\tag{.}
+\begin{align}
+\frac{u_{i,j+1}-u_{i,j}}{\Delta t} & =\frac{a^{2}(u_{i+1,j+1}-2u_{i,j+1}+u_{i-1,j+1})}{\Delta x^{2}} \\
+\implies u_{i,j} & =(1+2r)u_{i,j+1}-r(u_{i+1,j+1}+u_{i-1,j+1}) \\
+\implies u_{i,j+1} & =\dots
+\end{align}
+$$
+
+or we make a average
+
+$$\tag{.}
+\begin{align}
+\frac{u_{i,j+1}-u_{i,j}}{\Delta t}=\frac{a^{2}}{2\Delta x^{2}}(u_{i+1,j}-2u_{i,j}+u_{i-1,j}+u_{i+1,j+1}+u_{i+1,j+1}-2u_{i,j+1}+u_{i-1,j+1})
+\end{align}
+$$
+
+* hyperbolic equations
+
+$$\tag{.}
+\begin{align}
+u_{tt} & =a^{2}u_{xx} \\
+\frac{u_{i,j+1}-2u_{i,j}+u_{i,j-1}}{\Delta t^{2}} & =a^{2} \frac{u_{i+1,j}-2u_{i,j}+u_{i-1,j}}{\Delta x^{2}} \\
+\implies u_{i,j+1} & =2(1-r)u_{i,j}-u_{i,j-1}+r(u_{i+1,j}+u_{i-1,j})
+\end{align}
+$$
+
+or we can do similar thing as parabolic equation
+
+* eliptic equations
+
+$$\tag{.}
+\begin{align}
+u_{xx}+u_{yy} & =0 \\
+\frac{u_{i+1,j}-2u_{i,j}+u_{i-1,j}}{\Delta x^{2}}  & + \frac{u_{i,j+1}-2u_{i,j}+u_{i,j-1}}{\Delta y^{2}} =0 \\
+\overset{\Delta x=\Delta y}{\implies}u_{i,j} & =\frac{1}{4}(u_{i+1,j}+u_{i-1,j}+u_{i,j+1}+u_{i,j-1})
+\end{align}
+$$
+
+and we need iterate to approach to the exact solution, and we take average on the boundary as initial value.
+
+---
