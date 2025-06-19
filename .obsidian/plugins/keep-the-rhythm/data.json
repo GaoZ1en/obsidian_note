@@ -1607,6 +1607,28 @@
           }
         ],
         "id": 87
+      },
+      {
+        "date": "2025-06-18",
+        "filePath": "Lecture/Homework/2025 spring/computational physics.md",
+        "wordCountStart": 969,
+        "charCountStart": 3971,
+        "changes": [],
+        "id": 88
+      },
+      {
+        "date": "2025-06-19",
+        "filePath": "Lecture/社会主义发展史.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:25",
+            "w": 8,
+            "c": 190
+          }
+        ],
+        "id": 89
       }
     ],
     "daysWithCompletedGoal": [
