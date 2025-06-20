@@ -1607,6 +1607,68 @@
           }
         ],
         "id": 87
+      },
+      {
+        "date": "2025-06-18",
+        "filePath": "Lecture/Homework/2025 spring/computational physics.md",
+        "wordCountStart": 969,
+        "charCountStart": 3971,
+        "changes": [],
+        "id": 88
+      },
+      {
+        "date": "2025-06-19",
+        "filePath": "Lecture/社会主义发展史.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:25",
+            "w": 8,
+            "c": 190
+          },
+          {
+            "timeKey": "13:40",
+            "w": 10,
+            "c": 2150
+          }
+        ],
+        "id": 89
+      },
+      {
+        "date": "2025-06-19",
+        "filePath": "Lecture/Homework/2025 spring/computational physics.md",
+        "wordCountStart": 969,
+        "charCountStart": 3971,
+        "changes": [],
+        "id": 90
+      },
+      {
+        "date": "2025-06-19",
+        "filePath": "Lecture/Homework/社会主义发展史.md",
+        "wordCountStart": 15,
+        "charCountStart": 1899,
+        "changes": [
+          {
+            "timeKey": "14:00",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "14:05",
+            "w": -15,
+            "c": -1900
+          }
+        ],
+        "id": 91
+      },
+      {
+        "date": "2025-06-20",
+        "filePath": "Note/Project Euler/solutions.md",
+        "wordCountStart": 1889,
+        "charCountStart": 15708,
+        "changes": [],
+        "id": 92
       }
     ],
     "daysWithCompletedGoal": [
