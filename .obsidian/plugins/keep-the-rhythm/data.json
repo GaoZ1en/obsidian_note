@@ -724,7 +724,7 @@
       },
       {
         "date": "2025-06-05",
-        "filePath": "Lecture/Homework/Nambu-Goto.md",
+        "filePath": "Lecture/bachelor/Nambu-Goto.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -752,7 +752,7 @@
       },
       {
         "date": "2025-06-05",
-        "filePath": "Lecture/Homework/2025 spring/python for general purpose/homework11.md",
+        "filePath": "Lecture/bachelor/2025 spring/python for general purpose/homework11.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -766,7 +766,7 @@
       },
       {
         "date": "2025-06-05",
-        "filePath": "Lecture/Homework/2025 spring/python for physics/final thesis.md",
+        "filePath": "Lecture/bachelor/2025 spring/python for physics/final thesis.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -906,7 +906,7 @@
       },
       {
         "date": "2025-06-08",
-        "filePath": "Lecture/Homework/2025 spring/analysis homework.md",
+        "filePath": "Lecture/bachelor/2025 spring/analysis homework.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -990,7 +990,7 @@
       },
       {
         "date": "2025-06-09",
-        "filePath": "Lecture/Homework/2025 spring/analysis homework.md",
+        "filePath": "Lecture/bachelor/2025 spring/analysis homework.md",
         "wordCountStart": 5684,
         "charCountStart": 0,
         "changes": [
@@ -1068,7 +1068,7 @@
       },
       {
         "date": "2025-06-11",
-        "filePath": "Lecture/Homework/2025 spring/日本文艺史.md",
+        "filePath": "Lecture/bachelor/2025 spring/日本文艺史.md",
         "wordCountStart": 33,
         "charCountStart": 1984,
         "changes": [],
@@ -1076,7 +1076,7 @@
       },
       {
         "date": "2025-06-11",
-        "filePath": "Lecture/Homework/汉语.md",
+        "filePath": "Lecture/bachelor/汉语.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -1324,7 +1324,7 @@
       },
       {
         "date": "2025-06-12",
-        "filePath": "Lecture/Homework/2025 spring/analysis homework.md",
+        "filePath": "Lecture/bachelor/2025 spring/analysis homework.md",
         "wordCountStart": 6867,
         "charCountStart": 37597,
         "changes": [
@@ -1393,7 +1393,7 @@
       },
       {
         "date": "2025-06-13",
-        "filePath": "Lecture/Homework/2025 spring/analysis homework.md",
+        "filePath": "Lecture/bachelor/2025 spring/analysis homework.md",
         "wordCountStart": 8465,
         "charCountStart": 47217,
         "changes": [
@@ -1461,7 +1461,7 @@
       },
       {
         "date": "2025-06-16",
-        "filePath": "Lecture/Homework/2025 spring/labor economics.md",
+        "filePath": "Lecture/bachelor/2025 spring/labor economics.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -1480,7 +1480,7 @@
       },
       {
         "date": "2025-06-17",
-        "filePath": "Lecture/Homework/2025 spring/labor economics.md",
+        "filePath": "Lecture/bachelor/2025 spring/labor economics.md",
         "wordCountStart": 80,
         "charCountStart": 3504,
         "changes": [],
@@ -1496,7 +1496,7 @@
       },
       {
         "date": "2025-06-17",
-        "filePath": "Lecture/Homework/2025 spring/computational physics.md",
+        "filePath": "Lecture/bachelor/2025 spring/computational physics.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -1610,7 +1610,7 @@
       },
       {
         "date": "2025-06-18",
-        "filePath": "Lecture/Homework/2025 spring/computational physics.md",
+        "filePath": "Lecture/bachelor/2025 spring/computational physics.md",
         "wordCountStart": 969,
         "charCountStart": 3971,
         "changes": [],
@@ -1618,7 +1618,7 @@
       },
       {
         "date": "2025-06-19",
-        "filePath": "Lecture/社会主义发展史.md",
+        "filePath": "Lecture/bachelor/社会主义发展史.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -1637,7 +1637,7 @@
       },
       {
         "date": "2025-06-19",
-        "filePath": "Lecture/Homework/2025 spring/computational physics.md",
+        "filePath": "Lecture/bachelor/2025 spring/computational physics.md",
         "wordCountStart": 969,
         "charCountStart": 3971,
         "changes": [],
@@ -1669,6 +1669,36 @@
         "charCountStart": 15708,
         "changes": [],
         "id": 92
+      },
+      {
+        "date": "2025-06-22",
+        "filePath": "Lecture/bachelor/2025 spring/python for general purpose/homework11.md",
+        "wordCountStart": 885,
+        "charCountStart": 3806,
+        "changes": [],
+        "id": 100
+      },
+      {
+        "date": "2025-06-22",
+        "filePath": "Lecture/2025 summer school in nwu/numerical bootstrap by Ning Su.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "22:20",
+            "w": 29,
+            "c": 186
+          }
+        ],
+        "id": 101
+      },
+      {
+        "date": "2025-06-22",
+        "filePath": "TODO.md",
+        "wordCountStart": 78,
+        "charCountStart": 978,
+        "changes": [],
+        "id": 102
       }
     ],
     "daysWithCompletedGoal": [
