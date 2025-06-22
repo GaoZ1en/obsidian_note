@@ -6,7 +6,7 @@
       {
         "id": "4a6501a306750f06",
         "type": "tabs",
-        "dimension": 54.054054054054056,
+        "dimension": 37.4054054054054,
         "children": [
           {
             "id": "b647b87c808e0749",
@@ -56,7 +56,7 @@
       {
         "id": "b834bacd2086ceb6",
         "type": "tabs",
-        "dimension": 45.94594594594595,
+        "dimension": 62.5945945945946,
         "children": [
           {
             "id": "b0357530cb9d1c74",
@@ -91,7 +91,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 127,
+                    "columns": 176,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m11:40:45 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t workspace\r\n\r\n * Restored history at Thu Jun 19 2025 13:25:52 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Sun Jun 22 2025 22:22:27 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m10:28:17 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t workspace\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\u001b[63A",
                     "rows": 70
                   }
@@ -99,7 +99,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ workspace ● 1 editor"
+              "title": "Terminal: KoishiLaptop ❐ workspace ● 4 monitor"
             }
           }
         ]
