@@ -358,7 +358,7 @@ $$\tag{2.22}
 \begin{align}
 W^{(s)}_{\Delta,\ell} & =g^{(s)}_{\Delta,\ell}+\sum a_{n}g^{(s)}_{\Delta_{1}+\Delta_{2}+\alpha n+\ell_{1}\ell}+\sum b_{n}g^{(s)}_{\Delta_{3}+\Delta_{4}+\alpha n+\ell_{2}\ell} \\
  & =\sum c_{n}g^{(t)}_{\Delta_{1}+\Delta_{4}+\alpha n+\ell \ell}+\sum d_{n}g^{(t)}_{\Delta _{2}+\Delta _{3}+\alpha n+\ell \ell} \\
-W_{\mathrm{con}} & =\sum \bar{a}_{n}g^{(s)}_{\Delta_{1}+\Delta_{2}+\alpha n+\ell_{1}\ell}+\sum \bar{b}_{n}g^{(s)}_{\Delta_{3}+D}
+W_{\mathrm{con}} & =\sum \bar{a}_{n}g^{(s)}_{\Delta_{1}+\Delta_{2}+\alpha n+\ell_{1}\ell}+\sum \bar{b}_{n}g^{(s)}_{\Delta_{3}+\Delta_{4}+\alpha n+\ell \ell}
 \end{align}
 $$
 
@@ -366,6 +366,37 @@ the $\displaystyle{g^{(s)}_{\Delta,\ell}}$ is called single-trace. when acting $
 
 $$\tag{2.23}
 \begin{align}
-
+a_{n} =\frac{\bar{a}_{n}}{C_{n,\ell}^{12}-m^{2}}, & b_{n}=\frac{\bar{b}_{n}}{C^{12}_{n,\ell}-m^{2}}
 \end{align}
 $$
+
+# Mellin space formalism
+
+Mellin space is somehow a generalization of momentum space to $\displaystyle{\mathrm{AdS}}$ space. we need a Mellin transformation instead of a Fourier transformation
+
+$$\tag{3.1}
+\begin{align}
+\mathcal{D}_{\Delta_{1}\dots \Delta _{n}} & =(\text{ const })\int[\mathrm{d}\delta _{ij}]\prod _{i<j}(x_{ij}^{2})^{-\delta _{ij}}\Gamma(\delta _{ij})
+\end{align}
+$$
+
+for an arbitrary correlation function, we can expand
+
+$$\tag{3.2}
+\begin{align}
+\braket{ \mathcal{O}_{1}\dots \mathcal{O}_{n} } & =\int[\mathrm{d}\delta _{ij}]\prod _{i<j}(x_{ij}^{2})^{-\delta _{ij}}\Gamma(\delta _{ij})\mathcal{M}(\delta _{ij})
+\end{align}
+$$
+
+where $\displaystyle{\delta _{ij}}$ are not independent, but satisfy the following constraint
+
+$$\tag{3.3}
+\begin{align} \\
+\delta _{ij} & =\delta _{ji} \\
+\delta _{ij} & =-\Delta _{i} \\
+\sum _{j}\delta _{ij} & =0
+\end{align}
+$$
+
+and the number of independent dofs is $\displaystyle{\frac{n(n-3)}{2}}$ (exactly the number of independent Mandelstam variables). we have $\displaystyle{\delta _{ij}=\vec{p}_{i}\cdot \vec{p}_{j}}$, where $\displaystyle{\vec{p}_{i}}$ onshell $\displaystyle{\implies \vec{p}_{i}^{2}=-\Delta _{i},\sum \vec{p}_{i}=0}$.
+
