@@ -16,7 +16,7 @@ we adopt **bootstrap method** to simplify the calculation (from consistent condi
 *references*
 1. Bissi, Sinha, XZ, 2202.08475
 
-# conformal symmetry (euclidean spacetime)
+# preliminary (CFT in Euclidean spacetime)
 
 generators
 1. $\displaystyle{P_{\mu},M_{\mu \nu}}$, translation and rotation 
@@ -101,6 +101,126 @@ for 4pt, define the cross ratio
 
 $$\tag{1.9}
 \begin{align}
-U & =\frac{(-2P_{1}\cdot P_{2})(-2P_{3}\cdot P_{4})}{()}
+U & =\frac{(-2P_{1}\cdot P_{2})(-2P_{3}\cdot P_{4})}{(-2P_{1}\cdot P_{3})(-2P_{2}\cdot P_{4})} \\
+V & =\frac{(-2P_{1}\cdot P_{4})(-2P_{2}\cdot P_{3})}{(-2P_{1}\cdot P_{3})(-2P_{2}\cdot P_{4})}
+\end{align}
+$$
+
+and we have
+
+$$\tag{1.10}
+\begin{align}
+\braket{ \phi ^{4} } & = \frac{1}{(-2P_{1}\cdot P_{2})^{\Delta _{\phi}}(-2P_{3}\cdot P_{4})^{\Delta _{\phi}}} \mathcal{G}(U,V)
+\end{align}
+$$
+
+where $\displaystyle{\mathcal{G}(U,V)}$ is an arbitrary function of $\displaystyle{U,V}$.
+
+## OPE
+
+$$\tag{1.11}
+\begin{align}
+\mathcal{O}_{1}(x_{1})\mathcal{O}_{2}(x_{2}) & =\sum _{k}C_{12k}\mathbb{D}_{12k}(x_{12},\partial _{2})\mathcal{O}_{k}(x_{2})
+\end{align}
+$$
+
+where $\displaystyle{C_{12k}}$ is the coupling constant and $\displaystyle{\mathbb{D}_{12k}}$ is determined completely by conformal symmetry
+
+## conformal block
+
+a conformal block $\displaystyle{g_{\Delta,\ell}}$ defined as
+
+$$\langle \phi_1(z_1) \phi_2(z_2) \phi_3(z_3) \phi_4(z_4) \rangle = \sum_{\mathcal{O}} C_{12\mathcal{O}} C_{34\mathcal{O}} g_{\Delta,\ell}(z,\bar{z})$$
+
+which is also completely determined by conformal symmetry.
+
+or we have a more elegant understanding of the conformal block as eigenfunction of Casimir operator...
+
+# perturbation theory in $\mathrm{AdS}$ & Witten diagrams
+
+we consider $\displaystyle{\mathrm{AdS}_{d+1}}$ and its embedding space. 
+
+$$\tag{2.1}
+\begin{align}
+\mathcal{Z}^{A} & \in \mathbb{R}^{d+1,1} \\
+\mathcal{Z}\cdot \mathcal{Z} & =-R^{2}
+\end{align}
+$$
+
+we set $\displaystyle{R=1}$. we have the Poincare coordinates $\displaystyle{z_{0},\vec{z}}$, with metric
+
+$$\tag{2.2}
+\begin{align}
+\mathrm{d}s^{2} & =\frac{1}{z_{0}^{2}}(\mathrm{d}z_{0}^{2}+\mathrm{d}\vec{z}^{2}) & z_{0}\geqslant0
+\end{align}
+$$
+
+we have
+
+$$\tag{2.3}
+\begin{align}
+\mathcal{Z}^{A} & =\frac{1}{z_{0}}\left( \frac{1+z_{0}^{2}+\vec{z}^{2}}{2},\frac{1-z_{0}^{2}-\vec{z}^{2}}{2},\vec{z} \right)
+\end{align}
+$$
+
+this is quite similar to the previous $\displaystyle{P^{A}}$. in fact, we can identify $\displaystyle{P^{A}=\lim_{ z_{0} \to 0 }z_{0}\mathcal{Z}^{A}}$.
+
+in AdS/CFT, we have two kinds of propagators: bulk-to-bulk propagator and boundary-to-bulk propagator.
+
+in general, we have
+
+$$\tag{2.4}
+\begin{align}
+G_{BB}^{\Delta} & \propto (2u^{-1})^{\Delta}{}_{2}F_{1}\left( \Delta,\Delta-\frac{d}{2}+\frac{1}{2},2\Delta-d+1;-2u^{-1} \right) \\
+ u & =-\mathcal{Z}\cdot \mathcal{W}-1=\frac{(z_{0}-w_{0})^{2}+|\vec{z}-\vec{w}|^{2}}{2z_{0}w_{0}}
+\end{align}
+$$
+
+which satisfies the Green function
+
+$$\tag{2.5}
+\begin{align}
+(\square-m^{2})G^{\Delta}_{BB}(\mathcal{Z},\mathcal{W}) & =\delta(\mathcal{Z}-\mathcal{W})
+\end{align}
+$$
+
+what about boundary-to-bulk propagator?
+## contact Witten diagrams
+
+$$\tag{2.6}
+\begin{align}
+\mathcal{D}_{\Delta_{1}\dots \Delta _{n}} & =\int \frac{\mathrm{d}z_{0}\mathrm{d}^{d}\vec{z}}{z_{0}^{d+1}}\prod ^{n}_{i=1} \left( \frac{z_{0}}{z_{0}^{2}+(\vec{z}-\vec{x}_{i})^{2}} \right)^{\Delta _{i}}
+\end{align}
+$$
+
+a useful method is Schwinger parametrization:
+
+$$\tag{2.7}
+\begin{align}
+\frac{1}{A^{\Delta}} & =\frac{1}{\Gamma(\Delta)}\int ^{\infty}_{0} \mathrm{d}t t^{\Delta-1}e^{-tA}
+\end{align}
+$$
+
+then (2.6) becomes
+
+$$\tag{2.8}
+\begin{align}
+\mathcal{D}_{\Delta_{1}\dots \Delta _{n}} & =\frac{\pi ^{d/2}\Gamma\left( \frac{1}{2}\Sigma _{\Delta}-\frac{d}{2} \right)\Gamma\left( \frac{1}{2}\Sigma _{\Delta} \right)}{2\prod _{i}\Gamma(\Delta _{i})}\int \prod _{i} \mathrm{d}\alpha _{i}\alpha _{i}^{\Delta _{i}-1} \frac{\delta(\Sigma _{j}\alpha _{j}-1)}{\left( \sum _{k<\ell}\alpha _{k}\alpha _{\ell}x_{k\ell}^{2} \right)^{\Sigma _{\Delta}/2}}
+\end{align}
+$$
+
+where $\displaystyle{\Sigma _{\Delta}=\sum ^{n}_{i=1}\Delta _{i}}$. we have the following properties
+
+$$\tag{2.9}
+\begin{align}
+\partial _{x_{ij}^{2}}D_{\Delta_{1}\dots \Delta _{i}\dots \Delta _{j}\dots \Delta _{n}} & =\frac{2\Delta _{i}\Delta _{j}}{d-\Sigma _{\Delta}}\mathcal{D}_{\Delta_{1}\dots \Delta _{i}+1\dots \Delta _{j}+1\dots \Delta _{n}}
+\end{align}
+$$
+
+
+
+$$\tag{.}
+\begin{align}
+\mathcal{D}_{\Delta_{1}\dots \Delta _{n}} & \propto \int _{\mathbb{R}^{D}} \mathrm{d}^{D}x \prod ^{n}_{i=1} 1
 \end{align}
 $$
