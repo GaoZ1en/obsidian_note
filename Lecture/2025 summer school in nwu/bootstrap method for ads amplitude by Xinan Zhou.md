@@ -217,10 +217,40 @@ $$\tag{2.9}
 \end{align}
 $$
 
+actually the $\displaystyle{\mathcal{D}}$ function is related to 1-loop amplitude in flat spacetime, as
 
-
-$$\tag{.}
+$$\tag{2.10}
 \begin{align}
-\mathcal{D}_{\Delta_{1}\dots \Delta _{n}} & \propto \int _{\mathbb{R}^{D}} \mathrm{d}^{D}x \prod ^{n}_{i=1} 1
+\mathcal{D}_{\Delta_{1}\dots \Delta _{n}} & \propto \int _{\mathbb{R}^{D}} \mathrm{d}^{D}x \prod ^{n}_{i=1} \frac{1}{(x-x_{i})^{2\Delta _{ij}}}
 \end{align}
 $$
+
+where $\displaystyle{D=\sum _{i}\Delta _{i}}$
+
+## exchange Witten diagrams
+
+for simplicity, we consider scalar field exchanges.
+
+$$\tag{2.11}
+\begin{align}
+\mathcal{A}(P_{1},P_{2},\mathcal{Z}) & \int \mathrm{d}\mathcal{Z}'\mathcal{G}^{\Delta}_{BB}(z',z)\mathcal{G}^{\Delta}_{B\partial}(z',P_{1})\mathcal{G}^{\Delta}_{B\partial}(z',P_{2})
+\end{align}
+$$
+
+where $\displaystyle{G^{\Delta}_{B\partial}}$ is the boundary-to-bulk propagator. we have a "cross ratio"
+
+$$\tag{2.12}
+\begin{align}
+\gamma & =\frac{-2P_{1}\cdot P_{2}}{(-2P_{1}\cdot \mathcal{Z})(-2P_{2}\cdot \mathcal{Z})} \\
+& = \frac{(x_{1}-x_{2})^{2}z_{0}^{2}}{(z_{0}^{2}+(\vec{z}-\vec{x}_{1})^{2})(z_{0}^{2}+(\vec{z}-\vec{x}_{2})^{2})}
+\end{align}
+$$
+
+then the 3-pt function can be written as function of $\displaystyle{\gamma}$
+
+$$\tag{2.13}
+\begin{align}
+\mathcal{A} & =\frac{(-2P_{1}\cdot P_{2})^{-\Delta _{2}}}{(-2P_{1}\cdot \mathcal{Z})^{\Delta _{1}-\Delta _{2}}}f(\gamma)
+\end{align}
+$$
+
