@@ -26,13 +26,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/2025 summer school in nwu/numerical bootstrap by Ning Su.md",
+                "file": "Lecture/2025 summer school in nwu/bootstrap LQCD by Gang Yang.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "numerical bootstrap by Ning Su"
+              "title": "bootstrap LQCD by Gang Yang"
             }
           },
           {
@@ -313,6 +313,7 @@
   "active": "699f6c0b95de1b21",
   "lastOpenFiles": [
     "Lecture/2025 summer school in nwu/numerical bootstrap by Ning Su.md",
+    "Lecture/2025 summer school in nwu/bootstrap LQCD by Gang Yang.md",
     "Drafts/ads3 proca.md",
     "Lecture/2025 summer school in nwu/bootstrap method for ads amplitude by Xinan Zhou.md",
     "Articles/Proca in AdS3/proca in adsn with n>3.md",
@@ -341,7 +342,6 @@
     "Development",
     "Reading/Untitled",
     "Reading/Comparison between ordinary approach and current approach with example--GR with a scalar.md",
-    "Reading/deformation quantization.md",
     "Attachments/Pasted image 20250602105133.png",
     "Attachments/Pasted image 20250602105121.png",
     "Articles/Proca in AdS3",

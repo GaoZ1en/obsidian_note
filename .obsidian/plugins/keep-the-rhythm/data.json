@@ -1955,6 +1955,25 @@
           }
         ],
         "id": 108
+      },
+      {
+        "date": "2025-06-23",
+        "filePath": "Lecture/2025 summer school in nwu/bootstrap LQCD by Gang Yang.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "16:15",
+            "w": 25,
+            "c": 151
+          },
+          {
+            "timeKey": "16:25",
+            "w": 99,
+            "c": 577
+          }
+        ],
+        "id": 109
       }
     ],
     "daysWithCompletedGoal": [
