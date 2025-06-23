@@ -1763,8 +1763,22 @@
         "filePath": "Lecture/2025 summer school in nwu/numerical bootstrap by Ning Su.md",
         "wordCountStart": 31,
         "charCountStart": 218,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "09:50",
+            "w": 0,
+            "c": 4
+          }
+        ],
         "id": 107
+      },
+      {
+        "date": "2025-06-23",
+        "filePath": "Lecture/2025 summer school in nwu/bootstrap method for ads amplitude by Xinan Zhou.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 108
       }
     ],
     "daysWithCompletedGoal": [
