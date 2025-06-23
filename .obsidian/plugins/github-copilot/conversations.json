@@ -1,24 +1,11 @@
 {
   "conversations": [
     {
-      "id": "1750661379329",
-      "title": "我感觉hep-th内不同小方向所说的bootstrap都是不...",
-      "messages": [
-        {
-          "id": "1750661413537",
-          "content": "我感觉hep-th内不同小方向所说的bootstrap都是不同的东西，我这种感觉正确吗？",
-          "role": "user",
-          "timestamp": 1750661413537
-        },
-        {
-          "id": "msg_vrtx_01FarXADfCv91Dn9LoDXfcvz",
-          "content": "你的感觉非常正确！在hep-th领域中，\"bootstrap\"确实是一个被多个不同子领域使用的术语，但指代的物理图像和数学方法相当不同。让我系统地梳理一下：\n\n## 主要的Bootstrap方法分类\n\n### 1. **S-Matrix Bootstrap** (历史最早)\n$$S = 1 + iT, \\quad S^\\dagger S = 1$$\n- **核心思想**: 直接从散射矩阵的解析性质、幺正性、交叉对称性构建理论\n- **代表人物**: Chew, Mandelstam (1960s)\n- **现代复兴**: Arkani-Hamed, Bourjaily等 ^cite{Arkani-Hamed2017}\n\n### 2. **Conformal Bootstrap** (最活跃)\n$$\\langle \\phi_1(x_1) \\phi_2(x_2) \\phi_3(x_3) \\phi_4(x_4) \\rangle = \\sum_{\\mathcal{O}} \\lambda_{12\\mathcal{O}} \\lambda_{34\\mathcal{O}} G^{(s)}_{\\Delta,\\ell}(u,v)$$\n- **核心思想**: 利用共形对称性约束关联函数的结构\n- **关键技术**: [[Conformal Block]] 分解 + 数值优化\n- **重大突破**: 3D Ising模型临界指数的精确计算 ^cite{Simmons-Duffin2017}\n\n### 3. **Integrability Bootstrap**\n$$\\{Q_n, H\\} = 0, \\quad [Q_m, Q_n] = 0$$\n- **适用系统**: 可积模型 (如XXZ链、sine-Gordon理论)\n- **方法**: 利用无穷多守恒量约束散射过程\n- **代表**: Thermodynamic Bethe Ansatz (TBA)\n\n### 4. **AdS/CFT Bootstrap**\n$$Z_{\\text{CFT}}[\\phi_0] = Z_{\\text{AdS}}[\\phi|_{\\partial} = \\phi_0]$$\n- **双重角色**: 既是CFT bootstrap的应用，也提供bulk几何的约束\n- **新发展**: [[Celestial Holography]] 中的soft theorems\n\n## 为什么会有这种分化？\n\n### 🔍 **物理图像差异**\n1. **能标依赖**: S-matrix bootstrap关注高能散射，CFT bootstrap研究临界现象\n2. **时空维度**: 不同方法在不同维度下最有效\n3. **对称性结构**: 各自利用不同的对称性原理\n\n### 📊 **数学工具分离**\n- **S-matrix**: 复分析、Regge理论、正实性约束\n- **CFT**: 表示论、特殊函数、半定规划 (SDP)\n- **Integrability**: 代数几何、量子群\n\n## 统一的哲学原则\n\n尽管技术细节不同，所有bootstrap方法都遵循：\n$$\\boxed{\\text{自洽性} + \\text{对称性} + \\text{解析性} \\Rightarrow \\text{物理预言}}$$\n\n## [[重要开放问题]]\n\n1. **不同bootstrap方法间的深层联系**是否存在？\n2. 是否存在**统一的bootstrap原理**覆盖所有情况？\n3. **量子引力中的bootstrap**应该采用哪种形式？\n\n### 📚 推荐阅读\n- Bootstrap综述: Simmons-Duffin, *arXiv:1602.07982*\n- S-matrix bootstrap: Paulos et al., *arXiv:1607.06110*\n- 现代发展: Poland, Rychkov, Vichi, *arXiv:1805.04405*\n\n你观察到的这种分化反映了理论物理中**概念演化**的典型模式：一个强有力的思想会在不同背景下独立发展出不同的技术实现。",
-          "role": "assistant",
-          "timestamp": 1750661442159
-        }
-      ],
-      "createdAt": 1750661379329,
-      "updatedAt": 1750661442159,
+      "id": "1750669069810",
+      "title": "New Conversation",
+      "messages": [],
+      "createdAt": 1750669069810,
+      "updatedAt": 1750669069810,
       "model": {
         "label": "Claude Sonnet 4",
         "value": "claude-sonnet-4"
@@ -323,5 +310,5 @@
       }
     }
   ],
-  "activeConversationId": "1750661379329"
+  "activeConversationId": "1750669069810"
 }
