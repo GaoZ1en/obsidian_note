@@ -76,3 +76,82 @@ non-perturbative qcd is hard, but we can use the following methods to study it
 
 # matrix bootstrap
 
+matrix bootstrap have the following features
+1. non perturbative
+2. use Lagrangian
+3. not require specific symmetry (such as susy...)
+4. for general spacetime dimension (especially for $d=2$)
+
+consider the following action
+
+$$\tag{1.1}
+\begin{align}
+S[x] & =\frac{1}{2}x^{2}+\frac{\lambda}{4}x^{4}
+\end{align}
+$$
+
+the partition function is
+
+$$\tag{1.2}
+\begin{align}
+Z[x] & =\int _{-\infty}^{+\infty}\mathrm{d}xe^{-S[x]}
+\end{align}
+$$
+
+the correlation function is
+
+$$\tag{1.3}
+\begin{align}
+W_{k}=\frac{1}{Z}\int _{-\infty}^{+\infty} x^{k}e^{-S[x]}
+\end{align}
+$$
+
+we need "Schwinger-Dyson" equation to compute the correlation function
+
+$$\tag{1.4}
+\begin{align}
+0=\int _{-\infty}^{+\infty} \mathrm{d}x \frac{\partial}{\partial x}\left(x^{k+1}e^{-S[x]}\right) & =(k+1)W_{k}-W_{k+2}-\lambda W_{k+4}
+\end{align}
+$$
+
+so we only need to calculate $\displaystyle{W_{2}}$.
+
+**positivity condition**? consider
+
+$$\tag{1.5}
+\begin{align}
+X & =\sum ^{n}_{i=1}\alpha _{i}x^{i}
+\end{align}
+$$
+
+require $\displaystyle{X^{2}\geqslant0}$, and
+
+$$\tag{1.6}
+\begin{align}
+\braket{ X^{2} }  & =\frac{1}{Z}\int \mathrm{d}xe^{-S[x]}\left( \sum _{i}\alpha _{i}x^{i} \right)^{2} \\
+ & =\frac{1}{Z}\int \mathrm{d}xe^{S[x]}\sum _{i,j}\alpha _{i}\alpha _{j}x^{i+j}
+\end{align}
+$$
+
+require $\displaystyle{\braket{ X^{2} }\geqslant0}$ for all $\displaystyle{\alpha _{i},\alpha _{j}}$ $\displaystyle{\Leftrightarrow}$ the matrix $\displaystyle{M_{ij}= \braket{ x^{i+j} }}$ is positive definite.
+
+for $\displaystyle{n=2}$, we have
+
+$$\tag{1.7}
+\begin{align}
+\begin{vmatrix}
+1 & 0 & W_{2} \\
+0 & W_{2} & 0 \\
+W_{2} & 0 & W_{4}
+\end{vmatrix}\geqslant0
+\end{align}
+$$
+
+and $\displaystyle{W_{4}=\frac{1-W_{2}}{\lambda}}$ $\displaystyle{\implies}$ $\displaystyle{W_{2}\left( \frac{1-W_{2}}{\lambda}-W_{2}^{2} \right)\geqslant0\implies 0\leqslant W_{2}\leqslant \frac{-1+\sqrt{ 1+4\lambda }}{2\lambda}}$
+
+when $\displaystyle{n}$ goes higher and higher, we will get more and more constraints, so we can get a better and better bound for $\displaystyle{W_{2}}$. actually the convergence is very fast.
+
+```mathematica
+SemidefiniteOptimization[+-W2,{{M>=0},{eqn}},vars]
+```
+
