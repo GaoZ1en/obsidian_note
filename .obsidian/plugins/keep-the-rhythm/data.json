@@ -1712,6 +1712,59 @@
         "charCountStart": 0,
         "changes": [],
         "id": 103
+      },
+      {
+        "date": "2025-06-23",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 797,
+        "charCountStart": 3743,
+        "changes": [],
+        "id": 104
+      },
+      {
+        "date": "2025-06-23",
+        "filePath": "Drafts/ads3 proca.md",
+        "wordCountStart": 340,
+        "charCountStart": 1753,
+        "changes": [
+          {
+            "timeKey": "08:05",
+            "w": 41,
+            "c": 208
+          },
+          {
+            "timeKey": "08:10",
+            "w": 101,
+            "c": 464
+          },
+          {
+            "timeKey": "08:15",
+            "w": 8,
+            "c": 11
+          },
+          {
+            "timeKey": "08:20",
+            "w": -60,
+            "c": -271
+          }
+        ],
+        "id": 105
+      },
+      {
+        "date": "2025-06-23",
+        "filePath": "Articles/Proca in AdS3/proca in adsn with n>3.md",
+        "wordCountStart": 1396,
+        "charCountStart": 5999,
+        "changes": [],
+        "id": 106
+      },
+      {
+        "date": "2025-06-23",
+        "filePath": "Lecture/2025 summer school in nwu/numerical bootstrap by Ning Su.md",
+        "wordCountStart": 31,
+        "charCountStart": 218,
+        "changes": [],
+        "id": 107
       }
     ],
     "daysWithCompletedGoal": [

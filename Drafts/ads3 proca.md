@@ -58,3 +58,22 @@ R_{\theta} & =z^{(\mu+2)/2}(1-z)^{|m|/2}F_{\theta}(z)
 $$
 
 
+$$\tag{.}
+\begin{align}
+\mathrm{d}s^{2} & =\frac{1}{\cos ^{2}\rho}\left(-\mathrm{d}t^{2}+\mathrm{d}\rho ^{2}+\sin ^{2}\rho \mathrm{d}\theta ^{2}\right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+g^{\mu \nu}A_{\mu}A_{\nu} & =-\cos ^{2}\rho R_{t}^{2}+\cos ^{2}\rho R_{\rho}^{2}+\frac{\cos ^{2}\rho}{\sin ^{2}\rho}R_{\theta}^{2} \\
+ & =
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+R_{t} & =(1-z)^{|m|/2} \\
+
+\end{align}
+$$
