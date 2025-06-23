@@ -201,11 +201,18 @@ $$\tag{2.7}
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+\mathcal{D}_{\Delta_{1}\dots \Delta _{n}} & =\int \frac{\mathrm{d}z_{0}\mathrm{d}^{d}\vec{z}}{z_{0}^{d+1}} \prod ^{n}_{i=1}z_{0}^{\Delta _{i}} \frac{1}{\Gamma(\Delta _{i})}\int _{0}^{\infty} \mathrm{d}\alpha _{i}\alpha _{i}^{\Delta _{i}-1}e^{-\alpha _{i}(z_{0}^{2}+(\vec{z}-\vec{x}_{i})^{2})} \\
+ & = \frac{1}{\prod \Gamma(\Delta _{i})}\int \mathrm{d}z_{0} z_{0}^{\Sigma _{\Delta}-d-1}e^{-\alpha _{i}z_{0}^{2}}
+\end{align}
+$$
+
 then (2.6) becomes
 
 $$\tag{2.8}
 \begin{align}
-\mathcal{D}_{\Delta_{1}\dots \Delta _{n}} & =\frac{\pi ^{d/2}\Gamma\left( \frac{1}{2}\Sigma _{\Delta}-\frac{d}{2} \right)\Gamma\left( \frac{1}{2}\Sigma _{\Delta} \right)}{2\prod _{i}\Gamma(\Delta _{i})}\int \prod _{i} \mathrm{d}\alpha _{i}\alpha _{i}^{\Delta _{i}-1} \frac{\delta(\Sigma _{j}\alpha _{j}-1)}{\left( \sum _{k<\ell}\alpha _{k}\alpha _{\ell}x_{k\ell}^{2} \right)^{\Sigma _{\Delta}/2}}
+\mathcal{D}_{\Delta_{1}\dots \Delta _{n}} & =\frac{\pi ^{d/2}\Gamma\left( \frac{1}{2}\Sigma _{\Delta}-\frac{d}{2} \right)\Gamma\left( \frac{1}{2}\Sigma _{\Delta} \right)}{2\prod _{i}\Gamma(\Delta _{i})}\int \prod _{i} \mathrm{d}\alpha _{i}\alpha _{i}^{\Delta _{i}-1} \frac{\delta(x_{j}\alpha _{j}-1)}{\left( \sum _{k<\ell}\alpha _{k}\alpha _{\ell}x_{k\ell}^{2} \right)^{\Sigma _{\Delta}/2}}
 \end{align}
 $$
 
@@ -254,3 +261,30 @@ $$\tag{2.13}
 \end{align}
 $$
 
+the conformal symmetry $\displaystyle{\mathrm{SO}(d+1,1)}$ is exactly the isometry of $\displaystyle{\mathrm{AdS}_{d+1}}$. we have
+
+$$\tag{2.13}
+\begin{align}
+(L_{AB}^{(1)}+L_{AB}^{(2)}+\mathcal{L}_{AB})\mathcal{A} & =0 \\
+\implies-\frac{1}{2}(L_{AB}^{(1)}+L_{AB}^{(2)})(L^{(1)AB}+L^{(2)AB})\mathcal{A} & =-\frac{1}{2}\mathcal{L}_{AB}\mathcal{L}^{AB}\mathcal{A} \\
+ & =\square _{\mathrm{AdS}_{d+1}} \mathcal{A}
+\end{align}
+$$
+
+$$\tag{2.14}
+\begin{align}
+(\mathrm{Cas}^{12}-m^{2})\mathcal{A} & = \frac{1}{(-2P_{1}\cdot \mathcal{Z})^{\Delta_{1}}(-2P_{2}\cdot \mathcal{Z})^{\Delta _{2}}}
+\end{align}
+$$
+
+then the $\displaystyle{f(\gamma)}$ satisfies the folllowing equation and boundary conditions
+
+$$\tag{2.15}
+\begin{align}
+\mathcal{D}f(\gamma) & =\gamma ^{\Delta _{2}} \\
+f(\gamma) & \to \gamma ^{(\Delta-\Delta_{1}+\Delta_{2})/2},\gamma\to0 \text{ from OPE }\\
+f(\gamma) & \text{ regular },\gamma\to 1
+\end{align}
+$$
+
+in general, $\displaystyle{f(\gamma)\propto {}_{3}F_{2}(\dots)+{}_{2}F_{1}(\dots)}$. and for special cases of $\displaystyle{\Delta_{1},\Delta_{2},\Delta}$, $\displaystyle{f(\gamma)}$ 
