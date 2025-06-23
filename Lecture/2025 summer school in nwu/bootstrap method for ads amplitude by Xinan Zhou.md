@@ -240,7 +240,7 @@ for simplicity, we consider scalar field exchanges.
 
 $$\tag{2.11}
 \begin{align}
-\mathcal{A}(P_{1},P_{2},\mathcal{Z}) & \int \mathrm{d}\mathcal{Z}'\mathcal{G}^{\Delta}_{BB}(z',z)\mathcal{G}^{\Delta}_{B\partial}(z',P_{1})\mathcal{G}^{\Delta}_{B\partial}(z',P_{2})
+\mathcal{A}(P_{1},P_{2},\mathcal{Z}) &= \int \mathrm{d}\mathcal{Z}'\mathcal{G}^{\Delta}_{BB}(z',z)\mathcal{G}^{\Delta}_{B\partial}(z',P_{1})\mathcal{G}^{\Delta}_{B\partial}(z',P_{2})
 \end{align}
 $$
 
@@ -287,4 +287,85 @@ f(\gamma) & \text{ regular },\gamma\to 1
 \end{align}
 $$
 
-in general, $\displaystyle{f(\gamma)\propto {}_{3}F_{2}(\dots)+{}_{2}F_{1}(\dots)}$. and for special cases of $\displaystyle{\Delta_{1},\Delta_{2},\Delta}$, $\displaystyle{f(\gamma)}$ 
+in general, $\displaystyle{f(\gamma)\propto {}_{3}F_{2}(\dots)+{}_{2}F_{1}(\dots)}$. and for special cases of $\displaystyle{\Delta_{1},\Delta_{2},\Delta}$, $\displaystyle{f(\gamma)}$ truncates to a polynomial. assume
+
+$$\tag{2.16}
+\begin{align}
+f(\gamma) & =\sum ^{n}_{k=1}a_{k}\gamma ^{k}
+\end{align}
+$$
+
+plug into (2.15), we get recursion relation for $\displaystyle{a_{k}}$
+
+$$\tag{2.17}
+\begin{align}
+a_{k-1} & =\frac{\left(k-\frac{\Delta}{2}+\frac{\Delta _{12}}{2}\right)\left( k-\frac{d}{2}+\frac{\Delta}{2}+\frac{\Delta _{12}}{2} \right)}{(k-1)(k-1+\Delta _{12})}a_{k}
+\end{align}
+$$
+
+where $\displaystyle{\Delta _{12}=\Delta _{1}-\Delta _{2}}$. since the non-homogeneous term $\displaystyle{\gamma ^{\Delta _{2}}}$, we have $\displaystyle{k _{\mathrm{max}}=\Delta _{2}-1,a_{\Delta _{2}-1}= \frac{1}{4(\Delta _{1}-1)(\Delta _{2}-1)}}$. **if $\displaystyle{\Delta_{1}+\Delta_{2}-\Delta \in2\mathbb{Z}_{+}}$, we have $\displaystyle{k _{\mathrm{min}}=\frac{\Delta-\Delta _{12}}{2}}$.**
+
+consider a term in $\displaystyle{\mathcal{A}}$:
+
+$$\tag{2.18}
+\begin{align}
+\frac{(-2P_{1}\cdot P_{2})^{-\Delta _{2}}}{(-2P_{1}\cdot \mathcal{Z})^{\Delta _{1}-\Delta _{2}}}\gamma ^{k} & =\frac{(-2P_{1}\cdot P_{2})^{-\Delta _{2}+k}}{(-2P_{1}\cdot \mathcal{Z})^{\Delta_{1}-\Delta_{2}+k}(-2P_{2}\cdot \mathcal{Z})^{k}}
+\end{align}
+$$
+
+so when $\displaystyle{\Delta_{1}+\Delta_{2}-\Delta \in 2\mathbb{Z}_{+}}$, 4pt exchange Witten diagrams can be factorized into a sum of contact Witten diagrams:
+
+$$\tag{2.19}
+\begin{align}
+\int \mathrm{d}\mathcal{Z}\mathrm{d}\mathcal{Z}'(\text{ exchange Witten diagram }) & =\sum _{k}a_{k}(x_{12}^{2})\int \mathrm{d}\mathcal{Z}(\text{ contact Witten diagram }) \\
+ & =\sum _{k}a_{k}(x_{12}^{2}) \mathcal{D}_{k,\Delta _{1}-\Delta _{2}+k,\Delta _{3},\Delta _{4}}
+\end{align}
+$$
+
+equation of motion?
+
+$$\tag{2.20}
+\begin{align}
+(\mathrm{Cas}^{12}-m^{2})W_{\Delta,0} & =D_{\Delta_{1},\Delta_{2},\Delta_{3},\Delta_{4}}
+\end{align}
+$$
+
+## geodesic Witten diagram
+
+the propagator is restricted to the geodesic connecting $\displaystyle{P_{1},P_{2}}$ and the geodesic connecting $\displaystyle{P_{3},P_{4}}$. we still have conformal symmetry. now we have
+
+$$\tag{2.21}
+\begin{align}
+(\mathrm{Cas}^{12}-m^{2})\mathcal{A} & =0,\text{ since } Z' \text{ is restricted to the geodesic }
+\end{align}
+$$
+
+...
+
+finally we have the conclusion
+
+$$\tag{2.21}
+\begin{align}
+W^{\mathrm{geo}}_{\Delta,\ell} & =g_{\Delta,\ell}
+\end{align}
+$$
+
+## conformal block decomposition
+
+consider a s-channel Witten diagram
+
+$$\tag{2.22}
+\begin{align}
+W^{(s)}_{\Delta,\ell} & =g^{(s)}_{\Delta,\ell}+\sum a_{n}g^{(s)}_{\Delta_{1}+\Delta_{2}+\alpha n+\ell_{1}\ell}+\sum b_{n}g^{(s)}_{\Delta_{3}+\Delta_{4}+\alpha n+\ell_{2}\ell} \\
+ & =\sum c_{n}g^{(t)}_{\Delta_{1}+\Delta_{4}+\alpha n+\ell \ell}+\sum d_{n}g^{(t)}_{\Delta _{2}+\Delta _{3}+\alpha n+\ell \ell} \\
+W_{\mathrm{con}} & =\sum \bar{a}_{n}g^{(s)}_{\Delta_{1}+\Delta_{2}+\alpha n+\ell_{1}\ell}+\sum \bar{b}_{n}g^{(s)}_{\Delta_{3}+D}
+\end{align}
+$$
+
+the $\displaystyle{g^{(s)}_{\Delta,\ell}}$ is called single-trace. when acting $\displaystyle{(\mathrm{Cas}^{12}-m^{2})}$, we have
+
+$$\tag{2.23}
+\begin{align}
+
+\end{align}
+$$
