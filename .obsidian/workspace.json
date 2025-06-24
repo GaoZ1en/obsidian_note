@@ -26,13 +26,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/2025 summer school in nwu/bootstrap method for ads amplitude by Xinan Zhou.md",
+                "file": "Lecture/2025 summer school in nwu/numerical bootstrap by Ning Su.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "bootstrap method for ads amplitude by Xinan Zhou"
+              "title": "numerical bootstrap by Ning Su"
             }
           },
           {
@@ -99,7 +99,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ workspace ● 2 docker"
+              "title": "Terminal: KoishiLaptop ❐ workspace ● 1 editor"
             }
           }
         ]
@@ -199,13 +199,13 @@
                   },
                   "serial": {
                     "columns": 58,
-                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Fri Jun 20 2025 14:09:12 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Fri Jun 20 2025 17:45:35 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Sun Jun 22 2025 21:36:21 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Sun Jun 22 2025 22:21:42 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\u001b[39A",
+                    "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Fri Jun 20 2025 14:09:12 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Fri Jun 20 2025 17:45:35 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Sun Jun 22 2025 21:36:21 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Sun Jun 22 2025 22:21:42 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m09:42:44 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\u001b[37A\u001b[11C",
                     "rows": 44
                   }
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: KoishiLaptop ❐ 0 ● 2 bash"
+              "title": "Terminal: koishi@KoishiLaptop:~"
             }
           },
           {

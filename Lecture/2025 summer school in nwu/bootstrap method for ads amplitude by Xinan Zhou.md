@@ -563,4 +563,18 @@ G_{k_{i}=k} & =\frac{(t_{12}t_{34})^{k}}{(x_{12}x_{34})^{k}}\mathcal{G}(u,v;\sig
 \end{align}
 $$
 
-where $\displaystyle{u=\frac{x_{12}^{2}x_{34}^{2}}{x_{13}^{2}x_{24}^{2}},v=\frac{x_{14}^{2}x_{23}^{2}}{x_{13}^{2}x_{24}^{2}},\sigma=\frac{t_{13}t_{24}}{t_{12}t_{34}},\tau=\frac{t_{14}t_{23}}{t_{12}t_{34}}}$. fermio
+where $\displaystyle{u=\frac{x_{12}^{2}x_{34}^{2}}{x_{13}^{2}x_{24}^{2}},v=\frac{x_{14}^{2}x_{23}^{2}}{x_{13}^{2}x_{24}^{2}},\sigma=\frac{t_{13}t_{24}}{t_{12}t_{34}},\tau=\frac{t_{14}t_{23}}{t_{12}t_{34}}}$. fermionic generator gives scf Ward identity
+
+$$\tag{4.5}
+\begin{align}
+(z\partial _{z}-\alpha \partial _{\alpha})\mathcal{G}(z,\bar{z};\alpha,\bar{\alpha})|_{\alpha=\frac{1}{z}}=0 \\
+(z\leftrightarrow \bar{z},\alpha\leftrightarrow \bar{\alpha})
+\end{align}
+$$
+
+traditional method needs cubic and quadratic vertices and calculates all the Witten diagrams. there are many difficults:
+1. infinitely many particles
+2. complicated vertices
+3. proliferation of diagrams
+
+just like offshell amplitudes in flat space. 
