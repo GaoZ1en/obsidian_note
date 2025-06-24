@@ -645,7 +645,7 @@ $$\tag{4.9}
 \end{align}
 $$
 
-corresponding to
+corresponding to\frac{k _{s}}{}
 
 $$\tag{4.10}
 \begin{align}
@@ -704,5 +704,9 @@ $$
 
 these three methods can be generalized to other CFTs with maximal susy, like AdS_4xS^7, AdS_7xS^4 and half maximal susy like AdS_d+1xS^3, and higher point functions, on and on.
 
+# loop level
 
+## unitary methods
+
+just like unitary cut in the flat space. leading logarithmic singularity?
 
