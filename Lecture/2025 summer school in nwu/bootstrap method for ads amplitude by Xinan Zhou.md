@@ -504,3 +504,63 @@ U^{m}V^{n}\implies??
 \end{align}
 $$
 
+# bootstrap methods for holographic correlators
+
+## susy
+
+we will consider 4d $\displaystyle{\mathcal{N=4}}$ SYM, but the method is applicable to other CFTs (with susy?).
+
+### superconformal kinematics
+
+the superconformal algebra contains
+1. usual conformal algebra $\displaystyle{D,P_{\mu},K_{\mu},M_{\mu \nu}}$, $\displaystyle{SO(4,2)}$ $\mathrm{AdS}_{5}$ isometry
+2. super charge $\displaystyle{\mathcal{Q}}$, and superconformal charge $\displaystyle{\mathcal{S}}$, 
+3. $\displaystyle{R}$ symmetry, $\displaystyle{SO(6)}$, $\displaystyle{S^{5}}$ isometry
+
+superconformal multiplets are representations of superconformal algebra
+- protected
+- unprotected
+
+superconformal primary satisfies $\displaystyle{K,\mathcal{S}\ket{\text{ scf primary }}=0}$. protected scf primary satisfies $\displaystyle{\mathcal{Q}\ket{\text{ scf primary }=0}}$. consider the supercommutator $\displaystyle{\left\{\mathcal{Q},\mathcal{S}\right\}\propto AR+BM+CD}$, and act on protected scf primary, we have
+
+$$\tag{4.1}
+\begin{align}
+\braket{ \quad|\left\{\mathcal{Q},\mathcal{S}\right\}| \quad} =\dots=0
+\end{align}
+$$
+
+so called **protection condition**.
+
+### $\displaystyle{\mathcal{N}=4}$ SYM
+
+consider the SUGRA limit $\displaystyle{N\to \infty,\lambda}$ fixed. the degree of freedom is KK modes of 10d SUGRA fields, which is half-BPS multiplets.
+
+in the field theory picture, we have the following operators
+1. $\displaystyle{\mathcal{O}_{k}^{I_{1}\dots I_{k}}=\mathrm{Tr}(X^{\left\{I_{1}\right.}\dots X^{\left.I_{k}\right\}})}$, corresponds to $\displaystyle{S_{k}}$ (scalar field) in the gravity side, with $\displaystyle{\Delta=k}$, and $\displaystyle{[0,k,0]}$ representation of $\displaystyle{SO(6)\cong SU(4)}$
+	1. $\displaystyle{S_{k}\overset{\mathcal{Q}}{\rightarrow}A_{k,\mu}\overset{\mathcal{Q}}{\rightarrow}\varphi _{k,\mu \nu}\dots}$???
+
+introduce
+
+$$\tag{4.2}
+\begin{align}
+\mathcal{O}_{k}(x,t) & =\mathcal{O}^{I_{1}\dots I_{k}}_{k}(x)t_{I_{1}}\dots t_{I_{k}}
+\end{align}
+$$
+
+where $\displaystyle{t_{I}\cdot t_{I}=0}$. consider a 4-pt function
+
+$$\tag{4.3}
+\begin{align}
+G_{k_{1}\dots k_{4}}(x_{i},t_{i}) & = \braket{ \mathcal{O}_{k_{1}}\dots \mathcal{O}_{k_{4}} } 
+\end{align}
+$$
+
+$\displaystyle{R}$ symmetry requires $\displaystyle{G}$ is proportional to $\displaystyle{\prod _{i<j}(t_{ij})^{a_{ij}}}$, $\displaystyle{a_{ij}\geqslant0}$, with $\displaystyle{t_{ij}=t_{i}\cdot t_{j}}$, and $\displaystyle{\sum _{j}a_{ij}=k_{i}}$. this can be done by Wick contraction...?
+
+$$\tag{4.4}
+\begin{align}
+G_{k_{i}=k} & =\frac{(t_{12}t_{34})^{k}}{(x_{12}x_{34})^{k}}\mathcal{G}(u,v;\sigma,\tau)
+\end{align}
+$$
+
+where $\displaystyle{u=\frac{x_{12}^{2}x_{34}^{2}}{x_{13}^{2}x_{24}^{2}},v=\frac{x_{14}^{2}x_{23}^{2}}{x_{13}^{2}x_{24}^{2}},\sigma=\frac{t_{13}t_{24}}{t_{12}t_{34}},\tau=\frac{t_{14}t_{23}}{t_{12}t_{34}}}$. fermio
