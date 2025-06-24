@@ -6,20 +6,8 @@
       {
         "id": "4a6501a306750f06",
         "type": "tabs",
-        "dimension": 54.270270270270274,
+        "dimension": 57.513513513513516,
         "children": [
-          {
-            "id": "b647b87c808e0749",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "github-copilot-chat-view",
-              "state": {},
-              "pinned": true,
-              "icon": "bot-message-square",
-              "title": "Copilot Chat"
-            }
-          },
           {
             "id": "699f6c0b95de1b21",
             "type": "leaf",
@@ -50,14 +38,25 @@
               "title": "ads3 proca"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "b834bacd2086ceb6",
         "type": "tabs",
-        "dimension": 45.729729729729726,
+        "dimension": 42.486486486486484,
         "children": [
+          {
+            "id": "b647b87c808e0749",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
+              "pinned": true,
+              "icon": "bot-message-square",
+              "title": "Copilot Chat"
+            }
+          },
           {
             "id": "b0357530cb9d1c74",
             "type": "leaf",
@@ -91,7 +90,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 127,
+                    "columns": 117,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m11:40:45 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t workspace\r\n\r\n * Restored history at Thu Jun 19 2025 13:25:52 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Sun Jun 22 2025 22:22:27 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m10:28:17 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t workspace\u001b[1B\u001b[43D",
                     "rows": 70
                   }
@@ -102,7 +101,8 @@
               "title": "Terminal: KoishiLaptop ❐ workspace ● 1 editor"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -310,12 +310,12 @@
       "keep-the-rhythm:Word Count Stats": false
     }
   },
-  "active": "699f6c0b95de1b21",
+  "active": "b0357530cb9d1c74",
   "lastOpenFiles": [
+    "Lecture/2025 summer school in nwu/numerical bootstrap by Ning Su.md",
     "Lecture/2025 summer school in nwu/bootstrap method for ads amplitude by Xinan Zhou.md",
     "Lecture/2025 summer school in nwu/bootstrap LQCD by Gang Yang.md",
     "Drafts/ads3 proca.md",
-    "Lecture/2025 summer school in nwu/numerical bootstrap by Ning Su.md",
     "Articles/Proca in AdS3/proca in adsn with n>3.md",
     "Articles/Proca in AdS3/proca in ads3.md",
     "Development/Untitled.md",
