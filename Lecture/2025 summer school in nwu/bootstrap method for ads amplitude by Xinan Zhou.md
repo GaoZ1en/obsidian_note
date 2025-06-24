@@ -710,3 +710,8 @@ these three methods can be generalized to other CFTs with maximal susy, like AdS
 
 just like unitary cut in the flat space. leading logarithmic singularity?
 
+# open problems
+
+1. ...
+2. ...
+3. generalization to defect CFT
