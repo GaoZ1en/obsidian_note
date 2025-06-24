@@ -2202,6 +2202,20 @@
           }
         ],
         "id": 112
+      },
+      {
+        "date": "2025-06-24",
+        "filePath": "Lecture/2025 summer school in nwu/lattice QCD by Xu Feng.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "16:25",
+            "w": 0,
+            "c": 2
+          }
+        ],
+        "id": 113
       }
     ],
     "daysWithCompletedGoal": [
