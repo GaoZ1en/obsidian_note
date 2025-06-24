@@ -2120,9 +2120,38 @@
             "timeKey": "09:35",
             "w": 7,
             "c": 48
+          },
+          {
+            "timeKey": "13:15",
+            "w": 44,
+            "c": 283
+          },
+          {
+            "timeKey": "13:20",
+            "w": 26,
+            "c": 220
+          },
+          {
+            "timeKey": "13:25",
+            "w": 0,
+            "c": 2
           }
         ],
         "id": 110
+      },
+      {
+        "date": "2025-06-24",
+        "filePath": "Lecture/2025 summer school in nwu/numerical bootstrap by Ning Su.md",
+        "wordCountStart": 68,
+        "charCountStart": 527,
+        "changes": [
+          {
+            "timeKey": "13:10",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 112
       }
     ],
     "daysWithCompletedGoal": [

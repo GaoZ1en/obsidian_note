@@ -724,7 +724,7 @@
       },
       {
         "date": "2025-06-05",
-        "filePath": "Lecture/Homework/Nambu-Goto.md",
+        "filePath": "Lecture/bachelor/Nambu-Goto.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -752,7 +752,7 @@
       },
       {
         "date": "2025-06-05",
-        "filePath": "Lecture/Homework/2025 spring/python for general purpose/homework11.md",
+        "filePath": "Lecture/bachelor/2025 spring/python for general purpose/homework11.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -766,7 +766,7 @@
       },
       {
         "date": "2025-06-05",
-        "filePath": "Lecture/Homework/2025 spring/python for physics/final thesis.md",
+        "filePath": "Lecture/bachelor/2025 spring/python for physics/final thesis.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -906,7 +906,7 @@
       },
       {
         "date": "2025-06-08",
-        "filePath": "Lecture/Homework/2025 spring/analysis homework.md",
+        "filePath": "Lecture/bachelor/2025 spring/analysis homework.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -990,7 +990,7 @@
       },
       {
         "date": "2025-06-09",
-        "filePath": "Lecture/Homework/2025 spring/analysis homework.md",
+        "filePath": "Lecture/bachelor/2025 spring/analysis homework.md",
         "wordCountStart": 5684,
         "charCountStart": 0,
         "changes": [
@@ -1068,7 +1068,7 @@
       },
       {
         "date": "2025-06-11",
-        "filePath": "Lecture/Homework/2025 spring/日本文艺史.md",
+        "filePath": "Lecture/bachelor/2025 spring/日本文艺史.md",
         "wordCountStart": 33,
         "charCountStart": 1984,
         "changes": [],
@@ -1076,7 +1076,7 @@
       },
       {
         "date": "2025-06-11",
-        "filePath": "Lecture/Homework/汉语.md",
+        "filePath": "Lecture/bachelor/汉语.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -1324,7 +1324,7 @@
       },
       {
         "date": "2025-06-12",
-        "filePath": "Lecture/Homework/2025 spring/analysis homework.md",
+        "filePath": "Lecture/bachelor/2025 spring/analysis homework.md",
         "wordCountStart": 6867,
         "charCountStart": 37597,
         "changes": [
@@ -1393,7 +1393,7 @@
       },
       {
         "date": "2025-06-13",
-        "filePath": "Lecture/Homework/2025 spring/analysis homework.md",
+        "filePath": "Lecture/bachelor/2025 spring/analysis homework.md",
         "wordCountStart": 8465,
         "charCountStart": 47217,
         "changes": [
@@ -1461,7 +1461,7 @@
       },
       {
         "date": "2025-06-16",
-        "filePath": "Lecture/Homework/2025 spring/labor economics.md",
+        "filePath": "Lecture/bachelor/2025 spring/labor economics.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -1480,7 +1480,7 @@
       },
       {
         "date": "2025-06-17",
-        "filePath": "Lecture/Homework/2025 spring/labor economics.md",
+        "filePath": "Lecture/bachelor/2025 spring/labor economics.md",
         "wordCountStart": 80,
         "charCountStart": 3504,
         "changes": [],
@@ -1496,7 +1496,7 @@
       },
       {
         "date": "2025-06-17",
-        "filePath": "Lecture/Homework/2025 spring/computational physics.md",
+        "filePath": "Lecture/bachelor/2025 spring/computational physics.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -1610,7 +1610,7 @@
       },
       {
         "date": "2025-06-18",
-        "filePath": "Lecture/Homework/2025 spring/computational physics.md",
+        "filePath": "Lecture/bachelor/2025 spring/computational physics.md",
         "wordCountStart": 969,
         "charCountStart": 3971,
         "changes": [],
@@ -1618,7 +1618,7 @@
       },
       {
         "date": "2025-06-19",
-        "filePath": "Lecture/社会主义发展史.md",
+        "filePath": "Lecture/bachelor/社会主义发展史.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -1637,7 +1637,7 @@
       },
       {
         "date": "2025-06-19",
-        "filePath": "Lecture/Homework/2025 spring/computational physics.md",
+        "filePath": "Lecture/bachelor/2025 spring/computational physics.md",
         "wordCountStart": 969,
         "charCountStart": 3971,
         "changes": [],
@@ -1669,6 +1669,460 @@
         "charCountStart": 15708,
         "changes": [],
         "id": 92
+      },
+      {
+        "date": "2025-06-22",
+        "filePath": "Lecture/bachelor/2025 spring/python for general purpose/homework11.md",
+        "wordCountStart": 885,
+        "charCountStart": 3806,
+        "changes": [],
+        "id": 100
+      },
+      {
+        "date": "2025-06-22",
+        "filePath": "Lecture/2025 summer school in nwu/numerical bootstrap by Ning Su.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "22:20",
+            "w": 29,
+            "c": 186
+          },
+          {
+            "timeKey": "22:35",
+            "w": 2,
+            "c": 32
+          }
+        ],
+        "id": 101
+      },
+      {
+        "date": "2025-06-22",
+        "filePath": "TODO.md",
+        "wordCountStart": 78,
+        "charCountStart": 978,
+        "changes": [],
+        "id": 102
+      },
+      {
+        "date": "2025-06-23",
+        "filePath": "Development/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 103
+      },
+      {
+        "date": "2025-06-23",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 797,
+        "charCountStart": 3743,
+        "changes": [],
+        "id": 104
+      },
+      {
+        "date": "2025-06-23",
+        "filePath": "Drafts/ads3 proca.md",
+        "wordCountStart": 340,
+        "charCountStart": 1753,
+        "changes": [
+          {
+            "timeKey": "08:05",
+            "w": 41,
+            "c": 208
+          },
+          {
+            "timeKey": "08:10",
+            "w": 101,
+            "c": 464
+          },
+          {
+            "timeKey": "08:15",
+            "w": 8,
+            "c": 11
+          },
+          {
+            "timeKey": "08:20",
+            "w": -60,
+            "c": -271
+          },
+          {
+            "timeKey": "13:00",
+            "w": -90,
+            "c": -413
+          }
+        ],
+        "id": 105
+      },
+      {
+        "date": "2025-06-23",
+        "filePath": "Articles/Proca in AdS3/proca in adsn with n>3.md",
+        "wordCountStart": 1396,
+        "charCountStart": 5999,
+        "changes": [],
+        "id": 106
+      },
+      {
+        "date": "2025-06-23",
+        "filePath": "Lecture/2025 summer school in nwu/numerical bootstrap by Ning Su.md",
+        "wordCountStart": 31,
+        "charCountStart": 218,
+        "changes": [
+          {
+            "timeKey": "09:50",
+            "w": 0,
+            "c": 4
+          },
+          {
+            "timeKey": "15:05",
+            "w": 4,
+            "c": 27
+          },
+          {
+            "timeKey": "15:15",
+            "w": 1,
+            "c": 8
+          },
+          {
+            "timeKey": "15:20",
+            "w": 18,
+            "c": 154
+          },
+          {
+            "timeKey": "15:25",
+            "w": 14,
+            "c": 116
+          }
+        ],
+        "id": 107
+      },
+      {
+        "date": "2025-06-23",
+        "filePath": "Lecture/2025 summer school in nwu/bootstrap method for ads amplitude by Xinan Zhou.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "10:00",
+            "w": 41,
+            "c": 240
+          },
+          {
+            "timeKey": "10:05",
+            "w": 48,
+            "c": 309
+          },
+          {
+            "timeKey": "10:10",
+            "w": 51,
+            "c": 411
+          },
+          {
+            "timeKey": "10:15",
+            "w": 98,
+            "c": 546
+          },
+          {
+            "timeKey": "10:20",
+            "w": 147,
+            "c": 821
+          },
+          {
+            "timeKey": "10:25",
+            "w": 143,
+            "c": 721
+          },
+          {
+            "timeKey": "10:30",
+            "w": 166,
+            "c": 806
+          },
+          {
+            "timeKey": "10:35",
+            "w": 91,
+            "c": 560
+          },
+          {
+            "timeKey": "10:40",
+            "w": 128,
+            "c": 620
+          },
+          {
+            "timeKey": "10:45",
+            "w": 86,
+            "c": 460
+          },
+          {
+            "timeKey": "10:50",
+            "w": 136,
+            "c": 714
+          },
+          {
+            "timeKey": "10:55",
+            "w": 183,
+            "c": 858
+          },
+          {
+            "timeKey": "11:00",
+            "w": 82,
+            "c": 457
+          },
+          {
+            "timeKey": "11:05",
+            "w": 130,
+            "c": 629
+          },
+          {
+            "timeKey": "13:05",
+            "w": -1,
+            "c": -4
+          },
+          {
+            "timeKey": "13:10",
+            "w": 31,
+            "c": 145
+          },
+          {
+            "timeKey": "13:15",
+            "w": 80,
+            "c": 304
+          },
+          {
+            "timeKey": "13:20",
+            "w": 124,
+            "c": 623
+          },
+          {
+            "timeKey": "13:25",
+            "w": 75,
+            "c": 480
+          },
+          {
+            "timeKey": "13:30",
+            "w": 106,
+            "c": 597
+          },
+          {
+            "timeKey": "13:35",
+            "w": 38,
+            "c": 207
+          },
+          {
+            "timeKey": "13:40",
+            "w": 124,
+            "c": 654
+          },
+          {
+            "timeKey": "13:45",
+            "w": 97,
+            "c": 518
+          },
+          {
+            "timeKey": "13:50",
+            "w": 93,
+            "c": 562
+          },
+          {
+            "timeKey": "13:55",
+            "w": 98,
+            "c": 450
+          },
+          {
+            "timeKey": "14:00",
+            "w": 33,
+            "c": 127
+          },
+          {
+            "timeKey": "14:05",
+            "w": 3,
+            "c": 26
+          },
+          {
+            "timeKey": "14:10",
+            "w": 62,
+            "c": 362
+          },
+          {
+            "timeKey": "14:15",
+            "w": 103,
+            "c": 563
+          },
+          {
+            "timeKey": "14:20",
+            "w": 46,
+            "c": 246
+          }
+        ],
+        "id": 108
+      },
+      {
+        "date": "2025-06-23",
+        "filePath": "Lecture/2025 summer school in nwu/bootstrap LQCD by Gang Yang.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "16:15",
+            "w": 25,
+            "c": 151
+          },
+          {
+            "timeKey": "16:25",
+            "w": 99,
+            "c": 577
+          },
+          {
+            "timeKey": "16:30",
+            "w": 100,
+            "c": 570
+          },
+          {
+            "timeKey": "16:35",
+            "w": 140,
+            "c": 612
+          },
+          {
+            "timeKey": "16:40",
+            "w": 114,
+            "c": 685
+          },
+          {
+            "timeKey": "16:45",
+            "w": 58,
+            "c": 369
+          },
+          {
+            "timeKey": "16:50",
+            "w": 9,
+            "c": 81
+          },
+          {
+            "timeKey": "16:55",
+            "w": 25,
+            "c": 196
+          },
+          {
+            "timeKey": "17:00",
+            "w": 30,
+            "c": 196
+          },
+          {
+            "timeKey": "17:05",
+            "w": 103,
+            "c": 593
+          },
+          {
+            "timeKey": "17:10",
+            "w": 95,
+            "c": 471
+          },
+          {
+            "timeKey": "17:15",
+            "w": 28,
+            "c": 208
+          },
+          {
+            "timeKey": "17:20",
+            "w": 74,
+            "c": 428
+          },
+          {
+            "timeKey": "17:25",
+            "w": 38,
+            "c": 242
+          }
+        ],
+        "id": 109
+      },
+      {
+        "date": "2025-06-24",
+        "filePath": "Lecture/2025 summer school in nwu/bootstrap method for ads amplitude by Xinan Zhou.md",
+        "wordCountStart": 2642,
+        "charCountStart": 14012,
+        "changes": [
+          {
+            "timeKey": "08:20",
+            "w": 31,
+            "c": 110
+          },
+          {
+            "timeKey": "08:25",
+            "w": 13,
+            "c": 40
+          },
+          {
+            "timeKey": "08:30",
+            "w": 126,
+            "c": 708
+          },
+          {
+            "timeKey": "08:35",
+            "w": 79,
+            "c": 475
+          },
+          {
+            "timeKey": "08:40",
+            "w": 90,
+            "c": 549
+          },
+          {
+            "timeKey": "08:45",
+            "w": 151,
+            "c": 819
+          },
+          {
+            "timeKey": "08:50",
+            "w": 149,
+            "c": 808
+          },
+          {
+            "timeKey": "08:55",
+            "w": 59,
+            "c": 369
+          },
+          {
+            "timeKey": "09:00",
+            "w": 28,
+            "c": 205
+          },
+          {
+            "timeKey": "09:05",
+            "w": 59,
+            "c": 475
+          },
+          {
+            "timeKey": "09:10",
+            "w": 91,
+            "c": 621
+          },
+          {
+            "timeKey": "09:15",
+            "w": 69,
+            "c": 434
+          },
+          {
+            "timeKey": "09:20",
+            "w": 109,
+            "c": 559
+          },
+          {
+            "timeKey": "09:25",
+            "w": 119,
+            "c": 520
+          },
+          {
+            "timeKey": "09:30",
+            "w": 67,
+            "c": 457
+          },
+          {
+            "timeKey": "09:35",
+            "w": 7,
+            "c": 48
+          }
+        ],
+        "id": 110
       }
     ],
     "daysWithCompletedGoal": [
@@ -1686,7 +2140,9 @@
       "2025-06-10",
       "2025-06-12",
       "2025-06-13",
-      "2025-06-17"
+      "2025-06-17",
+      "2025-06-23",
+      "2025-06-24"
     ]
   }
 }

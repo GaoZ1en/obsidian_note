@@ -577,4 +577,22 @@ traditional method needs cubic and quadratic vertices and calculates all the Wit
 2. complicated vertices
 3. proliferation of diagrams
 
-just like offshell amplitudes in flat space. 
+just like offshell amplitudes in flat space.
+
+## position space method
+
+1. ansatz. assume the 4-pt function has the following form 
+$$\tag{4.6}
+\begin{align}
+\mathcal{A} & =\sum _{X}\lambda _{X}Y_{R_{X}}(\sigma,\tau)(\text{ exchange Witten diagram })+(\text{ }t\text{-channel })+(\text{ }u\text{-channel })+\sum _{\text{ all possible R-symmetry }}\text{ contact Witten diagram }
+\end{align}
+$$
+
+- $\displaystyle{R}$-symmetry selection rule
+	- ?
+- cut off?
+	- for $\displaystyle{\tau}$
+
+2. evaluate ansatz.
+
+- $\displaystyle{R}$-symmetry polynomial???
