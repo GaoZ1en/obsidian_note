@@ -204,7 +204,8 @@ $$
 $$\tag{.}
 \begin{align}
 \mathcal{D}_{\Delta_{1}\dots \Delta _{n}} & =\int \frac{\mathrm{d}z_{0}\mathrm{d}^{d}\vec{z}}{z_{0}^{d+1}} \prod ^{n}_{i=1}z_{0}^{\Delta _{i}} \frac{1}{\Gamma(\Delta _{i})}\int _{0}^{\infty} \mathrm{d}\alpha _{i}\alpha _{i}^{\Delta _{i}-1}e^{-\alpha _{i}(z_{0}^{2}+(\vec{z}-\vec{x}_{i})^{2})} \\
- & = \frac{1}{\prod \Gamma(\Delta _{i})}\int \mathrm{d}z_{0} z_{0}^{\Sigma _{\Delta}-d-1}e^{-\alpha _{i}z_{0}^{2}}
+ & = \frac{1}{\prod \Gamma(\Delta _{i})}\int \prod ^{n}_{i=1}\mathrm{d}\alpha _{i}\int \mathrm{d}z_{0} z_{0}^{\Sigma _{\Delta}-d-1}\prod ^{n}_{i=1}e^{-\alpha _{i}z_{0}^{2}}\int \mathrm{d}^{d}\vec{z} \prod ^{n}_{i=1}e^{-\alpha _{i}(\vec{z}-\vec{x}_{i})^{2}} \\
+ & =
 \end{align}
 $$
 

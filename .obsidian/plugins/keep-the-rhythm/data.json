@@ -2034,6 +2034,25 @@
           }
         ],
         "id": 109
+      },
+      {
+        "date": "2025-06-24",
+        "filePath": "Lecture/2025 summer school in nwu/bootstrap method for ads amplitude by Xinan Zhou.md",
+        "wordCountStart": 2642,
+        "charCountStart": 14012,
+        "changes": [
+          {
+            "timeKey": "08:20",
+            "w": 31,
+            "c": 110
+          },
+          {
+            "timeKey": "08:25",
+            "w": 13,
+            "c": 40
+          }
+        ],
+        "id": 110
       }
     ],
     "daysWithCompletedGoal": [
