@@ -499,7 +499,7 @@ $$\tag{3.13}
 \begin{cases}
 U\partial _{U}\mathcal{G}\implies\frac{s}{2}\times\dots \\
 V\partial _{V}\mathcal{G}\implies\frac{t}{2}\times\dots \\
-U^{m}V^{n}\implies??
+U^{m}V^{n}\implies s\to s-2m,t\to t-2m
 \end{cases}
 \end{align}
 $$
@@ -596,3 +596,113 @@ $$
 2. evaluate ansatz.
 
 - $\displaystyle{R}$-symmetry polynomial???
+
+all $\displaystyle{\mathcal{D}}$ functions can be expanded by $\displaystyle{\left\{\Phi(z,\bar{z}),\log U,\log V,1\right\}}$ as
+
+$$\tag{.}
+\begin{align}
+\mathcal{A} & =R_{\Phi}\Phi+R_{U}\log U+R_{V}\log V+R_{1}
+\end{align}
+$$
+
+where $\displaystyle{\Phi(z,\bar{z})}$ is defined as and satisfies
+
+$$\tag{4.6}
+\begin{align}
+\phi(z,\bar{z}) & =\frac{1}{z-\bar{z}}\left( 2\mathrm{Li}_{2}(Z)-2\mathrm{Li}_{2}(\bar{z})+\log z\bar{z}\log \frac{1-z}{1-\bar{z}} \right) \\
+\partial _{z}\Phi(z,\bar{z}) & =\frac{\Phi}{z-\bar{z}}+\frac{\log U}{(z-1)(z-\bar{z})}-\frac{\log V}{z(z-\bar{z})}
+\end{align}
+$$
+
+3. use scf Ward identity
+
+$$\tag{4.7}
+\begin{align}
+(z\partial _{z}-\alpha \partial _{\alpha})\mathcal{A}|_{\alpha=\frac{1}{z}} & =0
+\end{align}
+$$
+
+to constrain the coefficients $\displaystyle{R_{\Phi},R_{U},R_{V},R_{1}}$.
+
+## Mellin space method
+
+the idea is quite similar.
+
+let
+
+$$\tag{4.8}
+\begin{align}
+\mathbb{I}_{1} & =(z\partial _{z}-\alpha \partial _{\alpha})\mathcal{G}|_{\alpha=\frac{1}{z}} \\
+\mathbb{I}_{2} & =(\bar{z}\partial _{\bar{z}}-\alpha \partial _{\alpha})\mathcal{G}|_{\alpha=\frac{1}{\bar{z}}}
+\end{align}
+$$
+
+consider a composition
+
+$$\tag{4.9}
+\begin{align}
+\mathbb{I}_{1}+\mathbb{I}_{2}, \frac{\mathbb{I}_{1}-\mathbb{I}_{2}}{z-\bar{z}}
+\end{align}
+$$
+
+corresponding to
+
+$$\tag{4.10}
+\begin{align}
+z^{n}+\bar{z}^{n},\frac{z^{n}-\bar{z}^{n}}{z-\bar{z}}
+\end{align}
+$$
+
+respectively.
+
+1. ansatz ??
+
+## algebraic method
+
+$$\tag{4.11}
+\begin{align}
+G & = G_{\text{free}}+\mathcal{R}H
+\end{align}
+$$
+
+where $\displaystyle{\mathcal{R}}$
+
+$$\tag{4.12}
+\begin{align}
+\mathcal{R} & =(1-z\alpha)(1-z\bar{\alpha})(1-\bar{z}\alpha)(1-\bar{z}\bar{\alpha})t_{12}^{2}t_{23}^{2}x_{13}^{2}x_{24}^{2}
+\end{align}
+$$
+
+translation to Mellin space
+
+$$\tag{4.13}
+\begin{align}
+G & \to \mathcal{M} \\
+G_{\text{free}} & \to 0 \\
+H & \to \tilde{\mathcal{M}}
+\end{align}
+$$
+
+1. scf symmetry
+
+$$\tag{4.14}
+\begin{align}
+\mathcal{M} & =\tilde{\mathcal{R}}\circ \tilde{\mathcal{M}}
+\end{align}
+$$
+
+2. Bose symmetry
+3. analytic property. $\displaystyle{\mathcal{M}}$ has simple pole with polynomial residues.
+4. asymptotic behavior of $\displaystyle{\mathcal{M}}$. $\displaystyle{\lim_{ \beta \to \infty }\mathcal{M}(\beta s,\beta t)}$ grows linearly, comes from scattering amplitude in flat spacetime.
+
+$$\tag{4.15}
+\begin{align}
+\tilde{\mathcal{M}} & =\sum _{i+j+k=\varepsilon-2,0\leqslant i,j,k\leqslant\varepsilon-2} \frac{a_{ijk}\sigma ^{i}\tau ^{j}}{(s-s_{M}+2k)(t-t_{M}+2j)(\tilde{u}-u_{M}+2i)} \\
+\implies a_{ijk} & =\frac{2\sqrt{ k_{1}k_{2}k_{3}k_{4} }}{i!j!k!\left(i+\frac{k _{u}}{2}\right)!\left( j+\frac{k_{t}}{2} \right)!\left( k+\frac{k _{s}}{2} \right)!}
+\end{align}
+$$
+
+these three methods can be generalized to other CFTs with maximal susy, like AdS_4xS^7, AdS_7xS^4 and half maximal susy like AdS_d+1xS^3, and higher point functions, on and on.
+
+
+
