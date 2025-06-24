@@ -357,9 +357,9 @@ consider a s-channel Witten diagram
 
 $$\tag{2.22}
 \begin{align}
-W^{(s)}_{\Delta,\ell} & =g^{(s)}_{\Delta,\ell}+\sum a_{n}g^{(s)}_{\Delta_{1}+\Delta_{2}+\alpha n+\ell_{1}\ell}+\sum b_{n}g^{(s)}_{\Delta_{3}+\Delta_{4}+\alpha n+\ell_{2}\ell} \\
- & =\sum c_{n}g^{(t)}_{\Delta_{1}+\Delta_{4}+\alpha n+\ell \ell}+\sum d_{n}g^{(t)}_{\Delta _{2}+\Delta _{3}+\alpha n+\ell \ell} \\
-W_{\mathrm{con}} & =\sum \bar{a}_{n}g^{(s)}_{\Delta_{1}+\Delta_{2}+\alpha n+\ell_{1}\ell}+\sum \bar{b}_{n}g^{(s)}_{\Delta_{3}+\Delta_{4}+\alpha n+\ell \ell}
+W^{(s)}_{\Delta,\ell} & =g^{(s)}_{\Delta,\ell}+\sum a_{n}g^{(s)}_{\Delta_{1}+\Delta_{2}+2 n+\ell_{1}\ell}+\sum b_{n}g^{(s)}_{\Delta_{3}+\Delta_{4}+2 n+\ell_{2}\ell} \\
+ & =\sum c_{n}g^{(t)}_{\Delta_{1}+\Delta_{4}+2 n+\ell \ell}+\sum d_{n}g^{(t)}_{\Delta _{2}+\Delta _{3}+2 n+\ell \ell} \\
+W_{\mathrm{con}} & =\sum \bar{a}_{n}g^{(s)}_{\Delta_{1}+\Delta_{2}+2 n+\ell_{1}\ell}+\sum \bar{b}_{n}g^{(s)}_{\Delta_{3}+\Delta_{4}+2 n+\ell \ell}
 \end{align}
 $$
 
@@ -399,5 +399,108 @@ $$\tag{3.3}
 \end{align}
 $$
 
-and the number of independent dofs is $\displaystyle{\frac{n(n-3)}{2}}$ (exactly the number of independent Mandelstam variables). we have $\displaystyle{\delta _{ij}=\vec{p}_{i}\cdot \vec{p}_{j}}$, where $\displaystyle{\vec{p}_{i}}$ onshell $\displaystyle{\implies \vec{p}_{i}^{2}=-\Delta _{i},\sum \vec{p}_{i}=0}$.
+and the number of independent dofs is $\displaystyle{\frac{n(n-3)}{2}}$ (exactly the number of independent Mandelstam variables in $\displaystyle{d\geqslant4}$). we have $\displaystyle{\delta _{ij}=\vec{p}_{i}\cdot \vec{p}_{j}}$, where $\displaystyle{\vec{p}_{i}}$ onshell $\displaystyle{\implies \vec{p}_{i}^{2}=-\Delta _{i},\sum \vec{p}_{i}=0}$. $\displaystyle{\mathcal{M}(\delta _{ij})}$ is called the **Mellin amplitude**.
+
+we first consider 4-pt function, we have $\displaystyle{\delta _{ij}}$ variables
+
+$$\tag{3.4}
+\begin{align}
+\delta _{12} & = \frac{\Delta_{1}+\Delta_{2}-s}{2},\delta _{34}=\frac{\Delta_{3}+\Delta_{4}-s}{2} \\
+\delta _{13} & = \frac{\Delta_{1}+\Delta_{3}-t}{2},\delta _{24}=\frac{\Delta_{2}+\Delta_{4}-t}{2} \\
+\delta _{14} & = \frac{\Delta_{1}+\Delta_{4}-u}{2},\delta _{23}=\frac{\Delta_{2}+\Delta_{3}-u}{2} \\
+\implies s+t+u & =\Delta_{1}+\Delta_{2}+\Delta_{3}+\Delta_{4}
+\end{align}
+$$
+
+make a analytic continuation, $\displaystyle{(s,t,u)\to i(s,t,u)}$
+
+$$\tag{3.5}
+\begin{align}
+\lim_{ s,t \to \infty } \prod _{i<j}\Gamma(\delta _{ij})\sim e^{-\pi(|s|+|t|+|u|)/2}
+\end{align}
+$$
+
+so the integral (3.2) converges if the Mellin amplitude $\displaystyle{\mathcal{M}(\delta _{ij})}$ increases slower than $\displaystyle{e^{\pi(|s|+|t|+|u|)/2}}$.
+
+---
+
+after Mellin transform, $\displaystyle{(x_{ij}^2)^{-\delta _{ij}+\sharp}\to \frac{1}{\delta _{ij}-\sharp}}$.
+
+---
+
+suppose in the s-channel we commute the operator with $\displaystyle{\Delta}$ and $\displaystyle{\ell}$, there is a pole at $\displaystyle{s=(\Delta-\ell)+2m}$, where $\displaystyle{(\Delta-\ell)}$ corresponds to conformal primary operator, and $\displaystyle{m\in \mathbb{Z}_{+}}$ corresponds to the conformal descendant operator.
+
+what is single trace what is double trace?
+
+## Witten diagrams in Mellin space
+
+$$\tag{3.6}
+\begin{align}
+\mathcal{D}_{\Delta_{1}\dots \Delta _{4}} \implies \text{ Constant Mellin Amplitude }
+\end{align}
+$$
+
+a useful formula
+
+$$\tag{3.7}
+\begin{align}
+\nabla ^{\mu}G^{\Delta _{1}}_{B\partial}\nabla _{\mu}G^{\Delta _{2}}_{B\partial} & =\Delta_{1}\Delta_{2}(G^{\Delta_{1}}_{B\partial}G^{\Delta_{2}}_{B\partial}-2x^{2}_{12}G^{\Delta_{1}+1}_{B\partial}G^{\Delta_{2}+1}_{B\partial})
+\end{align}
+$$
+
+consider a 4-pt contact Witten diagram with two derivatives, we have
+
+$$\tag{3.8}
+\begin{align}
+(\text{ Witten diagram })\propto \mathcal{D}_{\Delta_{1}\Delta_{2}\Delta_{3}\Delta_{4}}+Ax^{2}_{12}\mathcal{D}_{\Delta_{1}+1,\Delta_{2}+1,\Delta_{3}\Delta_{4}}
+\end{align}
+$$
+
+where the second term gives a linear contribution in the Mellin amplitude. more generally, if we have $\displaystyle{2L}$ derivatvies, we got a polynomial in the Mellin amplitude.
+
+consider a 4-pt exchange Witten diagram, we can expect the Mellin amplitude has a pole structure
+
+$$\tag{3.9}
+\begin{align}
+\mathcal{M}_{\Delta,\ell} & =\sum ^{\infty}_{m=0} \frac{Q_{\ell,m}(t)}{s-(\Delta-\ell)-2m}+P_{\ell-1}(s,t)
+\end{align}
+$$
+
+we know that
+
+$$\tag{3.10}
+\begin{align}
+(\mathrm{Cas}-m^{2})W_{\Delta,\ell} & =W_{\text{cont}}
+\end{align}
+$$
+
+then take a Mellin transform, we will get a difference equation
+
+$$\tag{3.11}
+\begin{align}
+\text{ EOM }\circ \mathcal{M}_{\Delta,\ell} & =\mathcal{M}_{\text{cont}} \\
+\end{align}
+$$
+
+the EOM will give a recursion relation for $\displaystyle{Q_{\ell,m}(t)}$. when $\displaystyle{\Delta_{1}+\Delta_{2}-\Delta+\ell \in2\mathbb{Z}_{+}}$, the recursion will truncate and we will have a finite number of $\displaystyle{\mathcal{D}}$ functions.
+
+for simplicity, we consider $\displaystyle{\braket{ \phi \phi \phi \phi }}$
+
+$$\tag{3.12}
+\begin{align}
+\mathcal{G} & =\int \frac{\mathrm{d}s\mathrm{d}t}{(4\pi i)^{2}}U^{s/2}V^{t/2-\Delta _{\phi}}\Gamma ^{2}\left( \Delta _{\phi}-\frac{s}{2} \right)\Gamma ^{2}\left( \Delta _{\phi}-\frac{t}{2} \right)\Gamma ^{2}\left( \Delta _{\phi}-\frac{u}{2} \right)\mathcal{M}(s,t) 
+\end{align}
+$$
+
+when
+
+$$\tag{3.13}
+\begin{align}
+\begin{cases}
+U\partial _{U}\mathcal{G}\implies\frac{s}{2}\times\dots \\
+V\partial _{V}\mathcal{G}\implies\frac{t}{2}\times\dots \\
+U^{m}V^{n}\implies??
+\end{cases}
+\end{align}
+$$
 
