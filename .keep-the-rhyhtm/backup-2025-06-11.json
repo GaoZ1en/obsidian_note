@@ -2120,9 +2120,425 @@
             "timeKey": "09:35",
             "w": 7,
             "c": 48
+          },
+          {
+            "timeKey": "13:15",
+            "w": 44,
+            "c": 283
+          },
+          {
+            "timeKey": "13:20",
+            "w": 26,
+            "c": 220
+          },
+          {
+            "timeKey": "13:25",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "13:30",
+            "w": 135,
+            "c": 732
+          },
+          {
+            "timeKey": "13:35",
+            "w": 80,
+            "c": 420
+          },
+          {
+            "timeKey": "13:40",
+            "w": 55,
+            "c": 283
+          },
+          {
+            "timeKey": "13:45",
+            "w": 82,
+            "c": 454
+          },
+          {
+            "timeKey": "13:50",
+            "w": 72,
+            "c": 500
+          },
+          {
+            "timeKey": "13:55",
+            "w": 102,
+            "c": 487
+          },
+          {
+            "timeKey": "14:00",
+            "w": 15,
+            "c": 90
+          },
+          {
+            "timeKey": "14:05",
+            "w": 3,
+            "c": 32
+          },
+          {
+            "timeKey": "14:20",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "14:30",
+            "w": 9,
+            "c": 62
           }
         ],
         "id": 110
+      },
+      {
+        "date": "2025-06-24",
+        "filePath": "Lecture/2025 summer school in nwu/numerical bootstrap by Ning Su.md",
+        "wordCountStart": 68,
+        "charCountStart": 527,
+        "changes": [
+          {
+            "timeKey": "13:10",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 112
+      },
+      {
+        "date": "2025-06-24",
+        "filePath": "Lecture/2025 summer school in nwu/lattice QCD by Xu Feng.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "16:25",
+            "w": 0,
+            "c": 2
+          }
+        ],
+        "id": 113
+      },
+      {
+        "date": "2025-06-24",
+        "filePath": "TODO.md",
+        "wordCountStart": 78,
+        "charCountStart": 978,
+        "changes": [
+          {
+            "timeKey": "17:15",
+            "w": -1,
+            "c": -28
+          }
+        ],
+        "id": 114
+      },
+      {
+        "date": "2025-06-25",
+        "filePath": "Drafts/ads3 proca.md",
+        "wordCountStart": 340,
+        "charCountStart": 1752,
+        "changes": [
+          {
+            "timeKey": "08:10",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 115
+      },
+      {
+        "date": "2025-06-25",
+        "filePath": "Lecture/2025 summer school in nwu/scattering amplitude by Song He.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "08:30",
+            "w": 17,
+            "c": 130
+          },
+          {
+            "timeKey": "08:35",
+            "w": 11,
+            "c": 89
+          },
+          {
+            "timeKey": "08:45",
+            "w": 28,
+            "c": 160
+          },
+          {
+            "timeKey": "08:50",
+            "w": 66,
+            "c": 438
+          },
+          {
+            "timeKey": "08:55",
+            "w": 16,
+            "c": 97
+          },
+          {
+            "timeKey": "09:00",
+            "w": 18,
+            "c": 128
+          },
+          {
+            "timeKey": "09:05",
+            "w": 18,
+            "c": 115
+          },
+          {
+            "timeKey": "09:10",
+            "w": 50,
+            "c": 332
+          },
+          {
+            "timeKey": "09:15",
+            "w": 43,
+            "c": 180
+          },
+          {
+            "timeKey": "09:20",
+            "w": 57,
+            "c": 339
+          },
+          {
+            "timeKey": "09:25",
+            "w": 52,
+            "c": 318
+          },
+          {
+            "timeKey": "09:30",
+            "w": 29,
+            "c": 171
+          },
+          {
+            "timeKey": "09:35",
+            "w": 64,
+            "c": 371
+          },
+          {
+            "timeKey": "09:40",
+            "w": 50,
+            "c": 307
+          },
+          {
+            "timeKey": "09:45",
+            "w": 20,
+            "c": 126
+          },
+          {
+            "timeKey": "09:50",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "13:15",
+            "w": 0,
+            "c": 4
+          },
+          {
+            "timeKey": "13:20",
+            "w": 108,
+            "c": 570
+          },
+          {
+            "timeKey": "13:25",
+            "w": 84,
+            "c": 410
+          },
+          {
+            "timeKey": "13:30",
+            "w": 91,
+            "c": 435
+          },
+          {
+            "timeKey": "13:35",
+            "w": 36,
+            "c": 237
+          },
+          {
+            "timeKey": "13:40",
+            "w": 65,
+            "c": 351
+          },
+          {
+            "timeKey": "13:45",
+            "w": 22,
+            "c": 129
+          },
+          {
+            "timeKey": "13:50",
+            "w": 116,
+            "c": 443
+          },
+          {
+            "timeKey": "13:55",
+            "w": 5,
+            "c": 43
+          },
+          {
+            "timeKey": "14:05",
+            "w": 134,
+            "c": 737
+          },
+          {
+            "timeKey": "14:10",
+            "w": 66,
+            "c": 233
+          },
+          {
+            "timeKey": "14:15",
+            "w": 15,
+            "c": 90
+          },
+          {
+            "timeKey": "14:20",
+            "w": 44,
+            "c": 181
+          },
+          {
+            "timeKey": "16:15",
+            "w": 1,
+            "c": 14
+          },
+          {
+            "timeKey": "16:20",
+            "w": 2,
+            "c": 19
+          },
+          {
+            "timeKey": "16:25",
+            "w": 30,
+            "c": 183
+          },
+          {
+            "timeKey": "16:30",
+            "w": 11,
+            "c": 76
+          }
+        ],
+        "id": 116
+      },
+      {
+        "date": "2025-06-25",
+        "filePath": "Lecture/2025 summer school in nwu/lattice QCD by Xu Feng.md",
+        "wordCountStart": 0,
+        "charCountStart": 2,
+        "changes": [
+          {
+            "timeKey": "10:15",
+            "w": 3,
+            "c": 25
+          },
+          {
+            "timeKey": "10:25",
+            "w": 2,
+            "c": 17
+          }
+        ],
+        "id": 117
+      },
+      {
+        "date": "2025-06-25",
+        "filePath": "Reading/symmetry and topology/topology/examples of homology group calculation.md",
+        "wordCountStart": 854,
+        "charCountStart": 4547,
+        "changes": [],
+        "id": 118
+      },
+      {
+        "date": "2025-06-25",
+        "filePath": "Reading/symmetry and topology/topology/supersymmetry and morse theory.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 119
+      },
+      {
+        "date": "2025-06-25",
+        "filePath": "Reading/symmetry and topology/topology/the toric code and homology.md",
+        "wordCountStart": 3689,
+        "charCountStart": 22095,
+        "changes": [],
+        "id": 120
+      },
+      {
+        "date": "2025-06-25",
+        "filePath": "Reading/black hole thermodynamics/path integral approach to Hawking radiation.md",
+        "wordCountStart": 1765,
+        "charCountStart": 10043,
+        "changes": [],
+        "id": 121
+      },
+      {
+        "date": "2025-06-25",
+        "filePath": "Reading/black hole thermodynamics/path integrals, states, and operators in QFT.md",
+        "wordCountStart": 576,
+        "charCountStart": 3243,
+        "changes": [],
+        "id": 122
+      },
+      {
+        "date": "2025-06-25",
+        "filePath": "Reading/black hole thermodynamics/correlation functions in AdSCFT.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:10",
+            "w": 3,
+            "c": 32
+          },
+          {
+            "timeKey": "15:15",
+            "w": 2,
+            "c": 8
+          }
+        ],
+        "id": 123
+      },
+      {
+        "date": "2025-06-25",
+        "filePath": "Reading/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 124
+      },
+      {
+        "date": "2025-06-25",
+        "filePath": "Reading/adscft/AdSCFT correspondence and symmetry breaking.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:50",
+            "w": 22,
+            "c": 167
+          },
+          {
+            "timeKey": "15:55",
+            "w": 24,
+            "c": 114
+          },
+          {
+            "timeKey": "16:00",
+            "w": 29,
+            "c": 170
+          },
+          {
+            "timeKey": "16:05",
+            "w": 87,
+            "c": 467
+          }
+        ],
+        "id": 125
       }
     ],
     "daysWithCompletedGoal": [
@@ -2142,7 +2558,8 @@
       "2025-06-13",
       "2025-06-17",
       "2025-06-23",
-      "2025-06-24"
+      "2025-06-24",
+      "2025-06-25"
     ]
   }
 }
