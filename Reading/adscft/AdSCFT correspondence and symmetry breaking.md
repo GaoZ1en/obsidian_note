@@ -186,3 +186,18 @@ A(\vec{x}) & =\frac{1}{2\Delta-d}\braket{ \mathcal{O}(\vec{x}) }
 \end{align}
 $$
 
+in order to calculate the on-shell action, it is convenient to introduce
+
+$$\tag{2.16}
+\begin{align}
+\phi(z,\vec{x}) & =z^{d-\Delta}\chi(z,\vec{x})
+\end{align}
+$$
+
+then the action becomes
+
+$$\tag{2.17}
+\begin{align}
+I & =\frac{1}{2}\mathrm{d}^{d}x\mathrm{d}z(g)
+\end{align}
+$$
