@@ -52,7 +52,7 @@
                     "useWin32Conhost": true
                   },
                   "serial": {
-                    "columns": 168,
+                    "columns": 284,
                     "data": "oh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m11:40:45 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t workspace\r\n\r\n * Restored history at Thu Jun 19 2025 13:25:52 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Sun Jun 22 2025 22:22:27 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n[exited]\r\n\u001b[33m10:28:17 \u001b[32mkoishi@\u001b[36mKoishiLaptop\u001b[0m:\u001b[34;1m~\u001b[0m \r\n      \u001b[97;1m▶\u001b[0m  \u001b[32;1m$\u001b[0m tmux attach-session -t workspace\r\n\r\n * Restored history at Tue Jun 24 2025 13:12:32 GMT+0800 (中国标准时间)\r\n\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Wed Jun 25 2025 08:23:59 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n * Restored history at Wed Jun 25 2025 16:34:59 GMT+0800 (中国标准时间)\r\n\r\noh-my-bash/check_for_upgrade: Failed to get a lock.  Please make sure that no\r\nother process is trying to update Oh My Bash and remove\r\n\"/home/koishi/.oh-my-bash/log/update.lock\"\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\u001b[65A",
                     "rows": 70
                   }
@@ -69,13 +69,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture/2025 summer school in nwu/by Ye Yuan.md",
+                "file": "Lecture/2025 summer school in nwu/analytic structure of scattering amplitude by Ye Yuan.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "by Ye Yuan"
+              "title": "analytic structure of scattering amplitude by Ye Yuan"
             }
           }
         ],
@@ -290,8 +290,8 @@
   },
   "active": "5979adcd46eeeef7",
   "lastOpenFiles": [
+    "Lecture/2025 summer school in nwu/analytic structure of scattering amplitude by Ye Yuan.md",
     "Lecture/2025 summer school in nwu/scattering amplitude by Song He.md",
-    "Lecture/2025 summer school in nwu/by Ye Yuan.md",
     "Reading/adscft/AdSCFT correspondence and symmetry breaking.md",
     "TODO.md",
     "Attachments/Pasted image 20250626091150.png",
