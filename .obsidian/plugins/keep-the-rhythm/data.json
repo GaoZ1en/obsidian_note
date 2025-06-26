@@ -2936,9 +2936,33 @@
             "timeKey": "15:00",
             "w": 39,
             "c": 192
+          },
+          {
+            "timeKey": "16:00",
+            "w": 1,
+            "c": 10
           }
         ],
         "id": 130
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Lecture/2025 summer school in nwu/bootstrap LQCD by Gang Yang.md",
+        "wordCountStart": 938,
+        "charCountStart": 5379,
+        "changes": [
+          {
+            "timeKey": "16:20",
+            "w": -8,
+            "c": -71
+          },
+          {
+            "timeKey": "16:25",
+            "w": 76,
+            "c": 453
+          }
+        ],
+        "id": 131
       }
     ],
     "daysWithCompletedGoal": [

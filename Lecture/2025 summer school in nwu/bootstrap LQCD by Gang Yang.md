@@ -151,7 +151,26 @@ and $\displaystyle{W_{4}=\frac{1-W_{2}}{\lambda}}$ $\displaystyle{\implies}$ $\d
 
 when $\displaystyle{n}$ goes higher and higher, we will get more and more constraints, so we can get a better and better bound for $\displaystyle{W_{2}}$. actually the convergence is very fast.
 
-```mathematica
-SemidefiniteOptimization[+-W2,{{M>=0},{eqn}},vars]
-```
+## matrix model
 
+$$\tag{1.8}
+\begin{align}
+Z & =\int \mathrm{d}M e^{-S[M]}
+\end{align}
+$$
+
+where $\displaystyle{M}$ is a $\displaystyle{N\times N}$ Hermitian metrix, and the action
+
+$$\tag{1.9}
+\begin{align}
+S[M] & =N\mathrm{Tr}(V(M))
+\end{align}
+$$
+
+where $\displaystyle{V(M)}$ is a polynomial of $\displaystyle{M}$, such as $\displaystyle{V(M)=\frac{1}{2}M^{2}+\frac{g}{4}M^{4}}$. define
+
+$$\tag{1.10}
+\begin{align}
+t_{k} & =\frac{1}{Z}
+\end{align}
+$$
