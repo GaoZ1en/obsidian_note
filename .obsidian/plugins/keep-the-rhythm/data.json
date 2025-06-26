@@ -2920,6 +2920,20 @@
           }
         ],
         "id": 129
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Lecture/2025 summer school in nwu/by Ye Yuan.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "14:55",
+            "w": 1,
+            "c": 16
+          }
+        ],
+        "id": 130
       }
     ],
     "daysWithCompletedGoal": [
