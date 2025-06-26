@@ -69,13 +69,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading/adscft/AdSCFT correspondence and symmetry breaking.md",
+                "file": "Lecture/2025 summer school in nwu/scattering amplitude by Song He.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "AdSCFT correspondence and symmetry breaking"
+              "title": "scattering amplitude by Song He"
             }
           }
         ],
@@ -290,8 +290,8 @@
   },
   "active": "5979adcd46eeeef7",
   "lastOpenFiles": [
-    "TODO.md",
     "Reading/adscft/AdSCFT correspondence and symmetry breaking.md",
+    "TODO.md",
     "Attachments/Pasted image 20250626091150.png",
     "Drafts/adsn scalar.md",
     "Lecture/2025 summer school in nwu/scattering amplitude by Song He.md",

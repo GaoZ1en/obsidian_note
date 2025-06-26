@@ -2824,6 +2824,11 @@
             "timeKey": "09:55",
             "w": 545,
             "c": 3881
+          },
+          {
+            "timeKey": "10:00",
+            "w": -545,
+            "c": -3877
           }
         ],
         "id": 127
@@ -2846,6 +2851,30 @@
           }
         ],
         "id": 128
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Lecture/2025 summer school in nwu/scattering amplitude by Song He.md",
+        "wordCountStart": 1820,
+        "charCountStart": 9898,
+        "changes": [
+          {
+            "timeKey": "10:05",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "10:20",
+            "w": 41,
+            "c": 172
+          },
+          {
+            "timeKey": "10:25",
+            "w": 107,
+            "c": 571
+          }
+        ],
+        "id": 129
       }
     ],
     "daysWithCompletedGoal": [

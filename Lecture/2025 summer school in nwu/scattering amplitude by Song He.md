@@ -275,3 +275,22 @@ y & 0 \\
 $$
 
 then we write $\displaystyle{M_{C}=\prod _{L\in C}M_{L}\prod _{R\in C}M_{R}}$, then $\displaystyle{u_{C}=\frac{(M_{C})_{12}(M_{C})_{21}}{(M_{C})_{11}(M_{C})_{22}}}$. it can be proved that $\displaystyle{u_{C}}$ solves the u-equations.
+
+$$\tag{2.10}
+\begin{align}
+\mathcal{A}_{S} & =\int ^{\infty}_{0}\prod ^{\infty}_{i=1} \frac{\mathrm{d}y_{i}}{y^{2}_{i}}\prod _{C}u_{C}^{\alpha'X_{C}}(y)
+\end{align}
+$$
+
+He claims that (2.10) is the gluon amplitude. actually consider $\displaystyle{n}$-pt tachyon bosonic string amplitude
+
+$$\tag{2.11}
+\begin{align}
+\mathcal{A}_{n}^{\text{ tree }}(1,2,\dots,n) & =\int \frac{\mathrm{d}^{n}z_{i}}{\mathrm{vol}SL(2,\mathbb{Z})}\prod _{i<j}z_{i,j}^{2\alpha'p_{i}\cdot p_{j}}\exp\left(\sum _{i\neq j}2 \frac{\varepsilon _{i}\cdot \varepsilon _{j}}{(ij)^{2}}-\sqrt{ \alpha' }\frac{\varepsilon _{i}\cdot p_{j}}{(ij)}\right)
+\end{align}
+$$
+
+choose $\displaystyle{p_{i}\cdot \varepsilon _{j}=0,\dots}$, ... gluon emerges as a pair of two tachyons.
+
+
+
