@@ -237,3 +237,44 @@ $$\tag{2.2}
 u_{\mu}(x) & \to \Omega(x)u_{\mu}(x)\Omega ^{\dagger}(x+\hat{\mu})
 \end{align}
 $$
+
+a plaque variable $\displaystyle{u_{p}}$ is defined as
+
+$$\tag{2.3}
+\begin{align}
+u_{p} & =u_{\mu}(x)u_{\nu}(x+\hat{\mu})u_{-\mu}(x+\hat{\mu}+\hat{\nu})u_{-\nu}(x+\hat{\nu}) \\
+ & =u_{\mu}(x)u_{\nu}(x+\hat{\mu})u^{\dagger}_{\mu}(x+\hat{\nu})u^{\dagger}_{\nu}(x)
+\end{align}
+$$
+
+which is the minimal Wilson loop. the action can be written as
+
+$$\tag{2.4}
+\begin{align}
+S_{\mathrm{YM}} & =-\frac{N}{2\lambda}\sum _{p} (\mathrm{tr}u_{p}+\mathrm{tr}u_{p}^{\dagger})
+\end{align}
+$$
+
+the partition function is
+
+$$\tag{2.5}
+\begin{align}
+\mathcal{Z} & =\int [\mathcal{D}u]e^{-S[u]} \\
+ & =\int \prod _{x,\mu}\mathrm{d}u_{\mu}(x) e^{N/2\lambda \sum _{p}\mathrm{tr}u_{p}+\mathrm{tr}u_{p}^{\dagger}}
+\end{align}
+$$
+
+what we want is the correlation function
+
+$$\tag{2.6}
+\begin{align}
+\braket{ \mathcal{O} }  & =\frac{1}{\mathcal{Z}}\int \mathcal{D}u e^{-S[u]}\mathcal{O}
+\end{align}
+$$
+
+this is the basic setup. but now we introduce a new set of variables, **letter representation**
+
+in 4d theory, we introduce $\displaystyle{a,a^{-1},b,b^{-1},c,c^{-1},d,d^{-1}}$, a loop can be represented as a word, $\displaystyle{W_{p}=aba^{-1}b^{-1}}$ or a more complex one $\displaystyle{W_{C}=aabbab^{-1}a^{-1}a^{-1}a^{-1}b^{-b}}$. we have the following symmetry
+
+1. lattice symmetry
+2. inverse symmetry $\displaystyle{\braket{ W }= \braket{ W^{\dagger} }}$.
