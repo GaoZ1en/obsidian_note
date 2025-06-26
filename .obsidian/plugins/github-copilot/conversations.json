@@ -1,6 +1,30 @@
 {
   "conversations": [
     {
+      "id": "1750916185233",
+      "title": "what is f-graph in the context...",
+      "messages": [
+        {
+          "id": "1750916214762",
+          "content": "what is f-graph in the context of modern scattering amplitudes (field&string theory)?",
+          "role": "user",
+          "timestamp": 1750916214762
+        },
+        {
+          "id": "msg_vrtx_017XA5CzCr66kVUFNXFDLqgc",
+          "content": "# F-Graphs in Scattering Amplitudes\n\n## Definition and Core Structure\n\n**F-graphs** (also called **polytope graphs** or **positive geometry graphs**) are combinatorial objects that encode the singularity structure and factorization properties of scattering amplitudes in both field theory and string theory. They emerge naturally from the [[positive geometry]] program initiated by Arkani-Hamed and collaborators.\n\n### Mathematical Framework\n\nAn F-graph $$\\mathcal{F}$$ consists of:\n- **Vertices** $$V$$: representing kinematic invariants or momentum regions\n- **Edges** $$E$$: encoding propagator singularities \n- **Faces** $$F$$: corresponding to factorization channels\n- **Graph polynomial** $$\\mathcal{G}(\\mathcal{F})$$: generating the amplitude's analytic structure\n\nThe key insight is that amplitudes can be written as:\n$$\\mathcal{A}_n = \\int_{\\mathcal{F}} \\frac{d^k\\ell}{\\mathcal{G}(\\mathcal{F})(\\ell, p_i)}$$\n\nwhere $$\\mathcal{F}$$ defines the integration domain and $$\\mathcal{G}(\\mathcal{F})$$ encodes all poles.\n\n## Connection to Positive Geometries\n\nF-graphs are intimately connected to the [[Amplituhedron]] and [[Associahedron]] through:\n\n1. **Canonical Forms**: Each F-graph defines a canonical differential form\n   $$\\Omega(\\mathcal{F}) = \\frac{d^{n-3}\\sigma}{\\langle 12 \\rangle \\langle 23 \\rangle \\cdots \\langle n1 \\rangle}$$\n\n2. **Triangulations**: F-graphs provide triangulations of positive geometries, with each triangle contributing a simple pole structure\n\n3. **BCFW Recursion**: F-graph decompositions naturally implement [[BCFW recursion relations]]\n\n## Field Theory Applications\n\n### Yang-Mills Theory\nIn $$\\mathcal{N}=4$$ SYM, F-graphs encode:\n- **Planar limit**: Tree-level amplitudes via [[dual conformal invariance]]\n- **Loop corrections**: Through F-graph \"fattening\" procedures\n- **Wilson loops**: Via [[AdS/CFT correspondence]] and F-graph duality\n\n### Example: 4-Point Amplitude\nThe simplest non-trivial F-graph for 4-gluon scattering:\n$$\\mathcal{A}_4 = \\frac{\\langle 12 \\rangle^4}{s_{12} s_{23}}$$\ncorresponds to a graph with two vertices connected by propagators $$s_{12}$$ and $$s_{23}$$.\n\n## String Theory Manifestations\n\n### Worldsheet Perspective\nF-graphs appear in string amplitudes through:\n- **Moduli space integration**: F-graphs parametrize regions of moduli space $$\\mathcal{M}_{g,n}$$\n- **Vertex operator correlators**: Singularities match F-graph edge structure\n- **α'-expansion**: F-graph coefficients organize the low-energy expansion\n\n### CHY Formalism\nIn the [[Cachazo-He-Yuan (CHY)]] formalism:\n$$\\mathcal{A}_n^{\\text{string}} = \\int \\frac{d^n\\sigma}{\\text{vol}(SL_2)} \\prod_{i<j} |z_i - z_j|^{2\\alpha' s_{ij}} \\mathcal{I}_n(\\sigma)$$\n\nF-graphs encode the integration regions where specific $$\\alpha' s_{ij}$$ terms dominate.\n\n## Computational Techniques\n\n### Graph Polynomials\nFor a given F-graph $$\\mathcal{F}$$, compute:\n```python\n# Sympy implementation sketch\ndef graph_polynomial(edges, kinematics):\n    \"\"\"Compute F-graph polynomial\"\"\"\n    poly = 1\n    for edge in edges:\n        poly *= edge.momentum_invariant(kinematics)\n    return poly\n```\n\n### Triangulation Algorithms\nRecent developments include:\n- **Positive tropical geometry**: Computing F-graph triangulations via [[tropical geometry]]\n- **Cluster algebras**: Systematic F-graph construction using [[cluster coordinates]]\n\n## Recent Developments (2020+)\n\n### Cosmological Correlators\nF-graphs have been extended to cosmology:\n- **Cosmological polytopes**: Generalizing amplituhedra to de Sitter space ^cite{ArkaniHamed2021}\n- **Bootstrap constraints**: F-graph singularities constrain inflationary models\n\n### Machine Learning Applications\n- **Neural amplitude networks**: Using F-graph structure as ML architecture\n- **Symbol detection**: Automated F-graph reconstruction from amplitude data\n\n## Open Problems\n\n[[Important Open Problems]]:\n\n1. **Complete F-graph classification**: Systematic enumeration for all $$n$$-point amplitudes\n2. **Loop-level extension**: Rigorous F-graph formulation beyond tree level\n3. **Gravity amplitudes**: F-graph description of Einstein gravity scattering\n4. **Finite temperature**: F-graph generalization to thermal field theory\n5. **Non-planar sectors**: F-graphs for non-planar gauge theory amplitudes\n\n## Key References\n\n- Arkani-Hamed et al., \"Positive Geometries and Canonical Forms\" [arXiv:1703.04541]\n- Benincasa, \"Cosmological Polytopes and the Wavefunction of the Universe\" [arXiv:1909.02517]\n- Ferro et al., \"Cuts and Isogenies\" [arXiv:2006.15545]\n\n**Status**: F-graphs represent an active area bridging [[algebraic geometry]], [[combinatorics]], and [[quantum field theory]], with applications expanding beyond traditional scattering amplitudes into [[cosmology]] and [[condensed matter theory]].",
+          "role": "assistant",
+          "timestamp": 1750916253091
+        }
+      ],
+      "createdAt": 1750916185233,
+      "updatedAt": 1750916253091,
+      "model": {
+        "label": "Claude Sonnet 4",
+        "value": "claude-sonnet-4"
+      }
+    },
+    {
       "id": "1750902974893",
       "title": "what are the relationship betw...",
       "messages": [
@@ -294,18 +318,7 @@
         "label": "Claude Sonnet 4",
         "value": "claude-sonnet-4"
       }
-    },
-    {
-      "id": "1749388468756",
-      "title": "New Conversation",
-      "messages": [],
-      "createdAt": 1749388468757,
-      "updatedAt": 1749388468757,
-      "model": {
-        "label": "Claude 3.7 Sonnet Thinking",
-        "value": "claude-3.7-sonnet-thought"
-      }
     }
   ],
-  "activeConversationId": "1750902974893"
+  "activeConversationId": "1750916185233"
 }
