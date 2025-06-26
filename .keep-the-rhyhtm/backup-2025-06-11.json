@@ -2414,7 +2414,57 @@
           {
             "timeKey": "16:30",
             "w": 11,
-            "c": 76
+            "c": 77
+          },
+          {
+            "timeKey": "16:35",
+            "w": 17,
+            "c": 117
+          },
+          {
+            "timeKey": "16:40",
+            "w": 35,
+            "c": 190
+          },
+          {
+            "timeKey": "16:45",
+            "w": 32,
+            "c": 197
+          },
+          {
+            "timeKey": "16:50",
+            "w": 83,
+            "c": 387
+          },
+          {
+            "timeKey": "16:55",
+            "w": 65,
+            "c": 361
+          },
+          {
+            "timeKey": "17:00",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "17:05",
+            "w": 49,
+            "c": 281
+          },
+          {
+            "timeKey": "17:10",
+            "w": 27,
+            "c": 153
+          },
+          {
+            "timeKey": "17:15",
+            "w": 94,
+            "c": 523
+          },
+          {
+            "timeKey": "17:20",
+            "w": 49,
+            "c": 229
           }
         ],
         "id": 116
@@ -2518,6 +2568,46 @@
         "charCountStart": 0,
         "changes": [
           {
+            "timeKey": "00:00",
+            "w": 30,
+            "c": 152
+          },
+          {
+            "timeKey": "00:05",
+            "w": 173,
+            "c": 984
+          },
+          {
+            "timeKey": "08:20",
+            "w": 24,
+            "c": 147
+          },
+          {
+            "timeKey": "08:25",
+            "w": 29,
+            "c": 141
+          },
+          {
+            "timeKey": "08:30",
+            "w": 106,
+            "c": 489
+          },
+          {
+            "timeKey": "08:35",
+            "w": 141,
+            "c": 675
+          },
+          {
+            "timeKey": "08:40",
+            "w": 89,
+            "c": 445
+          },
+          {
+            "timeKey": "08:45",
+            "w": 759,
+            "c": 4603
+          },
+          {
             "timeKey": "15:50",
             "w": 22,
             "c": 167
@@ -2536,9 +2626,411 @@
             "timeKey": "16:05",
             "w": 87,
             "c": 467
+          },
+          {
+            "timeKey": "17:35",
+            "w": 64,
+            "c": 301
+          },
+          {
+            "timeKey": "20:15",
+            "w": 58,
+            "c": 323
+          },
+          {
+            "timeKey": "20:20",
+            "w": 40,
+            "c": 232
+          },
+          {
+            "timeKey": "20:30",
+            "w": 5,
+            "c": 29
+          },
+          {
+            "timeKey": "20:40",
+            "w": 43,
+            "c": 227
+          },
+          {
+            "timeKey": "20:45",
+            "w": 88,
+            "c": 541
+          },
+          {
+            "timeKey": "20:50",
+            "w": 22,
+            "c": 173
+          },
+          {
+            "timeKey": "21:40",
+            "w": 14,
+            "c": 92
+          },
+          {
+            "timeKey": "21:45",
+            "w": 123,
+            "c": 766
+          },
+          {
+            "timeKey": "21:50",
+            "w": 138,
+            "c": 641
+          },
+          {
+            "timeKey": "21:55",
+            "w": 109,
+            "c": 652
+          },
+          {
+            "timeKey": "22:00",
+            "w": 100,
+            "c": 570
+          },
+          {
+            "timeKey": "22:05",
+            "w": 82,
+            "c": 486
+          },
+          {
+            "timeKey": "22:10",
+            "w": 1,
+            "c": 5
+          },
+          {
+            "timeKey": "22:15",
+            "w": 66,
+            "c": 425
+          },
+          {
+            "timeKey": "22:20",
+            "w": 11,
+            "c": 73
+          },
+          {
+            "timeKey": "22:25",
+            "w": 84,
+            "c": 497
+          },
+          {
+            "timeKey": "22:40",
+            "w": 19,
+            "c": 131
+          },
+          {
+            "timeKey": "22:45",
+            "w": 21,
+            "c": 140
+          },
+          {
+            "timeKey": "22:55",
+            "w": 565,
+            "c": 3511
+          },
+          {
+            "timeKey": "23:05",
+            "w": -14,
+            "c": -149
+          },
+          {
+            "timeKey": "23:10",
+            "w": -2,
+            "c": -10
+          },
+          {
+            "timeKey": "23:15",
+            "w": -1,
+            "c": -4
+          },
+          {
+            "timeKey": "23:25",
+            "w": -17,
+            "c": -133
+          },
+          {
+            "timeKey": "23:30",
+            "w": 79,
+            "c": 351
+          },
+          {
+            "timeKey": "23:35",
+            "w": 16,
+            "c": 63
+          },
+          {
+            "timeKey": "23:40",
+            "w": 3,
+            "c": 28
+          },
+          {
+            "timeKey": "23:45",
+            "w": -26,
+            "c": -224
+          },
+          {
+            "timeKey": "23:50",
+            "w": -461,
+            "c": -2671
+          },
+          {
+            "timeKey": "23:55",
+            "w": 95,
+            "c": 514
           }
         ],
         "id": 125
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Drafts/adsn scalar.md",
+        "wordCountStart": 3860,
+        "charCountStart": 25417,
+        "changes": [
+          {
+            "timeKey": "08:50",
+            "w": -3793,
+            "c": -25117
+          }
+        ],
+        "id": 126
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Reading/adscft/AdSCFT correspondence and symmetry breaking.md",
+        "wordCountStart": 2838,
+        "charCountStart": 16134,
+        "changes": [
+          {
+            "timeKey": "09:05",
+            "w": -696,
+            "c": -4243
+          },
+          {
+            "timeKey": "09:10",
+            "w": 70,
+            "c": 484
+          },
+          {
+            "timeKey": "09:15",
+            "w": 84,
+            "c": 445
+          },
+          {
+            "timeKey": "09:20",
+            "w": 32,
+            "c": 154
+          },
+          {
+            "timeKey": "09:55",
+            "w": 545,
+            "c": 3881
+          },
+          {
+            "timeKey": "10:00",
+            "w": -545,
+            "c": -3877
+          }
+        ],
+        "id": 127
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "TODO.md",
+        "wordCountStart": 77,
+        "charCountStart": 950,
+        "changes": [
+          {
+            "timeKey": "09:30",
+            "w": 7,
+            "c": 62
+          },
+          {
+            "timeKey": "09:45",
+            "w": 4,
+            "c": 34
+          }
+        ],
+        "id": 128
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Lecture/2025 summer school in nwu/scattering amplitude by Song He.md",
+        "wordCountStart": 1820,
+        "charCountStart": 9898,
+        "changes": [
+          {
+            "timeKey": "10:05",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "10:20",
+            "w": 41,
+            "c": 172
+          },
+          {
+            "timeKey": "10:25",
+            "w": 107,
+            "c": 571
+          },
+          {
+            "timeKey": "10:30",
+            "w": 44,
+            "c": 268
+          },
+          {
+            "timeKey": "10:35",
+            "w": 71,
+            "c": 371
+          },
+          {
+            "timeKey": "10:50",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "13:15",
+            "w": 14,
+            "c": 106
+          },
+          {
+            "timeKey": "13:20",
+            "w": 9,
+            "c": 73
+          },
+          {
+            "timeKey": "13:25",
+            "w": 9,
+            "c": 70
+          },
+          {
+            "timeKey": "13:35",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "13:50",
+            "w": 3,
+            "c": 19
+          },
+          {
+            "timeKey": "14:25",
+            "w": 0,
+            "c": 6
+          }
+        ],
+        "id": 129
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Lecture/2025 summer school in nwu/analytic structure of scattering amplitude by Ye Yuan.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "14:55",
+            "w": 1,
+            "c": 16
+          },
+          {
+            "timeKey": "15:00",
+            "w": 39,
+            "c": 192
+          },
+          {
+            "timeKey": "16:00",
+            "w": 1,
+            "c": 10
+          }
+        ],
+        "id": 130
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Lecture/2025 summer school in nwu/bootstrap LQCD by Gang Yang.md",
+        "wordCountStart": 938,
+        "charCountStart": 5379,
+        "changes": [
+          {
+            "timeKey": "16:20",
+            "w": -8,
+            "c": -71
+          },
+          {
+            "timeKey": "16:25",
+            "w": 79,
+            "c": 468
+          },
+          {
+            "timeKey": "16:30",
+            "w": 113,
+            "c": 591
+          },
+          {
+            "timeKey": "16:35",
+            "w": 51,
+            "c": 263
+          },
+          {
+            "timeKey": "16:40",
+            "w": 40,
+            "c": 226
+          },
+          {
+            "timeKey": "16:45",
+            "w": 24,
+            "c": 155
+          },
+          {
+            "timeKey": "16:50",
+            "w": 28,
+            "c": 130
+          },
+          {
+            "timeKey": "16:55",
+            "w": 90,
+            "c": 538
+          },
+          {
+            "timeKey": "17:00",
+            "w": 64,
+            "c": 314
+          },
+          {
+            "timeKey": "17:05",
+            "w": 32,
+            "c": 165
+          },
+          {
+            "timeKey": "17:15",
+            "w": 73,
+            "c": 399
+          },
+          {
+            "timeKey": "17:20",
+            "w": 18,
+            "c": 108
+          },
+          {
+            "timeKey": "17:25",
+            "w": 67,
+            "c": 353
+          },
+          {
+            "timeKey": "17:30",
+            "w": 0,
+            "c": 2
+          }
+        ],
+        "id": 131
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Black hole thermodynamics and quantum entropy correction by Leopoldo A. Pando Zayas.md",
+        "wordCountStart": 398,
+        "charCountStart": 2568,
+        "changes": [],
+        "id": 132
       }
     ],
     "daysWithCompletedGoal": [
