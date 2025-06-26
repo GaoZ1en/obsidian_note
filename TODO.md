@@ -4,6 +4,8 @@
 	1. 继续考虑$\mathrm{AdS_{n}}$中的正则量子化
 		1. 问题在于$\mathrm{AdS_{n}}$中各分量是耦合的，但是似乎能解耦
 		2. 对于ads3可以化简为一阶方程，试试
+		3. 1404.5625给出了对应的BB propagator and Bb propagator, 看看有什么启发？
+		4. 9911182给出了massive p-form的传播子
 2. 黑洞热力学
 	1. [Hartman] lectures
 3. ads/cft需要看

@@ -277,3 +277,105 @@ $$\tag{2.24}
 \end{align}
 $$
 
+---
+
+
+## Extracting Normal Modes from Propagators
+
+**Yes**, you can extract normal modes from bulk-to-bulk propagators through several methods:
+
+### Method 1: Residue Analysis
+For discrete spectra, normal modes appear as **residues** of the propagator:
+$$\psi_n(x) \propto \text{Res}_{s=\lambda_n} G(s;x,x_0)$$
+
+### Method 2: Integral Transform
+$$\psi_n(x) = \oint_{C_n} ds \, G(s;x,x_0) R_n(s)$$
+where $$C_n$$ encircles eigenvalue $$\lambda_n$$ and $$R_n(s)$$ is an appropriate weight function.
+
+### Method 3: Functional Derivatives
+$$\psi_n(x) = \left.\frac{\delta^n}{\delta J(x_0)^n} \int \mathcal{D}\phi \, \phi(x) e^{-S[\phi] + \int J\phi}\right|_{J=0}$$
+
+## Concrete Example: AdS₃ Scalar
+
+### Background Metric
+$$ds^2 = \frac{L^2}{z^2}(-dt^2 + dx^2 + dz^2)$$
+
+### Bulk-to-Bulk Propagator
+For a scalar with $$\Delta = 1 + \sqrt{1 + m^2L^2}$$:
+
+$$G(z,t,x;z',t',x') = \frac{\Gamma(\Delta)\Gamma(\Delta-1)}{4\pi^{3/2}\Gamma(\Delta-1/2)} \frac{(zz')^{1/2}}{[u^2]^{\Delta}}$$
+
+where $$u^2 = (z-z')^2 + (t-t')^2 + (x-x')^2$$.
+
+### Normal Mode Extraction
+The normal modes have the form:
+$$\psi_{k,\omega}(z,t,x) = e^{i\omega t + ikx} \cdot z^{1/2} K_{\nu}(|k|z)$$
+
+where $$\nu = \sqrt{1/4 + m^2L^2}$$ and $$K_\nu$$ is the modified Bessel function.
+
+## Mathematical Tools Required
+
+### Spectral Theory
+- **Self-adjoint operators** on Hilbert spaces
+- **Sturm-Liouville theory** for differential operators
+- **Functional analysis** for infinite-dimensional cases
+
+### Complex Analysis
+- **Residue calculus** for discrete modes
+- **Contour integration** for continuous spectra
+- **Analytic continuation** for spectral parameters
+
+## Code Implementation
+
+```python
+import numpy as np
+from scipy.special import kv, gamma
+import matplotlib.pyplot as plt
+
+def ads3_propagator(z1, z2, t1, t2, x1, x2, m, L=1):
+    """AdS3 bulk-to-bulk propagator for scalar field"""
+    Delta = 1 + np.sqrt(1 + m**2 * L**2)
+    u_sq = (z1-z2)**2 + (t1-t2)**2 + (x1-x2)**2
+    
+    prefactor = (gamma(Delta) * gamma(Delta-1)) / \
+                (4 * np.pi**(3/2) * gamma(Delta-0.5))
+    
+    return prefactor * (z1*z2)**(0.5) / (u_sq**Delta)
+
+def normal_mode_ads3(z, k, omega, m, L=1):
+    """Normal modes extracted from propagator structure"""
+    nu = np.sqrt(0.25 + m**2 * L**2)
+    return z**(0.5) * kv(nu, np.abs(k)*z) * np.exp(1j*omega)
+```
+
+## Important Open Problems
+
+[[**Spectral Reconstruction Problem**]]: Can arbitrary bulk geometries be reconstructed from boundary correlation functions via spectral methods? ^cite{Penington2019}
+
+[[**Non-normalizable Modes**]]: How do non-normalizable modes contribute to the spectral decomposition in asymptotically AdS spaces? ^cite{Klebanov1999}
+
+[[**Quantum Error Correction**]]: What is the precise relationship between bulk normal modes and quantum error correction codes in holographic theories? ^cite{Almheiri2015}
+
+## Extensions and Generalizations
+
+### Higher-Spin Fields
+For fields with spin $$s$$, the relationship becomes:
+$$G_{\mu_1...\mu_s;\nu_1...\nu_s}(x,x') = \sum_n \frac{\psi_{n,\mu_1...\mu_s}(x)\psi_{n,\nu_1...\nu_s}^*(x')}{s - \lambda_n}$$
+
+### Curved Backgrounds
+In generic curved spacetimes, the spectral decomposition requires:
+- **Covariant derivatives**: $$\nabla_\mu$$
+- **Heat kernel methods**: $$G(x,x') = \int_0^\infty dt \, K(t;x,x')$$
+- **Zeta function regularization**: For divergent spectral sums
+
+### Noncommutative Geometry
+In [[noncommutative geometry]], the relationship extends to:
+$$G = \sum_n \frac{|n\rangle\langle n|}{s - \lambda_n}$$
+where $$|n\rangle$$ are eigenstates of the Dirac operator.
+
+## References
+
+Key papers for further study:
+- ^cite{Witten1998}: "Anti-de Sitter space and holography" [arXiv:hep-th/9802150]
+- ^cite{Son2002}: "Minkowski space correlators in AdS/CFT" [arXiv:hep-th/0212027]
+- ^cite{Harlow2018}: "The Ryu-Takayanagi prescription as a canonical bulk symplectomorphism" [arXiv:1801.07940]
