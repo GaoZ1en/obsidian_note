@@ -292,5 +292,27 @@ $$
 
 choose $\displaystyle{p_{i}\cdot \varepsilon _{j}=0,\dots}$, ... gluon emerges as a pair of two tachyons.
 
+$\displaystyle{u}$-functions satisfies
 
+$$\tag{2.12}
+\begin{align}
+u^{(s)}_{\mathcal{C}}=\prod _{\text{ all curves }\mathcal{C}_{\mathcal{c}}\text{ extending }\mathcal{C}\text{ into }\mathcal{S}}u^{(\mathcal{S})}_{\mathcal{C_{c}}}
+\end{align}
+$$
+
+this is very important. $\displaystyle{y}$ can be written as a monomial of $\displaystyle{u}$
+
+$$\tag{2.13}
+\begin{align}
+y_{i} & =\prod _{X}u_{X}^{g^{(i)}_{X}}
+\end{align}
+$$
+
+where $\displaystyle{g^{(i)}_{X}}$ is actually the $\displaystyle{g}$-vector defined before. then
+
+$$\tag{2.14}
+\begin{align}
+\prod y_{i} & =\prod u_{X}^{p_{X}},\quad p_{X}=\sum _{i}g^{(i)}_{X}=0,\pm1
+\end{align}
+$$
 
