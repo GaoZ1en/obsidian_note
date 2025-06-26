@@ -171,6 +171,69 @@ where $\displaystyle{V(M)}$ is a polynomial of $\displaystyle{M}$, such as $\dis
 
 $$\tag{1.10}
 \begin{align}
-t_{k} & =\frac{1}{Z}
+t_{k} & =\frac{1}{Z}\int \mathrm{d}M e^{-S[M]}\mathrm{Tr}M^{k}=\frac{1}{N}\braket{ \mathrm{Tr}M^{k} } 
+\end{align}
+$$
+
+the Schwinger-Dyson equation is simply
+
+$$\tag{1.11}
+\begin{align}
+0=\frac{1}{Z}\int \mathrm{d}M \frac{\partial}{\partial M_{ij}}\left(e^{-S[M]}(M^{k})_{ij}\right) \\
+\implies\braket{ \frac{\partial}{\partial M_{ij}}(M^{k})_{ij} }-\braket{ \frac{\partial S}{\partial M_{ij}}(M^{k})_{ij} } =0 \\
+\implies \sum ^{k-1}_{l=0} \mathrm{tr}M^{l}\mathrm{tr}M^{k-l-1}-\mathrm{tr}M^{k+1}-g\mathrm{tr}M^{k+3} =0
+\end{align}
+$$
+
+for simplicity we write $\displaystyle{\mathrm{tr}=\frac{1}{N}\mathrm{Tr}}$. here we take the large $\displaystyle{N}$ limit, i.e., $\displaystyle{\braket{ \mathrm{tr}A\mathrm{tr}B }=\braket{ \mathrm{tr}A }\braket{ \mathrm{tr}B }+\mathcal{O}\left( \frac{1}{N} \right)}$. require
+
+$$\tag{1.11}
+\begin{align}
+\frac{1}{Z}\int \mathrm{d}M e^{-S[M]}\sum _{i=1}^{n}(\alpha _{i}M^{i})^{2}
+\end{align}
+$$
+
+to be positive definite for all $\displaystyle{\alpha _{i}}$'s, we have we get the following matrix positivity condition
+
+$$\tag{1.12}
+\begin{align}
+(\mathcal{M})_{ij} & = \braket{ \mathrm{tr}M^{i+j} } 
+\end{align}
+$$
+
+the idea is quite similar.
+
+## multi-matrix model
+
+$$\tag{1.13}
+\begin{align}
+S[A,B] & =\mathrm{tr}(V[A,B]) \\
+V[A,B] & =\frac{1}{2}A^{4}+\frac{1}{2}B^{4}+\frac{h}{3}(A^{2}B+AB^{2})
+\end{align}
+$$
+
+the idea is similar, left as excercise
+
+# lattice gauge theory
+
+1. presentation (kinematics)
+2. loop equation (dynamics)
+3. positivity
+	1. hermitian
+	2. reflection positivity (unitarity)
+
+the system is defined on a lattice with
+
+$$\tag{2.1}
+\begin{align}
+x & =a\sum ^{d}_{\mu=1}n_{\mu}\hat{\mu}, & n_{\mu}\in \mathbb{Z}
+\end{align}
+$$
+
+denote link variables $\displaystyle{u_{\mu}(x)}$, with its conjugation $\displaystyle{u^{\dagger}_{\mu}(x)=u_{-\mu}(x+\hat{\mu})}$ and gauge transformation
+
+$$\tag{2.2}
+\begin{align}
+u_{\mu}(x) & \to \Omega(x)u_{\mu}(x)\Omega ^{\dagger}(x+\hat{\mu})
 \end{align}
 $$

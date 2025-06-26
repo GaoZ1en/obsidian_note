@@ -2958,11 +2958,49 @@
           },
           {
             "timeKey": "16:25",
-            "w": 76,
-            "c": 453
+            "w": 79,
+            "c": 468
+          },
+          {
+            "timeKey": "16:30",
+            "w": 113,
+            "c": 591
+          },
+          {
+            "timeKey": "16:35",
+            "w": 51,
+            "c": 263
+          },
+          {
+            "timeKey": "16:40",
+            "w": 40,
+            "c": 226
+          },
+          {
+            "timeKey": "16:45",
+            "w": 24,
+            "c": 155
+          },
+          {
+            "timeKey": "16:50",
+            "w": 28,
+            "c": 130
+          },
+          {
+            "timeKey": "16:55",
+            "w": 90,
+            "c": 538
           }
         ],
         "id": 131
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Black hole thermodynamics and quantum entropy correction by Leopoldo A. Pando Zayas.md",
+        "wordCountStart": 398,
+        "charCountStart": 2568,
+        "changes": [],
+        "id": 132
       }
     ],
     "daysWithCompletedGoal": [
