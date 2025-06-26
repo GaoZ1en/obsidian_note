@@ -2793,6 +2793,35 @@
           }
         ],
         "id": 126
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Reading/adscft/AdSCFT correspondence and symmetry breaking.md",
+        "wordCountStart": 2838,
+        "charCountStart": 16134,
+        "changes": [
+          {
+            "timeKey": "09:05",
+            "w": -696,
+            "c": -4243
+          },
+          {
+            "timeKey": "09:10",
+            "w": 70,
+            "c": 484
+          },
+          {
+            "timeKey": "09:15",
+            "w": 84,
+            "c": 445
+          },
+          {
+            "timeKey": "09:20",
+            "w": 32,
+            "c": 154
+          }
+        ],
+        "id": 127
       }
     ],
     "daysWithCompletedGoal": [
