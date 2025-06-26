@@ -316,3 +316,19 @@ $$\tag{2.14}
 \end{align}
 $$
 
+---
+
+$\displaystyle{\left|\mathcal{A}\right|^{2}}$
+
+references
+1. 2410.09859
+2. 2503.15593
+3. 2506.07796
+
+actually some unitary cut of vacuum diagram...
+
+"squared amplituhedron", open problems
+1. pole sturctures & residues.
+2. surfaceology
+
+F-graph?
