@@ -198,6 +198,157 @@ then the action becomes
 
 $$\tag{2.17}
 \begin{align}
-I & =\frac{1}{2}\mathrm{d}^{d}x\mathrm{d}z(g)
+I & =\frac{1}{2}\int\mathrm{d}^{d}\vec{x}\mathrm{d}z\sqrt{ -g }(g^{\mu \nu}\partial _{\mu}\phi \partial _{\nu}\phi+m^{2}\phi ^{2}) \\
+ & =\frac{1}{2}\int \mathrm{d}^{d}\vec{x}\mathrm{d}zz^{-d-1}(z^{2}\partial _{z}\phi \partial _{z}\phi+z^{2}\partial _{i}\phi \partial _{i}\phi+m^{2}\phi ^{2}) \\
+ & =\frac{1}{2}\int \mathrm{d}^{d}\vec{x}\mathrm{d}zz^{d+1-2\Delta}\left((\partial _{z}\chi)^{2}+(\partial _{i}\chi)^{2}\right)+\mathcal{O}(z^{d+2-2\Delta})
 \end{align}
 $$
+
+the integrand converges if $\displaystyle{\frac{d}{2}<\Delta< \frac{d}{2}+1}$. for $\displaystyle{\Delta\geqslant \frac{d+2}{2}}$, we need more boundary terms to make the action finite. by ibp
+
+$$\tag{2.18}
+\begin{align}
+I & =-\lim_{ z \to 0 } \int \mathrm{d}^{d}xz^{d+1-2\Delta}\chi \partial _{z}\chi \\
+ & =-\left( \Delta-\frac{d}{2} \right)\pi ^{-d/2} \frac{\Gamma(\Delta)}{\Gamma(\Delta-d/2)}\int \mathrm{d}^{d}\vec{x} \int \mathrm{d}^{d}\vec{x}'\frac{\phi _{0}(\vec{x})\phi _{0}(\vec{x}')}{|\vec{x}-\vec{x}'|^{2\Delta}} \\
+ & =-\frac{1}{2}\int \frac{\mathrm{d}^{d}k}{(2\pi)^{d}}\phi_{0}(k)\phi_{0}(-k)f_{+}(|k|)
+\end{align}
+$$
+
+where
+
+$$\tag{2.19}
+\begin{align}
+f_{+}(|k|) & =-2\nu\left(\frac{|k|}{2}\right)^{2\nu} \frac{\Gamma(1-\nu)}{\Gamma(1+\nu)},\quad \nu=\Delta-\frac{d}{2}
+\end{align}
+$$
+
+the bulk-to-bulk propagator is defined as
+
+$$\tag{2.20}
+\begin{align}
+G_{\Delta}(z,\vec{x};z',\vec{x}') & = \frac{\Gamma(\Delta)\Gamma\left( \Delta-\frac{d}{2}+\frac{1}{2} \right)}{(4\pi)^{(d+1)/2}\Gamma(2\Delta-d+1)}(2u^{-1})^{\Delta}{}_{2}F_{1}\left( \Delta,\Delta-\frac{d}{2}+\frac{1}{2};2\Delta-d+1;-2u^{-1} \right) \\
+u & =\frac{(z-z')^{2}+(\vec{x}-\vec{x}')^{2}}{2zz'}
+\end{align}
+$$
+
+---
+
+in this part we will derive the bulk-to-bulk propagator. 
+
+$$\tag{2.21}
+\begin{align}
+(\nabla ^{2}-m^{2})G_{\Delta}(z,\vec{x};z',\vec{x}') & = -\frac{\delta(z-z')\delta ^{d}(\vec{x}-\vec{x}')}{\sqrt{ -g }}
+\end{align}
+$$
+
+
+
+## Method 1: Fourier Transform Approach
+
+### Fourier Transform in Boundary Directions
+
+Taking Fourier transform in $(t,\vec{x})$ coordinates:
+$$G(z,z';\omega,\vec{k}) = \int dt\,d^d\vec{x}\, e^{i\omega t - i\vec{k}\cdot\vec{x}} G(z,t,\vec{x};z',0,\vec{0})$$
+
+The equation becomes:
+$$\left[z^{d-1}\partial_z\left(z^{-(d-1)}\partial_z\right) + \frac{z^2}{L^2}(\vec{k}^2-\omega^2) - \frac{m^2L^2}{z^2}\right]G = -\frac{L^{d+1}}{z^{d+1}}\delta(z-z')$$
+
+### Solution in Terms of Bessel Functions
+
+Let $q^2 = \omega^2 - \vec{k}^2$ and $u = qz/L$, $u' = qz'/L$. The homogeneous solutions are:
+$$z^{d/2}I_\nu(qz/L), \quad z^{d/2}K_\nu(qz/L)$$
+
+where $\nu = \sqrt{d^2/4 + m^2L^2}$.
+
+Using the **Wronskian method** and matching boundary conditions:
+$$G(z,z';\omega,\vec{k}) = \frac{L^{d+1}}{2q}(zz')^{d/2}\begin{cases}
+I_\nu(qz_</L)K_\nu(qz_>/L) & \text{for } q^2 > 0\\
+\frac{\pi}{2}J_\nu(|q|z_</L)Y_\nu(|q|z_>/L) & \text{for } q^2 < 0
+\end{cases}$$
+
+where $z_< = \min(z,z')$ and $z_> = \max(z,z')$.
+
+## Method 2: Coordinate-Free Approach
+
+### Embedding Space Construction
+
+Embed $AdS_{d+1}$ in $\mathbb{R}^{2,d}$ with coordinates $X^A = (X^0,X^1,\ldots,X^{d+1})$:
+$$-X_0^2 - X_{d+1}^2 + \sum_{i=1}^d X_i^2 = -L^2$$
+
+The Poincaré patch corresponds to:
+$$X^0 = \frac{L^2 + z^2 + \vec{x}^2 - t^2}{2z}, \quad X^i = \frac{Lx^i}{z}, \quad X^{d+1} = \frac{L^2 - z^2 - \vec{x}^2 + t^2}{2z}$$
+
+### Invariant Distance
+
+The **chordal distance** between two points is:
+$$\sigma(x,x') = -2X \cdot X' = 2L^2\frac{(z-z')^2 + (\vec{x}-\vec{x}')^2 - (t-t')^2}{2zz'}$$
+
+### Final Result via Embedding
+
+The bulk-to-bulk propagator is:
+$$\boxed{G(x,x') = \frac{A_\nu}{L^{d-1}} \left(\frac{\sigma(x,x')}{2L^2}\right)^{-\nu} F\left(\frac{\nu}{2}, \frac{\nu+1}{2}; \nu-\frac{d-1}{2}; \frac{2L^2}{\sigma(x,x')}\right)}$$
+
+where:
+- $$A_\nu = \frac{\Gamma(\nu)\Gamma(\nu-d/2+1/2)}{2^{2\nu-1}\pi^{d/2}\Gamma(2\nu-d/2+1/2)}$$
+- $F(a,b;c;z)$ is the **hypergeometric function**
+- $$\nu = \sqrt{\frac{d^2}{4} + m^2L^2}$$
+
+## Alternative Compact Form
+
+Using the **geodesic distance** $\rho$ defined by $\cosh(\rho/L) = \sigma/(2L^2)$:
+
+$$\boxed{G(x,x') = \frac{C_\nu}{L^{d-1}} \left(\frac{2}{\sigma/L^2}\right)^{\nu} P_{-1/2+\nu}^{-d/2+1/2}\left(\frac{\sigma}{2L^2}\right)}$$
+
+where $P_\alpha^\beta$ is the **associated Legendre function** and:
+$$C_\nu = \frac{\Gamma(\nu+1-d/2)}{2^\nu\pi^{d/2}\Gamma(\nu)}$$
+
+## Limiting Cases
+
+### 1. Coincident Point Limit
+As $x' \to x$:
+$$G(x,x') \sim \frac{1}{L^{d-1}} \cdot \frac{\text{const}}{|\sigma|^{\nu}} \to \text{divergent}$$
+
+### 2. Boundary Limit ($z' \to 0$)
+$$\lim_{z' \to 0} G(z,\vec{x},t;z',\vec{x}',t') = \frac{C_\nu}{L^d}\left(\frac{z}{z^2 + |\vec{x}-\vec{x}'|^2 - (t-t')^2}\right)^\nu$$
+
+This **reproduces the bulk-to-boundary propagator** from the previous derivation!
+
+### 3. Massless Case ($m=0$, $\nu = d/2$)
+$$G(x,x') = \frac{1}{(d-2)\text{Vol}(S^{d-1})L^{d-1}} \left(\frac{\sigma}{2L^2}\right)^{-d/2+1}$$
+
+## Physical Properties
+
+### Causality
+The propagator respects $AdS$ causality:
+- **Timelike separated**: $\sigma > 0$ (real and well-defined)
+- **Spacelike separated**: $\sigma < 0$ (analytic continuation required)
+- **Lightlike**: $\sigma = 0$ (boundary of causal diamond)
+
+### Symmetries
+1. **Isometry invariance**: $G(gx,gx') = G(x,x')$ for $g \in SO(2,d)$
+2. **Reflection positivity**: Ensures unitarity in dual CFT
+3. **Scaling**: Under $z \to \lambda z$: $G \to \lambda^{-2\nu} G$
+
+## Connection to AdS/CFT
+
+The bulk-to-bulk propagator appears in:
+
+1. **Witten diagrams**: Tree-level correlation functions in the dual CFT
+2. **GKPW prescription**: $\langle \mathcal{O}(x_1)\cdots\mathcal{O}(x_n)\rangle = \left.\frac{\delta^n S_{\text{bulk}}}{\delta\phi_0(x_1)\cdots\delta\phi_0(x_n)}\right|_{\phi_0=0}$
+3. **Conformal blocks**: Decomposition via [[OPE]] in the boundary CFT
+
+### Conformal Bootstrap Connection
+The singularity structure encodes [[Conformal Bootstrap]] data:
+$$G(x,x') \sim |x-x'|^{-2\Delta} \text{ as } x,x' \to \text{boundary}$$
+
+with $\Delta = d/2 + \nu$ being the conformal dimension.
+
+**Key References**: 
+- Freedman et al. (1999) [hep-th/9804058]
+- D'Hoker & Freedman (2002) [hep-th/0201253]
+- Penedones (2016) [arXiv:1608.04948] (modern review)
+
+## [[Open Problems]]
+- **Higher spin** bulk-to-bulk propagators
+- **Interacting theory** corrections via [[Schwinger-Dyson Equations]]
+- **Finite temperature** AdS-Schwarzschild generalizations

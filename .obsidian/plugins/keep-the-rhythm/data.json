@@ -2584,8 +2584,28 @@
           },
           {
             "timeKey": "08:25",
-            "w": 27,
-            "c": 137
+            "w": 29,
+            "c": 141
+          },
+          {
+            "timeKey": "08:30",
+            "w": 106,
+            "c": 489
+          },
+          {
+            "timeKey": "08:35",
+            "w": 141,
+            "c": 675
+          },
+          {
+            "timeKey": "08:40",
+            "w": 89,
+            "c": 445
+          },
+          {
+            "timeKey": "08:45",
+            "w": 759,
+            "c": 4603
           },
           {
             "timeKey": "15:50",
@@ -2759,6 +2779,20 @@
           }
         ],
         "id": 125
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Drafts/adsn scalar.md",
+        "wordCountStart": 3860,
+        "charCountStart": 25417,
+        "changes": [
+          {
+            "timeKey": "08:50",
+            "w": -3793,
+            "c": -25117
+          }
+        ],
+        "id": 126
       }
     ],
     "daysWithCompletedGoal": [
