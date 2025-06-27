@@ -25,7 +25,7 @@ z^{d+1}\partial _{z}(z^{-d+1}\partial _{z}\phi)+z^{2}\tilde{\nabla} ^{2}\phi-\mu
 \end{align}
 $$
 
-where $\displaystyle{\tilde{\nabla}^{2}=-\partial _{t}^{2}\phi+\partial _{\rho}^{2}\phi+ \frac{n-2}{\rho} \partial _{\rho}\phi+\frac{1}{\rho ^{2}}\Delta _{S^{d-2}}\phi}$. make the ansatz
+where $\displaystyle{\tilde{\nabla}^{2}=-\partial _{t}^{2}\phi+\partial _{\rho}^{2}\phi+ \frac{d-2}{\rho} \partial _{\rho}\phi+\frac{1}{\rho ^{2}}\Delta _{S^{d-2}}\phi}$. make the ansatz
 
 $$\tag{1.5}
 \begin{align}
@@ -49,15 +49,15 @@ $$\tag{1.6}
 $$
 
 where the radial function satisfies
-
+t
 $$\tag{1.7}
 \begin{align}
-R(\rho) & =\rho^{(3-d)/2}X_{\frac{d+2\ell-3}{2}}(|\lambda| \rho) \\
+R(\rho) & =\rho^{(3-d)/2}J_{\frac{d+2\ell-3}{2}}(|\lambda| \rho) \\
 \partial _{\rho}^{2}R+\frac{d-2}{\rho}\partial _{\rho}R-\frac{\ell(\ell+d-3)}{\rho ^{2}}R & =-\lambda ^{2}R
 \end{align}
 $$
 
-and when $\displaystyle{\lambda ^{2}>0}$, $\displaystyle{X=J}$ and when $\displaystyle{\lambda ^{2}<0}$, $\displaystyle{X=I}$. the $\displaystyle{Z}$ function satisfies
+and where $\displaystyle{\lambda ^{2}>0}$. the $\displaystyle{Z}$ function satisfies
 
 $$\tag{1.8}
 \begin{align}
@@ -92,9 +92,11 @@ $$
 
 $$\tag{.}
 \begin{align}
-z^{d/2}Y_{\sqrt{ \mu ^{2}+\frac{d^{2}}{4} }}(\sqrt{ |\omega ^{2}-\lambda ^{2}| }z) & \sim 
+z^{d/2}Y_{\sqrt{ \mu ^{2}+\frac{d^{2}}{4} }}(\sqrt{ |\omega ^{2}-\lambda ^{2}| }z) & \sim ?
 \end{align}
 $$
+
+$\displaystyle{-\frac{d^{2}}{4}-1<m^{2}<-\frac{d^{2}}{4}}$
 
 
 
@@ -128,5 +130,8 @@ $$\tag{.}
 \end{align}
 $$
 
-poincare
-proca
+$$\tag{.}
+\begin{align}
+\rho ^{(3-d)/2}X_{\frac{d+2\ell-3}{2}}(|\lambda|\rho)
+\end{align}
+$$
