@@ -52,39 +52,42 @@ where the radial function satisfies
 
 $$\tag{1.7}
 \begin{align}
-R(\rho) & =\rho^{(3-d)/2}Z_{\frac{d+2\ell-3}{2}}(\lambda \rho) \\
+R(\rho) & =\rho^{(3-d)/2}X_{\frac{d+2\ell-3}{2}}(|\lambda| \rho) \\
 \partial _{\rho}^{2}R+\frac{d-2}{\rho}\partial _{\rho}R-\frac{\ell(\ell+d-3)}{\rho ^{2}}R & =-\lambda ^{2}R
 \end{align}
 $$
 
-and when $\displaystyle{\lambda ^{2}>0, }$ $\displaystyle{Z=J}$ and when $\displaystyle{\lambda ^{2}<0}$, $\displaystyle{Z=I}$. 
+and when $\displaystyle{\lambda ^{2}>0}$, $\displaystyle{X=J}$ and when $\displaystyle{\lambda ^{2}<0}$, $\displaystyle{X=I}$. the $\displaystyle{Z}$ function satisfies
 
-$$\tag{.}
+$$\tag{1.8}
 \begin{align}
-\rho ^{2}\partial _{\rho}^{2}\tilde{\phi}+(d-2)\rho\partial _{\rho}\tilde{\phi}+[\lambda ^{2} \rho ^{2}-\ell(\ell+d-3)]\tilde{\phi}=0
+\partial _{z}^{2}Z+\frac{1-d}{z}\partial _{z}Z+\left( \omega ^{2}-\lambda ^{2}-\frac{\mu ^{2}}{z^{2}} \right)Z & =0
 \end{align}
 $$
 
-$$\tag{.}
+the solution is
+
+$$\tag{1.9}
 \begin{align}
-z^{2} \partial _{z}^{2}u+(1-2\alpha)z \partial _{z}u+\left( \lambda ^{2}z^{2}+\frac{(d-3)^{2}}{4}-\nu ^{2} \right)u & =0 \\
-u & =z^{(3-d)/2}Z_{\frac{d+2\ell-3}{2}}(\lambda z) \\
-\frac{3-d}{2}=\alpha \\
-\frac{(d-3)^{2}}{4}+\ell(\ell+d-3)=+\nu ^{2} & = \frac{d^{2}-6d+9+4\ell ^{2}+4\ell d-12\ell}{4} \\
- & =\frac{d+2\ell-3}{2}
+Z =z^{d/2}Y_{\sqrt{ \mu ^{2}+\frac{d^{2}}{4} }}(\sqrt{ \omega ^{2}-\lambda ^{2} }z)
 \end{align}
 $$
 
+where $\displaystyle{Y}$ may be $\displaystyle{J}$ or $\displaystyle{N}$. 
 
+$$\tag{1.10}
+\begin{align}
+\phi(z,t,\rho,\Omega _{n-2}) & =e^{-i \omega t}\mathbf{Y}_{\ell}(\Omega _{d-2})\rho ^{(3-d)/2}X_{\frac{d+2\ell-3}{2}}(|\lambda| \rho)z^{d/2}Y_{\sqrt{ \mu ^{2}+\frac{d^{2}}{4} }}(\sqrt{ \omega ^{2}-\lambda ^{2} }z)
+\end{align}
+$$
 
+finally we will impose boundary condition
 
+$$\tag{1.11}
+\begin{align}
 
-
-
-
-
-
-
+\end{align}
+$$
 
 
 
