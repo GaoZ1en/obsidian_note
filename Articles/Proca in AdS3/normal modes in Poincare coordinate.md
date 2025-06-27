@@ -36,11 +36,44 @@ $$
 $$\tag{1.5}
 \begin{align}
 z^{d-1}\partial _{z}(z^{-d+1}\partial _{z}(\tilde{\phi}(z,\rho)))+\left( \omega ^{2}+\partial _{\rho}^{2}+\frac{d-2}{\rho}\partial _{\rho}-\frac{\ell(\ell+d-3)}{\rho ^{2}} \right)\tilde{\phi}(z,\rho)-\frac{\mu ^{2}}{z^{2}}\tilde{\phi}(z,\rho)=0 \\
-\partial _{z}^{2}\tilde{\phi}-\frac{d-1}{z}\partial _{z}\tilde{\phi}+(\omega ^{2}\partial _{\rho}^{2}+(d))
+\partial _{z}^{2}\tilde{\phi}-\frac{d-1}{z}\partial _{z}\tilde{\phi}+\left( \omega ^{2}+\partial _{\rho}^{2}+\frac{d-2}{\rho}\partial _{\rho}-\frac{\ell(\ell+d-3)}{\rho ^{2}}-\frac{\mu ^{2}}{z^{2}} \right)\tilde{\phi}(z,\rho) & =0
 \end{align}
 $$
 
+further make the following ansatz
 
+$$\tag{1.6}
+\begin{align}
+\tilde{\phi}(z,\rho) & =R(\rho)Z(z)
+\end{align}
+$$
+
+where the radial function satisfies
+
+$$\tag{1.7}
+\begin{align}
+R(\rho) & =\rho^{(3-d)/2}Z_{\frac{d+2\ell-3}{2}}(\lambda \rho) \\
+\partial _{\rho}^{2}R+\frac{d-2}{\rho}\partial _{\rho}R-\frac{\ell(\ell+d-3)}{\rho ^{2}}R & =-\lambda ^{2}R
+\end{align}
+$$
+
+and when $\displaystyle{\lambda ^{2}>0, }$ $\displaystyle{Z=J}$ and when $\displaystyle{\lambda ^{2}<0}$, $\displaystyle{Z=I}$. 
+
+$$\tag{.}
+\begin{align}
+\rho ^{2}\partial _{\rho}^{2}\tilde{\phi}+(d-2)\rho\partial _{\rho}\tilde{\phi}+[\lambda ^{2} \rho ^{2}-\ell(\ell+d-3)]\tilde{\phi}=0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+z^{2} \partial _{z}^{2}u+(1-2\alpha)z \partial _{z}u+\left( \lambda ^{2}z^{2}+\frac{(d-3)^{2}}{4}-\nu ^{2} \right)u & =0 \\
+u & =z^{(3-d)/2}Z_{\frac{d+2\ell-3}{2}}(\lambda z) \\
+\frac{3-d}{2}=\alpha \\
+\frac{(d-3)^{2}}{4}+\ell(\ell+d-3)=+\nu ^{2} & = \frac{d^{2}-6d+9+4\ell ^{2}+4\ell d-12\ell}{4} \\
+ & =\frac{d+2\ell-3}{2}
+\end{align}
+$$
 
 
 
