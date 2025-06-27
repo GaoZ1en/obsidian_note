@@ -49,15 +49,15 @@ $$\tag{1.6}
 $$
 
 where the radial function satisfies
-t
+
 $$\tag{1.7}
 \begin{align}
-R(\rho) & =\rho^{(3-d)/2}J_{\frac{d+2\ell-3}{2}}(|\lambda| \rho) \\
+R(\rho) & =\rho^{(3-d)/2}J_{\frac{d+2\ell-3}{2}}(\lambda \rho) \\
 \partial _{\rho}^{2}R+\frac{d-2}{\rho}\partial _{\rho}R-\frac{\ell(\ell+d-3)}{\rho ^{2}}R & =-\lambda ^{2}R
 \end{align}
 $$
 
-and where $\displaystyle{\lambda ^{2}>0}$. the $\displaystyle{Z}$ function satisfies
+with $\displaystyle{\lambda>0}$. the $\displaystyle{Z}$ function satisfies
 
 $$\tag{1.8}
 \begin{align}
@@ -90,13 +90,18 @@ $$\tag{1.11}
 \end{align}
 $$
 
+we have
+
 $$\tag{.}
 \begin{align}
-z^{d/2}Y_{\sqrt{ \mu ^{2}+\frac{d^{2}}{4} }}(\sqrt{ |\omega ^{2}-\lambda ^{2}| }z) & \sim ?
+\phi(z,t,\rho,\Omega _{n-2}) & =e^{-i \omega t}\mathbf{Y}_{\ell}(\Omega _{d-2})\rho ^{(3-d)/2}J_{\frac{d+2\ell-3}{2}}(|\lambda| \rho)z^{d/2}K_{\sqrt{ \mu ^{2}+\frac{d^{2}}{4} }}(\sqrt{ \lambda ^{2}-\omega ^{2} }z)
 \end{align}
 $$
 
-$\displaystyle{-\frac{d^{2}}{4}-1<m^{2}<-\frac{d^{2}}{4}}$
+this solution correspond the QFT with $\displaystyle{\Delta=\Delta-}$...?
+
+
+
 
 
 
