@@ -508,7 +508,7 @@ $$
 
 ## susy
 
-we will consider 4d $\displaystyle{\mathcal{N=4}}$ SYM, but the method is applicable to other CFTs (with susy?).
+we will consider 4d $\displaystyle{\mathcal{N}=4}$ SYM, but the method is applicable to other CFTs (with susy?).
 
 ### superconformal kinematics
 
@@ -581,7 +581,8 @@ just like offshell amplitudes in flat space.
 
 ## position space method
 
-1. ansatz. assume the 4-pt function has the following form 
+1. ansatz. assume the 4-pt function has the following form
+
 $$\tag{4.6}
 \begin{align}
 \mathcal{A} & =\sum _{X}\lambda _{X}Y_{R_{X}}(\sigma,\tau)(\text{ exchange Witten diagram })+(\text{ }t\text{-channel })+(\text{ }u\text{-channel })+\sum _{\text{ all possible R-symmetry }}\text{ contact Witten diagram }
