@@ -43,6 +43,6 @@ take a variation
 
 $$\tag{.}
 \begin{align}
--\frac{1}{2}F^{\mu \nu}(\partial _{\mu})
+(\nabla ^{2}A^{\mu}-m^{2}A^{\mu})\delta A_{\mu}
 \end{align}
 $$

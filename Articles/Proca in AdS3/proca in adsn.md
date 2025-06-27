@@ -133,3 +133,66 @@ $$\tag{1.6}
 R_{n0}^{\theta}(\rho) & =(\cos \rho)^{2+\mu}{}_{2}F_{1}\left( -n,2+\mu+n;1+\mu;\cos ^{2}\rho \right)
 \end{align}
 $$
+
+---
+
+## 4. 显式解的存在性
+
+### 4.1 横向分量的方程
+
+以横向分量$A_i$为例，满足
+$$
+\left[ z^{d-3} \partial_z \left( z^{3-d} \partial_z \right) + \frac{\omega^2 - \vec{k}^2}{z^2} - m^2 \right] a_i(z) = 0
+$$
+
+令$a_i(z) = z^{\alpha} f(z)$，代入后可化为**Bessel方程**或**超几何方程**。
+
+### 4.2 显式解
+
+- **横向分量**的解通常为
+  $$
+  a_i(z) = z^{\frac{d-2}{2}} J_\nu(\sqrt{\omega^2 - \vec{k}^2}\, z)
+  $$
+  其中
+  $$
+  \nu = \sqrt{\left(\frac{d-2}{2}\right)^2 + m^2}
+  $$
+  $J_\nu$为第一类Bessel函数。
+
+- **纵向分量**和$A_z$分量的耦合更复杂，但也可化为超几何方程，解为超几何函数。
+
+### 4.3 边界条件与normal modes
+
+- $z\to 0$（AdS边界）：要求解的渐近行为与AdS/CFT对应的源/响应匹配
+- $z\to\infty$（Poincaré patch horizon）：通常要求正则性或消失
+
+**Normal modes**对应于满足上述边界条件的频率$\omega_n$，一般需数值解频率本征值，但**模的空间分布**有显式解析表达。
+
+---
+
+## 5. 文献与历史
+
+- 早期系统讨论见
+  - M. Henneaux, C. Teitelboim, "Asymptotically anti-de Sitter spaces" (Commun.Math.Phys.98:391,1985) ^cite{Henneaux1985}
+  - arXiv:hep-th/9804085 (Witten, AdS/CFT)
+- 具体Proca场的AdS解见
+  - arXiv:hep-th/9903190 (Mueck & Viswanathan, "The Propagator for the massive vector field in the AdS/CFT correspondence")
+  - arXiv:hep-th/0002230 (Mueck, "Spin-1 fields and duality in AdS/CFT correspondence")
+
+---
+
+## 6. 总结与[[重要开放问题]]
+
+### 结论
+
+- **$AdS_{d+1}$中Proca场的normal modes的空间分布有显式解**，用Bessel或超几何函数表示
+- **频率本征值（normal mode spectrum）**一般需数值求解，但在某些情况下可解析
+- **纵向分量**的解更复杂，但也可用特殊函数表示
+
+### [[重要开放问题]]
+
+- **边界条件的选择与AdS/CFT中的物理解释**（不同质量区间对应不同CFT算符维数）
+- **高自旋场的解析解与稳定性分析**
+- **非平坦边界（如球面）下的模结构**
+
+---
