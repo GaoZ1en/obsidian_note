@@ -69,15 +69,15 @@ the solution is
 
 $$\tag{1.9}
 \begin{align}
-Z =z^{d/2}Y_{\sqrt{ \mu ^{2}+\frac{d^{2}}{4} }}(\sqrt{ \omega ^{2}-\lambda ^{2} }z)
+Z =z^{d/2}Y_{\sqrt{ \mu ^{2}+\frac{d^{2}}{4} }}(\sqrt{ |\omega ^{2}-\lambda ^{2}| }z)
 \end{align}
 $$
 
-where $\displaystyle{Y}$ may be $\displaystyle{J}$ or $\displaystyle{N}$. 
+where $\displaystyle{Y}$ may be $\displaystyle{J}$ or $\displaystyle{N}$ for $\displaystyle{\omega ^{2}-\lambda ^{2}>0}$ and $\displaystyle{I}$ or $\displaystyle{K}$ for $\displaystyle{\omega ^{2}-\lambda ^{2}<0}$. 
 
 $$\tag{1.10}
 \begin{align}
-\phi(z,t,\rho,\Omega _{n-2}) & =e^{-i \omega t}\mathbf{Y}_{\ell}(\Omega _{d-2})\rho ^{(3-d)/2}X_{\frac{d+2\ell-3}{2}}(|\lambda| \rho)z^{d/2}Y_{\sqrt{ \mu ^{2}+\frac{d^{2}}{4} }}(\sqrt{ \omega ^{2}-\lambda ^{2} }z)
+\phi(z,t,\rho,\Omega _{n-2}) & =e^{-i \omega t}\mathbf{Y}_{\ell}(\Omega _{d-2})\rho ^{(3-d)/2}X_{\frac{d+2\ell-3}{2}}(|\lambda| \rho)z^{d/2}Y_{\sqrt{ \mu ^{2}+\frac{d^{2}}{4} }}(\sqrt{ |\omega ^{2}-\lambda ^{2}| }z)
 \end{align}
 $$
 
@@ -85,7 +85,14 @@ finally we will impose boundary condition
 
 $$\tag{1.11}
 \begin{align}
+\phi \text{ finite when }z\to \infty \\
+\phi\to0 \text{ when }z\to 0^{+}
+\end{align}
+$$
 
+$$\tag{.}
+\begin{align}
+z^{d/2}Y_{\sqrt{ \mu ^{2}+\frac{d^{2}}{4} }}(\sqrt{ |\omega ^{2}-\lambda ^{2}| }z) & \sim 
 \end{align}
 $$
 
@@ -120,3 +127,6 @@ $$\tag{.}
 (\nabla ^{2}A^{\mu}-m^{2}A^{\mu})\delta A_{\mu}
 \end{align}
 $$
+
+poincare
+proca
