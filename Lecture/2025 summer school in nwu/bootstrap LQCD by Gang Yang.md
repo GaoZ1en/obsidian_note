@@ -279,3 +279,4 @@ in 4d theory, we introduce $\displaystyle{a,a^{-1},b,b^{-1},c,c^{-1},d,d^{-1}}$,
 1. lattice symmetry
 2. inverse symmetry $\displaystyle{\braket{ W }= \braket{ W^{\dagger} }}$.
 
+Schwinger-Dyson equation is exactly the quantum generalization of Euler-Lagrange equation?!
