@@ -2,22 +2,50 @@ in this file we will consider the bulk-to-bulk propagator of Proca field in Eucl
 
 $$\tag{1.1}
 \begin{align}
-\mathrm{d}s^{2} & =\frac{1}{z_{0}^{2}}\left( \mathrm{d}z_{0}^{2}-\mathrm{d}t^{2}+\mathrm{d}\rho ^{2}+\rho ^{2}\mathrm{d}\Omega _{d-2}^{2} \right)
+\mathrm{d}s^{2} & =\frac{1}{z^{2}}\left( \mathrm{d}z^{2}+\eta _{ij}\mathrm{d}x^{i}\mathrm{d}x^{j}\right)
 \end{align}
 $$
 
-the non-zero Christoffel symbols are
+where $\displaystyle{\eta _{ij}=\mathrm{diag}(-,+,\dots,+)}$. the non-zero Christoffel symbols are
+
 $$\tag{1.3}
 \begin{align}
-\Gamma ^{z_{0}}_{~z_{0}z_{0}}=\Gamma ^{z_{0}}_{~tt} =-\Gamma ^{z_{0}}_{~\rho \rho}=\Gamma ^{t}_{~z_{0}t}=\Gamma ^{\rho}_{~z_{0}\rho} & =-\frac{1}{z_{0}} \\
-\Gamma ^{z_{0}}_{~\Omega \Omega} & =z_{0}^{-1}\rho ^{2}g_{\Omega \Omega} \\
-\Gamma ^{\rho}_{~\Omega \Omega} & =\rho ^{2}g_{\Omega \Omega} \\
-\Gamma ^{\Omega}_{~\Omega \Omega} & =\tilde{\Gamma}^{\Omega}_{~\Omega \Omega}
+\Gamma ^{z}_{~zz} & =-\frac{1}{z},\Gamma ^{z}_{~ij}=\frac{1}{z}\eta _{ij} \\
+\Gamma ^{i}_{~zj} & =-\frac{1}{z}\delta ^{i}_{~j}
 \end{align}
 $$
 
-where $\displaystyle{\eta _{ij}=\mathrm{diag}(-,+,\dots,+)}$. the eom is
+the eom for a scalar is
 
+$$\tag{1.4}
+\begin{align}
+z^{d+1}\partial _{z}(z^{-d+1}\partial _{z}\phi)+z^{2}\tilde{\nabla} ^{2}\phi-m^{2}\phi=0
+\end{align}
+$$
+
+make a Fourier transformation
+
+$$\tag{1.5}
+\begin{align}
+\partial _{z}^{2}\phi+\frac{d-1}{z}\partial _{z}\phi+
+\end{align}
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
 $$\tag{1.4}
 \begin{align}
 \nabla ^{2}A_{\mu}-(\mu^{2}-d)A_{\mu} & =0 \\
