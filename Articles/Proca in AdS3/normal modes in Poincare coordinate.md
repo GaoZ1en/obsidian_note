@@ -98,45 +98,4 @@ $$\tag{.}
 \end{align}
 $$
 
-this solution correspond the QFT with $\displaystyle{\Delta=\Delta-}$...?
-
-
-
-
-
-
----
-$$\tag{1.4}
-\begin{align}
-\nabla ^{2}A_{\mu}-(\mu^{2}-d)A_{\mu} & =0 \\
-\nabla _{\mu}A^{\mu} & =0
-\end{align}
-$$
-
-or
-
-$$\tag{1.5}
-\begin{align}
-
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
--\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu}
-\end{align}
-$$
-
-take a variation
-
-$$\tag{.}
-\begin{align}
-(\nabla ^{2}A^{\mu}-m^{2}A^{\mu})\delta A_{\mu}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\rho ^{(3-d)/2}X_{\frac{d+2\ell-3}{2}}(|\lambda|\rho)
-\end{align}
-$$
+this solution correspond the QFT with $\displaystyle{\Delta=\Delta-}$...? this is not work seemingly...
