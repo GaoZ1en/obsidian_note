@@ -3503,6 +3503,20 @@
           }
         ],
         "id": 147
+      },
+      {
+        "date": "2025-06-28",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 210,
+        "charCountStart": 989,
+        "changes": [
+          {
+            "timeKey": "09:00",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 148
       }
     ],
     "daysWithCompletedGoal": [
