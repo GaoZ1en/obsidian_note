@@ -2941,6 +2941,11 @@
             "timeKey": "16:00",
             "w": 1,
             "c": 10
+          },
+          {
+            "timeKey": "22:00",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 130
@@ -3036,6 +3041,468 @@
         "charCountStart": 2568,
         "changes": [],
         "id": 132
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Attachments/9802150.pdf",
+        "wordCountStart": 218427,
+        "charCountStart": 1016037,
+        "changes": [],
+        "id": 133
+      },
+      {
+        "date": "2025-06-26",
+        "filePath": "Reading/adscft/anti de Sitter space and holography.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 134
+      },
+      {
+        "date": "2025-06-27",
+        "filePath": "Reading/adscft/anti de Sitter space and holography.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 135
+      },
+      {
+        "date": "2025-06-27",
+        "filePath": "Attachments/9802150.pdf",
+        "wordCountStart": 218427,
+        "charCountStart": 1016037,
+        "changes": [],
+        "id": 136
+      },
+      {
+        "date": "2025-06-27",
+        "filePath": "Lecture/2025 summer school in nwu/bootstrap LQCD by Gang Yang.md",
+        "wordCountStart": 1609,
+        "charCountStart": 9020,
+        "changes": [
+          {
+            "timeKey": "10:30",
+            "w": 4,
+            "c": 32
+          },
+          {
+            "timeKey": "10:35",
+            "w": 6,
+            "c": 59
+          }
+        ],
+        "id": 137
+      },
+      {
+        "date": "2025-06-27",
+        "filePath": "Articles/Proca in AdS3/normal modes in Poincare coordinate.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "09:25",
+            "w": 7,
+            "c": 34
+          },
+          {
+            "timeKey": "09:30",
+            "w": 50,
+            "c": 238
+          },
+          {
+            "timeKey": "09:35",
+            "w": 56,
+            "c": 290
+          },
+          {
+            "timeKey": "09:40",
+            "w": 54,
+            "c": 264
+          },
+          {
+            "timeKey": "10:15",
+            "w": -88,
+            "c": -425
+          },
+          {
+            "timeKey": "10:20",
+            "w": 26,
+            "c": 162
+          },
+          {
+            "timeKey": "10:25",
+            "w": 71,
+            "c": 320
+          },
+          {
+            "timeKey": "10:30",
+            "w": 82,
+            "c": 390
+          },
+          {
+            "timeKey": "10:35",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "10:40",
+            "w": 164,
+            "c": 774
+          },
+          {
+            "timeKey": "10:45",
+            "w": 156,
+            "c": 608
+          },
+          {
+            "timeKey": "10:50",
+            "w": 104,
+            "c": 430
+          },
+          {
+            "timeKey": "10:55",
+            "w": -436,
+            "c": -1845
+          },
+          {
+            "timeKey": "11:00",
+            "w": 1,
+            "c": -3
+          },
+          {
+            "timeKey": "13:45",
+            "w": 162,
+            "c": 749
+          },
+          {
+            "timeKey": "13:50",
+            "w": -179,
+            "c": -808
+          },
+          {
+            "timeKey": "13:55",
+            "w": 8,
+            "c": 60
+          },
+          {
+            "timeKey": "14:00",
+            "w": 42,
+            "c": 175
+          },
+          {
+            "timeKey": "14:05",
+            "w": 53,
+            "c": 275
+          },
+          {
+            "timeKey": "14:10",
+            "w": 25,
+            "c": 167
+          },
+          {
+            "timeKey": "14:15",
+            "w": 15,
+            "c": 103
+          },
+          {
+            "timeKey": "14:20",
+            "w": 89,
+            "c": 432
+          },
+          {
+            "timeKey": "14:25",
+            "w": 16,
+            "c": 100
+          },
+          {
+            "timeKey": "14:30",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "14:50",
+            "w": -219,
+            "c": -1185
+          },
+          {
+            "timeKey": "14:55",
+            "w": 103,
+            "c": 528
+          },
+          {
+            "timeKey": "15:00",
+            "w": 59,
+            "c": 316
+          },
+          {
+            "timeKey": "15:05",
+            "w": 10,
+            "c": 90
+          },
+          {
+            "timeKey": "15:10",
+            "w": 65,
+            "c": 205
+          },
+          {
+            "timeKey": "15:15",
+            "w": 73,
+            "c": 339
+          },
+          {
+            "timeKey": "15:20",
+            "w": 32,
+            "c": 210
+          },
+          {
+            "timeKey": "15:25",
+            "w": -2,
+            "c": -4
+          },
+          {
+            "timeKey": "15:35",
+            "w": 32,
+            "c": 168
+          },
+          {
+            "timeKey": "15:40",
+            "w": -154,
+            "c": -712
+          },
+          {
+            "timeKey": "15:45",
+            "w": 119,
+            "c": 508
+          },
+          {
+            "timeKey": "15:50",
+            "w": 30,
+            "c": 249
+          },
+          {
+            "timeKey": "16:00",
+            "w": 26,
+            "c": 137
+          },
+          {
+            "timeKey": "16:05",
+            "w": -13,
+            "c": -65
+          },
+          {
+            "timeKey": "16:10",
+            "w": 2,
+            "c": 16
+          },
+          {
+            "timeKey": "16:15",
+            "w": 0,
+            "c": 4
+          },
+          {
+            "timeKey": "16:20",
+            "w": 12,
+            "c": 73
+          },
+          {
+            "timeKey": "16:25",
+            "w": 38,
+            "c": 199
+          },
+          {
+            "timeKey": "16:35",
+            "w": 12,
+            "c": 61
+          },
+          {
+            "timeKey": "16:45",
+            "w": 16,
+            "c": 79
+          },
+          {
+            "timeKey": "16:50",
+            "w": -12,
+            "c": -84
+          },
+          {
+            "timeKey": "17:05",
+            "w": -20,
+            "c": -97
+          },
+          {
+            "timeKey": "17:10",
+            "w": 52,
+            "c": 253
+          },
+          {
+            "timeKey": "17:15",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "17:20",
+            "w": -7,
+            "c": -20
+          },
+          {
+            "timeKey": "17:30",
+            "w": -87,
+            "c": -445
+          }
+        ],
+        "id": 138
+      },
+      {
+        "date": "2025-06-27",
+        "filePath": "Drafts/adsn proca.md",
+        "wordCountStart": 16,
+        "charCountStart": 123,
+        "changes": [
+          {
+            "timeKey": "10:25",
+            "w": -16,
+            "c": -123
+          }
+        ],
+        "id": 139
+      },
+      {
+        "date": "2025-06-27",
+        "filePath": "Drafts/ads3 proca.md",
+        "wordCountStart": 340,
+        "charCountStart": 1752,
+        "changes": [],
+        "id": 140
+      },
+      {
+        "date": "2025-06-27",
+        "filePath": "Articles/Proca in AdS3/proca in adsn.md",
+        "wordCountStart": 988,
+        "charCountStart": 4988,
+        "changes": [
+          {
+            "timeKey": "11:20",
+            "w": 202,
+            "c": 1749
+          },
+          {
+            "timeKey": "11:25",
+            "w": -58,
+            "c": -360
+          },
+          {
+            "timeKey": "13:45",
+            "w": -144,
+            "c": -1389
+          }
+        ],
+        "id": 141
+      },
+      {
+        "date": "2025-06-27",
+        "filePath": "AdS/CFT.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "16:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 142
+      },
+      {
+        "date": "2025-06-27",
+        "filePath": "Reading/adscft/AdSCFT correspondence and symmetry breaking.md",
+        "wordCountStart": 2328,
+        "charCountStart": 12978,
+        "changes": [],
+        "id": 143
+      },
+      {
+        "date": "2025-06-27",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:30",
+            "w": 52,
+            "c": 269
+          },
+          {
+            "timeKey": "17:35",
+            "w": 30,
+            "c": 159
+          },
+          {
+            "timeKey": "18:50",
+            "w": 15,
+            "c": 90
+          },
+          {
+            "timeKey": "18:55",
+            "w": 25,
+            "c": 61
+          },
+          {
+            "timeKey": "19:00",
+            "w": 37,
+            "c": 193
+          },
+          {
+            "timeKey": "19:15",
+            "w": 47,
+            "c": 187
+          },
+          {
+            "timeKey": "19:20",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "20:05",
+            "w": 4,
+            "c": 28
+          }
+        ],
+        "id": 144
+      },
+      {
+        "date": "2025-06-27",
+        "filePath": "Articles/Proca in AdS3/scalar.md",
+        "wordCountStart": 908,
+        "charCountStart": 8067,
+        "changes": [],
+        "id": 145
+      },
+      {
+        "date": "2025-06-27",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 146
+      },
+      {
+        "date": "2025-06-27",
+        "filePath": "Lecture/2025 summer school in nwu/bootstrap method for ads amplitude by Xinan Zhou.md",
+        "wordCountStart": 4512,
+        "charCountStart": 24774,
+        "changes": [
+          {
+            "timeKey": "19:05",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "19:10",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 147
       }
     ],
     "daysWithCompletedGoal": [
@@ -3056,7 +3523,8 @@
       "2025-06-17",
       "2025-06-23",
       "2025-06-24",
-      "2025-06-25"
+      "2025-06-25",
+      "2025-06-27"
     ]
   }
 }
