@@ -99,3 +99,11 @@ $$\tag{.}
 $$
 
 this solution correspond the QFT with $\displaystyle{\Delta=\Delta-}$...? this is not work seemingly...
+
+the problem is that the Poincare coordinate is not global, which means that the spectrum is not discrete. we need to consider global coordinate
+
+$$\tag{1.13}
+\begin{align}
+\mathrm{d}s^{2} & =\frac{1}{\cos ^{2}\rho}\left(-\mathrm{d}t^{2}+\mathrm{d}\rho ^{2}+\sin ^{2}\rho \mathrm{d}\Omega ^{2}_{d-2}\right)
+\end{align}
+$$
