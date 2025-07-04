@@ -6,28 +6,34 @@ $$\tag{1.1}
 \end{align}
 $$
 
-here we set $\displaystyle{L=1}$. we first consider a scalar
+here we set $\displaystyle{L=1}$. we first write down the non-zero components of Christoffel symbol and Ricci tensor
 
 $$\tag{1.2}
 \begin{align}
--(1+\rho ^{2})\partial ^{2}_{t}\phi+\frac{1}{1+\rho ^{2}}\partial _{\rho}^{2}\phi+\frac{d-2}{\rho(1+\rho ^{2})}\partial _{\rho}\phi-\frac{2\rho}{(1+\rho ^{2})^{2}}\partial _{\rho}\phi+\frac{1}{\rho ^{2}}\Delta _{S^{d-2}}\phi & =\mu ^{2}\phi
+\Gamma ^{\rho}_{\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =\frac{1}{2}g^{\rho \sigma}\left(\partial _{\mu}g_{\sigma \nu}+\partial _{\nu}g_{\mu \sigma}-\partial _{\sigma}g_{\mu \nu}\right)\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} \\
+ & =g^{\rho \sigma}\partial _{\mu}g_{\sigma \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu}-\frac{1}{2}g^{\rho \sigma}\partial _{\sigma}\mathrm{d}s^{2}
 \end{align}
 $$
 
-make the ansatz
-
-$$\tag{1.3}
+$$\tag{.}
 \begin{align}
-\phi & =e^{-i \omega t}\mathbf{Y}_{\ell}(\Omega _{d-2})R(\rho)
+\Gamma ^{t}_{\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{tt}\partial _{\rho}g_{tt}\mathrm{d}x^{\rho}\mathrm{d}t \\
+ & =\frac{2\rho}{1+\rho ^{2}}\mathrm{d}\rho \mathrm{d}t \\
+\Gamma ^{\rho}_{~\mu \nu} & =g^{\rho \rho}\partial _{\mu}g_{\rho \rho}\mathrm{d}x^{\mu}\mathrm{d}\rho-\frac{1}{2}g^{\rho \rho}\partial _{\rho}\mathrm{d}s^{2} \\
+ & =(1+\rho ^{2})\partial _{\rho}(1+\rho ^{2})^{-1}\mathrm{d}\rho ^{2}-\frac{1}{2}(1+\rho ^{2})\partial _{\rho}\left(-(1+\rho ^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}\rho ^{2}}{1+\rho ^{2}}+\rho ^{2}\mathrm{d}\Omega ^{2}_{d-2}\right) \\
+ & =\rho(1+\rho ^{2})\mathrm{d}t^{2}-\rho(1+\rho ^{2})^{-1}\mathrm{d}\rho ^{2}-\rho(1+\rho ^{2})\mathrm{d}\Omega ^{2}_{d-2} \\
+\Gamma ^{\Omega}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{\Omega \Omega}\partial _{\mu}g_{\Omega \Omega}\mathrm{d}x^{\mu}\mathrm{d}x^{\Omega}-\frac{1}{2}g^{\Omega \Omega}\partial _{\Omega}\mathrm{d}s_{S^{d-2}}^{2} \\
+ & =\Gamma ^{\Omega}_{~\Omega \Omega}\mathrm{d}x^{\Omega}\mathrm{d}x^{\Omega}+g^{\Omega \Omega}\partial _{\rho}g_{\Omega \Omega}\mathrm{d}\rho \mathrm{d}\Omega
 \end{align}
 $$
 
-then
-
-$$\tag{1.4}
+$$\tag{1.2}
 \begin{align}
-(1+\rho ^{2})\omega ^{2}R+\frac{1}{1+\rho ^{2}}\partial _{\rho}^{2}R+\frac{d-2}{\rho(1+\rho ^{2})}\partial _{\rho}R-\frac{2\rho}{(1+\rho ^{2})^{2}}\partial _{\rho}R-\frac{\ell(\ell+d-2)}{\rho ^{2}}R=\mu ^{2}\phi
+\Gamma ^{t}_{~t\rho} & =\frac{\rho}{1+\rho ^{2}} \\
+\Gamma ^{\rho}_{~tt} & =\rho(1+\rho ^{2}) \\
+\Gamma ^{\rho}_{~\rho \rho} & =-\frac{\rho}{1+\rho ^{2}} \\
+\Gamma ^{\rho}_{\Omega \Omega} & =-\rho (1+\rho ^{2})g_{\Omega \Omega} \\
+
 \end{align}
 $$
 
-D brane dual description???
