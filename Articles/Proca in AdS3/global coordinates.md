@@ -79,40 +79,18 @@ $$\tag{2.6}
 \end{align}
 $$
 
-further define $\displaystyle{z=\sin ^{2}r}$
-
-$$\tag{.}
-\begin{align} \\
-\mathrm{d}z & =2\sqrt{ z(1-z) }\mathrm{d}r \\
-\sin r & =\sqrt{ z } \\
-\cos r & =\sqrt{ 1-z } \\
-\partial _{r} & =\frac{\partial z}{\partial r}\partial _{z} \\
- & =2\sqrt{ z(1-z) }\partial _{z} \\
-\partial _{r}^{2} & =4\sqrt{ z(1-z) }\partial _{z}(\sqrt{ z(1-z) }\partial _{z}) \\
- & =4z(1-z)\partial _{z}^{2}+2(1-2z)\partial _{z}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-(1-z)\partial ^{2} _{r}R(r)+\frac{d-2}{\tan r}\partial _{r}R(r)+\left(\omega ^{2}\cos ^{2}r-\frac{\ell(\ell+d-3)}{\tan ^{2}r}-m^{2}\right)R(r) & =0
-\end{align}
-$$
-
-
-
-notice that $\displaystyle{{}_{2}F_{1}(\alpha,\beta;\gamma;z)}$ satisfies the hypergeometric equation
+further define $\displaystyle{z=\cos^{2}r}$ and $\displaystyle{R(r)=\sin ^{\ell}r\cos ^{\Delta}rF(r)}$ with $\displaystyle{\Delta=\frac{d-1}{2}+\sqrt{ \frac{(d-1)^{2}}{4}+m^{2} }}$, we have
 
 $$\tag{2.7}
 \begin{align}
-z(1-z)\frac{\mathrm{d}^{2}F}{\mathrm{d}z^{2}}+\left(\gamma-(\alpha+\beta+1)z\right)\frac{\mathrm{d}F}{\mathrm{d}z}-\alpha \beta F & =0
+z(1-z) \frac{\mathrm{d}^{2}F}{\mathrm{d}z^{2}}+\left[ \left( \Delta+\frac{3-n}{2} \right)-(\ell+\Delta+1)z \right] \frac{\mathrm{d}F}{\mathrm{d}z}-\frac{1}{4}((\ell+\Delta)^{2}-\omega ^{2})F=0
 \end{align}
 $$
 
-then $\displaystyle{G(z)=z^{a}(1-z)^{b}{}_{2}F_{1}(\alpha,\beta;\gamma;z)}$ satisfies
+this is a hypergeometric equation, the general solution is given by
 
 $$\tag{2.8}
 \begin{align}
-
+F(z) & =C_{1}{}_{2}F_{1}\left( \frac{1}{2}(\ell+\Delta-\omega), \frac{1}{2}(\ell+\Delta+\omega);\Delta+\frac{3-n}{2};z \right)+C_{2}{}_{2}F_{1}()
 \end{align}
 $$
