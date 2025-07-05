@@ -71,18 +71,12 @@ $$\tag{2.5}
 \end{align}
 $$
 
-define $\displaystyle{\rho=\tan r}$
+define $\displaystyle{\rho=\tan r}$, (2.5) becomes
 
 $$\tag{2.6}
 \begin{align}
-\omega ^{2}\cos ^{2}rR(r)+\frac{1}{\cos ^{2}r}
+\cos ^{2}r\partial _{r}R(r)+\frac{d-2}{\tan r}\partial _{r}R(r)+\left(\omega ^{2}\cos ^{2}r-\frac{\ell(\ell+d-3)}{\tan ^{2}r}-m^{2}\right)R(r) & =0
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-1+\rho ^{2} & = \frac{1}{\cos ^{2}r} \\
-\partial _{\rho} & =\frac{\partial r}{\partial \rho} \frac{\partial}{\partial r} \\
- & =
-\end{align}
-$$
+substitute $\displaystyle{R(r)=}$
