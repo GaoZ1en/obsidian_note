@@ -71,3 +71,18 @@ $$\tag{2.5}
 \end{align}
 $$
 
+define $\displaystyle{\rho=\tan r}$
+
+$$\tag{2.6}
+\begin{align}
+\omega ^{2}\cos ^{2}rR(r)+\frac{1}{\cos ^{2}r}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+1+\rho ^{2} & = \frac{1}{\cos ^{2}r} \\
+\partial _{\rho} & =\frac{\partial r}{\partial \rho} \frac{\partial}{\partial r} \\
+ & =
+\end{align}
+$$
