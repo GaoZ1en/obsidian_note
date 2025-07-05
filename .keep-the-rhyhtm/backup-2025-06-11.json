@@ -3583,6 +3583,140 @@
           }
         ],
         "id": 156
+      },
+      {
+        "date": "2025-07-03",
+        "filePath": "TODO.md",
+        "wordCountStart": 88,
+        "charCountStart": 1046,
+        "changes": [],
+        "id": 157
+      },
+      {
+        "date": "2025-07-03",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 210,
+        "charCountStart": 989,
+        "changes": [],
+        "id": 158
+      },
+      {
+        "date": "2025-07-03",
+        "filePath": "Articles/Proca in AdS3/normal modes in Poincare coordinate.md",
+        "wordCountStart": 645,
+        "charCountStart": 3313,
+        "changes": [
+          {
+            "timeKey": "21:50",
+            "w": 62,
+            "c": 321
+          }
+        ],
+        "id": 159
+      },
+      {
+        "date": "2025-07-04",
+        "filePath": "Articles/Proca in AdS3/scalar.md",
+        "wordCountStart": 908,
+        "charCountStart": 8067,
+        "changes": [],
+        "id": 160
+      },
+      {
+        "date": "2025-07-04",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [
+          {
+            "timeKey": "17:25",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 161
+      },
+      {
+        "date": "2025-07-04",
+        "filePath": "Articles/Proca in AdS3/normal modes in Poincare coordinate.md",
+        "wordCountStart": 707,
+        "charCountStart": 3634,
+        "changes": [],
+        "id": 162
+      },
+      {
+        "date": "2025-07-04",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 210,
+        "charCountStart": 989,
+        "changes": [
+          {
+            "timeKey": "21:00",
+            "w": -60,
+            "c": -224
+          },
+          {
+            "timeKey": "21:05",
+            "w": 77,
+            "c": 368
+          },
+          {
+            "timeKey": "21:10",
+            "w": 135,
+            "c": 550
+          },
+          {
+            "timeKey": "21:15",
+            "w": 98,
+            "c": 484
+          },
+          {
+            "timeKey": "21:30",
+            "w": -281,
+            "c": -1192
+          },
+          {
+            "timeKey": "21:40",
+            "w": 14,
+            "c": 171
+          },
+          {
+            "timeKey": "21:45",
+            "w": 241,
+            "c": 2016
+          },
+          {
+            "timeKey": "21:50",
+            "w": -250,
+            "c": -2159
+          },
+          {
+            "timeKey": "21:55",
+            "w": 89,
+            "c": 440
+          },
+          {
+            "timeKey": "22:00",
+            "w": 50,
+            "c": 256
+          },
+          {
+            "timeKey": "22:05",
+            "w": 31,
+            "c": 159
+          },
+          {
+            "timeKey": "22:10",
+            "w": 43,
+            "c": 236
+          },
+          {
+            "timeKey": "22:15",
+            "w": 77,
+            "c": 346
+          }
+        ],
+        "id": 163
       }
     ],
     "daysWithCompletedGoal": [
