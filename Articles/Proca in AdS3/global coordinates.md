@@ -13,13 +13,13 @@ $$\tag{1.2}
 \Gamma ^{t}_{~t\rho} & =\frac{\rho}{1+\rho ^{2}} \\
 \Gamma ^{\rho}_{~tt} & =\rho(1+\rho ^{2}) \\
 \Gamma ^{\rho}_{~\rho \rho} & =-\frac{\rho}{1+\rho ^{2}} \\
-\Gamma ^{\rho}_{\Omega \Omega} & =-\rho (1+\rho ^{2})g_{\Omega \Omega} \\
-\Gamma ^{\Omega}_{~\Omega \Omega} & =\tilde{\Gamma}^{\Omega}_{~\Omega \Omega} \\
-\Gamma ^{\Omega}_{~\rho \Omega} & =\frac{1}{\rho}\delta ^{\Omega}_{~\Omega}
+\Gamma ^{\rho}_{ij} & =-\rho (1+\rho ^{2})\tilde{g}_{ij} \\
+\Gamma ^{k}_{~ij} & =\tilde{\Gamma}^{k}_{~ij} \\
+\Gamma ^{i}_{~\rho j} & =\frac{1}{\rho}\delta ^{i}_{~j}
 \end{align}
 $$
 
-where $\displaystyle{\tilde{\Gamma}^{\Omega}_{~\Omega \Omega}}$ is the christoffel symbol of the unit sphere $\displaystyle{S^{d-2}}$. 
+where $\displaystyle{\tilde{\Gamma}^{\Omega}_{~\Omega \Omega}}$ is the christoffel symbol of the unit sphere $\displaystyle{S^{d-2}}$. here $\displaystyle{a}$ stands for $\displaystyle{t,\rho}$, and $\displaystyle{i}$ stands for coordinates on $\displaystyle{S^{d-2}}$. and
 
 $$\tag{1.3}
 \begin{align}
@@ -42,7 +42,32 @@ expand the Laplacian
 
 $$\tag{2.2}
 \begin{align}
-\frac{1}{\sqrt{ -g }}\partial _{\mu}(\sqrt{ -g }g^{\mu \nu}\partial _{\nu}\phi)-m^{2}\phi & =0 \\
-
+\tilde{\Delta}^{2}_{\mathcal{N}}\phi+\frac{1}{\rho ^{2}}\tilde{\Delta}_{S^{d-2}}\phi-m^{2}\phi & =0 \\
+\tilde{\Delta}_{\mathcal{N}}\phi & =-\frac{1}{1+\rho ^{2}}\partial _{t}^{2}\phi+(1+\rho ^{2})\partial _{\rho}^{2}\phi+\frac{d-2}{\rho}(1+\rho ^{2})\partial _{\rho}\phi+2\rho \partial _{\rho}\phi
 \end{align}
 $$
+
+the subspace $\displaystyle{\mathcal{N}}$ is spanned by $\displaystyle{(t,\rho)}$. we make the ansatz
+
+$$\tag{2.3}
+\begin{align}
+\phi & =e^{-i\omega t}R(\rho)\mathrm{Y}_{\ell \mathbf{m}}(\Omega _{d-2})
+\end{align}
+$$
+
+where the spherical harmonics $\displaystyle{\mathrm{Y}_{\ell \mathbf{m}}}$ satisfies
+
+$$\tag{2.4}
+\begin{align}
+\tilde{\Delta}_{S^{d-2}}\mathrm{Y}_{\ell \mathbf{m}} & =-\ell(\ell+d-3)\mathrm{Y}_{\ell \mathbf{m}}
+\end{align}
+$$
+
+then we have
+
+$$\tag{2.5}
+\begin{align}
+\frac{\omega ^{2}}{1+\rho ^{2}}R(\rho)+(1+\rho ^{2})\partial _{\rho}^{2}R(\rho)+\frac{d-2}{\rho}(1+\rho ^{2})\partial _{\rho}R(\rho)+2\rho \partial _{\rho}R(\rho)-\frac{\ell(\ell+d-3)}{\rho ^{2}}R(\rho)-m^{2}R(\rho) & =0
+\end{align}
+$$
+
