@@ -87,7 +87,7 @@ z(1-z)\frac{\mathrm{d}^{2}F}{\mathrm{d}z^{2}}+\left(\gamma-(\alpha+\beta+1)z\rig
 \end{align}
 $$
 
-t $\displaystyle{G(z)=z^{a}(1-z)^{b}{}_{2}F_{1}(\alpha,\beta;\gamma;z)}$ $\displaystyle{G(z)}$ satisfies
+then $\displaystyle{G(z)=z^{a}(1-z)^{b}{}_{2}F_{1}(\alpha,\beta;\gamma;z)}$ satisfies
 
 $$\tag{2.8}
 \begin{align}
