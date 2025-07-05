@@ -177,3 +177,76 @@ $$\sum_{i=0}^2 \sum_{\ell,m} \mathbf{Y}_{\ell m}^{(i)}(\Omega) \otimes \mathbf{Y
 ^cite{Kodama1984,Regge1957}
 
 [[球谐函数]] [[Proca方程]] [[矢量场分解]] [[球对称时空]]
+
+# S^d 上矢量球谐函数的 Laplacian 本征值
+
+## 矢量 Laplacian 算子
+
+在 $$S^d$$ 上，矢量场的 Laplacian 算子（Hodge-de Rham Laplacian）定义为：
+$$\Delta_{\text{vec}} \mathbf{V} = -\nabla^2 \mathbf{V} + \text{Ric}(\mathbf{V})$$
+
+其中 Ricci 张量在 $$S^d$$ 上为：$$\text{Ric}_{\mu\nu} = (d-1)g_{\mu\nu}$$
+
+## 各模式的本征值
+
+### 1. 径向型 $$\mathbf{Y}_{\ell m}^{(0)}$$
+$$\Delta_{\text{vec}} \mathbf{Y}_{\ell m}^{(0)} = -[\ell(\ell + d - 2) + (d-1)] \mathbf{Y}_{\ell m}^{(0)}$$
+
+**本征值：**
+$$\lambda_{\ell}^{(0)} = -\ell(\ell + d - 2) - (d-1) = -(\ell + d - 1)(\ell + 1) + 1$$
+
+### 2. 梯度型 $$\mathbf{Y}_{\ell m}^{(1)}$$
+$$\Delta_{\text{vec}} \mathbf{Y}_{\ell m}^{(1)} = -[\ell(\ell + d - 2) - 1] \mathbf{Y}_{\ell m}^{(1)}$$
+
+**本征值：**
+$$\lambda_{\ell}^{(1)} = -\ell(\ell + d - 2) + 1 = -\ell^2 - \ell(d-2) + 1$$
+
+### 3. 旋转型 $$\mathbf{Y}_{\ell m}^{(2)}$$
+$$\Delta_{\text{vec}} \mathbf{Y}_{\ell m}^{(2)} = -[\ell(\ell + d - 2) - 1] \mathbf{Y}_{\ell m}^{(2)}$$
+
+**本征值：**
+$$\lambda_{\ell}^{(2)} = -\ell(\ell + d - 2) + 1 = -\ell^2 - \ell(d-2) + 1$$
+
+## 重要观察
+
+### 简并性
+注意到 $$\lambda_{\ell}^{(1)} = \lambda_{\ell}^{(2)}$$，即**梯度型和旋转型具有相同本征值**。这反映了 $$S^d$$ 的高度对称性。
+
+### 与标量情况的关系
+- 标量球谐函数：$$\lambda_{\ell}^{\text{scalar}} = -\ell(\ell + d - 2)$$
+- 径向型：$$\lambda_{\ell}^{(0)} = \lambda_{\ell}^{\text{scalar}} - (d-1)$$
+- 横向型：$$\lambda_{\ell}^{(1,2)} = \lambda_{\ell}^{\text{scalar}} + 1$$
+
+## Proca 方程中的应用
+
+对于 Proca 方程 $$(\square + m^2)A_\mu = 0$$ 在 $$\mathbb{R} \times S^d$$ 时空中：
+
+### 径向模式频率
+$$\omega_{\ell}^{(0)2} = m^2 + (\ell + d - 1)(\ell + 1) - 1$$
+
+### 横向模式频率  
+$$\omega_{\ell}^{(1,2)2} = m^2 + \ell(\ell + d - 2) - 1$$
+
+## 特殊维度情况
+
+### d = 3 (标准3维球面)
+- $$\lambda_{\ell}^{(0)} = -(\ell + 2)(\ell + 1) + 1 = -\ell^2 - 3\ell - 1$$
+- $$\lambda_{\ell}^{(1,2)} = -\ell(\ell + 1) + 1$$
+
+### d = 4 (4维球面)
+- $$\lambda_{\ell}^{(0)} = -(\ell + 3)(\ell + 1) + 1 = -\ell^2 - 4\ell - 2$$  
+- $$\lambda_{\ell}^{(1,2)} = -\ell(\ell + 2) + 1$$
+
+### d = 2 (圆周)
+只有梯度型存在：$$\lambda_{\ell}^{(1)} = -\ell^2 + 1$$
+
+## 物理解释
+
+这些本征值的差异反映了：
+1. **几何耦合**：径向模式感受到球面的内禀曲率
+2. **拓扑效应**：横向模式的简并度与球面的同伦群相关
+3. **质量谱**：在 [[AdS/CFT对应]] 中，这些本征值决定了对偶场论中算子的共形维度
+
+^cite{Camporesi1994,Higuchi1987}
+
+[[矢量球谐函数]] [[Hodge理论]] [[球面几何]] [[Proca方程]] [[共形场论]]
