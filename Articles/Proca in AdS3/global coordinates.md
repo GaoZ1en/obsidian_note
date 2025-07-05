@@ -79,9 +79,18 @@ $$\tag{2.6}
 \end{align}
 $$
 
-substitute $\displaystyle{R(r)=}$
+notice that $\displaystyle{{}_{2}F_{1}(\alpha,\beta;\gamma;z)}$ satisfies the hypergeometric equation
 
-```python
+$$\tag{2.7}
+\begin{align}
+z(1-z)\frac{\mathrm{d}^{2}F}{\mathrm{d}z^{2}}+\left(\gamma-(\alpha+\beta+1)z\right)\frac{\mathrm{d}F}{\mathrm{d}z}-\alpha \beta F & =0
+\end{align}
+$$
 
-```
+t $\displaystyle{G(z)=z^{a}(1-z)^{b}{}_{2}F_{1}(\alpha,\beta;\gamma;z)}$ $\displaystyle{G(z)}$ satisfies
 
+$$\tag{2.8}
+\begin{align}
+
+\end{align}
+$$
