@@ -75,9 +75,31 @@ define $\displaystyle{\rho=\tan r}$, (2.5) becomes
 
 $$\tag{2.6}
 \begin{align}
-\cos ^{2}r\partial _{r}R(r)+\frac{d-2}{\tan r}\partial _{r}R(r)+\left(\omega ^{2}\cos ^{2}r-\frac{\ell(\ell+d-3)}{\tan ^{2}r}-m^{2}\right)R(r) & =0
+\cos ^{2}r\partial ^{2} _{r}R(r)+\frac{d-2}{\tan r}\partial _{r}R(r)+\left(\omega ^{2}\cos ^{2}r-\frac{\ell(\ell+d-3)}{\tan ^{2}r}-m^{2}\right)R(r) & =0
 \end{align}
 $$
+
+further define $\displaystyle{z=\sin ^{2}r}$
+
+$$\tag{.}
+\begin{align} \\
+\mathrm{d}z & =2\sqrt{ z(1-z) }\mathrm{d}r \\
+\sin r & =\sqrt{ z } \\
+\cos r & =\sqrt{ 1-z } \\
+\partial _{r} & =\frac{\partial z}{\partial r}\partial _{z} \\
+ & =2\sqrt{ z(1-z) }\partial _{z} \\
+\partial _{r}^{2} & =4\sqrt{ z(1-z) }\partial _{z}(\sqrt{ z(1-z) }\partial _{z}) \\
+ & =4z(1-z)\partial _{z}^{2}+2(1-2z)\partial _{z}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+(1-z)\partial ^{2} _{r}R(r)+\frac{d-2}{\tan r}\partial _{r}R(r)+\left(\omega ^{2}\cos ^{2}r-\frac{\ell(\ell+d-3)}{\tan ^{2}r}-m^{2}\right)R(r) & =0
+\end{align}
+$$
+
+
 
 notice that $\displaystyle{{}_{2}F_{1}(\alpha,\beta;\gamma;z)}$ satisfies the hypergeometric equation
 
