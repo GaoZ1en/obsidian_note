@@ -114,3 +114,66 @@ $$\tag{2.10}
 \end{align}
 $$
 
+# S^d 上矢量球谐函数的定义
+
+## 适用于 Proca 方程的标准定义
+
+对于在 $$S^d$$ 球面上求解 Proca 方程，最适合的是使用基于标量球谐函数的**梯度-旋转分解**定义：
+
+### 标量球谐函数基础
+首先，$$S^d$$ 上的标量球谐函数 $$Y_{\ell m}(\theta_1,\ldots,\theta_{d-1},\phi)$$ 满足：
+$$\Delta_{S^d} Y_{\ell m} = -\ell(\ell + d - 2) Y_{\ell m}$$
+
+### 矢量球谐函数的三重分解
+
+在 $$S^d$$ 上，矢量场可以按照其变换性质分解为三类：
+
+#### 1. 径向型 (Radial/Electric Type)
+$$\mathbf{Y}_{\ell m}^{(0)} = Y_{\ell m} \hat{\mathbf{r}}$$
+
+其中 $$\hat{\mathbf{r}}$$ 是径向单位矢量。这对应于**纵向模式**。
+
+#### 2. 梯度型 (Gradient/Polar Type) 
+$$\mathbf{Y}_{\ell m}^{(1)} = \frac{1}{\sqrt{\ell(\ell + d - 2)}} \nabla_{S^d} Y_{\ell m}$$
+
+其中 $$\nabla_{S^d}$$ 是球面上的协变导数算子。
+
+#### 3. 旋转型 (Curl/Axial Type)
+$$\mathbf{Y}_{\ell m}^{(2)} = \frac{1}{\sqrt{\ell(\ell + d - 2)}} \hat{\mathbf{r}} \times \nabla_{S^d} Y_{\ell m}$$
+
+### Proca 方程中的应用优势
+
+对于质量为 $$m$$ 的 Proca 场：
+$$\partial_\mu F^{\mu\nu} + m^2 A^\nu = 0$$
+$$\partial_\mu A^\mu = 0$$
+
+在球对称时空 $$\mathbb{R} \times S^d$$ 中分离变量时：
+
+1. **径向模式** $$\mathbf{Y}_{\ell m}^{(0)}$$：对应**标量扰动**，满足纵向约束
+2. **梯度模式** $$\mathbf{Y}_{\ell m}^{(1)}$$：对应**极化扰动**，可以完全消除（gauge freedom）
+3. **旋转模式** $$\mathbf{Y}_{\ell m}^{(2)}$$：对应**横向扰动**，是物理的传播模式
+
+## 正交性与完备性
+
+### 正交关系
+$$\int_{S^d} \mathbf{Y}_{\ell m}^{(i)} \cdot \mathbf{Y}_{\ell' m'}^{(j)*} \, d\Omega_d = \delta_{ii'}\delta_{\ell\ell'}\delta_{mm'}$$
+
+### 完备性关系
+$$\sum_{i=0}^2 \sum_{\ell,m} \mathbf{Y}_{\ell m}^{(i)}(\Omega) \otimes \mathbf{Y}_{\ell m}^{(i)*}(\Omega') = \mathbf{I} \delta^{(d)}(\Omega - \Omega')$$
+
+## 维度依赖性
+
+- **d=2 (圆周)**：只有 $$\mathbf{Y}_{\ell}^{(1)}$$ 存在
+- **d=3 (标准球面)**：经典的 $$\mathbf{Y}_{\ell m}, \boldsymbol{\Psi}_{\ell m}, \boldsymbol{\Phi}_{\ell m}$$ 分解
+- **d≥4**：需要考虑更复杂的 [[Clebsch-Gordan系数]] 结构
+
+## 与其他定义的关系
+
+这个定义的优势在于：
+1. 明确的**物理意义**：每种模式对应不同的极化
+2. **规范不变性**：自然分离纯规范模式
+3. **计算效率**：Proca方程的径向部分解耦
+
+^cite{Kodama1984,Regge1957}
+
+[[球谐函数]] [[Proca方程]] [[矢量场分解]] [[球对称时空]]
