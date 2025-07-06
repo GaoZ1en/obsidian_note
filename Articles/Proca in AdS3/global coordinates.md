@@ -110,7 +110,7 @@ then we consider Proca field with eom
 
 $$\tag{2.10}
 \begin{align}
-\nabla _{\mu}F^{\mu \nu} & =m^{2}A^{\nu}
+\nabla _{\mu}F^{\mu \nu} & =\mu^{2}A^{\nu}
 \end{align}
 $$
 
@@ -127,6 +127,26 @@ where $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}(\Omega _{n-2}
 
 $$\tag{2.12}
 \begin{align}
-\nabla _{\mu}F^{\mu \nu}=\nabla _{\mu}\nabla ^{\mu}A^{\nu}-g^{\nu}\nabla _{\mu}\nabla ^{\nu}A^{\mu}
+\nabla ^{2}A^{\nu}& =(\mu^{2}-d+1)A^{\nu}
+\end{align}
+$$
+
+it is convenient to use $\displaystyle{A=A_{\mu}\mathrm{d}x^{\mu}}$ instead of $\displaystyle{A_{\mu}}$
+
+$$\tag{2.13}
+\begin{align}
+\nabla ^{2}A & =(\mu ^{2}-d+1)A
+\end{align}
+$$
+
+
+$$\tag{1.2}
+\begin{align}
+\Delta\phi =-\cos ^{2}\rho \partial _{t}^{2}\phi+\frac{\cos ^{2}\rho}{\sin ^{2}\rho}\Delta _{S^{n-2}\phi}+\cos ^{2}\rho \partial _{\rho}^{2}\phi+\frac{n-2}{\tan \rho}\partial _{\rho}\phi
+\end{align}
+$$
+$$\tag{.}
+\begin{align}
+\nabla _{\nu}\nabla ^{\nu}A^{\mu}
 \end{align}
 $$
