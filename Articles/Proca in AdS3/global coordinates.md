@@ -137,7 +137,7 @@ where $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}(\Omega _{n-2}
 
 $$\tag{3.3}
 \begin{align}
-F^{ab} & =(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla} ^{b}\psi ^{a})\mathrm{Y}_{\ell \mathbf{m}}(\Omega _{n-2}) \\
+F^{ab} & =(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla} ^{b}\psi ^{a})\mathrm{Y}_{\ell \mathbf{m}} \\
 F^{ai} & =\frac{1}{\rho ^{2}}(\tilde{\nabla} ^{a}\phi-\psi ^{a})\mathbf{Y}_{\ell \mathbf{m}}^{(\mathrm{e}),i}+\frac{1}{\rho ^{2}}\tilde{\nabla} ^{a}\chi \mathbf{Y}_{\ell \mathbf{m}}^{(\mathrm{m}),i} \\
 F^{ij} & =\frac{1}{\rho ^{4}}\chi(\tilde{\nabla}^{i}\mathbf{Y}_{\ell \mathbf{m}}^{(\mathrm{m}),j}-\tilde{\nabla}^{j}\mathbf{Y}_{\ell \mathbf{m}}^{(\mathrm{m}),i})
 \end{align}
@@ -157,6 +157,6 @@ insert (3.3) into (3.4), we have
 
 $$\tag{3.5}
 \begin{align}
-\tilde{\nabla} _{b}
+\tilde{\nabla} _{b}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})\mathrm{Y}_{\ell \mathbf{m}}+\frac{1}{\rho ^{2}}\tilde{\nabla}_{i}()
 \end{align}
 $$
