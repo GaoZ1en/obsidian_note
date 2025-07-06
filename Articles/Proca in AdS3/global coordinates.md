@@ -150,3 +150,16 @@ $$\tag{.}
 \nabla _{\nu}\nabla ^{\nu}A^{\mu}
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+\nabla _{\mu}\nabla ^{\mu}\phi & =\partial _{\mu}\nabla ^{\mu}\phi+\Gamma ^{\mu}_{~\mu \nu}\nabla ^{\nu}\phi \\
+ & =\partial _{\mu}\partial ^{\mu}\phi+\Gamma ^{\mu}_{~\mu \nu}\partial ^{\nu}\phi
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\nabla _{\mu}\nabla ^{\mu}A_{\nu} & =\partial _{}
+\end{align}
+$$
