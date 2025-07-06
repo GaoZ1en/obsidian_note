@@ -156,12 +156,20 @@ $$
 
 $$\tag{.}
 \begin{align}
-g^{\rho \sigma}\nabla _{\rho}\nabla _{\sigma}A_{\mu} & =g^{\rho \sigma}\partial _{\rho}\nabla _{\sigma}A_{\mu}+g^{\rho \sigma}
+g^{\rho \sigma}\nabla _{\rho}\nabla _{\sigma}A_{\mu} & =g^{\rho \sigma}\partial _{\rho}\nabla _{\sigma}A_{\mu}-g^{\rho \sigma}\Gamma ^{\lambda}_{~\rho \sigma}\nabla _{\lambda}A_{\mu}-g^{\rho \sigma}\Gamma ^{\lambda}_{~\rho \mu}\nabla _{\sigma}A_{\lambda} \\
+ & =g^{\rho \sigma}\partial _{\rho}\partial _{\sigma}A_{\mu}-g^{\rho \sigma}\partial _{\rho}\Gamma ^{\lambda}_{~\sigma \mu}A_{\lambda}-g^{\rho \sigma}\Gamma ^{\lambda}_{~\sigma \mu}\partial _{\rho}A_{\lambda}-g^{\rho \sigma}\Gamma ^{\lambda}_{~\rho \sigma}\partial _{\lambda}A_{\mu}+g^{\rho \sigma}\Gamma ^{\lambda}_{~\rho \sigma}\Gamma ^{\tau}_{~\lambda \mu}A_{\tau} \\
+ & -g^{\rho \sigma}\Gamma ^{\lambda}_{~\rho \mu}\partial _{\sigma}A_{\lambda}+g^{\rho \sigma}\Gamma ^{\lambda}_{~\rho \mu}\Gamma ^{\tau}_{~\sigma \lambda}A_{\tau}
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
  R^{\rho}_{~\sigma \mu \nu}& =\partial _{\mu}\Gamma ^{\rho}_{~\nu \sigma}-\partial _{\nu}\Gamma ^{\rho}_{~\mu \sigma}+\Gamma ^{\rho}_{~\mu \lambda}\Gamma ^{\lambda}_{~\nu \sigma}-\Gamma ^{\rho}_{~\nu \lambda}\Gamma ^{\lambda}_{~\mu \sigma}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\partial _{\rho}\Gamma ^{\lambda}_{~\sigma \mu}-\partial _{\sigma}\Gamma ^{\lambda}_{~\rho \mu}+\Gamma ^{\tau}_{~\rho \mu}\Gamma ^{\lambda}_{~\sigma \tau}-\Gamma ^{\tau}_{~\sigma \mu}\Gamma ^{\lambda}_{~\rho \tau}=R^{\lambda}_{~\mu \rho \sigma}
 \end{align}
 $$
