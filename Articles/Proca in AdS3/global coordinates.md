@@ -123,16 +123,10 @@ A^{i} & =\phi(t,\rho) \mathbf{Y}^{(\mathrm{e})i}_{\ell \mathbf{m}}(\Omega _{n-2}
 \end{align}
 $$
 
-then $\displaystyle{F^{\mu \nu}}$ becomes
+where $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}(\Omega _{n-2})}$ and $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$ are the vector spherical harmonics defined on $\displaystyle{S^{d-2}}$, with eigenvalues $\displaystyle{\ell(\ell+d-3)-(d-3)}$ and $\displaystyle{\ell(\ell+d-3)-1}$ respectively. 
 
 $$\tag{2.12}
 \begin{align}
-F^{ab} & =\nabla ^{a}A^{b}-\nabla ^{b}A^{a} \\
- & =(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla} ^{b}\psi ^{a})Y_{\ell \mathbf{m}} \\
-F^{ij} & =\nabla ^{i}A^{j}-\nabla ^{j}A^{i} \\
- & = \\
-F^{ai} & =\nabla ^{a}A^{i}-\nabla ^{i}A^{a} \\
- & =
+\nabla _{\mu}F^{\mu \nu}=\nabla _{\mu}\nabla ^{\mu}A^{\nu}-g^{\nu}\nabla _{\mu}\nabla ^{\nu}A^{\mu}
 \end{align}
 $$
-
