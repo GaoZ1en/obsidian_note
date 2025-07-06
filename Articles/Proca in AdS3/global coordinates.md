@@ -128,7 +128,10 @@ where $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}(\Omega _{n-2}
 
 $$\tag{2.12}
 \begin{align}
-
+F^{ab} & =\nabla ^{a}A^{b}-\nabla ^{b}A^{a} \\
+ & =g^{ac}g^{bd}(\nabla _{c}A_{d}-\nabla _{d}A_{c}) \\
+ & =\tilde{g}^{ac}\tilde{g}^{bd}(\tilde{\nabla}_{c}A_{d}-\tilde{\nabla}_{d}A_{c}) \\
+ & =\nabla ^{}
 \end{align}
 $$
 
