@@ -108,7 +108,7 @@ $$
 
 then we consider Proca field with eom
 
-$$\tag{2.10}
+$$\tag{3.1}
 \begin{align}
 \nabla _{\mu}F^{\mu \nu} & =\mu^{2}A^{\nu} \\
 \nabla _{\mu}A^{\mu} & =0
@@ -117,21 +117,36 @@ $$
 
 we separate $\displaystyle{A^{\mu}}$ as $\displaystyle{A^{\mu}=(A^{a},A^{i})}$ and make the following ansatz
 
-$$\tag{2.11}
+$$\tag{3.2}
 \begin{align}
 A_{a} & =\psi _{a}(t,\rho)\mathrm{Y}_{\ell \mathbf{m}}(\Omega _{n-2}) \\
 A_{i} & =\phi(t,\rho) \mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}(\Omega _{n-2})+\chi(t,\rho) \mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}(\Omega _{n-2})
 \end{align}
 $$
 
-where $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}(\Omega _{n-2})}$ and $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$ are the vector spherical harmonics defined on $\displaystyle{S^{d-2}}$, with eigenvalues $\displaystyle{\ell(\ell+d-3)-(d-3)}$ and $\displaystyle{\ell(\ell+d-3)-1}$ respectively. 
+where $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}(\Omega _{n-2})=\tilde{\nabla}_{i}\mathrm{Y}_{\ell \mathbf{m}}(\Omega _{n-2})}$ and $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$ are the vector spherical harmonics defined on $\displaystyle{S^{d-2}}$, with eigenvalues $\displaystyle{\ell(\ell+d-3)-(d-3)}$ and $\displaystyle{\ell(\ell+d-3)-1}$ respectively. then the stress tensor is given by
 
-$$\tag{2.12}
+$$\tag{3.3}
 \begin{align}
-F^{ab} & =\nabla ^{a}A^{b}-\nabla ^{b}A^{a} \\
- & =g^{ac}g^{bd}(\nabla _{c}A_{d}-\nabla _{d}A_{c}) \\
- & =\tilde{g}^{ac}\tilde{g}^{bd}(\tilde{\nabla}_{c}A_{d}-\tilde{\nabla}_{d}A_{c}) \\
- & =\nabla ^{}
+F^{ab} & =(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla} ^{b}\psi ^{a})\mathrm{Y}_{\ell \mathbf{m}}(\Omega _{n-2}) \\
+F^{ai} & =\frac{1}{\rho ^{2}}(\tilde{\nabla} ^{a}\phi-\psi ^{a})\mathbf{Y}_{\ell \mathbf{m}}^{(\mathrm{e}),i}+\frac{1}{\rho ^{2}}\tilde{\nabla} ^{a}\chi \mathbf{Y}_{\ell \mathbf{m}}^{(\mathrm{m}),i} \\
+F^{ij} & =\frac{1}{\rho ^{4}}\chi(\tilde{\nabla}^{i}\mathbf{Y}_{\ell \mathbf{m}}^{(\mathrm{m}),j}-\tilde{\nabla}^{j}\mathbf{Y}_{\ell \mathbf{m}}^{(\mathrm{m}),i})
 \end{align}
 $$
 
+and the eom can be written as
+
+$$\tag{3.4}
+\begin{align}
+\nabla _{b}F^{ba}+\nabla _{i}F^{ia} & =\mu ^{2}A^{a} \\
+\nabla _{b}F^{bi}+\nabla _{j}F^{ji} & =\mu ^{2}A^{i}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\nabla _{b}F^{ab} & =\tilde{\nabla}_{b}F^{ab} \\
+\nabla _{i}F^{ai} & =\partial _{i}F^{ai}+\Gamma ^{a}_{~\mu i}F^{\mu i}+\Gamma ^{i}_{~\mu i}F^{a\mu} \\
+ & =\partial _{i}F^{ai}+\Gamma ^{a}_{~ij}F^{ji}+
+\end{align}
+$$
