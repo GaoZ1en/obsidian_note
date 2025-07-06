@@ -147,32 +147,16 @@ and the eom can be written as
 
 $$\tag{3.4}
 \begin{align}
-\nabla _{b}F^{ba}+\nabla _{i}F^{ia} & =\mu ^{2}A^{a} \\
-\nabla _{b}F^{bi}+\nabla _{j}F^{ji} & =\mu ^{2}A^{i}
+\tilde{\nabla}_{b}F^{ab}+\tilde{\nabla} _{i}F^{ai}+(d-2)\frac{\partial _{b}\rho}{\rho}F^{ab}+\mu ^{2}A^{a} & =0 \\
+\tilde{\nabla}_{b}F^{ib}+\tilde{\nabla}_{j}F^{ij}+(d-2) \frac{\partial _{b}\rho}{\rho}F^{ib}+\mu ^{2}A^{i} & =0 \\
+\tilde{\nabla}_{a}A^{a}+\tilde{\nabla}_{i}A^{i}+(d-2) \frac{\partial _{a}\rho}{\rho}A^{a} & =0
 \end{align}
 $$
 
-$$\tag{.}
+insert (3.3) into (3.4), we have
+
+$$\tag{3.5}
 \begin{align}
-\nabla _{b}F^{ab} & =\tilde{\nabla}_{b}F^{ab} \\
-\nabla _{i}F^{ai} & =\partial _{i}F^{ai}+\Gamma ^{a}_{~\mu i}F^{\mu i}+\Gamma ^{i}_{~\mu i}F^{a\mu} \\
- & =\partial _{i}F^{ai}+\Gamma ^{i}_{~ij}F^{aj}+\Gamma ^{i}_{bi}F^{ab} \\
- & =\tilde{\nabla}_{i}F^{ai}+\Gamma ^{i}_{~bi}F^{ab}
+\tilde{\nabla} _{b}
 \end{align}
 $$
-
-$$\tag{.}
-\begin{align}
-\tilde{\nabla}_{b}F^{ab}+\tilde{\nabla} _{i}F^{ai}+\partial _{b}\rho
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\Gamma ^{a}_{~bc} & =\tilde{\Gamma}^{a}_{~bc} \\
-\Gamma ^{a}_{~ij} & =-f(\rho)\rho\partial ^{a}\rho \tilde{g}_{ij} \\
-\Gamma ^{i}_{~aj} & =\frac{\partial _{a}\rho}{\rho}\delta ^{i}_{j} \\
-\Gamma ^{i}_{~jk} & =\tilde{\Gamma}^{i}_{~jk}
-\end{align}
-$$
-
