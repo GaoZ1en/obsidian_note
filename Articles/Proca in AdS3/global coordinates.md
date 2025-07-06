@@ -118,8 +118,8 @@ we separate $\displaystyle{A^{\mu}}$ as $\displaystyle{A^{\mu}=(A^{a},A^{i})}$ a
 
 $$\tag{2.11}
 \begin{align}
-A^{a} & =\psi ^{a}(t,\rho)\mathrm{Y}_{\ell \mathbf{m}}(\Omega _{n-2}) \\
-A^{i} & =\phi(t,\rho) \mathbf{Y}^{(\mathrm{e})i}_{\ell \mathbf{m}}(\Omega _{n-2})+\chi(t,\rho) \mathbf{Y}^{(\mathrm{m})i}_{\ell \mathbf{m}}(\Omega _{n-2})
+A_{a} & =\psi _{a}(t,\rho)\mathrm{Y}_{\ell \mathbf{m}}(\Omega _{n-2}) \\
+A_{i} & =\phi(t,\rho) \mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}(\Omega _{n-2})+\chi(t,\rho) \mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}(\Omega _{n-2})
 \end{align}
 $$
 
@@ -127,7 +127,7 @@ where $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}(\Omega _{n-2}
 
 $$\tag{2.12}
 \begin{align}
-\nabla ^{2}A^{\nu}& =(\mu^{2}-d+1)A^{\nu}
+\nabla ^{2}A_{\mu}& =(\mu^{2}-d+1)A_{\mu}
 \end{align}
 $$
 
@@ -145,11 +145,7 @@ $$\tag{1.2}
 \Delta\phi =-\cos ^{2}\rho \partial _{t}^{2}\phi+\frac{\cos ^{2}\rho}{\sin ^{2}\rho}\Delta _{S^{n-2}\phi}+\cos ^{2}\rho \partial _{\rho}^{2}\phi+\frac{n-2}{\tan \rho}\partial _{\rho}\phi
 \end{align}
 $$
-$$\tag{.}
-\begin{align}
-\nabla _{\nu}\nabla ^{\nu}A^{\mu}
-\end{align}
-$$
+
 
 $$\tag{.}
 \begin{align}
@@ -160,8 +156,12 @@ $$
 
 $$\tag{.}
 \begin{align}
-\nabla _{\mu}\nabla ^{\mu}A_{\nu} & =\partial _{\mu}\nabla ^{\mu}A_{\nu}+\Gamma ^{\mu}_{~\mu \rho}\nabla ^{\rho}A_{\nu}-\Gamma ^{\rho}_{~\mu \nu}\nabla ^{\mu}A_{\rho} \\
- & =\partial _{\mu}\partial ^{\mu}A_{\nu}+\Gamma ^{\mu}_{~\mu \rho}\partial ^{\rho}A_{\nu}+\Gamma ^{\mu}_{~\mu \rho}\partial ^{\rho}A_{\nu}-g^{\rho \sigma}\Gamma ^{\mu}_{~\mu \rho}\Gamma ^{\lambda}_{~\sigma \nu}A_{\lambda} \\
- & -\Gamma ^{\rho}_{~\mu \nu}\partial ^{\mu}A_{\rho}+g^{\mu \sigma}\Gamma ^{\rho}_{~\mu \nu}\Gamma ^{\lambda}_{~\rho \sigma}A_{\lambda}+\partial ^{\mu}\Gamma ^{\rho}_{~\mu \nu}A_{\rho}+\Gamma ^{\rho}_{~\mu \nu}\partial ^{\mu}A_{\rho}
+g^{\rho \sigma}\nabla _{\rho}\nabla _{\sigma}A_{\mu} & =g^{\rho \sigma}\partial _{\rho}\nabla _{\sigma}A_{\mu}+g^{\rho \sigma}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+ R^{\rho}_{~\sigma \mu \nu}& =\partial _{\mu}\Gamma ^{\rho}_{~\nu \sigma}-\partial _{\nu}\Gamma ^{\rho}_{~\mu \sigma}+\Gamma ^{\rho}_{~\mu \lambda}\Gamma ^{\lambda}_{~\nu \sigma}-\Gamma ^{\rho}_{~\nu \lambda}\Gamma ^{\lambda}_{~\mu \sigma}
 \end{align}
 $$
