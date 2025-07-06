@@ -114,3 +114,25 @@ $$\tag{2.10}
 \end{align}
 $$
 
+we separate $\displaystyle{A^{\mu}}$ as $\displaystyle{A^{\mu}=(A^{a},A^{i})}$ and make the following ansatz
+
+$$\tag{2.11}
+\begin{align}
+A^{a} & =\psi ^{a}(t,\rho)\mathrm{Y}_{\ell \mathbf{m}}(\Omega _{n-2}) \\
+A^{i} & =\phi(t,\rho) \mathbf{Y}^{(\mathrm{e})i}_{\ell \mathbf{m}}(\Omega _{n-2})+\chi(t,\rho) \mathbf{Y}^{(\mathrm{m})i}_{\ell \mathbf{m}}(\Omega _{n-2})
+\end{align}
+$$
+
+then $\displaystyle{F^{\mu \nu}}$ becomes
+
+$$\tag{2.12}
+\begin{align}
+F^{ab} & =\nabla ^{a}A^{b}-\nabla ^{b}A^{a} \\
+ & =(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla} ^{b}\psi ^{a})Y_{\ell \mathbf{m}} \\
+F^{ij} & =\nabla ^{i}A^{j}-\nabla ^{j}A^{i} \\
+ & = \\
+F^{ai} & =\nabla ^{a}A^{i}-\nabla ^{i}A^{a} \\
+ & =
+\end{align}
+$$
+
