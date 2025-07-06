@@ -160,6 +160,8 @@ $$
 
 $$\tag{.}
 \begin{align}
-\nabla _{\mu}\nabla ^{\mu}A_{\nu} & =\partial _{}
+\nabla _{\mu}\nabla ^{\mu}A_{\nu} & =\partial _{\mu}\nabla ^{\mu}A_{\nu}+\Gamma ^{\mu}_{~\mu \rho}\nabla ^{\rho}A_{\nu}-\Gamma ^{\rho}_{~\mu \nu}\nabla ^{\mu}A_{\rho} \\
+ & =\partial _{\mu}\partial ^{\mu}A_{\nu}+\Gamma ^{\mu}_{~\mu \rho}\partial ^{\rho}A_{\nu}+\Gamma ^{\mu}_{~\mu \rho}\partial ^{\rho}A_{\nu}-g^{\rho \sigma}\Gamma ^{\mu}_{~\mu \rho}\Gamma ^{\lambda}_{~\sigma \nu}A_{\lambda} \\
+ & -\Gamma ^{\rho}_{~\mu \nu}\partial ^{\mu}A_{\rho}+g^{\mu \sigma}\Gamma ^{\rho}_{~\mu \nu}\Gamma ^{\lambda}_{~\rho \sigma}A_{\lambda}+\partial ^{\mu}\Gamma ^{\rho}_{~\mu \nu}A_{\rho}+\Gamma ^{\rho}_{~\mu \nu}\partial ^{\mu}A_{\rho}
 \end{align}
 $$
