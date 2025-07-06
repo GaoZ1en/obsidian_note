@@ -110,7 +110,8 @@ then we consider Proca field with eom
 
 $$\tag{2.10}
 \begin{align}
-\nabla _{\mu}F^{\mu \nu} & =\mu^{2}A^{\nu}
+\nabla _{\mu}F^{\mu \nu} & =\mu^{2}A^{\nu} \\
+\nabla _{\mu}A^{\mu} & =0
 \end{align}
 $$
 
@@ -127,49 +128,7 @@ where $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}(\Omega _{n-2}
 
 $$\tag{2.12}
 \begin{align}
-\nabla ^{2}A_{\mu}& =(\mu^{2}-d+1)A_{\mu}
+
 \end{align}
 $$
 
-it is convenient to use $\displaystyle{A=A_{\mu}\mathrm{d}x^{\mu}}$ instead of $\displaystyle{A_{\mu}}$
-
-$$\tag{2.13}
-\begin{align}
-\nabla ^{2}A & =(\mu ^{2}-d+1)A
-\end{align}
-$$
-
-
-$$\tag{1.2}
-\begin{align}
-\Delta\phi =-\cos ^{2}\rho \partial _{t}^{2}\phi+\frac{\cos ^{2}\rho}{\sin ^{2}\rho}\Delta _{S^{n-2}\phi}+\cos ^{2}\rho \partial _{\rho}^{2}\phi+\frac{n-2}{\tan \rho}\partial _{\rho}\phi
-\end{align}
-$$
-
-
-$$\tag{.}
-\begin{align}
-\nabla _{\mu}\nabla ^{\mu}\phi & =\partial _{\mu}\nabla ^{\mu}\phi+\Gamma ^{\mu}_{~\mu \nu}\nabla ^{\nu}\phi \\
- & =\partial _{\mu}\partial ^{\mu}\phi+\Gamma ^{\mu}_{~\mu \nu}\partial ^{\nu}\phi
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-g^{\rho \sigma}\nabla _{\rho}\nabla _{\sigma}A_{\mu} & =g^{\rho \sigma}\partial _{\rho}\nabla _{\sigma}A_{\mu}-g^{\rho \sigma}\Gamma ^{\lambda}_{~\rho \sigma}\nabla _{\lambda}A_{\mu}-g^{\rho \sigma}\Gamma ^{\lambda}_{~\rho \mu}\nabla _{\sigma}A_{\lambda} \\
- & =g^{\rho \sigma}\partial _{\rho}\partial _{\sigma}A_{\mu}-g^{\rho \sigma}\partial _{\rho}\Gamma ^{\lambda}_{~\sigma \mu}A_{\lambda}-g^{\rho \sigma}\Gamma ^{\lambda}_{~\sigma \mu}\partial _{\rho}A_{\lambda}-g^{\rho \sigma}\Gamma ^{\lambda}_{~\rho \sigma}\partial _{\lambda}A_{\mu}+g^{\rho \sigma}\Gamma ^{\lambda}_{~\rho \sigma}\Gamma ^{\tau}_{~\lambda \mu}A_{\tau} \\
- & -g^{\rho \sigma}\Gamma ^{\lambda}_{~\rho \mu}\partial _{\sigma}A_{\lambda}+g^{\rho \sigma}\Gamma ^{\lambda}_{~\rho \mu}\Gamma ^{\tau}_{~\sigma \lambda}A_{\tau}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
- R^{\rho}_{~\sigma \mu \nu}& =\partial _{\mu}\Gamma ^{\rho}_{~\nu \sigma}-\partial _{\nu}\Gamma ^{\rho}_{~\mu \sigma}+\Gamma ^{\rho}_{~\mu \lambda}\Gamma ^{\lambda}_{~\nu \sigma}-\Gamma ^{\rho}_{~\nu \lambda}\Gamma ^{\lambda}_{~\mu \sigma}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\partial _{\rho}\Gamma ^{\lambda}_{~\sigma \mu}-\partial _{\sigma}\Gamma ^{\lambda}_{~\rho \mu}+\Gamma ^{\tau}_{~\rho \mu}\Gamma ^{\lambda}_{~\sigma \tau}-\Gamma ^{\tau}_{~\sigma \mu}\Gamma ^{\lambda}_{~\rho \tau}=R^{\lambda}_{~\mu \rho \sigma}
-\end{align}
-$$
