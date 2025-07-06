@@ -19,6 +19,15 @@ $$\tag{1.2}
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+\Gamma ^{a}_{~bc} & =\tilde{\Gamma}^{a}_{~bc} \\
+\Gamma ^{a}_{~ij} & =-f(\rho)\rho\partial ^{a}\rho \tilde{g}_{ij} \\
+\Gamma ^{i}_{~aj} & =\frac{\partial _{a}\rho}{\rho}\delta ^{i}_{j} \\
+\Gamma ^{i}_{~jk} & =\tilde{\Gamma}^{i}_{~jk}
+\end{align}
+$$
+
 where $\displaystyle{\tilde{\Gamma}^{\Omega}_{~\Omega \Omega}}$ is the christoffel symbol of the unit sphere $\displaystyle{S^{d-2}}$. here $\displaystyle{a}$ stands for $\displaystyle{t,\rho}$, and $\displaystyle{i}$ stands for coordinates on $\displaystyle{S^{d-2}}$. and
 
 $$\tag{1.3}
@@ -147,6 +156,23 @@ $$\tag{.}
 \begin{align}
 \nabla _{b}F^{ab} & =\tilde{\nabla}_{b}F^{ab} \\
 \nabla _{i}F^{ai} & =\partial _{i}F^{ai}+\Gamma ^{a}_{~\mu i}F^{\mu i}+\Gamma ^{i}_{~\mu i}F^{a\mu} \\
- & =\partial _{i}F^{ai}+\Gamma ^{a}_{~ij}F^{ji}+
+ & =\partial _{i}F^{ai}+\Gamma ^{i}_{~ij}F^{aj}+\Gamma ^{i}_{bi}F^{ab} \\
+ & =\tilde{\nabla}_{i}F^{ai}+\Gamma ^{i}_{~bi}F^{ab}
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+\tilde{\nabla}_{b}F^{ab}+\tilde{\nabla} _{i}F^{ai}+\partial _{b}\rho
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\Gamma ^{a}_{~bc} & =\tilde{\Gamma}^{a}_{~bc} \\
+\Gamma ^{a}_{~ij} & =-f(\rho)\rho\partial ^{a}\rho \tilde{g}_{ij} \\
+\Gamma ^{i}_{~aj} & =\frac{\partial _{a}\rho}{\rho}\delta ^{i}_{j} \\
+\Gamma ^{i}_{~jk} & =\tilde{\Gamma}^{i}_{~jk}
+\end{align}
+$$
+
