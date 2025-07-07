@@ -153,10 +153,11 @@ $$\tag{3.4}
 \end{align}
 $$
 
-insert (3.3) into (3.4), we have
+insert (3.2) and (3.3) into (3.4), we have
 
 $$\tag{3.5}
 \begin{align}
-\tilde{\nabla} _{b}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})\mathrm{Y}_{\ell \mathbf{m}}+\frac{1}{\rho ^{2}}\tilde{\nabla}_{i}()
+\tilde{\nabla} _{b}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})\mathrm{Y}_{\ell \mathbf{m}}+\frac{1}{\rho ^{2}}\tilde{\nabla}_{i}((\tilde{\nabla}^{a}\phi-\psi ^{a})\mathbf{Y}_{\ell \mathbf{m}}^{(\mathrm{e}),i})+\frac{1}{\rho ^{2}}\tilde{\nabla}_{i}\tilde{\nabla}^{a}\chi \mathbf{Y}^{(\mathrm{m}),i}_{\ell \mathbf{m}}+(d-2) \frac{\partial _{b}\rho}{\rho}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})\mathrm{Y}_{\ell \mathbf{m}}+\mu ^{2}\psi ^{a}\mathrm{Y}_{\ell \mathbf{m}} & =0 \\
+\tilde{\nabla}_{b}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})
 \end{align}
 $$
