@@ -163,3 +163,11 @@ $$\tag{3.5}
 \tilde{\nabla}_{b}\psi ^{b}+(d-2) \frac{\partial _{b}\rho}{\rho}\psi ^{b}-\frac{\ell(\ell+d-3)}{\rho ^{2}}\phi & =0
 \end{align}
 $$
+
+we first consider the third equation in (3.5). we make the ansatz $\displaystyle{\chi\to \chi r^{2-d/2}}$ and $\displaystyle{r=\arctan \rho}$
+
+$$\tag{.}
+\begin{align}
+\omega ^{2}\chi+\partial _{\rho}^{2}\chi+2\rho \partial _{\rho}\chi+(d-4)\frac{f(\rho)}{\rho}\partial _{\rho}\chi-\left(\frac{\ell(\ell+d-3)+d-4}{\rho ^{2}}+\mu ^{2}\right)\chi & =0
+\end{align}
+$$
