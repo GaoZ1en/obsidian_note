@@ -231,13 +231,15 @@ $$\tag{3.12}
 \end{align}
 $$
 
-where $\displaystyle{n\in \mathbb{N}}$. the Breitenlohner-Freedman bound is given by
+where $\displaystyle{n\in \mathbb{N}}$. the Breitenlohner-Freedman bound for Proca field is given by
 
 $$\tag{3.13}
 \begin{align}
 \mu ^{2} & \geq -\frac{1}{4}(d-3)^{2}
 \end{align}
 $$
+
+for comparison, the Breitenlohner-Freedman bound for scalar field is given by $\displaystyle{\mu ^{2}\geq -\frac{1}{4}(d-1)^{2}}$. and we conjecture that for spin-$\displaystyle{s}$ field, the Breitenlohner-Freedman bound is given by $\displaystyle{\mu ^{2}\geq -\frac{1}{4}(d-1-2s)^{2}}$.
 
 ---
 
