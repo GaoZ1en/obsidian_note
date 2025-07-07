@@ -215,4 +215,25 @@ q_{k} & =\gamma _{k}\rho ^{-\frac{1}{2}(1+\sqrt{ (d-3)^{2}+4\mu ^{2} })}+\delta 
 \end{align}
 $$
 
-we require that the solution gives
+we require that the solution gives finite energy, this implies $\displaystyle{\delta _{k}=0}$. solutions satisfies these asymptotic behavior is
+
+$$\tag{3.11}
+\begin{align}
+q_{k} & =\mathcal{N}_{k}\rho ^{j_{k}+(d-2)/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};j_{k}+\frac{d-1}{2};\frac{\rho ^{2}}{1+\rho ^{2}} \right)
+\end{align}
+$$
+
+with energy
+
+$$\tag{3.12}
+\begin{align}
+\omega _{k} & =2n+j_{k}+\frac{d-1}{2}+\frac{1}{2}\sqrt{ (d-3)^{2}+4\mu ^{2} }
+\end{align}
+$$
+
+where $\displaystyle{n\in \mathbb{N}}$.
+
+---
+
+in $\displaystyle{d=3}$ there is no such thing as $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$, and $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}}$ is the only vector spherical harmonics, proportional to $\displaystyle{e^{im\phi}}$. the good news is that in generic $\displaystyle{d}$, the component $\displaystyle{\chi}$ corresponding to $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$ decouples from other components, so our discussion above is still valid
+
