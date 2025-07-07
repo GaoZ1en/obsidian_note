@@ -170,7 +170,7 @@ $$\tag{3.6}
 \begin{align}
 \mathcal{D}_{\ell}q_{0}+2\rho(\partial _{t}q_{1}+\partial _{t}q_{2}-\partial _{r}q_{0}) & =0 \\
 \mathcal{D}_{j_{k}}q_{k} & =0 \\
-\partial _{t}q_{0}-\partial _{r}(q_{1}+q_{2}) & =
+\partial _{t}q_{0}-\partial _{r}(q_{1}+q_{2}) & =\frac{1}{\rho}\left( \frac{d-2}{2}-(\ell+d-3) \right)q_{2}+\frac{1}{\rho}\left( \ell+\frac{d-2}{2} \right)q_{1}
 \end{align}
 $$
 
@@ -235,5 +235,7 @@ where $\displaystyle{n\in \mathbb{N}}$.
 
 ---
 
-in $\displaystyle{d=3}$ there is no such thing as $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$, and $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}}$ is the only vector spherical harmonics, proportional to $\displaystyle{e^{im\phi}}$. the good news is that in generic $\displaystyle{d}$, the component $\displaystyle{\chi}$ corresponding to $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$ decouples from other components, so our discussion above is still valid
+in $\displaystyle{d=3}$ there is no such thing as $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$, and $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}}$ is the only vector spherical harmonics, proportional to $\displaystyle{e^{im\phi}}$. the good news is that in generic $\displaystyle{d}$, the component $\displaystyle{\chi}$ corresponding to $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$ decouples from other components, so our discussion above is still valid...
+
+
 
