@@ -164,4 +164,10 @@ $$\tag{3.5}
 \end{align}
 $$
 
-we 
+we will first consider the third equation in (3.5).
+
+$$\tag{.}
+\begin{align}
+\tilde{\nabla}_{b}\tilde{\nabla}^{b}\chi+(d-4) \frac{\partial ^{b}\rho}{\rho}\partial _{b}\chi-\left(\frac{\ell(\ell+d-3)+d-4}{\rho ^{2}}+\mu ^{2}\right)\chi & =0
+\end{align}
+$$
