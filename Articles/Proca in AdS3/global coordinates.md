@@ -231,11 +231,15 @@ $$\tag{3.12}
 \end{align}
 $$
 
-where $\displaystyle{n\in \mathbb{N}}$.
+where $\displaystyle{n\in \mathbb{N}}$. the Breitenlohner-Freedman bound is given by
+
+$$\tag{3.13}
+\begin{align}
+\mu ^{2} & \geq -\frac{1}{4}(d-3)^{2}
+\end{align}
+$$
 
 ---
 
 in $\displaystyle{d=3}$ there is no such thing as $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$, and $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}}$ is the only vector spherical harmonics, proportional to $\displaystyle{e^{im\phi}}$. the good news is that in generic $\displaystyle{d}$, the component $\displaystyle{\chi}$ corresponding to $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$ decouples from other components, so our discussion above is still valid...
-
-
 
