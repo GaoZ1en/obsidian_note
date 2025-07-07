@@ -153,11 +153,14 @@ $$\tag{3.4}
 \end{align}
 $$
 
-insert (3.2) and (3.3) into (3.4), we have
+insert (3.2) and (3.3) into (3.4) and (3.1), we have
 
 $$\tag{3.5}
 \begin{align}
-\tilde{\nabla} _{b}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})\mathrm{Y}_{\ell \mathbf{m}}+\frac{1}{\rho ^{2}}\tilde{\nabla}_{i}((\tilde{\nabla}^{a}\phi-\psi ^{a})\mathbf{Y}_{\ell \mathbf{m}}^{(\mathrm{e}),i})+\frac{1}{\rho ^{2}}\tilde{\nabla}_{i}\tilde{\nabla}^{a}\chi \mathbf{Y}^{(\mathrm{m}),i}_{\ell \mathbf{m}}+(d-2) \frac{\partial _{b}\rho}{\rho}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})\mathrm{Y}_{\ell \mathbf{m}}+\mu ^{2}\psi ^{a}\mathrm{Y}_{\ell \mathbf{m}} & =0 \\
-\tilde{\nabla}_{b}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})
+\tilde{\nabla}_{b}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})-\frac{\ell(\ell+d-3)}{\rho ^{2}}(\tilde{\nabla}^{a}\phi-\psi ^{a})+(d-2)\frac{\partial _{b}\rho}{\rho}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})+\mu ^{2}\psi ^{a} & =0 \\
+\tilde{\nabla}_{b}\tilde{\nabla}^{b}\phi+(d-4) \frac{\partial _{b}\rho}{\rho}\partial ^{b}\phi-\mu ^{2}\phi-\tilde{\nabla}_{b}\psi ^{b}-(d-4) \frac{\partial _{b}\rho}{\rho}\psi ^{b} & =0 \\
+\tilde{\nabla}_{b}\tilde{\nabla}^{b}\chi+(d-4) \frac{\partial ^{b}\rho}{\rho} \partial _{b}\chi-\left( \frac{\ell(\ell+d-3)+d-4}{\rho ^{2}}+\mu ^{2} \right)\chi & =0 \\
+\tilde{\nabla}_{b}\psi ^{b}+(d-2) \frac{\partial _{b}\rho}{\rho}\psi ^{b}-\frac{\ell(\ell+d-3)}{\rho ^{2}}\phi & =0
 \end{align}
 $$
+
