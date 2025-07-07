@@ -164,10 +164,37 @@ $$\tag{3.5}
 \end{align}
 $$
 
-we first consider the third equation in (3.5). we make the ansatz $\displaystyle{\chi\to \chi r^{2-d/2}}$ and $\displaystyle{r=\arctan \rho}$
+we can rewrite these equations as
 
-$$\tag{.}
+$$\tag{3.6}
 \begin{align}
-\omega ^{2}\chi+\partial _{\rho}^{2}\chi+2\rho \partial _{\rho}\chi+(d-4)\frac{f(\rho)}{\rho}\partial _{\rho}\chi-\left(\frac{\ell(\ell+d-3)+d-4}{\rho ^{2}}+\mu ^{2}\right)\chi & =0
+\mathcal{D}_{\ell}q_{0}+2\rho(\partial _{t}q_{1}+\partial _{t}q_{2}-\partial _{r}q_{0}) & =0 \\
+\mathcal{D}_{j_{k}}q_{k} & =0
 \end{align}
 $$
+
+where
+
+$$\tag{3.7}
+\begin{align}
+\mathcal{D}_{\ell} & =-\partial _{t}^{2}+\partial _{r}^{2}-\left(\frac{\ell(\ell+d-3)}{\rho ^{2}}+\mu ^{2}+\frac{(d-2)(d-4)}{4}(1+\rho ^{2})\right) \\
+r & =\arctan \rho \\
+q_{0} & =\psi _{t}\rho^{\frac{d}{2}-1} \\
+q_{1} & =\frac{(\ell-d-3)\psi _{r}f(\rho)-\ell(\ell+d-3)\phi \rho ^{-1}}{2\ell+d-3}\rho ^{\frac{d}{2}-1} \\
+q_{2} & =\frac{\ell \psi _{r}f(\rho)+\ell(\ell+d-3)\phi \rho ^{-1}}{2\ell+d-3}\rho ^{\frac{d}{2}-1} \\
+q_{3} & =\chi \rho ^{\frac{d}{2}-2}
+\end{align}
+$$
+
+and
+
+$$\tag{3.8}
+\begin{align}
+j_{k}=\begin{cases}
+\ell+1 & \ell \in \mathbb{N}\ \text{if } k=0 \\
+\ell-1 & \ell \in \mathbb{N}\ \text{if } k=1 \\
+\ell & \ell \in \mathbb{N}\ \text{if } k=2
+\end{cases}
+\end{align}
+$$
+
