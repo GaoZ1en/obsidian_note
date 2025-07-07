@@ -169,7 +169,8 @@ we can rewrite these equations as
 $$\tag{3.6}
 \begin{align}
 \mathcal{D}_{\ell}q_{0}+2\rho(\partial _{t}q_{1}+\partial _{t}q_{2}-\partial _{r}q_{0}) & =0 \\
-\mathcal{D}_{j_{k}}q_{k} & =0
+\mathcal{D}_{j_{k}}q_{k} & =0 \\
+\partial _{t}q_{0}-\partial _{r}(q_{1}+q_{2}) & =
 \end{align}
 $$
 
@@ -177,7 +178,7 @@ where
 
 $$\tag{3.7}
 \begin{align}
-\mathcal{D}_{\ell} & =-\partial _{t}^{2}+\partial _{r}^{2}-\left(\frac{\ell(\ell+d-3)}{\rho ^{2}}+\mu ^{2}+\frac{(d-2)(d-4)}{4}(1+\rho ^{2})\right) \\
+\mathcal{D}_{\ell} & =-\partial _{t}^{2}+\partial _{r}^{2}-\left(\frac{\ell(\ell+d-3)}{\rho ^{2}}+\mu ^{2}+\frac{(d-2)(d-4)}{4}\left( 1+\frac{1}{\rho ^{2}} \right)\right) \\
 r & =\arctan \rho \\
 q_{0} & =\psi _{t}\rho^{\frac{d}{2}-1} \\
 q_{1} & =\frac{(\ell-d-3)\psi _{r}f(\rho)-\ell(\ell+d-3)\phi \rho ^{-1}}{2\ell+d-3}\rho ^{\frac{d}{2}-1} \\
@@ -198,3 +199,20 @@ j_{k}=\begin{cases}
 \end{align}
 $$
 
+we take $\displaystyle{q_{1},q_{2},q_{3}}$ as independent variables, and $\displaystyle{q_{0}}$ is determined completely by $\displaystyle{q_{1}}$ and $\displaystyle{q_{2}}$. we first consider the asymptotic behavior of the solution. near $\displaystyle{\rho=0}$, we have
+
+$$\tag{3.9}
+\begin{align}
+q_{k} & =\alpha _{k}\rho ^{j_{k}+(d-2)/2}+\beta _{k}\rho ^{-j_{k}-(d-4)/2}
+\end{align}
+$$
+
+we require the solution to be regular at $\displaystyle{\rho=0}$, this implies $\displaystyle{\beta _{k}=0}$ execpt the case that $\displaystyle{k=2,d=4,\ell=0}$. this corresponds to a solution $\displaystyle{A_{\mu}\sim \frac{1}{\rho}}$, which is a Dirac delta source term at $\displaystyle{\rho=0}$. for this reason, we have to set $\displaystyle{\beta _{k}=0}$. near $\displaystyle{\rho=\infty}$, we have
+
+$$\tag{3.10}
+\begin{align}
+q_{k} & =\gamma _{k}\rho ^{-\frac{1}{2}(1+\sqrt{ (d-3)^{2}+4\mu ^{2} })}+\delta _{k}\rho ^{-\frac{1}{2}(1-\sqrt{ (d-3)^{2}+4\mu ^{2} })}
+\end{align}
+$$
+
+we require that the solution gives
