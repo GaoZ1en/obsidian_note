@@ -115,7 +115,7 @@ $$
 
 ---
 
-then we consider Proca field with eom
+then we consider Proca field in $\displaystyle{\mathrm{AdS}_{d},d>3}$ with eom
 
 $$\tag{3.1}
 \begin{align}
@@ -161,13 +161,5 @@ $$\tag{3.5}
 \tilde{\nabla}_{b}\tilde{\nabla}^{b}\phi+(d-4) \frac{\partial _{b}\rho}{\rho}\partial ^{b}\phi-\mu ^{2}\phi-\tilde{\nabla}_{b}\psi ^{b}-(d-4) \frac{\partial _{b}\rho}{\rho}\psi ^{b} & =0 \\
 \tilde{\nabla}_{b}\tilde{\nabla}^{b}\chi+(d-4) \frac{\partial ^{b}\rho}{\rho} \partial _{b}\chi-\left( \frac{\ell(\ell+d-3)+d-4}{\rho ^{2}}+\mu ^{2} \right)\chi & =0 \\
 \tilde{\nabla}_{b}\psi ^{b}+(d-2) \frac{\partial _{b}\rho}{\rho}\psi ^{b}-\frac{\ell(\ell+d-3)}{\rho ^{2}}\phi & =0
-\end{align}
-$$
-
-we will first consider the third equation in (3.5).
-
-$$\tag{.}
-\begin{align}
-\tilde{\nabla}_{b}\tilde{\nabla}^{b}\chi+(d-4) \frac{\partial ^{b}\rho}{\rho}\partial _{b}\chi-\left(\frac{\ell(\ell+d-3)+d-4}{\rho ^{2}}+\mu ^{2}\right)\chi & =0
 \end{align}
 $$
