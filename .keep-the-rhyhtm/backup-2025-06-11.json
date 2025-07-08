@@ -3717,6 +3717,636 @@
           }
         ],
         "id": 163
+      },
+      {
+        "date": "2025-07-05",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 474,
+        "charCountStart": 2440,
+        "changes": [
+          {
+            "timeKey": "14:50",
+            "w": 4,
+            "c": 33
+          },
+          {
+            "timeKey": "14:55",
+            "w": 50,
+            "c": 260
+          },
+          {
+            "timeKey": "15:00",
+            "w": 153,
+            "c": 624
+          },
+          {
+            "timeKey": "15:05",
+            "w": -156,
+            "c": -675
+          },
+          {
+            "timeKey": "15:15",
+            "w": 4,
+            "c": 33
+          },
+          {
+            "timeKey": "15:40",
+            "w": 4,
+            "c": 22
+          },
+          {
+            "timeKey": "15:45",
+            "w": 96,
+            "c": 531
+          },
+          {
+            "timeKey": "15:50",
+            "w": -98,
+            "c": -535
+          },
+          {
+            "timeKey": "16:05",
+            "w": 126,
+            "c": 892
+          },
+          {
+            "timeKey": "16:15",
+            "w": 109,
+            "c": 1035
+          },
+          {
+            "timeKey": "16:25",
+            "w": -163,
+            "c": -1552
+          },
+          {
+            "timeKey": "16:30",
+            "w": -2,
+            "c": -18
+          },
+          {
+            "timeKey": "17:00",
+            "w": 18,
+            "c": 111
+          },
+          {
+            "timeKey": "17:05",
+            "w": 123,
+            "c": 503
+          },
+          {
+            "timeKey": "17:30",
+            "w": 3,
+            "c": 16
+          },
+          {
+            "timeKey": "17:35",
+            "w": 8,
+            "c": 11
+          },
+          {
+            "timeKey": "17:40",
+            "w": 135,
+            "c": 411
+          },
+          {
+            "timeKey": "17:45",
+            "w": -289,
+            "c": -1107
+          },
+          {
+            "timeKey": "17:50",
+            "w": 3,
+            "c": 30
+          },
+          {
+            "timeKey": "17:55",
+            "w": 61,
+            "c": 304
+          },
+          {
+            "timeKey": "18:05",
+            "w": 51,
+            "c": 299
+          },
+          {
+            "timeKey": "18:10",
+            "w": 120,
+            "c": 610
+          },
+          {
+            "timeKey": "18:15",
+            "w": 12,
+            "c": 56
+          },
+          {
+            "timeKey": "18:20",
+            "w": -36,
+            "c": -159
+          },
+          {
+            "timeKey": "18:55",
+            "w": 239,
+            "c": 1802
+          },
+          {
+            "timeKey": "19:00",
+            "w": 309,
+            "c": 2144
+          },
+          {
+            "timeKey": "21:25",
+            "w": 263,
+            "c": 2490
+          },
+          {
+            "timeKey": "21:30",
+            "w": 8,
+            "c": 43
+          },
+          {
+            "timeKey": "21:35",
+            "w": -271,
+            "c": -2532
+          },
+          {
+            "timeKey": "21:40",
+            "w": -108,
+            "c": -826
+          },
+          {
+            "timeKey": "22:25",
+            "w": -440,
+            "c": -3121
+          },
+          {
+            "timeKey": "22:30",
+            "w": 100,
+            "c": 517
+          },
+          {
+            "timeKey": "22:35",
+            "w": 46,
+            "c": 189
+          }
+        ],
+        "id": 164
+      },
+      {
+        "date": "2025-07-05",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 165
+      },
+      {
+        "date": "2025-07-05",
+        "filePath": "Note/Project Euler/solutions.md",
+        "wordCountStart": 1889,
+        "charCountStart": 15708,
+        "changes": [],
+        "id": 166
+      },
+      {
+        "date": "2025-07-05",
+        "filePath": "TODO.md",
+        "wordCountStart": 88,
+        "charCountStart": 1046,
+        "changes": [],
+        "id": 167
+      },
+      {
+        "date": "2025-07-05",
+        "filePath": "Articles/Proca in AdS3/proca in adsn.md",
+        "wordCountStart": 988,
+        "charCountStart": 4988,
+        "changes": [],
+        "id": 168
+      },
+      {
+        "date": "2025-07-06",
+        "filePath": "2025-06-28.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 169
+      },
+      {
+        "date": "2025-07-06",
+        "filePath": "2025-07-05.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 170
+      },
+      {
+        "date": "2025-07-06",
+        "filePath": "2025-07-06.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 171
+      },
+      {
+        "date": "2025-07-06",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 956,
+        "charCountStart": 4881,
+        "changes": [
+          {
+            "timeKey": "10:25",
+            "w": 19,
+            "c": 79
+          },
+          {
+            "timeKey": "10:30",
+            "w": -73,
+            "c": -323
+          },
+          {
+            "timeKey": "10:35",
+            "w": 163,
+            "c": 769
+          },
+          {
+            "timeKey": "10:40",
+            "w": -1,
+            "c": -1
+          },
+          {
+            "timeKey": "10:45",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "10:50",
+            "w": 117,
+            "c": 593
+          },
+          {
+            "timeKey": "10:55",
+            "w": -174,
+            "c": -872
+          },
+          {
+            "timeKey": "11:20",
+            "w": 1,
+            "c": 3
+          },
+          {
+            "timeKey": "13:05",
+            "w": 207,
+            "c": 986
+          },
+          {
+            "timeKey": "13:10",
+            "w": 30,
+            "c": 119
+          },
+          {
+            "timeKey": "13:25",
+            "w": -228,
+            "c": -960
+          },
+          {
+            "timeKey": "13:30",
+            "w": -5,
+            "c": -28
+          },
+          {
+            "timeKey": "13:40",
+            "w": -7,
+            "c": -23
+          },
+          {
+            "timeKey": "13:45",
+            "w": 182,
+            "c": 1831
+          },
+          {
+            "timeKey": "13:50",
+            "w": 120,
+            "c": 1455
+          },
+          {
+            "timeKey": "13:55",
+            "w": -206,
+            "c": -2805
+          },
+          {
+            "timeKey": "14:00",
+            "w": 12,
+            "c": 75
+          },
+          {
+            "timeKey": "14:05",
+            "w": 35,
+            "c": 160
+          },
+          {
+            "timeKey": "14:15",
+            "w": 136,
+            "c": 702
+          },
+          {
+            "timeKey": "14:20",
+            "w": -121,
+            "c": -612
+          },
+          {
+            "timeKey": "14:35",
+            "w": 75,
+            "c": 359
+          },
+          {
+            "timeKey": "14:50",
+            "w": 21,
+            "c": 99
+          },
+          {
+            "timeKey": "14:55",
+            "w": 31,
+            "c": 123
+          },
+          {
+            "timeKey": "15:00",
+            "w": 51,
+            "c": 258
+          },
+          {
+            "timeKey": "15:05",
+            "w": 65,
+            "c": 330
+          },
+          {
+            "timeKey": "15:15",
+            "w": 40,
+            "c": 196
+          },
+          {
+            "timeKey": "15:20",
+            "w": -245,
+            "c": -1174
+          },
+          {
+            "timeKey": "15:25",
+            "w": 17,
+            "c": 96
+          },
+          {
+            "timeKey": "15:30",
+            "w": 78,
+            "c": 406
+          },
+          {
+            "timeKey": "15:35",
+            "w": 50,
+            "c": 259
+          },
+          {
+            "timeKey": "15:40",
+            "w": 47,
+            "c": 254
+          },
+          {
+            "timeKey": "15:45",
+            "w": 6,
+            "c": 31
+          },
+          {
+            "timeKey": "16:10",
+            "w": -398,
+            "c": -2053
+          },
+          {
+            "timeKey": "21:25",
+            "w": 52,
+            "c": 202
+          },
+          {
+            "timeKey": "21:30",
+            "w": 43,
+            "c": 227
+          },
+          {
+            "timeKey": "21:35",
+            "w": 45,
+            "c": 215
+          },
+          {
+            "timeKey": "21:45",
+            "w": 31,
+            "c": 110
+          },
+          {
+            "timeKey": "21:55",
+            "w": 60,
+            "c": 250
+          },
+          {
+            "timeKey": "22:00",
+            "w": 87,
+            "c": 380
+          },
+          {
+            "timeKey": "22:05",
+            "w": 54,
+            "c": 256
+          },
+          {
+            "timeKey": "22:10",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "22:15",
+            "w": 21,
+            "c": 97
+          },
+          {
+            "timeKey": "22:20",
+            "w": 130,
+            "c": 600
+          },
+          {
+            "timeKey": "22:25",
+            "w": -131,
+            "c": -608
+          },
+          {
+            "timeKey": "22:30",
+            "w": 108,
+            "c": 484
+          },
+          {
+            "timeKey": "22:35",
+            "w": -205,
+            "c": -876
+          },
+          {
+            "timeKey": "23:25",
+            "w": 26,
+            "c": 110
+          },
+          {
+            "timeKey": "23:35",
+            "w": 48,
+            "c": 224
+          },
+          {
+            "timeKey": "23:40",
+            "w": 35,
+            "c": 144
+          }
+        ],
+        "id": 172
+      },
+      {
+        "date": "2025-07-06",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 173
+      },
+      {
+        "date": "2025-07-06",
+        "filePath": "Articles/Proca in AdS3/proca in adsn.md",
+        "wordCountStart": 988,
+        "charCountStart": 4988,
+        "changes": [],
+        "id": 174
+      },
+      {
+        "date": "2025-07-07",
+        "filePath": "Articles/Proca in AdS3/proca in adsn.md",
+        "wordCountStart": 988,
+        "charCountStart": 4988,
+        "changes": [],
+        "id": 175
+      },
+      {
+        "date": "2025-07-07",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 176
+      },
+      {
+        "date": "2025-07-07",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 1405,
+        "charCountStart": 7030,
+        "changes": [
+          {
+            "timeKey": "11:40",
+            "w": 47,
+            "c": 251
+          },
+          {
+            "timeKey": "12:25",
+            "w": -40,
+            "c": -214
+          },
+          {
+            "timeKey": "12:35",
+            "w": 117,
+            "c": 626
+          },
+          {
+            "timeKey": "12:40",
+            "w": -49,
+            "c": -261
+          },
+          {
+            "timeKey": "13:05",
+            "w": -68,
+            "c": -365
+          },
+          {
+            "timeKey": "13:10",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "13:20",
+            "w": 177,
+            "c": 795
+          },
+          {
+            "timeKey": "13:25",
+            "w": 32,
+            "c": 136
+          },
+          {
+            "timeKey": "13:30",
+            "w": 13,
+            "c": 53
+          },
+          {
+            "timeKey": "13:35",
+            "w": 63,
+            "c": 377
+          },
+          {
+            "timeKey": "13:40",
+            "w": 29,
+            "c": 135
+          },
+          {
+            "timeKey": "13:45",
+            "w": -20,
+            "c": -99
+          },
+          {
+            "timeKey": "13:50",
+            "w": 112,
+            "c": 587
+          },
+          {
+            "timeKey": "13:55",
+            "w": 7,
+            "c": 41
+          },
+          {
+            "timeKey": "14:00",
+            "w": 99,
+            "c": 494
+          },
+          {
+            "timeKey": "14:05",
+            "w": 83,
+            "c": 531
+          },
+          {
+            "timeKey": "16:15",
+            "w": -2,
+            "c": -18
+          },
+          {
+            "timeKey": "17:00",
+            "w": 23,
+            "c": 116
+          },
+          {
+            "timeKey": "18:05",
+            "w": 0,
+            "c": -2
+          },
+          {
+            "timeKey": "18:10",
+            "w": 22,
+            "c": 126
+          },
+          {
+            "timeKey": "18:45",
+            "w": 51,
+            "c": 307
+          }
+        ],
+        "id": 177
       }
     ],
     "daysWithCompletedGoal": [
@@ -3738,7 +4368,8 @@
       "2025-06-23",
       "2025-06-24",
       "2025-06-25",
-      "2025-06-27"
+      "2025-06-27",
+      "2025-07-07"
     ]
   }
 }
