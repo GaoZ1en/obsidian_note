@@ -247,9 +247,13 @@ in $\displaystyle{d=3}$ there is no such thing as $\displaystyle{\mathbf{Y}^{(\m
 
 we first discuss the asymptotic behavior near $\displaystyle{\rho=0}$. when $\displaystyle{d=3,k=2}$ and $\displaystyle{j_{k}=0(\ell=1)}$, the second solution contains logarithmic term, which is not regular at $\displaystyle{\rho=0}$. we have to set $\displaystyle{\beta _{k}=0}$.
 
-near $\displaystyle{\rho=\infty}$.
+near $\displaystyle{\rho=\infty}$, we have
+
 $$\tag{3.10}
 \begin{align}
 q_{k} & =\gamma _{k}\rho ^{-\frac{1}{2}(1+2|\mu|)}+\delta _{k}\rho ^{-\frac{1}{2}(1-2|\mu|)}
 \end{align}
 $$
+
+we require that the solution gives finite energy, this implies $\displaystyle{\delta _{k}=0}$. asymptotic behaviors of solutions are not changed, and the results are the same as above.
+
