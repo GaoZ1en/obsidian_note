@@ -245,10 +245,11 @@ for comparison, the Breitenlohner-Freedman bound for scalar field is given by $\
 
 in $\displaystyle{d=3}$ there is no such thing as $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$, and $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}}$ is the only vector spherical harmonics, proportional to $\displaystyle{e^{im\phi}}$. the good news is that in generic $\displaystyle{d}$, the component $\displaystyle{\chi}$ corresponding to $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$ decouples from other components, so our discussion above just needs a little modification. the only problem is the asymptotic behavior near $\displaystyle{\rho=0}$ and $\displaystyle{\rho=\infty}$
 
-we first discuss the asymptotic behavior near $\displaystyle{\rho=0}$. when $\displaystyle{d=0}$ and 
+we first discuss the asymptotic behavior near $\displaystyle{\rho=0}$. when $\displaystyle{d=3,k=2}$ and $\displaystyle{j_{k}=0(\ell=1)}$, the second solution contains logarithmic term, which is not regular at $\displaystyle{\rho=0}$. we have to set $\displaystyle{\beta _{k}=0}$.
 
-$$\tag{.}
+near $\displaystyle{\rho=\infty}$.
+$$\tag{3.10}
 \begin{align}
-\ell-1
+q_{k} & =\gamma _{k}\rho ^{-\frac{1}{2}(1+2|\mu|)}+\delta _{k}\rho ^{-\frac{1}{2}(1-2|\mu|)}
 \end{align}
 $$
