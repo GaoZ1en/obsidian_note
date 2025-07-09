@@ -181,7 +181,7 @@ $$\tag{3.7}
 \mathcal{D}_{\ell} & =-\partial _{t}^{2}+\partial _{r}^{2}-\left(\frac{\ell(\ell+d-3)}{\rho ^{2}}+\mu ^{2}+\frac{(d-2)(d-4)}{4}\left( 1+\frac{1}{\rho ^{2}} \right)\right) \\
 r & =\arctan \rho \\
 q_{0} & =\psi _{t}\rho^{\frac{d}{2}-1} \\
-q_{1} & =\frac{(\ell-d-3)\psi _{r}f(\rho)-\ell(\ell+d-3)\phi \rho ^{-1}}{2\ell+d-3}\rho ^{\frac{d}{2}-1} \\
+q_{1} & =\frac{(\ell+d-3)\psi _{r}f(\rho)-\ell(\ell+d-3)\phi \rho ^{-1}}{2\ell+d-3}\rho ^{\frac{d}{2}-1} \\
 q_{2} & =\frac{\ell \psi _{r}f(\rho)+\ell(\ell+d-3)\phi \rho ^{-1}}{2\ell+d-3}\rho ^{\frac{d}{2}-1} \\
 q_{3} & =\chi \rho ^{\frac{d}{2}-2}
 \end{align}
@@ -192,9 +192,9 @@ and
 $$\tag{3.8}
 \begin{align}
 j_{k}=\begin{cases}
-\ell+1 & \ell \in \mathbb{N}\ \text{if } k=0 \\
-\ell-1 & \ell \in \mathbb{N}\ \text{if } k=1 \\
-\ell & \ell \in \mathbb{N}\ \text{if } k=2
+\ell+1 & \ell \in \mathbb{N}\ \text{if } k=1 \\
+\ell-1 & \ell \in \mathbb{N}\ \text{if } k=2 \\
+\ell & \ell \in \mathbb{N}\ \text{if } k=3
 \end{cases}
 \end{align}
 $$
@@ -243,5 +243,12 @@ for comparison, the Breitenlohner-Freedman bound for scalar field is given by $\
 
 ---
 
-in $\displaystyle{d=3}$ there is no such thing as $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$, and $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}}$ is the only vector spherical harmonics, proportional to $\displaystyle{e^{im\phi}}$. the good news is that in generic $\displaystyle{d}$, the component $\displaystyle{\chi}$ corresponding to $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$ decouples from other components, so our discussion above just needs a little modification. the problem is that 
+in $\displaystyle{d=3}$ there is no such thing as $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$, and $\displaystyle{\mathbf{Y}^{(\mathrm{e})}_{\ell \mathbf{m},i}}$ is the only vector spherical harmonics, proportional to $\displaystyle{e^{im\phi}}$. the good news is that in generic $\displaystyle{d}$, the component $\displaystyle{\chi}$ corresponding to $\displaystyle{\mathbf{Y}^{(\mathrm{m})}_{\ell \mathbf{m},i}}$ decouples from other components, so our discussion above just needs a little modification. the only problem is the asymptotic behavior near $\displaystyle{\rho=0}$ and $\displaystyle{\rho=\infty}$
 
+we first discuss the asymptotic behavior near $\displaystyle{\rho=0}$. when $\displaystyle{d=0}$ and 
+
+$$\tag{.}
+\begin{align}
+\ell-1
+\end{align}
+$$
