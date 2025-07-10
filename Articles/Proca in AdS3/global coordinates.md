@@ -263,34 +263,11 @@ q_{k} & =\rho ^{j_{k}+1/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n
 \end{align}
 $$
 
-where
+then
 
 $$\tag{.}
 \begin{align}
-q_{1} & =\frac{\psi _{r}f(\rho)-\ell \phi \rho ^{-1}}{2}\rho ^{\frac{1}{2}} \\
-q_{2} & =\frac{\psi _{r}f(\rho)+\ell\phi \rho ^{-1}}{2}\rho ^{\frac{1}{2}} \\
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-q_{1}+q_{2} & =\psi _{r}(1+\rho ^{2})\rho ^{1/2} \\
-\psi _{r} & =(\mathcal{N}_{1}q_{1}+\mathcal{N}_{2}q_{2})\rho ^{-1/2}(1+\rho ^{2})^{-1} \\
-\phi & =\frac{1}{\ell}\left( \mathcal{N}_{1}\rho ^{\ell}(1+\rho ^{2})^{n-\omega _{1}/2}{}_{2}F_{1}\left( -n,-n+\omega _{1};\ell;\frac{\rho ^{2}}{1+\rho ^{2}} \right)-\mathcal{N}_{2}\rho ^{\ell+2}(1+\rho ^{2})^{n-\omega_{2}/2}{}_{2}F_{1}\left( n,-n+\omega _{2};\ell+2;\frac{\rho ^{2}}{1+\rho ^{2}} \right) \right)
-\end{align}
-$$
-
-and
-
-$$\tag{.}
-\begin{align}
-\omega _{k} & =2n+j_{k}+1+\mu
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-A_{a} & =\psi _{a}(t,\rho)e^{im\theta} \\
-A_{i} & =\phi(t,\rho) \frac{1}{im}e^{im\theta}
+A_{r} & =(\mathcal{N}_{1}\rho ^{\ell-1}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu;\ell;\frac{\rho ^{2}}{1+\rho ^{2}} \right)+\mathcal{N}_{2}\rho ^{\ell+1}(1+\rho ^{2})^{-(\ell+\mu)/2-2}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\ell+2;\frac{\rho ^{2}}{1+\rho ^{2}} \right))e^{i\ell \theta}\\
+A_{\theta} & =i\left( \mathcal{N}_{1}\rho ^{\ell}(1+\rho ^{2})^{-(\ell+\mu)/2}{}_{2}F_{1}\left( -n,n+\ell+\mu;\ell;\frac{\rho ^{2}}{1+\rho ^{2}} \right)-\mathcal{N}_{2}\rho ^{\ell+2}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( n,n+\ell+\mu+2;\ell+2;\frac{\rho ^{2}}{1+\rho ^{2}} \right) \right)e^{i\ell \theta}
 \end{align}
 $$
