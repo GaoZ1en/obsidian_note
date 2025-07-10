@@ -259,6 +259,38 @@ we require that the solution gives finite energy, this implies $\displaystyle{\d
 
 $$\tag{4.2}
 \begin{align}
-q_{k} & =\mathcal{N}_{k}\rho ^{j_{k}+1/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};j_{k}+1;\frac{\rho ^{2}}{1+\rho ^{2}} \right)
+q_{k} & =\rho ^{j_{k}+1/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};j_{k}+1;\frac{\rho ^{2}}{1+\rho ^{2}} \right)
+\end{align}
+$$
+
+where
+
+$$\tag{.}
+\begin{align}
+q_{1} & =\frac{\psi _{r}f(\rho)-\ell \phi \rho ^{-1}}{2}\rho ^{\frac{1}{2}} \\
+q_{2} & =\frac{\psi _{r}f(\rho)+\ell\phi \rho ^{-1}}{2}\rho ^{\frac{1}{2}} \\
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+q_{1}+q_{2} & =\psi _{r}(1+\rho ^{2})\rho ^{1/2} \\
+\psi _{r} & =(\mathcal{N}_{1}q_{1}+\mathcal{N}_{2}q_{2})\rho ^{-1/2}(1+\rho ^{2})^{-1} \\
+\phi & =\frac{1}{\ell}\left( \mathcal{N}_{1}\rho ^{\ell}(1+\rho ^{2})^{n-\omega _{1}/2}{}_{2}F_{1}\left( -n,-n+\omega _{1};\ell;\frac{\rho ^{2}}{1+\rho ^{2}} \right)-\mathcal{N}_{2}\rho ^{\ell+2}(1+\rho ^{2})^{n-\omega_{2}/2}{}_{2}F_{1}\left( n,-n+\omega _{2};\ell+2;\frac{\rho ^{2}}{1+\rho ^{2}} \right) \right)
+\end{align}
+$$
+
+and
+
+$$\tag{.}
+\begin{align}
+\omega _{k} & =2n+j_{k}+1+\mu
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+A_{a} & =\psi _{a}(t,\rho)e^{im\theta} \\
+A_{i} & =\phi(t,\rho) \frac{1}{im}e^{im\theta}
 \end{align}
 $$
