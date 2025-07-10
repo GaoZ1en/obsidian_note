@@ -249,7 +249,7 @@ we first discuss the asymptotic behavior near $\displaystyle{\rho=0}$. when $\di
 
 near $\displaystyle{\rho=\infty}$, we have
 
-$$\tag{3.10}
+$$\tag{4.1}
 \begin{align}
 q_{k} & =\gamma _{k}\rho ^{-\frac{1}{2}(1+2|\mu|)}+\delta _{k}\rho ^{-\frac{1}{2}(1-2|\mu|)}
 \end{align}
@@ -257,3 +257,16 @@ $$
 
 we require that the solution gives finite energy, this implies $\displaystyle{\delta _{k}=0}$. asymptotic behaviors of solutions are not changed, and the results are the same as above.
 
+$$\tag{4.2}
+\begin{align}
+q_{k} & =\mathcal{N}_{k}\rho ^{j_{k}+1/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};j_{k}+1;\frac{\rho ^{2}}{1+\rho ^{2}} \right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+q_{0} & =\psi _{t}\rho^{\frac{d}{2}-1} \\
+q_{1} & =\frac{(\ell+d-3)\psi _{r}f(\rho)-\ell(\ell+d-3)\phi \rho ^{-1}}{2\ell+d-3}\rho ^{\frac{d}{2}-1} \\
+q_{2} & =\frac{\ell \psi _{r}f(\rho)+\ell(\ell+d-3)\phi \rho ^{-1}}{2\ell+d-3}\rho ^{\frac{d}{2}-1} \\
+\end{align}
+$$
