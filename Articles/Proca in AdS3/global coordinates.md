@@ -264,10 +264,3 @@ q_{k} & =\rho ^{j_{k}+1/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n
 $$
 
 then
-
-$$\tag{.}
-\begin{align}
-A_{r} & =(\mathcal{N}_{1}\rho ^{\ell-1}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu;\ell;\frac{\rho ^{2}}{1+\rho ^{2}} \right)+\mathcal{N}_{2}\rho ^{\ell+1}(1+\rho ^{2})^{-(\ell+\mu)/2-2}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\ell+2;\frac{\rho ^{2}}{1+\rho ^{2}} \right))e^{i\ell \theta}\\
-A_{\theta} & =i\left( \mathcal{N}_{1}\rho ^{\ell}(1+\rho ^{2})^{-(\ell+\mu)/2}{}_{2}F_{1}\left( -n,n+\ell+\mu;\ell;\frac{\rho ^{2}}{1+\rho ^{2}} \right)-\mathcal{N}_{2}\rho ^{\ell+2}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( n,n+\ell+\mu+2;\ell+2;\frac{\rho ^{2}}{1+\rho ^{2}} \right) \right)e^{i\ell \theta}
-\end{align}
-$$
