@@ -289,4 +289,4 @@ A_{\theta} & =im\phi(t,\rho)e^{im\theta} \\
 \end{align}
 $$
 
-这里应有$\displaystyle{\ell=|m|=|k-\bar{k}|}$，以及$\displaystyle{\rho=\tan r}$
+这里应有$\displaystyle{\ell=|m|=|k-\bar{k}|}$，以及$\displaystyle{\rho=\tan r}$。背景是AdS3中Proca方程的解。(1)是用代数方法给出的解，(2)是用解析方法给出的解。
