@@ -264,3 +264,11 @@ q_{k} & =\rho ^{j_{k}+1/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n
 $$
 
 then
+
+---
+
+$$\tag{.}
+\begin{align}
+\partial ^{2}_{r}q+\left(\omega ^{2}-(j(j+d-3)+\frac{(d-2)(d-4)}{4}\right))
+\end{align}
+$$
