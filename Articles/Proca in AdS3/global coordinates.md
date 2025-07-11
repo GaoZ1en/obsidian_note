@@ -299,6 +299,15 @@ $$
 
 $$\tag{.}
 \begin{align}
-\partial ^{2}_{z}q+\left(\omega ^{2}-\frac{j(j+d-3)+\frac{(d-2)(d-4)}{4}}{z}-\frac{ \mu ^{2}+\frac{(d-2)(d-4)}{4} }{1-z}\right)q & =0
+\left(\omega ^{2}-\left( j(j+d-3)+\frac{(d-2)(d-4)}{4} \right)z^{-1}-\left(  \mu ^{2}+\frac{(d-2)(d-4)}{4} \right)(1-z)^{-1} \right)\Theta & =0 \\
+
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\Theta'': & 4z(1-z) \\
+\Theta': & 2+8\alpha-4(1+2\alpha+2\beta) \\
+\Theta: & +8\alpha \beta +\omega ^{2}+\frac{4\alpha(\alpha-1)(1-z)+2\alpha(1-2z)-j(j+d-3)-\frac{(d-2)(d-4)}{4}}{z}+\frac{4\beta(\beta-1)z-\mu ^{2}-\frac{(d-2)(d-4)}{4}-2\beta(1-2z)}{1-z}
 \end{align}
 $$
