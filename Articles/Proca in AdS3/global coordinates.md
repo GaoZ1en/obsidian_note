@@ -269,6 +269,36 @@ then
 
 $$\tag{.}
 \begin{align}
-\partial ^{2}_{r}q+\left(\omega ^{2}-(j(j+d-3)+\frac{(d-2)(d-4)}{4}\right))
+\partial ^{2}_{r}q+\left(\omega ^{2}-\frac{j(j+d-3)+\frac{(d-2)(d-4)}{4}}{\sin ^{2}r}-\frac{ \mu ^{2}+\frac{(d-2)(d-4)}{4} }{\cos ^{2}r}\right)q=0
+\end{align}
+$$
+
+define $\displaystyle{z=\sin ^{2}r}$ and $\displaystyle{q=z^{\alpha}(1-z)^{\beta}\Theta}$, we have
+
+$$\tag{.}
+\begin{align}
+z(1-z)\Theta''+(c-(a+b+1)z)\Theta'-ab\Theta & =0 \\
+a & =\alpha+\beta+\frac{\omega}{2} \\
+b & =\alpha+\beta-\frac{\omega}{2} \\
+c & =2\alpha+\frac{1}{2} \\
+\alpha & =\frac{2j+d-2}{4} \\
+\beta & =\frac{1}{4}\left( 1+\sqrt{ 4\mu ^{2}+(d-2)(d-4)} \right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\partial _{r} & =\frac{\partial z}{\partial r}\partial _{z} \\
+ & =2\sqrt{ z(1-z) }\partial _{z} \\
+\partial _{r}^{2} & =4\sqrt{ z(1-z) }\left(\frac{\sqrt{ 1-z }}{2\sqrt{ z }}\partial _{z}-\frac{\sqrt{ z }}{2\sqrt{ 1-z }}\partial _{z}+\sqrt{ z(1-z) }\partial _{z^{2}}\right) \\
+ & =4z(1-z)\partial _{z}^{2}+2(1-2z)\partial _{z} \\
+\partial _{z}(z^{\alpha}(1-z)^{\beta}\Theta) & =\alpha z^{\alpha-1}(1-z)^{\beta}\Theta-\beta z^{\alpha}(1-z)^{\beta-1}\Theta+z^{\alpha}(1-z)^{\beta}\Theta' \\
+\partial ^{2} _{z}(z^{\alpha}(1-z)^{\beta}\Theta) & =\alpha(\alpha-1)z^{\alpha-2}(1-z)^{\beta}\Theta+\beta(\beta-1)z^{\alpha}(1-z)^{\beta-2}\Theta+2\alpha z^{\alpha-1}(1-z)^{\beta}\Theta'-2\beta z^{\alpha}(1-z)^{\beta-1}\Theta'+z^{\alpha}(1-z)^{\beta}\Theta''
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\partial ^{2}_{z}q+\left(\omega ^{2}-\frac{j(j+d-3)+\frac{(d-2)(d-4)}{4}}{z}-\frac{ \mu ^{2}+\frac{(d-2)(d-4)}{4} }{1-z}\right)q & =0
 \end{align}
 $$
