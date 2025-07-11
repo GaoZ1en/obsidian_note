@@ -4361,6 +4361,202 @@
           }
         ],
         "id": 179
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 2107,
+        "charCountStart": 10684,
+        "changes": [
+          {
+            "timeKey": "08:35",
+            "w": 12,
+            "c": 83
+          },
+          {
+            "timeKey": "08:40",
+            "w": 9,
+            "c": 52
+          },
+          {
+            "timeKey": "08:45",
+            "w": 12,
+            "c": 98
+          },
+          {
+            "timeKey": "08:50",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "09:05",
+            "w": 79,
+            "c": 364
+          },
+          {
+            "timeKey": "09:10",
+            "w": 13,
+            "c": 93
+          },
+          {
+            "timeKey": "09:15",
+            "w": -17,
+            "c": -70
+          },
+          {
+            "timeKey": "09:25",
+            "w": -16,
+            "c": -83
+          },
+          {
+            "timeKey": "10:50",
+            "w": 32,
+            "c": 196
+          },
+          {
+            "timeKey": "17:15",
+            "w": 6,
+            "c": 42
+          },
+          {
+            "timeKey": "17:25",
+            "w": 112,
+            "c": 444
+          }
+        ],
+        "id": 180
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Articles/Proca in AdS3/proca in adsn.md",
+        "wordCountStart": 988,
+        "charCountStart": 4988,
+        "changes": [],
+        "id": 181
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 182
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "2025-07-09.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:45",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 183
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 2349,
+        "charCountStart": 11903,
+        "changes": [
+          {
+            "timeKey": "19:35",
+            "w": -50,
+            "c": -204
+          },
+          {
+            "timeKey": "19:40",
+            "w": -19,
+            "c": -88
+          },
+          {
+            "timeKey": "19:50",
+            "w": 32,
+            "c": 160
+          },
+          {
+            "timeKey": "19:55",
+            "w": -32,
+            "c": -160
+          },
+          {
+            "timeKey": "20:05",
+            "w": 74,
+            "c": 332
+          },
+          {
+            "timeKey": "20:10",
+            "w": 40,
+            "c": 196
+          },
+          {
+            "timeKey": "20:15",
+            "w": 13,
+            "c": 54
+          },
+          {
+            "timeKey": "20:20",
+            "w": 20,
+            "c": 68
+          },
+          {
+            "timeKey": "20:25",
+            "w": 60,
+            "c": 237
+          },
+          {
+            "timeKey": "20:30",
+            "w": 58,
+            "c": 226
+          },
+          {
+            "timeKey": "20:35",
+            "w": 103,
+            "c": 394
+          },
+          {
+            "timeKey": "20:40",
+            "w": -208,
+            "c": -858
+          }
+        ],
+        "id": 184
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "2025-06-28.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:45",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 185
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Articles/quantization/Wald formalism of quantization for QFT in curved spacetime.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:50",
+            "w": 58,
+            "c": 305
+          },
+          {
+            "timeKey": "17:55",
+            "w": 44,
+            "c": 241
+          }
+        ],
+        "id": 186
       }
     ],
     "daysWithCompletedGoal": [
