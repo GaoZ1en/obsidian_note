@@ -267,27 +267,26 @@ then
 
 ---
 
-$$\tag{.}
+帮我分析一下这两套解是不是等价的
+
+$$\tag{1}
 \begin{align}
-\partial ^{2}_{r}q+\left(\omega ^{2}-\frac{j(j+d-3)+\frac{(d-2)(d-4)}{4}}{\sin ^{2}r}-\frac{ \mu ^{2}+\frac{(d-2)(d-4)}{4} }{\cos ^{2}r}\right)q=0
+\sqrt{ k!\bar{k}! \frac{\Gamma(\mu+2+k)\Gamma(\mu+\bar{k})}{\Gamma(\mu+2)\Gamma(\mu)} }A^{\mu}_{k,\bar{k}}(t,\rho,\theta) & =F_{k,\bar{k}}\tilde{\xi}^{\mu}_{-1}+2\bar{k}F_{k,\bar{k}-1}\tilde{\xi}^{\mu}_{0}+(\bar{k}-1)\bar{k}F_{k,\bar{k}-2}\tilde{\xi}^{\mu}_{1} \\
+F_{k,\bar{k}}(t,\rho,\theta) & =(-1)^{\bar{k}+k} \frac{\Gamma(k+\mu+2)}{\Gamma(\mu+2)} \frac{\Gamma(\bar{k}+\mu+2)}{\Gamma(\mu+2)} \\
+ & \times(\sin \rho)^{|k-\bar{k}|}(\cos \rho)^{\mu+2}{}_{2}F_{1}(-n,n+m+\mu+2;\mu+2;\cos ^{2}\rho) e^{i(k+\bar{k}+\mu+2)t+i(k-\bar{k})\theta}
 \end{align}
 $$
 
-define $\displaystyle{z=\sin ^{2}r}$ and $\displaystyle{q=z^{\alpha}(1-z)^{\beta}\Theta}$, we have
-
-$$\tag{.}
+$$\tag{2}
 \begin{align}
-z(1-z)\Theta''+(c-(a+b+1)z)\Theta'-ab\Theta & =0 \\
-a & =\alpha+\beta+\frac{\omega}{2} \\
-b & =\alpha+\beta-\frac{\omega}{2} \\
-c & =2\alpha+\frac{1}{2} \\
-\alpha & =\frac{2j+d-2}{4} \\
-\beta & =\frac{1}{4}\left( 1+\sqrt{ 4\mu ^{2}+(d-2)(d-4)} \right)
+q_{k} & =r^{j_{k}+1/2}(1+r ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};j_{k}+1;\frac{r^{2}}{1+r^{2}} \right),k=0,1,2 \\
+q_{0} & =\psi _{t}r^{\frac{1}{2}} \\
+q_{1} & =\frac{\psi _{r}(1+r ^{2})-\ell\phi r ^{-1}}{2}r ^{\frac{1}{2}} \\
+q_{2} & =\frac{\psi _{r}(1+r ^{2})+\ell\phi r ^{-1}}{2}r^{\frac{1}{2}} \\
+A_{a} & =\psi _{a}(t,\rho)e^{im\theta} \\
+A_{\theta} & =im\phi(t,\rho)e^{im\theta} \\
+\omega _{k} & =2n+j_{k}+1+|\mu| \\
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-q=z^{\alpha}(1-z)^{\beta}{}_{2}F_{1}\left( a,b;c;z \right)
-\end{align}
-$$
+这里应有$\displaystyle{\ell=|m|=|k-\bar{k}|}$，以及$\displaystyle{\rho=\tan r}$
