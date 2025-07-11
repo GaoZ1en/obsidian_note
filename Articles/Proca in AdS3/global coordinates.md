@@ -263,30 +263,10 @@ q_{k} & =\rho ^{j_{k}+1/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n
 \end{align}
 $$
 
-then
+I have no idea how to compare this result with Wen's. his result is
 
----
-
-帮我分析一下这两套解是不是等价的
-
-$$\tag{1}
+$$\tag{4.3}
 \begin{align}
-\sqrt{ k!\bar{k}! \frac{\Gamma(\mu+2+k)\Gamma(\mu+\bar{k})}{\Gamma(\mu+2)\Gamma(\mu)} }A^{\mu}_{k,\bar{k}}(t,\rho,\theta) & =F_{k,\bar{k}}\tilde{\xi}^{\mu}_{-1}+2\bar{k}F_{k,\bar{k}-1}\tilde{\xi}^{\mu}_{0}+(\bar{k}-1)\bar{k}F_{k,\bar{k}-2}\tilde{\xi}^{\mu}_{1} \\
-F_{k,\bar{k}}(t,\rho,\theta) & =(-1)^{\bar{k}+k} \frac{\Gamma(k+\mu+2)}{\Gamma(\mu+2)} \frac{\Gamma(\bar{k}+\mu+2)}{\Gamma(\mu+2)} \\
- & \times(\sin \rho)^{|k-\bar{k}|}(\cos \rho)^{\mu+2}{}_{2}F_{1}(-n,n+m+\mu+2;\mu+2;\cos ^{2}\rho) e^{i(k+\bar{k}+\mu+2)t+i(k-\bar{k})\theta}
+\sqrt{ k!\bar{k}! \frac{\Gamma(\mu+k+2)\Gamma(\mu+\bar{k})}{\Gamma(\mu+2)\Gamma(\mu)} }A^{\dagger \mu}_{k,\bar{k}} & =F(k,\bar{k})\tilde{\xi}^{\mu}_{-1}+2\bar{k}F_{k,\bar{k}-1}\tilde{\xi}^{\mu}_{0}+(\bar{k}-1)
 \end{align}
 $$
-
-$$\tag{2}
-\begin{align}
-q_{k} & =r^{j_{k}+1/2}(1+r ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};j_{k}+1;\frac{r^{2}}{1+r^{2}} \right),k=0,1,2 \\
-q_{0} & =\psi _{t}r^{\frac{1}{2}} \\
-q_{1} & =\frac{\psi _{r}(1+r ^{2})-\ell\phi r ^{-1}}{2}r ^{\frac{1}{2}} \\
-q_{2} & =\frac{\psi _{r}(1+r ^{2})+\ell\phi r ^{-1}}{2}r^{\frac{1}{2}} \\
-A_{a} & =\psi _{a}(t,\rho)e^{im\theta} \\
-A_{\theta} & =im\phi(t,\rho)e^{im\theta} \\
-\omega _{k} & =2n+j_{k}+1+|\mu| \\
-\end{align}
-$$
-
-这里应有$\displaystyle{\ell=|m|=|k-\bar{k}|}$，以及$\displaystyle{\rho=\tan r}$。背景是AdS3中Proca方程的解。(1)是用代数方法给出的解，(2)是用解析方法给出的解。
