@@ -288,26 +288,6 @@ $$
 
 $$\tag{.}
 \begin{align}
-\partial _{r} & =\frac{\partial z}{\partial r}\partial _{z} \\
- & =2\sqrt{ z(1-z) }\partial _{z} \\
-\partial _{r}^{2} & =4\sqrt{ z(1-z) }\left(\frac{\sqrt{ 1-z }}{2\sqrt{ z }}\partial _{z}-\frac{\sqrt{ z }}{2\sqrt{ 1-z }}\partial _{z}+\sqrt{ z(1-z) }\partial _{z^{2}}\right) \\
- & =4z(1-z)\partial _{z}^{2}+2(1-2z)\partial _{z} \\
-\partial _{z}(z^{\alpha}(1-z)^{\beta}\Theta) & =\alpha z^{\alpha-1}(1-z)^{\beta}\Theta-\beta z^{\alpha}(1-z)^{\beta-1}\Theta+z^{\alpha}(1-z)^{\beta}\Theta' \\
-\partial ^{2} _{z}(z^{\alpha}(1-z)^{\beta}\Theta) & =\alpha(\alpha-1)z^{\alpha-2}(1-z)^{\beta}\Theta+\beta(\beta-1)z^{\alpha}(1-z)^{\beta-2}\Theta+2\alpha z^{\alpha-1}(1-z)^{\beta}\Theta'-2\beta z^{\alpha}(1-z)^{\beta-1}\Theta'+z^{\alpha}(1-z)^{\beta}\Theta''
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\left(\omega ^{2}-\left( j(j+d-3)+\frac{(d-2)(d-4)}{4} \right)z^{-1}-\left(  \mu ^{2}+\frac{(d-2)(d-4)}{4} \right)(1-z)^{-1} \right)\Theta & =0 \\
-
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\Theta'': & 4z(1-z) \\
-\Theta': & 2+8\alpha-4(1+2\alpha+2\beta) \\
-\Theta: & +8\alpha \beta +\omega ^{2}+\frac{4\alpha(\alpha-1)(1-z)+2\alpha(1-2z)-j(j+d-3)-\frac{(d-2)(d-4)}{4}}{z}+\frac{4\beta(\beta-1)z-\mu ^{2}-\frac{(d-2)(d-4)}{4}-2\beta(1-2z)}{1-z}
+q=z^{\alpha}(1-z)^{\beta}{}_{2}F_{1}\left( a,b;c;z \right)
 \end{align}
 $$
