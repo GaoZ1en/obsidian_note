@@ -36,3 +36,26 @@ $$\tag{1.4}
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+\psi & =\frac{im}{\mu} \frac{1+\rho ^{2}}{\rho}(\phi-\partial _{\rho}\chi) \\
+\phi & =\frac{im}{\mu} \frac{1}{\rho(1+\rho ^{2})}(\psi+i \omega \chi) \\
+\chi & =\frac{\rho}{-im\mu}(i \omega \phi+\partial _{\rho}\psi)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\left( 1+\frac{m^{2}}{\mu ^{2}\rho ^{2}} \right)\psi & =-\frac{i \omega m^{2}}{\mu ^{2}\rho ^{2}}\chi-\frac{im}{\mu}\frac{1+\rho ^{2}}{\rho}\partial _{\rho}\chi \\
+ \left( 1-\frac{\omega ^{2}}{\mu ^{2}(1+\rho ^{2})} \right)\chi& =-\frac{i\omega}{\mu ^{2}(1+\rho ^{2})}\psi +\frac{i\rho}{m\mu}\partial _{\rho}\psi
+\end{align}
+$$
+
+we consider the asymptotic behavior as $\displaystyle{\rho\to0}$ and $\displaystyle{\rho\to\infty}$.
+
+$$\tag{.}
+\begin{align}
+\psi & =-\frac{i\omega m^{2}}{\mu ^{2}\rho ^{2}}-\frac{im}{\mu} \frac{1}{\rho}\partial _{\rho}\chi \\
+\left( 1-\frac{\omega ^{2}}{\mu ^{2}} \right)\chi & =-\frac{i\omega}{\mu ^{2}}\psi+\frac{i\rho}{m\mu}\partial _{\rho}\psi
+\end{align}
+$$
