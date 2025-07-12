@@ -274,3 +274,22 @@ F_{k,\bar{k}} & =(-1)^{k+\bar{k}} \frac{\Gamma(\mu+k+2)\Gamma(\mu+\bar{k}+2)}{\G
 \end{align}
 $$
 
+---
+
+we will write down how we get these results in detail. make the following ansatz
+
+$$\tag{5.1}
+\begin{align}
+A_{a} & =\psi _{a}(t,\rho)e^{im\theta} \\
+A_{i} & =im\phi(t,\rho)e^{im\theta}
+\end{align}
+$$
+
+the stress tensor $\displaystyle{F_{\mu \nu}=\nabla _{\mu}A_{\nu}-\nabla _{\nu}A_{\mu}}$ is given by
+
+$$\tag{5.2}
+\begin{align}
+F^{ab} & =(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla} ^{b}\psi ^{a})\mathrm{Y}_{\ell \mathbf{m}} \\
+F^{ai} & =\frac{1}{\rho ^{2}}(\tilde{\nabla} ^{a}\phi-\psi ^{a})\mathbf{Y}_{\ell \mathbf{m}}^{(\mathrm{e}),i} \\
+\end{align}
+$$

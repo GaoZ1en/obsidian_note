@@ -4557,6 +4557,158 @@
           }
         ],
         "id": 186
+      },
+      {
+        "date": "2025-07-11",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 2440,
+        "charCountStart": 12260,
+        "changes": [
+          {
+            "timeKey": "18:50",
+            "w": -163,
+            "c": -658
+          },
+          {
+            "timeKey": "19:25",
+            "w": 23,
+            "c": 119
+          },
+          {
+            "timeKey": "19:30",
+            "w": 77,
+            "c": 384
+          },
+          {
+            "timeKey": "19:35",
+            "w": 103,
+            "c": 448
+          },
+          {
+            "timeKey": "19:40",
+            "w": 45,
+            "c": 217
+          },
+          {
+            "timeKey": "19:45",
+            "w": 81,
+            "c": 379
+          },
+          {
+            "timeKey": "20:05",
+            "w": 40,
+            "c": 198
+          },
+          {
+            "timeKey": "20:10",
+            "w": 14,
+            "c": 39
+          },
+          {
+            "timeKey": "20:15",
+            "w": 35,
+            "c": 179
+          },
+          {
+            "timeKey": "20:20",
+            "w": -33,
+            "c": -133
+          },
+          {
+            "timeKey": "20:25",
+            "w": 9,
+            "c": 25
+          },
+          {
+            "timeKey": "20:35",
+            "w": 35,
+            "c": 207
+          },
+          {
+            "timeKey": "20:40",
+            "w": 43,
+            "c": 166
+          },
+          {
+            "timeKey": "20:45",
+            "w": -24,
+            "c": -77
+          },
+          {
+            "timeKey": "20:50",
+            "w": -1,
+            "c": -11
+          },
+          {
+            "timeKey": "20:55",
+            "w": -305,
+            "c": -1458
+          },
+          {
+            "timeKey": "21:00",
+            "w": 44,
+            "c": 171
+          },
+          {
+            "timeKey": "21:05",
+            "w": 35,
+            "c": 134
+          },
+          {
+            "timeKey": "21:10",
+            "w": -221,
+            "c": -987
+          },
+          {
+            "timeKey": "21:15",
+            "w": 10,
+            "c": 82
+          },
+          {
+            "timeKey": "21:20",
+            "w": 230,
+            "c": 890
+          },
+          {
+            "timeKey": "21:25",
+            "w": 35,
+            "c": 186
+          },
+          {
+            "timeKey": "21:30",
+            "w": 4,
+            "c": 47
+          },
+          {
+            "timeKey": "22:05",
+            "w": -147,
+            "c": -694
+          },
+          {
+            "timeKey": "22:10",
+            "w": -133,
+            "c": -516
+          },
+          {
+            "timeKey": "22:25",
+            "w": 73,
+            "c": 319
+          },
+          {
+            "timeKey": "22:30",
+            "w": 80,
+            "c": 310
+          }
+        ],
+        "id": 187
+      },
+      {
+        "date": "2025-07-11",
+        "filePath": "Articles/quantization/Wald formalism of quantization for QFT in curved spacetime.md",
+        "wordCountStart": 102,
+        "charCountStart": 546,
+        "changes": [],
+        "id": 188
       }
     ],
     "daysWithCompletedGoal": [
