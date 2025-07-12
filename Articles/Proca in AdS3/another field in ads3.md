@@ -35,3 +35,27 @@ $$\tag{1.4}
  \rho(i \omega \phi+\partial _{\rho}\psi)& =-im\mu \chi
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+q_{0} & =\psi\rho^{\frac{1}{2}} \\
+q_{1} & =\frac{\phi(1+\rho ^{2})-\ell \chi \rho ^{-1}}{2}\rho ^{\frac{1}{2}} \\
+q_{2} & =\frac{\phi(1+\rho ^{2})+\ell \chi \rho ^{-1}}{2}\rho ^{\frac{1}{2}}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+-im\phi(1+\rho ^{2})+im\partial _{\rho}\chi & =-\mu \psi \rho\\
+-\frac{im}{\rho}(\psi+i \omega \chi) & =-\mu \phi(1+\rho ^{2}) \\
+ (i \omega \phi+\partial _{\rho}\psi)& =-im\mu \chi \rho ^{-1}
+\end{align}
+$$
+
+
+$$\tag{5.3}
+\begin{align}
+F^{ab} & =(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla} ^{b}\psi ^{a})e^{im\theta} \\
+F^{a\theta} & =\frac{im}{\rho ^{2}}(\tilde{\nabla} ^{a}\phi-\psi ^{a})e^{im\theta} \\
+\end{align}
+$$
