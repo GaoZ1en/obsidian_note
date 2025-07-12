@@ -92,5 +92,12 @@ $$
 
 i have no idea how to solve this here.
 
+---
 
+inspired by 2401.13030, consider the following metric
 
+$$\tag{1.1}
+\begin{align}
+\mathrm{d}s^{2} & =-(1+\rho^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}\rho ^{2}}{1+\rho ^{2}}+\rho ^{2}\mathrm{d}\theta ^{2}
+\end{align}
+$$
