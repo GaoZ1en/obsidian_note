@@ -51,11 +51,9 @@ $$\tag{.}
 \end{align}
 $$
 
-we consider the asymptotic behavior as $\displaystyle{\rho\to0}$ and $\displaystyle{\rho\to\infty}$.
-
 $$\tag{.}
 \begin{align}
-\psi & =-\frac{i\omega m^{2}}{\mu ^{2}\rho ^{2}}-\frac{im}{\mu} \frac{1}{\rho}\partial _{\rho}\chi \\
-\left( 1-\frac{\omega ^{2}}{\mu ^{2}} \right)\chi & =-\frac{i\omega}{\mu ^{2}}\psi+\frac{i\rho}{m\mu}\partial _{\rho}\psi
+\psi & =\left( 1+\frac{m^{2}}{\mu ^{2}\rho ^{2}} \right)^{-1}\left( -\frac{i\omega m^{2}}{\mu ^{2}\rho ^{2}}\chi-\frac{im(1+\rho ^{2})}{\mu \rho}\partial _{\rho}\chi \right) \\
+\left( 1+\frac{m^{2}}{\mu ^{2}\rho ^{2}} \right)\left( 1-\frac{\omega ^{2}}{\mu ^{2}(1+\rho ^{2})} \right)\chi & =-\frac{i\omega}{\mu ^{2}(1+\rho ^{2})}\left( -\frac{i\omega m^{2}}{\mu ^{2}\rho ^{2}}\chi-\frac{im(1+\rho ^{2})}{\mu \rho}\partial _{\rho}\chi \right)+\frac{i\rho}{m\mu}\left( 1+\frac{m^{2}}{\mu ^{2}\rho ^{2}} \right)\partial _{\rho}\left( \left( 1+\frac{m^{2}}{\mu ^{2}\rho ^{2}} \right)^{-1}\left( -\frac{i\omega m^{2}}{\mu ^{2}\rho ^{2}}\chi-\frac{im(1+\rho ^{2})}{\mu \rho}\partial _{\rho}\chi \right) \right)
 \end{align}
 $$
