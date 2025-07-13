@@ -654,7 +654,7 @@
       },
       {
         "date": "2025-06-03",
-        "filePath": "Articles/Proca in AdS3/proca in adsn with n>3.md",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -668,7 +668,7 @@
       },
       {
         "date": "2025-06-04",
-        "filePath": "Articles/Proca in AdS3/proca in adsn with n>3.md",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
         "wordCountStart": 268,
         "charCountStart": 0,
         "changes": [
@@ -780,7 +780,7 @@
       },
       {
         "date": "2025-06-06",
-        "filePath": "Articles/Proca in AdS3/proca in adsn with n>3.md",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
         "wordCountStart": 1402,
         "charCountStart": 0,
         "changes": [
@@ -794,7 +794,7 @@
       },
       {
         "date": "2025-06-06",
-        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "filePath": "Articles/Proca in AdS3/another field in ads3.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -836,7 +836,7 @@
       },
       {
         "date": "2025-06-07",
-        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "filePath": "Articles/Proca in AdS3/another field in ads3.md",
         "wordCountStart": 988,
         "charCountStart": 0,
         "changes": [
@@ -920,7 +920,7 @@
       },
       {
         "date": "2025-06-08",
-        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "filePath": "Articles/Proca in AdS3/another field in ads3.md",
         "wordCountStart": 1574,
         "charCountStart": 0,
         "changes": [
@@ -1715,7 +1715,7 @@
       },
       {
         "date": "2025-06-23",
-        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "filePath": "Articles/Proca in AdS3/another field in ads3.md",
         "wordCountStart": 797,
         "charCountStart": 3743,
         "changes": [],
@@ -1757,7 +1757,7 @@
       },
       {
         "date": "2025-06-23",
-        "filePath": "Articles/Proca in AdS3/proca in adsn with n>3.md",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
         "wordCountStart": 1396,
         "charCountStart": 5999,
         "changes": [],
@@ -4709,6 +4709,293 @@
         "charCountStart": 546,
         "changes": [],
         "id": 188
+      },
+      {
+        "date": "2025-07-12",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 2429,
+        "charCountStart": 12226,
+        "changes": [
+          {
+            "timeKey": "12:25",
+            "w": 112,
+            "c": 562
+          },
+          {
+            "timeKey": "12:30",
+            "w": 285,
+            "c": 1357
+          },
+          {
+            "timeKey": "12:35",
+            "w": 204,
+            "c": 926
+          }
+        ],
+        "id": 189
+      },
+      {
+        "date": "2025-07-12",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 1396,
+        "charCountStart": 5999,
+        "changes": [
+          {
+            "timeKey": "12:35",
+            "w": 601,
+            "c": 2842
+          },
+          {
+            "timeKey": "12:40",
+            "w": -1396,
+            "c": -6001
+          },
+          {
+            "timeKey": "12:50",
+            "w": 0,
+            "c": 4
+          }
+        ],
+        "id": 190
+      },
+      {
+        "date": "2025-07-12",
+        "filePath": "Articles/Proca in AdS3/another field in ads3.md",
+        "wordCountStart": 797,
+        "charCountStart": 3743,
+        "changes": [
+          {
+            "timeKey": "13:50",
+            "w": 17,
+            "c": 118
+          },
+          {
+            "timeKey": "13:55",
+            "w": 25,
+            "c": 100
+          },
+          {
+            "timeKey": "14:00",
+            "w": 19,
+            "c": 92
+          },
+          {
+            "timeKey": "14:05",
+            "w": 21,
+            "c": 126
+          },
+          {
+            "timeKey": "14:10",
+            "w": 29,
+            "c": 168
+          },
+          {
+            "timeKey": "14:15",
+            "w": -621,
+            "c": -2439
+          },
+          {
+            "timeKey": "14:20",
+            "w": -99,
+            "c": -914
+          },
+          {
+            "timeKey": "14:25",
+            "w": 23,
+            "c": 123
+          },
+          {
+            "timeKey": "14:30",
+            "w": 384,
+            "c": 2383
+          },
+          {
+            "timeKey": "14:35",
+            "w": -83,
+            "c": -459
+          },
+          {
+            "timeKey": "14:40",
+            "w": 74,
+            "c": 373
+          },
+          {
+            "timeKey": "14:50",
+            "w": 42,
+            "c": 234
+          },
+          {
+            "timeKey": "14:55",
+            "w": -82,
+            "c": -429
+          },
+          {
+            "timeKey": "15:00",
+            "w": 285,
+            "c": 2791
+          },
+          {
+            "timeKey": "15:05",
+            "w": 112,
+            "c": 575
+          },
+          {
+            "timeKey": "15:10",
+            "w": 23,
+            "c": 114
+          },
+          {
+            "timeKey": "15:15",
+            "w": -747,
+            "c": -5556
+          },
+          {
+            "timeKey": "15:35",
+            "w": 89,
+            "c": 464
+          },
+          {
+            "timeKey": "15:40",
+            "w": 4,
+            "c": 30
+          },
+          {
+            "timeKey": "15:45",
+            "w": 29,
+            "c": 115
+          },
+          {
+            "timeKey": "15:50",
+            "w": 5,
+            "c": 39
+          },
+          {
+            "timeKey": "15:55",
+            "w": 57,
+            "c": 325
+          },
+          {
+            "timeKey": "16:40",
+            "w": 5,
+            "c": 14
+          },
+          {
+            "timeKey": "16:45",
+            "w": -67,
+            "c": -379
+          },
+          {
+            "timeKey": "16:50",
+            "w": 50,
+            "c": 231
+          },
+          {
+            "timeKey": "16:55",
+            "w": 113,
+            "c": 513
+          },
+          {
+            "timeKey": "17:05",
+            "w": 269,
+            "c": 1175
+          },
+          {
+            "timeKey": "17:10",
+            "w": 187,
+            "c": 813
+          },
+          {
+            "timeKey": "17:15",
+            "w": 65,
+            "c": 263
+          },
+          {
+            "timeKey": "17:20",
+            "w": 25,
+            "c": 98
+          },
+          {
+            "timeKey": "17:30",
+            "w": 109,
+            "c": 464
+          },
+          {
+            "timeKey": "17:35",
+            "w": 62,
+            "c": 319
+          },
+          {
+            "timeKey": "17:40",
+            "w": -1002,
+            "c": -4485
+          },
+          {
+            "timeKey": "21:35",
+            "w": 154,
+            "c": 1733
+          },
+          {
+            "timeKey": "21:45",
+            "w": -60,
+            "c": -1269
+          },
+          {
+            "timeKey": "21:55",
+            "w": 42,
+            "c": 214
+          },
+          {
+            "timeKey": "22:00",
+            "w": 23,
+            "c": 116
+          },
+          {
+            "timeKey": "22:05",
+            "w": 3,
+            "c": 15
+          },
+          {
+            "timeKey": "22:10",
+            "w": -55,
+            "c": -223
+          },
+          {
+            "timeKey": "22:15",
+            "w": 15,
+            "c": 71
+          }
+        ],
+        "id": 191
+      },
+      {
+        "date": "2025-07-12",
+        "filePath": "Articles/Proca in AdS3/higher spinor field?.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 192
+      },
+      {
+        "date": "2025-07-12",
+        "filePath": "Articles/quantization/Wald formalism of quantization for QFT in curved spacetime.md",
+        "wordCountStart": 102,
+        "charCountStart": 546,
+        "changes": [],
+        "id": 193
+      },
+      {
+        "date": "2025-07-12",
+        "filePath": "TODO.md",
+        "wordCountStart": 88,
+        "charCountStart": 1046,
+        "changes": [
+          {
+            "timeKey": "15:35",
+            "w": -14,
+            "c": -130
+          }
+        ],
+        "id": 194
       }
     ],
     "daysWithCompletedGoal": [
