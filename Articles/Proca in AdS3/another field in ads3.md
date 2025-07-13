@@ -36,22 +36,7 @@ $$\tag{1.4}
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-q_{0} & =\psi\rho^{\frac{1}{2}} \\
-q_{1} & =\frac{\phi(1+\rho ^{2})-\ell \chi \rho ^{-1}}{2}\rho ^{\frac{1}{2}} \\
-q_{2} & =\frac{\phi(1+\rho ^{2})+\ell \chi \rho ^{-1}}{2}\rho ^{\frac{1}{2}}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
--im\phi(1+\rho ^{2})+im\partial _{\rho}\chi & =-\mu \psi \rho\\
--\frac{im}{\rho}(\psi+i \omega \chi) & =-\mu \phi(1+\rho ^{2}) \\
- (i \omega \phi+\partial _{\rho}\psi)& =-im\mu \chi \rho ^{-1}
-\end{align}
-$$
-
+---
 
 $$\tag{5.3}
 \begin{align}
@@ -59,3 +44,19 @@ F^{ab} & =(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla} ^{b}\psi ^{a})e^{im\theta}
 F^{a\theta} & =\frac{im}{\rho ^{2}}(\tilde{\nabla} ^{a}\phi-\psi ^{a})e^{im\theta} \\
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+\frac{1}{2}\varepsilon _{\mu \nu \rho}F^{\nu \rho} & =-\mu A_{\mu}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\frac{1}{2}\varepsilon _{ab} \frac{im}{\rho}(\tilde{\nabla}^{b}\phi-\psi ^{b}) & =-\mu \psi _{a} \\
+\frac{1}{2}\varepsilon _{ab}\rho (\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a}) & =-im\mu \phi 
+\end{align}
+$$
+
+where $\displaystyle{\varepsilon _{ab}=-\varepsilon _{ba},\varepsilon _{t\rho}=1}$.
+
