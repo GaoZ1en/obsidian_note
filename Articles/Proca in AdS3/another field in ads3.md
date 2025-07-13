@@ -60,3 +60,9 @@ $$
 
 where $\displaystyle{\varepsilon _{ab}=-\varepsilon _{ba},\varepsilon _{t\rho}=1}$.
 
+
+$$\tag{.}
+\begin{align}
+\sum ^{\infty}_{k=0} \frac{(a+b+1)_{k}}{(b+1)_{k}}t^{k}P^{(a,b)}_{k}(x) & =(1+t)^{-a-b-1}{}_{2}F_{1}\left( \frac{a+b+1}{2},\frac{a+b+2}{2};b+1;2t(x+1)(1+t)^{-2} \right)
+\end{align}
+$$
