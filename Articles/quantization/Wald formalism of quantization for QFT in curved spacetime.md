@@ -39,11 +39,75 @@ suppose $\displaystyle{\frac{\partial}{\partial \tau}}$ generates a symmetry of 
 
 $$\tag{1.5}
 \begin{align}
-X_{\tau} & =\int \mathrm{d}\tau \dot{q} \frac{\delta}{\delta q}
+X_{\tau} & =\int \mathrm{d}\tau \delta _{\tau}q \frac{\delta}{\delta q} \\
+ & =\int \mathrm{d}\tau \frac{\partial q}{\partial \tau} \frac{\delta}{\delta q}
 \end{align}
 $$
 
 and satisfies
 
-the corresponding Noether charge is
+$$\tag{1.6}
+\begin{align}
+X_{\tau}\cdot S & =\alpha _{\tau}|_{t_{f}-t_{i}}
+\end{align}
+$$
 
+then the Noether charge (we call it a Hamiltonian if $\displaystyle{\frac{\partial}{\partial \tau}}$ is the time translation generator) corresponding to $\displaystyle{\frac{\partial}{\partial \tau}}$ is given by
+
+$$\tag{1.7}
+\begin{align}
+H_{\tau} & =X_{\tau}\cdot \theta-\alpha _{\tau}
+\end{align}
+$$
+
+for an operator $\displaystyle{\mathcal{O}[q]}$, the corresponding Hamiltonian flow under the coordinates $\displaystyle{(q_{0},p_{0})}$ is given by
+
+$$\tag{1.8}
+\begin{align}
+X_{\mathcal{O}} & =\int \mathrm{d}\tau\left(\frac{\delta \mathcal{O}}{\delta p_{0}} \frac{\delta}{\delta q_{0}}-\frac{\delta \mathcal{O}}{\delta q_{0}} \frac{\delta}{\delta p_{0}}\right)
+\end{align}
+$$
+
+then the Poisson bracket between $\displaystyle{\mathcal{O}_{1}}$ and $\displaystyle{\mathcal{O}_{2}}$ is defined as
+
+$$\tag{1.9}
+\begin{align}
+\left\{\mathcal{O}_{1},\mathcal{O}_{2}\right\} & =X_{\mathcal{O}_{1}}\cdot X_{\mathcal{O}_{2}}\cdot \omega
+\end{align}
+$$
+
+in particular, we have
+
+$$\tag{1.10}
+\begin{align}
+\left\{q_{0},p_{0}\right\} & =1
+\end{align}
+$$
+
+now we will turn to quantum side. the quantum commutator is obtained by simply adding an $\displaystyle{i}$ to the Poisson bracket
+
+$$\tag{1.11}
+\begin{align}
+[\mathcal{O}_{1},\mathcal{O}_{2}] & =i\left\{\mathcal{O}_{1},\mathcal{O}_{2}\right\} \\
+ & =iX_{\mathcal{O}_{1}}\cdot X_{\mathcal{O}_{2}}\cdot \omega
+\end{align}
+$$
+
+define
+
+$$\tag{1.12}
+\begin{align}
+W_{\mathcal{O}} & =\exp\left(iX_{\mathcal{O}}\right)
+\end{align}
+$$
+
+then (1.11) can be rewritten by BCH formula as
+
+$$\tag{1.13}
+\begin{align}
+W_{\mathcal{O}_{1}}W_{\mathcal{O}_{2}} & =\exp\left(iX_{\mathcal{O}_{1}}\right)\exp\left(iX_{\mathcal{O}_{2}}\right) \\
+ & = \exp\left( iX_{\mathcal{O}_{1}} + iX_{\mathcal{O}_{2}} - \frac{i}{2}\left\{\mathcal{O}_{1},\mathcal{O}_{2}\right\} + \frac{i^4}{12}\left([\mathcal{O}_{1},[\mathcal{O}_{1},\mathcal{O}_{2}]] + [\mathcal{O}_{2},[\mathcal{O}_{2},\mathcal{O}_{1}]]\right) + \ldots  \right)
+\end{align}
+$$
+
+then we will consider $\displaystyle{\mathfrak{P}}$, the $\displaystyle{\mathbb{C}}$-module of covariant phase space $\displaystyle{\mathcal{P}}$.
