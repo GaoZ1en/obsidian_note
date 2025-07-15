@@ -116,7 +116,7 @@ in two dimensions, quasi-primary fields contain also fields with spin. given a f
 
 $$\tag{4.1.12}
 \begin{align}
-h=\frac{1}{2}(\Delta+s),\hbar=\frac{1}{2}(\Delta-s)
+h=\frac{1}{2}(\Delta+s),\bar{h}=\frac{1}{2}(\Delta-s)
 \end{align}
 $$
 
