@@ -27,11 +27,11 @@ $$\tag{1.3}
 \end{align}
 $$
 
-suppose $\displaystyle{q(t)=q[p_{0},q_{0}]}$ solves the eom and the symplectic form can be written as
+suppose $\displaystyle{q(t)=q[a,a^{\dagger}]}$ solves the complexified eom and the symplectic form can be written as
 
 $$\tag{1.4}
 \begin{align}
-\omega & =\delta p_{0}\wedge \delta q_{0}
+\omega & =i\delta a^{\dagger}\wedge \delta a
 \end{align}
 $$
 
@@ -39,8 +39,7 @@ suppose $\displaystyle{\frac{\partial}{\partial \tau}}$ generates a symmetry of 
 
 $$\tag{1.5}
 \begin{align}
-X_{\tau} & =\int \mathrm{d}\tau \delta _{\tau}q \frac{\delta}{\delta q} \\
- & =\int \mathrm{d}\tau \frac{\partial q}{\partial \tau} \frac{\delta}{\delta q}
+X_{\tau} & =\int \mathrm{d}\tau \delta _{\tau}q \frac{\delta}{\delta q}
 \end{align}
 $$
 
@@ -60,11 +59,11 @@ H_{\tau} & =X_{\tau}\cdot \theta-\alpha _{\tau}
 \end{align}
 $$
 
-for an operator $\displaystyle{\mathcal{O}[q]}$, the corresponding Hamiltonian flow under the coordinates $\displaystyle{(q_{0},p_{0})}$ is given by
+for an operator $\displaystyle{\mathcal{O}[q]}$, the corresponding Hamiltonian flow under the coordinates $\displaystyle{(a,a^{\dagger})}$ is given by
 
 $$\tag{1.8}
 \begin{align}
-X_{\mathcal{O}} & =\int \mathrm{d}\tau\left(\frac{\delta \mathcal{O}}{\delta p_{0}} \frac{\delta}{\delta q_{0}}-\frac{\delta \mathcal{O}}{\delta q_{0}} \frac{\delta}{\delta p_{0}}\right)
+X_{\mathcal{O}} & =-i\int \mathrm{d}\tau\left(\frac{\delta \mathcal{O}}{\delta a^{\dagger}} \frac{\delta}{\delta a}-\frac{\delta \mathcal{O}}{\delta a} \frac{\delta}{\delta a^{\dagger}}\right)
 \end{align}
 $$
 
@@ -80,7 +79,7 @@ in particular, we have
 
 $$\tag{1.10}
 \begin{align}
-\left\{q_{0},p_{0}\right\} & =1
+\left\{a,a^{\dagger}\right\} & =-i
 \end{align}
 $$
 
@@ -110,4 +109,10 @@ W_{\mathcal{O}_{1}}W_{\mathcal{O}_{2}} & =\exp\left(iX_{\mathcal{O}_{1}}\right)\
 \end{align}
 $$
 
-then we will consider $\displaystyle{\mathfrak{P}}$, the $\displaystyle{\mathbb{C}}$-module of covariant phase space $\displaystyle{\mathcal{P}}$.
+then we will consider $\displaystyle{\mathfrak{P}}$, the $\displaystyle{\mathbb{C}}$-module of the Hamiltonian flow space of covariant phase space $\displaystyle{\mathcal{P}}$. then the Poisson bracket naturally gives a inner product $\displaystyle{(\cdot,\cdot):\mathfrak{P}\times \mathfrak{P}\to \mathbb{C}}$
+
+$$\tag{1.14}
+\begin{align}
+(\mathfrak{X}_{1},\mathfrak{X}_{2}) & =i\left\{\bar{\mathfrak{X}}_{1},\mathfrak{X}_{2}\right\}
+\end{align}
+$$
