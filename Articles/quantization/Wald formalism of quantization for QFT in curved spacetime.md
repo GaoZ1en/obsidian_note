@@ -117,5 +117,13 @@ $$\tag{Klein-Gordon inner product}
 \end{align}
 $$
 
-$\displaystyle{\left(\cdot,\cdot\right)}$ satisfies all the properties of an inner product on $\displaystyle{\mathcal{P}^{\mathbb{C}}}$, except that it fails to be positive definite. let $\displaystyle{\mathcal{H}}$ be the subspace only the positive frequency modes $\displaystyle{\phi _{1}}$ are included, it is easy to verify that $\displaystyle{\left(\cdot,\cdot\right)}$ is positive definite on $\displaystyle{\mathcal{H}}$, thus $\displaystyle{\mathcal{H}}$ is a Hilbert space.
+$\displaystyle{\left(\cdot,\cdot\right)}$ satisfies all the properties of an inner product on $\displaystyle{\mathcal{P}^{\mathbb{C}}}$, except that it fails to be positive definite. let $\displaystyle{\mathcal{H}}$ be the subspace only the positive frequency modes are included, it is easy to verify that $\displaystyle{\left(\cdot,\cdot\right)}$ is positive definite on $\displaystyle{\mathcal{H}}$, thus $\displaystyle{\mathcal{H}}$ is a Hilbert space.
+
+let $\displaystyle{\mathcal{\bar{H}}}$ denote the complex conjugate space of $\displaystyle{\mathcal{H}}$, i.e., the subspace of $\displaystyle{\mathcal{P}^{\mathbb{C}}}$ that only the negative frequency modes are included. it follows that every $\displaystyle{\phi \in \mathcal{P}^{\mathbb{C}}}$ can be expressed as $\displaystyle{\phi=\phi ^{+}+\phi ^{-}}$, with $\displaystyle{\phi ^{+}\in \mathcal{H}}$ and $\displaystyle{\phi ^{-}\in \mathcal{H}^{-}}$. this fact allows us to project any $\displaystyle{\phi \in \mathcal{P}^{\mathbb{C}}}$ onto $\displaystyle{\mathcal{H}}$. the projection operator $\displaystyle{K}$ is defined by extracting the positive frequency modes from $\displaystyle{\phi}$. $\displaystyle{K}$ is actually a bijective. 
+
+$$\tag{1.14}
+\begin{align}
+X_{\phi} & =-i\int \mathrm{d}\tau\left(\frac{\delta \phi}{\delta a^{\dagger}} \frac{\delta}{\delta a}-\frac{\delta \phi}{\delta a} \frac{\delta}{\delta a^{\dagger}}\right)
+\end{align}
+$$
 
