@@ -90,10 +90,28 @@ so the dimension of the irrep is $\displaystyle{N+1}$.
 
 # free scalar field
 
-consider the following Lagrangian
+consider the following Lagrangian in 1+1 dimension, with $\displaystyle{x}$ being compactified on a circle of radius $\displaystyle{1}$
 
 $$\tag{2.10}
 \begin{align}
 L & =-\eta ^{\mu \nu}\frac{1}{2}\partial _{\mu}\phi ^{i}\partial _{\nu}\phi _{i}-V(\phi)
 \end{align}
 $$
+
+here $\displaystyle{\phi ^{i}}$ $\displaystyle{i=1,\dots,N}$ are bosons. make the following mode expansion
+
+$$\tag{2.11}
+\begin{align}
+\phi ^{j}(x) & =a^{j}_{0}+\sum _{n\in \mathbb{Z}-\left\{0\right\}} \frac{1}{n}a^{j}_{n}e^{2\pi inx}
+\end{align}
+$$
+
+then we have the following commutation relations
+
+$$\tag{2.12}
+\begin{align}
+[a^{i}_{n},a^{j}_{m}] & =n\delta ^{ij}\delta _{n+m,0}
+\end{align}
+$$
+
+the Heisenberg algebra is exactly the case $\displaystyle{N=1}$
