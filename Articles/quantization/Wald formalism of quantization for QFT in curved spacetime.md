@@ -109,10 +109,13 @@ W_{\mathcal{O}_{1}}W_{\mathcal{O}_{2}} & =\exp\left(iX_{\mathcal{O}_{1}}\right)\
 \end{align}
 $$
 
-then we will consider $\displaystyle{\mathfrak{P}}$, the $\displaystyle{\mathbb{C}}$-module of the Hamiltonian flow space of covariant phase space $\displaystyle{\mathcal{P}}$. then the Poisson bracket naturally gives a inner product $\displaystyle{(\cdot,\cdot):\mathfrak{P}\times \mathfrak{P}\to \mathbb{C}}$
+then we will consider $\displaystyle{\mathcal{P}^{\mathbb{C}}}$, the complexified covariant phase space $\displaystyle{\mathcal{P}}$. then the Poisson bracket naturally gives a map $\displaystyle{(\cdot,\cdot):\mathcal{P}^{\mathbb{C}}\times \mathcal{P}^{\mathbb{C}}\to \mathbb{C}}$ defined by
 
-$$\tag{1.14}
+$$\tag{Klein-Gordon inner product}
 \begin{align}
-(\mathfrak{X}_{1},\mathfrak{X}_{2}) & =i\left\{\bar{\mathfrak{X}}_{1},\mathfrak{X}_{2}\right\}
+\left(\phi_{1},\phi_{2}\right) & =i\{\bar{\phi}_{1},\phi _{2}\}
 \end{align}
 $$
+
+$\displaystyle{\left(\cdot,\cdot\right)}$ satisfies all the properties of an inner product on $\displaystyle{\mathcal{P}^{\mathbb{C}}}$, except that it fails to be positive definite. let $\displaystyle{\mathcal{H}}$ be the subspace only the positive frequency modes $\displaystyle{\phi _{1}}$ are included, it is easy to verify that $\displaystyle{\left(\cdot,\cdot\right)}$ is positive definite on $\displaystyle{\mathcal{H}}$, thus $\displaystyle{\mathcal{H}}$ is a Hilbert space.
+
