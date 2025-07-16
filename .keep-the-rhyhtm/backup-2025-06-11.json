@@ -4996,6 +4996,564 @@
           }
         ],
         "id": 194
+      },
+      {
+        "date": "2025-07-13",
+        "filePath": "Articles/Proca in AdS3/another field in ads3.md",
+        "wordCountStart": 341,
+        "charCountStart": 1799,
+        "changes": [
+          {
+            "timeKey": "14:55",
+            "w": 59,
+            "c": 208
+          }
+        ],
+        "id": 195
+      },
+      {
+        "date": "2025-07-13",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 601,
+        "charCountStart": 2844,
+        "changes": [
+          {
+            "timeKey": "15:05",
+            "w": 311,
+            "c": 1748
+          },
+          {
+            "timeKey": "19:20",
+            "w": -311,
+            "c": -1753
+          }
+        ],
+        "id": 196
+      },
+      {
+        "date": "2025-07-14",
+        "filePath": "Articles/Proca in AdS3/another field in ads3.md",
+        "wordCountStart": 400,
+        "charCountStart": 2007,
+        "changes": [
+          {
+            "timeKey": "19:20",
+            "w": -59,
+            "c": -209
+          }
+        ],
+        "id": 197
+      },
+      {
+        "date": "2025-07-14",
+        "filePath": "Articles/quantization/Wald formalism of quantization for QFT in curved spacetime.md",
+        "wordCountStart": 102,
+        "charCountStart": 546,
+        "changes": [
+          {
+            "timeKey": "11:50",
+            "w": 39,
+            "c": 252
+          },
+          {
+            "timeKey": "11:55",
+            "w": 30,
+            "c": 207
+          },
+          {
+            "timeKey": "12:00",
+            "w": 66,
+            "c": 429
+          },
+          {
+            "timeKey": "12:05",
+            "w": 74,
+            "c": 509
+          },
+          {
+            "timeKey": "21:20",
+            "w": 55,
+            "c": 329
+          },
+          {
+            "timeKey": "21:25",
+            "w": 54,
+            "c": 372
+          },
+          {
+            "timeKey": "21:30",
+            "w": 133,
+            "c": 827
+          },
+          {
+            "timeKey": "21:35",
+            "w": 75,
+            "c": 413
+          },
+          {
+            "timeKey": "21:40",
+            "w": 79,
+            "c": 460
+          },
+          {
+            "timeKey": "21:45",
+            "w": 331,
+            "c": 2261
+          },
+          {
+            "timeKey": "21:50",
+            "w": -242,
+            "c": -1827
+          },
+          {
+            "timeKey": "21:55",
+            "w": 13,
+            "c": 120
+          },
+          {
+            "timeKey": "22:00",
+            "w": 38,
+            "c": 237
+          },
+          {
+            "timeKey": "22:05",
+            "w": -6,
+            "c": 7
+          },
+          {
+            "timeKey": "22:10",
+            "w": -1,
+            "c": 3
+          }
+        ],
+        "id": 198
+      },
+      {
+        "date": "2025-07-14",
+        "filePath": "Articles/quantization/article/after ai/main.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 199
+      },
+      {
+        "date": "2025-07-14",
+        "filePath": "Articles/quantization/article/main.md",
+        "wordCountStart": 9310,
+        "charCountStart": 48546,
+        "changes": [],
+        "id": 200
+      },
+      {
+        "date": "2025-07-14",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 601,
+        "charCountStart": 2839,
+        "changes": [],
+        "id": 201
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/Higher symmetry/未命名.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "12:55",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 202
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/wait-to-be-complete/Heat kernel method.md",
+        "wordCountStart": 65,
+        "charCountStart": 1448,
+        "changes": [],
+        "id": 203
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/wait-to-be-complete/Maurer-Cartan form.md",
+        "wordCountStart": 356,
+        "charCountStart": 2392,
+        "changes": [],
+        "id": 204
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/wait-to-be-complete/Worldline formalism.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 205
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Reading/adscft/AdSCFT correspondence and symmetry breaking.md",
+        "wordCountStart": 2328,
+        "charCountStart": 12978,
+        "changes": [],
+        "id": 206
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Reading/adscft/anti de Sitter space and holography.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 207
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/BV formalism/Classical Chern-Simons theory/Chern-Simons theory on a closed 3-manifold.md",
+        "wordCountStart": 804,
+        "charCountStart": 4842,
+        "changes": [],
+        "id": 208
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/CFT by Francesco/Conformal invariance in two dimensions/The conformal group in two dimensions.md",
+        "wordCountStart": 787,
+        "charCountStart": 4963,
+        "changes": [
+          {
+            "timeKey": "16:20",
+            "w": 1,
+            "c": 2
+          }
+        ],
+        "id": 209
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/CFT by Francesco/Quantum field theory/Correlation functions.md",
+        "wordCountStart": 1564,
+        "charCountStart": 8890,
+        "changes": [],
+        "id": 210
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/CFT by Francesco/Quantum field theory/Path integrals.md",
+        "wordCountStart": 1150,
+        "charCountStart": 6587,
+        "changes": [],
+        "id": 211
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/CFT by Francesco/Quantum field theory/Quantum fields.md",
+        "wordCountStart": 6,
+        "charCountStart": 40,
+        "changes": [
+          {
+            "timeKey": "16:20",
+            "w": -6,
+            "c": -40
+          }
+        ],
+        "id": 212
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/CFT by Francesco/Quantum field theory/Symmetries and conservation laws.md",
+        "wordCountStart": 731,
+        "charCountStart": 4357,
+        "changes": [],
+        "id": 213
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/CFT by Francesco/Quantum field theory/The energy momentum tensor.md",
+        "wordCountStart": 551,
+        "charCountStart": 3249,
+        "changes": [],
+        "id": 214
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/CFT by Francesco/Global conformal invariance/Exercises.md",
+        "wordCountStart": 1017,
+        "charCountStart": 5451,
+        "changes": [],
+        "id": 215
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/condensed matter field theory/README.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "16:20",
+            "w": 16,
+            "c": 92
+          }
+        ],
+        "id": 216
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Physics/CFT by Francesco/Statistical mechanics/Exercises.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 217
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Mathematics/Lie theory/README.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:55",
+            "w": 17,
+            "c": 109
+          }
+        ],
+        "id": 218
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Mathematics/Lie theory/basic examples.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:55",
+            "w": 31,
+            "c": 170
+          },
+          {
+            "timeKey": "20:00",
+            "w": 91,
+            "c": 449
+          },
+          {
+            "timeKey": "20:05",
+            "w": 33,
+            "c": 232
+          },
+          {
+            "timeKey": "20:10",
+            "w": 4,
+            "c": 53
+          },
+          {
+            "timeKey": "20:15",
+            "w": 128,
+            "c": 905
+          },
+          {
+            "timeKey": "20:20",
+            "w": 14,
+            "c": 72
+          },
+          {
+            "timeKey": "20:25",
+            "w": 54,
+            "c": 307
+          },
+          {
+            "timeKey": "20:30",
+            "w": 13,
+            "c": 70
+          },
+          {
+            "timeKey": "20:35",
+            "w": 93,
+            "c": 495
+          }
+        ],
+        "id": 219
+      },
+      {
+        "date": "2025-07-15",
+        "filePath": "Note/Mathematics/Lie theory/Lie algebra su(3).md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "21:20",
+            "w": 17,
+            "c": 131
+          }
+        ],
+        "id": 220
+      },
+      {
+        "date": "2025-07-16",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 601,
+        "charCountStart": 2839,
+        "changes": [
+          {
+            "timeKey": "08:50",
+            "w": 3,
+            "c": 21
+          },
+          {
+            "timeKey": "08:55",
+            "w": 21,
+            "c": 133
+          },
+          {
+            "timeKey": "09:10",
+            "w": 99,
+            "c": 398
+          },
+          {
+            "timeKey": "09:15",
+            "w": 236,
+            "c": 919
+          },
+          {
+            "timeKey": "09:20",
+            "w": 16,
+            "c": 79
+          },
+          {
+            "timeKey": "11:15",
+            "w": 1,
+            "c": 10
+          },
+          {
+            "timeKey": "11:20",
+            "w": -13,
+            "c": -62
+          },
+          {
+            "timeKey": "11:45",
+            "w": 60,
+            "c": 286
+          },
+          {
+            "timeKey": "11:50",
+            "w": -54,
+            "c": -225
+          },
+          {
+            "timeKey": "12:05",
+            "w": 88,
+            "c": 449
+          },
+          {
+            "timeKey": "12:10",
+            "w": 15,
+            "c": 96
+          },
+          {
+            "timeKey": "12:15",
+            "w": -28,
+            "c": -177
+          },
+          {
+            "timeKey": "12:20",
+            "w": 32,
+            "c": 146
+          },
+          {
+            "timeKey": "12:25",
+            "w": 20,
+            "c": 173
+          },
+          {
+            "timeKey": "12:30",
+            "w": 47,
+            "c": 219
+          },
+          {
+            "timeKey": "12:35",
+            "w": 19,
+            "c": 64
+          },
+          {
+            "timeKey": "12:40",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "13:15",
+            "w": 0,
+            "c": -1
+          },
+          {
+            "timeKey": "13:25",
+            "w": 4,
+            "c": 17
+          },
+          {
+            "timeKey": "13:30",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "15:50",
+            "w": 8,
+            "c": 50
+          },
+          {
+            "timeKey": "15:55",
+            "w": 80,
+            "c": 346
+          },
+          {
+            "timeKey": "16:10",
+            "w": -168,
+            "c": -859
+          },
+          {
+            "timeKey": "20:10",
+            "w": 5,
+            "c": 18
+          }
+        ],
+        "id": 221
+      },
+      {
+        "date": "2025-07-16",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 3030,
+        "charCountStart": 15071,
+        "changes": [],
+        "id": 222
+      },
+      {
+        "date": "2025-07-16",
+        "filePath": "Note/Mathematics/Lie theory/Lie algebra su(3).md",
+        "wordCountStart": 17,
+        "charCountStart": 131,
+        "changes": [],
+        "id": 223
+      },
+      {
+        "date": "2025-07-16",
+        "filePath": "Articles/quantization/Wald formalism of quantization for QFT in curved spacetime.md",
+        "wordCountStart": 840,
+        "charCountStart": 5145,
+        "changes": [
+          {
+            "timeKey": "17:00",
+            "w": 0,
+            "c": 3
+          },
+          {
+            "timeKey": "18:55",
+            "w": 205,
+            "c": 2096
+          },
+          {
+            "timeKey": "19:00",
+            "w": -196,
+            "c": -2031
+          }
+        ],
+        "id": 224
       }
     ],
     "daysWithCompletedGoal": [
@@ -5018,7 +5576,10 @@
       "2025-06-24",
       "2025-06-25",
       "2025-06-27",
-      "2025-07-07"
+      "2025-07-07",
+      "2025-07-14",
+      "2025-07-15",
+      "2025-07-16"
     ]
   }
 }
