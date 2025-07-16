@@ -153,3 +153,10 @@ B_{1}F(\gamma-1)+B_{2}F+B_{3}F(\beta+1)=0
 $$
 to express my result in terms of Wen's result...
 
+$$\tag{.}
+\begin{align}
+S & =-\frac{1}{2}\int _{\Sigma _{f}}^{\Sigma _{i}} \mathrm{d}^{d}x\sqrt{ -g }(\nabla _{\mu}\phi \nabla ^{\mu}\phi+m^{2}\phi) \\
+\delta S & =\int _{\Sigma _{f}}^{\Sigma _{i}}\mathrm{d}^{d}x\sqrt{ -g }(\nabla ^{2}-m^{2})\delta \phi+\theta|^{\Sigma _{f}}_{\Sigma _{i}} \\
+\theta & =\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ h } n^{\mu}\nabla _{\mu}\phi \delta \phi
+\end{align}
+$$
