@@ -90,7 +90,16 @@ the solution of the above equation is
 
 $$\tag{1.10}
 \begin{align}
-q_{k} & =
+q_{k} & =\rho ^{j_{k}+1/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};j_{k}+1;\frac{\rho ^{2}}{1+\rho ^{2}} \right)
+\end{align}
+$$
+
+and
+
+$$\tag{1.11}
+\begin{align}
+A_{\rho} & =\left( \mathcal{N}_{1}\rho ^{\ell-1}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu;\ell;\frac{\rho ^{2}}{1+\rho ^{2}} \right)+\mathcal{N}_{2}\rho ^{\ell+1}(1+\rho ^{2})^{-(\ell+\mu)/2-2}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\ell+2; \frac{\rho ^{2}}{1+\rho ^{2}} \right) \right)e^{im\theta} \\
+A_{\theta} & =i\left( \mathcal{N}_{1}\rho ^{\ell}(1+\rho ^{2})^{-(\ell+\mu)/2}{}_{2}F_{1}\left( -n,n+\ell+\mu;\ell; \frac{\rho ^{2}}{1+\rho ^{2}} \right)-\mathcal{N}_{2}\rho ^{\ell+2}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\ell+2; \frac{\rho ^{2}}{1+\rho ^{2}} \right) \right)e^{im\theta}
 \end{align}
 $$
 
@@ -98,8 +107,17 @@ $$
 
 Wen's result is
 
+$$\tag{2.1}
+\begin{align}
+\sqrt{ k!\bar{k}! \frac{\Gamma(\mu+2+k)\Gamma(\mu+\bar{k})}{\Gamma(\mu+2)\Gamma(\mu)} }A^{\dagger \mu}_{k,\bar{k}}(t,r,\theta) & =F_{k,\bar{k}}\tilde{\xi}^{\mu}_{-1}+2\bar{k}F_{k,\bar{k}-1}\tilde{\xi}^{\mu}_{0}+\bar{k}(\bar{k}-1)F_{k,\bar{k}-2}\tilde{\xi} ^{\mu}_{1} \\
+F_{k,\bar{k}} & =(-1)^{k+\bar{k}} \frac{\Gamma(\mu+2+k)}{\Gamma(\mu+2)} \frac{\Gamma(\mu+2+\bar{k})}{\Gamma(\mu+2)} (\sin r)^{|k-\bar{k}|}(\cos r)^{\mu+2} \\
+ &\times{}_{2}F_{1}(-n,n+m+\mu+2;\mu+2;\cos ^{2}r)e^{i(k+\bar{k}+\mu+2)t} e^{i(k-\bar{k})\theta}
+\end{align}
+$$
+
+
 $$\tag{.}
 \begin{align}
-
+{}_{2}F_{1}(a,b;c;z)
 \end{align}
 $$
