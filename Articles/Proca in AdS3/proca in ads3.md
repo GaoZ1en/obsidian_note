@@ -98,8 +98,8 @@ and
 
 $$\tag{1.11}
 \begin{align}
-A_{\rho} & =\left( \mathcal{N}_{1}\rho ^{\ell-1}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu;\mu+1;\frac{1}{1+\rho ^{2}} \right)+\mathcal{N}_{2}\rho ^{\ell+1}(1+\rho ^{2})^{-(\ell+\mu)/2-2}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\mu+1; \frac{1}{1+\rho ^{2}} \right) \right)e^{-i\omega _{k}t}e^{im\theta} \\
-A_{\theta} & =i\left( \mathcal{N}_{1}\rho ^{\ell}(1+\rho ^{2})^{-(\ell+\mu)/2}{}_{2}F_{1}\left( -n,n+\ell+\mu;\mu+1; \frac{1}{1+\rho ^{2}} \right)-\mathcal{N}_{2}\rho ^{\ell+2}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\mu+1; \frac{1}{1+\rho ^{2}} \right) \right)e^{-i\omega _{k}t}e^{im\theta}
+A_{\rho} & =\left( \mathcal{N}_{1}\rho ^{\ell-1}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu;\mu+1;\frac{1}{1+\rho ^{2}} \right)e^{-i\omega _{k}t}+\mathcal{N}_{2}\rho ^{\ell+1}(1+\rho ^{2})^{-(\ell+\mu)/2-2}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\mu+1; \frac{1}{1+\rho ^{2}} \right) e^{-i\omega _{k}t}\right)e^{im\theta} \\
+A_{\theta} & =i\left( \mathcal{N}_{1}\rho ^{\ell}(1+\rho ^{2})^{-(\ell+\mu)/2}{}_{2}F_{1}\left( -n,n+\ell+\mu;\mu+1; \frac{1}{1+\rho ^{2}} \right)e^{-i\omega _{k}t}-\mathcal{N}_{2}\rho ^{\ell+2}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\mu+1; \frac{1}{1+\rho ^{2}} \right) e^{-i\omega _{2}t}\right)e^{im\theta}
 \end{align}
 $$
 
@@ -120,11 +120,19 @@ $$\tag{2.1}
 \begin{align}
 \sqrt{ k!\bar{k}! \frac{\Gamma(\mu+2+k)\Gamma(\mu+\bar{k})}{\Gamma(\mu+2)\Gamma(\mu)} }A^{\dagger \mu}_{k,\bar{k}}(t,r,\theta) & =F_{k,\bar{k}}\tilde{\xi}^{\mu}_{-1}+2\bar{k}F_{k,\bar{k}-1}\tilde{\xi}^{\mu}_{0}+\bar{k}(\bar{k}-1)F_{k,\bar{k}-2}\tilde{\xi} ^{\mu}_{1} \\
 F_{k,\bar{k}} & =(-1)^{k+\bar{k}} \frac{\Gamma(\mu+2+k)}{\Gamma(\mu+2)} \frac{\Gamma(\mu+2+\bar{k})}{\Gamma(\mu+2)} (\sin r)^{|k-\bar{k}|}(\cos r)^{\mu+2} \\
- &\times{}_{2}F_{1}(-n,n+k-\bar{k}+\mu+2;\mu+2;\cos ^{2}r)e^{i(k+\bar{k}+\mu+2)t} e^{i(k-\bar{k})\theta}
+ &\times{}_{2}F_{1}(-n,n+\ell+\mu+2;\mu+2;\cos ^{2}r)e^{i(k+\bar{k}+\mu+2)t} e^{i(k-\bar{k})\theta}
 \end{align}
 $$
 
-we can see that in Wen's result, there are three hypergeometric functions $\displaystyle{F(\beta,\gamma),F(\beta+1,\gamma),F(\beta+2,\gamma)}$ (here we only care the second and the third parameters) and in my result, there are only two hypergeometric functions $\displaystyle{F(\beta-2,\gamma-1),F(\beta,\gamma-1)}$. 
+with
+
+$$\tag{2.2}
+\begin{align}
+\omega _{k,\bar{k}} & =k+\bar{k}+\mu+2
+\end{align}
+$$
+
+we can see that in Wen's result, there are three hypergeometric functions $\displaystyle{F(\beta,\gamma),F(\beta-1,\gamma),F(\beta-2,\gamma)}$ (here we only care the second and the third parameters) and in my result, there are only two hypergeometric functions $\displaystyle{F(\beta-2,\gamma-1),F(\beta,\gamma-1)}$. 
 
 Gauss prove that every three hypergeometric functions $\displaystyle{F(\alpha+l,\beta+m;\gamma+n;z)}$s satisfy the following linear relation
 
@@ -135,10 +143,12 @@ A_{1}F_{1}+A_{2}F_{2}+A_{3}F_{3} & =0
 \end{align}
 $$
 
-in particular, we have
-$$\tag{.}
-\begin{align}
-\gamma F(\gamma-1)-\beta F(\beta+1)-(\gamma-\beta-1)F=0 \\
+here $\displaystyle{A_{1},A_{2},A_{3}}$ are rational function of $\displaystyle{z}$. so it is possible to use
 
+$$\tag{2.3}
+\begin{align}
+A_{1}F(\gamma-1)+A_{2}F+A_{3}F(\beta-1)=0 \\
+B_{1}F(\gamma-1)+B_{2}F+B_{3}F(\beta+1)=0
 \end{align}
 $$
+to express my result in terms of Wen's result...
