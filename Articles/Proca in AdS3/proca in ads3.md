@@ -105,7 +105,6 @@ $$
 
 with
 
-
 $$\tag{1.11}
 \begin{align}
 \omega _{k} & =2n+j_{k}+\mu+1
@@ -120,15 +119,16 @@ $$\tag{2.1}
 \begin{align}
 \sqrt{ k!\bar{k}! \frac{\Gamma(\mu+2+k)\Gamma(\mu+\bar{k})}{\Gamma(\mu+2)\Gamma(\mu)} }A^{\dagger \mu}_{k,\bar{k}}(t,r,\theta) & =F_{k,\bar{k}}\tilde{\xi}^{\mu}_{-1}+2\bar{k}F_{k,\bar{k}-1}\tilde{\xi}^{\mu}_{0}+\bar{k}(\bar{k}-1)F_{k,\bar{k}-2}\tilde{\xi} ^{\mu}_{1} \\
 F_{k,\bar{k}} & =(-1)^{k+\bar{k}} \frac{\Gamma(\mu+2+k)}{\Gamma(\mu+2)} \frac{\Gamma(\mu+2+\bar{k})}{\Gamma(\mu+2)} (\sin r)^{|k-\bar{k}|}(\cos r)^{\mu+2} \\
- &\times{}_{2}F_{1}(-n,n+\ell+\mu+2;\mu+2;\cos ^{2}r)e^{i(k+\bar{k}+\mu+2)t} e^{i(k-\bar{k})\theta}
+ &\times{}_{2}F_{1}(-n,n+m+\mu+2;\mu+2;\cos ^{2}r)e^{i(k+\bar{k}+\mu+2)t} e^{i(k-\bar{k})\theta}
 \end{align}
 $$
 
 with
 
-$$\tag{2.2}
+$$\tag{2.3}
 \begin{align}
-\omega _{k,\bar{k}} & =k+\bar{k}+\mu+2
+\omega _{k,\bar{k}} & =k+\bar{k}+\mu+1 \\
+m & =|k-\bar{k}|
 \end{align}
 $$
 
@@ -137,7 +137,7 @@ we can see that in Wen's result, there are three hypergeometric functions $\disp
 Gauss prove that every three hypergeometric functions $\displaystyle{F(\alpha+l,\beta+m;\gamma+n;z)}$s satisfy the following linear relation
 
 $$
-\tag{2.2}
+\tag{2.4}
 \begin{align}
 A_{1}F_{1}+A_{2}F_{2}+A_{3}F_{3} & =0
 \end{align}
@@ -145,7 +145,7 @@ $$
 
 here $\displaystyle{A_{1},A_{2},A_{3}}$ are rational function of $\displaystyle{z}$. so it is possible to use
 
-$$\tag{2.3}
+$$\tag{2.5}
 \begin{align}
 A_{1}F(\gamma-1)+A_{2}F+A_{3}F(\beta-1)=0 \\
 B_{1}F(\gamma-1)+B_{2}F+B_{3}F(\beta+1)=0
