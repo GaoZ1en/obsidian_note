@@ -132,8 +132,6 @@ m & =|k-\bar{k}|
 \end{align}
 $$
 
-we can see that in Wen's result, there are three hypergeometric functions $\displaystyle{F(\beta,\gamma),F(\beta-1,\gamma),F(\beta-2,\gamma)}$ (here we only care the second and the third parameters) and in my result, there are only two hypergeometric functions $\displaystyle{F(\beta-2,\gamma-1),F(\beta,\gamma-1)}$. 
-
 Gauss prove that every three hypergeometric functions $\displaystyle{F(\alpha+l,\beta+m;\gamma+n;z)}$s satisfy the following linear relation
 
 $$
@@ -143,20 +141,4 @@ A_{1}F_{1}+A_{2}F_{2}+A_{3}F_{3} & =0
 \end{align}
 $$
 
-here $\displaystyle{A_{1},A_{2},A_{3}}$ are rational function of $\displaystyle{z}$. so it is possible to use
-
-$$\tag{2.5}
-\begin{align}
-A_{1}F(\gamma-1)+A_{2}F+A_{3}F(\beta-1)=0 \\
-B_{1}F(\gamma-1)+B_{2}F+B_{3}F(\beta+1)=0
-\end{align}
-$$
-to express my result in terms of Wen's result...
-
-$$\tag{.}
-\begin{align}
-S & =-\frac{1}{2}\int _{\Sigma _{f}}^{\Sigma _{i}} \mathrm{d}^{d}x\sqrt{ -g }(\nabla _{\mu}\phi \nabla ^{\mu}\phi+m^{2}\phi) \\
-\delta S & =\int _{\Sigma _{f}}^{\Sigma _{i}}\mathrm{d}^{d}x\sqrt{ -g }(\nabla ^{2}-m^{2})\delta \phi+\theta|^{\Sigma _{f}}_{\Sigma _{i}} \\
-\theta & =\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ h } n^{\mu}\nabla _{\mu}\phi \delta \phi
-\end{align}
-$$
+I think it is possible to use this relation to prove the equivalence of Wen's result and the result in (1.10), but I don't know how to do it yet.
