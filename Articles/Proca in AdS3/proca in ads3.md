@@ -98,8 +98,17 @@ and
 
 $$\tag{1.11}
 \begin{align}
-A_{\rho} & =\left( \mathcal{N}_{1}\rho ^{\ell-1}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu;\mu+1;\frac{1}{1+\rho ^{2}} \right)+\mathcal{N}_{2}\rho ^{\ell+1}(1+\rho ^{2})^{-(\ell+\mu)/2-2}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\mu+1; \frac{1}{1+\rho ^{2}} \right) \right)e^{im\theta} \\
-A_{\theta} & =i\left( \mathcal{N}_{1}\rho ^{\ell}(1+\rho ^{2})^{-(\ell+\mu)/2}{}_{2}F_{1}\left( -n,n+\ell+\mu;\mu+1; \frac{1}{1+\rho ^{2}} \right)-\mathcal{N}_{2}\rho ^{\ell+2}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\mu+1; \frac{1}{1+\rho ^{2}} \right) \right)e^{im\theta}
+A_{\rho} & =\left( \mathcal{N}_{1}\rho ^{\ell-1}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu;\mu+1;\frac{1}{1+\rho ^{2}} \right)+\mathcal{N}_{2}\rho ^{\ell+1}(1+\rho ^{2})^{-(\ell+\mu)/2-2}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\mu+1; \frac{1}{1+\rho ^{2}} \right) \right)e^{-i\omega _{k}t}e^{im\theta} \\
+A_{\theta} & =i\left( \mathcal{N}_{1}\rho ^{\ell}(1+\rho ^{2})^{-(\ell+\mu)/2}{}_{2}F_{1}\left( -n,n+\ell+\mu;\mu+1; \frac{1}{1+\rho ^{2}} \right)-\mathcal{N}_{2}\rho ^{\ell+2}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\mu+1; \frac{1}{1+\rho ^{2}} \right) \right)e^{-i\omega _{k}t}e^{im\theta}
+\end{align}
+$$
+
+with
+
+
+$$\tag{1.11}
+\begin{align}
+\omega _{k} & =2n+j_{k}+\mu+1
 \end{align}
 $$
 
@@ -115,11 +124,21 @@ F_{k,\bar{k}} & =(-1)^{k+\bar{k}} \frac{\Gamma(\mu+2+k)}{\Gamma(\mu+2)} \frac{\G
 \end{align}
 $$
 
-here we first consider the hypergeometric function
+we can see that in Wen's result, there are three hypergeometric functions $\displaystyle{F(\beta,\gamma),F(\beta+1,\gamma),F(\beta+2,\gamma)}$ (here we only care the second and the third parameters) and in my result, there are only two hypergeometric functions $\displaystyle{F(\beta-2,\gamma-1),F(\beta,\gamma-1)}$. 
+
+Gauss prove that every three hypergeometric functions $\displaystyle{F(\alpha+l,\beta+m;\gamma+n;z)}$s satisfy the following linear relation
 
 $$
-\tag{.}
+\tag{2.2}
 \begin{align}
+A_{1}F_{1}+A_{2}F_{2}+A_{3}F_{3} & =0
+\end{align}
+$$
+
+in particular, we have
+$$\tag{.}
+\begin{align}
+\gamma F(\gamma-1)-\beta F(\beta+1)-(\gamma-\beta-1)F=0 \\
 
 \end{align}
 $$
