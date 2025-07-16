@@ -98,8 +98,8 @@ and
 
 $$\tag{1.11}
 \begin{align}
-A_{\rho} & =\left( \mathcal{N}_{1}\rho ^{\ell-1}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu;\ell;\frac{\rho ^{2}}{1+\rho ^{2}} \right)+\mathcal{N}_{2}\rho ^{\ell+1}(1+\rho ^{2})^{-(\ell+\mu)/2-2}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\ell+2; \frac{\rho ^{2}}{1+\rho ^{2}} \right) \right)e^{im\theta} \\
-A_{\theta} & =i\left( \mathcal{N}_{1}\rho ^{\ell}(1+\rho ^{2})^{-(\ell+\mu)/2}{}_{2}F_{1}\left( -n,n+\ell+\mu;\ell; \frac{\rho ^{2}}{1+\rho ^{2}} \right)-\mathcal{N}_{2}\rho ^{\ell+2}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\ell+2; \frac{\rho ^{2}}{1+\rho ^{2}} \right) \right)e^{im\theta}
+A_{\rho} & =\left( \mathcal{N}_{1}\rho ^{\ell-1}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu;\mu+1;\frac{1}{1+\rho ^{2}} \right)+\mathcal{N}_{2}\rho ^{\ell+1}(1+\rho ^{2})^{-(\ell+\mu)/2-2}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\mu+1; \frac{1}{1+\rho ^{2}} \right) \right)e^{im\theta} \\
+A_{\theta} & =i\left( \mathcal{N}_{1}\rho ^{\ell}(1+\rho ^{2})^{-(\ell+\mu)/2}{}_{2}F_{1}\left( -n,n+\ell+\mu;\mu+1; \frac{1}{1+\rho ^{2}} \right)-\mathcal{N}_{2}\rho ^{\ell+2}(1+\rho ^{2})^{-(\ell+\mu)/2-1}{}_{2}F_{1}\left( -n,n+\ell+\mu+2;\mu+1; \frac{1}{1+\rho ^{2}} \right) \right)e^{im\theta}
 \end{align}
 $$
 
@@ -115,3 +115,11 @@ F_{k,\bar{k}} & =(-1)^{k+\bar{k}} \frac{\Gamma(\mu+2+k)}{\Gamma(\mu+2)} \frac{\G
 \end{align}
 $$
 
+here we first consider the hypergeometric function
+
+$$
+\tag{.}
+\begin{align}
+
+\end{align}
+$$
