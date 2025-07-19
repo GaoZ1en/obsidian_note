@@ -25,4 +25,31 @@ here we present the definition of the relevant algebraic structures
 a Lie algebra $\displaystyle{\mathfrak{g}}$ is an algebra with the bilinear operation $\displaystyle{[\cdot,\cdot]:\mathfrak{g\times g\to g}}$ that satisfies
 
 1. reflection: $\displaystyle{\forall g\in \mathfrak{g},[g,g]=0}$
-2. Jabobi identity
+2. Jabobi identity: $\displaystyle{\forall x,y,z\in \mathfrak{g}, [x,[y,z]]+[y,[z,x]]+[z,[x,y]]=0}$
+
+the dimension $\displaystyle{d=\dim\mathfrak{g}}$ is the number of elements in a basis $\displaystyle{T^{a}}$s (also called generators) of $\displaystyle{\mathfrak{g}}$. the Lie algebra is abstractly defined through the structure constants $\displaystyle{f^{ab}_{~~~~c}}$ which is defined as
+
+$$\tag{2.1}
+\begin{align}
+[T^{a},T^{b}] & =f^{ab}_{~~~~c}T^{c}
+\end{align}
+$$
+
+the Jacobi identity can be expressed in terms of the structure constants as
+
+$$\tag{2.2}
+\begin{align}
+f^{ab}_{~~~~c}f^{cd}_{~~~~e}+f^{da}_{~~~~c}f^{cb}_{~~~~e}+f^{dc}_{~~~~a}f^{ab}_{~~~~e} & =0
+\end{align}
+$$
+
+# homomorphisms, isomorphisms and derivations
+
+a homomorphism from the Lie algebra $\displaystyle{\mathfrak{g}}$ to the Lie algebra $\displaystyle{\mathfrak{h}}$ is a map $\displaystyle{\varphi:\mathfrak{g\to h}}$ that preserves the Lie bracket, i.e.,
+
+$$\tag{2.3}
+\begin{align}
+\varphi([x,y]) & =[\varphi(x),\varphi(y)], \forall x,y\in \mathfrak{g}
+\end{align}
+$$
+
