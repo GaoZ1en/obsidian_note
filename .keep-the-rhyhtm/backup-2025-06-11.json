@@ -5580,9 +5580,53 @@
             "timeKey": "19:50",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "19:55",
+            "w": 33,
+            "c": 169
+          },
+          {
+            "timeKey": "20:00",
+            "w": 8,
+            "c": 27
           }
         ],
         "id": 232
+      },
+      {
+        "date": "2025-07-19",
+        "filePath": "Note/Mathematics/Lie theory/formalization.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "20:00",
+            "w": 54,
+            "c": 356
+          },
+          {
+            "timeKey": "20:05",
+            "w": 87,
+            "c": 498
+          },
+          {
+            "timeKey": "20:10",
+            "w": 87,
+            "c": 561
+          },
+          {
+            "timeKey": "20:15",
+            "w": 42,
+            "c": 281
+          },
+          {
+            "timeKey": "20:20",
+            "w": 47,
+            "c": 323
+          }
+        ],
+        "id": 233
       }
     ],
     "daysWithCompletedGoal": [
