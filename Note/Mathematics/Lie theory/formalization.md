@@ -82,3 +82,61 @@ $$
 due to the Jacobi identity, the adjoint map is a derivation.
 
 # subalgebras and ideals
+
+a subspace $\displaystyle{\mathfrak{h}\subseteq \mathfrak{g}}$ of a Lie algebra $\displaystyle{\mathfrak{g}}$ which itself is a Lie algebra is called a Lie subalgebra. for any two subsets $\displaystyle{\mathfrak{h,l}}$ of the Lie algebra $\displaystyle{\mathfrak{g}}$, we may introduce the notation
+
+$$\tag{2.6}
+\begin{align}
+[\mathfrak{h},\mathfrak{l}] & =\mathrm{span}_{F}\left\{[x,y]|x \in \mathfrak{h},y\in \mathfrak{l}\right\}
+\end{align}
+$$
+
+then the property of a subspace $\displaystyle{\mathfrak{h\subseteq g}}$ to be a Lie subalgebra can be expressed as
+
+$$\tag{2.7}
+\begin{align}
+[\mathfrak{h},\mathfrak{h}]\subseteq \mathfrak{h}
+\end{align}
+$$
+
+an ideal $\displaystyle{\mathfrak{h}\subseteq \mathfrak{g}}$ is a subspace of the Lie algebra $\displaystyle{\mathfrak{g}}$ that satisfies
+
+$$\tag{2.8}
+\begin{align}
+[\mathfrak{h},\mathfrak{g}] & \subseteq \mathfrak{h}
+\end{align}
+$$
+
+if $\displaystyle{\mathfrak{h}}$ and $\displaystyle{\mathfrak{l}}$ are ideals of $\displaystyle{\mathfrak{g}}$, then so are $\displaystyle{[\mathfrak{h},\mathfrak{l}],\mathfrak{h}\cap \mathfrak{l}}$ and
+
+$$\tag{2.9}
+\begin{align}
+\mathfrak{h+l}:\left\{x \in \mathfrak{g}|x=y+z,y\in \mathfrak{h},z\in \mathfrak{l}\right\}
+\end{align}
+$$
+
+the center $\displaystyle{\mathcal{Z}(\mathfrak{g})}$ of $\displaystyle{\mathfrak{g}}$ is defined as
+
+$$\tag{2.10}
+\begin{align}
+\mathcal{Z}(\mathfrak{g}) & =\left\{x \in \mathfrak{g}|[x,\mathfrak{g}]=0\right\}
+\end{align}
+$$
+
+a class of subalgebras of $\displaystyle{\mathfrak{g}}$ are the centralizers $\displaystyle{\mathcal{C}_{\mathfrak{g}}(\mathfrak{l})}$ of subsets $\displaystyle{\mathfrak{l}}$ of $\displaystyle{\mathfrak{g}}$, which is defined as
+
+$$\tag{2.11}
+\begin{align}
+\mathcal{C}_{\mathfrak{g}}(\mathfrak{l}) & =\left\{x \in \mathfrak{g}|[x,\mathfrak{l}]=0\right\}
+\end{align}
+$$
+
+note that $\displaystyle{\mathcal{Z}(\mathfrak{g})=\mathcal{C}_{\mathfrak{g}}(\mathfrak{g})}$. similarly, the normalizer $\displaystyle{\mathcal{N}_{\mathfrak{g}}(\mathfrak{h})}$ of a subalgebra $\displaystyle{\mathfrak{h}}$ is defined as
+
+$$\tag{2.12}
+\begin{align}
+\mathcal{N}_{\mathfrak{g}}(\mathfrak{h}) & =\left\{x \in \mathfrak{g}|[x,\mathfrak{h}]\subseteq \mathfrak{h}\right\}
+\end{align}
+$$
+
+the normalis
