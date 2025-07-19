@@ -53,3 +53,32 @@ $$\tag{2.3}
 \end{align}
 $$
 
+we summarize the different types of homomorphisms in the following table
+
+| type         | definition                    | symbol                                        |
+| ------------ | ----------------------------- | --------------------------------------------- |
+| monomorphism | injective                     | $\displaystyle{\hookrightarrow}$              |
+| epimorphism  | surjective                    | $\displaystyle{\twoheadrightarrow}$           |
+| isomorphism  | bijective                     | $\displaystyle{\overset{\cong}{\rightarrow}}$ |
+| endomorphism | to the same space             |                                               |
+| automorphism | isomorphism to the same space |                                               |
+
+a derivation is a linear map $\displaystyle{d:\mathfrak{g}\to \mathfrak{g}}$ that satisfies the Leibniz rule
+
+$$\tag{2.4}
+\begin{align}
+\delta([x,y]) & =[x,\delta(y)]+[\delta(x),y] \quad\forall x,y\in \mathfrak{g}
+\end{align}
+$$
+
+for any $\displaystyle{x \in \mathfrak{g}}$, the adjoint map $\displaystyle{\mathrm{ad}_{x}}$ is defined as
+
+$$\tag{2.5}
+\begin{align}
+\mathrm{ad}_{x}:y & \mapsto [x,y] \quad\forall y\in \mathfrak{g}
+\end{align}
+$$
+
+due to the Jacobi identity, the adjoint map is a derivation.
+
+# subalgebras and ideals
