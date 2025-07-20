@@ -13,3 +13,13 @@ $$
 then $\displaystyle{\mathfrak{g}_{\circ}=\mathrm{span}_{F}\left\{H^{i}|i=1,2,\dots,r\right\}}$ is called a Cartan subalgebra of $\displaystyle{\mathfrak{g}}$. a Cartan subalgebra satisfies the following properties
 
 1. a Cartan subalgebra of $\displaystyle{\mathfrak{g}}$ is a maximal abelian subalgebra consisting entirely of semisimple elemenets
+2. a semisimple Lie algebra can possess many different Cartan subalgebras, related by automorphisms of $\displaystyle{\mathfrak{g}}$.
+3. all Cartan subalgebras possess the same dimension $\displaystyle{r}$, which is called the rank of $\displaystyle{\mathfrak{g}}$.
+	1. in particular, two Lie algebras can only be isomorphic if they have the same rank
+4. $\displaystyle{r=\mathrm{rank}\mathfrak{g}}$ is the minimal dimension of all subalgebras $\displaystyle{\mathfrak{g}_{h}:=\left\{x \in \mathfrak{g}|[x,h]=0\right\}}$ of $\displaystyle{\mathfrak{g}}$, where $\displaystyle{h}$ is any semisimple element of $\displaystyle{\mathfrak{g}}$.
+	1. if $\displaystyle{\dim\mathfrak{g}_{h}=r}$, then $\displaystyle{h}$ is called a regular element of $\displaystyle{\mathfrak{g}}$, and $\displaystyle{\mathfrak{g}_{h}}$ is a Cartan subalgebra of $\displaystyle{\mathfrak{g}}$ that contains $\displaystyle{h}$.
+
+in physics terms, the rank $\displaystyle{r}$ of a semisimple Lie algebra $\displaystyle{\mathfrak{g}}$ is the maximal number of quantum numbers which can be used to label the states of a physical system that has $\displaystyle{\mathfrak{g}}$ as its symmetry algebra.
+
+# Roots
+
