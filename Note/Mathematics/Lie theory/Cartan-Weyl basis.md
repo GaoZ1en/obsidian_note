@@ -23,3 +23,22 @@ in physics terms, the rank $\displaystyle{r}$ of a semisimple Lie algebra $\disp
 
 # Roots
 
+since (3.1) holds for generators $\displaystyle{H^{i}}$ of a Cartan subalgebra $\displaystyle{\mathfrak{g}_{\circ}}$, the adjoint map $\displaystyle{\mathrm{ad}_{h}}$ for all Cartan subalgebra elements $\displaystyle{h}$ are simultaneously diagonalizable. as a consequence, $\displaystyle{\mathfrak{g}}$ is spanned by such elements $\displaystyle{y}$ which are simultaneous eigenvectors of all the maps $\displaystyle{\mathrm{ad}_{h},h\in \mathfrak{g}_{\circ}}$, i.e., satisfy
+
+$$\tag{3.2}
+\begin{align}
+[h,y] & =\mathrm{ad}_{h}y \\
+ & =\alpha _{y}(h)y
+\end{align}
+$$
+
+$\displaystyle{\alpha _{y}(h)}$ is a linear function $\displaystyle{\mathfrak{g}_{\mathrm{\circ}}\to \mathbb{C}}$. such a function $\displaystyle{\alpha}$ is called a root of the Lie algebra $\displaystyle{\mathfrak{g}}$ (since the eigenvalues of $\displaystyle{\mathrm{ad}_{h}}$ are the roots of the characterisitc equation for $\displaystyle{h}$). as $\displaystyle{\mathfrak{g}}$ is spanned by elements satisfying (3.2), it can be written as a direct sum of vector spaces $\displaystyle{\mathfrak{g}_{\alpha}}$ according to
+
+$$\tag{3.3}
+\begin{align}
+\mathfrak{g} & =\mathfrak{g}_{\circ}\oplus\bigoplus_{\alpha}\mathfrak{g}_{\alpha} \\
+\mathfrak{g}_{\alpha} & =\left\{x \in \mathfrak{g}|[h,x]=\alpha(h)x, \forall h\in \mathfrak{g}_{\circ}\right\}
+\end{align}
+$$
+
+this splitting (3.3) is called the root space decomposition of $\displaystyle{\mathfrak{g}}$ relative to the Cartan subalgebra $\displaystyle{\mathfrak{g}_{\circ}}$. 
