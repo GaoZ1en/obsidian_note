@@ -192,4 +192,8 @@ the Lie algebra $\displaystyle{\mathfrak{g}}$ is called nilpotent if there exist
 
 an abelian Lie algebra satisfies $\displaystyle{[\mathfrak{g},\mathfrak{g}]=0}$. a simple Lie algebra is a Lie algebra without any proper ideal and not abelian. a semisimple Lie algebra is a direct sum of simple Lie algebras.
 
-an abelian Lie algebra satisfies $\displaystyle{\mathcal{Z}(\mathfrak{g})=\mathfrak{g}}$. the derived series of an abelian Lie algebra is trivial. a semisimple Lie algebra are equal to their derived algebras, $\displaystyle{\mathfrak{g}^{(n)}=\mathfrak{g}}$, and their center vanishes $\displaystyle{\mathcal{Z}(\mathfrak{g})=0}$. 
+an abelian Lie algebra satisfies $\displaystyle{\mathcal{Z}(\mathfrak{g})=\mathfrak{g}}$. the derived series of an abelian Lie algebra is trivial. a semisimple Lie algebra are equal to their derived algebras, $\displaystyle{\mathfrak{g}^{(n)}=\mathfrak{g}}$, and their center vanishes $\displaystyle{\mathcal{Z}(\mathfrak{g})=0}$. further, a Lie algebra is semisimple iff it does not possess a nontrivial solvable ideal. 
+
+there is a unique one dimensional Lie algebra up to isomorphism (antisymmetry), which is denoted as $\displaystyle{\mathfrak{u}(1)}$. moreover, any $\displaystyle{d}$-dimensional abelian Lie algebra $\displaystyle{\mathfrak{g}}$ is isomorphic to $\displaystyle{\mathfrak{u}(1)^{\oplus d}}$. as a consequence, the non-trivial part of the classification of reductive Lie algebras is the classification of simple Lie algebras.
+
+# gradations and Lie superalgebras
