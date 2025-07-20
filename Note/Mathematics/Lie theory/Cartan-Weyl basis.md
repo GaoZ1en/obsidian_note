@@ -71,3 +71,19 @@ $$\tag{3.6}
 \end{align}
 $$
 
+the Killing form is bilinear, symmetric, preserved by any automorphism of $\displaystyle{\mathfrak{g}}$ and
+
+$$\tag{3.7}
+\begin{align}
+\kappa([x,y],z) & =\kappa(x,[y,z])
+\end{align}
+$$
+
+given a basis $\displaystyle{T^{a}|a=1,\dots,d}$ of $\displaystyle{\mathfrak{g}}$, the Killing form is represented by the matrix
+
+$$\tag{3.8}
+\begin{align}
+\kappa ^{ab} & =\frac{1}{I_{\mathrm{ad}}}\kappa(T^{a},T^{b})
+\end{align}
+$$
+
