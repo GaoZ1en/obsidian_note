@@ -49,4 +49,25 @@ $$\tag{3.4}
 \end{align}
 $$
 
-where for each $\displaystyle{\alpha}$ the eigenvalue $\displaystyle{\alpha ^{i}=\alpha(H^{i})}$ is non-vanishing for at least one value of $\displaystyle{i}$. the $\displaystyle{r}$-dimensional vector $\displaystyle{(\alpha ^{i})_{i=1,\dots,r}}$ of eigenvalues of $\displaystyle{E^{\alpha}}$ with respect to $\displaystyle{\mathrm{ad}_{H^{i}}}$ is called a root (vector) of $\displaystyle{\mathfrak{g}}$. 
+where for each $\displaystyle{\alpha}$ the eigenvalue $\displaystyle{\alpha ^{i}=\alpha(H^{i})}$ is non-vanishing for at least one value of $\displaystyle{i}$. the $\displaystyle{r}$-dimensional vector $\displaystyle{(\alpha ^{i})_{i=1,\dots,r}}$ of eigenvalues of $\displaystyle{E^{\alpha}}$ with respect to $\displaystyle{\mathrm{ad}_{H^{i}}}$ is called a root (vector) of $\displaystyle{\mathfrak{g}}$. the set of all roots of $\displaystyle{\mathfrak{g}}$ will be denoted by $\displaystyle{\Phi}$ and be called the root system of $\displaystyle{\mathfrak{g}}$. 
+
+the basis $\displaystyle{\mathcal{B}}$ of $\displaystyle{\mathfrak{g}}$ can be summarized as
+
+$$\tag{3.5}
+\begin{align}
+\mathcal{B} & =\left\{H^{i}|i=1,\dots,r\right\}\cup\left\{E^{\alpha}|\alpha \in \Phi\right\}
+\end{align}
+$$
+
+a basis of this form, with $\displaystyle{H^{i}}$ and $\displaystyle{E^{\alpha}}$ obeying (3.1) and (3.4) is called a Cartan-Weyl basis of $\displaystyle{\mathfrak{g}}$. the $\displaystyle{\mathfrak{sl}(2)}$ algebra discussed before provides a simple example of a Cartan-Weyl basis, with $\displaystyle{H=L_{0},E^{+}=L_{+},E^{-}=L_{-}}$, and $\displaystyle{\alpha ^{1,2}=2}$.
+
+# Killing form
+
+for further analysis of root systems, it will be necessary to define an inner product on the space $\displaystyle{\mathfrak{g}^{\star}_{\circ}}$ of roots, which is called the Cartan-Killing form, defined as
+
+$$\tag{3.6}
+\begin{align}
+\kappa(x,y) & =\mathrm{Tr}(\mathrm{ad}_{x}\circ\mathrm{ad}_{y})
+\end{align}
+$$
+
