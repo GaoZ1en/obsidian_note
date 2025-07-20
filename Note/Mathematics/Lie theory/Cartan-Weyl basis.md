@@ -170,3 +170,24 @@ $$\tag{3.15}
 \end{align}
 $$
 
+...
+
+# positive roots
+
+finite dimensional Lie algebras have only finitely many roots, and hence it is possible to find a hyperplane in root space which does not contain any root. this hyperplane divides the root space into two half-spaces, and one can choose one of the half-spaces to be the positive roots $\displaystyle{\Phi_{+}}$, with the other half-space being the negative roots $\displaystyle{\Phi_{-}=-\Phi_{+}}$. 
+
+$$\tag{3.16}
+\begin{align}
+\Phi _{+} & =\left\{\alpha \in \Phi|\alpha>0\right\},  & \Phi _{-}=\Phi-\Phi _{+}
+\end{align}
+$$
+
+we can write
+
+$$\tag{3.17}
+\begin{align}
+\left\{E^{\alpha}|\alpha \in \Phi\right\} & =\left\{E^{\alpha}|\alpha>0\right\}\cup\left\{E^{-\alpha}|\alpha>0\right\}
+\end{align}
+$$
+
+the step operator $\displaystyle{E^{\alpha}}$ associated to a positive root $\displaystyle{\alpha>0}$ is also called a raising operator, while the step operator $\displaystyle{E^{-\alpha}}$ associated to a negative root $\displaystyle{\alpha<0}$ is called a lowering operator. 
