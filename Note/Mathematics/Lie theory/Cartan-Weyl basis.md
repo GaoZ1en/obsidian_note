@@ -240,4 +240,20 @@ $$
 
 of $\displaystyle{\mathfrak{g}^{\star}_{\circ}}$. the vector $\displaystyle{\alpha ^{\vee}}$ is called the coroot of $\displaystyle{\alpha \in \Phi}$ and for a simple $\displaystyle{\alpha ^{(i)}}$ the vector $\displaystyle{{\alpha ^{(i)}}^{\vee}}$ is referred to as a simple coroot.
 
-when one considers the root space as consisting of real linear combinations of the roots, then the dual space of the root space is called the weight space, and iits elements the weights of $\displaystyle{\mathfrak{g}}$. the weight space is spanned by the simple coroots $\displaystyle{{\alpha ^{(i)}}^{\vee}}$, with basis $\displaystyle{\mathcal{B}=\left\{{\alpha ^{(i)}}^{\vee}|i=1,\dots,r\right\}}$.
+when one considers the root space as consisting of real linear combinations of the roots, then the dual space of the root space is called the weight space, and iits elements the weights of $\displaystyle{\mathfrak{g}}$. the weight space is spanned by the simple coroots $\displaystyle{{\alpha ^{(i)}}^{\vee}}$, with basis $\displaystyle{\mathcal{B}=\left\{{\alpha ^{(i)}}^{\vee}|i=1,\dots,r\right\}}$. the basis of the weight space which is dual to $\displaystyle{\mathcal{B}}$ then consists of those weights, denoted by $\displaystyle{\Lambda _{(i)}}$, which obey
+
+$$\tag{3.22}
+\begin{align}
+\Lambda _{(i)}({\alpha ^{(j)}}^{\vee}) & =\delta ^{j}_{i}, & \forall i,j=1,\dots,r
+\end{align}
+$$
+
+these $\displaystyle{r}$ weights $\displaystyle{\Lambda _{(i)}}$ are called the fundamental weights of the semisimple Lie algebra $\displaystyle{\mathfrak{g}}$, and the basis
+
+$$\tag{3.23}
+\begin{align}
+\mathcal{B}^{\star} & =\left\{\Lambda _{(i)}|i=1,\dots,r\right\}
+\end{align}
+$$
+
+is called the Dynkin basis. 
