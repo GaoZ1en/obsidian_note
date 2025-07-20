@@ -41,4 +41,12 @@ $$\tag{3.3}
 \end{align}
 $$
 
-this splitting (3.3) is called the root space decomposition of $\displaystyle{\mathfrak{g}}$ relative to the Cartan subalgebra $\displaystyle{\mathfrak{g}_{\circ}}$. 
+this splitting (3.3) is called the root space decomposition of $\displaystyle{\mathfrak{g}}$ relative to the Cartan subalgebra $\displaystyle{\mathfrak{g}_{\circ}}$. this decomposition means in particular that there is a basis $\displaystyle{\mathcal{B}}$ of $\displaystyle{\mathfrak{g}}$ which apart from a basis $\displaystyle{\left\{H^{i}\right\}}$ of the Cartan subalgebra $\displaystyle{\mathfrak{g}_{\circ}}$ consists entirely of elements $\displaystyle{E_{\alpha}}$ that satisfy
+
+$$\tag{3.4}
+\begin{align}
+\left\{H^{i},E^{\alpha}\right\} & =\alpha ^{i}E^{\alpha}, & \forall i=1,2,\dots,r
+\end{align}
+$$
+
+where for each $\displaystyle{\alpha}$ the eigenvalue $\displaystyle{\alpha ^{i}=\alpha(H^{i})}$ is non-vanishing for at least one value of $\displaystyle{i}$. the $\displaystyle{r}$-dimensional vector $\displaystyle{(\alpha ^{i})_{i=1,\dots,r}}$ of eigenvalues of $\displaystyle{E^{\alpha}}$ with respect to $\displaystyle{\mathrm{ad}_{H^{i}}}$ is called a root (vector) of $\displaystyle{\mathfrak{g}}$. 
