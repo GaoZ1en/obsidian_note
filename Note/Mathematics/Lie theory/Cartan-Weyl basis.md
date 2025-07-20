@@ -119,3 +119,54 @@ we list important properties of roots and the root system below:
 
 # structure constants of the Cartan-Weyl basis
 
+here we only present the result.
+
+$$\tag{3.11}
+\begin{align}
+[E^{\alpha},E^{\beta}] & =e_{\alpha,\beta}E^{\alpha+\beta}, & \text{ for } \alpha+\beta \in \Phi \\
+[E^{\alpha},E^{-\alpha}] & =\tilde{\alpha}_{i}H^{i}
+\end{align}
+$$
+
+and thus
+
+$$\tag{3.12}
+\begin{align}
+f^{ij}_{~~~~k}=f^{ij}_{~~~~\alpha} & =0 \\
+f^{i\alpha}_{~~~~\beta} & =\alpha ^{i}\delta ^{\alpha}_{~\beta} \\
+f^{\alpha \beta}_{~~~~i} & =\tilde{\alpha}_{i}\delta ^{\alpha,-\beta} \\
+f^{\alpha \beta}_{~~~~\gamma} & =\begin{cases}
+e_{\alpha,\beta}\delta ^{\alpha+\beta}_{~\gamma} & \text{ if } \alpha+\beta \in \Phi \\
+0 & \text{ otherwise }
+\end{cases}
+\end{align}
+$$
+
+here $\displaystyle{e_{\alpha,\beta}}$ and $\displaystyle{\tilde{\alpha} _{i}}$ are not yet determined uniquely. inserting (3.12) into (3.8), we have
+
+$$\tag{3.13}
+\begin{align}
+I_{\mathrm{ad}}\kappa ^{ab} & =\begin{cases}
+\sum _{\alpha \in \Phi}\alpha ^{i}\alpha ^{j} & \text{ for }a=i,b=j \\
+\left\{2(\alpha,\tilde{\alpha})+\sum _{\gamma}e_{\alpha,\gamma}e_{-\alpha,\alpha+\gamma}\right\}\delta _{\alpha,-\beta} & \text{ for }a=\alpha,b=\beta \\
+0 & \text{ otherwise }
+\end{cases}
+\end{align}
+$$
+
+this result have many consequences. because of first line of (3.13), the inner product of two elements $\displaystyle{\lambda,\mu \in \mathfrak{g}^{\star}_{\circ}}$ can be computed as
+
+$$\tag{3.14}
+\begin{align}
+(\lambda,\mu) & =\sum _{\alpha \in \Phi}(\alpha,\lambda)(\alpha,\mu)
+\end{align}
+$$
+
+in particular
+
+$$\tag{3.15}
+\begin{align}
+(\lambda,\lambda) & =\sum _{\alpha \in \Phi}(\alpha,\lambda)^{2}
+\end{align}
+$$
+
