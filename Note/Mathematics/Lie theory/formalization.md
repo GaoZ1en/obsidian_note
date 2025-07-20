@@ -139,4 +139,32 @@ $$\tag{2.12}
 \end{align}
 $$
 
-the normalis
+the normalizer $\displaystyle{\mathcal{N}_{\mathfrak{g}}(\mathfrak{h})}$ is the largest subalgebra of $\displaystyle{\mathfrak{g}}$ that contains $\displaystyle{\mathfrak{h}}$ as an ideal. in particular $\displaystyle{\mathcal{N}_{\mathfrak{g}}(\mathfrak{h})=\mathfrak{g}}$ iff $\displaystyle{\mathfrak{h}}$ is an ideal of $\displaystyle{\mathfrak{g}}$. consider the vector space direct sum of Lie algebras $\displaystyle{\mathfrak{g}_{1},\dots,\mathfrak{g}_{n}}$ 
+
+$$\tag{2.13}
+\begin{align}
+\mathfrak{g} & =\bigoplus^{n}_{i=1} \mathfrak{g}_{i}
+\end{align}
+$$
+
+if we have
+
+$$\tag{2.14}
+\begin{align}
+[x,y] & =[x,y]_{i}, & \forall x,y\in \mathfrak{g}_{i}, i=1,\dots,n \\
+[\mathfrak{g}_{i},\mathfrak{g}_{j}] & =0, & \forall i\neq j
+\end{align}
+$$
+
+then $\displaystyle{\mathfrak{g}}$ is called a Lie algebra direct sum. if in the case of two Lie algebras $\displaystyle{\mathfrak{g}_{1},\mathfrak{g}_{2}}$, and the second relation in (2.14) is replaced by
+
+$$\tag{2.15}
+\begin{align}
+[\mathfrak{g}_{1},\mathfrak{g}_{2}]\subseteq \mathfrak{g}_{1}
+\end{align}
+$$
+
+then $\displaystyle{\mathfrak{g}}$ is called a semidirect sum which is denoted by $\displaystyle{\mathfrak{g}=\mathfrak{g}_{1}\?\mathfrak{g}_{2}}$
+
+# semisimple and abelian Lie algebras
+
