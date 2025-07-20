@@ -83,7 +83,39 @@ given a basis $\displaystyle{T^{a}|a=1,\dots,d}$ of $\displaystyle{\mathfrak{g}}
 
 $$\tag{3.8}
 \begin{align}
-\kappa ^{ab} & =\frac{1}{I_{\mathrm{ad}}}\kappa(T^{a},T^{b})
+\kappa ^{ab} & =\frac{1}{I_{\mathrm{ad}}}\kappa(T^{a},T^{b}) \\
+ & =\frac{1}{I_{\mathrm{ad}}}\mathrm{Tr}(\mathrm{ad}_{T^{a}}\circ\mathrm{ad}_{T^{b}}) \\
+ & =\frac{1}{I_{\mathrm{ad}}}f^{ad}_{~~~~c}f^{bc}_{~~~~d}
 \end{align}
 $$
+
+an important result is that for semisimple Lie algebra $\displaystyle{\mathfrak{g}}$, the Killing form is non-degenerate. now consider a Cartan-Weyl basis of a semisimple Lie algebra $\displaystyle{\mathfrak{g}}$, the restriction of the Killing form to the Cartan subalgebra $\displaystyle{\mathfrak{g}_{\circ}}$ is non-degenerate as well. hence we are lead to associate to any root $\displaystyle{\alpha}$ an element $\displaystyle{H^{\alpha}}$ of $\displaystyle{\mathfrak{g}_{\circ}}$, which up to normalization is unique, such that
+
+$$\tag{3.9}
+\begin{align}
+\alpha(h) & =c_{\alpha}\kappa(H^{a},h), &  \forall h\in \mathfrak{g}_{\circ}
+\end{align}
+$$
+
+with the help of the element $\displaystyle{H^{\alpha}}$, one can then define a non-degenerate inner product on $\displaystyle{\mathfrak{g}^{\star}_{\circ}}$
+
+$$\tag{3.10}
+\begin{align}
+(\alpha,\beta) & =c_{\alpha}c_{\beta}\kappa(H^{\alpha},H^{\beta}) \\
+ & =c_{\alpha}\alpha(H^{\beta})
+\end{align}
+$$
+
+for all roots $\displaystyle{\alpha,\beta}$. 
+
+# some properties of roots and the root system
+
+we list important properties of roots and the root system below:
+
+1. the roots span all of $\displaystyle{\mathfrak{g}^{\star}_{\circ}}$: $\displaystyle{\mathrm{span}_{\mathbb{C}}(\Phi)=\mathfrak{g}^{\star}_{\circ}}$
+2. the root space $\displaystyle{\mathfrak{g}_{\alpha}}$ are one-dimensional
+3. the only multiplets of $\displaystyle{\alpha \in \Phi}$ which are roots are $\displaystyle{\pm \alpha}$
+4. there is a basis $\displaystyle{\left\{H^{i}\right\},i=1,\dots,r}$ of the Cartan subalgebra $\displaystyle{\mathfrak{g}_{\circ}}$ such that $\displaystyle{\beta(H^{i})}$ is an integer for all $\displaystyle{i}$ and for each root $\displaystyle{\beta \in \Phi}$.
+
+# structure constants of the Cartan-Weyl basis
 
