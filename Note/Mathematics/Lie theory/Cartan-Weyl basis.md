@@ -218,4 +218,26 @@ given the set of positive roots with respect to some chosen basis, a simple root
 3. the simple roots provide a basis for the root space $\displaystyle{\mathrm{span}_{\mathbb{R}}(\Phi _{\mathrm{s}})=\mathrm{span}_{\mathbb{R}}(\Phi)}$
 4. any positive root is a linear combination of simple roots with non-negative integral coefficients.
 
-generically the basis
+generically the basis of simple roots is not orthonormal. the non-orthonormality is encoded in the Cartan matrix $\displaystyle{A}$ of $\displaystyle{\mathfrak{g}}$, defined as
+
+$$\tag{3.20}
+\begin{align}
+A^{ij} & =2 \frac{(\alpha ^{(i)},\alpha ^{(j)})}{(\alpha ^{(j)},\alpha ^{(j)})}
+\end{align}
+$$
+
+the Cartan matrix summarizes in fact the structure of a semisimple Lie algebra completely...
+
+# root and weight lattices. the Dynkin basis
+
+it is convenient to introduce for any root $\displaystyle{\alpha}$ another element
+
+$$\tag{3.21}
+\begin{align}
+\alpha ^{\vee} & =\frac{2\alpha}{(\alpha,\alpha)}
+\end{align}
+$$
+
+of $\displaystyle{\mathfrak{g}^{\star}_{\circ}}$. the vector $\displaystyle{\alpha ^{\vee}}$ is called the coroot of $\displaystyle{\alpha \in \Phi}$ and for a simple $\displaystyle{\alpha ^{(i)}}$ the vector $\displaystyle{{\alpha ^{(i)}}^{\vee}}$ is referred to as a simple coroot.
+
+when one considers the root space as consisting of real linear combinations of the roots, then the dual space of the root space is called the weight space, and iits elements the weights of $\displaystyle{\mathfrak{g}}$. the weight space is spanned by the simple coroots $\displaystyle{{\alpha ^{(i)}}^{\vee}}$, with basis $\displaystyle{\mathcal{B}=\left\{{\alpha ^{(i)}}^{\vee}|i=1,\dots,r\right\}}$.
