@@ -190,4 +190,27 @@ $$\tag{3.17}
 \end{align}
 $$
 
-the step operator $\displaystyle{E^{\alpha}}$ associated to a positive root $\displaystyle{\alpha>0}$ is also called a raising operator, while the step operator $\displaystyle{E^{-\alpha}}$ associated to a negative root $\displaystyle{\alpha<0}$ is called a lowering operator. 
+the step operator $\displaystyle{E^{\alpha}}$ associated to a positive root $\displaystyle{\alpha>0}$ is also called a raising operator, while the step operator $\displaystyle{E^{-\alpha}}$ associated to a negative root $\displaystyle{\alpha<0}$ is called a lowering operator. it follows that the number of elements of $\displaystyle{\Phi _{+}}$ is $\displaystyle{\frac{1}{2}(d-r)\in \mathbb{N}}$. given a Cartan subalgebra $\displaystyle{\mathfrak{g}_{\circ}}$ of $\displaystyle{\mathfrak{g}}$, the subspaces of $\displaystyle{\mathfrak{g}}$ are spanned by the step operators for positive and negative roots, resp, are infact subalgebras
+
+$$\tag{3.18}
+\begin{align}
+\mathfrak{g}_{\pm} & =\mathrm{span}_{\mathbb{C}}\left\{E^{\pm \alpha}|\alpha>0\right\}
+\end{align}
+$$
+
+according to (3.3) and (3.17), the $\displaystyle{\mathfrak{g}}$ can be written in terms of vector space direct sum as
+
+$$\tag{3.19}
+\begin{align}
+\mathfrak{g} & =\mathfrak{g}_{+}\oplus \mathfrak{g}_{\circ}\oplus \mathfrak{g}_{-}
+\end{align}
+$$
+
+this is called the Gauss decomposition
+
+# simple roots and the Cartan matrix
+
+given the set of positive roots with respect to some chosen basis, a simple root of $\displaystyle{\mathfrak{g}}$ is by definition a positive root which cannot be obtained as a linear combination of other positive roots with positive coefficients. they possess the following properties:
+
+1. the number of simple roots is $\displaystyle{r}$, the rank of $\displaystyle{\mathfrak{g}}$.
+2. the simple roots are those positive roots which are closest to the hyperplane separating the positive and negative roots.
