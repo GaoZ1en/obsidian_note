@@ -166,5 +166,30 @@ $$
 
 then $\displaystyle{\mathfrak{g}}$ is called a semidirect sum which is denoted by $\displaystyle{\mathfrak{g}=\mathfrak{g}_{1}\?\mathfrak{g}_{2}}$
 
+# solvable and nilpotent Lie algebras
+
+for a Lie algebra $\displaystyle{\mathfrak{g}}$, we can define the derived series
+
+$$\tag{2.16}
+\begin{align}
+\mathfrak{g}^{(0)} & =\mathfrak{g} \\
+\mathfrak{g}^{(n+1)} & =[\mathfrak{g}^{(n)},\mathfrak{g}^{(n)}], & n\geqslant 0
+\end{align}
+$$
+
+the Lie algebra $\displaystyle{\mathfrak{g}}$ is called solvable if there exists a $\displaystyle{n\in \mathbb{N}}$ such that $\displaystyle{\mathfrak{g}^{(n)}=0}$. similarly we can define the lower central series
+
+$$\tag{2.17}
+\begin{align}
+\mathfrak{g}_{(0)} & =\mathfrak{g} \\
+\mathfrak{g}_{(n+1)} & =[\mathfrak{g},\mathfrak{g}_{(n)}], & n\geqslant 0
+\end{align}
+$$
+
+the Lie algebra $\displaystyle{\mathfrak{g}}$ is called nilpotent if there exists a $\displaystyle{n\in \mathbb{N}}$ such that $\displaystyle{\mathfrak{g}_{(n)}=0}$. each of $\displaystyle{\mathfrak{g}^{(n)}}$ and $\displaystyle{\mathfrak{g}_{(n)}}$ is an ideal of $\displaystyle{\mathfrak{g}}$. nilpotency implies solvability. a maximal solvable ideal (also called radical) is one that is not contained in any larger solvable ideal. $\displaystyle{\mathfrak{g}}$ is solvable iff it equals its own radical. 
+
 # semisimple and abelian Lie algebras
 
+an abelian Lie algebra satisfies $\displaystyle{[\mathfrak{g},\mathfrak{g}]=0}$. a simple Lie algebra is a Lie algebra without any proper ideal and not abelian. a semisimple Lie algebra is a direct sum of simple Lie algebras.
+
+an abelian Lie algebra satisfies $\displaystyle{\mathcal{Z}(\mathfrak{g})=\mathfrak{g}}$. the derived series of an abelian Lie algebra is trivial. a semisimple Lie algebra are equal to their derived algebras, $\displaystyle{\mathfrak{g}^{(n)}=\mathfrak{g}}$, and their center vanishes $\displaystyle{\mathcal{Z}(\mathfrak{g})=0}$. 
