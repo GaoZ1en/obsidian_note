@@ -5721,6 +5721,150 @@
           }
         ],
         "id": 234
+      },
+      {
+        "date": "2025-07-20",
+        "filePath": "Note/Mathematics/Lie theory/formalization.md",
+        "wordCountStart": 1172,
+        "charCountStart": 7814,
+        "changes": [
+          {
+            "timeKey": "09:35",
+            "w": 39,
+            "c": 227
+          },
+          {
+            "timeKey": "09:40",
+            "w": 67,
+            "c": 408
+          },
+          {
+            "timeKey": "09:45",
+            "w": 109,
+            "c": 714
+          },
+          {
+            "timeKey": "09:50",
+            "w": 57,
+            "c": 371
+          },
+          {
+            "timeKey": "10:00",
+            "w": 22,
+            "c": 151
+          },
+          {
+            "timeKey": "10:05",
+            "w": 34,
+            "c": 232
+          },
+          {
+            "timeKey": "10:20",
+            "w": 14,
+            "c": 84
+          },
+          {
+            "timeKey": "10:25",
+            "w": 10,
+            "c": 84
+          }
+        ],
+        "id": 236
+      },
+      {
+        "date": "2025-07-20",
+        "filePath": "Note/Mathematics/Lie theory/Cartan-Weyl basis.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "12:10",
+            "w": 10,
+            "c": 73
+          },
+          {
+            "timeKey": "12:15",
+            "w": 43,
+            "c": 328
+          },
+          {
+            "timeKey": "12:25",
+            "w": 94,
+            "c": 598
+          },
+          {
+            "timeKey": "12:30",
+            "w": 85,
+            "c": 556
+          },
+          {
+            "timeKey": "12:40",
+            "w": 11,
+            "c": 84
+          },
+          {
+            "timeKey": "12:50",
+            "w": 82,
+            "c": 541
+          }
+        ],
+        "id": 237
+      },
+      {
+        "date": "2025-07-20",
+        "filePath": "TODO.md",
+        "wordCountStart": 74,
+        "charCountStart": 916,
+        "changes": [
+          {
+            "timeKey": "12:45",
+            "w": -1,
+            "c": -6
+          }
+        ],
+        "id": 238
+      },
+      {
+        "date": "2025-07-20",
+        "filePath": "copilot-custom-prompts/Explain like I am 5.md",
+        "wordCountStart": 37,
+        "charCountStart": 388,
+        "changes": [
+          {
+            "timeKey": "12:55",
+            "w": -37,
+            "c": -388
+          }
+        ],
+        "id": 239
+      },
+      {
+        "date": "2025-07-20",
+        "filePath": "copilot-custom-prompts/Generate glossary.md",
+        "wordCountStart": 32,
+        "charCountStart": 353,
+        "changes": [
+          {
+            "timeKey": "12:55",
+            "w": -32,
+            "c": -353
+          }
+        ],
+        "id": 240
+      },
+      {
+        "date": "2025-07-20",
+        "filePath": "copilot-custom-prompts/Generate table of contents.md",
+        "wordCountStart": 35,
+        "charCountStart": 357,
+        "changes": [
+          {
+            "timeKey": "12:55",
+            "w": -35,
+            "c": -357
+          }
+        ],
+        "id": 241
       }
     ],
     "daysWithCompletedGoal": [
@@ -5747,7 +5891,8 @@
       "2025-07-14",
       "2025-07-15",
       "2025-07-16",
-      "2025-07-19"
+      "2025-07-19",
+      "2025-07-20"
     ]
   }
 }
