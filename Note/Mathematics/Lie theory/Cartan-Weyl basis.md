@@ -213,4 +213,9 @@ this is called the Gauss decomposition
 given the set of positive roots with respect to some chosen basis, a simple root of $\displaystyle{\mathfrak{g}}$ is by definition a positive root which cannot be obtained as a linear combination of other positive roots with positive coefficients. they possess the following properties:
 
 1. the number of simple roots is $\displaystyle{r}$, the rank of $\displaystyle{\mathfrak{g}}$.
-2. the simple roots are those positive roots which are closest to the hyperplane separating the positive and negative roots.
+2. the simple roots are those positive roots which are closest to the hyperplane separating the positive and negative roots. however they are independent of the choice of hyperplane.
+	1. the set of simple roots is denoted as $\displaystyle{\Phi _{\mathrm{s}}=\left\{\alpha ^{(i)}|i=1,\dots,r\right\}}$
+3. the simple roots provide a basis for the root space $\displaystyle{\mathrm{span}_{\mathbb{R}}(\Phi _{\mathrm{s}})=\mathrm{span}_{\mathbb{R}}(\Phi)}$
+4. any positive root is a linear combination of simple roots with non-negative integral coefficients.
+
+generically the basis
