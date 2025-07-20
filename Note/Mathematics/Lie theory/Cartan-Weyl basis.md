@@ -256,4 +256,32 @@ $$\tag{3.23}
 \end{align}
 $$
 
-is called the Dynkin basis. 
+is called the Dynkin basis. the components of a weight in the Dynkin basis are called Dynkin labels. the root system has the highly non-trivial property that all roots are not just arbitrary linear combinations of the simple roots, but even linear combinations with integral coefficients. this motivates us to consider a special subset of root space, namely the set of all linear combinations of simple roots with integral coefficients. these vectors form a lattice $\displaystyle{L(\mathfrak{g})=\mathrm{span}_{\mathbb{Z}}(\Phi _{s})}$, called root lattice. similarly we can define coroot lattice $\displaystyle{L^{\vee}(\mathfrak{g})=\mathrm{span}_{\mathbb{Z}}(\mathcal{B})}$, the integral span of simple coroots and the weight lattice $\displaystyle{L_{\mathrm{w}}(\mathfrak{g})=\mathrm{span}_{\mathbb{Z}}(\mathcal{B}^{\star})}$, the integral span of fundamental weights. the weight lattice $\displaystyle{L_{\mathrm{w}}(\mathfrak{g})}$ is the lattice dual to the coroot lattice, i.e.,
+
+$$\tag{3.24}
+\begin{align}
+L_{\mathrm{w}}(\mathfrak{g}) & =(L^{\vee}(\mathfrak{g}))^{\star}=\left\{\lambda|\lambda(\alpha ^{\vee})\in \mathbb{Z},\forall \alpha \in \Phi\right\}
+\end{align}
+$$
+
+consider a root lattice vector $\displaystyle{\beta=b_{i}\alpha ^{(i)}}$, the sum $\displaystyle{\sum ^{r}_{i=1}b_{i}}$ is called the height of $\displaystyle{\beta}$. since (3.11), the height defines a natural $\displaystyle{\mathbb{Z}}$-gradation of $\displaystyle{\mathfrak{g}}$, the so-called root space gradation, according to
+
+$$\tag{3.25}
+\begin{align}
+\mathfrak{g}_{\left\{0\right\}} & =\mathfrak{g}_{\circ} \\
+\mathfrak{g}_{(j)} & =\mathrm{span}_{\mathbb{C}}\left\{E^{\alpha}|\mathrm{height}(\alpha)=j\right\}
+\end{align}
+$$
+
+for a simple $\displaystyle{\mathfrak{g}}$, there is a unique root, called the highest root of $\displaystyle{\mathfrak{g}}$ and denoted by $\displaystyle{\theta}$. $\displaystyle{\theta}$ also satisfies
+
+$$\tag{3.26}
+\begin{align}
+(\theta,\theta) & \geqslant(\alpha,\alpha), & \forall \alpha \in \Phi
+\end{align}
+$$
+
+furthermore, for any $\displaystyle{\beta \in \Phi _{+}-\left\{\theta\right\}}$, the root vector $\displaystyle{\theta-\beta}$ is still a linear combination of simple roots in which all coefficients are positive.
+
+# the metric on weight space
+
