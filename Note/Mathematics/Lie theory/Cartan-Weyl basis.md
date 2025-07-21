@@ -285,3 +285,34 @@ furthermore, for any $\displaystyle{\beta \in \Phi _{+}-\left\{\theta\right\}}$,
 
 # the metric on weight space
 
+for any element $\displaystyle{\beta}$ of the root space, the element $\displaystyle{\beta ^{\star}}$ in the weight space with which it is identified is characterized by the property that $\displaystyle{\beta ^{\star}(\gamma)=(\beta,\gamma), \forall \gamma \in \Phi}$. thus the roots themselves will be considered as weights (in fact they are the weights of the adjoint representation of $\displaystyle{\mathfrak{g}}$).
+
+in the description of representations, the Dynkin components of a weight $\displaystyle{\lambda}$ play the role of eigenvalues with respect to the generators $\displaystyle{H^{i}}$ of the Cartan subalgebra.
+
+all entries of the Cartan matrix are integers, and this implies that the Dynkin labels of any root are integral, too. in order to describe the inner products on the root and weight spaces explicitly, we express roots and weights through their components with respect to the basis of simple coroots and the Dynkin basis, respectively. thus we write
+
+$$\tag{3.27}
+\begin{align}
+\lambda=\lambda _{i}{\alpha ^{(i)}}^{\vee}=\lambda ^{j}\Lambda _{(j)}
+\end{align}
+$$
+
+with
+
+$$\tag{3.28}
+\begin{align}
+\lambda _{i} & =(\lambda,\Lambda _{(i)}) \\
+\lambda ^{i} & =(\lambda,{\alpha ^{(i)}}^{\vee})
+\end{align}
+$$
+
+as a consequence of $\displaystyle{\Lambda _{(i)}({\alpha ^{(j)}}^{\vee})=\delta ^{j}_{i}}$, one has
+
+$$\tag{3.29}
+\begin{align}
+({\alpha ^{(j)}}^{\vee})_{i} & =\delta ^{j}_{i}=(\Lambda _{(i)})^{j} \\
+(\alpha ^{(j)})_{i} & =\frac{1}{2}(\alpha ^{(j)},\alpha ^{(j)})\delta ^{j}_{i}
+\end{align}
+$$
+
+ 
