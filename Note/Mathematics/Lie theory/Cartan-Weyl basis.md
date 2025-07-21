@@ -315,4 +315,63 @@ $$\tag{3.29}
 \end{align}
 $$
 
- 
+it is convenient to introduce $\displaystyle{G}$ to raise and lower indices
+
+$$\tag{3.30}
+\begin{align}
+\lambda _{i} & =G_{ij}\lambda ^{j}, & \lambda ^{i}=G^{ij}\lambda _{j}
+\end{align}
+$$
+
+the metric $\displaystyle{G}$ is defined as
+
+$$\tag{3.31}
+\begin{align}
+G_{ij} & =(\Lambda _{(i)},\Lambda _{(j)}) \\
+G^{ij} & =({\alpha ^{(i)}}^{\vee},{\alpha ^{(j)}}^{\vee})=\frac{2}{(\alpha ^{(i)},\alpha ^{(j)})}A^{ij}
+\end{align}
+$$
+
+thus the inner product of two weights $\displaystyle{\lambda}$ and $\displaystyle{\mu}$ is given by
+
+$$\tag{3.32}
+\begin{align}
+(\lambda,\mu) & =\lambda _{i}\mu ^{i} & =G_{ij}\lambda ^{i}\mu ^{j}=G^{ij}\lambda _{i}\mu _{j}
+\end{align}
+$$
+
+the explicit form of the metric $\displaystyle{G}$ of all simple Lie algebras will be listed below. $\displaystyle{G^{ij}}$ coincides with the restriction of the Killing form to the Cartan subalgebra. in short, $\displaystyle{G_{ij}}$ is dual to the Killing form. then
+
+$$\tag{3.33}
+\begin{align}
+(\alpha ^{(i)})^{j}=(\alpha ^{(i)})_{k}G^{jk}=A^{ij}
+\end{align}
+$$
+
+in the case of simple roots $\displaystyle{\alpha=\alpha ^{(i)}}$, we have
+
+$$\tag{3.34}
+\begin{align}
+[H^{i},E^{\alpha ^{(j)}}]=(\alpha ^{(j)})^{i}E^{\alpha ^{(j)}}=A^{ji}E^{\alpha ^{(j)}}
+\end{align}
+$$
+
+# the Chevalley basis
+
+so far the normalization of the step operators $\displaystyle{E^{\alpha}}$ has not been fully specified. now we fix $\displaystyle{c_{\beta}=\frac{1}{2}(\beta,\beta)}$, we then have
+
+$$\tag{3.35}
+\begin{align}
+H^{\beta}=(\beta ^{\vee})_{i}H^{i}
+\end{align}
+$$
+
+it follows that
+
+$$\tag{3.36}
+\begin{align}
+\alpha(H^{\beta})=c_{\beta}^{-1}(\alpha,\beta) & =\frac{2(\alpha,\beta)}{(\beta,\beta)}
+\end{align}
+$$
+
+which means the eigenvalues of $\displaystyle{H^{\beta}}$ in the adjoint representation are given by the inner product $\displaystyle{(\alpha,\beta ^{\vee})}$ with $\displaystyle{\alpha \in \Phi}$. 
