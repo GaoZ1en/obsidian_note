@@ -374,4 +374,88 @@ $$\tag{3.36}
 \end{align}
 $$
 
-which means the eigenvalues of $\displaystyle{H^{\beta}}$ in the adjoint representation are given by the inner product $\displaystyle{(\alpha,\beta ^{\vee})}$ with $\displaystyle{\alpha \in \Phi}$. 
+which means the eigenvalues of $\displaystyle{H^{\beta}}$ in the adjoint representation are given by the inner product $\displaystyle{(\alpha,\beta ^{\vee})}$ with $\displaystyle{\alpha \in \Phi}$. the result above tell us that
+
+$$\tag{3.37}
+\begin{align}
+[E^{\alpha},E^{-\alpha}] & =c_{\alpha}\kappa(E^{\alpha},E^{-\alpha})H^{\alpha} \\
+ & =\kappa(E^{\alpha},E^{-\alpha}) \alpha _{i}H^{i}
+\end{align}
+$$
+
+a convenient choice of normalization is to set $\displaystyle{\kappa(E^{\alpha},E^{-\alpha})=\frac{2}{(\alpha,\alpha)}}$, thus we have
+
+$$\tag{3.38}
+\begin{align}
+[E^{\alpha},E^{-\alpha}] & =H^{\alpha} \\
+[H^{\alpha},E^{\pm \alpha}] & =(\alpha ^{\vee})_{i}[H^{i},E^{\pm \alpha}]=\pm(\alpha,\alpha ^{\vee})E^{\pm \alpha} \\
+ & =\pm 2E^{\pm \alpha}
+\end{align}
+$$
+
+a Cartan-Weyl basis with this choice of normalization is called a Chevalley basis of $\displaystyle{\mathfrak{g}}$. in the case of simple roots $\displaystyle{\alpha ^{(i)}}$ the Chevalley generators $\displaystyle{H^{\alpha}}$
+
+$$\tag{3.39}
+\begin{align}
+H^{\alpha ^{(i)}} & =({\alpha ^{(i)}}^{\vee})_{j}H^{j}=\delta ^{i}_{j}H^{j}=H^{i}
+\end{align}
+$$
+
+it is then natural to introduce a special notation for the step operators
+
+$$\tag{3.40}
+\begin{align}
+E^{i}_{\pm} & =E^{\pm \alpha ^{(i)}}
+\end{align}
+$$
+
+these generators obey $\displaystyle{[E^{i}_{+},E^{j}_{-}]=0,\forall i\neq j}$ because $\displaystyle{\alpha ^{(i)}-\alpha ^{(j)}}$ is not a root. actually we have
+
+$$\tag{3.41}
+\begin{align}
+[E^{i}_{+},E^{j}_{-}]=\delta ^{ij}H^{j}
+\end{align}
+$$
+
+with the identification $\displaystyle{(3.39)}$, the metric $\displaystyle{G^{ij}}$ is nothing but the restriction of the Killing form to the Cartan subalgebra $\displaystyle{\mathfrak{g}_{\circ}}$. 
+
+$$\tag{3.42}
+\begin{align}
+G^{ij} & =\kappa(H^{\alpha ^{(i)}},H^{\alpha ^{(j)}}) \\
+ & =\kappa(H^{i},H^{j}) \\
+ & =I_{\mathrm{ad}}\kappa ^{ij}
+\end{align}
+$$
+
+moreover, we have
+
+$$\tag{3.43}
+\begin{align}
+\kappa(E^{\alpha},E^{\beta})=\frac{2}{(\alpha,\alpha)}\delta _{\alpha,-\beta}
+\end{align}
+$$
+
+in the Chevalley basis. as a summary
+
+$$\tag{3.44}
+\begin{align}
+[H^{i},H^{j}] & =0 \\
+[H^{i},E^{j}_{\pm}] & =\pm A^{ji}E^{j}_{\pm} \\
+[E^{i}_{+},E^{j}_{-}] & =\delta _{ij}H^{j} \\
+(\mathrm{ad}_{E^{i}_{\pm}})^{1-A^{ji}}E^{j}_{\pm} & =0
+\end{align}
+$$
+
+in the Chevalley-Serre basis, and
+
+$$\tag{3.43}
+\begin{align}
+[H^{\alpha},H^{\beta}] & =0 \\
+[H^{\alpha},E^{\beta}] & =(\alpha ^{\vee},\beta)E^{\beta} \\
+[E^{\alpha},E^{-\alpha}] & =H^{\alpha} \\
+[E^{\alpha},E^{\beta}] & =e_{\alpha,\beta}E^{\alpha+\beta} & \text{ for }\alpha\neq-\beta
+\end{align}
+$$
+
+# root strings
+
