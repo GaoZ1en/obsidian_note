@@ -459,4 +459,5 @@ $$
 
 # root strings
 
-the normalization chosen above has a crucial advantage that for each root $\displaystyle{\alpha}$ the step operator $\displaystyle{E^{\alpha},E^{-\alpha}}$ and the Cartan subalgebra element $\displaystyle{H^{\alpha}}$ span a $\displaystyle{\mathfrak{sl}(2)}$ subalgebra of $\displaystyle{\mathfrak{g}}$, we will denote this subalgebra by $\displaystyle{\mathfrak{sl}(2)_{\alpha}}$. because of this connection, ma
+the normalization chosen above has a crucial advantage that for each root $\displaystyle{\alpha}$ the step operator $\displaystyle{E^{\alpha},E^{-\alpha}}$ and the Cartan subalgebra element $\displaystyle{H^{\alpha}}$ span a $\displaystyle{\mathfrak{sl}(2)}$ subalgebra of $\displaystyle{\mathfrak{g}}$, we will denote this subalgebra by $\displaystyle{\mathfrak{sl}(2)_{\alpha}}$.
+
