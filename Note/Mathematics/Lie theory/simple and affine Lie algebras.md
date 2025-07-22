@@ -17,11 +17,31 @@ the only free parameters occurring in the Chevalley-Serre relations are the entr
 1. $\displaystyle{A^{ii}=2}$
 2. $\displaystyle{A^{ij}=0\implies A^{ji}=0}$
 3. $\displaystyle{A^{ij}=(\alpha ^{(i)},{\alpha ^{(j)}}^{\vee})\in \mathbb{Z}}$
-4. $\displaystyle{(\alpha ^{(i)},\alpha ^{(j)})\leqslant0\quad\forall i\neq j}$
+4. $\displaystyle{A^{ij}=(\alpha ^{(i)},\alpha ^{(j)})\leqslant0\quad\forall i\neq j}$
 5. $\displaystyle{\det A\neq0}$
 
 in terms of the root system $\displaystyle{\Phi}$, the splitting of a semisimple Lie algebra $\displaystyle{\mathfrak{g}=\mathfrak{g}_{(1)}\oplus\dots \oplus \mathfrak{g}_{(n)}}$ into its simple summands $\displaystyle{\mathfrak{g}_{(p)}}$ is expressed through the fact that $\displaystyle{\Phi}$ can be written as the sum of irreducible subsystems $\displaystyle{\Phi _{(p)}}$. this restriction from semisimple to simple Lie algebras thus means that the Cartan matrix must be indecomposable in the sense that there is no renumbering of the simple roots which would bring $\displaystyle{A}$ to the block diagonal form. this implies $\displaystyle{\det A\neq0}$ can be strengthened to $\displaystyle{\det A>0}$.
 
 # Dynkin diagrams
 
-the enumeration of all possible solutions to condition 1-5 listed above is a purely combinatorial procedure. in order to describe the final result, it is convenient to introduce the notion of a Dynkin diagram: to each Cartan matrix one associates a diagram consisting of vertives and lines connecting them
+the enumeration of all possible solutions to condition 1-5 listed above is a purely combinatorial procedure. 
+
+in order to describe the final result, it is convenient to introduce the notion of a Dynkin diagram: to each Cartan matrix one associates a diagram consisting of vertives and lines connecting them. rach vertex of the diagram representa a simple root; the vertices for $\displaystyle{\alpha ^{(i)}}$ and $\displaystyle{\alpha ^{(j)}}$ ($\displaystyle{i\neq j}$) are connected by $\displaystyle{\max\left\{|A^{ij}|,|A^{ji}|\right\}}$ lines (in particular, when the weight space is euclidean, which is precisely the case if $\displaystyle{\mathfrak{g}}$ is finite-dimensional and semisimple, then vertices connected by a single, double or triple bond correspond to simple roots spanning an angle of $\displaystyle{\frac{2}{3}\pi}$, $\displaystyle{\frac{3}{4}\pi}$ and $\displaystyle{\frac{5}{6}\pi}$, resp, while simple roots not connected by a line are mutually orthogonal). furthermore, and arrowhead is added to the lines from the $\displaystyle{i}$th to the $\displaystyle{j}$th node if $\displaystyle{A^{ij}\neq0}$ and $\displaystyle{|A^{ij}|>|A^{ji}|}$ (which is equivalent to $\displaystyle{(\alpha ^{(i)},\alpha ^{(i)})>(\alpha ^{(j)},\alpha ^{(j)})}$). alternatively, one may specify long roots by open dots and short roots by filled dots.
+
+# simple Lie algebras
+
+by utilizing the Dynkin diagram, simple Lie algebras can be classified into four infinite series
+
+$$\tag{4.1}
+\begin{align}
+A_{r}\,(r\geqslant1),\quad B_{r}\,(r\geqslant 3),\quad C_{r}\,(r\geqslant 2),\quad D_{r}\,(r\geqslant 4)
+\end{align}
+$$
+
+and five isolated cases
+
+$$\tag{4.2}
+\begin{align}
+E_{6},\quad E_{7},\quad E_{8},qu
+\end{align}
+$$
