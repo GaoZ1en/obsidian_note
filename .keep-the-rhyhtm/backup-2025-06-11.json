@@ -6157,8 +6157,134 @@
         "filePath": "Note/Mathematics/Lie theory/Cartan-Weyl basis.md",
         "wordCountStart": 3610,
         "charCountStart": 22234,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "17:30",
+            "w": 8,
+            "c": 55
+          },
+          {
+            "timeKey": "17:35",
+            "w": 45,
+            "c": 327
+          },
+          {
+            "timeKey": "17:40",
+            "w": 5,
+            "c": 30
+          },
+          {
+            "timeKey": "19:15",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "19:20",
+            "w": 23,
+            "c": 179
+          },
+          {
+            "timeKey": "19:25",
+            "w": -28,
+            "c": -208
+          }
+        ],
         "id": 244
+      },
+      {
+        "date": "2025-07-21",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 251
+      },
+      {
+        "date": "2025-07-21",
+        "filePath": "Note/Mathematics/Lie theory/simple and affine Lie algebras.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 252
+      },
+      {
+        "date": "2025-07-22",
+        "filePath": "Note/Mathematics/Lie theory/simple and affine Lie algebras.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "09:25",
+            "w": 36,
+            "c": 275
+          },
+          {
+            "timeKey": "09:40",
+            "w": 23,
+            "c": 156
+          },
+          {
+            "timeKey": "09:50",
+            "w": 8,
+            "c": 40
+          },
+          {
+            "timeKey": "09:55",
+            "w": 118,
+            "c": 649
+          },
+          {
+            "timeKey": "10:05",
+            "w": 73,
+            "c": 461
+          },
+          {
+            "timeKey": "10:10",
+            "w": 31,
+            "c": 191
+          },
+          {
+            "timeKey": "10:15",
+            "w": 27,
+            "c": 180
+          },
+          {
+            "timeKey": "10:25",
+            "w": 87,
+            "c": 546
+          },
+          {
+            "timeKey": "10:30",
+            "w": 87,
+            "c": 577
+          },
+          {
+            "timeKey": "10:35",
+            "w": 79,
+            "c": 481
+          },
+          {
+            "timeKey": "10:40",
+            "w": 5,
+            "c": 35
+          },
+          {
+            "timeKey": "10:55",
+            "w": 60,
+            "c": 335
+          },
+          {
+            "timeKey": "11:00",
+            "w": 123,
+            "c": 703
+          },
+          {
+            "timeKey": "11:05",
+            "w": 34,
+            "c": 150
+          }
+        ],
+        "id": 253
       }
     ],
     "daysWithCompletedGoal": [
@@ -6186,7 +6312,8 @@
       "2025-07-15",
       "2025-07-16",
       "2025-07-19",
-      "2025-07-20"
+      "2025-07-20",
+      "2025-07-22"
     ]
   }
 }
