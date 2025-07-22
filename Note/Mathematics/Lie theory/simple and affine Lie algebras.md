@@ -42,6 +42,32 @@ and five isolated cases
 
 $$\tag{4.2}
 \begin{align}
-E_{6},\quad E_{7},\quad E_{8},qu
+E_{6},\quad E_{7},\quad E_{8},\quad G_{2},\quad F_{4}
 \end{align}
 $$
+
+![[Attachments/Pasted image 20250722110033.png]]
+
+the algebras in the infinite series of simple Lie algebras are called the classical Lie algebras, and they are isomorphic to the matrix algebras that
+
+$$\tag{4.3}
+\begin{align}
+A_{r} & \cong \mathfrak{sl}(r+1,\mathbb{C}) \\
+B_{r} & \cong \mathfrak{so}(2r+1,\mathbb{C}) \\
+C_{r} & \cong \mathfrak{sp}(r,\mathbb{C}) \\
+D_{r} & \cong \mathfrak{so}(2r,\mathbb{C})
+\end{align}
+$$
+
+and the five isolated cases are referred to as the exceptional Lie algebras. the restrictions on the rank $\displaystyle{r}$ of the classical algebras are imposed to avoid double counting. in fact we have
+
+$$\tag{4.4}
+\begin{align}
+A_{1}\cong B_{1}\cong C_{1}\cong D_{1} \\
+B_{2}\cong C_{2} \\
+D_{2}\cong A_{1}\oplus A_{1} \\
+D_{3}\cong A_{3}
+\end{align}
+$$
+
+![[Attachments/Pasted image 20250722110849.png]]
