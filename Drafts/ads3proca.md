@@ -12,10 +12,30 @@ $$\tag{1.2}
 \end{align}
 $$
 
+$$\tag{1.3}
+\begin{align}
+\nabla ^{2}A^{\nu}-(\mu ^{2}-2)A^{\nu}=0
+\end{align}
+$$
+
 $$\tag{.}
 \begin{align}
-\nabla _{\mu}F^{\mu \nu} & =\mu^{2}A^{\nu} \\
-\nabla _{\mu}(\nabla ^{\mu}A^{\nu}-\nabla ^{\nu}A^{\mu}) & =\nabla ^{2}A^{\nu}-g^{\nu \rho}[\nabla _{\mu},\nabla _{\rho}]A^{\mu} \\
- & =\nabla ^{2}A^{\nu}-R^{\nu}_{~\mu}A^{\mu}
+\nabla ^{2}A^{\nu} & =\partial ^{2}A^{\nu}+g^{\rho \sigma}(2\Gamma ^{\nu}_{~\rho \lambda}\partial _{\sigma}A^{\lambda}-\Gamma ^{\lambda}_{~\rho \sigma}\partial _{\lambda}A^{\nu})+g^{\rho \sigma}(\partial _{\rho}\Gamma ^{\nu}_{~\sigma \lambda}A^{\lambda}+\Gamma ^{\nu}_{~\rho \lambda}\Gamma ^{\lambda}_{~\sigma \alpha}A^{\alpha}-\Gamma ^{\lambda}_{~\rho \sigma}\Gamma ^{\nu}_{~\lambda \alpha}A^{\alpha})
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\nabla ^{2}A^{t}-(\mu ^{2}-2)A^{t} & =\partial ^{2}Ak
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\Gamma ^{t}_{~t\rho} & =\frac{\rho}{1+\rho ^{2}} \\
+\Gamma ^{\rho}_{~tt} & =\rho(1+\rho ^{2}) \\
+\Gamma ^{\rho}_{~\rho \rho} & =-\frac{\rho}{1+\rho ^{2}} \\
+\Gamma ^{\rho}_{~\theta \theta} & =-\rho (1+\rho ^{2}) \\
+\Gamma ^{\theta}_{~\rho \theta} & =\frac{1}{\rho}
 \end{align}
 $$
