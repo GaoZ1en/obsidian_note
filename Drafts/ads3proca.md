@@ -27,22 +27,26 @@ $$
 $$\tag{.}
 \begin{align}
 \nabla ^{2}A^{\nu} & =\partial ^{2}A^{\nu}+g^{\rho \sigma}(2\Gamma ^{\nu}_{~\rho \lambda}\partial _{\sigma}A^{\lambda}-\Gamma ^{\lambda}_{~\rho \sigma}\partial _{\lambda}A^{\nu})+g^{\rho \sigma}(\partial _{\rho}\Gamma ^{\nu}_{~\sigma \lambda}A^{\lambda}+\Gamma ^{\nu}_{~\rho \lambda}\Gamma ^{\lambda}_{~\sigma \alpha}A^{\alpha}-\Gamma ^{\lambda}_{~\rho \sigma}\Gamma ^{\nu}_{~\lambda \alpha}A^{\alpha}) \\
-\nabla _{\mu}\nabla ^{\nu}A^{\mu} & =g^{\nu \rho}\partial _{\rho}(\partial _{\mu}A^{\mu})+g^{\nu \rho}(\Gamma ^{\mu}_{\rho \lambda}\partial _{\mu}A^{\lambda}-\Gamma ^{\lambda}_{~\mu \rho}\partial _{\lambda}A^{\mu}+\Gamma ^{\mu}_{~\mu \lambda}\partial _{\rho}A^{\lambda})+g^{\nu \rho}(\partial _{\mu}\Gamma ^{\mu}_{~\rho \lambda}A^{\lambda}-\Gamma ^{\lambda}_{~\mu \rho}\Gamma ^{\mu}_{~\lambda \alpha}A^{\alpha}+\Gamma ^{\mu}_{~\mu \lambda}\Gamma ^{\lambda}_{~\rho \alpha}A^{\alpha}) \\
+\nabla _{\mu}\nabla ^{\nu}A^{\mu} & =g^{\nu \rho}\partial _{\rho}(\partial _{\mu}A^{\mu})+g^{\nu \rho}\Gamma ^{\mu}_{~\mu \lambda}\partial _{\rho}A^{\lambda}+g^{\nu \rho}(\partial _{\mu}\Gamma ^{\mu}_{~\rho \lambda}A^{\lambda}-\Gamma ^{\lambda}_{~\mu \rho}\Gamma ^{\mu}_{~\lambda \alpha}A^{\alpha}+\Gamma ^{\mu}_{~\mu \lambda}\Gamma ^{\lambda}_{~\rho \alpha}A^{\alpha}) \\
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
 \nabla ^{2}A^{\rho} & =\partial ^{2}A^{\rho}+g^{\rho \sigma}(2\Gamma ^{\rho}_{~\rho \lambda}\partial _{\sigma}A^{\lambda}-\Gamma ^{\lambda}_{~\rho \sigma}\partial _{\lambda}A^{\rho})+g^{\rho \sigma}(\partial _{\rho}\Gamma ^{\rho}_{~\sigma \lambda}A^{\lambda}+\Gamma ^{\rho}_{~\rho \lambda}\Gamma ^{\lambda}_{~\sigma \alpha}A^{\alpha}-\Gamma ^{\lambda}_{~\rho \sigma}\Gamma ^{\rho}_{~\lambda \alpha}A^{\alpha}) \\
- & =\partial ^{2}A^{\rho}+g^{\rho \sigma}
+ & =\partial ^{2}A^{\rho}-2\rho\partial _{t}A^{t}-2\frac{1}{\rho}(1+\rho ^{2})\partial _{\theta}A^{\theta}  
 \end{align}
 $$
 
-
-
-
-
-
+$$\tag{.}
+\begin{align}
+\nabla _{\mu}\nabla ^{\nu}A^{\mu} & =g^{\rho \rho}\partial _{\rho}(\partial _{\mu}A^{\mu})+g^{\rho \rho}\Gamma ^{\mu}_{\mu \lambda}\partial _{\rho}A^{\lambda}+g^{\rho \rho}(\partial _{\mu}\Gamma ^{\mu}_{\rho \lambda}A^{\lambda}-\Gamma ^{\lambda}_{\mu \rho}\Gamma ^{\mu}_{\lambda \alpha}A^{\alpha}+\Gamma ^{\mu}_{\mu \lambda}\Gamma ^{\lambda}_{\rho \alpha}A^{\alpha}) \\
+ & =(1+\rho ^{2})\partial _{\rho}(\partial _{t}A^{t}+\partial _{\rho}A^{\rho}+\partial _{\theta}A^{\theta}) \\ 
+ & -\rho(1+\rho ^{2})\partial _{\rho}\left( \frac{1}{1+\rho ^{2}} \right)A^{\rho} \\
+ & -\left( \frac{\rho ^{2}}{(1+\rho ^{2})}\right)A^{\rho} \\
+ & -\left( \frac{\rho ^{2}}{1+\rho ^{2}} \right)A^{\rho}
+\end{align}
+$$
 
 
 $$\tag{.}
