@@ -12,4 +12,16 @@ note that in the Chevalley basis of a semi simple Lie algebra $\displaystyle{\ma
 
 # Cartan matrix
 
-the only free parameters occurring in the Chevalley-Serre relations are the entries of the Cartan matrix, and the classification of simple Lie algebras therefore amounts to the classification of their Cartan matrices. 
+the only free parameters occurring in the Chevalley-Serre relations are the entries of the Cartan matrix, and the classification of simple Lie algebras therefore amounts to the classification of their Cartan matrices. here we list some properties of Cartan matrices of simple Lie algebras
+
+1. $\displaystyle{A^{ii}=2}$
+2. $\displaystyle{A^{ij}=0\implies A^{ji}=0}$
+3. $\displaystyle{A^{ij}=(\alpha ^{(i)},{\alpha ^{(j)}}^{\vee})\in \mathbb{Z}}$
+4. $\displaystyle{(\alpha ^{(i)},\alpha ^{(j)})\leqslant0\quad\forall i\neq j}$
+5. $\displaystyle{\det A\neq0}$
+
+in terms of the root system $\displaystyle{\Phi}$, the splitting of a semisimple Lie algebra $\displaystyle{\mathfrak{g}=\mathfrak{g}_{(1)}\oplus\dots \oplus \mathfrak{g}_{(n)}}$ into its simple summands $\displaystyle{\mathfrak{g}_{(p)}}$ is expressed through the fact that $\displaystyle{\Phi}$ can be written as the sum of irreducible subsystems $\displaystyle{\Phi _{(p)}}$. this restriction from semisimple to simple Lie algebras thus means that the Cartan matrix must be indecomposable in the sense that there is no renumbering of the simple roots which would bring $\displaystyle{A}$ to the block diagonal form. this implies $\displaystyle{\det A\neq0}$ can be strengthened to $\displaystyle{\det A>0}$.
+
+# Dynkin diagrams
+
+the enumeration of all possible solutions to condition 1-5 listed above is a purely combinatorial procedure. in order to describe the final result, it is convenient to introduce the notion of a Dynkin diagram: to each Cartan matrix one associates a diagram consisting of vertives and lines connecting them
