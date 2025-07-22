@@ -26,12 +26,24 @@ $$
 
 $$\tag{.}
 \begin{align}
-\nabla ^{2}A^{t}-(\mu ^{2}-2)A^{t} & =\partial ^{2}Ak
+\nabla ^{2}A^{t}-(\mu ^{2}-2)A^{t} & =\partial ^{2}A^{t}+g^{\rho \sigma}(2\Gamma ^{t}_{~\rho \lambda}\partial _{\sigma}A^{\lambda}-\Gamma ^{\lambda}_{~\rho \sigma}\partial _{\lambda}A^{t})+g^{\rho \sigma}(\partial _{\rho}\Gamma ^{t}_{~\sigma \lambda}A^{\lambda}+\Gamma ^{t}_{~\rho \lambda}\Gamma ^{\lambda}_{~\sigma \alpha}A^{\alpha}-\Gamma ^{\lambda}_{~\rho \sigma}\Gamma ^{t}_{\lambda \alpha}A^{\alpha})-(\mu ^{2}-2)A^{t} \\
+ & =-\frac{2\rho}{(1+\rho^{2})^{2}}\partial _{t}A^{\rho}+\frac{5\rho ^{2}+1}{\rho}\partial _{\rho}A^{t} +(4-\mu ^{2})A^{t} \\
+ & =-\frac{1}{1+\rho ^{2}}\partial _{t}^{2}A^{t}+(1+\rho ^{2})\partial _{\rho}^{2}A^{\rho}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{t}
+\end{align}
+$$
+
+
+
+
+$$\tag{.}
+\begin{align}
+\frac{5\rho ^{2}+1}{\rho}
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
+\mathrm{d}s^{2} & =-(1+\rho^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}\rho ^{2}}{1+\rho ^{2}}+\rho ^{2}\mathrm{d}\theta ^{2} \\
 \Gamma ^{t}_{~t\rho} & =\frac{\rho}{1+\rho ^{2}} \\
 \Gamma ^{\rho}_{~tt} & =\rho(1+\rho ^{2}) \\
 \Gamma ^{\rho}_{~\rho \rho} & =-\frac{\rho}{1+\rho ^{2}} \\
