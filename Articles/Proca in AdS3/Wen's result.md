@@ -20,3 +20,9 @@ $$
 
 act $\displaystyle{L_{1}=\frac{i}{2}e^{i(t+\phi)}\left( \sin r\partial _{t}+\frac{1}{\sin r}\partial _{\theta}-i\cos r\partial _{r} \right)}$ on (1.2) gives
 
+$$\tag{1.3}
+\begin{align}
+(L_{1})^{k}A^{\mu}_{0,0} & =F_{k,0}\tilde{\xi}^{\mu}_{-1} \\
+
+\end{align}
+$$
