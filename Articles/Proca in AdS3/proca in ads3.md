@@ -104,7 +104,7 @@ $$
 
 ---
 
-for $\displaystyle{\ell=0}$, there is only $\displaystyle{q_{1}}$ mode and $\displaystyle{q_{2}=0}$ (?), then
+for $\displaystyle{\ell=m=0}$, there is only $\displaystyle{q_{1}}$ mode and $\displaystyle{q_{2}=0}$ (?), then
 
 $$\tag{.}
 \begin{align}
@@ -115,9 +115,29 @@ the solution is
 
 $$\tag{.}
 \begin{align}
-\psi _{t} & = \frac{\rho ^{-1/2}}{i\omega _{1}}\left( (1+\rho ^{2})\partial _{\rho}q_{1}+\rho ^{-1}q_{1} \right)\\
-\psi _{\rho} & =\rho ^{-1/2}(1+\rho ^{2})^{-1}q_{1} \\
-\phi & =-\frac{1}{\ell}\rho ^{1/2}q_{1} \\
-q_{1} & =\rho ^{3/2}(1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i\omega _{k}t}
+A^{t} & =-\frac{1}{i\omega _{1}}(\rho ^{-1/2}\partial _{\rho}(\rho ^{3/2}(1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( -n,n+2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2n+2+\mu)t})+(1+\rho ^{2})^{-(4+\mu)/2}{}_{2}F_{1}\left( -n,n+2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2n+2+\mu)t}) \\
+A^{\rho} & =\rho (1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( -n,n+2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2n+2+\mu)t} \\
+A^{\theta} & =-i(1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( -n,n+2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2n+2+\mu)t}
+\end{align}
+$$
+
+for $\displaystyle{\ell=1}$, there
+
+$$\tag{.}
+\begin{align}
+q_{0} & =\psi _{t}\rho^{\frac{1}{2}} \\
+q_{1} & =\frac{\psi _{\rho}(1+\rho ^{2})-\ell\phi \rho ^{-1}}{2}\rho ^{\frac{1}{2}} \\
+q_{2} & =\frac{\psi _{\rho}(1+\rho ^{2})+\ell\phi \rho ^{-1}}{2}\rho ^{\frac{1}{2}} \\
+q_{1}+q_{2} & = \psi _{\rho}(1+\rho ^{2})\rho ^{1/2} \\
+A^{\rho} & =g^{\rho \rho}A_{\rho} \\
+ & =(1+\rho ^{2}) \\
+A^{\theta} & =\frac{i(-1)^{m}}{ \rho ^{2}}(q_{2}-q_{1})\rho ^{1/2}e^{im\theta}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+A_{a} & =\psi _{a}(t,\rho)e^{im\theta} \\
+A^{\theta} & =\frac{im}{\rho ^{2}}\phi(t,\rho)e^{im\theta}
 \end{align}
 $$
