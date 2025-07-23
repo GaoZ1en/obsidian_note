@@ -90,7 +90,7 @@ the solution of the above equation is
 
 $$\tag{1.10}
 \begin{align}
-q_{k} & =\rho ^{j_{k}+1/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};j_{k}+1;\frac{\rho ^{2}}{1+\rho ^{2}} \right)e^{-i\omega _{k}t}
+q_{k} & =\rho ^{j_{k}+1/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i\omega _{k}t}
 \end{align}
 $$
 
@@ -108,6 +108,16 @@ for $\displaystyle{\ell=0}$, there is only $\displaystyle{q_{1}}$ mode and $\dis
 
 $$\tag{.}
 \begin{align}
-\partial _{t}q_{0}-\partial _{r}(q_{1}+q_{2}) & =\partial _{r}q_{1}+\frac{1}{\rho}\left( \ell+1 \right)q_{1}
+q_{0} & =\frac{1}{i\omega _{1}}\left( (1+\rho ^{2})\partial _{\rho}q_{1}+\frac{1}{\rho}q_{1} \right)
+\end{align}
+$$
+the solution is
+
+$$\tag{.}
+\begin{align}
+\psi _{t} & = \frac{\rho ^{-1/2}}{i\omega _{1}}\left( (1+\rho ^{2})\partial _{\rho}q_{1}+\rho ^{-1}q_{1} \right)\\
+\psi _{\rho} & =\rho ^{-1/2}(1+\rho ^{2})^{-1}q_{1} \\
+\phi & =-\frac{1}{\ell}\rho ^{1/2}q_{1} \\
+q_{1} & =\rho ^{3/2}(1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i\omega _{k}t}
 \end{align}
 $$
