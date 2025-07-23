@@ -77,7 +77,7 @@ where
 
 $$\tag{1.9}
 \begin{align}
-\mathcal{D}_{\ell} & =-\partial _{t}^{2}+\partial _{r}^{2}-\left(\frac{\ell^{2}}{\rho ^{2}}+\mu ^{2}+\frac{1}{4}\right) \\
+\mathcal{D}_{\ell} & =-\partial _{t}^{2}+\partial _{r}^{2}-(1+\rho ^{2})\left(\frac{\ell^{2}}{\rho ^{2}}+\mu ^{2}+\frac{1}{4}\right) \\
 r & =\arctan \rho \\
 j_{k} & =\begin{cases}
 \ell+1 & \ell \in \mathbb{N}\ \text{if } k=1 \\
@@ -91,5 +91,23 @@ the solution of the above equation is
 $$\tag{1.10}
 \begin{align}
 q_{k} & =\rho ^{j_{k}+1/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};j_{k}+1;\frac{\rho ^{2}}{1+\rho ^{2}} \right)e^{-i\omega _{k}t}
+\end{align}
+$$
+
+with energy level
+
+$$\tag{1.11}
+\begin{align}
+\omega _{k} & =2n+j_{k}+|\mu|+1
+\end{align}
+$$
+
+---
+
+for $\displaystyle{\ell=0}$, there is only $\displaystyle{q_{1}}$ mode and $\displaystyle{q_{2}=0}$ (?), then
+
+$$\tag{.}
+\begin{align}
+\partial _{t}q_{0}-\partial _{r}(q_{1}+q_{2}) & =\partial _{r}q_{1}+\frac{1}{\rho}\left( \ell+1 \right)q_{1}
 \end{align}
 $$
