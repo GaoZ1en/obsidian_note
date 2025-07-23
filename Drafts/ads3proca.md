@@ -6,7 +6,7 @@ $$
 
 $$\tag{1.2}
 \begin{align}
-\tilde{\nabla}_{b}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})-\frac{\ell^{2}}{\rho ^{2}}(\tilde{\nabla}^{a}\phi-\psi ^{a})+\frac{\partial _{b}\rho}{\rho}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})+\mu ^{2}\psi ^{a} & =0 \\
+\tilde{\nabla}_{b}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})-\frac{\ell(\ell+d-3)}{\rho ^{2}}(\tilde{\nabla}^{a}\phi-\psi ^{a})+(d-2)\frac{\partial _{b}\rho}{\rho}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})+\mu ^{2}\psi ^{a} & =0 \\
 \tilde{\nabla}_{b}\tilde{\nabla}^{b}\phi+(d-4)\frac{\partial _{b}\rho}{\rho}\partial ^{b}\phi-\mu ^{2}\phi-\tilde{\nabla}_{b}\psi ^{b}-(d-4) \frac{\partial _{b}\rho}{\rho}\psi ^{b} & =0 \\
 \tilde{\nabla}_{b}\tilde{\nabla}^{b}\chi+\frac{d-4}{\rho}\partial ^{b}\rho\partial _{\rho}\chi-\left( \frac{\ell(\ell+d-3)+d-4}{\rho ^{2}}+\mu ^{2} \right)\chi & =0 \\
 \tilde{\nabla}_{b}\psi ^{b}+(d-2)\frac{\partial _{b}\rho}{\rho}\psi ^{b}-\frac{\ell(\ell+d-3)}{\rho ^{2}}\phi & =0
@@ -15,27 +15,16 @@ $$
 
 $$\tag{1.3}
 \begin{align}
-\nabla _{\mu}\nabla ^{\mu}A^{\nu}-\nabla _{\mu}\nabla ^{\nu}A^{\mu}-\mu ^{2}A^{\nu} & =0
+\ell(\ell+d-3)\tilde{\nabla}^{a}\phi & =\tilde{\nabla}^{a}(\rho ^{2}\tilde{\nabla}_{b}\psi ^{b})+(d-2)\tilde{\nabla}^{a}(\rho \partial _{b}\rho \psi ^{b})
 \end{align}
 $$
+
+insert (1.3) into (1.2.1) gives
 
 $$\tag{.}
 \begin{align}
-(1+\rho ^{2})\partial _{\rho}^{2}A^{t}+\frac{5\rho ^{2}+1}{\rho}\partial _{\rho}A^{t}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{t}+(4-\mu ^{2})A^{t}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\rho}A^{\rho}-\frac{\rho ^{2}-1}{\rho(1+\rho ^{2})^{2}}\partial _{t}A^{\rho}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\theta}A^{\theta} & =0 \\
--(1+\rho ^{2})\partial _{t}\partial _{\rho}A^{t}-2\rho \partial _{t}A^{t}-\frac{1}{1+\rho ^{2}}\partial _{t}^{2}A^{\rho}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{\rho}-\mu ^{2}A^{\rho}-(1+\rho ^{2})\partial _{\rho}\partial _{\theta}A^{\theta}-\frac{2(1+\rho ^{2})}{\rho}\partial _{\theta}A^{\theta} & =0 \\
--\frac{1}{\rho ^{2}}\partial _{t}\partial _{\theta}A^{t}-\frac{1}{\rho ^{2}}\partial _{\rho}\partial _{\theta}A^{\rho}+\frac{1}{\rho ^{3}}\partial _{\theta}A^{\rho}-\frac{1}{1+\rho ^{2}}\partial _{t}^{2}A^{\theta}+(1+\rho ^{2})\partial _{\rho}^{2}A^{\theta}+\frac{5\rho ^{2}+3}{\rho}\partial _{\rho}A^{\theta}+(4-\mu ^{2})A^{\theta} & =0
+\tilde{\nabla}_{b}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})-\frac{\ell(\ell+d-3)}{\rho ^{2}}(\tilde{\nabla}^{a}\phi-\psi ^{a})+(d-2)\frac{\partial _{b}\rho}{\rho}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})+\mu ^{2}\psi ^{a} & =0 \\
+-\tilde{\nabla}^{2}\psi ^{a}+R^{a}_{~b}\psi ^{b}-\frac{\tilde{\nabla}^{a}(\rho ^{2}\tilde{\nabla}_{b}\psi ^{b})+(d-2)\tilde{\nabla}^{a}(\rho \partial _{b}\rho \psi ^{b})}{\rho ^{2}}+\frac{\ell(\ell+d-3)}{\rho ^{2}}\psi ^{a}+(d-2) \frac{\partial _{b}\rho}{\rho}(\tilde{\nabla}^{a}\psi ^{b}-\tilde{\nabla}^{b}\psi ^{a})+\mu ^{2}\psi ^{a} & =0 \\
+-\tilde{\nabla}^{2}\psi ^{a}+R^{a}_{~b}\psi ^{b}+\left( \mu ^{2}+\frac{\ell(\ell+d-3)}{\rho ^{2}} \right)\psi ^{a}
 \end{align}
 $$
-
-make the following ansatz
-
-$$\tag{.}
-\begin{align}
-A^{t} & =e^{im\theta}\psi ^{t}(\rho) \\
-A^{\rho} & =e^{im\theta}\psi ^{\rho}(\rho) \\
-A^{\theta} & =ime^{im\theta}\phi(\rho)
-\end{align}
-$$
-
-and make the following substitution
-
