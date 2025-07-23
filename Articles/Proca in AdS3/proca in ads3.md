@@ -81,7 +81,7 @@ $$\tag{1.9}
 r & =\arctan \rho \\
 j_{k} & =\begin{cases}
 \ell+1 & \ell \in \mathbb{N}\ \text{if } k=1 \\
-\ell-1 & \ell \in \mathbb{N}\ \text{if } k=2
+\ell-1 & \ell \in \mathbb{N}_{+}\ \text{if } k=2
 \end{cases}
 \end{align}
 $$
