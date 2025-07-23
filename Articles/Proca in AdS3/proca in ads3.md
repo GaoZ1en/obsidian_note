@@ -115,9 +115,9 @@ the lowest mode is $\displaystyle{n=0}$, which gives
 
 $$\tag{.}
 \begin{align}
-A^{t} & =-\frac{1}{i\omega _{1}}(\rho ^{-1/2}\partial _{\rho}(\rho ^{3/2}(1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( 0,2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2+\mu)t})+(1+\rho ^{2})^{-(4+\mu)/2}{}_{2}F_{1}\left( 0,2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2+\mu)t}) \\
-A^{\rho} & =\rho (1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( 0,2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2+\mu)t} \\
-A^{\theta} & =-i(1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( 0,2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2+\mu)t}
+A^{t} & =-\frac{1}{i(|\mu|+2)}\left( \frac{5}{2}-\left( \frac{1}{2}+\mu \right)\rho ^{2}\right)(1+\rho ^{2})^{-(4+\mu)/2} e^{-i(2+\mu)t} \\
+A^{\rho} & =\rho (1+\rho ^{2})^{-(2+\mu)/2}e^{-i(2+\mu)t} \\
+A^{\theta} & =-i(1+\rho ^{2})^{-(2+\mu)/2}e^{-i(2+\mu)t}
 \end{align}
 $$
 
@@ -148,5 +148,13 @@ $$\tag{.}
 \begin{align} \\
 (1+\rho ^{2})\partial _{\rho}q_{1}+\frac{1}{\rho}(\ell+1)q_{1} & =? \\
 q_{1} & =\rho ^{\ell+3/2}(1+\rho ^{2})^{-(\ell+|\mu|+2)/2}{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i(2n+\ell+|\mu|+2)t}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+(1+\rho ^{2})\partial _{\rho}^{2}A^{t}+\frac{1+5\rho ^{2}}{\rho}\partial _{\rho}A^{t}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{t}+(4-\mu ^{2})A^{t}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\rho}A^{\rho}+\frac{1-\rho ^{2}}{\rho(1+\rho ^{2})^{2}}\partial _{t}A^{\rho}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\theta}A^{\theta} & =0 \\
+-(1+\rho ^{2})\partial _{t}\partial _{\rho}A^{t}-2\rho \partial _{t}A^{t}-\frac{1}{1+\rho ^{2}}\partial _{t}^{2}A^{\rho}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{\rho}-\mu ^{2}A^{\rho}-(1+\rho ^{2})\partial _{\rho}\partial _{\theta}A^{\theta}-\frac{2(1+\rho ^{2})}{\rho}\partial _{\theta}A^{\theta} & =0 \\
+-\frac{1}{\rho ^{2}}\partial _{t}\partial _{\theta}A^{t}-\frac{1}{\rho ^{2}}\partial _{\rho}\partial _{\theta}A^{\rho}+\frac{1}{\rho ^{3}}\partial _{\theta}A^{\rho}-\frac{1}{1+\rho ^{2}}\partial _{t}^{2}A^{\theta}+(1+\rho ^{2})\partial _{\rho}^{2}A^{\theta}+\frac{3+5\rho ^{2}}{\rho}\partial _{\rho}A^{\theta}+(4-\mu ^{2})A^{\theta} & =0
 \end{align}
 $$
