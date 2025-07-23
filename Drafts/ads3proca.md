@@ -20,7 +20,8 @@ $$
 
 $$\tag{.}
 \begin{align}
-(1+\rho ^{2})\partial _{\rho}^{2}A^{t}+\frac{5\rho ^{2}+1}{\rho}\partial _{\rho}A^{t}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{t}+(4-\mu ^{2})A^{t}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\rho}A^{\rho}-\frac{\rho ^{2}-1}{\rho(1+\rho ^{2})^{2}}\partial _{t}A^{\rho}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\theta}A^{\theta}=0
+(1+\rho ^{2})\partial _{\rho}^{2}A^{t}+\frac{5\rho ^{2}+1}{\rho}\partial _{\rho}A^{t}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{t}+(4-\mu ^{2})A^{t}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\rho}A^{\rho}-\frac{\rho ^{2}-1}{\rho(1+\rho ^{2})^{2}}\partial _{t}A^{\rho}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\theta}A^{\theta} & =0 \\
+-(1+\rho ^{2})\partial _{t}\partial _{\rho}A^{t}-2\rho \partial _{t}A^{t}-\frac{1}{1+\rho ^{2}}\partial _{t}^{2}A^{\rho}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{\rho}-\mu ^{2}A^{\rho}-(1+\rho ^{2})\partial _{\rho}\partial _{\theta}A^{\theta}-\frac{2(1+\rho ^{2})}{\rho}\partial _{\theta}A^{\theta} & =0
 \end{align}
 $$
 
@@ -33,21 +34,18 @@ $$
 
 $$\tag{.}
 \begin{align}
-\nabla ^{2}A^{\rho} & =\partial ^{2}A^{\rho}+g^{\rho \sigma}(2\Gamma ^{\rho}_{~\rho \lambda}\partial _{\sigma}A^{\lambda}-\Gamma ^{\lambda}_{~\rho \sigma}\partial _{\lambda}A^{\rho})+g^{\rho \sigma}(\partial _{\rho}\Gamma ^{\rho}_{~\sigma \lambda}A^{\lambda}+\Gamma ^{\rho}_{~\rho \lambda}\Gamma ^{\lambda}_{~\sigma \alpha}A^{\alpha}-\Gamma ^{\lambda}_{~\rho \sigma}\Gamma ^{\rho}_{~\lambda \alpha}A^{\alpha}) \\
- & =\partial ^{2}A^{\rho}-2\rho\partial _{t}A^{t}-2\frac{1}{\rho}(1+\rho ^{2})\partial _{\theta}A^{\theta}  
+\nabla ^{2}A^{\theta} & =\partial ^{2}A^{\theta}+g^{\rho \sigma}(2\Gamma ^{\theta}_{\rho \lambda}\partial _{\sigma}A^{\lambda}-\Gamma ^{\lambda}_{\rho \sigma}\partial _{\lambda}A^{\theta})+g^{\rho \sigma}(\partial _{\rho}\Gamma ^{\nu}_{\sigma \lambda}A^{\lambda}+\Gamma ^{\theta}_{\rho \lambda}\Gamma ^{\lambda}_{\sigma \alpha}A^{\alpha}-\Gamma ^{\lambda}_{\rho \sigma}\Gamma ^{\theta}_{\lambda \alpha}A^{\alpha}) \\
+ & =\partial ^{2}A^{\theta}+\frac{1}{\rho ^{3}}\partial _{\theta}A^{\rho}+\frac{3+5\rho ^{2}}{\rho}\partial _{\rho}A^{\theta}+4A^{\theta}
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-\nabla _{\mu}\nabla ^{\nu}A^{\mu} & =g^{\rho \rho}\partial _{\rho}(\partial _{\mu}A^{\mu})+g^{\rho \rho}\Gamma ^{\mu}_{\mu \lambda}\partial _{\rho}A^{\lambda}+g^{\rho \rho}(\partial _{\mu}\Gamma ^{\mu}_{\rho \lambda}A^{\lambda}-\Gamma ^{\lambda}_{\mu \rho}\Gamma ^{\mu}_{\lambda \alpha}A^{\alpha}+\Gamma ^{\mu}_{\mu \lambda}\Gamma ^{\lambda}_{\rho \alpha}A^{\alpha}) \\
- & =(1+\rho ^{2})\partial _{\rho}(\partial _{t}A^{t}+\partial _{\rho}A^{\rho}+\partial _{\theta}A^{\theta}) \\ 
- & -\rho(1+\rho ^{2})\partial _{\rho}\left( \frac{1}{1+\rho ^{2}} \right)A^{\rho} \\
- & -\left( \frac{\rho ^{2}}{(1+\rho ^{2})}\right)A^{\rho} \\
- & -\left( \frac{\rho ^{2}}{1+\rho ^{2}} \right)A^{\rho}
+\nabla _{\mu}\nabla ^{\theta}A^{\mu} & =g^{\theta \theta}\partial _{\theta}(\partial _{\mu}A^{\mu})+g^{\theta \theta}\Gamma ^{\mu}_{~\mu \lambda}\partial _{\theta}A^{\lambda}+g^{\theta \theta}(\partial _{\mu}\Gamma ^{\mu}_{~\theta \lambda}A^{\lambda}-\Gamma ^{\lambda}_{~\mu \theta}\Gamma ^{\mu}_{~\lambda \alpha}A^{\alpha}+\Gamma ^{\mu}_{~\mu \lambda}\Gamma ^{\lambda}_{~\theta \alpha}A^{\alpha}) \\
+ & =\frac{1}{\rho ^{2}}\partial _{\theta}(\partial _{t}A^{t}+\partial _{\rho}A^{\rho}+\partial _{\theta}A^{\theta}) \\
+
 \end{align}
 $$
-
 
 $$\tag{.}
 \begin{align}
