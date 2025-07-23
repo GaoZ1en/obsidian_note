@@ -14,7 +14,7 @@ $$
 
 $$\tag{1.3}
 \begin{align}
-\nabla ^{2}A^{\nu}-(\mu ^{2}-2)A^{\nu}=0
+\nabla _{\mu}\nabla ^{\mu}A^{\nu}-\nabla _{\mu}\nabla ^{\nu}A^{\mu}-\mu ^{2}A^{\nu} & =0
 \end{align}
 $$
 
@@ -26,3 +26,10 @@ $$\tag{.}
 \end{align}
 $$
 
+make the following ansatz
+
+$$\tag{.}
+\begin{align}
+
+\end{align}
+$$
