@@ -90,7 +90,7 @@ the solution of the above equation is
 
 $$\tag{1.10}
 \begin{align}
-q_{k} & =\rho ^{j_{k}+1/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i\omega _{k}t}
+q_{k} & =\rho ^{j_{k}+1/2}(1+\rho ^{2})^{-(j_{k}+|\mu|+1)/2}{}_{2}F_{1}\left( -n,-n+\omega _{k};|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i(2n+j_{k}+|\mu|+1)t}
 \end{align}
 $$
 
@@ -111,33 +111,42 @@ $$\tag{.}
 q_{0} & =\frac{1}{i\omega _{1}}\left( (1+\rho ^{2})\partial _{\rho}q_{1}+\frac{1}{\rho}q_{1} \right)
 \end{align}
 $$
-the solution is
+the lowest mode is $\displaystyle{n=0}$, which gives
 
 $$\tag{.}
 \begin{align}
-A^{t} & =-\frac{1}{i\omega _{1}}(\rho ^{-1/2}\partial _{\rho}(\rho ^{3/2}(1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( -n,n+2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2n+2+\mu)t})+(1+\rho ^{2})^{-(4+\mu)/2}{}_{2}F_{1}\left( -n,n+2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2n+2+\mu)t}) \\
-A^{\rho} & =\rho (1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( -n,n+2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2n+2+\mu)t} \\
-A^{\theta} & =-i(1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( -n,n+2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2n+2+\mu)t}
+A^{t} & =-\frac{1}{i\omega _{1}}(\rho ^{-1/2}\partial _{\rho}(\rho ^{3/2}(1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( 0,2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2+\mu)t})+(1+\rho ^{2})^{-(4+\mu)/2}{}_{2}F_{1}\left( 0,2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2+\mu)t}) \\
+A^{\rho} & =\rho (1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( 0,2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2+\mu)t} \\
+A^{\theta} & =-i(1+\rho ^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( 0,2+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2+\mu)t}
 \end{align}
 $$
 
 for $\displaystyle{\ell=1}$, there
 
+in general, we can write the solution (1.10) as
+
 $$\tag{.}
 \begin{align}
-q_{0} & =\psi _{t}\rho^{\frac{1}{2}} \\
-q_{1} & =\frac{\psi _{\rho}(1+\rho ^{2})-\ell\phi \rho ^{-1}}{2}\rho ^{\frac{1}{2}} \\
-q_{2} & =\frac{\psi _{\rho}(1+\rho ^{2})+\ell\phi \rho ^{-1}}{2}\rho ^{\frac{1}{2}} \\
-q_{1}+q_{2} & = \psi _{\rho}(1+\rho ^{2})\rho ^{1/2} \\
-A^{\rho} & =g^{\rho \rho}A_{\rho} \\
- & =(1+\rho ^{2}) \\
+A^{t} & =-(1+\rho ^{2})^{-1}\rho ^{-1/2}\left\{\frac{i}{\omega _{1}}\left[ (1+\rho ^{2})\partial _{\rho}q_{1} +\frac{1}{\rho}(\ell+1)q_{1} \right]+\frac{i}{\omega _{2}}\left[ (1+\rho ^{2})\partial _{\rho}q_{2}+\frac{1}{\rho}\left( \frac{1}{2}-\ell \right)q_{2} \right]\right\} \\
+A^{\rho} & =\rho ^{-1/2}(q_{1}+q_{2})e^{im\theta} \\
 A^{\theta} & =\frac{i(-1)^{m}}{ \rho ^{2}}(q_{2}-q_{1})\rho ^{1/2}e^{im\theta}
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-A_{a} & =\psi _{a}(t,\rho)e^{im\theta} \\
-A^{\theta} & =\frac{im}{\rho ^{2}}\phi(t,\rho)e^{im\theta}
+(1+\rho ^{2})\partial _{\rho}q_{1}+\frac{1}{\rho}(\ell+1)q_{1} & =(1+\rho ^{2})\partial _{\rho}\left( \rho ^{\ell+3/2}(1+\rho ^{2})^{-(\ell+|\mu|+2)/2}{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i(2n+\ell+|\mu|+2)t} \right) \\
+ & +(\ell+1)\rho ^{\ell+1/2}(1+\rho ^{2})^{-(\ell+|\mu|+2)/2}{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i(2n+\ell+|\mu|+2)t} \\
+ & =\left( \ell+\frac{3}{2} \right)\rho ^{\ell+1/2}(1+\rho ^{2})^{-(\ell+|\mu|)/2}{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2n+\ell+|\mu|+2)t} \\
+ & -(\ell+\left|\mu\right|+2)\rho ^{\ell+5/2}(1+\rho ^{2})^{-(\ell+|\mu|+2)/2}{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i(2n+\ell+|\mu|+2)t} \\
+ & +\rho ^{\ell+3/2}(1+\rho ^{2})^{-(\ell+|\mu|)/2}\partial _{\rho}{_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)}e^{-i(2n+\ell+|\mu|+2)t} \\
+ & =\rho ^{\ell+1/2}(1+\rho ^{2})^{-(\ell+|\mu|+2)/2}\left(  \left( \ell+\frac{3}{2} -\left( |\mu|+\frac{1}{2} \right)\rho ^{2}  \right){}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)+\rho ^{2}(1+\rho ^{2})\partial _{\rho}{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)\right)e^{-i(2n+\ell+|\mu|+2)t}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align} \\
+(1+\rho ^{2})\partial _{\rho}q_{1}+\frac{1}{\rho}(\ell+1)q_{1} & =? \\
+q_{1} & =\rho ^{\ell+3/2}(1+\rho ^{2})^{-(\ell+|\mu|+2)/2}{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i(2n+\ell+|\mu|+2)t}
 \end{align}
 $$

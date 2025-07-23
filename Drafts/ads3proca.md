@@ -28,4 +28,3 @@ $$\tag{.}
 \tilde{\nabla}_{b}\tilde{\nabla}^{b}\chi+\frac{d-4}{\rho}\partial ^{b}\rho\partial _{\rho}\chi-\left( \frac{\ell(\ell+d-3)+d-4}{\rho ^{2}}+\mu ^{2} \right)\chi & =0 \\
 \end{align}
 $$
-
