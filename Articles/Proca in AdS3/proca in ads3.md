@@ -121,13 +121,25 @@ q_{1} & =\rho ^{\ell+3/2}(1+\rho ^{2})^{-(\ell+|\mu|+2)/2}{}_{2}F_{1}\left( -n,n
 \end{align}
 $$
 
-the lowest energy level of this series is given by
+the lowest energy level of this series, $\displaystyle{n=0,\ell=m=0}$, is given by
+
+$$\tag{.}
+\begin{align}
+q_{1} & =\rho ^{3/2}(1+\rho ^{2})^{-(|\mu|+2)/2}e^{-i(|\mu|+2)t}
+\end{align}
+$$
 
 $$\tag{2.3}
 \begin{align}
-A^{t}_{1} & =-\frac{i}{2n+\ell+|\mu|+2}\rho ^{-1/2}(1+\rho ^{2})^{-1}\left(  (1+\rho ^{2})\partial _{\rho}q_{1}+\frac{\ell+1}{\rho}q_{1} +C_{1} \right)e^{im\theta} \\
-A^{\rho}_{1} & =\rho ^{-1/2}q_{1}e^{im\theta} \\
-A^{\theta}_{1} & =-i(-1)^{m}\rho ^{-3/2}q_{1}e^{im\theta}
+A^{t}_{1} & =-\frac{i}{|\mu|+2}\rho ^{-1/2}(1+\rho ^{2})^{-1}\left(  (1+\rho ^{2})\partial _{\rho}q_{1}+\frac{1}{\rho}q_{1} +C_{1} \right) \\
+A^{\rho}_{1} & =\rho(1+\rho ^{2})^{-(|\mu|+2)/2}e^{-i(|\mu|+2)t} \\
+A^{\theta}_{1} & =-i(1+\rho ^{2})^{-(|\mu|+2)/2}e^{-i(|\mu|+2)t}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\rho ^{-1/2}(1+\rho ^{2})^{-1}((1+\rho ^{2})\partial _{\rho}(\rho ^{3/2}(1+\rho ^{2})^{-(|\mu|+2)/2})+\rho ^{1/2}(1+\rho ^{2})^{-(|\mu|+2)/2}) & =\frac{3}{2}(1+\rho ^{2})^{-|\mu|/2}-(|\mu|+2)\rho ^{2}(1+\rho ^{2})^{-(|\mu|+2)/2}+\rho (1+\rho ^{2})^{-(|\mu|+2)/2}
 \end{align}
 $$
 
