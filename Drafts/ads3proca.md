@@ -33,6 +33,12 @@ $$
 
 对于AdS_{d+1}时空中自旋为s的场，**Breitenlohner-Freedman bound**是确定场稳定性的关键条件。
 
+$$\tag{.}
+\begin{align}
+{}_{2}F_{1}(a,b;0;z)
+\end{align}
+$$
+
 ### 基本公式
 
 对于自旋-s场，BF bound为：
