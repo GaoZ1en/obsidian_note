@@ -81,7 +81,7 @@ $$\tag{1.9}
 r & =\arctan \rho \\
 j_{k} & =\begin{cases}
 \ell+1 & \ell \in \mathbb{N}\ \text{if } k=1 \\
-\ell-1 & \ell \in \mathbb{N}_{+}\ \text{if } k=2
+\ell-1 & \ell \in \mathbb{N}\ \text{if } k=2
 \end{cases}
 \end{align}
 $$
@@ -156,5 +156,13 @@ $$\tag{.}
 (1+\rho ^{2})\partial _{\rho}^{2}A^{t}+\frac{1+5\rho ^{2}}{\rho}\partial _{\rho}A^{t}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{t}+(4-\mu ^{2})A^{t}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\rho}A^{\rho}+\frac{1-\rho ^{2}}{\rho(1+\rho ^{2})^{2}}\partial _{t}A^{\rho}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\theta}A^{\theta} & =0 \\
 -(1+\rho ^{2})\partial _{t}\partial _{\rho}A^{t}-2\rho \partial _{t}A^{t}-\frac{1}{1+\rho ^{2}}\partial _{t}^{2}A^{\rho}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{\rho}-\mu ^{2}A^{\rho}-(1+\rho ^{2})\partial _{\rho}\partial _{\theta}A^{\theta}-\frac{2(1+\rho ^{2})}{\rho}\partial _{\theta}A^{\theta} & =0 \\
 -\frac{1}{\rho ^{2}}\partial _{t}\partial _{\theta}A^{t}-\frac{1}{\rho ^{2}}\partial _{\rho}\partial _{\theta}A^{\rho}+\frac{1}{\rho ^{3}}\partial _{\theta}A^{\rho}-\frac{1}{1+\rho ^{2}}\partial _{t}^{2}A^{\theta}+(1+\rho ^{2})\partial _{\rho}^{2}A^{\theta}+\frac{3+5\rho ^{2}}{\rho}\partial _{\rho}A^{\theta}+(4-\mu ^{2})A^{\theta} & =0
+\end{align}
+$$
+
+
+$$\tag{.}
+\begin{align}
+{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1;\frac{1}{1+\rho ^{2}} \right) \\
+{}_{2}F_{1}\left(  -n,n+\ell+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)
 \end{align}
 $$
