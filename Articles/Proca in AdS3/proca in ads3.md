@@ -127,7 +127,7 @@ in general, we can write the solution (1.10) as
 
 $$\tag{.}
 \begin{align}
-A^{t} & =-(1+\rho ^{2})^{-1}\rho ^{-1/2}\left\{\frac{i}{\omega _{1}}\left[ (1+\rho ^{2})\partial _{\rho}q_{1} +\frac{1}{\rho}(\ell+1)q_{1} \right]+\frac{i}{\omega _{2}}\left[ (1+\rho ^{2})\partial _{\rho}q_{2}+\frac{1}{\rho}\left( \frac{1}{2}-\ell \right)q_{2} \right]\right\} \\
+A^{t} & =-(1+\rho ^{2})^{-1}\rho ^{-1/2}\left\{\frac{i}{2n+\ell+|\mu|+2}\left[ (1+\rho ^{2})\partial _{\rho}q_{1} +\frac{1}{\rho}(\ell+1)q_{1} \right]+\frac{i}{2n+\ell+|\mu|}\left[ (1+\rho ^{2})\partial _{\rho}q_{2}+\frac{1}{\rho}\left( \frac{1}{2}-\ell \right)q_{2} \right]\right\} \\
 A^{\rho} & =\rho ^{-1/2}(q_{1}+q_{2})e^{im\theta} \\
 A^{\theta} & =\frac{i(-1)^{m}}{ \rho ^{2}}(q_{2}-q_{1})\rho ^{1/2}e^{im\theta}
 \end{align}
@@ -164,5 +164,11 @@ $$\tag{.}
 \begin{align}
 {}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1;\frac{1}{1+\rho ^{2}} \right) \\
 {}_{2}F_{1}\left(  -n,n+\ell+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+
 \end{align}
 $$
