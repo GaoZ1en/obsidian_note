@@ -103,72 +103,41 @@ $$\tag{1.11}
 $$
 
 ---
+in general we have two sets of solutions. one of the series is given by
 
-for $\displaystyle{\ell=m=0}$, there is only $\displaystyle{q_{1}}$ mode and $\displaystyle{q_{2}=0}$ (?), then
-
-$$\tag{.}
+$$\tag{2.1}
 \begin{align}
-q_{0} & =\frac{1}{i\omega _{1}}\left( (1+\rho ^{2})\partial _{\rho}q_{1}+\frac{1}{\rho}q_{1} \right)
-\end{align}
-$$
-the lowest mode is $\displaystyle{n=0}$, which gives
-
-$$\tag{.}
-\begin{align}
-A^{t} & =-\frac{1}{i(|\mu|+2)}\left( \frac{5}{2}-\left( \frac{1}{2}+\mu \right)\rho ^{2}\right)(1+\rho ^{2})^{-(4+\mu)/2} e^{-i(2+\mu)t} \\
-A^{\rho} & =\rho (1+\rho ^{2})^{-(2+\mu)/2}e^{-i(2+\mu)t} \\
-A^{\theta} & =-i(1+\rho ^{2})^{-(2+\mu)/2}e^{-i(2+\mu)t}
+A^{t}_{1} & =-\frac{i}{2n+\ell+|\mu|+2}\rho ^{-1/2}(1+\rho ^{2})^{-1}\left(  (1+\rho ^{2})\partial _{\rho}q_{1}+\frac{\ell+1}{\rho}q_{1} +C_{1} \right)e^{im\theta} \\
+A^{\rho}_{1} & =\rho ^{-1/2}q_{1}e^{im\theta} \\
+A^{\theta}_{1} & =-i(-1)^{m}\rho ^{-3/2}q_{1}e^{im\theta}
 \end{align}
 $$
 
-for $\displaystyle{\ell=1}$, there
+where
 
-in general, we can write the solution (1.10) as
-
-$$\tag{.}
+$$\tag{2.2}
 \begin{align}
-A^{t} & =-(1+\rho ^{2})^{-1}\rho ^{-1/2}\left\{\frac{i}{2n+\ell+|\mu|+2}\left[ (1+\rho ^{2})\partial _{\rho}q_{1} +\frac{1}{\rho}(\ell+1)q_{1} \right]+\frac{i}{2n+\ell+|\mu|}\left[ (1+\rho ^{2})\partial _{\rho}q_{2}+\frac{1}{\rho}\left( \frac{1}{2}-\ell \right)q_{2} \right]\right\} \\
-A^{\rho} & =\rho ^{-1/2}(q_{1}+q_{2})e^{im\theta} \\
-A^{\theta} & =\frac{i(-1)^{m}}{ \rho ^{2}}(q_{2}-q_{1})\rho ^{1/2}e^{im\theta}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-(1+\rho ^{2})\partial _{\rho}q_{1}+\frac{1}{\rho}(\ell+1)q_{1} & =(1+\rho ^{2})\partial _{\rho}\left( \rho ^{\ell+3/2}(1+\rho ^{2})^{-(\ell+|\mu|+2)/2}{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i(2n+\ell+|\mu|+2)t} \right) \\
- & +(\ell+1)\rho ^{\ell+1/2}(1+\rho ^{2})^{-(\ell+|\mu|+2)/2}{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i(2n+\ell+|\mu|+2)t} \\
- & =\left( \ell+\frac{3}{2} \right)\rho ^{\ell+1/2}(1+\rho ^{2})^{-(\ell+|\mu|)/2}{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)e^{-i(2n+\ell+|\mu|+2)t} \\
- & -(\ell+\left|\mu\right|+2)\rho ^{\ell+5/2}(1+\rho ^{2})^{-(\ell+|\mu|+2)/2}{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i(2n+\ell+|\mu|+2)t} \\
- & +\rho ^{\ell+3/2}(1+\rho ^{2})^{-(\ell+|\mu|)/2}\partial _{\rho}{_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)}e^{-i(2n+\ell+|\mu|+2)t} \\
- & =\rho ^{\ell+1/2}(1+\rho ^{2})^{-(\ell+|\mu|+2)/2}\left(  \left( \ell+\frac{3}{2} -\left( |\mu|+\frac{1}{2} \right)\rho ^{2}  \right){}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)+\rho ^{2}(1+\rho ^{2})\partial _{\rho}{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)\right)e^{-i(2n+\ell+|\mu|+2)t}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align} \\
-(1+\rho ^{2})\partial _{\rho}q_{1}+\frac{1}{\rho}(\ell+1)q_{1} & =? \\
 q_{1} & =\rho ^{\ell+3/2}(1+\rho ^{2})^{-(\ell+|\mu|+2)/2}{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i(2n+\ell+|\mu|+2)t}
 \end{align}
 $$
 
-$$\tag{.}
+the lowest energy level of this series is given by
+
+$$\tag{2.3}
 \begin{align}
-(1+\rho ^{2})\partial _{\rho}^{2}A^{t}+\frac{1+5\rho ^{2}}{\rho}\partial _{\rho}A^{t}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{t}+(4-\mu ^{2})A^{t}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\rho}A^{\rho}+\frac{1-\rho ^{2}}{\rho(1+\rho ^{2})^{2}}\partial _{t}A^{\rho}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\theta}A^{\theta} & =0 \\
--(1+\rho ^{2})\partial _{t}\partial _{\rho}A^{t}-2\rho \partial _{t}A^{t}-\frac{1}{1+\rho ^{2}}\partial _{t}^{2}A^{\rho}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{\rho}-\mu ^{2}A^{\rho}-(1+\rho ^{2})\partial _{\rho}\partial _{\theta}A^{\theta}-\frac{2(1+\rho ^{2})}{\rho}\partial _{\theta}A^{\theta} & =0 \\
--\frac{1}{\rho ^{2}}\partial _{t}\partial _{\theta}A^{t}-\frac{1}{\rho ^{2}}\partial _{\rho}\partial _{\theta}A^{\rho}+\frac{1}{\rho ^{3}}\partial _{\theta}A^{\rho}-\frac{1}{1+\rho ^{2}}\partial _{t}^{2}A^{\theta}+(1+\rho ^{2})\partial _{\rho}^{2}A^{\theta}+\frac{3+5\rho ^{2}}{\rho}\partial _{\rho}A^{\theta}+(4-\mu ^{2})A^{\theta} & =0
+A^{t}_{1} & =-\frac{i}{2n+\ell+|\mu|+2}\rho ^{-1/2}(1+\rho ^{2})^{-1}\left(  (1+\rho ^{2})\partial _{\rho}q_{1}+\frac{\ell+1}{\rho}q_{1} +C_{1} \right)e^{im\theta} \\
+A^{\rho}_{1} & =\rho ^{-1/2}q_{1}e^{im\theta} \\
+A^{\theta}_{1} & =-i(-1)^{m}\rho ^{-3/2}q_{1}e^{im\theta}
 \end{align}
 $$
 
 
-$$\tag{.}
-\begin{align}
-{}_{2}F_{1}\left( -n,n+\ell+|\mu|+2;|\mu|+1;\frac{1}{1+\rho ^{2}} \right) \\
-{}_{2}F_{1}\left(  -n,n+\ell+|\mu|;|\mu|+1; \frac{1}{1+\rho ^{2}} \right)
-\end{align}
-$$
 
 $$\tag{.}
 \begin{align}
-
+A^{t}_{2} & =-\frac{i}{2n+\ell+|\mu|}\rho ^{-1/2}(1+\rho ^{2})^{-1}\left(  (1+\rho ^{2})\partial _{\rho}q_{2}+\frac{1}{\rho}\left( \frac{1}{2}-\ell \right)q_{2}+C \right)e^{im\theta} \\
+A^{\rho}_{2} & =\rho ^{-1/2}q_{2}e^{im\theta} \\
+A^{\theta}_{2} & =i(-1)^{m}\rho ^{-3/2}q_{2}e^{im\theta}
 \end{align}
 $$
+
