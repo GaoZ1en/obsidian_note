@@ -6,9 +6,10 @@ $$\tag{1.1}
 F_{k,\bar{k}}(t,r,\theta) & =(-1)^{k+\bar{k}} \frac{\Gamma(\mu+k+2)}{\Gamma(\mu+2)} \frac{\Gamma(\mu+\bar{k}+2)}{\Gamma(\mu+2)} (\sin r)^{|k-\bar{k}|}(\cos r)^{\mu+2} \\
  & \times{}_{2}F_{1}(-n,n+m+\mu+2;\mu+2;\cos ^{2}r)e^{i(k+\bar{k}+\mu+2)t} e^{i(k-\bar{k})\theta} \\
 m & =k-\bar{k}+1 \\
-n & =
+n & =?
 \end{align}
 $$
+
 
 ---
 

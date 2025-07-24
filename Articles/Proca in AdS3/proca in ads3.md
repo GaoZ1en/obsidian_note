@@ -55,7 +55,9 @@ $$
 
 $$\tag{1.6'}
 \begin{align}
-(1+\rho ^{2})\partial _{\rho}^{2}A^{t}+\frac{1+5\rho ^{2}}{\rho}\partial _{\rho}A^{t}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{t}+(4-\mu ^{2})A^{t}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\rho}A^{\rho}
+(1+\rho ^{2})\partial _{\rho}^{2}A^{t}+\frac{1+5\rho ^{2}}{\rho}\partial _{\rho}A^{t}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{t}+(4-\mu ^{2})A^{t}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\rho}A^{\rho}+\frac{1-\rho ^{2}}{\rho(1+\rho ^{2})^{2}}\partial _{t}A^{\rho}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\theta}A^{\theta} & =0 \\
+-(1+\rho ^{2})\partial _{t}\partial _{\rho}A^{t}-2\rho \partial _{t}A^{t}-\frac{1}{1+\rho ^{2}}\partial _{t}^{2}A^{\rho}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{\rho}-\mu ^{2}A^{\rho}-(1+\rho ^{2})\partial _{\rho}\partial _{\theta}A^{\theta}-\frac{2(1+\rho ^{2})}{\rho}\partial _{\theta}A^{\theta} & =0 \\
+\frac{1}{\rho ^{2}}\partial _{t}\partial _{\theta}A^{t}-\frac{1}{\rho ^{2}}\partial _{\rho}\partial _{\theta}A^{\rho}+\frac{1}{\rho ^{3}}\partial _{\theta}A^{\rho}-\frac{1}{1+\rho ^{2}}\partial _{t}^{2}A^{\theta}+(1+\rho ^{2})\partial _{\rho}^{2}A^{\theta}+\frac{3+5\rho ^{2}}{\rho}\partial _{\rho}A^{\theta}+(4-)\mu ^{2}A^{\theta} & =0
 \end{align}
 $$
 
@@ -170,4 +172,16 @@ A^{\rho}_{2} & =\rho ^{-1}(1+\rho ^{2})^{-|\mu|/2}e^{-i|\mu|t} \\
 A^{\theta}_{2} & =i\rho ^{-2}(1+\rho ^{2})^{-|\mu|/2}e^{-i|\mu|t}
 \end{align}
 $$
+
+Wen's result is
+
+$$\tag{1.1}
+\begin{align}
+\sqrt{ k!\bar{k}! \frac{\Gamma(\mu+2+k)}{\Gamma(\mu+2)} \frac{\Gamma(\mu+\bar{k})}{\Gamma(\mu)} }A^{\mu}_{k,\bar{k}}(t,r,\theta) & =F_{k,\bar{k}}\tilde{\xi}^{\mu}_{-1}+2\bar{k}F_{k,\bar{k}-1}\tilde{\xi}^{\mu}_{0}+\bar{k}(\bar{k}-1)F_{k,\bar{k}-2}\tilde{\xi}^{\mu}_{1} \\
+F_{k,\bar{k}}(t,r,\theta) & =(-1)^{k+\bar{k}} \frac{\Gamma(\mu+k+2)}{\Gamma(\mu+2)} \frac{\Gamma(\mu+\bar{k}+2)}{\Gamma(\mu+2)} (\sin r)^{|k-\bar{k}|}(\cos r)^{\mu+2} \\
+ & \times{}_{2}F_{1}(-n,n+m+\mu+2;\mu+2;\cos ^{2}r)e^{i(k+\bar{k}+\mu+2)t} e^{i(k-\bar{k})\theta}
+\end{align}
+$$
+
+with energy level $\displaystyle{\omega=k+\bar{k}+\mu+1}$.
 
