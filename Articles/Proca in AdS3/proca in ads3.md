@@ -53,6 +53,12 @@ $$\tag{1.6}
 \end{align}
 $$
 
+$$\tag{1.6'}
+\begin{align}
+(1+\rho ^{2})\partial _{\rho}^{2}A^{t}+\frac{1+5\rho ^{2}}{\rho}\partial _{\rho}A^{t}+\frac{1}{\rho ^{2}}\partial _{\theta}^{2}A^{t}+(4-\mu ^{2})A^{t}+\frac{1}{1+\rho ^{2}}\partial _{t}\partial _{\rho}A^{\rho}
+\end{align}
+$$
+
 here we denote $\displaystyle{\ell=|m|}$. define
 
 $$\tag{1.7}
@@ -131,25 +137,37 @@ $$
 
 $$\tag{2.3}
 \begin{align}
-A^{t}_{1} & =-\frac{i}{|\mu|+2}\rho ^{-1/2}(1+\rho ^{2})^{-1}\left(  (1+\rho ^{2})\partial _{\rho}q_{1}+\frac{1}{\rho}q_{1} +C_{1} \right) \\
+A^{t}_{1} & =-\frac{i}{|\mu|+2}\left( \frac{3}{2}+\rho-\left( |\mu|+\frac{1}{2} \right)\rho ^{2} \right) (1+\rho ^{2})^{-(|\mu|+2)/2}e^{-i(|\mu|+2)t} \\
 A^{\rho}_{1} & =\rho(1+\rho ^{2})^{-(|\mu|+2)/2}e^{-i(|\mu|+2)t} \\
 A^{\theta}_{1} & =-i(1+\rho ^{2})^{-(|\mu|+2)/2}e^{-i(|\mu|+2)t}
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-\rho ^{-1/2}(1+\rho ^{2})^{-1}((1+\rho ^{2})\partial _{\rho}(\rho ^{3/2}(1+\rho ^{2})^{-(|\mu|+2)/2})+\rho ^{1/2}(1+\rho ^{2})^{-(|\mu|+2)/2}) & =\frac{3}{2}(1+\rho ^{2})^{-|\mu|/2}-(|\mu|+2)\rho ^{2}(1+\rho ^{2})^{-(|\mu|+2)/2}+\rho (1+\rho ^{2})^{-(|\mu|+2)/2}
-\end{align}
-$$
-
-
+it can be check that the solution satisfies the eom (1.4). the other series is given by
 
 $$\tag{.}
 \begin{align}
 A^{t}_{2} & =-\frac{i}{2n+\ell+|\mu|}\rho ^{-1/2}(1+\rho ^{2})^{-1}\left(  (1+\rho ^{2})\partial _{\rho}q_{2}+\frac{1}{\rho}\left( \frac{1}{2}-\ell \right)q_{2}+C \right)e^{im\theta} \\
 A^{\rho}_{2} & =\rho ^{-1/2}q_{2}e^{im\theta} \\
 A^{\theta}_{2} & =i(-1)^{m}\rho ^{-3/2}q_{2}e^{im\theta}
+\end{align}
+$$
+
+with
+
+$$\tag{.}
+\begin{align}
+q_{2} & =\rho ^{\ell-1/2}(1+\rho ^{2})^{-(\ell+|\mu|)/2}{}_{2}F_{1}\left( -n,n+\ell+|\mu|;|\mu|+1;\frac{1}{1+\rho ^{2}} \right)e^{-i(2n+\ell+|\mu|)t}
+\end{align}
+$$
+
+the lowest energy level of this series, $\displaystyle{n=0,\ell=m=0}$, is given by
+
+$$\tag{.}
+\begin{align}
+A^{t}_{2} & =\frac{i}{|\mu|}(1+\rho ^{2})^{-|\mu|/2}\left( \frac{1}{2}+|\mu|(1+\rho ^{2}) \right)e^{-i|\mu|t} \\
+A^{\rho}_{2} & =\rho ^{-1}(1+\rho ^{2})^{-|\mu|/2}e^{-i|\mu|t} \\
+A^{\theta}_{2} & =i\rho ^{-2}(1+\rho ^{2})^{-|\mu|/2}e^{-i|\mu|t}
 \end{align}
 $$
 
