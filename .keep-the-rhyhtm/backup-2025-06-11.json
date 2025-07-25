@@ -6913,6 +6913,184 @@
         "charCountStart": 4988,
         "changes": [],
         "id": 265
+      },
+      {
+        "date": "2025-07-24",
+        "filePath": "Drafts/ads3proca.md",
+        "wordCountStart": 459,
+        "charCountStart": 2148,
+        "changes": [
+          {
+            "timeKey": "19:55",
+            "w": 165,
+            "c": 1556
+          },
+          {
+            "timeKey": "20:05",
+            "w": 398,
+            "c": 2883
+          },
+          {
+            "timeKey": "20:10",
+            "w": 557,
+            "c": 3721
+          },
+          {
+            "timeKey": "20:20",
+            "w": 30,
+            "c": 167
+          },
+          {
+            "timeKey": "20:25",
+            "w": -1082,
+            "c": -8039
+          }
+        ],
+        "id": 268
+      },
+      {
+        "date": "2025-07-24",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 3030,
+        "charCountStart": 15071,
+        "changes": [],
+        "id": 269
+      },
+      {
+        "date": "2025-07-24",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 1580,
+        "charCountStart": 6988,
+        "changes": [
+          {
+            "timeKey": "19:45",
+            "w": -1,
+            "c": -4
+          },
+          {
+            "timeKey": "19:50",
+            "w": 43,
+            "c": 192
+          },
+          {
+            "timeKey": "20:10",
+            "w": 5,
+            "c": 41
+          },
+          {
+            "timeKey": "20:25",
+            "w": 3,
+            "c": 6
+          },
+          {
+            "timeKey": "20:35",
+            "w": -558,
+            "c": -2271
+          },
+          {
+            "timeKey": "20:40",
+            "w": -35,
+            "c": -129
+          },
+          {
+            "timeKey": "20:45",
+            "w": 3,
+            "c": 6
+          },
+          {
+            "timeKey": "20:50",
+            "w": -189,
+            "c": -934
+          },
+          {
+            "timeKey": "20:55",
+            "w": 142,
+            "c": 593
+          },
+          {
+            "timeKey": "21:00",
+            "w": 108,
+            "c": 428
+          },
+          {
+            "timeKey": "21:05",
+            "w": 2,
+            "c": 13
+          },
+          {
+            "timeKey": "21:40",
+            "w": -8,
+            "c": -19
+          },
+          {
+            "timeKey": "21:45",
+            "w": 93,
+            "c": 450
+          },
+          {
+            "timeKey": "21:50",
+            "w": 108,
+            "c": 415
+          },
+          {
+            "timeKey": "21:55",
+            "w": -62,
+            "c": -233
+          },
+          {
+            "timeKey": "22:00",
+            "w": 187,
+            "c": 781
+          },
+          {
+            "timeKey": "22:05",
+            "w": 164,
+            "c": 699
+          },
+          {
+            "timeKey": "22:10",
+            "w": 14,
+            "c": 68
+          },
+          {
+            "timeKey": "22:20",
+            "w": -20,
+            "c": -109
+          },
+          {
+            "timeKey": "22:45",
+            "w": 46,
+            "c": 208
+          },
+          {
+            "timeKey": "22:50",
+            "w": -46,
+            "c": -208
+          }
+        ],
+        "id": 270
+      },
+      {
+        "date": "2025-07-24",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1447,
+        "changes": [],
+        "id": 271
+      },
+      {
+        "date": "2025-07-24",
+        "filePath": "Articles/Proca in AdS3/Wen's result.md",
+        "wordCountStart": 461,
+        "charCountStart": 1925,
+        "changes": [
+          {
+            "timeKey": "22:05",
+            "w": 0,
+            "c": 2
+          }
+        ],
+        "id": 272
       }
     ],
     "daysWithCompletedGoal": [
