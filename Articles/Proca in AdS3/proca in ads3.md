@@ -185,3 +185,4 @@ $$
 
 with energy level $\displaystyle{\omega=k+\bar{k}+\mu+1}$.
 
+PROTON_USE_WINED3D=1 %command% PROTON_HIDE_NVIDIA_GPU=0 PROTON_ENABLE_NVAPI=1

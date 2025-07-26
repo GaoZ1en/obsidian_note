@@ -7091,6 +7091,20 @@
           }
         ],
         "id": 272
+      },
+      {
+        "date": "2025-07-25",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 1579,
+        "charCountStart": 6981,
+        "changes": [
+          {
+            "timeKey": "12:45",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 273
       }
     ],
     "daysWithCompletedGoal": [
