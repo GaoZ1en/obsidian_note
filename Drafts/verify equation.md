@@ -40,24 +40,28 @@ $$\tag{.}
 \begin{align}
 \nabla _{\mu}\nabla ^{\mu}A^{\phi} & =g^{\mu \rho}\partial _{\mu}\partial _{\rho}A^{\phi}+g^{\mu \rho}(2\Gamma ^{\phi}_{\rho \sigma}\partial _{\mu}A^{\sigma}-\Gamma ^{r}_{\mu \rho}\partial _{r}A^{\phi})+g^{\mu \rho}(\partial _{\mu}\Gamma ^{\phi}_{\rho \sigma}A^{\sigma}-\Gamma ^{r}_{\mu \rho}\Gamma ^{\phi}_{r\phi}A^{\phi}+\Gamma ^{\phi}_{\mu \sigma}\Gamma ^{\sigma}_{\rho \lambda}A^{\lambda}) \\
  & =-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{\phi}+(1+r^{2})\partial _{r}^{2}A^{\phi}+\frac{1}{r^{2}}\partial _{\phi}^{2} \\
- & +\frac{2(1+r^{2})}{r}\partial _{r}A^{\phi}+\frac{2}{r^{3}}\partial _{\phi}A^{r} \\
- & +\frac{1+3r^{2}}{r}\partial _{r}A^{\phi}+2A^{\phi} \\
+ & +\frac{2}{r^{3}}\partial _{\phi}A^{r}+\frac{3+5r^{2}}{r}\partial _{r}A^{\phi}+2A^{\phi} \\
 \nabla _{\mu}\nabla ^{\phi}A^{\mu} & =g^{\phi \phi}\partial _{\mu}\partial _{\phi}A^{\mu}+g^{\phi \phi}\Gamma ^{\mu}_{\mu r}\partial _{\phi}A^{r}+g^{\phi \phi}(\partial _{r}\Gamma ^{r}_{\phi \phi}A^{\phi}-\Gamma ^{\sigma}_{\mu \phi}\Gamma ^{\mu}_{\sigma \phi}A^{\phi}+\Gamma ^{\mu}_{\mu r}\Gamma ^{r}_{\phi \phi}A^{\phi}) \\
- & =
+ & =\frac{1}{r^{2}}\partial _{t}\partial _{\phi}A^{t}+\frac{1}{r^{2}}\partial _{r}\partial _{\phi}A^{r}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{\phi} \\
+ & +\frac{1}{r^{3}}\partial _{\phi}A^{r}-2A^{\phi} \\
+\nabla _{\mu}F^{\mu \nu}-\mu ^{2}A^{\phi} & =-\frac{1}{r^{2}}\partial _{t}\partial _{\phi}A^{t}-\frac{1}{r^{2}}\partial _{r}\partial _{\phi}A^{r}+\frac{1}{r^{3}}\partial _{\phi}A^{r}-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{\phi}+(1+r^{2})\partial _{r}^{2}A^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}A^{\phi}+(4-\mu ^{2})A^{\phi}
 \end{align}
 $$
 
+make the following ansatz
+
 $$\tag{.}
 \begin{align}
-\mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2} \\
-\Gamma ^{t}_{tr} & =\frac{r}{1+r ^{2}} \\
-\Gamma ^{r}_{tt} & =r(1+r ^{2}) \\
-\Gamma ^{r}_{rr} & =-\frac{r}{1+r ^{2}} \\
-\Gamma ^{r}_{\phi \phi} & =-r (1+r ^{2}) \\
-\Gamma ^{\phi}_{r\phi} & =\frac{1}{r} \\
-g^{\mu \nu}\Gamma ^{r}_{\mu \nu} & =-\frac{1+3r^{2}}{r} \\
-\Gamma ^{\mu}_{\mu r} & =\frac{1}{r} \\
-\Gamma ^{\mu}_{\sigma r}\Gamma ^{\sigma}_{\mu r} & =\frac{2r^{2}}{(1+r^{2})^{2}}+\frac{1}{r^{2}} \\
-g^{\mu \rho}\partial _{\mu}\partial _{\rho} & =-\frac{1}{1+r^{2}}\partial _{t}^{2}+(1+r^{2})\partial _{r}^{2}+\frac{1}{r^{2}}\partial _{\phi}^{2}
+A^{\mu} & =e^{-i\omega t}e^{im\phi}(\tilde{A}^{t},\tilde{A}^{r},\tilde{A}^{\phi})
+\end{align}
+$$
+
+the eom becomes
+
+$$\tag{.}
+\begin{align}
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{t}-\frac{m^{2}}{r^{2}}\tilde{A}^{t}+\frac{1+5r^{2}}{r}\partial _{r}\tilde{A}^{t}+(4-\mu ^{2})\tilde{A}^{t}-\frac{i\omega}{1+r^{2}}\partial _{r}\tilde{A}^{r}-\frac{i\omega(1-r^{2})}{r(1+r^{2})^{2}}\tilde{A}^{r}+\frac{\omega m}{1+r^{2}}\tilde{A}^{\phi} & =0 \\
+i\omega(1+r^{2})\partial _{r}\tilde{A}^{t}+2i\omega r\tilde{A}^{t}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\frac{m^{2}}{r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r}-im(1+r^{2})\partial _{r}\tilde{A}^{\phi}-\frac{2im(1+r^{2})}{r}\tilde{A}^{\phi} & =0 \\
+-\frac{\omega m}{r^{2}}\tilde{A}^{t}-\frac{im}{r^{2}}\partial _{r}\tilde{A}^{r}+\frac{im}{r^{3}}\tilde{A}^{r}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{\phi}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+(4-\mu ^{2})\tilde{A}^{\phi} & =0
 \end{align}
 $$

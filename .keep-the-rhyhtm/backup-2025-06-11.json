@@ -7119,6 +7119,170 @@
           }
         ],
         "id": 274
+      },
+      {
+        "date": "2025-07-27",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 1586,
+        "charCountStart": 7058,
+        "changes": [
+          {
+            "timeKey": "10:20",
+            "w": -7,
+            "c": -77
+          }
+        ],
+        "id": 275
+      },
+      {
+        "date": "2025-07-27",
+        "filePath": "Drafts/verify equation.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "10:20",
+            "w": 16,
+            "c": 84
+          },
+          {
+            "timeKey": "10:25",
+            "w": 118,
+            "c": 549
+          },
+          {
+            "timeKey": "10:30",
+            "w": 84,
+            "c": 407
+          },
+          {
+            "timeKey": "10:35",
+            "w": 99,
+            "c": 432
+          },
+          {
+            "timeKey": "10:40",
+            "w": 198,
+            "c": 794
+          },
+          {
+            "timeKey": "10:45",
+            "w": 22,
+            "c": 57
+          },
+          {
+            "timeKey": "10:50",
+            "w": -50,
+            "c": -164
+          },
+          {
+            "timeKey": "10:55",
+            "w": 113,
+            "c": 483
+          },
+          {
+            "timeKey": "11:00",
+            "w": 33,
+            "c": 96
+          },
+          {
+            "timeKey": "11:05",
+            "w": 3,
+            "c": 13
+          },
+          {
+            "timeKey": "11:10",
+            "w": 296,
+            "c": 1294
+          },
+          {
+            "timeKey": "11:15",
+            "w": 106,
+            "c": 384
+          },
+          {
+            "timeKey": "11:20",
+            "w": -60,
+            "c": -226
+          },
+          {
+            "timeKey": "11:25",
+            "w": 58,
+            "c": 200
+          },
+          {
+            "timeKey": "11:30",
+            "w": 60,
+            "c": 200
+          },
+          {
+            "timeKey": "11:35",
+            "w": -125,
+            "c": -483
+          },
+          {
+            "timeKey": "11:40",
+            "w": -4,
+            "c": -36
+          },
+          {
+            "timeKey": "11:45",
+            "w": 18,
+            "c": 88
+          },
+          {
+            "timeKey": "11:50",
+            "w": 63,
+            "c": 224
+          },
+          {
+            "timeKey": "11:55",
+            "w": 163,
+            "c": 692
+          },
+          {
+            "timeKey": "12:00",
+            "w": 114,
+            "c": 462
+          },
+          {
+            "timeKey": "12:05",
+            "w": -46,
+            "c": -202
+          },
+          {
+            "timeKey": "12:10",
+            "w": 76,
+            "c": 328
+          },
+          {
+            "timeKey": "12:35",
+            "w": 68,
+            "c": 284
+          },
+          {
+            "timeKey": "12:40",
+            "w": -19,
+            "c": -80
+          }
+        ],
+        "id": 276
+      },
+      {
+        "date": "2025-07-27",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1447,
+        "changes": [],
+        "id": 277
+      },
+      {
+        "date": "2025-07-27",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 3030,
+        "charCountStart": 15071,
+        "changes": [],
+        "id": 278
       }
     ],
     "daysWithCompletedGoal": [
@@ -7148,7 +7312,8 @@
       "2025-07-19",
       "2025-07-20",
       "2025-07-22",
-      "2025-07-23"
+      "2025-07-23",
+      "2025-07-27"
     ]
   }
 }
