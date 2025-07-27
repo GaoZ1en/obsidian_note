@@ -39,10 +39,13 @@ $$
 $$\tag{.}
 \begin{align}
 \nabla _{\mu}\nabla ^{\mu}A^{\phi} & =g^{\mu \rho}\partial _{\mu}\partial _{\rho}A^{\phi}+g^{\mu \rho}(2\Gamma ^{\phi}_{\rho \sigma}\partial _{\mu}A^{\sigma}-\Gamma ^{r}_{\mu \rho}\partial _{r}A^{\phi})+g^{\mu \rho}(\partial _{\mu}\Gamma ^{\phi}_{\rho \sigma}A^{\sigma}-\Gamma ^{r}_{\mu \rho}\Gamma ^{\phi}_{r\phi}A^{\phi}+\Gamma ^{\phi}_{\mu \sigma}\Gamma ^{\sigma}_{\rho \lambda}A^{\lambda}) \\
- & =-
+ & =-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{\phi}+(1+r^{2})\partial _{r}^{2}A^{\phi}+\frac{1}{r^{2}}\partial _{\phi}^{2} \\
+ & +\frac{2(1+r^{2})}{r}\partial _{r}A^{\phi}+\frac{2}{r^{3}}\partial _{\phi}A^{r} \\
+ & +\frac{1+3r^{2}}{r}\partial _{r}A^{\phi}+2A^{\phi} \\
+\nabla _{\mu}\nabla ^{\phi}A^{\mu} & =g^{\phi \phi}\partial _{\mu}\partial _{\phi}A^{\mu}+g^{\phi \phi}\Gamma ^{\mu}_{\mu r}\partial _{\phi}A^{r}+g^{\phi \phi}(\partial _{r}\Gamma ^{r}_{\phi \phi}A^{\phi}-\Gamma ^{\sigma}_{\mu \phi}\Gamma ^{\mu}_{\sigma \phi}A^{\phi}+\Gamma ^{\mu}_{\mu r}\Gamma ^{r}_{\phi \phi}A^{\phi}) \\
+ & =
 \end{align}
 $$
-
 
 $$\tag{.}
 \begin{align}
