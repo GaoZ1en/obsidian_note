@@ -111,3 +111,12 @@ $$\tag{.}
 i\omega\partial _{r}[(1+r^{2})\tilde{A}^{t}]+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r} & =0 \\
 \end{align}
 $$
+
+change variables to $\displaystyle{r=\tan \rho}$.
+
+$$\tag{.}
+\begin{align}
+\partial _{r} & =\frac{\partial \rho}{\partial r} \frac{\partial}{\partial \rho} \\
+ & =\cos ^{2}\rho\partial _{\rho}
+\end{align}
+$$
