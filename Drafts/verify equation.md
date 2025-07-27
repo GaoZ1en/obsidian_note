@@ -96,6 +96,18 @@ $$
 
 $$\tag{.}
 \begin{align}
-\mu ^{2}(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+2\mu ^{2}r\partial _{r}\tilde{A}^{r}-\omega ^{2}\partial _{r}^{2}\tilde{A}^{r}+\frac{2\omega ^{2}r}{1+r^{2}}\partial _{r}\tilde{A}^{r}+\frac{2\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\frac{4\omega ^{2}r^{2}}{}
+ & \mu ^{2}(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+2\mu ^{2}r\partial _{r}\tilde{A}^{r}-\omega ^{2}\partial _{r}^{2}\tilde{A}^{r}+\frac{2\omega ^{2}r}{1+r^{2}}\partial _{r}\tilde{A}^{r}+\frac{2\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\frac{4\omega ^{2}r^{2}}{(1+r^{2})^{2}}\tilde{A}^{r}+2\mu ^{2}\tilde{A}^{r}-\frac{1+r^{2}}{r^{2}}\mu ^{2}\tilde{A}^{r}+\frac{1+r^{2}}{r}\mu ^{2}\partial _{r}\tilde{A}^{r} \\
+  & +\frac{\omega ^{2}}{r^{2}}\tilde{A}^{r}-\frac{\omega ^{2}}{r}\partial _{r}\tilde{A}^{r}-\mu ^{4}\tilde{A}^{r}+\frac{\mu ^{2}\omega ^{2}}{1+r^{2}}\tilde{A}^{r}+\omega ^{2}\partial _{r}^{2}\tilde{A}^{r}+\frac{\omega ^{2}(1-r^{2})}{r(1+r^{2})}\partial _{r}\tilde{A}^{r}+\frac{r^{4}-4r^{2}-1}{r^{2}(1+r^{2})^{2}}\tilde{A}^{r} \\
+ = & (1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{(1+3r^{2})}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\frac{1}{r^{2}}-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r}
+\end{align}
+$$
+
+insert the second equation into the first
+
+$$\tag{.}
+\begin{align}
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{(1+3r^{2})}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\frac{1}{r^{2}}-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r} & =0 \\
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =0 \\
+i\omega\partial _{r}[(1+r^{2})\tilde{A}^{t}]+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r} & =0 \\
 \end{align}
 $$
