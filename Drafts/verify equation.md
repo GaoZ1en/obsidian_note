@@ -72,7 +72,7 @@ we first consider the case $\displaystyle{m=0}$
 
 $$\tag{.}
 \begin{align}
-(1+r^{2})\partial _{r}^{2}\tilde{A}^{t}+\frac{1+5r^{2}}{r}\partial _{r}\tilde{A}^{t}+(4-\mu ^{2})\tilde{A}^{t}-\frac{i\omega}{1+r^{2}}\partial _{r}\tilde{A}^{r}-\frac{i\omega(1-r^{2})}{r(1+r^{2})^{2}}\tilde{A}^{r} & =0 \\
+\partial _{r}^{2}[(1+r^{2})\tilde{A}^{t}]+\frac{1}{r}\partial _{r}[(1+r^{2})\tilde{A}^{t}]-\mu ^{2}\tilde{A}^{t}-\frac{i\omega}{1+r^{2}}\partial _{r}\tilde{A}^{r}-\frac{i\omega(1-r^{2})}{r(1+r^{2})^{2}}\tilde{A}^{r} & =0\\
 i\omega\partial _{r}[(1+r^{2})\tilde{A}^{t}]+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r} & =0 \\
 (1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =0
 \end{align}
@@ -80,6 +80,7 @@ $$
 
 $$\tag{.}
 \begin{align}
-\partial _{r}^{2}(1+r^{2})At
+(1+r^{2})\partial _{r}^{2}[i\omega(1+r^{2})\tilde{A}^{t}]+\frac{1+r^{2}}{r}\partial _{r}[i\omega(1+r^{2})\tilde{A}^{t}]-\mu ^{2}i\omega(1+r^{2})\tilde{A}^{t}+\omega ^{2}\partial _{r}\tilde{A}^{r}+\frac{\omega ^{2}(1-r^{2})}{r(1+r^{2})}\tilde{A}^{r} & =0 \\
+
 \end{align}
 $$
