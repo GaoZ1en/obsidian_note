@@ -106,7 +106,7 @@ insert the second equation into the first
 
 $$\tag{.}
 \begin{align}
-(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{(1+3r^{2})}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\frac{1}{r^{2}}-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r} & =0 \\
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\frac{1}{r^{2}}-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r} & =0 \\
 (1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =0 \\
 i\omega\partial _{r}[(1+r^{2})\tilde{A}^{t}]+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r} & =0 \\
 \end{align}
