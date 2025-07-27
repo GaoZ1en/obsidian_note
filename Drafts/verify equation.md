@@ -151,8 +151,18 @@ $$
 
 $$\tag{.}
 \begin{align}
-A_{\mu}\mathrm{d}x^{\mu} & =A'_{\mu}\mathrm{d}x'^{\mu} \\
-\implies A'_{\mu} & =A_{\nu} \frac{\partial x^{\nu}}{\partial x'^{\mu}} \\
-\implies A'^{\mu} & =A^{\nu} \frac{\partial x'^{\mu}}{\partial x^{\nu}}
+\tilde{A}^{r} & =\frac{\tilde{A}^{\rho}}{\cos ^{2}\rho}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+{}_{2}F_{1}(\alpha,\beta;\gamma;z) & =\frac{\Gamma(\gamma)\Gamma(\gamma-\alpha-\beta)}{\Gamma(\gamma-\alpha)\Gamma(\Gamma-\beta)}{}_{2}F_{1}(\alpha,\beta;\alpha+\beta-\gamma;1-z)+\frac{\Gamma(\gamma)\Gamma(\alpha+\beta-\gamma)}{\Gamma(\alpha)\Gamma(\beta)}(1-z)^{\gamma-\alpha-\beta}{}_{2}F_{1}(\gamma-\alpha,\gamma-\beta;\gamma-\alpha-\beta+1;1-z)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+
 \end{align}
 $$
