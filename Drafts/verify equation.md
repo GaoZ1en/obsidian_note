@@ -116,7 +116,43 @@ change variables to $\displaystyle{r=\tan \rho}$.
 
 $$\tag{.}
 \begin{align}
-\partial _{r} & =\frac{\partial \rho}{\partial r} \frac{\partial}{\partial \rho} \\
- & =\cos ^{2}\rho\partial _{\rho}
+ \\
+\partial _{\rho}^{2}\tilde{A}^{\phi}+\frac{3}{\sin \rho \cos \rho}\partial _{\rho}\tilde{A}^{\phi}+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}+\omega ^{2} \right)\tilde{A}^{\phi} & =0
+\end{align}
+$$
+
+make a further variable change to $\displaystyle{z=\cos ^{2}\rho}$
+
+$$\tag{.}
+\begin{align} \\
+\cos \rho & =\sqrt{ z },\sin \rho=\sqrt{ 1-z } \\
+\partial _{\rho} & =\frac{\partial z}{\partial \rho} \partial _{z} \\
+ & =-2\sqrt{ z(1-z) }\partial _{z} \\
+\partial _{\rho}^{2} & =4\sqrt{ z(1-z) }\partial _{z}(\sqrt{ z(1-z) }\partial _{z}) \\
+ & =4\partial _{z}^{2}+2(1-2z)\partial _{z}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+4z(1-z)\partial _{z}^{2}\tilde{A}^{\phi}-4(1+z)\partial _{z}\tilde{A}^{\phi}+\left( \frac{4-\mu ^{2}}{z}+\omega ^{2} \right)\tilde{A}^{\phi}
+\end{align}
+$$
+
+the general solution of this equation is
+
+$$\tag{.}
+\begin{align}
+\tilde{A}^{\phi} & =C_{1}z^{1-\mu/2}{}_{2}F_{1}\left( 1-\frac{\mu}{2}-\frac{\omega}{2},1-\frac{\mu}{2}+\frac{\omega}{2};1-\mu;z \right)+C_{2}z^{1+\mu/2}{}_{2}F_{1}\left( 1+\frac{\mu}{2}-\frac{\omega}{2},1+\frac{\mu}{2}+\frac{\omega}{2};1+\mu ;z \right) \\
+ & =C_{1}\left( 1+r^{2} \right)^{-1+\mu/2}{}_{2}F_{1}\left( 1-\frac{\mu}{2}-\frac{\omega}{2},1-\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
+ & +C_{2}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( 1+\frac{\mu}{2}-\frac{\omega}{2},1+\frac{\mu}{2}+\frac{\omega}{2};1+\mu; \frac{1}{1+r^{2}} \right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+A_{\mu}\mathrm{d}x^{\mu} & =A'_{\mu}\mathrm{d}x'^{\mu} \\
+\implies A'_{\mu} & =A_{\nu} \frac{\partial x^{\nu}}{\partial x'^{\mu}} \\
+\implies A'^{\mu} & =A^{\nu} \frac{\partial x'^{\mu}}{\partial x^{\nu}}
 \end{align}
 $$
