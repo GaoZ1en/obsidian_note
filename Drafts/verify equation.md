@@ -149,10 +149,25 @@ $$\tag{.}
 \end{align}
 $$
 
-we want to consider the asymptotic behavior of the solution for $\displaystyle{z\to1}$, i.e., $\displaystyle{r\to \infty}$. 
+we want to consider the asymptotic behavior of the solution for $\displaystyle{z\to1}$, i.e., $\displaystyle{r\to \infty}$. it is useful to use the following identity
 
 $$\tag{.}
 \begin{align}
-
+{}_{2}F_{1}(\alpha,\beta;\gamma;z) & =\frac{\Gamma(m)\Gamma(\gamma)(1-z)^{-m}}{\Gamma(\alpha)\Gamma(\beta)}\times \sum ^{m-1}_{n=0} \frac{(\alpha-m)_{n}(\beta-m)_{n}}{n!(1-m)_{n}}(1-z)^{n} \\
+ & +\frac{(-1)^{m+1}\Gamma(\gamma)}{\Gamma(\alpha-m)\Gamma(\beta-m)}\sum ^{\infty}_{n=0} \frac{(\alpha)_{n}(\beta)_{n}}{n!(m+n)!}(1-z)^{n} \\
+ & \times\left\{\psi(\alpha+n)+\psi(\beta+n)-\psi(1+m+n)-\psi(1+n)+\ln(1-z)\right\}
 \end{align}
 $$
+
+for $\displaystyle{\gamma-\alpha-\beta=-m\in \mathbb{Z}_{\leqslant 0}}$, $\displaystyle{\alpha,\beta \not\in \mathbb{Z}_{\leqslant 0}}$, $\displaystyle{|\arg(1-z)|<\pi}$ and $\displaystyle{|1-z|<1}$. and 
+
+$$\tag{.}
+\begin{align}
+{}_{2}F_{1}(\alpha,\beta;\gamma;z) & =\frac{\Gamma(m)\Gamma(\gamma)}{\Gamma(\alpha+m)\Gamma(\beta+m)}\sum ^{m-1}_{n=0} \frac{(\alpha)_{n}(\beta)_{n}}{n!(1-m)_{n}}(1-z)^{n} \\
+ & +\frac{(-)^{m+1}\Gamma(\gamma)}{\Gamma(\alpha)\Gamma(\beta)}(1-z)^{m}\sum ^{\infty}_{n=0} \frac{(\alpha+m)_{n}(\beta+m)_{n}}{n!(m+n)!}(1-z)^{n} \\
+ & \times\left(\psi(\alpha+m+n)+\psi(\beta+m+n)-\psi(1+m+n)-\psi(1+n)+\ln(1-z)\right)
+\end{align}
+$$
+
+for $\displaystyle{\gamma-\alpha-\beta=m\in \mathbb{Z}_{>0}}$, $\displaystyle{\alpha,\beta \not\in \mathbb{Z}_{\geqslant 0}}$ and $\displaystyle{|\arg(1-z)|<\pi,|1-z|<1}$.
+
