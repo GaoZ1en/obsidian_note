@@ -80,20 +80,6 @@ $$
 
 $$\tag{.}
 \begin{align}
-\partial _{r}\left( (1+r^{2})\partial _{r}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right) \right)+\partial _{r}\left( \frac{(1+r^{2})}{r}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right) \right)-\mu ^{2}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right)+\omega ^{2}\partial ^{2} _{r}\tilde{A}^{r}+\partial _{r}\frac{\omega ^{2}(1-r^{2})}{r(1+r^{2})}\tilde{A}^{r} & =0 \\
-(1+r^{2})\partial _{r}^{2}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right)+2r\partial _{r}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right)+\frac{1+r^{2}}{r}\partial _{r}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right)-\frac{1-r^{2}}{r^{2}}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right) \\
--\mu ^{2}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right)+\omega ^{2}\partial _{r}^{2}\tilde{A}^{r}+\frac{\omega ^{2}(1-r^{2})}{r(1+r^{2})}\partial _{r}\tilde{A}^{r}-\omega ^{2}\tilde{A}^{r} \frac{1+4r^{2}-r^{4}}{r^{2}(1+r^{2})^{2}} & =0
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\mu ^{2}(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}-\omega ^{2}\left( \partial _{r}^{2}\tilde{A}^{r}-\frac{4r}{1+r^{2}}\partial _{r}\tilde{A}^{r}+\frac{8r^{2}}{(1+r^{2})^{2}}\tilde{A}^{r}-\frac{2}{1+r^{2}}\tilde{A}^{r} \right)
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
 \partial _{r}((1+r^{2})\partial _{r}^{2}[i\omega(1+r^{2})\tilde{A}^{t}])+\partial _{r}\left( \frac{1+r^{2}}{r}\partial _{r}[i\omega(1+r^{2})\tilde{A}^{t}] \right)-\mu ^{2}\partial _{r}[i\omega(1+r^{2})\tilde{A}^{t}]+\omega ^{2}\partial ^{2} _{r}\tilde{A}^{r}+\partial _{r}\left( \frac{\omega ^{2}(1-r^{2})}{r(1+r^{2})}\tilde{A}^{r} \right) & =0 \\
 \partial _{r}\left( (1+r^{2})\partial _{r}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right) \right)+\partial _{r}\left( \frac{1+r^{2}}{r}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right) \right)-\mu ^{2}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right)+\omega ^{2}\partial _{r}^{2}\tilde{A}^{r}+\omega ^{2}\partial _{r}\left( \frac{1-r^{2}}{r(1+r^{2})}\tilde{A}^{r} \right) & =0
 \end{align}
@@ -130,7 +116,7 @@ change variables to $\displaystyle{r=\tan \rho}$.
 
 $$\tag{.}
 \begin{align}
- \\
+\partial _{\rho}^{2}\tilde{A}^{r}+\frac{1}{\sin \rho \cos \rho}\partial _{\rho}\tilde{A}^{r}+\left(\frac{1-\mu ^{2}}{\cos ^{2}\rho}-\frac{1}{\sin^{2}\rho}+\omega ^{2}\right)\tilde{A}^{r} & =0 \\
 \partial _{\rho}^{2}\tilde{A}^{\phi}+\frac{3}{\sin \rho \cos \rho}\partial _{\rho}\tilde{A}^{\phi}+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}+\omega ^{2} \right)\tilde{A}^{\phi} & =0
 \end{align}
 $$
@@ -149,14 +135,26 @@ $$
 
 $$\tag{.}
 \begin{align}
-4z(1-z)\partial _{z}^{2}\tilde{A}^{\phi}-4(1+z)\partial _{z}\tilde{A}^{\phi}+\left( \frac{4-\mu ^{2}}{z}+\omega ^{2} \right)\tilde{A}^{\phi}
+4\partial _{z}^{2}\tilde{A}^{r}-4z\partial _{z}\tilde{A}^{r}+\left(\frac{1-\mu ^{2}}{z}-\frac{1}{1-z}+\omega ^{2}\right)\tilde{A}^{r} & =0 \\
+4z(1-z)\partial _{z}^{2}\tilde{A}^{\phi}-4(1+z)\partial _{z}\tilde{A}^{\phi}+\left( \frac{4-\mu ^{2}}{z}+\omega ^{2} \right)\tilde{A}^{\phi} & =0
 \end{align}
 $$
 
-the general solution of this equation is
+the general solution of these equation is
 
 $$\tag{.}
 \begin{align}
+(1-z)^{\alpha}z^{\beta} & =(\sin ^{2}\rho)^{\alpha}(\cos ^{2}\rho)^{\beta} \\
+ & =(\tan ^{2}\rho)^{\alpha}(\cos ^{2}\rho)^{\alpha+\beta} \\
+ & =r^{2\alpha}(1+r^{2})^{-\alpha-\beta}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\tilde{A}^{r} & =C_{1}(1-z)^{-1/2}z^{(1-\mu)/2}{}_{2}F_{1}\left( -\frac{\mu}{2}-\frac{\omega}{2},-\frac{\mu}{2}+\frac{\omega}{2};1-\mu;z \right)+(1-z)^{-1/2}z^{(1+\mu)/2}{}_{2}F_{1}\left( \frac{\mu}{2}-\frac{\omega}{2},\frac{\mu}{2}+\frac{\omega}{2};1+\mu;z \right) \\
+ & =C_{1} r^{-1}(1+r^{2})^{-1+\mu/2}{}_{2}F_{1}\left( -\frac{\mu}{2}-\frac{\omega}{2},-\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
+ & +C_{2}r^{-1}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( \frac{\mu}{2}-\frac{\omega}{2},\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right)\\
 \tilde{A}^{\phi} & =C_{1}z^{1-\mu/2}{}_{2}F_{1}\left( 1-\frac{\mu}{2}-\frac{\omega}{2},1-\frac{\mu}{2}+\frac{\omega}{2};1-\mu;z \right)+C_{2}z^{1+\mu/2}{}_{2}F_{1}\left( 1+\frac{\mu}{2}-\frac{\omega}{2},1+\frac{\mu}{2}+\frac{\omega}{2};1+\mu ;z \right) \\
  & =C_{1}\left( 1+r^{2} \right)^{-1+\mu/2}{}_{2}F_{1}\left( 1-\frac{\mu}{2}-\frac{\omega}{2},1-\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
  & +C_{2}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( 1+\frac{\mu}{2}-\frac{\omega}{2},1+\frac{\mu}{2}+\frac{\omega}{2};1+\mu; \frac{1}{1+r^{2}} \right)
