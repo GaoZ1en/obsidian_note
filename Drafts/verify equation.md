@@ -171,3 +171,21 @@ $$
 
 for $\displaystyle{\gamma-\alpha-\beta=m\in \mathbb{Z}_{>0}}$, $\displaystyle{\alpha,\beta \not\in \mathbb{Z}_{\geqslant 0}}$ and $\displaystyle{|\arg(1-z)|<\pi,|1-z|<1}$.
 
+in our case with $\displaystyle{\alpha,\beta=1\pm\frac{\mu}{2}\pm \frac{\omega}{2},\gamma=1\pm \mu}$, we have $\displaystyle{\gamma-\alpha-\beta=-1}$, then
+
+$$\tag{.}
+\begin{align}
+{}_{2}F_{1}(\alpha,\beta;\gamma;z) & =\frac{\Gamma(m)\Gamma(\gamma)(1-z)^{-m}}{\Gamma(\alpha)\Gamma(\beta)}\times \sum ^{m-1}_{n=0} \frac{(\alpha-m)_{n}(\beta-m)_{n}}{n!(1-m)_{n}}(1-z)^{n} \\
+ & +\frac{(-1)^{m+1}\Gamma(\gamma)}{\Gamma(\alpha-m)\Gamma(\beta-m)}\sum ^{\infty}_{n=0} \frac{(\alpha)_{n}(\beta)_{n}}{n!(m+n)!}(1-z)^{n} \\
+ & \times\left\{\psi(\alpha+n)+\psi(\beta+n)-\psi(1+m+n)-\psi(1+n)+\ln(1-z)\right\}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+ A^{\phi} & =C_{1}\left( 1+r^{2} \right)^{-1+\mu/2}{}_{2}F_{1}\left( 1-\frac{\mu}{2}-\frac{\omega}{2},1-\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
+  & =C_{1}(1+r^{2})^{-1+\mu/2}\left( \frac{\Gamma(1)\Gamma(\gamma)}{\Gamma(\alpha+1)\Gamma(\beta+1)} \frac{(\alpha)_{0}(\beta)_{0}}{(1-1)_{0}}(1-z)^{0} \right. \\
+ & +\frac{(-)^{m+1}\Gamma(\gamma)}{\Gamma(\alpha)\Gamma(\beta)}(1-z)^{m}\sum ^{\infty}_{n=0} \frac{(\alpha+m)_{n}(\beta+m)_{n}}{n!(m+n)!}(1-z)^{n} \\
+ & \times\left(\psi(\alpha+m+n)+\psi(\beta+m+n)-\psi(1+m+n)-\psi(1+n)+\ln(1-z)\right))
+\end{align}
+$$
