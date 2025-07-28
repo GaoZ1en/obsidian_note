@@ -80,6 +80,20 @@ $$
 
 $$\tag{.}
 \begin{align}
+\partial _{r}\left( (1+r^{2})\partial _{r}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right) \right)+\partial _{r}\left( \frac{(1+r^{2})}{r}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right) \right)-\mu ^{2}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right)+\omega ^{2}\partial ^{2} _{r}\tilde{A}^{r}+\partial _{r}\frac{\omega ^{2}(1-r^{2})}{r(1+r^{2})}\tilde{A}^{r} & =0 \\
+(1+r^{2})\partial _{r}^{2}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right)+2r\partial _{r}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right)+\frac{1+r^{2}}{r}\partial _{r}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right)-\frac{1-r^{2}}{r^{2}}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right) \\
+-\mu ^{2}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right)+\omega ^{2}\partial _{r}^{2}\tilde{A}^{r}+\frac{\omega ^{2}(1-r^{2})}{r(1+r^{2})}\partial _{r}\tilde{A}^{r}-\omega ^{2}\tilde{A}^{r} \frac{1+4r^{2}-r^{4}}{r^{2}(1+r^{2})^{2}} & =0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\mu ^{2}(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}-\omega ^{2}\left( \partial _{r}^{2}\tilde{A}^{r}-\frac{4r}{1+r^{2}}\partial _{r}\tilde{A}^{r}+\frac{8r^{2}}{(1+r^{2})^{2}}\tilde{A}^{r}-\frac{2}{1+r^{2}}\tilde{A}^{r} \right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
 \partial _{r}((1+r^{2})\partial _{r}^{2}[i\omega(1+r^{2})\tilde{A}^{t}])+\partial _{r}\left( \frac{1+r^{2}}{r}\partial _{r}[i\omega(1+r^{2})\tilde{A}^{t}] \right)-\mu ^{2}\partial _{r}[i\omega(1+r^{2})\tilde{A}^{t}]+\omega ^{2}\partial ^{2} _{r}\tilde{A}^{r}+\partial _{r}\left( \frac{\omega ^{2}(1-r^{2})}{r(1+r^{2})}\tilde{A}^{r} \right) & =0 \\
 \partial _{r}\left( (1+r^{2})\partial _{r}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right) \right)+\partial _{r}\left( \frac{1+r^{2}}{r}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right) \right)-\mu ^{2}\left( \mu ^{2}\tilde{A}^{r}-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r} \right)+\omega ^{2}\partial _{r}^{2}\tilde{A}^{r}+\omega ^{2}\partial _{r}\left( \frac{1-r^{2}}{r(1+r^{2})}\tilde{A}^{r} \right) & =0
 \end{align}
