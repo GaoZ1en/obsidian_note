@@ -201,3 +201,15 @@ $$\tag{.}
  & \times\left(\psi(\alpha+m+n)+\psi(\beta+m+n)-\psi(1+m+n)-\psi(1+n)+\ln(1-z)\right))
 \end{align}
 $$
+
+---
+
+then we consider generic $\displaystyle{m\in \mathbb{N}}$.
+
+$$\tag{.}
+\begin{align}
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{t}-\frac{m^{2}}{r^{2}}\tilde{A}^{t}+\frac{1+5r^{2}}{r}\partial _{r}\tilde{A}^{t}+(4-\mu ^{2})\tilde{A}^{t}-\frac{i\omega}{1+r^{2}}\partial _{r}\tilde{A}^{r}-\frac{i\omega(1-r^{2})}{r(1+r^{2})^{2}}\tilde{A}^{r}+\frac{\omega m}{1+r^{2}}\tilde{A}^{\phi} & =0 \\
+i\omega\partial _{r}((1+r^{2})\tilde{A}^{t})+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\frac{m^{2}}{r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r}-im(1+r^{2})\partial _{r}\tilde{A}^{\phi}-\frac{2im(1+r^{2})}{r}\tilde{A}^{\phi} & =0 \\
+-\frac{\omega m}{r^{2}}\tilde{A}^{t}-\frac{im}{r^{2}}\partial _{r}\tilde{A}^{r}+\frac{im}{r^{3}}\tilde{A}^{r}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{\phi}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+(4-\mu ^{2})\tilde{A}^{\phi} & =0
+\end{align}
+$$
