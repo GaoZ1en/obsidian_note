@@ -7276,6 +7276,16 @@
             "c": 281
           },
           {
+            "timeKey": "17:00",
+            "w": -69,
+            "c": -459
+          },
+          {
+            "timeKey": "17:05",
+            "w": 13,
+            "c": 100
+          },
+          {
             "timeKey": "18:20",
             "w": 150,
             "c": 600
@@ -7376,14 +7386,104 @@
             "c": -2
           },
           {
+            "timeKey": "20:05",
+            "w": 31,
+            "c": 160
+          },
+          {
+            "timeKey": "20:10",
+            "w": 124,
+            "c": 641
+          },
+          {
+            "timeKey": "20:15",
+            "w": 107,
+            "c": 490
+          },
+          {
+            "timeKey": "20:30",
+            "w": 4,
+            "c": 15
+          },
+          {
+            "timeKey": "20:35",
+            "w": 121,
+            "c": 598
+          },
+          {
             "timeKey": "20:50",
             "w": 7,
             "c": 50
           },
           {
             "timeKey": "20:55",
-            "w": 27,
-            "c": 168
+            "w": 165,
+            "c": 769
+          },
+          {
+            "timeKey": "21:00",
+            "w": 86,
+            "c": 339
+          },
+          {
+            "timeKey": "21:05",
+            "w": 162,
+            "c": 670
+          },
+          {
+            "timeKey": "21:10",
+            "w": -32,
+            "c": -105
+          },
+          {
+            "timeKey": "21:15",
+            "w": 157,
+            "c": 691
+          },
+          {
+            "timeKey": "21:20",
+            "w": 244,
+            "c": 962
+          },
+          {
+            "timeKey": "21:25",
+            "w": 103,
+            "c": 414
+          },
+          {
+            "timeKey": "21:30",
+            "w": 208,
+            "c": 800
+          },
+          {
+            "timeKey": "21:35",
+            "w": -94,
+            "c": -370
+          },
+          {
+            "timeKey": "21:40",
+            "w": -129,
+            "c": -326
+          },
+          {
+            "timeKey": "21:45",
+            "w": -289,
+            "c": -1275
+          },
+          {
+            "timeKey": "21:50",
+            "w": 129,
+            "c": 687
+          },
+          {
+            "timeKey": "21:55",
+            "w": 106,
+            "c": 465
+          },
+          {
+            "timeKey": "22:05",
+            "w": 339,
+            "c": 2275
           }
         ],
         "id": 276
@@ -7403,6 +7503,62 @@
         "charCountStart": 15071,
         "changes": [],
         "id": 278
+      },
+      {
+        "date": "2025-07-28",
+        "filePath": "Drafts/ads3proca.md",
+        "wordCountStart": 527,
+        "charCountStart": 2436,
+        "changes": [],
+        "id": 279
+      },
+      {
+        "date": "2025-07-28",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 3030,
+        "charCountStart": 15071,
+        "changes": [],
+        "id": 280
+      },
+      {
+        "date": "2025-07-28",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1447,
+        "changes": [],
+        "id": 281
+      },
+      {
+        "date": "2025-07-28",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 1579,
+        "charCountStart": 6981,
+        "changes": [],
+        "id": 282
+      },
+      {
+        "date": "2025-07-28",
+        "filePath": "Drafts/verify equation.md",
+        "wordCountStart": 4109,
+        "charCountStart": 18123,
+        "changes": [
+          {
+            "timeKey": "22:05",
+            "w": 156,
+            "c": 1061
+          },
+          {
+            "timeKey": "22:10",
+            "w": -495,
+            "c": -3335
+          },
+          {
+            "timeKey": "22:30",
+            "w": 228,
+            "c": 908
+          }
+        ],
+        "id": 283
       }
     ],
     "daysWithCompletedGoal": [
