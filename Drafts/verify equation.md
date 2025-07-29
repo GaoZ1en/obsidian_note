@@ -238,3 +238,8 @@ $$
 
 now we will insert the second equation to the first and the third equation. 
 
+$$\tag{.}
+\begin{align}
+-\frac{i\omega m}{r^{2}}\tilde{A}^{t}+\frac{m}{r^{2}}\partial _{r}\tilde{A}^{r}+\frac{im}{r^{3}}\tilde{A}^{r}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =0
+\end{align}
+$$
