@@ -237,22 +237,3 @@ i\omega \partial _{r}((1+r^{2})\tilde{A}^{t})+\left(-\mu ^{2}-\frac{m^{2}}{r^{2}
 $$
 
 now we will insert the second equation to the first and the third equation. 
-
-$$\tag{.}
-\begin{align}
--m\left( \mu ^{2}+\frac{m^{2}}{r^{2}}-\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r} \\
--im^{2}(1+r^{2})\partial _{r}\tilde{A}^{\phi} \\
--2im^{2} \frac{1+r^{2}}{r} \tilde{A}^{\phi} \\
-+m(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+2mr\partial _{r}\tilde{A}^{r} \\
--m \frac{1+r^{2}}{r}\partial _{r}\tilde{A}^{r}-m \frac{r^{2}-1}{r^{2}}\tilde{A}^{r} \\
-+ir^{2}(1+r^{2})^{2}\partial _{r}^{3}\tilde{A}^{\phi}+2ir(1+r^{2})^{2}\partial _{r}^{2}\tilde{A}^{\phi}+4ir^{3}(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi} \\
-+ir(1+r^{2})(3+5r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+i(1+r^{2})(3+5r^{2})\partial _{r}\tilde{A}^{\phi}+2ir^{2}(3+5r^{2})\partial _{r}\tilde{A}^{\phi}+10ir^{2}(1+r^{2})\partial _{r}\tilde{A}^{\phi} \\
-+i(4-\mu ^{2})r^{2}(1+r^{2})\partial _{r}\tilde{A}^{\phi}+2i(4-\mu ^{2})r(1+r^{2})\tilde{A}^{\phi}+2i(4-\mu ^{2})r^{3}\tilde{A}^{\phi}+i\partial _{r}\tilde{A}^{\phi} & =0
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\partial _{r} \frac{1+r^{2}}{r} & =\frac{r^{2}-1}{r^{2}}
-\end{align}
-$$
