@@ -202,21 +202,36 @@ $$\tag{.}
 \end{align}
 $$
 
+## quantization
+
+$$\tag{.}
+\begin{align}
+\tilde{A}^{r} & =C_{1} r^{-1}(1+r^{2})^{-1+\mu/2}{}_{2}F_{1}\left( -\frac{\mu}{2}-\frac{\omega}{2},-\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
+ & +C_{2}r^{-1}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( \frac{\mu}{2}-\frac{\omega}{2},\frac{\mu}{2}+\frac{\omega}{2};1+\mu; \frac{1}{1+r^{2}} \right)\\
+\tilde{A}^{\phi} & =C_{1}\left( 1+r^{2} \right)^{-1+\mu/2}{}_{2}F_{1}\left( 1-\frac{\mu}{2}-\frac{\omega}{2},1-\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
+ & +C_{2}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( 1+\frac{\mu}{2}-\frac{\omega}{2},1+\frac{\mu}{2}+\frac{\omega}{2};1+\mu; \frac{1}{1+r^{2}} \right)
+\end{align}
+$$
+
+since $\displaystyle{\mu>0}$, we have to neglect the solution with $\displaystyle{C_{1}}$ due to the singularity at $\displaystyle{r=0}$, i.e., $\displaystyle{z=1}$.
+
+$$\tag{.}
+\begin{align}
+A^{r} & =C_{1}'r^{-1}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( \frac{\mu}{2}-\frac{\omega _{r}}{2},\frac{\mu}{2}+\frac{\omega _{r}}{2};1+\mu; \frac{1}{1+r^{2}} \right)e^{-i\omega _{r} t} \\
+A^{\phi} & =C_{2}'(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( 1+\frac{\mu}{2}-\frac{\omega _{\phi}}{2},1+\frac{\mu}{2}+\frac{\omega _{\phi}}{2};1+\mu; \frac{1}{1+r^{2}} \right)e^{-i\omega _{\phi} t}
+\end{align}
+$$
+
+for dirichlet boundary conditions, we have to set $\displaystyle{\frac{\mu}{2}-\frac{\omega _{r}}{2}=-m_{r}\implies \omega _{r}=2m_{r}+\mu,m_{r}\in \mathbb{N}}$ for $\displaystyle{A^{r}}$ and $\displaystyle{1+\frac{\mu}{2}-\frac{\omega _{\phi}}{2}=-m_{\phi}\implies \omega _{\phi}=2m_{\phi}+\mu+2,m_{\phi}\in \mathbb{N}}$. 
+
 ---
 
 then we consider generic $\displaystyle{m\in \mathbb{N}}$.
 
 $$\tag{.}
 \begin{align}
-(1+r^{2})\partial _{r}^{2}\tilde{A}^{t}+\frac{1+5r^{2}}{r}\partial _{r}\tilde{A}^{t}+(4-\mu ^{2})\tilde{A}^{t}-\frac{i\omega}{1+r^{2}}\partial _{r}\tilde{A}^{r}-\frac{i\omega(1-r^{2})}{r(1+r^{2})^{2}}\tilde{A}^{r} & =0 \\
-i\omega\partial _{r}((1+r^{2})\tilde{A}^{t})+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r} & =0 \\
-\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{\phi}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+(4-\mu ^{2})\tilde{A}^{\phi} & =0
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\partial _{r}^{2}(1+r^{2})\tilde{A}^{t}+\frac{1}{r}\partial _{r}(1+r^{2})\tilde{A}^{t}-\left( \mu ^{2}+\frac{m^{2}}{r^{2}} \right)\tilde{A}^{t}
-
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{t}-\frac{m^{2}}{r^{2}}\tilde{A}^{t}+\frac{1+5r^{2}}{r}\partial _{r}\tilde{A}^{t}+(4-\mu ^{2})\tilde{A}^{t}-\frac{i\omega}{1+r^{2}}\partial _{r}\tilde{A}^{r}-\frac{i\omega(1-r^{2})}{r(1+r^{2})^{2}}\tilde{A}^{r}+\frac{\omega m}{1+r^{2}}\tilde{A}^{\phi} & =0 \\
+i\omega(1+r^{2})\partial _{r}\tilde{A}^{t}+2i\omega r\tilde{A}^{t}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\frac{m^{2}}{r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r}-im(1+r^{2})\partial _{r}\tilde{A}^{\phi}-\frac{2im(1+r^{2})}{r}\tilde{A}^{\phi} & =0 \\
+-\frac{\omega m}{r^{2}}\tilde{A}^{t}-\frac{im}{r^{2}}\partial _{r}\tilde{A}^{r}+\frac{im}{r^{3}}\tilde{A}^{r}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{\phi}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+(4-\mu ^{2})\tilde{A}^{\phi} & =0
 \end{align}
 $$
