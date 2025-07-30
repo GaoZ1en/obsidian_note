@@ -222,7 +222,30 @@ A^{\phi} & =C_{2}'(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( 1+\frac{\mu}{2}-\frac{\o
 \end{align}
 $$
 
-for dirichlet boundary conditions, we have to set $\displaystyle{\frac{\mu}{2}-\frac{\omega _{r}}{2}=-m_{r}\implies \omega _{r}=2m_{r}+\mu,m_{r}\in \mathbb{N}}$ for $\displaystyle{A^{r}}$ and $\displaystyle{1+\frac{\mu}{2}-\frac{\omega _{\phi}}{2}=-m_{\phi}\implies \omega _{\phi}=2m_{\phi}+\mu+2,m_{\phi}\in \mathbb{N}}$. 
+for dirichlet boundary conditions, we have to set $\displaystyle{\frac{\mu}{2}-\frac{\omega _{r}}{2}=-n_{r}\implies \omega _{r}=2n_{r}+\mu,n_{r}\in \mathbb{N}}$ for $\displaystyle{A^{r}}$ and $\displaystyle{1+\frac{\mu}{2}-\frac{\omega _{\phi}}{2}=-n_{\phi}\implies \omega _{\phi}=2n_{\phi}+\mu+2,n_{\phi}\in \mathbb{N}}$. then
+
+$$\tag{.}
+\begin{align}
+A^{r} & =C_{1}'r^{-1}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( -n_{r},n_{r}+\mu;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i(2n_{r}+\mu)t} \\
+A^{\phi} & =C_{2}'(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( -n_{\phi},n_{\phi}+\mu+2;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i(2n_{\phi}+\mu+2)t}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+A^{t}_{r} & = \\
+A^{r}_{r} & =C_{r}r^{-1}(1+r^{2})^{-1-\mu/2}e^{-i\mu t} \\
+A^{\phi}_{r} & =0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+A^{t}_{\phi} & =0 \\
+A^{r}_{\phi} & =0 \\
+A^{\phi}_{\phi} & =C_{\phi}(1+r^{2})^{-1-\mu/2}e^{-i(\mu+2)t}
+\end{align}
+$$
 
 ---
 
@@ -237,3 +260,4 @@ i\omega \partial _{r}((1+r^{2})\tilde{A}^{t})+\left(-\mu ^{2}-\frac{m^{2}}{r^{2}
 $$
 
 now we will insert the second equation to the first and the third equation. 
+
