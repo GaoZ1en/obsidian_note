@@ -110,24 +110,9 @@ the general solution of these equation is
 
 $$\tag{.}
 \begin{align}
-(1-z)^{\alpha}z^{\beta} & =(\sin ^{2}\rho)^{\alpha}(\cos ^{2}\rho)^{\beta} \\
- & =(\tan ^{2}\rho)^{\alpha}(\cos ^{2}\rho)^{\alpha+\beta} \\
- & =r^{2\alpha}(1+r^{2})^{-\alpha-\beta}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-C_{1}z^{(1-\mu)/2}(1-z)^{-1/2}{}_{2}F_{1}\left( -\frac{\mu}{2}-\frac{\omega}{2},-\frac{\mu}{2}+\frac{\omega}{2};1-\mu;z \right) \\
-C_{2}z^{(1+\mu)/2}(\sin ^{2}\rho)^{-1/2}{}_{2}F_{1}\left( \frac{\mu}{2}-\frac{\omega}{2},\frac{\mu}{2}+\frac{\omega}{2};1+\mu;z \right)
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
 \tilde{A}^{r} & =C_{1}(1-z)^{-1/2}z^{(1-\mu)/2}{}_{2}F_{1}\left( -\frac{\mu}{2}-\frac{\omega}{2},-\frac{\mu}{2}+\frac{\omega}{2};1-\mu;z \right)+(1-z)^{-1/2}z^{(1+\mu)/2}{}_{2}F_{1}\left( \frac{\mu}{2}-\frac{\omega}{2},\frac{\mu}{2}+\frac{\omega}{2};1+\mu;z \right) \\
- & =C_{1} r^{-1}(1+r^{2})^{-1+\mu/2}{}_{2}F_{1}\left( -\frac{\mu}{2}-\frac{\omega}{2},-\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
- & +C_{2}r^{-1}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( \frac{\mu}{2}-\frac{\omega}{2},\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right)\\
+ & =C_{1} r^{-1}(1+r^{2})^{+\mu/2}{}_{2}F_{1}\left( -\frac{\mu}{2}-\frac{\omega}{2},-\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
+ & +C_{2}r^{-1}(1+r^{2})^{-\mu/2}{}_{2}F_{1}\left( \frac{\mu}{2}-\frac{\omega}{2},\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right)\\
 \tilde{A}^{\phi} & =C_{1}z^{1-\mu/2}{}_{2}F_{1}\left( 1-\frac{\mu}{2}-\frac{\omega}{2},1-\frac{\mu}{2}+\frac{\omega}{2};1-\mu;z \right)+C_{2}z^{1+\mu/2}{}_{2}F_{1}\left( 1+\frac{\mu}{2}-\frac{\omega}{2},1+\frac{\mu}{2}+\frac{\omega}{2};1+\mu ;z \right) \\
  & =C_{1}\left( 1+r^{2} \right)^{-1+\mu/2}{}_{2}F_{1}\left( 1-\frac{\mu}{2}-\frac{\omega}{2},1-\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
  & +C_{2}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( 1+\frac{\mu}{2}-\frac{\omega}{2},1+\frac{\mu}{2}+\frac{\omega}{2};1+\mu; \frac{1}{1+r^{2}} \right)
@@ -179,8 +164,8 @@ $$
 
 $$\tag{.}
 \begin{align}
-\tilde{A}^{r} & =C_{1} r^{-1}(1+r^{2})^{-1+\mu/2}{}_{2}F_{1}\left( -\frac{\mu}{2}-\frac{\omega}{2},-\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
- & +C_{2}r^{-1}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( \frac{\mu}{2}-\frac{\omega}{2},\frac{\mu}{2}+\frac{\omega}{2};1+\mu; \frac{1}{1+r^{2}} \right)\\
+\tilde{A}^{r} & =C_{1} r^{-1}(1+r^{2})^{+\mu/2}{}_{2}F_{1}\left( -\frac{\mu}{2}-\frac{\omega}{2},-\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
+ & +C_{2}r^{-1}(1+r^{2})^{-\mu/2}{}_{2}F_{1}\left( \frac{\mu}{2}-\frac{\omega}{2},\frac{\mu}{2}+\frac{\omega}{2};1+\mu; \frac{1}{1+r^{2}} \right)\\
 \tilde{A}^{\phi} & =C_{1}\left( 1+r^{2} \right)^{-1+\mu/2}{}_{2}F_{1}\left( 1-\frac{\mu}{2}-\frac{\omega}{2},1-\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
  & +C_{2}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( 1+\frac{\mu}{2}-\frac{\omega}{2},1+\frac{\mu}{2}+\frac{\omega}{2};1+\mu; \frac{1}{1+r^{2}} \right)
 \end{align}
@@ -190,7 +175,7 @@ since $\displaystyle{\mu>0}$, we have to neglect the solution with $\displaystyl
 
 $$\tag{.}
 \begin{align}
-A^{r} & =C_{1}'r^{-1}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( \frac{\mu}{2}-\frac{\omega _{r}}{2},\frac{\mu}{2}+\frac{\omega _{r}}{2};1+\mu; \frac{1}{1+r^{2}} \right)e^{-i\omega _{r} t} \\
+A^{r} & =C_{1}'r^{-1}(1+r^{2})^{-\mu/2}{}_{2}F_{1}\left( \frac{\mu}{2}-\frac{\omega _{r}}{2},\frac{\mu}{2}+\frac{\omega _{r}}{2};1+\mu; \frac{1}{1+r^{2}} \right)e^{-i\omega _{r} t} \\
 A^{\phi} & =C_{2}'(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( 1+\frac{\mu}{2}-\frac{\omega _{\phi}}{2},1+\frac{\mu}{2}+\frac{\omega _{\phi}}{2};1+\mu; \frac{1}{1+r^{2}} \right)e^{-i\omega _{\phi} t}
 \end{align}
 $$
@@ -199,15 +184,15 @@ for dirichlet boundary conditions, we have to set $\displaystyle{\frac{\mu}{2}-\
 
 $$\tag{.}
 \begin{align}
-A^{r} & =C_{1}'r^{-1}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( -n_{r},n_{r}+\mu;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i(2n_{r}+\mu)t} \\
+A^{r} & =C_{1}'r^{-1}(1+r^{2})^{-\mu/2}{}_{2}F_{1}\left( -n_{r},n_{r}+\mu;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i(2n_{r}+\mu)t} \\
 A^{\phi} & =C_{2}'(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( -n_{\phi},n_{\phi}+\mu+2;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i(2n_{\phi}+\mu+2)t}
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-A^{t}_{r} & =\frac{i\mu}{\mu+2}(1+r^{2})^{-2-\mu/2} \\
-A^{r}_{r} & =r^{-1}(1+r^{2})^{-1-\mu/2}e^{-i\mu t} \\
+A^{t}_{r} & =i(1+r^{2})^{-1-\mu/2}e^{-i\mu t}+\frac{C}{1+r^{2}} \\
+A^{r}_{r} & =r^{-1}(1+r^{2})^{-\mu/2}e^{-i\mu t} \\
 A^{\phi}_{r} & =0
 \end{align}
 $$
