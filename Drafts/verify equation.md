@@ -233,11 +233,18 @@ $$
 
 $$\tag{.}
 \begin{align}
-A^{t}_{r} & = \\
-A^{r}_{r} & =C_{r}r^{-1}(1+r^{2})^{-1-\mu/2}e^{-i\mu t} \\
+A^{t}_{r} & =\frac{i\mu}{\mu+2}(1+r^{2})^{-2-\mu/2}+C(1+r^{2})^{-1} \\
+A^{r}_{r} & =r^{-1}(1+r^{2})^{-1-\mu/2}e^{-i\mu t} \\
 A^{\phi}_{r} & =0
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+
+\end{align}
+$$
+
 
 $$\tag{.}
 \begin{align}
