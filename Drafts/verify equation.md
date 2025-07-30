@@ -78,13 +78,14 @@ i\omega\partial _{r}[(1+r^{2})\tilde{A}^{t}]+\frac{\omega ^{2}}{1+r^{2}}\tilde{A
 \end{align}
 $$
 
+insert the second equation into the first
+
 $$\tag{.}
 \begin{align}
-i\omega\partial _{r}[(1+r^{2})\partial _{r}^{2}[(1+r^{2})\tilde{A}^{t}]]+\partial _{r}\left[ \frac{1+r^{2}}{r}\partial _{r}[(1+r^{2})\tilde{A}^{t}] \right]-\mu ^{2}\partial _{r}[(1+r^{2})\tilde{A}^{t}]-i\omega\partial ^{2} _{r}\tilde{A}^{r}-\partial _{r}\left[ \frac{i\omega(1-r^{2})}{r(1+r^{2})}\tilde{A}^{r} \right]
+s(s+2)+1-\mu ^{2} & =0 \\
+s & =\frac{-2\pm 2\mu}{2}=-1\pm\mu
 \end{align}
 $$
-
-insert the second equation into the first
 
 $$\tag{.}
 \begin{align}
