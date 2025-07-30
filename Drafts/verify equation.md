@@ -82,14 +82,7 @@ insert the second equation into the first
 
 $$\tag{.}
 \begin{align}
-s(s+2)+1-\mu ^{2} & =0 \\
-s & =\frac{-2\pm 2\mu}{2}=-1\pm\mu
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\frac{1}{r^{2}}-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r} & =0 \\
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\mu ^{2}-\frac{1}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r} & =0 \\
 (1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =0 \\
 i\omega\partial _{r}[(1+r^{2})\tilde{A}^{t}]+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r} & =0 \\
 \end{align}
@@ -107,18 +100,8 @@ $$
 make a further variable change to $\displaystyle{z=\cos ^{2}\rho}$
 
 $$\tag{.}
-\begin{align} \\
-\cos \rho & =\sqrt{ z },\sin \rho=\sqrt{ 1-z } \\
-\partial _{\rho} & =\frac{\partial z}{\partial \rho} \partial _{z} \\
- & =-2\sqrt{ z(1-z) }\partial _{z} \\
-\partial _{\rho}^{2} & =4\sqrt{ z(1-z) }\partial _{z}(\sqrt{ z(1-z) }\partial _{z}) \\
- & =4\partial _{z}^{2}+2(1-2z)\partial _{z}
-\end{align}
-$$
-
-$$\tag{.}
 \begin{align}
-4\partial _{z}^{2}\tilde{A}^{r}-4z\partial _{z}\tilde{A}^{r}+\left(\frac{1-\mu ^{2}}{z}-\frac{1}{1-z}+\omega ^{2}\right)\tilde{A}^{r} & =0 \\
+4z(1-z)\partial _{z}^{2}\tilde{A}^{r}-4z\partial _{z}\tilde{A}^{r}+\left(\frac{1-\mu ^{2}}{z}-\frac{1}{1-z}+\omega ^{2}\right)\tilde{A}^{r} & =0 \\
 4z(1-z)\partial _{z}^{2}\tilde{A}^{\phi}-4(1+z)\partial _{z}\tilde{A}^{\phi}+\left( \frac{4-\mu ^{2}}{z}+\omega ^{2} \right)\tilde{A}^{\phi} & =0
 \end{align}
 $$
@@ -130,6 +113,13 @@ $$\tag{.}
 (1-z)^{\alpha}z^{\beta} & =(\sin ^{2}\rho)^{\alpha}(\cos ^{2}\rho)^{\beta} \\
  & =(\tan ^{2}\rho)^{\alpha}(\cos ^{2}\rho)^{\alpha+\beta} \\
  & =r^{2\alpha}(1+r^{2})^{-\alpha-\beta}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+C_{1}z^{(1-\mu)/2}(1-z)^{-1/2}{}_{2}F_{1}\left( -\frac{\mu}{2}-\frac{\omega}{2},-\frac{\mu}{2}+\frac{\omega}{2};1-\mu;z \right) \\
+C_{2}z^{(1+\mu)/2}(\sin ^{2}\rho)^{-1/2}{}_{2}F_{1}\left( \frac{\mu}{2}-\frac{\omega}{2},\frac{\mu}{2}+\frac{\omega}{2};1+\mu;z \right)
 \end{align}
 $$
 
