@@ -7707,6 +7707,103 @@
           }
         ],
         "id": 286
+      },
+      {
+        "date": "2025-07-30",
+        "filePath": "Drafts/verify equation.md",
+        "wordCountStart": 4356,
+        "charCountStart": 18437,
+        "changes": [
+          {
+            "timeKey": "09:30",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "09:35",
+            "w": 83,
+            "c": 314
+          },
+          {
+            "timeKey": "09:45",
+            "w": 132,
+            "c": 532
+          },
+          {
+            "timeKey": "09:50",
+            "w": -10,
+            "c": -19
+          },
+          {
+            "timeKey": "09:55",
+            "w": -53,
+            "c": -235
+          },
+          {
+            "timeKey": "10:00",
+            "w": 55,
+            "c": 223
+          },
+          {
+            "timeKey": "10:05",
+            "w": 44,
+            "c": 131
+          },
+          {
+            "timeKey": "10:10",
+            "w": 31,
+            "c": 101
+          },
+          {
+            "timeKey": "10:15",
+            "w": -11,
+            "c": -35
+          },
+          {
+            "timeKey": "10:25",
+            "w": -99,
+            "c": -329
+          },
+          {
+            "timeKey": "10:30",
+            "w": -5,
+            "c": -41
+          },
+          {
+            "timeKey": "10:35",
+            "w": 26,
+            "c": 109
+          },
+          {
+            "timeKey": "10:40",
+            "w": 53,
+            "c": 221
+          },
+          {
+            "timeKey": "10:45",
+            "w": -12,
+            "c": -67
+          },
+          {
+            "timeKey": "10:50",
+            "w": -73,
+            "c": -279
+          },
+          {
+            "timeKey": "15:25",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 287
+      },
+      {
+        "date": "2025-07-30",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 1579,
+        "charCountStart": 6982,
+        "changes": [],
+        "id": 288
       }
     ],
     "daysWithCompletedGoal": [
