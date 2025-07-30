@@ -191,7 +191,7 @@ $$
 
 $$\tag{.}
 \begin{align}
-A^{t}_{r} & =i(1+r^{2})^{-1-\mu/2}e^{-i\mu t}+\frac{C}{1+r^{2}} \\
+A^{t}_{r} & =i(1+r^{2})^{-1-\mu/2}e^{-i\mu t} \\
 A^{r}_{r} & =r^{-1}(1+r^{2})^{-\mu/2}e^{-i\mu t} \\
 A^{\phi}_{r} & =0
 \end{align}
