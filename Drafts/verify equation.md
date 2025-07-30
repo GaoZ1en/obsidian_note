@@ -191,7 +191,7 @@ $$
 
 $$\tag{.}
 \begin{align}
-A^{t}_{r} & =\frac{i(\mu+2)}{\mu} \\
+A^{t}_{r} & =\dots \\
 A^{r}_{r} & =r(1+r^{2})^{-1-\mu/2}e^{-i(\mu+2) t} \\
 A^{\phi}_{r} & =0
 \end{align}
@@ -204,6 +204,8 @@ A^{r}_{\phi} & =0 \\
 A^{\phi}_{\phi} & =(1+r^{2})^{-1-\mu/2}e^{-i(\mu+2)t}
 \end{align}
 $$
+
+
 
 ---
 
