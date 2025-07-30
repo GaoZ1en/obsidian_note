@@ -180,19 +180,19 @@ A^{\phi} & =C_{2}'(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( 1+\frac{\mu}{2}-\frac{\o
 \end{align}
 $$
 
-for dirichlet boundary conditions, we have to set $\displaystyle{\frac{\mu}{2}-\frac{\omega _{r}}{2}=-n_{r}\implies \omega _{r}=2n_{r}+\mu,n_{r}\in \mathbb{N}}$ for $\displaystyle{A^{r}}$ and $\displaystyle{1+\frac{\mu}{2}-\frac{\omega _{\phi}}{2}=-n_{\phi}\implies \omega _{\phi}=2n_{\phi}+\mu+2,n_{\phi}\in \mathbb{N}}$. then
+for dirichlet boundary conditions, we have to set $\displaystyle{\frac{\mu}{2}-\frac{\omega _{r}}{2}=-n_{r}-1\implies \omega _{r}=2n_{r}+\mu+2,n_{r}\in \mathbb{N}}$ for $\displaystyle{A^{r}}$ and $\displaystyle{1+\frac{\mu}{2}-\frac{\omega _{\phi}}{2}=-n_{\phi}\implies \omega _{\phi}=2n_{\phi}+\mu+2,n_{\phi}\in \mathbb{N}}$. then
 
 $$\tag{.}
 \begin{align}
-A^{r} & =C_{1}'r^{-1}(1+r^{2})^{-\mu/2}{}_{2}F_{1}\left( -n_{r},n_{r}+\mu;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i(2n_{r}+\mu)t} \\
+A^{r} & =C_{1}'r^{-1}(1+r^{2})^{-\mu/2}{}_{2}F_{1}\left( -n_{r}-1,n_{r}+\mu+1;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i(2n_{r}+\mu+2)t} \\
 A^{\phi} & =C_{2}'(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( -n_{\phi},n_{\phi}+\mu+2;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i(2n_{\phi}+\mu+2)t}
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-A^{t}_{r} & =i(1+r^{2})^{-1-\mu/2}e^{-i\mu t} \\
-A^{r}_{r} & =r^{-1}(1+r^{2})^{-\mu/2}e^{-i\mu t} \\
+A^{t}_{r} & =\frac{i(\mu+2)}{\mu} \\
+A^{r}_{r} & =r(1+r^{2})^{-1-\mu/2}e^{-i(\mu+2) t} \\
 A^{\phi}_{r} & =0
 \end{align}
 $$
@@ -201,7 +201,7 @@ $$\tag{.}
 \begin{align}
 A^{t}_{\phi} & =0 \\
 A^{r}_{\phi} & =0 \\
-A^{\phi}_{\phi} & =C_{\phi}(1+r^{2})^{-1-\mu/2}e^{-i(\mu+2)t}
+A^{\phi}_{\phi} & =(1+r^{2})^{-1-\mu/2}e^{-i(\mu+2)t}
 \end{align}
 $$
 
