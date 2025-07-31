@@ -2,7 +2,7 @@
 
 1. 协变相空间框架下的量子化
 	1. 继续考虑$\mathrm{AdS_{n}}$中的正则量子化
-		1. 已经解出来了，问题在于似乎和Wen的解不相容
+		1. 现在需要考虑新方程的解
 2. 黑洞热力学
 	1. [Hartman] lectures
 3. ads/cft需要看
@@ -14,6 +14,7 @@
 6. Project Euler
 	1. rust
 
+应当搞清楚算的是什么量，而不是直接模仿别人的计算流程。
 ## career
 
 1. 2-3years, master
