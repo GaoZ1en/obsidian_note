@@ -255,3 +255,24 @@ $$\tag{.}
 $$
 
 define
+
+$$\tag{.}
+\begin{align}
+\Phi _{\pm} & =\phi\pm i\psi
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+(1+r^{2})\partial _{r}^{2}\Phi _{\pm}+\frac{3+5r^{2}}{r}\partial _{r}\Phi _{\pm}+\left( 4-\mu ^{2}-\frac{m^{2}\mp 2m}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\Phi _{\pm} & =0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\frac{D(1+r^{2})+r^{2}(C+E+Cr^{2}-2(1+A+(-1+B)r^{2})\alpha+4r^{2}\alpha ^{2})+(1+r^{2})(1-A+r^{2}(1-B+4\alpha))\beta+\beta ^{2}(1+r^{2})^{2}}{r^{2}(1+r^{2})}g(r) \\
++\frac{A-2\beta+r^{2}(B-4\alpha-2\beta)}{r}g'(r) \\
++(1+r^{r})g''(r) \\
+\frac{D+\beta ^{2}}{r^{2}}+\frac{E-2(1+A+(-1+B)r^{2})\alpha+4r^{2}\alpha ^{2}}{1+r^{2}}+\frac{(1-A)\beta}{r^{2}}+\beta ^{2}+C+\beta(1-B+4\alpha)
+\end{align}
+$$
