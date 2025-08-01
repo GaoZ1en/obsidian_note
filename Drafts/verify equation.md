@@ -287,6 +287,13 @@ $$
 
 $$\tag{.}
 \begin{align}
-\Phi _{+}(x) & =C_{1} \frac{1}{\sin ^{2}x}\cos x (\cos x)^{1/2(1-\mu)}(\sin ^{2}x)^{(-\mu+1/2)/2}
+\Phi _{+}(x) & =C_{1} (\cos ^{2} x)^{1-\mu/2}(\sin ^{2}x)^{(m-3)/2}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega),\frac{1}{2}(m-\mu+\omega);1-\mu;\cos ^{2}x \right) \\
+ & +C_{2}(\cos ^{2}x)^{1+\mu/2}(\sin ^{2}x)^{(m-3)/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu;\cos ^{2}x \right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+
 \end{align}
 $$
