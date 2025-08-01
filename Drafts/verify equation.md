@@ -249,16 +249,25 @@ $$\tag{.}
 \begin{align}
 \partial _{r}(1+r^{2})^{-\alpha}r^{-\beta}g & =(1+r^{2})^{-\alpha}r^{-\beta}\partial _{r}g-2\alpha(1+r^{2})^{-\alpha-1}r^{-\beta+1}g-\beta(1+r^{2})^{-\alpha}r^{-\beta-1}g \\
 \partial _{r}^{2}(1+r^{2})^{-\alpha}r^{-\beta}g & =(1+r^{2})^{-\alpha}r^{-\beta}\partial _{r}^{2}g-4\alpha(1+r^{2})^{-\alpha-1}r^{-\beta+1}\partial _{r}g-2\beta(1+r^{2})^{-\alpha}r^{-\beta-1}\partial _{r}g \\
- & +4\alpha \beta(1+r^{2})^{-\alpha-1}r^{-\beta}g+2\alpha(\alpha+1)(1+r^{2})^{-\alpha-2}r^{-\beta+2}g+\beta(\beta+1)(1+r^{2})^{-\alpha}r^{-\beta-2}g
+ & +4\alpha \beta(1+r^{2})^{-\alpha-1}r^{-\beta}g+4\alpha(\alpha+1)(1+r^{2})^{-\alpha-2}r^{-\beta+2}g+\beta(\beta+1)(1+r^{2})^{-\alpha}r^{-\beta-2}g
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
 (1+r^{2})f''+\frac{A+Br^{2}}{r}f'+\left( C+\frac{D}{r^{2}}+\frac{E}{1+r^{2}} \right)f & =0 \\
-(1+r^{2})\partial _{r}^{2}g-4\alpha r\partial _{r}g-2\beta(1+r^{2})r^{-1}\partial _{r}g+4\alpha \beta g+2\alpha(\alpha+1)(1+r^{2})^{-1}r^{2}g+\beta(\beta+1)r^{-2}g \\
-(1+r^{2})\partial _{r}^{2}g-4\alpha r\partial _{r}g-2\beta(1+r^{2})r^{-1}\partial _{r}g+4\alpha \beta g+2\alpha(\alpha+1)(1+r^{2})^{-1}r^{2}g+\beta(\beta+_) \\
-+\frac{A+Br^{2}}{r}((1+r^{2})^{-\alpha}r^{-\beta}\partial _{r}g-2\alpha(1+r^{2})^{-\alpha-1}r^{-\beta+1}g-\beta(1+r^{2})^{-\alpha}r^{-\beta-1}g) \\
-+\left( C+\frac{D}{r^{2}}+\frac{E}{1+r^{2}} \right)g & =0
+(1+r^{2})\partial _{r}^{2}g-4\alpha r\partial _{r}g-2\beta(1+r^{2})r^{-1}\partial _{r}g+4\alpha \beta g+4\alpha(\alpha+1)(1+r^{2})^{-1}r^{2}g+\beta(\beta+1)(1+r^{2})r^{-2}g \\
++\frac{A+Br^{2}}{r}(\partial _{r}g-2\alpha(1+r^{2})^{-1}rg-\beta r^{-1}g)+\left( C+\frac{D}{r^{2}}+\frac{E}{1+r^{2}} \right)g & =0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+4\alpha \beta g+4\alpha(\alpha+1)(1+r^{2})^{-1}r^{2}g+\beta(\beta+1)(1+r^{2})r^{-2}g \\
++\frac{A+Br^{2}}{r}(-2\alpha(1+r^{2})^{-1}rg-\beta r^{-1}g)+\left( C+\frac{D}{r^{2}}+\frac{E}{1+r^{2}} \right)g & =0 \\
+\partial _{r}^{2}g: & (1+r^{2}) \\
+\partial _{r}g: & =\frac{A-2\beta+(B-2\beta-4\alpha)r^{2}}{r} \\
+g: & 4\alpha \beta+2\alpha(\alpha+1) \frac{r^{2}}{1+r^{2}} +\beta(\beta+1) \frac{1+r^{2}}{r^{2}}-\frac{2\alpha (A+Br^{2})}{1+r^{2}}-\frac{\beta(A+Br^{2})}{r^{2}} \\
+ & +C+\frac{D}{r^{2}}+\frac{E}{1+r^{2}}
 \end{align}
 $$
