@@ -230,3 +230,9 @@ $$\tag{.}
  & =\partial _{r}^{2}(1+r^{2})\tilde{A}^{\phi}+\frac{3+r^{2}}{r(1+r^{2})}\partial _{r}(1+r^{2})\tilde{A}^{\phi}+\left( -\mu ^{2}+\frac{\omega ^{2}-4}{1+r^{2}} \right)\tilde{A}^{\phi}
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+
+\end{align}
+$$
