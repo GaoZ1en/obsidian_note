@@ -258,7 +258,7 @@ define
 
 $$\tag{.}
 \begin{align}
-\Phi _{\pm} & =\phi\pm i\psi
+\Phi _{\pm} & =\frac{1}{2}(\phi\pm i\psi)
 \end{align}
 $$
 
@@ -272,15 +272,20 @@ $$
 
 $$\tag{.}
 \begin{align}
-\partial _{\rho}^{2}\Phi _{\pm}+\frac{3}{\sin \rho\cos \rho} \partial _{\rho}\Phi _{\pm}+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}-\frac{m^{2}\mp 2m}{\sin ^{2}\rho}+\omega ^{2} \right)\Phi _{\pm} & =0
+\Phi _{+} & =Ar^{m-2}(1+r^{2})^{(\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega), \frac{1}{2}(m-\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
+ & +Br^{m-2}(1+r^{2})^{(-\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
+\Phi _{-} & =Cr^{m}(1+r^{2})^{(\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega)+1; \frac{1}{2}(m-\mu+\omega)+1;1+\mu ; \frac{1}{1+r^{2}} \right) \\
+ & +Dr^{m}(1+r^{2})^{(-\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega)+1; \frac{1}{2}(m+\mu+\omega)+1;1+\mu; \frac{1}{1+r^{2}} \right)
 \end{align}
 $$
 
+## quantization
+
 $$\tag{.}
 \begin{align}
-\Phi _{+}(x) & =C_{1} (\cos ^{2} x)^{1-\mu/2}(\sin ^{2}x)^{m/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega),\frac{1}{2}(m-\mu+\omega);1-\mu;\cos ^{2}x \right) \\
- & +C_{2}(\cos ^{2}x)^{1+\mu/2}(\sin ^{2}x)^{m/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu;\cos ^{2}x \right) \\
-\Phi _{-}(x) & =C_{1}(\cos ^{2}x)^{1-\mu/2}(\sin ^{2}x)^{m/2}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega)+1, \frac{1}{2}(m-\mu+\omega)+1;1-\mu;\cos ^{2}x \right) \\
- & +C_{2}(\cos ^{2}x)^{1+\mu/2}(\sin ^{2}x)^{m/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega)+1, \frac{1}{2}(m+\mu+\omega)+1;1+\mu;\cos ^{2}x \right)
+\Phi _{+} & =Br^{m-2}(1+r^{2})^{(-\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
+\Phi _{-} & =Dr^{m}(1+r^{2})^{(-\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega)+1; \frac{1}{2}(m+\mu+\omega)+1;1+\mu; \frac{1}{1+r^{2}} \right)
 \end{align}
 $$
+
+and 
