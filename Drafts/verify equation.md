@@ -230,12 +230,3 @@ $$\tag{.}
 $$
 
 it is easy to see that when $\displaystyle{m=0}$, these two equations reduce to the previous ones.
-
-$$\tag{.}
-\begin{align}
-\partial _{r}\frac{\tilde{A}^{r}}{r^{2}} & =\frac{1}{r^{2}}\partial _{r}\tilde{A}^{r}-\frac{2}{r^{3}}\tilde{A}^{r} \\
-\partial ^{2}_{r}\frac{\tilde{A}^{r}}{r^{2}} & = \frac{1}{r^{2}}\partial _{r}^{2}\tilde{A}^{r}-\frac{4}{r^{3}}\partial _{r}\tilde{A}^{r}+\frac{6}{r^{4}}\tilde{A}^{r} \\
-\partial _{r}^{2}\tilde{A}^{r} & =r^{2}\partial _{r}^{2} \frac{\tilde{A}^{r}}{r^{2}}+\frac{4}{r^{2}}\partial _{r}\tilde{A}^{r}-\frac{6}{r^{4}}\tilde{A}^{r} \\
- & =r^{2}\partial _{r}
-\end{align}
-$$
