@@ -281,11 +281,40 @@ $$
 
 ## quantization
 
+the asymptotic boundary conditions we adopt here are when $\displaystyle{r\to \infty}$
+
 $$\tag{.}
 \begin{align}
-\Phi _{+} & =Br^{m-2}(1+r^{2})^{(-\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
-\Phi _{-} & =Dr^{m}(1+r^{2})^{(-\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega)+1; \frac{1}{2}(m+\mu+\omega)+1;1+\mu; \frac{1}{1+r^{2}} \right)
+A^{t} & =\mathcal{o}(r^{-2}) \\
+A^{r} & =\mathcal{o}(r^{-1}) \\
+A^{\phi} & =\mathcal{o}(r^{-2}) \\
 \end{align}
 $$
 
-and 
+and when $\displaystyle{r\to 0}$
+
+$$\tag{.}
+\begin{align}
+A^{t} & =\mathcal{O}(r^{0}) \\
+A^{r} & =\mathcal{O}(r^{0}) \\
+A^{\phi} & =\mathcal{O}(r^{-1})
+\end{align}
+$$
+
+in order to satisfy these asymptotic behaviors, we have to set $\displaystyle{A=C=0}$, and choose $\displaystyle{\frac{m+\mu-\omega _{+}}{2}=-n_{+}-1\implies \omega _{+}=2n_{+}+m+\mu+2,n_{+}\in \mathbb{N}}$ and $\displaystyle{\frac{m+\mu-\omega _{-}}{2}+1=-n_{-}\implies \omega _{-}=2n_{-}+m+\mu+2,n_{-}\in \mathbb{N}}$, i.e.,
+
+$$\tag{.}
+\begin{align}
+\Phi _{nm+} & =r^{m-2}(1+r^{2})^{(-\mu-m)/2}{}_{2}F_{1}\left( -n-1, n+m+\mu+1;1+\mu; \frac{1}{1+r^{2}} \right) \\
+\Phi _{nm-} & = r^{m}(1+r^{2})^{(-\mu-m)/2-1}{}_{2}F_{1}\left( -n; n+m+\mu+2;1+\mu; \frac{1}{1+r^{2}} \right)
+\end{align}
+$$
+
+finally we will write down the solutions as
+
+$$\tag{.}
+\begin{align}
+A^{r}_{nm+} & =r^{m-1}(1+r^{2})^{-(\mu+m)/2}{}_{2}F_{1}\left( -n-1,n+m+\mu+1;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i}e^{im\phi} \\
+A^{\phi}_{nm+} & =
+\end{align}
+$$
