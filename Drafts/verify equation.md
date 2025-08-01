@@ -215,19 +215,15 @@ $$\tag{.}
 \begin{align}
 \partial _{r}^{2}((1+r^{2})\tilde{A}^{t})+\frac{1}{r}\partial _{r}((1+r^{2})\tilde{A}^{t})-\left(\mu ^{2}+\frac{m^{2}}{r^{2}} \right)\tilde{A}^{t}-\frac{i\omega}{1+r^{2}}\partial _{r}\tilde{A}^{r}-\frac{i\omega(1-r^{2})}{r(1+r^{2})^{2}}\tilde{A}^{r}+\frac{\omega m}{1+r^{2}}\tilde{A}^{\phi} & =0 \\
 i\omega \partial _{r}((1+r^{2})\tilde{A}^{t})+\left(-\mu ^{2}-\frac{m^{2}}{r^{2}}+ \frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r}-im(1+r^{2})\partial _{r}\tilde{A}^{\phi}-\frac{2im(1+r^{2})}{r}\tilde{A}^{\phi} & =0 \\
--\frac{\omega m}{r^{2}}\tilde{A}^{t}-\frac{im}{r^{2}}\partial _{r}\tilde{A}^{r}+\frac{im}{r^{3}}\tilde{A}^{r}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =0
+-\frac{\omega m}{r^{2}}\tilde{A}^{t}-\frac{im}{r^{2}}\partial _{r}\tilde{A}^{r}+\frac{im}{r^{3}}\tilde{A}^{r}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =0 \\
+-i\omega \tilde{A}^{t}+\partial _{r}A^{r}+imA^{\phi}+ \frac{1}{r}A^{r} & =0
 \end{align}
 $$
 
-now we will insert the second equation to the first and the third equation. 
-
 $$\tag{.}
 \begin{align}
-\partial _{r}^{2}(1+r^{2})\tilde{A}^{\phi} & =(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+4r\partial _{r}\tilde{A}^{\phi}+2\tilde{A}^{\phi} \\
-(1+r^{2})\partial _{r}\tilde{A}^{\phi} & =\partial _{r}(1+r^{2})\tilde{A}^{\phi}-2r\tilde{A}^{\phi} \\
-(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =\partial _{r}^{2}(1+r^{2})\tilde{A}^{\phi}-4r\partial _{r}\tilde{A}^{\phi}-2\tilde{A}^{\phi}+\frac{3+5r^{2}}{r(1+r^{2})}(\partial _{r}(1+r^{2})\tilde{A}^{\phi}-2r\tilde{A}^{\phi})+\left( 4-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} \\
- & =\partial _{r}^{2}(1+r^{2})\tilde{A}^{\phi}-\frac{4r}{1+r^{2}}\partial _{r}(1+r^{2})\tilde{A}^{\phi}+\frac{8r^{2}}{1+r^{2}}\tilde{A}^{\phi}+\frac{3+5r}{r(1+r^{2})}\partial _{r}(1+r^{2})\tilde{A}^{\phi}-\frac{6+10r^{2}}{1+r^{2}}\tilde{A}^{\phi}+\left( 2-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} \\
- & =\partial _{r}^{2}(1+r^{2})\tilde{A}^{\phi}+\frac{3+r^{2}}{r(1+r^{2})}\partial _{r}(1+r^{2})\tilde{A}^{\phi}+\left( -\mu ^{2}+\frac{\omega ^{2}-4}{1+r^{2}} \right)\tilde{A}^{\phi}
+i\omega \tilde{A}^{t} & =\partial _{r}A^{r}+\frac{1}{r}A^{r}+imA^{\phi} \\
+\partial _{r}\left( (1+r^{2})\left( \partial _{r}A^{r}+\frac{1}{r}A^{r}+imA^{\phi} \right) \right)+\left(-\mu ^{2}-\frac{m^{2}}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}}\right)\tilde{A}^{r}-im(1+r^{2})\partial _{r}\tilde{A}^{\phi}-\frac{2im(1+r^{2})}{r}\tilde{A}^{\phi} & 
 \end{align}
 $$
 
