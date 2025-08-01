@@ -230,3 +230,23 @@ $$\tag{.}
 $$
 
 it is easy to see that when $\displaystyle{m=0}$, these two equations reduce to the previous ones.
+
+$$\tag{.}
+\begin{align}
+(1+r^{2})f''+\frac{A+Br^{2}}{r}f'+\left( C+\frac{D}{r^{2}}+\frac{E}{1+r^{2}} \right)f & =0
+\end{align}
+$$
+
+let $\displaystyle{g=(1+r^{2})^{\alpha}r^{\beta}f}$, what is the differential equation satisfied by $\displaystyle{g}$?
+
+$$\tag{.}
+\begin{align}
+f & =(1+r^{2})^{-\alpha}r^{-\beta}g
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\partial _{r}(1+r^{2})^{-\alpha}r^{-\beta}g & =(1+r^{2})^{-\alpha}r^{-\beta}\partial _{r}g-2\alpha(1+r^{2})^{-\alpha-1}r^{-\beta+2}g-\beta(1+r^{2})^{-\alpha}r^{-\beta-1}g
+\end{align}
+$$
