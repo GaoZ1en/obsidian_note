@@ -268,11 +268,25 @@ $$\tag{.}
 \end{align}
 $$
 
+$\displaystyle{r=\tan \rho}$,
+
 $$\tag{.}
 \begin{align}
-\frac{D(1+r^{2})+r^{2}(C+E+Cr^{2}-2(1+A+(-1+B)r^{2})\alpha+4r^{2}\alpha ^{2})+(1+r^{2})(1-A+r^{2}(1-B+4\alpha))\beta+\beta ^{2}(1+r^{2})^{2}}{r^{2}(1+r^{2})}g(r) \\
-+\frac{A-2\beta+r^{2}(B-4\alpha-2\beta)}{r}g'(r) \\
-+(1+r^{r})g''(r) \\
-\frac{D+\beta ^{2}}{r^{2}}+\frac{E-2(1+A+(-1+B)r^{2})\alpha+4r^{2}\alpha ^{2}}{1+r^{2}}+\frac{(1-A)\beta}{r^{2}}+\beta ^{2}+C+\beta(1-B+4\alpha)
+\partial _{r} & =\frac{\partial \rho}{\partial r}\partial _{\rho} \\
+ & =\frac{1}{1+r^{2}}\partial _{\rho} \\
+ & =\cos ^{2}\rho \partial _{\rho}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\partial _{\rho}(\cos ^{2}\rho \partial _{\rho}\Phi _{\pm})+\frac{3+5\tan ^{2}\rho}{\tan \rho}\cos ^{2}\rho \partial _{\rho}\Phi _{\pm}+\left( 4-\mu ^{2}-\frac{m^{2}\mp 2m}{\tan ^{2}\rho}+\omega ^{2}\cos ^{2}\rho \right)\Phi _{\pm} & =0 \\
+\partial _{\rho}^{2}\Phi _{\pm}+\frac{3}{\sin \rho\cos \rho} \partial _{\rho}\Phi _{\pm}+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}-\frac{m^{2}\mp 2m}{\sin ^{2}\rho}+\omega ^{2} \right)\Phi _{\pm} & =0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\Phi _{+}(x) & =C_{1} \frac{1}{\sin ^{2}x}\cos x (\cos x)^{1/2(1-\mu)}(\sin ^{2}x)^{(-\mu+1/2)/2}
 \end{align}
 $$
