@@ -314,7 +314,33 @@ finally we will write down the solutions as
 
 $$\tag{.}
 \begin{align}
-A^{r}_{nm+} & =r^{m-1}(1+r^{2})^{-(\mu+m)/2}{}_{2}F_{1}\left( -n-1,n+m+\mu+1;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i}e^{im\phi} \\
-A^{\phi}_{nm+} & =
+A^{t}_{nm+} & =? \\
+A^{r}_{nm+} & =r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n+1}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+m+\mu+2)t}e^{im\phi} \\
+A^{\phi}_{nm+} & =ir^{m-2}(1+r^{2})^{-(\mu+m)/2}P_{n+1}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+m+\mu+2)t}e^{im\phi} \\
+n,m & \in \mathbb{N}
+\end{align}
+$$
+
+and
+
+$$\tag{.}
+\begin{align}
+A^{t}_{nm-} & =? \\
+A^{r}_{nm-} & =r^{m+1}(1+r^{2})^{-(\mu+m)/2-1}P_{n}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+m+\mu+2)t}e^{im\phi} \\
+A^{\phi}_{nm-} & =-ir^{m}(1+r^{2})^{-(\mu+m)/2-1}P_{n}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+m+\mu+2)t}e^{im\phi} \\
+n,m & \in \mathbb{N}
+\end{align}
+$$
+
+$\displaystyle{A^{t}}$ is determined by
+
+$$\tag{.}
+\begin{align}
+i\omega \tilde{A}^{t} & =\partial _{r}\tilde{A}^{r}+\frac{1}{r}\tilde{A}^{r}+im\tilde{A}^{\phi}
+\end{align}
+$$
+$$\tag{.}
+\begin{align}
+im\tilde{A}^{t}_{+} & =\partial _{r}\tilde{A}^{r}_{+}+\frac{1}{r}\tilde{A}^{r}_{+}+im\tilde{A}^{\phi}_{+}
 \end{align}
 $$
