@@ -184,5 +184,3 @@ F_{k,\bar{k}}(t,r,\theta) & =(-1)^{k+\bar{k}} \frac{\Gamma(\mu+k+2)}{\Gamma(\mu+
 $$
 
 with energy level $\displaystyle{\omega=k+\bar{k}+\mu+1}$.
-
-
