@@ -245,12 +245,12 @@ $$\tag{.}
 \end{align}
 $$
 
-define $\displaystyle{\psi=\frac{\tilde{A}^{r}}{r},\phi=\tilde{A}^{\phi}}$, then
+define $\displaystyle{\psi=\tilde{A}^{r},\phi=r\tilde{A}^{\phi}}$, then
 
 $$\tag{.}
 \begin{align}
-(1+r^{2})\partial _{r}^{2}\psi+\frac{3+5r^{2}}{r}\partial _{r}\psi+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\psi & =\frac{2im}{r^{2}}\phi  \\
-(1+r^{2})\partial _{r}^{2}\phi+\frac{3+5r^{2}}{r}\partial _{r}\phi+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\phi & =-\frac{2im}{r^{2}}\psi
+(1+r^{2})\partial _{r}^{2}\psi+\frac{1+3r^{2}}{r}\partial _{r}\psi+\left( 1-\mu ^{2}-\frac{m^{2}+1}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\psi & =\frac{2im}{r^{2}}\phi  \\
+(1+r^{2})\partial _{r}^{2}\phi+\frac{1+3r^{2}}{r}\partial _{r}\phi+\left( 1-\mu ^{2}-\frac{m^{2}+1}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\phi & =-\frac{2im}{r^{2}}\psi
 \end{align}
 $$
 
@@ -266,16 +266,16 @@ then
 
 $$\tag{.}
 \begin{align}
-(1+r^{2})\partial _{r}^{2}\Phi _{\pm}+\frac{3+5r^{2}}{r}\partial _{r}\Phi _{\pm}+\left( 4-\mu ^{2}-\frac{m^{2}\mp 2m}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\Phi _{\pm} & =0
+(1+r^{2})\partial _{r}^{2}\Phi _{\pm}+\frac{1+3r^{2}}{r}\partial _{r}\Phi _{\pm}+\left( 1-\mu ^{2}-\frac{(m\mp 1)^{2}}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\Phi _{\pm} & =0
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-\Phi _{+} & =Ar^{m-1|-1}(1+r^{2})^{(\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega), \frac{1}{2}(m-\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
- & +Br^{m-2}(1+r^{2})^{(-\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
-\Phi _{-} & =Cr^{m}(1+r^{2})^{(\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega)+1; \frac{1}{2}(m-\mu+\omega)+1;1+\mu ; \frac{1}{1+r^{2}} \right) \\
- & +Dr^{m}(1+r^{2})^{(-\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega)+1; \frac{1}{2}(m+\mu+\omega)+1;1+\mu; \frac{1}{1+r^{2}} \right)
+\Phi _{+} & =Ar^{m-1}(1+r^{2})^{(\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega), \frac{1}{2}(m-\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
+ & +Br^{m-1}(1+r^{2})^{(-\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
+\Phi _{-} & =Cr^{m+1}(1+r^{2})^{(\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega)+1; \frac{1}{2}(m-\mu+\omega)+1;1+\mu ; \frac{1}{1+r^{2}} \right) \\
+ & +Dr^{m+1}(1+r^{2})^{(-\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega)+1; \frac{1}{2}(m+\mu+\omega)+1;1+\mu; \frac{1}{1+r^{2}} \right)
 \end{align}
 $$
 
