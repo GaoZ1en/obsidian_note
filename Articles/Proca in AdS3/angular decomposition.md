@@ -44,15 +44,24 @@ here $\displaystyle{Y_{\ell \mathbf{m}}(x^{i})}$ is the spherical harmonics on $
 $$\tag{1.6}
 \begin{align}
 \tilde{\Delta}_{S^{n-2}}Y_{\ell \mathbf{m}} & =-\ell(\ell+n-3)Y_{\ell \mathbf{m}} \\
-\int \mathrm{d}\sigma _{S^{n-2}}
+\int \mathrm{d}\sigma _{S^{n-2}}Y_{\ell \mathbf{m}}Y^{*}_{\ell' \mathbf{m}'} & =\delta _{\ell \ell'}\delta _{\mathbf{m}\mathbf{m'}}
 \end{align}
 $$
 
 and vector-type component of $\displaystyle{A_{\mu}}$, $\displaystyle{A_{i}^{(v)}}$ can be expanded as
 
-$$\tag{1.6}
+$$\tag{1.7}
 \begin{align}
 A_{i}^{(v)} & =\chi _{\ell \mathbf{m}}Y^{(v)}_{\ell \mathbf{m},i}(x^{i})
+\end{align}
+$$
+
+here $\displaystyle{Y_{\ell \mathbf{m},i}^{(v)}}$ is the vector spherical harmonics without divergence on $\displaystyle{S^{n-2}}$, with eigenvalue equation and orthonormalization condition
+
+$$\tag{1.8}
+\begin{align}
+\tilde{\Delta}_{S^{n-2}}Y^{(v)}_{\ell \mathbf{m},i} & =-(\ell(\ell+n-3)-1)Y^{(v)}_{\ell \mathbf{m},i} \\
+\int \mathrm{d}\sigma _{S^{n-2}}\tilde{g}^{ij}Y^{(v)}_{\ell \mathbf{m},i}Y^{(v)}_{\ell' \mathbf{m}',j} & =\delta _{\ell \ell'}\delta _{\mathbf{m}\mathbf{m}'}
 \end{align}
 $$
 
