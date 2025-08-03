@@ -336,11 +336,18 @@ $\displaystyle{A^{t}}$ is determined by
 
 $$\tag{.}
 \begin{align}
-i\omega \tilde{A}^{t} & =\partial _{r}\tilde{A}^{r}+\frac{1}{r}\tilde{A}^{r}+im\tilde{A}^{\phi}
+i\omega \tilde{A}^{t}_{nm\pm} & =\partial _{r}\tilde{A}^{r}_{nm\pm}+\frac{1}{r}\tilde{A}^{r}_{nm\pm}+im\tilde{A}^{\phi}_{nm\pm}
 \end{align}
 $$
+
+---
+
+in this part we will compare the result with Wen's result. when $\displaystyle{m=\pm 1,\pm2}$
+
 $$\tag{.}
 \begin{align}
-im\tilde{A}^{t}_{+} & =\partial _{r}\tilde{A}^{r}_{+}+\frac{1}{r}\tilde{A}^{r}_{+}+im\tilde{A}^{\phi}_{+}
+(1+r^{2})\partial _{r}^{2}\Phi _{\pm}+\frac{1+3r^{2}}{r}\partial _{r}\Phi _{\pm}+\left( 1-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}}-\frac{(m\mp 1)^{2}}{r^{2}} \right)\Phi _{\pm} & =0 \\
+\partial _{\rho}(\cos ^{2}\rho \partial _{\rho}\Phi _{\pm})+\frac{\cos ^{2}\rho+3\sin ^{2}\rho}{\sin \rho}\cos \rho \partial _{\rho}\Phi _{\pm}+\left( 1-\mu ^{2}-\frac{(m\mp 1)^{2}}{\tan ^{2}\rho}+\omega ^{2}\cos ^{2}\rho \right)\Phi _{\pm} & =0 \\
+\cos ^{2}\rho \partial _{\rho}^{2}\Phi _{\pm}-2\sin \rho \cos \rho \partial _{\rho}\Phi _{\pm}+\frac{\cos ^{2}\rho+3\sin ^{2}\rho}{\sin \rho}\cos \rho
 \end{align}
 $$
