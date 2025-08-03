@@ -272,7 +272,7 @@ $$
 
 $$\tag{.}
 \begin{align}
-\Phi _{+} & =Ar^{m-2}(1+r^{2})^{(\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega), \frac{1}{2}(m-\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
+\Phi _{+} & =Ar^{m-1|-1}(1+r^{2})^{(\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega), \frac{1}{2}(m-\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
  & +Br^{m-2}(1+r^{2})^{(-\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
 \Phi _{-} & =Cr^{m}(1+r^{2})^{(\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega)+1; \frac{1}{2}(m-\mu+\omega)+1;1+\mu ; \frac{1}{1+r^{2}} \right) \\
  & +Dr^{m}(1+r^{2})^{(-\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega)+1; \frac{1}{2}(m+\mu+\omega)+1;1+\mu; \frac{1}{1+r^{2}} \right)
@@ -301,23 +301,23 @@ A^{\phi} & =\mathcal{O}(r^{-1})
 \end{align}
 $$
 
-in order to satisfy these asymptotic behaviors, we have to set $\displaystyle{A=C=0}$, and choose $\displaystyle{\frac{m+\mu-\omega _{+}}{2}=-n_{+}-1\implies \omega _{+}=2n_{+}+m+\mu+2,n_{+}\in \mathbb{N}}$ and $\displaystyle{\frac{m+\mu-\omega _{-}}{2}+1=-n_{-}\implies \omega _{-}=2n_{-}+m+\mu+2,n_{-}\in \mathbb{N}}$, i.e.,
+in order to satisfy these asymptotic behaviors, we have to set $\displaystyle{A=C=0}$, and we will write down the solutions as
 
 $$\tag{.}
 \begin{align}
-\Phi _{nm+} & =r^{m-2}(1+r^{2})^{(-\mu-m)/2}{}_{2}F_{1}\left( -n-1, n+m+\mu+1;1+\mu; \frac{1}{1+r^{2}} \right) \\
-\Phi _{nm-} & = r^{m}(1+r^{2})^{(-\mu-m)/2-1}{}_{2}F_{1}\left( -n; n+m+\mu+2;1+\mu; \frac{1}{1+r^{2}} \right)
+A^{t}_{n0+} & =\dots \\
+A^{r}_{n0+} & = \\
+A^{\phi}_{n0+} & = \\
+n\in & \mathbb{N}
 \end{align}
 $$
-
-finally we will write down the solutions as
 
 $$\tag{.}
 \begin{align}
 A^{t}_{nm+} & =? \\
-A^{r}_{nm+} & =r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n+1}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+m+\mu+2)t}e^{im\phi} \\
-A^{\phi}_{nm+} & =ir^{m-2}(1+r^{2})^{-(\mu+m)/2}P_{n+1}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+m+\mu+2)t}e^{im\phi} \\
-n,m & \in \mathbb{N}
+A^{r}_{nm+} & =r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+m+\mu)t}e^{im\phi} \\
+A^{\phi}_{nm+} & =ir^{m-2}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+m+\mu)t}e^{im\phi} \\
+n & \in \mathbb{N},m\in \mathbb{N}_{+}
 \end{align}
 $$
 
@@ -344,28 +344,3 @@ $$
 
 in this part we will compare the result with Wen's result. when $\displaystyle{m=\pm 1,\pm2}$
 
-$$\tag{.}
-\begin{align}
-\Phi _{+} & = r^{m-2}(1+r^{2})^{(-\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
-\Phi _{-} & = r^{m}(1+r^{2})^{(-\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega)+1; \frac{1}{2}(m+\mu+\omega)+1;1+\mu; \frac{1}{1+r^{2}} \right)
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu; \frac{1}{1+r^{2}}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\frac{1}{2}(m+\mu-\omega)=-n_{+}-1,\omega=2n+m+2+\mu \\
-{}_{2}F_{1}\left( -n-1,n+m+\mu+1;1+\mu; z \right)
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-r^{m-2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega); 1+\mu; \frac{1}{1+r^{2}} \right)
-\end{align}
-$$
