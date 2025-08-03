@@ -272,6 +272,12 @@ $$
 
 $$\tag{.}
 \begin{align}
+4z(1-z)\partial _{z}^{2}\Phi _{\pm}-4z\partial _{z}\Phi _{\pm}+\left( \frac{1-\mu ^{2}}{z}-\frac{(m\mp 1)^{2}}{1-z}+\omega ^{2} \right)\Phi _{\pm} & =0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
 \Phi _{+} & =Ar^{m-1}(1+r^{2})^{(\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega), \frac{1}{2}(m-\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
  & +Br^{m-1}(1+r^{2})^{(-\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
 \Phi _{-} & =Cr^{m+1}(1+r^{2})^{(\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega)+1; \frac{1}{2}(m-\mu+\omega)+1;1+\mu ; \frac{1}{1+r^{2}} \right) \\
@@ -302,15 +308,6 @@ A^{\phi} & =\mathcal{O}(r^{-1})
 $$
 
 in order to satisfy these asymptotic behaviors, we have to set $\displaystyle{A=C=0}$, and we will write down the solutions as
-
-$$\tag{.}
-\begin{align}
-A^{t}_{n0+} & =\dots \\
-A^{r}_{n0+} & = \\
-A^{\phi}_{n0+} & = \\
-n\in & \mathbb{N}
-\end{align}
-$$
 
 $$\tag{.}
 \begin{align}
