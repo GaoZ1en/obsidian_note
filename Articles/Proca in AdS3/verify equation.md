@@ -272,6 +272,22 @@ $$
 
 $$\tag{.}
 \begin{align}
+\partial _{\rho}^{2}\Phi _{\pm}+\frac{3}{\sin \rho \cos \rho}\partial _{\rho}\Phi _{\pm}+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}-\frac{m^{2}\mp 2m}{\sin ^{2}\rho}+\omega ^{2} \right)\Phi _{\pm} & =0 \\
+4z(1-z)\partial _{z}^{2}\Phi _{\pm}-4(1+z)\partial _{z}\Phi _{\pm}+\left( \frac{4-\mu ^{2}}{z}-\frac{m^{2}\mp 2m}{1-z}+\omega ^{2} \right)\Phi _{\pm} & =0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\Phi _{+} & =A(\tan \rho)^{-1+m/2}(\cos ^{2}\rho)^{(m-\mu)/2}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega), \frac{1}{2}(m-\mu+\omega); 1-\mu;\cos ^{2}\rho \right) \\
+ & +B(\tan ^{2}\rho)^{-1+m/2}(\cos ^{2}\rho)^{(m+\mu)/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu;\cos ^{2}\rho \right) \\
+\Phi _{-} & =C(\tan ^{2}\rho)^{m/2}(\cos ^{2}\rho)^{1+(m-\mu)/2}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega)+1, \frac{1}{2}(m-\mu+\omega)+1;1-\mu;\cos ^{2}\rho \right) \\
+ & +D(\tan ^{2}\rho)^{m/2}(\cos ^{2}\rho)^{1+(m+\mu)/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega)+1, \frac{1}{2}(m+\mu+\omega)+1;1+\mu;\cos ^{2}\rho \right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
 \Phi _{+} & =Ar^{m-2}(1+r^{2})^{(\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega), \frac{1}{2}(m-\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
  & +Br^{m-2}(1+r^{2})^{(-\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
 \Phi _{-} & =Cr^{m}(1+r^{2})^{(\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega)+1; \frac{1}{2}(m-\mu+\omega)+1;1+\mu ; \frac{1}{1+r^{2}} \right) \\
@@ -343,11 +359,3 @@ $$
 ---
 
 in this part we will compare the result with Wen's result. when $\displaystyle{m=\pm 1,\pm2}$
-
-$$\tag{.}
-\begin{align}
-(1+r^{2})\partial _{r}^{2}\Phi _{\pm}+\frac{1+3r^{2}}{r}\partial _{r}\Phi _{\pm}+\left( 1-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}}-\frac{(m\mp 1)^{2}}{r^{2}} \right)\Phi _{\pm} & =0 \\
-\partial _{\rho}(\cos ^{2}\rho \partial _{\rho}\Phi _{\pm})+\frac{\cos ^{2}\rho+3\sin ^{2}\rho}{\sin \rho}\cos \rho \partial _{\rho}\Phi _{\pm}+\left( 1-\mu ^{2}-\frac{(m\mp 1)^{2}}{\tan ^{2}\rho}+\omega ^{2}\cos ^{2}\rho \right)\Phi _{\pm} & =0 \\
-\cos ^{2}\rho \partial _{\rho}^{2}\Phi _{\pm}-2\sin \rho \cos \rho \partial _{\rho}\Phi _{\pm}+\frac{\cos ^{2}\rho+3\sin ^{2}\rho}{\sin \rho}\cos \rho
-\end{align}
-$$
