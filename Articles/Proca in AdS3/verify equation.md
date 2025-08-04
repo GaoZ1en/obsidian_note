@@ -320,15 +320,8 @@ we will write the result as
 
 $$\tag{.}
 \begin{align}
-A^{r}+irA^{\phi} & =0 \\
-A^{\phi} & =-\frac{i}{r}A^{t}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-A^{r}_{nm+} & =r^{|m-1|}(1+r^{2})^{-(\mu+|m-1|+1)/2}P^{(\mu,|m-1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m-1|+\mu+1)t}e^{im\phi} \\
-A^{\phi}_{nm+} & =-ir^{|m-1|-1}(1+r^{2})^{-(\mu+|m-1|+1)/2}P^{(\mu,|m-1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m-1|+\mu+1)t}e^{im\phi}
+A^{r}_{nm+} & =-ir^{|m-1|}(1+r^{2})^{-(\mu+|m-1|+1)/2}P^{(\mu,|m-1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m-1|+\mu+1)t}e^{im\phi} \\
+A^{\phi}_{nm+} & =r^{|m-1|-1}(1+r^{2})^{-(\mu+|m-1|+1)/2}P^{(\mu,|m-1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m-1|+\mu+1)t}e^{im\phi}
 \end{align}
 $$
 
@@ -336,8 +329,8 @@ and
 
 $$\tag{.}
 \begin{align}
-A^{r}_{nm-} & =r^{|m+1|}(1+r^{2})^{-(\mu+|m+1|+1)/2}P_{n}^{(\mu,|m+1|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi} \\
-A^{\phi}_{nm-} & =ir^{|m+1|-1}(1+r^{2})^{-(\mu+|m+1|+1)/2}P_{n}^{(\mu,|m+1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi}
+A^{r}_{nm-} & =ir^{|m+1|}(1+r^{2})^{-(\mu+|m+1|+1)/2}P_{n}^{(\mu,|m+1|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi} \\
+A^{\phi}_{nm-} & =r^{|m+1|-1}(1+r^{2})^{-(\mu+|m+1|+1)/2}P_{n}^{(\mu,|m+1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi}
 \end{align}
 $$
 
@@ -345,11 +338,19 @@ and $\displaystyle{A^{t}}$ is determined by
 
 $$\tag{.}
 \begin{align}
-i(2n_{\pm}+|m\mp 1|+\mu+1) \tilde{A}^{t}_{nm\pm} & =(|m\mp 1|+1\pm m)r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
- & -(\mu+|m\mp 1|+1)r^{|m\mp 1|+1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
- & +r^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}\partial _{r} P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
+\omega \tilde{A}^{t} & =-\partial _{r}\Phi _{+}+\frac{m-1}{r}\Phi _{+}+\partial _{r}\Phi _{-}+\frac{m+1}{r}\Phi _{-} \\
+\Phi _{\pm} & = r^{|m\mp1|}(1+r^{2})^{(-\mu-|m\mp1|-1)/2} P^{(\mu,|m\mp 1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+(2n+|m\mp 1|+\mu+1)\tilde{A}^{t} & =\mp \partial _{r}\Phi _{\pm}+\frac{m\mp1}{r}\Phi _{\pm} \\
+ & =\mp \partial _{r}\left( r^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right) \\
+ & +(m\mp 1)r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}
+\end{align}
+$$
+
 
 ---
 
@@ -359,82 +360,3 @@ notice that when $\displaystyle{m\leqslant0}$, we write $\displaystyle{m'=-m\geq
 
 in this part we will compare the result with Wen's result. $\displaystyle{m=\pm 1,\pm2}$ and $\displaystyle{n=0}$
 
-### $\displaystyle{m=1}$
-
-$$\tag{.}
-\begin{align}
-A^{t}_{01+} & =i\left( \frac{\mu-1}{\mu+1} -\frac{1}{1+r^{2}}\right)r^{-1}(1+r^{2})^{-(\mu+1)/2}e^{-i(\mu+1)t}e^{i\phi} \\
-A^{r}_{01+} & =(1+r^{2})^{-(\mu+1)/2}e^{-i(\mu+1)t}e^{i\phi} \\
-A^{\phi}_{01+} & =-ir^{-1}(1+r^{2})^{-(\mu+1)/2}e^{-i(\mu+1)t}e^{i\phi}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-A^{t}_{01-} & =i\left( \frac{\mu+1}{\mu+3} -\frac{1}{1+r^{2}}\right)r(1+r^{2})^{-(\mu+3)/2}e^{-i(\mu+3)t}e^{i\phi} \\
-A^{r}_{01-} & =r^{2}(1+r^{2})^{-(\mu+3)/2}e^{-i(\mu+3)t}e^{i\phi} \\
-A^{\phi}_{01-} & =ir(1+r^{2})^{-(\mu+3)/2}e^{-i(\mu+3)t}e^{i\phi}
-\end{align}
-$$
-
-### $\displaystyle{m=2}$
-
-$$\tag{.}
-\begin{align}
-A^{t}_{02+} & =i\left( \frac{\mu-2}{\mu+2}-\frac{1}{1+r^{2}} \right)(1+r^{2})^{-(\mu+2)/2}e^{-i(\mu+2)t}e^{2i\phi} \\
-A^{r}_{02+} & =r(1+r^{2})^{-(\mu+2)/2}e^{-i(\mu+2)t}e^{2i\phi} \\
-A^{\phi}_{02+} & =-i(1+r^{2})^{-(\mu+2)/2}e^{-i(\mu+2)t}e^{2i\phi}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-A^{t}_{02-} & =i\left( \frac{\mu+2}{\mu+4}-\frac{1}{1+r^{2}} \right)r^{2}(1+r^{2})^{-(\mu+6)/2}e^{-i(\mu+4)t}e^{2i\phi} \\
-A^{r}_{02-} & =r^{3}(1+r^{2})^{-(\mu+4)/2}e^{-i(\mu+4)t}e^{2i\phi} \\
-A^{\phi}_{02-} & =ir^{2}(1+r^{2})^{-(\mu+4)/2}e^{-i(\mu+4)t}e^{2i\phi}
-\end{align}
-$$
-
-### $\displaystyle{m=-1}$
-
-$$\tag{.}
-\begin{align}
-A^{t}_{0,-1,+} & =i\left( \frac{\mu+1}{\mu+3}-\frac{1}{1+r^{2}} \right)r(1+r^{2})^{-(\mu+3)/2}e^{-i(\mu+3)t}e^{-i\phi} \\
-A^{r}_{0,-1,+} & =r^{2}(1+r^{2})^{-(\mu+3)/2}e^{-i(\mu+3)t}e^{-i\phi} \\
-A^{\phi}_{0,-1,+} & =-ir(1+r^{2})^{-(\mu+3)/2}e^{-i(\mu+3)t}e^{-i\phi}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-A^{t}_{0,-1,-} & =i\left( \frac{\mu-1}{\mu+1} -\frac{1}{1+r^{2}}\right)r^{-1}(1+r^{2})^{-(\mu+1)/2}e^{-i(\mu+1)t}e^{-i\phi}\\
-A^{r}_{0,-1,-} & =(1+r^{2})^{-(\mu+1)/2}e^{-i(\mu+1)t}e^{-i\phi} \\
-A^{\phi}_{0,-1,-} & =ir^{-1}(1+r^{2})^{-(\mu+1)/2}e^{-i(\mu+1)t}e^{-i\phi}
-\end{align}
-$$
-
-### $\displaystyle{m=-2}$
-
-$$\tag{.}
-\begin{align}
-A^{t}_{0,-2,+} & =i\left( \frac{\mu+2}{\mu+4}-\frac{1}{1+r^{2}} \right)r^{2}(1+r^{2})^{-(\mu+4)/2}e^{-i(\mu+4)t}e^{-2i\phi} \\
-A^{r}_{0,-2,+} & =r^{3}(1+r^{2})^{-(\mu+4)/2}e^{-i(\mu+4)t}e^{-2i\phi} \\
-A^{\phi}_{0,-2,+} & =-ir^{2}(1+r^{2})^{-(\mu+4)/2}e^{-i(\mu+4)t}e^{-2i\phi}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-A^{t}_{0,-2,-} & =i\left( \frac{\mu-2}{\mu}-\frac{1}{1+r^{2}} \right)(1+r^{2})^{-(\mu+2)/2}e^{-i(\mu+2)t}e^{-2i\phi} \\
-A^{r}_{0,-2,-} & =r(1+r^{2})^{-(\mu+2)/2}e^{-i(\mu+2)t}e^{-2i\phi} \\
-A^{\phi}_{0,-2,-} & =i(1+r^{2})^{-(\mu+2)/2}e^{-i(\mu+2)t}e^{-2i\phi}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-A^{t}_{0m\pm} & =i\left( \frac{\mu\mp m}{\mu\mp m+2}-\frac{1}{1+r^{2}} \right)r^{|m\mp1|-1}(1+r^{2})^{-(\mu+|m\mp1|+1)/2}e^{-i(\mu+|m\mp1|+1)t}e^{im\phi} \\
-A^{r}_{0m\pm} & =r^{|m\mp1|}(1+r^{2})^{-(\mu+|m\mp1|+1)/2}e^{-i(\mu+|m\mp1|+1)t}e^{im\phi} \\
-A^{\phi}_{0m\pm} & =-ir^{|m\mp1|-1}(1+r^{2})^{-(\mu+|m\mp1|+1)t}e^{-i(\mu+|m\mp1|+1)t}e^{im\phi}
-\end{align}
-$$
