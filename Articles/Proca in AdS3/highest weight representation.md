@@ -1,0 +1,36 @@
+Killing vectors
+
+$$\tag{1.1}
+\begin{align}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{-1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
+\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{-1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\tilde{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\tilde{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
+\tilde{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
+\end{align}
+$$
+
+and their non-zero commutators
+
+$$\tag{1.2}
+\begin{align}
+[\xi_{0},\xi_{1}] & =i\xi_{1} \\
+[\xi_{0},\xi _{-1}] & =-i\xi _{-1} \\
+[\xi _{1},\xi _{-1}] & =-2i\xi _{0} \\
+[\tilde{\xi}_{0},\tilde{\xi}_{1}] & =i\tilde{\xi}_{1} \\
+[\tilde{\xi}_{0},\tilde{\xi}_{-1}] & =-i\tilde{\xi}_{-1} \\
+[\tilde{\xi}_{1},\tilde{\xi}_{-1}] & =-2i\tilde{\xi}_{0}
+\end{align}
+$$
+
+introduce the total-antisymmetric tensor $\displaystyle{\varepsilon _{\mu \nu \rho}}$ with non-zero components $\displaystyle{\varepsilon _{tr\phi}=r}$
+
+$$\tag{.}
+\begin{align}
+\nabla _{\mu}\xi _{a,\nu} & =-\varepsilon _{\mu \nu \rho}\xi _{a}^{~\rho} \\
+\nabla _{\mu}\tilde{\xi} _{a,\nu} & =\varepsilon _{\mu \nu \rho}\tilde{\xi}_{a}^{~\rho}
+\end{align}
+$$
+
+
