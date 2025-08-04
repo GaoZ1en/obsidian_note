@@ -320,6 +320,8 @@ we will write the result as
 
 $$\tag{.}
 \begin{align}
+A^{t}_{nm+} & =\left[((\mu+m)r^{2}+(m-1-|m-1|))r^{|m-1|-1}(1+r^{2})^{-(\mu+|m-1|+3)/2}P_{n}^{(\mu,|m-1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right. \\
+ & \left.- 4r^{|m-1|+1}(1+r^{2})^{-(\mu+|m-1|+5)/2}{P_{n}^{(\mu,|m-1|)}}'\left( \frac{r^{2}-1}{r^{2}+1} \right)\right]e^{-i(2n+|m-1|+\mu+1)t}e^{im\phi} \\
 A^{r}_{nm+} & =-ir^{|m-1|}(1+r^{2})^{-(\mu+|m-1|+1)/2}P^{(\mu,|m-1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m-1|+\mu+1)t}e^{im\phi} \\
 A^{\phi}_{nm+} & =r^{|m-1|-1}(1+r^{2})^{-(\mu+|m-1|+1)/2}P^{(\mu,|m-1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m-1|+\mu+1)t}e^{im\phi}
 \end{align}
@@ -329,6 +331,8 @@ and
 
 $$\tag{.}
 \begin{align}
+A^{t}_{nm-} & = \left[((-\mu+m)r^{2}+(|m+1|+m+1))r^{|m+1|-1}(1+r^{2})^{-(\mu+|m+1|+3)/2}P_{n}^{(\mu,|m+1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right. \\
+ & \left.+4r^{|m+1|+1}(1+r^{2})^{-(\mu+|m+1|+5)/2}{P_{n}^{(\mu,|m+1|)}}'\left( \frac{r^{2}-1}{r^{2}+1} \right)\right]e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi} \\
 A^{r}_{nm-} & =ir^{|m+1|}(1+r^{2})^{-(\mu+|m+1|+1)/2}P_{n}^{(\mu,|m+1|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi} \\
 A^{\phi}_{nm-} & =r^{|m+1|-1}(1+r^{2})^{-(\mu+|m+1|+1)/2}P_{n}^{(\mu,|m+1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi}
 \end{align}
@@ -338,16 +342,10 @@ and $\displaystyle{A^{t}}$ is determined by
 
 $$\tag{.}
 \begin{align}
-\omega \tilde{A}^{t} & =-\partial _{r}\Phi _{+}+\frac{m-1}{r}\Phi _{+}+\partial _{r}\Phi _{-}+\frac{m+1}{r}\Phi _{-} \\
-\Phi _{\pm} & = r^{|m\mp1|}(1+r^{2})^{(-\mu-|m\mp1|-1)/2} P^{(\mu,|m\mp 1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-(2n+|m\mp 1|+\mu+1)\tilde{A}^{t} & =\mp \partial _{r}\Phi _{\pm}+\frac{m\mp1}{r}\Phi _{\pm} \\
- & =\mp \partial _{r}\left( r^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right) \\
- & +(m\mp 1)r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}
+A_{nm\pm}^{t} & = \frac{1}{2n+|m\mp 1|+\mu+1}\left[((\pm\mu+m)r^{2}+(\mp|m\mp 1|+m\mp 1))r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right. \\
+ & \left.\mp 4r^{|m\mp 1|+1}(1+r^{2})^{-(\mu+|m\mp 1|+5)/2}{P_{n}^{(\mu,|m\mp 1|)}}'\left( \frac{r^{2}-1}{r^{2}+1} \right)\right]e^{-i(2n+|m\mp 1|+\mu+1)t}e^{im\phi} \\
+A^{r}_{nm\pm} & =\mp ir^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m\mp 1|+\mu+1)t}e^{im\phi} \\
+A^{\phi}_{nm\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m\mp 1|+\mu+1)t}e^{im\phi}
 \end{align}
 $$
 
@@ -358,5 +356,12 @@ notice that when $\displaystyle{m\leqslant0}$, we write $\displaystyle{m'=-m\geq
 
 ---
 
-in this part we will compare the result with Wen's result. $\displaystyle{m=\pm 1,\pm2}$ and $\displaystyle{n=0}$
+in this part we will compare the result with the result via highest weight representation. but we will do this after dinner
 
+$$\tag{.}
+\begin{align}
+A_{0m\pm}^{t} & = \frac{1}{\mu+1+|m\mp 1|}\left[((\pm\mu+m)r^{2}+(\mp|m\mp 1|+m\mp 1))r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}\right]e^{-i(\mu+1+|m\mp 1|)t}e^{im\phi} \\
+A^{r}_{0m\pm} & =\mp ir^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}e^{-i(\mu+1+|m\mp 1|)t}e^{im\phi} \\
+A^{\phi}_{0m\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}e^{-i(\mu+1+|m\mp 1|)t}e^{im\phi}
+\end{align}
+$$
