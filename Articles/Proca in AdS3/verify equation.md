@@ -278,10 +278,10 @@ $$
 
 $$\tag{.}
 \begin{align}
-\Phi _{+} & =Ar^{m-1}(1+r^{2})^{(\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega), \frac{1}{2}(m-\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
- & +Br^{m-1}(1+r^{2})^{(-\mu-m)/2}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega), \frac{1}{2}(m+\mu+\omega);1+\mu; \frac{1}{1+r^{2}} \right) \\
-\Phi _{-} & =Cr^{m+1}(1+r^{2})^{(\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m-\mu-\omega)+1; \frac{1}{2}(m-\mu+\omega)+1;1+\mu ; \frac{1}{1+r^{2}} \right) \\
- & +Dr^{m+1}(1+r^{2})^{(-\mu-m)/2-1}{}_{2}F_{1}\left( \frac{1}{2}(m+\mu-\omega)+1; \frac{1}{2}(m+\mu+\omega)+1;1+\mu; \frac{1}{1+r^{2}} \right)
+\Phi _{+} & =Ar^{|m-1|}(1+r^{2})^{(\mu-|m-1|-1)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m-1|-\mu-\omega+1), \frac{1}{2}(|m-1|-\mu+\omega+1);1+\mu; \frac{1}{1+r^{2}} \right) \\
+ & +Br^{|m-1|}(1+r^{2})^{(-\mu-|m-1|-1)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m-1|+\mu-\omega+1), \frac{1}{2}(|m-1|+\mu+\omega+1);1+\mu; \frac{1}{1+r^{2}} \right) \\
+\Phi _{-} & =Cr^{|m+1|}(1+r^{2})^{(\mu-|m+1|-1)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m+1|-\mu-\omega+1); \frac{1}{2}(|m+1|-\mu+\omega+1);1+\mu ; \frac{1}{1+r^{2}} \right) \\
+ & +Dr^{|m+1|}(1+r^{2})^{(-\mu-|m+1|-1)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m+1|+\mu-\omega+1); \frac{1}{2}(|m+1|+\mu+\omega+1);1+\mu; \frac{1}{1+r^{2}} \right)
 \end{align}
 $$
 
@@ -307,27 +307,15 @@ A^{\phi} & =\mathcal{O}(r^{-1})
 \end{align}
 $$
 
-in order to satisfy these asymptotic behaviors, we have to set $\displaystyle{A=C=0}$, and we will write down the solutions as
+in order to satisfy these asymptotic behaviors, we have to set $\displaystyle{A=C=0}$, and $\displaystyle{\frac{1}{2}(|m\mp1|+\mu-\omega+1)=-n_{\pm},n_{\pm}\in \mathbb{N}\implies \omega _{\pm}=2n_{\pm}+|m\mp 1|+\mu+1,}$
 
 $$\tag{.}
 \begin{align}
-A^{t}_{nm+} & =? \\
-A^{r}_{nm+} & =r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+m+\mu)t}e^{im\phi} \\
-A^{\phi}_{nm+} & =ir^{m-2}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+m+\mu)t}e^{im\phi} \\
-n & \in \mathbb{N},m\in \mathbb{N}_{+}
+\Phi _{+} & = r^{|m-1|}(1+r^{2})^{(-\mu-|m-1|-1)/2}{}_{2}F_{1}\left( -n_{+}, 2n_{+}+|m-1|+\mu+1;1+\mu; \frac{1}{1+r^{2}} \right) \\
+\Phi _{-} & = r^{|m+1|}(1+r^{2})^{(-\mu-|m+1|-1)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m+1|+\mu-\omega+1), \frac{1}{2}(|m+1|+\mu+\omega+1);1+\mu; \frac{1}{1+r^{2}} \right)
 \end{align}
 $$
 
-and
-
-$$\tag{.}
-\begin{align}
-A^{t}_{nm-} & =? \\
-A^{r}_{nm-} & =r^{m+1}(1+r^{2})^{-(\mu+m)/2-1}P_{n}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+m+\mu+2)t}e^{im\phi} \\
-A^{\phi}_{nm-} & =-ir^{m}(1+r^{2})^{-(\mu+m)/2-1}P_{n}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+m+\mu+2)t}e^{im\phi} \\
-n,m & \in \mathbb{N}
-\end{align}
-$$
 
 $\displaystyle{A^{t}}$ is determined by
 
