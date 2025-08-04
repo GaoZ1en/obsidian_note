@@ -339,10 +339,28 @@ and $\displaystyle{A^{t}}$ is determined by
 $$\tag{.}
 \begin{align}
 i(2n_{\pm}+|m\pm 1|+\mu+1) \tilde{A}^{t}_{nm\pm} & =\partial _{r}\tilde{A}^{r}_{nm\pm}+\frac{1}{r}\tilde{A}^{r}_{nm\pm}+im\tilde{A}^{\phi}_{nm\pm} \\
- & =\partial _{r}\left( r^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right) \\
- & +(1\mp m)r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
+ & = -(\mu\pm m)r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+ & -(\mu+|m\mp 1|+1)r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)  \\
+ & +2(n+|m\mp 1|+\mu+1)r^{|m\mp1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}P_{n-1}^{(\mu+1,|m\mp 1|+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)  \\
+ & -2(n+|m\mp 1|+\mu+1)r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+5)/2}P_{n-1}^{(\mu+1,|m\mp 1|+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+z & =\frac{1}{1+r^{2}} \\
+\alpha & =-n \\
+\beta & =n+|m\mp 1|+\mu+1 \\
+\gamma & =1+\mu
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+-(\alpha+\beta)F+2\beta (1-z)F(\alpha+1,\beta+1,\gamma+1)
+\end{align}
+$$
+
 
 ---
 
