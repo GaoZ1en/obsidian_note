@@ -330,7 +330,7 @@ and
 $$\tag{.}
 \begin{align}
 A^{r}_{nm-} & =r^{|m+1|}(1+r^{2})^{-(\mu+|m+1|+1)/2}P_{n}^{(\mu,|m+1|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi} \\
-A^{\phi}_{nm-} & =ir^{|m+1|-1}(1+r^{2})^{-(\mu+|m+1|+1)/2}P_{n}^{(\mu,|m-1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi}
+A^{\phi}_{nm-} & =ir^{|m+1|-1}(1+r^{2})^{-(\mu+|m+1|+1)/2}P_{n}^{(\mu,|m+1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi}
 \end{align}
 $$
 
@@ -338,31 +338,38 @@ and $\displaystyle{A^{t}}$ is determined by
 
 $$\tag{.}
 \begin{align}
-i(2n_{\pm}+|m\pm 1|+\mu+1) \tilde{A}^{t}_{nm\pm} & =\partial _{r}\tilde{A}^{r}_{nm\pm}+\frac{1}{r}\tilde{A}^{r}_{nm\pm}+im\tilde{A}^{\phi}_{nm\pm} \\
- & = -(\mu\pm m)r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
- & -(\mu+|m\mp 1|+1)r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)  \\
- & +2(n+|m\mp 1|+\mu+1)r^{|m\mp1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}P_{n-1}^{(\mu+1,|m\mp 1|+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)  \\
- & -2(n+|m\mp 1|+\mu+1)r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+5)/2}P_{n-1}^{(\mu+1,|m\mp 1|+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
+i(2n_{\pm}+|m\pm 1|+\mu+1) \tilde{A}^{t}_{nm\pm} & =(|m\mp 1|+1\pm m)r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+ & -(\mu+|m\mp 1|+1)r^{|m\mp 1|+1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+ & +r^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}\partial _{r} P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
 \end{align}
 $$
-
-$$\tag{.}
-\begin{align}
-z & =\frac{1}{1+r^{2}} \\
-\alpha & =-n \\
-\beta & =n+|m\mp 1|+\mu+1 \\
-\gamma & =1+\mu
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
--(\alpha+\beta)F+2\beta (1-z)F(\alpha+1,\beta+1,\gamma+1)
-\end{align}
-$$
-
 
 ---
 
-in this part we will compare the result with Wen's result. when $\displaystyle{m=\pm 1,\pm2}$
+notice that when $\displaystyle{m\leqslant0}$, we write $\displaystyle{m'=-m\geqslant0}$, and $\displaystyle{\Phi _{m+}}$ satisfies the same equation as $\displaystyle{\Phi _{m'-}}$. similar situation for $\displaystyle{\Phi _{m-}}$, so the discussion about $\displaystyle{m=0}$ above agree with the discussion about generic $\displaystyle{m}$ above...
+
+---
+
+in this part we will compare the result with Wen's result. $\displaystyle{m=\pm 1,\pm2}$ and $\displaystyle{n=0}$
+
+### $\displaystyle{m=1}$
+
+$$\tag{.}
+\begin{align}
+A^{t}_{01+} & =i\frac{\mu-1}{\mu+1}r^{-1}(1+r^{2})^{-(\mu+1)/2}e^{-i(\mu+1)t}e^{i\phi}-ir^{-1}(1+r^{2})^{-(\mu+3)/2}e^{-i(\mu+1)t}e^{i\phi} \\
+A^{r}_{01+} & =(1+r^{2})^{-(\mu+1)/2}e^{-i(\mu+1)t}e^{i\phi} \\
+A^{\phi}_{01+} & =-ir^{-1}(1+r^{2})^{-(\mu+1)/2}e^{-i(\mu+1)t}e^{i\phi}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+A^{t}_{01-} & =i\frac{\mu+1}{\mu+3}r(1+r^{2})^{-(\mu+3)/2}e^{-i(\mu+3)t}e^{i\phi}+ir(1+r^{2})^{-(\mu+3)/2}+(\mu+3)r(1+r^{2})^{-(\mu+5)/2}e^{-i(\mu+3)t}e^{i\phi} \\
+A^{r}_{01-} & =r^{2}(1+r^{2})^{-(\mu+3)/2}e^{-i(\mu+3)t}e^{i\phi} \\
+A^{\phi}_{01-} & =ir(1+r^{2})^{-(\mu+3)/2}e^{-i(\mu+3)t}e^{i\phi}
+\end{align}
+$$
+
+### $\displaystyle{m=2}$
+
 
