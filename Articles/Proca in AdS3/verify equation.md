@@ -280,8 +280,8 @@ $$\tag{.}
 \begin{align}
 \Phi _{+} & =Ar^{|m-1|}(1+r^{2})^{(\mu-|m-1|-1)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m-1|-\mu-\omega+1), \frac{1}{2}(|m-1|-\mu+\omega+1);1+\mu; \frac{1}{1+r^{2}} \right) \\
  & +Br^{|m-1|}(1+r^{2})^{(-\mu-|m-1|-1)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m-1|+\mu-\omega+1), \frac{1}{2}(|m-1|+\mu+\omega+1);1+\mu; \frac{1}{1+r^{2}} \right) \\
-\Phi _{-} & =Cr^{|m+1|}(1+r^{2})^{(\mu-|m+1|-1)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m+1|-\mu-\omega+1); \frac{1}{2}(|m+1|-\mu+\omega+1);1+\mu ; \frac{1}{1+r^{2}} \right) \\
- & +Dr^{|m+1|}(1+r^{2})^{(-\mu-|m+1|-1)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m+1|+\mu-\omega+1); \frac{1}{2}(|m+1|+\mu+\omega+1);1+\mu; \frac{1}{1+r^{2}} \right)
+\Phi _{-} & =Cr^{|m+1|}(1+r^{2})^{(\mu-|m+1|-1)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m+1|-\mu-\omega+1), \frac{1}{2}(|m+1|-\mu+\omega+1);1+\mu ; \frac{1}{1+r^{2}} \right) \\
+ & +Dr^{|m+1|}(1+r^{2})^{(-\mu-|m+1|-1)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m+1|+\mu-\omega+1), \frac{1}{2}(|m+1|+\mu+\omega+1);1+\mu; \frac{1}{1+r^{2}} \right)
 \end{align}
 $$
 
@@ -311,17 +311,36 @@ in order to satisfy these asymptotic behaviors, we have to set $\displaystyle{A=
 
 $$\tag{.}
 \begin{align}
-\Phi _{+} & = r^{|m-1|}(1+r^{2})^{(-\mu-|m-1|-1)/2}{}_{2}F_{1}\left( -n_{+}, 2n_{+}+|m-1|+\mu+1;1+\mu; \frac{1}{1+r^{2}} \right) \\
-\Phi _{-} & = r^{|m+1|}(1+r^{2})^{(-\mu-|m+1|-1)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m+1|+\mu-\omega+1), \frac{1}{2}(|m+1|+\mu+\omega+1);1+\mu; \frac{1}{1+r^{2}} \right)
+\Phi _{+} & = r^{|m-1|}(1+r^{2})^{(-\mu-|m-1|-1)/2}{}_{2}F_{1}\left( -n_{+}, n_{+}+|m-1|+\mu+1;1+\mu; \frac{1}{1+r^{2}} \right) \\
+\Phi _{-} & = r^{|m+1|}(1+r^{2})^{(-\mu-|m+1|-1)/2}{}_{2}F_{1}\left( -n_{-}, n_{-}+|m+1|+\mu+1;1+\mu; \frac{1}{1+r^{2}} \right)
 \end{align}
 $$
 
-
-$\displaystyle{A^{t}}$ is determined by
+we will write the result as
 
 $$\tag{.}
 \begin{align}
-i\omega \tilde{A}^{t}_{nm\pm} & =\partial _{r}\tilde{A}^{r}_{nm\pm}+\frac{1}{r}\tilde{A}^{r}_{nm\pm}+im\tilde{A}^{\phi}_{nm\pm}
+A^{r}_{nm+} & =r^{|m-1|}(1+r^{2})^{-(\mu+|m-1|+1)/2}P^{(\mu,|m-1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m-1|+\mu+1)t}e^{im\phi} \\
+A^{\phi}_{nm+} & =-ir^{|m-1|-1}(1+r^{2})^{-(\mu+|m-1|+1)/2}P^{(\mu,|m-1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m-1|+\mu+1)t}e^{im\phi}
+\end{align}
+$$
+
+and
+
+$$\tag{.}
+\begin{align}
+A^{r}_{nm-} & =r^{|m+1|}(1+r^{2})^{-(\mu+|m+1|+1)/2}P_{n}^{(\mu,|m+1|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi} \\
+A^{\phi}_{nm-} & =ir^{|m+1|-1}(1+r^{2})^{-(\mu+|m+1|+1)/2}P_{n}^{(\mu,|m-1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi}
+\end{align}
+$$
+
+and $\displaystyle{A^{t}}$ is determined by
+
+$$\tag{.}
+\begin{align}
+i(2n_{\pm}+|m\pm 1|+\mu+1) \tilde{A}^{t}_{nm\pm} & =\partial _{r}\tilde{A}^{r}_{nm\pm}+\frac{1}{r}\tilde{A}^{r}_{nm\pm}+im\tilde{A}^{\phi}_{nm\pm} \\
+ & =\partial _{r}\left( r^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right) \\
+ & +(1\mp m)r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
 \end{align}
 $$
 
