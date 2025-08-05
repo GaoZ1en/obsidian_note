@@ -34,6 +34,8 @@ $$
 $$\tag{.}
 \begin{align}
 S & =\int _{t_{i}}^{t_{f}}\mathrm{d}t\int r\mathrm{d}r\mathrm{d}\phi\left(-\frac{1}{2}F_{ta}F^{ta}-\frac{1}{4}F_{ab}F^{ab}+\frac{1}{2}\mu ^{2}(1+r^{2})(A^{t})^{2}-\frac{1}{2}\mu ^{2}h_{ab}A^{a}A^{b}\right) \\
-h_{ab} & =\mathrm{diag}\left( \frac{1}{1+r^{2}},r^{2} \right)
+h_{ab} & =\mathrm{diag}\left( \frac{1}{1+r^{2}},r^{2} \right) \\
+-\partial _{a}F^{ta}-\partial _{a}r \frac{1+2r^{2}}{r(1+r^{2})}F^{ta} & =\mu ^{2}A^{t} \\
+\partial _{t}F^{ta}+\partial _{b}F^{ba}+\frac{\partial _{b}r}{r}F^{ba} & =\mu ^{2}A^{a}
 \end{align}
 $$

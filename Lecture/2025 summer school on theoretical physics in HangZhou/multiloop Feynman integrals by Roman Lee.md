@@ -45,7 +45,7 @@ $$
 
 where we denote $\displaystyle{\bar{z}=1-z}$. 
 
-a general $\displaystyle{\ell}$-loop Feynman integral can be written as
+a general $\displaystyle{L}$-loop Feynman integral can be written as
 
 $$\tag{.}
 \begin{align}
@@ -73,6 +73,8 @@ make a further shift $\displaystyle{\ell _{i}=(A^{-1})_{ij}\ell _{j}}$, the inte
 
 $$\tag{.}
 \begin{align}
-\int \frac{\mathrm{d}^{d}\ell _{1}\dots \mathrm{d}^{d}\ell _{\ell}}{i\pi ^{d/2}\dots i\pi ^{d/2}}
+\Gamma\left( \sum _{k}n_{k}-\frac{Ld}{2} \right)\int _{0}^{\infty} \prod _{k} \frac{\mathrm{d}x_{k} x^{n_{k}-1}}{\Gamma(n_{k})} \frac{F^{Ld/2-\sum _{k}n_{k}}}{V^{(L+1)d/2-\sum _{k}n_{k}}}
 \end{align}
 $$
+
+where $\displaystyle{V=\det A}$ is a polynomial in $\displaystyle{x_{k}}$ of degree $\displaystyle{L}$, and $\displaystyle{F=(C-B_{i}(A^{-1})_{ij}B_{j})V}$ is a polynomial in $\displaystyle{x_{k}}$ of degree $\displaystyle{L+1}$.
