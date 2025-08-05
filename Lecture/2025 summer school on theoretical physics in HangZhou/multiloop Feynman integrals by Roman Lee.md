@@ -17,3 +17,28 @@
 	- Lee, R. N. (2015). Reducing differential equations for multiloop master integrals, JHEP 04 (2015) 108.
 	- Lee, R. N. (2021). Libra: A package for transformation of differential systems for multiloop integrals, Comput. Phys. Commun. 267: 108058.
 
+---
+
+we write the Lagrangian as
+
+$$\tag{1.1}
+\begin{align}
+\mathcal{L} & =\mathcal{L}_{\text{free}}+\mathcal{L}_{\text{int}}
+\end{align}
+$$
+
+the Feynman rules can be read from the Lagrangian. it is useful to introduce the following parametrization
+
+$$\tag{.}
+\begin{align}
+\frac{1}{\prod _{k}A^{n_{k}}_{k}} & =\frac{\Gamma\left( \sum _{k}n_{k} \right)}{\prod _{k}\Gamma(n_{k})}\int \prod _{k}\mathrm{d}x_{k} \frac{x_{k}^{n_{k}-1}}{\left( \sum _{k}A_{k}x_{k} \right)^{\sum n_{k}}}\delta\left( 1-\sum x_{k} \right)
+\end{align}
+$$
+
+for example
+
+$$\tag{.}
+\begin{align}
+\frac{1}{(p'-\ell)^{2}-m^{2}} \frac{1}{\ell ^{2}} \frac{1}{(p-\ell)^{2}-m^{2}} & =2\int \mathrm{d}z\mathrm{d}x  \frac{1}{(\ell ^{2}-2\ell(zp+\bar{z}p'))^{3}}
+\end{align}
+$$
