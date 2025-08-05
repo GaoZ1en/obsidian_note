@@ -91,11 +91,47 @@ where $\displaystyle{\tilde{F}_{ab}=D_{a}A_{b}-D_{b}A_{a}}$,
 
 $$\tag{.}
 \begin{align}
-\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}(\nabla _{\mu}A_{\nu}-\nabla _{\nu}A_{\mu})(\nabla _{\rho}A_{\sigma}-\nabla _{\sigma}A_{\rho}) & =\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\mu}A_{\nu}\nabla _{\rho}A_{\sigma}-\sigma ^{\mu \rho}\tau ^{\nu \lambda}\nabla _{\mu}A_{\nu}\nabla _{\rho}A_{\sigma}-\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}A_{\mu}\nabla _{\rho}A_{\sigma}+\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}A_{\mu}\nabla _{\sigma}A_{\rho} \\
- & =\sigma ^{\mu \rho}\nabla _{\mu}(\tau ^{\nu}A_{\nu})\nabla _{\rho}(\tau ^{\lambda}A_{\lambda})-\sigma ^{\mu \rho}
+\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}(\nabla _{\mu}A_{\nu}-\nabla _{\nu}A_{\mu})(\nabla _{\rho}A_{\sigma}-\nabla _{\sigma}A_{\rho}) & =\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\mu}A_{\nu}\nabla _{\rho}A_{\sigma}-\sigma ^{\mu \rho}\tau ^{\nu \lambda}\nabla _{\mu}A_{\nu}\nabla _{\rho}A_{\sigma}-\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}A_{\mu}\nabla _{\rho}A_{\sigma}+\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}A_{\mu}\nabla _{\sigma}A_{\rho}
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\sigma}\nabla _{\mu}A_{\nu}\nabla _{\rho}A_{\sigma} & =\sigma ^{\mu \rho}\nabla _{\mu}(\tau ^{\nu}A_{\nu})\nabla _{\rho}(\tau ^{\sigma}A_{\sigma}) -(\sigma ^{\mu \rho}\tau ^{\nu}\nabla _{\mu}A_{\nu}A_{\sigma}\nabla _{\rho}\tau ^{\sigma}+\sigma ^{\mu \rho}\tau ^{\sigma}\nabla _{\rho}A_{\sigma}A_{\nu}\nabla _{\mu}\tau ^{\nu}+\sigma ^{\mu \rho}A_{\nu}A_{\sigma}\nabla _{\mu}\tau ^{\nu}\nabla _{\rho}\tau ^{\sigma}) \\
+ & =\sigma ^{\mu \rho}D_{\mu}(\tau ^{\nu}A_{\nu})D_{\rho}(\tau ^{\sigma}A_{\sigma})-2D _{\mu}(\tau ^{\nu}A_{\nu})A_{\sigma}K^{\mu \sigma}+A_{\nu}A_{\sigma}K^{\rho \nu}K_{\rho}^{~\sigma}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\sigma}\nabla _{\mu}A_{\nu}\nabla _{\rho}A_{\sigma} & =\sigma ^{\mu \rho}\tau ^{\nu}\nabla _{\mu}A_{\nu}\tau ^{\sigma}\nabla _{\sigma}A_{\rho} \\
+ & =\sigma ^{\mu \rho}\nabla _{\mu}(\tau ^{\nu}A_{\nu})\tau ^{\sigma}\nabla _{\sigma}(\delta _{\rho}^{\alpha}A_{\alpha})-\sigma ^{\mu \rho}A_{\nu}\nabla _{\mu}\tau ^{\nu}\tau ^{\sigma}\nabla _{\sigma}(\delta _{\rho}^{\alpha}A_{\alpha}) \\
+ & =D^{\rho}(\tau ^{\nu}A_{\nu})\tau ^{\sigma}\nabla _{\sigma}(\sigma ^{\alpha}_{\rho}+\tau _{\rho}\tau ^{\alpha}A_{\alpha})-A_{\nu}K^{\nu \rho}\tau ^{\sigma}\nabla _{\sigma}(\sigma ^{\alpha}_{\rho}A_{\alpha}+\tau _{\rho}\tau ^{\alpha}A_{\alpha}) \\
+ & =D^{\rho}(\tau ^{\nu}A_{\nu})\tau ^{\sigma}\nabla _{\sigma}(\sigma ^{\alpha}_{\rho}A^{\rho})+D^{\rho}(\tau ^{\nu}A_{\nu})\tau ^{\sigma}\nabla _{\sigma}\tau _{\rho}\tau ^{\alpha}A_{\alpha}+D^{\rho}(\tau ^{\nu}A_{\nu})\tau ^{\sigma}\tau _{\rho}\nabla _{\sigma}(\tau ^{\alpha}A_{\alpha}) \\
+ & -A_{\nu}K^{\nu \rho}\tau ^{\sigma}\nabla _{\sigma}(A^{\alpha}_{\rho}A_{\alpha})-A_{\nu}K^{\nu \rho}\tau ^{\sigma}\nabla _{\sigma}\tau _{\rho}\tau ^{\alpha}A_{\alpha}-A_{\nu}K^{\nu \rho}\tau ^{\sigma}\tau _{\rho}\nabla _{\sigma}(\tau ^{\alpha}A_{\alpha})
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}A_{\mu}\nabla _{\sigma}A_{\rho} & =\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}(\delta ^{\alpha}_{\mu}A_{\alpha})\nabla _{\sigma}(\delta ^{\beta}_{\rho}A_{\beta}) \\
+ & =\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}(\sigma ^{\alpha}_{\mu}A_{\alpha}+\tau ^{\alpha}\tau _{\mu}A_{\alpha})\nabla _{\sigma}(\sigma ^{\beta}_{\rho}A_{\beta}+\tau ^{\beta}\tau _{\rho}A_{\beta}) \\
+ & =\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}(\sigma ^{\alpha}_{\mu}A_{\alpha})\nabla _{\sigma}(\sigma ^{\beta}_{\rho}A_{\beta})+\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}(\sigma ^{\alpha}_{\mu}A_{\alpha})\nabla _{\sigma}\tau _{\rho}\tau ^{\beta}A_{\beta}+\sigma ^{\mu \rho}\tau
+ 
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\sigma ^{\mu \rho}\tau ^{\nu}\nabla _{\nu}(\delta _{\mu}^{\alpha}A_{\alpha})\tau ^{\lambda}\nabla _{\rho}A_{\lambda}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\sigma ^{\mu \rho}\nabla _{\mu}\tau ^{\nu} & =K^{\nu \rho}
+\end{align}
+$$
 
 $$\tag{.}
 \begin{align}
