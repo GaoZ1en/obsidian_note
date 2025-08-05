@@ -6302,7 +6302,7 @@
       },
       {
         "date": "2025-07-22",
-        "filePath": "Articles/Proca in AdS3/Wen's result.md",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [],
@@ -6824,7 +6824,7 @@
       },
       {
         "date": "2025-07-23",
-        "filePath": "Articles/Proca in AdS3/Wen's result.md",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -7080,7 +7080,7 @@
       },
       {
         "date": "2025-07-24",
-        "filePath": "Articles/Proca in AdS3/Wen's result.md",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
         "wordCountStart": 461,
         "charCountStart": 1925,
         "changes": [
@@ -7136,7 +7136,7 @@
       },
       {
         "date": "2025-07-27",
-        "filePath": "Drafts/verify equation.md",
+        "filePath": "Articles/Proca in AdS3/verify equation.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -7538,7 +7538,7 @@
       },
       {
         "date": "2025-07-28",
-        "filePath": "Drafts/verify equation.md",
+        "filePath": "Articles/Proca in AdS3/verify equation.md",
         "wordCountStart": 4109,
         "charCountStart": 18123,
         "changes": [
@@ -7562,7 +7562,7 @@
       },
       {
         "date": "2025-07-29",
-        "filePath": "Drafts/verify equation.md",
+        "filePath": "Articles/Proca in AdS3/verify equation.md",
         "wordCountStart": 3998,
         "charCountStart": 16757,
         "changes": [
@@ -7710,7 +7710,7 @@
       },
       {
         "date": "2025-07-30",
-        "filePath": "Drafts/verify equation.md",
+        "filePath": "Articles/Proca in AdS3/verify equation.md",
         "wordCountStart": 4356,
         "charCountStart": 18437,
         "changes": [
@@ -7966,7 +7966,7 @@
       },
       {
         "date": "2025-07-31",
-        "filePath": "Drafts/verify equation.md",
+        "filePath": "Articles/Proca in AdS3/verify equation.md",
         "wordCountStart": 3620,
         "charCountStart": 15571,
         "changes": [
@@ -8031,7 +8031,7 @@
       },
       {
         "date": "2025-08-01",
-        "filePath": "Drafts/verify equation.md",
+        "filePath": "Articles/Proca in AdS3/verify equation.md",
         "wordCountStart": 4221,
         "charCountStart": 17957,
         "changes": [
@@ -8315,7 +8315,7 @@
       },
       {
         "date": "2025-08-02",
-        "filePath": "Drafts/verify equation.md",
+        "filePath": "Articles/Proca in AdS3/verify equation.md",
         "wordCountStart": 4668,
         "charCountStart": 20275,
         "changes": [
@@ -8326,6 +8326,749 @@
           }
         ],
         "id": 294
+      },
+      {
+        "date": "2025-08-02",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 1579,
+        "charCountStart": 6982,
+        "changes": [
+          {
+            "timeKey": "18:05",
+            "w": 0,
+            "c": -2
+          }
+        ],
+        "id": 295
+      },
+      {
+        "date": "2025-08-02",
+        "filePath": "Articles/Proca in AdS3/angular decomposition.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:05",
+            "w": 5,
+            "c": 21
+          },
+          {
+            "timeKey": "18:25",
+            "w": 39,
+            "c": 185
+          },
+          {
+            "timeKey": "18:30",
+            "w": 88,
+            "c": 545
+          },
+          {
+            "timeKey": "18:35",
+            "w": 52,
+            "c": 303
+          },
+          {
+            "timeKey": "18:40",
+            "w": 19,
+            "c": 100
+          },
+          {
+            "timeKey": "18:45",
+            "w": 25,
+            "c": 161
+          },
+          {
+            "timeKey": "18:50",
+            "w": 28,
+            "c": 128
+          },
+          {
+            "timeKey": "18:55",
+            "w": 91,
+            "c": 549
+          },
+          {
+            "timeKey": "19:05",
+            "w": 28,
+            "c": 148
+          },
+          {
+            "timeKey": "19:10",
+            "w": 82,
+            "c": 444
+          },
+          {
+            "timeKey": "19:15",
+            "w": 0,
+            "c": 3
+          }
+        ],
+        "id": 296
+      },
+      {
+        "date": "2025-08-02",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1447,
+        "changes": [],
+        "id": 297
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1447,
+        "changes": [
+          {
+            "timeKey": "21:40",
+            "w": 0,
+            "c": 1
+          }
+        ],
+        "id": 298
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Articles/Proca in AdS3/angular decomposition.md",
+        "wordCountStart": 457,
+        "charCountStart": 2587,
+        "changes": [],
+        "id": 299
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Lecture/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 300
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/analytic conformal bootstrap by Agnese Bissi.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:40",
+            "w": 4,
+            "c": 53
+          }
+        ],
+        "id": 301
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/quantum chaos in gravity and field theory by Yiming Chen.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:40",
+            "w": 3,
+            "c": 40
+          }
+        ],
+        "id": 302
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/AdS3CFT2 duality by Matthias Gaberdiel.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:40",
+            "w": 5,
+            "c": 65
+          }
+        ],
+        "id": 303
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/multiloop Feynman integrals by Roman Lee.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:40",
+            "w": 233,
+            "c": 1580
+          },
+          {
+            "timeKey": "18:45",
+            "w": -5,
+            "c": 0
+          }
+        ],
+        "id": 304
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/unitarity constraints on effective field theories by Anna Tokareva.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:45",
+            "w": 2,
+            "c": 26
+          }
+        ],
+        "id": 305
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/introduction to large language models by Dan Xie.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 306
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/supersymmetric localization by Xinyu Zhang.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:45",
+            "w": 3,
+            "c": 37
+          }
+        ],
+        "id": 307
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/aspects of general symmetries by Yunqin Zheng.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:45",
+            "w": 1,
+            "c": 14
+          }
+        ],
+        "id": 308
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/introduction to fuzzy sphere regularization.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:50",
+            "w": 1,
+            "c": 13
+          }
+        ],
+        "id": 309
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Articles/Proca in AdS3/some basics.md",
+        "wordCountStart": 614,
+        "charCountStart": 3910,
+        "changes": [
+          {
+            "timeKey": "18:55",
+            "w": -614,
+            "c": -3910
+          }
+        ],
+        "id": 310
+      },
+      {
+        "date": "2025-08-03",
+        "filePath": "Articles/Proca in AdS3/verify equation.md",
+        "wordCountStart": 4668,
+        "charCountStart": 20275,
+        "changes": [
+          {
+            "timeKey": "08:50",
+            "w": 2,
+            "c": 8
+          },
+          {
+            "timeKey": "08:55",
+            "w": -74,
+            "c": -227
+          },
+          {
+            "timeKey": "09:00",
+            "w": 3,
+            "c": 32
+          },
+          {
+            "timeKey": "11:00",
+            "w": 40,
+            "c": 197
+          },
+          {
+            "timeKey": "11:05",
+            "w": 101,
+            "c": 407
+          },
+          {
+            "timeKey": "11:10",
+            "w": 71,
+            "c": 317
+          },
+          {
+            "timeKey": "11:15",
+            "w": 16,
+            "c": -4
+          },
+          {
+            "timeKey": "11:20",
+            "w": -39,
+            "c": -209
+          },
+          {
+            "timeKey": "11:25",
+            "w": 50,
+            "c": 204
+          },
+          {
+            "timeKey": "11:30",
+            "w": 34,
+            "c": 136
+          },
+          {
+            "timeKey": "11:35",
+            "w": 47,
+            "c": 231
+          },
+          {
+            "timeKey": "11:40",
+            "w": 42,
+            "c": 156
+          },
+          {
+            "timeKey": "11:45",
+            "w": 67,
+            "c": 266
+          },
+          {
+            "timeKey": "11:50",
+            "w": 14,
+            "c": 68
+          },
+          {
+            "timeKey": "11:55",
+            "w": -87,
+            "c": -359
+          },
+          {
+            "timeKey": "12:00",
+            "w": -71,
+            "c": -271
+          },
+          {
+            "timeKey": "12:05",
+            "w": -31,
+            "c": -168
+          },
+          {
+            "timeKey": "12:10",
+            "w": 43,
+            "c": 323
+          },
+          {
+            "timeKey": "12:15",
+            "w": 122,
+            "c": 509
+          },
+          {
+            "timeKey": "12:20",
+            "w": 104,
+            "c": 392
+          },
+          {
+            "timeKey": "12:25",
+            "w": -37,
+            "c": -170
+          },
+          {
+            "timeKey": "13:00",
+            "w": 18,
+            "c": 95
+          },
+          {
+            "timeKey": "13:05",
+            "w": 101,
+            "c": 395
+          },
+          {
+            "timeKey": "13:10",
+            "w": 28,
+            "c": 77
+          },
+          {
+            "timeKey": "13:15",
+            "w": 68,
+            "c": 284
+          },
+          {
+            "timeKey": "13:20",
+            "w": -52,
+            "c": -150
+          },
+          {
+            "timeKey": "13:25",
+            "w": 105,
+            "c": 393
+          },
+          {
+            "timeKey": "13:30",
+            "w": 58,
+            "c": 251
+          },
+          {
+            "timeKey": "13:35",
+            "w": 94,
+            "c": 381
+          },
+          {
+            "timeKey": "13:40",
+            "w": 70,
+            "c": 207
+          },
+          {
+            "timeKey": "13:45",
+            "w": 0,
+            "c": 33
+          },
+          {
+            "timeKey": "13:50",
+            "w": 80,
+            "c": 330
+          },
+          {
+            "timeKey": "19:00",
+            "w": -23,
+            "c": -110
+          },
+          {
+            "timeKey": "19:05",
+            "w": 0,
+            "c": 4
+          },
+          {
+            "timeKey": "19:20",
+            "w": 12,
+            "c": 59
+          },
+          {
+            "timeKey": "19:25",
+            "w": 156,
+            "c": 655
+          },
+          {
+            "timeKey": "19:30",
+            "w": 2,
+            "c": 11
+          },
+          {
+            "timeKey": "19:35",
+            "w": -147,
+            "c": -590
+          },
+          {
+            "timeKey": "19:40",
+            "w": 71,
+            "c": 269
+          },
+          {
+            "timeKey": "19:45",
+            "w": 84,
+            "c": 353
+          },
+          {
+            "timeKey": "19:50",
+            "w": 100,
+            "c": 376
+          },
+          {
+            "timeKey": "19:55",
+            "w": 5,
+            "c": 47
+          },
+          {
+            "timeKey": "20:00",
+            "w": -265,
+            "c": -1086
+          },
+          {
+            "timeKey": "20:05",
+            "w": 121,
+            "c": 567
+          },
+          {
+            "timeKey": "20:10",
+            "w": 12,
+            "c": 37
+          },
+          {
+            "timeKey": "20:20",
+            "w": 31,
+            "c": 152
+          },
+          {
+            "timeKey": "20:30",
+            "w": 5,
+            "c": 41
+          },
+          {
+            "timeKey": "20:35",
+            "w": -8,
+            "c": -48
+          },
+          {
+            "timeKey": "20:40",
+            "w": -111,
+            "c": -516
+          },
+          {
+            "timeKey": "20:45",
+            "w": -54,
+            "c": -230
+          },
+          {
+            "timeKey": "20:50",
+            "w": -83,
+            "c": -378
+          },
+          {
+            "timeKey": "20:55",
+            "w": 1,
+            "c": 3
+          },
+          {
+            "timeKey": "21:00",
+            "w": 25,
+            "c": 78
+          },
+          {
+            "timeKey": "21:05",
+            "w": -26,
+            "c": -81
+          },
+          {
+            "timeKey": "21:10",
+            "w": 1,
+            "c": 0
+          },
+          {
+            "timeKey": "21:35",
+            "w": 140,
+            "c": 616
+          },
+          {
+            "timeKey": "21:40",
+            "w": -72,
+            "c": -320
+          },
+          {
+            "timeKey": "21:45",
+            "w": -68,
+            "c": -296
+          },
+          {
+            "timeKey": "21:50",
+            "w": -24,
+            "c": -123
+          },
+          {
+            "timeKey": "21:55",
+            "w": 46,
+            "c": 192
+          }
+        ],
+        "id": 311
+      },
+      {
+        "date": "2025-08-04",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 461,
+        "charCountStart": 1927,
+        "changes": [
+          {
+            "timeKey": "16:30",
+            "w": -397,
+            "c": -1629
+          },
+          {
+            "timeKey": "16:35",
+            "w": 170,
+            "c": 752
+          },
+          {
+            "timeKey": "16:40",
+            "w": 5,
+            "c": 62
+          },
+          {
+            "timeKey": "16:45",
+            "w": 78,
+            "c": 363
+          },
+          {
+            "timeKey": "16:50",
+            "w": 45,
+            "c": 267
+          },
+          {
+            "timeKey": "16:55",
+            "w": 10,
+            "c": 50
+          },
+          {
+            "timeKey": "17:05",
+            "w": 23,
+            "c": 122
+          },
+          {
+            "timeKey": "17:10",
+            "w": 43,
+            "c": 181
+          },
+          {
+            "timeKey": "17:15",
+            "w": -29,
+            "c": -166
+          },
+          {
+            "timeKey": "17:20",
+            "w": 47,
+            "c": 180
+          },
+          {
+            "timeKey": "17:30",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "22:15",
+            "w": 7,
+            "c": 43
+          },
+          {
+            "timeKey": "22:20",
+            "w": 115,
+            "c": 459
+          }
+        ],
+        "id": 312
+      },
+      {
+        "date": "2025-08-04",
+        "filePath": "Articles/Proca in AdS3/another field in ads3.md",
+        "wordCountStart": 341,
+        "charCountStart": 1798,
+        "changes": [],
+        "id": 313
+      },
+      {
+        "date": "2025-08-04",
+        "filePath": "Articles/Proca in AdS3/verify equation.md",
+        "wordCountStart": 5586,
+        "charCountStart": 24091,
+        "changes": [
+          {
+            "timeKey": "17:30",
+            "w": 59,
+            "c": 269
+          },
+          {
+            "timeKey": "17:35",
+            "w": -754,
+            "c": -3015
+          },
+          {
+            "timeKey": "17:40",
+            "w": 38,
+            "c": 156
+          },
+          {
+            "timeKey": "17:45",
+            "w": 8,
+            "c": 32
+          },
+          {
+            "timeKey": "17:50",
+            "w": 31,
+            "c": 157
+          },
+          {
+            "timeKey": "17:55",
+            "w": -110,
+            "c": -437
+          },
+          {
+            "timeKey": "18:00",
+            "w": 84,
+            "c": 331
+          },
+          {
+            "timeKey": "18:05",
+            "w": -58,
+            "c": -268
+          },
+          {
+            "timeKey": "18:10",
+            "w": 346,
+            "c": 1336
+          },
+          {
+            "timeKey": "18:15",
+            "w": -35,
+            "c": -146
+          },
+          {
+            "timeKey": "18:20",
+            "w": -28,
+            "c": -105
+          },
+          {
+            "timeKey": "20:10",
+            "w": 0,
+            "c": 1
+          }
+        ],
+        "id": 314
+      },
+      {
+        "date": "2025-08-05",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/AdS3CFT2 duality by Matthias Gaberdiel.md",
+        "wordCountStart": 5,
+        "charCountStart": 65,
+        "changes": [],
+        "id": 316
+      },
+      {
+        "date": "2025-08-05",
+        "filePath": "TODO.md",
+        "wordCountStart": 72,
+        "charCountStart": 927,
+        "changes": [
+          {
+            "timeKey": "08:35",
+            "w": 0,
+            "c": 10
+          }
+        ],
+        "id": 317
       }
     ],
     "daysWithCompletedGoal": [
@@ -8357,7 +9100,8 @@
       "2025-07-22",
       "2025-07-23",
       "2025-07-27",
-      "2025-07-31"
+      "2025-07-31",
+      "2025-08-03"
     ]
   }
 }

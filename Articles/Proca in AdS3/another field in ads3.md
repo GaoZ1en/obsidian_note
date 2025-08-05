@@ -11,7 +11,7 @@ the components of the eom $\displaystyle{\varepsilon _{a}^{~bc}\nabla _{b}A_{c}=
 $$\tag{1.2}
 \begin{align}
 \frac{1+\rho ^{2}}{\rho}(\partial _{\rho}A_{\theta}-\partial _{\theta}A_{\rho}) & =-\mu A_{t} \\
--\frac{1}{\rho(1+\rho ^{2})}\varepsilon _{\rho}^{~\theta t}(\partial _{\theta}A_{t}-\partial _{t}A_{\theta}) & =-\mu A_{\rho} \\
+-\frac{1}{\rho(1+\rho ^{2})}(\partial _{\theta}A_{t}-\partial _{t}A_{\theta}) & =-\mu A_{\rho} \\
 -\rho(\partial _{t}A_{\rho}-\partial _{\rho}A_{t}) & =-\mu A_{\theta}
 \end{align}
 $$
