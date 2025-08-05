@@ -30,3 +30,8 @@ S & =\int _{t_{i}}^{t_{f}}\mathrm{d}t\int N\mathrm{d}^{2}x\sqrt{ h }\left(-\frac
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+\delta ^{a}_{r}\delta ^{b}_{r}\sigma _{ab}
+\end{align}
+$$
