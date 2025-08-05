@@ -58,6 +58,52 @@ $$\tag{.}
 \end{align}
 $$
 
+let
+
+$$\tag{.}
+\begin{align}
+\tau _{\mu} & =-N\delta _{\mu t} \\
+\sigma _{\mu \nu} & =g_{\mu \nu}+\tau _{\mu}\tau _{\nu} \\
+\tau ^{\mu} & =\frac{1}{N}\delta ^{\mu0} \\
+\sigma ^{\mu \nu} & =g^{\mu \nu}+\tau ^{\mu}\tau ^{\nu}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+F_{\mu \nu}F^{\mu \nu} & =(\nabla _{\mu}A_{\nu}-\nabla _{\nu}A_{\mu})(\nabla ^{\mu}A^{\nu}-\nabla ^{\nu}A^{\mu}) \\
+ & =\nabla _{\mu}A_{\nu} \\
+\nabla _{\mu}A_{\nu} & =g_{\mu \rho}\nabla ^{\rho}A_{\nu} \\
+ & =(\sigma _{\mu \rho}+\tau _{\mu}\tau _{\rho})\nabla ^{\rho}A_{\nu} \\
+ & =\sigma _{\mu \rho}\nabla ^{\rho}A_{\nu}+\tau _{\mu}\tau _{\rho}\nabla ^{\rho}A_{\nu}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+-\frac{1}{2}g^{\mu \rho}g^{\nu \sigma}F_{\mu \nu}F_{\rho \sigma} & =-\frac{1}{4}(\sigma ^{\mu \rho}+\tau ^{\mu}\tau ^{\rho})(\sigma ^{\nu \sigma}+\tau ^{\nu}\tau ^{\sigma})F_{\mu \nu}F_{\rho \sigma} \\
+ & =-\frac{1}{4}\sigma ^{\mu \rho}\sigma ^{\nu \sigma}F_{\mu \nu}F_{\rho \sigma}-\frac{1}{4}\sigma ^{\mu \rho}\tau ^{\nu \sigma}F_{\mu \nu}F_{\rho \sigma}-\frac{1}{4}\sigma ^{\nu \sigma}\tau ^{\mu \rho}F_{\mu \nu}F_{\rho \sigma} \\
+ & =-\frac{1}{4}\sigma ^{ac}\sigma ^{bd}\tilde{F}_{ab}\tilde{F}_{cd}-\frac{1}{2}\sigma ^{ab}\tau ^{\nu}\tau ^{\sigma}F_{a\nu}F_{b\sigma}
+\end{align}
+$$
+
+where $\displaystyle{\tilde{F}_{ab}=D_{a}A_{b}-D_{b}A_{a}}$, 
+
+$$\tag{.}
+\begin{align}
+\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}(\nabla _{\mu}A_{\nu}-\nabla _{\nu}A_{\mu})(\nabla _{\rho}A_{\sigma}-\nabla _{\sigma}A_{\rho}) & =\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\mu}A_{\nu}\nabla _{\rho}A_{\sigma}-\sigma ^{\mu \rho}\tau ^{\nu \lambda}\nabla _{\mu}A_{\nu}\nabla _{\rho}A_{\sigma}-\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}A_{\mu}\nabla _{\rho}A_{\sigma}+\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}A_{\mu}\nabla _{\sigma}A_{\rho} \\
+ & =\sigma ^{\mu \rho}\nabla _{\mu}(\tau ^{\nu}A_{\nu})\nabla _{\rho}(\tau ^{\lambda}A_{\lambda})-\sigma ^{\mu \rho}
+\end{align}
+$$
+
+
+$$\tag{.}
+\begin{align}
+\sigma _{ab}A^{a}A^{b}-(\tau _{\mu}A^{\mu})^{2}
+\end{align}
+$$
+
+
 $$\tag{.}
 \begin{align}
 \Gamma ^{t}_{~tt} & =0, & \Gamma ^{t}_{~ta} & =\frac{\partial _{a}N}{N}, & \Gamma ^{t}_{~ab} & =0 \\
