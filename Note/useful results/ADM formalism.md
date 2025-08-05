@@ -24,9 +24,13 @@ $$
 
 $$\tag{.}
 \begin{align}
-\Gamma ^{t}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{t}
+\Gamma ^{t}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} =& \left( \frac{N^{a}}{N}\partial _{a}N -\frac{1}{2} \frac{N^{a}}{N^{2}}\partial _{a}h_{bc}N^{b}N^{c}-\frac{N^{a}}{N^{2}}h_{bc}N^{b}\partial _{a}N^{c} \right)\mathrm{d}t^{2} \\
+ & +2\left( \frac{1}{N}\partial _{a}N-\frac{1}{N^{2}}N_{b}\partial _{a}N^{b}+\frac{N^{b}}{2N^{2}}h_{bc}\partial _{a}N^{c}-\frac{N^{b}}{2N^{2}}h_{ac}\partial _{b}N^{c} -\frac{N^{b}}{2N^{2}}\partial _{b}h_{ac}N^{c}\right)\mathrm{d}t\mathrm{d}x^{a} \\
+ & +\left( -\frac{1}{N^{2}}\partial _{a}h_{bc}N^{c}-\frac{1}{N^{2}}h_{bc}\partial _{a}N^{c}+\frac{N^{c}}{N^{2}}\partial _{b}h_{ac}-\frac{1}{2} \frac{N^{c}}{N^{2}}\partial _{c}h_{ab} \right)\mathrm{d}x^{a}\mathrm{d}x^{b}
 \end{align}
 $$
+
+
 
 
 
@@ -46,9 +50,40 @@ $$
 
 when $\displaystyle{N^{a}=0}$, they are simplified to
 
+---
+
 $$\tag{.}
 \begin{align}
-
+\mathrm{d}s^{2} & =-N^{2}\mathrm{d}t^{2}+h_{ab}\mathrm{d}x^{a}\mathrm{d}x^{b}
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+g_{tt} & =-N^{2}, & g_{ta} & =0, & g_{ab} & =h_{ab} \\
+g^{tt} & =-\frac{1}{N^{2}}, & g^{ta} & = 0, & g^{ab} & =h^{ab}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\Gamma ^{\rho}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{\rho \sigma}\mathrm{d}g_{\sigma \nu}\mathrm{d}x^{\nu}-\frac{1}{2}g^{\rho \sigma}\partial _{\sigma}\mathrm{d}s^{2}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\Gamma ^{t}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{tt}\mathrm{d}g_{tt}\mathrm{d}t \\
+ & =\frac{2}{N}\partial _{a}N \mathrm{d}t\mathrm{d}x^{a} \\
+\Gamma ^{a}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{ab}\mathrm{d}g_{bc}\mathrm{d}x^{c}-\frac{1}{2}g^{ab}\partial _{b}\mathrm{d}s^{2} \\
+ & =h^{ab}\partial _{d}h_{bc}\mathrm{d}x^{c}\mathrm{d}x^{d}-\frac{1}{2}g^{ab}\partial _{b}(-N^{2}\mathrm{d}t^{2}+h_{cd}\mathrm{d}x^{c}\mathrm{d}x^{d}) \\
+ & =h^{ab}\partial _{d}h_{bc}\mathrm{d}x^{c}\mathrm{d}x^{d}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\Gamma ^{t}_{~tt} & =0, & \Gamma ^{t}_{~ta} & =\frac{\partial _{a}N}{N}, & \Gamma ^{t}_{~ab} & =0 \\
+\Gamma ^{a}_{~tt}
+\end{align}
+$$
