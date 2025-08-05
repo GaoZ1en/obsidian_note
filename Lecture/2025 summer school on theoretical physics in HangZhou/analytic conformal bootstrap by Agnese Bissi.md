@@ -30,4 +30,51 @@ $$\tag{.}
 \end{align}
 $$
 
-so $\displaystyle{P_{\mu}}$ and $\displaystyle{K_{\mu}}$ act as raising 
+so $\displaystyle{P_{\mu}}$ and $\displaystyle{K_{\mu}}$ act as raising and lowering operators. we will study what happens to operators inserted at a position $\displaystyle{x=0}$ then move them by translations
+
+$$\tag{.}
+\begin{align}
+\mathcal{O}(x) & =e^{x^{\mu}P_{\mu}}\mathcal{O}(x)e^{-x^{\mu}P_{\mu}}+(\text{ commutation relations })
+\end{align}
+$$
+
+we need to study the action of the stabiliser of the conformal group at the origin. the stabiliser is $\displaystyle{M_{\mu \nu},K_{\mu}}$ and $\displaystyle{D}$.
+
+$$\tag{.}
+\begin{align}
+\mathcal{O}(0) & =\mathcal{O}^{i}_{\Delta,r}(0)
+\end{align}
+$$
+
+$\displaystyle{\mathcal{O}^{i}_{\Delta,r}(0)}$ forms a finite dimensional irreducible representation, and it is characterized by
+
+$$\tag{.}
+\begin{align}
+[D,\mathcal{O}^{i}_{\Delta,r}(0)] & =\Delta \mathcal{O}^{i}_{\Delta,r}(0) \\
+[M_{\mu \nu},\mathcal{O}^{i}_{\Delta,r}(0)] & =(R_{\mu \nu})^{i}_{~j}\mathcal{O}^{j}_{\Delta,r}(0)
+\end{align}
+$$
+
+where $\displaystyle{\Delta}$ is the conformal dimension and $\displaystyle{(R_{\mu \nu})^{i}_{~j}}$ is the generator of the representation $\displaystyle{r}$ of $\displaystyle{SO(d)}$.
+
+in physically interesting cases, the spectrum of the dilatation generator is real and bounded from below, so the conformal multiplet must contain an operator with lowest possible conformal dimension. assume $\displaystyle{\mathcal{O}(0)}$ is the lowest dimensional operator, then
+
+$$\tag{.}
+\begin{align}
+[K_{\mu},\mathcal{O}^{i}_{\Delta,r}(0)] & =0
+\end{align}
+$$
+
+we call such $\displaystyle{\mathcal{O}^{i}_{\Delta,r}(0)}$ as primary operators, and the other operators in the multiplet are called descendants. descendants are obtained by acting $\displaystyle{n\geqslant 1}$ times with $\displaystyle{P_{\mu}}$ on the primaries
+
+$$\tag{.}
+\begin{align}
+[P_{\mu},\mathcal{O}^{i}_{\Delta,r}(0)]=\partial _{\mu}\mathcal{O}^{i}_{\Delta,r}(0)
+\end{align}
+$$
+
+the aim is to compute the correlators of primary operators. we have
+
+1. conformal symmetries (Ward identities of conformal transformations), which fixes the spacetime dependence of 2 and 3 point functions.
+	1. $\displaystyle{\braket{ \mathcal{O}_{\Delta_{1}}(x_{1})\mathcal{O}_{\Delta_{2}}(x_{2}) }=\frac{C\delta _{\Delta_{1}\Delta_{2}}}{x_{12}^{2\Delta _{1}}}}$, where $\displaystyle{x_{12}=|x_{1}-x_{2}|}$
+	2. $\displaystyle{\braket{ \mathcal{O}_{\Delta_{1}}(x_{1})\mathcal{O}_{\Delta_{2}}(x_{2})\mathcal{O}_{\Delta_{3}}(x_{3}) }=\frac{C_{\Delta_{1}\Delta_{2}\Delta_{3}}}{x_{12}^{\Delta_{1}+\Delta_{2}-\Delta_{3}}x_{23}^{\Delta_{2}+\Delta_{3}-}}}$
