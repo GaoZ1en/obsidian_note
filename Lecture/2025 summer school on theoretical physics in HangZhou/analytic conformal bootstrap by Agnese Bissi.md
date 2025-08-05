@@ -110,4 +110,43 @@ $$\tag{.}
 \end{align}
 $$
 
-where $\displaystyle{f_{ijk}}$ is the structure constant, and $\displaystyle{\hat{\lambda}_{ijk}}$ is a function that fully fixed by conformal symmetry. OPE in CFTs has a finite radius of convergence, which is determined by the distance to the next operator insertion
+where $\displaystyle{f_{ijk}}$ is the structure constant, and $\displaystyle{\hat{\lambda}_{ijk}}$ is a function that fully fixed by conformal symmetry. OPE in CFTs has a finite radius of convergence, which is determined by the distance to the next operator insertion. by using OPE, we can reduce $\displaystyle{n}$-pt function to $\displaystyle{n-1}$pt function. we first consider a 4-pt function, and we can write
+
+$$\tag{.}
+\begin{align}
+\braket{ \mathcal{O}(x_{1})\mathcal{O}(x_{2})\mathcal{O}(x_{3})\mathcal{O}(x_{4}) }  & = \frac{g(u,v)}{x_{12}^{2\Delta _{\mathcal{O}}}x_{34}^{2\Delta _{\mathcal{O}}}}
+\end{align}
+$$
+
+use OPE
+
+$$\tag{.}
+\begin{align}
+\mathcal{O}(x_{1})\mathcal{O}(x_{2}) & =\sum _{k}f_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}\hat{\lambda}_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}(x_{1},x_{2},y,\partial _{y})\mathcal{O}_{k}(y)|_{y=\frac{x_{1}+x_{2}}{2}} \\
+\mathcal{O}(x_{3})\mathcal{O}(x_{4}) & =\sum _{k}f_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}\hat{\lambda}_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}(x_{3},x_{4},y,\partial _{y})\mathcal{O}_{k}(y)|_{y=\frac{x_{3}+x_{4}}{2}}
+\end{align}
+$$
+
+then
+
+$$\tag{.}
+\begin{align}
+\braket{ \mathcal{O}(x_{1})\mathcal{O}(x_{2})\mathcal{O}(x_{3})\mathcal{O}(x_{4}) }  & = \sum _{k}f_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}^{2}\hat{\lambda}_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}(x_{1},x_{2},y,\partial _{y})\hat{\lambda}_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}(x_{3},x_{4},y,\partial _{y})\braket{ \mathcal{O}_{k}(y)\mathcal{O}_{k}(y') } |_{y=\frac{x_{1}+x_{2}}{2},y'=\frac{x_{3}+x_{4}}{2}}
+\end{align}
+$$
+
+the $\displaystyle{\hat{\lambda}\hat{\lambda}\braket{ \mathcal{O}_{k}(y)\mathcal{O}_{k}(y') }}$ is fully fixed by conformal symmetry, we call it conformal blocks and denote as $\displaystyle{G_{\Delta,\ell}(u,v)}$. then we have
+
+$$\tag{.}
+\begin{align}
+\braket{ \mathcal{O}(x_{1})\mathcal{O}(x_{2})\mathcal{O}(x_{3})\mathcal{O}(x_{4}) }  & =\sum _{\Delta,\ell} \frac{f^{2}_{\mathcal{O}\mathcal{O}\mathcal{O}_{\Delta,\ell}} G_{\Delta,\ell}(u,v)}{x_{12}^{2\Delta _{\mathcal{O}}}x_{34}^{2\Delta _{\mathcal{O}}}}
+\end{align}
+$$
+
+this has a beautiful diagrammatic representation. in $\mathrm{AdS}$
+
+$$\tag{.}
+\begin{align}
+G^{\Delta _{12}\Delta _{34}}_{\Delta,\ell}(u,v)
+\end{align}
+$$

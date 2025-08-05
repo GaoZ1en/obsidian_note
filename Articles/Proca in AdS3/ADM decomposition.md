@@ -18,7 +18,21 @@ then
 
 $$\tag{.}
 \begin{align}
+S & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}\mu ^{2}A_{\mu}A^{\mu}\right) \\
+ & =\int _{t_{i}}^{t_{f}}\mathrm{d}t\int _{0}^{\infty}r\mathrm{d}r\int _{0}^{2\pi}\mathrm{d}\phi\left(-\frac{1}{4}F_{0i}F^{0i}-\frac{1}{4}F_{ij}F^{ij}-\frac{1}{2}\mu ^{2}A_{t}A^{t}\right) \\
+ & =\int _{t_{i}}^{t_{f}}\mathrm{d}t\int _{0}r \mathrm{d}r\int _{-}^{2\pi}\mathrm{d}\phi\left(-\frac{1}{4}()\right)
+\end{align}
+$$
 
+$$\tag{.}
+\begin{align}
+-\frac{1}{4}F_{\mu \nu}F^{\mu \nu} & =-\frac{1}{2}\partial _{\mu}A_{\nu}\partial ^{\mu}A^{\nu}+\frac{1}{2}\partial _{\mu}A^{\nu}\partial _{\nu}A^{\mu} \\
+ & = \frac{1}{2}\partial _{t}A^{t}\partial _{t}A^{t}+\frac{1}{2}\partial _{t}A^{r}\partial _{r}A^{t}+\frac{1}{2}\partial _{t}A^{\phi}\partial _{\phi}A^{t} \\
+ & +\frac{1}{2}\partial _{r}A^{t}\partial _{t}A^{r}+\frac{1}{2}\partial _{r}A^{r}\partial _{r}A^{r}+\frac{1}{2}\partial _{r}A^{\phi}\partial _{\phi}A^{t} \\
+ & +\frac{1}{2}\partial _{\phi}A^{t}\partial _{t}A^{\phi}+\frac{1}{2}\partial _{\phi}A^{r}\partial _{r}A^{\phi}+\frac{1}{2}\partial _{\phi}A^{\phi}\partial _{\phi}A^{\phi} \\
+ & -\frac{1}{2}\partial _{t}A_{t}\partial ^{t}A^{t}-\frac{1}{2}\partial _{t}A_{r}\partial ^{t}A^{r}-\frac{1}{2}\partial _{t}A_{\phi}\partial ^{t}A^{\phi} \\
+ & -\frac{1}{2}\partial _{r}A_{t}\partial ^{r}A^{t}-\frac{1}{2}
+ 
 \end{align}
 $$
 
