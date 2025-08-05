@@ -60,30 +60,32 @@ $$
 
 $$\tag{.}
 \begin{align}
-g_{tt} & =-N^{2}, & g_{ta} & =0, & g_{ab} & =h_{ab} \\
-g^{tt} & =-\frac{1}{N^{2}}, & g^{ta} & = 0, & g^{ab} & =h^{ab}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\Gamma ^{\rho}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{\rho \sigma}\mathrm{d}g_{\sigma \nu}\mathrm{d}x^{\nu}-\frac{1}{2}g^{\rho \sigma}\partial _{\sigma}\mathrm{d}s^{2}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\Gamma ^{t}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{tt}\mathrm{d}g_{tt}\mathrm{d}t \\
- & =\frac{2}{N}\partial _{a}N \mathrm{d}t\mathrm{d}x^{a} \\
-\Gamma ^{a}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{ab}\mathrm{d}g_{bc}\mathrm{d}x^{c}-\frac{1}{2}g^{ab}\partial _{b}\mathrm{d}s^{2} \\
- & =h^{ab}\partial _{d}h_{bc}\mathrm{d}x^{c}\mathrm{d}x^{d}-\frac{1}{2}g^{ab}\partial _{b}(-N^{2}\mathrm{d}t^{2}+h_{cd}\mathrm{d}x^{c}\mathrm{d}x^{d}) \\
- & =h^{ab}\partial _{d}h_{bc}\mathrm{d}x^{c}\mathrm{d}x^{d}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
 \Gamma ^{t}_{~tt} & =0, & \Gamma ^{t}_{~ta} & =\frac{\partial _{a}N}{N}, & \Gamma ^{t}_{~ab} & =0 \\
-\Gamma ^{a}_{~tt}
+\Gamma ^{a}_{~tt} & =h^{ab}N\partial _{b}N, & \Gamma ^{a}_{~tb} & =0, & \Gamma ^{c}_{~ab} & =\tilde{\Gamma}^{c}_{~ab}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}\mu ^{2}g_{\mu \nu}A^{\mu}A^{\nu}\right) \\
+ & =\int \mathrm{d}t\int \mathrm{d}^{2}xN\sqrt{ h }\left(-\frac{1}{2}F_{ta}F^{ta}-\frac{1}{4}F_{ab}F^{ab}+\frac{1}{2}\mu ^{2}N^{2}A^{t}A^{t}-\frac{1}{2}\mu ^{2}h_{ab}A^{a}A^{b}\right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+-\partial _{a}F^{ta}-\left( \frac{\partial _{a}N}{N} +\tilde{\Gamma}^{a}_{~ab}\right)F^{ta} & =\mu ^{2}A^{t} \\
+\partial _{t}F^{ta}-\partial _{b}F^{ab}+\left( \delta ^{a}_{c}\frac{\partial _{b}N}{N}+\delta ^{a}_{c}\tilde{\Gamma} ^{d}_{~bd}+\tilde{\Gamma} ^{a}_{~bc} \right)F^{bc} & =\mu ^{2}A^{a}
+\end{align}
+$$
+
+where $\displaystyle{\tilde{\Gamma}^{c}_{~ab}=\frac{1}{2}h^{cd}(\partial _{a}h_{db}+\partial _{b}h_{ad}-\partial _{d}h_{ab})}$
+
+$$\tag{.}
+\begin{align}
+-\frac{1}{4}F_{\mu \nu}F^{\mu \nu} & =-\frac{1}{2}\partial _{\mu}A_{\nu}\partial ^{\mu}A^{\nu}+\frac{1}{2}\partial _{\mu}A_{\nu}\partial ^{\nu}A^{\mu} \\
+ & =-\frac{1}{2}\partial _{\mu}(g_{\nu \rho}A^{\rho})g^{\mu \sigma}\partial _{\sigma}A^{\nu}+\frac{1}{2}\partial _{\mu}(g_{\nu \rho}A^{\rho})g^{\nu \sigma}\partial _{\sigma}A^{\mu} \\
+ & =\frac{1}{2}\partial _{\mu}A^{\nu}\partial _{\nu}A^{\mu}+\frac{1}{2}g^{\nu \sigma}\partial _{\mu}g_{\nu \rho}A^{\rho}\partial _{\sigma}A^{\mu}-\frac{1}{2}g^{\mu \sigma}g_{\nu \rho}\partial _{\mu}A^{\rho}\partial _{\sigma}A^{\nu}-\frac{1}{2}g^{\mu \sigma}\partial _{\mu}g_{\nu \rho}A^{\rho}\partial _{\sigma}A^{\nu} \\
+ & =\frac{1}{2}\partial _{\mu}A^{\nu}\partial _{\nu}A^{\mu}-\frac{1}{2}g^{\mu \sigma}g_{\nu \rho}\partial _{\mu}A^{\rho}\partial _{\sigma}A^{\nu}+\frac{1}{2}g^{\nu \sigma}(\partial _{\mu}g_{\nu \rho}-\partial _{\nu}g_{\mu \rho})A^{\rho}\partial _{\sigma}A^{\mu}
 \end{align}
 $$
