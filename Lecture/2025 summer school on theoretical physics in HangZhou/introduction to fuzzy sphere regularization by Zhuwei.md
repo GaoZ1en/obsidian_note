@@ -88,7 +88,17 @@ $$
 
 so that is the reason that why is the CFT data $\displaystyle{\left\{\Delta,f_{ijk}\right\}}$ important for him.
 
-radial quantization... make a conformal transformation $\displaystyle{\tau=R\ln r}$ and turn to cylinder geometry $\displaystyle{S^{d-1}\times \mathbb{R}}$. then $\displaystyle{D}$ becomes a time translation operator---Hamiltonian. this is the oestate-operator correspondence?
+radial quantization... make a conformal transformation $\displaystyle{\tau=R\ln r}$ and turn to cylinder geometry $\displaystyle{S^{d-1}\times \mathbb{R}}$. then $\displaystyle{D}$ becomes a time translation operator---Hamiltonian. this is the origin of state-operator correspondence?
+
+Ising model,
+
+$$\tag{.}
+\begin{align}
+H & =\sum _{\braket{ ij } }\sigma ^{z}_{i}\sigma ^{z}_{j} +h\sum _{i}\sigma ^{z}_{i}
+\end{align}
+$$
+
+it can be solved that $\displaystyle{E_{1}-E_{0}=\frac{v}{L}(\Delta _{\sigma}-\Delta _{0})}$ with $\displaystyle{\Delta _{\sigma}=\frac{1}{16}}$ by ChenNing Yang, and $\displaystyle{E_{2}-E_{0}=\frac{v}{L}(\Delta _{\varepsilon}-\Delta _{0})}$ with $\displaystyle{\Delta _{\varepsilon}=\frac{1}{2}}$. 
 
 
 

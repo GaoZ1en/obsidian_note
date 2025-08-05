@@ -9053,7 +9053,13 @@
         "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/AdS3CFT2 duality by Matthias Gaberdiel.md",
         "wordCountStart": 5,
         "charCountStart": 65,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "08:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
         "id": 316
       },
       {
@@ -9069,6 +9075,215 @@
           }
         ],
         "id": 317
+      },
+      {
+        "date": "2025-08-05",
+        "filePath": "Articles/Proca in AdS3/another field in ads3.md",
+        "wordCountStart": 341,
+        "charCountStart": 1798,
+        "changes": [
+          {
+            "timeKey": "08:40",
+            "w": -6,
+            "c": -31
+          }
+        ],
+        "id": 318
+      },
+      {
+        "date": "2025-08-05",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/analytic conformal bootstrap by Agnese Bissi.md",
+        "wordCountStart": 4,
+        "charCountStart": 53,
+        "changes": [
+          {
+            "timeKey": "08:45",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "09:05",
+            "w": 4,
+            "c": 31
+          },
+          {
+            "timeKey": "09:10",
+            "w": 52,
+            "c": 365
+          },
+          {
+            "timeKey": "09:15",
+            "w": 69,
+            "c": 441
+          },
+          {
+            "timeKey": "09:20",
+            "w": 105,
+            "c": 654
+          },
+          {
+            "timeKey": "09:25",
+            "w": 22,
+            "c": 116
+          },
+          {
+            "timeKey": "09:30",
+            "w": 140,
+            "c": 799
+          },
+          {
+            "timeKey": "09:35",
+            "w": 87,
+            "c": 534
+          },
+          {
+            "timeKey": "09:40",
+            "w": 44,
+            "c": 243
+          },
+          {
+            "timeKey": "09:45",
+            "w": 42,
+            "c": 239
+          },
+          {
+            "timeKey": "09:50",
+            "w": 10,
+            "c": 59
+          },
+          {
+            "timeKey": "09:55",
+            "w": 110,
+            "c": 600
+          },
+          {
+            "timeKey": "10:00",
+            "w": 4,
+            "c": 16
+          },
+          {
+            "timeKey": "10:10",
+            "w": 46,
+            "c": 347
+          },
+          {
+            "timeKey": "10:15",
+            "w": 95,
+            "c": 452
+          },
+          {
+            "timeKey": "10:20",
+            "w": 68,
+            "c": 305
+          }
+        ],
+        "id": 319
+      },
+      {
+        "date": "2025-08-05",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 578,
+        "charCountStart": 2613,
+        "changes": [],
+        "id": 320
+      },
+      {
+        "date": "2025-08-05",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/introduction to fuzzy sphere regularization by Zhuwei.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "10:45",
+            "w": 5,
+            "c": 40
+          },
+          {
+            "timeKey": "10:50",
+            "w": 1,
+            "c": 15
+          },
+          {
+            "timeKey": "11:05",
+            "w": 6,
+            "c": 40
+          },
+          {
+            "timeKey": "11:10",
+            "w": 37,
+            "c": 223
+          },
+          {
+            "timeKey": "11:15",
+            "w": 6,
+            "c": 42
+          },
+          {
+            "timeKey": "11:20",
+            "w": 39,
+            "c": 253
+          },
+          {
+            "timeKey": "11:25",
+            "w": 56,
+            "c": 350
+          },
+          {
+            "timeKey": "11:30",
+            "w": 105,
+            "c": 619
+          },
+          {
+            "timeKey": "11:35",
+            "w": 88,
+            "c": 568
+          },
+          {
+            "timeKey": "11:40",
+            "w": 14,
+            "c": 119
+          },
+          {
+            "timeKey": "11:45",
+            "w": 90,
+            "c": 458
+          },
+          {
+            "timeKey": "11:50",
+            "w": 17,
+            "c": 128
+          },
+          {
+            "timeKey": "11:55",
+            "w": 15,
+            "c": 129
+          },
+          {
+            "timeKey": "12:00",
+            "w": 36,
+            "c": 163
+          },
+          {
+            "timeKey": "12:05",
+            "w": 48,
+            "c": 279
+          }
+        ],
+        "id": 321
+      },
+      {
+        "date": "2025-08-05",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:05",
+            "w": 81,
+            "c": 355
+          }
+        ],
+        "id": 322
       }
     ],
     "daysWithCompletedGoal": [
@@ -9101,7 +9316,8 @@
       "2025-07-23",
       "2025-07-27",
       "2025-07-31",
-      "2025-08-03"
+      "2025-08-03",
+      "2025-08-05"
     ]
   }
 }

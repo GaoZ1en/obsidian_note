@@ -94,3 +94,20 @@ $$
 
 where $\displaystyle{\Delta _{ij}=\Delta _{i}-\Delta _{j}}$ and cross ratios $\displaystyle{u=\frac{x_{12}^{2}x_{34}^{2}}{x_{13}^{2}x_{24}^{2}}}$ and $\displaystyle{v=\frac{x_{14}^{2}x_{23}^{2}}{x_{13}^{2}x_{24}^{2}}}$. $\displaystyle{g}$ is a function of $\displaystyle{u}$ and $\displaystyle{v}$, which is a sum of conformal blocks
 
+OPE
+
+$$\tag{.}
+\begin{align}
+\mathcal{O}_{i}(x_{1})\mathcal{O}_{j}(x_{2}) & =\sum _{k}\lambda _{ijk}(x_{1},x_{2},y,\partial _{y})\mathcal{O}_{k}(y)
+\end{align}
+$$
+
+write
+
+$$\tag{.}
+\begin{align}
+\lambda _{ijk}(x_{1},x_{2},y,\partial _{y}) & =f_{ijk}\hat{\lambda}_{ijk}(x_{1},x_{2},y,\partial _{y})
+\end{align}
+$$
+
+where $\displaystyle{f_{ijk}}$ is the structure constant, and $\displaystyle{\hat{\lambda}_{ijk}}$ is a function that fully fixed by conformal symmetry. OPE in CFTs has a finite radius of convergence, which is determined by the distance to the next operator insertion
