@@ -83,9 +83,14 @@ where $\displaystyle{\tilde{\Gamma}^{c}_{~ab}=\frac{1}{2}h^{cd}(\partial _{a}h_{
 
 $$\tag{.}
 \begin{align}
--\frac{1}{4}F_{\mu \nu}F^{\mu \nu} & =-\frac{1}{2}\partial _{\mu}A_{\nu}\partial ^{\mu}A^{\nu}+\frac{1}{2}\partial _{\mu}A_{\nu}\partial ^{\nu}A^{\mu} \\
- & =-\frac{1}{2}\partial _{\mu}(g_{\nu \rho}A^{\rho})g^{\mu \sigma}\partial _{\sigma}A^{\nu}+\frac{1}{2}\partial _{\mu}(g_{\nu \rho}A^{\rho})g^{\nu \sigma}\partial _{\sigma}A^{\mu} \\
- & =\frac{1}{2}\partial _{\mu}A^{\nu}\partial _{\nu}A^{\mu}+\frac{1}{2}g^{\nu \sigma}\partial _{\mu}g_{\nu \rho}A^{\rho}\partial _{\sigma}A^{\mu}-\frac{1}{2}g^{\mu \sigma}g_{\nu \rho}\partial _{\mu}A^{\rho}\partial _{\sigma}A^{\nu}-\frac{1}{2}g^{\mu \sigma}\partial _{\mu}g_{\nu \rho}A^{\rho}\partial _{\sigma}A^{\nu} \\
- & =\frac{1}{2}\partial _{\mu}A^{\nu}\partial _{\nu}A^{\mu}-\frac{1}{2}g^{\mu \sigma}g_{\nu \rho}\partial _{\mu}A^{\rho}\partial _{\sigma}A^{\nu}+\frac{1}{2}g^{\nu \sigma}(\partial _{\mu}g_{\nu \rho}-\partial _{\nu}g_{\mu \rho})A^{\rho}\partial _{\sigma}A^{\mu}
+
+S & =\int \mathrm{d}t\int \mathrm{d}^{2}xN\sqrt{ h }\left( \partial _{t}A^{a}\partial _{a}A^{t}+\frac{1}{2}\partial _{a}A^{b}\partial _{b}A^{a} +\frac{1}{2} \frac{1}{N^{2}}h_{ab}\partial _{t}A^{a}\partial _{t}A^{b} +\frac{1}{2}h^{ab}N^{2}\partial _{a}A^{t}\partial _{b}A^{t}-\frac{1}{2}h^{ab}h_{cd}\partial _{a}A^{c}\partial _{b}A^{d} \right. \\
+ & \left. +\frac{\partial _{a}N}{N}A^{t}\partial _{t}A^{a}-h^{ab}\frac{\partial _{a}N}{N^{3}}A^{t}\partial _{b}A^{t}+\frac{1}{2}h^{ab}(\partial _{d}h_{ac}-\partial _{a}h_{cd})A^{c}\partial _{b}A^{d}+\frac{1}{2}\mu ^{2}N^{2}(A^{t})^{2}-\frac{1}{2}\mu ^{2}h_{ab}A^{a}A^{b} \right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\mathrm{d}s^{2} & =-N^{2}\mathrm{d}t^{2}+h_{ab}\mathrm{d}x^{a}\mathrm{d}x^{b}
 \end{align}
 $$
