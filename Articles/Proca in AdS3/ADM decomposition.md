@@ -20,22 +20,42 @@ $$\tag{.}
 \begin{align}
 S & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}\mu ^{2}A_{\mu}A^{\mu}\right) \\
  & =\int _{t_{i}}^{t_{f}}\mathrm{d}t\int _{0}^{\infty}r\mathrm{d}r\int _{0}^{2\pi}\mathrm{d}\phi\left(-\frac{1}{4}F_{0i}F^{0i}-\frac{1}{4}F_{ij}F^{ij}-\frac{1}{2}\mu ^{2}A_{t}A^{t}\right) \\
- & =\int _{t_{i}}^{t_{f}}\mathrm{d}t\int _{0}r \mathrm{d}r\int _{-}^{2\pi}\mathrm{d}\phi\left(-\frac{1}{4}()\right)
+ & =\int _{t_{i}}^{t_{f}}\mathrm{d}t\int _{0}r \mathrm{d}r\int _{-}^{2\pi}\mathrm{d}\phi\left(\frac{1}{2}(1+r^{2})^{2}(\partial _{r}A^{t})^{2}+\frac{1}{2} \frac{1+r^{2}}{r^{2}}(\partial _{\phi}A^{t})^{2}\right.
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
--\frac{1}{4}F_{\mu \nu}F^{\mu \nu} & =-\frac{1}{2}\partial _{\mu}A_{\nu}\partial ^{\mu}A^{\nu}+\frac{1}{2}\partial _{\mu}A^{\nu}\partial _{\nu}A^{\mu} \\
- & = \frac{1}{2}\partial _{t}A^{t}\partial _{t}A^{t}+\frac{1}{2}\partial _{t}A^{r}\partial _{r}A^{t}+\frac{1}{2}\partial _{t}A^{\phi}\partial _{\phi}A^{t} \\
- & +\frac{1}{2}\partial _{r}A^{t}\partial _{t}A^{r}+\frac{1}{2}\partial _{r}A^{r}\partial _{r}A^{r}+\frac{1}{2}\partial _{r}A^{\phi}\partial _{\phi}A^{t} \\
- & +\frac{1}{2}\partial _{\phi}A^{t}\partial _{t}A^{\phi}+\frac{1}{2}\partial _{\phi}A^{r}\partial _{r}A^{\phi}+\frac{1}{2}\partial _{\phi}A^{\phi}\partial _{\phi}A^{\phi} \\
- & -\frac{1}{2}\partial _{t}A_{t}\partial ^{t}A^{t}-\frac{1}{2}\partial _{t}A_{r}\partial ^{t}A^{r}-\frac{1}{2}\partial _{t}A_{\phi}\partial ^{t}A^{\phi} \\
- & -\frac{1}{2}\partial _{r}A_{t}\partial ^{r}A^{t}-\frac{1}{2}
- 
++\frac{(1+r^{2})^{2}}{2}\partial _{r}A_{t}\partial ^{r}A^{t}
 \end{align}
 $$
 
+$$\tag{.}
+\begin{align}
+-\frac{1}{4}F_{\mu \nu}F^{\mu \nu} & =-\frac{1}{2}\partial _{\mu}A_{\nu}\partial ^{\mu}A^{\nu}+\frac{1}{2}\partial _{\mu}A_{\nu}\partial ^{\nu}A^{\mu} \\
+ & =  \\
+ & +\partial _{r}A^{t}\partial _{t}A^{r}+\partial _{r}A^{\phi}\partial _{\phi}A^{r} \\
+ & +\partial _{\phi}A^{t}\partial _{t}A^{\phi}\\
+ & +\frac{1}{2} \frac{1}{(1+r^{2})^{2}}(\partial _{t}A^{r})^{2}+\frac{r^{2}}{2(1+r^{2})}(\partial _{t}A^{\phi})^{2} \\
+ & -\frac{1}{2}r^{2}(1+r^{2})(\partial _{r}A^{\phi})^{2} \\
+ & -\frac{1}{2r^{2}(1+r^{2})}(\partial _{\phi}A^{r})^{2} \\
+ & +\frac{r}{1+r^{2}}A^{t}\partial _{t}A^{r}+\frac{1}{r}A^{\phi}\partial _{\phi}A^{r} \\
+ & +r(1+r^{2})A^{t}\partial _{r}A^{t}-r(1+r^{2})A^{\phi}\partial _{r}A^{\phi}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+g^{tt} & =-\frac{1}{1+r^{2}}, & g^{rr} & =1+r^{2}, & g^{\phi \phi} & =\frac{1}{r^{2}} \\
+g_{tt} & =-(1+r^{2}), & g_{rr} & =\frac{1}{1+r^{2}}, & g_{\phi \phi} & =r^{2}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2}
+\end{align}
+$$
 
 
 ## ADM Decomposition of Gauge Field Action

@@ -143,10 +143,27 @@ $$\tag{.}
 \end{align}
 $$
 
-this has a beautiful diagrammatic representation. in $\mathrm{AdS}$
+this has a beautiful diagrammatic representation. in $\mathrm{AdS}_{4}$, $\displaystyle{u=z\bar{z},v=(1-z)(1-\bar{z})}$, we have
 
 $$\tag{.}
 \begin{align}
-G^{\Delta _{12}\Delta _{34}}_{\Delta,\ell}(u,v)
+G^{\Delta _{12}\Delta _{34}}_{\Delta,\ell}(u,v) & =\frac{1}{(-2)^{\ell}} \frac{z\bar{z}}{z-\bar{z}} \left(K_{\dots}?\right)
 \end{align}
 $$
+
+where $\displaystyle{K\dots}$. by another OPE, we have
+
+$$\tag{.}
+\begin{align}
+\frac{g(u,v)}{x_{12}^{2\Delta _{\mathcal{O}}}x_{34}^{2\Delta _{\mathcal{O}}}} & =\frac{g(u',v')}{x_{23}^{2\Delta _{\mathcal{O}}}x_{14}^{2\Delta _{\mathcal{O}}}}
+\end{align}
+$$
+
+where $\displaystyle{u'=\frac{x_{23}^{2}x_{14}^{2}}{x_{13}^{2}x_{24}^{2}}=v,v'=\frac{x_{12}^{2}x_{34}^{2}}{x_{13}^{2}x_{24}^{2}}=u}$, which gives the crossing equation
+
+$$\tag{.}
+\begin{align}
+g(u,v) & =\left( \frac{u}{v} \right)^{2\Delta _{\mathcal{O}}}g(v,u)
+\end{align}
+$$
+
