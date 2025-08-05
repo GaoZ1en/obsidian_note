@@ -77,4 +77,20 @@ the aim is to compute the correlators of primary operators. we have
 
 1. conformal symmetries (Ward identities of conformal transformations), which fixes the spacetime dependence of 2 and 3 point functions.
 	1. $\displaystyle{\braket{ \mathcal{O}_{\Delta_{1}}(x_{1})\mathcal{O}_{\Delta_{2}}(x_{2}) }=\frac{C\delta _{\Delta_{1}\Delta_{2}}}{x_{12}^{2\Delta _{1}}}}$, where $\displaystyle{x_{12}=|x_{1}-x_{2}|}$
-	2. $\displaystyle{\braket{ \mathcal{O}_{\Delta_{1}}(x_{1})\mathcal{O}_{\Delta_{2}}(x_{2})\mathcal{O}_{\Delta_{3}}(x_{3}) }=\frac{C_{\Delta_{1}\Delta_{2}\Delta_{3}}}{x_{12}^{\Delta_{1}+\Delta_{2}-\Delta_{3}}x_{23}^{\Delta_{2}+\Delta_{3}-}}}$
+	2. $\displaystyle{\braket{ \mathcal{O}_{\Delta_{1}}(x_{1})\mathcal{O}_{\Delta_{2}}(x_{2})\mathcal{O}_{\Delta_{3}}(x_{3}) }=\frac{f_{123}}{x_{12}^{\Delta_{1}+\Delta_{2}-\Delta_{3}}x_{23}^{\Delta_{2}+\Delta_{3}-\Delta_{1}}x_{31}^{\Delta_{3}+\Delta_{1}-\Delta_{2}}}}$
+2. unitarity
+	1. imposes contraints on the spectrum
+		1. $\displaystyle{\Delta\geqslant \frac{d-2}{2}}$ for scalars
+		2. $\displaystyle{\Delta\geqslant d+\ell-2}$ for operators of spin $\displaystyle{\ell\geqslant 1}$ traceless symmetric representations of Lorentz group $\displaystyle{(2\ell,2\ell)}$.
+		3. $\displaystyle{f_{123}\in \mathbb{R}}$.
+
+for 4 point functions, we have
+
+$$\tag{.}
+\begin{align}
+\braket{ \mathcal{O}_{\Delta_{1}}(x_{1})\mathcal{O}_{\Delta_{2}}(x_{2})\mathcal{O}_{\Delta_{3}}(x_{3})\mathcal{O}_{\Delta_{4}}(x_{4}) }  & = \frac{g(u,v)}{(x_{12}^{2})^{\Delta_{1}+\Delta_{2}}(x_{34}^{2})^{\Delta_{3}+\Delta_{4}}}\left( \frac{x_{24}^{2}}{x_{12}^{2}} \right)^{\Delta_{12}/2}\left( \frac{x_{14}^{2}}{x_{13}^{2}} \right)^{\Delta_{34}/2}
+\end{align}
+$$
+
+where $\displaystyle{\Delta _{ij}=\Delta _{i}-\Delta _{j}}$ and cross ratios $\displaystyle{u=\frac{x_{12}^{2}x_{34}^{2}}{x_{13}^{2}x_{24}^{2}}}$ and $\displaystyle{v=\frac{x_{14}^{2}x_{23}^{2}}{x_{13}^{2}x_{24}^{2}}}$. $\displaystyle{g}$ is a function of $\displaystyle{u}$ and $\displaystyle{v}$, which is a sum of conformal blocks
+
