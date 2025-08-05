@@ -26,16 +26,7 @@ $$
 
 $$\tag{.}
 \begin{align}
--\frac{1}{2}\mu ^{2}A_{\mu}A^{\mu} & =\frac{1}{2}\mu ^{2}N^{2}(A^{t})^{2}-\frac{1}{2}\mu ^{2}h_{ab}A^{a}A^{b} \\
--\frac{1}{4}F_{\mu \nu}F^{\mu \nu} & =-\frac{1}{2}F_{ta}F_{ta}-\frac{1}{4}F_{ab}F^{ab}
+S & =\int _{t_{i}}^{t_{f}}\mathrm{d}t\int N\mathrm{d}^{2}x\sqrt{ h }\left(-\frac{1}{2}F_{ta}F^{ta}-\frac{1}{4}F_{ab}F^{ab}+\frac{1}{2}\mu ^{2}N^{2}(A^{t})^{2}-\frac{1}{2}\mu ^{2}h_{ab}A^{a}A^{b}\right)
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-S & =\int _{t_{i}}^{t_{f}}\mathrm{d}t\int r\mathrm{d}r\mathrm{d}\phi\left(-\frac{1}{2}F_{ta}F^{ta}-\frac{1}{4}F_{ab}F^{ab}+\frac{1}{2}\mu ^{2}(1+r^{2})(A^{t})^{2}-\frac{1}{2}\mu ^{2}h_{ab}A^{a}A^{b}\right) \\
-h_{ab} & =\mathrm{diag}\left( \frac{1}{1+r^{2}},r^{2} \right) \\
--\partial _{a}F^{ta}-\partial _{a}r \frac{1+2r^{2}}{r(1+r^{2})}F^{ta} & =\mu ^{2}A^{t} \\
-\partial _{t}F^{ta}+\partial _{b}F^{ba}+\frac{\partial _{b}r}{r}F^{ba} & =\mu ^{2}A^{a}
-\end{align}
-$$
