@@ -39,6 +39,40 @@ for example
 
 $$\tag{.}
 \begin{align}
-\frac{1}{(p'-\ell)^{2}-m^{2}} \frac{1}{\ell ^{2}} \frac{1}{(p-\ell)^{2}-m^{2}} & =2\int \mathrm{d}z\mathrm{d}x  \frac{1}{(\ell ^{2}-2\ell(zp+\bar{z}p'))^{3}}
+\frac{1}{(p'-\ell)^{2}-m^{2}} \frac{1}{\ell ^{2}} \frac{1}{(p-\ell)^{2}-m^{2}} & =2\int \mathrm{d}z\mathrm{d}x  \frac{x}{(\ell ^{2}-2\ell(zp+\bar{z}p'))^{3}}
+\end{align}
+$$
+
+where we denote $\displaystyle{\bar{z}=1-z}$. 
+
+a general $\displaystyle{\ell}$-loop Feynman integral can be written as
+
+$$\tag{.}
+\begin{align}
+\int \frac{\mathrm{d}^{d}\ell_{1}\dots \mathrm{d}^{d}\ell _{\ell}}{i\pi ^{d/2}\dots i\pi ^{d/2}}\prod _{k} \frac{1}{D_{k}^{n_{k}}} & =\int \frac{\mathrm{d}^{d}\ell_{1}\dots \mathrm{d}^{d}\ell _{\ell}}{i\pi ^{d/2}\dots i\pi ^{d/2}} \frac{\Gamma\left( \sum _{k}n_{k} \right)}{\prod _{k}\Gamma(n_{k})} \int \prod _{k} \mathrm{d}x_{k} \frac{x_{k}^{n_{k}-1}}{\left( \sum _{k} x_{k}D_{k} \right)^{\sum n_{k}}}\delta\left( 1-\sum _{k}x_{k} \right)
+\end{align}
+$$
+
+in general, we have
+
+$$\tag{.}
+\begin{align}
+\sum _{k}x_{k}D_{k} & =A_{ij}(\ell _{i}\cdot \ell _{j})+2B_{i}\cdot \ell _{i}+C
+\end{align}
+$$
+
+make a shift $\displaystyle{\ell _{i}\to \ell _{i}-(A^{-1})_{ij}B_{j}}$, then
+
+$$\tag{.}
+\begin{align}
+\sum _{k}x_{k}D_{k} & =A_{ij}\ell _{i}\cdot \ell _{j}+C-B_{i}(A^{-1})_{ij}B_{j}
+\end{align}
+$$
+
+make a further shift $\displaystyle{\ell _{i}=(A^{-1})_{ij}\ell _{j}}$, the integral becomes
+
+$$\tag{.}
+\begin{align}
+\int \frac{\mathrm{d}^{d}\ell _{1}\dots \mathrm{d}^{d}\ell _{\ell}}{i\pi ^{d/2}\dots i\pi ^{d/2}}
 \end{align}
 $$
