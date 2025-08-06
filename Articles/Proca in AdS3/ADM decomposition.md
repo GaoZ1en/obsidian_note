@@ -101,9 +101,9 @@ $$
 
 we have
 
-$$\tag{.}
+$$\tag{2.2}
 \begin{align}
-E_{t} & =N^{2}\left(-D_{a}\left( \frac{1}{N}D^{a}(N^{2}A^{t}) \right)+\frac{1}{N}\mu ^{2}N^{2}A^{t}-D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right)\right) \\
+E_{t} & =N^{3}\left(-\frac{1}{N}D_{a}\left( \frac{1}{N}D^{a}(N^{2}A^{t}) \right)+\mu ^{2}A^{t}-\frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right)\right) \\
 E^{b} & =N\left( \frac{1}{N}D_{a}(N\tilde{F}^{ab})-\frac{1}{N^{2}}D^{b}(N^{2}\partial _{t}A^{t})-\frac{1}{N^{2}}\partial _{t}^{2}A^{b}-\mu ^{2}A^{b} \right) \\
 \theta & =\int \mathrm{d}^{2}x\sqrt{ \sigma } \frac{1}{N}(D^{b}(N^{2}A^{t})+\partial _{t}A^{b})\delta A_{b}
 \end{align}
@@ -111,7 +111,7 @@ $$
 
 the eom for $\displaystyle{A^{t}}$ is
 
-$$\tag{.}
+$$\tag{2.3}
 \begin{align}
 -\frac{1}{N}D_{a}\left( \frac{1}{N}D^{a}(N^{2}A^{t}) \right)+\mu ^{2}A^{t} & =\frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right)
 \end{align}
@@ -141,15 +141,8 @@ then the eom for $\displaystyle{A^{b}}$ becomes
 $$\tag{.}
 \begin{align}
 D_{a}(N\tilde{F}^{ab})-\frac{1}{N}\partial _{t}^{2}A^{b}-\mu ^{2}NA^{b} & =-\frac{1}{N}\int \mathrm{d}^{2}yD^{b}(N^{2}G(x,y)) \frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}^{2}A^{a} \right) \\
-\implies \partial _{t}A^{t}+D_{b}A^{b} & =0 \\
-\implies\frac{1}{N}D_{a}(N\tilde{F}^{a}_{~~b})+\frac{1}{N^{2}}D_{b}(N^{2}D_{a}(A^{a})) & =\frac{1}{N^{2}}\partial _{t}^{2}A_{b}+\mu ^{2}A_{b}
+\implies \partial _{t}A^{t}+\frac{1}{N}D_{b}(NA^{b}) & =0 \\
+\implies \frac{1}{N}D_{a}(N\tilde{F}^{ab})+\frac{1}{N^{2}}D^{b}\left( ND_{a}(NA^{a}) \right) & =\frac{1}{N^{2}}\partial _{t}^{2}A^{b}+\mu ^{2}A^{b}
 \end{align}
 $$
 
-
-$$\tag{.}
-\begin{align}
-
-D_{b}A^{a}+\partial _{t}A^{t}=0
-\end{align}
-$$
