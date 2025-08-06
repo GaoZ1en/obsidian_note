@@ -154,3 +154,6 @@ D_{a}(N\tilde{F}^{ab})-\frac{1}{N}\partial _{t}^{2}A^{b}-\mu ^{2}NA^{b} & =-\fra
 \end{align}
 $$
 
+1. 把上面的方程展开，和已经给出的结果对比看是不是正确的方程。
+2. 把$\displaystyle{A^{t}}$的方程解出来
+
