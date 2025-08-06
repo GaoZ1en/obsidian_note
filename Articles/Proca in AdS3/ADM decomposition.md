@@ -83,21 +83,42 @@ thus
 
 $$\tag{1.5}
 \begin{align}
--\frac{1}{4}F_{\mu \nu}F^{\mu \nu} & =-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}
+-\frac{1}{4}F_{\mu \nu}F^{\mu \nu} & =-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2}\left( \sigma ^{ab}D_{a}(NA^{t})D_{b}(NA^{t})-2D^{a}(NA^{t})\left( \frac{1}{N}\nabla _{t}(\sigma ^{b}_{a}A_{a})+a_{a}NA^{t} \right)\right. \\
+ & \left.+\frac{1}{N^{2}}\sigma ^{ab}\nabla _{t}(\sigma ^{c}_{a}A_{c})\nabla _{t}(\sigma ^{d}_{b}A_{d})+2a^{a}NA^{t}\nabla _{t}(\sigma ^{b}_{a}A_{b})+a_{a}a^{a}(NA^{t})^{2} \right)
 \end{align}
 $$
 
 the second term is
 
-$$\tag{1.5}
+$$\tag{1.6}
 \begin{align}
 -\frac{1}{2}\mu ^{2}g^{\mu \nu}A_{\mu}A_{\nu}& =-\frac{1}{2}\mu ^{2}(\sigma ^{\mu \nu}-\tau ^{\mu}\tau ^{\nu})A_{\mu}A_{\nu} \\
- & =-\frac{1}{2}\mu ^{2}\sigma ^{ab}A_{a}A_{b}+\frac{1}{2}\mu ^{2}(\tau ^{\mu}A_{\mu})^{2}
+ & =-\frac{1}{2}\mu ^{2}\sigma ^{ab}A_{a}A_{b}+\frac{1}{2}\mu ^{2}(\tau ^{\mu}A_{\mu})^{2} \\
+ & =-\frac{1}{2}\mu ^{2}\sigma ^{ab}A_{a}A_{b}+\frac{1}{2}\mu ^{2}(NA^{t})^{2}
 \end{align}
 $$
 
-$$\tag{.}
+add (1.5) and (1.6) together, we have
+
+$$\tag{1.7}
 \begin{align}
-\nabla _{\mu}F^{\mu \nu} & =g^{\mu \rho}g^{\nu \sigma}\nabla _{\mu}F
+S & =\int \mathrm{d}^{3}xN\sqrt{ \sigma }\left(-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2}\left( \sigma ^{ab}D_{a}(NA^{t})D_{b}(NA^{t})-2D^{a}(NA^{t})\left( \frac{1}{N}\nabla _{t}(\sigma ^{b}_{a}A_{a})+a_{a}NA^{t} \right)\right.\right. \\
+ & \left.\left.+\frac{1}{N^{2}}\sigma ^{ab}\nabla _{t}(\sigma ^{c}_{a}A_{c})\nabla _{t}(\sigma ^{d}_{b}A_{d})+2a^{a}NA^{t}\nabla _{t}(\sigma ^{b}_{a}A_{b})+a_{a}a^{a}(NA^{t})^{2} \right)-\frac{1}{2}\mu ^{2}\sigma ^{ab}A_{a}A_{b}+\frac{1}{2}\mu ^{2}(N^{2}A^{t})^{2}\right)
+\end{align}
+$$
+
+$$\tag{1.8}
+\begin{align}
+\nabla _{\mu}F^{\mu \nu} & =g^{\mu \rho}g^{\nu \sigma}\nabla _{\mu}F_{\rho \sigma} \\
+ & =(\sigma ^{\mu \rho}-\tau ^{\mu}\tau ^{\rho})(\sigma ^{\nu \sigma}-\tau ^{\nu}\tau ^{\sigma})\nabla _{\mu}F_{\rho \sigma} \\
+ & =\sigma ^{\mu \rho}\sigma ^{\nu \sigma}\nabla _{\mu}F_{\rho \sigma}-\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\sigma}\nabla _{\mu}F_{\rho \sigma}-\sigma ^{\nu \sigma}\tau ^{\mu}\tau ^{\rho}\nabla _{\mu}F_{\rho \sigma}
+\end{align}
+$$
+
+the first term is
+
+$$\tag{1.9}
+\begin{align}
+\sigma ^{\mu}\sigma ^{\nu \sigma}\nabla _{\mu}F_{\rho \sigma} & =
 \end{align}
 $$

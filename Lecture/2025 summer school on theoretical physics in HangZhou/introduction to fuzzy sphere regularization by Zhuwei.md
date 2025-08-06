@@ -113,4 +113,20 @@ H & =\frac{h^{2}}{2mR^{2}}|\vec{M}|^{2} \\
 \end{align}
 $$
 
-follow the usual procedure, we com
+follow the usual procedure, we compute
+
+$$\tag{.}
+\begin{align}
+[M_{i},M_{j}] & = \dots
+\end{align}
+$$
+
+notice that $\displaystyle{M^{2}=L^{2}-s_{0}^{2}}$, the eigenvalue of $\displaystyle{H}$ is then $\displaystyle{\frac{\hbar ^{2}}{2mR^{2}}(s(s+1)-s_{0}^{2})}$. then corresponding eigenvector are denoted as $\displaystyle{Y^{(s_{0})}_{sm}}$, called monopole harmonics, with
+
+$$\tag{.}
+\begin{align}
+L^{2}Y^{(s_{0})}_{sm} & =s(s+1)Y^{(s_{0})}_{sm} \\
+L_{z}Y^{(s_{0})}_{sm} & =mY^{(s_{0})}_{sm}
+\end{align}
+$$
+here $\displaystyle{s_{0}=s+n}$, where $\displaystyle{n}$ is the Landau level index. the degeneracy of each level is $\displaystyle{2s+1}$. 
