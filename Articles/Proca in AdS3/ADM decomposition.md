@@ -84,7 +84,7 @@ add (1.5) and (1.6) together, we have
 
 $$\tag{1.7}
 \begin{align}
-S & =\int \mathrm{d}^{3}xN\sqrt{ \sigma }\left(-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2N^{2}}\sigma ^{ab}\left( D_{a}(N^{2}A^{t})+\partial _{t}(\sigma ^{c}_{a}A_{c}) \right)\left( D_{b}(N^{2}A^{t})+\partial _{t}(\sigma ^{d}_{b}A_{d})\right)-\frac{1}{2}\mu ^{2}\sigma ^{ab}A_{a}A_{b}+\frac{1}{2}\mu ^{2}(NA^{t})^{2}\right)
+S & =\int \mathrm{d}^{3}xN\sqrt{ \sigma }\left(-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2N^{2}}\sigma ^{ab}\left( D_{a}(N^{2}A^{t})+\partial _{t}(\sigma ^{c}_{a}A_{c}) \right)\left( D_{b}(N^{2}A^{t})+\partial _{t}(\sigma ^{d}_{b}A_{d})\right)-\frac{1}{2}\mu ^{2}\sigma ^{ab}A_{a}A_{b}+\frac{1}{2N^{2}}\mu ^{2}(N^{2}A^{t})^{2}\right)
 \end{align}
 $$
 
@@ -96,17 +96,14 @@ $$\tag{1.8}
 \end{align}
 $$
 
-the first term is
-
-$$\tag{1.9}
+$$\tag{.}
 \begin{align}
-\sigma ^{\mu \rho}\sigma ^{\nu \sigma}\nabla _{\mu}F_{\rho \sigma} & =\sigma ^{\mu \rho}\sigma ^{\nu \sigma}\nabla _{\mu}(\nabla _{\rho}(\sigma ^{\alpha}_{\lambda}A_{\alpha})+\nabla _{\rho}\tau _{\lambda}\tau ^{\alpha}A_{\alpha}+\tau _{\lambda}\nabla _{\rho}(\tau ^{\alpha}A_{\alpha})-(\lambda\leftrightarrow \rho)) \\
- & =
+F_{\mu \nu} & =\nabla _{\mu}(\sigma ^{\alpha}_{\nu}A_{\alpha})+\nabla _{\mu}\tau _{\nu}\tau ^{\alpha}A_{\alpha}+\tau _{\nu}\nabla _{\mu}(\tau ^{\alpha}A_{\alpha})-(\nu\leftrightarrow \mu)
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-\tau ^{\mu}\nabla _{\mu}(\sigma ^{\alpha}_{\nu}A_{\alpha}) & =\tau ^{\mu}\partial _{\mu}(\sigma ^{\alpha}_{\nu}A_{\alpha})
+\nabla _{\mu}F^{\mu a} & =\sigma ^{\mu \rho}\sigma ^{a\sigma}\nabla _{\mu}F_{\rho \sigma}-\sigma ^{a\sigma}\tau ^{\mu}\tau ^{\rho}\nabla _{\mu}F_{\rho \sigma}
 \end{align}
 $$
