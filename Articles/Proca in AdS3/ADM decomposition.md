@@ -109,6 +109,14 @@ E^{b} & =N\left( \frac{1}{N}D_{a}(N\tilde{F}^{ab})-\frac{1}{N^{2}}D^{b}(N^{2}\pa
 \end{align}
 $$
 
+and the symplectic form is
+
+$$\tag{.}
+\begin{align}
+\omega & =\int \mathrm{d}^{2}x\sqrt{ \sigma } \frac{1}{N}(D^{b}(N^{2}\delta A^{t})+\partial _{t}\delta A^{b})\wedge \delta A_{b}
+\end{align}
+$$
+
 the eom for $\displaystyle{A^{t}}$ is
 
 $$\tag{2.3}
