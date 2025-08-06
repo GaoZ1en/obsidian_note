@@ -100,5 +100,17 @@ $$
 
 it can be solved that $\displaystyle{E_{1}-E_{0}=\frac{v}{L}(\Delta _{\sigma}-\Delta _{0})}$ with $\displaystyle{\Delta _{\sigma}=\frac{1}{16}}$ by ChenNing Yang, and $\displaystyle{E_{2}-E_{0}=\frac{v}{L}(\Delta _{\varepsilon}-\Delta _{0})}$ with $\displaystyle{\Delta _{\varepsilon}=\frac{1}{2}}$. 
 
+---
 
+the problem is that how to get a lattice model on $\displaystyle{S^{2}}$. it is impossible to get a regular discretization on $\displaystyle{S^{2}}$ actually. however we could have a "irregular" way. 
 
+consider a fermion move on $\displaystyle{S^{2}}$. impose a monopole charge $\displaystyle{2s_{0}}$ at the origin, which gives a magnetic field $\displaystyle{\vec{B}=\frac{2s_{0}\phi _{0}}{4\pi R^{2}}\hat{e}_{r}}$ and $\displaystyle{\vec{A}=-\frac{2s_{0}\phi_{0}}{4\pi R}\cot \theta \hat{e}_{\phi}}$. the Hamiltonian is then
+
+$$\tag{.}
+\begin{align}
+H & =\frac{h^{2}}{2mR^{2}}|\vec{M}|^{2} \\
+\vec{M} & =R\hat{e}_{r}\times(-i\nabla+e\vec{A})
+\end{align}
+$$
+
+follow the usual procedure, we com

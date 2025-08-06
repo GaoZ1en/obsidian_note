@@ -29,7 +29,7 @@ the first term is
 $$\tag{1.4}
 \begin{align}
 -\frac{1}{4}g^{\mu \rho}g^{\nu \lambda}F_{\mu \nu}F_{\rho \lambda} & =-\frac{1}{4}(\sigma ^{\mu \rho}-\tau ^{\mu}\tau ^{\rho})(\sigma ^{\nu \lambda}-\tau ^{\nu}\tau ^{\lambda})F_{\mu \nu}F_{\rho \lambda} \\
- & =-\frac{1}{4}\sigma ^{\mu \rho}\sigma ^{\nu \lambda}F_{\mu \nu}F_{\rho \lambda}-\frac{1}{2}\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}F_{\mu \nu}F_{\rho \lambda}
+ & =-\frac{1}{4}\sigma ^{\mu \rho}\sigma ^{\nu \lambda}F_{\mu \nu}F_{\rho \lambda}+\frac{1}{2}\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}F_{\mu \nu}F_{\rho \lambda}
 \end{align}
 $$
 
@@ -58,7 +58,7 @@ $$\tag{1.4.2.1}
 \sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\mu}A_{\nu}\nabla _{\rho}A_{\lambda} & =\sigma ^{\mu \rho}(\nabla _{\mu}(\tau ^{\nu}A_{\nu})-A_{\nu}\nabla _{\mu}\tau ^{\nu})(\nabla _{\rho}(\tau ^{\lambda}A_{\lambda})-A_{\lambda}\nabla _{\rho}\tau ^{\lambda}) \\
  & =\sigma ^{\mu \rho}D_{\mu}(\tau ^{\nu}A_{\nu})D_{\rho}(\tau ^{\lambda}A_{\lambda})-2\sigma ^{\mu \rho}\nabla _{\rho}(\tau ^{\lambda}A_{\lambda})A_{\nu}\nabla _{\mu}\tau ^{\nu}+\sigma ^{\mu \rho}A_{\nu}\nabla _{\mu}\tau ^{\nu}A_{\lambda}\nabla _{\rho}\tau ^{\lambda} \\
  & =\sigma ^{ab}D_{a}(\tau ^{\nu}A_{\nu})D_{b}(\tau ^{\lambda}A_{\lambda})-2A_{a}K^{ab}D _{b}(\tau ^{\lambda}A_{\lambda})+A_{a}K^{ab}A_{c}K_{b}^{~c} \\
- & =\sigma ^{ab}D_{a}(NA^{t})D_{b}(NA^{t})-2A_{a}
+ & =\sigma ^{ab}D_{a}(NA^{t})D_{b}(NA^{t})
 \end{align}
 $$
 
@@ -66,22 +66,24 @@ $$\tag{1.4.2.2}
 \begin{align}
 \sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}A_{\mu}\nabla _{\rho}A_{\lambda} & =\sigma ^{\mu \rho}\tau ^{\nu}\nabla _{\nu}(\sigma ^{\alpha}_{\mu}A_{\alpha}+\tau _{\mu}\tau ^{\alpha}A_{\alpha})(\nabla _{\rho}(\tau ^{\lambda}A_{\lambda})-A_{\lambda}\nabla _{\rho}\tau ^{\lambda}) \\
  & =(\tau ^{\nu}\nabla _{\nu}(\sigma ^{\alpha}_{\mu}A_{\alpha})+\tau ^{\nu}\nabla _{\nu}\tau _{\mu}\tau ^{\alpha}A_{\alpha})(\sigma ^{\mu \rho}\nabla _{\rho}(\tau ^{\lambda}A_{\lambda})-\sigma ^{\mu \rho}A_{\lambda}\nabla _{\rho}\tau ^{\lambda}) \\
- & =(\tau ^{\nu}\nabla _{\nu}(\sigma ^{\alpha}_{a}A_{\alpha})+a_{a}\tau ^{\alpha}A_{\alpha})(D^{a}(\tau ^{\lambda}A_{\lambda})-K^{ab}A_{b})
+ & =(\tau ^{\nu}\nabla _{\nu}(\sigma ^{\alpha}_{a}A_{\alpha})+a_{a}\tau ^{\alpha}A_{\alpha})(D^{a}(\tau ^{\lambda}A_{\lambda})-K^{ab}A_{b}) \\
+ & =\left( \frac{1}{N}\nabla _{t}(\sigma ^{b}_{a}A_{a})+a_{a}NA^{t} \right)D^{a}(NA^{t})
 \end{align}
 $$
 
 $$\tag{1.4.2.3}
 \begin{align}
 \sigma ^{\mu \nu}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}A_{\mu}\nabla _{\lambda}A_{\rho} & =\sigma ^{\mu \nu}\tau ^{\nu}\nabla _{\nu}(\sigma ^{\alpha}_{\mu}A_{\alpha}+\tau _{\mu}\tau ^{\alpha}A_{\alpha})\tau ^{\lambda}\nabla _{\lambda}(\sigma ^{\beta}_{\rho}A_{\beta}+\tau _{\rho}\tau ^{\beta}A_{\beta}) \\
- & =\sigma ^{ab}(\tau ^{\nu}\nabla _{\nu}(\sigma ^{\alpha}_{a}A_{\alpha})+a_{a}\tau ^{\alpha}A_{\alpha})(\tau ^{\lambda}\nabla _{\lambda}(\sigma ^{\beta}_{b}A_{\beta})+a_{b}\tau ^{\beta}A_{\beta})
+ & =\sigma ^{ab}(\tau ^{\nu}\nabla _{\nu}(\sigma ^{\alpha}_{a}A_{\alpha})+a_{a}\tau ^{\alpha}A_{\alpha})(\tau ^{\lambda}\nabla _{\lambda}(\sigma ^{\beta}_{b}A_{\beta})+a_{b}\tau ^{\beta}A_{\beta}) \\
+ & =\frac{1}{N^{2}}\sigma ^{ab}\nabla _{t}(\sigma ^{c}_{a}A_{c})\nabla _{t}(\sigma ^{d}_{b}A_{d})+2a^{a}NA^{t}\nabla _{t}(\sigma ^{b}_{a}A_{b})+a_{a}a^{a}(NA^{t})^{2}
 \end{align}
 $$
 
 thus
 
-$$\tag{.}
+$$\tag{1.5}
 \begin{align}
-
+-\frac{1}{4}F_{\mu \nu}F^{\mu \nu} & =-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}
 \end{align}
 $$
 
@@ -96,6 +98,6 @@ $$
 
 $$\tag{.}
 \begin{align}
-\tau ^{\nu}\nabla _{\nu}
+\nabla _{\mu}F^{\mu \nu} & =g^{\mu \rho}g^{\nu \sigma}\nabla _{\mu}F
 \end{align}
 $$
