@@ -140,19 +140,14 @@ then the eom for $\displaystyle{A^{b}}$ becomes
 
 $$\tag{.}
 \begin{align}
-D_{a}(N\tilde{F}^{ab})-\frac{1}{N}\partial _{t}^{2}A^{b}-\mu ^{2}NA^{b} & =-\frac{1}{N}\int \mathrm{d}^{2}yD^{b}(N^{2}G(x,y)) \frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}^{2}A^{a} \right)
+D_{a}(N\tilde{F}^{ab})-\frac{1}{N}\partial _{t}^{2}A^{b}-\mu ^{2}NA^{b} & =-\frac{1}{N}\int \mathrm{d}^{2}yD^{b}(N^{2}G(x,y)) \frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}^{2}A^{a} \right) \\
+\implies \partial _{t}A^{t}+\frac{1}{N}D_{b}(NA^{b}) & =0 \\
+-\frac{1}{N}D_{a}\left( \frac{1}{N}D^{a}(N^{2}) \right)
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-\frac{1}{N}D_{b}(NA^{b}) & =\partial _{t}A^{t}
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-[\partial _{i}\partial _{j}-\delta _{ij}(-\partial _{0}^{2}+\vec{\nabla}^{2}-m^{2})]A^{j} & =\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\ddot{A}^{j}(y) \\
-\partial _{0}A^{0}+\nabla _{j}A^{j}
+-\frac{1}{N}D_{a}\left( \frac{1}{N}D^{a}(N^{2}G(x,y)) \right)+\mu ^{2}G(x,y)
 \end{align}
 $$

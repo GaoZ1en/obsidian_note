@@ -409,7 +409,7 @@ the equation of motion is
 $$\tag{8.1}
 \begin{align}
 (\partial _{i}\partial _{j}-\delta _{ij}(-\partial _{0}^{2}+\vec{\nabla}^{2}-m^{2}))A^{j} & =\int \mathrm{d}^{3}\vec{y}\partial _{x,i}G(\vec{x},\vec{y})\partial _{y,j}\ddot{A}^{j}(y) \\
-\implies-k _{i}k _{j}A^{j}(\vec{k})+\delta _{ij}\ddot{A}^{j}(\vec{k})+\delta _{ij}(\vec{k}^{2}+m^{2})A^{j}(\vec{k}) & =+\frac{\delta _{ij}}{\vec{k}^{2}+m^{2}}\ddot{A}^{j}(\vec{k}) \\
+\implies-k _{i}k _{j}A^{j}(\vec{k})+\delta _{ij}\ddot{A}^{j}(\vec{k})+\delta _{ij}(\vec{k}^{2}+m^{2})A^{j}(\vec{k}) & =+\frac{k _{i}k _{j}}{\vec{k}^{2}+m^{2}}\ddot{A}^{j}(\vec{k}) \\
 \implies \ddot{A}^{j}(\vec{k})+(\vec{k}^{2}+m^{2})A^{j}(\vec{k}) & =0 \\
 \implies (\partial _{\mu}\partial ^{\mu}-m^{2})A^{j}(x) & =0
 \end{align}
