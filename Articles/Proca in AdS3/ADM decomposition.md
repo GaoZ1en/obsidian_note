@@ -67,7 +67,7 @@ $$\tag{1.4.2.2}
 \sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}A_{\mu}\nabla _{\rho}A_{\lambda} & =\sigma ^{\mu \rho}\tau ^{\nu}\nabla _{\nu}(\sigma ^{\alpha}_{\mu}A_{\alpha}+\tau _{\mu}\tau ^{\alpha}A_{\alpha})(\nabla _{\rho}(\tau ^{\lambda}A_{\lambda})-A_{\lambda}\nabla _{\rho}\tau ^{\lambda}) \\
  & =(\tau ^{\nu}\nabla _{\nu}(\sigma ^{\alpha}_{\mu}A_{\alpha})+\tau ^{\nu}\nabla _{\nu}\tau _{\mu}\tau ^{\alpha}A_{\alpha})(\sigma ^{\mu \rho}\nabla _{\rho}(\tau ^{\lambda}A_{\lambda})-\sigma ^{\mu \rho}A_{\lambda}\nabla _{\rho}\tau ^{\lambda}) \\
  & =(\tau ^{\nu}\nabla _{\nu}(\sigma ^{\alpha}_{a}A_{\alpha})+a_{a}\tau ^{\alpha}A_{\alpha})(D^{a}(\tau ^{\lambda}A_{\lambda})-K^{ab}A_{b}) \\
- & =\left( \frac{1}{N}\nabla _{t}(\sigma ^{b}_{a}A_{a})+a_{a}NA^{t} \right)D^{a}(NA^{t})
+ & =\left( \frac{1}{N}\partial _{t}(\sigma ^{b}_{a}A_{a})+a_{a}NA^{t} \right)D^{a}(NA^{t})
 \end{align}
 $$
 
@@ -75,7 +75,7 @@ $$\tag{1.4.2.3}
 \begin{align}
 \sigma ^{\mu \nu}\tau ^{\nu}\tau ^{\lambda}\nabla _{\nu}A_{\mu}\nabla _{\lambda}A_{\rho} & =\sigma ^{\mu \nu}\tau ^{\nu}\nabla _{\nu}(\sigma ^{\alpha}_{\mu}A_{\alpha}+\tau _{\mu}\tau ^{\alpha}A_{\alpha})\tau ^{\lambda}\nabla _{\lambda}(\sigma ^{\beta}_{\rho}A_{\beta}+\tau _{\rho}\tau ^{\beta}A_{\beta}) \\
  & =\sigma ^{ab}(\tau ^{\nu}\nabla _{\nu}(\sigma ^{\alpha}_{a}A_{\alpha})+a_{a}\tau ^{\alpha}A_{\alpha})(\tau ^{\lambda}\nabla _{\lambda}(\sigma ^{\beta}_{b}A_{\beta})+a_{b}\tau ^{\beta}A_{\beta}) \\
- & =\frac{1}{N^{2}}\sigma ^{ab}\nabla _{t}(\sigma ^{c}_{a}A_{c})\nabla _{t}(\sigma ^{d}_{b}A_{d})+2a^{a}NA^{t}\nabla _{t}(\sigma ^{b}_{a}A_{b})+a_{a}a^{a}(NA^{t})^{2}
+ & =\frac{1}{N^{2}}\sigma ^{ab}\partial _{t}(\sigma ^{c}_{a}A_{c})\partial _{t}(\sigma ^{d}_{b}A_{d})+2a^{a}NA^{t}\partial _{t}(\sigma ^{b}_{a}A_{b})+a_{a}a^{a}(NA^{t})^{2}
 \end{align}
 $$
 
@@ -83,8 +83,9 @@ thus
 
 $$\tag{1.5}
 \begin{align}
--\frac{1}{4}F_{\mu \nu}F^{\mu \nu} & =-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2}\left( \sigma ^{ab}D_{a}(NA^{t})D_{b}(NA^{t})-2D^{a}(NA^{t})\left( \frac{1}{N}\nabla _{t}(\sigma ^{b}_{a}A_{a})+a_{a}NA^{t} \right)\right. \\
- & \left.+\frac{1}{N^{2}}\sigma ^{ab}\nabla _{t}(\sigma ^{c}_{a}A_{c})\nabla _{t}(\sigma ^{d}_{b}A_{d})+2a^{a}NA^{t}\nabla _{t}(\sigma ^{b}_{a}A_{b})+a_{a}a^{a}(NA^{t})^{2} \right)
+-\frac{1}{4}F_{\mu \nu}F^{\mu \nu} & =-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2}\left( \sigma ^{ab}D_{a}(NA^{t})D_{b}(NA^{t})-2D^{a}(NA^{t})\left( \frac{1}{N}\partial _{t}(\sigma ^{b}_{a}A_{a})+a_{a}NA^{t} \right)\right. \\
+ & \left.+\frac{1}{N^{2}}\sigma ^{ab}\partial _{t}(\sigma ^{c}_{a}A_{c})\partial _{t}(\sigma ^{d}_{b}A_{d})+2a^{a}NA^{t}\partial _{t}(\sigma ^{b}_{a}A_{b})+a_{a}a^{a}(NA^{t})^{2} \right) \\
+ & =-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2}\sigma ^{ab}\left( D_{a}(NA^{t})+\frac{1}{N}\partial _{t}(\sigma ^{b}_{a}A_{b})- \right)
 \end{align}
 $$
 
@@ -102,8 +103,8 @@ add (1.5) and (1.6) together, we have
 
 $$\tag{1.7}
 \begin{align}
-S & =\int \mathrm{d}^{3}xN\sqrt{ \sigma }\left(-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2}\left( \sigma ^{ab}D_{a}(NA^{t})D_{b}(NA^{t})-2D^{a}(NA^{t})\left( \frac{1}{N}\nabla _{t}(\sigma ^{b}_{a}A_{a})+a_{a}NA^{t} \right)\right.\right. \\
- & \left.\left.+\frac{1}{N^{2}}\sigma ^{ab}\nabla _{t}(\sigma ^{c}_{a}A_{c})\nabla _{t}(\sigma ^{d}_{b}A_{d})+2a^{a}NA^{t}\nabla _{t}(\sigma ^{b}_{a}A_{b})+a_{a}a^{a}(NA^{t})^{2} \right)-\frac{1}{2}\mu ^{2}\sigma ^{ab}A_{a}A_{b}+\frac{1}{2}\mu ^{2}(N^{2}A^{t})^{2}\right)
+S & =\int \mathrm{d}^{3}xN\sqrt{ \sigma }\left(-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2}\left( \sigma ^{ab}D_{a}(NA^{t})D_{b}(NA^{t})-2D^{a}(NA^{t})\left( \frac{1}{N}\partial _{t}(\sigma ^{b}_{a}A_{a})+a_{a}NA^{t} \right)\right.\right. \\
+ & \left.\left.+\frac{1}{N^{2}}\sigma ^{ab}\partial _{t}(\sigma ^{c}_{a}A_{c})\partial _{t}(\sigma ^{d}_{b}A_{d})+2a^{a}NA^{t}\partial _{t}(\sigma ^{b}_{a}A_{b})+a_{a}a^{a}(NA^{t})^{2} \right)-\frac{1}{2}\mu ^{2}\sigma ^{ab}A_{a}A_{b}+\frac{1}{2}\mu ^{2}(N^{2}A^{t})^{2}\right)
 \end{align}
 $$
 
@@ -119,6 +120,13 @@ the first term is
 
 $$\tag{1.9}
 \begin{align}
-\sigma ^{\mu}\sigma ^{\nu \sigma}\nabla _{\mu}F_{\rho \sigma} & =
+\sigma ^{\mu \rho}\sigma ^{\nu \sigma}\nabla _{\mu}F_{\rho \sigma} & =\sigma ^{\mu \rho}\sigma ^{\nu \sigma}\nabla _{\mu}(\nabla _{\rho}A_{\sigma}-\nabla _{\sigma}A_{\rho}) \\
+ & =
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\tau ^{\mu}\nabla _{\mu}(\sigma ^{\alpha}_{\nu}A_{\alpha}) & =\tau ^{\mu}\partial _{\mu}(\sigma ^{\alpha}_{\nu}A_{\alpha})
 \end{align}
 $$

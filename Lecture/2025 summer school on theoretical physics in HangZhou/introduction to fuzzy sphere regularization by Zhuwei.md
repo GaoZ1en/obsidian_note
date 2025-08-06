@@ -129,4 +129,48 @@ L^{2}Y^{(s_{0})}_{sm} & =s(s+1)Y^{(s_{0})}_{sm} \\
 L_{z}Y^{(s_{0})}_{sm} & =mY^{(s_{0})}_{sm}
 \end{align}
 $$
-here $\displaystyle{s_{0}=s+n}$, where $\displaystyle{n}$ is the Landau level index. the degeneracy of each level is $\displaystyle{2s+1}$. 
+here $\displaystyle{s_{0}=s+n}$, where $\displaystyle{n}$ is the Landau level index. the degeneracy of each level is $\displaystyle{2s+1}$. Landau level projection? requires $\displaystyle{W\ll U\ll \Delta}$, where $\displaystyle{W}$ is the band width, $\displaystyle{U}$ is the interaction between particles and $\displaystyle{\Delta}$ is the band gap. this condition is hard to satify in usual system, but is easily satisfied here, since $\displaystyle{W=0}$, and we just need to require $\displaystyle{U\ll \Delta}$.
+
+$$\tag{.}
+\begin{align}
+H & =\frac{1}{2}\int \mathrm{d}x \int \mathrm{d}x' \bar{\psi}(x)\bar{\psi}(x')V(x-x')\psi(x)\psi(x)
+\end{align}
+$$
+
+Landau level projection
+
+$$\tag{.}
+\begin{align}
+\bar{\psi}(r) & =\sum ^{s}_{m=-s}Y^{(s_{0})}_{sm}(\theta,\varphi)C_{m}^{*}
+\end{align}
+$$
+
+then
+
+$$\tag{.}
+\begin{align}
+H & =\frac{1}{2}\sum _{m_{1}m_{2}m_{3}m_{4}}C_{m_{1}}^{*}C_{m_{2}}^{*}C_{m_{3}}C_{m_{4}}\braket{ m_{1}m_{2}|V|m_{3}m_{4} } 
+\end{align}
+$$
+
+expand
+
+$$\tag{.}
+\begin{align}
+V(r_{1}-r_{2}) & =\sum ^{\infty}_{k=0}U_{k}P_{k}(\cos \theta _{12}) \\
+ & =\sum ^{\infty}_{k=0}U_{k}\sum ^{\ell}_{m=-\ell}Y^{*}_{\ell m}(\theta _{1},\varphi _{1})Y_{\ell m}(\theta_{2},\varphi _{2})
+\end{align}
+$$
+
+1. $\displaystyle{V(r_{1}-r_{2})=\delta(r_{1}-r_{2})=\sum ^{\infty}_{\ell=0}\sum ^{\ell}_{m=-\ell}Y^{*}_{\ell m}(\theta_{1},\varphi_{1})Y_{\ell m}(\theta_{2},\varphi_{2})}$
+2. $\displaystyle{V(r_{1}-r_{2})=\nabla ^{2}\delta(r_{1}-r_{2})=\sum _{\ell}\sum _{m}(-\ell(\ell+1))Y^{*}Y}$
+
+using the following result derived by Wu & Yang (1976)
+
+$$\tag{.}
+\begin{align}
+\int \mathrm{d}\Omega Y^{(Q_{1})}_{s_{1}m_{1}}(\Omega)Y^{(Q_{2})}_{s_{2}m_{2}}(\Omega)Y^{(Q_{3})}_{s_{3}m_{3}}(\Omega) & =\frac{1}{4\pi}\sqrt{(2s_{1}+1)(2s_{2}+1)(2s_{3}+1)}\begin{pmatrix} s_{1} & s_{2} & s_{3} \\ m_{1} & m_{2} & m_{3} \end{pmatrix} \begin{pmatrix}s_{1} & s_{2} & s_{3} \\Q_{1} & Q_{2} & Q_{3}\end{pmatrix}
+\end{align}
+$$
+
+where the $\displaystyle{\begin{pmatrix}\end{pmatrix}}$ is the Wigner 3j symbol. 
