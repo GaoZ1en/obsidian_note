@@ -167,3 +167,12 @@ g(u,v) & =\left( \frac{u}{v} \right)^{2\Delta _{\mathcal{O}}}g(v,u)
 \end{align}
 $$
 
+bootstrap equation
+
+$$\tag{.}
+\begin{align}
+\sum _{\Delta,\ell}f^{2}_{\mathcal{O}\mathcal{O}\mathcal{o}_{\Delta,\ell}}G_{\Delta,\ell}(u,v) & =\left( \frac{u}{v} \right)^{\Delta}\sum _{\Delta',\ell'}f^{2}_{\mathcal{O}\mathcal{O}\mathcal{O}_{\Delta',\ell'}}G_{\Delta',\ell'}(v,u)
+\end{align}
+$$
+
+the aim is to find the spectrum of $\displaystyle{\Delta,\ell}$ and $\displaystyle{f^{2}_{\mathcal{O}\mathcal{O}\mathcal{O}_{\Delta,\ell}}}$. $\displaystyle{u=z\bar{z},v=(1-z)(1-\bar{z})}$. in the double light cone limit, $\displaystyle{\mu,v\to 0\implies z\to 0,\bar{z}\to 1}$ with $\displaystyle{z\ll \bar{z}\ll1}$

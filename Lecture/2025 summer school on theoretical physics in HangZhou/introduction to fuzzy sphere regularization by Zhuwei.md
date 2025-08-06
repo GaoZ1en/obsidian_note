@@ -169,7 +169,7 @@ using the following result derived by Wu & Yang (1976)
 
 $$\tag{.}
 \begin{align}
-\int \mathrm{d}\Omega Y^{(Q_{1})}_{s_{1}m_{1}}(\Omega)Y^{(Q_{2})}_{s_{2}m_{2}}(\Omega)Y^{(Q_{3})}_{s_{3}m_{3}}(\Omega) & =\frac{1}{4\pi}\sqrt{(2s_{1}+1)(2s_{2}+1)(2s_{3}+1)}\begin{pmatrix} s_{1} & s_{2} & s_{3} \\ m_{1} & m_{2} & m_{3} \end{pmatrix} \begin{pmatrix}s_{1} & s_{2} & s_{3} \\Q_{1} & Q_{2} & Q_{3}\end{pmatrix}
+\int \mathrm{d}\Omega Y^{(Q_{1})}_{s_{1}m_{1}}(\Omega)Y^{(Q_{2})}_{s_{2}m_{2}}(\Omega)Y^{(Q_{3})}_{s_{3}m_{3}}(\Omega) & =(-)^{s_{1}+s_{2}+s_{3}}\sqrt{\frac{(2s_{1}+1)(2s_{2}+1)(2s_{3}+1)}{4\pi}}\begin{pmatrix} s_{1} & s_{2} & s_{3} \\ m_{1} & m_{2} & m_{3} \end{pmatrix} \begin{pmatrix}s_{1} & s_{2} & s_{3} \\Q_{1} & Q_{2} & Q_{3}\end{pmatrix}
 \end{align}
 $$
 
