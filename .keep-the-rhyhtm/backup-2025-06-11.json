@@ -10007,6 +10007,201 @@
             "timeKey": "12:55",
             "w": -378,
             "c": -1802
+          },
+          {
+            "timeKey": "13:00",
+            "w": 37,
+            "c": 224
+          },
+          {
+            "timeKey": "13:05",
+            "w": 88,
+            "c": 326
+          },
+          {
+            "timeKey": "13:10",
+            "w": 105,
+            "c": 415
+          },
+          {
+            "timeKey": "13:15",
+            "w": 34,
+            "c": 121
+          },
+          {
+            "timeKey": "13:20",
+            "w": -14,
+            "c": -49
+          },
+          {
+            "timeKey": "13:25",
+            "w": 122,
+            "c": 515
+          },
+          {
+            "timeKey": "13:30",
+            "w": 133,
+            "c": 538
+          },
+          {
+            "timeKey": "13:35",
+            "w": -68,
+            "c": -238
+          },
+          {
+            "timeKey": "13:40",
+            "w": 135,
+            "c": 604
+          },
+          {
+            "timeKey": "13:45",
+            "w": 93,
+            "c": 361
+          },
+          {
+            "timeKey": "13:50",
+            "w": 60,
+            "c": 241
+          },
+          {
+            "timeKey": "14:00",
+            "w": 87,
+            "c": 364
+          },
+          {
+            "timeKey": "14:05",
+            "w": 20,
+            "c": 74
+          },
+          {
+            "timeKey": "14:10",
+            "w": -41,
+            "c": -158
+          },
+          {
+            "timeKey": "14:15",
+            "w": 71,
+            "c": 293
+          },
+          {
+            "timeKey": "14:20",
+            "w": 97,
+            "c": 433
+          },
+          {
+            "timeKey": "14:25",
+            "w": -88,
+            "c": -376
+          },
+          {
+            "timeKey": "14:30",
+            "w": -62,
+            "c": -249
+          },
+          {
+            "timeKey": "14:35",
+            "w": 1,
+            "c": 8
+          },
+          {
+            "timeKey": "14:45",
+            "w": -18,
+            "c": -100
+          },
+          {
+            "timeKey": "14:55",
+            "w": 57,
+            "c": 229
+          },
+          {
+            "timeKey": "15:00",
+            "w": -9,
+            "c": -56
+          },
+          {
+            "timeKey": "15:25",
+            "w": 36,
+            "c": 144
+          },
+          {
+            "timeKey": "15:30",
+            "w": 31,
+            "c": 143
+          },
+          {
+            "timeKey": "15:35",
+            "w": 76,
+            "c": 250
+          },
+          {
+            "timeKey": "15:40",
+            "w": -33,
+            "c": -107
+          },
+          {
+            "timeKey": "15:45",
+            "w": -104,
+            "c": -408
+          },
+          {
+            "timeKey": "15:50",
+            "w": 0,
+            "c": 3
+          },
+          {
+            "timeKey": "15:55",
+            "w": 139,
+            "c": 490
+          },
+          {
+            "timeKey": "16:00",
+            "w": -141,
+            "c": -493
+          },
+          {
+            "timeKey": "16:05",
+            "w": 14,
+            "c": 77
+          },
+          {
+            "timeKey": "16:10",
+            "w": 0,
+            "c": -15
+          },
+          {
+            "timeKey": "18:35",
+            "w": 42,
+            "c": 202
+          },
+          {
+            "timeKey": "18:40",
+            "w": 198,
+            "c": 790
+          },
+          {
+            "timeKey": "18:45",
+            "w": -239,
+            "c": -986
+          },
+          {
+            "timeKey": "18:50",
+            "w": 114,
+            "c": 477
+          },
+          {
+            "timeKey": "18:55",
+            "w": -125,
+            "c": -525
+          },
+          {
+            "timeKey": "19:05",
+            "w": 29,
+            "c": 160
+          },
+          {
+            "timeKey": "19:10",
+            "w": 9,
+            "c": 37
           }
         ],
         "id": 328
@@ -10135,7 +10330,18 @@
         "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/multiloop Feynman integrals by Roman Lee.md",
         "wordCountStart": 704,
         "charCountStart": 3810,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "13:40",
+            "w": 6,
+            "c": 51
+          },
+          {
+            "timeKey": "13:50",
+            "w": 3,
+            "c": 26
+          }
+        ],
         "id": 333
       },
       {
@@ -10181,6 +10387,65 @@
           }
         ],
         "id": 334
+      },
+      {
+        "date": "2025-08-06",
+        "filePath": "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+        "wordCountStart": 2384,
+        "charCountStart": 12549,
+        "changes": [],
+        "id": 335
+      },
+      {
+        "date": "2025-08-06",
+        "filePath": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+        "wordCountStart": 3516,
+        "charCountStart": 16221,
+        "changes": [],
+        "id": 336
+      },
+      {
+        "date": "2025-08-06",
+        "filePath": "Articles/quantization/path integral quantization for Proca field.md",
+        "wordCountStart": 6572,
+        "charCountStart": 28339,
+        "changes": [
+          {
+            "timeKey": "14:35",
+            "w": 25,
+            "c": 115
+          },
+          {
+            "timeKey": "14:40",
+            "w": 19,
+            "c": 51
+          },
+          {
+            "timeKey": "14:45",
+            "w": -41,
+            "c": -166
+          },
+          {
+            "timeKey": "15:20",
+            "w": 0,
+            "c": -1
+          }
+        ],
+        "id": 337
+      },
+      {
+        "date": "2025-08-06",
+        "filePath": "Drafts/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "14:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 338
       }
     ],
     "daysWithCompletedGoal": [
@@ -10214,7 +10479,8 @@
       "2025-07-27",
       "2025-07-31",
       "2025-08-03",
-      "2025-08-05"
+      "2025-08-05",
+      "2025-08-06"
     ]
   }
 }
