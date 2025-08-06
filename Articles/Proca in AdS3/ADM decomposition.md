@@ -94,7 +94,7 @@ then we will derive the eom and symplectic potential for the action (1.7). take 
 $$\tag{2.1}
 \begin{align}
 \delta S & =\int \mathrm{d}t\mathrm{d}^{2}x\sqrt{ \sigma }\left(-\frac{1}{2}N\tilde{F}^{ab}(D_{a}\delta A_{b}-D_{b}\delta A_{a})+\frac{1}{N}\sigma ^{ab}(D_{a}(N^{2}A^{t})+\partial _{t}A_{b})(D_{b}(N^{2}\delta A^{t})+\partial _{t}\delta A_{b})-\mu ^{2}N\sigma ^{ab}A_{a}\delta A_{b}+\frac{1}{N}\mu ^{2}(N^{2}A^{t})(N^{2}\delta A^{t})\right) \\
- & =\int \mathrm{d}t\mathrm{d}^{2}x\sqrt{ \sigma }\left(\left( ND_{a}\tilde{F}^{ab}-\frac{1}{N}\sigma ^{ab}(D_{a}(N^{2}\partial _{t}A^{t})+\partial _{t}^{2}A_{a})-\mu ^{2}N\sigma ^{ab}A_{a} \right)\delta A_{b}+\left( -\frac{1}{N}D^{a}D_{a}(N^{2}A^{t})+\frac{1}{N}\mu ^{2}N^{2}A^{t}-\frac{1}{N}D^{a}\partial _{t}A_{a} \right)N^{2}\delta A^{t}\right) \\
+ & =\int \mathrm{d}t\mathrm{d}^{2}x\sqrt{ \sigma }\left(\left( D_{a}(N\tilde{F}^{ab})-\frac{1}{N}(D^{b}(N^{2}\partial _{t}A^{t})+\partial ^{2}_{t}A^{b})-\mu ^{2}NA^{b} \right)\delta A_{b}+\left(-D_{b}\left( \frac{1}{N}D^{b}(N^{2}A^{t}) \right)-D_{b}\left(\frac{1}{N}\partial _{t}A^{b}\right)+\frac{1}{N}\mu ^{2}N^{2}A^{t}\right)N^{2}\delta A^{t}\right) \\
  & +\int \mathrm{d}^{2}x\sqrt{ \sigma }\left(\frac{1}{N}\sigma ^{ab}(D_{a}(N^{2}A^{t})+\partial _{t}A_{a})\delta A_{b}\right)\Big|^{t_{f}}_{t_{i}}
 \end{align}
 $$
@@ -103,8 +103,8 @@ we have
 
 $$\tag{.}
 \begin{align}
-E_{t} & =N^{2}\left(-\frac{1}{N}D_{a}D^{a}(N^{2}A^{t})+\frac{1}{N}\mu ^{2}N^{2}A^{t}-\frac{1}{N}D^{a}\partial _{t}A_{a}\right) \\
-E^{b} & =N\left( D_{a}\tilde{F}^{ab}-\frac{1}{N^{2}}D^{b}(N^{2}\partial _{t}A^{t})-\frac{1}{N^{2}}\partial _{t}^{2}A^{b}-\mu ^{2}A^{b} \right) \\
+E_{t} & =N^{2}\left(-D_{a}\left( \frac{1}{N}D^{a}(N^{2}A^{t}) \right)+\frac{1}{N}\mu ^{2}N^{2}A^{t}-D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right)\right) \\
+E^{b} & =N\left( \frac{1}{N}D_{a}(N\tilde{F}^{ab})-\frac{1}{N^{2}}D^{b}(N^{2}\partial _{t}A^{t})-\frac{1}{N^{2}}\partial _{t}^{2}A^{b}-\mu ^{2}A^{b} \right) \\
 \theta & =\int \mathrm{d}^{2}x\sqrt{ \sigma } \frac{1}{N}(D^{b}(N^{2}A^{t})+\partial _{t}A^{b})\delta A_{b}
 \end{align}
 $$
@@ -113,8 +113,25 @@ the eom for $\displaystyle{A^{t}}$ is
 
 $$\tag{.}
 \begin{align}
--\frac{1}{N^{2}}D_{a}D^{a}(N^{2}A^{t})+\mu ^{2}A^{t} & =\frac{1}{N^{2}}D^{a}\partial _{t}A_{a}
+-\frac{1}{N}D_{a}\left( \frac{1}{N}D^{a}(N^{2}A^{t}) \right)+\mu ^{2}A^{t} & =\frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right)
 \end{align}
 $$
 
-introduce Green function $\displaystyle{G(x,y)}$
+introduce Green function $\displaystyle{G(x,y)}$ that satisfying
+
+$$\tag{.}
+\begin{align}
+-\frac{1}{N}D_{a}\left( \frac{1}{N}D^{a}(N^{2}G(x,y)) \right)+\mu ^{2}G(x,y) & =-\delta ^{2}(x-y) \\
+\implies A^{t}(x) & =-\int \mathrm{d}^{2}yG(x,y) \frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right)
+\end{align}
+$$
+
+integrate out $\displaystyle{A^{t}}$, we get the effective Lagrangian
+
+$$\tag{.}
+\begin{align}
+S & =\int \mathrm{d}t\mathrm{d}^{2}x\sqrt{ \sigma }\left(-\frac{1}{4}N\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2N}\sigma ^{ab}\left( D_{a}(N^{2}A^{t})+\partial _{t}A_{a} \right)\left( D_{b}(N^{2}A^{t})+\partial _{t}A_{b}\right)-\frac{1}{2}\mu ^{2}N\sigma ^{ab}A_{a}A_{b}+\frac{1}{2N}\mu ^{2}(N^{2}A^{t})^{2}\right) \\
+ & =\int \mathrm{d}t\mathrm{d}^{2}x\sqrt{ \sigma }\left(-\frac{1}{4}N\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2N}\sigma ^{ab}\left( \partial _{t}A_{a}-D_{a}\left( N^{2}\int \mathrm{d}^{2}yG(x,y) \frac{1}{N}D_{c}\left( \frac{1}{N}\partial _{t}A^{c} \right) \right) \right)\left( \partial _{t}A_{b}-D_{b}\left( N^{2}\int \mathrm{d}^{2}zG(x,z) \frac{1}{N}D_{d}\left( \frac{1}{N}\partial _{t}A^{d} \right) \right) \right)\right. \\
+ & \left.-\frac{1}{2}\mu ^{2}N\sigma _{ab}A^{a}A^{b}+\frac{1}{2N}\mu ^{2}\left( N^{2}\int \mathrm{d}^{2}y G(x,y) \frac{1}{N}D_{c}\left( \frac{1}{N}\partial _{t}A^{c} \right)\right)\left( N^{2}\int \mathrm{d}^{2}zG(x,z) \frac{1}{N}D_{d}\left( \frac{1}{N}\partial _{t}A^{d} \right) \right)\right)
+\end{align}
+$$

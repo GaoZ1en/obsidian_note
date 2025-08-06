@@ -78,3 +78,6 @@ $$\tag{.}
 $$
 
 where $\displaystyle{V=\det A}$ is a polynomial in $\displaystyle{x_{k}}$ of degree $\displaystyle{L}$, and $\displaystyle{F=(C-B_{i}(A^{-1})_{ij}B_{j})V}$ is a polynomial in $\displaystyle{x_{k}}$ of degree $\displaystyle{L+1}$.
+
+IBP relation, Laporta algorithm, Heuristic search
+dimension shift relations
