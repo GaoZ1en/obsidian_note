@@ -141,28 +141,15 @@ then the eom for $\displaystyle{A^{b}}$ becomes
 $$\tag{.}
 \begin{align}
 D_{a}(N\tilde{F}^{ab})-\frac{1}{N}\partial _{t}^{2}A^{b}-\mu ^{2}NA^{b} & =-\frac{1}{N}\int \mathrm{d}^{2}yD^{b}(N^{2}G(x,y)) \frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}^{2}A^{a} \right) \\
-\implies \partial _{t}A^{t}+\frac{1}{N}D_{b}(NA^{b}) & =0 \\
-\implies\frac{1}{N}D_{a}(ND^{a}A_{b}-ND_{b}A^{a})+\frac{1}{N^{2}}D_{b}(ND_{a}(NA^{a})) & =\frac{1}{N^{2}}\partial _{t}^{2}A_{b}+\mu ^{2}A_{b}
+\implies \partial _{t}A^{t}+D_{b}A^{b} & =0 \\
+\implies\frac{1}{N}D_{a}(N\tilde{F}^{a}_{~~b})+\frac{1}{N^{2}}D_{b}(N^{2}D_{a}(A^{a})) & =\frac{1}{N^{2}}\partial _{t}^{2}A_{b}+\mu ^{2}A_{b}
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-\frac{1}{N^{2}}(-N^{2}R_{ba}A^{a}+N^{2}D_{a}D^{a}A_{b}+ND_{a}ND^{a}A_{b}+2ND_{b}ND_{a}A^{a}+A^{a}D_{a}ND_{b}N+A^{a}ND_{a}D_{b}N)
-\end{align}
-$$
 
 $$\tag{.}
 \begin{align}
--N^{2}R_{ba}A^{a}+N^{2}D_{a}D^{a}A_{b}+ND_{a}ND^{a}A_{b}+2ND_{b}ND_{a}A^{a}+A^{a}D_{a}ND_{b}N
-\end{align}
-$$
 
-$$\tag{.}
-\begin{align}
--N^{2}R_{ab}A^{a} & =R^{c}_{~a^{3}}A^{a} \\
- & =R_{cb~a}^{~~~c}A^{a} \\
- & =-N^{2}[D_{a},D_{b}]A^{a} \\
- & =-N^{2}(D_{a}D_{b}A^{a}-D_{b}D_{a}A^{a})
+D_{b}A^{a}+\partial _{t}A^{t}=0
 \end{align}
 $$
