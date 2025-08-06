@@ -9827,6 +9827,186 @@
             "timeKey": "00:20",
             "w": 18,
             "c": 81
+          },
+          {
+            "timeKey": "08:15",
+            "w": 1225,
+            "c": 5888
+          },
+          {
+            "timeKey": "08:20",
+            "w": 165,
+            "c": 789
+          },
+          {
+            "timeKey": "08:25",
+            "w": 112,
+            "c": 500
+          },
+          {
+            "timeKey": "08:30",
+            "w": 30,
+            "c": 141
+          },
+          {
+            "timeKey": "08:35",
+            "w": 1,
+            "c": 73
+          },
+          {
+            "timeKey": "08:40",
+            "w": 97,
+            "c": 436
+          },
+          {
+            "timeKey": "08:45",
+            "w": 146,
+            "c": 686
+          },
+          {
+            "timeKey": "08:50",
+            "w": 199,
+            "c": 909
+          },
+          {
+            "timeKey": "08:55",
+            "w": -1206,
+            "c": -5548
+          },
+          {
+            "timeKey": "09:00",
+            "w": 52,
+            "c": 193
+          },
+          {
+            "timeKey": "09:05",
+            "w": 20,
+            "c": 62
+          },
+          {
+            "timeKey": "09:10",
+            "w": 21,
+            "c": 80
+          },
+          {
+            "timeKey": "09:15",
+            "w": 5,
+            "c": 23
+          },
+          {
+            "timeKey": "09:20",
+            "w": 5,
+            "c": 21
+          },
+          {
+            "timeKey": "09:30",
+            "w": 270,
+            "c": 1015
+          },
+          {
+            "timeKey": "09:50",
+            "w": 60,
+            "c": 288
+          },
+          {
+            "timeKey": "09:55",
+            "w": 41,
+            "c": 203
+          },
+          {
+            "timeKey": "10:00",
+            "w": 23,
+            "c": 115
+          },
+          {
+            "timeKey": "10:20",
+            "w": 31,
+            "c": 187
+          },
+          {
+            "timeKey": "10:25",
+            "w": 37,
+            "c": 148
+          },
+          {
+            "timeKey": "10:30",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "10:35",
+            "w": 55,
+            "c": 339
+          },
+          {
+            "timeKey": "10:40",
+            "w": -520,
+            "c": -2244
+          },
+          {
+            "timeKey": "10:45",
+            "w": 24,
+            "c": 143
+          },
+          {
+            "timeKey": "10:55",
+            "w": 5,
+            "c": 41
+          },
+          {
+            "timeKey": "11:00",
+            "w": -5,
+            "c": -41
+          },
+          {
+            "timeKey": "11:20",
+            "w": 45,
+            "c": 145
+          },
+          {
+            "timeKey": "11:25",
+            "w": -61,
+            "c": -220
+          },
+          {
+            "timeKey": "11:40",
+            "w": 4,
+            "c": 9
+          },
+          {
+            "timeKey": "11:45",
+            "w": -101,
+            "c": -547
+          },
+          {
+            "timeKey": "11:50",
+            "w": 98,
+            "c": 502
+          },
+          {
+            "timeKey": "11:55",
+            "w": -18,
+            "c": -78
+          },
+          {
+            "timeKey": "12:00",
+            "w": 25,
+            "c": 101
+          },
+          {
+            "timeKey": "12:05",
+            "w": 101,
+            "c": 475
+          },
+          {
+            "timeKey": "12:10",
+            "w": 74,
+            "c": 335
+          },
+          {
+            "timeKey": "12:55",
+            "w": -378,
+            "c": -1802
           }
         ],
         "id": 328
@@ -9841,9 +10021,166 @@
             "timeKey": "00:25",
             "w": -5,
             "c": -41
+          },
+          {
+            "timeKey": "08:10",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "08:15",
+            "w": -1513,
+            "c": -6941
           }
         ],
         "id": 329
+      },
+      {
+        "date": "2025-08-06",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/introduction to fuzzy sphere regularization by Zhuwei.md",
+        "wordCountStart": 563,
+        "charCountStart": 3426,
+        "changes": [
+          {
+            "timeKey": "09:00",
+            "w": 0,
+            "c": 3
+          },
+          {
+            "timeKey": "09:10",
+            "w": 27,
+            "c": 159
+          },
+          {
+            "timeKey": "09:15",
+            "w": 7,
+            "c": 43
+          },
+          {
+            "timeKey": "09:20",
+            "w": 60,
+            "c": 296
+          },
+          {
+            "timeKey": "09:25",
+            "w": 38,
+            "c": 198
+          },
+          {
+            "timeKey": "09:30",
+            "w": 16,
+            "c": 82
+          },
+          {
+            "timeKey": "09:35",
+            "w": 28,
+            "c": 147
+          },
+          {
+            "timeKey": "09:40",
+            "w": 49,
+            "c": 247
+          },
+          {
+            "timeKey": "09:45",
+            "w": 24,
+            "c": 140
+          },
+          {
+            "timeKey": "10:00",
+            "w": 78,
+            "c": 494
+          },
+          {
+            "timeKey": "10:05",
+            "w": 78,
+            "c": 335
+          },
+          {
+            "timeKey": "10:10",
+            "w": 178,
+            "c": 772
+          },
+          {
+            "timeKey": "10:15",
+            "w": 53,
+            "c": 260
+          },
+          {
+            "timeKey": "10:35",
+            "w": 6,
+            "c": 22
+          }
+        ],
+        "id": 330
+      },
+      {
+        "date": "2025-08-06",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 578,
+        "charCountStart": 2613,
+        "changes": [],
+        "id": 331
+      },
+      {
+        "date": "2025-08-06",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1448,
+        "changes": [],
+        "id": 332
+      },
+      {
+        "date": "2025-08-06",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/multiloop Feynman integrals by Roman Lee.md",
+        "wordCountStart": 704,
+        "charCountStart": 3810,
+        "changes": [],
+        "id": 333
+      },
+      {
+        "date": "2025-08-06",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/analytic conformal bootstrap by Agnese Bissi.md",
+        "wordCountStart": 1568,
+        "charCountStart": 8489,
+        "changes": [
+          {
+            "timeKey": "10:45",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "10:55",
+            "w": 114,
+            "c": 609
+          },
+          {
+            "timeKey": "11:00",
+            "w": 39,
+            "c": 228
+          },
+          {
+            "timeKey": "11:05",
+            "w": 57,
+            "c": 245
+          },
+          {
+            "timeKey": "11:10",
+            "w": 136,
+            "c": 646
+          },
+          {
+            "timeKey": "11:15",
+            "w": 73,
+            "c": 385
+          },
+          {
+            "timeKey": "11:20",
+            "w": 9,
+            "c": 49
+          }
+        ],
+        "id": 334
       }
     ],
     "daysWithCompletedGoal": [
