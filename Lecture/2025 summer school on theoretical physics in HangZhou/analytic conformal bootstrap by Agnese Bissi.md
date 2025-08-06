@@ -176,3 +176,27 @@ $$\tag{.}
 $$
 
 the aim is to find the spectrum of $\displaystyle{\Delta,\ell}$ and $\displaystyle{f^{2}_{\mathcal{O}\mathcal{O}\mathcal{O}_{\Delta,\ell}}}$. $\displaystyle{u=z\bar{z},v=(1-z)(1-\bar{z})}$. in the double light cone limit, $\displaystyle{\mu,v\to 0\implies z\to 0,\bar{z}\to 1}$ with $\displaystyle{z\ll \bar{z}\ll1}$
+
+1. $\displaystyle{\tau=\Delta-\ell}$, conformal twist?
+	1. $\displaystyle{G_{\Delta,\ell}(z,\bar{z})=(z\bar{z})^{\tau/2}\tilde{G}_{\Delta,\ell}(z,\bar{z})}$
+	2. $\displaystyle{G_{\Delta,\ell}(z,\bar{z})\underset{v\to 0}{\to}-(z\bar{z})^{\tau/2}(1-(1-z)(1-\bar{z}))^{\ell}{}_{2}F_{1}\left( \frac{\tau}{2}+\ell,\frac{\tau}{2}+\ell;\tau+2\ell;1-v \right)}$
+	3. $\displaystyle{G_{\Delta,\ell}(z,\bar{z})\underset{u\to 0}{\to}a(u,v)\log u+b(u,v)}$
+
+we write the bootstrap equation as
+
+$$\tag{.}
+\begin{align}
+\sum _{\tau,\ell}f^{2}_{\mathcal{OOO}_{\tau,\ell}}u^{\tau/2}\tilde{G}_{\tau,\ell}(u,v) & =\left( \frac{u}{v} \right)^{\Delta _{\mathcal{O}}}\left( \sum _{\tau',\ell'}f^{2}_{\mathcal{OOO}_{\tau;,\ell;}}v^{\tau'/2}\tilde{G}_{\tau',\ell'}(v,u) \right) \\
+1+\sum _{\tau,\ell}f^{2}_{\mathcal{OOO}_{\tau,\ell}}u^{\tau/2}\tilde{G}_{\tau,\ell}(u,v) & =\left( \frac{u}{v} \right)^{\Delta _{\mathcal{O}}}\left(\sum _{\tau',\ell'}f^{2}_{\mathcal{OOO}_{\tau;,\ell;}}v^{\tau'/2}\tilde{G}_{\tau',\ell'}(v,u) \right)
+\end{align}
+$$
+
+in the second line we separate the identity operator. in the limit $\displaystyle{u\to 0}$
+
+$$\tag{.}
+\begin{align}
+\frac{1}{u^{\Delta _{\mathcal{O}}}}\sim \frac{1}{v^{\Delta _{\mathcal{O}}}}\left(\sum _{\tau',\ell'}f^{2}_{\mathcal{OOO}_{\tau',\ell'}}v^{\tau'/2}\tilde{G}_{\tau',\ell'}(v,u)\right)
+\end{align}
+$$
+
+since $\displaystyle{\tilde{G}_{\tau',\ell'}\sim \log u}$, the rhs is $\displaystyle{\log}$. however the lhs is power law, the only way to solve this is that the sum is not converge for all real $\displaystyle{u}$. 

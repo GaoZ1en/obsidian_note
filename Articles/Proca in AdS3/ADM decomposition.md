@@ -58,7 +58,7 @@ $$\tag{1.4.2}
 \begin{align}
 \sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}F_{\mu \nu}F_{\rho \lambda} & =\sigma ^{\mu \rho}\tau ^{\nu}\tau ^{\lambda}(\nabla _{\mu}(\sigma ^{\alpha}_{\nu}A_{\alpha})+\nabla _{\mu}\tau _{\nu}\tau ^{\alpha}A_{\alpha}+\tau _{\nu}\nabla _{\mu}(\tau ^{\alpha}A_{\alpha})-(\nu\leftrightarrow \mu))(\nabla _{\rho}(\sigma ^{\beta}_{\lambda}A_{\beta})+\nabla _{\rho}\tau _{\lambda}\tau ^{\beta}A_{\beta}+\tau _{\lambda}\nabla _{\rho}(\tau ^{\beta}A_{\beta})-(\lambda\leftrightarrow \rho)) \\
  & =\sigma ^{\mu \rho}(-\nabla _{\mu}(\tau ^{\alpha}A_{\alpha})-\tau ^{\nu}\nabla _{\nu}(\sigma ^{\alpha}_{\mu}A_{\alpha})-\tau ^{\nu}\nabla _{\nu}\tau _{\mu}\tau ^{\alpha}A_{\alpha})(-\nabla _{\rho}(\tau ^{\beta}A_{\beta})-\tau ^{\lambda}\nabla _{\lambda}(\sigma ^{\beta}_{\rho}A_{\beta})-\tau ^{\lambda}\nabla _{\lambda}\tau _{\rho}\tau ^{\beta}A_{\beta}) \\
- & =\sigma ^{ab}\left( D_{a}(NA^{t})+\frac{1}{N}\partial _{t}(\sigma ^{c}_{a}A_{c})+a_{a}(NA^{t}) \right)\left( D_{b}(NA^{t})+\frac{1}{N}\partial _{t}(\sigma ^{d}_{b}A_{d}) +a_{b}(NA^{t})\right)
+ & =\sigma ^{ab}\left( D_{a}(NA^{t})+\frac{1}{N}\partial _{t}(\sigma ^{c}_{a}A_{c})+A_{a}(NA^{t}) \right)\left( D_{b}(NA^{t})+\frac{1}{N}\partial _{t}(\sigma ^{d}_{b}A_{d}) +A_{b}(NA^{t})\right)
 \end{align}
 $$
 
@@ -66,7 +66,7 @@ thus
 
 $$\tag{1.5}
 \begin{align}
--\frac{1}{4}F_{\mu \nu}F^{\mu \nu} & =-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2}\sigma ^{ab}\left( D_{a}(NA^{t})+\frac{1}{N}\partial _{t}(\sigma ^{c}_{a}A_{c})+a_{a}(NA^{t}) \right)\left( D_{b}(NA^{t})+\frac{1}{N}\partial _{t}(\sigma ^{d}_{b}A_{d}) +a_{b}(NA^{t})\right)
+-\frac{1}{4}F_{\mu \nu}F^{\mu \nu} & =-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2N^{2}}\sigma ^{ab}\left( D_{a}(N^{2}A^{t})+\partial _{t}(\sigma ^{c}_{a}A_{c}) \right)\left( D_{b}(N^{2}A^{t})+\partial _{t}(\sigma ^{d}_{b}A_{d})\right)
 \end{align}
 $$
 
@@ -84,7 +84,7 @@ add (1.5) and (1.6) together, we have
 
 $$\tag{1.7}
 \begin{align}
-S & =\int \mathrm{d}^{3}xN\sqrt{ \sigma }\left(-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}\frac{1}{2}\sigma ^{ab}\left( D_{a}(NA^{t})+\frac{1}{N}\partial _{t}(\sigma ^{c}_{a}A_{c})+a_{a}(NA^{t}) \right)\left( D_{b}(NA^{t})+\frac{1}{N}\partial _{t}(\sigma ^{d}_{b}A_{d}) +a_{b}(NA^{t})\right)-\frac{1}{2}\mu ^{2}\sigma ^{ab}A_{a}A_{b}+\frac{1}{2}\mu ^{2}(NA^{t})^{2}\right)
+S & =\int \mathrm{d}^{3}xN\sqrt{ \sigma }\left(-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2N^{2}}\sigma ^{ab}\left( D_{a}(N^{2}A^{t})+\partial _{t}(\sigma ^{c}_{a}A_{c}) \right)\left( D_{b}(N^{2}A^{t})+\partial _{t}(\sigma ^{d}_{b}A_{d})\right)-\frac{1}{2}\mu ^{2}\sigma ^{ab}A_{a}A_{b}+\frac{1}{2}\mu ^{2}(NA^{t})^{2}\right)
 \end{align}
 $$
 
