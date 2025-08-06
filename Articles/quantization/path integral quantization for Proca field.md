@@ -416,4 +416,3 @@ $$\tag{8.1}
 $$
 
 which is exactly the Klein-Gordon equation.
-

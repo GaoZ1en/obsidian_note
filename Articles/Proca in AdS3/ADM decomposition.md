@@ -142,12 +142,13 @@ $$\tag{.}
 \begin{align}
 D_{a}(N\tilde{F}^{ab})-\frac{1}{N}\partial _{t}^{2}A^{b}-\mu ^{2}NA^{b} & =-\frac{1}{N}\int \mathrm{d}^{2}yD^{b}(N^{2}G(x,y)) \frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}^{2}A^{a} \right) \\
 \implies \partial _{t}A^{t}+\frac{1}{N}D_{b}(NA^{b}) & =0 \\
--\frac{1}{N}D_{a}\left( \frac{1}{N}D^{a}(N^{2}) \right)
+\implies
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
--\frac{1}{N}D_{a}\left( \frac{1}{N}D^{a}(N^{2}G(x,y)) \right)+\mu ^{2}G(x,y)
+\frac{1}{N}D_{a}(ND^{a}A_{b}-ND_{b}A^{a})-\frac{1}{N^{2}}\partial _{t}^{2}A_{b}-\mu ^{2}A_{b}=\frac{1}{N^{2}}D_{b}(ND_{a}(NA^{a})) \\
+\frac{1}{N}D_{a}(ND^{a}A_{b}-ND_{b}A^{a})-\frac{1}{N^{2}}D_{b}(ND_{a}(NA^{a}))
 \end{align}
 $$
