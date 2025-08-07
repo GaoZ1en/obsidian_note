@@ -160,33 +160,19 @@ $$
 
 $$\tag{.}
 \begin{align}
-\frac{1}{N^{2}}(-N^{2}A^{a}R^{b}_{a}+N^{2}D_{a}D^{a}A^{b}+r(1+r^{2})D_{r}A^{b}+2ND^{r}ND_{a}A^{a}+(1+r^{2})A^{r}\delta ^{b}_{r}) 
+\frac{1}{N^{2}}(-N^{2}A^{a}R^{b}_{a}+N^{2}D_{a}D^{a}A^{b}+r(1+r^{2})D_{r}A^{b}+2r(1+r^{2})D_{a}A^{a}\delta ^{b}_{r}+(1+r^{2})A^{r}\delta ^{b}_{r}) 
 \end{align}
 $$
 
 $$\tag{.}
 \begin{align}
-\partial _{r}N & =\frac{r}{\sqrt{ 1+r^{2} }} \\
-\partial _{r}^{2}N & =\frac{1}{(1+r^{2})^{3/2}}
-\end{align}
-$$
-$$\tag{.}
-\begin{align}
-R^{b}_{~a}A^{a} & =g^{bc}R^{~~~d}_{dc~a}A^{a} \\
- & =[D_{a},D^{b}]A^{a}=
+D_{a}D^{a}A^{b} & =g^{ac}D_{a}D_{c}A^{b} & =g^{ac}\partial _{a}(\partial _{c}A^{b}+\Gamma ^{b}_{~cd}A^{d})-g^{ac}\Gamma ^{d}_{~ac}(\partial_{d}A^{b}+\Gamma ^{b}_{~de}A^{e})+g^{ac}\Gamma ^{b}_{~ad}(\partial _{c}A^{d}+\Gamma ^{d}_{~ce}A^{e})
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-
-\end{align}
-$$
 
 $$\tag{.}
 \begin{align}
-\Gamma ^{\rho}_{~\rho \rho} & =-\frac{\rho}{1+\rho ^{2}} \\
-\Gamma ^{\rho}_{~\theta \theta} & =-\rho (1+\rho ^{2}) \\
-\Gamma ^{\theta}_{~\rho \theta} & =\frac{1}{\rho}
+R_{ab} & =-\frac{1}{1+r^{2}}\delta _{a}^{r}\delta ^{r}_{b}-r^{2}\delta ^{\phi}_{a}\delta ^{\phi}_{b}
 \end{align}
 $$
