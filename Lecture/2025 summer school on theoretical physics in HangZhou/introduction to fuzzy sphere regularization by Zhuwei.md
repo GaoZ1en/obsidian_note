@@ -173,4 +173,13 @@ $$\tag{.}
 \end{align}
 $$
 
-where the $\displaystyle{\begin{pmatrix}\end{pmatrix}}$ is the Wigner 3j symbol. 
+where the $\displaystyle{\begin{pmatrix}\end{pmatrix}}$ is the Wigner 3j symbol.
+
+---
+
+$$\tag{.}
+\begin{align}
+H & =\sum _{\braket{ ij } }\sigma ^{z}_{i}\sigma ^{z}_{j}+h\sum _{i}\sigma ^{x}_{i}
+\end{align}
+$$
+

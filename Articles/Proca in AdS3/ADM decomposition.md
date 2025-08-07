@@ -154,60 +154,21 @@ D_{a}(N\tilde{F}^{ab})-\frac{1}{N}\partial _{t}^{2}A^{b}-\mu ^{2}NA^{b} & =-\fra
 \end{align}
 $$
 
-1. 把$\displaystyle{A^{t}}$的方程解出来
+these two equations are equivalent to
 
 $$\tag{.}
 \begin{align}
--(1+r^{2})^{1/2}\partial_{r}\left( \frac{1}{(1+r^{2})^{1/2}}\partial _{r}((1+r^{2})A^{t}) \right)-\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\mu ^{2}A^{t} & = 0 \\
--(1+r^{2})\partial _{r}^{2}A^{t}-3r\partial _{r}A^{t}-\frac{2}{1+r^{2}}A^{t}-\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\mu ^{2}A^{t}
+-i\omega \tilde{A}^{t}+\partial _{r}\tilde{A}^{r}+im\tilde{A}^{\phi}+ \frac{1}{r}\tilde{A}^{r} & =0 \\
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\mu ^{2}-\frac{m^{2}+1}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r}-\frac{2im}{r}\tilde{A}^{\phi} & =0 \\
+\frac{2im}{r^{3}}\tilde{A}^{r}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =0 
 \end{align}
 $$
+
+---
 
 $$\tag{.}
 \begin{align}
-\Delta A^{t} & =\frac{1}{\sqrt{ \sigma }}D_{a}(\sqrt{ \sigma }\sigma ^{ab}D_{b}A^{t}) \\
- & =\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{\sqrt{ 1+r^{2} }}{r}\partial _{r}\left( \frac{r}{\sqrt{ 1+r^{2} }} (1+r^{2})\partial _{r}A^{t}\right) \\
- & =\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+(1+r^{2})\partial _{r}^{2}A^{t}+\frac{1+2r^{2}}{r}\partial _{r}A^{t}
+\frac{1}{N}\sigma ^{ab}D_{a}\left( \frac{1}{N}D_{b}(N^{2}A^{t}) \right) & =\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\sqrt{ 1+r^{2} }\partial _{r}\left( \frac{1}{\sqrt{ 1+r^{2} }}\partial _{r}((1+r^{2})A^{t}) \right) \\
+ & =\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\partial _{r}^{2}((1+r^{2})A^{t})-\frac{r}{(1+r^{2})}
 \end{align}
 $$
-
-
-$$\tag{.}
-\begin{align}
-(1+r^{2})f''+\frac{0+3r^{2}}{r}f'+\left( 0+\frac{0}{r^{2}}+\frac{2}{1+r^{2}} \right)f & =0
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-(1+r^{2})\partial _{r}^{2}A^{t}+3r\partial _{r}A^{t}+\frac{2}{1+r^{2}}A^{t} \\
-(1+r^{2})\partial _{r}^{2}Q+\frac{1+2r^{2}}{r}\partial _{r}Q
-\end{align}
-$$
-
-let $\displaystyle{g=(1+r^{2})^{1/2}r^{-1/2}f}$, the differential equation satisfied by $\displaystyle{g}$ is
-
-$$\tag{.}
-\begin{align}
-(1+r^{2})\partial _{r}^{2}g+\frac{1+2r^{2}}{r}\partial _{r}g+\left( -\frac{3}{4}-\frac{1}{4r^{2}}+\frac{\frac{7}{2}}{1+r^{2}} \right)g & =0
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-\beta=-\frac{1}{2} \\
-\alpha=\frac{1}{2}
-\end{align}
-$$
-
-let $\displaystyle{q=(1+r^{2})^{1/2}r^{-1/2}A^{t}}$
-
-$$\tag{.}
-\begin{align}
--\Delta g+\left( \mu ^{2}-\frac{3}{4} \right)g+\left(-\frac{1}{4r^{2}}+\frac{\frac{7}{2}}{1+r^{2}}\right)g & =\frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right)
-\end{align}
-$$
-
-???
-
-
