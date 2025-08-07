@@ -158,6 +158,56 @@ $$
 
 $$\tag{.}
 \begin{align}
--\frac{1}{N}(1+r^{2})^{1/2}\partial_{r}\left( \frac{1}{N}\partial _{r}(N^{2}A^{t}) \right)-\partial _{\phi}^{2}A^{t}+\mu ^{2}A^{t} & =
+-(1+r^{2})^{1/2}\partial_{r}\left( \frac{1}{(1+r^{2})^{1/2}}\partial _{r}((1+r^{2})A^{t}) \right)-\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\mu ^{2}A^{t} & = 0 \\
+-(1+r^{2})\partial _{r}^{2}A^{t}-3r\partial _{r}A^{t}-\frac{2}{1+r^{2}}A^{t}-\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\mu ^{2}A^{t}
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+\Delta A^{t} & =\frac{1}{\sqrt{ \sigma }}D_{a}(\sqrt{ \sigma }\sigma ^{ab}D_{b}A^{t}) \\
+ & =\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{\sqrt{ 1+r^{2} }}{r}\partial _{r}\left( \frac{r}{\sqrt{ 1+r^{2} }} (1+r^{2})\partial _{r}A^{t}\right) \\
+ & =\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+(1+r^{2})\partial _{r}^{2}A^{t}+\frac{1+2r^{2}}{r}\partial _{r}A^{t}
+\end{align}
+$$
+
+
+$$\tag{.}
+\begin{align}
+(1+r^{2})f''+\frac{0+3r^{2}}{r}f'+\left( 0+\frac{0}{r^{2}}+\frac{2}{1+r^{2}} \right)f & =0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+(1+r^{2})\partial _{r}^{2}A^{t}+3r\partial _{r}A^{t}+\frac{2}{1+r^{2}}A^{t} \\
+(1+r^{2})\partial _{r}^{2}Q+\frac{1+2r^{2}}{r}\partial _{r}Q
+\end{align}
+$$
+
+let $\displaystyle{g=(1+r^{2})^{1/2}r^{-1/2}f}$, the differential equation satisfied by $\displaystyle{g}$ is
+
+$$\tag{.}
+\begin{align}
+(1+r^{2})\partial _{r}^{2}g+\frac{1+2r^{2}}{r}\partial _{r}g+\left( -\frac{3}{4}-\frac{1}{4r^{2}}+\frac{\frac{7}{2}}{1+r^{2}} \right)g & =0
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\beta=-\frac{1}{2} \\
+\alpha=\frac{1}{2}
+\end{align}
+$$
+
+let $\displaystyle{q=(1+r^{2})^{1/2}r^{-1/2}A^{t}}$
+
+$$\tag{.}
+\begin{align}
+-\Delta g+\left( \mu ^{2}-\frac{3}{4} \right)g+\left(-\frac{1}{4r^{2}}+\frac{\frac{7}{2}}{1+r^{2}}\right)g & =\frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right)
+\end{align}
+$$
+
+???
+
+
