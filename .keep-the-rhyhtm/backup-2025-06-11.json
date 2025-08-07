@@ -10502,6 +10502,248 @@
         "charCountStart": 40,
         "changes": [],
         "id": 349
+      },
+      {
+        "date": "2025-08-07",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 2028,
+        "charCountStart": 9032,
+        "changes": [
+          {
+            "timeKey": "08:30",
+            "w": 32,
+            "c": 159
+          },
+          {
+            "timeKey": "08:35",
+            "w": 40,
+            "c": 205
+          },
+          {
+            "timeKey": "08:40",
+            "w": -17,
+            "c": -150
+          },
+          {
+            "timeKey": "08:45",
+            "w": 0,
+            "c": 28
+          },
+          {
+            "timeKey": "08:50",
+            "w": 47,
+            "c": 179
+          },
+          {
+            "timeKey": "08:55",
+            "w": 49,
+            "c": 246
+          },
+          {
+            "timeKey": "09:05",
+            "w": 160,
+            "c": 650
+          },
+          {
+            "timeKey": "09:10",
+            "w": -27,
+            "c": -99
+          },
+          {
+            "timeKey": "09:15",
+            "w": -192,
+            "c": -849
+          },
+          {
+            "timeKey": "09:20",
+            "w": 15,
+            "c": 90
+          },
+          {
+            "timeKey": "09:25",
+            "w": 57,
+            "c": 151
+          },
+          {
+            "timeKey": "09:30",
+            "w": 221,
+            "c": 974
+          },
+          {
+            "timeKey": "09:35",
+            "w": 52,
+            "c": 180
+          },
+          {
+            "timeKey": "09:40",
+            "w": -33,
+            "c": -133
+          },
+          {
+            "timeKey": "09:45",
+            "w": -21,
+            "c": -94
+          },
+          {
+            "timeKey": "09:50",
+            "w": 56,
+            "c": 250
+          },
+          {
+            "timeKey": "09:55",
+            "w": -400,
+            "c": -1646
+          },
+          {
+            "timeKey": "10:00",
+            "w": 28,
+            "c": 134
+          },
+          {
+            "timeKey": "10:05",
+            "w": 60,
+            "c": 321
+          },
+          {
+            "timeKey": "10:10",
+            "w": 53,
+            "c": 105
+          },
+          {
+            "timeKey": "10:15",
+            "w": 156,
+            "c": 710
+          },
+          {
+            "timeKey": "10:20",
+            "w": 0,
+            "c": -8
+          },
+          {
+            "timeKey": "10:25",
+            "w": 60,
+            "c": 252
+          },
+          {
+            "timeKey": "10:35",
+            "w": 0,
+            "c": 5
+          },
+          {
+            "timeKey": "10:45",
+            "w": 151,
+            "c": 612
+          },
+          {
+            "timeKey": "10:55",
+            "w": -315,
+            "c": -1364
+          },
+          {
+            "timeKey": "11:00",
+            "w": -13,
+            "c": -34
+          },
+          {
+            "timeKey": "11:05",
+            "w": 147,
+            "c": 648
+          },
+          {
+            "timeKey": "11:10",
+            "w": -7,
+            "c": -39
+          },
+          {
+            "timeKey": "11:15",
+            "w": 48,
+            "c": 154
+          },
+          {
+            "timeKey": "11:20",
+            "w": -162,
+            "c": -676
+          },
+          {
+            "timeKey": "11:25",
+            "w": 8,
+            "c": 32
+          },
+          {
+            "timeKey": "11:55",
+            "w": 74,
+            "c": 728
+          },
+          {
+            "timeKey": "12:00",
+            "w": -74,
+            "c": -726
+          }
+        ],
+        "id": 351
+      },
+      {
+        "date": "2025-08-07",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1448,
+        "changes": [],
+        "id": 352
+      },
+      {
+        "date": "2025-08-07",
+        "filePath": "Articles/Proca in AdS3/verify equation.md",
+        "wordCountStart": 5167,
+        "charCountStart": 22402,
+        "changes": [
+          {
+            "timeKey": "10:45",
+            "w": -1,
+            "c": -2
+          }
+        ],
+        "id": 353
+      },
+      {
+        "date": "2025-08-07",
+        "filePath": "Articles/Proca in AdS3/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 354
+      },
+      {
+        "date": "2025-08-07",
+        "filePath": "Generalized symmetries (higher-form, non-invertible) and their quantum conservation laws.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "10:25",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 355
+      },
+      {
+        "date": "2025-08-07",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/introduction to fuzzy sphere regularization by Zhuwei.md",
+        "wordCountStart": 1205,
+        "charCountStart": 6624,
+        "changes": [
+          {
+            "timeKey": "10:45",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "10:50",
+            "w": 28,
+            "c": 129
+          }
+        ],
+        "id": 356
       }
     ],
     "daysWithCompletedGoal": [
