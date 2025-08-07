@@ -180,3 +180,15 @@ $$
 
 i have no idea how to do this. 
 
+$$\tag{.}
+\begin{align}
+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\sqrt{ 1+r^{2} }\partial _{r}\left( \frac{1}{\sqrt{ 1+r^{2} }}\partial _{r}((1+r^{2})A^{t}) \right) & =\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+(1+r^{2})\partial _{r}^{2}A^{t}+3r\partial _{r}A^{t}+\frac{2}{1+r^{2}}A^{t}
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\Delta A^{t} & =\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{r}{\sqrt{ 1+r^{2} }}\partial _{r}\left( \frac{(1+r^{2})^{3/2}}{r}\partial _{r}A^{t} \right) \\
+ & =\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+(1+r^{2})\partial _{r}^{2}A^{t}+\frac{-1+2r^{2}}{r}
+\end{align}
+$$
