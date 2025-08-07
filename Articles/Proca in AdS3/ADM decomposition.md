@@ -154,25 +154,10 @@ D_{a}(N\tilde{F}^{ab})-\frac{1}{N}\partial _{t}^{2}A^{b}-\mu ^{2}NA^{b} & =-\fra
 \end{align}
 $$
 
-1. 把上面的方程展开，和已经给出的结果对比看是不是正确的方程。
-2. 把$\displaystyle{A^{t}}$的方程解出来
-
+1. 把$\displaystyle{A^{t}}$的方程解出来
 
 $$\tag{.}
 \begin{align}
-\frac{1}{N^{2}}(-N^{2}A^{a}R^{b}_{a}+N^{2}D_{a}D^{a}A^{b}+r(1+r^{2})D_{r}A^{b}+2r(1+r^{2})D_{a}A^{a}\delta ^{b}_{r}+(1+r^{2})A^{r}\delta ^{b}_{r}) 
-\end{align}
-$$
-
-$$\tag{.}
-\begin{align}
-D_{a}D^{a}A^{b} & =g^{ac}D_{a}D_{c}A^{b} & =g^{ac}\partial _{a}(\partial _{c}A^{b}+\Gamma ^{b}_{~cd}A^{d})-g^{ac}\Gamma ^{d}_{~ac}(\partial_{d}A^{b}+\Gamma ^{b}_{~de}A^{e})+g^{ac}\Gamma ^{b}_{~ad}(\partial _{c}A^{d}+\Gamma ^{d}_{~ce}A^{e})
-\end{align}
-$$
-
-
-$$\tag{.}
-\begin{align}
-R_{ab} & =-\frac{1}{1+r^{2}}\delta _{a}^{r}\delta ^{r}_{b}-r^{2}\delta ^{\phi}_{a}\delta ^{\phi}_{b}
+-\frac{1}{N}(1+r^{2})^{1/2}\partial_{r}\left( \frac{1}{N}\partial _{r}(N^{2}A^{t}) \right)-\partial _{\phi}^{2}A^{t}+\mu ^{2}A^{t} & =
 \end{align}
 $$
