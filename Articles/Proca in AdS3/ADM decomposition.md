@@ -157,3 +157,36 @@ $$
 1. 把上面的方程展开，和已经给出的结果对比看是不是正确的方程。
 2. 把$\displaystyle{A^{t}}$的方程解出来
 
+
+$$\tag{.}
+\begin{align}
+\frac{1}{N^{2}}(-N^{2}A^{a}R^{b}_{a}+N^{2}D_{a}D^{a}A^{b}+r(1+r^{2})D_{r}A^{b}+2ND^{r}ND_{a}A^{a}+(1+r^{2})A^{r}\delta ^{b}_{r}) 
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\partial _{r}N & =\frac{r}{\sqrt{ 1+r^{2} }} \\
+\partial _{r}^{2}N & =\frac{1}{(1+r^{2})^{3/2}}
+\end{align}
+$$
+$$\tag{.}
+\begin{align}
+R^{b}_{~a}A^{a} & =g^{bc}R^{~~~d}_{dc~a}A^{a} \\
+ & =[D_{a},D^{b}]A^{a}=
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\Gamma ^{\rho}_{~\rho \rho} & =-\frac{\rho}{1+\rho ^{2}} \\
+\Gamma ^{\rho}_{~\theta \theta} & =-\rho (1+\rho ^{2}) \\
+\Gamma ^{\theta}_{~\rho \theta} & =\frac{1}{\rho}
+\end{align}
+$$

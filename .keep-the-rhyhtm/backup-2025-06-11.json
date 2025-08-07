@@ -10202,6 +10202,21 @@
             "timeKey": "19:10",
             "w": 9,
             "c": 37
+          },
+          {
+            "timeKey": "20:35",
+            "w": 5,
+            "c": 66
+          },
+          {
+            "timeKey": "20:45",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "21:00",
+            "w": 0,
+            "c": -1
           }
         ],
         "id": 328
@@ -10446,6 +10461,47 @@
           }
         ],
         "id": 338
+      },
+      {
+        "date": "2025-08-06",
+        "filePath": "Articles/Proca in AdS3/verify equation.md",
+        "wordCountStart": 5167,
+        "charCountStart": 22402,
+        "changes": [
+          {
+            "timeKey": "20:35",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "21:00",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 341
+      },
+      {
+        "date": "2025-08-06",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/introduction to fuzzy sphere regularization.md",
+        "wordCountStart": 1,
+        "charCountStart": 13,
+        "changes": [
+          {
+            "timeKey": "20:45",
+            "w": -1,
+            "c": -13
+          }
+        ],
+        "id": 342
+      },
+      {
+        "date": "2025-08-06",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/quantum chaos in gravity and field theory by Yiming Chen.md",
+        "wordCountStart": 3,
+        "charCountStart": 40,
+        "changes": [],
+        "id": 349
       }
     ],
     "daysWithCompletedGoal": [
