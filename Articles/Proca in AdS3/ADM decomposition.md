@@ -168,7 +168,14 @@ $$
 
 $$\tag{.}
 \begin{align}
-\frac{1}{N}\sigma ^{ab}D_{a}\left( \frac{1}{N}D_{b}(N^{2}A^{t}) \right) & =\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\sqrt{ 1+r^{2} }\partial _{r}\left( \frac{1}{\sqrt{ 1+r^{2} }}\partial _{r}((1+r^{2})A^{t}) \right) \\
- & =\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\partial _{r}^{2}((1+r^{2})A^{t})-\frac{r}{(1+r^{2})}
+\frac{1}{N}D_{a}\left( \frac{1}{N}D^{a}(N^{2}A^{t}) \right)-\mu ^{2}A^{t} & =-\frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right)
 \end{align}
 $$
+
+$$\tag{.}
+\begin{align}
+\frac{1}{N}\sigma ^{ab}D_{a}\left( \frac{1}{N}D_{b}(N^{2}A^{t}) \right) & =\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+(1+r^{2})\partial _{r}^{2}A^{t}+3r\partial _{r}A^{t}+\frac{2}{1+r^{2}}A^{t}
+\end{align}
+$$
+
+i have no idea how to do this. 
