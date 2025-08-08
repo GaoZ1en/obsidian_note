@@ -218,21 +218,13 @@ $$\tag{.}
 
 $$\tag{.}
 \begin{align}
-\omega[A^{\mu}_{0m\pm},{A^{\nu}_{0m\pm}}^{*}] & =\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\tilde{A}_{0m\pm}^{t}+\frac{2r^{2}}{1+r^{2}}\tilde{A}_{0m\pm}^{t}- \frac{i\omega r}{(1+r^{2})^{2}}A_{0m\pm}^{r} \right)\tilde{A}_{0m\pm}^{r} \\
- & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\tilde{A}_{0m\pm}^{*t}+\frac{2r^{2}}{1+r^{2}}\tilde{A}_{0m\pm}^{*t}+ \frac{i\omega r}{(1+r^{2})^{2}}\tilde{A}_{0m\pm} ^{*r}\right)\tilde{A}_{0m\pm}^{r} \\
- & +\int \mathrm{d}r\mathrm{d}\phi\left( imr\tilde{A}_{0m\pm}^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\tilde{A}_{0m\pm}^{\phi} \right)\tilde{A}_{0m\pm}^{\phi} \\
- & -\int \mathrm{d}r\mathrm{d}\phi\left( -imr\tilde{A}_{0m\pm}^{*t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\tilde{A}_{0m\pm}^{*\phi} \right)\tilde{A}_{0m\pm}^{\phi}
+\omega[A^{\mu}_{0m\pm},\delta _{2}A^{\nu}] & =\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}A^{t}_{0m\pm}+\frac{2r^{2}}{1+r^{2}}A^{t}_{0m\pm}+ \frac{r}{(1+r^{2})^{2}}\partial _{t}\delta _{1}A^{r} \right)\delta _{2}A^{r} \\
+ & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\delta_{2}A^{t}+\frac{2r^{2}}{1+r^{2}}\delta _{2}A^{t}+ \frac{r}{(1+r^{2})^{2}}\partial _{t}\delta _{2}A^{r} \right)\delta _{1}A^{r} \\
+ & +\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{\phi}\delta_{1} A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta_{1} A^{\phi} \right)\delta_{2} A^{\phi} \\
+ & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{\phi}\delta_{2} A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta_{2} A^{\phi} \right)\delta_{1} A^{\phi}
 \end{align}$$
 
 $$\tag{.}
 \begin{align}
-\omega[A^{\mu}_{0m\pm},{A^{\nu}_{0m\pm}}^{*}] & =-2\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\tilde{A}_{0m\pm}^{t}+\frac{2r^{2}}{1+r^{2}}\tilde{A}_{0m\pm}^{t}- \frac{i(\mu+|m\mp1|+1) r}{(1+r^{2})^{2}}A_{0m\pm}^{r} \right)\tilde{A}_{0m\pm}^{r} \\
- & +2\int \mathrm{d}r\mathrm{d}\phi\left( imr\tilde{A}_{0m\pm}^{t}\right)\tilde{A}_{0m\pm}^{\phi} \\
- & =\frac{-4\pi(m^{2}-\mu ^{2})i}{\mu+|m-1|+1}\int _{0}^{\infty}\mathrm{d}r r^{2|m-1|+1}(1+r^{2})^{-\mu-|m-1|-2} \\
- & =-\frac{2\pi(m^{2}-\mu ^{2})i}{\mu+|m-1|+1} \frac{\Gamma(\mu+1)\Gamma(|m-1|+1)}{\Gamma(\mu+|m-1|+2)}
-\end{align}$$
-
-$$\tag{.}
-\begin{align}
-(1+r^{2})(1+m(2+m+mr^{2})-r^{2}\mu ^{2})+r^{2}(1+\mu)|1+m|-(m+1)^{2}-r^{2}|m|
+\omega[A^{\mu}_{0m\pm},{A^{\nu}_{0m\pm}}^{*}] & =\frac{2\pi i(m^{2}-\mu ^{2})}{\mu+|m+1|+1} \frac{\Gamma(\mu+1)\Gamma(|m+1|+1)}{\Gamma(\mu+|m+1|+2)}
 \end{align}$$
