@@ -298,14 +298,6 @@ $$\tag{.}
  & +2\int \mathrm{d}r r\left( \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} -m_{1}^{2}\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right)
 \end{align}$$
 
-the first term is a total derivative.
-
-$$\tag{.}
-\begin{align}
-\frac{i\omega _{1}\Omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & = i\omega _{1}\int \mathrm{d}r\frac{r^{3}}{1+r^{2}}(\partial _{r}\tilde{A}^{\phi}_{1} \tilde{A}^{*\phi}_{2}-\partial _{r}\tilde{A}^{*\phi}_{2}\tilde{A}^{\phi}_{1}) \\
- & +2\int \mathrm{d}r r\left( \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} -m_{1}^{2}\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right)
-\end{align}$$
-
 I guess we have the following expression (at least for the case $\displaystyle{A^{\mu}_{1}=A^{\mu}_{2}}$)
 
 $$\tag{.}
@@ -412,12 +404,15 @@ $$\tag{.}
 
 ---
 
-$$\tag{.}
-\begin{align}
-\frac{2i}{4\pi} \frac{\mu+1}{\mu}
-\end{align}$$
+now we will review the calculation before
 
 $$\tag{.}
 \begin{align}
-\Omega[A_{1}^{\mu},A_{2}^{\nu}] & = i
+\frac{i\omega_{1}\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi \delta _{m_{1}m_{2}}e^{-i(\omega_{1}-\omega_{2})t}} & =\int \mathrm{d}r\frac{r}{1+r^{2}}\left( (1+r^{2})\partial _{r}\left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}^{r}_{1}+im_{1}\tilde{A}^{\phi}_{1} \right)+2r\left( \partial _{r}\tilde{A}_{1}^{r}+\frac{1}{r}\tilde{A}^{r}_{1}+im_{1}\tilde{A}^{\phi}_{1} \right)+ \frac{\omega_{1}^{2}}{1+r^{2}}\tilde{A}^{r}_{1} \right)\tilde{A}^{*r}_{2} \\
+ & +\int \mathrm{d}r \frac{r}{1+r^{2}}\left((1+r^{2})\partial _{r}^{2}\tilde{A}^{r}_{1}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}_{1}-\frac{1+r^{2}}{r^{2}}\tilde{A}^{r}_{1}+im_{1}(1+r^{2})\partial _{r}\tilde{A}^{\phi}_{1}+2\tilde{A}^{r}_{1}\right) \\
+ & +\int \mathrm{d}r\frac{r}{1+r^{2}}\left( (1+r^{2})\partial _{r}\left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{1}\tilde{A}^{*\phi}_{2} \right)+2r\left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{1}\tilde{A}^{*\phi}_{2} \right)+ \frac{\omega ^{2} _{1}}{1+r^{2}}A^{*r}_{2} \right)\tilde{A}^{r}_{1} \\
+ & +\int \mathrm{d}r\left( im_{1}r\left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}^{r}_{1} \right)+\frac{i\omega _{1}r^{3}}{1+r^{2}}\partial _{r}A_{1}^{\phi}\right)A_{2}^{*\phi} \\
+ & -\int \mathrm{d}r\left( im_{1}r\left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2} \right)+\frac{i\omega _{1}r^{3}}{1+r^{2}}\partial _{r}A_{2}^{*\phi} \right)A_{1}^{\phi} \\
+ & -2m_{1}^{2}\int \mathrm{d}rr\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}
 \end{align}$$
+
