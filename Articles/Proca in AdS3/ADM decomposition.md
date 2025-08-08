@@ -187,27 +187,29 @@ i have no idea how to do this.
 
 or we can study the symplectic form
 
-$$\tag{.}
+$$\tag{2.2}
 \begin{align}
-\omega & =\int \mathrm{d}^{2}x\sqrt{ \sigma } \frac{1}{N}(D^{b}(N^{2}\delta A^{t})+\partial _{t}\delta A^{b})\wedge \delta A_{b} \\
- & =\int \mathrm{d}^{2}x \sqrt{ \sigma } \frac{1}{N}\sigma _{ab}\left(\frac{1}{N}D^{a}(N^{2}\delta A^{t})+\partial _{t}\delta A^{a}\right)\wedge \delta A^{b} \\
- & =\int \mathrm{d}^{2}x \frac{r}{1+r^{2}} r^{2}\left( \frac{\sqrt{ 1+r^{2} }}{r^{2}}\partial _{\phi}(\delta A^{t})+\partial _{t}\delta A^{\phi} \right)\wedge \delta A^{\phi} \\
- & +\int \mathrm{d}^{2}x \frac{r}{1+r^{2}} \frac{1}{1+r^{2}}\left( (1+r^{2})^{3/2}\partial _{r}\delta A^{t}+2r(1+r^{2})^{1/2}\delta A^{t}+\partial _{t}\delta A^{r} \right)\wedge \delta A^{r} \\
- & =\int \mathrm{d}^{2}x
-\end{align}
-$$
+\omega & = \int \mathrm{d}^{2}x\left(r\partial _{r}\delta A^{t}+\frac{2r^{2}}{1+r^{2}}\delta A^{t}+\frac{r}{(1+r^{2})^{2}}\partial _{t}\delta A^{r}\right)\wedge \delta A^{r} \\
+ & +\int \mathrm{d}^{2}x\left( r\partial _{\phi}\delta A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta A^{\phi} \right)\wedge \delta A^{\phi}
+\end{align}$$
 
-
-$$\tag{.}
-\begin{align}
-S & =\int \mathrm{d}t\mathrm{d}^{2}x\sqrt{ \sigma }\left(-\frac{1}{4}N\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2N}\sigma ^{ab}\left( D_{a}(N^{2}A^{t})+\partial _{t}A_{a} \right)\left( D_{b}(N^{2}A^{t})+\partial _{t}A_{b}\right)-\frac{1}{2}\mu ^{2}N\sigma ^{ab}A_{a}A_{b}+\frac{1}{2N}\mu ^{2}(N^{2}A^{t})^{2}\right)
-\end{align}
-$$
+$$\tag{.}\begin{align}
+i\omega(1+r^{2})\partial _{r}\tilde{A}^{t}+2i\omega r\tilde{A}^{t}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\frac{m^{2}}{r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r}-im(1+r^{2})\partial _{r}\tilde{A}^{\phi}-\frac{2im(1+r^{2})}{r}\tilde{A}^{\phi} & =0 \\
+-\frac{\omega m}{r^{2}}\tilde{A}^{t}-\frac{im}{r^{2}}\partial _{r}\tilde{A}^{r}+\frac{im}{r^{3}}\tilde{A}^{r}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{\phi}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+(4-\mu ^{2})\tilde{A}^{\phi} & =0 \\
+-i\omega \tilde{A}^{t}+\partial _{r}\tilde{A}^{r}+im\tilde{A}^{\phi}+ \frac{1}{r}\tilde{A}^{r} & =0
+\end{align}$$
 
 $$\tag{.}
 \begin{align}
-\delta S & =\int \mathrm{d}t\int \mathrm{d}^{2}x\sqrt{ \sigma }\left(-N\tilde{F}^{ab}D_{a}\delta A_{b}+\frac{1}{N}\sigma ^{ab}(D_{a}(N^{2}A^{t})+\partial _{t}A_{a})(D_{b}(N^{2}\delta A^{t})+\partial _{t}\delta A_{b})-\mu ^{2}NA^{b}\delta A_{b}+\frac{1}{N}\mu ^{2}(N^{2}A^{t})(N^{2}\delta A^{t})\right) \\
- & =\int \mathrm{d}t\int \mathrm{d}^{2}x\sqrt{ \sigma }\left(D_{a}(N\tilde{F}^{ab})\delta A_{b}-\sigma ^{ab}D_{b}\left(\frac{1}{N}(D_{a}(N^{2}A^{t})+\partial _{t}A_{a})\right)N^{2}A^{t}-\frac{1}{N}\sigma ^{ab}(D_{a}(N^{2}\partial _{t}A^{t})+\partial _{t}^{2}A_{a})\delta A_{b}-\mu ^{2}NA^{b}\delta A_{b}+\frac{1}{N}\mu ^{2}(N^{2}A^{t})(N^{2}\delta A^{t})\right) \\
- & +\int \mathrm{d}^{2}x\sqrt{ \sigma } \frac{1}{N}\sigma ^{ab}(D_{a}(N^{2}A^{t})+\partial _{t}A_{a})\delta A_{b}\Big|^{t_{f}}_{t_{i}}
-\end{align}
-$$
+\tilde{A}^{t} & =r(1+r^{2})^{-(\mu+3)/2} \\
+\tilde{A}^{r} & =-i(1+r^{2})^{-(\mu+1)/2} \\
+\tilde{A}^{\phi} & =r^{-1}(1+r^{2})^{-(\mu+1)/2}
+\end{align}$$
+
+with
+
+$$\tag{.}
+\begin{align}
+\omega & =\mu+1, & m=1
+\end{align}$$
+

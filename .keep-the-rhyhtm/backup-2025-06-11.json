@@ -10946,6 +10946,50 @@
         "charCountStart": 2966,
         "changes": [],
         "id": 368
+      },
+      {
+        "date": "2025-08-08",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 2281,
+        "charCountStart": 10026,
+        "changes": [
+          {
+            "timeKey": "08:35",
+            "w": 40,
+            "c": 212
+          },
+          {
+            "timeKey": "08:45",
+            "w": 125,
+            "c": 540
+          },
+          {
+            "timeKey": "08:50",
+            "w": 110,
+            "c": 459
+          },
+          {
+            "timeKey": "08:55",
+            "w": 198,
+            "c": 761
+          },
+          {
+            "timeKey": "09:00",
+            "w": 45,
+            "c": 208
+          },
+          {
+            "timeKey": "09:05",
+            "w": -10,
+            "c": 26
+          },
+          {
+            "timeKey": "09:10",
+            "w": -465,
+            "c": -1972
+          }
+        ],
+        "id": 369
       }
     ],
     "daysWithCompletedGoal": [
