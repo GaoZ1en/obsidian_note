@@ -87,6 +87,7 @@ $$\tag{1.7}
 S & =\int \mathrm{d}t\mathrm{d}^{2}x\sqrt{ \sigma }\left(-\frac{1}{4}N\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2N}\sigma ^{ab}\left( D_{a}(N^{2}A^{t})+\partial _{t}A_{a} \right)\left( D_{b}(N^{2}A^{t})+\partial _{t}A_{b}\right)-\frac{1}{2}\mu ^{2}N\sigma ^{ab}A_{a}A_{b}+\frac{1}{2N}\mu ^{2}(N^{2}A^{t})^{2}\right)
 \end{align}
 $$
+
 ---
 
 then we will derive the eom and symplectic potential for the action (1.7). take a variation
@@ -100,6 +101,8 @@ $$\tag{2.1}
 $$
 
 we have
+
+
 
 $$\tag{2.2}
 \begin{align}
@@ -179,3 +182,32 @@ $$\tag{.}
 $$
 
 i have no idea how to do this. 
+
+---
+
+or we can study the symplectic form
+
+$$\tag{.}
+\begin{align}
+\omega & =\int \mathrm{d}^{2}x\sqrt{ \sigma } \frac{1}{N}(D^{b}(N^{2}\delta A^{t})+\partial _{t}\delta A^{b})\wedge \delta A_{b} \\
+ & =\int \mathrm{d}^{2}x \sqrt{ \sigma } \frac{1}{N}\sigma _{ab}\left(\frac{1}{N}D^{a}(N^{2}\delta A^{t})+\partial _{t}\delta A^{a}\right)\wedge \delta A^{b} \\
+ & =\int \mathrm{d}^{2}x \frac{r}{1+r^{2}} r^{2}\left( \frac{\sqrt{ 1+r^{2} }}{r^{2}}\partial _{\phi}(\delta A^{t})+\partial _{t}\delta A^{\phi} \right)\wedge \delta A^{\phi} \\
+ & +\int \mathrm{d}^{2}x \frac{r}{1+r^{2}} \frac{1}{1+r^{2}}\left( (1+r^{2})^{3/2}\partial _{r}\delta A^{t}+2r(1+r^{2})^{1/2}\delta A^{t}+\partial _{t}\delta A^{r} \right)\wedge \delta A^{r} \\
+ & =\int \mathrm{d}^{2}x
+\end{align}
+$$
+
+
+$$\tag{.}
+\begin{align}
+S & =\int \mathrm{d}t\mathrm{d}^{2}x\sqrt{ \sigma }\left(-\frac{1}{4}N\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2N}\sigma ^{ab}\left( D_{a}(N^{2}A^{t})+\partial _{t}A_{a} \right)\left( D_{b}(N^{2}A^{t})+\partial _{t}A_{b}\right)-\frac{1}{2}\mu ^{2}N\sigma ^{ab}A_{a}A_{b}+\frac{1}{2N}\mu ^{2}(N^{2}A^{t})^{2}\right)
+\end{align}
+$$
+
+$$\tag{.}
+\begin{align}
+\delta S & =\int \mathrm{d}t\int \mathrm{d}^{2}x\sqrt{ \sigma }\left(-N\tilde{F}^{ab}D_{a}\delta A_{b}+\frac{1}{N}\sigma ^{ab}(D_{a}(N^{2}A^{t})+\partial _{t}A_{a})(D_{b}(N^{2}\delta A^{t})+\partial _{t}\delta A_{b})-\mu ^{2}NA^{b}\delta A_{b}+\frac{1}{N}\mu ^{2}(N^{2}A^{t})(N^{2}\delta A^{t})\right) \\
+ & =\int \mathrm{d}t\int \mathrm{d}^{2}x\sqrt{ \sigma }\left(D_{a}(N\tilde{F}^{ab})\delta A_{b}-\sigma ^{ab}D_{b}\left(\frac{1}{N}(D_{a}(N^{2}A^{t})+\partial _{t}A_{a})\right)N^{2}A^{t}-\frac{1}{N}\sigma ^{ab}(D_{a}(N^{2}\partial _{t}A^{t})+\partial _{t}^{2}A_{a})\delta A_{b}-\mu ^{2}NA^{b}\delta A_{b}+\frac{1}{N}\mu ^{2}(N^{2}A^{t})(N^{2}\delta A^{t})\right) \\
+ & +\int \mathrm{d}^{2}x\sqrt{ \sigma } \frac{1}{N}\sigma ^{ab}(D_{a}(N^{2}A^{t})+\partial _{t}A_{a})\delta A_{b}\Big|^{t_{f}}_{t_{i}}
+\end{align}
+$$
