@@ -102,8 +102,6 @@ $$
 
 we have
 
-
-
 $$\tag{2.2}
 \begin{align}
 E_{t} & =N^{3}\left(-\frac{1}{N}D_{a}\left( \frac{1}{N}D^{a}(N^{2}A^{t}) \right)+\mu ^{2}A^{t}-\frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right)\right) \\
@@ -363,7 +361,6 @@ $$\tag{.}
 \int ^{1}_{-1}\mathrm{d}x(1-x)^{\alpha}(1+x)^{\beta}P_{m}^{(\alpha,\beta)}P_{n}^{(\alpha,\beta)}(x)\mathrm{d}x & =\frac{2^{\alpha+\beta+1}}{2n+\alpha+\beta+1} \frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{\Gamma(n+\alpha+\beta+1)\Gamma(n+1)}\delta _{n,m}
 \end{align}$$
 
-
 this methods naturally different values of $\displaystyle{n}$ gives 0, and only the $\displaystyle{m=0}$ mode has mixing behavior. 
 
 ---
@@ -372,24 +369,54 @@ if we take the following choice of solution
 
 $$\tag{.}
 \begin{align}
-A_{+}^{t}=A^{\phi} & =0 \\
-A_{+}^{r} & =r^{-1}(1+r^{2})^{-\mu/2}{}_{2}F_{1}\left( -n-1,n+\mu+1;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i(2n+\mu+2)t} \\
- & =r^{-1}(1+r^{2})^{-\mu/2} P_{n+1}^{(\mu,-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+\mu+2)t}
+A_{+}^{t}=A_{+}^{\phi} & =0 \\
+A_{+}^{r} & =r^{-1}(1+r^{2})^{-\mu/2} P_{n+1}^{(\mu,-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+\mu+2)t}
 \end{align}$$
+
+and
+
+$$\tag{.}
+\begin{align}
+A_{-}^{t}=A_{-}^{r} & =0 \\
+A_{-}^{\phi} & =(1+r^{2})^{-1-\mu/2}P_{n}^{(\alpha,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+\mu+2)t}
+\end{align}$$
+
+insert them into the symplectic form
+
+$$\tag{.}
+\begin{align}
+\frac{2n+\mu+2}{2\mu ^{2}}\frac{i\Omega[A_{n0+}^{\mu},A_{n0-}^{\nu}]}{2\pi \delta _{\omega_{1}\omega_{2}}} & = \int \mathrm{d}r r^{-1}(1+r^{2})^{-\mu-1}\left[ P_{n+1}^{(\mu,-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} =\mathcal{I}_{+}
+\end{align}$$
+
+let $\displaystyle{\alpha=\mu},\beta=-1$
+
+$$\tag{.}
+\begin{align}
+\mathcal{I}_{+}=\int _{0}^{\infty} \mathrm{d}r r^{2\beta+1}(1+r^{2})^{-(\alpha+\beta+2)}\left[P^{(\alpha,\beta)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2}
+\end{align}$$
+
+then
+
+$$\tag{.}
+\begin{align}
+\mathcal{I}_{+} & =2^{-\alpha-\beta}\int ^{1}_{-1} \mathrm{d}x \left( 1-x \right)^{\alpha}\left( 1+x \right)^{\beta}\left[ P^{(\alpha,\beta)}_{n+1}\left( x \right) \right]^{2} \\
+ & =\frac{2\Gamma(n+\alpha+2)\Gamma(n+\beta+2)}{(2n+\alpha+\beta+2)\Gamma(n+\alpha+\beta+2)(n+1)!}
+\end{align}$$
+
+and
+
+$$\tag{.}
+\begin{align}
+\frac{i(2n+\mu+1)\Omega[A_{n 0+}^{\mu},A_{n 0\pm}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & = 0
+\end{align}$$
+
+---
 
 
 $$\tag{.}
 \begin{align}
-A^{t}=A^{r} & =0 \\
-A^{\phi} & =(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( -n_{-},n_{-}+\mu+2;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i(2n_{\phi}+\mu+2)t}
-\end{align}$$
-
-$$\tag{.}
-\begin{align}
-{}_{2}F_{1}(-n_{\phi})
-\end{align}$$
-
-$$\tag{.}
-\begin{align}
-P^{(\alpha,\beta}_{n}(x) & \propto {}_{2}F_{1}\left( -n,n+\alpha+\beta+1;\alpha+1; \frac{1-x}{2} \right)
+\frac{2 \mu}{\mu+1}\omega[\delta _{1}A^{\mu},\delta _{2}A^{\nu}] & =\int \mathrm{d}r\left( r\partial _{r}(r(1+r^{2})^{-(\mu+3)/2})+\frac{2r^{2}}{1+r^{2}}r(1+r^{2})^{-(\mu+3)/2}+ \frac{(\mu+2)r}{(1+r^{2})^{2}}(1+r^{2})^{-(\mu+1)/2} \right)i(1+r^{2})^{-(\mu+1)/2} \\
+ & +\int \mathrm{d}r\left( r\partial _{r}r(1+r^{2})^{-(\mu+3)/2}+\frac{2r^{2}}{1+r^{2}}r(1+r^{2})^{-(\mu+3)/2}+ \frac{(\mu+2)r}{(1+r^{2})^{2}}(1+r^{2})^{-(\mu+1)/2} \right)i(1+r^{2})^{-(\mu+1)/2} \\
+ & +\int \mathrm{d}r\left( ir^{2}(1+r^{2})^{-(\mu+3)/2}+\frac{r^{3}}{1+r^{2}}\partial _{r}(r^{-1}(1+r^{2})^{-(\mu+1)/2}) \right)r^{-1}(1+r^{2})^{-(\mu+1)/2} \\
+ & -\int \mathrm{d}r\left( -ir(1+r^{2})^{}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta_{2} A^{\phi} \right)r^{-1}(1+r^{2})^{-(\mu+1)/2}
 \end{align}$$
