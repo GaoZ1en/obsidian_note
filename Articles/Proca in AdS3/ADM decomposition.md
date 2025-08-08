@@ -412,11 +412,12 @@ $$\tag{.}
 
 ---
 
+$$\tag{.}
+\begin{align}
+\frac{2i}{4\pi} \frac{\mu+1}{\mu}
+\end{align}$$
 
 $$\tag{.}
 \begin{align}
-\frac{2 \mu}{\mu+1}\omega[\delta _{1}A^{\mu},\delta _{2}A^{\nu}] & =\int \mathrm{d}r\left( r\partial _{r}(r(1+r^{2})^{-(\mu+3)/2})+\frac{2r^{2}}{1+r^{2}}r(1+r^{2})^{-(\mu+3)/2}+ \frac{(\mu+2)r}{(1+r^{2})^{2}}(1+r^{2})^{-(\mu+1)/2} \right)i(1+r^{2})^{-(\mu+1)/2} \\
- & +\int \mathrm{d}r\left( r\partial _{r}r(1+r^{2})^{-(\mu+3)/2}+\frac{2r^{2}}{1+r^{2}}r(1+r^{2})^{-(\mu+3)/2}+ \frac{(\mu+2)r}{(1+r^{2})^{2}}(1+r^{2})^{-(\mu+1)/2} \right)i(1+r^{2})^{-(\mu+1)/2} \\
- & +\int \mathrm{d}r\left( ir^{2}(1+r^{2})^{-(\mu+3)/2}+\frac{r^{3}}{1+r^{2}}\partial _{r}(r^{-1}(1+r^{2})^{-(\mu+1)/2}) \right)r^{-1}(1+r^{2})^{-(\mu+1)/2} \\
- & -\int \mathrm{d}r\left( -ir(1+r^{2})^{}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta_{2} A^{\phi} \right)r^{-1}(1+r^{2})^{-(\mu+1)/2}
+\Omega[A_{1}^{\mu},A_{2}^{\nu}] & = i
 \end{align}$$
