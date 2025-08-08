@@ -289,8 +289,45 @@ $$\tag{.}
  & +2\int \mathrm{d}r r\left( \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} -m_{1}^{2}\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right)
 \end{align}$$
 
+I guess we have the following expression (at least for the case $\displaystyle{A^{\mu}_{1}=A^{\mu}_{2}}$)
+
 $$\tag{.}
 \begin{align}
 \frac{i\omega _{1}\Omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & = 2\int \mathrm{d}r r\left( \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} -m_{1}^{2}\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right)
 \end{align}$$
+
+---
+
+$$\tag{.}
+\begin{align}
+A^{r}_{nm\pm} & =\mp ir^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+A^{\phi}_{nm\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\mp 1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+\frac{2n+|m\mp 1|+\mu+1}{\mu ^{2}-m^{2}}\frac{i\Omega[A_{nm\pm}^{\mu},A_{nm\pm}^{\nu}]}{4\pi} & = \int \mathrm{d}r r^{2|m\mp 1|+1}(1+r^{2})^{-(\mu+|m\mp 1|+2)}\left[P^{(\mu,|m\mp 1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} \\
+ & =
+\end{align}$$
+
+using the following orthonormality relation for Jaboci polynomials
+
+$$\tag{.}
+\begin{align}
+\int ^{1}_{-1}\mathrm{d}x(1-x)^{\alpha}(1+x)^{\beta}P_{m}^{(\alpha,\beta)}P_{n}^{(\alpha,\beta)}(x)\mathrm{d}x & =\frac{2^{\alpha+\beta+1}}{2n+\alpha+\beta+1} \frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{\Gamma(n+\alpha+\beta+1)\Gamma(n+1)}\delta _{n,m}
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+\int _{0}^{\infty} \mathrm{d}r r^{2\beta+1}(1+r^{2})^{-(\alpha+\beta+2)}\left[P^{(\alpha,\beta}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2}
+\end{align}$$
+
+let $\displaystyle{r=\tan \rho}$, $\displaystyle{\mathrm{d}r=\frac{\mathrm{d}\rho}{\cos ^{2}\rho}}$
+
+$$\tag{.}
+\begin{align}
+\int _{0}^{\pi/2} \mathrm{d}\rho (\cos ^{2}\rho)^{\alpha+1/2}(\sin ^{2}\rho)^{\beta+1/2}\left[ P^{(\alpha,\beta)}_{n}\left( \sin ^{2}\rho-\cos ^{2}\rho \right) \right]^{2}
+\end{align}$$
+
+let $\displaystyle{z=\cos ^{2}\rho}$, $\displaystyle{\mathrm{d}z=-2\sin \rho \cos \rho \mathrm{d}\rho}$ $\displaystyle{\mathrm{d}\rho=-2 \frac{\mathrm{d}z}{\sin r}}$
 

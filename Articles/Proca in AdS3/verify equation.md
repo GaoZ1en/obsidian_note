@@ -1,4 +1,4 @@
-J$$\tag{.}
+$$\tag{.}
 \begin{align}
 \nabla _{\mu}\nabla ^{\mu}A^{\nu}-\nabla _{\mu}\nabla ^{\nu}A^{\mu} & =\mu ^{2}A^{\nu}
 \end{align}
