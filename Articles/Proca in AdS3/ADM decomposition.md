@@ -291,6 +291,6 @@ $$\tag{.}
 
 $$\tag{.}
 \begin{align}
-(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\frac{1}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r} & =\left( \mu ^{2}+\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r}_{1}+\frac{2im}{r}\tilde{A}^{\phi} \\
-\frac{2im}{r^{3}}\tilde{A}^{r}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =0 
+\frac{i\omega _{1}\Omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & = 2\int \mathrm{d}r r\left( \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} -m_{1}^{2}\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right)
 \end{align}$$
+
