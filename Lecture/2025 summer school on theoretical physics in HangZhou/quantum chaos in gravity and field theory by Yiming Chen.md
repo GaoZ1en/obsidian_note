@@ -55,3 +55,18 @@ what are the saddles?
 
 1. thermal AdS, with metric $\displaystyle{\mathrm{d}s^{2}=(1+r^{2})\mathrm{d}\tau ^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\Omega _{d-1}^{2}}$, where $\displaystyle{\tau=\tau+\beta}$. the partition function can be well approximated by $\displaystyle{Z_{\text{ bulk-grav }}\approx e^{-\beta E_{0}}Z_{\text{ 1-loop }}}$, where $\displaystyle{E_{0}}$ is somewhat Casimir energy, and 1-loop correction describes particles propagating in the background metric $\displaystyle{g_{\mu \nu }}$.
 2. Schwarzschild-AdS, with metric $\displaystyle{\mathrm{d}s^{2}=f(r)\mathrm{d}\tau ^{2}+\frac{\mathrm{d}r^{2}}{f(r)}+r^{2}\mathrm{d}\Omega ^{2}}$, with $\displaystyle{f(r)=1+r^{2}-\frac{\mu}{r^{D-3}}}$. 
+
+define the thermal field double state as
+
+$$\tag{.}
+\begin{align}
+\ket{\mathrm{TFD}} & =\sum _{n} e^{-\beta E_{n}/2}\ket{n}_{L}\otimes  \ket{n} _{R}
+\end{align}$$
+
+thus the partition function can be expressed as
+
+$$\tag{.}
+\begin{align}
+Z[\beta]=\mathrm{Tr}e^{-\beta H} & = \braket{ \mathrm{TFD}|\mathrm{TFD} } 
+\end{align}$$
+

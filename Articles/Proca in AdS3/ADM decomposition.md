@@ -230,6 +230,10 @@ $$\tag{.}
 \omega[A^{\mu}_{0m\pm},{A^{\nu}_{0m\pm}}^{*}] & =\frac{2\pi i(m^{2}-\mu ^{2})}{\mu+|m+1|+1} \frac{\Gamma(\mu+1)\Gamma(|m+1|+1)}{\Gamma(\mu+|m+1|+2)}
 \end{align}$$
 
+---
+
+using eom and constraint equations to cancel the independence of $\displaystyle{A^{t}}$.
+
 $$\tag{.}
 \begin{align}
 \frac{\omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}e^{-i(\omega_{1}-\omega_{2})t}} & =\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\left( \frac{1}{i\omega _{1}}\left( \partial _{r}\tilde{A}_{1}^{r}+\frac{1}{r}\tilde{A}_{1}^{r}+im_{1}\tilde{A}^{\phi}_{1} \right) \right)+\frac{2r^{2}}{1+r^{2}} \frac{1}{i\omega}\left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}^{r}+im_{1}\tilde{A}^{\phi}_{1} \right)- \frac{i\omega _{1}r}{(1+r^{2})^{2}}\tilde{A}^{r}_{1}\right)\tilde{A}^{*r}_{2} \\
@@ -237,6 +241,8 @@ $$\tag{.}
  & +\int \mathrm{d}r\mathrm{d}\phi\left( im_{1}r \frac{1}{i\omega _{1}}\left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}_{1}^{r}+im_{1}\tilde{A}^{\phi}_{1} \right)+\frac{r^{3}}{1+r^{2}}\partial _{r}\tilde{A}^{\phi}_{1} \right)\tilde{A}^{*\phi}_{2} \\
  & -\int \mathrm{d}r\mathrm{d}\phi\left( im_{2}r \frac{1}{i\omega}\left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{*\phi}_{2} \right)+\frac{r^{3}}{1+r^{2}}\partial _{r}\tilde{A}^{*\phi}_{2} \right)\tilde{A}^{\phi}_{1}
 \end{align}$$
+
+here we use
 
 $$\tag{.}
 \begin{align}
@@ -252,6 +258,8 @@ $$\tag{.}
  & -\int \mathrm{d}rr\left( im_{2} \left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{*\phi}_{2} \right)+\frac{i\omega _{1}r^{2}}{1+r^{2}}\partial _{r}\tilde{A}^{*\phi}_{2} \right)\tilde{A}^{\phi}_{1}
 \end{align}$$
 
+expand the derivatives
+
 $$\tag{.}
 \begin{align}
 \frac{i\omega _{1}\Omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =\int \mathrm{d}r\frac{r}{1+r^{2}}\left( (1+r^{2})\partial _{r}^{2}\tilde{A}^{r}_{1}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}_{1}+\tilde{A}^{r}_{1}-\frac{1}{r^{2}}\tilde{A}^{r}_{1}+ \frac{\omega ^{2} _{1}}{1+r^{2}}\tilde{A}^{r}_{1}+im_{1}(1+r^{2})\partial _{r}\tilde{A}^{\phi}_{1}+2im_{1}r\tilde{A}^{\phi}_{1}\right)\tilde{A}^{*r}_{2} \\
@@ -259,6 +267,15 @@ $$\tag{.}
  & +\int \mathrm{d}rr\left( im_{1} \left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}_{1}^{r}+im_{1}\tilde{A}^{\phi}_{1} \right)+\frac{i\omega _{1}r^{2}}{1+r^{2}}\partial _{r}\tilde{A}^{\phi}_{1} \right)\tilde{A}^{*\phi}_{2} \\
  & -\int \mathrm{d}rr\left( im_{2} \left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{*\phi}_{2} \right)+\frac{i\omega _{1}r^{2}}{1+r^{2}}\partial _{r}\tilde{A}^{*\phi}_{2} \right)\tilde{A}^{\phi}_{1}
 \end{align}$$
+
+use the eom for $\displaystyle{\tilde{A}^{r}}$ and $\displaystyle{\tilde{A}^{\phi}}$
+
+$$\tag{.}
+\begin{align}
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\mu ^{2}-\frac{m^{2}+1}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r}-\frac{2im}{r}\tilde{A}^{\phi} & =0
+\end{align}$$
+
+we have
 
 $$\tag{.}
 \begin{align}
@@ -283,6 +300,8 @@ $$\tag{.}
  & +2\int \mathrm{d}r r\left( \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} -m_{1}^{2}\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right)
 \end{align}$$
 
+the first term is a total derivative.
+
 $$\tag{.}
 \begin{align}
 \frac{i\omega _{1}\Omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & = i\omega _{1}\int \mathrm{d}r\frac{r^{3}}{1+r^{2}}(\partial _{r}\tilde{A}^{\phi}_{1} \tilde{A}^{*\phi}_{2}-\partial _{r}\tilde{A}^{*\phi}_{2}\tilde{A}^{\phi}_{1}) \\
@@ -306,16 +325,10 @@ A^{\phi}_{nm\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\
 
 $$\tag{.}
 \begin{align}
-\frac{2n+|m\mp 1|+\mu+1}{\mu ^{2}-m^{2}}\frac{i\Omega[A_{nm\pm}^{\mu},A_{nm\pm}^{\nu}]}{4\pi} & = \int \mathrm{d}r r^{2|m\mp 1|+1}(1+r^{2})^{-(\mu+|m\mp 1|+2)}\left[P^{(\mu,|m\mp 1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} \\
- & =
+\frac{2n+|m\mp 1|+\mu+1}{\mu ^{2}-m^{2}}\frac{i\Omega[A_{nm\pm}^{\mu},A_{nm\pm}^{\nu}]}{4\pi} & = \int \mathrm{d}r r^{2|m\mp 1|+1}(1+r^{2})^{-(\mu+|m\mp 1|+2)}\left[P^{(\mu,|m\mp 1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2}
 \end{align}$$
 
-using the following orthonormality relation for Jaboci polynomials
-
-$$\tag{.}
-\begin{align}
-\int ^{1}_{-1}\mathrm{d}x(1-x)^{\alpha}(1+x)^{\beta}P_{m}^{(\alpha,\beta)}P_{n}^{(\alpha,\beta)}(x)\mathrm{d}x & =\frac{2^{\alpha+\beta+1}}{2n+\alpha+\beta+1} \frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{\Gamma(n+\alpha+\beta+1)\Gamma(n+1)}\delta _{n,m}
-\end{align}$$
+let $\displaystyle{\alpha=\mu},\beta=|m\mp 1|$
 
 $$\tag{.}
 \begin{align}
@@ -329,5 +342,54 @@ $$\tag{.}
 \int _{0}^{\pi/2} \mathrm{d}\rho (\cos ^{2}\rho)^{\alpha+1/2}(\sin ^{2}\rho)^{\beta+1/2}\left[ P^{(\alpha,\beta)}_{n}\left( \sin ^{2}\rho-\cos ^{2}\rho \right) \right]^{2}
 \end{align}$$
 
-let $\displaystyle{z=\cos ^{2}\rho}$, $\displaystyle{\mathrm{d}z=-2\sin \rho \cos \rho \mathrm{d}\rho}$ $\displaystyle{\mathrm{d}\rho=-2 \frac{\mathrm{d}z}{\sin r}}$
+let $\displaystyle{z=\cos ^{2}\rho}$, $\displaystyle{\mathrm{d}\rho=-2 \frac{\mathrm{d}z}{\sin \rho \cos \rho}}$
 
+$$\tag{.}
+\begin{align}
+2\int ^{1}_{0} \mathrm{d}z z^{\alpha}(1-z)^{\beta}\left[ P^{(\alpha,\beta)}_{n}\left( 1-2z \right) \right]^{2}
+\end{align}$$
+
+let $\displaystyle{x=1-2z}$, $\displaystyle{\mathrm{d}z=-\frac{1}{2}\mathrm{d}x}$
+
+$$\tag{.}
+\begin{align}
+2^{-\alpha-\beta}\int ^{1}_{-1} \mathrm{d}x \left( 1-x \right)^{\alpha}\left( 1+x \right)^{\beta}\left[ P^{(\alpha,\beta)}_{n}\left( x \right) \right]^{2}=\frac{2\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{(2n+\alpha+\beta+1)\Gamma(n+\alpha+\beta+1)n!}
+\end{align}$$
+
+here we use the orthonormality relation for Jaboci polynomials
+
+$$\tag{.}
+\begin{align}
+\int ^{1}_{-1}\mathrm{d}x(1-x)^{\alpha}(1+x)^{\beta}P_{m}^{(\alpha,\beta)}P_{n}^{(\alpha,\beta)}(x)\mathrm{d}x & =\frac{2^{\alpha+\beta+1}}{2n+\alpha+\beta+1} \frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{\Gamma(n+\alpha+\beta+1)\Gamma(n+1)}\delta _{n,m}
+\end{align}$$
+
+
+this methods naturally different values of $\displaystyle{n}$ gives 0, and only the $\displaystyle{m=0}$ mode has mixing behavior. 
+
+---
+
+if we take the following choice of solution
+
+$$\tag{.}
+\begin{align}
+A_{+}^{t}=A^{\phi} & =0 \\
+A_{+}^{r} & =r^{-1}(1+r^{2})^{-\mu/2}{}_{2}F_{1}\left( -n-1,n+\mu+1;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i(2n+\mu+2)t} \\
+ & =r^{-1}(1+r^{2})^{-\mu/2} P_{n+1}^{(\mu,-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+\mu+2)t}
+\end{align}$$
+
+
+$$\tag{.}
+\begin{align}
+A^{t}=A^{r} & =0 \\
+A^{\phi} & =(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( -n_{-},n_{-}+\mu+2;1+\mu; \frac{1}{1+r^{2}} \right)e^{-i(2n_{\phi}+\mu+2)t}
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+{}_{2}F_{1}(-n_{\phi})
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+P^{(\alpha,\beta}_{n}(x) & \propto {}_{2}F_{1}\left( -n,n+\alpha+\beta+1;\alpha+1; \frac{1-x}{2} \right)
+\end{align}$$
