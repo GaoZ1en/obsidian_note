@@ -193,23 +193,33 @@ $$\tag{2.2}
  & +\int \mathrm{d}^{2}x\left( r\partial _{\phi}\delta A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta A^{\phi} \right)\wedge \delta A^{\phi}
 \end{align}$$
 
-$$\tag{.}\begin{align}
-i\omega(1+r^{2})\partial _{r}\tilde{A}^{t}+2i\omega r\tilde{A}^{t}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\frac{m^{2}}{r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r}-im(1+r^{2})\partial _{r}\tilde{A}^{\phi}-\frac{2im(1+r^{2})}{r}\tilde{A}^{\phi} & =0 \\
--\frac{\omega m}{r^{2}}\tilde{A}^{t}-\frac{im}{r^{2}}\partial _{r}\tilde{A}^{r}+\frac{im}{r^{3}}\tilde{A}^{r}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{\phi}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+(4-\mu ^{2})\tilde{A}^{\phi} & =0 \\
--i\omega \tilde{A}^{t}+\partial _{r}\tilde{A}^{r}+im\tilde{A}^{\phi}+ \frac{1}{r}\tilde{A}^{r} & =0
+now we will insert the following solution into the symplectic form
+
+$$\tag{.}
+\begin{align}
+A_{0m\pm}^{t} & = \frac{1}{\mu+1+|m\mp 1|}\left[((\pm\mu+m)r^{2}+(\mp|m\mp 1|+m\mp 1))r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}\right]e^{-i(\mu+1+|m\mp 1|)t}e^{im\phi} \\
+A^{r}_{0m\pm} & =\mp ir^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}e^{-i(\mu+1+|m\mp 1|)t}e^{im\phi} \\
+A^{\phi}_{0m\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}e^{-i(\mu+1+|m\mp 1|)t}e^{im\phi} \\
+A^{*t}_{0m\pm} & = \frac{1}{\mu+1+|m\mp 1|}\left[((\pm\mu+m)r^{2}+(\mp|m\mp 1|+m\mp 1))r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}\right]e^{i(\mu+1+|m\mp 1|)t}e^{-im\phi} \\
+A^{*r}_{0m\pm} & =\pm ir^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}e^{i(\mu+1+|m\mp 1|)t}e^{-im\phi} \\
+A^{*\phi}_{0m\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}e^{i(\mu+1+|m\mp 1|)t}e^{-im\phi} \\
+\tilde{}=\tilde{A}^{t}_{0m\pm} & = \frac{1}{\mu+1+|m\mp 1|}\left[((\pm\mu+m)r^{2}+(\mp|m\mp 1|+m\mp 1))r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}\right] \\
+\tilde{A}^{r}_{0m\pm} & =\mp ir^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2} \\
+\tilde{A}^{\phi}_{0m\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}
 \end{align}$$
 
 $$\tag{.}
 \begin{align}
-\tilde{A}^{t} & =r(1+r^{2})^{-(\mu+3)/2} \\
-\tilde{A}^{r} & =-i(1+r^{2})^{-(\mu+1)/2} \\
-\tilde{A}^{\phi} & =r^{-1}(1+r^{2})^{-(\mu+1)/2}
+\omega[\delta _{1}A^{\mu},\delta _{2}A^{\nu}] & =\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\delta_{1}A^{t}+\frac{2r^{2}}{1+r^{2}}\delta _{1}A^{t}+ \frac{r}{(1+r^{2})^{2}}\partial _{t}\delta _{1}A^{r} \right)\delta _{2}A^{r} \\
+ & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\delta_{2}A^{t}+\frac{2r^{2}}{1+r^{2}}\delta _{2}A^{t}+ \frac{r}{(1+r^{2})^{2}}\partial _{t}\delta _{2}A^{r} \right)\delta _{1}A^{r} \\
+ & +\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{\phi}\delta_{1} A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta_{1} A^{\phi} \right)\delta_{2} A^{\phi} \\
+ & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{\phi}\delta_{2} A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta_{2} A^{\phi} \right)\delta_{1} A^{\phi}
 \end{align}$$
-
-with
 
 $$\tag{.}
 \begin{align}
-\omega & =\mu+1, & m=1
+\omega[A^{\mu}_{0m\pm},{A^{\nu}_{0m\pm}}^{*}] & =\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\tilde{A}_{0m\pm}^{t}+\frac{2r^{2}}{1+r^{2}}\tilde{A}_{0m\pm}^{t}- \frac{i\omega r}{(1+r^{2})^{2}}A_{0m\pm}^{r} \right)\tilde{A}_{0m\pm}^{r} \\
+ & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\tilde{A}_{0m\pm}^{*t}+\frac{2r^{2}}{1+r^{2}}\tilde{A}_{0m\pm}^{*t}+ \frac{i\omega r}{(1+r^{2})^{2}}\tilde{A}_{0m\pm} ^{*r}\right)\tilde{A}_{0m\pm}^{r} \\
+ & +\int \mathrm{d}r\mathrm{d}\phi\left( imr\tilde{A}_{0m\pm}^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\tilde{A}_{0m\pm}^{\phi} \right)\tilde{A}_{0m\pm}^{\phi} \\
+ & -\int \mathrm{d}r\mathrm{d}\phi\left( -imr\tilde{A}_{0m\pm}^{*t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\tilde{A}_{0m\pm}^{*\phi} \right)\tilde{A}_{0m\pm}^{\phi}
 \end{align}$$
-

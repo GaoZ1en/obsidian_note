@@ -320,7 +320,7 @@ we will write the result as
 
 $$\tag{.}
 \begin{align}
-A^{t}_{nm+} & =\left[((\mu+m)r^{2}+(m-1-|m-1|))r^{|m-1|-1}(1+r^{2})^{-(\mu+|m-1|+3)/2}P_{n}^{(\mu,|m-1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right. \\
+A^{t}_{nm+} & =\frac{1}{2n+|m-1|+\mu+1}\left[((\mu+m)r^{2}+(m-1-|m-1|))r^{|m-1|-1}(1+r^{2})^{-(\mu+|m-1|+3)/2}P_{n}^{(\mu,|m-1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right. \\
  & \left.- 4r^{|m-1|+1}(1+r^{2})^{-(\mu+|m-1|+5)/2}{P_{n}^{(\mu,|m-1|)}}'\left( \frac{r^{2}-1}{r^{2}+1} \right)\right]e^{-i(2n+|m-1|+\mu+1)t}e^{im\phi} \\
 A^{r}_{nm+} & =-ir^{|m-1|}(1+r^{2})^{-(\mu+|m-1|+1)/2}P^{(\mu,|m-1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m-1|+\mu+1)t}e^{im\phi} \\
 A^{\phi}_{nm+} & =r^{|m-1|-1}(1+r^{2})^{-(\mu+|m-1|+1)/2}P^{(\mu,|m-1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m-1|+\mu+1)t}e^{im\phi}
@@ -331,7 +331,7 @@ and
 
 $$\tag{.}
 \begin{align}
-A^{t}_{nm-} & = \left[((-\mu+m)r^{2}+(|m+1|+m+1))r^{|m+1|-1}(1+r^{2})^{-(\mu+|m+1|+3)/2}P_{n}^{(\mu,|m+1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right. \\
+A^{t}_{nm-} & = \frac{1}{2n+|m+1|+\mu+1}\left[((-\mu+m)r^{2}+(|m+1|+m+1))r^{|m+1|-1}(1+r^{2})^{-(\mu+|m+1|+3)/2}P_{n}^{(\mu,|m+1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right. \\
  & \left.+4r^{|m+1|+1}(1+r^{2})^{-(\mu+|m+1|+5)/2}{P_{n}^{(\mu,|m+1|)}}'\left( \frac{r^{2}-1}{r^{2}+1} \right)\right]e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi} \\
 A^{r}_{nm-} & =ir^{|m+1|}(1+r^{2})^{-(\mu+|m+1|+1)/2}P_{n}^{(\mu,|m+1|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi} \\
 A^{\phi}_{nm-} & =r^{|m+1|-1}(1+r^{2})^{-(\mu+|m+1|+1)/2}P_{n}^{(\mu,|m+1|)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+|m+1|+\mu+1)t}e^{im\phi}
