@@ -235,7 +235,7 @@ $$\tag{.}
 \frac{\omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}e^{-i(\omega_{1}-\omega_{2})t}} & =\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\left( \frac{1}{i\omega _{1}}\left( \partial _{r}\tilde{A}_{1}^{r}+\frac{1}{r}\tilde{A}_{1}^{r}+im_{1}\tilde{A}^{\phi}_{1} \right) \right)+\frac{2r^{2}}{1+r^{2}} \frac{1}{i\omega}\left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}^{r}+im_{1}\tilde{A}^{\phi}_{1} \right)- \frac{i\omega _{1}r}{(1+r^{2})^{2}}\tilde{A}^{r}_{1}\right)\tilde{A}^{*r}_{2} \\
  & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\left( -\frac{1}{i\omega _{2}}\left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{\phi}_{2} \right) \right)+\frac{2r^{2}}{1+r^{2}}\left( -\frac{1}{i\omega _{2}}\left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{\phi}_{2} \right) \right)+ \frac{i\omega _{2}r}{(1+r^{2})^{2}}\tilde{A}^{*r}_{2} \right)\tilde{A}^{t}_{1} \\
  & +\int \mathrm{d}r\mathrm{d}\phi\left( im_{1}r \frac{1}{i\omega _{1}}\left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}_{1}^{r}+im_{1}\tilde{A}^{\phi}_{1} \right)+\frac{r^{3}}{1+r^{2}}\partial _{r}\tilde{A}^{\phi}_{1} \right)\tilde{A}^{*\phi}_{2} \\
- & -\int \mathrm{d}r\mathrm{d}\phi\left( im_{2}r \frac{1}{i\omega}\left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{*\phi}_{2} \right)+\frac{r^{3}}{1+r^{2}}\partial _{r}\tilde{A}^{*\phi}_{2} \right)\tilde{A}^{t}_{1}
+ & -\int \mathrm{d}r\mathrm{d}\phi\left( im_{2}r \frac{1}{i\omega}\left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{*\phi}_{2} \right)+\frac{r^{3}}{1+r^{2}}\partial _{r}\tilde{A}^{*\phi}_{2} \right)\tilde{A}^{\phi}_{1}
 \end{align}$$
 
 $$\tag{.}
@@ -246,8 +246,38 @@ $$\tag{.}
 
 $$\tag{.}
 \begin{align}
-\frac{i\omega _{1}\Omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\left(  \partial _{r}\tilde{A}_{1}^{r}+\frac{1}{r}\tilde{A}_{1}^{r}+im_{1}\tilde{A}^{\phi}_{1}  \right)+\frac{2r^{2}}{1+r^{2}} \left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}^{r}_{2}+im_{1}\tilde{A}^{\phi}_{1} \right)+ \frac{\omega ^{2} _{1}r}{(1+r^{2})^{2}}\tilde{A}^{r}_{1}\right)\tilde{A}^{*r}_{2} \\
- & +\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{*\phi}_{2}  \right)+\frac{2r^{2}}{1+r^{2}}\left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{*\phi}_{2} \right) + \frac{\omega _{1}^{2}r}{(1+r^{2})^{2}}\tilde{A}^{*r}_{2} \right)\tilde{A}^{r}_{1} \\
- & +\int \mathrm{d}r\mathrm{d}\phi\left( im_{1}r \left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}_{1}^{r}+im_{1}\tilde{A}^{\phi}_{1} \right)+\frac{i\omega _{1}r^{3}}{1+r^{2}}\partial _{r}\tilde{A}^{\phi}_{1} \right)\tilde{A}^{*\phi}_{2} \\
- & -\int \mathrm{d}r\mathrm{d}\phi\left( im_{2}r \left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{*\phi}_{2} \right)+\frac{i\omega _{1}r^{3}}{1+r^{2}}\partial _{r}\tilde{A}^{*\phi}_{2} \right)\tilde{A}^{t}_{1}
+\frac{i\omega _{1}\Omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =\int \mathrm{d}rr\left( \partial _{r}\left(  \partial _{r}\tilde{A}_{1}^{r}+\frac{1}{r}\tilde{A}_{1}^{r}+im_{1}\tilde{A}^{\phi}_{1}  \right)+\frac{2r}{1+r^{2}} \left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}^{r}_{2}+im_{1}\tilde{A}^{\phi}_{1} \right)+ \frac{\omega ^{2} _{1}}{(1+r^{2})^{2}}\tilde{A}^{r}_{1}\right)\tilde{A}^{*r}_{2} \\
+ & +\int \mathrm{d}rr\left( \partial _{r}\left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{*\phi}_{2}  \right)+\frac{2r}{1+r^{2}}\left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{*\phi}_{2} \right) + \frac{\omega _{1}^{2}}{(1+r^{2})^{2}}\tilde{A}^{*r}_{2} \right)\tilde{A}^{r}_{1} \\
+ & +\int \mathrm{d}rr\left( im_{1} \left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}_{1}^{r}+im_{1}\tilde{A}^{\phi}_{1} \right)+\frac{i\omega _{1}r^{2}}{1+r^{2}}\partial _{r}\tilde{A}^{\phi}_{1} \right)\tilde{A}^{*\phi}_{2} \\
+ & -\int \mathrm{d}rr\left( im_{2} \left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{*\phi}_{2} \right)+\frac{i\omega _{1}r^{2}}{1+r^{2}}\partial _{r}\tilde{A}^{*\phi}_{2} \right)\tilde{A}^{\phi}_{1}
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+\frac{i\omega _{1}\Omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =\int \mathrm{d}r\frac{r}{1+r^{2}}\left( (1+r^{2})\partial _{r}^{2}\tilde{A}^{r}_{1}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}_{1}+\tilde{A}^{r}_{1}-\frac{1}{r^{2}}\tilde{A}^{r}_{1}+ \frac{\omega ^{2} _{1}}{1+r^{2}}\tilde{A}^{r}_{1}+im_{1}(1+r^{2})\partial _{r}\tilde{A}^{\phi}_{1}+2im_{1}r\tilde{A}^{\phi}_{1}\right)\tilde{A}^{*r}_{2} \\
+ & +\int \mathrm{d}rr\left((1+r^{2})\partial _{r}^{2}\tilde{A}^{*r}_{2}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{*r}_{2}+\tilde{A}^{*r}_{2}-\frac{1}{r^{2}}\tilde{A}^{*r}_{2}+\frac{\omega _{1}^{2}}{1+r^{2}}\tilde{A}^{*r}_{2}-im_{1}(1+r^{2})\partial _{r}\tilde{A}^{*\phi}_{2}-2im_{2}r\tilde{A}^{*\phi}_{2}\right)\tilde{A}^{r}_{1} \\
+ & +\int \mathrm{d}rr\left( im_{1} \left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}_{1}^{r}+im_{1}\tilde{A}^{\phi}_{1} \right)+\frac{i\omega _{1}r^{2}}{1+r^{2}}\partial _{r}\tilde{A}^{\phi}_{1} \right)\tilde{A}^{*\phi}_{2} \\
+ & -\int \mathrm{d}rr\left( im_{2} \left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{*\phi}_{2} \right)+\frac{i\omega _{1}r^{2}}{1+r^{2}}\partial _{r}\tilde{A}^{*\phi}_{2} \right)\tilde{A}^{\phi}_{1}
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+\frac{i\omega _{1}\Omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =\int \mathrm{d}r\frac{r}{1+r^{2}}\left( \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\tilde{A}^{r}_{1}+im_{1}(1+r^{2})\partial _{r}\tilde{A}^{\phi}_{1}+2im_{1}\frac{1+r^{2}}{r}\tilde{A}^{\phi}_{1}\right)\tilde{A}^{*r}_{2} \\
+ & +\int \mathrm{d}r\frac{r}{1+r^{2}}\left(\left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\tilde{A}^{*r}_{2}-im_{1}(1+r^{2})\partial _{r}\tilde{A}^{*\phi}_{2}-2im_{2}\frac{1+r^{2}}{r}\tilde{A}^{*\phi}_{2}\right)\tilde{A}^{r}_{1} \\
+ & +\int \mathrm{d}rr\left( im_{1} \left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}_{1}^{r}+im_{1}\tilde{A}^{\phi}_{1} \right)+\frac{i\omega _{1}r^{2}}{1+r^{2}}\partial _{r}\tilde{A}^{\phi}_{1} \right)\tilde{A}^{*\phi}_{2} \\
+ & -\int \mathrm{d}rr\left( im_{2} \left( \partial _{r}\tilde{A}^{*r}_{2}+\frac{1}{r}\tilde{A}^{*r}_{2}-im_{2}\tilde{A}^{*\phi}_{2} \right)+\frac{i\omega _{1}r^{2}}{1+r^{2}}\partial _{r}\tilde{A}^{*\phi}_{2} \right)\tilde{A}^{\phi}_{1}
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+\frac{i\omega _{1}\Omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =\int \mathrm{d}r\frac{r}{1+r^{2}}\left( \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\tilde{A}^{r}_{1}+im_{1}(1+r^{2})\partial _{r}\tilde{A}^{\phi}_{1}\right)\tilde{A}^{*r}_{2} \\
+ & +\int \mathrm{d}r\frac{r}{1+r^{2}}\left(\left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\tilde{A}^{*r}_{2}-im_{1}(1+r^{2})\partial _{r}\tilde{A}^{*\phi}_{2}\right)\tilde{A}^{r}_{1} \\
+ & +\int \mathrm{d}rr\left( im_{1} \left( \partial _{r}\tilde{A}^{r}_{1}+im_{1}\tilde{A}^{\phi}_{1} \right)+\frac{i\omega _{1}r^{2}}{1+r^{2}}\partial _{r}\tilde{A}^{\phi}_{1} -\frac{im_{1}}{r}\tilde{A}^{r}_{1}\right)\tilde{A}^{*\phi}_{2} \\
+ & -\int \mathrm{d}rr\left( im_{1} \left( \partial _{r}\tilde{A}^{*r}_{2}-im_{1}\tilde{A}^{*\phi}_{2} \right)+\frac{i\omega _{1}r^{2}}{1+r^{2}}\partial _{r}\tilde{A}^{*\phi}_{2}-\frac{im_{1}}{r}\tilde{A}^{*r}_{2} \right)\tilde{A}^{\phi}_{1}
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\frac{1}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r} & =\left( \mu ^{2}+\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r}_{1}+\frac{2im}{r}\tilde{A}^{\phi} \\
+\frac{2im}{r^{3}}\tilde{A}^{r}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =0 
 \end{align}$$
