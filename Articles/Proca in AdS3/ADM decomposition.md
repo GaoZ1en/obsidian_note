@@ -227,10 +227,12 @@ $$\tag{.}
 
 $$\tag{.}
 \begin{align}
-|m_{1}-1|=|m_{2}+1|
+\omega[A^{\mu}_{0m\pm},{A^{\nu}_{0m\pm}}^{*}] & =\frac{2\pi i(m^{2}-\mu ^{2})}{\mu+|m+1|+1} \frac{\Gamma(\mu+1)\Gamma(|m+1|+1)}{\Gamma(\mu+|m+1|+2)}
 \end{align}$$
-
+?
 $$\tag{.}
 \begin{align}
-\omega[A^{\mu}_{0m\pm},{A^{\nu}_{0m\pm}}^{*}] & =\frac{2\pi i(m^{2}-\mu ^{2})}{\mu+|m+1|+1} \frac{\Gamma(\mu+1)\Gamma(|m+1|+1)}{\Gamma(\mu+|m+1|+2)}
+\Omega & = \int \mathrm{d}^{2}x\left(r\partial _{r}\delta A^{t}+\frac{2r^{2}}{1+r^{2}}\delta A^{t}+\frac{r}{(1+r^{2})^{2}}\partial _{t}\delta A^{r}\right)\wedge \delta A^{r} \\
+ & +\int \mathrm{d}^{2}x\left( r\partial _{\phi}\delta A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta A^{\phi} \right)\wedge \delta A^{\phi} \\
+ & =
 \end{align}$$
