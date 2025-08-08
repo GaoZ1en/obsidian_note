@@ -203,9 +203,9 @@ A^{\phi}_{0m\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}e^{-i(\mu+1+|m\
 A^{*t}_{0m\pm} & = \frac{1}{\mu+1+|m\mp 1|}\left[((\pm\mu+m)r^{2}+(\mp|m\mp 1|+m\mp 1))r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}\right]e^{i(\mu+1+|m\mp 1|)t}e^{-im\phi} \\
 A^{*r}_{0m\pm} & =\pm ir^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}e^{i(\mu+1+|m\mp 1|)t}e^{-im\phi} \\
 A^{*\phi}_{0m\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}e^{i(\mu+1+|m\mp 1|)t}e^{-im\phi} \\
-\tilde{}=\tilde{A}^{t}_{0m\pm} & = \frac{1}{\mu+1+|m\mp 1|}\left[((\pm\mu+m)r^{2}+(\mp|m\mp 1|+m\mp 1))r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}\right] \\
-\tilde{A}^{r}_{0m\pm} & =\mp ir^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2} \\
-\tilde{A}^{\phi}_{0m\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}
+\tilde{A}^{*t}_{0m\pm}=\tilde{A}^{t}_{0m\pm} & = \frac{1}{\mu+1+|m\mp 1|}\left[((\pm\mu+m)r^{2}+(\mp|m\mp 1|+m\mp 1))r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}\right] \\
+-\tilde{A}^{*r}_{0m\pm}=\tilde{A}^{r}_{0m\pm} & =\mp ir^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2} \\
+\tilde{A}^{*\phi}_{0m\pm}=\tilde{A}^{\phi}_{0m\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}
 \end{align}$$
 
 $$\tag{.}
@@ -222,4 +222,17 @@ $$\tag{.}
  & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\tilde{A}_{0m\pm}^{*t}+\frac{2r^{2}}{1+r^{2}}\tilde{A}_{0m\pm}^{*t}+ \frac{i\omega r}{(1+r^{2})^{2}}\tilde{A}_{0m\pm} ^{*r}\right)\tilde{A}_{0m\pm}^{r} \\
  & +\int \mathrm{d}r\mathrm{d}\phi\left( imr\tilde{A}_{0m\pm}^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\tilde{A}_{0m\pm}^{\phi} \right)\tilde{A}_{0m\pm}^{\phi} \\
  & -\int \mathrm{d}r\mathrm{d}\phi\left( -imr\tilde{A}_{0m\pm}^{*t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\tilde{A}_{0m\pm}^{*\phi} \right)\tilde{A}_{0m\pm}^{\phi}
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+\omega[A^{\mu}_{0m\pm},{A^{\nu}_{0m\pm}}^{*}] & =-2\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\tilde{A}_{0m\pm}^{t}+\frac{2r^{2}}{1+r^{2}}\tilde{A}_{0m\pm}^{t}- \frac{i(\mu+|m\mp1|+1) r}{(1+r^{2})^{2}}A_{0m\pm}^{r} \right)\tilde{A}_{0m\pm}^{r} \\
+ & +2\int \mathrm{d}r\mathrm{d}\phi\left( imr\tilde{A}_{0m\pm}^{t}\right)\tilde{A}_{0m\pm}^{\phi} \\
+ & =\frac{-4\pi(m^{2}-\mu ^{2})i}{\mu+|m-1|+1}\int _{0}^{\infty}\mathrm{d}r r^{2|m-1|+1}(1+r^{2})^{-\mu-|m-1|-2} \\
+ & =-\frac{2\pi(m^{2}-\mu ^{2})i}{\mu+|m-1|+1} \frac{\Gamma(\mu+1)\Gamma(|m-1|+1)}{\Gamma(\mu+|m-1|+2)}
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+\frac{2\pi i\mu ^{2}}{(\mu+2)^{2}}
 \end{align}$$
