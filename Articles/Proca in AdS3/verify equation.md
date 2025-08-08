@@ -316,7 +316,12 @@ $$\tag{.}
 \end{align}
 $$
 
-we will write the result as
+$$\tag{.}
+\begin{align}
+\Phi _{\pm} & =C_{\pm}r^{\beta _{\pm}}(1+r^{2})^{-(\alpha+\beta _{\pm}+1)/2}P^{(\alpha,\beta _{\pm})}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)
+\end{align}$$
+
+where $\displaystyle{\alpha=\mu,\beta _{\pm}=|m\mp 1|}$. we will write the result as
 
 $$\tag{.}
 \begin{align}

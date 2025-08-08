@@ -294,7 +294,7 @@ $$\tag{.}
 $$\tag{.}
 \begin{align}
 \frac{i\omega_{1}\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi \delta _{m_{1}m_{2}}e^{-i(\omega_{1}-\omega_{2})t}} & =im_{1}\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}rA_{2}^{*\phi}-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}+\partial _{r}(r\tilde{A}^{\phi}_{1})\tilde{A}^{*r}_{2}-\partial _{r}\tilde{A}^{*r}_{2}r\tilde{A}^{\phi}_{1}\right) \\
- & +{}2\int \mathrm{d}r \left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{}} -m_{1}^{2}\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right] \\
+ & +{}2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{}} -m_{1}^{2}\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right] \\
  & +i\omega _{1}\int \mathrm{d}r \frac{r^{3}}{1+r^{2}}(\partial _{r}\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}-\partial _{r}\tilde{A}^{*\phi}_{2}\tilde{A}^{\phi}_{1})
 \end{align}$$
 
@@ -406,14 +406,24 @@ $$\tag{.}
 
 $$\tag{.}
 \begin{align}
-\frac{i(\mu+|m\mp1|+1)\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi} & =i\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}rA_{2}^{*\phi}-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}+\partial _{r}(r\tilde{A}^{\phi}_{1})\tilde{A}^{*r}_{2}-\partial _{r}\tilde{A}^{*r}_{2}r\tilde{A}^{\phi}_{1}\right) \\
- & +{}2\int \mathrm{d}r \left[ \left( \mu ^{2}+\frac{1}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} -\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right] \\
- & +i(\mu+1)\int \mathrm{d}r \frac{r^{3}}{1+r^{2}}(\partial _{r}\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}-\partial _{r}\tilde{A}^{*\phi}_{2}\tilde{A}^{\phi}_{1})
+\frac{i(2n+\alpha+\beta _{\pm}+1)\Omega(A^{\mu}_{1\pm},A_{2\pm}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}}} & =2(\mu ^{2}-m_{1}^{2})|C_{\pm}|^{2}\int _{0}^{\infty} \mathrm{d}r r^{2\beta _{\pm}+1}(1+r^{2})^{-\alpha-\beta _{\pm}-2}\left( P^{(\alpha,\beta _{\pm})}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right)^{2} \\
+ & =2(\mu ^{2}-m_{1}^{2})|C_{\pm}|^{2}\frac{2\Gamma(n+\alpha+1)\Gamma(n+\beta _{\pm}+1)}{(2n+\alpha+\beta _{\pm}+1)\Gamma(n+\alpha+\beta _{\pm}+1)n!}
 \end{align}$$
 
 $$\tag{.}
 \begin{align}
-\Phi _{\pm} & =\frac{1}{2}(r\tilde{A}^{\phi}\pm i\tilde{A}^{r}) \\
-\Phi _{+}+\Phi _{-} & =r\tilde{A}^{\phi}_{\pm}=\Phi_{\pm} \\
--i(\Phi _{+}-\Phi _{-}) & =\tilde{A}^{r}_{\pm}=\mp i\Phi _{\pm}
+\frac{(2n+\alpha+\beta _{\pm}+1)}{2\pi } & =2(\mu ^{2}-m_{1}^{2})|C_{\pm}|^{2}\int _{0}^{\infty} \mathrm{d}r r^{2\beta _{\pm}+1}(1+r^{2})^{-\alpha-\beta _{\pm}-2}\left( P^{(\alpha,\beta _{\pm})}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right)^{2} \\
+ & =2(\mu ^{2}-m_{1}^{2})|C_{\pm}|^{2}\frac{2\Gamma(n+\alpha+1)\Gamma(n+\beta _{\pm}+1)}{(2n+\alpha+\beta _{\pm}+1)\Gamma(n+\alpha+\beta _{\pm}+1)n!}
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+C_{n,m\pm}=\sqrt{ \frac{(2n+\alpha+\beta _{\pm}+1)^{2}\Gamma(n+\alpha+\beta _{\pm}+1)n!}{8\pi(\mu ^{2}-m^{2})\Gamma(n+\alpha+1)\Gamma(n+\beta _{\pm}+1) }}
+\end{align}$$
+
+so the full solution is
+
+$$\tag{.}
+\begin{align}
+\sqrt{ \frac{(2n+\mu+|m\mp 1|+1)^{2}\Gamma(n+\mu+|m\mp 1|+1)n!}{8\pi(\mu ^{2}-m^{2})\Gamma(n+\mu+1)\Gamma(n+\beta _{\pm}+1)} }
 \end{align}$$
