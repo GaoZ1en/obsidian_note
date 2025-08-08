@@ -218,10 +218,16 @@ $$\tag{.}
 
 $$\tag{.}
 \begin{align}
-\omega[A^{\mu}_{0m\pm},\delta _{2}A^{\nu}] & =\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}A^{t}_{0m\pm}+\frac{2r^{2}}{1+r^{2}}A^{t}_{0m\pm}+ \frac{r}{(1+r^{2})^{2}}\partial _{t}\delta _{1}A^{r} \right)\delta _{2}A^{r} \\
- & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\delta_{2}A^{t}+\frac{2r^{2}}{1+r^{2}}\delta _{2}A^{t}+ \frac{r}{(1+r^{2})^{2}}\partial _{t}\delta _{2}A^{r} \right)\delta _{1}A^{r} \\
- & +\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{\phi}\delta_{1} A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta_{1} A^{\phi} \right)\delta_{2} A^{\phi} \\
- & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{\phi}\delta_{2} A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta_{2} A^{\phi} \right)\delta_{1} A^{\phi}
+\omega[A^{\mu}_{0(m\pm 1)\pm},A^{\nu}_{0(m\mp 1)\mp}] & =-\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}A^{t}_{0(m\pm 1)\pm}+\frac{2r^{2}}{1+r^{2}}A^{t}_{0(m\pm 1)\pm}- \frac{i\omega _{\pm}r}{(1+r^{2})^{2}}A^{r}_{0(m\pm 1)\pm} \right)A^{r}_{0(m\mp 1)\mp} \\
+ & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}A_{0(m\mp 1)\mp}^{t}+\frac{2r^{2}}{1+r^{2}}A_{0(m\mp 1)\mp}^{t}- \frac{i\omega _{\mp}r}{(1+r^{2})^{2}}\partial _{t}A_{0(m\mp 1)\mp}^{r} \right)A^{r}_{0(m\pm 1)\pm} \\
+ & +\int \mathrm{d}r\mathrm{d}\phi\left( i(m\pm 1)rA^{t}_{0(m\pm 1)\pm}+\frac{r^{3}}{1+r^{2}}\partial _{r}A^{\phi}_{0(m\pm 1)\pm} \right)A_{0(m\mp 1)\mp}^{\phi} \\
+ & -\int \mathrm{d}r\mathrm{d}\phi\left( -i(m\mp 1)rA_{0(m\mp 1)\mp}^{*\phi}+\frac{r^{3}}{1+r^{2}}\partial _{r}A_{0(m\mp 1)\mp}^{*\phi} \right)A^{\phi}_{0(m\pm 1)\pm} \\
+ & =\frac{2i}{\mu+|m|+1}r^{2|m|-2}(1+r^{2})^{-\mu-|m|-3}(r^{3}(1+\mu)(-1+\mu r^{2})+m(1+r^{2})(1+r^{2}(2+\mu))-(r+m(1+r^{2})+r^{3}(3+2\mu))|m|+m^{2}r)
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+|m_{1}-1|=|m_{2}+1|
 \end{align}$$
 
 $$\tag{.}
