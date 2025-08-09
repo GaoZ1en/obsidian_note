@@ -313,18 +313,18 @@ $$\tag{.}
 \int _{0}^{\pi/2} \mathrm{d}\rho (\cos ^{2}\rho)^{\alpha+1/2}(\sin ^{2}\rho)^{\beta+1/2}\left[ P^{(\alpha,\beta)}_{n}\left( \sin ^{2}\rho-\cos ^{2}\rho \right) \right]^{2}
 \end{align}$$
 
-let $\displaystyle{z=\cos ^{2}\rho}$, $\displaystyle{\mathrm{d}\rho=-2 \frac{\mathrm{d}z}{\sin \rho \cos \rho}}$
+let $\displaystyle{z=\cos ^{2}\rho}$, $\displaystyle{\mathrm{d}\rho=- \frac{\mathrm{d}z}{2\sin \rho \cos \rho}}$
 
 $$\tag{.}
 \begin{align}
-2\int ^{1}_{0} \mathrm{d}z z^{\alpha}(1-z)^{\beta}\left[ P^{(\alpha,\beta)}_{n}\left( 1-2z \right) \right]^{2}
+2^{-1}\int ^{1}_{0} \mathrm{d}z z^{\alpha}(1-z)^{\beta}\left[ P^{(\alpha,\beta)}_{n}\left( 1-2z \right) \right]^{2}
 \end{align}$$
 
 let $\displaystyle{x=1-2z}$, $\displaystyle{\mathrm{d}z=-\frac{1}{2}\mathrm{d}x}$
 
 $$\tag{.}
 \begin{align}
-2^{-\alpha-\beta-1}\int ^{1}_{-1} \mathrm{d}x \left( 1-x \right)^{\alpha}\left( 1+x \right)^{\beta}\left[ P^{(\alpha,\beta)}_{n}\left( x \right) \right]^{2}=\frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{(2n+\alpha+\beta+1)\Gamma(n+\alpha+\beta+1)n!}
+2^{-\alpha-\beta-2}\int ^{1}_{-1} \mathrm{d}x \left( 1-x \right)^{\alpha}\left( 1+x \right)^{\beta}\left[ P^{(\alpha,\beta)}_{n}\left( x \right) \right]^{2}=\frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{2(2n+\alpha+\beta+1)\Gamma(n+\alpha+\beta+1)n!}
 \end{align}$$
 
 here we use the orthonormality relation for Jaboci polynomials
@@ -398,13 +398,42 @@ where $\displaystyle{\omega=2n+m+\mu+2}$
 
 $$\tag{.}
 \begin{align}
- & \int _{0}^{\infty} \mathrm{d}r r^{2m+1}(1+r^{2})^{-\mu-m-3}P^{(\mu+1,m+2)}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m-1)}_{n+1}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
-= & \int _{0}^{\pi/2} \mathrm{d}\rho (\sin ^{2}\rho)^{m+1/2} (\cos ^{2}\rho)^{\mu+3/2}P^{(\mu+1,m+2)}_{n-1}\left(\sin ^{2}\rho-\cos ^{2}\rho\right)P^{(\mu,m-1)}_{n+1}\left(\sin ^{2}\rho-\cos ^{2}\rho\right) \\
-= & 
+ & \int ^{\infty}_{0}\mathrm{d}rr^{2b+1}(1+r^{2})^{-(a+b+2)}P^{(\alpha_{1},\beta_{1})}_{n_{1}}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\alpha_{2},\beta_{2})}_{n_{2}}\left( \frac{r^{2}-1}{r^{2}+1} \right)  \\
+= & 2^{-(a+b+2)}\int _{-1}^{1}\mathrm{d}x(1-x)^{a}(1+x)^{b}P^{(\alpha_{1},\beta_{1})}_{n_{1}}(x)P^{(\alpha_{2},\beta_{2})}_{n_{2}}(x)
 \end{align}$$
 
 $$\tag{.}
 \begin{align}
-z=\cos ^{2}\rho \\
-\mathrm{d}z & =-2\sin \rho \cos \rho \mathrm{d}\rho
+ & \int _{0}^{\infty} \mathrm{d}r r^{2m+1}(1+r^{2})^{-\mu-m-3}P^{(\mu+1,m+2)}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m-1)}_{n+1}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+= & 2^{-\mu-m-3}\int ^{1}_{-1}\mathrm{d}x(1-x)^{\mu+1}(1+x)^{m}P_{n-1}^{(\mu+1,m+2)}(x)P_{n+1}^{(\mu,m-1)}(x) \\
+= & ?
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+ & \int _{0}^{\infty}\mathrm{d}rr^{2m+1}(1+r^{2})^{-\mu-m-3}P^{(\mu,m+1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)P^{(\mu+1,m)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+= & 2^{-\mu-m-3}\int _{-1}^{1}\mathrm{d}x(1-x)^{\mu+1}(1+x)^{m}P^{(\mu,m+1)}_{n}(x)P^{(\mu+1,m)}_{n}(x) \\
+= & ?
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+ & \int _{0}^{\infty}\mathrm{d}rr^{2m-1}(1+r^{2})^{-\mu-m-2}P^{(\mu,m+1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+= & 2^{-\mu-m-2}\int _{-1}^{1}\mathrm{d}x(1-x)^{\mu+1}(1+x)^{m-1}P^{(\mu,m+1)}_{n}(x)P^{(\mu,m-1)}_{n+1}(x) \\
+= & ?
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+ & \int _{0}^{\infty}\mathrm{d}rr^{2m+1}(1+r^{2})^{-\mu-m-2}P^{(\mu,m+1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+= & 2^{-\mu-m-2}\int _{-1}^{1}\mathrm{d}x(1-x)^{\mu}(1+x)^{m}P^{(\mu,m-1)}_{n+1}
+\end{align}$$
+
+
+$$\tag{.}
+\begin{align}
+\frac{i\omega\Omega(A^{\mu}_{(n+1)m+},A_{nm-}^{\nu})}{2\pi} & =-2m\int \mathrm{d}r r^{2m-1}(1+r^{2})^{-\mu-m-3}\left(2r^{2}(2+m+n+\mu)P_{n-1}^{(\mu+1,m+2)}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n+1}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1}  \right)\right. \\
+ & -2r^{2}(1+m+n+\mu)P^{(\mu,m+1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)P^{(\mu+1,m)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & \left. +(1+r^{2})P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n+1}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)  \\
+ & +2\int \mathrm{d}r\left[ (\omega ^{2}-\mu ^{2}-m^{2})r^{2}-2m^{2} \right]r^{2m-1}(1+r^{2})^{-(\mu+m+2)}P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m+1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
