@@ -70,3 +70,7 @@ $$\tag{.}
 Z[\beta]=\mathrm{Tr}e^{-\beta H} & = \braket{ \mathrm{TFD}|\mathrm{TFD} } 
 \end{align}$$
 
+---
+thermal 2pt function, Maldacena's information puzzle, spectrual form factor
+
+7

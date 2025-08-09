@@ -391,10 +391,12 @@ $$\tag{.}
 \frac{i\omega\Omega(A^{\mu}_{(n+1)m+},A_{nm-}^{\nu})}{2\pi} & =-2m\int \mathrm{d}r r^{2m-1}(1+r^{2})^{-\mu-m-3}\left(2r^{2}(2+m+n+\mu)P_{n-1}^{(\mu+1,m+2)}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n+1}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1}  \right)\right. \\
  & -2r^{2}(1+m+n+\mu)P^{(\mu,m+1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)P^{(\mu+1,m)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
  & \left. +(1+r^{2})P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n+1}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)  \\
- & +2\int \mathrm{d}r\left[ (\omega ^{2}-\mu ^{2}-m^{2})r^{2}-2m^{2} \right]r^{2m-1}(1+r^{2})^{-(\mu+m+2)}P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m+1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+ & +2\int \mathrm{d}r\left[ (\omega ^{2}-\mu ^{2}-m^{2})r^{2}-2m^{2} \right]r^{2m-1}(1+r^{2})^{-(\mu+m+2)}P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m+1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & =-4mI_{1}+4mI_{2}-2(m+2m^{2})I_{3}+2I_{4} \\
+ & \neq 0
 \end{align}$$
 
-where $\displaystyle{\omega=2n+m+\mu+2}$
+where $\displaystyle{\omega=2n+m+\mu+2}$. we have
 
 $$\tag{.}
 \begin{align}
@@ -402,38 +404,28 @@ $$\tag{.}
 = & 2^{-(a+b+2)}\int _{-1}^{1}\mathrm{d}x(1-x)^{a}(1+x)^{b}P^{(\alpha_{1},\beta_{1})}_{n_{1}}(x)P^{(\alpha_{2},\beta_{2})}_{n_{2}}(x)
 \end{align}$$
 
+then
+
 $$\tag{.}
 \begin{align}
- & \int _{0}^{\infty} \mathrm{d}r r^{2m+1}(1+r^{2})^{-\mu-m-3}P^{(\mu+1,m+2)}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m-1)}_{n+1}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
-= & 2^{-\mu-m-3}\int ^{1}_{-1}\mathrm{d}x(1-x)^{\mu+1}(1+x)^{m}P_{n-1}^{(\mu+1,m+2)}(x)P_{n+1}^{(\mu,m-1)}(x) \\
-= & ?
+I_{1}= & \int _{0}^{\infty} \mathrm{d}r r^{2m+1}(1+r^{2})^{-\mu-m-3}P^{(\mu+1,m+2)}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m-1)}_{n+1}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+= & 2^{-\mu-m-3}\int ^{1}_{-1}\mathrm{d}x(1-x)^{\mu+1}(1+x)^{m}P_{n-1}^{(\mu+1,m+2)}(x)P_{n+1}^{(\mu,m-1)}(x)
 \end{align}$$
 
 $$\tag{.}
 \begin{align}
- & \int _{0}^{\infty}\mathrm{d}rr^{2m+1}(1+r^{2})^{-\mu-m-3}P^{(\mu,m+1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)P^{(\mu+1,m)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
-= & 2^{-\mu-m-3}\int _{-1}^{1}\mathrm{d}x(1-x)^{\mu+1}(1+x)^{m}P^{(\mu,m+1)}_{n}(x)P^{(\mu+1,m)}_{n}(x) \\
-= & ?
+I_{2}= & \int _{0}^{\infty}\mathrm{d}rr^{2m+1}(1+r^{2})^{-\mu-m-3}P^{(\mu,m+1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)P^{(\mu+1,m)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+= & 2^{-\mu-m-3}\int _{-1}^{1}\mathrm{d}x(1-x)^{\mu+1}(1+x)^{m}P^{(\mu,m+1)}_{n}(x)P^{(\mu+1,m)}_{n}(x)
 \end{align}$$
 
 $$\tag{.}
 \begin{align}
- & \int _{0}^{\infty}\mathrm{d}rr^{2m-1}(1+r^{2})^{-\mu-m-2}P^{(\mu,m+1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
-= & 2^{-\mu-m-2}\int _{-1}^{1}\mathrm{d}x(1-x)^{\mu+1}(1+x)^{m-1}P^{(\mu,m+1)}_{n}(x)P^{(\mu,m-1)}_{n+1}(x) \\
-= & ?
+I_{3}= & \int _{0}^{\infty}\mathrm{d}rr^{2m-1}(1+r^{2})^{-\mu-m-2}P^{(\mu,m+1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+= & 2^{-\mu-m-2}\int _{-1}^{1}\mathrm{d}x(1-x)^{\mu+1}(1+x)^{m-1}P^{(\mu,m+1)}_{n}(x)P^{(\mu,m-1)}_{n+1}(x)
 \end{align}$$
 
 $$\tag{.}
 \begin{align}
- & \int _{0}^{\infty}\mathrm{d}rr^{2m+1}(1+r^{2})^{-\mu-m-2}P^{(\mu,m+1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
-= & 2^{-\mu-m-2}\int _{-1}^{1}\mathrm{d}x(1-x)^{\mu}(1+x)^{m}P^{(\mu,m-1)}_{n+1}
-\end{align}$$
-
-
-$$\tag{.}
-\begin{align}
-\frac{i\omega\Omega(A^{\mu}_{(n+1)m+},A_{nm-}^{\nu})}{2\pi} & =-2m\int \mathrm{d}r r^{2m-1}(1+r^{2})^{-\mu-m-3}\left(2r^{2}(2+m+n+\mu)P_{n-1}^{(\mu+1,m+2)}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n+1}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1}  \right)\right. \\
- & -2r^{2}(1+m+n+\mu)P^{(\mu,m+1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)P^{(\mu+1,m)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & \left. +(1+r^{2})P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n+1}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)  \\
- & +2\int \mathrm{d}r\left[ (\omega ^{2}-\mu ^{2}-m^{2})r^{2}-2m^{2} \right]r^{2m-1}(1+r^{2})^{-(\mu+m+2)}P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m+1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+I_{4}= & \int _{0}^{\infty}\mathrm{d}rr^{2m+1}(1+r^{2})^{-\mu-m-2}P^{(\mu,m+1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+= & 2^{-\mu-m-2}\int _{-1}^{1}\mathrm{d}x(1-x)^{\mu}(1+x)^{m}P^{(\mu,m-1)}_{n+1}(x)P^{(\mu,m+1)}_{n}(x)
 \end{align}$$
