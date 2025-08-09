@@ -337,27 +337,55 @@ $$\tag{.}
 ---
 
 $$\tag{.}
-\begin{align}
+\boxed{\begin{align}
 \frac{i\omega_{1}\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =im_{1}\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}rA_{2}^{*\phi}-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}+\partial _{r}(r\tilde{A}^{\phi}_{1})\tilde{A}^{*r}_{2}-\partial _{r}\tilde{A}^{*r}_{2}r\tilde{A}^{\phi}_{1}\right) \\
  & +2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} +\left( \frac{\omega ^{2}_{1}r^{2}}{1+r^{2}}-m_{1}^{2} \right)\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right]
+\end{align}}$$
+
+if $\displaystyle{A^{\mu}_{1}}$ and $\displaystyle{A^{\mu}_{2}}$ are solutions directly expressed by $\displaystyle{\Phi _{nm\pm}}$, i.e., we have
+
+$$\tag{.}
+\begin{align}
+\tilde{A}^{r}_{nm\pm} & =\mp i\Phi _{nm\pm} \\
+\tilde{A}^{\phi}_{nm\pm} & =\Phi _{nm\pm}
 \end{align}$$
 
-for mode $\displaystyle{\Phi _{nm\pm}}$, we have
+then the inner product can be simplified to
+
+$$\tag{.}
+\boxed{\begin{align}\frac{i\omega_{1}\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =m_{1}((-)^{\eta _{1}}+(-)^{\eta _{2}+1})\int \mathrm{d}r\left(\Phi _{1,n_{1}m_{1}}\partial _{r}\Phi _{2,n_{2}m_{2}}-\Phi _{2,n_{2}m_{2}}\partial _{r}\Phi _{1,n_{1}m_{1}}\right) \\
+ & +2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{(-)^{\eta_{1}+\eta_{2}}}{1+r^{2}} +\left( \frac{\omega ^{2}_{1}}{1+r^{2}}-\frac{m_{1}^{2}}{r^{2}} \right)\right]\Phi _{1,n_{1}m_{1}}\Phi _{2,n_{2}m_{2}}\end{align}}
+$$
+
+where $\displaystyle{\eta=1}$ for $\displaystyle{\Phi _{nm+}}$ and $\displaystyle{\eta=0}$ for $\displaystyle{\Phi _{nm-}}$. we first consider the for mode $\displaystyle{\Phi _{nm\pm}}$, we have
 
 $$\tag{.}
 \begin{align}
 \Omega(A^{\mu}_{n_{1}m_{1}\pm},A^{\nu}_{n_{2}m_{2}\pm})& =-2\pi i \frac{\mu ^{2}-m^{2}+(2n+|m\mp 1|+\mu+1)^{2}}{(2n+|m\mp 1|+\mu+1)^{2}} \frac{\Gamma(n+\mu+1)\Gamma(n+|m\mp 1|+1)}{\Gamma(n+\mu+|m\mp 1|+1)n!}\delta _{n_{1}n_{2}}\delta _{m_{1}m_{2}}
 \end{align}$$
 
-
+then we consider the mixture of mode $\displaystyle{\Phi _{nm\pm}}$, i.e., consider the following expression
 
 $$\tag{.}
 \begin{align}
-2(n_{1}-n_{2})=|m_{2}+1|-|m_{1}-1|
+\frac{i\omega_{1}\Omega(A^{\mu}_{n_{1}m+},A_{n_{2}m-}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =m_{1}((-)^{\eta _{1}}+(-)^{\eta _{2}+1})\int \mathrm{d}r\left(\Phi _{1,n_{1}m_{1}}\partial _{r}\Phi _{2,n_{2}m_{2}}-\Phi _{2,n_{2}m_{2}}\partial _{r}\Phi _{1,n_{1}m_{1}}\right) \\
+ & +2\int \mathrm{d}r r\left[ -\left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{1}{1+r^{2}} +\left( \frac{\omega ^{2}_{1}}{1+r^{2}}-\frac{m^{2}}{r^{2}} \right)\right]\Phi _{n_{1}m+}\Phi _{n_{2}m-}
 \end{align}$$
 
 $$\tag{.}
 \begin{align}
-\frac{i\omega_{1}\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =im_{1}\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}rA_{2}^{*\phi}-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}+\partial _{r}(r\tilde{A}^{\phi}_{1})\tilde{A}^{*r}_{2}-\partial _{r}\tilde{A}^{*r}_{2}r\tilde{A}^{\phi}_{1}\right) \\
- & +2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} +\left( \frac{\omega ^{2}_{1}r^{2}}{1+r^{2}}-m_{1}^{2} \right)\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right]
+
 \end{align}$$
+$$\tag{.}
+\begin{align}
+2(n_{+}-n_{-})+=+|m+1|-|m-1|
+\end{align}$$
+
+
+
+$$\tag{.}
+\begin{align}
+\frac{i\omega_{1}\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =m_{1}((-)^{\eta _{1}}+(-)^{\eta _{2}+1})\int \mathrm{d}r\left(\Phi _{1,n_{1}m_{1}}\partial _{r}\Phi _{2,n_{2}m_{2}}-\Phi _{2,n_{2}m_{2}}\partial _{r}\Phi _{1,n_{1}m_{1}}\right) \\
+ & +2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{(-)^{\eta_{1}+\eta_{2}+1}}{1+r^{2}} +\left( \frac{\omega ^{2}_{1}}{1+r^{2}}-\frac{m_{1}^{2}}{r^{2}} \right)\right]\Phi _{1,n_{1}m_{1}}\Phi _{2,n_{2}m_{2}}
+\end{align}$$
+
