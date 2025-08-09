@@ -430,3 +430,7 @@ I_{4}= & \int _{0}^{\infty}\mathrm{d}rr^{2m+1}(1+r^{2})^{-\mu-m-2}P^{(\mu,m+1)}_
 = & 2^{-\mu-m-2}\int _{-1}^{1}\mathrm{d}x(1-x)^{\mu}(1+x)^{m}P^{(\mu,m-1)}_{n+1}(x)P^{(\mu,m+1)}_{n}(x)
 \end{align}$$
 
+$$\tag{.}
+\begin{align}
+-i\omega\tilde{A}^{t}+\partial _{r}\tilde{A}^{r}+\frac{1}{r}\tilde{A}^{r}+im\tilde{A}^{\phi}=0
+\end{align}$$
