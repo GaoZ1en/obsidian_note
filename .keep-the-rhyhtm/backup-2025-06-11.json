@@ -10955,8 +10955,13 @@
         "changes": [
           {
             "timeKey": "08:35",
-            "w": 40,
-            "c": 212
+            "w": 213,
+            "c": 905
+          },
+          {
+            "timeKey": "08:40",
+            "w": -4,
+            "c": -19
           },
           {
             "timeKey": "08:45",
@@ -11350,8 +11355,148 @@
           },
           {
             "timeKey": "20:40",
-            "w": -78,
-            "c": -347
+            "w": 100,
+            "c": 441
+          },
+          {
+            "timeKey": "20:45",
+            "w": 39,
+            "c": 106
+          },
+          {
+            "timeKey": "20:50",
+            "w": 182,
+            "c": 721
+          },
+          {
+            "timeKey": "20:55",
+            "w": 17,
+            "c": -14
+          },
+          {
+            "timeKey": "21:00",
+            "w": -83,
+            "c": -340
+          },
+          {
+            "timeKey": "21:05",
+            "w": -15,
+            "c": -34
+          },
+          {
+            "timeKey": "21:10",
+            "w": -70,
+            "c": -220
+          },
+          {
+            "timeKey": "21:15",
+            "w": -49,
+            "c": -211
+          },
+          {
+            "timeKey": "21:20",
+            "w": -100,
+            "c": -439
+          },
+          {
+            "timeKey": "21:25",
+            "w": 224,
+            "c": 915
+          },
+          {
+            "timeKey": "21:30",
+            "w": 9,
+            "c": 35
+          },
+          {
+            "timeKey": "21:35",
+            "w": -76,
+            "c": -318
+          },
+          {
+            "timeKey": "21:40",
+            "w": -96,
+            "c": -401
+          },
+          {
+            "timeKey": "21:45",
+            "w": 81,
+            "c": 340
+          },
+          {
+            "timeKey": "21:50",
+            "w": 109,
+            "c": 441
+          },
+          {
+            "timeKey": "21:55",
+            "w": 80,
+            "c": 334
+          },
+          {
+            "timeKey": "22:00",
+            "w": -47,
+            "c": -169
+          },
+          {
+            "timeKey": "22:05",
+            "w": 173,
+            "c": 782
+          },
+          {
+            "timeKey": "22:10",
+            "w": -8,
+            "c": -69
+          },
+          {
+            "timeKey": "22:15",
+            "w": -56,
+            "c": -295
+          },
+          {
+            "timeKey": "22:20",
+            "w": -11,
+            "c": -37
+          },
+          {
+            "timeKey": "22:25",
+            "w": -171,
+            "c": -724
+          },
+          {
+            "timeKey": "22:30",
+            "w": -677,
+            "c": -2946
+          },
+          {
+            "timeKey": "22:35",
+            "w": -99,
+            "c": -426
+          },
+          {
+            "timeKey": "22:40",
+            "w": -45,
+            "c": -182
+          },
+          {
+            "timeKey": "22:45",
+            "w": 55,
+            "c": 197
+          },
+          {
+            "timeKey": "22:50",
+            "w": -53,
+            "c": -189
+          },
+          {
+            "timeKey": "23:05",
+            "w": 320,
+            "c": 1268
+          },
+          {
+            "timeKey": "23:10",
+            "w": -56,
+            "c": -248
           }
         ],
         "id": 369
@@ -11385,6 +11530,26 @@
             "timeKey": "15:30",
             "w": -1,
             "c": -1
+          },
+          {
+            "timeKey": "21:25",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "21:40",
+            "w": 19,
+            "c": 101
+          },
+          {
+            "timeKey": "21:45",
+            "w": 30,
+            "c": 139
+          },
+          {
+            "timeKey": "23:05",
+            "w": 0,
+            "c": -2
           }
         ],
         "id": 371
@@ -11522,6 +11687,57 @@
           }
         ],
         "id": 378
+      },
+      {
+        "date": "2025-08-08",
+        "filePath": "Articles/quantization/article/main.md",
+        "wordCountStart": 9310,
+        "charCountStart": 48546,
+        "changes": [],
+        "id": 379
+      },
+      {
+        "date": "2025-08-09",
+        "filePath": "Articles/quantization/article/main.md",
+        "wordCountStart": 9310,
+        "charCountStart": 48546,
+        "changes": [],
+        "id": 380
+      },
+      {
+        "date": "2025-08-09",
+        "filePath": "Articles/Proca in AdS3/verify equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [],
+        "id": 381
+      },
+      {
+        "date": "2025-08-09",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/quantum chaos in gravity and field theory by Yiming Chen.md",
+        "wordCountStart": 470,
+        "charCountStart": 2849,
+        "changes": [],
+        "id": 382
+      },
+      {
+        "date": "2025-08-09",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 5870,
+        "charCountStart": 24679,
+        "changes": [
+          {
+            "timeKey": "08:40",
+            "w": 50,
+            "c": 192
+          },
+          {
+            "timeKey": "08:45",
+            "w": -58,
+            "c": -236
+          }
+        ],
+        "id": 383
       }
     ],
     "daysWithCompletedGoal": [

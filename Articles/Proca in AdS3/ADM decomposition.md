@@ -294,7 +294,7 @@ $$\tag{.}
 $$\tag{.}
 \begin{align}
 \frac{i\omega_{1}\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =im_{1}\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}rA_{2}^{*\phi}-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}+\partial _{r}(r\tilde{A}^{\phi}_{1})\tilde{A}^{*r}_{2}-\partial _{r}\tilde{A}^{*r}_{2}r\tilde{A}^{\phi}_{1}\right) \\
- & +{}2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{}} +\left( \frac{\omega ^{2}_{1}r^{2}}{1+r^{2}}-m_{1}^{2} \right)\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right]
+ & +2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} +\left( \frac{\omega ^{2}_{1}r^{2}}{1+r^{2}}-m_{1}^{2} \right)\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right]
 \end{align}$$
 
 ---
@@ -324,7 +324,7 @@ let $\displaystyle{x=1-2z}$, $\displaystyle{\mathrm{d}z=-\frac{1}{2}\mathrm{d}x}
 
 $$\tag{.}
 \begin{align}
-2^{-\alpha-\beta}\int ^{1}_{-1} \mathrm{d}x \left( 1-x \right)^{\alpha}\left( 1+x \right)^{\beta}\left[ P^{(\alpha,\beta)}_{n}\left( x \right) \right]^{2}=\frac{2\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{(2n+\alpha+\beta+1)\Gamma(n+\alpha+\beta+1)n!}
+2^{-\alpha-\beta-1}\int ^{1}_{-1} \mathrm{d}x \left( 1-x \right)^{\alpha}\left( 1+x \right)^{\beta}\left[ P^{(\alpha,\beta)}_{n}\left( x \right) \right]^{2}=\frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{(2n+\alpha+\beta+1)\Gamma(n+\alpha+\beta+1)n!}
 \end{align}$$
 
 here we use the orthonormality relation for Jaboci polynomials
@@ -334,95 +334,30 @@ $$\tag{.}
 \int ^{1}_{-1}\mathrm{d}x(1-x)^{\alpha}(1+x)^{\beta}P_{m}^{(\alpha,\beta)}P_{n}^{(\alpha,\beta)}(x)\mathrm{d}x & =\frac{2^{\alpha+\beta+1}}{2n+\alpha+\beta+1} \frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{\Gamma(n+\alpha+\beta+1)\Gamma(n+1)}\delta _{n,m}
 \end{align}$$
 
-this methods naturally different values of $\displaystyle{n}$ gives 0, and only the $\displaystyle{m=0}$ mode has mixing behavior. 
-
----
-
-if we take the following choice of solution
-
-$$\tag{.}
-\begin{align}
-A_{+}^{t}=A_{+}^{\phi} & =0 \\
-A_{+}^{r} & =r^{-1}(1+r^{2})^{-\mu/2} P_{n+1}^{(\mu,-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+\mu+2)t}
-\end{align}$$
-
-and
-
-$$\tag{.}
-\begin{align}
-A_{-}^{t}=A_{-}^{r} & =0 \\
-A_{-}^{\phi} & =(1+r^{2})^{-1-\mu/2}P_{n}^{(\alpha,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(2n+\mu+2)t}
-\end{align}$$
-
-insert them into the symplectic form
-
-$$\tag{.}
-\begin{align}
-\frac{2n+\mu+2}{2\mu ^{2}}\frac{i\Omega[A_{n0+}^{\mu},A_{n0-}^{\nu}]}{2\pi \delta _{\omega_{1}\omega_{2}}} & = \int \mathrm{d}r r^{-1}(1+r^{2})^{-\mu-1}\left[ P_{n+1}^{(\mu,-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} =\mathcal{I}_{+}
-\end{align}$$
-
-let $\displaystyle{\alpha=\mu},\beta=-1$
-
-$$\tag{.}
-\begin{align}
-\mathcal{I}_{+}=\int _{0}^{\infty} \mathrm{d}r r^{2\beta+1}(1+r^{2})^{-(\alpha+\beta+2)}\left[P^{(\alpha,\beta)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2}
-\end{align}$$
-
-then
-
-$$\tag{.}
-\begin{align}
-\mathcal{I}_{+} & =2^{-\alpha-\beta}\int ^{1}_{-1} \mathrm{d}x \left( 1-x \right)^{\alpha}\left( 1+x \right)^{\beta}\left[ P^{(\alpha,\beta)}_{n+1}\left( x \right) \right]^{2} \\
- & =\frac{2\Gamma(n+\alpha+2)\Gamma(n+\beta+2)}{(2n+\alpha+\beta+2)\Gamma(n+\alpha+\beta+2)(n+1)!}
-\end{align}$$
-
-and
-
-$$\tag{.}
-\begin{align}
-\frac{i(2n+\mu+1)\Omega[A_{n 0+}^{\mu},A_{n 0\pm}^{\nu}]}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & = 0
-\end{align}$$
-
 ---
 
 $$\tag{.}
 \begin{align}
-\frac{i(\mu+1)\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi} & =i\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}rA_{2}^{*\phi}-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}+\partial _{r}(r\tilde{A}^{\phi}_{1})\tilde{A}^{*r}_{2}-\partial _{r}\tilde{A}^{*r}_{2}r\tilde{A}^{\phi}_{1}\right) \\
- & +{}2\int \mathrm{d}r \left[ \left( \mu ^{2}+\frac{1}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} -\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right] \\
- & +i(\mu+1)\int \mathrm{d}r \frac{r^{3}}{1+r^{2}}(\partial _{r}\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}-\partial _{r}\tilde{A}^{*\phi}_{2}\tilde{A}^{\phi}_{1})
+\frac{i\omega_{1}\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =im_{1}\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}rA_{2}^{*\phi}-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}+\partial _{r}(r\tilde{A}^{\phi}_{1})\tilde{A}^{*r}_{2}-\partial _{r}\tilde{A}^{*r}_{2}r\tilde{A}^{\phi}_{1}\right) \\
+ & +2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} +\left( \frac{\omega ^{2}_{1}r^{2}}{1+r^{2}}-m_{1}^{2} \right)\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right]
 \end{align}$$
+
+for mode $\displaystyle{\Phi _{nm\pm}}$, we have
 
 $$\tag{.}
 \begin{align}
-\frac{i(2n+\alpha+\beta _{\pm}+1)\Omega(A^{\mu}_{1\pm},A_{2\pm}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}}} & =2(\mu ^{2}-m_{1}^{2})|C_{\pm}|^{2}\int _{0}^{\infty} \mathrm{d}r r^{2\beta _{\pm}+1}(1+r^{2})^{-\alpha-\beta _{\pm}-2}\left( P^{(\alpha,\beta _{\pm})}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right)^{2} \\
- & =2(\mu ^{2}-m_{1}^{2})|C_{\pm}|^{2}\frac{2\Gamma(n+\alpha+1)\Gamma(n+\beta _{\pm}+1)}{(2n+\alpha+\beta _{\pm}+1)\Gamma(n+\alpha+\beta _{\pm}+1)n!}
+\Omega(A^{\mu}_{n_{1}m_{1}\pm},A^{\nu}_{n_{2}m_{2}\pm})& =-2\pi i \frac{\mu ^{2}-m^{2}+(2n+|m\mp 1|+\mu+1)^{2}}{(2n+|m\mp 1|+\mu+1)^{2}} \frac{\Gamma(n+\mu+1)\Gamma(n+|m\mp 1|+1)}{\Gamma(n+\mu+|m\mp 1|+1)n!}\delta _{n_{1}n_{2}}\delta _{m_{1}m_{2}}
 \end{align}$$
 
-$$\tag{.}
-\begin{align}
-C_{n,m\pm}=\sqrt{ \frac{(2n+\alpha+\beta _{\pm}+1)^{2}\Gamma(n+\alpha+\beta _{\pm}+1)n!}{8\pi(\mu ^{2}-m^{2})\Gamma(n+\alpha+1)\Gamma(n+\beta _{\pm}+1) }}
-\end{align}$$
-
-so the full solution is
-
-$$\tag{.}
-\begin{align}
-\sqrt{ \frac{(2n+\mu+|m\mp 1|+1)^{2}\Gamma(n+\mu+|m\mp 1|+1)n!}{8\pi(\mu ^{2}-m^{2})\Gamma(n+\mu+1)\Gamma(n+|m\mp 1|+1)} }
-\end{align}$$
-
-$$\tag{.}
-\begin{align}
-\sqrt{ \frac{(2n+\mu+|m\mp 1|+1)^{2}\Gamma(n+\mu+|m\mp 1|+1)n!}{8\pi(\mu ^{2}-m^{2})\Gamma(n+\mu+1)\Gamma(n+|m\mp 1|+1)} }
-\end{align}$$
-
-$$\tag{.}
-\begin{align}
-\Omega(A^{\mu}_{1\pm},A_{2\pm}^{\nu}) & =-i\frac{8\pi\mu ^{2}}{(\mu+2)^{3}}
-\end{align}$$
 
 
 $$\tag{.}
 \begin{align}
-\frac{\omega[\delta _{1}A^{\mu},\delta _{2}A^{\nu}]}{2\pi} & =2\int \mathrm{d}r\left( \frac{1}{\mu+2}r\partial _{r}((\mu r^{2}-2)(1+r^{2})^{-\mu/2-2})+\frac{1}{\mu+2}\frac{2r^{2}}{1+r^{2}}((\mu r^{2}-2)(1+r^{2})^{-\mu/2-2})+i \frac{i\omega r}{(1+r^{2})^{2}} r(1+r^{2})^{-\mu/2-1}\right)ir(1+r^{2})^{-\mu/2-1} \\
- & -i\frac{1}{2(\mu+1)}
+2(n_{1}-n_{2})=|m_{2}+1|-|m_{1}-1|
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+\frac{i\omega_{1}\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =im_{1}\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}rA_{2}^{*\phi}-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}+\partial _{r}(r\tilde{A}^{\phi}_{1})\tilde{A}^{*r}_{2}-\partial _{r}\tilde{A}^{*r}_{2}r\tilde{A}^{\phi}_{1}\right) \\
+ & +2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} +\left( \frac{\omega ^{2}_{1}r^{2}}{1+r^{2}}-m_{1}^{2} \right)\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right]
 \end{align}$$

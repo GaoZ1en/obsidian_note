@@ -205,8 +205,6 @@ A^{\phi}_{\phi} & =(1+r^{2})^{-1-\mu/2}e^{-i(\mu+2)t}
 \end{align}
 $$
 
-
-
 ---
 
 then we consider generic $\displaystyle{m\in \mathbb{N}}$.
