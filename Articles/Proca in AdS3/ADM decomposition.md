@@ -368,24 +368,43 @@ then we consider the mixture of mode $\displaystyle{\Phi _{nm\pm}}$, i.e., consi
 
 $$\tag{.}
 \begin{align}
-\frac{i\omega_{1}\Omega(A^{\mu}_{n_{1}m+},A_{n_{2}m-}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =m_{1}((-)^{\eta _{1}}+(-)^{\eta _{2}+1})\int \mathrm{d}r\left(\Phi _{1,n_{1}m_{1}}\partial _{r}\Phi _{2,n_{2}m_{2}}-\Phi _{2,n_{2}m_{2}}\partial _{r}\Phi _{1,n_{1}m_{1}}\right) \\
- & +2\int \mathrm{d}r r\left[ -\left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{1}{1+r^{2}} +\left( \frac{\omega ^{2}_{1}}{1+r^{2}}-\frac{m^{2}}{r^{2}} \right)\right]\Phi _{n_{1}m+}\Phi _{n_{2}m-}
+\frac{i\omega_{1}\Omega(A^{\mu}_{n_{1}m+},A_{n_{2}m-}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =-2m\int \mathrm{d}r\left(\Phi _{n_{1}m+}\partial _{r}\Phi _{n_{2}m-}-\Phi _{n_{2}m-}\partial _{r}\Phi _{n_{1}m+}\right) \\
+ & +2\int \mathrm{d}r r\left[ \frac{\omega ^{2}_{1}-\mu ^{2}+m^{2}}{1+r^{2}}-\frac{2m^{2}}{r^{2}} \right]\Phi _{n_{1}m+}\Phi _{n_{2}m-}
+\end{align}$$
+
+to satisfy $\displaystyle{\delta _{\omega_{1}\omega_{2}}=1}$, we have
+
+$$\tag{.}
+\begin{align}
+n_{1}-n_{2} & =\frac{1}{2}(|m+1|-|m-1|) \\
+ & =\begin{cases}
+1 & m\geqslant1 \\
+0 & m=0 \\
+-1 & m\leqslant -1
+\end{cases}
+\end{align}$$
+
+we first consider the case $\displaystyle{m\geqslant 1}$. set $\displaystyle{n_{2}=n\in \mathbb{Z},n_{1}=n_{2}+1}$, then
+
+$$\tag{.}
+\begin{align}
+\frac{i\omega\Omega(A^{\mu}_{(n+1)m+},A_{nm-}^{\nu})}{2\pi} & =-2m\int \mathrm{d}r r^{2m-1}(1+r^{2})^{-\mu-m-3}\left(2r^{2}(2+m+n+\mu)P_{n-1}^{(\mu+1,m+2)}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n+1}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1}  \right)\right. \\
+ & -2r^{2}(1+m+n+\mu)P^{(\mu,m+1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)P^{(\mu+1,m)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & \left. +(1+r^{2})P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n+1}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)  \\
+ & +2\int \mathrm{d}r\left[ (\omega ^{2}-\mu ^{2}-m^{2})r^{2}-2m^{2} \right]r^{2m-1}(1+r^{2})^{-(\mu+m+2)}P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m+1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+where $\displaystyle{\omega=2n+m+\mu+2}$
+
+$$\tag{.}
+\begin{align}
+ & \int _{0}^{\infty} \mathrm{d}r r^{2m+1}(1+r^{2})^{-\mu-m-3}P^{(\mu+1,m+2)}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m-1)}_{n+1}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+= & \int _{0}^{\pi/2} \mathrm{d}\rho (\sin ^{2}\rho)^{m+1/2} (\cos ^{2}\rho)^{\mu+3/2}P^{(\mu+1,m+2)}_{n-1}\left(\sin ^{2}\rho-\cos ^{2}\rho\right)P^{(\mu,m-1)}_{n+1}\left(\sin ^{2}\rho-\cos ^{2}\rho\right) \\
+= & 
 \end{align}$$
 
 $$\tag{.}
 \begin{align}
-
+z=\cos ^{2}\rho \\
+\mathrm{d}z & =-2\sin \rho \cos \rho \mathrm{d}\rho
 \end{align}$$
-$$\tag{.}
-\begin{align}
-2(n_{+}-n_{-})+=+|m+1|-|m-1|
-\end{align}$$
-
-
-
-$$\tag{.}
-\begin{align}
-\frac{i\omega_{1}\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =m_{1}((-)^{\eta _{1}}+(-)^{\eta _{2}+1})\int \mathrm{d}r\left(\Phi _{1,n_{1}m_{1}}\partial _{r}\Phi _{2,n_{2}m_{2}}-\Phi _{2,n_{2}m_{2}}\partial _{r}\Phi _{1,n_{1}m_{1}}\right) \\
- & +2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{(-)^{\eta_{1}+\eta_{2}+1}}{1+r^{2}} +\left( \frac{\omega ^{2}_{1}}{1+r^{2}}-\frac{m_{1}^{2}}{r^{2}} \right)\right]\Phi _{1,n_{1}m_{1}}\Phi _{2,n_{2}m_{2}}
-\end{align}$$
-
