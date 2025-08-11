@@ -45,18 +45,26 @@ im\frac{1+r^{2}}{r}\tilde{A}^{t}-i\omega r\tilde{A}^{\phi} & =-\mu \tilde{A}^{r}
 -\frac{1+r^{2}}{r}\partial _{r}\tilde{A}^{t}-2\tilde{A}^{t}+\frac{i\omega}{r(1+r^{2})}\tilde{A}^{r} & =-\mu \tilde{A}^{\phi}\tag{1.4.3}
 \end{align}$$
 
-since the eom can derive the eom of Proca field, so we only need to pick solutions which satisfy the upper eoms.
-
-$$\tag{1.5}
-\begin{align}
-\Phi _{nm+} & =r^{|m\mp1|}(1+r^{2})^{-(\mu+|m\mp 1|)+1}P^{(\mu,|m\mp 1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
-\tilde{A}_{nm\pm}^{r} & =\mp i\Phi _{nm\pm} \\
-\tilde{A}^{\phi}_{nm\pm} & =\frac{1}{r}\Phi _{nm\pm} \\
-\tilde{A}^{t}_{nm\pm} & =\frac{1}{\omega _{nm\pm}}\left( \mp\partial _{r}\Phi _{nm\pm}+\frac{m\mp 1}{r}\Phi _{nm\pm} \right) \\
-\omega _{nm\pm} & =2n+|m\mp 1|+\mu+1
-\end{align}$$
+we first consider the case $\displaystyle{m=0}$.
 
 $$\tag{.}
 \begin{align}
-\pm (2n+||)\frac{m}{r(1+r^{2})}\Phi _{nm\pm}-\omega _{nm\pm}\partial _{r}\Phi _{nm\pm}-\frac{\omega _{nm\pm}}{r}\Phi _{nm\pm} & =\pm\mu \partial _{r}\Phi _{nm\pm}-\frac{\mu (m\mp 1)}{r}\Phi _{nm\pm}
+r\partial _{r}\tilde{A}^{\phi}+2\tilde{A}^{\phi} & =\mu \tilde{A}^{t} \\
+i\omega r\tilde{A}^{\phi} & =\mu \tilde{A}^{r} \\
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =0
+\end{align}$$
+
+the solution is
+
+$$\tag{.}
+\begin{align}
+\tilde{A}^{\phi} & =C_{1}\left( 1+r^{2} \right)^{-1+\mu/2}{}_{2}F_{1}\left( 1-\frac{\mu}{2}-\frac{\omega}{2},1-\frac{\mu}{2}+\frac{\omega}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
+ & +C_{2}(1+r^{2})^{-1-\mu/2}{}_{2}F_{1}\left( 1+\frac{\mu}{2}-\frac{\omega}{2},1+\frac{\mu}{2}+\frac{\omega}{2};1+\mu; \frac{1}{1+r^{2}} \right)
+\end{align}$$
+
+boundary conditions requires that $\displaystyle{C_{1}=0}$ and $\displaystyle{1+\frac{\mu}{2}-\frac{\omega}{2}=-n\in \mathbb{Z}_{\leqslant 0}\implies \omega=2n+\mu+2,n\in \mathbb{N}}$. thus the solution can be written as
+
+$$\tag{.}
+\begin{align}
+\tilde{A}^{\phi} & =(1+r^{2})^{-1-\mu/2}P^{(\mu,)}{}_{2}F_{1}\left( -n,n+\mu+2;1+\mu; \frac{1}{1+r^{2}} \right)
 \end{align}$$
