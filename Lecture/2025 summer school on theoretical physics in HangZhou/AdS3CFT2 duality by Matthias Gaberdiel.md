@@ -6,4 +6,4 @@
 - 2312.13288
 
 ---
-the aim is to prove $\mathrm{AdS}_{3}/$
+the aim is to prove $\mathrm{AdS}_{3}/\mathrm{CFT}_{2}$. 
