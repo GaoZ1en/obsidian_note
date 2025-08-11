@@ -32,15 +32,7 @@ insert it and expand the eoms and Column gauge
 
 $$\tag{.}\begin{align}
 \frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\frac{m^{2}}{r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r}-im(1+r^{2})\partial _{r}\tilde{A}^{\phi}-\frac{2im(1+r^{2})}{r}\tilde{A}^{\phi} & =0 \\
--\frac{im}{r^{2}}\partial _{r}\tilde{A}^{r}+\frac{im}{r^{3}}\tilde{A}^{r}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{\phi}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+(4-\mu ^{2})\tilde{A}^{\phi} & =0 \\
+-\frac{im}{r^{2}}\partial _{r}\tilde{A}^{r}+\frac{im}{r^{3}}\tilde{A}^{r}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{\phi}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+4\tilde{A}^{\phi} & =0 \\
 \partial _{r}\tilde{A}^{r}+\frac{1}{r}\tilde{A}^{r} & =-im\tilde{A}^{\phi} \\
 \end{align}$$
 
----
-
-we first consider the case $\displaystyle{m=0}$
-
-$$\begin{align}
-(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{3(1+r^{2})}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\mu ^{2}+\frac{1}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r} & =0 \\
-(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+(4-\mu ^{2})\tilde{A}^{\phi} & =0
-\end{align}$$

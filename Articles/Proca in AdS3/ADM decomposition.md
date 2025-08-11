@@ -188,7 +188,7 @@ or we can study the symplectic form
 $$\tag{2.2}
 \begin{align}
 \omega & = \int \mathrm{d}^{2}x\left(r\partial _{r}\delta A^{t}+\frac{2r^{2}}{1+r^{2}}\delta A^{t}+\frac{r}{(1+r^{2})^{2}}\partial _{t}\delta A^{r}\right)\wedge \delta A^{r} \\
- & +\int \mathrm{d}^{2}x\left( r\partial _{\phi}\delta A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta A^{\phi} \right)\wedge \delta A^{\phi}
+ & +\int \mathrm{d}^{2}x\left( r\partial _{\phi}\delta A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{t}\delta A^{\phi} \right)\wedge \delta A^{\phi}
 \end{align}$$
 
 now we will insert the following solution into the symplectic form

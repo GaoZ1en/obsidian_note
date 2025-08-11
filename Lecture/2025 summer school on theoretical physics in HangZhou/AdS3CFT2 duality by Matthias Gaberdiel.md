@@ -11,7 +11,7 @@ the aim is to prove $\mathrm{AdS}_{3}/\mathrm{CFT}_{2}$.
 WZW model. 
 
 $$\tag{.}\begin{align}
-S & =\frac{1}{4\lambda ^{2}}\int _{S^{2}}\mathrm{d}^{2}z \mathrm{Tr}\left(g^{-1}\partial _{\mu}gg^{-1}\partial ^{\mu}g\right)
+S_{0} & =\frac{1}{4\lambda ^{2}}\int _{S^{2}}\mathrm{d}^{2}z \mathrm{Tr}\left(g^{-1}\partial _{\mu}gg^{-1}\partial ^{\mu}g\right)
 \end{align}$$
 
 take a variation
@@ -31,3 +31,35 @@ J_{z} & =g^{-1}\partial g \\
 J_{\bar{z}} & =g^{-1}\bar{\partial}g
 \end{align}$$
 
+the Zumino-term is given by
+
+$$\begin{align}
+S & =S_{0}+k\Gamma[g] \\
+\Gamma[g] & =-\frac{1}{12\pi}\int _{B}\mathrm{d}^{3}y\varepsilon _{\alpha \beta \gamma}\mathrm{Tr}(g^{-1}\partial ^{\alpha}gg^{-1}\partial ^{\beta}gg^{-1}\partial ^{\gamma}g)
+\end{align}$$
+
+where $\displaystyle{\partial B=S^{2}}$. the eom gives
+
+$$\tag{.}\begin{align}
+\left( 1+\frac{\lambda ^{2}k}{\pi} \right)\partial(g^{-1}\bar{\partial}g)+\left( 1-\frac{\lambda ^{2}k}{\pi} \right)\bar{\partial}(g^{-1}\partial g) & =0
+\end{align}$$
+
+choose $\displaystyle{\lambda ^{2}=\frac{\pi}{k}}$, we have $\displaystyle{\bar{J}=g^{-1}\bar{\partial}g}$ is anti-holomorphic $\displaystyle{\implies J=\partial gg^{-1}}$ is holomorphic. expand
+
+$$\tag{.}\begin{align}
+J & =J^{a}(z)t^{a}
+\end{align}$$
+
+where $\displaystyle{t^{a}}$ are basis of Lie algebra $\displaystyle{\mathfrak{g}}$, then
+
+$$\tag{.}\begin{align}
+[J^{a},J^{b}] & =if^{ab}_{~~~c}J^{c}+km\delta ^{ab}\delta _{m+n}
+\end{align}$$
+
+Sugawara construction gives the Virasoro mode
+
+$$\tag{.}\begin{align}
+L_{n} & =\frac{1}{2(k+h^{\vee})}\sum _{m}:J^{a}_{m}J^{b}_{n-m}:, c=\frac{k\dim\mathfrak{g}}{k+h^{\vee}}
+\end{align}$$
+
+where $\displaystyle{h^{\vee}}$ is the dual Coxeter nunber of Lie algebra $\displaystyle{\mathfrak{g}}$.
