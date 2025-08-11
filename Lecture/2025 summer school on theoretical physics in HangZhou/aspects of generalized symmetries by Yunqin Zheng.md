@@ -58,3 +58,10 @@ U_{\alpha}\times U_{\beta} & =\sum _{c}N^{\gamma}_{~\alpha \beta} U_{\gamma}
 
 **F-symbol**??? FF=FFF???
 
+examples of non-invertible symmetries
+1.  topological line deffect in ration CFT in 1+1d
+2. 2+1d non-Abelian FQHE
+3. 3+1d ABJ anomaly
+
+invertible continuous symmetry gives a current $\displaystyle{j_{\mu}}$. what is the such thing corresponding to non-invertible continuous symmetry?
+

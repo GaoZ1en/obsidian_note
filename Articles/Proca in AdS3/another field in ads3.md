@@ -89,6 +89,13 @@ im\frac{1+r^{2}}{r}\tilde{A}^{t}-i\omega r\tilde{A}^{\phi} & =-\mu \tilde{A}^{r}
 
 $$\tag{.}
 \begin{align}
--im(1+r^{2})\partial _{r}\tilde{A}^{\phi}-\frac{2im(1+r^{2})}{r}\tilde{A}^{\phi}+i\omega \mu r\tilde{A}^{\phi} & =\left( \mu ^{2}+\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r} \\
-\left( \mu ^{2}r^{2}+m^{2} \right)\left( (1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} +\frac{\omega ^{2}}{1+r^{2}}\right)\tilde{A}^{\phi} \right) & =-\frac{2m}{r}\left( m(1+r^{2})\partial _{r}\tilde{A}^{\phi}+\frac{2m(1+r^{2})}{r}\tilde{A}^{\phi}-\omega \mu r\tilde{A}^{\phi} \right)
+\left( \mu ^{2}r^{2}+m^{2} \right)\left( (1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} +\frac{\omega ^{2}}{1+r^{2}}\right)\tilde{A}^{\phi} \right) & =-\frac{2m^{2}(1+r^{2})}{r}\partial _{r}\tilde{A}^{\phi}-\frac{4m^{2}(1+r^{2})}{r^{2}}\tilde{A}^{\phi}+2m\omega \mu \tilde{A}^{\phi}
+\end{align}$$
+
+consider asymptotic behavior approaching $\displaystyle{r=0}$ and $\displaystyle{r=\infty}$.
+
+$$\tag{.}
+\begin{align}
+s=-2\pm|m| \\
+A^{\phi}\to r^{-2+|m|}
 \end{align}$$
