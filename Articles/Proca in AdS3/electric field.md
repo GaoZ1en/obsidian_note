@@ -17,7 +17,7 @@ $$\begin{align}
 where the eom and symplectic potential/form are given by
 
 $$\begin{align}
-E^{a}\delta A_{b} & =\left(D_{a}(N\tilde{F}^{ab})-\frac{1}{N}\sigma ^{ab}\partial _{t}^{2}A_{b}\right)\delta A_{b} \\
+E^{a}\delta A_{b} & =\left(D_{a}(N\tilde{F}^{ab})-\frac{1}{N}\sigma ^{ab}\partial _{t}^{2}A_{a}\right)\delta A_{b} \\
 \theta & =\int \mathrm{d}^{2}x\sqrt{ \sigma } \frac{1}{N}\sigma ^{ab}\partial _{t}A_{a}\delta A_{b} \\
 \omega & =\int \mathrm{d}^{2}x\sqrt{ \sigma } \frac{1}{N}\sigma ^{ab}\partial _{t}\delta A_{a}\wedge \delta A_{b}
 \end{align}$$
@@ -30,8 +30,17 @@ A^{\mu} & =e^{-i\omega t}e^{im\phi}\tilde{A}^{\mu}
 
 insert it and expand the eoms and Column gauge
 
+$$\tag{.}\begin{align}
+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\frac{m^{2}}{r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r}-im(1+r^{2})\partial _{r}\tilde{A}^{\phi}-\frac{2im(1+r^{2})}{r}\tilde{A}^{\phi} & =0 \\
+-\frac{im}{r^{2}}\partial _{r}\tilde{A}^{r}+\frac{im}{r^{3}}\tilde{A}^{r}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{\phi}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+(4-\mu ^{2})\tilde{A}^{\phi} & =0 \\
+\partial _{r}\tilde{A}^{r}+\frac{1}{r}\tilde{A}^{r} & =-im\tilde{A}^{\phi} \\
+\end{align}$$
+
+---
+
+we first consider the case $\displaystyle{m=0}$
+
 $$\begin{align}
-\partial _{r}\tilde{A}^{r}+\frac{1}{r}\tilde{A}^{r}+im\tilde{A}^{\phi} & =0 \\
-2i\omega r\tilde{A}^{t}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{r}-\frac{m^{2}}{r^{2}}\tilde{A}^{r}-\mu ^{2}\tilde{A}^{r}-im(1+r^{2})\partial _{r}\tilde{A}^{\phi}-\frac{2im(1+r^{2})}{r}\tilde{A}^{\phi} & =0 \\
--\frac{im}{r^{2}}\partial _{r}\tilde{A}^{r}+\frac{im}{r^{3}}\tilde{A}^{r}+\frac{\omega ^{2}}{1+r^{2}}\tilde{A}^{\phi}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+(4-\mu ^{2})\tilde{A}^{\phi} & =0
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{3(1+r^{2})}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\mu ^{2}+\frac{1}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r} & =0 \\
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+(4-\mu ^{2})\tilde{A}^{\phi} & =0
 \end{align}$$
