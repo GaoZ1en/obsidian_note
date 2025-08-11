@@ -42,24 +42,21 @@ insert this ansatz into the eom (1.2) and the constraint equation, we have
 $$\begin{align}
 \frac{im}{r(1+r^{2})}\tilde{A}^{r}-r\partial _{r}\tilde{A}^{\phi}-2\tilde{A}^{\phi} & =-\mu \tilde{A}^{t}\tag{1.4.1} \\
 im\frac{1+r^{2}}{r}\tilde{A}^{t}-i\omega r\tilde{A}^{\phi} & =-\mu \tilde{A}^{r}\tag{1.4.2} \\
--\frac{1+r^{2}}{r}\partial _{r}\tilde{A}^{t}-2\tilde{A}^{t}+\frac{i\omega}{r(1+r^{2})}\tilde{A}^{r} & =-\mu \tilde{A}^{\phi}\tag{1.4.3} \\
--i\omega \tilde{A}^{t}+\partial _{r}\tilde{A}^{r}+\frac{1}{r}\tilde{A}^{r}+im\tilde{A}^{\phi} & =0\tag{1.4.4}
+-\frac{1+r^{2}}{r}\partial _{r}\tilde{A}^{t}-2\tilde{A}^{t}+\frac{i\omega}{r(1+r^{2})}\tilde{A}^{r} & =-\mu \tilde{A}^{\phi}\tag{1.4.3}
 \end{align}$$
 
-insert the contraint
+since the eom can derive the eom of Proca field, so we only need to pick solutions which satisfy the upper eoms.
 
-$$\tag{.}
+$$\tag{1.5}
 \begin{align}
-
-\end{align}$$
-
-$$\tag{.}
-\begin{align}
--i\omega m\frac{1+r^{2}}{r}A^{t}-i\omega ^{2} rA^{\phi} & =-\mu \omega A^{r} \\
-
+\Phi _{nm+} & =r^{|m\mp1|}(1+r^{2})^{-(\mu+|m\mp 1|)+1}P^{(\mu,|m\mp 1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+\tilde{A}_{nm\pm}^{r} & =\mp i\Phi _{nm\pm} \\
+\tilde{A}^{\phi}_{nm\pm} & =\frac{1}{r}\Phi _{nm\pm} \\
+\tilde{A}^{t}_{nm\pm} & =\frac{1}{\omega _{nm\pm}}\left( \mp\partial _{r}\Phi _{nm\pm}+\frac{m\mp 1}{r}\Phi _{nm\pm} \right) \\
+\omega _{nm\pm} & =2n+|m\mp 1|+\mu+1
 \end{align}$$
 
 $$\tag{.}
 \begin{align}
-(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\frac{1}{r^{2}} -\frac{\omega ^{2}}{1+r^{2}}\right)\tilde{A}^{r}+im(1+r^{2})\partial _{r}\tilde{A}^{\phi}+2imr\tilde{A}^{\phi} & =-i\mu \omega r\tilde{A}^{\phi}
+\pm (2n+||)\frac{m}{r(1+r^{2})}\Phi _{nm\pm}-\omega _{nm\pm}\partial _{r}\Phi _{nm\pm}-\frac{\omega _{nm\pm}}{r}\Phi _{nm\pm} & =\pm\mu \partial _{r}\Phi _{nm\pm}-\frac{\mu (m\mp 1)}{r}\Phi _{nm\pm}
 \end{align}$$

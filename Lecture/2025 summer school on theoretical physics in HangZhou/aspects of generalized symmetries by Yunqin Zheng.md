@@ -37,9 +37,23 @@ above discussion can be generalized to p-form symmetries, i.e., we have a p-form
 
 $$\tag{.}
 \begin{align}
-\mathrm{d}\star j_{(d)} & =0
+
 \end{align}$$
 
 then we have a corresponding conserved charge
 
+$$\tag{.}
+\begin{align}
+
+\end{align}$$
+
 unlike 0-form symmetry, higher form symmetries are always *Abelian*...
+
+non-invertible symmetries. if we fusion two topological operators, we generally have the following expression
+
+$$\tag{.}
+\begin{align}
+U_{\alpha}\times U_{\beta} & =\sum _{c}N^{\gamma}_{~\alpha \beta} U_{\gamma}
+\end{align}$$
+
+**F-symbol**???
