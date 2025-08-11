@@ -8,14 +8,26 @@ $$
 
 the components of the eom $\displaystyle{\varepsilon ^{ab}_{~~~~c}\nabla _{b}A^{c}=-\mu A^{a}}$ are
 
-$$\tag{.}
+$$\tag{1.2}
 \begin{align}
-\varepsilon ^{ab}_{~~~~c}(\partial _{b}A^{c}+\Gamma ^{c}_{~bd}A^{d}) & =-\mu A^{a} \\
-\varepsilon ^{ab}_{~~~~c}\partial _{b}A^{c}+\varepsilon ^{ab}_{~~~~c}\Gamma ^{c}_{~bd}A^{d} & =-\mu A^{a}
+\frac{1}{r(1+r^{2})}\partial _{\phi}A^{r}-r\partial _{r}A^{\phi}-2A^{\phi} & =-\mu A^{t} \\
+\frac{1+r^{2}}{r}\partial _{\phi}A^{t}+r\partial _{t}A^{\phi} & =-\mu A^{r} \\
+-\frac{1+r^{2}}{r}\partial _{r}A^{t}-2A^{t}-\frac{1}{r(1+r^{2})}\partial _{t}A^{r} & =-\mu A^{\phi} \\
 \end{align}$$
 
-$$\tag{.}
+make the following ansatz
+
+$$\tag{1.3}
 \begin{align}
-\varepsilon _{abc} & =
+A^{\mu} & =e^{-i\omega t}e^{im\phi}\tilde{A}^{\mu}
 \end{align}$$
-$$\varepsilon^{tr}_{\phantom{tr}\phi} = \frac{1}{\sqrt{-g}} = \frac{1}{r\sqrt{1+r^2}}$$
+
+insert this ansatz into the eom (1.2), we have
+
+$$\tag{1.2}
+\begin{align}
+\frac{im}{r(1+r^{2})}A^{r}-r\partial _{r}A^{\phi}-2A^{\phi} & =-\mu A^{t} \\
+im\frac{1+r^{2}}{r}A^{t}-i\omega rA^{\phi} & =-\mu A^{r} \\
+-\frac{1+r^{2}}{r}\partial _{r}A^{t}-2A^{t}+\frac{i\omega}{r(1+r^{2})}A^{r} & =-\mu A^{\phi} \\
+\end{align}$$
+
