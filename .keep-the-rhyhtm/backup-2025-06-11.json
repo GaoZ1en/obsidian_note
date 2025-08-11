@@ -8548,7 +8548,7 @@
       },
       {
         "date": "2025-08-03",
-        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/aspects of general symmetries by Yunqin Zheng.md",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/aspects of generalized symmetries by Yunqin Zheng.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -11967,6 +11967,753 @@
           }
         ],
         "id": 385
+      },
+      {
+        "date": "2025-08-10",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6730,
+        "charCountStart": 28359,
+        "changes": [],
+        "id": 387
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/quantum chaos in gravity and field theory by Yiming Chen.md",
+        "wordCountStart": 482,
+        "charCountStart": 2931,
+        "changes": [
+          {
+            "timeKey": "08:25",
+            "w": -1,
+            "c": -1
+          }
+        ],
+        "id": 388
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Note/Physics/BV formalism/Classical Chern-Simons theory/Chern-Simons theory on a closed 3-manifold.md",
+        "wordCountStart": 804,
+        "charCountStart": 4842,
+        "changes": [],
+        "id": 389
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Note/Physics/wait-to-be-complete/Heat kernel method.md",
+        "wordCountStart": 65,
+        "charCountStart": 1448,
+        "changes": [],
+        "id": 390
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Note/Physics/wait-to-be-complete/Maurer-Cartan form.md",
+        "wordCountStart": 356,
+        "charCountStart": 2392,
+        "changes": [],
+        "id": 391
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Note/Physics/wait-to-be-complete/Worldline formalism.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 392
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Note/Project Euler/1-50/prob0001.md",
+        "wordCountStart": 670,
+        "charCountStart": 8352,
+        "changes": [],
+        "id": 393
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Note/Project Euler/solutions.md",
+        "wordCountStart": 1889,
+        "charCountStart": 15708,
+        "changes": [],
+        "id": 394
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Reading/p-form gauge field and edge mode.md",
+        "wordCountStart": 1276,
+        "charCountStart": 7272,
+        "changes": [],
+        "id": 395
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6730,
+        "charCountStart": 28359,
+        "changes": [
+          {
+            "timeKey": "13:15",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "13:45",
+            "w": 71,
+            "c": 297
+          },
+          {
+            "timeKey": "13:50",
+            "w": 23,
+            "c": 89
+          }
+        ],
+        "id": 396
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "TODO.md",
+        "wordCountStart": 72,
+        "charCountStart": 937,
+        "changes": [],
+        "id": 397
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [
+          {
+            "timeKey": "12:05",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "13:15",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 398
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Drafts/Jacobi polynomials.md",
+        "wordCountStart": 887,
+        "charCountStart": 4590,
+        "changes": [],
+        "id": 399
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/9802150.pdf",
+        "wordCountStart": 218427,
+        "charCountStart": 1016037,
+        "changes": [],
+        "id": 400
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/微信图片_20250414131423_29.jpg",
+        "wordCountStart": 65918,
+        "charCountStart": 312238,
+        "changes": [],
+        "id": 401
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250417093901.png",
+        "wordCountStart": 3724,
+        "charCountStart": 17931,
+        "changes": [],
+        "id": 402
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250417145002.png",
+        "wordCountStart": 8797,
+        "charCountStart": 43949,
+        "changes": [],
+        "id": 403
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250425232210.png",
+        "wordCountStart": 2041,
+        "charCountStart": 10853,
+        "changes": [],
+        "id": 404
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250508165602.png",
+        "wordCountStart": 1298,
+        "charCountStart": 6593,
+        "changes": [],
+        "id": 405
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250508170026.png",
+        "wordCountStart": 2681,
+        "charCountStart": 14305,
+        "changes": [],
+        "id": 406
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250508202619.png",
+        "wordCountStart": 146205,
+        "charCountStart": 686964,
+        "changes": [],
+        "id": 407
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250524191924.png",
+        "wordCountStart": 32604,
+        "charCountStart": 152935,
+        "changes": [],
+        "id": 408
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250526114102.png",
+        "wordCountStart": 22900,
+        "charCountStart": 105868,
+        "changes": [],
+        "id": 409
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250602105121.png",
+        "wordCountStart": 17685,
+        "charCountStart": 95628,
+        "changes": [],
+        "id": 410
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250602105133.png",
+        "wordCountStart": 4716,
+        "charCountStart": 26261,
+        "changes": [],
+        "id": 411
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250625092246.png",
+        "wordCountStart": 125862,
+        "charCountStart": 597448,
+        "changes": [],
+        "id": 412
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250625092521.png",
+        "wordCountStart": 99284,
+        "charCountStart": 460227,
+        "changes": [],
+        "id": 413
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250625093445.png",
+        "wordCountStart": 88692,
+        "charCountStart": 413427,
+        "changes": [],
+        "id": 414
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250626091150.png",
+        "wordCountStart": 9253,
+        "charCountStart": 54395,
+        "changes": [],
+        "id": 415
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250722110033.png",
+        "wordCountStart": 42886,
+        "charCountStart": 213464,
+        "changes": [],
+        "id": 416
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250722110849.png",
+        "wordCountStart": 61544,
+        "charCountStart": 319087,
+        "changes": [],
+        "id": 417
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250724192205.png",
+        "wordCountStart": 22320,
+        "charCountStart": 118886,
+        "changes": [
+          {
+            "timeKey": "08:45",
+            "w": -22320,
+            "c": -118886
+          }
+        ],
+        "id": 418
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Pasted image 20250807181440.png",
+        "wordCountStart": 754,
+        "charCountStart": 3823,
+        "changes": [
+          {
+            "timeKey": "08:45",
+            "w": -754,
+            "c": -3823
+          }
+        ],
+        "id": 419
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Drafts/complex constraint.md",
+        "wordCountStart": 591,
+        "charCountStart": 2526,
+        "changes": [
+          {
+            "timeKey": "08:45",
+            "w": -591,
+            "c": -2526
+          }
+        ],
+        "id": 420
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Drafts/BMS group.md",
+        "wordCountStart": 1044,
+        "charCountStart": 7582,
+        "changes": [],
+        "id": 421
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Drafts/adsn proca.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "08:45",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 422
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Drafts/ads3 proca.md",
+        "wordCountStart": 340,
+        "charCountStart": 1752,
+        "changes": [],
+        "id": 423
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Drafts/ads3proca.md",
+        "wordCountStart": 527,
+        "charCountStart": 2436,
+        "changes": [],
+        "id": 424
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Articles/Proca in AdS3/another field in ads3.md",
+        "wordCountStart": 335,
+        "charCountStart": 1767,
+        "changes": [
+          {
+            "timeKey": "08:45",
+            "w": 6,
+            "c": 43
+          },
+          {
+            "timeKey": "08:50",
+            "w": -234,
+            "c": -1257
+          },
+          {
+            "timeKey": "08:55",
+            "w": 26,
+            "c": 126
+          },
+          {
+            "timeKey": "09:05",
+            "w": 25,
+            "c": 139
+          },
+          {
+            "timeKey": "09:10",
+            "w": 87,
+            "c": 342
+          },
+          {
+            "timeKey": "09:15",
+            "w": 47,
+            "c": 221
+          },
+          {
+            "timeKey": "09:20",
+            "w": -135,
+            "c": -648
+          },
+          {
+            "timeKey": "09:25",
+            "w": 73,
+            "c": 323
+          },
+          {
+            "timeKey": "09:35",
+            "w": 29,
+            "c": 136
+          },
+          {
+            "timeKey": "09:40",
+            "w": 114,
+            "c": 613
+          },
+          {
+            "timeKey": "09:45",
+            "w": 19,
+            "c": 77
+          },
+          {
+            "timeKey": "09:50",
+            "w": 125,
+            "c": 555
+          },
+          {
+            "timeKey": "09:55",
+            "w": 13,
+            "c": 96
+          },
+          {
+            "timeKey": "10:00",
+            "w": 50,
+            "c": 188
+          },
+          {
+            "timeKey": "10:05",
+            "w": 52,
+            "c": 178
+          },
+          {
+            "timeKey": "10:10",
+            "w": 103,
+            "c": 420
+          },
+          {
+            "timeKey": "10:15",
+            "w": -154,
+            "c": -638
+          },
+          {
+            "timeKey": "10:20",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "10:30",
+            "w": 51,
+            "c": 240
+          },
+          {
+            "timeKey": "10:35",
+            "w": 50,
+            "c": 176
+          },
+          {
+            "timeKey": "10:40",
+            "w": -259,
+            "c": -1044
+          },
+          {
+            "timeKey": "10:45",
+            "w": 63,
+            "c": 283
+          },
+          {
+            "timeKey": "10:50",
+            "w": 33,
+            "c": 151
+          },
+          {
+            "timeKey": "10:55",
+            "w": 49,
+            "c": 236
+          },
+          {
+            "timeKey": "11:00",
+            "w": 28,
+            "c": 51
+          },
+          {
+            "timeKey": "11:05",
+            "w": 50,
+            "c": 212
+          },
+          {
+            "timeKey": "11:10",
+            "w": -244,
+            "c": -1041
+          },
+          {
+            "timeKey": "11:15",
+            "w": 74,
+            "c": 335
+          },
+          {
+            "timeKey": "11:20",
+            "w": 11,
+            "c": 42
+          },
+          {
+            "timeKey": "11:25",
+            "w": 161,
+            "c": 753
+          },
+          {
+            "timeKey": "11:30",
+            "w": 108,
+            "c": 390
+          },
+          {
+            "timeKey": "11:35",
+            "w": 111,
+            "c": 498
+          },
+          {
+            "timeKey": "11:40",
+            "w": 104,
+            "c": 392
+          },
+          {
+            "timeKey": "11:45",
+            "w": -43,
+            "c": -171
+          },
+          {
+            "timeKey": "11:50",
+            "w": 207,
+            "c": 832
+          },
+          {
+            "timeKey": "11:55",
+            "w": 22,
+            "c": 111
+          },
+          {
+            "timeKey": "12:00",
+            "w": 54,
+            "c": 278
+          },
+          {
+            "timeKey": "12:05",
+            "w": -29,
+            "c": -126
+          },
+          {
+            "timeKey": "12:10",
+            "w": -40,
+            "c": -159
+          },
+          {
+            "timeKey": "13:50",
+            "w": 91,
+            "c": 376
+          },
+          {
+            "timeKey": "13:55",
+            "w": -44,
+            "c": -144
+          },
+          {
+            "timeKey": "14:00",
+            "w": -51,
+            "c": -294
+          },
+          {
+            "timeKey": "14:05",
+            "w": 46,
+            "c": 195
+          },
+          {
+            "timeKey": "14:10",
+            "w": -9,
+            "c": -30
+          },
+          {
+            "timeKey": "14:15",
+            "w": 31,
+            "c": 98
+          },
+          {
+            "timeKey": "14:20",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 425
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/aspects of generalized symmetries by Yunqin Zheng.md",
+        "wordCountStart": 1,
+        "charCountStart": 14,
+        "changes": [
+          {
+            "timeKey": "09:05",
+            "w": 24,
+            "c": 157
+          },
+          {
+            "timeKey": "09:10",
+            "w": -24,
+            "c": -152
+          },
+          {
+            "timeKey": "09:25",
+            "w": 16,
+            "c": 120
+          },
+          {
+            "timeKey": "09:30",
+            "w": 71,
+            "c": 454
+          },
+          {
+            "timeKey": "09:35",
+            "w": 1,
+            "c": 7
+          },
+          {
+            "timeKey": "09:45",
+            "w": 44,
+            "c": 285
+          },
+          {
+            "timeKey": "09:55",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "10:00",
+            "w": 34,
+            "c": 254
+          },
+          {
+            "timeKey": "11:10",
+            "w": 2,
+            "c": 12
+          },
+          {
+            "timeKey": "13:15",
+            "w": 16,
+            "c": 92
+          },
+          {
+            "timeKey": "13:20",
+            "w": 12,
+            "c": 45
+          },
+          {
+            "timeKey": "13:25",
+            "w": 18,
+            "c": 148
+          },
+          {
+            "timeKey": "13:30",
+            "w": 53,
+            "c": 228
+          },
+          {
+            "timeKey": "13:35",
+            "w": 93,
+            "c": 488
+          },
+          {
+            "timeKey": "13:40",
+            "w": 78,
+            "c": 454
+          },
+          {
+            "timeKey": "13:50",
+            "w": 8,
+            "c": 41
+          }
+        ],
+        "id": 426
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Literature Notes/Scattering Amplitudes (1308.1697v2).md",
+        "wordCountStart": 150,
+        "charCountStart": 1043,
+        "changes": [
+          {
+            "timeKey": "09:00",
+            "w": -1,
+            "c": -9
+          }
+        ],
+        "id": 427
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Assets/Scattering Amplitudes (1308.1697v2).pdf",
+        "wordCountStart": 714645,
+        "charCountStart": 3478796,
+        "changes": [],
+        "id": 428
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1448,
+        "changes": [],
+        "id": 429
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Literature Notes/Gamma-Rays and Gravitational Waves from Inelastic Higgs Portal Dark Matter (2507.22975v1).md",
+        "wordCountStart": 224,
+        "charCountStart": 1500,
+        "changes": [
+          {
+            "timeKey": "13:30",
+            "w": 0,
+            "c": 1
+          }
+        ],
+        "id": 430
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Attachments/Assets/Gamma-Rays and Gravitational Waves from Inelastic Higgs Portal Dark Matter (2507.22975v1).pdf",
+        "wordCountStart": 185141,
+        "charCountStart": 895409,
+        "changes": [
+          {
+            "timeKey": "13:30",
+            "w": -185141,
+            "c": -895409
+          }
+        ],
+        "id": 431
       }
     ],
     "daysWithCompletedGoal": [

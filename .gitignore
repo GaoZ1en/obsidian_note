@@ -1,4 +1,7 @@
 # Ignore Obsidian configuration files
 /.obsidian/*
 
+# Ignore attachments and media files
+/Attachments/*
+
 #

@@ -92,19 +92,7 @@ $$\tag{.}
 \left( \mu ^{2}r^{2}+m^{2} \right)\left( (1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} +\frac{\omega ^{2}}{1+r^{2}}\right)\tilde{A}^{\phi} \right) & =-\frac{2m^{2}(1+r^{2})}{r}\partial _{r}\tilde{A}^{\phi}-\frac{4m^{2}(1+r^{2})}{r^{2}}\tilde{A}^{\phi}+2m\omega \mu \tilde{A}^{\phi}
 \end{align}$$
 
-consider asymptotic behavior approaching $\displaystyle{r=0}$ and $\displaystyle{r=\infty}$.
-
 $$\tag{.}
 \begin{align}
-\left( r^{2}\partial _{r}^{2}\tilde{A}^{\phi}+5r\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}\right)\tilde{A}^{\phi} \right) & =
-\end{align}$$
-
-$$\tag{.}
-\begin{align}
-s(s-1)+5s+(4-\mu ^{2}) & =r^{-2-\mu}
-\end{align}$$
-
-$$\tag{.}
-\begin{align}
-A^{\phi}\to r^{-2+|m|}
+\left( \mu ^{2}\frac{1-z}{z}+m^{2} \right)\left( 4z(1-z)\partial _{z}^{2}\tilde{A}^{\phi}-4(1+z)\partial _{z}\tilde{A}^{\phi}+\left( \frac{4-\mu ^{2}}{z}-\frac{m^{2}}{1-z}+\omega ^{2} \right)\tilde{A}^{\phi}\right) & =4m^{2}\partial _{z}\tilde{A}^{\phi}-\frac{4m^{2}}{z(1-z)}\tilde{A}^{\phi}+\frac{2m\omega \mu}{z} \tilde{A}^{\phi}
 \end{align}$$
