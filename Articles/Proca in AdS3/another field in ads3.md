@@ -66,5 +66,29 @@ boundary conditions requires that $\displaystyle{C_{1}=0}$ and $\displaystyle{1+
 
 $$\tag{.}
 \begin{align}
-\tilde{A}^{\phi} & =(1+r^{2})^{-1-\mu/2}P^{(\mu,)}{}_{2}F_{1}\left( -n,n+\mu+2;1+\mu; \frac{1}{1+r^{2}} \right)
+\tilde{A}^{\phi} & =(1+r^{2})^{-1-\mu/2}P^{(\mu,1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+\tilde{A}^{r} & =\frac{i(2n+\mu+2)}{\mu}r(1+r^{2})^{-1-\mu/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+\tilde{A}^{t} & =\frac{1}{\mu}\left( (\mu+2)(1+r^{2})^{-2-\mu/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+r^{2}(1+r^{2})^{-3-\mu/2}\partial P^{(\mu,1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)-\mu(1+r^{2})^{-1-\mu/2}P_{n}^{(\mu,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right)
+\end{align}$$
+
+we have only one set of solutions. then we will consider the case of generic $\displaystyle{m}$. 
+
+$$\tag{.}
+\begin{align}
+\frac{im}{r}\tilde{A}^{r}-r(1+r^{2})\partial _{r}\tilde{A}^{\phi}-2(1+r^{2})\tilde{A}^{\phi} & =-\mu(1+r^{2})\tilde{A}^{t} \\
+im\frac{1+r^{2}}{r}\tilde{A}^{t}-i\omega r\tilde{A}^{\phi} & =-\mu \tilde{A}^{r} \\
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)\tilde{A}^{\phi} & =-\frac{2im}{r^{3}}\tilde{A}^{r}+\frac{i\mu \omega}{r(1+r^{2})}\tilde{A}^{r}-\frac{m\omega}{r^{2}} \tilde{A}^{t}
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+\frac{im}{r}\tilde{A}^{r}-r(1+r^{2})\partial _{r}\tilde{A}^{\phi}-2(1+r^{2})\tilde{A}^{\phi} & =-\mu(1+r^{2})\tilde{A}^{t} \\
+im\frac{1+r^{2}}{r}\tilde{A}^{t}-i\omega r\tilde{A}^{\phi} & =-\mu \tilde{A}^{r} \\
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} +\frac{\omega ^{2}}{1+r^{2}}\right)\tilde{A}^{\phi} & =-\frac{2im}{r^{3}}\tilde{A}^{r}
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+-im(1+r^{2})\partial _{r}\tilde{A}^{\phi}-\frac{2im(1+r^{2})}{r}\tilde{A}^{\phi}+i\omega \mu r\tilde{A}^{\phi} & =\left( \mu ^{2}+\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r} \\
+\left( \mu ^{2}r^{2}+m^{2} \right)\left( (1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} +\frac{\omega ^{2}}{1+r^{2}}\right)\tilde{A}^{\phi} \right) & =-\frac{2m}{r}\left( m(1+r^{2})\partial _{r}\tilde{A}^{\phi}+\frac{2m(1+r^{2})}{r}\tilde{A}^{\phi}-\omega \mu r\tilde{A}^{\phi} \right)
 \end{align}$$
