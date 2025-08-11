@@ -434,3 +434,9 @@ $$\tag{.}
 \begin{align}
 -i\omega\tilde{A}^{t}+\partial _{r}\tilde{A}^{r}+\frac{1}{r}\tilde{A}^{r}+im\tilde{A}^{\phi}=0
 \end{align}$$
+
+$$\tag{.}
+\begin{align}
+\frac{i(2n+|m\mp 1|+\mu+1)}{2\pi(\mu ^{2}+(2n+|m\mp 1|)^{2}-m^{2})}\Omega(A^{\mu}_{nm\pm},A^{\nu}_{nm\pm}) &=2\int \mathrm{d}rr^{2|m\mp 1|+1}(1+r^{2})^{-(\mu+|m\mp 1|+2)}\left[ P^{(\mu,|m\mp 1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} \\
+ & =\frac{\Gamma(n+|m\mp 1|+1)\Gamma(n+\mu+1)}{(2n+|m\mp 1|+\mu+1)\Gamma(n+|m\mp 1|+\mu+1)n!}
+\end{align}$$

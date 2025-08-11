@@ -65,3 +65,15 @@ examples of non-invertible symmetries
 
 invertible continuous symmetry gives a current $\displaystyle{j_{\mu}}$. what is the such thing corresponding to non-invertible continuous symmetry?
 
+now we will discuss some of models. Abelian Higgs model in 1+1d
+
+$$\tag{.}
+\begin{align}
+\mathcal{L} & =\frac{1}{2e^{2}}f\wedge \star f+\sum ^{2}_{i=1}|D_{a}\phi _{i}|^{2}+V\left( \sum ^{2}_{i=1}|\phi _{i}|^{2} \right)+\frac{i\theta}{2\pi}\mathrm{d}\alpha
+\end{align}$$
+
+where $\displaystyle{D_{a}=\mathrm{d}-ia}$, $\displaystyle{a}$ is the $\displaystyle{U(1)}$ gauge field, $\displaystyle{\phi _{i},i=1,2}$ are complex scalars, $\displaystyle{V\left( \sum ^{2}_{i=1}|\phi _{i}|^{2} \right)=\frac{1}{2}m^{2}\sum ^{2}_{i=1}|\phi _{i}|^{2}+\lambda \left( \sum ^{2}_{i=1}|\phi _{i}|^{2} \right)^{2}}$. symmetries
+1. $\displaystyle{\mathrm{U}(2)}$, $\displaystyle{\begin{pmatrix}\phi_{1}\\\phi _{2}\end{pmatrix}\to U\begin{pmatrix}\phi_{1}\\\phi_{2}\end{pmatrix}}$, where $\displaystyle{U=\begin{pmatrix}\alpha&\beta\\-\bar{\beta}&\bar{\alpha}\end{pmatrix}}$.
+2. $\displaystyle{\mathrm{U}(1)}$ gauge symmetry, $\displaystyle{\begin{pmatrix}\phi_{1}\\\phi_{2}\end{pmatrix}\to e^{i\lambda}\begin{pmatrix}\phi_{1}\\ \phi_{2}\end{pmatrix}}$
+3. $\displaystyle{\frac{\mathrm{SU}(2)}{\mathbb{Z}_{2}}=\mathrm{SO}(3)}$, 
+4. $\displaystyle{\mathbb{Z}_{2}^{C}}$, $\displaystyle{\phi _{i}\to \phi _{i}^{*},a_{\mu}\to-a_{\mu}}$

@@ -96,6 +96,15 @@ consider asymptotic behavior approaching $\displaystyle{r=0}$ and $\displaystyle
 
 $$\tag{.}
 \begin{align}
-s=-2\pm|m| \\
+\left( r^{2}\partial _{r}^{2}\tilde{A}^{\phi}+5r\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}\right)\tilde{A}^{\phi} \right) & =
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
+s(s-1)+5s+(4-\mu ^{2}) & =r^{-2-\mu}
+\end{align}$$
+
+$$\tag{.}
+\begin{align}
 A^{\phi}\to r^{-2+|m|}
 \end{align}$$
