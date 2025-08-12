@@ -35,21 +35,29 @@ A^{\mu} & =e^{-i\omega t}e^{im\phi}\tilde{A}^{\mu}
 insert it and expand the eoms and Column gauge
 
 $$\tag{.}\begin{align}
-N\partial _{r}NF^{r\phi}\delta ^{b}_{\phi}+N^{2}(D_{a}D^{a}A^{b}-\tilde{R}^{b}_{d}A^{d}) & =\partial _{t}^{2}A^{b}
+\frac{\partial _{r}N}{N}F^{r\phi}\delta ^{b}_{\phi}+D_{a}D^{a}A^{b}+2A^{d} & =\frac{1}{N^{2}}\partial _{t}^{2}A^{b}
 \end{align}$$
 
 $$\tag{.}\begin{align}
 D_{a}D^{a}A^{b} & =\sigma ^{ac}D_{a}D_{c}A^{b} \\
- & =\sigma ^{ac}\partial _{a}\partial _{c}A^{b}+\sigma ^{ac}\partial _{c}\Gamma ^{b}_{cd}A^{d}+\sigma ^{ac}\Gamma ^{b}_{cd}\partial _{c}A^{d}-\sigma ^{ac}\Gamma ^{d}_{ac}\partial _{d}A^{b}-\sigma ^{ac}\Gamma ^{d}_{ac}\Gamma ^{b}_{de}A^{e}+\sigma ^{ac}\Gamma ^{b}_{ad}\partial _{c}A^{d}+\sigma ^{ac}\Gamma ^{b}_{ad}\Gamma ^{d}_{ce}A^{e} \\
-\tilde{R}^{b}_{d}A^{d} & =
+ & =\sigma ^{ac}\partial _{a}\partial _{c}A^{b}+\sigma ^{ac}\partial _{a}\Gamma ^{b}_{cd}A^{d}+\sigma ^{ac}\Gamma ^{b}_{ad}\partial _{c}A^{d}-\sigma ^{ac}\Gamma ^{d}_{ac}\partial _{d}A^{b}-\sigma ^{ac}\Gamma ^{d}_{ac}\Gamma ^{b}_{de}A^{e}+\sigma ^{ac}\Gamma ^{b}_{ad}\partial _{c}A^{d}+\sigma ^{ac}\Gamma ^{b}_{ad}\Gamma ^{d}_{ce}A^{e} \\
+D_{a}D^{a}A^{r} & =-\sigma ^{ac}\Gamma ^{r}_{ac}\partial _{r}A^{r}-\sigma ^{ac}\Gamma ^{r}_{ac}\Gamma ^{r}_{rr}A^{r}+\sigma ^{ac}\Gamma ^{r}_{ad}\partial _{c}A^{d}+\sigma ^{ac}\Gamma ^{r}_{ad}\Gamma ^{d}_{ce}A^{e}  \\
+ & +(1+r^{2})\partial _{r}^{2}A^{r}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{\phi} \\
+ & +\sigma ^{rr}\Gamma ^{r}_{rr}\partial _{r}A^{r}+\sigma ^{\phi \phi}\Gamma ^{r}_{\phi \phi}\partial _{\phi}A^{\phi} \\
+ & \sigma ^{rr}\partial _{r}\Gamma ^{r}_{rr}A^{r} \\
+ & 
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\mathrm{d}s^{2} & =\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2}
+\frac{\partial _{r}N}{N}F^{r\phi}\delta ^{b}_{\phi} & =\left( r\partial _{r}A^{\phi}-\frac{1}{r(1+r^{2})}\partial _{\phi}A^{r}+2A^{\phi} \right)\delta ^{b}_{\phi}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\tilde{\Gamma} ^{r}_{ab}\mathrm{d}x^{a}\mathrm{d}x^{b} & =-\frac{r}{1+r^{2}}\mathrm{d}r^{2}-r(1+r^{2})\mathrm{d}\phi ^{2} \\
-\tilde{\Gamma}^{\phi}_{ab}\mathrm{d}x^{a}\mathrm{d}x^{b} & =\frac{2}{r}\mathrm{d}r \mathrm{d}\phi \\
-\Gamma ^{\mu}_{~\nu} & =\Gamma ^{\mu}_{~\nu \rho}\mathrm{d}x^{\rho}
+\sigma ^{ac}\Gamma ^{r}_{ac} & =-r-\frac{1}{r^{2}}r(1+r^{2})-1
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\Gamma ^{\rho}_{~\rho \rho} & =-\frac{\rho}{1+\rho ^{2}} \\
+\Gamma ^{\rho}_{~\theta \theta} & =-\rho (1+\rho ^{2}) \\
+\Gamma ^{\theta}_{~\rho \theta} & =\frac{1}{\rho}
 \end{align}$$
