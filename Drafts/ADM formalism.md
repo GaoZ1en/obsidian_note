@@ -120,3 +120,4 @@ $$\tag{.}\begin{align}
 \left\{\pi _{N^{a}},H\right\} & \propto \frac{\delta H}{\delta N_{b}}=\sqrt{ \sigma }C^{b}\approx0
 \end{align}$$
 
+d
