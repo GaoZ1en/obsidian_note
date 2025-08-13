@@ -71,7 +71,7 @@ n^{\mu}R_{\mu \nu}n^{\nu} & =n^{\mu}(\nabla _{\nu}\nabla _{\mu}-\nabla _{\mu}\na
 ignore all the boundary terms at present
 
 $$\tag{.}\begin{align}
-S & =\int _{M}\mathrm{d}^{d}x\sqrt{ -g }R \\
+S & =\int _{M}\mathrm{d}^{d}x\sqrt{ -g }R +2\int _{\partial M}\mathrm{d}^{d-1}x\sqrt{ \sigma }K\\
  & =\int _{M}\mathrm{d}t\mathrm{d}^{d-1}xN\sqrt{ \sigma }(\tilde{R}+K_{ab}K^{ab}-K^{2})
 \end{align}$$
 
@@ -107,9 +107,15 @@ we have two primary constraints $\displaystyle{\pi _{N}=\pi _{N^{a}}=0}$. the Ha
 
 $$\tag{.}\begin{align}
 \mathcal{H} & =\pi ^{ab}\dot{h}_{ab}-\mathcal{L}  \\
- & =\frac{2N}{\sqrt{ \sigma }}\left( \pi _{ab}\pi ^{ab}+\frac{1}{2-d}\pi ^{2} \right)+2\pi ^{ab}D_{a}N_{b}-N\sqrt{ \sigma }\left(\tilde{R}+\frac{1}{\sigma}\left( \pi _{ab}+\frac{1}{2-d}\sigma _{ab}\pi \right)\left( \pi ^{ab}+\frac{1}{2-d}\sigma ^{ab}\pi \right)+\frac{1}{\sigma}\left( \pi _{ab}\pi ^{ab}+\frac{2}{2-d}\pi ^{2}+\frac{1}{d-2} \pi ^{2} \right)-\frac{1}{(d-2)^{2}}\frac{\pi ^{2}}{\sigma}\right)
+ & =\frac{2N}{\sqrt{ \sigma }}\left( \pi _{ab}\pi ^{ab}+\frac{1}{2-d}\pi ^{2} \right)+2\pi ^{ab}D_{a}N_{b}-N\sqrt{ \sigma }\left(\tilde{R}+\frac{1}{\sigma}\left( \pi _{ab}\pi ^{ab}+\frac{1}{2-d}\pi ^{2} \right)\right) \\
+ & =N\sqrt{ \sigma }\left(-\tilde{R}+\frac{1}{\sigma}\left(\pi _{ab}\pi ^{ab}+\frac{1}{2-d}\pi ^{2}\right)\right)+2\pi ^{ab}D_{a}N_{b} \\
+H & =\int _{\Sigma}\mathrm{d}^{d-1}x\mathcal{H} \\
+ & =\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\left(NC+N_{b}C^{b}\right)
 \end{align}$$
 
+where $\displaystyle{C=-\tilde{R}+\frac{1}{\sigma}\left(\pi _{ab}\pi ^{ab}+\frac{1}{2-d}\pi ^{2}\right)}$, $\displaystyle{C^{b}=-2D_{a}\left(  \frac{1}{\sqrt{ \sigma }}\pi ^{ab} \right)}$. secondary constraints are given by
+
 $$\tag{.}\begin{align}
-\pi _{ab}\pi ^{ab}+\frac{1}{d-2}\pi ^{2}+\frac{2}{2-d}\pi ^{2}-\frac{1}{(d-2)^{2}}\pi ^{2}
+\left\{\pi _{N},H\right\} & \propto \frac{\delta H}{\delta N}=\sqrt{ \sigma }C\approx0 \\
+\left\{\pi _{N^{a}},H\right\} & \propto \frac{\delta H}{\delta N_{b}}=\sqrt{ \sigma }C^{b}\approx0
 \end{align}$$
