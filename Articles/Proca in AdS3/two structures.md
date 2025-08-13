@@ -17,13 +17,21 @@ $$\tag{1.2}\begin{align}
  i\omega _{nm\pm}I_{1}e^{i\omega _{nm\pm}t}e^{-im\phi} & =r\partial _{r}^{2}\tilde{A}^{r}_{nm\pm}+\partial _{r}\tilde{A}^{r}_{nm\pm}-\frac{1}{r}\tilde{A}^{r}_{nm\pm}+imr\partial _{r}\tilde{A}^{\phi}_{nm\pm}+\frac{2r^{2}}{1+r^{2}}\partial _{r}\tilde{A}^{r}_{nm\pm}+\frac{2r}{1+r^{2}}\tilde{A}^{r}_{nm\pm}+\frac{2imr^{2}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm}+\frac{\omega _{nm\pm}^{2}r}{(1+r^{2})^{2}}\tilde{A}^{r}_{nm\pm} \\
  & =\frac{r}{1+r^{2}}\left((1+r^{2})\partial _{r}^{2}\tilde{A}^{r}_{nm\pm}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}_{nm\pm}+\left( 1-\frac{1}{r^{2}}+\frac{\omega ^{2}_{nm\pm}}{1+r^{2}} \right)\tilde{A}^{r}_{nm\pm}\right)-imr\partial _{r}\tilde{A}^{\phi}_{nm\pm}+\frac{2imr^{2}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm} \\
  & =\frac{2im}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm}+\frac{r}{1+r^{2}}\left( \mu ^{2}-\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r}_{nm\pm}-imr\partial _{r}\tilde{A}^{\phi}_{nm\pm}+\frac{2imr^{2}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm} \\
- & =\frac{r}{1+r^{2}}\left( \mu ^{2}-\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r}_{nm\pm}-imr\partial _{r}\tilde{A}^{\phi}_{nm\pm}+2im\tilde{A}^{\phi}_{nm\pm}
+ & =\frac{r}{1+r^{2}}\left( \mu ^{2}-\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r}_{nm\pm}-imr\partial _{r}\tilde{A}^{\phi}_{nm\pm}+2im\tilde{A}^{\phi}_{nm\pm} \\
+ & =\mp i\left(\mu ^{2}r^{2}-m^{2}\right)r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}P^{(\mu,|m\mp 1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)+3imr^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P^{(\mu,|m\mp 1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+ & -im|m\mp 1|r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P^{(\mu,|m\mp 1|)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +im(\mu+|m\mp 1|+1)r^{|m\mp 1|+1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}P_{n}^{(\mu,|m\mp 1|)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & -4imr^{|m\mp 1|+1}(1+r^{2})^{-(\mu+|m\mp 1|+5)/2}P_{n}^{(\mu,|m\mp 1|)'}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+ & =r^{|m\mp 1|+1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}\left(\mp i\left( \mu ^{2}-\frac{m^{2}}{r^{2}} \right)+3im \frac{1+r^{2}}{r^{2}}+\right)
 \end{align}$$
 
 here we use the eom
 
 $$\tag{1.3}\begin{align}
-(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\frac{1}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r}& =\frac{2im}{r}\tilde{A}^{\phi}_{nm\pm} +\left( \mu ^{2}-\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r}_{nm\pm}
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\frac{1}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r}& =\frac{2im}{r}\tilde{A}^{\phi}_{nm\pm} +\left( \mu ^{2}-\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r}_{nm\pm} \\
+\Phi _{nm\pm} & =r^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P^{(\mu,|m\mp 1|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+\tilde{A}^{r}_{nm\pm} & =\mp i\Phi _{nm\pm} \\
+r\tilde{A}^{\phi}_{nm\pm} & =\Phi _{nm\pm}
 \end{align}$$
 
 ---
