@@ -10751,7 +10751,7 @@
       },
       {
         "date": "2025-08-07",
-        "filePath": "Articles/Proca in AdS3/Untitled.md",
+        "filePath": "Articles/Proca in AdS3/three integrals.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [],
@@ -12066,6 +12066,11 @@
             "timeKey": "13:50",
             "w": 23,
             "c": 89
+          },
+          {
+            "timeKey": "17:25",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 396
@@ -12248,48 +12253,6 @@
         "charCountStart": 319087,
         "changes": [],
         "id": 417
-      },
-      {
-        "date": "2025-08-11",
-        "filePath": "Attachments/Pasted image 20250724192205.png",
-        "wordCountStart": 22320,
-        "charCountStart": 118886,
-        "changes": [
-          {
-            "timeKey": "08:45",
-            "w": -22320,
-            "c": -118886
-          }
-        ],
-        "id": 418
-      },
-      {
-        "date": "2025-08-11",
-        "filePath": "Attachments/Pasted image 20250807181440.png",
-        "wordCountStart": 754,
-        "charCountStart": 3823,
-        "changes": [
-          {
-            "timeKey": "08:45",
-            "w": -754,
-            "c": -3823
-          }
-        ],
-        "id": 419
-      },
-      {
-        "date": "2025-08-11",
-        "filePath": "Drafts/complex constraint.md",
-        "wordCountStart": 591,
-        "charCountStart": 2526,
-        "changes": [
-          {
-            "timeKey": "08:45",
-            "w": -591,
-            "c": -2526
-          }
-        ],
-        "id": 420
       },
       {
         "date": "2025-08-11",
@@ -12667,6 +12630,11 @@
             "timeKey": "09:00",
             "w": -1,
             "c": -9
+          },
+          {
+            "timeKey": "14:25",
+            "w": 1,
+            "c": 13
           }
         ],
         "id": 427
@@ -12703,17 +12671,549 @@
       },
       {
         "date": "2025-08-11",
-        "filePath": "Attachments/Assets/Gamma-Rays and Gravitational Waves from Inelastic Higgs Portal Dark Matter (2507.22975v1).pdf",
-        "wordCountStart": 185141,
-        "charCountStart": 895409,
+        "filePath": "Literature Notes/Rotating Black Holes in Higher Dimensions with a Cosmological Constant (hep-th 0409155v1).md",
+        "wordCountStart": 149,
+        "charCountStart": 936,
         "changes": [
           {
-            "timeKey": "13:30",
-            "w": -185141,
-            "c": -895409
+            "timeKey": "14:25",
+            "w": -1,
+            "c": -7
+          },
+          {
+            "timeKey": "14:30",
+            "w": 0,
+            "c": 2
           }
         ],
-        "id": 431
+        "id": 432
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Articles/Proca in AdS3/electric field.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:10",
+            "w": 124,
+            "c": 580
+          },
+          {
+            "timeKey": "15:15",
+            "w": 51,
+            "c": 257
+          },
+          {
+            "timeKey": "15:20",
+            "w": 347,
+            "c": 1412
+          },
+          {
+            "timeKey": "15:25",
+            "w": -59,
+            "c": -173
+          },
+          {
+            "timeKey": "15:30",
+            "w": -8,
+            "c": -27
+          },
+          {
+            "timeKey": "15:35",
+            "w": 33,
+            "c": 145
+          },
+          {
+            "timeKey": "15:40",
+            "w": -170,
+            "c": -678
+          },
+          {
+            "timeKey": "15:45",
+            "w": 170,
+            "c": 646
+          },
+          {
+            "timeKey": "15:50",
+            "w": 64,
+            "c": 287
+          },
+          {
+            "timeKey": "16:00",
+            "w": -94,
+            "c": -386
+          },
+          {
+            "timeKey": "16:20",
+            "w": -3,
+            "c": -11
+          }
+        ],
+        "id": 433
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Articles/Proca in AdS3/three integrals.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "14:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 434
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 435
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 1579,
+        "charCountStart": 6980,
+        "changes": [],
+        "id": 438
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/AdS3CFT2 duality by Matthias Gaberdiel.md",
+        "wordCountStart": 5,
+        "charCountStart": 65,
+        "changes": [
+          {
+            "timeKey": "14:55",
+            "w": 10,
+            "c": 54
+          },
+          {
+            "timeKey": "15:00",
+            "w": 3,
+            "c": 9
+          },
+          {
+            "timeKey": "15:35",
+            "w": 2,
+            "c": 13
+          },
+          {
+            "timeKey": "15:50",
+            "w": 45,
+            "c": 233
+          },
+          {
+            "timeKey": "15:55",
+            "w": 177,
+            "c": 841
+          },
+          {
+            "timeKey": "16:00",
+            "w": 50,
+            "c": 262
+          },
+          {
+            "timeKey": "16:05",
+            "w": 6,
+            "c": 43
+          },
+          {
+            "timeKey": "16:15",
+            "w": 166,
+            "c": 940
+          },
+          {
+            "timeKey": "16:20",
+            "w": 1,
+            "c": 7
+          }
+        ],
+        "id": 440
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Articles/Proca in AdS3/angular decomposition.md",
+        "wordCountStart": 457,
+        "charCountStart": 2587,
+        "changes": [],
+        "id": 441
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 3030,
+        "charCountStart": 15071,
+        "changes": [],
+        "id": 442
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Articles/Proca in AdS3/higher spinor field?.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:05",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 443
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 578,
+        "charCountStart": 2613,
+        "changes": [],
+        "id": 444
+      },
+      {
+        "date": "2025-08-11",
+        "filePath": "Note/useful results/ADM formalism.md",
+        "wordCountStart": 695,
+        "charCountStart": 2966,
+        "changes": [],
+        "id": 445
+      },
+      {
+        "date": "2025-08-12",
+        "filePath": "Articles/Proca in AdS3/electric field.md",
+        "wordCountStart": 455,
+        "charCountStart": 2052,
+        "changes": [
+          {
+            "timeKey": "08:40",
+            "w": -71,
+            "c": -278
+          },
+          {
+            "timeKey": "08:45",
+            "w": 29,
+            "c": 116
+          },
+          {
+            "timeKey": "08:50",
+            "w": 213,
+            "c": 925
+          },
+          {
+            "timeKey": "08:55",
+            "w": -15,
+            "c": -107
+          },
+          {
+            "timeKey": "09:00",
+            "w": 18,
+            "c": 89
+          },
+          {
+            "timeKey": "09:05",
+            "w": 131,
+            "c": 592
+          },
+          {
+            "timeKey": "09:10",
+            "w": -220,
+            "c": -992
+          },
+          {
+            "timeKey": "09:15",
+            "w": 62,
+            "c": 300
+          },
+          {
+            "timeKey": "09:20",
+            "w": 43,
+            "c": 93
+          },
+          {
+            "timeKey": "09:25",
+            "w": 90,
+            "c": 434
+          },
+          {
+            "timeKey": "09:30",
+            "w": -22,
+            "c": -80
+          },
+          {
+            "timeKey": "09:35",
+            "w": 66,
+            "c": 217
+          },
+          {
+            "timeKey": "09:40",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "09:45",
+            "w": 43,
+            "c": 163
+          },
+          {
+            "timeKey": "09:50",
+            "w": 30,
+            "c": 140
+          },
+          {
+            "timeKey": "09:55",
+            "w": -7,
+            "c": -109
+          },
+          {
+            "timeKey": "10:00",
+            "w": 139,
+            "c": 602
+          },
+          {
+            "timeKey": "10:05",
+            "w": 77,
+            "c": 287
+          },
+          {
+            "timeKey": "10:10",
+            "w": -561,
+            "c": -2105
+          },
+          {
+            "timeKey": "10:15",
+            "w": 89,
+            "c": 327
+          },
+          {
+            "timeKey": "10:20",
+            "w": -4,
+            "c": -22
+          },
+          {
+            "timeKey": "10:35",
+            "w": 13,
+            "c": 62
+          },
+          {
+            "timeKey": "10:40",
+            "w": 107,
+            "c": 469
+          },
+          {
+            "timeKey": "10:45",
+            "w": 37,
+            "c": 160
+          },
+          {
+            "timeKey": "10:50",
+            "w": -142,
+            "c": -630
+          },
+          {
+            "timeKey": "10:55",
+            "w": 0,
+            "c": -1
+          }
+        ],
+        "id": 446
+      },
+      {
+        "date": "2025-08-12",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [
+          {
+            "timeKey": "11:05",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 447
+      },
+      {
+        "date": "2025-08-12",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/AdS3CFT2 duality by Matthias Gaberdiel.md",
+        "wordCountStart": 465,
+        "charCountStart": 2467,
+        "changes": [
+          {
+            "timeKey": "11:00",
+            "w": 70,
+            "c": 303
+          }
+        ],
+        "id": 448
+      },
+      {
+        "date": "2025-08-12",
+        "filePath": "Drafts/electric field.md",
+        "wordCountStart": 1377,
+        "charCountStart": 6081,
+        "changes": [
+          {
+            "timeKey": "08:35",
+            "w": -1377,
+            "c": -6081
+          }
+        ],
+        "id": 449
+      },
+      {
+        "date": "2025-08-12",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1448,
+        "changes": [],
+        "id": 450
+      },
+      {
+        "date": "2025-08-12",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6824,
+        "charCountStart": 28745,
+        "changes": [
+          {
+            "timeKey": "13:00",
+            "w": 229,
+            "c": 907
+          },
+          {
+            "timeKey": "13:05",
+            "w": 130,
+            "c": 543
+          },
+          {
+            "timeKey": "13:10",
+            "w": 9,
+            "c": 8
+          },
+          {
+            "timeKey": "13:15",
+            "w": -103,
+            "c": -403
+          },
+          {
+            "timeKey": "13:20",
+            "w": -387,
+            "c": -1573
+          },
+          {
+            "timeKey": "13:25",
+            "w": 1,
+            "c": 11
+          },
+          {
+            "timeKey": "13:30",
+            "w": 106,
+            "c": 420
+          },
+          {
+            "timeKey": "13:35",
+            "w": -240,
+            "c": -820
+          },
+          {
+            "timeKey": "13:40",
+            "w": 6,
+            "c": -23
+          },
+          {
+            "timeKey": "13:45",
+            "w": 29,
+            "c": 103
+          },
+          {
+            "timeKey": "13:50",
+            "w": 25,
+            "c": 89
+          },
+          {
+            "timeKey": "13:55",
+            "w": -65,
+            "c": -238
+          },
+          {
+            "timeKey": "14:00",
+            "w": -20,
+            "c": -67
+          },
+          {
+            "timeKey": "14:05",
+            "w": 33,
+            "c": 115
+          },
+          {
+            "timeKey": "14:10",
+            "w": -107,
+            "c": -432
+          },
+          {
+            "timeKey": "14:15",
+            "w": 36,
+            "c": 139
+          },
+          {
+            "timeKey": "14:20",
+            "w": 52,
+            "c": 154
+          }
+        ],
+        "id": 451
+      },
+      {
+        "date": "2025-08-12",
+        "filePath": "Literature Notes/EPFL Lectures on Conformal Field Theory in D = 3 Dimensions (1601.05000v2).md",
+        "wordCountStart": 98,
+        "charCountStart": 630,
+        "changes": [],
+        "id": 452
+      },
+      {
+        "date": "2025-08-12",
+        "filePath": "Attachments/Assets/EPFL Lectures on Conformal Field Theory in D = 3 Dimensions (1601.05000v2).pdf",
+        "wordCountStart": 418280,
+        "charCountStart": 2039641,
+        "changes": [],
+        "id": 453
+      },
+      {
+        "date": "2025-08-12",
+        "filePath": "Articles/Proca in AdS3/three integrals.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "14:25",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "14:30",
+            "w": 509,
+            "c": 1899
+          },
+          {
+            "timeKey": "14:35",
+            "w": 122,
+            "c": 459
+          },
+          {
+            "timeKey": "14:40",
+            "w": 9,
+            "c": 26
+          },
+          {
+            "timeKey": "14:45",
+            "w": 0,
+            "c": -7
+          }
+        ],
+        "id": 454
       }
     ],
     "daysWithCompletedGoal": [
@@ -12751,7 +13251,8 @@
       "2025-08-06",
       "2025-08-07",
       "2025-08-08",
-      "2025-08-09"
+      "2025-08-09",
+      "2025-08-11"
     ]
   }
 }
