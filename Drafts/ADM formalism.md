@@ -71,8 +71,8 @@ n^{\mu}R_{\mu \nu}n^{\nu} & =n^{\mu}(\nabla _{\nu}\nabla _{\mu}-\nabla _{\mu}\na
 ignore all the boundary terms at present
 
 $$\tag{.}\begin{align}
-S & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{d}x\sqrt{ -g }R \\
- & =\frac{1}{16\pi G}\int _{M}\mathrm{d}t\mathrm{d}^{d-1}xN\sqrt{ \sigma }(\tilde{R}+K_{ab}K^{ab}-K^{2})
+S & =\int _{M}\mathrm{d}^{d}x\sqrt{ -g }R \\
+ & =\int _{M}\mathrm{d}t\mathrm{d}^{d-1}xN\sqrt{ \sigma }(\tilde{R}+K_{ab}K^{ab}-K^{2})
 \end{align}$$
 
 the corresponding canonical momentums are
@@ -80,6 +80,36 @@ the corresponding canonical momentums are
 $$\tag{.}\begin{align}
 \pi _{N} & =\frac{\delta \mathcal{L}}{\delta \dot{N}}=0 \\
 \pi _{N_{a}} & = \frac{\delta \mathcal{L}}{\delta \dot{N}^{a}}=0 \\
-\pi ^{ab} & =\frac{\delta \mathcal{L}}{\delta h_{ab}} \\
- & =2N\sqrt{ \sigma }\left(K^{cd}\frac{\delta K_{cd}}{\delta h_{ab}}-K \frac{\delta K}{}\right)
+\pi ^{ab} & =\frac{\delta \mathcal{L}}{\delta \sigma_{ab}} \\
+ & =2N\sqrt{ \sigma }\left(K^{cd}\frac{\delta K_{cd}}{\delta \dot{\sigma}_{ab}}-K \frac{\delta K}{\delta \dot{\sigma} _{ab}}\right) \\
+ & =2N\sqrt{ \sigma }\left(K^{cd} \frac{1}{2N}\delta ^{(a}_{~c}\delta ^{b)}_{~d}-K \sigma ^{cd}\frac{1}{2N}\delta ^{(a}_{~c}\delta ^{b)}_{~d}\right) \\
+ & =\sqrt{ \sigma }\left(K^{ab}-\sigma ^{ab}K\right)
+\end{align}$$
+
+we have use
+
+$$\tag{.}\begin{align}
+\dot{\sigma}_{ab} & =2NK_{ab}+D_{a}N_{b}+D_{b}N_{a} \\
+\implies \frac{\delta K_{ab}}{\delta \dot{\sigma}_{cd}} & =\frac{1}{2N}\delta ^{(c}_{a}\delta ^{d)}_{b}
+\end{align}$$
+
+then
+
+$$\tag{.}\begin{align}
+\pi & =\sqrt{ \sigma }\left(2-d\right)K \\
+K & =\frac{1}{(2-d)}\frac{\pi}{\sqrt{ \sigma }} \\
+K_{ab} & =\frac{1}{\sqrt{ \sigma }}\left( \pi _{ab}+\frac{1}{2-d}\sigma _{ab}\pi \right) \\
+\dot{h}_{ab} & =2NK_{ab}+D_{a}N_{b}+D_{b}N_{a} \\
+ & =\frac{2N}{\sqrt{ \sigma }}\left(\pi _{ab}+\frac{1}{2-d}\sigma _{ab}\pi\right)+D_{a}N_{b}+D_{b}N_{a}
+\end{align}$$
+
+we have two primary constraints $\displaystyle{\pi _{N}=\pi _{N^{a}}=0}$. the Hamiltonian is then
+
+$$\tag{.}\begin{align}
+\mathcal{H} & =\pi ^{ab}\dot{h}_{ab}-\mathcal{L}  \\
+ & =\frac{2N}{\sqrt{ \sigma }}\left( \pi _{ab}\pi ^{ab}+\frac{1}{2-d}\pi ^{2} \right)+2\pi ^{ab}D_{a}N_{b}-N\sqrt{ \sigma }\left(\tilde{R}+\frac{1}{\sigma}\left( \pi _{ab}+\frac{1}{2-d}\sigma _{ab}\pi \right)\left( \pi ^{ab}+\frac{1}{2-d}\sigma ^{ab}\pi \right)+\frac{1}{\sigma}\left( \pi _{ab}\pi ^{ab}+\frac{2}{2-d}\pi ^{2}+\frac{1}{d-2} \pi ^{2} \right)-\frac{1}{(d-2)^{2}}\frac{\pi ^{2}}{\sigma}\right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\pi _{ab}\pi ^{ab}+\frac{1}{d-2}\pi ^{2}+\frac{2}{2-d}\pi ^{2}-\frac{1}{(d-2)^{2}}\pi ^{2}
 \end{align}$$
