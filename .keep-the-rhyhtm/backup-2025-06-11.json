@@ -13214,6 +13214,308 @@
           }
         ],
         "id": 454
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "TODO.md",
+        "wordCountStart": 72,
+        "charCountStart": 937,
+        "changes": [
+          {
+            "timeKey": "08:40",
+            "w": 1,
+            "c": 19
+          },
+          {
+            "timeKey": "09:10",
+            "w": 0,
+            "c": 4
+          }
+        ],
+        "id": 455
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/unitarity constraints on effective field theories by Anna Tokareva.md",
+        "wordCountStart": 2,
+        "charCountStart": 26,
+        "changes": [
+          {
+            "timeKey": "09:00",
+            "w": 0,
+            "c": 6
+          }
+        ],
+        "id": 456
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "Note/Project Euler/solutions.md",
+        "wordCountStart": 1889,
+        "charCountStart": 15708,
+        "changes": [],
+        "id": 457
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "2025-08-12.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "09:15",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 459
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "periodic note/daily note/2024-11-11.md",
+        "wordCountStart": 69,
+        "charCountStart": 430,
+        "changes": [
+          {
+            "timeKey": "09:20",
+            "w": -69,
+            "c": -430
+          }
+        ],
+        "id": 460
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "periodic note/yearly note/2024.md",
+        "wordCountStart": 1,
+        "charCountStart": 100,
+        "changes": [
+          {
+            "timeKey": "09:20",
+            "w": -1,
+            "c": -100
+          }
+        ],
+        "id": 461
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "periodic note/yearly note/2025.md",
+        "wordCountStart": 94,
+        "charCountStart": 691,
+        "changes": [
+          {
+            "timeKey": "09:20",
+            "w": -94,
+            "c": -691
+          }
+        ],
+        "id": 462
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "Note/useful results/ADM formalism.md",
+        "wordCountStart": 695,
+        "charCountStart": 2966,
+        "changes": [],
+        "id": 463
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "Drafts/ADM formalism.md",
+        "wordCountStart": 389,
+        "charCountStart": 1896,
+        "changes": [
+          {
+            "timeKey": "09:45",
+            "w": 66,
+            "c": 306
+          },
+          {
+            "timeKey": "09:50",
+            "w": 114,
+            "c": 493
+          },
+          {
+            "timeKey": "09:55",
+            "w": 60,
+            "c": 342
+          },
+          {
+            "timeKey": "10:00",
+            "w": 37,
+            "c": 187
+          },
+          {
+            "timeKey": "10:05",
+            "w": -1,
+            "c": -10
+          },
+          {
+            "timeKey": "10:10",
+            "w": 70,
+            "c": 289
+          },
+          {
+            "timeKey": "10:15",
+            "w": 148,
+            "c": 681
+          },
+          {
+            "timeKey": "10:20",
+            "w": 34,
+            "c": 163
+          },
+          {
+            "timeKey": "10:25",
+            "w": 56,
+            "c": 225
+          },
+          {
+            "timeKey": "10:30",
+            "w": -23,
+            "c": -87
+          },
+          {
+            "timeKey": "10:35",
+            "w": 18,
+            "c": 81
+          },
+          {
+            "timeKey": "10:40",
+            "w": 38,
+            "c": 199
+          },
+          {
+            "timeKey": "10:45",
+            "w": 43,
+            "c": 263
+          },
+          {
+            "timeKey": "11:55",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "12:15",
+            "w": 1,
+            "c": 1
+          }
+        ],
+        "id": 464
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/AdS3CFT2 duality by Matthias Gaberdiel.md",
+        "wordCountStart": 535,
+        "charCountStart": 2770,
+        "changes": [
+          {
+            "timeKey": "10:45",
+            "w": 1,
+            "c": 13
+          }
+        ],
+        "id": 465
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "Attachments/Assets/EPFL Lectures on Conformal Field Theory in D = 3 Dimensions (1601.05000v2).pdf",
+        "wordCountStart": 418280,
+        "charCountStart": 2039641,
+        "changes": [],
+        "id": 466
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "Articles/Proca in AdS3/two structures.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:40",
+            "w": 65,
+            "c": 328
+          },
+          {
+            "timeKey": "13:45",
+            "w": 169,
+            "c": 688
+          },
+          {
+            "timeKey": "13:50",
+            "w": 195,
+            "c": 762
+          },
+          {
+            "timeKey": "13:55",
+            "w": 194,
+            "c": 787
+          },
+          {
+            "timeKey": "14:00",
+            "w": 164,
+            "c": 740
+          },
+          {
+            "timeKey": "14:05",
+            "w": 6,
+            "c": 19
+          },
+          {
+            "timeKey": "14:45",
+            "w": 152,
+            "c": 615
+          },
+          {
+            "timeKey": "14:50",
+            "w": 70,
+            "c": 264
+          },
+          {
+            "timeKey": "14:55",
+            "w": 29,
+            "c": 105
+          },
+          {
+            "timeKey": "15:00",
+            "w": -4,
+            "c": 30
+          },
+          {
+            "timeKey": "15:05",
+            "w": -16,
+            "c": -71
+          },
+          {
+            "timeKey": "15:10",
+            "w": -179,
+            "c": -726
+          }
+        ],
+        "id": 467
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [],
+        "id": 468
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/supersymmetric localization by Xinyu Zhang.md",
+        "wordCountStart": 3,
+        "charCountStart": 37,
+        "changes": [
+          {
+            "timeKey": "15:15",
+            "w": 0,
+            "c": 5
+          }
+        ],
+        "id": 469
       }
     ],
     "daysWithCompletedGoal": [
@@ -13252,7 +13554,8 @@
       "2025-08-07",
       "2025-08-08",
       "2025-08-09",
-      "2025-08-11"
+      "2025-08-11",
+      "2025-08-13"
     ]
   }
 }
