@@ -54,3 +54,32 @@ g^{\mu \nu} & =-\frac{1}{N^{2}}n^{\mu}n^{\nu}+\frac{N^{a}}{N^{2}}(n^{\mu}e^{\nu}
 \end{align}
 $$
 
+notice that
+
+$$\tag{.}\begin{align}
+R & =\tilde{R}-K_{ab}K^{ab}+K^{2}-2R_{\mu \nu}n^{\mu}n^{\nu}
+\end{align}$$
+
+the 4th term
+
+$$\tag{.}\begin{align}
+n^{\mu}R_{\mu \nu}n^{\nu} & =n^{\mu}(\nabla _{\nu}\nabla _{\mu}-\nabla _{\mu}\nabla _{\nu})n^{\nu} \\
+ & =\nabla _{\nu}(n^{\mu}\nabla _{\mu}n^{\nu})-\nabla _{\nu}n^{\mu}\nabla _{\mu}n^{\nu}-\nabla _{\mu}(n^{\mu}\nabla _{\nu}n^{\nu})+\nabla _{\mu}n^{\mu}\nabla _{\nu}n^{\nu} \\
+ & =\nabla _{\mu}(n^{\nu}\nabla _{\nu}n^{\mu}-n^{\mu}\nabla _{\nu}n^{\nu})+K^{2}-K_{ab}K^{ab}
+\end{align}$$
+
+ignore all the boundary terms at present
+
+$$\tag{.}\begin{align}
+S & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{d}x\sqrt{ -g }R \\
+ & =\frac{1}{16\pi G}\int _{M}\mathrm{d}t\mathrm{d}^{d-1}xN\sqrt{ \sigma }(\tilde{R}+K_{ab}K^{ab}-K^{2})
+\end{align}$$
+
+the corresponding canonical momentums are
+
+$$\tag{.}\begin{align}
+\pi _{N} & =\frac{\delta \mathcal{L}}{\delta \dot{N}}=0 \\
+\pi _{N_{a}} & = \frac{\delta \mathcal{L}}{\delta \dot{N}^{a}}=0 \\
+\pi ^{ab} & =\frac{\delta \mathcal{L}}{\delta h_{ab}} \\
+ & =2N\sqrt{ \sigma }\left(K^{cd}\frac{\delta K_{cd}}{\delta h_{ab}}-K \frac{\delta K}{}\right)
+\end{align}$$
