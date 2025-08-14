@@ -79,8 +79,7 @@ $$\tag{.}\begin{align}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-AP_{n+1}^{(\mu,m-1)}(x)+BP_{n}^{(\mu,m+1)'}(x)+CP_{n}^{(\mu,m+1)}=0 \\
-AP_{n+1}^{(\mu,m-1)}(x)+BP_{n-1}^{(\mu+1,m)}(x)+CP_{n}^{(\mu,m+1)} & =0
+AP_{n+1}^{(\mu,m-1)}(x)+BP_{n}^{(\mu,m+1)'}(x)+CP_{n}^{(\mu,m+1)}=0
 \end{align}$$
 
 $$\tag{.}\begin{align}
@@ -90,28 +89,12 @@ AP_{n+1}^{(m-1,\mu)}(x)+BP_{n-1}^{(m,\mu+1)}(x)+CP_{n}^{(m+1,\mu)} & =0
 $$\tag{.}\begin{align}
 A{}_{2}F_{1}(-n-1,n+\mu+m+1;m;x)+B{}_{2}F_{1}(-n+1,n+m+\mu+1;m+1;x)+C{}_{2}F_{1}(-n,n+m+\mu+2;m+2;x) \\
 AF(\alpha-1,\gamma-1)+BF(\alpha+1)+CF(\beta+1,\gamma+1) & =0 \\
-AF(\alpha-1,\gamma-1)+BF+CF(\beta+1,\gamma+1) & =0
+\gamma(\gamma-1)F(\alpha-1,\gamma-1)-\gamma(\gamma-1)F+\beta(\gamma-\alpha)zF(\beta+1,\gamma+1)=0
 \end{align}$$
 
 $$\tag{.}\begin{align}
-F(\beta+1,\gamma+1)+F(\beta+1)+F(\gamma+1) & =0  \\
-F+F(\beta-1)+F(\gamma-1) & =0\\
-F(\alpha-1,\gamma-1)+F(\alpha-1)+F(\gamma-1) & =0 \\
-F+F(\gamma+1)+F(\alpha+1) & =0 \\
-F(\alpha-1)+F+F(\gamma+1) & =0 \\
-F(\beta+1)+F+F(\gamma+1) & =0 \\
-F(\gamma-1)+F+F(\gamma+1) & =0
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\beta \gamma(1-z)F(\beta+1) & =\gamma(\beta-(\gamma-\alpha)z)F+(\gamma-\alpha)(\gamma-\beta)zF(\gamma+1)\\
-\gamma(\gamma-1)(1-z)F(\gamma-1) & =\gamma(\gamma-1-(2\gamma-\alpha-\beta-1)z)F+(\gamma-\alpha-\beta)zF(\gamma+1) \\
-\gamma F(\alpha-1) & =\gamma(1-z)F+(\gamma-\beta)zF(\gamma+1) \\
-(\gamma-1)(\alpha-1-(\gamma-\beta-1)z)F(\alpha-1,\gamma-1) & =(\alpha-1) (\gamma-1)(1-z)F(\gamma-1)+(\gamma-\alpha-1)(\gamma-\beta-1)zF(\alpha-1) \\
-(\beta-(\gamma-\alpha)z)F(\beta+1,\gamma+1) & =-(\gamma-\beta)F(\gamma+1)+\gamma(1-z)F(\beta+1)
-\end{align}$$
-
-$$\tag{.}\begin{align}
-AF(\alpha-1,\gamma-1)+BF+CF(\beta+1,\gamma+1) & =0 \\
-\frac{A}{(\gamma-1)(\alpha-1)}
+AF(\alpha-1,\gamma-1)+BF+CF(\alpha+1) & =0 \\
+(\gamma-1)(\alpha-1-(\gamma-\beta-1)z)F(\alpha-1,\gamma-1) & =-(\gamma-\alpha)(\gamma-\beta-1)zF(\alpha-1)+(\alpha-1) (\gamma-1)(1-z)F(\gamma-1) \\
+(\gamma-1)F(\gamma-1) & =(\gamma-\alpha-1)F+\alpha F(\alpha+1) \\
+(\gamma-\alpha)F(\alpha-1) & =(\gamma-2\alpha+(\alpha-\beta)z)F+\alpha(1-z)F(\alpha+1)
 \end{align}$$
