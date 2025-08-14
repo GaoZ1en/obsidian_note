@@ -79,12 +79,12 @@ $$\tag{.}\begin{align}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-AP(\alpha,\beta-1,n+1)+BP(\alpha+1,\beta,n)+CP(\alpha,\beta+1,n) & =0
+AP_{n+1}^{(\mu,m-1)}(x)+BP_{n}^{(\mu,m+1)'}(x)+CP_{n}^{(\mu,m+1)}=0 \\
+AP_{n+1}^{(\mu,m-1)}(x)+BP_{n-1}^{(\mu+1,m)}(x)+CP_{n}^{(\mu,m+1)} & =0
 \end{align}$$
 
 $$\tag{.}\begin{align}
-1+r^{2} & =\frac{1}{\cos ^{2}\rho} \\
- & =\frac{1}{z} \\
- & =\frac{2}{1-x} \\
-r^{2} & =\frac{1+x}{1-x}
+AP(\alpha,\beta-1,n+1)+BP(\alpha+1,\beta,n-1)+CP(\alpha,\beta+1,n) \\
+A{}_{2}F_{1}(-n-1,n+\alpha+\beta+1;1+\alpha;x)+B{}_{2}F_{1}(-n+1,n+\alpha+\beta+1;2+\alpha;x)+C{}_{2}F_{1}(-n,n+\alpha+\beta+2;1+\alpha;x) \\
+AF(\alpha-1)+BF(\alpha+1,\gamma+1)+CF(\beta+1) & =0
 \end{align}$$
