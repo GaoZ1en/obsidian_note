@@ -76,6 +76,44 @@ $$\tag{.}\begin{align}
  & -4r^{2m-1}(1+r^{2})^{-(\mu+m+1)}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\left(\left[ (\mu+n)(n+m)\frac{r^{2}}{1+r^{2}}+m(n-1)(n+\mu+m+1)(m+1) \right]P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-n(n+m)P^{(\mu,m-1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)
 \end{align}$$
 
+$$\tag{.}\begin{align}
+ & \partial _{r}\left( r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & -\partial _{r}\left( r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & =-2r^{2m-1}(1+r^{2})^{-(\mu+m+2)}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +2r^{2m+1}(1+r^{2})^{-(\mu+m+2)}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +4r^{2m+1}(1+r^{2})^{-(\mu+m+3)}P_{n}^{(\mu,m-1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & -4r^{2m+1}(1+r^{2})^{-(\mu+m+3)}P_{n-1}^{(\mu,m+1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
+\end{align}$$
+
+---
+
+we want the following relation
+
+$$\tag{.}\begin{align}
+AP_{n-1}^{(\mu,m+1)'}(x)+BP_{n-1}^{(\mu,m+1)}(x)+CP_{n}^{(\mu,m-1)}(x) & =0 \\
+\implies AP_{n-2}^{(\mu+1,m+2)}+BP_{n-1}^{(\mu,m+1)}+CP_{n}^{(\mu,m-1)}(x) & =0 \\
+A{}_{2}F_{1}(-n+2,n+m+\mu+2;2+\mu ;x)+B{}_{2}F_{1}(-n+1,n+m+\mu+1;1+\mu;x)+C{}_{2}F_{1}(-n,n+m+\mu ;1+\mu;x) & =0 \\
+AF(\alpha+1,\beta+1,\gamma+1)+BF+CF(\alpha-1,\beta-1)
+\end{align}$$
+
+$\displaystyle{\alpha=-n+1,\beta=n+m+\mu+1,\gamma=\mu+1}$.
+
+$$\tag{.}\begin{align}
+AF(\alpha+1,\beta+1,\gamma+1)+BF(\alpha-1,\beta-1)+F \\
+F(\alpha+1,\beta+1,\gamma+1) & =F(\alpha+1,\gamma+1)+F(\beta+1,\gamma+1) \\
+F(\alpha+1,\gamma+1) & =F(\alpha+1)+F(\gamma+1) \\
+F(\alpha+1) & =F+F(\gamma+1) \\
+F(\beta+1,\gamma+1) & =F(\beta+1)+F(\gamma+1) \\
+F(\beta+1) & =F+F(\gamma+1) \\
+(\alpha-\beta)F(\alpha-1,\beta-1) & =-\frac{\beta-1}{\gamma}(\gamma(1-z)F+(\gamma-\beta)zF(\gamma+1))+\frac{\alpha-1}{\gamma}(\gamma(1-z)F+(\gamma-\alpha)zF(\gamma+1)) \\
+ & =(\alpha-\beta)(1-z)F+\frac{[(\alpha-1)(\gamma-\alpha)-(\beta-1)(\gamma-\beta)]z}{\gamma} F(\gamma+1)\\
+\gamma F(\alpha-1) & =\gamma(1-z)F+(\gamma-\beta)zF(\gamma+1) \\
+\gamma F(\beta-1) & =\gamma(1-z)F+(\gamma-\alpha)zF(\gamma+1)
+\end{align}$$
+
+
+---
+
 here we use
 
 $$\tag{.}\begin{align}
