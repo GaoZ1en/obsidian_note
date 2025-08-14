@@ -99,17 +99,26 @@ AF(\alpha+1,\beta+1,\gamma+1)+BF+CF(\alpha-1,\beta-1)
 $\displaystyle{\alpha=-n+1,\beta=n+m+\mu+1,\gamma=\mu+1}$.
 
 $$\tag{.}\begin{align}
-AF(\alpha+1,\beta+1,\gamma+1)+BF(\alpha-1,\beta-1)+F \\
-F(\alpha+1,\beta+1,\gamma+1) & =F(\alpha+1,\gamma+1)+F(\beta+1,\gamma+1) \\
-F(\alpha+1,\gamma+1) & =F(\alpha+1)+F(\gamma+1) \\
-F(\alpha+1) & =F+F(\gamma+1) \\
-F(\beta+1,\gamma+1) & =F(\beta+1)+F(\gamma+1) \\
-F(\beta+1) & =F+F(\gamma+1) \\
-(\alpha-\beta)F(\alpha-1,\beta-1) & =-\frac{\beta-1}{\gamma}(\gamma(1-z)F+(\gamma-\beta)zF(\gamma+1))+\frac{\alpha-1}{\gamma}(\gamma(1-z)F+(\gamma-\alpha)zF(\gamma+1)) \\
- & =(\alpha-\beta)(1-z)F+\frac{[(\alpha-1)(\gamma-\alpha)-(\beta-1)(\gamma-\beta)]z}{\gamma} F(\gamma+1)\\
-\gamma F(\alpha-1) & =\gamma(1-z)F+(\gamma-\beta)zF(\gamma+1) \\
-\gamma F(\beta-1) & =\gamma(1-z)F+(\gamma-\alpha)zF(\gamma+1)
+A \gamma(\gamma(\alpha+\beta-\gamma)F+(\gamma-\alpha)(\gamma-\beta)F(\gamma+1))+B\alpha \beta(1-z)(\gamma(1-z)F+(\gamma-\alpha-\beta+1)zF(\gamma+1)) & +\alpha \beta \gamma(1-z)F=0 \\
+ \alpha \beta(1-z)F(\alpha+1,\beta+1,\gamma+1)& =\gamma(\alpha+\beta-\gamma)F+(\gamma-\alpha)(\gamma-\beta)F(\gamma+1) \\
+\gamma F(\alpha-1,\beta-1) & =\gamma(1-z)F+(\gamma-\alpha-\beta+1)z F(\gamma+1)
 \end{align}$$
+
+$$\tag{.}\begin{align}
+A \gamma(\gamma(\alpha+\beta-\gamma)F+(\gamma-\alpha)(\gamma-\beta)F(\gamma+1))+B\alpha \beta(1-z)(\gamma(1-z)F+(\gamma-\alpha-\beta+1)zF(\gamma+1)) & +\alpha \beta \gamma(1-z)F=0 \\
+A\gamma ^{2}(\alpha+\beta-\gamma)+B\alpha \beta \gamma(1-z)^{2} & =-\alpha \beta \gamma(1-z) \\
+A\gamma(\gamma-\alpha)(\gamma-\beta)+B\alpha \beta(\gamma-\alpha-\beta+1)z(1-z) & =0
+\end{align}$$
+
+$$\tag{.}\begin{align}
+A & =\frac{-\alpha ^{2} \beta ^{2} \gamma(\gamma-\alpha-\beta+1)z(1-z)^{2}}{\alpha \beta \gamma ^{2}(1-z)[(\alpha+\beta-\gamma)(\gamma-\alpha-\beta+1)z-(\gamma-\alpha)(\gamma-\beta)(1-z)]} \\
+ & = \\
+B & =\frac{\alpha \beta \gamma ^{}}{\alpha \beta \gamma ^{2}(1-z)[(\alpha+\beta-\gamma)(\gamma-\alpha-\beta+1)z-(\gamma-\alpha)(\gamma-\beta)(1-z)]}
+\end{align}$$
+$$\tag{.}\begin{align}
+
+\end{align}$$
+
 
 
 ---
