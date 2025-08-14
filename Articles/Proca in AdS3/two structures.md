@@ -73,7 +73,7 @@ $$\tag{.}\begin{align}
  & -8mr^{2m+1}(1+r^{2})^{-(\mu+m+3)}P_{n-1}^{(\mu,m+1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
  & =-4mr^{2m-1}(1+r^{2})^{-(\mu+m+2)}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
  & +2r^{2m+1}(1+r^{2})^{-(\mu+m+3)}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\left(2(\mu+n)(\mu+n+m)r^{2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(\mu+m+n)(1+r^{2})P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right) \\
- & -4m
+ & -4mr^{2m-1}(1+r^{2})^{-(\mu+m+1)}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\left(-\frac{(\mu+1)(n+m)(\mu+n)^{2}}{n}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(\mu+1)\left[ -m(m+1) \frac{1}{1+r^{2}}+(\mu+n)(n+m) \frac{r^{2}}{1+r^{2}} \right]P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right)
 \end{align}$$
 
 here we use
@@ -84,12 +84,7 @@ $$\tag{.}\begin{align}
 4mP_{n}^{(\mu,m-1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =2(\mu+n)(\mu+n+m)r^{2}P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-n(\mu+m+n)(1+r^{2})P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
 \end{align}$$
 
-$$\tag{.}\begin{align}
-\frac{i(2n+m+\mu)}{2\pi} \Omega(A^{\mu}_{nm+},A^{\nu}_{(n-1)m-}) & =\int _{0}^{\infty} \mathrm{d}rr^{2m-1}(1+r^{2})^{-(\mu+m+2)}\left(AP_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m+1)}_{n-1}(r^{2}-1)+B\left[ P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2}+C\left[ P^{(\mu,m-1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2}\right) \\
-A & =-4(1+m)(1+2m+n+\mu)+(6n^{2}+6n\mu+6mn+4m\mu)r^{2} \\
-B & =4(\mu+n)(\mu+n+m)r^{2} \\
-C & =4n(n+m)(1+r^{2})
-\end{align}$$
+
 
 
 ---
@@ -100,35 +95,16 @@ $$\tag{.}\begin{align}
 AP_{n-1}^{(\mu,m+1)'}(x)+BP_{n-1}^{(\mu,m+1)}(x)+CP_{n}^{(\mu,m-1)}(x) & =0 \\
 \implies AP_{n-2}^{(\mu+1,m+2)}+BP_{n-1}^{(\mu,m+1)}+CP_{n}^{(\mu,m-1)}(x) & =0 \\
 A{}_{2}F_{1}(-n+2,n+m+\mu+2;2+\mu ;x)+B{}_{2}F_{1}(-n+1,n+m+\mu+1;1+\mu;x)+C{}_{2}F_{1}(-n,n+m+\mu ;1+\mu;x) & =0 \\
-AF(\alpha+1,\beta+1,\gamma+1)+BF+CF(\alpha-1,\beta-1)
+AF(\alpha+1,\beta+1,\gamma+1)+BF+CF(\alpha-1,\beta-1) & =0
 \end{align}$$
 
 $\displaystyle{\alpha=-n+1,\beta=n+m+\mu+1,\gamma=\mu+1}$.
 
 $$\tag{.}\begin{align}
-A \gamma(\gamma(\alpha+\beta-\gamma)F+(\gamma-\alpha)(\gamma-\beta)F(\gamma+1))+B\alpha \beta(1-z)(\gamma(1-z)F+(\gamma-\alpha-\beta+1)zF(\gamma+1)) & +\alpha \beta \gamma(1-z)F=0 \\
- \alpha \beta(1-z)F(\alpha+1,\beta+1,\gamma+1)& =\gamma(\alpha+\beta-\gamma)F+(\gamma-\alpha)(\gamma-\beta)F(\gamma+1) \\
-\gamma F(\alpha-1,\beta-1) & =\gamma(1-z)F+(\gamma-\alpha-\beta+1)z F(\gamma+1)
-\end{align}$$
-
-$$\tag{.}\begin{align}
-A \gamma(\gamma(\alpha+\beta-\gamma)F+(\gamma-\alpha)(\gamma-\beta)F(\gamma+1))+B\alpha \beta(1-z)(\gamma(1-z)F+(\gamma-\alpha-\beta+1)zF(\gamma+1)) & +\alpha \beta \gamma(1-z)F=0 \\
-A\gamma ^{2}(\alpha+\beta-\gamma)+B\alpha \beta \gamma(1-z)^{2} & =-\alpha \beta \gamma(1-z) \\
-A\gamma(\gamma-\alpha)(\gamma-\beta)+B\alpha \beta(\gamma-\alpha-\beta+1)z(1-z) & =0
-\end{align}$$
-
-$$\tag{.}\begin{align}
-2 \frac{r^{2}}{(1+r^{2})^{2}} P_{n-1}^{(\mu,m+1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =-(\mu+1)(n+m) \frac{(\mu+n)^{2}}{n}P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
- & +(\mu+1)[-m(m+1)z+(\mu+n)(n+m)(1-z)]P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
-\end{align}$$
-
-$$\tag{.}\begin{align}
-P^{(\alpha,\beta)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =\frac{\Gamma(\alpha+1+n)}{\Gamma(\alpha+1)\Gamma(n+1)}{}_{2}F_{1}\left( -n,n+\alpha+\beta+1;\alpha+1; \frac{1}{1+r^{2}} \right) \\
-\frac{\mathrm{d}^{k}}{\mathrm{d}z^{k}}P^{(\alpha,\beta)}_{n}(z) & = \frac{\Gamma(\alpha+\beta+n+1+k)}{2^{k}\Gamma(\alpha+\beta+n+1)}P_{n-k}^{(\alpha+k,\beta+k)}(z) \\
+\alpha \beta(\alpha-\beta)(1-z)F(\alpha+1,\beta+1,\gamma+1) & =\frac{\gamma-\beta}{\alpha}(\gamma F-(\gamma-\alpha)F(\gamma+1))-(\gamma-\alpha)(\gamma F-(\gamma-\beta)F(\gamma+1)) \\
 
 \end{align}$$
 
 
 
----
 
