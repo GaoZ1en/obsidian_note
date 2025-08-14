@@ -82,5 +82,33 @@ $$\tag{.}\begin{align}
 AP_{n+1}^{(\mu,m-1)}(x)+BP_{n}^{(\mu,m+1)'}(x)+CP_{n}^{(\mu,m+1)} & =0 \\
 AP_{n+1}^{(\mu,m-1)}(x)+BP_{n-1}^{(\mu+1,m+2)}(x)+CP_{n}^{(\mu,m+1)} & =0 \\
 A{}_{2}F_{1}\left(-n-1,n+\mu+m+1;1+\mu;x\right)+B{}_{2}F_{1}(-n+1,n+\mu+m+3;2+\mu;x)+C{}_{2}F_{1}(-n,n+m+\mu+2;1+\mu;x) & =0 \\
-AF(\alpha-1)+B(\alpha+1,\beta+2,\gamma+1)+CF(\beta+1) & =0
+AF(\alpha-1,\beta-1)+BF(\alpha+1,\beta+1,\gamma+1)+CF & =0
+\end{align}$$
+
+$$\tag{.}\begin{align}
+(\alpha-\beta)F(\alpha-1,\beta-1) & =-(\beta-1) F(\alpha-1)+(\alpha-1) F(\beta-1) \\
+\gamma F(\alpha-1) & =\gamma(1-z)F+(\gamma-\beta)zF(\gamma+1) \\
+\gamma F(\beta-1) & =\gamma(1-z)F+(\gamma-\alpha)F(\gamma+1) \\
+F(\alpha+1,\beta+1,\gamma+1) & =F(\alpha+1,\gamma+1)+F(\beta+1,\gamma+1) \\
+(\alpha-\beta)(1-z)F(\alpha+1,\beta+1,\gamma+1) & =-(\gamma-\alpha)F(\beta+1,\gamma+1)+(\gamma-\beta)F(\alpha+1,\gamma+1) \\
+(\alpha-(\gamma-\beta)z)F(\alpha+1,\gamma+1) & =-(\gamma-\alpha)F(\gamma+1)+\gamma(1-z)F(\alpha+1) \\
+(\beta-(\gamma-\alpha)z)F(\beta+1,\gamma+1) & =-(\gamma-\beta)F(\gamma+1)+\gamma(1-z)F(\beta+1) \\
+\alpha \gamma(1-z)F(\alpha+1) & =\gamma(\alpha-(\gamma-\beta)z)F+(\gamma-\alpha)(\gamma-\beta)zF(\gamma+1) \\
+\beta \gamma(1-z)F(\beta+1) & =\gamma(\beta-(\gamma-\alpha)z)F+(\gamma-\alpha)(\gamma-\beta)zF(\gamma+1)
+\end{align}$$
+
+$$\tag{.}\begin{align}
++A(1-z)F+\frac{A (\gamma+1-\alpha-\beta)z}{\gamma}F(\gamma+1) \\
+\frac{B\gamma(\alpha+\beta-\gamma)}{\alpha \beta(1-z)} F+\frac{B(\gamma-\alpha)(\gamma-\beta)}{\alpha\beta(1-z)}F(\gamma+1) \\
++F & =0
+\end{align}$$
+
+$$\tag{.}\begin{align}
+(1-z)A+\frac{\gamma(\alpha+\beta-\gamma)}{\alpha \beta(1-z)}B & =-1 \\
+\frac{A(\gamma+1-\alpha-\beta)z}{\gamma}+\frac{B(\gamma-\alpha)(\gamma-\beta)}{\alpha \beta(1-z)} & =0
+\end{align}$$
+
+$$\tag{.}\begin{align}
+A & =\frac{-(\gamma-\alpha)(\gamma-\beta)}{(\gamma-\alpha)(\gamma-\beta)(1-z)-\alpha \beta(\alpha+\beta-\gamma)(\gamma+1-\alpha-\beta)} \\
+B & =-\frac{\alpha \beta(1-z)}{(\gamma-\alpha)}
 \end{align}$$
