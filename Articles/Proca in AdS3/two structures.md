@@ -63,28 +63,45 @@ $$\tag{.}
 $$\tag{.}\begin{align}
 \frac{i(2n+m+\mu)}{2\pi} \Omega(A^{\mu}_{nm+},A^{\nu}_{(n-1)m-}) & =2m\int _{0}^{\infty} \mathrm{d}r\left(\partial _{r}\left( r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right. \\
  & \left.-\partial _{r}\left( r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P^{(\mu,m+1)}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right)r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right) \\
- & +2\int \mathrm{d}r\left[-\left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right)\frac{1}{1+r^{2}}+\left( \frac{(2n+m+\mu)^{2}}{1+r^{2}} -\frac{m^{2}}{r^{2}}\right)\right]r^{2m}(1+r^{2})^{-(\mu+m+1)}P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
+ & +2\int \mathrm{d}r\left[-\left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right)\frac{1}{1+r^{2}}+\left( \frac{(2n+m+\mu)^{2}}{1+r^{2}} -\frac{m^{2}}{r^{2}}\right)\right]r^{2m+1}(1+r^{2})^{-(\mu+m+1)}P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
 \end{align}$$
 
+the first two lines read
+
 $$\tag{.}\begin{align}
-& =\partial _{r}\left( r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
- & -\partial _{r}\left( r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P^{(\mu,m+1)}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right)r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & =-2r^{2m-1}(1+r^{2})^{-(\mu+m+2)}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & +4r^{2m+1}(1+r^{2})^{-(\mu+m+3)}P_{n}^{(\mu,m-1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & -4r^{2m+1}(1+r^{2})^{-(\mu+m+3)}P_{n-1}^{(\mu,m+1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+& 2m\partial _{r}\left( r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+ & -2m\partial _{r}\left( r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P^{(\mu,m+1)}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right)r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & =-4mr^{2m-1}(1+r^{2})^{-(\mu+m+2)}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +2r^{2m+1}(1+r^{2})^{-(\mu+m+3)}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\left(2(\mu+n)(\mu+n+m)r^{2}P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-n(\mu+m+n)(1+r^{2})P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right) \\
+ & -4r^{2m-1}(1+r^{2})^{-(\mu+m+1)}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\left(\left[ (\mu+n)(n+m)\frac{r^{2}}{1+r^{2}}+m(n-1)(n+\mu+m+1)(m+1) \right]P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-n(n+m)P^{(\mu,m-1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)
 \end{align}$$
 
-use
+here we use
 
 $$\tag{.}\begin{align}
-2m\frac{r^{2}}{(1+r^{2})^{2}} P^{(\mu,m+1)'}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =\left[ (1+\mu+n)(n+m+1) \frac{r^{2}}{1+r^{2}}+mn (n+\mu+m+2) (m+1) \right] P^{(\mu,m+1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)-(n+m+1)(n+1) P_{n+1}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+2m\frac{r^{2}}{(1+r^{2})^{2}} P^{(\mu,m+1)'}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =\left[ (\mu+n)(n+m) \frac{r^{2}}{1+r^{2}}+m(n-1) (n+\mu+m+1) (m+1) \right] P^{(\mu,m+1)}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right)-n(n+m) P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 4mP_{n}^{(\mu,m-1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =2(\mu+n)(\mu+n+m)r^{2}P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-n(\mu+m+n)(1+r^{2})P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
 \end{align}$$
 
+$$\tag{.}\begin{align}
+ & +2\left[-\left(\mu ^{2}r^{2}+m^{2}\right)+\left( (2n+m+\mu)^{2}r^{2}-m^{2}(1+r^{2})\right)\right]r^{2m-1}(1+r^{2})^{-(\mu+m+2)}P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+ & -4mr^{2m-1}(1+r^{2})^{-(\mu+m+2)}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +2r^{2m+1}(1+r^{2})^{-(\mu+m+3)}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\left(2(\mu+n)(\mu+n+m)r^{2}P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-n(\mu+m+n)(1+r^{2})P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right) \\
+ & -4r^{2m-1}(1+r^{2})^{-(\mu+m+1)}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\left(\left[ (\mu+n)(n+m)\frac{r^{2}}{1+r^{2}}+m(n-1)(n+\mu+m+1)(m+1) \right]P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-n(n+m)P^{(\mu,m-1)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\frac{i(2n+m+\mu)}{2\pi} \Omega(A^{\mu}_{nm+},A^{\nu}_{(n-1)m-}) & =\int _{0}^{\infty} \mathrm{d}rr^{2m-1}(1+r^{2})^{-(\mu+m+2)}\left(AP_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m+1)}_{n-1}(r^{2}-1)+B\left[ P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2}+C\left[ P^{(\mu,m-1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2}\right) \\
+A & =-4(1+m)(1+2m+n+\mu)+(6n^{2}+6n\mu+6mn+4m\mu)r^{2} \\
+B & =4(\mu+n)(\mu+n+m)r^{2} \\
+C & =4n(n+m)(1+r^{2})
+\end{align}$$
 
 
 
-
+$$\tag{.}\begin{align}
+-2\mu ^{2}r^{2}-2m^{2}+2(2n+m+\mu)^{2}r^{2}-2m^{2}(1+r^{2})-4m-2n(\mu+m+n)r^{2}-4[(\mu+n)(n+m)r^{2}+(1+r^{2})m(n-1)(n+\mu+m+1)(m+1)]
+\end{align}$$
 
 
 
