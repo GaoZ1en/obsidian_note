@@ -15,9 +15,9 @@ $$\tag{1.2}\begin{align}
  I_{1}& =r \partial _{r}A_{nm\pm}^{t}+\frac{2r^{2}}{1+r^{2}}A_{mn\pm}^{t}+\frac{r}{(1+r^{2})^{2}}\partial _{t} A^{r}_{nm\pm} \\
  & =\frac{r}{i\omega _{nm\pm}}\partial _{r}\left( \partial _{r}\tilde{A}_{nm\pm}^{r}+\frac{1}{r}\tilde{A}^{r}_{nm\pm}+im\tilde{A}^{\phi}_{nm\pm} \right)e^{-i\omega _{nm\pm} t}e^{im\phi}+\frac{2r^{2}}{i\omega _{nm\pm}(1+r^{2})}\left( \partial _{r}\tilde{A}^{r}_{nm\pm}+\frac{1}{r}\tilde{A}^{r}_{nm\pm} +im\tilde{A}^{\phi}_{nm\pm}\right)e^{-i\omega _{nm\pm}t}e^{im\phi}-\frac{i\omega _{nm\pm}r}{(1+r^{2})^{2}}\tilde{A}^{r}_{nm\pm}e^{-i\omega _{nm\pm}t}e^{im\phi} \\
  i\omega _{nm\pm}I_{1}e^{i\omega _{nm\pm}t}e^{-im\phi} & =r\partial _{r}^{2}\tilde{A}^{r}_{nm\pm}+\partial _{r}\tilde{A}^{r}_{nm\pm}-\frac{1}{r}\tilde{A}^{r}_{nm\pm}+imr\partial _{r}\tilde{A}^{\phi}_{nm\pm}+\frac{2r^{2}}{1+r^{2}}\partial _{r}\tilde{A}^{r}_{nm\pm}+\frac{2r}{1+r^{2}}\tilde{A}^{r}_{nm\pm}+\frac{2imr^{2}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm}+\frac{\omega _{nm\pm}^{2}r}{(1+r^{2})^{2}}\tilde{A}^{r}_{nm\pm} \\
- & =\frac{r}{1+r^{2}}\left((1+r^{2})\partial _{r}^{2}\tilde{A}^{r}_{nm\pm}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}_{nm\pm}+\left( 1-\frac{1}{r^{2}}+\frac{\omega ^{2}_{nm\pm}}{1+r^{2}} \right)\tilde{A}^{r}_{nm\pm}\right)-imr\partial _{r}\tilde{A}^{\phi}_{nm\pm}+\frac{2imr^{2}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm} \\
- & =\frac{2im}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm}+\frac{r}{1+r^{2}}\left( \mu ^{2}-\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r}_{nm\pm}-imr\partial _{r}\tilde{A}^{\phi}_{nm\pm}+\frac{2imr^{2}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm} \\
- & =\frac{r}{1+r^{2}}\left( \mu ^{2}-\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r}_{nm\pm}-imr\partial _{r}\tilde{A}^{\phi}_{nm\pm}+2im\tilde{A}^{\phi}_{nm\pm}
+ & =\frac{r}{1+r^{2}}\left((1+r^{2})\partial _{r}^{2}\tilde{A}^{r}_{nm\pm}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}_{nm\pm}+\left( 1-\frac{1}{r^{2}}+\frac{\omega ^{2}_{nm\pm}}{1+r^{2}} \right)\tilde{A}^{r}_{nm\pm}\right)+imr\partial _{r}\tilde{A}^{\phi}_{nm\pm}+\frac{2imr^{2}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm} \\
+ & =\frac{2im}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm}+\frac{r}{1+r^{2}}\left( \mu ^{2}-\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r}_{nm\pm}+imr\partial _{r}\tilde{A}^{\phi}_{nm\pm}+\frac{2imr^{2}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm} \\
+ & =\frac{r}{1+r^{2}}\left( \mu ^{2}-\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r}_{nm\pm}+\frac{im}{r}\partial _{r}(r^{2}\tilde{A}^{\phi}_{nm\pm})
 \end{align}$$
 
 here we use the eom
@@ -31,15 +31,6 @@ r\tilde{A}^{\phi}_{nm\pm} & =\Phi _{nm\pm}
 
 when $\displaystyle{m\geqslant 1,+}$, 
 
-$$\tag{.}\begin{align}
-i(2n+m+\mu)I_{1}e^{i(2n+m+\mu)t}e^{-im\phi} & =\frac{r}{1+r^{2}}\left( \mu ^{2}-\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r}_{nm+}-imr\partial _{r}\tilde{A}^{\phi}_{nm+}+2im\tilde{A}^{\phi}_{nm+} \\
- & =-i\left(\mu ^{2}-\frac{m^{2}}{r^{2}}\right)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & +3imr^{m-2}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & -im(m-1)r^{m-2}(1+r^{2})^{-(\mu+m)/2}P^{(\mu,m-1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
- & +im(\mu+m)r^{m-1}(1+r^{2})^{-(\mu+m+2)/2}P^{(\mu,m-1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
- & -ir^{m-1}(1+r^{2})^{-(\mu+m+4)/2}\left(2(\mu+n)(\mu+n+m)r^{2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(\mu+m+n)(1+r^{2})P^{(\mu,m-1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right) \\
- & -2i(\mu+n)(\mu+n+m)r^{m+1}(1+r^{2})^{-(\mu+m+4)/2}P^{(\mu,m+1)}
-\end{align}$$
 
 ---
 
