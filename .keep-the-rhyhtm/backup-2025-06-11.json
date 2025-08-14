@@ -13513,9 +13513,57 @@
             "timeKey": "15:15",
             "w": 0,
             "c": 5
+          },
+          {
+            "timeKey": "15:45",
+            "w": 34,
+            "c": 182
+          },
+          {
+            "timeKey": "15:50",
+            "w": 49,
+            "c": 260
           }
         ],
         "id": 469
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "Literature Notes/Localization techniques in quantum field theories (1608.02952v5).md",
+        "wordCountStart": 137,
+        "charCountStart": 940,
+        "changes": [
+          {
+            "timeKey": "15:45",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 470
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "Attachments/Assets/Localization techniques in quantum field theories (1608.02952v5).pdf",
+        "wordCountStart": 57580,
+        "charCountStart": 274269,
+        "changes": [],
+        "id": 471
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "Literature Notes/Introduction to localization in quantum field theory (1608.02953v3).md",
+        "wordCountStart": 161,
+        "charCountStart": 1052,
+        "changes": [],
+        "id": 472
+      },
+      {
+        "date": "2025-08-13",
+        "filePath": "Attachments/Assets/Introduction to localization in quantum field theory (1608.02953v3).pdf",
+        "wordCountStart": 62688,
+        "charCountStart": 294425,
+        "changes": [],
+        "id": 473
       }
     ],
     "daysWithCompletedGoal": [
