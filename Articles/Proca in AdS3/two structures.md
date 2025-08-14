@@ -81,3 +81,10 @@ $$\tag{.}\begin{align}
 $$\tag{.}\begin{align}
 AP(\alpha,\beta-1,n+1)+BP(\alpha+1,\beta,n)+CP(\alpha,\beta+1,n) & =0
 \end{align}$$
+
+$$\tag{.}\begin{align}
+1+r^{2} & =\frac{1}{\cos ^{2}\rho} \\
+ & =\frac{1}{z} \\
+ & =\frac{2}{1-x} \\
+r^{2} & =\frac{1+x}{1-x}
+\end{align}$$
