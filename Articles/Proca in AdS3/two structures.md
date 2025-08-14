@@ -74,16 +74,25 @@ $$\tag{.}\begin{align}
  & -4r^{2m+1}(1+r^{2})^{-(\mu+m+3)}P_{n-1}^{(\mu,m+1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-$$\tag{.}\begin{align}
-(2n+\mu+m)P_{n}^{(\mu,m-1)}(x) & =(n+\mu+m)P_{n}^{(\mu,m-1)'}+(n+\mu)P_{n-1}^{(\mu,m+1)}
-\end{align}$$
+use
 
 $$\tag{.}\begin{align}
-AP_{n+1}^{(\mu,m-1)}(x)+BP_{n}^{(\mu,m+1)'}(x)+CP_{n}^{(\mu,m+1)} & =0 \\
-AP_{n+1}^{(\mu,m-1)}(x)+BP_{n-1}^{(\mu+1,m+2)}(x)+CP_{n}^{(\mu,m+1)} & =0 \\
-A{}_{2}F_{1}\left(-n-1,n+\mu+m+1;1+\mu;x\right)+B{}_{2}F_{1}(-n+1,n+\mu+m+3;2+\mu;x)+C{}_{2}F_{1}(-n,n+m+\mu+2;1+\mu;x) & =0 \\
-AF(\alpha-1,\beta-1)+BF(\alpha+1,\beta+1,\gamma+1)+CF & =0
+2m\frac{r^{2}}{(1+r^{2})^{2}} P^{(\mu,m+1)'}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =\left[ (1+\mu+n)(n+m+1) \frac{r^{2}}{1+r^{2}}+mn (n+\mu+m+2) (m+1) \right] P^{(\mu,m+1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)-(n+m+1)(n+1) P_{n+1}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+4mP_{n}^{(\mu,m-1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =2(\mu+n)(\mu+n+m)r^{2}P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-n(\mu+m+n)(1+r^{2})P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
 \end{align}$$
+
+
+
+
+
+
+
+
+
+
+---
+
+
 
 $$\tag{.}\begin{align}
 (\alpha-\beta)F(\alpha-1,\beta-1) & =-(\beta-1) F(\alpha-1)+(\alpha-1) F(\beta-1) \\
@@ -110,5 +119,9 @@ $$\tag{.}\begin{align}
 
 $$\tag{.}\begin{align}
 A & =\frac{-(\gamma-\alpha)(\gamma-\beta)}{(\gamma-\alpha)(\gamma-\beta)(1-z)-\alpha \beta(\alpha+\beta-\gamma)(\gamma+1-\alpha-\beta)} \\
-B & =-\frac{\alpha \beta(1-z)}{(\gamma-\alpha)}
+B & =
+\end{align}$$
+
+$$\tag{.}\begin{align}
+-\gamma(\gamma-\alpha)(\gamma-\beta)F(\alpha-1,\beta-1)+\alpha \beta(\gamma+1-\alpha-\beta)z(1-z)F(\alpha+1,\beta+1,\gamma+1)+\gamma[(\gamma-\alpha)(\gamma-\beta)(1-z)-\alpha \beta (\alpha+\beta-\gamma)(\gamma+1-\alpha-\beta)]F & =0
 \end{align}$$
