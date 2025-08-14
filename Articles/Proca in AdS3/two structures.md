@@ -101,10 +101,23 @@ AF(\alpha+1,\beta+1,\gamma+1)+BF+CF(\alpha-1,\beta-1) & =0
 $\displaystyle{\alpha=-n+1,\beta=n+m+\mu+1,\gamma=\mu+1}$.
 
 $$\tag{.}\begin{align}
-\alpha \beta(\alpha-\beta)(1-z)F(\alpha+1,\beta+1,\gamma+1) & =\frac{\gamma-\beta}{\alpha}(\gamma F-(\gamma-\alpha)F(\gamma+1))-(\gamma-\alpha)(\gamma F-(\gamma-\beta)F(\gamma+1)) \\
-
+\alpha \beta(1-z)F(\alpha+1,\beta+1,\gamma+1) & =\gamma(\alpha+\beta-\gamma)F+(\gamma-\alpha)(\gamma-\beta)F(\gamma+1) \\
+\gamma F(\alpha-1,\beta-1) & =\gamma(1-z)F+(\gamma-\alpha-\beta+1)zF(\gamma+1)
 \end{align}$$
 
+$$\tag{.}\begin{align}
+A & = -\frac{\alpha \beta(\gamma-\alpha-\beta+1)z}{\gamma[(\gamma-\alpha-\beta+1)(\alpha+\beta-\gamma)z-\gamma(\gamma-\alpha)(\gamma-\beta)]} \\
+B & =\frac{(\gamma-\alpha)(\gamma-\beta)}{(\gamma-\alpha-\beta+1)(\alpha+\beta-\gamma)z-(\gamma-\alpha)(\gamma-\beta)(1-z)}
+\end{align}$$
 
+$$\tag{.}\begin{align}
+\gamma-\alpha-\beta & =-1-m \\
+\gamma-\alpha & =\mu+n \\
+\gamma-\beta & =-n-m
+\end{align}$$
 
-
+$$\tag{.}\begin{align}
+-m(n-1)(n+m+\mu+1)z{}_{2}F_{1}(-n+2,n+m+\mu+2;\mu+2;z) \\
++(\mu+1)[-m(m+1)z+(\mu+n)(n+m)]{}_{2}F_{1}(-n+1,n+m+\mu+1;\mu+1;z) \\
+-(\mu+1)(\mu+n)(n+m)F(\alpha-1,\beta-1) & =0
+\end{align}$$
