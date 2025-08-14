@@ -52,19 +52,10 @@ i(2n+m+\mu)I_{2}e^{i(2n+m+\mu)t}e^{-im\phi} & +[2n(n+m+\mu)+\mu(\mu+m)]r^{m+1}(1
  & +2(\mu+n)(\mu+n+m)r^{m+3}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-and when $\displaystyle{m\geqslant1,-}$
-
+here we use
 $$\tag{.}\begin{align}
-i(2n+m+\mu+2)I_{2}e^{i(2n+m+\mu+2)t}e^{-im\phi} & =-\left( m^{2}-\frac{(2n+m+\mu+2)^{2}r^{2}}{1+r^{2}} \right)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
- & -m(m+2)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & +m(\mu+m+2)r^{m+3}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & +2(n+1)(n+m+1)r^{m+3}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
- & -2[-m(m+1)+(\mu+n+1)(n+m+1)(1+r^{2})]P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & =2n(n+1)(n+m+1)r^{m+3}
-\end{align}$$
-
-$$\tag{.}\begin{align}
-2mP^{(\mu,m+1)'}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =-n(n+m)(1+r^{2})P^{(\mu,m-1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)+[-m(m+1)+(\mu+n)(n+m)(1+r^{2})] P^{(\mu,m+1)}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right)
+2mP^{(\mu,m+1)'}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =-n(n+m)(1+r^{2})P^{(\mu,m-1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)+[-m(m+1)+(\mu+n)(n+m)(1+r^{2})] P^{(\mu,m+1)}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
+2mP^{(\mu,m+1)'}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =-(n+1)(n+m+1)(1+r^{2})P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right)+[-m(m+1)+(\mu+n+1)(n+m+1)(1+r^{2})] P^{(\mu,m+1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)
 \end{align}$$
 
 ---
