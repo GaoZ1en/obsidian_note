@@ -48,3 +48,8 @@ $$\tag{.}\begin{align}
 \beta F(\beta+1,\gamma+1) & =\gamma F-(\gamma-\beta)F(\gamma+1) \\
 \alpha \beta(1-z)F(\alpha+1,\beta+1,\gamma+1) &=\gamma(\alpha+\beta-\gamma)F+(\gamma-\alpha)(\gamma-\beta)F(\gamma+1)
 \end{align}$$
+$$\tag{.}\begin{align}
+\implies n \beta(\gamma-\alpha-\beta+1)z(1-z){}_{2}F_{1}(\alpha+1,\beta+1;\gamma+1;z) \\
++\gamma[(\alpha+\beta-\gamma)(\gamma+n-\beta+1)z-(\gamma+n)(\gamma-\beta)(1-z)]{}_{2}F_{1}(\alpha,\beta;\gamma;z) \\
++\gamma(\gamma-\alpha)(\gamma-\beta){}_{2}F_{1}(\alpha-1,\beta-1;\gamma;z) & =0
+\end{align}$$
