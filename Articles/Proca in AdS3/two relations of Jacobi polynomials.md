@@ -36,12 +36,15 @@ where $\displaystyle{\alpha=-n,\beta=n+m+\mu+2,\gamma=\mu+1}$
 
 $$\tag{.}\begin{align}
 \gamma F(\alpha-1,\beta-1) & =\gamma(1-z)F+(\gamma-\alpha-\beta+1)zF(\gamma+1) \\
-F(\alpha+1,\beta+1,\gamma+1) & =F(\alpha+1,\gamma+1)+F(\beta+1,\gamma+1) \\
-F(\alpha+1,\gamma+1) & =F(\alpha+1)+F(\gamma+1) \\
-F(\beta+1,\gamma+1) & =F(\beta+1)+F(\gamma+1) \\
-F & =F(\beta-1)+F(\alpha-1) \\
-F & =F(\gamma-1)+F(\alpha-1) \\
-F & =F(\gamma-1)+F(\beta-1) \\
-F(\alpha+1) & =F+F(\gamma+1) \\
-F(\beta+1) & =F+F(\gamma+1)
+(\alpha-\beta)(1-z)F(\alpha+1,\beta+1,\gamma+1) & =(\gamma-\beta)F(\alpha+1,\gamma+1)-(\gamma-\alpha)F(\beta+1,\gamma+1) \\
+(\alpha-(\gamma-\beta)z)F(\alpha+1,\gamma+1) & =\gamma(1-z)F(\alpha+1)-(\gamma-\alpha)F(\gamma+1) \\
+(\beta-(\gamma-\alpha)z)F(\beta+1,\gamma+1) & =\gamma(1-z)F(\beta+1)-(\gamma-\beta)F(\gamma+1) \\
+\alpha \gamma(1-z)F(\alpha+1) & =\gamma(\alpha-(\gamma-\beta)z)F+(\gamma-\alpha)(\gamma-\beta)zF(\gamma+1) \\
+\beta \gamma(1-z)F(\beta+1) & =\gamma(\beta-(\gamma-\alpha)z)F+(\gamma-\alpha)(\gamma-\beta)zF(\gamma+1)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\alpha F(\alpha+1,\gamma+1) & =\gamma F-(\gamma-\alpha)F(\gamma+1) \\
+\beta F(\beta+1,\gamma+1) & =\gamma F-(\gamma-\beta)F(\gamma+1) \\
+\alpha \beta(1-z)F(\alpha+1,\beta+1,\gamma+1) &=\gamma(\alpha+\beta-\gamma)F+(\gamma-\alpha)(\gamma-\beta)F(\gamma+1)
 \end{align}$$
