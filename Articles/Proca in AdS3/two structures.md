@@ -32,8 +32,7 @@ r\tilde{A}^{\phi}_{nm\pm} & =\Phi _{nm\pm}
 when $\displaystyle{m\geqslant 1,+}$, 
 
 $$\tag{.}\begin{align}
-(2n+m+\mu)I_{1}e^{i(2n+m+\mu)t}e^{-im\phi} & =2(\mu+n)(\mu+n+m)r^{m+2}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & -[\mu(\mu+m)+2n(\mu+m+n)]r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+(2n+m+\mu)I_{1}e^{i(2n+m+\mu)t}e^{-im\phi} & =-i\frac{r}{1+r^{2}}\left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right)r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}+\frac{im}{r}\partial _{r}\left(r^{m}(1+r^{2})^{-(\mu+m)/2}\right)
 \end{align}$$
 
 ---
@@ -73,30 +72,3 @@ $$\tag{.}\begin{align}
  & -8mr^{2m+1}(1+r^{2})^{-(\mu+m+3)}P_{n-1}^{(\mu,m+1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
 \end{align}$$
 
-
----
-
-we want the following relation
-
-$$\tag{.}\begin{align}
-AP_{n-1}^{(\mu,m+1)'}(x)+BP_{n-1}^{(\mu,m+1)}(x)+CP_{n}^{(\mu,m-1)}(x) & =0 \\
-\implies AP_{n-2}^{(\mu+1,m+2)}+BP_{n-1}^{(\mu,m+1)}+CP_{n}^{(\mu,m-1)}(x) & =0 \\
-A{}_{2}F_{1}(-n+2,n+m+\mu+2;2+\mu ;x)+B{}_{2}F_{1}(-n+1,n+m+\mu+1;1+\mu;x)+C{}_{2}F_{1}(-n,n+m+\mu ;1+\mu;x) & =0 \\
-AF(\alpha+1,\beta+1,\gamma+1)+BF+CF(\alpha-1,\beta-1) & =0
-\end{align}$$
-
-$\displaystyle{\alpha=-n+1,\beta=n+m+\mu+1,\gamma=\mu+1}$.
-
-$$\tag{.}\begin{align}
-\alpha \beta(1-z)F(\alpha+1,\beta+1,\gamma+1) & =\gamma(\alpha+\beta-\gamma)F+(\gamma-\alpha)(\gamma-\beta)F(\gamma+1) \\
-\gamma F(\alpha-1,\beta-1) & =\gamma(1-z)F+(\gamma-\alpha-\beta+1)zF(\gamma+1)
-\end{align}$$
-
-$$\tag{.}\begin{align}
-A & = -\frac{\alpha \beta(\gamma-\alpha-\beta+1)z}{\gamma[(\gamma-\alpha-\beta+1)(\alpha+\beta-\gamma)z-\gamma(\gamma-\alpha)(\gamma-\beta)]} \\
-B & =\frac{(\gamma-\alpha)(\gamma-\beta)}{(\gamma-\alpha-\beta+1)(\alpha+\beta-\gamma)z-(\gamma-\alpha)(\gamma-\beta)(1-z)}
-\end{align}$$
-
-$$\tag{.}\begin{align}
-2mP^{(\mu,m+1)'}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =-n(n+m)(1+r^{2})P^{(\mu,m-1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)+[-m(m+1)+(\mu+n)(n+m)(1+r^{2})] P^{(\mu,m+1)}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right)
-\end{align}$$
