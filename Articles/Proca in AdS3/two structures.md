@@ -55,12 +55,19 @@ $$\tag{.}\begin{align}
 and when $\displaystyle{m\geqslant 1,-}$
 
 $$\tag{.}\begin{align}
- (2n+m+\mu)I_{1}e^{i(2n+m+\mu)t}e^{-im\phi} & = \left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right)r^{m+2}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}-1}\right) \\
+ (2n+m+\mu)I_{1}e^{i(2n+m+\mu)t}e^{-im\phi} & =-2n(n+m)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +(2(\mu+n)(n+m)+\mu(\mu-m))r^{m+2}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\omega _{nm\pm}I_{1}e^{i\omega _{nm\pm}t}e^{-im\phi} & =\left( \mu ^{2}+\frac{m^{2}}{r^{2}} \right)r^{m+2}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
  & +m(m+2)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
  & -m(\mu+m+2)r^{m+2}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & +2r^{m}(1+r^{2})^{-(\mu+m+6)/2}\left(((\mu+n)(n+m)r^{2}-m(m+1))(1+r^{2})P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(n+m)(1+r^{2})^{2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right) \\
- & -2n(n+m)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(r^{2}-\right)
+ & +2r^{m}\left(1+r^{2}\right)^{-(\mu+m+4)/2}((\mu+n)(n+m)r^{2}-m(m+1))P_{n-1}^{(\mu,m+1)} \\
+ & \mu ^{2}+m(m+2)-m(\mu+m+2)+2(\mu+n)(n+m) \\
+ & \mu ^{2}+2m-m\mu-2m+2\mu n+2\mu m+2n^{2}+2mn
 \end{align}$$
+
 
 $$\tag{.}\begin{align}
 2mr^{2}P_{n-1}^{(\mu,m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right) & =[(\mu+n)(n+m)r^{2}-m(m+1)](1+r^{2})P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(n+m)(1+r^{2})^{2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
@@ -90,7 +97,20 @@ $$\tag{.}\begin{align}
 
 and when $\displaystyle{m\geqslant 1,-}$
 
+$$\tag{.}\begin{align}
+i\omega _{nm\pm}I_{2}e^{i\omega _{nm\pm}t}e^{-im\phi} & =-\left( m^{2}-\frac{(2n+m+\mu)^{2}r^{2}}{1+r^{2}} \right)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & -m(m+2)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +m(\mu+m+2)r^{m+3}\left(1+r^{2}\right)^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & -2r^{m+1}(1+r^{2})^{-(\mu+m+6)/2}\left(((\mu+n)(n+m)r^{2}-m(m+1))(1+r^{2})P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right) \\
+ & +2n(n+m)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +(2n+m+\mu)^{2}-m(m+2)+m(\mu+m+2)-2(\mu+n)(n+m) \\
+ & =2n^{2}+2nm+2n\mu+\mu ^{2}+m\mu+m^{2} \\
+ & +2n(n+m+\mu)+\mu(\mu+m)+m^{2}
+\end{align}$$
 
+$$\tag{.}\begin{align}
+2mr^{2}P_{n-1}^{(\mu,m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right) & =[(\mu+n)(n+m)r^{2}-m(m+1)](1+r^{2})P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(n+m)(1+r^{2})^{2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
 
 ---
 
