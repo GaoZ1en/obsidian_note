@@ -71,7 +71,8 @@ $$\tag{2.1}\begin{align}
 I_{2} & =r\partial _{\phi}A_{nm\pm}^{t}+\frac{r^{3}}{1+r^{2}}\partial _{t}A^{\phi}_{nm\pm} \\
  & = \left( imr\tilde{A}^{t}_{nm\pm}-\frac{i\omega _{nm\pm}r^{3}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm} \right)e^{-i\omega _{nm\pm}t}e^{im\phi} \\
  & = \left( \frac{imr}{i\omega _{nm\pm}}\left(\partial _{r}\tilde{A}^{r}_{nm\pm}+\frac{1}{r}\tilde{A}^{r}_{nm\pm}+im\tilde{A}^{\phi}_{nm\pm}\right)-\frac{i\omega _{nm\pm}r^{3}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm}\right)e^{-i\omega _{nm\pm}t}e^{im\phi} \\
-i\omega _{nm\pm}I_{2}e^{i\omega _{nm\pm}t}e^{-im\phi} & =im\partial _{r}(r\tilde{A}^{r}_{nm\pm})-\left( m^{2}-\frac{\omega _{nm\pm}^{2}r^{2}}{1+r^{2}} \right)r\tilde{A}^{\phi}_{nm\pm}
+i\omega _{nm\pm}I_{2}e^{i\omega _{nm\pm}t}e^{-im\phi} & =imr\partial _{r}\tilde{A}^{r}_{nm\pm}+im\tilde{A}^{r}_{nm\pm}-m^{2}r\tilde{A}^{\phi}_{nm\pm}+\frac{\omega _{nm\pm}^{2}r^{3}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm} \\
+ & =im\partial _{r}(r\tilde{A}^{r}_{nm\pm})-\left( m^{2}-\frac{\omega _{nm\pm}^{2}r^{2}}{1+r^{2}} \right)\tilde{A}^{\phi}_{nm\pm}
 \end{align}$$
 
 whem $\displaystyle{m\geqslant 1,+}$
@@ -90,8 +91,7 @@ $$\tag{.}\begin{align}
 and when $\displaystyle{m\geqslant 1,-}$
 
 $$\tag{.}\begin{align}
-i(2n+m+\mu)I_{2}e^{i(2n+m+\mu)t}e^{-im\phi} & =(2n(n+m+\mu)+\mu ^{2}+m^{2}+m\mu)r^{m+3}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & +2n(n+m)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+i(2n+m+\mu)I
 \end{align}$$
 
 here we use

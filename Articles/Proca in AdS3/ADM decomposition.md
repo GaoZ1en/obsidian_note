@@ -384,3 +384,6 @@ n_{1}-n_{2} & =\frac{1}{2}(|m+1|-|m-1|) \\
 \end{cases}
 \end{align}$$
 
+$$\tag{.}\begin{align}
+\tilde{A}^{t} & =\frac{1}{i\omega}\left( \partial _{r}\tilde{A}^{r}+\frac{1}{r}\tilde{A}^{r}+im\tilde{A}^{\phi} \right)
+\end{align}$$

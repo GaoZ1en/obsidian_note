@@ -14376,6 +14376,187 @@
           }
         ],
         "id": 481
+      },
+      {
+        "date": "2025-08-16",
+        "filePath": "Articles/Proca in AdS3/two structures.md",
+        "wordCountStart": 1922,
+        "charCountStart": 7698,
+        "changes": [
+          {
+            "timeKey": "11:55",
+            "w": 121,
+            "c": 455
+          },
+          {
+            "timeKey": "12:00",
+            "w": 59,
+            "c": 215
+          },
+          {
+            "timeKey": "12:05",
+            "w": -160,
+            "c": -570
+          },
+          {
+            "timeKey": "12:15",
+            "w": 134,
+            "c": 538
+          },
+          {
+            "timeKey": "12:25",
+            "w": 149,
+            "c": 484
+          },
+          {
+            "timeKey": "12:30",
+            "w": -122,
+            "c": -413
+          },
+          {
+            "timeKey": "12:35",
+            "w": 276,
+            "c": 983
+          },
+          {
+            "timeKey": "12:40",
+            "w": 30,
+            "c": 84
+          },
+          {
+            "timeKey": "12:45",
+            "w": 7,
+            "c": 30
+          },
+          {
+            "timeKey": "12:50",
+            "w": 72,
+            "c": 305
+          },
+          {
+            "timeKey": "12:55",
+            "w": 102,
+            "c": 311
+          },
+          {
+            "timeKey": "13:00",
+            "w": -2,
+            "c": -10
+          },
+          {
+            "timeKey": "13:10",
+            "w": -347,
+            "c": -1168
+          },
+          {
+            "timeKey": "13:15",
+            "w": 31,
+            "c": 117
+          },
+          {
+            "timeKey": "13:20",
+            "w": 121,
+            "c": 388
+          },
+          {
+            "timeKey": "13:25",
+            "w": -125,
+            "c": -433
+          },
+          {
+            "timeKey": "13:30",
+            "w": 237,
+            "c": 847
+          },
+          {
+            "timeKey": "13:35",
+            "w": 81,
+            "c": 272
+          },
+          {
+            "timeKey": "13:40",
+            "w": 168,
+            "c": 612
+          },
+          {
+            "timeKey": "13:45",
+            "w": 71,
+            "c": 277
+          },
+          {
+            "timeKey": "13:50",
+            "w": -165,
+            "c": -595
+          },
+          {
+            "timeKey": "13:55",
+            "w": 192,
+            "c": 816
+          },
+          {
+            "timeKey": "14:00",
+            "w": 0,
+            "c": 8
+          },
+          {
+            "timeKey": "14:05",
+            "w": 6,
+            "c": 49
+          },
+          {
+            "timeKey": "14:10",
+            "w": 4,
+            "c": -10
+          },
+          {
+            "timeKey": "15:40",
+            "w": 18,
+            "c": 79
+          },
+          {
+            "timeKey": "15:45",
+            "w": 63,
+            "c": 250
+          },
+          {
+            "timeKey": "15:50",
+            "w": -87,
+            "c": -376
+          }
+        ],
+        "id": 482
+      },
+      {
+        "date": "2025-08-16",
+        "filePath": "Articles/Proca in AdS3/two relations of Jacobi polynomials.md",
+        "wordCountStart": 299,
+        "charCountStart": 1132,
+        "changes": [],
+        "id": 483
+      },
+      {
+        "date": "2025-08-16",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6558,
+        "charCountStart": 27678,
+        "changes": [
+          {
+            "timeKey": "13:55",
+            "w": -563,
+            "c": -2171
+          },
+          {
+            "timeKey": "14:40",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "16:00",
+            "w": 32,
+            "c": 156
+          }
+        ],
+        "id": 484
       }
     ],
     "daysWithCompletedGoal": [
