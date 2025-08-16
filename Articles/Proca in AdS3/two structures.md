@@ -56,13 +56,29 @@ and when $\displaystyle{m\geqslant 1,-}$
 
 $$\tag{.}\begin{align}
  (2n+m+\mu)I_{1}e^{i(2n+m+\mu)t}e^{-im\phi} & =-2n(n+m)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & +(2(\mu+n)(n+m)+\mu(\mu+m))r^{m+2}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
+ & +\left( 2\left( n+\frac{\mu+m}{2} \right)^{2}+\frac{1}{2}(\mu-m)(\mu+m) \right)r^{m+2}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
 \end{align}$$
 
 here we use
 
 $$\tag{.}\begin{align}
 2mr^{2}P_{n-1}^{(\mu,m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right) & =[(\mu+n)(n+m)r^{2}-m(m+1)](1+r^{2})P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(n+m)(1+r^{2})^{2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+when $\displaystyle{m\leqslant -1,+}$
+
+$$\tag{.}\begin{align}
+\tilde{A}^{r} & =-ir^{-m+1}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+r\tilde{A}^{\phi} & =r^{-m+1}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+ (2n-m+\mu+2)I_{1}e^{i(2n-m+\mu+2)t}e^{-im\phi} & =\frac{r}{1+r^{2}}\left( \mu ^{2}+\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r}_{nm\pm}+\frac{im}{r}\partial _{r}(r^{2}\tilde{A}^{\phi}_{nm\pm}) \\
+ & =-\left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right)r^{-m+2}(1+r^{2})^{-(\mu-m+4)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +\frac{m}{r}\partial _{r}\left(r^{-m+2}\left(1+r^{2}\right)^{-(\mu-m+2)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right) \\
+ & +m(-m+2)r^{-m}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m+2)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & -m(\mu-m+2)r^{-m+2}(1+r^{2})^{-(\mu-m+4)/2}P_{n}^{(\mu,-m+2)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & 
 \end{align}$$
 
 ---
@@ -72,7 +88,7 @@ I_{2} & =r\partial _{\phi}A_{nm\pm}^{t}+\frac{r^{3}}{1+r^{2}}\partial _{t}A^{\ph
  & = \left( imr\tilde{A}^{t}_{nm\pm}-\frac{i\omega _{nm\pm}r^{3}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm} \right)e^{-i\omega _{nm\pm}t}e^{im\phi} \\
  & = \left( \frac{imr}{i\omega _{nm\pm}}\left(\partial _{r}\tilde{A}^{r}_{nm\pm}+\frac{1}{r}\tilde{A}^{r}_{nm\pm}+im\tilde{A}^{\phi}_{nm\pm}\right)-\frac{i\omega _{nm\pm}r^{3}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm}\right)e^{-i\omega _{nm\pm}t}e^{im\phi} \\
 i\omega _{nm\pm}I_{2}e^{i\omega _{nm\pm}t}e^{-im\phi} & =imr\partial _{r}\tilde{A}^{r}_{nm\pm}+im\tilde{A}^{r}_{nm\pm}-m^{2}r\tilde{A}^{\phi}_{nm\pm}+\frac{\omega _{nm\pm}^{2}r^{3}}{1+r^{2}}\tilde{A}^{\phi}_{nm\pm} \\
- & =im\partial _{r}(r\tilde{A}^{r}_{nm\pm})-\left( m^{2}-\frac{\omega _{nm\pm}^{2}r^{2}}{1+r^{2}} \right)\tilde{A}^{\phi}_{nm\pm}
+ & =im\partial _{r}(r\tilde{A}^{r}_{nm\pm})-\left( m^{2}-\frac{\omega _{nm\pm}^{2}r^{2}}{1+r^{2}} \right)r\tilde{A}^{\phi}_{nm\pm}
 \end{align}$$
 
 whem $\displaystyle{m\geqslant 1,+}$
@@ -91,7 +107,12 @@ $$\tag{.}\begin{align}
 and when $\displaystyle{m\geqslant 1,-}$
 
 $$\tag{.}\begin{align}
-i(2n+m+\mu)I
+A=-ir^{m}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+i(2n+m+\mu)I_{2}e^{i(2n+m+\mu)t}e^{-im\phi} &=2n(n+m)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +\left( 2\left( n+\frac{\mu+m}{2} \right)^{2}+\frac{1}{2}(\mu-m)(\mu+m) \right)r^{m+3}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
 here we use
