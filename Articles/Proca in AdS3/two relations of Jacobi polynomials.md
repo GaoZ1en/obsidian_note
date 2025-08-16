@@ -18,3 +18,9 @@ $$\begin{align}
 2mr^{2}P_{n-1}^{(\mu,m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right) & =[(\mu+n)(n+m)r^{2}-m(m+1)](1+r^{2})P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(n+m)(1+r^{2})^{2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
+and by $\displaystyle{m\leftrightarrow -m}$, 
+
+$$\tag{.}\begin{align}
+-2mr^{2}P_{n}^{(\mu,-m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right) & =[(\mu+n+1)(n-m+1)r^{2}-m(m-1)](1+r^{2})P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-(n+1)(n-m+1)(1+r^{2})^{2}P_{n+1}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+-2mP_{n}^{(\mu,-m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right) & =(\mu+n)(\mu-m+n)r^{2}P_{n-1}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(\mu-m+n)\left(1+r^{2}\right)P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
