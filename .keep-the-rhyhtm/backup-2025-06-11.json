@@ -14288,11 +14288,94 @@
           },
           {
             "timeKey": "11:10",
-            "w": -13,
-            "c": -54
+            "w": -592,
+            "c": -2762
+          },
+          {
+            "timeKey": "11:15",
+            "w": 31,
+            "c": 137
+          },
+          {
+            "timeKey": "11:20",
+            "w": -8,
+            "c": -34
+          },
+          {
+            "timeKey": "11:25",
+            "w": -4,
+            "c": -13
+          },
+          {
+            "timeKey": "11:30",
+            "w": 103,
+            "c": 379
+          },
+          {
+            "timeKey": "11:35",
+            "w": 52,
+            "c": 206
+          },
+          {
+            "timeKey": "11:40",
+            "w": 50,
+            "c": 156
+          },
+          {
+            "timeKey": "11:50",
+            "w": 0,
+            "c": 2
           }
         ],
         "id": 479
+      },
+      {
+        "date": "2025-08-15",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6558,
+        "charCountStart": 27678,
+        "changes": [
+          {
+            "timeKey": "11:10",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 480
+      },
+      {
+        "date": "2025-08-15",
+        "filePath": "Articles/Proca in AdS3/two structures.md",
+        "wordCountStart": 1772,
+        "charCountStart": 7447,
+        "changes": [
+          {
+            "timeKey": "11:50",
+            "w": -302,
+            "c": -1410
+          },
+          {
+            "timeKey": "11:55",
+            "w": 22,
+            "c": 83
+          },
+          {
+            "timeKey": "12:00",
+            "w": 300,
+            "c": 1104
+          },
+          {
+            "timeKey": "12:05",
+            "w": 82,
+            "c": 313
+          },
+          {
+            "timeKey": "12:10",
+            "w": 48,
+            "c": 161
+          }
+        ],
+        "id": 481
       }
     ],
     "daysWithCompletedGoal": [
@@ -14333,8 +14416,7 @@
       "2025-08-09",
       "2025-08-11",
       "2025-08-13",
-      "2025-08-14",
-      "2025-08-15"
+      "2025-08-14"
     ]
   }
 }
