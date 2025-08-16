@@ -90,7 +90,7 @@ $$\tag{.}\begin{align}
 and when $\displaystyle{m\geqslant 1,-}$
 
 $$\tag{.}\begin{align}
-i\omega _{nm\pm}I_{2}e^{i\omega _{nm\pm}t}e^{-im\phi} & =(2n(n+m+\mu)+\mu ^{2}+m^{2}+m\mu)r^{m+3}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+i(2n+m+\mu)I_{2}e^{i(2n+m+\mu)t}e^{-im\phi} & =(2n(n+m+\mu)+\mu ^{2}+m^{2}+m\mu)r^{m+3}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
  & +2n(n+m)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
@@ -136,7 +136,7 @@ when $\displaystyle{m\geqslant 1,n\geqslant 1}$,
 $$\tag{.}\begin{align}
 \frac{i(2n+m+\mu)}{2\pi} \Omega(A^{\mu}_{nm+},A^{\nu*}_{(n-1)m-}) & =4(\mu+n)(\mu+m+n)\int _{0}^{\infty}\mathrm{d}r r^{2m+3}(1+r^{2})^{-(\mu+m+3)}\left[ P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right]^{2} \\
  & +4n(n+m)\int _{0}^{\infty}\mathrm{d}rr^{2m-1}\left(1+r^{2}\right)^{-(\mu+m+1)}\left[ P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right]^{2} \\
- & =4(\mu+n)(\mu+m+n) \frac{\Gamma(n+\mu+1)\Gamma(n+m+2)}{2(2n+m)}
+ & = \frac{4\Gamma(\mu+n+1)\Gamma(n+m+1)}{(2n+m+\mu)\Gamma(\mu+n+m)(n-1)!}
 \end{align}$$
 
 $$\tag{.}\begin{align}
@@ -149,3 +149,5 @@ $$\tag{.}\begin{align}
 2mP_{n}^{(\mu,m-1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =(\mu+n)(\mu+m+n)r^{2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(\mu+m+n)(1+r^{2})P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\ \\
 2mr^{2}P_{n-1}^{(\mu,m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right) & =[(\mu+n)(n+m)r^{2}-m(m+1)](1+r^{2})P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(n+m)(1+r^{2})^{2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
+
+when $\displaystyle{m\leqslant 1,n\geqslant 1}$
