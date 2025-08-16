@@ -384,35 +384,3 @@ n_{1}-n_{2} & =\frac{1}{2}(|m+1|-|m-1|) \\
 \end{cases}
 \end{align}$$
 
-we first consider the case $\displaystyle{m\geqslant 1}$. set $\displaystyle{n_{2}=n\in \mathbb{Z},n_{1}=n_{2}+1}$, then
-
-$$\tag{.}\begin{align}
-\frac{i\omega}{2\pi}\Omega(A^{\mu}_{(n+1)m+},A^{\nu}_{nm-}) & =4m\int \mathrm{d}rr^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \partial _{r}\left( r^{m-1}(1+r^{2})^{-(\mu+m)/2}P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right) \\
- & +2\int \mathrm{d}r \left[ (\omega ^{2}-\mu ^{2}-m^{2})r^{2}-2m^{2} \right]r^{2m-1}(1+r^{2})^{-(\mu+m+2)}P_{n+1}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m+1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
- & =2(\omega ^{2}-\mu ^{2}-m^{2}-2m\mu-2m)I_{1}+8mI_{2}-4mI_{3}
-\end{align}$$
-
-where $\displaystyle{\omega=2n+m+\mu+2}$. use the expression
-
-$$\tag{.}
-\begin{align}
- & \int ^{\infty}_{0}\mathrm{d}rr^{2b+1}(1+r^{2})^{-(a+b+2)}P^{(\alpha_{1},\beta_{1})}_{n_{1}}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\alpha_{2},\beta_{2})}_{n_{2}}\left( \frac{r^{2}-1}{r^{2}+1} \right)  \\
-= & 2^{-(a+b+2)}\int _{-1}^{1}\mathrm{d}x(1-x)^{a}(1+x)^{b}P^{(\alpha_{1},\beta_{1})}_{n_{1}}(x)P^{(\alpha_{2},\beta_{2})}_{n_{2}}(x)
-\end{align}$$
-
-then
-
-$$\tag{.}\begin{align}
-I_{1} & =\int _{0}^{\infty} \mathrm{d}r r^{2m+1}(1+r^{2})^{-(\mu+m+2)}P_{n+1}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu,m+1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
- & =2^{-(\mu+m+2)}\int _{-1}^{1}\mathrm{d}x(1-x)^{\mu}(1+x)^{m}P_{n+1}^{(\mu,m-1)}(x)P_{n}^{(\mu,m+1)}(x)
-\end{align}$$
-
-$$\tag{.}\begin{align}
-I_{2} & =\int _{0}^{\infty} \mathrm{d}rr^{2m+1}(1+r^{2})^{-(\mu+m+3)}P^{(\mu,m+1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)P^{(\mu+1,m)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
- & =2^{-(\mu+m+3)}\int _{-1}^{1}\mathrm{d}x(1-x)^{\mu+1}(1+x)^{m}P_{n}^{(\mu,m+1)}(x)P_{n}^{(\mu+1,m)}(x)
-\end{align}$$
-
-$$\tag{.}\begin{align}
-I_{3} & =\int _{0}^{\infty} \mathrm{d}rr^{2m-1}(1+r^{2})^{-(\mu+m+2)}P^{(\mu,m-1)}_{n+1}\left( \frac{r^{2}-1}{r^{2}+1} \right) P^{(\mu,m+1)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \\
- & =2^{-(\mu+m+2)}\int _{-1}^{1} \mathrm{d}x(1-x)^{1+\mu}(1+x)^{m-1}P_{n}^{(\mu,m-1)}(x)P_{n}^{(\mu,m+1)}(x)
-\end{align}$$
