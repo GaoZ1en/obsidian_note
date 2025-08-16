@@ -42,7 +42,7 @@ $$\tag{2.1}
 \end{align}
 $$
 
-from (1/2), we have
+from (1.2), we have
 
 $$\tag{2.2}
 \begin{align}

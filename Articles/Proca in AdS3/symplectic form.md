@@ -47,3 +47,6 @@ $$\tag{.}\begin{align}
 \end{align}$$
 
 ---
+
+then we will consider solutions derived by highest weight method.
+
