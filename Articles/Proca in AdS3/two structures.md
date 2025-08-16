@@ -67,7 +67,13 @@ $$\tag{.}\begin{align}
 i(2n+m+\mu)I_{2}e^{i(2n+m+\mu)t}e^{-im\phi} &=-\left( m^{2}-\frac{\omega _{nm\pm}^{2}r^{2}}{1+r^{2}} \right)r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
  & +m(m-1)r^{m-2}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
  & -m(\mu+m)r^{m}\left(1+r^{2}\right)^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & +4mr^{m}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+ & +2r^{m}(1+r^{2})^{-(\mu+m+4)/2}\left((\mu+n)(\mu+m+n)r^{2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(\mu+m+n)(1+r^{2})P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right) \\
+ & =2(\mu+n)(\mu+m+n)r^{m+2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & -
+\end{align}$$
+
+$$\tag{.}\begin{align}
+2mP_{n}^{(\mu,m-1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =(\mu+n)(\mu+m+n)r^{2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(\mu+m+n)(1+r^{2})P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 \end{align}$$
 
 ---
