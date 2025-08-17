@@ -86,5 +86,6 @@ f^{(+)}_{r,n,1} & \propto -i(\mu+2+n)r^{n+1}(1+r^{2})^{-(\mu+2+n+1)/2}e^{-i(\mu+
 \end{align}$$
 
 $$\tag{.}\begin{align}
-n-r^{2}(2+\mu) & =n+\mu+2-(r^{2}-1)(2+\mu)
+f^{(+)}_{r,n,\bar{n}}  & \propto r^{n-\bar{n}}(1+r^{2})^{-(\mu+n-\bar{n}+2)/2}{}_{2}F_{1}\left(-\bar{n},n+\bar{n}+\mu+1;\mu+2; \frac{1}{1+r^{2}}\right) \\
+ & =r^{n-\bar{n}}(1+r^{2})^{-(\mu+n-\bar{n}+2)/2} P_{\bar{n}}^{(\mu+1,n+\bar{n}-1)}
 \end{align}$$
