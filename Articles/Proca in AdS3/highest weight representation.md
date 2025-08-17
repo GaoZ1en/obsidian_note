@@ -88,9 +88,12 @@ then by induction
 
 $$\tag{.}\begin{align}
 f^{(+)}_{r,n,\bar{n}+1} & \propto(\bar{\xi}^{\nu}_{-1}\partial _{\nu})f^{(+)}_{r,n,\bar{n}} \\
- & \propto e^{-i(\mu+n+\bar{n}+3)t}e^{i(n-\bar{n}-1)\phi}\left( \left( -(\mu+n+\bar{n}+2)\frac{r^{2}}{1+r^{2}} +(n-\bar{n}) \right)r^{n-\bar{n}-1}(1+r^{2})^{-(\mu+n-\bar{n}+1)/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right. \\
- & +(1+r^{2})^{1/2} \frac{\partial}{\partial r}\left( r^{n-\bar{n}}(1+r^{2})^{-(\mu+n-\bar{n}+2)/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
- & +(n-\bar{n})r^{n-\bar{n}-1}\left(1+r^{2}\right)^{-(\mu+n-\bar{n}+1)/2}P_{n}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & -(\mu+n-\bar{n}+2)r^{n-\bar{n}+1}(1+r^{2})^{-(\mu+n-\bar{n}-1)/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & +4
+ & \propto e^{-i(\mu+n+\bar{n}+3)t}e^{i(n-\bar{n}-1)\phi} \\
+ & +2(n-\bar{n})r^{n-\bar{n}-1}\left(1+r^{2}\right)^{-(\mu+n-\bar{n}+1)/2}P_{n}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & -2(\mu+n-\bar{n}+2)r^{n-\bar{n}+1}(1+r^{2})^{-(\mu+n-\bar{n}+3)/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +4r^{n-\bar{n}+1}(1+r^{2})^{-(\mu+n-\bar{n}+5)/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})'}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+AP_{\bar{n}}^{(\mu+1,n-\bar{n})'}+BP_{\bar{n}}^{(\mu+1,n-\bar{n})}+CP_{\bar{n}+1}^{(\mu+1,n-\bar{n}-1)}=0
 \end{align}$$
