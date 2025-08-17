@@ -94,6 +94,18 @@ f^{(+)}_{r,n,\bar{n}+1} & \propto(\bar{\xi}^{\nu}_{-1}\partial _{\nu})f^{(+)}_{r
  & +4r^{n-\bar{n}+1}(1+r^{2})^{-(\mu+n-\bar{n}+5)/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})'}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
+here we use
+
 $$\tag{.}\begin{align}
-AP_{\bar{n}}^{(\mu+1,n-\bar{n})'}+BP_{\bar{n}}^{(\mu+1,n-\bar{n})}+CP_{\bar{n}+1}^{(\mu+1,n-\bar{n}-1)}=0
+2 \frac{r^{2}}{(1+r^{2})^{2}}P^{(\mu+1,n-\bar{n})'}_{\bar{n}}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
++\left( \frac{n+\mu+2}{1+r^{2}}-(\bar{n}+\mu+2) \right)P^{(\mu+1,n-\bar{n})}_{\bar{n}}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
++(\bar{n}+1) P^{(\mu+1,n-\bar{n}-1)}_{\bar{n}-1}\left(\frac{r^{2}-1}{r^{2}+1}\right) & =0
+\end{align}$$
+
+$$\tag{.}\begin{align}
+f^{(+)}_{r,n,\bar{n}+1} & \propto(\bar{\xi}^{\nu}_{-1}\partial _{\nu})f^{(+)}_{r,n,\bar{n}} \\
+ & \propto e^{-i(\mu+n+\bar{n}+3)t}e^{i(n-\bar{n}-1)\phi} \\
+ & +2(n-\bar{n})r^{n-\bar{n}-1}\left(1+r^{2}\right)^{-(\mu+n-\bar{n}+1)/2}P_{n}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & -2(\mu+n-\bar{n}+2)r^{n-\bar{n}+1}(1+r^{2})^{-(\mu+n-\bar{n}+3)/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +2r^{n-\bar{n}-1}(1+r^{2})^{-(\mu+n-\bar{n}+1)/2}\left(\left( (\bar{n}+\mu+2)-\frac{n+\mu+2}{1+r^{2}} \right)P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}-1}\right)-(\bar{n}+1)P_{\bar{n}+1}^{(\mu+1)}\right)
 \end{align}$$

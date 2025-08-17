@@ -52,10 +52,22 @@ A \gamma ^{2}(\alpha+\beta-\gamma)F+A\gamma(\gamma-\alpha)(\gamma-\beta)F(\gamma
 
 $$\tag{.}\begin{align}
 \gamma(\alpha+\beta-\gamma)A+\alpha \beta (1-z)^{2}C & =-\alpha \beta(1-z) \\
-\gamma(\gamma-\alpha)(\gamma-\beta)A+\alpha \beta(\gamma-\beta)z(1-z)C & =0
+\gamma(\gamma-\alpha)A+\alpha \beta z(1-z)C & =0
 \end{align}$$
 
 $$\tag{.}\begin{align}
-A & =-\frac{\alpha ^{2}\beta ^{2}(\gamma-\beta)z(1-z)^{2}}{\alpha \beta \gamma(\gamma-\beta)(\alpha+\beta-\gamma)z(1-z)-\alpha \beta \gamma(\gamma-\alpha)(\gamma-\beta)(1-z)^{2}} \\
-C & =\frac{\alpha \beta \gamma(\gamma-\alpha)(\gamma-\beta)(1-z)}{\alpha \beta \gamma(\gamma-\beta)(\alpha+\beta-\gamma)z(1-z)-\alpha \beta \gamma(\gamma-\alpha)(\gamma-\beta)(1-z)}
+A & =-\frac{\alpha \beta z(1-z)}{ \gamma(\beta z-(\gamma-\alpha))} \\
+C & =\frac{\gamma-\alpha}{\beta z-(\gamma-\alpha)}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+-\alpha \beta z(1-z)F(\alpha+1,\beta+1,\gamma+1)+\gamma(\beta z-(\gamma-\alpha))F+\gamma(\gamma-\alpha)F(\alpha-1)
+\end{align}$$
+
+$\displaystyle{\alpha=-\bar{n},\beta=n+\mu+2,\gamma=\mu+2}$
+
+$$\tag{.}\begin{align}
+2 \frac{r^{2}}{(1+r^{2})^{2}}P^{(\mu+1,n-\bar{n})'}_{\bar{n}}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
++\left( \frac{n+\mu+2}{1+r^{2}}-(\bar{n}+\mu+2) \right)P^{(\mu+1,n-\bar{n})}_{\bar{n}}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
++(\bar{n}+1) P^{(\mu+1,n-\bar{n}-1)}_{\bar{n}-1}\left(\frac{r^{2}-1}{r^{2}+1}\right) & =0
 \end{align}$$
