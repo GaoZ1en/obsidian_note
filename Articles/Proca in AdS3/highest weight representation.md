@@ -78,33 +78,19 @@ $$\tag{.}\begin{align}
 f^{(+)}_{r,n,\bar{n}} & =(\bar{\xi}^{\nu}_{-1}\partial _{\nu})^{\bar{n}}f^{(+)}_{r,n,0}
 \end{align}$$
 
+we first set $\displaystyle{n>\bar{n}}$. 
+
 $$\tag{.}\begin{align}
-f^{(+)}_{r,n,1} & \propto -i(\mu+2+n)r^{n+1}(1+r^{2})^{-(\mu+2+n+1)/2}e^{-i(\mu+2+n+1)t}e^{i(n-1)\phi} \\
- & +ie^{-i(t+\phi)}(1+r^{2})^{1/2}\partial _{r}(r^{n}(1+r^{2})^{-(\mu+2+n)/2}e^{-i(\mu+2+n)t}e^{in\phi}) \\
- & +in r^{n-1}(1+r^{2})^{-(\mu+1+n)/2}e^{-i(\mu+2+n+1)t}e^{i(n-1)\phi}\\
- & =
+f^{(+)}_{r,n,\bar{n}}  & \propto r^{n-\bar{n}}(1+r^{2})^{-(\mu+n-\bar{n}+2)/2} P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(\mu+n+\bar{n}+2)t}e^{i(n-\bar{n})\phi}
 \end{align}$$
 
-$$\tag{.}\begin{align}
-f^{(+)}_{r,n,\bar{n}}  & \propto r^{n-\bar{n}}(1+r^{2})^{-(\mu+n-\bar{n}+2)/2}{}_{2}F_{1}\left(-\bar{n},n+\mu+2;\mu+2; \frac{1}{1+r^{2}}\right) \\
- & =r^{n-\bar{n}}(1+r^{2})^{-(\mu+n-\bar{n}+2)/2} P_{\bar{n}}^{(\mu+1,n)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
-\end{align}$$
-
-
+then by induction
 
 $$\tag{.}\begin{align}
-r^{n-1}(1+r^{2})^{-(\mu+n+1)/2}
-\end{align}$$
-
-$$\tag{.}\begin{align}
-n-r^{2}(\mu+2) & =1-\frac{n+\mu+2}{(1+r^{2})(\mu+2)}
-\end{align}$$
-
-$$\tag{.}\begin{align}
-n^{2}+r^{4}(2+\mu)(3+\mu)-n(1+2r^{2}(3+\mu)) & =n^{2}+(r^{2}+1-1)^{2}(2+\mu)(3+\mu)-n-2n(r^{2}+1-1)(3+\mu) \\
- & =(2+\mu)(3+\mu)(1+r^{2})^{2}\left( 1-\frac{2(\mu+n+2)}{(\mu+2)(1+r^{2})}+\frac{(\mu+n+2)(\mu+n+3)}{(\mu+2)(\mu+3)(1+r^{2})^{2}} \right)
-\end{align}$$
-
-$$\tag{.}\begin{align}
-{}_{2}F_{1}\left(-\bar{n},n+\mu+2;\mu+2; \frac{1}{1+r^{2}}\right)
+f^{(+)}_{r,n,\bar{n}+1} & \propto(\bar{\xi}^{\nu}_{-1}\partial _{\nu})f^{(+)}_{r,n,\bar{n}} \\
+ & \propto e^{-i(\mu+n+\bar{n}+3)t}e^{i(n-\bar{n}-1)\phi}\left( \left( -(\mu+n+\bar{n}+2)\frac{r^{2}}{1+r^{2}} +(n-\bar{n}) \right)r^{n-\bar{n}-1}(1+r^{2})^{-(\mu+n-\bar{n}+1)/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right. \\
+ & +(1+r^{2})^{1/2} \frac{\partial}{\partial r}\left( r^{n-\bar{n}}(1+r^{2})^{-(\mu+n-\bar{n}+2)/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
+ & +(n-\bar{n})r^{n-\bar{n}-1}\left(1+r^{2}\right)^{-(\mu+n-\bar{n}+1)/2}P_{n}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & -(\mu+n-\bar{n}+2)r^{n-\bar{n}+1}(1+r^{2})^{-(\mu+n-\bar{n}-1)/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +4
 \end{align}$$
