@@ -53,30 +53,27 @@ $$\tag{2.2}\begin{align}
 \mathcal{L}_{\bar{\xi}_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(+)}_{r,n,\bar{n}-1}}^{\mu}
 \end{align}$$
 
+
+
 $$\tag{2.3}\begin{align}
-\mathcal{L}_{\xi_{-1}}{f_{r,0,0}^{(+)}}^{\mu} & =
+f^{(+)}_{r,n,0} & \propto r^{n}(1+r^{2})^{-(\mu+2+n)/2}e^{-i(\mu+2+n)t}e^{in\phi}
+\end{align}$$
+
+$$\tag{2.4}\begin{align}
+{f^{(+)}_{r,n,1}}^{\mu} & \propto \mathcal{L}_{\bar{\xi}_{-1}}f^{(+)}_{r,n,0}\bar{\xi}_{1}^{\mu} \\
+  & =\bar{\xi}_{-1}^{\nu}\partial _{\nu}(f^{(+)}_{r,n,0}\bar{\xi}^{\mu}_{1})-f^{(+)}_{r,n,0}\bar{\xi}^{\nu}_{-1}\partial _{\nu}\bar{\xi}^{\mu}_{1} \\
+ & =f^{(+)}_{r,n,1}\bar{\xi}^{\mu}_{1}+2if^{(+)}_{r,n,0}\bar{\xi}^{\nu}_{0} \\
+f^{(+)}_{r,n,\bar{n}} & =(\bar{\xi}^{\nu}_{-1}\partial _{\nu})^{\bar{n}}f^{(+)}_{r,n,0} \\
+{f^{(+)}_{r,n,\bar{n}}}^{\mu} & =f^{(+)}_{r,n,\bar{n}}\bar{\xi}^{\mu}_{1}+2\bar{n}if^{(+)}_{r,n,\bar{n}-1}\bar{\xi}^{\mu}_{0}-2\bar{n}(\bar{n}-1)f^{(+)}_{r,n,\bar{n}-2}\bar{\xi}^{\mu}_{-1}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-{f^{(+)}_{r,0,0}}^{t} & =\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} } r(1+r^{2})^{-(\mu+3)/2}e^{-i(\mu+1)t}e^{i\phi} \\
-{f^{(+)}_{r,0,0}}^{r} & =-\frac{i}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }(1+r^{2})^{-(\mu+1)/2}e^{-i(\mu+1)t}e^{i\phi} \\
-{f^{(+)}_{r,0,0}}^{\phi} & =\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }r^{-1}(1+r^{2})^{-(\mu+1)/2}r^{-i(\mu+1)t}e^{i\phi}
+\mathcal{L}_{\bar{\xi}_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} & =f^{(+)}_{r,n,\bar{n}}\bar{\xi}^{\mu}_{1}+2\bar{n}if^{(+)}_{r,n,\bar{n}-1}\bar{\xi}^{\mu}_{0}-2\bar{n}(\bar{n}-1)f^{(+)}_{r,n,\bar{n}-2}\bar{\xi}^{\mu}_{-1}
 \end{align}$$
-
-$$\tag{.}\begin{align}
-{f^{(+)}_{r,n,0}}^{t} & =\sqrt{ \frac{1}{n!(\mu+2)_{n}} }(\xi ^{\nu}_{-1}\partial _{\nu})^{n}f^{(+)}_{r,0,0}\bar{\xi}^{\mu}_{1}
-\end{align}$$
-
 
 $$\tag{.}\begin{align}
 {f^{(+)}_{r,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} }\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{\mu/2+1}}\bar{\xi}_{1}^{\mu} \\
 {f^{(+)}_{r,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu+2)_{n}(\mu)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{r,0,0}}^{\mu} \\
 \xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
 \bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
-\end{align}$$
-
-
-
-$$\tag{.}\begin{align}
-f^{(+)}_{r,n,0} & \propto r^{n}(1+r^{2})^{-(\mu+2+n)/2} e^{-i(\mu+2+n)t}e^{in\phi}
 \end{align}$$
