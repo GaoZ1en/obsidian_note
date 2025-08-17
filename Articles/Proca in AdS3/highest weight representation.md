@@ -76,10 +76,19 @@ $$\tag{.}\begin{align}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\sqrt{ \frac{1}{n!(\mu+2)_{n}} }(\xi ^{\nu}_{-1}\partial _{\nu})^{n}\sqrt{ \frac{\mu+1}{\pi \mu} }\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{\mu/2+1}} & =? \\
-\sqrt{ \frac{1}{n!(\mu+2)}_{n} }\left(\xi _{-1}^{\nu}\partial _{\nu}\right)^{1}\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}} & =\frac{1}{2}e^{-i(\mu+3)t}e^{i\phi}\sqrt{ \frac{\mu+1}{\pi \mu n!(\mu+2)_{n}} }(-i(\mu+2)r(1+r^{2})^{-(\mu+3)/2}-i(\mu+2)r(1+r^{2})^{-(\mu+5)/2})
+(2\xi ^{\nu}_{-1}\partial _{\nu})^{n}\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{\mu/2+1}} & =\dots \\
+\left(2\xi _{-1}^{\nu}\partial _{\nu}\right)^{1} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}} & =e^{-i(t-\phi)}\left(r(1+r^{2})^{-1/2}\partial _{t}\left((1+r^{2})^{-(\mu+2)/2}e^{-i(\mu+2)t}\right)+i(1+r^{2})^{-1/2}\partial _{r}((1+r^{2})^{-(\mu+2)/2}e^{-i(\mu+2)r})\right) \\
+ & =e^{-i(\mu+3)t}e^{i\phi}r(1+r^{2})^{-(\mu+3)/2}\left( 1+\frac{1}{1+r^{2}} \right) \\
+(2\xi ^{\nu}_{-1}\partial _{\nu})^{2} e^{-i(\mu+3)t}e^{i\phi}r(1+r^{2})^{-(\mu+3)/2}\left( 1+\frac{1}{1+r^{2}} \right) & =e^{-i(\mu+4)t}e^{2i\phi}\left(-i(\mu+3)r^{2}(1+r^{2})^{-(\mu+4)/2}\left( 1+\frac{1}{1+r^{2}} \right)\right. \\
+ & +i(1+r^{2})^{-(\mu+2)/2}\left(+\frac{1}{1+r^{2}}\right) \\
+ & -i(\mu+3)r^{2}(1+r^{2})^{-(\mu+6)/2}\left(1+\frac{1}{1+r^{2}}\right) \\
+ & -2ir^{2}(1+r^{2})^{-(\mu+8)/2} \\
 \end{align}$$
 
 $$\tag{.}\begin{align}
-r^{n}(1+r^{2})^{-(\mu+2+n)/2}P^{(\mu+?,?)}_{?}\left( \frac{r^{2}-1}{r^{2}+1} \right)e^{-i(\mu+2+k)t}e^{ik\theta}?
+r^{n}(1+r^{2})^{-(\mu+2+n)/2}P_{n}^{(\alpha,\beta)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-(\mu+2+n)t}e^{in\phi}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+(2\xi ^{\nu}_{-1}\partial _{\nu})r^{n}(1+r^{2})^{-(\mu+2+n)/2}P_{n}^{(\alpha,\beta)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(\mu+2+n)t}e^{in\phi} & =e
 \end{align}$$
