@@ -53,7 +53,7 @@ $$\tag{2.2}\begin{align}
 \mathcal{L}_{\bar{\xi}_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(+)}_{r,n,\bar{n}-1}}^{\mu}
 \end{align}$$
 
-
+then we will give the explicit expression of $\displaystyle{{f^{(+)}_{r,n,\bar{n}}}^{\mu}}$. we first 
 
 $$\tag{2.3}\begin{align}
 f^{(+)}_{r,n,0} & \propto r^{n}(1+r^{2})^{-(\mu+2+n)/2}e^{-i(\mu+2+n)t}e^{in\phi}
@@ -86,6 +86,25 @@ f^{(+)}_{r,n,1} & \propto -i(\mu+2+n)r^{n+1}(1+r^{2})^{-(\mu+2+n+1)/2}e^{-i(\mu+
 \end{align}$$
 
 $$\tag{.}\begin{align}
-f^{(+)}_{r,n,\bar{n}}  & \propto r^{n-\bar{n}}(1+r^{2})^{-(\mu+n-\bar{n}+2)/2}{}_{2}F_{1}\left(-\bar{n},n+\bar{n}+\mu+1;\mu+2; \frac{1}{1+r^{2}}\right) \\
- & =r^{n-\bar{n}}(1+r^{2})^{-(\mu+n-\bar{n}+2)/2} P_{\bar{n}}^{(\mu+1,n+\bar{n}-1)}
+f^{(+)}_{r,n,\bar{n}}  & \propto r^{n-\bar{n}}(1+r^{2})^{-(\mu+n-\bar{n}+2)/2}{}_{2}F_{1}\left(-\bar{n},n+\mu+2;\mu+2; \frac{1}{1+r^{2}}\right) \\
+ & =r^{n-\bar{n}}(1+r^{2})^{-(\mu+n-\bar{n}+2)/2} P_{\bar{n}}^{(\mu+1,n)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+
+
+$$\tag{.}\begin{align}
+r^{n-1}(1+r^{2})^{-(\mu+n+1)/2}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+n-r^{2}(\mu+2) & =1-\frac{n+\mu+2}{(1+r^{2})(\mu+2)}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+n^{2}+r^{4}(2+\mu)(3+\mu)-n(1+2r^{2}(3+\mu)) & =n^{2}+(r^{2}+1-1)^{2}(2+\mu)(3+\mu)-n-2n(r^{2}+1-1)(3+\mu) \\
+ & =(2+\mu)(3+\mu)(1+r^{2})^{2}\left( 1-\frac{2(\mu+n+2)}{(\mu+2)(1+r^{2})}+\frac{(\mu+n+2)(\mu+n+3)}{(\mu+2)(\mu+3)(1+r^{2})^{2}} \right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+{}_{2}F_{1}\left(-\bar{n},n+\mu+2;\mu+2; \frac{1}{1+r^{2}}\right)
 \end{align}$$
