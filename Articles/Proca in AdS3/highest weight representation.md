@@ -64,11 +64,7 @@ $$\tag{2.4}\begin{align}
   & =\bar{\xi}_{-1}^{\nu}\partial _{\nu}(f^{(+)}_{r,n,0}\bar{\xi}^{\mu}_{1})-f^{(+)}_{r,n,0}\bar{\xi}^{\nu}_{-1}\partial _{\nu}\bar{\xi}^{\mu}_{1} \\
  & =f^{(+)}_{r,n,1}\bar{\xi}^{\mu}_{1}+2if^{(+)}_{r,n,0}\bar{\xi}^{\nu}_{0} \\
 f^{(+)}_{r,n,\bar{n}} & =(\bar{\xi}^{\nu}_{-1}\partial _{\nu})^{\bar{n}}f^{(+)}_{r,n,0} \\
-{f^{(+)}_{r,n,\bar{n}}}^{\mu} & =f^{(+)}_{r,n,\bar{n}}\bar{\xi}^{\mu}_{1}+2\bar{n}if^{(+)}_{r,n,\bar{n}-1}\bar{\xi}^{\mu}_{0}-2\bar{n}(\bar{n}-1)f^{(+)}_{r,n,\bar{n}-2}\bar{\xi}^{\mu}_{-1}
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\mathcal{L}_{\bar{\xi}_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} & =f^{(+)}_{r,n,\bar{n}}\bar{\xi}^{\mu}_{1}+2\bar{n}if^{(+)}_{r,n,\bar{n}-1}\bar{\xi}^{\mu}_{0}-2\bar{n}(\bar{n}-1)f^{(+)}_{r,n,\bar{n}-2}\bar{\xi}^{\mu}_{-1}
+{f^{(+)}_{r,n,\bar{n}}}^{\mu} & =f^{(+)}_{r,n,\bar{n}}\bar{\xi}^{\mu}_{1}+2\bar{n}if^{(+)}_{r,n,\bar{n}-1}\bar{\xi}^{\mu}_{0}-\bar{n}(\bar{n}-1)f^{(+)}_{r,n,\bar{n}-2}\bar{\xi}^{\mu}_{-1}
 \end{align}$$
 
 $$\tag{.}\begin{align}
@@ -76,4 +72,19 @@ $$\tag{.}\begin{align}
 {f^{(+)}_{r,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu+2)_{n}(\mu)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{r,0,0}}^{\mu} \\
 \xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
 \bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+f^{(+)}_{r,n,\bar{n}} & =(\bar{\xi}^{\nu}_{-1}\partial _{\nu})^{\bar{n}}f^{(+)}_{r,n,0}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+f^{(+)}_{r,n,1} & \propto -i(\mu+2+n)r^{n+1}(1+r^{2})^{-(\mu+2+n+1)/2}e^{-i(\mu+2+n+1)t}e^{i(n-1)\phi} \\
+ & +ie^{-i(t+\phi)}(1+r^{2})^{1/2}\partial _{r}(r^{n}(1+r^{2})^{-(\mu+2+n)/2}e^{-i(\mu+2+n)t}e^{in\phi}) \\
+ & +in r^{n-1}(1+r^{2})^{-(\mu+1+n)/2}e^{-i(\mu+2+n+1)t}e^{i(n-1)\phi}\\
+ & =
+\end{align}$$
+
+$$\tag{.}\begin{align}
+n-r^{2}(2+\mu) & =n+\mu+2-(r^{2}-1)(2+\mu)
 \end{align}$$
