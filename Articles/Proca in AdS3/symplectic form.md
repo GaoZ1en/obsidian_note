@@ -51,6 +51,10 @@ $$\tag{.}\begin{align}
 then we will consider solutions derived by highest weight method. suppose $\displaystyle{k\geqslant\bar{k}}$
 
 $$\tag{.}\begin{align}
-\sqrt{ k!\bar{k}! (\mu+2)_{k}(\mu)_{\bar{k}} }A^{\mu}_{k,\bar{k}} & =F_{k,\bar{k}}\bar{\xi}^{\mu}_{-1}+2\bar{k}F_{k,\bar{k}-1}\bar{\xi}^{\mu}_{0}+\bar{k}(\bar{k}-1)\bar{\xi}_{1} \\
-F_{k,\bar{k}} & =(-1)^{k+\bar{k}} (\mu+2)_{k}(\mu+2)_{\bar{k}} (\sin r)^{k-\bar{k}}(\cos r)^{\mu+2}{}_{2}F_{1}(-n,n+m+\mu+2;\mu+2;\cos ^{2}\rho)e^{i}
+A^{\mu}_{k,\bar{k}} & =\frac{1}{\sqrt{ k!\bar{k}! (\mu+2)_{k}(\mu)_{\bar{k}} }}(F_{k,\bar{k}}\bar{\xi}^{\mu}_{-1}+2\bar{k}F_{k,\bar{k}-1}\bar{\xi}^{\mu}_{0}+\bar{k}(\bar{k}-1)\bar{\xi}_{1}) \\
+F_{k,\bar{k}} & =(-1)^{k+\bar{k}} (\mu+2)_{k}(\mu+2)_{\bar{k}} (\sin \rho)^{k-\bar{k}}(\cos \rho)^{\mu+2}{}_{2}F_{1}(-n,n+m+\mu+2;\mu+2;\cos ^{2}\rho)e^{i(k+\bar{k}+\mu+2)t}e^{i(k-\bar{k})\theta}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\frac{F_{k,\bar{k}}}{\sqrt{ k!\bar{k}! (\mu+2)_{k}(\mu)_{\bar{k}} }} & =(-1)^{k+\bar{k}}(\mu+2)_{k}(\mu+2)_{\bar{k}}(\sin \rho)^{k-\bar{k}}(\cos \rho)^{\mu+2}{}_{2}F_{1}(-n,n+m+\mu+2;\mu+2;\cos ^{2}\rho)
 \end{align}$$
