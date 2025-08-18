@@ -58,3 +58,4 @@ F_{k,\bar{k}} & =(-1)^{k+\bar{k}} (\mu+2)_{k}(\mu+2)_{\bar{k}} (\sin \rho)^{k-\b
 $$\tag{.}\begin{align}
 \frac{F_{k,\bar{k}}}{\sqrt{ k!\bar{k}! (\mu+2)_{k}(\mu)_{\bar{k}} }} & =(-1)^{k+\bar{k}}(\mu+2)_{k}(\mu+2)_{\bar{k}}(\sin \rho)^{k-\bar{k}}(\cos \rho)^{\mu+2}{}_{2}F_{1}(-n,n+m+\mu+2;\mu+2;\cos ^{2}\rho)
 \end{align}$$
+
