@@ -1,35 +1,8 @@
 $$\tag{.}\begin{align}
-\frac{\Omega[A_{n_{1}m_{1}},A^{*}_{n_{2}m_{2}}]}{2\pi \delta _{m_{1}m_{2}}} & =\frac{1}{i\omega_{1}}\int \mathrm{d}r \frac{r}{1+r^{2}}\left( r\partial _{r}\left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}^{r}_{1}+im_{1}\tilde{A}^{\phi}_{1} \right)+\frac{2r^{2}}{1+r^{2}}\left( \partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}^{r}_{1}+im_{1}\tilde{A}^{\phi}_{1} \right)+ \frac{\omega_{1}^{2}r}{(1+r^{2})^{2}}\tilde{A}_{1}^{r} \right)\tilde{A}_{2}^{r*} \\
+\frac{\Omega[A_{n_{1}m_{1}},A^{*}_{n_{2}m_{2}}]}{2\pi \delta _{m_{1}m_{2}}}e^{i(\omega_{1}-\omega_{2})t} & =\frac{1}{i\omega_{1}}\int \mathrm{d}r \left(\left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{r\tilde{A}^{r}_{1}}{1+r^{2}}+\frac{im_{1}}{r}\partial _{r}(r^{2}\tilde{A}^{\phi}_{1})\right)\tilde{A}^{r*}_{2} \\
  & +\frac{1}{i\omega_{1}}\int \mathrm{d}r\left( im_{1}\partial _{r}(r\tilde{A}^{r}_{1})+\left( \frac{\omega_{1}^{2}r^{2}}{1+r^{2}}-m_{1}^{2}\right)r\tilde{A}_{1}^{\phi} \right)\tilde{A}_{2}^{\phi*} \\ 
- & +\frac{1}{i\omega_{2}}\int \mathrm{d}r\frac{r}{1+r^{2}}\left( (1+r^{2})\partial _{r}\left( \partial _{r}\tilde{A}^{r*}_{2}+\frac{1}{r}\tilde{A}^{r*}_{2}-im_{2}\tilde{A}^{\phi*}_{2} \right)+2r\left(\partial _{r}\tilde{A}^{r*}_{2}+\frac{1}{r}\tilde{A}^{r*}_{2}-im_{2}\tilde{A}^{\phi*}_{2}\right)+ \frac{\omega_{2}^{2}}{1+r^{2}}\tilde{A}^{r*}_{2} \right)\tilde{A}_{1}^{r} \\
+ & +\frac{1}{i\omega_{2}}\int \mathrm{d}r\left( \left( \mu ^{2}+\frac{m_{2}^{2}}{r^{2}} \right)\frac{r\tilde{A}^{r*}_{2}}{1+r^{2}}-\frac{im_{2}}{r}\partial _{r}(r^{2}\tilde{A}^{\phi*}_{2}) \right)\tilde{A}_{1}^{r} \\
  & +\frac{1}{i\omega_{2}}\int \mathrm{d}r\left( -im_{2}\partial _{r}(r\tilde{A}^{r*}_{2})+\left( \frac{\omega_{2}^{2}r^{2}}{1+r^{2}} -m_{2}^{2}\right)rA^{\phi} \right)\tilde{A}_{1}^{\phi}
-\end{align}$$
-
-$$\tag{.}\begin{align}
-
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\frac{i(2n+m+\mu)}{2\pi} \Omega(A^{\mu}_{nm+},A^{\nu}_{(n-1)m-}) & =2m\int _{0}^{\infty} \mathrm{d}r\left(\partial _{r}\left( r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)\right. \\
- & \left.-\partial _{r}\left( r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P^{(\mu,m+1)}_{n-1}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right)r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right) \\
- & +2\int \mathrm{d}r\left[-\left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right)\frac{1}{1+r^{2}}+\left( \frac{(2n+m+\mu)^{2}}{1+r^{2}} -\frac{m^{2}}{r^{2}}\right)\right]r^{2m+1}(1+r^{2})^{-(\mu+m+1)}P_{n}^{(\mu,m-1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)
-\end{align}$$
-
-the integrand reads
-
-$$\tag{.}\begin{align}
- & =-4mr^{2m-1}(1+r^{2})^{-(\mu+m+2)}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & +4(\mu+n)(\mu+m+n)r^{2m+3}(1+r^{2})^{-(\mu+m+3)}\left[ P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} \\
- & -4n(\mu+m+n)r^{2m+1}(1+r^{2})^{-(\mu+m+2)}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & +4n(n+m)r^{2m-1}(1+r^{2})^{-(\mu+m+1)}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & -4(\mu+n)(n+m)r^{2m+1}(1+r^{2})^{-(\mu+m+2)}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}-1}\right) \\
- & +4m(m+1)r^{2m-1}(1+r^{2})^{-(\mu+m+2)}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & +4((2n^{2}+2mn+2n\mu+m\mu)r^{2}-m^{2})r^{2m-1}(1+r^{2})^{-(\mu+m+2)}P_{n}^{(\mu,m-2)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
-\end{align}$$
-
-$$\tag{.}\begin{align}
- & =4(\mu+n)(\mu+m+n)r^{2m+3}(1+r^{2})^{-(\mu+m+3)}\left[ P_{n-1}^{(\mu,m+1)}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} \\
- & +4n(n+m)r^{2m-1}(1+r^{2})^{-(\mu+m+1)}\left[ P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right]^{2}
 \end{align}$$
 
 when $\displaystyle{m\geqslant 1,n\geqslant 1}$,
