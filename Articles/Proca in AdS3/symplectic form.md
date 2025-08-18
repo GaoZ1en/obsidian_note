@@ -48,14 +48,17 @@ $$\tag{.}\begin{align}
 
 ---
 
-then we will consider solutions derived by highest weight method. suppose $\displaystyle{k\geqslant\bar{k}}$
+now we will not impose complex conjugate
 
-$$\tag{.}\begin{align}
-A^{\mu}_{k,\bar{k}} & =\frac{1}{\sqrt{ k!\bar{k}! (\mu+2)_{k}(\mu)_{\bar{k}} }}(F_{k,\bar{k}}\bar{\xi}^{\mu}_{-1}+2\bar{k}F_{k,\bar{k}-1}\bar{\xi}^{\mu}_{0}+\bar{k}(\bar{k}-1)\bar{\xi}_{1}) \\
-F_{k,\bar{k}} & =(-1)^{k+\bar{k}} (\mu+2)_{k}(\mu+2)_{\bar{k}} (\sin \rho)^{k-\bar{k}}(\cos \rho)^{\mu+2}{}_{2}F_{1}(-n,n+m+\mu+2;\mu+2;\cos ^{2}\rho)e^{i(k+\bar{k}+\mu+2)t}e^{i(k-\bar{k})\theta}
+$$\tag{.}
+\begin{align}
+\omega[A_{1}^{\mu},A_{2}^{\nu}] & =\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\delta_{1}A^{t}+\frac{2r^{2}}{1+r^{2}}\delta _{1}A^{t}+ \frac{r}{(1+r^{2})^{2}}\partial _{t}\delta _{1}A^{r} \right)\delta _{2}A^{r} \\
+ & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\delta_{2}A^{t}+\frac{2r^{2}}{1+r^{2}}\delta _{2}A^{t}+ \frac{r}{(1+r^{2})^{2}}\partial _{t}\delta _{2}A^{r} \right)\delta _{1}A^{r} \\
+ & +\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{\phi}\delta_{1} A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta_{1} A^{\phi} \right)\delta_{2} A^{\phi} \\
+ & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{\phi}\delta_{2} A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta_{2} A^{\phi} \right)\delta_{1} A^{\phi}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\frac{F_{k,\bar{k}}}{\sqrt{ k!\bar{k}! (\mu+2)_{k}(\mu)_{\bar{k}} }} & =(-1)^{k+\bar{k}}(\mu+2)_{k}(\mu+2)_{\bar{k}}(\sin \rho)^{k-\bar{k}}(\cos \rho)^{\mu+2}{}_{2}F_{1}(-n,n+m+\mu+2;\mu+2;\cos ^{2}\rho)
+\frac{i\omega_{1}\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =2im_{1}\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}rA_{2}^{*\phi}-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}\right) \\
+ & +2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} +\left( \frac{\omega ^{2}_{1}r^{2}}{1+r^{2}}-m_{1}^{2} \right)\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right]
 \end{align}$$
-
