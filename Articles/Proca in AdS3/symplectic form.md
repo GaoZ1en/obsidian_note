@@ -87,15 +87,28 @@ $$\tag{.}\begin{align}
 \left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right) \frac{rA_{n,m\geqslant 1,+}^{r}}{1+r^{2}}+\frac{im}{r}\partial _{r}(r^{2}A_{n,m\geqslant 1,+}^{\phi}) & =
 \frac{e^{-i(\mu+m+2n)t}e^{im\phi}}{\mu+m+2n}\left(-(\mu(\mu+m)+2n(\mu+m+n))r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
  & \left. +2(\mu+n)(\mu+m+n)r^{m+2}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
-\left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right) \frac{rA_{n,m\geqslant 1,+}^{r}}{1+r^{2}}+\frac{im}{r}\partial _{r}(r^{2}A_{n,m\geqslant 1,+}^{\phi}) & =
-\frac{e^{-i(\mu+m+2n)t}e^{im\phi}}{\mu+m+2n}\left(-(\mu(\mu+m)+2n(\mu+m+n))r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
- & \left. +2(\mu+n)(\mu+m+n)r^{m+2}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
-\left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right) \frac{rA_{n,m\geqslant 1,+}^{r}}{1+r^{2}}+\frac{im}{r}\partial _{r}(r^{2}A_{n,m\geqslant 1,+}^{\phi}) & =
-\frac{e^{-i(\mu+m+2n)t}e^{im\phi}}{\mu+m+2n}\left(-(\mu(\mu+m)+2n(\mu+m+n))r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
- & \left. +2(\mu+n)(\mu+m+n)r^{m+2}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
-\left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right) \frac{rA_{n,m\geqslant 1,+}^{r}}{1+r^{2}}+\frac{im}{r}\partial _{r}(r^{2}A_{n,m\geqslant 1,+}^{\phi}) & =
-\frac{e^{-i(\mu+m+2n)t}e^{im\phi}}{\mu+m+2n}\left(-(\mu(\mu+m)+2n(\mu+m+n))r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
- & \left. +2(\mu+n)(\mu+m+n)r^{m+2}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
+\left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right) \frac{rA_{n,m\geqslant 1,-}^{r}}{1+r^{2}}+\frac{im}{r}\partial _{r}(r^{2}A_{n,m\geqslant 1,-}^{\phi}) & =
+\frac{e^{-i(\mu+m+2n)t}e^{im\phi}}{\mu+m+2n+2}\left(\left( 2\left( n+\frac{\mu+m+2}{2} \right)^{2}+\frac{1}{2}(\mu-m)(\mu+m) \right)r^{m+2}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left. -2(n+1)(n+m+1)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n+1}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
+\left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right) \frac{rA_{n,m\leqslant -1,+}^{r}}{1+r^{2}}+\frac{im}{r}\partial _{r}(r^{2}A_{n,m\leqslant -1,+}^{\phi}) & =
+\frac{e^{-i(\mu-m+2n+2)t}e^{im\phi}}{\mu-m+2n+2}\left(-\left( 2\left( n+\frac{\mu-m+2}{2} \right)^{2}+\frac{1}{2}(\mu-m)(\mu+m) \right)r^{-m+2}(1+r^{2})^{-(\mu-m+4)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left. +2(n+1)(n-m+1)r^{-m}(1+r^{2})^{-(\mu-m+2)/2}P_{n+1}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
+\left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right) \frac{rA_{n,m\leqslant -1,-}^{r}}{1+r^{2}}+\frac{im}{r}\partial _{r}(r^{2}A_{n,m\leqslant -1,-}^{\phi}) & =
+\frac{e^{-i(\mu-m+2n)t}e^{im\phi}}{\mu-m+2n}\left(\left( 2\left( n+\frac{\mu-m}{2} \right)^{2}+\frac{1}{2}(\mu-m)(\mu+m) \right)r^{-m}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left. -2(\mu+n)(\mu-m+n)r^{-m+2}(1+r^{2})^{-(\mu-m+4)/2}P_{n-1}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
 \mu ^{2} \frac{rA_{n,m\geqslant 1,+}^{r}}{1+r^{2}} & =-\frac{\mu ^{2}e^{-i(\mu+2n+2)t}}{\mu+2+2n}r^{2}(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 \mu ^{2} \frac{rA_{n,m=0,-}^{r}}{1+r^{2}} & = \frac{\mu ^{2}e^{-i(\mu+2+2n)t}}{\mu+2+2n}r^{2}(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\frac{1}{i\omega}\left( im\partial _{r}(rA_{n,m\geqslant 1,+}^{r})-\left(m^{2}-\frac{\omega^{2}r^{2}}{1+r^{2}}\right)rA_{n,m\geqslant 1,+}^{\phi} \right) & =\frac{e^{-i(\mu+m+2n)t}e^{im\phi}}{\mu+m+2n}\left(-i(\mu(\mu+m)+2n(\mu+m+n))r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left. -2i\left(\mu+n\right)(\mu+n+m)r^{m+3}(1+r^{2})^{-(\mu+m+4)/2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
+\frac{1}{i\omega}\left( im\partial _{r}(rA_{n,m\geqslant 1,+}^{r})-\left(m^{2}-\frac{\omega^{2}r^{2}}{1+r^{2}}\right)rA_{n,m\geqslant 1,-}^{\phi} \right) & =\frac{e^{-i(\mu+m+2n+2)t}e^{im\phi}}{\mu+m+2n+2}\left(-i\left( 2\left( n+\frac{\mu+m+2}{2} \right)^{2}+\frac{1}{2}(\mu-m)(\mu+m) \right)r^{m+3}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left. -2i\left(n+1\right)(n+m+1)r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n+1}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
+\frac{1}{i\omega}\left( im\partial _{r}(rA_{n,m\leqslant -1,+}^{r})-\left(m^{2}-\frac{\omega^{2}r^{2}}{1+r^{2}}\right)rA_{n,m\leqslant- 1,+}^{\phi} \right) & =\frac{e^{-i(\mu-m+2n+2)t}e^{im\phi}}{\mu-m+2n+2}\left(-i\left( 2\left( n+\frac{\mu-m+2}{2} \right)^{2}+\frac{1}{2}(\mu-m)(\mu+m) \right)r^{-m+3}(1+r^{2})^{-(\mu-m+4)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left. -2i\left(n+1\right)(n-m+1)r^{-m+1}(1+r^{2})^{-(\mu-m+2)/2}P_{n+1}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
+\frac{i}{i\omega}\left( im\partial _{r}(rA_{n,m\leqslant -1,-}^{r})-\left(m^{2}-\frac{\omega^{2}r^{2}}{1+r^{2}}\right)rA_{n,m\leqslant-1,-}^{\phi} \right) & =\frac{e^{-i(\mu-m+2n)t}e^{im\phi}}{\mu-m+2n}\left(-i\left( 2\left(n+\frac{\mu-m}{2}\right)^{2}+\frac{1}{2}(\mu-m)(\mu+m) \right)r^{-m+1}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left. -2i\left(\mu+n\right)(\mu+n-m)r^{-m+3}(1+r^{2})^{-(\mu-m+4)/2}P_{n-1}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
+-i\frac{\omega r^{2}}{1+r^{2}}rA_{n,m=0,+}^{\phi} & =-i(\mu+2n+2)e^{-i(\mu+2n+2)t}r^{3}(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
+-i\frac{\omega r^{2}}{1+r^{2}}rA_{n,m=0,-}^{\phi} & =-i(\mu+2n+2)e^{-i(\mu+2n+2)t}r^{3}(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
