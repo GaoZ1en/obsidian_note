@@ -46,6 +46,13 @@ $$\tag{.}\begin{align}
 2mr^{2}P_{n-1}^{(\mu,m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right) & =[(\mu+n)(n+m)r^{2}-m(m+1)](1+r^{2})P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(n+m)(1+r^{2})^{2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
+$$\tag{.}
+\begin{align}
+\frac{i\omega_{1}\Omega(A_{n_{1}m_{2}+},A_{n_{2}m_{2}+})}{2\pi \delta _{m_{1}m_{2}}}e^{i(\omega_{1}-\omega_{2})t} & =2im\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}rA_{2}^{*\phi}-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}\right) \\
+ & +2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} +\left( \frac{(\omega ^{2}_{1}+\omega_{2}^{2})r^{2}}{2(1+r^{2})}-m_{1}^{2} \right)\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right]
+\end{align}$$
+
+
 ---
 
 now we will not impose complex conjugate
@@ -77,13 +84,17 @@ set $\displaystyle{m\geqslant1}$ then
 $$\tag{.}\begin{align}
 \frac{\Omega[A_{n_{1}m+},A_{n_{2}(-m)+}]}{2\pi}e^{i(\omega_{1}+\omega_{2})t} & =-\frac{4i(\mu+n_{1})(\mu+m+n_{1})}{\mu+m+2n_{1}}\int \mathrm{d}rr^{2m+3}(1+r^{2})^{-(\mu+m+3)}P_{n_{1}-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) P_{n_{2}}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
 & +\frac{4i(n_{2}+1)(n_{2}+m+1)}{\mu+m+2n_{2}+2}\int \mathrm{d}rr^{2m-1}(1+r^{2})^{-(\mu+m+1)}P_{n_{2}+1}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) P_{n_{1}}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & =\delta _{n_{1}-1,n_{2}}I-\delta _{n_{2}+1,n_{1}}I=0
+ & =-\delta _{n_{1}-1,n_{2}}  \frac{2i\Gamma(n_{1}+\mu+1)\Gamma(n_{1}+m+1)}{(2n_{1}+\mu+m)^{2}\Gamma(n_{1}+\mu+m)(n_{1}-1)!} \\
+ & +\delta _{n_{2}+1,n_{1}} \frac{2i\Gamma(n_{2}+\mu+2)\Gamma(n_{2}+m+2)}{(2n_{2}+2+\mu+m)^{2}\Gamma(n_{2}+\mu+m+1)n_{1}!} \\
+ & =0
 \end{align}$$
 
 $$\tag{.}\begin{align}
 \frac{\Omega[A_{n_{1}m-},A_{n_{2}(-m)-}]}{2\pi}e^{i(\omega_{1}+\omega_{2})t} & =-\frac{4i(n_{1}+1)(n_{1}+m+1)}{\mu+m+2n_{1}+2}\int \mathrm{d}rr^{2m-1}(1+r^{2})^{-(\mu+m+1)}P_{n_{1}+1}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) P_{n_{2}}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
-& +\frac{4i\left(\mu+n_{2}\right)(\mu+n_{2}+m)}{\mu+m+2n_{2}}\int \mathrm{d}rr^{2m+3}(1+r^{2})^{-(\mu+m+3)}P_{n_{2}-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{1}}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & =-\delta _{n_{1}+1,n_{2}}I+\delta _{n_{2}-1,n_{1}}I=0
+& +\frac{4i\left(\mu+n_{2}\right)(\mu+n_{2}+m)}{\mu+m+2n_{2}}\int \mathrm{d}rr^{2m+3}(1+r^{2})^{-(\mu+m+3)}P_{n_{2}-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{1}}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & =-\delta _{n_{1}+1,n_{2}} \frac{2i\Gamma(n_{1}+\mu+2)\Gamma(n_{1}+m+2)}{(2n_{1}+2+\mu+m)^{2}\Gamma(n_{1}+\mu+m+1)n_{1}!} \\
+ & +\delta _{n_{2}-1,n_{1}}  \frac{2i\Gamma(n_{2}+\mu+1)\Gamma(n_{2}+m+1)}{(2n_{2}+\mu+m)^{2}\Gamma(n_{2}+\mu+m)(n_{2}-1)!} \\
+ & =0
 \end{align}$$
 
 $$\tag{.}\begin{align}
@@ -142,3 +153,8 @@ $$\tag{.}\begin{align}
 -i\frac{\omega r^{2}}{1+r^{2}}rA_{n,m=0,-}^{\phi} & =-i(\mu+2n+2)e^{-i(\mu+2n+2)t}r^{3}(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
+and
+
+$$\tag{.}\begin{align}
+\int _{0}^{\infty} \mathrm{d}r r^{2\beta+1}(1+r^{2})^{-(\alpha+\beta+2)}\left[P^{(\alpha,\beta}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} & =\frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{2(2n+\alpha+\beta+1)\Gamma(n+\alpha+\beta+1)n!}
+\end{align}$$
