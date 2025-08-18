@@ -48,10 +48,12 @@ $$\tag{.}\begin{align}
 
 $$\tag{.}
 \begin{align}
-\frac{i\omega_{1}\Omega(A_{n_{1}m_{2}+},A_{n_{2}m_{2}+})}{2\pi \delta _{m_{1}m_{2}}}e^{i(\omega_{1}-\omega_{2})t} & =2im\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}rA_{2}^{*\phi}-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}\right) \\
- & +2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} +\left( \frac{(\omega ^{2}_{1}+\omega_{2}^{2})r^{2}}{2(1+r^{2})}-m_{1}^{2} \right)\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right]
+\Omega(A_{n_{1},m_{1},\pm},A_{n_{2},m_{2}\geqslant 1,+}) & =-2\pi i\left(\mu ^{2}+(2n+|m\mp 1|+\mu+1)^{2}-m_{1}^{2}\right) \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}+|m_{1}\mp 1|+1)}{(2n+\mu+|m_{1}\mp 1|+1)^{2}\Gamma(n+\mu+|m_{1}\mp 1|+1)n_{1}!}\delta _{n_{1},n_{2}}\delta _{m_{1},m_{2}}
 \end{align}$$
 
+$$\tag{.}\begin{align}
+\int _{0}^{\infty} \mathrm{d}r r^{2\beta+1}(1+r^{2})^{-(\alpha+\beta+2)}\left[P^{(\alpha,\beta}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} & =\frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{2(2n+\alpha+\beta+1)\Gamma(n+\alpha+\beta+1)n!}
+\end{align}$$
 
 ---
 
