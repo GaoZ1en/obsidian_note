@@ -81,11 +81,9 @@ $$\tag{.}\begin{align}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\frac{\Omega[A_{n_{1}m-},A_{n_{2}(-m)-}]}{2\pi}e^{i(\omega_{1}+\omega_{2})t} & =\frac{i}{\mu+m+2n_{1}+2}\int \mathrm{d}r \left(\left( 2\left( n_{1}+\frac{\mu+m+2}{2} \right)^{2}+\frac{1}{2}(\mu-m)(\mu+m) \right)r^{m+2}(1+r^{2})^{-(\mu+m+4)/2}P_{n_{1}}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
- & \left. -2(n_{1}+1)(n_{1}+m+1)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n_{1}+1}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n_{2}}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
-& +\frac{1}{i\omega_{1}}\int \mathrm{d}r\left( im_{1}r\partial _{r}\tilde{A}^{r}_{1}+im_{1}\tilde{A}^{r}_{1}-\left(m_{1}^{2}-\frac{\omega_{1}^{2}r^{2}}{1+r^{2}}\right)r\tilde{A}^{\phi}_{1} \right) A_{2}^{\phi} \\
-& -\frac{1}{i\omega_{2}}\int \mathrm{d}r\left(\left( \mu ^{2}+\frac{m_{2}^{2}}{r^{2}} \right)\frac{r\tilde{A}^{r}_{2}}{1+r^{2}}+im_{2}r\partial _{r}\tilde{A}^{\phi}_{2}+2im_{2}\tilde{A}^{\phi}_{2} \right)\tilde{A}_{1}^{r} \\
-& -\frac{1}{i\omega_{2}}\int \mathrm{d}r\left( im_{2}r\partial _{r}\tilde{A}^{r}_{2}+im_{2}\tilde{A}^{r}_{2}-\left( m_{2}^{2}-\frac{\omega_{2}^{2}r^{2}}{1+r^{2}} \right)r\tilde{A}^{\phi}_{2} \right)A_{1}^{\phi} 
+\frac{\Omega[A_{n_{1}m-},A_{n_{2}(-m)-}]}{2\pi}e^{i(\omega_{1}+\omega_{2})t} & =-\frac{4i(n_{1}+1)(n_{1}+m+1)}{\mu+m+2n_{1}+2}\int \mathrm{d}rr^{2m-1}(1+r^{2})^{-(\mu+m+1)}P_{n_{1}+1}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) P_{n_{2}}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+& +\frac{4i\left(\mu+n_{2}\right)(\mu+n_{2}+m)}{\mu+m+2n_{2}}\int \mathrm{d}rr^{2m+3}(1+r^{2})^{-(\mu+m+3)}P_{n_{2}-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{1}}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & =-\delta _{n_{1}+1,n_{2}}I+\delta _{n_{2}-1,n_{1}}I=0
 \end{align}$$
 
 $$\tag{.}\begin{align}
@@ -94,15 +92,22 @@ $$\tag{.}\begin{align}
  & =\delta _{n_{1}n_{2}}(I-I)=0
 \end{align}$$
 
-
-
 $$\tag{.}\begin{align}
-\frac{\Omega[A_{n_{1}0+},A_{n_{2}0-}]}{2\pi}e^{i(\omega_{1}+\omega_{2})t} & =\frac{1}{i\omega_{1}}\int \mathrm{d}r \left(\left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{r\tilde{A}^{r}_{1}}{1+r^{2}}+im_{1}r\partial _{r}\tilde{A}^{\phi}_{1}+2im_{1}\tilde{A}^{\phi}_{1}\right)\tilde{A}^{r}_{2}\\
-& +\frac{1}{i\omega_{1}}\int \mathrm{d}r\left( im_{1}r\partial _{r}\tilde{A}^{r}_{1}+im_{1}\tilde{A}^{r}_{1}-\left(m_{1}^{2}-\frac{\omega_{1}^{2}r^{2}}{1+r^{2}}\right)r\tilde{A}^{\phi}_{1} \right) \tilde{A}_{2}^{\phi} \\
-& -\frac{1}{i\omega_{2}}\int \mathrm{d}r\left(\left( \mu ^{2}+\frac{m_{2}^{2}}{r^{2}} \right)\frac{r\tilde{A}^{r}_{2}}{1+r^{2}}+im_{2}r\partial _{r}\tilde{A}^{\phi}_{2}+2im_{2}\tilde{A}^{\phi}_{2} \right)\tilde{A}_{1}^{r} \\
-& -\frac{1}{i\omega_{2}}\int \mathrm{d}r\left( im_{2}r\partial _{r}\tilde{A}^{r}_{2}+im_{2}\tilde{A}^{r}_{2}-\left( m_{2}^{2}-\frac{\omega_{2}^{2}r^{2}}{1+r^{2}} \right)r\tilde{A}^{\phi}_{2} \right)A_{1}^{\phi} 
+\frac{\Omega[A_{n_{1}0+},A_{n_{2}0+}]}{2\pi}e^{i(\omega_{1}+\omega_{2})t} & =\frac{[\mu ^{2}-(\mu+2+2n_{1})^{2}]i}{\mu+2+2n_{1}}\int \mathrm{d}r r^{3}(1+r^{2})^{-(\mu+3)}P_{n_{1}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+& -\frac{[\mu ^{2}-(\mu+2+2n_{2})^{2}]i}{\mu+2+2n_{2}}\int \mathrm{d}r r^{3}(1+r^{2})^{-(\mu+3)}P_{n_{1}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & =\delta _{n_{1},n_{2}}(I-I) =0
 \end{align}$$
 
+$$\tag{.}\begin{align}
+\frac{\Omega[A_{n_{1}0-},A_{n_{2}0-}]}{2\pi}e^{i(\omega_{1}+\omega_{2})t} & =\frac{[\mu ^{2}-(\mu+2+2n_{1})^{2}]i}{\mu+2+2n_{1}}\int \mathrm{d}r r^{3}(1+r^{2})^{-(\mu+3)}P_{n_{1}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & -\frac{[\mu ^{2}-(\mu+2+2n_{2})^{2}]i}{\mu+2+2n_{2}}\int \mathrm{d}r r^{3}(1+r^{2})^{-(\mu+3)}P_{n_{1}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & =\delta _{n_{1},n_{2}}(I-I)=0
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\frac{\Omega[A_{n_{1}0+},A_{n_{2}0-}]}{2\pi}e^{i(\omega_{1}+\omega_{2})t} & =-\frac{[\mu ^{2}+(\mu+2+2n_{1})^{2}]i}{\mu+2+2n_{1}}\int \mathrm{d}r r^{3}(1+r^{2})^{-(\mu+3)}P_{n_{1}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)  \\
+ & +\frac{[\mu ^{2}+(\mu+2+2n_{1})^{2}]i}{\mu+2+2n_{1}}\int \mathrm{d}r r^{3}(1+r^{2})^{-(\mu+3)}P_{n_{1}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) 
+\end{align}$$
 
 here we use
 
@@ -119,7 +124,7 @@ $$\tag{.}\begin{align}
 \left(\mu ^{2}+\frac{m^{2}}{r^{2}}\right) \frac{rA_{n,m\leqslant -1,-}^{r}}{1+r^{2}}+\frac{im}{r}\partial _{r}(r^{2}A_{n,m\leqslant -1,-}^{\phi}) & =
 \frac{e^{-i(\mu-m+2n)t}e^{im\phi}}{\mu-m+2n}\left(\left( 2\left( n+\frac{\mu-m}{2} \right)^{2}+\frac{1}{2}(\mu-m)(\mu+m) \right)r^{-m}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
  & \left. -2(\mu+n)(\mu-m+n)r^{-m+2}(1+r^{2})^{-(\mu-m+4)/2}P_{n-1}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
-\mu ^{2} \frac{rA_{n,m\geqslant 1,+}^{r}}{1+r^{2}} & =-\frac{\mu ^{2}e^{-i(\mu+2n+2)t}}{\mu+2+2n}r^{2}(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+\mu ^{2} \frac{rA_{n,m=0,+}^{r}}{1+r^{2}} & =-\frac{\mu ^{2}e^{-i(\mu+2n+2)t}}{\mu+2+2n}r^{2}(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 \mu ^{2} \frac{rA_{n,m=0,-}^{r}}{1+r^{2}} & = \frac{\mu ^{2}e^{-i(\mu+2+2n)t}}{\mu+2+2n}r^{2}(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
