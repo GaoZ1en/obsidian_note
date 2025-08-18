@@ -102,3 +102,25 @@ $$\tag{.}\begin{align}
 {f^{(-)}_{l,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{e^{i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi _{-1}^{\mu} \\
 {f^{(-)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu)_{n}(\mu+2)_{\bar{n}}} }\mathcal{L}_{\xi _{1}}^{n}\mathcal{L}_{\bar{\xi}_{1}}^{\bar{n}}{f^{(-)}_{l,0,0}}^{\mu}
 \end{align}$$
+
+$$\tag{.}\begin{align}
+{f^{(-)}_{l,0,\bar{n}}}^{\mu} & =\mathcal{L}_{\bar{\xi}_{1}}^{\bar{n}}f^{(-)}_{l,0,0}\xi _{-1}^{\mu} \\
+f^{(-)}_{l,0,\bar{n}} & \propto r^{\bar{n}}(1+r^{2})^{-(\mu+\bar{n}+2)/2}e^{i(\mu+2+\bar{n})t}e^{i\bar{n}\phi} \\
+{f^{(-)}_{l,1,\bar{n}}}^{\mu} & \propto \mathcal{L}_{\xi_{1}}f_{l,0,\bar{n}}^{(-)}\xi _{-1}^{\mu} \\
+ & =f^{(-)}_{l,1,\bar{n}}\xi ^{\mu}_{-1}-2if^{(-)}_{l,0,\bar{n}}\xi _{0}^{\mu} \\
+{f^{(-)}_{l,2,\bar{n}}}^{\mu} & \propto f^{(-)}_{l,2,\bar{n}}\xi ^{\mu}_{-1}-4if^{(-)}_{l,1,\bar{n}}\xi ^{\mu}_{0}-2f^{(-)}_{l,0,\bar{n}}\xi ^{\mu}_{1} \\
+{f^{(-)}_{l,n,\bar{n}}}^{\mu} & \propto f^{(-)}_{l,n,\bar{n}}\xi ^{\mu}_{-1}-2nif_{l,n-1,\bar{n}}^{(-)}\xi ^{\mu}_{0}-2n(n-1)f^{(-)}_{l,n-2,\bar{n}}\xi ^{\mu}_{1}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+f^{(-)}_{l,n,\bar{n}} & \propto (\xi _{1}^{\nu}\partial _{\nu})^{n}f^{(-)}_{l,0,\bar{n}} \\
+ & =r^{|\bar{n}-n|}(1+r^{2})^{-(\mu+|\bar{n}-n|+2)/2}P_{\min(n,\bar{n})}^{(\mu+1,|\bar{n}-n|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{i(\mu+n+\bar{n}+2)t}e^{i(\bar{n}-n)\phi} \\
+f^{(+)}_{l,n,\bar{n}} & \propto ^{|\bar{n}-n|}(1+r^{2})^{-(\mu+|\bar{n}-n|+2)/2}P_{\min(n,\bar{n})}^{(\mu+1,|\bar{n}-n|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(\mu+n+\bar{n}+2)t}e^{-i(\bar{n}-n)\phi}
+\end{align}$$
+
+then
+
+$$\tag{.}\begin{align}
+{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =({f^{(+)}_{l,n,\bar{n}}}^{\mu})^{*} \\
+ & =f^{(+)}_{l,n,\bar{n}}\xi ^{\mu}_{1}+2nif^{(+)}_{l,n-1,\bar{n}}\xi _{0}^{\mu}-2n(n-1)f^{(+)}_{l,n-2,\bar{n}}\xi ^{\mu}_{-1}
+\end{align}$$
