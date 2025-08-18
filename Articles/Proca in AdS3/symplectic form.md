@@ -106,7 +106,8 @@ $$\tag{.}\begin{align}
 
 $$\tag{.}\begin{align}
 \frac{\Omega[A_{n_{1}0+},A_{n_{2}0-}]}{2\pi}e^{i(\omega_{1}+\omega_{2})t} & =-\frac{[\mu ^{2}+(\mu+2+2n_{1})^{2}]i}{\mu+2+2n_{1}}\int \mathrm{d}r r^{3}(1+r^{2})^{-(\mu+3)}P_{n_{1}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)  \\
- & +\frac{[\mu ^{2}+(\mu+2+2n_{1})^{2}]i}{\mu+2+2n_{1}}\int \mathrm{d}r r^{3}(1+r^{2})^{-(\mu+3)}P_{n_{1}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) 
+ & +\frac{[\mu ^{2}+(\mu+2+2n_{2})^{2}]i}{\mu+2+2n_{2}}\int \mathrm{d}r r^{3}(1+r^{2})^{-(\mu+3)}P_{n_{1}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)  \\
+ & =\delta _{n_{1},n_{2}}(I-I)=0
 \end{align}$$
 
 here we use
