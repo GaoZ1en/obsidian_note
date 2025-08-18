@@ -14167,7 +14167,7 @@
       },
       {
         "date": "2025-08-15",
-        "filePath": "Articles/Proca in AdS3/two relations of Jacobi polynomials.md",
+        "filePath": "Articles/Proca in AdS3/three relations of Jacobi polynomials.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -14522,16 +14522,92 @@
             "timeKey": "15:50",
             "w": -87,
             "c": -376
+          },
+          {
+            "timeKey": "16:20",
+            "w": 11,
+            "c": 39
+          },
+          {
+            "timeKey": "16:25",
+            "w": -47,
+            "c": -125
+          },
+          {
+            "timeKey": "16:30",
+            "w": 19,
+            "c": 89
+          },
+          {
+            "timeKey": "16:35",
+            "w": 160,
+            "c": 555
+          },
+          {
+            "timeKey": "16:40",
+            "w": 27,
+            "c": 57
+          },
+          {
+            "timeKey": "16:45",
+            "w": 1,
+            "c": 32
+          },
+          {
+            "timeKey": "16:50",
+            "w": -105,
+            "c": -338
+          },
+          {
+            "timeKey": "21:15",
+            "w": 72,
+            "c": 347
+          },
+          {
+            "timeKey": "21:20",
+            "w": 147,
+            "c": 536
+          },
+          {
+            "timeKey": "21:25",
+            "w": 34,
+            "c": 127
+          },
+          {
+            "timeKey": "21:30",
+            "w": 13,
+            "c": 49
+          },
+          {
+            "timeKey": "21:55",
+            "w": -1177,
+            "c": -4551
           }
         ],
         "id": 482
       },
       {
         "date": "2025-08-16",
-        "filePath": "Articles/Proca in AdS3/two relations of Jacobi polynomials.md",
+        "filePath": "Articles/Proca in AdS3/three relations of Jacobi polynomials.md",
         "wordCountStart": 299,
         "charCountStart": 1132,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "21:30",
+            "w": 33,
+            "c": 138
+          },
+          {
+            "timeKey": "21:35",
+            "w": 48,
+            "c": 189
+          },
+          {
+            "timeKey": "21:50",
+            "w": 59,
+            "c": 228
+          }
+        ],
         "id": 483
       },
       {
@@ -14554,9 +14630,554 @@
             "timeKey": "16:00",
             "w": 32,
             "c": 156
+          },
+          {
+            "timeKey": "16:10",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 484
+      },
+      {
+        "date": "2025-08-16",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [],
+        "id": 485
+      },
+      {
+        "date": "2025-08-16",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:55",
+            "w": 74,
+            "c": 300
+          },
+          {
+            "timeKey": "21:55",
+            "w": 1072,
+            "c": 4166
+          },
+          {
+            "timeKey": "22:10",
+            "w": 10,
+            "c": 69
+          },
+          {
+            "timeKey": "23:35",
+            "w": 106,
+            "c": 410
+          }
+        ],
+        "id": 486
+      },
+      {
+        "date": "2025-08-16",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 578,
+        "charCountStart": 2613,
+        "changes": [
+          {
+            "timeKey": "22:25",
+            "w": -1,
+            "c": 0
+          },
+          {
+            "timeKey": "22:50",
+            "w": -17,
+            "c": -42
+          },
+          {
+            "timeKey": "22:55",
+            "w": 677,
+            "c": 3312
+          },
+          {
+            "timeKey": "23:00",
+            "w": -589,
+            "c": -2976
+          },
+          {
+            "timeKey": "23:05",
+            "w": -90,
+            "c": -360
+          },
+          {
+            "timeKey": "23:10",
+            "w": 510,
+            "c": 2390
+          },
+          {
+            "timeKey": "23:15",
+            "w": 130,
+            "c": 541
+          },
+          {
+            "timeKey": "23:20",
+            "w": -551,
+            "c": -2573
+          },
+          {
+            "timeKey": "23:30",
+            "w": 0,
+            "c": -1
+          }
+        ],
+        "id": 487
+      },
+      {
+        "date": "2025-08-17",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 647,
+        "charCountStart": 2904,
+        "changes": [
+          {
+            "timeKey": "13:55",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "14:10",
+            "w": 223,
+            "c": 1410
+          },
+          {
+            "timeKey": "14:15",
+            "w": -3,
+            "c": -294
+          },
+          {
+            "timeKey": "14:20",
+            "w": 209,
+            "c": 741
+          },
+          {
+            "timeKey": "14:25",
+            "w": 46,
+            "c": 182
+          },
+          {
+            "timeKey": "14:30",
+            "w": 42,
+            "c": 168
+          },
+          {
+            "timeKey": "14:35",
+            "w": -119,
+            "c": -534
+          },
+          {
+            "timeKey": "14:40",
+            "w": 15,
+            "c": 63
+          },
+          {
+            "timeKey": "14:45",
+            "w": 48,
+            "c": 183
+          },
+          {
+            "timeKey": "14:50",
+            "w": 35,
+            "c": 117
+          },
+          {
+            "timeKey": "14:55",
+            "w": -5,
+            "c": -4
+          },
+          {
+            "timeKey": "15:05",
+            "w": 3,
+            "c": -1
+          },
+          {
+            "timeKey": "15:10",
+            "w": -34,
+            "c": -160
+          },
+          {
+            "timeKey": "15:15",
+            "w": 46,
+            "c": 161
+          },
+          {
+            "timeKey": "15:20",
+            "w": 83,
+            "c": 314
+          },
+          {
+            "timeKey": "15:25",
+            "w": 71,
+            "c": 286
+          },
+          {
+            "timeKey": "15:30",
+            "w": 145,
+            "c": 541
+          },
+          {
+            "timeKey": "15:35",
+            "w": 92,
+            "c": 320
+          },
+          {
+            "timeKey": "15:40",
+            "w": -98,
+            "c": -316
+          },
+          {
+            "timeKey": "15:45",
+            "w": -439,
+            "c": -1665
+          },
+          {
+            "timeKey": "18:35",
+            "w": 32,
+            "c": 142
+          },
+          {
+            "timeKey": "18:40",
+            "w": 79,
+            "c": 288
+          },
+          {
+            "timeKey": "18:45",
+            "w": -5,
+            "c": -26
+          },
+          {
+            "timeKey": "18:50",
+            "w": 0,
+            "c": -1
+          },
+          {
+            "timeKey": "18:55",
+            "w": -15,
+            "c": -147
+          },
+          {
+            "timeKey": "19:00",
+            "w": 81,
+            "c": 287
+          },
+          {
+            "timeKey": "19:05",
+            "w": -121,
+            "c": -417
+          },
+          {
+            "timeKey": "19:10",
+            "w": 105,
+            "c": 372
+          },
+          {
+            "timeKey": "19:15",
+            "w": -11,
+            "c": -42
+          },
+          {
+            "timeKey": "19:25",
+            "w": 17,
+            "c": 81
+          },
+          {
+            "timeKey": "19:30",
+            "w": -2,
+            "c": -8
+          },
+          {
+            "timeKey": "19:35",
+            "w": 44,
+            "c": 175
+          },
+          {
+            "timeKey": "19:55",
+            "w": 8,
+            "c": 29
+          },
+          {
+            "timeKey": "20:00",
+            "w": 33,
+            "c": 179
+          },
+          {
+            "timeKey": "20:10",
+            "w": 49,
+            "c": 209
+          },
+          {
+            "timeKey": "20:15",
+            "w": 53,
+            "c": 175
+          },
+          {
+            "timeKey": "20:20",
+            "w": 26,
+            "c": 121
+          },
+          {
+            "timeKey": "20:25",
+            "w": -3,
+            "c": -10
+          },
+          {
+            "timeKey": "20:35",
+            "w": 28,
+            "c": 106
+          },
+          {
+            "timeKey": "20:40",
+            "w": -235,
+            "c": -856
+          },
+          {
+            "timeKey": "20:45",
+            "w": 39,
+            "c": 150
+          },
+          {
+            "timeKey": "20:50",
+            "w": 108,
+            "c": 455
+          },
+          {
+            "timeKey": "20:55",
+            "w": 28,
+            "c": 108
+          },
+          {
+            "timeKey": "21:05",
+            "w": 40,
+            "c": 155
+          },
+          {
+            "timeKey": "21:10",
+            "w": -65,
+            "c": -268
+          },
+          {
+            "timeKey": "21:45",
+            "w": 229,
+            "c": 919
+          },
+          {
+            "timeKey": "21:50",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "22:00",
+            "w": -172,
+            "c": -693
+          },
+          {
+            "timeKey": "22:05",
+            "w": -239,
+            "c": -984
+          },
+          {
+            "timeKey": "22:15",
+            "w": 19,
+            "c": 92
+          },
+          {
+            "timeKey": "22:20",
+            "w": 51,
+            "c": 178
+          },
+          {
+            "timeKey": "22:25",
+            "w": -65,
+            "c": -233
+          }
+        ],
+        "id": 488
+      },
+      {
+        "date": "2025-08-17",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 1262,
+        "charCountStart": 4945,
+        "changes": [],
+        "id": 489
+      },
+      {
+        "date": "2025-08-17",
+        "filePath": "Articles/Proca in AdS3/three relations of Jacobi polynomials.md",
+        "wordCountStart": 439,
+        "charCountStart": 1687,
+        "changes": [
+          {
+            "timeKey": "21:10",
+            "w": 75,
+            "c": 308
+          },
+          {
+            "timeKey": "21:15",
+            "w": 22,
+            "c": 67
+          },
+          {
+            "timeKey": "21:20",
+            "w": 81,
+            "c": 458
+          },
+          {
+            "timeKey": "21:25",
+            "w": 143,
+            "c": 828
+          },
+          {
+            "timeKey": "21:30",
+            "w": -16,
+            "c": -117
+          },
+          {
+            "timeKey": "21:35",
+            "w": 142,
+            "c": 595
+          },
+          {
+            "timeKey": "21:40",
+            "w": -22,
+            "c": -84
+          },
+          {
+            "timeKey": "21:45",
+            "w": -23,
+            "c": -95
+          }
+        ],
+        "id": 490
+      },
+      {
+        "date": "2025-08-17",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6027,
+        "charCountStart": 25663,
+        "changes": [],
+        "id": 491
+      },
+      {
+        "date": "2025-08-18",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 1262,
+        "charCountStart": 4945,
+        "changes": [
+          {
+            "timeKey": "07:50",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "09:50",
+            "w": -58,
+            "c": -253
+          },
+          {
+            "timeKey": "09:55",
+            "w": 178,
+            "c": 809
+          },
+          {
+            "timeKey": "10:00",
+            "w": -109,
+            "c": -468
+          },
+          {
+            "timeKey": "10:05",
+            "w": 68,
+            "c": 256
+          },
+          {
+            "timeKey": "10:10",
+            "w": 73,
+            "c": 255
+          },
+          {
+            "timeKey": "10:15",
+            "w": 27,
+            "c": 99
+          },
+          {
+            "timeKey": "10:20",
+            "w": 310,
+            "c": 1124
+          }
+        ],
+        "id": 492
+      },
+      {
+        "date": "2025-08-18",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 1143,
+        "charCountStart": 4953,
+        "changes": [
+          {
+            "timeKey": "08:30",
+            "w": 70,
+            "c": 323
+          },
+          {
+            "timeKey": "08:45",
+            "w": 82,
+            "c": 331
+          },
+          {
+            "timeKey": "09:00",
+            "w": 39,
+            "c": 168
+          },
+          {
+            "timeKey": "09:05",
+            "w": 24,
+            "c": 85
+          },
+          {
+            "timeKey": "09:10",
+            "w": 170,
+            "c": 639
+          },
+          {
+            "timeKey": "09:15",
+            "w": -8,
+            "c": -17
+          },
+          {
+            "timeKey": "09:20",
+            "w": 174,
+            "c": 635
+          }
+        ],
+        "id": 493
+      },
+      {
+        "date": "2025-08-18",
+        "filePath": "Articles/Proca in AdS3/three relations of Jacobi polynomials.md",
+        "wordCountStart": 841,
+        "charCountStart": 3647,
+        "changes": [],
+        "id": 494
+      },
+      {
+        "date": "2025-08-18",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6027,
+        "charCountStart": 25663,
+        "changes": [
+          {
+            "timeKey": "10:00",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 495
       }
     ],
     "daysWithCompletedGoal": [
@@ -14597,7 +15218,10 @@
       "2025-08-09",
       "2025-08-11",
       "2025-08-13",
-      "2025-08-14"
+      "2025-08-14",
+      "2025-08-16",
+      "2025-08-17",
+      "2025-08-18"
     ]
   }
 }

@@ -52,13 +52,23 @@ now we will not impose complex conjugate
 
 $$\tag{.}
 \begin{align}
-\omega[A_{1}^{\mu},A_{2}^{\nu}] & =\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\delta_{1}A^{t}+\frac{2r^{2}}{1+r^{2}}\delta _{1}A^{t}+ \frac{r}{(1+r^{2})^{2}}\partial _{t}\delta _{1}A^{r} \right)\delta _{2}A^{r} \\
- & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\delta_{2}A^{t}+\frac{2r^{2}}{1+r^{2}}\delta _{2}A^{t}+ \frac{r}{(1+r^{2})^{2}}\partial _{t}\delta _{2}A^{r} \right)\delta _{1}A^{r} \\
- & +\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{\phi}\delta_{1} A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta_{1} A^{\phi} \right)\delta_{2} A^{\phi} \\
- & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{\phi}\delta_{2} A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{r}\delta_{2} A^{\phi} \right)\delta_{1} A^{\phi}
+\frac{i\omega\Omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1},-m_{2}}\delta _{\omega_{1}\omega_{2}}} & =\int \mathrm{d}r\left( r\partial _{r}\left( \partial _{r}\tilde{A}_{1}^{r}+\frac{1}{r}\tilde{A}_{1}^{r}+im_{1}\tilde{A}^{\phi}_{1} \right)+\frac{2r^{2}}{1+r^{2}}\left(\partial _{r}\tilde{A}_{1}^{r}+\frac{1}{r}\tilde{A}^{r}_{1}+im_{1}\tilde{A}^{\phi}_{1}\right)+\frac{\omega ^{2}_{1} r}{(1+r^{2})^{2}}A_{1}^{r} \right)\tilde{A}_{2}^{r} \\
+ & -\int \mathrm{d}r\left( r\partial _{r}\left( \partial _{r}\tilde{A}^{r}_{2}+\frac{1}{r}\tilde{A}^{r}_{2}+im_{2}\tilde{A}^{\phi}_{2} \right)+\frac{2r^{2}}{1+r^{2}}\left( \partial _{r}\tilde{A}^{r}_{2}+\frac{1}{r}\tilde{A}^{r}_{2}+im_{2}\tilde{A}^{\phi}_{2} \right)+ \frac{\omega_{2}^{2} r}{(1+r^{2})^{2}}A_{2}^{r} \right)A_{1}^{r} \\
+ & +\int \mathrm{d}r\left( im_{1}r\left(\partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}^{r}_{1}+im_{1}\tilde{A}^{\phi}_{1}\right)+\frac{\omega ^{2}_{1}r^{3}}{1+r^{2}} A_{1}^{\phi} \right) A_{2}^{\phi} \\
+ & -\int \mathrm{d}r\left( im_{2}r\left(\partial _{r}\tilde{A}^{r}_{2}+\frac{1}{r}\tilde{A}^{r}_{2}+im_{2}\tilde{A}^{\phi}_{2}\right)+\frac{\omega ^{2}_{2}r^{3}}{1+r^{2}}A_{2}^{\phi} \right)A_{1}^{\phi} 
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\frac{i\omega_{1}\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =2im_{1}\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}rA_{2}^{*\phi}-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}\right) \\
- & +2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} +\left( \frac{\omega ^{2}_{1}r^{2}}{1+r^{2}}-m_{1}^{2} \right)\tilde{A}^{\phi}_{1}\tilde{A}^{*\phi}_{2}\right]
+\frac{i\omega\Omega[A_{1}^{\mu},A_{2}^{\nu}]}{2\pi \delta _{m_{1},-m_{2}}\delta _{\omega_{1}\omega_{2}}} & =\int \mathrm{d}r \frac{r}{1+r^{2}}\left( (1+r^{2})\partial _{r}\left( \partial _{r}\tilde{A}_{1}^{r}+\frac{1}{r}\tilde{A}_{1}^{r}+im_{1}\tilde{A}^{\phi}_{1} \right)+2r\left(\partial _{r}\tilde{A}_{1}^{r}+\frac{1}{r}\tilde{A}^{r}_{1}+im_{1}\tilde{A}^{\phi}_{1}\right)+\frac{\omega ^{2}_{1} }{1+r^{2}}A_{1}^{r} \right)\tilde{A}_{2}^{r} \\
+ & +\int \mathrm{d}r \frac{r}{1+r^{2}}\left(\left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\tilde{A}^{r}_{1}+im_{1}(1+r^{2})\partial _{r}\tilde{A}^{\phi}+2im_{1}r\tilde{A}^{\phi}_{1}\right)\tilde{A}^{r}_{2}\\
+ & -\int \mathrm{d}r\left( r\partial _{r}\left( \partial _{r}\tilde{A}^{r}_{2}+\frac{1}{r}\tilde{A}^{r}_{2}+im_{2}\tilde{A}^{\phi}_{2} \right)+\frac{2r^{2}}{1+r^{2}}\left( \partial _{r}\tilde{A}^{r}_{2}+\frac{1}{r}\tilde{A}^{r}_{2}+im_{2}\tilde{A}^{\phi}_{2} \right)+ \frac{\omega_{2}^{2} r}{(1+r^{2})^{2}}A_{2}^{r} \right)A_{1}^{r} \\
+ & +\int \mathrm{d}r\left( im_{1}r\left(\partial _{r}\tilde{A}^{r}_{1}+\frac{1}{r}\tilde{A}^{r}_{1}+im_{1}\tilde{A}^{\phi}_{1}\right)+\frac{\omega ^{2}_{1}r^{3}}{1+r^{2}} A_{1}^{\phi} \right) A_{2}^{\phi} \\
+ & -\int \mathrm{d}r\left( im_{2}r\left(\partial _{r}\tilde{A}^{r}_{2}+\frac{1}{r}\tilde{A}^{r}_{2}+im_{2}\tilde{A}^{\phi}_{2}\right)+\frac{\omega ^{2}_{2}r^{3}}{1+r^{2}}A_{2}^{\phi} \right)A_{1}^{\phi} 
+\end{align}$$
+
+here we use
+
+$$\tag{.}\begin{align}
+(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\mu ^{2}-\frac{m^{2}+1}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r}-\frac{2im}{r}\tilde{A}^{\phi} & =0 \\
+-i\omega \tilde{A}^{t}+\partial _{r}\tilde{A}^{r}+\frac{1}{r}\tilde{A}^{r}+im\tilde{A}^{\phi} & =0
 \end{align}$$
