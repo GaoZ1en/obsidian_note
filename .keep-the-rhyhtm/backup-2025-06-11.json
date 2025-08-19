@@ -15217,13 +15217,213 @@
           },
           {
             "timeKey": "13:30",
-            "w": 41,
-            "c": 122
+            "w": 1579,
+            "c": 6298
           },
           {
             "timeKey": "13:35",
-            "w": 109,
-            "c": 406
+            "w": 166,
+            "c": 607
+          },
+          {
+            "timeKey": "13:40",
+            "w": -145,
+            "c": -604
+          },
+          {
+            "timeKey": "13:45",
+            "w": -112,
+            "c": -432
+          },
+          {
+            "timeKey": "13:50",
+            "w": 88,
+            "c": 347
+          },
+          {
+            "timeKey": "14:00",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "19:15",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "19:20",
+            "w": 275,
+            "c": 1092
+          },
+          {
+            "timeKey": "19:25",
+            "w": 66,
+            "c": 227
+          },
+          {
+            "timeKey": "19:30",
+            "w": 58,
+            "c": 174
+          },
+          {
+            "timeKey": "19:35",
+            "w": 25,
+            "c": 85
+          },
+          {
+            "timeKey": "19:40",
+            "w": -255,
+            "c": -959
+          },
+          {
+            "timeKey": "19:45",
+            "w": 6,
+            "c": 44
+          },
+          {
+            "timeKey": "19:50",
+            "w": 11,
+            "c": 51
+          },
+          {
+            "timeKey": "19:55",
+            "w": 40,
+            "c": 107
+          },
+          {
+            "timeKey": "20:00",
+            "w": -102,
+            "c": -391
+          },
+          {
+            "timeKey": "20:05",
+            "w": 38,
+            "c": 130
+          },
+          {
+            "timeKey": "20:10",
+            "w": 419,
+            "c": 1646
+          },
+          {
+            "timeKey": "20:15",
+            "w": -114,
+            "c": -428
+          },
+          {
+            "timeKey": "20:20",
+            "w": -237,
+            "c": -945
+          },
+          {
+            "timeKey": "20:25",
+            "w": 42,
+            "c": 47
+          },
+          {
+            "timeKey": "20:30",
+            "w": 9,
+            "c": 36
+          },
+          {
+            "timeKey": "21:00",
+            "w": 159,
+            "c": 690
+          },
+          {
+            "timeKey": "21:05",
+            "w": 38,
+            "c": 149
+          },
+          {
+            "timeKey": "21:10",
+            "w": -23,
+            "c": -147
+          },
+          {
+            "timeKey": "21:15",
+            "w": 132,
+            "c": 528
+          },
+          {
+            "timeKey": "21:20",
+            "w": 1,
+            "c": 5
+          },
+          {
+            "timeKey": "21:25",
+            "w": 5,
+            "c": 20
+          },
+          {
+            "timeKey": "21:30",
+            "w": -13,
+            "c": -38
+          },
+          {
+            "timeKey": "21:35",
+            "w": 69,
+            "c": 248
+          },
+          {
+            "timeKey": "21:40",
+            "w": 18,
+            "c": 111
+          },
+          {
+            "timeKey": "21:45",
+            "w": -5,
+            "c": -13
+          },
+          {
+            "timeKey": "21:55",
+            "w": -64,
+            "c": -268
+          },
+          {
+            "timeKey": "22:00",
+            "w": 2,
+            "c": 7
+          },
+          {
+            "timeKey": "22:05",
+            "w": -27,
+            "c": -127
+          },
+          {
+            "timeKey": "22:10",
+            "w": 119,
+            "c": 507
+          },
+          {
+            "timeKey": "22:15",
+            "w": 58,
+            "c": 188
+          },
+          {
+            "timeKey": "22:20",
+            "w": 32,
+            "c": 101
+          },
+          {
+            "timeKey": "22:25",
+            "w": -15,
+            "c": -25
+          },
+          {
+            "timeKey": "22:30",
+            "w": 89,
+            "c": 326
+          },
+          {
+            "timeKey": "22:35",
+            "w": 38,
+            "c": 162
+          },
+          {
+            "timeKey": "22:40",
+            "w": -830,
+            "c": -3128
           }
         ],
         "id": 492
@@ -15309,6 +15509,128 @@
         "charCountStart": 22685,
         "changes": [],
         "id": 497
+      },
+      {
+        "date": "2025-08-18",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 498
+      },
+      {
+        "date": "2025-08-18",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 1579,
+        "charCountStart": 6980,
+        "changes": [],
+        "id": 499
+      },
+      {
+        "date": "2025-08-18",
+        "filePath": "Articles/Proca in AdS3/electric field.md",
+        "wordCountStart": 600,
+        "charCountStart": 2705,
+        "changes": [],
+        "id": 500
+      },
+      {
+        "date": "2025-08-18",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 3030,
+        "charCountStart": 15071,
+        "changes": [],
+        "id": 501
+      },
+      {
+        "date": "2025-08-18",
+        "filePath": "Articles/Proca in AdS3/another field in ads3.md",
+        "wordCountStart": 1206,
+        "charCountStart": 5321,
+        "changes": [],
+        "id": 502
+      },
+      {
+        "date": "2025-08-18",
+        "filePath": "Articles/Proca in AdS3/angular decomposition.md",
+        "wordCountStart": 457,
+        "charCountStart": 2587,
+        "changes": [],
+        "id": 503
+      },
+      {
+        "date": "2025-08-18",
+        "filePath": "Articles/Proca in AdS3/three integrals.md",
+        "wordCountStart": 640,
+        "charCountStart": 2378,
+        "changes": [],
+        "id": 504
+      },
+      {
+        "date": "2025-08-18",
+        "filePath": "Note/useful results/ADM formalism.md",
+        "wordCountStart": 695,
+        "charCountStart": 2966,
+        "changes": [],
+        "id": 505
+      },
+      {
+        "date": "2025-08-19",
+        "filePath": "TODO.md",
+        "wordCountStart": 73,
+        "charCountStart": 960,
+        "changes": [
+          {
+            "timeKey": "14:00",
+            "w": 6104,
+            "c": 30042
+          }
+        ],
+        "id": 506
+      },
+      {
+        "date": "2025-08-19",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 5122,
+        "charCountStart": 20139,
+        "changes": [
+          {
+            "timeKey": "14:05",
+            "w": -133,
+            "c": -548
+          },
+          {
+            "timeKey": "14:10",
+            "w": 127,
+            "c": 591
+          },
+          {
+            "timeKey": "14:15",
+            "w": 52,
+            "c": 106
+          },
+          {
+            "timeKey": "14:20",
+            "w": -35,
+            "c": -56
+          },
+          {
+            "timeKey": "14:25",
+            "w": -15,
+            "c": -142
+          },
+          {
+            "timeKey": "14:30",
+            "w": 302,
+            "c": 1346
+          },
+          {
+            "timeKey": "14:35",
+            "w": 45,
+            "c": 166
+          }
+        ],
+        "id": 507
       }
     ],
     "daysWithCompletedGoal": [
@@ -15352,7 +15674,8 @@
       "2025-08-14",
       "2025-08-16",
       "2025-08-17",
-      "2025-08-18"
+      "2025-08-18",
+      "2025-08-19"
     ]
   }
 }
