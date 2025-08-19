@@ -8,15 +8,23 @@ $$\tag{.}\begin{align}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\frac{\Omega[A_{n_{1},m_{1}\geqslant 1,+},A^{*}_{n_{2},m_{2}\geqslant 1,+}]}{2\pi \delta _{m_{1}m_{2}}}e^{i(\omega_{1}-\omega_{2})t} & =-\frac{2i(\mu(\mu+m_{1})+2n_{1}(\mu+m_{1}+n_{1}))}{\mu+m_{1}+2n_{1}}\int \mathrm{d}rr^{2m_{1}-1}(1+r^{2})^{-(\mu+m_{1}+1)}P_{n_{1}}^{(\mu,m_{1}-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\mu,m_{1}-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\ 
- & +\frac{2i}{\mu+m_{1}+2n_{2}}\int \mathrm{d}r\left(-(\mu(\mu+m_{1})+2n_{2}(\mu+m_{1}+n_{2}))r^{m_{1}}(1+r^{2})^{-(\mu+m_{1}+2)/2}P_{n_{2}}^{(\mu,m_{1}-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)r^{m_{1}-1}(1+r^{2})^{-(\mu+m_{1})/2}P_{n_{1}}^{(\mu,m_{1}-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & -\frac{i}{\mu+m_{1}+2n_{2}}\int \mathrm{d}r\left((\mu(\mu+m_{1})+2n_{2}(\mu+m_{1}+n_{2}))r^{m_{1}+1}(1+r^{2})^{-(\mu+m_{1}+2)/2}P_{n_{2}}^{(\mu,m_{1}-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
- & \left. +2\left(\mu+n_{2}\right)(\mu+n_{2}+m_{1})r^{m_{1}+3}(1+r^{2})^{-(\mu+m_{1}+4)/2}P_{n_{2}-1}^{(\mu,m_{1}+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)r^{m_{1}-2}(1+r^{2})^{-(\mu+m_{1})/2}P_{n_{1}}^{(\mu,m_{1}-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+ \Omega[A_{n,m_{1}\geqslant 1,+},A^{*}_{n_{2},m_{2}\geqslant 1,+}]& =-4\pi i(\mu(\mu+m_{1})+2n_{1}(\mu+m_{1}+n_{1})) \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}+m_{1})}{(\mu+m_{1}+2n_{1})^{2}\Gamma(n_{1}+m_{1}+n_{1})n_{1}!}\delta _{n_{1}n_{2}}\delta _{m_{1}m_{2}}
 \end{align}$$
 
 $$\tag{.}\begin{align}
--\frac{1}{i\omega}\left( -im\partial _{r}(rA_{n,m\geqslant 1,+}^{r*})-\left(m^{2}-\frac{\omega^{2}r^{2}}{1+r^{2}}\right)rA_{n,m\geqslant 1,+}^{\phi} \right) & =\frac{1}{\mu+m_{1}+2n_{2}}
+\frac{\Omega[A_{n_{1},m=0,+},A^{*}_{n_{2},m=0,+}]}{2\pi }e^{i(\omega_{1}-\omega_{2})t} & =-\frac{i(\mu ^{2}+(\mu+2+2n_{1})^{2})}{\mu+2+2n_{1}}\int \mathrm{d}rr^{3}(1+r^{2})^{-(\mu+3)}P_{n_{1}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+  & -\frac{i(\mu ^{2}+(\mu+2+2n_{2})^{2})}{\mu+2+2n_{2}}\int \mathrm{d}rr^{3}(1+r^{2})^{-(\mu+3)}P_{n_{1}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & = -\frac{2i(\mu ^{2}+(\mu+2+2n_{1})^{2})}{\mu+2+2n_{1}}\delta _{n_{1},n_{2}} \Gamma(n_{1}+\mu+1)\Gamma(n_{1}+2)
 \end{align}$$
+
+
+
+$$\tag{.}\begin{align}
+\frac{1}{i\omega}\left( \mu ^{2} \frac{rA_{n,m=0,+}^{r}}{1+r^{2}} \right) & =-\frac{\mu ^{2}e^{-i(\mu+2n+2)t}}{\mu+2+2n}r^{2}(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+-i\frac{\omega r^{2}}{1+r^{2}}rA_{n,m=0,+}^{\phi} & =-i(\mu+2n+2)e^{-i(\mu+2n+2)t}r^{3}(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
+\int _{0}^{\infty} \mathrm{d}r r^{2\beta+1}(1+r^{2})^{-(\alpha+\beta+2)}\left[P^{(\alpha,\beta}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} & =\frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{2(2n+\alpha+\beta+1)\Gamma(n+\alpha+\beta+1)n!}
+\end{align}$$
+
 
 $$\tag{.}\begin{align}
 \frac{i(2n+m+\mu)}{2\pi} \Omega(A^{\mu}_{nm+},A^{\nu*}_{(n-1)m-}) & =4(\mu+n)(\mu+m+n)\int _{0}^{\infty}\mathrm{d}r r^{2m+3}(1+r^{2})^{-(\mu+m+3)}\left[ P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right]^{2} \\
@@ -26,7 +34,7 @@ $$\tag{.}\begin{align}
 
 
 $$\tag{.}\begin{align}
-\int _{0}^{\infty} \mathrm{d}r r^{2\beta+1}(1+r^{2})^{-(\alpha+\beta+2)}\left[P^{(\alpha,\beta}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} & =\frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{2(2n+\alpha+\beta+1)\Gamma(n+\alpha+\beta+1)n!}
+
 \end{align}$$
 
 as a summary, we have
