@@ -15626,11 +15626,97 @@
           },
           {
             "timeKey": "14:35",
-            "w": 45,
-            "c": 166
+            "w": 101,
+            "c": 367
+          },
+          {
+            "timeKey": "14:40",
+            "w": -204,
+            "c": -861
+          },
+          {
+            "timeKey": "14:45",
+            "w": -211,
+            "c": -779
+          },
+          {
+            "timeKey": "15:00",
+            "w": 227,
+            "c": 916
+          },
+          {
+            "timeKey": "15:30",
+            "w": 317,
+            "c": 1137
+          },
+          {
+            "timeKey": "15:35",
+            "w": 76,
+            "c": 256
+          },
+          {
+            "timeKey": "15:40",
+            "w": -116,
+            "c": -447
+          },
+          {
+            "timeKey": "15:45",
+            "w": -55,
+            "c": -237
+          },
+          {
+            "timeKey": "15:50",
+            "w": -301,
+            "c": -1102
+          },
+          {
+            "timeKey": "15:55",
+            "w": 59,
+            "c": 115
+          },
+          {
+            "timeKey": "16:00",
+            "w": -98,
+            "c": -382
+          },
+          {
+            "timeKey": "16:05",
+            "w": 356,
+            "c": 1675
+          },
+          {
+            "timeKey": "16:10",
+            "w": 88,
+            "c": 332
+          },
+          {
+            "timeKey": "16:15",
+            "w": -41,
+            "c": -198
+          },
+          {
+            "timeKey": "16:20",
+            "w": -794,
+            "c": -3306
           }
         ],
         "id": 507
+      },
+      {
+        "date": "2025-08-20",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [],
+        "id": 508
+      },
+      {
+        "date": "2025-08-20",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6027,
+        "charCountStart": 25663,
+        "changes": [],
+        "id": 509
       }
     ],
     "daysWithCompletedGoal": [
