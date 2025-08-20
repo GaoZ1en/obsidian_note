@@ -15717,6 +15717,20 @@
         "charCountStart": 25663,
         "changes": [],
         "id": 509
+      },
+      {
+        "date": "2025-08-20",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 4824,
+        "charCountStart": 18922,
+        "changes": [
+          {
+            "timeKey": "19:05",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 512
       }
     ],
     "daysWithCompletedGoal": [
