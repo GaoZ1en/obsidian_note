@@ -8,6 +8,9 @@ $$\tag{.}\begin{align}
 \end{align}$$
 
 $$\tag{.}\begin{align}
+\Omega[A_{n_{1},m_{1}\geqslant 0,\pm},A^{*}_{n_{2},m_{2},\pm}]& =-2\pi i (\mu ^{2}+(2n_{2}+|m_{1}\mp 1|+\mu+1)^{2}-m_{1}^{2}) \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}+|m_{1}\mp 1|+1)}{(2n_{1}+|m_{1}\mp 1|+\mu+1)^{2}\Gamma(n_{1}+|m_{1}\mp 1|+\mu+1)n_{1}!}\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}} \\
+\Omega[A_{n_{1},m_{1},\pm},A^{*}_{n_{2},m_{2},\pm}]& =-2\pi i (\mu ^{2}+(2n_{2}+|m_{1}\mp 1|+\mu+1)^{2}-m_{1}^{2}) \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}+|m_{1}\mp 1|+1)}{(2n_{1}+|m_{1}\mp 1|+\mu+1)^{2}\Gamma(n_{1}+|m_{1}\mp 1|+\mu+1)n_{1}!}\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}} \\
+\Omega[A_{n_{1},m_{1},\pm},A^{*}_{n_{2},m_{2},\pm}]& =-2\pi i (\mu ^{2}+(2n_{2}+|m_{1}\mp 1|+\mu+1)^{2}-m_{1}^{2}) \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}+|m_{1}\mp 1|+1)}{(2n_{1}+|m_{1}\mp 1|+\mu+1)^{2}\Gamma(n_{1}+|m_{1}\mp 1|+\mu+1)n_{1}!}\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}} \\
 \Omega[A_{n_{1},m_{1},\pm},A^{*}_{n_{2},m_{2},\pm}]& =-2\pi i (\mu ^{2}+(2n_{2}+|m_{1}\mp 1|+\mu+1)^{2}-m_{1}^{2}) \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}+|m_{1}\mp 1|+1)}{(2n_{1}+|m_{1}\mp 1|+\mu+1)^{2}\Gamma(n_{1}+|m_{1}\mp 1|+\mu+1)n_{1}!}\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}}
 \end{align}$$
 
