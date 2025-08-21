@@ -15745,6 +15745,224 @@
           }
         ],
         "id": 513
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 4824,
+        "charCountStart": 18922,
+        "changes": [
+          {
+            "timeKey": "15:25",
+            "w": 256,
+            "c": 874
+          },
+          {
+            "timeKey": "15:30",
+            "w": -14,
+            "c": 5
+          },
+          {
+            "timeKey": "15:35",
+            "w": -21,
+            "c": -84
+          }
+        ],
+        "id": 515
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "TODO.md",
+        "wordCountStart": 6177,
+        "charCountStart": 31002,
+        "changes": [],
+        "id": 516
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 517
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/word cloud.md",
+        "wordCountStart": 7165,
+        "charCountStart": 49402,
+        "changes": [
+          {
+            "timeKey": "15:40",
+            "w": -7165,
+            "c": -49402
+          }
+        ],
+        "id": 518
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/test.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 519
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/prompt.md",
+        "wordCountStart": 2,
+        "charCountStart": 21,
+        "changes": [
+          {
+            "timeKey": "15:40",
+            "w": -2,
+            "c": -21
+          }
+        ],
+        "id": 520
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/project euler.md",
+        "wordCountStart": 236,
+        "charCountStart": 983,
+        "changes": [],
+        "id": 521
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/Proca field calculation.md",
+        "wordCountStart": 1327,
+        "charCountStart": 5248,
+        "changes": [],
+        "id": 522
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/path integral quantization for first and second class constraints.md",
+        "wordCountStart": 4746,
+        "charCountStart": 33470,
+        "changes": [],
+        "id": 523
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/ward identity.md",
+        "wordCountStart": 755,
+        "charCountStart": 5786,
+        "changes": [],
+        "id": 524
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/ads3 proca.md",
+        "wordCountStart": 340,
+        "charCountStart": 1752,
+        "changes": [
+          {
+            "timeKey": "15:45",
+            "w": -340,
+            "c": -1752
+          }
+        ],
+        "id": 525
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/ads3proca.md",
+        "wordCountStart": 527,
+        "charCountStart": 2436,
+        "changes": [
+          {
+            "timeKey": "15:45",
+            "w": -527,
+            "c": -2436
+          }
+        ],
+        "id": 526
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/ADM formalism.md",
+        "wordCountStart": 1050,
+        "charCountStart": 5031,
+        "changes": [
+          {
+            "timeKey": "15:45",
+            "w": -1050,
+            "c": -5031
+          }
+        ],
+        "id": 527
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Note/useful results/ADM formalism.md",
+        "wordCountStart": 695,
+        "charCountStart": 2966,
+        "changes": [
+          {
+            "timeKey": "15:45",
+            "w": 354,
+            "c": 2063
+          }
+        ],
+        "id": 528
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/Jacobi.md",
+        "wordCountStart": 249,
+        "charCountStart": 895,
+        "changes": [
+          {
+            "timeKey": "15:45",
+            "w": -249,
+            "c": -895
+          }
+        ],
+        "id": 529
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/Jacobi polynomials.md",
+        "wordCountStart": 887,
+        "charCountStart": 4590,
+        "changes": [
+          {
+            "timeKey": "15:45",
+            "w": -887,
+            "c": -4590
+          }
+        ],
+        "id": 530
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Drafts/Nambu-Goto action and cosmic string.md",
+        "wordCountStart": 19,
+        "charCountStart": 114,
+        "changes": [
+          {
+            "timeKey": "15:45",
+            "w": -19,
+            "c": -114
+          }
+        ],
+        "id": 531
       }
     ],
     "daysWithCompletedGoal": [
