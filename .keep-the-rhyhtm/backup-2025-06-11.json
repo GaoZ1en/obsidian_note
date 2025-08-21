@@ -15963,6 +15963,20 @@
           }
         ],
         "id": 531
+      },
+      {
+        "date": "2025-08-21",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 1694,
+        "charCountStart": 7117,
+        "changes": [
+          {
+            "timeKey": "20:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 534
       }
     ],
     "daysWithCompletedGoal": [
