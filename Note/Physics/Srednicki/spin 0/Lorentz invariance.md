@@ -81,5 +81,44 @@ let $\displaystyle{\Lambda=1+\delta \omega}$ in (1.9), we get
 
 $$\tag{1.11}\begin{align}
 \left( 1-\frac{i}{2}\delta \omega _{\rho \sigma}M^{\rho \sigma} \right)M^{\mu \nu}\left( 1+\frac{i}{2}\delta \omega _{\lambda \tau}M^{\lambda \tau} \right) & =(\delta ^{\mu}_{~\rho}+\delta \omega ^{\mu}_{~\rho})(\delta ^{\nu}_{~\sigma}+\delta \omega ^{\nu}_{~\sigma})M^{\rho \sigma} \\
-\frac{i}{2}\delta \omega _{\rho \sigma}[M^{\mu \nu},M^{\rho \sigma}] & =\delta ^{\mu}_{~\rho}\delta \omega ^{\nu}_{~\sigma}M^{\rho \sigma}+\delta ^{\nu}_{~\sigma}\delta \omega ^{\mu}_{~\rho}M^{\rho \sigma}
+\implies\frac{i}{2}\delta \omega _{\rho \sigma}[M^{\mu \nu},M^{\rho \sigma}] & =\delta \omega_{\rho\sigma}\eta ^{\nu \rho}M^{\mu \sigma}-\delta \omega _{\rho \sigma}\eta ^{\mu \sigma}M^{\rho \nu} \\
+\implies [M^{\mu \nu},M^{\rho \sigma}] & =i(\eta ^{\mu \rho}M^{\nu \sigma}-(\mu\leftrightarrow \nu))-(\rho\leftrightarrow \sigma)
+\end{align}$$
+
+in 4 dimensions, we can identify the components of angular momentum operator $\displaystyle{\vec{J}}$ as $\displaystyle{J_{i}=\frac{1}{2}\varepsilon _{ijk}M^{jk}}$ and the components of the boost operator $\displaystyle{\vec{K}}$ as $\displaystyle{K_{i}=M^{i0}}$. then we have
+
+$$\begin{align}
+[J_{i},J_{j}] & =i\varepsilon _{ijk}J_{k} \\
+[J_{i},K_{k}] & =i\varepsilon _{ijk}K_{k} \\
+[K_{i},K_{j}] & =-i\varepsilon _{ijk}J_{k}
+\end{align}$$
+
+similar as (1.11), we have
+
+$$\tag{1.12}\begin{align}
+\left( 1-\frac{i}{2}\delta \omega _{\rho \sigma}M^{\rho \sigma} \right)P^{\mu}\left( 1+\frac{i}{2}\delta \omega _{\lambda \tau}M^{\lambda \tau} \right) & =(\delta ^{\mu}_{~\nu}+\delta \omega ^{\mu}_{~\nu})P^{\nu} \\
+\implies \frac{i}{2}\delta \omega _{\rho \sigma}[P^{\mu},M^{\rho \sigma}] & =\delta \omega_{\rho \sigma}\eta ^{\mu \rho}P^{\sigma} \\
+\implies[P^{\mu},M^{\rho \sigma}] & =i(\eta ^{\mu \rho}P^{\sigma}-(\rho\leftrightarrow \sigma))
+\end{align}$$
+
+which becomes
+
+$$\begin{align}
+[J_{i},H] & =0 \\
+[J_{i},P_{j}] & =i\varepsilon _{ijk}P_{k} \\
+[K_{i},H] & =iP_{i} \\
+[K_{i},P_{j}] & =i\delta _{ij}H
+\end{align}$$
+
+and
+
+$$\tag{1.13}\begin{align}
+[P^{\mu},P^{\nu}] & =0
+\end{align}$$
+
+which becomes
+
+$$\begin{align}
+[P_{i},P_{j}] & =0 \\
+[P_{i},H] & =0
 \end{align}$$
