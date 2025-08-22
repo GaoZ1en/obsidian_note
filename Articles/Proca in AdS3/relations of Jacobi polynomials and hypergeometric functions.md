@@ -71,3 +71,21 @@ $$\tag{.}\begin{align}
 +\left( \frac{n+\mu+2}{1+r^{2}}-(\bar{n}+\mu+2) \right)P^{(\mu+1,n-\bar{n})}_{\bar{n}}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 +(\bar{n}+1) P^{(\mu+1,n-\bar{n}-1)}_{\bar{n}-1}\left(\frac{r^{2}-1}{r^{2}+1}\right) & =0
 \end{align}$$
+
+---
+
+we want the linear relation of the following form
+
+$$\tag{.}\begin{align}
+{}_{2}F_{1}(-\bar{k},k+\mu+2;\mu+2;z)+{}_{2}F_{1}(-\bar{k},k+\mu+1;\mu+1,z)+{}_{2}F_{1}(-\bar{k}+1,k+\mu+2;\mu+1;z) & =0 \\
+{}_{2}F_{1}(-\bar{k}+1,k+\mu+2;\mu+2;z)+{}_{2}F_{1}(-\bar{k},k+\mu+1;\mu+1,z)+{}_{2}F_{1}(-\bar{k}+1,k+\mu+2;\mu+1;z) & =0 \\
+{}_{2}F_{1}(-\bar{k}+2,k+\mu+2;\mu+2;z)+{}_{2}F_{1}(-\bar{k},k+\mu+1;\mu+1,z)+{}_{2}F_{1}(-\bar{k}+1,k+\mu+2;\mu+1;z) & =0
+\end{align}$$
+
+let $\displaystyle{\alpha=-\bar{k},\beta=\mu+k+1,\gamma=\mu+1}$, then
+
+$$\tag{.}\begin{align}
+F(\gamma+1)+F+F(\alpha+1,\beta+1) & =0 \\
+F(\beta+1,\gamma+1)+F+F(\alpha+1,\beta+1) & =0 \\
+F(\beta+2,\gamma+1)+F+F(\alpha+1,\beta+1) & =0
+\end{align}$$

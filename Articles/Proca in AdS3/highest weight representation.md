@@ -107,14 +107,9 @@ $$\tag{.}\begin{align}
 f^{(+)}_{l,0,\bar{n}} & \propto \mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f^{(+)}_{l,0,0} \\
  & \propto (\bar{\xi} _{-1}^{\nu}\partial _{\nu})^{\bar{n}}f^{(+)}_{l,0,0} \\
  & \propto r^{\bar{n}}(1+r^{2})^{-(\mu+2+\bar{n})/2}e^{-i(\mu+2+\bar{n})t}e^{-i\bar{n}\phi} \\
-f^{(+)}_{l,n,\bar{n}} & \propto (1+r^{2})^{-(\mu+2+n+\bar{n})t}e^{i(n-\bar{n})\phi}r^{\bar{n}-n}(1+r^{2})^{-(\mu+2+\bar{n}-n)/2}P_{n}^{(\mu+1,\bar{n}-n)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+f^{(+)}_{l,n,\bar{n}} & \propto r^{|\bar{n}-n|}(1+r^{2})^{-(\mu+2+|\bar{n}-n|)/2}P_{\min(n,\bar{n})}^{(\mu+1,|\bar{n}-n|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-(\mu+2+n+\bar{n})t}e^{i(n-\bar{n})\phi}
 \end{align}$$
 
-
-$$\tag{.}\begin{align}
--1+r^{2}(\mu+2) & =-\mu-3+(1+r^{2})(\mu+2) \\
- & =1-\frac{\mu+3}{\mu+2} \frac{1}{1+r^{2}}
-\end{align}$$
 
 $$\tag{.}\begin{align}
 {}_{2}F_{1}\left( -1,\alpha+1;\alpha; \frac{1}{1+r^{2}} \right) \\

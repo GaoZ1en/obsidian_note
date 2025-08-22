@@ -1,4 +1,4 @@
-## Learn from research, goto Europe or Canada (CSC)
+## Learn from research, go to Europe or Canada (CSC)
 
 1. 协变相空间框架下的量子化
 	1. 继续考虑$\mathrm{AdS_{n}}$中的正则量子化
