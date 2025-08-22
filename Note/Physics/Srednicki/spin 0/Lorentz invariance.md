@@ -29,7 +29,7 @@ $$\tag{1.5}\begin{align}
 \implies \delta \omega _{\rho \sigma}=-\delta \omega _{\sigma \rho}
 \end{align}$$
 
-thus there are $\displaystyle{\frac{d(d-1)}{2}}$ independent infinitesimal Lorentz transformations in $\displaystyle{d}$ spacetime-dimensions. these can be divided into $\displaystyle{\frac{(d-1)(d-2)}{2}}$ rotations ($\displaystyle{\delta \omega _{ij}=-\varepsilon _{ijk}\hat{n}_{k}\delta \theta}$ for a rotation by angle $\displaystyle{\delta \theta}$ about $\displaystyle{\vec{n}}$ in 4 dimension) and $\displaystyle{d-1}$ boosts ($\displaystyle{\delta \omega _{i0}=\hat{n}_{i}\delta \eta}$ for a boost in the direction $\displaystyle{\vec{n}}$ by repidicity $\displaystyle{\delta \eta}$). however not all the Lorentz transformations can be reached by compounding infinitesimal ones. transformation with $\displaystyle{\det \Lambda=1}$ are called proper, while ones with $\displaystyle{\det \Lambda=-1}$ are called improper. and since $\displaystyle{(\Lambda ^{0}_{~0})^{2}=1+\Lambda ^{i}_{~0}\Lambda ^{i}_{~0}}$, transformations with $\displaystyle{\Lambda ^{0}_{~0}\geqslant+1}$ forms another subgroup, which is called the orthochronous. Lorentz transformations that can be reached by compounding infinitesimal ones are both proper and orthochronous, and they form a subgroup. we can introduce two discrete transformations that takes us out of this subgroup: parity and time reversal
+giving $\displaystyle{\frac{d(d-1)}{2}}$ independent generators that decompose into $\displaystyle{\frac{(d-1)(d-2)}{2}}$ rotations and $\displaystyle{d-1}$ boosts. The full Lorentz group $\displaystyle{\mathrm{O}(1,d-1)}$ consists of four disconnected components classified by $\displaystyle{\det \Lambda=\pm1}$ (proper/improper) and $\displaystyle{\Lambda ^{0}_{~0}\gtrless\pm1}$ (orthochronous/non-orthochronous), where only the proper orthochronous subgroup $\displaystyle{\mathrm{SO}^{+}(1,3)}$ can be reached by compounding infinitesimal transformations, while the other components require discrete symmetries, parity $\displaystyle{\mathcal{P}}$ and time reversal $\displaystyle{\mathcal{T}}$ to access the full group structure $\displaystyle{\mathrm{O}(1,d-1)=\left\{I,\mathcal{P},\mathcal{T},\mathcal{PT}\right\}\times \mathrm{SO}^{+}(1,d-1)}$
 
 $$\tag{1.6}\begin{align}
 \mathcal{P}^{\mu}_{~\nu} & =(\mathcal{P}^{-1})^{\mu}_{~\nu}=\begin{pmatrix}
@@ -46,7 +46,40 @@ $$\tag{1.6}\begin{align}
 \end{pmatrix}
 \end{align}$$
 
+generally, when a theory is said to be Lorentz invariant, this means under the proper orthochronous subgroup $\displaystyle{\mathrm{SO}^{+}(1,d-1)}$ only. parity and time reversal are treated separately. 
 
-## Simplified [[Lorentz Invariance]]
+in quantum theory, symmetries are represented by unitary (or antiunitary) operators. we associate a unitary operator $\displaystyle{U(\Lambda)}$ to each proper, orthochronous Lorentz transformation $\displaystyle{\Lambda}$, and these operators must obey the composition rule
 
-[[Lorentz transformations]] preserve the spacetime metric $$\eta_{\mu\nu}$$, with infinitesimal forms $$\Lambda^{\mu}_{~\nu} = \delta^{\mu}_{~\nu} + \delta\omega^{\mu}_{~\nu}$$ satisfying $$\delta\omega_{\mu\nu} = -\delta\omega_{\nu\mu}$$, giving $$\frac{d(d-1)}{2}$$ independent generators that decompose into $$\frac{(d-1)(d-2)}{2}$$ rotations and $$(d-1)$$ boosts. The full [[Lorentz group]] $$O(1,3)$$ consists of four disconnected components classified by $$\det\Lambda = \pm 1$$ (proper/improper) and $$\Lambda^0_{~0} \gtrless \pm 1$$ (orthochronous/non-orthochronous), where only the proper orthochronous subgroup $$SO^+(1,3)$$ can be reached by compounding infinitesimal transformations, while the other components require discrete symmetries like parity $$\mathcal{P}$$ (space inversion) and time reversal $$\mathcal{T}$$ to access the full group structure $$O(1,3) = \{I, \mathcal{P}, \mathcal{T}, \mathcal{PT}\} \times SO^+(1,3)$$.
+$$\tag{1.7}\begin{align}
+U(\Lambda'\Lambda) & =U(\Lambda')U(\Lambda)
+\end{align}$$
+
+for an infinitesimal transformation, we can write
+
+$$\tag{1.8}\begin{align}
+U(1+\delta \omega) & =I+\frac{i}{2}\delta \omega _{\mu \nu}M^{\mu \nu}
+\end{align}$$
+
+where $\displaystyle{M^{\mu \nu}=-M^{\nu \mu}}$ are the generators of the Lorentz group. consider $\displaystyle{U(\Lambda)^{-1}U(\Lambda')U(\Lambda)=U(\Lambda ^{-1}\Lambda'\Lambda)}$, and let $\displaystyle{\Lambda'=1+\delta \omega'}$, then
+
+$$\tag{1.9}\begin{align}
+U(\Lambda)^{-1}U(\Lambda')U(\Lambda) & =U(\Lambda ^{-1}\Lambda'\Lambda) \\
+U(\Lambda)^{-1}\left( 1+\frac{i}{2}\delta \omega _{\mu \nu}M^{\mu \nu} \right)U(\Lambda) & =U(\Lambda ^{-1}(1+\delta \omega)\Lambda) \\
+ I+\frac{i}{2}\delta \omega _{\mu \nu}U(\Lambda)^{-1}M^{\mu \nu}U(\Lambda)& =U(1+\Lambda ^{-1}\delta \omega \Lambda) \\
+ & =I+\frac{i}{2}(\Lambda ^{-1}\delta \omega \Lambda)_{\mu \nu}M^{\mu \nu} \\
+ & =I+\frac{i}{2}\Lambda ^{\rho}_{~\mu}\Lambda ^{\sigma}_{~\nu}\delta \omega _{\rho \sigma}M^{\mu \nu} \\
+\implies U(\Lambda)^{-1}M^{\mu \nu}U(\Lambda) & =\Lambda ^{\mu}_{~\rho}\Lambda ^{\nu}_{~\sigma}M^{\rho \sigma}
+\end{align}$$
+
+similarly, we have
+
+$$\tag{1.10}\begin{align}
+U(\Lambda)^{-1}P^{\mu}U(\Lambda) & =\Lambda ^{\mu}_{~\nu}P^{\nu}
+\end{align}$$
+
+let $\displaystyle{\Lambda=1+\delta \omega}$ in (1.9), we get
+
+$$\tag{1.11}\begin{align}
+\left( 1-\frac{i}{2}\delta \omega _{\rho \sigma}M^{\rho \sigma} \right)M^{\mu \nu}\left( 1+\frac{i}{2}\delta \omega _{\lambda \tau}M^{\lambda \tau} \right) & =(\delta ^{\mu}_{~\rho}+\delta \omega ^{\mu}_{~\rho})(\delta ^{\nu}_{~\sigma}+\delta \omega ^{\nu}_{~\sigma})M^{\rho \sigma} \\
+\frac{i}{2}\delta \omega _{\rho \sigma}[M^{\mu \nu},M^{\rho \sigma}] & =\delta ^{\mu}_{~\rho}\delta \omega ^{\nu}_{~\sigma}M^{\rho \sigma}+\delta ^{\nu}_{~\sigma}\delta \omega ^{\mu}_{~\rho}M^{\rho \sigma}
+\end{align}$$
