@@ -122,3 +122,16 @@ $$\begin{align}
 [P_{i},P_{j}] & =0 \\
 [P_{i},H] & =0
 \end{align}$$
+
+now we will consider what should happen to a scalar field $\displaystyle{\varphi(x)}$ under a Lorentz transformation. in the Heisenberg picture, define the spacetime translation operator $\displaystyle{T(a)=\exp\left(-iP^{\mu}a_{\mu}\right)}$, then
+
+$$\begin{align}
+T(a)^{-1}\varphi(x)T(a) & =\varphi(x-a)
+\end{align}$$
+
+similarly, we have
+
+$$\begin{align}
+U(\Lambda)^{-1}\varphi(x)U(\Lambda) & =\varphi(\Lambda ^{-1}x)
+\end{align}$$
+

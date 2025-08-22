@@ -122,7 +122,7 @@ then
 
 $$\tag{.}\begin{align}
 {f^{(+)}_{l,n,\bar{n}}}^{\mu} & =({f^{(+)}_{l,n,\bar{n}}}^{\mu})^{*} \\
- & =f^{(+)}_{l,n,\bar{n}}\xi ^{\mu}_{1}+2nif^{(+)}_{l,n-1,\bar{n}}\xi _{0}^{\mu}-2n(n-1)f^{(+)}_{l,n-2,\bar{n}}\xi ^{\mu}_{-1}
+ & =f^{(+)}_{l,n,\bar{n}}\xi ^{\mu}_{1}+2nif^{(+)}_{l,n-1,\bar{n}}\xi _{0}^{\mu}-n(n-1)f^{(+)}_{l,n-2,\bar{n}}\xi ^{\mu}_{-1}
 \end{align}$$
 
 ---
