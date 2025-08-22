@@ -91,20 +91,21 @@ F(\alpha+2,\beta+1,\gamma+1)+F+F(\alpha+1,\beta+1) & =0
 \end{align}$$
 
 $$\tag{.}\begin{align}
-(\beta-(\gamma-\alpha)z)F(\beta+1,\gamma+1) & =\gamma(1-z)F(\beta+1)-(\gamma-\beta)F(\gamma+1) \\
+\beta F(\beta+1,\gamma+1) & =\gamma F-(\gamma-\beta)F(\gamma+1) \\
 (\alpha-\beta)(1-z)F(\alpha+1,\beta+1) & =(\gamma-\beta-1)F(\alpha+1)-(\gamma-\alpha-1)F(\beta+1) \\
 \alpha \gamma(1-z)F(\alpha+1) & =\gamma(\alpha-(\gamma-\beta)z)F+(\gamma-\alpha)(\gamma-\beta)zF(\gamma+1) \\
 \beta \gamma(1-z)F(\beta+1) & =\gamma(\beta-(\gamma-\alpha)z)F+(\gamma-\alpha)(\gamma-\beta)zF(\gamma+1)
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\alpha \beta (\alpha-\beta)\gamma(1-z)^{2}F(\alpha+1,\beta+1) & =\beta(\gamma-\beta-1)(\gamma(\alpha-(\gamma-\beta)z)F+(\gamma-\alpha)(\gamma-\beta)zF(\gamma+1)) \\
- & -\alpha(\gamma-\alpha-1)(\gamma(\beta-(\gamma-\alpha)z)F+(\gamma-\alpha)(\gamma-\beta)zF(\gamma+1)) \\
- & =[\beta \gamma(\gamma-\beta-1)(\alpha-(\gamma-\beta)z)-\alpha \gamma(\gamma-\alpha-1)(\beta-(\gamma-\alpha)z)]F \\
- & +[\beta(\gamma-\beta-1)-\alpha(\gamma-\alpha-1)](\gamma-\alpha)(\gamma-\beta)zF(\gamma+1) \\
- & +(\gamma-\alpha)(\gamma-\beta)()
+\alpha \beta \gamma(1-z)^{2}F(\alpha+1,\beta+1) & =(\gamma-\alpha)(\gamma-\beta)(-\gamma+\alpha+\beta+1)zF(\gamma+1) \\
+ & +\gamma(\alpha \beta+(\alpha ^{2}+\beta ^{2}+\alpha \beta+\alpha+\beta-2\alpha \gamma-2\beta \gamma-\gamma+\gamma ^{2})z)F
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\beta \gamma-\beta ^{2}-\beta -\alpha \gamma+\alpha ^{2}+\alpha & =(\alpha-\beta)(-\gamma+\alpha+\beta+1)
+A\alpha \gamma(1-z)^{2}(\gamma F-(\gamma-\beta)F(\gamma+1))+\alpha \beta \gamma(1-z)^{2}F \\
++C\gamma(\alpha \beta+(\alpha ^{2}+\beta ^{2}+\alpha \beta+\alpha+\beta-2\alpha \gamma-2\beta \gamma-\gamma+\gamma ^{2})z)F+C(\gamma-\alpha)(\gamma-\beta)(-\gamma+\alpha+\beta+1)zF & =0 \\
+\implies \alpha \gamma(1-z)^{2}A+(\alpha \beta+(\alpha ^{2}+\beta ^{2}+\alpha \beta+\alpha+\beta-2\alpha \gamma-2\beta \gamma-\gamma+\gamma ^{2})z)C & =-\alpha \beta (1-z)^{2} \\
+-\alpha \gamma A+(\gamma-\alpha)(-\gamma+\alpha+\beta+1)zC & =0
 \end{align}$$
+
