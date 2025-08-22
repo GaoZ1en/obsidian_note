@@ -92,29 +92,24 @@ $$\tag{.}\begin{align}
 +(\bar{n}+1) P^{(\mu+1,n-\bar{n}-1)}_{\bar{n}+1}\left(\frac{r^{2}-1}{r^{2}+1}\right) & =0
 \end{align}$$
 
-so by induction, we had proven (2.6). when $\displaystyle{n< \bar{n}}$, we have to make a change $\displaystyle{n\leftrightarrow \bar{n}}$, or we can write
+so by induction, we had proven (2.6). when $\displaystyle{n< \bar{n}}$, we have to make a change $\displaystyle{n\leftrightarrow \bar{n}}$(?), or we can write
 
 $$\tag{.}\begin{align}
 f^{(+)}_{r,n,\bar{n}} & \propto r^{|n-\bar{n}|}(1+r^{2})^{-(\mu+|n-\bar{n}|+2)/2}P_{\min(n,\bar{n})}^{(\mu+1,|n-\bar{n}|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(\mu+n+\bar{n}+2)t}e^{i(n-\bar{n})\phi}
 \end{align}$$
-
-put together the coefficients, we have
-
+--
 $$\tag{.}\begin{align}
-f^{(+)}_{r,n,\bar{n}} & =\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{1}{\sqrt{ n!\bar{n}! }}\sqrt{ \frac{\Gamma(\mu+2)\Gamma(\mu)}{\Gamma(\mu+2+n)\Gamma(\mu+\bar{n})} }\mathcal{L} \\
-f^{(+)}_{r,n,\bar{n}} & \propto \frac{1}{\sqrt{ n!\bar{n}!(\mu+2)_{n} }}\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f^{(+)}_{r,0,0}
+{f^{+}_{l,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi ^{\mu}_{1} \\
+{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\frac{1}{\sqrt{ n!\bar{n}!(\mu)_{n}(\mu+2)_{\bar{n}} }}\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{l,0,0}}^{\mu}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\mathcal{L}_{\xi_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (n+1)(\mu+n+2) }{f_{r,n+1,\bar{n}}^{(+)}}^{\mu}\\
-\mathcal{L}_{\xi_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu+2}{2}+n\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\xi_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ n(\mu+n+1) }{f^{+}_{r,n-1,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\bar{\xi}_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (\bar{n}+1)(\mu+\bar{n}) }{f^{(+)}_{r,n,\bar{n}+1}}^{\mu} \\
-\mathcal{L}_{\bar{\xi}_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu}{2}+\bar{n}\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\bar{\xi}_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(+)}_{r,n,\bar{n}-1}}^{\mu} \\
-{f^{(+)}_{r,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} }\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{\mu/2+1}}\bar{\xi}_{1}^{\mu} \\
-{f^{(+)}_{r,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu+2)_{n}(\mu)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{r,0,0}}^{\mu}
+f^{(+)}_{l,0,\bar{n}} & \propto \mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f^{(+)}_{l,0,0} \\
+ & \propto (\bar{\xi} _{-1}^{\nu}\partial _{\nu})^{\bar{n}}f^{(+)}_{l,0,0} \\
+ & \propto r^{\bar{n}}(1+r^{2})^{-(\mu+2+\bar{n})/2}e^{-i(\mu+2+\bar{n})t}e^{^{-i\bar{n}\phi}} \\
+f^{(+)}_{l,n,\bar{n}} & \propto 
 \end{align}$$
+
 
 ---
 
