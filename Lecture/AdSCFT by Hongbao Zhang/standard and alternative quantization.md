@@ -66,7 +66,7 @@ $$\tag{1.10}\begin{align}
 we have two possible asymptotic behavior. we have to impose the Breitlohner-Freedman bound
 
 $$\tag{1.11}\begin{align}
-m^{2}\geqslant -\frac{d^{2}}{4L^{2}}
+m^{2}> -\frac{d^{2}}{4L^{2}}
 \end{align}$$
 
 which preserve the stability of AdS quantum theory. when the BF bound is satisfied, then we have two possible quantum theory. in standard AdS/CFT, we see $\displaystyle{\psi _{-}}$ corresponding to $\displaystyle{\Delta ^{-}}$ as the boundary source, and $\displaystyle{\psi _{+}}$ corresponding to $\displaystyle{\Delta ^{+}}$ as vacuum expectation value.
@@ -88,5 +88,29 @@ $$\tag{1.13}\begin{align}
 \omega _{\mathrm{E}} & =-i(\omega+i\varepsilon)
 \end{align}$$
 
-as above discussion, we pick $\displaystyle{\psi _{-}}$ as source in the standard quantization. and we say alternative quantization if we pick $\displaystyle{\psi _{+}}$ as source. there are several subtlety in the alternative quantization...
+as above discussion, we pick $\displaystyle{\psi _{-}}$ as source in the standard quantization. and we say alternative quantization if we pick $\displaystyle{\psi _{+}}$ as source. there are several subtlety in the alternative quantization... back to the inner product defined before
 
+$$\tag{1.14}\begin{align}
+\Omega[\phi,\psi] & =i \int _{\Sigma}\mathrm{d}z\mathrm{d}\vec{x}^{d-1}\left(\frac{L}{z}\right)^{d-1}\left(\bar{\psi}\partial _{t}\phi-\phi \partial _{t}\bar{\psi}\right) \\
+ & \propto i \int _{\Sigma}\mathrm{d}\vec{x}^{d-1}\int\mathrm{d}zz^{2\Delta-d+1}
+\end{align}$$
+
+we should require $\displaystyle{2\Delta-d+1>-1\implies \Delta>\frac{d-2}{2}}$ for the integral is finite, which the inequality is just the unitarity bound in CFT. note that
+
+$$\begin{align}
+\Delta _{+}\geqslant \frac{d}{2},  & & \Delta _{-}\leqslant \frac{d}{2}
+\end{align}$$
+
+so when $\displaystyle{\Delta _{-}>\frac{d}{2}-1}$, in principle we can take $\displaystyle{\psi _{+}}$ as source, and take $\displaystyle{\psi _{-}}$ as vacuum expectation. this is the alternative quantization. we can write the general solution (field operator) as
+
+$$\tag{1.15}\begin{align}
+\hat{\phi} & =\sum _{k}a_{k}\psi _{k}+a_{k}^{\dagger}\bar{\psi}_{k}
+\end{align}$$
+
+here $\displaystyle{\psi _{k}}$ are positive frequency solutions of eom, and $\displaystyle{a_{k},a_{k}^{\dagger}}$ are annihilation and creation operators. then we could construct one-particle Hilbert space via acting $\displaystyle{a_{k}^{\dagger}}$ on the vacuum state $\displaystyle{\ket{0}}$, and then the Fock space by tensor product.
+
+AdS/CFT states that
+
+$$\tag{1.16}\begin{align}
+e^{-S_{\text{ on }}[]}
+\end{align}$$
