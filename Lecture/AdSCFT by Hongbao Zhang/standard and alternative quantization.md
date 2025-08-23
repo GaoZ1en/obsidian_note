@@ -109,8 +109,35 @@ $$\tag{1.15}\begin{align}
 
 here $\displaystyle{\psi _{k}}$ are positive frequency solutions of eom, and $\displaystyle{a_{k},a_{k}^{\dagger}}$ are annihilation and creation operators. then we could construct one-particle Hilbert space via acting $\displaystyle{a_{k}^{\dagger}}$ on the vacuum state $\displaystyle{\ket{0}}$, and then the Fock space by tensor product.
 
-AdS/CFT states that
+AdS/CFT dictionary states that
 
 $$\tag{1.16}\begin{align}
-e^{-S_{\text{ on }}[]}
+\exp(-S_{\text{ on-shell }}[\psi _{-}]) & =\braket{ \exp\left( -\int \mathrm{d}^{d}x\psi _{-}\mathcal{O}^{-} \right) } 
 \end{align}$$
+
+for standard quantization, and
+
+$$\begin{align}
+\exp(-S_{\text{ on-shell }}[\psi _{+}]) & =\braket{ \exp\left( -\int \mathrm{d}^{d}x\psi _{+}\mathcal{O}^{+} \right) } 
+\end{align}$$
+
+for alternative quantization. there are only one operator $\displaystyle{\mathcal{O}}$ in the rhs, so we call it single trace. double trace and multi-trace are defined similarly. Witten suggests that for double trace $\displaystyle{\braket{ \exp\left( -\int \mathrm{d}^{d}\vec{x} f{\mathcal{O}^{-}}^{2}\right) }}$
+
+$$\begin{align}
+f{\mathcal{O}^{-}}^{2}\to f\psi _{+}^{2}\to \psi _{-}=\frac{\delta(f\psi _{+}^{2})}{\delta \psi _{+}}=2f\psi _{+}
+\end{align}$$
+
+then insert
+
+$$\begin{align}
+\psi & \sim\frac{\psi _{-}}{2f}z^{\Delta _{+}}+\psi _{-}z^{\Delta _{-}}
+\end{align}$$
+
+into the onshell action
+
+$$\tag{.}\begin{align}
+e^{-S_{\text{ on-shell }}[\psi]} & = \braket{ \exp\left(-\int \mathrm{d}^{d}\vec{x}f{\mathcal{O}^{-}}^{2}\right) }
+\end{align}$$
+
+see reviews 1110.3814 by Hong Liu, 1802.01040 by Harlow, and multitrace something 0205051 by Son, 0903.2596 by Hong Liu and 0112258 by Witten.
+
