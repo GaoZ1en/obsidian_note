@@ -369,3 +369,7 @@ A^{\phi}_{0m\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}e^{-i(\mu+1+|m\
 \end{align}
 $$
 
+
+$$\tag{.}\begin{align}
+A^{\mu} & =e^{-i\omega t}\tilde{A}^{\mu}
+\end{align}$$

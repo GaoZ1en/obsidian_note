@@ -16536,6 +16536,11 @@
             "timeKey": "17:20",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "17:35",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 547
@@ -16558,6 +16563,20 @@
           }
         ],
         "id": 548
+      },
+      {
+        "date": "2025-08-24",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [
+          {
+            "timeKey": "17:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 549
       }
     ],
     "daysWithCompletedGoal": [
