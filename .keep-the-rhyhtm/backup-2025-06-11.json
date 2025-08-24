@@ -16341,6 +16341,213 @@
           }
         ],
         "id": 542
+      },
+      {
+        "date": "2025-08-23",
+        "filePath": "Articles/Proca in AdS3/relations of Jacobi polynomials and hypergeometric functions.md",
+        "wordCountStart": 1250,
+        "charCountStart": 5658,
+        "changes": [
+          {
+            "timeKey": "17:55",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 543
+      },
+      {
+        "date": "2025-08-23",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 5045,
+        "charCountStart": 19717,
+        "changes": [],
+        "id": 544
+      },
+      {
+        "date": "2025-08-23",
+        "filePath": "Lecture/AdSCFT by Hongbao Zhang/standard and alternative quantization.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "20:05",
+            "w": 27,
+            "c": 191
+          },
+          {
+            "timeKey": "20:10",
+            "w": 48,
+            "c": 289
+          },
+          {
+            "timeKey": "20:15",
+            "w": 41,
+            "c": 211
+          },
+          {
+            "timeKey": "20:20",
+            "w": 81,
+            "c": 398
+          },
+          {
+            "timeKey": "20:25",
+            "w": 135,
+            "c": 750
+          },
+          {
+            "timeKey": "20:30",
+            "w": 13,
+            "c": 95
+          },
+          {
+            "timeKey": "20:35",
+            "w": 38,
+            "c": 228
+          },
+          {
+            "timeKey": "20:40",
+            "w": 70,
+            "c": 320
+          },
+          {
+            "timeKey": "20:45",
+            "w": 24,
+            "c": 159
+          },
+          {
+            "timeKey": "20:50",
+            "w": 27,
+            "c": 159
+          },
+          {
+            "timeKey": "20:55",
+            "w": 51,
+            "c": 307
+          },
+          {
+            "timeKey": "21:00",
+            "w": 40,
+            "c": 296
+          },
+          {
+            "timeKey": "21:05",
+            "w": 14,
+            "c": 90
+          },
+          {
+            "timeKey": "21:10",
+            "w": 66,
+            "c": 316
+          },
+          {
+            "timeKey": "21:15",
+            "w": 55,
+            "c": 427
+          },
+          {
+            "timeKey": "21:20",
+            "w": 27,
+            "c": 162
+          },
+          {
+            "timeKey": "21:25",
+            "w": 36,
+            "c": 246
+          },
+          {
+            "timeKey": "21:30",
+            "w": 92,
+            "c": 499
+          },
+          {
+            "timeKey": "21:35",
+            "w": 1,
+            "c": 2
+          },
+          {
+            "timeKey": "21:40",
+            "w": 49,
+            "c": 324
+          },
+          {
+            "timeKey": "21:45",
+            "w": 53,
+            "c": 298
+          },
+          {
+            "timeKey": "21:50",
+            "w": 33,
+            "c": 206
+          },
+          {
+            "timeKey": "21:55",
+            "w": 14,
+            "c": 77
+          },
+          {
+            "timeKey": "22:00",
+            "w": 83,
+            "c": 553
+          },
+          {
+            "timeKey": "22:05",
+            "w": 102,
+            "c": 557
+          },
+          {
+            "timeKey": "22:10",
+            "w": 12,
+            "c": 81
+          }
+        ],
+        "id": 545
+      },
+      {
+        "date": "2025-08-24",
+        "filePath": "Lecture/AdSCFT by Hongbao Zhang/holographic renormalization and one particle correlation function.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 546
+      },
+      {
+        "date": "2025-08-24",
+        "filePath": "TODO.md",
+        "wordCountStart": 6178,
+        "charCountStart": 31003,
+        "changes": [
+          {
+            "timeKey": "17:05",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "17:10",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 547
+      },
+      {
+        "date": "2025-08-24",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6027,
+        "charCountStart": 25663,
+        "changes": [
+          {
+            "timeKey": "17:05",
+            "w": 29,
+            "c": 137
+          },
+          {
+            "timeKey": "17:10",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 548
       }
     ],
     "daysWithCompletedGoal": [
@@ -16386,7 +16593,8 @@
       "2025-08-17",
       "2025-08-18",
       "2025-08-19",
-      "2025-08-22"
+      "2025-08-22",
+      "2025-08-23"
     ]
   }
 }

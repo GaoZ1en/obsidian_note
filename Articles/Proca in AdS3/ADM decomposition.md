@@ -181,6 +181,10 @@ $$
 
 i have no idea how to do this. 
 
+$$\tag{.}\begin{align}
+-i\omega \tilde{A}^{t}+\partial _{r}\tilde{A}^{r}+\frac{1}{r}\tilde{A}^{r}+im\tilde{A}^{\phi} & =0
+\end{align}$$
+
 ---
 
 or we can study the symplectic form
