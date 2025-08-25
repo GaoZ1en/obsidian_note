@@ -22,12 +22,25 @@ classically, a state is described by a point $\displaystyle{(x,p)}$ in the phase
 
 $$\begin{align}
 \dot{x} & =\frac{\partial H}{\partial p} \\
-\dot{p} & =-\frac{\partial H}{\partial x}
+\dot{p} & =-\frac{\partial H}{\partial x} \\
+H & =\frac{p^{2}}{2m}+V(x)
 \end{align}$$
 
 quantum mechanically, a state is described by a wave function $\displaystyle{\psi(x)}$ of configuration space, and its time evolution is described by Schrodinger equation
 
 $$\begin{align}
-i\frac{\partial \psi}{\partial t} & =H\left( x,-i\frac{\partial}{\partial x} \right)\psi
+i\frac{\partial \psi}{\partial t} & =H\left( x,-i\frac{\partial}{\partial x} \right)\psi \\
+H\left( x,-i\frac{\partial}{\partial x} \right) & =-\frac{1}{2m}\frac{\partial ^{2}}{\partial x^{2}}+V
 \end{align}$$
 
+here we consider a classical action for schrodinger field $\displaystyle{\psi(x)}$
+
+$$\begin{align}
+S & =\int \mathrm{d}t\mathrm{d}^{d-1}x\left(\frac{i}{2}\left(\psi ^{*}\partial _{t}\psi-\psi \partial _{t}\psi\right)-\frac{1}{2m}\nabla \psi ^{*} \cdot \nabla \psi -V(x)\psi ^{*}\psi\right)
+\end{align}$$
+
+take an variation
+
+$$\begin{align}
+\delta S=\int \mathrm{d}t\mathrm{d}^{d-1}x\left(\frac{i}{2}\right)
+\end{align}$$
