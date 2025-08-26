@@ -42,5 +42,56 @@ S & =\int \mathrm{d}t\mathrm{d}^{d-1}x\left(\frac{i}{2}\left(\psi ^{*}\partial _
 take an variation
 
 $$\begin{align}
-\delta S=\int \mathrm{d}t\mathrm{d}^{d-1}x\left(\frac{i}{2}\right)
+\delta S & =\int \mathrm{d}t\mathrm{d}^{d-1}x\left(\delta \psi ^{*}\left( i\partial _{t}\psi+\frac{1}{2m}\nabla ^{2}\psi-V(x)\psi \right)+\left( -i\partial _{t}\psi ^{*}+\frac{1}{2m}\nabla ^{2}\psi ^{*}-V(x)\psi ^{*} \right)\delta \psi\right) \\
+ & -\int \mathrm{d}^{d-1}x \frac{i}{2}\left(\psi ^{*}\delta \psi+\delta \psi ^{*}\psi\right)\Big|^{t_{f}}_{i}
+\end{align}$$
+
+which gives the eoms and symplectic potential
+
+$$\begin{align}
+E_{\psi} & =i\partial _{t}\psi+\frac{1}{2m}\nabla ^{2}\psi-V(x)\psi \\
+E_{\psi ^{*}} & =-i\partial _{t}\psi ^{*}+\frac{1}{2m}\nabla ^{2}\psi ^{*}-V(x)\psi ^{*} \\
+\theta & =-\frac{i}{2}\int \mathrm{d}^{d-1}x (\psi ^{*}\delta \psi+\delta \psi ^{*}\psi)
+\end{align}$$
+
+take a further variation on the symplectic potential, we got the symplectic form
+
+$$\begin{align}
+\omega & =-i\int \mathrm{d}^{d-1}x\delta \psi ^{*}\wedge \delta \psi
+\end{align}$$
+
+then the symplectic form induces a inner product on the covariant phase space $\displaystyle{\mathcal{P}}$
+
+$$\begin{align}
+\left(\psi,\phi\right) & =i\omega[\psi,\phi ^{*}] \\
+ & =\int \mathrm{d}^{d-1}x\psi ^{*}\phi
+\end{align}$$
+
+which is the usual inner product between wave functions, however here $\displaystyle{\psi }$ and $\displaystyle{\phi}$ are classical configurations. by the time invariance of the symplectic form $\displaystyle{\omega}$, the inner product is independent from time.
+
+here we want find a natural interpretation of the current conservation
+
+$$\begin{align}
+i\frac{\partial(\psi ^{*}\phi)}{\partial t} & =-\nabla \cdot\left(  \frac{1}{2mi}\left(\psi ^{*}\nabla \phi-\phi \nabla \psi ^{*}\right) \right)
+\end{align}$$
+
+# Schrodinger's prescription for relativistic quantum mechanics
+
+here we assume that the spacetime can be foliated by a series of spacelike hypersurfaces $\displaystyle{\left\{\Sigma _{t}\right\}}$ parameterized by $\displaystyle{t\in[t_{f},t_{i}]}$. the Klein-Gordon action reads
+
+$$\begin{align}
+S & =-\frac{1}{2}\int \mathrm{d}^{d}x\sqrt{ -g }\left( g^{\mu \nu}\nabla _{\mu}\phi\nabla _{\nu}\phi+m^{2}\phi ^{2} \right)
+\end{align}$$
+
+take a variation
+
+$$\begin{align}
+\delta S & =\int \mathrm{d}^{d}x\sqrt{ -g }\left(g^{\mu \nu}\nabla _{\mu}\nabla _{\nu}\phi-m^{2}\phi\right)\delta \phi \\
+ & -\int \mathrm{d}^{d-1}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\phi \delta \phi\Big|^{\Sigma _{f}}_{\Sigma _{i}}
+\end{align}$$
+
+then we read out the eom and sympletic potential
+
+$$\begin{align}
+
 \end{align}$$
