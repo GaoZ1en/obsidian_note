@@ -74,7 +74,12 @@ f^{(+)}_{r,n,\bar{n}} & =(\bar{\xi}^{\nu}_{-1}\partial _{\nu})^{\bar{n}}f^{(+)}_
 we first set $\displaystyle{n>\bar{n}}$. 
 
 $$\tag{2.6}\begin{align}
-f^{(+)}_{r,n,\bar{n}}  & \propto r^{n-\bar{n}}(1+r^{2})^{-(\mu+n-\bar{n}+2)/2} P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(\mu+n+\bar{n}+2)t}e^{i(n-\bar{n})\phi}
+f^{(+)}_{r,n,\bar{n}}  & = (-i)^{n+\bar{n}} \frac{\Gamma(\bar{n}+1)\Gamma(\mu+n+2)}{\Gamma(\mu+2)}e^{-i(\mu+n+\bar{n}+2)t}e^{i(n-\bar{n})\phi}r^{n-\bar{n}}(1+r^{2})^{-(\mu+n-\bar{n}+2)/2} P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+r^{n-\bar{n}}(1+r^{2})^{-(\mu+2+n-\bar{n})/2}{}_{2}F_{1}\left( -\bar{n},n+\mu+2;\mu+2; \frac{1}{1+r^{2}} \right) \\
+=r^{\bar{n}-n}(1+r^{2})^{-(\mu+2+\bar{n}-n)/2}{}_{2}F_{1}\left( -n,\bar{n}+\mu+2;\mu+2; \frac{1}{1+r^{2}} \right)?
 \end{align}$$
 
 then by induction
@@ -110,11 +115,10 @@ f^{(+)}_{l,0,\bar{n}} & \propto \mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f^{(+)}_{l
 f^{(+)}_{l,n,\bar{n}} & \propto r^{|\bar{n}-n|}(1+r^{2})^{-(\mu+2+|\bar{n}-n|)/2}P_{\min(n,\bar{n})}^{(\mu+1,|\bar{n}-n|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-(\mu+2+n+\bar{n})t}e^{i(n-\bar{n})\phi}
 \end{align}$$
 
-
 $$\tag{.}\begin{align}
-{}_{2}F_{1}\left( -1,\alpha+1;\alpha; \frac{1}{1+r^{2}} \right) \\
-P_{n}^{(\alpha,\beta)}(\dots) & \propto{}_{2}F_{1}(-n,n+\alpha+\beta+1;\alpha;\dots) \\
-
+\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}} & =(-i)^{n+\bar{n}} \frac{\Gamma(\bar{n}+1)\Gamma(\mu+n+2)}{\Gamma(\mu+2)}e^{-i(\mu+2+n+\bar{n})t}e^{i(n-\bar{n})\phi} r^{n- \bar{n}}(1+r^{2})^{-(\mu+2+n-\bar{n})/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+\mathcal{L}_{\xi _{-1}}^{n+1}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}} & =(-i)^{n+\bar{n}+1} \frac{\Gamma(\bar{n}+1)\Gamma(\mu+n+3)}{\Gamma(\mu+2)}e^{-i(\mu+3+n+\bar{n})t}e^{i(n-\bar{n}+1)\phi} r^{n-\bar{n}+1}(1+r^{2})^{-(\mu+3+n-\bar{n})/2}P_{\bar{n}}^{(\mu+1,n-\bar{n}+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}+1} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}} & =(-i)^{n+\bar{n}+1} \frac{\Gamma(\bar{n}+2)\Gamma(\mu+n+2)}{\Gamma(\mu+2)}e^{-i(\mu+3+n+\bar{n})t}e^{i(n-\bar{n}-1)\phi} r^{n-\bar{n}-1}(1+r^{2})^{-(\mu+2+n-\bar{n}-1)/2}P_{\bar{n}-1}^{(\mu+1,n-\bar{n}-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
 ---
