@@ -2,9 +2,9 @@ Killing vectors
 
 $$\tag{1.1}
 \begin{align}
-\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{-1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
 \xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
-\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{-1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
 \bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
 \bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
 \bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
@@ -121,12 +121,6 @@ $$\tag{.}\begin{align}
 {f^{(+)}_{l,n,\bar{n}}}^{t} & =(-i)^{n+\bar{n}}\sqrt{ \frac{\Gamma(\mu+n+2)\Gamma(\mu+\bar{n})}{\Gamma(n+1)\Gamma(\bar{n}+1)} } \frac{1}{2\sqrt{ \pi }} \frac{1}{\Gamma(\mu+1)}r^{-(\mu+2)}e^{-i(\mu+1+n+\bar{n})t}e^{i(n-\bar{n}+1)\phi}+\mathcal{O}(r^{-(\mu+4)}) \\
 {f^{(+)}_{l,n,\bar{n}}}^{r} & =(-i)^{n+\bar{n}+1} \sqrt{ \frac{\Gamma(\mu+n+2)\Gamma(\mu+\bar{n})}{\Gamma(n+1)\Gamma(\bar{n}+1)} } \frac{1}{2\sqrt{ \pi }} \frac{\mu+2\bar{n}}{\mu\Gamma(\mu+1)} r^{-(\mu+1)}e^{-i(\mu+1+n+\bar{n})t}e^{i(n-\bar{n}+1)\phi}+\mathcal{O}(r^{-(\mu+3)}) \\
 {f^{+}_{l,n,\bar{n}}}^{\phi} & =(-i)^{n+\bar{n}}\sqrt{ \frac{\Gamma(\mu+n+2)\Gamma(\mu+\bar{n})}{\Gamma(n+1)\Gamma(\bar{n}+1)} } \frac{1}{2\sqrt{ \pi }} \frac{1}{\Gamma(\mu+1)}r^{-(\mu+2)}e^{-i(\mu+1+n+\bar{n})t}e^{i(n-\bar{n}+1)\phi}+\mathcal{O}(r^{-(\mu+4)})
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left(  \frac{\partial}{\partial t}-ir \frac{\partial}{\partial r}+ \frac{\partial}{\partial \phi} \right)+\mathcal{O}(r^{2}) \\
-\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left(  \frac{\partial}{\partial t}+ir \frac{\partial}{\partial r}+ \frac{\partial}{\partial \phi} \right)+\mathcal{O}(r^{2})
 \end{align}$$
 
 ---
