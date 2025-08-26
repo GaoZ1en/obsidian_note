@@ -1,3 +1,19 @@
+
+
+$$\tag{.}\begin{align}
+P_{n-1}^{(\mu+1,m)}\left( \frac{r^{2}-1}{r^{2}+1} \right) & =(\mu+n)(\mu+m+n)r^{2}P_{n-1}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-n(\mu+m+n)(1+r^{2})P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+{}_{2}F_{1}(-n+1,n+m+\mu+1;\mu+2;z) & ={}_{2}F_{1}(-n+1,n+m+\mu+1;\mu+1;z)+{}_{2}F_{1}(-n,n+m+\mu;\mu+1;z) \\
+F(\beta+1,\gamma+1) & =F+F(\alpha-1,\beta-1)
+\end{align}$$
+
+
+$$\begin{align}
+(\alpha-\beta)(1-z)F+(\gamma-\alpha)F(\alpha-1)-(\gamma-\beta)F(\beta-1) & =0 \\
+(\alpha-1-(\gamma-\beta-1)z)F+(\gamma-\alpha)F(\alpha-1)-(\gamma-1)(1-z)F(\gamma-1) & =0 \\
+(\beta-1-(\gamma-\alpha-1)z)F+(\gamma-\beta)F(\beta-1)-(\gamma-1)(1-z)F(\gamma-1) & =0 \\
+\gamma(\alpha-(\gamma-\beta)z)F-\alpha \gamma(1-z)F(\alpha+1)+(\gamma-\alpha)(\gamma-\beta)zF(\gamma+1) & =0 \\
+\gamma(\beta-(\gamma-\alpha)z)F-\beta \gamma(1-z)F(\beta+1)+(\gamma-\alpha)(\gamma-\beta)zF(\gamma+1) & =0
+\end{align}$$
 ![[Attachments/Pasted image 20250815111235.png]]
 
 $$\tag{.}\begin{align}
