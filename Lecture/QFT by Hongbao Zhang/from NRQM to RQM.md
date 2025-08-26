@@ -77,7 +77,7 @@ i\frac{\partial(\psi ^{*}\phi)}{\partial t} & =-\nabla \cdot\left(  \frac{1}{2mi
 
 # Schrodinger's prescription for relativistic quantum mechanics
 
-here we assume that the spacetime can be foliated by a series of spacelike hypersurfaces $\displaystyle{\left\{\Sigma _{t}\right\}}$ parameterized by $\displaystyle{t\in[t_{f},t_{i}]}$. the Klein-Gordon action reads
+here we assume that the spacetime can be foliated by a series of timelike hypersurfaces $\displaystyle{\left\{\Sigma _{t}\right\}}$ parameterized by $\displaystyle{t\in[t_{f},t_{i}]}$. the Klein-Gordon action reads
 
 $$\begin{align}
 S & =-\frac{1}{2}\int \mathrm{d}^{d}x\sqrt{ -g }\left( g^{\mu \nu}\nabla _{\mu}\phi\nabla _{\nu}\phi+m^{2}\phi ^{2} \right)
@@ -90,8 +90,25 @@ $$\begin{align}
  & -\int \mathrm{d}^{d-1}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\phi \delta \phi\Big|^{\Sigma _{f}}_{\Sigma _{i}}
 \end{align}$$
 
-then we read out the eom and sympletic potential
+here $\displaystyle{\tau ^{\mu}}$ is a future directed timelike vector, which is the normal vector of each slice $\displaystyle{\Sigma _{t}}$. then we read out the eom and sympletic potential
 
 $$\begin{align}
-
+E_{\phi} & =g^{\mu \nu}\nabla _{\mu}\nabla _{\nu}\phi-m^{2}\phi \\
+\theta & =-\int _{\Sigma} \mathrm{d}^{d-1}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\phi \delta \phi
 \end{align}$$
+
+then the symplectic form is given by
+
+$$\begin{align}
+\omega & =-\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \phi \wedge \delta \phi
+\end{align}$$
+
+which induces a inner product of positive frequency part of the covariant phase space $\displaystyle{\mathcal{P}}$
+
+$$\begin{align}
+\left(\psi,\varphi\right) & =i\omega[\psi,\varphi ^{*}] \\
+ & =-i \int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\psi \varphi ^{*}-\nabla _{\mu}\varphi ^{*}\psi)
+\end{align}$$
+
+same properties share.
+
