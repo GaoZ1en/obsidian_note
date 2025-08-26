@@ -118,20 +118,15 @@ f^{(+)}_{l,n,\bar{n}} & = (-i)^{n+\bar{n}} \frac{\Gamma(\bar{n}+1)\Gamma(\mu+n+2
 \end{align}$$
 
 $$\tag{.}\begin{align}
-f^{(+)}_{l,n,\bar{n}} & = (-i)^{n+\bar{n}} \frac{\Gamma(\mu+n+2)\Gamma(\mu+\bar{n}+2)}{\Gamma(\mu+2)^{2}}e^{-i(\mu+2+n+\bar{n})t}e^{i(n-\bar{n})\phi}r^{-(\mu+2)}+\mathcal{O}(r^{-(\mu+4)})\\
-f^{(+)}_{l,n,\bar{n}-1} & = (-i)^{n+\bar{n}-1} \frac{\Gamma(\mu+n+2)\Gamma(\mu+\bar{n}+1)}{\Gamma(\mu+2)^{2}}e^{-i(\mu+1+n+\bar{n})t}e^{i(n-\bar{n}+1)\phi}r^{-(\mu+2)}+\mathcal{O}(r^{-(\mu+4)})\\
-f^{(+)}_{l,n,\bar{n}-2} & = (-i)^{n+\bar{n}-2} \frac{\Gamma(\mu+n+2)\Gamma(\mu+\bar{n})}{\Gamma(\mu+2)^{2}}e^{-i(\mu+n+\bar{n})t}e^{i(n-\bar{n}+2)\phi}r^{-(\mu+2)}+\mathcal{O}(r^{-(\mu+4)})
+{f^{(+)}_{l,n,\bar{n}}}^{t} & =(-i)^{n+\bar{n}}\sqrt{ \frac{\Gamma(\mu+n+2)\Gamma(\mu+\bar{n})}{\Gamma(n+1)\Gamma(\bar{n}+1)} } \frac{1}{2\sqrt{ \pi }} \frac{1}{\Gamma(\mu+1)}r^{-(\mu+2)}e^{-i(\mu+1+n+\bar{n})t}e^{i(n-\bar{n}+1)\phi}+\mathcal{O}(r^{-(\mu+4)}) \\
+{f^{(+)}_{l,n,\bar{n}}}^{r} & =(-i)^{n+\bar{n}+1} \sqrt{ \frac{\Gamma(\mu+n+2)\Gamma(\mu+\bar{n})}{\Gamma(n+1)\Gamma(\bar{n}+1)} } \frac{1}{2\sqrt{ \pi }} \frac{\mu+2\bar{n}}{\mu\Gamma(\mu+1)} r^{-(\mu+1)}e^{-i(\mu+1+n+\bar{n})t}e^{i(n-\bar{n}+1)\phi}+\mathcal{O}(r^{-(\mu+3)}) \\
+{f^{+}_{l,n,\bar{n}}}^{\phi} & =(-i)^{n+\bar{n}}\sqrt{ \frac{\Gamma(\mu+n+2)\Gamma(\mu+\bar{n})}{\Gamma(n+1)\Gamma(\bar{n}+1)} } \frac{1}{2\sqrt{ \pi }} \frac{1}{\Gamma(\mu+1)}r^{-(\mu+2)}e^{-i(\mu+1+n+\bar{n})t}e^{i(n-\bar{n}+1)\phi}+\mathcal{O}(r^{-(\mu+4)})
 \end{align}$$
 
 $$\tag{.}\begin{align}
-{f^{(+)}_{l,n,\bar{n}}}^{t} & =\sqrt{ \frac{\Gamma(\mu+2)\Gamma(\mu)}{\Gamma(n+1)\Gamma(\bar{n}+1)\Gamma(\mu+2+n)\Gamma(\mu+\bar{n})} } \sqrt{ \frac{\mu+1}{\pi \mu} } \\
- & \left(\frac{1}{2}(-i)^{n+\bar{n}} \frac{\Gamma(\mu+n+2)\Gamma(\mu+\bar{n}+2)}{\Gamma(\mu+2)^{2}} \right)e^{-i(\mu+1+n+\bar{n})t}e^{i(n-\bar{n}+1)\phi}
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left(  \frac{\partial}{\partial t}-ir \frac{\partial}{\partial r}+ \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left(  \frac{\partial}{\partial t}-ir \frac{\partial}{\partial r}+ \frac{\partial}{\partial \phi} \right)+\mathcal{O}(r^{2}) \\
 \bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left(  \frac{\partial}{\partial t}+ir \frac{\partial}{\partial r}+ \frac{\partial}{\partial \phi} \right)+\mathcal{O}(r)
+\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left(  \frac{\partial}{\partial t}+ir \frac{\partial}{\partial r}+ \frac{\partial}{\partial \phi} \right)+\mathcal{O}(r^{2})
 \end{align}$$
 
 ---
