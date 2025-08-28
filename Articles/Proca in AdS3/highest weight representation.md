@@ -80,7 +80,20 @@ f^{(+)}_{r,n,\bar{n}}  & = (-i)^{n+\bar{n}} \frac{\Gamma(\bar{n}+1)\Gamma(\mu+n+
 $$\tag{.}\begin{align}
 r^{2n}(1+r^{2})^{-n}{}_{2}F_{1}\left( -\bar{n},n+\mu+2;\mu+2; \frac{1}{1+r^{2}} \right) \\
 =r^{2\bar{n}}(1+r^{2})^{-\bar{n}}{}_{2}F_{1}\left( -n,\bar{n}+\mu+2;\mu+2; \frac{1}{1+r^{2}} \right)? \\
-r^{2n}(1+r^{2})^{-n}{}_{2}F_{1}\left( -\bar{n},n+\mu+2;\mu+2; \frac{1}{1+r^{2}} \right) & =(\tan ^{2} \rho)^{n}{}_{2}F_{1}(-\bar{n},n+\mu+2;\mu+2; \cos ^{2}\rho)=(\tan ^{2}\rho)^{\bar{n}}{}_{2}F_{1}(-n,\bar{n}+\mu+2;\mu+2;\cos ^{2}\rho)
+r^{2n}(1+r^{2})^{-n}{}_{2}F_{1}\left( -\bar{n},n+\mu+2;\mu+2; \frac{1}{1+r^{2}} \right) & =(\sin ^{2} \rho)^{n}{}_{2}F_{1}(-\bar{n},n+\mu+2;\mu+2; \cos ^{2}\rho)=(\sin^{2}\rho)^{\bar{n}}{}_{2}F_{1}(-n,\bar{n}+\mu+2;\mu+2;\cos ^{2}\rho)
+\end{align}$$
+
+
+note the Euler transformation
+
+$$\begin{align}
+{}_{2}F_{1}(\alpha,\beta;\gamma;z) & =(1-z)^{\gamma-\alpha-\beta}{}_{2}F_{1}(\gamma-\alpha,\gamma-\beta;\gamma;z)
+\end{align}$$
+
+we have
+
+$$\tag{.}\begin{align}
+{}_{2}F_{1}(-\bar{n},n+\mu+2;\mu+2;\cos ^{2}\rho) & =(\sin ^{2}\rho)^{\bar{n}-n}{}_{2}F_{1}(-n,\bar{n}+\mu+2;\mu+2;\cos ^{2}\rho)
 \end{align}$$
 
 then by induction
