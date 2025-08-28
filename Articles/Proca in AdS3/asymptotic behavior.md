@@ -42,28 +42,23 @@ $$\begin{align}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-{h^{(+)}_{+,m\geqslant 1,n}}^{t} & = e^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+2)}\frac{(\mu+m)\Gamma(\mu+n+1)}{(\mu+m+2n)\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)}) \\
-{h^{(+)}_{+,m\geqslant 1,n}}^{r} & =-ie^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)})\\
-{h^{(+)}_{+,m\geqslant 1,n}}^{\phi} & =e^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})\\
-{h^{(+)}_{-,m\geqslant 1,n}}^{t} & = e^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+2)}\frac{(\mu-m)\Gamma(\mu+n+1)}{(\mu+m+2n+2)\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})\\
-{h^{(+)}_{-,m\geqslant 1,n}}^{r} & = -ie^{-i(\mu+m+2n+2)t}e^{im\phi}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)})\\
-{h^{(+)}_{-,m\geqslant 1,n}}^{\phi} & = -e^{-i(\mu+m+2n+2)t}e^{im\phi}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})
+{h^{(+)}_{+,m\geqslant 1,n}}^{\mu} & = 2i^{m+2n-1}\sqrt{ \pi }\frac{\sqrt{ (\mu+n)(\mu+m+n) }}{\mu+m+2n} \sqrt{ \frac{\Gamma(m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+m+n)} }{f^{(+)}_{r,-1+m+n,n}}^{\mu} \\
+ & -2i^{m+2n-1}\sqrt{ \pi } \frac{\sqrt{ n(m+n) }}{\mu+m+2n} \sqrt{ \frac{\Gamma(m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+m+n)} }{f^{(+)}_{l,m+n,n-1}}^{\mu} \\
+{h^{(+)}_{-,m\geqslant 1,n}}^{\mu} & =-2i^{m+2n+1}\sqrt{ \pi } \frac{\sqrt{ (1+n)(1+m+n) }}{\mu+2+m+2n} \sqrt{ \frac{\Gamma(2+m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+2+m+n)} }{f^{(+)}_{r,m+n,n+1}}^{\mu} \\
+ & +2i^{m+2n+1}\sqrt{ \pi } \frac{\sqrt{ (\mu+1+n)(\mu+1+m+n) }}{\mu+2+m+2n} \sqrt{ \frac{\Gamma(2+m+n)\Gamma(\mu+1+n)}{ \Gamma(1+n)\Gamma(\mu+2+m+n) }}{f^{(+)}_{l,1+m+n,n}}^{\mu}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-{h^{(+)}_{+,m\geqslant 1,n}}^{\mu} & = 2i^{m+2n-1}\sqrt{ \pi }\frac{\sqrt{ (\mu+m+n)(\mu+n) }}{\mu+m+2n} \sqrt{ \frac{\Gamma(m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+m+n)} }{f^{(+)}_{r,n+m-1,n}}^{\mu} \\
- & -2i^{m+2n-1}\sqrt{ \pi } \frac{\Gamma(1+n+\mu)}{(\mu+m+2n)\Gamma(n)} \sqrt{ \frac{\Gamma(n)\Gamma(n+m+1)}{\Gamma(\mu+n+1)\Gamma(\mu+m+n)} }{f^{(+)}_{l,n+m,n-1}}^{\mu} \\
-
+{h^{(+)}_{+,m\leqslant -1,n}}^{\mu} & =2i^{2n-m+1}\sqrt{ \pi } \frac{\sqrt{ (\mu+1+n)(\mu+1-m+n) }}{\mu+2-m+2n} \sqrt{ \frac{\Gamma(2-m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+2-m+n)} }{f^{(+)}_{r,n,1-m+n}} \\
+ & -2i^{2n-m+1}\sqrt{ \pi } \frac{\sqrt{ (1+n)(1-m+n) }}{\mu+2-m+2n} \sqrt{ \frac{\Gamma(2-m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+2-m+n)} }{f^{(+)}_{l,1+n,-m+n}}^{\mu} \\
+{h^{(+)}_{-,m\leqslant -1,n}}^{\mu} & =
 \end{align}$$
 
-$$\tag{.}\begin{align}
-{f^{(+)}_{r,n,\bar{n}}}^{t} & =(-i)^{2n+m-1} \frac{1}{2\sqrt{ \pi }\Gamma(\mu+1)} \sqrt{ \frac{\Gamma(\mu+n+m+1)\Gamma(\mu+n)}{\Gamma(n+m)\Gamma(n+1)} } \\
-{f^{(+)}_{r,n,\bar{n}}}^{\phi} & =(-i)^{2n+m-1} \frac{1}{2\sqrt{ \pi }\Gamma(\mu+1)} \sqrt{ \frac{\Gamma(\mu+n+m+1)\Gamma(\mu+n)}{\Gamma(n+1)\Gamma(\bar{n}+1)} } \\
-{f^{(+)}_{l,n,\bar{n}}}^{t} & =(-i)^{2n+m-1} \frac{1}{2\sqrt{ \pi }\Gamma(\mu+1)} \sqrt{ \frac{\Gamma(\mu+n+m)\Gamma(\mu+n+1)}{\Gamma(n+m+1)\Gamma(n)} } \\
-{f^{(+)}_{l,n,\bar{n}}}^{\phi} & =-(-i)^{2n+m-1} \frac{1}{2\sqrt{ \pi }\Gamma(\mu+1)} \sqrt{ \frac{\Gamma(\mu+n+m)\Gamma(\mu+n+1)}{\Gamma(n+m+1)\Gamma(n)} }
-\end{align}$$
+
 
 $$\tag{.}\begin{align}
-{h^{(+)}_{+,m\geqslant 1,n}}^{t} & = e^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+2)}\frac{(\mu+m)\Gamma(\mu+n+1)}{(\mu+m+2n)\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)}) \\
-{h^{(+)}_{+,m\geqslant 1,n}}^{\phi} & =e^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}\\
+{f^{(+)}_{r,n,\bar{n}}}^{t} & =(-i)^{1-m+2n} \frac{1}{2\sqrt{ \pi }\Gamma(\mu+1)} \sqrt{ \frac{\Gamma(\mu+2+n)\Gamma(\mu+1-m+n)}{\Gamma(1+n)\Gamma(2-m+n)} } \\
+{f^{(+)}_{r,n,\bar{n}}}^{\phi} & =(-i)^{n+\bar{n}} \frac{1}{2\sqrt{ \pi }\Gamma(\mu+1)} \sqrt{ \frac{\Gamma(\mu+2+n)\Gamma(\mu+1-m+n)}{\Gamma(1+n)\Gamma(2-m+n)} } \\
+{f^{(+)}_{l,n,\bar{n}}}^{t} & =(-i)^{n+\bar{n}} \frac{1}{2\sqrt{ \pi }\Gamma(\mu+1)} \sqrt{ \frac{\Gamma(\mu+1+n)\Gamma(\mu+2-m+n)}{\Gamma(2+n)\Gamma(1-m+n)} } \\
+{f^{(+)}_{l,n,\bar{n}}}^{\phi} & =-(-i)^{n+\bar{n}} \frac{1}{2\sqrt{ \pi }\Gamma(\mu+1)} \sqrt{ \frac{\Gamma(\mu+1+n)\Gamma(\mu+2-m+n)}{\Gamma(2+n)\Gamma(1-m+n)} }
 \end{align}$$
