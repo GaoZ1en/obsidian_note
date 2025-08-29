@@ -16541,6 +16541,11 @@
             "timeKey": "17:35",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "17:45",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 547
@@ -16574,9 +16579,645 @@
             "timeKey": "17:35",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "17:45",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "17:50",
+            "w": 14,
+            "c": 78
           }
         ],
         "id": 549
+      },
+      {
+        "date": "2025-08-25",
+        "filePath": "TODO.md",
+        "wordCountStart": 6178,
+        "charCountStart": 31003,
+        "changes": [],
+        "id": 550
+      },
+      {
+        "date": "2025-08-25",
+        "filePath": "Articles/Proca in AdS3/two structures.md",
+        "wordCountStart": 2011,
+        "charCountStart": 8060,
+        "changes": [],
+        "id": 551
+      },
+      {
+        "date": "2025-08-25",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 5045,
+        "charCountStart": 19717,
+        "changes": [
+          {
+            "timeKey": "08:50",
+            "w": -14,
+            "c": -55
+          }
+        ],
+        "id": 552
+      },
+      {
+        "date": "2025-08-25",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5243,
+        "charCountStart": 22763,
+        "changes": [
+          {
+            "timeKey": "18:20",
+            "w": -14,
+            "c": -78
+          }
+        ],
+        "id": 553
+      },
+      {
+        "date": "2025-08-25",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from NRQM to RQM.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "14:55",
+            "w": 16,
+            "c": 128
+          },
+          {
+            "timeKey": "15:00",
+            "w": 65,
+            "c": 461
+          },
+          {
+            "timeKey": "15:05",
+            "w": 66,
+            "c": 407
+          },
+          {
+            "timeKey": "15:10",
+            "w": 35,
+            "c": 235
+          },
+          {
+            "timeKey": "15:15",
+            "w": 66,
+            "c": 450
+          },
+          {
+            "timeKey": "15:40",
+            "w": 16,
+            "c": 96
+          },
+          {
+            "timeKey": "15:45",
+            "w": 34,
+            "c": 180
+          },
+          {
+            "timeKey": "15:50",
+            "w": 36,
+            "c": 184
+          },
+          {
+            "timeKey": "15:55",
+            "w": 18,
+            "c": 97
+          }
+        ],
+        "id": 554
+      },
+      {
+        "date": "2025-08-25",
+        "filePath": "Articles/Proca in AdS3/relations of Jacobi polynomials and hypergeometric functions.md",
+        "wordCountStart": 1250,
+        "charCountStart": 5658,
+        "changes": [],
+        "id": 555
+      },
+      {
+        "date": "2025-08-25",
+        "filePath": "Articles/Proca in AdS3/Draft.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:30",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "18:55",
+            "w": 85,
+            "c": 434
+          },
+          {
+            "timeKey": "19:00",
+            "w": 88,
+            "c": 385
+          },
+          {
+            "timeKey": "19:05",
+            "w": 149,
+            "c": 589
+          },
+          {
+            "timeKey": "19:10",
+            "w": 69,
+            "c": 348
+          },
+          {
+            "timeKey": "19:15",
+            "w": 54,
+            "c": 196
+          },
+          {
+            "timeKey": "19:20",
+            "w": 281,
+            "c": 1116
+          },
+          {
+            "timeKey": "19:25",
+            "w": 89,
+            "c": 361
+          },
+          {
+            "timeKey": "19:30",
+            "w": 10,
+            "c": 40
+          },
+          {
+            "timeKey": "19:40",
+            "w": 0,
+            "c": 3
+          }
+        ],
+        "id": 556
+      },
+      {
+        "date": "2025-08-25",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 557
+      },
+      {
+        "date": "2025-08-25",
+        "filePath": "Articles/Proca in AdS3/three integrals.md",
+        "wordCountStart": 640,
+        "charCountStart": 2378,
+        "changes": [],
+        "id": 558
+      },
+      {
+        "date": "2025-08-25",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 1579,
+        "charCountStart": 6980,
+        "changes": [],
+        "id": 559
+      },
+      {
+        "date": "2025-08-26",
+        "filePath": "Articles/Proca in AdS3/Draft.md",
+        "wordCountStart": 825,
+        "charCountStart": 3474,
+        "changes": [
+          {
+            "timeKey": "15:30",
+            "w": 156,
+            "c": 789
+          },
+          {
+            "timeKey": "15:35",
+            "w": 181,
+            "c": 619
+          },
+          {
+            "timeKey": "15:40",
+            "w": 204,
+            "c": 696
+          },
+          {
+            "timeKey": "15:45",
+            "w": 281,
+            "c": 965
+          },
+          {
+            "timeKey": "15:50",
+            "w": 224,
+            "c": 894
+          },
+          {
+            "timeKey": "15:55",
+            "w": 18,
+            "c": 109
+          },
+          {
+            "timeKey": "16:00",
+            "w": 229,
+            "c": 952
+          },
+          {
+            "timeKey": "16:05",
+            "w": 17,
+            "c": 114
+          },
+          {
+            "timeKey": "16:10",
+            "w": 351,
+            "c": 1574
+          }
+        ],
+        "id": 560
+      },
+      {
+        "date": "2025-08-26",
+        "filePath": "Articles/Proca in AdS3/proca in ads3.md",
+        "wordCountStart": 1579,
+        "charCountStart": 6980,
+        "changes": [],
+        "id": 561
+      },
+      {
+        "date": "2025-08-26",
+        "filePath": "Articles/Proca in AdS3/relations of Jacobi polynomials and hypergeometric functions.md",
+        "wordCountStart": 1250,
+        "charCountStart": 5658,
+        "changes": [
+          {
+            "timeKey": "16:20",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "16:25",
+            "w": 190,
+            "c": 922
+          },
+          {
+            "timeKey": "16:30",
+            "w": -111,
+            "c": -410
+          }
+        ],
+        "id": 562
+      },
+      {
+        "date": "2025-08-26",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from NRQM to RQM.md",
+        "wordCountStart": 352,
+        "charCountStart": 2238,
+        "changes": [
+          {
+            "timeKey": "21:30",
+            "w": 85,
+            "c": 428
+          },
+          {
+            "timeKey": "21:35",
+            "w": 37,
+            "c": 148
+          },
+          {
+            "timeKey": "21:40",
+            "w": 77,
+            "c": 478
+          },
+          {
+            "timeKey": "21:45",
+            "w": 70,
+            "c": 494
+          },
+          {
+            "timeKey": "21:50",
+            "w": 72,
+            "c": 414
+          },
+          {
+            "timeKey": "21:55",
+            "w": 69,
+            "c": 389
+          },
+          {
+            "timeKey": "22:00",
+            "w": 81,
+            "c": 445
+          },
+          {
+            "timeKey": "22:05",
+            "w": 65,
+            "c": 401
+          },
+          {
+            "timeKey": "22:10",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "22:30",
+            "w": 10,
+            "c": 56
+          },
+          {
+            "timeKey": "22:35",
+            "w": -10,
+            "c": -56
+          }
+        ],
+        "id": 563
+      },
+      {
+        "date": "2025-08-26",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [],
+        "id": 564
+      },
+      {
+        "date": "2025-08-26",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 1938,
+        "charCountStart": 8163,
+        "changes": [
+          {
+            "timeKey": "17:05",
+            "w": 16,
+            "c": 65
+          },
+          {
+            "timeKey": "17:10",
+            "w": 68,
+            "c": 269
+          },
+          {
+            "timeKey": "17:15",
+            "w": 1,
+            "c": -26
+          },
+          {
+            "timeKey": "17:20",
+            "w": 249,
+            "c": 929
+          },
+          {
+            "timeKey": "19:45",
+            "w": 72,
+            "c": 279
+          },
+          {
+            "timeKey": "19:50",
+            "w": -85,
+            "c": -253
+          },
+          {
+            "timeKey": "19:55",
+            "w": 149,
+            "c": 759
+          },
+          {
+            "timeKey": "20:00",
+            "w": 38,
+            "c": 145
+          },
+          {
+            "timeKey": "20:05",
+            "w": -31,
+            "c": -118
+          },
+          {
+            "timeKey": "20:10",
+            "w": 34,
+            "c": 166
+          },
+          {
+            "timeKey": "20:15",
+            "w": 80,
+            "c": 311
+          },
+          {
+            "timeKey": "20:20",
+            "w": -152,
+            "c": -614
+          },
+          {
+            "timeKey": "21:25",
+            "w": -84,
+            "c": -484
+          }
+        ],
+        "id": 565
+      },
+      {
+        "date": "2025-08-27",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 2293,
+        "charCountStart": 9591,
+        "changes": [
+          {
+            "timeKey": "08:55",
+            "w": 40,
+            "c": 127
+          },
+          {
+            "timeKey": "09:00",
+            "w": 22,
+            "c": 75
+          },
+          {
+            "timeKey": "09:30",
+            "w": 50,
+            "c": 277
+          },
+          {
+            "timeKey": "09:35",
+            "w": 23,
+            "c": 76
+          },
+          {
+            "timeKey": "09:40",
+            "w": 5,
+            "c": 39
+          },
+          {
+            "timeKey": "09:45",
+            "w": -6,
+            "c": -39
+          }
+        ],
+        "id": 566
+      },
+      {
+        "date": "2025-08-27",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from NRQM to RQM.md",
+        "wordCountStart": 908,
+        "charCountStart": 5436,
+        "changes": [],
+        "id": 567
+      },
+      {
+        "date": "2025-08-28",
+        "filePath": "Articles/Proca in AdS3/asymptotic behavior.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:55",
+            "w": 10,
+            "c": 62
+          },
+          {
+            "timeKey": "18:05",
+            "w": 53,
+            "c": 204
+          },
+          {
+            "timeKey": "19:45",
+            "w": 19,
+            "c": 123
+          },
+          {
+            "timeKey": "19:50",
+            "w": 2,
+            "c": 20
+          },
+          {
+            "timeKey": "19:55",
+            "w": 677,
+            "c": 2887
+          },
+          {
+            "timeKey": "20:00",
+            "w": 366,
+            "c": 1522
+          },
+          {
+            "timeKey": "20:05",
+            "w": 148,
+            "c": 609
+          },
+          {
+            "timeKey": "20:10",
+            "w": -80,
+            "c": -355
+          },
+          {
+            "timeKey": "20:20",
+            "w": 6,
+            "c": 33
+          },
+          {
+            "timeKey": "20:25",
+            "w": 36,
+            "c": 120
+          },
+          {
+            "timeKey": "20:30",
+            "w": 274,
+            "c": 1146
+          },
+          {
+            "timeKey": "20:35",
+            "w": 290,
+            "c": 1271
+          },
+          {
+            "timeKey": "20:40",
+            "w": -77,
+            "c": -371
+          },
+          {
+            "timeKey": "20:45",
+            "w": 77,
+            "c": 350
+          },
+          {
+            "timeKey": "20:50",
+            "w": 8,
+            "c": 30
+          },
+          {
+            "timeKey": "20:55",
+            "w": 35,
+            "c": 149
+          },
+          {
+            "timeKey": "21:00",
+            "w": -42,
+            "c": -224
+          },
+          {
+            "timeKey": "21:05",
+            "w": 39,
+            "c": 130
+          },
+          {
+            "timeKey": "21:10",
+            "w": -7,
+            "c": -15
+          },
+          {
+            "timeKey": "21:15",
+            "w": -44,
+            "c": -203
+          },
+          {
+            "timeKey": "21:20",
+            "w": 53,
+            "c": 208
+          },
+          {
+            "timeKey": "21:25",
+            "w": -87,
+            "c": -379
+          },
+          {
+            "timeKey": "21:30",
+            "w": -41,
+            "c": -190
+          },
+          {
+            "timeKey": "21:35",
+            "w": -46,
+            "c": -170
+          },
+          {
+            "timeKey": "21:40",
+            "w": -8,
+            "c": -70
+          }
+        ],
+        "id": 568
+      },
+      {
+        "date": "2025-08-28",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from NRQM to RQM.md",
+        "wordCountStart": 908,
+        "charCountStart": 5436,
+        "changes": [],
+        "id": 569
+      },
+      {
+        "date": "2025-08-28",
+        "filePath": "Articles/Noether charge/asymptotic symmetry vector.md",
+        "wordCountStart": 394,
+        "charCountStart": 1617,
+        "changes": [],
+        "id": 570
+      },
+      {
+        "date": "2025-08-28",
+        "filePath": "Articles/Proca in AdS3/Draft.md",
+        "wordCountStart": 2486,
+        "charCountStart": 10186,
+        "changes": [],
+        "id": 571
       }
     ],
     "daysWithCompletedGoal": [
@@ -16623,7 +17264,10 @@
       "2025-08-18",
       "2025-08-19",
       "2025-08-22",
-      "2025-08-23"
+      "2025-08-23",
+      "2025-08-25",
+      "2025-08-26",
+      "2025-08-28"
     ]
   }
 }

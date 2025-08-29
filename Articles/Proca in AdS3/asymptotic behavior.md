@@ -51,4 +51,21 @@ $$\tag{1.3}\begin{align}
 
 ---
 
-here we will prove them by direct calculation. 
+here we will prove (1.3) by direct calculation. an observation is that each $\displaystyle{h}$ and $\displaystyle{f}$ symbol satisfies the constraint equation $\displaystyle{\nabla _{\mu}A^{ \mu}=0\implies \partial _{t}A^{t}+\partial _{r}A^{r}+\frac{1}{r}A^{r}+\partial _{\phi}A^{\phi}=0}$, so we only need to verify that $\displaystyle{t}$ and $\displaystyle{r}$ components of $\displaystyle{h}$ satisfy (1.3).
+
+$$\tag{2.1}\begin{align}
+{h^{(+)}_{+,m=0,n}}^{t} & =e^{-i(\mu+2+2n)t} \frac{1}{\mu+2+2n}\left[(\mu r^{2}-2)(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{2}(1+r^{2})^{-(\mu+6)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+{h^{(+)}_{+,m=0,n}}^{r} & =-ie^{-i(\mu+2+2n)t}r(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+{h^{(+)}_{+,m=0,n}}^{\phi} & =e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+{h^{(+)}_{-,m=0,n}}^{t} & =e^{-i(\mu+2+2n)t} \frac{1}{\mu+2+2n}\left[(\mu r^{2}-2)(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{2}(1+r^{2})^{-(\mu+6)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+{h^{(+)}_{-,m=0,n}}^{r} & =-ie^{-i(\mu+2+2n)t}r(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+{h^{(+)}_{-,m=0,n}}^{\phi} & =-e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+{h^{(+)}_{+,m\geqslant 1,n}}^{t} & =e^{-i(\mu+m+2n)t}e^{im\phi} \frac{1}{\mu+m+2n}\left[(\mu+m)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m-1}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+{h^{(+)}_{+,m\geqslant 1,n}}^{r} & =-ie^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+{h^{(+)}_{+,m\geqslant 1,n}}^{\phi} & =e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-2}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+{h^{(+)}_{-,m\geqslant 1,n}}^{t} & =e^{-i(\mu+2+m+2n)t}e^{im\phi} \frac{1}{\mu+2+m+2n}\left[((\mu-m)r^{2}-2(m+1))r^{m}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m+2}(1+r^{2})^{-(\mu+m+6)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+{h^{(+)}_{-,m\geqslant 1,n}}^{r} & =-ie^{-i(\mu+2+m+2n)t}e^{im\phi}r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+{h^{(+)}_{-,m\geqslant 1,n}}^{\phi} & =-e^{-i(\mu+2+m+2n)t}e^{im\phi}r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+{h^{(+)}_{+,m\leqslant-1,n}}^{t} & =
+\end{align}$$
+
