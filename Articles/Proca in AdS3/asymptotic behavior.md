@@ -66,6 +66,11 @@ $$\tag{2.1}\begin{align}
 {h^{(+)}_{-,m\geqslant 1,n}}^{t} & =e^{-i(\mu+2+m+2n)t}e^{im\phi} \frac{1}{\mu+2+m+2n}\left[((\mu-m)r^{2}-2(m+1))r^{m}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m+2}(1+r^{2})^{-(\mu+m+6)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
 {h^{(+)}_{-,m\geqslant 1,n}}^{r} & =-ie^{-i(\mu+2+m+2n)t}e^{im\phi}r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 {h^{(+)}_{-,m\geqslant 1,n}}^{\phi} & =-e^{-i(\mu+2+m+2n)t}e^{im\phi}r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
-{h^{(+)}_{+,m\leqslant-1,n}}^{t} & =
+{h^{(+)}_{+,m\leqslant-1,n}}^{t} & =e^{-i(\mu+2-m+2n)t}e^{im\phi} \frac{1}{\mu+2-m+2n}\left[((\mu+m)r^{2}+2(m-1))r^{-m}(1+r^{2})^{-(\mu-m+4)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{-m+2}(1+r^{2})^{-(\mu-m+6)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+{h^{(+)}_{+,m\leqslant -1,n}}^{r} & =-ie^{-i(\mu+2-m+2n)t}e^{im\phi}r^{-m+1}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+{h^{(+)}_{+,m\leqslant -1,n}}^{\phi} & =e^{-i(\mu+2-m+2n)t}e^{im\phi}r^{-m}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+{h^{(+)}_{-,m\leqslant -1,n}}^{t} & =e^{-i(\mu-m+2n)t}e^{im\phi} \frac{1}{\mu-m+2n}\left[()\right] \\
+{h^{(+)}_{-,m\leqslant -1,n}}^{r} & = \\
+{h^{(+)}_{-,m\leqslant -1,n}}^{\phi} & =
 \end{align}$$
 
