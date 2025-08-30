@@ -99,6 +99,8 @@ $$ \begin{align}
 here we will prove
 
 $$\begin{align}
+{h^{(+)}_{+,m=0,n}}^{t} & = 2i^{2n+1}\sqrt{ \pi } \frac{\mu+n+1}{\mu+2n+2} \sqrt{ \frac{1+n}{\mu+n+1} } {f^{(+)}_{r,n,n+1}}^{t} \\
+ & -2i^{2n+1}\sqrt{ \pi } \frac{1+n}{\mu+2n+2} \sqrt{ \frac{1+n}{\mu+n+1} }{f^{(+)}_{l,n+1,n}}^{t} \\
 {h^{(+)}_{+,m=0,n}}^{r} & = 2i^{2n+1}\sqrt{ \pi } \frac{\mu+n+1}{\mu+2n+2} \sqrt{ \frac{1+n}{\mu+n+1} } {f^{(+)}_{r,n,n+1}}^{r} \\
  & -2i^{2n+1}\sqrt{ \pi } \frac{1+n}{\mu+2n+2} \sqrt{ \frac{1+n}{\mu+n+1} }{f^{(+)}_{l,n+1,n}}^{r} \\
 {h^{(+)}_{+,m=0,n}}^{\phi} & = 2i^{2n+1}\sqrt{ \pi } \frac{\mu+n+1}{\mu+2n+2} \sqrt{ \frac{1+n}{\mu+n+1} } {f^{(+)}_{r,n,n+1}}^{\phi} \\
@@ -108,6 +110,7 @@ $$\begin{align}
 where
 
 $$\begin{align}
+{h^{(+)}_{+,m=0,n}}^{t} & =e^{-i(\mu+2+2n)t} \frac{1}{\mu+2+2n}\left[(\mu r^{2}-2)(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{2}(1+r^{2})^{-(\mu+6)/2}P_{n}^{(\mu,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
 {h^{(+)}_{+,m=0,n}}^{r} & =-ie^{-i(\mu+2+2n)t}r(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 {h^{(+)}_{+,m=0,n}}^{\phi} & =e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
@@ -127,7 +130,22 @@ $$\begin{align}
 {f^{(+)}_{r,n,n+1}}^{\mu} & = (-i)^{2n+1}\frac{1}{\mu \sqrt{ \pi }}\sqrt{ \frac{\mu+1+n}{1+n} }\left((\mu+2+n) \frac{r}{\sqrt{ 1+r^{2} }}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(t-\phi)}\xi^{\mu}_{1}-2(n+1)P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\xi^{\mu}_{0}+(n+1) \frac{r}{\sqrt{ 1+r^{2} }}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{i(t-\phi)}\xi^{\mu}_{-1}\right)e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2}
 \end{align}$$
 
-where the $\displaystyle{r}$ component
+where the $\displaystyle{t}$ component
+
+$$\begin{align}
+{f^{(+)}_{r,n,n+1}}^{t} & = (-i)^{2n+1}\frac{1}{2\mu \sqrt{ \pi }}\sqrt{ \frac{\mu+1+n}{1+n} }\left((\mu+2+n) \frac{r^{2}}{1+r^{2}}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2} \\
+{f^{(+)}_{r,n,n+1}}^{\mu} & = (-i)^{2n+1}\frac{1}{2\mu \sqrt{ \pi }}\sqrt{ \frac{\mu+1+n}{1+n} }\left((\mu+2+n) \frac{r^{2}}{1+r^{2}}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2} \\
+{h^{(+)}_{+,m=0,n}}^{t} & = \frac{1}{\mu+2n+2}\left((\mu+2+n) \frac{r^{2}}{1+r^{2}}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2} \\
+ & =e^{-i(\mu+2+2n)t} \frac{1}{\mu+2+2n}\left[(\mu r^{2}-2)(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{2}(1+r^{2})^{-(\mu+6)/2}P_{n}^{(\mu,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+\implies 
+\end{align}$$
+
+$$\tag{.}\begin{align}
+ & (\mu+2+n)r^{2}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)(1+r^{2})P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1)r^{2}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & =(\mu r^{2}-2)P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4\frac{r^{2}}{1+r^{2}}P_{n}^{(\mu,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+the $\displaystyle{r}$ component
 
 $$\begin{align}
 {f^{(+)}_{r,n,n+1}}^{r} & = (-i)^{2n+2}\frac{1}{2\mu \sqrt{ \pi }}\sqrt{ \frac{\mu+1+n}{1+n} }\left((\mu+2+n) P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-(n+1)P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}r(1+r^{2})^{-(\mu+2)/2} \\
@@ -160,7 +178,13 @@ $$\begin{align}
  & +2i^{2n+1} \sqrt{ \pi }\frac{\mu+n+1}{\mu+2n+2} \sqrt{ \frac{1+n}{\mu+n+1} }{f^{(+)}_{l,n+1,n}}^{\phi}
 \end{align}$$
 
-we can use results involved before. the $\displaystyle{r}$ component is
+we can use results involved before. the $\displaystyle{t}$ component is
+
+$$\begin{align}
+
+\end{align}$$
+
+the $\displaystyle{r}$ component is
 
 $$\begin{align}
 {f^{(+)}_{r,n,n+1}}^{r} & = (-i)^{2n+2}\frac{1}{2\mu \sqrt{ \pi }}\sqrt{ \frac{\mu+1+n}{1+n} }\left((\mu+2+n) P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-(n+1)P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}r(1+r^{2})^{-(\mu+2)/2} \\
