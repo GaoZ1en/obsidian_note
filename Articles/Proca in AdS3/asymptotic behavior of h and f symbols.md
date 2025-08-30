@@ -134,18 +134,14 @@ where the $\displaystyle{t}$ component
 
 $$\begin{align}
 {f^{(+)}_{r,n,n+1}}^{t} & = (-i)^{2n+1}\frac{1}{2\mu \sqrt{ \pi }}\sqrt{ \frac{\mu+1+n}{1+n} }\left((\mu+2+n) \frac{r^{2}}{1+r^{2}}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2} \\
-{f^{(+)}_{r,n,n+1}}^{\mu} & = (-i)^{2n+1}\frac{1}{2\mu \sqrt{ \pi }}\sqrt{ \frac{\mu+1+n}{1+n} }\left((\mu+2+n) \frac{r^{2}}{1+r^{2}}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2} \\
+{f^{(+)}_{r,n,n+1}}^{t} & = (-i)^{2n+1}\frac{1}{2\mu \sqrt{ \pi }}\sqrt{ \frac{\mu+1+n}{1+n} }\left((\mu+2+n) \frac{r^{2}}{1+r^{2}}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2} \\
 {h^{(+)}_{+,m=0,n}}^{t} & = \frac{1}{\mu+2n+2}\left((\mu+2+n) \frac{r^{2}}{1+r^{2}}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2} \\
  & =e^{-i(\mu+2+2n)t} \frac{1}{\mu+2+2n}\left[(\mu r^{2}-2)(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{2}(1+r^{2})^{-(\mu+6)/2}P_{n}^{(\mu,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
-\implies 
-\end{align}$$
-
-$$\tag{.}\begin{align}
- & (\mu+2+n)r^{2}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)(1+r^{2})P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1)r^{2}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+\implies  & (\mu+2+n)r^{2}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)(1+r^{2})P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1)r^{2}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
  & =(\mu r^{2}-2)P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4\frac{r^{2}}{1+r^{2}}P_{n}^{(\mu,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-the $\displaystyle{r}$ component
+this relation is correct. the $\displaystyle{r}$ component reads
 
 $$\begin{align}
 {f^{(+)}_{r,n,n+1}}^{r} & = (-i)^{2n+2}\frac{1}{2\mu \sqrt{ \pi }}\sqrt{ \frac{\mu+1+n}{1+n} }\left((\mu+2+n) P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-(n+1)P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}r(1+r^{2})^{-(\mu+2)/2} \\
@@ -155,7 +151,7 @@ $$\begin{align}
 \implies (\mu+2+2n)P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) & =(\mu+2+n)P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-(1+n)P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-this relation is correct. and the $\displaystyle{\phi}$ component
+this relation is correct. and the $\displaystyle{\phi}$ component reads
 
 $$\begin{align}
 {f^{(+)}_{r,n,n+1}}^{\phi} & = (-i)^{2n+1}\frac{1}{2\mu \sqrt{ \pi }}\sqrt{ \frac{\mu+1+n}{1+n} }\left((\mu+2+n)P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1)P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2} \\
@@ -172,6 +168,8 @@ and this relation is also correct.
 here we will prove
 
 $$\begin{align}
+{h^{(+)}_{-,m=0,n}}^{t} & = -2i^{2n+1}\sqrt{ \pi } \frac{1+n}{\mu+2n+2} \sqrt{ \frac{1+n}{\mu+n+1} }{f^{(+)}_{r,n,n+1}}^{t} \\
+ & +2i^{2n+1}\sqrt{ \pi } \frac{\mu+n+1}{\mu+2n+2} \sqrt{ \frac{1+n}{\mu+n+1} }{f^{(+)}_{l,n+1,n}}^{t} \\
 {h^{(+)}_{-,m=0,n}}^{r} & = -2i^{2n+1}\sqrt{ \pi } \frac{1+n}{\mu+2n+2} \sqrt{ \frac{1+n}{\mu+n+1} }{f^{(+)}_{r,n,n+1}}^{r} \\
  & +2i^{2n+1}\sqrt{ \pi } \frac{\mu+n+1}{\mu+2n+2} \sqrt{ \frac{1+n}{\mu+n+1} }{f^{(+)}_{l,n+1,n}}^{r} \\
 {h^{(+)}_{-,m=0,n}}^{\phi} & = -2i^{2n+1}\sqrt{ \pi } \frac{1+n}{\mu+2n+2} \sqrt{ \frac{1+n}{\mu+n+1} }{f^{(+)}_{r,n,n+1}}^{\phi} \\
@@ -181,7 +179,10 @@ $$\begin{align}
 we can use results involved before. the $\displaystyle{t}$ component is
 
 $$\begin{align}
-
+{f^{(+)}_{r,n,n+1}}^{t} & = (-i)^{2n+1}\frac{1}{2\mu \sqrt{ \pi }}\sqrt{ \frac{\mu+1+n}{1+n} }\left((\mu+2+n) \frac{r^{2}}{1+r^{2}}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2} \\
+{f^{(+)}_{r,n,n+1}}^{t} & = (-i)^{2n+1}\frac{1}{2\mu \sqrt{ \pi }}\sqrt{ \frac{\mu+1+n}{1+n} }\left((\mu+2+n) \frac{r^{2}}{1+r^{2}}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2} \\
+{h^{(+)}_{+,m=0,n}}^{t} & = \frac{1}{\mu+2n+2}\left((\mu+2+n) \frac{r^{2}}{1+r^{2}}P_{n}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(n+1)P_{n}^{(\mu+1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(n+1) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2} \\
+ & =e^{-i(\mu+2+2n)t} \frac{1}{\mu+2+2n}\left[(\mu r^{2}-2)(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{2}(1+r^{2})^{-(\mu+6)/2}P_{n}^{(\mu,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]
 \end{align}$$
 
 the $\displaystyle{r}$ component is
@@ -207,15 +208,18 @@ $$\begin{align}
 here we will prove
 
 $$\begin{align}
+{h^{(+)}_{+,m\geqslant 1,n}}^{t} & = 2i^{m+2n-1}\sqrt{ \pi }\frac{\sqrt{ (\mu+n)(\mu+m+n) }}{\mu+m+2n} \sqrt{ \frac{\Gamma(m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+m+n)} }{f^{(+)}_{r,-1+m+n,n}}^{t} \\
+ & -2i^{m+2n-1}\sqrt{ \pi } \frac{\sqrt{ n(m+n) }}{\mu+m+2n} \sqrt{ \frac{\Gamma(m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+m+n)} }{f^{(+)}_{l,m+n,n-1}}^{t} \\
 {h^{(+)}_{+,m\geqslant 1,n}}^{r} & = 2i^{m+2n-1}\sqrt{ \pi }\frac{\sqrt{ (\mu+n)(\mu+m+n) }}{\mu+m+2n} \sqrt{ \frac{\Gamma(m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+m+n)} }{f^{(+)}_{r,-1+m+n,n}}^{r} \\
  & -2i^{m+2n-1}\sqrt{ \pi } \frac{\sqrt{ n(m+n) }}{\mu+m+2n} \sqrt{ \frac{\Gamma(m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+m+n)} }{f^{(+)}_{l,m+n,n-1}}^{r} \\
-{h^{(+)}_{+,m\geqslant 1,n}}^{\mu} & = 2i^{m+2n-1}\sqrt{ \pi }\frac{\sqrt{ (\mu+n)(\mu+m+n) }}{\mu+m+2n} \sqrt{ \frac{\Gamma(m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+m+n)} }{f^{(+)}_{r,-1+m+n,n}}^{r} \\
- & -2i^{m+2n-1}\sqrt{ \pi } \frac{\sqrt{ n(m+n) }}{\mu+m+2n} \sqrt{ \frac{\Gamma(m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+m+n)} }{f^{(+)}_{l,m+n,n-1}}^{r}
+{h^{(+)}_{+,m\geqslant 1,n}}^{\phi} & = 2i^{m+2n-1}\sqrt{ \pi }\frac{\sqrt{ (\mu+n)(\mu+m+n) }}{\mu+m+2n} \sqrt{ \frac{\Gamma(m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+m+n)} }{f^{(+)}_{r,-1+m+n,n}}^{\phi} \\
+ & -2i^{m+2n-1}\sqrt{ \pi } \frac{\sqrt{ n(m+n) }}{\mu+m+2n} \sqrt{ \frac{\Gamma(m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+m+n)} }{f^{(+)}_{l,m+n,n-1}}^{\phi}
 \end{align}$$
 
 where
 
 $$\begin{align}
+{h^{(+)}_{+,m\geqslant 1,n}}^{t} & =e^{-i(\mu+m+2n)t}e^{im\phi} \frac{1}{\mu+m+2n}\left[(\mu+m)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m-1}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
 {h^{(+)}_{+,m\geqslant 1,n}}^{r} & =-ie^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 {h^{(+)}_{+,m\geqslant 1,n}}^{\phi} & =e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-2}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
@@ -231,7 +235,25 @@ $$\begin{align}
  & \left.+(m+n)(m+n-1)(1+r^{2})^{-1/2}P_{n-1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{i(t-\phi)}\xi ^{\mu}_{-1} \right) e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2}
 \end{align}$$
 
-where the $\displaystyle{r}$ component
+where the $\displaystyle{t}$ component
+
+$$\begin{align}
+{f^{(+)}_{r,-1+m+n,n}}^{t} & =(-i)^{-1+m+2n}\sqrt{ (\mu+m+n)(\mu+n) }\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+m+n)}{\Gamma(m+n)\Gamma(\mu+1+n)} } \frac{1}{2\mu \sqrt{ \pi }} \left( r(1+r^{2})^{-1}P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(t+\phi)}\right. \\
+ & \left.-2r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+r^{3}(1+r^{2})^{-2}P_{n-2}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2} \\
+{f^{(+)}_{l,m+n,n-1}}^{\mu} & =(-i)^{-1+m+2n} \frac{1}{\sqrt{ n(m+n) }}\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+m+n)}{\Gamma(m+n)\Gamma(\mu+1+n)}} \frac{1}{2\mu \sqrt{ \pi }}\left( (\mu+1+m+n)(\mu+m+n) r^{3}(1+r^{2})^{-2}P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-2(m+n)(\mu+m+n)r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(m+n)(m+n-1)r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2} \\
+{h^{(+)}_{+,m\geqslant 1,n}}^{t} & = \frac{(\mu+n)(\mu+m+n)}{\mu(\mu+m+2n)}  \left( r(1+r^{2})^{-1}P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(t+\phi)}\right. \\
+ & \left.-2r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+r^{3}(1+r^{2})^{-2}P_{n-2}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2}\\
+ & -\frac{1}{\mu(\mu+m+2n)}\left( (\mu+1+m+n)(\mu+m+n) r^{3}(1+r^{2})^{-2}P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-2(m+n)(\mu+m+n)r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(m+n)(m+n-1)r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2} \\
+ & =e^{-i(\mu+m+2n)t}e^{im\phi} \frac{1}{\mu+m+2n}\left[(\mu+m)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m-1}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+\implies& (\mu+n)(\mu+m+n) \left( r(1+r^{2})^{-1}P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+r^{3}(1+r^{2})^{-2}P_{n-2}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)\\
+ & -\left( (\mu+1+m+n)(\mu+m+n) r^{3}(1+r^{2})^{-2}P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-2(m+n)(\mu+m+n)r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(m+n)(m+n-1)r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
+ & =\mu(\mu+m)r(1+r^{2})^{-1}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4\mu(1+r^{2})^{-2}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+this relation is correct. the $\displaystyle{r}$ component reads
 
 $$\begin{align}
 {f^{(+)}_{r,-1+m+n,n}}^{r} & =(-i)^{m+2n}\sqrt{ (\mu+m+n)(\mu+n) }\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+m+n)}{\Gamma(m+n)\Gamma(\mu+1+n)} } \frac{1}{2\mu \sqrt{ \pi }} \left(P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
@@ -247,9 +269,7 @@ $$\begin{align}
  & +(m+n)(m+n-1)P_{n-1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-this relation is correct. and the $\displaystyle{\phi}$ component
-
-
+this relation is correct. and the $\displaystyle{\phi}$ component reads
 
 $$\tag{.}\begin{align}
 \xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
@@ -259,6 +279,17 @@ $$\tag{.}\begin{align}
 \bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
 \bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
 \end{align}$$
+
+$$\begin{align}
+{f^{(+)}_{r,-1+m+n,n}}^{\phi} & =(-i)^{-1+m+2n}\sqrt{ (\mu+m+n)(\mu+n) }\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+m+n)}{\Gamma(m+n)\Gamma(\mu+1+n)} } \frac{1}{2\mu \sqrt{ \pi }} \left( r^{-1}P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & -2r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & \left.+r(1+r^{2})^{-1}P_{n-2}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2} \\
+{f^{(+)}_{l,m+n,n-1}}^{\mu} & =-(-i)^{-1+m+2n} \frac{1}{\sqrt{ n(m+n) }}\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+m+n)}{\Gamma(m+n)\Gamma(\mu+1+n)}} \frac{1}{2\mu \sqrt{ \pi }}\left( (\mu+1+m+n)(\mu+m+n) r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & -2(m+n)(\mu+m+n)r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & \left.+(m+n)(m+n-1)(1+r^{2})^{-1/2}P_{n-1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2}
+\end{align}$$
+
+
 
 $$\tag{.}\begin{align}
 {h^{(+)}_{+,m\geqslant 1,n}}^{r} & = 2i^{m+2n-1}\sqrt{ \pi }\frac{\sqrt{ (\mu+n)(\mu+m+n) }}{\mu+m+2n} \sqrt{ \frac{\Gamma(m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+m+n)} }{f^{(+)}_{r,-1+m+n,n}}^{r} \\
