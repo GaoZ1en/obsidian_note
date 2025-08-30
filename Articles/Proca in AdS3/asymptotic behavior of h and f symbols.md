@@ -322,15 +322,39 @@ $$\begin{align}
 and
 
 $$\begin{align}
-{f^{(+)}_{r,m+n,n+1}}^{\mu} & =\sqrt{ \frac{1}{(m+n)!(n+1)!(\mu+2)_{m+n}(\mu)_{n+1}} } \sqrt{ \frac{\mu+1}{\pi \mu} }\left(\mathcal{L}_{\xi _{-1}}^{m+n}\mathcal{L}_{\bar{\xi}_{-1}}^{1+n} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{1}^{\mu}+2i(n+1)\mathcal{L}_{\xi _{-1}}^{m+n}\mathcal{L}_{\bar{\xi}_{-1}}^{n} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{0}^{\mu}-n(n+1)\mathcal{L}_{\xi _{-1}}^{m+n}\mathcal{L}_{\bar{\xi}_{-1}}^{n-1} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}^{\mu}_{-1}\right) \\
-\mathcal{L}_{\xi _{-1}}^{m+n}\mathcal{L}_{\bar{\xi}_{-1}}^{n+1} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}& =(-i)^{1+m+2n}e^{-i(\mu+3+m+2n)t}e^{i(m-1)\phi} \frac{\Gamma(n+2)\Gamma(\mu+2+m+n)}{\Gamma(\mu+2)}r^{m-1}(1+r^{2})^{-(\mu+1+m)/2}P_{n+1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
-\mathcal{L}_{\xi _{-1}}^{m+n}\mathcal{L}_{\bar{\xi}_{-1}}^{n} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}& =(-i)^{m+2n}e^{-i(\mu+2+m+2n)t}e^{im\phi} \frac{\Gamma(n+1)\Gamma(\mu+2+m+n)}{\Gamma(\mu+2)}r^{m}(1+r^{2})^{-(\mu+2+m)/2}P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
-\mathcal{L}_{\xi _{-1}}^{m+n}\mathcal{L}_{\bar{\xi}_{-1}}^{n-1} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}& =(-i)^{-1+m+2n}e^{-i(\mu+1+m+2n)t}e^{i(m+1)\phi} \frac{\Gamma(n)\Gamma(\mu+2+m+n)}{\Gamma(\mu+2)}r^{m+1}(1+r^{2})^{-(\mu+3+m)/2}P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+{f^{(+)}_{r,m+n,n+1}}^{\mu} & =(-i)^{1+m+2n}\sqrt{ (1+n)(1+m+n) }\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+2+m+n)}{\Gamma(2+m+n)\Gamma(\mu+1+n)} } \frac{1}{\mu \sqrt{ \pi }}\left( r^{-1}(1+r^{2})^{1/2}P_{n+1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(t+\phi)}\bar{\xi}_{1}^{\mu}\right. \\
+ & \left.-2P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\bar{\xi}_{0}^{\mu}+r(1+r^{2})^{-1/2}P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{i(t+\phi)}\bar{\xi}^{\mu}_{-1}\right)e^{-i(\mu+2+m+2n)t}e^{im\phi} r^{m}(1+r^{2})^{-(\mu+2+m)/2} \\
+{f^{(+)}_{l,1+m+n,n}}^{\mu} & =(-i)^{1+m+2n}\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+2+m+n)}{\Gamma(2+m+n)\Gamma(\mu+1+n)}} \frac{1}{\mu \sqrt{ \pi }}\frac{1}{\sqrt{ (\mu+1+n)(\mu+1+m+n) }}\left(  (\mu+2+m+n)(\mu+1+m+n)r(1+r^{2})^{-1/2}P_{n}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(t-\phi)}\xi _{1}^{\mu}\right. \\
+ & \left.-2(1+m+n)(\mu+1+m+n) P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\xi ^{\mu}_{0}+(1+m+n)(m+n)r^{-1}(1+r^{2})^{1/2}P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{i(t-\phi)}\xi ^{\mu}_{-1} \right)e^{-i(\mu+2+m+2n)t}e^{im\phi}r^{m}(1+r^{2})^{-(\mu+2+m)/2}
+\end{align}$$
+
+where the $\displaystyle{t}$ component
+
+$$\begin{align}
+{f^{(+)}_{r,m+n,n+1}}^{t} & =(-i)^{1+m+2n}\sqrt{ (1+n)(1+m+n) }\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+2+m+n)}{\Gamma(2+m+n)\Gamma(\mu+1+n)} } \frac{1}{2\mu \sqrt{ \pi }}\left( P_{n+1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-2P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+\frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+m+2n)t}e^{im\phi} r^{m}(1+r^{2})^{-(\mu+2+m)/2} \\
+{f^{(+)}_{l,1+m+n,n}}^{\mu} & =(-i)^{1+m+2n}\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+2+m+n)}{\Gamma(2+m+n)\Gamma(\mu+1+n)}} \frac{1}{2\mu \sqrt{ \pi }}\frac{1}{\sqrt{ (\mu+1+n)(\mu+1+m+n) }}\left(  (\mu+2+m+n)(\mu+1+m+n)\frac{r^{2}}{1+r^{2}}P_{n}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-2(1+m+n)(\mu+1+m+n) P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(1+m+n)(m+n)P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)e^{-i(\mu+2+m+2n)t}e^{im\phi}r^{m}(1+r^{2})^{-(\mu+2+m)/2} \\
+{h^{(+)}_{-,m\geqslant 1,n}}^{t} & =- \frac{(1+n)(1+m+n)}{\mu(\mu+2+m+2n)} \left( P_{n+1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+\frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+m+2n)t}e^{im\phi} r^{m}(1+r^{2})^{-(\mu+2+m)/2} \\
+ & + \frac{1}{\mu(\mu+2+m+2n)}\left(  (\mu+2+m+n)(\mu+1+m+n)\frac{r^{2}}{1+r^{2}}P_{n}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-2(1+m+n)(\mu+1+m+n) P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(1+m+n)(m+n)P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)e^{-i(\mu+2+m+2n)t}e^{im\phi}r^{m}(1+r^{2})^{-(\mu+2+m)/2} \\
+ & =e^{-i(\mu+2+m+2n)t}e^{im\phi} \frac{1}{\mu+2+m+2n}\left[((\mu-m)r^{2}-2(m+1))r^{m}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m+2}(1+r^{2})^{-(\mu+m+6)/2}P_{n}^{(\mu,m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+\implies& - (1+n)(1+m+n) \left( P_{n+1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+\frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right) \\
+ & + \left(  (\mu+2+m+n)(\mu+1+m+n)\frac{r^{2}}{1+r^{2}}P_{n}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-2(1+m+n)(\mu+1+m+n) P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(1+m+n)(m+n)P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)\\
+ & = \mu\left[((\mu-m)r^{2}-2(m+1))(1+r^{2})^{-1}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{2}(1+r^{2})^{-2}P_{n}^{(\mu,m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]
 \end{align}$$
 
 
 $$\tag{.}\begin{align}
-{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu)_{n}(\mu+2)_{\bar{n}}}}\sqrt{ \frac{\mu+1}{\pi \mu} }\left( \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi _{1}^{\mu}+2in\mathcal{L}_{\xi _{-1}}^{n-1}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi ^{\mu}_{0}-n(n-1)\mathcal{L}_{\xi _{-1}}^{n-2}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi ^{\mu}_{-1} \right) \\
-\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}& =(-i)^{n+\bar{n}}e^{-i(\mu+2+n+\bar{n})t}e^{i(n-\bar{n})\phi} \frac{\Gamma(\bar{n}+1)\Gamma(\mu+n+2)}{\Gamma(\mu+2)}r^{n-\bar{n}}(1+r^{2})^{-(\mu+2+n-\bar{n})/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & =(-i)^{n+\bar{n}}e^{-i(\mu+2+n+\bar{n})t}e^{i(n-\bar{n})\phi} \frac{\Gamma(n+1)\Gamma(\mu+\bar{n}+2)}{\Gamma(\mu+2)}r^{\bar{n}-n}(1+r^{2})^{-(\mu+2+\bar{n}-n)/2}P_{n}^{(\mu+1,\bar{n}-n)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+ 
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
+\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
 \end{align}$$
