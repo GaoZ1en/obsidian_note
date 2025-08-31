@@ -17063,7 +17063,7 @@
       },
       {
         "date": "2025-08-28",
-        "filePath": "Articles/Proca in AdS3/asymptotic behavior.md",
+        "filePath": "Articles/Proca in AdS3/asymptotic behavior of h and f symbols.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -17218,6 +17218,582 @@
         "charCountStart": 10186,
         "changes": [],
         "id": 571
+      },
+      {
+        "date": "2025-08-29",
+        "filePath": "Articles/Proca in AdS3/asymptotic behavior of h and f symbols.md",
+        "wordCountStart": 1661,
+        "charCountStart": 6887,
+        "changes": [
+          {
+            "timeKey": "18:05",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "18:10",
+            "w": 148,
+            "c": 602
+          },
+          {
+            "timeKey": "18:15",
+            "w": 466,
+            "c": 1744
+          },
+          {
+            "timeKey": "18:20",
+            "w": 25,
+            "c": 61
+          },
+          {
+            "timeKey": "18:35",
+            "w": 197,
+            "c": 743
+          },
+          {
+            "timeKey": "21:25",
+            "w": 2,
+            "c": 15
+          },
+          {
+            "timeKey": "21:30",
+            "w": 31,
+            "c": 134
+          },
+          {
+            "timeKey": "21:35",
+            "w": 242,
+            "c": 896
+          },
+          {
+            "timeKey": "21:40",
+            "w": 216,
+            "c": 819
+          },
+          {
+            "timeKey": "21:45",
+            "w": 70,
+            "c": 239
+          },
+          {
+            "timeKey": "21:50",
+            "w": 743,
+            "c": 2958
+          },
+          {
+            "timeKey": "21:55",
+            "w": 376,
+            "c": 1372
+          },
+          {
+            "timeKey": "22:00",
+            "w": -80,
+            "c": -321
+          },
+          {
+            "timeKey": "22:05",
+            "w": -61,
+            "c": -259
+          },
+          {
+            "timeKey": "22:10",
+            "w": 139,
+            "c": 715
+          },
+          {
+            "timeKey": "22:15",
+            "w": 0,
+            "c": -4
+          }
+        ],
+        "id": 572
+      },
+      {
+        "date": "2025-08-29",
+        "filePath": "Bases/test.base",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:10",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 573
+      },
+      {
+        "date": "2025-08-29",
+        "filePath": "Bases/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:10",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 574
+      },
+      {
+        "date": "2025-08-29",
+        "filePath": "Articles/Proca in AdS3/relations of Jacobi polynomials and hypergeometric functions.md",
+        "wordCountStart": 1329,
+        "charCountStart": 6170,
+        "changes": [],
+        "id": 575
+      },
+      {
+        "date": "2025-08-29",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 2427,
+        "charCountStart": 10146,
+        "changes": [
+          {
+            "timeKey": "21:45",
+            "w": 476,
+            "c": 1806
+          },
+          {
+            "timeKey": "21:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 576
+      },
+      {
+        "date": "2025-08-29",
+        "filePath": "Articles/Proca in AdS3/two structures.md",
+        "wordCountStart": 2011,
+        "charCountStart": 8060,
+        "changes": [],
+        "id": 577
+      },
+      {
+        "date": "2025-08-30",
+        "filePath": "Articles/Proca in AdS3/relations of Jacobi polynomials and hypergeometric functions.md",
+        "wordCountStart": 1329,
+        "charCountStart": 6170,
+        "changes": [],
+        "id": 578
+      },
+      {
+        "date": "2025-08-30",
+        "filePath": "Articles/Proca in AdS3/two structures.md",
+        "wordCountStart": 2011,
+        "charCountStart": 8060,
+        "changes": [
+          {
+            "timeKey": "16:00",
+            "w": 42,
+            "c": 192
+          },
+          {
+            "timeKey": "16:05",
+            "w": 137,
+            "c": 486
+          },
+          {
+            "timeKey": "16:10",
+            "w": -179,
+            "c": -678
+          }
+        ],
+        "id": 579
+      },
+      {
+        "date": "2025-08-30",
+        "filePath": "Articles/Proca in AdS3/asymptotic behavior of h and f symbols.md",
+        "wordCountStart": 4175,
+        "charCountStart": 16601,
+        "changes": [
+          {
+            "timeKey": "16:20",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "16:25",
+            "w": -212,
+            "c": -887
+          },
+          {
+            "timeKey": "16:30",
+            "w": -1,
+            "c": -16
+          },
+          {
+            "timeKey": "16:35",
+            "w": 77,
+            "c": 247
+          },
+          {
+            "timeKey": "16:40",
+            "w": 183,
+            "c": 682
+          },
+          {
+            "timeKey": "16:45",
+            "w": -33,
+            "c": -120
+          },
+          {
+            "timeKey": "16:50",
+            "w": 336,
+            "c": 1451
+          },
+          {
+            "timeKey": "16:55",
+            "w": -3,
+            "c": -7
+          },
+          {
+            "timeKey": "17:00",
+            "w": 310,
+            "c": 1152
+          },
+          {
+            "timeKey": "17:05",
+            "w": 535,
+            "c": 2029
+          },
+          {
+            "timeKey": "17:10",
+            "w": 303,
+            "c": 1056
+          },
+          {
+            "timeKey": "17:15",
+            "w": 641,
+            "c": 2184
+          },
+          {
+            "timeKey": "17:20",
+            "w": 276,
+            "c": 1111
+          },
+          {
+            "timeKey": "17:25",
+            "w": 737,
+            "c": 2862
+          },
+          {
+            "timeKey": "17:30",
+            "w": 193,
+            "c": 780
+          },
+          {
+            "timeKey": "17:35",
+            "w": 284,
+            "c": 988
+          },
+          {
+            "timeKey": "17:40",
+            "w": -117,
+            "c": -401
+          },
+          {
+            "timeKey": "17:45",
+            "w": 1,
+            "c": -11
+          },
+          {
+            "timeKey": "17:50",
+            "w": -41,
+            "c": -98
+          },
+          {
+            "timeKey": "17:55",
+            "w": -3,
+            "c": -10
+          },
+          {
+            "timeKey": "18:00",
+            "w": -8,
+            "c": -101
+          },
+          {
+            "timeKey": "18:05",
+            "w": 36,
+            "c": 144
+          },
+          {
+            "timeKey": "18:10",
+            "w": -271,
+            "c": -965
+          },
+          {
+            "timeKey": "18:15",
+            "w": 545,
+            "c": 2292
+          },
+          {
+            "timeKey": "18:20",
+            "w": 158,
+            "c": 574
+          },
+          {
+            "timeKey": "18:25",
+            "w": 57,
+            "c": 250
+          },
+          {
+            "timeKey": "21:20",
+            "w": 233,
+            "c": 933
+          },
+          {
+            "timeKey": "21:25",
+            "w": 394,
+            "c": 1391
+          },
+          {
+            "timeKey": "21:30",
+            "w": 224,
+            "c": 780
+          },
+          {
+            "timeKey": "21:35",
+            "w": 934,
+            "c": 3657
+          },
+          {
+            "timeKey": "21:40",
+            "w": 32,
+            "c": -125
+          },
+          {
+            "timeKey": "21:45",
+            "w": 213,
+            "c": 766
+          },
+          {
+            "timeKey": "21:55",
+            "w": 280,
+            "c": 1044
+          },
+          {
+            "timeKey": "22:00",
+            "w": 489,
+            "c": 1786
+          },
+          {
+            "timeKey": "22:05",
+            "w": 73,
+            "c": 246
+          },
+          {
+            "timeKey": "22:10",
+            "w": 636,
+            "c": 2328
+          },
+          {
+            "timeKey": "22:15",
+            "w": 294,
+            "c": 1065
+          },
+          {
+            "timeKey": "22:20",
+            "w": -205,
+            "c": -713
+          },
+          {
+            "timeKey": "22:25",
+            "w": 170,
+            "c": 538
+          },
+          {
+            "timeKey": "22:30",
+            "w": -212,
+            "c": -690
+          },
+          {
+            "timeKey": "22:35",
+            "w": -27,
+            "c": -124
+          },
+          {
+            "timeKey": "22:40",
+            "w": 157,
+            "c": 436
+          },
+          {
+            "timeKey": "22:45",
+            "w": -298,
+            "c": -981
+          },
+          {
+            "timeKey": "22:50",
+            "w": 721,
+            "c": 2849
+          },
+          {
+            "timeKey": "22:55",
+            "w": 269,
+            "c": 939
+          },
+          {
+            "timeKey": "23:00",
+            "w": -223,
+            "c": -1012
+          }
+        ],
+        "id": 580
+      },
+      {
+        "date": "2025-08-30",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 2903,
+        "charCountStart": 11952,
+        "changes": [],
+        "id": 581
+      },
+      {
+        "date": "2025-08-31",
+        "filePath": "Articles/Proca in AdS3/relations of Jacobi polynomials and hypergeometric functions.md",
+        "wordCountStart": 1329,
+        "charCountStart": 6170,
+        "changes": [],
+        "id": 582
+      },
+      {
+        "date": "2025-08-31",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 2903,
+        "charCountStart": 11952,
+        "changes": [],
+        "id": 583
+      },
+      {
+        "date": "2025-08-31",
+        "filePath": "Articles/Proca in AdS3/asymptotic behavior of h and f symbols.md",
+        "wordCountStart": 12312,
+        "charCountStart": 46902,
+        "changes": [
+          {
+            "timeKey": "17:20",
+            "w": 376,
+            "c": 1327
+          },
+          {
+            "timeKey": "17:25",
+            "w": 318,
+            "c": 1261
+          },
+          {
+            "timeKey": "17:30",
+            "w": 919,
+            "c": 3360
+          },
+          {
+            "timeKey": "17:35",
+            "w": -131,
+            "c": -450
+          },
+          {
+            "timeKey": "17:40",
+            "w": -178,
+            "c": -684
+          },
+          {
+            "timeKey": "17:45",
+            "w": 174,
+            "c": 577
+          },
+          {
+            "timeKey": "17:50",
+            "w": -262,
+            "c": -892
+          },
+          {
+            "timeKey": "17:55",
+            "w": 781,
+            "c": 3050
+          },
+          {
+            "timeKey": "18:00",
+            "w": 195,
+            "c": 726
+          },
+          {
+            "timeKey": "18:05",
+            "w": 14,
+            "c": 95
+          },
+          {
+            "timeKey": "18:10",
+            "w": 364,
+            "c": 1326
+          },
+          {
+            "timeKey": "18:15",
+            "w": 201,
+            "c": 750
+          },
+          {
+            "timeKey": "18:20",
+            "w": 478,
+            "c": 1734
+          },
+          {
+            "timeKey": "18:25",
+            "w": 199,
+            "c": 717
+          },
+          {
+            "timeKey": "18:30",
+            "w": 415,
+            "c": 1411
+          },
+          {
+            "timeKey": "18:35",
+            "w": 108,
+            "c": 399
+          },
+          {
+            "timeKey": "18:50",
+            "w": 198,
+            "c": 715
+          },
+          {
+            "timeKey": "18:55",
+            "w": 204,
+            "c": 922
+          },
+          {
+            "timeKey": "19:00",
+            "w": 55,
+            "c": 206
+          },
+          {
+            "timeKey": "19:05",
+            "w": -47,
+            "c": -171
+          },
+          {
+            "timeKey": "19:10",
+            "w": -264,
+            "c": -904
+          },
+          {
+            "timeKey": "19:30",
+            "w": 1,
+            "c": 0
+          },
+          {
+            "timeKey": "19:35",
+            "w": 134,
+            "c": 460
+          },
+          {
+            "timeKey": "19:50",
+            "w": 3,
+            "c": 1
+          }
+        ],
+        "id": 584
       }
     ],
     "daysWithCompletedGoal": [
@@ -17267,7 +17843,10 @@
       "2025-08-23",
       "2025-08-25",
       "2025-08-26",
-      "2025-08-28"
+      "2025-08-28",
+      "2025-08-29",
+      "2025-08-30",
+      "2025-08-31"
     ]
   }
 }
