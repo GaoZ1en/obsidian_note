@@ -483,12 +483,8 @@ $$\begin{align}
 and
 
 $$\begin{align}
-{f^{(+)}_{r,-1+n,-m+n}}^{\mu} & =\sqrt{ \frac{1}{(-1+n)!(-m+n)!(\mu+2)_{-1+n}(\mu)_{-m+n}} } \sqrt{ \frac{\mu+1}{\pi \mu} }\left(\mathcal{L}_{\xi _{-1}}^{-1+n}\mathcal{L}_{\bar{\xi}_{-1}}^{-m+n} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{1}^{\mu}\right. \\
- & +2i(-m+n)\mathcal{L}_{\xi _{-1}}^{-1+n}\mathcal{L}_{\bar{\xi}_{-1}}^{-1-m+n} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{0}^{\mu} \\
- & \left.-(-m+n)(-1-m+n)\mathcal{L}_{\xi _{-1}}^{-1+n}\mathcal{L}_{\bar{\xi}_{-1}}^{-2-m+n} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}^{\mu}_{-1}\right) \\
-\mathcal{L}_{\xi _{-1}}^{-1+n}\mathcal{L}_{\bar{\xi}_{-1}}^{-m+n} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}& =(-i)^{-1-m+2n}e^{-i(\mu+1-m+2n)t}e^{i(-1+m)\phi} \frac{\Gamma(n)\Gamma(\mu+2-m+n)}{\Gamma(\mu+2)}r^{1-m}(1+r^{2})^{-(\mu+3-m)/2}P_{n-1}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
-\mathcal{L}_{\xi _{-1}}^{-1+n}\mathcal{L}_{\bar{\xi}_{-1}}^{-1-m+n} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}& =(-i)^{-2-m+2n}e^{-i(\mu-m+2n)t}e^{im\phi} \frac{\Gamma(n)\Gamma(\mu+1-m+n)}{\Gamma(\mu+2)}r^{-m}(1+r^{2})^{-(\mu+2-m)/2}P_{n-1}^{(\mu+1,-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
-\mathcal{L}_{\xi _{-1}}^{-1+n}\mathcal{L}_{\bar{\xi}_{-1}}^{-2-m+n} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}& =(-i)^{-3-m+2n}e^{-i(\mu-1-m+2n)t}e^{i(1+m)\phi} \frac{\Gamma(n)\Gamma(\mu+\bar{n}+2)}{\Gamma(\mu+2)}r^{\bar{n}-n+1}(1+r^{2})^{-(\mu+3+\bar{n}-n)/2}P_{n-1}^{(\mu+1,\bar{n}-n+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+{f^{(+)}_{r,-1+n,-m+n}}^{\mu} & =(-i)^{-1-m+2n}\sqrt{ \frac{1}{\Gamma(n)\Gamma(1-m+n)\Gamma(\mu+1+n)\Gamma(\mu-m+n)} } \frac{\Gamma(\mu+2)}{\mu \sqrt{ \pi }}\frac{}{\Gamma(\mu+2)}\left((\mu+1-m+n)(\mu-m+n) r^{3}(1+r^{2})^{-3/2}P_{n-1}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(t+\phi)}\bar{\xi}_{1}^{\mu}\right. \\
+ & \left.-2(-m+n)(\mu-m+n) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\bar{\xi}_{0}^{\mu}+(-m+n)(-1-m+n)r(1+r^{2})^{-1/2}P_{n-1}^{(\mu+1,-1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{i(t+\phi)}\bar{\xi}^{\mu}_{-1}\right)e^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-2}(1+r^{2})^{-(\mu+2-m)/2}
 \end{align}$$
 
 $$\tag{.}\begin{align}
