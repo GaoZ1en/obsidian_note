@@ -271,15 +271,6 @@ $$\begin{align}
 
 this relation is correct. and the $\displaystyle{\phi}$ component reads
 
-$$\tag{.}\begin{align}
-\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
-\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
-\end{align}$$
-
 $$\begin{align}
 {f^{(+)}_{r,-1+m+n,n}}^{\phi} & =(-i)^{-1+m+2n}\sqrt{ (\mu+m+n)(\mu+n) }\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+m+n)}{\Gamma(m+n)\Gamma(\mu+1+n)} } \frac{1}{2\mu \sqrt{ \pi }} \left( r^{-1}P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
  & -2r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
@@ -347,3 +338,60 @@ $$\begin{align}
 
 this relation is correct(?). the $\displaystyle{r}$ components reads
 
+$$\begin{align}
+{f^{(+)}_{r,m+n,n+1}}^{r} & =(-i)^{2+m+2n}\sqrt{ (1+n)(1+m+n) }\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+2+m+n)}{\Gamma(2+m+n)\Gamma(\mu+1+n)} } \frac{1}{2\mu \sqrt{ \pi }}\left( r^{-1}(1+r^{2})P_{n+1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-rP_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+m+2n)t}e^{im\phi} r^{m}(1+r^{2})^{-(\mu+2+m)/2} \\
+{f^{(+)}_{l,1+m+n,n}}^{r} & =(-i)^{2+m+2n}\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+2+m+n)}{\Gamma(2+m+n)\Gamma(\mu+1+n)}} \frac{1}{2\mu \sqrt{ \pi }}\frac{1}{\sqrt{ (\mu+1+n)(\mu+1+m+n) }}\left(  (\mu+2+m+n)(\mu+1+m+n)rP_{n}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-(1+m+n)(m+n)r^{-1}(1+r^{2})P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)e^{-i(\mu+2+m+2n)t}e^{im\phi}r^{m}(1+r^{2})^{-(\mu+2+m)/2} \\
+{h^{(+)}_{-,m\geqslant 1,n}}^{r} & =i \frac{(1+n)(1+m+n)}{\mu(\mu+2+m+2n)}\left( r^{-1}(1+r^{2})P_{n+1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-rP_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+m+2n)t}e^{im\phi} r^{m}(1+r^{2})^{-(\mu+2+m)/2} \\
+ & -i \frac{1}{\mu(\mu+2+m+2n)}\left(  (\mu+2+m+n)(\mu+1+m+n)rP_{n}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-(1+m+n)(m+n)r^{-1}(1+r^{2})P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)e^{-i(\mu+2+m+2n)t}e^{im\phi}r^{m}(1+r^{2})^{-(\mu+2+m)/2} \\
+ & =-ie^{-i(\mu+2+m+2n)t}e^{im\phi}r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+\implies
+\end{align}$$
+
+
+$$\tag{.}\begin{align}
+& - (1+n)(1+m+n)\left( \frac{1+r^{2}}{r^{2}}P_{n+1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right) \\
+ & + \left(  (\mu+2+m+n)(\mu+1+m+n)P_{n}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-(1+m+n)(m+n) \frac{1+r^{2}}{r^{2}}P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
+ & =\mu(\mu+2+m+2n)P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+\end{align}$$
+
+this relation is correct. and the $\displaystyle{\phi}$ component reads
+
+$$\begin{align}
+{f^{(+)}_{r,m+n,n+1}}^{\phi} & =(-i)^{1+m+2n}\sqrt{ (1+n)(1+m+n) }\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+2+m+n)}{\Gamma(2+m+n)\Gamma(\mu+1+n)} } \frac{1}{2\mu \sqrt{ \pi }}\left( \frac{1+r^{2}}{r^{2}}P_{n+1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-2P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+m+2n)t}e^{im\phi} r^{m}(1+r^{2})^{-(\mu+2+m)/2} \\
+{f^{(+)}_{l,1+m+n,n}}^{\phi} & =-(-i)^{1+m+2n}\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+2+m+n)}{\Gamma(2+m+n)\Gamma(\mu+1+n)}} \frac{1}{2\mu \sqrt{ \pi }}\frac{1}{\sqrt{ (\mu+1+n)(\mu+1+m+n) }}\left(  (\mu+2+m+n)(\mu+1+m+n)P_{n}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-2(1+m+n)(\mu+1+m+n) P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(1+m+n)(m+n) \frac{1+r^{2}}{r^{2}}P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)e^{-i(\mu+2+m+2n)t}e^{im\phi}r^{m}(1+r^{2})^{-(\mu+2+m)/2} \\
+{h^{(+)}_{-,m\geqslant 1,n}}^{\phi} & =-\frac{(1+n)(1+m+n)}{\mu(\mu+2+m+2n)}\left( \frac{1+r^{2}}{r^{2}}P_{n+1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu+2+m+2n)t}e^{im\phi} r^{m}(1+r^{2})^{-(\mu+2+m)/2} \\
+ & -\frac{1}{\mu(\mu+2+m+2n)} \left(  (\mu+2+m+n)(\mu+1+m+n)P_{n}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(1+m+n)(\mu+1+m+n) P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(1+m+n)(m+n) \frac{1+r^{2}}{r^{2}}P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)e^{-i(\mu+2+m+2n)t}e^{im\phi}r^{m}(1+r^{2})^{-(\mu+2+m)/2} \\
+ & =-e^{-i(\mu+2+m+2n)t}e^{im\phi}r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+ & (1+n)(1+m+n)\left( \frac{1+r^{2}}{r^{2}}P_{n+1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right) \\
+ & +(\mu+2+m+n)(\mu+1+m+n)P_{n}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(1+m+n)(\mu+1+m+n) P_{n}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(1+m+n)(m+n) \frac{1+r^{2}}{r^{2}}P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & =\mu(\mu+2+m+2n)P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
+\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
+\end{align}$$
+
+## $\displaystyle{{h^{(+)}_{+,m\leqslant -1,n}}^{\mu}}$
+
+here we will prove
+
+$$\begin{align}
+{h^{(+)}_{+,m\leqslant -1,n}}^{t} & =2i^{2n-m+1}\sqrt{ \pi } \frac{\sqrt{ (\mu+1+n)(\mu+1-m+n) }}{\mu+2-m+2n} \sqrt{ \frac{\Gamma(2-m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+2-m+n)} }{f^{(+)}_{r,n,1-m+n}} \\
+ & -2i^{2n-m+1}\sqrt{ \pi } \frac{\sqrt{ (1+n)(1-m+n) }}{\mu+2-m+2n} \sqrt{ \frac{\Gamma(2-m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+2-m+n)} }{f^{(+)}_{l,1+n,-m+n}}^{\mu} \\
+{h^{(+)}_{+,m\leqslant -1,n}}^{\mu} & =2i^{2n-m+1}\sqrt{ \pi } \frac{\sqrt{ (\mu+1+n)(\mu+1-m+n) }}{\mu+2-m+2n} \sqrt{ \frac{\Gamma(2-m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+2-m+n)} }{f^{(+)}_{r,n,1-m+n}} \\
+ & -2i^{2n-m+1}\sqrt{ \pi } \frac{\sqrt{ (1+n)(1-m+n) }}{\mu+2-m+2n} \sqrt{ \frac{\Gamma(2-m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+2-m+n)} }{f^{(+)}_{l,1+n,-m+n}}^{\mu} \\
+{h^{(+)}_{+,m\leqslant -1,n}}^{\mu} & =2i^{2n-m+1}\sqrt{ \pi } \frac{\sqrt{ (\mu+1+n)(\mu+1-m+n) }}{\mu+2-m+2n} \sqrt{ \frac{\Gamma(2-m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+2-m+n)} }{f^{(+)}_{r,n,1-m+n}} \\
+ & -2i^{2n-m+1}\sqrt{ \pi } \frac{\sqrt{ (1+n)(1-m+n) }}{\mu+2-m+2n} \sqrt{ \frac{\Gamma(2-m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+2-m+n)} }{f^{(+)}_{l,1+n,-m+n}}^{\mu}
+\end{align}$$
