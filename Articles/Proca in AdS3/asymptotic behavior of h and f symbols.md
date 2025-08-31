@@ -247,10 +247,17 @@ $$\begin{align}
  & -\frac{1}{\mu(\mu+m+2n)}\left( (\mu+1+m+n)(\mu+m+n) r^{3}(1+r^{2})^{-2}P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
  & \left.-2(m+n)(\mu+m+n)r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(m+n)(m+n-1)r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2} \\
  & =e^{-i(\mu+m+2n)t}e^{im\phi} \frac{1}{\mu+m+2n}\left[(\mu+m)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m-1}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
-\implies& (\mu+n)(\mu+m+n) \left( r(1+r^{2})^{-1}P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+r^{3}(1+r^{2})^{-2}P_{n-2}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)\\
- & -\left( (\mu+1+m+n)(\mu+m+n) r^{3}(1+r^{2})^{-2}P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
- & \left.-2(m+n)(\mu+m+n)r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(m+n)(m+n-1)r(1+r^{2})^{-1}P_{n-1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
- & =\mu(\mu+m)r(1+r^{2})^{-1}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4\mu(1+r^{2})^{-2}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\implies& (\mu+n)(\mu+m+n) \left( P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+\frac{r^{2}}{1+r^{2}}P_{n-2}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)\\
+ & -\left( (\mu+1+m+n)(\mu+m+n) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-2(m+n)(\mu+m+n)P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(m+n)(m+n-1)P_{n-1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
+ & =\mu(\mu+m)P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-\frac{4\mu}{r(1+r^{2})}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+& (\mu+n)(\mu+m+n) \left( P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+\frac{r^{2}}{1+r^{2}}P_{n-2}^{(\mu+1,1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)\\
+ & -\left( (\mu+1+m+n)(\mu+m+n) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-2(m+n)(\mu+m+n)P_{n-1}^{(\mu+1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(m+n)(m+n-1)P_{n-1}^{(\mu+1,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
+ & =\mu(\mu+m)P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-\frac{4\mu}{r(1+r^{2})}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right) 
 \end{align}$$
 
 this relation is correct(?). the $\displaystyle{r}$ component reads
@@ -508,17 +515,33 @@ $$\begin{align}
 
 this relation is correct. the $\displaystyle{r}$ component reads
 
-
-
-$$\tag{.}\begin{align}
-\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
-\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
+$$\begin{align}
+{f^{(+)}_{r,-1+n,-m+n}}^{r} & =(-i)^{-m+2n}\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu-m+n)}{\Gamma(-m+n)\Gamma(\mu+1+n)} } \frac{1}{\sqrt{ n(-m+n) }}\frac{1}{2\mu \sqrt{ \pi }}\left((\mu+1-m+n)(\mu-m+n) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-(-m+n)(-1-m+n)P_{n-1}^{(\mu+1,-1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-1}(1+r^{2})^{-(\mu-m)/2}\\
+{f^{(+)}_{l,n,-1-m+n}}^{r} & =(-i)^{-m+2n}\sqrt{ \frac{\Gamma(n+1)\Gamma(\mu-m+n)}{\Gamma(-m+n)\Gamma(\mu+1+n)}}\frac{\sqrt{ (\mu+n)(\mu-m+n) }}{2\mu \sqrt{ \pi }} \left( P_{n}^{(\mu+1,-1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.- \frac{r^{2}}{1+r^{2}}P_{n-2}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)e^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-1}(1+r^{2})^{-(\mu-m)/2} \\
+{h^{(+)}_{-,m\leqslant -1,n}}^{r} & =\frac{i}{\mu(\mu-m+2n)}\left((\mu+1-m+n)(\mu-m+n) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-(-m+n)(-1-m+n)P_{n-1}^{(\mu+1,-1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-1}(1+r^{2})^{-(\mu-m)/2} \\
+ & -i\frac{(\mu+n)(\mu-m+n)}{\mu(\mu-m+2n)}\left( P_{n}^{(\mu+1,-1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)- \frac{r^{2}}{1+r^{2}}P_{n-2}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)e^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-1}(1+r^{2})^{-(\mu-m)/2} \\
+ & =-ie^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-1}(1+r^{2})^{-(\mu-m)/2}P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+\implies& -\left((\mu+1-m+n)(\mu-m+n) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-(-m+n)(-1-m+n)P_{n-1}^{(\mu+1,-1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right) \\
+ & +(\mu+n)(\mu-m+n)\left( P_{n}^{(\mu+1,-1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)- \frac{r^{2}}{1+r^{2}}P_{n-2}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) \\
+ & =\mu(\mu-m+2n)P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-$$\tag{.}\begin{align}
- 
+this relation is correct. and the $\displaystyle{\phi}$ component reads
+
+$$\begin{align}
+{f^{(+)}_{r,-1+n,-m+n}}^{\phi} & =(-i)^{-1-m+2n}\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu-m+n)}{\Gamma(-m+n)\Gamma(\mu+1+n)} } \frac{1}{\sqrt{ n(-m+n) }}\frac{1}2{\mu \sqrt{ \pi }}\left((\mu+1-m+n)(\mu-m+n) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-2(-m+n)(\mu-m+n) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(-m+n)(-1-m+n)P_{n-1}^{(\mu+1,-1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-2}(1+r^{2})^{-(\mu-m)/2}\\
+{f^{(+)}_{l,n,-1-m+n}}^{\phi} & =-(-i)^{-1-m+2n}\sqrt{ \frac{\Gamma(n+1)\Gamma(\mu-m+n)}{\Gamma(-m+n)\Gamma(\mu+1+n)}}\frac{\sqrt{ (\mu+n)(\mu-m+n) }}{2\mu \sqrt{ \pi }} \left( P_{n}^{(\mu+1,-1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
+ & \left.-2\frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+ \frac{r^{2}}{1+r^{2}}P_{n-2}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)e^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-2}(1+r^{2})^{-(\mu-m)/2}  \\
+{h^{(+)}_{-,m\leqslant -1,n}}^{\phi} & =-\frac{1}{\mu(\mu-m+2n)}\left((\mu+1-m+n)(\mu-m+n) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(t+\phi)}\right. \\
+ & \left.-2(-m+n)(\mu-m+n) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(-m+n)(-1-m+n)P_{n-1}^{(\mu+1,-1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right)e^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-2}(1+r^{2})^{-(\mu-m)/2} \\
+ & - \frac{(\mu+n)(\mu-m+n)}{\mu(\mu-m+2n)}\left( P_{n}^{(\mu+1,-1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2\frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+ \frac{r^{2}}{1+r^{2}}P_{n-2}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right)e^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-2}(1+r^{2})^{-(\mu-m)/2} \\
+ & =-e^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-2}(1+r^{2})^{-(\mu-m)/2}P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+\implies& (\mu+1-m+n)(\mu-m+n) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2(-m+n)(\mu-m+n) \frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+(-m+n)(-1-m+n)P_{n-1}^{(\mu+1,-1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & +(\mu+n)(\mu-m+n)\left( P_{n}^{(\mu+1,-1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-2\frac{r^{2}}{1+r^{2}}P_{n-1}^{(\mu+1,-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)+ \frac{r^{2}}{1+r^{2}}P_{n-2}^{(\mu+1,1-m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \right) =\mu(\mu-m+2n)P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
+
+this relation is correct.
