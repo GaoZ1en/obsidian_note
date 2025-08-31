@@ -253,7 +253,7 @@ $$\begin{align}
  & =\mu(\mu+m)r(1+r^{2})^{-1}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4\mu(1+r^{2})^{-2}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-this relation is correct. the $\displaystyle{r}$ component reads
+this relation is correct(?). the $\displaystyle{r}$ component reads
 
 $$\begin{align}
 {f^{(+)}_{r,-1+m+n,n}}^{r} & =(-i)^{m+2n}\sqrt{ (\mu+m+n)(\mu+n) }\sqrt{ \frac{\Gamma(1+n)\Gamma(\mu+m+n)}{\Gamma(m+n)\Gamma(\mu+1+n)} } \frac{1}{2\mu \sqrt{ \pi }} \left(P_{n}^{(\mu+1,-1+m)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
@@ -345,16 +345,5 @@ $$\begin{align}
  & = \mu\left[((\mu-m)r^{2}-2(m+1))(1+r^{2})^{-1}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{2}(1+r^{2})^{-2}P_{n}^{(\mu,m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]
 \end{align}$$
 
+this relation is correct(?). the $\displaystyle{r}$ components reads
 
-$$\tag{.}\begin{align}
- 
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
-\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
-\end{align}$$
