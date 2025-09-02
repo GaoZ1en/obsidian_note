@@ -22,7 +22,7 @@ $$\begin{align}
 we expand the field operator as
 
 $$\tag{1.1}\begin{align}
-A^{\mu} & =\sum _{n=0}^{\infty}\sum _{m=-\infty}^{\infty}\left({h^{(+)}_{+,m,n}}^{\mu}a_{+,m,n}+{h^{(+)}_{-,m,n}}^{\mu}a_{-,m,n}+{h^{(-)}_{+,m,n}}^{\mu}a^{\dagger}_{+,m,n}+{h^{(-)}_{-,m,n}}a^{^{\dagger}}_{-,m,n}\right)
+A^{\mu} & =\sum _{n=0}^{\infty}\sum _{m=-\infty}^{\infty}\left({h^{(+)}_{+,m,n}}^{\mu}a_{+,m,n}+{h^{(+)}_{-,m,n}}^{\mu}a_{-,m,n}+{h^{(-)}_{+,m,n}}^{\mu}a^{\dagger}_{+,m,n}+{h^{(-)}_{-,m,n}}^{\mu}a^{\dagger}_{-,m,n}\right)
 \end{align}$$
 
 the symplectic form is defined as
@@ -35,11 +35,27 @@ $$\begin{align}
 then we will express the symplectic form in the basis $\displaystyle{a_{+,m,n},a_{-,m,n},a^{\dagger}_{+,m,n}}$ and $\displaystyle{a^{\dagger}_{-,m,n}}$. we first present some results
 
 $$\begin{align}
-\Omega[h^{(+)}_{+,m_{1}\geqslant 1,n_{1}},h^{(-)}_{-,m_{2}\geqslant 1,n_{2}}]& =-2\pi i \frac{\mu ^{2}+(2n_{2}+m_{1}+\mu)^{2}-m_{1}^{2}}{(2n_{1}+m_{1}+\mu)^{2}} \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}+m_{1})}{\Gamma(n_{1}+m_{1}+\mu)n_{1}!}\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}} \\
-\Omega[h^{(+)}_{+,m_{1}\leqslant-1,n_{1}},h^{(-)}_{+,m_{2}\leqslant-1,n_{2}}]& =-2\pi i \frac{\mu ^{2}+(2n_{2}-m_{1} 1+\mu+2)^{2}-m_{1}^{2}}{(2n_{1}-m_{2}+\mu+2)^{2}} \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}-m_{1}+2)}{\Gamma(n_{1}-m_{1}+\mu+2)n_{1}!}\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}} \\
-\Omega[h^{(+)}_{-,m_{1}\geqslant 1,n_{1}},h^{(-)}_{-,m_{2}\geqslant 1,n_{2}}]& =-2\pi i \frac{\mu ^{2}+(2n_{2}+m_{1}+\mu+2)^{2}-m_{1}^{2}}{(2n_{1}+m_{1}+\mu+2)^{2}} \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}+m_{1}+2)}{\Gamma(n_{1}+m_{1}+\mu+2)n_{1}!}\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}} \\
-\Omega[h^{(+)}_{-,m_{1}\leqslant-1,n_{1}},h^{(-)}_{-,m_{2}\leqslant-1,n_{2}}]& =-2\pi i \frac{\mu ^{2}+(2n_{2}-m_{1}+\mu)^{2}-m_{1}^{2}}{(2n_{1}-m_{1}+\mu)^{2}} \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}-m_{1})}{\Gamma(n_{1}-m_{1}+\mu)n_{1}!}\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}} \\
+\Omega[h^{(+)}_{+,m_{1}\geqslant 1,n_{1}},h^{(-)}_{+,m_{2}\geqslant 1,n_{2}}]& =-2\pi i \frac{\mu ^{2}+(2n_{1}+m_{1}+\mu)^{2}-m_{1}^{2}}{(2n_{1}+m_{1}+\mu)^{2}} \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}+m_{1})}{\Gamma(n_{1}+m_{1}+\mu)n_{1}!}\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}} \\
+\Omega[h^{(+)}_{+,m_{1}=0,n_{1}},h^{(-)}_{+,m_{2}=0,n_{2}}] & =-2\pi i\frac{\mu ^{2}+(2n_{1}+\mu+2)^{2}}{(2n_{1}+\mu+2)^{2}} \frac{n_{1}+1}{n_{1}+\mu+1}\delta _{n_{1}n_{2}} \\
+\Omega[h^{(+)}_{+,m_{1}\leqslant-1,n_{1}},h^{(-)}_{+,m_{2}\leqslant-1,n_{2}}]& =-2\pi i \frac{\mu ^{2}+(2n_{1}-m_{1}+\mu+2)^{2}-m_{1}^{2}}{(2n_{1}-m_{2}+\mu+2)^{2}} \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}-m_{1}+2)}{\Gamma(n_{1}-m_{1}+\mu+2)n_{1}!}\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}} \\
+\Omega[h^{(+)}_{-,m_{1}=0,n_{1}},h^{(-)}_{-,m_{2}=0,n_{2}}] & =-2\pi i\frac{\mu ^{2}+(2n_{1}+\mu+2)^{2}}{(2n_{1}+\mu+2)^{2}} \frac{n_{1}+1}{n_{1}+\mu+1}\delta _{n_{1}n_{2}} \\
+\Omega[h^{(+)}_{-,m_{1}\geqslant 1,n_{1}},h^{(-)}_{-,m_{2}\geqslant 1,n_{2}}]& =-2\pi i \frac{\mu ^{2}+(2n_{1}+m_{1}+\mu+2)^{2}-m_{1}^{2}}{(2n_{1}+m_{1}+\mu+2)^{2}} \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}+m_{1}+2)}{\Gamma(n_{1}+m_{1}+\mu+2)n_{1}!}\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}} \\
+\Omega[h^{(+)}_{-,m_{1}\leqslant-1,n_{1}},h^{(-)}_{-,m_{2}\leqslant-1,n_{2}}]& =-2\pi i \frac{\mu ^{2}+(2n_{1}-m_{1}+\mu)^{2}-m_{1}^{2}}{(2n_{1}-m_{1}+\mu)^{2}} \frac{\Gamma(n_{1}+\mu+1)\Gamma(n_{1}-m_{1})}{\Gamma(n_{1}-m_{1}+\mu)n_{1}!}\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}} \\
 \Omega[h^{(+)}_{+,m_{1}\geqslant 1,n_{1}},h^{(-)}_{-,m_{2}\geqslant 1,n_{2}}]& =\frac{8\pi i\Gamma(n_{1}+\mu+1)\Gamma(n_{1}+m_{1}+1)}{(\mu+m_{1}+2n_{1})^{2}\Gamma(n_{1}+\mu+m_{1})(n_{1}-1)!}\delta _{m_{1}m_{2}}\delta _{n_{1}-1,n_{2}} \\
 \Omega[h^{(+)}_{+,m_{1}=0,n_{1}},h^{(-)}_{-,m_{2}=0,n_{2}}] & =\frac{8\pi i(n_{1}+1)^{2}}{(2n_{1}+\mu+2)^{2}}\delta _{n_{1},n_{2}} \\
 \Omega[h^{(+)}_{+,m_{1}\leqslant -1,n_{1}},h^{(-)}_{-,m_{2}\leqslant -1,n_{2}}]& =\frac{8\pi i\Gamma(n_{1}+\mu+2)\Gamma(n_{1}-m_{1}+2)}{(\mu-m_{1}+2n_{1}+2)^{2}\Gamma(n_{1}+1+\mu-m_{1})n_{1}!}\delta _{m_{1},m_{2}}\delta _{n_{1}+1,n_{2}}
+\end{align}$$
+
+and then we will calculate $\displaystyle{\Omega[A_{1},A_{2}^{\dagger}]}$
+
+$$\begin{align}
+\Omega[A_{1},A_{2}^{\dagger}] & =\sum ^{\infty}_{n_{1},n_{2}=0}\sum ^{\infty}_{m_{1},m_{2}=-\infty}\Omega[h^{(+)}_{+,m_{1},n_{1}}a_{+,m_{1},n_{1}}+h^{(+)}_{-,m_{1},n_{1}}a_{-,m_{1},n_{1}}+h^{(-)}_{+,m_{1},n_{1}}a^{\dagger}_{+,m_{1},n_{1}}+h^{(-)}_{-,m_{1},n_{1}}a^{^{\dagger}}_{-,m_{1},n_{1}},h^{(-)}_{+,m_{2},n_{2}}a^{\dagger}_{+,m_{2},n_{2}}+h^{(-)}_{-,m_{2},n_{2}}a^{\dagger}_{-,m_{2},n_{2}}+h^{(+)}_{+,m_{2},n_{2}}a_{+,m_{2},n_{2}}+h^{(+)}_{-,m_{2},n_{2}}a_{-,m_{2},n_{2}}] \\
+ & =\sum ^{\infty}_{n_{1},n_{2}=0}\sum ^{\infty}_{m_{1},m_{2}=-\infty} \left[\Omega[h^{(+)}_{+,m_{1},n_{1}},h^{(-)}_{+,m_{2},n_{2}}]\delta a_{+,m_{1},n_{1}}\wedge \delta a^{\dagger}_{+,m_{2},n_{2}}+\Omega[h^{(+)}_{+,m_{1},n_{1}},h^{(-)}_{-,m_{2},n_{2}}]\delta a_{+,m_{1},n_{1}}\wedge \delta a^{\dagger}_{-,m_{2},n_{2}}\right. \\
+ & +\Omega[h^{(+)}_{-,m_{1},n_{1}},h^{(-)}_{+,m_{2},n_{2}}]\delta a_{-,m_{1},n_{1}}\wedge \delta a^{\dagger}_{+,m_{2},n_{2}}+\Omega[h^{(+)}_{-,m_{1},n_{1}},h^{(-)}_{-,m_{2},n_{2}}]\delta a_{-,m_{1},n_{1}}\wedge \delta a^{\dagger}_{-,m_{2},n_{2}} \\
+ & +\Omega[h^{(-)}_{+,m_{1},n_{1}},h^{(+)}_{+,m_{2},n_{2}}]\delta a^{\dagger}_{+,m_{1},n_{1}}\wedge \delta a_{+,m_{2},n_{2}}+\Omega[h^{(-)}_{+,m_{1},n_{1}},h^{(+)}_{-,m_{2},n_{2}}]\delta a^{\dagger}_{+,m_{1},n_{1}}\wedge \delta a_{-,m_{2},n_{2}} \\
+ & \left.+\Omega[h^{(-)}_{-,m_{1},n_{1}},h^{(+)}_{+,m_{2},n_{2}}]\delta a^{\dagger}_{-,m_{1},n_{1}}\wedge \delta a_{+,m_{2},n_{2}}+\Omega[h^{(-)}_{-,m_{1},n_{1}},h^{(+)}_{-,m_{2},n_{2}}]\delta a^{\dagger}_{-,m_{1},n_{1}}\wedge \delta a_{-,m_{2},n_{2}}\right]
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\sum ^{\infty}_{n_{1},n_{2}=0}\sum ^{\infty}_{m_{1},m_{2}=-\infty} \Omega[h^{(+)}_{+,m_{1},n_{1}},h^{(-)}_{+,m_{2},n_{2}}]\delta a_{+,m_{1},n_{1}}\wedge \delta a^{\dagger}_{+,m_{2},n_{2}} & =
 \end{align}$$
