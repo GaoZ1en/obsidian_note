@@ -45,6 +45,11 @@ $$\begin{align}
 by general theory of Green function we denote $\displaystyle{R_{<}(r)=r^{|m|}(1+r^{2})^{-1-|m|/2+\mu/2}{}_{2}F_{1}\left(\frac{|m|-\mu}{2},1+\frac{|m|-\mu}{2};1-\mu; \frac{1}{1+r^{2}}\right),R_{>}(r)=r^{-|m|}(1+r^{2})^{-1+|m|/2-\mu/2}{}_{2}F_{1}\left( -\frac{|m|-\mu}{2},1-\frac{|m|-\mu}{2};1+\mu; \frac{1}{1+r^{2}} \right)}$, the Wronskian $\displaystyle{W[R_{<},R_{>}]}$ is
 
 $$\begin{align}
-W[R_{<},R_{>}] & =R_{<}R_{>}'-R_{<}'R_{>} \\
- & =r^{|m|}
+W[R_{<},R_{>}] & =-\frac{2|m|}{r(1+r^{2})^{2}}
+\end{align}$$
+
+then the final result is
+
+$$\begin{align}
+G(r,\phi;r',\phi') & =-\frac{1}{2\pi}\sum ^{\infty}_{m=-\infty}\frac{(1+r'^{2})^{3/2}}{2|m|}R_{<}(r_{<})R_{>}(r_{>})e^{im(\phi-\phi')}
 \end{align}$$

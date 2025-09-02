@@ -17,6 +17,16 @@ $$\tag{.}\begin{align}
 \Omega[A_{n_{1},m_{1}\leqslant 1,+},A^{*}_{n_{2},m_{2}\leqslant 1,-}]& =- \frac{8\pi i\Gamma(n_{1}+\mu+2)\Gamma(n_{1}-m_{1}+2)}{(\mu-m_{1}+2n_{1}+2)^{2}\Gamma(n_{1}+1+\mu-m_{1})n_{1}!}\delta _{m_{1},m_{2}}\delta _{n_{1}+1,n_{2}}
 \end{align}$$
 
+$$\tag{.}\begin{align}
+\frac{\Omega[A_{n_{1},m_{1}=0,+},A^{*}_{n_{2},m_{2}=0,+}]}{2\pi \delta _{m_{1}m_{2}}} & =\int \mathrm{d}r (-\frac{\mu ^{2}e^{-i(\mu+2n+2)t}}{\mu+2+2n}r^{2}(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right))\tilde{A}^{r*}_{2} \\
+ & +\frac{1}{i\omega_{1}}\int \mathrm{d}r\left( im_{1}\partial _{r}(r\tilde{A}^{r}_{1})+\left( \frac{\omega_{1}^{2}r^{2}}{1+r^{2}}-m_{1}^{2}\right)r\tilde{A}_{1}^{\phi} \right)\tilde{A}_{2}^{\phi*} \\ 
+ & +\frac{1}{i\omega_{2}}\int \mathrm{d}r\left( \left( \mu ^{2}+\frac{m_{2}^{2}}{r^{2}} \right)\frac{r\tilde{A}^{r*}_{2}}{1+r^{2}}-\frac{im_{2}}{r}\partial _{r}(r^{2}\tilde{A}^{\phi*}_{2}) \right)\tilde{A}_{1}^{r} \\
+ & +\frac{1}{i\omega_{2}}\int \mathrm{d}r\left( -im_{2}\partial _{r}(r\tilde{A}^{r*}_{2})+\left( \frac{\omega_{2}^{2}r^{2}}{1+r^{2}} -m_{2}^{2}\right)rA^{\phi} \right)\tilde{A}_{1}^{\phi}
+\end{align}$$
+
+
+
+
 here we use
 
 $$\tag{.}\begin{align}
