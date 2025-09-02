@@ -17877,6 +17877,208 @@
         "charCountStart": 10186,
         "changes": [],
         "id": 585
+      },
+      {
+        "date": "2025-09-01",
+        "filePath": "Articles/Proca in AdS3/linear combination of h symbols.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 587
+      },
+      {
+        "date": "2025-09-01",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6056,
+        "charCountStart": 25800,
+        "changes": [],
+        "id": 588
+      },
+      {
+        "date": "2025-09-01",
+        "filePath": "Articles/Proca in AdS3/integral kernel.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "16:50",
+            "w": 23,
+            "c": 82
+          },
+          {
+            "timeKey": "21:20",
+            "w": 58,
+            "c": 294
+          },
+          {
+            "timeKey": "21:25",
+            "w": 104,
+            "c": 504
+          },
+          {
+            "timeKey": "21:30",
+            "w": 92,
+            "c": 402
+          },
+          {
+            "timeKey": "21:35",
+            "w": 155,
+            "c": 652
+          },
+          {
+            "timeKey": "21:40",
+            "w": -209,
+            "c": -871
+          },
+          {
+            "timeKey": "21:45",
+            "w": 101,
+            "c": 426
+          },
+          {
+            "timeKey": "21:50",
+            "w": 73,
+            "c": 322
+          },
+          {
+            "timeKey": "21:55",
+            "w": 16,
+            "c": 72
+          },
+          {
+            "timeKey": "22:00",
+            "w": -122,
+            "c": -527
+          },
+          {
+            "timeKey": "22:05",
+            "w": 31,
+            "c": 112
+          },
+          {
+            "timeKey": "22:10",
+            "w": -90,
+            "c": -405
+          },
+          {
+            "timeKey": "22:15",
+            "w": 321,
+            "c": 2178
+          },
+          {
+            "timeKey": "22:20",
+            "w": 25,
+            "c": 356
+          },
+          {
+            "timeKey": "22:30",
+            "w": -302,
+            "c": -2321
+          },
+          {
+            "timeKey": "22:35",
+            "w": 54,
+            "c": 258
+          },
+          {
+            "timeKey": "22:45",
+            "w": 122,
+            "c": 557
+          },
+          {
+            "timeKey": "22:50",
+            "w": 39,
+            "c": 129
+          },
+          {
+            "timeKey": "22:55",
+            "w": 53,
+            "c": 215
+          },
+          {
+            "timeKey": "23:00",
+            "w": 17,
+            "c": 24
+          },
+          {
+            "timeKey": "23:05",
+            "w": 1,
+            "c": 5
+          }
+        ],
+        "id": 589
+      },
+      {
+        "date": "2025-09-01",
+        "filePath": "Articles/Proca in AdS3/relations of Jacobi polynomials and hypergeometric functions.md",
+        "wordCountStart": 1329,
+        "charCountStart": 6170,
+        "changes": [],
+        "id": 590
+      },
+      {
+        "date": "2025-09-01",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1448,
+        "changes": [],
+        "id": 591
+      },
+      {
+        "date": "2025-09-01",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [],
+        "id": 592
+      },
+      {
+        "date": "2025-09-02",
+        "filePath": "Note/useful results/ADM formalism.md",
+        "wordCountStart": 1049,
+        "charCountStart": 5029,
+        "changes": [],
+        "id": 593
+      },
+      {
+        "date": "2025-09-02",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6056,
+        "charCountStart": 25800,
+        "changes": [],
+        "id": 594
+      },
+      {
+        "date": "2025-09-02",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [],
+        "id": 595
+      },
+      {
+        "date": "2025-09-02",
+        "filePath": "Articles/Proca in AdS3/integral kernel.md",
+        "wordCountStart": 562,
+        "charCountStart": 2464,
+        "changes": [
+          {
+            "timeKey": "16:55",
+            "w": 50,
+            "c": 160
+          },
+          {
+            "timeKey": "17:05",
+            "w": -21,
+            "c": -71
+          },
+          {
+            "timeKey": "17:15",
+            "w": 0,
+            "c": -1
+          }
+        ],
+        "id": 596
       }
     ],
     "daysWithCompletedGoal": [
@@ -17929,7 +18131,8 @@
       "2025-08-28",
       "2025-08-29",
       "2025-08-30",
-      "2025-08-31"
+      "2025-08-31",
+      "2025-09-01"
     ]
   }
 }
