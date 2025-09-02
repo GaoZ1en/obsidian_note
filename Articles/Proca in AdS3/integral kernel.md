@@ -35,20 +35,15 @@ G(r,\phi;r',\phi') & =\frac{1}{2\pi}\sum ^{\infty}_{m=-\infty}e^{im(\phi-\phi')}
 then $\displaystyle{G_{m}(r,r')}$ satisfies
 
 $$\begin{align}
-(1+r^{2})\partial _{r}^{2}G_{m}(r,r')+\frac{1+5r^{2}}{r}\partial _{r}G_{m}(r,r')+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)G_{km}(r,r') & =\frac{\sqrt{ 1+r^{2} }}{r}\delta(r-r')
+(1+r^{2})\partial _{r}^{2}G_{m}(r,r')+\frac{1+5r^{2}}{r}\partial _{r}G_{m}(r,r')+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)G_{km}(r,r') & =\frac{\sqrt{ 1+r^{2} }}{r}\delta(r-r') \\
+\implies  \partial _{\rho}^{2}G_{m}(\rho,\rho')+\frac{\cos ^{2}\rho+3\sin ^{2}\rho}{\sin \rho \cos \rho} \partial _{\rho}G_{m}(\rho,\rho')+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}-\frac{m^{2}}{\sin^{2}\rho} \right)G_{m}(\rho,\rho') & =0 \\
+\implies 4z(1-z)\partial _{z}^{2}G_{m}(z,z')-4\partial _{z}G_{m}(z,z')+\left( \frac{4-\mu ^{2}}{z}-\frac{m^{2}}{1-z} \right)G_{m}(z,z') & =0 \\
+\implies G_{m}(r,r') & =C_{1}z^{1-\mu/2}(1-z)^{m/2}{}_{2}F_{1}\left( \frac{m-\mu}{2}, \frac{2+m-\mu}{2};1-\mu;z \right) \\
+ & +C_{2}z^{1+\mu/2}(1-z)^{m/2}{}_{2}F_{1}\left(\frac{m+\mu}{2},\frac{2+m+\mu}{2};1+\mu;z\right) \\
+ & =C_{1}(\cos ^{2}\rho)^{1-\mu/2}(\sin ^{2}\rho)^{m/2}{}_{2}F_{1}\left( \frac{m-\mu}{2},\frac{2+m-\mu}{2};1-\mu;\cos ^{2}\rho \right) \\
+ & +C_{2}(\cos ^{2}\rho)^{1+\mu/2}(\sin ^{2}\rho)^{m/2}{}_{2}F_{1}\left( \frac{m+\mu}{2},\frac{2+m+\mu}{2};1+\mu;\cos ^{2}\rho \right) \\
+ & =C_{1}r^{m}(\cos ^{2}\rho)^{1+m/2-\mu/2}
 \end{align}$$
 
 when $\displaystyle{r<r'}$
 
-$$\begin{align}
-(1+r^{2})\partial _{r}^{2}G_{m}(r,r')+\frac{1+5r^{2}}{r}\partial _{r}G_{m}(r,r')+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)G_{m}(r,r') & =0 \\
-\implies \cos ^{2}\rho \partial _{\rho}^{2}G_{m}(\rho,\rho')+\frac{\cos ^{2}\rho+3\sin ^{2}\rho}{\sin \rho \cos \rho}\cos ^{2}\rho \partial _{\rho}G_{m}(\rho,\rho')+\left( 4-\mu ^{2}-\frac{m^{2}}{\tan ^{2}\rho} \right)G_{m}(\rho,\rho') & =0 \\
-\implies
-\end{align}$$
-
-$$\begin{align}
-z & =\cos ^{2}\rho \\
-\partial _{\rho} & =\frac{\partial z}{\partial \rho}\partial _{z} \\
- & =-2\sqrt{ z(1-z) }\partial _{z} \\
-\partial _{\rho}^{2} & =4z(1-z)\partial _{z}^{2}+2(1-2z)\partial _{z}
-\end{align}$$
