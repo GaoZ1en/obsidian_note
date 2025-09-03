@@ -297,7 +297,7 @@ $$\tag{.}
 
 $$\tag{.}
 \begin{align}
-\frac{i\omega_{1}\Omega(A^{\mu}_{1},A_{2}^{\nu})}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =im_{1}\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}(rA_{2}^{*\phi})-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}+\partial _{r}(r\tilde{A}^{\phi}_{1})\tilde{A}^{*r}_{2}-\partial _{r}\tilde{A}^{*r}_{2}(r\tilde{A}^{\phi}_{1})\right) \\
+\frac{i\omega_{1}\Omega[A_{1},A_{2}^{*}]}{2\pi \delta _{m_{1}m_{2}}\delta _{\omega_{1}\omega_{2}}} & =im_{1}\int \mathrm{d}r\left( \partial _{r}\tilde{A}^{r}_{1}(rA_{2}^{*\phi})-\partial _{r}(r\tilde{A}^{*\phi}_{2})\tilde{A}^{r}_{1}+\partial _{r}(r\tilde{A}^{\phi}_{1})\tilde{A}^{*r}_{2}-\partial _{r}\tilde{A}^{*r}_{2}(r\tilde{A}^{\phi}_{1})\right) \\
  & +2\int \mathrm{d}r r\left[ \left( \mu ^{2}+\frac{m_{1}^{2}}{r^{2}} \right)\frac{\tilde{A}^{r}_{1}\tilde{A}^{*r}_{2}}{1+r^{2}} +\left( \frac{\omega ^{2}_{1}}{1+r^{2}}-\frac{m_{1}^{2}}{r^{2}} \right)(r\tilde{A}^{\phi}_{1})(r\tilde{A}^{*\phi}_{2})\right]
 \end{align}$$
 

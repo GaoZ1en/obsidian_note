@@ -88,6 +88,35 @@ $$\begin{align}
  & +\left.\sum ^{\infty}_{m=1}\frac{\mu ^{2}+(\mu+2+m+2n)^{2}-m^{2}}{(\mu+2+m+2n)^{2}}\frac{\Gamma(\mu+1+n)\Gamma(2+m+n)}{\Gamma(\mu+2+m+n)\Gamma(1+n)}\delta a^{\dagger}_{+,-m,n}\wedge \delta a_{+,-m,n}\right)
 \end{align}$$
 
-$$\tag{.}\begin{align}
-
+$$\begin{align}
+\sum ^{\infty}_{m_{1},m_{2}=-\infty}\sum ^{\infty}_{n_{1},n_{2}=0}\Omega[h^{(-)}_{+,m_{1},n_{1}},h^{(+)}_{-,m_{2},n_{2}}]\delta a^{\dagger}_{+,m_{1},n_{1}}\wedge \delta a_{-,m_{2},n_{2}} & =\sum ^{\infty}_{m_{1},m_{2}=-\infty}\sum ^{\infty}_{n_{1},n_{2}=0}(\Omega[h^{(+)}_{+,m_{1},n_{1}},h^{(-)}_{-,m_{2},n_{2}}])^{*}\delta a^{\dagger}_{+,m_{1},n_{1}}\wedge \delta a_{-,m_{2},n_{2}} \\
+ & =-8\pi i\sum ^{\infty}_{n=0}\left(\frac{(n+1)^{2}}{(\mu+2+2n)^{2}}\delta a^{\dagger}_{+,m=0,n}\wedge \delta a_{-,m=0,n}\right. \\
+ & +\sum ^{\infty}_{m=1}\frac{\Gamma(\mu+1+n)\Gamma(1+m+n)}{(\mu+m+2n)^{2}\Gamma(\mu+m+n)\Gamma(n)}\delta a^{\dagger}_{+,m,n}\wedge \delta a_{-,m,n-1} \\
+ & +\sum ^{\infty }_{m=1}\frac{\Gamma(\mu+1+n)\Gamma(1+m+n)}{(\mu+m+2n)^{2}\Gamma(\mu+m+n)\Gamma(n)}\delta a^{\dagger}_{+,-m,n}\wedge \delta a_{-,-m,n-1}
 \end{align}$$
+
+$$\begin{align}
+\sum ^{\infty}_{m_{1},m_{2}=-\infty}\sum ^{\infty}_{n_{1},n_{2}=0}\Omega[h^{(-)}_{-,m_{1},n_{1}},h^{(+)}_{+,m_{2},n_{2}}]\delta a^{\dagger}_{-,m_{1},n_{1}}\wedge \delta a_{+,m_{2},n_{2}} & =\sum ^{\infty}_{m_{1},m_{2}=-\infty}\sum ^{\infty}_{n_{1},n_{2}=0}\Omega[h^{(+)}_{+,m_{1},n_{1}},h^{(-)}_{-,m_{2},n_{2}}]\delta a_{+,m_{1},n_{1}}\wedge \delta a^{\dagger}_{-,m_{2},n_{2}} \\
+ & =-8\pi i\sum ^{\infty}_{n=0}\left(\frac{(n+1)^{2}}{(\mu+2+2n)^{2}}\delta a^{\dagger}_{-,m=0,n}\wedge \delta a_{+,m=0,n}\right. \\
+ & +\sum ^{\infty}_{m=1}\frac{\Gamma (\mu+1+n)\Gamma(1+m+n)}{(\mu+m+2n)^{2}\Gamma(\mu+m+n)\Gamma(n)}\delta a^{\dagger}_{-,m,n-1}\wedge \delta a_{+,m,n} \\
+ & +\left. \sum ^{\infty}_{m=1}\frac{\Gamma(\mu+1+n)\Gamma(1+m+n)}{(\mu+m+2n)^{2}\Gamma(\mu+m+n)\Gamma(n)}\delta a^{\dagger}_{-,-m,n-1}\wedge \delta a_{+,-m,n} \right)
+\end{align}$$
+
+$$\begin{align}
+\sum ^{\infty}_{m_{1},m_{2}=-\infty}\sum ^{\infty}_{n_{1},n_{2}=0}\Omega[h^{(-)}_{-,m_{1},n_{1}},h^{(+)}_{-,m_{2},n_{2}}]\delta a^{\dagger}_{-,m_{1},n_{1}}\wedge \delta a_{-,m_{2},n_{2}} & =\sum ^{\infty}_{m_{1},m_{2}=-\infty}\sum ^{\infty}_{n_{1},n_{2}=0}\Omega[h^{(+)}_{-,m_{1},n_{1}},h^{(-)}_{-,m_{2},n_{2}}]\delta a_{-,m_{1},n_{1}}\wedge \delta a^{\dagger}_{-,m_{2},n_{2}} \\
+ & =2\pi i\sum ^{\infty}_{n=0}\left(\frac{\mu ^{2}+(\mu+2+2n)^{2}}{(\mu+2+2n)^{2}} \frac{1+n}{\mu+1+n}\delta a^{\dagger}_{-,m=0,n}\wedge \delta a_{-,m=0,n}\right. \\
+ & +\sum ^{\infty}_{m=1}\frac{\mu ^{2}+(\mu+2+m+2n)^{2}-m^{2}}{(\mu+2+m+2n)^{2}} \frac{\Gamma(\mu+1+n)\Gamma(2+m+n)}{\Gamma(\mu+2+m+n)\Gamma(1+n)}\delta a^{\dagger}_{-,m,n}\wedge \delta a_{-,m,n} \\
+ & +\left. \sum ^{\infty}_{m=1} \frac{\mu ^{2}+(\mu+m+2n)^{2}-m^{2}}{(\mu+m+2n)^{2}} \frac{\Gamma(\mu+1+n)\Gamma(m+n)}{\Gamma(\mu+m+n)\Gamma(1+n)}\delta a^{\dagger}_{-,-m,n}\wedge \delta a_{-,-m,n} \right)
+\end{align}$$
+
+adding them up, we have
+
+$$\begin{align}
+\Omega[A_{1},A_{2}^{\dagger}] & =4\pi i\sum ^{\infty}_{n=0}\left(\frac{\mu ^{2}+(\mu+2+2n)^{2}}{(\mu+2+2n)^{2}} \frac{1+n}{\mu+1+n}(\delta a^{\dagger}_{+,m=0,n}\wedge \delta a_{+,m=0,n}+\delta a^{\dagger}_{-,m=0,n}\wedge \delta a_{-,m=0,n})\right. \\
+ & +\sum ^{\infty}_{m=1} \frac{\mu ^{2}+(\mu+m+2n)^{2}-m^{2}}{(\mu+m+2n)^{2}} \frac{\Gamma(\mu+1+n)\Gamma(m+n)}{\Gamma(\mu+m+n)\Gamma(1+n)}(\delta a^{\dagger}_{+,m,n}\wedge \delta a_{+,m,n}+\delta a^{\dagger}_{-,-m,n}\wedge \delta a_{-,-m,n}) \\
+ & +\left.\sum ^{\infty}_{m=1}\frac{\mu ^{2}+(\mu+2+m+2n)^{2}-m^{2}}{(\mu+2+m+2n)^{2}}\frac{\Gamma(\mu+1+n)\Gamma(2+m+n)}{\Gamma(\mu+2+m+n)\Gamma(1+n)}(\delta a^{\dagger}_{+,-m,n}\wedge \delta a_{+,-m,n}+\delta a^{\dagger}_{-,m,n}\wedge \delta a_{-,m,n})\right) \\
+ & -16\pi i\sum ^{\infty}_{n=0}\left(\frac{(n+1)^{2}}{(\mu+2+2n)^{2}}(\delta a^{\dagger}_{+,m=0,n}\wedge \delta a_{-,m=0,n}+\delta a^{\dagger}_{-,m=0,n}\wedge \delta a_{+,m=0,n})\right. \\
+ & +\left. \sum ^{\infty}_{m=1}\frac{\Gamma(\mu+1+n)\Gamma(1+m+n)}{(\mu+m+2n)^{2}\Gamma(\mu+m+n)\Gamma(n)}(\delta a^{\dagger}_{+,m,n}\wedge \delta a_{-,m,n-1}+\delta a^{\dagger}_{-,m,n-1}\wedge \delta a_{+,m,n}+\delta a^{\dagger}_{+,-m,n}\wedge \delta a_{-,-m,n-1}+\delta a^{\dagger}_{-,-m,n-1}\wedge \delta a_{+,-m,n}) \right)
+\end{align}$$
+
+seems that I misunderstand the 
