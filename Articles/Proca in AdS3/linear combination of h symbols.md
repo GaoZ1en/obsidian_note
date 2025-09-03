@@ -118,13 +118,3 @@ $$\begin{align}
  & -16\pi i\sum ^{\infty}_{n=0}\left(\frac{(n+1)^{2}}{(\mu+2+2n)^{2}}(\delta a^{\dagger}_{+,m=0,n}\wedge \delta a_{-,m=0,n}+\delta a^{\dagger}_{-,m=0,n}\wedge \delta a_{+,m=0,n})\right. \\
  & +\left. \sum ^{\infty}_{m=1}\frac{\Gamma(\mu+1+n)\Gamma(1+m+n)}{(\mu+m+2n)^{2}\Gamma(\mu+m+n)\Gamma(n)}(\delta a^{\dagger}_{+,m,n}\wedge \delta a_{-,m,n-1}+\delta a^{\dagger}_{-,m,n-1}\wedge \delta a_{+,m,n}+\delta a^{\dagger}_{+,-m,n}\wedge \delta a_{-,-m,n-1}+\delta a^{\dagger}_{-,-m,n-1}\wedge \delta a_{+,-m,n}) \right)
 \end{align}$$
----
-
-seems that I misunderstood the problem...
-
-$$\begin{align}
-\Omega[A_{1},A^{*}_{2}] & = \int \mathrm{d}^{2}x\left(r\partial _{r}\delta A_{1}^{t}+\frac{2r^{2}}{1+r^{2}}\delta A_{1}^{t}+\frac{r}{(1+r^{2})^{2}}\partial _{t}\delta A_{1}^{r}\right)\wedge \delta A_{2}^{r*} \\
- & +\int \mathrm{d}^{2}x\left( r\partial _{\phi}\delta A_{1}^{t}+\frac{r^{3}}{1+r^{2}}\partial _{t}\delta A_{1}^{\phi} \right)\wedge \delta A_{2}^{\phi*}
-\end{align}$$
-
-???
