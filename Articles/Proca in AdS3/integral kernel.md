@@ -48,8 +48,6 @@ $$\begin{align}
 W[R_{<},R_{>}] & =-\frac{2|m|}{r(1+r^{2})^{2}}
 \end{align}$$
 
-then the final result is
-
 $$\begin{align}
 G(r,\phi;r',\phi') & =-\frac{1}{2\pi}\sum_{m\neq0}\frac{(1+r'^{2})^{3/2}}{2|m|}R_{<}(r_{<})R_{>}(r_{>})e^{im(\phi-\phi')}+(m=0)
 \end{align}$$
