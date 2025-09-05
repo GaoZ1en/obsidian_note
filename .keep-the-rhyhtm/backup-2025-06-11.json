@@ -18076,9 +18076,334 @@
             "timeKey": "17:15",
             "w": 0,
             "c": -1
+          },
+          {
+            "timeKey": "17:20",
+            "w": 380,
+            "c": 2350
+          },
+          {
+            "timeKey": "17:25",
+            "w": -381,
+            "c": -2357
+          },
+          {
+            "timeKey": "17:30",
+            "w": 1,
+            "c": 3
+          },
+          {
+            "timeKey": "17:35",
+            "w": -16,
+            "c": -55
+          },
+          {
+            "timeKey": "17:40",
+            "w": -56,
+            "c": -191
+          },
+          {
+            "timeKey": "17:50",
+            "w": 565,
+            "c": 2797
+          },
+          {
+            "timeKey": "18:00",
+            "w": 49,
+            "c": 180
+          },
+          {
+            "timeKey": "18:05",
+            "w": -551,
+            "c": -2706
+          },
+          {
+            "timeKey": "18:10",
+            "w": -45,
+            "c": -207
+          },
+          {
+            "timeKey": "18:15",
+            "w": 93,
+            "c": 430
+          },
+          {
+            "timeKey": "18:20",
+            "w": 1,
+            "c": -3
+          },
+          {
+            "timeKey": "18:30",
+            "w": 68,
+            "c": 252
+          },
+          {
+            "timeKey": "18:35",
+            "w": 41,
+            "c": 211
+          },
+          {
+            "timeKey": "18:40",
+            "w": 45,
+            "c": 189
+          },
+          {
+            "timeKey": "18:45",
+            "w": 7,
+            "c": 30
+          },
+          {
+            "timeKey": "21:30",
+            "w": -145,
+            "c": -612
+          },
+          {
+            "timeKey": "21:35",
+            "w": 27,
+            "c": 113
           }
         ],
         "id": 596
+      },
+      {
+        "date": "2025-09-02",
+        "filePath": "Articles/Proca in AdS3/relations of Jacobi polynomials and hypergeometric functions.md",
+        "wordCountStart": 1329,
+        "charCountStart": 6170,
+        "changes": [],
+        "id": 597
+      },
+      {
+        "date": "2025-09-02",
+        "filePath": "Articles/Proca in AdS3/linear combination of h symbols.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:50",
+            "w": 273,
+            "c": 1131
+          },
+          {
+            "timeKey": "17:55",
+            "w": 63,
+            "c": 260
+          },
+          {
+            "timeKey": "18:00",
+            "w": 38,
+            "c": 172
+          },
+          {
+            "timeKey": "18:05",
+            "w": -3,
+            "c": 21
+          },
+          {
+            "timeKey": "18:10",
+            "w": 105,
+            "c": 481
+          },
+          {
+            "timeKey": "18:15",
+            "w": 296,
+            "c": 1031
+          },
+          {
+            "timeKey": "18:20",
+            "w": -81,
+            "c": -252
+          },
+          {
+            "timeKey": "18:25",
+            "w": 163,
+            "c": 623
+          },
+          {
+            "timeKey": "18:30",
+            "w": 275,
+            "c": 1128
+          },
+          {
+            "timeKey": "18:35",
+            "w": 386,
+            "c": 1540
+          },
+          {
+            "timeKey": "18:45",
+            "w": 551,
+            "c": 2130
+          },
+          {
+            "timeKey": "18:50",
+            "w": -225,
+            "c": -795
+          },
+          {
+            "timeKey": "21:40",
+            "w": 998,
+            "c": 3670
+          },
+          {
+            "timeKey": "21:45",
+            "w": 132,
+            "c": 600
+          },
+          {
+            "timeKey": "21:50",
+            "w": 490,
+            "c": 1848
+          },
+          {
+            "timeKey": "21:55",
+            "w": -12,
+            "c": -38
+          },
+          {
+            "timeKey": "22:00",
+            "w": 63,
+            "c": 250
+          },
+          {
+            "timeKey": "22:05",
+            "w": 101,
+            "c": 416
+          },
+          {
+            "timeKey": "22:10",
+            "w": 70,
+            "c": 247
+          },
+          {
+            "timeKey": "22:15",
+            "w": 451,
+            "c": 2006
+          },
+          {
+            "timeKey": "22:20",
+            "w": 10,
+            "c": 56
+          },
+          {
+            "timeKey": "22:25",
+            "w": -164,
+            "c": -719
+          },
+          {
+            "timeKey": "22:30",
+            "w": 119,
+            "c": 414
+          }
+        ],
+        "id": 598
+      },
+      {
+        "date": "2025-09-02",
+        "filePath": "Articles/Proca in AdS3/asymptotic behavior of h and f symbols.md",
+        "wordCountStart": 17950,
+        "charCountStart": 68276,
+        "changes": [],
+        "id": 599
+      },
+      {
+        "date": "2025-09-02",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 5031,
+        "charCountStart": 19662,
+        "changes": [
+          {
+            "timeKey": "21:55",
+            "w": 222,
+            "c": 898
+          },
+          {
+            "timeKey": "22:00",
+            "w": -223,
+            "c": -900
+          }
+        ],
+        "id": 600
+      },
+      {
+        "date": "2025-09-03",
+        "filePath": "Articles/Proca in AdS3/asymptotic behavior of h and f symbols.md",
+        "wordCountStart": 17950,
+        "charCountStart": 68276,
+        "changes": [],
+        "id": 601
+      },
+      {
+        "date": "2025-09-03",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 5030,
+        "charCountStart": 19660,
+        "changes": [],
+        "id": 602
+      },
+      {
+        "date": "2025-09-03",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6056,
+        "charCountStart": 25800,
+        "changes": [
+          {
+            "timeKey": "18:55",
+            "w": -3,
+            "c": -8
+          }
+        ],
+        "id": 603
+      },
+      {
+        "date": "2025-09-03",
+        "filePath": "Articles/Proca in AdS3/linear combination of h symbols.md",
+        "wordCountStart": 4099,
+        "charCountStart": 16220,
+        "changes": [
+          {
+            "timeKey": "18:55",
+            "w": 6,
+            "c": 35
+          },
+          {
+            "timeKey": "19:00",
+            "w": 94,
+            "c": 413
+          },
+          {
+            "timeKey": "20:30",
+            "w": -100,
+            "c": -447
+          }
+        ],
+        "id": 604
+      },
+      {
+        "date": "2025-09-03",
+        "filePath": "Articles/Proca in AdS3/integral kernel.md",
+        "wordCountStart": 674,
+        "charCountStart": 2976,
+        "changes": [
+          {
+            "timeKey": "19:00",
+            "w": 2,
+            "c": 24
+          },
+          {
+            "timeKey": "20:10",
+            "w": -5,
+            "c": -26
+          }
+        ],
+        "id": 605
+      },
+      {
+        "date": "2025-09-05",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 2903,
+        "charCountStart": 11952,
+        "changes": [],
+        "id": 606
       }
     ],
     "daysWithCompletedGoal": [
@@ -18132,7 +18457,8 @@
       "2025-08-29",
       "2025-08-30",
       "2025-08-31",
-      "2025-09-01"
+      "2025-09-01",
+      "2025-09-02"
     ]
   }
 }
