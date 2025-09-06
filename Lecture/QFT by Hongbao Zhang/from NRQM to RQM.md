@@ -151,5 +151,26 @@ which gives
 $$\tag{.}\begin{align}
 \int _{\mathcal{M}}\mathrm{d}\mu \varphi ^{*}(v^{a}\nabla _{a}\phi+v\phi) & =\int _{M}\mathrm{d}\mu (v^{a}\nabla _{a}\varphi+v\varphi)^{*}\phi \\
  & =\int _{M}\mathrm{d}\mu (v^{*a}\nabla _{a}\varphi ^{*}+v^{*}\varphi ^{*})\phi \\
- & =\int _{M}\mathrm{d}\mu \varphi ^{*}(\nabla _{a}(v^{*a}\phi)+v^{*})
+ & =\int _{M}\mathrm{d}\mu \varphi ^{*}(-v^{*a}\nabla _{a}\phi+(-\nabla _{a}v^{*a}+v^{*})\phi) \\
+\implies & \begin{cases}
+v^{a}=-v^{*a} \\
+v-v^{*}=-\nabla _{a}v^{*a}=\nabla _{a}v^{a}
+\end{cases}
 \end{align}$$
+
+and the commutator of two operators $\displaystyle{[V,U]}$ can be expressed as
+
+$$\begin{align}
+(\varphi,[V,U]\phi) & =(\varphi,(VU-UV)\phi) \\
+ & =\int _{M}\mathrm{d}\mu \varphi ^{*}(v^{a}\nabla _{a}(u^{b}\nabla _{b}\phi+u\phi)+v(u^{b}\nabla _{b}\phi+u\phi)) \\
+ & -\int _{M}\mathrm{d}\mu \varphi ^{*}(u^{a}\nabla _{a}(v^{b}\nabla _{b}\phi+v\phi)+u(v^{b}\nabla _{b}\phi+v\phi)) \\
+ & =\int _{M}\mathrm{d}\mu \varphi ^{*}()
+\end{align}$$
+
+we want a position operator and a momentum operator that satisfy
+
+$$\begin{align}
+\hat{x}\phi & =x\phi \\
+\hat{p}_{x} & =\left( \frac{\partial}{\partial x} \right)^{a}\nabla _{a}\phi
+\end{align}$$
+
