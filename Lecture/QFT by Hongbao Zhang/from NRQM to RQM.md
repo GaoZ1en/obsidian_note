@@ -164,13 +164,65 @@ $$\begin{align}
 (\varphi,[V,U]\phi) & =(\varphi,(VU-UV)\phi) \\
  & =\int _{M}\mathrm{d}\mu \varphi ^{*}(v^{a}\nabla _{a}(u^{b}\nabla _{b}\phi+u\phi)+v(u^{b}\nabla _{b}\phi+u\phi)) \\
  & -\int _{M}\mathrm{d}\mu \varphi ^{*}(u^{a}\nabla _{a}(v^{b}\nabla _{b}\phi+v\phi)+u(v^{b}\nabla _{b}\phi+v\phi)) \\
- & =\int _{M}\mathrm{d}\mu \varphi ^{*}()
+ & =\int _{M}\mathrm{d}\mu \varphi ^{*}[v,u]^{a}\nabla _{a}\phi
 \end{align}$$
 
 we want a position operator and a momentum operator that satisfy
 
 $$\begin{align}
-\hat{x}\phi & =x\phi \\
-\hat{p}_{x} & =\left( \frac{\partial}{\partial x} \right)^{a}\nabla _{a}\phi
+[\hat{x},\hat{p}_{x}] & =i
 \end{align}$$
+
+we first define the momentum operator
+
+$$\begin{align}
+P(p^{a})\phi(k) & =-p^{a}k _{a}\phi(k)
+\end{align}$$
+
+where $\displaystyle{p^{a}}$ is the reference vector of measure. and the position operator is determined by $\displaystyle{X^{a}}$, where to measure, $\displaystyle{t^{a}}$, when to measure and $\displaystyle{q^{a}}$ (spacelike), which direction to measture. assume
+
+$$\begin{align}
+X(0,t^{a},q^{a})\phi & =x^{a}\nabla _{a}\phi+x\phi
+\end{align}$$
+
+here we set $\displaystyle{X^{a}=0}$. the result is
+
+$$\begin{align}
+x^{a} & =i\left( q^{a}-t^{a} \frac{q\cdot k}{t\cdot k} \right) \\
+x & =\frac{i}{2} \frac{q\cdot k}{(t\cdot k)^{2}}
+\end{align}$$
+
+this is the expression of position operator in the momentum space. it can be verified that it satisfies
+
+$$\begin{align}
+[P(p^{a}),P(p'^{a})] & =0 \\
+[X(0,t^{a},q^{a}),X(0,t^{a},q'^{a})] & =0 & t^{a}q_{a}=t^{a}q'_{a}=0 \\
+[X(0,t^{a},q^{a}),P(p^{a})] & =ip^{a}q_{a} & t^{a}p_{a}=0 \\
+[X(0,t^{a},q^{a}),P(t^{a})] & =i\frac{q\cdot k}{t\cdot k}
+\end{align}$$
+
+$\displaystyle{P(t^{a})}$ is the Hamiltonian with respect to the direction $\displaystyle{t^{a}}$. the Heisenberg equation gives that
+
+$$\begin{align}
+\dot{P}(p^{a}) & =0 \\
+\dot{X}(0,t^{a},q^{a}) & =\frac{q\cdot k}{t\cdot k}
+\end{align}$$
+
+where $\displaystyle{\frac{q\cdot k}{t\cdot k}}$ is exactly the speed... then we will find the eigenstates of these operators. the wave function of eigenstate of $\displaystyle{P(p^{a})}$ with eigenvalue $\displaystyle{\vec{k}'}$ is
+
+$$\begin{align}
+\vec{K}(k) & =\sqrt{ 2\omega _{k'} }\delta(\vec{k}'-\vec{k}) \\
+\vec{k}'(x) & =\frac{1}{(2\pi)^{d/2}\sqrt{ 2\omega _{k'} }}e^{-ik'_{a} x^{a}}
+\end{align}$$
+
+and the wave function of eigenstate of $\displaystyle{X(0,t^{a},q^{a})}$ with eigenvalue $\displaystyle{\vec{x}'}$ is
+
+$$\begin{align}
+\vec{x}'(k) & =\frac{\sqrt{ 2\omega _{k'} }}{(2\pi)^{d/2}}e^{-i\vec{x}'\cdot \vec{k}} \\
+\vec{x}'(x) & =\frac{1}{(2\pi)^{d/2}}\int \frac{\mathrm{d}^{d-1}k}{\sqrt{ 2\omega _{k} }}e^{-ik _{a}(x^{a}-x'^{a})}
+\end{align}$$
+
+
+
+(here some signal may be wrong)
 
