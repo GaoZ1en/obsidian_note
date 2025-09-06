@@ -112,3 +112,44 @@ $$\begin{align}
 
 same properties share.
 
+# Minkowski spacetime
+
+now we will focus on Minkowski spacetime. make the following Fourier transformation
+
+$$\begin{align}
+\phi(x) & =\frac{1}{(2\pi)^{d/2}}\int _{\mathcal{M}=\mathcal{M}^{+}\cup \mathcal{M}^{-}} \frac{\mathrm{d}^{d-1}k}{2\omega _{k}}\tilde{\phi}(k)e^{-ik\cdot x}
+\end{align}$$
+
+where $\displaystyle{\mathcal{M}}$ is the mass shell, and $\displaystyle{\mathcal{M}^{\pm}}$ is the positive/negative frequency mass shell. then the inner product becomes
+
+$$\begin{align}
+(\varphi,\phi) & =\int _{\mathcal{M}^{+}}\mathrm{d}\mu\tilde{\varphi}^{*}(k)\tilde{\phi}(k)-\int _{\mathcal{M}^{-}}\mathrm{d}\mu\tilde{\varphi}^{*}(k)\tilde{\phi}(k)
+\end{align}$$
+
+where $\displaystyle{\mu}$ is the measure of massshell $\displaystyle{\mathcal{M}}$.
+
+one problem is that what are the position and momentum operator. we make a general discussion below. a Hilbert space with an inner product
+
+$$\begin{align}
+(\varphi,\phi) & =\int _{\mathcal{M}}\mathrm{d}\mu \varphi ^{*}\phi
+\end{align}$$
+
+where $\displaystyle{\varphi,\phi}$ is somehow a method to denote a state. a linear Hermitian operator $\displaystyle{V}$ acting $\displaystyle{\phi}$ can be expressed as
+
+$$\begin{align}
+V(\phi) & :=v^{a}\nabla _{a}\phi+v\phi
+\end{align}$$
+
+where $\displaystyle{\nabla _{a}}$ is compatitive with the measure $\displaystyle{\mu}$. Hermitian requires that
+
+$$\begin{align}
+(\varphi,V\phi) & =(V\varphi,\phi)
+\end{align}$$
+
+which gives
+
+$$\tag{.}\begin{align}
+\int _{\mathcal{M}}\mathrm{d}\mu \varphi ^{*}(v^{a}\nabla _{a}\phi+v\phi) & =\int _{M}\mathrm{d}\mu (v^{a}\nabla _{a}\varphi+v\varphi)^{*}\phi \\
+ & =\int _{M}\mathrm{d}\mu (v^{*a}\nabla _{a}\varphi ^{*}+v^{*}\varphi ^{*})\phi \\
+ & =\int _{M}\mathrm{d}\mu \varphi ^{*}(\nabla _{a}(v^{*a}\phi)+v^{*})
+\end{align}$$
