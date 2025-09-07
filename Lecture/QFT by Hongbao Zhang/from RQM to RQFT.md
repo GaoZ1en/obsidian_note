@@ -144,7 +144,7 @@ $$\begin{align}
 
 # operator valued function and distribution
 
-a field operator $\displaystyle{\hat{\phi}(x)}$ is defined as
+a field operator, operator valued function $\displaystyle{\hat{\phi}(x)}$ is defined as
 
 $$\begin{align}
 \hat{\phi}(x) & =a(\bar{\sigma}^{i})\sigma _{i}(x)+c(\sigma _{i})\bar{\sigma}^{i}(x)
@@ -184,3 +184,28 @@ $$\begin{align}
 \hat{\phi}(x) & =\frac{1}{(2\pi)^{d/2}}\int \frac{\mathrm{d}^{d-1}\vec{k}}{\sqrt{ 2\omega _{k} }}\left(a_{\vec{k}}e^{ik _{a}x^{a}}+a^{\dagger}_{\vec{k}}e^{-ik _{a}x^{a}}\right)
 \end{align}$$
 
+more precisely, field operator $\displaystyle{\hat{\phi}}$ is actually a distribution. when acting on a real test function $\displaystyle{f}$ with compact support
+
+$$\begin{align}
+\hat{\phi}(f) & =a(\bar{\sigma}_{f})+c(\sigma _{f})
+\end{align}$$
+
+$$\begin{align}
+\int \mathrm{d}^{d}x\hat{\phi}(x)f(x) & =\int \mathrm{d}^{d}x(a(\bar{\sigma}^{i})\sigma _{i}(x)+c(\sigma _{i})\bar{\sigma}^{i}(x))f(x) \\
+ & =a(\bar{\sigma}^{i})\int \mathrm{d}^{d}x\sigma _{i}(x)f(x)+c(\sigma _{i})\int \mathrm{d}^{d}x\bar{\sigma}^{i}(x)f(x) \\
+ & =a(\bar{\sigma}^{i})\bar{\sigma} _{f}^{i}
+\end{align}$$
+
+where $\displaystyle{\sigma _{f}}$ is determined by
+
+$$\begin{align}
+\hat{\phi}(f) & =\int \mathrm{d}^{d}x\hat{\phi}(x)f(x)
+\end{align}$$
+
+then
+
+$$\begin{align}
+\hat{\phi}(x)((\square+m^{2})f) & =\int \mathrm{d}^{d}x\hat{\phi}(x)(\square+m^{2})f(x) \\
+ & =\int \mathrm{d}^{d}x
+\end{align}$$
+cincraria palmensis Sm
