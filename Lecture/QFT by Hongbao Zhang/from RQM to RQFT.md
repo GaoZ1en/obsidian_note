@@ -53,5 +53,33 @@ $$\begin{align}
 (\varphi,c(\sigma)\psi) & =(0,\psi \sigma ^{\alpha},\sqrt{ 2 }\sigma ^{(\alpha}\psi ^{\beta)},\sqrt{ 3 }\sigma ^{(\alpha}\psi ^{\beta \gamma)},\dots) \\
  & =\bar{\varphi}\cdot 0+\bar{\varphi}_{\alpha}\psi \sigma ^{\alpha}+\sqrt{ 2 }\bar{\varphi}_{\alpha \beta}\sigma ^{(\alpha}\psi ^{\beta)}+\sqrt{ 3 }\bar{\varphi}_{\alpha \beta \gamma}\sigma ^{(\alpha}\psi ^{\beta \gamma)}+\dots \\
  & =0+\bar{\varphi}_{\alpha}\psi \sigma ^{\alpha}+\sqrt{ 2 }\bar{\varphi}_{\alpha \beta}\sigma ^{\alpha}\psi ^{\beta}+\sqrt{ 3 }\bar{\varphi}_{\alpha \beta \gamma}\sigma ^{\alpha}\psi ^{\beta \gamma}+\dots  \\
- & =
+ & =(c^{\dagger}(\sigma)\varphi,\psi) \\
+(a(\bar{\sigma})\varphi,\psi) & =\sigma ^{\alpha}\bar{\varphi}_{\alpha}\psi+\sqrt{ 2 }\sigma ^{\alpha}\bar{\varphi}_{\alpha \beta}\psi ^{\beta}+\sqrt{ 3 }\sigma ^{\alpha}\bar{\varphi}_{\alpha \beta \gamma}\psi ^{\beta \gamma}+\dots \\
+ & =(c^{\dagger}(\sigma)\varphi,\psi)
+\end{align}$$
+
+2. $\displaystyle{[c(\sigma),c(\tau)]=[a(\bar{\sigma}),a(\bar{\tau})]=0}$.
+
+$$\begin{align}
+c(\sigma)c(\tau)\psi & =c(\sigma)(0,\tau ^{\alpha}\psi,\sqrt{ 2 }\tau ^{(\alpha}\psi ^{\beta)}+\sqrt{ 3 }\tau ^{(\alpha}\psi ^{\beta \gamma)},\dots) \\
+ &=(0,0,\sqrt{ 1\cdot 2 }\sigma ^{(\alpha}\tau ^{\beta)}\psi,\sqrt{ 2\cdot 3 }\sigma ^{(\alpha}\tau ^{\beta}\psi ^{\gamma)},\sqrt{ 3\cdot4 }\sigma ^{(\alpha}\tau ^{\beta}\psi ^{\gamma \delta)},\dots) \\
+ & =c(\tau)c(\sigma)\psi \\
+\implies[c(\sigma),c(\tau)] & =0 \\
+\implies[a(\bar{\sigma}),a(\bar{\tau})] & =0
+\end{align}$$
+
+3. $\displaystyle{[a(\bar{\sigma}),c(\tau)]=\bar{\sigma}_{\alpha}\tau ^{\alpha}\mathbb{I}}$. 
+
+$$\begin{align}
+a(\bar{\sigma})c(\tau)\psi & =a(\bar{\sigma})(0,\tau^{\alpha}\psi,\sqrt{ 2 }\tau^{(\alpha}\psi ^{\beta)},\sqrt{ 3 }\tau ^{(\alpha}\psi ^{\beta \gamma)},\dots) \\
+ & =(\bar{\sigma}_{\alpha}\tau ^{\alpha}\psi,2\bar{\sigma}_{\alpha}\tau ^{(\alpha}\psi ^{\beta)},3\bar{\sigma}_{\alpha}\tau ^{(\alpha}\psi ^{\beta \gamma)},\dots) \\
+c(\tau)a(\bar{\sigma})\psi & =c(\tau)(\bar{\sigma}_{\alpha}\psi ^{\alpha},\sqrt{ 2 }\bar{\sigma} _{\alpha}\psi ^{\alpha \beta},\sqrt{ 3 }\bar{\sigma}_{\alpha}\psi ^{\alpha \beta \gamma},\dots) \\
+ & =(0,\tau ^{\alpha}\bar{\sigma}_{\beta}\psi ^{\beta},2\bar{\sigma}_{\alpha}\psi ^{\alpha (\beta}\tau ^{\gamma)},3\bar{\sigma}_{\alpha}\psi ^{\alpha(\beta \gamma}\tau ^{\delta)},\dots) \\
+\implies[a(\bar{\sigma}),c(\tau)] & =\bar{\sigma}_{\alpha}\tau ^{\alpha}\mathbb{I}
+\end{align}$$
+
+define $\displaystyle{N(\sigma)=c(\sigma)a(\bar{\sigma}), N=\sum _{\sigma}c(\sigma)a(\bar{\sigma})}$, then
+
+$$\begin{align}
+[N(\sigma),c(\sigma)] & =c(\sigma)
 \end{align}$$
