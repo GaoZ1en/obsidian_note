@@ -222,7 +222,13 @@ $$\begin{align}
 \vec{x}'(x) & =\frac{1}{(2\pi)^{d/2}}\int \frac{\mathrm{d}^{d-1}k}{\sqrt{ 2\omega _{k} }}e^{-ik _{a}(x^{a}-x'^{a})}
 \end{align}$$
 
+smear in a Compton length(here some signal may be wrong). so RQM works, but breaks when one focuses onto the region smaller than Comption length, which means there are creation and annihilation of particles, due to Heisenberg uncertainty principle. 
 
+---
 
-(here some signal may be wrong)
-
+1. condition for an operator to be Hermitian
+2. commutator of two operators
+3. Lie derivative of the volume form
+4. The geometry of the mass shell
+5. Hermiticity of the position operator
+6. Commutator of the position operator and the momentum operator
