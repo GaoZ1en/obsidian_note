@@ -81,5 +81,12 @@ c(\tau)a(\bar{\sigma})\psi & =c(\tau)(\bar{\sigma}_{\alpha}\psi ^{\alpha},\sqrt{
 define $\displaystyle{N(\sigma)=c(\sigma)a(\bar{\sigma}), N=\sum _{\sigma}c(\sigma)a(\bar{\sigma})}$, then
 
 $$\begin{align}
-[N(\sigma),c(\sigma)] & =c(\sigma)
+[N(\sigma),c(\sigma)] & =c(\sigma) \\
+[N(\sigma),a(\bar{\sigma})] & =-a(\bar{\sigma})
 \end{align}$$
+
+$$\begin{align}
+N(\sigma)\psi & =(0,\sigma ^{\alpha}\bar{\sigma}_{\beta}\psi ^{\beta},2\bar{\sigma}_{\alpha}\psi ^{\alpha (\beta}\sigma ^{\gamma)},3\bar{\sigma}_{\alpha}\psi ^{\alpha(\beta \gamma}\sigma ^{\delta)},\dots) \\
+N\psi & =(0,\psi ^{\alpha},2\psi ^{\alpha \beta},3\psi ^{\alpha \beta \gamma},\dots)
+\end{align}$$
+
