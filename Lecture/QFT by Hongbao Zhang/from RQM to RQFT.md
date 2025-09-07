@@ -23,4 +23,35 @@ $$\begin{align}
  & =\phi _{\alpha'}\bar{\varphi}^{\alpha'}=\bar{\varphi}^{\alpha'}\phi _{\alpha'}
 \end{align}$$
 
-so we only need 
+so we only need $\displaystyle{\mathcal{H}}$ and $\displaystyle{\mathcal{H}^{*}}$.
+
+# symmetric and antisymmetric Fock space
+
+from a one-particle Hilbert space $\displaystyle{\mathcal{H}}$, we can define (anti)symmetric Fock space $\displaystyle{\mathcal{F}_{S/A}(\mathcal{H})=\bigoplus^{\infty}_{n=0}\bigotimes_{S/A}\mathcal{H}^{n}}$. elements in the Fock space $\displaystyle{\mathcal{F}_{S}(\mathcal{H})}$ can be written as
+
+$$\begin{align}
+\psi & =(\psi,\psi ^{\alpha},\psi ^{\alpha \beta},\psi ^{\alpha \beta \gamma},\dots)
+\end{align}$$
+
+for a normalized one particle state $\displaystyle{\sigma}$, we can define the creation operator $\displaystyle{c(\sigma)}$ as
+
+$$\begin{align}
+c(\sigma)\psi & =(0,\psi \sigma ^{\alpha},\sqrt{ 2 }\sigma ^{(\alpha}\psi ^{\beta)},\sqrt{ 3 }\sigma ^{(\alpha}\psi ^{\beta \gamma)},\dots)
+\end{align}$$
+
+and annihilation operator $\displaystyle{a(\bar{\sigma})}$ as
+
+$$\begin{align}
+a(\bar{\sigma})\psi & =(\bar{\sigma}_{\alpha}\psi ^{\alpha},\sqrt{ 2 }\bar{\sigma} _{\alpha}\psi ^{\alpha \beta},\sqrt{ 3 }\bar{\sigma}_{\alpha}\psi ^{\alpha \beta \gamma},\dots)
+\end{align}$$
+
+the creation and annihilation operator $\displaystyle{c(\sigma)}$ and $\displaystyle{a(\bar{\sigma})}$ have the following properties
+
+1. $\displaystyle{a(\bar{\sigma})=c^{\dagger}(\sigma)}$.
+
+$$\begin{align}
+(\varphi,c(\sigma)\psi) & =(0,\psi \sigma ^{\alpha},\sqrt{ 2 }\sigma ^{(\alpha}\psi ^{\beta)},\sqrt{ 3 }\sigma ^{(\alpha}\psi ^{\beta \gamma)},\dots) \\
+ & =\bar{\varphi}\cdot 0+\bar{\varphi}_{\alpha}\psi \sigma ^{\alpha}+\sqrt{ 2 }\bar{\varphi}_{\alpha \beta}\sigma ^{(\alpha}\psi ^{\beta)}+\sqrt{ 3 }\bar{\varphi}_{\alpha \beta \gamma}\sigma ^{(\alpha}\psi ^{\beta \gamma)}+\dots \\
+ & =0+\bar{\varphi}_{\alpha}\psi \sigma ^{\alpha}+\sqrt{ 2 }\bar{\varphi}_{\alpha \beta}\sigma ^{\alpha}\psi ^{\beta}+\sqrt{ 3 }\bar{\varphi}_{\alpha \beta \gamma}\sigma ^{\alpha}\psi ^{\beta \gamma}+\dots  \\
+ & =
+\end{align}$$
