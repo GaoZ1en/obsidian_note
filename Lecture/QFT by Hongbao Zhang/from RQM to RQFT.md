@@ -172,3 +172,15 @@ $$\begin{align}
  & =a(\bar{\sigma}^{j})\sigma _{j}(x)+c(\sigma _{j})\bar{\sigma}^{j}(x)
 \end{align}$$
 
+in Minkowski spacetime, we can choose the following basis
+
+$$\begin{align}
+\vec{k}'(x)=\frac{1}{(2\pi)^{d/2}\sqrt{ 2\omega _{k} }}e^{ik'_{a}x^{a}}
+\end{align}$$
+
+then the field operator $\displaystyle{\hat{\phi}(x)}$ can be written as the standard form
+
+$$\begin{align}
+\hat{\phi}(x) & =\frac{1}{(2\pi)^{d/2}}\int \frac{\mathrm{d}^{d-1}\vec{k}}{\sqrt{ 2\omega _{k} }}\left(a_{\vec{k}}e^{ik _{a}x^{a}}+a^{\dagger}_{\vec{k}}e^{-ik _{a}x^{a}}\right)
+\end{align}$$
+
