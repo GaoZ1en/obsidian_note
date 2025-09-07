@@ -23,7 +23,12 @@ $$\begin{align}
  & =\phi _{\alpha'}\bar{\varphi}^{\alpha'}=\bar{\varphi}^{\alpha'}\phi _{\alpha'}
 \end{align}$$
 
-so we only need $\displaystyle{\mathcal{H}}$ and $\displaystyle{\mathcal{H}^{*}}$.
+so we only need $\displaystyle{\mathcal{H}}$ and $\displaystyle{\mathcal{H}^{*}}$. additionally
+
+$$\begin{align}
+\left(\varphi,\phi\right) & =\overline{(\phi,\varphi)} \\
+\implies \bar{G}_{\alpha'\alpha} & =G_{\alpha'\alpha}
+\end{align}$$
 
 # symmetric and antisymmetric Fock space
 
@@ -137,3 +142,29 @@ $$\begin{align}
 \psi & =(0,\sigma ^{\alpha}\kappa,\sigma ^{[\alpha}\kappa ^{\beta]},\sigma ^{[\alpha}\kappa ^{\beta \gamma]},\dots) & \text{ with }\kappa ^{\alpha\dots}\bar{\sigma}_{\alpha}=0
 \end{align}$$
 
+# operator valued function and distribution
+
+a field operator $\displaystyle{\hat{\phi}(x)}$ is defined as
+
+$$\begin{align}
+\hat{\phi}(x) & =a(\bar{\sigma}^{i})\sigma _{i}(x)+c(\sigma _{i})\bar{\sigma}^{i}(x)
+\end{align}$$
+
+it is Hermitian
+
+$$\begin{align}
+\hat{\phi}^{\dagger}(x) & =a^{\dagger}(\bar{\sigma}^{i})\bar{\sigma} _{i}(x)+c^{\dagger}(\sigma _{i})\sigma _{i}(x) \\
+ & =c(\sigma _{i})\bar{\sigma}^{i}(x)+a(\bar{\sigma}^{i})\sigma _{i}(x)
+\end{align}$$
+
+$\displaystyle{\hat{\phi}(x)}$ satisfies KG equation, and does not depend on the choice of $\displaystyle{\left\{\sigma _{i}(x)\right\}}$. assume we have another orthonormal basis $\displaystyle{\left\{\tau _{i}(x)\right\}}$
+
+$$\begin{align}
+\hat{\phi}(x) & =a(\bar{\tau}^{i})\tau _{i}(x)+c(\tau _{i})\bar{\tau}^{i}(x)
+\end{align}$$
+
+expand $\displaystyle{\tau _{i}(x)=\lambda _{i}^{~j}\sigma _{j}(x)\implies \lambda_{i}^{~j}=\bar{\sigma}^{j}\tau _{i}}$, then
+
+$$\begin{align}
+\hat{\phi} & =a(\bar{\tau}^{i})\bar{\sigma}^{j}\tau _{i}\sigma _{j}+c(\tau _{i})\bar{\tau}^{i}(x)\sigma\bar{\sigma}^{i}
+\end{align}$$
