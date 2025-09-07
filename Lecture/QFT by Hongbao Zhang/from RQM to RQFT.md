@@ -90,3 +90,50 @@ N(\sigma)\psi & =(0,\sigma ^{\alpha}\bar{\sigma}_{\beta}\psi ^{\beta},2\bar{\sig
 N\psi & =(0,\psi ^{\alpha},2\psi ^{\alpha \beta},3\psi ^{\alpha \beta \gamma},\dots)
 \end{align}$$
 
+since
+
+$$\begin{align}
+[N(\sigma),N] & =0
+\end{align}$$
+
+so the eigenstate with $\displaystyle{n}$ particle in which $\displaystyle{m}$ particle on the state $\displaystyle{\sigma}$ is
+
+$$\begin{align}
+\psi & =(0,0,\dots,\sigma ^{(\alpha_{1}}\sigma ^{\alpha _{2}}\dots \sigma ^{\alpha _{m}}\kappa ^{\beta_{1}\beta_{2}\dots \beta _{n-m})},0,\dots)
+\end{align}$$
+
+where $\displaystyle{\kappa ^{\beta_{1}\dots \beta_{n-m}}\bar{\sigma}_{\beta _{k}}=0}$. then
+
+$$\begin{align}
+N(\sigma)\psi & =(0,0,\dots,n\sigma ^{(\alpha_{1}}\bar{\sigma}_{\beta}\sigma ^{\beta}\sigma ^{\alpha_{2}}\dots \sigma ^{\alpha _{m}}\kappa ^{\beta_{1}\dots \beta _{n-m}},0,\dots) \\
+ & =(0,0,\dots,m\sigma ^{(\alpha_{1}}\sigma ^{\alpha_{2}}\dots \sigma ^{\alpha _{m}}\kappa ^{\beta_{1}\dots \beta _{n-m})},0,\dots)
+\end{align}$$
+
+for antisymmetric case, the definitions of creation and annihilation operator is simply turn $\displaystyle{()}$ into $\displaystyle{[]}$, and we have the following properties
+
+$$\begin{align}
+c^{\dagger}(\sigma) & =a(\bar{\sigma}) \\
+\left\{c(\sigma),c(\tau)\right\} & =\left\{a(\bar{\sigma}),a(\bar{\tau})\right\}=0 \\
+\left\{a(\bar{\sigma}),c(\tau)\right\} & =\bar{\sigma}_{\alpha}\tau ^{\alpha}\mathbb{I} \\
+N(\sigma) & =c(\sigma)a(\bar{\sigma}) \\
+[N(\sigma),a(\bar{\sigma})] & =-a(\bar{\sigma}) \\
+[N(\sigma),c(\sigma)] & =c(\sigma) \\
+[N,N(\sigma)] & =0
+\end{align}$$
+
+and for fermion, we have the following unique property
+
+$$\begin{align}
+N^{2}(\sigma) & =c(\sigma)a(\bar{\sigma})c(\sigma)a(\bar{\sigma}) \\
+ & =c(\sigma)\left\{a(\bar{\sigma}),c(\sigma)\right\}a(\bar{\sigma}) \\
+ & =c(\sigma)a(\bar{\sigma})=N(\sigma) \\
+\implies N(\sigma)(N(\sigma)-1) & =0
+\end{align}$$
+
+then the eigenvalue of $\displaystyle{N(\sigma)}$ can only be $\displaystyle{0}$ and $\displaystyle{1}$. Pauli exclusion principle. so the eigenstates can be written as
+
+$$\begin{align}
+\psi & =(\psi,\psi ^{\alpha},\psi ^{\alpha \beta},\psi ^{\alpha \beta \gamma},\dots) & \text{ with }\psi ^{\alpha\dots}\bar{\sigma}_{\alpha}=0 \\
+\psi & =(0,\sigma ^{\alpha}\kappa,\sigma ^{[\alpha}\kappa ^{\beta]},\sigma ^{[\alpha}\kappa ^{\beta \gamma]},\dots) & \text{ with }\kappa ^{\alpha\dots}\bar{\sigma}_{\alpha}=0
+\end{align}$$
+
