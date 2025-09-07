@@ -1,0 +1,1 @@
+a Hilbert space $\displaystyle{\mathcal{H}}$ with inner product $\displaystyle{(\cdot,\cdot)}$. we denote $\displaystyle{\varphi ^{\alpha}\in \mathcal{H}}$. the dual space $\displaystyle{\mathcal{H}^{*}}$ is induced by the inner product, in which the elements are linear mappings, denoted as $\displaystyle{\lambda _{\alpha}}$. 

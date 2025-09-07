@@ -212,14 +212,14 @@ where $\displaystyle{\frac{q\cdot k}{t\cdot k}}$ is exactly the speed... then we
 
 $$\begin{align}
 \vec{K}(k) & =\sqrt{ 2\omega _{k'} }\delta(\vec{k}'-\vec{k}) \\
-\vec{k}'(x) & =\frac{1}{(2\pi)^{d/2}\sqrt{ 2\omega _{k'} }}e^{-ik'_{a} x^{a}}
+\vec{k}'(x) & =\frac{1}{(2\pi)^{d/2}\sqrt{ 2\omega _{k'} }}e^{ik'_{a} x^{a}}
 \end{align}$$
 
 and the wave function of eigenstate of $\displaystyle{X(0,t^{a},q^{a})}$ with eigenvalue $\displaystyle{\vec{x}'}$ is
 
 $$\begin{align}
 \vec{x}'(k) & =\frac{\sqrt{ 2\omega _{k'} }}{(2\pi)^{d/2}}e^{-i\vec{x}'\cdot \vec{k}} \\
-\vec{x}'(x) & =\frac{1}{(2\pi)^{d/2}}\int \frac{\mathrm{d}^{d-1}k}{\sqrt{ 2\omega _{k} }}e^{-ik _{a}(x^{a}-x'^{a})}
+\vec{x}'(x) & =\frac{1}{(2\pi)^{d/2}}\int \frac{\mathrm{d}^{d-1}k}{\sqrt{ 2\omega _{k} }}e^{ik _{a}(x^{a}-x'^{a})}
 \end{align}$$
 
 smear in a Compton length(here some signal may be wrong). so RQM works, but breaks when one focuses onto the region smaller than Comption length, which means there are creation and annihilation of particles, due to Heisenberg uncertainty principle. 
