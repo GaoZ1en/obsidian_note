@@ -166,5 +166,9 @@ $$\begin{align}
 expand $\displaystyle{\tau _{i}(x)=\lambda _{i}^{~j}\sigma _{j}(x)\implies \lambda_{i}^{~j}=\bar{\sigma}^{j}\tau _{i}}$, then
 
 $$\begin{align}
-\hat{\phi} & =a(\bar{\tau}^{i})\bar{\sigma}^{j}\tau _{i}\sigma _{j}+c(\tau _{i})\bar{\tau}^{i}(x)\sigma\bar{\sigma}^{i}
+\hat{\phi} & =a(\bar{\tau}^{i})\lambda _{i}^{~j}\sigma _{j}(x)+c(\tau _{i})\bar{\lambda} ^{i}_{~j}\bar{\sigma}^{j}(x) \\
+ & =a(\bar{\tau}^{i})\bar{\sigma}^{j}_{\alpha}\tau ^{\alpha}_{i}\sigma _{j}(x)+c(\tau _{i})\sigma _{j}^{\alpha}\bar{\tau}^{i}_{\alpha}\bar{\sigma}^{j}(x) \\
+ & =a(\bar{\tau}^{i}_{\beta}\bar{\sigma}^{j}_{\alpha}\tau ^{\alpha}_{i})\sigma ^{\beta} _{j}(x)+c(\tau _{i}^{\beta}\sigma ^{\alpha}_{j}\bar{\tau}^{i}_{\alpha})\bar{\sigma}^{j}(x) \\
+ & =a(\bar{\sigma}^{j})\sigma _{j}(x)+c(\sigma _{j})\bar{\sigma}^{j}(x)
 \end{align}$$
+
