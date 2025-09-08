@@ -190,22 +190,27 @@ $$\begin{align}
 \hat{\phi}(f) & =a(\bar{\sigma}_{f})+c(\sigma _{f})
 \end{align}$$
 
+where $\displaystyle{\sigma _{f}}$ is defined as
+
+$$\begin{align}
+\sigma _{f} & =\sigma _{i}\int \mathrm{d}^{d}x\bar{\sigma}^{i}(x)f(x)
+\end{align}$$
+
+then we have
+
 $$\begin{align}
 \int \mathrm{d}^{d}x\hat{\phi}(x)f(x) & =\int \mathrm{d}^{d}x(a(\bar{\sigma}^{i})\sigma _{i}(x)+c(\sigma _{i})\bar{\sigma}^{i}(x))f(x) \\
  & =a(\bar{\sigma}^{i})\int \mathrm{d}^{d}x\sigma _{i}(x)f(x)+c(\sigma _{i})\int \mathrm{d}^{d}x\bar{\sigma}^{i}(x)f(x) \\
- & =a(\bar{\sigma}^{i})\bar{\sigma} _{f}^{i}
+ & =a\left( \bar{\sigma}^{i}\int \mathrm{d}^{d}x\sigma _{i}(x)f(x) \right)+c\left( \sigma _{i}\int \mathrm{d}^{d}x\bar{\sigma}^{i}(x)f(x) \right) \\
+ & =a(\bar{\sigma}_{f})+c(\sigma _{f})
 \end{align}$$
 
-where $\displaystyle{\sigma _{f}}$ is determined by
+and the KG equation can be generalized into
 
 $$\begin{align}
-\hat{\phi}(f) & =\int \mathrm{d}^{d}x\hat{\phi}(x)f(x)
+\boxed{\hat{\phi}(x)((\square+m^{2})f)=\int \mathrm{d}^{d}x\hat{\phi}(x)(\square+m^{2})f(x)} \\
+ =\int \mathrm{d}^{d}x(\square+m^{2})\hat{\phi}(x)f(x) \\
+ =0
 \end{align}$$
 
-then
-
-$$\begin{align}
-\hat{\phi}(x)((\square+m^{2})f) & =\int \mathrm{d}^{d}x\hat{\phi}(x)(\square+m^{2})f(x) \\
- & =\int \mathrm{d}^{d}x
-\end{align}$$
-cincraria palmensis Sm
+there are some insights from PDE theory. 
