@@ -213,4 +213,35 @@ $$\begin{align}
  =0
 \end{align}$$
 
-there are some insights from PDE theory. 
+there are some insights from PDE theory.
+
+# commutators and propagators
+
+we first define
+
+$$\begin{align}
+D^{+}(f,g) & =\braket{ 0|\hat{\phi}(f)\hat{\phi}(g)|0 }
+\end{align}$$
+
+where $\displaystyle{\ket{0}=(1,0,0,\dots)}$ is the vacuum state, satisfies $\displaystyle{a(\bar{\sigma})\ket{0}=0}$
+
+$$\begin{align}
+D^{-}(f,g) & = \braket{ 0|(a(\bar{\sigma}_{f})+c(\sigma _{f}))(a(\bar{\sigma}_{g})+c(\sigma_{g}))|0 }  \\
+ & = \braket{ 0|a(\bar{\sigma}_{f})c(\sigma _{g})|0 } \\
+ & = \braket{ 0|[a(\bar{\sigma}_{f}),c(\sigma _{g})]|0 }
+\end{align}$$
+
+we then define
+
+$$\begin{align}
+D^{-}(f,g) & = -\braket{ 0|\hat{\phi}(g)\hat{\phi}(f)|0 }  \\
+ & = \braket{ 0|[c(\sigma _{g}),a(\bar{\sigma}_{f})]|0 } 
+\end{align}$$
+
+and then
+
+$$\begin{align}
+D(f,g) & =D^{+}(f,g)+D^{-}(f,g) \\
+ & =\braket{ 0|[\hat{\phi}(f),\hat{\phi}(g)]|0 } 
+\end{align}$$
+
