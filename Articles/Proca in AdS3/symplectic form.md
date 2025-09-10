@@ -185,4 +185,40 @@ $$\begin{align}
 
 ---
 
-we will argue $\displaystyle{\mathcal{L}}$
+$$\begin{align}
+S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left( -\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu} \right)
+\end{align}$$
+
+take a variation
+
+$$\begin{align}
+\delta S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(-F^{\mu \nu}\nabla _{\mu}\delta A_{\nu}-m^{2}A^{\mu}\delta A_{\mu}\right) \\
+ & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(\nabla _{\mu}F^{\mu \nu}-m^{2}A^{\nu}\right)\delta A_{\nu} \\
+ & +\int _{\Sigma _{f}} \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}\delta A_{\nu}-\int _{\Sigma _{i}}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}\delta A_{\nu}
+\end{align}$$
+
+which gives the eom and symplectic potential
+
+$$\begin{align}
+E^{\nu} & =\nabla _{\mu}F^{\mu \nu}-m^{2}A^{\nu} \\
+\theta & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}\delta A_{\nu}
+\end{align}$$
+
+take a variation on the symplectic potential
+
+$$\begin{align}
+\omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\delta A_{\nu}-\nabla _{\nu}\delta A_{\mu})\wedge \delta A^{\nu}
+\end{align}$$
+
+we will argue $\displaystyle{\mathcal{L}_{X_{\xi}}\omega=0}$, where $\displaystyle{X_{\xi}=\int \mathrm{d}^{3}x\sqrt{ -g }\mathcal{L}_{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}}}$. using the Cartan magic formula
+
+$$\begin{align}
+\mathcal{L}_{X_{\xi}}\omega & =\delta(X_{\xi}\cdot \omega) \\
+ & =\delta\left( \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}(X_{\xi}\cdot \delta A_{\nu})-\nabla _{\nu}(X_{\xi}\cdot \delta A_{\mu}))\delta A^{\nu}-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\delta A_{\nu}-\nabla _{\nu}\delta A_{\mu})(X_{\xi}\cdot \delta A^{\nu}) \right) \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}(\xi ^{\rho}\nabla _{\rho}\delta A_{\nu}+\delta A_{\rho}\nabla _{\nu}\xi ^{\rho})-\nabla _{\nu}(\xi ^{\rho}\nabla _{\rho}\delta A_{\mu}+\delta A_{\rho}\nabla _{\mu}\xi ^{\rho}))\wedge \delta A^{\nu}
+\end{align}$$
+
+$$\begin{align}
+\mathcal{L}_{\xi}A_{\mu} & =\xi ^{\nu}\nabla _{\nu}A_{\mu}+A_{\nu}\nabla _{\mu}\xi ^{\nu} \\
+\mathcal{L}_{\xi}A^{\mu} & =\xi ^{\nu}\nabla _{\nu}A^{\mu}-A^{\nu}\nabla _{\nu}\xi ^{\mu}
+\end{align}$$
