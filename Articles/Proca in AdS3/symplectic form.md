@@ -186,21 +186,21 @@ $$\begin{align}
 ---
 
 $$\begin{align}
-S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left( -\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}m^{2}A_{\mu}A^{\mu} \right)
+S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left( -\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}\mu^{2}A_{\mu}A^{\mu} \right)
 \end{align}$$
 
 take a variation
 
 $$\begin{align}
-\delta S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(-F^{\mu \nu}\nabla _{\mu}\delta A_{\nu}-m^{2}A^{\mu}\delta A_{\mu}\right) \\
- & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(\nabla _{\mu}F^{\mu \nu}-m^{2}A^{\nu}\right)\delta A_{\nu} \\
+\delta S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(-F^{\mu \nu}\nabla _{\mu}\delta A_{\nu}-\mu^{2}A^{\mu}\delta A_{\mu}\right) \\
+ & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(\nabla _{\mu}F^{\mu \nu}-\mu^{2}A^{\nu}\right)\delta A_{\nu} \\
  & +\int _{\Sigma _{f}} \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}\delta A_{\nu}-\int _{\Sigma _{i}}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}\delta A_{\nu}
 \end{align}$$
 
 which gives the eom and symplectic potential
 
 $$\begin{align}
-E^{\nu} & =\nabla _{\mu}F^{\mu \nu}-m^{2}A^{\nu} \\
+E^{\nu} & =\nabla _{\mu}F^{\mu \nu}-\mu^{2}A^{\nu} \\
 \theta & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}\delta A_{\nu}
 \end{align}$$
 
@@ -217,14 +217,53 @@ $$\begin{align}
  & = -\delta ^{2}H_{\xi}=0
 \end{align}$$
 
-$$\begin{align}
-X_{\xi}\cdot \delta S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(-F^{\mu \nu}\nabla _{\mu}(X_{\xi}\cdot\delta A_{\nu})-m^{2}A^{\nu}(X_{\xi}\cdot\delta A_{\nu})\right) \\
- & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(-F^{\mu \nu}\nabla _{\mu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})-m^{2}A^{\nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})\right) \\
- & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(-F^{\mu \nu}\nabla _{\mu}\xi ^{\rho}\nabla _{\rho}A_{\nu}-F^{\mu \nu}\xi ^{\rho}\nabla _{\mu}\nabla _{\rho}A_{\nu}-F^{\mu \nu}\nabla _{\mu}A_{\rho}\nabla _{\nu}\xi ^{\rho}-F^{\mu \nu}A_{\rho}\nabla _{\mu}\nabla _{\nu}\xi ^{\rho}-\nabla _{\rho}\left( \frac{1}{2}m^{2}\xi ^{\rho}A_{\nu}A^{\nu} \right)\right)
-\end{align}$$
-
 we will do a direct calculation later.
 
+$$\begin{align}
+X_{\xi}\cdot \delta S & =\int \mathcal{L}_{\xi}\mathbf{L}=\int\mathrm{d}(\xi \cdot \mathbf{L}) \\
+ & =\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left(\frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\frac{1}{2}\mu^{2}g_{\mu \nu}A_{\rho}A^{\rho}\right)
+\end{align}$$
+
+then the Noether charge corresponds to the Killing vector $\displaystyle{\xi ^{\mu}}$ is
+
+$$\begin{align}
+H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}(X_{\xi}\cdot \delta A_{\nu})-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu} \left( \frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} +\frac{1}{2}\mu^{2}g_{\mu \nu}A_{\rho}A^{\rho}\right) \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu} \left( \frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\frac{1}{2}\mu^{2}g_{\mu \nu}A_{\rho}A^{\rho} \right)\\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu}_{~~\rho}F^{\nu\rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} -\frac{1}{2}\mu^{2}g^{\mu \nu}A_{\rho}A^{\rho}\right)
+\end{align}$$
+
+then
+
+$$\begin{align}
+-\frac{1}{4}F_{\rho \sigma}F^{\rho \sigma} & =-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2N^{2}}\sigma ^{ab}\left( D_{a}(N^{2}A^{t})+\partial _{t}A_{a} \right)\left( D_{b}(N^{2}A^{t})+\partial _{t}A_{b}\right) \\
+-\frac{1}{2}\mu^{2}A_{\rho}A^{\rho} & =-\frac{1}{2}\mu ^{2}\sigma ^{ab}A_{a}A_{b}+\frac{1}{2}\mu ^{2}(NA^{t})^{2}
+\end{align}$$
+
+$$\begin{align}
+F^{\mu}_{~~\rho}F^{\nu \rho} & =g_{\rho \sigma}F^{\mu \rho}F^{\nu \sigma} \\
+ & =(\sigma _{\rho \sigma}-\tau _{\rho}\tau _{\sigma})F^{\mu \rho}F^{\nu \sigma} \\
+ & =\sigma _{\rho \sigma}F^{\mu \rho}F^{\nu \sigma}-\tau _{\rho}\tau _{\sigma}F^{\mu \rho}F^{\nu \sigma}
+\end{align}$$
+
+the first term gives
+
+$$\begin{align}
+\sigma _{\rho \sigma}F^{\mu \rho}F^{\nu \sigma} & =\sigma _{\rho \sigma}(\nabla ^{\mu}A^{\rho}-\nabla ^{\rho}A^{\mu})(\nabla ^{\nu}A^{\sigma}-\nabla ^{\sigma}A^{\nu}) \\
+ & =\sigma _{\rho \sigma}\nabla ^{\mu}A^{\rho}\nabla^{\nu}A^{\sigma}-2\sigma _{\rho \sigma}\nabla ^{\rho}A^{\mu}\nabla ^{\nu}A^{\sigma}+\sigma _{\rho \sigma}\nabla ^{\rho}A^{\mu}\nabla ^{\sigma}A^{\nu}
+\end{align}$$
+
+in which the first term gives
+
 $$\tag{.}\begin{align}
-\mathcal{L}_{\xi}A_{\nu} & =\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho}
+\sigma _{\rho \sigma}\nabla ^{\mu}A^{\rho}\nabla ^{\nu}A^{\sigma} & =\sigma _{\rho \sigma}\nabla ^{\mu}(\delta ^{\rho}_{~\alpha}A^{\alpha})
+\end{align}$$
+
+$$\begin{align}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
+\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
 \end{align}$$
