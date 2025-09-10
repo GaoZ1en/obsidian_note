@@ -215,10 +215,26 @@ we will argue $\displaystyle{\mathcal{L}_{X_{\xi}}\omega=0}$, where $\displaysty
 $$\begin{align}
 \mathcal{L}_{X_{\xi}}\omega & =\delta(X_{\xi}\cdot \omega) \\
  & =\delta\left( \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}(X_{\xi}\cdot \delta A_{\nu})-\nabla _{\nu}(X_{\xi}\cdot \delta A_{\mu}))\delta A^{\nu}-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\delta A_{\nu}-\nabla _{\nu}\delta A_{\mu})(X_{\xi}\cdot \delta A^{\nu}) \right) \\
- & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}(\xi ^{\rho}\nabla _{\rho}\delta A_{\nu}+\delta A_{\rho}\nabla _{\nu}\xi ^{\rho})-\nabla _{\nu}(\xi ^{\rho}\nabla _{\rho}\delta A_{\mu}+\delta A_{\rho}\nabla _{\mu}\xi ^{\rho}))\wedge \delta A^{\nu}
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}(\xi ^{\rho}\nabla _{\rho}\delta A_{\nu}+\delta A_{\rho}\nabla _{\nu}\xi ^{\rho})-\nabla _{\nu}(\xi ^{\rho}\nabla _{\rho}\delta A_{\mu}+\delta A_{\rho}\nabla _{\mu}\xi ^{\rho}))\wedge \delta A^{\nu} \\
+ & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\delta A_{\nu}-\nabla _{\nu}\delta A_{\mu})\wedge(\xi ^{\rho}\nabla _{\rho}\delta A^{\nu}-\delta A^{\rho}\nabla _{\rho}\xi ^{\nu})
 \end{align}$$
 
+the first term gives
+
 $$\begin{align}
-\mathcal{L}_{\xi}A_{\mu} & =\xi ^{\nu}\nabla _{\nu}A_{\mu}+A_{\nu}\nabla _{\mu}\xi ^{\nu} \\
-\mathcal{L}_{\xi}A^{\mu} & =\xi ^{\nu}\nabla _{\nu}A^{\mu}-A^{\nu}\nabla _{\nu}\xi ^{\mu}
+ & \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}(\xi ^{\rho}\nabla _{\rho}\delta A_{\nu}+\delta A_{\rho}\nabla _{\nu}\xi ^{\rho})-\nabla _{\nu}(\xi ^{\rho}\nabla _{\rho}\delta A_{\mu}+\delta A_{\rho}\nabla _{\mu}\xi ^{\rho}))\wedge \delta A^{\nu} \\
+= & \int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}(\xi ^{\rho}\nabla _{\rho}\delta A_{\nu})-\nabla _{\nu}(\xi ^{\rho}\nabla _{\rho}\delta A_{\mu}))\wedge \delta A^{\nu}+\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}(\delta A_{\rho}\nabla _{\nu}\xi ^{\rho})-\nabla _{\nu}(\delta A_{\rho}\nabla _{\mu}\xi ^{\rho}))\wedge \delta A^{\nu}
+\end{align}$$
+
+in which the first term is
+
+$$\begin{align}
+ & \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\xi ^{\rho}\nabla _{\rho}\delta A_{\nu}+\xi ^{\rho}\nabla _{\mu}\nabla _{\rho}\delta A_{\nu}-\nabla _{\nu}\xi ^{\rho}\nabla _{\rho}\delta A_{\mu}-\xi ^{\rho}\nabla _{\nu}\nabla _{\rho}\delta A_{\mu})\wedge \delta A^{\nu} \\
+= & \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\xi ^{\rho}\nabla _{\rho}\delta A_{\nu}-\nabla _{\nu}\xi ^{\rho}\nabla _{\rho}\delta A_{\mu})\wedge \delta A^{\nu}+\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\rho}\nabla _{\rho}(\nabla _{\mu}\delta A_{\nu}-\nabla _{\nu}\delta A_{\mu})\wedge \delta A^{\nu} \\
+ & -\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\rho}(R^{\lambda}_{~\nu \mu \rho}-R^{\lambda}_{~\mu \nu \rho})\delta A_{\lambda}\wedge \delta A^{\nu} \\
+= & \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\rho}(\xi ^{\rho}(\nabla _{\mu}\delta A_{\nu}-\nabla _{\nu}\delta A_{\mu}))\wedge \delta A^{\nu}-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla ^{\rho}\xi _{\mu}\nabla _{\rho}\delta A_{\nu}-\nabla ^{\rho}\xi _{\nu}\nabla _{\rho}\delta A_{\mu})\wedge \delta A^{\nu}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu} & =0
 \end{align}$$
