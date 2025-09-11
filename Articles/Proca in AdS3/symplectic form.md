@@ -258,16 +258,12 @@ $$\begin{align}
 
 $$\begin{align}
 \omega[f^{+}_{r,0,0},f^{(-)}_{r,0,0}] & =-2i(\mu+1)\int \mathrm{d}rr^{3}(1+r^{2})^{-(\mu+2)} \\
- & =-i
-\end{align}$$
-
-$$\tag{.}\begin{align}
-r\partial _{r}{f^{(+)}_{r,0,0}}^{t}+\frac{2r^{2}}{1+r^{2}}{f^{(+)}_{r,0,0}}^{t}+\frac{r}{(1+r^{2})^{2}}\partial _{t}{f^{(+)}_{r,0,0}}^{r} & =-\frac{\mu}{2}\sqrt{\frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{i\phi} r(1+r^{2})^{-(\mu+3)/2} \\
-r\partial _{\phi}{f^{(+)}_{r,0,0}}^{t}+\frac{r^{3}}{1+r^{2}}\partial _{t}{f^{(+)}_{r,0,0}}^{\phi} & =-\frac{i\mu}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{i\phi}r^{2}(1+r^{2})^{-(\mu+3)/2}
+ & =-\frac{i}{\mu}
 \end{align}$$
 
 $$\begin{align}
-{f^{(+)}_{r,0,0}}^{t} & =\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{i\phi}r(1+r^{2})^{-(\mu+3)/2} \\
-{f^{(+)}_{r,0,0}}^{r} & =-\frac{i}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{i\phi}(1+r^{2})^{-(\mu+1)/2} \\
-{f^{(+)}_{r,0,0}}^{\phi} & =\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{i\phi}r^{-1}(1+r^{2})^{-(\mu+1)/2} \\
+\omega[f^{(+)}_{l,0,0},f^{(-)}_{l,0,0}] & =-\frac{i}{\mu}
 \end{align}$$
+
+consider $\displaystyle{\omega[{f^{(+)}_{l,n_{1},\bar{n}_{1}}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]}$
+
