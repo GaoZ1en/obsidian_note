@@ -253,11 +253,14 @@ $$\begin{align}
  & =\sigma _{\rho \lambda}\nabla ^{\mu}A^{\rho}\nabla^{\nu}A^{\lambda}-2\sigma _{\rho \lambda}\nabla ^{\rho}A^{\mu}\nabla ^{\nu}A^{\lambda}+\sigma _{\rho \lambda}\nabla ^{\rho}A^{\mu}\nabla ^{\lambda}A^{\nu} \\
  & =\sigma _{\rho \lambda}\nabla ^{\mu}(\sigma ^{\rho}_{\alpha}A^{\alpha}-\tau ^{\rho}\tau _{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\lambda}_{\beta}A^{\beta}-\tau ^{\lambda}\tau _{\beta}A^{\beta})-2\sigma _{\rho \lambda}\nabla ^{\rho}(\sigma ^{\mu}_{\alpha}A^{\alpha}-\tau ^{\mu}\tau _{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\lambda}_{\beta}A^{\beta}-\tau ^{\lambda}\tau _{\beta}A^{\beta}) \\
  & +\sigma _{\rho \lambda}\nabla ^{\rho}(\sigma ^{\mu}_{\alpha}A^{\alpha}-\tau ^{\mu}\tau _{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\nu}_{\beta}A^{\beta}-\tau ^{\nu}\tau _{\beta}A^{\beta}) \\
- & =
+
 \end{align}$$
 
 in which the first term gives
 
 $$\tag{.}\begin{align}
-\sigma _{\rho \lambda}\nabla ^{\mu}A^{\rho}\nabla ^{\nu}A^{\lambda} & =\sigma _{\rho \sigma}\nabla ^{\mu}(\sigma ^{\rho}_{~\alpha}A^{\alpha}-\tau ^{\rho}\tau _{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\lambda}_{})
+\sigma _{\rho \lambda}\nabla ^{\mu}A^{\rho}\nabla ^{\nu}A^{\lambda} & =\sigma _{\rho \sigma}\nabla ^{\mu}(\sigma ^{\rho}_{~\alpha}A^{\alpha}-\tau ^{\rho}\tau _{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\lambda}_{\beta}A^{\beta}-\tau ^{\lambda}\tau _{\beta}A^{\beta}) \\
+ & =\sigma _{\rho \sigma}\nabla ^{\mu}(\sigma ^{\rho}_{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\lambda}_{\beta}A^{\beta})
 \end{align}$$
+
+the second term gives
