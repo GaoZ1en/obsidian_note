@@ -241,16 +241,12 @@ $$\begin{align}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-{f^{(+)}_{r,0,0}}^{t} & =\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}} \frac{1}{2}e^{i(t+\phi)}r(1+r^{2})^{-(\mu+3)/2} \\
-{f^{(+)}_{r,0,0}}^{r} & =\sqrt{ \frac{\mu+1}{\pi \mu} }\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{1}^{r} \\
-{f^{(+)}_{r,0,0}}^{\phi} & =\sqrt{ \frac{\mu+1}{\pi \mu} }\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{1}^{\phi}
-\end{align}$$
-
-where
-
-$$\begin{align}
-\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
+{f^{(+)}_{r,0,0}}^{t} & =\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{i\phi}r(1+r^{2})^{-(\mu+3)/2} \\
+{f^{(+)}_{r,0,0}}^{r} & =-\frac{i}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{i\phi}(1+r^{2})^{-(\mu+1)/2} \\
+{f^{(+)}_{r,0,0}}^{\phi} & =\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{i\phi}r^{-1}(1+r^{2})^{-(\mu+1)/2} \\
+{f^{(+)}_{l,0,0}}^{t} & =\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi}r(1+r^{2})^{-(\mu+3)/2} \\
+{f^{(+)}_{l,0,0}}^{r} & =-\frac{i}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi}(1+r^{2})^{-(\mu+1)/2} \\
+{f^{(+)}_{l,0,0}}^{\phi} & =-\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi}r^{-1}(1+r^{2})^{-(\mu+1)/2}
 \end{align}$$
 
 $$\begin{align}
@@ -258,4 +254,20 @@ $$\begin{align}
  & +\int \mathrm{d}^{2}x\left( r\partial _{\phi}\delta A_{1}^{t}+\frac{r^{3}}{1+r^{2}}\partial _{t}\delta A_{1}^{\phi} \right)\delta A_{2}^{\phi} \\
  & -\int \mathrm{d}^{2}x\left(r\partial _{r}\delta A^{t}_{2}+\frac{2r^{2}}{1+r^{2}}\delta A^{t}_{2}+\frac{r}{(1+r^{2})^{2}}\partial _{t}\delta A^{r}_{2}\right)\delta A^{r}_{1} \\
  & -\int \mathrm{d}^{2}x\left(r\partial _{\phi}\delta A^{t}_{2}+\frac{r^{3}}{1+r^{2}}\partial _{t}\delta A^{\phi}_{2}\right)\delta A^{\phi}_{1}
+\end{align}$$
+
+$$\begin{align}
+\omega[f^{+}_{r,0,0},f^{(-)}_{r,0,0}] & =-2i(\mu+1)\int \mathrm{d}rr^{3}(1+r^{2})^{-(\mu+2)} \\
+ & =-i
+\end{align}$$
+
+$$\tag{.}\begin{align}
+r\partial _{r}{f^{(+)}_{r,0,0}}^{t}+\frac{2r^{2}}{1+r^{2}}{f^{(+)}_{r,0,0}}^{t}+\frac{r}{(1+r^{2})^{2}}\partial _{t}{f^{(+)}_{r,0,0}}^{r} & =-\frac{\mu}{2}\sqrt{\frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{i\phi} r(1+r^{2})^{-(\mu+3)/2} \\
+r\partial _{\phi}{f^{(+)}_{r,0,0}}^{t}+\frac{r^{3}}{1+r^{2}}\partial _{t}{f^{(+)}_{r,0,0}}^{\phi} & =-\frac{i\mu}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{i\phi}r^{2}(1+r^{2})^{-(\mu+3)/2}
+\end{align}$$
+
+$$\begin{align}
+{f^{(+)}_{r,0,0}}^{t} & =\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{i\phi}r(1+r^{2})^{-(\mu+3)/2} \\
+{f^{(+)}_{r,0,0}}^{r} & =-\frac{i}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{i\phi}(1+r^{2})^{-(\mu+1)/2} \\
+{f^{(+)}_{r,0,0}}^{\phi} & =\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{i\phi}r^{-1}(1+r^{2})^{-(\mu+1)/2} \\
 \end{align}$$
