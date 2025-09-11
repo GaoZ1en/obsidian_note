@@ -267,3 +267,39 @@ $$\begin{align}
 
 consider $\displaystyle{\omega[{f^{(+)}_{l,n_{1},\bar{n}_{1}}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]}$
 
+我们有
+$$\begin{align}
+\omega[f^{(+)}_{l,0,0},f^{(-)}_{l,0,0}] & =-i \\
+\omega[f^{(+)}_{r,0,0},f^{(-)}_{r,0,0}] & =-i \\
+\omega[f^{(+)}_{l,0,0},f^{(-)}_{r,0,0}] & =0
+\end{align}$$
+
+$$\begin{align}
+{f^{(+)}_{r,n,\bar{n}}} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu+2)_{n}\mu _{\bar{n}}} }\mathcal{L}_{\xi_{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f^{(+)}_{r,0,0} \\
+{f^{(+)}_{l,n,\bar{n}}} & =\sqrt{ \frac{1}{n!\bar{n}!\mu_{n}(\mu+2) _{\bar{n}}} }\mathcal{L}_{\xi_{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f^{(+)}_{l,0,0}
+\end{align}$$
+
+$$\begin{align}
+\omega[\mathcal{L}_{\xi}A,B]+\omega[A,\mathcal{L}_{\xi}B]=0
+\end{align}$$
+
+$$\begin{align}
+\mathcal{L}_{\xi_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (n+1)(\mu+n+2) }{f_{r,n+1,\bar{n}}^{(+)}}^{\mu}\\
+\mathcal{L}_{\xi_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu+2}{2}+n\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\xi_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ n(\mu+n+1) }{f^{+}_{r,n-1,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\bar{\xi}_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (\bar{n}+1)(\mu+\bar{n}) }{f^{(+)}_{r,n,\bar{n}+1}}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu}{2}+\bar{n}\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\bar{\xi}_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(+)}_{r,n,\bar{n}-1}}^{\mu}
+\end{align}$$
+
+consider
+
+$$\begin{align}
+\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}] & =-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}} 
+\end{align}$$
+
+without loss of generality, we assume that $\displaystyle{n_{1}\geqslant n_{2}}$.
+
+$$\begin{align}
+\mathcal{L}_{X_{\xi _{1}}}\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]=0 & \implies
+\end{align}$$
