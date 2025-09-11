@@ -266,42 +266,7 @@ $$\begin{align}
 \end{align}$$
 ---
 
-consider $\displaystyle{\omega[{f^{(+)}_{l,n_{1},\bar{n}_{1}}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]}$
-
-
-
-我们有
-$$\begin{align}
-\omega[f^{(+)}_{l,0,0},f^{(-)}_{l,0,0}] & =-i \\
-\omega[f^{(+)}_{r,0,0},f^{(-)}_{r,0,0}] & =-i \\
-\omega[f^{(+)}_{l,0,0},f^{(-)}_{r,0,0}] & =0
-\end{align}$$
-
-$$\begin{align}
-{f^{(+)}_{r,n,\bar{n}}} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu+2)_{n}\mu _{\bar{n}}} }\mathcal{L}_{\xi_{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f^{(+)}_{r,0,0} \\
-{f^{(+)}_{l,n,\bar{n}}} & =\sqrt{ \frac{1}{n!\bar{n}!\mu_{n}(\mu+2) _{\bar{n}}} }\mathcal{L}_{\xi_{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f^{(+)}_{l,0,0}
-\end{align}$$
-
-$$\begin{align}
-\omega[\mathcal{L}_{\xi}A,B]+\omega[A,\mathcal{L}_{\xi}B]=0
-\end{align}$$
-
-$$\begin{align}
-\mathcal{L}_{\xi_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (n+1)(\mu+n+2) }{f_{r,n+1,\bar{n}}^{(+)}}^{\mu}\\
-\mathcal{L}_{\xi_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu+2}{2}+n\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\xi_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ n(\mu+n+1) }{f^{+}_{r,n-1,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\bar{\xi}_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (\bar{n}+1)(\mu+\bar{n}) }{f^{(+)}_{r,n,\bar{n}+1}}^{\mu} \\
-\mathcal{L}_{\bar{\xi}_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu}{2}+\bar{n}\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\bar{\xi}_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(+)}_{r,n,\bar{n}-1}}^{\mu} \\
-\mathcal{L}_{\xi_{1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (n+1)(\mu+n+2) }{f_{r,n+1,\bar{n}}^{(-)}}^{\mu}\\
-\mathcal{L}_{\xi_{0}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= i\left(\frac{\mu+2}{2}+n\right){f^{(-)}_{r,n,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\xi_{-1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ n(\mu+n+1) }{f^{(-)}_{r,n-1,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\bar{\xi}_{1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (\bar{n}+1)(\mu+\bar{n}) }{f^{(-)}_{r,n,\bar{n}+1}}^{\mu} \\
-\mathcal{L}_{\bar{\xi}_{0}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= i\left(\frac{\mu}{2}+\bar{n}\right){f^{(-)}_{r,n,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\bar{\xi}_{-1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(-)}_{r,n,\bar{n}-1}}^{\mu}
-\end{align}$$
-
-we have
+consider $\displaystyle{\omega[{f^{(+)}_{l,n_{1},\bar{n}_{1}}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]}$. we have
 
 $$\begin{align}
 {f_{r,1,0}^{(+)}}^{\mu}=\frac{1}{\sqrt{ \mu+2 }}\mathcal{L}_{\xi_{-1}}{f^{(+)}_{r,0,0}}^{\mu} \\
@@ -325,6 +290,12 @@ similarly
 
 $$\begin{align}
 f^{(+)}_{r,0,1} & =\frac{1}{\sqrt{ \mu }}\mathcal{L}_{\bar{\xi}_{-1}}f^{(+)}_{r,0,0} \\
+\omega[f^{(+)}_{r,0,1},f^{(-)}_{r,0,0}] & =\frac{1}{\sqrt{ \mu }}\omega[\mathcal{L}_{\bar{\xi}_{-1}}f^{(+)}_{r,0,0},f^{(-)}_{r,0,0}] \\
+ & =-\frac{1}{\sqrt{ \mu }}\omega[f^{(+)}_{r,0,0},\mathcal{L}_{\bar{\xi}_{-1}}f^{(-)}_{r,0,0}] \\
+ & =0 \\
+\omega[f^{(+)}_{r,0,1},f^{(-)}_{r,1,0}] & =\frac{1}{\sqrt{ \mu }}\omega[\mathcal{L}_{\bar{\xi}_{-1}}f^{(+)}_{r,0,0},f^{(-)}_{r,1,0}] \\
+ & =-\frac{1}{\sqrt{ \mu }}\omega[f^{(+)}_{r,0,0},\mathcal{L}_{\bar{\xi}_{-1}}f^{(-)}_{r,1,0}] \\
+ & =0 \\
 \omega[f^{(+)}_{r,0,1},f^{(-)}_{r,0,1}] & =\frac{1}{\sqrt{ \mu }}\omega[\mathcal{L}_{\bar{\xi}_{-1}}f^{(+)}_{r,0,0},f^{(-)}_{r,0,1}] \\
  & =-\frac{1}{\sqrt{ \mu }}\omega[f^{(+)}_{r,0,0},\mathcal{L}_{\bar{\xi}_{-1}}f^{(-)}_{r,0,1}] \\
  & =\omega[f^{(+)}_{r,0,0},f^{(-)}_{r,0,0}]=-i
@@ -366,4 +337,20 @@ $$\begin{align}
  & =-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}
 \end{align}$$
 
-then by induction, $\displaystyle{\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]=-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}}$ is satisfied for any $\displaystyle{n_{1}+n_{2}}$. similarly, we can prove it is satisfied for ant $\displaystyle{\bar{n}_{1}+\bar{n}_{2}}$. 
+then by induction, $\displaystyle{\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]=-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}}$ is satisfied for any $\displaystyle{n_{1}+n_{2}}$. similarly, we can prove it is satisfied for any $\displaystyle{\bar{n}_{1}+\bar{n}_{2}}$. and similarly, we have $\displaystyle{\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]=-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}}$, and $\displaystyle{\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]=0}$. here we use
+
+
+$$\begin{align}
+\mathcal{L}_{\xi_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (n+1)(\mu+n+2) }{f_{r,n+1,\bar{n}}^{(+)}}^{\mu}\\
+\mathcal{L}_{\xi_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu+2}{2}+n\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\xi_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ n(\mu+n+1) }{f^{+}_{r,n-1,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\bar{\xi}_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (\bar{n}+1)(\mu+\bar{n}) }{f^{(+)}_{r,n,\bar{n}+1}}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu}{2}+\bar{n}\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\bar{\xi}_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(+)}_{r,n,\bar{n}-1}}^{\mu} \\
+\mathcal{L}_{\xi_{1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (n+1)(\mu+n+2) }{f_{r,n+1,\bar{n}}^{(-)}}^{\mu}\\
+\mathcal{L}_{\xi_{0}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= i\left(\frac{\mu+2}{2}+n\right){f^{(-)}_{r,n,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\xi_{-1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ n(\mu+n+1) }{f^{(-)}_{r,n-1,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\bar{\xi}_{1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (\bar{n}+1)(\mu+\bar{n}) }{f^{(-)}_{r,n,\bar{n}+1}}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{0}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= i\left(\frac{\mu}{2}+\bar{n}\right){f^{(-)}_{r,n,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\bar{\xi}_{-1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(-)}_{r,n,\bar{n}-1}}^{\mu}
+\end{align}$$
