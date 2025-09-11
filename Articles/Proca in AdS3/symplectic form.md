@@ -243,27 +243,21 @@ $$\begin{align}
 $$\begin{align}
 F^{\mu}_{~~\rho}F^{\nu \rho} & =g_{\rho \sigma}F^{\mu \rho}F^{\nu \sigma} \\
  & =(\sigma _{\rho \sigma}-\tau _{\rho}\tau _{\sigma})F^{\mu \rho}F^{\nu \sigma} \\
- & =\sigma _{\rho \sigma}F^{\mu \rho}F^{\nu \sigma}-\tau _{\rho}\tau _{\sigma}F^{\mu \rho}F^{\nu \sigma}
+ & =\sigma _{\rho \lambda}F^{\mu \rho}F^{\nu \lambda}-\tau _{\rho}\tau _{\lambda}F^{\mu \rho}F^{\nu \lambda}
 \end{align}$$
 
 the first term gives
 
 $$\begin{align}
-\sigma _{\rho \sigma}F^{\mu \rho}F^{\nu \sigma} & =\sigma _{\rho \sigma}(\nabla ^{\mu}A^{\rho}-\nabla ^{\rho}A^{\mu})(\nabla ^{\nu}A^{\sigma}-\nabla ^{\sigma}A^{\nu}) \\
- & =\sigma _{\rho \sigma}\nabla ^{\mu}A^{\rho}\nabla^{\nu}A^{\sigma}-2\sigma _{\rho \sigma}\nabla ^{\rho}A^{\mu}\nabla ^{\nu}A^{\sigma}+\sigma _{\rho \sigma}\nabla ^{\rho}A^{\mu}\nabla ^{\sigma}A^{\nu}
+\sigma _{\rho \lambda}F^{\mu \rho}F^{\nu \lambda} & =\sigma _{\rho \lambda}(\nabla ^{\mu}A^{\rho}-\nabla ^{\rho}A^{\mu})(\nabla ^{\nu}A^{\lambda}-\nabla ^{\lambda}A^{\nu}) \\
+ & =\sigma _{\rho \lambda}\nabla ^{\mu}A^{\rho}\nabla^{\nu}A^{\lambda}-2\sigma _{\rho \lambda}\nabla ^{\rho}A^{\mu}\nabla ^{\nu}A^{\lambda}+\sigma _{\rho \lambda}\nabla ^{\rho}A^{\mu}\nabla ^{\lambda}A^{\nu} \\
+ & =\sigma _{\rho \lambda}\nabla ^{\mu}(\sigma ^{\rho}_{\alpha}A^{\alpha}-\tau ^{\rho}\tau _{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\lambda}_{\beta}A^{\beta}-\tau ^{\lambda}\tau _{\beta}A^{\beta})-2\sigma _{\rho \lambda}\nabla ^{\rho}(\sigma ^{\mu}_{\alpha}A^{\alpha}-\tau ^{\mu}\tau _{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\lambda}_{\beta}A^{\beta}-\tau ^{\lambda}\tau _{\beta}A^{\beta}) \\
+ & +\sigma _{\rho \lambda}\nabla ^{\rho}(\sigma ^{\mu}_{\alpha}A^{\alpha}-\tau ^{\mu}\tau _{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\nu}_{\beta}A^{\beta}-\tau ^{\nu}\tau _{\beta}A^{\beta}) \\
+ & =
 \end{align}$$
 
 in which the first term gives
 
 $$\tag{.}\begin{align}
-\sigma _{\rho \sigma}\nabla ^{\mu}A^{\rho}\nabla ^{\nu}A^{\sigma} & =\sigma _{\rho \sigma}\nabla ^{\mu}(\delta ^{\rho}_{~\alpha}A^{\alpha})
-\end{align}$$
-
-$$\begin{align}
-\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
-\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
+\sigma _{\rho \lambda}\nabla ^{\mu}A^{\rho}\nabla ^{\nu}A^{\lambda} & =\sigma _{\rho \sigma}\nabla ^{\mu}(\sigma ^{\rho}_{~\alpha}A^{\alpha}-\tau ^{\rho}\tau _{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\lambda}_{})
 \end{align}$$
