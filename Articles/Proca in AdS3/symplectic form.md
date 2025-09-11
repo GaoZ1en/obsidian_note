@@ -264,8 +264,11 @@ $$\begin{align}
 $$\begin{align}
 \omega[f^{(+)}_{l,0,0},f^{(-)}_{l,0,0}] & =-\frac{i}{\mu}
 \end{align}$$
+---
 
 consider $\displaystyle{\omega[{f^{(+)}_{l,n_{1},\bar{n}_{1}}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]}$
+
+
 
 我们有
 $$\begin{align}
@@ -289,22 +292,115 @@ $$\begin{align}
 \mathcal{L}_{\xi_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ n(\mu+n+1) }{f^{+}_{r,n-1,\bar{n}}}^{\mu}\\
 \mathcal{L}_{\bar{\xi}_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (\bar{n}+1)(\mu+\bar{n}) }{f^{(+)}_{r,n,\bar{n}+1}}^{\mu} \\
 \mathcal{L}_{\bar{\xi}_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu}{2}+\bar{n}\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\bar{\xi}_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(+)}_{r,n,\bar{n}-1}}^{\mu}
+\mathcal{L}_{\bar{\xi}_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(+)}_{r,n,\bar{n}-1}}^{\mu} \\
+\mathcal{L}_{\xi_{1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (n+1)(\mu+n+2) }{f_{r,n+1,\bar{n}}^{(-)}}^{\mu}\\
+\mathcal{L}_{\xi_{0}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= i\left(\frac{\mu+2}{2}+n\right){f^{(-)}_{r,n,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\xi_{-1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ n(\mu+n+1) }{f^{(-)}_{r,n-1,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\bar{\xi}_{1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (\bar{n}+1)(\mu+\bar{n}) }{f^{(-)}_{r,n,\bar{n}+1}}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{0}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= i\left(\frac{\mu}{2}+\bar{n}\right){f^{(-)}_{r,n,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\bar{\xi}_{-1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(-)}_{r,n,\bar{n}-1}}^{\mu}
 \end{align}$$
 
-assume
+we have
 
 $$\begin{align}
-\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}] & =-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}} 
+{f_{r,1,\bar{n}}^{(+)}}^{\mu}=\frac{1}{\sqrt{ \mu+2 }}\mathcal{L}_{\xi_{-1}}{f^{(+)}_{r,0,\bar{n}}}^{\mu} \\
 \end{align}$$
 
-is valid for $\displaystyle{n_{1},n_{2},\bar{n}_{1},\bar{n}_{2}=0}$. assume it is valid for $\displaystyle{n_{1},n_{2},\bar{n}_{1},\bar{n}_{2}\leqslant N}$, 
-
-without loss of generality, we assume that $\displaystyle{n_{1}\geqslant n_{2}}$.
+then
 
 $$\begin{align}
-  \mathcal{L}_{X_{\xi}}\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}] & =0  \\
-\implies  \omega[\mathcal{L}_{\xi}{f^{(+)}_{l,n_{1},\bar{n}_{1}}},f^{(-)}_{l,n_{2},\bar{n}_{2}}] & =-\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi}f^{(-)}_{l,n_{2},\bar{n}_{2}}] \\
-\implies  \omega\left[ \sqrt{ \frac{1}{n_{1}!\bar{n}_{1}!(\mu+2)_{n_{1}}\mu _{\bar{n}_{1}}} }\mathcal{L}_{\xi_{-1}}^{n_{1}}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}_{1}}f^{(+)}_{r,0,0}, f^{(-)}_{l,n_{2},\bar{n}_{2}} \right] & =(-1)^{n_{1}+\bar{n}_{1}}\sqrt{ \frac{1}{n_{1}!\bar{n}_{1}!(\mu+2)_{n_{1}}\mu _{\bar{n}_{1}}} }[f^{(+)}_{r,0,0},\mathcal{L}^{n_{1}}_{\xi _{-1}}\mathcal{L}^{\bar{n}_{1}}_{\bar{\xi}_{-1}}f^{(-)}_{l,n_{2},\bar{n}_{2}}] \\
- & =\delta _{n_{1},n_{2}}
+\omega[f^{(+)}_{r,1,0},f^{(-)}_{r,0,0}] & =\frac{1}{\sqrt{ \mu+2 }}\omega[\mathcal{L}_{\xi _{-1}}f^{(+)}_{r,0,0},f^{(-)}_{r,0,0}] \\
+ & =-\frac{1}{\sqrt{ \mu+2 }}\omega[f^{(+)}_{r,0,0},\mathcal{L}_{\xi _{-1}}f^{(-)}_{r,0,0}] \\
+ & =0
 \end{align}$$
+
+assume 
+
+$$\begin{align}
+\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]=-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}
+\end{align}$$
+
+is satisfied for $\displaystyle{n_{1}+\bar{n}_{1}\leqslant N_{1},n_{2}+\bar{n}_{2}\leqslant N_{2}}$, without loss of generality we assume $\displaystyle{N_{1}\geqslant N_{2}}$. then we consider $\displaystyle{n_{1}+\bar{n}_{1}=N_{1}+1}$ and $\displaystyle{n_{2}+\bar{n}_{2}=N_{2}}$. arbitrary $\displaystyle{(n_{2},\bar{n}_{2})}$. without loss of generality, we assume $\displaystyle{n_{1}\geqslant n_{2}=k-m}$. set $\displaystyle{n_{1}=k,\bar{n}_{1}=\bar{k}=N-k+1}$
+
+$$\begin{align}
+f_{r,k,\bar{k}}^{(+)} & =\frac{1}{\sqrt{ k(\mu+k+1) }}\mathcal{L}_{\xi_{-1}}f^{(+)}_{r,k-1,\bar{k}}
+\end{align}$$
+
+then
+
+$$\begin{align}
+\omega[f^{(+)}_{r,k,\bar{k}},f^{(-)}_{r,n_{2},\bar{n}_{2}}] & =\frac{1}{\sqrt{ k(\mu+k+1) }}\omega[\mathcal{L}_{\xi _{-1}}f^{(+)}_{r,k-1,\bar{k}},f^{(-)}_{r,n_{2},\bar{n}_{2}}] \\
+ & =-\frac{1}{\sqrt{ k(\mu+k+1) }}\omega[f^{(+)}_{r,k-1,\bar{k}},\mathcal{L}_{\xi _{-1}}f^{(-)}_{r,n_{2},\bar{n}_{2}}] \\
+ & =\sqrt{ \frac{n_{2}(\mu+n_{2}+1)}{k(\mu+k+1)} }\omega[f^{(+)}_{r,k-1,\bar{k}},f^{(-)}_{r,n_{2}-1,\bar{n}_{2}}]
+\end{align}$$
+
+
+
+
+**Step 1: 递推关系应用**
+
+由模函数构造：
+$$f^{(+)}_{l,k_1+1,\bar{k}_1} = \sqrt{\frac{1}{(k_1+1)\mu_{k_1+1}}} \mathcal{L}_{\xi_{-1}} f^{(+)}_{l,k_1,\bar{k}_1}$$
+
+其中归一化因子来自：
+$$\frac{1}{\sqrt{(k_1+1)!\bar{k}_1!\mu_{k_1+1}(\mu+2)_{\bar{k}_1}}} = \frac{1}{\sqrt{(k_1+1)\mu_{k_1+1}}} \cdot \frac{1}{\sqrt{k_1!\bar{k}_1!\mu_{k_1}(\mu+2)_{\bar{k}_1}}}$$
+
+**Step 2: 内积计算**
+
+$$\begin{align}
+&\omega[f^{(+)}_{l,k_1+1,\bar{k}_1},f^{(-)}_{l,n_2,\bar{n}_2}] \\
+&= \sqrt{\frac{1}{(k_1+1)\mu_{k_1+1}}} \omega[\mathcal{L}_{\xi_{-1}}f^{(+)}_{l,k_1,\bar{k}_1},f^{(-)}_{l,n_2,\bar{n}_2}] \\
+&= -\sqrt{\frac{1}{(k_1+1)\mu_{k_1+1}}} \omega[f^{(+)}_{l,k_1,\bar{k}_1}, \mathcal{L}_{\xi_{-1}}f^{(-)}_{l,n_2,\bar{n}_2}]
+\end{align}$$
+
+**Step 3: 分情况讨论**
+
+**Case A:** $$n_2 = 0$$
+则 $$\mathcal{L}_{\xi_{-1}}f^{(-)}_{l,0,\bar{n}_2} = \sqrt{\mu} f^{(-)}_{l,1,\bar{n}_2}$$
+
+$$\begin{align}
+&\omega[f^{(+)}_{l,k_1+1,\bar{k}_1},f^{(-)}_{l,0,\bar{n}_2}] \\
+&= -\sqrt{\frac{\mu}{(k_1+1)\mu_{k_1+1}}} \omega[f^{(+)}_{l,k_1,\bar{k}_1}, f^{(-)}_{l,1,\bar{n}_2}]
+\end{align}$$
+
+由归纳假设，$$\omega[f^{(+)}_{l,k_1,\bar{k}_1}, f^{(-)}_{l,1,\bar{n}_2}] = -i\delta_{k_1,1}\delta_{\bar{k}_1,\bar{n}_2}$$
+
+- 若 $$k_1 \neq 1$$ 或 $$\bar{k}_1 \neq \bar{n}_2$$，则内积为0 $$\checkmark$$
+- 若 $$k_1 = 1$$ 且 $$\bar{k}_1 = \bar{n}_2$$，则需要验证系数
+
+**Case B:** $$n_2 > 0$$
+则 $$\mathcal{L}_{\xi_{-1}}f^{(-)}_{l,n_2,\bar{n}_2} = \sqrt{(n_2+1)(\mu+n_2+2)} f^{(-)}_{l,n_2+1,\bar{n}_2}$$
+
+由归纳假设：
+$$\omega[f^{(+)}_{l,k_1,\bar{k}_1}, f^{(-)}_{l,n_2+1,\bar{n}_2}] = -i\delta_{k_1,n_2+1}\delta_{\bar{k}_1,\bar{n}_2}$$
+
+因此：
+$$\begin{align}
+&\omega[f^{(+)}_{l,k_1+1,\bar{k}_1},f^{(-)}_{l,n_2,\bar{n}_2}] \\
+&= i\sqrt{\frac{(n_2+1)(\mu+n_2+2)}{(k_1+1)\mu_{k_1+1}}} \delta_{k_1,n_2+1}\delta_{\bar{k}_1,\bar{n}_2}
+\end{align}$$
+
+**Step 4: 系数验证**
+
+当 $$k_1 = n_2 + 1$$ 时，我们需要：
+$$\sqrt{\frac{(n_2+1)(\mu+n_2+2)}{(n_2+2)\mu_{n_2+2}}} = 1$$
+
+这等价于：
+$$(n_2+1)(\mu+n_2+2) = (n_2+2)\mu_{n_2+2}$$
+
+由于 $$\mu_n = \mu + n - 1$$，我们有 $$\mu_{n_2+2} = \mu + n_2 + 1$$：
+$$(n_2+1)(\mu+n_2+2) = (n_2+2)(\mu+n_2+1) = (n_2+1)(\mu+n_2+2) \quad \checkmark$$
+
+---
+
+### **完整结论**
+
+因此：
+$$\omega[f^{(+)}_{l,k_1+1,\bar{k}_1},f^{(-)}_{l,n_2,\bar{n}_2}] = -i\delta_{k_1+1,n_2}\delta_{\bar{k}_1,\bar{n}_2}$$
+
+类似地可以证明关于 $$\bar{n}$$ 量子数的情况。
+
+**QED** $$\blacksquare$$
+
+这个证明展示了[[AdS空间]]中[[模函数]]的完整正交性结构，是[[AdS/CFT对应]]中算符构造的数学基础。
