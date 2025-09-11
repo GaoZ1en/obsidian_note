@@ -292,14 +292,19 @@ $$\begin{align}
 \mathcal{L}_{\bar{\xi}_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(+)}_{r,n,\bar{n}-1}}^{\mu}
 \end{align}$$
 
-consider
+assume
 
 $$\begin{align}
 \omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}] & =-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}} 
 \end{align}$$
 
+is valid for $\displaystyle{n_{1},n_{2},\bar{n}_{1},\bar{n}_{2}=0}$. assume it is valid for $\displaystyle{n_{1},n_{2},\bar{n}_{1},\bar{n}_{2}\leqslant N}$, 
+
 without loss of generality, we assume that $\displaystyle{n_{1}\geqslant n_{2}}$.
 
 $$\begin{align}
-\mathcal{L}_{X_{\xi _{1}}}\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]=0 & \implies
+  \mathcal{L}_{X_{\xi}}\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}] & =0  \\
+\implies  \omega[\mathcal{L}_{\xi}{f^{(+)}_{l,n_{1},\bar{n}_{1}}},f^{(-)}_{l,n_{2},\bar{n}_{2}}] & =-\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi}f^{(-)}_{l,n_{2},\bar{n}_{2}}] \\
+\implies  \omega\left[ \sqrt{ \frac{1}{n_{1}!\bar{n}_{1}!(\mu+2)_{n_{1}}\mu _{\bar{n}_{1}}} }\mathcal{L}_{\xi_{-1}}^{n_{1}}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}_{1}}f^{(+)}_{r,0,0}, f^{(-)}_{l,n_{2},\bar{n}_{2}} \right] & =(-1)^{n_{1}+\bar{n}_{1}}\sqrt{ \frac{1}{n_{1}!\bar{n}_{1}!(\mu+2)_{n_{1}}\mu _{\bar{n}_{1}}} }[f^{(+)}_{r,0,0},\mathcal{L}^{n_{1}}_{\xi _{-1}}\mathcal{L}^{\bar{n}_{1}}_{\bar{\xi}_{-1}}f^{(-)}_{l,n_{2},\bar{n}_{2}}] \\
+ & =\delta _{n_{1},n_{2}}
 \end{align}$$
