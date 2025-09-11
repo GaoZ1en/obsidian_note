@@ -163,28 +163,6 @@ $$\tag{.}\begin{align}
 
 ---
 
-then we will calculate the simplectic form of $\displaystyle{f}$ symbols. we first present the result we will use
-
-$$\begin{align}
-{f^{(+)}_{r,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu+2)_{n}(\mu)_{\bar{n}}} } \sqrt{ \frac{\mu+1}{\pi \mu} }\left(\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{1}^{\mu}+2i\bar{n}\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}-1} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{0}^{\mu}-\bar{n}(\bar{n}-1)\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}-2} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}^{\mu}_{-1}\right) \\
-{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu)_{n}(\mu+2)_{\bar{n}}}}\sqrt{ \frac{\mu+1}{\pi \mu} }\left( \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi _{1}^{\mu}+2in\mathcal{L}_{\xi _{-1}}^{n-1}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi ^{\mu}_{0}-n(n-1)\mathcal{L}_{\xi _{-1}}^{n-2}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi ^{\mu}_{-1} \right) \\
-\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}& =(-i)^{n+\bar{n}}e^{-i(\mu+2+n+\bar{n})t}e^{i(n-\bar{n})\phi} \frac{\Gamma(\bar{n}+1)\Gamma(\mu+n+2)}{\Gamma(\mu+2)}r^{n-\bar{n}}(1+r^{2})^{-(\mu+2+n-\bar{n})/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & =(-i)^{n+\bar{n}}e^{-i(\mu+2+n+\bar{n})t}e^{i(n-\bar{n})\phi} \frac{\Gamma(n+1)\Gamma(\mu+\bar{n}+2)}{\Gamma(\mu+2)}r^{\bar{n}-n}(1+r^{2})^{-(\mu+2+\bar{n}-n)/2}P_{n}^{(\mu+1,\bar{n}-n)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
-\end{align}$$
-
-and
-
-$$\begin{align}
-\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
-\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
-\end{align}$$
-
----
-
 $$\begin{align}
 S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left( -\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}\mu^{2}A_{\mu}A^{\mu} \right)
 \end{align}$$
@@ -210,7 +188,7 @@ $$\begin{align}
 \omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\delta A_{\nu}-\nabla _{\nu}\delta A_{\mu})\wedge \delta A^{\nu}
 \end{align}$$
 
-we will argue $\displaystyle{\mathcal{L}_{X_{\xi}}\omega=0}$, where $\displaystyle{X_{\xi}=\int \mathrm{d}^{3}x\sqrt{ -g }\mathcal{L}_{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}}}$. using the Cartan magic formula
+we will argue $\displaystyle{\mathcal{L}_{X_{\xi}}\omega=0}$, where $\displaystyle{X_{\xi}=\int \mathrm{d}^{3}x\sqrt{ -g }\mathcal{L}_{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}}}$. using the Cartan magic formula and Noether theorem
 
 $$\begin{align}
 \mathcal{L}_{X_{\xi}}\omega & =\delta(X_{\xi}\cdot \delta \theta) \\
@@ -233,34 +211,51 @@ H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
  & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu}_{~~\rho}F^{\nu\rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} -\frac{1}{2}\mu^{2}g^{\mu \nu}A_{\rho}A^{\rho}\right)
 \end{align}$$
 
-then
+---
+
+then we will calculate the simplectic form of $\displaystyle{f}$ symbols. we first present the result we will use
 
 $$\begin{align}
--\frac{1}{4}F_{\rho \sigma}F^{\rho \sigma} & =-\frac{1}{4}\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2N^{2}}\sigma ^{ab}\left( D_{a}(N^{2}A^{t})+\partial _{t}A_{a} \right)\left( D_{b}(N^{2}A^{t})+\partial _{t}A_{b}\right) \\
--\frac{1}{2}\mu^{2}A_{\rho}A^{\rho} & =-\frac{1}{2}\mu ^{2}\sigma ^{ab}A_{a}A_{b}+\frac{1}{2}\mu ^{2}(NA^{t})^{2}
+{f^{(+)}_{r,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu+2)_{n}(\mu)_{\bar{n}}} } \sqrt{ \frac{\mu+1}{\pi \mu} }\left(\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{1}^{\mu}+2i\bar{n}\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}-1} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{0}^{\mu}-\bar{n}(\bar{n}-1)\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}-2} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}^{\mu}_{-1}\right) \\
+{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu)_{n}(\mu+2)_{\bar{n}}}}\sqrt{ \frac{\mu+1}{\pi \mu} }\left( \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi _{1}^{\mu}+2in\mathcal{L}_{\xi _{-1}}^{n-1}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi ^{\mu}_{0}-n(n-1)\mathcal{L}_{\xi _{-1}}^{n-2}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi ^{\mu}_{-1} \right) \\
+\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}& =(-i)^{n+\bar{n}}e^{-i(\mu+2+n+\bar{n})t}e^{i(n-\bar{n})\phi} \frac{\Gamma(\bar{n}+1)\Gamma(\mu+n+2)}{\Gamma(\mu+2)}r^{n-\bar{n}}(1+r^{2})^{-(\mu+2+n-\bar{n})/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & =(-i)^{n+\bar{n}}e^{-i(\mu+2+n+\bar{n})t}e^{i(n-\bar{n})\phi} \frac{\Gamma(n+1)\Gamma(\mu+\bar{n}+2)}{\Gamma(\mu+2)}r^{\bar{n}-n}(1+r^{2})^{-(\mu+2+\bar{n}-n)/2}P_{n}^{(\mu+1,\bar{n}-n)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
+
+and
 
 $$\begin{align}
-F^{\mu}_{~~\rho}F^{\nu \rho} & =g_{\rho \sigma}F^{\mu \rho}F^{\nu \sigma} \\
- & =(\sigma _{\rho \sigma}-\tau _{\rho}\tau _{\sigma})F^{\mu \rho}F^{\nu \sigma} \\
- & =\sigma _{\rho \lambda}F^{\mu \rho}F^{\nu \lambda}-\tau _{\rho}\tau _{\lambda}F^{\mu \rho}F^{\nu \lambda}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
+\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
 \end{align}$$
 
-the first term gives
+we first consider the symplectic form of $\displaystyle{f^{(+)}_{l/r,0,0}}$
 
 $$\begin{align}
-\sigma _{\rho \lambda}F^{\mu \rho}F^{\nu \lambda} & =\sigma _{\rho \lambda}(\nabla ^{\mu}A^{\rho}-\nabla ^{\rho}A^{\mu})(\nabla ^{\nu}A^{\lambda}-\nabla ^{\lambda}A^{\nu}) \\
- & =\sigma _{\rho \lambda}\nabla ^{\mu}A^{\rho}\nabla^{\nu}A^{\lambda}-2\sigma _{\rho \lambda}\nabla ^{\rho}A^{\mu}\nabla ^{\nu}A^{\lambda}+\sigma _{\rho \lambda}\nabla ^{\rho}A^{\mu}\nabla ^{\lambda}A^{\nu} \\
- & =\sigma _{\rho \lambda}\nabla ^{\mu}(\sigma ^{\rho}_{\alpha}A^{\alpha}-\tau ^{\rho}\tau _{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\lambda}_{\beta}A^{\beta}-\tau ^{\lambda}\tau _{\beta}A^{\beta})-2\sigma _{\rho \lambda}\nabla ^{\rho}(\sigma ^{\mu}_{\alpha}A^{\alpha}-\tau ^{\mu}\tau _{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\lambda}_{\beta}A^{\beta}-\tau ^{\lambda}\tau _{\beta}A^{\beta}) \\
- & +\sigma _{\rho \lambda}\nabla ^{\rho}(\sigma ^{\mu}_{\alpha}A^{\alpha}-\tau ^{\mu}\tau _{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\nu}_{\beta}A^{\beta}-\tau ^{\nu}\tau _{\beta}A^{\beta}) \\
-
+{f^{(+)}_{r,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} }\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{1}^{\mu} \\
+{f^{(+)}_{l,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} }\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi _{1}^{\mu}
 \end{align}$$
-
-in which the first term gives
 
 $$\tag{.}\begin{align}
-\sigma _{\rho \lambda}\nabla ^{\mu}A^{\rho}\nabla ^{\nu}A^{\lambda} & =\sigma _{\rho \sigma}\nabla ^{\mu}(\sigma ^{\rho}_{~\alpha}A^{\alpha}-\tau ^{\rho}\tau _{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\lambda}_{\beta}A^{\beta}-\tau ^{\lambda}\tau _{\beta}A^{\beta}) \\
- & =\sigma _{\rho \sigma}\nabla ^{\mu}(\sigma ^{\rho}_{\alpha}A^{\alpha})\nabla ^{\nu}(\sigma ^{\lambda}_{\beta}A^{\beta})
+{f^{(+)}_{r,0,0}}^{t} & =\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}} \frac{1}{2}e^{i(t+\phi)}r(1+r^{2})^{-(\mu+3)/2} \\
+{f^{(+)}_{r,0,0}}^{r} & =\sqrt{ \frac{\mu+1}{\pi \mu} }\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{1}^{r} \\
+{f^{(+)}_{r,0,0}}^{\phi} & =\sqrt{ \frac{\mu+1}{\pi \mu} }\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{1}^{\phi}
 \end{align}$$
 
-the second term gives
+where
+
+$$\begin{align}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
+\end{align}$$
+
+$$\begin{align}
+\omega[\delta A_{1},\delta A_{2}] & = \int \mathrm{d}^{2}x\left(r\partial _{r}\delta A_{1}^{t}+\frac{2r^{2}}{1+r^{2}}\delta A_{1}^{t}+\frac{r}{(1+r^{2})^{2}}\partial _{t}\delta A_{1}^{r}\right)\delta A_{2}^{r} \\
+ & +\int \mathrm{d}^{2}x\left( r\partial _{\phi}\delta A_{1}^{t}+\frac{r^{3}}{1+r^{2}}\partial _{t}\delta A_{1}^{\phi} \right)\delta A_{2}^{\phi} \\
+ & -\int \mathrm{d}^{2}x\left(r\partial _{r}\delta A^{t}_{2}+\frac{2r^{2}}{1+r^{2}}\delta A^{t}_{2}+\frac{r}{(1+r^{2})^{2}}\partial _{t}\delta A^{r}_{2}\right)\delta A^{r}_{1} \\
+ & -\int \mathrm{d}^{2}x\left(r\partial _{\phi}\delta A^{t}_{2}+\frac{r^{3}}{1+r^{2}}\partial _{t}\delta A^{\phi}_{2}\right)\delta A^{\phi}_{1}
+\end{align}$$
