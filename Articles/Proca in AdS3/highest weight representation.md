@@ -208,5 +208,11 @@ $$\begin{align}
 $$\tag{.}\begin{align}
 \mathcal{L}_{\xi _{-1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!\mu _{n}(\mu+2)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n+1}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{l,0,0}}^{\mu} \\
  & =\sqrt{ \frac{(n+1)(\mu+n)}{(n+1)!\bar{n}!\mu _{n+1}(\mu+2)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n+1}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{l,0,0}}^{\mu} \\
- & =
+ & =\sqrt{ (n+1)(\mu+n) }{f^{(+)}_{l,n+1,\bar{n}}}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{-1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!\mu _{n}(\mu+2)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}+1}{f^{(+)}_{l,0,0}}^{\mu} \\
+ & =\sqrt{ (\bar{n}+1)(\mu+\bar{n}+2) }{f^{(+)}_{l,n,\bar{n}+1}}^{\mu} \\
+\mathcal{L}_{\xi _{0}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!\mu _{n}(\mu+2)_{\bar{n}}} }\mathcal{L}_{\xi_{0}}\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{l,0,0}}^{\mu} \\
+ & =\sqrt{ \frac{1}{n!\bar{n}!\mu _{n}(\mu+2)_{\bar{n}}} }\left(\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\xi_{0}}-ni\mathcal{L}_{\xi _{-1}}^{n}\right)\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{l,0,0}}^{\mu} \\
+ & =-i\left( \frac{\mu}{2}+n \right){f^{(+)}_{l,n,\bar{n}}}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{0}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =-i\left( \frac{\mu+2}{2}+\bar{n} \right){f^{(+)}_{l,n,\bar{n}}}^{\mu}
 \end{align}$$
