@@ -55,18 +55,29 @@ $$\begin{align}
 the solution is
 
 $$\begin{align}
-\varphi _{n,m} & =e^{-i\omega _{n,m}t}e^{im\phi}r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P^{(\Delta-1,|m|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)
+\varphi _{n,m} & =C_{n,m}e^{-i\omega _{n,m}t}e^{im\phi}r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P^{(\Delta-1,|m|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)
 \end{align}$$
 
 where $\displaystyle{\Delta=1+\sqrt{ 1+\mu ^{2} }}$.
 
+$$\tag{.}\begin{align}
+\omega[\varphi _{n_{1},m_{1}},\varphi ^{*} _{n_{2},m_{2}}] & =-2\pi i(\omega _{n_{1}m_{1}}+\omega _{n_{2}m_{2}})e^{-i(\omega _{n_{1}m_{1}}-\omega _{n_{2}m_{2}})t}\delta _{m_{1},m_{2}}\int \mathrm{d}r r^{2|m_{1}|+1}(1+r^{2})^{-(\Delta+|m_{1}|+1)}P_{n_{1}}^{(\Delta-1,|m_{1}|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\Delta-1,|m_{1}|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)|C_{n_{1},m_{1}}|^{2} \\
+ & =-2\pi i\delta _{n_{1},n_{2}}\delta _{m_{1},m_{2}} \frac{\Gamma(\Delta+n_{1})\Gamma(n_{1}+|m_{1}|+1)}{\Gamma(\Delta+n_{1}+|m_{1}|)\Gamma(n_{1}+1)}|C_{n_{1},m_{1}}|^{2}
+\end{align}$$
+
+the normalization constant then can
+
 $$\begin{align}
-H_{\xi} & =\int \mathrm{d}r \mathrm{d}\phi  \frac{r}{1+r^{2}}\left( \partial _{t}\varphi \xi ^{\nu}\partial _{\nu}\varphi-\frac{1}{2}\xi _{t}\left(-\frac{1}{1+r^{2}}\partial _{t}\varphi \partial _{t}\varphi+(1+r^{2})\partial _{r}\varphi \partial _{r}\varphi+\frac{1}{r^{2}}\partial _{\phi}\varphi \partial _{\phi}\varphi+\mu ^{2}\varphi ^{2}\right) \right)
+C_{n,m} & =
 \end{align}$$
 
 $$\tag{.}\begin{align}
-H_{\xi_{1}} & =\int \mathrm{d}r \mathrm{d}\phi  \frac{r}{1+r^{2}}\left( \partial _{t}\varphi \xi _{1} ^{\nu}\partial _{\nu}\varphi-\frac{1}{2}\xi _{1,t}\left(-\frac{1}{1+r^{2}}\partial _{t}\varphi \partial _{t}\varphi+(1+r^{2})\partial _{r}\varphi \partial _{r}\varphi+\frac{1}{r^{2}}\partial _{\phi}\varphi \partial _{\phi}\varphi+\mu ^{2}\varphi ^{2}\right) \right) \\
- & =\int \mathrm{d}
+\int _{0}^{\infty} \mathrm{d}r r^{2\beta+1}(1+r^{2})^{-(\alpha+\beta+2)}\left[P^{(\alpha,\beta}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} & =\frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{2(2n+\alpha+\beta+1)\Gamma(n+\alpha+\beta+1)n!}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\tau ^{\mu} & =\frac{1}{N}\delta ^{\mu t} \\
+\sqrt{ \sigma } & =\frac{r}{\sqrt{ 1+r^{2} }}
 \end{align}$$
 
 $$\tag{.}\begin{align}
