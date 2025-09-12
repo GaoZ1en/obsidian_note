@@ -38,5 +38,5 @@ X_{\xi}\cdot \omega & =-\delta H_{\xi}
 
 $$\begin{align}
 X_{\xi} & =\int \mathrm{d}^{3}x\mathcal{L}_{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}} \\
- & =\int \mathrm{d}^{3}x\left(\right)
+ & =\int \mathrm{d}^{3}x\left(\xi ^{\nu}\nabla _{\nu}A_{\mu}+A_{\nu}\nabla _{\mu}\xi ^{\nu}\right) \frac{\delta}{\delta A_{\mu}}
 \end{align}$$
