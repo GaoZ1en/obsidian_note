@@ -110,3 +110,14 @@ $$\tag{.}\begin{align}
 $$\tag{.}\begin{align}
 \omega[\delta \varphi _{1},\delta \varphi _{2}] & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\partial _{\mu}\delta \varphi_{1} \delta \varphi_{2}-\partial _{\mu}\delta \varphi _{2}\delta \varphi _{1})
 \end{align}$$
+
+$$\tag{.}\begin{align}
+X_{\xi}\cdot \omega & =\int \mathrm{d}^{3}x\mathcal{L}_{\xi}\phi \frac{\delta}{\delta \phi}\cdot\int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \phi \wedge \delta \phi \\
+ & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\mathcal{L}_{\xi}\phi \delta \phi-\nabla _{\mu}\delta \phi \mathcal{L}_{\xi}\phi )
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\xi & =\xi ^{\mu}\frac{\partial}{\partial x^{\mu}} \\
+\omega  & =\omega _{\mu \nu}\mathrm{d}x^{\mu}\wedge dx^{\nu} \\
+\iota_{\xi}\omega=?
+\end{align}$$
