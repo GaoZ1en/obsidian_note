@@ -60,7 +60,7 @@ $$\begin{align}
 
 where $\displaystyle{\Delta=1+\sqrt{ 1+\mu ^{2} }}$.
 
-$$\tag{.}\begin{align}
+$$\begin{align}
 \omega[\varphi _{n_{1},m_{1}},\varphi ^{*} _{n_{2},m_{2}}] & =-2\pi i(\omega _{n_{1}m_{1}}+\omega _{n_{2}m_{2}})e^{-i(\omega _{n_{1}m_{1}}-\omega _{n_{2}m_{2}})t}\delta _{m_{1},m_{2}}\int \mathrm{d}r r^{2|m_{1}|+1}(1+r^{2})^{-(\Delta+|m_{1}|+1)}P_{n_{1}}^{(\Delta-1,|m_{1}|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\Delta-1,|m_{1}|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)|C_{n_{1},m_{1}}|^{2} \\
  & =-2\pi i\delta _{n_{1},n_{2}}\delta _{m_{1},m_{2}} \frac{\Gamma(\Delta+n_{1})\Gamma(n_{1}+|m_{1}|+1)}{\Gamma(\Delta+n_{1}+|m_{1}|)\Gamma(n_{1}+1)}|C_{n_{1},m_{1}}|^{2}
 \end{align}$$
@@ -71,53 +71,14 @@ $$\begin{align}
 C_{n,m} & =\sqrt{ \frac{1}{2\pi}\frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}} }
 \end{align}$$
 
-the Noether charge
+Noether theorem states that
 
 $$\begin{align}
-H_{\xi} & =\int \mathrm{d}r \mathrm{d}\phi\frac{r}{1+r^{2}}\left(\partial_{t}\varphi \xi ^{\nu}\partial _{\nu}\varphi-\frac{1}{2}\xi _{t}\left( -\frac{1}{1+r^{2}}\partial _{t}\varphi \partial _{t}\varphi+(1+r^{2})\partial _{r}\varphi \partial _{r}\varphi+\frac{1}{r^{2}}\partial _{\phi}\varphi \partial _{\phi}\varphi+\mu ^{2}\varphi ^{2} \right)\right)
+X_{\xi}\cdot \omega[\delta \phi _{1},\delta \phi _{2}] & = \omega[\mathcal{L}_{\xi}\phi _{1},\delta \phi _{2}] \\
+ & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\mathcal{L}_{\xi}\phi _{1} \delta \phi _{2}-\nabla _{\mu}\delta \phi _{2} \mathcal{L}_{\xi}\phi _{1} )
 \end{align}$$
 
-then
+I think that's it. 
 
-$$\begin{align}
-\varphi & =\sum _{m=-\infty}^{\infty}\sum ^{\infty}_{n=0}(e^{-i\omega _{nm}t}e^{im\phi}\tilde{\varphi} _{nm}a_{nm}+e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm}a^{\dagger}_{nm}) \\
-\tilde{\varphi}_{nm} & =\sqrt{ \frac{1}{2\pi} \frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}} }r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
-\end{align}$$
-$$\tag{.}\begin{align}
-X_{\xi} & =\int \mathrm{d}^3x \xi ^{\mu}\partial _{\mu}\varphi(x)\frac{\delta}{\delta \varphi(x)}
-\end{align}$$
+---
 
-$$\begin{align}
-a_{nm} & =\omega[\varphi,e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm}] \\
- & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{t}(\partial _{t}\varphi e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm}-\partial _{t}(e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm})\varphi)\\
-a^{\dagger}_{nm} & =\omega[e^{-i\omega _{nm}t}e^{im\phi}\tilde{\varphi} _{nm},\varphi] \\
- & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{t}\left(\partial _{t}(e^{-i\omega _{nm}t}e^{im\phi}\tilde{\varphi}_{nm})\varphi-\partial _{t}\varphi e^{-i\omega _{nm}t}e^{im\phi}\tilde{\varphi}_{nm}\right)
-\end{align}$$
-
-$$\begin{align}
-\frac{\delta a_{nm}}{\delta \varphi(t,r,\phi)} & =-\frac{2i\omega _{nm}}{N^{2}}e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm}(r)\delta(t) \\
-\frac{\delta a^{\dagger}_{nm}}{\delta \varphi(t,r,\phi)} & =-\frac{2i\omega _{nm}}{N^{2}}e^{-i\omega _{nm}t}e^{im\phi}\tilde{\varphi}_{nm}(r)\delta(t)
-\end{align}$$
-
-$$\begin{align}
-X_{\xi} & =\sum ^{\infty}_{m=-\infty}\sum ^{\infty}_{n=0}\int \mathrm{d}^{3}x \xi ^{\mu}\partial _{\mu}\varphi \left( \frac{\delta a_{nm}}{\delta \varphi} \frac{\delta}{\delta a_{nm}}+\frac{\delta a^{\dagger}_{nm}}{\delta \varphi} \frac{\delta}{\delta a^{\dagger}_{nm}} \right)
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\int \mathrm{d}^{3}x \xi ^{\mu}\partial _{\mu}\varphi -\frac{2i\omega _{nm}}{N^{2}}e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm}(r)
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\omega[\delta \varphi _{1},\delta \varphi _{2}] & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\partial _{\mu}\delta \varphi_{1} \delta \varphi_{2}-\partial _{\mu}\delta \varphi _{2}\delta \varphi _{1})
-\end{align}$$
-
-$$\tag{.}\begin{align}
-X_{\xi}\cdot \omega & =\int \mathrm{d}^{3}x\mathcal{L}_{\xi}\phi \frac{\delta}{\delta \phi}\cdot\int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \phi \wedge \delta \phi \\
- & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\mathcal{L}_{\xi}\phi \delta \phi-\nabla _{\mu}\delta \phi \mathcal{L}_{\xi}\phi )
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\xi & =\xi ^{\mu}\frac{\partial}{\partial x^{\mu}} \\
-\omega  & =\omega _{\mu \nu}\mathrm{d}x^{\mu}\wedge dx^{\nu} \\
-\iota_{\xi}\omega=?
-\end{align}$$
