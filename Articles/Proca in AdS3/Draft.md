@@ -1,111 +1,65 @@
-$$\tag{1.1}\begin{align}
-\nabla _{\mu}F^{\mu \nu}-\mu ^{2}A^{\nu} & =0
-\end{align}$$
+我来逐步计算第一项。首先需要明确各个量的表达式和指标升降关系。
 
-$$\tag{.}\begin{align}
-\nabla _{\mu}F^{\mu \nu} & =\frac{1}{\sqrt{ -g }}\partial _{\mu}\sqrt{ -g }(g^{\mu \rho}\partial _{\rho}A^{\nu}-g^{\nu \rho}\partial _{\rho}A^{\mu})+g^{\rho \sigma}\partial _{\rho}\partial _{\sigma}A^{\nu}-g^{\nu \rho}\partial _{\rho}\partial _{\mu}A^{\mu}
-\end{align}$$
+## 基本设置
 
-$$\tag{.}\begin{align}
-\mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r ^{2}}{1+r ^{2}}+r^{2}\mathrm{d}\phi ^{2} \\
-\sqrt{ -g } & =r
-\end{align}$$
+给定度规：
+$$g_{\mu\nu} = -(1+r^2)\delta^t_\mu\delta^t_\nu + \frac{1}{1+r^2}\delta^r_\mu\delta^r_\nu + r^2\delta^\phi_\mu\delta^\phi_\nu$$
 
-$$\tag{.}\begin{align}
-\nabla _{\mu}F^{\mu t} & =\frac{1}{\sqrt{ -g }}\partial _{r}\sqrt{ -g }(g^{rr}\partial _{r}A^{t}-g^{t t}\partial _{t}A^{r})+g^{\rho \sigma}\partial _{\rho}\partial _{\sigma}A^{t}-g^{tt}\partial _{t}\partial _{\mu}A^{\mu} \\
- & =\frac{1}{r}\left( (1+r^{2})\partial _{r}A^{t}+\frac{1}{1+r^{2}}\partial _{t}A^{r} \right)+(1+r^{2})\partial _{r}^{2}A^{t}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{1}{1+r^{2}}\partial _{t}\partial _{r}A^{r}+\frac{1}{1+r^{2}}\partial _{t}\partial _{\phi}A^{\phi} \\
- & =(1+r^{2})\partial _{r}^{2}A^{t}+\frac{1+r^{2}}{r}\partial _{r}A^{t}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{1}{1+r^{2}}\partial _{t}\partial _{r}A^{r}+\frac{1}{r(1+r^{2})}\partial _{t}A^{r}+\frac{1}{1+r^{2}}\partial _{t}\partial _{\phi}A^{\phi}
-\end{align}$$
+逆度规为：
+$$g^{\mu\nu} = -\frac{1}{1+r^2}\delta^\mu_t\delta^\nu_t + (1+r^2)\delta^\mu_r\delta^\nu_r + \frac{1}{r^2}\delta^\mu_\phi\delta^\nu_\phi$$
 
-$$\tag{.}\begin{align}
-\nabla _{\mu}F^{\mu r} & =g^{\rho \sigma}\partial _{\rho}\partial _{\sigma}A^{r}-g^{rr}\partial _{r}\partial _{\mu}A^{\mu} \\
- & =-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{r}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{r}-(1+r^{2})\partial _{t}\partial _{r}A^{t}-(1+r^{2})\partial _{r}\partial _{\phi}A^{\phi}
-\end{align}$$
+## 场强张量分量
 
-$$\tag{.}\begin{align}
-\nabla _{\mu}F^{\mu \phi} & =\frac{1}{r}(g^{rr}\partial _{r}A^{\phi}-g^{\phi \phi}\partial _{\phi}A^{r})+g^{\rho \sigma}\partial _{\rho}\partial _{\sigma}A^{\phi}-g^{\phi \phi}\partial _{\phi}\partial _{\mu}A^{\mu} \\
- & =\frac{1+r^{2}}{r}\partial _{r}A^{\phi}-\frac{1}{r^{3}}\partial _{\phi}A^{r}-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{\phi}+(1+r^{2})\partial _{r}^{2}A^{\phi}-\frac{1}{r^{2}}\partial _{t}\partial _{\phi}A^{t}-\frac{1}{r^{2}}\partial _{r}\partial _{\phi}A^{r}
-\end{align}$$
+$$F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$$
 
-then the eoms becomes
+非零分量：
+- $$F_{tr} = \partial_t A_r - \partial_r A_t$$
+- $$F_{t\phi} = \partial_t A_\phi - \partial_\phi A_t$$  
+- $$F_{r\phi} = \partial_r A_\phi - \partial_\phi A_r$$
 
-$$\tag{.}\begin{align}
-(1+r^{2})\partial _{r}^{2}A^{t}+\frac{1+r^{2}}{r}\partial _{r}A^{t}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}-\mu ^{2}A^{t}+\frac{1}{1+r^{2}}\partial _{t}\partial _{r}A^{r}+\frac{1}{r(1+r^{2})}\partial _{t}A^{r}+\frac{1}{1+r^{2}}\partial _{t}\partial _{\phi}A^{\phi} & =0 \\
--(1+r^{2})\partial _{t}\partial _{r}A^{t}-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{r}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{r}-\mu ^{2}A^{r}-(1+r^{2})\partial _{r}\partial _{\phi}A^{\phi} & =0 \\
--\frac{1}{r^{2}}\partial _{t}\partial _{\phi}A^{t}+\frac{1+r^{2}}{r}\partial _{r}A^{\phi}-\frac{1}{r^{3}}\partial _{\phi}A^{r}-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{\phi}+(1+r^{2})\partial _{r}^{2}A^{\phi}-\frac{1}{r^{2}}\partial _{r}\partial _{\phi}A^{r}-\mu ^{2}A^{\phi} & =0
-\end{align}$$
+升指标得到：
+$$F^{\mu\nu} = g^{\mu\alpha}g^{\nu\beta}F_{\alpha\beta}$$
 
-$$\tag{.}\begin{align}
-\partial _{t}A^{t} & =\partial _{r}A^{r}
-\end{align}$$
+具体计算：
+- $$F^{tr} = g^{tt}g^{rr}F_{tr} = \left(-\frac{1}{1+r^2}\right)(1+r^2)(\partial_t A_r - \partial_r A_t) = -(\partial_t A_r - \partial_r A_t)$$
+- $$F^{t\phi} = g^{tt}g^{\phi\phi}F_{t\phi} = \left(-\frac{1}{1+r^2}\right)\frac{1}{r^2}(\partial_t A_\phi - \partial_\phi A_t) = -\frac{1}{r^2(1+r^2)}(\partial_t A_\phi - \partial_\phi A_t)$$
+- $$F^{r\phi} = g^{rr}g^{\phi\phi}F_{r\phi} = (1+r^2)\frac{1}{r^2}(\partial_r A_\phi - \partial_\phi A_r) = \frac{1+r^2}{r^2}(\partial_r A_\phi - \partial_\phi A_r)$$
 
-$$\tag{.}\begin{align}
-(1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{1+r^{2}}{r}\partial _{r}\tilde{A}^{r}+\left( -\mu ^{2}-1+\frac{\omega ^{2}}{1+r^{2}}-\frac{m^{2}}{r^{2}} \right)\tilde{A}^{r} & =0 \\
-(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{1+r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( -\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}}-\frac{m^{2}}{r^{2}} \right)\tilde{A}^{\phi}& =0
-\end{align}$$
+## 混合张量 $F^\mu_{~~\rho}$
 
----
+$$F^\mu_{~~\rho} = g^{\mu\alpha}F_{\alpha\rho}$$
 
-$$\tag{.}\begin{align}
-{h^{(+)}_{+,m=0,n}}^{t} & = \frac{e^{-i(\mu+2+2n)t}}{\mu+2+2n}\left[(\mu r^{2}-2)(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{2}(1+r^{2})^{-(\mu+6)/2}P_{n}^{(\mu,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]\\
-{h^{(+)}_{+,m=0,n}}^{r} & = -ie^{-i(\mu+2+2n)t}r(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
-{h^{(+)}_{+,m=0,n}}^{\phi} & = e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
-{h^{(+)}_{-,m=0,n}}^{t} & = \frac{e^{-i(\mu+2+2n)t}}{\mu+2+2n}\left[(\mu r^{2}-2)(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{2}(1+r^{2})^{-(\mu+6)/2}P_{n}^{(\mu,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]\\
-{h^{(+)}_{-,m=0,n}}^{r} & = -ie^{-i(\mu+2+2n)t}r(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
-{h^{(+)}_{-,m=0,n}}^{\phi} & =-e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
-\end{align}$$
+计算各分量：
+- $$F^t_{~~r} = g^{tt}F_{tr} = -\frac{1}{1+r^2}(\partial_t A_r - \partial_r A_t)$$
+- $$F^t_{~~\phi} = g^{tt}F_{t\phi} = -\frac{1}{1+r^2}(\partial_t A_\phi - \partial_\phi A_t)$$
+- $$F^r_{~~t} = g^{rr}F_{rt} = (1+r^2)(\partial_r A_t - \partial_t A_r)$$
+- $$F^r_{~~\phi} = g^{rr}F_{r\phi} = (1+r^2)(\partial_r A_\phi - \partial_\phi A_r)$$
+- $$F^\phi_{~~t} = g^{\phi\phi}F_{\phi t} = \frac{1}{r^2}(\partial_\phi A_t - \partial_t A_\phi)$$
+- $$F^\phi_{~~r} = g^{\phi\phi}F_{\phi r} = \frac{1}{r^2}(\partial_\phi A_r - \partial_r A_\phi)$$
 
-$$\tag{.}\begin{align}
-\tilde{A}^{t} & =\frac{1}{i\omega}\left(\partial _{r}\tilde{A}^{r}+\frac{1}{r}\tilde{A}^{r}+im\tilde{A}^{\phi}\right)
-\end{align}$$
+## 第一项计算
 
-the asymptotic behavior when $\displaystyle{r\to \infty}$ is
+给定 $$\tau_\mu = -\sqrt{1+r^2}\delta_{\mu t}$$，所以只有 $\tau_t = -\sqrt{1+r^2}$，其他分量为零。
 
-$$\begin{align}
-{h^{(+)}_{+,m=0,n}}^{t} & = e^{-i(\mu+2n+2)t}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{(\mu+2n+2)\Gamma(\mu)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)}) \\
-{h^{(+)}_{+,m=0,n}}^{r} & = -ie^{-i(\mu+2n+2)t}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)}) \\
-{h^{(+)}_{+,m=0,n}}^{\phi} & = e^{-i(\mu+2n+2)t}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)}) \\
-{h^{(+)}_{-,m=0,n}}^{t} & = e^{-i(\mu+2n+2)t}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{(\mu+2n+2)\Gamma(\mu)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})\\
-{h^{(+)}_{-,m=0,n}}^{r} & = -ie^{-i(\mu+2+2n)t}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)}) \\
-{h^{(+)}_{-,m=0,n}}^{\phi} & =-e^{-i(\mu+2+2n)t}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)}) \\
-\end{align}$$
+因此：
+$$\tau_\mu\xi_\nu F^\mu_{~~\rho}F^{\nu\rho} = \tau_t\xi_\nu F^t_{~~\rho}F^{\nu\rho} = -\sqrt{1+r^2}\xi_\nu F^t_{~~\rho}F^{\nu\rho}$$
 
-$$\tag{.}\begin{align}
-{h^{(+)}_{+,m\geqslant 1,n}}^{t} & = \frac{e^{-i(\mu+n+2n)t}e^{im\phi}}{\mu+m+2n}\left[(\mu+m)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]\\
-{h^{(+)}_{+,m\geqslant 1,n}}^{r} & = -ie^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
-{h^{(+)}_{+,m\geqslant 1,n}}^{\phi} & = e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-2}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
-{h^{(+)}_{-,m\geqslant 1,n}}^{t} & = \frac{e^{-i(\mu+m+2n+2)t}e^{im\phi}}{\mu+m+2n+2}\left[((\mu-m)r^{2}-2(m+1))r^{m}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m+2}(1+r^{2})^{-(\mu+m+6)/2}P_{n}^{(\mu,m+1)/}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]\\
-{h^{(+)}_{-,m\geqslant 1,n}}^{r} & = -ie^{-i(\mu+m+2n+2)t}e^{im\phi}r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
-{h^{(+)}_{-,m\geqslant 1,n}}^{\phi} & = -e^{-i(\mu+m+2n+2)t}e^{im\phi}r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
-\end{align}$$
+展开求和：
+$$= -\sqrt{1+r^2}\left[\xi_t F^t_{~~\rho}F^{t\rho} + \xi_r F^t_{~~\rho}F^{r\rho} + \xi_\phi F^t_{~~\rho}F^{\phi\rho}\right]$$
 
-the asymptotic behavior when $\displaystyle{r\to \infty}$ is
+计算各项：
+1. $$F^t_{~~\rho}F^{t\rho} = F^t_{~~r}F^{tr} + F^t_{~~\phi}F^{t\phi}$$
+2. $$F^t_{~~\rho}F^{r\rho} = F^t_{~~t}F^{rt} + F^t_{~~\phi}F^{r\phi}$$
+3. $$F^t_{~~\rho}F^{\phi\rho} = F^t_{~~t}F^{\phi t} + F^t_{~~r}F^{\phi r}$$
 
-$$\tag{.}\begin{align}
-{h^{(+)}_{+,m\geqslant 1,n}}^{t} & = e^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+2)}\frac{(\mu+m)\Gamma(\mu+n+1)}{(\mu+m+2n)\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)}) \\
-{h^{(+)}_{+,m\geqslant 1,n}}^{r} & =-ie^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)})\\
-{h^{(+)}_{+,m\geqslant 1,n}}^{\phi} & =e^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})\\
-{h^{(+)}_{-,m\geqslant 1,n}}^{t} & = e^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+2)}\frac{(\mu-m)\Gamma(\mu+n+1)}{(\mu+m+2n+2)\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})\\
-{h^{(+)}_{-,m\geqslant 1,n}}^{r} & = -ie^{-i(\mu+m+2n+2)t}e^{im\phi}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)})\\
-{h^{(+)}_{-,m\geqslant 1,n}}^{\phi} & = -e^{-i(\mu+m+2n+2)t}e^{im\phi}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})
-\end{align}$$
+## 最终结果
 
-$$\tag{.}\begin{align}
-{h^{(+)}_{+,m\leqslant -1,n}}^{t} & = \frac{e^{-i(\mu-m+2n+2)t}e^{im\phi}}{\mu-m+2n+2}\left[((\mu+m)r^{2}+2(m-1))r^{-m}(1+r^{2})^{-(\mu-m+4)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{-m+2}(1+r^{2})^{-(\mu-m+6)/2}P_{n}^{(\mu,-m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]\\
-{h^{(+)}_{+,m\leqslant -1,n}}^{r} & = -ie^{-i(\mu-m+2n+2)t}e^{im\phi}r^{-m+1}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
-{h^{(+)}_{+,m\leqslant -1,n}}^{\phi} & = e^{-i(\mu-m+2n+2)t}e^{im\phi}r^{-m}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
-{h^{(+)}_{-,m\leqslant -1,n}}^{t} & = \frac{e^{-i(\mu-m+2n)t}e^{im\phi}}{\mu-m+2n}\left[(\mu-m)r^{-m}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{-m}(1+r^{2})^{-(\mu-m+4)/2}P_{n}^{(\mu,-m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]\\
-{h^{(+)}_{-,m\leqslant -1,n}}^{r} & = -ie^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-1}(1+r^{2})^{-(\mu-m)/2}P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
-{h^{(+)}_{-,m\leqslant -1,n}}^{\phi} & = -e^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-2}(1+r^{2})^{-(\mu-m)/2}P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
-\end{align}$$
+第一项表达式为：
+$$\boxed{\begin{align}
+&\int dr\,d\phi \frac{r}{\sqrt{1+r^2}}\tau_\mu\xi_\nu F^\mu_{~~\rho}F^{\nu\rho} \\
+&= -\int dr\,d\phi \,r \left[\xi_t \left(\frac{(\partial_t A_r - \partial_r A_t)^2}{1+r^2} + \frac{(\partial_t A_\phi - \partial_\phi A_t)^2}{r^2(1+r^2)^2}\right) \right.\\
+&\quad + \xi_r \left(\frac{(\partial_t A_\phi - \partial_\phi A_t)(\partial_r A_\phi - \partial_\phi A_r)}{r^2}\right) \\
+&\quad \left. + \xi_\phi \left(\frac{(\partial_t A_r - \partial_r A_t)(\partial_\phi A_r - \partial_r A_\phi)}{r^2(1+r^2)} + \frac{(\partial_t A_\phi - \partial_\phi A_t)(\partial_\phi A_t - \partial_t A_\phi)}{r^2(1+r^2)}\right)\right]
+\end{align}}$$
 
-the asymptotic behavior when $\displaystyle{r\to \infty}$ is
-
-$$\tag{.}\begin{align}
-{h^{(+)}_{+,m\leqslant -1,n}}^{t} & = e^{-i(\mu-m+2n+2)t}e^{im\phi} r^{-(\mu+2)} \frac{(\mu+m)\Gamma(\mu+n+1)}{(\mu-m+2n+2)\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)}) \\
-{h^{(+)}_{+,m\leqslant -1,n}}^{r} & = -ie^{-i(\mu-m+2n+2)t}e^{im\phi}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)})\\
-{h^{(+)}_{+,m\leqslant -1,n}}^{\phi} & = e^{-i(\mu-m+2n+2)t}e^{im\phi}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})\\
-{h^{(+)}_{-,m\leqslant -1,n}}^{t} & = e^{-i(\mu-m+2n+2)t}e^{im\phi} r^{-(\mu+2)} \frac{(\mu-m)\Gamma(\mu+n+1)}{(\mu-m+2n)\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})\\
-{h^{(+)}_{-,m\leqslant -1,n}}^{r} & = -ie^{-i(\mu-m+2n)t}e^{im\phi}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)})\\
-{h^{(+)}_{-,m\leqslant -1,n}}^{\phi} & = -e^{-i(\mu-m+2n)t}e^{im\phi}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})
-\end{align}$$
+这个表达式现在完全用 $A^t, A^r, A^\phi$ 及其偏导数和参数 $\xi_{t,r,\phi}$ 表示。

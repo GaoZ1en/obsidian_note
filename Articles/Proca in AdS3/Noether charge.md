@@ -91,7 +91,7 @@ H_{\xi_{1}} & =\int \mathrm{d}r \mathrm{d}\phi\frac{r}{1+r^{2}}\left(\partial_{t
 
 $$\begin{align}
 H_{\xi_{0}} & =\frac{1}{2}\int \mathrm{d}r \mathrm{d}\phi\frac{r}{1+r^{2}}\left(\partial_{t}\varphi \partial _{t}\varphi-\partial _{t}\varphi \partial _{\phi}\varphi-\frac{1}{2}\left( -\frac{1}{1+r^{2}}\partial _{t}\varphi \partial _{t}\varphi+(1+r^{2})\partial _{r}\varphi \partial _{r}\varphi+\frac{1}{r^{2}}\partial _{\phi}\varphi \partial _{\phi}\varphi+\mu ^{2}\varphi ^{2} \right)\right) \\
- & =\frac{1}{2}\int \mathrm{d}r\mathrm{d}\phi \frac{r}{1+r^{2}} \sum ^{\infty}_{m_{1},m_{2}=-\infty}\sum ^{\infty}_{n_{1},n_{2}=0}\left(\partial _{t}(e^{-i\omega _{n_{1}m_{1}}t}e^{im_{1}\phi})\right)
+ & =\frac{1}{2}\int \mathrm{d}r\mathrm{d}\phi \frac{r}{1+r^{2}} \sum ^{\infty}_{m_{1},m_{2}=-\infty}\sum ^{\infty}_{n_{1},n_{2}=0}\left(\partial _{t}(e^{-i\omega _{n_{1}m_{1}}t}e^{im_{1}\phi}\varphi _{n_{1}m_{1}}a_{n_{1}m_{1}}+e^{i\omega _{n_{1}m_{1}}t}e^{-im_{1}\phi}\varphi _{n_{1}m_{1}}a^{\dagger}_{n_{1}m_{1}})\partial _{t}(e^{-i\omega _{n_{2}m_{2}}t}e^{im_{2}\phi}\varphi _{n_{2}m_{2}}a_{n_{2}m_{2}}+e^{i\omega _{n_{2}m_{2}}t}e^{-im_{2}\phi}\varphi _{n_{2}m_{2}}a^{\dagger}_{n_{2}m_{2}})\right)
 \end{align}$$
 
 $$\tag{.}\begin{align}
@@ -106,3 +106,16 @@ $$\tag{.}\begin{align}
 $$\tag{.}\begin{align}
 (1+r^{2})\partial _{r}^{2}\varphi+\frac{1+3r^{2}}{r}\partial _{r}\varphi-\mu ^{2}\varphi-\frac{1}{1+r^{2}}\partial _{t}^{2}\varphi+\frac{1}{r^{2}}\partial _{\phi}^{2}\varphi & =0
 \end{align}$$
+
+
+帮我把以下表达式表示成$\displaystyle{A^{t},A^{r},A^{\phi}}$(注意是上标)的泛函
+$$\begin{align}
+\int \mathrm{d}r \mathrm{d}\phi \frac{r}{\sqrt{ 1+r^{2} }}\tau _{\mu}\xi _{\nu}\left( F^{\mu}_{~~\rho}F^{\nu\rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} -\frac{1}{2}\mu^{2}g^{\mu \nu}A_{\rho}A^{\rho}\right)
+\end{align}$$
+其中希腊字母$\displaystyle{\mu,\nu=(t,r,\phi)}$
+$$\begin{align}
+g_{\mu \nu} & =-(1+r^{2})\delta ^{t}_{\mu}\delta ^{t}_{\nu}+\frac{1}{1+r^{2}}\delta ^{r}_{\mu}\delta ^{r}_{\nu}+r^{2}\delta ^{\phi}_{\mu}\delta ^{\phi}_{\nu} \\
+\tau _{\mu} & = -\sqrt{ 1+r^{2} }\delta _{\mu t}\\
+F_{\mu \nu} & =\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}
+\end{align}$$
+另外求导都要求是下标，也就是$\displaystyle{\partial _{\mu}}$而不是$\displaystyle{\partial ^{\mu}}$。这里$\displaystyle{\xi _{\mu}}$可以保留到$\displaystyle{\xi _{t,r,\phi}}$。我们先把第一项$\displaystyle{\int \mathrm{d}r \mathrm{d}\phi \frac{r}{\sqrt{ 1+r^{2} }}\tau _{\mu}\xi _{\nu}F^{\mu}_{~~\rho}F^{\nu\rho}}$做出来

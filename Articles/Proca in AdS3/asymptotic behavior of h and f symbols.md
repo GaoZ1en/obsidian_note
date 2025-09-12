@@ -1,3 +1,65 @@
+$$\tag{.}\begin{align}
+{h^{(+)}_{+,m=0,n}}^{t} & = \frac{e^{-i(\mu+2+2n)t}}{\mu+2+2n}\left[(\mu r^{2}-2)(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{2}(1+r^{2})^{-(\mu+6)/2}P_{n}^{(\mu,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]\\
+{h^{(+)}_{+,m=0,n}}^{r} & = -ie^{-i(\mu+2+2n)t}r(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
+{h^{(+)}_{+,m=0,n}}^{\phi} & = e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
+{h^{(+)}_{-,m=0,n}}^{t} & = \frac{e^{-i(\mu+2+2n)t}}{\mu+2+2n}\left[(\mu r^{2}-2)(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{2}(1+r^{2})^{-(\mu+6)/2}P_{n}^{(\mu,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]\\
+{h^{(+)}_{-,m=0,n}}^{r} & = -ie^{-i(\mu+2+2n)t}r(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
+{h^{(+)}_{-,m=0,n}}^{\phi} & =-e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+the asymptotic behavior when $\displaystyle{r\to \infty}$ is
+
+$$\begin{align}
+{h^{(+)}_{+,m=0,n}}^{t} & = e^{-i(\mu+2n+2)t}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{(\mu+2n+2)\Gamma(\mu)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)}) \\
+{h^{(+)}_{+,m=0,n}}^{r} & = -ie^{-i(\mu+2n+2)t}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)}) \\
+{h^{(+)}_{+,m=0,n}}^{\phi} & = e^{-i(\mu+2n+2)t}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)}) \\
+{h^{(+)}_{-,m=0,n}}^{t} & = e^{-i(\mu+2n+2)t}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{(\mu+2n+2)\Gamma(\mu)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})\\
+{h^{(+)}_{-,m=0,n}}^{r} & = -ie^{-i(\mu+2+2n)t}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)}) \\
+{h^{(+)}_{-,m=0,n}}^{\phi} & =-e^{-i(\mu+2+2n)t}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)}) \\
+\end{align}$$
+
+$$\tag{.}\begin{align}
+{h^{(+)}_{+,m\geqslant 1,n}}^{t} & = \frac{e^{-i(\mu+n+2n)t}e^{im\phi}}{\mu+m+2n}\left[(\mu+m)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]\\
+{h^{(+)}_{+,m\geqslant 1,n}}^{r} & = -ie^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
+{h^{(+)}_{+,m\geqslant 1,n}}^{\phi} & = e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-2}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
+{h^{(+)}_{-,m\geqslant 1,n}}^{t} & = \frac{e^{-i(\mu+m+2n+2)t}e^{im\phi}}{\mu+m+2n+2}\left[((\mu-m)r^{2}-2(m+1))r^{m}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m+2}(1+r^{2})^{-(\mu+m+6)/2}P_{n}^{(\mu,m+1)/}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]\\
+{h^{(+)}_{-,m\geqslant 1,n}}^{r} & = -ie^{-i(\mu+m+2n+2)t}e^{im\phi}r^{m+1}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
+{h^{(+)}_{-,m\geqslant 1,n}}^{\phi} & = -e^{-i(\mu+m+2n+2)t}e^{im\phi}r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+the asymptotic behavior when $\displaystyle{r\to \infty}$ is
+
+$$\tag{.}\begin{align}
+{h^{(+)}_{+,m\geqslant 1,n}}^{t} & = e^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+2)}\frac{(\mu+m)\Gamma(\mu+n+1)}{(\mu+m+2n)\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)}) \\
+{h^{(+)}_{+,m\geqslant 1,n}}^{r} & =-ie^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)})\\
+{h^{(+)}_{+,m\geqslant 1,n}}^{\phi} & =e^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})\\
+{h^{(+)}_{-,m\geqslant 1,n}}^{t} & = e^{-i(\mu+m+2n)t}e^{im\phi}r^{-(\mu+2)}\frac{(\mu-m)\Gamma(\mu+n+1)}{(\mu+m+2n+2)\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})\\
+{h^{(+)}_{-,m\geqslant 1,n}}^{r} & = -ie^{-i(\mu+m+2n+2)t}e^{im\phi}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)})\\
+{h^{(+)}_{-,m\geqslant 1,n}}^{\phi} & = -e^{-i(\mu+m+2n+2)t}e^{im\phi}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})
+\end{align}$$
+
+$$\tag{.}\begin{align}
+{h^{(+)}_{+,m\leqslant -1,n}}^{t} & = \frac{e^{-i(\mu-m+2n+2)t}e^{im\phi}}{\mu-m+2n+2}\left[((\mu+m)r^{2}+2(m-1))r^{-m}(1+r^{2})^{-(\mu-m+4)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{-m+2}(1+r^{2})^{-(\mu-m+6)/2}P_{n}^{(\mu,-m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]\\
+{h^{(+)}_{+,m\leqslant -1,n}}^{r} & = -ie^{-i(\mu-m+2n+2)t}e^{im\phi}r^{-m+1}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
+{h^{(+)}_{+,m\leqslant -1,n}}^{\phi} & = e^{-i(\mu-m+2n+2)t}e^{im\phi}r^{-m}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
+{h^{(+)}_{-,m\leqslant -1,n}}^{t} & = \frac{e^{-i(\mu-m+2n)t}e^{im\phi}}{\mu-m+2n}\left[(\mu-m)r^{-m}(1+r^{2})^{-(\mu-m+2)/2}P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{-m}(1+r^{2})^{-(\mu-m+4)/2}P_{n}^{(\mu,-m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right]\\
+{h^{(+)}_{-,m\leqslant -1,n}}^{r} & = -ie^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-1}(1+r^{2})^{-(\mu-m)/2}P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\\
+{h^{(+)}_{-,m\leqslant -1,n}}^{\phi} & = -e^{-i(\mu-m+2n)t}e^{im\phi}r^{-m-2}(1+r^{2})^{-(\mu-m)/2}P_{n}^{(\mu,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+the asymptotic behavior when $\displaystyle{r\to \infty}$ is
+
+$$\tag{.}\begin{align}
+{h^{(+)}_{+,m\leqslant -1,n}}^{t} & = e^{-i(\mu-m+2n+2)t}e^{im\phi} r^{-(\mu+2)} \frac{(\mu+m)\Gamma(\mu+n+1)}{(\mu-m+2n+2)\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)}) \\
+{h^{(+)}_{+,m\leqslant -1,n}}^{r} & = -ie^{-i(\mu-m+2n+2)t}e^{im\phi}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)})\\
+{h^{(+)}_{+,m\leqslant -1,n}}^{\phi} & = e^{-i(\mu-m+2n+2)t}e^{im\phi}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})\\
+{h^{(+)}_{-,m\leqslant -1,n}}^{t} & = e^{-i(\mu-m+2n+2)t}e^{im\phi} r^{-(\mu+2)} \frac{(\mu-m)\Gamma(\mu+n+1)}{(\mu-m+2n)\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})\\
+{h^{(+)}_{-,m\leqslant -1,n}}^{r} & = -ie^{-i(\mu-m+2n)t}e^{im\phi}r^{-(\mu+1)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+3)})\\
+{h^{(+)}_{-,m\leqslant -1,n}}^{\phi} & = -e^{-i(\mu-m+2n)t}e^{im\phi}r^{-(\mu+2)} \frac{\Gamma(\mu+n+1)}{\Gamma(\mu+1)\Gamma(n+1)}+\mathcal{O}(r^{-(\mu+4)})
+\end{align}$$
+
+---
+
 here we present the asymptotic behaviors of $\displaystyle{h}$ and $\displaystyle{f}$ symbols, and try to find the relationship between them.
 
 $$\tag{1.1}\begin{align}
