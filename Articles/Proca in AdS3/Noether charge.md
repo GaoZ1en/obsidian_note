@@ -30,4 +30,13 @@ H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
 
 ---
 
-then we will calculate the expression 
+note that
+
+$$\begin{align}
+X_{\xi}\cdot \omega & =-\delta H_{\xi}
+\end{align}$$
+
+$$\begin{align}
+X_{\xi} & =\int \mathrm{d}^{3}x\mathcal{L}_{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}} \\
+ & =\int \mathrm{d}^{3}x\left(\right)
+\end{align}$$
