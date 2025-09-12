@@ -39,32 +39,29 @@ S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(-\frac{1}{2}\nabla _{\mu}\varphi \nabl
 H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left(\nabla _{\mu}\varphi \nabla _{\nu}\varphi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\varphi \nabla ^{\rho}\varphi-\frac{1}{2}g_{\mu \nu}\mu ^{2}\varphi ^{2}\right)
 \end{align}$$
 
-
-
-$$\begin{align}
-\mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2}
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\sqrt{ -g } & =r
-\end{align}$$
-
-$$\tag{.}\begin{align} \\
-\varphi & =e^{-i\omega t}e^{im\phi}\tilde{\varphi} \\
-
-(1+r^{2})\partial _{r}^{2}\tilde{\varphi}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{\varphi}+ \left( -\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}}-\frac{m^{2}}{r^{2}} \right)\varphi& =0
+the eom is
+$$\begin{align} \\
+\varphi=e^{-i\omega t}e^{im\phi}\tilde{\varphi} \\
+(1+r^{2})\partial _{r}^{2}\tilde{\varphi}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{\varphi}+ \left( -\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}}-\frac{m^{2}}{r^{2}} \right)\tilde{\varphi} =0
 \end{align}$$
 
 finiteness of the action gives the following two asymptotic behavior of $\displaystyle{\varphi}$:
 
 $$\begin{align}
-\varphi\to \mathcal{O}
+\varphi\to \mathcal{O}(r^{0}),r\to0 \\
+\varphi\to \mathcal{o}(r^{-1}),r\to \infty
+\end{align}$$
+
+the solution is
+
+$$\begin{align}
+\tilde{\varphi} & =\left( \frac{\sin ^{2} \rho}{\cos ^{2}\rho} \right)^{|m|/2}(\cos ^{2} \rho)^{(\Delta+|m|)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m|+\Delta-\omega), \frac{1}{2}(|m|+\Delta+\omega);\Delta ;\frac{1}{1+r^{2}} \right) \\
+ & =r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}{}_{2}F_{1}\left(-n,\Delta+|m|+n;\Delta; \frac{1}{1+r^{2}}\right) \\
+ & =
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\int \mathrm{d}r\left(-\frac{s^{2}}{2}r^{2s-1}-\frac{1}{2}\mu ^{2}r^{2s+1}\right) & =
+P^{(\alpha,\beta)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)
 \end{align}$$
 
-$$\begin{align}
-r\to 0, 2s-1>0
-\end{align}$$
+where $\displaystyle{\Delta=1+\sqrt{ 1+\mu ^{2} }}$
