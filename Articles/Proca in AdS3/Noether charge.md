@@ -84,7 +84,7 @@ $$\begin{align}
 \tilde{\varphi}_{nm} & =\sqrt{ \frac{1}{2\pi} \frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}} }r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 $$\tag{.}\begin{align}
-X_{\xi} & =\int \mathrm{d}^3x \xi ^{\mu}\partial _{\mu}\varphi\frac{\delta}{\delta \varphi}
+X_{\xi} & =\int \mathrm{d}^3x \xi ^{\mu}\partial _{\mu}\varphi(x)\frac{\delta}{\delta \varphi(x)}
 \end{align}$$
 
 $$\begin{align}
@@ -92,6 +92,19 @@ a_{nm} & =\omega[\varphi,e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm}] \\
  & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{t}(\partial _{t}\varphi e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm}-\partial _{t}(e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm})\varphi)\\
 a^{\dagger}_{nm} & =\omega[e^{-i\omega _{nm}t}e^{im\phi}\tilde{\varphi} _{nm},\varphi] \\
  & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{t}\left(\partial _{t}(e^{-i\omega _{nm}t}e^{im\phi}\tilde{\varphi}_{nm})\varphi-\partial _{t}\varphi e^{-i\omega _{nm}t}e^{im\phi}\tilde{\varphi}_{nm}\right)
+\end{align}$$
+
+$$\begin{align}
+\frac{\delta a_{nm}}{\delta \varphi(t,r,\phi)} & =-\frac{2i\omega _{nm}}{N^{2}}e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm}(r)\delta(t) \\
+\frac{\delta a^{\dagger}_{nm}}{\delta \varphi(t,r,\phi)} & =-\frac{2i\omega _{nm}}{N^{2}}e^{-i\omega _{nm}t}e^{im\phi}\tilde{\varphi}_{nm}(r)\delta(t)
+\end{align}$$
+
+$$\begin{align}
+X_{\xi} & =\sum ^{\infty}_{m=-\infty}\sum ^{\infty}_{n=0}\int \mathrm{d}^{3}x \xi ^{\mu}\partial _{\mu}\varphi \left( \frac{\delta a_{nm}}{\delta \varphi} \frac{\delta}{\delta a_{nm}}+\frac{\delta a^{\dagger}_{nm}}{\delta \varphi} \frac{\delta}{\delta a^{\dagger}_{nm}} \right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\int \mathrm{d}^{3}x \xi ^{\mu}\partial _{\mu}\varphi -\frac{2i\omega _{nm}}{N^{2}}e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm}(r)
 \end{align}$$
 
 $$\tag{.}\begin{align}
