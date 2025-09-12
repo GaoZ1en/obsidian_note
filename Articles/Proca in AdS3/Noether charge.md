@@ -55,13 +55,25 @@ $$\begin{align}
 the solution is
 
 $$\begin{align}
-\tilde{\varphi} & =\left( \frac{\sin ^{2} \rho}{\cos ^{2}\rho} \right)^{|m|/2}(\cos ^{2} \rho)^{(\Delta+|m|)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m|+\Delta-\omega), \frac{1}{2}(|m|+\Delta+\omega);\Delta ;\frac{1}{1+r^{2}} \right) \\
- & =r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}{}_{2}F_{1}\left(-n,\Delta+|m|+n;\Delta; \frac{1}{1+r^{2}}\right) \\
- & =
+\varphi _{n,m} & =e^{-i\omega _{n,m}t}e^{im\phi}r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P^{(\Delta-1,|m|)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)
+\end{align}$$
+
+where $\displaystyle{\Delta=1+\sqrt{ 1+\mu ^{2} }}$.
+
+$$\begin{align}
+H_{\xi} & =\int \mathrm{d}r \mathrm{d}\phi  \frac{r}{1+r^{2}}\left( \partial _{t}\varphi \xi ^{\nu}\partial _{\nu}\varphi-\frac{1}{2}\xi _{t}\left(-\frac{1}{1+r^{2}}\partial _{t}\varphi \partial _{t}\varphi+(1+r^{2})\partial _{r}\varphi \partial _{r}\varphi+\frac{1}{r^{2}}\partial _{\phi}\varphi \partial _{\phi}\varphi+\mu ^{2}\varphi ^{2}\right) \right)
 \end{align}$$
 
 $$\tag{.}\begin{align}
-P^{(\alpha,\beta)}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right)
+H_{\xi_{1}} & =\int \mathrm{d}r \mathrm{d}\phi  \frac{r}{1+r^{2}}\left( \partial _{t}\varphi \xi _{1} ^{\nu}\partial _{\nu}\varphi-\frac{1}{2}\xi _{1,t}\left(-\frac{1}{1+r^{2}}\partial _{t}\varphi \partial _{t}\varphi+(1+r^{2})\partial _{r}\varphi \partial _{r}\varphi+\frac{1}{r^{2}}\partial _{\phi}\varphi \partial _{\phi}\varphi+\mu ^{2}\varphi ^{2}\right) \right) \\
+ & =\int \mathrm{d}
 \end{align}$$
 
-where $\displaystyle{\Delta=1+\sqrt{ 1+\mu ^{2} }}$
+$$\tag{.}\begin{align}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
+\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
+\end{align}$$
