@@ -80,47 +80,20 @@ H_{\xi} & =\int \mathrm{d}r \mathrm{d}\phi\frac{r}{1+r^{2}}\left(\partial_{t}\va
 then
 
 $$\begin{align}
-\varphi & =\sum _{m=-\infty}^{\infty}\sum ^{\infty}_{n=0}e^{-i\omega _{nm}t}e^{im\phi}r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\varphi & =\sum _{m=-\infty}^{\infty}\sum ^{\infty}_{n=0}(e^{-i\omega _{nm}t}e^{im\phi}\tilde{\varphi} _{nm}a_{nm}+e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm}a^{\dagger}_{nm}) \\
+\tilde{\varphi}_{nm} & =\sqrt{ \frac{1}{2\pi} \frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}} }r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+$$\tag{.}\begin{align}
+X_{\xi} & =\int \mathrm{d}^3x \xi ^{\mu}\partial _{\mu}\varphi\frac{\delta}{\delta \varphi}
 \end{align}$$
 
 $$\begin{align}
-H_{\xi_{1}} & =\int \mathrm{d}r \mathrm{d}\phi\frac{r}{1+r^{2}}\left(\partial_{t}\varphi \xi ^{\nu}\partial _{\nu}\varphi-\frac{1}{2}\xi _{t}\left( -\frac{1}{1+r^{2}}\partial _{t}\varphi \partial _{t}\varphi+(1+r^{2})\partial _{r}\varphi \partial _{r}\varphi+\frac{1}{r^{2}}\partial _{\phi}\varphi \partial _{\phi}\varphi+\mu ^{2}\varphi ^{2} \right)\right) \\
- & =\int \mathrm{d}r \mathrm{d}\phi \frac{r}{1+r^{2}}\left(\frac{r(3+r^{2})}{2(1+r^{2})^{3/2}}\partial _{t}\varphi \partial _{t}\varphi-i\sqrt{ 1+r^{2} }\partial _{t}\varphi \partial _{r}\varphi-\frac{\sqrt{ 1+r^{2} }}{r}\partial _{t}\varphi \partial _{\phi}\varphi-\frac{r\sqrt{ 1+r^{2} }}{2}\partial _{r}\varphi \partial _{r}\varphi-\frac{1}{2r\sqrt{ 1+r^{2} }}\partial _{\phi}\varphi \partial _{\phi}\varphi-\frac{\mu ^{2}r}{2\sqrt{ 1+r^{2} }}\varphi ^{2}\right) \frac{1}{2}e^{i(t-\phi)} \\
- & =\int \mathrm{d}r \mathrm{d}\phi \frac{r}{1+r^{2}}
-\end{align}$$
-
-$$\begin{align}
-H_{\xi_{0}} & =\frac{1}{2}\int \mathrm{d}r \mathrm{d}\phi\frac{r}{1+r^{2}}\left(\partial_{t}\varphi \partial _{t}\varphi-\partial _{t}\varphi \partial _{\phi}\varphi-\frac{1}{2}\left( -\frac{1}{1+r^{2}}\partial _{t}\varphi \partial _{t}\varphi+(1+r^{2})\partial _{r}\varphi \partial _{r}\varphi+\frac{1}{r^{2}}\partial _{\phi}\varphi \partial _{\phi}\varphi+\mu ^{2}\varphi ^{2} \right)\right) \\
- & =\frac{1}{2}\int \mathrm{d}r\mathrm{d}\phi \frac{r}{1+r^{2}} \sum ^{\infty}_{m_{1},m_{2}=-\infty}\sum ^{\infty}_{n_{1},n_{2}=0}\left(\partial _{t}(e^{-i\omega _{n_{1}m_{1}}t}e^{im_{1}\phi}\varphi _{n_{1}m_{1}}a_{n_{1}m_{1}}+e^{i\omega _{n_{1}m_{1}}t}e^{-im_{1}\phi}\varphi _{n_{1}m_{1}}a^{\dagger}_{n_{1}m_{1}})\partial _{t}(e^{-i\omega _{n_{2}m_{2}}t}e^{im_{2}\phi}\varphi _{n_{2}m_{2}}a_{n_{2}m_{2}}+e^{i\omega _{n_{2}m_{2}}t}e^{-im_{2}\phi}\varphi _{n_{2}m_{2}}a^{\dagger}_{n_{2}m_{2}})\right. \\
- & -\partial _{\phi}(e^{-i\omega _{n_{1}m_{1}}t}e^{im_{1}\phi}\varphi _{n_{1}m_{1}}a_{n_{1}m_{1}}+e^{i\omega _{n_{1}m_{1}}t}e^{-im_{1}\phi}\varphi _{n_{1}m_{1}}a^{\dagger}_{n_{1}m_{1}})\partial _{\phi}(e^{-i\omega _{n_{2}m_{2}}t}e^{im_{2}\phi}\varphi _{n_{2}m_{2}}a_{n_{2}m_{2}}+e^{i\omega _{n_{2}m_{2}}t}e^{-im_{2}\phi}\varphi _{n_{2}m_{2}}a^{\dagger}_{n_{2}m_{2}}) \\
- & +\frac{1}{2(1+r^{2})}(-i\omega _{n_{1},m_{1}}e^{-i\omega _{n_{1}m_{1}}t}e^{im_{1}\phi}\varphi _{n_{1}m_{1}}a_{n_{1}m_{1}}+e^{i\omega _{n_{1}m_{1}}t}e^{-im_{1}\phi}\varphi _{n_{1}m_{1}}a^{\dagger}_{n_{1}m_{1}})\partial _{t}(e^{-i\omega _{n_{2}m_{2}}t}e^{im_{2}\phi}\varphi _{n_{2}m_{2}}a_{n_{2}m_{2}}+e^{i\omega _{n_{2}m_{2}}t}e^{-im_{2}\phi}\varphi _{n_{2}m_{2}}a^{\dagger}_{n_{2}m_{2}}) \\
- & +\frac{1}{2}(1+r^{2})\partial _{r}(e^{-i\omega _{n_{1}m_{1}}t}e^{im_{1}\phi}\varphi _{n_{1}m_{1}}a_{n_{1}m_{1}}+e^{i\omega _{n_{1}m_{1}}t}e^{-im_{1}\phi}\varphi _{n_{1}m_{1}}a^{\dagger}_{n_{1}m_{1}})\partial _{r}(e^{-i\omega _{n_{2}m_{2}}t}e^{im_{2}\phi}\varphi _{n_{2}m_{2}}a_{n_{2}m_{2}}+e^{i\omega _{n_{2}m_{2}}t}e^{-im_{2}\phi}\varphi _{n_{2}m_{2}}a^{\dagger}_{n_{2}m_{2}}) \\
- & -\frac{1}{2r^{2}}\partial _{\phi}(e^{-i\omega _{n_{1}m_{1}}t}e^{im_{1}\phi}\varphi _{n_{1}m_{1}}a_{n_{1}m_{1}}+e^{i\omega _{n_{1}m_{1}}t}e^{-im_{1}\phi}\varphi _{n_{1}m_{1}}a^{\dagger}_{n_{1}m_{1}})\partial _{\phi}(e^{-i\omega _{n_{2}m_{2}}t}e^{im_{2}\phi}\varphi _{n_{2}m_{2}}a_{n_{2}m_{2}}+e^{i\omega _{n_{2}m_{2}}t}e^{-im_{2}\phi}\varphi _{n_{2}m_{2}}a^{\dagger}_{n_{2}m_{2}}) \\
- & \left. -\frac{1}{2}\mu ^{2}(e^{-i\omega _{n_{1}m_{1}}t}e^{im_{1}\phi}\varphi _{n_{1}m_{1}}a_{n_{1}m_{1}}+e^{i\omega _{n_{1}m_{1}}t}e^{-im_{1}\phi}\varphi _{n_{1}m_{1}}a^{\dagger}_{n_{1}m_{1}})(e^{-i\omega _{n_{2}m_{2}}t}e^{im_{2}\phi}\varphi _{n_{2}m_{2}}a_{n_{2}m_{2}}+e^{i\omega _{n_{2}m_{2}}t}e^{-im_{2}\phi}\varphi _{n_{2}m_{2}}a^{\dagger}_{n_{2}m_{2}}) \right)
+a_{nm} & =\omega[\varphi,e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm}] \\
+ & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{t}(\partial _{t}\varphi e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm}-\partial _{t}(e^{i\omega _{nm}t}e^{-im\phi}\tilde{\varphi}_{nm})\varphi)\\
+a^{\dagger}_{nm} & =\omega[e^{-i\omega _{nm}t}e^{im\phi}\tilde{\varphi} _{nm},\varphi] \\
+ & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{t}\left(\partial _{t}(e^{-i\omega _{nm}t}e^{im\phi}\tilde{\varphi}_{nm})\varphi-\partial _{t}\varphi e^{-i\omega _{nm}t}e^{im\phi}\tilde{\varphi}_{nm}\right)
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
-\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
-\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
+\omega[\delta \varphi _{1},\delta \varphi _{2}] & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\partial _{\mu}\delta \varphi_{1} \delta \varphi_{2}-\partial _{\mu}\delta \varphi _{2}\delta \varphi _{1})
 \end{align}$$
-
-$$\tag{.}\begin{align}
-(1+r^{2})\partial _{r}^{2}\varphi+\frac{1+3r^{2}}{r}\partial _{r}\varphi-\mu ^{2}\varphi-\frac{1}{1+r^{2}}\partial _{t}^{2}\varphi+\frac{1}{r^{2}}\partial _{\phi}^{2}\varphi & =0
-\end{align}$$
-
-
-帮我把以下表达式表示成$\displaystyle{A^{t},A^{r},A^{\phi}}$(注意是上标)的泛函
-$$\begin{align}
-\int \mathrm{d}r \mathrm{d}\phi \frac{r}{\sqrt{ 1+r^{2} }}\tau _{\mu}\xi _{\nu}\left( F^{\mu}_{~~\rho}F^{\nu\rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} -\frac{1}{2}\mu^{2}g^{\mu \nu}A_{\rho}A^{\rho}\right)
-\end{align}$$
-其中希腊字母$\displaystyle{\mu,\nu=(t,r,\phi)}$
-$$\begin{align}
-g_{\mu \nu} & =-(1+r^{2})\delta ^{t}_{\mu}\delta ^{t}_{\nu}+\frac{1}{1+r^{2}}\delta ^{r}_{\mu}\delta ^{r}_{\nu}+r^{2}\delta ^{\phi}_{\mu}\delta ^{\phi}_{\nu} \\
-\tau _{\mu} & = -\sqrt{ 1+r^{2} }\delta _{\mu t}\\
-F_{\mu \nu} & =\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}
-\end{align}$$
-另外求导都要求是下标，也就是$\displaystyle{\partial _{\mu}}$而不是$\displaystyle{\partial ^{\mu}}$。这里$\displaystyle{\xi _{\mu}}$可以保留到$\displaystyle{\xi _{t,r,\phi}}$。我们先把第一项$\displaystyle{\int \mathrm{d}r \mathrm{d}\phi \frac{r}{\sqrt{ 1+r^{2} }}\tau _{\mu}\xi _{\nu}F^{\mu}_{~~\rho}F^{\nu\rho}}$做出来
