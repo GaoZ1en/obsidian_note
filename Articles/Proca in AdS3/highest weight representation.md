@@ -183,3 +183,30 @@ $$\begin{align}
 {f^{(-)}_{r/l,n,\bar{n}}}^{\mu} & =({f^{(+)}_{r/l,n,\bar{n}}})^{*}
 \end{align}$$
 
+$$\begin{align}
+\mathcal{L}_{\xi_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (n+1)(\mu+n+2) }{f_{r,n+1,\bar{n}}^{(+)}}^{\mu}\\
+\mathcal{L}_{\xi_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu+2}{2}+n\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\xi_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ n(\mu+n+1) }{f^{+}_{r,n-1,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\bar{\xi}_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (\bar{n}+1)(\mu+\bar{n}) }{f^{(+)}_{r,n,\bar{n}+1}}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu}{2}+\bar{n}\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}\\
+\mathcal{L}_{\bar{\xi}_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(+)}_{r,n,\bar{n}-1}}^{\mu}
+\end{align}$$
+
+$$\begin{align}
+\mathcal{L}_{\xi _{-1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & = \\
+\mathcal{L}_{\xi _{0}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & = \\
+\mathcal{L}_{\xi _{1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & = \\
+\mathcal{L}_{\bar{\xi} _{-1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & = \\
+\mathcal{L}_{\bar{\xi} _{0}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & = \\
+\mathcal{L}_{\bar{\xi} _{1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =
+\end{align}$$
+
+$$\begin{align}
+{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu)_{n}(\mu+2)}_{\bar{n}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{l,0,0}}^{\mu}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\mathcal{L}_{\xi _{-1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!\mu _{n}(\mu+2)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n+1}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{l,0,0}}^{\mu} \\
+ & =\sqrt{ \frac{(n+1)(\mu+n)}{(n+1)!\bar{n}!\mu _{n+1}(\mu+2)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n+1}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{l,0,0}}^{\mu} \\
+ & =
+\end{align}$$
