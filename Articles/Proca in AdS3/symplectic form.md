@@ -197,20 +197,6 @@ $$\begin{align}
 
 we will do a direct calculation later.
 
-$$\begin{align}
-X_{\xi}\cdot \delta S & =\int \mathcal{L}_{\xi}\mathbf{L}=\int\mathrm{d}(\xi \cdot \mathbf{L}) \\
- & =\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left(\frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\frac{1}{2}\mu^{2}g_{\mu \nu}A_{\rho}A^{\rho}\right)
-\end{align}$$
-
-then the Noether charge corresponds to the Killing vector $\displaystyle{\xi ^{\mu}}$ is
-
-$$\begin{align}
-H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
- & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}(X_{\xi}\cdot \delta A_{\nu})-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu} \left( \frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} +\frac{1}{2}\mu^{2}g_{\mu \nu}A_{\rho}A^{\rho}\right) \\
- & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu} \left( \frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\frac{1}{2}\mu^{2}g_{\mu \nu}A_{\rho}A^{\rho} \right)\\
- & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu}_{~~\rho}F^{\nu\rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} -\frac{1}{2}\mu^{2}g^{\mu \nu}A_{\rho}A^{\rho}\right)
-\end{align}$$
-
 ---
 
 then we will calculate the simplectic form of $\displaystyle{f}$ symbols. we first present the result we will use
@@ -403,9 +389,11 @@ A^{\mu} & =\sum _{n,\bar{n}=0}^{\infty}\left({f^{(+)}_{r,n,\bar{n}}}^{\mu}a_{r,n
 then the symplectic form can be expanded as
 
 $$\begin{align}
-\omega[\delta A_{1}^{\mu},(\delta A_{2}^{\mu})^{*}] & =\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{l,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a_{l,n,\bar{n}} \\
- & +\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]\delta a_{l,n,\bar{n}}\wedge \delta a_{l,n,\bar{n}} \\
- & +\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{r,n,\bar{n}}\wedge \delta a_{l,n,\bar{n}} \\
- & +\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{l,n,\bar{n}}\wedge \delta a_{l,n,\bar{n}} \\
- & =
+\omega[\delta A_{1}^{\mu},(\delta A_{2}^{\mu})^{*}] & = \sum ^{\infty}_{n_{1},n_{2},\bar{n}_{1},\bar{n}_{2}=0}\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n_{1},\bar{n}_{1}}\wedge \delta a^{\dagger}_{r,n_{2},\bar{n}_{2}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]\delta a_{r,n_{1},\bar{n}_{1}}\wedge \delta a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n_{1},\bar{n}_{1}}\wedge \delta a_{r,n_{2},\bar{n}_{2}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]\delta a_{r,n_{1},\bar{n}_{1}}\wedge \delta a_{l,n_{2},\bar{n}_{2}} \\
+ & +\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{l,n_{1},\bar{n}_{1}}\wedge \delta a^{\dagger}_{r,n_{2},\bar{n}_{2}}+\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]\delta a_{l,n_{1},\bar{n}_{1}}\wedge \delta a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{r,n_{2},\bar{n}_{2}}]\delta a_{l,n_{1},\bar{n}_{1}}\wedge \delta a_{r,n_{2},\bar{n}_{2}}+\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]\delta a_{l,n_{1},\bar{n}_{1}}\wedge \delta a_{l,n_{2},\bar{n}_{2}} \\
+ & +\omega[f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{r,n_{1},\bar{n}_{1}}\wedge \delta a^{\dagger}_{r,n_{2},\bar{n}_{2}}+\omega[f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{r,n_{1},\bar{n}_{1}}\wedge \delta a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{r,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{r,n_{1},\bar{n}_{1}}\wedge \delta a_{r,n_{2},\bar{n}_{2}}+\omega[f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{r,n_{1},\bar{n}_{1}}\wedge \delta a_{l,n_{2},\bar{n}_{2}} \\
+ & +\omega[f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{l,n_{1},\bar{n}_{2}}\wedge \delta a^{\dagger}_{r,n_{2},\bar{n}_{2}}+\omega[f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{l,n_{1},\bar{n}_{1}}\wedge \delta a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{r,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{l,n_{1},\bar{n}_{1}}\wedge \delta a_{r,n_{2},\bar{n}_{2}}+\omega[f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{l,n_{1},\bar{n}_{1}}\wedge \delta a_{l,n_{2},\bar{n}_{2}} \\
+ & = \sum ^{\infty}_{n_{1},n_{2},\bar{n}_{1},\bar{n}_{2}=0}\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n_{1},\bar{n}_{1}}\wedge \delta a^{\dagger}_{r,n_{2},\bar{n}_{2}}+\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]\delta a_{l,n_{1},\bar{n}_{1}}\wedge \delta a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{r,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{r,n_{1},\bar{n}_{1}}\wedge \delta a_{r,n_{2},\bar{n}_{2}}+\omega[f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{l,n_{1},\bar{n}_{1}}\wedge \delta a_{l,n_{2},\bar{n}_{2}} \\
+ & = 2i\sum ^{\infty}_{n,\bar{n}=0}(\delta a^{\dagger}_{r,n,\bar{n}}\wedge \delta a_{r,n,\bar{n}}+\delta a^{\dagger}_{l,n,\bar{n}}\wedge \delta a_{l,n,\bar{n}})
 \end{align}$$
+
