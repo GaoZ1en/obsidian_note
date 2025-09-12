@@ -346,10 +346,22 @@ $$\begin{align}
 then
 
 $$\begin{align}
-\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}] & =\frac{1}{\sqrt{ n_{2}(\mu+n_{2}+1) }}\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi _{1}}f^{(-)}_{r,n_{2}-}]
+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}] & =\frac{1}{\sqrt{ n_{2}(\mu+n_{2}+1) }}\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi _{1}}f^{(-)}_{r,n_{2}-1,\bar{n}_{2}}] \\
+ & =-\frac{1}{\sqrt{ n_{2}(\mu+n_{2}+1) }}\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2}-1,\bar{n}_{2}}] \\
+ & =\sqrt{ \frac{n_{1}(\mu+n_{1}+1)}{n_{2}(\mu+n_{2}+1)} }\omega[f^{(+)}_{r,n_{1}-1,\bar{n}_{1}},f^{(-)}_{r,n_{2}-1,\bar{n}_{2}}] \\
+ & =-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}
 \end{align}$$
 
-similarly, we can prove it is satisfied for any $\displaystyle{\bar{n}_{1}+\bar{n}_{2}}$. and similarly, we have $\displaystyle{\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]=-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}}$, and $\displaystyle{\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]=0}$. here we use
+on the other hand, we have
+
+$$\begin{align}
+{f^{(-)}_{r,n_{2},\bar{n}_{2}}}^{\mu} & =\frac{1}{\sqrt{ \bar{n}_{2}(\mu+\bar{n}_{2}-1) }}\mathcal{L}_{\bar{\xi}_{1}}{f^{(-)}_{r,n_{2},\bar{n}_{2-1}}}^{\mu} \\
+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}] & =\frac{1}{\sqrt{ \bar{n}_{2}(\mu+\bar{n}_{2}-1) }}\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},\mathcal{L}_{\bar{\xi}_{1}}f^{(-)}_{r,n_{2},\bar{n}_{2}-1}] \\
+ & =\sqrt{ \frac{\bar{n}_{1}(\mu+\bar{n}_{1}-1)}{\bar{n}_{2}(\mu+\bar{n}_{2}-1)} }\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}-1},f^{(-)}_{r,n_{2},\bar{n}_{2}-1}] \\
+ & =-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}
+\end{align}$$
+
+then by induction, $\displaystyle{\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}] =-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}}$ is satisfied for any $\displaystyle{n_{2}+\bar{n}_{2}}$. and similarly, we have $\displaystyle{\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]=-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}}$, and $\displaystyle{\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]=0}$, $\displaystyle{\omega[f^{(\pm)}_{r/l,n_{1},\bar{n}_{1}},f^{(\pm)}_{r/l,n_{2},\bar{n}_{2}}]=0}$. here we use
 
 
 $$\begin{align}
@@ -380,4 +392,20 @@ $$\begin{align}
 \mathcal{L}_{\bar{\xi} _{1}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ (\bar{n}+1)(\mu+\bar{n}+2) }{f^{(-)}_{l,n,\bar{n}}}^{\mu} \\
 \mathcal{L}_{\bar{\xi} _{0}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =i\left( \frac{\mu+2}{2}+\bar{n} \right){f^{(-)}_{l,n,\bar{n}}}^{\mu} \\
 \mathcal{L}_{\bar{\xi} _{-1}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =-\sqrt{ n(\mu+n+1) }{f^{(-)}_{l,n,\bar{n}-1}}^{\mu}
+\end{align}$$
+
+expand
+
+$$\begin{align}
+A^{\mu} & =\sum _{n,\bar{n}=0}^{\infty}\left({f^{(+)}_{r,n,\bar{n}}}^{\mu}a_{r,n,\bar{n}}+{f^{(+)}_{l,n,\bar{n}}}^{\mu}a_{l,n,\bar{n}}+{f^{(-)}_{r,n,\bar{n}}}^{\mu}a^{\dagger}_{r,n,\bar{n}}+{f^{(-)}_{l,n,\bar{n}}}^{\mu}a^{\dagger}_{l,n,\bar{n}}\right)
+\end{align}$$
+
+then the symplectic form can be expanded as
+
+$$\begin{align}
+\omega[\delta A_{1}^{\mu},(\delta A_{2}^{\mu})^{*}] & =\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{l,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a_{l,n,\bar{n}} \\
+ & +\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]\delta a_{l,n,\bar{n}}\wedge \delta a_{l,n,\bar{n}} \\
+ & +\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{r,n,\bar{n}}\wedge \delta a_{l,n,\bar{n}} \\
+ & +\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]\delta a_{r,n,\bar{n}}\wedge \delta a^{\dagger}_{r,n,\bar{n}}+\omega[f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]\delta a^{\dagger}_{l,n,\bar{n}}\wedge \delta a_{l,n,\bar{n}} \\
+ & =
 \end{align}$$
