@@ -30,13 +30,11 @@ H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
 
 ---
 
-note that
+we first consider a simplier case: free scalar in $\mathrm{AdS}_{3}$ spacetime
 
 $$\begin{align}
-X_{\xi}\cdot \omega & =-\delta H_{\xi}
+S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(-\frac{1}{2}\nabla _{\mu}\phi \nabla ^{\mu}\phi-\frac{1}{2}\mu ^{2}\phi ^{2}\right) \\
+\delta S & =\int \mathrm{d}^{3}x\sqrt{ -g }(\nabla ^{2}-m^{2})\phi \delta \phi+\int _{\Sigma _{f}-\Sigma _{i}} \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\phi \delta \phi \\
+\omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \phi \wedge \delta \phi
 \end{align}$$
 
-$$\begin{align}
-X_{\xi} & =\int \mathrm{d}^{3}x\mathcal{L}_{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}} \\
- & =\int \mathrm{d}^{3}x\left(\xi ^{\nu}\nabla _{\nu}A_{\mu}+A_{\nu}\nabla _{\mu}\xi ^{\nu}\right) \frac{\delta}{\delta A_{\mu}}
-\end{align}$$
