@@ -33,8 +33,38 @@ H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
 we first consider a simplier case: free scalar in $\mathrm{AdS}_{3}$ spacetime
 
 $$\begin{align}
-S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(-\frac{1}{2}\nabla _{\mu}\phi \nabla ^{\mu}\phi-\frac{1}{2}\mu ^{2}\phi ^{2}\right) \\
-\delta S & =\int \mathrm{d}^{3}x\sqrt{ -g }(\nabla ^{2}-m^{2})\phi \delta \phi+\int _{\Sigma _{f}-\Sigma _{i}} \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\phi \delta \phi \\
-\omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \phi \wedge \delta \phi
+S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(-\frac{1}{2}\nabla _{\mu}\varphi \nabla ^{\mu}\varphi-\frac{1}{2}\mu ^{2}\varphi ^{2}\right) \\
+\delta S & =\int \mathrm{d}^{3}x\sqrt{ -g }(\nabla ^{2}-\mu^{2})\varphi \delta \varphi+\int _{\Sigma _{f}-\Sigma _{i}} \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\varphi \delta \varphi \\
+\omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \varphi \wedge \delta \varphi \\
+H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left(\nabla _{\mu}\varphi \nabla _{\nu}\varphi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\varphi \nabla ^{\rho}\varphi-\frac{1}{2}g_{\mu \nu}\mu ^{2}\varphi ^{2}\right)
 \end{align}$$
 
+
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\sqrt{ -g } & =r
+\end{align}$$
+
+$$\tag{.}\begin{align} \\
+\varphi & =e^{-i\omega t}e^{im\phi}\tilde{\varphi} \\
+
+(1+r^{2})\partial _{r}^{2}\tilde{\varphi}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{\varphi}+ \left( -\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}}-\frac{m^{2}}{r^{2}} \right)\varphi& =0
+\end{align}$$
+
+finiteness of the action gives the following two asymptotic behavior of $\displaystyle{\varphi}$:
+
+$$\begin{align}
+\varphi\to \mathcal{O}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\int \mathrm{d}r\left(-\frac{s^{2}}{2}r^{2s-1}-\frac{1}{2}\mu ^{2}r^{2s+1}\right) & =
+\end{align}$$
+
+$$\begin{align}
+r\to 0, 2s-1>0
+\end{align}$$
