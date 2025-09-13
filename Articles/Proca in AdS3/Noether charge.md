@@ -164,6 +164,15 @@ $$\begin{align}
 
 $$\tag{.}\begin{align}
 \sqrt{ \sigma }\tau _{\nu}\xi ^{\nu}\left(-\frac{1}{4}F_{\rho \sigma}F^{\rho \sigma}\right) & =-r\xi ^{t}\left(-\frac{1}{2}F_{tr}F^{tr}-\frac{1}{2}F_{t\phi}F^{t\phi}-\frac{1}{2}F_{r\phi}F^{r\phi}\right) \\
+ & =\frac{1}{2}r\xi ^{t}\left(-\left( \frac{1}{1+r^{2}}\partial _{t}A^{r}+(1+r^{2})\partial _{r}A^{t}+2rA^{t} \right)^{2}-\frac{1}{r^{2}(1+r^{2})}(r^{2}\partial _{t}A^{\phi}+(1+r^{2})\partial _{\phi}A^{t})^{2}+\frac{1+r^{2}}{r^{2}}\left(r^{2}\partial _{r}A^{\phi}-\frac{1}{1+r^{2}}\partial _{\phi}A^{r}+2rA^{\phi}\right)^{2}\right) \\
+\sqrt{ \sigma }\tau _{\nu}\xi ^{\nu}\left(-\frac{1}{2}\mu ^{2}A_{\rho}A^{\rho}\right) & =\frac{1}{2}\mu ^{2}r\xi ^{t}\left( -(1+r^{2})(A^{t})^{2}+\frac{1}{1+r^{2}}(A^{r})^{2}+r^{2}(A^{\phi})^{2} \right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\xi ^{t} & : \frac{r}{2}\left(\frac{1}{1+r^{2}}\partial _{t}A^{r}+(1+r^{2})\partial _{r}A^{t}+2rA^{t}\right)^{2}+\frac{1}{2r(1+r^{2})}(r^{2}\partial _{t}A^{\phi}+(1+r^{2})\partial _{\phi}A^{t})^{2}+\frac{1+r^{2}}{2r}\left( r^{2}\partial _{r}A^{\phi}-\frac{1}{1+r^{2}}\partial _{\phi}A^{r}+2rA^{\phi} \right)^{2} \\
+ & =\frac{r(1+r^{2})^{2}}{2}(\partial _{r}A^{t})^{2}+\frac{1+r^{2}}{2r}(\partial _{\phi}A^{t})^{2}+\frac{r}{2(1+r^{2})^{2}}(\partial _{t}A^{r})^{2}+\frac{1}{2r(1+r^{2})}(\partial _{\phi}A^{r})^{2}+\frac{r^{3}}{2(1+r^{2})}(\partial _{t}A^{\phi})^{2}+\frac{r^{3}(1+r^{2})}{2}(\partial _{r}A^{\phi})^{2} \\
+ & +r\partial _{r}A^{t}\partial _{t}A^{r}+r\partial _{\phi}A^{t}\partial _{t}A^{\phi}-r\partial _{\phi}A^{r}\partial _{r}A^{\phi}+2r^{2}(1+r^{2})A^{t}\partial _{r}A^{t}+\frac{2r^{2}}{1+r^{2}}A^{t}\partial _{t}A^{r}-2A^{\phi}\partial _{\phi}A^{r}+2r^{2}(1+r^{2})A^{\phi}\partial _{r}A^{\phi}+2r^{3}(A^{t})^{2}+2r(1+r^{2})(A^{\phi})^{2} \\
+\xi ^{r} & :\frac{r}{1+r^{2}}(r^{2}\partial _{t}A^{\phi}+(1+r^{2})\partial _{\phi}A^{t})\left( \partial _{r}A^{\phi}-\frac{1}{r^{2}(1+r^{2})}\partial _{\phi}A^{r}+\frac{2}{r}A^{\phi} \right) \\
  & =
 \end{align}$$
 
@@ -175,9 +184,11 @@ F_{t}^{~\phi} & =\partial _{t}A^{\phi}+\frac{1+r^{2}}{r^{2}}\partial _{\phi}A^{t
 F_{r\phi} & =r^{2}\partial _{r}A^{\phi}-\frac{1}{1+r^{2}}\partial _{\phi}A^{r}+2rA^{\phi} \\
 F_{r}^{~\phi} & =\partial _{r}A^{\phi}-\frac{1}{r^{2}(1+r^{2})}\partial _{\phi}A^{r}+\frac{2}{r}A^{\phi} \\
 F_{\phi}^{~r} & =\partial _{\phi}A^{r}-r^{2}(1+r^{2})\partial _{r}A^{\phi}-2r(1+r^{2})A^{\phi} \\
-F^{tr} & =g^{}
+F^{tr} & =g^{tt}g^{rr}F_{tr} \\
+ & =-\frac{1}{1+r^{2}}\partial _{t}A^{t}-(1+r^{2})\partial _{r}A^{t}-2rA^{t} \\
+F^{t\phi} & =-\frac{1}{1+r^{2}}\partial _{t}A^{\phi}-\frac{1}{r^{2}}\partial _{\phi}A^{t} \\
+F^{r\phi} & =(1+r^{2})\partial _{r}A^{\phi}-\frac{1}{r^{2}}\partial _{\phi}A^{r}+\frac{2(1+r^{2})}{r}A^{\phi}
 \end{align}$$
-
 
 
 $$\tag{.}\begin{align}
