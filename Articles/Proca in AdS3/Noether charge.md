@@ -155,5 +155,32 @@ H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\left( \tau _{\mu}\xi ^{\
 \end{align}$$
 
 $$\begin{align}
-\tau ^{t}\xi ^{\nu}F_{t \rho}F_{\nu}^{~\rho} & =
+\sqrt{ \sigma }\tau ^{t}\xi ^{\nu}F_{t \rho}F_{\nu}^{~\rho} & =\frac{r}{1+r^{2}}\left( \xi ^{t}F_{tr}F_{t}^{~r}+\xi ^{t}F_{t\phi}F_{t}^{~\phi}+\xi ^{r}F_{t\phi}F_{r}^{~\phi}+\xi ^{\phi}F_{tr}F_{\phi}^{~r} \right) \\
+ & =\frac{r}{1+r^{2}}\left(\xi ^{t}\left( \frac{1}{1+r^{2}}\partial _{t}A^{r}+(1+r^{2})\partial _{r}A^{t}+2rA^{t} \right)(\partial _{t}A^{r}+(1+r^{2})^{2}\partial _{r}A^{t}+2r(1+r^{2})A^{t})\right. \\
+ & +\xi ^{t}(r^{2}\partial _{t}A^{\phi}+(1+r^{2})\partial _{\phi}A^{t})\left(\partial _{t}A^{\phi}+\frac{1+r^{2}}{r^{2}}\partial _{\phi}A^{t}\right) \\
+ & +\xi ^{r}(r^{2}\partial _{t}A^{\phi}+(1+r^{2})\partial _{\phi}A^{t})\left( \partial _{r}A^{\phi}-\frac{1}{r^{2}(1+r^{2})}\partial _{\phi}A^{r}+\frac{2}{r}A^{\phi} \right) \\
+ & \left. +\xi ^{\phi}\left(\frac{1}{1+r^{2}}\partial _{t}A^{r}+(1+r^{2})\partial _{r}A^{t}+2rA^{t}\right)\left(\partial _{\phi}A^{r}-r^{2}(1+r^{2})\partial _{r}A^{\phi}-2r(1+r^{2})A^{\phi}\right) \right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\sqrt{ \sigma }\tau _{\nu}\xi ^{\nu}\left(-\frac{1}{4}F_{\rho \sigma}F^{\rho \sigma}\right) & =-r\xi ^{t}\left(-\frac{1}{2}F_{tr}F^{tr}-\frac{1}{2}F_{t\phi}F^{t\phi}-\frac{1}{2}F_{r\phi}F^{r\phi}\right) \\
+ & =
+\end{align}$$
+
+$$\tag{.}\begin{align}
+F_{tr} & =\frac{1}{1+r^{2}}\partial _{t}A^{r}+(1+r^{2})\partial _{r}A^{t}+2rA^{t} \\
+F_{t\phi} & =r^{2}\partial _{t}A^{\phi}+(1+r^{2})\partial _{\phi}A^{t} \\
+F_{t}^{~r} & =\partial _{t}A^{r}+(1+r^{2})^{2}\partial _{r}A^{t}+2r(1+r^{2})A^{t} \\
+F_{t}^{~\phi} & =\partial _{t}A^{\phi}+\frac{1+r^{2}}{r^{2}}\partial _{\phi}A^{t} \\
+F_{r\phi} & =r^{2}\partial _{r}A^{\phi}-\frac{1}{1+r^{2}}\partial _{\phi}A^{r}+2rA^{\phi} \\
+F_{r}^{~\phi} & =\partial _{r}A^{\phi}-\frac{1}{r^{2}(1+r^{2})}\partial _{\phi}A^{r}+\frac{2}{r}A^{\phi} \\
+F_{\phi}^{~r} & =\partial _{\phi}A^{r}-r^{2}(1+r^{2})\partial _{r}A^{\phi}-2r(1+r^{2})A^{\phi} \\
+F^{tr} & =g^{}
+\end{align}$$
+
+
+
+$$\tag{.}\begin{align}
+F_{\nu}^{~\rho} & =\partial _{\nu}A^{\rho}-\partial ^{\rho}A_{\nu} \\
+
 \end{align}$$
