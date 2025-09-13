@@ -245,3 +245,10 @@ D(f,g) & =D^{+}(f,g)+D^{-}(f,g) \\
  & =\braket{ 0|[\hat{\phi}(f),\hat{\phi}(g)]|0 } 
 \end{align}$$
 
+we have the following properties
+
+1. 
+$$\begin{align}
+D^{+}(f,g) & =-D^{-}(g,f)=-\overline{D^{-}(f,g)}
+\end{align}$$
+
