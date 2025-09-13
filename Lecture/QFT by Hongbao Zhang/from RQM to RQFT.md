@@ -249,6 +249,16 @@ we have the following properties
 
 1. 
 $$\begin{align}
-D^{+}(f,g) & =-D^{-}(g,f)=-\overline{D^{-}(f,g)}
+D^{+}(f,g) & =-D^{-}(g,f)=-\overline{D^{-}(f,g)} \\
+\implies D(f,g) & =-D(g,f)=-\overline{D(f,g)}
 \end{align}$$
 
+2. $\displaystyle{D^{\pm}(f,g),D(f,g)}$ are Poincare (diffepmorphism?) invariance, i.e.,
+
+$$\begin{align}
+D^{\pm}(\phi ^{*}f,\phi ^{*}g) & =D^{\pm}(f,g) \\
+D(\phi ^{*}f,\phi ^{*}g) & =D(f,g)
+\end{align}$$
+
+where $\displaystyle{\phi}$ is a Poincare transformation (diffeomorphism?). 
+3. if $\displaystyle{\mathrm{supp}(f)\cap\left(J^{+}\right)}$
