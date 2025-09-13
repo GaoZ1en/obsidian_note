@@ -173,7 +173,9 @@ $$\tag{.}\begin{align}
  & =\frac{r(1+r^{2})^{2}}{2}(\partial _{r}A^{t})^{2}+\frac{1+r^{2}}{2r}(\partial _{\phi}A^{t})^{2}+\frac{r}{2(1+r^{2})^{2}}(\partial _{t}A^{r})^{2}+\frac{1}{2r(1+r^{2})}(\partial _{\phi}A^{r})^{2}+\frac{r^{3}}{2(1+r^{2})}(\partial _{t}A^{\phi})^{2}+\frac{r^{3}(1+r^{2})}{2}(\partial _{r}A^{\phi})^{2} \\
  & +r\partial _{r}A^{t}\partial _{t}A^{r}+r\partial _{\phi}A^{t}\partial _{t}A^{\phi}-r\partial _{\phi}A^{r}\partial _{r}A^{\phi}+2r^{2}(1+r^{2})A^{t}\partial _{r}A^{t}+\frac{2r^{2}}{1+r^{2}}A^{t}\partial _{t}A^{r}-2A^{\phi}\partial _{\phi}A^{r}+2r^{2}(1+r^{2})A^{\phi}\partial _{r}A^{\phi}+2r^{3}(A^{t})^{2}+2r(1+r^{2})(A^{\phi})^{2} \\
 \xi ^{r} & :\frac{r}{1+r^{2}}(r^{2}\partial _{t}A^{\phi}+(1+r^{2})\partial _{\phi}A^{t})\left( \partial _{r}A^{\phi}-\frac{1}{r^{2}(1+r^{2})}\partial _{\phi}A^{r}+\frac{2}{r}A^{\phi} \right) \\
- & =
+ & =-\frac{1}{r(1+r^{2})}\partial _{\phi}A^{t}\partial _{\phi}A^{r}+r\partial _{\phi}A^{t}\partial _{r}A^{\phi}-\frac{r}{(1+r^{2})^{2}} \partial _{\phi}A^{r}\partial _{t}A^{\phi}+\frac{r^{3}}{1+r^{2}}\partial _{t}A^{\phi}\partial _{r}A^{\phi}+\frac{2r^{2}}{1+r^{2}}A^{\phi}\partial _{t}A^{\phi}+2A^{\phi}\partial _{\phi}A^{t} \\
+\xi ^{\phi} & : \frac{r}{1+r^{2}}\left( \frac{1}{1+r^{2}}\partial _{t}A^{r}+(1+r^{2})\partial _{r}A^{t}+2rA^{t} \right)(\partial _{\phi}A^{r}-r^{2}(1+r^{2})\partial _{r}A^{\phi}-2r(1+r^{2})A^{\phi}) \\
+ & =r\partial _{r}A^{t}\partial _{\phi}A^{r}-r^{3}\partial _{r}A^{t}\partial _{r}A^{\phi}+\frac{r}{(1+r^{2})^{2}}\partial _{t}A^{r}\partial _{\phi}A^{r}-r^{3}
 \end{align}$$
 
 $$\tag{.}\begin{align}
