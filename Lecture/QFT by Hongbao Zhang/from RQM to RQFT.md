@@ -273,3 +273,14 @@ D^{\mathrm{A}}(x,x') & =-\theta(x'^{0}-x^{0})\braket{ 0|\hat{\phi}(x)\hat{\phi}(
 D^{\mathrm{F}}(x,x') & =\braket{ 0|T\hat{\phi}(x)\hat{\phi}(y)|0 }  \\
  & =D^{\mathrm{R}}(x,x')-D^{\mathrm{A}}(x,x')
 \end{align}$$
+
+# spin and statistics
+
+for a scalar field operator
+
+$$\begin{align}
+\hat{\phi}(f) & =a(\bar{\sigma}_{f})+c(\sigma _{f})
+\end{align}$$
+
+if we take $\displaystyle{a(\bar{\sigma}_{f})}$ and $\displaystyle{c(\sigma _{f})}$ to living in the antisymmetric Fock space $\displaystyle{\mathcal{F}_{A}(\mathcal{H})}$, what would happen?
+
