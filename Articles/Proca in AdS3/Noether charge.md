@@ -153,3 +153,7 @@ $$\begin{align}
 $$\begin{align}
 H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\left( \tau _{\mu}\xi ^{\nu}F^{\mu}_{~~\rho}F_{\nu}^{~\rho}+\tau _{\nu}\xi ^{\nu}\left(- \frac{1}{4}F_{\rho \sigma}F^{\rho \sigma} -\frac{1}{2}\mu^{2}A_{\rho}A^{\rho} \right)\right)
 \end{align}$$
+
+$$\begin{align}
+\tau ^{t}\xi ^{\nu}F_{t \rho}F_{\nu}^{~\rho} & =
+\end{align}$$
