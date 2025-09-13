@@ -202,5 +202,12 @@ $$\begin{align}
 here we will discuss free scalar using highest weight representation. we start from
 
 $$\begin{align}
-
+f_{0,0} & =\sqrt{ \frac{1}{2\pi} }e^{-i\Delta t}(1+r^{2})^{-\Delta/2}
 \end{align}$$
+
+where $\displaystyle{\Delta=1+\sqrt{ 1+\mu ^{2} }}$. then define
+
+$$\begin{align}
+f_{n,\bar{n}} & =C_{n\bar{n}}\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\xi _{1}}^{\bar{n}}f_{0,0}
+\end{align}$$
+

@@ -82,3 +82,14 @@ I think that's it.
 
 ---
 
+the Noether theorem states that
+
+$$\begin{align}
+X_{\xi}\cdot \omega & =-\delta H_{\xi}
+\end{align}$$
+
+so we can using it to calculate the Noether charge $\displaystyle{H_{\xi}}$.
+
+$$\begin{align}
+X_{\xi}\cdot \omega[\delta A_{1},\delta A_{2}]=\omega[\mathcal{L}_{\xi}A_{1},\delta A_{2}]
+\end{align}$$
