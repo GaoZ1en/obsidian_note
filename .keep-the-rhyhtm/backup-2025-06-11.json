@@ -20085,8 +20085,23 @@
           },
           {
             "timeKey": "16:10",
-            "w": 32,
-            "c": 125
+            "w": 109,
+            "c": 420
+          },
+          {
+            "timeKey": "16:25",
+            "w": 19,
+            "c": 69
+          },
+          {
+            "timeKey": "16:30",
+            "w": 41,
+            "c": 146
+          },
+          {
+            "timeKey": "16:35",
+            "w": 176,
+            "c": 612
           }
         ],
         "id": 650
@@ -20126,7 +20141,13 @@
         "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
         "wordCountStart": 6040,
         "charCountStart": 25721,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "16:10",
+            "w": 0,
+            "c": 0
+          }
+        ],
         "id": 654
       }
     ],
