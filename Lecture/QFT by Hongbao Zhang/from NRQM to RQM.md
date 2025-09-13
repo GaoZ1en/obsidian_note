@@ -16,6 +16,8 @@ references:
 8. M. E. Peskin and D. U. Schroeder, An Introduction to Quantum Field Theory
 9. A. Zee, Quantum Field Theory in a Nutshell
 
+our discussion are limited to globally hyperbolic spacetimes. 
+
 # Schrodinger's prescription for NRQM
 
 classically, a state is described by a point $\displaystyle{(x,p)}$ in the phase space $\displaystyle{\Gamma}$, which is a cotangent bundle of configuration space $\displaystyle{\mathcal{C}}$, and its time evolution is described by Hamiltonian equations

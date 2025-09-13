@@ -284,3 +284,31 @@ $$\begin{align}
 
 if we take $\displaystyle{a(\bar{\sigma}_{f})}$ and $\displaystyle{c(\sigma _{f})}$ to living in the antisymmetric Fock space $\displaystyle{\mathcal{F}_{A}(\mathcal{H})}$, what would happen?
 
+## causality requirement of the commutators
+
+$$\begin{align}
+\left\{\hat{\phi}(f),\hat{\phi}(g)\right\} =0
+\end{align}$$
+
+for $\displaystyle{\mathrm{supp}f\cap(J^{+}(\mathrm{supp}(g))\cup J^{-}(\mathrm{supp}(g)))=0}$. but
+
+$$\begin{align}
+\left\{\hat{\phi}(f),\hat{\phi}(g)\right\} & =\left\{a(\bar{\sigma}_{f})+c(\sigma _{f}),a(\bar{\sigma}_{g})+c(\sigma _{g})\right\} \\
+ & =\left\{a(\bar{\sigma}_{f}),c(\sigma _{g})\right\}+\left\{a(\bar{\sigma}_{g}),c(\sigma _{f})\right\} \\
+ & =\bar{\sigma}_{f,\alpha}\sigma _{g}^{\alpha}+\bar{\sigma}_{g,\alpha}\sigma _{f}^{\alpha}\neq0
+\end{align}$$
+
+contradiction!
+
+## Poincare (diffeomorphism) invariance of the time ordered correlators
+
+$$\begin{align}
+D^{\mathrm{F}}(x,x') & =\braket{ 0|T[\hat{\phi}(x)\hat{\phi}(x')]|0 }  \\
+ & =\theta(x^{0}-x'^{0})\braket{ 0|\hat{\phi}(x)\hat{\phi}(x')|0 }-\theta(x'^{0}-x^{0})\braket{ 0|\hat{\phi}(x')\hat{\phi}(x)|0 }
+\end{align}$$
+
+is not Poincare (diffeomorphism) invariance!
+
+# Unruh effect and Casimir effect
+
+vacua are not unique and empty, and are highly entangled!
