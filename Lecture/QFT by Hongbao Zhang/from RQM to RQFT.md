@@ -261,4 +261,15 @@ D(\phi ^{*}f,\phi ^{*}g) & =D(f,g)
 \end{align}$$
 
 where $\displaystyle{\phi}$ is a Poincare transformation (diffeomorphism?). 
-3. if $\displaystyle{\mathrm{supp}(f)\cap\left(J^{+}\right)}$
+3. if $\displaystyle{\mathrm{supp}(f)\cap\left(J^{+}(\mathrm{supp}(g))\cup J^{-}(\mathrm{supp}(g))\right)=0}$, then $\displaystyle{D(f,g)=0}$.
+
+if we choose test function as $\displaystyle{f(y)=\delta(y-x)}$, we get the usual results.
+
+we then define propagators. the retarded, advanced and Feynman propagator are defined as
+
+$$\begin{align}
+D^{\mathrm{R}}(x,x') & =\theta(x^{0}-x'^{0})\braket{ 0|\hat{\phi}(x)\hat{\phi}(x')|0 }  \\
+D^{\mathrm{A}}(x,x') & =-\theta(x'^{0}-x^{0})\braket{ 0|\hat{\phi}(x)\hat{\phi}(x')|0 }  \\
+D^{\mathrm{F}}(x,x') & =\braket{ 0|T\hat{\phi}(x)\hat{\phi}(y)|0 }  \\
+ & =D^{\mathrm{R}}(x,x')-D^{\mathrm{A}}(x,x')
+\end{align}$$
