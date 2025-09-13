@@ -325,7 +325,7 @@ $$\begin{align}
 \rho _{f} & \in \bar{\mathcal{H}}^{-}
 \end{align}$$
 
-and we have $\displaystyle{a^{\dagger}(\bar{\sigma}_{f})=c(\rho _{f})}$. then commutators and propagators can be defined as
+and we have $\displaystyle{a^{\dagger}(\bar{\sigma}_{f})\neq c(\rho _{f})}$. then commutators and propagators can be defined as
 
 $$\begin{align}
 D^{+}(f,g) & =\braket{ 0|\hat{\phi}(f)\hat{\phi}^{\dagger}(g)|0 } \\
@@ -333,5 +333,6 @@ D^{-}(f,g) & = -\braket{ 0|\hat{\phi}^{\dagger}(g)\hat{\phi}(f)|0 } \\
 D(f,g) & =D^{+}(f,g)+D^{-}(f,g) \\
 D^{\mathrm{R}}(x,x') & =\theta(x^{0}-x'^{0})\braket{ 0|\hat{\phi}(x)\hat{\phi}^{\dagger}(x')|0 }  \\
 D^{\mathrm{A}}(x,x') & =-\theta(x'^{0}-x^{0})\braket{ 0|\hat{\phi}(x)\hat{\phi}^{\dagger}(x')|0 }  \\
-D^{\mathrm{F}}(x,x') & =\braket{ 0|T\hat{\phi}(x)\hat{\phi}^{\dagger}(y)|0 }
+D^{\mathrm{F}}(x,x') & =\braket{ 0|T\hat{\phi}(x)\hat{\phi}^{\dagger}(x')|0 }
 \end{align}$$
+
