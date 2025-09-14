@@ -175,3 +175,38 @@ we have several properties
 4. $\displaystyle{U(\infty,-\infty)=S}$
 5. $\displaystyle{i\partial _{t}U(t,t')=V_{I}(t)U(t,t')}$
 
+from 5 and 1, we have the following perturabtion expansion
+
+$$\begin{align}
+U(t,t') & =I-i \int _{t'}^{t}\mathrm{d}\tau V_{I}(\tau)+(-i)^{2}\int _{t'}^{t}\mathrm{d}\tau_{1}\int ^{\tau_{1}} _{t'}\mathrm{d}\tau_{2}V_{I}(\tau_{1})V_{I}(\tau_{2})+\dots \\
+ & =T\exp\left(-i \int _{t'}^{t}\mathrm{d}\tau V_{I}(\tau)\right)
+\end{align}$$
+
+and then
+
+$$\begin{align}
+S & =U(\infty,-\infty) \\
+ & =T\exp\left(-i \int _{-\infty}^{+\infty}\mathrm{d}tV(t)\right) \\
+ & =T\exp\left(-i \int \mathrm{d}^{d}x\mathcal{V}(x)\right)
+\end{align}$$
+
+if we have $\displaystyle{[\mathcal{V}(x),\mathcal{V}(x')]=0}$ for spacelike separation, the S-matrix is naturally Poincare (diffeomorphism) invariant. there are still several problems here
+
+1. definition of $\displaystyle{\mathcal{V}[\hat{\phi}]}$
+2. IR divergence of $\displaystyle{\int \mathrm{d}^{d}x\dots}$
+3. convergence of the Dyson series $\displaystyle{T\exp\left(-i \int \mathrm{d}^{d}x\mathcal{V}(x)\right)}$
+
+consider
+
+$$\begin{align}
+\braket{ \beta|U(\infty,-\infty)|\alpha } & = \braket{ \beta|\alpha }-i\braket{ \beta|\int _{-\infty}^{+\infty}e^{iH_{0}t}Ve^{-iH_{0}t}|\alpha }+\dots \\
+ & =\delta(\beta-\alpha)-i \int _{-\infty}^{+\infty}e^{i(E_{\beta}-E_{\alpha})t}\braket{ \beta|V|\alpha}+\dots \\
+ & =\delta(\beta-\alpha)-2\pi i\delta(E_{\beta}-E_{\alpha})\braket{ \beta|V|\alpha }+\dots
+\end{align}$$
+
+the third term
+
+$$\begin{align}
+(-i)^{2}\int _{-\infty}^{+\infty}\mathrm{d}\tau_{1}\int _{-\infty}^{\tau_{1}} \mathrm{d}\tau_{2}\braket{ \beta|V(\tau_{1})V(\tau_{2})|\alpha } & =(-i)^{2}\int _{-\infty}^{+\infty}\mathrm{d}\tau_{1}\int ^{\tau_{1}}_{-\infty}\mathrm{d}\tau_{2} \int \mathrm{d}\gamma \braket{ \beta|V|\gamma } \braket{ \gamma|V|\alpha } e^{i(E_{\beta}-E_{\alpha})t}e^{iE_{\gamma}(\tau_{1}-\tau_{2})} \\
+ & =-2\pi i\delta(E_{\beta}-E_{\alpha})
+\end{align}$$
