@@ -73,21 +73,30 @@ and then the Lippmann-Schwinger equation
 
 $$\begin{align}
 \psi _{\alpha}^{\pm} & =\psi _{\alpha}+\frac{1}{E_{\alpha}-H_{0}\pm i\varepsilon}V\psi _{\alpha}^{\pm} \\
- & =\psi _{\alpha}+\int\frac{\mathrm{d}\beta T_{\beta \alpha}^{\pm}}{E_{\alpha}-E_{\beta}\pm i\varepsilon} \\
+ & =\psi _{\alpha}+\int\frac{\mathrm{d}\beta T_{\beta \alpha}^{\pm}}{E_{\alpha}-E_{\beta}\pm i\varepsilon}\psi _{\beta} \\
 T_{\beta \alpha}^{\pm} & =(\psi _{\beta},V\psi _{\alpha}^{\pm})
 \end{align}$$
 
 or
 
 $$\begin{align}
-\psi _{g}^{\pm}(t) & =\psi _{g}(t)+\int \mathrm{d}\alpha \mathrm{d}\beta  \frac{g(\alpha)e^{-iE_{\alpha}t}T_{\beta \alpha}^{\pm}}{E_{\alpha}-E_{\beta}\pm i\varepsilon}
+\psi _{g}^{\pm}(t) & =\psi _{g}(t)+\int \mathrm{d}\alpha \mathrm{d}\beta  \frac{g(\alpha)e^{-iE_{\alpha}t}T_{\beta \alpha}^{\pm}}{E_{\alpha}-E_{\beta}\pm i\varepsilon}\psi _{\beta}
 \end{align}$$
 
 this form also explain the signal of $\displaystyle{i\varepsilon}$. consider
 
 $$\begin{align}
-\psi _{g}^{\pm}(\pm \infty) & =\psi _{g}(\pm \infty)+\int \mathrm{d}\alpha \mathrm{d}\beta \frac{g(\alpha) e^{-iE_{\alpha}t}T_{\beta \alpha}^{\pm}}{E_{\alpha}-E_{\beta}\pm i\varepsilon} \\
- & =\psi _{g}(\pm \infty)\mp2\pi i \int \mathrm{d}\beta e^{-iE_{\beta}t}\int \mathrm{d}\alpha g(\alpha) T_{\beta \alpha}^{\pm}\delta(E_{\alpha}-E_{\beta}) \\
-\implies \int \mathrm{d}\beta e^{-iE_{\beta}t}g(\beta)\psi ^{\pm}_{\beta} & =\int \mathrm{d}\beta e^{-iE_{\beta}t}g(\beta)\psi ^{\mp}_{\beta}\mp2\pi i \int \mathrm{d}\beta e^{-iE_{\beta}t}\int \mathrm{d}\alpha g(\alpha)T^{\pm}_{\beta \alpha}\delta(E_{\alpha}-E_{\beta}) \\
-\implies \psi ^{\pm}_{\beta} & =\psi ^{\mp}_{\beta}\mp2\pi i \int \mathrm{d}\alpha g(\alpha)T_{\beta \alpha}^{\pm}\delta(E_{\alpha}-E_{\beta})
+\psi _{g}^{\pm}(\pm \infty) & =\psi _{g}(\pm \infty)+\int \mathrm{d}\alpha \mathrm{d}\beta \frac{g(\alpha) e^{-iE_{\alpha}t}T_{\beta \alpha}^{\pm}}{E_{\alpha}-E_{\beta}\pm i\varepsilon}
+\end{align}$$
+
+then
+
+$$\begin{align}
+\psi _{g}^{+}(+\infty) & =\psi _{g}^{-}(+\infty)+\int \mathrm{d}\alpha \mathrm{d}\beta \frac{g(\alpha)e^{-iE_{\alpha}t}T_{\beta \alpha}^{+}}{E_{\alpha}-E_{\beta}+i\varepsilon} \\
+\psi _{g}^{+}(\infty) & =\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\psi _{\alpha}^{+} \\
+ & =\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\int \mathrm{d}\beta S_{\beta \alpha}\psi _{\alpha}^{-} \\
+\psi _{g}^{-}(\infty) & =\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\int \mathrm{d}\beta \delta(\beta-\alpha)\psi _{\alpha}^{-} \\
+\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t} \int \mathrm{d}\beta \frac{\psi _{\beta}T_{\beta \alpha}^{+}}{E_{\alpha}-E_{\beta}+i\varepsilon} & =-2\pi i\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\int \mathrm{d}\beta \delta(E_{\alpha}-E_{\beta})\psi _{\beta}T_{\beta \alpha}^{+} \\
+ & =-2\pi i \int \mathrm{d}\alpha g(\alpha)e^{-iE_{\beta}t}\int \mathrm{d}\beta  \\
+\implies S_{\beta \alpha} & =\delta(\alpha-\beta)-2\pi i\delta(E_{\alpha}-E_{\beta})T_{\beta \alpha}^{+}
 \end{align}$$
