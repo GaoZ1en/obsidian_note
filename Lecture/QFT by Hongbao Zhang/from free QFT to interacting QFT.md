@@ -87,7 +87,7 @@ this form also explain the signal of $\displaystyle{i\varepsilon}$. consider
 
 $$\begin{align}
 \psi _{g}^{\pm}(\pm \infty) & =\psi _{g}(\pm \infty)+\int \mathrm{d}\alpha \mathrm{d}\beta \frac{g(\alpha) e^{-iE_{\alpha}t}T_{\beta \alpha}^{\pm}}{E_{\alpha}-E_{\beta}\pm i\varepsilon} \\
- & =\psi _{g}(\pm \infty)-2\pi i \int \mathrm{d}\beta e^{-iE_{\beta}t}\int \mathrm{d}\alpha g(\alpha) T_{\beta \alpha}^{\pm}\delta(E_{\alpha}-E_{\beta}) \\
-\implies \int \mathrm{d}\beta e^{-iE_{\beta}t}g(\beta)\psi ^{\pm}_{\beta} & =\int \mathrm{d}\beta e^{-iE_{\beta}t}g(\beta)\psi ^{\mp}_{\beta}-2\pi i \int \mathrm{d}\beta e^{-iE_{\beta}t}\int \mathrm{d}\alpha g(\alpha)T^{\pm}_{\beta \alpha}\delta(E_{\alpha}-E_{\beta}) \\
-\implies \psi ^{\pm}_{\beta} & =\psi ^{\mp}_{\beta}-2\pi i \int \mathrm{d}\alpha g(\alpha)T_{\beta \alpha}^{\pm}\delta(E_{\alpha}-E_{\beta})
+ & =\psi _{g}(\pm \infty)\mp2\pi i \int \mathrm{d}\beta e^{-iE_{\beta}t}\int \mathrm{d}\alpha g(\alpha) T_{\beta \alpha}^{\pm}\delta(E_{\alpha}-E_{\beta}) \\
+\implies \int \mathrm{d}\beta e^{-iE_{\beta}t}g(\beta)\psi ^{\pm}_{\beta} & =\int \mathrm{d}\beta e^{-iE_{\beta}t}g(\beta)\psi ^{\mp}_{\beta}\mp2\pi i \int \mathrm{d}\beta e^{-iE_{\beta}t}\int \mathrm{d}\alpha g(\alpha)T^{\pm}_{\beta \alpha}\delta(E_{\alpha}-E_{\beta}) \\
+\implies \psi ^{\pm}_{\beta} & =\psi ^{\mp}_{\beta}\mp2\pi i \int \mathrm{d}\alpha g(\alpha)T_{\beta \alpha}^{\pm}\delta(E_{\alpha}-E_{\beta})
 \end{align}$$
