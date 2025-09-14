@@ -112,10 +112,21 @@ $$\begin{align}
 \implies \bar{S}_{\alpha \beta} & =\delta(\alpha-\beta)+2\pi i\delta(E_{\alpha}-E_{\beta})T^{-}_{\beta \alpha}
 \end{align}$$
 
-so if $\displaystyle{E_{\alpha}=E_{\beta}}$, $\displaystyle{T^{+}_{\beta \alpha}=\bar{T}_{\alpha \beta}^{-}}$
+so if $\displaystyle{E_{\alpha}=E_{\beta}}$, $\displaystyle{T^{+}_{\beta \alpha}=\bar{T}_{\alpha \beta}^{-}}$. we will use Lippmann-Schwinger equation to give another proof. we want
 
 $$\begin{align}
-(\psi _{\beta},V)
+(\psi _{\beta},V\psi _{\alpha}^{+}) & =\overline{(\psi _{\alpha},V\psi _{\beta}^{-})} \\
+ & =(V\psi _{\beta}^{-},\psi _{\alpha})
+\end{align}$$
+
+and
+
+$$\begin{align}
+\psi ^{\pm}_{\alpha} & =\psi _{\alpha}+\frac{1}{E_{\alpha}-H_{0}\pm i\varepsilon}V\psi _{\alpha}^{\pm} \\
+\implies \psi _{\alpha} & =\psi _{\alpha}^{\pm}-\frac{1}{E_{\alpha}-H_{0}\pm i\varepsilon}V\psi _{\alpha}^{\pm} \\
+\implies(\psi _{\beta},V\psi _{\alpha}^{+}) & =\left( \psi _{\beta}^{-}-\frac{1}{E_{\beta}-H_{0}-i\varepsilon}V\psi _{\beta}^{-},V\psi _{\alpha}^{+} \right) \\
+(V\psi _{\beta}^{-},\psi _{\alpha}) & =\left( V\psi _{\beta}^{-},\psi ^{+}_{\alpha}-\frac{1}{E_{\alpha}-H_{0}+i\varepsilon}V\psi _{\alpha}^{+} \right) \\
+\implies(\psi _{\beta},V\psi _{\alpha}^{+}) & =(V\psi _{\beta}^{-},\psi _{\alpha})\checkmark
 \end{align}$$
 
 using Lippman-Schwinger equation, we have
@@ -127,3 +138,40 @@ T_{\alpha \beta}^{+} & =(\psi _{\beta},V\psi _{\alpha}^{+}) \\
 \end{align}$$
 
 this is the old-fashioned perturbation theory. 
+
+# time dependent perturbation theory and Dyson series
+
+notice that
+
+$$\begin{align}
+\Lambda(t) & =e^{-i(H-H_{0})t} \\
+\Lambda(+\infty) & =\Lambda _{\mathrm{out}} \\
+\Lambda(-\infty) & =\Lambda _{\mathrm{in}}
+\end{align}$$
+
+we pick interaction picture. states evolves as
+
+$$\begin{align}
+i\partial _{t}\ket{\psi}_{I} & =V_{I}(t)\ket{\psi}_{I}
+\end{align}$$
+
+while operators evolves as
+
+$$\begin{align}
+\partial _{t}\mathcal{O}_{I} & =i[H_{0},\mathcal{O}_{I}] \\
+\implies \mathcal{O}_{I}(t) & =e^{iH_{0}t}\mathcal{O}_{I}(0)e^{-iH_{0}t}
+\end{align}$$
+
+define time evolution operator $\displaystyle{U(t,t')}$ as
+
+$$\begin{align}
+U(t,t') & =e^{-iH_{0}t}e^{-iH(t-t')}e^{-iH_{0}t'}
+\end{align}$$
+
+we have several properties
+1. $\displaystyle{U(t,t)=I}$
+2. $\displaystyle{U(t,0)=\Lambda(t)}$
+3. $\displaystyle{U(t,t')U(t',t'')=U(t,t'')}$
+4. $\displaystyle{U(\infty,-\infty)=S}$
+5. $\displaystyle{i\partial _{t}U(t,t')=V_{I}(t)U(t,t')}$
+
