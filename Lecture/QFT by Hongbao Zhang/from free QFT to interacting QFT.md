@@ -86,7 +86,7 @@ $$\begin{align}
 this form also explain the signal of $\displaystyle{i\varepsilon}$. consider
 
 $$\begin{align}
-\psi _{g}^{\pm}(\pm \infty) & =\psi _{g}(\pm \infty)+\int \mathrm{d}\alpha \mathrm{d}\beta \frac{g(\alpha) e^{-iE_{\alpha}t}T_{\beta \alpha}^{\pm}}{E_{\alpha}-E_{\beta}\pm i\varepsilon}
+\psi _{g}^{\pm}(\pm \infty) & =\psi _{g}(\pm \infty)+\int \mathrm{d}\alpha \mathrm{d}\beta \frac{g(\alpha) e^{-iE_{\alpha}t}T_{\beta \alpha}^{\pm}}{E_{\alpha}-E_{\beta}\pm i\varepsilon}\psi _{\beta}
 \end{align}$$
 
 then
@@ -94,9 +94,36 @@ then
 $$\begin{align}
 \psi _{g}^{+}(+\infty) & =\psi _{g}^{-}(+\infty)+\int \mathrm{d}\alpha \mathrm{d}\beta \frac{g(\alpha)e^{-iE_{\alpha}t}T_{\beta \alpha}^{+}}{E_{\alpha}-E_{\beta}+i\varepsilon} \\
 \psi _{g}^{+}(\infty) & =\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\psi _{\alpha}^{+} \\
- & =\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\int \mathrm{d}\beta S_{\beta \alpha}\psi _{\alpha}^{-} \\
-\psi _{g}^{-}(\infty) & =\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\int \mathrm{d}\beta \delta(\beta-\alpha)\psi _{\alpha}^{-} \\
+ & =\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\int \mathrm{d}\beta S_{\beta \alpha}\psi _{\beta}^{-} \\
+\psi _{g}^{-}(\infty) & =\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\int \mathrm{d}\beta \delta(\beta-\alpha)\psi _{\beta}^{-} \\
 \int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t} \int \mathrm{d}\beta \frac{\psi _{\beta}T_{\beta \alpha}^{+}}{E_{\alpha}-E_{\beta}+i\varepsilon} & =-2\pi i\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\int \mathrm{d}\beta \delta(E_{\alpha}-E_{\beta})\psi _{\beta}T_{\beta \alpha}^{+} \\
- & =-2\pi i \int \mathrm{d}\alpha g(\alpha)e^{-iE_{\beta}t}\int \mathrm{d}\beta  \\
+ & =-2\pi i \int \mathrm{d}\alpha g(\alpha)e^{-iE_{\beta}t}\int \mathrm{d}\beta \delta(E_{\alpha}-E_{\beta})\psi _{\beta}^{-}T_{\beta \alpha}^{+} \\
 \implies S_{\beta \alpha} & =\delta(\alpha-\beta)-2\pi i\delta(E_{\alpha}-E_{\beta})T_{\beta \alpha}^{+}
 \end{align}$$
+
+similarly
+
+$$\begin{align}
+\psi _{g}^{-}(-\infty) & =\psi _{g}^{+}(-\infty)+\int \mathrm{d}\alpha \mathrm{d}\beta \frac{g(\alpha)e^{-iE_{\alpha}t}T_{\beta \alpha}^{-}}{E_{\alpha}-E_{\beta}-i\varepsilon}\psi _{\beta} \\
+\psi _{g}^{-}(-\infty) & =\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\psi _{\alpha}^{-} \\
+ & =\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\int \mathrm{d}\beta \psi _{\beta}^{+}\bar{S}_{\beta \alpha} \\
+\psi _{g}^{+}(-\infty) & =\int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\int \mathrm{d}\beta \psi _{\beta}^{+}\delta(\alpha-\beta) \\
+\int \mathrm{d}\alpha \mathrm{d}\beta \frac{g(\alpha)e^{-iE_{\alpha}t}T^{-}_{\beta \alpha}}{E_{\alpha}-E_{\beta}-i\varepsilon}\psi _{\beta} & =2\pi i \int \mathrm{d}\alpha g(\alpha)e^{-iE_{\alpha}t}\int \mathrm{d}\beta \delta(E_{\alpha}-E_{\beta})\psi _{\beta}^{+}T^{-}_{\beta \alpha} \\
+\implies \bar{S}_{\alpha \beta} & =\delta(\alpha-\beta)+2\pi i\delta(E_{\alpha}-E_{\beta})T^{-}_{\beta \alpha}
+\end{align}$$
+
+so if $\displaystyle{E_{\alpha}=E_{\beta}}$, $\displaystyle{T^{+}_{\beta \alpha}=\bar{T}_{\alpha \beta}^{-}}$
+
+$$\begin{align}
+(\psi _{\beta},V)
+\end{align}$$
+
+using Lippman-Schwinger equation, we have
+
+$$\begin{align}
+S_{\alpha \beta} & =\delta(\alpha-\beta)-2\pi i\delta(E_{\alpha}-E_{\beta})T_{\alpha \beta}^{+} \\
+T_{\alpha \beta}^{+} & =(\psi _{\beta},V\psi _{\alpha}^{+}) \\
+ & =(\psi _{\beta},V\psi _{\alpha})+\left( \psi _{\beta},V \frac{1}{E_{\alpha}-H_{0}+i\varepsilon}V\psi _{\alpha} \right)+\left(\psi _{\beta},V \frac{1}{E_{\alpha}-H_{0}+i\varepsilon}V \frac{1}{E_{\alpha}-H_{0}+i\varepsilon}V\psi _{\alpha}\right)+\dots
+\end{align}$$
+
+this is the old-fashioned perturbation theory. 
