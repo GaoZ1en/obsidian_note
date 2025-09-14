@@ -185,6 +185,3 @@ H_{\xi} & =\int \mathrm{d}r \mathrm{d}\phi \xi ^{t}\left(\frac{r(1+r^{2})^{2}}{2
  & +\xi ^{\phi}\left(r\partial _{r}A^{t}\partial _{\phi}A^{r}-r^{3}(1+r^{2})\partial _{r}A^{t}\partial _{r}A^{\phi}+\frac{r}{(1+r^{2})^{2}}\partial _{t}A^{r}\partial _{\phi}A^{r}-\frac{r^{3}}{1+r^{2}}\partial _{t}A^{r}\partial _{r}A^{\phi}+\frac{2r^{2}}{1+r^{2}}A^{t}\partial _{\phi}A^{r}-2r^{4}A^{t}\partial _{r}A^{\phi}-\frac{2r^{2}}{1+r^{2}}A^{\phi}\partial _{t}A^{r}-2r^{2}(1+r^{2})A^{\phi}\partial _{r}A^{t}-2r^{3}A^{t}A^{\phi}\right)
 \end{align}$$
 
----
-![[Attachments/Pasted image 20250913163800.png]]
-

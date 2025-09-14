@@ -20102,6 +20102,16 @@
             "timeKey": "16:35",
             "w": 176,
             "c": 612
+          },
+          {
+            "timeKey": "18:05",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "18:25",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 650
@@ -20146,9 +20156,193 @@
             "timeKey": "16:10",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "18:05",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 654
+      },
+      {
+        "date": "2025-09-13",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from RQM to RQFT.md",
+        "wordCountStart": 2254,
+        "charCountStart": 12378,
+        "changes": [
+          {
+            "timeKey": "18:55",
+            "w": 20,
+            "c": 118
+          },
+          {
+            "timeKey": "19:00",
+            "w": 59,
+            "c": 286
+          },
+          {
+            "timeKey": "19:05",
+            "w": 3,
+            "c": 45
+          },
+          {
+            "timeKey": "19:20",
+            "w": 1,
+            "c": 4
+          },
+          {
+            "timeKey": "19:25",
+            "w": 9,
+            "c": 63
+          },
+          {
+            "timeKey": "19:30",
+            "w": 29,
+            "c": 160
+          },
+          {
+            "timeKey": "19:35",
+            "w": 77,
+            "c": 403
+          },
+          {
+            "timeKey": "19:45",
+            "w": 7,
+            "c": 16
+          },
+          {
+            "timeKey": "19:50",
+            "w": 1,
+            "c": 10
+          },
+          {
+            "timeKey": "20:25",
+            "w": 56,
+            "c": 330
+          },
+          {
+            "timeKey": "20:30",
+            "w": 110,
+            "c": 585
+          },
+          {
+            "timeKey": "20:35",
+            "w": 2,
+            "c": 23
+          },
+          {
+            "timeKey": "20:40",
+            "w": 63,
+            "c": 352
+          },
+          {
+            "timeKey": "20:50",
+            "w": 11,
+            "c": 69
+          },
+          {
+            "timeKey": "20:55",
+            "w": 4,
+            "c": 25
+          },
+          {
+            "timeKey": "21:10",
+            "w": 3,
+            "c": 31
+          },
+          {
+            "timeKey": "21:45",
+            "w": 22,
+            "c": 152
+          },
+          {
+            "timeKey": "21:55",
+            "w": 172,
+            "c": 827
+          },
+          {
+            "timeKey": "22:00",
+            "w": 1,
+            "c": 7
+          }
+        ],
+        "id": 655
+      },
+      {
+        "date": "2025-09-13",
+        "filePath": "Drafts/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:10",
+            "w": 267,
+            "c": 2317
+          },
+          {
+            "timeKey": "19:25",
+            "w": 225,
+            "c": 1508
+          },
+          {
+            "timeKey": "19:30",
+            "w": 614,
+            "c": 4292
+          },
+          {
+            "timeKey": "19:35",
+            "w": 488,
+            "c": 4354
+          },
+          {
+            "timeKey": "20:35",
+            "w": 460,
+            "c": 3734
+          },
+          {
+            "timeKey": "20:40",
+            "w": 688,
+            "c": 4977
+          }
+        ],
+        "id": 656
+      },
+      {
+        "date": "2025-09-13",
+        "filePath": "2025-09-11.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:15",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 657
+      },
+      {
+        "date": "2025-09-13",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from NRQM to RQM.md",
+        "wordCountStart": 1841,
+        "charCountStart": 10432,
+        "changes": [
+          {
+            "timeKey": "20:35",
+            "w": 8,
+            "c": 64
+          }
+        ],
+        "id": 658
+      },
+      {
+        "date": "2025-09-13",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from free QFT to interactive QFT.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 659
       }
     ],
     "daysWithCompletedGoal": [
