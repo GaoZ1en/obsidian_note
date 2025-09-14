@@ -73,19 +73,9 @@ C_{n,m} & =\sqrt{ \frac{1}{2\pi}\frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}} }
 
 Noether theorem states that
 
-$$\tag{.}\begin{align}
-X_{\xi} & =\int \mathrm{d}^{3}x\mathcal{L}_{\xi}\phi \frac{\delta}{\delta \phi}
-\end{align}$$
-
 $$\begin{align}
 X_{\xi}\cdot \omega[\delta \phi _{1},\delta \phi _{2}] & = \omega[\mathcal{L}_{\xi}\phi _{1},\delta \phi _{2}] \\
  & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\mathcal{L}_{\xi}\phi _{1} \delta \phi _{2}-\nabla _{\mu}\delta \phi _{2} \mathcal{L}_{\xi}\phi _{1} )
-\end{align}$$
-
-$$\tag{.}\begin{align} \\
-\omega & = \int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \phi \wedge \delta \phi \\
-X_{\xi}\cdot \omega & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}(X_{\xi}\cdot \delta \phi)\delta \phi-\nabla _{\mu}\delta \phi(X_{\xi}\cdot \delta \phi)) \\
- & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\mathcal{L}_{\xi}\phi \delta \phi-\nabla _{\mu}\delta \phi \mathcal{L}_{\xi}\phi)
 \end{align}$$
 
 I think that's it. 
@@ -101,7 +91,7 @@ X_{\xi}\cdot \omega & =-\delta H_{\xi}
 so we can using it to calculate the Noether charge $\displaystyle{H_{\xi}}$.
 
 $$\tag{.}\begin{align}
-A^{\mu} & =\sum ^{\infty}_{n,\bar{n}=0}{f^{(+)}_{l,n,\bar{n}}}^{\mu}a_{l,n,\bar{n}}+\dots
+A^{\mu} & =\sum ^{\infty}_{n,\bar{n}=0}{f^{(+)}_{l,n,\bar{n}}}^{\mu}a_{l,n,\bar{n}}+{f^{(+)}_{r,n,\bar{n}}}^{\mu}a_{r,n,\bar{n}}+{f^{(-)}_{l,n,\bar{n}}}^{\mu}a^{\dagger}_{l,n,\bar{n}}+{f^{(-)}_{r,n,\bar{n}}}a^{\dagger}_{r,n,\bar{n}}
 \end{align}$$
 
 $$\begin{align}
