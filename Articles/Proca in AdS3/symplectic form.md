@@ -349,35 +349,13 @@ $$\begin{align}
 
 then by induction, $\displaystyle{\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}] =-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}}$ is satisfied for any $\displaystyle{n_{2}+\bar{n}_{2}}$. and similarly, we have $\displaystyle{\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]=-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}}$, and $\displaystyle{\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]=0}$, $\displaystyle{\omega[f^{(\pm)}_{r/l,n_{1},\bar{n}_{1}},f^{(\pm)}_{r/l,n_{2},\bar{n}_{2}}]=0}$. here we use
 
-
 $$\begin{align}
-\mathcal{L}_{\xi_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (n+1)(\mu+n+2) }{f_{r,n+1,\bar{n}}^{(+)}}^{\mu}\\
-\mathcal{L}_{\xi_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu+2}{2}+n\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\xi_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ n(\mu+n+1) }{f^{+}_{r,n-1,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\bar{\xi}_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (\bar{n}+1)(\mu+\bar{n}) }{f^{(+)}_{r,n,\bar{n}+1}}^{\mu} \\
-\mathcal{L}_{\bar{\xi}_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu}{2}+\bar{n}\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\bar{\xi}_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(+)}_{r,n,\bar{n}-1}}^{\mu} \\
-\mathcal{L}_{\xi_{1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (n+1)(\mu+n+2) }{f_{r,n+1,\bar{n}}^{(-)}}^{\mu}\\
-\mathcal{L}_{\xi_{0}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= i\left(\frac{\mu+2}{2}+n\right){f^{(-)}_{r,n,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\xi_{-1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ n(\mu+n+1) }{f^{(-)}_{r,n-1,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\bar{\xi}_{1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (\bar{n}+1)(\mu+\bar{n}) }{f^{(-)}_{r,n,\bar{n}+1}}^{\mu} \\
-\mathcal{L}_{\bar{\xi}_{0}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= i\left(\frac{\mu}{2}+\bar{n}\right){f^{(-)}_{r,n,\bar{n}}}^{\mu}\\
-\mathcal{L}_{\bar{\xi}_{-1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(-)}_{r,n,\bar{n}-1}}^{\mu}
-\end{align}$$
-
-$$\begin{align}
-\mathcal{L}_{\xi _{-1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ (n+1)(\mu+n) }{f^{(+)}_{l,n+1,\bar{n}}}^{\mu} \\
-\mathcal{L}_{\xi _{0}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =-i\left( \frac{\mu}{2}+n \right){f^{(+)}_{l,n,\bar{n}}}^{\mu} \\
-\mathcal{L}_{\xi _{1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =-\sqrt{ n(\mu+n-1) }{f^{(+)}_{l,n-1,\bar{n}}}^{\mu} \\
-\mathcal{L}_{\bar{\xi} _{-1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ (\bar{n}+1)(\mu+\bar{n}+2) }{f^{(+)}_{l,n,\bar{n}}}^{\mu} \\
-\mathcal{L}_{\bar{\xi} _{0}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =-i\left( \frac{\mu+2}{2}+\bar{n} \right){f^{(+)}_{l,n,\bar{n}}}^{\mu} \\
-\mathcal{L}_{\bar{\xi} _{1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =-\sqrt{ n(\mu+n+1) }{f^{(+)}_{l,n,\bar{n}-1}}^{\mu} \\
-\mathcal{L}_{\xi _{1}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ (n+1)(\mu+n) }{f^{(-)}_{l,n+1,\bar{n}}}^{\mu} \\
-\mathcal{L}_{\xi _{0}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =i\left( \frac{\mu}{2}+n \right){f^{(-)}_{l,n,\bar{n}}}^{\mu} \\
-\mathcal{L}_{\xi _{-1}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =-\sqrt{ n(\mu+n-1) }{f^{(-)}_{l,n-1,\bar{n}}}^{\mu} \\
-\mathcal{L}_{\bar{\xi} _{1}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ (\bar{n}+1)(\mu+\bar{n}+2) }{f^{(-)}_{l,n,\bar{n}}}^{\mu} \\
-\mathcal{L}_{\bar{\xi} _{0}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =i\left( \frac{\mu+2}{2}+\bar{n} \right){f^{(-)}_{l,n,\bar{n}}}^{\mu} \\
-\mathcal{L}_{\bar{\xi} _{-1}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =-\sqrt{ n(\mu+n+1) }{f^{(-)}_{l,n,\bar{n}-1}}^{\mu}
+\mathcal{L}_{\xi_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (n+1)(\mu+n+2) }{f_{r,n+1,\bar{n}}^{(+)}}^{\mu} & \mathcal{L}_{\xi_{-1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ n(\mu+n+1) }{f^{(-)}_{r,n-1,\bar{n}}}^{\mu} & \mathcal{L}_{\xi _{-1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ (n+1)(\mu+n) }{f^{(+)}_{l,n+1,\bar{n}}}^{\mu} & \mathcal{L}_{\xi _{-1}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =-\sqrt{ n(\mu+n-1) }{f^{(-)}_{l,n-1,\bar{n}}}^{\mu} \\
+\mathcal{L}_{\xi_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu+2}{2}+n\right){f^{(+)}_{r,n,\bar{n}}}^{\mu} & \mathcal{L}_{\xi_{0}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= i\left(\frac{\mu+2}{2}+n\right){f^{(-)}_{r,n,\bar{n}}}^{\mu} & \mathcal{L}_{\xi _{0}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =-i\left( \frac{\mu}{2}+n \right){f^{(+)}_{l,n,\bar{n}}}^{\mu} & \mathcal{L}_{\xi _{0}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =i\left( \frac{\mu}{2}+n \right){f^{(-)}_{l,n,\bar{n}}}^{\mu} \\
+\mathcal{L}_{\xi_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ n(\mu+n+1) }{f^{+}_{r,n-1,\bar{n}}}^{\mu} & \mathcal{L}_{\xi_{1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (n+1)(\mu+n+2) }{f_{r,n+1,\bar{n}}^{(-)}}^{\mu} & \mathcal{L}_{\xi _{1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =-\sqrt{ n(\mu+n-1) }{f^{(+)}_{l,n-1,\bar{n}}}^{\mu} & \mathcal{L}_{\xi _{1}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ (n+1)(\mu+n) }{f^{(-)}_{l,n+1,\bar{n}}}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{-1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (\bar{n}+1)(\mu+\bar{n}) }{f^{(+)}_{r,n,\bar{n}+1}}^{\mu} & \mathcal{L}_{\bar{\xi}_{-1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(-)}_{r,n,\bar{n}-1}}^{\mu} & \mathcal{L}_{\bar{\xi} _{-1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ (\bar{n}+1)(\mu+\bar{n}+2) }{f^{(+)}_{l,n,\bar{n}-1}}^{\mu} & \mathcal{L}_{\bar{\xi} _{-1}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =-\sqrt{ n(\mu+n+1) }{f^{(-)}_{l,n,\bar{n}-1}}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{0}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -i\left(\frac{\mu}{2}+\bar{n}\right){f^{(+)}_{r,n,\bar{n}}}^{\mu}  & \mathcal{L}_{\bar{\xi}_{0}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= i\left(\frac{\mu}{2}+\bar{n}\right){f^{(-)}_{r,n,\bar{n}}}^{\mu} & \mathcal{L}_{\bar{\xi} _{0}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =-i\left( \frac{\mu+2}{2}+\bar{n} \right){f^{(+)}_{l,n,\bar{n}}}^{\mu} & \mathcal{L}_{\bar{\xi} _{0}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =i\left( \frac{\mu+2}{2}+\bar{n} \right){f^{(-)}_{l,n,\bar{n}}}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(+)}_{r,n,\bar{n}-1}}^{\mu} & \mathcal{L}_{\bar{\xi}_{1}}{f^{(-)}_{r,n,\bar{n}}}^{\mu} &= \sqrt{ (\bar{n}+1)(\mu+\bar{n}) }{f^{(-)}_{r,n,\bar{n}+1}}^{\mu} & \mathcal{L}_{\bar{\xi} _{1}}{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =-\sqrt{ n(\mu+n+1) }{f^{(+)}_{l,n,\bar{n}-1}}^{\mu} & \mathcal{L}_{\bar{\xi} _{1}}{f^{(-)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ (\bar{n}+1)(\mu+\bar{n}+2) }{f^{(-)}_{l,n,\bar{n}}}^{\mu}
 \end{align}$$
 
 expand
