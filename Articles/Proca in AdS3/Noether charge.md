@@ -92,6 +92,10 @@ $$\begin{align}
 X_{\xi}\cdot \omega & =-\delta H_{\xi}
 \end{align}$$
 
+$$\tag{.}\begin{align}
+H_{\xi} & = X\cdot Y\cdot \omega
+\end{align}$$
+
 so we can using it to calculate the Noether charge $\displaystyle{H_{\xi}}$.
 
 $$\tag{.}\begin{align}
@@ -105,6 +109,10 @@ X_{\xi}\cdot \omega[\delta A_{1},\delta A_{2}] & =\omega[\mathcal{L}_{\xi}A_{1},
  & +\omega[\mathcal{L}_{\xi}f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]a^{\dagger}_{l,n_{1},\bar{n}_{1}}\delta a_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi}f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{r,n_{2},\bar{n}_{2}}]a^{\dagger}_{l,n_{1},\bar{n}_{1}}\delta a_{r,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi}f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]a^{\dagger}_{l,n_{1},\bar{n}_{1}}\delta a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi}f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]a^{\dagger}_{l,n_{1},\bar{n}_{1}}\delta a^{\dagger}_{r,n_{2},\bar{n}_{2}} \\
  & +\omega[\mathcal{L}_{\xi}f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]a^{\dagger}_{r,n_{1},\bar{n}_{1}}\delta a_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi}f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{r,n_{2},\bar{n}_{2}}]a^{\dagger}_{r,n_{1},\bar{n}_{1}}\delta a_{r,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi}f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]a^{\dagger}_{r,n_{1},\bar{n}_{1}}\delta a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi}f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]a_{r,n_{1},\bar{n}_{1}}\delta a^{\dagger}_{r,n_{2},\bar{n}_{2}} \\
  & =\sum ^{\infty}_{n_{1},n_{2}=0}\sum ^{\infty}_{\bar{n}_{1},\bar{n}_{2}=0}\omega[\mathcal{L}_{\xi}f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]a_{l,n_{1},\bar{n}_{1}}\delta a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi}f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]a_{r,n_{1},\bar{n}_{1}}\delta a^{\dagger}_{r,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi}f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]a^{\dagger}_{l,n_{1},\bar{n}_{1}}\delta a_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi}f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{r,n_{2},\bar{n}_{2}}]a^{\dagger}_{r,n_{1},\bar{n}_{1}}\delta a_{r,n_{2},\bar{n}_{2}}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\omega[f^{(+)}_{l/r,n_{1},\bar{n}_{1}},f^{(-)}_{l/r,n_{2},\bar{n}_{2}}]=-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}
 \end{align}$$
 
 $$\begin{align}
