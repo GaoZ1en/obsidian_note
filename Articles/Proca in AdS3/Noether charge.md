@@ -11,6 +11,10 @@ E^{\nu} & =\nabla _{\mu}F^{\mu \nu}-\mu ^{2}A^{\nu} \\
 \implies \omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\delta F^{\mu \nu}\wedge \delta A_{\nu}
 \end{align}$$
 
+$$\tag{.}\begin{align}
+\omega[\delta]
+\end{align}$$
+
 consider the transformation of $\displaystyle{S}$ under $\displaystyle{X_{\xi}=\int \mathrm{d}^{3}x\mathcal{L}_{\xi}A_{\mu}\frac{\delta}{\delta A_{\mu}}}$ 
 
 $$\begin{align}
@@ -187,4 +191,11 @@ H_{\xi} & =\int \mathrm{d}r \mathrm{d}\phi \xi ^{t}\left(\frac{r(1+r^{2})^{2}}{2
  & \left.+r\partial _{r}A^{t}\partial _{t}A^{r}+r\partial _{\phi}A^{t}\partial _{t}A^{\phi}-r\partial _{\phi}A^{r}\partial _{r}A^{\phi}+2r^{2}(1+r^{2})A^{t}\partial _{r}A^{t}+\frac{2r^{2}}{1+r^{2}}A^{t}\partial _{t}A^{r}-2A^{\phi}\partial _{\phi}A^{r}+2r^{2}(1+r^{2})A^{\phi}\partial _{r}A^{\phi}+2r^{3}(A^{t})^{2}+2r(1+r^{2})(A^{\phi})^{2}\right) \\
  & +\xi ^{r}\left(-\frac{1}{r(1+r^{2})}\partial _{\phi}A^{t}\partial _{\phi}A^{r}+r\partial _{\phi}A^{t}\partial _{r}A^{\phi}-\frac{r}{(1+r^{2})^{2}} \partial _{\phi}A^{r}\partial _{t}A^{\phi}+\frac{r^{3}}{1+r^{2}}\partial _{t}A^{\phi}\partial _{r}A^{\phi}+\frac{2r^{2}}{1+r^{2}}A^{\phi}\partial _{t}A^{\phi}+2A^{\phi}\partial _{\phi}A^{t}\right) \\
  & +\xi ^{\phi}\left(r\partial _{r}A^{t}\partial _{\phi}A^{r}-r^{3}(1+r^{2})\partial _{r}A^{t}\partial _{r}A^{\phi}+\frac{r}{(1+r^{2})^{2}}\partial _{t}A^{r}\partial _{\phi}A^{r}-\frac{r^{3}}{1+r^{2}}\partial _{t}A^{r}\partial _{r}A^{\phi}+\frac{2r^{2}}{1+r^{2}}A^{t}\partial _{\phi}A^{r}-2r^{4}A^{t}\partial _{r}A^{\phi}-\frac{2r^{2}}{1+r^{2}}A^{\phi}\partial _{t}A^{r}-2r^{2}(1+r^{2})A^{\phi}\partial _{r}A^{t}-2r^{3}A^{t}A^{\phi}\right)
+\end{align}$$
+
+---
+
+$$\begin{align}
+\omega[\mathcal{L}_{\xi}\phi _{1},\phi _{2} ^{*}] & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\mathcal{L}_{\xi}\phi _{1} \phi _{2} ^{*}-\nabla _{\mu}\phi _{2}^{*}\mathcal{L}_{\xi}\phi _{1}) \\
+ & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\xi ^{\nu}\nabla _{\nu}\phi _{1}\phi _{2}^{*}+\xi ^{\nu}\nabla _{\mu}\nabla _{\nu}\phi _{1}\phi _{2}^{*}-\nabla _{\mu}\phi _{2}^{*}\xi ^{\nu}\nabla _{\nu}\phi _{1})
 \end{align}$$
