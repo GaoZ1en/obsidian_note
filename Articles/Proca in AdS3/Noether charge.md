@@ -207,3 +207,33 @@ $$\begin{align}
 \omega[\mathcal{L}_{\xi}\phi _{1},\phi _{2} ^{*}] & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\mathcal{L}_{\xi}\phi _{1} \phi _{2} ^{*}-\nabla _{\mu}\phi _{2}^{*}\mathcal{L}_{\xi}\phi _{1}) \\
  & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\xi ^{\nu}\nabla _{\nu}\phi _{1}\phi _{2}^{*}+\xi ^{\nu}\nabla _{\mu}\nabla _{\nu}\phi _{1}\phi _{2}^{*}-\nabla _{\mu}\phi _{2}^{*}\xi ^{\nu}\nabla _{\nu}\phi _{1})
 \end{align}$$
+
+$$\tag{.}\begin{align}
+X_{\xi _{1}}\cdot X_{\xi _{2}}\cdot \omega & =\left\{H_{\xi_{1}},H_{\xi_{2}}\right\} \\
+ & =H_{\left\{\xi _{1},\xi _{2}\right\}}
+\end{align}$$
+
+$$\begin{align}
+[\xi_{0},\xi_{1}] & =i\xi_{1} & [\bar{\xi}_{0},\bar{\xi}_{1}] & =i\bar{\xi}_{1} \\
+[\xi_{0},\xi _{-1}] & =-i\xi _{-1} & [\bar{\xi}_{0},\bar{\xi}_{-1}] & =-i\bar{\xi}_{-1} \\
+[\xi _{1},\xi _{-1}] & =-2i\xi _{0} & [\bar{\xi}_{1},\bar{\xi}_{-1}] & =-2i\bar{\xi}_{0}
+\end{align}$$
+
+$$\begin{align}
+H_{\xi _{-1}} & =i\omega[\mathcal{L}_{\xi_{0}A},\mathcal{L}_{\xi _{-1}}A] \\
+H_{\xi _{0}} & =\frac{i}{2}\omega[\mathcal{L}_{\xi _{1}}A,\mathcal{L}_{\xi _{-1}}A] \\
+H_{\xi_{1}} & =i\omega[\mathcal{L}_{\xi_{1}}A,\mathcal{L}_{\xi_{0}}A] \\
+H_{\bar{\xi} _{-1}} & =i\omega[\mathcal{L}_{\bar{\xi}_{0}A},\mathcal{L}_{\bar{\xi} _{-1}}A] \\
+H_{\bar{\xi} _{0}} & =\frac{i}{2}\omega[\mathcal{L}_{\bar{\xi} _{1}}A,\mathcal{L}_{\bar{\xi} _{-1}}A] \\
+H_{\bar{\xi}_{1}} & =i\omega[\mathcal{L}_{\bar{\xi}_{1}}A,\mathcal{L}_{\bar{\xi}_{0}}A] \\
+\end{align}$$
+
+
+
+$$\begin{align}
+\omega[\mathcal{L}_{\xi_{1}}A,\mathcal{L}_{\xi_{2}}A] & =\sum ^{\infty}_{n_{1},n_{2}=0}\sum ^{\infty}_{\bar{n}_{1},\bar{n}_{2}=0} \\
+& +\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(+)}_{l,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(+)}_{r,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a_{r,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(-)}_{l,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(-)}_{r,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a^{\dagger}_{r,n_{2},\bar{n}_{2}} \\
+& +\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{r,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(+)}_{l,n_{2},\bar{n}_{2}}]a_{r,n_{1},n_{2}}a_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{r,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(+)}_{r,n_{2},\bar{n}_{2}}]a_{r,n_{1},n_{2}}a_{r,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{r,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(-)}_{l,n_{2},\bar{n}_{2}}]a_{r,n_{1},n_{2}}a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(-)}_{r,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a^{\dagger}_{r,n_{2},\bar{n}_{2}} \\
+& +\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(+)}_{l,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(+)}_{r,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a_{r,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(-)}_{l,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(-)}_{r,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a^{\dagger}_{r,n_{2},\bar{n}_{2}} \\
+& +\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(+)}_{l,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(+)}_{r,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a_{r,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(-)}_{l,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{2}}f^{(-)}_{r,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a^{\dagger}_{r,n_{2},\bar{n}_{2}}
+\end{align}$$
