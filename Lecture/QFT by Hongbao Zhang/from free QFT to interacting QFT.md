@@ -208,5 +208,7 @@ the third term
 
 $$\begin{align}
 (-i)^{2}\int _{-\infty}^{+\infty}\mathrm{d}\tau_{1}\int _{-\infty}^{\tau_{1}} \mathrm{d}\tau_{2}\braket{ \beta|V(\tau_{1})V(\tau_{2})|\alpha } & =(-i)^{2}\int _{-\infty}^{+\infty}\mathrm{d}\tau_{1}\int ^{\tau_{1}}_{-\infty}\mathrm{d}\tau_{2} \int \mathrm{d}\gamma \braket{ \beta|V|\gamma } \braket{ \gamma|V|\alpha } e^{i(E_{\beta}-E_{\alpha})t}e^{iE_{\gamma}(\tau_{1}-\tau_{2})} \\
- & =-2\pi i\delta(E_{\beta}-E_{\alpha})
+ & =-2\pi i\delta(E_{\beta}-E_{\alpha})\int \mathrm{d}\gamma \frac{\braket{ \beta|V|\gamma } \braket{ \gamma|V|\alpha }}{E_{\alpha}-E_{\gamma}+i\varepsilon} \\
+ & =-2\pi i\delta(E_{\beta}-E_{\alpha})\braket{ \beta|V \frac{1}{E_{\alpha}-H_{0}+i\varepsilon}V|\alpha } 
 \end{align}$$
+
