@@ -116,7 +116,8 @@ so by induction, we had proven (2.6). when $\displaystyle{n< \bar{n}}$, we have 
 $$\tag{.}\begin{align}
 f^{(+)}_{r,n,\bar{n}} & \propto r^{|n-\bar{n}|}(1+r^{2})^{-(\mu+|n-\bar{n}|+2)/2}P_{\min(n,\bar{n})}^{(\mu+1,|n-\bar{n}|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)e^{-i(\mu+n+\bar{n}+2)t}e^{i(n-\bar{n})\phi}
 \end{align}$$
---
+---
+
 $$\tag{.}\begin{align}
 {f^{+}_{l,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi ^{\mu}_{1} \\
 {f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\frac{1}{\sqrt{ n!\bar{n}!(\mu)_{n}(\mu+2)_{\bar{n}} }}\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{l,0,0}}^{\mu}
