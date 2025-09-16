@@ -92,13 +92,9 @@ $$\begin{align}
 X_{\xi}\cdot \omega & =-\delta H_{\xi}
 \end{align}$$
 
-$$\tag{.}\begin{align}
-H_{\xi} & = X\cdot Y\cdot \omega
-\end{align}$$
-
 so we can using it to calculate the Noether charge $\displaystyle{H_{\xi}}$.
 
-$$\tag{.}\begin{align}
+$$\begin{align}
 A^{\mu} & =\sum ^{\infty}_{n,\bar{n}=0}{f^{(+)}_{l,n,\bar{n}}}^{\mu}a_{l,n,\bar{n}}+{f^{(+)}_{r,n,\bar{n}}}^{\mu}a_{r,n,\bar{n}}+{f^{(-)}_{l,n,\bar{n}}}^{\mu}a^{\dagger}_{l,n,\bar{n}}+{f^{(-)}_{r,n,\bar{n}}}a^{\dagger}_{r,n,\bar{n}}
 \end{align}$$
 
@@ -276,3 +272,11 @@ $$\begin{align}
 however this method is not the one.
 
 ---
+
+$$\begin{align}
+H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu}_{~~\rho}F^{\nu\rho}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} -\frac{1}{2}\mu^{2}g^{\mu \nu}A_{\rho}A^{\rho}\right)
+\end{align}$$
+
+$$\begin{align}
+H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\varphi \nabla _{\nu}\varphi-\frac{1}{2}g_{\mu \nu} \right)
+\end{align}$$
