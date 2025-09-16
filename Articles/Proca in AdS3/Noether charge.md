@@ -273,10 +273,13 @@ however this method is not the one.
 
 ---
 
+we first discuss the scalar
+
 $$\begin{align}
-H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu}_{~~\rho}F^{\nu\rho}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} -\frac{1}{2}\mu^{2}g^{\mu \nu}A_{\rho}A^{\rho}\right)
+H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\varphi \nabla _{\nu}\varphi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\varphi \nabla ^{\rho}\varphi-\frac{1}{2}g_{\mu \nu}\mu ^{2}\varphi ^{2} \right)
 \end{align}$$
 
 $$\begin{align}
-H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\varphi \nabla _{\nu}\varphi-\frac{1}{2}g_{\mu \nu} \right)
+X_{\xi} \cdot \omega & =\int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\mathcal{L}_{\xi}\varphi\delta \varphi-\nabla _{\mu}\delta \varphi \mathcal{L}_{\xi}\varphi) \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\xi ^{\nu}\nabla _{\nu}\varphi \delta \varphi-\nabla _{\mu}\delta \varphi \xi ^{\nu}\nabla _{\nu}\varphi)
 \end{align}$$
