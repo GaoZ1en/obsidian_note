@@ -288,9 +288,9 @@ here we drop all the total derivatives.
 
 $$\begin{align}
 X_{\xi}\cdot\omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}[(X_{\xi}\cdot\delta F^{\mu \nu})\delta A_{\nu}-\delta F^{\mu \nu}(X_{\xi}\cdot \delta A_{\nu})] \\
--\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\delta F^{\mu \nu}X_{\xi}\cdot \delta A_{\nu} & =-\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\delta F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho}) \\
- & =-\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\rho}\delta F^{\mu \nu}(\nabla _{\rho}A_{\nu}-\nabla _{\nu}A_{\rho}) \\
- & =-\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\delta F^{\mu \rho}F^{\nu}_{~\rho}
+-\int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\delta F^{\mu \nu}X_{\xi}\cdot \delta A_{\nu} & =-\int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\delta F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho}) \\
+ & =-\int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}(\nabla _{\rho}\delta F^{\rho \mu}A^{\nu}+\delta F^{\mu \rho}(\nabla ^{\nu}A_{\rho}-\nabla _{\rho}A^{\nu})) \\
+ & =-\int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}(\mu ^{2}\delta A^{\mu}A^{\nu}+\delta F^{\mu \rho}F^{\nu}_{~\rho})
 \end{align}$$
 
 $$\begin{align}
@@ -306,14 +306,8 @@ $$\begin{align}
 then
 
 $$\begin{align}
-X_{\xi}\cdot \omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( -F^{\mu \rho}\delta F^{\nu}_{~\rho}-\mu ^{2}A^{\mu}\delta A^{\nu}+g_{\mu \nu}\delta\left(\frac{1}{4}F^{\rho \sigma}F_{\rho \sigma}+\frac{1}{2}\mu ^{2}A^{\rho}A_{\rho}\right) \delta F^{\mu \rho}F^{\nu}_{~\rho}\right) \\
+X_{\xi}\cdot \omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( -F^{\mu \rho}\delta F^{\nu}_{~\rho}-\mu ^{2}A^{\mu}\delta A^{\nu}+g_{\mu \nu}\delta\left(\frac{1}{4}F^{\rho \sigma}F_{\rho \sigma}+\frac{1}{2}\mu ^{2}A^{\rho}A_{\rho}\right)- \delta F^{\mu \rho}F^{\nu}_{~\rho}-\mu ^{2}\delta A^{\mu}A^{\nu}\right) \\
  & =-\delta\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left(F^{\mu \rho}F^{\nu}_{~\rho}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{4}g_{\mu \nu}F^{\rho \sigma}F_{\rho \sigma}-\frac{1}{2}g_{\mu \nu}\mu ^{2}A^{\rho}A_{\rho}\right)
 \end{align}$$
-$$\tag{.}\begin{align}
 
-\end{align}$$
-
-$$\begin{align}
-\mathcal{L}_{\xi}A^{\mu} & =\xi ^{\rho}\nabla _{\rho}A^{\mu}-A^{\rho}\nabla _{\rho}\xi^{\mu} \\
-\mathcal{L}_{\xi}A_{\mu} & =\xi ^{\rho}\nabla _{\rho}A_{\mu}-A^{\rho}\nabla _{\rho}\xi _{\mu}
-\end{align}$$
+here we also drop all the total derivatives. 
