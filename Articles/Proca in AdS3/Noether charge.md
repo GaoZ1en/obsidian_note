@@ -366,6 +366,3 @@ $$\begin{align}
  & =-2H_{\xi}
 \end{align}$$
 
-$$\begin{align}
-H_{\xi} & =-\frac{1}{2}X_{\xi}\cdot Y\cdot \omega
-\end{align}$$
