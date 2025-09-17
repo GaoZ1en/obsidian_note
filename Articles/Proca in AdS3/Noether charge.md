@@ -329,7 +329,7 @@ X_{\xi} \cdot \omega & =\int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}
 \end{align}$$
 
 $$\begin{align}
-X_{\xi}\cdot X\cdot \omega & =\omega[\mathcal{L}_{\xi}\varphi,\varphi] \\
+-X_{\xi}\cdot X\cdot \omega & =\omega[\mathcal{L}_{\xi}\varphi,\varphi] \\
  & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\mathcal{L}_{\xi}\varphi \varphi-\nabla _{\mu}\varphi \mathcal{L}_{\xi}\varphi) \\
  & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\xi ^{\nu}\nabla _{\nu}\varphi \varphi+\xi ^{\nu}\nabla _{\mu}\nabla _{\nu}\varphi \varphi-\nabla _{\mu}\varphi \xi ^{\nu}\nabla _{\nu}\varphi) \\
  & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(-\nabla ^{\nu}\xi _{\mu}\nabla _{\nu}\varphi \varphi+\xi ^{\nu}\nabla _{\mu}\nabla _{\nu}\varphi \varphi-\xi ^{\nu}\nabla _{\mu}\varphi \nabla _{\nu}\varphi ) \\
