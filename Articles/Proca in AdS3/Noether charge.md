@@ -11,7 +11,7 @@ E^{\nu} & =\nabla _{\mu}F^{\mu \nu}-\mu ^{2}A^{\nu} \\
 \implies \omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\delta F^{\mu \nu}\wedge \delta A_{\nu}
 \end{align}$$
 
-consider the transformation of $\displaystyle{S}$ under $\displaystyle{X_{\xi}=\int \mathrm{d}^{3}x\mathcal{L}_{\xi}A_{\mu}\frac{\delta}{\delta A_{\mu}}}$ 
+consider the transformation of $\displaystyle{S}$ under $\displaystyle{X_{\xi}=\int \mathrm{d}^{3}x\mathcal{L}_{\xi}A_{\mu}\frac{\delta}{\delta A_{\mu}}}$
 
 $$\begin{align}
 X_{\xi}\cdot \delta S & =\int \mathcal{L}_{\xi}\mathbf{L}=\int\mathrm{d}(\xi \cdot \mathbf{L}) \\
@@ -365,3 +365,4 @@ $$\begin{align}
 \omega[\mathcal{L}_{\xi}A,A] & =-2\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu \rho}F^{\nu}_{~\rho}+\mu ^{2}A^{\mu}A^{\nu}-g^{\mu \nu}\left(\frac{1}{4}F^{\rho \sigma}F_{\rho \sigma}+\frac{1}{2}\mu ^{2}A^{\rho}A_{\rho}\right) \right) \\
  & =-2H_{\xi}
 \end{align}$$
+
