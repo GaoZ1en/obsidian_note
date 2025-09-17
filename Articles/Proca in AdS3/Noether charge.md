@@ -366,3 +366,53 @@ $$\begin{align}
  & =-2H_{\xi}
 \end{align}$$
 
+## Killing向量的关键作用
+
+非常好的观察！$$\xi$$ 是Killing向量这个信息确实至关重要，它会显著简化分析。
+
+### Killing向量的性质
+
+对于Killing向量 $$\xi^{\mu}$$，我们有：
+$$\nabla_{(\mu}\xi_{\nu)} = 0 \quad \text{(Killing方程)}$$
+
+这意味着：
+$$\nabla_{\mu}\xi_{\nu} + \nabla_{\nu}\xi_{\mu} = 0$$
+
+### 重新审视全导数项
+
+让我们更仔细地处理全导数项：
+$$\int_{\Sigma} \mathrm{d}^{2}x \sqrt{\sigma} \tau^{\mu} \xi_{\mu} \nabla_{\rho}(\phi \nabla^{\rho}\phi)$$
+
+### 进一步的分部积分
+
+我们可以对这个全导数项再次进行分部积分：
+
+$$\int_{\Sigma} \mathrm{d}^{2}x \sqrt{\sigma} \tau^{\mu} \xi_{\mu} \nabla_{\rho}(\phi \nabla^{\rho}\phi)$$
+
+$$= \int_{\Sigma} \mathrm{d}^{2}x \nabla_{\rho}[\sqrt{\sigma} \tau^{\mu} \xi_{\mu} \phi \nabla^{\rho}\phi] - \int_{\Sigma} \mathrm{d}^{2}x \phi \nabla^{\rho}\phi \nabla_{\rho}[\sqrt{\sigma} \tau^{\mu} \xi_{\mu}]$$
+
+$$\tag{.}\begin{align}
+
+\end{align}$$
+
+### Killing向量的优势
+
+第一项是真正的全导数，可以转化为边界积分。
+
+第二项中，由于 $$\xi^{\mu}$$ 是Killing向量：
+$$\nabla_{\rho}[\sqrt{\sigma} \tau^{\mu} \xi_{\mu}] = \sqrt{\sigma} \tau^{\mu} \nabla_{\rho}\xi_{\mu} + \xi_{\mu} \nabla_{\rho}[\sqrt{\sigma} \tau^{\mu}]$$
+
+### 关键简化
+
+如果我们考虑的是**等距变换**下的积分，Killing向量的存在通常意味着：
+
+1. **几何结构的保持**：$$\mathcal{L}_{\xi}g_{\mu\nu} = 0$$
+2. **测度的不变性**：在适当条件下，$$\mathcal{L}_{\xi}(\sqrt{\sigma}) = 0$$
+
+### 物理图像：对称性与守恒
+
+在这种情况下，原积分实际上与**Noether定理**相关：
+
+- Killing向量 $$\xi^{\mu}$$ 对应时空的**等距对称性**
+- 积分 $$\int \sqrt{\sigma} \tau^{\mu} \xi_{\mu} \mathcal{L}_{\phi}$$ 类似于**守恒荷的生成元**
+

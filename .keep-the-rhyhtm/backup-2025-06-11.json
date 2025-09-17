@@ -21010,6 +21010,107 @@
           }
         ],
         "id": 674
+      },
+      {
+        "date": "2025-09-17",
+        "filePath": "Articles/Proca in AdS3/Noether charge.md",
+        "wordCountStart": 10482,
+        "charCountStart": 42007,
+        "changes": [
+          {
+            "timeKey": "11:05",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "11:25",
+            "w": 456,
+            "c": 2338
+          },
+          {
+            "timeKey": "11:30",
+            "w": 92,
+            "c": 460
+          },
+          {
+            "timeKey": "11:35",
+            "w": 22,
+            "c": 119
+          },
+          {
+            "timeKey": "11:45",
+            "w": 39,
+            "c": 191
+          },
+          {
+            "timeKey": "11:50",
+            "w": -5,
+            "c": -30
+          },
+          {
+            "timeKey": "11:55",
+            "w": 551,
+            "c": 2519
+          },
+          {
+            "timeKey": "12:05",
+            "w": 195,
+            "c": 857
+          },
+          {
+            "timeKey": "12:10",
+            "w": -163,
+            "c": -780
+          },
+          {
+            "timeKey": "12:15",
+            "w": -53,
+            "c": -254
+          },
+          {
+            "timeKey": "17:15",
+            "w": -9,
+            "c": -42
+          },
+          {
+            "timeKey": "17:20",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "17:25",
+            "w": -5,
+            "c": -37
+          },
+          {
+            "timeKey": "17:30",
+            "w": 168,
+            "c": 1340
+          }
+        ],
+        "id": 675
+      },
+      {
+        "date": "2025-09-17",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13738,
+        "changes": [],
+        "id": 676
+      },
+      {
+        "date": "2025-09-17",
+        "filePath": "Articles/Proca in AdS3/Killing vector in AdS3.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "11:05",
+            "w": 307,
+            "c": 2252
+          }
+        ],
+        "id": 677
       }
     ],
     "daysWithCompletedGoal": [
@@ -21072,7 +21173,8 @@
       "2025-09-12",
       "2025-09-13",
       "2025-09-14",
-      "2025-09-15"
+      "2025-09-15",
+      "2025-09-17"
     ]
   }
 }
