@@ -311,3 +311,27 @@ X_{\xi}\cdot \omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\x
 \end{align}$$
 
 here we also drop all the total derivatives. 
+
+---
+
+
+$$\begin{align}
+H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\varphi \nabla _{\nu}\varphi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\varphi \nabla ^{\rho}\varphi-\frac{1}{2}g_{\mu \nu}\mu ^{2}\varphi ^{2} \right)
+\end{align}$$
+
+$$\begin{align}
+X_{\xi} \cdot \omega & =\int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\mathcal{L}_{\xi}\varphi\delta \varphi-\nabla _{\mu}\delta \varphi \mathcal{L}_{\xi}\varphi) \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\xi ^{\nu}\nabla _{\nu}\varphi \delta \varphi+\xi ^{\nu}\nabla _{\mu}\nabla _{\nu}\varphi \delta \varphi-\nabla _{\mu}\delta \varphi \xi ^{\nu}\nabla _{\nu}\varphi) \\
+ & =\int _{\Sigma}d^{2}x\sqrt{ \sigma }\tau ^{\mu}(-\nabla ^{\nu}\xi _{\mu}\nabla _{\nu}\varphi \delta \varphi+\xi ^{\nu}\nabla _{\mu}\nabla _{\nu}\varphi \delta \varphi-\xi ^{\nu}\nabla _{\mu}\delta \varphi\nabla _{\nu}\varphi) \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\xi _{\mu}\nabla ^{\nu}\nabla _{\nu}\varphi \delta \varphi+\xi _{\mu}\nabla _{\nu}\varphi \nabla ^{\nu}\delta \varphi-\xi ^{\nu}\nabla _{\mu}\varphi \nabla _{\nu}\delta \varphi-\xi ^{\nu}\nabla _{\mu}\delta \varphi \nabla _{\nu}\varphi) \\
+ & =-\delta\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\varphi \nabla _{\nu}\varphi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\varphi \nabla ^{\rho}\varphi-\frac{1}{2}g_{\mu \nu}\mu ^{2}\varphi ^{2} \right) \\
+ & =-\delta H_{\xi}
+\end{align}$$
+
+$$\begin{align}
+X_{\xi}\cdot X\cdot \omega & =\omega[\mathcal{L}_{\xi}\varphi,\varphi] \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\mathcal{L}_{\xi}\varphi \varphi-\nabla _{\mu}\varphi \mathcal{L}_{\xi}\varphi) \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\xi ^{\nu}\nabla _{\nu}\varphi \varphi+\xi ^{\nu}\nabla _{\mu}\nabla _{\nu}\varphi \varphi-\nabla _{\mu}\varphi \xi ^{\nu}\nabla _{\nu}\varphi) \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(-\nabla ^{\nu}\xi _{\mu}\nabla _{\nu}\varphi \varphi+\xi ^{\nu}\nabla _{\mu}\nabla _{\nu}\varphi \varphi-\xi ^{\nu}\nabla _{\mu}\varphi \nabla _{\nu}\varphi ) \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\xi _{\mu}\nabla ^{\nu}\nabla j)
+\end{align}$$
