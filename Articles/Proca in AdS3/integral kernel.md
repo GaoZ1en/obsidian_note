@@ -82,7 +82,7 @@ then the final result is
 
 $$\begin{align}
 G(r,\phi;r',\phi') & = \frac{1}{\sqrt{ 2\pi }}\sum ^{\infty}_{m=-\infty}e^{im(\phi-\phi')} \frac{R_{>}^{(m)}(r_{>})R^{(m)}_{<}(r_{<})}{(1+r'^{2})W^{(m)}(r')} \\
- & =-\frac{\Gamma\left( \frac{\mu}{2} \right)}{2^{(3+2\mu)/2}\Gamma\left( \frac{1+\mu}{2} \right)r'}\left( \theta(r-r')(1+r^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( \frac{\mu}{2},1+\frac{\mu}{2};1+\mu; \frac{1}{1+r^{2}} \right){}_{2}F_{1}\left(1-\frac{\mu}{2},1+\frac{\mu}{2};1;-r'^{2}\right)+\theta(r'-r)(1+r'^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left(\frac{\mu}{2},1+\frac{\mu}{2};1+\mu; \frac{1}{1+r'^{2}} \right){}_{2}F_{1}\left( 1-\frac{\mu}{2},1+\frac{\mu}{2};1;-rjh_{2} \right) \right) \\
+ & =-\frac{\Gamma\left( \frac{\mu}{2} \right)}{2^{(3+2\mu)/2}\Gamma\left( \frac{1+\mu}{2} \right)r'}\left( \theta(r-r')(1+r^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( \frac{\mu}{2},1+\frac{\mu}{2};1+\mu; \frac{1}{1+r^{2}} \right){}_{2}F_{1}\left(1-\frac{\mu}{2},1+\frac{\mu}{2};1;-r'^{2}\right)+\theta(r'-r)(1+r'^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left(\frac{\mu}{2},1+\frac{\mu}{2};1+\mu; \frac{1}{1+r'^{2}} \right){}_{2}F_{1}\left( 1-\frac{\mu}{2},1+\frac{\mu}{2};1;-r^{2} \right) \right) \\
  & +\sum ^{\infty}_{m=-\infty}'-\frac{(\mu+|m|)\Gamma\left( \frac{1}{2}(\mu+|m|) \right)^{2}}{4\sqrt{ 2\pi }\Gamma(1+\mu)\Gamma(|m|+1)r'}e^{im(\phi-\phi')}\left( \theta(r-r')\left( \frac{r}{r'} \right)^{-|m|}(1+r^{2})^{-(\mu+2-|m|)/2}{}_{2}F_{1}\left( \frac{1}{2}(\mu-|m|), \frac{1}{2}(\mu+2-|m|);1+\mu; \frac{1}{1+r^{2}} \right){}_{2}F_{1}\left(  \frac{1}{2}(2-\mu+|m|), \frac{1}{2}(2+\mu+|m|);1+|m|;-r'^{2} \right)\right. \\
  & \left.+\theta(r'-r)\left( \frac{r'}{r} \right)^{-|m|}(1+r'^{2})^{-(\mu+2-|m|)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu-|m|),\frac{1}{2}(\mu+2-|m|);1+\mu; \frac{1}{1+r'^{2}}\right){}_{2}F_{1}\left(\frac{1}{2}(2-\mu+|m|), \frac{1}{2}(2+\mu+|m|);1+|m|;-r^{2}\right) \right)
 \end{align}$$
@@ -113,3 +113,5 @@ A^{t}(t,r,\phi) & =-\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi}\frac{
  & \left[ r^{-1}(1+r^{2})^{-(\mu+1)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu-1),\frac{1}{2}(\mu+1);1+\mu;\frac{1}{1+r^{2}}\right)\int _{0}^{r}\mathrm{d}r' r'(1+r'^{2})^{-(\mu+3)/2}{}_{2}F_{1}\left(\frac{1}{2}(3-\mu),\frac{1}{2}(3+\mu);2;-r'^{2}\right) \right. \\
  & \left.+r{}_{2}F_{1}\left( \frac{1}{2}(3-\mu), \frac{1}{2}(3+\mu);1;-r^{2} \right)\int _{r}^{\infty}\mathrm{d}r' r'^{-2}(1+r'^{2})^{-(\mu+1)/2}{}_{2}F_{1}\left( \frac{1}{2}(\mu-1),\frac{1}{2}(\mu+1);1+\mu; \frac{1}{1+r'^{2}} \right)\right]
 \end{align}$$
+
+numerical result indicates that the previous result is correct
