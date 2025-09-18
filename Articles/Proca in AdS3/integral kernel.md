@@ -35,7 +35,7 @@ G(r,\phi;r',\phi') & =\frac{1}{2\pi}\sum ^{\infty}_{m=-\infty}e^{im(\phi-\phi')}
 then $\displaystyle{G_{m}(r,r')}$ satisfies
 
 $$\begin{align}
-(1+r^{2})\partial _{r}^{2}G_{m}(r,r')+\frac{1+5r^{2}}{r}\partial _{r}G_{m}(r,r')+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)G_{km}(r,r') & =\frac{\sqrt{ 1+r^{2} }}{r}\delta(r-r') \\
+(1+r^{2})\partial _{r}^{2}G_{m}(r,r')+\frac{1+5r^{2}}{r}\partial _{r}G_{m}(r,r')+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)G_{m}(r,r') & =\frac{\sqrt{ 1+r^{2} }}{r}\delta(r-r') \\
 \implies  \partial _{\rho}^{2}G_{m}(\rho,\rho')+\frac{\cos ^{2}\rho+3\sin ^{2}\rho}{\sin \rho \cos \rho} \partial _{\rho}G_{m}(\rho,\rho')+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}-\frac{m^{2}}{\sin^{2}\rho} \right)G_{m}(\rho,\rho') & =0 \\
 \implies 4z(1-z)\partial _{z}^{2}G_{m}(z,z')-4\partial _{z}G_{m}(z,z')+\left( \frac{4-\mu ^{2}}{z}-\frac{m^{2}}{1-z} \right)G_{m}(z,z') & =0 \\
 \implies G_{m}(r,r') & =C_{1}r^{|m|}(1+r^{2})^{-1-|m|/2+\mu/2}{}_{2}F_{1}\left( \frac{|m|-\mu}{2},1+\frac{|m|-\mu}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
@@ -53,23 +53,11 @@ by general theory of Green function we denote $\displaystyle{R_{<}(r)=r^{|m|}{}_
 
 $$\begin{align}
 \partial _{r}W+\frac{1+5r^{2}}{r(1+r^{2})}W=0 \\
-\implies W & =\frac{C}{r(1+r^{2})}
+\implies W & =-\frac{2|m|}{r(1+r^{2})}{}_{2}F_{1}\left( \frac{1}{2}(\mu-|m|),\frac{1}{2}(\mu+2-|m|);1+\mu ;1 \right)
 \end{align}$$
 
-on the other hand
+then
 
 $$\begin{align}
-R_{<}(r)\partial _{r}R_{>}(r)-R_{>}(r)\partial _{r}R_{<}(r) & =
+(1+r^{2})\partial _{r}^{2}G_{m}(r,r')+\frac{1+5r^{2}}{r}\partial _{r}G_{m}(r,r')+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)G_{m}(r,r') & =\frac{\sqrt{ 1+r^{2} }}{r}\delta(r-r')
 \end{align}$$
-
-
-$$\begin{align}
-W[R_{<},R_{>}] & =-\frac{2|m|}{r(1+r^{2})^{2}}
-\end{align}$$
-
-$$\begin{align}
-G(r,\phi;r',\phi') & =-\frac{1}{2\pi}\sum_{m\neq0}\frac{(1+r'^{2})^{3/2}}{2|m|}R_{<}(r_{<})R_{>}(r_{>})e^{im(\phi-\phi')}+(m=0)
-\end{align}$$
-
-when $\displaystyle{m=0}$
-
