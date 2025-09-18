@@ -49,11 +49,17 @@ G_{m}(r,r') & =D_{1}r^{-|m|}{}_{2}F_{1}\left( \frac{1}{2}(2-|m|-\mu), \frac{1}{2
  & +D_{2}r^{|m|}{}_{2}F_{1}\left( \frac{1}{2}(2+|m|-\mu), \frac{1}{2}(2+|m|+\mu);1+|m|;-r^{2} \right)
 \end{align}$$
 
-by general theory of Green function we denote $\displaystyle{R_{<}(r)=r^{|m|}{}_{2}F_{1}\left( \frac{1}{2}(-\mu+2+|m|), \frac{1}{2}(\mu+2+|m|);1+|m|;-r^{2} \right)}$ and $\displaystyle{R_{>}(r)=r^{-|m|}(1+r^{2})^{-(\mu+2-|m|)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu-|m|), \frac{1}{2}(\mu+2-|m|);1+\mu; \frac{1}{1+r^{2}}\right)}$. the Wronskian $\displaystyle{}$ satisfies the following equation
+by general theory of Green function we denote $\displaystyle{R_{<}(r)=r^{|m|}{}_{2}F_{1}\left( \frac{1}{2}(-\mu+2+|m|), \frac{1}{2}(\mu+2+|m|);1+|m|;-r^{2} \right)}$ and $\displaystyle{R_{>}(r)=r^{-|m|}(1+r^{2})^{-(\mu+2-|m|)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu-|m|), \frac{1}{2}(\mu+2-|m|);1+\mu; \frac{1}{1+r^{2}}\right)}$. the Wronskian $\displaystyle{W[R_{<},R_{>}]}$ satisfies the following equation
 
 $$\begin{align}
-(1+r^{2})y_{2}\partial _{r}^{2}y_{1}+\frac{1+5r^{2}}{r}y_{2}\partial _{r}y_{1}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)y_{1}y_{2}=0 \\
-(1+r^{2})y_{1}\partial _{r}^{2}y_{2}+\frac{1+5r^{2}}{r}y_{1}\partial _{r}y_{2}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)y_{1}y_{2}=0
+\partial _{r}W+\frac{1+5r^{2}}{r(1+r^{2})}W=0 \\
+\implies W & =\frac{C}{r(1+r^{2})}
+\end{align}$$
+
+on the other hand
+
+$$\begin{align}
+R_{<}(r)\partial _{r}R_{>}(r)-R_{>}(r)\partial _{r}R_{<}(r) & =
 \end{align}$$
 
 
