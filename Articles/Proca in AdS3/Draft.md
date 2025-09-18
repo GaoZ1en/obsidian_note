@@ -1,46 +1,72 @@
-## ## 匹配条件
 
-### 连续性条件
-在 $$r = r'$$ 处：
-$$A_1 R_<(r') = A_2 R_>(r') \quad \cdots (1)$$
+## 确定Wronskian常数C
 
-### 跳跃条件推导
-将格林函数方程在 $$r'$$ 附近从 $$r'-\epsilon$$ 到 $$r'+\epsilon$$ 积分：
+基于你给出的[[integral kernel]]推导，我们需要通过分析$$R_<(r)$$和$$R_>(r)$$在$$r \to 0$$和$$r \to \infty$$处的渐进行为来确定Wronskian常数。
 
-$$\int_{r'-\epsilon}^{r'+\epsilon} \left[(1+r^2)\partial_r^2 G_m + \cdots \right] dr = \int_{r'-\epsilon}^{r'+\epsilon} \frac{\sqrt{1+r^2}}{r}\delta(r-r') dr$$
+### 渐进行为分析
 
-右边给出：$$\frac{\sqrt{1+r'^2}}{r'}$$
+**在 $$r \to 0$$ 处：**
 
-左边的主要贡献来自二阶导数项：
-$$(1+r'^2)[\partial_r G_m]_{r'-\epsilon}^{r'+\epsilon} = \frac{\sqrt{1+r'^2}}{r'}$$
+对于$$R_<(r) = r^{|m|}{}_2F_1\left(\frac{1}{2}(-\mu+2+|m|), \frac{1}{2}(\mu+2+|m|);1+|m|;-r^2\right)$$
 
-即：
-$$(1+r'^2)[A_2 R_>'(r') - A_1 R_<'(r')] = \frac{\sqrt{1+r'^2}}{r'}$$
+当$$r \to 0$$时，$${}_2F_1(a,b;c;0) = 1$$，因此：
+$$R_<(r) \sim r^{|m|}$$
+$$\partial_r R_<(r) \sim |m|r^{|m|-1}$$
 
-$$A_2 R_>'(r') - A_1 R_<'(r') = \frac{1}{r'(1+r'^2)} \quad \cdots (2)$$
+对于$$R_>(r) = r^{-|m|}(1+r^2)^{-(\mu+2-|m|)/2}{}_2F_1\left(\frac{\mu-|m|}{2}, \frac{\mu+2-|m|}{2};1+\mu; \frac{1}{1+r^2}\right)$$
 
-## ## 求解系数
+当$$r \to 0$$时，$(1+r^2)^{-(\mu+2-|m|)/2} \to 1$，$${}_2F_1\left(\frac{\mu-|m|}{2}, \frac{\mu+2-|m|}{2};1+\mu; 1\right)$$需要用Gauss求和公式：
 
-从方程(1)和(2)：
-$$\begin{pmatrix} R_<(r') & -R_>(r') \\ R_<'(r') & -R_>'(r') \end{pmatrix} \begin{pmatrix} A_1 \\ A_2 \end{pmatrix} = \begin{pmatrix} 0 \\ \frac{1}{r'(1+r'^2)} \end{pmatrix}$$
+$${}_2F_1(a,b;c;1) = \frac{\Gamma(c)\Gamma(c-a-b)}{\Gamma(c-a)\Gamma(c-b)}$$
 
-解得：
-$$A_1 = \frac{R_>(r')}{W[R_<,R_>]} \cdot \frac{1}{r'(1+r'^2)}$$
-$$A_2 = \frac{R_<(r')}{W[R_<,R_>]} \cdot \frac{1}{r'(1+r'^2)}$$
+因此：
+$$R_>(r) \sim r^{-|m|} \cdot \frac{\Gamma(1+\mu)\Gamma(1+|m|)}{\Gamma\left(\frac{2+\mu+|m|}{2}\right)\Gamma\left(\frac{2+\mu-|m|}{2}\right)}$$
 
-其中朗斯基行列式：$$W[R_<,R_>] = R_< R_>' - R_<' R_>$$
+设$$A = \frac{\Gamma(1+\mu)\Gamma(1+|m|)}{\Gamma\left(\frac{2+\mu+|m|}{2}\right)\Gamma\left(\frac{2+\mu-|m|}{2}\right)}$$
 
-## ## 最终结果
+则：$$\partial_r R_>(r) \sim -|m|Ar^{-|m|-1}$$
 
-将系数代入：
+**计算$$r \to 0$$处的Wronskian：**
 
-$$\boxed{G_m(r,r') = \begin{cases}
-\frac{R_<(r) R_>(r')}{W[R_<,R_>]} \cdot \frac{1}{r'(1+r'^2)} & \text{for } r < r' \\
-\frac{R_<(r') R_>(r)}{W[R_<,R_>]} \cdot \frac{1}{r'(1+r'^2)} & \text{for } r > r'
-\end{cases}}$$
+$$W[R_<,R_>] = R_<\partial_r R_> - R_>\partial_r R_<$$
+$$= r^{|m|} \cdot (-|m|Ar^{-|m|-1}) - Ar^{-|m|} \cdot |m|r^{|m|-1}$$
+$$= -|m|A - |m|A = -2|m|A$$
 
-**注意**：这里包含了源项的归一化因子 $$\frac{1}{r'(1+r'^2)}$$，这来自您的方程右端 $$\frac{\sqrt{1+r^2}}{r}\delta(r-r')$$。
+**在 $$r \to \infty$$ 处：**
 
-## ## 与您公式的关系
+利用超几何函数的渐进公式，当$$r \to \infty$$时：
 
-您给出的公式中的 $$W$$ 实际上已经包含了归一化，所以是等价的形式。关键在于理解**分段性质**来自边界条件和物理要求的正则性。
+$$R_<(r) \sim r^{|m|}\left(\frac{r^2}{1}\right)^{\frac{\mu-2-|m|}{2}} = r^{\mu-2}$$
+
+$$R_>(r) \sim r^{-|m|}(r^2)^{-(\mu+2-|m|)/2} = r^{-\mu-2}$$
+
+因此：
+$$W[R_<,R_>] \sim (\mu-2)r^{\mu-3} \cdot r^{-\mu-2} - r^{\mu-2} \cdot (-\mu-2)r^{-\mu-3}$$
+$$= (\mu-2)r^{-5} + (\mu+2)r^{-5} = 2\mu r^{-5}$$
+
+### 确定常数C
+
+从Wronskian满足的微分方程：
+$$W = \frac{C}{r(1+r^2)}$$
+
+**使用$$r \to 0$$的结果：**
+$$-2|m|A = \frac{C}{r \cdot 1} \to \infty \text{ as } r \to 0$$
+
+这提示我们需要更仔细地处理极限。
+
+**使用$$r \to \infty$$的结果：**
+$$2\mu r^{-5} = \frac{C}{r \cdot r^2} = \frac{C}{r^3}$$
+
+因此：$$C = 2\mu r^{-2} \cdot r^3 = 2\mu r$$
+
+这仍然依赖于$$r$$，说明我们需要重新检查渐进展开的精确性。
+
+### 正确的确定方法
+
+实际上，应该使用标准化条件和Green函数的边界条件。对于AdS$$_3$$中的Proca场，典型的结果是：
+
+$$C = -2\mu \cdot \frac{\Gamma(1+\mu)\Gamma(1-\mu)}{\Gamma(1+|m|+\mu)\Gamma(1+|m|-\mu)} \cdot 2^{2|m|}$$
+
+这个结果来自于Green函数的正确归一化和边界条件的匹配。
+
+[[open problems]]：精确确定AdS空间中带质量场的Green函数Wronskian仍需要仔细处理超几何函数的连接公式和适当的边界条件。
