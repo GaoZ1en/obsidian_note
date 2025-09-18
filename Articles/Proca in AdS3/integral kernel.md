@@ -109,7 +109,9 @@ $$\tag{.}\begin{align}
 
 $$\begin{align}
 A^{t}(t,r,\phi) & =-\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi}\frac{(\mu+1)(\mu+3)}{4\pi}\int _{-\infty}^{+\infty} \mathrm{d}r'G_{-1}(r,r')r'(1+r'^{2})^{-(\mu+5)/2} \\
- & =\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi} \frac{(\mu+1)(\mu+3)}{4\pi} \frac{(\mu+1)\Gamma\left( \frac{1}{2}(\mu+1) \right)^{2}}{4\Gamma(\mu+1)r'}\int _{-\infty}^{+\infty}\mathrm{d}r'
+ & =\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi} \frac{(\mu+1)(\mu+3)}{4\pi} \frac{(\mu+1)\Gamma\left( \frac{1}{2}(\mu+1) \right)^{2}}{4\Gamma(\mu+1)r'} \\
+ & \left[ r^{-1}(1+r^{2})^{-(\mu+1)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu-1),\frac{1}{2}(\mu+1);1+\mu;\frac{1}{1+r^{2}}\right)\int _{r}^{+\infty}\mathrm{d}r' r'^{2}(1+r'^{2})^{-(\mu+3)/2}{}_{2}F_{1}\left(\frac{1}{2}(3-\mu),\frac{1}{2}(3+\mu);2;-r'^{2}\right) \right. \\
+ & \left.+r{}_{2}F_{1}\left( \frac{1}{2}(3-\mu), \frac{1}{2}(3+\mu);1;-r^{2} \right)\int _{0}^{r}\mathrm{d}r' r'^{-1}(1+r'^{2})^{-(\mu+1)/2}{}_{2}F_{1}\left( \frac{1}{2}(\mu-1),\frac{1}{2}(\mu+1);1+\mu; \frac{1}{1+r'^{2}} \right)\right]
 \end{align}$$
 
 $$\tag{.}\begin{align}
