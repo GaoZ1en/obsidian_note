@@ -21161,6 +21161,281 @@
           }
         ],
         "id": 678
+      },
+      {
+        "date": "2025-09-18",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13738,
+        "changes": [],
+        "id": 680
+      },
+      {
+        "date": "2025-09-18",
+        "filePath": "Articles/Proca in AdS3/integral kernel.md",
+        "wordCountStart": 671,
+        "charCountStart": 2974,
+        "changes": [
+          {
+            "timeKey": "10:40",
+            "w": 0,
+            "c": -3
+          },
+          {
+            "timeKey": "11:55",
+            "w": 59,
+            "c": 234
+          },
+          {
+            "timeKey": "12:00",
+            "w": 7,
+            "c": 45
+          },
+          {
+            "timeKey": "12:05",
+            "w": 48,
+            "c": 192
+          },
+          {
+            "timeKey": "12:10",
+            "w": -47,
+            "c": -181
+          },
+          {
+            "timeKey": "12:15",
+            "w": 26,
+            "c": 108
+          },
+          {
+            "timeKey": "12:20",
+            "w": 38,
+            "c": 159
+          },
+          {
+            "timeKey": "12:25",
+            "w": 16,
+            "c": 45
+          },
+          {
+            "timeKey": "12:30",
+            "w": 3,
+            "c": 14
+          },
+          {
+            "timeKey": "12:40",
+            "w": -56,
+            "c": -183
+          },
+          {
+            "timeKey": "12:45",
+            "w": 7,
+            "c": 49
+          },
+          {
+            "timeKey": "12:55",
+            "w": 12,
+            "c": 55
+          },
+          {
+            "timeKey": "13:00",
+            "w": -54,
+            "c": -265
+          },
+          {
+            "timeKey": "13:15",
+            "w": 21,
+            "c": 77
+          },
+          {
+            "timeKey": "13:20",
+            "w": 358,
+            "c": 1981
+          },
+          {
+            "timeKey": "13:25",
+            "w": -327,
+            "c": -1876
+          },
+          {
+            "timeKey": "14:00",
+            "w": 195,
+            "c": 1113
+          },
+          {
+            "timeKey": "14:05",
+            "w": -100,
+            "c": -662
+          },
+          {
+            "timeKey": "14:10",
+            "w": -74,
+            "c": -330
+          },
+          {
+            "timeKey": "14:15",
+            "w": 77,
+            "c": 300
+          },
+          {
+            "timeKey": "14:20",
+            "w": 78,
+            "c": 313
+          },
+          {
+            "timeKey": "14:25",
+            "w": 54,
+            "c": 162
+          },
+          {
+            "timeKey": "14:30",
+            "w": 44,
+            "c": 190
+          },
+          {
+            "timeKey": "14:35",
+            "w": -114,
+            "c": -378
+          },
+          {
+            "timeKey": "14:40",
+            "w": 46,
+            "c": 223
+          },
+          {
+            "timeKey": "14:45",
+            "w": 211,
+            "c": 1354
+          },
+          {
+            "timeKey": "14:50",
+            "w": -175,
+            "c": -1188
+          },
+          {
+            "timeKey": "16:40",
+            "w": 11,
+            "c": 44
+          },
+          {
+            "timeKey": "16:45",
+            "w": 130,
+            "c": 533
+          },
+          {
+            "timeKey": "16:50",
+            "w": 198,
+            "c": 889
+          },
+          {
+            "timeKey": "16:55",
+            "w": -27,
+            "c": -190
+          },
+          {
+            "timeKey": "17:00",
+            "w": 77,
+            "c": 329
+          },
+          {
+            "timeKey": "17:05",
+            "w": -30,
+            "c": -97
+          },
+          {
+            "timeKey": "17:10",
+            "w": 150,
+            "c": 624
+          },
+          {
+            "timeKey": "17:15",
+            "w": 71,
+            "c": 292
+          },
+          {
+            "timeKey": "17:20",
+            "w": 37,
+            "c": 145
+          },
+          {
+            "timeKey": "17:25",
+            "w": -190,
+            "c": -788
+          },
+          {
+            "timeKey": "17:30",
+            "w": 103,
+            "c": 423
+          },
+          {
+            "timeKey": "17:35",
+            "w": 6,
+            "c": 23
+          }
+        ],
+        "id": 682
+      },
+      {
+        "date": "2025-09-18",
+        "filePath": "Articles/Proca in AdS3/Killing vector in AdS3.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "10:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 683
+      },
+      {
+        "date": "2025-09-18",
+        "filePath": "Articles/Proca in AdS3/linear combination of h symbols.md",
+        "wordCountStart": 4099,
+        "charCountStart": 16221,
+        "changes": [],
+        "id": 684
+      },
+      {
+        "date": "2025-09-18",
+        "filePath": "Articles/Proca in AdS3/Draft.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "14:05",
+            "w": 227,
+            "c": 1396
+          },
+          {
+            "timeKey": "14:40",
+            "w": 142,
+            "c": 775
+          }
+        ],
+        "id": 685
+      },
+      {
+        "date": "2025-09-18",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1448,
+        "changes": [
+          {
+            "timeKey": "17:10",
+            "w": 0,
+            "c": -113
+          }
+        ],
+        "id": 686
+      },
+      {
+        "date": "2025-09-18",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [],
+        "id": 687
       }
     ],
     "daysWithCompletedGoal": [
@@ -21224,7 +21499,8 @@
       "2025-09-13",
       "2025-09-14",
       "2025-09-15",
-      "2025-09-17"
+      "2025-09-17",
+      "2025-09-18"
     ]
   }
 }

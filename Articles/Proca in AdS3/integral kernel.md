@@ -98,5 +98,19 @@ A^{t}(t,r,\phi) & =-\int \mathrm{d}^{2}yG(x,y) \frac{1}{N}D_{a}\left( \frac{1}{N
 consider
 
 $$\begin{align}
-{f^{(+)}_{r,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} }\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{\mu/2+1}}\bar{\xi}_{1}^{\mu}
+{f^{(+)}_{l,0,0}}^{t} & = \frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} } e^{-i(\mu+1)t}e^{-i\phi}r(1+r^{2})^{-(\mu+3)/2} \\
+{f^{(+)}_{l,0,0}}^{r} & =-\frac{i}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi}(1+r^{2})^{-(\mu+1)/2} \\
+{f^{(+)}_{l,0,0}}^{\phi} & =-\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi}r^{-1}(1+r^{2})^{-(\mu+1)/2}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\partial _{t}\partial _{r'}{f^{(+)}_{l,0,0}}^{r}+\partial _{t}\partial _{\phi'}{f^{(+)}_{l,0,0}}^{\phi}+\frac{1-r'^{2}}{r'(1+r'^{2})}\partial _{t}{f^{(+)}_{l,0,0}}^{r} & = \sqrt{ \frac{\mu+1}{\pi\mu} } \frac{(\mu+1)(\mu+3)}{2}e^{-i(\mu+1)t}e^{-i\phi}r(1+r^{2})^{-(\mu+3)/2}
+\end{align}$$
+
+$$\begin{align}
+A^{t}(t,r,\phi) & =-\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi}\frac{(\mu+1)(\mu+3)}{4\pi}\int _{-\infty}^{+\infty} \mathrm{d}r'G_{-1}(r,r')r'(1+r'^{2})^{-(\mu+5)/2}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+G_{-1}(r,r') & =\frac{R_{<}(r_{<})R_{>}(r_{>})}{(1+r'^{2})W_{-1}(r')}
 \end{align}$$
