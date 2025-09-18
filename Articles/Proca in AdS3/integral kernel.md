@@ -22,7 +22,7 @@ $$\begin{align}
 \end{align}$$
 
 $$\begin{align}
-(1+r^{2})\partial _{r}^{2}G(r,\phi;r',\phi')+\frac{1+5r^{2}}{r}\partial _{r}G(r,\phi;r',\phi')+(4-\mu ^{2})G(r,r';\phi,\phi')+\frac{1}{r^{2}}\partial _{\phi}^{2}G(r,r';\phi,\phi') & =\frac{\sqrt{ 1+r^{2} }}{r}\delta(r-r')\delta(\phi-\phi') \\
+(1+r^{2})\partial _{r}^{2}G(r,\phi;r',\phi')+\frac{1+5r^{2}}{r}\partial _{r}G(r,\phi;r',\phi')+(4-\mu ^{2})G(r,r';\phi,\phi')+\frac{1}{r^{2}}\partial _{\phi}^{2}G(r,r';\phi,\phi') & =\delta(r-r')\delta(\phi-\phi') \\
 r\in(0,\infty),\phi \in[0,2\pi)
 \end{align}$$
 
@@ -35,7 +35,7 @@ G(r,\phi;r',\phi') & =\frac{1}{2\pi}\sum ^{\infty}_{m=-\infty}e^{im(\phi-\phi')}
 then $\displaystyle{G_{m}(r,r')}$ satisfies
 
 $$\begin{align}
-(1+r^{2})\partial _{r}^{2}G_{m}(r,r')+\frac{1+5r^{2}}{r}\partial _{r}G_{m}(r,r')+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)G_{m}(r,r') & =\frac{\sqrt{ 1+r^{2} }}{r}\delta(r-r') \\
+(1+r^{2})\partial _{r}^{2}G_{m}(r,r')+\frac{1+5r^{2}}{r}\partial _{r}G_{m}(r,r')+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)G_{m}(r,r') & =\delta(r-r') \\
 \implies  \partial _{\rho}^{2}G_{m}(\rho,\rho')+\frac{\cos ^{2}\rho+3\sin ^{2}\rho}{\sin \rho \cos \rho} \partial _{\rho}G_{m}(\rho,\rho')+\left( \frac{4-\mu ^{2}}{\cos ^{2}\rho}-\frac{m^{2}}{\sin^{2}\rho} \right)G_{m}(\rho,\rho') & =0 \\
 \implies 4z(1-z)\partial _{z}^{2}G_{m}(z,z')-4\partial _{z}G_{m}(z,z')+\left( \frac{4-\mu ^{2}}{z}-\frac{m^{2}}{1-z} \right)G_{m}(z,z') & =0 \\
 \implies G_{m}(r,r') & =C_{1}r^{|m|}(1+r^{2})^{-1-|m|/2+\mu/2}{}_{2}F_{1}\left( \frac{|m|-\mu}{2},1+\frac{|m|-\mu}{2};1-\mu; \frac{1}{1+r^{2}} \right) \\
@@ -59,7 +59,7 @@ $$\begin{align}
 then
 
 $$\begin{align}
-G_{m}(r,r') & =\frac{R^{(m)}_{<}(r_{<})R^{(m)}_{>}(r_{>})}{r'\sqrt{ 1+r'^{2} }W^{(m)}(r')}, & m\neq0
+G_{m}(r,r') & =\frac{R^{(m)}_{<}(r_{<})R^{(m)}_{>}(r_{>})}{(1+r'^{2})W^{(m)}(r')}, & m\neq0
 \end{align}$$
 
 when $\displaystyle{m=0}$
@@ -81,19 +81,22 @@ W^{(0)}[R_{<},R_{>}] & =-\frac{2^{1+\mu}\Gamma\left( \frac{1+\mu}{2} \right)}{\s
 then the final result is
 
 $$\begin{align}
-G(r,\phi;r',\phi') & = \frac{1}{\sqrt{ 2\pi }}\sum ^{\infty}_{m=-\infty}e^{im(\phi-\phi')} \frac{R_{>}^{(m)}(r_{>})R^{(m)}_{<}(r_{<})}{r'(1+r'^{2})^{1/2}W^{(m)}(r')}
+G(r,\phi;r',\phi') & = \frac{1}{\sqrt{ 2\pi }}\sum ^{\infty}_{m=-\infty}e^{im(\phi-\phi')} \frac{R_{>}^{(m)}(r_{>})R^{(m)}_{<}(r_{<})}{(1+r'^{2})W^{(m)}(r')} \\
+ & =-\frac{\Gamma\left( \frac{\mu}{2} \right)}{2^{(3+2\mu)/2}\Gamma\left( \frac{1+\mu}{2} \right)r'}\left( \theta(r-r')(1+r^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( \frac{\mu}{2},1+\frac{\mu}{2};1+\mu; \frac{1}{1+r^{2}} \right){}_{2}F_{1}\left(1-\frac{\mu}{2},1+\frac{\mu}{2};1;-r'^{2}\right)+\theta(r'-r)(1+r'^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left(\frac{\mu}{2},1+\frac{\mu}{2};1+\mu; \frac{1}{1+r'^{2}} \right){}_{2}F_{1}\left( 1-\frac{\mu}{2},1+\frac{\mu}{2};1;-rjh_{2} \right) \right) \\
+ & +\sum ^{\infty}_{m=-\infty}'-\frac{(\mu+|m|)\Gamma\left( \frac{1}{2}(\mu+|m|) \right)^{2}}{4\sqrt{ 2\pi }\Gamma(1+\mu)\Gamma(|m|+1)r'}e^{im(\phi-\phi')}\left( \theta(r-r')\left( \frac{r}{r'} \right)^{-|m|}(1+r^{2})^{-(\mu+2-|m|)/2}{}_{2}F_{1}\left( \frac{1}{2}(\mu-|m|), \frac{1}{2}(\mu+2-|m|);1+\mu; \frac{1}{1+r^{2}} \right){}_{2}F_{1}\left(  \frac{1}{2}(2-\mu+|m|), \frac{1}{2}(2+\mu+|m|);1+|m|;-r'^{2} \right)\right. \\
+ & \left.+\theta(r'-r)\left( \frac{r'}{r} \right)^{-|m|}(1+r'^{2})^{-(\mu+2-|m|)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu-|m|),\frac{1}{2}(\mu+2-|m|);1+\mu; \frac{1}{1+r'^{2}}\right){}_{2}F_{1}\left(\frac{1}{2}(2-\mu+|m|), \frac{1}{2}(2+\mu+|m|);1+|m|;-r^{2}\right) \right)
 \end{align}$$
 
-$$\tag{.}\begin{align}
-G_{0}(r,\phi;r',\phi') & = -\frac{\Gamma\left( \frac{\mu}{2} \right)(1+r'^{2})^{1/2}}{2^{(3+2\mu)/2}\Gamma\left( \frac{1+\mu}{2} \right)}\left( \theta(r-r')(1+r^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left( \frac{\mu}{2},1+\frac{\mu}{2};1+\mu; \frac{1}{1+r^{2}} \right){}_{2}F_{1}\left(1-\frac{\mu}{2},1+\frac{\mu}{2};1;-r'^{2}\right)+\theta(r'-r)(1+r'^{2})^{-(2+\mu)/2}{}_{2}F_{1}\left(\frac{\mu}{2},1+\frac{\mu}{2};1+\mu; \frac{1}{1+r'^{2}} \right){}_{2}F_{1}\left( 1-\frac{\mu}{2},1+\frac{\mu}{2};1;-rjh_{2} \right) \right) \\
-G_{m}(r,\phi;r',\phi') & =-\frac{(\mu+|m|)\Gamma\left( \frac{1}{2}(\mu+|m|) \right)^{2}(1+r'^{2})^{1/2}}{4\sqrt{ 2\pi }\Gamma(1+\mu)\Gamma(|m|+1)}e^{im(\phi-\phi')}\left( \theta(r-r')\left( \frac{r}{r'} \right)^{-|m|}(1+r^{2})^{-(\mu+2-|m|)/2}{}_{2}F_{1}\left( \frac{1}{2}(\mu-|m|), \frac{1}{2}(\mu+2-|m|);1+\mu; \frac{1}{1+r^{2}} \right){}_{2}F_{1}\left(  \frac{1}{2}(2-\mu+|m|), \frac{1}{2}(2+\mu+|m|);1+|m|;-r'^{2} \right)\right. \\
- & \left.+\theta(r'-r)\left( \frac{r'}{r} \right)^{-|m|}(1+r'^{2})^{-(\mu+2-|m|)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu-|m|),\frac{1}{2}(\mu+2-|m|);1+\mu; \frac{1}{1+r'^{2}}\right){}_{2}F_{1}\left(\frac{1}{2}(2-\mu+|m|), \frac{1}{2}(2+\mu+|m|);1+|m|;-r^{2}\right) \right) \\
- &  
+---
+
+$$\begin{align}
+A^{t}(t,r,\phi) & =-\int \mathrm{d}^{2}yG(x,y) \frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right) \\
+ & =-\int \mathrm{d}r'\mathrm{d}\phi'G(r,\phi;r',\phi') \frac{1}{\sqrt{ 1+r'^{2} }}D_{a}\left(\frac{1}{\sqrt{ 1+r'^{2} }}\partial _{t}A^{a}\right) \\
+ & =-\int \mathrm{d}r'\mathrm{d}\phi'G(r,\phi;r',\phi') \frac{1}{1+r'^{2}}\left(\partial _{t}\partial _{r'}A^{r}+\partial _{t}\partial _{\phi'}A^{\phi}+\frac{1-r'^{2}}{r'(1+r'^{2})}\partial _{t}A^{r}\right)
 \end{align}$$
 
-$$\tag{.}\begin{align}
--\frac{4\Gamma(1+\mu)\Gamma(|m|+1)}{(\mu+|m|)\Gamma\left( \frac{1}{2}(\mu+|m|) \right)^{2}} \frac{1}{r(1+r^{2})}
+consider
+
+$$\begin{align}
+{f^{(+)}_{r,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} }\frac{e^{-i(\mu+2)t}}{(1+r^{2})^{\mu/2+1}}\bar{\xi}_{1}^{\mu}
 \end{align}$$
-
-
-by general theory of Green function we denote $\displaystyle{R^{(m)}_{<}(r)=r^{|m|}{}_{2}F_{1}\left( \frac{1}{2}(-\mu+2+|m|), \frac{1}{2}(\mu+2+|m|);1+|m|;-r^{2} \right)}$ and $\displaystyle{R^{(m)}_{>}(r)=r^{-|m|}(1+r^{2})^{-(\mu+2-|m|)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu-|m|), \frac{1}{2}(\mu+2-|m|);1+\mu; \frac{1}{1+r^{2}}\right)}$. the Wronskian $\displaystyle{W[R_{<},R_{>}]}$ satisfies the following equation

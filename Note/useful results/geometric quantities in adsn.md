@@ -22,7 +22,7 @@ $$
 
 $$\tag{2.1}
 \begin{align}
-\mathrm{d}s^{2} & =-(1+\rho ^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}\rho ^{2}}{1+\rho ^{2}}+\rho^{2}\mathrm{d}\Omega_{d-1}^{2}
+\mathrm{d}s^{2} & =-(1+r ^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r ^{2}}{1+r ^{2}}+r^{2}\mathrm{d}\Omega_{d-1}^{2}
 \end{align}
 $$
 
@@ -30,12 +30,12 @@ the Christoffel symbols are given by
 
 $$\tag{2.2}
 \begin{align}
-\Gamma ^{t}_{~t\rho} & =\frac{\rho}{1+\rho ^{2}} \\
-\Gamma ^{\rho}_{~tt} & =\rho(1+\rho ^{2}) \\
-\Gamma ^{\rho}_{~\rho \rho} & =-\frac{\rho}{1+\rho ^{2}} \\
-\Gamma ^{\rho}_{ij} & =-\rho (1+\rho ^{2})\tilde{g}_{ij} \\
+\Gamma ^{t}_{~tr} & =\frac{r}{1+r ^{2}} \\
+\Gamma ^{r}_{~tt} & =r(1+r ^{2}) \\
+\Gamma ^{r}_{~r \rho} & =-\frac{r}{1+r ^{2}} \\
+\Gamma ^{r}_{ij} & =-r (1+r ^{2})\tilde{g}_{ij} \\
 \Gamma ^{k}_{~ij} & =\tilde{\Gamma}^{k}_{~ij} \\
-\Gamma ^{i}_{~\rho j} & =\frac{1}{\rho}\delta ^{i}_{~j}
+\Gamma ^{i}_{~r j} & =\frac{1}{r}\delta ^{i}_{~j}
 \end{align}
 $$
 
@@ -43,10 +43,10 @@ in the case of $\displaystyle{d=3}$, we have
 
 $$\tag{2.3}
 \begin{align}
-\Gamma ^{t}_{~t\rho} & =\frac{\rho}{1+\rho ^{2}} \\
-\Gamma ^{\rho}_{~tt} & =\rho(1+\rho ^{2}) \\
-\Gamma ^{\rho}_{~\rho \rho} & =-\frac{\rho}{1+\rho ^{2}} \\
-\Gamma ^{\rho}_{~\theta \theta} & =-\rho (1+\rho ^{2}) \\
-\Gamma ^{\theta}_{~\rho \theta} & =\frac{1}{\rho}
+\Gamma ^{t}_{~tr} & =\frac{r}{1+r ^{2}} \\
+\Gamma ^{r}_{~tt} & =r(1+r ^{2}) \\
+\Gamma ^{r}_{~r r} & =-\frac{r}{1+r ^{2}} \\
+\Gamma ^{r}_{~\phi \phi} & =-r (1+r ^{2}) \\
+\Gamma ^{\phi}_{~r \phi} & =\frac{1}{r}
 \end{align}
 $$
