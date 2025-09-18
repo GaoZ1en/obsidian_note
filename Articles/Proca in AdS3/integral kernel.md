@@ -59,5 +59,24 @@ $$\begin{align}
 then
 
 $$\begin{align}
-(1+r^{2})\partial _{r}^{2}G_{m}(r,r')+\frac{1+5r^{2}}{r}\partial _{r}G_{m}(r,r')+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)G_{m}(r,r') & =\frac{\sqrt{ 1+r^{2} }}{r}\delta(r-r')
+G_{m}(r,r') & =\frac{R_{<}(r_{<})R_{>}(r_{>})}{r'\sqrt{ 1+r'^{2} }W(r')}, & m\neq0
 \end{align}$$
+
+when $\displaystyle{m=0}$
+
+$$\begin{align}
+(1+r^{2})\partial _{r}^{2}G_{0}(r,r')+\frac{1+5r^{2}}{r}\partial _{r}G_{0}(r,r')+\left( 4-\mu ^{2} \right)G_{0}(r,r') & =\frac{\sqrt{ 1+r^{2} }}{r}\delta(r-r') \\
+\implies  \partial _{\rho}^{2}G_{0}(\rho,\rho')+\frac{1+2\sin ^{2}\rho}{\sin \rho \cos \rho} \partial _{\rho}G_{0}(\rho,\rho')+ \frac{4-\mu ^{2}}{\cos ^{2}\rho} G_{0}(\rho,\rho') & =0 \\
+\implies 4z(1-z)\partial _{z}^{2}G_{0}(z,z')-4\partial _{z}G_{0}(z,z')+ \frac{4-\mu ^{2}}{z}G_{0}(z,z') & =0
+\end{align}$$
+
+let $\displaystyle{w=-r^{2}}$
+
+$$\begin{align}
+\partial _{r} & =-2\sqrt{ -w }\partial _{w} \\
+\partial _{r}^{2} & =-4w\partial _{w}^{2}-2\partial _{w} \\
+(1+r^{2})\partial _{r}^{2}G_{0}+\frac{1+5r^{2}}{r}\partial _{r}G_{0}+(4-\mu ^{2})G_{0} & =0 \\
+(1-w)(-4w\partial _{w}^{2}G_{0}-2\partial _{w}G_{0})-2(1-5w)\partial _{w}G_{0}+(4-\mu ^{2})G_{0} & =0 \\
+-4w(1-w)\partial _{w}^{2}G_{0}-2(1-w)\partial _{w}G_{0}-2(1-5w)\partial _{w}G_{0}+(4-\mu ^{2})G_{0} & =0
+\end{align}$$
+
