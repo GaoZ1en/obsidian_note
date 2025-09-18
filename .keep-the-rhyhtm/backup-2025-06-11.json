@@ -21086,6 +21086,26 @@
             "timeKey": "17:30",
             "w": 168,
             "c": 1340
+          },
+          {
+            "timeKey": "18:35",
+            "w": -168,
+            "c": -1341
+          },
+          {
+            "timeKey": "19:20",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "20:10",
+            "w": 1,
+            "c": 0
+          },
+          {
+            "timeKey": "20:15",
+            "w": -1,
+            "c": 0
           }
         ],
         "id": 675
@@ -21095,7 +21115,13 @@
         "filePath": "Articles/Proca in AdS3/highest weight representation.md",
         "wordCountStart": 3320,
         "charCountStart": 13738,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "18:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
         "id": 676
       },
       {
@@ -21108,9 +21134,33 @@
             "timeKey": "11:05",
             "w": 307,
             "c": 2252
+          },
+          {
+            "timeKey": "18:35",
+            "w": -307,
+            "c": -2252
           }
         ],
         "id": 677
+      },
+      {
+        "date": "2025-09-17",
+        "filePath": "Articles/Proca in AdS3/thermal partition function.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "20:25",
+            "w": 22,
+            "c": 100
+          },
+          {
+            "timeKey": "20:30",
+            "w": 14,
+            "c": 65
+          }
+        ],
+        "id": 678
       }
     ],
     "daysWithCompletedGoal": [

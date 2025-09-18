@@ -52,4 +52,5 @@ $$\begin{align}
 G(r,\phi;r',\phi') & =-\frac{1}{2\pi}\sum_{m\neq0}\frac{(1+r'^{2})^{3/2}}{2|m|}R_{<}(r_{<})R_{>}(r_{>})e^{im(\phi-\phi')}+(m=0)
 \end{align}$$
 
-when $\displaystyle{m=0}$, ???
+when $\displaystyle{m=0}$
+
