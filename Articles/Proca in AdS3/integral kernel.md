@@ -42,6 +42,11 @@ $$\begin{align}
  & +C_{2}r^{-|m|}(1+r^{2})^{-1+|m|/2-\mu/2}{}_{2}F_{1}\left(-\frac{|m|-\mu}{2},1-\frac{|m|-\mu}{2};1+\mu; \frac{1}{1+r^{2}}\right)
 \end{align}$$
 
+$$\begin{align}
+G_{m}(r,r') & =D_{1}r^{-m}{}_{2}F_{1}\left( \frac{1}{2}(2-m-\mu), \frac{1}{2}(2-m+\mu);1-m;-r^{2} \right) \\
+ & +D_{2}r^{m}{}_{2}F_{1}\left( \frac{1}{2}(2+m-\mu), \frac{1}{2}(2+m+\mu);1+m;-r^{2} \right)
+\end{align}$$
+
 by general theory of Green function we denote $\displaystyle{R_{<}(r)=r^{|m|}(1+r^{2})^{-1-|m|/2+\mu/2}{}_{2}F_{1}\left(\frac{|m|-\mu}{2},1+\frac{|m|-\mu}{2};1-\mu; \frac{1}{1+r^{2}}\right),R_{>}(r)=r^{-|m|}(1+r^{2})^{-1+|m|/2-\mu/2}{}_{2}F_{1}\left( -\frac{|m|-\mu}{2},1-\frac{|m|-\mu}{2};1+\mu; \frac{1}{1+r^{2}} \right)}$, the Wronskian $\displaystyle{W[R_{<},R_{>}]}$ is
 
 $$\begin{align}
