@@ -263,17 +263,6 @@ q_{k} & =\rho ^{j_{k}+1/2}(1+\rho ^{2})^{n-\omega _{k}/2}{}_{2}F_{1}\left( -n,-n
 \end{align}
 $$
 
-I have no idea how to compare this result with Wen's. his result is
-
-$$\tag{4.3}
-\begin{align}
-\sqrt{ k!\bar{k}! \frac{\Gamma(\mu+k+2)\Gamma(\mu+\bar{k})}{\Gamma(\mu+2)\Gamma(\mu)} }A^{\dagger \mu}_{k,\bar{k}} & =F(k,\bar{k})\tilde{\xi}^{\mu}_{-1}+2\bar{k}F_{k,\bar{k}-1}\tilde{\xi}^{\mu}_{0}+\bar{k}(\bar{k}-1)F_{k,\bar{k}-2}\tilde{\xi}^{\mu}_{1} \\
-F_{k,\bar{k}} & =(-1)^{k+\bar{k}} \frac{\Gamma(\mu+k+2)\Gamma(\mu+\bar{k}+2)}{\Gamma ^{2}(\mu+2)}(\sin \rho)^{|k-\bar{k}|}(\cos \rho)^{\mu+2} \\
- & \times{}_{2}F_{1}(-n,n+m+\mu+2;\mu+2;\cos ^{2}\rho)e^{i \omega t+i(k-\bar{k})\theta} \\
-\omega & =k+\bar{k}+\mu+2
-\end{align}
-$$
-
 ---
 
 we will write down how we get these results in detail. we choose the following coordinates
