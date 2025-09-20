@@ -49,8 +49,13 @@ G_{m}(r,r') & =D_{1}r^{-|m|}(1+r^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu+|m|}{2}, \
  & +D_{2}r^{|m|}(1+r^{2})^{-1}{}_{2}F_{1}\left( -\frac{\mu-|m|}{2}, \frac{\mu+|m|}{2};1+|m|;-r^{2} \right)
 \end{align}$$
 
-by general theory of Green function we denote $\displaystyle{R^{(m)}_{<}(r)=r^{|m|}{}_{2}F_{1}\left( \frac{1}{2}(-\mu+2+|m|), \frac{1}{2}(\mu+2+|m|);1+|m|;-r^{2} \right)}$ and $\displaystyle{R^{(m)}_{>}(r)=r^{|m|}(1+r^{2})^{-(\mu+2+|m|)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu+|m|),\frac{1}{2}(\mu+2+|m|);1+\mu; \frac{1}{1+r^{2}}\right)}$. the Wronskian $\displaystyle{W[R_{<},R_{>}]}$ satisfies the following equation
+by general theory of Green function we denote $\displaystyle{R^{(m)}_{<}(r)=r^{|m|}{}_{2}F_{1}\left( \frac{1}{2}(-\mu+2+|m|), \frac{1}{2}(\mu+2+|m|);1+|m|;-r^{2} \right)}$ and $\displaystyle{R^{(m)}_{>}(r)=r^{|m|}(1+r^{2})^{-(\mu+2+|m|)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu+|m|),\frac{1}{2}(\mu+2+|m|);1+\mu; \frac{1}{1+r^{2}}\right)}$. the Wronskian $\displaystyle{W[R_{<},R_{>}]}$ is defined as
 
+$$\begin{align}
+W(r) & =R_{<}^{(m)}(r)\partial _{r}R^{(m)}_{>}(r)-R^{(m)}_{>}(r)\partial _{r}R^{(m)}_{<}(r)
+\end{align}$$
+
+???
 $$\begin{align}
 \partial _{r}W+\frac{1+5r^{2}}{r(1+r^{2})}W=0 \\
 \implies W^{(m)}(r) & =-\frac{2\Gamma(|m|+1)\Gamma(\mu+1)}{\Gamma\left( \frac{\mu+|m|}{2} \right)\Gamma\left( 1+\frac{\mu+|m|}{2} \right)}\frac{1}{r(1+r^{2})^{2}}
@@ -60,7 +65,7 @@ then the final result is
 
 $$\begin{align}
 G_{m}(r,r') & =\frac{R^{(m)}_{<}(r_{<})R^{(m)}_{>}(r_{>})}{(1+r'^{2})W^{(m)}(r')}, & m\neq0 \\
- & =-\frac{\Gamma\left( \frac{\mu+|m|}{2} \right)\Gamma\left( 1+\frac{\mu+|m|}{2} \right)}{2\Gamma(|m|+1)\Gamma(\mu+1)} r'(1+r') \\
+ & =\frac{1}{(1+r'^{2})[R_{<}^{(m)}(r')\partial _{r}R^{(m)}_{>}(r')-R^{(m)}_{>}(r')\partial _{r}R^{(m)}_{<}(r')]} \\
  & \times\left[\theta(r-r')r'^{|m|}(1+r'^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-|m|}{2},\frac{\mu+|m|}{2};1+|m|;-r'^{2}\right)r^{|m|}(1+r^{2})^{-(\mu+2+|m|)/2}{}_{2}F_{1}\left(\frac{\mu+|m|}{2},1+\frac{\mu+|m|}{2};1+\mu; \frac{1}{1+r^{2}}\right)\right. \\
  & +\left.\theta(r'-r)r^{|m|}(1+r^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-|m|}{2},\frac{\mu+|m|}{2};1+|m|;-r^{2}\right)r'^{|m|}(1+r'^{2})^{-(\mu+2+|m|)/2}{}_{2}F_{1}\left(\frac{\mu+|m|}{2},1+\frac{\mu+|m|}{2};1+\mu; \frac{1}{1+r'^{2}}\right)\right] \\
 G(r,\phi;r',\phi') & =\frac{1}{2\pi}\sum ^{\infty}_{m=-\infty}e^{im(\phi-\phi')}G_{m}(r,r')
@@ -93,8 +98,12 @@ A^{r}(t,r,\phi) & =-\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{(\mu+1)(\mu+3)}{2}e^{-i
 \end{align}$$
 
 $$\tag{.}\begin{align}
-G_{-1}(r,r') & =-\frac{\Gamma\left( \frac{\mu+1}{2} \right)\Gamma\left( \frac{\mu+3}{2} \right)}{2\Gamma(\mu+1)} r'(1+r'^{2}) \\
- & \times\left[\theta(r-r')r'^{1}(1+r'^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-1}{2},\frac{\mu+1}{2};1+1;-r'^{2}\right)r^{1}(1+r^{2})^{-(\mu+2+1)/2}{}_{2}F_{1}\left(\frac{\mu+1}{2},1+\frac{\mu+1}{2};1+\mu; \frac{1}{1+r^{2}}\right)\right. \\
- & +\left.\theta(r'-r)r^{1}(1+r^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-1}{2},\frac{\mu+1}{2};1+1;-r^{2}\right)r'^{1}(1+r'^{2})^{-(\mu+2+1)/2}{}_{2}F_{1}\left(\frac{\mu+1}{2},1+\frac{\mu+1}{2};1+\mu; \frac{1}{1+r'^{2}}\right)\right] \\
+G_{-1}(r,r') & =\frac{(\theta(r-r')R^{(-1)}_{<}(r')R_{>}^{(-)}(r)+\theta(r'-r)R_{<}^{(-1)}(r)R_{>}^{(-1)}(r'))}{(1+r'^{2})[R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')]} \\
+\int _{0}^{\infty}\mathrm{d}r' G_{-1}(r,r') & =R_{>}^{(-1)}(r)\int _{0}^{r}\mathrm{d}r' \frac{R_{<}^{(-1)}(r')r'(1+r'^{2})^{-(\mu+7)/2}}{R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')} \\
+ & +R^{(-1)}_{<}(r)\int ^{\infty}_{r}\mathrm{d}r' \frac{R_{>}^{(-1)}(r')r'(1+r'^{2})^{-(\mu+7)/2}}{R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')}
+\end{align}$$
 
+$$\tag{.}\begin{align}
+R^{(-1)}_{<}(r) & =r{}_{2}F_{1}\left( \frac{1}{2}(-\mu+3), \frac{1}{2}(\mu+3);2;-r^{2} \right) \\
+R^{(-1)}_{>}(r) & =r(1+r^{2})^{-(\mu+3)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu+1),\frac{1}{2}(\mu+3);1+\mu; \frac{1}{1+r^{2}}\right)
 \end{align}$$
