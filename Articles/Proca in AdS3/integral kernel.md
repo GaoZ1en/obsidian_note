@@ -63,15 +63,13 @@ G_{m}(r,r') & =\frac{R^{(m)}_{<}(r_{<})R^{(m)}_{>}(r_{>})}{(1+r'^{2})W^{(m)}(r')
  & =-\frac{\Gamma\left( \frac{\mu+|m|}{2} \right)\Gamma\left( 1+\frac{\mu+|m|}{2} \right)}{2\Gamma(|m|+1)\Gamma(\mu+1)} r'(1+r') \\
  & \times\left[\theta(r-r')r'^{|m|}(1+r'^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-|m|}{2},\frac{\mu+|m|}{2};1+|m|;-r'^{2}\right)r^{|m|}(1+r^{2})^{-(\mu+2+|m|)/2}{}_{2}F_{1}\left(\frac{\mu+|m|}{2},1+\frac{\mu+|m|}{2};1+\mu; \frac{1}{1+r^{2}}\right)\right. \\
  & +\left.\theta(r'-r)r^{|m|}(1+r^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-|m|}{2},\frac{\mu+|m|}{2};1+|m|;-r^{2}\right)r'^{|m|}(1+r'^{2})^{-(\mu+2+|m|)/2}{}_{2}F_{1}\left(\frac{\mu+|m|}{2},1+\frac{\mu+|m|}{2};1+\mu; \frac{1}{1+r'^{2}}\right)\right] \\
-G(r,\phi;r',\phi') & =\frac{1}{\sqrt{ 2\pi }}\sum ^{\infty}_{m=-\infty}e^{im(\phi-\phi')}G_{m}(r,r')
+G(r,\phi;r',\phi') & =\frac{1}{2\pi}\sum ^{\infty}_{m=-\infty}e^{im(\phi-\phi')}G_{m}(r,r')
 \end{align}$$
-
 
 ---
 
 $$\begin{align}
 A^{t}(t,r,\phi) & =-\int \mathrm{d}^{2}yG(x,y) \frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right) \\
- & =-\int \mathrm{d}r'\mathrm{d}\phi'G(r,\phi;r',\phi') \frac{1}{\sqrt{ 1+r'^{2} }}D_{a}\left(\frac{1}{\sqrt{ 1+r'^{2} }}\partial _{t}A^{a}\right) \\
  & =-\int \mathrm{d}r'\mathrm{d}\phi'G(r,\phi;r',\phi') \frac{1}{1+r'^{2}}\left(\partial _{t}\partial _{r'}A^{r}+\partial _{t}\partial _{\phi'}A^{\phi}+\frac{1-r'^{2}}{r'(1+r'^{2})}\partial _{t}A^{r}\right)
 \end{align}$$
 
@@ -83,15 +81,20 @@ $$\begin{align}
 {f^{(+)}_{l,0,0}}^{\phi} & =-\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi}r^{-1}(1+r^{2})^{-(\mu+1)/2}
 \end{align}$$
 
-$$\tag{.}\begin{align}
+$$\begin{align}
 \partial _{t}\partial _{r'}{f^{(+)}_{l,0,0}}^{r}+\partial _{t}\partial _{\phi'}{f^{(+)}_{l,0,0}}^{\phi}+\frac{1-r'^{2}}{r'(1+r'^{2})}\partial _{t}{f^{(+)}_{l,0,0}}^{r} & = \sqrt{ \frac{\mu+1}{\pi\mu} } \frac{(\mu+1)(\mu+3)}{2}e^{-i(\mu+1)t}e^{-i\phi}r(1+r^{2})^{-(\mu+3)/2}
 \end{align}$$
 
-$$\begin{align}
-A^{t}(t,r,\phi) & =-\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi}\frac{(\mu+1)(\mu+3)}{4\pi}\int _{-\infty}^{+\infty} \mathrm{d}r'G_{-1}(r,r')r'(1+r'^{2})^{-(\mu+5)/2} \\
- & =\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi} \frac{(\mu+1)(\mu+3)}{4\pi} \frac{(\mu+1)\Gamma\left( \frac{1}{2}(\mu+1) \right)^{2}}{4\Gamma(\mu+1)} \\
- & \left[ r^{-1}(1+r^{2})^{-(\mu+1)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu-1),\frac{1}{2}(\mu+1);1+\mu;\frac{1}{1+r^{2}}\right)\int _{0}^{r}\mathrm{d}r' r'^{3}(1+r'^{2})^{-(\mu+3)}{}_{2}F_{1}\left(\frac{1}{2}(3-\mu),\frac{1}{2}(3+\mu);2;-r'^{2}\right) \right. \\
- & \left.+r{}_{2}F_{1}\left( \frac{1}{2}(3-\mu), \frac{1}{2}(3+\mu);1;-r^{2} \right)\int _{r}^{\infty}\mathrm{d}r' r'(1+r'^{2})^{-(\mu+2)}{}_{2}F_{1}\left( \frac{1}{2}(\mu-1),\frac{1}{2}(\mu+1);1+\mu; \frac{1}{1+r'^{2}} \right)\right]
+$$\tag{.}\begin{align}
+A^{r}(t,r,\phi) & =-\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{(\mu+1)(\mu+3)}{2}e^{-i(\mu+1)t}e^{-i\phi}\int_{0}^{\infty} \mathrm{d}r' G_{-1}(r,r')r'(1+r'^{2})^{-(\mu+5)/2} \\
+ & =\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{(\mu+1)(\mu+3)}{2} \frac{\Gamma\left( \frac{\mu+1}{2} \right)\Gamma\left( \frac{\mu+3}{2} \right)}{2\Gamma(\mu+1)}e^{-i(\mu+1)t}e^{-i\phi} \\
+ & \times \left[r(1+r^{2})^{-(\mu+3)/2}{}_{2}F_{1}\left(\frac{\mu+1}{2}, \frac{\mu+3}{2};1+\mu; \frac{1}{1+r^{2}}\right)\int ^{r}_{0}\mathrm{d}r'r'^{2}(1+r'^{2})^{-(\mu+7)/2}{}_{2}F_{1}\left(-\frac{\mu-1}{2},\frac{\mu+1}{2};2;-r'^{2}\right)\right. \\
+ & +r(1+r^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-1}{2},\frac{\mu+1}{2};2;-r^{2}\right)\int _{r}^{\infty}\mathrm{d}r' r'^{2}(1+r'^{2})^{-(\mu+4)}{}_{2}F_{1}\left(\frac{\mu+1}{2},\frac{\mu+3}{2};1+\mu; \frac{1}{1+r^{2}}\right)
 \end{align}$$
 
-numerical result indicates that the previous result is correct
+
+$$\tag{.}\begin{align}
+G_{-1}(r,r') & =-\frac{\Gamma\left( \frac{\mu+1}{2} \right)\Gamma\left( 1+\frac{\mu+1}{2} \right)}{2\Gamma(\mu+1)} r'(1+r'^{2}) \\
+ & \times\left[\theta(r-r')r'(1+r'^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-1}{2},\frac{\mu+1}{2};2;-r'^{2}\right)r(1+r^{2})^{-(\mu+3)/2}{}_{2}F_{1}\left(\frac{\mu+1}{2},\frac{\mu+3}{2};1+\mu; \frac{1}{1+r^{2}}\right)\right. \\
+ & +\left.\theta(r'-r)r(1+r^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-1}{2},\frac{\mu+1}{2};2;-r^{2}\right)r'(1+r'^{2})^{-(\mu+3)/2}{}_{2}F_{1}\left(\frac{\mu+1}{2},\frac{\mu+3}{2};1+\mu; \frac{1}{1+r'^{2}}\right)\right]
+\end{align}$$
