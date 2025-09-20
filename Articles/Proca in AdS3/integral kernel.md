@@ -92,9 +92,9 @@ A^{r}(t,r,\phi) & =-\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{(\mu+1)(\mu+3)}{2}e^{-i
  & +r(1+r^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-1}{2},\frac{\mu+1}{2};2;-r^{2}\right)\int _{r}^{\infty}\mathrm{d}r' r'^{2}(1+r'^{2})^{-(\mu+4)}{}_{2}F_{1}\left(\frac{\mu+1}{2},\frac{\mu+3}{2};1+\mu; \frac{1}{1+r^{2}}\right)
 \end{align}$$
 
-
 $$\tag{.}\begin{align}
-G_{-1}(r,r') & =-\frac{\Gamma\left( \frac{\mu+1}{2} \right)\Gamma\left( 1+\frac{\mu+1}{2} \right)}{2\Gamma(\mu+1)} r'(1+r'^{2}) \\
- & \times\left[\theta(r-r')r'(1+r'^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-1}{2},\frac{\mu+1}{2};2;-r'^{2}\right)r(1+r^{2})^{-(\mu+3)/2}{}_{2}F_{1}\left(\frac{\mu+1}{2},\frac{\mu+3}{2};1+\mu; \frac{1}{1+r^{2}}\right)\right. \\
- & +\left.\theta(r'-r)r(1+r^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-1}{2},\frac{\mu+1}{2};2;-r^{2}\right)r'(1+r'^{2})^{-(\mu+3)/2}{}_{2}F_{1}\left(\frac{\mu+1}{2},\frac{\mu+3}{2};1+\mu; \frac{1}{1+r'^{2}}\right)\right]
+G_{-1}(r,r') & =-\frac{\Gamma\left( \frac{\mu+1}{2} \right)\Gamma\left( \frac{\mu+3}{2} \right)}{2\Gamma(\mu+1)} r'(1+r'^{2}) \\
+ & \times\left[\theta(r-r')r'^{1}(1+r'^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-1}{2},\frac{\mu+1}{2};1+1;-r'^{2}\right)r^{1}(1+r^{2})^{-(\mu+2+1)/2}{}_{2}F_{1}\left(\frac{\mu+1}{2},1+\frac{\mu+1}{2};1+\mu; \frac{1}{1+r^{2}}\right)\right. \\
+ & +\left.\theta(r'-r)r^{1}(1+r^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-1}{2},\frac{\mu+1}{2};1+1;-r^{2}\right)r'^{1}(1+r'^{2})^{-(\mu+2+1)/2}{}_{2}F_{1}\left(\frac{\mu+1}{2},1+\frac{\mu+1}{2};1+\mu; \frac{1}{1+r'^{2}}\right)\right] \\
+
 \end{align}$$
