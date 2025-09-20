@@ -91,13 +91,6 @@ $$\begin{align}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-A^{r}(t,r,\phi) & =-\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{(\mu+1)(\mu+3)}{2}e^{-i(\mu+1)t}e^{-i\phi}\int_{0}^{\infty} \mathrm{d}r' G_{-1}(r,r')r'(1+r'^{2})^{-(\mu+5)/2} \\
- & =\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{(\mu+1)(\mu+3)}{2} \frac{\Gamma\left( \frac{\mu+1}{2} \right)\Gamma\left( \frac{\mu+3}{2} \right)}{2\Gamma(\mu+1)}e^{-i(\mu+1)t}e^{-i\phi} \\
- & \times \left[r(1+r^{2})^{-(\mu+3)/2}{}_{2}F_{1}\left(\frac{\mu+1}{2}, \frac{\mu+3}{2};1+\mu; \frac{1}{1+r^{2}}\right)\int ^{r}_{0}\mathrm{d}r'r'^{2}(1+r'^{2})^{-(\mu+7)/2}{}_{2}F_{1}\left(-\frac{\mu-1}{2},\frac{\mu+1}{2};2;-r'^{2}\right)\right. \\
- & +r(1+r^{2})^{-1}{}_{2}F_{1}\left(-\frac{\mu-1}{2},\frac{\mu+1}{2};2;-r^{2}\right)\int _{r}^{\infty}\mathrm{d}r' r'^{2}(1+r'^{2})^{-(\mu+4)}{}_{2}F_{1}\left(\frac{\mu+1}{2},\frac{\mu+3}{2};1+\mu; \frac{1}{1+r^{2}}\right)
-\end{align}$$
-
-$$\tag{.}\begin{align}
 G_{-1}(r,r') & =\frac{(\theta(r-r')R^{(-1)}_{<}(r')R_{>}^{(-)}(r)+\theta(r'-r)R_{<}^{(-1)}(r)R_{>}^{(-1)}(r'))}{(1+r'^{2})[R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')]} \\
 \int _{0}^{\infty}\mathrm{d}r' G_{-1}(r,r') & =R_{>}^{(-1)}(r)\int _{0}^{r}\mathrm{d}r' \frac{R_{<}^{(-1)}(r')r'(1+r'^{2})^{-(\mu+7)/2}}{R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')} \\
  & +R^{(-1)}_{<}(r)\int ^{\infty}_{r}\mathrm{d}r' \frac{R_{>}^{(-1)}(r')r'(1+r'^{2})^{-(\mu+7)/2}}{R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')}
