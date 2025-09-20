@@ -89,17 +89,11 @@ $$\begin{align}
 then the symplectic forms becomes
 
 $$\begin{align}
-\omega[h^{(+)}_{\pm,m_{1},n_{1}},h^{(-)}_{\pm,m_{2},n_{2}}]=-i\delta _{n_{1},n_{2}}\delta _{m_{1},m_{2}}
+\Omega[h^{(+)}_{\pm,m_{1},n_{1}},h^{(-)}_{\pm,m_{2},n_{2}}] & =-i\delta _{n_{1},n_{2}}\delta _{m_{1},m_{2}} \\
+\Omega[h^{(+)}_{+,m_{1}\geqslant 1,n_{1}},h^{(-)}_{-,m_{2}\geqslant 1,n_{2}}] & =\frac{4i(\mu+n_{1})(m_{1}+n_{1})}{\mu ^{2}+(\mu+m_{1}+2n_{1})^{2}-m_{1}^{2}}\sqrt{ \frac{n_{1}(\mu+m_{1}+n_{1})}{(m_{1}+n_{1})(\mu+n_{1})} }\delta _{m_{1}m_{2}}\delta _{n_{1}-1,n_{2}} \\
+\Omega[h^{(+)}_{+,m_{1}=0,n_{1}},h^{(-)}_{-,m_{2}=0,n_{2}}] & =\frac{4i(\mu+1+n_{1})(1+n_{1})}{\mu ^{2}+(\mu+2+2n_{1})^{2}}\delta _{n_{1},n_{2}} \\
+\Omega[h^{(+)}_{+,m_{1}\leqslant -1,n_{1}},h^{(-)}_{-,m_{2}\leqslant -1,n_{2}}]& =\frac{4i(\mu+n_{2})(-m_{2}+n_{2})}{\mu ^{2}+(\mu-m_{2}+2n_{2})^{2}-m_{2}^{2}} \sqrt{ \frac{n_{2}(\mu-m_{2}+n_{2})}{(-m_{2}+n_{2})(\mu+n_{2})} }\delta _{m_{1},m_{2}}\delta _{n_{1},n_{2}-1}
 \end{align}$$
-
-
-$$\begin{align}
-\Omega[h^{(+)}_{+,m_{1}\geqslant 1,n_{1}},h^{(-)}_{-,m_{2}\geqslant 1,n_{2}}]& =\frac{8\pi i\Gamma(n_{1}+\mu+1)\Gamma(n_{1}+m_{1}+1)}{(\mu+m_{1}+2n_{1})^{2}\Gamma(n_{1}+\mu+m_{1})(n_{1}-1)!}\delta _{m_{1}m_{2}}\delta _{n_{1}-1,n_{2}} \\
-\Omega[h^{(+)}_{+,m_{1}=0,n_{1}},h^{(-)}_{-,m_{2}=0,n_{2}}] & =\frac{8\pi i(n_{1}+1)^{2}}{(2n_{1}+\mu+2)^{2}}\delta _{n_{1},n_{2}} \\
-\Omega[h^{(+)}_{+,m_{1}\leqslant -1,n_{1}},h^{(-)}_{-,m_{2}\leqslant -1,n_{2}}]& =\frac{8\pi i\Gamma(n_{1}+\mu+2)\Gamma(n_{1}-m_{1}+2)}{(\mu-m_{1}+2n_{1}+2)^{2}\Gamma(n_{1}+1+\mu-m_{1})n_{1}!}\delta _{m_{1},m_{2}}\delta _{n_{1}+1,n_{2}}
-\end{align}$$
-
-
 
 ---
 
