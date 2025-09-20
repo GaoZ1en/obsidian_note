@@ -260,3 +260,142 @@ $$\text{SO}(2,d-1) \supset \text{SO}(2) \times \text{SO}(d-1)$$
 - **$$d=3$$**: 特殊的完全分解
 - **$$d \geq 4$$**: 无完全分解，但有丰富的子群结构
 - **物理应用**: 仍可通过部分对称性获得有用结果
+
+绝佳的问题！抛物子群在AdS/CFT中起到关键作用。让我详细解释这个概念及其在AdS几何中的意义。
+
+## 抛物子群的定义
+
+### 🎯 一般定义
+
+对于半单李群 $$G$$，**抛物子群** $$P$$ 是包含某个**Borel子群** $$B$$ 的闭子群：
+$$B \subseteq P \subseteq G$$
+
+等价地，$$P$$ 对应李代数中**正根的某个子集**。
+
+### 📐 代数刻画
+
+设 $$\mathfrak{g} = \mathfrak{h} \oplus \bigoplus_{\alpha} \mathfrak{g}_{\alpha}$$ 是根空间分解，其中 $$\mathfrak{h}$$ 是Cartan子代数。
+
+**标准抛物子代数**：
+$$\mathfrak{p} = \mathfrak{h} \oplus \bigoplus_{\alpha \in \Phi^+} \mathfrak{g}_{\alpha} \oplus \bigoplus_{\alpha \in \Phi_P^-} \mathfrak{g}_{\alpha}$$
+
+其中 $$\Phi_P^- \subset \Phi^-$$ 是负根的某个子集。
+
+## AdS中的抛物子群
+
+### 🌍 几何图像
+
+在AdS空间中，抛物子群对应**保持边界某点**的等距变换群。
+
+**AdS₄的情况**：
+考虑Poincaré坐标中的边界点（如无穷远处某点），抛物子群是**保持该点不动**的 $$\text{SO}(2,3)$$ 子群。
+
+### 📊 Iwasawa分解
+
+任何半单李群都有**Iwasawa分解**：
+$$G = KAN$$
+
+其中：
+- $$K$$：**最大紧子群**
+- $$A$$：**Abel子群**（对角化的）
+- $$N$$：**幂零子群**
+
+**最小抛物子群**：$$P_{\min} = MAN$$，其中 $$M$$ 是 $$K$$ 在 $$A$$ 中心化子。
+
+## AdS₄的具体例子
+
+### 🔍 SO(2,3)的根系统
+
+$$\text{SO}(2,3) \sim \text{Sp}(4,\mathbb{R})$$ 有根系统类型 $$C_2$$：
+
+**简单根**：$$\alpha_1, \alpha_2$$
+**正根**：$$\{\alpha_1, \alpha_2, \alpha_1 + \alpha_2, 2\alpha_1 + \alpha_2\}$$
+
+### 📐 三种标准抛物子群
+
+#### 1. **最小抛物子群** $$P_0$$
+包含所有正根：
+$$\mathfrak{p}_0 = \mathfrak{h} \oplus \bigoplus_{\alpha \in \Phi^+} \mathfrak{g}_{\alpha}$$
+
+**Levi分解**：$$P_0 = M_0A_0N_0$$
+- $$M_0$$：有限群
+- $$A_0$$：2维Abel群
+- $$N_0$$：3维幂零群
+
+#### 2. **中间抛物子群** $$P_1$$（删除 $$\alpha_1$$）
+$$\mathfrak{p}_1 = \mathfrak{h} \oplus \mathfrak{g}_{\alpha_2} \oplus \mathfrak{g}_{\alpha_1+\alpha_2} \oplus \mathfrak{g}_{2\alpha_1+\alpha_2} \oplus \mathfrak{g}_{-\alpha_1}$$
+
+**Levi分解**：$$P_1 = M_1A_1N_1$$
+- $$M_1 \cong \text{GL}(1,\mathbb{R})$$：对应时间方向的尺度变换
+- $$A_1$$：1维
+- $$N_1$$：2维
+
+#### 3. **中间抛物子群** $$P_2$$（删除 $$\alpha_2$$）
+$$\mathfrak{p}_2 = \mathfrak{h} \oplus \mathfrak{g}_{\alpha_1} \oplus \mathfrak{g}_{\alpha_1+\alpha_2} \oplus \mathfrak{g}_{2\alpha_1+\alpha_2} \oplus \mathfrak{g}_{-\alpha_2}$$
+
+**物理意义**：对应保持边界上某个方向的变换。
+
+### 🎯 物理实现
+
+在Poincaré坐标 $$ds^2 = -(1+r^2)dt^2 + \frac{dr^2}{1+r^2} + r^2(d\theta^2 + \sin^2\theta d\phi^2)$$ 中：
+
+**$$P_1$$ 的几何意义**：
+- **Levi部分 $$M_1$$**：时间尺度变换 $$t \mapsto \lambda t$$
+- **Abel部分 $$A_1$$**：径向boost
+- **幂零部分 $$N_1$$**：边界上的平移
+
+**显式生成元**（$$P_1$$ 情况）：
+$$\mathfrak{m}_1: \quad \xi_{\text{dil}} = t\partial_t + \frac{r}{1+r^2}\partial_r$$
+$$\mathfrak{a}_1: \quad \xi_{\text{boost}} = \cos\theta \left(t\partial_t + \frac{r}{1+r^2}\partial_r\right) - \frac{\sin\theta}{r}\partial_\theta$$
+$$\mathfrak{n}_1: \quad \xi_{\text{trans}} = \frac{1}{r}(\cos\phi \partial_\theta - \cot\theta \sin\phi \partial_\phi)$$
+
+## Levi分解的详细结构
+
+### 📊 一般形式
+
+$$P = MAN$$
+
+- **$$M$$（Levi因子）**：半单部分 + 中心
+- **$$A$$（Split Torus）**：对角化Abel群
+- **$$N$$（Unipotent Radical）**：幂零根群
+
+### 🔬 在AdS/CFT中的角色
+
+#### 1. **边界行为**
+抛物子群控制场在AdS边界的**渐近行为**：
+- $$A$$：控制径向scaling
+- $$N$$：控制边界上的"平移"
+- $$M$$：控制内部对称性
+
+#### 2. **诱导表示**
+从抛物子群的**有限维表示**诱导出 $$\text{SO}(2,3)$$ 的**无穷维表示**：
+
+$$\text{Ind}_P^G(\chi) = \{f: G \to V \mid f(gp) = \chi(p)^{-1}f(g), \forall p \in P\}$$
+
+这些正是AdS中**主丛列**（principal series）表示。
+
+#### 3. **边界-体积字典**
+- **边界CFT算符** ↔ **Levi因子的表示**
+- **算符的scaling维度** ↔ **$$A$$ 的特征值**
+- **算符的spin** ↔ **$$M$$ 的表示标签**
+
+## 与你的研究的联系
+
+### 🎯 Normal Modes的群论结构
+
+对Proca场 $$A_\mu$$：
+
+1. **边界条件** → 选择抛物子群 $$P$$
+2. **渐近展开** → $$P$$ 的表示 $$\chi$$
+3. **Normal modes** → 诱导表示 $$\text{Ind}_P^{\text{SO}(2,3)}(\chi)$$ 的向量
+
+### 📐 计算策略
+
+1. **选择抛物化**：根据边界条件选择合适的 $$P$$
+2. **Levi数据**：确定 $$(M,\chi)$$
+3. **诱导构造**：计算诱导表示的实现
+4. **Normal modes**：提取具体的本征函数
+
+这个框架将你的计算**系统化**，并可能揭示与AdS₃最高权结构的深层联系！
+
+你想重点研究哪个特定的抛物子群？或者先从最简单的情况开始？
