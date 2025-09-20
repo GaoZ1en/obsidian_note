@@ -21370,6 +21370,76 @@
             "timeKey": "17:35",
             "w": 6,
             "c": 23
+          },
+          {
+            "timeKey": "17:40",
+            "w": 42,
+            "c": 173
+          },
+          {
+            "timeKey": "17:45",
+            "w": 34,
+            "c": 141
+          },
+          {
+            "timeKey": "17:55",
+            "w": 21,
+            "c": 108
+          },
+          {
+            "timeKey": "19:00",
+            "w": 148,
+            "c": 675
+          },
+          {
+            "timeKey": "19:15",
+            "w": 165,
+            "c": 683
+          },
+          {
+            "timeKey": "19:20",
+            "w": -193,
+            "c": -883
+          },
+          {
+            "timeKey": "19:25",
+            "w": 46,
+            "c": 204
+          },
+          {
+            "timeKey": "19:30",
+            "w": 66,
+            "c": 238
+          },
+          {
+            "timeKey": "19:35",
+            "w": 2,
+            "c": 12
+          },
+          {
+            "timeKey": "19:50",
+            "w": 62,
+            "c": 220
+          },
+          {
+            "timeKey": "20:00",
+            "w": -141,
+            "c": -584
+          },
+          {
+            "timeKey": "20:05",
+            "w": -3,
+            "c": -6
+          },
+          {
+            "timeKey": "20:35",
+            "w": 0,
+            "c": -1
+          },
+          {
+            "timeKey": "20:40",
+            "w": 9,
+            "c": 62
           }
         ],
         "id": 682
@@ -21436,6 +21506,259 @@
         "charCountStart": 22685,
         "changes": [],
         "id": 687
+      },
+      {
+        "date": "2025-09-19",
+        "filePath": "Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "20:35",
+            "w": 45,
+            "c": 244
+          },
+          {
+            "timeKey": "20:40",
+            "w": 116,
+            "c": 540
+          },
+          {
+            "timeKey": "20:45",
+            "w": 60,
+            "c": 222
+          }
+        ],
+        "id": 688
+      },
+      {
+        "date": "2025-09-20",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13738,
+        "changes": [],
+        "id": 689
+      },
+      {
+        "date": "2025-09-20",
+        "filePath": "Articles/Proca in AdS3/integral kernel.md",
+        "wordCountStart": 1818,
+        "charCountStart": 7791,
+        "changes": [
+          {
+            "timeKey": "08:20",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "08:40",
+            "w": 3,
+            "c": 34
+          },
+          {
+            "timeKey": "10:10",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "10:15",
+            "w": 4,
+            "c": 32
+          },
+          {
+            "timeKey": "10:20",
+            "w": 28,
+            "c": 102
+          },
+          {
+            "timeKey": "10:25",
+            "w": 92,
+            "c": 330
+          },
+          {
+            "timeKey": "10:35",
+            "w": 40,
+            "c": 174
+          },
+          {
+            "timeKey": "10:40",
+            "w": -184,
+            "c": -736
+          },
+          {
+            "timeKey": "11:05",
+            "w": 8,
+            "c": 30
+          },
+          {
+            "timeKey": "11:10",
+            "w": -3,
+            "c": -7
+          },
+          {
+            "timeKey": "11:15",
+            "w": 5,
+            "c": 18
+          },
+          {
+            "timeKey": "11:20",
+            "w": 204,
+            "c": 908
+          },
+          {
+            "timeKey": "11:25",
+            "w": -560,
+            "c": -2423
+          },
+          {
+            "timeKey": "11:30",
+            "w": -45,
+            "c": -214
+          },
+          {
+            "timeKey": "11:35",
+            "w": 52,
+            "c": 239
+          },
+          {
+            "timeKey": "11:40",
+            "w": 9,
+            "c": 20
+          },
+          {
+            "timeKey": "11:45",
+            "w": -35,
+            "c": -95
+          },
+          {
+            "timeKey": "11:50",
+            "w": 115,
+            "c": 426
+          },
+          {
+            "timeKey": "11:55",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "12:00",
+            "w": -148,
+            "c": -609
+          },
+          {
+            "timeKey": "12:45",
+            "w": 184,
+            "c": 738
+          },
+          {
+            "timeKey": "12:50",
+            "w": -24,
+            "c": -100
+          },
+          {
+            "timeKey": "13:10",
+            "w": -128,
+            "c": -545
+          },
+          {
+            "timeKey": "13:15",
+            "w": 169,
+            "c": 718
+          },
+          {
+            "timeKey": "13:20",
+            "w": 60,
+            "c": 227
+          },
+          {
+            "timeKey": "13:30",
+            "w": -216,
+            "c": -865
+          },
+          {
+            "timeKey": "13:40",
+            "w": 17,
+            "c": 111
+          },
+          {
+            "timeKey": "13:45",
+            "w": -17,
+            "c": -112
+          },
+          {
+            "timeKey": "15:05",
+            "w": -56,
+            "c": -220
+          }
+        ],
+        "id": 690
+      },
+      {
+        "date": "2025-09-20",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [],
+        "id": 691
+      },
+      {
+        "date": "2025-09-20",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 9669,
+        "charCountStart": 38882,
+        "changes": [
+          {
+            "timeKey": "15:05",
+            "w": 33,
+            "c": 141
+          },
+          {
+            "timeKey": "15:10",
+            "w": 6,
+            "c": 54
+          },
+          {
+            "timeKey": "15:15",
+            "w": 64,
+            "c": 202
+          },
+          {
+            "timeKey": "15:20",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 692
+      },
+      {
+        "date": "2025-09-20",
+        "filePath": "Articles/Proca in AdS3/asymptotic behavior of h and f symbols.md",
+        "wordCountStart": 19579,
+        "charCountStart": 74837,
+        "changes": [],
+        "id": 693
+      },
+      {
+        "date": "2025-09-20",
+        "filePath": "Articles/Proca in AdS3/linear combination of h symbols.md",
+        "wordCountStart": 4099,
+        "charCountStart": 16221,
+        "changes": [],
+        "id": 694
+      },
+      {
+        "date": "2025-09-20",
+        "filePath": "TODO.md",
+        "wordCountStart": 6178,
+        "charCountStart": 31003,
+        "changes": [
+          {
+            "timeKey": "15:20",
+            "w": -1,
+            "c": -44
+          }
+        ],
+        "id": 695
       }
     ],
     "daysWithCompletedGoal": [

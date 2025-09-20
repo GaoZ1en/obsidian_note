@@ -2,18 +2,10 @@
 
 1. 协变相空间框架下的量子化
 	1. 继续考虑$\mathrm{AdS_{n}}$中的正则量子化
-		1. 解给出来了，现在需要证明和之前的解是等价的
-			1. 可以明确的是有混合。计算有些困难
-2. 黑洞热力学
-	1. [Hartman] lectures
-3. ads/cft需要看
-	1. 1011.1485
-	2. Witten的文章
-4. 2. [Freedman] Supergravity.pdf
-	1. mainly in ads/cft...
-5. [Henneaux, Teitelboim] Quantization of gauge systems.pdf
-6. Project Euler
-	1. rust
+	2. Green函数给出来了，但是解析算不出来，数值也对不上
+	3. 后面思考推广到d维
+2. [Henneaux, Teitelboim] Quantization of gauge systems.pdf
+
 
 应当搞清楚算的是什么量，而不是直接模仿别人的计算流程。
 ## career

@@ -93,10 +93,6 @@ $$\begin{align}
 $$\tag{.}\begin{align}
 G_{-1}(r,r') & =\frac{(\theta(r-r')R^{(-1)}_{<}(r')R_{>}^{(-)}(r)+\theta(r'-r)R_{<}^{(-1)}(r)R_{>}^{(-1)}(r'))}{(1+r'^{2})[R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')]} \\
 \int _{0}^{\infty}\mathrm{d}r' G_{-1}(r,r') & =R_{>}^{(-1)}(r)\int _{0}^{r}\mathrm{d}r' \frac{R_{<}^{(-1)}(r')r'(1+r'^{2})^{-(\mu+7)/2}}{R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')} \\
- & +R^{(-1)}_{<}(r)\int ^{\infty}_{r}\mathrm{d}r' \frac{R_{>}^{(-1)}(r')r'(1+r'^{2})^{-(\mu+7)/2}}{R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')}
-\end{align}$$
-
-$$\tag{.}\begin{align}
-R^{(-1)}_{<}(r) & =r{}_{2}F_{1}\left( \frac{1}{2}(-\mu+3), \frac{1}{2}(\mu+3);2;-r^{2} \right) \\
-R^{(-1)}_{>}(r) & =r(1+r^{2})^{-(\mu+3)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu+1),\frac{1}{2}(\mu+3);1+\mu; \frac{1}{1+r^{2}}\right)
+ & +R^{(-1)}_{<}(r)\int ^{\infty}_{r}\mathrm{d}r' \frac{R_{>}^{(-1)}(r')r'(1+r'^{2})^{-(\mu+7)/2}}{R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')} \\
+ & \neq\left\{f^{(+)}_{l,0,0}\right\}^{t}
 \end{align}$$
