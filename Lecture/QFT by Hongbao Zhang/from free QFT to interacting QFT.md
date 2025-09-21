@@ -231,3 +231,38 @@ T\phi(x)\phi(x') & =\theta(x^{0}-x'^{0})\phi(x)\phi(x')+\theta(x'^{0}-x^{0})\phi
  & =G^{\mathrm{R}}(x,x')-G^{\mathrm{A}}(x,x')
 \end{align}$$
 
+remind that the time evolution operator in the interaction picture is defined as
+
+$$\begin{align}
+U(t,t') & =e^{iHt}e^{-iH_{0}(t-t')}e^{-iHt'} \\
+\implies S & =U(\infty,-\infty)
+\end{align}$$
+
+define $\displaystyle{\Lambda(t)=e^{iH_{0}t}e^{-iHt}}$, we have
+
+$$\begin{align}
+\phi _{0}(x)=\Lambda(t)\phi(x)\Lambda ^{-1}(t)
+\end{align}$$
+
+where $\displaystyle{\phi(x)}$ is in the interaction picture, then $\displaystyle{\phi_{0}(x)}$ satisfies the Heisenberg equation
+
+$$\begin{align}
+[H_{0},\phi_{0}(x)]=-i\dot{\phi}_{0}(x)
+\end{align}$$
+
+take a mode expansion in the Minkowskian spacetime
+
+$$\begin{align}
+\phi_{0}(x) & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3/2}\sqrt{ 2\omega _{k} }}\left(a_{k}e^{-ik\cdot x}+a^{\dagger}_{k}e^{ikx}\right) \\
+\implies\phi(x) & =\Lambda ^{-1}(t)\int \mathrm{d}^{3}\vec{k}(a_{k}\mathcal{K}(x)+a^{\dagger}_{k}\mathcal{\bar{K}}(x))\Lambda(t) \\
+ & =\int \mathrm{d}^{3}\vec{k}(a_{k}(t)\mathcal{K}(x)+a^{\dagger}_{k}(t)\mathcal{\bar{K}}(x))
+\end{align}$$
+
+where $\displaystyle{a_{k}(t)=\Lambda ^{-1}(t)a_{k}\Lambda(t)}$ and similar for $\displaystyle{a_{k}^{\dagger}(t)}$. consider
+
+$$\begin{align}
+\int \mathrm{d}^{4}x\mathcal{K}(x)(\nabla _{\mu}\nabla ^{\mu}+m^{2})\phi(x) & =\int \mathrm{d}^{4}x\nabla _{\mu}(\mathcal{K}(x)\nabla ^{\mu}\phi(x)-\nabla ^{\mu}\mathcal{K}(x)\phi(x))+\int \mathrm{d}^{4}x\phi(x)\left(\nabla _{\mu}\nabla ^{\mu}+m^{2}\right)\mathcal{K}(x) \\
+ & = \int \mathrm{d}^{4}x\nabla _{\mu}(\mathcal{K}(x)\nabla ^{\mu}\phi(x)-\nabla ^{\mu}\mathcal{K}(x)\phi(x)) \\
+ & =\int \mathrm{d}t\partial _{t}\int \mathrm{d}^{3}x(\mathcal{K}(x)\dot{\phi}(x)-\mathcal{\dot{K}}(x)\phi(x)) \\
+ & =-i \int _{-\infty}^{+\infty}\mathrm{d}t \partial _{t}(\phi ^{\dagger},\mathcal{K})_{t}
+\end{align}$$

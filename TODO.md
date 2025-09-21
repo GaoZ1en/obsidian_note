@@ -5,6 +5,10 @@
 	2. Green函数给出来了，但是解析算不出来，数值也对不上
 	3. 后面思考推广到d维
 2. [Henneaux, Teitelboim] Quantization of gauge systems.pdf
+3. 可以借上课把若干经典读一读
+	1. large scale structure of spacetime by Hawking and Ellis
+	2. General Relativity by Wald
+	3. 
 
 
 应当搞清楚算的是什么量，而不是直接模仿别人的计算流程。
