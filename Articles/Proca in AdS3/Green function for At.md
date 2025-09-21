@@ -150,3 +150,29 @@ Plot[mainFunction[r, \[Mu]Value], {r, rMin, rMax},
   StringForm["Complex Integral Function with \[Mu] = ``", \[Mu]Value],
   ImageSize -> Large, PlotPoints -> 50, MaxRecursion -> 4]
 ```
+
+---
+
+now we will try
+
+$$\begin{align}
+{h^{(+)}_{+,m=0,n=0}}^{t} & =e^{-i(\mu+2)t} \frac{1}{\mu+2}(\mu r^{2}-2)(1+r^{2})^{-(\mu+4)/2} \\
+{h^{(+)}_{+,m=0,n=0}}^{r} & =-ie^{-i(\mu+2)t}r(1+r^{2})^{-(\mu+2)/2} \\
+{h^{(+)}_{+,m=0,n=0}}^{\phi} & =e^{-i(\mu+2)t}(1+r^{2})^{-(\mu+2)/2}
+\end{align}$$
+
+$$\begin{align}
+\partial _{t}\partial _{r}A^{r}+\partial _{t}\partial _{\phi}A^{\phi}+\frac{1-r^{2}}{r(1+r^{2})}\partial _{t}A^{r} & =e^{-i(\mu+2)t}(1+r^{2})^{-(\mu+4)/2}((\mu+2)r^{2}-2)
+\end{align}$$
+
+$$\begin{align}
+A^{t}(t,r,\phi) & =e^{-i(\mu+2)t}\int \mathrm{d}r'G_{0}(r,r')(1+r^{2})^{-(\mu+6)/2}((\mu+2)r^{2}-2) \\
+ & \propto \int _{0}^{\infty}\mathrm{d}r'\frac{(\theta(r-r')R^{(-1)}_{<}(r')R_{>}^{(-)}(r)+\theta(r'-r)R_{<}^{(-1)}(r)R_{>}^{(-1)}(r'))}{(1+r'^{2})[R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')]}(1+r^{2})^{-(\mu+4)/2}((\mu+2)r^{2}-2)
+\end{align}$$
+
+
+
+$$\begin{align}
+A^{t}(t,r,\phi) & =-\int \mathrm{d}^{2}yG(x,y) \frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right) \\
+ & =-\int \mathrm{d}r'\mathrm{d}\phi'G(r,\phi;r',\phi') \frac{1}{1+r'^{2}}\left(\partial _{t}\partial _{r'}A^{r}+\partial _{t}\partial _{\phi'}A^{\phi}+\frac{1-r'^{2}}{r'(1+r'^{2})}\partial _{t}A^{r}\right)
+\end{align}$$

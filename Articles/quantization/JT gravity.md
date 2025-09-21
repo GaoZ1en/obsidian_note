@@ -70,14 +70,12 @@ $$\begin{align}
 
 $$\tag{.}\begin{align}
 2\int _{\Gamma}\mathrm{d}xX_{\xi}\cdot \delta(\sqrt{ h }((\phi_{0}+\phi)K-\phi)) & =-2\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)D^{2}(n_{\mu}\xi ^{\mu}) \\
-+\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\rho}\xi ^{\rho}((\phi_{0}+\phi)R+2\phi) &\quad -2\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\rho}\xi ^{\rho}\phi (K-1) \\
- & \quad+2\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\rho}\xi ^{\rho}n^{\nu}\nabla _{\nu}\phi(K-1) \\
++\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\rho}\xi ^{\rho}((\phi_{0}+\phi)R+2\phi) &\quad+2\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\rho}\xi ^{\rho}(n^{\nu}\nabla _{\nu}\phi-\phi)(K-1) \\
  & \quad+2\int _{\Gamma}\mathrm{d}x\sqrt{ h }D_{\alpha}(\xi ^{\alpha}\phi (K-1)+\xi ^{\alpha}\phi_{0}K)
 \end{align}$$
 
 $$\tag{.}\begin{align}
--2\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)\gamma ^{\alpha \beta}D_{\alpha}D_{\beta}(n_{\rho}\xi ^{\rho}) \\
- & 
+-2\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)\gamma ^{\alpha \beta}D_{\alpha}D_{\beta}(n_{\rho}\xi ^{\rho}) & =-2\int _{\Gamma}\mathrm{d}x\sqrt{ h }D_{\alpha}((\phi_{0}+\phi)\gamma ^{\alpha \beta}D_{\beta}(n_{\rho}\xi ^{\rho}))+2\int _{\Gamma}\mathrm{d}x\sqrt{ h }
 \end{align}$$
 
 $$\tag{.}\begin{align}
