@@ -76,12 +76,6 @@ $$\tag{.}\begin{align}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-2\int _{\Gamma}\mathrm{d}x\sqrt{ h }\phi D_{\alpha}(K\xi ^{\alpha})+2\int _{\Gamma}\mathrm{d}x\sqrt{ h }K\xi ^{\alpha}D_{\alpha}\phi & =2\int _{\Gamma}\mathrm{d}x\sqrt{ h }D_{\alpha}(\xi ^{\alpha}\phi(K-1)) \\
--2\int _{\Gamma}\mathrm{d}x\sqrt{ h }D_{\alpha}\xi ^{\alpha}\phi-2\int _{\Gamma}\mathrm{d}x\sqrt{ h }\xi ^{\alpha}D_{\alpha}\phi & =-2\int _{\Gamma}\mathrm{d}x\sqrt{ h }D_{\alpha}(\phi \xi ^{\alpha})
-\end{align}$$
-
-
-$$\tag{.}\begin{align}
 \gamma ^{\mu \nu}X_{\xi}\cdot \delta \gamma _{\mu \nu} & =\gamma ^{\mu \nu}(D_{\mu}(\gamma _{\nu \rho}\xi ^{\rho})+D_{\nu}(\gamma _{\mu \rho}\xi ^{\rho})+2K_{\mu \nu}n_{\rho}\xi ^{\rho}) \\
  & =2D_{\alpha}\xi ^{\alpha}+2Kn_{\rho}\xi ^{\rho} \\
 X_{\xi}\cdot \delta (K\gamma _{\mu \nu}) & =X_{\xi}\cdot \delta K\gamma _{\mu \nu}+KX_{\xi}\cdot \delta \gamma _{\mu \nu} \\
@@ -95,3 +89,4 @@ $$\tag{.}\begin{align}
 \end{align}$$
 
 here we use
+
