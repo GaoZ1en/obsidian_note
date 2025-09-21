@@ -216,3 +216,18 @@ $$\begin{align}
 
 LSZ reduction formula provide a relation between S matrix and time-ordered correlation functions, and reduce the problem to time-ordered correlation functions.
 
+we first define n-point retarded correlation functions
+
+$$\begin{align}
+G^{\mathrm{R}}(x,x') & =\theta(x^{0}-x'^{0})\braket{ 0|[\phi(x),\phi(x')]|0 }
+\end{align}$$
+
+notice that
+
+$$\begin{align}
+T\phi(x)\phi(x') & =\theta(x^{0}-x'^{0})\phi(x)\phi(x')+\theta(x'^{0}-x^{0})\phi(x')\phi(x) \\
+\bar{T}\phi(x)\phi(x') & =\theta(x^{0}-x'^{0})\phi(x')\phi(x)+\theta(x'^{0}-x^{0})\phi(x)\phi(x') \\
+\implies (T-\bar{T})\phi(x)\phi(x') & =\theta(x^{0}-x'^{0})[\phi(x),\phi(x')]-\theta(x'^{0}-x^{0})[\phi(x),\phi(x')] \\
+ & =G^{\mathrm{R}}(x,x')-G^{\mathrm{A}}(x,x')
+\end{align}$$
+
