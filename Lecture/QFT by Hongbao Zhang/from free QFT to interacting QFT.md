@@ -212,3 +212,7 @@ $$\begin{align}
  & =-2\pi i\delta(E_{\beta}-E_{\alpha})\braket{ \beta|V \frac{1}{E_{\alpha}-H_{0}+i\varepsilon}V|\alpha } 
 \end{align}$$
 
+# Lehmann-Symanzik-Zimmermann reduction formula and time ordered correlation functions
+
+LSZ reduction formula provide a relation between S matrix and time-ordered correlation functions, and reduce the problem to time-ordered correlation functions.
+
