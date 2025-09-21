@@ -1,7 +1,7 @@
 
 ## 确定Wronskian常数C
 
-基于你给出的[[integral kernel]]推导，我们需要通过分析$$R_<(r)$$和$$R_>(r)$$在$$r \to 0$$和$$r \to \infty$$处的渐进行为来确定Wronskian常数。
+基于你给出的[[Articles/Proca in AdS3/Green function for At]]推导，我们需要通过分析$$R_<(r)$$和$$R_>(r)$$在$$r \to 0$$和$$r \to \infty$$处的渐进行为来确定Wronskian常数。
 
 ### 渐进行为分析
 
