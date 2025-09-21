@@ -264,5 +264,32 @@ $$\begin{align}
 \int \mathrm{d}^{4}x\mathcal{K}(x)(\nabla _{\mu}\nabla ^{\mu}+m^{2})\phi(x) & =\int \mathrm{d}^{4}x\nabla _{\mu}(\mathcal{K}(x)\nabla ^{\mu}\phi(x)-\nabla ^{\mu}\mathcal{K}(x)\phi(x))+\int \mathrm{d}^{4}x\phi(x)\left(\nabla _{\mu}\nabla ^{\mu}+m^{2}\right)\mathcal{K}(x) \\
  & = \int \mathrm{d}^{4}x\nabla _{\mu}(\mathcal{K}(x)\nabla ^{\mu}\phi(x)-\nabla ^{\mu}\mathcal{K}(x)\phi(x)) \\
  & =\int \mathrm{d}t\partial _{t}\int \mathrm{d}^{3}x(\mathcal{K}(x)\dot{\phi}(x)-\mathcal{\dot{K}}(x)\phi(x)) \\
- & =-i \int _{-\infty}^{+\infty}\mathrm{d}t \partial _{t}(\phi ^{\dagger},\mathcal{K})_{t}
+ & =i \int _{-\infty}^{+\infty}\mathrm{d}t \partial _{t}(\phi ^{\dagger},\mathcal{K})_{t}
+\end{align}$$
+
+assume that the interaction occurs within the finite time period. so
+
+$$\begin{align}
+i \int _{-\infty}^{+\infty}\mathrm{d}t \partial _{t}(\phi ^{\dagger},\mathcal{K})_{t} & =-i[(\phi ^{\dagger},\mathcal{K})_{\infty}-(\phi ^{\dagger},\mathcal{K})_{-\infty}] \\
+ & =i(a_{k}(\infty)-a_{k}(-\infty))
+\end{align}$$
+
+consider
+
+$$\begin{align}
+a^{\dagger}_{k}(\mp \infty)\ket{0} ^{\pm} & =\Lambda ^{-1}(\mp \infty)a^{\dagger}_{k}\Lambda(\mp \infty)\ket{0} ^{\pm} \\
+ & =\Lambda ^{-1}(\mp \infty)a^{\dagger}_{k}\ket{0}  \\
+ & =\Lambda ^{-1}(\mp \infty)\ket{k}  \\
+ & =\ket{k} ^{\pm}
+\end{align}$$
+
+consider the following scattering amplitude
+
+$$\begin{align}
+\braket{ \beta|S|\alpha }  & = \braket{ 0|a_{k' _{1}}a_{k'_{2}}\dots a_{k'_{j}}Sa^{\dagger}_{k_{1}}a^{\dagger}_{k_{2}}\dots a^{\dagger}_{k _{i}}|0 } \\
+ & =\braket{ 0|a_{k' _{1}}a_{k'_{2}}\dots a_{k'_{j}}\Lambda(\infty)\Lambda ^{-1}(-\infty)a^{\dagger}_{k_{1}}a^{\dagger}_{k_{2}}\dots a^{\dagger}_{k _{i}}|0 } \\
+ & = \braket{ 0|\Lambda(\infty)\Lambda ^{-1}(\infty)a_{k'_{1}}\Lambda(\infty)\dots \Lambda ^{-1}(\infty)a_{k'_{j}}\Lambda(\infty)\Lambda ^{-1}(-\infty)a^{\dagger}_{k_{1}}\Lambda(-\infty)\dots \Lambda ^{-1}(-\infty)a^{\dagger}_{k_{i}}\Lambda(-\infty)\Lambda ^{-1}(-\infty)|0 } \\
+ & = {}^{-}\braket{ 0|T(a_{k'_{1}}(\infty)\dots a_{k'_{j}}(\infty)a^{\dagger}_{k_{1}}(-\infty)\dots a^{\dagger}_{k _{i}}(-\infty))|0 } ^{+} \\
+ & = {}^{-}\braket{ 0|T((a_{k'_{1}}(\infty)-a_{k'_{1}}(-\infty))\dots(a_{k'_{j}}(\infty)-a_{k'_{j}}(-\infty))(a^{\dagger}_{k_{1}}(-\infty)-a^{\dagger}_{k_{1}}(\infty))\dots(a^{\dagger}_{k _{i}}(-\infty)-a^{\dagger}_{k _{i}}(\infty)))|0 }^{+} \\
+ & =i^{i+j}
 \end{align}$$
