@@ -34,7 +34,7 @@ R_{\mu \nu} & =\frac{1}{2}Rg_{\mu \nu} \\
 K_{\mu \nu} & =K\gamma _{\mu \nu}
 \end{align}$$
 
-the Dirichlet boundary condition is
+and other formulae. the Dirichlet boundary condition is
 
 $$\begin{align}
 \mathrm{d}s^{2}|_{\Gamma} & =-r^{2}_{c}\mathrm{d}t^{2} \\
@@ -55,64 +55,28 @@ X_{\xi} & =\int _{M} \mathrm{d}^{2}x\left(\mathcal{L}_{\xi}g_{\mu \nu} \frac{\de
 
 act this symmetry on the action
 
+$$\tag{.}\begin{align}
+\int _{M} \mathrm{d}^{2}xX_{\xi}\cdot \delta(\sqrt{ -g }\mathcal{L}) & =\int _{M} \mathrm{d}^{2}xD_{\mu}(\xi ^{\mu}(\phi_{0}+\phi)R+2\phi) \\ \\
+ & =\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu}((\phi_{0}+\phi)R+2\phi)+\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\mu}\xi ^{\mu}((\phi_{0}+\phi)R+2\phi)
+\end{align}$$
+
 $$\begin{align}
-X_{\xi}\cdot \delta S & =\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu}((\phi_{0}+\phi)R+2\phi)+\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\mu}\xi ^{\mu}((\phi_{0}+\phi)R+2\phi) \\
- & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }\xi ^{\mu}\nabla _{\mu}\phi(K-1) \\
- & +\int _{\Gamma}\mathrm{d}x\sqrt{ h }((\phi_{0}+\phi)K-\phi)(2D_{\alpha}\xi ^{\alpha}+2Kn_{\rho}\xi ^{\rho}) \\
- & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)\left( \xi ^{\alpha}D_{\alpha}K-D^{2}(n_{\mu}\xi ^{\mu})+\left( \gamma ^{\alpha \beta}n^{\rho}\nabla _{\rho}K_{\alpha \beta}+\frac{1}{N}D^{2}N \right)n_{\sigma}\xi ^{\sigma} \right)
+2\int _{\Gamma}\mathrm{d}xX_{\xi}\cdot \delta(\sqrt{ h }((\phi_{0}+\phi)K-\phi)) & =\int _{\Gamma}\mathrm{d}x\sqrt{ h }(2D_{\alpha}\xi ^{\alpha}+2Kn_{\rho}\xi ^{\rho})((\phi_{0}+\phi)K-\phi) \\
+ & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }\xi ^{\mu}\nabla _{\mu}(K-1) \\
+ & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)(X_{\xi}\cdot \delta K)
 \end{align}$$
 
 $$\tag{.}\begin{align}
-R=-2K^{2}-2n^{\alpha}\nabla _{\alpha}K-\frac{2}{N}D^{2}N
+\gamma ^{\mu \nu}X_{\xi}\cdot \delta \gamma _{\mu \nu} & =\gamma ^{\mu \nu}(D_{\mu}(\gamma _{\nu \rho}\xi ^{\rho})+D_{\nu}(\gamma _{\mu \rho}\xi ^{\rho})+2K_{\mu \nu}n_{\rho}\xi ^{\rho}) \\
+ & =2D_{\alpha}\xi ^{\alpha}+2Kn_{\rho}\xi ^{\rho} \\
+X_{\xi}\cdot \delta (K\gamma _{\mu \nu}) & =X_{\xi}\cdot \delta K\gamma _{\mu \nu}+KX_{\xi}\cdot \delta \gamma _{\mu \nu} \\
+\implies X_{\xi}\cdot \delta K & =\gamma ^{\mu \nu}X_{\xi}\cdot \delta K_{\mu \nu}-K\gamma ^{\mu \nu}X_{\xi}\cdot \delta \gamma _{\mu \nu} \\
+ & =\xi ^{\alpha}D_{\alpha}K-D^{2}(n_{\mu}\xi ^{\mu})+\left( n^{\rho}\nabla _{\rho}K+ \frac{1}{N}D^{2}N \right)n_{\sigma}\xi ^{\sigma}
 \end{align}$$
-
->[! now we are doing ]
 
 $$\tag{.}\begin{align}
- & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\mu}\xi ^{\mu}\phi \\
- & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }\xi ^{\mu}\nabla _{\mu}\phi(K-1) \\
- & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)D_{\alpha}(\xi ^{\alpha}K) \\
- & -\int _{\Gamma}\mathrm{d}x\sqrt{ h }\phi(2D_{\alpha}\xi ^{\alpha}+2Kn_{\rho}\xi ^{\rho}) \\
- & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)\left( -D^{2}(n_{\mu}\xi ^{\mu}) \right)
+\gamma ^{\mu \nu}X_{\xi}\cdot \delta K_{\mu \nu} & =2D_{\alpha}\xi ^{\alpha}K+\xi ^{\alpha}D_{\alpha}K-D^{2}(n_{\mu}\xi ^{\mu}) \\
+ & +\left( n^{\rho}\nabla _{\rho}K+2K^{2}+\frac{1}{N}D^{2}N \right)n_{\sigma}\xi ^{\sigma}
 \end{align}$$
-
 
 here we use
-
-$$\tag{.}\begin{align}
-\gamma ^{\alpha \beta}\gamma ^{\mu}_{\alpha}\gamma ^{\nu}_{\beta}X_{\xi}\cdot \delta \gamma _{\mu \nu} & =\gamma ^{\mu \nu}X_{\xi}\cdot \delta \gamma _{\mu \nu} \\
- & =\gamma ^{\alpha \beta}(D_{\alpha}(\gamma _{\beta \gamma}\xi ^{\gamma})+D_{\beta}(\gamma _{\alpha \gamma}\xi ^{\gamma})+2K\gamma_{\alpha \beta}n_{\rho}\xi ^{\rho}) \\
- & =2D_{\alpha}\xi ^{\alpha}+2Kn_{\rho}\xi ^{\rho} \\
-X_{\xi}\cdot \delta K & =X_{\xi}\cdot \delta(K_{\alpha \beta}\gamma ^{\alpha \beta}) \\
- & =\gamma ^{\alpha \beta}X_{\xi}\cdot \delta K_{\alpha \beta}+K_{\alpha \beta}X_{\xi}\cdot \delta \gamma ^{\alpha \beta} \\
- & =\gamma ^{\alpha \beta}D_{\alpha}(\gamma ^{\mu}_{\nu}\xi ^{\nu})K_{\mu \beta}+\gamma ^{\alpha \beta}D_{\beta}(\gamma ^{\mu}_{\nu}\xi ^{\nu})K_{\alpha \mu}+\gamma ^{\alpha \beta}D_{\mu}K_{\alpha \beta}\gamma ^{\mu}_{\nu}\xi ^{\nu}-\gamma ^{\alpha \beta}D_{\alpha}D_{\beta}(n_{\mu}\xi ^{\mu}) \\
- & +\gamma ^{\alpha \beta}\left( \gamma ^{\mu}_{\alpha}\gamma ^{\nu}_{\beta}n^{\rho}\nabla _{\rho}K_{\mu \nu}+2K_{\alpha \mu}K^{\mu}_{\beta}+\frac{1}{N}D_{\alpha}D_{\beta}N \right)n_{\sigma}\xi ^{\sigma} \\
- & +K_{\alpha \beta}(-D^{\alpha}(\gamma ^{\beta}_{\gamma}\xi ^{\gamma})-D^{\beta}(\gamma ^{\alpha}_{\gamma}\xi ^{\gamma})-2K^{\alpha \beta}n_{\rho}\xi ^{\rho}) \\
- & =
-\end{align}$$
-$$\tag{.}\begin{align}
-X_{\xi}\cdot \delta K & =\xi ^{\alpha}D_{\alpha}K-D^{2}(n_{\mu}\xi ^{\mu})+\left(n^{\rho}\nabla _{\rho}K+\frac{1}{N}D^{2}N \right)n_{\sigma}\xi ^{\sigma}
-\end{align}$$
-
-$$\begin{align}
-S & =\phi _{0}\int _{M}\mathrm{d}^{2}x\sqrt{ -g }R+\int _{M}\mathrm{d}^{2}x\sqrt{ -g }\phi(R+2)+2\phi _{0}\int _{\Gamma}\mathrm{d}x\sqrt{ h }K+2\int _{\Gamma}\mathrm{d}x\sqrt{ h }\phi(K-1)
-\end{align}$$
-
-$$\tag{.}\begin{align}
-X_{\xi}\cdot \delta \mathbf{L} & =\mathrm{d}(\xi \cdot \mathbf{L}) \\
-(X_{\xi}\cdot \delta \ell+\xi \cdot \mathbf{L})|_{\Gamma} & =(\mathrm{d}\mu _{\xi}+\nu _{\xi})|_{\Gamma}
-\end{align}$$
-
-notice that
-
-$$\begin{align}
-\delta \sqrt{ -g } & =\frac{1}{2}g^{\mu \nu}\delta g_{\mu \nu}\sqrt{ -g } \\
-\delta \sqrt{ h } & =\frac{1}{2}\gamma ^{\mu \nu}\delta \gamma _{\mu \nu}\sqrt{ h } \\
-\delta R & =-R^{\mu \nu}\delta g_{\mu \nu}+\nabla ^{\mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla _{\rho}\nabla ^{\rho}\delta g_{\mu \nu} \\
-\delta K & =-\frac{1}{2}K^{\mu \nu}\delta g_{\mu \nu}+\frac{1}{2}g^{\mu \nu}n^{\lambda}\nabla _{\lambda}\delta g_{\mu \nu}-\frac{1}{2}n^{\alpha}\nabla ^{\beta}\delta g_{\alpha \beta}-\frac{1}{2}D_{\mu}(\gamma ^{\mu \nu}n^{\alpha}\delta g_{\nu \alpha})
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\gamma ^{\alpha \beta}n^{\rho}\nabla _{\rho}\gamma _{\alpha \beta} & =\gamma ^{\alpha \beta}n^{\rho}\nabla _{\rho}(g_{\alpha \beta}-n_{\alpha}n_{\beta}) \\
- & =0
-\end{align}$$
