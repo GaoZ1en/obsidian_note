@@ -21726,6 +21726,66 @@
             "timeKey": "15:20",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "15:25",
+            "w": 1578,
+            "c": 5933
+          },
+          {
+            "timeKey": "15:30",
+            "w": 48,
+            "c": 193
+          },
+          {
+            "timeKey": "15:35",
+            "w": 8,
+            "c": 43
+          },
+          {
+            "timeKey": "15:40",
+            "w": 178,
+            "c": 655
+          },
+          {
+            "timeKey": "15:45",
+            "w": -92,
+            "c": -327
+          },
+          {
+            "timeKey": "15:50",
+            "w": 6,
+            "c": 18
+          },
+          {
+            "timeKey": "15:55",
+            "w": 12,
+            "c": 45
+          },
+          {
+            "timeKey": "16:00",
+            "w": 138,
+            "c": 517
+          },
+          {
+            "timeKey": "16:05",
+            "w": -65,
+            "c": -236
+          },
+          {
+            "timeKey": "16:10",
+            "w": -7,
+            "c": -51
+          },
+          {
+            "timeKey": "16:15",
+            "w": -27,
+            "c": -110
+          },
+          {
+            "timeKey": "16:20",
+            "w": -19,
+            "c": -70
           }
         ],
         "id": 692
@@ -21743,7 +21803,13 @@
         "filePath": "Articles/Proca in AdS3/linear combination of h symbols.md",
         "wordCountStart": 4099,
         "charCountStart": 16221,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "15:20",
+            "w": 0,
+            "c": 0
+          }
+        ],
         "id": 694
       },
       {
@@ -21754,11 +21820,294 @@
         "changes": [
           {
             "timeKey": "15:20",
-            "w": -1,
-            "c": -44
+            "w": -24,
+            "c": -162
           }
         ],
         "id": 695
+      },
+      {
+        "date": "2025-09-20",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 3030,
+        "charCountStart": 15071,
+        "changes": [
+          {
+            "timeKey": "17:20",
+            "w": -153,
+            "c": -629
+          }
+        ],
+        "id": 696
+      },
+      {
+        "date": "2025-09-20",
+        "filePath": "Articles/Proca in AdS3/two structures.md",
+        "wordCountStart": 2011,
+        "charCountStart": 8060,
+        "changes": [],
+        "id": 697
+      },
+      {
+        "date": "2025-09-20",
+        "filePath": "Articles/Proca in AdSd.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:20",
+            "w": 448,
+            "c": 4525
+          },
+          {
+            "timeKey": "17:25",
+            "w": 168,
+            "c": 1763
+          },
+          {
+            "timeKey": "17:35",
+            "w": -4,
+            "c": 84
+          },
+          {
+            "timeKey": "18:00",
+            "w": 355,
+            "c": 3459
+          }
+        ],
+        "id": 698
+      },
+      {
+        "date": "2025-09-20",
+        "filePath": "Literature Notes/A Note On The Canonical Formalism for Gravity (2212.08270v2).md",
+        "wordCountStart": 185,
+        "charCountStart": 1146,
+        "changes": [],
+        "id": 699
+      },
+      {
+        "date": "2025-09-20",
+        "filePath": "Articles/quantization/JT gravity.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "10:00",
+            "w": 0,
+            "c": -6
+          },
+          {
+            "timeKey": "10:05",
+            "w": 26,
+            "c": 117
+          },
+          {
+            "timeKey": "10:10",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "21:15",
+            "w": 75,
+            "c": 335
+          },
+          {
+            "timeKey": "21:20",
+            "w": 135,
+            "c": 687
+          },
+          {
+            "timeKey": "21:25",
+            "w": 92,
+            "c": 428
+          },
+          {
+            "timeKey": "21:30",
+            "w": 28,
+            "c": 138
+          },
+          {
+            "timeKey": "21:35",
+            "w": 110,
+            "c": 610
+          },
+          {
+            "timeKey": "21:40",
+            "w": 129,
+            "c": 664
+          },
+          {
+            "timeKey": "21:45",
+            "w": 0,
+            "c": 64
+          },
+          {
+            "timeKey": "21:50",
+            "w": 115,
+            "c": 516
+          },
+          {
+            "timeKey": "21:55",
+            "w": 22,
+            "c": 94
+          },
+          {
+            "timeKey": "22:00",
+            "w": 7,
+            "c": 58
+          },
+          {
+            "timeKey": "22:05",
+            "w": 38,
+            "c": 184
+          },
+          {
+            "timeKey": "22:10",
+            "w": 131,
+            "c": 600
+          },
+          {
+            "timeKey": "22:25",
+            "w": 27,
+            "c": 138
+          },
+          {
+            "timeKey": "22:30",
+            "w": 61,
+            "c": 326
+          },
+          {
+            "timeKey": "23:05",
+            "w": -10,
+            "c": -58
+          },
+          {
+            "timeKey": "23:10",
+            "w": -40,
+            "c": -192
+          },
+          {
+            "timeKey": "23:15",
+            "w": 58,
+            "c": 261
+          },
+          {
+            "timeKey": "23:20",
+            "w": 51,
+            "c": 233
+          },
+          {
+            "timeKey": "23:25",
+            "w": -620,
+            "c": -3098
+          }
+        ],
+        "id": 700
+      },
+      {
+        "date": "2025-09-21",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 2877,
+        "charCountStart": 14442,
+        "changes": [],
+        "id": 701
+      },
+      {
+        "date": "2025-09-21",
+        "filePath": "Literature Notes/A Note On The Canonical Formalism for Gravity (2212.08270v2).md",
+        "wordCountStart": 185,
+        "charCountStart": 1146,
+        "changes": [],
+        "id": 702
+      },
+      {
+        "date": "2025-09-21",
+        "filePath": "Articles/quantization/JT gravity.md",
+        "wordCountStart": 435,
+        "charCountStart": 2101,
+        "changes": [
+          {
+            "timeKey": "10:15",
+            "w": 52,
+            "c": 261
+          },
+          {
+            "timeKey": "10:20",
+            "w": 314,
+            "c": 1549
+          },
+          {
+            "timeKey": "10:25",
+            "w": -57,
+            "c": -228
+          },
+          {
+            "timeKey": "10:30",
+            "w": 20,
+            "c": 92
+          },
+          {
+            "timeKey": "10:35",
+            "w": 102,
+            "c": 471
+          },
+          {
+            "timeKey": "10:40",
+            "w": 48,
+            "c": 240
+          },
+          {
+            "timeKey": "10:45",
+            "w": 89,
+            "c": 464
+          },
+          {
+            "timeKey": "10:50",
+            "w": 144,
+            "c": 659
+          },
+          {
+            "timeKey": "10:55",
+            "w": 92,
+            "c": 447
+          },
+          {
+            "timeKey": "11:00",
+            "w": -55,
+            "c": -269
+          },
+          {
+            "timeKey": "11:05",
+            "w": 62,
+            "c": 292
+          },
+          {
+            "timeKey": "11:10",
+            "w": -27,
+            "c": -116
+          },
+          {
+            "timeKey": "11:20",
+            "w": 166,
+            "c": 772
+          },
+          {
+            "timeKey": "11:25",
+            "w": 144,
+            "c": 1310
+          },
+          {
+            "timeKey": "11:30",
+            "w": -145,
+            "c": -1294
+          },
+          {
+            "timeKey": "11:35",
+            "w": -9,
+            "c": -55
+          }
+        ],
+        "id": 703
       }
     ],
     "daysWithCompletedGoal": [
@@ -21823,7 +22172,9 @@
       "2025-09-14",
       "2025-09-15",
       "2025-09-17",
-      "2025-09-18"
+      "2025-09-18",
+      "2025-09-20",
+      "2025-09-21"
     ]
   }
 }
