@@ -62,9 +62,24 @@ $$\tag{.}\begin{align}
 
 $$\begin{align}
 2\int _{\Gamma}\mathrm{d}xX_{\xi}\cdot \delta(\sqrt{ h }((\phi_{0}+\phi)K-\phi)) & =\int _{\Gamma}\mathrm{d}x\sqrt{ h }(2D_{\alpha}\xi ^{\alpha}+2Kn_{\rho}\xi ^{\rho})((\phi_{0}+\phi)K-\phi) \\
- & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }\xi ^{\mu}\nabla _{\mu}(K-1) \\
- & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)(X_{\xi}\cdot \delta K)
++\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\rho}\xi ^{\rho}((\phi_{0}+\phi)R+2\phi) & =+2\int _{\Gamma}\mathrm{d}x\sqrt{ h }\xi ^{\mu}\nabla _{\mu}\phi(K-1) \\
+ & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)\left( \xi^{\alpha}D_{\alpha}K-D^{2}(n_{\mu}\xi ^{\mu})+\left( n^{\rho}\nabla _{\rho}K+\frac{1}{N}D^{2}N \right)n_{\sigma}\xi ^{\sigma} \right) \\
+ & +\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\rho}\xi ^{\rho}(\phi_{0}+\phi)\left( -2K^{2}-2n^{\alpha}\nabla _{\alpha}K-\frac{2}{N}D^{2}N \right) \\
+ & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\rho}\xi ^{\rho}\phi
 \end{align}$$
+
+$$\tag{.}\begin{align}
+2\int _{\Gamma}\mathrm{d}xX_{\xi}\cdot \delta(\sqrt{ h }((\phi_{0}+\phi)K-\phi)) & =2\int _{\Gamma}\mathrm{d}x\sqrt{ h }\phi_{0}D_{\alpha}(K\xi ^{\alpha})-2\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)D^{2}(n_{\mu}\xi ^{\mu}) \\
++\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\rho}\xi ^{\rho}((\phi_{0}+\phi)R+2\phi) &\quad +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\rho}\xi ^{\rho}\phi-2\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\rho}\xi ^{\rho}\phi K \\
+ & \quad+2\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\rho}\xi ^{\rho}n^{\nu}\nabla _{\nu}\phi(K-1) \\
+ & \quad+2\int _{\Gamma}\mathrm{d}x\sqrt{ h }D_{\alpha}(\xi ^{\alpha}\phi (K-1)+)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+2\int _{\Gamma}\mathrm{d}x\sqrt{ h }\phi D_{\alpha}(K\xi ^{\alpha})+2\int _{\Gamma}\mathrm{d}x\sqrt{ h }K\xi ^{\alpha}D_{\alpha}\phi & =2\int _{\Gamma}\mathrm{d}x\sqrt{ h }D_{\alpha}(\xi ^{\alpha}\phi(K-1)) \\
+-2\int _{\Gamma}\mathrm{d}x\sqrt{ h }D_{\alpha}\xi ^{\alpha}\phi-2\int _{\Gamma}\mathrm{d}x\sqrt{ h }\xi ^{\alpha}D_{\alpha}\phi & =-2\int _{\Gamma}\mathrm{d}x\sqrt{ h }D_{\alpha}(\phi \xi ^{\alpha})
+\end{align}$$
+
 
 $$\tag{.}\begin{align}
 \gamma ^{\mu \nu}X_{\xi}\cdot \delta \gamma _{\mu \nu} & =\gamma ^{\mu \nu}(D_{\mu}(\gamma _{\nu \rho}\xi ^{\rho})+D_{\nu}(\gamma _{\mu \rho}\xi ^{\rho})+2K_{\mu \nu}n_{\rho}\xi ^{\rho}) \\
