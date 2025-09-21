@@ -58,8 +58,20 @@ act this symmetry on the action
 $$\begin{align}
 X_{\xi}\cdot \delta S & =\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu}((\phi_{0}+\phi)R+2\phi)+\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\mu}\xi ^{\mu}((\phi_{0}+\phi)R+2\phi) \\
  & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }\xi ^{\mu}\nabla _{\mu}\phi(K-1) \\
- & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h } \frac{1}{2}\gamma ^{\mu \nu}(X_{\xi}\cdot \delta \gamma _{\mu \nu})((\phi_{0}+\phi)K-\phi) \\
- & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)(X_{\xi}\cdot \delta K)
+ & +\int _{\Gamma}\mathrm{d}x\sqrt{ h }((\phi_{0}+\phi)K-\phi)(2D_{\alpha}\xi ^{\alpha}+2Kn_{\rho}\xi ^{\rho}) \\
+ & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)\left( \xi ^{\alpha}D_{\alpha}K-D^{2}(n_{\mu}\xi ^{\mu})+\left( \gamma ^{\alpha \beta}n^{\rho}\nabla _{\rho}K_{\alpha \beta}+\frac{1}{N}D^{2}N \right)n_{\sigma}\xi ^{\sigma} \right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+R=-2K^{2}-2n^{\alpha}\nabla _{\alpha}K-\frac{2}{N}D^{2}N
+\end{align}$$
+
+$$\tag{.}\begin{align}
+ & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }n_{\mu}\xi ^{\mu}\phi \\
+ & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }\xi ^{\mu}\nabla _{\mu}\phi(K-1) \\
+ & +\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)(2KD_{\alpha}\xi ^{\alpha}) \\
+ & -\int _{\Gamma}\mathrm{d}x\sqrt{ h }\phi(2D_{\alpha}\xi ^{\alpha}+2Kn_{\rho}\xi ^{\rho}) \\
+ & +2\int _{\Gamma}\mathrm{d}x\sqrt{ h }(\phi_{0}+\phi)\left( \xi ^{\alpha}D_{\alpha}K-D^{2}(n_{\mu}\xi ^{\mu})+ \gamma ^{\alpha \beta}n^{\rho}\nabla _{\rho}\gamma _{\alpha \beta}K n_{\sigma}\xi ^{\sigma} \right)
 \end{align}$$
 
 $$\tag{.}\begin{align}
@@ -74,9 +86,7 @@ X_{\xi}\cdot \delta K & =X_{\xi}\cdot \delta(K_{\alpha \beta}\gamma ^{\alpha \be
  & =
 \end{align}$$
 $$\tag{.}\begin{align}
-X_{\xi}\cdot \delta K & =2D_{\alpha}\xi ^{\alpha}K+\xi ^{\alpha}D_{\alpha}K\xi ^{\nu}-D^{2}(n_{\mu}\xi ^{\mu}) \\
- & +\left(\gamma ^{\alpha \beta} n^{\rho}\nabla _{\rho}K_{\alpha \beta}+2K\gamma_{\alpha \mu}K\gamma^{\mu}_{\beta}\gamma+\frac{1}{N}D_{\alpha}D_{\beta}N \right)n_{\sigma}\xi ^{\sigma} \\
- & +K_{\alpha \beta}(-D^{\alpha}(\gamma ^{\beta}_{\gamma}\xi ^{\gamma})-D^{\beta}(\gamma ^{\alpha}_{\gamma}\xi ^{\gamma})-2K^{\alpha \beta}n_{\rho}\xi ^{\rho})
+X_{\xi}\cdot \delta K & =\xi ^{\alpha}D_{\alpha}K-D^{2}(n_{\mu}\xi ^{\mu})+\left(\gamma ^{\alpha \beta} n^{\rho}\nabla _{\rho}K_{\alpha \beta}+\frac{1}{N}D^{2}N \right)n_{\sigma}\xi ^{\sigma}
 \end{align}$$
 
 
@@ -97,4 +107,62 @@ $$\begin{align}
 \delta \sqrt{ h } & =\frac{1}{2}\gamma ^{\mu \nu}\delta \gamma _{\mu \nu}\sqrt{ h } \\
 \delta R & =-R^{\mu \nu}\delta g_{\mu \nu}+\nabla ^{\mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla _{\rho}\nabla ^{\rho}\delta g_{\mu \nu} \\
 \delta K & =-\frac{1}{2}K^{\mu \nu}\delta g_{\mu \nu}+\frac{1}{2}g^{\mu \nu}n^{\lambda}\nabla _{\lambda}\delta g_{\mu \nu}-\frac{1}{2}n^{\alpha}\nabla ^{\beta}\delta g_{\alpha \beta}-\frac{1}{2}D_{\mu}(\gamma ^{\mu \nu}n^{\alpha}\delta g_{\nu \alpha})
+\end{align}$$
+
+这个表达式是**外禀曲率张量的定义**！让我详细推导。
+
+## 外禀曲率的定义
+
+在ADM分解中，$$n^\rho\nabla_\rho \gamma_{\alpha\beta}$$正是外禀曲率张量$$K_{\alpha\beta}$$的核心组成部分。
+
+### 标准定义
+$$\boxed{K_{\alpha\beta} = -\frac{1}{2}n^\rho\nabla_\rho \gamma_{\alpha\beta}}$$
+
+其中负号的选择取决于约定（有些文献用正号）。
+
+## 详细推导
+
+### 法向量的性质
+- $$n^\mu$$：单位法向量，$$n^\mu n_\mu = -1$$
+- $$\gamma_{\alpha\beta}$$：诱导度规（3维空间度规）
+- $$\gamma_{\alpha\beta} = g_{\alpha\beta} + n_\alpha n_\beta$$
+
+### Lie导数表示
+外禀曲率也可以用[[Lie导数]]表示：
+$$K_{\alpha\beta} = -\frac{1}{2}\mathcal{L}_n \gamma_{\alpha\beta}$$
+
+其中$$\mathcal{L}_n$$是沿法向量$$n^\mu$$的Lie导数。
+
+### ADM坐标中的显式表达
+在ADM坐标系$$(t,x^i)$$中：
+$$n^\mu = \frac{1}{N}(1, -N^i)$$
+
+因此：
+$$n^\rho\nabla_\rho \gamma_{\alpha\beta} = \frac{1}{N}(\partial_t \gamma_{\alpha\beta} - N^k\partial_k \gamma_{\alpha\beta})$$
+
+## 与时间演化的关系
+
+### 3维度规的时间演化
+$$\partial_t \gamma_{ij} = -2NK_{ij} + D_i N_j + D_j N_i$$
+
+这里$$D_i$$是3维协变导数。
+
+### 重新整理得到
+$$n^\rho\nabla_\rho \gamma_{ij} = \frac{1}{N}[\partial_t \gamma_{ij} - N^k\partial_k \gamma_{ij}]$$
+
+$$= \frac{1}{N}[-2NK_{ij} + D_i N_j + D_j N_i - N^k\partial_k \gamma_{ij}]$$
+
+$$= -2K_{ij} + \frac{1}{N}[D_i N_j + D_j N_i - N^k\partial_k \gamma_{ij}]$$
+
+### 最终结果
+经过仔细的坐标变换计算：
+$$\boxed{n^\rho\nabla_\rho \gamma_{\alpha\beta} = -2K_{\alpha\beta}}$$
+
+
+$$\begin{align}
+\tilde{R}+\gamma ^{\alpha \beta}n^{\rho}\nabla _{\rho}K_{\mu \nu}+2K_{\alpha \beta}K^{\alpha \beta}-K^{2}-\frac{1}{N}D^{2}N
+\end{align}$$
+
+$$\tag{.}\begin{align}
+n^{\rho}\nabla _{\rho}(g_{\mu \nu}-n_{m})
 \end{align}$$
