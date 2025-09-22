@@ -95,3 +95,34 @@ S_{\Lambda_{0}}[\phi ^{+}+\phi ^{-}] & =S_{\mathrm{free}}[\phi ^{+}]+S_{\mathrm{
 S_{\mathrm{free}}[\phi] & =\int \mathrm{d}^{D}x \frac{1}{2}\left((\nabla \phi)^{2}+m_{0}^{2}\phi ^{2}\right) \\
 S_{\mathrm{int}}[\phi ^{+},\phi ^{-}] & =\int \mathrm{d}^{D}x \frac{\lambda_{0}}{4!}(\phi ^{+}+\phi ^{-})^{4}
 \end{align}$$
+
+$$\begin{align}
+e^{-\Delta S_{\Lambda}(\phi ^{-})} & =\int \mathcal{D}\phi ^{+}e^{-S_{\mathrm{free}}[\phi ^{+}]-S_{\mathrm{int}}[\phi ^{+},\phi ^{-}]}
+\end{align}$$
+
+and after doing this path integral, we have the effective action
+
+$$\begin{align}
+S_{\Lambda}[\phi ^{-}] & =\int \mathrm{d}^{D}x\left(\frac{1}{2}Z'_{\phi}(\nabla \phi ^{-})^{2}+\frac{1}{2}m'^{2}(\phi ^{-})^{2}+\frac{\lambda'}{4!}(\phi ^{-})^{4}+\dots\right)
+\end{align}$$
+
+and rescale
+
+$$\begin{align}
+x\to x' & =\frac{\Lambda}{\Lambda_{0}}x \\
+p\to p' & =\frac{\Lambda_{0}}{\Lambda}p \\
+\phi'(x') & =\sqrt{ Z_{\phi} }\phi ^{-}(x) \\
+Z_{\phi} & =\left( \frac{\Lambda_{0}}{\Lambda} \right)^{D-2}Z_{\phi}'
+\end{align}$$
+
+then the final action is
+
+$$\begin{align}
+S_{\Lambda}[\phi'] & =\int \mathrm{d}^{D}x'\left(\frac{1}{2}(\nabla'\phi')^{2}+\frac{1}{2}m^{2}(\Lambda)\phi'^{2}+\frac{\lambda _{4}(\Lambda)}{4!}\phi'^{4}+\dots\right)
+\end{align}$$
+
+this whole procedure is called the renormalization group. as a summarize
+
+1. integrate out the high energy degrees of freedom
+2. fix spacetime integral by rescaling the spacetime variables
+3. fix the normalization of fields
