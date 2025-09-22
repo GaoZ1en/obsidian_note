@@ -141,4 +141,39 @@ $$\begin{align}
 \Lambda\frac{\mathrm{d}Z(\Lambda,g_{a}(\Lambda))}{\mathrm{d}\Lambda} & =\left( \Lambda \frac{\partial}{\partial \Lambda}+\beta _{a} \frac{\partial}{\partial g_{a}} \right)Z(\Lambda,g_{a}(\Lambda))=0
 \end{align}$$
 
-where we substituted $\displaystyle{\beta _{a}=\Lambda \frac{\partial g_{a}}{\partial \Lambda}}$, called the $\displaystyle{\beta}$-function of the coupling $\displaystyle{g_{a}}$
+where we substituted $\displaystyle{\beta _{a}=\Lambda \frac{\partial g_{a}}{\partial \Lambda}}$, called the $\displaystyle{\beta}$-function of the coupling $\displaystyle{g_{a}}$. to figure out what happens for correlators we introduce sources
+
+$$\begin{align}
+G^{(n)}(\Lambda_{0};x_{1},\dots,x_{n}) & =\prod ^{n}_{j=1}\left(\frac{\delta}{i\delta J^{-}(x_{j})}\right)Z[J^{-};\Lambda_{0},g_{0,a}]\Big|_{J^{-}=0} \\
+ & =\prod ^{n}_{j=1}\left(\frac{\delta}{i\delta J^{-}(x_{j})}\right)\int \mathcal{D}\phi ^{-}e^{-S_{\Lambda}[\phi ^{-}]-\int \mathrm{d}^{D}xJ^{-}\phi ^{-}}\Big|_{J^{-}=0} \\
+ & =\prod ^{n}_{j=1}\left(\frac{\delta}{i\delta J^{-}(x_{j})}\right)\int \mathcal{D}\phi ^{-}e^{-S_{\Lambda}[\phi ^{-}]-\int \mathrm{d}^{D}xJ^{-} Z_{\phi}^{-1/2}\phi'\left( \frac{\Lambda}{\Lambda_{0}}x \right)}\Big|_{J^{-}=0} \\
+ & =\int \mathcal{D}\phi ^{-}e^{-S_{\Lambda}[\phi ^{-}]}Z_{\phi}^{-n/2}\prod ^{n}_{j=1}\phi'\left(\frac{\Lambda}{\Lambda_{0}}x_{j}\right) \\
+ & =Z_{\phi}^{-n/2}G^{(n)}(\Lambda;x_{1}',\dots x_{n}')
+\end{align}$$
+
+then take a differential of $\displaystyle{\Lambda}$, we have the Callan-Symanzik equation
+
+$$\begin{align}
+\left( \Lambda \frac{\partial}{\partial \Lambda}+\beta _{a} \frac{\partial}{\partial g_{a}}+n\gamma _{\phi} \right)G^{(n)}\left(\Lambda;\frac{x_{1}}{\Lambda},\dots,\frac{x_{n}}{\Lambda}\right) & =0
+\end{align}$$
+
+where
+
+$$\begin{align}
+\gamma _{\phi} & =-\frac{1}{2}\Lambda \frac{\partial \log Z_{\phi}(\Lambda)}{\partial \Lambda}
+\end{align}$$
+
+is a sort of $\displaystyle{\beta}$-function for the field rescaling, also called the anomalous dimension.
+
+# computing RG flows
+
+$$\begin{align}
+S_{\Lambda}[\phi ^{-}] & =\int _{|p|<\Lambda} \frac{\mathrm{d}^{D}p}{(2\pi)^{D}} \frac{1}{2}\tilde{\phi}^{-}(-p)(p^{2}+m_{0}^{2})\tilde{\phi}^{-}(p) \\
+ & =\int _{|p'|<\Lambda_{0}} \frac{\mathrm{d}^{D}p'}{(2\pi)^{D}} \frac{1}{2}\tilde{\phi}^{-}(-p)\left( \left( \frac{\Lambda}{\Lambda_{0}} \right)^{2}p'^{2}+m_{0}^{2} \right)\tilde{\phi}^{-}(p) \\
+S_{\Lambda}[\phi'] & =\int _{|p'|<\Lambda_{0}} \frac{\mathrm{d}^{D}p'}{(2\pi)^{D}} \frac{1}{2}\tilde{\phi}'(-p')\left(p'^{2}+\left( \frac{\Lambda_{0}}{\Lambda} \right)^{2}m_{0}^{2}\right)\tilde{\phi}'(p') \\
+\implies \beta _{m^{2}} & =\Lambda \frac{\mathrm{d}m^{2}(\Lambda)}{\mathrm{d}\Lambda} \\
+ & =-2m^{2}(\Lambda)
+\end{align}$$
+
+this means $\displaystyle{m^{2}}$ increases in the IR as we lower the cutoff. and $\displaystyle{m^{2}=0}$ this whole procedure has no effect. we say that this is a fixed point. this particular one is called the Gaussian fixed point.
+
