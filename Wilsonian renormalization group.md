@@ -177,3 +177,16 @@ S_{\Lambda}[\phi'] & =\int _{|p'|<\Lambda_{0}} \frac{\mathrm{d}^{D}p'}{(2\pi)^{D
 
 this means $\displaystyle{m^{2}}$ increases in the IR as we lower the cutoff. and $\displaystyle{m^{2}=0}$ this whole procedure has no effect. we say that this is a fixed point. this particular one is called the Gaussian fixed point.
 
+add interactions. consider a generic interactions with $\displaystyle{n}$ powers of the field and $\displaystyle{r}$ derivatives
+
+$$\begin{align}
+\int \prod ^{n}_{j=1} \left(\frac{\mathrm{d}^{D}p_{j}}{(2\pi)^{D}} p_{j}^{r_{j}}\tilde{\phi}(p_{j})\right)\lambda _{0,n,j}\delta ^{(D)}\left(\sum ^{n}_{i=1}p_{i}\right)
+\end{align}$$
+
+such that $\displaystyle{\sum _{i}r_{i}=r}$. then
+
+$$\begin{align}
+\int \prod ^{n}_{j=1} \left(\frac{\mathrm{d}^{D}p_{j}}{(2\pi)^{D}} p_{j}^{r_{j}}\tilde{\phi}(p_{j})\right)\lambda _{0,n,j}\delta ^{(D)}\left(\sum ^{n}_{i=1}p_{i}\right) & =\int \prod ^{n}_{j=1}\left(\left(\frac{\Lambda}{\Lambda_{0}}\right)^{D}\frac{\mathrm{d}^{D}p_{j}'}{(2\pi)^{D}}\left(\frac{\Lambda}{\Lambda_{0}}\right)^{r_{j}}p'^{r_{j}}_{j}\left(\frac{\Lambda}{\Lambda_{0}}\right)^{(D+2)/2}\tilde{\phi}(p_{j}')\right)\lambda _{0,n,j}\delta ^{(D)}\left(\frac{\Lambda}{\Lambda_{0}}\sum ^{n}_{i=1}p_{i}'\right) \\
+ & =\int \prod ^{n}_{j=1}\left(\frac{\mathrm{d}^{D}p_{j}'}{(2\pi)^{D}}p'^{r_{j}}_{j}\tilde{\phi}(p_{j}')\right)\lambda _{0,n,j}(\Lambda)\delta ^{(D)}\left(\sum ^{n}_{i=1}p_{i}'\right) \\
+\lambda _{0,n,j}(\Lambda) & =\left( \frac{\Lambda}{\Lambda_{0}} \right)^{nD+r+n(D+2)/2}
+\end{align}$$
