@@ -186,7 +186,16 @@ $$\begin{align}
 such that $\displaystyle{\sum _{i}r_{i}=r}$. then
 
 $$\begin{align}
-\int \prod ^{n}_{j=1} \left(\frac{\mathrm{d}^{D}p_{j}}{(2\pi)^{D}} p_{j}^{r_{j}}\tilde{\phi}(p_{j})\right)\lambda _{0,n,j}\delta ^{(D)}\left(\sum ^{n}_{i=1}p_{i}\right) & =\int \prod ^{n}_{j=1}\left(\left(\frac{\Lambda}{\Lambda_{0}}\right)^{D}\frac{\mathrm{d}^{D}p_{j}'}{(2\pi)^{D}}\left(\frac{\Lambda}{\Lambda_{0}}\right)^{r_{j}}p'^{r_{j}}_{j}\left(\frac{\Lambda}{\Lambda_{0}}\right)^{(D+2)/2}\tilde{\phi}(p_{j}')\right)\lambda _{0,n,j}\delta ^{(D)}\left(\frac{\Lambda}{\Lambda_{0}}\sum ^{n}_{i=1}p_{i}'\right) \\
- & =\int \prod ^{n}_{j=1}\left(\frac{\mathrm{d}^{D}p_{j}'}{(2\pi)^{D}}p'^{r_{j}}_{j}\tilde{\phi}(p_{j}')\right)\lambda _{0,n,j}(\Lambda)\delta ^{(D)}\left(\sum ^{n}_{i=1}p_{i}'\right) \\
-\lambda _{0,n,j}(\Lambda) & =\left( \frac{\Lambda}{\Lambda_{0}} \right)^{nD+r+n(D+2)/2}
+\int \prod ^{n}_{j=1} \left(\frac{\mathrm{d}^{D}p_{j}}{(2\pi)^{D}} p_{j}^{r_{j}}\tilde{\phi}(p_{j})\right)\lambda _{0,n,j}\delta ^{(D)}\left(\sum ^{n}_{i=1}p_{i}\right) & =\int \prod ^{n}_{j=1}\left(\left(\frac{\Lambda}{\Lambda_{0}}\right)^{D}\frac{\mathrm{d}^{D}p_{j}'}{(2\pi)^{D}}\left(\frac{\Lambda}{\Lambda_{0}}\right)^{r_{j}}p'^{r_{j}}_{j}\left(\frac{\Lambda_{0}}{\Lambda}\right)^{(D+2)/2}\tilde{\phi}(p_{j}')\right)\lambda _{0,n,j}\left(\frac{\Lambda_{0}}{\Lambda}\right)^{D}\delta ^{(D)}\left(\sum ^{n}_{i=1}p_{i}'\right) \\
+ & =\int \prod ^{n}_{j=1}\left(\frac{\mathrm{d}^{D}p_{j}'}{(2\pi)^{D}}p'^{r_{j}}_{j}\tilde{\phi}(p_{j}')\right)\lambda _{n,j}(\Lambda)\delta ^{(D)}\left(\sum ^{n}_{i=1}p_{i}'\right) \\
+\implies\lambda _{n,j}(\Lambda) & =\left( \frac{\Lambda}{\Lambda_{0}} \right)^{(n/2-1)D+r-n}\lambda _{0,n,r} \\
+\implies \beta _{\lambda _{n,r}} & =-\left( \left( 1-\frac{n}{2} \right)D+n-r \right)\lambda _{n,r}
 \end{align}$$
+
+![[Attachments/Pasted image 20250922152737.png]]
+
+we can see that for high dimensions all interactions shrink in the IR. this suggests they are not very important. we call couplings which shrink in the IR irrelevant.
+
+for low dimensions, we can still add enough derivatives to make any interaction irrelevant, but there is an infinite number of interactions which grow in the IR. we cannot get rid of these interactions using RG so we call them relevant.
+
+and for 3- and 4-dimensional cases we have few relevant interactions, 

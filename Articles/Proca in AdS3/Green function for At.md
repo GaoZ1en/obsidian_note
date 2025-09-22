@@ -220,3 +220,9 @@ R^{(0)}_{>}(r) & =(1+r^{2})^{-(\mu+2)/2}{}_{2}F_{1}\left(\frac{1}{2}\mu,\frac{1}
 \end{align}$$
 
 i have no idea. 
+
+---
+
+$$\begin{align}
+(1+r^{2})\partial _{r}^{2}y_{m}+\frac{1+5r^{2}}{r}\partial _{r}y_{m}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)y_{m} & =0
+\end{align}$$
