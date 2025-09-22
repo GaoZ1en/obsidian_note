@@ -126,3 +126,19 @@ this whole procedure is called the renormalization group. as a summarize
 1. integrate out the high energy degrees of freedom
 2. fix spacetime integral by rescaling the spacetime variables
 3. fix the normalization of fields
+
+renormalization group generates a flow in the space of theory, and two theory on the same flowline are actually the same theory
+
+$$\begin{align}
+Z(\Lambda_{0},g_{0,a}) & =Z(\Lambda,g_{a}(\Lambda))
+\end{align}$$
+
+# Callan-Symanzik equations
+
+what we wrote above is the integral version of the RG flow, and we can also write differential equations that describe the same process. take a differential
+
+$$\begin{align}
+\Lambda\frac{\mathrm{d}Z(\Lambda,g_{a}(\Lambda))}{\mathrm{d}\Lambda} & =\left( \Lambda \frac{\partial}{\partial \Lambda}+\beta _{a} \frac{\partial}{\partial g_{a}} \right)Z(\Lambda,g_{a}(\Lambda))=0
+\end{align}$$
+
+where we substituted $\displaystyle{\beta _{a}=\Lambda \frac{\partial g_{a}}{\partial \Lambda}}$, called the $\displaystyle{\beta}$-function of the coupling $\displaystyle{g_{a}}$

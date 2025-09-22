@@ -17896,7 +17896,7 @@
       },
       {
         "date": "2025-09-01",
-        "filePath": "Articles/Proca in AdS3/integral kernel.md",
+        "filePath": "Articles/Proca in AdS3/Green function for At.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -18058,7 +18058,7 @@
       },
       {
         "date": "2025-09-02",
-        "filePath": "Articles/Proca in AdS3/integral kernel.md",
+        "filePath": "Articles/Proca in AdS3/Green function for At.md",
         "wordCountStart": 562,
         "charCountStart": 2464,
         "changes": [
@@ -18380,7 +18380,7 @@
       },
       {
         "date": "2025-09-03",
-        "filePath": "Articles/Proca in AdS3/integral kernel.md",
+        "filePath": "Articles/Proca in AdS3/Green function for At.md",
         "wordCountStart": 674,
         "charCountStart": 2976,
         "changes": [
@@ -18456,7 +18456,7 @@
       },
       {
         "date": "2025-09-06",
-        "filePath": "Articles/Proca in AdS3/integral kernel.md",
+        "filePath": "Articles/Proca in AdS3/Green function for At.md",
         "wordCountStart": 671,
         "charCountStart": 2974,
         "changes": [],
@@ -18805,7 +18805,7 @@
       },
       {
         "date": "2025-09-07",
-        "filePath": "Articles/Proca in AdS3/integral kernel.md",
+        "filePath": "Articles/Proca in AdS3/Green function for At.md",
         "wordCountStart": 671,
         "charCountStart": 2974,
         "changes": [],
@@ -18877,7 +18877,7 @@
       },
       {
         "date": "2025-09-09",
-        "filePath": "Articles/Proca in AdS3/integral kernel.md",
+        "filePath": "Articles/Proca in AdS3/Green function for At.md",
         "wordCountStart": 671,
         "charCountStart": 2974,
         "changes": [
@@ -21172,7 +21172,7 @@
       },
       {
         "date": "2025-09-18",
-        "filePath": "Articles/Proca in AdS3/integral kernel.md",
+        "filePath": "Articles/Proca in AdS3/Green function for At.md",
         "wordCountStart": 671,
         "charCountStart": 2974,
         "changes": [
@@ -21509,7 +21509,7 @@
       },
       {
         "date": "2025-09-19",
-        "filePath": "Untitled.md",
+        "filePath": "Wilsonian renormalization group.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -21541,7 +21541,7 @@
       },
       {
         "date": "2025-09-20",
-        "filePath": "Articles/Proca in AdS3/integral kernel.md",
+        "filePath": "Articles/Proca in AdS3/Green function for At.md",
         "wordCountStart": 1818,
         "charCountStart": 7791,
         "changes": [
@@ -22105,9 +22105,478 @@
             "timeKey": "11:35",
             "w": -9,
             "c": -55
+          },
+          {
+            "timeKey": "17:15",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "17:20",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "17:25",
+            "w": -5,
+            "c": -25
+          },
+          {
+            "timeKey": "17:30",
+            "w": 133,
+            "c": 644
+          },
+          {
+            "timeKey": "17:35",
+            "w": 94,
+            "c": 414
+          },
+          {
+            "timeKey": "17:40",
+            "w": 109,
+            "c": 521
+          },
+          {
+            "timeKey": "17:45",
+            "w": -419,
+            "c": -1931
+          },
+          {
+            "timeKey": "17:50",
+            "w": -366,
+            "c": -1836
+          },
+          {
+            "timeKey": "17:55",
+            "w": -14,
+            "c": -89
+          },
+          {
+            "timeKey": "18:00",
+            "w": 36,
+            "c": 162
+          },
+          {
+            "timeKey": "18:05",
+            "w": 175,
+            "c": 827
+          },
+          {
+            "timeKey": "18:10",
+            "w": -4,
+            "c": -24
+          },
+          {
+            "timeKey": "18:15",
+            "w": 53,
+            "c": 248
+          },
+          {
+            "timeKey": "18:20",
+            "w": 8,
+            "c": 60
+          },
+          {
+            "timeKey": "18:25",
+            "w": 57,
+            "c": 265
+          },
+          {
+            "timeKey": "18:30",
+            "w": -23,
+            "c": -112
+          },
+          {
+            "timeKey": "19:00",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "19:20",
+            "w": -89,
+            "c": -449
+          },
+          {
+            "timeKey": "19:55",
+            "w": 30,
+            "c": 159
+          },
+          {
+            "timeKey": "20:00",
+            "w": 14,
+            "c": 79
           }
         ],
         "id": 703
+      },
+      {
+        "date": "2025-09-21",
+        "filePath": "Articles/Proca in AdS3/Green function for At.md",
+        "wordCountStart": 1392,
+        "charCountStart": 5972,
+        "changes": [
+          {
+            "timeKey": "18:35",
+            "w": 10,
+            "c": 25
+          },
+          {
+            "timeKey": "18:40",
+            "w": 180,
+            "c": 1568
+          },
+          {
+            "timeKey": "18:50",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "20:10",
+            "w": 4,
+            "c": 24
+          },
+          {
+            "timeKey": "20:15",
+            "w": 192,
+            "c": 764
+          },
+          {
+            "timeKey": "20:20",
+            "w": 0,
+            "c": 4
+          },
+          {
+            "timeKey": "20:25",
+            "w": 119,
+            "c": 465
+          },
+          {
+            "timeKey": "20:30",
+            "w": 102,
+            "c": 371
+          },
+          {
+            "timeKey": "20:35",
+            "w": -11,
+            "c": -46
+          },
+          {
+            "timeKey": "20:45",
+            "w": -9,
+            "c": -19
+          },
+          {
+            "timeKey": "20:50",
+            "w": 64,
+            "c": 247
+          },
+          {
+            "timeKey": "21:00",
+            "w": 16,
+            "c": 50
+          },
+          {
+            "timeKey": "21:15",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "21:25",
+            "w": 4,
+            "c": 17
+          }
+        ],
+        "id": 704
+      },
+      {
+        "date": "2025-09-21",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [],
+        "id": 705
+      },
+      {
+        "date": "2025-09-21",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 11530,
+        "charCountStart": 45889,
+        "changes": [],
+        "id": 706
+      },
+      {
+        "date": "2025-09-21",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from free QFT to interacting QFT.md",
+        "wordCountStart": 1948,
+        "charCountStart": 10763,
+        "changes": [
+          {
+            "timeKey": "00:00",
+            "w": 50,
+            "c": 274
+          },
+          {
+            "timeKey": "00:05",
+            "w": 1,
+            "c": 8
+          },
+          {
+            "timeKey": "00:10",
+            "w": 7,
+            "c": 32
+          },
+          {
+            "timeKey": "00:15",
+            "w": 56,
+            "c": 278
+          },
+          {
+            "timeKey": "22:50",
+            "w": 8,
+            "c": 88
+          },
+          {
+            "timeKey": "22:55",
+            "w": 21,
+            "c": 161
+          },
+          {
+            "timeKey": "23:15",
+            "w": 7,
+            "c": 56
+          },
+          {
+            "timeKey": "23:20",
+            "w": 10,
+            "c": 54
+          },
+          {
+            "timeKey": "23:25",
+            "w": 110,
+            "c": 461
+          },
+          {
+            "timeKey": "23:30",
+            "w": 30,
+            "c": 168
+          },
+          {
+            "timeKey": "23:35",
+            "w": 4,
+            "c": 25
+          },
+          {
+            "timeKey": "23:40",
+            "w": 117,
+            "c": 616
+          },
+          {
+            "timeKey": "23:45",
+            "w": 82,
+            "c": 393
+          },
+          {
+            "timeKey": "23:50",
+            "w": 86,
+            "c": 384
+          },
+          {
+            "timeKey": "23:55",
+            "w": 33,
+            "c": 151
+          }
+        ],
+        "id": 707
+      },
+      {
+        "date": "2025-09-21",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from NRQM to RQM.md",
+        "wordCountStart": 1849,
+        "charCountStart": 10496,
+        "changes": [],
+        "id": 708
+      },
+      {
+        "date": "2025-09-21",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from RQM to RQFT.md",
+        "wordCountStart": 2904,
+        "charCountStart": 15884,
+        "changes": [],
+        "id": 709
+      },
+      {
+        "date": "2025-09-21",
+        "filePath": "TODO.md",
+        "wordCountStart": 6154,
+        "charCountStart": 30841,
+        "changes": [
+          {
+            "timeKey": "23:30",
+            "w": 17,
+            "c": 113
+          }
+        ],
+        "id": 710
+      },
+      {
+        "date": "2025-09-22",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from RQM to RQFT.md",
+        "wordCountStart": 2904,
+        "charCountStart": 15884,
+        "changes": [],
+        "id": 711
+      },
+      {
+        "date": "2025-09-22",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from free QFT to interacting QFT.md",
+        "wordCountStart": 2570,
+        "charCountStart": 13912,
+        "changes": [
+          {
+            "timeKey": "00:15",
+            "w": 37,
+            "c": 197
+          },
+          {
+            "timeKey": "00:20",
+            "w": 136,
+            "c": 617
+          },
+          {
+            "timeKey": "00:25",
+            "w": 55,
+            "c": 245
+          },
+          {
+            "timeKey": "00:30",
+            "w": 85,
+            "c": 312
+          },
+          {
+            "timeKey": "00:35",
+            "w": 107,
+            "c": 402
+          },
+          {
+            "timeKey": "00:40",
+            "w": 17,
+            "c": 129
+          }
+        ],
+        "id": 712
+      },
+      {
+        "date": "2025-09-22",
+        "filePath": "Wilsonian renormalization group.md",
+        "wordCountStart": 221,
+        "charCountStart": 1006,
+        "changes": [
+          {
+            "timeKey": "09:00",
+            "w": -152,
+            "c": -647
+          },
+          {
+            "timeKey": "09:05",
+            "w": 48,
+            "c": 279
+          },
+          {
+            "timeKey": "09:10",
+            "w": 146,
+            "c": 697
+          },
+          {
+            "timeKey": "09:15",
+            "w": 18,
+            "c": 137
+          },
+          {
+            "timeKey": "09:20",
+            "w": 100,
+            "c": 555
+          },
+          {
+            "timeKey": "09:25",
+            "w": 17,
+            "c": 106
+          },
+          {
+            "timeKey": "09:30",
+            "w": 93,
+            "c": 579
+          },
+          {
+            "timeKey": "09:35",
+            "w": 39,
+            "c": 231
+          },
+          {
+            "timeKey": "09:50",
+            "w": 50,
+            "c": 314
+          },
+          {
+            "timeKey": "09:55",
+            "w": 191,
+            "c": 895
+          },
+          {
+            "timeKey": "10:00",
+            "w": 34,
+            "c": 195
+          },
+          {
+            "timeKey": "10:05",
+            "w": 174,
+            "c": 942
+          }
+        ],
+        "id": 713
+      },
+      {
+        "date": "2025-09-22",
+        "filePath": "Articles/Proca in AdS3/Green function for At.md",
+        "wordCountStart": 2063,
+        "charCountStart": 9443,
+        "changes": [
+          {
+            "timeKey": "10:25",
+            "w": 136,
+            "c": 562
+          },
+          {
+            "timeKey": "10:30",
+            "w": -10,
+            "c": -3
+          },
+          {
+            "timeKey": "10:35",
+            "w": 22,
+            "c": 97
+          },
+          {
+            "timeKey": "10:40",
+            "w": 196,
+            "c": 777
+          },
+          {
+            "timeKey": "10:45",
+            "w": 43,
+            "c": 162
+          },
+          {
+            "timeKey": "10:50",
+            "w": -39,
+            "c": -153
+          },
+          {
+            "timeKey": "10:55",
+            "w": 158,
+            "c": 639
+          }
+        ],
+        "id": 714
       }
     ],
     "daysWithCompletedGoal": [
@@ -22174,7 +22643,8 @@
       "2025-09-17",
       "2025-09-18",
       "2025-09-20",
-      "2025-09-21"
+      "2025-09-21",
+      "2025-09-22"
     ]
   }
 }
