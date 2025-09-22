@@ -291,5 +291,15 @@ $$\begin{align}
  & = \braket{ 0|\Lambda(\infty)\Lambda ^{-1}(\infty)a_{k'_{1}}\Lambda(\infty)\dots \Lambda ^{-1}(\infty)a_{k'_{j}}\Lambda(\infty)\Lambda ^{-1}(-\infty)a^{\dagger}_{k_{1}}\Lambda(-\infty)\dots \Lambda ^{-1}(-\infty)a^{\dagger}_{k_{i}}\Lambda(-\infty)\Lambda ^{-1}(-\infty)|0 } \\
  & = {}^{-}\braket{ 0|T(a_{k'_{1}}(\infty)\dots a_{k'_{j}}(\infty)a^{\dagger}_{k_{1}}(-\infty)\dots a^{\dagger}_{k _{i}}(-\infty))|0 } ^{+} \\
  & = {}^{-}\braket{ 0|T((a_{k'_{1}}(\infty)-a_{k'_{1}}(-\infty))\dots(a_{k'_{j}}(\infty)-a_{k'_{j}}(-\infty))(a^{\dagger}_{k_{1}}(-\infty)-a^{\dagger}_{k_{1}}(\infty))\dots(a^{\dagger}_{k _{i}}(-\infty)-a^{\dagger}_{k _{i}}(\infty)))|0 }^{+} \\
- & =i^{i+j}
+ & = {}^{-}\bra{0}|T\left(-i \int \mathrm{d}^{4}x'_{1}\mathcal{k}'_{1}(x)(\nabla_{1} '^{2}+m^{2})\phi(x'_{1})\dots -i \int \mathrm{d}^{4}x'_{j}k'_{j}(x)(\nabla'^{2}_{j}+m^{2})\phi(x'_{j})\right. \\
+ & \left.-i \int \mathrm{d}^{4}x_{1}\bar{k}_{1}(x)(\nabla _{1}^{2}+m^{2})\phi(x_{1})\dots-i \int \mathrm{d}^{4}x_{i}\bar{k}_{i}(x)(\nabla _{i}^{2}+m^{2})\phi(x_{i})\right)\ket{0} ^{+} \\
+ & =(-i)^{i+j}\int \prod ^{j}_{n'=1} \mathrm{d}^{4}x_{n'}k(x_{n'})(\nabla ^{2}_{n'}+m^{2})\int\prod ^{i}_{n=1}\mathrm{d}^{4}x_{n}\bar{k}(x_{n})(\nabla ^{2}_{n}+m^{2}){}^{-}\braket{ 0|T\left( \prod ^{j}_{n'=1}\phi(x_{n'})\prod ^{i}_{n=1}\phi(x_{n}) \right)|0 } ^{+}
 \end{align}$$
+
+that is the LSZ reduction formula, which gives the following properties of S-matrix
+
+1. permutation symmetry
+2. momentum-energy conservation
+3. unitary
+
+there are still some inconvenients here...
