@@ -245,6 +245,13 @@ here we keep the leading order, and subtitute $\displaystyle{g_{4}=\lambda_{0},g
 then we consider the 1-loop vertex
 
 $$\begin{align}
--\lambda_{0}+\frac{\lambda_{0}^{2}}{2}\int _{\Lambda}^{\Lambda_{0}} \frac{\mathrm{d}^{4}k}{(2\pi)^{4}}\left( \frac{1}{k^{2}+m_{0}^{2}} \frac{1}{(k+p_{1}+p_{2})^{2}+m_{0}^{2}}+\frac{1}{k^{2}+m_{0}^{2}} \frac{1}{(k+p_{1}+p_{3})^{2}+m_{0}^{2}}+ \frac{1}{k^{2}+m_{0}^{2}} \frac{1}{(k+p_{1}+p_{4})^{2}+m_{0}^{2}}\right)
+(\text{ 1-loop vertex })= & -\lambda_{0}+\frac{\lambda_{0}^{2}}{2}\int _{\Lambda}^{\Lambda_{0}} \frac{\mathrm{d}^{4}k}{(2\pi)^{4}}\left( \frac{1}{k^{2}+m_{0}^{2}} \frac{1}{(k+p_{1}+p_{2})^{2}+m_{0}^{2}}+\frac{1}{k^{2}+m_{0}^{2}} \frac{1}{(k+p_{1}+p_{3})^{2}+m_{0}^{2}}+ \frac{1}{k^{2}+m_{0}^{2}} \frac{1}{(k+p_{1}+p_{4})^{2}+m_{0}^{2}}\right) \\
+\approx & -\lambda_{0}+\frac{3\lambda_{0}^{2}}{2}\int _{\Lambda}^{\Lambda_{0}} \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{1}{(k^{2}+m_{0}^{2})^{2}} \\
+= & -\lambda_{0}+\frac{3\lambda_{0}^{2}}{32\pi ^{2}}\int _{\Lambda ^{2}}^{\Lambda ^{2}_{0}} \mathrm{d}x \frac{x}{(x+m_{0}^{2})^{2}} \\
+= & -\lambda_{0}+\frac{3\lambda_{0}^{2}}{32\pi ^{2}}\left(-\frac{m_{0}^{2}}{\Lambda ^{2}+m_{0}^{2}}+\frac{m_{0}^{2}}{\Lambda_{0}^{2}+m_{0}^{2}}+\log \frac{\Lambda_{0}^{2}+m_{0}^{2}}{\Lambda ^{2}+m_{0}^{2}}\right) \\
+\implies \lambda' & =\lambda_{0}\left(1-\frac{3\lambda_{0}}{32\pi ^{2}}\left(\frac{m_{0}^{2}}{\Lambda_{0}^{2}+m_{0}^{2}}-\frac{m_{0}^{2}}{\Lambda ^{2}+m_{0}^{2}}+\log \frac{\Lambda_{0}^{2}+m_{0}^{2}}{\Lambda ^{2}+m_{0}^{2}}\right)\right) \\
+\implies \beta _{4} & =\Lambda \frac{\mathrm{d}\lambda'}{\mathrm{d}\Lambda} \\
+ & =\frac{3\lambda_{0}^{2}}{16\pi ^{2}}\frac{\Lambda ^{4}}{(\Lambda ^{2}+m_{0}^{2})^{2}} \\
+ & =\frac{3g_{4}^{2}}{16\pi ^{2}(1+g_{2})^{2}}
 \end{align}$$
 
