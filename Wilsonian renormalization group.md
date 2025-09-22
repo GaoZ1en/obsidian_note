@@ -53,3 +53,45 @@ and cutoff $\displaystyle{|k _{\text{E}}|<\Lambda_{0}}$, where $\displaystyle{k 
 
 # integrating out UV modes
 
+let us consider the case when our momenta of interest $\displaystyle{p}$ are far below the cutoff $\displaystyle{|p|\ll \Lambda _{0}}$, and there must be a cutoff $\displaystyle{\Lambda}$ that, despite being smaller than $\displaystyle{\Lambda_{0}}$ it still satisfies $\displaystyle{|p|\ll \Lambda}$. with this in mind, we split our field into two components: the useless UV modes $\displaystyle{\phi ^{+}}$, that
+
+$$\begin{align}
+\tilde{\phi}^{+}(p) & =\begin{cases}
+0 & |p|>\Lambda_{0} \\
+\tilde{\phi}(p) & \Lambda< |p|<\Lambda_{0} \\
+0 & |p|<\Lambda
+\end{cases}
+\end{align}$$
+
+and useful IR modes $\displaystyle{\phi ^{-}}$, that
+
+$$\begin{align}
+\tilde{\phi}^{-}(p) & =\begin{cases}
+0 & |p|>\Lambda \\
+\tilde{\phi}(p) & |p|<\Lambda
+\end{cases}
+\end{align}$$
+
+and also split the sources in the same way to get $\displaystyle{J^{\pm}}$, since $\displaystyle{\phi ^{+}}$ cannot appear in the external correlators we set $\displaystyle{J^{+}=0}$. the generating functional
+
+$$\begin{align}
+Z & =\int \mathcal{D}\phi ^{-}\mathcal{D}\phi ^{+}e^{-S_{\Lambda_{0}}[\phi ^{+}+\phi ^{-}]-\int J^{-}\phi ^{-}}
+\end{align}$$
+
+to do this we define the low-energy effective action as
+
+$$\begin{align}
+e^{-S_{\Lambda}[\phi ^{-}]} & =\int \mathcal{D}\phi ^{+}e^{-S_{\Lambda_{0}}[\phi ^{+}+\phi ^{-}]}
+\end{align}$$
+
+in momentum space
+
+$$\begin{align}
+S[\tilde{\phi}] & =\int \frac{\mathrm{d}^{D}\phi}{(2\pi)^{D}} \frac{1}{2}\tilde{\phi}(-p)(p^{2}+m_{0}^{2})\tilde{\phi}(p)+\frac{\lambda_{0}}{4!}\int \prod ^{4}_{i=1}\left( \frac{d^{D}p_{i}}{(2\pi)^{D}}\tilde{\phi}(p_{i}) \right)\delta ^{(D)}\left(\sum ^{4}_{i=1}p_{i}\right)
+\end{align}$$
+
+$$\begin{align}
+S_{\Lambda_{0}}[\phi ^{+}+\phi ^{-}] & =S_{\mathrm{free}}[\phi ^{+}]+S_{\mathrm{free}}[\phi ^{-}]+S_{\mathrm{int}}[\phi ^{+},\phi ^{-}] \\
+S_{\mathrm{free}}[\phi] & =\int \mathrm{d}^{D}x \frac{1}{2}\left((\nabla \phi)^{2}+m_{0}^{2}\phi ^{2}\right) \\
+S_{\mathrm{int}}[\phi ^{+},\phi ^{-}] & =\int \mathrm{d}^{D}x \frac{\lambda_{0}}{4!}(\phi ^{+}+\phi ^{-})^{4}
+\end{align}$$
