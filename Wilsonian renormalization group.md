@@ -198,4 +198,18 @@ we can see that for high dimensions all interactions shrink in the IR. this sugg
 
 for low dimensions, we can still add enough derivatives to make any interaction irrelevant, but there is an infinite number of interactions which grow in the IR. we cannot get rid of these interactions using RG so we call them relevant.
 
-and for 3- and 4-dimensional cases we have few relevant interactions, 
+and for 3- and 4-dimensional cases we have few relevant interactions, infinitely many irrelevant interactions, and few which appear to not change under RG, which we call marginal relevant. and this is why we spent so long with $\displaystyle{\phi ^{4}}$ theory. for 4 dimensions it is actually the most generic theory at low energies.
+
+at an arbitrary fixed point RG flow does not do anything so the $\displaystyle{\beta}$-function vanish. around this point, whey will generically be non-zero but we can linearize them and them diagonalize in the space of all couplings to arrive at
+
+$$\begin{align}
+\beta _{a} & =-\Delta _{a}g_{a}
+\end{align}$$
+
+in the vicinity of this other fixed point we can still talk of marginal, relevant and irrelevant couplings classifying if deforming in that direction will bring us away or back towards our fixed point of origin. more explicitly
+
+1. $\displaystyle{\beta _{a}>0\iff \Delta _{a}<0}$: irrelevant deformation
+2. $\displaystyle{\beta _{a}<0\iff \Delta _{a}>0}$: relevant deformation
+3. $\displaystyle{\beta _{a}=0\iff \Delta _{a}=0}$: marginal deformation
+
+quite importantly, it is fairly generic that there will be an infinite number of irrelevant operators and only a handful of marginal or relevant operators.
