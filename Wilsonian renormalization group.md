@@ -192,6 +192,8 @@ $$\begin{align}
 \implies \beta _{\lambda _{n,r}} & =-\left( \left( 1-\frac{n}{2} \right)D+n-r \right)\lambda _{n,r}
 \end{align}$$
 
+here $\displaystyle{[\lambda _{n,r}]=\left( 1-\frac{n}{2} \right)D+n-r}$ is the mass dimension of coupling constant...
+
 ![[Attachments/Pasted image 20250922152737.png]]
 
 we can see that for high dimensions all interactions shrink in the IR. this suggests they are not very important. we call couplings which shrink in the IR irrelevant.
@@ -213,3 +215,36 @@ in the vicinity of this other fixed point we can still talk of marginal, relevan
 3. $\displaystyle{\beta _{a}=0\iff \Delta _{a}=0}$: marginal deformation
 
 quite importantly, it is fairly generic that there will be an infinite number of irrelevant operators and only a handful of marginal or relevant operators.
+
+the difference between the scaling dimension $\displaystyle{\Delta _{a}}$ and the ordinary mass dimension is often called the anomalous dimension. 
+
+# $\displaystyle{\phi ^{4}}$ theory
+
+in this part we will compute $\displaystyle{\beta}$ function for $\displaystyle{m^{2}(\Lambda)}$ and $\displaystyle{\lambda(\Lambda)}$.
+
+$$\begin{align}
+(\text{ tadpole diagram }) & =-\frac{\lambda_{0}}{2}\int _{\Lambda}^{\Lambda_{0}} \frac{\mathrm{d}^{4}k}{(2\pi)^{4}} \frac{1}{k^{2}+m_{0}^{2}} \\
+ & =-\frac{\lambda_{0}\mathrm{Vol}(S^{3})}{2(2\pi)^{4}}\int _{\Lambda}^{\Lambda_{0}}\mathrm{d}k \frac{k^{3}}{k^{2}+m_{0}^{2}} \\
+ & =-\frac{\lambda_{0} \pi ^{2}}{2(2\pi)^{4}} \int _{\Lambda}^{\Lambda_{0}} \mathrm{d}k^{2} \left( 1-\frac{m_{0}^{2}}{k^{2}+m_{0}^{2}} \right) \\
+ & =-\frac{\lambda_{0}}{32\pi ^{2}}\left(\Lambda ^{2}_{0}-\Lambda ^{2}-m_{0}^{2}\ln \frac{\Lambda_{0}^{2}+m_{0}^{2}}{\Lambda ^{2}+m_{0}^{2}}\right) \\
+\implies m'^{2}(\Lambda) & =m_{0}^{2}+\frac{\lambda_{0}}{32\pi ^{2}}\left(\Lambda_{0}^{2}-\Lambda ^{2}+m_{0}^{2}\ln \frac{\Lambda ^{2}+m_{0}^{2}}{\Lambda_{0}^{2}+m_{0}^{2}}\right)
+\end{align}$$
+
+knowing that $\displaystyle{g_{2}=\Lambda ^{-2}m'^{2}}$
+
+$$\begin{align}
+\beta _{2} & =\Lambda \frac{\partial g_{2}}{\partial \Lambda} \\
+ & =-2\Lambda ^{-2}m_{0}^{2}+\frac{\lambda_{0}}{32\pi ^{2}}\Lambda\frac{\partial}{\partial \Lambda}\left(\frac{\Lambda_{0}^{2}}{\Lambda ^{2}}-1+\frac{m_{0}^{2}}{\Lambda ^{2}}\ln \frac{\Lambda ^{2}+m_{0}^{2}}{\Lambda_{0}^{2}+m_{0}^{2}}\right) \\
+ & =-2\Lambda ^{-2}m_{0}^{2}+\frac{\lambda_{0}}{16\pi ^{2}}\left(\frac{m_{0}^{2}}{\Lambda ^{2}+m_{0}^{2}}-\frac{\Lambda_{0}^{2}}{\Lambda ^{2}}-\frac{m_{0}^{2}}{\Lambda ^{2}}\ln \frac{\Lambda ^{2}+m_{0}^{2}}{\Lambda_{0}^{2}+m_{0}^{2}}\right) \\
+ & =-2g_{2}-\frac{\lambda_{0}}{16\pi ^{2}} \frac{1}{1+\Lambda ^{-2}m_{0}^{2}} \\
+ & \approx-2g_{2}- \frac{1}{16\pi ^{2}} \frac{g_{4}}{1+g_{2}}
+\end{align}$$
+
+here we keep the leading order, and subtitute $\displaystyle{g_{4}=\lambda_{0},g_{2}=\Lambda ^{-2}m_{0}^{2}}$. 
+
+then we consider the 1-loop vertex
+
+$$\begin{align}
+-\lambda_{0}+\frac{\lambda_{0}^{2}}{2}\int _{\Lambda}^{\Lambda_{0}} \frac{\mathrm{d}^{4}k}{(2\pi)^{4}}\left( \frac{1}{k^{2}+m_{0}^{2}} \frac{1}{(k+p_{1}+p_{2})^{2}+m_{0}^{2}}+\frac{1}{k^{2}+m_{0}^{2}} \frac{1}{(k+p_{1}+p_{3})^{2}+m_{0}^{2}}+ \frac{1}{k^{2}+m_{0}^{2}} \frac{1}{(k+p_{1}+p_{4})^{2}+m_{0}^{2}}\right)
+\end{align}$$
+
