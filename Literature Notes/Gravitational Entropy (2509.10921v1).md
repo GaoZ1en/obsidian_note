@@ -161,17 +161,17 @@ $$\begin{align}
  & =-f(r)\mathrm{d}v^{2}+2\mathrm{d}v\mathrm{d}r+r^{2}(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\phi ^{2})
 \end{align}$$
 
-the spacetime is static and so $\displaystyle{\frac{\partial}{\partial v}=k^{a}\frac{\partial}{\partial x^{a}}}$ is a Killing vector. the surface gravity on the horizon $\displaystyle{\kappa}$ is defined as
+the spacetime is static and so $\displaystyle{\frac{\partial}{\partial v}=\xi^{\mu}\frac{\partial}{\partial x^{\mu}}}$ is a Killing vector. the surface gravity on the horizon $\displaystyle{\kappa}$ is defined as
 
 $$\begin{align}
-k^{a}\nabla _{a}k^{b} & =\kappa k^{b} \\
-\implies\kappa ^{2} & =-\frac{1}{2}(\nabla _{a}k _{b})(\nabla ^{a}k^{b})
+\xi^{a}\nabla _{a}\xi^{b} & =\kappa \xi^{b} \\
+\implies\kappa ^{2} & =-\frac{1}{2}(\nabla _{a}\xi _{b})(\nabla ^{a}\xi^{b})
 \end{align}$$
 
 then
 
 $$\tag{.}\begin{align}
-\nabla _{a}k _{b} & =\partial _{a}k _{b}-\Gamma ^{c}_{~ab}k _{c} \\
+\nabla _{a}\xi_{b} & =\partial _{a}\xi_{b}-\Gamma ^{c}_{~ab}\xi_{c} \\
  & =-\delta _{a}^{r}\delta ^{t}_{b}f'(r)+\frac{1}{2}(\delta ^{r}_{a}\delta ^{t}_{b}+\delta ^{t}_{a}\delta ^{r}_{b})f'(r) \\
  & =\frac{1}{2}\left(\delta ^{t}_{a}\delta ^{r}_{b}-\delta ^{r}_{a}\delta ^{t}_{b}\right)f'(r) \\
 \kappa ^{2} & =-\frac{1}{8}g^{ac}g^{cd}\left(\delta ^{t}_{a}\delta ^{r}_{b}-\delta ^{r}_{a}\delta ^{t}_{b}\right)(\delta ^{t}_{c}\delta ^{r}_{d}-\delta ^{r}_{c}\delta ^{t}_{d})[f'(r)]^{2} \\
@@ -194,8 +194,44 @@ $$\begin{align}
 \Gamma ^{\phi}_{~\theta \phi} & =\frac{\cos \theta}{\sin \theta}
 \end{align}$$
 
-then the Noether charge corresponding to $\displaystyle{k^{\mu}}$ is
+the $\displaystyle{\Sigma}$ intersects the horizon at some time $\displaystyle{t}$ and $\displaystyle{r=2GM}$. then the Noether charge corresponding to $\displaystyle{\xi^{\mu}}$ is
 
 $$\begin{align}
-
+H_{\xi} & =\int _{\Sigma}J_{\xi} \\
+ & =\lim_{ r \to \infty } \frac{1}{16\pi}\int _{\partial \Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{t}n^{r}f'(r) \\
+ & =\frac{M}{8\pi}\int _{0}^{\pi}\mathrm{d}\theta \int _{0}^{2\pi}\mathrm{d}\phi \sin \theta=\frac{M}{2}
 \end{align}$$
+
+here we adopt
+
+$$\begin{align}
+\tau ^{\mu} & =\left(\frac{1}{\sqrt{ f(r) }},0,0,0\right) \\
+n^{\nu} & =\left(\frac{1}{\sqrt{ f(r) }},\sqrt{ f(r) },0,0\right)
+\end{align}$$
+
+this result is agree with Wald's
+
+$$\begin{align}
+H_{\xi} & =\frac{\kappa}{2\pi}S \\
+\implies S & =\frac{\pi M}{\kappa}=4\pi M^{2}
+\end{align}$$
+
+# Kerr case
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi\right)^{2}
+\end{align}$$
+
+here $\displaystyle{a=\frac{J}{M},\Sigma=r^{2}+a^{2}\cos ^{2}\theta, \Delta=r^{2}-2Mr+a^{2}}$. define the Kerr analog of the advanced null coordinate/Eddington-Finkelstein coordinate
+
+$$\begin{align}
+\mathrm{d}v & =\mathrm{d}t+\frac{r^{2}+a^{2}}{\Delta}\mathrm{d}r \\
+\mathrm{d}\varphi & =\mathrm{d}\phi+\frac{a}{\Delta}\mathrm{d}r
+\end{align}$$
+
+in these coordinates, the Kerr metric can be organized into
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-\left( 1-\frac{2Mr}{\Sigma} \right)(\mathrm{d}v-a\sin ^{2}\theta \mathrm{d}\varphi)^{2}+2(\mathrm{d}v-a\sin ^{2}\mathrm{d}\varphi)(\mathrm{d}r-a\sin ^{2}\theta \mathrm{d}\varphi)+\Sigma(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\varphi ^{2})
+\end{align}$$
+
