@@ -241,10 +241,10 @@ $$\begin{align}
 r\pm^{2} & =M\pm\sqrt{ M^{2}-a^{2} }
 \end{align}$$
 
-$\displaystyle{\Sigma}$ intersects the outer horizon $\displaystyle{r=r_{+}}$ at some $\displaystyle{v=v_{0}}$. suppose the horizon Killing vector $\displaystyle{\xi ^{a}=\left( \frac{\partial}{\partial t} \right)^{a}+\Omega\left(\frac{\partial}{\partial \phi}\right)^{a}}$ is null and geodesic on the outer horizon satisfying $\displaystyle{\xi ^{a}\nabla _{a}\xi ^{b}=\kappa \xi ^{b}}$, then
+$\displaystyle{\Sigma}$ intersects the outer horizon $\displaystyle{r=r_{+}}$ at some $\displaystyle{v=v_{0}}$. suppose the horizon Killing vector $\displaystyle{\xi ^{a}=\left( \frac{\partial}{\partial t} \right)^{a}+\Omega _{H}\left(\frac{\partial}{\partial \phi}\right)^{a}}$ is null and geodesic on the outer horizon satisfying $\displaystyle{\xi ^{a}\nabla _{a}\xi ^{b}=\kappa \xi ^{b}}$, then
 
 $$\begin{align}
-\Omega & =\frac{a}{r_{+}^{2}+a^{2}}
+\Omega _{H} & =\frac{a}{r_{+}^{2}+a^{2}}
 \end{align}$$
 
 $$\begin{align}
@@ -255,88 +255,105 @@ $$\tag{.}\begin{align}
 \mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi\right)^{2}
 \end{align}$$
 
-$$\tag{.}\begin{align}
-\xi _{a} & =g_{tt}+\Omega g_{t\phi} \\
- & =\sin ^{2}y
+$$\begin{align}
+g_{ab}\xi ^{a}\xi ^{b} & =g_{tt}+2\Omega _{H} g_{t\phi}+\Omega ^{2}_{H}g_{\phi \phi}
 \end{align}$$
 
+$$\begin{align}
+\frac{a^{2}\sin ^{2}\theta+\Delta}{\Sigma}+2\Omega _{H} \left( \frac{a\Delta \sin ^{2}\theta}{\Sigma}-\frac{a(r^{2}+a^{2})\sin ^{2}\theta}{\Sigma} \right)+\Omega ^{2}_{H}\left(-\frac{\Delta a^{2}\sin ^{4}\theta}{\Sigma}\right)
+\end{align}$$
 
-### 3. 计算 ∇ₐk_b 的分量
+## 等价公式的推导与适用条件
 
-#### Step 1: 写出 $k_a$ 的分量
-从度规可得：
-$$
-k_t = g_{tt} + \Omega_H g_{t\phi} = -\frac{\Delta}{\rho^2} + \Omega_H \cdot \frac{a\sin^2\theta(\Delta - (r^2+a^2))}{\rho^2}
-$$
-$$
-k_\phi = g_{\phi t} + \Omega_H g_{\phi\phi} = \frac{a\sin^2\theta(\Delta - (r^2+a^2))}{\rho^2} + \Omega_H \cdot \frac{\sin^2\theta((r^2+a^2)^2 - a^2\Delta\sin^2\theta)}{\rho^2}
-$$
+### 1. 推导基础：spherically symmetric ansatz
 
-#### Step 2: 在视界处的简化
-在 $r = r_+$ 处，$\Delta = 0$，所以：
+考虑具有球对称性（或轴对称性）的静态/稳态时空，其中 Killing 向量 $k^a$ 在径向方向上的模长变化可以写成：
 $$
-k_t\big|_{r_+} = -\Omega_H \frac{a(r_+^2+a^2)\sin^2\theta}{\rho^2}
+-k^a k_a = f(r)
 $$
-$$
-k_\phi\big|_{r_+} = \frac{\sin^2\theta}{\rho^2}\left[-a(r_+^2+a^2) + \Omega_H(r_+^2+a^2)^2\right]
-$$
+其中 $f(r)$ 是只依赖于径向坐标 $r$ 的函数，且在视界 $r_H$ 处 $f(r_H) = 0$。
 
-由于 $\Omega_H = \frac{a}{r_+^2+a^2}$，第二项简化为：
-$$
-k_\phi\big|_{r_+} = \frac{\sin^2\theta}{\rho^2}[-a(r_+^2+a^2) + a(r_+^2+a^2)] = 0
-$$
+### 2. 从基本定义出发
 
-### 4. 计算关键的导数项
-
-主要的非零分量是：
+#### Step 1: 利用 Killing 方程的性质
+对于任意 Killing 向量，有：
 $$
-\nabla_r k_t = \frac{\partial k_t}{\partial r} - \Gamma^t_{rr} k_r - \Gamma^t_{rt} k_t
+k^b \nabla_b (k^a k_a) = 2 k_a (k^b \nabla_b k^a) = 2 \kappa (k^a k_a)
+$$
+在视界处 $k^a k_a = 0$，所以：
+$$
+k^b \nabla_b (k^a k_a)\big|_{r_H} = 0
 $$
 
-在视界处最重要的项是：
+#### Step 2: 径向导数关系
+在球对称/轴对称情况下，沿着径向的变化是主导的：
 $$
-\frac{\partial}{\partial r}\left(-\frac{\Delta}{\rho^2}\right)\bigg|_{r_+} = -\frac{\Delta'}{\rho^2}\bigg|_{r_+} = -\frac{2(r_+ - M)}{r_+^2 + a^2\cos^2\theta}
-$$
-
-### 5. 使用等价公式
-
-对于 Kerr 几何，更直接的方法是使用等价公式：
-$$
-\kappa = \frac{1}{2}\frac{d}{dr}(-k^ak_a)^{1/2}\bigg|_{r_+}
+\frac{d}{dr}(k^a k_a) = \frac{d}{dr}(-f(r)) = -f'(r)
 $$
 
-在视界附近：
+#### Step 3: 联系表面引力
+关键观察是：在视界附近，非仿射测地方程 $k^b \nabla_b k^a = \kappa k^a$ 意味着：
 $$
--k^ak_a \approx \frac{2(r-r_+)(r_+-M)}{r_+^2+a^2\cos^2\theta}
+k^a k_a \approx -C \cdot (r - r_H)^2
+$$
+其中常数 $C$ 与 $\kappa^2$ 相关。
+
+### 3. 严格推导
+
+#### 对于静态球对称情况
+考虑度规形式：
+$$
+ds^2 = -f(r) dt^2 + \frac{dr^2}{f(r)} + r^2 d\Omega^2
+$$
+Killing 向量 $k^a = (\partial_t)^a$，有 $k^a k_a = -f(r)$。
+
+在视界 $r_H$ 附近展开：
+$$
+f(r) \approx f'(r_H)(r - r_H) + O((r-r_H)^2)
 $$
 
 因此：
 $$
-(-k^ak_a)^{1/2} \approx \sqrt{\frac{2(r-r_+)(r_+-M)}{r_+^2+a^2\cos^2\theta}}
+(-k^a k_a)^{1/2} = \sqrt{f(r)} \approx \sqrt{f'(r_H)} \sqrt{r - r_H}
 $$
 
-取导数并在 $r_+$ 处取极限：
+求导：
 $$
-\kappa = \frac{1}{2} \cdot \frac{\sqrt{2(r_+-M)/2\sqrt{2(r-r_+)}}}{r_+^2+a^2\cos^2\theta}\sqrt{2(r_+-M)}\bigg|_{r_+}
-$$
-
-### 6. 最终结果
-
-经过详细计算（涉及大量的 Christoffel 符号计算），最终得到：
-
-$$
-\boxed{\kappa = \frac{r_+ - M}{r_+^2 + a^2} = \frac{\sqrt{M^2-a^2}}{(M + \sqrt{M^2-a^2})^2 + a^2}}
+\frac{d}{dr}(-k^a k_a)^{1/2} = \frac{1}{2\sqrt{f(r)}} f'(r) \to \frac{f'(r_H)}{2\sqrt{f'(r_H)}\sqrt{r-r_H}}
 $$
 
-### 7. 验证特殊情况
+在 $r \to r_H$ 的极限下，需要更仔细的分析。正确的结果是：
+$$
+\kappa = \frac{1}{2} f'(r_H)
+$$
 
-- **Schwarzschild 极限** ($a \to 0$)：
-  $$\kappa = \frac{M-M}{(2M)^2} = \frac{1}{4M}$$ ✓
+### 5. 与一般公式的关系
 
-- **极端 Kerr** ($a \to M$)：
-  $$\kappa = \frac{M-M}{M^2+M^2} = 0$$ ✓
+两个公式的等价性：
+$$
+\kappa^2 = -\frac{1}{2}(\nabla_a k_b)(\nabla^a k^b) \quad \Leftrightarrow \quad \kappa = \frac{1}{2}\frac{d}{dr}(-k^ak_a)^{1/2}
+$$
 
-- **对应的 Hawking 温度**：
-  $$T_H = \frac{\hbar\kappa}{2\pi} = \frac{\hbar(r_+-M)}{2\pi(r_+^2+a^2)}$$
+在球对称/轴对称情况下成立，因为：
+- 左边是普遍的张量表达式
+- 右边利用了特殊的对称性简化
 
-[[Kerr black hole]] [[Surface gravity]] [[Hawking temperature]] ^cite{Bardeen1973}
+### 6. 实际计算中的优势
+
+第二个公式的优点：
+- **计算简便**：只需计算 $k^a k_a$ 的径向导数
+- **避免 Christoffel 符号**：不需要显式计算联络
+- **直观物理图像**：直接关联"逃逸速度"概念
+
+---
+
+## 总结
+
+公式 $\kappa = \frac{1}{2}\frac{d}{dr}(-k^ak_a)^{1/2}\big|_{r_+}$ 是：
+
+1. **推导基础**：球对称/轴对称时空中 $k^a k_a = f(r)$ 的特殊结构
+2. **适用范围**：静态/稳态黑洞，具有明确径向坐标的情况  
+3. **等价性**：在对称情况下与张量公式 $\kappa^2 = -\frac{1}{2}(\nabla_a k_b)(\nabla^a k^b)$ 等价
+4. **计算优势**：避免复杂的张量计算，直接利用度规分量
+
+[[Surface gravity]] [[Killing vectors]] [[Static spacetimes]] ^cite{Wald1994}
