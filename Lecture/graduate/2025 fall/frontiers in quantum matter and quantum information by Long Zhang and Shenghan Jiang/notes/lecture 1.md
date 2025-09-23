@@ -48,9 +48,10 @@ f_{i}f_{j} & =-f_{j}f_{i} \\
 f_{i}^{\dagger}f_{j} & =-\delta _{ij}f_{j}f^{\dagger}_{i}
 \end{align}$$
 
-this can be realized by $\displaystyle{N}$ 4 qubits as
+this can be realized by $\displaystyle{N}$ 4 qubits as (Jordon-Wigner transformation)
 
 $$\begin{align}
-f_{i} & =\frac{1}{2}(\sigma _{x}+i\sigma _{y})\otimes I\otimes \dots \\
-f_{j}^{\dagger} & =\bigotimes^{j-1}_{i=1}\sigma _{z}\otimes \frac{1}{2}(\sigma _{x}+i\sigma _{y})\bigotimes^{N-j}_{k=1}I
+f_{i} & =\bigotimes^{i-1}_{n=1}I\otimes \frac{1}{2}(\sigma _{x}+i\sigma _{y})\bigotimes^{N-i}_{n'=1}I \\
+f_{j}^{\dagger} & =\bigotimes^{j-1}_{n=1}\sigma _{z}\otimes \frac{1}{2}(\sigma _{x}+i\sigma _{y})\bigotimes^{N-j}_{n'=1}I
 \end{align}$$
+

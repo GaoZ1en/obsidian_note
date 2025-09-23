@@ -22833,6 +22833,86 @@
             "timeKey": "15:15",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "15:30",
+            "w": 26,
+            "c": 112
+          },
+          {
+            "timeKey": "16:05",
+            "w": 7,
+            "c": 26
+          },
+          {
+            "timeKey": "16:10",
+            "w": 42,
+            "c": 258
+          },
+          {
+            "timeKey": "16:15",
+            "w": 28,
+            "c": 104
+          },
+          {
+            "timeKey": "16:20",
+            "w": 22,
+            "c": 90
+          },
+          {
+            "timeKey": "16:25",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "17:00",
+            "w": 78,
+            "c": 414
+          },
+          {
+            "timeKey": "17:05",
+            "w": 19,
+            "c": 132
+          },
+          {
+            "timeKey": "17:10",
+            "w": 133,
+            "c": 638
+          },
+          {
+            "timeKey": "17:15",
+            "w": 116,
+            "c": 486
+          },
+          {
+            "timeKey": "17:20",
+            "w": -15,
+            "c": -12
+          },
+          {
+            "timeKey": "17:25",
+            "w": -127,
+            "c": -604
+          },
+          {
+            "timeKey": "17:30",
+            "w": 39,
+            "c": 154
+          },
+          {
+            "timeKey": "17:35",
+            "w": -30,
+            "c": -159
+          },
+          {
+            "timeKey": "17:40",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "17:45",
+            "w": -48,
+            "c": -212
           }
         ],
         "id": 715
@@ -22921,6 +23001,124 @@
         "charCountStart": 11686,
         "changes": [],
         "id": 718
+      },
+      {
+        "date": "2025-09-23",
+        "filePath": "Lecture/graduate/2025 fall/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:15",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 719
+      },
+      {
+        "date": "2025-09-23",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 1.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:25",
+            "w": 14,
+            "c": 105
+          },
+          {
+            "timeKey": "15:30",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "15:35",
+            "w": 20,
+            "c": 143
+          },
+          {
+            "timeKey": "15:40",
+            "w": 7,
+            "c": 54
+          },
+          {
+            "timeKey": "15:45",
+            "w": 2,
+            "c": 15
+          },
+          {
+            "timeKey": "15:50",
+            "w": 36,
+            "c": 221
+          },
+          {
+            "timeKey": "15:55",
+            "w": 12,
+            "c": 90
+          },
+          {
+            "timeKey": "16:00",
+            "w": 24,
+            "c": 168
+          },
+          {
+            "timeKey": "16:10",
+            "w": 3,
+            "c": 26
+          },
+          {
+            "timeKey": "16:15",
+            "w": 13,
+            "c": 105
+          },
+          {
+            "timeKey": "16:20",
+            "w": 3,
+            "c": 14
+          },
+          {
+            "timeKey": "16:25",
+            "w": 11,
+            "c": 70
+          },
+          {
+            "timeKey": "16:30",
+            "w": 19,
+            "c": 141
+          },
+          {
+            "timeKey": "16:50",
+            "w": 3,
+            "c": 26
+          },
+          {
+            "timeKey": "17:05",
+            "w": 0,
+            "c": 3
+          },
+          {
+            "timeKey": "17:10",
+            "w": 49,
+            "c": 274
+          },
+          {
+            "timeKey": "17:15",
+            "w": 35,
+            "c": 160
+          },
+          {
+            "timeKey": "17:25",
+            "w": 57,
+            "c": 278
+          },
+          {
+            "timeKey": "17:30",
+            "w": 11,
+            "c": 67
+          }
+        ],
+        "id": 720
       }
     ],
     "daysWithCompletedGoal": [

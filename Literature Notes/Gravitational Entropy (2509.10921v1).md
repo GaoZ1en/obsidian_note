@@ -161,22 +161,14 @@ $$\begin{align}
  & =-f(r)\mathrm{d}v^{2}+2\mathrm{d}v\mathrm{d}r+r^{2}(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\phi ^{2})
 \end{align}$$
 
-the spacetime is static and so $\displaystyle{\frac{\partial}{\partial v}=k^{a} \frac{\partial}{\partial x^{a}}}$ is a Killing vector. the surface gravity on the horizon $\displaystyle{\kappa}$ is defined as
+the spacetime is static and so $\displaystyle{\frac{\partial}{\partial v}=k^{a}\frac{\partial}{\partial x^{a}}}$ is a Killing vector. the surface gravity on the horizon $\displaystyle{\kappa}$ is defined as
 
 $$\begin{align}
 k^{a}\nabla _{a}k^{b} & =\kappa k^{b} \\
-\implies \kappa & =
+\implies \kappa & = \frac{1}{4M}
 \end{align}$$
 
-$$\tag{.}\begin{align}
-k^{a}\nabla _{a}k^{b} & =k^{a}\partial _{a}k^{b}+k^{a}\Gamma ^{b}_{~ac}k^{c}
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\frac{\partial}{\partial v} & =\frac{\partial}{\partial t}+f(r) \frac{\partial}{\partial r}
-\end{align}$$
-
-nonzero Christoffel symbols are
+here we use the nonzero Christoffel symbols are
 
 $$\begin{align}
 \Gamma ^{t}_{~tr} & = \frac{f'(r)}{2f(r)} \\
@@ -189,3 +181,4 @@ $$\begin{align}
 \Gamma ^{\phi}_{~r\phi} & =\frac{1}{r} \\
 \Gamma ^{\phi}_{~\theta \phi} & =\frac{\cos \theta}{\sin \theta}
 \end{align}$$
+
