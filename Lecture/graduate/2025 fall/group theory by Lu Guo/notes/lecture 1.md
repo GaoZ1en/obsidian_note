@@ -28,3 +28,29 @@ a\cdot e & =a\cdot(a^{-1}\cdot a) \\
 4. if $\displaystyle{x\cdot c=y\cdot c}$, then $\displaystyle{x=y}$
 similar as left cancellation
 
+---
+
+set. equivalence $\displaystyle{\sim}$ is a binary operation on a set $\displaystyle{S}$, that satisfies
+
+1. $\displaystyle{\forall a\in S, a\sim a}$
+2. if $\displaystyle{a\sim b}$, then $\displaystyle{b\sim a}$
+3. if $\displaystyle{a\sim b, b\sim c}$, then $\displaystyle{a\sim c}$
+
+we can define equivalence class of $\displaystyle{a\in S}$ in $\displaystyle{(S,\sim)}$ by
+
+$$\begin{align}
+[a] & =\left\{x\sim S|x\sim a\right\}
+\end{align}$$
+
+then $\displaystyle{(S,\sim)}$ can be divide into several equivalence classes $\displaystyle{\left\{A_{i}\right\}}$, where we have $\displaystyle{A_{i}\cap A_{j}=\emptyset}$. 
+
+map...
+
+semigroup $\displaystyle{(S,\cdot)}$ only requires associative law and close law.
+
+![[Attachments/Pasted image 20250923095723.png]]
+
+a ring $\displaystyle{(R,+,\cdot)}$ satisfies
+
+1. $\displaystyle{(R,+)}$ is an Abelian group
+2. $\displaystyle{(R,\cdot)}$ is a semigroup

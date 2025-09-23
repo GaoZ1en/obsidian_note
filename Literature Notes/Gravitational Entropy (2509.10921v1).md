@@ -20,19 +20,19 @@ S & =\int _{M} L[\phi] \\
 consider the following symmetry transformation
 
 $$\begin{align}
-X_{\xi} & =\int _{M}\mathrm{d}^{d}x \mathcal{L}_{\xi}\phi \frac{\delta}{\delta \phi}
+X_{\xi} & =\int _{M}\mathrm{d}^{d}x \delta _{\xi}\phi \frac{\delta}{\delta \phi}
 \end{align}$$
 
 act on the action
 
 $$\begin{align}
-X_{\xi}\cdot \delta S & =\int _{M} \mathrm{d}(\xi \cdot L)
+X_{\xi}\cdot \delta S & =\int _{M} \mathrm{d}\mu _{\xi}
 \end{align}$$
 
 then the corresponding Noether charge reads
 
 $$\begin{align}
-H_{\xi} & =\int _{\Sigma}X_{\xi}\cdot \theta-\xi \cdot L
+H_{\xi} & =\int _{\Sigma}(X_{\xi}\cdot \theta-\mu _{\xi})
 \end{align}$$
 
 which satisfies
@@ -44,8 +44,27 @@ X_{\xi}\cdot \omega & =-\delta H_{\xi}
 notice that
 
 $$\begin{align}
-\omega|_{\Sigma _{f}-\Sigma _{i}} & =\delta \int _{\Sigma _{f}-\Sigma _{i}}\theta \\
+\omega|_{\Sigma _{f}}-\omega|_{\Sigma _{i}} & =\delta \int _{\Sigma _{f}-\Sigma _{i}}\theta \\
  & =\delta \int _{M}\mathrm{d}\theta \\
  & =\delta\left(\delta S-\int _{M}E_{\phi}\delta \phi\right) \\
  & \approx 0
+\end{align}$$
+
+here $\displaystyle{\approx}$ means evaluation on the prephase space $\displaystyle{\tilde{\mathcal{P}}}$. and
+
+$$\begin{align}
+H_{\xi}|_{\Sigma _{f}}-H_{\xi}|_{\Sigma _{i}} & =\int _{\Sigma _{f}-\Sigma _{i}}X_{\xi}\cdot \theta-\mu _{\xi} \\
+ & =-\int _{M}E(X_{\xi}\cdot \delta \phi ) \\
+ & \approx0
+\end{align}$$
+
+then $\displaystyle{J_{\xi}=X_{\xi}\cdot \theta-\mu _{\xi}}$ is closed. by Poincare lemma, we can write
+
+$$\begin{align}
+J_{\xi} & =\mathrm{d}F_{\xi}[\phi]
+\end{align}$$
+
+$$\begin{align}
+\delta J_{\xi} & =\delta(X_{\xi}\cdot \theta)-\delta \mu _{\xi} \\
+ & =\mathcal{L}_{X_{\xi}}\theta-X_{\xi}\cdot \delta\theta-
 \end{align}$$
