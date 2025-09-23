@@ -41,3 +41,11 @@ $$\begin{align}
 X_{\xi}\cdot \omega & =-\delta H_{\xi}
 \end{align}$$
 
+notice that
+
+$$\begin{align}
+\omega|_{\Sigma _{f}-\Sigma _{i}} & =\delta \int _{\Sigma _{f}-\Sigma _{i}}\theta \\
+ & =\delta \int _{M}\mathrm{d}\theta \\
+ & =\delta\left(\delta S-\int _{M}E_{\phi}\delta \phi\right) \\
+ & \approx 0
+\end{align}$$
