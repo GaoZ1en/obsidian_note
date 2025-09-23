@@ -54,3 +54,13 @@ a ring $\displaystyle{(R,+,\cdot)}$ satisfies
 
 1. $\displaystyle{(R,+)}$ is an Abelian group
 2. $\displaystyle{(R,\cdot)}$ is a semigroup
+3. left distributive law: $\displaystyle{\forall a,b,c\in R, (a+b)\cdot c=a\cdot c+b\cdot c}$
+
+we have
+
+1. right distributive law: $\displaystyle{\forall a,b,c\in R,a\cdot(b+c)=a\cdot b+a\cdot c}$
+
+a field $\displaystyle{(F,+,\cdot)}$ is an Abelian unitary ring and satisfies
+
+1. $\displaystyle{\forall a\in F,a\neq0,\exists a^{-1}\in F, a^{-1}\cdot a=1}$
+

@@ -29,7 +29,7 @@ $$\begin{align}
 X_{\xi}\cdot \delta S & =\int _{M} \mathrm{d}\mu _{\xi}
 \end{align}$$
 
-then the corresponding Noether charge reads
+we point out that if $\displaystyle{\xi}$ is a Killing vector, we have $\displaystyle{\mu _{\xi}=\xi \cdot L}$.then the corresponding Noether charge reads
 
 $$\begin{align}
 H_{\xi} & =\int _{\Sigma}(X_{\xi}\cdot \theta-\mu _{\xi})
@@ -61,10 +61,34 @@ H_{\xi}|_{\Sigma _{f}}-H_{\xi}|_{\Sigma _{i}} & =\int _{\Sigma _{f}-\Sigma _{i}}
 then $\displaystyle{J_{\xi}=X_{\xi}\cdot \theta-\mu _{\xi}}$ is closed. by Poincare lemma, we can write
 
 $$\begin{align}
-J_{\xi} & =\mathrm{d}F_{\xi}[\phi]
+J_{\xi} & =\mathrm{d}F_{\xi}
 \end{align}$$
 
 $$\begin{align}
 \delta J_{\xi} & =\delta(X_{\xi}\cdot \theta)-\delta \mu _{\xi} \\
- & =\mathcal{L}_{X_{\xi}}\theta-X_{\xi}\cdot \delta\theta-
+ & =\mathcal{L}_{X_{\xi}}\theta-X_{\xi}\cdot \delta\theta-\delta \mu _{\xi} \\
+ & =\mathcal{L}_{\xi}\theta+X_{\delta \xi}\cdot \theta-X_{\xi}\cdot \delta \theta-\delta \mu _{\xi} \\
+ & =\mathrm{d}(\xi \cdot \theta)+\xi \cdot \mathrm{d}\theta+X_{\delta \xi}\cdot \theta-X_{\xi}\cdot \delta \theta-\delta \mu _{\xi}
+\end{align}$$
+
+for $\displaystyle{\xi}$ a Killing vector
+
+$$\begin{align}
+\delta J_{\xi} & =\mathrm{d}(\xi \cdot \theta)+(\xi \cdot E)\delta \phi+X_{\delta \xi}\cdot \theta-X_{\xi}\cdot \delta \theta-\delta \xi \cdot L \\
+ & \approx -X_{\xi}\cdot \delta \theta+X_{\delta \xi}\cdot \theta+\mathrm{d}(\xi \cdot \theta)-\delta \xi \cdot L \\
+\implies -X_{\xi}\cdot \delta \theta & =\delta J_{\xi}-\mathrm{d}(\xi \cdot \theta)-J_{\delta \xi}
+\end{align}$$
+
+here we use
+
+$$\begin{align}
+\mathcal{L}_{X_{\xi}}\vartheta & =\mathcal{L}_{\xi}\vartheta+X_{\delta \xi}\cdot \vartheta
+\end{align}$$
+
+for 1-form $\displaystyle{\theta}$. then
+
+$$\begin{align}
+\delta H_{\xi} & =-\int _{\Sigma}X_{\xi}\cdot \delta\theta \\
+ & =\int _{\Sigma}(\delta J_{\xi}-\mathrm{d}(\xi \cdot \theta)-J_{\delta \xi}) \\
+ & =\int _{\Sigma}\mathrm{d}(\delta F_{\xi}-\xi \cdot \theta-F)
 \end{align}$$
