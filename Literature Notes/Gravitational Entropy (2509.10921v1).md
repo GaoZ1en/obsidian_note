@@ -147,8 +147,8 @@ J_{\xi} & =X_{\xi}\cdot \Theta-\xi \cdot L \\
  & =\frac{1}{16\pi G}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\nabla _{\nu}(\nabla ^{\nu}\xi ^{\mu}-\nabla ^{\mu}\xi ^{\nu})
 \end{align}$$
 
-$$\tag{.}\begin{align}
-\nabla _{\nu}\nabla ^{\mu}\xi ^{\nu} & =g^{\mu \rho}\nabla _{\nu}\nabla _{\rho}\xi ^{\nu} \\
- & =g^{\mu \rho}\nabla _{\rho}\nabla _{\nu}\xi ^{\nu}+g^{\mu \rho}[\nabla _{\nu},\nabla _{\rho}]\xi ^{\nu} \\
- & =\nabla ^{\mu}(\nabla _{\nu}\xi ^{\nu})+R^{\mu \nu}\xi _{\nu}
+then
+
+$$\begin{align}
+\delta H_{\xi} & =\frac{1}{16\pi G}\int
 \end{align}$$
