@@ -23,7 +23,7 @@ $$\begin{align}
 X_{\xi} & =\int _{M}\mathrm{d}^{d}x \delta _{\xi}\phi \frac{\delta}{\delta \phi}
 \end{align}$$
 
-act on the action
+(here we donnot assume $\displaystyle{\xi}$ is independent from field $\displaystyle{\phi}$)act on the action
 
 $$\begin{align}
 X_{\xi}\cdot \delta S & =\int _{M} \mathrm{d}\mu _{\xi}
@@ -90,5 +90,65 @@ for 1-form $\displaystyle{\theta}$. then
 $$\begin{align}
 \delta H_{\xi} & =-\int _{\Sigma}X_{\xi}\cdot \delta\theta \\
  & =\int _{\Sigma}(\delta J_{\xi}-\mathrm{d}(\xi \cdot \theta)-J_{\delta \xi}) \\
- & =\int _{\Sigma}\mathrm{d}(\delta F_{\xi}-\xi \cdot \theta-F)
+ & =\int _{\Sigma}\mathrm{d}(\delta F_{\xi}-\xi \cdot \theta-F_{\delta \xi}) \\
+ & =\int _{\partial \Sigma}(\delta F_{\xi}-\xi \cdot \theta-F_{\delta \xi})
+\end{align}$$
+
+since the LHS is a $\displaystyle{\delta}$-closed form, the RHS should be a $\displaystyle{\delta}$-total derivatice as
+
+$$\begin{align}
+\xi \cdot \theta-F_{\delta \xi} & =\delta C
+\end{align}$$
+
+add boundary Lagrangian...
+
+$$\begin{align}
+
+\end{align}$$
+
+---
+
+gravitational charges
+
+$$\begin{align}
+S & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{4}x\sqrt{ -g }(R-2\Lambda)
+\end{align}$$
+
+take a variation
+
+$$\begin{align}
+\delta S & = \frac{1}{16\pi G}\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\left(-R^{\mu \nu}+\frac{1}{2}Rg^{\mu \nu}-\Lambda g^{\mu \nu}\right)\delta g_{\mu \nu} \\
+ & +\frac{1}{16\pi G}\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{3}x\sqrt{ \sigma }\tau_{\mu}(g^{\mu \rho}\nabla ^{\nu}\delta g_{\nu \rho}-g^{\nu \rho}\nabla ^{\mu}\delta g_{\nu \rho})
+\end{align}$$
+
+which gives eom and symplectic potential as
+
+$$\begin{align}
+R^{\mu \nu}-\frac{1}{2}Rg^{\mu \nu}+\Lambda g^{\mu \nu}=0  \\
+\implies R^{\mu \nu} =\Lambda g^{\mu \nu}\\
+\theta=\frac{1}{16\pi G}\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(g^{\mu \rho}\nabla ^{\nu}\delta g_{\nu \rho}-g^{\nu \rho}\nabla ^{\mu}\delta g_{\nu \rho})
+\end{align}$$
+
+and the linearized eom for $\displaystyle{\delta g_{\mu \nu}}$
+
+$$\tag{.}\begin{align}
+\square \delta g_{\mu \nu}+g^{\rho \sigma}\nabla _{\mu}\nabla _{\nu}\delta g_{\rho \sigma}-\nabla _{\mu}\nabla _{\rho}\delta g^{\rho}_{~\nu}-\nabla _{\nu}\nabla _{\rho}\delta g^{\rho}_{~\mu}+2R_{\mu \rho \nu \sigma}\delta g^{\rho \sigma} & =0
+\end{align}$$
+
+the Noether current is given by
+
+$$\begin{align}
+J_{\xi} & =X_{\xi}\cdot \Theta-\xi \cdot L \\
+ & =\frac{1}{16\pi G} \mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(g^{\mu \rho}\nabla ^{\nu}(\nabla _{\nu}\xi _{\rho}+\nabla _{\rho}\xi _{\nu})-g^{\nu \rho}\nabla ^{\mu}(\nabla _{\nu}\xi _{\rho}+\nabla _{\rho}\xi _{\nu})) \\
+ & -\frac{1}{16\pi G}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu} (R-2\Lambda) \\
+ & =\frac{1}{16\pi G}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(\nabla _{\rho}\nabla ^{\rho} \xi ^{\mu}-\nabla ^{\mu}(\nabla _{\nu}\xi ^{\nu})+R^{\mu \nu}\xi _{\nu}-\xi ^{\mu}(R-2\Lambda)) \\
+ & \approx \frac{1}{16\pi G}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left(\nabla _{\rho}\nabla ^{\rho}\xi ^{\mu}-\nabla ^{\mu}(\nabla _{\nu}\xi ^{\nu})-R^{\mu \nu}\xi _{\nu}\right) \\
+ & =\frac{1}{16\pi G}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(\nabla _{\rho}\nabla ^{\rho}\xi ^{\mu}-\nabla _{\nu}\nabla ^{\mu}\xi ^{\nu}) \\
+ & =\frac{1}{16\pi G}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\nabla _{\nu}(\nabla ^{\nu}\xi ^{\mu}-\nabla ^{\mu}\xi ^{\nu})
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\nabla _{\nu}\nabla ^{\mu}\xi ^{\nu} & =g^{\mu \rho}\nabla _{\nu}\nabla _{\rho}\xi ^{\nu} \\
+ & =g^{\mu \rho}\nabla _{\rho}\nabla _{\nu}\xi ^{\nu}+g^{\mu \rho}[\nabla _{\nu},\nabla _{\rho}]\xi ^{\nu} \\
+ & =\nabla ^{\mu}(\nabla _{\nu}\xi ^{\nu})+R^{\mu \nu}\xi _{\nu}
 \end{align}$$
