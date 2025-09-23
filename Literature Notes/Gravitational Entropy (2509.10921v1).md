@@ -147,8 +147,17 @@ J_{\xi} & =X_{\xi}\cdot \Theta-\xi \cdot L \\
  & =\frac{1}{16\pi G}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\nabla _{\nu}(\nabla ^{\nu}\xi ^{\mu}-\nabla ^{\mu}\xi ^{\nu})
 \end{align}$$
 
-then
+# Schwarzschild case
 
 $$\begin{align}
-\delta H_{\xi} & =\frac{1}{16\pi G}\int _{\partial \Sigma} \mathrm{d}^{2}x\sqrt{ h }\tau _{\mu}n_{\nu}(\nabla ^{\nu}\xi ^{\mu}-\nabla ^{\mu}\xi ^{\nu})
+\mathrm{d}s^{2} & =-f(r)\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{f(r)}+r^{2}(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\phi ^{2}) \\
+f(r) & =1-\frac{2M}{r}
 \end{align}$$
+
+introduce ingoing Edditon-Finkelstein coordinates with $\displaystyle{v=t+r^{*},\mathrm{d}r^{*}=\frac{\mathrm{d}r}{f(r)}}$, then the metric becomes
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-f(r)(\mathrm{d}v-\mathrm{d}r^{*})^{2}+f(r)\mathrm{d}r^{*2}+r^{2}\left(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\phi ^{2}\right) \\
+ & =-f(r)\mathrm{d}v^{2}+2\mathrm{d}v\mathrm{d}r+r^{2}(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\phi ^{2})
+\end{align}$$
+
