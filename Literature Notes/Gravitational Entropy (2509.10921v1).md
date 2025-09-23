@@ -235,3 +235,26 @@ $$\begin{align}
 \mathrm{d}s^{2} & =-\left( 1-\frac{2Mr}{\Sigma} \right)(\mathrm{d}v-a\sin ^{2}\theta \mathrm{d}\varphi)^{2}+2(\mathrm{d}v-a\sin ^{2}\mathrm{d}\varphi)(\mathrm{d}r-a\sin ^{2}\theta \mathrm{d}\varphi)+\Sigma(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\varphi ^{2})
 \end{align}$$
 
+we have two horizons with radii
+
+$$\begin{align}
+r\pm^{2} & =M\pm\sqrt{ M^{2}-a^{2} }
+\end{align}$$
+
+$\displaystyle{\Sigma}$ intersects the outer horizon $\displaystyle{r=r_{+}}$ at some $\displaystyle{v=v_{0}}$. suppose the horizon Killing vector $\displaystyle{\xi ^{a}=\left( \frac{\partial}{\partial t} \right)^{a}+\Omega\left(\frac{\partial}{\partial \phi}\right)^{a}}$ is null and geodesic on the outer horizon satisfying $\displaystyle{\xi ^{a}\nabla _{a}\xi ^{b}=\kappa \xi ^{b}}$, then
+
+$$\begin{align}
+
+\end{align}$$
+
+$$\tag{.}\begin{align}
+g_{ab}\xi ^{a}\xi ^{b} & =g_{tt}+2g_{t\phi}\Omega+\Omega ^{2}g_{\phi \phi}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi\right)^{2} \\
+ & =-\frac{\Delta}{\Sigma}\left(\mathrm{d}t^{2}-2a\sin ^{2}\theta \mathrm{d}t\mathrm{d}\phi+a^{2}\sin ^{4}\theta \mathrm{d}\phi ^{2}\right)+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(a^{2}\mathrm{d}t^{2}-2a(r^{2}+a^{2})\mathrm{d}t\mathrm{d}\phi+(r^{2}+a^{2})^{2}\mathrm{d}\phi ^{2}\right) \\
+ & =-\frac{\Delta-a^{2}\sin ^{2}\theta}{\Sigma}\mathrm{d}t^{2}+2\frac{a\Delta \sin ^{2}\theta-\sin ^{2}\theta a(r^{2}+a^{2})}{\Sigma}\mathrm{d}t\mathrm{d}\phi
+\end{align}$$
+
+$\displaystyle{a=\frac{J}{M},\Sigma=r^{2}+a^{2}\cos ^{2}\theta, \Delta=r^{2}-2Mr+a^{2}}$
