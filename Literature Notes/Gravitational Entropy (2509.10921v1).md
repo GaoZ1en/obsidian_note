@@ -150,5 +150,5 @@ J_{\xi} & =X_{\xi}\cdot \Theta-\xi \cdot L \\
 then
 
 $$\begin{align}
-\delta H_{\xi} & =\frac{1}{16\pi G}\int
+\delta H_{\xi} & =\frac{1}{16\pi G}\int _{\partial \Sigma} \mathrm{d}^{2}x\sqrt{ h }\tau _{\mu}n_{\nu}(\nabla ^{\nu}\xi ^{\mu}-\nabla ^{\mu}\xi ^{\nu})
 \end{align}$$
