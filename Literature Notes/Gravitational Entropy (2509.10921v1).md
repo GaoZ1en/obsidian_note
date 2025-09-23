@@ -165,14 +165,29 @@ the spacetime is static and so $\displaystyle{\frac{\partial}{\partial v}=k^{a}\
 
 $$\begin{align}
 k^{a}\nabla _{a}k^{b} & =\kappa k^{b} \\
-\implies \kappa & = \frac{1}{4M}
+\implies\kappa ^{2} & =-\frac{1}{2}(\nabla _{a}k _{b})(\nabla ^{a}k^{b}) \\
+\implies \kappa & =\frac{1}{4M}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\kappa ^{2} & =-\frac{1}{2}g^{ac}g^{cd}\nabla _{a}k _{b}\nabla _{c}k _{d}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+k^{a} & =\left(1,0,0,0\right) \\
+k _{a} & =(-f(r),0,0,0)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\nabla _{a}k _{b} & =\partial _{a}k _{b}-\Gamma ^{c}_{~ab}k _{c} \\
+ & =-\delta _{a}^{r}\delta ^{t}_{b}f'(r)+(\delta ^{r}_{a}\delta ^{t}_{b}+\delta ^{t}_{a}\delta ^{r}_{b})\Gamma ^{t}_{~tr}f(r)
 \end{align}$$
 
 here we use the nonzero Christoffel symbols are
 
 $$\begin{align}
 \Gamma ^{t}_{~tr} & = \frac{f'(r)}{2f(r)} \\
-\Gamma ^{r}_{~tt} & =-\frac{1}{2}f(r)f'(r) \\
+\Gamma ^{r}_{~tt} & =\frac{1}{2}f(r)f'(r) \\
 \Gamma ^{r}_{~rr} & =-\frac{f'(r)}{2f(r)} \\
 \Gamma ^{r}_{~\theta \theta} & =-rf(r) \\
 \Gamma ^{r}_{~\phi \phi} & =-rf(r)\sin ^{2}\theta \\
@@ -181,4 +196,4 @@ $$\begin{align}
 \Gamma ^{\phi}_{~r\phi} & =\frac{1}{r} \\
 \Gamma ^{\phi}_{~\theta \phi} & =\frac{\cos \theta}{\sin \theta}
 \end{align}$$
-
+ 
