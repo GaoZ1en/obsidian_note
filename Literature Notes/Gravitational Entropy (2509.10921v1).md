@@ -111,14 +111,14 @@ $$\begin{align}
 gravitational charges
 
 $$\begin{align}
-S & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{4}x\sqrt{ -g }(R-2\Lambda)
+S & =\frac{1}{16\pi}\int _{M}\mathrm{d}^{4}x\sqrt{ -g }(R-2\Lambda)
 \end{align}$$
 
 take a variation
 
 $$\begin{align}
-\delta S & = \frac{1}{16\pi G}\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\left(-R^{\mu \nu}+\frac{1}{2}Rg^{\mu \nu}-\Lambda g^{\mu \nu}\right)\delta g_{\mu \nu} \\
- & +\frac{1}{16\pi G}\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{3}x\sqrt{ \sigma }\tau_{\mu}(g^{\mu \rho}\nabla ^{\nu}\delta g_{\nu \rho}-g^{\nu \rho}\nabla ^{\mu}\delta g_{\nu \rho})
+\delta S & = \frac{1}{16\pi}\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\left(-R^{\mu \nu}+\frac{1}{2}Rg^{\mu \nu}-\Lambda g^{\mu \nu}\right)\delta g_{\mu \nu} \\
+ & +\frac{1}{16\pi}\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{3}x\sqrt{ \sigma }\tau_{\mu}(g^{\mu \rho}\nabla ^{\nu}\delta g_{\nu \rho}-g^{\nu \rho}\nabla ^{\mu}\delta g_{\nu \rho})
 \end{align}$$
 
 which gives eom and symplectic potential as
@@ -126,7 +126,7 @@ which gives eom and symplectic potential as
 $$\begin{align}
 R^{\mu \nu}-\frac{1}{2}Rg^{\mu \nu}+\Lambda g^{\mu \nu}=0  \\
 \implies R^{\mu \nu} =\Lambda g^{\mu \nu}\\
-\theta=\frac{1}{16\pi G}\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(g^{\mu \rho}\nabla ^{\nu}\delta g_{\nu \rho}-g^{\nu \rho}\nabla ^{\mu}\delta g_{\nu \rho})
+\theta=\frac{1}{16\pi}\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(g^{\mu \rho}\nabla ^{\nu}\delta g_{\nu \rho}-g^{\nu \rho}\nabla ^{\mu}\delta g_{\nu \rho})
 \end{align}$$
 
 and the linearized eom for $\displaystyle{\delta g_{\mu \nu}}$
@@ -139,12 +139,12 @@ the Noether current is given by
 
 $$\begin{align}
 J_{\xi} & =X_{\xi}\cdot \Theta-\xi \cdot L \\
- & =\frac{1}{16\pi G} \mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(g^{\mu \rho}\nabla ^{\nu}(\nabla _{\nu}\xi _{\rho}+\nabla _{\rho}\xi _{\nu})-g^{\nu \rho}\nabla ^{\mu}(\nabla _{\nu}\xi _{\rho}+\nabla _{\rho}\xi _{\nu})) \\
- & -\frac{1}{16\pi G}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu} (R-2\Lambda) \\
- & =\frac{1}{16\pi G}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(\nabla _{\rho}\nabla ^{\rho} \xi ^{\mu}-\nabla ^{\mu}(\nabla _{\nu}\xi ^{\nu})+R^{\mu \nu}\xi _{\nu}-\xi ^{\mu}(R-2\Lambda)) \\
- & \approx \frac{1}{16\pi G}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left(\nabla _{\rho}\nabla ^{\rho}\xi ^{\mu}-\nabla ^{\mu}(\nabla _{\nu}\xi ^{\nu})-R^{\mu \nu}\xi _{\nu}\right) \\
- & =\frac{1}{16\pi G}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(\nabla _{\rho}\nabla ^{\rho}\xi ^{\mu}-\nabla _{\nu}\nabla ^{\mu}\xi ^{\nu}) \\
- & =\frac{1}{16\pi G}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\nabla _{\nu}(\nabla ^{\nu}\xi ^{\mu}-\nabla ^{\mu}\xi ^{\nu})
+ & =\frac{1}{16\pi} \mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(g^{\mu \rho}\nabla ^{\nu}(\nabla _{\nu}\xi _{\rho}+\nabla _{\rho}\xi _{\nu})-g^{\nu \rho}\nabla ^{\mu}(\nabla _{\nu}\xi _{\rho}+\nabla _{\rho}\xi _{\nu})) \\
+ & -\frac{1}{16\pi}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu} (R-2\Lambda) \\
+ & =\frac{1}{16\pi}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(\nabla _{\rho}\nabla ^{\rho} \xi ^{\mu}-\nabla ^{\mu}(\nabla _{\nu}\xi ^{\nu})+R^{\mu \nu}\xi _{\nu}-\xi ^{\mu}(R-2\Lambda)) \\
+ & \approx \frac{1}{16\pi}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left(\nabla _{\rho}\nabla ^{\rho}\xi ^{\mu}-\nabla ^{\mu}(\nabla _{\nu}\xi ^{\nu})-R^{\mu \nu}\xi _{\nu}\right) \\
+ & =\frac{1}{16\pi}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(\nabla _{\rho}\nabla ^{\rho}\xi ^{\mu}-\nabla _{\nu}\nabla ^{\mu}\xi ^{\nu}) \\
+ & =\frac{1}{16\pi}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\nabla _{\nu}(\nabla ^{\nu}\xi ^{\mu}-\nabla ^{\mu}\xi ^{\nu})
 \end{align}$$
 
 # Schwarzschild case
@@ -165,22 +165,19 @@ the spacetime is static and so $\displaystyle{\frac{\partial}{\partial v}=k^{a}\
 
 $$\begin{align}
 k^{a}\nabla _{a}k^{b} & =\kappa k^{b} \\
-\implies\kappa ^{2} & =-\frac{1}{2}(\nabla _{a}k _{b})(\nabla ^{a}k^{b}) \\
-\implies \kappa & =\frac{1}{4M}
+\implies\kappa ^{2} & =-\frac{1}{2}(\nabla _{a}k _{b})(\nabla ^{a}k^{b})
 \end{align}$$
 
-$$\tag{.}\begin{align}
-\kappa ^{2} & =-\frac{1}{2}g^{ac}g^{cd}\nabla _{a}k _{b}\nabla _{c}k _{d}
-\end{align}$$
-
-$$\tag{.}\begin{align}
-k^{a} & =\left(1,0,0,0\right) \\
-k _{a} & =(-f(r),0,0,0)
-\end{align}$$
+then
 
 $$\tag{.}\begin{align}
 \nabla _{a}k _{b} & =\partial _{a}k _{b}-\Gamma ^{c}_{~ab}k _{c} \\
- & =-\delta _{a}^{r}\delta ^{t}_{b}f'(r)+(\delta ^{r}_{a}\delta ^{t}_{b}+\delta ^{t}_{a}\delta ^{r}_{b})\Gamma ^{t}_{~tr}f(r)
+ & =-\delta _{a}^{r}\delta ^{t}_{b}f'(r)+\frac{1}{2}(\delta ^{r}_{a}\delta ^{t}_{b}+\delta ^{t}_{a}\delta ^{r}_{b})f'(r) \\
+ & =\frac{1}{2}\left(\delta ^{t}_{a}\delta ^{r}_{b}-\delta ^{r}_{a}\delta ^{t}_{b}\right)f'(r) \\
+\kappa ^{2} & =-\frac{1}{8}g^{ac}g^{cd}\left(\delta ^{t}_{a}\delta ^{r}_{b}-\delta ^{r}_{a}\delta ^{t}_{b}\right)(\delta ^{t}_{c}\delta ^{r}_{d}-\delta ^{r}_{c}\delta ^{t}_{d})[f'(r)]^{2} \\
+ & =\frac{1}{4}[f'(r)]^{2}|_{r_{H}} \\
+ & =\frac{1}{16M^{2}} \\
+\implies \kappa & =\frac{1}{4M}
 \end{align}$$
 
 here we use the nonzero Christoffel symbols are
@@ -196,4 +193,9 @@ $$\begin{align}
 \Gamma ^{\phi}_{~r\phi} & =\frac{1}{r} \\
 \Gamma ^{\phi}_{~\theta \phi} & =\frac{\cos \theta}{\sin \theta}
 \end{align}$$
- 
+
+then the Noether charge corresponding to $\displaystyle{k^{\mu}}$ is
+
+$$\begin{align}
+
+\end{align}$$
