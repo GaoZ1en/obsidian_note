@@ -9,3 +9,35 @@ pdf: "[[Attachments/Assets/Gravitational Entropy (2509.10921v1).pdf]]"
 url: https://arxiv.org/abs/2509.10921v1
 tags: []
 ---
+# covariant phase space
+
+$$\begin{align}
+S & =\int _{M} L[\phi] \\
+\delta S & =\int _{M} (E[\phi]\delta \phi+\mathrm{d}\theta[\phi,\delta \phi]) \\
+\omega & =\int _{\Sigma}\delta \theta
+\end{align}$$
+
+consider the following symmetry transformation
+
+$$\begin{align}
+X_{\xi} & =\int _{M}\mathrm{d}^{d}x \mathcal{L}_{\xi}\phi \frac{\delta}{\delta \phi}
+\end{align}$$
+
+act on the action
+
+$$\begin{align}
+X_{\xi}\cdot \delta S & =\int _{M} \mathrm{d}(\xi \cdot L)
+\end{align}$$
+
+then the corresponding Noether charge reads
+
+$$\begin{align}
+H_{\xi} & =\int _{\Sigma}X_{\xi}\cdot \theta-\xi \cdot L
+\end{align}$$
+
+which satisfies
+
+$$\begin{align}
+X_{\xi}\cdot \omega & =-\delta H_{\xi}
+\end{align}$$
+
