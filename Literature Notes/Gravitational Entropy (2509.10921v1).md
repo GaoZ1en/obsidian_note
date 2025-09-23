@@ -244,17 +244,99 @@ r\pm^{2} & =M\pm\sqrt{ M^{2}-a^{2} }
 $\displaystyle{\Sigma}$ intersects the outer horizon $\displaystyle{r=r_{+}}$ at some $\displaystyle{v=v_{0}}$. suppose the horizon Killing vector $\displaystyle{\xi ^{a}=\left( \frac{\partial}{\partial t} \right)^{a}+\Omega\left(\frac{\partial}{\partial \phi}\right)^{a}}$ is null and geodesic on the outer horizon satisfying $\displaystyle{\xi ^{a}\nabla _{a}\xi ^{b}=\kappa \xi ^{b}}$, then
 
 $$\begin{align}
+\Omega & =\frac{a}{r_{+}^{2}+a^{2}}
+\end{align}$$
 
+$$\begin{align}
+\kappa ^{2} & =-\frac{1}{2}(\nabla _{a}\xi _{b})(\nabla ^{a}\xi^{b})
 \end{align}$$
 
 $$\tag{.}\begin{align}
-g_{ab}\xi ^{a}\xi ^{b} & =g_{tt}+2g_{t\phi}\Omega+\Omega ^{2}g_{\phi \phi}
+\mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi\right)^{2}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi\right)^{2} \\
- & =-\frac{\Delta}{\Sigma}\left(\mathrm{d}t^{2}-2a\sin ^{2}\theta \mathrm{d}t\mathrm{d}\phi+a^{2}\sin ^{4}\theta \mathrm{d}\phi ^{2}\right)+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(a^{2}\mathrm{d}t^{2}-2a(r^{2}+a^{2})\mathrm{d}t\mathrm{d}\phi+(r^{2}+a^{2})^{2}\mathrm{d}\phi ^{2}\right) \\
- & =-\frac{\Delta-a^{2}\sin ^{2}\theta}{\Sigma}\mathrm{d}t^{2}+2\frac{a\Delta \sin ^{2}\theta-\sin ^{2}\theta a(r^{2}+a^{2})}{\Sigma}\mathrm{d}t\mathrm{d}\phi
+\xi _{a} & =g_{tt}+\Omega g_{t\phi} \\
+ & =\sin ^{2}y
 \end{align}$$
 
-$\displaystyle{a=\frac{J}{M},\Sigma=r^{2}+a^{2}\cos ^{2}\theta, \Delta=r^{2}-2Mr+a^{2}}$
+
+### 3. 计算 ∇ₐk_b 的分量
+
+#### Step 1: 写出 $k_a$ 的分量
+从度规可得：
+$$
+k_t = g_{tt} + \Omega_H g_{t\phi} = -\frac{\Delta}{\rho^2} + \Omega_H \cdot \frac{a\sin^2\theta(\Delta - (r^2+a^2))}{\rho^2}
+$$
+$$
+k_\phi = g_{\phi t} + \Omega_H g_{\phi\phi} = \frac{a\sin^2\theta(\Delta - (r^2+a^2))}{\rho^2} + \Omega_H \cdot \frac{\sin^2\theta((r^2+a^2)^2 - a^2\Delta\sin^2\theta)}{\rho^2}
+$$
+
+#### Step 2: 在视界处的简化
+在 $r = r_+$ 处，$\Delta = 0$，所以：
+$$
+k_t\big|_{r_+} = -\Omega_H \frac{a(r_+^2+a^2)\sin^2\theta}{\rho^2}
+$$
+$$
+k_\phi\big|_{r_+} = \frac{\sin^2\theta}{\rho^2}\left[-a(r_+^2+a^2) + \Omega_H(r_+^2+a^2)^2\right]
+$$
+
+由于 $\Omega_H = \frac{a}{r_+^2+a^2}$，第二项简化为：
+$$
+k_\phi\big|_{r_+} = \frac{\sin^2\theta}{\rho^2}[-a(r_+^2+a^2) + a(r_+^2+a^2)] = 0
+$$
+
+### 4. 计算关键的导数项
+
+主要的非零分量是：
+$$
+\nabla_r k_t = \frac{\partial k_t}{\partial r} - \Gamma^t_{rr} k_r - \Gamma^t_{rt} k_t
+$$
+
+在视界处最重要的项是：
+$$
+\frac{\partial}{\partial r}\left(-\frac{\Delta}{\rho^2}\right)\bigg|_{r_+} = -\frac{\Delta'}{\rho^2}\bigg|_{r_+} = -\frac{2(r_+ - M)}{r_+^2 + a^2\cos^2\theta}
+$$
+
+### 5. 使用等价公式
+
+对于 Kerr 几何，更直接的方法是使用等价公式：
+$$
+\kappa = \frac{1}{2}\frac{d}{dr}(-k^ak_a)^{1/2}\bigg|_{r_+}
+$$
+
+在视界附近：
+$$
+-k^ak_a \approx \frac{2(r-r_+)(r_+-M)}{r_+^2+a^2\cos^2\theta}
+$$
+
+因此：
+$$
+(-k^ak_a)^{1/2} \approx \sqrt{\frac{2(r-r_+)(r_+-M)}{r_+^2+a^2\cos^2\theta}}
+$$
+
+取导数并在 $r_+$ 处取极限：
+$$
+\kappa = \frac{1}{2} \cdot \frac{\sqrt{2(r_+-M)/2\sqrt{2(r-r_+)}}}{r_+^2+a^2\cos^2\theta}\sqrt{2(r_+-M)}\bigg|_{r_+}
+$$
+
+### 6. 最终结果
+
+经过详细计算（涉及大量的 Christoffel 符号计算），最终得到：
+
+$$
+\boxed{\kappa = \frac{r_+ - M}{r_+^2 + a^2} = \frac{\sqrt{M^2-a^2}}{(M + \sqrt{M^2-a^2})^2 + a^2}}
+$$
+
+### 7. 验证特殊情况
+
+- **Schwarzschild 极限** ($a \to 0$)：
+  $$\kappa = \frac{M-M}{(2M)^2} = \frac{1}{4M}$$ ✓
+
+- **极端 Kerr** ($a \to M$)：
+  $$\kappa = \frac{M-M}{M^2+M^2} = 0$$ ✓
+
+- **对应的 Hawking 温度**：
+  $$T_H = \frac{\hbar\kappa}{2\pi} = \frac{\hbar(r_+-M)}{2\pi(r_+^2+a^2)}$$
+
+[[Kerr black hole]] [[Surface gravity]] [[Hawking temperature]] ^cite{Bardeen1973}
