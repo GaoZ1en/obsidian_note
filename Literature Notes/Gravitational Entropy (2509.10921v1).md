@@ -161,3 +161,31 @@ $$\begin{align}
  & =-f(r)\mathrm{d}v^{2}+2\mathrm{d}v\mathrm{d}r+r^{2}(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\phi ^{2})
 \end{align}$$
 
+the spacetime is static and so $\displaystyle{\frac{\partial}{\partial v}=k^{a} \frac{\partial}{\partial x^{a}}}$ is a Killing vector. the surface gravity on the horizon $\displaystyle{\kappa}$ is defined as
+
+$$\begin{align}
+k^{a}\nabla _{a}k^{b} & =\kappa k^{b} \\
+\implies \kappa & =
+\end{align}$$
+
+$$\tag{.}\begin{align}
+k^{a}\nabla _{a}k^{b} & =k^{a}\partial _{a}k^{b}+k^{a}\Gamma ^{b}_{~ac}k^{c}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\frac{\partial}{\partial v} & =\frac{\partial}{\partial t}+f(r) \frac{\partial}{\partial r}
+\end{align}$$
+
+nonzero Christoffel symbols are
+
+$$\begin{align}
+\Gamma ^{t}_{~tr} & = \frac{f'(r)}{2f(r)} \\
+\Gamma ^{r}_{~tt} & =-\frac{1}{2}f(r)f'(r) \\
+\Gamma ^{r}_{~rr} & =-\frac{f'(r)}{2f(r)} \\
+\Gamma ^{r}_{~\theta \theta} & =-rf(r) \\
+\Gamma ^{r}_{~\phi \phi} & =-rf(r)\sin ^{2}\theta \\
+\Gamma ^{\theta}_{~r\theta} & =\frac{1}{r} \\
+\Gamma ^{\theta}_{~\phi \phi} & =-\sin \theta \cos \theta \\
+\Gamma ^{\phi}_{~r\phi} & =\frac{1}{r} \\
+\Gamma ^{\phi}_{~\theta \phi} & =\frac{\cos \theta}{\sin \theta}
+\end{align}$$
