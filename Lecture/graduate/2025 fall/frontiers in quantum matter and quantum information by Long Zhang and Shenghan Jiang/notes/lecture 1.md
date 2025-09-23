@@ -20,3 +20,14 @@ beyond Landau paradigm
 2. symmetry, no LRE: symmetry protected topological phases, topological insulators...
 	1. edge modes
 3. symmetry, LRE: FQHE, spin liquid
+
+low energy excitations
+1. gasless phases
+	1. Fermi liquid, Dirac semi-metal, graphene
+	2. non-Fermi liquid
+
+science spreading is over
+
+---
+
+$\displaystyle{N}$-qubits,
