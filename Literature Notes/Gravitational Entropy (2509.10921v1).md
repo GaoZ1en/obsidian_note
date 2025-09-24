@@ -279,22 +279,20 @@ the Noether current is given by
 
 $$\begin{align}
 J_{\xi} & =-\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})+\frac{1}{4}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu}F_{\rho \sigma}F^{\rho \sigma} \\
- & =-\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})+\frac{1}{2}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu}F^{\rho \sigma}\nabla _{\rho}A_{\sigma} \\
- & =-\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left(F^{\mu \nu}\xi ^{\rho}\nabla _{\rho}A_{\nu}\right)
+ & =-\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left(F^{\mu \rho}F^{\nu}_{~\rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}\right) \\
+ & =
 \end{align}$$
 
 $$\begin{align}
-S & =-\frac{1}{2}\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\nabla _{\mu}\phi \nabla ^{\mu}\phi \\
-\delta S & =\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\nabla^{2}\phi-\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{3}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\phi \delta \phi
+\tau _{\mu}\xi _{\nu}g^{}F^{\mu \rho}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-X_{\xi}\cdot \delta S & =-\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\nabla ^{\mu}\phi \nabla _{\mu}(\xi ^{\nu}\nabla _{\nu}\phi) \\
- & =-\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\nabla ^{\mu}\phi(\nabla _{\mu}\xi ^{\nu}\nabla _{\nu}\phi+\xi ^{\nu}\nabla _{\mu}\nabla _{\nu}\phi) \\
- & =-\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\nabla ^{\mu}\phi \nabla _{\mu}\xi ^{\nu}\nabla _{\nu}\phi+\nabla _{\nu}(\nabla ^{\mu}\phi \xi ^{\nu}\nabla _{\mu}\phi)-\nabla _{\nu}(\nabla ^{\mu}\phi \xi ^{\nu})
+ & -\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})+\frac{1}{2}\tau _{\mu}\xi ^{\mu}F^{\rho \sigma}\nabla _{\rho}A_{\sigma} \\
+= & \frac{1}{2}\tau _{\mu}\xi ^{\mu}\nabla _{\rho}(F^{\rho \sigma}A_{\sigma})-\tau _{\mu}F^{\mu \nu}\xi ^{\rho}\nabla _{\rho}A_{\nu}-\tau _{\mu}\nabla _{\nu}(F^{\mu \nu}A_{\rho}\xi ^{\rho})+\tau _{\mu}\nabla _{\nu}(F^{\mu \nu}A_{\rho})\xi ^{\rho} \\
+= & 
 \end{align}$$
 
 $$\tag{.}\begin{align}
-J_{\xi} & =X_{\xi}\cdot \Theta-\xi \cdot L \\
- & =
+-2\nabla _{\nu}(F^{\mu \nu}A_{\rho}\xi ^{\rho}) & =-2\tau _{\mu}F^{\mu \nu}\nabla _{\nu}(A_{\rho}\xi ^{\rho})
 \end{align}$$
