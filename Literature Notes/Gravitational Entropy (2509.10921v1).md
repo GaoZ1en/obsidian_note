@@ -279,20 +279,26 @@ the Noether current is given by
 
 $$\begin{align}
 J_{\xi} & =-\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})+\frac{1}{4}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu}F_{\rho \sigma}F^{\rho \sigma} \\
- & =-\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left(F^{\mu \rho}F^{\nu}_{~\rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}\right) \\
- & =
+ & =-\frac{1}{2}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\nabla _{\nu}\left(F^{\nu \mu}A_{\rho}\xi ^{\rho}\right)
 \end{align}$$
+
+## Kerr-Newman black hole
 
 $$\begin{align}
-\tau _{\mu}\xi _{\nu}g^{}F^{\mu \rho}
+\mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi)^{2} \\
+\Delta & =r^{2}-2Mr+a^{2}+Q^{2} \\
+\Sigma & =r^{2}+a^{2}\cos ^{2}\theta
 \end{align}$$
 
-$$\tag{.}\begin{align}
- & -\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})+\frac{1}{2}\tau _{\mu}\xi ^{\mu}F^{\rho \sigma}\nabla _{\rho}A_{\sigma} \\
-= & \frac{1}{2}\tau _{\mu}\xi ^{\mu}\nabla _{\rho}(F^{\rho \sigma}A_{\sigma})-\tau _{\mu}F^{\mu \nu}\xi ^{\rho}\nabla _{\rho}A_{\nu}-\tau _{\mu}\nabla _{\nu}(F^{\mu \nu}A_{\rho}\xi ^{\rho})+\tau _{\mu}\nabla _{\nu}(F^{\mu \nu}A_{\rho})\xi ^{\rho} \\
-= & 
+similarly, define the ingoing E-F coordinate
+
+$$\begin{align}
+\mathrm{d}v & =\mathrm{d}t+\frac{r^{2}+a^{2}}{\Delta}\mathrm{d}r \\
+\mathrm{d}\varphi & =\mathrm{d}\phi+\frac{a}{\Delta}\mathrm{d}r
 \end{align}$$
 
-$$\tag{.}\begin{align}
--2\nabla _{\nu}(F^{\mu \nu}A_{\rho}\xi ^{\rho}) & =-2\tau _{\mu}F^{\mu \nu}\nabla _{\nu}(A_{\rho}\xi ^{\rho})
+then the metric becomes
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-\left( 1-\frac{2Mr-Q^{2}}{\Sigma} \right)\mathrm{d}v^{2}+2\mathrm{d}v\mathrm{d}r-\frac{2a}{\Sigma}\left(2Mr-Q^{2}\right)\sin ^{2}\theta \mathrm{d}v\mathrm{d}\phi-2as
 \end{align}$$
