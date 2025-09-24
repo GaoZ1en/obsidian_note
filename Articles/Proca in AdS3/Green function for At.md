@@ -211,3 +211,5 @@ R^{(m)}_{>}(r) & =r^{|m|}(1+r^{2})^{-(\mu+2+|m|)/2}{}_{2}F_{1}\left(\frac{1}{2}(
 R^{(m)}_{<}(r) & =r^{|m|}{}_{2}F_{1}\left( \frac{1}{2}(-\mu+2+|m|), \frac{1}{2}(\mu+2+|m|);1+|m|;-r^{2} \right) \\
 W^{(m)}(r) & =-\frac{2\Gamma(|m|+1)\Gamma(\mu+1)}{\Gamma\left( \frac{\mu+|m|}{2} \right)\Gamma\left( 1+\frac{\mu+|m|}{2} \right)}\frac{1}{r(1+r^{2})^{2}}
 \end{align}$$
+
+these two formula are equivalent, but i can't prove it due to complicated hypergeometric function identities. 
