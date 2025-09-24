@@ -9,6 +9,7 @@
 3. 可以借上课把若干经典读一读
 	1. large scale structure of spacetime by Hawking and Ellis
 	2. General Relativity by Wald
+4. dynamic black hole entropy, Wald, apparent horizon.
 
 应当搞清楚算的是什么量，而不是直接模仿别人的计算流程。
 ## career
