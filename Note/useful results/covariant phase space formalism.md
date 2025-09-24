@@ -104,3 +104,4 @@ $$\tag{.}\begin{align}
 
 ## non-commutative geometry
 
+## proof of Ryu-Takayanagi formula

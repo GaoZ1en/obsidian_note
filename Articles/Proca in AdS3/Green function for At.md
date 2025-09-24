@@ -94,35 +94,14 @@ $$\begin{align}
 G_{-1}(r,r') & =\frac{(\theta(r-r')R^{(-1)}_{<}(r')R_{>}^{(-)}(r)+\theta(r'-r)R_{<}^{(-1)}(r)R_{>}^{(-1)}(r'))}{(1+r'^{2})[R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')]} \\
 A^{t}\propto \int _{0}^{\infty}\mathrm{d}r' G_{-1}(r,r')r'(1+r'^{2})^{-(\mu+5)/2} & =R_{>}^{(-1)}(r)\int _{0}^{r}\mathrm{d}r' \frac{R_{<}^{(-1)}(r')r'(1+r'^{2})^{-(\mu+7)/2}}{R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')} \\
  & +R^{(-1)}_{<}(r)\int ^{\infty}_{r}\mathrm{d}r' \frac{R_{>}^{(-1)}(r')r'(1+r'^{2})^{-(\mu+7)/2}}{R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')} \\
- & \not\propto{f^{(+)}_{l,0,0}}^{t}
+ & \propto{f^{(+)}_{l,0,0}}^{t}
 \end{align}$$
+
+and the coefficient seems right.
 
 $$\tag{.}\begin{align}
 A^{t} & =\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{(\mu+1)(\mu+3)}{2}\int _{0}^{\infty}\mathrm{d}r'G_{-1}(r,r')r'(1+r'^{2})^{-(\mu+5)/2} \\
  & =-\frac{\Gamma\left( \frac{\mu+1}{2} \right)^{2}}{4\Gamma(\mu+1)}\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{(\mu+1)^{2}(\mu+3)}{2}\left[R^{(-1)}_{>}(r)\int ^{r}_{0} \mathrm{d}r' R_{<}^{(-1)}(r')r'^{2}(1+r'^{2})^{-(\mu+3)/2}+R_{<}^{(-1)}(r)\int _{r}^{\infty}\mathrm{d}r' R_{>}^{(-1)}(r')r'^{2}(1+r'^{2})^{-(\mu+3)/2} \right]
-\end{align}$$
-
-$$\begin{align}
-{f^{(+)}_{l,0,0}}^{t} & = \frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} } e^{-i(\mu+1)t}e^{-i\phi}r(1+r^{2})^{-(\mu+3)/2} \\
-{f^{(+)}_{l,0,0}}^{r} & =-\frac{i}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi}(1+r^{2})^{-(\mu+1)/2} \\
-{f^{(+)}_{l,0,0}}^{\phi} & =-\frac{1}{2}\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+1)t}e^{-i\phi}r^{-1}(1+r^{2})^{-(\mu+1)/2}
-\end{align}$$
-
-when $\displaystyle{r\to \infty}$
-
-$$\begin{align}
-A^{t} & \propto R_{>}^{(-1)}(r)\int _{0}^{\infty}\mathrm{d}r' \frac{R_{<}^{(-1)}(r')r'(1+r'^{2})^{-(\mu+7)/2}}{R_{<}^{(-1)}(r')\partial _{r}R^{(-1)}_{>}(r')-R^{(-1)}_{>}(r')\partial _{r}R^{(-)}_{<}(r')} \\
- & \propto R^{(-1)}_{>}(r)\int _{0}^{\infty}\mathrm{d}r'R^{(-1)}(r')r'^{2}(1+r'^{2})^{-(\mu+3)/2} \\
- & \propto R^{(-1)}_{>}(r)=r(1+r^{2})^{-(\mu+3)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu+1),\frac{1}{2}(\mu+3);1+\mu; \frac{1}{1+r^{2}}\right) \\
- & \to r^{-(\mu+2)}
-\end{align}$$
-
-and when $\displaystyle{r\to 0}$
-
-$$\begin{align}
-A^{t} & \propto R^{(-1)}_{<}(r)\int ^{\infty}_{0}\mathrm{d}r' R^{(-1)}(r')r'^{2}(1+r'^{2})^{-(\mu+3)/2} \\
- & \propto R^{(-1)}_{<}(r)=r{}_{2}F_{1}\left(\frac{1}{2}(-\mu+3), \frac{1}{2}(\mu+3);2;-r^{2}\right) \\
- & \to r
 \end{align}$$
 
 
@@ -167,7 +146,7 @@ mainFunction[r_, \[Mu]_] :=
   int1 = NIntegrate[integrand1[rp, \[Mu]], {rp, 0, r}, 
     Method -> "AdaptiveMonteCarlo", MaxRecursion -> 20];
   (*第二个积分项*)
-  int2 = NIntegrate[integrand2[rp, \[Mu]], {rp, r, 10}, 
+  int2 = NIntegrate[integrand2[rp, \[Mu]], {rp, r, Infinity}, 
     Method -> "AdaptiveMonteCarlo", MaxRecursion -> 20];
   -(R2minus[r, \[Mu]]*int1 + R1minus[r, \[Mu]]*int2)/(
   r (1 + r^2)^(-(\[Mu] + 3)/2))]
@@ -205,7 +184,7 @@ A^{t}(t,r,\phi) & =e^{-i(\mu+2)t}\int \mathrm{d}r'G_{0}(r,r')(1+r^{2})^{-(\mu+6)
  & \propto \int _{0}^{\infty}\mathrm{d}r'\frac{(\theta(r-r')R^{(0)}_{<}(r')R_{>}^{(-)}(r)+\theta(r'-r)R_{<}^{(0)}(r)R_{>}^{(0)}(r'))}{R_{<}^{(0)}(r')\partial _{r}R^{(0)}_{>}(r')-R^{(0)}_{>}(r')\partial _{r}R^{(0)}_{<}(r')}(1+r'^{2})^{-(\mu+6)/2}((\mu+2)r'^{2}-2) \\
  & =R^{(0)}_{>}(r)\int _{0}^{r} \frac{R_{<}^{(0)}(r')(1+r'^{2})^{-(\mu+6)/2}((\mu+2)r'^{2}-2)}{R_{<}^{(0)}(r')\partial _{r}R^{(0)}_{>}(r')-R^{(0)}_{>}(r')\partial _{r}R^{(0)}_{<}(r')} \\
  & +R^{(0)}_{<}(r)\int _{r}^{\infty} \frac{R^{(0)}_{>}(r')(1+r'^{2})^{-(\mu+6)/2}((\mu+2)r'^{2}-2)}{R_{<}^{(0)}(r')\partial _{r}R^{(0)}_{>}(r')-R^{(0)}_{>}(r')\partial _{r}R^{(0)}_{<}(r')} \\
- & \not\propto{h^{(+)}_{+,m=0,n=0}}^{t}
+ & \propto{h^{(+)}_{+,m=0,n=0}}^{t}
 \end{align}$$
 
 $$\begin{align}
@@ -223,6 +202,12 @@ i have no idea.
 
 ---
 
+
+$\displaystyle{}$ and $\displaystyle{}$. 
+
 $$\begin{align}
-(1+r^{2})\partial _{r}^{2}y_{m}+\frac{1+5r^{2}}{r}\partial _{r}y_{m}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}} \right)y_{m} & =0
+W(r) & =R_{<}^{(m)}(r)\partial _{r}R^{(m)}_{>}(r)-R^{(m)}_{>}(r)\partial _{r}R^{(m)}_{<}(r) \\
+R^{(m)}_{>}(r) & =r^{|m|}(1+r^{2})^{-(\mu+2+|m|)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu+|m|),\frac{1}{2}(\mu+2+|m|);1+\mu; \frac{1}{1+r^{2}}\right) \\
+R^{(m)}_{<}(r) & =r^{|m|}{}_{2}F_{1}\left( \frac{1}{2}(-\mu+2+|m|), \frac{1}{2}(\mu+2+|m|);1+|m|;-r^{2} \right) \\
+W^{(m)}(r) & =-\frac{2\Gamma(|m|+1)\Gamma(\mu+1)}{\Gamma\left( \frac{\mu+|m|}{2} \right)\Gamma\left( 1+\frac{\mu+|m|}{2} \right)}\frac{1}{r(1+r^{2})^{2}}
 \end{align}$$
