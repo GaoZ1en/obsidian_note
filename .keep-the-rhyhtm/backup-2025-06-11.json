@@ -23517,7 +23517,28 @@
         "filePath": "Articles/Proca in AdS3/electric field.md",
         "wordCountStart": 600,
         "charCountStart": 2705,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "19:25",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "19:35",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "20:10",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "20:20",
+            "w": 0,
+            "c": 0
+          }
+        ],
         "id": 737
       },
       {
@@ -23757,6 +23778,21 @@
             "timeKey": "13:45",
             "w": -1,
             "c": -6
+          },
+          {
+            "timeKey": "15:20",
+            "w": 0,
+            "c": 3
+          },
+          {
+            "timeKey": "19:35",
+            "w": 0,
+            "c": -3
+          },
+          {
+            "timeKey": "20:10",
+            "w": 8,
+            "c": 55
           }
         ],
         "id": 752
@@ -23915,9 +23951,141 @@
             "timeKey": "14:55",
             "w": 12,
             "c": 91
+          },
+          {
+            "timeKey": "15:05",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "15:10",
+            "w": 112,
+            "c": 515
+          },
+          {
+            "timeKey": "15:15",
+            "w": 26,
+            "c": 150
+          },
+          {
+            "timeKey": "15:20",
+            "w": 474,
+            "c": 3865
+          },
+          {
+            "timeKey": "15:25",
+            "w": -130,
+            "c": -1482
+          },
+          {
+            "timeKey": "15:30",
+            "w": -276,
+            "c": -2083
+          },
+          {
+            "timeKey": "15:50",
+            "w": 5,
+            "c": 39
+          },
+          {
+            "timeKey": "16:45",
+            "w": 224,
+            "c": 2585
+          },
+          {
+            "timeKey": "16:50",
+            "w": -224,
+            "c": -2586
+          },
+          {
+            "timeKey": "17:05",
+            "w": 4,
+            "c": 34
           }
         ],
         "id": 760
+      },
+      {
+        "date": "2025-09-24",
+        "filePath": "Articles/Proca in AdS3/Green function for At.md",
+        "wordCountStart": 2608,
+        "charCountStart": 11686,
+        "changes": [
+          {
+            "timeKey": "18:10",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "18:15",
+            "w": -286,
+            "c": -1178
+          },
+          {
+            "timeKey": "18:20",
+            "w": 93,
+            "c": 430
+          },
+          {
+            "timeKey": "18:30",
+            "w": 17,
+            "c": 111
+          },
+          {
+            "timeKey": "18:55",
+            "w": 0,
+            "c": 3
+          },
+          {
+            "timeKey": "19:00",
+            "w": 22,
+            "c": 142
+          },
+          {
+            "timeKey": "19:05",
+            "w": -3,
+            "c": -44
+          }
+        ],
+        "id": 761
+      },
+      {
+        "date": "2025-09-24",
+        "filePath": "Articles/Proca in AdS3/Draft.md",
+        "wordCountStart": 375,
+        "charCountStart": 2200,
+        "changes": [
+          {
+            "timeKey": "19:05",
+            "w": -375,
+            "c": -2200
+          }
+        ],
+        "id": 762
+      },
+      {
+        "date": "2025-09-24",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 2877,
+        "charCountStart": 14442,
+        "changes": [],
+        "id": 763
+      },
+      {
+        "date": "2025-09-24",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6040,
+        "charCountStart": 25721,
+        "changes": [],
+        "id": 764
+      },
+      {
+        "date": "2025-09-24",
+        "filePath": "Articles/Proca in AdS3/angular decomposition.md",
+        "wordCountStart": 457,
+        "charCountStart": 2587,
+        "changes": [],
+        "id": 765
       }
     ],
     "daysWithCompletedGoal": [
