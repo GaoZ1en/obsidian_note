@@ -278,25 +278,23 @@ S & =-\frac{1}{4}\int _{M} \mathrm{d}^{4}x\sqrt{ -g }F_{\mu \nu}F^{\mu \nu} \\
 the Noether current is given by
 
 $$\begin{align}
-J_{\xi} & =X_{\xi}\cdot \Theta-\xi \cdot L \\
- & =-\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})+\frac{1}{4}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu}F_{\rho \sigma}F^{\rho \sigma}
+J_{\xi} & =-\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})+\frac{1}{4}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu}F_{\rho \sigma}F^{\rho \sigma} \\
+ & =-\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})+\frac{1}{2}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu}F^{\rho \sigma}\nabla _{\rho}A_{\sigma} \\
+ & =-\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left(F^{\mu \nu}\xi ^{\rho}\nabla _{\rho}A_{\nu}\right)
 \end{align}$$
 
-at the same time, we have the $\displaystyle{\mathrm{U}(1)}$ gauge symmetry
+$$\begin{align}
+S & =-\frac{1}{2}\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\nabla _{\mu}\phi \nabla ^{\mu}\phi \\
+\delta S & =\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\nabla^{2}\phi-\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{3}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\phi \delta \phi
+\end{align}$$
 
 $$\tag{.}\begin{align}
-S & =-\int _{M}\mathrm{d}^{4}x\sqrt{ -g }F^{\mu \nu}\nabla _{\mu}\delta A_{\nu}
+X_{\xi}\cdot \delta S & =-\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\nabla ^{\mu}\phi \nabla _{\mu}(\xi ^{\nu}\nabla _{\nu}\phi) \\
+ & =-\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\nabla ^{\mu}\phi(\nabla _{\mu}\xi ^{\nu}\nabla _{\nu}\phi+\xi ^{\nu}\nabla _{\mu}\nabla _{\nu}\phi) \\
+ & =-\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\nabla ^{\mu}\phi \nabla _{\mu}\xi ^{\nu}\nabla _{\nu}\phi+\nabla _{\nu}(\nabla ^{\mu}\phi \xi ^{\nu}\nabla _{\mu}\phi)-\nabla _{\nu}(\nabla ^{\mu}\phi \xi ^{\nu})
 \end{align}$$
 
-$$\begin{align}
-A\to A+\mathrm{d}\varepsilon \\
- & =(A_{\mu}+\partial _{\mu}\varepsilon)\mathrm{d}x^{\mu}
-\end{align}$$
-
-$$\begin{align}
-
-\end{align}$$
-
-$$\begin{align}
-J_{\varepsilon} & =X_{\varepsilon}\cdot \Theta
+$$\tag{.}\begin{align}
+J_{\xi} & =X_{\xi}\cdot \Theta-\xi \cdot L \\
+ & =
 \end{align}$$
