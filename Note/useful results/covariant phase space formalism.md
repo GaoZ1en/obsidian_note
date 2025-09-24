@@ -74,8 +74,15 @@ which is the Yang-Mills charge associated with gauge parameter $\displaystyle{\v
 
 the action of Chern-Simons theory in 3-dimension is given by
 
+
 $$\begin{align}
-S & =\frac{k}{4\pi}\int _{M}\mathrm{Tr}\left( A\wedge \mathrm{d}A+\frac{2}{3}A\wedge A\wedge A \right)
+S & =\frac{k}{4\pi}\int _{M}\mathrm{d}^{3}x\varepsilon ^{\mu \nu \rho}\left(A^{a}_{\mu}\partial _{\nu}A^{a}_{\rho}+\frac{1}{3}f^{abc}A^{a}_{\mu}A^{b}_{\nu}A^{c}_{\rho}\right)
+\end{align}$$
+
+take a variation of the action
+
+$$\tag{.}\begin{align}
+
 \end{align}$$
 
 ## gravity
@@ -97,63 +104,3 @@ S & =\frac{k}{4\pi}\int _{M}\mathrm{Tr}\left( A\wedge \mathrm{d}A+\frac{2}{3}A\w
 
 ## non-commutative geometry
 
-$$\tag{.}\begin{align}
-S & =\frac{k}{4\pi}\int _{M}\mathrm{Tr}\left( A\wedge \mathrm{d}A+\frac{2}{3}A\wedge A\wedge A \right) \\
-\delta S & =\frac{k}{4\pi}\int _{M}\mathrm{Tr}\left(\delta A\wedge \mathrm{d}A+A\wedge \mathrm{d}\delta A+\delta A\wedge A\wedge A\right)
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\mathrm{d}A & =\partial _{\mu}A^{a}_{\nu}T^{a}\mathrm{d}x^{\mu}\wedge\mathrm{d}x^{\nu}=
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\mathrm{Tr}(A\wedge \mathrm{d}A) & =\mathrm{Tr}(A^{a}_{\mu}\mathrm{d}x^{\mu}\wedge )
-\end{align}$$
-
-场强 2-形式：
-$$dA = \partial_\mu A^a_\nu T^a dx^\mu \wedge dx^\nu = \frac{1}{2}(\partial_\mu A^a_\nu - \partial_\nu A^a_\mu) T^a dx^\mu \wedge dx^\nu$$
-
-第一项：
-$$A \wedge dA = A^a_\mu T^a dx^\mu \wedge \frac{1}{2}(\partial_\nu A^b_\rho - \partial_\rho A^b_\nu) T^b dx^\nu \wedge dx^\rho$$
-
-$$= \frac{1}{2} A^a_\mu (\partial_\nu A^b_\rho - \partial_\rho A^b_\nu) \text{Tr}(T^a T^b) dx^\mu \wedge dx^\nu \wedge dx^\rho$$
-
-$$= \frac{1}{4} A^a_\mu (\partial_\nu A^a_\rho - \partial_\rho A^a_\nu) dx^\mu \wedge dx^\nu \wedge dx^\rho$$
-
-## 第三步：展开第二项 $$A \wedge A \wedge A$$
-
-$$A \wedge A \wedge A = A^a_\mu A^b_\nu A^c_\rho T^a T^b T^c dx^\mu \wedge dx^\nu \wedge dx^\rho$$
-
-利用李群结构常数的性质：
-$$\text{Tr}(T^a T^b T^c) = \frac{1}{4} d^{abc}$$
-
-其中 $$d^{abc}$$ 是对称张量（对于 SU(N) 群）。但更常见的是用反对称结构：
-
-$$\text{Tr}(T^a [T^b, T^c]) = \text{Tr}(T^a f^{bcd} T^d) = \frac{1}{2} f^{abc}$$
-
-因此：
-$$\text{Tr}(T^a T^b T^c) = \frac{1}{4} f^{abc}$$（反对称化后）
-
-## 第四步：完整的泛函形式
-
-将所有项合并，使用 $$d^3x = \frac{1}{3!} \epsilon^{\mu\nu\rho} dx^\mu \wedge dx^\nu \wedge dx^\rho$$：
-
-$$S[A^a_\mu] = \frac{k}{4\pi} \int d^3x \, \epsilon^{\mu\nu\rho} \left[ \frac{1}{2} A^a_\mu \left(\partial_\nu A^a_\rho - \partial_\rho A^a_\nu\right) + \frac{1}{6} f^{abc} A^a_\mu A^b_\nu A^c_\rho \right]$$
-
-## 最终结果
-
-$$\boxed{S[A^a_\mu] = \frac{k}{4\pi} \int d^3x \, \epsilon^{\mu\nu\rho} \left[ A^a_\mu \partial_\nu A^a_\rho + \frac{1}{3} f^{abc} A^a_\mu A^b_\nu A^c_\rho \right]}$$
-
-## 物理意义注释
-
-- **拓扑性质**：这是一个拓扑不变量，不依赖于度规
-- **规范不变性**：在规范变换下相差一个边界项
-- **量子化条件**：$$k \in \mathbb{Z}$$ 保证路径积分的规范不变性
-- **[[Anomaly]]**：与 2+1D 中的手征异常直接相关
-
-^cite{Witten1988}
-
-[[重要开放问题]]：
-- 非阿贝尔 Chern-Simons 理论的精确可解性
-- 与拓扑量子计算的联系
-- 高阶 Chern-Simons 项的物理实现
