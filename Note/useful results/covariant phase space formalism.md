@@ -51,8 +51,18 @@ then act $\displaystyle{X_{\varepsilon}}$ on the action, we have
 
 $$\begin{align}
 X_{\varepsilon}\cdot \delta S & =\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu} \alpha ^{\mu}_{\varepsilon} \\
-\alpha ^{\mu}_{\varepsilon} & =
+\alpha ^{\mu}_{\varepsilon} & =F^{\mu \nu}_{a}\nabla _{\nu}\varepsilon ^{a}
 \end{align}$$
+
+then the corresponding Noether current is
+
+$$\begin{align}
+H_{\varepsilon} & =X_{\varepsilon}\cdot \theta-\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\alpha ^{\mu}_{\varepsilon} \\
+ & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F_{a}^{\mu \nu}(\nabla _{\nu}\varepsilon ^{a}+f^{a}_{~bc}A^{b}_{\nu}\varepsilon ^{c})-\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}_{a}\nabla _{\nu}\varepsilon ^{a} \\
+ & =f^{a}_{~bc}\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}_{a}A^{b}_{\nu}\varepsilon ^{c}
+\end{align}$$
+
+which is the Yang-Mills charge associated with gauge parameter $\displaystyle{\varepsilon ^{a}}$.
 
 ### Chern-Simons
 
