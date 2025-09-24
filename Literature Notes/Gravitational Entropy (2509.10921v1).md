@@ -180,6 +180,18 @@ $$\tag{.}\begin{align}
 \implies \kappa & =\frac{1}{4M}
 \end{align}$$
 
+---
+
+another method is
+
+$$\begin{align}
+\kappa & =-\frac{1}{2}\partial _{r}\xi _{v}|_{r=r_{H}} \\
+ & =\frac{1}{2}f'(r)|_{r=r_{H}} \\
+ & =\frac{1}{4M}
+\end{align}$$
+
+---
+
 here we use the nonzero Christoffel symbols are
 
 $$\begin{align}
@@ -194,7 +206,7 @@ $$\begin{align}
 \Gamma ^{\phi}_{~\theta \phi} & =\frac{\cos \theta}{\sin \theta}
 \end{align}$$
 
-the $\displaystyle{\Sigma}$ intersects the horizon at some time $\displaystyle{t}$ and $\displaystyle{r=2GM}$. then the Noether charge corresponding to $\displaystyle{\xi^{\mu}}$ is
+the $\displaystyle{\Sigma}$ intersects the horizon at some $\displaystyle{v}$ and $\displaystyle{r=2GM}$. then the Noether charge corresponding to $\displaystyle{\xi^{\mu}}$ is
 
 $$\begin{align}
 H_{\xi} & =\int _{\Sigma}J_{\xi} \\
@@ -241,13 +253,24 @@ $$\begin{align}
 r\pm^{2} & =M\pm\sqrt{ M^{2}-a^{2} }
 \end{align}$$
 
-$\displaystyle{\Sigma}$ intersects the outer horizon $\displaystyle{r=r_{+}}$ at some $\displaystyle{v=v_{0}}$. suppose the horizon Killing vector $\displaystyle{\xi ^{a}=\left( \frac{\partial}{\partial t} \right)^{a}+\Omega _{H}\left(\frac{\partial}{\partial \phi}\right)^{a}}$ is null and geodesic on the outer horizon satisfying $\displaystyle{\xi ^{a}\nabla _{a}\xi ^{b}=\kappa \xi ^{b}}$, then
+$\displaystyle{\Sigma}$ intersects the outer horizon $\displaystyle{r=r_{+}}$ at some $\displaystyle{v=v_{0}}$. suppose the horizon Killing vector $\displaystyle{\xi ^{a}=\left( \frac{\partial}{\partial v} \right)^{a}+\Omega _{H}\left(\frac{\partial}{\partial \phi}\right)^{a}}$ is null and geodesic on the outer horizon satisfying $\displaystyle{\xi ^{a}\nabla _{a}\xi ^{b}=\kappa \xi ^{b}}$, then
 
 $$\begin{align}
 \Omega _{H} & =\frac{a}{r_{+}^{2}+a^{2}} \\
-
+\kappa & =-\frac{1}{2}\partial _{r}\xi _{v}|_{r=r_{+}} \\
+ & =\frac{r_{+}-r_{-}}{2Mr_{+}}
 \end{align}$$
 
-$$\tag{.}\begin{align}
-\xi _{\mu}\xi ^{\mu} & =\frac{\Delta}{\Sigma}\sin ^{2}\theta(\Omega _{H}-\omega)^{2}-\Sigma
+the Noether charge corresponding to $\displaystyle{\xi^{\mu}}$ is
+
+$$\begin{align}
+H_{\xi} & =\int _{\Sigma} J_{\xi} \\
+ & =\frac{1}{16\pi}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}n^{\nu}(\nabla _{\nu}\xi _{\mu}-\nabla _{\mu}\xi _{\nu})
+\end{align}$$
+
+# electromagnetism and Kerr-Newman black hole
+
+$$\begin{align}
+S & =-\frac{1}{4}\int _{M} \mathrm{d}^{4}x\sqrt{ -g }F_{\mu \nu}F^{\mu \nu} \\
+\delta S & =\int _{M} \mathrm{d}^{4}x\sqrt{ -g }\nabla _{\mu}F^{\mu \nu}\delta A_{\nu}
 \end{align}$$
