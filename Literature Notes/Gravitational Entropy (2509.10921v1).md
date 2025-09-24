@@ -272,5 +272,12 @@ H_{\xi} & =\int _{\Sigma} J_{\xi} \\
 
 $$\begin{align}
 S & =-\frac{1}{4}\int _{M} \mathrm{d}^{4}x\sqrt{ -g }F_{\mu \nu}F^{\mu \nu} \\
-\delta S & =\int _{M} \mathrm{d}^{4}x\sqrt{ -g }\nabla _{\mu}F^{\mu \nu}\delta A_{\nu}
+\delta S & =\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\nabla _{\mu}F^{\mu \nu}\delta A_{\nu}-\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}\delta A_{\nu}
+\end{align}$$
+
+the Noether current is given by
+
+$$\begin{align}
+J_{\xi} & =X_{\xi}\cdot \Theta-\xi \cdot L \\
+ & =-\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})+\frac{1}{4}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu}F_{\rho \sigma}F^{\rho \sigma}
 \end{align}$$
