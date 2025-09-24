@@ -202,9 +202,6 @@ i have no idea.
 
 ---
 
-
-$\displaystyle{}$ and $\displaystyle{}$. 
-
 $$\begin{align}
 W(r) & =R_{<}^{(m)}(r)\partial _{r}R^{(m)}_{>}(r)-R^{(m)}_{>}(r)\partial _{r}R^{(m)}_{<}(r) \\
 R^{(m)}_{>}(r) & =r^{|m|}(1+r^{2})^{-(\mu+2+|m|)/2}{}_{2}F_{1}\left(\frac{1}{2}(\mu+|m|),\frac{1}{2}(\mu+2+|m|);1+\mu; \frac{1}{1+r^{2}}\right) \\
@@ -213,3 +210,12 @@ W^{(m)}(r) & =-\frac{2\Gamma(|m|+1)\Gamma(\mu+1)}{\Gamma\left( \frac{\mu+|m|}{2}
 \end{align}$$
 
 these two formula are equivalent, but i can't prove it due to complicated hypergeometric function identities. 
+
+---
+
+we will prove that $\displaystyle{A^{t}}$ expressed by Green function satisfies
+
+$$\begin{align}
+\nabla _{\mu}A^{\mu} & =0
+\end{align}$$
+
