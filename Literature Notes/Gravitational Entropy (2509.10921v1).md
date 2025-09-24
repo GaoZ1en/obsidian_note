@@ -287,7 +287,8 @@ J_{\xi} & =-\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\nab
 $$\begin{align}
 \mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi)^{2} \\
 \Delta & =r^{2}-2Mr+a^{2}+Q^{2} \\
-\Sigma & =r^{2}+a^{2}\cos ^{2}\theta
+\Sigma & =r^{2}+a^{2}\cos ^{2}\theta \\
+A & =-\frac{Qr}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)
 \end{align}$$
 
 similarly, define the ingoing E-F coordinate
@@ -300,5 +301,112 @@ $$\begin{align}
 then the metric becomes
 
 $$\begin{align}
-\mathrm{d}s^{2} & =-\left( 1-\frac{2Mr-Q^{2}}{\Sigma} \right)\mathrm{d}v^{2}+2\mathrm{d}v\mathrm{d}r-\frac{2a}{\Sigma}\left(2Mr-Q^{2}\right)\sin ^{2}\theta \mathrm{d}v\mathrm{d}\phi-2as
+\mathrm{d}s^{2} & =-\left( 1-\frac{2Mr-Q^{2}}{\Sigma} \right)\mathrm{d}v^{2}+2\mathrm{d}v\mathrm{d}r-\frac{2a}{\Sigma}\left(2Mr-Q^{2}\right)\sin ^{2}\theta \mathrm{d}v\mathrm{d}\varphi-2a\sin ^{2}\theta \mathrm{d}r\mathrm{d}\varphi \\
+ & +\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left((r^{2}+a^{2})^{2}-a^{2}\Delta \sin ^{2}\theta\right)\mathrm{d}\varphi ^{2}
 \end{align}$$
+
+the gauge field is given by
+
+$$\begin{align}
+A & =-\frac{Qr}{\Sigma}(\mathrm{d}v-a\sin ^{2}\theta \mathrm{d}\varphi)
+\end{align}$$
+
+horizon radii
+
+$$\begin{align}
+r_{\pm} & =M\pm\sqrt{ M^{2}-a^{2}-Q^{2} }, M^{2}> a^{2}+Q^{2}
+\end{align}$$
+
+the horizon Killing vector $\displaystyle{\xi ^{a}=\left( \frac{\partial}{\partial v} \right)^{a}+\Omega _{H}\left(\frac{\partial}{\partial \phi}\right)^{a}}$ is null and geodesic on the outer horizon satisfying $\displaystyle{\xi ^{a}\nabla _{a}\xi ^{b}=\kappa \xi ^{b}}$, then
+
+$$\begin{align}
+\Omega _{H} & =\frac{a}{r_{+}^{2}+a^{2}} \\
+\kappa & =\frac{r_{+}-r_{-}}{2Mr_{+}-Q^{2}}
+\end{align}$$
+
+the Noether charge corresponding to $\displaystyle{\xi^{\mu}}$ is
+
+$$\begin{align}
+H_{\xi,\mathrm{GR}} & =\int _{\Sigma}J_{\xi,\mathrm{GR}}=\frac{1}{16\pi}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}n^{\nu}(\nabla _{\nu}\xi _{\mu}-\nabla _{\mu}\xi _{\nu}) \\
+ & =\frac{M}{2}-\frac{Q^{2}}{4r_{+}} \\
+H_{\xi,\mathrm{EM}} & =\int _{\Sigma}J_{\xi,\mathrm{EM}}=-\frac{1}{2}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}n_{\nu}\nabla ^{\nu}(F^{\mu \rho}A_{\sigma}\xi ^{\sigma}) \\
+ & =\frac{Q^{2}}{4r_{+}} \\
+H_{\xi} & =\frac{M}{2}
+\end{align}$$
+...
+
+# De Sitter space
+
+the metric is
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-\mathrm{d}\tau ^{2}+l^{2}\cosh ^{2}\frac{\tau}{l}\left(\mathrm{d}\chi ^{2}+\sin ^{2}\chi\left(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\phi ^{2}\right)\right)
+\end{align}$$
+
+where $\displaystyle{l=\sqrt{ \frac{3}{\Lambda} }}$. suppose the observer is at the north pole of the $\displaystyle{S^{3}}$ where $\displaystyle{\chi=0}$. the coordinate transformation into the static system is then
+
+$$\begin{align}
+r & =l\cosh \frac{\tau}{l}\sin \chi \\
+t & =\frac{l}{2}\ln \frac{\cosh \frac{\tau}{l}\cos \chi+\sinh \frac{\tau}{l}}{\cosh \frac{\tau}{l}\cos \chi-\sinh \frac{\tau}{l}}
+\end{align}$$
+
+then the metric becomes
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-f(r)\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{f(r)}+r^{2}\left(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\phi ^{2}\right) \\
+f(r) & =1-\frac{r^{2}}{l^{2}}
+\end{align}$$
+
+the horizon $\displaystyle{r=l}$ is called the cosmological horizon. define the outgoing Eddington-Finkelstein coordinates
+
+$$\begin{align}
+\mathrm{d}u & =\mathrm{d}t-\frac{\mathrm{d}r}{f(r)}
+\end{align}$$
+
+then
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-f(r)\mathrm{d}u^{2}-2\mathrm{d}u\mathrm{d}r+r^{2}(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\phi ^{2})
+\end{align}$$
+
+the Killing vector $\displaystyle{\xi ^{\mu}=(1,0,0,0)}$, which gives the surface gravity
+
+$$\begin{align}
+\kappa & =-\frac{1}{2}\frac{\mathrm{d}}{\mathrm{d}r}f'(r)|_{r=l} \\
+ & =l^{-1}
+\end{align}$$
+
+and the Noether charge
+
+$$\begin{align}
+H_{\xi} & =\int _{\Sigma}J_{\xi} \\
+ & = \frac{3\pi}{\Lambda}
+\end{align}$$
+
+here
+
+$$\begin{align}
+\tau ^{\mu} & =\left(\frac{1}{\sqrt{ f(r) }},0,0,0\right) \\
+n^{\nu} & =\left(\frac{1}{\sqrt{ f(r) }},-\sqrt{ f(r) },0,0\right)
+\end{align}$$
+
+this result is agree with Gibbons-Hawking entropy.
+
+# Kottler spacetime
+
+the metric is
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-f(r)\mathrm{d}v^{2}+2\mathrm{d}v\mathrm{d}r+r^{2}(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\phi ^{2}) \\
+V(r) & =1-\frac{2M}{r}-\frac{\Lambda}{3}r^{2}
+\end{align}$$
+
+actually this is the Schwarzschild-de Sitter metric.
+
+...
+
+# conclusion
+
+gravitational entropy can be defined as a Noether charge of the horizon Killing vector. this definition does not rely on the notion of temperature and is applicable to horizons that are not necessarily associated with black holes.
+
+here some of the computations need to be checked again. 
