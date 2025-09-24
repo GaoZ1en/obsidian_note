@@ -281,3 +281,22 @@ $$\begin{align}
 J_{\xi} & =X_{\xi}\cdot \Theta-\xi \cdot L \\
  & =-\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho})+\frac{1}{4}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu}F_{\rho \sigma}F^{\rho \sigma}
 \end{align}$$
+
+at the same time, we have the $\displaystyle{\mathrm{U}(1)}$ gauge symmetry
+
+$$\tag{.}\begin{align}
+S & =-\int _{M}\mathrm{d}^{4}x\sqrt{ -g }F^{\mu \nu}\nabla _{\mu}\delta A_{\nu}
+\end{align}$$
+
+$$\begin{align}
+A\to A+\mathrm{d}\varepsilon \\
+ & =(A_{\mu}+\partial _{\mu}\varepsilon)\mathrm{d}x^{\mu}
+\end{align}$$
+
+$$\begin{align}
+
+\end{align}$$
+
+$$\begin{align}
+J_{\varepsilon} & =X_{\varepsilon}\cdot \Theta
+\end{align}$$
