@@ -57,7 +57,24 @@ $$\begin{align}
 in the final step we use the generating function of Jacobi polynomial
 
 $$\begin{align}
-\sum ^{\infty}_{n=0}P_{n}^{(\alpha,\beta)}\left(z\right)t^{n} & =2^{\alpha+\beta}R^{-1}(1-t+R)^{-\alpha}(1+t+R)^{-\beta}  \\
-R=R(z,t) & =\sqrt{ 1-2zt+t^{2} }
+\sum ^{\infty}_{n=0}t^{n}P_{n}^{(0,\Delta-1)}\left(x\right) & =(1+t)^{-\Delta}{}_{2}F_{1}\left(\frac{\Delta}{2},\frac{\Delta+1}{2};\Delta;\frac{2t(x+1)}{(1+t)^{2}}\right)
 \end{align}$$
 
+$$\begin{align}
+\sum ^{\infty}_{n=0}(e^{-2it})^{n}P_{n}^{(0,\Delta-1)}\left(\frac{1-r^{2}}{1+r^{2}}\right) & =\frac{1}{e^{-i\Delta t}2^{\Delta}\cos ^{\Delta} t}{}_{2}F_{1}\left( \frac{\Delta}{2},\frac{\Delta+1}{2};\Delta; \frac{1}{(1+r^{2})\cos ^{2}t} \right)
+\end{align}$$
+
+then
+
+$$\begin{align}
+\sum ^{\infty}_{n=0}\sum ^{\infty}_{m=-\infty}\phi ^{(+)}_{nm}(x_{1})\phi ^{(-)}_{nm}(x_{2}) & = \frac{1}{2\pi}(1+r^{2})^{-\Delta/2} \frac{1}{2^{\Delta}\cos ^{\Delta}t}{}_{2}F_{1}\left(\frac{\Delta}{2},\frac{\Delta+1}{2};\Delta; \frac{1}{(1+r^{2})\cos ^{2}t}\right) \\
+ & =\frac{1}{4\pi} \frac{(\sqrt{ 1+r^{2} }\cos t+\sqrt{ r^{2}\cos ^{2}t-\sin ^{2}t})^{1-\Delta}}{(r^{2}\cos ^{2}t -\sin ^{2}t)^{1/2}}
+\end{align}$$
+
+---
+
+now we will turn to Proca field
+
+$$\begin{align}
+
+\end{align}$$

@@ -4,13 +4,6 @@ S & =-m\int \mathrm{d}\tau \sqrt{ -g_{\mu \nu} \frac{\mathrm{d} x^{\mu}}{\mathrm
 \end{align}
 $$
 
-$$\tag{.}
-\begin{align}
-=m\int \mathrm{d}\tau  \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} & =m \int \mathrm{d}\tau  \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \int \mathrm{d}^{4}x \sqrt{ -g } \frac{\delta ^{4}(x-x(\tau))}{\sqrt{ -g }} \\
- & =\int \mathrm{d}^{4}x\sqrt{ -g } \int \mathrm{d}\tau  \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} \frac{\delta ^{4}(x-x(\tau))}{\sqrt{ -g }}
-\end{align}
-$$
-
 ---
 
 make a variation
