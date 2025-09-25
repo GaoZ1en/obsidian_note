@@ -33,4 +33,5 @@ inner product space. let $\displaystyle{V}$ be a linear space over field $\displ
 1. $\displaystyle{\forall \vec{a},\vec{b},\vec{c}\in V,\langle \vec{a},\vec{b}+\vec{c}\rangle=\langle \vec{a},\vec{b}\rangle+\langle \vec{a},\vec{c}\rangle}$
 2. $\displaystyle{\forall \vec{a},\vec{b}\in V,\forall \lambda \in F,\langle \vec{a},\lambda \vec{b}\rangle=\lambda \langle \vec{a},\vec{b}\rangle}$
 3. $\displaystyle{\forall \vec{a},\vec{b}\in V,\langle \vec{a},\vec{b}\rangle=\overline{\langle \vec{b},\vec{a}\rangle}}$
-4. 
+4. $\displaystyle{\forall \vec{a}\in V,\langle \vec{a},\vec{a}\rangle \geq 0}$ and $\displaystyle{\langle \vec{a},\vec{a}\rangle =0\iff \vec{a}=\vec{0}}$
+

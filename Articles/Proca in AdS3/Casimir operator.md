@@ -38,12 +38,41 @@ then we can write down the Casimir operator explicitly
 $$\begin{align}
 \mathcal{C} & =\mathcal{L}_{\xi_{0}}^{2}-\frac{1}{2}\left(\mathcal{L}_{\xi _{1}}\mathcal{L}_{\xi _{-1}}+\mathcal{L}_{\xi _{-1}}\mathcal{L}_{\xi_{1}}\right) \\
 \bar{\mathcal{C}} & =\mathcal{L}_{\bar{\xi}_{0}}^{2}-\frac{1}{2}\left(\mathcal{L}_{\bar{\xi}_{1}}\mathcal{L}_{\bar{\xi}_{-1}}+\mathcal{L}_{\bar{\xi}_{-1}}\mathcal{L}_{\bar{\xi}_{1}}\right) \\
-[C,\mathcal{L}_{\xi}]=[\mathcal{\bar{C}},\mathcal{L}_{\xi}]=[\mathcal{C},\mathcal{\bar{C}}]=0
+ & [C,\mathcal{L}_{\xi}]=[\mathcal{\bar{C}},\mathcal{L}_{\xi}]=[\mathcal{C},\mathcal{\bar{C}}]=0
 \end{align}$$
 
 we reorganize the Casimirs to
 
 $$\begin{align}
-(\mathcal{C}+\mathcal{\bar{C}})A^{\mu} & =-\frac{1}{2}\nabla ^{\mu}-A^{\mu} \\
-(\mathcal{C}-\mathcal{\bar{C}})A^{\mu} & =\nabla^{2}A^{\mu}-\nabla _{\nu}\nabla ^{\mu}A^{\nu}
+(\mathcal{C}+\mathcal{\bar{C}})A^{\mu} & =-\frac{1}{2}\nabla ^{2} A^{\mu}-A^{\mu} \\
+(\mathcal{C}-\mathcal{\bar{C}})^{2}A^{\mu} & =\nabla^{2}A^{\mu}-\nabla _{\nu}\nabla ^{\mu}A^{\nu}
 \end{align}$$
+
+the eom can be written as
+
+$$\begin{align}
+\nabla _{\mu}F^{\mu \nu} & =\mu ^{2}A^{\nu} \\
+\implies &  \begin{cases}
+\nabla _{\mu}A^{\mu} =0 \\
+\nabla ^{2}A^{\mu}-(\mu ^{2}-2)A^{\mu}=0
+\end{cases}
+\end{align}$$
+
+then
+
+$$\begin{align}
+(\mathcal{C}+\mathcal{\bar{C}}) & =-\frac{1}{2}\mu ^{2} \\
+(\mathcal{C}-\mathcal{\bar{C}})^{2} & =\mu ^{2} \\
+\implies  & \begin{cases}
+\mathcal{C} =-\frac{1}{4}\mu ^{2}-\frac{1}{2}\mu \\
+\mathcal{\bar{C}}=-\frac{1}{4}\mu ^{2}+\frac{1}{2}\mu
+\end{cases} \text{ or } \begin{cases}
+\mathcal{C}=-\frac{1}{4}\mu ^{2}+\frac{1}{2}\mu \\
+\mathcal{\bar{C}}=-\frac{1}{4}\mu ^{2}-\frac{1}{2}\mu
+\end{cases}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+{f^{+}_{l,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+2)t}(1+r^{2})^{-(\mu+2)/2}\xi _{1}^{\mu}
+\end{align}$$
+
