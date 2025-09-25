@@ -76,15 +76,17 @@ the action of Chern-Simons theory in 3-dimension is given by
 
 
 $$\begin{align}
-S & =\frac{k}{4\pi}\int _{M}\mathrm{d}^{3}x\varepsilon ^{\mu \nu \rho}\left(A^{a}_{\mu}\partial _{\nu}A^{a}_{\rho}+\frac{1}{3}f^{abc}A^{a}_{\mu}A^{b}_{\nu}A^{c}_{\rho}\right)
+S & =\frac{k}{4\pi}\int _{M}\mathrm{Tr}\left(A\wedge \mathrm{d}A+\frac{2}{3}A\wedge A\wedge A\right)  \\
+& =\frac{k}{4\pi}\int _{M}\mathrm{d}^{3}x\varepsilon ^{\mu \nu \rho}\left(A^{a}_{\mu}\partial _{\nu}A^{a}_{\rho}+\frac{1}{3}f^{abc}A^{a}_{\mu}A^{b}_{\nu}A^{c}_{\rho}\right)
 \end{align}$$
 
 take a variation of the action
 
-$$\tag{.}\begin{align}
-
+$$\begin{align}
+\delta S & =\frac{k}{4\pi}\int\mathrm{Tr}\left(\delta A\wedge \mathrm{d}A+A\wedge \mathrm{d}\delta A+2\delta A\wedge A\wedge A\right) \\
+ & =\frac{k}{4\pi}\int \mathrm{d}^{3}x\mathrm{Tr}\left(2\delta A\wedge(\mathrm{d}A+A\wedge A)-\mathrm{d}(\delta A\wedge A)\right) \\
+ & =\frac{k}{2\pi}\int \mathrm{d}^{3}x\mathrm{Tr}\left(\delta A\wedge F\right)-\frac{k}{4\pi}\int _{\Sigma _{f}-\Sigma _{i}}
 \end{align}$$
-
 ## nonlinear sigma model?
 
 ## gravity
