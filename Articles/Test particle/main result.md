@@ -49,11 +49,14 @@ where $\displaystyle{N}$ is spacetime region, and $\displaystyle{[\tau_{1},\tau_
 
 $$\tag{1.6}\begin{align}
 (-\nabla _{\mu}T^{\mu \nu}+F^{\nu \mu}j_{\mu})\xi _{\nu} & =\int _{\tau_{1}}^{\tau_{2}}\mathrm{d}\tau E_{x,\nu} \frac{\delta ^{4}(x-x(\tau))}{\sqrt{ -g }} \\
-\int _{N}\mathrm{d}^{4}x\sqrt{ -g }\nabla _{\mu}(T^{\mu \nu}\xi _{\nu}+j ^{\mu}A^{\nu}\xi _{\nu}) & =\int _{\tau_{1}}^{\tau_{2}}\mathrm{d}\tau  \frac{\mathrm{d}}{\mathrm{d}\tau}\left[ \left( mg_{\mu \nu} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}+qA_{\mu} \right)\xi ^{\mu} \right]
+ & \approx 0 \\
+\int _{N}\mathrm{d}^{4}x\sqrt{ -g }\nabla _{\mu}(T^{\mu \nu}\xi _{\nu}+j ^{\mu}A^{\nu}\xi _{\nu}) & =\int _{\tau_{1}}^{\tau_{2}}\mathrm{d}\tau  \frac{\mathrm{d}}{\mathrm{d}\tau}\left[ \left( mg_{\mu \nu} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}+qA_{\mu} \right)\xi ^{\mu} \right] \\
+ & =0
 \end{align}$$
 
-$$\tag{.}\begin{align}
-\left( m g_{\mu \nu} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}+qA_{\mu} \right)\xi ^{\mu}
+$$\tag{1.7}\begin{align}
+H_{\xi} & =X_{\xi}\cdot \theta \\
+ & =-\left( mg_{\mu \nu} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau}+qA_{\mu} \right)\xi ^{\mu}
 \end{align}$$
 
 ---

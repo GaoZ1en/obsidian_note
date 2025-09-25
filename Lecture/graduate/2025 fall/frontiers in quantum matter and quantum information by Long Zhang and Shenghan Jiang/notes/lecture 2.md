@@ -51,4 +51,13 @@ $$\begin{align}
 
 stability of SSB. consider a local perturbation $\displaystyle{\delta H=-\delta h\sum _{j}X_{j}}$ that not break the symmetry $\displaystyle{g}$, $\displaystyle{\delta h\ll J}$. degenerate perturbation theory tells us that it will appear a energy split $\displaystyle{\Delta \sim e^{-N}}$ between the two "ground states". when $\displaystyle{N\to \infty}$ the split would disappear, so the degeneracy is robust against small local perturbation that not break the symmetry.
 
-low 
+low energy exicitations. when $\displaystyle{h\gg J}$, the low energy excitation is one flip $\displaystyle{\ket{\Rightarrow,\leftarrow}}$, with energy $\displaystyle{2h}$. by perturbation theory, the effective Hamiltonian is
+
+$$\begin{align}
+H_{\mathrm{eff}} & =(2h+E_{0})\hat{1}-J\sum ^{N}_{j=1}\left(\ket{j+1} \bra{j} +\ket{j-1}\bra{j}  \right) \\
+& =(2h+E_{0})\hat{1}-2J\cos k\ket{k} \bra{k}  \\
+\ket{k} & = \frac{1}{\sqrt{ N }}\sum e^{ik\cdot j}\ket{j}  \\
+k & =\frac{2\pi}{N}n_{k},n_{k}=0,1,\dots,N-1
+\end{align}$$
+
+which is a Hamiltonian of free particle. when $\displaystyle{h\sim J}$, charge condensation, and we get SSB. 
