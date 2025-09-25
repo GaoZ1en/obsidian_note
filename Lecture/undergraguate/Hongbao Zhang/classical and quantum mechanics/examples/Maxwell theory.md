@@ -61,17 +61,36 @@ $$
 now we will prove that the action is invariant under conformal transformation
 
 $$\begin{align}
-X_{\xi} & =\int \mathrm{d}^{4}x\left(\mathcal{L}_{\xi}g_{\mu \nu}\frac{\delta}{\delta g_{\mu \nu}}+\mathcal{L}_{\xi}A_{\mu}\frac{\delta}{\delta A_{\mu}}\right) \\
+\delta _{\xi}g_{\mu \nu} & =\mathcal{L}_{\xi}g_{\mu \nu} \\
+\delta _{\xi}A_{\mu} & =\mathcal{L}_{\xi}A_{\mu}
+\end{align}$$
+
+where $\displaystyle{\xi ^{\mu}}$ satisfies the conformal Killing equation
+
+$$\begin{align}
 \nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu} & =\frac{2}{d}g_{\mu \nu}\nabla _{\rho}\xi ^{\rho}
 \end{align}$$
 
+write down the action and take a variation
+
 $$\begin{align}
 S & =-\frac{1}{4}\int \mathrm{d}^{d}x\sqrt{ -g }F_{\mu \nu}F^{\mu \nu} \\
- & =-\frac{1}{4}\int \mathrm{d}^{d}x\sqrt{ -g }g^{\mu \rho}g^{\nu \sigma}F_{\mu \nu}F_{\rho \sigma}
+\delta S & =-\frac{1}{2}\int \mathrm{d}^{d}x\sqrt{ -g }\left(F^{\mu}_{~\rho}F^{\nu \rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}\right)\delta g_{\mu \nu}-\int \mathrm{d}^{d}x\sqrt{ -g }F^{\mu \nu}\nabla _{\mu}\delta A_{\nu}
 \end{align}$$
 
-acting $\displaystyle{X_{\xi}}$ on the action
+then perform the conformal transformation
 
 $$\begin{align}
-X_{\xi}\cdot \delta S & =-\frac{1}{}
+\delta _{\xi} S & =-\frac{1}{2}\int \mathrm{d}^{d}x\sqrt{ -g }\left(F^{\mu}_{~\rho}F^{\nu \rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}\right)\left( \nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu} \right)-\int \mathrm{d}^{d}x\sqrt{ -g }F^{\mu \nu}\nabla _{\mu}\mathcal{L}_{\xi}A_{\nu} \\
+ & =-\frac{1}{d}\int \mathrm{d}^{d}x\sqrt{ -g }\left(F^{\mu}_{~\rho}F^{\nu \rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}\right)g_{\mu \nu}\nabla _{\rho}\xi ^{\rho}-\int \mathrm{d}^{d}x\sqrt{ -g }\nabla _{\mu}\left(F^{\mu \nu}\mathcal{L}_{\xi}A_{\nu}\right)-\int \mathrm{d}^{d}x\sqrt{ -g }\nabla _{\mu}F^{\mu \nu}\mathcal{L}_{\xi}A_{\nu} \\
+ & \approx-\frac{1}{d}\int \mathrm{d}^{d}x\sqrt{ -g }\left(F_{\mu \nu}F^{\mu \nu}-\frac{d}{4}F_{\rho \sigma}F^{\rho \sigma}\right)\nabla _{\rho}\xi ^{\rho}-\int \mathrm{d}^{d}x\sqrt{ -g }\nabla _{\mu}(F^{\mu \nu}\mathcal{L}_{\xi}A_{\nu}) \\
+ & \overset{d=4}{=}-\int \mathrm{d}^{d}x\sqrt{ -g }\nabla _{\mu}(F^{\mu \nu}\mathcal{L}_{\xi}A_{\nu})
+\end{align}$$
+
+$$\begin{align}
+X_{\xi} & =\int \mathrm{d}^{4}x\left( \delta _{\xi}g_{\mu \nu} \frac{\delta}{\delta g_{\mu \nu}}+\delta _{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}} \right)
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\delta _{\xi}S & =X_{\xi}\cdot \delta S
 \end{align}$$

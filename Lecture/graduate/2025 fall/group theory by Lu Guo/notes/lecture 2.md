@@ -20,3 +20,17 @@ T(\vec{e}_{i}) & =\sum _{j}M_{ji}\vec{f}_{j} \\
 T(\vec{a}) & =\sum _{i}a^{i}T(\vec{e}_{i})=\sum _{i,j}M_{ji}a^{i}\vec{f}_{j}
 \end{align}$$
 
+for a auto morphism $\displaystyle{T:V\to V}$, we can define the eigenvalue and eigenvector as
+
+$$\begin{align}
+T(\vec{a}) & =\lambda \vec{a}
+\end{align}$$
+
+where $\displaystyle{\lambda \in F}$ is called eigenvalue and $\displaystyle{\vec{a}\in V}$ is called eigenvector. the set of all eigenvalues of $\displaystyle{T}$ is called spectrum of $\displaystyle{T}$.
+
+inner product space. let $\displaystyle{V}$ be a linear space over field $\displaystyle{F}$, an inner product on $\displaystyle{V}$ is a map $\displaystyle{\langle \cdot,\cdot \rangle:V\times V\to F}$ satisfies the following axioms
+
+1. $\displaystyle{\forall \vec{a},\vec{b},\vec{c}\in V,\langle \vec{a},\vec{b}+\vec{c}\rangle=\langle \vec{a},\vec{b}\rangle+\langle \vec{a},\vec{c}\rangle}$
+2. $\displaystyle{\forall \vec{a},\vec{b}\in V,\forall \lambda \in F,\langle \vec{a},\lambda \vec{b}\rangle=\lambda \langle \vec{a},\vec{b}\rangle}$
+3. $\displaystyle{\forall \vec{a},\vec{b}\in V,\langle \vec{a},\vec{b}\rangle=\overline{\langle \vec{b},\vec{a}\rangle}}$
+4. 
