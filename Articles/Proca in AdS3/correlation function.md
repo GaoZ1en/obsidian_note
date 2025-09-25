@@ -11,16 +11,10 @@ $$\begin{align}
 C_{nm} & =\sqrt{ \frac{1}{2\pi}\frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}} }
 \end{align}$$
 
-$$\begin{align}
-\omega & =\int \mathrm{d}^{2}x \sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \phi \wedge \delta \phi \\
- & =\int \mathrm{d}^{2}x \frac{r}{1+r^{2}}(\partial _{t}\phi _{n_{1}m_{1}}\phi ^{*}_{n_{2}m_{2}}-\partial _{t}\phi ^{*}_{n_{2}m_{2}}\phi _{n_{1}m_{1}}) \\
- & =-i(\omega_{1}+\omega_{2})e^{-i(\omega_{1}-\omega_{2})t}\int \mathrm{d}r\mathrm{d}\phi \frac{r}{1+r^{2}}e^{i(m_{1}-m_{2})\phi} r^{|m_{1}|+|m_{2}|}(1+r^{2})^{-(2\Delta+|m_{1}|+|m_{2}|)/2}P^{(\Delta-1,|m_{1}|)}_{n_{1}}\left(\frac{r^{2}-1}{r^{2}+1}\right)P_{n_{2}}^{(\Delta-1,|m_{2}|)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & =-2\pi i(\omega _{n_{1}m_{1}}+\omega _{n_{2}m_{1}})e^{-i(\omega _{n_{1}m_{1}}-\omega _{n_{2}m_{1}})t}\int ^{\infty}_{0}\mathrm{d}r r^{2|m_{1}|+1}\left(1+r^{2}\right)^{-(\Delta+|m|+1)}P_{n_{1}}^{(\Delta-1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)P^{(\Delta-1,|m|)}_{n_{2}}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
- & =-4\pi i\omega _{n_{1}m_{1}} 
-\end{align}$$
+here we use
 
 $$\tag{.}\begin{align}
-
+\int _{0}^{\infty} \mathrm{d}r r^{2\beta+1}(1+r^{2})^{-(\alpha+\beta+2)}\left[P^{(\alpha,\beta}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} & =\frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{2(2n+\alpha+\beta+1)\Gamma(n+\alpha+\beta+1)n!}
 \end{align}$$
 
 and we have
@@ -56,8 +50,14 @@ without loss of generality we pick $\displaystyle{x_{1}=x, x_{2}=0}$, then
 $$\begin{align}
 \sum ^{\infty}_{n=0}\sum ^{\infty}_{m=-\infty}\phi ^{(+)}_{nm}(x_{1})\phi ^{(-)}_{nm}(x_{2}) & =\frac{1}{2\pi}\sum ^{\infty}_{n=0}\sum ^{\infty}_{m=-\infty}\frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}}e^{-i(\Delta+|m|+2n)t}e^{im\phi} \\
  & \times r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\times r_{2}^{|m|}(1+r_{2}^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r_{2}^{2}-1}{r_{2}^{2}+1}\right) \\
- & =\frac{1}{2\pi}\sum ^{\infty}_{n=0} e^{-i(\Delta+2n)t}(1+r^{2})^{-\Delta/2}P_{n}^{(0,\Delta-1)}\left(\frac{1-r^{2}}{1+r^{2}}\right)\binom{\Delta+n-1}{n} \\
- & =\frac{1}{2\pi}e^{-i\Delta t}(1+r^{2})^{-\Delta/2}\sum ^{\infty}_{n=0}e^{-2nit}P_{n}^{(0,\Delta-1)}\left(\frac{1-r^{2}}{1+r^{2}}\right)\binom{\Delta+n-1}{n}
+ & =\frac{1}{2\pi}\sum ^{\infty}_{n=0} e^{-i(\Delta+2n)t}(1+r^{2})^{-\Delta/2}P_{n}^{(0,\Delta-1)}\left(\frac{1-r^{2}}{1+r^{2}}\right) \\
+ & =\frac{1}{2\pi}e^{-i\Delta t}(1+r^{2})^{-\Delta/2}\sum ^{\infty}_{n=0}e^{-2nit}P_{n}^{(0,\Delta-1)}\left(\frac{1-r^{2}}{1+r^{2}}\right)
 \end{align}$$
 
+in the final step we use the generating function of Jacobi polynomial
+
+$$\begin{align}
+\sum ^{\infty}_{n=0}P_{n}^{(\alpha,\beta)}\left(z\right)t^{n} & =2^{\alpha+\beta}R^{-1}(1-t+R)^{-\alpha}(1+t+R)^{-\beta}  \\
+R=R(z,t) & =\sqrt{ 1-2zt+t^{2} }
+\end{align}$$
 
