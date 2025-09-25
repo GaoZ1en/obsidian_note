@@ -85,8 +85,10 @@ take a variation of the action
 $$\begin{align}
 \delta S & =\frac{k}{4\pi}\int\mathrm{Tr}\left(\delta A\wedge \mathrm{d}A+A\wedge \mathrm{d}\delta A+2\delta A\wedge A\wedge A\right) \\
  & =\frac{k}{4\pi}\int \mathrm{d}^{3}x\mathrm{Tr}\left(2\delta A\wedge(\mathrm{d}A+A\wedge A)-\mathrm{d}(\delta A\wedge A)\right) \\
- & =\frac{k}{2\pi}\int \mathrm{d}^{3}x\mathrm{Tr}\left(\delta A\wedge F\right)-\frac{k}{4\pi}\int _{\Sigma _{f}-\Sigma _{i}}
+ & =\frac{k}{2\pi}\int \mathrm{d}^{3}x\mathrm{Tr}\left(\delta A\wedge F\right)+\frac{k}{4\pi}\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{Tr}(A\wedge\delta A)
 \end{align}$$
+
+
 ## nonlinear sigma model?
 
 ## gravity
