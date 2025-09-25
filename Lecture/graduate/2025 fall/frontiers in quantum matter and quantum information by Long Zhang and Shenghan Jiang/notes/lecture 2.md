@@ -19,5 +19,34 @@ Z_{N+1} & =Z_{1},  \\
 this Hamiltonian has the following $\displaystyle{\mathbb{Z}_{2}}$ symmetry
 
 $$\begin{align}
-g & =
+g & =\prod ^{N}_{j=1}X_{j} \\
+[H,g] & =0
 \end{align}$$
+
+in the limit $\displaystyle{\frac{J}{h}\to 0}$, the ground state is $\displaystyle{\ket{\to,\to, \dots}}$, which is invariant under the action of $\displaystyle{g}$. and in the limit $\displaystyle{\frac{J}{h}\to \infty}$, the ground states are degenerate $\displaystyle{\ket{\uparrow,\uparrow, \dots}}$ or $\displaystyle{\ket{\downarrow,\downarrow, \dots}}$, which spontaneously breaks the symmetry $\displaystyle{g}$.
+
+one of the feature of SSB is the existstence of degenerate ground states...
+
+we introduce order parameter to probe SSB. order parameter is a local operator $\displaystyle{\mathcal{O}}$ that transforms non-trivially under the symmetry group $\displaystyle{G}$, i.e. $\displaystyle{g\mathcal{O}g^{-1}\neq \mathcal{O}}$. for example, we can choose $\displaystyle{Z_{j}}$ as the order parameter, since
+
+$$\begin{align}
+gZ_{j}g^{-1} & =-Z_{j}
+\end{align}$$
+
+in the non-SSB phase, the expectation value of order parameter is zero
+
+$$\begin{align}
+\braket{ \mathcal{O} } & = \braket{ g\mathcal{O}g^{-1} } =-\braket{ \mathcal{O} } \implies\braket{ \mathcal{O} } =0
+\end{align}$$
+
+while in the SSB phase, the expectation value of order parameter is non-zero. 
+
+ODLRO (off-diagonal long range order) is another feature of SSB, and can be used to distinguish non-SSB phase and SSB phase. consider the correlation function of order parameter
+
+$$\begin{align}
+\lim_{ |ij| \to \infty } \braket{ Z_{i}Z_{j} } & = \braket{ Z_{i} }\braket{ Z_{j} } \\
+ & =0, \text{ non-SSB phase} \\
+ & \neq 0, \text{ SSB phase}
+\end{align}$$
+
+stability of SSB. consider a perturbation $\displaystyle{\delta H=-\delta h\sum _{j}Z_{j}}$ that breaks the symmetry $\displaystyle{g}$, $\displaystyle{\delta h\ll J}$. degenerate perturbation theory 
