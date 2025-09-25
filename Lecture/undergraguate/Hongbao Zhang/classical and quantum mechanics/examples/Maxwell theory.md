@@ -56,3 +56,22 @@ H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
 \end{align}
 $$
 
+---
+
+now we will prove that the action is invariant under conformal transformation
+
+$$\begin{align}
+X_{\xi} & =\int \mathrm{d}^{4}x\left(\mathcal{L}_{\xi}g_{\mu \nu}\frac{\delta}{\delta g_{\mu \nu}}+\mathcal{L}_{\xi}A_{\mu}\frac{\delta}{\delta A_{\mu}}\right) \\
+\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu} & =\frac{2}{d}g_{\mu \nu}\nabla _{\rho}\xi ^{\rho}
+\end{align}$$
+
+$$\begin{align}
+S & =-\frac{1}{4}\int \mathrm{d}^{d}x\sqrt{ -g }F_{\mu \nu}F^{\mu \nu} \\
+ & =-\frac{1}{4}\int \mathrm{d}^{d}x\sqrt{ -g }g^{\mu \rho}g^{\nu \sigma}F_{\mu \nu}F_{\rho \sigma}
+\end{align}$$
+
+acting $\displaystyle{X_{\xi}}$ on the action
+
+$$\begin{align}
+X_{\xi}\cdot \delta S & =-\frac{1}{}
+\end{align}$$

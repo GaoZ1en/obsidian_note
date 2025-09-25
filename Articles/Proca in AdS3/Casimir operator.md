@@ -30,5 +30,20 @@ in the case of $\displaystyle{\mathrm{SL}(2,\mathbb{R})}$, the Killing metric is
 
 $$\begin{align}
 g_{ab} & = \frac{1}{2}f^{c}_{~ad}f^{d}_{~bc} \\
+ & =2\delta ^{0}_{a}\delta ^{0}_{b}-\left(\delta ^{1}_{a}\delta ^{-1}_{b}+\delta ^{-1}_{a}\delta ^{1}_{a}\right)
+\end{align}$$
 
+then we can write down the Casimir operator explicitly
+
+$$\begin{align}
+\mathcal{C} & =\mathcal{L}_{\xi_{0}}^{2}-\frac{1}{2}\left(\mathcal{L}_{\xi _{1}}\mathcal{L}_{\xi _{-1}}+\mathcal{L}_{\xi _{-1}}\mathcal{L}_{\xi_{1}}\right) \\
+\bar{\mathcal{C}} & =\mathcal{L}_{\bar{\xi}_{0}}^{2}-\frac{1}{2}\left(\mathcal{L}_{\bar{\xi}_{1}}\mathcal{L}_{\bar{\xi}_{-1}}+\mathcal{L}_{\bar{\xi}_{-1}}\mathcal{L}_{\bar{\xi}_{1}}\right) \\
+[C,\mathcal{L}_{\xi}]=[\mathcal{\bar{C}},\mathcal{L}_{\xi}]=[\mathcal{C},\mathcal{\bar{C}}]=0
+\end{align}$$
+
+we reorganize the Casimirs to
+
+$$\begin{align}
+(\mathcal{C}+\mathcal{\bar{C}})A^{\mu} & =-\frac{1}{2}\nabla ^{\mu}-A^{\mu} \\
+(\mathcal{C}-\mathcal{\bar{C}})A^{\mu} & =\nabla^{2}A^{\mu}-\nabla _{\nu}\nabla ^{\mu}A^{\nu}
 \end{align}$$
