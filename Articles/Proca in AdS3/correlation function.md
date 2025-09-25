@@ -5,10 +5,14 @@ S & =-\frac{1}{2}\int \mathrm{d}^{3}x\sqrt{ -g }\left(\nabla _{\mu}\phi \nabla ^
 \end{align}$$
 
 $$\begin{align}
-\phi _{nm} & =C_{nm}e^{-i\omega _{nm} t}e^{im\phi}r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P^{(\Delta-1,|m|)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+\phi ^{(+)} _{nm} & =C_{nm}e^{-i\omega _{nm} t}e^{im\phi}r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P^{(\Delta-1,|m|)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 \omega _{nm} & =\Delta+|m|+2n \\
 \Delta & =1+\sqrt{ 1+\mu ^{2} } \\
 C_{nm} & =\sqrt{ \frac{1}{2\pi}\frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}} }
+\end{align}$$
+
+$$\tag{.}\begin{align}
+
 \end{align}$$
 
 and we have
@@ -20,8 +24,31 @@ $$\begin{align}
 expand
 
 $$\begin{align}
-\phi(x) & =\sum ^{\infty}_{m=-\infty}\sum ^{\infty}_{n=0}
+\phi(x) & =\sum ^{\infty}_{n=0}\sum ^{\infty}_{m=-\infty}\left(\phi ^{(+)} _{nm}a_{nm}+\phi ^{(-)} _{nm}a^{\dagger}_{nm}\right)
 \end{align}$$
+
+and promote $\displaystyle{a_{nm}}$ and $\displaystyle{a_{nm}^{\dagger}}$ to annihilation and creation operators, we can define the vacuum state $\displaystyle{\ket{\Omega}}$ as
+
+$$\begin{align}
+a_{nm}\ket{\Omega} =0, \forall n,m
+\end{align}$$
+
+then the two-point correlation function is given by
+
+$$\begin{align}
+\braket{ \Omega|T\phi(x_{1})\phi(x_{2})|\Omega } & =\sum _{n_{1},n_{2}=0}^{\infty}\sum ^{\infty}_{m_{1},m_{2}=-\infty}\theta(t_{1}-t_{2})\braket{ \Omega|(\phi ^{(+)} _{n_{1}m_{1}}(x_{1})a_{n_{1}m_{1}}+\phi ^{(-)}_{n_{1}m_{1}}(x_{1})a^{\dagger}_{n_{1}m_{1}})(\phi ^{(+)}_{n_{2}m_{2}}(x_{2})a_{n_{2}m_{2}}+\phi ^{(-)}_{n_{2}m_{2}}a^{\dagger}_{n_{2}m_{2}})|\Omega } \\
+ &  +\theta(t_{2}-t_{1})\braket{ \Omega|(\phi ^{(+)}_{n_{2}m_{2}}(x_{2})a_{n_{2}m_{2}}+\phi ^{(-)}_{n_{2}m_{2}}a^{\dagger}_{n_{2}m_{2}})(\phi ^{(+)} _{n_{1}m_{1}}(x_{1})a_{n_{1}m_{1}}+\phi ^{(-)}_{n_{1}m_{1}}(x_{1})a^{\dagger}_{n_{1}m_{1}})|\Omega } \\
+ & =\sum ^{\infty}_{n_{1},n_{2}=0}\sum ^{\infty}_{m_{1},m_{2}=-\infty}\theta(t_{1}-t_{2})\phi ^{(+)}_{n_{1}m_{1}}(x_{1})\phi ^{(-)}_{n_{2}m_{2}}\braket{ \Omega|[a_{n_{1}m_{1}},a^{\dagger}_{n_{2}m_{2}}]|\Omega } \\
+ & +\theta(t_{2}-t_{1})\phi ^{(+)}_{n_{2}m_{2}}(x_{2})\phi ^{(-)}_{n_{1}m_{1}}\braket{ \Omega|[a_{n_{2}m_{2}},a^{\dagger}_{n_{1}m_{1}}]|\Omega }  \\
+ & =\sum ^{\infty}_{n=0}\sum ^{\infty}_{m=-\infty}\theta(t_{1}-t_{2})\phi ^{(+)}_{nm}(x_{1})\phi ^{(-)}_{nm}(x_{2})+\theta(t_{2}-t_{1})\phi ^{(+)}_{nm}(x_{2})\phi ^{(-)}_{nm}(x_{1})
+\end{align}$$
+
+$$\begin{align}
+\sum ^{\infty}_{n=0}\sum ^{\infty}_{m=-\infty}\phi ^{(+)}_{nm}(x_{1})\phi ^{(-)}_{nm}(x_{2}) & =\frac{1}{2\pi}\sum ^{\infty}_{n=0}\sum ^{\infty}_{m=-\infty}\frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}}e^{-i(\Delta+|m|+2n)(t_{1}-t_{2})}e^{im(\phi_{1}-\phi_{2})} \\
+ & \times r_{1}^{|m|}(1+r_{1}^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r_{1}^{2}-1}{r_{1}^{2}+1}\right)\times r_{2}^{|m|}(1+r_{2}^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r_{2}^{2}-1}{r_{2}^{2}+1}\right) \\
+ & =
+\end{align}$$
+
 
 ---
 
