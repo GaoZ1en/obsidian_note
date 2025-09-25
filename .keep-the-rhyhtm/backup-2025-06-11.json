@@ -122,7 +122,7 @@
       },
       {
         "date": "2025-05-26",
-        "filePath": "Articles/Test particle/some direct calculation.md",
+        "filePath": "Articles/Test particle/main result.md",
         "wordCountStart": 2038,
         "charCountStart": 0,
         "changes": [
@@ -234,7 +234,7 @@
       },
       {
         "date": "2025-05-27",
-        "filePath": "Articles/Test particle/some direct calculation.md",
+        "filePath": "Articles/Test particle/main result.md",
         "wordCountStart": 2368,
         "charCountStart": 0,
         "changes": [
@@ -24628,13 +24628,53 @@
             "timeKey": "16:30",
             "w": 40,
             "c": 259
+          },
+          {
+            "timeKey": "16:35",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "16:40",
+            "w": 1,
+            "c": 9
+          },
+          {
+            "timeKey": "17:20",
+            "w": -2,
+            "c": -12
+          },
+          {
+            "timeKey": "17:25",
+            "w": 5,
+            "c": 21
+          },
+          {
+            "timeKey": "17:30",
+            "w": 13,
+            "c": 90
+          },
+          {
+            "timeKey": "17:35",
+            "w": 12,
+            "c": 104
+          },
+          {
+            "timeKey": "17:40",
+            "w": 73,
+            "c": 325
+          },
+          {
+            "timeKey": "17:45",
+            "w": 17,
+            "c": 110
           }
         ],
         "id": 790
       },
       {
         "date": "2025-09-25",
-        "filePath": "Articles/Test particle/some direct calculation.md",
+        "filePath": "Articles/Test particle/main result.md",
         "wordCountStart": 2511,
         "charCountStart": 13330,
         "changes": [
@@ -24642,6 +24682,26 @@
             "timeKey": "15:25",
             "w": -98,
             "c": -514
+          },
+          {
+            "timeKey": "17:15",
+            "w": 0,
+            "c": -18
+          },
+          {
+            "timeKey": "17:20",
+            "w": -18,
+            "c": -101
+          },
+          {
+            "timeKey": "17:25",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "18:50",
+            "w": 12,
+            "c": 65
           }
         ],
         "id": 791
@@ -24689,6 +24749,30 @@
         "charCountStart": 0,
         "changes": [],
         "id": 795
+      },
+      {
+        "date": "2025-09-25",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from RQM to RQFT.md",
+        "wordCountStart": 2904,
+        "charCountStart": 15884,
+        "changes": [],
+        "id": 796
+      },
+      {
+        "date": "2025-09-25",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from NRQM to RQM.md",
+        "wordCountStart": 1849,
+        "charCountStart": 10496,
+        "changes": [],
+        "id": 797
+      },
+      {
+        "date": "2025-09-25",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from free QFT to interacting QFT.md",
+        "wordCountStart": 3007,
+        "charCountStart": 15814,
+        "changes": [],
+        "id": 798
       }
     ],
     "daysWithCompletedGoal": [

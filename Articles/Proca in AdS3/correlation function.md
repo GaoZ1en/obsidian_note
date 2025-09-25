@@ -68,7 +68,8 @@ then
 
 $$\begin{align}
 \sum ^{\infty}_{n=0}\sum ^{\infty}_{m=-\infty}\phi ^{(+)}_{nm}(x_{1})\phi ^{(-)}_{nm}(x_{2}) & = \frac{1}{2\pi}(1+r^{2})^{-\Delta/2} \frac{1}{2^{\Delta}\cos ^{\Delta}t}{}_{2}F_{1}\left(\frac{\Delta}{2},\frac{\Delta+1}{2};\Delta; \frac{1}{(1+r^{2})\cos ^{2}t}\right) \\
- & =\frac{1}{4\pi} \frac{(\sqrt{ 1+r^{2} }\cos t+\sqrt{ r^{2}\cos ^{2}t-\sin ^{2}t})^{1-\Delta}}{(r^{2}\cos ^{2}t -\sin ^{2}t)^{1/2}}
+ & =\frac{1}{4\pi} \frac{(\sqrt{ 1+r^{2} }\cos t+\sqrt{ r^{2}\cos ^{2}t-\sin ^{2}t})^{1-\Delta}}{(r^{2}\cos ^{2}t -\sin ^{2}t)^{1/2}} \\
+\braket{ \Omega|T\phi(x_{1})\phi(x_{2})|\Omega } & =\frac{1}{4\pi} \frac{(\sqrt{ 1+r^{2} }\cos t+\sqrt{ r^{2}\cos ^{2}t-\sin ^{2}t})^{1-\Delta}}{(r^{2}\cos ^{2}t -\sin ^{2}t)^{1/2}}
 \end{align}$$
 
 ---
