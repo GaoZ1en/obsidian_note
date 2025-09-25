@@ -80,6 +80,11 @@ S & =\frac{k}{4\pi}\int _{M}\mathrm{Tr}\left(A\wedge \mathrm{d}A+\frac{2}{3}A\we
 & =\frac{k}{4\pi}\int _{M}\mathrm{d}^{3}x\varepsilon ^{\mu \nu \rho}\left(A^{a}_{\mu}\partial _{\nu}A^{a}_{\rho}+\frac{1}{3}f^{abc}A^{a}_{\mu}A^{b}_{\nu}A^{c}_{\rho}\right)
 \end{align}$$
 
+$$\begin{align}
+\delta S & =\frac{k}{4\pi}\int _{M}\mathrm{d}^{3}x\varepsilon ^{\mu \nu \rho}\left(\delta A^{a}_{\mu}\partial _{\nu}A^{a}_{\rho}+A^{a}_{\mu}\partial _{\nu}\delta A^{a}_{\rho}+f^{abc}\delta A^{a}_{\mu}A^{b}_{\nu}A^{c}_{\rho}\right) \\
+ & =\frac{k}{4\pi}\int _{M}\mathrm{d}^{3}x\varepsilon ^{\mu \nu \rho}\delta A^{a}_{\mu}(\partial _{\nu}A^{a}_{\rho}+f^{abc}A^{b}_{\nu}A^{c}_{\rho})+\frac{k}{4\pi}\int _{M}\mathrm{d}^{3}x\varepsilon ^{\mu \nu \rho}\partial _{\nu}(A^{a}_{\mu}\delta A^{a}_{\rho})-\frac{k}{4\pi}\int _{M}\mathrm{d}^{3}x\varepsilon ^{\mu \nu \rho}
+\end{align}$$
+
 take a variation of the action
 
 $$\begin{align}
@@ -100,6 +105,11 @@ $$\begin{align}
 X_{\varepsilon}\cdot\delta S & =\frac{k}{2\pi}\int _{M} \mathrm{Tr}\left((\mathrm{d}\varepsilon+[A,\varepsilon])\wedge F\right)+\frac{k}{4\pi}\int _{M}\mathrm{d}\mathrm{Tr}\left(A\wedge(\mathrm{d}\varepsilon+[A,\varepsilon])\right) \\
  & =
 \end{align}$$
+
+$$\begin{align}
+X_{\varepsilon}\cdot\delta S & =\frac{k}{4\pi}\int _{M} \mathrm{Tr}\left((\mathrm{d}\varepsilon+[A,\varepsilon])\wedge \mathrm{d}A+A\wedge \mathrm{d}[A,\varepsilon]+2(\mathrm{d}\varepsilon+[A,\varepsilon])\wedge A\wedge A\right)
+\end{align}$$
+
 
 ## gravity
 
