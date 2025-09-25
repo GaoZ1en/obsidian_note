@@ -49,4 +49,5 @@ $$\begin{align}
  & \neq 0, \text{ SSB phase}
 \end{align}$$
 
-stability of SSB. consider a perturbation $\displaystyle{\delta H=-\delta h\sum _{j}Z_{j}}$ that breaks the symmetry $\displaystyle{g}$, $\displaystyle{\delta h\ll J}$. degenerate perturbation theory 
+stability of SSB. consider a perturbation $\displaystyle{\delta H=-\delta h\sum _{j}Z_{j}}$ that breaks the symmetry $\displaystyle{g}$, $\displaystyle{\delta h\ll J}$. degenerate perturbation theory tells us that it will appear a energy split $\displaystyle{\Delta \sim \frac{\delta h}{N}}$ between the two "ground states". when $\displaystyle{N\to \infty}$ the split would disappear, so the degeneracy is robust against small perturbation that breaks the symmetry.
+
