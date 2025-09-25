@@ -76,5 +76,8 @@ $$\begin{align}
 now we will turn to Proca field
 
 $$\begin{align}
-
+\braket{ \Omega|TA^{\mu_{1}}(x_{1})A^{\mu_{2}}(x_{2})|\Omega } & =\sum ^{\infty}_{n,\bar{n}=0}\theta(t_{1}-t_{2})\left[ {f^{(+)}_{l,n,\bar{n}}}^{\mu_{1}}(x_{1}){f^{(-)}_{l,n,\bar{n}}}^{\mu_{2}}(x_{2})+{f^{(+)}_{r,n,\bar{n}}}^{\mu_{1}}(x_{1}){f^{(-)}_{r,n,\bar{n}}}^{\mu_{2}}(x_{2}) \right] \\
+ & +\theta(t_{2}-t_{1})\left[ {f^{(+)}_{l,n,\bar{n}}}^{\mu_{1}}(x_{2}){f^{(-)}_{l,n,\bar{n}}}^{\mu_{2}}(x_{1})+{f^{(+)}_{r,n,\bar{n}}}^{\mu_{1}}(x_{2}){f^{(-)}_{r,n,\bar{n}}}^{\mu_{2}}(x_{1}) \right]
 \end{align}$$
+
+

@@ -2,9 +2,8 @@
 
 1. 协变相空间框架下的量子化
 	1. 继续考虑$\mathrm{AdS_{n}}$中的正则量子化
-	2. 看看最高权表示是怎么来的
-	3. 并计算关联函数
-	4. 后面思考推广到d维
+	2. 并计算关联函数
+	3. 后面思考推广到d维
 2. [Henneaux, Teitelboim] Quantization of gauge systems.pdf
 3. 可以借上课把若干经典读一读
 	1. large scale structure of spacetime by Hawking and Ellis
