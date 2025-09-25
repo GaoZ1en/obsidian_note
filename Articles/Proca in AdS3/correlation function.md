@@ -43,11 +43,23 @@ $$\begin{align}
  & =\sum ^{\infty}_{n=0}\sum ^{\infty}_{m=-\infty}\theta(t_{1}-t_{2})\phi ^{(+)}_{nm}(x_{1})\phi ^{(-)}_{nm}(x_{2})+\theta(t_{2}-t_{1})\phi ^{(+)}_{nm}(x_{2})\phi ^{(-)}_{nm}(x_{1})
 \end{align}$$
 
+without loss of generality we pick $\displaystyle{x_{1}=x, x_{2}=0}$, then
+
 $$\begin{align}
-\sum ^{\infty}_{n=0}\sum ^{\infty}_{m=-\infty}\phi ^{(+)}_{nm}(x_{1})\phi ^{(-)}_{nm}(x_{2}) & =\frac{1}{2\pi}\sum ^{\infty}_{n=0}\sum ^{\infty}_{m=-\infty}\frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}}e^{-i(\Delta+|m|+2n)(t_{1}-t_{2})}e^{im(\phi_{1}-\phi_{2})} \\
- & \times r_{1}^{|m|}(1+r_{1}^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r_{1}^{2}-1}{r_{1}^{2}+1}\right)\times r_{2}^{|m|}(1+r_{2}^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r_{2}^{2}-1}{r_{2}^{2}+1}\right) \\
- & =
+\sum ^{\infty}_{n=0}\sum ^{\infty}_{m=-\infty}\phi ^{(+)}_{nm}(x_{1})\phi ^{(-)}_{nm}(x_{2}) & =\frac{1}{2\pi}\sum ^{\infty}_{n=0}\sum ^{\infty}_{m=-\infty}\frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}}e^{-i(\Delta+|m|+2n)t}e^{im\phi} \\
+ & \times r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\times r_{2}^{|m|}(1+r_{2}^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r_{2}^{2}-1}{r_{2}^{2}+1}\right) \\
+ & =\frac{1}{2\pi}\sum ^{\infty}_{n=0} \binom{\Delta+n-1}{n}e^{-i(\Delta+2n)t}(1+r^{2})^{-\Delta/2}P_{n}^{(\Delta-1,0)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & =\frac{1}{2\pi}e^{-i\Delta t}(1+r^{2})^{-\Delta/2}\sum ^{\infty}_{n=0}(-e^{-2it})^{n}P_{n}^{(0,\Delta-1)}\left(\frac{1-r^{2}}{1+r^{2}}\right)
 \end{align}$$
+
+here we use
+
+$$\begin{align}
+\sum ^{\infty}_{n=0}P_{n}^{(\alpha,\beta)}(z)t^{n} & =2^{\alpha+\beta}R^{-1}(1-t+R)^{-\alpha}(1+t+R)^{-\beta} \\
+R(z,0) & =(1-2zt+t^{2})^{1/2}
+\end{align}$$
+
+
 
 
 ---
