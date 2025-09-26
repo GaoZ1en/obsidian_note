@@ -129,7 +129,7 @@ where $\displaystyle{M}$ is the ADM mass (in some former note we have verified t
 
 $$\tag{1.14}
 \begin{align}
-\int _{B}(\delta Q^{\mathrm{GR}}_{\xi}-\xi \cdot \Theta ^{\mathrm{GR}}) & =\int _{B}\delta Q^{\mathrm{GR}}_{\xi}=\frac{\kappa}{8\pi}\delta A_{B}
+\int _{\infty}(\delta Q^{\mathrm{GR}}_{\xi}-\xi \cdot \Theta ^{\mathrm{GR}}) & =\int _{\infty}\delta Q^{\mathrm{GR}}_{\xi}=\frac{\kappa}{8\pi}\delta A_{B}
 \end{align}
 $$
 
@@ -137,7 +137,7 @@ where $\displaystyle{A}$ is the area of the horizon (Black hole entropy is Noeth
 
 $$\tag{1.15}
 \begin{align}
-\int _{B}\left(\delta Q^{\mathrm{EM}}_{\xi}-\xi \cdot \Theta ^{\mathrm{EM}}\right) & =\int _{B}\delta Q_{\xi}^{\mathrm{EM}}=\Phi _{H}\delta Q_{B}
+\int _{\infty}\left(\delta Q^{\mathrm{EM}}_{\xi}-\xi \cdot \Theta ^{\mathrm{EM}}\right) & =\int _{\infty}\delta Q_{\xi}^{\mathrm{EM}}=\Phi _{H}\delta Q_{B}
 \end{align}
 $$
 
@@ -216,8 +216,8 @@ so $\displaystyle{\tilde{\mathbf{C}}_{\xi,\mathrm{GR}}}$ and $\displaystyle{\til
 
 $$\tag{2.6}
 \begin{align}
-\int _{B}\left(\delta \mathbf{Q}_{\xi,\mathrm{GR}}-\xi \cdot \Theta _{\mathrm{GR}}\right) & =\int _{B}\delta \mathbf{Q}_{\xi,\mathrm{GR}}=\frac{\kappa}{8\pi}\delta A_{B} \\
-\int _{B}(\delta \mathbf{Q}_{\xi,\mathrm{EM}}-\xi \cdot \Theta _{\mathrm{EM}}) & = \Phi _{H}\delta Q_{B}
+\int _{\infty}\left(\delta \mathbf{Q}_{\xi,\mathrm{GR}}-\xi \cdot \Theta _{\mathrm{GR}}\right) & =\int _{\infty}\delta \mathbf{Q}_{\xi,\mathrm{GR}}=\frac{\kappa}{8\pi}\delta A_{B} \\
+\int _{\infty}(\delta \mathbf{Q}_{\xi,\mathrm{EM}}-\xi \cdot \Theta _{\mathrm{EM}}) & = \Phi _{H}\delta Q_{B}
 \end{align}
 $$
 
@@ -239,7 +239,7 @@ M^{2} & =\frac{J^{2}}{M^{2}}+Q^{2}
 \end{align}
 $$
 
-make a perturbation of this black hole which violate the W3C.
+make a perturbation of this black hole which violate the WGC.
 
 $$\tag{3.2}
 \begin{align}
