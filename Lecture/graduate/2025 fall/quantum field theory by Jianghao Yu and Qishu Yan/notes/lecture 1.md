@@ -5,3 +5,8 @@ references:
 
 ---
 
+struggle with infinities
+1. UV
+2. IR
+3. vacuum energy
+
