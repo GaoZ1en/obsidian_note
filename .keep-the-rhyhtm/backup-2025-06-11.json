@@ -24863,6 +24863,183 @@
         "charCountStart": 15814,
         "changes": [],
         "id": 798
+      },
+      {
+        "date": "2025-09-26",
+        "filePath": "TODO.md",
+        "wordCountStart": 6177,
+        "charCountStart": 30986,
+        "changes": [
+          {
+            "timeKey": "07:20",
+            "w": 10,
+            "c": 143
+          },
+          {
+            "timeKey": "07:25",
+            "w": -10,
+            "c": -142
+          }
+        ],
+        "id": 799
+      },
+      {
+        "date": "2025-09-26",
+        "filePath": "Note/useful results/covariant phase space formalism.md",
+        "wordCountStart": 1131,
+        "charCountStart": 5815,
+        "changes": [],
+        "id": 800
+      },
+      {
+        "date": "2025-09-26",
+        "filePath": "Articles/Proca in AdS3/correlation function.md",
+        "wordCountStart": 1213,
+        "charCountStart": 5168,
+        "changes": [],
+        "id": 801
+      },
+      {
+        "date": "2025-09-26",
+        "filePath": "Articles/Test particle/main result.md",
+        "wordCountStart": 2407,
+        "charCountStart": 12762,
+        "changes": [],
+        "id": 802
+      },
+      {
+        "date": "2025-09-26",
+        "filePath": "Articles/Test particle/read note for black hole entropy.md",
+        "wordCountStart": 2084,
+        "charCountStart": 11593,
+        "changes": [
+          {
+            "timeKey": "07:45",
+            "w": 0,
+            "c": 35
+          }
+        ],
+        "id": 803
+      },
+      {
+        "date": "2025-09-26",
+        "filePath": "Articles/Test particle/WCCC.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "07:45",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "07:50",
+            "w": 4,
+            "c": 34
+          },
+          {
+            "timeKey": "07:55",
+            "w": 59,
+            "c": 313
+          },
+          {
+            "timeKey": "08:00",
+            "w": 4,
+            "c": 26
+          },
+          {
+            "timeKey": "08:05",
+            "w": 29,
+            "c": 147
+          },
+          {
+            "timeKey": "08:10",
+            "w": 119,
+            "c": 704
+          },
+          {
+            "timeKey": "08:15",
+            "w": 99,
+            "c": 462
+          },
+          {
+            "timeKey": "08:20",
+            "w": -25,
+            "c": -162
+          }
+        ],
+        "id": 804
+      },
+      {
+        "date": "2025-09-26",
+        "filePath": "Literature Notes/Gravitational Entropy (2509.10921v1).md",
+        "wordCountStart": 3233,
+        "charCountStart": 16922,
+        "changes": [],
+        "id": 805
+      },
+      {
+        "date": "2025-09-26",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "08:25",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 806
+      },
+      {
+        "date": "2025-09-26",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/notes/lecture 1.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "08:25",
+            "w": 1,
+            "c": 20
+          },
+          {
+            "timeKey": "08:35",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "09:10",
+            "w": 1,
+            "c": -5
+          },
+          {
+            "timeKey": "09:15",
+            "w": 2,
+            "c": 16
+          },
+          {
+            "timeKey": "09:20",
+            "w": 16,
+            "c": 94
+          },
+          {
+            "timeKey": "09:25",
+            "w": 9,
+            "c": 47
+          },
+          {
+            "timeKey": "09:40",
+            "w": -1,
+            "c": -4
+          },
+          {
+            "timeKey": "10:05",
+            "w": 10,
+            "c": 55
+          }
+        ],
+        "id": 807
       }
     ],
     "daysWithCompletedGoal": [
