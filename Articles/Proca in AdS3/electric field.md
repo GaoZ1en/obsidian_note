@@ -145,5 +145,5 @@ $$\tag{.}\begin{align}
 \end{align}$$
 
 $$\tag{.}\begin{align}
--1-4r^{2}+r^{4}+2(1-r^{2})
+1-4r^{2}-r^{4}
 \end{align}$$
