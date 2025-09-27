@@ -93,3 +93,15 @@ $$\begin{align}
 \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}& =(-i)^{n+\bar{n}}e^{-i(\mu+2+n+\bar{n})t}e^{i(n-\bar{n})\phi} \frac{\Gamma(\bar{n}+1)\Gamma(\mu+n+2)}{\Gamma(\mu+2)}r^{n-\bar{n}}(1+r^{2})^{-(\mu+2+n-\bar{n})/2}P_{\bar{n}}^{(\mu+1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
  & =(-i)^{n+\bar{n}}e^{-i(\mu+2+n+\bar{n})t}e^{i(n-\bar{n})\phi} \frac{\Gamma(n+1)\Gamma(\mu+\bar{n}+2)}{\Gamma(\mu+2)}r^{\bar{n}-n}(1+r^{2})^{-(\mu+2+\bar{n}-n)/2}P_{n}^{(\mu+1,\bar{n}-n)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
+
+
+$$\begin{align}
+\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}{\huge_|}_{(t,r,\phi)=(0,0,0)} & =\frac{\Gamma(n+1)\Gamma(\mu+n+2)}{\Gamma(\mu+2)}\delta _{n,\bar{n}}
+\end{align}$$
+
+$$\begin{align}
+\sum ^{\infty}_{n,\bar{n}=0}{f^{(+)}}^{\mu_{1}}_{l,n,\bar{n}}(x_{1}){f^{(-)}_{l,n,\bar{n}}}^{\mu_{2}}(0) & =\sum ^{\infty}_{n,\bar{n}=0}{f^{(+)}_{l,n,\bar{n}}}^{\mu_{1}}(x_{1}) \sqrt{ \frac{1}{n!\bar{n}!(\mu+2)_{n}(\mu)_{\bar{n}}} } \sqrt{ \frac{\mu+1}{\pi \mu} }\left(\frac{\Gamma(n+1)\Gamma(\mu+n+2)}{\Gamma(\mu+2)}\delta _{n,\bar{n}}\xi ^{\mu_{2}}_{1}\right. \\
+ & \left.+2i \frac{\Gamma(n+1)\Gamma(\mu+n+1)}{\Gamma(\mu+2)}\delta _{n-1,\bar{n}}\xi _{0}^{\mu_{2}}-\frac{\Gamma(n+1)\Gamma(\mu+n)}{\Gamma(\mu+2)}\delta _{n-2,\bar{n}}\xi _{-1}^{\mu_{2}}\right) \\
+ & =\sum ^{\infty}_{\bar{n}=0}{f^{(+)}_{l,\bar{n},\bar{n}}}^{\mu_{1}} \sqrt{ \frac{\Gamma(\mu+\bar{n}+2)}{\Gamma(\mu+\bar{n})\mu ^{2} \pi } }\xi _{1}^{\mu_{2}}+2i\sum ^{\infty}_{\bar{n}=0}{f^{(+)}_{l,\bar{n}+1,\bar{n}}}^{\mu_{1}} \sqrt{ \frac{\Gamma(\mu+\bar{n}+2)(\bar{n}+1)}{(\mu+\bar{n}+2)\Gamma(\mu+\bar{n})\pi \mu ^{2}} }\xi _{0}^{\mu_{2}} \\
+ & -\sum ^{\infty}_{\bar{n}=0}{f^{(+)}_{l,\bar{n}+2,\bar{n}}}^{\mu_{1}}\sqrt{ \frac{\Gamma(\mu+2)\Gamma(\mu)}{\Gamma(\bar{n}+3)\Gamma(\bar{n}+1)\Gamma(\mu+\bar{n}+4)\Gamma(\mu+\bar{n})\Gamma} }
+\end{align}$$
