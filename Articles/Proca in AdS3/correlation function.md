@@ -100,8 +100,8 @@ $$\begin{align}
 \end{align}$$
 
 $$\begin{align}
-\sum ^{\infty}_{n,\bar{n}=0}{f^{(+)}}^{\mu_{1}}_{l,n,\bar{n}}(x_{1}){f^{(-)}_{l,n,\bar{n}}}^{\mu_{2}}(0) & =\sum ^{\infty}_{n,\bar{n}=0}{f^{(+)}_{l,n,\bar{n}}}^{\mu_{1}}(x_{1}) \sqrt{ \frac{1}{n!\bar{n}!(\mu+2)_{n}(\mu)_{\bar{n}}} } \sqrt{ \frac{\mu+1}{\pi \mu} }\left(\frac{\Gamma(n+1)\Gamma(\mu+n+2)}{\Gamma(\mu+2)}\delta _{n,\bar{n}}\xi ^{\mu_{2}}_{1}\right. \\
+\sum ^{\infty}_{n,\bar{n}=0}{f^{(+)}}^{\mu_{1}}_{l,n,\bar{n}}(x_{1}){f^{(-)}_{l,n,\bar{n}}}^{\mu_{2}}(0) & =\sum ^{\infty}_{n,\bar{n}=0}{f^{(+)}_{l,n,\bar{n}}}^{\mu_{1}}(x_{1}) \sqrt{ \frac{1}{n!\bar{n}!(\mu)_{n}(\mu+2)_{\bar{n}}} } \sqrt{ \frac{\mu+1}{\pi \mu} }\left(\frac{\Gamma(n+1)\Gamma(\mu+n+2)}{\Gamma(\mu+2)}\delta _{n,\bar{n}}\xi ^{\mu_{2}}_{1}\right. \\
  & \left.+2i \frac{\Gamma(n+1)\Gamma(\mu+n+1)}{\Gamma(\mu+2)}\delta _{n-1,\bar{n}}\xi _{0}^{\mu_{2}}-\frac{\Gamma(n+1)\Gamma(\mu+n)}{\Gamma(\mu+2)}\delta _{n-2,\bar{n}}\xi _{-1}^{\mu_{2}}\right) \\
- & =\sum ^{\infty}_{\bar{n}=0}{f^{(+)}_{l,\bar{n},\bar{n}}}^{\mu_{1}} \sqrt{ \frac{\Gamma(\mu+\bar{n}+2)}{\Gamma(\mu+\bar{n})\mu ^{2} \pi } }\xi _{1}^{\mu_{2}}+2i\sum ^{\infty}_{\bar{n}=0}{f^{(+)}_{l,\bar{n}+1,\bar{n}}}^{\mu_{1}} \sqrt{ \frac{\Gamma(\mu+\bar{n}+2)(\bar{n}+1)}{(\mu+\bar{n}+2)\Gamma(\mu+\bar{n})\pi \mu ^{2}} }\xi _{0}^{\mu_{2}} \\
- & -\sum ^{\infty}_{\bar{n}=0}{f^{(+)}_{l,\bar{n}+2,\bar{n}}}^{\mu_{1}}\sqrt{ \frac{\Gamma(\mu+2)\Gamma(\mu)}{\Gamma(\bar{n}+3)\Gamma(\bar{n}+1)\Gamma(\mu+\bar{n}+4)\Gamma(\mu+\bar{n})\Gamma} }
+ & =\sum ^{\infty}_{\bar{n}=0}{f^{(+)}_{l,\bar{n},\bar{n}}}^{\mu_{1}} \sqrt{ \frac{(\mu+\bar{n}+1)(\mu+\bar{n})}{\mu ^{2} \pi } }\xi _{1}^{\mu_{2}}+\sum ^{\infty}_{\bar{n}=0}{f^{(+)}_{l,\bar{n}+1,\bar{n}}}^{\mu_{1}}\sqrt{ \frac{(\bar{n}+1)(\mu+\bar{n}+1)}{\pi \mu ^{2}} }\xi_{0}^{\mu_{2}} \\
+ & -\sum ^{\infty}_{\bar{n}=0}{f^{(+)}_{l,\bar{n}+2,\bar{n}}}^{\mu_{1}}\sqrt{ \frac{(\bar{n}+2)(\bar{n}+1)}{\pi \mu ^{2}} }\xi _{-1}^{\mu_{2}}
 \end{align}$$
