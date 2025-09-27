@@ -1,4 +1,4 @@
-$$\begin{align}
+t$$\begin{align}
 \mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi)^{2} \\
 \Delta & =r^{2}-2Mr+a^{2}+Q^{2} \\
 \Sigma & =r^{2}+a^{2}\cos ^{2}\theta \\
