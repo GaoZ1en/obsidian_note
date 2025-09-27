@@ -105,14 +105,6 @@ X_{\varepsilon}\cdot\delta S & =\frac{k}{4\pi}\int _{M} \mathrm{Tr}\left((\mathr
 \end{align}$$
 
 
-then
-
-$$\begin{align}
-H_{\varepsilon} & =X_{\varepsilon}\cdot \theta-\alpha _{\xi} \\
- & =\frac{k}{4\pi}\int _{\Sigma}\mathrm{Tr}(A\wedge(\mathrm{d}\varepsilon+[A,\varepsilon]))-\frac{k}{4\pi}\int _{\Sigma}\mathrm{Tr}(A\wedge(\mathrm{d}\varepsilon+[A,\varepsilon])) \\
- & =0
-\end{align}$$
-
 ## gravity
 
 ### general relativity with Gibbons-Hawking-York term
