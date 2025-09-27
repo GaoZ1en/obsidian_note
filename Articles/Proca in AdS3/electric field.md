@@ -79,5 +79,41 @@ A_{0,0}^{\mu} & =A(t,r,\phi)\xi_{1}^{\mu}+B(t,r,\phi)\bar{\xi}_{1}^{\mu}
 \end{align}$$
 
 $$\begin{align}
-\mathcal{L}_{\xi_{1}}A_{0,0}^{\mu} & =\mathcal{}
+\mathcal{L}_{\xi_{1}}A_{0,0}^{\mu} & =\mathcal{\mathcal{L}}_{\xi_{1}}A\xi _{1}^{\mu}+\mathcal{L}_{\xi_{1}}B\bar{\xi}_{1}^{\mu}=0 \\
+\mathcal{L}_{\bar{\xi}_{1}}A_{0,0}^{\mu} & =\mathcal{L}_{\bar{\xi}_{1}}A\xi _{1}^{\mu}+\mathcal{L}_{\bar{\xi}_{1}}B\bar{\xi}_{1}^{\mu}=0
+\end{align}$$
+
+$$\begin{align}
+(r(1+r^{2})^{-1/2}\partial _{t}A-i(1+r^{2})^{1/2}\partial _{r}A-r^{-1}(1+r^{2})^{1/2}\partial _{\phi}A)\xi _{1}^{\mu} \\
++(r(1+r^{2})^{-1/2}\partial _{t}B-i(1+r^{2})^{1/2}\partial _{r}B-r^{-1}(1+r^{2})^{1/2}\partial _{\phi}B)\bar{\xi}_{1}^{\mu} & =0
+\end{align}$$
+
+$$\tag{.}\begin{align}
+(r(1+r^{2})^{-1/2}\partial _{t}A-i(1+r^{2})^{1/2}\partial _{r}A-r^{-1}(1+r^{2})^{1/2}\partial _{\phi}A) \frac{1}{2}e^{i(t-\phi)} \\
+\pm(r(1+r^{2})^{-1/2}\partial _{t}B-i(1+r^{2})^{1/2}\partial _{r}B-r^{-1}(1+r^{2})^{1/2}\partial _{\phi}B) \frac{1}{2}e^{i(t+\phi)} & =0 \\
+\implies r(1+r^{2})^{-1/2}\partial _{t}A-i(1+r^{2})^{1/2}\partial _{r}A-r^{-1}(1+r^{2})^{1/2}\partial _{\phi}A & =0 \\
+r(1+r^{2})^{-1/2}\partial _{t}A-i(1+r^{2})^{1/2}\partial _{r}A+r^{-1}(1+r^{2})^{1/2}\partial _{\phi}A & =0 \\
+\implies r(1+r^{2})^{-1/2}\partial _{t}A-i(1+r^{2})^{1/2}\partial _{r}A & =0 \\
+\partial _{\phi}A & =0
+\end{align}$$
+
+$$\begin{align}
+A & =e^{-i\alpha t}(1+r^{2})^{\beta} \\
+\implies \alpha & =-2\beta
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\implies \begin{cases}
+A & = ?\\
+B & =?
+\end{cases}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
+\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
 \end{align}$$

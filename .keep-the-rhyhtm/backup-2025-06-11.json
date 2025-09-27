@@ -25057,6 +25057,11 @@
             "timeKey": "10:30",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "13:15",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 808
@@ -25074,6 +25079,144 @@
           }
         ],
         "id": 809
+      },
+      {
+        "date": "2025-09-27",
+        "filePath": "Articles/Test particle/WCCC.md",
+        "wordCountStart": 289,
+        "charCountStart": 1524,
+        "changes": [
+          {
+            "timeKey": "13:25",
+            "w": 1,
+            "c": 1
+          }
+        ],
+        "id": 810
+      },
+      {
+        "date": "2025-09-27",
+        "filePath": "Note/useful results/covariant phase space formalism.md",
+        "wordCountStart": 1131,
+        "charCountStart": 5815,
+        "changes": [],
+        "id": 811
+      },
+      {
+        "date": "2025-09-27",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/notes/lecture 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:45",
+            "w": 22,
+            "c": 126
+          }
+        ],
+        "id": 812
+      },
+      {
+        "date": "2025-09-27",
+        "filePath": "Note/Physics/Miscellaneous/graviton.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:45",
+            "w": 5,
+            "c": 24
+          },
+          {
+            "timeKey": "13:50",
+            "w": 65,
+            "c": 307
+          },
+          {
+            "timeKey": "13:55",
+            "w": 4,
+            "c": 32
+          },
+          {
+            "timeKey": "14:00",
+            "w": 295,
+            "c": 1381
+          }
+        ],
+        "id": 813
+      },
+      {
+        "date": "2025-09-27",
+        "filePath": "Articles/Proca in AdS3/electric field.md",
+        "wordCountStart": 600,
+        "charCountStart": 2707,
+        "changes": [
+          {
+            "timeKey": "14:05",
+            "w": 57,
+            "c": 296
+          },
+          {
+            "timeKey": "14:10",
+            "w": 79,
+            "c": 380
+          },
+          {
+            "timeKey": "14:20",
+            "w": -15,
+            "c": -58
+          },
+          {
+            "timeKey": "14:25",
+            "w": 4,
+            "c": 33
+          },
+          {
+            "timeKey": "14:30",
+            "w": 72,
+            "c": 307
+          },
+          {
+            "timeKey": "14:35",
+            "w": 241,
+            "c": 1109
+          },
+          {
+            "timeKey": "14:40",
+            "w": 246,
+            "c": 831
+          },
+          {
+            "timeKey": "14:45",
+            "w": 10,
+            "c": 61
+          }
+        ],
+        "id": 814
+      },
+      {
+        "date": "2025-09-27",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [],
+        "id": 815
+      },
+      {
+        "date": "2025-09-27",
+        "filePath": "Articles/Proca in AdS3/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 816
+      },
+      {
+        "date": "2025-09-27",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13738,
+        "changes": [],
+        "id": 817
       }
     ],
     "daysWithCompletedGoal": [
@@ -25143,7 +25286,8 @@
       "2025-09-21",
       "2025-09-22",
       "2025-09-23",
-      "2025-09-25"
+      "2025-09-25",
+      "2025-09-27"
     ]
   }
 }
