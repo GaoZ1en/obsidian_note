@@ -54,5 +54,30 @@ $$\tag{.}\begin{align}
 4z(1-z)\partial _{z}^{2}\tilde{A}^{r}-8z\partial _{z}\tilde{A}^{r}+\left(\omega ^{2}+\frac{1}{z}-\frac{m^{2}-1}{1-z}\right)\tilde{A}^{r} & =0
 \end{align}$$
 
-let $\displaystyle{\tilde{A}^{r}=z^{1/2}(1-z)^{(m-1)/2}g}$
 
+
+---
+
+following the same procedure as highest weight formalism in Proca field
+
+$$\begin{align}
+(\mathcal{C}+\mathcal{\bar{C}})A^{\mu} & =-\frac{1}{2}\nabla ^{2}A^{\mu}-A^{\mu}=0 \\
+(\mathcal{C}-\mathcal{\bar{C}})^{2}A^{\mu} & =\nabla ^{2}A^{\mu}-\nabla _{\nu}\nabla ^{\mu}A^{\nu}=0 \\
+\implies \mathcal{C}=\mathcal{\bar{C}} & =0
+\end{align}$$
+
+the highest weight mode $\displaystyle{A_{0,0}}$ satisfies
+
+$$\begin{align}
+\mathcal{L}_{\xi_{1}}A_{0,0}^{\mu} & =\mathcal{L}_{\bar{\xi}_{1}}A_{0,0}^{\mu}=0
+\end{align}$$
+
+suppose
+
+$$\begin{align}
+A_{0,0}^{\mu} & =A(t,r,\phi)\xi_{1}^{\mu}+B(t,r,\phi)\bar{\xi}_{1}^{\mu}
+\end{align}$$
+
+$$\begin{align}
+\mathcal{L}_{\xi_{1}}A_{0,0}^{\mu} & =\mathcal{}
+\end{align}$$
