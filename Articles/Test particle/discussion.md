@@ -1,6 +1,41 @@
 ---
 references: Gedanken experiments to destroy a black hole. II. Kerr-Newman black holes cannot be overcharged or overspun
 ---
+$$\begin{align}
+\mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi)^{2} \\
+\Delta & =r^{2}-2Mr+a^{2}+Q^{2} \\
+\Sigma & =r^{2}+a^{2}\cos ^{2}\theta \\
+A & =-\frac{Qr}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi) \\
+r_{\pm} & =M\pm \sqrt{ M^{2}-a^{2}-Q^{2} } \\
+\end{align}$$
+
+for a KN black hole, weak cosmic censorship conjecture (WCCC) is violated if the black hole can be overcharged or overspun by absorbing a test particle, leading to the formation of a naked singularity. The condition for a KN black hole to have an event horizon is given by:
+
+$$\begin{align}
+M^{2} > Q^{2} + \frac{J^{2}}{M^{2}}
+\end{align}$$
+
+take a variation of the parameters $\displaystyle{(M, Q, J)}$, we have
+
+$$\begin{align}
+\delta M & > \frac{a}{M^{2}+a^{2}}\delta J+ \frac{QM}{M^{2}+a^{2}}\delta Q
+\end{align}$$
+
+consider a extremal black hole, and if we have
+
+$$\begin{align}
+\delta M\leqslant \frac{a}{M^{2}+a^{2}}\delta J+\frac{QM}{M^{2}+a^{2}}\delta Q
+\end{align}$$
+
+then the black hole will be overcharged or overspun, violating WCCC. here $\displaystyle{\delta M}$ and $\displaystyle{\delta J}$ are calculated via
+
+$$\begin{align}
+\delta H_{\xi} & =(mU_{a}+qA_{a})\xi ^{a}
+\end{align}$$
+
+by taking $\displaystyle{\xi ^{a}=\left( \frac{\partial}{\partial t} \right)^{a}}$ and $\displaystyle{\xi ^{a}=\left(\frac{\partial}{\partial \phi}\right)^{a}}$.
+
+---
 
 consider a Lagrangian $\displaystyle{n}$-form $\displaystyle{\mathbf{L}[\phi]}$. take a variation
 
@@ -173,7 +208,7 @@ H_{\xi} & =\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau _{\mu}(X_{\xi}\cdo
 
 we have
 
-$$\begin{align}
+$$\tag{2.5}\begin{align}
 X_{\xi}\cdot \theta ^{\mu}_{\text{GR}}-\xi ^{\mu}\mathcal{L}_{\text{GR}} & =\nabla _{\nu}Q_{\xi,\text{GR}}^{\mu \nu}+C^{\mu}_{\xi,\text{GR}} \\
 Q_{\xi,\text{GR}}^{\mu \nu} & =\frac{1}{16\pi G}(\nabla ^{\mu}\xi ^{\nu}-\nabla ^{\nu}\xi ^{\mu}) \\
 C_{\xi,\text{GR}}^{\mu} & =\frac{1}{8\pi G}\xi _{\nu}\left( R^{\mu \nu}-\frac{1}{2}Rg^{\mu \nu}+\Lambda g^{\mu \nu} \right) \\
@@ -182,73 +217,18 @@ Q^{\mu \nu}_{\xi,\text{EM}} & =F^{\mu \nu}A_{\rho}\xi ^{\rho} \\
 C^{\mu}_{\xi,\text{EM}} & =\nabla _{\nu}F^{\nu \mu}A_{\rho}\xi ^{\rho}-\xi _{\nu}\left(F^{\mu}_{~\rho}F^{\nu \rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}\right)
 \end{align}$$
 
-assume the spacetime and electric background are fixed, and consider a perturbation of the matter fields only, we have
+assume the spacetime and electric background are fixed, and consider a perturbation of the matter fields, assume that the matter distribution is far from $\displaystyle{B}$ so that does not contribute to the $\displaystyle{B}$ integral. we have
 
-$$\begin{align}
-\delta H_{\xi} & =\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau _{\mu}(\xi _{\nu}T^{\mu \nu}_{\text{matter}}+J^{\mu}_{\text{matter}}A_{\nu}\xi ^{\nu})
+$$\tag{2.6}\begin{align}
+0=\delta H_{\xi} & =\int _{\infty}(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta)+\delta\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau _{\mu}\left(\frac{1}{8\pi G}\xi _{\nu}\left( R^{\mu \nu}-\frac{1}{2}Rg^{\mu \nu}+\Lambda g^{\mu \nu} -8\pi GT^{\mu \nu}_{\text{EM}}\right)+\nabla _{\nu}F^{\nu \mu}A_{\rho}\xi ^{\rho}\right) \\
+ & =\int _{\Sigma}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right)-\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}(\delta T^{\mu \nu}_{\text{matter}}+J^{\mu}_{\text{matter}}A^{\nu}) \\
+\implies \int _{\Sigma}(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta) & =\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}(\delta T^{\mu \nu}_{\text{matter}}+\delta J^{\mu}_{\text{matter}}A^{\nu})
 \end{align}$$
 
----
+this is the result in the paper.
 
-gedanken experiment. consider a extremal KN black hole with
+if matter falls into the black hole, and spacetime and electric field has dynamics, we have
 
-$$\tag{3.1}
-\begin{align}
-M^{2} & =\frac{J^{2}}{M^{2}}+Q^{2}
-\end{align}
-$$
-
-make a perturbation of this black hole which violate the WGC.
-
-$$\tag{3.2}
-\begin{align}
-2M\delta M & <2 \frac{J}{M}(M\delta J-J\delta M)+2Q\delta Q \\
-\implies \delta M & < \frac{a}{M^{2}+a^{2}}\delta J+ \frac{QM}{M^{2}+a^{2}}\delta Q
-\end{align}
-$$
-
-and one can verify that any physical perturbation will satisfy
-
-$$\tag{3.3}
-\begin{align}
-\delta M & \geqslant \frac{a}{M^{2}+a^{2}} \delta J+\frac{QM}{M^{2}+a^{2}}\delta Q
-\end{align}
-$$
-
-for a slightly non-extremal blackhole, we need to consider second order variation.
-
----
-now we consider Einstein-Yang-Mills theory with action
-
-$$\tag{4.1}
-\begin{align}
-S & =\frac{1}{16\pi G}\int \varepsilon R-\frac{1}{4\pi}\int \varepsilon F_{\mu \nu}^{\Lambda}F^{\mu \nu}_{\Lambda}
-\end{align}
-$$
-
-where
-
-$$\tag{4.2}
-\begin{align}
-F_{\mu \nu}^{\Lambda} & =\nabla _{\mu}A^{\Lambda}_{\nu}-\nabla _{\nu}A^{\Lambda}_{\mu}+c^{\Lambda}_{\Gamma \Delta}A^{\Gamma}_{\mu}A^{\Delta}_{\nu}
-\end{align}
-$$
-
-and $\displaystyle{c^{\Lambda}_{\Gamma \Delta}}$ is the structure tensor for $\displaystyle{\mathrm{SU}(2)}$ group, and Lie algebra indices are raised and lowered by the Killing metric $\displaystyle{g_{\Gamma\Sigma}=-\frac{1}{2}c^{\Lambda}_{~\Gamma \Delta}c^{\Delta}_{~\Sigma \Lambda}}$. similar to the previous case, we have
-
-$$\tag{4.3}
-\begin{align}
-\theta _{\mathrm{YM}} & =-\varepsilon _{\partial M}n _{\mu}F^{\mu \nu}_{\Lambda}\delta A_{\nu}^{\Lambda} \\
-\mathbf{Q}_{\xi,\mathrm{YM}} & =-\frac{1}{2}F_{\Lambda}^{\mu \nu}A^{\Lambda}_{\rho}\xi ^{\rho}\cdot \frac{1}{2!}\varepsilon _{\mu \nu \mu_{0}\mu_{1}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}} \\
-\tilde{\mathbf{C}}_{\xi,\mathrm{YM}} & =\varepsilon _{M}E^{\nu}_{\Lambda,\mathrm{YM}}A_{\nu}^{\Lambda}
-\end{align}
-$$
-
-and
-
-$$\tag{.}
-\begin{align}
-\int _{B}(\delta \mathbf{Q}_{\xi,\mathrm{YM}}-\xi \cdot \Theta _{\mathrm{YM}}) & = ?
-\end{align}
-$$
-
+$$\tag{2.7}\begin{align}
+\delta M-\Omega _{H}\delta J-\frac{\kappa}{8\pi}\delta A_{B}-\Phi _{H}\delta Q_{B} & =-\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}(\delta T^{\mu \nu}_{\text{matter}}+\delta J^{\mu}_{\text{matter}}A^{\nu})
+\end{align}$$
