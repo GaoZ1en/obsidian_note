@@ -25062,6 +25062,81 @@
             "timeKey": "13:15",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "19:05",
+            "w": 23,
+            "c": 116
+          },
+          {
+            "timeKey": "19:10",
+            "w": 436,
+            "c": 1611
+          },
+          {
+            "timeKey": "19:15",
+            "w": 16,
+            "c": 76
+          },
+          {
+            "timeKey": "19:20",
+            "w": 17,
+            "c": 64
+          },
+          {
+            "timeKey": "19:30",
+            "w": 303,
+            "c": 1739
+          },
+          {
+            "timeKey": "19:35",
+            "w": -209,
+            "c": -1338
+          },
+          {
+            "timeKey": "19:40",
+            "w": 149,
+            "c": 601
+          },
+          {
+            "timeKey": "19:45",
+            "w": 15,
+            "c": 64
+          },
+          {
+            "timeKey": "19:50",
+            "w": 68,
+            "c": 289
+          },
+          {
+            "timeKey": "19:55",
+            "w": 5,
+            "c": 25
+          },
+          {
+            "timeKey": "20:00",
+            "w": 43,
+            "c": 189
+          },
+          {
+            "timeKey": "20:05",
+            "w": -17,
+            "c": -65
+          },
+          {
+            "timeKey": "20:10",
+            "w": 1,
+            "c": -10
+          },
+          {
+            "timeKey": "20:20",
+            "w": -47,
+            "c": -221
+          },
+          {
+            "timeKey": "20:40",
+            "w": 0,
+            "c": -1
           }
         ],
         "id": 808
@@ -25099,7 +25174,38 @@
         "filePath": "Note/useful results/covariant phase space formalism.md",
         "wordCountStart": 1131,
         "charCountStart": 5815,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "15:10",
+            "w": -238,
+            "c": -1040
+          },
+          {
+            "timeKey": "15:15",
+            "w": 68,
+            "c": 422
+          },
+          {
+            "timeKey": "15:20",
+            "w": 206,
+            "c": 1638
+          },
+          {
+            "timeKey": "15:25",
+            "w": -206,
+            "c": -1638
+          },
+          {
+            "timeKey": "15:30",
+            "w": 46,
+            "c": 290
+          },
+          {
+            "timeKey": "19:05",
+            "w": -46,
+            "c": -290
+          }
+        ],
         "id": 811
       },
       {
@@ -25141,6 +25247,21 @@
             "timeKey": "14:00",
             "w": 295,
             "c": 1381
+          },
+          {
+            "timeKey": "15:00",
+            "w": 341,
+            "c": 2675
+          },
+          {
+            "timeKey": "15:05",
+            "w": 497,
+            "c": 2726
+          },
+          {
+            "timeKey": "15:10",
+            "w": -833,
+            "c": -5374
           }
         ],
         "id": 813
@@ -25190,6 +25311,46 @@
             "timeKey": "14:45",
             "w": 10,
             "c": 61
+          },
+          {
+            "timeKey": "14:50",
+            "w": 16,
+            "c": 92
+          },
+          {
+            "timeKey": "14:55",
+            "w": -2,
+            "c": -25
+          },
+          {
+            "timeKey": "15:00",
+            "w": 4,
+            "c": 18
+          },
+          {
+            "timeKey": "20:40",
+            "w": 222,
+            "c": 856
+          },
+          {
+            "timeKey": "20:45",
+            "w": 206,
+            "c": 2121
+          },
+          {
+            "timeKey": "20:50",
+            "w": -102,
+            "c": -1694
+          },
+          {
+            "timeKey": "20:55",
+            "w": 193,
+            "c": 718
+          },
+          {
+            "timeKey": "21:00",
+            "w": -5,
+            "c": -16
           }
         ],
         "id": 814
@@ -25199,7 +25360,13 @@
         "filePath": "Articles/Proca in AdS3/solving equation.md",
         "wordCountStart": 5229,
         "charCountStart": 22685,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "20:45",
+            "w": 0,
+            "c": 0
+          }
+        ],
         "id": 815
       },
       {
@@ -25215,8 +25382,38 @@
         "filePath": "Articles/Proca in AdS3/highest weight representation.md",
         "wordCountStart": 3320,
         "charCountStart": 13738,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "14:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
         "id": 817
+      },
+      {
+        "date": "2025-09-27",
+        "filePath": "Literature Notes/Gravitational Entropy (2509.10921v1).md",
+        "wordCountStart": 3233,
+        "charCountStart": 16922,
+        "changes": [],
+        "id": 818
+      },
+      {
+        "date": "2025-09-27",
+        "filePath": "Attachments/Assets/Gravitational Entropy (2509.10921v1).pdf",
+        "wordCountStart": 130414,
+        "charCountStart": 616428,
+        "changes": [],
+        "id": 819
+      },
+      {
+        "date": "2025-09-27",
+        "filePath": "Note/Physics/Miscellaneous/Wilsonian renormalization group.md",
+        "wordCountStart": 2962,
+        "charCountStart": 15013,
+        "changes": [],
+        "id": 820
       }
     ],
     "daysWithCompletedGoal": [
