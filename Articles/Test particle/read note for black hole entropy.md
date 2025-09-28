@@ -51,12 +51,12 @@ H_{\xi} & =\int _{\Sigma}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L})
 we have the Noether theorem
 
 $$\tag{1.8}\begin{align}
-\delta H_{\xi} & =-X_{\xi}\cdot \omega
+\delta H_{\xi} & \approx-X_{\xi}\cdot \omega
 \end{align}$$
 
 since
 
-$$\begin{align}
+$$\tag{1.9}\begin{align}
 \mathcal{L}_{X_{\xi}}\delta\mathbf{L} & =X_{\xi}\cdot \delta ^{2} \mathbf{L}+\delta(X_{\xi}\cdot \delta \mathbf{L}) \\
  & =\mathrm{d}(\delta(\xi \cdot \mathbf{L})) \\
  & =\mathcal{L}_{X_{\xi}}\left(\mathbf{E}\delta \phi+\mathrm{d}\Theta\right) \\
@@ -66,43 +66,38 @@ $$\begin{align}
  & \approx -X_{\xi}\int _{\Sigma}\delta \Theta=-X_{\xi}\cdot \omega
 \end{align}$$
 
-on the other hand
+we have
 
-$$\begin{align}
-\delta H_{\xi} & =\int _{\Sigma}\delta(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L}) \\
- & =\int _{\Sigma}(\mathcal{L}_{X_{\xi}}\Theta-X_{\xi}\cdot \delta \Theta-\delta \xi \cdot \mathbf{L}-\xi \cdot \delta \mathbf{L}) \\
- & =\int _{\Sigma}\left(\mathcal{L}_{\xi}\Theta+X_{\delta \xi}\cdot \Theta-X_{\xi}\cdot \delta \Theta-\delta \xi \cdot \mathbf{L}-\xi \cdot(\mathbf{E}\delta \phi+\mathrm{d}\Theta)\right) \\
- & \approx\int _{\Sigma}\left(\mathrm{d}(\xi \cdot \Theta)+X_{\delta \xi}\cdot \Theta-X_{\xi}\cdot \delta \Theta-\delta \xi \cdot \mathbf{L}\right)
+$$\tag{1.10}\begin{align}
+H_{\xi}|_{\Sigma _{f}} & =H_{\xi}|_{\Sigma _{i}}
 \end{align}$$
 
-$$\tag{1.8}
-\begin{align}
-\delta H_{\xi} & =\int _{\Sigma}\delta(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L}) \\
-  & =\int _{\Sigma}(\delta (X_{\xi}\cdot \Theta)-\xi \cdot \delta \mathbf{L}) \\
- & =\int _{\Sigma}(\delta(X_{\xi}\cdot \Theta)-(\xi \cdot\mathbf{E})\delta \phi-\xi \cdot \mathrm{d}\Theta) \\
- & =\int _{\Sigma}\left(-(\xi \cdot \mathbf{E})\delta \phi+\mathcal{L}_{X_{\xi}}\Theta-X_{\xi}\cdot \delta\Theta-\xi \cdot \mathrm{d}\Theta\right) \\
- & =\int _{\Sigma}\left(-(\xi \cdot \mathbf{E})\delta \phi-X_{\xi}\cdot \delta \Theta+\mathcal{L}_{\xi}\Theta-\xi \cdot \mathrm{d}\Theta\right) \\
- & =\int _{\Sigma}\left(-(\xi \cdot \mathbf{E})\delta \phi-X_{\xi}\cdot \delta \Theta+\mathrm{d}(\xi \cdot \Theta)\right) \\
- & =-X_{\xi}\cdot \omega-\int _{\Sigma}(\xi \cdot \mathbf{E})\delta \phi
-\end{align}
-$$
+then we can write
+
+$$\tag{1.11}\begin{align}
+J_{\xi} & =X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L} \\
+ & =\mathrm{d}\mathbf{Q}_{\xi}+\mathbf{C}_{\xi}
+\end{align}$$
+
+then
+
+$$\tag{1.12}\begin{align}
+\delta H_{\xi} & =\delta\int _{\Sigma}\mathrm{d}\mathbf{Q}_{\xi}+\mathbf{C}_{\xi} \\
+ & \approx\int _{\Sigma}\delta(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L}) \\
+ & =\int _{\Sigma}\left(\mathcal{L}_{X_{\xi}}\Theta-X_{\xi}\cdot \delta \Theta-\delta \xi \cdot \mathbf{L}-\xi \cdot \delta \mathbf{L}\right) \\
+ & =\int _{\Sigma}\left(\mathcal{L}_{\xi}\Theta+X_{\delta \xi}\cdot \Theta-X_{\xi}\cdot \delta \Theta-\delta \xi \cdot \mathbf{L}-(\xi \cdot \mathbf{E})\delta \phi-\xi \cdot \mathrm{d}\Theta\right) \\
+ & \approx\int _{\Sigma}\left(-X_{\xi}\cdot \delta \Theta+\mathrm{d}(\xi \cdot \Theta)+X_{\delta \xi}\cdot \Theta-\delta \xi \cdot \mathbf{L}\right) \\
+ & =\int _{\Sigma}\left(-X_{\xi}\cdot \delta \Theta+\mathrm{d}(\xi \cdot \Theta)+J_{\delta \xi}\right) \\
+\implies \int _{\Sigma}\mathrm{d}(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta) & \approx \int _{\Sigma}\left(-X_{\xi}\cdot \delta \Theta+J_{\delta \xi}-\delta \mathbf{C}_{\xi}\right)
+\end{align}$$
 
 here we use
 
-$$\tag{1.9}
-\begin{align}
-\mathcal{L}_{X_{\xi}}\Theta = \mathcal{L}_{\xi}\Theta+X_{\delta \xi}\cdot \Theta
-\end{align}
-$$
+$$\tag{1.13}\begin{align}
+\mathcal{L}_{X_{\xi}}\vartheta & =\mathcal{L}_{\xi}\vartheta+X_{\delta \xi}\cdot \Theta
+\end{align}$$
 
-and assume that $\displaystyle{\xi}$ does not depend on $\displaystyle{\phi}$. then pull back to the pre-phase space $\displaystyle{\tilde{\mathcal{P}}}$, we return to (1.7). we can veryfy that
-
-$$\tag{1.10}
-\begin{align}
-H_{\xi} & =\int _{\Sigma}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L}) \\
- & =\int _{\Sigma}(\mathrm{d}Q_{\xi}+\tilde{\mathbf{C}}_{\xi})
-\end{align}
-$$
+for one-form on the configuration space and assume $\displaystyle{\xi}$ does not depend on $\displaystyle{\phi}$.
 
 where $\displaystyle{\tilde{\mathbf{C}}}$s are the constraints of the theory (and at least for $\displaystyle{\mathrm{AdS}_{3}}$, $\displaystyle{\tilde{\mathbf{C}_{\xi}}}$ is proportional to $\displaystyle{\mathbf{E}}$). make a variation on (1.10) and then compare it to (1.8), we have
 
