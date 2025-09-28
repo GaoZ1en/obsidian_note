@@ -102,10 +102,6 @@ $$\begin{align}
 
 add boundary Lagrangian...
 
-$$\begin{align}
-
-\end{align}$$
-
 ---
 
 gravitational charges
