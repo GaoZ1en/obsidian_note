@@ -270,3 +270,13 @@ $$\tag{.}
 \end{align}
 $$
 
+
+$$\begin{align}
+L & =\frac{1}{2}m\dot{x}_{i}\dot{x}_{i} \\
+X_{i} & =\int \mathrm{d}t a_{i} \frac{\delta}{\delta q_{i}} \\
+X_{i}\cdot \delta L & = m\dot{x}_{j} \frac{\mathrm{d}}{\mathrm{d}t}(X_{i}\cdot \delta x_{j}) \\
+ & =m\dot{x}_{j} \frac{\mathrm{d}}{\mathrm{d}t}\left(\delta _{ij}a_{j}\right) \\
+ & =0 \\
+\implies \alpha _{i}=\beta _{i} & =0
+\end{align}$$
+
