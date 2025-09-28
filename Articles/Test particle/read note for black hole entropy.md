@@ -129,7 +129,7 @@ where $\displaystyle{M}$ is the ADM mass (in some former note we have verified t
 
 $$\tag{1.14}
 \begin{align}
-\int _{\infty}(\delta Q^{\mathrm{GR}}_{\xi}-\xi \cdot \Theta ^{\mathrm{GR}}) & =\int _{\infty}\delta Q^{\mathrm{GR}}_{\xi}=\frac{\kappa}{8\pi}\delta A_{B}
+\int _{B}(\delta Q^{\mathrm{GR}}_{\xi}-\xi \cdot \Theta ^{\mathrm{GR}}) & =\int _{B}\delta Q^{\mathrm{GR}}_{\xi}=\frac{\kappa}{8\pi}\delta A_{B}
 \end{align}
 $$
 
@@ -137,7 +137,7 @@ where $\displaystyle{A}$ is the area of the horizon (Black hole entropy is Noeth
 
 $$\tag{1.15}
 \begin{align}
-\int _{\infty}\left(\delta Q^{\mathrm{EM}}_{\xi}-\xi \cdot \Theta ^{\mathrm{EM}}\right) & =\int _{\infty}\delta Q_{\xi}^{\mathrm{EM}}=\Phi _{H}\delta Q_{B}
+\int _{B}\left(\delta Q^{\mathrm{EM}}_{\xi}-\xi \cdot \Theta ^{\mathrm{EM}}\right) & =\int _{B}\delta Q_{\xi}^{\mathrm{EM}}=\Phi _{H}\delta Q_{B}
 \end{align}
 $$
 
@@ -289,8 +289,6 @@ and
 
 $$\tag{.}
 \begin{align}
-\int _{B}(\delta \mathbf{Q}_{\xi,\mathrm{YM}}-\xi \cdot \Theta _{\mathrm{YM}}) & = 
+\int _{B}(\delta \mathbf{Q}_{\xi,\mathrm{YM}}-\xi \cdot \Theta _{\mathrm{YM}}) & = ?
 \end{align}
 $$
-
-
