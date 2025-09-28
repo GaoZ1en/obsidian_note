@@ -87,8 +87,8 @@ $$\tag{1.12}\begin{align}
  & =\int _{\Sigma}\left(\mathcal{L}_{X_{\xi}}\Theta-X_{\xi}\cdot \delta \Theta-\delta \xi \cdot \mathbf{L}-\xi \cdot \delta \mathbf{L}\right) \\
  & =\int _{\Sigma}\left(\mathcal{L}_{\xi}\Theta+X_{\delta \xi}\cdot \Theta-X_{\xi}\cdot \delta \Theta-\delta \xi \cdot \mathbf{L}-(\xi \cdot \mathbf{E})\delta \phi-\xi \cdot \mathrm{d}\Theta\right) \\
  & \approx\int _{\Sigma}\left(-X_{\xi}\cdot \delta \Theta+\mathrm{d}(\xi \cdot \Theta)+X_{\delta \xi}\cdot \Theta-\delta \xi \cdot \mathbf{L}\right) \\
- & =\int _{\Sigma}\left(-X_{\xi}\cdot \delta \Theta+\mathrm{d}(\xi \cdot \Theta)+J_{\delta \xi}\right) \\
-\implies \int _{\Sigma}\mathrm{d}(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta) & \approx \int _{\Sigma}\left(-X_{\xi}\cdot \delta \Theta+J_{\delta \xi}-\delta \mathbf{C}_{\xi}\right)
+ & =\int _{\Sigma}\left(-X_{\xi}\cdot \delta \Theta+\mathrm{d}(\xi \cdot \Theta)+\mathrm{d}\mathbf{Q}_{\delta \xi}+\mathbf{C}_{\delta \xi}\right) \\
+\implies \int _{\Sigma}\mathrm{d}(\delta \mathbf{Q}_{\xi}-\mathbf{Q}_{\delta \xi}-\xi \cdot \Theta) & \approx \int _{\Sigma}\left(-X_{\xi}\cdot \delta \Theta-\delta \mathbf{C}_{\xi}+\mathbf{C}_{\delta \xi}\right)
 \end{align}$$
 
 here we use
@@ -97,26 +97,14 @@ $$\tag{1.13}\begin{align}
 \mathcal{L}_{X_{\xi}}\vartheta & =\mathcal{L}_{\xi}\vartheta+X_{\delta \xi}\cdot \Theta
 \end{align}$$
 
-for one-form on the configuration space and assume $\displaystyle{\xi}$ does not depend on $\displaystyle{\phi}$.
+for one-form on the configuration space. assume that $\displaystyle{\xi}$ does not depend on $\displaystyle{\phi}$, we got the usual formula
 
-where $\displaystyle{\tilde{\mathbf{C}}}$s are the constraints of the theory (and at least for $\displaystyle{\mathrm{AdS}_{3}}$, $\displaystyle{\tilde{\mathbf{C}_{\xi}}}$ is proportional to $\displaystyle{\mathbf{E}}$). make a variation on (1.10) and then compare it to (1.8), we have
+$$\begin{align}
+\int _{\Sigma}\mathrm{d}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right) & \approx \int _{\Sigma}\left(-X_{\xi}\cdot \delta \Theta-\delta \mathbf{C}_{\xi}\right) \\
+\implies \delta H_{\xi} & \approx \int _{\partial \Sigma}\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta+\int _{\Sigma}\delta \mathbf{C}_{\xi}
+\end{align}$$
 
-$$\tag{1.11}
-\begin{align}
-\int _{\Sigma}(\mathrm{d}\delta Q_{\xi}+\delta \tilde{\mathbf{C}}_{\xi}) & =\int _{\Sigma}(-X_{\xi}\cdot \delta\Theta-(\xi \cdot \mathbf{E})\delta \phi+\mathrm{d}(\xi \cdot \Theta)) \\
-\implies \int _{\Sigma}\mathrm{d}(\delta Q_{\xi}-\xi \cdot \Theta) & =\int _{\Sigma}(-X_{\xi}\cdot \delta \Theta-\delta \tilde{\mathbf{C}}_{\xi}-(\xi \cdot \mathbf{E})\delta \phi)
-\end{align}
-$$
-
-then pull back to the pre-phase space $\displaystyle{\tilde{\mathcal{P}}}$, we have
-
-$$\tag{1.12}
-\begin{align}
-\delta H_{\xi}|_{\tilde{\mathcal{P}}} & =\int _{\partial \Sigma}(\delta Q_{\xi}-\xi \cdot \Theta)
-\end{align}
-$$
-
-we will drop the subsription $\displaystyle{\tilde{\mathcal{P}}}$ in the following discussion. if we choose $\displaystyle{\xi ^{a}=t^{a}+\Omega _{H}\varphi ^{a}}$ as the horizon Killing vector, where $\displaystyle{t^{a}}$ is the timelike Killing field, $\displaystyle{\varphi ^{a}}$ is the axial Killing field, and $\displaystyle{\Omega _{H}}$ is the angular velocity of the horizon.
+if we choose $\displaystyle{\xi ^{a}=t^{a}+\Omega _{H}\varphi ^{a}}$ as the horizon Killing vector, where $\displaystyle{t^{a}}$ is the timelike Killing field, $\displaystyle{\varphi ^{a}}$ is the axial Killing field, and $\displaystyle{\Omega _{H}}$ is the angular velocity of the horizon.
 
 ---
 
@@ -129,43 +117,34 @@ A horizon Killing field is a special Killing vector field in the context of blac
 
 we have
 
-$$\tag{1.13}
-\begin{align}
-\delta H_{\xi} & =\delta M-\Omega _{H}\delta J
-\end{align}
-$$
+$$\begin{align}
+\delta H_{\xi} & =\int _{\infty}(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta)-\int _{B}(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta)+\int _{\Sigma}\delta \mathbf{C}_{\xi}
+\end{align}$$
 
-where $\displaystyle{M}$ is the ADM mass (in some former note we have verified this statement) and $\displaystyle{J}$ is the ADM angular momentum. since $\displaystyle{\xi ^{a}}$ vanishes on the horizon, we have
+for a black hole solution with matter perturbation (here we assume that the matter distribution is far from $\displaystyle{B}$ so that does not contribute to the $\displaystyle{B}$ integral.)
 
-$$\tag{1.14}
-\begin{align}
-\int _{B}(\delta Q^{\mathrm{GR}}_{\xi}-\xi \cdot \Theta ^{\mathrm{GR}}) & =\int _{B}\delta Q^{\mathrm{GR}}_{\xi}=\frac{\kappa}{8\pi}\delta A_{B}
-\end{align}
-$$
+where
 
-where $\displaystyle{A}$ is the area of the horizon (Black hole entropy is Noether charge). and
+$$\begin{align}
+\int _{\infty}\delta \mathbf{Q}_{\xi}-\xi\cdot \Theta\Big|_{\xi=t} & =\delta M_{\text{black hole}}+\delta M_{\text{matter}} \\
+\int _{\infty}\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\Big|_{\xi=\varphi} & =-\delta J_{\text{black hole}}-\delta J_{\text{matter}} \\
+\int _{B}\delta \mathbf{Q}^{\mathrm{GR}}_{\xi}-\xi \cdot \Theta ^{\mathrm{GR}} & =\frac{\kappa}{8\pi}\delta A_{B} \\
+\int _{B}\delta \mathbf{Q}^{\mathrm{EM}}_{\xi}-\xi \cdot \Theta ^{\mathrm{EM}} & =\Phi _{H}\delta Q_{B}
+\end{align}$$
 
-$$\tag{1.15}
-\begin{align}
-\int _{B}\left(\delta Q^{\mathrm{EM}}_{\xi}-\xi \cdot \Theta ^{\mathrm{EM}}\right) & =\int _{B}\delta Q_{\xi}^{\mathrm{EM}}=\Phi _{H}\delta Q_{B}
-\end{align}
-$$
+and $\displaystyle{\delta \mathbf{C}_{\xi}}$ can be identified as perturbation of the bulk conserved quantities (energy-momentum tensor and current)
 
-thus we have the the 1st law of black hole thermodynamics
-
-$$\tag{1.16}
-\begin{align}
-\delta M-\Omega _{H}\delta J-\Phi _{H}\delta Q_{B} & =\frac{\kappa}{8\pi}\delta A_{B}
-\end{align}
-$$
+$$\begin{align}
+\int _{\Sigma}\delta \mathbf{C}_{\xi} & =\int _{\Sigma}
+\end{align}$$
 
 ---
 
-now we will study the Einstein-Maxwell theory with action
+then we will discuss why $\displaystyle{\delta H_{\xi}}$ can be interpreted as matter perturbation
 
 $$\tag{2.0}
 \begin{align}
-S & =\frac{1}{16\pi G}\int _{M}\varepsilon R-\frac{1}{4}\int _{M}\varepsilon F_{\mu \nu}F^{\mu \nu}
+S & =\frac{1}{16\pi G}\int _{M}\varepsilon (R-2\Lambda)-\frac{1}{4}\int _{M}\varepsilon F_{\mu \nu}F^{\mu \nu}
 \end{align}
 $$
 
@@ -173,11 +152,11 @@ make a variation
 
 $$\tag{2.1}
 \begin{align}
-\delta \mathbf{L} & =\frac{1}{16\pi G}\int _{M}\varepsilon _{M}\left(-R^{\mu \nu}+\frac{1}{2}g^{\mu \nu}R\right)\delta g_{\mu \nu}+\frac{1}{16\pi G}\int _{\partial M}\varepsilon _{\partial M} n_{\rho}(g^{\rho \mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla ^{\rho}\delta g_{\mu \nu}) \\
+\delta \mathbf{L} & =\frac{1}{16\pi G}\int _{M}\varepsilon _{M}\left(-R^{\mu \nu}+\frac{1}{2}g^{\mu \nu}R-\Lambda g^{\mu \nu}\right)\delta g_{\mu \nu}+\frac{1}{16\pi G}\int _{\partial M}\varepsilon _{\partial M} n_{\rho}(g^{\rho \mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla ^{\rho}\delta g_{\mu \nu}) \\
  & -\frac{1}{4} \int _{M}\varepsilon _{M}\left(-F^{\mu}_{~\rho}F^{\rho \nu}+\frac{1}{2}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} \right)\delta g_{\mu \nu} \\
  & -\int _{M} \varepsilon _{M} F^{\mu \nu}\nabla _{\mu}\delta A_{\nu} +\int _{M}\varepsilon \nabla _{\mu}F^{\mu \nu}\delta A_{\nu}-\int _{\partial M}\varepsilon _{\partial M}\tau _{\mu}F^{\mu \nu}\delta A_{\nu} \\
  & =\mathbf{E}^{\mu \nu}_{\mathrm{GR}}\delta g_{\mu \nu}+\mathbf{E}^{\nu}_{\mathrm{EM}}\delta A_{\nu}+\mathrm{d}\theta _{\mathrm{GR}}+\mathrm{d}\theta _{\mathrm{EM}} \\
-\mathbf{E}^{\mu \nu}_{\mathrm{GR}} & =\frac{1}{16\pi G}\varepsilon _{M}\left( -R^{\mu \nu}+\frac{1}{2}g^{\mu \nu}R \right)+\frac{1}{4}\varepsilon _{M}\left(F^{\mu}_{~\rho}F^{\rho \nu}-\frac{1}{2}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}\right) \\
+\mathbf{E}^{\mu \nu}_{\mathrm{GR}} & =\frac{1}{16\pi G}\varepsilon _{M}\left( -R^{\mu \nu}+\frac{1}{2}g^{\mu \nu}R-\Lambda g^{\mu \nu} \right)+\frac{1}{4}\varepsilon _{M}\left(F^{\mu}_{~\rho}F^{\rho \nu}-\frac{1}{2}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}\right) \\
 \mathbf{E}^{\nu}_{\mathrm{EM}} & =\nabla _{\mu}F^{\mu \nu} \\
 \theta _{\mathrm{GR}} & =\frac{1}{16\pi G}\varepsilon _{\partial \Sigma}n_{\rho}\left(g^{\rho \mu}\nabla ^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla ^{\rho}\delta g_{\mu \nu}\right) \\
 \theta _{\mathrm{EM}} & =-\varepsilon _{\partial M}n _{\mu}F^{\mu \nu}\delta A_{\nu}
@@ -222,16 +201,7 @@ X_{\xi}\cdot \Theta _{\mathrm{EM}}-\xi \cdot \mathbf{L}_{\mathrm{EM}} & = \mathr
 \end{align}
 $$
 
-so $\displaystyle{\tilde{\mathbf{C}}_{\xi,\mathrm{GR}}}$ and $\displaystyle{\tilde{\mathbf{C}}_{\xi,\mathrm{EM}}}$ can be interpreted as external sources. (for example, test particle). we choose the gause $\displaystyle{\mathcal{L}_{\xi}A_{\mu}=0}$, where $\displaystyle{\xi ^{a}}$ is the horizon Killing vector. for a nonextremal blackhole, the horizon will be of bifurcate type (past and future event horizon), and $\displaystyle{\Sigma}$ will terminate at the bifucation surface $\displaystyle{B}$ ($\displaystyle{\partial \Sigma=B}$). we have
-
-$$\tag{2.6}
-\begin{align}
-\int _{\infty}\left(\delta \mathbf{Q}_{\xi,\mathrm{GR}}-\xi \cdot \Theta _{\mathrm{GR}}\right) & =\int _{\infty}\delta \mathbf{Q}_{\xi,\mathrm{GR}}=\frac{\kappa}{8\pi}\delta A_{B} \\
-\int _{\infty}(\delta \mathbf{Q}_{\xi,\mathrm{EM}}-\xi \cdot \Theta _{\mathrm{EM}}) & = \Phi _{H}\delta Q_{B}
-\end{align}
-$$
-
-and finally we have
+so $\displaystyle{\tilde{\mathbf{C}}_{\xi,\mathrm{GR}}}$ and $\displaystyle{\tilde{\mathbf{C}}_{\xi,\mathrm{EM}}}$ can be interpreted as external sources.
 
 $$\tag{2.7}
 \begin{align}

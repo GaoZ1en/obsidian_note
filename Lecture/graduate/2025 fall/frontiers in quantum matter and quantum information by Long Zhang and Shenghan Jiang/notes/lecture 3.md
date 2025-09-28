@@ -1,0 +1,1 @@
+topological defect can be characterized by the homotopy group of the order parameter space. For example, in a two-dimensional system with a U(1) symmetry, vortices are characterized by the first homotopy group, π₁(U(1)) = ℤ, indicating that vortices can have integer winding numbers.
