@@ -144,6 +144,4 @@ $$\tag{.}\begin{align}
 \frac{-1-4r^{2}+r^{4}}{r^{2}(1+r^{2})}A^{r}+\frac{2(1-r^{2})}{r^{2}}A^{r}
 \end{align}$$
 
-$$\tag{.}\begin{align}
-1-4r^{2}-r^{4}
-\end{align}$$
+I can't handle this. 

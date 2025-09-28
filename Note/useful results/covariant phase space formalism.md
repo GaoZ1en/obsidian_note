@@ -110,9 +110,13 @@ X_{\varepsilon}\cdot\delta S & =\frac{k}{4\pi}\int _{M} \mathrm{Tr}\left((\mathr
 ### general relativity with Gibbons-Hawking-York term
 
 
+
+
 # applications & generalization
 
 ## entropy
+
+
 
 ## quantization
 
