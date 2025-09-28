@@ -183,8 +183,7 @@ we have
 
 $$\begin{align}
 X_{\xi}\cdot \theta ^{\mu}_{\text{GR}}-\xi ^{\mu}\mathcal{L}_{\text{GR}} & =\nabla _{\nu}Q_{\xi,\text{GR}}^{\mu \nu}+C^{\mu}_{\xi,\text{GR}} \\
-X_{\xi}\cdot \theta ^{\mu}_{\text{EM}}-\xi ^{\mu}\mathcal{L}_{\text{EM}} & =\nabla _{\nu}Q_{\xi,\text{EM}}^{\mu \nu}+C^{\mu}_{\xi,\text{EM}} \\ 
-X_{\xi}\cdot \theta ^{\mu}_{\text{matter}}-\xi ^{\mu}\mathcal{L}_{\text{matter}} & =\nabla _{\nu}Q_{\xi,\text{matter}}^{\mu \nu}+C^{\mu}_{\xi,\text{matter}}
+X_{\xi}\cdot \theta ^{\mu}_{\text{EM}}-\xi ^{\mu}\mathcal{L}_{\text{EM}} & =\nabla _{\nu}Q_{\xi,\text{EM}}^{\mu \nu}+C^{\mu}_{\xi,\text{EM}}
 \end{align}$$
 
 $$\tag{2.5}
@@ -269,14 +268,4 @@ $$\tag{.}
 \int _{B}(\delta \mathbf{Q}_{\xi,\mathrm{YM}}-\xi \cdot \Theta _{\mathrm{YM}}) & = ?
 \end{align}
 $$
-
-
-$$\begin{align}
-L & =\frac{1}{2}m\dot{x}_{i}\dot{x}_{i} \\
-X_{i} & =\int \mathrm{d}t a_{i} \frac{\delta}{\delta q_{i}} \\
-X_{i}\cdot \delta L & = m\dot{x}_{j} \frac{\mathrm{d}}{\mathrm{d}t}(X_{i}\cdot \delta x_{j}) \\
- & =m\dot{x}_{j} \frac{\mathrm{d}}{\mathrm{d}t}\left(\delta _{ij}a_{j}\right) \\
- & =0 \\
-\implies \alpha _{i}=\beta _{i} & =0
-\end{align}$$
 

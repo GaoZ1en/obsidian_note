@@ -60,5 +60,35 @@ $\displaystyle{\braket{ Z_{j,j+1} }\neq 0}$, SSB, "Higgs", confinement, ground s
 in space dimension 2, the Hamiltonian is given by
 
 $$\begin{align}
-H & =-h\sum _{j}\tilde{Z}_{j}\rho ^{Z}_{j}\tilde{Z}_{j+\vec{a}}+
+H & =-h_{Z}\sum _{j}\tilde{Z}_{j}\rho ^{Z}_{j,j+\vec{a}}\tilde{Z}_{j+\vec{a}}-J_{X}\sum _{j}\tilde{X}_{j,j+\vec{a}}-h_{X}\sum _{j}\rho ^{X}_{j,j+\vec{a}}-J_{Z}\sum _{j}\rho ^{Z}_{j}\rho ^{Z}_{j+\vec{x}}\rho ^{Z}_{j+\vec{y}}\rho ^{Z}_{j+\vec{x}+\vec{y}}
+\end{align}$$
+
+the Gauss law constraint is given by
+
+$$\begin{align}
+\tilde{X}_{j}=\rho ^{X}_{j,j+\vec{x}}\rho ^{X}_{j,j-\vec{x}}\rho ^{X}_{j,j+\vec{y}}\rho ^{X}_{j,j-\vec{y}}
+\end{align}$$
+
+by the same identification as in 1d, we remove the gauge redundancy and get
+
+$$\begin{align}
+H & =-h_{Z}\sum _{j}Z_{j}-h_{X}\sum _{j}X_{j}-J_{X}\sum _{\text{ site }}\prod X_{j}-J_{Z}\sum _{\text{ plaquette }}\prod Z_{j}
+\end{align}$$
+
+where $\displaystyle{\prod X_{j}}$ is the product of $\displaystyle{X_{j}}$ on the four edges of a site, and $\displaystyle{\prod Z_{j}}$ is the product of $\displaystyle{Z_{j}}$ on the four edges of a plaquette. this model is called toric code model proposed by Kitaev.
+
+from different perspective, the physics of Ising model is very abundant...
+
+return to the Ising model. we will use Jordan-Wigner transformation to solve it exactly (p-wave superconductor proposed by Kitaev). define
+
+$$\begin{align}
+f_{j} & =\prod ^{j-1}_{l=1}X_{l} \frac{1}{2}(Z_{j}+iY_{j}) \\
+\implies X_{j} & =f_{j}f^{\dagger}_{j}-f_{j}^{\dagger}f_{j} \\
+Z_{j}Z_{j+1} & =f_{j}f_{j+1}+f_{j}^{\dagger}f^{\dagger}_{j+1}+f_{j}^{\dagger}f_{j+1}+f_{j}f^{\dagger}_{j+1}
+\end{align}$$
+
+the Hamiltonian $\displaystyle{H=-J\sum _{j}Z_{j}Z_{j+1}-h\sum _{j} X_{j}}$ becomes
+
+$$\begin{align}
+
 \end{align}$$
