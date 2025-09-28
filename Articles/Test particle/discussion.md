@@ -183,7 +183,33 @@ we have
 
 $$\begin{align}
 X_{\xi}\cdot \theta ^{\mu}_{\text{GR}}-\xi ^{\mu}\mathcal{L}_{\text{GR}} & =\nabla _{\nu}Q_{\xi,\text{GR}}^{\mu \nu}+C^{\mu}_{\xi,\text{GR}} \\
+Q_{\xi,\text{GR}}^{\mu \nu} & =\frac{1}{16\pi G}(\nabla ^{\mu}\xi ^{\nu}-\nabla ^{\nu}\xi ^{\mu}) \\
+C_{\xi,\text{GR}}^{\mu} & =\frac{1}{8\pi G}\xi _{\nu}\left( R^{\mu \nu}-\frac{1}{2}Rg^{\mu \nu}+\Lambda g^{\mu \nu} \right) \\
 X_{\xi}\cdot \theta ^{\mu}_{\text{EM}}-\xi ^{\mu}\mathcal{L}_{\text{EM}} & =\nabla _{\nu}Q_{\xi,\text{EM}}^{\mu \nu}+C^{\mu}_{\xi,\text{EM}}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+X_{\xi}\cdot \theta ^{\mu}_{\text{EM}}-\xi ^{\mu}\mathcal{L}_{\text{EM}} & =F^{\mu \nu}\mathcal{L}_{\xi}A_{\nu}+\frac{1}{4}\xi ^{\mu}F_{\rho \sigma}F^{\rho \sigma} \\
+ & =F^{\mu \nu}\left(\xi ^{\rho}\nabla _{\rho}A_{\nu}+A_{\rho}\nabla _{\nu}\xi ^{\rho}\right)+\frac{1}{4}\xi ^{\mu}F_{\rho \sigma}F^{\rho \sigma} \\
+ & =
+\end{align}$$
+
+
+
+$$\begin{align}
+J_{\xi} & =X_{\xi}\cdot \Theta-\xi \cdot L \\
+ & =\frac{1}{16\pi} \mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(g^{\mu \rho}\nabla ^{\nu}(\nabla _{\nu}\xi _{\rho}+\nabla _{\rho}\xi _{\nu})-g^{\nu \rho}\nabla ^{\mu}(\nabla _{\nu}\xi _{\rho}+\nabla _{\rho}\xi _{\nu})) \\
+ & -\frac{1}{16\pi}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\xi ^{\mu} (R-2\Lambda) \\
+ & =\frac{1}{16\pi}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(\nabla _{\rho}\nabla ^{\rho} \xi ^{\mu}-\nabla ^{\mu}(\nabla _{\nu}\xi ^{\nu})+R^{\mu \nu}\xi _{\nu}-\xi ^{\mu}(R-2\Lambda)) \\
+ & \approx \frac{1}{16\pi}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left(\nabla _{\rho}\nabla ^{\rho}\xi ^{\mu}-\nabla ^{\mu}(\nabla _{\nu}\xi ^{\nu})-R^{\mu \nu}\xi _{\nu}\right) \\
+ & =\frac{1}{16\pi}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}(\nabla _{\rho}\nabla ^{\rho}\xi ^{\mu}-\nabla _{\nu}\nabla ^{\mu}\xi ^{\nu}) \\
+ & =\frac{1}{16\pi}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\nabla _{\nu}(\nabla ^{\nu}\xi ^{\mu}-\nabla ^{\mu}\xi ^{\nu})
+\end{align}$$
+
+
+$$\begin{align}
+\theta _{\text{GR}}^{\mu} & =\frac{1}{16\pi G}(g^{\mu \rho}\nabla ^{\nu}(\nabla _{\nu}\xi _{\rho}+\nabla _{\rho}\xi _{\nu})-g^{\nu \rho}\nabla ^{\mu}(\nabla _{\nu}\xi _{\rho}+\nabla _{\rho}\xi _{\nu}))-\xi ^{\mu}\left(\frac{1}{16\pi G}(R-2\Lambda)-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\mathcal{L}_{\text{matter}}\right) \\
+ & =
 \end{align}$$
 
 $$\tag{2.5}

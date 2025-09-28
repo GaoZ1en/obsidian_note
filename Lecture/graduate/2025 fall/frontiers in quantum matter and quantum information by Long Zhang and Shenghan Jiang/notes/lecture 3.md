@@ -84,11 +84,41 @@ return to the Ising model. we will use Jordan-Wigner transformation to solve it 
 $$\begin{align}
 f_{j} & =\prod ^{j-1}_{l=1}X_{l} \frac{1}{2}(Z_{j}+iY_{j}) \\
 \implies X_{j} & =f_{j}f^{\dagger}_{j}-f_{j}^{\dagger}f_{j} \\
-Z_{j}Z_{j+1} & =f_{j}f_{j+1}+f_{j}^{\dagger}f^{\dagger}_{j+1}+f_{j}^{\dagger}f_{j+1}+f_{j}f^{\dagger}_{j+1}
+Z_{j}Z_{j+1} & =\left( \prod ^{j-1}_{k=1}X_{k} \right) iY_{j}\left( \prod ^{j}_{l=1}X_{l} \right)Z_{j+1} \\
+ & =(f_{j}-f^{\dagger}_{j})(f_{j+1}+f^{\dagger}_{j+1}), & j<L \\
+Z_{L}Z_{1} & =\left( \prod ^{L}_{k=1}X_{k} \right)\left( \prod ^{L-1}_{j=1}X_{j} \right)(-iY_{L})(f_{1}+f_{1}^{\dagger}) \\
+ & =-g(f_{L}-f^{\dagger}_{L})(f_{1}+f_{1}^{\dagger})
 \end{align}$$
 
-the Hamiltonian $\displaystyle{H=-J\sum _{j}Z_{j}Z_{j+1}-h\sum _{j} X_{j}}$ becomes
+where $\displaystyle{g=\prod ^{L}_{k=1}X_{k}}$ is the symmetry. the Hamiltonian $\displaystyle{H=-J\sum _{j}Z_{j}Z_{j+1}-h\sum _{j} X_{j}}$ becomes
 
 $$\begin{align}
-
+H & =-h\sum _{j}(f_{j}f^{\dagger}_{j}-f^{\dagger}_{j}f_{j})-J\sum ^{L-1}_{j=1}(f_{j}-f^{\dagger}_{j})(f_{j+1}+f^{\dagger}_{j+1})+gJ(f_{L}-f^{\dagger}_{L})(f_{1}+f^{\dagger}_{1})
 \end{align}$$
+
+the locality of fermion is not the same as spin, but in 1d they are very similar except on the boundary. so we have bosonization or fermionization in 1d. we first introduce how to solve superconducter.
+
+$$\begin{align}
+F_{j} & =\begin{pmatrix}
+f_{j} \\
+f_{j}^{\dagger}
+\end{pmatrix},  & F_{j}^{\dagger} =\begin{pmatrix}
+f_{j}^{\dagger} & f_{j}
+\end{pmatrix}
+\end{align}$$
+
+then the Hamiltonian
+
+$$\begin{align}
+H & =h\sum F_{j}^{\dagger}\tau ^{z}F_{j}+\frac{1}{2}J\sum ^{L-1}_{j=1}(F_{j}^{\dagger}(\tau ^{z}+i\tau ^{y})F_{j+1}+F_{j+1}^{\dagger}(\tau ^{z}-i\tau ^{y})F_{j})+gJ F_{L}^{\dagger}(\tau ^{z}+i\tau ^{y})F_{1}
+\end{align}$$
+
+here is a particle-hole symmetry
+
+$$\begin{align}
+C & =\tau ^{x}K \\
+C^{2} & =1 \\
+CHC & =-H
+\end{align}$$
+
+where $\displaystyle{K}$ is complex conjugate operator
