@@ -65,6 +65,10 @@ $$\begin{align}
 \left\{x_{a},p^{b}\right\} & =\delta _{a}^{b}
 \end{align}$$
 
+$$\tag{.}\begin{align}
+\omega=\mathrm{d}x_{a}\wedge \mathrm{d}p^{a}
+\end{align}$$
+
 $$\begin{align}
 \left\{x_{a},p^{b}\right\}_{\text{Dirac}} & =\delta ^{b}_{a}+\left\{x_{a},\varphi _{i}^{\alpha}\right\}(C^{-1})^{ij}_{\alpha \beta}\left\{\varphi ^{\beta}_{j},p^{b}\right\}
 \end{align}$$
@@ -88,22 +92,24 @@ E^{\alpha} & =B^{\alpha \beta}\phi _{\beta}-C^{\alpha a}\dot{x}_{a} \\
 the eom gives the following solutions
 
 $$\begin{align}
-x_{a} & =P_{a}t+X_{a} \\
-\phi _{\beta} & =(B^{-1})_{\alpha \beta}C^{\beta b}P_{b}
+x_{a} & =V_{a}t+X_{a} \\
+V_{a}\to V_{a} \\
+\phi _{\beta} & =(B^{-1})_{\alpha \beta}C^{\beta b}V_{b}
 \end{align}$$
 
 then the symplectic form becomes
 
 $$\begin{align}
-\omega & =A^{ab}\delta P_{a}\wedge \delta X_{b}
+\omega & =A^{ab}\delta V_{a}\wedge \delta X_{b} \\
+ & ?=\delta x_{0a}\wedge \delta V_{0}^{a}
 \end{align}$$
 
 the Hamilton flow for $\displaystyle{x_{a}}$ and $\displaystyle{p^{a}:=A^{ab}\dot{x}_{b}-C^{\alpha a}\phi _{\alpha}}$ are
 
 $$\begin{align}
-X_{x_{a}} & = \int \mathrm{d}t \frac{\delta x_{a}}{\delta X_{b}} \frac{\delta}{\delta(A^{bc}P_{c})}-\frac{\delta x_{a}}{\delta(A^{bc}P_{b})} \frac{\delta}{\delta X_{c}} \\
- & =(A^{-1})_{ab} \left( \frac{\delta}{\delta P_{b}}- t \frac{\delta}{\delta X_{b}}\right) \\
-X_{p^{a}} & =\int \mathrm{d}t (A^{-1})_{bc}\left( \frac{\delta p^{a}}{\delta X_{b}} \frac{\delta}{\delta P_{c}}-\frac{\delta p^{a}}{\delta P_{c}} \frac{\delta}{\delta X_{b}} \right) \\
+X_{x_{a}} & = \int \mathrm{d}t \frac{\delta x_{a}}{\delta X_{b}} \frac{\delta}{\delta(A^{bc}V_{c})}-\frac{\delta x_{a}}{\delta(A^{bc}V_{b})} \frac{\delta}{\delta X_{c}} \\
+ & =(A^{-1})_{ab} \left( \frac{\delta}{\delta V_{b}}- t \frac{\delta}{\delta X_{b}}\right) \\
+X_{p^{a}} & =\int \mathrm{d}t (A^{-1})_{bc}\left( \frac{\delta p^{a}}{\delta X_{b}} \frac{\delta}{\delta V_{c}}-\frac{\delta p^{a}}{\delta V_{c}} \frac{\delta}{\delta X_{b}} \right) \\
  & =-\left(\delta ^{a}_{b}-(A^{-1})_{bc}(B^{-1})_{\alpha \beta}C^{\alpha a}C^{\beta c}\right) \frac{\delta}{\delta X_{b}}
 \end{align}$$
 
