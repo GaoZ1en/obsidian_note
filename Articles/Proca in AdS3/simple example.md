@@ -69,11 +69,6 @@ $$\begin{align}
 \left\{x_{a},p^{b}\right\}_{\text{Dirac}} & =\delta ^{b}_{a}+\left\{x_{a},\varphi _{i}^{\alpha}\right\}(C^{-1})^{ij}_{\alpha \beta}\left\{\varphi ^{\beta}_{j},p^{b}\right\}
 \end{align}$$
 
-$$\tag{.}\begin{align}
-\varphi _{1}^{\alpha} & =p^{\alpha} \\
-\varphi _{2}^{\alpha} & =B^{\alpha \beta}\phi _{\beta}-(A^{-1})_{ab}C^{\alpha a}(p^{b}+C^{\beta b}\phi _{\beta})
-\end{align}$$
-
 # CPS formalism
 
 $$\begin{align}
@@ -119,62 +114,5 @@ $$\begin{align}
  & =\delta ^{b}_{a}-(A^{-1})_{ac}(B^{-1})_{\alpha \beta}C^{\alpha b}C^{\beta c}
 \end{align}$$
 
-???
+Poison brackets in CPS formalism do not match the Dirac brackets in Dirac formalism... however the dynamics are the same.
 
-### 约束矩阵构造
-
-定义约束集合：$\{\Phi_A\} = \{\Phi_\alpha^{(1)}, \Phi_\alpha^{(2)}\} = \{\pi_\alpha, \Phi_\alpha^{(2)}\}$
-
-约束矩阵元素：
-$$\Delta_{AB} = \{\Phi_A, \Phi_B\}$$
-
-具体计算：
-- $\{\pi_\alpha, \pi_\beta\} = 0$
-- $\{\pi_\alpha, \Phi_\beta^{(2)}\} = -\left[(A^{-1})^{ab}C^{\gamma}_aC^{\alpha}_b - B^{\alpha\gamma}\right]\delta_\alpha^\beta = -M^{\alpha\beta}$
-- $\{\Phi_\alpha^{(2)}, \Phi_\beta^{(2)}\} = $ （较复杂，包含对易子结构）
-
-约束矩阵形式：
-$$\Delta = \begin{pmatrix}
-0 & -M^{\alpha\beta} \\
-M^{\alpha\beta} & \{\Phi_\alpha^{(2)}, \Phi_\beta^{(2)}\}
-\end{pmatrix}$$
-
-其中：
-$$M^{\alpha\beta} = (A^{-1})^{ab}C^{\gamma}_aC^{\alpha}_b - B^{\alpha\gamma}$$
-
-### Dirac括号公式
-
-对于任意两个相空间函数 $F$ 和 $G$：
-$$\{F, G\}_D = \{F, G\} - \{F, \Phi_A\}(\Delta^{-1})^{AB}\{\Phi_B, G\}$$
-
-### $x_a$ 和 $p^b$ 的Dirac括号
-
-**基本Dirac括号**：
-
-$$\{x_a, x_b\}_D = 0$$
-
-$$\{p_a, p_b\}_D = 0$$
-
-$$\{x_a, p^b\}_D = \delta_a^b - \{x_a, \Phi_A\}(\Delta^{-1})^{AB}\{\Phi_B, p^b\}$$
-
-由于 $\{x_a, \pi_\alpha\} = 0$ 和 $\{x_a, \Phi_\alpha^{(2)}\} = -(A^{-1})^{bc}C^\alpha_c\delta_a^b$，
-
-以及 $\{\pi_\alpha, p^b\} = 0$ 和 $\{\Phi_\alpha^{(2)}, p^b\} = (A^{-1})^{bc}C^\alpha_c$，
-
-**最终结果**：
-
-$$\boxed{\{x_a, p^b\}_D = \delta_a^b + (A^{-1})^{bc}C^\alpha_c(M^{-1})_{\alpha\beta}(A^{-1})^{de}C^\beta_e\delta_a^d}$$
-
-其中 $(M^{-1})_{\alpha\beta}$ 是矩阵 $M^{\alpha\beta}$ 的逆矩阵。
-
-## 物理解释
-
-这个结果表明约束的存在修正了标准的 [[泊松括号]]。修正项反映了：
-1. 耦合项 $C^{\alpha a}\phi_\alpha\dot{x}_a$ 导致的 $x_a$ 和 $p_b$ 之间的非平凡关联
-2. 约束面上的几何结构对相空间对称性的影响
-
-[[开放问题]]：
-- 当 $M^{\alpha\beta}$ 不可逆时需要进一步迭代寻找更高级约束
-- 量子化时需要考虑约束的算符排序问题
-
-^cite{Dirac1964,Henneaux1992}
