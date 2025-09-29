@@ -4,8 +4,7 @@
 	1. 继续考虑$\mathrm{AdS_{n}}$中的正则量子化
 	2. 计算关联函数
 	3. 考虑过渡到路径积分
-	4. 
-	5. 后面思考推广到d维
+	4. 后面思考推广到d维
 2. [Henneaux, Teitelboim] Quantization of gauge systems.pdf
 3. 可以借上课把若干经典读一读
 	1. large scale structure of spacetime by Hawking and Ellis

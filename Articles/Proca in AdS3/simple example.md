@@ -114,4 +114,9 @@ $$\begin{align}
  & =\delta ^{b}_{a}-(A^{-1})_{ac}(B^{-1})_{\alpha \beta}C^{\alpha b}C^{\beta c}
 \end{align}$$
 
-Poison brackets in CPS formalism do not match the Dirac brackets in Dirac formalism... however the dynamics are the same.
+Poison brackets in CPS formalism do not match the Dirac brackets in Dirac formalism... however the dynamics are the same...?
+
+$$\begin{align}
+(A^{ab}-(B_{-1})_{\alpha \beta}C^{\alpha a}C^{\beta b})\ddot{x}_{b} & =0 & \text{CPS formalism} \\
+
+\end{align}$$
