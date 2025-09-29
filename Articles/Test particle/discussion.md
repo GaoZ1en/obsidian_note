@@ -160,6 +160,18 @@ $$\begin{align}
 \delta H_{\xi} & =\int _{\infty}(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta)-\int _{B}(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta)+\int _{\Sigma}\delta \mathbf{C}_{\xi}
 \end{align}$$
 
+$$\tag{.}\begin{align}
+\delta H_{\xi} & =-X_{\xi}\cdot \omega=0
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\int _{\infty}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right) & =-\int _{\Sigma}\delta \mathbf{C}_{\xi}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\mathcal{L}_{\xi}g_{\mu \nu}=0, \mathcal{L}_{\xi}A_{\mu}=0
+\end{align}$$
+
 for a black hole solution with matter perturbation (here we assume that the matter distribution is far from $\displaystyle{B}$ so that does not contribute to the $\displaystyle{B}$ integral.)
 
 where

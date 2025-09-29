@@ -62,15 +62,7 @@ C^{\alpha \beta} & =\begin{pmatrix}
 then the nontrivial Dirac brackets are
 
 $$\begin{align}
-\left\{x_{a},p^{b}\right\} & =\delta _{a}^{b}
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\omega=\mathrm{d}x_{a}\wedge \mathrm{d}p^{a}
-\end{align}$$
-
-$$\begin{align}
-\left\{x_{a},p^{b}\right\}_{\text{Dirac}} & =\delta ^{b}_{a}+\left\{x_{a},\varphi _{i}^{\alpha}\right\}(C^{-1})^{ij}_{\alpha \beta}\left\{\varphi ^{\beta}_{j},p^{b}\right\}
+\left\{x_{a},p^{b}\right\}_{\text{Dirac}} & =\delta _{a}^{b}
 \end{align}$$
 
 # CPS formalism
@@ -101,6 +93,15 @@ then the symplectic form becomes
 $$\begin{align}
 \omega & =A^{ab}\delta V_{a}\wedge \delta X_{b} \\
  & =A^{ab}(A-C^{T}B^{-1}C)^{-1}_{bc}\delta p_{0}^{c}\wedge \delta x_{0,a}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+X_{a} & =x_{0,a} \\
+V_{a} & =(A-C^{T}B^{-1}C)^{-1}_{ab}p_{0}^{b}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\omega & =\mathrm{d}p^{a}\wedge \mathrm{d}x_{a}
 \end{align}$$
 
 the Hamilton flow for $\displaystyle{x_{a}}$ and $\displaystyle{p^{a}:=A^{ab}\dot{x}_{b}-C^{\alpha a}\phi _{\alpha}}$ are
