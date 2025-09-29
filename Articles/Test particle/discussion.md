@@ -35,6 +35,10 @@ $$\begin{align}
 
 by taking $\displaystyle{\xi ^{a}=\left( \frac{\partial}{\partial t} \right)^{a}}$ and $\displaystyle{\xi ^{a}=\left(\frac{\partial}{\partial \phi}\right)^{a}}$.
 
+$$\begin{align}
+\frac{m}{q}< 1
+\end{align}$$
+
 ---
 
 consider a Lagrangian $\displaystyle{n}$-form $\displaystyle{\mathbf{L}[\phi]}$. take a variation
