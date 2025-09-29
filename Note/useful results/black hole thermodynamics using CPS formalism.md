@@ -128,69 +128,77 @@ Q_{\xi}^{\mu \nu} & =\frac{1}{16\pi G}(\nabla ^{\mu}\xi ^{\nu}-\nabla ^{\nu}\xi 
 C_{\xi}^{\mu} & =\frac{1}{8\pi G}\xi _{\nu}\left( R^{\mu \nu}-\frac{1}{2}Rg^{\mu \nu}+\Lambda g^{\mu \nu} \right) \\
 \end{align}$$
 
-set $\displaystyle{\xi ^{a}=t^{a}+\Omega _{H}\varphi ^{a}}$, $\displaystyle{\mathcal{L}}$
+set $\displaystyle{\xi ^{a}=t^{a}+\Omega _{H}\varphi ^{a}}$, we have $\displaystyle{\mathcal{L}_{\xi}g_{\mu \nu}=0}$, and we have
+
+$$\begin{align}
+0 & =\delta H_{\xi} \\
+\implies\int _{B}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right)& =\int _{\infty}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right)+\int _{\Sigma}\delta \mathbf{C}_{\xi}
+\end{align}$$
+
+if there is no matter perturbation, $\displaystyle{\delta \mathbf{C}_{\xi}=0}$, and we have
+
+$$\begin{align}
+\int _{B}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right)& =\int _{\infty}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right)
+\end{align}$$
+
+this is the first law of black hole thermodynamics. the black hole entropy is defined as Noether charge corresponding to the horizon Killing vector $\displaystyle{\xi}$
+
+$$\begin{align}
+S=\frac{2\pi}{\kappa}\int _{\Sigma}\mathbf{Q}_{\xi}
+\end{align}$$
+
+# BTZ black hole and its thermodynamics
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-N^{2}\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{N^{2}}+r^{2}(\mathrm{d}\phi+N^{\phi}\mathrm{d}t)^{2} \\
+N^{2} & =-M+\frac{r^{2}}{\ell ^{2}}+\frac{J^{2}}{4r^{2}} \\
+N^{\phi} & =-\frac{J}{2r^{2}}
+\end{align}$$
+
+where $\displaystyle{\Lambda=-\frac{1}{\ell ^{2}}}$. the horizon is located at $\displaystyle{r_{\pm}^{2}=\frac{M\ell ^{2}}{2}\left(1\pm \sqrt{ 1-\frac{J^{2}}{M^{2}\ell ^{2}} }\right)}$. define
+
+$$\begin{align}
+\mathrm{d}v & =\mathrm{d}t+\frac{\mathrm{d}r}{N^{2}} \\
+\mathrm{d}\varphi & =\mathrm{d}\varphi+A\mathrm{d}r
+\end{align}$$
+
+the metric becomes
+
+$$\begin{align}
+
+\end{align}$$
+$$\begin{align}
+\mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi\right)^{2}
+\end{align}$$
+
+here $\displaystyle{a=\frac{J}{M},\Sigma=r^{2}+a^{2}\cos ^{2}\theta, \Delta=r^{2}-2Mr+a^{2}}$. define the Kerr analog of the advanced null coordinate/Eddington-Finkelstein coordinate
+
+$$\begin{align}
+\mathrm{d}v & =\mathrm{d}t+\frac{r^{2}+a^{2}}{\Delta}\mathrm{d}r \\
+\mathrm{d}\varphi & =\mathrm{d}\phi+\frac{a}{\Delta}\mathrm{d}r
+\end{align}$$
+
+in these coordinates, the Kerr metric can be organized into
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-\left( 1-\frac{2Mr}{\Sigma} \right)(\mathrm{d}v-a\sin ^{2}\theta \mathrm{d}\varphi)^{2}+2(\mathrm{d}v-a\sin ^{2}\mathrm{d}\varphi)(\mathrm{d}r-a\sin ^{2}\theta \mathrm{d}\varphi)+\Sigma(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\varphi ^{2})
+\end{align}$$
+
+consider the horizon Killing vector $\displaystyle{\xi =\partial _{t}+\Omega _{H}\partial _{\phi}}$, where $\displaystyle{\Omega _{H}=\frac{J}{2r_{+}^{2}}}$ is the angular velocity of the horizon. the surface gravity is given by
+
+$$\begin{align}
+\implies \kappa ^{2} & =-\frac{1}{2}(\nabla ^{\mu}\xi ^{\nu})(\nabla _{\mu}\xi _{\nu})
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\nabla _{\mu}\xi _{\nu} & =\partial _{\mu}\xi _{\nu}-\Gamma ^{\rho}_{\mu \nu}\xi _{\rho}
+\end{align}$$
 
 
-# BTZ Black Hole Solution and Thermodynamics via Wald Formalism
-
-## BTZ Black Hole Solution
-
-BTZ黑洞是三维反德西特时空中的旋转黑洞解，由Bañados, Teitelboim和Zanelli在1992年发现^cite{BTZ1992}。
-
-### Metric and Field Equations
-
-在三维Einstein-Hilbert作用量中：
-$$S = \frac{1}{16\pi G}\int d^3x \sqrt{-g}(R - 2\Lambda)$$
-
-其中 $$\Lambda = -\frac{1}{\ell^2}$$ 是负宇宙学常数，$$\ell$$ 是AdS半径。
-
-BTZ黑洞的度规形式为：
-$$ds^2 = -N(r)^2 dt^2 + \frac{dr^2}{f(r)} + r^2(d\phi + N^\phi(r) dt)^2$$
-
-其中：
-- $$N(r)^2 = f(r) = -8GM + \frac{r^2}{\ell^2} + \frac{16G^2J^2}{r^2}$$
-- $$N^\phi(r) = -\frac{4GJ}{r^2}$$
-
-这里 $$M$$ 是质量参数，$$J$$ 是角动量参数。
-
-### Event Horizon and Physical Parameters
-
-视界位置由 $$f(r_+) = 0$$ 确定：
-$$r_+^2 = 4GM\ell^2 + \sqrt{16G^2M^2\ell^4 - 16G^2J^2}$$
-
-Cauchy视界位置：
-$$r_-^2 = 4GM\ell^2 - \sqrt{16G^2M^2\ell^4 - 16G^2J^2}$$
-
-### Hawking Temperature and Angular Velocity
 
 **Hawking温度**：
 $$T_H = \frac{1}{2\pi}\frac{df}{dr}\bigg|_{r=r_+} = \frac{r_+^2 - r_-^2}{2\pi\ell^2 r_+}$$
 
-**视界角速度**：
-$$\Omega_H = N^\phi(r_+) = -\frac{4GJ}{r_+^2}$$
-
-## Wald Formalism for First Law
-
-### Wald's Noether Charge Construction
-
-对于Diffeomorphism不变的拉格朗日密度 $$\mathcal{L}$$，Wald formalism构造Noether电流^cite{Wald1993}：
-
-$$\mathbf{J}[\xi] = \mathbf{\Theta}[\phi, \mathcal{L}_\xi \phi] - \xi \cdot \mathbf{L}$$
-
-其中：
-- $$\xi$$ 是Killing向量场
-- $$\mathbf{\Theta}$$ 是symplectic potential
-- $$\mathcal{L}_\xi$$ 是Lie导数
-
-### Symplectic Potential for Einstein-Hilbert Action
-
-对于Einstein-Hilbert作用量，symplectic potential为：
-$$\boldsymbol{\Theta}[g, \delta g] = \frac{1}{16\pi G}\sqrt{-g}\, g^{\mu\nu}\nabla_\rho(\delta g_{\mu\nu})dx^\rho \wedge d^2x$$
-
-### Noether Current and Charge
-
-对于Killing向量 $$\xi$$，Noether电流为：
-$$\mathbf{J}[\xi] = \frac{1}{8\pi G}\sqrt{-g}\nabla_\mu \xi_\nu \, dx^\mu \wedge dx^\nu$$
 
 积分得到Noether荷：
 $$Q[\xi] = \oint_{\partial\Sigma} \mathbf{J}[\xi] = \frac{1}{8\pi G}\oint_{\partial\Sigma} \nabla_\mu \xi_\nu \, dS^{\mu\nu}$$
