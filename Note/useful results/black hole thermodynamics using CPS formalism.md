@@ -150,49 +150,34 @@ S=\frac{2\pi}{\kappa}\int _{\Sigma}\mathbf{Q}_{\xi}
 # BTZ black hole and its thermodynamics
 
 $$\begin{align}
-\mathrm{d}s^{2} & =-N^{2}\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{N^{2}}+r^{2}(\mathrm{d}\phi+N^{\phi}\mathrm{d}t)^{2} \\
+\mathrm{d}s^{2} & =-N^{2}\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{N^{2}}+r^{2}(\mathrm{d}\phi+N_{\phi}\mathrm{d}t)^{2} \\
 N^{2} & =-M+\frac{r^{2}}{\ell ^{2}}+\frac{J^{2}}{4r^{2}} \\
-N^{\phi} & =-\frac{J}{2r^{2}}
+N_{\phi} & =-\frac{J}{2r^{2}}
 \end{align}$$
 
-where $\displaystyle{\Lambda=-\frac{1}{\ell ^{2}}}$. the horizon is located at $\displaystyle{r_{\pm}^{2}=\frac{M\ell ^{2}}{2}\left(1\pm \sqrt{ 1-\frac{J^{2}}{M^{2}\ell ^{2}} }\right)}$. define
+where $\displaystyle{\Lambda=-\frac{1}{\ell ^{2}}}$. the horizon is located at $\displaystyle{r_{\pm}^{2}=\frac{M\ell ^{2}}{2}\left(1\pm \sqrt{ 1-\frac{J^{2}}{M^{2}\ell ^{2}} }\right)}$. the angular velocity of the horizon is $\displaystyle{\Omega _{H}=\frac{J}{2r_{+}^{2}}}$. the surface gravity is given by
 
 $$\begin{align}
-\mathrm{d}v & =\mathrm{d}t+\frac{\mathrm{d}r}{N^{2}} \\
-\mathrm{d}\varphi & =\mathrm{d}\varphi+A\mathrm{d}r
+\Gamma ^{\rho}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{\rho \sigma}\mathrm{d}g_{\sigma \nu}\mathrm{d}x^{\nu}-\frac{1}{2}g^{\rho \sigma}\partial _{\sigma}\mathrm{d}s^{2}
 \end{align}$$
-
-the metric becomes
 
 $$\begin{align}
-
+\Gamma ^{t}_{\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{t\sigma}\mathrm{d}g_{\sigma \nu}\mathrm{d}x^{\nu}-\frac{1}{2}g^{t\sigma}\partial _{\sigma}\mathrm{d}s^{2}
 \end{align}$$
-$$\begin{align}
-\mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi\right)^{2}
-\end{align}$$
-
-here $\displaystyle{a=\frac{J}{M},\Sigma=r^{2}+a^{2}\cos ^{2}\theta, \Delta=r^{2}-2Mr+a^{2}}$. define the Kerr analog of the advanced null coordinate/Eddington-Finkelstein coordinate
 
 $$\begin{align}
-\mathrm{d}v & =\mathrm{d}t+\frac{r^{2}+a^{2}}{\Delta}\mathrm{d}r \\
-\mathrm{d}\varphi & =\mathrm{d}\phi+\frac{a}{\Delta}\mathrm{d}r
+g_{\mu \nu} & =\begin{pmatrix}
+r^{2}N_{\phi}^{2}-N^{2} & 0 & r^{2}N_{\phi} \\
+0 & \frac{1}{N^{2}} & 0 \\
+r^{2}N_{\phi} & 0 & r^{2}
+\end{pmatrix} \\
+g^{\mu \nu} & =\begin{pmatrix}
+
+\end{pmatrix}
 \end{align}$$
 
-in these coordinates, the Kerr metric can be organized into
 
-$$\begin{align}
-\mathrm{d}s^{2} & =-\left( 1-\frac{2Mr}{\Sigma} \right)(\mathrm{d}v-a\sin ^{2}\theta \mathrm{d}\varphi)^{2}+2(\mathrm{d}v-a\sin ^{2}\mathrm{d}\varphi)(\mathrm{d}r-a\sin ^{2}\theta \mathrm{d}\varphi)+\Sigma(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\varphi ^{2})
-\end{align}$$
 
-consider the horizon Killing vector $\displaystyle{\xi =\partial _{t}+\Omega _{H}\partial _{\phi}}$, where $\displaystyle{\Omega _{H}=\frac{J}{2r_{+}^{2}}}$ is the angular velocity of the horizon. the surface gravity is given by
-
-$$\begin{align}
-\implies \kappa ^{2} & =-\frac{1}{2}(\nabla ^{\mu}\xi ^{\nu})(\nabla _{\mu}\xi _{\nu})
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\nabla _{\mu}\xi _{\nu} & =\partial _{\mu}\xi _{\nu}-\Gamma ^{\rho}_{\mu \nu}\xi _{\rho}
-\end{align}$$
 
 
 
@@ -272,3 +257,122 @@ $$\boxed{\delta M = T_H \delta S + \Omega_H \delta J}$$
 - ^cite{BTZ1992} arXiv:hep-th/9204099
 - ^cite{Wald1993} arXiv:gr-qc/9307038
 - ^cite{Carlip2003} arXiv:gr-qc/0503022 (BTZ thermodynamics review)
+# BTZ黑洞表面引力计算
+
+## 表面引力的定义
+
+表面引力 $$\kappa$$ 是刻画黑洞视界几何性质的重要量，有多种等价定义：
+
+### Definition 1: Killing向量归一化条件
+对于静止Killing向量 $$\xi = \partial_t$$，在视界上：
+$$\nabla_\mu \xi_\nu = \kappa \epsilon_{\mu\nu}$$
+其中 $$\epsilon_{\mu\nu}$$ 是视界上的binormal。
+
+### Definition 2: 四维情形的推广
+$$\kappa^2 = -\frac{1}{2}(\nabla_\mu \xi_\nu)(\nabla^\mu \xi^\nu)\bigg|_{\text{horizon}}$$
+
+### Definition 3: 度规函数方法（最常用）
+对于形如 $$ds^2 = -f(r)dt^2 + \frac{dr^2}{g(r)} + \cdots$$ 的度规：
+$$\kappa = \frac{1}{2}\sqrt{\frac{f'(r_+)}{g(r_+)}} \cdot g'(r_+)$$
+
+当 $$g(r) = f(r)^{-1}$$ 时简化为：
+$$\boxed{\kappa = \frac{1}{2}f'(r_+)}$$
+
+## BTZ黑洞表面引力计算
+
+### 方法一：直接从度规函数计算
+
+BTZ度规中：
+$$f(r) = -8GM + \frac{r^2}{\ell^2} + \frac{16G^2J^2}{r^2}$$
+
+计算导数：
+$$f'(r) = \frac{2r}{\ell^2} - \frac{32G^2J^2}{r^3}$$
+
+在视界 $$r = r_+$$ 处：
+$$\kappa = \frac{1}{2}f'(r_+) = \frac{1}{2}\left(\frac{2r_+}{\ell^2} - \frac{32G^2J^2}{r_+^3}\right)$$
+
+### 利用视界条件简化
+
+由于 $$f(r_+) = 0$$：
+$$\frac{r_+^2}{\ell^2} = 8GM - \frac{16G^2J^2}{r_+^2}$$
+
+因此：
+$$\frac{2r_+}{\ell^2} = \frac{16GM}{r_+} - \frac{32G^2J^2}{r_+^3}$$
+
+代入得：
+$$\kappa = \frac{1}{2}\left(\frac{16GM}{r_+} - \frac{64G^2J^2}{r_+^3}\right) = \frac{8GM}{r_+} - \frac{32G^2J^2}{r_+^3}$$
+
+### 用 $$r_\pm$$ 表示
+
+利用BTZ黑洞的标准关系：
+- $$r_+^2 + r_-^2 = 8GM\ell^2$$
+- $$r_+ r_- = 4GJ\ell$$
+
+可以证明：
+$$\boxed{\kappa = \frac{r_+^2 - r_-^2}{2\ell^2 r_+}}$$
+
+### 方法二：从Killing向量场计算
+
+考虑静止Killing向量 $$\xi = \partial_t$$，在Boyer-Lindquist坐标中：
+$$\xi^\mu = (1, 0, 0)$$
+
+计算协变导数：
+$$\nabla_r \xi_t = \frac{1}{2}g_{tt,r} = -\frac{1}{2}f'(r)$$
+
+在视界处：
+$$\kappa = |\nabla_r \xi_t|_{r=r_+} = \frac{1}{2}f'(r_+)$$
+
+这与方法一一致。
+
+## 与Hawking温度的关系
+
+### 标准关系式
+$$T_H = \frac{\kappa}{2\pi}$$
+
+对于BTZ黑洞：
+$$T_H = \frac{1}{2\pi} \cdot \frac{r_+^2 - r_-^2}{2\ell^2 r_+} = \frac{r_+^2 - r_-^2}{4\pi\ell^2 r_+}$$
+
+这与前面通过[[Euclidean Path Integral]]或[[Unruh Effect]]得到的结果完全一致。
+
+## 特殊情况
+
+### 静态BTZ黑洞 ($$J = 0$$)
+当 $$J = 0$$ 时，$$r_- = 0$$：
+$$\kappa = \frac{r_+}{2\ell^2} = \frac{\sqrt{8GM}}{2\ell}$$
+
+### 极端情况 ($$r_+ = r_-$$)
+当 $$r_+ = r_-$$ 时：
+$$\kappa = 0$$
+
+这意味着极端BTZ黑洞的Hawking温度为零，符合极端黑洞的一般性质。
+
+## 几何解释
+
+### Rindler近似
+在视界附近，BTZ度规可以近似为：
+$$ds^2 \approx -\kappa^2 \rho^2 dt^2 + d\rho^2 + r_+^2 d\phi^2$$
+
+其中 $$\rho = r - r_+$$ 是距视界的proper distance。这是二维Rindler时空与圆周的直积。
+
+### 加速度解释
+表面引力 $$\kappa$$ 对应于静止观者在视界附近感受到的proper acceleration，以维持与视界的固定距离。
+
+## 计算验证
+
+将具体数值代入验证：
+
+对于质量 $$M$$ 和角动量 $$J$$ 的BTZ黑洞：
+- $$r_+ = 2\sqrt{2GM}\ell \sqrt{1 + \sqrt{1 - \left(\frac{J}{M\ell}\right)^2}}$$
+- $$r_- = 2\sqrt{2GM}\ell \sqrt{1 - \sqrt{1 - \left(\frac{J}{M\ell}\right)^2}}$$
+
+可以验证：
+$$\kappa = \frac{\sqrt{8GM}}{\ell}\sqrt{1 - \left(\frac{J}{M\ell}\right)^2}$$
+
+这个表达式清楚地显示了旋转对表面引力的抑制效应。
+
+---
+
+**注意事项**：
+1. 在不同坐标系中，表面引力的计算公式可能有所不同，但最终结果必须一致
+2. 对于[[Kerr Black Holes]]等高维情形，需要更仔细地处理Killing向量的归一化
+3. 量子修正可能改变表面引力，这在[[Quantum Gravity]]中是活跃研究领域
