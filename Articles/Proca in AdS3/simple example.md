@@ -93,7 +93,6 @@ the eom gives the following solutions
 
 $$\begin{align}
 x_{a} & =V_{a}t+X_{a} \\
-V_{a}\to V_{a} \\
 \phi _{\beta} & =(B^{-1})_{\alpha \beta}C^{\beta b}V_{b}
 \end{align}$$
 
@@ -101,7 +100,7 @@ then the symplectic form becomes
 
 $$\begin{align}
 \omega & =A^{ab}\delta V_{a}\wedge \delta X_{b} \\
- & ?=\delta x_{0a}\wedge \delta V_{0}^{a}
+ & =A^{ab}(A-C^{T}B^{-1}C)^{-1}_{bc}\delta p_{0}^{c}\wedge \delta x_{0,a}
 \end{align}$$
 
 the Hamilton flow for $\displaystyle{x_{a}}$ and $\displaystyle{p^{a}:=A^{ab}\dot{x}_{b}-C^{\alpha a}\phi _{\alpha}}$ are
