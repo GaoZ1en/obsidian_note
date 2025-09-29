@@ -54,8 +54,6 @@ $$\tag{.}\begin{align}
 4z(1-z)\partial _{z}^{2}\tilde{A}^{r}-8z\partial _{z}\tilde{A}^{r}+\left(\omega ^{2}+\frac{1}{z}-\frac{m^{2}-1}{1-z}\right)\tilde{A}^{r} & =0
 \end{align}$$
 
-
-
 ---
 
 following the same procedure as highest weight formalism in Proca field

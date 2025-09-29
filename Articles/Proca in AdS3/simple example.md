@@ -115,4 +115,3 @@ $$\begin{align}
 \end{align}$$
 
 Poison brackets in CPS formalism do not match the Dirac brackets in Dirac formalism... however the dynamics are the same.
-
