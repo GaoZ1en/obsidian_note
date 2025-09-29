@@ -162,7 +162,12 @@ $$\begin{align}
 \end{align}$$
 
 $$\begin{align}
-\Gamma ^{t}_{\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{t\sigma}\mathrm{d}g_{\sigma \nu}\mathrm{d}x^{\nu}-\frac{1}{2}g^{t\sigma}\partial _{\sigma}\mathrm{d}s^{2}
+\Gamma ^{t}_{\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =\frac{2}{N^{2}}\left(NN'-\frac{1}{2}r^{2}N_{\phi}N_{\phi}'\right)\mathrm{d}t\mathrm{d}r \\
+ & +2\left(\frac{rN_{\phi}}{N^{2}}+\left(r^{2}N_{\phi}^{2}-N^{2}\right)\left( rN_{\phi}+\frac{1}{2}r^{2}N_{\phi}' \right)\right)\mathrm{d}r\mathrm{d}\phi \\
+\Gamma ^{r}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{rr}\mathrm{d}g_{rr}\mathrm{d}r-\frac{1}{2}g^{rr}\partial _{r}\mathrm{d}s^{2} \\
+ & =N^{2}\partial _{r}\left(  \frac{1}{N^{2}} \right)\mathrm{d}r^{2}-\frac{1}{2}N^{2}\partial _{r}\left((r^{2}N_{\phi}^{2}-N^{2})\mathrm{d}t^{2}+2r^{2}N_{\phi}\mathrm{d}t\mathrm{d}\phi+\frac{1}{N^{2}}\mathrm{d}r^{2}+r^{2}\mathrm{d}\phi ^{2}\right) \\
+ & =-\frac{1}{2}N^{2}(2rN_{\phi}^{2}+2r^{2}N_{\phi}N_{\phi}'-2NN')\mathrm{d}t^{2}-N^{2}(2rN_{\phi}+r^{2}N_{\phi})\mathrm{d}t\mathrm{d}\phi \\
+ & +\frac{1}{2}N^{2}\partial _{r}\left(\frac{1}{N^{2}}\right)\mathrm{d}r^{2}
 \end{align}$$
 
 $$\begin{align}
@@ -172,7 +177,9 @@ r^{2}N_{\phi}^{2}-N^{2} & 0 & r^{2}N_{\phi} \\
 r^{2}N_{\phi} & 0 & r^{2}
 \end{pmatrix} \\
 g^{\mu \nu} & =\begin{pmatrix}
-
+-\frac{1}{N^{2}} & 0 & \frac{N_{\phi}}{N^{2}} \\
+0 & N^{2} & 0 \\
+\frac{N_{\phi}}{N^{2}} & 0 & \frac{1}{r^{2}}-\frac{N_{\phi}^{2}}{N^{2}}
 \end{pmatrix}
 \end{align}$$
 
