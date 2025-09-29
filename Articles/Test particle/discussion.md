@@ -248,3 +248,8 @@ if matter falls into the black hole, and spacetime and electric field have dynam
 $$\tag{2.7}\begin{align}
 \delta M-\Omega _{H}\delta J-\frac{\kappa}{8\pi}\delta A_{B}-\Phi _{H}\delta Q_{B} & =-\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}(\delta T^{\mu \nu}_{\text{matter}}+\delta J^{\mu}_{\text{matter}}A^{\nu})
 \end{align}$$
+
+
+$$\tag{.}\begin{align}
+\delta M-\Omega _{H}\delta J-\frac{\kappa}{8\pi}\delta A_{B}-\Phi _{H}\delta Q_{B}
+\end{align}$$
