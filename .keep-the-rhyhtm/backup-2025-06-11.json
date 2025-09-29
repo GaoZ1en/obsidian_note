@@ -55,9 +55,15 @@
         },
         {
           "index": 2,
-          "option": "LAST_MONTH",
+          "option": "CURRENT_MONTH",
           "unit": "WORD",
-          "calc": "AVG"
+          "calc": "TOTAL"
+        },
+        {
+          "index": 3,
+          "option": "CURRENT_YEAR",
+          "unit": "WORD",
+          "calc": "TOTAL"
         }
       ]
     }
@@ -24834,7 +24840,7 @@
       },
       {
         "date": "2025-09-25",
-        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/Untitled 1.md",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 3.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [],
@@ -24915,7 +24921,7 @@
       },
       {
         "date": "2025-09-26",
-        "filePath": "Articles/Test particle/read note for black hole entropy.md",
+        "filePath": "Articles/Test particle/discussion.md",
         "wordCountStart": 2084,
         "charCountStart": 11593,
         "changes": [
@@ -25414,6 +25420,1035 @@
         "charCountStart": 15013,
         "changes": [],
         "id": 820
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Articles/Proca in AdS3/electric field.md",
+        "wordCountStart": 1826,
+        "charCountStart": 7736,
+        "changes": [
+          {
+            "timeKey": "12:10",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "12:30",
+            "w": -6,
+            "c": -30
+          }
+        ],
+        "id": 821
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13738,
+        "changes": [],
+        "id": 822
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [],
+        "id": 823
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Articles/Proca in AdS3/correlation function.md",
+        "wordCountStart": 2016,
+        "charCountStart": 8307,
+        "changes": [],
+        "id": 824
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Note/useful results/covariant phase space formalism.md",
+        "wordCountStart": 961,
+        "charCountStart": 5197,
+        "changes": [
+          {
+            "timeKey": "12:35",
+            "w": 0,
+            "c": 4
+          }
+        ],
+        "id": 825
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Literature Notes/Gravitational Entropy (2509.10921v1).md",
+        "wordCountStart": 3233,
+        "charCountStart": 16922,
+        "changes": [
+          {
+            "timeKey": "13:55",
+            "w": -4,
+            "c": -32
+          }
+        ],
+        "id": 826
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Note/Physics/Miscellaneous/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "12:40",
+            "w": 712,
+            "c": 5166
+          },
+          {
+            "timeKey": "12:45",
+            "w": 672,
+            "c": 4824
+          },
+          {
+            "timeKey": "12:50",
+            "w": 342,
+            "c": 3220
+          }
+        ],
+        "id": 827
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Articles/Test particle/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:55",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 828
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Articles/Test particle/discussion.md",
+        "wordCountStart": 2084,
+        "charCountStart": 11628,
+        "changes": [
+          {
+            "timeKey": "08:10",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "13:10",
+            "w": 0,
+            "c": -1
+          },
+          {
+            "timeKey": "13:15",
+            "w": 1,
+            "c": 4
+          },
+          {
+            "timeKey": "13:20",
+            "w": -1,
+            "c": -24
+          },
+          {
+            "timeKey": "13:25",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "13:35",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "13:40",
+            "w": 27,
+            "c": 118
+          },
+          {
+            "timeKey": "13:45",
+            "w": 56,
+            "c": 309
+          },
+          {
+            "timeKey": "13:50",
+            "w": 154,
+            "c": 872
+          },
+          {
+            "timeKey": "13:55",
+            "w": 43,
+            "c": 268
+          },
+          {
+            "timeKey": "14:10",
+            "w": -131,
+            "c": -844
+          },
+          {
+            "timeKey": "14:15",
+            "w": 34,
+            "c": 231
+          },
+          {
+            "timeKey": "14:20",
+            "w": 39,
+            "c": 212
+          },
+          {
+            "timeKey": "14:25",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "14:35",
+            "w": -94,
+            "c": -614
+          },
+          {
+            "timeKey": "14:40",
+            "w": -37,
+            "c": -214
+          },
+          {
+            "timeKey": "14:45",
+            "w": 41,
+            "c": 232
+          },
+          {
+            "timeKey": "15:10",
+            "w": -105,
+            "c": -618
+          },
+          {
+            "timeKey": "15:20",
+            "w": 8,
+            "c": 70
+          },
+          {
+            "timeKey": "15:25",
+            "w": 14,
+            "c": 94
+          },
+          {
+            "timeKey": "15:30",
+            "w": 13,
+            "c": 64
+          },
+          {
+            "timeKey": "15:35",
+            "w": 39,
+            "c": 181
+          },
+          {
+            "timeKey": "15:40",
+            "w": 103,
+            "c": 458
+          },
+          {
+            "timeKey": "15:45",
+            "w": 201,
+            "c": 868
+          },
+          {
+            "timeKey": "15:50",
+            "w": -97,
+            "c": -404
+          },
+          {
+            "timeKey": "15:55",
+            "w": -258,
+            "c": -1214
+          },
+          {
+            "timeKey": "16:00",
+            "w": 48,
+            "c": 259
+          },
+          {
+            "timeKey": "16:05",
+            "w": 16,
+            "c": 45
+          },
+          {
+            "timeKey": "16:15",
+            "w": 54,
+            "c": 242
+          },
+          {
+            "timeKey": "16:20",
+            "w": 14,
+            "c": 64
+          },
+          {
+            "timeKey": "16:25",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "16:30",
+            "w": 81,
+            "c": 361
+          },
+          {
+            "timeKey": "17:00",
+            "w": -81,
+            "c": -361
+          },
+          {
+            "timeKey": "17:05",
+            "w": -34,
+            "c": -161
+          },
+          {
+            "timeKey": "17:50",
+            "w": 47,
+            "c": 211
+          },
+          {
+            "timeKey": "18:35",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "18:40",
+            "w": 323,
+            "c": 1489
+          },
+          {
+            "timeKey": "18:45",
+            "w": 112,
+            "c": 480
+          },
+          {
+            "timeKey": "18:50",
+            "w": 26,
+            "c": 118
+          },
+          {
+            "timeKey": "18:55",
+            "w": -71,
+            "c": -319
+          },
+          {
+            "timeKey": "19:00",
+            "w": -197,
+            "c": -918
+          },
+          {
+            "timeKey": "19:05",
+            "w": -45,
+            "c": -194
+          },
+          {
+            "timeKey": "19:10",
+            "w": -225,
+            "c": -1090
+          },
+          {
+            "timeKey": "19:15",
+            "w": -72,
+            "c": -343
+          },
+          {
+            "timeKey": "19:20",
+            "w": 15,
+            "c": 82
+          },
+          {
+            "timeKey": "19:25",
+            "w": -169,
+            "c": -830
+          },
+          {
+            "timeKey": "19:30",
+            "w": 126,
+            "c": 608
+          },
+          {
+            "timeKey": "19:35",
+            "w": -168,
+            "c": -906
+          },
+          {
+            "timeKey": "19:40",
+            "w": 21,
+            "c": 103
+          },
+          {
+            "timeKey": "19:50",
+            "w": 168,
+            "c": 861
+          },
+          {
+            "timeKey": "20:35",
+            "w": 10,
+            "c": 54
+          }
+        ],
+        "id": 829
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Note/Physics/Miscellaneous/vielbein and spin connection.md",
+        "wordCountStart": 346,
+        "charCountStart": 2018,
+        "changes": [],
+        "id": 830
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/Untitled 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 831
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 832
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 3.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:25",
+            "w": 43,
+            "c": 283
+          },
+          {
+            "timeKey": "15:30",
+            "w": 8,
+            "c": 36
+          },
+          {
+            "timeKey": "15:35",
+            "w": 30,
+            "c": 159
+          },
+          {
+            "timeKey": "15:40",
+            "w": 7,
+            "c": 55
+          },
+          {
+            "timeKey": "15:50",
+            "w": 0,
+            "c": 4
+          },
+          {
+            "timeKey": "15:55",
+            "w": 1,
+            "c": 10
+          },
+          {
+            "timeKey": "16:00",
+            "w": 37,
+            "c": 238
+          },
+          {
+            "timeKey": "16:05",
+            "w": 30,
+            "c": 189
+          },
+          {
+            "timeKey": "16:10",
+            "w": 114,
+            "c": 631
+          },
+          {
+            "timeKey": "16:35",
+            "w": 16,
+            "c": 104
+          },
+          {
+            "timeKey": "16:40",
+            "w": 0,
+            "c": -6
+          },
+          {
+            "timeKey": "16:45",
+            "w": 150,
+            "c": 636
+          },
+          {
+            "timeKey": "16:50",
+            "w": 37,
+            "c": 225
+          },
+          {
+            "timeKey": "16:55",
+            "w": 33,
+            "c": 149
+          },
+          {
+            "timeKey": "17:00",
+            "w": 96,
+            "c": 336
+          },
+          {
+            "timeKey": "17:10",
+            "w": 24,
+            "c": 97
+          },
+          {
+            "timeKey": "17:15",
+            "w": 87,
+            "c": 437
+          },
+          {
+            "timeKey": "17:20",
+            "w": 31,
+            "c": 216
+          },
+          {
+            "timeKey": "17:25",
+            "w": 93,
+            "c": 380
+          },
+          {
+            "timeKey": "17:30",
+            "w": 19,
+            "c": 80
+          },
+          {
+            "timeKey": "17:35",
+            "w": 133,
+            "c": 545
+          },
+          {
+            "timeKey": "17:40",
+            "w": 3,
+            "c": 13
+          },
+          {
+            "timeKey": "17:45",
+            "w": 104,
+            "c": 481
+          },
+          {
+            "timeKey": "17:50",
+            "w": 28,
+            "c": 162
+          }
+        ],
+        "id": 833
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Note/Physics/Miscellaneous/graviton.md",
+        "wordCountStart": 374,
+        "charCountStart": 1771,
+        "changes": [],
+        "id": 834
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
+        "wordCountStart": 1580,
+        "charCountStart": 8087,
+        "changes": [],
+        "id": 835
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Articles/quantization/canonical quantization of fermionic systems.md",
+        "wordCountStart": 1426,
+        "charCountStart": 8002,
+        "changes": [],
+        "id": 836
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+        "wordCountStart": 2384,
+        "charCountStart": 12549,
+        "changes": [],
+        "id": 837
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+        "wordCountStart": 3516,
+        "charCountStart": 16221,
+        "changes": [],
+        "id": 838
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Articles/quantization/first example.md",
+        "wordCountStart": 2190,
+        "charCountStart": 11276,
+        "changes": [],
+        "id": 839
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "Lecture/graduate/2025 fall/foundations of geometry and topology by Liang Xiao/notes/lecture 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:30",
+            "w": 16,
+            "c": 87
+          },
+          {
+            "timeKey": "18:35",
+            "w": 91,
+            "c": 461
+          },
+          {
+            "timeKey": "18:50",
+            "w": 33,
+            "c": 189
+          },
+          {
+            "timeKey": "19:45",
+            "w": 384,
+            "c": 2238
+          },
+          {
+            "timeKey": "19:50",
+            "w": 243,
+            "c": 1516
+          }
+        ],
+        "id": 840
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "2025-09-24.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:55",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 842
+      },
+      {
+        "date": "2025-09-28",
+        "filePath": "TODO.md",
+        "wordCountStart": 6177,
+        "charCountStart": 30987,
+        "changes": [],
+        "id": 843
+      },
+      {
+        "date": "2025-09-29",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from free QFT to interacting QFT.md",
+        "wordCountStart": 3007,
+        "charCountStart": 15814,
+        "changes": [],
+        "id": 844
+      },
+      {
+        "date": "2025-09-29",
+        "filePath": "Lecture/QFT by Hongbao Zhang/from RQM to RQFT.md",
+        "wordCountStart": 2904,
+        "charCountStart": 15884,
+        "changes": [],
+        "id": 845
+      },
+      {
+        "date": "2025-09-29",
+        "filePath": "Articles/Test particle/discussion.md",
+        "wordCountStart": 2133,
+        "charCountStart": 11533,
+        "changes": [
+          {
+            "timeKey": "08:15",
+            "w": 0,
+            "c": -1
+          },
+          {
+            "timeKey": "19:50",
+            "w": 8,
+            "c": 46
+          },
+          {
+            "timeKey": "20:05",
+            "w": 58,
+            "c": 324
+          },
+          {
+            "timeKey": "20:10",
+            "w": 47,
+            "c": 237
+          },
+          {
+            "timeKey": "20:15",
+            "w": -47,
+            "c": -237
+          }
+        ],
+        "id": 846
+      },
+      {
+        "date": "2025-09-29",
+        "filePath": "Articles/quantization/Wald formalism of quantization for QFT in curved spacetime.md",
+        "wordCountStart": 849,
+        "charCountStart": 5213,
+        "changes": [],
+        "id": 847
+      },
+      {
+        "date": "2025-09-29",
+        "filePath": "Articles/quantization/first example.md",
+        "wordCountStart": 2190,
+        "charCountStart": 11276,
+        "changes": [
+          {
+            "timeKey": "09:30",
+            "w": 463,
+            "c": 3457
+          },
+          {
+            "timeKey": "09:40",
+            "w": 441,
+            "c": 3856
+          },
+          {
+            "timeKey": "09:50",
+            "w": -725,
+            "c": -5472
+          },
+          {
+            "timeKey": "09:55",
+            "w": -179,
+            "c": -1841
+          }
+        ],
+        "id": 848
+      },
+      {
+        "date": "2025-09-29",
+        "filePath": "Articles/Proca in AdS3/simple example.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "08:20",
+            "w": 122,
+            "c": 631
+          },
+          {
+            "timeKey": "08:25",
+            "w": 152,
+            "c": 692
+          },
+          {
+            "timeKey": "08:30",
+            "w": 71,
+            "c": 476
+          },
+          {
+            "timeKey": "08:35",
+            "w": 89,
+            "c": 471
+          },
+          {
+            "timeKey": "08:40",
+            "w": 125,
+            "c": 685
+          },
+          {
+            "timeKey": "08:45",
+            "w": 38,
+            "c": 234
+          },
+          {
+            "timeKey": "08:50",
+            "w": 52,
+            "c": 228
+          },
+          {
+            "timeKey": "08:55",
+            "w": 47,
+            "c": 217
+          },
+          {
+            "timeKey": "09:00",
+            "w": 23,
+            "c": 129
+          },
+          {
+            "timeKey": "09:05",
+            "w": 54,
+            "c": 282
+          },
+          {
+            "timeKey": "09:10",
+            "w": 59,
+            "c": 279
+          },
+          {
+            "timeKey": "09:15",
+            "w": 79,
+            "c": 425
+          },
+          {
+            "timeKey": "09:20",
+            "w": 27,
+            "c": 108
+          },
+          {
+            "timeKey": "09:25",
+            "w": 263,
+            "c": 1831
+          },
+          {
+            "timeKey": "09:30",
+            "w": -199,
+            "c": -1529
+          },
+          {
+            "timeKey": "09:35",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "09:40",
+            "w": -19,
+            "c": -72
+          },
+          {
+            "timeKey": "09:45",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "16:05",
+            "w": 0,
+            "c": -1
+          },
+          {
+            "timeKey": "16:30",
+            "w": 65,
+            "c": 308
+          },
+          {
+            "timeKey": "16:35",
+            "w": -39,
+            "c": -175
+          },
+          {
+            "timeKey": "17:15",
+            "w": 6,
+            "c": 18
+          },
+          {
+            "timeKey": "17:20",
+            "w": 38,
+            "c": 184
+          },
+          {
+            "timeKey": "17:25",
+            "w": -12,
+            "c": -56
+          },
+          {
+            "timeKey": "19:20",
+            "w": 33,
+            "c": 149
+          },
+          {
+            "timeKey": "19:25",
+            "w": -28,
+            "c": -135
+          },
+          {
+            "timeKey": "20:20",
+            "w": 41,
+            "c": 189
+          },
+          {
+            "timeKey": "20:25",
+            "w": -55,
+            "c": -272
+          }
+        ],
+        "id": 849
+      },
+      {
+        "date": "2025-09-29",
+        "filePath": "Lecture/graduate/2025 fall/foundations of geometry and topology by Liang Xiao/notes/lecture 2.md",
+        "wordCountStart": 767,
+        "charCountStart": 4491,
+        "changes": [],
+        "id": 850
+      },
+      {
+        "date": "2025-09-29",
+        "filePath": "Note/useful results/black hole thermodynamics using CPS formalism.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "10:10",
+            "w": 1275,
+            "c": 8231
+          },
+          {
+            "timeKey": "10:15",
+            "w": 6,
+            "c": 39
+          },
+          {
+            "timeKey": "10:20",
+            "w": 84,
+            "c": 417
+          },
+          {
+            "timeKey": "10:25",
+            "w": 106,
+            "c": 482
+          },
+          {
+            "timeKey": "10:30",
+            "w": 138,
+            "c": 782
+          },
+          {
+            "timeKey": "10:35",
+            "w": -11,
+            "c": -238
+          },
+          {
+            "timeKey": "10:40",
+            "w": 70,
+            "c": 303
+          },
+          {
+            "timeKey": "10:45",
+            "w": 17,
+            "c": 128
+          },
+          {
+            "timeKey": "10:50",
+            "w": -22,
+            "c": -91
+          },
+          {
+            "timeKey": "10:55",
+            "w": 141,
+            "c": 418
+          },
+          {
+            "timeKey": "11:00",
+            "w": -100,
+            "c": -605
+          },
+          {
+            "timeKey": "11:05",
+            "w": -80,
+            "c": -361
+          },
+          {
+            "timeKey": "11:10",
+            "w": 352,
+            "c": 2740
+          },
+          {
+            "timeKey": "11:15",
+            "w": -45,
+            "c": -261
+          },
+          {
+            "timeKey": "11:20",
+            "w": 68,
+            "c": 332
+          },
+          {
+            "timeKey": "11:35",
+            "w": 50,
+            "c": 198
+          },
+          {
+            "timeKey": "11:40",
+            "w": 81,
+            "c": 336
+          },
+          {
+            "timeKey": "11:45",
+            "w": 34,
+            "c": 141
+          },
+          {
+            "timeKey": "11:50",
+            "w": 56,
+            "c": 214
+          }
+        ],
+        "id": 851
+      },
+      {
+        "date": "2025-09-29",
+        "filePath": "Literature Notes/Gravitational Entropy (2509.10921v1).md",
+        "wordCountStart": 3229,
+        "charCountStart": 16890,
+        "changes": [],
+        "id": 852
+      },
+      {
+        "date": "2025-09-29",
+        "filePath": "Articles/Proca in AdS3/electric field.md",
+        "wordCountStart": 1820,
+        "charCountStart": 7706,
+        "changes": [
+          {
+            "timeKey": "16:15",
+            "w": 0,
+            "c": -2
+          }
+        ],
+        "id": 853
+      },
+      {
+        "date": "2025-09-29",
+        "filePath": "TODO.md",
+        "wordCountStart": 6177,
+        "charCountStart": 30987,
+        "changes": [
+          {
+            "timeKey": "16:15",
+            "w": 2,
+            "c": 18
+          },
+          {
+            "timeKey": "16:45",
+            "w": -1,
+            "c": -5
+          },
+          {
+            "timeKey": "17:50",
+            "w": 3,
+            "c": 17
+          },
+          {
+            "timeKey": "17:55",
+            "w": 0,
+            "c": 3
+          }
+        ],
+        "id": 854
       }
     ],
     "daysWithCompletedGoal": [
@@ -25484,7 +26519,9 @@
       "2025-09-22",
       "2025-09-23",
       "2025-09-25",
-      "2025-09-27"
+      "2025-09-27",
+      "2025-09-28",
+      "2025-09-29"
     ]
   }
 }
