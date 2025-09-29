@@ -217,7 +217,7 @@ Q^{\mu \nu}_{\xi,\text{EM}} & =F^{\mu \nu}A_{\rho}\xi ^{\rho} \\
 C^{\mu}_{\xi,\text{EM}} & =\nabla _{\nu}F^{\nu \mu}A_{\rho}\xi ^{\rho}-\xi _{\nu}\left(F^{\mu}_{~\rho}F^{\nu \rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}\right)
 \end{align}$$
 
-suppose $\displaystyle{\xi}$ is a Killing vector, adopt the gauge $\displaystyle{\mathcal{L}_{\xi}A_{\mu}=0}$ and consider a perturbation of the matter fields, assume that the matter distribution is far from $\displaystyle{B}$ so that does not contribute to the $\displaystyle{B}$ integral. we have
+suppose $\displaystyle{\xi}$ is a Killing vector, adopt the gauge $\displaystyle{\mathcal{L}_{\xi}A_{\mu}=0}$ and consider a perturbation of the matter field, assume that the matter distribution is far from $\displaystyle{B}$ so that does not contribute to the $\displaystyle{B}$ integral. we have
 
 $$\tag{2.6}\begin{align}
 0=\delta H_{\xi} & =\int _{\infty}(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta)+\delta\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau _{\mu}\left(\frac{1}{8\pi G}\xi _{\nu}\left( R^{\mu \nu}-\frac{1}{2}Rg^{\mu \nu}+\Lambda g^{\mu \nu} -8\pi GT^{\mu \nu}_{\text{EM}}\right)+\nabla _{\nu}F^{\nu \mu}A_{\rho}\xi ^{\rho}\right) \\
@@ -227,7 +227,7 @@ $$\tag{2.6}\begin{align}
 
 this is the result in the paper.
 
-if matter falls into the black hole, and spacetime and electric field has dynamics, we have
+if matter falls into the black hole, and spacetime and electric field have dynamics, we have
 
 $$\tag{2.7}\begin{align}
 \delta M-\Omega _{H}\delta J-\frac{\kappa}{8\pi}\delta A_{B}-\Phi _{H}\delta Q_{B} & =-\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}(\delta T^{\mu \nu}_{\text{matter}}+\delta J^{\mu}_{\text{matter}}A^{\nu})
