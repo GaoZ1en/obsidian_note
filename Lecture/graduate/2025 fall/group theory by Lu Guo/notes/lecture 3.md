@@ -8,4 +8,11 @@ the generators of a group are the elements from which every element of the group
 
 operation table.
 
-subset of group. 
+# subset of group
+
+a **subgroup** $\displaystyle{H}$ is a subset of group $\displaystyle{(G,\cdot)}$ that $\displaystyle{\left(H,\cdot\right)}$ is also a group. how to find nontrivial subgroup? 
+1. if $\displaystyle{G}$ is finite, then $\displaystyle{H}$ is nontrivial if $\displaystyle{|H|}$ divides $\displaystyle{|G|}$.
+2. if $\displaystyle{G}$ is abelian, then every nonempty subset of $\displaystyle{G}$ that is closed under the group operation and taking inverses is a subgroup of $\displaystyle{G}$.
+
+the **center** of a group $\displaystyle{G}$ is the set of elements that commute with every element of the group, denoted $\displaystyle{Z(G)}$.
+
