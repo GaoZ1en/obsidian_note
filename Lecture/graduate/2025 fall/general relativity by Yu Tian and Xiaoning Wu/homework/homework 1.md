@@ -17,5 +17,10 @@ this means that the Maxwell theory is conformal invariant in 4D.
 
 $$\begin{align}
 \nabla _{\mu}T^{\mu \nu} & =\nabla _{\mu}F^{\mu}_{~\rho}F^{\nu \rho}+F_{\mu\rho}\nabla ^{\mu}F^{\nu \rho}-\frac{1}{4}\nabla ^{\nu}(F_{\rho \sigma}F^{\rho \sigma}) \\
- & =F_{\rho \sigma}\nabla ^{\rho}F^{\nu \sigma}-\frac{1}{2}F_{\rho \sigma}\nabla ^{\nu}F^{\rho \sigma}
+ & =F_{\rho \sigma}\nabla ^{\rho}F^{\nu \sigma}-\frac{1}{2}F_{\rho \sigma}\nabla ^{\nu}F^{\rho \sigma} \\
+ & =-\frac{1}{2}F_{\rho \sigma}\left(\nabla ^{\nu}F^{\rho \sigma}+\nabla ^{\sigma}F^{\nu \rho}+\nabla ^{\rho}F^{\sigma \nu}\right) \\
+ & =0
 \end{align}$$
+
+here we use the equation of motion $\displaystyle{\nabla _{\mu}F^{\mu \nu}=J^{\mu}}$ where $\displaystyle{J^{\mu}=0}$ and the Bianchi identity $\displaystyle{\nabla ^{\nu}F^{\rho \sigma}+\nabla ^{\sigma}F^{\nu \rho}+\nabla ^{\rho}F^{\sigma \nu}=0}$.
+

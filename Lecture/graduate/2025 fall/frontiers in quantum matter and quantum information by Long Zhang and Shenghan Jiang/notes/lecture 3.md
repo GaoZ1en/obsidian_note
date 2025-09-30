@@ -82,7 +82,7 @@ from different perspective, the physics of Ising model is very abundant...
 return to the Ising model. we will use Jordan-Wigner transformation to solve it exactly (p-wave superconductor proposed by Kitaev). define
 
 $$\begin{align}
-f_{j} & =\prod ^{j-1}_{l=1}X_{l} \frac{1}{2}(Z_{j}+iY_{j}) \\
+f_{j} & =\prod ^{j-1}_{l=1}X_{l} \frac{1}{2}(Z_{j}-iY_{j}) \\
 \implies X_{j} & =f_{j}f^{\dagger}_{j}-f_{j}^{\dagger}f_{j} \\
 Z_{j}Z_{j+1} & =\left( \prod ^{j-1}_{k=1}X_{k} \right) iY_{j}\left( \prod ^{j}_{l=1}X_{l} \right)Z_{j+1} \\
  & =(f_{j}-f^{\dagger}_{j})(f_{j+1}+f^{\dagger}_{j+1}), & j<L \\
