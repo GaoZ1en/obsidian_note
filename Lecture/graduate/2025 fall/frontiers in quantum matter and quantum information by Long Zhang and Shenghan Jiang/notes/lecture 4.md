@@ -50,3 +50,30 @@ then finally
 $$\begin{align}
 H & =\sum _{k}E_{k}(\alpha _{k}^{\dagger}\alpha _{k}-\beta _{k}^{\dagger}\beta _{k})
 \end{align}$$
+
+the spectrum is shown below
+
+![[Attachments/Pasted image 20250930160403.png]]
+
+the ground state is the vacuum of $\displaystyle{\alpha _{k}}$ and fully filled $\displaystyle{\beta _{k}}$ states. and the energy gap closes at $\displaystyle{h=J}$, which is the critical point of phase transition.
+
+![[Attachments/Pasted image 20250930160649.png]]
+
+particle-hole symmetry. notice that
+
+$$\begin{align}
+d_{k} & =\begin{pmatrix}
+f_{k} \\
+f_{-k}^{\dagger}
+\end{pmatrix}=\tau ^{x}\begin{pmatrix}
+f^{\dagger}_{-k} \\
+f_{k}
+\end{pmatrix} =\tau ^{x}(d^{\dagger}_{-k})^{T}
+\end{align}$$
+
+then
+
+$$\begin{align}
+d_{k}^{\dagger}h(k)d_{k} & =d_{-k}\tau ^{x}h(k)\tau ^{x}d_{-k}^{*} \\
+ & =-
+\end{align}$$
