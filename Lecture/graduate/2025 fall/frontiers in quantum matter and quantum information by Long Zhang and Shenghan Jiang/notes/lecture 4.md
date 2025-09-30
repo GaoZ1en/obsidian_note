@@ -106,3 +106,17 @@ $$\begin{align}
 \gamma_{2j-1} & =f_{j}+f_{j}^{\dagger} \\
 \gamma_{2j} & =\frac{f_{j}-f_{j}^{\dagger}}{i}
 \end{align}$$
+
+the Hamiltonian can be rewritten as
+
+$$\begin{align}
+H & =\sum _{j}-ih \gamma _{2j-1}\gamma _{2j}-iJ\gamma _{2j}\gamma _{2j+1}
+\end{align}$$
+
+---
+# tensor network state and SPT phase
+
+MPS, PEPS, DMRG, ..., what are these?
+
+Penrose introduced diagrammatic notation for tensors in 1971. a tensor is represented as a shape with legs, each leg represents an index. contracting indices is represented by connecting legs. and in or out arrows represent upper or lower indices.
+
