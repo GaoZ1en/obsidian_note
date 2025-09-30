@@ -58,7 +58,33 @@ Each black hole solution follows the systematic approach:
 - **Mathematical Highlights**: Born-Infeld displacement tensor, transcendental horizon equations
 - **Applications**: String theory, finite field energy models
 
-### 3. Exotic Geometries
+### 3. Non-Linear Field Theory Solutions
+
+#### A. Born-Infeld Black Holes
+**File**: `Born-Infeld-Black-Holes.md`
+- **Physical System**: Non-linear electrodynamics with finite field energy
+- **Key Features**:
+  - Regularized electromagnetic field: $E_{\max} = \beta$
+  - Hypergeometric functions in thermodynamic quantities
+  - String theory D-brane connection
+  - Modified first law: $\delta M = T_H \delta S + \Phi_H \delta q + \mathcal{T}_{BI} \delta \beta$
+- **Mathematical Highlights**: Born-Infeld displacement tensor, transcendental horizon equations
+- **Applications**: String theory, finite field energy models
+
+### 4. Higher-Curvature and Modified Gravity
+
+#### A. Lovelock Black Holes
+**File**: `Lovelock-Black-Holes.md`
+- **Physical System**: Higher-curvature gravity with Gauss-Bonnet and cubic terms
+- **Key Features**:
+  - Ghost-free higher-derivative theory
+  - Modified entropy: Jacobson-Myers formula with curvature corrections
+  - Multiple coupling constants: $\alpha_k$ for each Lovelock order
+  - Extended first law: $\delta M = T_H \delta S + \sum_k \mathcal{T}_k \delta \alpha_k$
+- **Mathematical Highlights**: Lovelock field equations, polynomial horizon conditions
+- **Applications**: String theory α' corrections, holographic theories
+
+### 5. Exotic Geometries and Topologies
 
 #### A. Dilaton Black Holes
 **File**: `Dilaton-Black-Holes.md`
@@ -92,6 +118,19 @@ Each black hole solution follows the systematic approach:
 - **Mathematical Highlights**: Higher-dimensional Kerr metrics, stability analysis
 - **Applications**: Extra dimensions, string theory compactifications
 
+### 6. Anisotropic and Holographic Systems
+
+#### A. Lifshitz Black Holes
+**File**: `Lifshitz-Black-Holes.md`
+- **Physical System**: Anisotropic scaling with dynamical critical exponent $z \neq 1$
+- **Key Features**:
+  - Lifshitz scaling: $t \to \lambda^z t$, $\vec{x} \to \lambda \vec{x}$
+  - Chemical potential: $\mu$ from gauge field boundary conditions
+  - Modified first law: $\delta M = T_H \delta S + \mu \delta Q + \mathcal{T}_z \delta z$
+  - Negative heat capacity: Thermodynamic instability
+- **Mathematical Highlights**: Anisotropic scaling symmetries, modified causal structure
+- **Applications**: Condensed matter holography, non-Fermi liquids, quantum criticality
+
 ## Mathematical Framework Hierarchy
 
 ### Level 1: Basic CPS Formalism
@@ -104,19 +143,23 @@ Einstein-Hilbert Action → Symplectic Potential → Noether Charges → First L
 Basic CPS + Scalar Fields → Dilaton Thermodynamics
 Basic CPS + Non-linear EM → Born-Infeld Thermodynamics  
 Basic CPS + Magnetic Charges → Taub-NUT Thermodynamics
+Basic CPS + Anisotropic Scaling → Lifshitz Thermodynamics
 ```
 
-### Level 3: Geometric Generalizations
+### Level 3: Geometric and Gravity Generalizations
 ```
 Basic CPS + Higher Dimensions → Myers-Perry Thermodynamics
 Basic CPS + AdS Boundary → Extended Thermodynamics + Pressure
 Basic CPS + Rotation → Angular Momentum Terms
+Basic CPS + Higher Curvature → Lovelock Thermodynamics
 ```
 
 ## Cross-References and Connections
 
 ### Limiting Cases
 - **Born-Infeld → Maxwell**: $\beta \to \infty$ recovers Reissner-Nordström
+- **Lovelock → Einstein**: $\alpha_k \to 0$ recovers general relativity  
+- **Lifshitz → AdS**: $z \to 1$ recovers AdS black holes
 - **KNAdS → Schwarzschild-AdS**: $Q, J \to 0$ limit
 - **Myers-Perry → Kerr**: $d \to 4$ dimensional reduction
 - **All solutions → BTZ**: 3D limit where applicable
@@ -127,9 +170,11 @@ Basic CPS + Rotation → Angular Momentum Terms
 - **Stability Analysis**: Heat capacity signs and phase transitions
 
 ### Physical Connections
-- **Holographic Duality**: AdS black holes ↔ CFT thermal states
-- **String Theory**: Born-Infeld and Myers-Perry from D-brane physics
+- **Holographic Duality**: AdS black holes ↔ CFT thermal states, Lifshitz ↔ non-relativistic CFTs
+- **String Theory**: Born-Infeld and Myers-Perry from D-brane physics, Lovelock from α' corrections
 - **Quantum Corrections**: Dilaton models with exact quantum solutions
+- **Condensed Matter**: Lifshitz black holes ↔ quantum critical systems and strange metals
+- **Modified Gravity**: Lovelock theories as natural higher-curvature extensions
 
 ## Research Applications
 
