@@ -8,15 +8,4 @@ the generators of a group are the elements from which every element of the group
 
 operation table.
 
-point group. a group that describes the symmetries of one single point in space. in 3d, there are 32 point groups, can be classified into 7 crystal systems (use $\displaystyle{C_{n}}$ symbols)
-
-
-| Crystal System | Point Groups                                                   | Example Structures    |
-| -------------- | -------------------------------------------------------------- | --------------------- |
-| Triclinic      | $C_1$, $C_i$                                                   | None                  |
-| Monoclinic     | $C_2$, $C_s$, $C_{2h}$                                         | Monoclinic crystals   |
-| Orthorhombic   | $C_{2v}$, $D_2$, $D_{2h}$                                      | Orthorhombic crystals |
-| Tetragonal     | $C_4$, $S_4$, $C_{4h}$, $D_4$, $D_{2d}$, $D_{4h}$              | Tetragonal crystals   |
-| Trigonal       | $C_3$, $S_6$, $C_{3h}$, $D_3$, $C_{3v}$, $D_{3d}$              | Trigonal crystals     |
-| Hexagonal      | $C_6$, $C_{3h}$, $C_{6h}$, $D_6$, $C_{6v}$, $D_{3h}$, $D_{6h}$ | Hexagonal crystals    |
-| Cubic          | $T$, $T_h$, $T_d$, $O$, $O_h$        | Cubic crystals, e.g., diamond    |
+subset of group. 
