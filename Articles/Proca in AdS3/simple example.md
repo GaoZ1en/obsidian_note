@@ -77,52 +77,44 @@ $$\begin{align}
 \delta S & =\int ^{t_{f}}_{t_{i}}E^{a}\delta x_{a}+E^{\alpha}\delta \phi _{\alpha}+\theta \Big|^{t_{f}}_{t_{i}} \\
 E^{a} & =-(A^{ab}\ddot{x}_{b}-C^{\alpha a}\dot{\phi}_{\alpha}) \\
 E^{\alpha} & =B^{\alpha \beta}\phi _{\beta}-C^{\alpha a}\dot{x}_{a} \\
-\theta & =(A^{ab}\dot{x}_{b}+C^{\alpha a}\dot{\phi}_{\alpha})\delta x_{a} \\
-\omega & =(A^{ab}\delta \dot{x}_{b}+C^{\alpha a}\delta \dot{\phi}_{\alpha})\wedge \delta x_{a}
+\theta & =(A^{ab}\dot{x}_{b}-C^{\alpha a}\phi_{\alpha})\delta x_{a} \\
+\omega & =(A^{ab}\delta \dot{x}_{b}-C^{\alpha a}\delta \phi_{\alpha})\wedge \delta x_{a}
 \end{align}$$
 
 the eom gives the following solutions
 
-$$\begin{align}
+$$\tag{.}\begin{align}
 x_{a} & =V_{a}t+X_{a} \\
-\phi _{\beta} & =(B^{-1})_{\alpha \beta}C^{\beta b}V_{b}
+\phi _{\alpha} & =(B^{-1})_{\alpha \beta}C^{\beta b}V_{b}
 \end{align}$$
 
 then the symplectic form becomes
 
-$$\begin{align}
-\omega & =A^{ab}\delta V_{a}\wedge \delta X_{b} \\
- & =A^{ab}(A-C^{T}B^{-1}C)^{-1}_{bc}\delta p_{0}^{c}\wedge \delta x_{0,a}
-\end{align}$$
-
 $$\tag{.}\begin{align}
-X_{a} & =x_{0,a} \\
-V_{a} & =(A-C^{T}B^{-1}C)^{-1}_{ab}p_{0}^{b}
+\omega & =(A^{ab}-(B^{-1})_{\alpha \beta}C^{\alpha a}C^{\beta b})\delta V_{b}\wedge \delta x_{a} \\
+ & =\delta p_{0}^{a}\wedge \delta x_{0,a}
 \end{align}$$
-
-$$\tag{.}\begin{align}
-\omega & =\mathrm{d}p^{a}\wedge \mathrm{d}x_{a}
-\end{align}$$
-
-the Hamilton flow for $\displaystyle{x_{a}}$ and $\displaystyle{p^{a}:=A^{ab}\dot{x}_{b}-C^{\alpha a}\phi _{\alpha}}$ are
 
 $$\begin{align}
-X_{x_{a}} & = \int \mathrm{d}t \frac{\delta x_{a}}{\delta X_{b}} \frac{\delta}{\delta(A^{bc}V_{c})}-\frac{\delta x_{a}}{\delta(A^{bc}V_{b})} \frac{\delta}{\delta X_{c}} \\
+x_{a} & =V_{a}t+X_{a} \\
+ & =(A-C^{T}B^{-1}C)^{-1}_{ab}p_{0}^{b}t+X_{a}
+\end{align}$$
+
+here we do a reparametrization $\displaystyle{p_{0}^{a}=(A^{ab}-(B^{-1})_{\alpha \beta}C^{\alpha a}C^{\beta b})V_{b}}$. the Hamilton flow for $\displaystyle{x_{a}}$ and $\displaystyle{p^{a}:=A^{ab}\dot{x}_{b}-C^{\alpha a}\phi _{\alpha}}$ are
+
+$$\begin{align}
+X_{x_{a}} & = \int \mathrm{d}t \frac{\delta x_{a}}{\delta x_{0,b}} \frac{\delta}{\delta p_{0}^{c}}-\frac{\delta x_{a}}{\delta p_{0}^{a}} \frac{\delta}{\delta x_{0,c}} \\
  & =(A^{-1})_{ab} \left( \frac{\delta}{\delta V_{b}}- t \frac{\delta}{\delta X_{b}}\right) \\
+ & =\frac{\delta}{\delta p_{0}^{a}}- (A-C^{T}B^{-1}C)^{-1}_{ab}t\frac{\delta}{\delta x_{0,b}} \\
 X_{p^{a}} & =\int \mathrm{d}t (A^{-1})_{bc}\left( \frac{\delta p^{a}}{\delta X_{b}} \frac{\delta}{\delta V_{c}}-\frac{\delta p^{a}}{\delta V_{c}} \frac{\delta}{\delta X_{b}} \right) \\
- & =-\left(\delta ^{a}_{b}-(A^{-1})_{bc}(B^{-1})_{\alpha \beta}C^{\alpha a}C^{\beta c}\right) \frac{\delta}{\delta X_{b}}
+ & = \frac{\delta}{\delta x_{0,a}}
 \end{align}$$
 
 and the Poisson brackets between $\displaystyle{x_{a}}$ and $\displaystyle{p^{b}}$ are
 
 $$\begin{align}
 \left\{x_{a},p^{b}\right\} & =X_{x_{a}}\cdot X_{p^{b}}\cdot \omega \\
- & =\delta ^{b}_{a}-(A^{-1})_{ac}(B^{-1})_{\alpha \beta}C^{\alpha b}C^{\beta c}
+ & =\delta ^{b}_{a}
 \end{align}$$
 
-Poison brackets in CPS formalism do not match the Dirac brackets in Dirac formalism... however the dynamics are the same...?
-
-$$\begin{align}
-(A^{ab}-(B_{-1})_{\alpha \beta}C^{\alpha a}C^{\beta b})\ddot{x}_{b} & =0 & \text{CPS formalism} \\
-
-\end{align}$$
+which agrees with the Dirac brackets.
