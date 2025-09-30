@@ -490,7 +490,3 @@ Definitions: 1.1 Spacetime; 1.2 Causal types; 1.3 Light cone; 1.4 Causal curve; 
 Core Equations: (1.1) line element; (1.2) causal types; (2.1) causal sets; (3.2) auxiliary time function; (3.3) smoothed time function; (4.1) null expansion; (5.1) null geodesic reparametrisation under conformal change; (5.2) Ricci / scalar curvature transformation; (5.3) Weyl invariance; (5.4) expansion transformation; (6.1)-(6.2) Raychaudhuri; (6.3)-(6.5) decomposition steps; (6.6)-(6.7) focusing inequalities.
 
 Lemmas/Propositions/Theorems: Prop 2.3 causal properties; Lem 2.4 limit curve; Lem 2.5 achronal boundary; Lem 2.6 domain of dependence; Lem 2.7 causal simplicity; Lem 2.8 strong causality local form; Prop 3.4 chronology/time function; Lem 3.5 causal⇒chronological; Prop 3.6 distinguishing⇒causal; Thm 3.7 stable causality; Thm 3.8 Geroch; Thm 3.9 Bernal–Sánchez; Lem 3.10 volume time; Lem 3.11 maximizing geodesic; Lem 6.4 focusing; Thm 6.5 Hawking; Thm 6.6 Penrose; Thm 6.7 Hawking–Penrose.
-
----
-
-End of document.

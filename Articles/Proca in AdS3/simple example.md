@@ -43,7 +43,7 @@ $$\begin{align}
 then the Poisson brackets should be replaced with Dirac brackets
 
 $$\begin{align}
-\left\{f,g\right\}_{\text{Dirac}} & =\left\{f,g\right\}+\left\{f,\varphi _{i}\right\}(C^{-1})^{ij}\left\{\varphi _{j},g\right\}
+\left\{f,g\right\}_{\text{Dirac}} & =\left\{f,g\right\}-\left\{f,\varphi _{i}\right\}(C^{-1})^{ij}\left\{\varphi _{j},g\right\}
 \end{align}$$
 
 where the constraint matrix $\displaystyle{C_{ij}=\left\{\varphi _{i},\varphi _{j}\right\}}$ is
