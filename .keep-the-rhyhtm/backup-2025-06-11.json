@@ -24832,7 +24832,7 @@
       },
       {
         "date": "2025-09-25",
-        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/Untitled.md",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 4.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [],
@@ -25812,7 +25812,7 @@
       },
       {
         "date": "2025-09-28",
-        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/Untitled.md",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 4.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [],
@@ -26436,7 +26436,7 @@
           {
             "timeKey": "21:40",
             "w": -4,
-            "c": -39
+            "c": -41
           }
         ],
         "id": 853
@@ -26474,6 +26474,688 @@
           }
         ],
         "id": 854
+      },
+      {
+        "date": "2025-09-29",
+        "filePath": "Articles/Proca in AdS3/Untitled 1.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "22:30",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 855
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Articles/Proca in AdS3/electric field.md",
+        "wordCountStart": 1820,
+        "charCountStart": 7704,
+        "changes": [],
+        "id": 856
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Articles/Proca in AdS3/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "08:25",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 857
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Articles/Proca in AdS3/Untitled 1.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "08:25",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 858
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Lecture/graduate/2025 fall/group theory by Lu Guo/notes/lecture 3.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "08:30",
+            "w": 81,
+            "c": 464
+          },
+          {
+            "timeKey": "08:35",
+            "w": 63,
+            "c": 353
+          },
+          {
+            "timeKey": "09:05",
+            "w": 2,
+            "c": 18
+          },
+          {
+            "timeKey": "09:15",
+            "w": 123,
+            "c": 1152
+          },
+          {
+            "timeKey": "09:25",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "09:30",
+            "w": 0,
+            "c": -1
+          },
+          {
+            "timeKey": "09:55",
+            "w": -120,
+            "c": -1134
+          },
+          {
+            "timeKey": "10:00",
+            "w": 51,
+            "c": 322
+          },
+          {
+            "timeKey": "10:05",
+            "w": 45,
+            "c": 315
+          }
+        ],
+        "id": 859
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Articles/Test particle/discussion.md",
+        "wordCountStart": 2222,
+        "charCountStart": 12024,
+        "changes": [],
+        "id": 860
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13738,
+        "changes": [],
+        "id": 861
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 4.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:10",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "15:30",
+            "w": 95,
+            "c": 432
+          },
+          {
+            "timeKey": "15:35",
+            "w": 56,
+            "c": 292
+          },
+          {
+            "timeKey": "15:40",
+            "w": 59,
+            "c": 386
+          },
+          {
+            "timeKey": "15:50",
+            "w": 21,
+            "c": 113
+          },
+          {
+            "timeKey": "15:55",
+            "w": 100,
+            "c": 482
+          },
+          {
+            "timeKey": "16:00",
+            "w": 31,
+            "c": 201
+          },
+          {
+            "timeKey": "16:05",
+            "w": 20,
+            "c": 146
+          },
+          {
+            "timeKey": "16:25",
+            "w": 71,
+            "c": 342
+          },
+          {
+            "timeKey": "16:30",
+            "w": 16,
+            "c": 58
+          },
+          {
+            "timeKey": "16:35",
+            "w": 108,
+            "c": 562
+          },
+          {
+            "timeKey": "16:50",
+            "w": 4,
+            "c": 20
+          },
+          {
+            "timeKey": "16:55",
+            "w": 28,
+            "c": 144
+          },
+          {
+            "timeKey": "17:10",
+            "w": 34,
+            "c": 146
+          },
+          {
+            "timeKey": "17:15",
+            "w": -2,
+            "c": -2
+          },
+          {
+            "timeKey": "17:20",
+            "w": 41,
+            "c": 275
+          },
+          {
+            "timeKey": "17:25",
+            "w": 10,
+            "c": 55
+          },
+          {
+            "timeKey": "17:30",
+            "w": 113,
+            "c": 509
+          },
+          {
+            "timeKey": "17:35",
+            "w": 19,
+            "c": 118
+          },
+          {
+            "timeKey": "17:40",
+            "w": 154,
+            "c": 815
+          },
+          {
+            "timeKey": "17:45",
+            "w": 74,
+            "c": 445
+          },
+          {
+            "timeKey": "17:50",
+            "w": 68,
+            "c": 348
+          }
+        ],
+        "id": 862
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Articles/Ryu-Takayanagi formula/Unruh effect.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:20",
+            "w": 288,
+            "c": 2622
+          }
+        ],
+        "id": 863
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/homework 1.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:20",
+            "w": 97,
+            "c": 482
+          },
+          {
+            "timeKey": "15:25",
+            "w": 102,
+            "c": 520
+          },
+          {
+            "timeKey": "15:30",
+            "w": 74,
+            "c": 399
+          }
+        ],
+        "id": 864
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 3.md",
+        "wordCountStart": 1124,
+        "charCountStart": 5460,
+        "changes": [
+          {
+            "timeKey": "15:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 865
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Drafts/Ryu-Takayanagi formula.md",
+        "wordCountStart": 363,
+        "charCountStart": 3788,
+        "changes": [
+          {
+            "timeKey": "16:15",
+            "w": 1350,
+            "c": 9965
+          },
+          {
+            "timeKey": "16:20",
+            "w": 242,
+            "c": 2178
+          }
+        ],
+        "id": 866
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Drafts/RT.md",
+        "wordCountStart": 636,
+        "charCountStart": 6978,
+        "changes": [
+          {
+            "timeKey": "16:25",
+            "w": 499,
+            "c": 5619
+          }
+        ],
+        "id": 867
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Drafts/RG.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "16:25",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 868
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/useful results/black hole thermodynamics using CPS formalism copy.md",
+        "wordCountStart": 2223,
+        "charCountStart": 13239,
+        "changes": [
+          {
+            "timeKey": "16:30",
+            "w": -986,
+            "c": -6393
+          },
+          {
+            "timeKey": "16:35",
+            "w": 1634,
+            "c": 8161
+          },
+          {
+            "timeKey": "17:20",
+            "w": -2871,
+            "c": -15007
+          }
+        ],
+        "id": 869
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/useful results/KNAdS.md",
+        "wordCountStart": 2869,
+        "charCountStart": 17693,
+        "changes": [
+          {
+            "timeKey": "16:55",
+            "w": -1,
+            "c": 0
+          },
+          {
+            "timeKey": "17:00",
+            "w": 2025,
+            "c": 12518
+          },
+          {
+            "timeKey": "17:20",
+            "w": -4893,
+            "c": -30211
+          }
+        ],
+        "id": 870
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/useful results/Dilaton-Black-Holes.md",
+        "wordCountStart": 2224,
+        "charCountStart": 13789,
+        "changes": [
+          {
+            "timeKey": "17:20",
+            "w": -2224,
+            "c": -13789
+          }
+        ],
+        "id": 871
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/useful results/blackhole entropy/Born-Infeld-Black-Holes.md",
+        "wordCountStart": 2808,
+        "charCountStart": 18102,
+        "changes": [],
+        "id": 872
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/Physics/causal structure.md",
+        "wordCountStart": 1445,
+        "charCountStart": 9826,
+        "changes": [
+          {
+            "timeKey": "17:45",
+            "w": 2105,
+            "c": 14879
+          },
+          {
+            "timeKey": "18:25",
+            "w": 1945,
+            "c": 14001
+          },
+          {
+            "timeKey": "18:35",
+            "w": -565,
+            "c": -3240
+          },
+          {
+            "timeKey": "18:40",
+            "w": 890,
+            "c": 6304
+          },
+          {
+            "timeKey": "18:55",
+            "w": 267,
+            "c": 1641
+          },
+          {
+            "timeKey": "19:00",
+            "w": 1768,
+            "c": 12445
+          },
+          {
+            "timeKey": "19:10",
+            "w": 290,
+            "c": 1523
+          },
+          {
+            "timeKey": "19:15",
+            "w": -474,
+            "c": -3259
+          },
+          {
+            "timeKey": "19:20",
+            "w": -14,
+            "c": 0
+          },
+          {
+            "timeKey": "19:25",
+            "w": -188,
+            "c": -1581
+          },
+          {
+            "timeKey": "19:30",
+            "w": -131,
+            "c": -820
+          },
+          {
+            "timeKey": "19:35",
+            "w": 5,
+            "c": 14
+          },
+          {
+            "timeKey": "19:40",
+            "w": 23,
+            "c": 379
+          },
+          {
+            "timeKey": "19:45",
+            "w": 21,
+            "c": 326
+          },
+          {
+            "timeKey": "19:50",
+            "w": 41,
+            "c": 461
+          },
+          {
+            "timeKey": "19:55",
+            "w": -10,
+            "c": -459
+          },
+          {
+            "timeKey": "20:10",
+            "w": -4890,
+            "c": -33908
+          },
+          {
+            "timeKey": "20:15",
+            "w": -403,
+            "c": -2890
+          },
+          {
+            "timeKey": "20:20",
+            "w": 1239,
+            "c": 8611
+          },
+          {
+            "timeKey": "20:25",
+            "w": 831,
+            "c": 5652
+          },
+          {
+            "timeKey": "20:30",
+            "w": 370,
+            "c": 3319
+          },
+          {
+            "timeKey": "20:35",
+            "w": 940,
+            "c": 6662
+          },
+          {
+            "timeKey": "20:45",
+            "w": -405,
+            "c": -2857
+          },
+          {
+            "timeKey": "20:50",
+            "w": 24,
+            "c": 218
+          },
+          {
+            "timeKey": "20:55",
+            "w": 333,
+            "c": 2461
+          },
+          {
+            "timeKey": "21:00",
+            "w": 28,
+            "c": -26
+          }
+        ],
+        "id": 873
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Lecture/graduate/2025 fall/foundations of geometry and topology by Liang Xiao/notes/lecture 3.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:30",
+            "w": 9,
+            "c": 54
+          },
+          {
+            "timeKey": "18:35",
+            "w": 3,
+            "c": 17
+          },
+          {
+            "timeKey": "18:40",
+            "w": 264,
+            "c": 1602
+          },
+          {
+            "timeKey": "19:10",
+            "w": 4,
+            "c": 26
+          },
+          {
+            "timeKey": "19:15",
+            "w": -4,
+            "c": -25
+          }
+        ],
+        "id": 874
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Articles/Proca in AdS3/simple example.md",
+        "wordCountStart": 1032,
+        "charCountStart": 5297,
+        "changes": [
+          {
+            "timeKey": "18:40",
+            "w": 8,
+            "c": 46
+          },
+          {
+            "timeKey": "18:45",
+            "w": 43,
+            "c": 211
+          },
+          {
+            "timeKey": "18:50",
+            "w": -105,
+            "c": -529
+          },
+          {
+            "timeKey": "18:55",
+            "w": 13,
+            "c": 56
+          }
+        ],
+        "id": 875
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Literature Notes/Gravitational Entropy (2509.10921v1).md",
+        "wordCountStart": 3229,
+        "charCountStart": 16890,
+        "changes": [],
+        "id": 876
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/useful results/blackhole entropy/black hole thermodynamics using CPS formalism copy.md",
+        "wordCountStart": 2871,
+        "charCountStart": 15007,
+        "changes": [],
+        "id": 877
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/useful results/blackhole entropy/Dilaton-Black-Holes.md",
+        "wordCountStart": 2224,
+        "charCountStart": 13789,
+        "changes": [],
+        "id": 878
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/useful results/blackhole entropy/KNAdS.md",
+        "wordCountStart": 4893,
+        "charCountStart": 30211,
+        "changes": [],
+        "id": 879
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/useful results/blackhole entropy/Lifshitz-Black-Holes.md",
+        "wordCountStart": 2601,
+        "charCountStart": 17381,
+        "changes": [],
+        "id": 880
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/useful results/blackhole entropy/Lovelock-Black-Holes.md",
+        "wordCountStart": 2921,
+        "charCountStart": 19252,
+        "changes": [],
+        "id": 881
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/useful results/blackhole entropy/Myers-Perry-Black-Holes.md",
+        "wordCountStart": 2687,
+        "charCountStart": 16081,
+        "changes": [],
+        "id": 882
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/useful results/blackhole entropy/README.md",
+        "wordCountStart": 1350,
+        "charCountStart": 11891,
+        "changes": [],
+        "id": 883
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/useful results/blackhole entropy/Taub-NUT-Black-Holes.md",
+        "wordCountStart": 2101,
+        "charCountStart": 14107,
+        "changes": [],
+        "id": 884
       }
     ],
     "daysWithCompletedGoal": [
@@ -26546,7 +27228,8 @@
       "2025-09-25",
       "2025-09-27",
       "2025-09-28",
-      "2025-09-29"
+      "2025-09-29",
+      "2025-09-30"
     ]
   }
 }

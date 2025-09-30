@@ -2,11 +2,11 @@
 
 ## Abstract
 
-We present a concise, self‑contained development of the causal theory of Lorentzian spacetimes: local structure (light cones), causal relations, the hierarchy of global causality conditions, and their culmination in global hyperbolicity and singularity theorems. Emphasis is placed on precise definitions, minimal hypotheses, and logically ordered implications. Physical remarks are restricted to clarifying necessity of assumptions.
+We present a concise, self‑contained development of the causal theory of Lorentzian spacetimes: local structure (light cones), causal relations, the hierarchy of global causality conditions, and their culmination in global hyperbolicity and singularity theorems. Emphasis is placed on precise definitions, minimal hypotheses, and logically ordered implications. Physical remarks are restricted to clarifying necessity of assumptions. 
 
 ## Notation and Conventions
 
-**Spacetime**: $(M, g_{\mu\nu})$ - 4-dimensional Lorentzian manifold with metric signature $(-,+,+,+)$
+**Spacetime**: $(M, g_{ab})$ - 4-dimensional Lorentzian manifold with metric signature $(-,+,+,+)$. Abstract index notation ($a,b,\dots$) is used unless explicit coordinate components $g_{\mu\nu}$ in a chart $(x^{\mu})$ are required.
 
 **Causal Relations**:
 - $p \ll q$: $q$ is in the chronological future of $p$
@@ -18,8 +18,8 @@ We present a concise, self‑contained development of the causal theory of Loren
 - $J^+(p)$: causal future of $p$
 - $I^-(p)$, $J^-(p)$: corresponding past sets
 
-**Energy-Momentum**: $T_{\mu\nu}$ - stress-energy tensor
-**Einstein Tensor**: $G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu}$
+**Energy-Momentum**: $T_{ab}$ - stress-energy tensor
+**Einstein Tensor**: $G_{ab} = R_{ab} - \frac{1}{2}Rg_{ab}$
 **Units**: $c = G = 1$ (geometric units)
 
 ---
@@ -28,11 +28,11 @@ We present a concise, self‑contained development of the causal theory of Loren
 
 ### 1.1 Lorentzian Structure
 
-**Definition 1.1 (Spacetime)**. A spacetime is a smooth 4–manifold $M$ with Lorentzian metric $g$ of signature $(-,+,+,+)$. The line element is
+**Definition 1.1 (Spacetime)**. A spacetime is a smooth 4–manifold $M$ with Lorentzian metric $g_{ab}$ of signature $(-,+,+,+)$. In local coordinates $(x^{\mu})$ the line element is
 $$ds^2 = g_{\mu\nu} dx^{\mu} dx^{\nu}. \tag{1.1}$$
 
-**Definition 1.2 (Causal types)**. For $V \in T_pM$:
-$$g(V,V) \begin{cases}<0 & \text{timelike},\\=0 & \text{null},\\>0 & \text{spacelike}.\end{cases} \tag{1.2}$$
+**Definition 1.2 (Causal types)**. For $V^a \in T_pM$:
+$$g_{ab} V^a V^b \begin{cases}<0 & \text{timelike},\\=0 & \text{null},\\>0 & \text{spacelike}.\end{cases} \tag{1.2}$$
 
 **Definition 1.3 (Light cone)**. $\mathcal{C}_p = \{ V \neq 0 : g(V,V)=0\}$ partitions $T_pM$ into timelike, null, spacelike regions.
 
@@ -272,19 +272,18 @@ Null infinity ($\mathcal I$): Components of $\mathscr{B}$ that are null hypersur
 
 **Definition 6.3 (Conjugate points)**. Points joined by a nontrivial Jacobi field vanishing at both.
 
-**Jacobi Equation**: The deviation vector $\xi^\mu$ between nearby geodesics satisfies:
-$$\frac{D^2\xi^\mu}{D\tau^2} + R^\mu_{\ \nu\alpha\beta}u^\nu u^\alpha \xi^\beta = 0$$
-
-where $u^\mu$ is the geodesic tangent vector.
+**Jacobi Equation**: The deviation vector $\xi^a$ between nearby geodesics satisfies:
+$$\frac{D^2\xi^a}{D\tau^2} + R^a_{\ bcd}u^b u^c \xi^d = 0$$
+where $u^a$ is the geodesic tangent vector.
 
 ### 6.2 Energy and Focusing
 
-Energy conditions (already earlier): NEC: $T_{\mu\nu}\ell^\mu \ell^\nu\ge0$; SEC: $R_{\mu\nu}u^\mu u^\nu\ge0$.
+Energy conditions (already earlier): NEC: $T_{ab}\ell^a \ell^b\ge0$; SEC: $R_{ab}u^a u^b\ge0$.
 
 Raychaudhuri (timelike, hypersurface‑orthogonal, $\omega=0$):
-$$\frac{d\theta}{d\tau} = -\tfrac13 \theta^2 - \sigma_{\mu\nu}\sigma^{\mu\nu} - R_{\mu\nu}u^\mu u^\nu. \tag{6.1}$$
+$$\frac{d\theta}{d\tau} = -\tfrac13 \theta^2 - \sigma_{ab}\sigma^{ab} - R_{ab}u^a u^b. \tag{6.1}$$
 Null version:
-$$\frac{d\theta}{d\lambda} = -\tfrac12 \theta^2 - \sigma_{\mu\nu}\sigma^{\mu\nu} - R_{\mu\nu}\ell^\mu \ell^\nu. \tag{6.2}$$
+$$\frac{d\theta}{d\lambda} = -\tfrac12 \theta^2 - \sigma_{ab}\sigma^{ab} - R_{ab}\ell^a \ell^b. \tag{6.2}$$
 
 **Derivation (Raychaudhuri)**. Let $B_{ab}= \nabla_b u_a$ for geodesic ($a^a=0$) timelike congruence with $u^a u_a=-1$. Decompose
 $$B_{ab}= \frac{1}{3}\theta h_{ab} + \sigma_{ab} + \omega_{ab}, \tag{6.3}$$
@@ -316,7 +315,7 @@ With $\theta_0<0$ the RHS hits zero at $\tau -\tau_0 = -3/\theta_0 = 3/|\theta_0
 
 ### 6.5 Hawking–Penrose Theorem
 
-**Theorem 6.7 (Hawking–Penrose)**. Suppose: (i) Strong energy (or $R_{\mu\nu}X^\mu X^\nu\ge0$ for all causal $X$); (ii) Generic condition; (iii) No closed timelike curves; (iv) At least one of: trapped surface, or point with reconverging null cone, or compact achronal set without edge. Then $(M,g)$ has incomplete causal (timelike or null) geodesic.
+**Theorem 6.7 (Hawking–Penrose)**. Suppose: (i) Strong energy (or $R_{ab}X^a X^b\ge0$ for all causal $X^a$); (ii) Generic condition; (iii) No closed timelike curves; (iv) At least one of: trapped surface, or point with reconverging null cone, or compact achronal set without edge. Then $(M,g)$ has incomplete causal (timelike or null) geodesic.
 
 *Proof*. Each alternative hypothesis supplies either a trapped surface or a reconverging causal cone guaranteeing an initial $\theta_0<0$. Energy + generic condition insure focusing (Lemma 6.4) and prevent degenerate shear cancellation. In absence of incomplete geodesics, conjugate points would allow timelike (or null) deformations increasing causal length, contradicting maximality or achronality of chosen sets. Thus some causal geodesic is incomplete. ∎
 
@@ -416,11 +415,11 @@ Classical NEC/SEC fail in semiclassical settings. Replacements:
 
 **Essential Causal Relations**:
 $$\begin{align}
-\text{Vector Classification:} &\quad g_{\mu\nu}V^\mu V^\nu \begin{cases} < 0 & \text{timelike} \\ = 0 & \text{null} \\ > 0 & \text{spacelike} \end{cases} \\
-\text{Causal Future:} &\quad J^+(p) = \{q \in M : p < q\} \\
-\text{Chronological Future:} &\quad I^+(p) = \{q \in M : p \ll q\} \\
-\text{Event Horizon:} &\quad \mathcal{H}^+ = \partial J^-(\mathcal{I}^+) \\
-\text{Expansion:} &\quad \theta = \frac{1}{2}g^{ab}\mathcal{L}_k g_{ab}
+	ext{Vector Classification:} &\quad g_{ab}V^a V^b \begin{cases} < 0 & \text{timelike} \\ = 0 & \text{null} \\ > 0 & \text{spacelike} \end{cases} \\
+	ext{Causal Future:} &\quad J^+(p) = \{q \in M : p < q\} \\
+	ext{Chronological Future:} &\quad I^+(p) = \{q \in M : p \ll q\} \\
+	ext{Event Horizon:} &\quad \mathcal{H}^+ = \partial J^-(\mathcal{I}^+) \\
+	ext{Expansion:} &\quad \theta = \frac{1}{2}g^{ab}\mathcal{L}_k g_{ab}
 \end{align}$$
 
 **Causal Hierarchy (Complete Chain of Implications)**:
@@ -440,15 +439,15 @@ $$\begin{align}
 
 **Energy Conditions**:
 $$\begin{align}
-\text{Null Energy Condition:} &\quad T_{\mu\nu}\ell^\mu \ell^\nu \geq 0 \text{ for all null } \ell^\mu \\
-\text{Strong Energy Condition:} &\quad R_{\mu\nu}u^\mu u^\nu \geq 0 \text{ for all timelike } u^\mu \\
-\text{Generic Condition:} &\quad R_{\mu\nu\alpha\beta}\ell^\mu n^\nu \ell^\alpha n^\beta \neq 0 \text{ on geodesics}
+	ext{Null Energy Condition:} &\quad T_{ab}\ell^a \ell^b \geq 0 \text{ for all null } \ell^a \\
+	ext{Strong Energy Condition:} &\quad R_{ab}u^a u^b \geq 0 \text{ for all timelike } u^a \\
+	ext{Generic Condition:} &\quad R_{abcd}\ell^a n^b \ell^c n^d \neq 0 \text{ on geodesics}
 \end{align}$$
 
 **Raychaudhuri Equations**:
 $$\begin{align}
-\text{Timelike:} &\quad \frac{d\theta}{d\tau} = -\frac{1}{3}\theta^2 - \sigma_{\mu\nu}\sigma^{\mu\nu} + \omega_{\mu\nu}\omega^{\mu\nu} - R_{\mu\nu}u^\mu u^\nu \\
-\text{Null:} &\quad \frac{d\theta}{d\lambda} = -\frac{1}{2}\theta^2 - \sigma_{\mu\nu}\sigma^{\mu\nu} - R_{\mu\nu}\ell^\mu \ell^\nu
+	ext{Timelike:} &\quad \frac{d\theta}{d\tau} = -\frac{1}{3}\theta^2 - \sigma_{ab}\sigma^{ab} + \omega_{ab}\omega^{ab} - R_{ab}u^a u^b \\
+	ext{Null:} &\quad \frac{d\theta}{d\lambda} = -\frac{1}{2}\theta^2 - \sigma_{ab}\sigma^{ab} - R_{ab}\ell^a \ell^b
 \end{align}$$
 
 **Fundamental Singularity Results**:
