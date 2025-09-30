@@ -75,5 +75,34 @@ then
 
 $$\begin{align}
 d_{k}^{\dagger}h(k)d_{k} & =d_{-k}\tau ^{x}h(k)\tau ^{x}d_{-k}^{*} \\
- & =-
+ & =-d_{-k}^{\dagger}\tau ^{x}h^{T}(k)\tau ^{x}d_{-k}
+\end{align}$$
+
+notice
+
+$$\begin{align}
+h(-k) & =-\tau ^{x}h^{*}(k)\tau ^{x} \\
+ & =-\tau ^{x}\mathcal{K}h(k)\mathcal{K}\tau ^{x}
+\end{align}$$
+
+where $\displaystyle{\mathcal{K}}$ is the complex conjugate operator. expand
+
+$$\begin{align}
+h(k) & =h_{i}(k)\tau ^{i}
+\end{align}$$
+
+and finally we have
+
+$$\begin{align}
+\alpha _{k} & =\cos \frac{\theta}{2}f_{k}-i\sin \frac{\theta}{2}f_{k}^{\dagger} \\
+\beta _{k} & =\cos \frac{\theta}{2}f_{k}^{\dagger}-i\sin \frac{\theta}{2}f_{k}
+\end{align}$$
+
+so $\displaystyle{\alpha _{-k}^{\dagger}=\beta _{k}}$, particle is the antiparticle of hole. I can't follow...
+
+Majorana fermion. define
+
+$$\begin{align}
+\gamma_{2j-1} & =f_{j}+f_{j}^{\dagger} \\
+\gamma_{2j} & =\frac{f_{j}-f_{j}^{\dagger}}{i}
 \end{align}$$
