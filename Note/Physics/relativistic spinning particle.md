@@ -375,3 +375,45 @@ Assign $[\tau]=\text{(length)}^2$ so that $[T]=\text{(length)}^2$ in proper-time
 ---
 
 End of supplementary derivations.
+
+---
+
+## 小结：自旋 \(1/2\) 多种形式主义速览
+
+本节压缩列出常见自旋 \(1/2\) 表述的最小“变量–约束–核心公式–用途”信息，用于快速对照；不重复正文推导。
+
+### 1. 概览表
+
+| Formalism | 变量 (最小) | 约束/规范 | 核心作用量或方程 | 关键特点 |
+|-----------|------------|-----------|------------------|----------|
+| 世界线 N=1 SUSY | $(x^\mu,p_\mu,\psi^\mu,e,\chi,\psi_5)$ | $H=\tfrac12(p^2+m^2)=0$, $Q=p\cdot\psi+m\psi_5=0$ | $S=\int d\tau[p\cdot\dot x+\tfrac{i}{2}\psi\cdot\dot\psi-\tfrac{e}{2}(p^2+m^2)-i\chi Q]$, $Q^2\sim H$ | 直接 Dirac；有效作用计算高效 |
+| Frenkel 张量 | $(x^\mu,p_\mu,S^{\mu\nu})$ | 质量壳 + SSC $S^{\mu\nu}p_\nu=0$ | $L=-m\sqrt{-\dot x^2}+\tfrac14 S_{\mu\nu}\Omega^{\mu\nu}+\lambda C$ | 经典自旋进动几何；SSC 选择依赖 |
+| SU(2) Schwinger boson | $(x,p,a_\alpha,a_\alpha^\dagger,e,\lambda)$ | $a^\dagger a=1$ | $S=\int[p\cdot\dot x+i a^\dagger\dot a-\tfrac{e}{2}(p^2+m^2)-\lambda(a^\dagger a-1)]$ | 半经典/大自旋友好；协变性隐式 |
+| Twistor (massless) | $Z^A,\bar Z_A$ | $\bar Z Z=0$ (U(1)) | $S=\int(i\bar Z\dot Z-\Lambda \bar Z Z)$ | 共形对称显式；质量无 |
+| Brink–Schwarz 超粒子 | $(x^\mu,p_\mu,\theta,e)$ | $p^2=0$, κ-对称 | $S=\int(p\cdot\dot x+i\bar\theta \Gamma\cdot p\,\dot\theta-\tfrac{e}{2}p^2)$ | 目标 SUSY 多重态；含玻色伴 |
+| 1D 超空间超场 | $X^\mu(\tau,\eta),E$ | 超重参数化 | $S=\int d\tau d\eta \,\tfrac{1}{2E} D X^\mu D X_\mu$ | 紧凑超场形式；易扩展 N>1 |
+| Proper-time / Schwinger | $(T)$ | 无显式自旋变量 | $(\gamma\cdot p+m)^{-1}=(\gamma\cdot p-m)\int_0^\infty dT e^{-T(p^2+m^2)}$ | 传播子/热核简洁 |
+| 直接 Dirac 场 | $\psi(x)$ | Euler–Lagrange | $\mathcal L=\bar\psi(i\gamma\cdot\partial-m)\psi$ | 标准参照；无世界线几何 |
+| Two-Time Sp(2) | $(X^M,P_M)$ | $X^2=P^2=X\cdot P=0$ | $S=\int(P\cdot\dot X-\tfrac12 A^{ab}Q_{ab})$ | 隐藏对称/对偶统一 |
+
+### 2. 使用指引（迷你）
+| 需求             | 推荐              |
+| -------------- | --------------- |
+| 一回路有效作用 / 自旋热核 | 世界线 N=1         |
+| 经典自旋轨道/进动      | Frenkel 张量      |
+| 共形 / 质量无 / 软定理 | Twistor         |
+| 超对称谱或与弦兼容      | Brink–Schwarz   |
+| 半经典大自旋         | Schwinger boson |
+| 快速传播子/算符分解     | Proper-time     |
+| 隐藏对称/对偶探索      | Two-Time        |
+| 高自旋拓展前奏        | 超空间 / O(N)      |
+
+### 3. 互映线索
+$$S^{\mu\nu}\sim -\tfrac{i}{2}\psi^{[\mu}\psi^{\nu]}$$（正规序需常数）；质量无 $p^2=0$ ⇒ twistor 分解 $p=|\pi\rangle\langle\pi|$；Schwinger SU(2) 生成元 $J_i$ 与 Dirac 旋量块对角后的自旋算符对应。
+
+### 4. 高自旋展望
+在此基础引入多味 $\psi_i^\mu$ 与内部 O(N) 约束 $J_{ij}$ 可统一描述任意自旋；twistor 与 O(N) 在共形极限的投影结构可对照。
+
+---
+
+（多形式主义小结完）
