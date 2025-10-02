@@ -32,4 +32,42 @@ $$\begin{align}
 
 these relations are called primary constraints, and the surface defined by these relations in phase space is called the primary constraint surface $\displaystyle{\Sigma _{1}}$. there are many equivalent ways to represent a primary constraint surface, and to pass to the Hamiltonian formalism, it is necessary to impose some restrictions (regularity conditions) on the choice of the functions $\displaystyle{\phi _{m}}$.:
 
-1. 
+1. anyhow they are independent and nonsingular
+
+theorem: if a phase space function $\displaystyle{G}$ vanishes on the primary constraint surface $\displaystyle{\Sigma _{1}}$, then there exist functions $\displaystyle{u^{m}(q,p)}$ such that $\displaystyle{G=\sum _{m=1}^{M}u^{m}\phi _{m}}$ in some neighborhood of $\displaystyle{\Sigma _{1}}$.
+
+theorem: if $\displaystyle{\lambda _{n}\delta q^{n}+\mu ^{n}\delta p_{n}=0}$ for arbitrary varaitions $\displaystyle{\delta q^{n},\delta p_{n}}$ tangent to the primary constraint surface $\displaystyle{\Sigma _{1}}$, then
+
+$$\begin{align}
+\lambda _{n} & \approx u^{m}\frac{\partial \phi _{m}}{\partial q^{n}} \\
+\mu ^{n} & \approx u^{m}\frac{\partial \phi _{m}}{\partial p_{n}}
+\end{align}$$
+
+for some universal functions $\displaystyle{u^{m}}$. here $\displaystyle{\approx}$ means equality on $\displaystyle{\Sigma _{1}}$, and below we will use this symbol frequently. we will assume that the regularity conditions are satisfied throughout this note except where otherwise stated.
+
+the canonical Hamiltonian is defined by
+
+$$\begin{align}
+H & =\dot{q}^{n}p_{n}-L
+\end{align}$$
+
+the eom is given by
+
+$$\begin{align}
+\dot{q}^{n} & =\frac{\partial H}{\partial p_{n}} \\
+\dot{p}_{n} & =-\frac{\partial H}{\partial q^{n}}
+\end{align}$$
+
+the Hamiltonian is not unique, since we have $\displaystyle{M}$ primary constraints. the most general Hamiltonian is given by
+
+$$\begin{align}
+H & \to H+\lambda^{m}\phi _{m}
+\end{align}$$
+
+then the eom becomes
+
+$$\begin{align}
+\dot{q}^{n} & =\frac{\partial H}{\partial p_{n}}+\lambda ^{m}\frac{\partial \phi _{m}}{\partial p_{n}} \\
+\dot{p}_{n} & =-\frac{\partial H}{\partial q^{n}}-\lambda ^{m}\frac{\partial \phi _{m}}{\partial q^{n}}
+\end{align}$$
+
