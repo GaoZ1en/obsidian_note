@@ -108,3 +108,44 @@ $$\begin{align}
 [\phi _{j},H]+\lambda^{m}[\phi _{j},\phi _{m}]\approx 0
 \end{align}$$
 
+the general solution is of the form
+
+$$\begin{align}
+\Lambda^{m}=U^{M}+v^{a}V_{a}^{m}
+\end{align}$$
+
+where $\displaystyle{U^{m}}$ is a particular solution of the inhomogeneous equation, and $\displaystyle{V_{a}^{m}}$ is a basis of the general solution of the corresponding homogeneous equation, $\displaystyle{v^{a}}$ is totallu arbitrary. 
+
+$$\begin{align}
+\dot{\mathcal{O}} & \approx[\mathcal{O},H+u^{m}\phi _{m}] \\
+ & \approx[\mathcal{O},H'+v^{a}\phi _{a}]
+\end{align}$$
+
+where $\displaystyle{H'=H+U^{m}\phi _{m}, \phi _{a}=V^{m}_{a}\phi _{m}}$, and $\displaystyle{H_{T}=H'+v^{a}\phi _{a}}$ is called the total Hamiltonian.
+
+$$\begin{align}
+\dot{\mathcal{O}} & \approx[\mathcal{O},H_{T}]
+\end{align}$$
+
+an operator $\displaystyle{\mathcal{O}(q,p)}$ is said to be first class if its poisson bracket with all constraints vanishes on the constraint surface, i.e.
+
+$$\begin{align}
+[\mathcal{O},\phi _{j}] & \approx 0, & j=1,\dots,J
+\end{align}$$
+
+otherwise it is second class. first-class property is perserved under Poisson brackets. in other words the Poisson brackets of two first-class operators is still first class. suppose
+
+$$\begin{align}
+[F,\phi _{j}] & =f_{j}^{~j'}\phi _{j'}, & [G,\phi _{j}] & =g_{j}^{~j'}\phi _{j'}
+\end{align}$$
+
+thus
+
+$$\begin{align}
+[[F,G],\phi _{j}] & =[F,[G,\phi _{j}]]-[G,[F,\phi _{j}]] \\
+ & =[F,g_{j}^{~j'}\phi _{j'}]-[G,f_{j}^{~j'}\phi _{j'}] \\
+ & =\left([F,g_{j}^{~j'}] -[G,f_{j}^{~j'}]\right)\phi _{j'} +g_{j}^{~j'}[F,\phi _{j'}]-f_{j}^{~j'}[G,\phi _{j'}] \\
+ & \approx 0
+\end{align}$$
+
+#
