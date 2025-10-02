@@ -68,6 +68,43 @@ then the eom becomes
 
 $$\begin{align}
 \dot{q}^{n} & =\frac{\partial H}{\partial p_{n}}+\lambda ^{m}\frac{\partial \phi _{m}}{\partial p_{n}} \\
-\dot{p}_{n} & =-\frac{\partial H}{\partial q^{n}}-\lambda ^{m}\frac{\partial \phi _{m}}{\partial q^{n}}
+\dot{p}_{n} & =-\frac{\partial H}{\partial q^{n}}-\lambda ^{m}\frac{\partial \phi _{m}}{\partial q^{n}} \\
+\phi _{m}(q,p) & =0
+\end{align}$$
+
+here we think $\displaystyle{H}$ a functional of variables $\displaystyle{q^{n},p_{n},\lambda ^{m}}$, which can be derived from the follwoing variational principle:
+
+$$\begin{align}
+\delta \int ^{t_{f}}_{t_{i}}\left(\dot{q}^{n}p_{n}-H-\lambda ^{m}\phi _{m}\right) & =0
+\end{align}$$
+
+for arbitrary variations $\displaystyle{\delta q^{n},\delta p_{n},\delta u_{m}}$. the eom of operator $\displaystyle{\mathcal{O}}$ is given by
+
+$$\begin{align}
+\mathcal{\dot{O}} & =[\mathcal{O},H]+u^{m}[\mathcal{O},\phi _{m}]
+\end{align}$$
+
+and the poisson bracket is defined as usual
+
+$$\begin{align}
+[F,G] & =\frac{\partial F}{\partial q^{n}}\frac{\partial G}{\partial p_{n}}-\frac{\partial F}{\partial p_{n}}\frac{\partial G}{\partial q^{n}}
+\end{align}$$
+
+a basic consistency requirement is that the primary constraints must be preserved in time, i.e.
+
+$$\begin{align}
+\dot{\phi} _{m} & =[\phi _{m},H]+u^{m'}[\phi _{m},\phi _{m'}]\approx 0
+\end{align}$$
+
+this equation can either reduce to a relation independent of $\displaystyle{u}$'s or it may impose a restriction on the $\displaystyle{u}$'s. in the former case, if the new relation is independent of the primary constraints, it is called a secondary constraint. and we can repeat the procedure until no new constraints arise. let $\displaystyle{\phi _{k}=0,k=M+1,\dots,M+K}$, where $\displaystyle{K}$ is the total number of secondary constricts. it is useful to be able to denote all constraints in a uniform way as
+
+$$\begin{align}
+\phi _{j} & =0, & j=1,\dots,J
+\end{align}$$
+
+and we assume that regularity conditions are satisfied for all constraints, and the rank of the matrix $\displaystyle{[\phi _{j},\phi _{j'}]}$ is constant throughout the constraint surface $\displaystyle{\Sigma }$ defined by all constraints. these constraints provide several restrictions on the Lagrange multipliers
+
+$$\begin{align}
+[\phi _{j},H]+\lambda^{m}[\phi _{j},\phi _{m}]\approx 0
 \end{align}$$
 

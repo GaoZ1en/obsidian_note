@@ -25377,7 +25377,7 @@
       },
       {
         "date": "2025-09-27",
-        "filePath": "Articles/Proca in AdS3/Untitled.md",
+        "filePath": "Articles/Proca in AdS3/quantization of gauge systems.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [],
@@ -26499,7 +26499,7 @@
       },
       {
         "date": "2025-09-30",
-        "filePath": "Articles/Proca in AdS3/Untitled.md",
+        "filePath": "Articles/Proca in AdS3/quantization of gauge systems.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -26815,68 +26815,6 @@
       },
       {
         "date": "2025-09-30",
-        "filePath": "Note/useful results/black hole thermodynamics using CPS formalism copy.md",
-        "wordCountStart": 2223,
-        "charCountStart": 13239,
-        "changes": [
-          {
-            "timeKey": "16:30",
-            "w": -986,
-            "c": -6393
-          },
-          {
-            "timeKey": "16:35",
-            "w": 1634,
-            "c": 8161
-          },
-          {
-            "timeKey": "17:20",
-            "w": -2871,
-            "c": -15007
-          }
-        ],
-        "id": 869
-      },
-      {
-        "date": "2025-09-30",
-        "filePath": "Note/useful results/KNAdS.md",
-        "wordCountStart": 2869,
-        "charCountStart": 17693,
-        "changes": [
-          {
-            "timeKey": "16:55",
-            "w": -1,
-            "c": 0
-          },
-          {
-            "timeKey": "17:00",
-            "w": 2025,
-            "c": 12518
-          },
-          {
-            "timeKey": "17:20",
-            "w": -4893,
-            "c": -30211
-          }
-        ],
-        "id": 870
-      },
-      {
-        "date": "2025-09-30",
-        "filePath": "Note/useful results/Dilaton-Black-Holes.md",
-        "wordCountStart": 2224,
-        "charCountStart": 13789,
-        "changes": [
-          {
-            "timeKey": "17:20",
-            "w": -2224,
-            "c": -13789
-          }
-        ],
-        "id": 871
-      },
-      {
-        "date": "2025-09-30",
         "filePath": "Note/useful results/blackhole entropy/Born-Infeld-Black-Holes.md",
         "wordCountStart": 2808,
         "charCountStart": 18102,
@@ -27018,6 +26956,16 @@
             "timeKey": "21:00",
             "w": 28,
             "c": -26
+          },
+          {
+            "timeKey": "21:05",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "22:55",
+            "w": -3,
+            "c": -23
           }
         ],
         "id": 873
@@ -27081,6 +27029,16 @@
             "timeKey": "18:55",
             "w": 13,
             "c": 56
+          },
+          {
+            "timeKey": "21:05",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "22:55",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 875
@@ -27156,6 +27114,172 @@
         "charCountStart": 14107,
         "changes": [],
         "id": 884
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "TODO.md",
+        "wordCountStart": 6181,
+        "charCountStart": 31020,
+        "changes": [
+          {
+            "timeKey": "21:05",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 885
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/Physics/constrained hamiltonian systems.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 887
+      },
+      {
+        "date": "2025-09-30",
+        "filePath": "Note/Physics/relativistic spinning particle.md",
+        "wordCountStart": 1472,
+        "charCountStart": 10890,
+        "changes": [
+          {
+            "timeKey": "00:05",
+            "w": 241,
+            "c": 2253
+          },
+          {
+            "timeKey": "23:30",
+            "w": 718,
+            "c": 4694
+          },
+          {
+            "timeKey": "23:35",
+            "w": 1398,
+            "c": 9532
+          },
+          {
+            "timeKey": "23:40",
+            "w": -161,
+            "c": -379
+          }
+        ],
+        "id": 888
+      },
+      {
+        "date": "2025-10-01",
+        "filePath": "Drafts/Ryu-Takayanagi formula.md",
+        "wordCountStart": 1955,
+        "charCountStart": 15931,
+        "changes": [],
+        "id": 889
+      },
+      {
+        "date": "2025-10-01",
+        "filePath": "Note/Physics/causal structure.md",
+        "wordCountStart": 5482,
+        "charCountStart": 39660,
+        "changes": [],
+        "id": 890
+      },
+      {
+        "date": "2025-10-02",
+        "filePath": "Note/Physics/causal structure.md",
+        "wordCountStart": 5482,
+        "charCountStart": 39660,
+        "changes": [],
+        "id": 891
+      },
+      {
+        "date": "2025-10-02",
+        "filePath": "Articles/Proca in AdS3/simple example.md",
+        "wordCountStart": 991,
+        "charCountStart": 5081,
+        "changes": [],
+        "id": 892
+      },
+      {
+        "date": "2025-10-02",
+        "filePath": "Drafts/Ryu-Takayanagi formula.md",
+        "wordCountStart": 1955,
+        "charCountStart": 15931,
+        "changes": [],
+        "id": 893
+      },
+      {
+        "date": "2025-10-02",
+        "filePath": "Drafts/RT.md",
+        "wordCountStart": 1135,
+        "charCountStart": 12597,
+        "changes": [],
+        "id": 894
+      },
+      {
+        "date": "2025-10-02",
+        "filePath": "Articles/Ryu-Takayanagi formula/Unruh effect.md",
+        "wordCountStart": 288,
+        "charCountStart": 2622,
+        "changes": [],
+        "id": 895
+      },
+      {
+        "date": "2025-10-02",
+        "filePath": "Articles/Proca in AdS3/quantization of gauge systems.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "11:30",
+            "w": 12,
+            "c": 86
+          },
+          {
+            "timeKey": "17:20",
+            "w": 17,
+            "c": 82
+          },
+          {
+            "timeKey": "17:25",
+            "w": 115,
+            "c": 572
+          },
+          {
+            "timeKey": "17:30",
+            "w": 21,
+            "c": 114
+          },
+          {
+            "timeKey": "17:35",
+            "w": 138,
+            "c": 795
+          },
+          {
+            "timeKey": "17:40",
+            "w": 29,
+            "c": 188
+          },
+          {
+            "timeKey": "17:50",
+            "w": 58,
+            "c": 376
+          },
+          {
+            "timeKey": "18:00",
+            "w": 9,
+            "c": 58
+          },
+          {
+            "timeKey": "18:05",
+            "w": 160,
+            "c": 950
+          },
+          {
+            "timeKey": "18:10",
+            "w": 128,
+            "c": 718
+          }
+        ],
+        "id": 896
       }
     ],
     "daysWithCompletedGoal": [
@@ -27229,7 +27353,8 @@
       "2025-09-27",
       "2025-09-28",
       "2025-09-29",
-      "2025-09-30"
+      "2025-09-30",
+      "2025-10-02"
     ]
   }
 }
