@@ -1,5 +1,7 @@
 basically first and second class constraints and the geometry of constraint surface.
 
+# basic notions
+
 starting from a action
 
 $$\begin{align}
@@ -148,4 +150,32 @@ $$\begin{align}
  & \approx 0
 \end{align}$$
 
-#
+we have $\displaystyle{H'}$ and $\displaystyle{\phi _{a}}$ are first class
+
+$$\begin{align}
+[H',\phi _{j}] & =[H,\phi _{j}]+U^{m}[\phi _{m},\phi _{j}]=0 \\
+[\phi _{a},\phi _{j}] & =V^{m}_{a}[\phi _{m},\phi _{j}]=0
+\end{align}$$
+
+
+
+# first class constraints
+
+the presence of arbitrary functions $\displaystyle{v^{a}}$ in the total Hamiltonian tells us that not all variables $\displaystyle{q^{n},p_{n}}$ are observable. in fact, although physical state is uniquely defined by initial conditions, the converse is not true. consider time evolution of the operator $\displaystyle{\mathcal{O}}$, and determined by two sets of $\displaystyle{v^{a}}$ and $\displaystyle{\tilde{v}^{a}}$, we have
+
+$$\begin{align}
+\delta \mathcal{O} & =\delta v^{a}[\mathcal{O},\phi _{a}] \\
+\delta v^{a} & =(\tilde{v}^{a}-v^{a})\delta t
+\end{align}$$
+
+therefore the transformation does not alter the physical state, i.e., first-class primary constraints generate gauge transformations. we have
+
+1. the Poisson bracket $\displaystyle{[\phi _{a},\phi _{a'}]}$ of any two first-class primary constraints generates a gauge transformation
+
+$$\begin{align}
+\delta F & =\varepsilon ^{a}\eta ^{a'}[F,[\phi _{a},\phi _{a'}]]+\mathcal{O}(\varepsilon ^{2})+\mathcal{O}(\eta ^{2})
+\end{align}$$
+
+2. the Poisson bracket $\displaystyle{[\phi _{a},H']}$ of any first-class primary constraint with the first-class Hamiltonian generates a gauge transformation
+
+the proof is similar to above. the two results indicate that we may expect some secondary first-class constraints to generate gauge transformations as well. 
