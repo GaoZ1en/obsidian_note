@@ -205,4 +205,39 @@ $$\begin{align}
 
 # second class constraints, Dirac bracket
 
-second-clas
+the Poisson brackets between second-class constraints $\displaystyle{C_{jj'}=[\phi _{j},\phi _{j'}]}$ does not vanish on the constraint surface $\displaystyle{\Sigma}$. we assume that the constraints are irreducible, and the rank of $\displaystyle{C_{jj'}}$ is constant on $\displaystyle{\Sigma}$. we have
+
+theorem: if $\displaystyle{\det C_{jj'}\approx 0}$, there exits a first-class constraint in the set $\displaystyle{\phi _{j}}$.
+
+by repeated use of the theorem, we can separate the set $\displaystyle{\phi _{j}}$ into first-class constraints $\displaystyle{\gamma _{a}}$ and second-class constraints $\displaystyle{\chi _{\alpha}}$, such that
+
+$$\begin{align}
+[\gamma _{a},\phi _{j}] & \approx 0 \\
+[\chi _{\alpha},\chi _{\beta}] & \approx C_{\alpha \beta}, & \det C_{\alpha \beta} & \neq 0
+\end{align}$$
+
+denote the inverse of $\displaystyle{C_{\alpha \beta}}$ by $\displaystyle{C^{\beta \gamma}}$, i.e., $\displaystyle{C^{\beta \gamma}C_{\gamma \alpha}=\delta ^{\beta}_{\alpha}}$. we define the Dirac bracket by
+
+$$\begin{align}
+[F,G]_{\text{D}} & =[F,G]-[F,\chi _{\alpha}]C^{\alpha \beta}[\chi _{\beta},G]
+\end{align}$$
+
+the Dirac bracket has all the properties of the Poisson bracket, and in addition
+
+$$\begin{align}
+[F,\chi _{\alpha}]_{\text{D}} & \approx0 \\
+[F,G]_{D} & \approx [F,G], & \text{for }G\text{ first class} \\
+[R,[F,G]_{\text{D}}]_{\text{D}} & \approx [R,[F,G]], & \text{for }F,G\text{ first class}
+\end{align}$$
+
+# gauge fixation
+
+we assume that the constraints are all independent. there are two properties that a satisfactory set
+
+$$\begin{align}
+C_{b}(q,p)\approx 0
+\end{align}$$
+
+of gauge conditions must satisfy
+
+1. the chosen gauge must be accessble, i.e., 
