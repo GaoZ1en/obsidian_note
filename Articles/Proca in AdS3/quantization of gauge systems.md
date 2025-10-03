@@ -317,4 +317,44 @@ $$\begin{align}
 N-2M\leqslant \mathrm{rank}\sigma _{ij}\leqslant N-M
 \end{align}$$
 
-in general (when all constraints are first class, $\displaystyle{\mathrm{rank}\sigma _{ij}=N-2M}$)
+in general (when all constraints are first class, $\displaystyle{\mathrm{rank}\sigma _{ij}=N-2M}$, and when all constraints are second class, $\displaystyle{\mathrm{rank}\sigma _{ij}=N-M}$).
+
+# first class constraint surface.
+
+we first consider the case where all the constraints are first class. $\displaystyle{\gamma _{a},a=1,\dots,M}$ define vectors $\displaystyle{X^{\lambda}_{a}}$ through
+
+$$\begin{align}
+X^{\lambda}_{a} & =\sigma ^{\lambda \mu}\partial _{\mu}\gamma _{a}
+\end{align}$$
+
+by construction
+
+$$\begin{align}
+X^{\lambda}_{a}\partial _{\lambda}F=\partial _{a}F=[F,\gamma _{a}]
+\end{align}$$
+
+the vectors $\displaystyle{X^{\lambda}_{a}}$ are called Hamiltonian vector fields associated with $\displaystyle{\gamma _{a}}$, which generate gauge transformations. we have the following theorem
+
+theorem: the induced two-form $\displaystyle{\sigma _{ij}}$ is maximally degenerate
+
+$$\begin{align}
+\mathrm{rank}\sigma _{ij} & =N-2M
+\end{align}$$
+
+and the null directions are spanned by the vectors $\displaystyle{X^{\lambda}_{a}}$.
+
+we only need to show that there are $\displaystyle{M}$ independent null directions. notice that $\displaystyle{Y^{\lambda}}$ is tangent to $\displaystyle{\gamma _{a}=0}$ iff $\displaystyle{Y^{\lambda}\partial _{\lambda}\gamma _{a}\approx 0}$, this implies
+
+1. $\displaystyle{X^{\lambda}_{a}}$ are tangent to $\displaystyle{\gamma _{a}=0}$, since $\displaystyle{X^{\lambda}_{b}\partial _{\lambda}\gamma _{b}=[\gamma _{b},\gamma _{a}]\approx 0}$
+2. $\displaystyle{\sigma _{\lambda \mu}X^{\lambda}_{a}Y^{\mu}\approx 0}$ whenever $\displaystyle{Y^{\mu}}$ is tangent to the constraint surface, since $\displaystyle{\sigma _{\lambda \mu}X^{\lambda}_{a}Y^{\mu}= -Y^{\mu}\partial _{\mu}\gamma _{a}}$$\displaystyle{\implies}$ $\displaystyle{X^{\lambda}_{a}}$ are null directions of $\displaystyle{\sigma _{ij}}$.
+
+on the constraint surface, the vectors $\displaystyle{X^{\lambda}_{a}}$ generate $\displaystyle{M}$-dimensional manifold by Frobenius theorem. we only need to show that
+
+$$\begin{align}
+[X_{a},X_{b}]^{\lambda} & =\sigma ^{\lambda \mu}[\gamma _{a},\gamma _{b}]_{,\mu} \\
+ & =\sigma ^{\lambda \mu}(C_{ab}^{~~~c}\gamma _{c,\mu}+\partial _{\mu}C_{ab}^{~~~c}\gamma _{c}) \\
+ & \approx C_{ab}^{~~~c}X^{\lambda}_{c}
+\end{align}$$
+
+where $\displaystyle{[\gamma _{a},\gamma _{b}]=C_{ab}^{c}\gamma _{c}}$.
+
