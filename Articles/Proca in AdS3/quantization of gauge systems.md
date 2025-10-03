@@ -159,7 +159,7 @@ $$\begin{align}
 
 
 
-# first class constraints
+## first class constraints
 
 the presence of arbitrary functions $\displaystyle{v^{a}}$ in the total Hamiltonian tells us that not all variables $\displaystyle{q^{n},p_{n}}$ are observable. in fact, although physical state is uniquely defined by initial conditions, the converse is not true. consider time evolution of the operator $\displaystyle{\mathcal{O}}$, and determined by two sets of $\displaystyle{v^{a}}$ and $\displaystyle{\tilde{v}^{a}}$, we have
 
@@ -203,7 +203,7 @@ $$\begin{align}
 \phi _{j} & \approx0
 \end{align}$$
 
-# second class constraints, Dirac bracket
+## second class constraints, Dirac bracket
 
 the Poisson brackets between second-class constraints $\displaystyle{C_{jj'}=[\phi _{j},\phi _{j'}]}$ does not vanish on the constraint surface $\displaystyle{\Sigma}$. we assume that the constraints are irreducible, and the rank of $\displaystyle{C_{jj'}}$ is constant on $\displaystyle{\Sigma}$. we have
 
@@ -230,7 +230,7 @@ $$\begin{align}
 [R,[F,G]_{\text{D}}]_{\text{D}} & \approx [R,[F,G]], & \text{for }F,G\text{ first class}
 \end{align}$$
 
-# gauge fixation
+## gauge fixation
 
 we assume that the constraints are all independent. there are two properties that a satisfactory set
 
@@ -264,7 +264,7 @@ $$\begin{align}
 
 where $\displaystyle{N}$ is the number of canonical pairs $\displaystyle{(q^{n},p_{n})}$.
 
-# gauge invariant functions
+## gauge invariant functions
 
 the vector space $\displaystyle{C^{\infty}(P)}$ is endowed with two algebraic structrues:
 1. pointwise product, for which $\displaystyle{C^{\infty}(P)}$ is a associative commutative algebra
@@ -274,8 +274,47 @@ the space $\displaystyle{C^{\infty}(\Sigma)}$ can be algebraically characterized
 1. functions that vanish on $\displaystyle{\Sigma}$ form an ideal $\displaystyle{\mathcal{N}}$ of the algebra $\displaystyle{C^{\infty}(P)}$ with respect to pointwise product. such elements in $\displaystyle{\mathcal{N}}$ are of the form $\displaystyle{\lambda ^{a}\gamma _{a}+\lambda ^{\alpha}\chi _{\alpha}}$
 2. the quotient algebra $\displaystyle{C^{\infty}(P)/\mathcal{N}=C^{\infty}(\Sigma)}$. 
 
-a classical observable is a function on the constraint surface that is gauge invariant. 
+a classical observable $\displaystyle{F}$ is a function on the constraint surface that is gauge invariant. 
 
 $$\begin{align}
-
+[F,\gamma _{a}]_{\text{D}} & \approx 0
 \end{align}$$
+
+we notice that $\displaystyle{\mathcal{N}}$ is not an ideal of $\displaystyle{C^{\infty}(P)}$ with respect to the Dirac bracket, since $\displaystyle{F\in C^{\infty}(P),G=\lambda ^{a}\gamma _{a}+\mu ^{\alpha}\chi _{\alpha}\in \mathcal{N}}$, then
+
+$$\begin{align}
+[F,G]_{\text{D}} & =[F,\lambda ^{a}\gamma _{a}+\mu ^{\alpha}\chi _{\alpha}]_{\text{D}} \\
+ & =\lambda ^{a}[F,\gamma _{a}]_{\text{D}}\neq 0
+\end{align}$$
+
+but the gauge-invariant functions, i.e., observables, define the maximum subalgebra $\displaystyle{\mathcal{O}}$ containing $\displaystyle{\mathcal{N}}$ for which $\displaystyle{\mathcal{N}}$ is an ideal, i.e., $\displaystyle{[\mathcal{O},\mathcal{N}]_{\text{D}}\subset \mathcal{N}}$. for and only for these observables there is a well-defined bracket because of the equality
+
+$$\begin{align}
+[F+\lambda ^{a}\gamma _{a}+\mu ^{\alpha}\chi _{\alpha},F'+\lambda'^{a}\gamma _{a}+\mu'^{\alpha}\chi _{\alpha}]_{\text{D}} & \approx[F,F']_{\text{D}}
+\end{align}$$
+
+# geometry of the constraint surface
+
+## induced two-form on the constraint surface
+
+let $\displaystyle{x^{\lambda}=x^{\lambda}(y^{i})}$ be the parametric equations of a surface $\displaystyle{\Sigma}$ embedded in phase space. then the functions $\displaystyle{\sigma _{ij}}$ given by
+
+$$\begin{align}
+\sigma _{ij} & =\sigma _{\lambda \mu} \frac{\partial x^{\lambda}}{\partial y^{i}} \frac{\partial x^{\mu}}{\partial y^{j}} \\
+\sigma _{\lambda \mu} & =[x^{\lambda},x^{\mu}] \\
+x^{\lambda} & =(q^{i},p_{i})
+\end{align}$$
+
+we will refer to this tensor field as the induced 2-form. we have
+
+$$\begin{align}
+\sigma _{[ij,k]} & =0
+\end{align}$$
+
+but it may be degenerate. let $\displaystyle{N}$ and $\displaystyle{N-M}$ be the dimensions of phase space and of the surface $\displaystyle{\Sigma}$, respectively. then $\displaystyle{\sigma _{ij}}$ is an antisymmetric $\displaystyle{(N-M)\times(N-M)}$ matrix, and its rank is even and cannot exceed $\displaystyle{N-M}$. we have
+
+$$\begin{align}
+N-2M\leqslant \mathrm{rank}\sigma _{ij}\leqslant N-M
+\end{align}$$
+
+in general (when all constraints are first class, $\displaystyle{\mathrm{rank}\sigma _{ij}=N-2M}$)
