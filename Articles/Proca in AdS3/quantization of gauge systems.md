@@ -358,3 +358,69 @@ $$\begin{align}
 
 where $\displaystyle{[\gamma _{a},\gamma _{b}]=C_{ab}^{c}\gamma _{c}}$.
 
+by construction, any vector tangent to the $\displaystyle{M}$-dimensional surfaces spanned by the vectors $\displaystyle{X^{\lambda}_{a}}$ on the constraint surface is annihilated by the induced two-form $\displaystyle{\sigma _{ij}}$. for this reason we call these surface null surfaces. $\displaystyle{X^{\lambda}_{a}}$ also generate the gauge transformations, we see that the gauge orbits are precisely the null surfaces of the induced two-form.
+
+if one factors out by the null surfaces, one gets a smaller space with an invertible 2-form and a well-defined Poisson bracket. the smaller space obtained by identifying all points on the same orbit is known as the reduced phase space. functions defined over the reduced phase space are gauge invariant functions, i.e., observables.
+
+however if one takes the quotient of the constraint surface by the gauge orbits, one loses desirable features such as locality and manifest covariance. therefore it is often preferable to work on the full constraint surface and to deal with gauge invariance in some other way (BRST theory).
+ (actually Dirac bracket)
+## second class constraints
+
+define
+
+$$\begin{align}
+X^{\lambda}_{\alpha} & =\sigma ^{\lambda \mu}\partial _{\mu}\chi _{\alpha}
+\end{align}$$
+
+these vectors are linearly independent by the regularity and irreducibility assumptions. second-class constraints differ from first-class constraints in that the vectors $\displaystyle{X^{\lambda}_{\alpha}}$ are not tangent to the constraint surface, since $\displaystyle{X^{\lambda}_{\alpha}\partial _{\lambda}\chi _{\beta}=[\chi _{\beta},\chi _{\alpha}]\approx C_{\alpha \beta}}$, and $\displaystyle{C_{\alpha \beta}}$ is invertible. we have the following
+
+theorem: no linear conbination of the vectors $\displaystyle{X^{\lambda}_{\alpha}}$ is tangent to the constraint surface.
+
+thus
+
+theorem: a surface $\displaystyle{\chi _{\alpha}=0}$ is second class iff $\displaystyle{\sigma _{ij}}$ is of maximal rank $\displaystyle{N-M}$
+
+## Dirac bracket
+
+the Poisson bracket of two phase space functions $\displaystyle{F,G}$ are defined by induced two-form $\displaystyle{\sigma _{ij}}$ as
+
+$$\begin{align}
+[F,G]^{*} & =\sigma ^{ij} \partial _{i}F\partial _{j}G
+\end{align}$$
+
+we have the theorem
+
+theorem: the Dirac bracket $\displaystyle{[F,G]_{D}}$ is equal to $\displaystyle{[F,G]^{*}}$ on the constraint surface, i.e.,
+
+$$\begin{align}
+[F,G]^{*} & \approx [f,g]_{\text{D}} \\
+F & \approx f, G\approx g
+\end{align}$$
+
+the proof is straightforward. we take phase space coordinates $\displaystyle{y^{i}}$ and $\displaystyle{\chi _{\alpha}}$, then
+
+$$\begin{align}
+\sigma ^{\lambda \mu} & =\begin{pmatrix}
+[y^{i},y^{j}] & 0 \\
+0 & C_{\alpha \beta}
+\end{pmatrix} \\
+\sigma _{\lambda \mu} & =\begin{pmatrix}
+\sigma _{ij} & 0 \\
+0 & C^{\alpha \beta}
+\end{pmatrix}
+\end{align}$$
+
+$$\begin{align}
+[F,\chi _{\alpha}] & =\sigma ^{\lambda \mu}\partial _{\lambda}F\partial _{\mu}\chi _{\alpha} \\
+ & \approx C_{a\beta}\partial ^{\beta}F
+\end{align}$$
+
+therefore
+
+$$\begin{align}
+[F,G]^{*} & = \sigma ^{\lambda \mu}\partial _{\lambda}F\partial _{\mu}G \\
+ & =\sigma ^{ij}\partial _{i}F\partial _{j}G+C_{\alpha \beta}\partial ^{\alpha}F\partial ^{\beta}G \\
+ & \approx \sigma ^{ij}\partial _{i}f\partial _{j}g+[F,\chi _{\alpha}]C^{\alpha \beta}[\chi _{\beta},G] \\
+\implies [F,G]^{*} & \approx [f,g]_{\text{D}}
+\end{align}$$
+
