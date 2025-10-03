@@ -240,4 +240,42 @@ C_{b}(q,p)\approx 0
 
 of gauge conditions must satisfy
 
-1. the chosen gauge must be accessble, i.e., 
+1. the chosen gauge must be accessble
+2. the conditions must fix the gauge completely
+
+these two conditions imply that the number of independent gauge conditions must be equal to the number of independent first-class constraints. and the second condition requires that the matrix $\displaystyle{[C_{b},\gamma _{a}]}$ should be invertible. thus we have
+
+$$\begin{align}
+\det[C_{b},\gamma _{a}]\neq 0
+\end{align}$$
+
+this condition precisely expresses that the constraints $\displaystyle{C_{b},\gamma _{a}}$ form together a second-class set. we can therefore use the Dirac bracket with respect to the complete set of second-class constraints.
+
+there is a problem called Gribov obstruction, which means that a gauge condition may intersect a gauge orbit more than once. this problem is not yet fully understood. and this is a reason for developing a theory of first-class constraints without gauge fixing.
+
+couting degrees of freedom:
+
+the number of physical degrees of freedom is given by
+
+$$\begin{align}
+\#\text{d.o.f} & =N-\text{number of first-class constraints}-\frac{1}{2}\text{number of second-class constraints} \\
+ & =N-\frac{1}{2}\text{number of all constraints}-\frac{1}{2}\text{number of first-class constraints}
+\end{align}$$
+
+where $\displaystyle{N}$ is the number of canonical pairs $\displaystyle{(q^{n},p_{n})}$.
+
+# gauge invariant functions
+
+the vector space $\displaystyle{C^{\infty}(P)}$ is endowed with two algebraic structrues:
+1. pointwise product, for which $\displaystyle{C^{\infty}(P)}$ is a associative commutative algebra
+2. Dirac bracket, for which $\displaystyle{C^{\infty}(P)}$ is a Lie algebra
+
+the space $\displaystyle{C^{\infty}(\Sigma)}$ can be algebraically characterized as follows:
+1. functions that vanish on $\displaystyle{\Sigma}$ form an ideal $\displaystyle{\mathcal{N}}$ of the algebra $\displaystyle{C^{\infty}(P)}$ with respect to pointwise product. such elements in $\displaystyle{\mathcal{N}}$ are of the form $\displaystyle{\lambda ^{a}\gamma _{a}+\lambda ^{\alpha}\chi _{\alpha}}$
+2. the quotient algebra $\displaystyle{C^{\infty}(P)/\mathcal{N}=C^{\infty}(\Sigma)}$. 
+
+a classical observable is a function on the constraint surface that is gauge invariant. 
+
+$$\begin{align}
+
+\end{align}$$
