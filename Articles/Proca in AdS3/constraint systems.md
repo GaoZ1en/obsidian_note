@@ -156,3 +156,4 @@ For a purely second-class set (\(s=J\)), the restriction of the symplectic form 
 3. Structure functions vs constants: coefficients $C_{ab}{}^{c}(q,p)$ may be phase-space dependent; this affects operator ordering at quantization (not pursued here).
 4. Multipliers: $v^a$ (or $u^a$) parametrize gauge freedom; physical observables do not depend on their choice.
 5. Global issues (Gribov problem) can obstruct existence of a single global gauge fixing; all statements here are local in phase space.
+

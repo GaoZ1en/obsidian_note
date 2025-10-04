@@ -59,135 +59,60 @@ we choose $\displaystyle{C_{1}=0}$ to have a well-defined solution at infinity. 
 $$\begin{align}
 \phi _{\omega,\vec{k}_{\bot}} & =N_{\omega,\vec{k}_{\bot}}e^{-i\omega \eta}e^{i\vec{k}_{\bot}\cdot \vec{x}_{\bot}}K_{i\nu}\left(\kappa \xi\right) \\
 \omega & =\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \phi \wedge \delta \phi \\
-\omega[\phi _{\omega,\vec{k}_{\bot}},\phi ^{*} _{\omega',\vec{k}'_{\bot}}] & =\int \mathrm{d}\xi \mathrm{d}^{d-2}\vec{x}_{\bot} \frac{1}{a\xi}(\partial _{\eta}\phi _{\omega,\vec{k}_{\bot}}\phi ^{*} _{\omega',\vec{k}'_{\bot}}-\partial _{\eta}\phi ^{*} _{\omega',\vec{k}'_{\bot}}\phi _{\omega,\vec{k}_{\bot}}) \\
- & =-i\delta(\omega-\omega')\delta ^{d-2}(\vec{k}_{\bot}-\vec{k}'_{\bot}) \\
-\implies N_{\omega,\vec{k}_{\bot}} & =\sqrt{ \frac{\kappa ^{2}}{(2\pi)^{d-2}}\cdot \frac{\sinh(\pi \nu)}{\pi \nu} }
+\Omega[\phi _{\omega,\vec{k}_{\bot}},\phi ^{*} _{\omega',\vec{k}'_{\bot}}] & =\int \mathrm{d}\xi \mathrm{d}^{d-2}\vec{x}_{\bot} \frac{1}{a\xi}(\partial _{\eta}\phi _{\omega,\vec{k}_{\bot}}\phi ^{*} _{\omega',\vec{k}'_{\bot}}-\partial _{\eta}\phi ^{*} _{\omega',\vec{k}'_{\bot}}\phi _{\omega,\vec{k}_{\bot}}) \\
+ & :=-i\delta(\omega-\omega')\delta ^{d-2}(\vec{k}_{\bot}-\vec{k}'_{\bot}) \\
+\implies N_{\omega,\vec{k}_{\bot}} & =\sqrt{ \frac{2\nu \sinh(\pi \nu)}{(2\pi)^{d-1}}}
 \end{align}$$
 
-here we use
+the field can be expanded as
 
 $$\begin{align}
-\int _{0}^{\infty} \frac{\mathrm{d}\xi}{\xi}|K_{i\nu}(\kappa \xi)|^{2}=\frac{\pi}{2\sinh(\pi \nu)} \frac{1}{\kappa ^{2}}
+\phi & =\int \mathrm{d}\omega \mathrm{d}^{d-2}\vec{k}_{\bot}(a_{\omega,\vec{k}_{\bot}}\phi _{\omega,\vec{k}_{\bot}}+a^{\dagger}_{\omega,\vec{k}_{\bot}}\phi ^{*}_{\omega,\vec{k}_{\bot}}) \\
+\phi _{\omega,\vec{k}_{\bot}} & =\sqrt{ \frac{2\nu \sinh(\pi \nu)}{(2\pi)^{d-1}} }e^{-i\omega \eta}e^{i\vec{k}_{\bot}\cdot \vec{x}_{\bot}}K_{i\nu}(\kappa \xi)
 \end{align}$$
 
+on the other hand, in Minkowski spacetime, the field can be expanded as
 
-利用修正Bessel函数的积分性质：^cite{Gradshteyn2007}
-$$\int_0^\infty \frac{dz}{z} |K_{i\nu}(z)|^2 = \frac{\pi^2}{2\sinh(\pi\nu)}$$
+$$\begin{align}
+\phi & =\int \mathrm{d}^{d-1}\vec{k}\left(b _{\vec{k}}\varphi _{\vec{k}}+b^{\dagger}_{\vec{k}}\varphi ^{*}_{\vec{k}}\right) \\
+\varphi _{\vec{k}} & =\frac{1}{\sqrt{ (2\pi)^{d-1}2\omega _{\vec{k}} }}e^{ik\cdot x}
+\end{align}$$
 
-得到归一化因子：
-$$\boxed{|N_{\omega,\vec{k}_\perp}|^2 = \frac{a\kappa\sinh(\pi\omega/a)}{2\pi^3\omega}}$$
+they are related by the Bogoliubov transformation
 
+$$\begin{align}
+a_{\omega,\vec{k}_{\bot}} & =i\Omega[\phi,\phi ^{*} _{\omega,\vec{k}_{\bot}}] \\
+ & =\int \mathrm{d}^{d-1}\vec{k}\left(\alpha _{\omega,\vec{k}_{\bot};\vec{k}}b_{\vec{k}}+\beta ^{*}_{\omega,\vec{k}_{\bot};\vec{k}}b^{\dagger}_{\vec{k}}\right) \\
+\alpha _{\omega,\vec{k}_{\bot};\vec{k}} & =i\Omega[\varphi _{\vec{k}},\phi ^{*}_{\omega,\vec{k}_{\bot}}] \\
+ & =\frac{1}{2\pi a}\sqrt{ \frac{\omega}{\omega _{\vec{k}}} }e^{\pi \omega/2a}\Gamma\left( \frac{i\omega}{a} \right)\left(\frac{\omega _{\vec{k}}+k_{x}}{a}\right)^{-i\omega/a} \\
+\beta _{\omega,\vec{k}_{\bot};\vec{k}} & =-i\Omega[\varphi ^{*}_{\vec{k}},\phi ^{*}_{\omega,\vec{k}_{\bot}}]
+\end{align}$$
 
-## 完整的标准化模式
+### Bogoliubov coefficients (explicit form)
 
-### 最终的模式函数
-$$\boxed{\phi_{\omega,\vec{k}_\perp}^{(\pm)}(\eta,\xi,y,z) = \sqrt{\frac{a\kappa\sinh(\pi\omega/a)}{2\pi^3\omega}} e^{\pm i\omega\eta + i\vec{k}_\perp \cdot \vec{r}_\perp} K_{i\omega/a}(\kappa\xi)}$$
+Introduce $\vec{k}=(k_x,\vec{k}_{\bot})$ and $\omega_{\vec{k}}=\sqrt{k_x^{2}+k_{\bot}^{2}+m^{2}}$. Restrict a positive-frequency Minkowski plane wave $\varphi_{\vec{k}}$ to the right Rindler wedge and decompose it in the Rindler basis $\phi_{\omega,\vec{k}_{\bot}}$. Performing the standard Mellin transform (steps omitted) gives
+$$
+\alpha_{\omega,\vec{k}_{\bot};\vec{k}} = \frac{1}{2\pi a}\sqrt{\frac{\omega}{\omega_{\vec{k}}}}\; e^{\frac{\pi \omega}{2a}}\; \Gamma\!\left(\frac{i\omega}{a}\right) \left(\frac{\omega_{\vec{k}}+k_x}{a}\right)^{-\frac{i\omega}{a}} (2\pi)^{\frac{d-2}{2}}\,\delta^{d-2}(\vec{k}_{\bot}-\vec{k}'_{\bot})
+$$
+$$
+\beta_{\omega,\vec{k}_{\bot};\vec{k}} = \frac{1}{2\pi a}\sqrt{\frac{\omega}{\omega_{\vec{k}}}}\; e^{-\frac{\pi \omega}{2a}}\; \Gamma\!\left(\frac{i\omega}{a}\right) \left(\frac{\omega_{\vec{k}}+k_x}{a}\right)^{-\frac{i\omega}{a}} (2\pi)^{\frac{d-2}{2}}\,\delta^{d-2}(\vec{k}_{\bot}-\vec{k}'_{\bot})
+$$
+They satisfy the universal thermal ratio
+$$
+\beta_{\omega,\vec{k}_{\bot};\vec{k}} = e^{-\pi \omega/a}\,\alpha_{\omega,\vec{k}_{\bot};\vec{k}},\qquad \frac{|\beta|^{2}}{|\alpha|^{2}} = e^{-2\pi \omega/a}.
+$$
 
-### 场的展开
-$$\phi(\eta,\xi,y,z) = \int_0^\infty d\omega \int d^2k_\perp \left[a_{\omega,\vec{k}_\perp} \phi_{\omega,\vec{k}_\perp}^{(+)} + a_{\omega,\vec{k}_\perp}^\dagger \phi_{\omega,\vec{k}_\perp}^{(-)}\right]$$
+Expectation value of Rindler number operator in the Minkowski vacuum:
+$$
+\langle 0_M| a^{\dagger}_{\omega,\vec{k}_{\bot}} a_{\omega',\vec{k}'_{\bot}} |0_M \rangle = \frac{\delta(\omega-\omega')\,\delta^{d-2}(\vec{k}_{\bot}-\vec{k}'_{\bot})}{e^{2\pi \omega/a}-1},\qquad T_U=\frac{a}{2\pi}.
+$$
 
-## 重要物理性质
+Sketch of derivation (for later fill-in):
+1. Write $\varphi_{\vec{k}}= ( (2\pi)^{d-1}2\omega_{\vec{k}})^{-1/2} e^{-i\omega_{\vec{k}} t + i k_x x + i\vec{k}_{\bot}\cdot\vec{x}_{\bot}}$ and restrict to $x>|t|$.
+2. Substitute $t=\xi\sinh a\eta$, $x=\xi\cosh a\eta$ so $t\pm x = \xi e^{\pm a\eta}$.
+3. Recognize dependence $\exp\{-i(\omega_{\vec{k}}+k_x)\xi e^{-a\eta}/2 - i(\omega_{\vec{k}}-k_x)\xi e^{a\eta}/2\}$.
+4. Expand this in $e^{-i\omega \eta}$ via Mellin transform: $\int_0^{\infty} d\xi\, \xi^{i\omega/a -1} K_{i\omega/a}(\kappa \xi)$ gives Gamma factors.
+5. Read off $\alpha,\beta$ from Klein–Gordon inner products with $\phi_{\omega,\vec{k}_{\bot}}$ and $\phi^{*}_{\omega,\vec{k}_{\bot}}$.
 
-### 1. Rindler粒子概念
-- 模式函数在Rindler视界处有特殊行为
-- 与[[Minkowski真空]]中的[[Unruh粒子]]相关
+Note: Overall phase conventions or alternative normalizations of $\phi_{\omega,\vec{k}_{\bot}}$ modify prefactors but not the thermal ratio.
 
-### 2. 热谱性质
-归一化因子中的$$\sinh(\pi\omega/a)$$项体现了Rindler模式的热谱特征，温度为：
-$$T_{\text{Unruh}} = \frac{a}{2\pi}$$
-
-### 3. 与Minkowski模式的关系
-[[Bogoliubov变换]]将Rindler模式与Minkowski模式联系起来，是理解[[Unruh效应]]的关键。
-
-### 相关开放问题
-- [[Rindler-Hawking对应]]中的精确映射关系
-- 有相互作用场论中的Rindler量子化
-- [[全息Rindler重构]]的完备性
-
-^cite{Birrell1982} ^cite{Crispino2008}
-
-这是一个涉及修正贝塞尔函数 $$K_{i\nu}(\kappa\xi)$$ 的重要积分，在量子场论和统计力学中经常出现。让我系统地分析这个积分。
-
-## 积分的物理背景
-
-这类积分通常出现在：
-- [[AdS空间]]中标量场的传播子计算
-- 热场论中的单圈修正
-- [[共形场论]]中的关联函数
-
-## 积分计算方法
-
-### 方法一：利用修正贝塞尔函数的积分表示
-
-修正贝塞尔函数有积分表示：
-$$K_{i\nu}(\kappa\xi) = \frac{1}{2}\int_{-\infty}^{\infty} e^{-\kappa\xi\cosh t - i\nu t} dt$$
-
-因此：
-$$|K_{i\nu}(\kappa\xi)|^2 = K_{i\nu}(\kappa\xi) K_{-i\nu}(\kappa\xi)$$
-
-### 方法二：使用Mellin变换技术
-
-对于 $$\kappa > 0$$，$$\nu \in \mathbb{R}$$，这个积分可以表示为：
-
-$$\int_0^{\infty} \frac{d\xi}{\xi} |K_{i\nu}(\kappa\xi)|^2 = \int_0^{\infty} \frac{d\xi}{\xi} K_{i\nu}(\kappa\xi) K_{-i\nu}(\kappa\xi)$$
-
-## 标准结果
-
-根据Watson的《贝塞尔函数理论》和Gradshteyn-Ryzhik积分表，当 $$\text{Re}(\kappa) > 0$$ 时：
-
-$$\boxed{\int_0^{\infty} \frac{d\xi}{\xi} |K_{i\nu}(\kappa\xi)|^2 = \frac{\pi}{2\sinh(\pi\nu)}}$$
-
-### 推导要点
-
-1. **解析延拓**: 利用 $$K_{i\nu}(z) = K_{-i\nu}(z)$$ 的性质
-2. **Mellin变换**: 
-   $$\mathcal{M}[K_{i\nu}(\xi)](s) = 2^{s-2}\Gamma\left(\frac{s+i\nu}{2}\right)\Gamma\left(\frac{s-i\nu}{2}\right)$$
-3. **卷积定理**: 应用Mellin卷积来处理乘积
-
-## 特殊情况
-
-### $$\nu = 0$$ 的情况
-$$\int_0^{\infty} \frac{d\xi}{\xi} |K_0(\kappa\xi)|^2 = \lim_{\nu \to 0} \frac{\pi}{2\sinh(\pi\nu)} = \frac{\pi^2}{2}$$
-
-### 大 $$\nu$$ 渐近行为
-当 $$|\nu| \gg 1$$ 时：
-$$\frac{\pi}{2\sinh(\pi\nu)} \approx \pi e^{-\pi|\nu|}$$
-
-## 物理应用实例
-
-### AdS/CFT对应中的应用
-在 $$AdS_3$$ 空间中，标量场传播子的计算涉及类似积分：
-$$G(x_1, x_2) \sim \int_0^{\infty} d\mu \, \rho(\mu) |K_{i\mu}(\kappa r)|^2$$
-
-其中 $$\rho(\mu) = \frac{\mu}{\sinh(\pi\mu)}$$ 是谱密度。
-
-### [[共形场论]]中的应用
-在2D CFT的热态关联函数中，这类积分控制着高温展开的系数。
-
-## 数值验证建议
-
-对于数值检验，可以使用：
-```python
-import numpy as np
-from scipy.special import kv
-from scipy.integrate import quad
-
-def integrand(xi, nu, kappa):
-    K_inu = kv(1j*nu, kappa*xi)
-    return np.abs(K_inu)**2 / xi
-
-# 理论值
-theoretical = np.pi / (2 * np.sinh(np.pi * nu))
-```
-
-## 相关开放问题
-
-[[Open Problems]]:
-1. 高维推广到修正贝塞尔函数的超几何推广
-2. 非整数维度中的解析延拓性质
-3. 与[[椭圆函数]]理论的深层联系
-
----
-^cite{Watson1944, GradshteynRyzhik2014}
-
-需要我详细推导某个特定步骤，或者讨论这个积分在特定物理情境中的应用吗？
