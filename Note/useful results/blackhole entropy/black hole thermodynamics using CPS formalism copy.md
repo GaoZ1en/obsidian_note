@@ -158,19 +158,6 @@ N_{\phi} & =-\frac{J}{2r^{2}}
 where $\displaystyle{\Lambda=-\frac{1}{\ell ^{2}}}$. the horizon is located at $\displaystyle{r_{\pm}^{2}=\frac{M\ell ^{2}}{2}\left(1\pm \sqrt{ 1-\frac{J^{2}}{M^{2}\ell ^{2}} }\right)}$. the angular velocity of the horizon is $\displaystyle{\Omega _{H}=\frac{J}{2r_{+}^{2}}}$. the surface gravity is given by
 
 $$\begin{align}
-\Gamma ^{\rho}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{\rho \sigma}\mathrm{d}g_{\sigma \nu}\mathrm{d}x^{\nu}-\frac{1}{2}g^{\rho \sigma}\partial _{\sigma}\mathrm{d}s^{2}
-\end{align}$$
-
-$$\begin{align}
-\Gamma ^{t}_{\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =\frac{2}{N^{2}}\left(NN'-\frac{1}{2}r^{2}N_{\phi}N_{\phi}'\right)\mathrm{d}t\mathrm{d}r \\
- & +2\left(\frac{rN_{\phi}}{N^{2}}+\left(r^{2}N_{\phi}^{2}-N^{2}\right)\left( rN_{\phi}+\frac{1}{2}r^{2}N_{\phi}' \right)\right)\mathrm{d}r\mathrm{d}\phi \\
-\Gamma ^{r}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{rr}\mathrm{d}g_{rr}\mathrm{d}r-\frac{1}{2}g^{rr}\partial _{r}\mathrm{d}s^{2} \\
- & =N^{2}\partial _{r}\left(  \frac{1}{N^{2}} \right)\mathrm{d}r^{2}-\frac{1}{2}N^{2}\partial _{r}\left((r^{2}N_{\phi}^{2}-N^{2})\mathrm{d}t^{2}+2r^{2}N_{\phi}\mathrm{d}t\mathrm{d}\phi+\frac{1}{N^{2}}\mathrm{d}r^{2}+r^{2}\mathrm{d}\phi ^{2}\right) \\
- & =-\frac{1}{2}N^{2}(2rN_{\phi}^{2}+2r^{2}N_{\phi}N_{\phi}'-2NN')\mathrm{d}t^{2}-N^{2}(2rN_{\phi}+r^{2}N_{\phi})\mathrm{d}t\mathrm{d}\phi \\
- & +\frac{1}{2}N^{2}\partial _{r}\left(\frac{1}{N^{2}}\right)\mathrm{d}r^{2}
-\end{align}$$
-
-$$\begin{align}
 g_{\mu \nu} & =\begin{pmatrix}
 r^{2}N_{\phi}^{2}-N^{2} & 0 & r^{2}N_{\phi} \\
 0 & \frac{1}{N^{2}} & 0 \\
@@ -183,9 +170,16 @@ g^{\mu \nu} & =\begin{pmatrix}
 \end{pmatrix}
 \end{align}$$
 
+
+
+
+where $\displaystyle{\xi ^{a}=t^{a}+\Omega _{H}\phi^{a}}$ is the horizon Killing vector
+
 $$\tag{.}\begin{align}
 \nabla _{a}(\xi ^{2}) & =-2\kappa \xi _{a} \\
-\kappa & =-\frac{1}{2}\frac{\nabla _{a}(\xi ^{2})}{\xi _{a}}
+\kappa & =-\frac{1}{2}\frac{\nabla _{a}(\xi ^{2})}{\xi _{a}} \\
+ & =\left. \frac{1}{2}\partial _{r}(N^{2}-r^{2}N_{\phi}^{2}) \right|_{r=r_{+}} \\
+ & =\frac{r_{+}^{2}-r_{-}^{2}}{\ell ^{2}r_{+}}
 \end{align}$$
 
 
