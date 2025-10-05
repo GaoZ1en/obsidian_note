@@ -183,8 +183,10 @@ g^{\mu \nu} & =\begin{pmatrix}
 \end{pmatrix}
 \end{align}$$
 
-
-
+$$\tag{.}\begin{align}
+\nabla _{a}(\xi ^{2}) & =-2\kappa \xi _{a} \\
+\kappa & =-\frac{1}{2}\frac{\nabla _{a}(\xi ^{2})}{\xi _{a}}
+\end{align}$$
 
 
 
