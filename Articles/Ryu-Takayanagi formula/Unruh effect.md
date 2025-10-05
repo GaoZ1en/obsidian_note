@@ -84,35 +84,14 @@ $$\begin{align}
 a_{\omega,\vec{k}_{\bot}} & =i\Omega[\phi,\phi ^{*} _{\omega,\vec{k}_{\bot}}] \\
  & =\int \mathrm{d}^{d-1}\vec{k}\left(\alpha _{\omega,\vec{k}_{\bot};\vec{k}}b_{\vec{k}}+\beta ^{*}_{\omega,\vec{k}_{\bot};\vec{k}}b^{\dagger}_{\vec{k}}\right) \\
 \alpha _{\omega,\vec{k}_{\bot};\vec{k}} & =i\Omega[\varphi _{\vec{k}},\phi ^{*}_{\omega,\vec{k}_{\bot}}] \\
- & =\frac{1}{2\pi a}\sqrt{ \frac{\omega}{\omega _{\vec{k}}} }e^{\pi \omega/2a}\Gamma\left( \frac{i\omega}{a} \right)\left(\frac{\omega _{\vec{k}}+k_{x}}{a}\right)^{-i\omega/a} \\
-\beta _{\omega,\vec{k}_{\bot};\vec{k}} & =-i\Omega[\varphi ^{*}_{\vec{k}},\phi ^{*}_{\omega,\vec{k}_{\bot}}]
+ & =\frac{1}{2\pi a}\sqrt{ \frac{\omega}{\omega _{\vec{k}}} }e^{\pi \omega/2a}\Gamma\left( \frac{i\omega}{a} \right)\left(\frac{\omega _{\vec{k}}+k_{x}}{a}\right)^{-i\omega/a}\left(2\pi\right)^{(d-2)/2}\delta ^{d-2}\left(\vec{k}_{\bot}-\vec{k}'_{\bot}\right) \\
+\beta _{\omega,\vec{k}_{\bot};\vec{k}} & =e^{-\pi \omega/a}\alpha _{\omega,\vec{k}_{\bot};\vec{k}}
 \end{align}$$
 
-### Bogoliubov coefficients (explicit form)
+where $\displaystyle{\vec{k}'_{\bot}}$ is the transverse component of $\displaystyle{\vec{k}}$. expectation value of Rindler number operator in the Minkowski vacuum is
 
-Introduce $\vec{k}=(k_x,\vec{k}_{\bot})$ and $\omega_{\vec{k}}=\sqrt{k_x^{2}+k_{\bot}^{2}+m^{2}}$. Restrict a positive-frequency Minkowski plane wave $\varphi_{\vec{k}}$ to the right Rindler wedge and decompose it in the Rindler basis $\phi_{\omega,\vec{k}_{\bot}}$. Performing the standard Mellin transform (steps omitted) gives
-$$
-\alpha_{\omega,\vec{k}_{\bot};\vec{k}} = \frac{1}{2\pi a}\sqrt{\frac{\omega}{\omega_{\vec{k}}}}\; e^{\frac{\pi \omega}{2a}}\; \Gamma\!\left(\frac{i\omega}{a}\right) \left(\frac{\omega_{\vec{k}}+k_x}{a}\right)^{-\frac{i\omega}{a}} (2\pi)^{\frac{d-2}{2}}\,\delta^{d-2}(\vec{k}_{\bot}-\vec{k}'_{\bot})
-$$
-$$
-\beta_{\omega,\vec{k}_{\bot};\vec{k}} = \frac{1}{2\pi a}\sqrt{\frac{\omega}{\omega_{\vec{k}}}}\; e^{-\frac{\pi \omega}{2a}}\; \Gamma\!\left(\frac{i\omega}{a}\right) \left(\frac{\omega_{\vec{k}}+k_x}{a}\right)^{-\frac{i\omega}{a}} (2\pi)^{\frac{d-2}{2}}\,\delta^{d-2}(\vec{k}_{\bot}-\vec{k}'_{\bot})
-$$
-They satisfy the universal thermal ratio
-$$
-\beta_{\omega,\vec{k}_{\bot};\vec{k}} = e^{-\pi \omega/a}\,\alpha_{\omega,\vec{k}_{\bot};\vec{k}},\qquad \frac{|\beta|^{2}}{|\alpha|^{2}} = e^{-2\pi \omega/a}.
-$$
+$$\begin{align}
+\braket{ \Omega _{\text{M}}|a^{\dagger}_{\omega,\vec{k}_{\bot}}a_{\omega,\vec{k}_{\bot}}|\Omega _{\text{M}} }  & = \frac{\delta(\omega-\omega')\delta ^{d-2}(\vec{k}_{\bot}-\vec{k}'_{\bot})}{e^{2\pi \omega/a}-1}
+\end{align}$$
 
-Expectation value of Rindler number operator in the Minkowski vacuum:
-$$
-\langle 0_M| a^{\dagger}_{\omega,\vec{k}_{\bot}} a_{\omega',\vec{k}'_{\bot}} |0_M \rangle = \frac{\delta(\omega-\omega')\,\delta^{d-2}(\vec{k}_{\bot}-\vec{k}'_{\bot})}{e^{2\pi \omega/a}-1},\qquad T_U=\frac{a}{2\pi}.
-$$
-
-Sketch of derivation (for later fill-in):
-1. Write $\varphi_{\vec{k}}= ( (2\pi)^{d-1}2\omega_{\vec{k}})^{-1/2} e^{-i\omega_{\vec{k}} t + i k_x x + i\vec{k}_{\bot}\cdot\vec{x}_{\bot}}$ and restrict to $x>|t|$.
-2. Substitute $t=\xi\sinh a\eta$, $x=\xi\cosh a\eta$ so $t\pm x = \xi e^{\pm a\eta}$.
-3. Recognize dependence $\exp\{-i(\omega_{\vec{k}}+k_x)\xi e^{-a\eta}/2 - i(\omega_{\vec{k}}-k_x)\xi e^{a\eta}/2\}$.
-4. Expand this in $e^{-i\omega \eta}$ via Mellin transform: $\int_0^{\infty} d\xi\, \xi^{i\omega/a -1} K_{i\omega/a}(\kappa \xi)$ gives Gamma factors.
-5. Read off $\alpha,\beta$ from Klein–Gordon inner products with $\phi_{\omega,\vec{k}_{\bot}}$ and $\phi^{*}_{\omega,\vec{k}_{\bot}}$.
-
-Note: Overall phase conventions or alternative normalizations of $\phi_{\omega,\vec{k}_{\bot}}$ modify prefactors but not the thermal ratio.
-
+which is exactly a thermal distribution with Unruh temperature $\displaystyle{T=\frac{a}{2\pi}}$.
