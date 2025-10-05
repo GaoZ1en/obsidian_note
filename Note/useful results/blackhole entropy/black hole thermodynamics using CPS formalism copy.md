@@ -158,30 +158,48 @@ N_{\phi} & =-\frac{J}{2r^{2}}
 where $\displaystyle{\Lambda=-\frac{1}{\ell ^{2}}}$. the horizon is located at $\displaystyle{r_{\pm}^{2}=\frac{M\ell ^{2}}{2}\left(1\pm \sqrt{ 1-\frac{J^{2}}{M^{2}\ell ^{2}} }\right)}$. the angular velocity of the horizon is $\displaystyle{\Omega _{H}=\frac{J}{2r_{+}^{2}}}$. the surface gravity is given by
 
 $$\begin{align}
+\kappa & =\frac{1}{2\sqrt{ g_{rr} }}\partial _{r}(\chi ^{2}))\Big|_{r=r_{+}} \\
+ & =\frac{1}{2\sqrt{ g_{rr} }}\partial _{r}(N^{2}))\Big|_{r=r_{+}}
+\end{align}$$
+
+notice that
+
+$$\begin{align}
+N^{2} & =\frac{f(r)}{\ell r^{2}} \\
+ & =\frac{(r^{2}-r_{+}^{2})(r^{2}-r_{-}^{2})}{\ell ^{2}r^{2}}
+\end{align}$$
+
+$$\begin{align}
 g_{\mu \nu} & =\begin{pmatrix}
 r^{2}N_{\phi}^{2}-N^{2} & 0 & r^{2}N_{\phi} \\
 0 & \frac{1}{N^{2}} & 0 \\
 r^{2}N_{\phi} & 0 & r^{2}
-\end{pmatrix} \\
-g^{\mu \nu} & =\begin{pmatrix}
--\frac{1}{N^{2}} & 0 & \frac{N_{\phi}}{N^{2}} \\
-0 & N^{2} & 0 \\
-\frac{N_{\phi}}{N^{2}} & 0 & \frac{1}{r^{2}}-\frac{N_{\phi}^{2}}{N^{2}}
 \end{pmatrix}
 \end{align}$$
 
+here we use
+
+$$\begin{align}
+\xi ^{2} & =g_{tt}+2\Omega _{H}g_{t\phi}+\Omega _{H}^{2}g_{\phi \phi} \\
+ & =r^{2}N_{\phi}^{2}-N^{2}+2\Omega _{H}r^{2}N_{\phi}+\Omega _{H}^{2}r^{2} \\
+ & =-N^{2}+r^{2}(N_{\phi}+\Omega _{H})^{2}
+\end{align}$$
+
+$$\begin{align}
+\kappa & =-\frac{1}{2\sqrt{ g_{rr} }}\partial _{r}(\xi ^{2})\Big|_{r=r_{+}} \\
+ & =-\frac{N}{2}\partial _{r}(-N^{2})|_{r=r_{+}} \\
+ & =N^{2}N'|_{r=r_{+}} \\
+ & =
+\end{align}$$
+
+$$\tag{.}\begin{align}
+N^{2} & =-M+\frac{r^{2}}{\ell ^{2}}+\frac{J^{2}}{4r^{2}} \\
+2N N' & =\frac{2r_{+}}{\ell ^{2}}-\frac{J^{2}}{2r_{+}^{3}}
+\end{align}$$
 
 
 
 where $\displaystyle{\xi ^{a}=t^{a}+\Omega _{H}\phi^{a}}$ is the horizon Killing vector
-
-$$\tag{.}\begin{align}
-\nabla _{a}(\xi ^{2}) & =-2\kappa \xi _{a} \\
-\kappa & =-\frac{1}{2}\frac{\nabla _{a}(\xi ^{2})}{\xi _{a}} \\
- & =\left. \frac{1}{2}\partial _{r}(N^{2}-r^{2}N_{\phi}^{2}) \right|_{r=r_{+}} \\
- & =\frac{r_{+}^{2}-r_{-}^{2}}{\ell ^{2}r_{+}}
-\end{align}$$
-
 
 
 ## BTZ thermodynamics using covariant phase space formalism
