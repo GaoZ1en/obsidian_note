@@ -110,6 +110,21 @@ ds^2 &= -\left(1 - \frac{2Mr}{\Sigma}\right) dt^2 - \frac{4Mar \sin^2\theta}{\Si
 \Sigma &= r^2 + a^2 \cos^2\theta, \qquad \Delta = r^2 - 2Mr + a^2.
 \end{aligned}$$
 
+$$\begin{align}
+\Delta & =r^{2}-2Mr+a^{2} \\
+r_{\pm} & =M\pm \sqrt{ M^{2}-a^{2} }
+\end{align}$$
+
+$$\begin{align}
+\kappa & =-\frac{1}{2}\partial _{r}(\chi ^{2})|_{r=r_{+}} \\
+\end{align}$$
+
+$$\begin{align}
+\xi ^{2} & =g_{tt}+2\Omega _{H}g_{t\phi}+\Omega _{H}^{2}g_{\phi \phi} \\
+ & =-\left( 1-\frac{2Mr}{\Sigma} \right)+2\Omega _{H}\left( -\frac{2Mar\sin ^{2}\theta}{\Sigma} \right)+\Omega _{H}^{2}\left( \frac{\left[ (r^{2}+a^{2})^{2}-a^{2}\Delta \sin ^{2}\theta \right]\sin ^{2}\theta}{\Sigma} \right) \\
+ & =
+\end{align}$$
+
 视界半径：$\Delta(r_+) = 0 \Rightarrow r_+ = M + \sqrt{M^2 - a^2}$；内视界 $r_- = M - \sqrt{M^2 - a^2}$。
 
 角速度：
@@ -256,3 +271,64 @@ $$\boxed{\kappa_{\text{BTZ}} = \frac{r_+^2 - r_-^2}{\ell^2 r_+}}.$$
 
 ---
 
+KNAdS blackhole
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-\frac{\Delta _{r}}{\rho ^{2}}\left(\mathrm{d}t-\frac{a\sin ^{2}\theta}{\Xi}\mathrm{d}\phi\right)^{2}+\frac{\rho ^{2}}{\Delta _{r}}\mathrm{d}r^{2}+\frac{\rho ^{2}}{\Delta _{\theta}}\mathrm{d}\theta ^{2}+\frac{\Delta _{\theta}\sin ^{2}\theta}{\rho ^{2}}\left(a\mathrm{d}t-\frac{r^{2}+a^{2}}{\Xi}\mathrm{d}\phi\right)^{2} \\
+A & =-\frac{Qr}{\rho ^{2}\Xi}\left( \mathrm{d}t-\frac{a\sin ^{2}\theta}{\Xi}\mathrm{d}\phi \right) \\
+\rho ^{2} & =r^{2}+a^{2}\cos ^{2}\theta \\
+\Delta _{r} & =r^{2}-2Mr+a^{2}+Q^{2}+\frac{r^{2}(r^{2}+a^{2})}{\ell ^{2}} \\
+\Delta _{\Theta} & =1-\frac{a^{2}\cos ^{2}\theta}{\ell ^{2}} \\
+\Xi & =1-\frac{a^{2}}{\ell ^{2}}
+\end{align}$$
+
+define the following Boyer-Lindquist type coordinates
+
+$$\begin{align}
+\mathrm{d}v & =\mathrm{d}t+ \frac{\rho ^{2}\mathrm{d}r}{\Delta _{r}}\\
+\mathrm{d}\varphi & =\mathrm{d}\phi+ \frac{a\rho ^{2}\Xi}{r^{2}+a^{2}}\mathrm{d}r
+\end{align}$$
+
+then the metric becomes
+
+$$\tag{.}\begin{align}
+\mathrm{d}s^{2} & =-\frac{\Delta _{r}}{\rho ^{2}}\left(\mathrm{d}t-\frac{a\sin ^{2}\theta}{\Xi}\mathrm{d}\phi\right)^{2}+\frac{\rho ^{2}}{\Delta _{r}}\mathrm{d}r^{2}+\frac{\rho ^{2}}{\Delta _{\theta}}\mathrm{d}\theta ^{2}+\frac{\Delta _{\theta}\sin ^{2}\theta}{\rho ^{2}}\left(a\mathrm{d}t-\frac{r^{2}+a^{2}}{\Xi}\mathrm{d}\phi\right)^{2}
+\end{align}$$
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-\frac{\Delta _{r}}{\rho ^{2}}\left(\mathrm{d}v-\frac{\rho ^{2}}{\Delta _{r}}\mathrm{d}r-\frac{a\sin ^{2}\theta}{\Xi}\left(\mathrm{d}\varphi-\frac{a\rho ^{2}\Xi}{r^{2}+a^{2}}\mathrm{d}r\right)\right)^{2}+\frac{\rho ^{2}}{\Delta _{r}}\mathrm{d}r^{2}+\frac{\rho ^{2}}{\Delta _{\Theta}}\mathrm{d}\theta ^{2}+\frac{\Delta _{\theta}\sin ^{2}\theta}{\rho ^{2}}\left(a\mathrm{d}v-\frac{r^{2}+a^{2}}{\Xi}\mathrm{d}\varphi\right)^{2} \\
+ & =-\frac{\Delta _{r}}{\rho ^{2}}\left(\mathrm{d}v-\frac{a\sin ^{2}\theta}{\Xi}\mathrm{d}\varphi-\frac{\rho ^{2}}{\Delta _{r}}\mathrm{d}r+\frac{a^{2}\rho ^{2}\sin ^{2}\theta}{r^{2}+a^{2}}\mathrm{d}r\right)^{2}+\frac{\rho ^{2}}{\Delta _{r}}\mathrm{d}r^{2}+\frac{\rho ^{2}}{\Delta _{\theta}}\mathrm{d}\theta ^{2}+\frac{\Delta _{\theta}\sin ^{2}\theta}{\rho ^{2}}\left(a\mathrm{d}v-\frac{r^{2}+a^{2}}{\Xi}\mathrm{d}\varphi\right)^{2} \\
+ & =-\frac{\Delta _{r}}{\rho ^{2}}\left(\mathrm{d}v-\frac{a\sin ^{2}\theta}{\Xi}\mathrm{d}\varphi\right)+2\mathrm{d}r\left( \mathrm{d}v-\frac{a\sin ^{2}\theta}{\Xi} +\frac{a^{2}\rho ^{2}\sin ^{2}\theta}{r^{2}+a^{2}}\mathrm{d}r\right)+\dots
+\end{align}$$
+
+$$\begin{align}
+\Delta _{r} & =r^{2}-2Mr+a^{2}+Q^{2}+\frac{r^{2}(r^{2}+a^{2})}{\ell ^{2}} \\
+ & =\frac{1}{\ell ^{2}}(r-r_{+})(r-r_{-})(r^{2}+ar+b) \\
+\kappa & =-\frac{1}{2}\partial _{r}(\xi ^{2})|_{H} \\
+ & =\frac{1}{2}\partial _{r}\left( \frac{\Delta _{r}}{r^{2}+a^{2}} \right) |_{H} \\
+ & =
+\end{align}$$
+
+$$\begin{align}
+\xi ^{2} & =g_{tt}+2\Omega _{H}g_{t\phi}+\Omega _{H}^{2}g_{\phi \phi}|_{H} \\
+ & =-\frac{\Delta _{r}}{\rho ^{2}}\left(1-\frac{a\sin ^{2}\theta}{\Xi}\Omega _{H}\right)^{2} \\
+\end{align}$$
+
+$$\begin{align}
+\xi ^{a} & =t^{a}+\Omega _{H}\phi ^{a}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+\mathrm{d}s^{2} & =-\frac{\Delta _{r}}{\rho ^{2}}\left(\mathrm{d}t-\frac{a\sin ^{2}\theta}{\Xi}\mathrm{d}\phi\right)^{2}+\frac{\rho ^{2}}{\Delta _{r}}\mathrm{d}r^{2}+\frac{\rho ^{2}}{\Delta _{\theta}}\mathrm{d}\theta ^{2}+\frac{\Delta _{\theta}\sin ^{2}\theta}{\rho ^{2}}\left(a\mathrm{d}t-\frac{r^{2}+a^{2}}{\Xi}\mathrm{d}\phi\right)^{2}
+\end{align}$$
+
+$$\begin{align}
+\xi ^{2}|_{H} & =0\implies \Omega _{H} & =\frac{a\Xi}{r_{+}^{2}+a^{2}}
+\end{align}$$
+
+define
+
+$$\begin{align}
+\kappa & =-\frac{1}{2}\partial _{r}(\xi ^{2})|_{H} \\
+ & =
+\end{align}$$
