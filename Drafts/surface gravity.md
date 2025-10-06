@@ -304,31 +304,57 @@ $$\begin{align}
 $$\begin{align}
 \Delta _{r} & =r^{2}-2Mr+a^{2}+Q^{2}+\frac{r^{2}(r^{2}+a^{2})}{\ell ^{2}} \\
  & =\frac{1}{\ell ^{2}}(r-r_{+})(r-r_{-})(r^{2}+ar+b) \\
-\kappa & =-\frac{1}{2}\partial _{r}(\xi ^{2})|_{H} \\
- & =\frac{1}{2}\partial _{r}\left( \frac{\Delta _{r}}{r^{2}+a^{2}} \right) |_{H} \\
- & =
+\kappa & =\frac{1}{2}(r_{+}-r_{-})\frac{r_{+}^{2}+ar_{+}+b}{\ell ^{2}(r_{+}^{2}+a^{2})}
 \end{align}$$
 
 $$\begin{align}
-\xi ^{2} & =g_{tt}+2\Omega _{H}g_{t\phi}+\Omega _{H}^{2}g_{\phi \phi}|_{H} \\
- & =-\frac{\Delta _{r}}{\rho ^{2}}\left(1-\frac{a\sin ^{2}\theta}{\Xi}\Omega _{H}\right)^{2} \\
+\kappa & =-\frac{1}{2}\partial _{r}(\chi ^{2})|_{r=r_{+}} \\
 \end{align}$$
 
 $$\begin{align}
-\xi ^{a} & =t^{a}+\Omega _{H}\phi ^{a}
+\mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}(a\mathrm{d}t-(r^{2}+a^{2})\mathrm{d}\phi)^{2} \\
+\Delta & =r^{2}-2Mr+a^{2}+Q^{2} \\
+\Sigma & =r^{2}+a^{2}\cos ^{2}\theta \\
+A & =-\frac{Qr}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)
+\end{align}$$
+
+turn to the Boyer-Lindquist type coordinates
+
+$$\begin{align}
+\mathrm{d}v & =\mathrm{d}t+\frac{\Sigma}{\Delta}\mathrm{d}r \\
+\mathrm{d}\varphi & =\mathrm{d}t+\frac{a\Sigma}{\Delta(r^{2}+a^{2})}\mathrm{d}r
+\end{align}$$
+
+the metric becomes
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}\left( \mathrm{d}v+\frac{\Sigma}{\Delta} \mathrm{d}r-a\sin ^{2}\theta \left( \mathrm{d}\varphi+\frac{a\Sigma}{\Delta(r^{2}+a^{2})}\mathrm{d}r \right) \right)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(a\mathrm{d}v-(r^{2}+a^{2})\mathrm{d}\varphi\right)^{2} \\
+ & =-\frac{\Delta}{\Sigma}\left(\mathrm{d}v-a\sin ^{2}\theta \mathrm{d}\varphi+\frac{\Sigma}{\Delta}\mathrm{d}r-\frac{a^{2}\sin ^{2}\theta \Sigma}{\Delta(r^{2}+a^{2})}\mathrm{d}r\right)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(a\mathrm{d}v-(r^{2}+a^{2})\mathrm{d}\varphi\right)^{2} \\
+ & =-\frac{\Delta}{\Sigma}(\mathrm{d}v-a\sin ^{2}\theta \mathrm{d}\varphi)^{2}+\frac{\sin ^{2}\theta}{\Sigma}(a\mathrm{d}v-(r^{2}+a^{2})\mathrm{d}\varphi)^{2}+\dots
+\end{align}$$
+
+the horizon is located at $\displaystyle{\Delta(r_{\pm})=0\implies r_{\pm}=M\pm \sqrt{ M^{2}-a^{2}-Q^{2} }}$.
+
+the horizon Killing vector $\displaystyle{\xi ^{a}=v^{a}+\Omega _{H}\varphi ^{a}}$ vanishes on the horizon, where $\displaystyle{\Omega _{H}=\frac{a}{r_{+}^{2}+a^{2}}}$. the surface gravity is given by
+
+$$\begin{align}
+\kappa & =-\frac{1}{2}\partial _{r}\xi _{v}|_{r=r_{+},\theta=0} \\
+ & =-\frac{1}{2}\left(-\frac{r_{+}-r_{-}}{r_{+}^{2}+a^{2}}\left( \frac{r_{+}^{2}-a^{2}}{r_{+}^{2}+a^{2}} \right)-\frac{a^{2}}{r_{+}^{2}+a^{2}}\right)
 \end{align}$$
 
 $$\tag{.}\begin{align}
-\mathrm{d}s^{2} & =-\frac{\Delta _{r}}{\rho ^{2}}\left(\mathrm{d}t-\frac{a\sin ^{2}\theta}{\Xi}\mathrm{d}\phi\right)^{2}+\frac{\rho ^{2}}{\Delta _{r}}\mathrm{d}r^{2}+\frac{\rho ^{2}}{\Delta _{\theta}}\mathrm{d}\theta ^{2}+\frac{\Delta _{\theta}\sin ^{2}\theta}{\rho ^{2}}\left(a\mathrm{d}t-\frac{r^{2}+a^{2}}{\Xi}\mathrm{d}\phi\right)^{2}
+\xi _{v} & =g_{v \nu}\xi ^{\nu} \\
+ & =g_{vv}+\Omega _{H}g_{v\varphi}
 \end{align}$$
 
 $$\begin{align}
-\xi ^{2}|_{H} & =0\implies \Omega _{H} & =\frac{a\Xi}{r_{+}^{2}+a^{2}}
+\mathrm{d}s^{2} & =-\left( 1-\frac{2M}{r} \right)\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1-\frac{2M}{r}}+r^{2}\mathrm{d}\Omega _{2}^{2}
 \end{align}$$
 
-define
-
 $$\begin{align}
-\kappa & =-\frac{1}{2}\partial _{r}(\xi ^{2})|_{H} \\
- & =
+\xi _{v} & =g_{vv}=-\frac{r-2M}{r}
+\end{align}$$
+
+$$\tag{.}\begin{align}
+
 \end{align}$$

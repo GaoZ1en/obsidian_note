@@ -27229,6 +27229,26 @@
         "charCountStart": 0,
         "changes": [
           {
+            "timeKey": "00:00",
+            "w": 70,
+            "c": 449
+          },
+          {
+            "timeKey": "00:05",
+            "w": 155,
+            "c": 901
+          },
+          {
+            "timeKey": "00:10",
+            "w": 15,
+            "c": 89
+          },
+          {
+            "timeKey": "00:15",
+            "w": -2,
+            "c": 0
+          },
+          {
             "timeKey": "11:30",
             "w": 12,
             "c": 86
@@ -27277,9 +27297,627 @@
             "timeKey": "18:10",
             "w": 128,
             "c": 718
+          },
+          {
+            "timeKey": "20:55",
+            "w": 40,
+            "c": 232
+          },
+          {
+            "timeKey": "21:00",
+            "w": 93,
+            "c": 593
+          },
+          {
+            "timeKey": "21:05",
+            "w": 96,
+            "c": 597
+          },
+          {
+            "timeKey": "21:10",
+            "w": 14,
+            "c": 93
+          },
+          {
+            "timeKey": "21:15",
+            "w": 4,
+            "c": 33
+          },
+          {
+            "timeKey": "21:20",
+            "w": 112,
+            "c": 754
+          },
+          {
+            "timeKey": "21:25",
+            "w": 18,
+            "c": 122
+          },
+          {
+            "timeKey": "21:30",
+            "w": 92,
+            "c": 488
+          },
+          {
+            "timeKey": "21:35",
+            "w": 92,
+            "c": 545
+          },
+          {
+            "timeKey": "21:40",
+            "w": 5,
+            "c": 36
+          },
+          {
+            "timeKey": "21:45",
+            "w": 6,
+            "c": 53
+          },
+          {
+            "timeKey": "21:50",
+            "w": 77,
+            "c": 462
+          },
+          {
+            "timeKey": "21:55",
+            "w": 94,
+            "c": 608
+          },
+          {
+            "timeKey": "22:00",
+            "w": 142,
+            "c": 895
+          },
+          {
+            "timeKey": "22:05",
+            "w": 84,
+            "c": 449
+          },
+          {
+            "timeKey": "22:10",
+            "w": 100,
+            "c": 563
+          },
+          {
+            "timeKey": "22:15",
+            "w": 111,
+            "c": 650
+          },
+          {
+            "timeKey": "22:20",
+            "w": 159,
+            "c": 908
+          },
+          {
+            "timeKey": "22:25",
+            "w": 127,
+            "c": 729
+          },
+          {
+            "timeKey": "22:30",
+            "w": 68,
+            "c": 447
+          },
+          {
+            "timeKey": "22:35",
+            "w": 140,
+            "c": 877
+          },
+          {
+            "timeKey": "22:40",
+            "w": 139,
+            "c": 924
+          },
+          {
+            "timeKey": "22:45",
+            "w": 273,
+            "c": 1543
+          },
+          {
+            "timeKey": "22:50",
+            "w": 216,
+            "c": 1026
+          },
+          {
+            "timeKey": "22:55",
+            "w": 12,
+            "c": 66
+          },
+          {
+            "timeKey": "23:00",
+            "w": 102,
+            "c": 537
+          },
+          {
+            "timeKey": "23:10",
+            "w": 91,
+            "c": 560
+          },
+          {
+            "timeKey": "23:15",
+            "w": 4,
+            "c": 27
+          },
+          {
+            "timeKey": "23:20",
+            "w": 43,
+            "c": 217
+          },
+          {
+            "timeKey": "23:25",
+            "w": 34,
+            "c": 251
+          },
+          {
+            "timeKey": "23:30",
+            "w": 24,
+            "c": 179
+          },
+          {
+            "timeKey": "23:35",
+            "w": 35,
+            "c": 271
+          },
+          {
+            "timeKey": "23:40",
+            "w": 62,
+            "c": 394
+          },
+          {
+            "timeKey": "23:45",
+            "w": 3,
+            "c": 20
+          },
+          {
+            "timeKey": "23:50",
+            "w": 86,
+            "c": 458
+          },
+          {
+            "timeKey": "23:55",
+            "w": 2,
+            "c": 21
           }
         ],
         "id": 896
+      },
+      {
+        "date": "2025-10-03",
+        "filePath": "Articles/Proca in AdS3/constraint systems.md",
+        "wordCountStart": 1258,
+        "charCountStart": 8366,
+        "changes": [
+          {
+            "timeKey": "22:10",
+            "w": -56,
+            "c": -410
+          },
+          {
+            "timeKey": "23:05",
+            "w": -131,
+            "c": -210
+          },
+          {
+            "timeKey": "23:10",
+            "w": 5,
+            "c": 38
+          }
+        ],
+        "id": 897
+      },
+      {
+        "date": "2025-10-04",
+        "filePath": "Articles/Ryu-Takayanagi formula/Unruh effect.md",
+        "wordCountStart": 288,
+        "charCountStart": 2622,
+        "changes": [
+          {
+            "timeKey": "00:00",
+            "w": -328,
+            "c": -1748
+          },
+          {
+            "timeKey": "22:20",
+            "w": -255,
+            "c": -2469
+          },
+          {
+            "timeKey": "22:25",
+            "w": 90,
+            "c": 529
+          },
+          {
+            "timeKey": "22:30",
+            "w": 83,
+            "c": 477
+          },
+          {
+            "timeKey": "22:35",
+            "w": 116,
+            "c": 635
+          },
+          {
+            "timeKey": "22:40",
+            "w": 86,
+            "c": 496
+          },
+          {
+            "timeKey": "22:45",
+            "w": 372,
+            "c": 2909
+          },
+          {
+            "timeKey": "22:50",
+            "w": 44,
+            "c": 196
+          },
+          {
+            "timeKey": "22:55",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "23:00",
+            "w": 47,
+            "c": 239
+          },
+          {
+            "timeKey": "23:05",
+            "w": -11,
+            "c": -419
+          },
+          {
+            "timeKey": "23:10",
+            "w": 38,
+            "c": -41
+          },
+          {
+            "timeKey": "23:15",
+            "w": 40,
+            "c": 159
+          },
+          {
+            "timeKey": "23:20",
+            "w": -199,
+            "c": -1477
+          },
+          {
+            "timeKey": "23:25",
+            "w": 291,
+            "c": 2648
+          },
+          {
+            "timeKey": "23:35",
+            "w": -348,
+            "c": -2929
+          },
+          {
+            "timeKey": "23:40",
+            "w": 188,
+            "c": 922
+          },
+          {
+            "timeKey": "23:45",
+            "w": 33,
+            "c": 155
+          },
+          {
+            "timeKey": "23:50",
+            "w": -11,
+            "c": -63
+          },
+          {
+            "timeKey": "23:55",
+            "w": 469,
+            "c": 2510
+          }
+        ],
+        "id": 898
+      },
+      {
+        "date": "2025-10-04",
+        "filePath": "Articles/Proca in AdS3/constraint systems.md",
+        "wordCountStart": 1076,
+        "charCountStart": 7784,
+        "changes": [],
+        "id": 899
+      },
+      {
+        "date": "2025-10-04",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6040,
+        "charCountStart": 25721,
+        "changes": [],
+        "id": 900
+      },
+      {
+        "date": "2025-10-04",
+        "filePath": "Drafts/path integral quantization for first and second class constraints.md",
+        "wordCountStart": 4746,
+        "charCountStart": 33470,
+        "changes": [],
+        "id": 901
+      },
+      {
+        "date": "2025-10-05",
+        "filePath": "Articles/Proca in AdS3/constraint systems.md",
+        "wordCountStart": 1076,
+        "charCountStart": 7785,
+        "changes": [],
+        "id": 902
+      },
+      {
+        "date": "2025-10-05",
+        "filePath": "Articles/Proca in AdS3/quantization of gauge systems.md",
+        "wordCountStart": 3725,
+        "charCountStart": 22006,
+        "changes": [],
+        "id": 903
+      },
+      {
+        "date": "2025-10-05",
+        "filePath": "Drafts/path integral quantization for first and second class constraints.md",
+        "wordCountStart": 4746,
+        "charCountStart": 33470,
+        "changes": [],
+        "id": 904
+      },
+      {
+        "date": "2025-10-05",
+        "filePath": "Drafts/Untitled 1.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "16:10",
+            "w": 70,
+            "c": 314
+          },
+          {
+            "timeKey": "16:15",
+            "w": 598,
+            "c": 3613
+          }
+        ],
+        "id": 905
+      },
+      {
+        "date": "2025-10-05",
+        "filePath": "Drafts/Untitled.md",
+        "wordCountStart": 2742,
+        "charCountStart": 21182,
+        "changes": [
+          {
+            "timeKey": "16:25",
+            "w": -2742,
+            "c": -21182
+          }
+        ],
+        "id": 906
+      },
+      {
+        "date": "2025-10-05",
+        "filePath": "Note/useful results/blackhole entropy/black hole thermodynamics using CPS formalism copy.md",
+        "wordCountStart": 2871,
+        "charCountStart": 15007,
+        "changes": [
+          {
+            "timeKey": "16:45",
+            "w": 0,
+            "c": -3
+          },
+          {
+            "timeKey": "16:50",
+            "w": 31,
+            "c": 145
+          },
+          {
+            "timeKey": "20:25",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "20:35",
+            "w": -240,
+            "c": -1030
+          },
+          {
+            "timeKey": "20:40",
+            "w": 111,
+            "c": 476
+          },
+          {
+            "timeKey": "20:45",
+            "w": -94,
+            "c": -384
+          },
+          {
+            "timeKey": "21:10",
+            "w": -35,
+            "c": -140
+          },
+          {
+            "timeKey": "21:15",
+            "w": 46,
+            "c": 146
+          },
+          {
+            "timeKey": "21:20",
+            "w": 14,
+            "c": 71
+          },
+          {
+            "timeKey": "21:25",
+            "w": 79,
+            "c": 366
+          },
+          {
+            "timeKey": "21:30",
+            "w": -156,
+            "c": -679
+          },
+          {
+            "timeKey": "21:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 907
+      },
+      {
+        "date": "2025-10-05",
+        "filePath": "Reading/gravity/surface charge.md",
+        "wordCountStart": 1231,
+        "charCountStart": 7504,
+        "changes": [],
+        "id": 908
+      },
+      {
+        "date": "2025-10-05",
+        "filePath": "Drafts/surface gravity.md",
+        "wordCountStart": 1456,
+        "charCountStart": 10845,
+        "changes": [
+          {
+            "timeKey": "11:05",
+            "w": 8,
+            "c": 51
+          },
+          {
+            "timeKey": "20:50",
+            "w": 45,
+            "c": 200
+          },
+          {
+            "timeKey": "20:55",
+            "w": -1501,
+            "c": -11045
+          },
+          {
+            "timeKey": "21:00",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "21:05",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "21:10",
+            "w": 942,
+            "c": 8438
+          },
+          {
+            "timeKey": "21:25",
+            "w": 465,
+            "c": 3274
+          },
+          {
+            "timeKey": "21:35",
+            "w": 159,
+            "c": 773
+          },
+          {
+            "timeKey": "21:40",
+            "w": 204,
+            "c": 985
+          },
+          {
+            "timeKey": "21:45",
+            "w": 212,
+            "c": 999
+          },
+          {
+            "timeKey": "21:50",
+            "w": 145,
+            "c": 647
+          },
+          {
+            "timeKey": "21:55",
+            "w": 167,
+            "c": 774
+          },
+          {
+            "timeKey": "22:00",
+            "w": -189,
+            "c": -897
+          },
+          {
+            "timeKey": "22:05",
+            "w": 18,
+            "c": 91
+          }
+        ],
+        "id": 909
+      },
+      {
+        "date": "2025-10-05",
+        "filePath": "Note/useful results/blackhole entropy/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 910
+      },
+      {
+        "date": "2025-10-05",
+        "filePath": "Kerr-Newman-AdS.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 911
+      },
+      {
+        "date": "2025-10-05",
+        "filePath": "Note/useful results/blackhole entropy/KNAdS.md",
+        "wordCountStart": 4893,
+        "charCountStart": 30211,
+        "changes": [],
+        "id": 912
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Kerr-Newman-AdS.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 913
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Note/useful results/blackhole entropy/KNAdS.md",
+        "wordCountStart": 4893,
+        "charCountStart": 30211,
+        "changes": [
+          {
+            "timeKey": "11:10",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 915
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Literature Notes/Gravitational Entropy (2509.10921v1).md",
+        "wordCountStart": 3229,
+        "charCountStart": 16890,
+        "changes": [],
+        "id": 916
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Drafts/surface gravity.md",
+        "wordCountStart": 2131,
+        "charCountStart": 15135,
+        "changes": [
+          {
+            "timeKey": "11:10",
+            "w": 89,
+            "c": 421
+          }
+        ],
+        "id": 917
       }
     ],
     "daysWithCompletedGoal": [
@@ -27354,7 +27992,8 @@
       "2025-09-28",
       "2025-09-29",
       "2025-09-30",
-      "2025-10-02"
+      "2025-10-02",
+      "2025-10-04"
     ]
   }
 }
