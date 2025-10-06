@@ -321,16 +321,16 @@ A & =-\frac{Qr}{\Sigma}(\mathrm{d}t-a\sin ^{2}\theta \mathrm{d}\phi)
 turn to the Boyer-Lindquist type coordinates
 
 $$\begin{align}
-\mathrm{d}v & =\mathrm{d}t+\frac{\Sigma}{\Delta}\mathrm{d}r \\
-\mathrm{d}\varphi & =\mathrm{d}t+\frac{a\Sigma}{\Delta(r^{2}+a^{2})}\mathrm{d}r
+\mathrm{d}v & =\mathrm{d}t+\frac{r^{2}+a^{2}}{\Delta}\mathrm{d}r \\
+\mathrm{d}\varphi & =\mathrm{d}t+\frac{a}{\Delta}\mathrm{d}r
 \end{align}$$
 
 the metric becomes
 
 $$\begin{align}
-\mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}\left( \mathrm{d}v+\frac{\Sigma}{\Delta} \mathrm{d}r-a\sin ^{2}\theta \left( \mathrm{d}\varphi+\frac{a\Sigma}{\Delta(r^{2}+a^{2})}\mathrm{d}r \right) \right)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(a\mathrm{d}v-(r^{2}+a^{2})\mathrm{d}\varphi\right)^{2} \\
- & =-\frac{\Delta}{\Sigma}\left(\mathrm{d}v-a\sin ^{2}\theta \mathrm{d}\varphi+\frac{\Sigma}{\Delta}\mathrm{d}r-\frac{a^{2}\sin ^{2}\theta \Sigma}{\Delta(r^{2}+a^{2})}\mathrm{d}r\right)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(a\mathrm{d}v-(r^{2}+a^{2})\mathrm{d}\varphi\right)^{2} \\
- & =-\frac{\Delta}{\Sigma}(\mathrm{d}v-a\sin ^{2}\theta \mathrm{d}\varphi)^{2}+\frac{\sin ^{2}\theta}{\Sigma}(a\mathrm{d}v-(r^{2}+a^{2})\mathrm{d}\varphi)^{2}+\dots
+\mathrm{d}s^{2} & =-\frac{\Delta}{\Sigma}\left(\mathrm{d}v-\frac{r^{2}+a^{2}}{\Delta}\mathrm{d}r-a\sin ^{2}\theta \left( \mathrm{d}\varphi-\frac{a}{\Delta}\mathrm{d}r \right)\right)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(\mathrm{d}v-(r^{2}+a^{2})\mathrm{d}\varphi\right)^{2} \\
+ & =-\frac{\Delta}{\Sigma}\left(\mathrm{d}v-a\sin ^{2}\theta \mathrm{d}\varphi-\frac{\Sigma}{\Delta}\mathrm{d}r\right)^{2}+\frac{\Sigma}{\Delta}\mathrm{d}r^{2}+\Sigma \mathrm{d}\theta ^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(\mathrm{d}v-(r^{2}+a^{2})\mathrm{d}\varphi\right)^{2} \\
+ & =-\frac{\Delta}{\Sigma}(\mathrm{d}v-a\sin ^{2}\theta \mathrm{d}\varphi)^{2}+\frac{\sin ^{2}\theta}{\Sigma}\left(\mathrm{d}v-(r^{2}+a^{2})\mathrm{d}\varphi\right)^{2}-2\mathrm{d}r(\mathrm{d}v-a\sin ^{2}\theta \mathrm{d}\varphi)+\Sigma \mathrm{d}\theta ^{2}
 \end{align}$$
 
 the horizon is located at $\displaystyle{\Delta(r_{\pm})=0\implies r_{\pm}=M\pm \sqrt{ M^{2}-a^{2}-Q^{2} }}$.
@@ -338,23 +338,7 @@ the horizon is located at $\displaystyle{\Delta(r_{\pm})=0\implies r_{\pm}=M\pm 
 the horizon Killing vector $\displaystyle{\xi ^{a}=v^{a}+\Omega _{H}\varphi ^{a}}$ vanishes on the horizon, where $\displaystyle{\Omega _{H}=\frac{a}{r_{+}^{2}+a^{2}}}$. the surface gravity is given by
 
 $$\begin{align}
-\kappa & =-\frac{1}{2}\partial _{r}\xi _{v}|_{r=r_{+},\theta=0} \\
- & =-\frac{1}{2}\left(-\frac{r_{+}-r_{-}}{r_{+}^{2}+a^{2}}\left( \frac{r_{+}^{2}-a^{2}}{r_{+}^{2}+a^{2}} \right)-\frac{a^{2}}{r_{+}^{2}+a^{2}}\right)
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\xi _{v} & =g_{v \nu}\xi ^{\nu} \\
- & =g_{vv}+\Omega _{H}g_{v\varphi}
-\end{align}$$
-
-$$\begin{align}
-\mathrm{d}s^{2} & =-\left( 1-\frac{2M}{r} \right)\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1-\frac{2M}{r}}+r^{2}\mathrm{d}\Omega _{2}^{2}
-\end{align}$$
-
-$$\begin{align}
-\xi _{v} & =g_{vv}=-\frac{r-2M}{r}
-\end{align}$$
-
-$$\tag{.}\begin{align}
-
+\kappa & =-\frac{1}{2}\partial _{r}(\xi ^{2})|_{r=r_{+}} \\
+ & =-\frac{1}{2}\partial _{r}\left(\frac{\Delta}{\Sigma}\right)|_{r=r_{+}} \\
+ & =\frac{r_{+}-r_{-}}{2(r_{+}^{2}+a^{2})}
 \end{align}$$
