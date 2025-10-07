@@ -57,140 +57,155 @@ d_{k} & =\exp\left(i\theta _{k}\frac{\vec{n}_{k}\cdot \sigma}{2}\right)\begin{pm
 c_{k,a} \\
 c_{k,b}
 \end{pmatrix} \\
-\vec{n}_{k} & = \\
-\theta _{k}
+\theta _{k} & =2E(k) \\
+\vec{n}_{k} & =\frac{1}{E(k)}\begin{pmatrix}
+-t_{1}-t_{2}\cos k \\
+-t_{2}\sin k \\
+0
+\end{pmatrix}
 \end{align}$$
 
-then the ground state wave function can be written as
+then the Hamiltonian becomes
 
 $$\begin{align}
-\ket{\Psi} =\prod _{k}d ^{\dagger}_{k}\ket{0} 
+H & =\sum _{k}E(k)(d_{k,+}^{\dagger}d_{k,+}-d_{k,-}^{\dagger}d_{k,-}) 
 \end{align}$$
 
-## 求解 SSH 模型中的 $\theta_k$ 和 $\vec{n}_k$
+then the ground state is
 
-从你提供的 SSH 模型哈密顿量出发，我们需要将其写成标准的二能级系统形式来提取 Bloch 向量参数。
-
-### Step 1: 哈密顿量的标准形式
-
-从你的推导中，我们有：
-$$H(k) = -(t_1 + t_2\cos k)\sigma_x - t_2\sin k\sigma_y$$
-
-这可以写成：
-$$H(k) = \vec{h}_k \cdot \vec{\sigma}$$
-
-其中 $\vec{h}_k = (h_x, h_y, h_z)$ 是 Bloch 向量，$\vec{\sigma} = (\sigma_x, \sigma_y, \sigma_z)$ 是 Pauli 矩阵向量。
-
-### Step 2: 提取 Bloch 向量分量
-
-比较系数，我们得到：
 $$\begin{align}
-h_x &= -(t_1 + t_2\cos k) \\
-h_y &= -t_2\sin k \\
-h_z &= 0
+\ket{\psi}  & =\prod _{k}d_{k,-}^{\dagger}\ket{0} 
 \end{align}$$
 
-### Step 3: 计算 $\theta_k$ 和 $\vec{n}_k$
 
-Bloch 向量的模长为：
-$$|\vec{h}_k| = \sqrt{h_x^2 + h_y^2 + h_z^2} = \sqrt{(t_1 + t_2\cos k)^2 + t_2^2\sin^2 k}$$
+when $\displaystyle{t_{1}>t_{2}}$, the trajectory of $\displaystyle{\vec{n}_{k}}$ is just a arc, and when $\displaystyle{t_{2}>t_{1}}$, the trajectory of $\displaystyle{\vec{n}_{k}}$ is a full circle. so the topological non-trivial phase is $\displaystyle{t_{2}>t_{1}}$
 
-这正好等于你计算的能量本征值的绝对值：$|\vec{h}_k| = |E(k)|$
+![[Attachments/Pasted image 20251007194324.png]]
 
-因此：
-$$\boxed{\theta_k = 2|\vec{h}_k| = 2\sqrt{t_1^2 + t_2^2 + 2t_1t_2\cos k}}$$
+## stable edge states
 
-单位向量 $\vec{n}_k$ 为：
-$$\boxed{\vec{n}_k = \frac{\vec{h}_k}{|\vec{h}_k|} = \frac{1}{\sqrt{t_1^2 + t_2^2 + 2t_1t_2\cos k}} \begin{pmatrix} -(t_1 + t_2\cos k) \\ -t_2\sin k \\ 0 \end{pmatrix}}$$
+turn to open boundary system. for $\displaystyle{t_{1}=0}$, the Hamiltonian is
 
-### Step 4: 物理意义
-
-- **$\theta_k$**: 表示在 Bloch 球面上绕 $\vec{n}_k$ 轴的旋转角度，其大小正比于能隙
-- **$\vec{n}_k$**: 是 Bloch 球面上的单位向量，指向哈密顿量在赝自旋空间中的"磁场"方向
-
-### Step 5: 特殊情况验证
-
-当 $k = 0$ 时：
-$$\vec{n}_0 = \frac{-(t_1 + t_2), 0, 0}{|t_1 + t_2|} = (-\text{sgn}(t_1 + t_2), 0, 0)$$
-
-当 $k = \pi$ 时：
-$$\vec{n}_\pi = \frac{-(t_1 - t_2), 0, 0}{|t_1 - t_2|} = (-\text{sgn}(t_1 - t_2), 0, 0)$$
-
-这些结果在分析 [[拓扑相变]] 时非常重要，特别是在 $t_1 = t_2$ 时系统处于临界点。
-
-^cite{Su1979,Thouless1982}
-
-## 为什么可以将哈密顿量写成 $H(k) = \vec{h}_k \cdot \vec{\sigma}$ 形式？
-
-这是一个非常好的基础问题！让我从数学和物理两个角度来解释。
-
-### 数学基础：Pauli 矩阵的完备性
-
-**核心定理**：任何 $2 \times 2$ 厄米矩阵都可以唯一地表示为：
-$$H = h_0 I + h_x \sigma_x + h_y \sigma_y + h_z \sigma_z$$
-
-其中 $h_0, h_x, h_y, h_z \in \mathbb{R}$。
-
-**证明思路**：
-1. Pauli 矩阵 $\{I, \sigma_x, \sigma_y, \sigma_z\}$ 构成 $2 \times 2$ 复矩阵空间的一组基
-2. 任何 $2 \times 2$ 厄米矩阵有 4 个独立的实参数
-3. 因此这种分解是唯一的
-
-### Step 1: 具体验证 SSH 模型
-
-你的 SSH 哈密顿量：
-$$H(k) = \begin{pmatrix} 0 & -(t_1 + t_2 e^{-ik}) \\ -(t_1 + t_2 e^{ik}) & 0 \end{pmatrix}$$
-
-展开 $e^{\pm ik} = \cos k \pm i \sin k$：
-$$H(k) = \begin{pmatrix} 0 & -(t_1 + t_2\cos k) + it_2\sin k \\ -(t_1 + t_2\cos k) - it_2\sin k & 0 \end{pmatrix}$$
-
-现在比较 Pauli 矩阵：
 $$\begin{align}
-\sigma_x &= \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
-\sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad
-\sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+H & =\sum ^{L-1}_{j=1}\left(-t_{2}c^{\dagger}_{j,b}c_{j+1,a}-t_{2}c^{\dagger}_{j+1,a}c_{j,b}\right)
 \end{align}$$
 
-### Step 2: 系数提取
+define
 
-通过直接比较矩阵元素：
-$$H(k) = -(t_1 + t_2\cos k)\sigma_x - t_2\sin k\sigma_y + 0 \cdot \sigma_z$$
+$$\begin{align}
+\alpha _{j} & =\frac{1}{\sqrt{ 2 }}(c_{j+1,a}+c_{j,b}) \\
+\alpha _{j}^{\dagger} & =\frac{1}{\sqrt{ 2 }}(c_{j+1,a}^{\dagger}+c_{j,b}^{\dagger}), & j=1,2,\cdots,L-1
+\end{align}$$
 
-因此：
-$$\boxed{\vec{h}_k = (-(t_1 + t_2\cos k), -t_2\sin k, 0)}$$
+then the Hamiltonian can be diagonalized as
 
-### Step 3: 为什么这种分解有用？
+$$\begin{align}
+H & =\sum ^{L-1}_{j=1}-t_{2}(\alpha _{j}^{\dagger}\alpha _{j}-\alpha _{j}\alpha _{j}^{\dagger})
+\end{align}$$
 
-**1. 几何直观**：
-- $\vec{h}_k$ 可以视为"有效磁场"在赝自旋空间中的表示
-- Bloch 向量 $\vec{n}_k = \vec{h}_k/|\vec{h}_k|$ 在 Bloch 球面上的轨迹决定了拓扑性质
+$$\tag{.}\begin{align}
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}=U\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}U^{\dagger} \\
+U & =\frac{1}{\sqrt{ 2 }}p
+\end{align}$$
 
-**2. 能谱计算**：
-$$E_{\pm}(k) = \pm|\vec{h}_k| = \pm\sqrt{h_x^2 + h_y^2 + h_z^2}$$
+$$\begin{align}
+H & =-t_{2}\begin{pmatrix}
+0 & 0 & 0 & 0 & 0 & 0 & \dots \\
+0 & 0 & 1 & 0 & 0 & 0 & \dots \\
+0 & 1 & 0 & 0 & 0 & 0 & \dots \\
+0 & 0 & 0 & 0 & 1 & 0 & \dots \\
+0 & 0 & 0 & 1 & 0 & 0 & \dots \\
+0 & 0 & 0 & 0 & 0 & 0 & \dots
+\end{pmatrix}
+\end{align}$$
 
-**3. 拓扑不变量**：
-Berry 相位和 Chern 数可以通过 $\vec{n}_k$ 的几何性质计算：
-$$\gamma = \oint_C \vec{A}_k \cdot d\vec{k}$$
-其中 $\vec{A}_k$ 是 Berry 连接
 
-### Step 4: 物理图像
 
-**赝自旋表示**：
-- SSH 模型的两个格点（A, B）对应赝自旋的两个状态
-- $\sigma_x$ 对应 A-B 间的跃迁
-- $\sigma_y$ 对应 A-B 间的相位差
-- $\sigma_z$ 对应 A-B 间的能量差（SSH 中为零）
+## 矩阵表示
 
-### Step 5: 一般化意义
+在实空间基底$$\{c_{1,a}, c_{1,b}, c_{2,a}, c_{2,b}, \ldots, c_{L,a}, c_{L,b}\}$$下，哈密顿量的矩阵形式为：
 
-这种分解对所有具有两能级结构的系统都适用：
-- [[量子比特|Qubits]] 
-- [[自旋轨道耦合|Spin-orbit coupled systems]]
-- [[拓扑绝缘体|Topological insulators]] 的有效低能理论
-- [[超导体|Superconductors]] 的 BdG 哈密顿量
+$$H = \begin{pmatrix}
+0 & 0 & 0 & -t_2 & 0 & 0 & \cdots \\
+0 & 0 & 0 & 0 & 0 & 0 & \cdots \\
+0 & 0 & 0 & 0 & 0 & -t_2 & \cdots \\
+-t_2 & 0 & 0 & 0 & 0 & 0 & \cdots \\
+0 & 0 & 0 & 0 & 0 & 0 & \cdots \\
+0 & 0 & -t_2 & 0 & 0 & 0 & \cdots \\
+\vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \ddots
+\end{pmatrix}$$
 
-**关键洞察**：$SU(2)$ 群的生成元（Pauli 矩阵）自然地描述了所有二能级量子系统的物理。
+## 边缘态分析
 
-^cite{Kitaev2001,Thouless1982}
+### 左边缘态（零模）
 
-这就是为什么我们可以"这么做"——这不仅是数学上的便利，更反映了二能级系统的深层几何结构！
+观察哈密顿量结构，我们寻找满足$$H|\psi\rangle = 0$$的态。
+
+注意到：
+- $$c_{1,a}$$只与$$c_{2,b}$$耦合
+- $$c_{L,b}$$只与$$c_{L-1,a}$$耦合  
+- 这两个格点各自只有一个邻居
+
+尝试左边缘态：$$|\psi_L\rangle = c_{1,a}^\dagger |0\rangle$$
+
+验证：
+$$H c_{1,a}^\dagger |0\rangle = -t_2 c_{2,b}^\dagger c_{1,a} c_{1,a}^\dagger |0\rangle + t_2 c_{1,a}^\dagger c_{2,b} c_{1,a}^\dagger |0\rangle = 0$$
+
+因为$$c_{2,b}c_{1,a}^\dagger = c_{1,a}^\dagger c_{2,b}$$（不同格点反对易），且$$c_{2,b}|0\rangle = 0$$。
+
+### 右边缘态（零模）
+
+类似地，右边缘态为：$$|\psi_R\rangle = c_{L,b}^\dagger |0\rangle$$
+
+验证：
+$$H c_{L,b}^\dagger |0\rangle = -t_2 c_{L-1,a}^\dagger c_{L,b} c_{L,b}^\dagger |0\rangle + t_2 c_{L,b}^\dagger c_{L-1,a} c_{L,b}^\dagger |0\rangle = 0$$
+
+## 体态的求解
+
+对于体态，我们可以用类似的方法。系统实际上可以分解为独立的二聚体对：
+
+### 二聚体结构
+
+当$$t_1=0$$时，系统变成$$L-1$$个独立的二聚体：
+$$(c_{j,b}, c_{j+1,a})$$ for $$j = 1, 2, \ldots, L-1$$
+
+每个二聚体的哈密顿量为：
+$$H_{\text{dimer}} = -t_2(c_{j,b}^\dagger c_{j+1,a} + c_{j+1,a}^\dagger c_{j,b})$$
+
+其本征值为$$E = \pm t_2$$，对应的本征态为：
+- **成键态**（能量$$-t_2$$）：$$|\psi_-\rangle = \frac{1}{\sqrt{2}}(c_{j,b}^\dagger + c_{j+1,a}^\dagger)|0\rangle$$
+- **反键态**（能量$$+t_2$$）：$$|\psi_+\rangle = \frac{1}{\sqrt{2}}(c_{j,b}^\dagger - c_{j+1,a}^\dagger)|0\rangle$$
+
+## 多体基态
+
+$$t_1=0$$时的多体基态包含：
+
+1. **左边缘零模**：$$c_{1,a}^\dagger$$
+2. **所有二聚体的成键态**：$$\prod_{j=1}^{L-1} \frac{1}{\sqrt{2}}(c_{j,b}^\dagger + c_{j+1,a}^\dagger)$$
+3. **右边缘态空着**（$$c_{L,b}$$不被占据）
+
+因此，多体基态为：
+
+$$\boxed{|\Psi_0\rangle = c_{1,a}^\dagger \prod_{j=1}^{L-1} \frac{1}{\sqrt{2}}(c_{j,b}^\dagger + c_{j+1,a}^\dagger) |0\rangle}$$
+
+## 基态性质
+
+1. **粒子数**：$$N = 1 + (L-1) = L$$（半填充）
+2. **总能量**：$$E_0 = 0 + (L-1) \times (-t_2) = -(L-1)t_2$$
+3. **边缘态**：左边缘有一个被占据的零模，右边缘有一个空的零模
+
+## 物理图像
+
+这个结果完美展示了[[拓扑边缘态]]的特征：
+- 在拓扑非平凡相（$$t_2 > t_1 = 0$$）中
+- 系统两端各有一个零能边缘态
+- 左端被占据，右端为空
+- 这些边缘态是拓扑保护的，不会因为局部扰动而消失
+
+这是[[Su-Schrieffer-Heeger模型]]中[[体边对应]]原理的直接体现。
