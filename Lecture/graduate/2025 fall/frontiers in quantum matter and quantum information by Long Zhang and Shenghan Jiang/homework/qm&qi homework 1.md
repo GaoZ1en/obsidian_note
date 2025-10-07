@@ -56,26 +56,37 @@ $$\begin{align}
 \phi_k = \arctan \frac{t_{2}\sin k}{t_{1}+t_{2}\cos k}
 \end{align}$$
 
-we have
+and then
 
 $$\begin{align}
-\vec{n}_{k} & =(-\cos \phi_k,-\sin \phi_k,0) \\
+\vec{n}_{k} & =(-\sin \phi_k,\cos \phi_k,0) \\
 \theta _{k} & =\frac{\pi}{2}
 \end{align}$$
 
-Single-axis rotation with constant angle $\theta_k=\pi/2$ and axis perpendicular to $\hat d_k$:
-$$\hat d_k=\frac{1}{E(k)}(d_x,d_y,0)=(\cos\phi_k,\sin\phi_k,0),\qquad \vec n_k=(-\sin\phi_k,\cos\phi_k,0),\quad \theta_k=\frac{\pi}{2},$$
-$$U_k=\exp\left(i\frac{\theta_k}{2}\vec n_k\cdot \sigma\right),\qquad U_k H(k) U_k^{\dagger}=E(k)\sigma_z.$$
-(Earlier choosing $\vec n_k$ parallel to $\hat d_k$ fails to diagonalize $H(k)$.)
-
 define operators
-$$\begin{pmatrix} d_{k,+} \\ d_{k,-}\end{pmatrix}= U_k \begin{pmatrix} c_{k,a} \\ c_{k,b}\end{pmatrix},\qquad H=\sum_k E(k)\big(d_{k,+}^{\dagger}d_{k,+}-d_{k,-}^{\dagger}d_{k,-}\big).$$
-Half-filled ground state:
-$$\ket{\psi}=\prod_k d_{k,-}^{\dagger}\ket{0}.$$
 
-Topology: $(d_x(k),d_y(k))$ traces a circle of radius $t_2$ centered at $(-t_1,0)$. Winding number
-$$\nu = \frac{1}{2\pi}\int_{0}^{2\pi} dk\; \partial_k \phi_k = \begin{cases}1,& t_2>t_1,\\0,& t_2<t_1.\end{cases}$$
-Non-trivial phase: $t_2>t_1$.
+$$\tag{.}\begin{align}
+\begin{pmatrix}
+d_{k,+} \\
+d_{k,-}
+\end{pmatrix} & =\exp\left(i\frac{\theta_k}{2}\vec n_k\cdot \sigma\right)\begin{pmatrix}
+c_{k,a} \\
+c_{k,b}
+\end{pmatrix}
+\end{align}$$
+
+then the Hamiltonian becomes
+
+$$\begin{align}
+H & =\sum _{k}E(k)\left(d_{k,+}^{\dagger}d_{k,+}-d_{k,-}^{\dagger}d_{k,-}\right)
+\end{align}$$
+
+the ground state is obtained by filling all negative-energy states
+
+$$\begin{align}
+\ket{\psi} =\prod _{k}d_{k,-}^{\dagger}\ket{0}
+\end{align}$$
+the trajectory of $\displaystyle{\vec{n}_{k}}$ are shown in the following pictures. topological trivial phase: $\displaystyle{t_{1}>t_{2}}$, the winding number $\displaystyle{\nu=0}$; topological non-trivial phase: $\displaystyle{t_{1}<t_{2}}$, the winding number $\displaystyle{\nu=1}$.
 
 ![[Attachments/Pasted image 20251007194324.png]]
 
@@ -148,11 +159,8 @@ $$\begin{align}
 H & =\sum _{s}\left(-tc^{\dagger}_{1s}c_{2s}-tc^{\dagger}_{2s}c_{1s}\right)+U(n_{1\uparrow}n_{1\downarrow}+n_{2\uparrow}n_{2\downarrow})
 \end{align}$$
 
-the dimension of the full Hilbert space is $\displaystyle{4}$. if we restrict the number of particles to $\displaystyle{2}$, then the dimension of the Hilbert space is $\displaystyle{6}$. we can write down the basis as
-
-$$\begin{align}
-\left\{c_{1\downarrow}^{\dagger}c_{1\uparrow}^{\dagger}\ket{0},c_{2\downarrow}^{\dagger}c_{2\uparrow}^{\dagger}\ket{0},c_{1\downarrow}^{\dagger}c_{2\downarrow}^{\dagger}\ket{0},c_{1\downarrow}^{\dagger}c_{2\uparrow}^{\dagger}\ket{0},c_{1\uparrow}^{\dagger}c_{2\downarrow}^{\dagger}\ket{0},c_{1\uparrow}^{\dagger}c_{2\uparrow}^{\dagger}\ket{0} \right\}
-\end{align}$$
+The full two-site Fock space has dimension $4\times 4=16$ (each site: $|0\rangle,|\uparrow\rangle,|\downarrow\rangle,|\uparrow\downarrow\rangle$). Fix total particle number $N=2$: remaining 6 states consist of two double-occupancy states and four singly-occupied spin states. A convenient ordered $N=2$ basis:
+$$\{c_{1\uparrow}^{\dagger}c_{1\downarrow}^{\dagger}|0\rangle,\ c_{2\uparrow}^{\dagger}c_{2\downarrow}^{\dagger}|0\rangle,\ c_{1\uparrow}^{\dagger}c_{2\uparrow}^{\dagger}|0\rangle,\ c_{1\uparrow}^{\dagger}c_{2\downarrow}^{\dagger}|0\rangle,\ c_{1\downarrow}^{\dagger}c_{2\uparrow}^{\dagger}|0\rangle,\ c_{1\downarrow}^{\dagger}c_{2\downarrow}^{\dagger}|0\rangle\}. $$
 
 set $\displaystyle{t=0}$, the energy levels and eigenstates are summarized as follows
 
@@ -163,9 +171,35 @@ E=0: &c_{1\downarrow}^{\dagger}c_{2\downarrow}^{\dagger}\ket{0},c_{1\downarrow}^
 \end{cases}
 \end{align}$$
 
-for $\displaystyle{U\gg t>0}$, we can treat the hopping term as a perturbation. define
+for $\displaystyle{E=0}$ ground state subspace, we can define the following basis
 
 $$\begin{align}
-V & =\sum _{s}\left(-tc^{\dagger}_{1s}c_{2s}-tc^{\dagger}_{2s}c_{1s}\right)
+\ket{S} & =\frac{1}{\sqrt{ 2 }}(c_{1\uparrow}^{\dagger}c_{2\downarrow}^{\dagger}-c_{1\downarrow}^{\dagger}c_{2\uparrow}^{\dagger})\ket{0} \\
+\ket{T_{0}} & =\frac{1}{\sqrt{ 2 }}(c_{1\uparrow}^{\dagger}c_{2\downarrow}^{\dagger}+c_{1\downarrow}^{\dagger}c_{2\uparrow}^{\dagger})\ket{0} \\
+\ket{T_{+}} & =c_{1\uparrow}^{\dagger}c_{2\uparrow}^{\dagger}\ket{0} \\
+\ket{T_{-}} & =c_{1\downarrow}^{\dagger}c_{2\downarrow}^{\dagger}\ket{0} 
 \end{align}$$
+
+where $\displaystyle{\ket{S}}$ lies in the singlet subspace of total spin $\displaystyle{S=0}$, and $\displaystyle{\ket{T_{0}},\ket{T_{+}},\ket{T_{-}}}$ lie in the triplet subspace of total spin $\displaystyle{S=1}$. so if we introduce a perturbation that mixes the states, the singlet and triplet subspaces will not be mixed due to they have different spin
+
+for $U\gg t>0$ treat hopping as perturbation. Let
+$$V= -t \sum_s (c_{1s}^{\dagger} c_{2s} + c_{2s}^{\dagger} c_{1s}).$$
+
+define $\displaystyle{\vec{S}_{i}=\sum _{\alpha \beta} \frac{1}{2}c_{i\alpha}\vec{\sigma}_{\alpha \beta}c_{i\beta}}$ and the projection operator $\displaystyle{P}$ which projects onto the subspace with no double occupancy (since we are deriving the low energy effective Hamiltonian). the effective Hamiltonian is given by
+
+$$\begin{align}
+H_{\text{eff}} & =-PV\frac{1}{H_{0}}VP \\
+ & =-\frac{4t^{2}}{U}\ket{S} \bra{S}  \\
+ & =\frac{4t^{2}}{U}\left(\vec{S}_{1}\cdot \vec{S}_{2}-\frac{1}{4}\right)
+\end{align}$$
+
+## generic lattice
+
+for a system with total site $\displaystyle{N}$ with $\displaystyle{N}$ fermion, the low energy subspace in large $\displaystyle{U}$ limit is the single occupancy for each site. turn on the perturbation
+
+$$\begin{align}
+V & =\sum _{\braket{ ij } ,s}\left(-t_{ij}c^{\dagger}_{is}c_{js}+\text{h.c.}\right)
+\end{align}$$
+
+the first order perturbation vanishes, since
 
