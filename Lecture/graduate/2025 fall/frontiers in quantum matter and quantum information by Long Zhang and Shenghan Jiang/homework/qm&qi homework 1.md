@@ -50,35 +50,32 @@ the energy spectrum is symmetric about $\displaystyle{E=0}$, and the band gap cl
 
 ## band topology
 
-define
+define the phase
 
 $$\begin{align}
-d_{k} & =\exp\left(i\theta _{k}\frac{\vec{n}_{k}\cdot \sigma}{2}\right)\begin{pmatrix}
-c_{k,a} \\
-c_{k,b}
-\end{pmatrix} \\
-\theta _{k} & =\frac{\pi}{2} \\
-\vec{n}_{k} & =\frac{1}{E(k)}\begin{pmatrix}
--t_{1}-t_{2}\cos k \\
--t_{2}\sin k \\
-0
-\end{pmatrix}
+\phi_k = \arctan \frac{t_{2}\sin k}{t_{1}+t_{2}\cos k}
 \end{align}$$
 
-then the Hamiltonian becomes
+we have
 
 $$\begin{align}
-H & =\sum _{k}E(k)(d_{k,+}^{\dagger}d_{k,+}-d_{k,-}^{\dagger}d_{k,-}) 
+\vec{n}_{k} & =(-\cos \phi_k,-\sin \phi_k,0) \\
+\theta _{k} & =\frac{\pi}{2}
 \end{align}$$
 
-then the ground state is
+Single-axis rotation with constant angle $\theta_k=\pi/2$ and axis perpendicular to $\hat d_k$:
+$$\hat d_k=\frac{1}{E(k)}(d_x,d_y,0)=(\cos\phi_k,\sin\phi_k,0),\qquad \vec n_k=(-\sin\phi_k,\cos\phi_k,0),\quad \theta_k=\frac{\pi}{2},$$
+$$U_k=\exp\left(i\frac{\theta_k}{2}\vec n_k\cdot \sigma\right),\qquad U_k H(k) U_k^{\dagger}=E(k)\sigma_z.$$
+(Earlier choosing $\vec n_k$ parallel to $\hat d_k$ fails to diagonalize $H(k)$.)
 
-$$\begin{align}
-\ket{\psi}  & =\prod _{k}d_{k,-}^{\dagger}\ket{0} 
-\end{align}$$
+define operators
+$$\begin{pmatrix} d_{k,+} \\ d_{k,-}\end{pmatrix}= U_k \begin{pmatrix} c_{k,a} \\ c_{k,b}\end{pmatrix},\qquad H=\sum_k E(k)\big(d_{k,+}^{\dagger}d_{k,+}-d_{k,-}^{\dagger}d_{k,-}\big).$$
+Half-filled ground state:
+$$\ket{\psi}=\prod_k d_{k,-}^{\dagger}\ket{0}.$$
 
-
-when $\displaystyle{t_{1}>t_{2}}$, the trajectory of $\displaystyle{\vec{n}_{k}}$ is just a arc, and when $\displaystyle{t_{2}>t_{1}}$, the trajectory of $\displaystyle{\vec{n}_{k}}$ is a full circle. so the topological non-trivial phase is $\displaystyle{t_{2}>t_{1}}$, the winding number $\displaystyle{\nu=1}$.
+Topology: $(d_x(k),d_y(k))$ traces a circle of radius $t_2$ centered at $(-t_1,0)$. Winding number
+$$\nu = \frac{1}{2\pi}\int_{0}^{2\pi} dk\; \partial_k \phi_k = \begin{cases}1,& t_2>t_1,\\0,& t_2<t_1.\end{cases}$$
+Non-trivial phase: $t_2>t_1$.
 
 ![[Attachments/Pasted image 20251007194324.png]]
 
@@ -103,14 +100,9 @@ $$\begin{align}
 H & =\sum ^{L-1}_{j=1}-t_{2}(\alpha _{j}^{\dagger}\alpha _{j}-\beta _{j}^{\dagger}\beta _{j})
 \end{align}$$
 
-the number of ground states is $\displaystyle{4}$, and they can be written as
-
-$$\begin{align}
-\ket{\text{GS}_{0}} & =\prod ^{L-1}_{j=1}\alpha _{j}^{\dagger}\ket{0}  \\
-\ket{\text{GS}_{1}} & =c_{1,a}^{\dagger}\ket{\text{GS}_{0}}\\
-\ket{\text{GS}_{2}} & =c_{L,b}^{\dagger}\ket{\text{GS}_{0}}\\
-\ket{\text{GS}_{3}}  & =c_{1,a}^{\dagger}c_{L,b}^{\dagger}\ket{\text{GS}_{0}} 
-\end{align}$$
+we have 2 degenerate ground states:
+$$\ket{\psi _{L}} =c_{1,a}^{\dagger}\prod ^{L-1}_{j=1}\alpha _{j}^{\dagger}\ket{0},\qquad
+\ket{\psi _{R}} =c_{L,b}^{\dagger}\prod ^{L-1}_{j=1}\alpha _{j}^{\dagger}\ket{0}.$$
 
 when $\displaystyle{\frac{t_{2}}{t_{1}}\gg1}$. the Hamiltonian can be written as
 
@@ -120,30 +112,13 @@ H_{0} & =\sum ^{L-1}_{j=1}\left(-t_{2}c^{\dagger}_{j,b}c_{j+1,a}-t_{2}c^{\dagger
 V & =\sum ^{L}_{j=1}\left(-t_{1}c_{j,a}^{\dagger}c_{j,b}-t_{1}c^{\dagger}_{j,b}c_{j,a}\right)
 \end{align}$$
 
-write
-
-$$\begin{align}
-W_{k} & =\begin{pmatrix}
-\braket{ \text{GS}_{0}|V^{k}|\text{GS}_{0} }  & \braket{ \text{GS}_{0}|V^{k}|\text{GS}_{1} }  & \braket{ \text{GS}_{0}|V^{k}|\text{GS}_{2} }  & \braket{ \text{GS}_{0}|V^{k}|\text{GS}_{3} } \\
-\braket{ \text{GS}_{1}|V^{k}|\text{GS}_{0} }  & \braket{ \text{GS}_{1}|V^{k}|\text{GS}_{1} }  & \braket{ \text{GS}_{1}|V^{k}|\text{GS}_{2} }  & \braket{ \text{GS}_{1}|V^{k}|\text{GS}_{3} } \\
-\braket{ \text{GS}_{2}|V^{k}|\text{GS}_{0} }  & \braket{ \text{GS}_{2}|V^{k}|\text{GS}_{1} }  & \braket{ \text{GS}_{2}|V^{k}|\text{GS}_{2} }  & \braket{ \text{GS}_{2}|V^{k}|\text{GS}_{3} } \\
-\braket{ \text{GS}_{3}|V^{k}|\text{GS}_{0} }  & \braket{ \text{GS}_{3}|V^{k}|\text{GS}_{1} }  & \braket{ \text{GS}_{3}|V^{k}|\text{GS}_{2} }  & \braket{ \text{GS}_{3}|V^{k}|\text{GS}_{3} }
-\end{pmatrix}
-\end{align}$$
-
-then when $\displaystyle{k<L}$, $\displaystyle{W}$ is diagonal, and the four ground states are degenerate. when $\displaystyle{k=L}$, we get a non-diagonal term
-
-$$\begin{align}
-\braket{ \text{GS}_{1}|V^{L}|\text{GS}_{2} } & =\frac{(-1)^{L}t_{1}^{L}}{2^{L-1}}
-\end{align}$$
-
-and the energy splitting is
-
-$$\begin{align}
-\Delta & \sim\frac{t_{1}^{L}}{2^{L-1}t_{2}^{L-1}}
-\end{align}$$
-
-in the thermodynamic limit $\displaystyle{L\to \infty}$, the energy splitting will vanish and the degeneracy is stable.
+let $|L\rangle=c_{1,a}^{\dagger}|0\rangle$, $|R\rangle=c_{L,b}^{\dagger}|0\rangle$ (single-particle edge subspace). define the projectors: $P=|L\rangle\langle L|+|R\rangle\langle R|$, $Q=1-P$. perturbation:
+$$V = - t_1 \sum_{j=1}^{L} ( c_{j,a}^{\dagger} c_{j,b} + c_{j,b}^{\dagger} c_{j,a}).$$
+lowest non-vanishing contribution linking $|L\rangle$ to $|R\rangle$ involves $L$ hoppings and $L-1$ virtual denominators of size $\Delta_{\text{bulk}}\sim t_2$. effective matrix element
+$$\delta = \langle L| V (\frac{1}{E_0-H_0} Q V)^{L-1} |R\rangle \sim C \frac{t_1^{L}}{t_2^{L-1}},$$
+with $C=O(1)$. energy splitting:
+$$\Delta E = 2|\delta| \sim 2C\, t_1 \left(\frac{t_1}{t_2}\right)^{L-1},$$
+exponentially small for fixed $t_1/t_2<1$ in the thermodynamic limit $L\to\infty$.
 
 further add the following perturbation
 
@@ -151,19 +126,9 @@ $$\begin{align}
 V & =\sum ^{L-1}_{j=1}\left(-t'c^{\dagger}_{j,a}c_{j+1,a}-t'c^{\dagger}_{j,b}c_{j+1,b}+\text{h.c.}\right)
 \end{align}$$
 
-and set $\displaystyle{t_{1}=0,t_{2}\gg t'>0}$. define $\displaystyle{W_{k}}$ as before, then when $\displaystyle{k<L-1}$, $\displaystyle{W_{k}}$ is still diagonal, and when $\displaystyle{k=L}$, we get a non-diagonal term
-
-$$\begin{align}
-W_{k,12} & \sim \frac{t'^{L-1}}{2^{L-1}}
-\end{align}$$
-
-and the energy splitting is
-
-$$\begin{align}
-\Delta & \sim\frac{t'^{L-1}}{2^{L-1}t_{2}^{L-2}}
-\end{align}$$
-
-vanishes in the thermodynamic limit.
+and set $\displaystyle{t_{1}=0,t_{2}\gg t'>0}$. the leading process coupling edges requires $(L-1)$ same-sublattice hops with $(L-2)$ virtual denominators, giving
+$$\delta' \sim C' \frac{t'^{\,L-1}}{t_2^{L-2}},\qquad \Delta E' \sim 2|\delta'|,$$
+again vanish in thermodynamic limit $\displaystyle{L\to \infty}$ for fixed $t'/t_2<1$.
 
 # Heisenberg model
 
@@ -183,4 +148,24 @@ $$\begin{align}
 H & =\sum _{s}\left(-tc^{\dagger}_{1s}c_{2s}-tc^{\dagger}_{2s}c_{1s}\right)+U(n_{1\uparrow}n_{1\downarrow}+n_{2\uparrow}n_{2\downarrow})
 \end{align}$$
 
-the dimension of the full Hilbert space is 
+the dimension of the full Hilbert space is $\displaystyle{4}$. if we restrict the number of particles to $\displaystyle{2}$, then the dimension of the Hilbert space is $\displaystyle{6}$. we can write down the basis as
+
+$$\begin{align}
+\left\{c_{1\downarrow}^{\dagger}c_{1\uparrow}^{\dagger}\ket{0},c_{2\downarrow}^{\dagger}c_{2\uparrow}^{\dagger}\ket{0},c_{1\downarrow}^{\dagger}c_{2\downarrow}^{\dagger}\ket{0},c_{1\downarrow}^{\dagger}c_{2\uparrow}^{\dagger}\ket{0},c_{1\uparrow}^{\dagger}c_{2\downarrow}^{\dagger}\ket{0},c_{1\uparrow}^{\dagger}c_{2\uparrow}^{\dagger}\ket{0} \right\}
+\end{align}$$
+
+set $\displaystyle{t=0}$, the energy levels and eigenstates are summarized as follows
+
+$$\begin{align}
+\begin{cases}
+E=U: &c_{1\downarrow}^{\dagger}c_{1\uparrow}^{\dagger}\ket{0},c_{2\downarrow}^{\dagger}c_{2\uparrow}^{\dagger}\ket{0}, \\
+E=0: &c_{1\downarrow}^{\dagger}c_{2\downarrow}^{\dagger}\ket{0},c_{1\downarrow}^{\dagger}c_{2\uparrow}^{\dagger}\ket{0},c_{1\uparrow}^{\dagger}c_{2\downarrow}^{\dagger}\ket{0},c_{1\uparrow}^{\dagger}c_{2\uparrow}^{\dagger}\ket{0}
+\end{cases}
+\end{align}$$
+
+for $\displaystyle{U\gg t>0}$, we can treat the hopping term as a perturbation. define
+
+$$\begin{align}
+V & =\sum _{s}\left(-tc^{\dagger}_{1s}c_{2s}-tc^{\dagger}_{2s}c_{1s}\right)
+\end{align}$$
+
