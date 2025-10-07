@@ -131,17 +131,56 @@ W_{k} & =\begin{pmatrix}
 \end{pmatrix}
 \end{align}$$
 
+then when $\displaystyle{k<L}$, $\displaystyle{W}$ is diagonal, and the four ground states are degenerate. when $\displaystyle{k=L}$, we get a non-diagonal term
 
 $$\begin{align}
-V & =\sum ^{L}_{j=1}\left(-t_{1}c_{j,a}^{\dagger}c_{j,b}-t_{1}c^{\dagger}_{j,b}c_{j,a}\right) \\
- & =-t_{1}c_{1,a}^{\dagger} \frac{1}{\sqrt{ 2 }}(\alpha _{1}-\beta _{1})-t_{1}\sum ^{L-1}_{j=2}\left( \frac{1}{2}(\alpha ^{\dagger} _{j-1}+\beta ^{\dagger} _{j-1})(\alpha _{j}-\beta _{j})+\frac{1}{2}(\alpha _{j}^{\dagger}-\beta _{j}^{\dagger})(\alpha _{j-1}+\beta _{j-1}) \right)-t_{1} \frac{1}{\sqrt{ 2 }}(\alpha _{L-1}^{\dagger}+\beta _{L-1}^{\dagger})c_{L,b}
+\braket{ \text{GS}_{1}|V^{L}|\text{GS}_{2} } & =\frac{(-1)^{L}t_{1}^{L}}{2^{L-1}}
 \end{align}$$
 
-$$\tag{.}\begin{align}
-\frac{1}{\sqrt{ 2 }}(\alpha _{j-1}+\beta _{j-1})
+and the energy splitting is
+
+$$\begin{align}
+\Delta & \sim\frac{t_{1}^{L}}{2^{L-1}t_{2}^{L-1}}
 \end{align}$$
 
-$$\tag{.}\begin{align}
-\alpha _{j} & =\frac{1}{\sqrt{ 2 }}(c_{j+1,a}+c_{j,b}) \\
-\beta _{j} & =\frac{1}{\sqrt{ 2 }}(c_{j+1,a}-c_{j,b}), & j=1,2,\cdots,L-1
+in the thermodynamic limit $\displaystyle{L\to \infty}$, the energy splitting will vanish and the degeneracy is stable.
+
+further add the following perturbation
+
+$$\begin{align}
+V & =\sum ^{L-1}_{j=1}\left(-t'c^{\dagger}_{j,a}c_{j+1,a}-t'c^{\dagger}_{j,b}c_{j+1,b}+\text{h.c.}\right)
 \end{align}$$
+
+and set $\displaystyle{t_{1}=0,t_{2}\gg t'>0}$. define $\displaystyle{W_{k}}$ as before, then when $\displaystyle{k<L-1}$, $\displaystyle{W_{k}}$ is still diagonal, and when $\displaystyle{k=L}$, we get a non-diagonal term
+
+$$\begin{align}
+W_{k,12} & \sim \frac{t'^{L-1}}{2^{L-1}}
+\end{align}$$
+
+and the energy splitting is
+
+$$\begin{align}
+\Delta & \sim\frac{t'^{L-1}}{2^{L-1}t_{2}^{L-2}}
+\end{align}$$
+
+vanishes in the thermodynamic limit.
+
+# Heisenberg model
+
+consider the following Hubbard model
+
+$$\begin{align}
+H & =\sum _{\braket{ ij } ,s}\left(-t_{ij}c^{\dagger}_{is}c_{js}+\text{h.c.}\right)+\sum _{i}Un_{i\uparrow}n_{i\downarrow}
+\end{align}$$
+
+where $\displaystyle{c_{i\uparrow}}$ and $\displaystyle{c_{i\downarrow}}$ are annihilation operators of spin 1/2 fermion for site $\displaystyle{i}$. the summation is taken over all bonds $\displaystyle{\braket{ ij }}$, and $\displaystyle{U\gg t_{ij}>0}$. 
+
+## two-site model
+
+first consider two-site model, the Hamiltonian is
+
+$$\begin{align}
+H & =\sum _{s}\left(-tc^{\dagger}_{1s}c_{2s}-tc^{\dagger}_{2s}c_{1s}\right)+U(n_{1\uparrow}n_{1\downarrow}+n_{2\uparrow}n_{2\downarrow})
+\end{align}$$
+
+the dimension of the full Hilbert space is 
