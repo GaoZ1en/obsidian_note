@@ -168,17 +168,58 @@ thus the curve is given by $\displaystyle{\boldsymbol{\alpha}(s)=\left(a\ln \lef
 define $\displaystyle{\theta(s)=\int^{s}\kappa(s)\mathrm{d}s=\arcsin\frac{s}{a}}$, then we have
 
 $$\begin{align}
-x(s) & =\int^{s}\cos \theta(s)\mathrm{d}s=\int^{s} \frac{\sqrt{ a^{2}-s^{2} }}{a}\mathrm{d}s=\frac{a}{2}\left(\arctan\right) \\
+x(s) & =\int^{s}\cos \theta(s)\mathrm{d}s=\int^{s} \frac{\sqrt{ a^{2}-s^{2} }}{a}\mathrm{d}s=\frac{a}{2}\left(\arcsin \frac{s}{a}+s\sqrt{ a^{2}-s^{2} }\right) \\
 y(s) & =\int^{s}\sin \theta(s)\mathrm{d}s=\int^{s}\frac{s}{a}\mathrm{d}s=\frac{s^{2}}{2a}
 \end{align}$$
 
-$$\begin{align}
-1-\frac{s^{2}}{a^{2}}
-\end{align}$$
-
-thus the curve is given by $\displaystyle{\boldsymbol{\alpha}(s)=\left(\sqrt{ a^{2}-s^{2} },a\arcsin \frac{s}{a}\right)}$ up to a rigid motion.
+thus the curve is given by $\displaystyle{\boldsymbol{\alpha}(s)=\left( \frac{a}{2}\left(\arcsin \frac{s}{a}+s\sqrt{ a^{2}-s^{2} }\right),\frac{s^{2}}{2a} \right)}$ up to a rigid motion.
 
 # problem 7
+
+*find the space curve with $\displaystyle{\tau=c\kappa}$, where $\displaystyle{\kappa}$ is the curvature and $\displaystyle{\tau}$ is the torsion*
+
+notice that $\displaystyle{\boldsymbol{\alpha}(t)=\left( a\int ^{s}\cos(\theta(u))\mathrm{d}u,a\int ^{s}\sin(\theta(u))\mathrm{d}u,bs \right)}$, where $\displaystyle{a^{2}+b^{2}=1}$, then the Frenet frame is given by
+
+$$\begin{align}
+\boldsymbol{T}(s) & =\left( a\cos(\theta(s)),a\sin(\theta(s)),b \right) \\
+\boldsymbol{N}(s) & =\left( -\sin(\theta(s)),\cos(\theta(s)),0 \right) \\
+\boldsymbol{B}(s) & =\left( -b\cos(\theta(s)),-b\sin(\theta(s)),a \right)
+\end{align}$$
+
+and the curvature and torsion are given by
+
+$$\begin{align}
+\kappa(s) & =|\boldsymbol{T}'(s)|=a\theta'(s) \\
+\tau(s) & =-\boldsymbol{B}'(s)\cdot \boldsymbol{N}(s)=b\theta'(s)
+\end{align}$$
+
+thus we have
+
+$$\begin{align}
+\tau & =\frac{b}{a}\kappa, & c=\frac{b}{a}
+\end{align}$$
+
+# problem 8
+
+*find the planar curve with curvature $\displaystyle{\kappa(s)=s}$*
+
+define $\displaystyle{\theta(s)=\int^{s}\kappa(s)\mathrm{d}s=\frac{s^{2}}{2}}$, then we have
+
+$$\begin{align}
+x(s) & =\int^{s}\cos \theta(s)\mathrm{d}s=\int^{s}\cos \frac{s^{2}}{2}\mathrm{d}s \\
+y(s) & =\int^{s}\sin \theta(s)\mathrm{d}s=\int^{s}\sin \frac{s^{2}}{2}\mathrm{d}s
+\end{align}$$
+
+define the Fresnel integrals
+
+$$\begin{align}
+C(s) & =\int^{s}\cos \frac{s^{2}}{2}\mathrm{d}s \\
+S(s) & =\int^{s}\sin \frac{s^{2}}{2}\mathrm{d}s
+\end{align}$$
+
+thus the curve is given by $\displaystyle{\boldsymbol{\alpha}(s)=(C(s),S(s))}$ up to a rigid motion. this curve is called Cornu spiral or clothoid.
+
+# problem 9
 
 *suppose we have two curves $\displaystyle{\boldsymbol{\alpha}(t)=\left(t+\sqrt{ 3} \sin t,2\cos t,\sqrt{ 3 }t-\sin t\right)}$ and $\displaystyle{\boldsymbol{\beta}(t)=\left(2\cos t,2\sin t,-2t\right)}$*
 1. *prove that these two curves are the same up to a rigid motion.*
