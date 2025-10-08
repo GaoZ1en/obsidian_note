@@ -277,5 +277,87 @@ $$\begin{align}
 then
 
 $$\begin{align}
-\mathrm{d}\omega _{12} & =-\frac{4}{c+u^{2}+v^{2}}\mathrm{d}u\wedge \mathrm{d}v
+\mathrm{d}\omega _{12} & =-\frac{4c}{(c+u^{2}+v^{2})^{2}}\mathrm{d}u\wedge \mathrm{d}v \\
+\implies K & =4c
+\end{align}$$
+
+# problem 7
+
+*suppose $\displaystyle{F_{\lambda}(x,y,z)=\frac{x^{2}}{a-\lambda}+\frac{y^{2}}{b-\lambda}+\frac{z^{2}}{c-\lambda}}$ with $\displaystyle{a>b>c>0}$. when $\displaystyle{\lambda \in(-\infty,c)}$, $\displaystyle{F_{\lambda}=1}$ gives a family of ellipsoids; when $\displaystyle{\lambda \in(c,b)}$, $\displaystyle{F_{\lambda}=1}$ gives a family of one-sheeted hyperboloids; when $\displaystyle{\lambda \in(b,a)}$, $\displaystyle{F_{\lambda}=1}$ gives a family of two-sheeted hyperboloids. prove that for any point $\displaystyle{P=(x,y,z)\in \mathbb{R}^{3} }$ with $\displaystyle{xyz \neq 0}$, there exist exactly three quadratic surfaces passing through $\displaystyle{P}$, one from each of these three families, and these three surfaces are mutually orthogonal at $\displaystyle{P}$*
+
+# problem 8
+
+*find the mean curvature of $\displaystyle{\boldsymbol{x}(u,v)=(u\cos v,u\sin v,bv)}$*
+
+# problem 9
+
+*is there a surface that has $\displaystyle{\varphi}$ and $\displaystyle{\psi}$ as its first and second fundamental forms?*
+1. $\displaystyle{\varphi=\mathrm{d}u^{2}+\mathrm{d}v^{2},\psi=\mathrm{d}u^{2}-\mathrm{d}v^{2}}$
+
+from the first fundamental form
+
+$$\begin{align}
+\omega_{1} & =\mathrm{d}u \\
+\omega_{2} & =\mathrm{d}v
+\end{align}$$
+
+notice that the principal curvatures are $\displaystyle{\kappa_{1}=1,\kappa_{2}=-1}$, which gives $\displaystyle{K=\kappa_{1}\kappa_{2}=-1}$, contradicting the fact that the Gaussian curvature of the metric $\displaystyle{\varphi=\mathrm{d}u^{2}+\mathrm{d}v^{2}}$ is $\displaystyle{K=0}$. so there is no such surface.
+
+2. $\displaystyle{\varphi=\mathrm{d}u^{2}+\cos ^{2}u\mathrm{d}v^{2},\psi=\cos ^{2}u\mathrm{d}u^{2}+\mathrm{d}v^{2}}$
+
+from the first fundamental form
+
+$$\begin{align}
+\omega_{1} & =\mathrm{d}u \\
+\omega_{2} & =\cos u\mathrm{d}v \\
+\implies \mathrm{d}\omega _{2} & =\sin u\mathrm{d}u\wedge \mathrm{d}v \\
+\implies \omega _{12} & =-\sin u\mathrm{d}v
+\end{align}$$
+
+from the second fundamental form
+
+$$\begin{align}
+\omega _{13} & =\cos ^{2}u\mathrm{d}u \\
+\omega _{23} & =\frac{1}{\cos u}\mathrm{d}v
+\end{align}$$
+
+the Codazzi equations require
+
+$$\begin{align}
+\mathrm{d}\omega _{23} & =\omega _{21}\wedge \omega _{13}
+\end{align}$$
+
+but it is not satisfied here. so there is no such surface.
+
+# problem 10
+
+*suppose $\displaystyle{\left\{\boldsymbol{e}_{1},\boldsymbol{e}_{2}\right\}}$ is an orthonormal frame on a surface, $\displaystyle{\boldsymbol{e}_{1},\boldsymbol{e}_{2}}$ are the principal directions with corresponding principal curvatures $\displaystyle{k_{1},k_{2}}$. prove that the Codazzi equations are equivalent to $\displaystyle{\mathrm{d}k_{1}\wedge \omega_{1}=(k_{2}-k_{1})\omega _{12}\wedge \omega _{2},\mathrm{d}k_{2}\wedge \omega _{2}=(k_{1}-k_{2})\omega _{21}\wedge \omega_{1}}$*
+
+suppose $\displaystyle{\omega_{1},\omega_{2}}$ are the dual forms of $\displaystyle{\boldsymbol{e}_{1},\boldsymbol{e}_{2}}$, then by the structure equations
+
+$$\begin{align}
+\mathrm{d}\omega_{1} & =-\omega _{12}\wedge \omega _{2} \\
+\mathrm{d}\omega_{2} & =-\omega _{21}\wedge \omega _{1}
+\end{align}$$
+
+since $\displaystyle{\boldsymbol{e}_{1},\boldsymbol{e}_{2}}$ are the principal directions, then
+
+$$\begin{align}
+\omega _{31}=k_{1}\omega_{1},\omega _{32}=k_{2}\omega_{2}
+\end{align}$$
+
+Codazzi equations read
+
+$$\begin{align}
+\mathrm{d}\omega _{31} & =\omega _{32}\wedge \omega _{21} \\
+\text{LHS} & =\mathrm{d}k_{1}\wedge \omega_{1}+k_{1}\mathrm{d}\omega_{1} \\
+ & =\mathrm{d}k_{1}\wedge \omega_{1}+k_{1}(-\omega _{12}\wedge \omega _{2}) \\
+\text{RHS} & =k_{2}\omega_{2}\wedge \omega _{21} \\
+\implies \mathrm{d}k_{1}\wedge \omega_{1} & =(k_{2}-k_{1})\omega _{12}\wedge \omega_{2}
+\end{align}$$
+
+similarly, we have
+
+$$\begin{align}
+\mathrm{d}k_{2}\wedge \omega_{2} & =(k_{1}-k_{2})\omega _{21}\wedge \omega_{1}
 \end{align}$$
