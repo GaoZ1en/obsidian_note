@@ -114,5 +114,44 @@ therefore, up to isomorphism, there are only two groups of order $\displaystyle{
 
 # problem 5
 
-*suppose the order of a group $\displaystyle{G}$ is $\displaystyle{g}$, $\displaystyle{C_{a}}$ is a class of group $\displaystyle{G}$, which contains $\displaystyle{n(a)}$ elements, $\displaystyle{S_{j}}$ and $\displaystyle{S_{k}}$ are arbitrary elements of $\displaystyle{C_{\alpha}}$. prove that the number of elements in $\displaystyle{G}$ that satisfies $\displaystyle{S_{j}=PS_{k}P^{-1},P\in G}$ is $\displaystyle{m(a)=g/n(a)}$*
+*suppose the order of a group $\displaystyle{G}$ is $\displaystyle{g}$, $\displaystyle{C_{a}}$ is a class of group $\displaystyle{G}$, which contains $\displaystyle{n(a)}$ elements, $\displaystyle{S_{j}}$ and $\displaystyle{S_{k}}$ are arbitrary elements of $\displaystyle{C_{a}}$. prove that the number of elements in $\displaystyle{G}$ that satisfies $\displaystyle{S_{j}=PS_{k}P^{-1},P\in G}$ is $\displaystyle{m(a)=g/n(a)}$*
 
+fix a representative $\displaystyle{S_{k}}$ of $\displaystyle{C_{a}}$. for each $\displaystyle{S\in C_{a}}$ define
+
+$$\begin{align}
+\mathcal{P}(S) & =\left\{P\in G|PS_{k}P^{-1}=S\right\}
+\end{align}$$
+
+then
+1. every $\displaystyle{P\in G}$ sends $\displaystyle{S_{k}}$ to exactly one conjugate, so $\displaystyle{\mathcal{P}(S)}$ are disjoint and their union is all of $\displaystyle{G}$
+
+$$\begin{align}
+g & =|G|=\sum _{S\in C_{\alpha}}|\mathcal{P}(S)|
+\end{align}$$
+
+2. if $\displaystyle{S_{j},QS_{k}Q^{-1}}$ lie in the same class, then $\displaystyle{Q}$ induces a bijection $\displaystyle{\mathcal{P}(S_{j})\to \mathcal{P}(S_{j})}$ via $\displaystyle{P\mapsto QP}$. hence all $\displaystyle{|\mathcal{P}(S)|=m(a)}$ are equal
+
+therefore $\displaystyle{g=n(a)m(a)}$, and so $\displaystyle{m(a)=g/n(a)}$
+
+# problem 6
+
+*from the subgroup $\displaystyle{C_{3}=\left\{E,R_{1},R_{1}^{2}\right\}}$ of point group $\displaystyle{T}$, extend the multiplication table of $\displaystyle{C_{3}}$ to that of $\displaystyle{T}$*
+
+the point group $\displaystyle{T}$ is the symmetry group of a tetrahedron (without reflection), which has 12 elements:
+1. identity: $\displaystyle{E}$, with order $\displaystyle{1}$
+2. rotations about axes through vertices and the centers of opposite faces: $\displaystyle{R_{1},R_{1}^{2},R_{2},R_{2}^{2},R_{3},R_{3}^{2},R_{4},R_{4}^{2}}$, with order $\displaystyle{3}$
+3. rotations about axes through midpoints of opposite edges: $\displaystyle{S_{1},S_{2},S_{3}}$, with order $\displaystyle{2}$
+
+without loss of generality, we choose the 3‑cycle subgroup $\displaystyle{H=C_{3}=\{E, R_{1}, R_{1}^{2}\}}$. the cosets of $\displaystyle{C}$
+
+
+因为 $[T:H]=12/3=4$，所有左陪集由 $H$ 再加上 3 个含有每个不同二阶元的陪集组成。用你的记号（不再写成具体置换）这四个左陪集是：
+
+$$
+H = \{E,\ R_{1},\ R_{1}^{2}\},\\
+S_{1}H = \{S_{1},\ S_{1}R_{1},\ S_{1}R_{1}^{2}\},\\
+S_{2}H = \{S_{2},\ S_{2}R_{1},\ S_{2}R_{1}^{2}\},\\
+S_{3}H = \{S_{3},\ S_{3}R_{1},\ S_{3}R_{1}^{2}\}.
+$$
+
+说明：每个陪集恰好含有 1 个二阶元（对应 $S_i$）与 2 个还未出现在先前陪集里的三阶元（分别等价于某些 $R_j, R_j^2$）。这样 4×3=12 个元素两两不交并覆盖整个 $T$。若需要，也可以再把 $S_iR_{1}, S_iR_{1}^{2}$ 分别标识成哪一个 $R_{j}$ 与 $R_{j}^{2}$（取决于对四个顶点的具体标号约定），但在未固定具体几何标号之前上述形式已经给出了陪集结构。
