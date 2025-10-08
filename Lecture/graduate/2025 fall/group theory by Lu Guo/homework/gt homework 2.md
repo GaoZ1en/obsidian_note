@@ -163,7 +163,22 @@ S_3 & S_3 & S_1 & S_1 & R_4 & R_1^2 & R_2^2 & R_1 & R_3^2 & R_2 & E & S_3 & R_4^
 
 # problem 7
 
-![[Attachments/Pasted image 20251008175039.png]]
+$$\begin{array}{c|cccccccccccc}
+\circ & E & A & B & C & D & F & I & J & K & L & M & N \\
+\hline
+E & E & A & B & C & D & F & I & J & K & L & M & N \\
+A & A & E & F & I & J & B & C & D & M & N & K & L \\
+B & B & F & A & K & L & E & M & N & I & J & C & D \\
+C & C & I & L & A & K & N & E & M & J & F & D & B \\
+D & D & J & K & L & A & M & N & E & F & I & B & C \\
+F & F & B & E & M & N & A & K & L & C & D & I & J \\
+I & I & C & N & E & M & L & A & K & D & B & J & F \\
+J & J & D & M & N & E & K & L & A & B & C & F & I \\
+K & K & M & J & F & I & D & B & C & N & E & L & A \\
+L & L & N & I & J & F & C & D & B & E & M & A & K \\
+M & M & K & D & B & C & J & F & I & L & A & N & E \\
+N & N & L & C & D & B & I & J & F & A & K & E & M
+\end{array}$$
 
 1. *find the inverse of each element in the group*
 2. *find the center of the group*
@@ -184,9 +199,6 @@ K^{-1} & =L, & L^{-1} & =K, & M^{-1} & =N, & N^{-1} & =M
 2. the center of the group is $\displaystyle{Z(G)=\{E,A\}}$
 3. the period and order of each element in the group are as follows:
 
-
-![[Attachments/Pasted image 20251008175039.png]]
-
 | element            | period                                      | order |
 | ------------------ | ------------------------------------------- | ----- |
 | $\displaystyle{E}$ | $\displaystyle{\left\{E\right\}}$           | 1     |
@@ -205,22 +217,13 @@ K^{-1} & =L, & L^{-1} & =K, & M^{-1} & =N, & N^{-1} & =M
 4. the conjugacy classes of the group are as follows:
 	1. $\displaystyle{\left\{E\right\}}$ itself
 	2. $\displaystyle{\left\{A\right\}}$ itself
-	3. $\displaystyle{\left\{B,F\right\},\left\{C,I\right\},\left\{D,J\right\}}$
-	4. $\displaystyle{\left\{K,L,M,N\right\}}$
+	3. $\displaystyle{\left\{B,C,D\right\}}$, $\displaystyle{\left\{F,I,J\right\}}$
+	4. $\displaystyle{\left\{K,L\right\}}$
+	5. $\displaystyle{\left\{M,N\right\}}$
 5. the invariant subgroups of the group and the corresponding quotient groups are as follows:
-	1. $\displaystyle{\left\{E,A\right\}\cong C_{2}}$, corresponding quotient group is $\displaystyle{G/\left\{E,A\right\}\cong A_{4}}$
-	2. $\displaystyle{\braket{M}=\left\{E,M,N\right\}\cong C_{3}}$, corresponding quotient group is $\displaystyle{G/\braket{M}\cong D_{4}}$
+	1. $\displaystyle{\left\{E,A\right\}\cong C_{2}}$, corresponding quotient group is $\displaystyle{G/\left\{E,A\right\}\cong A_{3}}$
+	2. $\displaystyle{\braket{M}=\left\{E,M,N\right\}\cong C_{3}}$, corresponding quotient group is $\displaystyle{G/\braket{M}\cong C_{4}}$
 	3. $\displaystyle{\braket{K}=\left\{E,K,N,A,M,L\right\}\cong C_{6}}$, corresponding quotient group is $\displaystyle{G/\braket{K}\cong C_{2}}$
 	4. trivial ones, $\displaystyle{\left\{E\right\}}$ and $\displaystyle{G}$ itself, corresponding quotient groups are $\displaystyle{G/\left\{E\right\}\cong G}$ and $\displaystyle{G/G\cong \left\{E\right\}}$.
-6. notice that $\displaystyle{T}$ and $\displaystyle{D_{6}}$ has 12 elements. we list the conjugacy classes of them
-	1. for $\displaystyle{T}$:
-		1. $\displaystyle{\left\{E\right\}}$ itself
-		2. $\displaystyle{\left\{R_{1},R_{1}^{2}\right\},\left\{R_{2},R_{2}^{2}\right\},\left\{R_{3},R_{3}^{2}\right\},\left\{R_{4},R_{4}^{2}\right\}}$
-		3. $\displaystyle{\left\{S_{1},S_{2},S_{3}\right\}}$
-	2. for $\displaystyle{D_{6}}$:
-		1. $\displaystyle{\left\{E\right\}}$ itself
-		2. $\displaystyle{\left\{R,R^{5}\right\},\left\{R^{2},R^{4}\right\}}$
-		3. $\displaystyle{\left\{R^{3}\right\}}$ itself
-		4. $\displaystyle{\left\{S,SR,SR^{2},SR^{3},SR^{4},SR^{5}\right\}}$
-		5. notice that the conjugacy classes of the given group is different from those of $\displaystyle{T}$ and $\displaystyle{D_{6}}$, thus we conclude that the given group is not isomorphic to $\displaystyle{T}$ or $\displaystyle{D_{6}}$.
-		6. 
+6. notice that $\displaystyle{T}$ has no order-$\displaystyle{6}$ elements, and $\displaystyle{K,L}$ are of order $\displaystyle{6}$, thus $\displaystyle{G\not\cong T}$. similarly, notice that $\displaystyle{D_{6}}$ has $\displaystyle{7}$ order-$\displaystyle{2}$ elements, while $\displaystyle{G}$ has only $\displaystyle{1}$ order-$\displaystyle{2}$ element $\displaystyle{A}$, thus $\displaystyle{G\not\cong D_{6}}$.
+
