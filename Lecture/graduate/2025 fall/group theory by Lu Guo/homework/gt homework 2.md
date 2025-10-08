@@ -142,16 +142,45 @@ the point group $\displaystyle{T}$ is the symmetry group of a tetrahedron (witho
 2. rotations about axes through vertices and the centers of opposite faces: $\displaystyle{R_{1},R_{1}^{2},R_{2},R_{2}^{2},R_{3},R_{3}^{2},R_{4},R_{4}^{2}}$, with order $\displaystyle{3}$
 3. rotations about axes through midpoints of opposite edges: $\displaystyle{S_{1},S_{2},S_{3}}$, with order $\displaystyle{2}$
 
-without loss of generality, we choose the 3‑cycle subgroup $\displaystyle{H=C_{3}=\{E, R_{1}, R_{1}^{2}\}}$. the cosets of $\displaystyle{C}$
+without loss of generality, we choose the 3‑cycle subgroup $\displaystyle{C_{3}=\{E, R_{1}, R_{1}^{2}\}}$. we can extend the multiplication table of $\displaystyle{C_{3}}$ to that of $\displaystyle{T}$ as follows:
 
+$$\begin{array}{c|cccccccccccc}
+\circ & E & R_1 & R_1^2 & R_2 & R_2^2 & R_3 & R_3^2 & R_4 & R_4^2 & S_1 & S_2 & S_3 \\
+\hline
+E & E & R_1 & R_1^2 & R_2 & R_2^2 & R_3 & R_3^2 & R_4 & R_4^2 & S_1 & S_2 & S_3 \\
+R_1 & R_1 & R_1^2 & E & S_2 & S_3 & R_4^2 & R_2 & R_3 & R_2^2 & R_4 & S_1 & S_1 \\
+R_1^2 & R_1^2 & E & R_1 & S_3 & S_2 & R_2 & R_4^2 & R_2^2 & R_3 & S_1 & R_4 & S_1 \\
+R_2 & R_2 & S_3 & S_2 & R_2^2 & E & R_1^2 & R_4 & S_1 & S_1 & R_3 & R_1 & R_4^2 \\
+R_2^2 & R_2^2 & S_2 & S_3 & E & R_2 & R_4 & R_1^2 & S_1 & S_1 & R_4^2 & R_3 & R_1 \\
+R_3 & R_3 & R_2^2 & R_4 & R_1 & R_4^2 & R_3^2 & E & S_2 & S_3 & R_2 & S_1 & R_1^2 \\
+R_3^2 & R_3^2 & R_4 & R_2^2 & R_4^2 & R_1 & E & R_3 & S_3 & S_2 & R_1^2 & S_1 & R_2 \\
+R_4 & R_4 & R_3^2 & R_2 & S_1 & S_1 & S_3 & S_2 & R_4^2 & E & R_1 & R_2^2 & R_1^2 \\
+R_4^2 & R_4^2 & R_2 & R_3^2 & S_1 & S_1 & S_2 & S_3 & E & R_4 & R_1^2 & R_1 & R_2^2 \\
+S_1 & S_1 & R_4^2 & S_1 & R_3^2 & R_2^2 & R_4 & R_1 & R_2 & R_1^2 & S_1 & R_3 & E \\
+S_2 & S_2 & S_1 & R_4^2 & R_1^2 & R_3^2 & S_1 & R_2^2 & R_1 & R_4 & R_3 & S_2 & E \\
+S_3 & S_3 & S_1 & S_1 & R_4 & R_1^2 & R_2^2 & R_1 & R_3^2 & R_2 & E & S_3 & R_4^2
+\end{array}$$
 
-因为 $[T:H]=12/3=4$，所有左陪集由 $H$ 再加上 3 个含有每个不同二阶元的陪集组成。用你的记号（不再写成具体置换）这四个左陪集是：
+# problem 7
 
-$$
-H = \{E,\ R_{1},\ R_{1}^{2}\},\\
-S_{1}H = \{S_{1},\ S_{1}R_{1},\ S_{1}R_{1}^{2}\},\\
-S_{2}H = \{S_{2},\ S_{2}R_{1},\ S_{2}R_{1}^{2}\},\\
-S_{3}H = \{S_{3},\ S_{3}R_{1},\ S_{3}R_{1}^{2}\}.
-$$
+![[Attachments/Pasted image 20251008175039.png]]
 
-说明：每个陪集恰好含有 1 个二阶元（对应 $S_i$）与 2 个还未出现在先前陪集里的三阶元（分别等价于某些 $R_j, R_j^2$）。这样 4×3=12 个元素两两不交并覆盖整个 $T$。若需要，也可以再把 $S_iR_{1}, S_iR_{1}^{2}$ 分别标识成哪一个 $R_{j}$ 与 $R_{j}^{2}$（取决于对四个顶点的具体标号约定），但在未固定具体几何标号之前上述形式已经给出了陪集结构。
+1. *find the inverse of each element in the group*
+2. *find the center of the group*
+3. *list the period and order of each element in the group*
+4. *find all conjugacy classes of the group*
+5. *find all the invariant subgroups of the group and the corresponding quotient groups*
+6. *verify that if $\displaystyle{G}$ is isomorphic to $\displaystyle{T}$ or $\displaystyle{D_{6}}$*
+
+solution:
+1. the inverse of each element in the group is as follows:
+
+$$\begin{align}
+E^{-1} & =E, & A^{-1} & =A, & B^{-1} & =F, & C^{-1} & =I, \\
+D^{-1} & =J, & F^{-1} & =B, & I^{-1} & =C, & J^{-1} & =D \\
+K^{-1} & =L, & L^{-1} & =K, & M^{-1} & =N, & N^{-1} & =M
+\end{align}$$
+
+2. 
+
+![[Attachments/Pasted image 20251008175039.png]]
