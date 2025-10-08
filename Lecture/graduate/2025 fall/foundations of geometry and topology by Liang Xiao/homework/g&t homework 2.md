@@ -81,15 +81,201 @@ first fundamental forms
 $$\begin{align}
 \boldsymbol{x}_{u}(u,v) & =(f',g',0) \\
 \boldsymbol{x}_{v}(u,v) & =(0,0,1) \\
-\implies I & =(f'^{2}+g'^{2})\mathrm{d}u^{2}+\mathrm{d}v^{2}
+\implies I & =\boldsymbol{x}_{u}\cdot \boldsymbol{x}_{u}\mathrm{d}u^{2}+2\boldsymbol{x}_{u}\cdot \boldsymbol{x}_{v}\mathrm{d}u\mathrm{d}v+\boldsymbol{x}_{v}\cdot \boldsymbol{x}_{v}\mathrm{d}v^{2} \\
+ & =(f'^{2}+g'^{2})\mathrm{d}u^{2}+\mathrm{d}v^{2}
 \end{align}$$
 
 unit normal vector
 
 $$\begin{align}
-\vec{n}(u,v) & =
+\boldsymbol{n}(u,v) & =\frac{\boldsymbol{x}_{u}\times \boldsymbol{x}_{v}}{|\boldsymbol{x}_{u}\times \boldsymbol{x}_{v}|} \\
+ & =\frac{(g',-f',0)}{\sqrt{f'^{2}+g'^{2}}}
+\end{align}$$
+
+second fundamental forms
+
+$$\begin{align}
+\boldsymbol{x}_{uu}(u,v) & =(f'',g'',0) \\
+\boldsymbol{x}_{uv}(u,v) & =(0,0,0) \\
+\boldsymbol{x}_{vv}(u,v) & =(0,0,0) \\
+\implies II & =\boldsymbol{n}\cdot \boldsymbol{x}_{uu}\mathrm{d}u^{2}+2\boldsymbol{n}\cdot \boldsymbol{x}_{uv}\mathrm{d}u\mathrm{d}v+\boldsymbol{n}\cdot \boldsymbol{x}_{vv}\mathrm{d}v^{2} \\
+ & =\frac{g'f''-f'g''}{\sqrt{f'^{2}+g'^{2}}}\mathrm{d}u^{2}
+\end{align}$$
+
+Gaussian curvature
+
+$$\begin{align}
+K & =\frac{LN-M^{2}}{EG-F^{2}} \\
+ & =0
+\end{align}$$
+
+mean curvature
+
+$$\begin{align}
+H & =\frac{EN+GL-2FM}{2(EG-F^{2})} \\
+ & =\frac{(f'^{2}+g'^{2})(g'f''-f'g'')}{2(f'^{2}+g'^{2})^{3/2}} \\
+ & =\frac{g'f''-f'g''}{2(f'^{2}+g'^{2})^{3/2}}
 \end{align}$$
 
 2. $\displaystyle{z=f(x,y)}$
+
+write $\displaystyle{\boldsymbol{x}(x,y)=(x,y,f(x,y))}$. first fundamental forms
+
+$$\begin{align}
+\boldsymbol{x}_{x}(x,y) & =(1,0,f_{x}) \\
+\boldsymbol{x}_{y}(x,y) & =(0,1,f_{y}) \\
+\implies I & =\boldsymbol{x}_{x}\cdot \boldsymbol{x}_{x}\mathrm{d}x^{2}+2\boldsymbol{x}_{x}\cdot \boldsymbol{x}_{y}\mathrm{d}x\mathrm{d}y+\boldsymbol{x}_{y}\cdot \boldsymbol{x}_{y}\mathrm{d}y^{2} \\
+ & =(1+f_{x}^{2})\mathrm{d}x^{2}+2f_{x}f_{y}\mathrm{d}x\mathrm{d}y+(1+f_{y}^{2})\mathrm{d}y^{2}
+\end{align}$$
+
+second fundamental forms
+
+$$\begin{align}
+\boldsymbol{n}(x,y) & =\frac{\boldsymbol{x}_{x}\times \boldsymbol{x}_{y}}{|\boldsymbol{x}_{x}\times \boldsymbol{x}_{y}|} \\
+ & =\frac{(-f_{x},-f_{y},1)}{\sqrt{1+f_{x}^{2}+f_{y}^{2}}} \\
+\boldsymbol{x}_{xx}(x,y) & =(0,0,f_{xx}) \\
+\boldsymbol{x}_{xy}(x,y) & =(0,0,f_{xy}) \\
+\boldsymbol{x}_{yy}(x,y) & =(0,0,f_{yy}) \\
+\implies II & =\boldsymbol{n}\cdot \boldsymbol{x}_{xx}\mathrm{d}x^{2}+2\boldsymbol{n}\cdot \boldsymbol{x}_{xy}\mathrm{d}x\mathrm{d}y+\boldsymbol{n}\cdot \boldsymbol{x}_{yy}\mathrm{d}y^{2} \\
+ & =\frac{f_{xx}}{\sqrt{1+f_{x}^{2}+f_{y}^{2}}}\mathrm{d}x^{2}+\frac{2f_{xy}}{\sqrt{1+f_{x}^{2}+f_{y}^{2}}}\mathrm{d}x\mathrm{d}y+\frac{f_{yy}}{\sqrt{1+f_{x}^{2}+f_{y}^{2}}}\mathrm{d}y^{2}
+\end{align}$$
+
+Gaussian curvature and mean curvature
+
+$$\begin{align}
+K & =\frac{LN-M^{2}}{EG-F^{2}} \\
+ & =\frac{f_{xx}f_{yy}-f_{xy}^{2}}{(1+f_{x}^{2}+f_{y}^{2})^{2}} \\
+M & =\frac{EN+GL-2FM}{2(EG-F^{2})} \\
+ & =\frac{(1+f_{x}^{2})f_{yy}+(1+f_{y}^{2})f_{xx}-2f_{x}f_{y}f_{xy}}{2(1+f_{x}^{2}+f_{y}^{2})^{3/2}}
+\end{align}$$
+
 3. $\displaystyle{\boldsymbol{x}(u,v)=(f(u)\cos v,f(u)\sin v,g(u))}$ with $\displaystyle{f'^{2}+g'^{2}=1}$
 
+first fundamental forms
+
+$$\begin{align}
+\boldsymbol{x}_{u}(u,v) & =(f'\cos v,f'\sin v,g') \\
+\boldsymbol{x}_{v}(u,v) & =(-f\sin v,f\cos v,0) \\
+\implies I & =\boldsymbol{x}_{u}\cdot \boldsymbol{x}_{u}\mathrm{d}u^{2}+2\boldsymbol{x}_{u}\cdot \boldsymbol{x}_{v}\mathrm{d}u\mathrm{d}v+\boldsymbol{x}_{v}\cdot \boldsymbol{x}_{v}\mathrm{d}v^{2} \\
+ & =\mathrm{d}u^{2}+f^{2}\mathrm{d}v^{2}
+\end{align}$$
+
+second fundamental forms
+
+$$\begin{align}
+\boldsymbol{n}(u,v) & =\frac{\boldsymbol{x}_{u}\times \boldsymbol{x}_{v}}{|\boldsymbol{x}_{u}\times \boldsymbol{x}_{v}|} \\
+ & =(-g'\cos v,-g'\sin v,f') \\
+\boldsymbol{x}_{uu}(u,v) & =(f''\cos v,f''\sin v,g'') \\
+\boldsymbol{x}_{uv}(u,v) & =(-f'\sin v,f'\cos v,0) \\
+\boldsymbol{x}_{vv}(u,v) & =(-f\cos v,-f\sin v,0) \\
+\implies II & =\boldsymbol{n}\cdot \boldsymbol{x}_{uu}\mathrm{d}u^{2}+2\boldsymbol{n}\cdot \boldsymbol{x}_{uv}\mathrm{d}u\mathrm{d}v+\boldsymbol{n}\cdot \boldsymbol{x}_{vv}\mathrm{d}v^{2} \\
+ & =(-g'f''+f'g'')\mathrm{d}u^{2}+fg'\mathrm{d}v^{2}
+\end{align}$$
+
+Gaussian curvature and mean curvature
+
+$$\begin{align}
+K & =\frac{LN-M^{2}}{EG-F^{2}} \\
+ & =\frac{(-g'f''+f'g'')g'}{f} \\
+ & = \begin{cases}
+-\frac{f''}{f} & g' \neq 0 \\
+0 & g' = 0
+\end{cases}\\
+H & =\frac{EN+GL-2FM}{2(EG-F^{2})} \\
+ & =\frac{g'-fg'f''+ff'g''}{2f} \\
+ & =\begin{cases}
+\frac{1}{2}\left(-\frac{f''}{g'}+\frac{g'}{f}\right) & g' \neq 0 \\
+\frac{1}{2}g'' & g' = 0
+\end{cases}
+\end{align}$$
+
+# problem 4
+
+*given that the first fundamental form of a surface is $\displaystyle{I=\mathrm{d}r^{2}+r^{2}\mathrm{d}s^{2}}$, find its Christoffel symbol*
+
+the nonzero Christoffel symbols are
+
+$$\begin{align}
+\Gamma ^{r}_{~ss} & =-r \\
+\Gamma ^{s}_{~rs}=\Gamma ^{s}_{~sr} & =\frac{1}{r}
+\end{align}$$
+
+# problem 5
+
+*prove that if the coefficients of the first and second fundamental forms of a surface $\displaystyle{E,F,G,L,M,N}$ are all constants, then the surface is a plane or a cylinder*
+
+$$\begin{align}
+K & =\frac{LN-M^{2}}{EG-F^{2}} \\
+M & =\frac{EN+GL-2FM}{2(EG-F^{2})}
+\end{align}$$
+
+Theorema Egregium states that the Gaussian curvature $\displaystyle{K}$ is an intrinsic invariant of the surface, i.e.,
+
+$$\begin{align}
+K & =\frac{1}{(EG-F^{2})}\begin{vmatrix}
+-\frac{1}{2}G_{uu}+F_{uv}-\frac{1}{2}E_{vv} & \frac{1}{2}E_{u} & F_{u}-\frac{1}{2}E_{v} \\
+F_{v}-\frac{1}{2}F_{u} & E & F \\
+\frac{1}{2}G_{v} & F & G
+\end{vmatrix}-\frac{1}{(EG-F^{2})^{2}}\begin{vmatrix}
+0 & \frac{1}{2}E_{v} & \frac{1}{2}G_{u} \\
+\frac{1}{2}E_{v} & E & F \\
+\frac{1}{2}G_{u} & F & G
+\end{vmatrix} \\
+ & =0
+\end{align}$$
+
+notice that the Gauss curvature can be expressed as product of two principal curvatures $\displaystyle{K=\kappa_{1}\kappa_{2}}$. if $\displaystyle{K=0}$, then at least one of the principal curvatures is zero, which means that the surface is a plane ($\displaystyle{\kappa_{1}=\kappa_{2}=0}$) or a cylinder ($\displaystyle{\kappa_{1}=0,\kappa_{2}\neq 0}$.
+
+# problem 6
+
+*given the first fundamental form of a surface. find its Gauss curvature*
+1. $\displaystyle{I=\mathrm{d}u^{2}+u^{2}\mathrm{d}v^{2}}$
+
+choose $\displaystyle{\omega_{1}=\mathrm{d}u,\omega_{2}=u\mathrm{d}v}$, then by the structure equations
+
+$$\begin{align}
+\mathrm{d}\omega_{1} & =0 \\
+\mathrm{d}\omega_{2} & =\mathrm{d}u\wedge \mathrm{d}v \\
+\implies \omega _{12} & =\mathrm{d}v
+\end{align}$$
+
+then
+
+$$\begin{align}
+\mathrm{d}\omega_{12} & =0
+\implies K & =0
+\end{align}$$
+
+2. $\displaystyle{I=\mathrm{d}u^{2}+\sin ^{2}u\mathrm{d}v^{2}}$
+
+choose $\displaystyle{\omega_{1}=\mathrm{d}u,\omega_{2}=\sin u\mathrm{d}v}$, then by the structure equations
+
+$$\begin{align}
+\mathrm{d}\omega_{1} & =0 \\
+\mathrm{d}\omega_{2} & =\cos u\mathrm{d}u\wedge \mathrm{d}v \\
+\implies \omega _{12} & =\cos u\mathrm{d}v
+\end{align}$$
+
+then
+
+$$\begin{align}
+\mathrm{d}\omega _{12} & =-\sin u\mathrm{d}u\wedge \mathrm{d}v \\
+ & =-\omega_{1}\wedge \omega _{2} \\
+\implies K & =1
+\end{align}$$
+
+3. $\displaystyle{I=\frac{\mathrm{d}u^{2}+\mathrm{d}v^{2}}{(c+u^{2}+v^{2})^{2}}}$
+
+choose $\displaystyle{\omega_{1}=\frac{\mathrm{d}u}{c+u^{2}+v^{2}},\omega_{2}=\frac{\mathrm{d}v}{c+u^{2}+v^{2}}}$, then by the structure equations
+
+$$\begin{align}
+\mathrm{d}\omega_{1} & = \frac{2v}{(c+u^{2}+v^{2})^{2}}\mathrm{d}u\wedge \mathrm{d}v \\
+\mathrm{d}\omega_{2} & =-\frac{2u}{(c+u^{2}+v^{2})}\mathrm{d}u\wedge \mathrm{d}v \\
+\implies \omega _{12} & =\frac{2v\mathrm{d}u-2u\mathrm{d}v}{c+u^{2}+v^{2}}
+\end{align}$$
+
+then
+
+$$\begin{align}
+\mathrm{d}\omega _{12} & =-\frac{4}{c+u^{2}+v^{2}}\mathrm{d}u\wedge \mathrm{d}v
+\end{align}$$
