@@ -27880,7 +27880,13 @@
         "filePath": "Kerr-Newman-AdS.md",
         "wordCountStart": 0,
         "charCountStart": 0,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "11:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
         "id": 913
       },
       {
@@ -27913,11 +27919,268 @@
         "changes": [
           {
             "timeKey": "11:10",
-            "w": 89,
-            "c": 421
+            "w": 134,
+            "c": 685
+          },
+          {
+            "timeKey": "11:15",
+            "w": 247,
+            "c": 1259
+          },
+          {
+            "timeKey": "11:20",
+            "w": 17,
+            "c": 84
+          },
+          {
+            "timeKey": "11:25",
+            "w": 90,
+            "c": 422
+          },
+          {
+            "timeKey": "11:30",
+            "w": -161,
+            "c": -811
+          },
+          {
+            "timeKey": "11:35",
+            "w": 71,
+            "c": 391
           }
         ],
         "id": 917
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "TODO.md",
+        "wordCountStart": 6181,
+        "charCountStart": 31020,
+        "changes": [],
+        "id": 918
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Attachments/Assets/Gravitational Entropy (2509.10921v1).pdf",
+        "wordCountStart": 130414,
+        "charCountStart": 616428,
+        "changes": [],
+        "id": 919
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Quantum Corrections to BTZ Thermodynamics.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "11:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 920
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Note/useful results/black hole thermodynamics using CPS formalism.md",
+        "wordCountStart": 2220,
+        "charCountStart": 13205,
+        "changes": [
+          {
+            "timeKey": "11:40",
+            "w": -695,
+            "c": -4236
+          },
+          {
+            "timeKey": "11:45",
+            "w": -46,
+            "c": -527
+          }
+        ],
+        "id": 921
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Note/useful results/blackhole entropy/Taub-NUT-Black-Holes.md",
+        "wordCountStart": 2101,
+        "charCountStart": 14107,
+        "changes": [],
+        "id": 922
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Note/useful results/blackhole entropy/Myers-Perry-Black-Holes.md",
+        "wordCountStart": 2687,
+        "charCountStart": 16081,
+        "changes": [],
+        "id": 923
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Note/useful results/blackhole entropy/Lovelock-Black-Holes.md",
+        "wordCountStart": 2921,
+        "charCountStart": 19252,
+        "changes": [],
+        "id": 924
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Note/useful results/blackhole entropy/Lifshitz-Black-Holes.md",
+        "wordCountStart": 2601,
+        "charCountStart": 17381,
+        "changes": [],
+        "id": 925
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Note/useful results/blackhole entropy/Dilaton-Black-Holes.md",
+        "wordCountStart": 2224,
+        "charCountStart": 13789,
+        "changes": [],
+        "id": 926
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Note/useful results/blackhole entropy/Born-Infeld-Black-Holes.md",
+        "wordCountStart": 2808,
+        "charCountStart": 18102,
+        "changes": [],
+        "id": 927
+      },
+      {
+        "date": "2025-10-06",
+        "filePath": "Note/useful results/blackhole entropy/black hole thermodynamics using CPS formalism copy.md",
+        "wordCountStart": 2627,
+        "charCountStart": 13975,
+        "changes": [],
+        "id": 928
+      },
+      {
+        "date": "2025-10-07",
+        "filePath": "Lecture/undergraguate/统计学导论/作业6.md",
+        "wordCountStart": 1194,
+        "charCountStart": 10541,
+        "changes": [
+          {
+            "timeKey": "09:50",
+            "w": -1194,
+            "c": -10541
+          }
+        ],
+        "id": 929
+      },
+      {
+        "date": "2025-10-07",
+        "filePath": "Note/useful results/blackhole entropy/black hole thermodynamics using CPS formalism copy.md",
+        "wordCountStart": 2627,
+        "charCountStart": 13975,
+        "changes": [],
+        "id": 930
+      },
+      {
+        "date": "2025-10-07",
+        "filePath": "Lecture/undergraguate/Bachelor Thesis/cydsmtddal/未命名.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "09:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 931
+      },
+      {
+        "date": "2025-10-07",
+        "filePath": "Lecture/undergraguate/Bachelor Thesis/cydsmtddal/covariant phase space formalism and noether theorem.md",
+        "wordCountStart": 336,
+        "charCountStart": 3214,
+        "changes": [
+          {
+            "timeKey": "09:50",
+            "w": -336,
+            "c": -3214
+          }
+        ],
+        "id": 932
+      },
+      {
+        "date": "2025-10-07",
+        "filePath": "Lecture/undergraguate/Nambu-Goto.md",
+        "wordCountStart": 278,
+        "charCountStart": 2544,
+        "changes": [],
+        "id": 933
+      },
+      {
+        "date": "2025-10-07",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/homework/qm&qi homework 1.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "09:50",
+            "w": 110,
+            "c": 609
+          },
+          {
+            "timeKey": "09:55",
+            "w": 82,
+            "c": 340
+          },
+          {
+            "timeKey": "10:00",
+            "w": 156,
+            "c": 625
+          },
+          {
+            "timeKey": "10:05",
+            "w": 52,
+            "c": 263
+          },
+          {
+            "timeKey": "10:20",
+            "w": 25,
+            "c": 83
+          },
+          {
+            "timeKey": "10:25",
+            "w": 4,
+            "c": 23
+          },
+          {
+            "timeKey": "16:10",
+            "w": 17,
+            "c": 57
+          },
+          {
+            "timeKey": "18:20",
+            "w": 37,
+            "c": 231
+          },
+          {
+            "timeKey": "18:30",
+            "w": 9,
+            "c": 72
+          },
+          {
+            "timeKey": "18:35",
+            "w": -4,
+            "c": -31
+          },
+          {
+            "timeKey": "18:40",
+            "w": -1,
+            "c": -56
+          },
+          {
+            "timeKey": "18:45",
+            "w": 26,
+            "c": 98
+          }
+        ],
+        "id": 934
       }
     ],
     "daysWithCompletedGoal": [

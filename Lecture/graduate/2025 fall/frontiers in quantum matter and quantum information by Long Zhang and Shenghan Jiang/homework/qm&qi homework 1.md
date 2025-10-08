@@ -201,5 +201,34 @@ $$\begin{align}
 V & =\sum _{\braket{ ij } ,s}\left(-t_{ij}c^{\dagger}_{is}c_{js}+\text{h.c.}\right)
 \end{align}$$
 
-the first order perturbation vanishes, since
+the first order perturbation vanishes, since the hopping term will lead to creation/annihilation of double occupancy, away from the single occupancy subspace. the second order perturbation is
 
+$$\begin{align}
+H_{\text{eff}} & =-PV \frac{1}{H_{0}}VP \\
+ & =-\frac{1}{U}PV^{2}P \\
+ & =-\frac{1}{U}\sum _{\braket{ ij } }PV_{ij}^{2}P
+\end{align}$$
+
+where $\displaystyle{V_{ij}=-t_{ij}\sum _{s}\left(c_{is}^{\dagger}c_{js}+\text{h.c.}\right)}$, define $\displaystyle{\tilde{c}_{is}=c_{is}(1-n_{i\bar{s}}),\tilde{c}_{is}^{\dagger}=(1-n_{i\bar{s}})c_{is}^{\dagger}}$
+
+$$\begin{align}
+PV_{ij}^{2}P & =t_{ij}^{2}P\sum _{ss'}(\tilde{c}^{\dagger}_{is}\tilde{c}_{js}\tilde{c}_{js'}^{\dagger}\tilde{c}_{is'}+\tilde{c}^{\dagger}_{js}\tilde{c}_{is}\tilde{c}^{\dagger}_{is'}\tilde{c}_{js'})P \\
+ & =2t_{ij}^{2}P \sum _{ss'}\tilde{c}_{is}^{\dagger}\tilde{c}_{js}\tilde{c}^{\dagger}_{js'}\tilde{c}_{is'} \\
+ & =2t_{ij}^{2}P \left( \sum _{s}\tilde{c}_{is}^{\dagger}\tilde{c}_{is} -\sum _{ss'}\tilde{c}_{is}^{\dagger}\tilde{c}_{js'}^{\dagger}\tilde{c}_{js}\tilde{c}_{is'}\right)P \\
+ & =2t_{ij}^{2}\left(1-\mathcal{P}_{ij}\right)
+\end{align}$$
+
+here $\displaystyle{\mathcal{P}_{ij}=\sum _{ss'}\tilde{c}_{is}^{\dagger}\tilde{c}_{js'}^{\dagger}\tilde{c}_{js}\tilde{c}_{is'}}$ is the spin exchange operator between site $\displaystyle{i}$ and $\displaystyle{j}$, which can be written as 
+
+$$\begin{align}
+\mathcal{P}_{ij} & =\frac{1}{2}+2\vec{S}_{i}\cdot \vec{S}_{j}
+\end{align}$$
+
+finally we get the effective Hamiltonian
+
+$$\begin{align}
+H_{\text{eff}} & =\sum _{\braket{ ij }}J_{ij}\left(\vec{S}_{i}\cdot \vec{S}_{j}-\frac{1}{4}\right) \\
+J_{ij} & =\frac{4t_{ij}^{2}}{U}
+\end{align}$$
+
+which is exactly the Heisenberg Hamiltonian.
