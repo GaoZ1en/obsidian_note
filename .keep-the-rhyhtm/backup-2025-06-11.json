@@ -26730,7 +26730,7 @@
       },
       {
         "date": "2025-09-30",
-        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/homework 1.md",
+        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/gr homework 1.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -28178,9 +28178,495 @@
             "timeKey": "18:45",
             "w": 26,
             "c": 98
+          },
+          {
+            "timeKey": "22:45",
+            "w": 1634,
+            "c": 8571
           }
         ],
         "id": 934
+      },
+      {
+        "date": "2025-10-07",
+        "filePath": "Drafts/RT.md",
+        "wordCountStart": 1135,
+        "charCountStart": 12597,
+        "changes": [],
+        "id": 935
+      },
+      {
+        "date": "2025-10-07",
+        "filePath": "Lecture/graduate/2025 fall/foundations of geometry and topology by Liang Xiao/homework/g&t homework 1.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 936
+      },
+      {
+        "date": "2025-10-08",
+        "filePath": "Lecture/graduate/2025 fall/foundations of geometry and topology by Liang Xiao/homework/g&t homework 1.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "10:50",
+            "w": 6,
+            "c": 37
+          },
+          {
+            "timeKey": "10:55",
+            "w": 63,
+            "c": 346
+          },
+          {
+            "timeKey": "11:00",
+            "w": 116,
+            "c": 644
+          },
+          {
+            "timeKey": "11:05",
+            "w": 170,
+            "c": 979
+          },
+          {
+            "timeKey": "11:10",
+            "w": 39,
+            "c": 258
+          },
+          {
+            "timeKey": "11:15",
+            "w": 19,
+            "c": 142
+          },
+          {
+            "timeKey": "11:20",
+            "w": 108,
+            "c": 692
+          },
+          {
+            "timeKey": "11:25",
+            "w": 227,
+            "c": 1303
+          },
+          {
+            "timeKey": "11:30",
+            "w": 143,
+            "c": 841
+          },
+          {
+            "timeKey": "11:35",
+            "w": 54,
+            "c": 323
+          },
+          {
+            "timeKey": "11:40",
+            "w": 114,
+            "c": 528
+          },
+          {
+            "timeKey": "11:45",
+            "w": 141,
+            "c": 847
+          },
+          {
+            "timeKey": "11:50",
+            "w": 208,
+            "c": 1488
+          },
+          {
+            "timeKey": "11:55",
+            "w": 220,
+            "c": 1086
+          },
+          {
+            "timeKey": "12:00",
+            "w": 157,
+            "c": 804
+          },
+          {
+            "timeKey": "12:05",
+            "w": 139,
+            "c": 814
+          }
+        ],
+        "id": 937
+      },
+      {
+        "date": "2025-10-08",
+        "filePath": "Lecture/graduate/2025 fall/foundations of geometry and topology by Liang Xiao/homework/g&t homework 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "12:05",
+            "w": 29,
+            "c": 161
+          },
+          {
+            "timeKey": "12:10",
+            "w": 113,
+            "c": 662
+          },
+          {
+            "timeKey": "12:15",
+            "w": 93,
+            "c": 605
+          },
+          {
+            "timeKey": "12:20",
+            "w": 154,
+            "c": 895
+          },
+          {
+            "timeKey": "12:25",
+            "w": 84,
+            "c": 403
+          },
+          {
+            "timeKey": "12:30",
+            "w": 383,
+            "c": 1795
+          },
+          {
+            "timeKey": "12:35",
+            "w": 335,
+            "c": 1461
+          },
+          {
+            "timeKey": "12:40",
+            "w": 143,
+            "c": 701
+          },
+          {
+            "timeKey": "12:45",
+            "w": 86,
+            "c": 435
+          },
+          {
+            "timeKey": "12:50",
+            "w": 46,
+            "c": 244
+          },
+          {
+            "timeKey": "12:55",
+            "w": 70,
+            "c": 315
+          },
+          {
+            "timeKey": "13:10",
+            "w": 1,
+            "c": 34
+          },
+          {
+            "timeKey": "13:15",
+            "w": 173,
+            "c": 897
+          },
+          {
+            "timeKey": "13:20",
+            "w": 121,
+            "c": 696
+          },
+          {
+            "timeKey": "13:25",
+            "w": 112,
+            "c": 539
+          },
+          {
+            "timeKey": "13:30",
+            "w": 49,
+            "c": 286
+          },
+          {
+            "timeKey": "13:40",
+            "w": 99,
+            "c": 653
+          },
+          {
+            "timeKey": "13:45",
+            "w": 64,
+            "c": 339
+          },
+          {
+            "timeKey": "13:50",
+            "w": 491,
+            "c": 3201
+          },
+          {
+            "timeKey": "13:55",
+            "w": -51,
+            "c": -381
+          },
+          {
+            "timeKey": "14:35",
+            "w": 17,
+            "c": 101
+          },
+          {
+            "timeKey": "14:40",
+            "w": -335,
+            "c": -2209
+          },
+          {
+            "timeKey": "14:45",
+            "w": 76,
+            "c": 432
+          },
+          {
+            "timeKey": "14:50",
+            "w": 172,
+            "c": 985
+          },
+          {
+            "timeKey": "14:55",
+            "w": 86,
+            "c": 424
+          }
+        ],
+        "id": 938
+      },
+      {
+        "date": "2025-10-08",
+        "filePath": "Lecture/graduate/2025 fall/group theory by Lu Guo/homework/gt homework 1.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:05",
+            "w": 69,
+            "c": 413
+          },
+          {
+            "timeKey": "15:10",
+            "w": 440,
+            "c": 2872
+          },
+          {
+            "timeKey": "15:15",
+            "w": 144,
+            "c": 856
+          },
+          {
+            "timeKey": "15:20",
+            "w": -69,
+            "c": -665
+          },
+          {
+            "timeKey": "15:25",
+            "w": -187,
+            "c": -1200
+          },
+          {
+            "timeKey": "15:30",
+            "w": -33,
+            "c": -207
+          },
+          {
+            "timeKey": "15:35",
+            "w": 28,
+            "c": 127
+          },
+          {
+            "timeKey": "15:40",
+            "w": 5,
+            "c": 40
+          }
+        ],
+        "id": 939
+      },
+      {
+        "date": "2025-10-08",
+        "filePath": "Lecture/graduate/2025 fall/group theory by Lu Guo/homework/gt homework 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:40",
+            "w": 209,
+            "c": 1255
+          },
+          {
+            "timeKey": "15:45",
+            "w": 173,
+            "c": 983
+          },
+          {
+            "timeKey": "15:50",
+            "w": 15,
+            "c": 141
+          },
+          {
+            "timeKey": "15:55",
+            "w": 0,
+            "c": -27
+          },
+          {
+            "timeKey": "16:05",
+            "w": 41,
+            "c": 198
+          },
+          {
+            "timeKey": "16:10",
+            "w": 195,
+            "c": 3206
+          },
+          {
+            "timeKey": "16:15",
+            "w": 79,
+            "c": -39
+          },
+          {
+            "timeKey": "16:20",
+            "w": 58,
+            "c": 214
+          },
+          {
+            "timeKey": "16:25",
+            "w": 80,
+            "c": 559
+          },
+          {
+            "timeKey": "16:30",
+            "w": 428,
+            "c": 2952
+          },
+          {
+            "timeKey": "16:35",
+            "w": -80,
+            "c": -822
+          },
+          {
+            "timeKey": "16:40",
+            "w": 165,
+            "c": 1054
+          },
+          {
+            "timeKey": "16:45",
+            "w": 192,
+            "c": 1065
+          },
+          {
+            "timeKey": "16:55",
+            "w": -164,
+            "c": -905
+          },
+          {
+            "timeKey": "17:00",
+            "w": 214,
+            "c": 1184
+          },
+          {
+            "timeKey": "17:05",
+            "w": -33,
+            "c": -179
+          },
+          {
+            "timeKey": "17:10",
+            "w": 75,
+            "c": 418
+          },
+          {
+            "timeKey": "17:15",
+            "w": 12,
+            "c": 138
+          },
+          {
+            "timeKey": "17:20",
+            "w": 23,
+            "c": 130
+          },
+          {
+            "timeKey": "17:25",
+            "w": 93,
+            "c": 445
+          },
+          {
+            "timeKey": "17:30",
+            "w": 616,
+            "c": 3382
+          },
+          {
+            "timeKey": "17:35",
+            "w": -722,
+            "c": -3898
+          },
+          {
+            "timeKey": "17:40",
+            "w": 238,
+            "c": 1920
+          },
+          {
+            "timeKey": "17:45",
+            "w": -31,
+            "c": -644
+          },
+          {
+            "timeKey": "17:50",
+            "w": 131,
+            "c": 759
+          },
+          {
+            "timeKey": "17:55",
+            "w": 1,
+            "c": 4
+          },
+          {
+            "timeKey": "18:15",
+            "w": 54,
+            "c": 686
+          },
+          {
+            "timeKey": "18:20",
+            "w": 75,
+            "c": 520
+          },
+          {
+            "timeKey": "18:25",
+            "w": 306,
+            "c": 1887
+          },
+          {
+            "timeKey": "18:30",
+            "w": 38,
+            "c": -167
+          },
+          {
+            "timeKey": "18:35",
+            "w": -2,
+            "c": -11
+          },
+          {
+            "timeKey": "18:40",
+            "w": 193,
+            "c": 1487
+          },
+          {
+            "timeKey": "18:45",
+            "w": -108,
+            "c": -771
+          },
+          {
+            "timeKey": "18:50",
+            "w": -40,
+            "c": -338
+          }
+        ],
+        "id": 940
+      },
+      {
+        "date": "2025-10-08",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/homework/qm&qi homework 1.md",
+        "wordCountStart": 2147,
+        "charCountStart": 10885,
+        "changes": [
+          {
+            "timeKey": "16:00",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 941
       }
     ],
     "daysWithCompletedGoal": [
@@ -28256,7 +28742,9 @@
       "2025-09-29",
       "2025-09-30",
       "2025-10-02",
-      "2025-10-04"
+      "2025-10-04",
+      "2025-10-07",
+      "2025-10-08"
     ]
   }
 }
