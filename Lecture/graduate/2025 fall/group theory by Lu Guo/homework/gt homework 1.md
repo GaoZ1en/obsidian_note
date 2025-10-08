@@ -43,4 +43,15 @@ X^{-1}(R\otimes R)X & =\begin{pmatrix}
 \end{pmatrix}
 \end{align}$$
 
-notice that $\displaystyle{R}$ can be viewed as a rotation of $\displaystyle{\pi}$ around $\displaystyle{x}$ axis, amd $\displaystyle{S}$ can be viewed as a rotation of $\displaystyle{\frac{2\pi}{3}}$ around
+notice that
+
+$$
+X = \frac{1}{\sqrt{2}}\begin{pmatrix}
+1 & 0 & 1 & 0 \\
+0 & 1 & 0 & -1 \\
+0 & -1 & 0 & -1 \\
+1 & 0 & -1 & 0
+\end{pmatrix}
+$$
+
+satisfies the requirement.
