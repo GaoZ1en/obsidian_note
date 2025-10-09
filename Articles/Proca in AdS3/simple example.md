@@ -127,10 +127,40 @@ $$\begin{align}
 S & =\int ^{t_{f}}_{t_{i}}\mathrm{d}t\left(\frac{1}{2}\dot{x}^{2}-\frac{1}{2}\omega ^{2}x^{2}+\frac{1}{2}y^{2}-\lambda y\dot{x}\right)
 \end{align}$$
 
+with $\displaystyle{0<\lambda<1}$
+
 ## Dirac formalism
 
 the canonical momenta are
 
 $$\begin{align}
-p_{x} & =
+p_{x} & =\frac{\delta S}{\delta x}=\dot{x}-\lambda y \\
+p_{y} & =\frac{\delta S}{\delta y}=0
 \end{align}$$
+
+we got a primary constraint $\displaystyle{\phi _{1}=p_{y}\approx 0}$. the total Hamiltonian is
+
+$$\begin{align}
+H_{\text{tot}} & =H+\lambda\phi _{1} \\
+ & =p_{x}\dot{x}-L+\lambda \phi _{1} \\
+ & =p_{x}(p_{x}+\lambda y)-\frac{1}{2}(p_{x}+\lambda y)^{2}+\frac{1}{2}\omega ^{2}x^{2}-\frac{1}{2}y^{2}+\lambda y(p_{x}+\lambda y) \\
+ & =\frac{1}{2}(p_{x}+\lambda y)^{2}+\frac{1}{2}\omega ^{2}x^{2}-\frac{1}{2}y^{2}
+\end{align}$$
+
+(here the $\displaystyle{\dot{y}}$ dependence is absorbed in the Lagrange multiplier $\displaystyle{\lambda}$). we should require that the primary constraint is preserved during the time evolution, i.e., we have
+
+$$\begin{align}
+\dot{\phi}_{1} & =[\phi _{1},H_{\text{tot}}] \\
+ & =y-\lambda(p_{x}+\lambda y)
+\end{align}$$
+
+we got a secondary constraint $\displaystyle{\phi _{2}=(1-\lambda ^{2})y-\lambda p_{x}}$, and the consistency condition of secondary constraint gives
+
+$$\begin{align}
+\dot{\phi}_{2} & =[\phi _{2},H_{\text{tot}}] \\
+ & =(1-\lambda ^{2})[y,H_{\text{tot}}]-\lambda[p_{x},H_{\text{tot}}] \\
+ & =\lambda \partial _{x}H_{\text{tot}} \\
+ & =\lambda \omega ^{2}x
+\end{align}$$
+
+which gives $\displaystyle{\lambda=0}$. 
