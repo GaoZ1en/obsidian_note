@@ -319,7 +319,7 @@ N-2M\leqslant \mathrm{rank}\sigma _{ij}\leqslant N-M
 
 in general (when all constraints are first class, $\displaystyle{\mathrm{rank}\sigma _{ij}=N-2M}$, and when all constraints are second class, $\displaystyle{\mathrm{rank}\sigma _{ij}=N-M}$).
 
-# first class constraint surface.
+## first class constraint surface.
 
 we first consider the case where all the constraints are first class. $\displaystyle{\gamma _{a},a=1,\dots,M}$ define vectors $\displaystyle{X^{\lambda}_{a}}$ through
 

@@ -10,12 +10,59 @@ L(x,\dot x;y,\lambda) &= \tfrac12\dot x^{2}-\tfrac12\omega ^{2}x^{2}+\tfrac12 y^
 \end{align}
 $$
 
+$$\tag{.}\begin{align}
+(1-\lambda ^{2})\ddot{x}& =\omega ^{2}x
+\end{align}$$
+
 相空间坐标与正则对：$\,(x,p_x),(y,p_y),(\lambda,p_\lambda)$，基本泊松括号（沿用笔记记号 $[\,,\,]$ 表示 PB）：
 $$
 \begin{align}
 [x,p_x]=1,\quad [y,p_y]=1,\quad [\lambda,p_\lambda]=1,\quad \text{其余为 }0.
 \end{align}
 $$
+
+$$\begin{align}
+\delta S & =\int ^{t_{f}}_{t_{i}}\left(-\ddot{x}\delta x-\omega ^{2}x\delta x+y\delta y+\lambda \dot{y}\delta x-\lambda \dot{x}\delta y\right)+(\dot{x}\delta x-\lambda y\delta x)| \\
+E_{x} & =-\ddot{x}-\omega ^{2}x+\lambda \dot{y} \\
+E_{y} & =y-\lambda \dot{x} \\
+\theta & =(\dot{x}-\lambda y)\delta x \\
+\omega & =(\delta \dot{x}-\lambda \delta y)\wedge \delta x
+\end{align}$$
+
+$$\begin{align}
+-\ddot{x}-\omega ^{2}x+\lambda \dot{y} & =0 \\
+y-\lambda \dot{x} & =0 \\
+\implies \ddot{x}+\frac{\omega ^{2}}{1-\lambda ^{2}}x & =0 \\
+y & =\lambda \dot{x}
+\end{align}$$
+
+$$\begin{align}
+x & =\frac{1}{\sqrt{ 2\omega'(1-\lambda ^{2}) }}(ae^{-i\omega' t}+a^{\dagger}e^{i\omega't}) \\
+y & =\frac{i\omega'\lambda}{\sqrt{ 2\omega'(1-\lambda ^{2}) }}(-ae^{-i\omega't}+a^{\dagger}e^{i\omega't})
+\end{align}$$
+
+$$\begin{align}
+\omega & =i\omega'C^{2}(1-\lambda ^{2})(-\delta ae^{-i\omega't}+\delta a^{\dagger}e^{i\omega't})\wedge(\delta ae^{-i\omega' t}+\delta a^{\dagger}e^{i\omega't}) \\
+ & =2i\omega'C^{2}(1-\lambda ^{2})\delta a^{\dagger}\wedge \delta a \\
+ & =i\delta a^{\dagger}\wedge \delta a
+\end{align}$$
+
+$$\begin{align}
+\left\{a^{\dagger},a\right\} & =-i \\
+\implies[a^{\dagger},a] & =1
+\end{align}$$
+
+$$\begin{align}
+\left\{q,p\right\} & \implies[q,p]
+\end{align}$$
+
+$$\begin{align}
+X_{\mathcal{O}} & =\int \mathrm{d}t \frac{\delta \mathcal{O}}{\delta ia^{\dagger}} \frac{\delta}{\delta a}-\frac{\delta \mathcal{O}}{\delta a} \frac{\delta}{\delta ia^{\dagger}}
+\end{align}$$
+
+$$\begin{align}
+\left\{\mathcal{O}_{1},\mathcal{O}_{2}\right\} & =X_{\mathcal{O}_{1}}\cdot X_{\mathcal{O}_{2}}\cdot \omega
+\end{align}$$
 
 ---
 
@@ -146,6 +193,10 @@ $$
 H_{\text{phys}}=\tfrac12\,p_x^2+\tfrac12\,\omega^2 x^2.
 $$
 
+$$\begin{align}
+\left\{x,p_{x}\right\}_{\text{D}}=1
+\end{align}$$
+
 ### 7) 量子化
 
 采用 Dirac 方案：二类约束先消去再量子化，或等价地以 Dirac 括号替代 PB 后再施行 $[\,\ ,\,]\to \tfrac1{i\hbar}[\,\ ,\,]_D$。由于 $[x,p_x]_D=1$，最终对易关系为
@@ -154,7 +205,7 @@ $$
 $$
 哈密顿算符
 $$
-\hat H=\tfrac12\,\hat p_x^{\,2}+\tfrac12\,\omega^2\hat x^{\,2},
+\hat H=\tfrac12\,\hat p_x^{\,2}+\tfrac12\,\frac{\omega^2}{1-\lambda ^{2}}\hat x^{\,2},
 $$
 即标准一维谐振子。
 
