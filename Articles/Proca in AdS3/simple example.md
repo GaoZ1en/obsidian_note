@@ -1,10 +1,12 @@
+# example 1
+
 $$\begin{align}
 S & =\int ^{t_{f}}_{t_{i}}\left(\frac{1}{2}A^{ab}\dot{x}_{a}\dot{x}_{b}+\frac{1}{2}B^{\alpha \beta}\phi _{\alpha}\phi _{\beta}-C^{\alpha a}\phi _{\alpha}\dot{x}_{a}\right)
 \end{align}$$
 
 assume $\displaystyle{A^{ab},B^{\alpha \beta},C^{\alpha a}}$ have no time dependence and good properties
 
-# Dirac formalism
+## Dirac formalism
 
 $$\begin{align}
 p^{a} & =\frac{\partial L}{\partial \dot{x}_{a}}=A^{ab}\dot{x}_{b}-C^{\alpha a}\phi _{\alpha} \\
@@ -65,7 +67,7 @@ $$\begin{align}
 \left\{x_{a},p^{b}\right\}_{\text{Dirac}} & =\delta _{a}^{b}
 \end{align}$$
 
-# CPS formalism
+## CPS formalism
 
 $$\begin{align}
 S & =\int ^{t_{f}}_{t_{i}}\left(\frac{1}{2}A^{ab}\dot{x}_{a}\dot{x}_{b}+\frac{1}{2}B^{\alpha \beta}\phi _{\alpha}\phi _{\beta}-C^{\alpha a}\phi _{\alpha}\dot{x}_{a}\right)
@@ -118,3 +120,17 @@ $$\begin{align}
 \end{align}$$
 
 which agrees with the Dirac brackets.
+
+# example 2
+
+$$\begin{align}
+S & =\int ^{t_{f}}_{t_{i}}\mathrm{d}t\left(\frac{1}{2}\dot{x}^{2}-\frac{1}{2}\omega ^{2}x^{2}+\frac{1}{2}y^{2}-\lambda y\dot{x}\right)
+\end{align}$$
+
+## Dirac formalism
+
+the canonical momenta are
+
+$$\begin{align}
+p_{x} & =
+\end{align}$$
