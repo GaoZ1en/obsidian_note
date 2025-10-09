@@ -21,162 +21,86 @@ $$
 \end{align}
 $$
 
+# covariant phase space formalism
+
+take a variation of the action, we get the eoms and presymplectic potential
+
 $$\begin{align}
-\delta S & =\int ^{t_{f}}_{t_{i}}\left(-\ddot{x}\delta x-\omega ^{2}x\delta x+y\delta y+\lambda \dot{y}\delta x-\lambda \dot{x}\delta y\right)+(\dot{x}\delta x-\lambda y\delta x)| \\
+\delta S & =\int ^{t_{f}}_{t_{i}}\left(E_{x}\delta x+E_{y}\delta y\right)+\theta|_{t_{f}}-\theta|_{t_{i}} \\
 E_{x} & =-\ddot{x}-\omega ^{2}x+\lambda \dot{y} \\
 E_{y} & =y-\lambda \dot{x} \\
-\theta & =(\dot{x}-\lambda y)\delta x \\
+\theta & =(\dot{x}-\lambda y)\delta x
+\end{align}$$
+
+take a variation of the presymplectic potential, we get the presymplectic form
+
+$$\begin{align}
 \omega & =(\delta \dot{x}-\lambda \delta y)\wedge \delta x
 \end{align}$$
 
-$$\begin{align}
--\ddot{x}-\omega ^{2}x+\lambda \dot{y} & =0 \\
-y-\lambda \dot{x} & =0 \\
-\implies \ddot{x}+\frac{\omega ^{2}}{1-\lambda ^{2}}x & =0 \\
-y & =\lambda \dot{x}
-\end{align}$$
+the general solution of the eoms is
 
 $$\begin{align}
 x & =\frac{1}{\sqrt{ 2\omega'(1-\lambda ^{2}) }}(ae^{-i\omega' t}+a^{\dagger}e^{i\omega't}) \\
 y & =\frac{i\omega'\lambda}{\sqrt{ 2\omega'(1-\lambda ^{2}) }}(-ae^{-i\omega't}+a^{\dagger}e^{i\omega't})
 \end{align}$$
 
-$$\begin{align}
-\omega & =i\omega'C^{2}(1-\lambda ^{2})(-\delta ae^{-i\omega't}+\delta a^{\dagger}e^{i\omega't})\wedge(\delta ae^{-i\omega' t}+\delta a^{\dagger}e^{i\omega't}) \\
- & =2i\omega'C^{2}(1-\lambda ^{2})\delta a^{\dagger}\wedge \delta a \\
- & =i\delta a^{\dagger}\wedge \delta a
-\end{align}$$
+where $\displaystyle{\omega'=\frac{\omega ^{2}}{1-\lambda ^{2}}}$. under this parametrization, the presymplectic form becomes
 
 $$\begin{align}
-\left\{a^{\dagger},a\right\} & =-i \\
-\implies[a^{\dagger},a] & =1
+\omega & =i\delta a^{\dagger}\wedge \delta a
 \end{align}$$
+
+which gives the following standard Poisson bracket
 
 $$\begin{align}
-\left\{q,p\right\} & \implies[q,p]
+\{a,a^{\dagger}\} & =-i
 \end{align}$$
+
+# Dirac formalism
+
+the canonical momenta are given by
 
 $$\begin{align}
-X_{\mathcal{O}} & =\int \mathrm{d}t \frac{\delta \mathcal{O}}{\delta ia^{\dagger}} \frac{\delta}{\delta a}-\frac{\delta \mathcal{O}}{\delta a} \frac{\delta}{\delta ia^{\dagger}}
+p_{x} & =\frac{\delta S}{\delta \dot{x}}=\dot{x}-\lambda y \\
+p_{y} & =\frac{\delta S}{\delta \dot{y}}=0
 \end{align}$$
+
+we get a primary constraint $\displaystyle{\phi _{1}=p_{y}\approx 0}$. the total Hamiltonian is given by
 
 $$\begin{align}
-\left\{\mathcal{O}_{1},\mathcal{O}_{2}\right\} & =X_{\mathcal{O}_{1}}\cdot X_{\mathcal{O}_{2}}\cdot \omega
+H_{\text{tot}} & =H+u\phi _{1} \\
+ & =p_{x}\dot{x}-L+u\phi _{1} \\
+ & =\frac{1}{2}(p_{x}+\lambda y)^{2}+\frac{1}{2}\omega ^{2}x^{2}-\frac{1}{2}y^{2}+up_{y}
 \end{align}$$
+
+the time evolution of primary constraint $\displaystyle{\phi _{1}}$ should vanish weakly, which gives a secondary constraint
 
 $$\begin{align}
-
+\phi _{2}=\dot{\phi}_{1} & =\{\phi _{1},H_{\text{tot}}\} \\
+ & =(1-\lambda ^{2})y-\lambda p_{x}\approx 0
 \end{align}$$
 
----
+since
 
-## Formalism Summary
+$$\begin{align}
+\left\{\phi _{1},\phi _{2}\right\} & =\lambda ^{2}-1\neq 0
+\end{align}$$
 
-- 主动量定义：$\,p_n=\partial L/\partial \dot q^n$；主约束由奇异 Hessian 导致；
-- 总哈密顿量：$\,H_T=H_c+u^m\phi_m$；
-- 一致性条件：$\,\dot\phi_m=[\phi_m,H_T]\approx0$ 产生次约束或定出乘子；
-- 约束分类：一阶（first class, $\gamma$）vs. 二阶（second class, $\chi$）；
-- Dirac 括号：$\,[F,G]_D=[F,G]-[F,\chi_\alpha]C^{\alpha\beta}[\chi_\beta,G]$，其中 $C_{\alpha\beta}=[\chi_\alpha,\chi_\beta]$；
-- 自由度计数：$\#\text{d.o.f}=N-\#\text{FC}-\tfrac12\#\text{SC}$，$N$ 为正则对数。
+this is a system with 2 second-class constraints. to ensure the consistency of $\displaystyle{\phi _{2}}$, we have
 
----
+$$\begin{align}
+\dot{\phi}_{2} & =(1-\lambda ^{2})u+\lambda \omega ^{2}x\implies u=\frac{\lambda\omega ^{2}x}{\lambda ^{2}-1}
+\end{align}$$
 
-## Completed Derivations
+thus the Hamiltonian is
 
-### 1) 正则动量与主约束
+$$\begin{align}
+H' & =\frac{1}{2}(p_{x}+\lambda y)^{2}+\frac{1}{2}\omega ^{2}x^{2}-\frac{1}{2}y^{2}+\frac{\lambda \omega ^{2}x}{\lambda ^{2}-1}p_{y}
+\end{align}$$
 
-$$
-\begin{align}
-p_x&=\frac{\partial L}{\partial \dot x}=\dot x-\lambda y,\\
-p_y&=\frac{\partial L}{\partial \dot y}=0,\qquad \Rightarrow\; \phi_1:=p_y\approx0,\\
-p_\lambda&=\frac{\partial L}{\partial \dot\lambda}=0,\qquad \Rightarrow\; \phi_2:=p_\lambda\approx0.
-\end{align}
-$$
+the Poisson brackets are replaced by Dirac brackets
 
-仅 $\dot x$ 出现，$\dot y,\dot\lambda$ 不出现，故产生两个主约束 $\phi_1,\phi_2$。
-
-### 2) 规范哈密顿量与总哈密顿量
-
-以 $\dot x=p_x+\lambda y$ 回代，有
-$$
-\begin{align}
-H_c&=p_x\dot x-L\\
-&=\tfrac12\,p_x^2+\tfrac12\,\omega^2 x^2-\tfrac12\,y^2+p_x\lambda y+\tfrac12\,\lambda^2 y^2\\
-&=\tfrac12\,(p_x+\lambda y)^2+\tfrac12\,\omega^2 x^2-\tfrac12\,y^2.
-\end{align}
-$$
-
-引入乘子 $u_y,u_\lambda$，
-$$
-\begin{align}
-H_T\;=\;H_c+u_y\,p_y+u_\lambda\,p_\lambda.
-\end{align}
-$$
-
-### 3) 次约束（保持主约束随时间的一致性）
-
-利用 $\dot f=[f,H_T]$：
-$$
-\begin{align}
-\dot p_y&=-\frac{\partial H_T}{\partial y}=y-\lambda p_x-\lambda^2 y\;\approx\;0\\
-&\Rightarrow\;\phi_3:=\,(1-\lambda^2)\,y-\lambda p_x\;\approx\;0,\\[2mm]
-\dot p_\lambda&=-\frac{\partial H_T}{\partial \lambda}=-(p_x y+\lambda y^2)\;\approx\;0\\
-&\Rightarrow\;\phi_4:=\,y\,(p_x+\lambda y)\;\approx\;0.
-\end{align}
-$$
-
-至此共有四条约束 $\{\phi_1,\phi_2,\phi_3,\phi_4\}$。
-
-### 4) 约束代数与分类（第二类）
-
-构造 $\,C_{ab}=[\phi_a,\phi_b]$（按顺序 $\phi_1=p_y,\phi_2=p_\lambda,\phi_3,\phi_4$）：
-
-<details>
-<summary>展开计算</summary>
-
-$$
-\begin{align}
-[\phi_1,\phi_3]&=\lambda^2-1, & [\phi_1,\phi_4]&=-(p_x+2\lambda y),\\
-[\phi_2,\phi_3]&=2\lambda y+p_x, & [\phi_2,\phi_4]&=-y^2,\\
-[\phi_3,\phi_4]&=0, & [\phi_1,\phi_2]&=0.
-\end{align}
-$$
-
-矩阵写成分块反对称形式
-$$
-C=\begin{pmatrix}
-0 & A\\
--A^{\!T} & 0
-\end{pmatrix},\quad
-A=\begin{pmatrix}
-\lambda^2-1 & -(p_x+2\lambda y)\\
-2\lambda y+p_x & -y^2
-\end{pmatrix}.
-$$
-
-$\det C=(\det A)^2$，而
-$$
-\det A=-(\lambda^2-1)\,y^2+(p_x+2\lambda y)^2\equiv\Delta.
-$$
-</details>
-
-结论：$\Delta\neq0$ 的“正则区”上，$C$ 可逆，$\{\phi_a\}$ 构成一组二类约束；因此本系统无（生成自由函数的）一类约束与规范自由度。
-
-自由度计数（$N=3$ 个正则对，FC=0，SC=4）：
-$$
-\#\text{d.o.f}=N-\#\text{FC}-\tfrac12\#\text{SC}=3-0-2=1.
-$$
-
-### 5) 乘子由一致性确定（无新的约束）
-
-保持 $\phi_3,\phi_4$ 的一致性给出关于 $u_y,u_\lambda$ 的线性方程（在正则区可解）：
-$$
-\begin{align}
-&(1-\lambda^2)\,u_y+(-2\lambda y-p_x)\,u_\lambda+\lambda\,\omega^2 x\;\approx\;0,\\
-&(p_x+2\lambda y)\,u_y+y^2\,u_\lambda-\omega^2 x\,y\;\approx\;0.
-\end{align}
-$$
-由于 $\Delta\neq0$，这两式解出 $u_y,u_\lambda$，因此不产生新的约束。
 
 ### 6) Dirac 括号与约化相空间
 

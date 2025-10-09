@@ -157,8 +157,6 @@ $$\begin{align}
 [\phi _{a},\phi _{j}] & =V^{m}_{a}[\phi _{m},\phi _{j}]=0
 \end{align}$$
 
-
-
 ## first class constraints
 
 the presence of arbitrary functions $\displaystyle{v^{a}}$ in the total Hamiltonian tells us that not all variables $\displaystyle{q^{n},p_{n}}$ are observable. in fact, although physical state is uniquely defined by initial conditions, the converse is not true. consider time evolution of the operator $\displaystyle{\mathcal{O}}$, and determined by two sets of $\displaystyle{v^{a}}$ and $\displaystyle{\tilde{v}^{a}}$, we have
