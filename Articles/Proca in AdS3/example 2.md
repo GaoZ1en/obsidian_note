@@ -64,6 +64,10 @@ $$\begin{align}
 \left\{\mathcal{O}_{1},\mathcal{O}_{2}\right\} & =X_{\mathcal{O}_{1}}\cdot X_{\mathcal{O}_{2}}\cdot \omega
 \end{align}$$
 
+$$\begin{align}
+
+\end{align}$$
+
 ---
 
 ## Formalism Summary

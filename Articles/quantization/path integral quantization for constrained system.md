@@ -239,9 +239,11 @@ then we get a primary constraint $\displaystyle{\varphi _{1}=p_{\phi}\approx 0}$
 $$\tag{5.3}
 \begin{align}
 H & =p_{x}\dot{x}-L \\
- & =\frac{p_{x}^{2}}{2m}+\frac{\lambda p_{x}\phi}{m}+\left( \frac{\lambda ^{2}}{2m}-\frac{1}{2} \right)\phi ^{2}+\frac{1}{2}kx^{2}
+ & =\frac{p_{x}^{2}}{2m}+\frac{\lambda p_{x}\phi}{m}+\left( \frac{\lambda ^{2}}{2m}-\frac{1}{2} \right)\phi ^{2}+\frac{1}{2}kx^{2} \\
+ & =\frac{(p_{x}+\lambda \phi)^{2}}{2m}+\frac{1}{2}kx^{2}-\frac{1}{2}\phi ^{2}
 \end{align}
 $$
+
 
 consider the Poisson bracket between $\displaystyle{\varphi _{1}}$ and $\displaystyle{H}$
 

@@ -239,9 +239,3 @@ Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi e^{i \int _{-\infty}^{+\infty}\mat
 $$
 
 define 
-
-$$\tag{.}
-\begin{align}
-
-\end{align}
-$$
