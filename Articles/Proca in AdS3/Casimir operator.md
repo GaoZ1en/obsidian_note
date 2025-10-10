@@ -90,49 +90,22 @@ $$\begin{align}
 $$\begin{align}
 \phi _{0,0} & =\sqrt{ \frac{1}{2\pi} }e^{-i\Delta t}(1+r^{2})^{-\Delta /2} \\
 \Delta  & =1+\sqrt{1+\mu ^{2}} \\
-\phi _{n,\bar{n}} & =C_{n,\bar{n}}\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\phi _{0,0}
+\phi _{n,\bar{n}} & =\sqrt{ \frac{1}{n!\bar{n}!(\Delta)_{n}(\Delta)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\phi _{0,0}
 \end{align}$$
 
-$$\begin{align}
-\omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \phi \wedge \delta \phi
-\end{align}$$
-
-$$\begin{align}
-\omega[\phi _{0,0},\phi _{0,0}^{*}] & =-4\pi i\Delta|\mathcal{N}_{0,0}|^{2}\int \mathrm{d}r r(1+r^{2})^{-\Delta-1} \\
- & =-2\pi i|\mathcal{N}_{0,0}|^{2} \\
-\implies \mathcal{N}_{0,0} & =\sqrt{ \frac{1}{2\pi} }
-\end{align}$$
+by induction we have
 
 $$\begin{align}
 \omega[\phi _{n_{1},\bar{n}_{1}},\phi _{n_{2},\bar{n}_{2}}^{*}]=-i\delta _{n_{1}n_{2}}\delta _{\bar{n}_{1}\bar{n}_{2}}
 \end{align}$$
 
-since
+here we use
 
 $$\begin{align}
-\mathcal{L}_{X_{\xi}}\omega & =-\delta ^{2}H_{\xi}=0
-\end{align}$$
-
-then we have
-
-$$\begin{align}
-\omega[\mathcal{L}_{\xi}\phi _{n_{1},\bar{n}_{1}},\phi _{n_{2},\bar{n}_{2}}]+\omega[\phi _{n_{1},\bar{n}_{1}},\mathcal{L}_{\xi}\phi _{n_{2},\bar{n}_{2}}]=0
-\end{align}$$
-
-$$\tag{.}\begin{align}
-\phi _{n,\bar{n}} & =C_{n,\bar{n}}\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\phi _{0,0} \\
-\phi _{0,0} & =\sqrt{ \frac{1}{2\pi} }e^{-i\Delta t}(1+r^{2})^{-\Delta /2} \\
-\end{align}$$
-
-$$\begin{align}
-\mathcal{L}_{\xi_{-1}}\phi _{n,\bar{n}} & =\frac{C_{n,\bar{n}}}{C_{n+1,\bar{n}}}\phi _{n+1,\bar{n}} \\
-\mathcal{L}_{\bar{\xi}_{-1}}\phi _{n,\bar{n}} & =\frac{C_{n,\bar{n}}}{C_{n,\bar{n}+1}}\phi _{n,\bar{n}+1} \\
-\mathcal{L}_{\xi _{0}}\phi _{n,\bar{n}} & =-i\frac{\Delta+2n}{2}\phi _{n,\bar{n}} \\
-\mathcal{L}_{\bar{\xi}_{0}}\phi _{n,\bar{n}} & =-i\frac{\Delta+2\bar{n}}{2}\phi _{n,\bar{n}}
-\end{align}$$
-
-$$\begin{align}
-\mathcal{L}_{\xi _{1}}\phi _{n,\bar{n}} & =C_{n,\bar{n}}\mathcal{L}_{\xi_{1}}\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\phi _{0,0} \\
- & =C_{n,\bar{n}}\left(\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\xi_{1}}-2ni\mathcal{L}_{\xi _{-1}}^{n-1}\mathcal{L}_{\xi_{0}}-n(n-1)\mathcal{L}_{\xi _{-1}}^{n-1}\right)\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\phi _{0,0} \\
- & =C_{n,\bar{n}}\left(-2ni \frac{\Delta}{2}\right)
+\mathcal{L}_{\xi _{-1}}\phi _{n,\bar{n}} & =\sqrt{ (n+1)(\Delta+n) }\phi _{n+1,\bar{n}} & \mathcal{L}_{\xi _{-1}}\phi _{n,\bar{n}}^{*} & =-\sqrt{ n(\Delta+n-1) }\phi _{n-1,\bar{n}}^{*} \\
+\mathcal{L}_{\xi_{0}}\phi _{n,\bar{n}} & =-i\frac{\Delta+2n}{2}\phi _{n,\bar{n}} & \mathcal{L}_{\xi_{0}}\phi _{n,\bar{n}}^{*} & =i\frac{\Delta+2n}{2}\phi _{n,\bar{n}}^{*} \\
+\mathcal{L}_{\xi _{1}}\phi _{n,\bar{n}} & =-\sqrt{ n(\Delta+n-1) }\phi _{n-1,\bar{n}} & \mathcal{L}_{\xi _{1}}\phi _{n,\bar{n}}^{*} & =\sqrt{ (n+1)(\Delta+n) }\phi _{n+1,\bar{n}}^{*} \\
+\mathcal{L}_{\bar{\xi}_{-1}}\phi _{n,\bar{n}} & =\sqrt{ (\bar{n}+1)(\Delta+\bar{n}) }\phi _{n,\bar{n}+1} & \mathcal{L}_{\bar{\xi}_{-1}}\phi _{n,\bar{n}}^{*} & =-\sqrt{ \bar{n}(\Delta+\bar{n}-1) }\phi _{n,\bar{n}-1}^{*} \\
+\mathcal{L}_{\bar{\xi}_{0}}\phi _{n,\bar{n}} & =-i\frac{\Delta+2\bar{n}}{2}\phi _{n,\bar{n}} & \mathcal{L}_{\bar{\xi}_{0}}\phi _{n,\bar{n}}^{*} & =i\frac{\Delta+2\bar{n}}{2}\phi _{n,\bar{n}}^{*} \\
+\mathcal{L}_{\bar{\xi}_{1}}\phi _{n,\bar{n}} & =-\sqrt{ \bar{n}(\Delta+\bar{n}-1) }\phi _{n,\bar{n}-1} & \mathcal{L}_{\bar{\xi}_{1}}\phi _{n,\bar{n}}^{*} & =\sqrt{ (\bar{n}+1)(\Delta+\bar{n}) }\phi _{n,\bar{n}+1}^{*}
 \end{align}$$
