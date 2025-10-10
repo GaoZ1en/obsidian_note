@@ -211,19 +211,19 @@ take a variation of the action, we get the eom and presymplectic potential
 $$\begin{align}
 \delta S & =\int _{M} \mathrm{d}^{3}x\sqrt{ -g }E\delta \varphi +\theta|_{t_{f}}-\theta|_{t_{i}} \\
 E & =\nabla ^{2}\varphi -\mu ^{2}\varphi \\
-\theta & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\phi \delta \phi
+\theta & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\varphi \delta \varphi
 \end{align}$$
 
 take a further variation of the presymplectic potential, we get the presymplectic form
 
 $$\begin{align}
-\omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \phi \wedge \delta \phi
+\omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \varphi \wedge \delta \varphi
 \end{align}$$
 
 the general solution of the eom is given by
 
 $$\begin{align}
-\phi & =\sum ^{\infty}_{n,\bar{n}=0}\left(a_{n,\bar{n}}\varphi _{n,\bar{n}}(x)+a^{\dagger}_{n,\bar{n}}\varphi _{n,\bar{n}}(x)\right) \\
+\varphi & =\sum ^{\infty}_{n,\bar{n}=0}\left(a_{n,\bar{n}}\varphi _{n,\bar{n}}(x)+a^{\dagger}_{n,\bar{n}}\varphi _{n,\bar{n}}(x)\right) \\
 \varphi _{n,\bar{n}}(x) & =\sqrt{ \frac{1}{n!\bar{n}!(\Delta)_{n}(\Delta)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\varphi _{00}(x) \\
 \varphi _{0,0}(x) & =\sqrt{ \frac{1}{2\pi} }e^{-i\Delta t}(1+r^{2})^{-\frac{\Delta}{2}} \\
 \Delta & =1+\sqrt{ 1+\mu ^{2} }
@@ -238,7 +238,7 @@ $$\begin{align}
 which gives the standard Poisson brackets
 
 $$\begin{align}
-\left\{a^{\dagger}_{m_{1}n_{1}},a_{m_{2}n_{2}}\right\} & =-i\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}}
+\left\{a_{n_{1},\bar{n}_{1}}^{\dagger},a_{n_{2},\bar{n}_{2}}\right\} & =-1
 \end{align}$$
 
 $\mathrm{AdS}_{3}$ has 6 Killing vectors
@@ -255,7 +255,34 @@ $$\begin{align}
 the Noether charge corresponding to $\displaystyle{\xi}$ is given by
 
 $$\begin{align}
-H_{\xi} & =X_{\xi}\cdot \theta-\int _{\Sigma}\xi \cdot \mathbf{L} \\
- & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi \right)
+H_{\xi} & =-\frac{1}{2}\omega[\mathcal{L}_{\xi}\varphi ,\varphi]
 \end{align}$$
 
+which gives
+
+$$\begin{align}
+H_{\xi_{0}} & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}\left(\frac{\Delta}{2}+n\right)\left(a_{n,\bar{n}}a^{\dagger}_{n,\bar{n}}+a^{\dagger}_{n,\bar{n}}a_{n,\bar{n}}\right) \\
+H_{\bar{\xi}_{0}} & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}\left(\frac{\Delta}{2}+\bar{n}\right)(a_{n,\bar{n}}a^{\dagger}_{n,\bar{n}}+a^{\dagger}_{n,\bar{n}}a_{n,\bar{n}})
+\end{align}$$
+
+here we use
+
+$$\begin{align}
+\mathcal{L}_{\xi _{-1}}\phi _{n,\bar{n}} & =\sqrt{ (n+1)(\Delta+n) }\phi _{n+1,\bar{n}} & \mathcal{L}_{\xi _{-1}}\phi _{n,\bar{n}}^{*} & =-\sqrt{ n(\Delta+n-1) }\phi _{n-1,\bar{n}}^{*} \\
+\mathcal{L}_{\xi_{0}}\phi _{n,\bar{n}} & =-i\frac{\Delta+2n}{2}\phi _{n,\bar{n}} & \mathcal{L}_{\xi_{0}}\phi _{n,\bar{n}}^{*} & =i\frac{\Delta+2n}{2}\phi _{n,\bar{n}}^{*} \\
+\mathcal{L}_{\xi _{1}}\phi _{n,\bar{n}} & =-\sqrt{ n(\Delta+n-1) }\phi _{n-1,\bar{n}} & \mathcal{L}_{\xi _{1}}\phi _{n,\bar{n}}^{*} & =\sqrt{ (n+1)(\Delta+n) }\phi _{n+1,\bar{n}}^{*} \\
+\mathcal{L}_{\bar{\xi}_{-1}}\phi _{n,\bar{n}} & =\sqrt{ (\bar{n}+1)(\Delta+\bar{n}) }\phi _{n,\bar{n}+1} & \mathcal{L}_{\bar{\xi}_{-1}}\phi _{n,\bar{n}}^{*} & =-\sqrt{ \bar{n}(\Delta+\bar{n}-1) }\phi _{n,\bar{n}-1}^{*} \\
+\mathcal{L}_{\bar{\xi}_{0}}\phi _{n,\bar{n}} & =-i\frac{\Delta+2\bar{n}}{2}\phi _{n,\bar{n}} & \mathcal{L}_{\bar{\xi}_{0}}\phi _{n,\bar{n}}^{*} & =i\frac{\Delta+2\bar{n}}{2}\phi _{n,\bar{n}}^{*} \\
+\mathcal{L}_{\bar{\xi}_{1}}\phi _{n,\bar{n}} & =-\sqrt{ \bar{n}(\Delta+\bar{n}-1) }\phi _{n,\bar{n}-1} & \mathcal{L}_{\bar{\xi}_{1}}\phi _{n,\bar{n}}^{*} & =\sqrt{ (\bar{n}+1)(\Delta+\bar{n}) }\phi _{n,\bar{n}+1}^{*}
+\end{align}$$
+
+rearrange $\displaystyle{H_{\xi_{0}}}$ and $\displaystyle{H_{\bar{\xi}_{0}}}$, we identify Hamiltonian and angular momentum
+
+$$\begin{align}
+H & =H_{\xi_{0}}+H_{\bar{\xi}_{0}} \\
+ & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}\left(\Delta+n+\bar{n}\right)\left(a_{n,\bar{n}}a^{\dagger}_{n,\bar{n}}+a^{\dagger}_{n,\bar{n}}a_{n,\bar{n}}\right) \\
+J & =H_{\xi_{0}}-H_{\bar{\xi}_{0}} \\
+ & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}(n-\bar{n})\left(a_{n,\bar{n}}a_{n,\bar{n}}^{\dagger}+a^{\dagger}_{n,\bar{n}}a_{n,\bar{n}}\right)
+\end{align}$$
+
+coherent 
