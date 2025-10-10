@@ -299,7 +299,7 @@ $$\begin{align}
 a_{n,\bar{n}}\ket{0} =0
 \end{align}$$
 
-and by iteratively acting $\displaystyle{a^{\dagger}_{n,\bar{n}}}$ on $\displaystyle{\ket{0}}$, we get the excited states $\displaystyle{\prod _{n,\bar{n}=0}^{\infty}\frac{(a^{\dagger}_{n,\bar{n}})^{N_{n,\bar{n}}}}{\sqrt{ N_{n,\bar{n}}! }}\ket{0}}$, and the Hilbert space is then spanned by $\displaystyle{\left\{\prod _{n,\bar{n}=0}^{\infty}\frac{(a^{\dagger}_{n,\bar{n}})^{N_{n,\bar{n}}}}{\sqrt{ N_{n,\bar{n}}! }}\ket{0}\right\}}$.
+and by iteratively acting $\displaystyle{a^{\dagger}_{n,\bar{n}}}$ on $\displaystyle{\ket{0}}$, we get the excitation states $\displaystyle{\prod _{n,\bar{n}=0}^{\infty}\frac{(a^{\dagger}_{n,\bar{n}})^{N_{n,\bar{n}}}}{\sqrt{ N_{n,\bar{n}}! }}\ket{0}}$, and the Hilbert space is then spanned by $\displaystyle{\left\{\prod _{n,\bar{n}=0}^{\infty}\frac{(a^{\dagger}_{n,\bar{n}})^{N_{n,\bar{n}}}}{\sqrt{ N_{n,\bar{n}}! }}\ket{0}\right\}}$.
 
 in the quantum level, normal ordering is needed to calculate the Hamiltonian and angular momentum.
 
@@ -440,3 +440,137 @@ $$\begin{align}
 \omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\delta F^{\mu \nu}\wedge \delta A_{\nu}
 \end{align}$$
 
+the general solution of the eom is given by
+
+$$\begin{align}
+A^{\mu} & =\sum ^{\infty}_{n,\bar{n}=0}\left(a_{l,n,\bar{n}}{f^{(+)}_{l,n,\bar{n}}}^{\mu}+a_{r,n,\bar{n}}{f^{(+)}_{r,n,\bar{n}}}^{\mu}+a^{\dagger}_{l,n,\bar{n}}{f^{(-)}_{l,n,\bar{n}}}^{\mu}+a^{\dagger}_{r,n,\bar{n}}{f^{(-)}_{r,n,\bar{n}}}^{\mu}\right) \\
+{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!\mu _{n}(\mu+2)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{l,0,0}}^{\mu} \\
+{f^{(+)}_{l,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi _{1}^{\mu} \\
+{f^{(+)}_{r,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu+2)_{n}\mu _{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{r,0,0}}^{\mu} \\
+{f^{(+)}_{r,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}^{\mu}_{1}
+\end{align}$$
+
+under this parametrization, the symplectic form becomes
+
+$$\begin{align}
+\omega & =i\sum ^{\infty}_{n,\bar{n}=0}\delta a^{\dagger}_{l,n,\bar{n}}\wedge \delta a_{l,n,\bar{n}}+\delta a^{\dagger}_{r,n,\bar{n}}\wedge \delta a_{r,n,\bar{n}}
+\end{align}$$
+
+the Noether charge corresponding to $\displaystyle{\xi_{0}}$ and $\displaystyle{\bar{\xi}_{0}}$ is
+
+$$\begin{align}
+H_{\xi_{0}} & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}\left(\frac{\mu}{2}+n\right)\left(a_{l,n,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}}\right)+\left(\frac{\mu+2}{2}+n\right)\left(a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}\right) \\
+H_{\bar{\xi}_{0}} & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}\left(\frac{\mu+2}{2}+\bar{n}\right)\left(a_{l,n,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}}\right)+\left(\frac{\mu}{2}+n+\bar{n}\right)\left(a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}\right) \\
+\end{align}$$
+
+and we get the Hamiltonian and angular momentum
+
+$$\begin{align}
+H & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}(\mu+1+n+\bar{n})\left(a_{l,n,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}}+a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}\right) \\
+J & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}\left(n-\bar{n}-1\right)(a_{l,n,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}})+(n-\bar{n}+1)\left(a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}\right)
+\end{align}$$
+
+lift $\displaystyle{a_{l/r,n,\bar{n}}}$ and $\displaystyle{a^{\dagger}_{l/r,n,\bar{n}}}$ to quantum operators. vaccum sates $\displaystyle{\ket{0}}$ is defined as
+
+$$\begin{align}
+a_{l/r,n,\bar{n}}\ket{0} =0
+\end{align}$$
+
+excitation states
+
+$$\begin{align}
+\prod ^{\infty}_{n,\bar{n}=0}\frac{(a^{\dagger}_{l,n,\bar{n}})^{N_{l,n,\bar{n}}}(a^{\dagger}_{r,n,\bar{n}})^{N_{r,n,\bar{n}}}}{\sqrt{ N_{l,n,\bar{n}}!N_{r,n,\bar{n}}! }}\ket{0} 
+\end{align}$$
+
+and Hilbert space $\displaystyle{\left\{\prod ^{\infty}_{n,\bar{n}=0}\frac{(a^{\dagger}_{l,n,\bar{n}})^{N_{l,n,\bar{n}}}(a^{\dagger}_{r,n,\bar{n}})^{N_{r,n,\bar{n}}}}{\sqrt{ N_{l,n,\bar{n}}!N_{r,n,\bar{n}}! }}\ket{0} \right\}}$. normal ordering is proposed to the Hamiltonian and angular momentum
+
+$$\begin{align}
+H & =\sum ^{\infty}_{n,\bar{n}=0}(\mu+1+n+\bar{n})\left(a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}\right) \\
+J & =\sum ^{\infty}_{n,\bar{n}=0}\left(n-\bar{n}-1\right)a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}}+(n-\bar{n}+1)a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}
+\end{align}$$
+
+## coherent state representation
+
+define
+
+$$\begin{align}
+a_{l/r,n,\bar{n}}\ket{z_{l/r,n,\bar{n}}}  & =z_{l/r,n,\bar{n}}\ket{z_{l/r,n,\bar{n}}}
+\end{align}$$
+
+and
+
+$$\begin{align}
+\ket{\boldsymbol{z}_{l},\boldsymbol{z}_{r}} & =\bigotimes^{\infty}_{n,\bar{n}=0}\ket{z_{l,n,\bar{n}}}\otimes \ket{z_{r,n,\bar{n}}} 
+\end{align}$$
+
+inner product
+
+$$\begin{align}
+\braket{ \boldsymbol{z}_{1,l},\boldsymbol{z}_{1,r}|\boldsymbol{z}_{2,l},\boldsymbol{z}_{2,r} }  & =\prod ^{\infty}_{n,\bar{n}=0}\exp\left(z^{*}_{1,l,n,\bar{n}}z_{2,l,n,\bar{n}}-\frac{1}{2}|z_{1,l,n,\bar{n}}|^{2}-\frac{1}{2}|z_{2,l,n,\bar{n}}|^{2}\right) \\
+ & \quad \times \prod ^{\infty}_{n,\bar{n}=0}\exp\left(z^{*}_{1,r,n,\bar{n}}z_{2,r,n,\bar{n}}-\frac{1}{2}|z_{1,r,n,\bar{n}}|^{2}-\frac{1}{2}|z_{2,r,n,\bar{n}}|^{2}\right)
+\end{align}$$
+
+and completeness relation
+
+$$\begin{align}
+\boldsymbol{1} & =\int \prod ^{\infty}_{n,\bar{n}=0} \frac{\mathrm{d}^{2}z_{l,n,\bar{n}}}{\pi} \frac{\mathrm{d}^{2}z_{r,n,\bar{n}}}{\pi} \ket{\boldsymbol{z}_{l},\boldsymbol{z}_{r}} \bra{\boldsymbol{z}_{l},\boldsymbol{z}_{r}}
+\end{align}$$
+
+## path integral formalism
+
+$$\begin{align}
+\braket{ \boldsymbol{z}_{f,l},\boldsymbol{z}_{f,r}|e^{-iHT}|\boldsymbol{z}_{i,l},\boldsymbol{z}_{i,r} }  & =\int _{\boldsymbol{z}_{l}=\boldsymbol{z}_{i,l}}^{\boldsymbol{z}_{l}=\boldsymbol{z}_{f,l}}\int _{\boldsymbol{z}_{r}=\boldsymbol{z}_{i,r}}^{\boldsymbol{z}_{r}=\boldsymbol{z}_{f,r}} \mathcal{D}^{2}\boldsymbol{z}_{l}\mathcal{D}^{2}\boldsymbol{z}_{r}\exp\left(iS[\boldsymbol{z}_{l},\boldsymbol{z}^{*}_{l},\boldsymbol{z}_{r},\boldsymbol{z}^{*}_{r}]\right)
+\end{align}$$
+
+where
+
+$$\begin{align}
+\mathcal{D}^{2}\boldsymbol{z}_{l/r} & =\lim_{ N \to \infty } \prod ^{N-1}_{k=1}\prod ^{\infty}_{n,\bar{n}=0}\frac{\mathrm{d}^{2}z_{l/r,k,n,\bar{n}}}{\pi} \\
+S[\boldsymbol{z}_{l},\boldsymbol{z}^{*}_{l},\boldsymbol{z}_{r},\boldsymbol{z}^{*}_{r}] & =\int ^{t_{f}}_{t_{i}}\mathrm{d}t \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{l,n,\bar{n}}\dot{z}_{l,n,\bar{n}}-\dot{z}^{*}_{l,n,\bar{n}}z_{l,n,\bar{n}})-\omega _{n,\bar{n}}|z_{l,n,\bar{n}}|^{2}\right) \\
+ & \quad +\int ^{t_{f}}_{t_{i}}\mathrm{d}t \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{r,n,\bar{n}}\dot{z}_{r,n,\bar{n}}-\dot{z}^{*}_{r,n,\bar{n}}z_{r,n,\bar{n}})-\omega _{n,\bar{n}}|z_{r,n,\bar{n}}|^{2}\right)
+\end{align}$$
+
+## partition function
+
+$$\begin{align}
+Z(\beta,\alpha) & =\mathrm{Tr}e^{-\beta H}e^{ i\alpha J } \\
+ & =\int _{\boldsymbol{z}_{l}=\boldsymbol{z}_{l}(0)}^{\boldsymbol{z}_{l}=\boldsymbol{z}_{l}(\beta)}\int _{\boldsymbol{z}_{r}=\boldsymbol{z}_{r}(0)}^{\boldsymbol{z}_{r}=\boldsymbol{z}_{r}(\beta)} \mathcal{D}^{2}\boldsymbol{z}_{l}\mathcal{D}^{2}\boldsymbol{z}_{r}\exp\left(-S_{E}[\boldsymbol{z}_{l},\boldsymbol{z}^{*}_{l},\boldsymbol{z}_{r},\boldsymbol{z}^{*}_{r}]\right)
+\end{align}$$
+
+where
+
+$$\begin{align}
+S_{E}[\boldsymbol{z}_{l},\boldsymbol{z}^{*}_{l},\boldsymbol{z}_{r},\boldsymbol{z}^{*}_{r}] & =\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{l,n,\bar{n}}\dot{z}_{l,n,\bar{n}}-\dot{z}^{*}_{l,n,\bar{n}}z_{l,n,\bar{n}})+(\omega _{n,\bar{n}}-\mu j_{l,n,\bar{n}})|z_{l,n,\bar{n}}|^{2}\right) \\
+ & \quad +\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{r,n,\bar{n}}\dot{z}_{r,n,\bar{n}}-\dot{z}^{*}_{r,n,\bar{n}}z_{r,n,\bar{n}})+(\omega _{n,\bar{n}}-\mu j_{r,n,\bar{n}})|z_{r,n,\bar{n}}|^{2}\right) \\
+\end{align}$$
+
+twisted periodic condition
+
+$$\begin{align}
+z_{l/r,n,\bar{n}}(\beta) & =e^{\beta \mu j_{l/r,n,\bar{n}}}z_{l/r,n,\bar{n}}(0) \\
+\end{align}$$
+
+where $\displaystyle{j_{l,n,\bar{n}}=n-\bar{n}-1}$ and $\displaystyle{j_{r,n,\bar{n}}=n-\bar{n}+1}$. expand $\displaystyle{z_{l/r,n,\bar{n}}}$ in Matsubara modes
+
+$$\begin{align}
+z_{l/r,n,\bar{n}}(\tau) & =\frac{1}{\sqrt{ \beta }}\sum ^{\infty}_{m=-\infty}z_{l/r,n,\bar{n}}(i\omega _{m})e^{-i(\omega _{m}-i\mu j_{l/r,n,\bar{n}})\tau}
+\end{align}$$
+
+then the Euclidean action becomes
+
+$$\begin{align}
+S_{E}[\boldsymbol{z}_{l},\boldsymbol{z}^{*}_{l},\boldsymbol{z}_{r},\boldsymbol{z}^{*}_{r}] & =\sum ^{\infty}_{n,\bar{n}=0}\sum ^{\infty}_{m=-\infty}z^{*}_{l,n,\bar{n}}(i\omega _{m})\left(-i\omega _{m}+\omega _{n,\bar{n}}+\mu j_{l,n,\bar{n}}\right)z_{l,n,\bar{n}}(i\omega _{m}) \\
+ & \quad +\sum ^{\infty}_{n,\bar{n}=0}\sum ^{\infty}_{m=-\infty}z^{*}_{r,n,\bar{n}}(i\omega _{m})\left(-i\omega _{m}+\omega _{n,\bar{n}}+\mu j_{r,n,\bar{n}}\right)z_{r,n,\bar{n}}(i\omega _{m})
+\end{align}$$
+
+thus the partition function becomes
+
+$$\begin{align}
+Z(\beta,\alpha) & =\int \prod ^{\infty}_{n,\bar{n}=0}\prod ^{\infty}_{m=-\infty}\frac{\mathrm{d}^{2}z_{l,n,\bar{n}}(i\omega _{m})}{\pi}\frac{\mathrm{d}^{2}z_{r,n,\bar{n}}(i\omega _{m})}{\pi} \\
+ & \quad \times \exp\left(-\sum ^{\infty}_{n,\bar{n}=0}\sum ^{\infty}_{m=-\infty}z^{*}_{l,n,\bar{n}}(i\omega _{m})\left(-i\omega _{m}+\omega _{n,\bar{n}}+\mu j_{l,n,\bar{n}}\right)z_{l,n,\bar{n}}(i\omega _{m})\right) \\
+ & \quad \times \exp\left(-\sum ^{\infty}_{n,\bar{n}=0}\sum ^{\infty}_{m=-\infty}z^{*}_{r,n,\bar{n}}(i\omega _{m})\left(-i\omega _{m}+\omega _{n,\bar{n}}+\mu j_{r,n,\bar{n}}\right)z_{r,n,\bar{n}}(i\omega _{m})\right) \\
+ & =\prod ^{\infty}_{n,\bar{n}=0}\prod ^{\infty}_{m=-\infty} \frac{1}{-i\omega _{n,\bar{n}}+\mu j_{l,n,\bar{n}}} \cdot \frac{1}{-i\omega _{n,\bar{n}}+\mu j_{r,n,\bar{n}}} \\
+ & =\prod ^{\infty}_{n,\bar{n}=0} \frac{1}{1-q^{\omega _{n,\bar{n}}}z^{j_{l,n,\bar{n}}}} \cdot \frac{1}{1-q^{\omega _{n,\bar{n}}}z^{j_{r,n,\bar{n}}}}
+\end{align}$$
+
+where $\displaystyle{q=e^{-\beta}}$ and $\displaystyle{z=e^{i\alpha}}$. this result matches the operator formalism result.
