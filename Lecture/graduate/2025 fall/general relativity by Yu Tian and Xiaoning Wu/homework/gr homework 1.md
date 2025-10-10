@@ -24,3 +24,4 @@ $$\begin{align}
 
 here we use the equation of motion $\displaystyle{\nabla _{\mu}F^{\mu \nu}=J^{\mu}}$ where $\displaystyle{J^{\mu}=0}$ and the Bianchi identity $\displaystyle{\nabla ^{\nu}F^{\rho \sigma}+\nabla ^{\sigma}F^{\nu \rho}+\nabla ^{\rho}F^{\sigma \nu}=0}$.
 
+this means in a spacetime without charged matter, energy and momentum of electromagnetic field are conserved.
