@@ -223,13 +223,37 @@ $$\begin{align}
 the general solution of the eom is given by
 
 $$\begin{align}
-\phi & =\sum ^{\infty}_{m=-\infty}\sum ^{\infty}_{n=0}\left(a_{m,n}\varphi _{mn}(x)+a^{\dagger}_{m,n}\varphi _{mn}^{*}(x)\right) \\
-\varphi _{mn}(x) & =\sqrt{ \frac{1}{2\pi} \frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}} }e^{-i\omega _{mn}t}e^{im\phi}r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
-\Delta & =1+\sqrt{ 1+\mu ^{2} } \\
+\phi & =\sum ^{\infty}_{n,\bar{n}=0}\left(a_{n\bar{n}}\varphi _{n\bar{n}}(x)+a^{\dagger}_{n\bar{n}}\varphi _{n\bar{n}}(x)\right) \\
+\varphi _{n\bar{n}}(x) & =C_{n\bar{n}}\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\varphi _{00}(x)
 \end{align}$$
 
 under this parametrization, the presymplectic form becomes
 
 $$\begin{align}
-\omega & =i\sum ^{\infty}_{}
+\omega & =i\sum ^{\infty}_{m=-\infty}\sum ^{\infty}_{n=0}\delta a_{mn}^{\dagger}\wedge \delta a_{mn}
 \end{align}$$
+
+which gives the standard Poisson brackets
+
+$$\begin{align}
+\left\{a^{\dagger}_{m_{1}n_{1}},a_{m_{2}n_{2}}\right\} & =-i\delta _{m_{1}m_{2}}\delta _{n_{1}n_{2}}
+\end{align}$$
+
+$\mathrm{AdS}_{3}$ has 6 Killing vectors
+
+$$\begin{align}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
+\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
+\end{align}$$
+
+the Noether charge corresponding to $\displaystyle{\xi}$ is given by
+
+$$\begin{align}
+H_{\xi} & =X_{\xi}\cdot \theta-\int _{\Sigma}\xi \cdot \mathbf{L} \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi \right)
+\end{align}$$
+
