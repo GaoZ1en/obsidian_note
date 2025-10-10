@@ -283,8 +283,8 @@ rearrange $\displaystyle{H_{\xi_{0}}}$ and $\displaystyle{H_{\bar{\xi}_{0}}}$, w
 $$\begin{align}
 H & =H_{\xi_{0}}+H_{\bar{\xi}_{0}} \\
  & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}\left(\Delta+n+\bar{n}\right)\left(a_{n,\bar{n}}a^{\dagger}_{n,\bar{n}}+a^{\dagger}_{n,\bar{n}}a_{n,\bar{n}}\right) \\
-J & =H_{\xi_{0}}-H_{\bar{\xi}_{0}} \\
- & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}(n-\bar{n})\left(a_{n,\bar{n}}a_{n,\bar{n}}^{\dagger}+a^{\dagger}_{n,\bar{n}}a_{n,\bar{n}}\right)
+J & =H_{\bar{\xi}_{0}}-H_{\xi_{0}} \\
+ & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}(\bar{n}-n)\left(a_{n,\bar{n}}a_{n,\bar{n}}^{\dagger}+a^{\dagger}_{n,\bar{n}}a_{n,\bar{n}}\right)
 \end{align}$$
 
 finally we lift $\displaystyle{a_{n,\bar{n}}}$ and $\displaystyle{a^{\dagger}_{n,\bar{n}}}$ to operators and the commutation relation is given by
@@ -395,7 +395,7 @@ $$\begin{align}
 S_{E} & =\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{n,\bar{n}}\dot{z}_{n,\bar{n}}-\dot{z}^{*}_{n,\bar{n}}z_{n,\bar{n}})+(\omega _{n,\bar{n}}-\mu j_{n,\bar{n}})|z_{n,\bar{n}}|^{2}\right) \\
 \end{align}$$
 
-where $\displaystyle{j_{n,\bar{n}}=n-\bar{n}}$, and the periodic boundary condition gets twisted
+where $\displaystyle{j_{n,\bar{n}}=\bar{n}-n}$, and the periodic boundary condition gets twisted
 
 $$\begin{align}
 z_{n,\bar{n}}(\beta)=e^{\beta \mu j_{n,\bar{n}}}z_{n,\bar{n}}(0)
@@ -467,7 +467,7 @@ and we get the Hamiltonian and angular momentum
 
 $$\begin{align}
 H & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}(\mu+1+n+\bar{n})\left(a_{l,n,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}}+a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}\right) \\
-J & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}\left(n-\bar{n}-1\right)(a_{l,n,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}})+(n-\bar{n}+1)\left(a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}\right)
+J & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}\left(\bar{n}-n+1\right)(a_{l,n,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}})+(\bar{n}-n-1)\left(a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}\right)
 \end{align}$$
 
 lift $\displaystyle{a_{l/r,n,\bar{n}}}$ and $\displaystyle{a^{\dagger}_{l/r,n,\bar{n}}}$ to quantum operators. vaccum sates $\displaystyle{\ket{0}}$ is defined as
@@ -550,7 +550,7 @@ $$\begin{align}
 z_{l/r,n,\bar{n}}(\beta) & =e^{\beta \mu j_{l/r,n,\bar{n}}}z_{l/r,n,\bar{n}}(0) \\
 \end{align}$$
 
-where $\displaystyle{j_{l,n,\bar{n}}=n-\bar{n}-1}$ and $\displaystyle{j_{r,n,\bar{n}}=n-\bar{n}+1}$. expand $\displaystyle{z_{l/r,n,\bar{n}}}$ in Matsubara modes
+where $\displaystyle{j_{l,n,\bar{n}}=\bar{n}-n+1}$ and $\displaystyle{j_{r,n,\bar{n}}=\bar{n}-n-1}$. expand $\displaystyle{z_{l/r,n,\bar{n}}}$ in Matsubara modes
 
 $$\begin{align}
 z_{l/r,n,\bar{n}}(\tau) & =\frac{1}{\sqrt{ \beta }}\sum ^{\infty}_{m=-\infty}z_{l/r,n,\bar{n}}(i\omega _{m})e^{-i(\omega _{m}-i\mu j_{l/r,n,\bar{n}})\tau}

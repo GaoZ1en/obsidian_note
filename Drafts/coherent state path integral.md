@@ -287,3 +287,105 @@ $$
 与算符法一致。
 
 备注：若恢复零点能（去 normal-order），需额外乘以 $\exp(-\beta E_{\mathrm{vac}})$，其中 $E_{\mathrm{vac}}$ 由频谱求和并经一致正则化（如 zeta-function）确定；它与 $\alpha$ 无关。
+
+---
+
+## Two-point correlation functions（如何计算）
+
+我们分别给出简谐振子与 AdS$_3$ massive scalar 的两点函数，采用相干态路径积分/Matsubara 方法与算符法的等价结果。
+
+### A. Harmonic oscillator：$\;G(\tau)=\langle \mathcal{T}_\tau\,z(\tau)\,\bar z(0)\rangle_\beta$
+
+1) 作为高斯理论的格林函数，它满足
+$$
+\begin{align}
+(\partial_\tau+\omega)\,G(\tau)=\delta_\beta(\tau),\qquad G(\tau+\beta)=G(\tau)~,
+\end{align}
+$$
+其中 $\delta_\beta$ 是 $[0,\beta]$ 上的周期 $\delta$。解得（$0<\tau<\beta$）：
+$$
+\begin{align}
+G(\tau)=\frac{e^{-\omega\tau}}{1-e^{-\beta\omega}}=(n_B+1)e^{-\omega\tau},\qquad n_B\equiv\frac{1}{e^{\beta\omega}-1}.
+\end{align}
+$$
+由周期性延拓得 $\tau<0$ 时 $G(\tau)=n_B\,e^{\omega\tau}$，从而紧凑写成
+$$
+\begin{align}
+G(\tau)=\theta(\tau)(n_B+1)e^{-\omega\tau}+\theta(-\tau)\,n_B\,e^{\omega\tau},\qquad \tau\in(-\beta,\beta).
+\end{align}
+$$
+
+2) 频域（Matsubara）表达：
+$$
+\begin{align}
+G(i\omega_n)=\frac{1}{i\omega_n+\omega},\qquad \omega_n=\frac{2\pi n}{\beta},\; n\in\mathbb{Z},\qquad G(\tau)=\frac{1}{\beta}\sum_n e^{-i\omega_n\tau}G(i\omega_n).
+\end{align}
+$$
+
+3) 位置算符两点函数 $C_x(\tau)=\langle \mathcal{T}_\tau x(\tau)x(0)\rangle_\beta$，用 $x=(a+a^\dagger)/\sqrt{2\omega}$ 得（$0<\tau<\beta$）
+$$
+\begin{align}
+C_x(\tau)=\frac{1}{2\omega}\Big[(n_B+1)e^{-\omega\tau}+n_B e^{\omega\tau}\Big],\qquad C_x(\tau+\beta)=C_x(\tau).
+\end{align}
+$$
+
+<details>
+<summary>由源泛函求解的简述</summary>
+在相干态路径积分中引入源 $J,\bar J$，高斯积分给出 $\ln Z[J]=\int \bar J\,K^{-1}J$，其中 $K=\partial_\tau+\omega$。两点函数即 $G=K^{-1}$，满足上式微分方程与 PBC。
+</details>
+
+### B. AdS$_3$ massive scalar：$\;G(\tau; x,x')=\langle \mathcal{T}_\tau\,\varphi(\tau,x)\,\varphi(0,x')\rangle_{\beta,\alpha}$
+
+记模频谱与角动量 $\omega_{n,\bar n}=\Delta+n+\bar n,\; m=n-\bar n$，规范正交的模函数为 $\varphi_{n,\bar n}(x)$。则
+
+1) Matsubara/频域格林函数（含角动量化学势 $\alpha$）：
+$$
+\begin{align}
+G(i\omega_n; x,x')
+&=\sum_{n,\bar n\ge0}\frac{\varphi_{n,\bar n}(x)\,\varphi_{n,\bar n}^*(x')}{i\omega_n-\mu\,m+\omega_{n,\bar n}},\qquad \mu\equiv\frac{i\alpha}{\beta}.
+\end{align}
+$$
+2) Euclidean 时间域（$0<\tau<\beta$）：
+$$
+\begin{align}
+G(\tau; x,x')
+&=\sum_{n,\bar n\ge0}\frac{e^{-\omega_{n,\bar n}\tau}}{1-e^{-\beta\omega_{n,\bar n}}e^{i\alpha m}}\;\varphi_{n,\bar n}(x)\,\varphi_{n,\bar n}^*(x').
+\end{align}
+$$
+通过 $m=n-\bar n$、$p=\min(n,\bar n)$ 变量化可写为
+$$
+\begin{align}
+G(\tau; x,x')=\sum_{m\in\mathbb{Z}}\sum_{p=0}^{\infty}\frac{e^{-(\Delta+|m|+2p)\tau}e^{i\alpha m}}{1-e^{-\beta(\Delta+|m|+2p)}e^{i\alpha m}}\;\Phi_{p,m}(x)\,\Phi_{p,m}^*(x'),
+\end{align}
+$$
+其中 $\Phi_{p,m}$ 为与 $\omega=\Delta+|m|+2p$ 匹配的正交归一化本征模（由 $\varphi_{n,\bar n}$ 线性组合得到）。
+
+3) 无化学势（$\alpha=0$）与热极限：
+$$
+\begin{align}
+G_\beta(\tau; x,x')=\sum_{n,\bar n}\frac{e^{-\omega_{n,\bar n}\tau}}{1-e^{-\beta\omega_{n,\bar n}}}\;\varphi_{n,\bar n}(x)\,\varphi_{n,\bar n}^*(x'),\quad G_{T\to0}(\tau)=\sum_{n,\bar n}e^{-\omega_{n,\bar n}\tau}\;\varphi_{n,\bar n}(x)\,\varphi_{n,\bar n}^*(x').
+\end{align}
+$$
+
+4) 边界两点函数（CFT$_2$）
+$$
+\begin{align}
+\langle \mathcal{O}(\tau,\phi)\,\mathcal{O}(0,0)\rangle_{\beta,\alpha}\;\propto\;\lim_{r,r'\to\infty}(r r')^{\Delta}\,G(\tau; r,\phi; r',0)~,
+\end{align}
+$$
+给出圆柱几何上的热两点函数（$\alpha=0$）
+$$
+\begin{align}
+\langle\mathcal{O}(\tau,\phi)\,\mathcal{O}(0,0)\rangle_\beta\propto\Bigg[\frac{\pi/\beta}{\sin\!\big(\tfrac{\pi}{\beta}(\tau+i\phi)\big)}\cdot\frac{\pi/\beta}{\sin\!\big(\tfrac{\pi}{\beta}(\tau-i\phi)\big)}\Bigg]^{\!\Delta/2},\quad 0<\tau<\beta.
+\end{align}
+$$
+
+<details>
+<summary>从 Matsubara 求和到时间域的要点</summary>
+对每个 $(p,m)$ 模，$G(i\omega_n)=1/(i\omega_n-\mu m+\omega)$；做逆变换 $\tfrac{1}{\beta}\sum_n e^{-i\omega_n\tau}G(i\omega_n)$，在 $0<\tau<\beta$ 得 $e^{-\omega\tau}/\big(1-e^{-\beta\omega}e^{i\alpha m}\big)$，并按周期性延拓。
+</details>
+
+### Notes
+
+- 上述表达式假定已选取使 $\{\varphi_{n,\bar n}\}$ 正交归一的一致规范；若采用不同归一化，关联函数只差一个整体（模式对角）规范因子，可通过等距群不变内积或边界极限归一化固定。
+- 对 $-1<\mu^2<0$ 的双重量子化窗口，应按选定的边界条件取 $\Delta_\pm$ 并据此替换 $\omega_{n,\bar n}$ 与模函数。
