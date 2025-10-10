@@ -398,5 +398,45 @@ S_{E} & =\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac
 where $\displaystyle{j_{n,\bar{n}}=n-\bar{n}}$, and the periodic boundary condition gets twisted
 
 $$\begin{align}
-z_{n,\bar{n}}(\beta)=e^{\beta \mu j_{n,\bar{n}}}}}z_{n,\bar{n}}(0)
+z_{n,\bar{n}}(\beta)=e^{\beta \mu j_{n,\bar{n}}}z_{n,\bar{n}}(0)
 \end{align}$$
+
+which is equivalent to a shift $\displaystyle{i\omega _{n}\to i\omega _{n}-\mu j_{n,\bar{n}}}$ in the Matsubara modes expansion. thus the partition function becomes
+
+$$\begin{align}
+Z(\beta,\alpha) & =\prod ^{\infty}_{n,\bar{n}=0}\prod ^{\infty}_{m=-\infty}\frac{1}{-i\omega _{m}+\omega _{n,\bar{n}}+\mu j_{n,\bar{n}}} \\
+ & =\prod ^{\infty}_{n,\bar{n}=0} \frac{1}{1-q^{\omega _{n,\bar{n}}}z^{j_{n,\bar{n}}}}
+\end{align}$$
+
+where $\displaystyle{z=e^{i\alpha}}$. this result also matches the operator formalism result.
+
+# Proca field in $\mathrm{AdS}_{3}$
+
+we consider a free scalar in $\mathrm{AdS}_{3}$
+
+$$\begin{align}
+S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}\mu ^{2}A_{\mu}A^{\mu}\right)
+\end{align}$$
+
+where
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2}
+\end{align}$$
+
+## CPS formalism and quantization
+
+take a variation of the action, we get the eom and presymplectic potential
+
+$$\begin{align}
+\delta S & =\int _{M} \mathrm{d}^{3}x\sqrt{ -g }E^{\nu}\delta A_{\nu} +\theta|_{t_{f}}-\theta|_{t_{i}} \\
+E^{\nu} & =\nabla _{\mu}F^{\mu \nu}-\mu ^{2}A^{\nu} \\
+\theta & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}\delta A_{\nu}
+\end{align}$$
+
+take a further variation of the presymplectic potential, we get the presymplectic form
+
+$$\begin{align}
+\omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\delta F^{\mu \nu}\wedge \delta A_{\nu}
+\end{align}$$
+
