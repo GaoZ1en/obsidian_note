@@ -1,25 +1,6 @@
-## 约束系统完整分析（遵循“quantization of gauge systems.md”的 formalism）
-
-### 模型与记号
-
-变量与拉氏量：
-$$
-\begin{align}
-S &= \int_{t_i}^{t_f}\!\mathrm{d}t\;L,\\
-L(x,\dot x;y,\lambda) &= \tfrac12\dot x^{2}-\tfrac12\omega ^{2}x^{2}+\tfrac12 y^{2}-\lambda\, y\,\dot x.
-\end{align}
-$$
-
-$$\tag{.}\begin{align}
-(1-\lambda ^{2})\ddot{x}& =\omega ^{2}x
+$$\begin{align}
+S & =\int ^{t_{f}}_{t_{i}}\mathrm{d}t\left(\frac{1}{2}\dot{x}^{2}-\frac{1}{2}\omega ^{2}x^{2}+\frac{1}{2}y^{2}-\lambda y\dot{x}\right)
 \end{align}$$
-
-相空间坐标与正则对：$\,(x,p_x),(y,p_y),(\lambda,p_\lambda)$，基本泊松括号（沿用笔记记号 $[\,,\,]$ 表示 PB）：
-$$
-\begin{align}
-[x,p_x]=1,\quad [y,p_y]=1,\quad [\lambda,p_\lambda]=1,\quad \text{其余为 }0.
-\end{align}
-$$
 
 # covariant phase space formalism
 
@@ -144,4 +125,21 @@ H & =\frac{p_{x}^{2}}{2(1-\lambda ^{2})}+\frac{1}{2}\omega ^{2}x^{2}
 \end{align}$$
 
 # equivalence between two formalisms
+
+in the Dirac formalism approach, take the following expansion
+
+$$\begin{align}
+x & =\frac{1}{\sqrt{ 2\omega'(1-\lambda ^{2}) }}(a+a^{\dagger}) \\
+p_{x} & =i\sqrt{ \frac{\omega'(1-\lambda ^{2})}{2} }\left(-a+a^{\dagger}\right) \\
+\implies a & =\sqrt{ \frac{\omega'(1-\lambda ^{2})}{2} }x+i\sqrt{ \frac{1}{2\omega'(1-\lambda ^{2})} }p_{x} \\
+a^{\dagger} & =\sqrt{ \frac{\omega'(1-\lambda ^{2})}{2} }x-i\sqrt{ \frac{1}{2\omega'(1-\lambda ^{2})} }p_{x}
+\end{align}$$
+
+then the Dirac bracket between $\displaystyle{a^{\dagger}}$ and $\displaystyle{a}$ gives
+
+$$\begin{align}
+\left\{a^{\dagger},a\right\}_{\text{D}} & =-i
+\end{align}$$
+
+which is equivalent to the Poisson bracket obtained in CPS formalism.
 
