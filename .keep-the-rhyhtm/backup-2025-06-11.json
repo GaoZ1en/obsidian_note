@@ -51,7 +51,7 @@
           "index": 1,
           "option": "CURRENT_WEEK",
           "unit": "WORD",
-          "calc": "TOTAL"
+          "calc": "AVG"
         },
         {
           "index": 2,
@@ -28681,6 +28681,835 @@
           }
         ],
         "id": 942
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Lecture/graduate/2025 fall/group theory by Lu Guo/homework/gt homework 1.md",
+        "wordCountStart": 397,
+        "charCountStart": 2236,
+        "changes": [],
+        "id": 947
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Articles/Proca in AdS3/quantization of gauge systems.md",
+        "wordCountStart": 3725,
+        "charCountStart": 22006,
+        "changes": [
+          {
+            "timeKey": "22:00",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "23:55",
+            "w": 0,
+            "c": -2
+          }
+        ],
+        "id": 948
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Articles/Proca in AdS3/simple example.md",
+        "wordCountStart": 991,
+        "charCountStart": 5081,
+        "changes": [
+          {
+            "timeKey": "21:25",
+            "w": 55,
+            "c": 282
+          },
+          {
+            "timeKey": "21:30",
+            "w": 40,
+            "c": 217
+          },
+          {
+            "timeKey": "21:35",
+            "w": 98,
+            "c": 478
+          },
+          {
+            "timeKey": "21:40",
+            "w": 106,
+            "c": 583
+          }
+        ],
+        "id": 949
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Articles/Proca in AdS3/example 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "21:45",
+            "w": 39,
+            "c": 166
+          },
+          {
+            "timeKey": "21:50",
+            "w": 620,
+            "c": 4925
+          },
+          {
+            "timeKey": "22:05",
+            "w": 31,
+            "c": 162
+          },
+          {
+            "timeKey": "22:10",
+            "w": 83,
+            "c": 444
+          },
+          {
+            "timeKey": "22:15",
+            "w": 145,
+            "c": 781
+          },
+          {
+            "timeKey": "22:20",
+            "w": 95,
+            "c": 512
+          },
+          {
+            "timeKey": "22:25",
+            "w": -26,
+            "c": -102
+          },
+          {
+            "timeKey": "22:30",
+            "w": 4,
+            "c": 32
+          },
+          {
+            "timeKey": "23:35",
+            "w": -12,
+            "c": -103
+          },
+          {
+            "timeKey": "23:40",
+            "w": -121,
+            "c": -647
+          },
+          {
+            "timeKey": "23:45",
+            "w": -23,
+            "c": -591
+          },
+          {
+            "timeKey": "23:50",
+            "w": 9,
+            "c": -207
+          },
+          {
+            "timeKey": "23:55",
+            "w": -57,
+            "c": -365
+          }
+        ],
+        "id": 950
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Articles/Noether charge/Covariant phase space.md",
+        "wordCountStart": 819,
+        "charCountStart": 4861,
+        "changes": [],
+        "id": 951
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Note/useful results/covariant phase space formalism.md",
+        "wordCountStart": 961,
+        "charCountStart": 5201,
+        "changes": [],
+        "id": 952
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Articles/quantization/first example.md",
+        "wordCountStart": 2190,
+        "charCountStart": 11276,
+        "changes": [],
+        "id": 953
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Articles/quantization/harmonic oscillator with multiplier.md",
+        "wordCountStart": 1954,
+        "charCountStart": 10162,
+        "changes": [
+          {
+            "timeKey": "22:35",
+            "w": -5,
+            "c": -40
+          }
+        ],
+        "id": 954
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Articles/quantization/path integral quantization for Proca field.md",
+        "wordCountStart": 6575,
+        "charCountStart": 28338,
+        "changes": [],
+        "id": 955
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Articles/quantization/path integral quantization for constrained system.md",
+        "wordCountStart": 5576,
+        "charCountStart": 26750,
+        "changes": [
+          {
+            "timeKey": "22:45",
+            "w": 21,
+            "c": 83
+          }
+        ],
+        "id": 956
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+        "wordCountStart": 3516,
+        "charCountStart": 16221,
+        "changes": [],
+        "id": 957
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+        "wordCountStart": 2384,
+        "charCountStart": 12549,
+        "changes": [],
+        "id": 958
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Articles/quantization/canonical quantization of fermionic systems.md",
+        "wordCountStart": 1426,
+        "charCountStart": 8002,
+        "changes": [],
+        "id": 959
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
+        "wordCountStart": 1580,
+        "charCountStart": 8087,
+        "changes": [],
+        "id": 960
+      },
+      {
+        "date": "2025-10-09",
+        "filePath": "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+        "wordCountStart": 3936,
+        "charCountStart": 18321,
+        "changes": [
+          {
+            "timeKey": "22:45",
+            "w": 86,
+            "c": 364
+          },
+          {
+            "timeKey": "22:50",
+            "w": -86,
+            "c": -364
+          }
+        ],
+        "id": 961
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/quantization/harmonic oscillator with multiplier.md",
+        "wordCountStart": 1949,
+        "charCountStart": 10122,
+        "changes": [],
+        "id": 963
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/Proca in AdS3/quantization of gauge systems.md",
+        "wordCountStart": 3725,
+        "charCountStart": 22005,
+        "changes": [],
+        "id": 964
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/quantization/path integral quantization for constrained system.md",
+        "wordCountStart": 5597,
+        "charCountStart": 26833,
+        "changes": [],
+        "id": 965
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/notes/lecture 3.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 966
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 1.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "10:50",
+            "w": 4,
+            "c": 30
+          },
+          {
+            "timeKey": "11:10",
+            "w": 0,
+            "c": -1
+          }
+        ],
+        "id": 967
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/gr homework 1.md",
+        "wordCountStart": 273,
+        "charCountStart": 1401,
+        "changes": [
+          {
+            "timeKey": "08:40",
+            "w": 16,
+            "c": 109
+          }
+        ],
+        "id": 968
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Lecture/Group meeting/week 21.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 969
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Lecture/Group meeting/week 17.md",
+        "wordCountStart": 82,
+        "charCountStart": 417,
+        "changes": [],
+        "id": 970
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Lecture/Group meeting/Pasted image 20250221191813.png",
+        "wordCountStart": 41996,
+        "charCountStart": 245458,
+        "changes": [],
+        "id": 971
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Lecture/Group meeting/week 4.md",
+        "wordCountStart": 1044,
+        "charCountStart": 6126,
+        "changes": [],
+        "id": 972
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Literature Notes/A Note On The Canonical Formalism for Gravity (2212.08270v2).md",
+        "wordCountStart": 185,
+        "charCountStart": 1146,
+        "changes": [],
+        "id": 973
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Literature Notes/EPFL Lectures on Conformal Field Theory in D = 3 Dimensions (1601.05000v2).md",
+        "wordCountStart": 98,
+        "charCountStart": 630,
+        "changes": [],
+        "id": 974
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Reading/Comparison between ordinary approach and current approach with example--GR with a scalar.md",
+        "wordCountStart": 1281,
+        "charCountStart": 7021,
+        "changes": [],
+        "id": 975
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Literature Notes/Local symmetries and constraints.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "08:45",
+            "w": 304,
+            "c": 2076
+          },
+          {
+            "timeKey": "08:50",
+            "w": 51,
+            "c": 286
+          },
+          {
+            "timeKey": "08:55",
+            "w": 40,
+            "c": 233
+          }
+        ],
+        "id": 976
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/Proca in AdS3/simple example.md",
+        "wordCountStart": 1290,
+        "charCountStart": 6641,
+        "changes": [
+          {
+            "timeKey": "09:40",
+            "w": 582,
+            "c": 3192
+          }
+        ],
+        "id": 977
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/Proca in AdS3/constraint systems.md",
+        "wordCountStart": 1076,
+        "charCountStart": 7785,
+        "changes": [],
+        "id": 978
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/Proca in AdS3/correlation function.md",
+        "wordCountStart": 2016,
+        "charCountStart": 8307,
+        "changes": [],
+        "id": 979
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/Proca in AdS3/electric field.md",
+        "wordCountStart": 1820,
+        "charCountStart": 7704,
+        "changes": [],
+        "id": 980
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "09:45",
+            "w": 89,
+            "c": 424
+          },
+          {
+            "timeKey": "09:50",
+            "w": 85,
+            "c": 556
+          },
+          {
+            "timeKey": "09:55",
+            "w": 146,
+            "c": 824
+          },
+          {
+            "timeKey": "10:00",
+            "w": 205,
+            "c": 1134
+          },
+          {
+            "timeKey": "10:05",
+            "w": 184,
+            "c": 902
+          },
+          {
+            "timeKey": "10:10",
+            "w": 125,
+            "c": 481
+          },
+          {
+            "timeKey": "10:20",
+            "w": 5,
+            "c": 39
+          },
+          {
+            "timeKey": "10:30",
+            "w": 112,
+            "c": 490
+          },
+          {
+            "timeKey": "10:35",
+            "w": 109,
+            "c": 526
+          },
+          {
+            "timeKey": "10:40",
+            "w": 32,
+            "c": 152
+          },
+          {
+            "timeKey": "10:45",
+            "w": 73,
+            "c": 419
+          },
+          {
+            "timeKey": "10:50",
+            "w": 265,
+            "c": 1293
+          },
+          {
+            "timeKey": "10:55",
+            "w": 99,
+            "c": 542
+          },
+          {
+            "timeKey": "11:00",
+            "w": 0,
+            "c": 40
+          },
+          {
+            "timeKey": "13:25",
+            "w": 225,
+            "c": 1140
+          },
+          {
+            "timeKey": "13:30",
+            "w": 352,
+            "c": 1680
+          },
+          {
+            "timeKey": "13:35",
+            "w": -30,
+            "c": -120
+          },
+          {
+            "timeKey": "14:55",
+            "w": 15,
+            "c": 72
+          },
+          {
+            "timeKey": "15:00",
+            "w": 24,
+            "c": 102
+          },
+          {
+            "timeKey": "18:55",
+            "w": 4,
+            "c": 0
+          },
+          {
+            "timeKey": "19:30",
+            "w": 428,
+            "c": 1788
+          },
+          {
+            "timeKey": "19:35",
+            "w": 32,
+            "c": 122
+          },
+          {
+            "timeKey": "19:40",
+            "w": -110,
+            "c": -385
+          },
+          {
+            "timeKey": "19:45",
+            "w": 105,
+            "c": 436
+          },
+          {
+            "timeKey": "19:50",
+            "w": 1,
+            "c": 9
+          },
+          {
+            "timeKey": "20:05",
+            "w": 201,
+            "c": 1023
+          },
+          {
+            "timeKey": "20:10",
+            "w": 241,
+            "c": 1251
+          },
+          {
+            "timeKey": "20:15",
+            "w": 113,
+            "c": 450
+          },
+          {
+            "timeKey": "20:20",
+            "w": 241,
+            "c": 1227
+          },
+          {
+            "timeKey": "20:25",
+            "w": 430,
+            "c": 2513
+          },
+          {
+            "timeKey": "20:30",
+            "w": 22,
+            "c": 119
+          },
+          {
+            "timeKey": "20:40",
+            "w": -301,
+            "c": -1876
+          },
+          {
+            "timeKey": "20:45",
+            "w": 2,
+            "c": 11
+          },
+          {
+            "timeKey": "20:55",
+            "w": 142,
+            "c": 725
+          },
+          {
+            "timeKey": "21:00",
+            "w": 101,
+            "c": 519
+          },
+          {
+            "timeKey": "21:25",
+            "w": 198,
+            "c": 993
+          },
+          {
+            "timeKey": "21:30",
+            "w": 135,
+            "c": 536
+          },
+          {
+            "timeKey": "21:35",
+            "w": 103,
+            "c": 395
+          },
+          {
+            "timeKey": "21:40",
+            "w": 367,
+            "c": 1540
+          },
+          {
+            "timeKey": "21:45",
+            "w": 325,
+            "c": 1426
+          },
+          {
+            "timeKey": "21:50",
+            "w": 1215,
+            "c": 5226
+          },
+          {
+            "timeKey": "21:55",
+            "w": 10,
+            "c": 76
+          },
+          {
+            "timeKey": "22:15",
+            "w": 4,
+            "c": 0
+          }
+        ],
+        "id": 981
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 982
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 983
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13738,
+        "changes": [],
+        "id": 984
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 11530,
+        "charCountStart": 45889,
+        "changes": [
+          {
+            "timeKey": "22:20",
+            "w": -1,
+            "c": -7
+          }
+        ],
+        "id": 985
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/Proca in AdS3/example 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:25",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 986
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/Proca in AdS3/Casimir operator.md",
+        "wordCountStart": 773,
+        "charCountStart": 3596,
+        "changes": [
+          {
+            "timeKey": "13:40",
+            "w": 446,
+            "c": 3167
+          },
+          {
+            "timeKey": "13:45",
+            "w": 44,
+            "c": 234
+          },
+          {
+            "timeKey": "13:50",
+            "w": -115,
+            "c": -1218
+          },
+          {
+            "timeKey": "13:55",
+            "w": 4,
+            "c": 30
+          },
+          {
+            "timeKey": "14:00",
+            "w": -206,
+            "c": -1335
+          },
+          {
+            "timeKey": "14:05",
+            "w": 71,
+            "c": 280
+          },
+          {
+            "timeKey": "14:10",
+            "w": 87,
+            "c": 376
+          },
+          {
+            "timeKey": "14:15",
+            "w": 79,
+            "c": 325
+          },
+          {
+            "timeKey": "14:20",
+            "w": 86,
+            "c": 331
+          },
+          {
+            "timeKey": "14:25",
+            "w": 68,
+            "c": 267
+          },
+          {
+            "timeKey": "14:30",
+            "w": -50,
+            "c": -207
+          },
+          {
+            "timeKey": "14:35",
+            "w": 93,
+            "c": 373
+          },
+          {
+            "timeKey": "14:40",
+            "w": 253,
+            "c": 1011
+          },
+          {
+            "timeKey": "14:45",
+            "w": 250,
+            "c": 976
+          },
+          {
+            "timeKey": "14:50",
+            "w": -13,
+            "c": 4
+          },
+          {
+            "timeKey": "14:55",
+            "w": -643,
+            "c": -2644
+          }
+        ],
+        "id": 987
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6040,
+        "charCountStart": 25721,
+        "changes": [],
+        "id": 988
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Articles/Proca in AdS3/Noether charge.md",
+        "wordCountStart": 11602,
+        "charCountStart": 47349,
+        "changes": [],
+        "id": 989
+      },
+      {
+        "date": "2025-10-10",
+        "filePath": "Drafts/coherent state path integral.md",
+        "wordCountStart": 600,
+        "charCountStart": 4474,
+        "changes": [
+          {
+            "timeKey": "20:45",
+            "w": 556,
+            "c": 3643
+          },
+          {
+            "timeKey": "20:50",
+            "w": 351,
+            "c": 1996
+          },
+          {
+            "timeKey": "22:20",
+            "w": 590,
+            "c": 3743
+          }
+        ],
+        "id": 990
       }
     ],
     "daysWithCompletedGoal": [
@@ -28758,7 +29587,9 @@
       "2025-10-02",
       "2025-10-04",
       "2025-10-07",
-      "2025-10-08"
+      "2025-10-08",
+      "2025-10-09",
+      "2025-10-10"
     ]
   }
 }
