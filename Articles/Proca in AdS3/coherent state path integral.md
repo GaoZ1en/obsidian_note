@@ -1,8 +1,12 @@
+# harmonic oscillator
+
 we start from a harmonic ocsillator.
 
 $$\begin{align}
 S & =\int ^{t_{f}}_{t_{i}}\left(\frac{1}{2}\dot{x}^{2}-\frac{1}{2}\omega ^{2}x^{2}\right)
 \end{align}$$
+
+# CPS formalism and canonical quantization
 
 take a variation, we get the eom and symplectic potential
 
@@ -75,7 +79,11 @@ $$\begin{align}
 \ket{n}  & =\frac{(a^{\dagger})^{n}}{\sqrt{ n! }}\ket{0}
 \end{align}$$
 
-the Hilbert space is then spanned by $\displaystyle{\{\ket{n}\}}$. now we want to transfer to coherent state representation. we define the coherent state $\displaystyle{\ket{z}}$ as the eigenstate of $\displaystyle{a}$
+the Hilbert space is then spanned by $\displaystyle{\{\ket{n}\}}$. 
+
+## coherent state representation
+
+now we want to transfer to coherent state representation. we define the coherent state $\displaystyle{\ket{z}}$ as the eigenstate of $\displaystyle{a}$
 
 $$\begin{align}
 a\ket{z}  & =z\ket{z} \\
@@ -94,6 +102,8 @@ the completeness relation reads
 $$\begin{align}
 1 & =\int \frac{\mathrm{d}^{2}z}{\pi}\ket{z} \bra{z}
 \end{align}$$
+
+## path integral formalism
 
 now we will derive path integral representation of the transition amplitude between two coherent states
 
@@ -121,9 +131,76 @@ then
 
 $$\begin{align}
 \braket{ z_{f}|e^{-iHT}|z_{i} } & =\lim_{ N \to \infty } \int \prod ^{N-1}_{k=1} \frac{\mathrm{d}^{2}z_{k}}{\pi}e^{-i\omega T/2}\exp\left(\sum ^{N-1}_{n=0}\left(z^{*}_{n+1}z_{n}e^{-i\omega \Delta T}-\frac{1}{2}|z_{n+1}|^{2}-\frac{1}{2}|z_{n}|^{2}\right)\right) \\
- & =\lim_{ N \to 0 } \int \prod ^{N-1}_{k=1}\frac{\mathrm{d}^{2}z_{k}}{\pi}e^{-i\omega T/2}\exp\left(\sum ^{N-1}_{n=0}\left(-\frac{1}{2}|z_{n+1}-z_{n}|^{2}+\frac{1}{2}(z^{*}_{n+1}z_{n}-z_{n}^{*}z_{n+1})-i\omega \Delta Tz_{n+1}^{*}z_{n}\right)\right)
+ & =\lim_{ N \to \infty } \int \prod ^{N-1}_{k=1}\frac{\mathrm{d}^{2}z_{k}}{\pi}e^{-i\omega T/2}\exp\left(\sum ^{N-1}_{n=0}\left(-\frac{1}{2}|z_{n+1}-z_{n}|^{2}+\frac{1}{2}(z^{*}_{n+1}z_{n}-z_{n}^{*}z_{n+1})-i\omega \Delta Tz_{n+1}^{*}z_{n}\right)\right) \\
+ & =\lim_{ N \to \infty } \int \prod ^{N-1}_{k=1}\frac{\mathrm{d}^{2}z_{k}}{\pi}e^{-i\omega T/2}\exp\left(i\Delta T\sum ^{N-1}_{n=0}\left(-\frac{i}{2}\left( \frac{z_{n+1}^{*}-z_{n}^{*}}{\Delta T}z_{n}-\frac{i}{2}z_{n}^{*}\frac{z_{n+1}-z_{n}}{\Delta T} \right)-\omega z^{*}_{n}z_{n}+\mathcal{O}(\Delta T)\right)\right) \\
+ & =\int _{z=z(t_{i})}^{z=z(t_{f})} \mathcal{D}^{2}z \exp\left(iS[z,z^{*}]\right)
 \end{align}$$
 
-$$\tag{.}\begin{align}
+where
 
+$$\begin{align}
+S[z,z^{*}] & =\int ^{t_{f}}_{t_{i}}\frac{i}{2}\left(z^{*}\dot{z}-\dot{z}^{*}z\right)-\omega z^{*}z
 \end{align}$$
+
+the path integral measure is given by
+
+$$\begin{align}
+\mathcal{D}^{2}z & =\lim_{ N \to \infty } \prod ^{N-1}_{k=1}\frac{\mathrm{d}^{2}z_{k}}{\pi}e^{-i\omega T/2}
+\end{align}$$
+
+## partition function
+
+we want to calculate the partition function to verify the correctness of the path integral formalism
+
+$$\begin{align}
+Z(\beta) & =\int _{z=z(0)}^{z=z(\beta)} \mathcal{D}^{2}z \exp\left(-S_{E}[z,z^{*}]\right)
+\end{align}$$
+
+where the Euclidean action reads
+
+$$\begin{align}
+S_{E}[z,z^{*}] & =\int ^{\beta}_{0}\mathrm{d}\tau \frac{1}{2}\left(z^{*}\dot{z}-\dot{z}^{*}z\right)+\omega z^{*}z
+\end{align}$$
+
+and $\displaystyle{z}$ satisfies the periodic boundary condition $\displaystyle{z(\beta)=z(0)}$. we can expand $\displaystyle{z}$ in Matsubara modes
+
+$$\begin{align}
+z(\tau) & =\frac{1}{\sqrt{ \beta }}\sum ^{\infty}_{n=-\infty}z(i\omega _{n})e^{-i\omega _{n}\tau} \\
+\omega _{n} & =\frac{2\pi n}{\beta}
+\end{align}$$
+
+then the Euclidean action becomes
+
+$$\begin{align}
+S_{E}[z,z^{*}] & =\int ^{\beta}_{0}\mathrm{d}\tau\left(\frac{1}{2}\left( \frac{-i\omega _{n}}{\beta}\sum ^{\infty}_{n=-\infty}z^{*}(i\omega _{n})e^{i\omega _{n}\tau}\sum ^{\infty}_{n'=-\infty}z(i\omega _{n'}) e^{-i\omega _{n}\tau}\right)+\frac{\omega}{\beta} \sum ^{\infty}_{n=-\infty}z^{*}(i\omega _{n})e^{i\omega _{n}\tau}\sum ^{\infty}_{n'=-\infty}z(i\omega _{n'})e^{-i\omega _{n}\tau}\right) \\
+ & =\sum ^{\infty}_{n=-\infty}z^{*}(i\omega _{n})\left(-i\omega _{n}+\omega\right)z(i\omega _{n})
+\end{align}$$
+
+thus
+
+$$\begin{align}
+Z(\beta) & =\int \prod ^{\infty}_{n=-\infty}\frac{\mathrm{d}^{2}z(i\omega _{n})}{\pi}e^{-\beta \omega /2}\exp\left(-\sum ^{\infty}_{n=-\infty}z^{*}(i\omega _{n})\left(-i\omega _{n}+\omega\right)z(i\omega _{n})\right) \\
+ & =e^{-\beta \omega /2}\prod ^{\infty}_{n=-\infty}\int \frac{\mathrm{d}^{2}z(i\omega _{n})}{\pi}\exp\left(-z^{*}(i\omega _{n})\left(-i\omega _{n}+\omega\right)z(i\omega _{n})\right) \\
+ & =e^{-\beta \omega /2}\prod ^{\infty}_{n=-\infty}\frac{1}{-i\omega _{n}+\omega} \\
+ & =e^{-\beta \omega /2}\prod ^{\infty}_{n=1}\frac{1}{(2\pi n/\beta)^{2}+\omega ^{2}} \\
+ & =e^{-\beta \omega /2}\frac{1}{\omega}\prod ^{\infty}_{n=1}\frac{1}{1+(2\pi n/\beta \omega)^{2}} \\
+ & =e^{-\beta \omega /2}\frac{1}{\omega}\frac{\beta \omega}{2\sinh(\beta \omega/2)} \\
+ & =\frac{1}{2\sinh(\beta \omega/2)}
+\end{align}$$
+
+which is the correct partition function of a harmonic oscillator.
+
+# free scalar in $\mathrm{AdS}_{d+1}$
+
+we consider a free scalar in $\mathrm{AdS}_{d+1}$
+
+$$\begin{align}
+S & =-\frac{1}{2}\int \mathrm{d}^{d+1}x\sqrt{ -g }\left(\nabla _{\mu}\phi \nabla ^{\mu}\phi+\mu ^{2}\phi ^{2}\right)
+\end{align}$$
+
+where
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\Omega ^{2}_{d-1}
+\end{align}$$
+
