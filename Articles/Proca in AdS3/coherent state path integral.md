@@ -190,17 +190,46 @@ Z(\beta) & =\int \prod ^{\infty}_{n=-\infty}\frac{\mathrm{d}^{2}z(i\omega _{n})}
 
 which is the correct partition function of a harmonic oscillator.
 
-# free scalar in $\mathrm{AdS}_{d+1}$
+# free scalar in $\mathrm{AdS}_{3}$
 
-we consider a free scalar in $\mathrm{AdS}_{d+1}$
+we consider a free scalar in $\mathrm{AdS}_{3}$
 
 $$\begin{align}
-S & =-\frac{1}{2}\int \mathrm{d}^{d+1}x\sqrt{ -g }\left(\nabla _{\mu}\phi \nabla ^{\mu}\phi+\mu ^{2}\phi ^{2}\right)
+S & =-\frac{1}{2}\int \mathrm{d}^{3}x\sqrt{ -g }\left(\nabla _{\mu}\varphi \nabla ^{\mu}\varphi+\mu ^{2}\varphi ^{2}\right)
 \end{align}$$
 
 where
 
 $$\begin{align}
-\mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\Omega ^{2}_{d-1}
+\mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2}
 \end{align}$$
 
+## CPS formalism and canonical quantization
+
+take a variation of the action, we get the eom and presymplectic potential
+
+$$\begin{align}
+\delta S & =\int _{M} \mathrm{d}^{3}x\sqrt{ -g }E\delta \varphi +\theta|_{t_{f}}-\theta|_{t_{i}} \\
+E & =\nabla ^{2}\varphi -\mu ^{2}\varphi \\
+\theta & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\phi \delta \phi
+\end{align}$$
+
+take a further variation of the presymplectic potential, we get the presymplectic form
+
+$$\begin{align}
+\omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \phi \wedge \delta \phi
+\end{align}$$
+
+the general solution of the eom is given by
+
+$$\begin{align}
+\phi & =\sum ^{\infty}_{m=-\infty}\sum ^{\infty}_{n=0}\left(a_{m,n}\varphi _{mn}(x)+a^{\dagger}_{m,n}\varphi _{mn}^{*}(x)\right) \\
+\varphi _{mn}(x) & =\sqrt{ \frac{1}{2\pi} \frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}} }e^{-i\omega _{mn}t}e^{im\phi}r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+\Delta & =1+\sqrt{ 1+\mu ^{2} } \\
+\end{align}$$
+
+under this parametrization, the presymplectic form becomes
+
+$$\begin{align}
+\omega & =i\sum ^{\infty}_{}
+\end{align}$$
