@@ -267,3 +267,37 @@ $$\begin{align}
 \end{align}$$
 
 which is equivalent to the Poisson bracket obtained in CPS formalism.
+
+---
+
+$$\begin{align}
+S & =\int ^{t_{f}}_{t_{i}} \mathrm{d}t\left(\frac{1}{2}\dot{x}^{2}-\frac{1}{2}\omega ^{2}x^{2}+\frac{1}{2}y^{2}-\lambda y\dot{x}\right)
+\end{align}$$
+
+take a variation of the action, we get the eoms and presymplectic potential
+
+$$\begin{align}
+\delta S & =\int ^{t_{f}}_{t_{i}}\mathrm{d}t\left(-(\ddot{x}+\omega ^{2}x-\lambda \dot{y})\delta x+(y-\lambda \dot{x})\delta y\right) \\
+ & +(\dot{x}-\lambda y)\delta x\Big|^{t_{f}}_{t_{i}}
+\end{align}$$
+
+$$\begin{align}
+(1-\lambda ^{2})\ddot{x}+\omega ^{2}x & =0
+\end{align}$$
+
+$$\begin{align}
+x(t) & =x_{0}\cos \omega't+\frac{v_{0}}{\omega'}\sin \omega't \\
+y(t) & =-\lambda \omega'x_{0}\sin \omega't+\lambda v_{0}\cos \omega't
+\end{align}$$
+
+where $\displaystyle{\omega'=\frac{\omega}{\sqrt{ 1-\lambda ^{2} }}}$. then the
+
+$$\begin{align}
+\omega & =(1-\lambda ^{2})\delta \dot{x}\wedge \delta x \\
+ & =(1-\lambda ^{2})\delta x_{0}\wedge \delta v_{0} \\
+ & =(1-\lambda ^{2})\delta v_{0}\wedge \delta x_{0}
+\end{align}$$
+
+$$\begin{align}
+\left\{x_{0},v_{0}\right\} & =\frac{1}{1-\lambda ^{2}}
+\end{align}$$
