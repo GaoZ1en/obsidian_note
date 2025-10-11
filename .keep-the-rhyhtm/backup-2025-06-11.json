@@ -29507,9 +29507,115 @@
             "timeKey": "22:20",
             "w": 590,
             "c": 3743
+          },
+          {
+            "timeKey": "23:00",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 990
+      },
+      {
+        "date": "2025-10-11",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 6124,
+        "charCountStart": 28820,
+        "changes": [],
+        "id": 992
+      },
+      {
+        "date": "2025-10-11",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 11529,
+        "charCountStart": 45882,
+        "changes": [],
+        "id": 993
+      },
+      {
+        "date": "2025-10-11",
+        "filePath": "Drafts/coherent state path integral.md",
+        "wordCountStart": 2097,
+        "charCountStart": 13856,
+        "changes": [],
+        "id": 994
+      },
+      {
+        "date": "2025-10-11",
+        "filePath": "Articles/Proca in AdS3/correlation function.md",
+        "wordCountStart": 2016,
+        "charCountStart": 8307,
+        "changes": [],
+        "id": 995
+      },
+      {
+        "date": "2025-10-11",
+        "filePath": "Articles/Proca in AdS3/correlation function 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "16:45",
+            "w": 309,
+            "c": 1426
+          },
+          {
+            "timeKey": "16:50",
+            "w": 35,
+            "c": 221
+          },
+          {
+            "timeKey": "17:00",
+            "w": 9,
+            "c": 51
+          },
+          {
+            "timeKey": "17:10",
+            "w": 125,
+            "c": 476
+          },
+          {
+            "timeKey": "17:15",
+            "w": 102,
+            "c": 467
+          },
+          {
+            "timeKey": "17:20",
+            "w": 68,
+            "c": 305
+          },
+          {
+            "timeKey": "17:25",
+            "w": 85,
+            "c": 381
+          },
+          {
+            "timeKey": "17:30",
+            "w": 127,
+            "c": 553
+          },
+          {
+            "timeKey": "17:35",
+            "w": 188,
+            "c": 747
+          },
+          {
+            "timeKey": "17:40",
+            "w": -332,
+            "c": -1473
+          },
+          {
+            "timeKey": "17:45",
+            "w": 1254,
+            "c": 7374
+          },
+          {
+            "timeKey": "17:50",
+            "w": 833,
+            "c": 4483
+          }
+        ],
+        "id": 996
       }
     ],
     "daysWithCompletedGoal": [
@@ -29589,7 +29695,8 @@
       "2025-10-07",
       "2025-10-08",
       "2025-10-09",
-      "2025-10-10"
+      "2025-10-10",
+      "2025-10-11"
     ]
   }
 }
