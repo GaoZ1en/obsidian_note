@@ -29613,9 +29613,43 @@
             "timeKey": "17:50",
             "w": 833,
             "c": 4483
+          },
+          {
+            "timeKey": "19:15",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 996
+      },
+      {
+        "date": "2025-10-11",
+        "filePath": "Articles/Proca in AdS3/simple example.md",
+        "wordCountStart": 1872,
+        "charCountStart": 9833,
+        "changes": [
+          {
+            "timeKey": "19:40",
+            "w": 75,
+            "c": 361
+          },
+          {
+            "timeKey": "19:45",
+            "w": 69,
+            "c": 368
+          },
+          {
+            "timeKey": "19:50",
+            "w": 56,
+            "c": 290
+          },
+          {
+            "timeKey": "19:55",
+            "w": 12,
+            "c": 54
+          }
+        ],
+        "id": 997
       }
     ],
     "daysWithCompletedGoal": [
