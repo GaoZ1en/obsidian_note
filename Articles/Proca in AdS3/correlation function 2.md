@@ -40,5 +40,26 @@ a_{n,\bar{n}}\ket{\Omega} & =0, & \forall n,\bar{n}\in \mathbb{N}
 the two-point correlation function is given by
 
 $$\begin{align}
-
+\braket{ \Omega|\phi(x_{1})\phi(x_{2})|\Omega } & =\sum ^{\infty}_{n_{1},n_{2},\bar{n}_{1},\bar{n}_{2}=0}\braket{ \Omega|(a_{n_{1},\bar{n}_{1}}\varphi _{n_{1},\bar{n}_{1}}(x_{1})+a^{\dagger}_{n_{1},\bar{n}_{1}}\varphi ^{*}_{n_{1},\bar{n}_{1}}(x_{1}))(a_{n_{2},\bar{n}_{2}}\varphi _{n_{2},\bar{n}_{2}}(x_{2})+a^{\dagger}_{n_{2},\bar{n}_{2}}\varphi ^{*}_{n_{2},\bar{n}_{2}}(x_{2}))|\Omega } \\
+ & =\sum ^{\infty}_{n,\bar{n}=0}\varphi _{n,\bar{n}}(x_{1})\varphi ^{*}_{n,\bar{n}}(x_{2})
 \end{align}$$
+
+we first pick $\displaystyle{x_{2}=0}$...
+
+---
+
+$$\tag{.}\begin{align}
+\varphi _{n,\bar{n}}(x) & =\sqrt{ \frac{1}{n!\bar{n}!(\Delta)_{n}(\Delta)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\varphi _{00}(x) \\
+\varphi _{0,0}(x) & =\sqrt{ \frac{1}{2\pi} }e^{-i\Delta t}(1+r^{2})^{-\frac{\Delta}{2}}
+\end{align}$$
+
+$$\begin{align}
+\varphi _{n,m} & =\sqrt{ \frac{1}{2\pi} \frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}} }e^{-i\omega _{nm}t}e^{im\phi}r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+$$\begin{align}
+\varphi _{n,\bar{n}} & =\sqrt{ \frac{1}{2\pi} \frac{\Gamma(\Delta+n)\Gamma(1+\bar{n})}{\Gamma(\Delta+\bar{n})\Gamma(1+n)} }e^{-i\omega _{n\bar{n}}t}e^{i(n-\bar{n})\phi}r^{n-\bar{n}}(1+r^{2})^{-(\Delta+n-\bar{n})/2}P_{\bar{n}}^{(\Delta-1,n-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+ & =\sqrt{ \frac{1}{2\pi} \frac{\Gamma(\Delta+\bar{n})\Gamma(1+n)}{\Gamma(\Delta+n)\Gamma(1+\bar{n})} }e^{-i\omega _{n\bar{n}}t}e^{i(n-\bar{n})\phi}r^{\bar{n}-n}(1+r^{2})^{-(\Delta+\bar{n}-n)/2}P_{n}^{(\Delta-1,\bar{n}-n)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+\omega _{n\bar{n}} & =\Delta+n+\bar{n}
+\end{align}$$
+
