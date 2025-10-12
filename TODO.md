@@ -6,11 +6,11 @@
 	3. 计算关联函数
 	4. 考虑过渡到路径积分
 	5. 后面思考推广到d维
-2. [Henneaux, Teitelboim] Quantization of gauge systems.pdf
-3. 可以借上课把若干经典读一读
+2. 可以借上课把若干经典读一读
 	1. large scale structure of spacetime by Hawking and Ellis
 	2. General Relativity by Wald
-4. dynamic black hole entropy, Wald, apparent horizon.
+	3. [Henneaux, Teitelboim] Quantization of gauge systems.pdf
+3. dynamic black hole entropy, Wald, apparent horizon.
 
 应当搞清楚算的是什么量，而不是直接模仿别人的计算流程。
 ## career

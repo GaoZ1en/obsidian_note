@@ -298,6 +298,3 @@ $$\begin{align}
  & =(1-\lambda ^{2})\delta v_{0}\wedge \delta x_{0}
 \end{align}$$
 
-$$\begin{align}
-\left\{x_{0},v_{0}\right\} & =\frac{1}{1-\lambda ^{2}}
-\end{align}$$
