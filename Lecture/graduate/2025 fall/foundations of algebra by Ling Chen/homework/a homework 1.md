@@ -7,6 +7,7 @@ suppose $\displaystyle{(G,\cdot)}$ is a semi-group. prove that iff $\displaystyl
 ### $\displaystyle{\implies}$
 
 
+
 ### $\displaystyle{\impliedby}$
 
 
