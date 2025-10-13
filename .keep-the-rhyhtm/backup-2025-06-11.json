@@ -29986,9 +29986,177 @@
             "timeKey": "23:10",
             "w": 0,
             "c": 2
+          },
+          {
+            "timeKey": "23:50",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 1008
+      },
+      {
+        "date": "2025-10-13",
+        "filePath": "Lecture/graduate/2025 fall/foundations of algebra by Ling Chen/homework/a homework 1.md",
+        "wordCountStart": 125,
+        "charCountStart": 854,
+        "changes": [
+          {
+            "timeKey": "08:30",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1010
+      },
+      {
+        "date": "2025-10-13",
+        "filePath": "Articles/Proca in AdS3/simple example.md",
+        "wordCountStart": 2068,
+        "charCountStart": 10822,
+        "changes": [],
+        "id": 1012
+      },
+      {
+        "date": "2025-10-13",
+        "filePath": "TODO.md",
+        "wordCountStart": 6181,
+        "charCountStart": 31021,
+        "changes": [],
+        "id": 1014
+      },
+      {
+        "date": "2025-10-13",
+        "filePath": "Articles/Proca in AdS3/correlation function 2.md",
+        "wordCountStart": 720,
+        "charCountStart": 3176,
+        "changes": [
+          {
+            "timeKey": "10:55",
+            "w": 678,
+            "c": 4145
+          },
+          {
+            "timeKey": "11:00",
+            "w": -678,
+            "c": -4145
+          }
+        ],
+        "id": 1015
+      },
+      {
+        "date": "2025-10-13",
+        "filePath": "Literature Notes/Black hole thermodynamics is around the corner (2510.04499v1).md",
+        "wordCountStart": 193,
+        "charCountStart": 1170,
+        "changes": [
+          {
+            "timeKey": "11:10",
+            "w": 64,
+            "c": 308
+          },
+          {
+            "timeKey": "11:15",
+            "w": 921,
+            "c": 7223
+          },
+          {
+            "timeKey": "11:20",
+            "w": 108,
+            "c": 506
+          },
+          {
+            "timeKey": "11:25",
+            "w": -868,
+            "c": -6915
+          },
+          {
+            "timeKey": "11:30",
+            "w": 102,
+            "c": 508
+          },
+          {
+            "timeKey": "11:35",
+            "w": 102,
+            "c": 527
+          },
+          {
+            "timeKey": "11:40",
+            "w": -136,
+            "c": -600
+          },
+          {
+            "timeKey": "11:45",
+            "w": 267,
+            "c": 1219
+          },
+          {
+            "timeKey": "11:50",
+            "w": 188,
+            "c": 1043
+          },
+          {
+            "timeKey": "11:55",
+            "w": 190,
+            "c": 930
+          },
+          {
+            "timeKey": "12:00",
+            "w": 3,
+            "c": 22
+          },
+          {
+            "timeKey": "15:50",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "16:35",
+            "w": 144,
+            "c": 866
+          },
+          {
+            "timeKey": "16:40",
+            "w": 72,
+            "c": 374
+          },
+          {
+            "timeKey": "16:45",
+            "w": 22,
+            "c": 138
+          },
+          {
+            "timeKey": "16:50",
+            "w": 88,
+            "c": 538
+          },
+          {
+            "timeKey": "16:55",
+            "w": 62,
+            "c": 421
+          },
+          {
+            "timeKey": "17:00",
+            "w": 121,
+            "c": 746
+          },
+          {
+            "timeKey": "17:05",
+            "w": 166,
+            "c": 970
+          },
+          {
+            "timeKey": "17:10",
+            "w": 62,
+            "c": 377
+          },
+          {
+            "timeKey": "20:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1016
       }
     ],
     "daysWithCompletedGoal": [
@@ -30070,7 +30238,8 @@
       "2025-10-09",
       "2025-10-10",
       "2025-10-11",
-      "2025-10-12"
+      "2025-10-12",
+      "2025-10-13"
     ]
   }
 }
