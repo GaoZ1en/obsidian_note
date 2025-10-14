@@ -177,4 +177,4 @@ $$\begin{align}
  & =[I_{\beta}(\beta_{0})]+2\pi\left( 1-\frac{\beta}{\beta_{0}} \right)\int _{\mathcal{B}}\psi ^{abcd}\varepsilon _{ab}\varepsilon _{cd}\tilde{\varepsilon}
 \end{align}$$
 
-to the first order of $\displaystyle{\beta-\beta_{0}}$, which well explains why one can also derive the black hole entropy using $\displaystyle{S=(\beta \partial _{\beta}-1)[I'_{\beta}(\beta)]|_{\beta_{0}}}$, namely the action with corner term evaluated on the black hole of $\displaystyle{T_{0}=\frac{1}{\beta_{0}}}$ but with the imaginary time interval $\displaystyle{\beta}$ along the imaginary time $\displaystyle{\tau}$ (why?). 
+to the first order of $\displaystyle{\beta-\beta_{0}}$, which well explains why one can also derive the black hole entropy using $\displaystyle{S=(\beta \partial _{\beta}-1)[I'_{\beta}(\beta)]|_{\beta_{0}}}$, namely the action with corner term evaluated on the black hole of $\displaystyle{T_{0}=\frac{1}{\beta_{0}}}$ but with the imaginary time interval $\displaystyle{\beta}$ along the imaginary time $\displaystyle{\tau}$ (why?). cc

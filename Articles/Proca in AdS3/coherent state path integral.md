@@ -1,16 +1,16 @@
 # harmonic oscillator
 
-we start from a harmonic ocsillator.
+we start from a harmonic oscillator.
 
-$$\begin{align}
+$$\tag{1.0}\begin{align}
 S & =\int ^{t_{f}}_{t_{i}}\left(\frac{1}{2}\dot{x}^{2}-\frac{1}{2}\omega ^{2}x^{2}\right)
 \end{align}$$
 
-# CPS formalism and canonical quantization
+## CPS formalism and canonical quantization
 
 take a variation, we get the eom and symplectic potential
 
-$$\begin{align}
+$$\tag{1.1}\begin{align}
 \delta S & =\int ^{t_{f}}_{t_{i}}E\delta x+\theta|_{t_{f}}-\theta|_{t_{i}} \\
 E & =-\ddot{x}-\omega ^{2}x \\
 \theta & =\dot{x}\delta x
@@ -18,64 +18,64 @@ E & =-\ddot{x}-\omega ^{2}x \\
 
 take a further variation of the symplectic potential, we get the symplectic form
 
-$$\begin{align}
+$$\tag{1.2}\begin{align}
 \omega & =\delta \dot{x}\wedge \delta x
 \end{align}$$
 
 the general solution of the eom reads
 
-$$\begin{align}
+$$\tag{1.3}\begin{align}
 x & =\frac{1}{\sqrt{ 2\omega }}\left(ae^{-i\omega t}+a^{\dagger}e^{i\omega t}\right)
 \end{align}$$
 
 under this parametrization, the symplectic form becomes
 
-$$\begin{align}
+$$\tag{1.4}\begin{align}
 \omega & =i\delta a^{\dagger}\wedge \delta a
 \end{align}$$
 
 which gives the standard Poisson bracket
 
-$$\begin{align}
+$$\tag{1.5}\begin{align}
 \left\{a^{\dagger},a\right\} & =-i
 \end{align}$$
 
 this system has a time translation symmetry
 
-$$\begin{align}
+$$\tag{1.6}\begin{align}
 X_{H} & =\int \mathrm{d}t \dot{x} \frac{\delta}{\delta x}
 \end{align}$$
 
 act this symmetry on the action
 
-$$\begin{align}
+$$\tag{1.7}\begin{align}
 X_{H}\cdot \delta S & =\alpha _{H}|_{t_{f}}-\alpha _{H}|_{t_{i}} \\
-\alpha _{H} & =\frac{1}{2}\left(\dot{x}^{2}-\omega ^{2}x\right)
+\alpha _{H} & =\frac{1}{2}\left(\dot{x}^{2}-\omega ^{2}x^{2}\right)
 \end{align}$$
 
 then the corresponding Noether charge (we identify it as Hamiltonian) is given by
 
-$$\begin{align}
+$$\tag{1.8}\begin{align}
 H & =X_{H}\cdot \theta-\alpha \\
  & =\frac{1}{2}\dot{x}^{2}+\frac{1}{2}\omega ^{2}x^{2} \\
- & =\omega\left(a^{\dagger}a+aa^{\dagger}\right)
+ & =\omega\left(a^{\dagger}a+\frac{1}{2}\right)
 \end{align}$$
 
 we lift $\displaystyle{a}$ and $\displaystyle{a^{\dagger}}$ to operators and the commutation relation is given by
 
-$$\begin{align}
+$$\tag{1.9}\begin{align}
 [a^{\dagger},a] & =i\left\{a^{\dagger},a\right\}=1
 \end{align}$$
 
 vaccum state $\displaystyle{\ket{0}}$ is defined as
 
-$$\begin{align}
+$$\tag{1.10}\begin{align}
 a\ket{0} =0
 \end{align}$$
 
 and by iteratively acting $\displaystyle{a^{\dagger}}$ on $\displaystyle{\ket{0}}$, we get the excited states
 
-$$\begin{align}
+$$\tag{1.11}\begin{align}
 \ket{n}  & =\frac{(a^{\dagger})^{n}}{\sqrt{ n! }}\ket{0}
 \end{align}$$
 
@@ -85,21 +85,20 @@ the Hilbert space is then spanned by $\displaystyle{\{\ket{n}\}}$.
 
 now we want to transfer to coherent state representation. we define the coherent state $\displaystyle{\ket{z}}$ as the eigenstate of $\displaystyle{a}$
 
-$$\begin{align}
+$$\tag{1.12}\begin{align}
 a\ket{z}  & =z\ket{z} \\
-\implies \ket{z}  & =e^{za^{\dagger}}\ket{0} \\
- & =e^{-\frac{|z|^{2}}{2}}\sum ^{\infty}_{n=0}\frac{z^{n}}{\sqrt{ n! }}\ket{n}
+\implies \ket{z} & =e^{-\frac{|z|^{2}}{2}}\sum ^{\infty}_{n=0}\frac{z^{n}}{\sqrt{ n! }}\ket{n}
 \end{align}$$
 
 the inner product between two coherent states is given by
 
-$$\begin{align}
+$$\tag{1.13}\begin{align}
 \braket{ z_{1}|z_{2} }  & =e^{z_{1}^{*}z_{2}-(|z_{1}|^{2}+|z_{2}|^{2})/2}
 \end{align}$$
 
 the completeness relation reads
 
-$$\begin{align}
+$$\tag{1.14}\begin{align}
 1 & =\int \frac{\mathrm{d}^{2}z}{\pi}\ket{z} \bra{z}
 \end{align}$$
 
@@ -107,13 +106,13 @@ $$\begin{align}
 
 now we will derive path integral representation of the transition amplitude between two coherent states
 
-$$\begin{align}
+$$\tag{1.15}\begin{align}
 \braket{ z_{f}|e^{-iHT}|z_{i} }  & =\int \prod ^{N-1}_{k=1} \frac{\mathrm{d}^{2}z_{k}}{\pi}\braket{ z_{N}|e^{-iH\Delta T}|z_{N-1} }\dots\braket{ z_{1}|e^{-iH\Delta T}|z_{0} } 
 \end{align}$$
 
 where $\displaystyle{z_{0}=z_{i},z_{N}=z_{f}}$. for small $\displaystyle{\Delta T}$, we have
 
-$$\begin{align}
+$$\tag{1.16}\begin{align}
 \braket{ z_{n+1}|e^{-iH\Delta T}|z_{n} }  & = e^{-i\omega \Delta T/2}\braket{ z_{n+1}|e^{-i\omega a^{\dagger}a\Delta T}|z_{n} }  \\
  & =e^{-i\omega \Delta T/2}\braket{ z_{n+1}|z_{n}e^{-i\omega \Delta T} }  \\
  & =e^{-i\omega \Delta T/2}e^{z_{n+1}^{*}z_{n}e^{-i\omega \Delta T}-(|z_{n+1}|^{2}+|z_{n}|^{2})/2}
@@ -129,7 +128,7 @@ e^{-i\omega a^{\dagger}a\Delta T}\ket{z}  & =e^{-i\omega a^{\dagger}a\Delta T}e^
 
 then
 
-$$\begin{align}
+$$\tag{1.17}\begin{align}
 \braket{ z_{f}|e^{-iHT}|z_{i} } & =\lim_{ N \to \infty } \int \prod ^{N-1}_{k=1} \frac{\mathrm{d}^{2}z_{k}}{\pi}e^{-i\omega T/2}\exp\left(\sum ^{N-1}_{n=0}\left(z^{*}_{n+1}z_{n}e^{-i\omega \Delta T}-\frac{1}{2}|z_{n+1}|^{2}-\frac{1}{2}|z_{n}|^{2}\right)\right) \\
  & =\lim_{ N \to \infty } \int \prod ^{N-1}_{k=1}\frac{\mathrm{d}^{2}z_{k}}{\pi}e^{-i\omega T/2}\exp\left(\sum ^{N-1}_{n=0}\left(-\frac{1}{2}|z_{n+1}-z_{n}|^{2}+\frac{1}{2}(z^{*}_{n+1}z_{n}-z_{n}^{*}z_{n+1})-i\omega \Delta Tz_{n+1}^{*}z_{n}\right)\right) \\
  & =\lim_{ N \to \infty } \int \prod ^{N-1}_{k=1}\frac{\mathrm{d}^{2}z_{k}}{\pi}e^{-i\omega T/2}\exp\left(i\Delta T\sum ^{N-1}_{n=0}\left(-\frac{i}{2}\left( \frac{z_{n+1}^{*}-z_{n}^{*}}{\Delta T}z_{n}-\frac{i}{2}z_{n}^{*}\frac{z_{n+1}-z_{n}}{\Delta T} \right)-\omega z^{*}_{n}z_{n}+\mathcal{O}(\Delta T)\right)\right) \\
@@ -138,13 +137,13 @@ $$\begin{align}
 
 where
 
-$$\begin{align}
+$$\tag{1.18}\begin{align}
 S[z,z^{*}] & =\int ^{t_{f}}_{t_{i}}\frac{i}{2}\left(z^{*}\dot{z}-\dot{z}^{*}z\right)-\omega z^{*}z
 \end{align}$$
 
 the path integral measure is given by
 
-$$\begin{align}
+$$\tag{1.19}\begin{align}
 \mathcal{D}^{2}z & =\lim_{ N \to \infty } \prod ^{N-1}_{k=1}\frac{\mathrm{d}^{2}z_{k}}{\pi}e^{-i\omega T/2}
 \end{align}$$
 
@@ -152,13 +151,13 @@ $$\begin{align}
 
 we want to calculate the partition function to verify the correctness of the path integral formalism
 
-$$\begin{align}
+$$\tag{1.20}\begin{align}
 Z(\beta) & =\int _{z=z(0)}^{z=z(\beta)} \mathcal{D}^{2}z \exp\left(-S_{E}[z,z^{*}]\right)
 \end{align}$$
 
 where the Euclidean action reads
 
-$$\begin{align}
+$$\tag{1.21}\begin{align}
 S_{E}[z,z^{*}] & =\int ^{\beta}_{0}\mathrm{d}\tau \frac{1}{2}\left(z^{*}\dot{z}-\dot{z}^{*}z\right)+\omega z^{*}z
 \end{align}$$
 
@@ -184,10 +183,6 @@ Z(\beta) & =\int \prod ^{\infty}_{n=-\infty}\frac{\mathrm{d}^{2}z(i\omega _{n})}
  & =e^{-\beta \omega /2}\prod ^{\infty}_{n=-\infty}\frac{1}{-i\omega _{n}+\omega} \\
  & =e^{-\beta \omega /2} \frac{1}{1-e^{-\beta \omega}} \\
  & =\frac{1}{2\sinh(\beta \omega/2)}
-\end{align}$$
-
-$$\begin{align}
-
 \end{align}$$
 
 which is the correct partition function of a harmonic oscillator.
@@ -240,7 +235,7 @@ $$\begin{align}
 which gives the standard Poisson brackets
 
 $$\begin{align}
-\left\{a_{n_{1},\bar{n}_{1}}^{\dagger},a_{n_{2},\bar{n}_{2}}\right\} & =-1
+\left\{a_{n_{1},\bar{n}_{1}}^{\dagger},a_{n_{2},\bar{n}_{2}}\right\} & =-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}
 \end{align}$$
 
 $\mathrm{AdS}_{3}$ has 6 Killing vectors
@@ -293,7 +288,7 @@ $$\begin{align}
 [a_{n_{1},\bar{n}_{1}}^{\dagger},a_{n_{2},\bar{n}_{2}}] & =\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}
 \end{align}$$
 
-vaccum state $\displaystyle{\ket{0}}$ is defined as
+vacuum state $\displaystyle{\ket{0}}$ is defined as
 
 $$\begin{align}
 a_{n,\bar{n}}\ket{0} =0
@@ -383,28 +378,28 @@ Z(\beta) & =\int \prod ^{\infty}_{n,\bar{n}=0}\prod ^{\infty}_{m=-\infty}\frac{\
 
 where $\displaystyle{q=e^{-\beta}}$. this result matches the operator formalism result.
 
-$\displaystyle{\mathrm{Tr}e^{-\beta H}e^{i\alpha J}}$. since $\displaystyle{[H,J]=0}$ (check needed), we have
+$\displaystyle{\mathrm{Tr}e^{-\beta H}e^{i\alpha J}}$. since $\displaystyle{[H,J]=0}$, we have
 
 $$\begin{align}
-e^{-\beta H}e^{i\alpha J} & =e^{-\beta(H-\mu J)}
+e^{-\beta H}e^{i\alpha J} & =e^{-\beta(H-\Omega J)}
 \end{align}$$
 
-where $\displaystyle{\mu=\frac{i\alpha}{\beta}}$ is the chemical potential. the Euclidean action becomes
+where $\displaystyle{\Omega=\frac{i\alpha}{\beta}}$ is the chemical potential. the Euclidean action becomes
 
 $$\begin{align}
-S_{E} & =\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{n,\bar{n}}\dot{z}_{n,\bar{n}}-\dot{z}^{*}_{n,\bar{n}}z_{n,\bar{n}})+(\omega _{n,\bar{n}}-\mu j_{n,\bar{n}})|z_{n,\bar{n}}|^{2}\right) \\
+S_{E} & =\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{n,\bar{n}}\dot{z}_{n,\bar{n}}-\dot{z}^{*}_{n,\bar{n}}z_{n,\bar{n}})+(\omega _{n,\bar{n}}-\Omega\, j_{n,\bar{n}})|z_{n,\bar{n}}|^{2}\right) \\
 \end{align}$$
 
 where $\displaystyle{j_{n,\bar{n}}=\bar{n}-n}$, and the periodic boundary condition gets twisted
 
 $$\begin{align}
-z_{n,\bar{n}}(\beta)=e^{\beta \mu j_{n,\bar{n}}}z_{n,\bar{n}}(0)
+z_{n,\bar{n}}(\beta)=e^{\beta \Omega\, j_{n,\bar{n}}}z_{n,\bar{n}}(0)
 \end{align}$$
 
 which is equivalent to a shift $\displaystyle{i\omega _{n}\to i\omega _{n}-\mu j_{n,\bar{n}}}$ in the Matsubara modes expansion. thus the partition function becomes
 
 $$\begin{align}
-Z(\beta,\alpha) & =\prod ^{\infty}_{n,\bar{n}=0}\prod ^{\infty}_{m=-\infty}\frac{1}{-i\omega _{m}+\omega _{n,\bar{n}}+\mu j_{n,\bar{n}}} \\
+Z(\beta,\alpha) & =\prod ^{\infty}_{n,\bar{n}=0}\prod ^{\infty}_{m=-\infty}\frac{1}{-i\omega _{m}+\omega _{n,\bar{n}}+\Omega\, j_{n,\bar{n}}} \\
  & =\prod ^{\infty}_{n,\bar{n}=0} \frac{1}{1-q^{\omega _{n,\bar{n}}}z^{j_{n,\bar{n}}}}
 \end{align}$$
 
@@ -412,7 +407,7 @@ where $\displaystyle{z=e^{i\alpha}}$. this result also matches the operator form
 
 # Proca field in $\mathrm{AdS}_{3}$
 
-we consider a free scalar in $\mathrm{AdS}_{3}$
+we consider a Proca vector field in $\mathrm{AdS}_{3}$
 
 $$\begin{align}
 S & =\int \mathrm{d}^{3}x\sqrt{ -g }\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}\mu ^{2}A_{\mu}A^{\mu}\right)
@@ -444,9 +439,9 @@ the general solution of the eom is given by
 
 $$\begin{align}
 A^{\mu} & =\sum ^{\infty}_{n,\bar{n}=0}\left(a_{l,n,\bar{n}}{f^{(+)}_{l,n,\bar{n}}}^{\mu}+a_{r,n,\bar{n}}{f^{(+)}_{r,n,\bar{n}}}^{\mu}+a^{\dagger}_{l,n,\bar{n}}{f^{(-)}_{l,n,\bar{n}}}^{\mu}+a^{\dagger}_{r,n,\bar{n}}{f^{(-)}_{r,n,\bar{n}}}^{\mu}\right) \\
-{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!\mu _{n}(\mu+2)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{l,0,0}}^{\mu} \\
+{f^{(+)}_{l,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!\,(\mu)_{n}(\mu+2)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{l,0,0}}^{\mu} \\
 {f^{(+)}_{l,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi _{1}^{\mu} \\
-{f^{(+)}_{r,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu+2)_{n}\mu _{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{r,0,0}}^{\mu} \\
+{f^{(+)}_{r,n,\bar{n}}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu+2)_{n}\,(\mu)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}{f^{(+)}_{r,0,0}}^{\mu} \\
 {f^{(+)}_{r,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} } \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}^{\mu}_{1}
 \end{align}$$
 
@@ -470,7 +465,7 @@ H & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}(\mu+1+n+\bar{n})\left(a_{l,n,\bar{n
 J & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}\left(\bar{n}-n+1\right)(a_{l,n,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}})+(\bar{n}-n-1)\left(a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}\right)
 \end{align}$$
 
-lift $\displaystyle{a_{l/r,n,\bar{n}}}$ and $\displaystyle{a^{\dagger}_{l/r,n,\bar{n}}}$ to quantum operators. vaccum sates $\displaystyle{\ket{0}}$ is defined as
+lift $\displaystyle{a_{l/r,n,\bar{n}}}$ and $\displaystyle{a^{\dagger}_{l/r,n,\bar{n}}}$ to quantum operators. vacuum state $\displaystyle{\ket{0}}$ is defined as
 
 $$\begin{align}
 a_{l/r,n,\bar{n}}\ket{0} =0
@@ -486,7 +481,7 @@ and Hilbert space $\displaystyle{\left\{\prod ^{\infty}_{n,\bar{n}=0}\frac{(a^{\
 
 $$\begin{align}
 H & =\sum ^{\infty}_{n,\bar{n}=0}(\mu+1+n+\bar{n})\left(a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}\right) \\
-J & =\sum ^{\infty}_{n,\bar{n}=0}\left(n-\bar{n}-1\right)a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}}+(n-\bar{n}+1)a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}
+J & =\sum ^{\infty}_{n,\bar{n}=0}\left(\bar{n}-n+1\right)a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}}+\left(\bar{n}-n-1\right)a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}
 \end{align}$$
 
 ## coherent state representation
@@ -540,20 +535,20 @@ Z(\beta,\alpha) & =\mathrm{Tr}e^{-\beta H}e^{ i\alpha J } \\
 where
 
 $$\begin{align}
-S_{E}[\boldsymbol{z}_{l},\boldsymbol{z}^{*}_{l},\boldsymbol{z}_{r},\boldsymbol{z}^{*}_{r}] & =\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{l,n,\bar{n}}\dot{z}_{l,n,\bar{n}}-\dot{z}^{*}_{l,n,\bar{n}}z_{l,n,\bar{n}})+(\omega _{n,\bar{n}}-\mu j_{l,n,\bar{n}})|z_{l,n,\bar{n}}|^{2}\right) \\
- & \quad +\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{r,n,\bar{n}}\dot{z}_{r,n,\bar{n}}-\dot{z}^{*}_{r,n,\bar{n}}z_{r,n,\bar{n}})+(\omega _{n,\bar{n}}-\mu j_{r,n,\bar{n}})|z_{r,n,\bar{n}}|^{2}\right) \\
+S_{E}[\boldsymbol{z}_{l},\boldsymbol{z}^{*}_{l},\boldsymbol{z}_{r},\boldsymbol{z}^{*}_{r}] & =\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{l,n,\bar{n}}\dot{z}_{l,n,\bar{n}}-\dot{z}^{*}_{l,n,\bar{n}}z_{l,n,\bar{n}})+(\omega _{n,\bar{n}}-\Omega\, j_{l,n,\bar{n}})|z_{l,n,\bar{n}}|^{2}\right) \\
+ & \quad +\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{r,n,\bar{n}}\dot{z}_{r,n,\bar{n}}-\dot{z}^{*}_{r,n,\bar{n}}z_{r,n,\bar{n}})+(\omega _{n,\bar{n}}-\Omega\, j_{r,n,\bar{n}})|z_{r,n,\bar{n}}|^{2}\right) \\
 \end{align}$$
 
 twisted periodic condition
 
 $$\begin{align}
-z_{l/r,n,\bar{n}}(\beta) & =e^{\beta \mu j_{l/r,n,\bar{n}}}z_{l/r,n,\bar{n}}(0) \\
+z_{l/r,n,\bar{n}}(\beta) & =e^{\beta \Omega\, j_{l/r,n,\bar{n}}}z_{l/r,n,\bar{n}}(0) \\
 \end{align}$$
 
 where $\displaystyle{j_{l,n,\bar{n}}=\bar{n}-n+1}$ and $\displaystyle{j_{r,n,\bar{n}}=\bar{n}-n-1}$. expand $\displaystyle{z_{l/r,n,\bar{n}}}$ in Matsubara modes
 
 $$\begin{align}
-z_{l/r,n,\bar{n}}(\tau) & =\frac{1}{\sqrt{ \beta }}\sum ^{\infty}_{m=-\infty}z_{l/r,n,\bar{n}}(i\omega _{m})e^{-i(\omega _{m}-i\mu j_{l/r,n,\bar{n}})\tau}
+z_{l/r,n,\bar{n}}(\tau) & =\frac{1}{\sqrt{ \beta }}\sum ^{\infty}_{m=-\infty}z_{l/r,n,\bar{n}}(i\omega _{m})e^{-i(\omega _{m}-i\Omega\, j_{l/r,n,\bar{n}})\tau}
 \end{align}$$
 
 then the Euclidean action becomes
@@ -569,7 +564,7 @@ $$\begin{align}
 Z(\beta,\alpha) & =\int \prod ^{\infty}_{n,\bar{n}=0}\prod ^{\infty}_{m=-\infty}\frac{\mathrm{d}^{2}z_{l,n,\bar{n}}(i\omega _{m})}{\pi}\frac{\mathrm{d}^{2}z_{r,n,\bar{n}}(i\omega _{m})}{\pi} \\
  & \quad \times \exp\left(-\sum ^{\infty}_{n,\bar{n}=0}\sum ^{\infty}_{m=-\infty}z^{*}_{l,n,\bar{n}}(i\omega _{m})\left(-i\omega _{m}+\omega _{n,\bar{n}}+\mu j_{l,n,\bar{n}}\right)z_{l,n,\bar{n}}(i\omega _{m})\right) \\
  & \quad \times \exp\left(-\sum ^{\infty}_{n,\bar{n}=0}\sum ^{\infty}_{m=-\infty}z^{*}_{r,n,\bar{n}}(i\omega _{m})\left(-i\omega _{m}+\omega _{n,\bar{n}}+\mu j_{r,n,\bar{n}}\right)z_{r,n,\bar{n}}(i\omega _{m})\right) \\
- & =\prod ^{\infty}_{n,\bar{n}=0}\prod ^{\infty}_{m=-\infty} \frac{1}{-i\omega _{n,\bar{n}}+\mu j_{l,n,\bar{n}}} \cdot \frac{1}{-i\omega _{n,\bar{n}}+\mu j_{r,n,\bar{n}}} \\
+ & =\prod ^{\infty}_{n,\bar{n}=0}\prod ^{\infty}_{m=-\infty} \frac{1}{-i\omega _{m}+\omega _{n,\bar{n}}+\Omega\, j_{l,n,\bar{n}}} \cdot \frac{1}{-i\omega _{m}+\omega _{n,\bar{n}}+\Omega\, j_{r,n,\bar{n}}} \\
  & =\prod ^{\infty}_{n,\bar{n}=0} \frac{1}{1-q^{\omega _{n,\bar{n}}}z^{j_{l,n,\bar{n}}}} \cdot \frac{1}{1-q^{\omega _{n,\bar{n}}}z^{j_{r,n,\bar{n}}}}
 \end{align}$$
 

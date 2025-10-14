@@ -25804,7 +25804,7 @@
       },
       {
         "date": "2025-09-28",
-        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/Untitled 2.md",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 5.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [],
@@ -29854,7 +29854,7 @@
       },
       {
         "date": "2025-10-12",
-        "filePath": "Lecture/graduate/2025 fall/foundations of algebra by Ling Chen/lecture/lecture 1.md",
+        "filePath": "Lecture/graduate/2025 fall/foundations of algebra by Ling Chen/notes/lecture 1.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -30154,9 +30154,243 @@
             "timeKey": "20:40",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "20:50",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 1016
+      },
+      {
+        "date": "2025-10-14",
+        "filePath": "Articles/Proca in AdS3/correlation function.md",
+        "wordCountStart": 2016,
+        "charCountStart": 8307,
+        "changes": [],
+        "id": 1019
+      },
+      {
+        "date": "2025-10-14",
+        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/gr homework 1.md",
+        "wordCountStart": 289,
+        "charCountStart": 1510,
+        "changes": [
+          {
+            "timeKey": "08:45",
+            "w": -11,
+            "c": -27
+          },
+          {
+            "timeKey": "08:50",
+            "w": 14,
+            "c": 49
+          }
+        ],
+        "id": 1020
+      },
+      {
+        "date": "2025-10-14",
+        "filePath": "Articles/Test particle/main result.md",
+        "wordCountStart": 2407,
+        "charCountStart": 12763,
+        "changes": [],
+        "id": 1021
+      },
+      {
+        "date": "2025-10-14",
+        "filePath": "Articles/Proca in AdS3/correlation function 2.md",
+        "wordCountStart": 720,
+        "charCountStart": 3176,
+        "changes": [
+          {
+            "timeKey": "15:15",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1023
+      },
+      {
+        "date": "2025-10-14",
+        "filePath": "TODO.md",
+        "wordCountStart": 6181,
+        "charCountStart": 31021,
+        "changes": [
+          {
+            "timeKey": "15:15",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "15:20",
+            "w": -5,
+            "c": -48
+          }
+        ],
+        "id": 1024
+      },
+      {
+        "date": "2025-10-14",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 5.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:25",
+            "w": 19,
+            "c": 103
+          },
+          {
+            "timeKey": "15:30",
+            "w": 68,
+            "c": 418
+          },
+          {
+            "timeKey": "15:35",
+            "w": 83,
+            "c": 524
+          },
+          {
+            "timeKey": "15:40",
+            "w": 17,
+            "c": 79
+          },
+          {
+            "timeKey": "15:45",
+            "w": 106,
+            "c": 662
+          },
+          {
+            "timeKey": "15:50",
+            "w": 97,
+            "c": 537
+          },
+          {
+            "timeKey": "15:55",
+            "w": 10,
+            "c": 68
+          },
+          {
+            "timeKey": "16:00",
+            "w": 26,
+            "c": 152
+          },
+          {
+            "timeKey": "16:05",
+            "w": 184,
+            "c": 1221
+          },
+          {
+            "timeKey": "16:15",
+            "w": 8,
+            "c": 49
+          },
+          {
+            "timeKey": "16:25",
+            "w": 106,
+            "c": 609
+          },
+          {
+            "timeKey": "16:30",
+            "w": 120,
+            "c": 934
+          },
+          {
+            "timeKey": "16:40",
+            "w": 15,
+            "c": 89
+          },
+          {
+            "timeKey": "16:45",
+            "w": 34,
+            "c": 205
+          },
+          {
+            "timeKey": "16:50",
+            "w": -156,
+            "c": -1348
+          },
+          {
+            "timeKey": "16:55",
+            "w": 102,
+            "c": 627
+          },
+          {
+            "timeKey": "17:00",
+            "w": 12,
+            "c": 71
+          },
+          {
+            "timeKey": "17:10",
+            "w": 43,
+            "c": 268
+          },
+          {
+            "timeKey": "17:15",
+            "w": 0,
+            "c": -1
+          },
+          {
+            "timeKey": "17:25",
+            "w": 83,
+            "c": 383
+          },
+          {
+            "timeKey": "17:30",
+            "w": 12,
+            "c": 63
+          },
+          {
+            "timeKey": "17:35",
+            "w": 56,
+            "c": 273
+          },
+          {
+            "timeKey": "17:40",
+            "w": 34,
+            "c": 179
+          },
+          {
+            "timeKey": "17:45",
+            "w": 61,
+            "c": 301
+          }
+        ],
+        "id": 1025
+      },
+      {
+        "date": "2025-10-14",
+        "filePath": "Drafts/coherent state path integral.md",
+        "wordCountStart": 2097,
+        "charCountStart": 13856,
+        "changes": [],
+        "id": 1026
+      },
+      {
+        "date": "2025-10-14",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 6124,
+        "charCountStart": 28820,
+        "changes": [
+          {
+            "timeKey": "15:15",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "15:20",
+            "w": 18,
+            "c": 66
+          },
+          {
+            "timeKey": "15:25",
+            "w": 18,
+            "c": 90
+          }
+        ],
+        "id": 1027
       }
     ],
     "daysWithCompletedGoal": [
@@ -30239,7 +30473,8 @@
       "2025-10-10",
       "2025-10-11",
       "2025-10-12",
-      "2025-10-13"
+      "2025-10-13",
+      "2025-10-14"
     ]
   }
 }
