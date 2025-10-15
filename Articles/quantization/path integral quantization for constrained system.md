@@ -30,6 +30,10 @@ $$\tag{1.3}
 \end{align}
 $$
 
+$$\begin{align}
+\braket{ x_{f}|e^{-iH\Delta T}|x_{i} }  & =\int ^{x=x_{f}} _{x=x_{i}} \mathcal{D}x\mathcal{D}p\exp\left(i \int _{t_{i}}^{t_{f}} \mathrm{d}t (p\dot{x}-H)\right)
+\end{align}$$
+
 here we choose $\displaystyle{x_{n}=x_{f},x_{0}=x_{i}}$, and $\displaystyle{0<\beta\leqslant \frac{\pi}{2}}$ plays the same rule as $\displaystyle{\alpha}$. 
 
 then consider the time ordered correlation function (assuming $\displaystyle{t_{i}< t'<t<t_{f}}$)

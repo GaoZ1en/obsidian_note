@@ -30356,6 +30356,11 @@
             "timeKey": "17:45",
             "w": 61,
             "c": 301
+          },
+          {
+            "timeKey": "20:35",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 1025
@@ -30388,9 +30393,246 @@
             "timeKey": "15:25",
             "w": 18,
             "c": 90
+          },
+          {
+            "timeKey": "23:10",
+            "w": 25,
+            "c": 131
           }
         ],
         "id": 1027
+      },
+      {
+        "date": "2025-10-14",
+        "filePath": "Articles/Proca in AdS3/path integral formalism.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "23:15",
+            "w": 588,
+            "c": 4301
+          },
+          {
+            "timeKey": "23:20",
+            "w": 501,
+            "c": 3898
+          },
+          {
+            "timeKey": "23:30",
+            "w": 410,
+            "c": 3773
+          },
+          {
+            "timeKey": "23:40",
+            "w": 101,
+            "c": 969
+          },
+          {
+            "timeKey": "23:50",
+            "w": 370,
+            "c": 3410
+          }
+        ],
+        "id": 1028
+      },
+      {
+        "date": "2025-10-15",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6040,
+        "charCountStart": 25721,
+        "changes": [
+          {
+            "timeKey": "13:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1029
+      },
+      {
+        "date": "2025-10-15",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 6185,
+        "charCountStart": 29108,
+        "changes": [],
+        "id": 1030
+      },
+      {
+        "date": "2025-10-15",
+        "filePath": "Articles/Proca in AdS3/path integral formalism.md",
+        "wordCountStart": 1970,
+        "charCountStart": 16351,
+        "changes": [
+          {
+            "timeKey": "15:40",
+            "w": 100,
+            "c": 496
+          },
+          {
+            "timeKey": "15:45",
+            "w": 116,
+            "c": 730
+          },
+          {
+            "timeKey": "15:50",
+            "w": 35,
+            "c": 222
+          },
+          {
+            "timeKey": "16:00",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1031
+      },
+      {
+        "date": "2025-10-15",
+        "filePath": "Articles/Proca in AdS3/correlation function 2.md",
+        "wordCountStart": 720,
+        "charCountStart": 3176,
+        "changes": [
+          {
+            "timeKey": "14:10",
+            "w": 141,
+            "c": 606
+          },
+          {
+            "timeKey": "14:15",
+            "w": 233,
+            "c": 1083
+          },
+          {
+            "timeKey": "14:20",
+            "w": 257,
+            "c": 1559
+          },
+          {
+            "timeKey": "14:25",
+            "w": 7,
+            "c": 49
+          },
+          {
+            "timeKey": "14:30",
+            "w": 74,
+            "c": 299
+          },
+          {
+            "timeKey": "14:35",
+            "w": 298,
+            "c": 523
+          },
+          {
+            "timeKey": "14:40",
+            "w": 13,
+            "c": 35
+          },
+          {
+            "timeKey": "14:45",
+            "w": -417,
+            "c": -1864
+          },
+          {
+            "timeKey": "14:50",
+            "w": 285,
+            "c": 1028
+          },
+          {
+            "timeKey": "14:55",
+            "w": 4,
+            "c": 32
+          },
+          {
+            "timeKey": "15:00",
+            "w": 1026,
+            "c": 3761
+          },
+          {
+            "timeKey": "15:05",
+            "w": -487,
+            "c": -1753
+          },
+          {
+            "timeKey": "15:10",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "15:25",
+            "w": 6,
+            "c": 12
+          }
+        ],
+        "id": 1032
+      },
+      {
+        "date": "2025-10-15",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13738,
+        "changes": [],
+        "id": 1033
+      },
+      {
+        "date": "2025-10-15",
+        "filePath": "TODO.md",
+        "wordCountStart": 6176,
+        "charCountStart": 30973,
+        "changes": [
+          {
+            "timeKey": "15:10",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "15:25",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1034
+      },
+      {
+        "date": "2025-10-15",
+        "filePath": "Articles/quantization/path integral quantization for constrained system.md",
+        "wordCountStart": 5597,
+        "charCountStart": 26833,
+        "changes": [
+          {
+            "timeKey": "16:00",
+            "w": 41,
+            "c": 191
+          }
+        ],
+        "id": 1035
+      },
+      {
+        "date": "2025-10-15",
+        "filePath": "Articles/Proca in AdS3/path integral 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "16:05",
+            "w": 948,
+            "c": 5700
+          },
+          {
+            "timeKey": "19:00",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1036
+      },
+      {
+        "date": "2025-10-15",
+        "filePath": "Articles/quantization/JT gravity.md",
+        "wordCountStart": 1164,
+        "charCountStart": 5611,
+        "changes": [],
+        "id": 1037
       }
     ],
     "daysWithCompletedGoal": [
@@ -30474,7 +30716,8 @@
       "2025-10-11",
       "2025-10-12",
       "2025-10-13",
-      "2025-10-14"
+      "2025-10-14",
+      "2025-10-15"
     ]
   }
 }

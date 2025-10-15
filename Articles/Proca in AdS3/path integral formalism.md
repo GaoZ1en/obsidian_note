@@ -1,3 +1,72 @@
+# harmonic oscillator
+
+$$\begin{align}
+S & =\int ^{t_{f}}_{t_{i}}\mathrm{d}t\left(\frac{1}{2}\dot{x}^{2}-\frac{1}{2}\omega ^{2}x^{2}\right)
+\end{align}$$
+
+## cps formalism
+
+take a variation
+
+$$\begin{align}
+\delta S & \int ^{t_{f}}_{t_{i}}E\delta x+\theta|_{t_{i}}^{t_{f}} \\
+E & =-(\ddot{x}+\omega ^{2}x) \\
+\theta & =\dot{x}\delta x
+\end{align}$$
+
+and
+
+$$\begin{align}
+\Omega & =\delta \dot{x}\wedge \delta x
+\end{align}$$
+
+the general solutions to the eom is
+
+$$\begin{align}
+x & =\frac{1}{\sqrt{ 2\omega }}\left(ae^{-i\omega t}+a^{\dagger}e^{i\omega t}\right)
+\end{align}$$
+
+under this parameterization
+
+$$\begin{align}
+\omega & =i\delta a^{\dagger}\wedge \delta a
+\end{align}$$
+
+which gives
+
+$$\begin{align}
+\left\{a^{\dagger},a\right\} & =-i
+\end{align}$$
+
+time translation symmetry
+
+$$\begin{align}
+X_{H} & =\int \mathrm{d}t\dot{x} \frac{\delta}{\delta x}
+\end{align}$$
+
+which gives the Noether charge (Hamiltonian)
+
+$$\begin{align}
+H & =\frac{1}{2}\dot{x}^{2}+\frac{1}{2}\omega ^{2}x^{2} \\
+ & =\frac{1}{2}\omega(a^{\dagger}a+aa^{\dagger})
+\end{align}$$
+
+lift $\displaystyle{a}$ and $\displaystyle{a^{\dagger}}$ to operators and the commutation relations is given by
+
+$$\begin{align}
+[a^{\dagger},a] & =i\left\{a^{\dagger},a\right\}=1
+\end{align}$$
+
+the excited states
+
+$$\begin{align}
+\ket{n} =\frac{(a^{\dagger})^{n}}{\sqrt{ n! }}\ket{0} 
+\end{align}$$
+
+and the Hilbert space is then spanned by $\displaystyle{\left\{\ket{n}\right\}}$. 
+
+
+
 # path integral in the standard (configuration-space) formalism
 
 本笔记按“先洛伦兹、后欧氏”的节奏，慢慢用坐标/场配置空间（standard, configuration-space）的路径积分推导谐振子、AdS3 自由标量与 Proca 场：
