@@ -28957,7 +28957,7 @@
       },
       {
         "date": "2025-10-10",
-        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 1.md",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 2.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -29332,7 +29332,7 @@
       },
       {
         "date": "2025-10-10",
-        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/Untitled.md",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 2.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [],
@@ -31165,6 +31165,11 @@
             "timeKey": "22:25",
             "w": -330,
             "c": -2368
+          },
+          {
+            "timeKey": "23:30",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 1052
@@ -31216,6 +31221,506 @@
         "charCountStart": 14442,
         "changes": [],
         "id": 1058
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Articles/Proca in AdS3/electric field.md",
+        "wordCountStart": 458,
+        "charCountStart": 1998,
+        "changes": [],
+        "id": 1059
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 2.md",
+        "wordCountStart": 4,
+        "charCountStart": 29,
+        "changes": [
+          {
+            "timeKey": "08:50",
+            "w": 11,
+            "c": 51
+          },
+          {
+            "timeKey": "08:55",
+            "w": 95,
+            "c": 476
+          },
+          {
+            "timeKey": "09:00",
+            "w": 42,
+            "c": 183
+          },
+          {
+            "timeKey": "09:05",
+            "w": 81,
+            "c": 383
+          },
+          {
+            "timeKey": "09:10",
+            "w": 96,
+            "c": 380
+          },
+          {
+            "timeKey": "09:15",
+            "w": 141,
+            "c": 653
+          },
+          {
+            "timeKey": "09:20",
+            "w": -5,
+            "c": 10
+          },
+          {
+            "timeKey": "09:25",
+            "w": 49,
+            "c": 263
+          },
+          {
+            "timeKey": "09:30",
+            "w": 81,
+            "c": 361
+          },
+          {
+            "timeKey": "09:35",
+            "w": 151,
+            "c": 651
+          },
+          {
+            "timeKey": "09:40",
+            "w": 1,
+            "c": 6
+          }
+        ],
+        "id": 1060
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "08:50",
+            "w": 11,
+            "c": 51
+          },
+          {
+            "timeKey": "08:55",
+            "w": 95,
+            "c": 476
+          },
+          {
+            "timeKey": "09:00",
+            "w": 42,
+            "c": 183
+          },
+          {
+            "timeKey": "09:05",
+            "w": 81,
+            "c": 383
+          },
+          {
+            "timeKey": "09:10",
+            "w": 96,
+            "c": 380
+          },
+          {
+            "timeKey": "09:15",
+            "w": 141,
+            "c": 653
+          },
+          {
+            "timeKey": "09:20",
+            "w": -5,
+            "c": 10
+          },
+          {
+            "timeKey": "09:25",
+            "w": 49,
+            "c": 263
+          },
+          {
+            "timeKey": "09:30",
+            "w": 81,
+            "c": 361
+          },
+          {
+            "timeKey": "09:35",
+            "w": 151,
+            "c": 651
+          },
+          {
+            "timeKey": "09:40",
+            "w": 1,
+            "c": 6
+          }
+        ],
+        "id": 1061
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 2877,
+        "charCountStart": 14442,
+        "changes": [],
+        "id": 1062
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 3.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "09:35",
+            "w": 73,
+            "c": 438
+          },
+          {
+            "timeKey": "09:40",
+            "w": 113,
+            "c": 690
+          },
+          {
+            "timeKey": "09:45",
+            "w": 91,
+            "c": 480
+          },
+          {
+            "timeKey": "09:50",
+            "w": 139,
+            "c": 747
+          },
+          {
+            "timeKey": "09:55",
+            "w": 123,
+            "c": 595
+          },
+          {
+            "timeKey": "10:00",
+            "w": -84,
+            "c": -420
+          },
+          {
+            "timeKey": "10:05",
+            "w": 29,
+            "c": 148
+          }
+        ],
+        "id": 1063
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5462,
+        "charCountStart": 23573,
+        "changes": [],
+        "id": 1064
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "TODO.md",
+        "wordCountStart": 6176,
+        "charCountStart": 30973,
+        "changes": [],
+        "id": 1065
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Celestial holography.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 1066
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Literature Notes/Celestial Holography Lectures on Asymptotic Symmetries (2109.00997v2).md",
+        "wordCountStart": 1814,
+        "charCountStart": 10492,
+        "changes": [
+          {
+            "timeKey": "10:15",
+            "w": 6,
+            "c": 44
+          },
+          {
+            "timeKey": "10:30",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1067
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Black hole thermodynamics and quantum entropy correction by Leopoldo A. Pando Zayas.md",
+        "wordCountStart": 398,
+        "charCountStart": 2568,
+        "changes": [],
+        "id": 1068
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Bulk and holographic Ward identities and 1.5 Noether theorem for BRST and Batalin-Vilkowisky gauge fixed actions by Laurent Baulieu.md",
+        "wordCountStart": 122,
+        "charCountStart": 787,
+        "changes": [],
+        "id": 1069
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Challenging the standard cosmological model by Subir Sarkar.md",
+        "wordCountStart": 2,
+        "charCountStart": 14,
+        "changes": [],
+        "id": 1070
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Geometric origins of Yang-Mills in flat space by Hong Lu.md",
+        "wordCountStart": 357,
+        "charCountStart": 2055,
+        "changes": [],
+        "id": 1071
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/How to implement T-dualities on the D-brane amplitudes in Type II superstring by Jian-Xin Lu.md",
+        "wordCountStart": 50,
+        "charCountStart": 349,
+        "changes": [],
+        "id": 1072
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Introduction to AdS_CFT correspondence by Bin Chen.md",
+        "wordCountStart": 566,
+        "charCountStart": 3440,
+        "changes": [
+          {
+            "timeKey": "10:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1073
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Macroscopic dark matter and nontopological soliton by Yang Bai.md",
+        "wordCountStart": 7,
+        "charCountStart": 56,
+        "changes": [],
+        "id": 1074
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Neutrino mass in SM and BSM by Mu-Chun Chen.md",
+        "wordCountStart": 28,
+        "charCountStart": 186,
+        "changes": [],
+        "id": 1075
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/On the nature of temperature by Jin-Wu Ye.md",
+        "wordCountStart": 103,
+        "charCountStart": 730,
+        "changes": [],
+        "id": 1076
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/On-shell program of modern scattering amplitude by Feng Bo.md",
+        "wordCountStart": 327,
+        "charCountStart": 1876,
+        "changes": [],
+        "id": 1077
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Quantum integrable systems and their solutions by Wen-Li Yang.md",
+        "wordCountStart": 726,
+        "charCountStart": 3988,
+        "changes": [],
+        "id": 1078
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/README.md",
+        "wordCountStart": 1,
+        "charCountStart": 5,
+        "changes": [],
+        "id": 1079
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Solitons in quantum field theory and real world by Kimyeong Lee.md",
+        "wordCountStart": 397,
+        "charCountStart": 2278,
+        "changes": [],
+        "id": 1080
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/String theory and cosmology by Fernando Quevedo.md",
+        "wordCountStart": 212,
+        "charCountStart": 2040,
+        "changes": [],
+        "id": 1081
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Towards all order perturbative gravity by Damgaard.md",
+        "wordCountStart": 201,
+        "charCountStart": 1106,
+        "changes": [],
+        "id": 1082
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Unification within gravitational quantum field theory by Yue-Liang Wu.md",
+        "wordCountStart": 281,
+        "charCountStart": 1664,
+        "changes": [],
+        "id": 1083
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 ICTP-AP winter school/Universal description of quantum black holes by Francesco Sannino.md",
+        "wordCountStart": 126,
+        "charCountStart": 658,
+        "changes": [],
+        "id": 1084
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 quantization and homology method by Si Li/lecture 1 chain complex and (co)homology.md",
+        "wordCountStart": 879,
+        "charCountStart": 5366,
+        "changes": [],
+        "id": 1085
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2024 quantization and homology method by Si Li/lecture 3 noncommutative calculus.md",
+        "wordCountStart": 8,
+        "charCountStart": 38,
+        "changes": [],
+        "id": 1086
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2025 summer school in nwu/analytic structure of scattering amplitude by Ye Yuan.md",
+        "wordCountStart": 41,
+        "charCountStart": 218,
+        "changes": [],
+        "id": 1087
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2025 summer school in nwu/bootstrap LQCD by Gang Yang.md",
+        "wordCountStart": 1619,
+        "charCountStart": 9111,
+        "changes": [],
+        "id": 1088
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2025 summer school in nwu/bootstrap method for ads amplitude by Xinan Zhou.md",
+        "wordCountStart": 4512,
+        "charCountStart": 24774,
+        "changes": [],
+        "id": 1089
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2025 summer school in nwu/lattice QCD by Xu Feng.md",
+        "wordCountStart": 5,
+        "charCountStart": 44,
+        "changes": [],
+        "id": 1090
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2025 summer school in nwu/numerical bootstrap by Ning Su.md",
+        "wordCountStart": 68,
+        "charCountStart": 527,
+        "changes": [],
+        "id": 1091
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2025 summer school in nwu/scattering amplitude by Song He.md",
+        "wordCountStart": 2118,
+        "charCountStart": 11558,
+        "changes": [],
+        "id": 1092
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/AdS3CFT2 duality by Matthias Gaberdiel.md",
+        "wordCountStart": 536,
+        "charCountStart": 2783,
+        "changes": [],
+        "id": 1093
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Lecture/2025 summer school on theoretical physics in HangZhou/analytic conformal bootstrap by Agnese Bissi.md",
+        "wordCountStart": 1996,
+        "charCountStart": 10652,
+        "changes": [],
+        "id": 1094
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Literature Notes/Rotating Black Holes in Higher Dimensions with a Cosmological Constant (hep-th 0409155v1).md",
+        "wordCountStart": 148,
+        "charCountStart": 931,
+        "changes": [],
+        "id": 1095
+      },
+      {
+        "date": "2025-10-17",
+        "filePath": "Literature Notes/The General Kerr-de Sitter Metrics in All Dimensions (hep-th 0404008v3).md",
+        "wordCountStart": 206,
+        "charCountStart": 1259,
+        "changes": [
+          {
+            "timeKey": "10:50",
+            "w": 0,
+            "c": -2
+          },
+          {
+            "timeKey": "10:55",
+            "w": 86,
+            "c": 405
+          },
+          {
+            "timeKey": "11:00",
+            "w": 154,
+            "c": 679
+          },
+          {
+            "timeKey": "11:05",
+            "w": 122,
+            "c": 509
+          },
+          {
+            "timeKey": "16:55",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "17:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1096
       }
     ],
     "daysWithCompletedGoal": [
@@ -31301,7 +31806,8 @@
       "2025-10-13",
       "2025-10-14",
       "2025-10-15",
-      "2025-10-16"
+      "2025-10-16",
+      "2025-10-17"
     ]
   }
 }

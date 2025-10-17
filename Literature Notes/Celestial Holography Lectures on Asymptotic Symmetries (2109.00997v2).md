@@ -198,3 +198,4 @@ i[\mathcal{J}_{m},\mathcal{J}_{n}] & =(m-n)\mathcal{J}_{m+n} \\
 i[\mathcal{J}_{m},\mathcal{P}_{n}] & =(m-n)\mathcal{P}_{m+n}+\frac{1}{4G}m(m^{2}-1)\delta _{m+n,0}
 \end{align}$$
 
+at spacelike infinity $\displaystyle{i^{0}}$

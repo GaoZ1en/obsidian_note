@@ -80,7 +80,7 @@ symmetry checks, chiral operator spectrum checks, amplitudes protected by SUSY, 
 
 implications. new way to define string theory, study novel string theory via SYM, investigate some problems in quantum gravity(information loss), emergent spacetime, strong/weak duality, 
 
-SYM model.
+SYK model.
 
 remarks. still a conjecture, establishment relies heavily on string theory, many important questions remain unknown
 
