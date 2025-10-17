@@ -30455,7 +30455,13 @@
         "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
         "wordCountStart": 6185,
         "charCountStart": 29108,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "23:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
         "id": 1030
       },
       {
@@ -30483,6 +30489,11 @@
             "timeKey": "16:00",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "23:45",
+            "w": 0,
+            "c": 2
           }
         ],
         "id": 1031
@@ -30562,6 +30573,31 @@
             "timeKey": "15:25",
             "w": 6,
             "c": 12
+          },
+          {
+            "timeKey": "23:00",
+            "w": 13,
+            "c": 69
+          },
+          {
+            "timeKey": "23:05",
+            "w": 125,
+            "c": 479
+          },
+          {
+            "timeKey": "23:15",
+            "w": -138,
+            "c": -548
+          },
+          {
+            "timeKey": "23:20",
+            "w": 400,
+            "c": 1703
+          },
+          {
+            "timeKey": "23:25",
+            "w": -400,
+            "c": -1703
           }
         ],
         "id": 1032
@@ -30633,6 +30669,553 @@
         "charCountStart": 5611,
         "changes": [],
         "id": 1037
+      },
+      {
+        "date": "2025-10-15",
+        "filePath": "Articles/Proca in AdS3/Casimir operator.md",
+        "wordCountStart": 1227,
+        "charCountStart": 5566,
+        "changes": [],
+        "id": 1038
+      },
+      {
+        "date": "2025-10-15",
+        "filePath": "Articles/Proca in AdS3/correlation function.md",
+        "wordCountStart": 2016,
+        "charCountStart": 8307,
+        "changes": [],
+        "id": 1039
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "TODO.md",
+        "wordCountStart": 6176,
+        "charCountStart": 30973,
+        "changes": [],
+        "id": 1041
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Literature Notes/Celestial Holography Lectures on Asymptotic Symmetries (2109.00997v2).md",
+        "wordCountStart": 98,
+        "charCountStart": 668,
+        "changes": [
+          {
+            "timeKey": "09:05",
+            "w": 17,
+            "c": 111
+          },
+          {
+            "timeKey": "09:10",
+            "w": 120,
+            "c": 759
+          },
+          {
+            "timeKey": "09:15",
+            "w": 39,
+            "c": 195
+          },
+          {
+            "timeKey": "09:20",
+            "w": 42,
+            "c": 248
+          },
+          {
+            "timeKey": "09:25",
+            "w": 59,
+            "c": 342
+          },
+          {
+            "timeKey": "09:30",
+            "w": 89,
+            "c": 550
+          },
+          {
+            "timeKey": "09:35",
+            "w": 32,
+            "c": 181
+          },
+          {
+            "timeKey": "09:40",
+            "w": 34,
+            "c": 201
+          },
+          {
+            "timeKey": "09:45",
+            "w": 61,
+            "c": 369
+          },
+          {
+            "timeKey": "09:50",
+            "w": 27,
+            "c": 195
+          },
+          {
+            "timeKey": "09:55",
+            "w": 27,
+            "c": 196
+          },
+          {
+            "timeKey": "10:00",
+            "w": 65,
+            "c": 371
+          },
+          {
+            "timeKey": "10:05",
+            "w": 105,
+            "c": 638
+          },
+          {
+            "timeKey": "10:10",
+            "w": 142,
+            "c": 786
+          },
+          {
+            "timeKey": "10:15",
+            "w": 77,
+            "c": 471
+          },
+          {
+            "timeKey": "10:20",
+            "w": 19,
+            "c": 153
+          },
+          {
+            "timeKey": "11:50",
+            "w": 23,
+            "c": 121
+          },
+          {
+            "timeKey": "11:55",
+            "w": 27,
+            "c": 177
+          },
+          {
+            "timeKey": "14:10",
+            "w": -5,
+            "c": -28
+          },
+          {
+            "timeKey": "14:15",
+            "w": 157,
+            "c": 894
+          },
+          {
+            "timeKey": "14:20",
+            "w": 143,
+            "c": 617
+          },
+          {
+            "timeKey": "14:25",
+            "w": 6,
+            "c": 30
+          },
+          {
+            "timeKey": "14:30",
+            "w": 102,
+            "c": 597
+          },
+          {
+            "timeKey": "14:35",
+            "w": 65,
+            "c": 361
+          },
+          {
+            "timeKey": "14:50",
+            "w": 415,
+            "c": 3212
+          },
+          {
+            "timeKey": "14:55",
+            "w": -294,
+            "c": -2455
+          },
+          {
+            "timeKey": "15:00",
+            "w": 122,
+            "c": 532
+          }
+        ],
+        "id": 1042
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Articles/Proca in AdS3/path integral formalism.md",
+        "wordCountStart": 2221,
+        "charCountStart": 17801,
+        "changes": [],
+        "id": 1043
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 6185,
+        "charCountStart": 29108,
+        "changes": [],
+        "id": 1044
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Literature Notes/Gravitational Entropy (2509.10921v1).md",
+        "wordCountStart": 3229,
+        "charCountStart": 16890,
+        "changes": [],
+        "id": 1045
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Articles/Proca in AdS3/symplectic structure on the reduced phase space.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "12:00",
+            "w": 36,
+            "c": 196
+          },
+          {
+            "timeKey": "12:05",
+            "w": 56,
+            "c": 359
+          },
+          {
+            "timeKey": "12:10",
+            "w": 26,
+            "c": 161
+          },
+          {
+            "timeKey": "12:15",
+            "w": 19,
+            "c": 191
+          },
+          {
+            "timeKey": "12:20",
+            "w": 36,
+            "c": 250
+          },
+          {
+            "timeKey": "12:25",
+            "w": 54,
+            "c": 261
+          },
+          {
+            "timeKey": "12:30",
+            "w": 10,
+            "c": 50
+          },
+          {
+            "timeKey": "12:35",
+            "w": 17,
+            "c": 124
+          },
+          {
+            "timeKey": "12:40",
+            "w": 92,
+            "c": 520
+          },
+          {
+            "timeKey": "12:45",
+            "w": 31,
+            "c": 169
+          },
+          {
+            "timeKey": "12:50",
+            "w": 321,
+            "c": 3001
+          },
+          {
+            "timeKey": "12:55",
+            "w": -18,
+            "c": -104
+          },
+          {
+            "timeKey": "13:00",
+            "w": 13,
+            "c": 84
+          },
+          {
+            "timeKey": "13:20",
+            "w": -255,
+            "c": -2634
+          },
+          {
+            "timeKey": "13:25",
+            "w": 29,
+            "c": 149
+          },
+          {
+            "timeKey": "13:45",
+            "w": 9,
+            "c": 62
+          }
+        ],
+        "id": 1046
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Articles/Proca in AdS3/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 1047
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 6.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:25",
+            "w": 47,
+            "c": 227
+          },
+          {
+            "timeKey": "15:30",
+            "w": 36,
+            "c": 239
+          },
+          {
+            "timeKey": "15:35",
+            "w": 44,
+            "c": 202
+          },
+          {
+            "timeKey": "15:40",
+            "w": 18,
+            "c": 119
+          },
+          {
+            "timeKey": "16:00",
+            "w": 3,
+            "c": 23
+          },
+          {
+            "timeKey": "16:15",
+            "w": 4,
+            "c": 35
+          },
+          {
+            "timeKey": "16:20",
+            "w": 34,
+            "c": 206
+          },
+          {
+            "timeKey": "16:25",
+            "w": 56,
+            "c": 338
+          },
+          {
+            "timeKey": "16:30",
+            "w": 89,
+            "c": 460
+          },
+          {
+            "timeKey": "16:35",
+            "w": 38,
+            "c": 221
+          },
+          {
+            "timeKey": "16:40",
+            "w": 51,
+            "c": 341
+          },
+          {
+            "timeKey": "16:45",
+            "w": 94,
+            "c": 391
+          },
+          {
+            "timeKey": "16:50",
+            "w": 9,
+            "c": 31
+          },
+          {
+            "timeKey": "16:55",
+            "w": 98,
+            "c": 520
+          },
+          {
+            "timeKey": "17:00",
+            "w": 1,
+            "c": 12
+          },
+          {
+            "timeKey": "17:05",
+            "w": 12,
+            "c": 68
+          },
+          {
+            "timeKey": "17:10",
+            "w": 52,
+            "c": 325
+          },
+          {
+            "timeKey": "17:15",
+            "w": 33,
+            "c": 144
+          },
+          {
+            "timeKey": "17:20",
+            "w": 19,
+            "c": 110
+          },
+          {
+            "timeKey": "17:25",
+            "w": 86,
+            "c": 373
+          },
+          {
+            "timeKey": "17:30",
+            "w": 20,
+            "c": 128
+          },
+          {
+            "timeKey": "17:35",
+            "w": 105,
+            "c": 563
+          }
+        ],
+        "id": 1049
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 5.md",
+        "wordCountStart": 1140,
+        "charCountStart": 6466,
+        "changes": [],
+        "id": 1050
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5229,
+        "charCountStart": 22685,
+        "changes": [
+          {
+            "timeKey": "20:05",
+            "w": 10,
+            "c": 60
+          },
+          {
+            "timeKey": "20:40",
+            "w": 80,
+            "c": 284
+          },
+          {
+            "timeKey": "20:45",
+            "w": 143,
+            "c": 544
+          }
+        ],
+        "id": 1051
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Articles/Proca in AdS3/electric field.md",
+        "wordCountStart": 513,
+        "charCountStart": 2335,
+        "changes": [
+          {
+            "timeKey": "21:15",
+            "w": 30,
+            "c": 96
+          },
+          {
+            "timeKey": "21:20",
+            "w": -151,
+            "c": -715
+          },
+          {
+            "timeKey": "21:25",
+            "w": 1479,
+            "c": 8409
+          },
+          {
+            "timeKey": "21:35",
+            "w": 36,
+            "c": 220
+          },
+          {
+            "timeKey": "21:40",
+            "w": -1515,
+            "c": -8628
+          },
+          {
+            "timeKey": "21:55",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "22:05",
+            "w": 431,
+            "c": 3083
+          },
+          {
+            "timeKey": "22:10",
+            "w": -32,
+            "c": -410
+          },
+          {
+            "timeKey": "22:20",
+            "w": -3,
+            "c": -24
+          },
+          {
+            "timeKey": "22:25",
+            "w": -330,
+            "c": -2368
+          }
+        ],
+        "id": 1052
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 1053
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Articles/Proca in AdS3/correlation function.md",
+        "wordCountStart": 2016,
+        "charCountStart": 8307,
+        "changes": [],
+        "id": 1054
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6040,
+        "charCountStart": 25721,
+        "changes": [],
+        "id": 1055
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Articles/Proca in AdS3/angular decomposition.md",
+        "wordCountStart": 457,
+        "charCountStart": 2587,
+        "changes": [],
+        "id": 1056
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Articles/Proca in AdS3/asymptotic behavior of h and f symbols.md",
+        "wordCountStart": 19579,
+        "charCountStart": 74837,
+        "changes": [],
+        "id": 1057
+      },
+      {
+        "date": "2025-10-16",
+        "filePath": "Articles/Proca in AdS3/global coordinates.md",
+        "wordCountStart": 2877,
+        "charCountStart": 14442,
+        "changes": [],
+        "id": 1058
       }
     ],
     "daysWithCompletedGoal": [
@@ -30717,7 +31300,8 @@
       "2025-10-12",
       "2025-10-13",
       "2025-10-14",
-      "2025-10-15"
+      "2025-10-15",
+      "2025-10-16"
     ]
   }
 }
