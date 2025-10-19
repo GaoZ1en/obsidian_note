@@ -221,9 +221,8 @@ K^{-1} & =L, & L^{-1} & =K, & M^{-1} & =N, & N^{-1} & =M
 	4. $\displaystyle{\left\{K,L\right\}}$
 	5. $\displaystyle{\left\{M,N\right\}}$
 5. the invariant subgroups of the group and the corresponding quotient groups are as follows:
-	1. $\displaystyle{\left\{E,A\right\}\cong C_{2}}$, corresponding quotient group is $\displaystyle{G/\left\{E,A\right\}\cong A_{3}}$
+	1. $\displaystyle{\left\{E,A\right\}\cong C_{2}}$, corresponding quotient group is $\displaystyle{G/\left\{E,A\right\}\cong D_{3}}$
 	2. $\displaystyle{\braket{M}=\left\{E,M,N\right\}\cong C_{3}}$, corresponding quotient group is $\displaystyle{G/\braket{M}\cong C_{4}}$
 	3. $\displaystyle{\braket{K}=\left\{E,K,N,A,M,L\right\}\cong C_{6}}$, corresponding quotient group is $\displaystyle{G/\braket{K}\cong C_{2}}$
 	4. trivial ones, $\displaystyle{\left\{E\right\}}$ and $\displaystyle{G}$ itself, corresponding quotient groups are $\displaystyle{G/\left\{E\right\}\cong G}$ and $\displaystyle{G/G\cong \left\{E\right\}}$.
 6. notice that $\displaystyle{T}$ has no order-$\displaystyle{6}$ elements, and $\displaystyle{K,L}$ are of order $\displaystyle{6}$, thus $\displaystyle{G\not\cong T}$. similarly, notice that $\displaystyle{D_{6}}$ has $\displaystyle{7}$ order-$\displaystyle{2}$ elements, while $\displaystyle{G}$ has only $\displaystyle{1}$ order-$\displaystyle{2}$ element $\displaystyle{A}$, thus $\displaystyle{G\not\cong D_{6}}$.
-
