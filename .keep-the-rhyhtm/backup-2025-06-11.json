@@ -31750,6 +31750,11 @@
             "timeKey": "14:30",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "20:00",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 1100
@@ -31759,7 +31764,13 @@
         "filePath": "Lecture/graduate/2025 fall/group theory by Lu Guo/homework/gt homework 2.md",
         "wordCountStart": 2524,
         "charCountStart": 16786,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "22:50",
+            "w": 0,
+            "c": -1
+          }
+        ],
         "id": 1101
       },
       {
@@ -31768,6 +31779,41 @@
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
+          {
+            "timeKey": "00:00",
+            "w": 80,
+            "c": 304
+          },
+          {
+            "timeKey": "00:05",
+            "w": -75,
+            "c": -239
+          },
+          {
+            "timeKey": "00:10",
+            "w": 47,
+            "c": 373
+          },
+          {
+            "timeKey": "00:15",
+            "w": 48,
+            "c": 343
+          },
+          {
+            "timeKey": "00:20",
+            "w": 32,
+            "c": 156
+          },
+          {
+            "timeKey": "00:25",
+            "w": 1,
+            "c": 2
+          },
+          {
+            "timeKey": "00:30",
+            "w": 0,
+            "c": 0
+          },
           {
             "timeKey": "14:25",
             "w": 0,
@@ -31922,6 +31968,161 @@
             "timeKey": "17:05",
             "w": 122,
             "c": 671
+          },
+          {
+            "timeKey": "20:10",
+            "w": 123,
+            "c": 555
+          },
+          {
+            "timeKey": "20:15",
+            "w": 43,
+            "c": 286
+          },
+          {
+            "timeKey": "20:20",
+            "w": 58,
+            "c": 333
+          },
+          {
+            "timeKey": "20:25",
+            "w": 56,
+            "c": 317
+          },
+          {
+            "timeKey": "20:30",
+            "w": 41,
+            "c": 257
+          },
+          {
+            "timeKey": "20:40",
+            "w": 25,
+            "c": 153
+          },
+          {
+            "timeKey": "20:45",
+            "w": -21,
+            "c": -121
+          },
+          {
+            "timeKey": "20:50",
+            "w": 79,
+            "c": 503
+          },
+          {
+            "timeKey": "21:00",
+            "w": 17,
+            "c": 121
+          },
+          {
+            "timeKey": "21:25",
+            "w": 19,
+            "c": 100
+          },
+          {
+            "timeKey": "21:30",
+            "w": 5,
+            "c": 66
+          },
+          {
+            "timeKey": "21:35",
+            "w": 23,
+            "c": 88
+          },
+          {
+            "timeKey": "21:40",
+            "w": 66,
+            "c": 413
+          },
+          {
+            "timeKey": "21:45",
+            "w": 31,
+            "c": 202
+          },
+          {
+            "timeKey": "21:50",
+            "w": 65,
+            "c": 320
+          },
+          {
+            "timeKey": "21:55",
+            "w": 23,
+            "c": 96
+          },
+          {
+            "timeKey": "22:00",
+            "w": -5,
+            "c": -13
+          },
+          {
+            "timeKey": "22:05",
+            "w": 18,
+            "c": 82
+          },
+          {
+            "timeKey": "22:10",
+            "w": 47,
+            "c": 235
+          },
+          {
+            "timeKey": "22:15",
+            "w": 43,
+            "c": 280
+          },
+          {
+            "timeKey": "23:05",
+            "w": 18,
+            "c": 103
+          },
+          {
+            "timeKey": "23:10",
+            "w": 71,
+            "c": 424
+          },
+          {
+            "timeKey": "23:15",
+            "w": 25,
+            "c": 107
+          },
+          {
+            "timeKey": "23:20",
+            "w": 68,
+            "c": 368
+          },
+          {
+            "timeKey": "23:25",
+            "w": 43,
+            "c": 202
+          },
+          {
+            "timeKey": "23:30",
+            "w": -20,
+            "c": -103
+          },
+          {
+            "timeKey": "23:35",
+            "w": 42,
+            "c": 196
+          },
+          {
+            "timeKey": "23:40",
+            "w": -2,
+            "c": -34
+          },
+          {
+            "timeKey": "23:45",
+            "w": 55,
+            "c": 371
+          },
+          {
+            "timeKey": "23:50",
+            "w": 46,
+            "c": 292
+          },
+          {
+            "timeKey": "23:55",
+            "w": 22,
+            "c": 163
           }
         ],
         "id": 1102
@@ -31933,6 +32134,242 @@
         "charCountStart": 16221,
         "changes": [],
         "id": 1103
+      },
+      {
+        "date": "2025-10-20",
+        "filePath": "Lecture/graduate/2025 fall/foundations of algebra by Ling Chen/homework/300 problems.md",
+        "wordCountStart": 3170,
+        "charCountStart": 18475,
+        "changes": [
+          {
+            "timeKey": "00:30",
+            "w": -1,
+            "c": -2
+          },
+          {
+            "timeKey": "00:35",
+            "w": 92,
+            "c": 445
+          },
+          {
+            "timeKey": "00:45",
+            "w": -2,
+            "c": -7
+          },
+          {
+            "timeKey": "00:50",
+            "w": 98,
+            "c": 649
+          },
+          {
+            "timeKey": "09:50",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "10:25",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "10:40",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "10:50",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "11:00",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "11:10",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "11:15",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "11:20",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "14:10",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "14:20",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "14:30",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "16:20",
+            "w": -1,
+            "c": -5
+          },
+          {
+            "timeKey": "16:25",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1104
+      },
+      {
+        "date": "2025-10-20",
+        "filePath": "Lecture/graduate/2025 fall/group theory by Lu Guo/homework/gt homework 2.md",
+        "wordCountStart": 2524,
+        "charCountStart": 16785,
+        "changes": [],
+        "id": 1105
+      },
+      {
+        "date": "2025-10-20",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 1.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "16:30",
+            "w": 59,
+            "c": 301
+          },
+          {
+            "timeKey": "16:40",
+            "w": 92,
+            "c": 536
+          },
+          {
+            "timeKey": "16:45",
+            "w": 7,
+            "c": 29
+          },
+          {
+            "timeKey": "16:50",
+            "w": 38,
+            "c": 209
+          }
+        ],
+        "id": 1106
+      },
+      {
+        "date": "2025-10-20",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 3.md",
+        "wordCountStart": 484,
+        "charCountStart": 2678,
+        "changes": [],
+        "id": 1107
+      },
+      {
+        "date": "2025-10-20",
+        "filePath": "TODO.md",
+        "wordCountStart": 6177,
+        "charCountStart": 30982,
+        "changes": [],
+        "id": 1108
+      },
+      {
+        "date": "2025-10-20",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 4.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:00",
+            "w": 17,
+            "c": 101
+          },
+          {
+            "timeKey": "17:05",
+            "w": 129,
+            "c": 631
+          },
+          {
+            "timeKey": "17:10",
+            "w": 78,
+            "c": 347
+          },
+          {
+            "timeKey": "17:15",
+            "w": 131,
+            "c": 558
+          },
+          {
+            "timeKey": "17:20",
+            "w": 71,
+            "c": 292
+          },
+          {
+            "timeKey": "17:25",
+            "w": 156,
+            "c": 640
+          },
+          {
+            "timeKey": "17:30",
+            "w": 17,
+            "c": 108
+          },
+          {
+            "timeKey": "17:35",
+            "w": 394,
+            "c": 2407
+          },
+          {
+            "timeKey": "21:15",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "21:55",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "22:00",
+            "w": 1,
+            "c": 3
+          },
+          {
+            "timeKey": "22:45",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "22:50",
+            "w": 19,
+            "c": 104
+          },
+          {
+            "timeKey": "22:55",
+            "w": -252,
+            "c": -1657
+          },
+          {
+            "timeKey": "23:05",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "23:10",
+            "w": -1,
+            "c": -3
+          }
+        ],
+        "id": 1109
       }
     ],
     "daysWithCompletedGoal": [
@@ -32020,7 +32457,8 @@
       "2025-10-15",
       "2025-10-16",
       "2025-10-17",
-      "2025-10-19"
+      "2025-10-19",
+      "2025-10-20"
     ]
   }
 }
