@@ -57,13 +57,13 @@
           "index": 2,
           "option": "CURRENT_MONTH",
           "unit": "WORD",
-          "calc": "TOTAL"
+          "calc": "AVG"
         },
         {
           "index": 3,
           "option": "CURRENT_YEAR",
           "unit": "WORD",
-          "calc": "TOTAL"
+          "calc": "AVG"
         }
       ]
     }
@@ -32367,9 +32367,242 @@
             "timeKey": "23:10",
             "w": -1,
             "c": -3
+          },
+          {
+            "timeKey": "23:45",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 1109
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Lecture/graduate/2025 fall/group theory by Lu Guo/homework/gt homework 2.md",
+        "wordCountStart": 2524,
+        "charCountStart": 16785,
+        "changes": [
+          {
+            "timeKey": "08:30",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1110
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 4.md",
+        "wordCountStart": 760,
+        "charCountStart": 3531,
+        "changes": [],
+        "id": 1111
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Lecture/graduate/2025 fall/foundations of algebra by Ling Chen/homework/300 problems.md",
+        "wordCountStart": 3356,
+        "charCountStart": 19555,
+        "changes": [
+          {
+            "timeKey": "10:00",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1112
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Lecture/graduate/2025 fall/foundations of algebra by Ling Chen/homework/a homework 1.md",
+        "wordCountStart": 125,
+        "charCountStart": 854,
+        "changes": [
+          {
+            "timeKey": "09:55",
+            "w": 125,
+            "c": 584
+          },
+          {
+            "timeKey": "10:00",
+            "w": 64,
+            "c": 452
+          },
+          {
+            "timeKey": "10:05",
+            "w": 17,
+            "c": 62
+          },
+          {
+            "timeKey": "10:10",
+            "w": 57,
+            "c": 263
+          },
+          {
+            "timeKey": "10:15",
+            "w": 12,
+            "c": 52
+          }
+        ],
+        "id": 1113
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Lecture/graduate/2025 fall/foundations of algebra by Ling Chen/homework/a homework 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "10:15",
+            "w": 79,
+            "c": 412
+          },
+          {
+            "timeKey": "10:20",
+            "w": 145,
+            "c": 728
+          },
+          {
+            "timeKey": "10:25",
+            "w": 97,
+            "c": 636
+          },
+          {
+            "timeKey": "10:30",
+            "w": 6,
+            "c": 38
+          },
+          {
+            "timeKey": "10:35",
+            "w": 55,
+            "c": 326
+          }
+        ],
+        "id": 1114
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Lecture/graduate/2025 fall/foundations of algebra by Ling Chen/homework/a homework 3.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 1115
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "TODO.md",
+        "wordCountStart": 6177,
+        "charCountStart": 30982,
+        "changes": [
+          {
+            "timeKey": "15:10",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "15:15",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1116
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 7.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:40",
+            "w": 5,
+            "c": 33
+          },
+          {
+            "timeKey": "16:50",
+            "w": 5,
+            "c": 29
+          },
+          {
+            "timeKey": "16:55",
+            "w": 7,
+            "c": 45
+          },
+          {
+            "timeKey": "17:05",
+            "w": 21,
+            "c": 108
+          },
+          {
+            "timeKey": "17:10",
+            "w": 497,
+            "c": 3109
+          },
+          {
+            "timeKey": "17:20",
+            "w": -50,
+            "c": -388
+          },
+          {
+            "timeKey": "17:40",
+            "w": 24,
+            "c": 140
+          },
+          {
+            "timeKey": "17:45",
+            "w": 87,
+            "c": 478
+          }
+        ],
+        "id": 1117
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Articles/Proca in AdS3/correlation function.md",
+        "wordCountStart": 2016,
+        "charCountStart": 8307,
+        "changes": [],
+        "id": 1120
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 6185,
+        "charCountStart": 29108,
+        "changes": [],
+        "id": 1121
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Articles/Proca in AdS3/correlation function 2.md",
+        "wordCountStart": 2160,
+        "charCountStart": 8546,
+        "changes": [],
+        "id": 1122
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6040,
+        "charCountStart": 25721,
+        "changes": [],
+        "id": 1123
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Articles/quantization/path integral quantization for Proca field.md",
+        "wordCountStart": 6575,
+        "charCountStart": 28338,
+        "changes": [],
+        "id": 1125
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Note/Physics/CFT by Francesco/Quantum field theory/Path integrals.md",
+        "wordCountStart": 1150,
+        "charCountStart": 6587,
+        "changes": [],
+        "id": 1126
       }
     ],
     "daysWithCompletedGoal": [
@@ -32458,7 +32691,8 @@
       "2025-10-16",
       "2025-10-17",
       "2025-10-19",
-      "2025-10-20"
+      "2025-10-20",
+      "2025-10-21"
     ]
   }
 }

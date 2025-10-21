@@ -136,14 +136,19 @@ $\displaystyle{\implies}$. assume $\displaystyle{A\not\subseteq B}$ and $\displa
 $\displaystyle{\impliedby}$. $\displaystyle{\forall a_{1}b_{1},a_{2}b_{2} \in AB}$. since $\displaystyle{AB=BA}$, then $\displaystyle{\exists a_{3}b_{3}\in AB\text{ s.t. }b_{1}a_{2}=a_{3}b_{3}}$, then $\displaystyle{(a_{1}b_{1})(a_{2}b_{2})=a_{1}(b_{1}a_{2})b_{2}=a_{1}(a_{3}b_{3})b_{2}=(a_{1}a_{3})(b_{3}b_{2})\in AB}$. similarly $\displaystyle{(a_{1}b_{1})^{-1}=b_{1}^{-1}a_{1}^{-1}\in AB}$. 
 
 7. suppose $\displaystyle{A,B}$ are two subgroups of $\displaystyle{G}$ and $\displaystyle{G=AB}$. if $\displaystyle{A\subseteq C\leqslant G}$, then $\displaystyle{C=A(B\cap C)}$.
-*sol*. 
+*sol*. $\displaystyle{C=A(B\cap C)\iff \forall c\in C,\exists a\in A,b\in B\cap C,\text{ s.t. }c=ab\in G}$
 
 8. suppose $\displaystyle{A,B}$ are two non-empty subsets of finite group $\displaystyle{G}$. if $\displaystyle{|A|+|B|>|G|}$, then $\displaystyle{G=AB}$.
 *sol*. 
 
 9. suppose $\displaystyle{A,B}$ are two subgroups of group $\displaystyle{G}$. then
 	1. $\displaystyle{g(A\cap B)=gA\cap gB,\forall g\in G}$
+*sol*. $\displaystyle{\forall g\in G,c\in A\cap B,gc\in gA,gc\in gB\implies gc\in gA\cap gB}$.
 	2. if $\displaystyle{A}$ and $\displaystyle{B}$ have finite index, then $\displaystyle{A\cap B}$ has finite index.
+*sol*.
 
 10. if $\displaystyle{R}$ is a representative set of right cosets of $\displaystyle{G}$ with respect to $\displaystyle{A}$. then $\displaystyle{R^{-1}}$ is a representative set of left cosets of $\displaystyle{G}$ with respect to $\displaystyle{A}$.
+*sol*. notice that $\displaystyle{\forall r\in R,a\in A,(ra)^{-1}=a^{-1}r^{-1}\in Ar^{-1}}$.
+
+11. suppose $\displaystyle{A\leqslant G,B\leqslant G}$. if $\displaystyle{\exists a,b\in G\text{ s.t. }Aa=Bb}$, then $\displaystyle{A=B}$.
 *sol*. 
