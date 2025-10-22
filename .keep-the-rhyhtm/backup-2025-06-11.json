@@ -32408,6 +32408,26 @@
             "timeKey": "10:00",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "19:10",
+            "w": 46,
+            "c": 233
+          },
+          {
+            "timeKey": "19:15",
+            "w": 10,
+            "c": 57
+          },
+          {
+            "timeKey": "19:20",
+            "w": 21,
+            "c": 143
+          },
+          {
+            "timeKey": "21:55",
+            "w": 1,
+            "c": 3
           }
         ],
         "id": 1112
@@ -32552,6 +32572,11 @@
             "timeKey": "17:45",
             "w": 87,
             "c": 478
+          },
+          {
+            "timeKey": "18:50",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 1117
@@ -32603,6 +32628,248 @@
         "charCountStart": 6587,
         "changes": [],
         "id": 1126
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Lecture/graduate/2025 fall/foundations of geometry and topology by Liang Xiao/notes/lecture 4.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:00",
+            "w": 2,
+            "c": 22
+          },
+          {
+            "timeKey": "19:05",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "19:15",
+            "w": 3,
+            "c": 19
+          }
+        ],
+        "id": 1127
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Lecture/graduate/2025 fall/foundations of geometry and topology by Liang Xiao/notes/lecture 1.md",
+        "wordCountStart": 490,
+        "charCountStart": 2840,
+        "changes": [],
+        "id": 1128
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/gr homework 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:20",
+            "w": 2,
+            "c": 13
+          },
+          {
+            "timeKey": "19:55",
+            "w": 1,
+            "c": 1
+          },
+          {
+            "timeKey": "20:40",
+            "w": -1,
+            "c": -1
+          }
+        ],
+        "id": 1129
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 5.md",
+        "wordCountStart": 1140,
+        "charCountStart": 6466,
+        "changes": [],
+        "id": 1130
+      },
+      {
+        "date": "2025-10-21",
+        "filePath": "Lecture/graduate/2025 fall/foundations of geometry and topology by Liang Xiao/notes/lecture 5.md",
+        "wordCountStart": 944,
+        "charCountStart": 6235,
+        "changes": [
+          {
+            "timeKey": "19:20",
+            "w": 46,
+            "c": 552
+          }
+        ],
+        "id": 1131
+      },
+      {
+        "date": "2025-10-22",
+        "filePath": "Lecture/graduate/2025 fall/foundations of algebra by Ling Chen/homework/300 problems.md",
+        "wordCountStart": 3433,
+        "charCountStart": 19988,
+        "changes": [
+          {
+            "timeKey": "10:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1132
+      },
+      {
+        "date": "2025-10-22",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 6185,
+        "charCountStart": 29108,
+        "changes": [
+          {
+            "timeKey": "10:55",
+            "w": 54,
+            "c": 294
+          },
+          {
+            "timeKey": "11:00",
+            "w": 86,
+            "c": 397
+          },
+          {
+            "timeKey": "11:05",
+            "w": 73,
+            "c": 338
+          },
+          {
+            "timeKey": "11:10",
+            "w": 47,
+            "c": 258
+          },
+          {
+            "timeKey": "11:15",
+            "w": 8,
+            "c": 32
+          },
+          {
+            "timeKey": "11:20",
+            "w": -26,
+            "c": -79
+          },
+          {
+            "timeKey": "11:30",
+            "w": 79,
+            "c": 388
+          },
+          {
+            "timeKey": "11:45",
+            "w": 90,
+            "c": 538
+          },
+          {
+            "timeKey": "11:50",
+            "w": 321,
+            "c": 1518
+          },
+          {
+            "timeKey": "11:55",
+            "w": 59,
+            "c": 303
+          },
+          {
+            "timeKey": "12:00",
+            "w": 327,
+            "c": 1762
+          },
+          {
+            "timeKey": "12:05",
+            "w": -103,
+            "c": -427
+          },
+          {
+            "timeKey": "12:10",
+            "w": 78,
+            "c": 480
+          },
+          {
+            "timeKey": "12:15",
+            "w": 18,
+            "c": 98
+          },
+          {
+            "timeKey": "12:20",
+            "w": 58,
+            "c": 263
+          },
+          {
+            "timeKey": "12:25",
+            "w": -41,
+            "c": -179
+          },
+          {
+            "timeKey": "13:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1133
+      },
+      {
+        "date": "2025-10-22",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 7.md",
+        "wordCountStart": 547,
+        "charCountStart": 3287,
+        "changes": [],
+        "id": 1134
+      },
+      {
+        "date": "2025-10-22",
+        "filePath": "Articles/Proca in AdS3/electric field.md",
+        "wordCountStart": 458,
+        "charCountStart": 1998,
+        "changes": [],
+        "id": 1135
+      },
+      {
+        "date": "2025-10-22",
+        "filePath": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+        "wordCountStart": 3516,
+        "charCountStart": 16221,
+        "changes": [],
+        "id": 1136
+      },
+      {
+        "date": "2025-10-22",
+        "filePath": "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
+        "wordCountStart": 1580,
+        "charCountStart": 8087,
+        "changes": [],
+        "id": 1137
+      },
+      {
+        "date": "2025-10-22",
+        "filePath": "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+        "wordCountStart": 2384,
+        "charCountStart": 12549,
+        "changes": [],
+        "id": 1138
+      },
+      {
+        "date": "2025-10-22",
+        "filePath": "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+        "wordCountStart": 3936,
+        "charCountStart": 18321,
+        "changes": [],
+        "id": 1139
+      },
+      {
+        "date": "2025-10-22",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 4.md",
+        "wordCountStart": 760,
+        "charCountStart": 3531,
+        "changes": [],
+        "id": 1140
       }
     ],
     "daysWithCompletedGoal": [
@@ -32692,7 +32959,8 @@
       "2025-10-17",
       "2025-10-19",
       "2025-10-20",
-      "2025-10-21"
+      "2025-10-21",
+      "2025-10-22"
     ]
   }
 }

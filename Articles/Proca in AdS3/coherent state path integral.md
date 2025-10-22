@@ -569,3 +569,130 @@ Z(\beta,\alpha) & =\int \prod ^{\infty}_{n,\bar{n}=0}\prod ^{\infty}_{m=-\infty}
 \end{align}$$
 
 where $\displaystyle{q=e^{-\beta}}$ and $\displaystyle{z=e^{i\alpha}}$. this result matches the operator formalism result.
+
+# electric field in $\displaystyle{4d}$ Minkowski spacetime
+
+$$\begin{align}
+S & =\int \mathrm{d}^{4}x\left( -\frac{1}{4}F_{\mu \nu}F^{\mu \nu}\right)
+\end{align}$$
+
+take a variation
+
+$$\begin{align}
+\delta S & =\int \mathrm{d}^{4}xE^{\nu}\delta A_{\nu}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
+E^{\nu} & =\nabla _{\mu}F^{\mu \nu} \\
+\theta & =\int \mathrm{d}^{3}xF^{0\nu}\delta A_{\nu} \\
+\omega & =\delta \theta=\int \mathrm{d}^{3}x\delta F^{0\nu}\wedge \delta A_{\nu}
+\end{align}$$
+
+we adopt the temporal gauge $\displaystyle{A^{0}=0}$ and Coulomb gauge $\displaystyle{\vec{\nabla}\cdot \vec{A}=0}$. the general solution to the eom is
+
+$$\begin{align}
+A^{i} & =\sum _{\sigma=\pm}\varepsilon ^{i}_{\vec{k},\sigma}\int \mathrm{d}^{3}\vec{k}\left(a_{\vec{k},\sigma}\varphi _{\vec{k}}(x)+a^{\dagger}_{\vec{k},\sigma}\varphi _{\vec{k}}^{*}(x)\right) \\
+\varphi _{\vec{k}}(x) & =\frac{1}{(2\pi)^{3/2}\sqrt{ 2\omega _{\vec{k}} }}e^{ip\cdot x}
+\end{align}$$
+
+where the polarization vector $\displaystyle{\varepsilon ^{\mu}_{\vec{k},\sigma}}$ satisfies
+
+$$\begin{align}
+\vec{k}\cdot\vec{\varepsilon}_{\vec{k},\sigma} & =0 \\
+\sum _{\sigma=\pm}\varepsilon ^{i}_{\vec{k},\sigma}\varepsilon ^{j}_{\vec{k},\sigma} & =\delta ^{ij}-\frac{k^{i}k^{j}}{|\vec{k}|^{2}}
+\end{align}$$
+
+the symplectic form under this parameterization becomes
+
+$$\begin{align}
+\omega & =i\sum _{\sigma}\int \mathrm{d}^{3}\vec{k}\delta a^{\dagger}_{\vec{k},\sigma}\wedge \delta a_{\vec{k},\sigma}
+\end{align}$$
+
+vacuum state $\displaystyle{\ket{0}}$ is defined as
+
+$$\begin{align}
+a_{\vec{k},\sigma}\ket{0}  & =0, & \forall \vec{k}\in \mathbb{R}^{3},\sigma=\pm
+\end{align}$$
+
+excitation states are defined by iteratively acting $\displaystyle{a^{\dagger}_{\vec{k},\sigma}}$ on the vaccum states
+
+$$\begin{align}
+\prod _{\sigma=\pm}\prod _{\vec{k}}\frac{(a_{\vec{k},\sigma}^{\dagger})^{N_{\vec{k},\sigma}}}{\sqrt{ N_{\vec{k},\sigma}! }}\ket{0} 
+\end{align}$$
+
+Hilbert space are spanned by vacuum and such excitation states.
+
+the Hamiltonian becomes
+$$\begin{align}
+H & =:\sum _{\sigma=\pm}\frac{1}{2}\int \mathrm{d}^{3}\vec{k}\omega _{\vec{k}}\left(a^{\dagger}_{\vec{k},\sigma}a_{\vec{k},\sigma}+a_{\vec{k},\sigma}a^{\dagger}_{\vec{k},\sigma}\right): \\
+ & =\sum _{\sigma=\pm} \int \mathrm{d}^{3}\vec{k}\omega _{\vec{k}}a^{\dagger}_{\vec{k},\sigma}a_{\vec{k},\sigma}
+\end{align}$$
+
+here we adopt normal ordering.
+
+define the coherent state to mode $\displaystyle{\vec{k},\sigma}$ as
+
+$$\begin{align}
+a_{\vec{k},\sigma}\ket{z_{\vec{k},\sigma}} =z_{\vec{k},\sigma}\ket{z_{\vec{k},\sigma}}
+\end{align}$$
+
+the total coherent state is then
+
+$$\begin{align}
+\ket{\boldsymbol{z}}  & =\bigotimes_{\sigma,\vec{k}}\ket{z_{\vec{k},\sigma}}
+\end{align}$$
+
+via standard derivation, the transition amplitude is
+
+$$\begin{align}
+\braket{ \boldsymbol{z}_{f}|e^{-iHT}|\boldsymbol{z}_{i}}  & =\int _{\boldsymbol{z}=\boldsymbol{z}_{i}}^{\boldsymbol{z}=\boldsymbol{z}_{f}}\mathcal{D}^{2}\boldsymbol{z}\exp\left(iS[\boldsymbol{z},\boldsymbol{z}^{*}]\right)
+\end{align}$$
+
+where the measure $\displaystyle{\mathcal{D^{2}}\boldsymbol{z}}$ and action $\displaystyle{S[\boldsymbol{z},\boldsymbol{z}^{*}]}$ is
+
+$$\begin{align}
+\mathcal{D}^{2}\boldsymbol{z} & =\lim_{ N \to \infty } \prod _{\sigma=\pm}\prod ^{N-1}_{k=1}\int \mathrm{d}^{3}\vec{k}\frac{\mathrm{d}^{2}z_{\vec{k},\sigma,k}}{\pi} \\
+S[\boldsymbol{z},\boldsymbol{z}^{*}] & =\sum _{\sigma=\pm}\int ^{t_{f}}_{t_{i}}\mathrm{d}t\int \mathrm{d}^{3}\vec{k}\left(\frac{1}{2}(z_{\vec{k},\sigma}^{*}\dot{z}_{\vec{k},\sigma}-\dot{z}_{\vec{k},\sigma}^{*}z_{\vec{k},\sigma})-\omega _{\vec{k}}|z_{\vec{k},\sigma}|^{2}\right)
+\end{align}$$
+
+the partition function
+
+$$\begin{align}
+Z(\beta) & =\mathrm{Tr}e^{-\beta H} \\
+ & =\int _{\boldsymbol{z}(0)}^{\boldsymbol{z}(\beta)}\mathcal{D}^{2}\boldsymbol{z}\exp(-S_{E}[\boldsymbol{z},\boldsymbol{z}^{*}])
+\end{align}$$
+
+where the Euclidean action reads
+
+$$\begin{align}
+S_{E}[\boldsymbol{z},\boldsymbol{z}^{*}] & =\sum _{\sigma=\pm}\int ^{\beta}_{0}\mathrm{d}\tau \int \mathrm{d}^{3}\vec{k} \left(\frac{1}{2}(z^{*}_{\vec{k},\sigma}\dot{z}_{\vec{k},\sigma}-\dot{z}^{*}_{\vec{k},\sigma}z_{\vec{k},\sigma})+\omega _{\vec{k}}|z_{\vec{k},\sigma}|^{2}\right)
+\end{align}$$
+and $\displaystyle{z_{\vec{k},\sigma}}$ satisfies the periodic boundary condition $\displaystyle{z_{\vec{k},\sigma}(\beta)=z_{\vec{k},\sigma}(0)}$. we can expand $\displaystyle{z_{\vec{k}}}$ in Matsubara modes
+
+$$\begin{align}
+z_{\vec{k},\sigma}(\tau) & =\frac{1}{\sqrt{ \beta }}\sum ^{\infty}_{m=-\infty}z_{\vec{k},\sigma}(i\omega _{m})e^{-i\omega _{m}\tau} \\
+\omega _{m} & =\frac{2\pi m}{\beta}
+\end{align}$$
+
+then the Euclidean action becomes
+
+$$\begin{align}
+S_{E}[\boldsymbol{z},\boldsymbol{z}^{*}] & =\sum _{\sigma=\pm}\int \mathrm{d}^{3}\vec{k}\sum ^{\infty}_{m=-\infty}z^{*}_{\vec{k},\sigma}(i\omega _{m})\left(-i\omega _{m}+\omega _{\vec{k}}\right)z_{\vec{k},\sigma}(i\omega _{m})
+\end{align}$$
+thus
+$$\begin{align}
+Z(\beta)
+&= \prod_{\sigma=\pm}\prod_{\vec{k}}\prod_{m\in\mathbb{Z}} \int \frac{\mathrm{d}^{2}z_{\vec{k},\sigma}(i\omega _{m})}{\pi}\,\exp\Big(-z^{*}_{\vec{k},\sigma}(i\omega _{m})\big(-i\omega _{m}+\omega _{\vec{k}}\big)z_{\vec{k},\sigma}(i\omega _{m})\Big) \\
+&= \prod_{\sigma=\pm}\prod_{\vec{k}}\prod_{m\in\mathbb{Z}} \frac{1}{-i\omega _{m}+\omega _{\vec{k}}} \\
+ & =\prod_{\vec{k}} \frac{1}{(1-e^{-\beta\,\omega _{\vec{k}}})^{2}}
+\end{align}$$
+
+formally, with discrete momenta (finite box), this is the standard bosonic oscillator product with two transverse polarizations. In the continuum limit one writes
+
+$$
+\frac{1}{V}\,\log Z(\beta) = -\,2\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^3}\,\log\big(1-e^{-\beta |\vec{k}|}\big)
+$$
+
+where $\omega_{\vec{k}}=|\vec{k}|$ and the factor $2$ counts physical polarizations. then the inner energy is
+
+$$\begin{align}
+E & =-\frac{\partial}{\partial \beta}\ln Z \\
+ & =\frac{V}{\pi ^{2}}\int _{0}^{\infty} \mathrm{d}\omega \frac{\omega ^{3}}{e^{\beta \omega}-1}
+\end{align}$$
