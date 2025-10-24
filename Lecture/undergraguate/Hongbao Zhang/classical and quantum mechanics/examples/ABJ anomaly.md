@@ -8,7 +8,7 @@ S & =\int _{M}\mathrm{d}^{4}x\left( \frac{i}{2}\bar{\psi}\gamma ^{\mu}\partial _
 \end{align}
 $$
 
-where $\displaystyle{\psi}$ and $\displaystyle{\bar{\psi}}$ are dynamical fields, and $\displaystyle{V_{\mu}}$ and $\displaystyle{A_{\mu}}$ are background fields. make a variation, we have
+where $\displaystyle{\psi}$ and $\displaystyle{\bar{\psi}}$ are dynamical fields, and $\displaystyle{V_{\mu}}$ and $\displaystyle{A_{\mu}}$ are background fields. take a variation, we have
 
 $$\tag{1.2}
 \begin{align}
@@ -36,7 +36,7 @@ $$\tag{1.4}
 \end{align}
 $$
 
-we notice that the symplectic form does not have terms involving $\displaystyle{\psi}$ and $\displaystyle{\bar{\psi}}$. consider the vector $\displaystyle{U(1)_{V}}$ symmetry
+consider the vector $\displaystyle{U(1)_{V}}$ symmetry
 
 $$\tag{1.5}
 \begin{align}
@@ -158,3 +158,35 @@ $$\tag{1.16}
 $$
 
 thus the ABJ anomaly is a pure quantum effect...
+
+---
+
+consider 1+1 dim case. the dual bosonization formula is
+
+$$\begin{align}
+\bar{\psi}\gamma ^{\mu}\psi & =\frac{1}{2\pi}\varepsilon ^{\mu \nu}\partial _{\nu}\phi \\
+\bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi & =\frac{1}{2\pi}\partial ^{\mu}\phi
+\end{align}$$
+
+where $\displaystyle{\phi}$ is a scalar field. then the action of $\displaystyle{\phi}$ is
+
+$$\begin{align}
+S & =\int \mathrm{d}^{2}x\left( \frac{1}{8\pi}\partial _{\mu}\phi \partial ^{\mu}\phi+\frac{1}{2\pi}\varepsilon ^{\mu \nu}\partial _{\nu}\phi V_{\mu}+\frac{1}{2\pi}\partial ^{\mu}\phi A_{\mu} \right)
+\end{align}$$
+
+here $\displaystyle{V_{\mu}}$ is the vector background field, and $\displaystyle{A_{\mu}}$ is the axial background field. take a variation, we have
+
+$$\begin{align}
+\delta S & =\int \mathrm{d}^{2}x\left(-\frac{1}{4\pi}\partial ^{2}\phi-\frac{1}{2\pi}\varepsilon ^{\mu \nu}\partial _{\nu}V_{\mu}-\frac{1}{2\pi}\partial _{\mu}A^{\mu}\right)\delta \phi \\
+ & +\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}x\tau ^{\mu}\left(\frac{1}{4\pi}\partial _{\mu}\phi-\frac{1}{2\pi}\varepsilon ^{\mu \nu}V_{\nu}+\frac{1}{2\pi}A_{\mu}\right)\delta \phi
+\end{align}$$
+
+the symplectic form is
+
+$$\begin{align}
+\omega & =\delta \theta \\
+ & =\int _{\Sigma}\mathrm{d}x\tau ^{\mu}\frac{1}{4\pi}\partial _{\mu}\delta\phi \wedge \delta \phi
+\end{align}$$
+
+consider the vector $\displaystyle{U(1)_{V}}$ symmetry
+

@@ -696,3 +696,40 @@ $$\begin{align}
 E & =-\frac{\partial}{\partial \beta}\ln Z \\
  & =\frac{V}{\pi ^{2}}\int _{0}^{\infty} \mathrm{d}\omega \frac{\omega ^{3}}{e^{\beta \omega}-1}
 \end{align}$$
+
+---
+
+here is a little trick called "matsubara frequency sum" to evaluate the divergent product:
+
+$$\begin{align}
+\prod _{n\in \mathbb{Z}} \frac{1}{i\omega _{n}+\omega} & =\frac{1}{\omega}\prod ^{\infty}_{n=1} \frac{1}{\omega _{n}^{2}+\omega ^{2}} \\
+ & =\exp\left(-\ln \omega-\sum ^{\infty}_{n=1}\ln(\omega _{n}^{2}+\omega ^{2})\right)
+\end{align}$$
+
+we consider the series
+
+$$\begin{align}
+S(\omega) & =\ln \omega+\sum _{n=1}^{\infty} \ln(\omega _{n}^{2}+\omega ^{2})
+\end{align}$$
+
+take a derivative with respect to $\displaystyle{\omega}$
+
+$$\begin{align}
+\frac{\mathrm{d}S}{\mathrm{d}\omega} & =\frac{1}{\omega}+\sum _{n=1}^{\infty} \frac{2\omega}{\omega _{n}^{2}+\omega ^{2}} \\
+ & = \frac{\beta}{2}\coth\left(\frac{\beta \omega}{2}\right) \\
+S & =\int \mathrm{d}x\coth x|_{x=\frac{\beta \omega}{2}} \\
+ & =\ln \sinh\left(\frac{\beta \omega}{2}\right)+C
+\end{align}$$
+
+here we use
+
+$$\begin{align}
+\coth x & =\frac{1}{x}+\sum ^{\infty}_{n=1} \frac{2x}{x^{2}+n^{2}}
+\end{align}$$
+
+then we have
+
+$$\begin{align}
+\prod _{n\in \mathbb{Z}} \frac{1}{i\omega _{n}+\omega} & =C' \frac{1}{\sinh\left(\frac{\beta \omega}{2}\right)}
+\end{align}$$
+

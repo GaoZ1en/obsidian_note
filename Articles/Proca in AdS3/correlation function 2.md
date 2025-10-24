@@ -82,3 +82,5 @@ $$\begin{align}
  & =\frac{1}{2\pi}\sum ^{\infty}_{n,\bar{n}=0}\frac{1}{n!\bar{n}!(\Delta)_{n}(\Delta)_{\bar{n}}}\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i\Delta t_{1}}}{(1+r_{1}^{2})^{\Delta/2}}\mathcal{L}_{\xi _{1}}^{n}\mathcal{L}_{\bar{\xi}_{1}}^{\bar{n}} \frac{e^{i\Delta t_{2}}}{(1+r_{2}^{2})^{\Delta/2}} \\
  & =G_{\Delta}(x_{1},x_{2})
 \end{align}$$
+
+this method does not work.

@@ -26477,7 +26477,7 @@
       },
       {
         "date": "2025-09-29",
-        "filePath": "Articles/Proca in AdS3/Untitled 1.md",
+        "filePath": "Articles/Proca in AdS3/Euclidean correlation function.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -26513,7 +26513,7 @@
       },
       {
         "date": "2025-09-30",
-        "filePath": "Articles/Proca in AdS3/Untitled 1.md",
+        "filePath": "Articles/Proca in AdS3/Euclidean correlation function.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -32811,6 +32811,16 @@
             "timeKey": "13:35",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "23:15",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "23:20",
+            "w": -14,
+            "c": -47
           }
         ],
         "id": 1133
@@ -32870,6 +32880,524 @@
         "charCountStart": 3531,
         "changes": [],
         "id": 1140
+      },
+      {
+        "date": "2025-10-23",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 7299,
+        "charCountStart": 35045,
+        "changes": [
+          {
+            "timeKey": "01:15",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "01:20",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "12:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1141
+      },
+      {
+        "date": "2025-10-23",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 4.md",
+        "wordCountStart": 760,
+        "charCountStart": 3531,
+        "changes": [
+          {
+            "timeKey": "14:25",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1143
+      },
+      {
+        "date": "2025-10-23",
+        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/gr homework 2.md",
+        "wordCountStart": 2,
+        "charCountStart": 13,
+        "changes": [
+          {
+            "timeKey": "14:25",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "14:30",
+            "w": 175,
+            "c": 1018
+          },
+          {
+            "timeKey": "14:35",
+            "w": 297,
+            "c": 1514
+          },
+          {
+            "timeKey": "14:40",
+            "w": 127,
+            "c": 789
+          },
+          {
+            "timeKey": "14:45",
+            "w": 154,
+            "c": 976
+          },
+          {
+            "timeKey": "14:50",
+            "w": 703,
+            "c": 4535
+          },
+          {
+            "timeKey": "14:55",
+            "w": 167,
+            "c": 1206
+          },
+          {
+            "timeKey": "15:00",
+            "w": -664,
+            "c": -4477
+          },
+          {
+            "timeKey": "15:05",
+            "w": 32,
+            "c": 177
+          },
+          {
+            "timeKey": "15:10",
+            "w": 25,
+            "c": 120
+          },
+          {
+            "timeKey": "15:15",
+            "w": -63,
+            "c": -330
+          }
+        ],
+        "id": 1144
+      },
+      {
+        "date": "2025-10-23",
+        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/gr homework 3.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:15",
+            "w": 78,
+            "c": 445
+          },
+          {
+            "timeKey": "15:20",
+            "w": 174,
+            "c": 964
+          },
+          {
+            "timeKey": "15:25",
+            "w": 94,
+            "c": 515
+          },
+          {
+            "timeKey": "15:30",
+            "w": 236,
+            "c": 1247
+          },
+          {
+            "timeKey": "15:35",
+            "w": 163,
+            "c": 896
+          },
+          {
+            "timeKey": "15:40",
+            "w": -375,
+            "c": -1971
+          },
+          {
+            "timeKey": "15:45",
+            "w": 215,
+            "c": 1178
+          },
+          {
+            "timeKey": "15:50",
+            "w": 634,
+            "c": 3995
+          },
+          {
+            "timeKey": "15:55",
+            "w": 40,
+            "c": 217
+          },
+          {
+            "timeKey": "16:00",
+            "w": -926,
+            "c": -5591
+          }
+        ],
+        "id": 1145
+      },
+      {
+        "date": "2025-10-23",
+        "filePath": "Articles/Test particle/main result.md",
+        "wordCountStart": 2407,
+        "charCountStart": 12763,
+        "changes": [],
+        "id": 1146
+      },
+      {
+        "date": "2025-10-23",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 8.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:35",
+            "w": 19,
+            "c": 97
+          },
+          {
+            "timeKey": "15:40",
+            "w": 46,
+            "c": 241
+          },
+          {
+            "timeKey": "15:50",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "15:55",
+            "w": 25,
+            "c": 151
+          },
+          {
+            "timeKey": "16:00",
+            "w": 22,
+            "c": 110
+          },
+          {
+            "timeKey": "16:05",
+            "w": 12,
+            "c": 82
+          },
+          {
+            "timeKey": "16:10",
+            "w": 0,
+            "c": 3
+          },
+          {
+            "timeKey": "16:15",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "16:20",
+            "w": 19,
+            "c": 117
+          },
+          {
+            "timeKey": "16:30",
+            "w": 66,
+            "c": 412
+          },
+          {
+            "timeKey": "16:35",
+            "w": 58,
+            "c": 385
+          },
+          {
+            "timeKey": "16:40",
+            "w": 20,
+            "c": 131
+          },
+          {
+            "timeKey": "16:45",
+            "w": 1,
+            "c": 3
+          },
+          {
+            "timeKey": "16:50",
+            "w": 12,
+            "c": 85
+          },
+          {
+            "timeKey": "16:55",
+            "w": 41,
+            "c": 239
+          },
+          {
+            "timeKey": "17:00",
+            "w": 27,
+            "c": 153
+          },
+          {
+            "timeKey": "17:15",
+            "w": 11,
+            "c": 85
+          },
+          {
+            "timeKey": "17:25",
+            "w": 19,
+            "c": 128
+          },
+          {
+            "timeKey": "17:30",
+            "w": 28,
+            "c": 184
+          },
+          {
+            "timeKey": "17:35",
+            "w": 100,
+            "c": 585
+          },
+          {
+            "timeKey": "17:40",
+            "w": 26,
+            "c": 167
+          },
+          {
+            "timeKey": "17:45",
+            "w": 89,
+            "c": 601
+          }
+        ],
+        "id": 1147
+      },
+      {
+        "date": "2025-10-23",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 7.md",
+        "wordCountStart": 547,
+        "charCountStart": 3287,
+        "changes": [],
+        "id": 1148
+      },
+      {
+        "date": "2025-10-23",
+        "filePath": "Reading/symmetry and topology/topology/the toric code and homology.md",
+        "wordCountStart": 3689,
+        "charCountStart": 22095,
+        "changes": [],
+        "id": 1149
+      },
+      {
+        "date": "2025-10-23",
+        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/gr homework 1.md",
+        "wordCountStart": 292,
+        "charCountStart": 1532,
+        "changes": [],
+        "id": 1150
+      },
+      {
+        "date": "2025-10-23",
+        "filePath": "TODO.md",
+        "wordCountStart": 6177,
+        "charCountStart": 30982,
+        "changes": [
+          {
+            "timeKey": "21:30",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "22:20",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1151
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "TODO.md",
+        "wordCountStart": 6177,
+        "charCountStart": 30982,
+        "changes": [
+          {
+            "timeKey": "08:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1152
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Lecture/undergraguate/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
+        "wordCountStart": 1808,
+        "charCountStart": 9355,
+        "changes": [
+          {
+            "timeKey": "08:55",
+            "w": 5,
+            "c": 30
+          },
+          {
+            "timeKey": "09:00",
+            "w": 183,
+            "c": 966
+          },
+          {
+            "timeKey": "09:05",
+            "w": 63,
+            "c": 310
+          },
+          {
+            "timeKey": "09:10",
+            "w": -8,
+            "c": -56
+          }
+        ],
+        "id": 1153
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 5.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:30",
+            "w": 147,
+            "c": 709
+          }
+        ],
+        "id": 1154
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 4.md",
+        "wordCountStart": 760,
+        "charCountStart": 3531,
+        "changes": [
+          {
+            "timeKey": "13:30",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1155
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Articles/Proca in AdS3/Euclidean correlation function.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:30",
+            "w": 7,
+            "c": 57
+          },
+          {
+            "timeKey": "13:35",
+            "w": 270,
+            "c": 1272
+          },
+          {
+            "timeKey": "13:40",
+            "w": 66,
+            "c": 231
+          },
+          {
+            "timeKey": "13:45",
+            "w": 399,
+            "c": 1336
+          },
+          {
+            "timeKey": "13:50",
+            "w": -18,
+            "c": -17
+          },
+          {
+            "timeKey": "13:55",
+            "w": 1,
+            "c": 1
+          },
+          {
+            "timeKey": "14:20",
+            "w": 35,
+            "c": 145
+          },
+          {
+            "timeKey": "14:25",
+            "w": -5,
+            "c": -16
+          },
+          {
+            "timeKey": "14:30",
+            "w": -31,
+            "c": -131
+          },
+          {
+            "timeKey": "14:35",
+            "w": 137,
+            "c": 571
+          },
+          {
+            "timeKey": "14:40",
+            "w": -12,
+            "c": -63
+          }
+        ],
+        "id": 1156
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Articles/Proca in AdS3/correlation function 2.md",
+        "wordCountStart": 2160,
+        "charCountStart": 8546,
+        "changes": [
+          {
+            "timeKey": "13:30",
+            "w": 5,
+            "c": 27
+          }
+        ],
+        "id": 1157
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Articles/Proca in AdS3/correlation function.md",
+        "wordCountStart": 2016,
+        "charCountStart": 8307,
+        "changes": [],
+        "id": 1158
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6040,
+        "charCountStart": 25721,
+        "changes": [],
+        "id": 1159
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13738,
+        "changes": [
+          {
+            "timeKey": "13:45",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1160
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Drafts/Proca field calculation.md",
+        "wordCountStart": 1327,
+        "charCountStart": 5248,
+        "changes": [],
+        "id": 1161
       }
     ],
     "daysWithCompletedGoal": [
@@ -32960,7 +33488,9 @@
       "2025-10-19",
       "2025-10-20",
       "2025-10-21",
-      "2025-10-22"
+      "2025-10-22",
+      "2025-10-23",
+      "2025-10-24"
     ]
   }
 }
