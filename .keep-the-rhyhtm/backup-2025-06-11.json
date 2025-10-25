@@ -33343,6 +33343,11 @@
             "timeKey": "14:40",
             "w": -12,
             "c": -63
+          },
+          {
+            "timeKey": "16:15",
+            "w": -125,
+            "c": -507
           }
         ],
         "id": 1156
@@ -33398,6 +33403,117 @@
         "charCountStart": 5248,
         "changes": [],
         "id": 1161
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 6.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 1162
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/gr homework 3.md",
+        "wordCountStart": 333,
+        "charCountStart": 1895,
+        "changes": [],
+        "id": 1163
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/gr homework 4.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 1164
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Drafts/coherent state.md",
+        "wordCountStart": 1132,
+        "charCountStart": 8421,
+        "changes": [
+          {
+            "timeKey": "16:30",
+            "w": 23,
+            "c": 128
+          },
+          {
+            "timeKey": "16:35",
+            "w": 17,
+            "c": 96
+          },
+          {
+            "timeKey": "17:10",
+            "w": -10,
+            "c": -81
+          },
+          {
+            "timeKey": "17:15",
+            "w": -6,
+            "c": -20
+          },
+          {
+            "timeKey": "17:40",
+            "w": 166,
+            "c": 1097
+          },
+          {
+            "timeKey": "18:05",
+            "w": 286,
+            "c": 1987
+          }
+        ],
+        "id": 1165
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 7299,
+        "charCountStart": 35045,
+        "changes": [
+          {
+            "timeKey": "17:20",
+            "w": 66,
+            "c": 352
+          },
+          {
+            "timeKey": "17:25",
+            "w": 120,
+            "c": 700
+          },
+          {
+            "timeKey": "17:30",
+            "w": -21,
+            "c": -152
+          },
+          {
+            "timeKey": "17:35",
+            "w": 44,
+            "c": 189
+          },
+          {
+            "timeKey": "17:40",
+            "w": 8,
+            "c": 54
+          }
+        ],
+        "id": 1166
+      },
+      {
+        "date": "2025-10-24",
+        "filePath": "Articles/Proca in AdS3/Untitled 1.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:25",
+            "w": 791,
+            "c": 5986
+          }
+        ],
+        "id": 1167
       }
     ],
     "daysWithCompletedGoal": [
