@@ -60,3 +60,9 @@ J & =\det \frac{\partial k _{i}}{\partial p_{j}} \\
  & =\frac{k_{0}}{p_{0}} \\
 \implies p^{0}\delta ^{3}(\vec{p}'-\vec{p}) & =k^{0}\delta ^{3}(\vec{k}'-\vec{k})
 \end{align}$$
+
+![image](http://100.94.165.49:8080/i/c510b1ac-772c-4c86-8e9f-0d06c9dc2bcb.jpg)
+
+
+
+

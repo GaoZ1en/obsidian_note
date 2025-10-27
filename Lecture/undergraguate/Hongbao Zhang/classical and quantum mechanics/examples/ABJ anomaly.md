@@ -95,8 +95,6 @@ J^{A}_{\mu} & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left( -\f
 \end{align}
 $$
 
-
-
 and finally the diffeomorphism symmetry
 
 $$\tag{1.11}

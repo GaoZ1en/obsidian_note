@@ -33514,6 +33514,600 @@
           }
         ],
         "id": 1167
+      },
+      {
+        "date": "2025-10-26",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 4.md",
+        "wordCountStart": 760,
+        "charCountStart": 3531,
+        "changes": [
+          {
+            "timeKey": "00:05",
+            "w": 7,
+            "c": 84
+          },
+          {
+            "timeKey": "00:40",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "13:00",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1173
+      },
+      {
+        "date": "2025-10-26",
+        "filePath": "TODO.md",
+        "wordCountStart": 6177,
+        "charCountStart": 30982,
+        "changes": [
+          {
+            "timeKey": "13:35",
+            "w": 19,
+            "c": 112
+          },
+          {
+            "timeKey": "16:35",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "19:55",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1174
+      },
+      {
+        "date": "2025-10-26",
+        "filePath": "Drafts/coherent state.md",
+        "wordCountStart": 1608,
+        "charCountStart": 11628,
+        "changes": [
+          {
+            "timeKey": "13:45",
+            "w": 1356,
+            "c": 9459
+          },
+          {
+            "timeKey": "13:50",
+            "w": -1356,
+            "c": -9459
+          },
+          {
+            "timeKey": "13:55",
+            "w": 1630,
+            "c": 10700
+          },
+          {
+            "timeKey": "14:05",
+            "w": 764,
+            "c": 4913
+          },
+          {
+            "timeKey": "14:20",
+            "w": 1074,
+            "c": 6773
+          },
+          {
+            "timeKey": "14:40",
+            "w": 1614,
+            "c": 10994
+          },
+          {
+            "timeKey": "16:30",
+            "w": -5082,
+            "c": -33380
+          },
+          {
+            "timeKey": "21:05",
+            "w": 2394,
+            "c": 15610
+          },
+          {
+            "timeKey": "21:10",
+            "w": 1707,
+            "c": 10394
+          },
+          {
+            "timeKey": "21:15",
+            "w": 43,
+            "c": 191
+          },
+          {
+            "timeKey": "21:20",
+            "w": 53,
+            "c": 196
+          },
+          {
+            "timeKey": "21:25",
+            "w": 6,
+            "c": -66
+          }
+        ],
+        "id": 1175
+      },
+      {
+        "date": "2025-10-26",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 7516,
+        "charCountStart": 36188,
+        "changes": [
+          {
+            "timeKey": "14:10",
+            "w": -168,
+            "c": -864
+          },
+          {
+            "timeKey": "14:15",
+            "w": 175,
+            "c": 834
+          },
+          {
+            "timeKey": "14:20",
+            "w": 69,
+            "c": 407
+          },
+          {
+            "timeKey": "14:25",
+            "w": -29,
+            "c": -100
+          },
+          {
+            "timeKey": "14:30",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "16:35",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "20:50",
+            "w": 8,
+            "c": 51
+          },
+          {
+            "timeKey": "20:55",
+            "w": -5,
+            "c": -35
+          }
+        ],
+        "id": 1176
+      },
+      {
+        "date": "2025-10-26",
+        "filePath": "Note/Physics/heat kernel method and zeta function regularization.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "14:40",
+            "w": 1614,
+            "c": 10991
+          },
+          {
+            "timeKey": "15:20",
+            "w": -1446,
+            "c": -9925
+          },
+          {
+            "timeKey": "15:25",
+            "w": 148,
+            "c": 782
+          },
+          {
+            "timeKey": "15:30",
+            "w": 148,
+            "c": 808
+          },
+          {
+            "timeKey": "15:35",
+            "w": 176,
+            "c": 809
+          },
+          {
+            "timeKey": "15:40",
+            "w": 149,
+            "c": 918
+          },
+          {
+            "timeKey": "15:45",
+            "w": 200,
+            "c": 971
+          },
+          {
+            "timeKey": "15:50",
+            "w": 103,
+            "c": 540
+          },
+          {
+            "timeKey": "15:55",
+            "w": 446,
+            "c": 2213
+          }
+        ],
+        "id": 1177
+      },
+      {
+        "date": "2025-10-26",
+        "filePath": "Note/Physics/berry phase.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "16:00",
+            "w": 1305,
+            "c": 9043
+          },
+          {
+            "timeKey": "16:25",
+            "w": 1,
+            "c": 2
+          }
+        ],
+        "id": 1178
+      },
+      {
+        "date": "2025-10-26",
+        "filePath": "Drafts/coherent state path integral.md",
+        "wordCountStart": 2097,
+        "charCountStart": 13856,
+        "changes": [],
+        "id": 1179
+      },
+      {
+        "date": "2025-10-26",
+        "filePath": "Articles/Noether charge/thermal partition function.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:55",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "20:00",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1181
+      },
+      {
+        "date": "2025-10-26",
+        "filePath": "Articles/Proca in AdS3/path integral formalism.md",
+        "wordCountStart": 1678,
+        "charCountStart": 8676,
+        "changes": [
+          {
+            "timeKey": "20:15",
+            "w": -1002,
+            "c": -5227
+          },
+          {
+            "timeKey": "20:20",
+            "w": 21,
+            "c": 135
+          },
+          {
+            "timeKey": "20:25",
+            "w": 50,
+            "c": 206
+          },
+          {
+            "timeKey": "20:30",
+            "w": 12,
+            "c": 72
+          },
+          {
+            "timeKey": "20:35",
+            "w": 119,
+            "c": 633
+          },
+          {
+            "timeKey": "20:40",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "20:45",
+            "w": 243,
+            "c": 1681
+          },
+          {
+            "timeKey": "20:50",
+            "w": -152,
+            "c": -1174
+          },
+          {
+            "timeKey": "20:55",
+            "w": 790,
+            "c": 4615
+          },
+          {
+            "timeKey": "21:00",
+            "w": 83,
+            "c": 376
+          },
+          {
+            "timeKey": "21:05",
+            "w": 47,
+            "c": 197
+          },
+          {
+            "timeKey": "21:35",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "21:40",
+            "w": -899,
+            "c": -5089
+          },
+          {
+            "timeKey": "21:50",
+            "w": -21,
+            "c": -101
+          },
+          {
+            "timeKey": "21:55",
+            "w": 0,
+            "c": -2
+          },
+          {
+            "timeKey": "23:15",
+            "w": 19,
+            "c": 120
+          },
+          {
+            "timeKey": "23:25",
+            "w": -19,
+            "c": -120
+          }
+        ],
+        "id": 1182
+      },
+      {
+        "date": "2025-10-26",
+        "filePath": "Lecture/undergraguate/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
+        "wordCountStart": 2051,
+        "charCountStart": 10605,
+        "changes": [
+          {
+            "timeKey": "23:25",
+            "w": 0,
+            "c": -2
+          }
+        ],
+        "id": 1183
+      },
+      {
+        "date": "2025-10-26",
+        "filePath": "Articles/Proca in AdS3/symplectic structure on the reduced phase space.md",
+        "wordCountStart": 476,
+        "charCountStart": 2840,
+        "changes": [],
+        "id": 1184
+      },
+      {
+        "date": "2025-10-26",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 11678,
+        "charCountStart": 46490,
+        "changes": [],
+        "id": 1185
+      },
+      {
+        "date": "2025-10-27",
+        "filePath": "Articles/Proca in AdS3/path integral formalism.md",
+        "wordCountStart": 969,
+        "charCountStart": 4998,
+        "changes": [],
+        "id": 1186
+      },
+      {
+        "date": "2025-10-27",
+        "filePath": "Lecture/undergraguate/Hongbao Zhang/classical and quantum mechanics/examples/ABJ anomaly.md",
+        "wordCountStart": 2051,
+        "charCountStart": 10603,
+        "changes": [],
+        "id": 1187
+      },
+      {
+        "date": "2025-10-27",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 7566,
+        "charCountStart": 36482,
+        "changes": [
+          {
+            "timeKey": "22:55",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "23:00",
+            "w": 70,
+            "c": 369
+          },
+          {
+            "timeKey": "23:05",
+            "w": 164,
+            "c": 872
+          },
+          {
+            "timeKey": "23:10",
+            "w": -335,
+            "c": -1757
+          }
+        ],
+        "id": 1188
+      },
+      {
+        "date": "2025-10-27",
+        "filePath": "TODO.md",
+        "wordCountStart": 6196,
+        "charCountStart": 31094,
+        "changes": [
+          {
+            "timeKey": "21:30",
+            "w": 598,
+            "c": 4629
+          },
+          {
+            "timeKey": "21:35",
+            "w": -596,
+            "c": -4609
+          },
+          {
+            "timeKey": "22:20",
+            "w": -2,
+            "c": -20
+          }
+        ],
+        "id": 1189
+      },
+      {
+        "date": "2025-10-27",
+        "filePath": "Articles/Proca in AdS3/Untitled 1.md",
+        "wordCountStart": 791,
+        "charCountStart": 5986,
+        "changes": [
+          {
+            "timeKey": "11:05",
+            "w": -791,
+            "c": -5986
+          }
+        ],
+        "id": 1190
+      },
+      {
+        "date": "2025-10-27",
+        "filePath": "Articles/Proca in AdS3/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "11:05",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1191
+      },
+      {
+        "date": "2025-10-27",
+        "filePath": "Articles/Proca in AdS3/correlation function 2.md",
+        "wordCountStart": 2165,
+        "charCountStart": 8573,
+        "changes": [],
+        "id": 1192
+      },
+      {
+        "date": "2025-10-27",
+        "filePath": "Articles/Proca in AdS3/correlation function.md",
+        "wordCountStart": 2016,
+        "charCountStart": 8307,
+        "changes": [],
+        "id": 1193
+      },
+      {
+        "date": "2025-10-27",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 11678,
+        "charCountStart": 46490,
+        "changes": [],
+        "id": 1194
+      },
+      {
+        "date": "2025-10-27",
+        "filePath": "Note/Physics/berry phase.md",
+        "wordCountStart": 1306,
+        "charCountStart": 9045,
+        "changes": [
+          {
+            "timeKey": "11:10",
+            "w": -1306,
+            "c": -9045
+          }
+        ],
+        "id": 1195
+      },
+      {
+        "date": "2025-10-27",
+        "filePath": "Drafts/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "11:50",
+            "w": 1,
+            "c": 3
+          },
+          {
+            "timeKey": "12:05",
+            "w": 31,
+            "c": 169
+          },
+          {
+            "timeKey": "12:10",
+            "w": 31,
+            "c": 171
+          },
+          {
+            "timeKey": "12:15",
+            "w": 59,
+            "c": 336
+          },
+          {
+            "timeKey": "12:25",
+            "w": 1,
+            "c": 4
+          },
+          {
+            "timeKey": "14:25",
+            "w": 9,
+            "c": 60
+          },
+          {
+            "timeKey": "14:35",
+            "w": -45,
+            "c": -234
+          },
+          {
+            "timeKey": "14:40",
+            "w": 3,
+            "c": 25
+          },
+          {
+            "timeKey": "14:45",
+            "w": 7,
+            "c": 66
+          },
+          {
+            "timeKey": "21:00",
+            "w": 17,
+            "c": 1464
+          },
+          {
+            "timeKey": "21:05",
+            "w": -89,
+            "c": 489
+          },
+          {
+            "timeKey": "21:10",
+            "w": 27,
+            "c": -224
+          }
+        ],
+        "id": 1196
       }
     ],
     "daysWithCompletedGoal": [
@@ -33606,7 +34200,8 @@
       "2025-10-21",
       "2025-10-22",
       "2025-10-23",
-      "2025-10-24"
+      "2025-10-24",
+      "2025-10-26"
     ]
   }
 }
