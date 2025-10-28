@@ -177,14 +177,53 @@ z_{k} & =\frac{1}{\sqrt{ N }}\sum ^{N-1}_{n=0}z_{n}e^{i\frac{2\pi n}{N}k} \\
 then the Jacobian of this transformation is $\displaystyle{1}$. then
 
 $$\begin{align}
-Z[\beta] & =\int \prod ^{N-1}_{k=0} \frac{\mathrm{d}^{2}z_{n}}{\pi}\exp\left(-\sum ^{N-1}_{k=0}\left( \frac{1}{2} \frac{1}{N}\sum ^{N-1}_{n,n'=0}z_{n}^{*}z_{n'}e^{-i \frac{2\pi (n-n')}{N}k}\left(e^{i \frac{2\pi n'}{N}}-1 \right)-\frac{1}{2} \frac{1}{N}\sum ^{N-1}_{n,n'=0}z_{n}^{*}z_{n'}e^{-i \frac{2\pi(n'-n)}{N}k}\left( e^{-i \frac{2\pi n'}{N} }-1 \right)+\frac{1}{N}\Delta \tau \omega \sum ^{N-1}_{n,n'=0}z_{n}^{*}z_{n'}e^{-i \frac{2\pi(n'-n)}{N}k} \right)\right) \\
- & =\int \prod ^{N-1}_{k=0} \frac{\mathrm{d}^{2}z_{n}}{\pi}\exp\left(-\sum ^{N-1}_{n=0}z^{*}_{n}(1-e^{-\Delta \tau \omega}e^{2\pi i n/N})z_{n}\right) \\
- & =\prod ^{N-1}_{k=0} \frac{1}{1-e^{-\Delta \tau \omega}e^{2\pi i n/N}} \\
+Z[\beta] & =\int \prod ^{N-1}_{n=0} \frac{\mathrm{d}^{2}z_{n}}{\pi}\exp\left(-\sum ^{N-1}_{k=0}\left( \frac{1}{2} \frac{1}{N}\sum ^{N-1}_{n,n'=0}z_{n}^{*}z_{n'}e^{-i \frac{2\pi (n-n')}{N}k}\left(e^{i \frac{2\pi n'}{N}}-1 \right)-\frac{1}{2} \frac{1}{N}\sum ^{N-1}_{n,n'=0}z_{n}^{*}z_{n'}e^{-i \frac{2\pi(n'-n)}{N}k}\left( e^{-i \frac{2\pi n'}{N} }-1 \right)+\frac{1}{N}\Delta \tau \omega \sum ^{N-1}_{n,n'=0}z_{n}^{*}z_{n'}e^{-i \frac{2\pi(n'-n)}{N}k} \right)\right) \\
+ & =\int \prod ^{N-1}_{n=0} \frac{\mathrm{d}^{2}z_{n}}{\pi}\exp\left(-\sum ^{N-1}_{n=0}z^{*}_{n}(1-e^{-\Delta \tau \omega}e^{2\pi i n/N})z_{n}\right) \\
+ & =\prod ^{N-1}_{n=0} \frac{1}{1-e^{-\Delta \tau \omega}e^{2\pi i n/N}} \\
  & =\frac{1}{1-e^{-N\Delta \tau \omega}} \\
  & =\frac{1}{1-e^{-\beta \omega}}
 \end{align}$$
 
 this is exactly the correct partition function of a harmonic oscillator.
+
+## twisted boundary condition
+
+now we want to calculate $\displaystyle{\mathrm{Tr}e^{-\beta H}e^{i\alpha N}}$, where $\displaystyle{N=a^{\dagger}a}$ is the number operator. since $\displaystyle{[H,N]=0}$, we have
+
+$$\begin{align}
+Z[\beta,\alpha] & =\int _{z=z(0)}^{z=z(\beta)}\mathcal{D}^{2}z\exp\left(-S_{E}[z,z^{*}]\right)
+\end{align}$$
+
+with twisted boundary condition
+
+$$\begin{align}
+z(\beta) & =e^{i\alpha}z(0)
+\end{align}$$
+
+the Euclidean action remains the same. discretize the time interval into $\displaystyle{N}$ slices with $\displaystyle{\Delta \tau=\frac{\beta}{N}}$, label $\displaystyle{z_{k}=z(k\Delta \tau)}$, and impose the twisted boundary condition $\displaystyle{z_{N}=e^{i\alpha}z_{0}}$. then the partition function with normal ordering in the discrete form reads
+
+$$\begin{align}
+Z[\beta,\alpha] & =\int \prod ^{N-1}_{k=0} \frac{\mathrm{d}^{2}z_{k}}{\pi}\exp\left(-\sum ^{N-1}_{k=0}\left( \frac{1}{2}z^{*}_{k}(z_{k+1}-z_{k})-\frac{1}{2}(z^{*}_{k+1}-z_{k}^{*})z_{k}+\Delta \tau \omega z^{*}_{k}z_{k} \right)\right)
+\end{align}$$
+
+define the Fourier transformed variables
+
+$$\begin{align}
+z_{k} & =\frac{1}{\sqrt{ N }}\sum ^{N-1}_{n=0}z_{n}e^{i\frac{2\pi n+\alpha}{N}k} \\
+\implies z_{n} & =\frac{1}{\sqrt{ N }}\sum ^{N-1}_{k=0}z_{k}e^{-i\frac{2\pi n+\alpha}{N}k}
+\end{align}$$
+
+the Jacobian of this transformation is still $\displaystyle{1}$. then
+
+$$\begin{align}
+Z[\beta,\alpha] & =\int \prod ^{N-1}_{k=0} \frac{\mathrm{d}^{2}z_{n}}{\pi}\exp\left(-\sum ^{N-1}_{k=0}\left( \frac{1}{2} \frac{1}{N}\sum ^{N-1}_{n,n'=0}z_{n}^{*}z_{n'}e^{-i \frac{2\pi (n-n')}{N}k}\left(e^{i \frac{2\pi n'+\alpha}{N}}-1 \right)-\frac{1}{2} \frac{1}{N}\sum ^{N-1}_{n,n'=0}z_{n}^{*}z_{n'}e^{-i \frac{2\pi(n'-n) }{N}k}\left( e^{-i \frac{2\pi n'+\alpha}{N} }-1 \right)+\frac{1}{N}\Delta \tau \omega \sum ^{N-1}_{n,n'=0}z_{n}^{*}z_{n'}e^{-i \frac{2\pi(n'-n) }{N}k} \right)\right) \\
+ & =\int \prod ^{N-1}_{k=0} \frac{\mathrm{d}^{2}z_{n}}{\pi}\exp\left(-\sum ^{N-1}_{n=0}z^{*}_{n}(1-e^{-\Delta \tau \omega}e^{i(2\pi n+\alpha)/N})z_{n}\right) \\
+ & =\prod ^{N-1}_{k=0} \frac{1}{1-e^{-\Delta \tau \omega}e^{i(2\pi n+\alpha)/N}} \\
+ & =\frac{1}{1-e^{-N\Delta \tau \omega}e^{i\alpha}} \\
+ & =\frac{1}{1-e^{-\beta \omega}e^{i\alpha}}
+\end{align}$$
+
+which is the correct partition function with twisted boundary condition...
 
 # free scalar in $\mathrm{AdS}_{3}$
 
@@ -367,25 +406,13 @@ Z(\beta) & =\prod ^{\infty}_{n,\bar{n}=0}\frac{1}{1-q^{\omega _{n,\bar{n}}}}
 
 where $\displaystyle{q=e^{-\beta}}$. this result matches the operator formalism result.
 
-$\displaystyle{\mathrm{Tr}e^{-\beta H}e^{i\alpha J}}$. since $\displaystyle{[H,J]=0}$, we have
+$\displaystyle{\mathrm{Tr}e^{-\beta H}e^{i\alpha J}}$. the Euclidean action remains the same. for each mode $\displaystyle{z_{n,\bar{n}}}$ the periodic boundary condition gets twisted
 
 $$\begin{align}
-e^{-\beta H}e^{i\alpha J} & =e^{-\beta(H-\Omega J)}
+z_{n,\bar{n}}(\beta)=e^{i\alpha j_{n,\bar{n}}}z_{n,\bar{n}}(0)
 \end{align}$$
 
-where $\displaystyle{\Omega=\frac{i\alpha}{\beta}}$ is the chemical potential. the Euclidean action becomes
-
-$$\begin{align}
-S_{E} & =\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{n,\bar{n}}\dot{z}_{n,\bar{n}}-\dot{z}^{*}_{n,\bar{n}}z_{n,\bar{n}})+(\omega _{n,\bar{n}}-\Omega\, j_{n,\bar{n}})|z_{n,\bar{n}}|^{2}\right) \\
-\end{align}$$
-
-where $\displaystyle{j_{n,\bar{n}}=\bar{n}-n}$, and the periodic boundary condition gets twisted
-
-$$\begin{align}
-z_{n,\bar{n}}(\beta)=e^{\beta \Omega\, j_{n,\bar{n}}}z_{n,\bar{n}}(0)
-\end{align}$$
-
-then the partition function becomes
+where $\displaystyle{j_{n,\bar{n}}=\bar{n}-n}$. by experience from the harmonic oscillator case, we directly write down the final result of the partition function
 
 $$\begin{align}
 Z[\beta,\alpha] & =\prod ^{\infty}_{n,\bar{n}=0} \frac{1}{1-z^{j_{n,\bar{n}}}q^{\omega _{n,\bar{n}}}}
@@ -523,8 +550,8 @@ Z(\beta,\alpha) & =\mathrm{Tr}e^{-\beta H}e^{ i\alpha J } \\
 where
 
 $$\begin{align}
-S_{E}[\boldsymbol{z}_{l},\boldsymbol{z}^{*}_{l},\boldsymbol{z}_{r},\boldsymbol{z}^{*}_{r}] & =\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{l,n,\bar{n}}\dot{z}_{l,n,\bar{n}}-\dot{z}^{*}_{l,n,\bar{n}}z_{l,n,\bar{n}})+(\omega _{n,\bar{n}}-\Omega\, j_{l,n,\bar{n}})|z_{l,n,\bar{n}}|^{2}\right) \\
- & \quad +\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{r,n,\bar{n}}\dot{z}_{r,n,\bar{n}}-\dot{z}^{*}_{r,n,\bar{n}}z_{r,n,\bar{n}})+(\omega _{n,\bar{n}}-\Omega\, j_{r,n,\bar{n}})|z_{r,n,\bar{n}}|^{2}\right) \\
+S_{E}[\boldsymbol{z}_{l},\boldsymbol{z}^{*}_{l},\boldsymbol{z}_{r},\boldsymbol{z}^{*}_{r}] & =\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{l,n,\bar{n}}\dot{z}_{l,n,\bar{n}}-\dot{z}^{*}_{l,n,\bar{n}}z_{l,n,\bar{n}})+\omega _{n,\bar{n}}|z_{l,n,\bar{n}}|^{2}\right) \\
+ & \quad +\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left(\frac{1}{2}(z^{*}_{r,n,\bar{n}}\dot{z}_{r,n,\bar{n}}-\dot{z}^{*}_{r,n,\bar{n}}z_{r,n,\bar{n}})+\omega _{n,\bar{n}}|z_{r,n,\bar{n}}|^{2}\right) \\
 \end{align}$$
 
 twisted periodic condition
@@ -698,3 +725,5 @@ $$\begin{align}
 S^{-1} & =\omega \left( \frac{2\pi}{\beta} \right)^{2\zeta _{\mathbb{R}}(0)}\exp\left(-2\zeta _{\mathbb{R}}'(0)\right)\frac{\sinh(\beta \omega/2)}{\beta \omega/2} \\
  & =2\sinh(\beta \omega/2)
 \end{align}$$
+
+OK now we have another breakthrough so we have no need to introduce any regularization here. 

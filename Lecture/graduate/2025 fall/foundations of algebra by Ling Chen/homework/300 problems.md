@@ -136,19 +136,43 @@ $\displaystyle{\implies}$. assume $\displaystyle{A\not\subseteq B}$ and $\displa
 $\displaystyle{\impliedby}$. $\displaystyle{\forall a_{1}b_{1},a_{2}b_{2} \in AB}$. since $\displaystyle{AB=BA}$, then $\displaystyle{\exists a_{3}b_{3}\in AB\text{ s.t. }b_{1}a_{2}=a_{3}b_{3}}$, then $\displaystyle{(a_{1}b_{1})(a_{2}b_{2})=a_{1}(b_{1}a_{2})b_{2}=a_{1}(a_{3}b_{3})b_{2}=(a_{1}a_{3})(b_{3}b_{2})\in AB}$. similarly $\displaystyle{(a_{1}b_{1})^{-1}=b_{1}^{-1}a_{1}^{-1}\in AB}$. 
 
 7. suppose $\displaystyle{A,B}$ are two subgroups of $\displaystyle{G}$ and $\displaystyle{G=AB}$. if $\displaystyle{A\subseteq C\leqslant G}$, then $\displaystyle{C=A(B\cap C)}$.
-*sol*. $\displaystyle{C=A(B\cap C)\iff \forall c\in C,\exists a\in A,b\in B\cap C,\text{ s.t. }c=ab\in G}$
+*sol*. $\displaystyle{\forall c\in C,\exists a\in A,b\in B,\text{ s.t. }c=ab\in G\implies b=a^{-1}c\in C}$, which means $\displaystyle{C=A(B\cap C)}$.
 
 8. suppose $\displaystyle{A,B}$ are two non-empty subsets of finite group $\displaystyle{G}$. if $\displaystyle{|A|+|B|>|G|}$, then $\displaystyle{G=AB}$.
-*sol*. 
+*sol*. $\displaystyle{\forall g\in G, |Ag^{-1}|=|A|}$. since $\displaystyle{|A|+|B| >|G|\implies Ag^{-1}\cap B\neq \emptyset}$. then $\displaystyle{\exists a\in A,b\in B\implies ag^{-1}=b\implies g=ab^{-1}\implies G=AB}$.
 
 9. suppose $\displaystyle{A,B}$ are two subgroups of group $\displaystyle{G}$. then
 	1. $\displaystyle{g(A\cap B)=gA\cap gB,\forall g\in G}$
 *sol*. $\displaystyle{\forall g\in G,c\in A\cap B,gc\in gA,gc\in gB\implies gc\in gA\cap gB}$.
 	2. if $\displaystyle{A}$ and $\displaystyle{B}$ have finite index, then $\displaystyle{A\cap B}$ has finite index.
-*sol*.
+*sol*. 1 implies that any left coset of $\displaystyle{A\cap B}$ is contained in some left coset of $\displaystyle{A}$ and some left coset of $\displaystyle{B}$. since $\displaystyle{A}$ and $\displaystyle{B}$ have finite index, then $\displaystyle{A\cap B}$ also has finite index.
 
 10. if $\displaystyle{R}$ is a representative set of right cosets of $\displaystyle{G}$ with respect to $\displaystyle{A}$. then $\displaystyle{R^{-1}}$ is a representative set of left cosets of $\displaystyle{G}$ with respect to $\displaystyle{A}$.
 *sol*. notice that $\displaystyle{\forall r\in R,a\in A,(ra)^{-1}=a^{-1}r^{-1}\in Ar^{-1}}$.
 
 11. suppose $\displaystyle{A\leqslant G,B\leqslant G}$. if $\displaystyle{\exists a,b\in G\text{ s.t. }Aa=Bb}$, then $\displaystyle{A=B}$.
-*sol*. 
+*sol*. $\displaystyle{Aa=Bb\implies A=Bba^{-1}\implies ba^{-1}\in A\implies(ba^{-1})^{-1}=ab^{-1}\in A\implies B=Aab^{-1}=A}$.
+
+12. suppose $\displaystyle{n>2}$. then finite group $\displaystyle{G}$ has a even number of elements with order $\displaystyle{n}$.
+*sol*. if group $\displaystyle{G}$ has no element with order $\displaystyle{n}$, qed. suppose the order of element $\displaystyle{g\in G}$ is $\displaystyle{n}$, then $\displaystyle{o(g^{-1})=n}$. elements with order $\displaystyle{n}$ appear in pairs, so the number is even.
+
+13. $\displaystyle{\forall a,b\in G}$. prove that $\displaystyle{a,a^{-1}}$ has the same order and $\displaystyle{ab,ba}$ has the same order
+*sol*. suppose $\displaystyle{o(a)=n}$, then $\displaystyle{(a^{-1})^{n}=(a^{n})^{-1}=e^{-1}=e}$. and if $\displaystyle{o(a^{-1})=m<n}$, then $\displaystyle{a^{m}=(a^{-1})^{-m}=e}$, so $\displaystyle{o(a^{-1})=m<n}$, contradiction.
+suppose $\displaystyle{o(ab)=k}$, then $\displaystyle{(ba)^{k+1}=b(ab)^{k}a=b e a=ba\implies o(ba)=o(ab)=k}$. and if $\displaystyle{o(ba)=l<k}$, then $\displaystyle{(ab)^{l+1}=a(ba)^{l}b=a e b=ab\implies o(ab)=o(ba)=l<k}$, contradiction.
+
+14. suppose $\displaystyle{A\leqslant G}$, prove that $\displaystyle{C_{G}C_{G}C_{G}(A)=C_{G}(A)}$. 
+*sol*. denote $\displaystyle{B=C_{G}C_{G}(A)}$, we need to prove that $\displaystyle{C_{G}(B)=C_{G}(A)}$. 
+
+15. prove that for finite group $\displaystyle{G}$ and its proper subgroup $\displaystyle{H}$, the union of all conjugate subgroups of $\displaystyle{H}$ is not equal to $\displaystyle{G}$. whether this conclusion holds for infinite groups?
+*sol*. suppose $\displaystyle{S=\bigcup _{g\in G}g^{-1}Ag}$. the number of conjugate subgroups of $\displaystyle{H}$ in $\displaystyle{G}$ is $\displaystyle{[G:N_{G}(H)]=\frac{|G|}{|N_{G}(H)|}}$. then we have
+
+$$\begin{align}
+|S| & \leqslant (|H|-1)[G:N_{G}(H)]+1 \\
+ & = \frac{|G||H|}{|N_{G}(H)|}-\frac{|G|}{|N_{G}(H)|}+1 \\
+ & =\begin{cases}
+|H|-1+1<|G|, & H\text{ is a normal subgroup of }G \\
+|G|-\frac{|G|}{|N_{G}(H)|}+1<|G|, & \text{otherwise}
+\end{cases}
+\end{align}$$
+
+16. suppose $\displaystyle{H}$ and $\displaystyle{K}$ are two subgroup of finite group $\displaystyle{G}$. prove that $\displaystyle{|HgK|=|H|[K:g^{-1}Hg\cap K]}$. z
