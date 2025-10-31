@@ -186,6 +186,16 @@ Z[\beta] & =\int \prod ^{N-1}_{n=0} \frac{\mathrm{d}^{2}z_{n}}{\pi}\exp\left(-\s
 
 this is exactly the correct partition function of a harmonic oscillator.
 
+$$\begin{align}
+\lim_{ N \to \infty } \prod ^{N-1}_{n=1} \frac{1-e^{2\pi in/N}}{1-e^{-\Delta \tau \omega}e^{2\pi in/N}} & \overset{?}{=} \prod _{n\neq 0} \frac{i\omega _{n}}{i\omega _{n}+\omega}, \quad \omega _{n}=\frac{2\pi n}{\beta},\Delta \tau=\frac{\beta}{N} \\
+ & =e^{\beta \omega/2} \prod _{n\neq 0} \frac{i\omega _{n}}{i\omega _{n}+\omega} \\
+ & =e^{\beta \omega/2} \frac{\beta \omega/2}{\sinh \beta \omega/2} \\
+ & =\frac{\beta \omega}{1-e^{-\beta \omega}} \\
+\lim_{ N \to \infty } \frac{1}{1-e^{-\Delta \tau \omega}}\prod ^{N-1}_{n=1} \frac{1}{1-e^{2\pi in/N}} & =\lim_{ N \to \infty } \frac{N}{\beta \omega} \frac{1}{N}=\frac{1}{\beta \omega}
+\end{align}$$
+
+have no idea.
+
 ## twisted boundary condition
 
 now we want to calculate $\displaystyle{\mathrm{Tr}e^{-\beta H}e^{i\alpha N}}$, where $\displaystyle{N=a^{\dagger}a}$ is the number operator. since $\displaystyle{[H,N]=0}$, we have

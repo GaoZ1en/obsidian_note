@@ -30953,7 +30953,7 @@
       },
       {
         "date": "2025-10-16",
-        "filePath": "Articles/Proca in AdS3/Untitled.md",
+        "filePath": "Articles/Proca in AdS3/Weyl law.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [],
@@ -34030,7 +34030,7 @@
       },
       {
         "date": "2025-10-27",
-        "filePath": "Articles/Proca in AdS3/Untitled.md",
+        "filePath": "Articles/Proca in AdS3/Weyl law.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -34297,6 +34297,26 @@
             "timeKey": "14:35",
             "w": 0,
             "c": 0
+          },
+          {
+            "timeKey": "16:50",
+            "w": 27,
+            "c": 122
+          },
+          {
+            "timeKey": "16:55",
+            "w": 0,
+            "c": -8
+          },
+          {
+            "timeKey": "17:00",
+            "w": -27,
+            "c": -114
+          },
+          {
+            "timeKey": "17:10",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 1199
@@ -34351,6 +34371,41 @@
             "timeKey": "15:20",
             "w": 245,
             "c": 1470
+          },
+          {
+            "timeKey": "18:30",
+            "w": 57,
+            "c": 336
+          },
+          {
+            "timeKey": "18:35",
+            "w": 76,
+            "c": 385
+          },
+          {
+            "timeKey": "18:40",
+            "w": 243,
+            "c": 1431
+          },
+          {
+            "timeKey": "18:45",
+            "w": 101,
+            "c": 787
+          },
+          {
+            "timeKey": "18:50",
+            "w": 158,
+            "c": 992
+          },
+          {
+            "timeKey": "18:55",
+            "w": 115,
+            "c": 674
+          },
+          {
+            "timeKey": "19:00",
+            "w": 81,
+            "c": 512
           }
         ],
         "id": 1200
@@ -34408,9 +34463,941 @@
             "timeKey": "16:40",
             "w": 10,
             "c": 67
+          },
+          {
+            "timeKey": "17:30",
+            "w": 5,
+            "c": 27
+          },
+          {
+            "timeKey": "17:35",
+            "w": 1,
+            "c": 26
+          },
+          {
+            "timeKey": "17:40",
+            "w": 78,
+            "c": 532
+          },
+          {
+            "timeKey": "17:45",
+            "w": 1,
+            "c": 2
           }
         ],
         "id": 1202
+      },
+      {
+        "date": "2025-10-28",
+        "filePath": "Lecture/graduate/2025 fall/foundations of geometry and topology by Liang Xiao/homework/g&t homework 4.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:05",
+            "w": 18,
+            "c": 113
+          },
+          {
+            "timeKey": "19:10",
+            "w": -16,
+            "c": -100
+          }
+        ],
+        "id": 1203
+      },
+      {
+        "date": "2025-10-28",
+        "filePath": "Lecture/graduate/2025 fall/foundations of algebra by Ling Chen/homework/a homework 3.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:10",
+            "w": 60,
+            "c": 352
+          },
+          {
+            "timeKey": "19:15",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "19:25",
+            "w": -1,
+            "c": 20
+          },
+          {
+            "timeKey": "19:30",
+            "w": 165,
+            "c": 1015
+          },
+          {
+            "timeKey": "19:35",
+            "w": 217,
+            "c": 1394
+          },
+          {
+            "timeKey": "19:40",
+            "w": -89,
+            "c": -580
+          },
+          {
+            "timeKey": "19:45",
+            "w": 7,
+            "c": 42
+          },
+          {
+            "timeKey": "19:50",
+            "w": 98,
+            "c": 653
+          },
+          {
+            "timeKey": "19:55",
+            "w": 71,
+            "c": 405
+          },
+          {
+            "timeKey": "20:00",
+            "w": -78,
+            "c": -468
+          },
+          {
+            "timeKey": "20:05",
+            "w": 177,
+            "c": 984
+          },
+          {
+            "timeKey": "20:10",
+            "w": 67,
+            "c": 452
+          }
+        ],
+        "id": 1204
+      },
+      {
+        "date": "2025-10-28",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/homework/qm&qi homework 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 1205
+      },
+      {
+        "date": "2025-10-28",
+        "filePath": "Lecture/graduate/2025 fall/foundations of algebra by Ling Chen/homework/300 problems.md",
+        "wordCountStart": 3433,
+        "charCountStart": 19988,
+        "changes": [
+          {
+            "timeKey": "20:15",
+            "w": 16,
+            "c": 119
+          },
+          {
+            "timeKey": "20:20",
+            "w": 67,
+            "c": 414
+          },
+          {
+            "timeKey": "20:25",
+            "w": 11,
+            "c": 72
+          },
+          {
+            "timeKey": "20:30",
+            "w": 186,
+            "c": 1019
+          },
+          {
+            "timeKey": "20:35",
+            "w": 46,
+            "c": 247
+          },
+          {
+            "timeKey": "20:40",
+            "w": 16,
+            "c": 78
+          },
+          {
+            "timeKey": "20:45",
+            "w": 37,
+            "c": 244
+          },
+          {
+            "timeKey": "20:50",
+            "w": 103,
+            "c": 573
+          },
+          {
+            "timeKey": "20:55",
+            "w": 1,
+            "c": 1
+          }
+        ],
+        "id": 1206
+      },
+      {
+        "date": "2025-10-29",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 7398,
+        "charCountStart": 35764,
+        "changes": [],
+        "id": 1207
+      },
+      {
+        "date": "2025-10-29",
+        "filePath": "Lecture/graduate/2025 fall/foundations of algebra by Ling Chen/homework/300 problems.md",
+        "wordCountStart": 3916,
+        "charCountStart": 22755,
+        "changes": [],
+        "id": 1208
+      },
+      {
+        "date": "2025-10-29",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/homework/qm&qi homework 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:25",
+            "w": 169,
+            "c": 946
+          },
+          {
+            "timeKey": "13:30",
+            "w": 151,
+            "c": 793
+          },
+          {
+            "timeKey": "13:35",
+            "w": 100,
+            "c": 612
+          },
+          {
+            "timeKey": "13:40",
+            "w": 121,
+            "c": 763
+          },
+          {
+            "timeKey": "13:45",
+            "w": 222,
+            "c": 1383
+          },
+          {
+            "timeKey": "13:50",
+            "w": 101,
+            "c": 568
+          },
+          {
+            "timeKey": "13:55",
+            "w": 172,
+            "c": 1082
+          },
+          {
+            "timeKey": "14:00",
+            "w": 83,
+            "c": 514
+          },
+          {
+            "timeKey": "14:05",
+            "w": 146,
+            "c": 758
+          },
+          {
+            "timeKey": "14:10",
+            "w": 214,
+            "c": 1175
+          },
+          {
+            "timeKey": "14:15",
+            "w": 22,
+            "c": 135
+          },
+          {
+            "timeKey": "14:40",
+            "w": 9,
+            "c": 68
+          },
+          {
+            "timeKey": "14:45",
+            "w": 26,
+            "c": 131
+          },
+          {
+            "timeKey": "15:00",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "15:30",
+            "w": 33,
+            "c": 151
+          },
+          {
+            "timeKey": "15:35",
+            "w": 132,
+            "c": 764
+          },
+          {
+            "timeKey": "15:40",
+            "w": 16,
+            "c": 89
+          },
+          {
+            "timeKey": "15:45",
+            "w": -117,
+            "c": -671
+          },
+          {
+            "timeKey": "15:50",
+            "w": 40,
+            "c": 232
+          },
+          {
+            "timeKey": "15:55",
+            "w": 68,
+            "c": 344
+          },
+          {
+            "timeKey": "16:00",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "16:05",
+            "w": 133,
+            "c": 779
+          },
+          {
+            "timeKey": "17:00",
+            "w": 11,
+            "c": 65
+          },
+          {
+            "timeKey": "21:05",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1209
+      },
+      {
+        "date": "2025-10-29",
+        "filePath": "Lecture/graduate/2025 fall/group theory by Lu Guo/homework/gt homework 2.md",
+        "wordCountStart": 2524,
+        "charCountStart": 16785,
+        "changes": [],
+        "id": 1210
+      },
+      {
+        "date": "2025-10-29",
+        "filePath": "Articles/Test particle/main result.md",
+        "wordCountStart": 2407,
+        "charCountStart": 12763,
+        "changes": [],
+        "id": 1211
+      },
+      {
+        "date": "2025-10-29",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1335,
+        "changes": [],
+        "id": 1212
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1335,
+        "changes": [],
+        "id": 1213
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Articles/Proca in AdS3/correlation function 2.md",
+        "wordCountStart": 2165,
+        "charCountStart": 8573,
+        "changes": [],
+        "id": 1214
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Articles/Proca in AdS3/Weyl law.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "09:25",
+            "w": 645,
+            "c": 4450
+          },
+          {
+            "timeKey": "09:30",
+            "w": 96,
+            "c": 677
+          },
+          {
+            "timeKey": "09:35",
+            "w": 24,
+            "c": 156
+          },
+          {
+            "timeKey": "09:40",
+            "w": -480,
+            "c": -3427
+          },
+          {
+            "timeKey": "09:45",
+            "w": 142,
+            "c": 784
+          },
+          {
+            "timeKey": "09:50",
+            "w": 38,
+            "c": 236
+          },
+          {
+            "timeKey": "09:55",
+            "w": 198,
+            "c": 1152
+          },
+          {
+            "timeKey": "10:00",
+            "w": 34,
+            "c": 153
+          },
+          {
+            "timeKey": "10:05",
+            "w": 27,
+            "c": 147
+          },
+          {
+            "timeKey": "10:50",
+            "w": -82,
+            "c": -431
+          },
+          {
+            "timeKey": "12:30",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1215
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Note/Physics/heat kernel method and zeta function regularization.md",
+        "wordCountStart": 1538,
+        "charCountStart": 8107,
+        "changes": [],
+        "id": 1216
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Lecture/graduate/2025 fall/group theory by Lu Guo/homework/gt homework 2.md",
+        "wordCountStart": 2524,
+        "charCountStart": 16785,
+        "changes": [],
+        "id": 1217
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 7398,
+        "charCountStart": 35764,
+        "changes": [],
+        "id": 1218
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 1219
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Articles/Noether charge/Regularized action of pure AdS3 gravity.md",
+        "wordCountStart": 1022,
+        "charCountStart": 5751,
+        "changes": [],
+        "id": 1220
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5462,
+        "charCountStart": 23573,
+        "changes": [],
+        "id": 1221
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 11678,
+        "charCountStart": 46490,
+        "changes": [],
+        "id": 1222
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Articles/Proca in AdS3/Casimir operator.md",
+        "wordCountStart": 1227,
+        "charCountStart": 5566,
+        "changes": [],
+        "id": 1223
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Articles/Proca in AdS3/correlation function.md",
+        "wordCountStart": 2016,
+        "charCountStart": 8307,
+        "changes": [],
+        "id": 1224
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 10.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:10",
+            "w": 10,
+            "c": 63
+          },
+          {
+            "timeKey": "15:15",
+            "w": 23,
+            "c": 244
+          },
+          {
+            "timeKey": "15:25",
+            "w": 5,
+            "c": 46
+          },
+          {
+            "timeKey": "15:30",
+            "w": 14,
+            "c": 95
+          },
+          {
+            "timeKey": "15:35",
+            "w": 21,
+            "c": 141
+          },
+          {
+            "timeKey": "15:40",
+            "w": 3,
+            "c": 21
+          },
+          {
+            "timeKey": "15:45",
+            "w": 74,
+            "c": 420
+          },
+          {
+            "timeKey": "15:50",
+            "w": 71,
+            "c": 438
+          },
+          {
+            "timeKey": "15:55",
+            "w": 19,
+            "c": 86
+          },
+          {
+            "timeKey": "16:00",
+            "w": 59,
+            "c": 329
+          },
+          {
+            "timeKey": "16:05",
+            "w": 31,
+            "c": 191
+          },
+          {
+            "timeKey": "16:10",
+            "w": 59,
+            "c": 308
+          },
+          {
+            "timeKey": "16:15",
+            "w": 48,
+            "c": 289
+          },
+          {
+            "timeKey": "16:20",
+            "w": 88,
+            "c": 500
+          },
+          {
+            "timeKey": "16:25",
+            "w": 70,
+            "c": 382
+          },
+          {
+            "timeKey": "16:30",
+            "w": 14,
+            "c": 86
+          },
+          {
+            "timeKey": "16:35",
+            "w": 40,
+            "c": 260
+          },
+          {
+            "timeKey": "16:40",
+            "w": 147,
+            "c": 827
+          },
+          {
+            "timeKey": "16:45",
+            "w": 131,
+            "c": 647
+          },
+          {
+            "timeKey": "16:50",
+            "w": -56,
+            "c": -261
+          },
+          {
+            "timeKey": "16:55",
+            "w": 59,
+            "c": 618
+          },
+          {
+            "timeKey": "17:00",
+            "w": 3,
+            "c": 16
+          },
+          {
+            "timeKey": "17:05",
+            "w": 78,
+            "c": 470
+          },
+          {
+            "timeKey": "17:10",
+            "w": 84,
+            "c": 454
+          },
+          {
+            "timeKey": "17:15",
+            "w": -26,
+            "c": -135
+          },
+          {
+            "timeKey": "17:20",
+            "w": 35,
+            "c": 221
+          },
+          {
+            "timeKey": "17:25",
+            "w": 59,
+            "c": 356
+          },
+          {
+            "timeKey": "17:30",
+            "w": 86,
+            "c": 522
+          },
+          {
+            "timeKey": "17:35",
+            "w": 38,
+            "c": 257
+          },
+          {
+            "timeKey": "17:40",
+            "w": 125,
+            "c": 697
+          },
+          {
+            "timeKey": "17:45",
+            "w": 18,
+            "c": 111
+          }
+        ],
+        "id": 1225
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "TODO.md",
+        "wordCountStart": 6196,
+        "charCountStart": 31094,
+        "changes": [],
+        "id": 1226
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Drafts/Untitled 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:15",
+            "w": 7,
+            "c": 41
+          },
+          {
+            "timeKey": "19:20",
+            "w": 116,
+            "c": 509
+          },
+          {
+            "timeKey": "19:25",
+            "w": 64,
+            "c": 301
+          },
+          {
+            "timeKey": "19:30",
+            "w": 63,
+            "c": 268
+          },
+          {
+            "timeKey": "19:35",
+            "w": -8,
+            "c": -31
+          },
+          {
+            "timeKey": "19:40",
+            "w": 34,
+            "c": 141
+          },
+          {
+            "timeKey": "19:45",
+            "w": 2,
+            "c": 3
+          },
+          {
+            "timeKey": "19:50",
+            "w": 62,
+            "c": 283
+          },
+          {
+            "timeKey": "19:55",
+            "w": 106,
+            "c": 508
+          },
+          {
+            "timeKey": "20:00",
+            "w": -51,
+            "c": -201
+          },
+          {
+            "timeKey": "21:00",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1227
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Drafts/Untitled.md",
+        "wordCountStart": 52,
+        "charCountStart": 2329,
+        "changes": [
+          {
+            "timeKey": "19:15",
+            "w": -52,
+            "c": -2329
+          }
+        ],
+        "id": 1228
+      },
+      {
+        "date": "2025-10-30",
+        "filePath": "Drafts/Untitled 1.md",
+        "wordCountStart": 668,
+        "charCountStart": 3927,
+        "changes": [
+          {
+            "timeKey": "19:15",
+            "w": -668,
+            "c": -3927
+          }
+        ],
+        "id": 1229
+      },
+      {
+        "date": "2025-10-31",
+        "filePath": "Drafts/Untitled 2.md",
+        "wordCountStart": 395,
+        "charCountStart": 1822,
+        "changes": [
+          {
+            "timeKey": "10:10",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "10:45",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1230
+      },
+      {
+        "date": "2025-10-31",
+        "filePath": "Note/Physics/CPT theorem.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "10:55",
+            "w": 14,
+            "c": 82
+          }
+        ],
+        "id": 1231
+      },
+      {
+        "date": "2025-10-31",
+        "filePath": "TODO.md",
+        "wordCountStart": 6196,
+        "charCountStart": 31094,
+        "changes": [],
+        "id": 1232
+      },
+      {
+        "date": "2025-10-31",
+        "filePath": "Articles/Noether charge/Convergence of α and θ.md",
+        "wordCountStart": 2232,
+        "charCountStart": 12549,
+        "changes": [],
+        "id": 1233
+      },
+      {
+        "date": "2025-10-31",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 7398,
+        "charCountStart": 35764,
+        "changes": [
+          {
+            "timeKey": "11:05",
+            "w": 58,
+            "c": 279
+          },
+          {
+            "timeKey": "11:10",
+            "w": 26,
+            "c": 105
+          },
+          {
+            "timeKey": "13:20",
+            "w": 45,
+            "c": 237
+          },
+          {
+            "timeKey": "13:25",
+            "w": 8,
+            "c": 48
+          },
+          {
+            "timeKey": "13:30",
+            "w": 3,
+            "c": 14
+          }
+        ],
+        "id": 1234
+      },
+      {
+        "date": "2025-10-31",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/homework/qm&qi homework 3.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:45",
+            "w": 186,
+            "c": 956
+          },
+          {
+            "timeKey": "13:50",
+            "w": 161,
+            "c": 820
+          },
+          {
+            "timeKey": "13:55",
+            "w": 141,
+            "c": 706
+          },
+          {
+            "timeKey": "14:00",
+            "w": 13,
+            "c": 97
+          },
+          {
+            "timeKey": "14:05",
+            "w": 105,
+            "c": 608
+          },
+          {
+            "timeKey": "14:10",
+            "w": 87,
+            "c": 443
+          },
+          {
+            "timeKey": "14:15",
+            "w": 85,
+            "c": 417
+          },
+          {
+            "timeKey": "14:20",
+            "w": -2,
+            "c": -29
+          },
+          {
+            "timeKey": "14:25",
+            "w": 46,
+            "c": 278
+          },
+          {
+            "timeKey": "14:30",
+            "w": 88,
+            "c": 291
+          },
+          {
+            "timeKey": "14:40",
+            "w": 23,
+            "c": 388
+          },
+          {
+            "timeKey": "14:45",
+            "w": 83,
+            "c": 462
+          },
+          {
+            "timeKey": "14:50",
+            "w": 83,
+            "c": 471
+          },
+          {
+            "timeKey": "14:55",
+            "w": 126,
+            "c": 637
+          },
+          {
+            "timeKey": "15:00",
+            "w": 69,
+            "c": 442
+          },
+          {
+            "timeKey": "15:05",
+            "w": 140,
+            "c": 658
+          },
+          {
+            "timeKey": "23:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1235
       }
     ],
     "daysWithCompletedGoal": [
@@ -34505,7 +35492,10 @@
       "2025-10-23",
       "2025-10-24",
       "2025-10-26",
-      "2025-10-28"
+      "2025-10-28",
+      "2025-10-29",
+      "2025-10-30",
+      "2025-10-31"
     ]
   }
 }
