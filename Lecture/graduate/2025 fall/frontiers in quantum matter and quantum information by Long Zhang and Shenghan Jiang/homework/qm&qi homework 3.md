@@ -195,45 +195,31 @@ construct a $\displaystyle{C^{1}(U)}$ gate for $\displaystyle{U=R_{x}(\theta)}$ 
 
 *sol*.
 
-notice that
+for $\displaystyle{U=e^{i\alpha}R_{z}(\beta)R_{y}(\gamma)R_{z}(\delta)}$, we write
 
 $$\begin{align}
-U & =e^{i\alpha}R_{z}(\beta)R_{y}(\gamma)R_{z}(\delta) \\
- & =e^{i\alpha}AXBXC \\
-A & =R_{z}(\beta)R_{y}\left( \frac{\gamma}{2} \right) \\
-B & =R_{y}\left( -\frac{\gamma}{2} \right)R_{z}\left( -\frac{\delta+\beta}{2} \right) \\
-C & =R_{z}\left( \frac{\delta-\beta}{2} \right)
+U & =e^{i\alpha}AXBXC \\
+A & =R_{z}(\beta)R_{y}(\gamma/2) \\
+B & =R_{y}(-\gamma/2)R_{z}(-(\delta+\beta)/2) \\
+C & =R_{z}((\delta-\beta)/2)
 \end{align}$$
 
-and
+then the $\displaystyle{C^{1}(U)}$ gate can be constructed as
 
 $$\begin{align}
-\text{CU} & =(I\otimes A)\text{CNOT}(I\otimes B)\text{CNOT}(I\otimes C)e^{i\alpha}
+C^{1}(U) & =(I\otimes A) \cdot CNOT \cdot (I\otimes B) \cdot CNOT \cdot (I\otimes C)\cdot(I\otimes e^{i\alpha}I)
 \end{align}$$
 
-for $\displaystyle{U=R_{x}(\theta)}$, we have
+1. for $\displaystyle{U=R_{x}(\theta)=R_{z}\left( -\frac{\pi}{2} \right)R_{y}(\theta)R_{z}\left( \frac{\pi}{2} \right)}$, we have $\displaystyle{A=R_{z}(-\pi/2)R_{y}(\theta/2),B=R_{y}(\theta/2),C=R_{z}(\pi/2)}$, hence
 
 $$\begin{align}
-R_{x}(\theta) & =R_{z}\left( -\frac{\pi}{2} \right)R_{y}(\theta)R_{z}\left( \frac{\pi}{2} \right) \\
- & =AXBXC \\
-A & =R_{z}\left( -\frac{\pi}{2} \right)R_{y}\left( \frac{\theta}{2} \right) \\
-B & =R_{y}\left( -\frac{\theta}{2} \right)R_{z}(0)=R_{y}\left( -\frac{\theta}{2} \right) \\
-C & =R_{z}\left( \frac{\pi}{2} \right)
+C^{1}(R_{x}(\theta)) & =(I\otimes R_{z}(-\pi/2)R_{y}(\theta/2)) \cdot CNOT \cdot (I\otimes R_{y}(-\theta/2)) \cdot CNOT \cdot (I\otimes R_{z}(\pi/2))
 \end{align}$$
 
-
+2. for $\displaystyle{U=R_{y}(\theta)}$, we have $\displaystyle{\alpha=0,A=R_{y}(\theta/2),B=R_{y}(-\theta/2),C=I}$, hence
 
 $$\begin{align}
-R_{z}\left(\frac{\pi}{2}\right) & =\exp\left(-\frac{i\pi}{4}Z\right) \\
- & =\cos \frac{\pi}{4}I -i\sin \frac{\pi}{4}Z \\
- & =\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
-1-i & 0 \\
-0 & 1+i
-\end{pmatrix} \\
-R_{z}\left( -\frac{\pi}{2} \right) & =\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
-1+i & 0 \\
-0 & 1+i
-\end{pmatrix}
+C^{1}(R_{y}(\theta)) & =(I\otimes R_{y}(\theta/2)) \cdot CNOT \cdot (I\otimes R_{y}(-\theta/2)) \cdot CNOT
 \end{align}$$
 
 ## exercise 4.24
@@ -244,8 +230,13 @@ verify that the Toffoli gate can be constructed as follows:
 
 *sol*.
 
-let the target qubit be $\displaystyle{\ket{\psi}=a\ket{0}_{3}+b\ket{1}_{3}}$.
-1. the control qubits are $\displaystyle{\ket{00}_{12}}$. 
+suppose the target qubit is $\displaystyle{\ket{\psi}=a\ket{0}_{3}+b\ket{0}_{3}}$.
+1. the control qubits are $\displaystyle{\ket{00}_{12}}$. after the action of all gates, the first control qubit becomes $\displaystyle{T\ket{0}_{1}=\ket{0}_{1}}$, the second control qubit becomes $\displaystyle{ST^{\dagger}T^{\dagger}\ket{0}_{2}=\ket{0}_{2}}$, and the target qubit becomes $\displaystyle{HTT^{\dagger}TT^{\dagger}H\ket{\psi}=H^{2}\ket{\psi}=\ket{\psi}}$. so the whole state remains unchanged.
+2. the control qubits are $\displaystyle{\ket{01}_{12}}$. after the action of all gates, the first control qubit becomes $\displaystyle{T\ket{0}_{1}=\ket{0}_{1}}$, the second control qubit becomes $\displaystyle{ST^{\dagger}T^{\dagger}\ket{1}_{2}=\ket{1}_{2}}$, and the target qubit becomes $\displaystyle{HTT^{\dagger}XTT^{\dagger}XH\ket{\psi}=\ket{\psi}}$. so the whole state remains unchanged.
+3. the control qubits are $\displaystyle{\ket{10}_{12}}$. after the action of all gates, the first control qubit becomes $\displaystyle{T\ket{1}_{1}=e^{i\pi/4}\ket{1}_{1}}$, the second control qubit becomes $\displaystyle{SXT^{\dagger}XT^{\dagger}\ket{0}_{2}=e^{i\pi/4}\ket{0}_{2}}$, and the target qubit becomes $\displaystyle{HTXT^{\dagger}TXT^{\dagger}H\ket{\psi}=\ket{\psi}}$. so the whole state remains unchanged.
+4. the control qubits are $\displaystyle{\ket{11}_{12}}$. after the action of all gates, the first control qubit becomes $\displaystyle{T\ket{1}_{1}=e^{i\pi/4}\ket{1}_{1}}$, the second control qubit becomes $\displaystyle{T^{\dagger}XT^{\dagger}XS\ket{1}_{2}=e^{i\pi/4}\ket{1}_{2}}$, and the target qubit becomes $\displaystyle{HTXT^{\dagger}XTXT^{\dagger}XH\ket{\psi}=-iX\ket{\psi}}$. so NOT gate is applied to the target qubit, up to a global phase.
+
+as a result, the whole circuit acts the same as Toffoli gate, up to a global phase.
 
 ## exercise 4.27
 
@@ -264,7 +255,7 @@ $$\begin{align}
 \end{pmatrix}
 \end{align}$$
 
-*sol*.
+*sol*. 
 
 ## exercise 4.31
 
@@ -281,14 +272,228 @@ R_{z,1}(\theta)C & =CR_{z,1}(\theta) \\
 R_{x,2}(\theta)C & =CR_{x,2}(\theta)
 \end{align}$$
 
+*sol*.
+
+$$\begin{align}
+CX_{1}C=\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0
+\end{pmatrix}\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}=\begin{pmatrix}
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0 \\
+0 & 1 & 0 & 0 \\
+1 & 0 & 0 & 0
+\end{pmatrix}=X_{1}X_{2}
+\end{align}$$
+$$\begin{align}
+CY_{1}C & =\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}
+0 & 0 & -i & 0 \\
+0 & 0 & 0 & -i \\
+i & 0 & 0 & 0 \\
+0 & i & 0 & 0
+\end{pmatrix}\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}=\begin{pmatrix}
+0 & 0 & 0 & -i \\
+0 & 0 & -i & 0 \\
+0 & i & 0 & 0 \\
+i & 0 & 0 & 0
+\end{pmatrix}=Y_{1}X_{2}
+\end{align}$$
+$$\begin{align}
+CZ_{1}C & =\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & -1 & 0 \\
+0 & 0 & 0 & -1
+\end{pmatrix}\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}=\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & -1 & 0 \\
+0 & 0 & 0 & -1
+\end{pmatrix}=Z_{1}
+\end{align}$$
+$$\begin{align}
+CX_{2}C & =\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}
+0 & 1 & 0 & 0 \\
+1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}=\begin{pmatrix}
+0 & 1 & 0 & 0 \\
+1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}=X_{2}
+\end{align}$$
+$$\begin{align}
+CY_{2}C & =\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}
+0 & -i & 0 & 0 \\
+i & 0 & 0 & 0 \\
+0 & 0 & 0 & -i \\
+0 & 0 & i & 0
+\end{pmatrix}\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}=\begin{pmatrix}
+0 & -i & 0 & 0 \\
+i & 0 & 0 & 0 \\
+0 & 0 & 0 & i \\
+0 & 0 & -i & 0
+\end{pmatrix}=Z_{1}Y_{2}
+\end{align}$$
+$$\begin{align}
+CZ_{2}C & =\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & -1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & -1
+\end{pmatrix}\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}=\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & -1 & 0 & 0 \\
+0 & 0 & -1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}=Z_{1}Z_{2}
+\end{align}$$
+$$\begin{align}
+R_{z}(\theta) & =\begin{pmatrix}
+e^{-i\theta/2} & 0 \\
+0 & e^{i\theta/2}
+\end{pmatrix} \\
+R_{z,1}(\theta)C & =\begin{pmatrix}
+e^{-i\theta/2} & 0 & 0 & 0 \\
+0 & e^{-i\theta/2} & 0 & 0 \\
+0 & 0 & e^{i\theta/2} & 0 \\
+0 & 0 & 0 & e^{i\theta/2}
+\end{pmatrix}\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix} = \begin{pmatrix}
+e^{-i\theta/2} & 0 & 0 & 0 \\
+0 & e^{-i\theta/2} & 0 & 0 \\
+0 & 0 & 0 & e^{i\theta/2} \\
+0 & 0 & e^{i\theta/2} & 0
+\end{pmatrix} \\
+ & =
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}
+e^{-i\theta/2} & 0 & 0 & 0 \\
+0 & e^{-i\theta/2} & 0 & 0 \\
+0 & 0 & e^{i\theta/2} & 0 \\
+0 & 0 & 0 & e^{i\theta/2}
+\end{pmatrix}=CR_{z,1}(\theta)
+\end{align}$$
+$$\begin{align}
+R_{x}(\theta) & =\begin{pmatrix}
+\cos \frac{\theta}{2} & -i\sin \frac{\theta}{2} \\
+-i\sin \frac{\theta}{2} & \cos \frac{\theta}{2}
+\end{pmatrix} \\
+R_{x,2}(\theta)C & =\begin{pmatrix}
+\cos \frac{\theta}{2} & -i\sin \frac{\theta}{2} & 0 & 0 \\
+ -i\sin \frac{\theta}{2} & \cos \frac{\theta}{2} & 0 & 0 \\
+0 & 0 & \cos \frac{\theta}{2} & -i\sin \frac{\theta}{2} \\
+0 & 0 & -i\sin \frac{\theta}{2} & \cos \frac{\theta}{2}
+\end{pmatrix}\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}=\begin{pmatrix}
+\cos \frac{\theta}{2} & -i\sin \frac{\theta}{2} & 0 & 0 \\
+ -i\sin \frac{\theta}{2} & \cos \frac{\theta}{2} & 0 & 0 \\
+0 & 0 & -i\sin \frac{\theta}{2} & \cos \frac{\theta}{2} \\
+0 & 0 & \cos \frac{\theta}{2} & -i\sin \frac{\theta}{2}
+\end{pmatrix} \\
+ & =\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}
+\cos \frac{\theta}{2} & -i\sin \frac{\theta}{2} & 0 & 0 \\
+ -i\sin \frac{\theta}{2} & \cos \frac{\theta}{2} & 0 & 0 \\
+0 & 0 & \cos \frac{\theta}{2} & -i\sin \frac{\theta}{2} \\
+0 & 0 & -i\sin \frac{\theta}{2} & \cos \frac{\theta}{2}
+\end{pmatrix}=CR_{x,2}(\theta)
+\end{align}$$
+
 # problem 3
 
-## 
+## subproblem 1
 
 check that the above circuit is equivalent to the quantum teleportation circuit
 
 ![image](http://100.94.165.49:8080/i/f8fff617-7f8a-48f8-b7f4-2caca2b54b13.jpg)
 
+*sol*.
+
+
 ## exercise 4.34
 
-suppose we have a single qubit operator $\displaystyle{U}$ with eigenvalues $\displaystyle{\pm1}$, so that $\displaystyle{U}$ is both Hermitian and unitary. 
+suppose we have a single qubit operator $\displaystyle{U}$ with eigenvalues $\displaystyle{\pm1}$, so that $\displaystyle{U}$ is both Hermitian and unitary, so it can be regarded as an observable and a quantum gate. suppose we wish to measuer the observable $\displaystyle{U}$. that is, we derise to obtain a measurement result indicating one of the two eigenvalues, and leaving a pose-measurement state which is the corresponding eigenvector. how can this be implemented by a quantum circuit? show that the following circuit implements a measurement of $\displaystyle{U}$:
+
+![image](http://100.94.165.49:8080/i/0580b621-ad91-47c1-b9d5-b6ca9f4ac512.jpg)
+
