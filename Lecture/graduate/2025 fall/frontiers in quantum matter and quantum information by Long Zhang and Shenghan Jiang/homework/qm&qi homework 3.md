@@ -234,7 +234,7 @@ suppose the target qubit is $\displaystyle{\ket{\psi}=a\ket{0}_{3}+b\ket{0}_{3}}
 1. the control qubits are $\displaystyle{\ket{00}_{12}}$. after the action of all gates, the first control qubit becomes $\displaystyle{T\ket{0}_{1}=\ket{0}_{1}}$, the second control qubit becomes $\displaystyle{ST^{\dagger}T^{\dagger}\ket{0}_{2}=\ket{0}_{2}}$, and the target qubit becomes $\displaystyle{HTT^{\dagger}TT^{\dagger}H\ket{\psi}=H^{2}\ket{\psi}=\ket{\psi}}$. so the whole state remains unchanged.
 2. the control qubits are $\displaystyle{\ket{01}_{12}}$. after the action of all gates, the first control qubit becomes $\displaystyle{T\ket{0}_{1}=\ket{0}_{1}}$, the second control qubit becomes $\displaystyle{ST^{\dagger}T^{\dagger}\ket{1}_{2}=\ket{1}_{2}}$, and the target qubit becomes $\displaystyle{HTT^{\dagger}XTT^{\dagger}XH\ket{\psi}=\ket{\psi}}$. so the whole state remains unchanged.
 3. the control qubits are $\displaystyle{\ket{10}_{12}}$. after the action of all gates, the first control qubit becomes $\displaystyle{T\ket{1}_{1}=e^{i\pi/4}\ket{1}_{1}}$, the second control qubit becomes $\displaystyle{SXT^{\dagger}XT^{\dagger}\ket{0}_{2}=e^{i\pi/4}\ket{0}_{2}}$, and the target qubit becomes $\displaystyle{HTXT^{\dagger}TXT^{\dagger}H\ket{\psi}=\ket{\psi}}$. so the whole state remains unchanged.
-4. the control qubits are $\displaystyle{\ket{11}_{12}}$. after the action of all gates, the first control qubit becomes $\displaystyle{T\ket{1}_{1}=e^{i\pi/4}\ket{1}_{1}}$, the second control qubit becomes $\displaystyle{T^{\dagger}XT^{\dagger}XS\ket{1}_{2}=e^{i\pi/4}\ket{1}_{2}}$, and the target qubit becomes $\displaystyle{HTXT^{\dagger}XTXT^{\dagger}XH\ket{\psi}=-iX\ket{\psi}}$. so NOT gate is applied to the target qubit, up to a global phase.
+4. the control qubits are $\displaystyle{\ket{11}_{12}}$. after the action of all gates, the first control qubit becomes $\displaystyle{T\ket{1}_{1}=e^{i\pi/4}\ket{1}_{1}}$, the second control qubit becomes $\displaystyle{SXT^{\dagger}XT^{\dagger}\ket{1}_{2}=e^{i\pi/4}\ket{1}_{2}}$, and the target qubit becomes $\displaystyle{HTXT^{\dagger}XTXT^{\dagger}XH\ket{\psi}=-iX\ket{\psi}}$. so NOT gate is applied to the target qubit, up to a global phase.
 
 as a result, the whole circuit acts the same as Toffoli gate, up to a global phase.
 
@@ -255,7 +255,26 @@ $$\begin{align}
 \end{pmatrix}
 \end{align}$$
 
-*sol*. 
+*sol*. the action of the circuit is a permutation on the basis states:
+
+$$\begin{align}
+\ket{001} \to \ket{010}\to \ket{011} \to \ket{100} \to \ket{101} \to \ket{110} \to \ket{111} \to \ket{001}
+\end{align}$$
+
+and remains $\displaystyle{\ket{000}}$ unchanged. 
+
+![image](http://100.94.165.49:8080/i/e9a88600-3ba0-4e24-ae76-f2b3fa8db31c.jpg)
+
+the circuit above implements the desired transformation. and we will show it
+1. $\displaystyle{\ket{000}\to \ket{000}\to \ket{000}\to \ket{000}\to \ket{000}\to \ket{000}}$
+2. $\displaystyle{\ket{001}\to \ket{001}\to \ket{011}\to \ket{011}\to \ket{010}\to \ket{010}}$
+3. $\displaystyle{\ket{010}\to \ket{010}\to \ket{010}\to \ket{010}\to \ket{011}\to \ket{011}}$
+4. $\displaystyle{\ket{011}\to \ket{111}\to \ket{101}\to \ket{100}\to \ket{100}\to \ket{100}}$
+5. $\displaystyle{\ket{100}\to \ket{100}\to \ket{100}\to \ket{101}\to \ket{101}\to \ket{101}}$
+6. $\displaystyle{\ket{101}\to \ket{101}\to \ket{111}\to \ket{110}\to \ket{111}\to \ket{110}}$
+7. $\displaystyle{\ket{110}\to \ket{110}\to \ket{110}\to \ket{111}\to \ket{110}\to \ket{111}}$
+8. $\displaystyle{\ket{111}\to \ket{011}\to \ket{001}\to \ket{001}\to \ket{001}\to \ket{001}}$
+as required.
 
 ## exercise 4.31
 
@@ -484,12 +503,11 @@ R_{x,2}(\theta)C & =\begin{pmatrix}
 
 ## subproblem 1
 
-check that the above circuit is equivalent to the quantum teleportation circuit
+check that the below circuit is equivalent to the quantum teleportation circuit
 
 ![image](http://100.94.165.49:8080/i/f8fff617-7f8a-48f8-b7f4-2caca2b54b13.jpg)
 
-*sol*.
-
+*sol*. the quantum operation gates $\displaystyle{CNOT_{23}}$ and $\displaystyle{CZ_{13}}$ actually play the same role as the Bell state measurement in the quantum teleportation circuit (i.e., if the measurement result is $\displaystyle{m_{1}m_{2}}$, then the post-measurement state of qubit 3 is $\displaystyle{X^{m_{2}}Z^{m_{1}}\ket{\psi}}$). hence the two circuits are equivalent.
 
 ## exercise 4.34
 
@@ -497,3 +515,18 @@ suppose we have a single qubit operator $\displaystyle{U}$ with eigenvalues $\di
 
 ![image](http://100.94.165.49:8080/i/0580b621-ad91-47c1-b9d5-b6ca9f4ac512.jpg)
 
+*sol*. suppose the target qubit $\displaystyle{\ket{\psi _{\mathrm{in}}}=a\ket{0}_{2}+b\ket{1}_{2}}$. after acting all the gates, the whole state becomes
+
+$$\begin{align}
+\ket{0}_{1} & \to H^{2}\ket{0} _{1}=\ket{0} \\
+\ket{\psi _{\mathrm{in}}} & \to \frac{1+U}{2}\ket{\psi _{\mathrm{in}}}
+\end{align}$$
+
+and
+
+$$\begin{align}
+\ket{1} _{1} & \to H^{2}\ket{1} _{1}=\ket{1}_{1} \\
+\ket{\psi _{\mathrm{in}}} & \to \frac{1-U}{2}\ket{\psi _{\mathrm{in}}} 
+\end{align}$$
+
+then $\displaystyle{\ket{\psi _{\mathrm{out}}}}$ is an eigenvector of $\displaystyle{U}$ with eigenvalue $\displaystyle{+1}$ if the measurement result is $\displaystyle{0}$, and an eigenvector of $\displaystyle{U}$ with eigenvalue $\displaystyle{-1}$ if the measurement result is $\displaystyle{1}$. as a result, the circuit implements a measurement of $\displaystyle{U}$.
