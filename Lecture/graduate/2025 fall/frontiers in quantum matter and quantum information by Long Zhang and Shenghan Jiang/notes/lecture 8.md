@@ -19,7 +19,7 @@ $$\begin{align}
 
 loop condensation...
 
-see [[Reading/symmetry and topology/topology/the toric code and homology|the toric code and homology]] for more info. we can see that there are two types of excitation states, which are string excitations but energy is carried by endpoints. we call fractional excitation. and excitation are anyons, which means, if an $\displaystyle{m}$ charge (which live on plaquette) turn around an $\displaystyle{e}$ charge (which live on site), we will got a phase of $\displaystyle{\pi}$. more specifically, consider a $\displaystyle{e}$ charge live on site $\displaystyle{o}$, the excitation state $\displaystyle{\ket{\Psi_{e}}}$ satisfies
+see [[Note/Reading/symmetry and topology/topology/the toric code and homology|the toric code and homology]] for more info. we can see that there are two types of excitation states, which are string excitations but energy is carried by endpoints. we call fractional excitation. and excitation are anyons, which means, if an $\displaystyle{m}$ charge (which live on plaquette) turn around an $\displaystyle{e}$ charge (which live on site), we will got a phase of $\displaystyle{\pi}$. more specifically, consider a $\displaystyle{e}$ charge live on site $\displaystyle{o}$, the excitation state $\displaystyle{\ket{\Psi_{e}}}$ satisfies
 
 $$\begin{align}
 A_{o}\ket{\Psi_{e}} & =-\ket{\Psi_{e}} 
