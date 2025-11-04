@@ -36397,6 +36397,11 @@
             "timeKey": "23:25",
             "w": 29,
             "c": 209
+          },
+          {
+            "timeKey": "23:55",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 1260
@@ -36408,6 +36413,274 @@
         "charCountStart": 36447,
         "changes": [],
         "id": 1261
+      },
+      {
+        "date": "2025-11-04",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 2576,
+        "charCountStart": 12473,
+        "changes": [
+          {
+            "timeKey": "10:00",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "10:05",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "11:15",
+            "w": 30,
+            "c": 213
+          },
+          {
+            "timeKey": "11:20",
+            "w": 140,
+            "c": 797
+          },
+          {
+            "timeKey": "11:25",
+            "w": 37,
+            "c": 247
+          },
+          {
+            "timeKey": "11:30",
+            "w": 63,
+            "c": 374
+          },
+          {
+            "timeKey": "11:35",
+            "w": 61,
+            "c": 318
+          },
+          {
+            "timeKey": "11:40",
+            "w": 118,
+            "c": 574
+          },
+          {
+            "timeKey": "11:45",
+            "w": 271,
+            "c": 1154
+          },
+          {
+            "timeKey": "11:50",
+            "w": 284,
+            "c": 1159
+          },
+          {
+            "timeKey": "11:55",
+            "w": -220,
+            "c": -908
+          },
+          {
+            "timeKey": "12:00",
+            "w": 109,
+            "c": 509
+          },
+          {
+            "timeKey": "12:05",
+            "w": 47,
+            "c": 239
+          },
+          {
+            "timeKey": "12:10",
+            "w": 38,
+            "c": 111
+          },
+          {
+            "timeKey": "12:15",
+            "w": 7,
+            "c": 49
+          },
+          {
+            "timeKey": "12:20",
+            "w": -7,
+            "c": -48
+          },
+          {
+            "timeKey": "12:25",
+            "w": 59,
+            "c": 281
+          },
+          {
+            "timeKey": "12:30",
+            "w": -34,
+            "c": -109
+          },
+          {
+            "timeKey": "12:35",
+            "w": 140,
+            "c": 658
+          },
+          {
+            "timeKey": "14:15",
+            "w": 172,
+            "c": 702
+          },
+          {
+            "timeKey": "14:20",
+            "w": 97,
+            "c": 472
+          },
+          {
+            "timeKey": "14:25",
+            "w": 133,
+            "c": 569
+          },
+          {
+            "timeKey": "14:30",
+            "w": 4,
+            "c": 16
+          },
+          {
+            "timeKey": "14:35",
+            "w": -73,
+            "c": -344
+          },
+          {
+            "timeKey": "14:40",
+            "w": 11,
+            "c": 29
+          },
+          {
+            "timeKey": "14:45",
+            "w": 151,
+            "c": 654
+          },
+          {
+            "timeKey": "14:50",
+            "w": 14,
+            "c": 51
+          },
+          {
+            "timeKey": "14:55",
+            "w": -64,
+            "c": -275
+          },
+          {
+            "timeKey": "15:00",
+            "w": 156,
+            "c": 622
+          },
+          {
+            "timeKey": "15:05",
+            "w": 52,
+            "c": 210
+          },
+          {
+            "timeKey": "15:15",
+            "w": -104,
+            "c": -396
+          },
+          {
+            "timeKey": "15:25",
+            "w": 33,
+            "c": 131
+          },
+          {
+            "timeKey": "15:30",
+            "w": 7,
+            "c": 58
+          },
+          {
+            "timeKey": "15:40",
+            "w": 26,
+            "c": 167
+          },
+          {
+            "timeKey": "15:45",
+            "w": 5,
+            "c": 13
+          },
+          {
+            "timeKey": "15:50",
+            "w": 1,
+            "c": 1
+          }
+        ],
+        "id": 1262
+      },
+      {
+        "date": "2025-11-04",
+        "filePath": "Note/Reading/black hole thermodynamics/the gravitational path integral.md",
+        "wordCountStart": 5,
+        "charCountStart": 43,
+        "changes": [],
+        "id": 1263
+      },
+      {
+        "date": "2025-11-04",
+        "filePath": "Note/Reading/black hole thermodynamics/the laws of black hole thermodynamics.md",
+        "wordCountStart": 1305,
+        "charCountStart": 6971,
+        "changes": [],
+        "id": 1264
+      },
+      {
+        "date": "2025-11-04",
+        "filePath": "Note/Physics/wait-to-be-complete/Heat kernel method.md",
+        "wordCountStart": 65,
+        "charCountStart": 1448,
+        "changes": [],
+        "id": 1265
+      },
+      {
+        "date": "2025-11-04",
+        "filePath": "Note/Reading/p-form gauge field and edge mode.md",
+        "wordCountStart": 1276,
+        "charCountStart": 7272,
+        "changes": [],
+        "id": 1266
+      },
+      {
+        "date": "2025-11-04",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 11.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:10",
+            "w": 7,
+            "c": 66
+          },
+          {
+            "timeKey": "15:15",
+            "w": 21,
+            "c": 197
+          },
+          {
+            "timeKey": "15:20",
+            "w": 0,
+            "c": 5
+          },
+          {
+            "timeKey": "15:35",
+            "w": 52,
+            "c": 386
+          },
+          {
+            "timeKey": "15:45",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "15:55",
+            "w": 77,
+            "c": 498
+          }
+        ],
+        "id": 1267
+      },
+      {
+        "date": "2025-11-04",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 7538,
+        "charCountStart": 36447,
+        "changes": [],
+        "id": 1268
       }
     ],
     "daysWithCompletedGoal": [
@@ -36508,7 +36781,8 @@
       "2025-10-31",
       "2025-11-01",
       "2025-11-02",
-      "2025-11-03"
+      "2025-11-03",
+      "2025-11-04"
     ]
   }
 }
