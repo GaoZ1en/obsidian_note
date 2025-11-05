@@ -78,8 +78,6 @@ X_{\xi}\cdot \omega[\delta \phi _{1},\delta \phi _{2}] & = \omega[\mathcal{L}_{\
  & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\mathcal{L}_{\xi}\phi _{1} \delta \phi _{2}-\nabla _{\mu}\delta \phi _{2} \mathcal{L}_{\xi}\phi _{1} )
 \end{align}$$
 
-I think that's it. 
-
 ---
 
 the Noether theorem states that

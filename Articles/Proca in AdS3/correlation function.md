@@ -4,6 +4,8 @@ $$\begin{align}
 S & =-\frac{1}{2}\int \mathrm{d}^{3}x\sqrt{ -g }\left(\nabla _{\mu}\phi \nabla ^{\mu}\phi+\mu ^{2}\phi ^{2}\right)
 \end{align}$$
 
+the positive frequency mode solution is
+
 $$\begin{align}
 \phi ^{(+)} _{nm} & =C_{nm}e^{-i\omega _{nm} t}e^{im\phi}r^{|m|}(1+r^{2})^{-(\Delta+|m|)/2}P^{(\Delta-1,|m|)}_{n}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 \omega _{nm} & =\Delta+|m|+2n \\
