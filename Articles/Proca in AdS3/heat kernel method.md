@@ -3,34 +3,35 @@
 the partition function
 
 $$\begin{align}
-Z & =\int \mathcal{D}\phi e^{-g^{-2}S[\phi]} \\
+Z & =\int \mathcal{D}\phi e^{-S[\phi]} \\
 S[\phi] & =\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }\phi \Delta \phi
 \end{align}$$
 
-at 1-loop, one has
+at 1-loop, we have
 
-$$\begin{align}
-S^{(1)} & =-\frac{1}{2}\ln \det(\Delta)=-\frac{1}{2}\sum _{n}\ln \lambda _{n}
+$$\begin{align} \\
+Z & =\left( \det(\Delta) \right)^{-1/2} \\
+\implies \ln Z^{(1)} & =-\frac{1}{2}\ln \det(\Delta)=-\frac{1}{2}\sum _{n}\ln \lambda _{n}
 \end{align}$$
 
-where $\displaystyle{\lambda _{n}}$ are the eigenvalues of the Laplacian operator $\displaystyle{\Delta}$. the heat kernel $\displaystyle{K(t,x,y)}$ is a function of two points $\displaystyle{x}$ and $\displaystyle{y}$ on $\displaystyle{\mathcal{M}}$, defined as
-
-$$\begin{align}
-K(t,x,y) & =\sum _{n}e^{-\lambda _{n}t}\psi _{n}(x)\psi _{n}^{*}(y)
-\end{align}$$
-
-where $\displaystyle{\psi _{n}(x)}$ are the eigenfunctions of $\displaystyle{\Delta}$ satisfying
+where $\displaystyle{\lambda _{n}}$ are the eigenvalues of the Laplacian operator $\displaystyle{\Delta}$ with eigenfunctions $\displaystyle{\psi _{n}(x)}$, which satisfy
 
 $$\begin{align}
 \sum _{n}\psi _{n}(x)\psi _{n}^{*}(y) & =\delta ^{d}(x-y) \\
 \int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }\psi _{n}(x)\psi _{m}^{*}(x) & =\delta _{nm}
 \end{align}$$
 
+the heat kernel $\displaystyle{K(t,x,y)}$ is a function of two points $\displaystyle{x}$ and $\displaystyle{y}$ on $\displaystyle{\mathcal{M}}$, defined on $\displaystyle{\mathbb{R}\times \mathcal{M}}$ and given by
+
+$$\begin{align}
+K(t,x,y) & =\sum _{n}e^{-\lambda _{n}t}\psi _{n}(x)\psi _{n}^{*}(y)
+\end{align}$$
+
 the trace of the heat kernel is given by
 
 $$\begin{align}
 \int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }K(t,x,x) & =\sum _{n}e^{-\lambda _{n}t} \\
-\implies S^{(1)} & =-\frac{1}{2}\sum _{n}\ln \lambda _{n} \\
+\implies \ln Z^{(1)} & =-\frac{1}{2}\sum _{n}\ln \lambda _{n} \\
  & =\frac{1}{2}\int ^{\infty}_{0^{+}} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }K(t,x,x)
 \end{align}$$
 
@@ -71,7 +72,8 @@ S & =\frac{1}{2}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }\left( g^{\mu \nu}\p
 the heat kernel satisfies
 
 $$\begin{align}
-(\nabla _{x}^{2}-\mu ^{2} )K(t,x,x') & =\delta ^{3}(x-x') \\
+(\Delta _{x}-\mu ^{2} )K(t,x,x') & =\partial _{t}K(t,x,x') \\
+K(0,x,x') & =\delta(x-x') \\
 \delta ^{3}(x-x') & = \frac{1}{\sqrt{ g(x) }}\delta(y-y')\delta ^{2}(z-z')
 \end{align}$$
 
@@ -99,7 +101,7 @@ K^{\mathbb{H}_{3}}(t,r) & =\frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}}\frac{r}{\si
 for $\displaystyle{\mathbb{H}^{n}}$, the heat kernel is given by
 
 $$\begin{align}
-K^{\mathbb{H}_{n}}(t,r) & =e^{-(\mu ^{2}+\rho ^{2})t}\left(-\frac{1}{2\pi \sinh r} \frac{\partial}{\partial r}\right)^{\rho}\left(\frac{e^{-r^{2}/4t}}{(4\pi t)^{1/2}}\right)
+\boxed{K^{\mathbb{H}_{n}}(t,r)=e^{-(\mu ^{2}+\rho ^{2})t}\left(-\frac{1}{2\pi \sinh r} \frac{\partial}{\partial r}\right)^{\rho}\left(\frac{e^{-r^{2}/4t}}{(4\pi t)^{1/2}}\right)}
 \end{align}$$
 
 where $\displaystyle{\rho=\frac{n-1}{2}}$. this can be derived as follows. define
@@ -134,7 +136,7 @@ $$\begin{align}
 \widetilde{K}_{2m+1}(t,r) & =\left(-\frac{1}{2\pi \sinh r}\partial _{r}\right)^{m}\left(\frac{e^{-r^{2}/(4t)}}{(4\pi t)^{1/2}}\right)
 \end{align}$$
 
-and restoring the spectral shift factor $\displaystyle{K_{n}(t,r)=e^{-\rho ^{2}t}\widetilde{K}_{n}(t,r)}$ (corresponding to going back to the unshifted heat equation), we obtain the boxed formula above. the normalization $\displaystyle{1/(2\pi)}$ can be fixed by the volume element and the $\displaystyle{\delta}$ initial condition as $\displaystyle{t\to 0^{+}}$.
+and restoring the spectral shift factor $\displaystyle{K_{n}(t,r)=e^{-(\mu ^{2}+\rho ^{2})t}\widetilde{K}_{n}(t,r)}$ (corresponding to going back to the unshifted heat equation), we obtain the boxed formula above. the normalization $\displaystyle{1/(2\pi)}$ can be fixed by the volume element and the $\displaystyle{\delta}$ initial condition as $\displaystyle{t\to 0^{+}}$.
 
 ---
 
@@ -143,7 +145,13 @@ $$\begin{align}
 Z & =\frac{1}{2}\int ^{\infty}_{0^{+}} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }K(t,x,x) \\
  & =\frac{1}{2}\mathrm{Vol}(\mathbb{H}_{3})\int ^{\infty}_{0} \frac{\mathrm{d}t}{t} \frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}} \\
  & =\frac{1}{2}\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{(4\pi)^{3/2}} \Gamma\left(-\frac{3}{2}\right)(\mu ^{2}+1)^{3/2} \\
- & =-\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{12\pi}(\mu ^{2}+1)^{3/2}
+ & =\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{12\pi}(\mu ^{2}+1)^{3/2}
+\end{align}$$
+
+here we use
+
+$$\begin{align}
+\int ^{\infty}_{0} \mathrm{d}t t^{\nu-1}e^{-st} & =\frac{\Gamma(\nu)}{s^{\nu}}
 \end{align}$$
 
 # Proca field in $\displaystyle{\mathbb{H}_{3}}$
@@ -306,14 +314,15 @@ $$\begin{align}
 the general solution to these equations with the given boundary conditions is
 
 $$\begin{align}
-F(t,u) & =-\frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}} \frac{r}{\sinh r} \\
-S(t,u) & =\frac{4}{(4\pi)^{3/2}} \frac{e^{-r^{2}/4t}}{\sinh r}\sqrt{ t }\int ^{1}_{0}\mathrm{d}\xi e^{-t(1-\xi)^{2}}\sinh r\xi
+F(t,u) & =-\frac{e^{-\mu ^{2}t}}{(4\pi t)^{3/2}} \frac{r}{\sinh r} e^{-\frac{r^{2}}{4t}}\\
+S(t,u) & =\frac{4e^{-\mu ^{2}t}}{(4\pi)^{3/2}} \frac{e^{-r^{2}/4t}}{\sinh r}\sqrt{ t }\int ^{1}_{0}\mathrm{d}\xi e^{-t(1-\xi)^{2}}\sinh r\xi
 \end{align}$$
 
 then the trace of the heat kernel is given by
 
 $$\begin{align}
-\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }g^{\mu \nu'}K_{\mu \nu'}(t,x,x) & =\mathrm{Vol}(\mathbb{H}_{3}) e^{-\mu ^{2}t} \frac{e^{-t}+2+4t}{(4\pi t)^{3/2}}
+\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }g^{\mu \nu'}K_{\mu \nu'}(t,x,x) & = -3\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }(F+\partial _{u}S)|_{u=0}\\
+ & =\mathrm{Vol}(\mathbb{H}_{3}) e^{-\mu ^{2}t} \frac{e^{-t}+2+4t}{(4\pi t)^{3/2}}
 \end{align}$$
 
 thus the partition function at 1-loop is
@@ -327,7 +336,7 @@ Z & =\frac{1}{2}\int ^{\infty}_{0^{+}} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\
 we should substract the non-physical longitudinal mode contribution, which gives
 
 $$\begin{align}
-Z_{\bot} & =\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{6\pi}(2\mu ^{3}-3\mu)
+Z_{\bot} & =\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{3\pi}(\mu ^{3}-3\mu)
 \end{align}$$
 
 # general discussion of $\displaystyle{\mathbb{H}_{3}/\mathbb{Z}}$
@@ -336,13 +345,13 @@ Z_{\bot} & =\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{6\pi}(2\mu ^{3}-3\mu)
 now we consider the thermal AdS3, i.e., the $\displaystyle{\mathbb{H}_{3}/\mathbb{Z}}$. now we periodically identify
 
 $$\begin{align}
-(t,\phi)\sim (t+\beta,\phi+\theta)
+(t,\phi)\sim (t+\beta,\phi+\vartheta)
 \end{align}$$
 
-where $\displaystyle{t}$ is the Euclidean time coordinate and $\displaystyle{\phi}$ an angular coordinate. $\displaystyle{\beta}$ and $\displaystyle{\theta}$ are the inverse temperature and angular potential respectively. to describe the geometry of $\displaystyle{\mathbb{H}_{3}/\mathbb{Z}}$ it is helpful to introduce a single complex quantity
+where $\displaystyle{t}$ is the Euclidean time coordinate and $\displaystyle{\phi}$ an angular coordinate. $\displaystyle{\beta}$ and $\displaystyle{\vartheta}$ are the inverse temperature and angular potential respectively. to describe the geometry of $\displaystyle{\mathbb{H}_{3}/\mathbb{Z}}$ it is helpful to introduce a single complex quantity (modular parameter)
 
 $$\begin{align}
-\tau=\frac{1}{2\pi}(\theta+i\beta)
+\tau=\frac{1}{2\pi}(\vartheta+i\beta)
 \end{align}$$
 
 in terms of the metric $\displaystyle{\mathrm{d}s^{2}=\frac{\mathrm{d}y^{2}+\mathrm{d}z\mathrm{d}\bar{z}}{y^{2}}}$ on $\displaystyle{\mathbb{H}_{3}}$, $\displaystyle{\mathbb{Z}}$ is generated by an element $\displaystyle{\gamma}$ of the isometry group $\displaystyle{\mathrm{SL}(2,\mathbb{C})}$ of $\displaystyle{\mathbb{H}_{3}}$
@@ -413,7 +422,7 @@ here we use the integral and series formula
 
 $$\begin{align}
 \int ^{\infty}_{0}\mathrm{d}t t^{-c}e^{-at-b/t} & =2\left(\frac{b}{a}\right)^{\frac{1-c}{2}}K_{c-1}(2\sqrt{ab}) \\
-\int ^{\infty}_{0} \mathrm{d}t t^{-3/2}e^{-at-b/t} & =\sqrt{\frac{\pi}{b}}e^{-2\sqrt{ab}}
+\text{(in particular for }c=\frac{3}{2}\text{)} \quad\int ^{\infty}_{0} \mathrm{d}t t^{-3/2}e^{-at-b/t} & =\sqrt{\frac{\pi}{b}}e^{-2\sqrt{ab}}
 \end{align}$$
 
 and then
