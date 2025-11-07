@@ -41,10 +41,9 @@ $$\begin{align}
 the eom becomes
 
 $$\begin{align}
-u''+\left( m^{2}-E^{2}-\frac{2EZ\alpha}{r}-\frac{\ell(\ell+1)+Z^{2}\alpha ^{2}}{r^{2}} \right)u(r) & =0
+u''+\left( E^{2}-m^{2}-\frac{2EZ\alpha}{r}-\frac{\ell(\ell+1)-Z^{2}\alpha ^{2}}{r^{2}} \right)u(r) & =0
 \end{align}$$
-
-when $\displaystyle{r\to \infty}$, we require the field $\displaystyle{\phi}$ converge, $\displaystyle{u\sim e^{-\beta r}}$, where $\displaystyle{\beta=\sqrt{ m^{2}-E^{2} }}$. when $\displaystyle{r\to 0}$, we require the field $\displaystyle{\phi}$ canonical, $\displaystyle{u\sim r^{\lambda+1}}$, where the effective angular quantum number $\displaystyle{\lambda=-\frac{1}{2}+\sqrt{ \left( \ell+\frac{1}{2} \right)^{2}-Z^{2}\alpha ^{2} }}$. let
+when $\displaystyle{r\to \infty}$, we require the field $\displaystyle{\phi}$ converge, $\displaystyle{u\sim e^{-\beta r}}$, where $\displaystyle{\beta=\sqrt{ \mu^{2}-E^{2} }}$. when $\displaystyle{r\to 0}$, we require the field $\displaystyle{\phi}$ canonical, $\displaystyle{u\sim r^{\lambda+1}}$, where the effective angular quantum number $\displaystyle{\lambda=-\frac{1}{2}+\sqrt{ \left( \ell+\frac{1}{2} \right)^{2}-Z^{2}\alpha ^{2} }}$. let
 
 $$\begin{align}
 u(r) & =r^{\lambda+1}e^{-\beta r}v(r) \\
@@ -65,16 +64,16 @@ a & =-n_{r},n_{r}\in \mathbb{N}
 \end{align}$$
 
 $$\begin{align}
-(n_{r}+\lambda+1)^{2}m^{2} & =E^{2}(Z^{2}\alpha ^{2}+(n_{r}+\lambda +1)^{2}) \\
-\implies E & =m \left( 1+\frac{Z^{2}\alpha ^{2}}{(n_{r}+\lambda+1)^{2}} \right)^{-1/2}
+(n_{r}+\lambda+1)^{2}\mu^{2} & =E^{2}(Z^{2}\alpha ^{2}+(n_{r}+\lambda +1)^{2}) \\
+\implies E & =\mu \left( 1+\frac{Z^{2}\alpha ^{2}}{(n_{r}+\lambda+1)^{2}} \right)^{-1/2}
 \end{align}$$
 
 and the whole solution is given by
 
 $$\begin{align}
 \phi _{n_{r}lm} & =C_{n_{r}lm}e^{-iE_{n_{r}\ell}t}r^{\lambda}e^{-\beta r}F(-n_{r},2(\lambda+1),2\beta r)Y_{\ell m}(\theta,\phi) \\
-E_{n_{r}\ell} & =m \left( 1+\frac{Z^{2}\alpha ^{2}}{(n_{r}+\lambda+1)^{2}} \right)^{-1/2} \\
-\beta _{n_{r}\ell} & =\frac{mZ\alpha}{\sqrt{ Z^{2}\alpha ^{2}+(n_{r}+\lambda+1)^{2} }} \\
+E_{n_{r}\ell} & =\mu \left( 1+\frac{Z^{2}\alpha ^{2}}{(n_{r}+\lambda+1)^{2}} \right)^{-1/2} \\
+\beta _{n_{r}\ell} & =\frac{\mu Z\alpha}{\sqrt{ Z^{2}\alpha ^{2}+(n_{r}+\lambda+1)^{2} }} \\
 \lambda & =-\frac{1}{2}+\sqrt{ \left( \ell+\frac{1}{2} \right)^{2}-Z^{2}\alpha ^{2} }
 \end{align}$$
 
@@ -124,11 +123,11 @@ $$\begin{align}
 \left[ b_{n_{r1}\ell_{1}m_{1}},b^{\dagger}_{n_{r2}\ell_{2}m_{2}} \right] & =\delta _{n_{r1}n_{r2}}\delta _{\ell_{1}\ell_{2}}\delta _{m_{1}m_{2}}
 \end{align}$$
 
-the vaccum state $\displaystyle{\ket{\Omega}}$ is defined by
+the vacuum state $\displaystyle{\ket{\Omega}}$ is defined by
 
 $$\begin{align}
-a_{n_{r}\ell m}\ket{\Omega}  & =\Omega \\
-b_{n_{r}\ell m}\ket{\Omega}  & =\Omega, \forall n_{r},\ell,m
+a_{n_{r}\ell m}\ket{\Omega}  & =0 \\
+b_{n_{r}\ell m}\ket{\Omega}  & =0, \forall n_{r},\ell,m
 \end{align}$$
 
 it should be noted that the vacuum defined here is different from the usual Minkowski vacuum due to the presence of background electric field. the excited states are constructed by acting the creation operators on the vacuum state. the Fock space is spanned by the basis states
@@ -154,7 +153,7 @@ $$\begin{align}
 then the equation for $\displaystyle{f(t)}$ gives
 
 $$\begin{align}
-\partial _{t}^{2}(t)+k _{\perp}^{2}+(k _{\parallel}+eEt)^{2}+m^{2} & =0
+\partial _{t}^{2} f(t)+k _{\perp}^{2}+(k _{\parallel}+eEt)^{2}+m^{2} & =0
 \end{align}$$
 
 define $\displaystyle{\tau=\sqrt{ \frac{eE}{2} }\left( t+\frac{k_{\parallel}}{eE} \right)}$, the equation becomes
@@ -200,4 +199,18 @@ $$\begin{align}
  & = i\int \mathrm{d}^{3}\vec{k}(\delta a^{\dagger}_{\vec{k}}\wedge \delta a_{\vec{k}}-\delta b^{\dagger}_{\vec{k}}\wedge \delta b_{\vec{k}})
 \end{align}$$
 
-Poisson brackets and quantization are similar as before. now we want to calculate the expectation of 
+Poisson brackets and quantization are similar as before. now we want to calculate the expectation of $\displaystyle{\tilde{a}_{\vec{k}}\tilde{a}_{\vec{k}}^{\dagger}}$ under the vacuum $\displaystyle{\ket{\Omega}}$, where $\displaystyle{\tilde{a}_{\vec{k}}}$ is the annihilation operator defined without the background electric field.
+
+$$\begin{align}
+\braket{ \Omega|\tilde{a}_{\vec{k}}\tilde{a}_{\vec{k}}^{\dagger}|\Omega } & =\exp\left(-\frac{\pi(k _{\perp}^{2}+m^{2})}{eE}\right)
+\end{align}$$
+
+and the production rate per unit volume is
+
+$$\begin{align}
+\frac{\mathrm{d}N}{\mathrm{d}t\mathrm{d}^{3}x} & =2\int \mathrm{d}^{3}\vec{k}\braket{ \Omega|\tilde{a}_{\vec{k}}\tilde{a}_{\vec{k}}^{\dagger}|\Omega }  \\
+ & =\frac{(eE)^{2}}{4\pi^{3}}\sum _{n=1}^{\infty}\frac{1}{n^{2}}\exp\left(-\frac{n\pi m^{2}}{eE}\right) \\
+ & =\frac{(eE)^{2}}{4\pi^{3}}\,\mathrm{Li}_{2}\!\left( \exp\left(-\frac{\pi m^{2}}{eE}\right) \right)
+\end{align}$$
+
+which is the well-known Schwinger effect. #TODO calculation check needed. 

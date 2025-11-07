@@ -73,7 +73,8 @@ $$\begin{align}
 \end{align}$$
 
 $$\tag{.}\begin{align}
-{f^{+}_{l,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+2)t}(1+r^{2})^{-(\mu+2)/2}\xi _{1}^{\mu}
+{f^{+}_{l,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+2)t}(1+r^{2})^{-(\mu+2)/2}\xi _{1}^{\mu} \\
+{f^{+}_{r,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+2)t}(1+r^{2})^{-(\mu+2)/2}\tilde{\xi}_{1}^{\mu}
 \end{align}$$
 
 ---

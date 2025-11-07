@@ -488,3 +488,5 @@ Z^{\text{1-loop}}_{\text{Proca}} & =\prod ^{\infty}_{\ell,\ell'=0}\frac{1}{(1-q^
 \end{align}$$
 
 here we substracted the $\displaystyle{\frac{|q|^{2nh}}{n|1-q^{n}|^{2}}}$ term corresponding to the non-physical longitudinal mode?
+
+I think this method can be simply generalized to thermal AdS/dS in higher dimensions, and BTZ black holes...?

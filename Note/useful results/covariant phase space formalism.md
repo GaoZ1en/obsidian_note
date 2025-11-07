@@ -70,6 +70,15 @@ H_{\varepsilon} & =X_{\varepsilon}\cdot \theta-\int _{\Sigma}\mathrm{d}^{3}x\sqr
 
 which is the Yang-Mills charge associated with gauge parameter $\displaystyle{\varepsilon ^{a}}$. to get results of Maxwell theory, we just set the structure constant $\displaystyle{f^{a}_{~bc}=0}$ and drop the Lie algebra indices. 
 
+then we consider the Poisson bracket between two gauge Noether charges
+
+$$\begin{align}
+\left\{H_{\varepsilon},H_{\eta}\right\} & =X_{\varepsilon}\cdot X_{\eta}\cdot \omega \\
+ & =H_{[\varepsilon,\eta]}
+\end{align}$$
+
+where $\displaystyle{[\varepsilon,\eta]_{a}=f_{abc}\varepsilon _{b}\eta _{c}}$. this is the Noether's second theorem for Yang-Mills theory.
+
 ### Chern-Simons
 
 the action of Chern-Simons theory in 3-dimension is given by
@@ -93,15 +102,14 @@ $$\begin{align}
 X_{\varepsilon} & =\int \mathrm{d}^{3}x(\mathrm{d}\varepsilon ^{a}+f^{a}_{~bc}A^{b}\varepsilon ^{c}) \frac{\delta}{\delta A^{a}}
 \end{align}$$
 
-act on the action, we have
+act on the symplectic form, we have
 
 $$\begin{align}
-X_{\varepsilon}\cdot\delta S & =\frac{k}{4\pi}\int _{M} \mathrm{Tr}\left((\mathrm{d}\varepsilon+[A,\varepsilon])\wedge \mathrm{d}A+A\wedge \mathrm{d}[A,\varepsilon]+2(\mathrm{d}\varepsilon+[A,\varepsilon])\wedge A\wedge A\right)
-\end{align}$$
-
-$$\begin{align}
-X_{\varepsilon}\cdot\delta S & =\frac{k}{4\pi}\int _{M} \mathrm{Tr}\left((\mathrm{d}\varepsilon+[A,\varepsilon])\wedge \mathrm{d}A+A\wedge \mathrm{d}[A,\varepsilon]+2(\mathrm{d}\varepsilon+[A,\varepsilon])\wedge A\wedge A\right) \\
- & =\frac{k}{4\pi}\int _{M}\mathrm{Tr}\left(\mathrm{d}(A\wedge(\mathrm{d}\varepsilon+[A,\varepsilon]))+2(\mathrm{d}\varepsilon+[A,\varepsilon])\wedge F\right)
+X_{\varepsilon}\cdot \omega & =\frac{k}{2\pi}\int _{\Sigma}\mathrm{Tr}((X_{\varepsilon}\cdot \delta A)\wedge \delta A) \\
+ & =\frac{k}{2\pi}\int _{\Sigma}\mathrm{Tr}(\mathrm{d}\varepsilon \wedge \delta A+[A,\varepsilon]\wedge \delta A) \\
+ & =-\delta \left(\frac{k}{2\pi}\int _{\partial \Sigma}\mathrm{Tr}(\varepsilon A)-\frac{k}{2\pi}\int _{\Sigma}\mathrm{Tr}(\varepsilon F)\right)=-\delta H_{\varepsilon} \\
+\implies H_{\varepsilon} & =\frac{k}{2\pi}\int _{\partial \Sigma}\mathrm{Tr}(\varepsilon A)-\frac{k}{2\pi}\int _{\Sigma}\mathrm{Tr}(\varepsilon F) \\
+ & \approx \frac{k}{2\pi}\int _{\partial \Sigma}\mathrm{Tr}(\varepsilon A)
 \end{align}$$
 
 
@@ -109,14 +117,9 @@ X_{\varepsilon}\cdot\delta S & =\frac{k}{4\pi}\int _{M} \mathrm{Tr}\left((\mathr
 
 ### general relativity with Gibbons-Hawking-York term
 
-
-
-
 # applications & generalization
 
 ## entropy
-
-
 
 ## quantization
 
@@ -126,7 +129,8 @@ X_{\varepsilon}\cdot\delta S & =\frac{k}{4\pi}\int _{M} \mathrm{Tr}\left((\mathr
 
 ## structure of phase space
 
+probably solved for second-class constraints.
+
 ## non-commutative geometry
 
 ## proof of Ryu-Takayanagi formula
-
