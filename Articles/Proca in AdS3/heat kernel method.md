@@ -142,7 +142,7 @@ and restoring the spectral shift factor $\displaystyle{K_{n}(t,r)=e^{-(\mu ^{2}+
 
 then the partition function at 1-loop is given by
 $$\begin{align}
-Z & =\frac{1}{2}\int ^{\infty}_{0^{+}} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }K(t,x,x) \\
+\ln Z & =\frac{1}{2}\int ^{\infty}_{0^{+}} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }K(t,x,x) \\
  & =\frac{1}{2}\mathrm{Vol}(\mathbb{H}_{3})\int ^{\infty}_{0} \frac{\mathrm{d}t}{t} \frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}} \\
  & =\frac{1}{2}\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{(4\pi)^{3/2}} \Gamma\left(-\frac{3}{2}\right)(\mu ^{2}+1)^{3/2} \\
  & =\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{12\pi}(\mu ^{2}+1)^{3/2}
