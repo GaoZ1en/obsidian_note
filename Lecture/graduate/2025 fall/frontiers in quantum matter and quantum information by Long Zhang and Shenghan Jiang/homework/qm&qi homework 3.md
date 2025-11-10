@@ -210,17 +210,26 @@ $$\begin{align}
 C^{1}(U) & =(I\otimes A) \cdot CNOT \cdot (I\otimes B) \cdot CNOT \cdot (I\otimes C)\cdot(I\otimes e^{i\alpha}I)
 \end{align}$$
 
-1. for $\displaystyle{U=R_{x}(\theta)=R_{z}\left( -\frac{\pi}{2} \right)R_{y}(\theta)R_{z}\left( \frac{\pi}{2} \right)}$, we have $\displaystyle{A=R_{z}(-\pi/2)R_{y}(\theta/2),B=R_{y}(\theta/2),C=R_{z}(\pi/2)}$, hence
+1. for $\displaystyle{U=R_{x}(\theta)=}$
 
-$$\begin{align}
-C^{1}(R_{x}(\theta)) & =(I\otimes R_{z}(-\pi/2)R_{y}(\theta/2)) \cdot CNOT \cdot (I\otimes R_{y}(-\theta/2)) \cdot CNOT \cdot (I\otimes R_{z}(\pi/2))
-\end{align}$$
 
-2. for $\displaystyle{U=R_{y}(\theta)}$, we have $\displaystyle{\alpha=0,A=R_{y}(\theta/2),B=R_{y}(-\theta/2),C=I}$, hence
+Useful conjugation identities: X R_z(φ) X = R_z(−φ), X R_y(φ) X = R_y(−φ).
 
-$$\begin{align}
-C^{1}(R_{y}(\theta)) & =(I\otimes R_{y}(\theta/2)) \cdot CNOT \cdot (I\otimes R_{y}(-\theta/2)) \cdot CNOT
-\end{align}$$
+1) U = R_x(θ).
+- Pick A = R_y(−π/2), B = R_z(−θ/2), C = R_y(π/2). Then ABC = I and
+	A X B X C = R_y(−π/2) [X R_z(−θ/2) X] R_y(π/2) = R_y(−π/2) R_z(θ) R_y(π/2) = R_x(θ).
+
+	Hence
+	C^1(R_x(θ)) = (I⊗R_y(−π/2)) · CNOT · (I⊗R_z(−θ/2)) · CNOT · (I⊗R_y(π/2)).
+
+2) U = R_y(θ).
+- Pick A = R_x(π/2), B = R_z(−θ/2), C = R_x(−π/2). Then ABC = I and
+	A X B X C = R_x(π/2) [X R_z(−θ/2) X] R_x(−π/2) = R_x(π/2) R_z(θ) R_x(−π/2) = R_y(θ).
+
+	Hence
+	C^1(R_y(θ)) = (I⊗R_x(π/2)) · CNOT · (I⊗R_z(−θ/2)) · CNOT · (I⊗R_x(−π/2)).
+
+About reducing “three single-qubit gates” to two: In general, two CNOTs plus only two single-qubit gates are insufficient for a nontrivial controlled-U. If we restrict to the form (I⊗A)·CNOT·(I⊗B)·CNOT, then to act trivially when the control is 0 we must have AB = I, which implies the action for control = 1 is A X B X = A X A^{−1} X. This cannot equal a nontrivial rotation about a fixed axis (such as R_x(θ) or R_y(θ) with generic θ) unless A commutes with X, in which case the overall unitary is trivial. Therefore, for U = R_x(θ) and U = R_y(θ), the above two-CNOT construction with three single-qubit gates (all on the target, as given) is minimal in this family; you cannot, in general, reduce it to two single-qubit gates.
 
 ## exercise 4.24
 
@@ -228,15 +237,16 @@ verify that the Toffoli gate can be constructed as follows:
 
 ![image](http://100.94.165.49:8080/i/ba3e11f4-9967-4122-b31e-88c6f0cf21b1.jpg)
 
+that is
+
+$$\begin{align}
+C^{2}NOT & =(I\otimes I\otimes H)CNOT_{23}(I\otimes I\otimes T^{\dagger})CNOT_{13}(I\otimes I\otimes T)CNOT_{23}(I\otimes I\otimes T^{\dagger}) \\
+ & \times CNOT_{13}(I\otimes I\otimes (TH))(I\otimes T^{\dagger}\otimes I)CNOT_{12}(I\otimes T^{\dagger}\otimes I)CNOT_{12}(T\otimes I\otimes I)(I\otimes S\otimes I)
+\end{align}$$
+
 *sol*.
 
-suppose the target qubit is $\displaystyle{\ket{\psi}=a\ket{0}_{3}+b\ket{0}_{3}}$.
-1. the control qubits are $\displaystyle{\ket{00}_{12}}$. after the action of all gates, the first control qubit becomes $\displaystyle{T\ket{0}_{1}=\ket{0}_{1}}$, the second control qubit becomes $\displaystyle{ST^{\dagger}T^{\dagger}\ket{0}_{2}=\ket{0}_{2}}$, and the target qubit becomes $\displaystyle{HTT^{\dagger}TT^{\dagger}H\ket{\psi}=H^{2}\ket{\psi}=\ket{\psi}}$. so the whole state remains unchanged.
-2. the control qubits are $\displaystyle{\ket{01}_{12}}$. after the action of all gates, the first control qubit becomes $\displaystyle{T\ket{0}_{1}=\ket{0}_{1}}$, the second control qubit becomes $\displaystyle{ST^{\dagger}T^{\dagger}\ket{1}_{2}=\ket{1}_{2}}$, and the target qubit becomes $\displaystyle{HTT^{\dagger}XTT^{\dagger}XH\ket{\psi}=\ket{\psi}}$. so the whole state remains unchanged.
-3. the control qubits are $\displaystyle{\ket{10}_{12}}$. after the action of all gates, the first control qubit becomes $\displaystyle{T\ket{1}_{1}=e^{i\pi/4}\ket{1}_{1}}$, the second control qubit becomes $\displaystyle{SXT^{\dagger}XT^{\dagger}\ket{0}_{2}=e^{i\pi/4}\ket{0}_{2}}$, and the target qubit becomes $\displaystyle{HTXT^{\dagger}TXT^{\dagger}H\ket{\psi}=\ket{\psi}}$. so the whole state remains unchanged.
-4. the control qubits are $\displaystyle{\ket{11}_{12}}$. after the action of all gates, the first control qubit becomes $\displaystyle{T\ket{1}_{1}=e^{i\pi/4}\ket{1}_{1}}$, the second control qubit becomes $\displaystyle{SXT^{\dagger}XT^{\dagger}\ket{1}_{2}=e^{i\pi/4}\ket{1}_{2}}$, and the target qubit becomes $\displaystyle{HTXT^{\dagger}XTXT^{\dagger}XH\ket{\psi}=-iX\ket{\psi}}$. so NOT gate is applied to the target qubit, up to a global phase.
 
-as a result, the whole circuit acts the same as Toffoli gate, up to a global phase.
 
 ## exercise 4.27
 
@@ -255,26 +265,31 @@ $$\begin{align}
 \end{pmatrix}
 \end{align}$$
 
-*sol*. the action of the circuit is a permutation on the basis states:
+*sol*.
 
-$$\begin{align}
-\ket{001} \to \ket{010}\to \ket{011} \to \ket{100} \to \ket{101} \to \ket{110} \to \ket{111} \to \ket{001}
-\end{align}$$
+Label the three qubits as (q1,q2,q3) with computational bits (a,b,c) = (q1,q2,q3), where a is the most significant bit. The target permutation fixes |000⟩ and cycles the other seven states as
 
-and remains $\displaystyle{\ket{000}}$ unchanged. 
+001 → 010 → 011 → 100 → 101 → 110 → 111 → 001.
 
-![image](http://100.94.165.49:8080/i/e9a88600-3ba0-4e24-ae76-f2b3fa8db31c.jpg)
+We realize this exactly with CNOT and Toffoli using the in-place update rules
 
-the circuit above implements the desired transformation. and we will show it
-1. $\displaystyle{\ket{000}\to \ket{000}\to \ket{000}\to \ket{000}\to \ket{000}\to \ket{000}}$
-2. $\displaystyle{\ket{001}\to \ket{001}\to \ket{011}\to \ket{011}\to \ket{010}\to \ket{010}}$
-3. $\displaystyle{\ket{010}\to \ket{010}\to \ket{010}\to \ket{010}\to \ket{011}\to \ket{011}}$
-4. $\displaystyle{\ket{011}\to \ket{111}\to \ket{101}\to \ket{100}\to \ket{100}\to \ket{100}}$
-5. $\displaystyle{\ket{100}\to \ket{100}\to \ket{100}\to \ket{101}\to \ket{101}\to \ket{101}}$
-6. $\displaystyle{\ket{101}\to \ket{101}\to \ket{111}\to \ket{110}\to \ket{111}\to \ket{110}}$
-7. $\displaystyle{\ket{110}\to \ket{110}\to \ket{110}\to \ket{111}\to \ket{110}\to \ket{111}}$
-8. $\displaystyle{\ket{111}\to \ket{011}\to \ket{001}\to \ket{001}\to \ket{001}\to \ket{001}}$
-as required.
+- a ← a ⊕ (b ∧ c)
+- b ← b ⊕ c
+- c ← c ⊕ (a ∨ b)  = c ⊕ a ⊕ b ⊕ (a ∧ b)
+
+implemented in the following gate sequence (left to right):
+
+- CCNOT(q2,q3 → q1)      // a ^= b&c
+- CNOT(q3 → q2)          // b ^= c
+- CNOT(q1 → q3)          // c ^= a  (using updated a)
+- CNOT(q2 → q3)          // c ^= b  (using updated b)
+- CCNOT(q1,q2 → q3)      // c ^= a&b (using updated a,b)
+
+Correctness sketch:
+- The first two lines compute a' = a ⊕ (b c) and b' = b ⊕ c, which match the desired outputs from the table.
+- The final three lines realize c' = c ⊕ (a' ∨ b') = c ⊕ a' ⊕ b' ⊕ (a' b'), using only positive controls. This flips c for all inputs except 000 and 111 (after the first two steps these are the only cases with a'=b'=0), yielding exactly the needed transitions 000→000 and 111→001, and for all other inputs advances along the 7-cycle.
+
+Thus the full sequence implements the required 8×8 permutation using only CNOTs and Toffoli gates, with |000⟩ fixed and a 7-cycle over {001,…,111}.
 
 ## exercise 4.31
 
@@ -503,11 +518,33 @@ R_{x,2}(\theta)C & =\begin{pmatrix}
 
 ## subproblem 1
 
-check that the below circuit is equivalent to the quantum teleportation circuit
+check that the above circuit is equivalent to the quantum teleportation circuit
 
 ![image](http://100.94.165.49:8080/i/f8fff617-7f8a-48f8-b7f4-2caca2b54b13.jpg)
 
-*sol*. the quantum operation gates $\displaystyle{CNOT_{23}}$ and $\displaystyle{CZ_{13}}$ actually play the same role as the Bell state measurement in the quantum teleportation circuit (i.e., if the measurement result is $\displaystyle{m_{1}m_{2}}$, then the post-measurement state of qubit 3 is $\displaystyle{X^{m_{2}}Z^{m_{1}}\ket{\psi}}$). hence the two circuits are equivalent.
+*sol*.
+
+Let qubit 1 be |ψ⟩ = a|0⟩ + b|1⟩, and qubits 2–3 share |Φ+⟩ = (|00⟩+|11⟩)/√2. In standard teleportation, after Alice applies CNOT1→2 and H on qubit 1, the joint state can be written as
+
+$$
+\frac{1}{2} \sum_{m_1,m_2\in\{0,1\}} |m_1m_2\rangle_{12} \otimes X^{m_2} Z^{m_1} |\psi\rangle_3.
+$$
+
+Now insert, before measuring qubits 1 and 2, the two extra gates: CX2→3 and CZ1→3. These act as controlled Pauli operations conditioned on the (about-to-be) measurement outcomes m2 and m1, respectively, so they multiply an extra factor X^{m_2} Z^{m_1} on Bob’s qubit in each branch:
+
+$$
+\frac{1}{2} \sum_{m_1,m_2} |m_1m_2\rangle_{12} \otimes (X^{m_2} Z^{m_1})(X^{m_2} Z^{m_1}) |\psi\rangle_3
+ 
+ = \frac{1}{2} \sum_{m_1,m_2} |m_1m_2\rangle_{12} \otimes (-1)^{m_1 m_2}\,|\psi\rangle_3.
+$$
+
+Since $(-1)^{m_1 m_2}$ is a global phase depending only on the measurement outcomes, qubit 3 is exactly |ψ⟩ and is now decoupled from qubits 1–2. Therefore:
+
+- The modified circuit still achieves teleportation: Bob’s qubit ends up in |ψ⟩ independent of Alice’s measurement results.
+- The correction rule changes: because Alice’s CX2→3 and CZ1→3 have already applied the usual $X^{m_2}Z^{m_1}$ corrections coherently, Bob should apply no further correction. If Bob were to apply the standard $X^{m_2}Z^{m_1}$ again, he would re-introduce those Paulis and not recover |ψ⟩.
+
+Remark (operational nuance): These additional CX and CZ gates are nonlocal (they couple Alice’s qubits to Bob’s), so the protocol is no longer LOCC-only. They effectively move the classical corrections into coherent, pre-applied quantum gates, which is why Bob’s final correction becomes the identity.
+
 
 ## exercise 4.34
 
@@ -515,18 +552,3 @@ suppose we have a single qubit operator $\displaystyle{U}$ with eigenvalues $\di
 
 ![image](http://100.94.165.49:8080/i/0580b621-ad91-47c1-b9d5-b6ca9f4ac512.jpg)
 
-*sol*. suppose the target qubit $\displaystyle{\ket{\psi _{\mathrm{in}}}=a\ket{0}_{2}+b\ket{1}_{2}}$. after acting all the gates, the whole state becomes
-
-$$\begin{align}
-\ket{0}_{1} & \to H^{2}\ket{0} _{1}=\ket{0} \\
-\ket{\psi _{\mathrm{in}}} & \to \frac{1+U}{2}\ket{\psi _{\mathrm{in}}}
-\end{align}$$
-
-and
-
-$$\begin{align}
-\ket{1} _{1} & \to H^{2}\ket{1} _{1}=\ket{1}_{1} \\
-\ket{\psi _{\mathrm{in}}} & \to \frac{1-U}{2}\ket{\psi _{\mathrm{in}}} 
-\end{align}$$
-
-then $\displaystyle{\ket{\psi _{\mathrm{out}}}}$ is an eigenvector of $\displaystyle{U}$ with eigenvalue $\displaystyle{+1}$ if the measurement result is $\displaystyle{0}$, and an eigenvector of $\displaystyle{U}$ with eigenvalue $\displaystyle{-1}$ if the measurement result is $\displaystyle{1}$. as a result, the circuit implements a measurement of $\displaystyle{U}$.
