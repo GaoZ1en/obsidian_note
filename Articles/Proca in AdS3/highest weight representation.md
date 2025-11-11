@@ -53,7 +53,7 @@ $$\tag{2.2}\begin{align}
 \mathcal{L}_{\bar{\xi}_{1}}{f^{(+)}_{r,n,\bar{n}}}^{\mu} &= -\sqrt{ \bar{n}(\mu+\bar{n}-1) }{f^{(+)}_{r,n,\bar{n}-1}}^{\mu}
 \end{align}$$
 
-then we will give the explicit expression of $\displaystyle{{f^{(+)}_{r,n,\bar{n}}}^{\mu}}$. we first 
+then we will give the explicit expression of $\displaystyle{{f^{(+)}_{r,n,\bar{n}}}^{\mu}}$. starting from
 
 $$\tag{2.3}\begin{align}
 f^{(+)}_{r,n,0} & \propto r^{n}(1+r^{2})^{-(\mu+2+n)/2}e^{-i(\mu+2+n)t}e^{in\phi}
@@ -82,7 +82,6 @@ r^{2n}(1+r^{2})^{-n}{}_{2}F_{1}\left( -\bar{n},n+\mu+2;\mu+2; \frac{1}{1+r^{2}} 
 =r^{2\bar{n}}(1+r^{2})^{-\bar{n}}{}_{2}F_{1}\left( -n,\bar{n}+\mu+2;\mu+2; \frac{1}{1+r^{2}} \right)? \\
 r^{2n}(1+r^{2})^{-n}{}_{2}F_{1}\left( -\bar{n},n+\mu+2;\mu+2; \frac{1}{1+r^{2}} \right) & =(\sin ^{2} \rho)^{n}{}_{2}F_{1}(-\bar{n},n+\mu+2;\mu+2; \cos ^{2}\rho)=(\sin^{2}\rho)^{\bar{n}}{}_{2}F_{1}(-n,\bar{n}+\mu+2;\mu+2;\cos ^{2}\rho)
 \end{align}$$
-
 
 note the Euler transformation
 

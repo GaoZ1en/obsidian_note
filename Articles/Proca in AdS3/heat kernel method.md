@@ -549,9 +549,9 @@ thus the partition function is
 $$\begin{align}
 \ln Z & =\frac{1}{2}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\int _{0}^{\beta} \mathrm{d}\tau \sum _{n\in \mathbb{Z}}K(t,\tau,\tau+n\beta) \\
  & =\sum _{n\in \mathbb{Z}}\frac{\beta}{4\sqrt{ \pi }}\int ^{\infty}_{0} \mathrm{d}t t^{-3/2} e^{-\omega ^{2}t-\frac{(n\beta)^{2}}{4t}} \\
- & =\frac{1}{2}\beta \omega+\sum _{n=1}^{\infty} \frac{e^{-n\beta \omega}}{n} \\
- & =\frac{1}{2}\beta \omega-\ln(1-e^{-\beta \omega}) \\
-\implies Z & =\frac{e^{-\frac{1}{2}\beta \omega}}{1-e^{-\beta \omega}}
+ & =-\frac{1}{2}\beta \omega+\sum _{n=1}^{\infty} \frac{e^{-n\beta \omega}}{n} \\
+ & =-\frac{1}{2}\beta \omega-\ln(1-e^{-\beta \omega}) \\
+\implies Z & =\frac{e^{-\beta \omega/2}}{1-e^{-\beta \omega}}
 \end{align}$$
 
 # heat kernel of Proca field
@@ -624,5 +624,10 @@ $$\begin{align}
 $$\begin{align}
 \ln Z & =\frac{1}{2}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }g^{\mu \nu'}K_{\mu \nu'}(t,x,x) \\
  & =\frac{1}{2}\mathrm{Vol}(\mathcal{M})\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\left[-3\frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}}+\frac{46}{5}\int ^{t}_{0}\mathrm{d}\tau \frac{e^{-(\mu ^{2}+1)\tau}}{(4\pi \tau)^{3/2}}\right]  \\
- & =
+ & =\dots
 \end{align}$$
+
+
+我记得我自己是对标量函数做$\mathcal{L}_{\xi _{-1}}^{n}$，猜出具有这种形式，然后再用数学归纳法证明的
+
+嗯
