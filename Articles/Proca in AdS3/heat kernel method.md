@@ -589,14 +589,14 @@ we only need to compute the $\displaystyle{\nabla _{\mu}\nabla ^{\nu}}$ term
 $$\begin{align}
 \nabla _{\mu}\nabla ^{\nu}\nabla _{\nu}\nabla _{\nu'}(S) & = \nabla _{\mu}\nabla _{\nu'}(\nabla ^{2}S) \\
 \nabla _{\mu}\nabla ^{\nu}(FB_{\nu \nu'}) & =((1+u)F'+3F)B_{\mu \nu'}+((1+u)F''+4F')C_{\mu \nu'} \\
- & =\nabla _{\mu}\nabla _{\nu'}((1+u)F'+3F)
+ & =\nabla _{\mu}\nabla _{\nu'}\left( -\int ^{\infty}_{u}((1+v)F'(t,v)+3F(t,v))\mathrm{d}v \right)
 \end{align}$$
 
 thus the heat kernel equation reduces to
 
 $$\begin{align}
 \nabla ^{2}F+F-\mu ^{2}F & =\partial _{t}F \\
-(1+u)F'+3F+2\int ^{\infty}_{u}F(t,v)\mathrm{d}v+\mu ^{2}S & =-\partial _{t}S
+(1+u)F(t,u)+\mu ^{2}S & =-\partial _{t}S
 \end{align}$$
 
 with boundary conditions
@@ -611,23 +611,33 @@ the solution to these equations with the given boundary conditions is
 
 $$\begin{align}
 F & = -\frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}} \frac{r}{\sinh r} \\
-S & =\int ^{t}_{0}\mathrm{d}\tau \left[ (1+u)F'(\tau,u)+3F(\tau ,u)+2\int ^{\infty}_{u}F(\tau,v)\mathrm{d}v \right]
+
+\end{align}$$
+
+define $\displaystyle{F=e^{-\mu ^{2}t}\tilde{F},S=e^{-\mu ^{2}t}\tilde{S}}$, we have
+
+$$\begin{align}
+(1+u)\tilde{F} & =-\partial _{t}\tilde{S} \\
+\implies \tilde{S} & =\int ^{\infty}_{t}\mathrm{d}\tau (1+u)\tilde{F}(\tau,u) \\
+\implies S & =-e^{-\mu ^{2}t}\int ^{\infty}_{t}\mathrm{d}\tau e^{\mu ^{2}\tau}(1+u)F(t,u)
 \end{align}$$
 
 then the trace of the heat kernel is given by
 
 $$\begin{align}
-[F+\partial _{u}S]|_{u=0} & =\left[ F+\int ^{t}_{0}\mathrm{d}\tau\left[F''(\tau,u)+4F'(\tau,u)-2F(\tau,u)\right] \right]{\Huge|}_{u=0} \\
- & =-\frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}}+\frac{46}{15}\int ^{t}_{0}\mathrm{d}\tau \frac{e^{-(\mu ^{2}+1)\tau}}{(4\pi \tau)^{3/2}}
+\mathrm{Tr}K_{\mu \nu}(t,x,x')=\int _{\mathbb{H}_{3}} \mathrm{d}^{3}x\sqrt{ g }g^{\mu \nu'}K_{\mu \nu'}(t,x,x) & =-3\mathrm{Vol}(\mathbb{H}_{3})\left[F+\partial _{u}S\right]{\Huge|}_{u=0} \\
+  & = 3\mathrm{Vol}(\mathbb{H}_{3})\left(\frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}}+\frac{2}{3}e^{-\mu ^{2}t}\int ^{\infty}_{t}\mathrm{d}\tau \frac{e^{-\tau}}{(4\pi \tau)^{3/2}}\right)
 \end{align}$$
+
+thus the partition function at 1-loop is
 
 $$\begin{align}
-\ln Z & =\frac{1}{2}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }g^{\mu \nu'}K_{\mu \nu'}(t,x,x) \\
- & =\frac{1}{2}\mathrm{Vol}(\mathcal{M})\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\left[-3\frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}}+\frac{46}{5}\int ^{t}_{0}\mathrm{d}\tau \frac{e^{-(\mu ^{2}+1)\tau}}{(4\pi \tau)^{3/2}}\right]  \\
- & =\dots
+\ln Z & =\frac{1}{2}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t} \mathrm{Tr}K_{\mu \nu}(t,x,x) \\
+ & =\frac{3}{2}\mathrm{Vol}(\mathbb{H}_{3}) \int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\left(\frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}}+\frac{2}{3}e^{-\mu ^{2}t}\int ^{\infty}_{t} \mathrm{d}\tau \frac{e^{-\tau}}{(4\pi \tau)^{3/2}}\right)
 \end{align}$$
 
+which is not the same as the previous result. where is the problem?
 
-我记得我自己是对标量函数做$\mathcal{L}_{\xi _{-1}}^{n}$，猜出具有这种形式，然后再用数学归纳法证明的
-
-嗯
+$$\begin{align}
+\int ^{\infty}_{0} \frac{\mathrm{d}t}{t} e^{-\mu ^{2}t} \int ^{\infty}_{t} \mathrm{d}\tau \tau ^{\nu-1} e^{-\tau}
+\end{align}$$
