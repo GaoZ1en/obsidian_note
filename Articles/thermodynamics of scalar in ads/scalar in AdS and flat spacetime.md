@@ -180,4 +180,3 @@ $$\begin{align}
 \end{align}$$
 
 which is exactly the same as $\displaystyle{\ln Z_{\mathbb{R}_{d,1}}}$ if we identify $\displaystyle{\tilde{\beta}}$ as the inverse temperature in flat spacetime.
-
