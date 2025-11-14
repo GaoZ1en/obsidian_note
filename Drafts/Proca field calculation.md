@@ -72,3 +72,52 @@ $$\tag{.}
 \end{align}
 $$
 
+---
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2}
+\end{align}$$
+
+$$\begin{align}
+\sqrt{ -g } & = r
+\end{align}$$
+
+$$\begin{align}
+\sqrt{ -g }\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}\mu ^{2}A_{\mu}A^{\mu}\right) & =\sqrt{ -g }\left(-\frac{1}{2}F_{tr}F^{tr}-\frac{1}{4}F_{r\phi}F^{r\phi}-\frac{1}{4}F_{t\phi}F^{t\phi}-\frac{1}{2}\mu ^{2}A_{t}A^{t}-\frac{1}{2}\mu ^{2}A_{r}A^{r}-\frac{1}{2}\mu ^{2}A_{\phi}A^{\phi}\right) \\
+ & =r(o(r^{-1})o(r^{-1})+o(r^{-1})o(r^{-1})+o(r^{0})o(r^{-4})+o(r^{0})o(r^{-2})+o(r^{-3})o(r^{-1})+o(r^{0})o(r^{-2})) \\
+ & =o(r^{-1})
+\end{align}$$
+
+
+$$\begin{align}
+\sqrt{ -g }(\nabla ^{\nu}F_{\nu \mu}-\mu ^{2}A_{\mu})\delta A^{\mu} & =r(o(r^{0})+o(r^{0}))o(r^{-2})+r(o(r^{-1})+o(r^{-3}))o(r^{-1})+r(o(r^{0})+o(r^{0}))o(r^{-2}) \\
+ & =o(r^{-1}) \\
+\sqrt{ \sigma }\tau ^{\mu}F_{\mu \nu}\delta A^{\nu} & =\frac{r}{\sqrt{ 1+r^{2} }} \frac{1}{\sqrt{ 1+r^{2} }}(o(r^{-1})o(r^{-1})+o(r^{0})o(r^{-2})) \\
+ & =o(r^{-3}) \\
+\sqrt{ -\gamma }n^{\mu}F_{\mu \nu}\delta A^{\nu} & =o(r^{3})o(r^{-3})=o(r^{0})
+\end{align}$$
+
+$$\begin{align}
+\sqrt{ \sigma }\tau _{\rho}\xi ^{\rho}\left(\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}\mu ^{2}A_{\mu}A^{\mu}\right) & =o(r^{0})o(\tau _{\rho}\xi ^{\rho})o(r^{-2}) \\
+ & =o(r^{-1}) \\
+\sqrt{ -\gamma }n_{\rho}\xi ^{\rho}\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}-\frac{1}{2}\mu ^{2}A_{\mu}A^{\mu}\right) & =o(r^{2})o(n_{\rho}\xi ^{\rho})o(r^{-2}) \\
+ & =o(r^{0})
+\end{align}$$
+
+$$\begin{align}
+F_{tr} & =o(r^{-1}) \\
+F_{t\phi} & =o(r^{0}) \\
+F_{r\phi} & =o(r^{-1}) \\
+\delta A^{t} & =o(r^{-2}) \\
+\delta A^{\phi} & =o(r^{-2}) \\
+A_{t} & =o(r^{0}) \\
+A_{r} & =o(r^{-3}) \\
+A_{\phi} & =o(r^{0})
+\end{align}$$
+
+$$\begin{align}
+\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left( F_{\mu \rho}F_{\nu}^{~\rho}-\frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\mu ^{2}A_{\mu}A_{\nu}-\frac{1}{2}\mu ^{2}g_{\mu \nu}A_{\rho}A^{\rho} \right) & =o(r^{-1})\xi ^{\nu}\left( F_{t\rho}F_{\nu}^{~\rho}+o(r^{0})A_{\nu}+\delta ^{t}_{\nu}o(r^{0}) \right) \\
+ & =o(r^{-1}) \\
+\sqrt{ h }\hat{n}_{a}\sigma ^{a}_{~\mu}\tau _{\nu}F^{\mu \nu}A^{\rho}\xi _{\rho} & =o(r^{1})o(r^{1})o(r^{1})o(r^{-1})o(r^{-2}) \\
+ & =o(r^{0})
+\end{align}$$

@@ -167,6 +167,32 @@ $$\tag{2.8}
 \end{align}
 $$
 
+---
+
+for a general gauge theory with gauge group $\displaystyle{SU(N)}$, the gauge transformation is given by
+
+$$\begin{align}
+A_{\mu} & =U A_{\mu} U^{-1}+\frac{i}{g}U\partial _{\mu}U^{-1}
+\end{align}$$
+
+and a infinitesimal version is
+
+$$\begin{align}
+A^{\alpha}_{\mu} & =A_{\mu}+\frac{1}{g}D_{\mu}\alpha \\
+ & =A_{\mu}+\frac{1}{g}\partial _{\mu}\alpha +i[\alpha,A_{\mu}]
+\end{align}$$
+
+and the Faddeev-Popov operator becomes
+
+$$\begin{align}
+\mathcal{M}(x,y) & =\int \mathrm{d}^{4}z \frac{\delta \Omega(x)}{\delta A^{\alpha}_{\mu}(z)} \frac{1}{g}D_{\mu}\delta ^{4}(z-y) \\
+ & =\frac{1}{g}\int \mathrm{d}^{4}z \frac{\delta \Omega(x)}{\delta A^{\alpha}_{\mu}(z)} (\partial _{\mu}\delta ^{4}(z-y)+i[A^{\alpha}_{\mu}(z),\delta ^{4}(z-y)])
+\end{align}$$
+
+which contains interaction between ghosts and gauge fields because of the non-Abelian nature of the gauge group.
+
+---
+
 so the entire path integral can be written as
 
 $$\tag{2.9}

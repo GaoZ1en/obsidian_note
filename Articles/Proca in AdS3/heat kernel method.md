@@ -327,7 +327,7 @@ $$\begin{align}
 thus the partition function at 1-loop is
 
 $$\begin{align}
-Z & =\frac{1}{2}\int ^{\infty}_{0^{+}} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }g^{\mu \nu'}K_{\mu \nu'}(t,x,x) \\
+\ln Z & =\frac{1}{2}\int ^{\infty}_{0^{+}} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }g^{\mu \nu'}K_{\mu \nu'}(t,x,x) \\
  & =\frac{1}{2}\mathrm{Vol}(\mathbb{H}_{3})\int ^{\infty}_{0} \frac{\mathrm{d}t}{t} e^{-\mu ^{2}t} \frac{e^{-t}+2+4t}{(4\pi t)^{3/2}} \\
  & =\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{6\pi}\left((\mu ^{2}+1)^{3/2}+2\mu ^{3}-6\mu\right)
 \end{align}$$
@@ -335,7 +335,7 @@ Z & =\frac{1}{2}\int ^{\infty}_{0^{+}} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\
 we should substract the non-physical longitudinal mode contribution, which gives
 
 $$\begin{align}
-Z_{\perp} & =\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{3\pi}(\mu ^{3}-3\mu)
+\ln Z_{\perp} & =\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{3\pi}(\mu ^{3}-3\mu)
 \end{align}$$
 
 # general discussion of $\displaystyle{\mathbb{H}_{3}/\mathbb{Z}}$
@@ -633,8 +633,9 @@ $$\begin{align}
 \ln Z & =-\frac{1}{2}\ln \det \Delta _{\mu}^{~\nu} \\
  & =-\frac{3}{2}\mathrm{Vol}(\mathbb{H}_{3}/\mathbb{Z})\int ^{\infty}_{0}\frac{\mathrm{d}t}{t}(F+\partial _{u}S)|_{u=0} \\
  & +\sum ^{\infty}_{n=1} \frac{(2\pi \tau _{2})(2\pi)}{4|\sin \pi n\tau|^{2}}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\int ^{\infty}_{2\pi \tau _{2}}\mathrm{d}r\sinh r((F+\partial _{u}S)A_{\gamma ^{n}}+\partial _{u}^{2}SB_{\gamma ^{n}}) \\
- & =\sum ^{\infty}_{n=1} \frac{q^{n}+\bar{q}^{n}}{n|1-q^{n}|} \\
-\implies Z & =\prod ^{\infty}_{\ell,\ell'=0} \frac{1}{(1-q^{\ell+1}\bar{q}^{\ell'})(1-q^{\ell}\bar{q}^{\ell'+1})}
+ & =\sum ^{\infty}_{n=1} \frac{q^{n}+\bar{q}^{n}}{n|1-q^{n}|}|q|^{n\mu} \\
+\implies Z & =\prod ^{\infty}_{\ell,\ell'=0} \frac{1}{(1-q^{\ell+\mu+1}\bar{q}^{\ell'+\mu})(1-q^{\ell+\mu}\bar{q}^{\ell'+\mu+1})}
 \end{align}$$
 
 here we are not necessary to substract the non-physical longitudinal mode contribution since we already imposed the transversality condition in the heat kernel equation.
+
