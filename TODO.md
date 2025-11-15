@@ -11,7 +11,10 @@
 	3. [Henneaux, Teitelboim] Quantization of gauge systems.pdf
 3. dynamic black hole entropy, Wald, apparent horizon.
 
-应当搞清楚算的是什么量，而不是直接模仿别人的计算流程。
+*应当搞清楚算的是什么量，而不是直接模仿别人的计算流程。*
+
+pdfcpu 可以方便的处理pdf文件
+write a TUI app for pdfcpu
 ## career
 
 1. 2-3years, master
