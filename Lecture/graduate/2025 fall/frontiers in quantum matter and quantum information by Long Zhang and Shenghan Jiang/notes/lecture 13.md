@@ -88,6 +88,13 @@ $$\begin{align}
 \ket{\bar{x}}  & =\sum _{y\in \mathrm{span}(H_{X}\text{ row vectors})}\ket{x+y} , x \in \mathrm{Ker}(H_{Z}) \\
 \end{align}$$
 
+for example
+
+$$\begin{align}
+\ket{0_{L}}  & =\sum _{y\in \mathrm{span}(H_{X}\text{ row vectors})}\ket{y} \\
+\ket{1_{L}}  & =\sum _{y\in \mathrm{span}(H_{X}\text{ row vectors})}\ket{1+y}
+\end{align}$$
+
 there are only $\displaystyle{k}$ independent vectors in $\displaystyle{\mathrm{Ker}(H_{Z})/\mathrm{span}(H_{X}\text{ row vectors})}$, so we can encode $\displaystyle{k}$ logical qubits.
 
 classical linear code... in the language of linear code, $\displaystyle{y}$ is a codeword of the classical code with parity-check matrix $\displaystyle{H_{X}}$, and $\displaystyle{x}$ is a representative of a coset in the quotient space $\displaystyle{\mathrm{Ker}(H_{Z})/\mathrm{span}(H_{X}\text{ row vectors})}$.

@@ -140,4 +140,3 @@ $$\begin{align}
  & =\int \mathrm{d}p \frac{p}{p^{2}+\varepsilon ^{2}}f(p)\mp i\varepsilon \int \mathrm{d}p \frac{f(p)}{p^{2}+\varepsilon ^{2}} \\
  & =\mathcal{P}\int \mathrm{d}p \frac{f(p)}{p}\mp i\pi f(0)
 \end{align}$$
-

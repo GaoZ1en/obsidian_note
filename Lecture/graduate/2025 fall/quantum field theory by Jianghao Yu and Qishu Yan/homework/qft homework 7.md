@@ -56,6 +56,72 @@ k^{2}(\Delta ^{\mu \alpha}+\lambda L^{\mu \alpha})(A\Delta _{\alpha \nu}+BL_{\al
  & =\frac{1}{k^{2}}\left( g_{\alpha \nu}-\left( 1-\frac{1}{\lambda} \right)\frac{k _{\alpha}k _{\nu}}{k^{2}} \right)
 \end{align}$$
 
+# Peskin 3.6
+
+let $\displaystyle{u_{i}, i=1,2,3,4}$ be four 4-component Dirac spinors. 
+
+## subproblem 1
+
+normalize the 16 matrices $\displaystyle{\Gamma ^{A}}$ to the convention
+
+$$\begin{align}
+\mathrm{tr}[\Gamma ^{A},\Gamma ^{B}]=4\delta ^{AB}
+\end{align}$$
+
+this gives $\displaystyle{\Gamma ^{A}=\left\{1,\gamma ^{0},i\gamma ^{j},\dots\right\}}$. write all $\displaystyle{16}$ elements of this set
+
+*sol*. the 16 matrices are given by
+
+$$\begin{align}
+\Gamma ^{A} & =\left\{ 1,\gamma ^{0},i\gamma ^{1},i\gamma ^{2},i\gamma ^{3},\right. \\
+ & \gamma ^{0}\gamma ^{1},\gamma ^{0}\gamma ^{2},\gamma ^{0}\gamma ^{3},i\gamma ^{1}\gamma ^{2},i\gamma ^{2}\gamma ^{3},i\gamma ^{3}\gamma ^{1}, \\
+ & \left.\gamma ^{5},\gamma ^{5}\gamma ^{0},i\gamma ^{5}\gamma ^{1},i\gamma ^{5}\gamma ^{2},i\gamma ^{5}\gamma ^{3} \right\}
+\end{align}$$
+
+## subproblem 2
+
+write the general Fierz identity as an equation
+
+$$\begin{align}
+(\bar{u}_{1}\Gamma ^{A}u_{2})(\bar{u}_{3}\Gamma ^{B}u_{4}) & =\sum _{CD}C^{AB}_{~~~~~~CD}(\bar{u}_{1}\Gamma ^{C}u_{4})(\bar{u}_{3}\Gamma ^{D}u_{2})
+\end{align}$$
+
+show that
+
+$$\begin{align}
+C^{AB}_{~~~~~~CD} & =\frac{1}{16}\mathrm{tr}[\Gamma ^{C}\Gamma ^{A}\Gamma ^{D}\Gamma ^{B}]
+\end{align}$$
+
+*sol*. we start from the completeness relation of $\displaystyle{\Gamma ^{A}}$:
+
+$$\begin{align}
+\delta _{a}^{~b}\delta _{c}^{~d} & =\frac{1}{4}\sum _{A}(\Gamma ^{A})_{a}^{~d}(\Gamma _{A})_{c}^{~b}
+\end{align}$$
+
+then we have
+
+$$\begin{align}
+(\bar{u}_{1}\Gamma ^{A}u_{2})(\bar{u}_{3}\Gamma ^{B}u_{4}) & =(\bar{u}_{1})_{a}(\Gamma ^{A})_{~b}^{a}(u_{2})^{b}(\bar{u}_{3})_{c}(\Gamma ^{B})_{~d}^{c}(u_{4})^{d} \\
+ & =(\bar{u}_{1})_{a}(u_{4})^{d}(\bar{u}_{3})_{c}(u_{2})^{b}\delta _{~b}^{a}\delta _{~d}^{c}(\Gamma ^{A})_{~b}^{a}(\Gamma ^{B})_{~d}^{c} \\
+ & =\frac{1}{4}\sum _{C}(\bar{u}_{1})_{a}(u_{4})^{d}(\bar{u}_{3})_{c}(u_{2})^{b}(\Gamma ^{C})_{~b}^{a}(\Gamma _{C})_{~d}^{c}(\Gamma ^{A})_{~b}^{a}(\Gamma ^{B})_{~d}^{c} \\
+ & =\frac{1}{4}\sum _{CD}(\bar{u}_{1}\Gamma ^{C}u_{4})(\bar{u}_{3}\Gamma ^{D}u_{2})\mathrm{tr}[\Gamma _{C}\Gamma ^{A}\Gamma _{D}\Gamma ^{B}] \\
+ & =\sum _{CD}\frac{1}{16}\mathrm{tr}[\Gamma ^{C}\Gamma ^{A}\Gamma ^{D}\Gamma ^{B}](\bar{u}_{1}\Gamma ^{C}u_{4})(\bar{u}_{3}\Gamma ^{D}u_{2}) \\
+ & =\sum _{CD} C^{AB}_{~~~~~~CD}(\bar{u}_{1}\Gamma ^{C}u_{4})(\bar{u}_{3}\Gamma ^{D}u_{2})
+\end{align}$$
+
+## subproblem 3
+
+work out explicitly the Fierz transformation laws for the products $\displaystyle{(\bar{u}_{1}u_{2})(\bar{u}_{3}u_{4})}$ and $\displaystyle{(\bar{u}_{1}\gamma ^{\mu}u_{2})(\bar{u}_{3}\gamma _{\mu}u_{4})}$
+
+*sol*.
+
+$$\begin{align}
+(\bar{u}_{1}u_{2})(\bar{u}_{3}u_{4}) & =\frac{1}{4}(\bar{u}_{1}u_{4})(\bar{u}_{3}u_{2})+\frac{1}{4}(\bar{u}_{1}\gamma ^{\mu}u_{4})(\bar{u}_{3}\gamma _{\mu}u_{2})+\frac{1}{8}(\bar{u}_{1}i\gamma ^{\mu \nu}u_{4})(\bar{u}_{3}i\gamma _{\mu \nu}u_{2}) \\
+ & -\frac{1}{4}(\bar{u}_{1}\gamma ^{\mu}\gamma ^{5}u_{4})(\bar{u}_{3}\gamma _{\mu}\gamma ^{5}u_{2})+\frac{1}{4}(\bar{u}_{1}\gamma ^{5}u_{4})(\bar{u}_{3}\gamma ^{5}u_{2}) \\
+(\bar{u}_{1}\gamma ^{\mu}u_{2})(\bar{u}_{3}\gamma _{\mu}u_{4}) & =(\bar{u}_{1}u_{4})(\bar{u}_{3}u_{2})-\frac{1}{2}(\bar{u}_{1}\gamma ^{\mu}u_{4})(\bar{u}_{3}\gamma _{\mu}u_{2})-\frac{1}{2}(\bar{u}_{1}i\gamma ^{\mu \nu}u_{4})(\bar{u}_{3}i\gamma _{\mu \nu}u_{2}) \\
+ & -\frac{1}{2}(\bar{u}_{1}\gamma ^{\mu}\gamma ^{5}u_{4})(\bar{u}_{3}\gamma _{\mu}\gamma ^{5}u_{2})-(\bar{u}_{1}\gamma ^{5}u_{4})(\bar{u}_{3}\gamma ^{5}u_{2})
+\end{align}$$
+
 # Peskin 3.7
 
 ## subproblem 1

@@ -1,187 +1,106 @@
-# Problem
+# problem 1
 
-You are asking about the **Euclideanization and geometric representation of dS$_3$ (de Sitter 3-space)**, in analogy to the well-known representation of Euclidean AdS$_3$ as $\mathbb{H}_3$ (the 3D hyperbolic space). Specifically:
+Read the following pairs of statements and identify which version is more formal and academic.
 
-1. **Is there a standard representation for Euclidean dS$_3$?**
-2. **What is the metric for Euclidean dS$_3$ analogous to $ds^2 = \frac{dy^2 + dz d\bar{z}}{y^2}$ for Euclidean AdS$_3$?**
-3. **What is the geodesic distance between two points in this space?**
-4. **What is the "thermal" version of dS$_3$ (i.e., with periodic identifications), analogous to thermal AdS$_3$ as $\mathbb{H}_3/\mathbb{Z}$?**
+## subproblem 1
 
-Let's address these step by step.
+1. By post-deposition heat treatment, an improvement in the transport properties of SnS film can be achieved.
+2. SnS film has its transport properties. Those properties can be improved by heating. That means SnS film can get better transport properties when being treated with heat after it is deposited.
 
----
+## subproblem 2
 
-# Assumptions and Setup
+1. Organic solar cells have been a subject of growing research interest over the past quarter century, and are now developed to the point where they are on the verge of introduction into the market.
+2. Over the past 25 years, an increasing number of researchers have been interested in organic solar cells. They have studied organic solar cells for so long that they have found a lot about them. Now organic solar cells are so developed that they are ready to be introduced into the market.
 
-- **AdS$_3$ (Lorentzian):** Maximally symmetric space with constant negative curvature.
-- **Euclidean AdS$_3$:** $\mathbb{H}_3$, metric $ds^2 = \frac{dy^2 + dz d\bar{z}}{y^2}$, $y > 0$, $z \in \mathbb{C}$.
-- **dS$_3$ (Lorentzian):** Maximally symmetric space with constant positive curvature.
-- **Euclideanization:** Wick rotation $t \to -i\tau$.
-- **Thermal quotient:** Identify coordinates periodically, e.g., $(t, \phi) \sim (t+\beta, \phi+\theta)$.
+## subproblem 3
 
-We use units where the curvature radius $L=1$ unless otherwise specified.
+1. Piezoelectric materials' high energy efficiency and ease of miniaturization are driving the development of new technologies.
+2. Piezoelectric materials are highly efficient in saving energy. Meanwhile, it is very easy to miniaturize such materials. That is to say, they can be made smaller and smaller. Therefore, they are driving new technologies to develop.
 
----
+## subproblem 4
 
-# Solution
+1. Previous research therefore attests to the effectiveness of implementation intentions as a strategy for generating behaviour-change through intention realisation.
+2. Previous research therefore proves whether implementation intentions as a strategy is effective or not, when it is used to generate behavior-change in order to realize intention. 
 
-## 1. **Euclidean dS$_3$ Representation**
+## subproblem 5
 
-### Lorentzian dS$_3$:
+1. Understanding the consolidation of paper coatings is essential as the aggregate structures formed at this stage determine the performance of the paper coating.
+2. At this stage the aggregate structure will be formed, and this will determine how the paper coating will be, so to understand the process how paper coatings consolidate is essential.
 
-Defined as the hyperboloid in $\mathbb{R}^{1,3}$:
-$$
--X_0^2 + X_1^2 + X_2^2 + X_3^2 = L^2
-$$
+# problem 1
 
-### Euclideanization:
+Look at the four blanks A, B, C, and D in the paragraph, which indicate where the following underlined sentences could be added to the paragraphs. Where would the sentence best fit?
 
-Wick rotate $X_0 \to i X_0$:
-$$
-X_0^2 + X_1^2 + X_2^2 + X_3^2 = L^2
-$$
-This is the equation for a **3-sphere $S^3$** of radius $L$.
+## subproblem 1
 
-**Conclusion:**  
-> **Euclidean dS$_3$ is the 3-sphere $S^3$.**
+*This index was obtained by subtracting the rating from each neutral stimulus from the rating of its corresponding painful stimuli.*
 
-This is in contrast to Euclidean AdS$_3$ ($\mathbb{H}_3$), which is non-compact and has negative curvature.
+__A__ In an attempt to investigate whether the neural activations found in the contrast between painful and neutral stimuli were related to each individual’s average subjective intensity of pain ratings (reactivity to pain), a regression analysis was computed between this neural contrast and a behavioral index of pain intensity. __B__ A significant cluster of activation was detected in the right ACC ( 14, 20, 44; threshold extend k = 11). __C__ The plot between the neural activity at these coordinates and the subjective rating shows the significant linear correlation (r = 0.83; see Fig. 2B). __D__
 
----
+## subproblem 2
 
-## 2. **Metric for Euclidean dS$_3$**
+*These comparisons resulted in the activation of similar networks irrespective of which body part was perceived.In order to examine more closely whether the perception of human body parts activates related cortices following a somatotopic distribution, we contrasted neural responses to painful versus non-painful stimuli for each limb separately.*
 
-### Standard metric on $S^3$:
+__A__ Thus, the neural response to the pain of others was similar regardless of whether the pain was inflicted on the foot or the hand. __B__ However, it is noteworthy that there was activation of a cluster located in the middle frontal gyrus in both hemispheres for the conditions involving a right hand. __C__ No signal change was observed in the participants’ right hand and right foot cortical representations. __D__
 
-In "Hopf coordinates":
-$$
-ds^2 = L^2 \left[ d\theta^2 + \sin^2\theta \, d\phi^2 + \cos^2\theta \, d\psi^2 \right]
-$$
-with $\theta \in [0, \frac{\pi}{2}]$, $\phi, \psi \in [0, 2\pi)$.
+## subproblem 3
 
-Or, in "polar coordinates":
-$$
-ds^2 = L^2 \left[ d\chi^2 + \sin^2\chi \left( d\theta^2 + \sin^2\theta \, d\phi^2 \right) \right]
-$$
-with $\chi \in [0, \pi]$, $\theta \in [0, \pi]$, $\phi \in [0, 2\pi)$.
+*The results demonstrate that watching other individuals in pain-inducing situations triggers a specific part of a neural network known to be involved in self-pain processing.*
 
-### Analogy to Poincaré metric for $\mathbb{H}_3$:
+__A__ Our study investigated the hemodynamic response during the perception of pain in others, which is a way to address the process involved in empathy (Decety and Jackson, in press; Hodges and Wegner, 1997; Ickes, 2003). __B__ Here, we consider perception of pain in others as a social stimulus that triggers a specific mental (affective) state in the perceiver from which empathic processing may stem. __C__ Note that our intention was not to investigate self-pain-processing as such, rather we were interested in the hemodynamic changes stemming from the sight of others in potentially painful situations. __D__
 
-There is **no direct analog** of the Poincaré upper half-space metric for $S^3$, because $S^3$ is compact and has positive curvature. The Poincaré metric is specific to hyperbolic (negative curvature) spaces.
+## subproblem 4
 
----
+*These studies did not report any activation of SI or SII in conditions of pain in others, even though activations in these regions were observed when the same subject received actual pain.*
 
-## 3. **Geodesic Distance on $S^3$**
+__A__ Our first hypothesis that perception of hands and feet in painful situations would be associated with specific changes in the somatosensory cortices (SI–SII) was not confirmed. __B__ Although the absence of significant hemodynamic change in these cortical regions could be related to the specificity of our design, it remains consistent with two recent studies that examined both pain in self and in others (Morrison et al., in press; Singer et al., 2004). __C__ Moreover, the role of the primary somatosensory cortex in pain perception is still debated, and several studies did not report its contribution (see Table 1 of Bushnell et al., 1999; Peyron et al., 2000). __D__ 
 
-Given two points $x, x'$ on $S^3$, the geodesic distance $d(x, x')$ is:
-$$
-d(x, x') = L \arccos \left( \frac{x \cdot x'}{L^2} \right)
-$$
-where $x, x'$ are embedded in $\mathbb{R}^4$ as unit vectors.
+## subproblem 5
 
-**For example:**  
-If $x = (L, 0, 0, 0)$ and $x' = (L \cos\alpha, L \sin\alpha, 0, 0)$, then
-$$
-d(x, x') = L \arccos(\cos\alpha) = L |\alpha|
-$$
+*Interestingly, the ACC was more active during exclusion and its activity correlated positively with self-reported distress. Other results also suggest that the feeling of pain is not restricted to its physical sensation, but occurs within the individual as a result of observing another’s emotional state.*
 
----
+__A__ This result fits well with recent findings that there is a neural realization of the idea that social relationships can sometimes be “painful”. __B__ This latter aspect was demonstrated in an fMRI study showing that the neural circuit involved in pain processing, including the anterior insula and the ACC, was activated when the participants were socially excluded from an on-line computer game (Eisenberger et al., 2003). __C__ The authors argued that “social pain” is analogous in its neurocognitive function to physical pain. __D__
 
-## 4. **Thermal Quotient: $S^3/\mathbb{Z}$**
+# problem 3
 
-### Thermal AdS$_3$:
+Choose the best word or expression from the four choices given below. 
 
-Thermal AdS$_3$ is $\mathbb{H}_3/\mathbb{Z}$, i.e., periodic identification in Euclidean time and angle:
-$$
-(t, \phi) \sim (t+\beta, \phi+\theta)
-$$
+## subproblem 1
 
-### Thermal dS$_3$ (Euclidean):
+The research team established **(to be filled)** with indigenous communities to gather traditional ecological knowledge.
+1. conferences
+2. seminars
+3. guarantee
+4. contact
 
-Since Euclidean dS$_3$ is $S^3$, the analogous construction is to **identify one of the angular coordinates periodically**. For example, quotient by a discrete subgroup of $SO(4)$ acting on $S^3$.
+## subproblem 2
 
-A common choice is the **lens space**:
-$$
-S^3/\mathbb{Z}_p
-$$
-where $\mathbb{Z}_p$ acts as $(\psi, \phi) \sim (\psi + 2\pi/p, \phi + 2\pi q/p)$ for integers $p, q$.
+Long-term data analysis reveals a steady **(to be filled)** in pollinator populations across multiple habitats over the past three decades.
+1. diminishment
+2. change
+3. isolation
+4. decline
 
-**Interpretation:**  
-> The "thermal" version of Euclidean dS$_3$ is a lens space $L(p, q) = S^3/\mathbb{Z}_p$, with periodic identifications in angular directions.
+## subproblem 3
 
-There is no "Euclidean time" in $S^3$, but you can pick a coordinate to play the role of "thermal circle" and identify it.
+The ethics committee exercised its **(to be filled)** in determining which research proposals met the stringent criteria for human subject studies.
+1. discretion
+2. initiatives
+3. knowledge
+4. motives
 
----
+## subproblem 4
 
-# Checks and Validation
+The initial **(to be filled)** of the research paper outlined the key objectives and methodologies to be employed in the study.
+1. paper
+2. mode
+3. draft
+4. sketch
 
-- **Dimensional analysis:** $S^3$ is 3-dimensional, compact, positive curvature.
-- **Limiting cases:** For $p=1$, $S^3/\mathbb{Z}_1 = S^3$ (no identification).
-- **Symmetry:** $S^3$ is maximally symmetric, as is dS$_3$.
+## subproblem 5
 
----
-
-# Example
-
-**Geodesic distance between two points on $S^3$**
-
-Let $x = (L, 0, 0, 0)$, $x' = (L \cos\alpha, L \sin\alpha, 0, 0)$.
-
-$$
-x \cdot x' = L^2 \cos\alpha \implies d(x, x') = L \arccos(\cos\alpha) = L |\alpha|
-$$
-
----
-
-# Extensions
-
-- **Higher dimensions:** Euclidean dS$_{d+1}$ is $S^{d+1}$.
-- **Quotients:** More general lens spaces $L(p, q)$, or other discrete subgroups.
-- **Thermal interpretation:** In Lorentzian dS, the "thermal" nature comes from the Gibbons-Hawking temperature, but in Euclidean $S^3$ this is encoded in the periodicity of the identified coordinate.
-- **Boundary CFT:** For AdS/CFT, the boundary is $\mathbb{R}^2$ or $S^2$; for dS/CFT, the boundary is $S^2$ (future infinity).
-
----
-
-# Open Problems
-
-1. **dS/CFT correspondence for lens spaces**  
-   *Difficulty: Medium*  
-   How does the boundary theory change when the bulk is $S^3/\mathbb{Z}_p$?
-
-2. **Thermal correlators in Euclidean dS$_3$**  
-   *Difficulty: Medium*  
-   How do periodic identifications affect Green's functions and partition functions?
-
-3. **Analytic continuation between AdS and dS quotients**  
-   *Difficulty: Hard*  
-   Is there a precise analytic continuation between $\mathbb{H}_3/\mathbb{Z}$ and $S^3/\mathbb{Z}_p$?
-
-4. **Geodesic networks in lens spaces**  
-   *Difficulty: Medium*  
-   How do geodesic lengths and minimal surfaces behave under lens space identifications?
-
----
-
-# References
-
-- **General relativity and geometry:**  
-  - S. Carroll, *Spacetime and Geometry*, Ch. 5, 8.
-- **AdS/CFT and dS/CFT:**  
-  - J. Maldacena, "The Large N Limit of Superconformal Field Theories and Supergravity", *Adv. Theor. Math. Phys.* 2 (1998) 231, [arXiv:hep-th/9711200](https://arxiv.org/abs/hep-th/9711200).
-  - A. Strominger, "The dS/CFT Correspondence", *JHEP* 10 (2001) 034, [arXiv:hep-th/0106113](https://arxiv.org/abs/hep-th/0106113).
-- **Lens spaces and quotients:**  
-  - J. Milnor, "On the 3-dimensional Brieskorn manifolds $M(p,q,r)$", *Knots, Groups, and 3-Manifolds*, Annals of Math Studies 84 (1975).
-- **Geodesics on spheres:**  
-  - M. do Carmo, *Riemannian Geometry*, Ch. 2.
-
----
-
-# TL;DR
-
-- **Euclidean dS$_3$ is $S^3$ (the 3-sphere), not a hyperbolic space.**
-- **Metric:** Standard round metric on $S^3$; no Poincaré-type metric exists for positive curvature.
-- **Geodesic distance:** $d(x, x') = L \arccos\left(\frac{x \cdot x'}{L^2}\right)$.
-- **Thermal quotient:** $S^3/\mathbb{Z}_p$ (lens space), periodic identification of angular coordinates.
-- **No direct analog of $\mathbb{H}_3$ for Euclidean dS$_3$; the analogy is $S^3$ and its quotients.**
-
-If you want explicit coordinate charts or further details on the lens space construction, let me know!
+The new software platform aims to **(to be filled)** researchers to collaborate more effectively across geographical boundaries.
+1. enable
+2. induce
+3. cease
+4. denote
