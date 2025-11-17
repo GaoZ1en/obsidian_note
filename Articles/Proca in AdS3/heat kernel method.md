@@ -554,7 +554,7 @@ $$\begin{align}
 \implies Z & =\frac{e^{-\beta \omega/2}}{1-e^{-\beta \omega}}
 \end{align}$$
 
-# heat kernel of Proca field
+# heat kernel for Proca field without subtracting longitudinal mode by hand
 
 the action
 

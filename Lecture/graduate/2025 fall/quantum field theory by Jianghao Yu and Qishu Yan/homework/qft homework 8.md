@@ -76,7 +76,14 @@ $$\begin{align}
  & =\pi _{\phi}\pi _{\phi}^{\dagger}+\partial _{i}\phi ^{\dagger}\partial _{i}\phi+\frac{1}{2}\pi ^{i}_{V}\pi ^{i}_{V}-\frac{1}{4}(\partial _{i}V^{j}-\partial _{j}V^{i})(\partial _{i}V^{j}-\partial _{j}V^{i})+\frac{1}{2}m^{2}(V^{i})^{2}-\frac{1}{2}m^{2}(V^{0})^{2}-\pi ^{i}_{V}\partial _{i}V^{0} \\
  & -igV^{0}(\pi _{\phi}\phi-\pi _{\phi}^{\dagger}\phi ^{^{\dagger}})+igV^{i}(\phi ^{\dagger}\partial _{i}\phi-\phi \partial _{i}\phi ^{\dagger})+g^{2}(V^{i})^{2}\phi ^{\dagger}\phi+\mathcal{H}(\phi ^{\dagger}\phi)
 \end{align}$$
+integrate out the $\displaystyle{V^{0}}$, we have
 
+$$\begin{align}
+\mathscr{H} & = \pi _{\phi}\pi _{\phi}^{\dagger}+\partial _{i}\phi ^{\dagger}\partial _{i}\phi+\frac{1}{2}\pi ^{i}_{V}\pi ^{i}_{V}-\frac{1}{4}(\partial _{i}V^{j}-\partial _{j}V^{i})(\partial _{i}V^{j}-\partial _{j}V^{i})+\frac{1}{2m}(\partial _{i}\pi ^{i}_{V}-ig(\pi _{\phi}\phi-\pi _{\phi}^{\dagger}\phi ^{\dagger}))^{2}+\frac{1}{2}m^{2}(V^{i})^{2} \\
+ & +igV^{i}(\phi ^{\dagger}\partial _{i}\phi-\phi \partial _{i}\phi ^{\dagger})+g^{2}(V^{i})^{2}\phi ^{\dagger}\phi+\mathcal{H}(\phi ^{\dagger}\phi) \\
+ & =\pi _{\phi}\pi ^{\dagger}_{\phi}+\partial _{i}\phi ^{\dagger}\partial _{i}\phi+\frac{1}{2}\pi ^{i}_{V}\pi ^{i}_{V}+\frac{1}{2m}(\partial _{i}\pi ^{i}_{V})^{2}-\frac{1}{4}(\partial _{i}V^{j}-\partial _{j}V^{i})(\partial _{i}V^{j}-\partial _{j}V^{i})+\frac{1}{2}m^{2}(V^{i})^{2} \\
+ & +igV^{i}(\phi ^{\dagger}\partial _{i}\phi-\phi \partial _{i}\phi ^{\dagger})+g^{2}(V^{i})^{2}\phi ^{\dagger}\phi+\mathcal{H}(\phi ^{\dagger}\phi)-\frac{ig}{m}\partial _{i}\pi ^{i}_{V}(\pi _{\phi}\phi-\pi _{\phi}^{\dagger}\phi ^{\dagger})-\frac{g^{2}}{2m}(\pi _{\phi}\phi-\pi _{\phi}^{\dagger}\phi ^{\dagger})^{2}
+\end{align}$$
 the first line of the result gives the free Hamiltonian density, while the second line describes the interaction between scalar and vector. upon canonical quantization, we impose the equal-time commutation relations
 
 $$\begin{align}
@@ -102,7 +109,7 @@ $$\begin{align}
 now turn to interaction picture. operators evolve according to the free Hamiltonian
 
 $$\begin{align}
-H_{0} & =\int \mathrm{d}^{3}x\left( \pi _{\phi}\pi _{\phi}^{\dagger}+\partial _{i}\phi ^{\dagger}\partial _{i}\phi+\frac{1}{2}\pi ^{i}_{V}\pi ^{i}_{V}-\frac{1}{4}(\partial _{i}V^{j}-\partial _{j}V^{i})(\partial _{i}V^{j}-\partial _{j}V^{i})+\frac{1}{2}m^{2}(V^{i})^{2}-\frac{1}{2}m^{2}(V^{0})^{2}-\pi ^{i}_{V}\partial _{i}V^{0} \right)
+H_{0} & =\int \mathrm{d}^{3}x\left( \pi _{\phi}\pi ^{\dagger}_{\phi}+\partial _{i}\phi ^{\dagger}\partial _{i}\phi+\frac{1}{2}\pi ^{i}_{V}\pi ^{i}_{V}+\frac{1}{2m}(\partial _{i}\pi ^{i}_{V})^{2}-\frac{1}{4}(\partial _{i}V^{j}-\partial _{j}V^{i})(\partial _{i}V^{j}-\partial _{j}V^{i})+\frac{1}{2}m^{2}(V^{i})^{2} \right)
 \end{align}$$
 
 let operators evolve as
@@ -114,7 +121,7 @@ $$\begin{align}
 the interaction Hamiltonian is given by
 
 $$\begin{align}
-H_{\text{int}} & =\int \mathrm{d}^{3}x\left( -igV^{0}(\pi _{\phi}\phi-\pi _{\phi}^{\dagger}\phi ^{^{\dagger}})+igV^{i}(\phi ^{\dagger}\partial _{i}\phi-\phi \partial _{i}\phi ^{\dagger})+g^{2}(V^{i})^{2}\phi ^{\dagger}\phi+\mathcal{H}(\phi ^{\dagger}\phi) \right)
+H_{\text{int}} & =\int \mathrm{d}^{3}x\left( +igV^{i}(\phi ^{\dagger}\partial _{i}\phi-\phi \partial _{i}\phi ^{\dagger})+g^{2}(V^{i})^{2}\phi ^{\dagger}\phi+\mathcal{H}(\phi ^{\dagger}\phi)-\frac{ig}{m}\partial _{i}\pi ^{i}_{V}(\pi _{\phi}\phi-\pi _{\phi}^{\dagger}\phi ^{\dagger})-\frac{g^{2}}{2m}(\pi _{\phi}\phi-\pi _{\phi}^{\dagger}\phi ^{\dagger})^{2}\right)
 \end{align}$$
 
 here we omit the subscript $\displaystyle{I}$ for brevity. the time-evolution operator in interaction picture is given by the Dyson series
@@ -140,3 +147,4 @@ $$\begin{align}
  & =\int \mathrm{d}p \frac{p}{p^{2}+\varepsilon ^{2}}f(p)\mp i\varepsilon \int \mathrm{d}p \frac{f(p)}{p^{2}+\varepsilon ^{2}} \\
  & =\mathcal{P}\int \mathrm{d}p \frac{f(p)}{p}\mp i\pi f(0)
 \end{align}$$
+
