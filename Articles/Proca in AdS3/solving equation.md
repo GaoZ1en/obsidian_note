@@ -247,7 +247,8 @@ let $\displaystyle{g=(1+r^{2})^{\alpha}r^{\beta}f}$, the differential equation s
 
 $$\tag{.}
 \begin{align}
-(1+r^{2})\partial _{r}^{2}g+\frac{A-2\beta+(B-2\beta-4\alpha)r^{2}}{r}\partial _{r}g+\left( C+4\alpha \beta+2\alpha(\alpha+1)+\beta(\beta+1)-2\alpha B-\beta B+\frac{D-\beta A+\beta(\beta+1)}{r^{2}}+\frac{E-2\alpha(A-B)-2\alpha(\alpha+1)}{1+r^{2}} \right)g & =0
+(1+r^{2})\partial _{r}^{2}g+\frac{A-2\beta+(B-2\beta-4\alpha)r^{2}}{r}\partial _{r}g \\
++\left( C+4\alpha \beta+2\alpha(\alpha+1)+\beta(\beta+1)-2\alpha B-\beta B+\frac{D-\beta A+\beta(\beta+1)}{r^{2}}+\frac{E-2\alpha(A-B)-2\alpha(\alpha+1)}{1+r^{2}} \right)g & =0
 \end{align}
 $$
 
