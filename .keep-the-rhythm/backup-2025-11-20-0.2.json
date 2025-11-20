@@ -27664,7 +27664,7 @@
       },
       {
         "date": "2025-10-05",
-        "filePath": "Drafts/Untitled 1.md",
+        "filePath": "Drafts/AdS2.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -35210,7 +35210,7 @@
       },
       {
         "date": "2025-10-30",
-        "filePath": "Drafts/Untitled 1.md",
+        "filePath": "Drafts/AdS2.md",
         "wordCountStart": 668,
         "charCountStart": 3927,
         "changes": [
@@ -36776,79 +36776,21 @@
       },
       {
         "date": "2025-11-05",
-        "filePath": "Drafts/Untitled 2.md",
-        "wordCountStart": 395,
-        "charCountStart": 1822,
-        "changes": [
-          {
-            "timeKey": "09:10",
-            "w": 0,
-            "c": 2
-          },
-          {
-            "timeKey": "09:20",
-            "w": 30,
-            "c": 169
-          },
-          {
-            "timeKey": "09:25",
-            "w": 187,
-            "c": 906
-          },
-          {
-            "timeKey": "09:30",
-            "w": 245,
-            "c": 1167
-          },
-          {
-            "timeKey": "09:35",
-            "w": -622,
-            "c": -3002
-          },
-          {
-            "timeKey": "09:40",
-            "w": 496,
-            "c": 2187
-          },
-          {
-            "timeKey": "09:45",
-            "w": -19,
-            "c": -85
-          },
-          {
-            "timeKey": "09:50",
-            "w": -88,
-            "c": -366
-          },
-          {
-            "timeKey": "09:55",
-            "w": -109,
-            "c": -468
-          },
-          {
-            "timeKey": "10:00",
-            "w": -145,
-            "c": -706
-          },
-          {
-            "timeKey": "13:50",
-            "w": 0,
-            "c": 0
-          }
-        ],
-        "id": 1271
-      },
-      {
-        "date": "2025-11-05",
         "filePath": "Articles/Proca in AdS3/Noether charge.md",
         "wordCountStart": 11602,
         "charCountStart": 47349,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "19:05",
+            "w": -5,
+            "c": -21
+          }
+        ],
         "id": 1272
       },
       {
         "date": "2025-11-05",
-        "filePath": "Articles/Proca in AdS3/heat kernel method in AdSd.md",
+        "filePath": "Articles/thermodynamics of scalar in ads/heat kernel method in AdSd.md",
         "wordCountStart": 0,
         "charCountStart": 0,
         "changes": [
@@ -36898,6 +36840,3055 @@
           }
         ],
         "id": 1274
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "TODO.md",
+        "wordCountStart": 6196,
+        "charCountStart": 31094,
+        "changes": [
+          {
+            "timeKey": "19:00",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1275
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/Noether charge/Complex Klein-Gordon scalar.md",
+        "wordCountStart": 103,
+        "charCountStart": 831,
+        "changes": [],
+        "id": 1277
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/Proca in AdS3/correlation function 2.md",
+        "wordCountStart": 2165,
+        "charCountStart": 8573,
+        "changes": [],
+        "id": 1278
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 1279
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5462,
+        "charCountStart": 23573,
+        "changes": [],
+        "id": 1280
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13738,
+        "changes": [],
+        "id": 1281
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 11678,
+        "charCountStart": 46490,
+        "changes": [],
+        "id": 1282
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/Proca in AdS3/symplectic structure on the reduced phase space.md",
+        "wordCountStart": 476,
+        "charCountStart": 2840,
+        "changes": [],
+        "id": 1283
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/Proca in AdS3/two structures.md",
+        "wordCountStart": 2011,
+        "charCountStart": 8060,
+        "changes": [],
+        "id": 1284
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/Proca in AdS3/relations of Jacobi polynomials and hypergeometric functions.md",
+        "wordCountStart": 1329,
+        "charCountStart": 6170,
+        "changes": [],
+        "id": 1285
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/Proca in AdS3/linear combination of h symbols.md",
+        "wordCountStart": 4099,
+        "charCountStart": 16221,
+        "changes": [],
+        "id": 1286
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/Proca in AdS3/correlation function.md",
+        "wordCountStart": 2016,
+        "charCountStart": 8307,
+        "changes": [
+          {
+            "timeKey": "19:05",
+            "w": 6,
+            "c": 41
+          }
+        ],
+        "id": 1287
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/thermodynamics of scalar in ads/canonical quantization with covariant phase formalism.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "19:10",
+            "w": 3,
+            "c": 11
+          },
+          {
+            "timeKey": "19:15",
+            "w": 156,
+            "c": 796
+          },
+          {
+            "timeKey": "19:20",
+            "w": 1082,
+            "c": 5920
+          },
+          {
+            "timeKey": "19:25",
+            "w": -911,
+            "c": -4911
+          },
+          {
+            "timeKey": "19:30",
+            "w": 107,
+            "c": 537
+          },
+          {
+            "timeKey": "19:35",
+            "w": 451,
+            "c": 2107
+          },
+          {
+            "timeKey": "19:40",
+            "w": 297,
+            "c": 1581
+          }
+        ],
+        "id": 1288
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/quantization/canonical quantization of fermionic systems.md",
+        "wordCountStart": 1426,
+        "charCountStart": 8002,
+        "changes": [],
+        "id": 1289
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 7538,
+        "charCountStart": 36447,
+        "changes": [],
+        "id": 1290
+      },
+      {
+        "date": "2025-11-05",
+        "filePath": "Articles/quantization/article/main.md",
+        "wordCountStart": 9310,
+        "charCountStart": 48546,
+        "changes": [],
+        "id": 1291
+      },
+      {
+        "date": "2025-11-06",
+        "filePath": "Articles/thermodynamics of scalar in ads/canonical quantization with covariant phase formalism.md",
+        "wordCountStart": 1185,
+        "charCountStart": 6041,
+        "changes": [],
+        "id": 1292
+      },
+      {
+        "date": "2025-11-06",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 4351,
+        "charCountStart": 20844,
+        "changes": [
+          {
+            "timeKey": "13:40",
+            "w": 10,
+            "c": 53
+          },
+          {
+            "timeKey": "13:45",
+            "w": 6,
+            "c": 30
+          },
+          {
+            "timeKey": "13:55",
+            "w": 4,
+            "c": 17
+          },
+          {
+            "timeKey": "14:00",
+            "w": 6,
+            "c": 22
+          },
+          {
+            "timeKey": "14:05",
+            "w": 24,
+            "c": 89
+          },
+          {
+            "timeKey": "14:10",
+            "w": 1,
+            "c": 28
+          },
+          {
+            "timeKey": "14:15",
+            "w": 4,
+            "c": 25
+          },
+          {
+            "timeKey": "14:20",
+            "w": 5,
+            "c": 28
+          },
+          {
+            "timeKey": "14:35",
+            "w": 8,
+            "c": 28
+          },
+          {
+            "timeKey": "14:55",
+            "w": 24,
+            "c": 123
+          },
+          {
+            "timeKey": "15:00",
+            "w": 0,
+            "c": -1
+          },
+          {
+            "timeKey": "19:55",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "20:25",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1293
+      },
+      {
+        "date": "2025-11-06",
+        "filePath": "Note/Physics/wait-to-be-complete/Heat kernel method.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1294
+      },
+      {
+        "date": "2025-11-06",
+        "filePath": "Articles/thermodynamics of scalar in ads/heat kernel method in AdSd.md",
+        "wordCountStart": 1105,
+        "charCountStart": 6433,
+        "changes": [
+          {
+            "timeKey": "14:30",
+            "w": -149,
+            "c": -878
+          },
+          {
+            "timeKey": "14:35",
+            "w": -75,
+            "c": -630
+          },
+          {
+            "timeKey": "14:45",
+            "w": 6,
+            "c": 35
+          },
+          {
+            "timeKey": "14:50",
+            "w": 46,
+            "c": 164
+          },
+          {
+            "timeKey": "14:55",
+            "w": 59,
+            "c": 219
+          },
+          {
+            "timeKey": "15:00",
+            "w": -8,
+            "c": -252
+          },
+          {
+            "timeKey": "15:05",
+            "w": -23,
+            "c": -249
+          },
+          {
+            "timeKey": "16:50",
+            "w": 54,
+            "c": 225
+          },
+          {
+            "timeKey": "17:25",
+            "w": -13,
+            "c": -69
+          },
+          {
+            "timeKey": "21:10",
+            "w": 981,
+            "c": 6236
+          }
+        ],
+        "id": 1295
+      },
+      {
+        "date": "2025-11-06",
+        "filePath": "Articles/Proca in AdS3/Casimir operator.md",
+        "wordCountStart": 1227,
+        "charCountStart": 5566,
+        "changes": [],
+        "id": 1296
+      },
+      {
+        "date": "2025-11-06",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 12.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:30",
+            "w": 30,
+            "c": 203
+          },
+          {
+            "timeKey": "15:35",
+            "w": 9,
+            "c": 79
+          },
+          {
+            "timeKey": "15:40",
+            "w": 20,
+            "c": 108
+          },
+          {
+            "timeKey": "15:45",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "15:50",
+            "w": 10,
+            "c": 63
+          },
+          {
+            "timeKey": "15:55",
+            "w": -4,
+            "c": -21
+          },
+          {
+            "timeKey": "16:00",
+            "w": 59,
+            "c": 320
+          },
+          {
+            "timeKey": "16:05",
+            "w": 166,
+            "c": 721
+          },
+          {
+            "timeKey": "16:15",
+            "w": 25,
+            "c": 149
+          },
+          {
+            "timeKey": "16:20",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "16:25",
+            "w": 3,
+            "c": 9
+          },
+          {
+            "timeKey": "16:30",
+            "w": 13,
+            "c": 71
+          },
+          {
+            "timeKey": "16:35",
+            "w": 24,
+            "c": 160
+          },
+          {
+            "timeKey": "16:55",
+            "w": 138,
+            "c": 745
+          },
+          {
+            "timeKey": "17:00",
+            "w": -23,
+            "c": -125
+          },
+          {
+            "timeKey": "17:05",
+            "w": -79,
+            "c": -388
+          },
+          {
+            "timeKey": "17:10",
+            "w": 150,
+            "c": 828
+          },
+          {
+            "timeKey": "17:15",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "17:20",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "17:30",
+            "w": 0,
+            "c": -1
+          }
+        ],
+        "id": 1297
+      },
+      {
+        "date": "2025-11-06",
+        "filePath": "Articles/Proca in AdS3/symplectic form.md",
+        "wordCountStart": 11678,
+        "charCountStart": 46490,
+        "changes": [],
+        "id": 1298
+      },
+      {
+        "date": "2025-11-06",
+        "filePath": "Articles/Proca in AdS3/Euclidean correlation function.md",
+        "wordCountStart": 724,
+        "charCountStart": 2879,
+        "changes": [],
+        "id": 1299
+      },
+      {
+        "date": "2025-11-06",
+        "filePath": "Articles/thermodynamics of scalar in ads/scalar field in the background electric field.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "00:00",
+            "w": 146,
+            "c": 717
+          },
+          {
+            "timeKey": "00:05",
+            "w": -37,
+            "c": -165
+          },
+          {
+            "timeKey": "00:10",
+            "w": 17,
+            "c": 78
+          },
+          {
+            "timeKey": "00:15",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "00:20",
+            "w": 7,
+            "c": 36
+          },
+          {
+            "timeKey": "21:15",
+            "w": 5,
+            "c": 37
+          },
+          {
+            "timeKey": "21:20",
+            "w": 11,
+            "c": 55
+          },
+          {
+            "timeKey": "21:25",
+            "w": 12,
+            "c": 74
+          },
+          {
+            "timeKey": "21:40",
+            "w": 6,
+            "c": 58
+          },
+          {
+            "timeKey": "21:45",
+            "w": 21,
+            "c": 115
+          },
+          {
+            "timeKey": "21:50",
+            "w": 13,
+            "c": 52
+          },
+          {
+            "timeKey": "21:55",
+            "w": 72,
+            "c": 341
+          },
+          {
+            "timeKey": "22:05",
+            "w": 68,
+            "c": 384
+          },
+          {
+            "timeKey": "22:10",
+            "w": -7,
+            "c": -43
+          },
+          {
+            "timeKey": "22:15",
+            "w": 57,
+            "c": 325
+          },
+          {
+            "timeKey": "22:20",
+            "w": 77,
+            "c": 500
+          },
+          {
+            "timeKey": "22:25",
+            "w": 138,
+            "c": 745
+          },
+          {
+            "timeKey": "22:30",
+            "w": 166,
+            "c": 772
+          },
+          {
+            "timeKey": "22:35",
+            "w": 132,
+            "c": 546
+          },
+          {
+            "timeKey": "22:50",
+            "w": -37,
+            "c": -142
+          },
+          {
+            "timeKey": "22:55",
+            "w": 135,
+            "c": 528
+          },
+          {
+            "timeKey": "23:00",
+            "w": -60,
+            "c": -194
+          },
+          {
+            "timeKey": "23:05",
+            "w": 257,
+            "c": 1341
+          },
+          {
+            "timeKey": "23:10",
+            "w": 228,
+            "c": 1092
+          },
+          {
+            "timeKey": "23:15",
+            "w": 24,
+            "c": 143
+          },
+          {
+            "timeKey": "23:20",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "23:25",
+            "w": 0,
+            "c": 25
+          },
+          {
+            "timeKey": "23:40",
+            "w": 49,
+            "c": 302
+          },
+          {
+            "timeKey": "23:45",
+            "w": 92,
+            "c": 518
+          },
+          {
+            "timeKey": "23:50",
+            "w": 132,
+            "c": 730
+          },
+          {
+            "timeKey": "23:55",
+            "w": 205,
+            "c": 1123
+          }
+        ],
+        "id": 1300
+      },
+      {
+        "date": "2025-11-06",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5462,
+        "charCountStart": 23573,
+        "changes": [],
+        "id": 1301
+      },
+      {
+        "date": "2025-11-07",
+        "filePath": "Articles/thermodynamics of scalar in ads/scalar field in the background electric field.md",
+        "wordCountStart": 1929,
+        "charCountStart": 10094,
+        "changes": [],
+        "id": 1302
+      },
+      {
+        "date": "2025-11-07",
+        "filePath": "Drafts/Untitled 2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "09:25",
+            "w": 1012,
+            "c": 6712
+          }
+        ],
+        "id": 1303
+      },
+      {
+        "date": "2025-11-07",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 4443,
+        "charCountStart": 21286,
+        "changes": [
+          {
+            "timeKey": "14:50",
+            "w": 19,
+            "c": 111
+          }
+        ],
+        "id": 1304
+      },
+      {
+        "date": "2025-11-07",
+        "filePath": "TODO.md",
+        "wordCountStart": 6196,
+        "charCountStart": 31094,
+        "changes": [],
+        "id": 1305
+      },
+      {
+        "date": "2025-11-07",
+        "filePath": "Note/useful results/covariant phase space formalism.md",
+        "wordCountStart": 961,
+        "charCountStart": 5201,
+        "changes": [
+          {
+            "timeKey": "11:10",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "13:35",
+            "w": 127,
+            "c": 641
+          },
+          {
+            "timeKey": "13:40",
+            "w": -72,
+            "c": -284
+          },
+          {
+            "timeKey": "13:55",
+            "w": -96,
+            "c": -594
+          },
+          {
+            "timeKey": "14:00",
+            "w": 109,
+            "c": 628
+          }
+        ],
+        "id": 1306
+      },
+      {
+        "date": "2025-11-07",
+        "filePath": "Articles/Proca in AdS3/Casimir operator.md",
+        "wordCountStart": 1227,
+        "charCountStart": 5566,
+        "changes": [
+          {
+            "timeKey": "13:50",
+            "w": 31,
+            "c": 116
+          },
+          {
+            "timeKey": "14:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1307
+      },
+      {
+        "date": "2025-11-08",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 4462,
+        "charCountStart": 21397,
+        "changes": [
+          {
+            "timeKey": "20:25",
+            "w": 1,
+            "c": 4
+          }
+        ],
+        "id": 1308
+      },
+      {
+        "date": "2025-11-08",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13738,
+        "changes": [
+          {
+            "timeKey": "20:05",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1309
+      },
+      {
+        "date": "2025-11-08",
+        "filePath": "Articles/thermodynamics of scalar in ads/heat kernel method in flat spacetime.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "20:10",
+            "w": 24,
+            "c": 121
+          },
+          {
+            "timeKey": "20:15",
+            "w": 164,
+            "c": 883
+          },
+          {
+            "timeKey": "20:20",
+            "w": 57,
+            "c": 363
+          },
+          {
+            "timeKey": "20:25",
+            "w": 182,
+            "c": 771
+          },
+          {
+            "timeKey": "20:30",
+            "w": 238,
+            "c": 1059
+          },
+          {
+            "timeKey": "20:55",
+            "w": 92,
+            "c": 326
+          },
+          {
+            "timeKey": "21:00",
+            "w": 218,
+            "c": 893
+          },
+          {
+            "timeKey": "21:05",
+            "w": 71,
+            "c": 371
+          },
+          {
+            "timeKey": "21:10",
+            "w": -46,
+            "c": -202
+          },
+          {
+            "timeKey": "21:15",
+            "w": -138,
+            "c": -667
+          },
+          {
+            "timeKey": "21:20",
+            "w": -31,
+            "c": -149
+          },
+          {
+            "timeKey": "21:25",
+            "w": 3,
+            "c": 31
+          },
+          {
+            "timeKey": "21:30",
+            "w": 11,
+            "c": 69
+          },
+          {
+            "timeKey": "21:35",
+            "w": 1,
+            "c": 11
+          }
+        ],
+        "id": 1310
+      },
+      {
+        "date": "2025-11-08",
+        "filePath": "Articles/thermodynamics of scalar in ads/heat kernel method in dS spacetime.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "21:40",
+            "w": 42,
+            "c": 223
+          },
+          {
+            "timeKey": "21:50",
+            "w": -20,
+            "c": -78
+          },
+          {
+            "timeKey": "21:55",
+            "w": -7,
+            "c": -43
+          },
+          {
+            "timeKey": "22:00",
+            "w": 58,
+            "c": 256
+          },
+          {
+            "timeKey": "22:25",
+            "w": -62,
+            "c": -282
+          }
+        ],
+        "id": 1311
+      },
+      {
+        "date": "2025-11-08",
+        "filePath": "Articles/thermodynamics of scalar in ads/().md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 1312
+      },
+      {
+        "date": "2025-11-09",
+        "filePath": "Articles/thermodynamics of scalar in ads/heat kernel method in dS spacetime.md",
+        "wordCountStart": 11,
+        "charCountStart": 76,
+        "changes": [
+          {
+            "timeKey": "14:00",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1313
+      },
+      {
+        "date": "2025-11-10",
+        "filePath": "Articles/thermodynamics of scalar in ads/heat kernel method in dS spacetime.md",
+        "wordCountStart": 11,
+        "charCountStart": 76,
+        "changes": [
+          {
+            "timeKey": "09:10",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1314
+      },
+      {
+        "date": "2025-11-10",
+        "filePath": "Articles/thermodynamics of scalar in ads/().md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 1315
+      },
+      {
+        "date": "2025-11-10",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/homework/qm&qi homework 4.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "09:10",
+            "w": 66,
+            "c": 433
+          },
+          {
+            "timeKey": "09:15",
+            "w": -46,
+            "c": -275
+          },
+          {
+            "timeKey": "09:20",
+            "w": 19,
+            "c": 102
+          },
+          {
+            "timeKey": "09:25",
+            "w": 176,
+            "c": 1124
+          },
+          {
+            "timeKey": "09:30",
+            "w": 17,
+            "c": 91
+          },
+          {
+            "timeKey": "10:30",
+            "w": 125,
+            "c": 826
+          },
+          {
+            "timeKey": "10:35",
+            "w": 144,
+            "c": 681
+          },
+          {
+            "timeKey": "10:40",
+            "w": 3,
+            "c": 25
+          },
+          {
+            "timeKey": "10:45",
+            "w": 326,
+            "c": 1674
+          },
+          {
+            "timeKey": "10:50",
+            "w": 21,
+            "c": 133
+          },
+          {
+            "timeKey": "11:00",
+            "w": 16,
+            "c": 101
+          },
+          {
+            "timeKey": "11:05",
+            "w": -16,
+            "c": -100
+          },
+          {
+            "timeKey": "11:10",
+            "w": 456,
+            "c": 2335
+          },
+          {
+            "timeKey": "11:15",
+            "w": 475,
+            "c": 2817
+          },
+          {
+            "timeKey": "11:20",
+            "w": -180,
+            "c": -1348
+          },
+          {
+            "timeKey": "16:30",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1316
+      },
+      {
+        "date": "2025-11-10",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/homework/qm&qi homework 3.md",
+        "wordCountStart": 3331,
+        "charCountStart": 17280,
+        "changes": [],
+        "id": 1317
+      },
+      {
+        "date": "2025-11-10",
+        "filePath": "Note/Reading/symmetry and topology/topology/homework3.md",
+        "wordCountStart": 437,
+        "charCountStart": 2633,
+        "changes": [],
+        "id": 1318
+      },
+      {
+        "date": "2025-11-10",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 7.md",
+        "wordCountStart": 436,
+        "charCountStart": 2322,
+        "changes": [],
+        "id": 1319
+      },
+      {
+        "date": "2025-11-10",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 6.md",
+        "wordCountStart": 635,
+        "charCountStart": 5882,
+        "changes": [],
+        "id": 1320
+      },
+      {
+        "date": "2025-11-10",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 3360,
+        "charCountStart": 16401,
+        "changes": [
+          {
+            "timeKey": "09:35",
+            "w": 10,
+            "c": 45
+          },
+          {
+            "timeKey": "09:40",
+            "w": 74,
+            "c": 399
+          },
+          {
+            "timeKey": "09:45",
+            "w": 228,
+            "c": 1110
+          },
+          {
+            "timeKey": "09:50",
+            "w": 251,
+            "c": 1225
+          },
+          {
+            "timeKey": "09:55",
+            "w": 310,
+            "c": 1243
+          },
+          {
+            "timeKey": "10:00",
+            "w": 73,
+            "c": 263
+          },
+          {
+            "timeKey": "10:05",
+            "w": 209,
+            "c": 966
+          },
+          {
+            "timeKey": "20:40",
+            "w": 6,
+            "c": 60
+          },
+          {
+            "timeKey": "20:45",
+            "w": 132,
+            "c": 647
+          },
+          {
+            "timeKey": "20:50",
+            "w": 96,
+            "c": 454
+          },
+          {
+            "timeKey": "20:55",
+            "w": 158,
+            "c": 797
+          },
+          {
+            "timeKey": "21:00",
+            "w": 32,
+            "c": 185
+          },
+          {
+            "timeKey": "21:05",
+            "w": 103,
+            "c": 431
+          },
+          {
+            "timeKey": "21:10",
+            "w": -3,
+            "c": -15
+          },
+          {
+            "timeKey": "21:15",
+            "w": 79,
+            "c": 332
+          },
+          {
+            "timeKey": "21:20",
+            "w": -25,
+            "c": -77
+          },
+          {
+            "timeKey": "21:40",
+            "w": 872,
+            "c": 4726
+          },
+          {
+            "timeKey": "21:45",
+            "w": 66,
+            "c": 858
+          },
+          {
+            "timeKey": "21:55",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "22:00",
+            "w": 160,
+            "c": 715
+          },
+          {
+            "timeKey": "22:05",
+            "w": -1098,
+            "c": -6300
+          },
+          {
+            "timeKey": "22:15",
+            "w": 465,
+            "c": 2580
+          },
+          {
+            "timeKey": "22:20",
+            "w": -336,
+            "c": -1976
+          },
+          {
+            "timeKey": "22:30",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "22:35",
+            "w": 515,
+            "c": 2608
+          },
+          {
+            "timeKey": "22:45",
+            "w": 27,
+            "c": 128
+          },
+          {
+            "timeKey": "22:50",
+            "w": 190,
+            "c": 820
+          },
+          {
+            "timeKey": "22:55",
+            "w": -666,
+            "c": -3326
+          },
+          {
+            "timeKey": "23:00",
+            "w": 66,
+            "c": 313
+          },
+          {
+            "timeKey": "23:05",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "23:10",
+            "w": 115,
+            "c": 498
+          },
+          {
+            "timeKey": "23:15",
+            "w": 45,
+            "c": 181
+          },
+          {
+            "timeKey": "23:20",
+            "w": 47,
+            "c": 174
+          }
+        ],
+        "id": 1321
+      },
+      {
+        "date": "2025-11-11",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 5561,
+        "charCountStart": 26466,
+        "changes": [
+          {
+            "timeKey": "10:30",
+            "w": -2,
+            "c": -17
+          },
+          {
+            "timeKey": "10:45",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "10:50",
+            "w": 5,
+            "c": 54
+          },
+          {
+            "timeKey": "10:55",
+            "w": -5,
+            "c": -44
+          },
+          {
+            "timeKey": "11:35",
+            "w": 1,
+            "c": 5
+          },
+          {
+            "timeKey": "14:35",
+            "w": 8,
+            "c": 69
+          },
+          {
+            "timeKey": "14:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1322
+      },
+      {
+        "date": "2025-11-11",
+        "filePath": "Articles/thermodynamics of scalar in ads/().md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "14:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1323
+      },
+      {
+        "date": "2025-11-11",
+        "filePath": "TODO.md",
+        "wordCountStart": 6196,
+        "charCountStart": 31094,
+        "changes": [
+          {
+            "timeKey": "14:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1324
+      },
+      {
+        "date": "2025-11-11",
+        "filePath": "Articles/quantization/article/main.md",
+        "wordCountStart": 9310,
+        "charCountStart": 48546,
+        "changes": [],
+        "id": 1325
+      },
+      {
+        "date": "2025-11-11",
+        "filePath": "Note/Reading/black hole thermodynamics/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "14:40",
+            "w": 177,
+            "c": 1005
+          },
+          {
+            "timeKey": "14:45",
+            "w": -177,
+            "c": -1005
+          }
+        ],
+        "id": 1326
+      },
+      {
+        "date": "2025-11-11",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13738,
+        "changes": [
+          {
+            "timeKey": "14:45",
+            "w": 0,
+            "c": 3
+          },
+          {
+            "timeKey": "14:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1327
+      },
+      {
+        "date": "2025-11-11",
+        "filePath": "Note/useful results/blackhole entropy/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "14:55",
+            "w": 135,
+            "c": 549
+          },
+          {
+            "timeKey": "15:00",
+            "w": 35,
+            "c": 143
+          },
+          {
+            "timeKey": "15:05",
+            "w": 110,
+            "c": 593
+          },
+          {
+            "timeKey": "15:10",
+            "w": 68,
+            "c": 368
+          },
+          {
+            "timeKey": "15:15",
+            "w": 99,
+            "c": 554
+          },
+          {
+            "timeKey": "15:25",
+            "w": -228,
+            "c": -1297
+          },
+          {
+            "timeKey": "15:30",
+            "w": 39,
+            "c": 205
+          },
+          {
+            "timeKey": "16:50",
+            "w": 82,
+            "c": 437
+          },
+          {
+            "timeKey": "16:55",
+            "w": 79,
+            "c": 444
+          },
+          {
+            "timeKey": "17:00",
+            "w": -214,
+            "c": -1172
+          },
+          {
+            "timeKey": "17:05",
+            "w": 240,
+            "c": 1276
+          },
+          {
+            "timeKey": "17:10",
+            "w": 62,
+            "c": 262
+          },
+          {
+            "timeKey": "17:15",
+            "w": -182,
+            "c": -1020
+          },
+          {
+            "timeKey": "17:20",
+            "w": 102,
+            "c": 372
+          },
+          {
+            "timeKey": "17:25",
+            "w": 111,
+            "c": 408
+          },
+          {
+            "timeKey": "17:40",
+            "w": 255,
+            "c": 948
+          },
+          {
+            "timeKey": "17:45",
+            "w": -118,
+            "c": -477
+          },
+          {
+            "timeKey": "18:35",
+            "w": 128,
+            "c": 558
+          },
+          {
+            "timeKey": "18:40",
+            "w": -25,
+            "c": -94
+          },
+          {
+            "timeKey": "18:45",
+            "w": -48,
+            "c": -224
+          },
+          {
+            "timeKey": "18:50",
+            "w": 260,
+            "c": 1024
+          },
+          {
+            "timeKey": "18:55",
+            "w": 348,
+            "c": 1315
+          },
+          {
+            "timeKey": "19:00",
+            "w": 39,
+            "c": 146
+          }
+        ],
+        "id": 1328
+      },
+      {
+        "date": "2025-11-11",
+        "filePath": "Articles/thermodynamics of scalar in ads/heat kernel method in flat spacetime.md",
+        "wordCountStart": 846,
+        "charCountStart": 3880,
+        "changes": [],
+        "id": 1329
+      },
+      {
+        "date": "2025-11-11",
+        "filePath": "Note/useful results/geometric quantities in adsn.md",
+        "wordCountStart": 289,
+        "charCountStart": 1335,
+        "changes": [],
+        "id": 1330
+      },
+      {
+        "date": "2025-11-12",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 5568,
+        "charCountStart": 26533,
+        "changes": [
+          {
+            "timeKey": "13:45",
+            "w": -8,
+            "c": -69
+          },
+          {
+            "timeKey": "13:50",
+            "w": 23,
+            "c": 147
+          },
+          {
+            "timeKey": "13:55",
+            "w": 5,
+            "c": 17
+          },
+          {
+            "timeKey": "14:15",
+            "w": 0,
+            "c": 5
+          },
+          {
+            "timeKey": "14:25",
+            "w": 6,
+            "c": 28
+          },
+          {
+            "timeKey": "14:30",
+            "w": 37,
+            "c": 152
+          },
+          {
+            "timeKey": "14:35",
+            "w": -33,
+            "c": -133
+          },
+          {
+            "timeKey": "14:40",
+            "w": -121,
+            "c": -495
+          },
+          {
+            "timeKey": "14:45",
+            "w": 9,
+            "c": 43
+          },
+          {
+            "timeKey": "14:50",
+            "w": 103,
+            "c": 449
+          },
+          {
+            "timeKey": "14:55",
+            "w": 39,
+            "c": 126
+          },
+          {
+            "timeKey": "15:15",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "15:30",
+            "w": -1,
+            "c": -8
+          },
+          {
+            "timeKey": "15:35",
+            "w": 856,
+            "c": 4335
+          },
+          {
+            "timeKey": "15:40",
+            "w": -705,
+            "c": -3651
+          },
+          {
+            "timeKey": "15:45",
+            "w": -32,
+            "c": -136
+          },
+          {
+            "timeKey": "15:50",
+            "w": -2,
+            "c": -49
+          },
+          {
+            "timeKey": "15:55",
+            "w": 26,
+            "c": 100
+          },
+          {
+            "timeKey": "16:05",
+            "w": 32,
+            "c": 117
+          },
+          {
+            "timeKey": "16:10",
+            "w": 60,
+            "c": 246
+          },
+          {
+            "timeKey": "16:15",
+            "w": 54,
+            "c": 219
+          },
+          {
+            "timeKey": "16:20",
+            "w": 5,
+            "c": 18
+          },
+          {
+            "timeKey": "16:25",
+            "w": -249,
+            "c": -986
+          },
+          {
+            "timeKey": "16:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1331
+      },
+      {
+        "date": "2025-11-12",
+        "filePath": "Articles/thermodynamics of scalar in ads/scalar in AdS and flat spacetime.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:00",
+            "w": 162,
+            "c": 823
+          },
+          {
+            "timeKey": "17:05",
+            "w": 43,
+            "c": 200
+          },
+          {
+            "timeKey": "17:10",
+            "w": 96,
+            "c": 657
+          },
+          {
+            "timeKey": "17:15",
+            "w": 148,
+            "c": 775
+          },
+          {
+            "timeKey": "17:20",
+            "w": 232,
+            "c": 1315
+          },
+          {
+            "timeKey": "17:25",
+            "w": 189,
+            "c": 879
+          },
+          {
+            "timeKey": "17:30",
+            "w": -14,
+            "c": -84
+          },
+          {
+            "timeKey": "17:35",
+            "w": 0,
+            "c": -1
+          },
+          {
+            "timeKey": "19:25",
+            "w": 9,
+            "c": 69
+          },
+          {
+            "timeKey": "19:30",
+            "w": 47,
+            "c": 228
+          },
+          {
+            "timeKey": "19:50",
+            "w": 31,
+            "c": 166
+          },
+          {
+            "timeKey": "20:00",
+            "w": 34,
+            "c": 150
+          },
+          {
+            "timeKey": "20:05",
+            "w": 32,
+            "c": 158
+          },
+          {
+            "timeKey": "20:10",
+            "w": 15,
+            "c": 76
+          },
+          {
+            "timeKey": "20:15",
+            "w": 122,
+            "c": 624
+          },
+          {
+            "timeKey": "20:20",
+            "w": 191,
+            "c": 979
+          },
+          {
+            "timeKey": "20:30",
+            "w": 81,
+            "c": 432
+          },
+          {
+            "timeKey": "20:35",
+            "w": 94,
+            "c": 482
+          },
+          {
+            "timeKey": "20:50",
+            "w": 16,
+            "c": 109
+          },
+          {
+            "timeKey": "20:55",
+            "w": 162,
+            "c": 806
+          },
+          {
+            "timeKey": "21:00",
+            "w": -5,
+            "c": -34
+          },
+          {
+            "timeKey": "21:05",
+            "w": 110,
+            "c": 636
+          },
+          {
+            "timeKey": "21:10",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "21:20",
+            "w": 6,
+            "c": 39
+          },
+          {
+            "timeKey": "21:25",
+            "w": 0,
+            "c": 1
+          }
+        ],
+        "id": 1332
+      },
+      {
+        "date": "2025-11-12",
+        "filePath": "Articles/Proca in AdS3/scalar in adsn.md",
+        "wordCountStart": 984,
+        "charCountStart": 5376,
+        "changes": [],
+        "id": 1333
+      },
+      {
+        "date": "2025-11-12",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5462,
+        "charCountStart": 23573,
+        "changes": [],
+        "id": 1334
+      },
+      {
+        "date": "2025-11-12",
+        "filePath": "TODO.md",
+        "wordCountStart": 6196,
+        "charCountStart": 31094,
+        "changes": [],
+        "id": 1335
+      },
+      {
+        "date": "2025-11-13",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 13.md",
+        "wordCountStart": 40,
+        "charCountStart": 245,
+        "changes": [
+          {
+            "timeKey": "15:25",
+            "w": 18,
+            "c": 140
+          },
+          {
+            "timeKey": "15:30",
+            "w": 158,
+            "c": 950
+          },
+          {
+            "timeKey": "15:35",
+            "w": 8,
+            "c": 59
+          },
+          {
+            "timeKey": "15:40",
+            "w": 27,
+            "c": 156
+          },
+          {
+            "timeKey": "15:45",
+            "w": 6,
+            "c": 39
+          },
+          {
+            "timeKey": "15:55",
+            "w": 81,
+            "c": 504
+          },
+          {
+            "timeKey": "16:00",
+            "w": 10,
+            "c": 61
+          },
+          {
+            "timeKey": "16:05",
+            "w": 4,
+            "c": 20
+          },
+          {
+            "timeKey": "16:15",
+            "w": 12,
+            "c": 73
+          },
+          {
+            "timeKey": "16:35",
+            "w": 104,
+            "c": 623
+          },
+          {
+            "timeKey": "16:40",
+            "w": 58,
+            "c": 381
+          },
+          {
+            "timeKey": "16:45",
+            "w": 48,
+            "c": 310
+          },
+          {
+            "timeKey": "16:50",
+            "w": 2,
+            "c": 10
+          },
+          {
+            "timeKey": "16:55",
+            "w": 90,
+            "c": 508
+          },
+          {
+            "timeKey": "17:15",
+            "w": 44,
+            "c": 283
+          },
+          {
+            "timeKey": "17:25",
+            "w": 51,
+            "c": 330
+          },
+          {
+            "timeKey": "17:30",
+            "w": 11,
+            "c": 36
+          },
+          {
+            "timeKey": "17:40",
+            "w": 1,
+            "c": 1
+          },
+          {
+            "timeKey": "17:45",
+            "w": 48,
+            "c": 315
+          },
+          {
+            "timeKey": "21:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1336
+      },
+      {
+        "date": "2025-11-13",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 5476,
+        "charCountStart": 26169,
+        "changes": [
+          {
+            "timeKey": "15:50",
+            "w": 119,
+            "c": 497
+          },
+          {
+            "timeKey": "15:55",
+            "w": 70,
+            "c": 357
+          }
+        ],
+        "id": 1337
+      },
+      {
+        "date": "2025-11-13",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/homework/qm&qi homework 4.md",
+        "wordCountStart": 1602,
+        "charCountStart": 8619,
+        "changes": [],
+        "id": 1338
+      },
+      {
+        "date": "2025-11-14",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 5674,
+        "charCountStart": 27059,
+        "changes": [
+          {
+            "timeKey": "10:45",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1339
+      },
+      {
+        "date": "2025-11-14",
+        "filePath": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+        "wordCountStart": 3516,
+        "charCountStart": 16221,
+        "changes": [
+          {
+            "timeKey": "10:50",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "10:55",
+            "w": 0,
+            "c": 1
+          }
+        ],
+        "id": 1340
+      },
+      {
+        "date": "2025-11-14",
+        "filePath": "Note/Physics/Miscellaneous/Wilsonian renormalization group.md",
+        "wordCountStart": 2962,
+        "charCountStart": 15013,
+        "changes": [
+          {
+            "timeKey": "20:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1341
+      },
+      {
+        "date": "2025-11-14",
+        "filePath": "Drafts/Untitled 2.md",
+        "wordCountStart": 1012,
+        "charCountStart": 6712,
+        "changes": [],
+        "id": 1342
+      },
+      {
+        "date": "2025-11-14",
+        "filePath": "Drafts/Proca field calculation.md",
+        "wordCountStart": 1327,
+        "charCountStart": 5248,
+        "changes": [
+          {
+            "timeKey": "20:40",
+            "w": 80,
+            "c": 385
+          },
+          {
+            "timeKey": "20:45",
+            "w": 66,
+            "c": 258
+          },
+          {
+            "timeKey": "20:50",
+            "w": 21,
+            "c": 67
+          },
+          {
+            "timeKey": "20:55",
+            "w": -6,
+            "c": -53
+          },
+          {
+            "timeKey": "21:10",
+            "w": 72,
+            "c": 295
+          },
+          {
+            "timeKey": "21:15",
+            "w": 172,
+            "c": 720
+          },
+          {
+            "timeKey": "21:20",
+            "w": 103,
+            "c": 418
+          },
+          {
+            "timeKey": "21:25",
+            "w": 36,
+            "c": 128
+          },
+          {
+            "timeKey": "21:30",
+            "w": 5,
+            "c": 22
+          }
+        ],
+        "id": 1343
+      },
+      {
+        "date": "2025-11-14",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6040,
+        "charCountStart": 25721,
+        "changes": [],
+        "id": 1344
+      },
+      {
+        "date": "2025-11-14",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13741,
+        "changes": [],
+        "id": 1345
+      },
+      {
+        "date": "2025-11-15",
+        "filePath": "Articles/Proca in AdS3/ADM decomposition.md",
+        "wordCountStart": 6040,
+        "charCountStart": 25721,
+        "changes": [],
+        "id": 1346
+      },
+      {
+        "date": "2025-11-15",
+        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/gr homework 5.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:30",
+            "w": 49,
+            "c": 296
+          },
+          {
+            "timeKey": "15:35",
+            "w": 177,
+            "c": 985
+          }
+        ],
+        "id": 1347
+      },
+      {
+        "date": "2025-11-15",
+        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/gr homework 6.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:35",
+            "w": 31,
+            "c": 178
+          },
+          {
+            "timeKey": "15:40",
+            "w": 101,
+            "c": 584
+          },
+          {
+            "timeKey": "15:45",
+            "w": 38,
+            "c": 283
+          },
+          {
+            "timeKey": "15:50",
+            "w": 214,
+            "c": 988
+          },
+          {
+            "timeKey": "15:55",
+            "w": 374,
+            "c": 1614
+          },
+          {
+            "timeKey": "16:00",
+            "w": -52,
+            "c": 5
+          },
+          {
+            "timeKey": "16:05",
+            "w": -7,
+            "c": -19
+          },
+          {
+            "timeKey": "16:10",
+            "w": 142,
+            "c": 783
+          },
+          {
+            "timeKey": "16:15",
+            "w": -37,
+            "c": -131
+          }
+        ],
+        "id": 1348
+      },
+      {
+        "date": "2025-11-15",
+        "filePath": "Lecture/graduate/2025 fall/general relativity by Yu Tian and Xiaoning Wu/homework/gr homework 4.md",
+        "wordCountStart": 609,
+        "charCountStart": 3294,
+        "changes": [],
+        "id": 1349
+      },
+      {
+        "date": "2025-11-15",
+        "filePath": "TODO.md",
+        "wordCountStart": 6196,
+        "charCountStart": 31094,
+        "changes": [
+          {
+            "timeKey": "16:25",
+            "w": 2,
+            "c": 21
+          },
+          {
+            "timeKey": "20:40",
+            "w": 6,
+            "c": 29
+          }
+        ],
+        "id": 1350
+      },
+      {
+        "date": "2025-11-15",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 8.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:30",
+            "w": 111,
+            "c": 653
+          },
+          {
+            "timeKey": "17:35",
+            "w": 301,
+            "c": 1663
+          },
+          {
+            "timeKey": "17:40",
+            "w": 165,
+            "c": 847
+          },
+          {
+            "timeKey": "17:45",
+            "w": -22,
+            "c": -116
+          },
+          {
+            "timeKey": "17:50",
+            "w": 135,
+            "c": 641
+          },
+          {
+            "timeKey": "17:55",
+            "w": 169,
+            "c": 798
+          },
+          {
+            "timeKey": "18:00",
+            "w": -128,
+            "c": -625
+          },
+          {
+            "timeKey": "18:05",
+            "w": 4,
+            "c": 30
+          },
+          {
+            "timeKey": "18:10",
+            "w": 55,
+            "c": 236
+          },
+          {
+            "timeKey": "18:15",
+            "w": 138,
+            "c": 678
+          },
+          {
+            "timeKey": "18:20",
+            "w": 19,
+            "c": 134
+          },
+          {
+            "timeKey": "18:25",
+            "w": 231,
+            "c": 1165
+          },
+          {
+            "timeKey": "18:30",
+            "w": 138,
+            "c": 705
+          },
+          {
+            "timeKey": "18:35",
+            "w": 593,
+            "c": 3508
+          },
+          {
+            "timeKey": "18:40",
+            "w": 52,
+            "c": 160
+          },
+          {
+            "timeKey": "19:35",
+            "w": 104,
+            "c": 588
+          },
+          {
+            "timeKey": "19:40",
+            "w": -324,
+            "c": -1934
+          },
+          {
+            "timeKey": "19:45",
+            "w": 59,
+            "c": 305
+          },
+          {
+            "timeKey": "19:50",
+            "w": 78,
+            "c": 201
+          },
+          {
+            "timeKey": "19:55",
+            "w": 52,
+            "c": 389
+          },
+          {
+            "timeKey": "20:00",
+            "w": -196,
+            "c": -1086
+          },
+          {
+            "timeKey": "20:05",
+            "w": 279,
+            "c": 1411
+          },
+          {
+            "timeKey": "20:10",
+            "w": -217,
+            "c": -1229
+          },
+          {
+            "timeKey": "20:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1351
+      },
+      {
+        "date": "2025-11-15",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 7.md",
+        "wordCountStart": 436,
+        "charCountStart": 2322,
+        "changes": [
+          {
+            "timeKey": "16:35",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "16:45",
+            "w": 17,
+            "c": 96
+          },
+          {
+            "timeKey": "16:50",
+            "w": 184,
+            "c": 1017
+          },
+          {
+            "timeKey": "17:00",
+            "w": 223,
+            "c": 1095
+          },
+          {
+            "timeKey": "17:05",
+            "w": 62,
+            "c": 297
+          },
+          {
+            "timeKey": "17:10",
+            "w": 164,
+            "c": 966
+          }
+        ],
+        "id": 1352
+      },
+      {
+        "date": "2025-11-15",
+        "filePath": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+        "wordCountStart": 3516,
+        "charCountStart": 16222,
+        "changes": [],
+        "id": 1353
+      },
+      {
+        "date": "2025-11-15",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 5674,
+        "charCountStart": 27059,
+        "changes": [
+          {
+            "timeKey": "18:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1354
+      },
+      {
+        "date": "2025-11-15",
+        "filePath": "Articles/quantization/path integral quantization for Proca field.md",
+        "wordCountStart": 6575,
+        "charCountStart": 28338,
+        "changes": [],
+        "id": 1355
+      },
+      {
+        "date": "2025-11-16",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/homework/qm&qi homework 5.md",
+        "wordCountStart": 223,
+        "charCountStart": 1105,
+        "changes": [
+          {
+            "timeKey": "13:30",
+            "w": 0,
+            "c": 3
+          },
+          {
+            "timeKey": "13:35",
+            "w": 166,
+            "c": 718
+          },
+          {
+            "timeKey": "13:45",
+            "w": 30,
+            "c": 173
+          },
+          {
+            "timeKey": "13:50",
+            "w": 60,
+            "c": 340
+          },
+          {
+            "timeKey": "13:55",
+            "w": 103,
+            "c": 615
+          },
+          {
+            "timeKey": "14:00",
+            "w": -21,
+            "c": -117
+          },
+          {
+            "timeKey": "14:10",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "14:15",
+            "w": 68,
+            "c": 352
+          },
+          {
+            "timeKey": "14:20",
+            "w": 148,
+            "c": 608
+          },
+          {
+            "timeKey": "14:25",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "14:30",
+            "w": 476,
+            "c": 3061
+          },
+          {
+            "timeKey": "14:35",
+            "w": -340,
+            "c": -2181
+          },
+          {
+            "timeKey": "14:45",
+            "w": 120,
+            "c": 868
+          },
+          {
+            "timeKey": "14:50",
+            "w": 260,
+            "c": 1351
+          },
+          {
+            "timeKey": "14:55",
+            "w": 108,
+            "c": 447
+          },
+          {
+            "timeKey": "15:00",
+            "w": 140,
+            "c": 887
+          },
+          {
+            "timeKey": "15:05",
+            "w": -41,
+            "c": 50
+          }
+        ],
+        "id": 1356
+      },
+      {
+        "date": "2025-11-16",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 13.md",
+        "wordCountStart": 821,
+        "charCountStart": 5044,
+        "changes": [
+          {
+            "timeKey": "14:15",
+            "w": 40,
+            "c": 201
+          }
+        ],
+        "id": 1357
+      },
+      {
+        "date": "2025-11-16",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 8.md",
+        "wordCountStart": 1796,
+        "charCountStart": 9122,
+        "changes": [
+          {
+            "timeKey": "15:20",
+            "w": 0,
+            "c": -1
+          }
+        ],
+        "id": 1358
+      },
+      {
+        "date": "2025-11-16",
+        "filePath": "Lecture/graduate/2025 fall/quantum field theory by Jianghao Yu and Qishu Yan/homework/qft homework 7.md",
+        "wordCountStart": 1086,
+        "charCountStart": 5795,
+        "changes": [
+          {
+            "timeKey": "15:20",
+            "w": 2,
+            "c": 14
+          },
+          {
+            "timeKey": "15:25",
+            "w": 247,
+            "c": 1201
+          },
+          {
+            "timeKey": "15:30",
+            "w": 601,
+            "c": 2217
+          }
+        ],
+        "id": 1359
+      },
+      {
+        "date": "2025-11-16",
+        "filePath": "TODO.md",
+        "wordCountStart": 6204,
+        "charCountStart": 31144,
+        "changes": [],
+        "id": 1360
+      },
+      {
+        "date": "2025-11-16",
+        "filePath": "Drafts/Untitled 2.md",
+        "wordCountStart": 1012,
+        "charCountStart": 6712,
+        "changes": [
+          {
+            "timeKey": "15:45",
+            "w": -360,
+            "c": -2455
+          },
+          {
+            "timeKey": "15:50",
+            "w": 41,
+            "c": 330
+          },
+          {
+            "timeKey": "15:55",
+            "w": -29,
+            "c": 321
+          },
+          {
+            "timeKey": "16:15",
+            "w": -493,
+            "c": -3889
+          },
+          {
+            "timeKey": "16:20",
+            "w": 631,
+            "c": 4110
+          },
+          {
+            "timeKey": "16:25",
+            "w": 1134,
+            "c": 8534
+          },
+          {
+            "timeKey": "16:30",
+            "w": 3,
+            "c": 9
+          },
+          {
+            "timeKey": "16:35",
+            "w": -3,
+            "c": -9
+          },
+          {
+            "timeKey": "16:45",
+            "w": -240,
+            "c": -2015
+          },
+          {
+            "timeKey": "16:50",
+            "w": -7,
+            "c": 3225
+          },
+          {
+            "timeKey": "16:55",
+            "w": 16,
+            "c": 2936
+          },
+          {
+            "timeKey": "17:05",
+            "w": -574,
+            "c": -10485
+          },
+          {
+            "timeKey": "17:10",
+            "w": 17,
+            "c": 97
+          },
+          {
+            "timeKey": "17:15",
+            "w": 0,
+            "c": 18
+          }
+        ],
+        "id": 1361
+      },
+      {
+        "date": "2025-11-18",
+        "filePath": "Articles/Proca in AdS3/off-shell canonical quantization.md",
+        "wordCountStart": 1074,
+        "charCountStart": 5390,
+        "changes": [
+          {
+            "timeKey": "14:35",
+            "w": 69,
+            "c": 376
+          },
+          {
+            "timeKey": "14:40",
+            "w": 104,
+            "c": 597
+          },
+          {
+            "timeKey": "14:45",
+            "w": 28,
+            "c": -65
+          },
+          {
+            "timeKey": "14:50",
+            "w": 267,
+            "c": 1104
+          },
+          {
+            "timeKey": "15:20",
+            "w": -469,
+            "c": -2024
+          },
+          {
+            "timeKey": "20:45",
+            "w": 3,
+            "c": 22
+          },
+          {
+            "timeKey": "20:50",
+            "w": 15,
+            "c": 23
+          }
+        ],
+        "id": 1362
+      },
+      {
+        "date": "2025-11-18",
+        "filePath": "Drafts/AdS2.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:20",
+            "w": 4,
+            "c": 30
+          },
+          {
+            "timeKey": "15:25",
+            "w": 704,
+            "c": 4473
+          },
+          {
+            "timeKey": "15:30",
+            "w": 718,
+            "c": 4762
+          },
+          {
+            "timeKey": "17:15",
+            "w": 403,
+            "c": 2604
+          },
+          {
+            "timeKey": "19:00",
+            "w": -1829,
+            "c": -11869
+          },
+          {
+            "timeKey": "19:05",
+            "w": 1519,
+            "c": 11712
+          },
+          {
+            "timeKey": "19:10",
+            "w": 330,
+            "c": 2078
+          },
+          {
+            "timeKey": "19:15",
+            "w": 328,
+            "c": 2848
+          },
+          {
+            "timeKey": "19:25",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "19:35",
+            "w": 0,
+            "c": -1
+          },
+          {
+            "timeKey": "20:10",
+            "w": 205,
+            "c": 1657
+          },
+          {
+            "timeKey": "20:45",
+            "w": 0,
+            "c": 6
+          },
+          {
+            "timeKey": "22:50",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "23:20",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1363
+      },
+      {
+        "date": "2025-11-18",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/notes/lecture 14.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:45",
+            "w": 56,
+            "c": 338
+          },
+          {
+            "timeKey": "15:50",
+            "w": 37,
+            "c": 242
+          },
+          {
+            "timeKey": "15:55",
+            "w": 2,
+            "c": 15
+          },
+          {
+            "timeKey": "16:25",
+            "w": 28,
+            "c": 165
+          },
+          {
+            "timeKey": "16:30",
+            "w": -6,
+            "c": -25
+          },
+          {
+            "timeKey": "16:35",
+            "w": 107,
+            "c": 535
+          },
+          {
+            "timeKey": "17:10",
+            "w": 13,
+            "c": 90
+          },
+          {
+            "timeKey": "17:25",
+            "w": 5,
+            "c": 28
+          },
+          {
+            "timeKey": "17:30",
+            "w": 37,
+            "c": 240
+          },
+          {
+            "timeKey": "17:40",
+            "w": 105,
+            "c": 643
+          },
+          {
+            "timeKey": "17:45",
+            "w": 34,
+            "c": 221
+          },
+          {
+            "timeKey": "18:55",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "19:00",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1364
+      },
+      {
+        "date": "2025-11-19",
+        "filePath": "Drafts/AdS2.md",
+        "wordCountStart": 2382,
+        "charCountStart": 18301,
+        "changes": [
+          {
+            "timeKey": "11:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1365
+      },
+      {
+        "date": "2025-11-19",
+        "filePath": "Articles/thermodynamics of scalar in ads/off-shell canonical quantization in AdS.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "11:45",
+            "w": 53,
+            "c": 255
+          },
+          {
+            "timeKey": "11:50",
+            "w": 172,
+            "c": 805
+          },
+          {
+            "timeKey": "11:55",
+            "w": 9,
+            "c": 50
+          },
+          {
+            "timeKey": "12:05",
+            "w": 1,
+            "c": 1
+          },
+          {
+            "timeKey": "13:45",
+            "w": 0,
+            "c": 5
+          },
+          {
+            "timeKey": "13:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1366
+      },
+      {
+        "date": "2025-11-19",
+        "filePath": "Articles/Proca in AdS3/off-shell canonical quantization.md",
+        "wordCountStart": 1091,
+        "charCountStart": 5423,
+        "changes": [
+          {
+            "timeKey": "13:40",
+            "w": -6,
+            "c": -54
+          },
+          {
+            "timeKey": "13:45",
+            "w": 8,
+            "c": 49
+          },
+          {
+            "timeKey": "13:50",
+            "w": 31,
+            "c": 230
+          },
+          {
+            "timeKey": "13:55",
+            "w": 827,
+            "c": 4622
+          },
+          {
+            "timeKey": "14:00",
+            "w": -122,
+            "c": -659
+          },
+          {
+            "timeKey": "14:05",
+            "w": 17,
+            "c": 72
+          },
+          {
+            "timeKey": "14:10",
+            "w": 67,
+            "c": 325
+          },
+          {
+            "timeKey": "14:15",
+            "w": -84,
+            "c": -401
+          },
+          {
+            "timeKey": "14:25",
+            "w": 82,
+            "c": 435
+          },
+          {
+            "timeKey": "14:30",
+            "w": 65,
+            "c": 253
+          },
+          {
+            "timeKey": "14:35",
+            "w": -38,
+            "c": -240
+          },
+          {
+            "timeKey": "14:40",
+            "w": -47,
+            "c": -334
+          },
+          {
+            "timeKey": "14:50",
+            "w": 32,
+            "c": 201
+          },
+          {
+            "timeKey": "14:55",
+            "w": -461,
+            "c": -2569
+          },
+          {
+            "timeKey": "15:00",
+            "w": 10,
+            "c": 47
+          },
+          {
+            "timeKey": "15:05",
+            "w": 0,
+            "c": 3
+          },
+          {
+            "timeKey": "15:10",
+            "w": 26,
+            "c": 137
+          },
+          {
+            "timeKey": "15:15",
+            "w": -30,
+            "c": -154
+          },
+          {
+            "timeKey": "15:25",
+            "w": 9,
+            "c": 50
+          },
+          {
+            "timeKey": "15:30",
+            "w": 4,
+            "c": 30
+          },
+          {
+            "timeKey": "15:35",
+            "w": 37,
+            "c": 155
+          },
+          {
+            "timeKey": "15:50",
+            "w": 16,
+            "c": 113
+          },
+          {
+            "timeKey": "15:55",
+            "w": -51,
+            "c": -256
+          },
+          {
+            "timeKey": "16:05",
+            "w": 10,
+            "c": 91
+          },
+          {
+            "timeKey": "21:35",
+            "w": 1,
+            "c": 3
+          },
+          {
+            "timeKey": "21:40",
+            "w": 0,
+            "c": 21
+          },
+          {
+            "timeKey": "21:45",
+            "w": 9,
+            "c": 84
+          },
+          {
+            "timeKey": "21:50",
+            "w": -10,
+            "c": -105
+          }
+        ],
+        "id": 1367
+      },
+      {
+        "date": "2025-11-19",
+        "filePath": "TODO.md",
+        "wordCountStart": 6204,
+        "charCountStart": 31144,
+        "changes": [
+          {
+            "timeKey": "13:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1368
+      },
+      {
+        "date": "2025-11-19",
+        "filePath": "Articles/Proca in AdS3/solving equation.md",
+        "wordCountStart": 5462,
+        "charCountStart": 23573,
+        "changes": [
+          {
+            "timeKey": "14:10",
+            "w": 1,
+            "c": 4
+          }
+        ],
+        "id": 1369
+      },
+      {
+        "date": "2025-11-19",
+        "filePath": "Articles/quantization/article/appendix A.md",
+        "wordCountStart": 1997,
+        "charCountStart": 10675,
+        "changes": [
+          {
+            "timeKey": "21:55",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "22:05",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1370
+      },
+      {
+        "date": "2025-11-20",
+        "filePath": "Drafts/vacuum state of two theory.md",
+        "wordCountStart": 1085,
+        "charCountStart": 5630,
+        "changes": [
+          {
+            "timeKey": "21:50",
+            "w": 45,
+            "c": 269
+          },
+          {
+            "timeKey": "21:55",
+            "w": 248,
+            "c": 1199
+          },
+          {
+            "timeKey": "22:00",
+            "w": 50,
+            "c": 295
+          },
+          {
+            "timeKey": "22:05",
+            "w": 58,
+            "c": 322
+          }
+        ],
+        "id": 1371
+      },
+      {
+        "date": "2025-11-20",
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13741,
+        "changes": [],
+        "id": 1372
+      },
+      {
+        "date": "2025-11-20",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 7538,
+        "charCountStart": 36447,
+        "changes": [],
+        "id": 1373
       }
     ],
     "daysWithCompletedGoal": [
@@ -37000,7 +39991,19 @@
       "2025-11-02",
       "2025-11-03",
       "2025-11-04",
-      "2025-11-05"
+      "2025-11-05",
+      "2025-11-06",
+      "2025-11-07",
+      "2025-11-08",
+      "2025-11-10",
+      "2025-11-11",
+      "2025-11-12",
+      "2025-11-13",
+      "2025-11-14",
+      "2025-11-15",
+      "2025-11-16",
+      "2025-11-18",
+      "2025-11-19"
     ]
   }
 }

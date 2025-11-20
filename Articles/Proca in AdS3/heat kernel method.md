@@ -639,3 +639,37 @@ $$\begin{align}
 
 here we are not necessary to substract the non-physical longitudinal mode contribution since we already imposed the transversality condition in the heat kernel equation.
 
+---
+
+now we will consider the following system with second class constraint
+
+$$\begin{align}
+S & =\int \mathrm{d}t\left( \frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2} \right) \\
+ & =\int \mathrm{d}t\left(-\frac{1}{2}X\Delta X^{T}\right) \\
+X & =\begin{pmatrix}
+x & \phi
+\end{pmatrix} \\
+\Delta & =\begin{pmatrix}
+m \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k & -\lambda \frac{\mathrm{d}}{\mathrm{d}t} \\
+\lambda \frac{\mathrm{d}}{\mathrm{d}t} & -1
+\end{pmatrix}
+\end{align}$$
+
+and we assume that $\displaystyle{m-\lambda ^{2}>0}$ to guarantee the positiveness of the kinetic term. the heat kernel of this system satisfies
+
+$$\begin{align}
+\Delta K(t,x,\phi;x',\phi') & =-\partial _{t}K(t,x,\phi;x',\phi') \\
+\Delta & =\begin{pmatrix}
+m \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k & -\lambda \frac{\mathrm{d}}{\mathrm{d}t} \\
+\lambda \frac{\mathrm{d}}{\mathrm{d}t} & -1
+\end{pmatrix}
+\end{align}$$
+
+with initial condition
+
+$$\begin{align}
+K(0,x,\phi;x',\phi') & =\delta (x-x')\delta (\phi-\phi')
+\end{align}$$
+
+how to solve this heat kernel problem?
+
