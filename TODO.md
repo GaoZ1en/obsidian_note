@@ -1,10 +1,8 @@
 ##### Learn from research, go to Europe or Canada (CSC)
 
 1. 协变相空间框架下的量子化
-	1. 路径积分
-	2. 研究Wald的QFTCSBHT
-	3. 后面思考推广到d维
-	4. it seems that symplectic form defined in the covariant phase space formalism is strongly correlated to the Berry phase
+	1. 线性引力
+	2. it seems that symplectic form defined in the covariant phase space formalism is strongly correlated to the Berry phase
 2. 可以借上课把若干经典读一读
 	1. large scale structure of spacetime by Hawking and Ellis
 	2. General Relativity by Wald

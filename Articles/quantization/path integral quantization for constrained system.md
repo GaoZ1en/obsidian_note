@@ -258,6 +258,10 @@ $$\tag{5.4}
 \end{align}
 $$
 
+$$\begin{align}
+-\frac{\lambda}{m}(m\dot{x}-\lambda \phi)-\left(\frac{\lambda ^{2}}{m}-1\right)\phi=\phi-\lambda \dot{x}
+\end{align}$$
+
 then we get a secondary constraint $\displaystyle{\varphi _{2}=-\frac{\lambda p_{x}}{m}-\left(\frac{\lambda ^{2}}{m}-1\right)\phi \approx 0}$, and
 
 $$\tag{5.5}
