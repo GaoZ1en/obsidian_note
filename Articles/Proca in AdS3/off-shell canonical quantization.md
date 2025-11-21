@@ -172,6 +172,8 @@ R & =Az^{(1-\sqrt{ 1-\lambda })/2}(1-z)^{m/2}{}_{2}F_{1}\left(\frac{1}{2}(1+m-\s
  & +Bz^{(1+\sqrt{ 1-\lambda })/2}(1-z)^{m/2}{}_{2}F_{1}\left(\frac{1}{2}(1+m+\sqrt{ 1-\lambda }),\frac{1}{2}(1+m+\sqrt{ 1-\lambda }),1+\sqrt{ 1-\lambda },z\right)
 \end{align}$$
 
-to satisfy the boundary condition at infinity and regularity at the origin, however it is impossible to choose $\displaystyle{\lambda}$ to make the solution well-behaved at both boundaries, the eigenvalue problem and the boundary condition are incompatible.
+to satisfy the boundary condition at infinity and regularity at the origin, we need to set $\displaystyle{A=0}$ and impose
 
+$$\begin{align}
 
+\end{align}$$

@@ -644,88 +644,71 @@ here we are not necessary to substract the non-physical longitudinal mode contri
 now we will consider the following system with second class constraint
 
 $$\begin{align}
-S & =\int \mathrm{d}t\left( \frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2} \right) \\
- & =\int \mathrm{d}t\left(-\frac{1}{2}X\Delta X^{T}\right) \\
-X & =\begin{pmatrix}
-x & \phi
-\end{pmatrix} \\
-\Delta & =\begin{pmatrix}
-m \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k & -\lambda \frac{\mathrm{d}}{\mathrm{d}t} \\
-\lambda \frac{\mathrm{d}}{\mathrm{d}t} & -1
-\end{pmatrix}
-\end{align}$$
-
-now we change to Euclidean time $\displaystyle{t\to -i\tau}$, so that the action becomes
-
-$$\begin{align}
 S & =\int \mathrm{d}\tau\left(\frac{1}{2}m\left( \frac{\mathrm{d}x}{\mathrm{d}\tau} \right)^{2}+\frac{1}{2}kx^{2}+i\lambda  \frac{\mathrm{d}x}{\mathrm{d}\tau}\phi-\frac{1}{2}\phi ^{2}\right) \\
- & =\int \mathrm{d}\tau\left(-\frac{1}{2}X\Delta X^{T}\right) \\
+ & =\int \mathrm{d}\tau\left(-\frac{1}{2}X^{T}\Delta X\right) \\
 \Delta & =\begin{pmatrix}
 -m\partial _{\tau}^{2}+k & -i\lambda \partial _{\tau} \\
 i\lambda \partial _{\tau} & -1
+\end{pmatrix}, X=\begin{pmatrix}
+x \\
+\phi
 \end{pmatrix}
 \end{align}$$
 
-the heat kernel equation is
+here we have already taken the Wick rotation $\displaystyle{t\to -i\tau}$. the heat kernel $\displaystyle{K(t,\tau,\tau')}$ is defined as
 
 $$\begin{align}
-\Delta _{\tau} K(t,\tau,\tau') & = -\partial _{t}K(t,\tau,\tau')
+K(t,\tau,\tau') & =\sum _{n}e^{-\lambda _{n}t}X_{n}(\tau)X^{T}_{n}(\tau')
 \end{align}$$
 
-with initial condition
+where $\displaystyle{X_{n}(\tau)}$ is the eigenfunction of the operator $\displaystyle{\Delta}$ with eigenvalue $\displaystyle{\lambda _{n}}$
 
 $$\begin{align}
-K(0,\tau,\tau') & =\delta (\tau-\tau')I_{2}
+\Delta X_{n}(\tau) & =\lambda _{n}X_{n}(\tau)
 \end{align}$$
 
-we can diagonalize the action by the shift
+moreover, $\displaystyle{X_{n}(\tau)}$ satisfies the constraint
 
 $$\begin{align}
-\tilde{\phi}=\phi-i\lambda \frac{\mathrm{d}x}{\mathrm{d}\tau}
-\end{align}$$
-
-then the heat kernel equation becomes
-
-$$\begin{align}
-\Delta'_{\tau}K'(t,\tau,\tau') & =-\partial _{t}K'(t,\tau,\tau') \\
-\Delta'_{\tau} & =\begin{pmatrix}
--(m-\lambda ^{2})\partial _{\tau}^{2}+k & 0 \\
-0 & -1
-\end{pmatrix} \\
-K'(0,\tau,\tau') & =\delta (\tau-\tau')I_{2}
-\end{align}$$
-
-and the solution is straightforward.
-
-$$\begin{align}
-K'(t,\tau,\tau') & =\begin{pmatrix}
-K_{x}(t,\tau,\tau') & 0 \\
-0 & K_{\tilde{\phi}}(t,\tau,\tau')
-\end{pmatrix} \\
- & =\begin{pmatrix}
-\frac{1}{\sqrt{4\pi (m-\lambda ^{2})t}}e^{-kt}e^{-\frac{(\tau-\tau')^{2}}{4(m-\lambda ^{2})t}} & 0 \\
-0 & e^{t}\delta (\tau-\tau')
+\phi & =i\lambda \frac{\mathrm{d}x}{\mathrm{d}\tau} \\
+\implies D X_{n}(\tau) & =0 \\
+D & =\begin{pmatrix}
+ i\lambda \frac{\mathrm{d}}{\mathrm{d}\tau} & -1
 \end{pmatrix}
 \end{align}$$
 
-then returning to the original variables.
+thus the heat kernel satisfies the following equation
+
+$$\begin{align}
+\Delta _{\tau}K(t,\tau,\tau') & =-\partial _{t}K(t,\tau,\tau') \\
+D_{\tau}K(t,\tau,\tau') & =D_{\tau'}^{T}K(t,\tau,\tau')=0
+\end{align}$$
+
+and the initial condition
+
+$$\begin{align}
+K(0,\tau,\tau') & =\left( I_{2}-\frac{D^{T}D}{DD^{T}} \right)\delta(\tau-\tau')
+\end{align}$$
+
+the solution to this equation and initial condition is
 
 $$\begin{align}
 K(t,\tau,\tau') & =\begin{pmatrix}
 K_{x} & i\lambda \partial _{\tau'}K_{x} \\
-i\lambda \partial _{\tau}K_{x} & K_{\tilde{\phi}}-\lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}
-\end{pmatrix}
+i\lambda \partial _{\tau}K_{x} & -\lambda ^{2}\partial _{\tau}\partial _{\tau}K_{x}
+\end{pmatrix} \\
+K_{x} & = \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt}e^{-\frac{(\tau-\tau')^{2}}{4(m-\lambda ^{2})t}}
 \end{align}$$
 
 now we want to compute the partition function. the trace of the heat kernel is
 
 $$\begin{align}
 K(t) & =\mathrm{Tr}(K(t,\tau,\tau)) \\
- & =\int \mathrm{d}\tau \left( K_{x}(t,\tau,\tau)+K_{\tilde{\phi}}(t,\tau,\tau)-\lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}(t,\tau,\tau')|_{\tau'=\tau} \right) \\
+ & =\int \mathrm{d}\tau \left( K_{x}(t,\tau,\tau)-\lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}(t,\tau,\tau')|_{\tau'=\tau} \right) \\
  & =\mathrm{Vol}(\mathbb{R})\left( 1-\frac{\lambda ^{2}}{2(m-\lambda ^{2})t} \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt}+\mathrm{Vol}(\mathbb{R}^{2})\delta(0)e^{t}
 \end{align}$$
 
-notice that the $\displaystyle{\tilde{\phi}}$ part diverges since it has no kinetic term. this is expected since $\displaystyle{\phi}$ is an auxiliary field. and the partition function is
+and the partition function is
 
 $$\begin{align}
 \ln Z & =\frac{1}{2}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}K(t) \\
@@ -743,17 +726,12 @@ K^{S^{1}}(t,\tau,\tau') & =\sum _{n\in \mathbb{Z}}K(t,\tau,\tau'+n\beta)
 thus the trace of the heat kernel is
 
 $$\begin{align}
-K_{x}(t,\tau,\tau') & =\frac{1}{\sqrt{4\pi (m-\lambda ^{2})t}}e^{-kt}e^{-\frac{(\tau-\tau')^{2}}{4(m-\lambda ^{2})t}} \\
-\partial _{\tau}\partial _{\tau'}K_{x}(t,\tau,\tau') & =\left(\frac{1}{2(m-\lambda ^{2})t}+\frac{(\tau-\tau')^{2}}{4(m-\lambda ^{2})^{2}t^{2}}\right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt} e^{-\frac{(\tau-\tau')^{2}}{4(m-\lambda ^{2})t}}
+K(t) & =\sum _{n\in \mathbb{Z}}\int ^{\beta}_{0} \mathrm{d}\tau \left( K_{x}(t,\tau,\tau'+n\beta)-\lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}(t,\tau,\tau'+n\beta)|_{\tau'=\tau} \right) \\
+ & =\beta\left( 1-\frac{\lambda ^{2}}{2(m-\lambda ^{2})t} \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt} \\
+ & +\beta\sum _{n\neq 0}\left[ \left( 1-\lambda ^{2}\left( \frac{1}{2(m-\lambda ^{2})t}+\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})^{2}t^{2}} \right) \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt-\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})t}} \right]
 \end{align}$$
 
-$$\begin{align}
-K(t) & =\sum _{n\in \mathbb{Z}}\int ^{\beta}_{0} \mathrm{d}\tau \left( K_{x}(t,\tau,\tau'+n\beta)+K_{\tilde{\phi}}(t,\tau,\tau'+n\beta)-\lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}(t,\tau,\tau'+n\beta)|_{\tau'=\tau} \right) \\
- & =\beta\left( 1-\frac{\lambda ^{2}}{2(m-\lambda ^{2})t} \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt}+\beta\delta(0)e^{t} \\
- & +\beta\sum _{n\neq 0}\left[ \left( 1-\lambda ^{2}\left( \frac{1}{2(m-\lambda ^{2})t}+\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})^{2}t^{2}} \right) \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt-\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})t}} +\delta(n\beta)e^{t}\right]
-\end{align}$$
-
-again, the $\displaystyle{\tilde{\phi}}$ part diverges due to the auxiliary nature of $\displaystyle{\phi}$. so we focus on the $\displaystyle{x}$ part only. the partition function is given by
+the partition function is given by
 
 $$\begin{align}
 \ln Z & =\frac{1}{2}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}K(t) \\
@@ -762,54 +740,5 @@ $$\begin{align}
  & =-\frac{\lambda ^{2}}{6}\beta \Omega ^{3}+\lambda ^{2}\Omega ^{2}\ln(1-e^{-\beta \Omega})-\frac{5\lambda ^{2}\Omega}{\beta}\mathrm{Li}_{2}(e^{-\beta \Omega})-\frac{5\lambda ^{2}}{\beta ^{2}}\mathrm{Li}_{3}(e^{-\beta \Omega})
 \end{align}$$
 
-notice that compared to the usual harmonic oscillator result, there is a correction term $\displaystyle{\Delta\ln Z}$. notice that the definition of the heat kernel is
+notice that compared to the usual harmonic oscillator result, there is a correction term $\displaystyle{\Delta\ln Z}$. 
 
-$$\begin{align}
-K(t,\tau,\tau') & =\sum _{n} e^{-\lambda _{n}t}X_{n}(\tau)X_{n}^{T}(\tau')
-\end{align}$$
-
-where $\displaystyle{X_{n}(\tau)}$ is the eigenfunction of the operator $\displaystyle{\Delta}$ with eigenvalue $\displaystyle{\lambda _{n}}$
-
-$$\begin{align}
-\Delta X_{n}(\tau) & =\lambda _{n}X_{n}(\tau)
-\end{align}$$
-
-moreover, the mode $\displaystyle{X_{n}(\tau)}$ satisfies the constraint
-
-$$\begin{align}
-\phi & =i\lambda \frac{\mathrm{d}x}{\mathrm{d}\tau} \\
-\implies DX_{n} & =0 \\
-D & =\begin{pmatrix}
-i\lambda \frac{\mathrm{d}}{\mathrm{d}\tau} & -1
-\end{pmatrix}
-\end{align}$$
-
-thus the heat kernel equation should be modified to
-
-$$\begin{align}
-\Delta _{\tau} K(t,\tau,\tau') & =-\partial _{t}K(t,\tau,\tau') \\
-D_{\tau}K(t,\tau,\tau') & =0, \quad D_{\tau'}^{T}K(t,\tau,\tau')=0
-\end{align}$$
-
-and the initial condition should be also modified to
-
-$$\begin{align}
-K(0,\tau,\tau') & =\left( I_{2}-\frac{D^{T}D}{D D^{T}} \right)\delta (\tau-\tau')
-\end{align}$$
-
-then the solution to the modified heat kernel equation is
-
-$$\begin{align}
-K(t,\tau,\tau') & =\begin{pmatrix}
-K_{x}(t,\tau,\tau') & i\lambda \partial _{\tau'}K_{x}(t,\tau,\tau') \\
-i\lambda \partial _{\tau}K_{x}(t,\tau,\tau') & -\lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}(t,\tau,\tau')
-\end{pmatrix}
-\end{align}$$
-
-where $\displaystyle{K_{x}}$ is the heat kernel for the scalar field with mass $\displaystyle{M=m-\lambda ^{2}}$ and potential $\displaystyle{k}$.
-
-$$\begin{align}
-K_{x}(t,\tau,\tau') & =\frac{1}{\sqrt{ 4\pi Mt }}e^{-kt}e^{-\frac{(\tau-\tau')^{2}}{4Mt}}
-\end{align}$$
-
-the following calculation is the same. 
