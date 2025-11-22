@@ -89,7 +89,8 @@ the thermal partition function is given by
 $$\begin{align}
 Z[\beta] & =\mathrm{Tr}(e^{-\beta H}) \\
  & =\prod _{n=0}^{\infty}\prod _{\ell =0}^{\infty}\prod _{\mathbf{m}} \frac{1}{1-e^{-\beta \omega _{n\ell}}} \\
- & =\prod _{n=0}^{\infty}\prod _{\ell =0}^{\infty}\left( \frac{1}{1-e^{-\beta (\Delta +\ell +2n)}} \right)^{\displaystyle{\tiny{\frac{(2\ell+d-2)(\ell+d-3)!}{\ell!(d-2)!}}}}
+ & =\prod _{n=0}^{\infty}\prod _{\ell =0}^{\infty}\left( \frac{1}{1-e^{-\beta (\Delta +\ell +2n)}} \right)^{\displaystyle{\tiny{\frac{(2\ell+d-2)(\ell+d-3)!}{\ell!(d-2)!}}}} \\
+ & =\exp\left(\sum ^{\infty}_{k=1} \frac{1}{k} \frac{e^{-\beta \Delta}}{(1-e^{-\beta k})^{d}}\right)
 \end{align}$$
 
 # $\displaystyle{\mathbb{R}_{d,1}}$
