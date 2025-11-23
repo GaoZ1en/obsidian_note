@@ -39847,46 +39847,954 @@
       },
       {
         "date": "2025-11-20",
-        "filePath": "Articles/quantization/article/appendix A.md",
-        "wordCountStart": 1997,
-        "charCountStart": 10676,
+        "filePath": "Drafts/vacuum state of two theory.md",
+        "wordCountStart": 1085,
+        "charCountStart": 5630,
         "changes": [
           {
-            "timeKey": "12:05",
-            "w": 0,
-            "c": 0
+            "timeKey": "21:50",
+            "w": 45,
+            "c": 269
+          },
+          {
+            "timeKey": "21:55",
+            "w": 248,
+            "c": 1199
+          },
+          {
+            "timeKey": "22:00",
+            "w": 50,
+            "c": 295
+          },
+          {
+            "timeKey": "22:05",
+            "w": 58,
+            "c": 322
+          },
+          {
+            "timeKey": "22:10",
+            "w": 47,
+            "c": 219
+          },
+          {
+            "timeKey": "22:15",
+            "w": -15,
+            "c": -65
+          },
+          {
+            "timeKey": "22:35",
+            "w": 3,
+            "c": 61
+          },
+          {
+            "timeKey": "22:40",
+            "w": -3,
+            "c": -61
           }
         ],
         "id": 1371
       },
       {
         "date": "2025-11-20",
-        "filePath": "TODO.md",
-        "wordCountStart": 6204,
-        "charCountStart": 31144,
+        "filePath": "Articles/Proca in AdS3/highest weight representation.md",
+        "wordCountStart": 3320,
+        "charCountStart": 13741,
+        "changes": [],
+        "id": 1372
+      },
+      {
+        "date": "2025-11-20",
+        "filePath": "Articles/Proca in AdS3/coherent state path integral.md",
+        "wordCountStart": 7538,
+        "charCountStart": 36447,
+        "changes": [],
+        "id": 1373
+      },
+      {
+        "date": "2025-11-20",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 5680,
+        "charCountStart": 27106,
         "changes": [
           {
-            "timeKey": "15:55",
+            "timeKey": "22:20",
+            "w": 136,
+            "c": 754
+          },
+          {
+            "timeKey": "22:35",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "23:05",
+            "w": 61,
+            "c": 323
+          },
+          {
+            "timeKey": "23:10",
+            "w": 0,
+            "c": 2
+          }
+        ],
+        "id": 1374
+      },
+      {
+        "date": "2025-11-20",
+        "filePath": "Articles/quantization/path integral quantization for constrained system.md",
+        "wordCountStart": 5638,
+        "charCountStart": 27024,
+        "changes": [],
+        "id": 1375
+      },
+      {
+        "date": "2025-11-21",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 5877,
+        "charCountStart": 28187,
+        "changes": [
+          {
+            "timeKey": "00:30",
+            "w": 113,
+            "c": 629
+          },
+          {
+            "timeKey": "00:35",
+            "w": -82,
+            "c": -463
+          },
+          {
+            "timeKey": "00:40",
+            "w": 110,
+            "c": 603
+          },
+          {
+            "timeKey": "00:45",
+            "w": 49,
+            "c": 304
+          },
+          {
+            "timeKey": "00:50",
+            "w": -47,
+            "c": -258
+          },
+          {
+            "timeKey": "00:55",
+            "w": 4,
+            "c": 17
+          },
+          {
+            "timeKey": "01:05",
+            "w": 158,
+            "c": 871
+          },
+          {
+            "timeKey": "01:10",
+            "w": -203,
+            "c": -1134
+          },
+          {
+            "timeKey": "13:25",
             "w": 0,
             "c": 0
           },
           {
-            "timeKey": "16:30",
+            "timeKey": "17:35",
+            "w": 1108,
+            "c": 5825
+          },
+          {
+            "timeKey": "17:40",
+            "w": 3,
+            "c": 15
+          },
+          {
+            "timeKey": "17:45",
             "w": -3,
-            "c": -21
+            "c": -12
           },
           {
-            "timeKey": "16:35",
-            "w": -2,
-            "c": -13
+            "timeKey": "17:50",
+            "w": 0,
+            "c": 0
           },
           {
-            "timeKey": "23:30",
+            "timeKey": "18:55",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "19:00",
+            "w": -59,
+            "c": -302
+          },
+          {
+            "timeKey": "19:05",
+            "w": 155,
+            "c": 901
+          },
+          {
+            "timeKey": "19:10",
+            "w": -602,
+            "c": -3332
+          },
+          {
+            "timeKey": "19:15",
+            "w": -1,
+            "c": -46
+          },
+          {
+            "timeKey": "20:10",
             "w": 0,
             "c": 0
           }
         ],
-        "id": 1372
+        "id": 1376
+      },
+      {
+        "date": "2025-11-21",
+        "filePath": "Drafts/vacuum state of two theory.md",
+        "wordCountStart": 1518,
+        "charCountStart": 7869,
+        "changes": [],
+        "id": 1377
+      },
+      {
+        "date": "2025-11-21",
+        "filePath": "Articles/quantization/path integral quantization for constrained system.md",
+        "wordCountStart": 5638,
+        "charCountStart": 27024,
+        "changes": [],
+        "id": 1378
+      },
+      {
+        "date": "2025-11-21",
+        "filePath": "Articles/linearized gravity in AdS3/formalism.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "00:05",
+            "w": 40,
+            "c": 180
+          },
+          {
+            "timeKey": "00:10",
+            "w": 58,
+            "c": 230
+          },
+          {
+            "timeKey": "00:15",
+            "w": 9,
+            "c": 39
+          },
+          {
+            "timeKey": "00:20",
+            "w": 229,
+            "c": 981
+          },
+          {
+            "timeKey": "00:25",
+            "w": 5,
+            "c": 8
+          },
+          {
+            "timeKey": "00:35",
+            "w": 119,
+            "c": 481
+          },
+          {
+            "timeKey": "00:40",
+            "w": -19,
+            "c": -41
+          },
+          {
+            "timeKey": "00:45",
+            "w": 310,
+            "c": 1317
+          },
+          {
+            "timeKey": "00:50",
+            "w": -18,
+            "c": -113
+          },
+          {
+            "timeKey": "00:55",
+            "w": -89,
+            "c": -344
+          },
+          {
+            "timeKey": "01:00",
+            "w": -146,
+            "c": -597
+          },
+          {
+            "timeKey": "01:05",
+            "w": 61,
+            "c": 253
+          },
+          {
+            "timeKey": "01:10",
+            "w": 41,
+            "c": 179
+          },
+          {
+            "timeKey": "01:15",
+            "w": 122,
+            "c": 479
+          },
+          {
+            "timeKey": "01:20",
+            "w": 370,
+            "c": 1515
+          },
+          {
+            "timeKey": "01:25",
+            "w": 180,
+            "c": 815
+          },
+          {
+            "timeKey": "01:30",
+            "w": -46,
+            "c": -244
+          },
+          {
+            "timeKey": "01:35",
+            "w": 69,
+            "c": 305
+          },
+          {
+            "timeKey": "01:40",
+            "w": 13,
+            "c": 10
+          },
+          {
+            "timeKey": "01:45",
+            "w": 51,
+            "c": 296
+          },
+          {
+            "timeKey": "01:50",
+            "w": 23,
+            "c": 89
+          },
+          {
+            "timeKey": "01:55",
+            "w": 101,
+            "c": 428
+          },
+          {
+            "timeKey": "02:00",
+            "w": -30,
+            "c": -106
+          },
+          {
+            "timeKey": "02:05",
+            "w": 162,
+            "c": 726
+          },
+          {
+            "timeKey": "02:10",
+            "w": 240,
+            "c": 1039
+          },
+          {
+            "timeKey": "02:15",
+            "w": 20,
+            "c": 79
+          },
+          {
+            "timeKey": "10:45",
+            "w": 5,
+            "c": 46
+          },
+          {
+            "timeKey": "10:50",
+            "w": -95,
+            "c": -408
+          },
+          {
+            "timeKey": "10:55",
+            "w": -76,
+            "c": -346
+          },
+          {
+            "timeKey": "11:00",
+            "w": -111,
+            "c": -496
+          },
+          {
+            "timeKey": "11:05",
+            "w": -54,
+            "c": -219
+          },
+          {
+            "timeKey": "11:10",
+            "w": 138,
+            "c": 571
+          },
+          {
+            "timeKey": "11:15",
+            "w": -159,
+            "c": -779
+          },
+          {
+            "timeKey": "11:20",
+            "w": 117,
+            "c": 490
+          },
+          {
+            "timeKey": "11:25",
+            "w": -162,
+            "c": -668
+          },
+          {
+            "timeKey": "11:35",
+            "w": 23,
+            "c": 109
+          },
+          {
+            "timeKey": "11:45",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "11:50",
+            "w": 106,
+            "c": 471
+          },
+          {
+            "timeKey": "11:55",
+            "w": 163,
+            "c": 662
+          },
+          {
+            "timeKey": "12:00",
+            "w": -269,
+            "c": -1129
+          },
+          {
+            "timeKey": "12:05",
+            "w": 12,
+            "c": 61
+          },
+          {
+            "timeKey": "12:10",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "13:15",
+            "w": 13,
+            "c": 71
+          },
+          {
+            "timeKey": "13:20",
+            "w": -13,
+            "c": -71
+          },
+          {
+            "timeKey": "20:10",
+            "w": 89,
+            "c": 443
+          },
+          {
+            "timeKey": "20:15",
+            "w": 234,
+            "c": 1120
+          },
+          {
+            "timeKey": "20:20",
+            "w": 325,
+            "c": 1549
+          },
+          {
+            "timeKey": "21:35",
+            "w": 34,
+            "c": 178
+          },
+          {
+            "timeKey": "21:40",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "21:45",
+            "w": 50,
+            "c": 233
+          },
+          {
+            "timeKey": "21:50",
+            "w": 69,
+            "c": 302
+          },
+          {
+            "timeKey": "21:55",
+            "w": 49,
+            "c": 248
+          },
+          {
+            "timeKey": "22:30",
+            "w": -292,
+            "c": -1398
+          },
+          {
+            "timeKey": "22:40",
+            "w": 47,
+            "c": 257
+          },
+          {
+            "timeKey": "23:35",
+            "w": 62,
+            "c": 208
+          },
+          {
+            "timeKey": "23:40",
+            "w": 267,
+            "c": 1102
+          },
+          {
+            "timeKey": "23:55",
+            "w": -3,
+            "c": 156
+          }
+        ],
+        "id": 1379
+      },
+      {
+        "date": "2025-11-21",
+        "filePath": "Lecture/graduate/2025 fall/frontiers in quantum matter and quantum information by Long Zhang and Shenghan Jiang/homework/qm&qi homework 5.md",
+        "wordCountStart": 1500,
+        "charCountStart": 8280,
+        "changes": [
+          {
+            "timeKey": "20:40",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1380
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Articles/thermodynamics of scalar in ads/canonical quantization with covariant phase formalism.md",
+        "wordCountStart": 1185,
+        "charCountStart": 6041,
+        "changes": [],
+        "id": 1381
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Articles/quantization/canonical quantization of Proca field in CPS formalism (formal calculation).md",
+        "wordCountStart": 2384,
+        "charCountStart": 12549,
+        "changes": [],
+        "id": 1382
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Articles/quantization/quantization for 1+3 dimensional electric field.md",
+        "wordCountStart": 4099,
+        "charCountStart": 19191,
+        "changes": [],
+        "id": 1383
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Articles/quantization/canonical quantization for 1+1 dimensional electric fields.md",
+        "wordCountStart": 1580,
+        "charCountStart": 8087,
+        "changes": [],
+        "id": 1384
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Articles/quantization/canonical quantization of fermionic systems.md",
+        "wordCountStart": 1426,
+        "charCountStart": 8002,
+        "changes": [],
+        "id": 1385
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Articles/quantization/canonical quantization of scalar and Proca vector in CPS formalism.md",
+        "wordCountStart": 3516,
+        "charCountStart": 16222,
+        "changes": [],
+        "id": 1386
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Articles/quantization/first example.md",
+        "wordCountStart": 2190,
+        "charCountStart": 11276,
+        "changes": [],
+        "id": 1387
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Articles/quantization/harmonic oscillator with multiplier.md",
+        "wordCountStart": 1949,
+        "charCountStart": 10122,
+        "changes": [
+          {
+            "timeKey": "13:20",
+            "w": 0,
+            "c": 1
+          },
+          {
+            "timeKey": "13:30",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1388
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Articles/thermodynamics of scalar in ads/scalar in AdS and flat spacetime.md",
+        "wordCountStart": 1801,
+        "charCountStart": 9485,
+        "changes": [
+          {
+            "timeKey": "18:25",
+            "w": 22,
+            "c": 104
+          }
+        ],
+        "id": 1389
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Articles/thermodynamics of scalar in ads/thermodynamic quantities.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "13:50",
+            "w": 112,
+            "c": 672
+          },
+          {
+            "timeKey": "13:55",
+            "w": 1,
+            "c": 14
+          },
+          {
+            "timeKey": "14:00",
+            "w": 88,
+            "c": 443
+          },
+          {
+            "timeKey": "14:10",
+            "w": 34,
+            "c": 122
+          },
+          {
+            "timeKey": "14:15",
+            "w": 502,
+            "c": 2349
+          },
+          {
+            "timeKey": "14:20",
+            "w": 0,
+            "c": 2
+          },
+          {
+            "timeKey": "18:00",
+            "w": 1564,
+            "c": 9922
+          },
+          {
+            "timeKey": "18:05",
+            "w": -1423,
+            "c": -9085
+          },
+          {
+            "timeKey": "18:10",
+            "w": 43,
+            "c": 206
+          },
+          {
+            "timeKey": "18:15",
+            "w": -523,
+            "c": -2585
+          },
+          {
+            "timeKey": "18:20",
+            "w": 54,
+            "c": 239
+          },
+          {
+            "timeKey": "18:25",
+            "w": 137,
+            "c": 613
+          },
+          {
+            "timeKey": "18:30",
+            "w": -205,
+            "c": -992
+          },
+          {
+            "timeKey": "18:35",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "18:50",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "20:10",
+            "w": 29,
+            "c": 144
+          },
+          {
+            "timeKey": "20:15",
+            "w": 42,
+            "c": 220
+          },
+          {
+            "timeKey": "20:20",
+            "w": 26,
+            "c": 147
+          },
+          {
+            "timeKey": "20:25",
+            "w": -1,
+            "c": -23
+          },
+          {
+            "timeKey": "20:30",
+            "w": 0,
+            "c": 4
+          },
+          {
+            "timeKey": "20:50",
+            "w": 19,
+            "c": 94
+          },
+          {
+            "timeKey": "20:55",
+            "w": 1,
+            "c": 21
+          },
+          {
+            "timeKey": "21:00",
+            "w": -20,
+            "c": -119
+          },
+          {
+            "timeKey": "21:05",
+            "w": 2,
+            "c": 12
+          },
+          {
+            "timeKey": "21:10",
+            "w": -2,
+            "c": -12
+          },
+          {
+            "timeKey": "21:15",
+            "w": -39,
+            "c": -189
+          },
+          {
+            "timeKey": "21:20",
+            "w": 3,
+            "c": 14
+          },
+          {
+            "timeKey": "22:30",
+            "w": 64,
+            "c": 235
+          },
+          {
+            "timeKey": "22:35",
+            "w": 78,
+            "c": 417
+          },
+          {
+            "timeKey": "22:40",
+            "w": -13,
+            "c": -87
+          },
+          {
+            "timeKey": "22:55",
+            "w": 111,
+            "c": 645
+          },
+          {
+            "timeKey": "23:00",
+            "w": -36,
+            "c": -185
+          },
+          {
+            "timeKey": "23:25",
+            "w": 114,
+            "c": 600
+          },
+          {
+            "timeKey": "23:30",
+            "w": 6,
+            "c": 5
+          }
+        ],
+        "id": 1390
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Articles/linearized gravity in AdS3/formalism.md",
+        "wordCountStart": 2444,
+        "charCountStart": 10771,
+        "changes": [],
+        "id": 1391
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 6580,
+        "charCountStart": 31805,
+        "changes": [],
+        "id": 1392
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Articles/Proca in AdS3/off-shell canonical quantization.md",
+        "wordCountStart": 1481,
+        "charCountStart": 7466,
+        "changes": [],
+        "id": 1393
+      },
+      {
+        "date": "2025-11-22",
+        "filePath": "Drafts/angular momentum.md",
+        "wordCountStart": 1429,
+        "charCountStart": 9029,
+        "changes": [
+          {
+            "timeKey": "23:10",
+            "w": 174,
+            "c": 1135
+          },
+          {
+            "timeKey": "23:15",
+            "w": 437,
+            "c": 2498
+          }
+        ],
+        "id": 1394
+      },
+      {
+        "date": "2025-11-23",
+        "filePath": "Articles/thermodynamics of scalar in ads/thermodynamic quantities.md",
+        "wordCountStart": 768,
+        "charCountStart": 3863,
+        "changes": [],
+        "id": 1395
+      },
+      {
+        "date": "2025-11-23",
+        "filePath": "Articles/thermodynamics of scalar in ads/scalar in AdS and flat spacetime.md",
+        "wordCountStart": 1823,
+        "charCountStart": 9589,
+        "changes": [],
+        "id": 1397
+      },
+      {
+        "date": "2025-11-23",
+        "filePath": "Articles/Proca in AdS3/off-shell canonical quantization.md",
+        "wordCountStart": 1481,
+        "charCountStart": 7466,
+        "changes": [],
+        "id": 1398
+      },
+      {
+        "date": "2025-11-23",
+        "filePath": "Drafts/angular momentum.md",
+        "wordCountStart": 2040,
+        "charCountStart": 12662,
+        "changes": [],
+        "id": 1399
+      },
+      {
+        "date": "2025-11-23",
+        "filePath": "Articles/quantization/article/appendix A.md",
+        "wordCountStart": 1997,
+        "charCountStart": 10675,
+        "changes": [],
+        "id": 1400
+      },
+      {
+        "date": "2025-11-23",
+        "filePath": "Articles/quantization/article/section 2.md",
+        "wordCountStart": 1623,
+        "charCountStart": 9988,
+        "changes": [],
+        "id": 1402
+      },
+      {
+        "date": "2025-11-23",
+        "filePath": "Articles/quantization/article/section 3.md",
+        "wordCountStart": 3294,
+        "charCountStart": 15945,
+        "changes": [],
+        "id": 1403
+      },
+      {
+        "date": "2025-11-23",
+        "filePath": "Articles/quantization/first example.md",
+        "wordCountStart": 2190,
+        "charCountStart": 11276,
+        "changes": [
+          {
+            "timeKey": "19:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1404
+      },
+      {
+        "date": "2025-11-23",
+        "filePath": "Articles/quantization/harmonic oscillator with multiplier.md",
+        "wordCountStart": 1949,
+        "charCountStart": 10123,
+        "changes": [],
+        "id": 1405
+      },
+      {
+        "date": "2025-11-23",
+        "filePath": "Articles/quantization/path integral quantization for constrained system.md",
+        "wordCountStart": 5661,
+        "charCountStart": 27160,
+        "changes": [],
+        "id": 1406
+      },
+      {
+        "date": "2025-11-23",
+        "filePath": "Articles/Proca in AdS3/heat kernel method.md",
+        "wordCountStart": 7403,
+        "charCountStart": 36225,
+        "changes": [
+          {
+            "timeKey": "21:00",
+            "w": 65,
+            "c": 373
+          },
+          {
+            "timeKey": "21:05",
+            "w": 99,
+            "c": 524
+          },
+          {
+            "timeKey": "21:10",
+            "w": -922,
+            "c": -4986
+          }
+        ],
+        "id": 1407
       }
     ],
     "daysWithCompletedGoal": [
@@ -40001,7 +40909,10 @@
       "2025-11-15",
       "2025-11-16",
       "2025-11-18",
-      "2025-11-19"
+      "2025-11-19",
+      "2025-11-20",
+      "2025-11-21",
+      "2025-11-22"
     ]
   }
 }
