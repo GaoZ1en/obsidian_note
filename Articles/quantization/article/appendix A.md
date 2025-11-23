@@ -209,4 +209,3 @@ $$
 and the following discussion is the same as subsection 2.
 
 cite [https://doi.org/10.1016/0003-4916(76)90062-2] and [Henneaux, Teitelboim]
-
