@@ -4,4 +4,5 @@
 # Ignore attachments and media files
 /Attachments/*
 
-#
+# Ignore json data files
+/.keep-the-rhythm/*.json
