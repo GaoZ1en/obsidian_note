@@ -735,3 +735,4 @@ $$\begin{align}
 \end{align}$$
 
 which is exactly the partition function of a harmonic oscillator with frequency $\displaystyle{\Omega}$, and $\displaystyle{\Delta \ln Z}$ disappears... I have no idea how to explain this phenomenon. maybe if we change variables that describe the system (with constraints), it will be some non-trivial thermodynamic effects?
+
