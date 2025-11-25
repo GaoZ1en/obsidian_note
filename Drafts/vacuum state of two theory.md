@@ -134,3 +134,27 @@ which indicates that the product is divergent to zero. therefore, the vacuum amp
 
 notice that the product $\prod ^{\infty}_{n}(1+a_{n})$converges to a nonzero finite value if and only if the series $\sum ^{\infty}_{n}a_{n}$ converges.
 
+---
+
+if we consider the following off-shell expansion
+
+$$\begin{align}
+\phi(t,\vec{x}) & = \int _{0}^{\infty} \mathrm{d}k a_{k}(t)\phi _{k}(\vec{x}) \\
+\phi _{k}(\vec{x}) & = C_{k} P^{|m|}_{-\frac{1}{2}+ik}(\sqrt{ 1+r^{2} }) \frac{e^{im\phi}}{\sqrt{ 2\pi }}\\
+S & =\int _{0}^{\infty} \mathrm{d}k \left(\frac{1}{2}\dot{a}^{2}_{k}-\frac{1}{2}\lambda(k)a_{k}^{2}\right) \\
+\lambda(k) & =\frac{1}{4}+k^{2}+\mu ^{2}
+\end{align}$$
+
+the vacuum amplitude between two theories with masses $\displaystyle{\mu}$ and $\displaystyle{\tilde{\mu}}$ is given by
+
+$$\begin{align}
+\braket{0|\tilde{0}} & =\prod \!\!\!\!\!\!\!\!\int\,\,\,\, _{k=0}^{\infty} \left( \frac{1}{2}\left( \sqrt{\frac{\tilde{\lambda}(k)}{\lambda(k)}}+\sqrt{\frac{\lambda(k)}{\tilde{\lambda}(k)}} \right) \right)^{-1/2}
+\end{align}$$
+
+here $\displaystyle{\prod \!\!\!\!\!\!\!\!\int}$ is some continuous product over $\displaystyle{k}$, which can be defined as
+
+$$\begin{align}
+\prod \!\!\!\!\!\!\!\!\int _{k=0}^{\infty} f(k) & =\exp \left( \int _{0}^{\infty} \mathrm{d}k \ln f(k) \right)
+\end{align}$$
+
+this continuous product is convergent to a nonzero finite value... which seems conflicts with the previous result. we have known that the continuous basis does *NOT* share the same boundary condition as the discrete basis, so these two expansions actually belong to two different theories. therefore, there is actually no conflict. 

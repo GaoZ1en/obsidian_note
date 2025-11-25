@@ -728,4 +728,11 @@ $$\begin{align}
 \Delta \ln Z & =\frac{\lambda ^{2}}{6}\beta \Omega ^{3}+\lambda ^{2}\Omega ^{2}\ln(1-e^{-\beta \Omega})+\frac{5\lambda ^{2}\Omega}{\beta}\mathrm{Li}_{2}(e^{-\beta \Omega})+\frac{5\lambda ^{2}}{\beta ^{2}}\mathrm{Li}_{2}(e^{-\beta \Omega})
 \end{align}$$
 
-here all the divergences come from the $\displaystyle{K_{\tilde{\phi}}}$. 
+here all the divergences come from the $\displaystyle{K_{\tilde{\phi}}}$. note that if we consider partition function from $\displaystyle{x}$ and $\displaystyle{\tilde{\phi}}$ instead of $\displaystyle{\phi}$, we will get
+
+$$\begin{align}
+\ln Z & =-\frac{1}{2}\beta \Omega-\ln(1-e^{-\beta \Omega})+(\text{the same divergence})
+\end{align}$$
+
+which is exactly the partition function of a harmonic oscillator with frequency $\displaystyle{\Omega}$, and $\displaystyle{\Delta \ln Z}$ disappears... I have no idea how to explain this phenomenon. maybe if we change variables that describe the system (with constraints), it will be some non-trivial thermodynamic effects?
+
