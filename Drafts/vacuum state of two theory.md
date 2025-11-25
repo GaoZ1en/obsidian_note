@@ -141,38 +141,18 @@ if we consider the following off-shell expansion
 $$\begin{align}
 \phi(t,\vec{x}) & = \int _{0}^{\infty} \mathrm{d}k a_{k}(t)\phi _{k}(\vec{x}) \\
 \phi _{k}(\vec{x}) & = C_{k} P^{|m|}_{-\frac{1}{2}+ik}(\sqrt{ 1+r^{2} }) \frac{e^{im\phi}}{\sqrt{ 2\pi }}\\
-S & =\int _{0}^{\infty} \mathrm{d}k \left(\frac{1}{2}\dot{a}^{2}_{k}-\frac{1}{2}\lambda(k)a_{k}^{2}\right) \\
+S & =\sum _{m=-\infty}^{\infty}\int _{0}^{\infty} \mathrm{d}k\int ^{t_{f}}_{t_{i}} \left(\frac{1}{2}\dot{a}^{2}_{k}-\frac{1}{2}\lambda(k)a_{k}^{2}\right) \\
 \lambda(k) & =\frac{1}{4}+k^{2}+\mu ^{2}
+\end{align}$$
+
+$$\begin{align}
+
 \end{align}$$
 
 the vacuum amplitude between two theories with masses $\displaystyle{\mu}$ and $\displaystyle{\tilde{\mu}}$ is given by
 
 $$\begin{align}
-\braket{0|\tilde{0}} & =\prod \!\!\!\!\!\!\!\!\int\,\,\,\, _{k=0}^{\infty} \left( \frac{1}{2}\left( \sqrt{\frac{\tilde{\lambda}(k)}{\lambda(k)}}+\sqrt{\frac{\lambda(k)}{\tilde{\lambda}(k)}} \right) \right)^{-1/2}
+\braket{0|\tilde{0}} & =\prod _{m=-\infty}^{\infty}\prod \!\!\!\!\!\!\!\!\int\,\,\,\, _{k=0}^{\infty} \left( \frac{1}{2}\left( \sqrt{\frac{\tilde{\lambda}(k)}{\lambda(k)}}+\sqrt{\frac{\lambda(k)}{\tilde{\lambda}(k)}} \right) \right)^{-1/2} \\
+ & =0
 \end{align}$$
 
-here $\displaystyle{\prod \!\!\!\!\!\!\!\!\int}$ is some continuous product over $\displaystyle{k}$, which can be defined as
-
-$$\begin{align}
-\prod \!\!\!\!\!\!\!\!\int _{k=0}^{\infty} f(k) & =\exp \left( \int _{0}^{\infty} \mathrm{d}k \ln f(k) \right)
-\end{align}$$
-
-at large $\displaystyle{k}$,
-
-$$\begin{align}
- \frac{1}{2}\left( \sqrt{\frac{\tilde{\lambda}(k)}{\lambda(k)}}+\sqrt{\frac{\lambda(k)}{\tilde{\lambda}(k)}} \right) & = 1+\frac{(\tilde{\mu} ^{2}-\mu ^{2})^{2}}{8k^{4}}+O\left( \frac{1}{k^{6}} \right)
-\end{align}$$
-
-the integral
-
-$$\begin{align}
-\int ^{\infty}_{\Lambda} \mathrm{d}k\ln \left(\frac{1}{2}\left( \sqrt{ \frac{\tilde{\lambda}(k)}{\lambda(k)} }+\sqrt{ \frac{\lambda(k)}{\tilde{\lambda}(k)} } \right)\right) \sim \int ^{\infty}_{\Lambda} \mathrm{d}k \frac{(\tilde{\mu} ^{2}-\mu ^{2})^{2}}{8k^{4}} & <\infty
-\end{align}$$
-
-and at small $\displaystyle{k}$,
-
-$$\begin{align}
-\int _{0}^{\epsilon} \mathrm{d}k\ln \left(\frac{1}{2}\left( \sqrt{ \frac{\tilde{\lambda}(k)}{\lambda(k)} }+\sqrt{ \frac{\lambda(k)}{\tilde{\lambda}(k)} } \right)\right) \sim \int _{0}^{\epsilon} \mathrm{d}k \ln \left( \frac{1}{2}\left( \sqrt{ \frac{\tilde{\mu} ^{2}+\frac{1}{4}}{\mu ^{2}+\frac{1}{4}} }+\sqrt{ \frac{\mu ^{2}+\frac{1}{4}}{\tilde{\mu} ^{2}+\frac{1}{4}} } \right) \right) & <\infty
-\end{align}$$
-
-this continuous product is convergent to a nonzero finite value... which seems conflicts with the previous result. we have known that the continuous basis does *NOT* share the same boundary condition as the discrete basis, so these two expansions actually belong to two different theories. therefore, there is actually no conflict. 

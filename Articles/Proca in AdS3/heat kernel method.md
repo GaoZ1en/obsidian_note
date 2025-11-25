@@ -681,7 +681,7 @@ K_{x} & \lambda \partial _{\tau'}K_{x} \\
 \lambda \partial _{\tau}K_{x} & \lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}+K_{\tilde{\phi}}
 \end{pmatrix} \\
 K_{x} & = \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt}e^{-\frac{(\tau-\tau')^{2}}{4(m-\lambda ^{2})t}} \\
-K_{\tilde{\phi}} & =\frac{1}{\sqrt{4\pi t}}e^{-\frac{(\tau-\tau')^{2}}{4t}}
+K_{\tilde{\phi}} & =XXX
 \end{align}$$
 
 now we want to compute the partition function. the trace of the heat kernel is
@@ -720,7 +720,12 @@ K(t) & =\sum _{n\in \mathbb{Z}}\int ^{\beta}_{0} \mathrm{d}\tau \left( K_{x}(t,\
  & +\beta\sum _{n\neq 0}\left[ \left( 1+\lambda ^{2}\left( \frac{1}{2(m-\lambda ^{2})t}+\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})^{2}t^{2}} \right) \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt-\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})t}}+\frac{1}{\sqrt{ 4\pi t }}e^{-\frac{n^{2}\beta ^{2}}{4t}}\right]
 \end{align}$$
 
-again, the $\displaystyle{\tilde{\phi}}$ part diverges due to the auxiliary nature of $\displaystyle{\phi}$. so we focus on the $\displaystyle{x}$ part only. the partition function is given by
+$$\begin{align}
+\sum _{n\neq 0} \frac{1}{\sqrt{ 4\pi t }} e^{-\frac{n^{2}\beta ^{2}}{4t}} & =2\sum ^{\infty}_{n=1} \frac{1}{\sqrt{ 4\pi t }} e^{-\frac{n^{2}\beta ^{2}}{4t}} \\
+ & = \frac{1}{2}\left( \vartheta _{3}\left( 0,e^{-\frac{\beta ^{2}}{4t}} \right)-1 \right)
+\end{align}$$
+
+where $\displaystyle{\vartheta _{3}(z,\tau)=\sum ^{\infty}_{n=-\infty}e^{i\pi \tau n^{2}+2\pi i n z}}$ is the third Jacobi theta function. again, the $\displaystyle{\tilde{\phi}}$ part diverges due to the auxiliary nature of $\displaystyle{\phi}$. so we focus on the $\displaystyle{x}$ part only. the partition function is given by
 
 $$\begin{align}
 \ln Z & =\frac{1}{2}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}K(t) \\
@@ -728,11 +733,50 @@ $$\begin{align}
 \Delta \ln Z & =\frac{\lambda ^{2}}{6}\beta \Omega ^{3}+\lambda ^{2}\Omega ^{2}\ln(1-e^{-\beta \Omega})+\frac{5\lambda ^{2}\Omega}{\beta}\mathrm{Li}_{2}(e^{-\beta \Omega})+\frac{5\lambda ^{2}}{\beta ^{2}}\mathrm{Li}_{2}(e^{-\beta \Omega})
 \end{align}$$
 
-here all the divergences come from the $\displaystyle{K_{\tilde{\phi}}}$. note that if we consider partition function from $\displaystyle{x}$ and $\displaystyle{\tilde{\phi}}$ instead of $\displaystyle{\phi}$, we will get
+here all the divergences come from the $\displaystyle{K_{\tilde{\phi}}}$. note that if we consider partition function from $\displaystyle{x}$ and $\displaystyle{\tilde{\phi}=\phi-\lambda \partial _{\tau}x}$ instead of $\displaystyle{\phi}$, we will get
 
 $$\begin{align}
 \ln Z & =-\frac{1}{2}\beta \Omega-\ln(1-e^{-\beta \Omega})+(\text{the same divergence})
 \end{align}$$
 
 which is exactly the partition function of a harmonic oscillator with frequency $\displaystyle{\Omega}$, and $\displaystyle{\Delta \ln Z}$ disappears... I have no idea how to explain this phenomenon. maybe if we change variables that describe the system (with constraints), it will be some non-trivial thermodynamic effects?
+
+$$\begin{align}
+S & =\int \mathrm{d}\tau\left(\frac{1}{2}(m-\lambda ^{2})\left(\frac{\mathrm{d}x}{\mathrm{d}\tau}\right)^{2}+\frac{1}{2}kx^{2}+\frac{1}{2}\left( \phi-\lambda\frac{\mathrm{d}x}{\mathrm{d}\tau} \right)^{2}\right) \\
+ & =\int \mathrm{d}\tau\left(-\frac{1}{2}\tilde{X}^{T}\tilde{\Delta}\tilde{X}\right) \\
+\tilde{X} & =\begin{pmatrix}
+x \\
+\phi-\lambda \partial _{\tau}x
+\end{pmatrix}=\begin{pmatrix}
+x\\ \tilde{\phi}
+\end{pmatrix} \\
+\tilde{\Delta} & =\begin{pmatrix}
+-(m-\lambda ^{2})\partial _{\tau}^{2}+k & 0 \\
+0 & -1
+\end{pmatrix}
+\end{align}$$
+
+the eigenvalues are
+
+$$\begin{align}
+\begin{pmatrix}
+\Omega ^{2}+\omega _{n}^{2} \\
+-1
+\end{pmatrix}, n & \in \mathbb{Z}
+\end{align}$$
+
+the heat kernel corresponding to $\displaystyle{\tilde{\Delta}}$ is actually
+
+$$\begin{align}
+\tilde{K}(t,\tau,\tau') & =\begin{pmatrix}
+K_{x} & 0 \\
+0 & K_{\tilde{\phi}}
+\end{pmatrix}
+\end{align}$$
+
+which gives the partition function
+
+$$\begin{align}
+\ln Z & =-\frac{1}{2}\beta \Omega-\ln(1-e^{-\beta \Omega})+\dots 
+\end{align}$$
 
