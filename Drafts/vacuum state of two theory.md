@@ -157,4 +157,22 @@ $$\begin{align}
 \prod \!\!\!\!\!\!\!\!\int _{k=0}^{\infty} f(k) & =\exp \left( \int _{0}^{\infty} \mathrm{d}k \ln f(k) \right)
 \end{align}$$
 
+at large $\displaystyle{k}$,
+
+$$\begin{align}
+ \frac{1}{2}\left( \sqrt{\frac{\tilde{\lambda}(k)}{\lambda(k)}}+\sqrt{\frac{\lambda(k)}{\tilde{\lambda}(k)}} \right) & = 1+\frac{(\tilde{\mu} ^{2}-\mu ^{2})^{2}}{8k^{4}}+O\left( \frac{1}{k^{6}} \right)
+\end{align}$$
+
+the integral
+
+$$\begin{align}
+\int ^{\infty}_{\Lambda} \mathrm{d}k\ln \left(\frac{1}{2}\left( \sqrt{ \frac{\tilde{\lambda}(k)}{\lambda(k)} }+\sqrt{ \frac{\lambda(k)}{\tilde{\lambda}(k)} } \right)\right) \sim \int ^{\infty}_{\Lambda} \mathrm{d}k \frac{(\tilde{\mu} ^{2}-\mu ^{2})^{2}}{8k^{4}} & <\infty
+\end{align}$$
+
+and at small $\displaystyle{k}$,
+
+$$\begin{align}
+\int _{0}^{\epsilon} \mathrm{d}k\ln \left(\frac{1}{2}\left( \sqrt{ \frac{\tilde{\lambda}(k)}{\lambda(k)} }+\sqrt{ \frac{\lambda(k)}{\tilde{\lambda}(k)} } \right)\right) \sim \int _{0}^{\epsilon} \mathrm{d}k \ln \left( \frac{1}{2}\left( \sqrt{ \frac{\tilde{\mu} ^{2}+\frac{1}{4}}{\mu ^{2}+\frac{1}{4}} }+\sqrt{ \frac{\mu ^{2}+\frac{1}{4}}{\tilde{\mu} ^{2}+\frac{1}{4}} } \right) \right) & <\infty
+\end{align}$$
+
 this continuous product is convergent to a nonzero finite value... which seems conflicts with the previous result. we have known that the continuous basis does *NOT* share the same boundary condition as the discrete basis, so these two expansions actually belong to two different theories. therefore, there is actually no conflict. 
