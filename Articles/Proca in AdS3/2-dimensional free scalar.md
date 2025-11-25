@@ -49,6 +49,18 @@ this integral contains a IR divergence when when $\displaystyle{m\to 0}$. to cur
 $$\begin{align}
 \mathcal{I} & = \int \frac{\mathrm{d}^{2}k}{(2\pi)^{2}}e^{ik(x_{1}-x_{2})}\int _{0}^{\infty}\mathrm{d}s e^{-s(k^{2}+m^{2})} \\
  & =\int _{0}^{\infty}\mathrm{d}s e^{-sm^{2}}\int \frac{\mathrm{d}^{2}k}{(2\pi)^{2}}e^{ik(x_{1}-x_{2})-sk^{2}} \\
- & =\frac{1}{4\pi}\int _{0}^{\infty}\mathrm{d}s \frac{1}{s}e^{-sm^{2}-\frac{(x_{1}-x_{2})^{2}}{4s}}
+ & =\frac{1}{4\pi}\int _{0}^{\infty}\mathrm{d}s \frac{1}{s}e^{-sm^{2}-\frac{(x_{1}-x_{2})^{2}}{4s}} \\
+ & =\frac{1}{2\pi}K_{0}(m|x_{1}-x_{2}|) \\
+ & \approx -\frac{1}{2\pi}\left(\gamma +\ln\left(\frac{m|x_{1}-x_{2}|}{2}\right)\right) \quad (m\to 0) \\
+ & = -\frac{1}{2\pi}\left(\gamma +\ln\left(\frac{|x_{1}-x_{2}|}{2}\right)\right)+\frac{1}{2\pi}\ln(m) \quad(m\to 0)
 \end{align}$$
 
+to do this integral, we have another trick, we introduce an UV cutoff $\displaystyle{\Lambda}$
+
+$$\begin{align}
+\mathcal{I}' & =\frac{1}{4\pi}\int ^{\Lambda}_{0} \mathrm{d}s \frac{1}{s}e^{-(x_{1}-x_{2})^{2}/4s} \\
+ & =\frac{1}{4\pi}\left[\int ^{\infty}_{0} \mathrm{d}s \frac{1}{s}e^{-(x_{1}-x_{2})^{2}/4s}-\int ^{\infty}_{\Lambda} \mathrm{d}s \frac{1}{s}e^{-(x_{1}-x_{2})^{2}/4s}\right] \\
+ & =\frac{1}{4\pi}\left[-2\gamma -2\ln\left(\frac{|x_{1}-x_{2}|}{2}\right)+E_{1}\left(\frac{(x_{1}-x_{2})^{2}}{4\Lambda}\right)\right]\quad (\Lambda\to \infty)
+\end{align}$$
+
+where $\displaystyle{E_{1}(x)=\int ^{\infty}_{x} \frac{e^{-t}}{t}\mathrm{d}t}$ is the exponential integral function. we can see that 
