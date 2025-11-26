@@ -1,4 +1,8 @@
-
+$$\begin{align}
+R^{(0)}_{\mu \nu \rho \sigma} & =g^{(0)}_{\mu \sigma}g^{(0)}_{\nu \rho}-g^{(0)}_{\mu \rho}g^{(0)}_{\nu \sigma} \\
+R^{(0)}_{\mu \nu} & =-2g^{(0)}_{\mu \nu} \\
+R^{(0)} & =-6
+\end{align}$$
 
 $$\begin{align}
 g_{\mu \nu} & =g^{(0)}_{\mu \nu}+h_{\mu \nu}
@@ -164,6 +168,13 @@ $$\begin{align}
 
 thus the variation of the Lagrangian is
 
+
+$$\begin{align}
+ & \sqrt{ -g^{(0)} }\delta h^{\mu \nu}\left( g^{(0)}_{\mu \nu}h-2h_{\mu \nu}+\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)2}h\right)
+\end{align}$$
+
+
+
 $$\begin{align}
 \delta L & =\sqrt{ -g^{(0)} }(\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}\delta h^{\mu \nu}-g^{(0)}_{\mu \nu}\nabla ^{(0)2}\delta h^{\mu \nu}) \\
  & +3\sqrt{ -g^{(0)} }g^{(0)}_{\mu \nu}h\delta h^{\mu \nu}-8\sqrt{ -g^{(0)} }h_{\mu \nu}\delta h^{\mu \nu} \\
@@ -172,14 +183,46 @@ $$\begin{align}
  & -\sqrt{ -g^{(0)} }\left(2\nabla ^{(0)}_{\mu}(\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}\delta h^{\mu \nu})-2\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}\delta h^{\mu \nu}\right) \\
  & +\sqrt{ -g^{(0)} }(\nabla ^{(0)}_{\rho}(g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu})-g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu}+\nabla ^{(0)}_{\mu}(\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu})-\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu}) \\
  & -2\sqrt{ -g^{(0)} }\left(\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}\delta h^{\mu \nu}+\nabla ^{(0)}_{\nu}(h_{\mu}^{~\rho}\nabla ^{(0)}_{\rho}\delta h^{\mu \nu})-\nabla ^{(0)}_{\rho}(\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}\delta h^{\mu \nu})+\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}\delta h^{\mu \nu}\right) \\
- & 
+ & +\frac{1}{2}(g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu}+\nabla ^{(0)}_{\mu}(h\nabla ^{(0)}_{\nu}\delta h^{\mu \nu})-\nabla ^{(0)}_{\mu}(\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu})+\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu}) \\
+ & +(\nabla ^{(0)2}h_{\mu \nu}\delta h^{\mu \nu}+\nabla ^{(0)}_{\rho}(h_{\mu \nu}\nabla ^{(0)\rho}\delta h^{\mu \nu}-\nabla ^{(0)\rho}h_{\mu \nu}\delta h^{\mu \nu})+\nabla ^{(0)2}h_{\mu \nu}\delta h^{\mu \nu}) \\
+ & -\frac{1}{2}\left(2g^{(0)}_{\mu \nu}\nabla ^{(0)2}h\delta h^{\mu \nu}+\nabla ^{(0)}_{\rho}(g^{(0)}_{\mu \nu}h\nabla ^{(0)\rho}\delta h^{\mu \nu}-g^{(0)}_{\mu \nu}\nabla ^{(0)\rho}h\delta h^{\mu \nu})\right) \\
+ & -\frac{1}{2}(2\nabla ^{(0)\rho}(\nabla ^{(0)}_{\mu}h_{\nu \rho}\delta h^{\mu \nu})-2\nabla ^{(0)\rho}\nabla ^{(0)}_{\mu}h_{\nu \rho}\delta h^{\mu \nu}) \\
+ & +\frac{3}{4}(2\nabla ^{(0)}_{\rho}(\nabla ^{(0)\rho}h_{\mu \nu}\delta h^{\mu \nu})-2\nabla ^{(0)2}h_{\mu \nu}\delta h^{\mu \nu})
 \end{align}$$
+
+for the moment I cannot derive the eom from the Lagrangian...
+
+---
+
+the linearized eom reads
 
 $$\begin{align}
-L & =\sqrt{ -g }(R+2) \\
- & =\sqrt{ -g^{(0)} }\left( -4 \right)+\sqrt{ -g^{(0)} }(\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu}-\nabla ^{(0)2}h) \\
- & +\sqrt{ -g^{(0)} }\left(\frac{3}{2}h^{2}-4h_{\mu \nu}h^{\mu \nu}+h^{\mu \nu}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h-\frac{1}{4}\nabla ^{(0)}_{\mu}h\nabla ^{(0)\mu}h\right. \\
- & -\nabla ^{(0)}_{\mu}h^{\mu \nu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}+\nabla ^{(0)\mu}h\nabla ^{(0)}_{\nu}h_{\mu}^{~\nu}-2h^{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}+\frac{1}{2}h\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu} \\
- & \left.+h^{\mu \nu}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}h\nabla ^{(0)2}h-\frac{1}{2}\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\rho}h^{\mu \nu}+\frac{3}{4}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}+\mathcal{O}(h^{3})\right)
+-h_{\mu \nu}-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}+\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)2}h+\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}+\frac{1}{2}\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\rho}h_{\mu}^{~\rho}-\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h=0
 \end{align}$$
 
+take a trace, we have
+
+$$\begin{align}
+\implies -h +\frac{1}{2}\nabla ^{(0)2}h-\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu} & =0
+\end{align}$$
+
+plug it back to the eom, we get
+
+$$\begin{align}
+-h_{\mu \nu}+g^{(0)}_{\mu \nu}h-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}+\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}+\frac{1}{2}\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\rho}h_{\mu}^{~\rho}-\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h & =0 \\
+\implies -h_{\mu \nu}+g^{(0)}_{\mu \nu}h-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}+\frac{1}{2}\nabla ^{(0)}_{(\mu}(\nabla ^{(0)}_{\rho}h_{\nu)}^{~\rho}-\frac{1}{2}\nabla ^{(0)}_{\nu)}h) & =0
+\end{align}$$
+
+if we impose the de Donder gauge condition
+
+$$\begin{align}
+\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}-\frac{1}{2}\nabla ^{(0)}_{\nu}h & =0
+\end{align}$$
+
+the last term vanishes, leading to
+
+$$\begin{align}
+-h_{\mu \nu}+g^{(0)}_{\mu \nu}h-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu} & =0
+\end{align}$$
+
+---
