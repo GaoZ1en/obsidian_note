@@ -103,8 +103,38 @@ as a summary
 then
 
 $$\begin{align}
-\delta \mathcal{L} & =\sqrt{ -g^{0} }E_{\mu \nu}\delta h^{\mu \nu}+\sqrt{ -g^{(0)} }\nabla ^{(0)}_{\rho}\Theta ^{\rho} \\
-E_{\mu \nu} & = \\
-\Theta ^{\rho} & 
+\delta \mathcal{L} & =\sqrt{ -g^{(0)} }E_{\mu \nu}\delta h^{\mu \nu}+\sqrt{ -g^{(0)} }\nabla ^{(0)}_{\rho}\Theta ^{\rho}
+\end{align}$$
+
+where
+
+$$\begin{align}
+E_{\mu \nu} & =3hg^{(0)}_{\mu \nu}-8h_{\mu \nu}+\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h \\
+ & -\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}-\frac{1}{2}\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\rho}h_{\mu}^{~\rho} \\
+ & -\frac{3}{2}[\nabla ^{(0)}_{\rho},\nabla ^{(0)}_{\nu}]h_{\mu}^{~\rho}-\frac{3}{2}[\nabla ^{(0)}_{\rho},\nabla ^{(0)}_{\mu}]h_{\nu}^{~\rho}+\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma} \\
+ & +\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)2}h \\
+ & =h_{\mu \nu}+\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}+\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}-\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)2}h \\
+ & -\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}-\frac{1}{2}\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\rho}h_{\mu}^{~\rho}-\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h
+\end{align}$$
+
+and the symplectic potential
+
+$$\begin{align}
+\Theta ^{\rho} & =g^{(0)}_{\mu \nu}h^{\rho \sigma}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu}-g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu}-\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)\rho}h\delta h^{\mu \nu}-\delta ^{\rho}_{\mu}\nabla ^{(0)}_{\sigma}h_{\nu}^{~\sigma}\delta h^{\mu \nu}-\delta ^{\rho}_{\nu}\nabla ^{(0)}_{\sigma}h_{\mu}^{\sigma}\delta h^{\mu \nu} \\
+ & +g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu}+\delta ^{\rho}_{\nu}\nabla ^{(0)}_{\mu}h\delta h^{\mu \nu}-2(\delta ^{\rho}_{\mu}h_{\nu}^{~\sigma}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu}-\nabla ^{(0)}_{\mu}h_{\nu}^{~\rho}\delta h^{\mu \nu}) \\
+ & +\frac{1}{2}\delta ^{\rho}_{\mu}(h\nabla ^{(0)}_{\nu}\delta h^{\mu \nu}-\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu})+g^{(0)\rho \sigma}(h_{\mu \nu}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu}-\nabla ^{(0)}_{\sigma}h_{\mu \nu}\delta h^{\mu \nu}) \\
+ & -\frac{1}{2}g^{(0)}_{\mu \nu}g^{(0)\rho \sigma}(h\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu}-\nabla ^{(0)}_{\sigma}h\delta h^{\mu \nu})-\frac{1}{2}(\nabla ^{(0)}_{\mu}h_{\nu}^{~\rho}+\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho})\delta h^{\mu\nu}+\frac{3}{2}\nabla ^{(0)\rho}h^{\mu \nu}\delta h_{\mu \nu}
+\end{align}$$
+
+$$\begin{align}
+\Theta ^{\rho} & =g^{(0)}_{\mu \nu}h^{\rho \sigma}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu}-g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu}-\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)\rho}h\delta h^{\mu \nu}-\delta ^{\rho}_{\mu}\nabla ^{(0)}_{\sigma}h_{\nu}^{~\sigma}\delta h^{\mu \nu}-\delta ^{\rho}_{\nu}\nabla ^{(0)}_{\sigma}h_{\mu}^{\sigma}\delta h^{\mu \nu} \\
+ & +g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu}+\delta ^{\rho}_{\nu}\nabla ^{(0)}_{\mu}h\delta h^{\mu \nu}-2(\delta ^{\rho}_{\mu}h_{\nu}^{~\sigma}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu}-\nabla ^{(0)}_{\mu}h_{\nu}^{~\rho}\delta h^{\mu \nu}) \\
+ & +\frac{1}{2}\delta ^{\rho}_{\mu}(h\nabla ^{(0)}_{\nu}\delta h^{\mu \nu}-\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu})+g^{(0)\rho \sigma}(h_{\mu \nu}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu}-\nabla ^{(0)}_{\sigma}h_{\mu \nu}\delta h^{\mu \nu}) \\
+ & -\frac{1}{2}g^{(0)}_{\mu \nu}g^{(0)\rho \sigma}(h\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu}-\nabla ^{(0)}_{\sigma}h\delta h^{\mu \nu})-\frac{1}{2}(\nabla ^{(0)}_{\mu}h_{\nu}^{~\rho}+\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho})\delta h^{\mu\nu}+\frac{3}{2}\nabla ^{(0)\rho}h^{\mu \nu}\delta h_{\mu \nu}
+\end{align}$$
+
+$$\begin{align}
+ & =\frac{1}{2}\nabla ^{(0)}_{\mu}h\delta h^{\mu \rho}+h^{\mu \rho}\nabla ^{(0)}_{\mu}\delta h-2\delta h^{\mu \rho}\nabla ^{(0)\nu}h_{\mu \nu}+\nabla ^{(0)}_{\mu}h_{\nu}^{~\rho}\delta h^{\mu \nu} \\
+ & -2h^{\mu \nu}\nabla ^{(0)}_{\nu}\delta h^{\rho}_{~\mu}+\frac{1}{2}h\nabla ^{(0)}_{\mu}\delta h^{\mu \nu}+\frac{1}{2}\delta h^{\mu \nu}\nabla ^{(0)\rho}h_{\mu \nu}+h^{\mu \nu}\nabla ^{(0)\rho}\delta h_{\mu \nu}-\frac{1}{2}h\nabla ^{(0)\rho}\delta h
 \end{align}$$
 
