@@ -78,3 +78,4 @@ N(\lambda) & \sim \frac{\omega _{n}\mathrm{Vol}(M)}{(2\pi)^{n}}\lambda ^{n/2}\pm
 \end{align}$$
 
 where $\displaystyle{+}$ is for Neumann boundary conditions and $\displaystyle{-}$ is for Dirichlet boundary conditions.
+

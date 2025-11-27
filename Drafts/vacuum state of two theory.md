@@ -145,10 +145,6 @@ S & =\sum _{m=-\infty}^{\infty}\int _{0}^{\infty} \mathrm{d}k\int ^{t_{f}}_{t_{i
 \lambda(k) & =\frac{1}{4}+k^{2}+\mu ^{2}
 \end{align}$$
 
-$$\begin{align}
-
-\end{align}$$
-
 the vacuum amplitude between two theories with masses $\displaystyle{\mu}$ and $\displaystyle{\tilde{\mu}}$ is given by
 
 $$\begin{align}

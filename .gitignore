@@ -8,3 +8,6 @@
 /.keep-the-rhythm/
 /.vscode/
 /.github/
+
+# Ignore tex files in every folders
+/**/*.tex
