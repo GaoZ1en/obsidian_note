@@ -639,29 +639,34 @@ $$\begin{align}
 
 here we are not necessary to substract the non-physical longitudinal mode contribution since we already imposed the transversality condition in the heat kernel equation.
 
-# heat kernel for system with second class constraint
+---
 
 now we will consider the following system with second class constraint
 
 $$\begin{align}
-S & =\int \mathrm{d}t\left( \frac{1}{2}m \left( \frac{\mathrm{d}x}{\mathrm{d}\tau} \right)^{2}+\frac{1}{2}kx^{2}-\lambda \phi \frac{\mathrm{d}x}{\mathrm{d}\tau}+\frac{1}{2}\phi ^{2} \right) \\
- & =\int \mathrm{d}t\left(-\frac{1}{2}X^{T}\Delta X\right) \\
+S & =\int \mathrm{d}t\left( \frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2} \right) \\
+ & =\int \mathrm{d}t\left(-\frac{1}{2}X\Delta X^{T}\right) \\
+X & =\begin{pmatrix}
+x & \phi
+\end{pmatrix} \\
 \Delta & =\begin{pmatrix}
--m\partial _{\tau}^{2}+k & \lambda \partial _{\tau} \\
--\lambda \partial _{\tau} & -1
-\end{pmatrix}, \quad X=\begin{pmatrix}
-x \\
-\phi
+m \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k & -\lambda \frac{\mathrm{d}}{\mathrm{d}t} \\
+\lambda \frac{\mathrm{d}}{\mathrm{d}t} & -1
 \end{pmatrix}
 \end{align}$$
 
-here we have already taken the Wick rotation $\displaystyle{t\to -i\tau}$. the heat kernel is defined as
+now we change to Euclidean time $\displaystyle{t\to -i\tau}$, so that the action becomes
 
 $$\begin{align}
-K(t,\tau,\tau') & = \sum _{n}e^{-\lambda _{n}t}X_{n}(\tau)X_{n}^{T}(\tau')
+S & =\int \mathrm{d}\tau\left(\frac{1}{2}m\left( \frac{\mathrm{d}x}{\mathrm{d}\tau} \right)^{2}+\frac{1}{2}kx^{2}+i\lambda  \frac{\mathrm{d}x}{\mathrm{d}\tau}\phi-\frac{1}{2}\phi ^{2}\right) \\
+ & =\int \mathrm{d}\tau\left(-\frac{1}{2}X\Delta X^{T}\right) \\
+\Delta & =\begin{pmatrix}
+-m\partial _{\tau}^{2}+k & -i\lambda \partial _{\tau} \\
+i\lambda \partial _{\tau} & -1
+\end{pmatrix}
 \end{align}$$
 
-the heat kernel satisfies
+the heat kernel equation is
 
 $$\begin{align}
 \Delta _{\tau} K(t,\tau,\tau') & = -\partial _{t}K(t,\tau,\tau')
@@ -670,35 +675,63 @@ $$\begin{align}
 with initial condition
 
 $$\begin{align}
-K(0,\tau,\tau') & =I_{2}\delta(\tau-\tau')
+K(0,\tau,\tau') & =\delta (\tau-\tau')I_{2}
 \end{align}$$
 
-the solution to this equation and initial condition is
+we can diagonalize the action by the shift
+
+$$\begin{align}
+\tilde{\phi}=\phi-i\lambda \frac{\mathrm{d}x}{\mathrm{d}\tau}
+\end{align}$$
+
+then the heat kernel equation becomes
+
+$$\begin{align}
+\Delta'_{\tau}K'(t,\tau,\tau') & =-\partial _{t}K'(t,\tau,\tau') \\
+\Delta'_{\tau} & =\begin{pmatrix}
+-(m-\lambda ^{2})\partial _{\tau}^{2}+k & 0 \\
+0 & -1
+\end{pmatrix} \\
+K'(0,\tau,\tau') & =\delta (\tau-\tau')I_{2}
+\end{align}$$
+
+and the solution is straightforward.
+
+$$\begin{align}
+K'(t,\tau,\tau') & =\begin{pmatrix}
+K_{x}(t,\tau,\tau') & 0 \\
+0 & K_{\tilde{\phi}}(t,\tau,\tau')
+\end{pmatrix} \\
+ & =\begin{pmatrix}
+\frac{1}{\sqrt{4\pi (m-\lambda ^{2})t}}e^{-kt}e^{-\frac{(\tau-\tau')^{2}}{4(m-\lambda ^{2})t}} & 0 \\
+0 & e^{t}\delta (\tau-\tau')
+\end{pmatrix}
+\end{align}$$
+
+then returning to the original variables.
 
 $$\begin{align}
 K(t,\tau,\tau') & =\begin{pmatrix}
-K_{x} & \lambda \partial _{\tau'}K_{x} \\
-\lambda \partial _{\tau}K_{x} & \lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}+K_{\tilde{\phi}}
-\end{pmatrix} \\
-K_{x} & = \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt}e^{-\frac{(\tau-\tau')^{2}}{4(m-\lambda ^{2})t}} \\
-K_{\tilde{\phi}} & =XXX
+K_{x} & i\lambda \partial _{\tau'}K_{x} \\
+i\lambda \partial _{\tau}K_{x} & K_{\tilde{\phi}}-\lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}
+\end{pmatrix}
 \end{align}$$
 
 now we want to compute the partition function. the trace of the heat kernel is
 
 $$\begin{align}
 K(t) & =\mathrm{Tr}(K(t,\tau,\tau)) \\
- & =\int \mathrm{d}\tau \left( K_{x}(t,\tau,\tau)+\lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}(t,\tau,\tau')|_{\tau'=\tau} +K_{\tilde{\phi}}(t,\tau,\tau)\right) \\
- & =\mathrm{Vol}(\mathbb{R})\left( 1+\frac{\lambda ^{2}}{2(m-\lambda ^{2})t} \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt}+ \mathrm{Vol}(\mathbb{R})\frac{1}{\sqrt{4\pi t}}
+ & =\int \mathrm{d}\tau \left( K_{x}(t,\tau,\tau)+K_{\tilde{\phi}}(t,\tau,\tau)-\lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}(t,\tau,\tau')|_{\tau'=\tau} \right) \\
+ & =\mathrm{Vol}(\mathbb{R})\left( 1-\frac{\lambda ^{2}}{2(m-\lambda ^{2})t} \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt}+\mathrm{Vol}(\mathbb{R}^{2})\delta(0)e^{t}
 \end{align}$$
 
-and the partition function is
+notice that the $\displaystyle{\tilde{\phi}}$ part diverges since it has no kinetic term. this is expected since $\displaystyle{\phi}$ is an auxiliary field. and the partition function is
 
 $$\begin{align}
 \ln Z & =\frac{1}{2}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}K(t) \\
- & =\frac{1}{2}\mathrm{Vol}(\mathbb{R})\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\left( \left( 1+\frac{\lambda ^{2}}{2(m-\lambda ^{2})t} \right)\frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt}\right)+\mathrm{Vol}(\mathbb{R}) \int ^{\infty}_{0} \frac{\mathrm{d}t}{t} \frac{1}{\sqrt{ 4\pi t }} \\
- & =\frac{1}{2}\mathrm{Vol}(\mathbb{R})\left( \Gamma\left( -\frac{1}{2} \right)k^{1/2}+\frac{\lambda ^{2}}{2(m-\lambda ^{2})}\Gamma\left( -\frac{3}{2} \right)k^{3/2} \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}+(\text{divergence}) \\
- & =\frac{1}{2}\mathrm{Vol}(\mathbb{R})\left( -\Omega+\frac{\lambda ^{2}}{3}\Omega ^{3} \right)+ (\text{divergence})
+ & =\frac{1}{2}\mathrm{Vol}(\mathbb{R})\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\left( \left( 1-\frac{\lambda ^{2}}{2(m-\lambda ^{2})t} \right)\frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt}\right) \\
+ & =\frac{1}{2}\mathrm{Vol}(\mathbb{R})\left( \Gamma\left( -\frac{1}{2} \right)k^{1/2}-\frac{\lambda ^{2}}{2(m-\lambda ^{2})}\Gamma\left( -\frac{3}{2} \right)k^{3/2} \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }} \\
+ & =\frac{1}{2}\mathrm{Vol}(\mathbb{R})\left( -\Omega-\frac{\lambda ^{2}}{3}\Omega ^{3} \right)
 \end{align}$$
 
 to calculate the thermal partition function, we sum over images. the heat kernel on $\displaystyle{S^{1}}$ is
@@ -715,68 +748,52 @@ K_{x}(t,\tau,\tau') & =\frac{1}{\sqrt{4\pi (m-\lambda ^{2})t}}e^{-kt}e^{-\frac{(
 \end{align}$$
 
 $$\begin{align}
-K(t) & =\sum _{n\in \mathbb{Z}}\int ^{\beta}_{0} \mathrm{d}\tau \left( K_{x}(t,\tau,\tau'+n\beta)+\lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}(t,\tau,\tau'+n\beta)|_{\tau'=\tau}+K_{\tilde{\phi}}(t,\tau,\tau'+n\beta) \right) \\
- & =\beta\left( 1+\frac{\lambda ^{2}}{2(m-\lambda ^{2})t} \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt}+\frac{\beta}{\sqrt{ 4\pi t }}\\
- & +\beta\sum _{n\neq 0}\left[ \left( 1+\lambda ^{2}\left( \frac{1}{2(m-\lambda ^{2})t}+\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})^{2}t^{2}} \right) \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt-\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})t}}+\frac{1}{\sqrt{ 4\pi t }}e^{-\frac{n^{2}\beta ^{2}}{4t}}\right]
+K(t) & =\sum _{n\in \mathbb{Z}}\int ^{\beta}_{0} \mathrm{d}\tau \left( K_{x}(t,\tau,\tau'+n\beta)+K_{\tilde{\phi}}(t,\tau,\tau'+n\beta)-\lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}(t,\tau,\tau'+n\beta)|_{\tau'=\tau} \right) \\
+ & =\beta\left( 1-\frac{\lambda ^{2}}{2(m-\lambda ^{2})t} \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt}+\beta\delta(0)e^{t} \\
+ & +\beta\sum _{n\neq 0}\left[ \left( 1-\lambda ^{2}\left( \frac{1}{2(m-\lambda ^{2})t}+\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})^{2}t^{2}} \right) \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt-\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})t}} +\delta(n\beta)e^{t}\right]
 \end{align}$$
 
-$$\begin{align}
-\sum _{n\neq 0} \frac{1}{\sqrt{ 4\pi t }} e^{-\frac{n^{2}\beta ^{2}}{4t}} & =2\sum ^{\infty}_{n=1} \frac{1}{\sqrt{ 4\pi t }} e^{-\frac{n^{2}\beta ^{2}}{4t}} \\
- & = \frac{1}{2}\left( \vartheta _{3}\left( 0,e^{-\frac{\beta ^{2}}{4t}} \right)-1 \right)
-\end{align}$$
-
-where $\displaystyle{\vartheta _{3}(z,\tau)=\sum ^{\infty}_{n=-\infty}e^{i\pi \tau n^{2}+2\pi i n z}}$ is the third Jacobi theta function. again, the $\displaystyle{\tilde{\phi}}$ part diverges due to the auxiliary nature of $\displaystyle{\phi}$. so we focus on the $\displaystyle{x}$ part only. the partition function is given by
+again, the $\displaystyle{\tilde{\phi}}$ part diverges due to the auxiliary nature of $\displaystyle{\phi}$. so we focus on the $\displaystyle{x}$ part only. the partition function is given by
 
 $$\begin{align}
 \ln Z & =\frac{1}{2}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}K(t) \\
- & =-\frac{1}{2}\beta \Omega-\ln(1-e^{-\beta \Omega})+\Delta \ln Z+(\text{divergence}) \\
-\Delta \ln Z & =\frac{\lambda ^{2}}{6}\beta \Omega ^{3}+\lambda ^{2}\Omega ^{2}\ln(1-e^{-\beta \Omega})+\frac{5\lambda ^{2}\Omega}{\beta}\mathrm{Li}_{2}(e^{-\beta \Omega})+\frac{5\lambda ^{2}}{\beta ^{2}}\mathrm{Li}_{2}(e^{-\beta \Omega})
+ & =-\frac{1}{2}\beta\left( \Omega+\frac{\lambda ^{2}}{3}\Omega ^{3} \right) \\
+ & +\beta \sum _{n=1}^{\infty} \int ^{\infty}_{0} \frac{\mathrm{d}t}{t} \left( 1-\frac{\lambda ^{2}}{m-\lambda ^{2}}\left( \frac{1}{2t}+\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})t^{2}} \right) \right) \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt-\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})t}}
 \end{align}$$
-
-here all the divergences come from the $\displaystyle{K_{\tilde{\phi}}}$. note that if we consider partition function from $\displaystyle{x}$ and $\displaystyle{\tilde{\phi}=\phi-\lambda \partial _{\tau}x}$ instead of $\displaystyle{\phi}$, we will get
 
 $$\begin{align}
-\ln Z & =-\frac{1}{2}\beta \Omega-\ln(1-e^{-\beta \Omega})+(\text{the same divergence})
+\beta \sum ^{\infty}_{n=1} \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2}) }} \sqrt{ \frac{4\pi(m-\lambda ^{2})}{n^{2}\beta ^{2}} } e^{-\beta n\Omega} & =\beta \sum ^{\infty}_{n=1} \frac{e^{-\beta n\Omega}}{n} \\
+ & =-\beta \ln(1-e^{-\beta \Omega}) \\
+\beta \sum ^{\infty}_{n=1}\int ^{\infty}_{}
 \end{align}$$
-
-which is exactly the partition function of a harmonic oscillator with frequency $\displaystyle{\Omega}$, and $\displaystyle{\Delta \ln Z}$ disappears... I have no idea how to explain this phenomenon. maybe if we change variables that describe the system (with constraints), it will be some non-trivial thermodynamic effects?
 
 $$\begin{align}
-S & =\int \mathrm{d}\tau\left(\frac{1}{2}(m-\lambda ^{2})\left(\frac{\mathrm{d}x}{\mathrm{d}\tau}\right)^{2}+\frac{1}{2}kx^{2}+\frac{1}{2}\left( \phi-\lambda\frac{\mathrm{d}x}{\mathrm{d}\tau} \right)^{2}\right) \\
- & =\int \mathrm{d}\tau\left(-\frac{1}{2}\tilde{X}^{T}\tilde{\Delta}\tilde{X}\right) \\
-\tilde{X} & =\begin{pmatrix}
-x \\
-\phi-\lambda \partial _{\tau}x
-\end{pmatrix}=\begin{pmatrix}
-x\\ \tilde{\phi}
-\end{pmatrix} \\
-\tilde{\Delta} & =\begin{pmatrix}
--(m-\lambda ^{2})\partial _{\tau}^{2}+k & 0 \\
-0 & -1
-\end{pmatrix}
+\int ^{\infty}_{0} \mathrm{d}t t^{\nu-1} e^{-\frac{a}{t}-bt} & =2\left( \frac{a}{b} \right)^{\nu/2}K_{\nu}(2\sqrt{ ab }) \\
+\nu= -\frac{1}{2}:\quad \int ^{\infty}_{0} \frac{\mathrm{d}t}{t^{3/2}} e^{-\frac{a}{t}-bt} & =\sqrt{ \frac{\pi}{a} }e^{-2\sqrt{ ab }} \\
+\nu= -\frac{3}{2}:\quad \int ^{\infty}_{0} \frac{\mathrm{d}t}{t^{5/2}} e^{-\frac{a}{t}-bt} & =\sqrt{ \frac{\pi}{a} }e^{-2\sqrt{ ab }}\left( 1+\frac{1}{\sqrt{ ab }} \right) \\
+\nu=-\frac{5}{2}:\quad \int ^{\infty}_{0} \frac{\mathrm{d}t}{t^{7/2}} e^{-\frac{a}{t}-bt} & =\sqrt{ \frac{\pi}{a} }e^{-2\sqrt{ ab }}\left( 1+\frac{3}{\sqrt{ ab }}+\frac{3}{ab} \right)
 \end{align}$$
-
-the eigenvalues are
 
 $$\begin{align}
-\begin{pmatrix}
-\Omega ^{2}+\omega _{n}^{2} \\
--1
-\end{pmatrix}, n & \in \mathbb{Z}
+K(t) & =\int _{0}^{\beta} \mathrm{d}\tau \sum _{n\in \mathbb{Z}} \left( K_{x}(t,\tau,\tau+n\beta)+K_{\tilde{\phi}}(t,\tau,\tau+n\beta)-\lambda ^{2}\partial _{\tau}\partial _{\tau'}K_{x}(t,\tau,\tau'+n\beta)|_{\tau'=\tau} \right) \\
+ & =\beta \left( \delta(0)+\frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt} - \frac{\lambda ^{2}\pi}{(4\pi(m-\lambda ^{2})t)^{3/2}}e^{-kt}\right) \\
+ & +\beta \sum _{n\neq 0} \left( \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt-\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})t}} + \frac{\lambda ^{2}}{m-\lambda ^{2}}\left( - \frac{1}{2t} + \frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})t^{2}} \right)\frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt-\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})t}} \right)
 \end{align}$$
 
-the heat kernel corresponding to $\displaystyle{\tilde{\Delta}}$ is actually
+then the partition function is
 
 $$\begin{align}
-\tilde{K}(t,\tau,\tau') & =\begin{pmatrix}
-K_{x} & 0 \\
-0 & K_{\tilde{\phi}}
-\end{pmatrix}
+\ln Z & =\frac{1}{2}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}K(t) \\
+ & =\frac{1}{2}\beta \int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\left( \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt} - \frac{\lambda ^{2}\pi}{(4\pi(m-\lambda ^{2})t)^{3/2}}e^{-kt}\right) \\
+ & +\frac{1}{2}\beta \sum _{n\neq 0} \int ^{\infty}_{0} \frac{\mathrm{d}t}{t} \left( \frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt-\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})t}} + \frac{\lambda ^{2}}{m-\lambda ^{2}}\left( - \frac{1}{2t} + \frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})t^{2}} \right)\frac{1}{\sqrt{ 4\pi(m-\lambda ^{2})t }}e^{-kt-\frac{n^{2}\beta ^{2}}{4(m-\lambda ^{2})t}} \right) \\
+ & =-\frac{1}{2}\beta \Omega -\frac{\lambda ^{2}}{6}\beta \Omega ^{3}+\beta \sum _{n=1}^{\infty} \frac{e^{-n\beta \Omega}}{n} + \Delta \ln Z \\
+\Delta \ln Z & = \frac{\lambda ^{2}}{M} \sum _{n=1}^{\infty} \int _{0}^{\infty} \frac{\mathrm{d}t}{t} \left( \frac{n^{2}\beta ^{2}}{4Mt^{2}} - \frac{1}{2t} \right) \frac{\beta}{\sqrt{ 4\pi Mt }} e^{-kt-\frac{n^{2}\beta ^{2}}{4Mt}}
 \end{align}$$
 
-which gives the partition function
+notice that compared to the usual harmonic oscillator result, there is a correction term $\displaystyle{-\frac{\lambda ^{2}}{6}\beta \Omega ^{3}}$ and $\displaystyle{\Delta \ln Z}$ coming from the coupling between $\displaystyle{x}$ and $\displaystyle{\phi}$. notice that the definition of the heat kernel is
 
 $$\begin{align}
-\ln Z & =-\frac{1}{2}\beta \Omega-\ln(1-e^{-\beta \Omega})+\dots 
+K(t,\tau,\tau') & =\sum _{n} e^{-\lambda _{n}t}X_{n}(\tau)X_{n}^{T}(\tau')
 \end{align}$$
 
+where $\displaystyle{X_{n}(\tau)}$ is the eigenfunction of the operator $\displaystyle{\Delta}$ with eigenvalue $\displaystyle{\lambda _{n}}$

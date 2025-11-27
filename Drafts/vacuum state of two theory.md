@@ -156,3 +156,7 @@ $$\begin{align}
  & =0
 \end{align}$$
 
+---
+
+Weyl law can give a general statement for compact Riemann manifold $\displaystyle{M}$ of dimension $\displaystyle{d}$...
+
