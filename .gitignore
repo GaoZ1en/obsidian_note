@@ -11,3 +11,6 @@
 
 # Ignore tex files in every folders
 /**/*.tex
+/**/*.aux
+/**/*.log
+/**/*.pdf
