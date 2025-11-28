@@ -19,7 +19,7 @@ $$\begin{align}
 \Delta _{S^{d-1}}Y_{\ell \mathbf{m}}(\Omega _{d-1}) & =-\ell(\ell+d-2)Y_{\ell \mathbf{m}}(\Omega _{d-1})
 \end{align}$$
 
-where $\displaystyle{\ell}$ is the principal angular momentum quantum number and $\displaystyle{\mathbf{m}}$ represents the set of $\displaystyle{d-2}$ magnetic quantum numbers. for each eigenvalue $\displaystyle{-\ell(\ell+d-2)}$, the degeneracy is given by
+where $\displaystyle{\ell}$ is the principal angular momentum quantum number and $\displaystyle{\mathbf{m}}$ represents the set of magnetic quantum numbers (Cartan subalgebra). for each eigenvalue $\displaystyle{-\ell(\ell+d-2)}$, the degeneracy is given by
 
 $$\begin{align}
 d_{\ell} & = \binom{\ell+d-1}{d-1} - \binom{\ell+d-3}{d-1} = \frac{(2\ell+d-2)(\ell+d-3)!}{\ell!(d-2)!}
