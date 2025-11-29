@@ -581,7 +581,7 @@ $$\begin{align}
 and the initial condition should be modified to
 
 $$\begin{align}
-K_{\mu \nu'}(0,x,x') & =g_{\mu \nu'}\delta ^{3}(x,x')+\frac{\nabla _{\mu}\nabla _{\nu'}}{\nabla ^{2}}\delta ^{3}(x,x')
+K_{\mu \nu'}(0,x,x') & =g_{\mu \nu'}\delta ^{3}(x,x')-\frac{\nabla _{\mu}\nabla _{\nu'}}{\nabla ^{2}}\delta ^{3}(x,x')
 \end{align}$$
 
 we still make the ansatz
@@ -608,6 +608,7 @@ S(0,u) & =\frac{1}{\nabla ^{2}}\delta ^{3}(x,x') \\
 the solution to these equations with the given boundary conditions is
 
 $$\begin{align}
+K_{\mu \nu'}(t,x,x') & =F(t,u)\nabla _{\mu}\nabla _{\nu'}u+\nabla _{\mu}\nabla _{\nu'}S(t,u) \\
 F & = -\frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}} \frac{r}{\sinh r} \\
 S & =-\frac{2}{(4\pi)^{3/2}\sqrt{ t }} \frac{\cosh r}{\sinh r} \int ^{r}_{0} e^{-\frac{x^{2}}{4t}}
 \end{align}$$
