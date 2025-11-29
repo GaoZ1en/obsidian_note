@@ -219,4 +219,133 @@ E_{2} & 2 & -2 & 0 & 0 & -1 & 1
 
 # problem 6
 
-suppose $\displaystyle{\mathrm{D}_{3}}$
+suppose the element of $\displaystyle{\mathrm{D}_{3}}$ group are represented by the following matrices:
+
+$$\begin{align}
+\begin{pmatrix}
+x' \\
+y'
+\end{pmatrix} & = g\begin{pmatrix}
+x \\
+y
+\end{pmatrix}, \quad g\in \mathrm{D}_{3}
+\end{align}$$
+
+consider the generators $\displaystyle{R,S}$. their transformation matrices are exactly the representation matrices of the two-dimensional irreducible representation $\displaystyle{E}$ of $\displaystyle{\mathrm{D}_{3}}$:
+
+$$\begin{align}
+R & =E(R)=\frac{1}{2}\begin{pmatrix}
+-1 & -\sqrt{ 3 } \\
+\sqrt{ 3 } & -1
+\end{pmatrix} \\
+S & =E(S)=\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}
+\end{align}$$
+
+define
+
+$$\begin{align}
+\psi _{1}(x,y) & =x^{3} \\
+\psi _{2}(x,y) & =x^{2}y \\
+\psi _{3}(x,y) & =xy^{2} \\
+\psi _{4}(x,y) & =y^{3}
+\end{align}$$
+
+
+known that the function space spanned by $\displaystyle{\left\{\psi _{i}(x,y)\right\},i=1,2,3,4}$ is invariant under the action of $\displaystyle{\mathrm{D}_{3}}$ group, i.e.,
+
+$$\begin{align}
+\psi _{i}(x',y') & =\sum _{j=1}^{4}D_{ij}(g)\psi _{j}(x,y), \quad g\in \mathrm{D}_{3}
+\end{align}$$
+
+find the representation matrices $\displaystyle{D(g)}$ for all elements $\displaystyle{g\in \mathrm{D}_{3}}$, and reduce this representation into irreducible representations.
+
+*sol*.
+
+first we calculate the representation matrices for the generators $\displaystyle{R,S}$
+
+$$\begin{align}
+\psi _{1}(R(x,y)) & =\frac{1}{2^{3}}(-x-\sqrt{ 3 }y)^{3} \\
+ & =-\frac{1}{8}x^{3}-\frac{3\sqrt{ 3 }}{8}x^{2}y-\frac{9}{8}xy^{2}-\frac{3\sqrt{ 3 }}{8}y^{3} \\
+ & =-\frac{1}{8}\psi _{1}(x,y)-\frac{3\sqrt{ 3 }}{8}\psi _{2}(x,y)-\frac{9}{8}\psi _{3}(x,y)-\frac{3\sqrt{ 3 }}{8}\psi _{4}(x,y) \\
+\psi _{2}(R(x,y)) & =\frac{1}{8}(-x-\sqrt{ 3 }y)^{2}(\sqrt{ 3 }x - y) \\
+ & =\frac{\sqrt{ 3 }}{8}x^{3}+\frac{5}{8}x^{2}y+\frac{\sqrt{ 3 }}{8}xy^{2}-\frac{3}{8}y^{3} \\
+ & =\frac{\sqrt{ 3 }}{8}\psi _{1}(x,y)+\frac{5}{8}\psi _{2}(x,y)+\frac{\sqrt{ 3 }}{8}\psi _{3}(x,y)-\frac{3}{8}\psi _{4}(x,y) \\
+\psi _{3}(R(x,y)) & =\frac{1}{8}(-x-\sqrt{ 3 }y)(\sqrt{ 3 }x - y)^{2} \\
+ & =\frac{1}{8}(-x-\sqrt{ 3 }y)(3x^{2}-2\sqrt{ 3 }xy+y^{2}) \\
+ & =-\frac{3}{8}x^{3}-\frac{\sqrt{ 3 }}{8}x^{2}y+\frac{5}{8}xy^{2}-\frac{\sqrt{ 3 }}{8}y^{3} \\
+ & =-\frac{3}{8}\psi _{1}(x,y)-\frac{\sqrt{ 3 }}{8}\psi _{2}(x,y)+\frac{5}{8}\psi _{3}(x,y)-\frac{\sqrt{ 3 }}{8}\psi _{4}(x,y) \\
+\psi _{4}(R(x,y)) & =\frac{1}{2^{3}}(\sqrt{ 3 }x - y)^{3} \\
+ & =\frac{3\sqrt{ 3 }}{8}x^{3}-\frac{9}{8}x^{2}y+\frac{3\sqrt{ 3 }}{8}xy^{2}-\frac{1}{8}y^{3} \\
+\implies D(R) & =\begin{pmatrix}
+-\frac{1}{8} & -\frac{3\sqrt{ 3 }}{8} & -\frac{9}{8} & -\frac{3\sqrt{ 3 }}{8} \\
+\frac{\sqrt{ 3 }}{8} & \frac{5}{8} & \frac{\sqrt{ 3 }}{8} & -\frac{3}{8} \\
+-\frac{3}{8} & -\frac{\sqrt{ 3 }}{8} & \frac{5}{8} & -\frac{\sqrt{ 3 }}{8} \\
+\frac{3\sqrt{ 3 }}{8} & -\frac{9}{8} & \frac{3\sqrt{ 3 }}{8} & -\frac{1}{8}
+\end{pmatrix}
+\end{align}$$
+
+$$\begin{align}
+\psi _{1}(S(x,y)) & =x^{3}=\psi _{1}(x,y) \\
+\psi _{2}(S(x,y)) & =x^{2}(-y)=-\psi _{2}(x,y) \\
+\psi _{3}(S(x,y)) & =x(-y)^{2}=\psi _{3}(x,y) \\
+\psi _{4}(S(x,y)) & =(-y)^{3}=-\psi _{4}(x,y) \\
+\implies D(S) & =\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & -1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & -1
+\end{pmatrix}
+\end{align}$$
+
+thus the representation matrices for all elements $\displaystyle{g\in \mathrm{D}_{3}}$ are
+
+$$\begin{align}
+D(E) & =I_{4} \\
+D(R^{2}) & =D(R)^{2} \\
+D(SR) & =D(S)D(R) \\
+D(SR^{2}) & =D(S)D(R)^{2}
+\end{align}$$
+
+the conjugacy classes of $\displaystyle{\mathrm{D}_{3}}$ are
+1. $\displaystyle{\left\{E\right\}}$ itself
+2. $\displaystyle{\left\{R,R^{2}\right\}}$
+3. $\displaystyle{\left\{S,SR,SR^{2}\right\}}$
+
+and the character table is given by
+
+$$\begin{array}{c|ccc}
+ & \left\{E\right\} & \left\{R,R^{2}\right\} & \left\{S,SR,SR^{2}\right\} \\
+ \hline
+A_{1} & 1 & 1 & 1 \\
+A_{2} & 1 & 1 & -1 \\
+E & 2 & -1 & 0 \\
+D & 4 & 1 & 0
+\end{array}$$
+
+thus the decomposition of the representation $\displaystyle{D}$ into irreducible representations is
+
+$$\begin{align}
+a_{A_{1}} & =\frac{1}{6}(4\cdot 1+1\cdot 2+0\cdot 3)=1 \\
+a_{A_{2}} & =\frac{1}{6}(4\cdot 1+1\cdot 2+0\cdot (-3))=1 \\
+a_{E} & =\frac{1}{6}(4\cdot 2+1\cdot (-1)+0\cdot 0)=1
+\end{align}$$
+
+therefore, the decomposition is
+
+$$\begin{align}
+D & =A_{1}\oplus A_{2}\oplus E
+\end{align}$$
+
+the basis vectors can be rearranged to be
+
+$$\begin{align}
+A_{1}: & \quad \psi _{1}(x,y)+\psi _{4}(x,y) = x^{3}+y^{3} \\
+A_{2}: & \quad \psi _{2}(x,y)-\psi _{3}(x,y) = x^{2}y - xy^{2} \\
+E: & \quad \begin{pmatrix}
+\psi _{1}(x,y)-\psi _{4}(x,y) \\ \psi _{2}(x,y)+\psi _{3}(x,y) \end{pmatrix} = \begin{pmatrix}
+x^{3}-y^{3} \\ x^{2}y + xy^{2} \end{pmatrix}
+\end{align}$$
+
