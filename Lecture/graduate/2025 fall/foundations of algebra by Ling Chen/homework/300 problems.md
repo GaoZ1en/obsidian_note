@@ -219,8 +219,78 @@ suppose $\displaystyle{h}$ is the element with maximal order in $\displaystyle{H
 *sol*. since $\displaystyle{[G:N]=2}$, then $\displaystyle{G=N\cup Ng=gN\cup N, \forall g\not\in N}$, then $\displaystyle{gN=Ng, \forall g\in N\implies N\triangleleft G}$
 4. 
 	1. suppose $\displaystyle{N\triangleleft G}$, $\displaystyle{N\leqslant M\leqslant G}$, then $\displaystyle{N_{G}(M)/N=N_{\bar{G}}(\bar{M})}$, where $\displaystyle{\bar{G}=G/N,\bar{M}=M/N}$
-*sol*. $\displaystyle{N_{G}(M)=\left\{g\in G|\right\}}$ 
+*sol*. 
 	2. suppose $\displaystyle{f:G\to H}$ is a group homomorphism, $\displaystyle{M\leqslant G}$. prove that $\displaystyle{f^{-1}(f(M))=KM}$, where $\displaystyle{K=\mathrm{Ker}f}$
 *sol*.
 	3. suppose $\displaystyle{f:G\to H}$ is a group homomorphism. if $\displaystyle{g\in G}$ is an element with finite order, then $\displaystyle{o(f(g))|o(g)}$
 *sol*. 
+
+## permutation group
+
+1. write $\displaystyle{\sigma=(456)(567)(761)}$ as product of non-intersection cyclics
+*sol*. 
+
+## group action
+1. suppose $\displaystyle{G}$ act on $\displaystyle{S}$. $\displaystyle{\forall a,b\in S}$, if $\displaystyle{\exists g\in G\text{ s.t. }ga=b}$, then $\displaystyle{G_{a}=g^{-1}G_{b}g}$
+*sol*.
+$$\begin{align}
+G_{b} & =\left\{x \in G|xb=b\right\} \\
+ & =\left\{x \in G|xga=ga\right\} \\
+ & =\left\{x \in G|g^{-1}xg a =a\right\} \\
+ & =\left\{x \in G|g^{-1}xg\in G_{a}\right\} \\
+ & =gG_{a}g^{-1}
+\end{align}$$
+2. suppose $\displaystyle{G}$ act transversally on $\displaystyle{S}$, $\displaystyle{N\triangleleft G}$, then evert orbit of $\displaystyle{S}$ under the action of $\displaystyle{N}$ has the same elements.
+*sol*. suppose $\displaystyle{S=Ga}$, then $\displaystyle{\forall x \in S, x=ga, g\in G}$, we have
+$$\begin{align}
+N_{x} & =\left\{n\in N|nx=x\right\} \\
+ & =\left\{n\in N|ng a=ga\right\} \\
+ & =\left\{n\in N|g^{-1}ng a=a\right\} \\
+ & =\left\{n\in N|g^{-1}ng\in G_{a}\right\} \\
+ & =N\cap gG_{a}g^{-1}
+\end{align}$$
+since $\displaystyle{N\triangleleft G}$, $\displaystyle{N_{x}=N\cap gG_{a}g^{-1}=g(N\cap G_{a})g^{-1}=gN_{a}g^{-1}}$, thus
+
+$$\begin{align}
+|Nx| & =\frac{|N|}{|N_{x}|}=\frac{|N|}{|gN_{a}g^{-1}|}= \frac{|N|}{|N_{a}|}=|Na|
+\end{align}$$
+
+## Sylow theorem
+
+suppose $\displaystyle{p}$ is a prime, $\displaystyle{G}$ is a finite group, then
+1.  suppose $\displaystyle{p^{k}||G|}$, then the number of subgroups of $\displaystyle{G}$ with order $\displaystyle{p^{k}}$ $\displaystyle{\equiv 1\mod{p}}$.
+	1. in particuar, $\displaystyle{G}$ has subgroup with order $\displaystyle{p^{k}}$.
+	2. such subgroups are called the Sylow-$\displaystyle{p}$ subgroups of $\displaystyle{G}$.
+2. the Sylow-$\displaystyle{p}$ subgroups of $\displaystyle{G}$ are conjugates to each other.
+	1. thus the number of Sylow-$\displaystyle{p}$ subgroup of $\displaystyle{G}$ is $\displaystyle{[G:N_{G}(P)]}$, where $\displaystyle{P}$ is a Sylow-$\displaystyle{p}$ subgroup of $\displaystyle{G}$, $\displaystyle{N_{G}(P)}$ is the normalizer of $\displaystyle{P}$ in $\displaystyle{G}$.
+		1. then the Sylow-$\displaystyle{p}$ subgroup $\displaystyle{P}$ of $\displaystyle{G}$ is normal group iff $\displaystyle{[G:N_{G}(P)]=1}$.
+3. subgroup of order $\displaystyle{p^{k}}$ contains a Sylow-$\displaystyle{p}$ subgroup of $\displaystyle{G}$.
+
+### questions
+
+1. suppose $\displaystyle{p}$ is a prime factor of $\displaystyle{|G|}$, then $\displaystyle{G}$ contains an element with order $\displaystyle{p}$.
+*sol*. by Sylow theorem $\displaystyle{G}$ contains subgroup of order $\displaystyle{p}$, which is isomorphic to $\displaystyle{\mathbb{Z}_{p}}$...
+2. suppose $\displaystyle{p}$ is a prime factor of $\displaystyle{|G|}$, then the number $\displaystyle{N}$ of solutions of $\displaystyle{x^{p}=1}$ in $\displaystyle{G}$ satisfies $\displaystyle{p|N}$
+*sol*. the solutions of $\displaystyle{x^{p}=1}$ form a subgroup of $\displaystyle{G}$ of order $\displaystyle{p}$. by Sylow theorem, the number of subgroups of $\displaystyle{G}$ with order $\displaystyle{p}$ is $\displaystyle{kp+1,k\in \mathbb{N}}$, then $\displaystyle{G}$ has $\displaystyle{(kp+1)(p-1)}$ elements of order $\displaystyle{p}$, which implies that there are $\displaystyle{(kp+1)(p-1)+1=kp^{2}+(1-k)p}$ solutions.
+3. prove that non-Abelian group of order $\displaystyle{6}$ is only $\displaystyle{S_{6}}$.
+*sol*. since $\displaystyle{6=2\times 3}$, by Sylow theorem, $\displaystyle{G}$ has one subgroup of order $\displaystyle{2}$ and one subgroup of order $\displaystyle{3}$. suppose the subgroup $\displaystyle{A=\braket{ \alpha }}$ is of order $\displaystyle{3}$ and $\displaystyle{B= \braket{ \beta }}$ is of order 2. since $\displaystyle{G}$ is non-Abelian then $\displaystyle{\alpha \beta\neq \beta \alpha}$, which implies $\displaystyle{\beta \alpha \beta ^{-1}=\alpha ^{2}}$. thus such group is isomorphic to $\displaystyle{S_{3}}$
+4. group $\displaystyle{G}$ of order $\displaystyle{200}$ has normal Sylow subgroup
+*sol*. notice that $\displaystyle{200=2^{2}\times5^{2}}$, by Sylow theorem, the number of Sylow-5 subgroup is $\displaystyle{5k+1}$ that satisfies $\displaystyle{5k+1|8\implies k=0}$, thus the subgroup of order 25 is normal Sylow subgroup
+5. find the number of Sylow subgroups of $\displaystyle{S_{4}}$
+*sol*. $\displaystyle{|S_{4}|=2^{3}\times 3}$. then by Sylow theorem, the number of Sylow-3 subgroups is $\displaystyle{N(3)=(3k+1)|8\implies k=1}$. while $\displaystyle{N(8)=(2k+1)|3\implies k=1}$. 
+6. suppose $\displaystyle{P}$ is a Sylow-$\displaystyle{p}$ subgroup of $\displaystyle{G}$, $\displaystyle{N_{G}(P)\triangleleft G}$, prove that $\displaystyle{P\triangleleft G}$.
+*sol*. since $\displaystyle{\forall g\in G}$, $\displaystyle{P,gPg^{-1}}$ are Sylow-$\displaystyle{p}$ subgroup of $\displaystyle{N_{G}(P)}$. then by Sylow theorem, they are conjugate to each other in $\displaystyle{N_{G}(P)}$, i.e., $\displaystyle{\exists n\in N_{G}(P), gPg^{-1}=nPn^{-1}=P\implies P\triangleleft G}$
+7. suppose $\displaystyle{N}$ is a normal subgorup of finite group $\displaystyle{G}$. if $\displaystyle{(p,|G/N|)}$, then $\displaystyle{N}$ constains all the Sylow-$\displaystyle{p}$ subgrou of $\displaystyle{G}$
+*sol*. since $\displaystyle{|G|=|G/N||N|}$, then $\displaystyle{p||N|}$, which means the Sylow-$\displaystyle{p}$ subgroups of $\displaystyle{N}$ are also Sylow-$\displaystyle{p}$ subgroups of $\displaystyle{G}$. suppose $\displaystyle{P}$ is a Sylow-$\displaystyle{p}$ subgrou of $\displaystyle{N}$ and $\displaystyle{P'}$ is a Sylow-$\displaystyle{p}$ subgroup of $\displaystyle{G}$, then by Sylow theorem $\displaystyle{P'=gPg^{-1}\leqslant gNg^{-1}=N}$.
+8. 8
+9. 9. 
+10. 10
+11. 11
+12. prove that groups of order $\displaystyle{24, 36, 48}$ are not simple group.
+*sol*. $\displaystyle{24=2^{3}3}$. suppose the Sylow-$\displaystyle{2}$ subgroup of $\displaystyle{G}$ is not normal, then by Sylow theorem, there are 3 Sylow-$\displaystyle{2}$ subgroups  $\displaystyle{P_{1},P_{2},P_{3}}$of $\displaystyle{G}$. consider the conjugation action on $\displaystyle{\left\{P_{1},P_{2},P_{3}\right\}}$, which induce a group homomorphism $\displaystyle{\rho :G\to S_{3}}$. on the one hand $\displaystyle{\mathrm{Ker}\rho\neq\left\{1\right\}}$, or $\displaystyle{\rho}$ is a injective which is impossible since $\displaystyle{|G|=24, |S_{3}|=6}$. on th e other hand $\displaystyle{\mathrm{Ker}\rho\neq G}$, or $\displaystyle{gP_{i}g^{-1}=P_{i}, \forall g\in G, i=1,2,3}$, which contradicts that $\displaystyle{\left\{P_{1},P_{2},P_{3}\right\}}$ conjugates to each other. thus $\displaystyle{\mathrm{Ker}\rho}$ is a non-trivial normal subgroup of $\displaystyle{G}$, which implies that $\displaystyle{G}$ is not a simple group.
+
+# ring theory
+
+## ring
+
+1. 

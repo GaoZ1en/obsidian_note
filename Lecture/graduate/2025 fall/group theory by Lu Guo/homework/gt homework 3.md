@@ -1,4 +1,4 @@
-# problem 1
+	# problem 1
 
 suppose $\displaystyle{G}$ is a non-Abelian group, and $\displaystyle{D(G)}$ is a irreducible faithful representation of $\displaystyle{G}$, $\displaystyle{D(R)}$ is the representation matrix of element $\displaystyle{R}$. show that whether these set of matrices form a representation of $\displaystyle{G}$, if yes, state whether it is faithful or not.
 1. $\displaystyle{\left\{D(R)^{\dagger}\right\}}$
