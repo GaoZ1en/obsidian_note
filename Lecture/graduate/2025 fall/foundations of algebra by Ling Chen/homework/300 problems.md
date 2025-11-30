@@ -176,3 +176,51 @@ $$\begin{align}
 \end{align}$$
 
 16. suppose $\displaystyle{H}$ and $\displaystyle{K}$ are two subgroup of finite group $\displaystyle{G}$. prove that $\displaystyle{|HgK|=|H|[K:g^{-1}Hg\cap K]}$. z
+
+## cyclic group
+
+1. prove the Euler theorem: if $\displaystyle{n\in \mathbb{N}_{+}, a\in \mathbb{Z}}$ and $\displaystyle{(a,n)=1}$. then $\displaystyle{a^{\varphi(n)}\equiv1\mod{n}}$, where $\displaystyle{\varphi(n)}$ is the Euler function, i.e., the number of positive integers which coprime with $\displaystyle{n}$ and small than $\displaystyle{n}$
+*sol*. consider the set $\displaystyle{U(n)}$ that coprime with $\displaystyle{n}$. by definition we have $\displaystyle{|U(n)|=\varphi(n)}$. by Lagrange theorem, $\displaystyle{o(a)|\varphi(n)\implies \varphi(n)=ko(a),k\in \mathbb{Z}\implies [a]^{\varphi(n)}=[a]^{ko(a)}=[1]^{k}=[1]\implies a^{\varphi(n)}\equiv1 \mod{n}}$.
+in particular, if $\displaystyle{n}$ is a prime number, we get the Fermat's little theorem $\displaystyle{a^{p}\equiv 1\mod{p}, \forall a\in \mathbb{Z}}$
+2. suppose $\displaystyle{n\in \mathbb{N}_{+}}$, prove that the set $\displaystyle{G}$ of solutions of $\displaystyle{x^{n}=1}$ forms a group in the sense of usual multiplication that is isomorpic to $\displaystyle{\mathbb{Z}_{n}}$.
+*sol*. we have known that $\displaystyle{G=\left\{\omega ^{k}|k=1,2,\dots,n,\omega=e^{2\pi i/n}\right\}}$. define $\displaystyle{f:G\to \mathbb{Z}_{n}, f(\omega ^{k})=k}$, it is easy to verify that $\displaystyle{f}$ is a isomorphism.
+3. the necessary and sufficient condition that $\displaystyle{G}$ has no non-trivial subgroup is that $\displaystyle{G=\left\{1\right\}\text{ or }\mathbb{Z}_{p}}$.
+*sol*. $\displaystyle{\implies}$. trivial
+$\displaystyle{\impliedby}$. since the only subgroups of $\displaystyle{G}$ is $\displaystyle{\left\{e\right\}}$ and $\displaystyle{G}$, if $\displaystyle{\left\{e\right\}=G}$, then $\displaystyle{G=\left\{1\right\}}$. if $\displaystyle{\left\{e\right\}\neq G}$, suppose $\displaystyle{G= \braket{ g },\forall 1\neq g\in G}$. by same reason the order of $\displaystyle{g}$ is a prime number
+4. 
+	1. suppose $\displaystyle{a,b\in G}$ with order $\displaystyle{n,m}$ that satisfy $\displaystyle{(n,m)=1}$ and $\displaystyle{ab=ba}$. find $\displaystyle{|\braket{ ab }|}$.
+*sol*. $\displaystyle{|\braket{ ab }|=mn}$
+	2. suppose $\displaystyle{g\in G}$ that satisfies $\displaystyle{(o(g),n)=1}$. solve $\displaystyle{x^{n}=g}$ in $\displaystyle{\braket{ g }}$.
+*sol*. since $\displaystyle{(o(g),n)=1}$, $\displaystyle{\exists a,b\in \mathbb{Z}, ao(g)+bn=1\implies bn\equiv1\mod{o(g)}}$, which gives the unique solution $\displaystyle{x=g^{b}}$
+5. non-trivial subgroup $\displaystyle{M}$ is called the maximal subgroup if $\displaystyle{\exists! B<G}$ that $\displaystyle{M<B<G}$. find all the maximal subgroups of $\displaystyle{\mathbb{Z}}$.
+*sol*. $\displaystyle{p\mathbb{Z}}$ with $\displaystyle{p}$ a prime number
+6. give an example of infinite group that its subgroup with order larger than $\displaystyle{1}$ has finite index
+*sol*. $\displaystyle{n\mathbb{Z}}$ with $\displaystyle{n}$ a integer
+7. suppose $\displaystyle{p}$ is a prime number, $\displaystyle{G=\left\{x \in \mathbb{C}|\exists n\in \mathbb{N}_{+}\text{ s.t. } x^{p^{n}}=1\right\}}$, then $\displaystyle{(G,\times)}$ forms a group. prove that any non-trivial subgroup of $\displaystyle{G}$ is a cyclic group of finite order.
+*sol*. suppose $\displaystyle{H<G}$, then $\displaystyle{\exists g\in G, g\not\in H}$. suppose $\displaystyle{o(g)=p^{n}}$, then $\displaystyle{\forall h\in H, o(h)=p^{m}, m<n}$, otherwise $\displaystyle{\exists h\in H, o(h)=p^{m}, m\geqslant n}$, then $\displaystyle{\braket{ h }=\left\{x \in \mathbb{C}|x^{p^{m}}=1\right\}}$, since $\displaystyle{m\geqslant n}$, $\displaystyle{x \in \braket{ h }< H}$, contradiction!
+
+suppose $\displaystyle{h}$ is the element with maximal order in $\displaystyle{H}$, then $\displaystyle{H=\braket{h  }}$
+8. if $\displaystyle{G}$ has finitely many subgroups, then $\displaystyle{G}$ is a finite group.
+*sol*. 
+
+## normal subgroup and quotient group
+
+1. let $\displaystyle{G=\left\{(a,b)|a\neq 0\right\}}$ with multiplication $\displaystyle{(a,b)(c,d)=(ac,ad+b)}$. prove that $\displaystyle{K=\left\{(1,b)|b\in \mathbb{R}\right\}}$ is a normal subgroup and $\displaystyle{G/K\cong(\mathbb{R}^{*},\times)}$
+*sol*. consider the group homomorphism $\displaystyle{\pi:G\to \mathbb{R}^{*}, \pi(a,b)=a}$. this is a surjective homomorphism and the kernel $\displaystyle{\mathrm{Ker}\pi=K}$. by fundamental law of group homomorphism, we have $\displaystyle{G/K\cong\mathbb{R}^{*}}$
+2. suppose $\displaystyle{G}$ is a group, and $\displaystyle{N<M<G}$
+	1. if $\displaystyle{N\triangleleft G}$, then $\displaystyle{N\triangleleft M}$
+*sol*. since $\displaystyle{N\triangleleft G}$, $\displaystyle{\forall g\in G, gN=Ng\implies \forall h\in M, hM=Mh\implies N\triangleleft M}$
+	2. if $\displaystyle{N\triangleleft M, M\triangleleft G}$, $\displaystyle{N\triangleleft ?G}$
+*sol*. no
+3. prove that
+	1. $\displaystyle{Z(G)\triangleleft G}$
+*sol*. by definition
+	2. if $\displaystyle{N<G}$ and the index of $\displaystyle{N}$ is $\displaystyle{2}$, then $\displaystyle{N\triangleleft G}$
+*sol*. since $\displaystyle{[G:N]=2}$, then $\displaystyle{G=N\cup Ng=gN\cup N, \forall g\not\in N}$, then $\displaystyle{gN=Ng, \forall g\in N\implies N\triangleleft G}$
+4. 
+	1. suppose $\displaystyle{N\triangleleft G}$, $\displaystyle{N\leqslant M\leqslant G}$, then $\displaystyle{N_{G}(M)/N=N_{\bar{G}}(\bar{M})}$, where $\displaystyle{\bar{G}=G/N,\bar{M}=M/N}$
+*sol*. $\displaystyle{N_{G}(M)=\left\{g\in G|\right\}}$ 
+	2. suppose $\displaystyle{f:G\to H}$ is a group homomorphism, $\displaystyle{M\leqslant G}$. prove that $\displaystyle{f^{-1}(f(M))=KM}$, where $\displaystyle{K=\mathrm{Ker}f}$
+*sol*.
+	3. suppose $\displaystyle{f:G\to H}$ is a group homomorphism. if $\displaystyle{g\in G}$ is an element with finite order, then $\displaystyle{o(f(g))|o(g)}$
+*sol*. 
