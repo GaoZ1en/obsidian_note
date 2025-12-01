@@ -63,3 +63,24 @@ H[C] & =H_{\eta _{c}}=\frac{1}{2\pi}\int _{\Sigma}\left( \star F-\frac{\theta}{2
 \end{align}$$
 
 which is exactly the electric flux through $\displaystyle{C}$.
+
+---
+
+generally for a $\displaystyle{p}$-form symmetry in $\displaystyle{d}$-dim spacetime, its conserved quantity is given by integrating the corresponding conserved current over a closed $\displaystyle{(d-p-1)}$-dim submanifold $\displaystyle{M^{d-p-1}}$. by Poincare duality, we can equivalently express the conserved quantity as an integral over a closed $\displaystyle{p+1}$-form $\displaystyle{\eta _{M}}$ that is dual to $\displaystyle{M^{d-p-1}}$:
+
+$$\begin{align}
+Q(M^{d-p-1}) & =\int _{M^{d-p-1}}\star j=\int _{\Sigma}\star j \wedge \eta _{M}
+\end{align}$$
+
+---
+
+then we will consider the Poisson bracket between the conserved charge $\displaystyle{H_{C_{1}}}$ and $\displaystyle{H_{C_{2}}}$.
+
+$$\begin{align}
+\left\{H_{C_{1}},H_{C_{2}}\right\} & =X_{\eta _{C_{1}}}\cdot X_{\eta _{C_{2}}}\cdot \omega \\
+ & =\frac{1}{2\pi}\int _{\Sigma}\left((X_{\eta _{C_{2}}}\cdot \delta \star F)+\frac{\theta}{2\pi}(X_{\eta _{C_{2}}}\cdot\delta F) \right)(X_{\eta _{C_{1}}}\cdot\delta A)-\left( (X_{\eta _{C_{1}}}\cdot\delta \star F)+\frac{\theta}{2\pi}(X_{\eta _{C_{1}}}\cdot\delta F) \right)(X_{\eta _{C_{2}}}\cdot \delta A) \\
+ & =0
+\end{align}$$
+
+which shows that the 1-form electric symmetry is Abelian...
+
