@@ -44,45 +44,39 @@ which acts on the field operator as
 
 $$\begin{align}
 \phi\to \phi'=U\phi U^{\dagger} \\
-\implies \delta _{a} \phi & =i\left[ H_{a},\phi \right]
+\implies \delta _{a} \phi & =i\left[ H_{a},\phi \right] \\
+\implies \delta _{a}\mathcal{O} & =i\left[ H_{a},\mathcal{O} \right]
 \end{align}$$
 
-the Ward identity associated with the symmetry is given by
+here we assume that there is no anomaly associated with the symmetry we discussed here, then we have the correlation functions invariant under the symmetry transformation:
 
 $$\begin{align}
-\left\langle \delta _{a}\left( \mathcal{O}_{1}\mathcal{O}_{2}\cdots \mathcal{O}_{n} \right) \right\rangle & =-i\left\langle \left[ H_{a},\mathcal{O}_{1}\mathcal{O}_{2}\cdots \mathcal{O}_{n} \right] \right\rangle =0
+\braket{ \mathcal{O}_{1}\mathcal{O}_{2}\dots \mathcal{O}_{n} }  & =\braket{ \mathcal{O}_{1}'\mathcal{O}_{2}'\dots \mathcal{O}_{n}' } \\
+ & = \braket{ U\mathcal{O}_{1}U^{\dagger} U\mathcal{O}_{2}U^{\dagger}\dots U\mathcal{O}_{n}U^{\dagger} } \\
+ & = \braket{ \mathcal{O}_{1}\mathcal{O}_{2}\dots \mathcal{O}_{n} }+i\varepsilon _{a} \braket{ [H_{a},\mathcal{O}_{1}\mathcal{O}_{2}\dots \mathcal{O}_{n}] }+\mathcal{O}(\varepsilon _{a}^{2})
 \end{align}$$
 
-or in a more global form
+which gives the Ward identity
 
 $$\begin{align}
-\braket{ H_{a}\mathcal{O}_{1}\mathcal{O}_{2}\dots \mathcal{O}_{n} } |_{\Sigma _{f}} & =\braket{ \mathcal{O}_{1}\mathcal{O}_{2}\dots \mathcal{O}_{n} H_{a} } |_{\Sigma _{i}}
+\braket{ [H_{a},\mathcal{O}_{1}\mathcal{O}_{2}\dots \mathcal{O}_{n}] } & =0
 \end{align}$$
 
-we can prove this identity by inserting the unitary operator $\displaystyle{U}$ in the correlation function
+in particular
 
 $$\begin{align}
-\braket{ \mathcal{O}_{1}\mathcal{O}_{2}\dots \mathcal{O}_{n} } & =\braket{ U^{\dagger}U\mathcal{O}_{1}U^{\dagger}U\mathcal{O}_{2}U^{\dagger}\dots U\mathcal{O}_{n}U^{\dagger}U } \\
- & =\braket{ U\mathcal{O}_{1}U^{\dagger}U\mathcal{O}_{2}U^{\dagger}\dots U\mathcal{O}_{n}U^{\dagger} } \\
- & =\braket{ \mathcal{O}_{1}'\mathcal{O}_{2}'\dots \mathcal{O}_{n}' }
+X_{a}\cdot \delta S & =\int _{\Sigma _{f}-\Sigma _{i}}\mu _{a}
 \end{align}$$
-
-and then expanding to first order in $\displaystyle{\varepsilon _{a}}$.
+$$\begin{align}
+\braket{ \mathcal{O}_{1}\dots \mathcal{O}_{n} } & =\frac{1}{Z}\int \mathcal{D}\phi \mathcal{O}_{1}\dots \mathcal{O}_{n}e^{iS[\phi]} \\
+ & =\frac{1}{Z}\int \mathcal{D}\phi' \mathcal{O}_{1}'\dots \mathcal{O}_{n}'e^{iS[\phi']} \\
+ & =\frac{1}{Z}\int \mathcal{D}\phi \left\{\mathcal{O}_{1}\dots \mathcal{O}_{n}+i\varepsilon _{a}[H_{a},\mathcal{O}_{1}\dots \mathcal{O}_{n}]\right\}\left( 1+i \int _{\Sigma _{f}-\Sigma _{i}}\varepsilon _{a}\mu _{a} \right)e^{iS[\phi]} \\
+\implies 0 & =\braket{ [H_{a},\mathcal{O}_{1}\dots \mathcal{O}_{n}] } + \int _{\Sigma _{f}-\Sigma _{i}}\braket{ \mu _{a}\mathcal{O}_{1}\dots \mathcal{O}_{n} }
+\end{align}$$
 
 $$\begin{align}
-\braket{ \mathcal{O}_{1}\mathcal{O}_{2}\dots \mathcal{O}_{n} } & =\braket{ \mathcal{O}_{1}'\mathcal{O}_{2}'\dots \mathcal{O}_{n}' } \\
- & =\braket{ \left( \mathcal{O}_{1}+i\varepsilon _{a}\left[ H_{a},\mathcal{O}_{1} \right] \right)\left( \mathcal{O}_{2}+i\varepsilon _{a}\left[ H_{a},\mathcal{O}_{2} \right] \right)\dots \left( \mathcal{O}_{n}+i\varepsilon _{a}\left[ H_{a},\mathcal{O}_{n} \right] \right) } \\
- & =\braket{ \mathcal{O}_{1}\mathcal{O}_{2}\dots \mathcal{O}_{n} } +i\varepsilon _{a}\braket{ \left[ H_{a},\mathcal{O}_{1}\mathcal{O}_{2}\dots \mathcal{O}_{n} \right] } +\mathcal{O}(\varepsilon _{a}^{2})
+S[\phi+\delta \phi]-S[\phi] & =X_{a}\cdot \delta S \\
+ & =X_{a}\cdot \left( \int _{M} \mathrm{d}^{D}xE\delta \phi+\theta|_{\Sigma _{f}-\Sigma _{i}} \right) \\
+ & =\int _{M}\mathrm{d}^{D}xE(X_{a}\cdot \delta \phi)+X_{a}\cdot \theta|_{\Sigma _{f}-\Sigma _{i}} \\
+ & =
 \end{align}$$
-
-therefore we have
-
-$$\begin{align}
-\left\langle \delta _{a}\left( \mathcal{O}_{1}\mathcal{O}_{2}\cdots \mathcal{O}_{n} \right) \right\rangle & =-i\left\langle \left[ H_{a},\mathcal{O}_{1}\mathcal{O}_{2}\cdots \mathcal{O}_{n} \right] \right\rangle =0
-\end{align}$$
-
-and the global form can be seen by noting that the charge $\displaystyle{H_{a}}$ is time-independent, so we can move it from the initial time slice $\displaystyle{\Sigma _{i}}$ to the final time slice $\displaystyle{\Sigma _{f}}$ without changing the value of the correlation function.
-
-## rephrasing ordinary symmetries in terms of topology
-
-here all the Noether charges $\displaystyle{H_{a}}$ are independent from the choice of Cauchy surface $\displaystyle{\Sigma}$ used to define them due to the good features of covariant phase space formalism.
