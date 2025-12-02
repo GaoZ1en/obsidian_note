@@ -36,7 +36,7 @@ $$\begin{align}
 
 在全局$\displaystyle{\mathrm{AdS}_{3}}$中，运动方程的正频解可组织为$\displaystyle{\mathfrak{sl}(2,\mathbb{R})\times \mathfrak{sl}(2,\mathbb{R})}$最高权表示的基函数。定义共形维度$\displaystyle{\Delta=1+\sqrt{ 1+\mu ^{2} }}$。
 
-使用最高权表示， 求出运动方程$\displaystyle{\nabla ^{2}\phi-\mu ^{2}\phi=0}$所有正频解的显式形式$\displaystyle{\phi _{n,\bar{n}}(x)}$（差一个整体常数）。我们记$\displaystyle{\omega}$为对应正频解的频率。
+使用最高权表示， 求出运动方程$\displaystyle{\nabla ^{2}\phi-\mu ^{2}\phi=0}$所有正频解的显式形式（差一个整体常数）。
 
 **解**
 
@@ -92,3 +92,4 @@ $$
 $$
 
 其中 $P^{(a,b)}_{n}(x)$ 是雅可比多项式。
+

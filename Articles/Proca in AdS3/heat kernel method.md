@@ -92,12 +92,16 @@ $$\begin{align}
 the general solution to the above equation is
 
 $$\begin{align}
-K^{\mathbb{H}_{3}}(t,r) & =\frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}}\frac{r}{\sinh r}e^{-\frac{r^{2}}{4t}}
+K^{\mathbb{H}_{3}}(t,r) & =\frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}}\frac{r}{\sinh r}\exp\left( -\frac{r^{2}}{4t} \right)
+\end{align}$$
+
+$$\begin{align}
+\int ^{\infty}_{0} \mathrm{d}tt^{-c}e^{-at-b/t} & =2\left(\frac{b}{a}\right)^{(1-c)/2}K_{c-1}(2\sqrt{ ab }) \\
 \end{align}$$
 
 ---
 
-for $\displaystyle{\mathbb{H}^{n}}$, the heat kernel is given by
+for $\displaystyle{\mathbb{H}^{n}}$, the heat iernel is given by
 
 $$\begin{align}
 K^{\mathbb{H}_{n}}(t,r) & =e^{-(\mu ^{2}+\rho ^{2})t}\left(-\frac{1}{2\pi \sinh r} \frac{\partial}{\partial r}\right)^{\rho}\left(\frac{e^{-r^{2}/4t}}{(4\pi t)^{1/2}}\right)

@@ -36,7 +36,7 @@ $$\begin{align}
 S & =\frac{1}{2}\int \mathrm{d}t\sum _{n}\left( \dot{a}_{n}^{2}-\omega _{n}^{2}a_{n}^{2} \right)
 \end{align}$$
 
-where $\displaystyle{\omega _{n}^{2}=\lambda _{n}+m^{2}}$. consider two such theories with masses $\displaystyle{m_{1},m_{2}}$. denote $\displaystyle{\omega _{n}^{(1)}=\omega _{n}^{(n)}e^{-2\theta _{n}}}$, the inner product of their vacuum is given by
+where $\displaystyle{\omega _{n}^{2}=\lambda _{n}+m^{2}}$. consider two such theories with masses $\displaystyle{m_{1},m_{2}}$. denote $\displaystyle{\omega _{n}^{(1)}=\omega _{n}^{(2)}e^{-2\theta _{n}}}$, the inner product of their vacuum is given by
 
 $$\begin{align}
 \braket{ 0_{1}|0_{2} }  & =\prod ^{\infty}_{n} \frac{1}{\sqrt{ \cosh \theta _{n} }} \\
@@ -65,8 +65,10 @@ for higher spin field, the only difference is that the Laplacian $\displaystyle{
 
 ---
 
-as a further application of Weyl's law, we can 
+as a further application of Weyl's law, we can ...?
 
 ---
 
-for infinite $\displaystyle{\Sigma}$, we can define a series of $\displaystyle{\Sigma _{R}\subset \Sigma}$, and when $\displaystyle{R}$ grows, $\displaystyle{\Sigma _{R}}$ approaches to $\displaystyle{\Sigma}$. by same construction, we can show that same statement holds for unit volume...
+for infinite $\displaystyle{\Sigma}$, we can define a series of $\displaystyle{\Sigma _{R}\subset \Sigma}$, and when $\displaystyle{R}$ grows, $\displaystyle{\Sigma _{R}}$ approaches to $\displaystyle{\Sigma}$. by same construction, we can show that same statement holds for unit volume...? 
+
+nonono this does not work for $\displaystyle{\mathrm{AdS}_{3}}$ at least, the spectrum is of order $\displaystyle{n^{2}}$, which implies that the inner product of vacuum is zero 

@@ -78,5 +78,6 @@ $$\begin{align}
 S[\phi+\delta \phi]-S[\phi] & =X_{a}\cdot \delta S \\
  & =X_{a}\cdot \left( \int _{M} \mathrm{d}^{D}xE\delta \phi+\theta|_{\Sigma _{f}-\Sigma _{i}} \right) \\
  & =\int _{M}\mathrm{d}^{D}xE(X_{a}\cdot \delta \phi)+X_{a}\cdot \theta|_{\Sigma _{f}-\Sigma _{i}} \\
- & =
+ & =???
 \end{align}$$
+
