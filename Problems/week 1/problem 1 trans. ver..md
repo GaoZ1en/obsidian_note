@@ -1,34 +1,42 @@
-使用最高权表示，求出在全局 $\mathrm{AdS}_{3}$ 中定义的、质量为 $m$ 的自由标量场的运动方程的所有解的显式形式（至多一个整体常数）。此处我们选择以下度规：
+三维反德西特时空（下简称$\displaystyle{\mathrm{AdS}_{3}}$）是最大对称的负常曲率时空，为带负宇宙学常数的爱因斯坦场方程的真空解。因J. Maldecena的开创性论文引入规范引力对偶（尤其是大$\displaystyle{N}$极限下$\displaystyle{\mathrm{AdS}_{5}\times S^{5}}$中type IIB超弦与$\displaystyle{\mathcal{N}=4}$超杨米尔斯理论的对偶），$\displaystyle{\mathrm{AdS}}$时空处于现代量子引力研究的中心地位。
 
-$$
+在本题中我们考虑全局$\displaystyle{\mathrm{AdS}_{3}}$，采用坐标$\displaystyle{(t,r,\phi)}$，度规为
+
+$$\begin{align}
 \mathrm{d}s^{2} = -(1+r^{2})\mathrm{d}t^{2} + \frac{\mathrm{d}r^{2}}{1+r^{2}} + r^{2}\mathrm{d}\phi^{2}
-$$
+\end{align}$$
 
-独立的 Killing 向量为：
+全局$\displaystyle{\mathrm{AdS}_{3}}$的等度规群为$\displaystyle{\mathrm{SO}(2,2)\cong\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$, 其李代数生成元（即Killing矢量）可以写为
 
-$$
-\begin{align}
+$$\begin{align}
 \xi _{1} &= \frac{1}{2} e^{i(t-\phi)} \left( \frac{r}{\sqrt{1+r^{2}}} \partial _{t} - i \sqrt{1+r^{2}} \partial _{r} - \frac{\sqrt{1+r^{2}}}{r} \partial _{\phi} \right) \\
 \xi _{0} &= \frac{1}{2} (\partial _{t} - \partial _{\phi}) \\
 \xi _{-1} &= \frac{1}{2} e^{-i(t-\phi)} \left( \frac{r}{\sqrt{1+r^{2}}} \partial _{t} + i \sqrt{1+r^{2}} \partial _{r} - \frac{\sqrt{1+r^{2}}}{r} \partial _{\phi} \right) \\
 \bar{\xi}_{1} &= \frac{1}{2} e^{i(t+\phi)} \left( \frac{r}{\sqrt{1+r^{2}}} \partial _{t} - i \sqrt{1+r^{2}} \partial _{r} + \frac{\sqrt{1+r^{2}}}{r} \partial _{\phi} \right) \\
 \bar{\xi}_{0} &= \frac{1}{2} (\partial _{t} + \partial _{\phi}) \\
 \bar{\xi}_{-1} &= \frac{1}{2} e^{-i(t+\phi)} \left( \frac{r}{\sqrt{1+r^{2}}} \partial _{t} + i \sqrt{1+r^{2}} \partial _{r} + \frac{\sqrt{1+r^{2}}}{r} \partial _{\phi} \right)
-\end{align}
-$$
+\end{align}$$
 
-这些 Killing 向量满足 $\mathfrak{sl}(2,\mathbb{R}) \times \mathfrak{sl}(2,\mathbb{R})$ 代数：
+满足$\mathfrak{sl}(2,\mathbb{R}) \times \mathfrak{sl}(2,\mathbb{R})$代数：
 
-$$
-\begin{align}
+$$\begin{align}
 [\xi _{0}, \xi _{1}] &= i \xi _{1} \\
 [\xi _{0}, \xi _{-1}] &= -i \xi _{-1} \\
 [\xi _{1}, \xi _{-1}] &= -2i \xi _{0} \\
 [\bar{\xi} _{0}, \bar{\xi} _{1}] &= i \bar{\xi} _{1} \\
 [\bar{\xi} _{0}, \bar{\xi} _{-1}] &= -i \bar{\xi} _{-1} \\
 [\bar{\xi} _{1}, \bar{\xi} _{-1}] &= -2i \bar{\xi} _{0}
-\end{align}
-$$
+\end{align}$$
+
+考虑质量为$\displaystyle{\mu}$的自由实标量场$\displaystyle{\phi(x)}$，其运动方程为
+
+$$\begin{align}
+\nabla ^{2}\phi-\mu ^{2}\phi & =0
+\end{align}$$
+
+在全局$\displaystyle{\mathrm{AdS}_{3}}$中，运动方程的正频解可组织为$\displaystyle{\mathfrak{sl}(2,\mathbb{R})\times \mathfrak{sl}(2,\mathbb{R})}$最高权表示的基函数。定义共形维度$\displaystyle{\Delta=1+\sqrt{ 1+\mu ^{2} }}$。
+
+使用最高权表示， 求出运动方程$\displaystyle{\nabla ^{2}\phi-\mu ^{2}\phi=0}$所有正频解的显式形式$\displaystyle{\phi _{n,\bar{n}}(x)}$（差一个整体常数）。我们记$\displaystyle{\omega}$为对应正频解的频率。
 
 **解**
 
