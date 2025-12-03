@@ -49,20 +49,20 @@ H_{\lambda} & = X_{\lambda}\cdot \theta\\
  & =\frac{1}{2\pi}\int _{\Sigma}\left( \star F-\frac{\theta}{2\pi}F \right)\wedge \lambda
 \end{align}$$
 
-for a closed 2-surface $\displaystyle{C}$, we consider its Poincare dual $\displaystyle{\eta _{c}}$, which is the closed 1-form that satisfies
+for a closed 2-surface $\displaystyle{S}$, we consider its Poincare dual $\displaystyle{\eta _{c}}$, which is the closed 1-form that satisfies
 
 $$\begin{align}
-\int _{C}\alpha & =\int _{\Sigma}\alpha \wedge \eta _{c}, \quad \forall \alpha \in H^{2}(\Sigma)
+\int _{S}\alpha & =\int _{\Sigma}\alpha \wedge \eta _{S}, \quad \forall \alpha \in \Lambda ^{2}(\Sigma)
 \end{align}$$
 
 then the Noether charge becomes
 
 $$\begin{align}
-H[C] & =H_{\eta _{c}}=\frac{1}{2\pi}\int _{\Sigma}\left( \star F-\frac{\theta}{2\pi}F \right)\wedge \eta _{c} \\
- & =\frac{1}{2\pi}\int _{C}\left( \star F-\frac{\theta}{2\pi}F \right)
+H[S] & =H_{\eta _{S}}=\frac{1}{2\pi}\int _{\Sigma}\left( \star F-\frac{\theta}{2\pi}F \right)\wedge \eta _{S} \\
+ & =\frac{1}{2\pi}\int _{S}\left( \star F-\frac{\theta}{2\pi}F \right)
 \end{align}$$
 
-which is exactly the electric flux through $\displaystyle{C}$.
+which is exactly the electric flux through $\displaystyle{S}$.
 
 ---
 
@@ -77,10 +77,19 @@ Q(M^{d-p-1}) & =\int _{M^{d-p-1}}\star j=\int _{\Sigma}\star j \wedge \eta _{M}
 then we will consider the Poisson bracket between the conserved charge $\displaystyle{H_{C_{1}}}$ and $\displaystyle{H_{C_{2}}}$.
 
 $$\begin{align}
-\left\{H_{C_{1}},H_{C_{2}}\right\} & =X_{\eta _{C_{1}}}\cdot X_{\eta _{C_{2}}}\cdot \omega \\
- & =\frac{1}{2\pi}\int _{\Sigma}\left((X_{\eta _{C_{2}}}\cdot \delta \star F)+\frac{\theta}{2\pi}(X_{\eta _{C_{2}}}\cdot\delta F) \right)(X_{\eta _{C_{1}}}\cdot\delta A)-\left( (X_{\eta _{C_{1}}}\cdot\delta \star F)+\frac{\theta}{2\pi}(X_{\eta _{C_{1}}}\cdot\delta F) \right)(X_{\eta _{C_{2}}}\cdot \delta A) \\
- & =0
+\left\{H_{S_{1}},H_{S_{2}}\right\} & =X_{\eta _{S_{1}}}\cdot X_{\eta _{S_{2}}}\cdot \omega \\
+  & =0
 \end{align}$$
 
 which shows that the 1-form electric symmetry is Abelian...
 
+consider the action of $\displaystyle{H_{S}}$ on the Wilson loop $\displaystyle{W[C]=\mathcal{P}\exp\left(ie \oint _{C}A\right)}$, which reads
+
+$$\begin{align}
+\left\{H_{S},W[C]\right\} & =-X_{\eta _{S}}\cdot \delta W[C] \\
+ & =-ie W[C]\oint _{C}X_{\eta _{S}}\cdot \delta A \\
+ & =-ieW[C]\oint _{C}\eta _{S} \\
+ & =ieI[S,C]W[C]
+\end{align}$$
+
+where $\displaystyle{I(C,S)}$ is the intersection number of loop $\displaystyle{C}$ and surface $\displaystyle{S}$.

@@ -36,7 +36,13 @@ $$\begin{align}
 
 在全局$\displaystyle{\mathrm{AdS}_{3}}$中，运动方程的正频解可组织为$\displaystyle{\mathfrak{sl}(2,\mathbb{R})\times \mathfrak{sl}(2,\mathbb{R})}$最高权表示的基函数。定义共形维度$\displaystyle{\Delta=1+\sqrt{ 1+\mu ^{2} }}$。
 
-使用最高权表示， 求出运动方程$\displaystyle{\nabla ^{2}\phi-\mu ^{2}\phi=0}$所有正频解的显式形式（差一个整体常数）。
+使用最高权表示， 求出运动方程$\displaystyle{\nabla ^{2}\phi-\mu ^{2}\phi=0}$所有正频解的显式形式$\displaystyle{\phi _{n,\bar{n}}}$（可以差一个整体常数$\displaystyle{C_{n,\bar{n}}}$），其中$\displaystyle{n,\bar{n}}$是表示的指标，对应频率记为$\displaystyle{\omega _{n,\bar{n}}}$，另记$\displaystyle{\mathrm{AdS}_{3}}$中标量场的共形维度为$\displaystyle{\Delta=1+\sqrt{ 1+\mu ^{2} }}$。可能用到雅可比多项式$\displaystyle{P_{n}^{(\alpha,\beta)}(x)}$，其定义为
+
+$$\begin{align}
+P_{n}^{(\alpha,\beta)}(x) & =\frac{(\alpha+1)_{n}}{n!}{}_{2}F_{1}\left( -n,1+\alpha+\beta+n;\alpha+1;\frac{1}{2}(1-z) \right)
+\end{align}$$
+
+其中$\displaystyle{(\alpha+1)_{n}}$是Pochhammer符号。
 
 **解**
 
@@ -72,7 +78,7 @@ $$
 $$
 \begin{align}
 \phi _{0,0} &= e^{-i\Delta t} (1+r^{2})^{-\Delta/2} \\
-\Delta &= 1 + \sqrt{1 + m^{2}}
+\Delta &= 1 + \sqrt{1 + \mu^{2}}
 \end{align}
 $$
 
@@ -87,7 +93,8 @@ $$
 $$
 \begin{align}
 \phi _{n,\bar{n}} &= e^{-i\omega _{n\bar{n}}t} e^{i(n-\bar{n})\phi} r^{n-\bar{n}} (1+r^{2})^{-(\Delta+n-\bar{n})/2} P_{\bar{n}}^{(\Delta-1,n-\bar{n})} \left( \frac{r^{2}-1}{r^{2}+1} \right) \\
-\omega _{n\bar{n}} &= \Delta + n + \bar{n}
+\omega _{n\bar{n}} &= \Delta + n + \bar{n} \\
+\Delta & =1+\sqrt{ 1+\mu ^{2} }
 \end{align}
 $$
 
