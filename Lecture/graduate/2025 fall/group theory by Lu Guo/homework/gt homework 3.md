@@ -1,4 +1,4 @@
-	# problem 1
+# problem 1
 
 suppose $\displaystyle{G}$ is a non-Abelian group, and $\displaystyle{D(G)}$ is a irreducible faithful representation of $\displaystyle{G}$, $\displaystyle{D(R)}$ is the representation matrix of element $\displaystyle{R}$. show that whether these set of matrices form a representation of $\displaystyle{G}$, if yes, state whether it is faithful or not.
 1. $\displaystyle{\left\{D(R)^{\dagger}\right\}}$
@@ -61,8 +61,8 @@ U & =\begin{pmatrix}
 0 & 0 & 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 1 & 0 & 0 \\
-0 & 0 & 0 & 0 & 1 & 0 \\
-0 & 0 & 0 & 0 & 0 & 1
+0 & 0 & 0 & 0 & 0 & 1 \\
+0 & 0 & 0 & 0 & 1 & 0
 \end{pmatrix}
 \end{align}$$
 
@@ -126,31 +126,48 @@ a_{T} & =\frac{1}{12}(9\cdot 3+1\cdot (-1)+0\cdot 0+0\cdot 0)=2
 therefore, the decomposition is
 
 $$\begin{align}
-D^{T}\times D^{T} & =D^{A}\oplus D^{E}\oplus D^{\bar{E}}\oplus D^{T}\oplus D^{T}
+D^{T}\times D^{T} & =D^{A}\oplus D^{E}\oplus D^{\bar{E}}\oplus 2D^{T}
 \end{align}$$
 
-write the basis vector of representation $\displaystyle{D^{R}}$ as $\displaystyle{\ket{R_{i}}, i=1,\dots,\dim D^{R}}$. order the LHS basis as $\displaystyle{\left\{\ket{T_{1}T_{1}'},\ket{T_{1}T_{2}'},\ket{T_{1}T_{3}'},\ket{T_{2}T_{1}'},\ket{T_{2}T_{2}'},\ket{T_{2}T_{3}'},\ket{T_{3}T_{1}'}, \ket{T_{3}T_{2}'},\ket{T_{3}T_{3}'}\right\}}$, and the RHS basis as $\displaystyle{\left\{\ket{A},\ket{E},\ket{\bar{E}},\ket{T_{1}},\ket{T_{2}},\ket{T_{3}},\ket{\bar{T}_{1}},\ket{\bar{T}_{2}},\ket{\bar{T}_{3}}\right\}}$. the projection operators can be constructed as
+to construct the similarity transformation matrix $\displaystyle{X}$ explicitly, we use the projection operators onto each irreducible representation. for a general finite group representation $\displaystyle{D(R)}$ and irreducible representation $\displaystyle{D^{j}(R)}$ with character $\displaystyle{\chi^{(j)}(R)}$ and dimension $\displaystyle{d_{j}}$, the projection operator is
 
 $$\begin{align}
-P_{r} & =\frac{d_{r}}{|\mathrm{T}|}\sum _{g\in \mathrm{T}}\chi ^{*} _{r}(g)(D^{T}(g)\otimes D^{T}(g))
+P_{j} & =\frac{d_{j}}{|T|}\sum_{R\in T}\chi^{(j)}(R)^{*}\,\big(D^{T}(R)\times D^{T}(R)\big).
 \end{align}$$
 
-for each irrep $\displaystyle{r\in\left\{A,E,\bar{E},T\right\}}$ with dimension $\displaystyle{d_{r}}$ and character $\displaystyle{\chi _{r}}$. thus we can construct $\displaystyle{\ket{A},\ket{E},\dots}$ by acting these projection operators on the $\displaystyle{\ket{T_{i}T_{j}'}}$'s. and finally the $\displaystyle{X}$ can be constructed by $\displaystyle{X=\begin{pmatrix}\ket{A}&\ket{E}& \ket{\bar{E}}&\dots\end{pmatrix}}$. one of the choice is that
+applying $\displaystyle{P_{A}}$ to any nonzero vector in the tensor-product space (for example $\displaystyle{\ket{T_{1}}\otimes\ket{T_{1}}}$) and then normalizing, we obtain the basis vector $\displaystyle{\ket{A}}$ of the one-dimensional irreducible representation $\displaystyle{D^{A}}$ as a linear combination
 
 $$\begin{align}
-X=\begin{pmatrix}
-1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
-1 & \omega ^{2} & \omega & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
-1 & \omega & \omega ^{2} & 0 & 0 & 0 & 0 & 0 & 0
-\end{pmatrix}
+\ket{A} & =\sum_{i,j=1}^{3}c^{(A)}_{ij}\,\ket{T_{i}}\otimes\ket{T_{j}}.
 \end{align}$$
 
+similarly, applying $\displaystyle{P_{E}}$ and $\displaystyle{P_{\bar{E}}}$ and normalizing gives
+
+$$\begin{align}
+\ket{E} & =\sum_{i,j=1}^{3}c^{(E)}_{ij}\,\ket{T_{i}}\otimes\ket{T_{j}}, \\
+\ket{\bar{E}} & =\sum_{i,j=1}^{3}c^{(\bar{E})}_{ij}\,\ket{T_{i}}\otimes\ket{T_{j}}.
+\end{align}$$
+
+the projection operator $\displaystyle{P_{T}}$ onto the three-dimensional irreducible representation $\displaystyle{D^{T}}$ is
+
+$$\begin{align}
+P_{T} & =\frac{3}{|T|}\sum_{R\in T}\chi^{(T)}(R)^{*}\,\big(D^{T}(R)\times D^{T}(R)\big).
+\end{align}$$
+
+its image is a six-dimensional subspace of the nine-dimensional tensor-product space, which carries two copies of $\displaystyle{D^{T}}$. by choosing an orthonormal basis $\displaystyle{\{\ket{T_{a}}\}_{a=1}^{3}}$ and $\displaystyle{\{\ket{T'_{a}}\}_{a=1}^{3}}$ in this subspace, we obtain
+
+$$\begin{align}
+\ket{T_{a}} & =\sum_{i,j=1}^{3}c^{(T)}_{a,ij}\,\ket{T_{i}}\otimes\ket{T_{j}}, \\
+\ket{T'_{a}} & =\sum_{i,j=1}^{3}c^{(T')}_{a,ij}\,\ket{T_{i}}\otimes\ket{T_{j}}, \qquad a=1,2,3.
+\end{align}$$
+
+collecting these nine new basis vectors as the columns of $\displaystyle{X}$, ordered as $\displaystyle{(\ket{A},\ket{E},\ket{\bar{E}},\ket{T_{1}},\ket{T_{2}},\ket{T_{3}},\ket{T'_{1}},\ket{T'_{2}},\ket{T'_{3}})}$, we obtain the similarity transformation matrix $\displaystyle{X}$ such that
+
+$$\begin{align}
+X^{-1}\big(D^{T}(R)\times D^{T}(R)\big)X & =D^{A}(R)\oplus D^{E}(R)\oplus D^{\bar{E}}(R)\oplus D^{T}(R)\oplus D^{T}(R),
+\end{align}$$
+
+which is the desired block-diagonal form corresponding to the decomposition $\displaystyle{D^{T}\times D^{T} = D^{A}\oplus D^{E}\oplus D^{\bar{E}}\oplus 2D^{T}}$.
 
 # problem 5
 
@@ -187,17 +204,17 @@ $$\begin{align}
 \sum _{r}d_{r}^{2} & =|G|=12
 \end{align}$$
 
-which implies that there are 4 one-dimensional irreducible representations and 2 two-dimensional irreducible representations. notice that this group has the normal subgroup $\displaystyle{\left\{E,M,N\right\}}$, and $\displaystyle{\left\{E,A\right\}}$ with the quotient group $\displaystyle{\mathrm{C}_{4}}$ and $\displaystyle{\mathrm{D}_{3}}$ with respectively. since the irreducible representable of quotient group is also the irreducible representation of the group, we can construct the character table by the character table of $\displaystyle{\mathrm{C}_{4}}$ and $\displaystyle{\mathrm{D}_{3}}$ 
+which implies that there are 4 one-dimensional irreducible representations and 2 two-dimensional irreducible representations. notice that this group is isomorphic to $\displaystyle{\mathrm{D}_{3}\times \mathrm{C}_{2}}$ (since the center of $\displaystyle{G}$ is $\displaystyle{\left\{E,A\right\}\cong\mathrm{C}_{2}}$, and the quotient group $\displaystyle{G/\left\{E,A\right\}\cong \mathrm{D}_{3}}$), so the character table can be constructed directly from the character tables of $\displaystyle{\mathrm{D}_{3}}$ and $\displaystyle{\mathrm{C}_{2}}$. the character table is given by
 
 $$\begin{array}{c|cccccc}
  & \left\{E\right\} & \left\{A\right\} & \left\{B,C,D\right\} & \left\{F,I,J\right\} & \left\{K,L\right\} & \left\{M,N\right\} \\
  \hline
 A_{1} & 1 & 1 & 1 & 1 & 1 & 1 \\
 A_{2} & 1 & 1 & -1 & -1 & 1 & 1 \\
-A_{3} & 1 & -1 & i & -i & -1 & 1 \\
-A_{4} & 1 & -1 & -i & i & -1 & 1 \\
+A_{3} & 1 & -1 & 1 & -1 & 1 & -1 \\
+A_{4} & 1 & -1 & -1 & 1 & 1 & -1 \\
 E_{1} & 2 & 2 & 0 & 0 & -1 & -1 \\
-E_{2} & 2 & -2 & 0 & 0 & 1 & -1
+E_{2} & 2 & -2 & 0 & 0 & -1 & 1
 \end{array}$$
 
 # problem 6
@@ -325,9 +342,10 @@ D & =A_{1}\oplus A_{2}\oplus E
 the basis vectors can be rearranged to be
 
 $$\begin{align}
-A_{1}: & \quad \psi _{1}(x,y)-3\psi _{3}(x,y) = x^{3}-3xy^{2} \\
-A_{2}: & \quad 3\psi _{3}(x,y)-\psi _{4}(x,y) = 3x^{2}y - y^{3} \\
+A_{1}: & \quad \psi _{1}(x,y)+\psi _{4}(x,y) = x^{3}+y^{3} \\
+A_{2}: & \quad \psi _{2}(x,y)-\psi _{3}(x,y) = x^{2}y - xy^{2} \\
 E: & \quad \begin{pmatrix}
-\psi _{1}(x,y)+\psi _{3}(x,y) \\ \psi _{2}(x,y)+\psi _{4}(x,y) \end{pmatrix} = \begin{pmatrix}
-x^{3}+xy^{2} \\ x^{2}y + y^{3} \end{pmatrix}
+\psi _{1}(x,y)-\psi _{4}(x,y) \\ \psi _{2}(x,y)+\psi _{3}(x,y) \end{pmatrix} = \begin{pmatrix}
+x^{3}-y^{3} \\ x^{2}y + xy^{2} \end{pmatrix}
 \end{align}$$
+
