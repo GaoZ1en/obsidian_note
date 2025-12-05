@@ -256,6 +256,6 @@ $$\begin{align}
 E(k) & =\varepsilon(k)\pm \sqrt{ M(k)^{2}+A^{2}|k|^{2} }
 \end{align}$$
 
-surface states?
+surface states, Dirac cone...
 
 I cannot understand...
