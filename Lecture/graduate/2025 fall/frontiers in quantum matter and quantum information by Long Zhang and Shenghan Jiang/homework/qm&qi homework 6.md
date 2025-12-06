@@ -232,7 +232,7 @@ which is exactly $\displaystyle{S\ket{\psi}}$ up to a global phase. therefore, t
 
 # problem 7
 
-check that these circuits implements the T gate and prepare the magic state $\displaystyle{HT\ket{\bar{0}}}$ for the Steane's code fault-tolerantly
+check that these circuits implements the T gate and prepare the magic state $\displaystyle{TH\ket{\bar{0}}}$ for the Steane's code fault-tolerantly
 
 ![image](http://100.94.165.49:8080/i/0c1220a9-eff8-4886-8fe7-e03b5d19dc02.png)
 
@@ -274,20 +274,57 @@ a generic $\displaystyle{C_{3}}$ operator can be implemented with the quantum te
 
 ![image](http://100.94.165.49:8080/i/d2a69d49-e908-414b-b270-4073142c36b2.png)
 
-```quantikz
-\begin{quantikz}
-\lstick{\ket{\psi}}& \ctrl{1}\gategroup[2,steps=3,style={dashed, rounded corners}, label style={label position=above}]{\text{Bell basis measurement}}	& \gate{\bar{H}}	& \gate{\text{measure } Z} & \rstick[2]{$(\sigma_{a}\otimes I)\ket{\beta_{00}}$} \\
-\lstick[2]{$(I\otimes V)\ket{\beta_{00}}$}& \targ{}	&					& \gate{\text{measure } Z} & \\
-	&			&					& \gate{V\sigma_{a}V^{-1}} & \rstick{V\ket{\psi}}
-\end{quantikz}
-```
-
 here the choice of $\displaystyle{\sigma _{a}}$ depends on the Bell basis measurement result. $\displaystyle{V\sigma _{a}V^{-1}}$ is a Clifford operator, thus can be implemented fault-tolorently. 
 
 *sol*. 
+
+let the initial state be $\displaystyle{\ket{\psi}=\alpha \ket{\bar{0}}+\beta \ket{\bar{1}}}$. the magic Bell state is $\displaystyle{(I\otimes V)\ket{\beta _{00}}=\frac{1}{\sqrt{ 2 }}(\ket{\bar{0}}\otimes V\ket{\bar{0}}+\ket{\bar{1}}\otimes V\ket{\bar{1}})}$. the total state is
+
+$$\begin{align}
+\ket{\Psi_{0}} & =\ket{\psi}\otimes (I\otimes V)\ket{\beta _{00}} \\
+ & =\frac{1}{\sqrt{ 2 }}(\alpha \ket{\bar{0}}+\beta \ket{\bar{1}})\otimes (\ket{\bar{0}}\otimes V\ket{\bar{0}}+\ket{\bar{1}}\otimes V\ket{\bar{1}}) \\
+ & =\frac{1}{\sqrt{ 2 }}(\alpha \ket{\bar{0}\bar{0}}\otimes V\ket{\bar{0}}+\alpha \ket{\bar{0}\bar{1}}\otimes V\ket{\bar{1}}+\beta \ket{\bar{1}\bar{0}}\otimes V\ket{\bar{0}}+\beta \ket{\bar{1}\bar{1}}\otimes V\ket{\bar{1}})
+\end{align}$$
+
+after the CNOT gate (control on the first qubit, target on the second qubit), the state becomes
+
+$$\begin{align}
+\ket{\Psi_{1}} & =\frac{1}{\sqrt{ 2 }}(\alpha \ket{\bar{0}\bar{0}}\otimes V\ket{\bar{0}}+\alpha \ket{\bar{0}\bar{1}}\otimes V\ket{\bar{1}}+\beta \ket{\bar{1}\bar{1}}\otimes V\ket{\bar{0}}+\beta \ket{\bar{1}\bar{0}}\otimes V\ket{\bar{1}})
+\end{align}$$
+
+after the Hadamard gate on the first qubit, the state becomes
+
+$$\begin{align}
+\ket{\Psi_{2}} & =\frac{1}{2}(\alpha (\ket{\bar{0}}+\ket{\bar{1}})\ket{\bar{0}}\otimes V\ket{\bar{0}}+\alpha (\ket{\bar{0}}+\ket{\bar{1}})\ket{\bar{1}}\otimes V\ket{\bar{1}}+\beta (\ket{\bar{0}}-\ket{\bar{1}})\ket{\bar{1}}\otimes V\ket{\bar{0}}+\beta (\ket{\bar{0}}-\ket{\bar{1}})\ket{\bar{0}}\otimes V\ket{\bar{1}}) \\
+ & =\frac{1}{2}\ket{\bar{0}\bar{0}}\otimes (\alpha V\ket{\bar{0}}+\beta V\ket{\bar{1}})+\frac{1}{2}\ket{\bar{0}\bar{1}}\otimes (\alpha V\ket{\bar{1}}+\beta V\ket{\bar{0}}) \\
+ & +\frac{1}{2}\ket{\bar{1}\bar{0}}\otimes (\alpha V\ket{\bar{0}}-\beta V\ket{\bar{1}})+\frac{1}{2}\ket{\bar{1}\bar{1}}\otimes (\alpha V\ket{\bar{1}}-\beta V\ket{\bar{0}}) \\
+ & =\frac{1}{2}\ket{\bar{0}\bar{0}}\otimes V\ket{\psi}+\frac{1}{2}\ket{\bar{0}\bar{1}}\otimes V\bar{X}\ket{\psi} \\
+ & +\frac{1}{2}\ket{\bar{1}\bar{0}}\otimes V\bar{Z}\ket{\psi}+\frac{1}{2}\ket{\bar{1}\bar{1}}\otimes V\bar{X}\bar{Z}\ket{\psi}
+\end{align}$$
+
+now we measure the first two qubits in the $Z$ basis. let the outcomes be $M_1, M_2 \in \{0, 1\}$.
+- if $M_1=0, M_2=0$, the state is $V\ket{\psi}$. no correction needed.
+- if $M_1=0, M_2=1$, the state is $V\bar{X}\ket{\psi}$. correction: $V\bar{X}V^{-1}$.
+- if $M_1=1, M_2=0$, the state is $V\bar{Z}\ket{\psi}$. correction: $V\bar{Z}V^{-1}$.
+- if $M_1=1, M_2=1$, the state is $V\bar{X}\bar{Z}\ket{\psi}$. correction: $V\bar{Z}\bar{X}V^{-1}$ (up to a phase).
+
+in general, if the measurement outcome corresponds to the Pauli operator $\sigma_a$ (where $\sigma_{00}=I, \sigma_{01}=X, \sigma_{10}=Z, \sigma_{11}=XZ$), the state on the third qubit is $V\sigma_a\ket{\psi}$. applying the correction $V\sigma_a V^{-1}$ recovers the state $V\ket{\psi}$. since $V$ is a $C_3$ gate, $V\sigma_a V^{-1}$ is a Clifford gate, which can be implemented fault-tolerantly.
 
 # problem 9
 
 design a circuit to fault-tolerantly prepare the magic Bell state $\displaystyle{(I\otimes V)\ket{\beta _{00}}}$
 
 *sol*.
+
+1. prepare a standard Bell state $\displaystyle{\ket{\beta_{00}}_{12} = \frac{\ket{\bar{0}\bar{0}} + \ket{\bar{1}\bar{1}}}{\sqrt{2}}}$ fault-tolerantly.
+2. prepare an ancilla qubit in the magic state $\displaystyle{\ket{A}_3 = V\ket{\bar{+}}}$ fault-tolerantly as (similar to problem 7)
+![image](http://100.94.165.49:8080/i/3e63c462-941d-4b52-bad0-0199cf24a5b1.png)
+3. use the ancilla to teleport the $V$ gate onto qubit 2:
+   - apply a CNOT gate with qubit 3 as control and qubit 2 as target (or perform a Bell measurement on 2 and 3).
+   - measure qubit 2 in the $Z$ basis (outcome $m$).
+   - if $m=1$, apply the correction $V X V^\dagger$ to qubit 3.
+   - the state of qubits 1 and 3 is now the desired state $\displaystyle{(I \otimes V)\ket{\beta_{00}}}$.
+
+the circuit is
+
+![image](http://100.94.165.49:8080/i/a6ff0e12-60d8-4418-8211-6d872181a55d.png)
