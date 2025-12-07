@@ -1,3 +1,5 @@
+# question
+
 for field theory with action $\displaystyle{S[\phi]}$ defining in a spacetime region $\displaystyle{M}$ sandwiched by Cauchy surfaces $\displaystyle{\Sigma _{f}}$ and $\displaystyle{\Sigma _{i}}$, covariant phase space is defined as the space of solution $\displaystyle{\mathcal{\tilde{P}}}$ of the equation of motion for the dynamical fields $\displaystyle{\phi}$ with specific boundary condition on the spatial boundary $\displaystyle{\Gamma}$. the pre-symplectic form $\displaystyle{\omega}$ defined on $\displaystyle{\mathcal{\tilde{P}}}$ relies on the boundary terms $\displaystyle{\theta}$ (which is called) supported on $\displaystyle{\Sigma _{f}}$ and $\displaystyle{\Sigma _{i}}$ as
 
 $$\begin{align}
@@ -14,7 +16,7 @@ X_{\lambda} & =\int \mathrm{d}^{d}x\delta _{\lambda}\phi(x) \frac{\delta}{\delta
 if we have
 
 $$\begin{align}
-X_{\lambda}\cdot \delta S & =\alpha _{\lambda}[\phi]|_{\Sigma _{f}}-\alpha _{\lambda}[\phi]|_{\Sigma _{i}}+\beta _{\lambda}|_{\Gamma}
+X_{\lambda}\cdot \delta S & =\alpha _{\lambda}[\phi]|_{\Sigma _{f}}-\alpha _{\lambda}[\phi]|_{\Sigma _{i}}+\beta _{\lambda}|_{M}
 \end{align}$$
 
 where $\displaystyle{\beta _{\lambda}}$ is independent from $\displaystyle{\phi}$, then we call $\displaystyle{\phi\to \phi+\delta _{\lambda}\phi}$ is a symmetry. the corresponding Noether charge is given by
@@ -45,6 +47,55 @@ X_{\xi} & =\int_{M}\mathrm{d}^{2}x\left( \xi^{\mu}\nabla_{\mu}\phi+\frac{1}{\gam
 
 here $\displaystyle{\xi _{\mu}}$ is a conformal Killing vector. the question is:
 
-1. show that the conformal transformation $\displaystyle{X_{\xi}}$ is a symmetry, and calculate the corresponding Noether charge $\displaystyle{H_{\xi}}$, arrange your answer in the form $\displaystyle{H_{\xi}=\int _{\Sigma} \mathrm{d}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu} \frac{-1}{2\pi}T_{\mu \nu}}$, here $\displaystyle{T_{\mu \nu}}$ is a symmetric tensor.
-2. calculate the algebra $\displaystyle{\left\{H_{\xi},H_{\zeta}\right\}}$ of the Noether charges. determine whether the algebra closes with a possible central extension of the form $\displaystyle{\left\{H_{\xi},H_{\zeta}\right\}=H_{\left\{\xi,\zeta\right\}}+K(\xi,\zeta)}$, and compute $\displaystyle{K}$ if present. (unnecessary)
+1. show that the conformal transformation $\displaystyle{X_{\xi}}$ is a symmetry. calculate corresponding $\displaystyle{\alpha _{\xi}}$ and $\displaystyle{\beta _{\xi}}$
+2. calculate the corresponding Noether charge $\displaystyle{H_{\xi}}$, arrange your answer in the form $\displaystyle{H_{\xi}=\int _{\Sigma} \mathrm{d}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu} \frac{1}{2\pi}T_{\mu \nu}}$, where $\displaystyle{T_{\mu \nu}}$ is a symmetric tensor.
 
+# answer
+
+1. we have
+
+$$\begin{align}
+X_{\xi}\cdot \delta S & =\alpha _{\xi}|_{\Sigma _{f}}-\alpha _{\xi}|_{\Sigma _{i}}+\beta _{\xi}|_{M} \\
+\alpha _{\xi} & =\int _{\Sigma}\mathrm{d}x\sqrt{ \sigma }\tau _{\mu}\left( \frac{1}{4\pi}\xi ^{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi +\frac{1}{2\pi \gamma}\phi \nabla ^{\mu}\nabla _{\nu}\xi ^{\nu}+\frac{1}{2\pi \gamma}\xi ^{\mu}R\phi+\frac{\mu}{4\pi \gamma ^{2}}\xi ^{\mu}e^{\gamma \phi} \right) \\
+\beta _{\xi} & =\int _{M} \mathrm{d}^{2}x\sqrt{ -g } \frac{-1}{2\pi \gamma ^{2}}R\nabla _{\mu}\xi ^{\mu}
+\end{align}$$
+
+2. we have
+
+$$\begin{align}
+H_{\xi} & =\int _{M} \mathrm{d}^{2}x\sqrt{ -g } \tau ^{\mu}\xi ^{\nu}\frac{1}{2\pi}T_{\mu \nu} \\
+T_{\mu \nu} & =\nabla _{\mu}\phi\nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi-\frac{2}{\gamma}\nabla _{\mu}\nabla _{\nu}\phi+\frac{2}{\gamma}g_{\mu \nu}\nabla ^{2}\phi-\frac{\mu}{2\gamma ^{2}}g_{\mu \nu}e^{\gamma \phi}
+\end{align}$$
+# solution
+
+we follow the standard procedure of covariant phase space formalism to study the symmetry and conserved charge of classical Liouville theory. take a variation of the action
+
+$$\begin{align}
+\delta S & =\int _{M}\mathrm{d}^{2}x\sqrt{ -g }E\delta \phi+\int _{\Sigma _{f}}\mathrm{d}x\sqrt{ \sigma }\tau ^{\mu}\theta _{\mu} \\
+E & =\frac{1}{2\pi}\left( \nabla ^{2}\phi-\frac{1}{\gamma}R-\frac{\mu}{2\gamma}e^{\gamma \phi} \right)\delta \phi \\
+\theta _{\mu} & =\nabla _{\mu}\phi \delta \phi
+\end{align}$$
+
+act the symmetry vector
+
+$$\begin{align}
+X_{\xi} & =\int \mathrm{d}^{2}x\left(\xi ^{\mu}\nabla _{\mu}\phi+\frac{1}{\gamma}\nabla _{\mu}\xi ^{\mu}\right) \frac{\delta}{\delta \phi}
+\end{align}$$
+
+on the action, we have
+
+$$\begin{align}
+X_{\xi}\cdot \delta S & =\alpha _{\xi}|_{\Sigma _{f}}-\alpha _{\xi}|_{\Sigma _{i}}+\beta _{\xi}|_{M} \\
+\alpha _{\xi} & =\int _{\Sigma}\mathrm{d}x\sqrt{ \sigma }\tau _{\mu}\left( \frac{1}{4\pi}\xi ^{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi +\frac{1}{2\pi \gamma}\phi \nabla ^{\mu}\nabla _{\nu}\xi ^{\nu}+\frac{1}{2\pi \gamma}\xi ^{\mu}R\phi+\frac{\mu}{4\pi \gamma ^{2}}\xi ^{\mu}e^{\gamma \phi} \right) \\
+\beta _{\xi} & =\int _{M} \mathrm{d}^{2}x\sqrt{ -g } \frac{-1}{2\pi \gamma ^{2}}R\nabla _{\mu}\xi ^{\mu}
+\end{align}$$
+
+notice that $\displaystyle{\beta _{\xi}}$ does not depend on dynamical field $\displaystyle{\phi}$, so $\displaystyle{X_{\xi}}$ is a symmetry indeed. by definition, the corresponding Noether charge is given by
+
+$$\begin{align}
+H_{\xi} & =\int _{\Sigma} \mathrm{d}x\sqrt{ \sigma }\tau ^{\mu}(X_{\xi}\cdot \theta _{\mu})-\alpha _{\xi} \\
+ & =\int _{M} \mathrm{d}^{2}x\sqrt{ -g } \tau ^{\mu}\xi ^{\nu}\frac{1}{2\pi}T_{\mu \nu} \\
+T_{\mu \nu} & =\nabla _{\mu}\phi\nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi-\frac{2}{\gamma}\nabla _{\mu}\nabla _{\nu}\phi+\frac{2}{\gamma}g_{\mu \nu}\nabla ^{2}\phi-\frac{\mu}{2\gamma ^{2}}g_{\mu \nu}e^{\gamma \phi}
+\end{align}$$
+
+here algebraic calculation is simple.
