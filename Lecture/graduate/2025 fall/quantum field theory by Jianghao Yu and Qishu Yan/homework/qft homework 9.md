@@ -1,4 +1,4 @@
-# problem 1
+# problem
 
 ## Compton scattering $\displaystyle{e^{-}+\gamma\to e^{-}+\gamma}$
 
@@ -72,19 +72,13 @@ thus we have
 
 $$\begin{align}
 \frac{1}{4}\sum _{ss'\lambda \lambda'}|\mathcal{M}|^{2} & =\frac{1}{4}e^{4}\mathrm{Tr}(\Gamma ^{\mu \nu}(-ip\!\!\! /+m)\bar{\Gamma} _{\mu \nu}(-i p\!\!\! /'+m)) \\
- & =\frac{1}{4}e^{4}\left( \frac{T_{1}}{D^{2}_{1}}+\frac{T_{2}}{D^{2}_{2}}+\frac{T_{3}+T_{4}}{D_{1}D_{2}}\right)
+ & =\frac{1}{4}e^{4}\left( \frac{T_{1}}{D^{2}_{1}}+\frac{T_{2}}{D^{2}_{2}}+\frac{T_{3}+T_{4}}{D_{1}D_{2}}\right) \\
+ & =\frac{2e^{4}}{(st-m^{2}(s+t)+m^{4})^{2}}(-st(s^{2}+2su+t^{2}+2u(t+u)) \\
+ & -m^{2}(s+t)(4u(s+t)+3(s+t)^{2}+2u^{2})-m^{4}(10u(s+t)+11(s+t)^{2}+2u^{2}) \\
+ & -4m^{6}(3(s+t)+2u)-2m^{8})
 \end{align}$$
 
 in the lab frame (the initial electron is at rest), we have
-
-$$\begin{align}
-p\cdot k & =-m\omega \\
-p\cdot k' & =-m\omega' \\
-p'\cdot k &= -m\omega + \omega \omega'(1-\cos \theta) \\
-\frac{1}{\omega'}-\frac{1}{\omega} & =\frac{1}{m}(1-\cos \theta)
-\end{align}$$
-
-thus
 
 $$\begin{align}
 \frac{1}{4}\sum _{ss'\lambda \lambda'}|\mathcal{M}|^{2}=2e^4 \left[ \frac{\omega'}{\omega} + \frac{\omega}{\omega'} - \sin^2\theta \right]
@@ -140,12 +134,26 @@ B & =\mathrm{Tr}(\gamma ^{\mu}(-ip\!\!\! /_{1}+m)\gamma ^{\nu}(-ip\!\!\! /_{3}+m
 C & =B|_{3\leftrightarrow 4}, \quad D =A|_{3\leftrightarrow 4} \\
 \end{align}$$
 
-thus
+by exhausting algebraic calculation, we derive the final result
 
 $$\begin{align}
-A & = 32 [ (p_1\cdot p_2)^{2} + (p_1\cdot p_4)^{2} ] - 64m^2(p_1\cdot p_3) + 64m^4 \\
-D & = A|_{3\leftrightarrow 4} = 32 [ (p_1\cdot p_2)^{2} + (p_1\cdot p_3)^{2} ] - 64m^2(p_{1}\cdot p_{4})+ 64m^4 \\
-B=C & = -32(p_1\cdot p_2)^{2} - 32m^2 [ p_1\cdot p_2 + p_1\cdot p_3 + p_1\cdot p_4] - 32m^4
+\frac{1}{4}\sum _{s_{1}s_{2}s_{3}s_{4}}|\mathcal{M}|^{2} & =\frac{2e^{4}}{t^{2}u^{2}}(t^{4}+u^{4}+s^{2}(t+u)^{2} \\
+ & +4m^{2}(s(t^{2}+3tu+u^{2})+(t+u)(t^{2}-3tu+u^{2}))+8m^{2}(t^{2}+tu+u^{2}))
+\end{align}$$
+
+take the high energy limit
+
+$$\begin{align}
+\frac{1}{4}\sum _{s_{1}s_{2}s_{3}s_{4}}|\mathcal{M}|^{2} & =\frac{2e^{4}}{t^{2}u^{2}}(t^{4}+u^{4}+s^{2}(t+u)^{2}) \\
+ & =\frac{2e^{4}(s^{2}+st+t^{2})^{2}}{t^{2}u^{2}}
+\end{align}$$
+
+choose the center of mass frame
+
+$$\begin{align}
+\frac{\mathrm{d}\sigma}{\mathrm{d}\Omega} & =\frac{1}{64\pi ^{2}s}|\mathcal{M}|^{2} \\
+ & =\frac{\alpha ^{2}}{2s} \frac{1}{t^{2}u^{2}}(s^{2}+t^{2}+st)^{2} \\
+ & =\frac{\alpha ^{2}}{2s} \frac{1}{\sin ^{2} \frac{\theta}{2}\cos ^{2} \frac{\theta}{2}}\left( \cos ^{2}\frac{\theta}{2}+\sin ^{4} \frac{\theta}{2} \right)^{2}
 \end{align}$$
 
 ## Bhabha scattering $\displaystyle{e^{+}+e^{-}\to e^{+}+e^{-}}$
@@ -162,6 +170,38 @@ i\mathcal{M}_{2} & = \frac{ie^{2}}{(p_{1}+p_{2})^{2}} [ \bar{u}^{s_{3}}(\vec{p}_
 i\mathcal{M} & = i\mathcal{M}_{1} - i\mathcal{M}_{2}
 \end{align}$$
 
+take a square, average over initial spins and sum over final spins
+
+$$\begin{align}
+\frac{1}{4}\sum _{s_{1}s_{2}s_{3}s_{4}}|\mathcal{M}|^{2} & =\frac{e^{4}}{4(p_{1}-p_{3})^{4}}\mathrm{Tr}[(-ip\!\!\! /_{3}+m)\gamma ^{\mu}(-ip\!\!\! /_{1}+m)\gamma ^{\nu}]\mathrm{Tr}[(-ip\!\!\! /_{2}-m)\gamma _{\mu}(-ip\!\!\! /_{4}-m)\gamma _{\nu}] \\
+ & +\frac{e^{2}}{4(p_{1}+p_{2})^{4}}\mathrm{Tr}[(-ip\!\!\! /_{3}+m)\gamma ^{\mu}(-ip\!\!\! /_{4}-m)\gamma ^{\nu}]\mathrm{Tr}[(-ip\!\!\! /_{2}-m)\gamma _{\mu}(-ip\!\!\! /_{1}+m)\gamma _{\nu}] \\
+ & -\frac{e^{2}}{4(p_{1}-p_{3})^{2}(p_{1}+p_{2})^{2}}\mathrm{Tr}[(-ip\!\!\! /_{3}+m)\gamma ^{\mu}(-ip\!\!\! /_{1}+m)\gamma ^{\nu}(-ip\!\!\! /_{2}-m)\gamma _{\mu}(-ip\!\!\! /_{4}-m)\gamma _{\nu}] \\
+ & -\frac{e^{2}}{4(p_{1}-p_{3})^{2}(p_{1}+p_{2})^{2}}\mathrm{Tr}[(-ip\!\!\! /_{3}+m)\gamma ^{\mu}(-ip\!\!\! /_{4}-m)\gamma ^{\nu}(-ip\!\!\! /_{2}-m)\gamma _{\mu}(-ip\!\!\! /_{1}+m)\gamma _{\nu}] \\
+ & =\frac{2e^{2}}{s^{2}t^{2}}(s^{4}+t^{4}+u^{2}(s+t)^{2}+4m^{2}(s^{3}+s^{2}(u-2t)+st(3u-2t)+t^{2}(t+u))+8m^{4}(s^{2}+st+t^{2}))
+\end{align}$$
+
+here we have introduced the Mandelstam variables
+
+$$\begin{align}
+s & =-(p_{1}+p_{2})^{2} \\
+t & =-(p_{1}-p_{3})^{2} \\
+u & =-(p_{1}-p_{4})^{2}
+\end{align}$$
+
+take the high energy limit, we can just ignore the mass terms, and we have
+
+$$\begin{align}
+\frac{1}{4}\sum _{s_{1}s_{2}s_{3}s_{4}}|\mathcal{M}|^{2} & =\frac{2e^{4}}{s^{2}t^{2}}(s^{4}+t^{4}+u^{2}(s+t)^{2}) \\
+ & =\frac{2e^{4}}{s^{2}t^{2}}(s^{2}+t^{2}+st)^{2}
+\end{align}$$
+
+choose center of mass frame, the differential cross section is then
+
+$$\begin{align}
+\frac{\mathrm{d}\sigma}{\mathrm{d}\Omega} & =\frac{1}{64\pi ^{2}s}|\mathcal{M}|^{2} \\
+ & =\frac{\alpha ^{2}}{2s} \frac{1}{s^{2}t^{2}}(s^{2}+t^{2}+st)^{2} \\
+ & =\frac{\alpha ^{2}}{2s} \left( \cot ^{2} \frac{\theta}{2}+\sin ^{2} \frac{\theta}{2} \right)^{2}
+\end{align}$$
 
 ## $\displaystyle{e^{+}+e^{-} \to \gamma +\gamma}$
 
@@ -197,8 +237,19 @@ average over initial spins and sum over final spins and polarizations:
 
 $$\begin{align}
 \frac{1}{4}\sum _{s_{1}s_{2}\lambda \lambda'} & = \frac{e^{4}}{4}\sum _{s_{1}s_{2}}\mathrm{Tr}(\Gamma ^{\mu \nu}u^{s_{1}}(\vec{p}_{1})\bar{u}^{s_{1}}(\vec{p}_{1})\bar{\Gamma}_{\mu \nu}v^{s_{2}}(\vec{p}_{2})\bar{v}^{s_{2}}(\vec{p}_{2})) \\
- & =\frac{e^{4}}{4}\mathrm{Tr}(\Gamma ^{\mu \nu}(-ip\!\!\! /_{1}+m)\bar{\Gamma} _{\mu \nu}(-ip\!\!\! /_{2}-m))
+ & =\frac{e^{4}}{4}\mathrm{Tr}(\Gamma ^{\mu \nu}(-ip\!\!\! /_{1}+m)\bar{\Gamma} _{\mu \nu}(-ip\!\!\! /_{2}-m)) \\
+ & =\frac{2e^{4}}{(tu-m^{2}(t+u)+m^{4})^{2}}(tu(-2s(s+t+u)+t^{2}+u^{2}) \\
+ & -m^{2}(2s^{2}(t+u)+12stu-(t+u)(3t^{2}+2tu+3u^{2})) \\
+ & +m^{4}(-s^{2}-6s(t+u)+7t^{2}+6tu+7u^{2}) \\
+ & -4sm^{6}-6m^{8})
 \end{align}$$
+
+take the high energy limit
+
+$$\begin{align}
+\frac{1}{4}\sum _{s_{1}s_{2}\lambda \lambda'} & =\frac{2e^{4}}{tu}(t^{2}+u^{2})
+\end{align}$$
+
 ## $\displaystyle{e^{+}+e^{-}\to \mu ^{+}+\mu ^{-}}$
 
 there is only one tree level Feynman diagram
@@ -223,7 +274,7 @@ average over initial spins and sum over final spins:
 $$\begin{align}
 \frac{1}{4}\sum _{s_{1}s_{2}s_{3}s_{4}}|\mathcal{M}|^{2} & =\frac{e^{4}}{4s^{2}} \mathrm{Tr}(\gamma ^{\mu}(-ip\!\!\! /_{3}+m_{\mu})\gamma ^{\nu}(-ip\!\!\! /_{4}-m_{\mu}))\mathrm{Tr}(\gamma _{\mu}(-ip\!\!\! /_{2}-m_{e})\gamma _{\nu}(-ip\!\!\! /_{1}+m_{e})) \\
  & =\frac{8e^{4}}{s^{2}}((p_{1}\cdot p_{3})^{2}+(p_{1}\cdot p_{4})^{2}+m_{\mu}^{2}(p_{1}\cdot p_{2})+m_{e}^{2}(p_{3}\cdot p_{4})+2m_{\mu}^{2}m_{e}^{2}) \\
- & =\frac{2e^{4}}{s^{2}}\left( t^{2}+u^{2}+2(t+u-s)(m_{\mu}^{2}+m_{e}^{2})+2(m_{\mu}^{2}+m_{e}^{2})^{2}+16m_{\mu}^{2}m_{e}^{2} \right)
+ & =\frac{2e^{4}}{s^{2}}\left( t^{2}+u^{2}+2(m_{\mu}^{2}+m_{e}^{2})(m_{e}^{2}+m_{\mu}^{2}+u+t-s) \right)
 \end{align}$$
 
 
