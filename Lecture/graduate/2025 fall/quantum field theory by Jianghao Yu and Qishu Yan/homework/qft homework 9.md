@@ -143,108 +143,88 @@ C & =B|_{3\leftrightarrow 4}, \quad D =A|_{3\leftrightarrow 4} \\
 thus
 
 $$\begin{align}
-A & =64m^{4}+32m^{2}(p_{2}\cdot p_{4})+32(p_{1}\cdot p_{2})(p_{3}\cdot p_{4})+32(p_{1}\cdot p_{4})(p_{2}\cdot p_{3}) \\
- & -32(p_{2}\cdot p_{4})(p_{1}\cdot p_{3})+32(p_{1}\cdot p_{3})(p_{2}\cdot p_{4}) \\
-D & =A|_{3\leftrightarrow 4} =64m^{4}+32m^{2}(p_{2}\cdot p_{3})+32(p_{1}\cdot p_{2})(p_{3}\cdot p_{4})+32(p_{1}\cdot p_{3})(p_{2}\cdot p_{4}) \\
- & -32(p_{2}\cdot p_{3})(p_{1}\cdot p_{4})+32(p_{1}\cdot p_{4})(p_{2}\cdot p_{3}) \\
-B & =\mathrm{Tr}(\gamma ^{\mu}(-ip\!\!\! /_{1}+m)\gamma ^{\nu}(-ip\!\!\! /_{3}+m)\gamma _{\mu}(-ip\!\!\! /_{2}+m)\gamma _{\nu}(-ip\!\!\! /_{4}+m))
+A & = 32 [ (p_1\cdot p_2)^{2} + (p_1\cdot p_4)^{2} ] - 64m^2(p_1\cdot p_3) + 64m^4 \\
+D & = A|_{3\leftrightarrow 4} = 32 [ (p_1\cdot p_2)^{2} + (p_1\cdot p_3)^{2} ] - 64m^2(p_{1}\cdot p_{4})+ 64m^4 \\
+B=C & = -32(p_1\cdot p_2)^{2} - 32m^2 [ p_1\cdot p_2 + p_1\cdot p_3 + p_1\cdot p_4] - 32m^4
 \end{align}$$
-
-$$\begin{align}
-B & =\mathrm{Tr}(\gamma ^{\mu}(-ip\!\!\! /_{1}+m)\gamma ^{\nu}(-ip\!\!\! /_{3}+m)\gamma _{\mu}(-ip\!\!\! /_{2}+m)\gamma _{\nu}(-ip\!\!\! /_{4}+m)) \\
- & =\mathrm{Tr}(\gamma ^{\mu}p\!\!\! /_{1}\gamma ^{\nu}p\!\!\! /_{3}\gamma _{\mu}p\!\!\! /_{2}\gamma _{\nu}p\!\!\! /_{4})-m^{2}\mathrm{Tr}(\gamma ^{\mu}p\!\!\! /_{1}\gamma ^{\nu}p\!\!\! /_{3}\gamma _{\mu}\gamma _{\nu})-m^{2}\mathrm{Tr}(\gamma ^{\mu}p\!\!\! /_{1}\gamma ^{\nu}\gamma _{\mu}p\!\!\! /_{2}\gamma _{\nu}) \\
- & -m^{2}\mathrm{Tr}(\gamma ^{\mu}p\!\!\! /_{1}\gamma ^{\nu}\gamma _{\mu}\gamma _{\nu}p\!\!\! /_{4})-m^{2}\mathrm{Tr}(\gamma ^{\mu}\gamma ^{\nu}p\!\!\! /_{3}\gamma _{\mu}p\!\!\! /_{2}\gamma _{\nu})-m^{2}\mathrm{Tr}(\gamma ^{\mu}\gamma ^{\nu}p\!\!\! /_{3}\gamma _{\mu}\gamma _{\nu}p\!\!\! /_{4}) \\
- & -m^{2}\mathrm{Tr}(\gamma ^{\mu}\gamma ^{\nu}\gamma _{\mu}p\!\!\! /_{2}\gamma _{\nu}p\!\!\! /_{4})+m^{4}\mathrm{Tr}(\gamma ^{\mu}\gamma ^{\nu}\gamma _{\mu}\gamma _{\nu})
-\end{align}$$
-
-$$\begin{align}
-\mathrm{Tr}(\gamma ^{\mu}p\!\!\! /_{1}\gamma ^{\nu}p\!\!\! /_{3}\gamma _{\mu}p\!\!\! /_{2}\gamma _{\nu}p\!\!\! /_{4}) & =16[(p_{1}\cdot p_{3})(p_{2}\cdot p_{4})+(p_{1}\cdot p_{4})(p_{2}\cdot p_{3})-(p_{1}\cdot p_{2})(p_{3}\cdot p_{4})] \\
-\mathrm{Tr}(\gamma ^{\mu}p\!\!\! /_{1}\gamma ^{\nu}p\!\!\! /_{3}\gamma _{\mu}\gamma _{\nu}) & =-8(p_{1}\cdot p_{3}) \\
-\mathrm{Tr}(\gamma ^{\mu}p\!\!\! /_{1}\gamma ^{\nu}\gamma _{\mu}p\!\!\! /_{2}\gamma _{\nu}) & =-8(p_{1}\cdot p_{2}) \\
-\mathrm{Tr}(\gamma ^{\mu}p\!\!\! /_{1}\gamma ^{\nu}\gamma _{\mu}\gamma _{\nu}p\!\!\! /_{4}) & =-8(p_{1}\cdot p_{4}) \\
-\mathrm{Tr}(\gamma ^{\mu}\gamma ^{\nu}p\!\!\! /_{3}\gamma _{\mu}p\!\!\! /_{2}\gamma _{\nu}) & =-8(p_{2}\cdot p_{3}) \\
-\mathrm{Tr}(\gamma ^{\mu}\gamma ^{\nu}p\!\!\! /_{3}\gamma _{\mu}\gamma _{\nu}p\!\!\! /_{4}) & =-8(p_{3}\cdot p_{4}) \\
-\mathrm{Tr}(\gamma ^{\mu}\gamma ^{\nu}\gamma _{\mu}p\!\!\! /_{2}\gamma _{\nu}p\!\!\! /_{4}) & =-8(p_{2}\cdot p_{4}) \\
-\mathrm{Tr}(\gamma ^{\mu}\gamma ^{\nu}\gamma _{\mu}\gamma _{\nu}) & =16
-\end{align}$$
-
-thus
-
-$$\begin{align}
-B & =16[(p_{1}\cdot p_{3})(p_{2}\cdot p_{4})+(p_{1}\cdot p_{4})(p_{2}\cdot p_{3})-(p_{1}\cdot p_{2})(p_{3}\cdot p_{4})] \\
- & +8m^{2}(p_{1}\cdot p_{2}+p_{1}\cdot p_{3}+p_{1}\cdot p_{4}+p_{2}\cdot p_{3}+p_{2}\cdot p_{4}+p_{3}\cdot p_{4})+16m^{4} \\
-C & =B|_{3\leftrightarrow 4} = B \\
-B+C & =32[(p_{1}\cdot p_{3})(p_{2}\cdot p_{4})+(p_{1}\cdot p_{4})(p_{2}\cdot p_{3})-(p_{1}\cdot p_{2})(p_{3}\cdot p_{4})] \\
- & +16m^{2}(p_{1}\cdot p_{2}+p_{1}\cdot p_{3}+p_{1}\cdot p_{4}+p_{2}\cdot p_{3}+p_{2}\cdot p_{4}+p_{3}\cdot p_{4})+32m^{4}
-\end{align}$$
-
-adding all together, we have
-
-$$\begin{align}
-\frac{1}{4}\sum _{s_{1}s_{2}s_{3}s_{4}}|\mathcal{M}|^{2} & =\frac{e^{4}}{t^{2}}[4m^{4}+2m^{2}(p_{2}\cdot p_{4})+2(p_{1}\cdot p_{2})(p_{3}\cdot p_{4})+2(p_{1}\cdot p_{4})(p_{2}\cdot p_{3})] \\
- & +\frac{e^{4}}{u^{2}}[4m^{4}+2m^{2}(p_{2}\cdot p_{3})+2(p_{1}\cdot p_{2})(p_{3}\cdot p_{4})+2(p_{1}\cdot p_{3})(p_{2}\cdot p_{4})] \\
- & -\frac{e^{4}}{tu}[8(p_{1}\cdot p_{3})(p_{2}\cdot p_{4})+8(p_{1}\cdot p_{4})(p_{2}\cdot p_{3})-8(p_{1}\cdot p_{2})(p_{3}\cdot p_{4}) \\
- & +4m^{2}(p_{1}\cdot p_{2}+p_{1}\cdot p_{3}+p_{1}\cdot p_{4}+p_{2}\cdot p_{3}+p_{2}\cdot p_{4}+p_{3}\cdot p_{4})+8m^{4}]
-\end{align}$$
-
-in the center-of-mass frame, we have
-
-$$\begin{align}
-p_{1} & =(E,\vec{p}) \\
-p_{2} & =(E,-\vec{p}) \\
-p_{3} & =(E,\vec{p}') \\
-p_{4} & =(E,-\vec{p}')
-\end{align}$$
-
-and
-
-$$\begin{align}
-\frac{1}{4}\sum _{s_{1}s_{2}s_{3}s_{4}}|\mathcal{M}|^{2} & =\frac{e^{4}}{t^{2}}[4m^{4}+2m^{2}(p^{2}(\cos \theta-1)-m^{2})+2(-2p^{2}-m^{2})^{2}+2(-p^{2}(1+\cos \theta)-m^{2})^{2}] \\
- & +\frac{e^{4}}{u^{2}}[4m^{4}+2m^{2}(-p^{2}(1+\cos \theta)-m^{2})+2(-2p^{2}-m^{2})^{2}+2(p^{2}(\cos \theta-1)-m^{2})^{2}] \\
- & -\frac{e^{4}}{tu}[8(p^{2}(\cos \theta-1)-m^{2})^{2}+8(-p^{2}(1+\cos \theta)-m^{2})^{2}-8(-2p^{2}-m^{2})^{2} \\
- & -24m^{2}(p^{2}+m^{2})+8m^{4}]
-\end{align}$$
-
-
-$$\begin{align}
-\frac{1}{4}\sum _{s_{1}s_{2}s_{3}s_{4}}|\mathcal{M}|^{2} & =\frac{e^{4}}{t^{2}}[4m^{4}+2m^{2}(p^{2}(\cos \theta-1)-m^{2})+2(-2p^{2}-m^{2})^{2}+2(-p^{2}(1+\cos \theta)-m^{2})^{2}] \\
- & +\frac{e^{4}}{u^{2}}[4m^{4}+2m^{2}(-p^{2}(1+\cos \theta)-m^{2})+2(-2p^{2}-m^{2})^{2}+2(p^{2}(\cos \theta-1)-m^{2})^{2}] \\
- & -\frac{e^{4}}{tu}[16(p^{4}(1+\cos ^{2}\theta))-8(m^{4}+4p^{4}) \\
- & -24m^{2}p^{2}]
-\end{align}$$
-
-$$\begin{align}
-t & =2p^{2}(\cos \theta-1) \\
-u & =-(p_{1}-p_{4})^{2} \\
- & =2m^{2}+2p_{1}\cdot p_{4} \\
- & =-2p^{2}(1+\cos \theta)
-\end{align}$$
-
-$$\begin{align}
-p_{1}\cdot p_{2} & =-2p^{2}-m^{2} \\
-p_{1}\cdot p_{3} & =p^{2}(\cos \theta-1)-m^{2} \\
-p_{1}\cdot p_{4} & =-p^{2}(1+\cos \theta)-m^{2} \\
-p_{2}\cdot p_{3} & =-p^{2}(1+\cos \theta)-m^{2} \\
-p_{2}\cdot p_{4} & =p^{2}(\cos \theta-1)-m^{2} \\
-p_{3}\cdot p_{4} & =-2p^{2}-m^{2}
-\end{align}$$
-
 
 ## Bhabha scattering $\displaystyle{e^{+}+e^{-}\to e^{+}+e^{-}}$
 
 there are two tree level Feynman diagrams
+
+![image](http://100.94.165.49:8080/i/6e609847-2cfe-4009-be92-68edb3753284.png)
+
+the invariant amplitudes are
+
+$$\begin{align}
+i\mathcal{M}_{1} & = \frac{ie^{2}}{(p_{1}-p_{3})^{2}} [ \bar{u}^{s_{3}}(\vec{p}_{3})\gamma ^{\mu}u^{s_{1}}(\vec{p}_{1}) ][ \bar{v}^{s_{2}}(\vec{p}_{2})\gamma _{\mu}v^{s_{4}}(\vec{p}_{4}) ] \\
+i\mathcal{M}_{2} & = \frac{ie^{2}}{(p_{1}+p_{2})^{2}} [ \bar{u}^{s_{3}}(\vec{p}_{3})\gamma _{\mu}v^{s_{4}}(\vec{p}_{4}) ][ \bar{v}^{s_{2}}(\vec{p}_{2})\gamma ^{\mu}u^{s_{1}}(\vec{p}_{1}) ] \\
+i\mathcal{M} & = i\mathcal{M}_{1} - i\mathcal{M}_{2}
+\end{align}$$
 
 
 ## $\displaystyle{e^{+}+e^{-} \to \gamma +\gamma}$
 
 there are two tree level Feynman diagrams
 
+![image](http://100.94.165.49:8080/i/27ee72c8-92b4-4ecf-8eea-dd03bd0ba869.png)
 
+the invariant amplitudes are
 
+$$\begin{align}
+i\mathcal{M}_{1} & = \bar{v}^{s_{2}}(\vec{p}_{2})(-ie\gamma ^{\mu})\varepsilon _{\mu}^{\lambda *}(\vec{k}_{1}) \frac{-i(p\!\!\! /_{1}-k\!\!\! /_{1})+m}{(p_{1}-k_{1})^{2}+m^{2}-i\epsilon}(-ie\gamma ^{\nu})\varepsilon _{\nu}^{\lambda'*}(\vec{k}_{2})u^{s_{1}}(\vec{p}_{1}) \\
+ & = ie^{2}\bar{v}^{s_{2}}(\vec{p}_{2})\varepsilon _{\mu}^{\lambda *}(\vec{k}_{1})\gamma ^{\mu} \frac{-i(p\!\!\! /_{1}-k\!\!\! /_{1})+m}{(p_{1}-k_{1})^{2}+m^{2}-i\epsilon}\gamma ^{\nu}\varepsilon _{\nu}^{\lambda'*}(\vec{k}_{2})u^{s_{1}}(\vec{p}_{1}) \\
+i\mathcal{M}_{2} & =ie^{2}\bar{v}^{s_{2}}(\vec{p}_{2})\varepsilon ^{\lambda'*}_{\nu}\gamma ^{\nu} \frac{-i(p\!\!\! /_{1}-k\!\!\! /_{2})+m}{(p_{1}-k_{2})^{2}+m^{2}-i\varepsilon}\gamma ^{\mu}\varepsilon _{\mu}^{\lambda *}(\vec{k}_{1})u^{s_{1}}(\vec{p}_{1}) \\
+i\mathcal{M} & =i\mathcal{M}_{1}+i\mathcal{M}_{2} \\
+ & =ie^{2}\varepsilon ^{\lambda*}_{\mu}(\vec{k}_{1})\varepsilon ^{\lambda'*}_{\nu}(\vec{k}_{2}) \bar{v}^{s_{2}}(\vec{p}_{2})\Gamma ^{\mu \nu}u^{s_{1}}(\vec{p}_{1}) \\
+\Gamma ^{\mu \nu} & =\gamma ^{\mu} \frac{-i(p\!\!\! /_{1}-k\!\!\! /_{1})+m}{(p_{1}-k_{1})^{2}+m^{2}}\gamma ^{\nu}+\gamma ^{\nu} \frac{-i(p\!\!\! /_{1}-k\!\!\! /_{2})+m}{(p_{1}-k_{2})^{2}+m^{2}}\gamma ^{\mu}
+\end{align}$$
+
+then
+
+$$\begin{align}
+|\mathcal{M}|^{2} & =e^{4}\varepsilon ^{\lambda}_{\mu}(\vec{k}_{1})\varepsilon ^{\lambda'}_{\nu}(\vec{k}_{2})\varepsilon ^{\lambda*}_{\rho}(\vec{k}_{1})\varepsilon ^{\lambda'*}_{\sigma}(\vec{k}_{2}) \bar{v}^{s_{2}}(\vec{p}_{2})\Gamma ^{\mu \nu}u^{s_{1}}(\vec{p}_{1})\bar{u}^{s_{1}}(\vec{p}_{1})\bar{\Gamma} ^{\rho \sigma}v^{s_{2}}(\vec{p}_{2})
+\end{align}$$
+
+where
+
+$$\begin{align}
+\bar{\Gamma}_{\rho \sigma} & =\gamma ^{0}(\Gamma)^{\dagger}_{\rho \sigma}\gamma ^{0} \\
+ & =\gamma _{\sigma} \frac{i(p\!\!\! /_{1}-k\!\!\! /_{1})+m}{(p_{1}-k_{1})^{2}+m^{2}}\gamma _{\rho}+\gamma _{\rho} \frac{i(p\!\!\! /_{1}-k\!\!\! /_{2})+m}{(p_{1}-k_{2})^{2}+m^{2}}\gamma _{\sigma}
+\end{align}$$
+
+average over initial spins and sum over final spins and polarizations:
+
+$$\begin{align}
+\frac{1}{4}\sum _{s_{1}s_{2}\lambda \lambda'} & = \frac{e^{4}}{4}\sum _{s_{1}s_{2}}\mathrm{Tr}(\Gamma ^{\mu \nu}u^{s_{1}}(\vec{p}_{1})\bar{u}^{s_{1}}(\vec{p}_{1})\bar{\Gamma}_{\mu \nu}v^{s_{2}}(\vec{p}_{2})\bar{v}^{s_{2}}(\vec{p}_{2})) \\
+ & =\frac{e^{4}}{4}\mathrm{Tr}(\Gamma ^{\mu \nu}(-ip\!\!\! /_{1}+m)\bar{\Gamma} _{\mu \nu}(-ip\!\!\! /_{2}-m))
+\end{align}$$
 ## $\displaystyle{e^{+}+e^{-}\to \mu ^{+}+\mu ^{-}}$
 
 there is only one tree level Feynman diagram
 
+![image](http://100.94.165.49:8080/i/07128dab-c793-4510-a4f6-aedbaab85556.png)
+
+the invariant amplitude is given by
+
+$$\begin{align}
+i\mathcal{M} & =\bar{u}^{s_{3}}_{\mu}(\vec{p}_{3})(-ie\gamma ^{\mu})v^{s_{4}}_{\mu}(\vec{p}_{4}) \frac{-i\eta _{\mu \nu}}{(p_{1}+p_{2})^{2}} \bar{v}^{s_{2}}_{e}(\vec{p}_{2})(-ie\gamma ^{\nu})u^{s_{1}}_{e}(\vec{p}_{1}) \\
+ & =\frac{ie^{2}}{(p_{1}+p_{2})^{2}} [ \bar{u}^{s_{3}}_{\mu}(\vec{p}_{3})\gamma ^{\mu}v^{s_{4}}_{\mu}(\vec{p}_{4}) ] [ \bar{v}^{s_{2}}_{e}(\vec{p}_{2})\gamma _{\mu}u^{s_{1}}_{e}(\vec{p}_{1}) ]
+\end{align}$$
+
+then
+
+$$\begin{align}
+|\mathcal{M}|^{2} & =\frac{e^{4}}{s^{2}} [\bar{u}^{s_{3}}_{\mu}(\vec{p}_{3})\gamma ^{\mu}v^{s_{4}}_{\mu}(\vec{p}_{4})][\bar{v}^{s_{2}}_{e}(\vec{p}_{2})\gamma _{\mu}u^{s_{1}}_{e}(\vec{p}_{1})][\bar{v}^{s_{4}}_{\mu}(\vec{p}_{4})\gamma ^{\nu}u^{s_{3}}_{\mu}(\vec{p}_{3})][\bar{u}^{s_{1}}_{e}(\vec{p}_{1})\gamma _{\nu}v^{s_{2}}_{e}(\vec{p}_{2})]
+\end{align}$$
+
+average over initial spins and sum over final spins:
+
+$$\begin{align}
+\frac{1}{4}\sum _{s_{1}s_{2}s_{3}s_{4}}|\mathcal{M}|^{2} & =\frac{e^{4}}{4s^{2}} \mathrm{Tr}(\gamma ^{\mu}(-ip\!\!\! /_{3}+m_{\mu})\gamma ^{\nu}(-ip\!\!\! /_{4}-m_{\mu}))\mathrm{Tr}(\gamma _{\mu}(-ip\!\!\! /_{2}-m_{e})\gamma _{\nu}(-ip\!\!\! /_{1}+m_{e})) \\
+ & =\frac{8e^{4}}{s^{2}}((p_{1}\cdot p_{3})^{2}+(p_{1}\cdot p_{4})^{2}+m_{\mu}^{2}(p_{1}\cdot p_{2})+m_{e}^{2}(p_{3}\cdot p_{4})+2m_{\mu}^{2}m_{e}^{2}) \\
+ & =\frac{2e^{4}}{s^{2}}\left( t^{2}+u^{2}+2(t+u-s)(m_{\mu}^{2}+m_{e}^{2})+2(m_{\mu}^{2}+m_{e}^{2})^{2}+16m_{\mu}^{2}m_{e}^{2} \right)
+\end{align}$$
 
 
 ## appendix: formalism
