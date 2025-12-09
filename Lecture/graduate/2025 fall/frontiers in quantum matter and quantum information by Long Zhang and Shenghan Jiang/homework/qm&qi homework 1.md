@@ -21,8 +21,8 @@ then the Hamiltonian becomes
 
 $$\begin{align}
 H & =\sum _{j=1}^{L}-t_{1} \frac{1}{\sqrt{ L }}\sum _{k}c_{k,a}^{\dagger}e^{-ik _{j}} \frac{1}{\sqrt{ L }}\sum _{k'}c_{k',b}e^{ik' _{j}} \\
- & -t_{2} \frac{1}{L}\sum _{k}c^{\dagger}_{k,a}e^{-ik _{j}}\sum _{k'}c_{k',b}e^{ik'_{j+1}}+\text{h.c.} \\
- & =\sum _{k}-t_{1}c_{k,a}^{\dagger}c_{k,b}-t_{2}e^{ik}c^{\dagger}_{k,a}c_{k,b}+\text{h.c.} \\
+ & -t_{2} \frac{1}{L}\sum _{k}c^{\dagger}_{k,b}e^{-ik _{j}}\sum _{k'}c_{k',a}e^{ik'_{j+1}}+\text{h.c.} \\
+ & =\sum _{k}-t_{1}c_{k,a}^{\dagger}c_{k,b}-t_{2}e^{-ik}c^{\dagger}_{k,a}c_{k,b}+\text{h.c.} \\
  & =\sum _{k}(c^{\dagger}_{k,a},c^{\dagger}_{k,b})\begin{pmatrix}
 0 & -t_{1}-t_{2}e^{-ik} \\
 -t_{1}-t_{2}e^{ik} & 0
@@ -151,7 +151,7 @@ V & =\sum ^{L-1}_{j=1}\left(-t'c^{\dagger}_{j,a}c_{j+1,a}-t'c^{\dagger}_{j,b}c_{
 \end{align}$$
 
 and set $\displaystyle{t_{1}=0,t_{2}\gg t'>0}$. the leading process coupling edges requires $(L-1)$ same-sublattice hops with $(L-2)$ virtual denominators, giving
-$$\delta' \sim C' \frac{t'^{\,L-1}}{t_2^{L-2}},\qquad \Delta E' \sim 2|\delta'|,$$
+$$\delta' \sim C' \frac{t'^{\,L}}{t_2^{L-1}},\qquad \Delta E' \sim 2|\delta'|,$$
 again vanish in thermodynamic limit $\displaystyle{L\to \infty}$ for fixed $t'/t_2<1$.
 
 # Heisenberg model
@@ -193,7 +193,7 @@ $$\begin{align}
 \ket{T_{-}} & =c_{1\downarrow}^{\dagger}c_{2\downarrow}^{\dagger}\ket{0} 
 \end{align}$$
 
-where $\displaystyle{\ket{S}}$ lies in the singlet subspace of total spin $\displaystyle{S=0}$, and $\displaystyle{\ket{T_{0}},\ket{T_{+}},\ket{T_{-}}}$ lie in the triplet subspace of total spin $\displaystyle{S=1}$. so if we introduce a perturbation that mixes the states, the singlet and triplet subspaces will not be mixed due to they have different spin
+where $\displaystyle{\ket{S}}$ lies in the singlet subspace of total spin $\displaystyle{S=0}$, and $\displaystyle{\ket{T_{0}},\ket{T_{+}},\ket{T_{-}}}$ lie in the triplet subspace of total spin $\displaystyle{S=1}$. so if we introduce a perturbation that mixes the states, the singlet and triplet subspaces will not be mixed due to their different spins
 
 for $U\gg t>0$ treat hopping as perturbation. Let
 $$V= -t \sum_s (c_{1s}^{\dagger} c_{2s} + c_{2s}^{\dagger} c_{1s}).$$
