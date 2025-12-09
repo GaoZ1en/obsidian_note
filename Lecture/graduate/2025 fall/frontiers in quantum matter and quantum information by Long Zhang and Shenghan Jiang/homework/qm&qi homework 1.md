@@ -81,6 +81,19 @@ $$\begin{align}
 H & =\sum _{k}E(k)\left(d_{k,+}^{\dagger}d_{k,+}-d_{k,-}^{\dagger}d_{k,-}\right)
 \end{align}$$
 
+---
+
+comment: actually this is a Bogoliubov transformation. define
+
+$$\begin{align}
+d_{k,+} & = \\
+d_{k,-}
+\end{align}$$
+
+
+
+---
+
 the ground state is obtained by filling all negative-energy states
 
 $$\begin{align}
