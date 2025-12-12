@@ -1,10 +1,21 @@
-# Quantum Matter & Information Cheat Sheet
-
-## 1. Basics & Math
-*   **Pauli Matrices**: $X=\begin{pmatrix}0&1\\1&0\end{pmatrix}, Y=\begin{pmatrix}0&-i\\i&0\end{pmatrix}, Z=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$.
+## preliminaries
+### A. Basics & Math 
+*   **Pauli Matrices**: $X=\begin{pmatrix}0&1\\1&0\end{pmatrix}, Y=\begin{pmatrix}0&-i\\i&0\end{pmatrix}, Z=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$. $\displaystyle{\exp\left(\frac{i}{2}\theta \vec{n}\cdot \vec{\sigma}\right)=\cos \frac{\theta}{2}I+i\sin \frac{\theta}{2}\vec{n}\cdot \vec{\sigma}}$
 *   **Fourier**: $c_k = \frac{1}{\sqrt{L}}\sum_j c_j e^{-ikj}, c_j = \frac{1}{\sqrt{L}}\sum_k c_k e^{ikj}$. $\sum_j e^{i(k-k')j} = L\delta_{kk'}$.
 *   **Perturbation**: $H_{\text{eff}} = P H_0 P + P V P - P V \frac{Q}{H_0-E_0} V P$.
     *   2nd order: $\Delta E = \sum_{n \neq 0} \frac{|\langle n|V|0\rangle|^2}{E_0 - E_n}$.
+
+### B. Bogoliubov Transformations
+*   **Fermionic (e.g., BCS, BdG)**: Mixes particles and holes.
+    *   Hamiltonian: $H = \sum_k \epsilon_k (c_k^\dagger c_k + c_{-k}^\dagger c_{-k}) + (\Delta c_k^\dagger c_{-k}^\dagger + h.c.)$.
+    *   Transform: $\gamma_k = u_k c_k - v_k c_{-k}^\dagger$.
+    *   Condition: $|u_k|^2 + |v_k|^2 = 1$ (Preserves CAR $\{ \gamma_k, \gamma_{k'}^\dagger \} = \delta_{kk'}$).
+    *   Coefficients: $|v_k|^2 = \frac{1}{2} (1 - \frac{\epsilon_k}{E_k})$, $E_k = \sqrt{\epsilon_k^2 + |\Delta|^2}$.
+*   **Bosonic (e.g., Superfluidity, Squeezed States)**:
+    *   Hamiltonian: $H = \omega a^\dagger a + \frac{V}{2} (a^\dagger a^\dagger + aa)$.
+    *   Transform: $b = u a + v a^\dagger$.
+    *   Condition: $|u|^2 - |v|^2 = 1$ (Preserves CCR $[b, b^\dagger] = 1$).
+    *   Result: Diagonalizes to $\Omega b^\dagger b$ with $\Omega = \sqrt{\omega^2 - V^2}$.
 
 ## 2. 1D Quantum Matter Models (Solutions)
 
@@ -64,7 +75,33 @@ $$ H = \sum_j [\frac{1}{2} \vec{S}_j \cdot \vec{S}_{j+1} + \frac{1}{6} (\vec{S}_
     *   **Edge States**: Free Spin-1/2 at each end.
     *   **String Order**: $\langle S^z_i e^{i\pi \sum_{k=i+1}^{j-1} S^z_k} S^z_j \rangle \neq 0$. (Hidden AFM order: $\uparrow 0 0 \downarrow 0 \uparrow \downarrow \dots$).
 
-## 3. Quantum Information & QEC
+## 3. Matrix Product States (MPS)
+*   **Ansatz**: $|\Psi\rangle = \sum_{\{s\}} \text{Tr}(A^{s_1} A^{s_2} \dots A^{s_N}) |s_1 s_2 \dots s_N\rangle$.
+    *   Physical index $s_i$ (dim $d$), Virtual index $\alpha, \beta$ (dim $D$, bond dimension).
+    *   Captures **Area Law** entanglement ($S \sim \text{const}$ for 1D gapped).
+*   **Transfer Matrix**: $T = \sum_s A^s \otimes (A^s)^*$.
+    *   Correlation function $\langle O_i O_j \rangle \sim (\lambda_2/\lambda_1)^{|i-j|}$.
+    *   Correlation length $\xi = -1 / \ln |\lambda_2/\lambda_1|$.
+*   **Symmetry & SPT**:
+    *   Global symmetry $U_g$: On tensor $A$, $\sum_{s'} (U_g)_{ss'} A^{s'} = e^{i\theta_g} V_g A^s V_g^\dagger$.
+    *   $V_g$ acts on virtual bond. Can be a **Projective Representation**: $V_g V_h = e^{i\omega(g,h)} V_{gh}$.
+    *   Non-trivial factor system $\omega$ $\implies$ SPT phase (e.g., AKLT has $V_g \in SU(2)$ for $SO(3)$ symmetry).
+
+## 4. Toric Code (2D Topological Order)
+$$ H = - \sum_v A_v - \sum_p B_p $$
+*   **Operators**: $A_v = \prod_{j \in \text{star}(v)} X_j$ (Vertex/Star), $B_p = \prod_{j \in \partial p} Z_j$ (Plaquette).
+*   **Ground State**: Stabilizer state $A_v |\psi\rangle = |\psi\rangle, B_p |\psi\rangle = |\psi\rangle$.
+    *   **Loop Condensation**: Equal superposition of all closed loop configurations (in $Z$ basis).
+*   **Excitations (Anyons)**:
+    *   $e$-particle: Violated $A_v$ (Vertex). Boson self-stats.
+    *   $m$-particle: Violated $B_p$ (Plaquette). Boson self-stats.
+    *   **Mutual Statistics**: Moving $e$ around $m$ gives phase $\pi$ (Semionic).
+    *   Bound state $\epsilon = e \times m$: Fermion.
+*   **Topological Properties**:
+    *   **Degeneracy**: $4^g$ on genus $g$ surface (Robust against local noise).
+    *   **Topological Entanglement Entropy**: $S_A = \alpha L - \gamma$, with $\gamma = \ln \mathcal{D} = \ln 2$.
+
+## 5. Quantum Information & QEC
 
 ### A. Channels & Kraus Operators
 *   **Definition**: $\mathcal{E}(\rho) = \text{Tr}_E [ U (\rho \otimes |0\rangle\langle 0|_E) U^\dagger ] = \sum_k M_k \rho M_k^\dagger$.

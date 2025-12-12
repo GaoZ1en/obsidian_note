@@ -173,6 +173,14 @@ $$\begin{align}
  & =\text{CZ}_{12}\ket{\psi _{1}} \otimes \ket{\psi _{2}} 
 \end{align}$$
 
+or we can denote the incoming state be $\displaystyle{\ket{\psi}=\sum _{ij}c_{ij}\ket{ij}}$, then
+
+$$\begin{align}
+\text{C-}Z_{12}\ket{\psi} & = \sum _{ij}c_{ij}\delta _{i 0}\ket{ij} -c_{ij}\delta _{i 1}\ket{ij}  \\
+ & = \sum _{ij}c_{ij}(\delta _{j 0}-\delta _{j 1})\ket{ij} \\
+ & =\text{C-}Z_{21}\ket{\psi} 
+\end{align}$$
+
 ## exersice 4.21
 
 verify the following circuit identity
