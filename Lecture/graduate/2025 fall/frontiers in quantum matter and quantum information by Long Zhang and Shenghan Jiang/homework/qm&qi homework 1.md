@@ -81,42 +81,6 @@ $$\begin{align}
 H & =\sum _{k}E(k)\left(d_{k,+}^{\dagger}d_{k,+}-d_{k,-}^{\dagger}d_{k,-}\right)
 \end{align}$$
 
----
-
-comment: actually this is a Bogoliubov transformation. define
-
-$$\begin{align}
-d_{k,+} & = \frac{1}{\sqrt{2}} (c_{k,a} + e^{-i\phi_k} c_{k,b}) \\
-d_{k,-} & = \frac{1}{\sqrt{2}} (c_{k,b} - e^{i\phi_k} c_{k,a})
-\end{align}$$
-
-This transformation diagonalizes the Hamiltonian. We can rewrite it in the matrix form:
-
-$$\begin{align}
-\begin{pmatrix}
-d_{k,+} \\
-d_{k,-}
-\end{pmatrix} & = \frac{1}{\sqrt{2}} \begin{pmatrix}
-1 & e^{-i\phi_k} \\
--e^{i\phi_k} & 1
-\end{pmatrix} \begin{pmatrix}
-c_{k,a} \\
-c_{k,b}
-\end{pmatrix}
-\end{align}$$
-
-Recalling the rotation operator $U = \exp(i \frac{\theta_k}{2} \vec{n}_k \cdot \sigma)$ with $\theta_k = \pi/2$ and $\vec{n}_k = (-\sin \phi_k, \cos \phi_k, 0)$, we have:
-
-$$\begin{align}
-U &= \cos\left(\frac{\pi}{4}\right) I + i \sin\left(\frac{\pi}{4}\right) (\vec{n}_k \cdot \sigma) \\
-&= \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} + \frac{i}{\sqrt{2}} \begin{pmatrix} 0 & -ie^{-i\phi_k} \\ ie^{i\phi_k} & 0 \end{pmatrix} \\
-&= \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & e^{-i\phi_k} \\ -e^{i\phi_k} & 1 \end{pmatrix}
-\end{align}$$
-
-which recovers the rotation form.
-
----
-
 the ground state is obtained by filling all negative-energy states
 
 $$\begin{align}
@@ -246,13 +210,6 @@ H_{\text{eff}} & =-PV \frac{1}{H_{0}}VP \\
 \end{align}$$
 
 where $\displaystyle{V_{ij}=-t_{ij}\sum _{s}\left(c_{is}^{\dagger}c_{js}+\text{h.c.}\right)}$, define $\displaystyle{\tilde{c}_{is}=c_{is}(1-n_{i\bar{s}}),\tilde{c}_{is}^{\dagger}=(1-n_{i\bar{s}})c_{is}^{\dagger}}$
-
-$$\begin{align}
-\tilde{c}_{is}=Pc_{is}P \\
-\tilde{c}_{is}^{\dagger}=Pc_{is}^{\dagger}P
-\end{align}$$
-
-then
 
 $$\begin{align}
 PV_{ij}^{2}P & =t_{ij}^{2}P\sum _{ss'}(\tilde{c}^{\dagger}_{is}\tilde{c}_{js}\tilde{c}_{js'}^{\dagger}\tilde{c}_{is'}+\tilde{c}^{\dagger}_{js}\tilde{c}_{is}\tilde{c}^{\dagger}_{is'}\tilde{c}_{js'})P \\

@@ -1,6 +1,6 @@
 ![[Attachments/Pasted image 20250823200744.png]]
 
-here we consider $\displaystyle{\mathrm{AdS}_{d+1}}$note that the Poincare horizons (null boundary) are also boundary of Poincare patch. note that the timelike boundary of the Poincare patch is conformal Minkowski
+here we consider $\displaystyle{\mathrm{AdS}_{d+1}}$. note that the Poincare horizons (null boundary) are also boundary of Poincare patch. note that the timelike boundary of the Poincare patch is conformal Minkowski
 
 $$\tag{1.1}\begin{align}
 \mathrm{d}s^{2} & =\frac{L^{2}}{z^{2}}(\mathrm{d}z^{2}-\mathrm{d}t^{2}+\mathrm{d}\vec{x}^{2}_{d-1})
