@@ -10,7 +10,7 @@
 3. dynamic black hole entropy, Wald, apparent horizon.
 4. 多看点儿网课...这边的课太垃圾了
 	1. [俄罗斯人的](https://teach-in.ru/course?categories=math&categories=physics)
-	2. 
+	2. w
 
 
 *应当搞清楚算的是什么量，而不是直接模仿别人的计算流程。*
