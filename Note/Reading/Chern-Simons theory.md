@@ -471,4 +471,3 @@ $$\begin{align}
 
 ## quantum mechanics on a symplectic quotient
 
-
