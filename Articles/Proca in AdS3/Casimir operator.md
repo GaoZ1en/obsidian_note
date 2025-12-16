@@ -111,3 +111,44 @@ $$\begin{align}
 \mathcal{L}_{\bar{\xi}_{1}}\phi _{n,\bar{n}} & =-\sqrt{ \bar{n}(\Delta+\bar{n}-1) }\phi _{n,\bar{n}-1} & \mathcal{L}_{\bar{\xi}_{1}}\phi _{n,\bar{n}}^{*} & =\sqrt{ (\bar{n}+1)(\Delta+\bar{n}) }\phi _{n,\bar{n}+1}^{*}
 \end{align}$$
 
+---
+
+now we will explicitly calculate the Casimirs acting on vector field $\displaystyle{A^{\mu}}$. we have
+
+$$\begin{align}
+\mathcal{C}A^{\mu} & =\left( \mathcal{L}_{\xi_{0}}^{2}-\frac{1}{2}\mathcal{L}_{\xi _{-1}}\mathcal{L}_{\xi_{1}}-\frac{1}{2}\mathcal{L}_{\xi_{1}}\mathcal{L}_{\xi _{-1}} \right)A^{\mu} \\
+ & =\mathcal{L}_{\xi_{0}}(\xi _{0}^{\nu}\nabla _{\nu}A^{\mu}-A^{\nu}\nabla _{\nu}\xi _{0}^{\mu})-\frac{1}{2}\mathcal{L}_{\xi _{-1}}(\xi _{1}^{\nu}\nabla _{\nu}A^{\mu}-A^{\nu}\nabla _{\nu}\xi _{1}^{\mu})-\frac{1}{2}\mathcal{L}_{\xi_{1}}(\xi _{-1}^{\nu}\nabla _{\nu}A^{\mu}-A^{\nu}\nabla _{\nu}\xi _{-1}^{\mu}) \\
+ & =\mathcal{L}_{\xi _{0}}(\xi _{0}^{\nu}\nabla _{\nu}A^{\mu})-\frac{1}{2}\mathcal{L}_{\xi _{-1}}(\xi _{1}^{\nu}\nabla _{\nu}A^{\mu})-\frac{1}{2}\mathcal{L}_{\xi _{1}}(\xi _{-1}^{\nu}\nabla _{\nu}A^{\mu}) \\
+ & -\mathcal{L}_{\xi _{0}}(A^{\nu}\nabla _{\nu}\xi _{0}^{\mu})+\frac{1}{2}\mathcal{L}_{\xi _{-1}}(A^{\nu}\nabla _{\nu}\xi _{1}^{\mu})+\frac{1}{2}\mathcal{L}_{\xi _{1}}(A^{\nu}\nabla _{\nu}\xi _{-1}^{\mu})
+\end{align}$$
+
+then
+
+$$\begin{align}
+ & \mathcal{L}_{\xi_{0}}(\xi _{0}^{\nu}\nabla _{\nu}A^{\mu})-\frac{1}{2}\mathcal{L}_{\xi _{-1}}(\xi _{1}^{\nu}\nabla _{\nu}A^{\mu})-\frac{1}{2}\mathcal{L}_{\xi _{1}}(\xi _{-1}^{\nu}\nabla _{\nu}A^{\mu}) \\
+= & \xi _{0}^{\rho}\nabla _{\rho}(\xi _{0}^{\nu}\nabla _{\nu}A^{\mu})-(\xi _{0}^{\nu}\nabla _{\nu}A^{\rho})\nabla _{\rho}\xi _{0}^{\mu} \\
+ & -\frac{1}{2}\xi _{-1}^{\rho}\nabla _{\rho}(\xi _{1}^{\nu}\nabla _{\nu}A^{\mu})+\frac{1}{2}(\xi _{1}^{\nu}\nabla _{\nu}A^{\rho})\nabla _{\rho}\xi _{-1}^{\mu} \\
+ & -\frac{1}{2}\xi _{1}^{\rho}\nabla _{\rho}(\xi _{-1}^{\nu}\nabla _{\nu}A^{\mu})+\frac{1}{2}(\xi _{-1}^{\nu}\nabla _{\nu}A^{\rho})\nabla _{\rho}\xi _{1}^{\mu} \\
+= & \xi _{0}^{\rho}\xi _{0}^{\nu}\nabla _{\rho}\nabla _{\nu}A^{\mu}+\xi ^{\rho}_{0}\nabla _{\rho}\xi ^{\nu}_{0}\nabla _{\nu}A^{\mu}-\xi_{0}^{\nu}\nabla _{\rho}\xi _{0}^{\mu}\nabla _{\nu}A^{\rho} \\
+ & -\frac{1}{2}\xi _{-1}^{\rho}\xi _{1}^{\nu}\nabla _{\rho}\nabla _{\nu}A^{\mu}-\frac{1}{2}\xi ^{\rho}_{-1}\nabla _{\rho}\xi _{1}^{\nu}\nabla _{\nu}A^{\mu}+\frac{1}{2}\xi ^{\nu}_{1}\nabla _{\rho}\xi _{-1}^{\mu}\nabla _{\nu}A^{\rho} \\
+ & -\frac{1}{2}\xi _{1}^{\rho}\xi _{-1}^{\nu}\nabla _{\rho}\nabla _{\nu}A^{\mu}-\frac{1}{2}\xi ^{\rho}_{1}\nabla _{\rho}\xi _{-1}^{\nu}\nabla _{\nu}A^{\mu}+\frac{1}{2}\xi ^{\nu}_{-1}\nabla _{\rho}\xi _{1}^{\mu}\nabla _{\nu}A^{\rho} \\
+= & -\frac{1}{4}\nabla ^{2}A^{\mu}+\varepsilon _{\rho ~\lambda}^{~~\mu}\left( \xi _{0}^{\nu}\xi _{0}^{\lambda}-\frac{1}{2}\xi _{1}^{\nu}\xi _{-1}^{\lambda}-\frac{1}{2}\xi _{-1}^{\nu}\xi _{1}^{\lambda} \right)\nabla _{\nu}A^{\rho} \\
+= & -\frac{1}{4}\nabla ^{2}A^{\mu}-\frac{1}{4}\varepsilon _{\rho ~\lambda}^{~~\mu} g^{\nu \lambda}\nabla _{\nu}A^{\rho} \\
+= & -\frac{1}{4}\nabla ^{2}A^{\mu}-\frac{1}{4}\varepsilon ^{\mu \nu}_{~~~\rho}\nabla _{\nu}A^{\rho}
+\end{align}$$
+
+here we use
+
+$$\begin{align}
+\xi _{0}^{\rho}\xi ^{\nu}_{0}-\frac{1}{2}\xi ^{\rho}_{-1}\xi ^{\nu}_{1}-\frac{1}{2}\xi ^{\rho}_{1}\xi ^{\nu}_{-1} & =-\frac{1}{4}g^{\rho \nu}
+\end{align}$$
+
+which can be derived from the explicit form of Killing vectors or Killing 
+
+$$\begin{align}
+\nabla _{\rho}g^{\rho \nu} & =0 \\
+\nabla _{\rho}\xi _{a}^{\rho} & =0, a=0,\pm 1 \\
+\nabla _{\mu}\xi _{a,\nu} & =-\varepsilon _{\mu \nu \rho}\xi _{a}^{\rho}
+\end{align}$$
+
+and the following are omitted...
