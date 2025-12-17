@@ -17,6 +17,28 @@
 
 pdfcpu 可以方便的处理pdf文件
 write a TUI app for pdfcpu
+
+**如何画杨图？**
+
+```tikz
+\begin{document}
+\def \youngdiagram{3,1}
+\begin{tikzpicture}[scale=0.6 ,
+box/.style={draw=black, thick, minimum size=6mm} 
+]
+\foreach \n [count=\y from 0] in \youngdiagram { 
+    \foreach \x in {0,...,\numexpr\n-1} {        
+        \draw[box] (\x, -\y) rectangle ++(1,1); 
+    }
+\node at (0.5,0.5) {1};
+\node at (1.5,0.5) {2};
+\node at (2.5,0.5) {3};
+\node at (0.5,-0.5) {4};
+}
+\end{tikzpicture}
+\end{document}
+```
+
 ## career
 
 1. 2-3years, master
