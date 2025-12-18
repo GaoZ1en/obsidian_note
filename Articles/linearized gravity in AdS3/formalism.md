@@ -203,7 +203,7 @@ $$\begin{align}
 take a trace, we have
 
 $$\begin{align}
-\implies -h +\frac{1}{2}\nabla ^{(0)2}h-\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu} & =0
+\implies 
 \end{align}$$
 
 plug it back to the eom, we get
@@ -224,3 +224,8 @@ the last term vanishes, leading to
 $$\begin{align}
 -h_{\mu \nu}+g^{(0)}_{\mu \nu}h-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu} & =0
 \end{align}$$
+
+$$\begin{align}
+
+\end{align}$$
+
