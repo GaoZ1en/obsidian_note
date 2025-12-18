@@ -107,30 +107,36 @@ g_{\mu \nu} & =2\xi _{-1}^{\mu}\xi _{1}^{\nu}+2\xi _{1}^{\mu}\xi _{-1}^{\nu}-4\x
 we have
 
 $$\begin{align}
-\mathcal{C}h_{\mu \nu} & =\dots \\
-\mathcal{\bar{C}}h_{\mu \nu} & =\dots
+\mathcal{C}h_{\mu \nu} & =-\frac{1}{4}\nabla ^{(0)2}h_{\mu \nu}+\frac{1}{2}\varepsilon ^{\rho \sigma}_{~~~\mu}\nabla ^{(0)}_{\sigma}h_{\rho \nu}+\frac{1}{2}\varepsilon ^{\rho \sigma}_{~~~\nu}\nabla ^{(0)}_{\sigma}h_{\mu \rho}-\frac{3}{2}h_{\mu \nu} \\
+\mathcal{\bar{C}}h_{\mu \nu} & =-\frac{1}{4}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}\varepsilon ^{\rho \sigma}_{~~~\mu}\nabla ^{(0)}_{\sigma}h_{\rho \nu}-\frac{1}{2}\varepsilon ^{\rho \sigma}_{~~~\nu}\nabla ^{(0)}_{\sigma}h_{\mu \rho}-\frac{3}{2}h_{\mu \nu}
 \end{align}$$
 
+thus the combination
 
 $$\begin{align}
-\mathcal{C}h_{\mu \nu} & =\mathcal{L}_{\xi _{0}}^{2}h_{\mu \nu}-\frac{1}{2}(\mathcal{L}_{\xi _{1}}\mathcal{L}_{\xi _{-1}}h_{\mu \nu}+\mathcal{L}_{\xi _{-1}}\mathcal{L}_{\xi _{1}}h_{\mu \nu}) \\
- & =\mathcal{L}_{\xi_{0}}(\xi _{0}^{\rho}\nabla _{\rho}^{(0)}h_{\mu \nu}+h_{\rho \nu}\nabla ^{(0)}_{\mu}\xi _{0}^{\rho}+h_{\mu \rho}\nabla ^{(0)}_{\nu}\xi _{0}^{\rho}) \\
- & -\frac{1}{2}\mathcal{L}_{\xi _{1}}(\xi _{-1}^{\rho}\nabla ^{(0)}_{\rho}h_{\mu \nu}+h_{\rho \nu}\nabla ^{(0)}_{\mu}\xi ^{\rho}_{-1}+h_{\mu \rho}\nabla ^{(0)}_{\nu}\xi ^{\rho}_{-1}) \\
- & -\frac{1}{2}\mathcal{L}_{\xi _{-1}}(\xi _{1}^{\rho}\nabla ^{(0)}_{\rho}h_{\mu \nu}+h_{\rho \nu}\nabla ^{(0)}_{\mu}\xi ^{\rho}_{1}+h_{\mu \rho}\nabla ^{(0)}_{\nu}\xi _{1}^{\rho})
+(\mathcal{C}+\mathcal{\bar{C}})h_{\mu \nu} & =-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}-3h_{\mu \nu} \\
+ & =-2h_{\mu \nu} \\
+(\mathcal{C}-\mathcal{\bar{C}})^{2}h_{\mu \nu} & =\varepsilon ^{\rho \sigma}_{~~~\mu}\nabla ^{(0)}_{\sigma}(\varepsilon ^{\alpha \beta}_{~~~\rho}\nabla ^{(0)}_{\beta}h_{\alpha \nu}+\varepsilon ^{\alpha \beta}_{~~~\nu}\nabla ^{(0)}_{\beta}h_{\rho \alpha})+\varepsilon ^{\rho \sigma}_{~~~\nu}\nabla ^{(0)}_{\sigma}(\varepsilon^{\alpha \beta}_{~~~\mu}\nabla ^{(0)}_{\beta}h_{\alpha \rho}+\varepsilon ^{\alpha \beta}_{~~~\rho}\nabla ^{(0)}_{\beta}h_{\mu \alpha}) \\
+ & =(g^{\sigma \alpha}\delta ^{\beta}_{\mu}-g^{\sigma \beta}\delta ^{\alpha}_{\mu})\nabla ^{(0)}_{\sigma}\nabla ^{(0)}_{\beta}h_{\alpha \nu}+\varepsilon ^{\rho \sigma}_{~~~\mu}\varepsilon ^{\alpha \beta}_{~~~\nu}\nabla ^{(0)}_{\sigma}\nabla ^{(0)}_{\beta}h_{\rho \alpha} \\
+ & +\varepsilon ^{\rho \sigma}_{~~~\nu}\varepsilon ^{\alpha \beta}_{~~~\mu}\nabla ^{(0)}_{\sigma}\nabla ^{(0)}_{\beta}h_{\alpha \rho}+(g^{\sigma \alpha}\delta ^{\beta}_{\nu}-g^{\sigma \beta}\delta ^{\alpha}_{\nu})\nabla ^{(0)}_{\sigma}\nabla ^{(0)}_{\beta}h_{\mu \alpha} \\
+ & =
 \end{align}$$
 
 $$\begin{align}
- & \quad\mathcal{L}_{\xi _{0}}(\xi _{0}^{\rho}\nabla ^{(0)}_{\rho}h_{\mu \nu})-\frac{1}{2}\mathcal{L}_{\xi _{1}}(\xi _{-1}^{\rho}\nabla ^{(0)}_{\rho}h_{\mu \nu})-\frac{1}{2}\mathcal{L}_{\xi _{-1}}(\xi _{1}^{\rho}\nabla ^{(0)}_{\rho}h_{\mu \nu}) \\
- & =\xi _{0}^{\sigma}\nabla ^{(0)}_{\sigma}(\xi _{0}^{\rho}\nabla ^{(0)}_{\rho}h_{\mu \nu})+\xi _{0}^{\rho}\nabla ^{(0)}_{\rho}h_{\sigma \nu}\nabla ^{(0)}_{\mu}\xi _{0}^{\sigma}+ \xi _{0}^{\rho}\nabla ^{(0)}_{\rho}h_{\mu \sigma}\nabla ^{(0)}_{\nu}\xi _{0}^{\sigma} \\
- & -\frac{1}{2}}\xi _{1}^{\sigma}\nabla ^{(0)}_{\sigma}(\xi _{-1}^{\rho}\nabla ^{(0)}_{\rho}h_{\mu \nu})-\frac{1}{2}\xi _{-1}^{\rho}\nabla ^{(0)}_{\rho}h_{\sigma \nu}\nabla ^{(0)}_{\mu}\xi _{1}^{\sigma}-\frac{1}{2}\xi _{-1}^{\rho}\nabla ^{(0)}_{\rho}h_{\mu \sigma}\nabla ^{(0)}_{\nu}\xi _{1}^{\sigma} \\
+2\nabla ^{(0)\alpha}\nabla ^{(0)}_{\mu}h_{\alpha \nu}-2\nabla ^{(0)2}h_{\mu \nu}
 \end{align}$$
-
-
-
-
-we can show that
 
 $$\begin{align}
-(\mathcal{D}^{+}\mathcal{D}^{-}h)_{\mu \nu}=0 & \implies (\mathcal{C}+\mathcal{\bar{C}}+2)h_{\mu \nu}=0
+ & \varepsilon ^{\rho\mu \nu}\nabla _{\nu}\varepsilon ^{\rho \alpha}_{~~~\beta}\nabla _{\alpha}A^{\beta} \\
+ & =(g^{\mu \alpha}\delta ^{\nu}_{\beta}-\delta ^{\mu}_{\beta}g^{\nu \alpha})\nabla _{\nu}\nabla _{\alpha}A^{\beta} \\
+ & =
 \end{align}$$
+---
 
+*notice that*
+
+*$$\begin{align}
+\varepsilon ^{\rho \mu \nu}\varepsilon ^{\rho \alpha}_{~~~\beta}=-(g^{\mu \alpha}\delta ^{\nu}_{\beta}-\delta ^{\mu}_{\beta}g^{\nu \alpha})
+\end{align}$$*
+
+*above calculation are not correct, need to redo it carefully.*
