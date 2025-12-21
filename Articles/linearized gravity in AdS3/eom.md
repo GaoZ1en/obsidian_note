@@ -156,23 +156,7 @@ $$\begin{align}
 \mathcal{L}_{\xi _{a}}h_{R,0}^{\mu \nu} & =0, a=0,\pm 1
 \end{align}$$
 
-the solutions are given by (may be incorrect, but the final result is correct)
-
-$$\begin{align}
-h_{L,0}^{\mu \nu} & =C_{L,0}\frac{e^{-i4(t-\phi)}}{r^{4}(1+r^{2})^{2}}\xi _{1}^{\mu}\xi _{1}^{\nu} \\
-h_{R,0}^{\mu \nu} & =C_{R,0}\frac{e^{-i4(t+\phi)}}{r^{4}(1+r^{2})^{2}}\bar{\xi}_{1}^{\mu}\bar{\xi}_{1}^{\nu}
-\end{align}$$
-
----
-
-at boundary $\displaystyle{r\to \infty}$, the dependence of $\displaystyle{\bar{\xi}_{a}}$ on $\displaystyle{t-\phi}$ and the dependence of $\displaystyle{\xi _{a}}$ on $\displaystyle{t+\phi}$ drop off, thus the left-moving mode only depends on $\displaystyle{t-\phi}$ at boundary and the right-moving mode only depends on $\displaystyle{t+\phi}$ at boundary, which gives that
-
-$$\begin{align}
-h_{L,0}^{\mu \nu} & \sim \partial _{\mu}\partial _{\nu}(e^{-2i(t-\phi)}) \\
-h_{R,0}^{\mu \nu} & \sim \partial _{\mu}\partial _{\nu}(e^{-2i(t+\phi)})
-\end{align}$$
-
-is this correct?
+the solutions are given by boundary gravitons. ... at the moment I don't have the explicit expressions for them. 
 
 ---
 
