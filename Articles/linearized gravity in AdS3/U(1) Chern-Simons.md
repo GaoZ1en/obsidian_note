@@ -25,12 +25,6 @@ $$\begin{align}
  & =\frac{1}{2}\varepsilon _{\mu}^{~\alpha \nu}F_{\alpha \nu}
 \end{align}$$
 
-the physical Hilbert space is then the quotient
-
-$$\begin{align}
-\mathcal{H} & =\frac{ \ker (\mathcal{D}^{2}) }{ \ker (\mathcal{D}) }
-\end{align}$$
-
 introduce Killing vectors in the global $\displaystyle{\mathrm{AdS}_{3}}$ coordinates $\displaystyle{(t,r,\phi)}$ as [[Articles/linearized gravity in AdS3/eom|eom]], we can decompose the solution space into irreducible representations of $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ algebra. 
 
 notice that
@@ -173,3 +167,34 @@ $$\begin{align}
 (\mathcal{D}^{+})_{\mu}^{~\nu}(\mathcal{D}^{-})_{\nu}^{~\rho}A_{\rho} & =0
 \end{align}$$
 
+we have already discussed this system in our present work. 
+
+---
+
+consider only the Chern-Simons theory
+
+$$\begin{align}
+S & =\frac{k}{4\pi}\int \mathrm{d}^{3}x \varepsilon ^{\mu \nu \rho}A_{\mu}\nabla_{\nu}A_{\rho}
+\end{align}$$
+
+take a variance
+
+$$\begin{align}
+\delta S & =\frac{k}{4\pi} \int \mathrm{d}^{3}x\varepsilon ^{\mu \nu \rho}\delta A_{\mu}\nabla _{\nu}A_{\rho}+\varepsilon ^{\mu \nu \rho}A_{\mu}\nabla _{\nu}\delta A_{\rho} \\
+ & =\frac{k}{4\pi}\int \mathrm{d}^{3}x\varepsilon ^{\mu \nu \rho}(\nabla _{\nu}A_{\rho}-\nabla _{\rho}A_{\nu})\delta A_{\mu}-\frac{k}{4\pi} \int \mathrm{d}^{3}x\varepsilon ^{\mu \nu \rho}\nabla _{\mu}(A_{\nu}\delta A_{\rho}) \\
+ & =\frac{k}{4\pi}\int \mathrm{d}^{3}x\varepsilon ^{\mu \nu \rho}F_{\nu \rho}\delta A_{\mu}-\frac{k}{4\pi}\int \mathrm{d}^{3}x\varepsilon ^{\mu \nu \rho}\nabla _{\mu}(A_{\nu}\delta A_{\rho})
+\end{align}$$
+
+the eom is given by
+
+$$\begin{align}
+\varepsilon ^{\mu \nu \rho}\nabla _{\nu}A_{\rho} & =0
+\end{align}$$
+
+which can be written as
+
+$$\begin{align}
+\mathcal{D}_{\mu}^{~\nu}A_{\nu} & =0
+\end{align}$$
+
+here $\displaystyle{\mathcal{D}}$ is the operator defined before. the solution is pure gauge, and physical dofs are related to large gauge transformations. c
