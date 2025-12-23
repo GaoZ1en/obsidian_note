@@ -324,7 +324,7 @@ the solutions for the eom are
 
 $$\begin{align}
 f_{+,0,0}^{\mu} & = \frac{e^{-i(\mu _{+}+2)t}}{(1+r^{2})^{(\mu _{+}+2)/2}}\xi _{1}^{\mu} \\
-f_{-,0,0}^{\mu} & = \frac{e^{-i(\mu _{-}+2)t}}{(1+r^{2})^{(\mu _{-}+2)/2}}\bar{\xi} _{1}^{\mu} \\
+f_{-,0,0}^{\mu} & = \frac{e^{-i(-\mu _{-}+2)t}}{(1+r^{2})^{(-\mu _{-}+2)/2}}\bar{\xi} _{1}^{\mu} \\
 \mu _{\pm} & = -\frac{k}{4\pi}\pm \sqrt{ \mu ^{2}+\frac{k^{2}}{16\pi ^{2}} }
 \end{align}$$
 
