@@ -480,7 +480,7 @@ the Noether charge corresponding to $\displaystyle{\xi_{0}}$ and $\displaystyle{
 
 $$\begin{align}
 H_{\xi_{0}} & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}\left(\frac{\mu}{2}+n\right)\left(a_{l,n,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}}\right)+\left(\frac{\mu+2}{2}+n\right)\left(a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}\right) \\
-H_{\bar{\xi}_{0}} & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}\left(\frac{\mu+2}{2}+\bar{n}\right)\left(a_{l,n,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}}\right)+\left(\frac{\mu}{2}+n+\bar{n}\right)\left(a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}\right) \\
+H_{\bar{\xi}_{0}} & =\frac{1}{2}\sum ^{\infty}_{n,\bar{n}=0}\left(\frac{\mu+2}{2}+\bar{n}\right)\left(a_{l,n,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+a^{\dagger}_{l,n,\bar{n}}a_{l,n,\bar{n}}\right)+\left(\frac{\mu}{2}+\bar{n}\right)\left(a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}a_{r,n,\bar{n}}\right) \\
 \end{align}$$
 
 and we get the Hamiltonian and angular momentum
@@ -573,10 +573,10 @@ z_{l/r,n,\bar{n}}(\beta) & =e^{\beta \Omega\, j_{l/r,n,\bar{n}}}z_{l/r,n,\bar{n}
 where $\displaystyle{j_{l,n,\bar{n}}=\bar{n}-n+1}$ and $\displaystyle{j_{r,n,\bar{n}}=\bar{n}-n-1}$. then the partition function becomes
 
 $$\begin{align}
-Z[\beta,\alpha] & =\prod ^{\infty}_{n,\bar{n}=0}\frac{1}{1-z^{j_{l,n,\bar{n}}}q^{\omega _{n,\bar{n}}}}\cdot \prod ^{\infty}_{n,\bar{n}=0}\frac{1}{1-z^{j_{r,n,\bar{n}}}q^{\omega _{n,\bar{n}}}}
+Z[\beta,\alpha] & =\prod ^{\infty}_{n,\bar{n}=0} \frac{1}{1-q^{\mu/2+1+n}\bar{q}^{\mu/2+\bar{n}}} \frac{1}{1-q^{\mu/2+n}\bar{q}^{\mu/2+1+\bar{n}}}
 \end{align}$$
 
-where $\displaystyle{q=e^{-\beta}}$ and $\displaystyle{z=e^{i\alpha}}$. this result matches the operator formalism result.
+where $\displaystyle{q=e^{-\beta+i\alpha}}$. this result matches the operator formalism result.
 
 # electric field in $\displaystyle{4d}$ Minkowski spacetime
 

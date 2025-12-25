@@ -106,55 +106,60 @@ $$\begin{align}
 \mathcal{L}_{\bar{\xi} _{1}}\psi _{\mu}^{(1,1)} & =0
 \end{align}$$
 
-this mode corresponds to a pure gauge solution $\displaystyle{\psi _{\mu}=\nabla _{\mu}\Lambda}$ where $\displaystyle{\Lambda}$ behaves as a scalar with dimension $\displaystyle{\Delta =h+\bar{h}=2}$. Since $\displaystyle{\Lambda \sim r^{-2}}$ near the boundary, the gauge parameter vanishes at infinity. thus, this mode corresponds to a proper gauge transformation and is considered trivial in the physical Hilbert space.
+this mode behaves as a free massless scalar and both $\displaystyle{\mathcal{L}_{\xi _{-1}}}$ and $\displaystyle{\mathcal{L}_{\bar{\xi} _{-1}}}$ can generate descendents.
 
 thus the Hilbert space is spanned by the descendents of $\displaystyle{\psi _{\mu}^{(1,0)}}$ and $\displaystyle{\psi _{\mu}^{(0,1)}}$. expand
 
 $$\begin{align}
-A_{\mu} & =\sum _{n=0}^{\infty}\left( a_{n}\psi _{\mu}^{(1,0,n)}+a_{n}^{\dagger}\psi _{\mu}^{(1,0,n)*}+b_{n}\psi _{\mu}^{(0,1,n)}+b_{n}^{\dagger}\psi _{\mu}^{(0,1,n)*} \right)
+A_{\mu} & =\sum _{n=0}^{\infty}\left( a_{n}\psi _{\mu}^{(1,0,n)}+a_{n}^{\dagger}\psi _{\mu}^{(1,0,n)*}+b_{n}\psi _{\mu}^{(0,1,n)}+b_{n}^{\dagger}\psi _{\mu}^{(0,1,n)*} \right) \\
+ & \sum _{n,\bar{n}=0}^{\infty}(c_{n,\bar{n}}\psi _{\mu}^{(1,1,n,\bar{n})}+c^{\dagger}_{n,\bar{n}}\psi _{\mu}^{(1,1,n,\bar{n})*})
 \end{align}$$
 
-where $\displaystyle{\psi _{\mu}^{(1,0,n)}\sim \mathcal{L}_{\xi_{-1}}^{n}\psi _{\mu}^{(1,0)}}$ and $\displaystyle{\psi _{\mu}^{(0,1,n)}\sim \mathcal{L}_{\bar{\xi} _{-1}}^{n}\psi _{\mu}^{(0,1)}}$. same old story of canonical quantization, we impose the commutation relation
+where $\displaystyle{\psi _{\mu}^{(1,0,n)}\sim \mathcal{L}_{\xi_{-1}}^{n}\psi _{\mu}^{(1,0)}}$, $\displaystyle{\psi _{\mu}^{(0,1,n)}\sim \mathcal{L}_{\bar{\xi} _{-1}}^{n}\psi _{\mu}^{(0,1)}}$ and $\displaystyle{\psi _{\mu}^{(1,1,n,\bar{n})}\sim \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\psi _{\mu}^{(1,1)}}$. same old story of canonical quantization, we impose the commutation relation
 
 $$\begin{align}
 [a_{n},a_{m}^{\dagger}] & =\delta _{nm} \\
 [b_{n},b_{m}^{\dagger}] & =\delta _{nm} \\
+[c_{n,\bar{n}},c_{m,\bar{m}}^{\dagger}] & =\delta _{nm}\delta _{\bar{n}\bar{m}}
 \end{align}$$
 
 the vacuum $\displaystyle{\ket{0}}$ is defined as
 
 $$\begin{align}
 a_{n}\ket{0} & =0 \\
-b_{n}\ket{0} & =0
+b_{n}\ket{0} & =0 \\
+c_{n,\bar{n}}\ket{0} & =0
 \end{align}$$
 
 the Noether charge associated with the $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ isometry can be constructed as (check needed)
 
 $$\begin{align}
-H_{\xi _{0}} & =\sum _{n=0}^{\infty}(n+1)a_{n}^{\dagger}a_{n} \\
-H_{\bar{\xi} _{0}} & =\sum _{n=0}^{\infty}(n+1)b_{n}^{\dagger}b_{n}
+H_{\xi_{0}} & =\sum ^{\infty}_{n=0}(n+1)b^{\dagger}_{n}b_{n}+\sum ^{\infty}_{n,\bar{n}=0}(n+1)c^{\dagger}_{n,\bar{n}}c_{n,\bar{n}} \\
+H_{\bar{\xi}_{0}} & =\sum ^{\infty}_{n=0}(n+1)a^{\dagger}_{n}a_{n}+\sum ^{\infty}_{n,\bar{n}=0}(\bar{n}+1)c^{\dagger}_{n,\bar{n}}c_{n,\bar{n}}
 \end{align}$$
 
 which can be rearranged into Hamiltonian and angular momentum operators
 
 $$\begin{align}
-H & =H_{\xi _{0}}+H_{\bar{\xi} _{0}}=\sum _{n=0}^{\infty}(n+1)(a_{n}^{\dagger}a_{n}+b_{n}^{\dagger}b_{n}) \\
-J & =H_{\bar{\xi} _{0}}-H_{\xi _{0}}=\sum _{n=0}^{\infty}(n+1)(b_{n}^{\dagger}b_{n}-a_{n}^{\dagger}a_{n})
+H & =H_{\xi _{0}}+H_{\bar{\xi}_{0}} \\
+ & =\sum ^{\infty}_{n=0}(1+n)\left(a^{\dagger}_{n}a_{n}+b^{\dagger}_{n}b_{n}\right)+\sum ^{\infty}_{n,\bar{n}=0}(2+n+\bar{n})c^{\dagger}_{n,\bar{n}}c_{n,\bar{n}} \\
+J & =H_{\bar{\xi}_{0}}-H_{\xi _{0}} \\
+ & =\sum ^{\infty}_{n=0}(n+1)(a^{\dagger}_{n}a_{n}-b^{\dagger}_{n}b_{n})+\sum ^{\infty}_{n,\bar{n}=0}(\bar{n}-n)c^{\dagger}_{n,\bar{n}}c_{n,\bar{n}}
 \end{align}$$
 
 normal ordering is imposed here to remove the infinite zero-point energy. the partition function
 
 $$\begin{align}
-\mathrm{Tr}(e^{-\beta H+i\alpha J}) & =\prod _{m=1}^{\infty}\frac{1}{|1-q^{m}|^{2}}
+\mathrm{Tr}(e^{-\beta H+i\alpha J}) & = \prod ^{\infty}_{n=1} \frac{1}{|1-q^{n}|^{2}} \prod ^{\infty}_{n,\bar{n}=0} \frac{1}{1-q^{n+1}\bar{q}^{\bar{n}+1}}
 \end{align}$$
 
 where $\displaystyle{q=e^{-\beta+i\alpha}}$. Xi Yin's result is
 
 $$\begin{align}
-\prod ^{\infty}_{\ell,\ell'=0} \frac{1-q^{\ell+1}\bar{q}^{\ell'+1}}{(1-q^{\ell+1}\bar{q}^{\ell'})(1-q^{\ell}\bar{q}^{\ell'+1})}
+\prod ^{\infty}_{\ell,\ell'=0} \frac{1-q^{\ell+1}\bar{q}^{\ell'+1}}{(1-q^{\ell+1}\bar{q}^{\ell'})(1-q^{\ell}\bar{q}^{\ell'+1})} & =\prod ^{\infty}_{\ell=1} \frac{1}{|1-q^{\ell}|^{2}}\prod ^{\infty}_{\ell,\ell'=0}  \frac{1}{1-q^{\ell+1}\bar{q}^{\ell'+1}}
 \end{align}$$
 
-I have no idea how to explain this difference... may be there are null states (gauge redundancies) in the Hilbert space...
+which matches our result precisely. 
 
 # Proca
 
@@ -222,9 +227,9 @@ $$\begin{align}
 \mathcal{D}_{\mu}^{~\nu}A_{\nu} & =0
 \end{align}$$
 
-here $\displaystyle{\mathcal{D}}$ is the operator defined before. the solution is pure gauge, and physical dofs are related to large gauge transformations. The choice of physical modes depends on the sign of $\displaystyle{k}$ due to unitarity requirements.
+here $\displaystyle{\mathcal{D}}$ is the operator defined before. the solution is pure gauge (one sector of boundary dofs of Maxwell theory), and physical dofs are related to large gauge transformations. the choice of physical modes depends on the sign of $\displaystyle{k}$ due to unitarity requirements.
 
-The Chern-Simons term induces a current algebra (Kac-Moody algebra) on the boundary. For the left-moving sector (corresponding to $\displaystyle{\psi_{\mu}^{(1,0)}}$), the commutation relations are:
+the Chern-Simons term induces a current algebra (Kac-Moody algebra) on the boundary. For the left-moving sector (corresponding to $\displaystyle{\psi_{\mu}^{(1,0)}}$), the commutation relations are:
 $$\begin{align}
 [J_n, J_m] = k n \delta_{n+m, 0}
 \end{align}$$
@@ -333,5 +338,12 @@ and their descendents
 $$\begin{align}
 f_{+,n,m}^{\mu} & =(\mathcal{L}_{\xi _{-1}})^{n}(\mathcal{L}_{\bar{\xi} _{-1}})^{m}f_{+,0,0}^{\mu}  \\
 f_{-,n,m}^{\mu} & =(\mathcal{L}_{\xi _{-1}})^{n}(\mathcal{L}_{\bar{\xi} _{-1}})^{m}f_{-,0,0}^{\mu}
+\end{align}$$
+
+the partition function is
+
+$$\begin{align}
+Z[\beta,\alpha] & =\mathrm{Tr}e^{-\beta H+i\alpha J} \\
+ & =\prod ^{\infty}_{n,\bar{n}=0} \frac{1}{(1-q^{\mu _{+}/2+1+n}\bar{q}^{\mu _{+}/2+\bar{n}})(1-q^{-\mu _{-}/2+n}\bar{q}^{-\mu _{-}/2+1+\bar{n}})}
 \end{align}$$
 
