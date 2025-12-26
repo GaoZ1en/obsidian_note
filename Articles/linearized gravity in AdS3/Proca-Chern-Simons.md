@@ -45,6 +45,57 @@ $$\begin{align}
  & =0
 \end{align}$$
 
+---
+
+here we choose the Lorentz gauge $\displaystyle{\nabla _{\mu}A^{\mu}=0}$, and we will show that this gauge can always be reached. consider a general solution of the eom $\displaystyle{A_{\mu}}$, then we perform a gauge transformation
+
+$$\begin{align}
+A_{\mu} &\to A_{\mu}+\nabla _{\mu}\lambda
+\end{align}$$
+
+then we require
+
+$$\begin{align}
+\nabla ^{2}\lambda & =-\nabla _{\mu}A^{\mu}
+\end{align}$$
+
+$$\begin{align}
+\nabla _{\mu}A^{\mu} & =\partial _{t}A^{t}+\dots \\
+ & =o(r^{-2})
+\end{align}$$
+
+this is a well-defined linear hyperbolic equation for $\displaystyle{\lambda}$, thus we can always find a solution at least locally by some theory of PDE... we take a more careful analysis below. 
+
+we expand $\displaystyle{\lambda}$ and $\displaystyle{-(1+r^{2})\nabla _{\mu}A^{\mu}}$ in terms of a complete set of modes $\displaystyle{\phi _{nm}(r,\phi)}$ as
+
+$$\begin{align}
+\lambda(x) & =\sum _{m\in \mathbb{Z}}\sum _{n\geqslant 0} a_{nm}(t)\phi _{nm}(r,\phi) \\
+(1+r^{2})\nabla _{\mu}A^{\mu} & =\sum _{m\in \mathbb{Z}} \sum _{n\geqslant 0} b_{nm}(t)\phi _{nm}(r,\phi)
+\end{align}$$
+
+here $\displaystyle{\phi _{nm}(r,\phi)}$ are the spatial wavefunctions satisfying
+
+$$\begin{align}
+(1+r^{2})\partial _{r}^{2}\phi _{nm}+\frac{1+3r^{2}}{r}\partial _{r}\phi _{nm}+\frac{1}{r^{2}}\partial _{\phi}^{2}\phi _{nm} & =-\frac{\omega _{nm}^{2}\phi _{nm}}{1+r^{2}} \\
+\implies \phi _{nm}(r,\phi) & =C_{nm}r^{m}(1+r^{2})^{-(2+m)/2}{}_{2}F_{1}\left( -n,2+m+n;2; \frac{1}{1+r^{2}} \right)e^{im\phi}
+\end{align}$$
+
+where $\displaystyle{\omega _{nm}^{2}=(2+m+2n)^{2}}$ and $\displaystyle{m\in \mathbb{Z},n\geqslant 0}$. and the normalization constants $\displaystyle{C_{nm}}$ are determined by
+
+$$\begin{align}
+\int _{\Sigma} \mathrm{d}^{2}x\frac{\sqrt{ \sigma }}{N} \phi _{n_{1}m_{1}}\phi _{n_{2}m_{2}}^{*} & =\delta _{n_{1}n_{2}}\delta _{m_{1}m_{2}}
+\end{align}$$
+
+then the equation for $\displaystyle{\lambda}$ becomes
+
+$$\begin{align}
+\implies \ddot{a}_{nm}(t)+\omega _{nm}^{2}a_{nm}(t) & =b_{nm}(t)
+\end{align}$$
+
+this is just a driven harmonic oscillator equation, which always has a solution for arbitrary driving force $\displaystyle{b_{nm}(t)}$...
+
+---
+
 which gives the eigenvalues of Casimir operators as
 
 $$\begin{align}
