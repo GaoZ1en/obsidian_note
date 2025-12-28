@@ -201,10 +201,9 @@ the Noether charges associated with $\displaystyle{\xi}$'s are given by
 
 $$\begin{align}
 H_{\xi} & =\frac{1}{2}\omega[h,\mathcal{L}_{\xi}h] \\
-\implies H_{\xi_{0}} & =\sum ^{\infty}_{n=0}(n+2)a_{R,n}^{\dagger}a_{R,n} \\
-H_{\bar{\xi}_{0}} & =\sum ^{\infty}_{n=0}(n+2)a_{L,n}^{\dagger}a_{L,n}
+\implies H_{\xi_{0}} & =\sum _{n=0}^{\infty}(n+2)a_{L,n}a^{\dagger}_{L,n}\\
+H_{\bar{\xi}_{0}} & =\sum ^{\infty}_{n=0}(n+2)a_{R,n}a^{\dagger}_{R,n}
 \end{align}$$
-
 
 thus the Hamiltonian and angular momentum are given by
 
@@ -212,7 +211,7 @@ $$\begin{align}
 H & =H_{\xi _{0}}+H_{\bar{\xi}_{0}}\\
  & =\sum ^{\infty}_{n=0}(n+2)(a_{L,n}a^{\dagger}_{L,n}+a_{R,n}a^{\dagger}_{R,n}) \\
 J & =H_{\bar{\xi} _{0}}-H_{\xi _{0}} \\
- & =\sum ^{\infty}_{n=0}(n+2)(a_{L,n}a^{\dagger}_{L,n}-a_{R,n}a^{\dagger}_{R,n})
+ & =\sum ^{\infty}_{n=0}(n+2)(-a_{L,n}a^{\dagger}_{L,n}+a_{R,n}a^{\dagger}_{R,n})
 \end{align}$$
 
 at quantum level, we lift $\displaystyle{a_{L/R,n}}$ and $\displaystyle{a^{\dagger}_{L/R,n}}$ to annihilation and creation operators that satisfies the following non-vanishing commutation relations
@@ -226,13 +225,14 @@ same old story. the Hamiltonian and angular momentum operators are given by
 
 $$\begin{align}
 H & =\sum ^{\infty}_{n=0}(n+2)(a^{\dagger}_{L,n}a_{L,n}+a^{\dagger}_{R,n}a_{R,n}) \\
-J & =\sum ^{\infty}_{n=0}(n+2)(a^{\dagger}_{L,n}a_{L,n}-a^{\dagger}_{R,n}a_{R,n})
+J & =\sum ^{\infty}_{n=0}(n+2)(-a^{\dagger}_{L,n}a_{L,n}+a^{\dagger}_{R,n}a_{R,n})
 \end{align}$$
 
 here we have picked normal ordering. the quantum partition function can be computed
 
 $$\begin{align}
 Z[\beta,\alpha] & =\mathrm{Tr}e^{-\beta H+i\alpha J} \\
+ & =\prod ^{\infty}_{m=0}\sum ^{\infty}_{n=0} q^{(m+2)n}\sum ^{\infty}_{\bar{n}=0}\bar{q}^{(m+2)\bar{n}} \\
  & =\prod ^{\infty}_{m=2}\frac{1}{|1-q^{m}|^{2}}
 \end{align}$$
 

@@ -59,11 +59,6 @@ $$\begin{align}
 \nabla ^{2}\lambda & =-\nabla _{\mu}A^{\mu}
 \end{align}$$
 
-$$\begin{align}
-\nabla _{\mu}A^{\mu} & =\partial _{t}A^{t}+\dots \\
- & =o(r^{-2})
-\end{align}$$
-
 this is a well-defined linear hyperbolic equation for $\displaystyle{\lambda}$, thus we can always find a solution at least locally by some theory of PDE... we take a more careful analysis below. 
 
 we expand $\displaystyle{\lambda}$ and $\displaystyle{-(1+r^{2})\nabla _{\mu}A^{\mu}}$ in terms of a complete set of modes $\displaystyle{\phi _{nm}(r,\phi)}$ as
@@ -92,7 +87,23 @@ $$\begin{align}
 \implies \ddot{a}_{nm}(t)+\omega _{nm}^{2}a_{nm}(t) & =b_{nm}(t)
 \end{align}$$
 
-this is just a driven harmonic oscillator equation, which always has a solution for arbitrary driving force $\displaystyle{b_{nm}(t)}$...
+this is just a driven harmonic oscillator equation, which always has a solution for arbitrary driving force $\displaystyle{b_{nm}(t)}$... or we can take another approach, that is, for a general configuration $\displaystyle{A}$ that satisfies the asymptotic boundary condition
+
+$$\begin{align}
+A_{t} & =o(1) \\
+A_{r} & =o(r^{-3}) \\
+A_{\phi} & =o(1) \\
+\implies \nabla _{\mu}A^{\mu} & =o(r^{-2})
+\end{align}$$
+
+and see the asymptotic behavior of guage transformed configuration. at boundary, we have
+
+$$\begin{align}
+r^{2}\partial _{r}^{2}\lambda+3r\partial _{r}\lambda & =Cr^{-2-\varepsilon} \\
+\lambda & \to r^{-2-\varepsilon}
+\end{align}$$
+
+thus the gauge transformed configuration still satisfies the asymptotic boundary condition.
 
 ---
 
