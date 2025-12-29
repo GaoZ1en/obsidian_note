@@ -102,7 +102,7 @@ $$\begin{align}
 by multiplying the first equation by $\bar{u}(p')\gamma ^{\mu}$ from the left and the second equation by $\gamma ^{\mu}u(p)$ from the right, and then adding the two resulting equations, we obtain
 
 $$\begin{align}
-\bar{u}(p')\gamma ^{\mu}(\gamma \cdot p-m)u(p) & =  \\
+\bar{u}(p')\gamma ^{\mu}(\gamma \cdot p-m)u(p) & = 0 \\
 \bar{u}(p')(\gamma \cdot p'-m)\gamma ^{\mu}u(p) & =0
 \end{align}$$
 
@@ -114,4 +114,3 @@ $$\begin{align}
 \end{align}$$
 
 which leads to the desired Gordon identity after dividing both sides by $2m$.
-

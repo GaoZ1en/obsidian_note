@@ -43,7 +43,7 @@ in the case of $\displaystyle{d=3}$, we have
 
 $$\tag{2.3}
 \begin{align}
-2\Gamma ^{t}_{~tr} & =\frac{r}{1+r ^{2}} \\
+\Gamma ^{t}_{~tr} & =\frac{r}{1+r ^{2}} \\
 \Gamma ^{r}_{~tt} & =r(1+r ^{2}) \\
 \Gamma ^{r}_{~r r} & =-\frac{r}{1+r ^{2}} \\
 \Gamma ^{r}_{~\phi \phi} & =-r (1+r ^{2}) \\
