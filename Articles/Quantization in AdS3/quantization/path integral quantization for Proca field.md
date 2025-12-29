@@ -163,7 +163,7 @@ H & =\int \mathrm{d}^{3}x(\pi _{i}\dot{A}^{i}[\pi _{i}]-L_{\mathrm{eff}}[A^{i},\
 \end{align}
 $$
 
-after a similar procedure as [[Articles/quantization/path integral quantization for constrained system]],
+after a similar procedure as [[Articles/Quantization in AdS3/quantization/path integral quantization for constrained system]],
 
 $$\tag{3.4}
 \begin{align}

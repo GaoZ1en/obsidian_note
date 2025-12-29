@@ -1,4 +1,4 @@
-in [[Articles/thermodynamics of scalar in ads/scalar in AdS and flat spacetime|scalar in AdS and flat spacetime]] we have already got the partition function of a free scalar in $\displaystyle{\mathrm{AdS}_{d+1}}$
+in [[Articles/Quantization in AdS3/thermodynamics of scalar in ads/scalar in AdS and flat spacetime|scalar in AdS and flat spacetime]] we have already got the partition function of a free scalar in $\displaystyle{\mathrm{AdS}_{d+1}}$
 
 $$\begin{align}
 \ln Z & =\sum ^{\infty}_{n=0}\sum ^{\infty}_{\ell=0} \frac{(2\ell+d-2)(\ell+d-3)!}{\ell!(d-2)!} \ln(1-e^{-\beta(\Delta+\ell+2n)}) \\

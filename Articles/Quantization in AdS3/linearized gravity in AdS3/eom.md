@@ -238,7 +238,7 @@ Z[\beta,\alpha] & =\mathrm{Tr}e^{-\beta H+i\alpha J} \\
 
 here we have introduced the moduli $\displaystyle{\tau =\frac{1}{2\pi}(\alpha+i\beta)}$, and $\displaystyle{q=e^{2\pi i\tau}}$. 
 
-and by the same procudure in [[Articles/Proca in AdS3/coherent state path integral|coherent state path integral]], we can recover this result. [Xi Yin's result](https://arxiv.org/abs/0804.1773) reads
+and by the same procudure in [[Articles/Quantization in AdS3/Proca in AdS3/coherent state path integral|coherent state path integral]], we can recover this result. [Xi Yin's result](https://arxiv.org/abs/0804.1773) reads
 
 $$\begin{align}
 Z(\tau,\tau) & =\prod ^{\infty}_{m=2} \frac{1}{|1-q^{m}|^{2}}

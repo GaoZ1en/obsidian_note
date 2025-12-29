@@ -27,7 +27,7 @@ $$\begin{align}
  & =\frac{1}{2}\varepsilon _{\mu}^{~\alpha \nu}F_{\alpha \nu}
 \end{align}$$
 
-introduce Killing vectors in the global $\displaystyle{\mathrm{AdS}_{3}}$ coordinates $\displaystyle{(t,r,\phi)}$ as [[Articles/linearized gravity in AdS3/eom|eom]], we can decompose the solution space into irreducible representations of $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ algebra. 
+introduce Killing vectors in the global $\displaystyle{\mathrm{AdS}_{3}}$ coordinates $\displaystyle{(t,r,\phi)}$ as [[Articles/Quantization in AdS3/linearized gravity in AdS3/eom|eom]], we can decompose the solution space into irreducible representations of $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ algebra. 
 
 notice that
 
