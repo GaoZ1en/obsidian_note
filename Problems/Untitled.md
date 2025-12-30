@@ -3,6 +3,5 @@
 2. covariant phase space formalism and 1-form symmetry...
 	1. 如何反应流形拓扑结构?
 3. Liouville理论共形对称性与守恒荷
-4. Weyl law?
-5. heat kernel
-6. 
+4. heat kernel
+5. 
