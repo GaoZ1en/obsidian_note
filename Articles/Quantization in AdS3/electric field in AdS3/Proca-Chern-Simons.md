@@ -100,7 +100,7 @@ and see the asymptotic behavior of guage transformed configuration. at boundary,
 
 $$\begin{align}
 r^{2}\partial _{r}^{2}\lambda+3r\partial _{r}\lambda & =Cr^{-2-\varepsilon} \\
-\lambda & \to \mathcal{O}(r^{-2})+\mathcal{O}(r^{-2}\log r)
+\lambda & \to \mathcal{O}(r^{-1})+\mathcal{O}(r^{-1}\log r)
 \end{align}$$
 
 the gauge transformed configuration violates the asymptotic boundary condition, however, still remains the variation principle well-defined. so we can safely choose the Lorentz gauge without loss of generality.

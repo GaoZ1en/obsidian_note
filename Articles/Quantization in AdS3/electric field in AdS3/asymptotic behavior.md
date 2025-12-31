@@ -52,15 +52,15 @@ which is finite.
 if we choose another asymptotic boundary condition of $\displaystyle{A}$ as
 
 $$\begin{align}
-A_{t}\sim A_{\phi} & =\mathcal{O}(r^{0}\log r) & A_{r} & =\mathcal{O}(r^{-3}\log r) \\
-A^{t}\sim A^{\phi} & =\mathcal{O}(r^{-2}\log r) & A^{r} & =\mathcal{O}(r^{-1}\log r)
+A_{t}\sim A_{\phi} & =\mathcal{O}(r^{0}) & A_{r} & =\mathcal{O}(r^{-3}\log r) \\
+A^{t}\sim A^{\phi} & =\mathcal{O}(r^{-2}) & A^{r} & =\mathcal{O}(r^{-1}\log r)
 \end{align}$$
 
 thus
 
 $$\begin{align}
-F_{tr}\sim F_{r\phi} & =\mathcal{O}(r^{-1}\log r) & F_{t\phi} & =\mathcal{O}(\log r) \\
-F^{tr}\sim F^{r\phi} & =\mathcal{O}(r^{-1}\log r) & F^{t\phi} & =\mathcal{O}(r^{-4}\log r)
+F_{tr} \sim F_{r\phi} & =\mathcal{O}(r^{0}), & F_{t\phi} & =\mathcal{O}(r^{0}) \\
+F^{tr}\sim F^{r\phi} & =\mathcal{O}(r^{0}), & F^{t\phi} & =\mathcal{O}(r^{-4})
 \end{align}$$
 
 the symplectic potential
@@ -68,9 +68,8 @@ the symplectic potential
 $$\begin{align}
 \theta & =\int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}\delta A_{\nu} \\
  & =\int ^{\infty}_{0}\mathrm{d}r \int ^{2\pi}_{0}\mathrm{d}\phi \frac{r}{1+r^{2}}(F^{tr}\delta A_{r}+F^{t\phi}\delta A_{\phi}) \\
- & =\int ^{\infty}_{0} \mathrm{d}r \int ^{2\pi}_{0} \mathrm{d}\phi  \frac{1}{r}(\mathcal{O}(r^{-1}\log r)\mathcal{O}(r^{-3}\log r)+\mathcal{O}(r^{-4}\log r)\mathcal{O}(r^{0}\log r)) \\
- & \sim \int ^{\infty} \mathrm{d}r \frac{\log ^{2}r}{r^{5}}
+ & =\int ^{\infty}_{0} \mathrm{d}r \int ^{2\pi}_{0} \mathrm{d}\phi  \frac{1}{r}(\mathcal{O}(r^{0})\mathcal{O}(r^{-3}\log r)+\mathcal{O}(r^{-4})\mathcal{O}(r^{0})) \\
+ & \sim \int ^{\infty} \mathrm{d}r \frac{\log r}{r^{4}}
 \end{align}$$
 
 which is also finite.
-

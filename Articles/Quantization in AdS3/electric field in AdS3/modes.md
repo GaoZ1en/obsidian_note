@@ -133,4 +133,4 @@ Z[\beta,\Omega] & =\mathrm{Tr}e^{-\beta H+i\alpha J} \\
  & =\prod ^{\infty}_{\ell,\bar{\ell}=0} \frac{1-q^{\ell+1}\bar{q}^{\bar{\ell}+1}}{(1-q^{\ell+1}\bar{q}^{\bar{\ell}})(1-q^{\ell}\bar{q}^{\bar{\ell}+1})}
 \end{align}$$
 
-here $\displaystyle{q=e^{-\beta +i\alpha}}$ and $\displaystyle{\bar{q}=e^{-\beta -i\alpha}}$. this result is consistent with Xi
+here $\displaystyle{q=e^{-\beta +i\alpha}}$ and $\displaystyle{\bar{q}=e^{-\beta -i\alpha}}$. this result is consistent with Xi Yin's result.
