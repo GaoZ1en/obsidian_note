@@ -100,10 +100,10 @@ and see the asymptotic behavior of guage transformed configuration. at boundary,
 
 $$\begin{align}
 r^{2}\partial _{r}^{2}\lambda+3r\partial _{r}\lambda & =Cr^{-2-\varepsilon} \\
-\lambda & \to r^{-2-\varepsilon}
+\lambda & \to \mathcal{O}(r^{-2})+\mathcal{O}(r^{-2}\log r)
 \end{align}$$
 
-thus the gauge transformed configuration still satisfies the asymptotic boundary condition.
+the gauge transformed configuration violates the asymptotic boundary condition, however, still remains the variation principle well-defined. so we can safely choose the Lorentz gauge without loss of generality.
 
 ---
 
@@ -121,78 +121,47 @@ $$\begin{align}
 \mathcal{\bar{C}}\ket{\psi} & =\bar{h}(\bar{h}-1)\ket{\psi}=0
 \end{align}$$
 
-which gives $\displaystyle{(h,\bar{h})=(0,0),(0,1),(1,0),(1,1)}$. we discuss them one by one:
-1. for $\displaystyle{(h,\bar{h})=(0,0)}$, we have
+which gives $\displaystyle{(h,\bar{h})=(0,0),(0,1),(1,0),(1,1)}$. see [[Articles/Quantization in AdS3/electric field in AdS3/modes|modes]], the solutions corresponding to these representations are as follows:
+
+1. for $\displaystyle{(h,\bar{h})=(0,0)}$, we have $\displaystyle{\psi _{(0,0)}^{\mu}=0}$, which is the trivial vacuum solution.
+2. for $\displaystyle{(h,\bar{h})=(1,0)}$, we have $\displaystyle{\psi _{(1,0)}^{\mu}= \frac{e^{-2it}}{1+r^{2}}\bar{\xi}^{\mu}_{1}}$, and its descendants $\displaystyle{\mathcal{L}_{\xi _{-1}}^{n}\psi _{(1,0)}^{\mu}}$, which are topologically non-trivial vacua solutions
+3. for $\displaystyle{(h,\bar{h})=(0,1)}$, we have $\displaystyle{\psi ^{\mu}_{(0,1)}=\frac{e^{-2it}}{1+r^{2}}\xi _{1}^{\mu}}$, and its descendants $\displaystyle{\mathcal{L}_{\bar{\xi} _{-1}}^{n}\psi _{(0,1)}^{\mu}}$, which are topologically non-trivial vacua solutions
+4. for $\displaystyle{(h,\bar{h})=(1,1)}$, we have $\displaystyle{\psi ^{\mu}_{(1,1)}= \frac{e^{-4it}}{(1+r^{2})^{2}}(\alpha \xi _{1}^{\mu}+\beta \bar{\xi}^{\mu} _{1})}$, and its descendants $\displaystyle{\mathcal{L}_{\xi _{-1}}^{k}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{k}}\psi _{(1,1)}^{\mu}}$. the choice of $\displaystyle{\alpha}$ and $\displaystyle{\beta}$ are actually equivalent and related by a gauge transformation.
+
+thus the Hilbert space is spanned by $\displaystyle{\psi _{(1,1)}^{\mu}}$ and its descendants that defined under the background of $\displaystyle{\psi _{(0,0)}^{\mu}}$, $\displaystyle{\psi _{(1,0)}^{\mu}}$, $\displaystyle{\psi _{(0,1)}^{\mu}}$ and their descendants, i.e., define
 
 $$\begin{align}
-\mathcal{L}_{\xi _{a}}\psi _{\mu}^{(0,0)} & =0 \\
-\mathcal{L}_{\bar{\xi}_{a}}\psi _{\mu}^{(0,0)} & =0
+\psi _{n,k,\bar{k}}^{\mu} & =\mathcal{L}_{\xi _{-1}}^{k}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{k}}\psi _{(1,1)}^{\mu}+\psi_{n}^{\mu} \\
+\psi _{n}^{\mu} & =\begin{cases}
+0 & n=0 \\
+\mathcal{L}_{\xi _{-1}}^{n-1}\psi _{(1,0)}^{\mu} & n\geqslant 1 \\
+\mathcal{L}_{\bar{\xi}_{-1}}^{|n-1|}\psi _{(0,1)}^{\mu} & n\leqslant -1
+\end{cases}
 \end{align}$$
 
-the only solution is
+we have
 
 $$\begin{align}
-\psi _{\mu}^{(0,0)} & =0
+A^{\mu} & =\sum ^{\infty}_{n=-\infty}\sum ^{\infty}_{k,\bar{k}=0} \left(a_{n,k,\bar{k}}\psi ^{\mu}_{n,k,\bar{k}}+a^{\dagger}_{n,k,\bar{k}}\psi ^{*\mu}_{n,k,\bar{k}}\right)
 \end{align}$$
 
-which means this state is vacuum. 
-
-2. for $\displaystyle{(h,\bar{h})=(1,0)}$ or $\displaystyle{(0,1)}$, we have
+same old story of canonical quantization, we impose the commutation relation
 
 $$\begin{align}
-\mathcal{L}_{\xi _{0}}\psi _{\mu}^{(1,0)} & =-i\psi _{\mu}^{(1,0)} \\
-\mathcal{L}_{\xi _{1}}\psi _{\mu}^{(1,0)} & =0 \\
-\mathcal{L}_{\bar{\xi}_{a}}\psi _{\mu}^{(1,0)} & =0, \quad a=0, \pm 1
+[a_{n,k,\bar{k}},a_{n',k',\bar{k}'}] & =\delta _{n,n'}\delta _{k,k'}\delta _{\bar{k},\bar{k}'}
 \end{align}$$
 
-3. for $\displaystyle{(h,\bar{h})=(1,1)}$, we have
+the vacua are different from usual case. here we have a sequence of vacua $\displaystyle{\ket{\Omega _{n}}}$ defined as
 
 $$\begin{align}
-\mathcal{L}_{\xi _{0}}\psi _{\mu}^{(1,1)} & =-i\psi _{\mu}^{(1,1)} \\
-\mathcal{L}_{\xi _{1}}\psi _{\mu}^{(1,1)} & =0 \\
-\mathcal{L}_{\bar{\xi} _{0}}\psi _{\mu}^{(1,1)} & =-i\psi _{\mu}^{(1,1)} \\
-\mathcal{L}_{\bar{\xi} _{1}}\psi _{\mu}^{(1,1)} & =0
+a_{n,k,\bar{k}}\ket{\Omega _{n}} =0,\quad \forall n,k,\bar{k}
 \end{align}$$
 
-this mode behaves as a free massless scalar and both $\displaystyle{\mathcal{L}_{\xi _{-1}}}$ and $\displaystyle{\mathcal{L}_{\bar{\xi} _{-1}}}$ can generate descendents.
-
-thus the Hilbert space is spanned by the descendents of $\displaystyle{\psi _{\mu}^{(1,0)}}$ and $\displaystyle{\psi _{\mu}^{(0,1)}}$. expand
+the Noether charge associated with the $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ isometry can be constructed as
 
 $$\begin{align}
-A_{\mu} & =\sum _{n=0}^{\infty}\left( a_{n}\psi _{\mu}^{(1,0,n)}+a_{n}^{\dagger}\psi _{\mu}^{(1,0,n)*}+b_{n}\psi _{\mu}^{(0,1,n)}+b_{n}^{\dagger}\psi _{\mu}^{(0,1,n)*} \right) \\
- & \sum _{n,\bar{n}=0}^{\infty}(c_{n,\bar{n}}\psi _{\mu}^{(1,1,n,\bar{n})}+c^{\dagger}_{n,\bar{n}}\psi _{\mu}^{(1,1,n,\bar{n})*})
-\end{align}$$
-
-where $\displaystyle{\psi _{\mu}^{(1,0,n)}\sim \mathcal{L}_{\xi_{-1}}^{n}\psi _{\mu}^{(1,0)}}$, $\displaystyle{\psi _{\mu}^{(0,1,n)}\sim \mathcal{L}_{\bar{\xi} _{-1}}^{n}\psi _{\mu}^{(0,1)}}$ and $\displaystyle{\psi _{\mu}^{(1,1,n,\bar{n})}\sim \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\psi _{\mu}^{(1,1)}}$. same old story of canonical quantization, we impose the commutation relation
-
-$$\begin{align}
-[a_{n},a_{m}^{\dagger}] & =\delta _{nm} \\
-[b_{n},b_{m}^{\dagger}] & =\delta _{nm} \\
-[c_{n,\bar{n}},c_{m,\bar{m}}^{\dagger}] & =\delta _{nm}\delta _{\bar{n}\bar{m}}
-\end{align}$$
-
-the vacuum $\displaystyle{\ket{0}}$ is defined as
-
-$$\begin{align}
-a_{n}\ket{0} & =0 \\
-b_{n}\ket{0} & =0 \\
-c_{n,\bar{n}}\ket{0} & =0
-\end{align}$$
-
-the Noether charge associated with the $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ isometry can be constructed as (check needed)
-
-$$\begin{align}
-H_{\xi_{0}} & =\sum ^{\infty}_{n=0}(n+1)b^{\dagger}_{n}b_{n}+\sum ^{\infty}_{n,\bar{n}=0}(n+1)c^{\dagger}_{n,\bar{n}}c_{n,\bar{n}} \\
-H_{\bar{\xi}_{0}} & =\sum ^{\infty}_{n=0}(n+1)a^{\dagger}_{n}a_{n}+\sum ^{\infty}_{n,\bar{n}=0}(\bar{n}+1)c^{\dagger}_{n,\bar{n}}c_{n,\bar{n}}
-\end{align}$$
-
-which can be rearranged into Hamiltonian and angular momentum operators
-
-$$\begin{align}
-H & =H_{\xi _{0}}+H_{\bar{\xi}_{0}} \\
- & =\sum ^{\infty}_{n=0}(1+n)\left(a^{\dagger}_{n}a_{n}+b^{\dagger}_{n}b_{n}\right)+\sum ^{\infty}_{n,\bar{n}=0}(2+n+\bar{n})c^{\dagger}_{n,\bar{n}}c_{n,\bar{n}} \\
-J & =H_{\bar{\xi}_{0}}-H_{\xi _{0}} \\
- & =\sum ^{\infty}_{n=0}(n+1)(a^{\dagger}_{n}a_{n}-b^{\dagger}_{n}b_{n})+\sum ^{\infty}_{n,\bar{n}=0}(\bar{n}-n)c^{\dagger}_{n,\bar{n}}c_{n,\bar{n}}
+H_{\xi_{0}} & =\sum ^{\infty}_{n=1} \sum ^{\infty}_{k,\bar{k}=0} (1+k+n)a^{\dagger}_{n,k,\bar{k}}a_{n,k,\bar{k}}+\sum ^{0}_{n=-\infty} \sum ^{\infty}_{k,\bar{k}=0} (1+k)a^{\dagger}_{n,k,\bar{k}}a_{n,k,\bar{k}} \\
+H_{\bar{\xi}_{0}} & =\sum ^{\infty}_{n=0}\sum ^{\infty}_{k,\bar{k}=0}(1+\bar{k})a^{\dagger}_{n,k,\bar{k}}a_{n,k,\bar{k}}+\sum ^{-1}_{n=-\infty}\sum ^{\infty}_{k,\bar{k}=0}(1+\bar{k}+n)a^{\dagger}_{n,k,\bar{k}}a_{n,k,\bar{k}}
 \end{align}$$
 
 normal ordering is imposed here to remove the infinite zero-point energy. the partition function

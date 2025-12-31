@@ -1,7 +1,6 @@
-in [[Articles/Quantization in AdS3/electric field in AdS3/Proca-Chern-Simons|Proca-Chern-Simons]] we have already known that the normal modes form $\displaystyle{(1,0)}$, $\displaystyle{(0,1)}$ and $\displaystyle{(1,1)}$ representation of $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ of global $\displaystyle{\mathrm{AdS}_{3}}$. in this file we will derive the explicit form of these states, at least the highest weight modes $\displaystyle{\psi _{(1,0)}^{\mu}}$, $\displaystyle{\psi _{(0,1)}^{\mu}}$ and $\displaystyle{\psi _{(1,1)}^{\mu}}$.
+in [[Articles/Quantization in AdS3/electric field in AdS3/Proca-Chern-Simons|Proca-Chern-Simons]] we have already known that the normal modes form $\displaystyle{(0,0)}$(trivial vacuum), $\displaystyle{(1,0)}$, $\displaystyle{(0,1)}$ and $\displaystyle{(1,1)}$ representation of $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ of global $\displaystyle{\mathrm{AdS}_{3}}$. in this file we will derive the explicit form of these states, at least the highest weight modes $\displaystyle{\psi _{(1,0)}^{\mu}}$, $\displaystyle{\psi _{(0,1)}^{\mu}}$ and $\displaystyle{\psi _{(1,1)}^{\mu}}$. normalization constants are ommited here for simplicity
 
 we first write down the Killing vectors
-
 
 $$\begin{align}
 \xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
@@ -43,6 +42,17 @@ $$\begin{align}
 \mathcal{L}_{\bar{\xi}_{-1}}\psi ^{\phi} & =\frac{i}{2}e^{-i(\omega+1)t}e^{i(m-1)\phi}(1+r^{2})^{1/2}\left(\frac{1}{r}f^{t}-\frac{i}{r^{2}(1+r^{2})}f^{r}+\partial _{r}f^{\phi}-\frac{(\omega-m-1)r^{2}-(m+1)}{r(1+r^{2})}f^{\phi}\right)
 \end{align}$$
 
+first we consider the $\displaystyle{(0,0)}$ sector. the highest weight conditions are
+
+$$\begin{align}
+\mathcal{L}_{\xi _{0}}\psi _{(0,0)}^{\mu} & =0 \\
+\mathcal{L}_{\bar{\xi}_{0}}\psi _{(0,0)}^{\mu} & =0 \\
+\mathcal{L}_{\xi _{1}}\psi _{(0,0)}^{\mu} & =0 \\
+\mathcal{L}_{\bar{\xi}_{1}}\psi _{(0,0)}^{\mu} & =0
+\end{align}$$
+
+which leads to the trivial solution $\displaystyle{\psi _{(0,0)}^{\mu}=0}$
+
 for $\displaystyle{(1,0)}$ sector, we have the following highest weight conditions:
 
 $$\begin{align}
@@ -54,10 +64,12 @@ $$\begin{align}
 which leads to the solution
 
 $$\begin{align}
-\psi _{(1,0)}^{\mu} & =C_{(1,0)}\frac{e^{-2it}}{(1+r^{2})}\bar{\xi}_{1}^{\mu}
+\psi _{(1,0)}^{\mu} & =\frac{e^{-2it}}{(1+r^{2})}\bar{\xi}_{1}^{\mu}
 \end{align}$$
 
-here $\displaystyle{C_{(1,0)}}$ is the normalization constant. similarly, for $\displaystyle{(0,1)}$ sector, we only need to change $\displaystyle{t+\phi}$ to $\displaystyle{t-\phi}$ and $\displaystyle{t-\phi}$ to $\displaystyle{t+\phi}$ in the above solution, we have
+they are related to large gauge transformations that do not vanish at infinity. so they play a role as topologically non-trivial vacuum configurations.
+
+similarly, for $\displaystyle{(0,1)}$ sector, we only need to change $\displaystyle{t+\phi}$ to $\displaystyle{t-\phi}$ and $\displaystyle{t-\phi}$ to $\displaystyle{t+\phi}$ in the above solution, we have
 
 $$\begin{align}
 \psi _{(0,1)}^{\mu} & =\frac{e^{-2it}}{(1+r^{2})}\xi _{1}^{\mu}
@@ -83,3 +95,42 @@ here different choices of $\displaystyle{\alpha}$ and $\displaystyle{\beta}$ are
 $$\begin{align}
 \nabla _{\mu}\psi _{(1,1)}^{\mu}=0
 \end{align}$$
+
+---
+
+*discussion*. the Hilbert space of this theory can be decomposed into $\displaystyle{(1,1)}$ excitations that acting on a sequence of $\displaystyle{(0,0)}$, $\displaystyle{(1,0)}$ and $\displaystyle{(0,1)}$ vacua. denote the $\displaystyle{(0,0)}$ vacuum as the 0-th level, the primary of $\displaystyle{(1,0)/(0,1)}$ as the 1/-1-st level, and the $\displaystyle{n}$-th descendant of $\displaystyle{(1,0)/(0,1)}$ as the $\displaystyle{n+1/-(n+1)}$-th level, then the full Hilbert space can be written as
+
+$$\begin{align}
+\mathcal{H} & =\bigoplus _{n=-\infty}^{\infty}\mathcal{H}_{n} \\
+\mathcal{H}_{n} & =\prod _{k,\bar{k}} \frac{1}{\sqrt{ n_{k}!n_{\bar{k}}! }}(a^{\dagger}_{k,\bar{k}})^{n_{k}}\ket{\Omega _{n}}
+\end{align}$$
+
+here $\displaystyle{\ket{\Omega _{n}}}$ is the vacuum at level $\displaystyle{n}$, and $\displaystyle{a^{\dagger}_{k,\bar{k}}}$ is the creation operator of $\displaystyle{(1,1)}$ excitations with mode numbers $\displaystyle{(k,\bar{k})}$ acting on the vacuum $\displaystyle{\ket{\Omega _{n}}}$. the inner product between different levels vanishes, i.e., $\displaystyle{\braket{\Omega _{n}|\Omega _{m}}=0}$ for $\displaystyle{n\neq m}$, since they belong to different superselection sectors characterized by different boundary conditions at infinity. within each level, the inner product is defined as usual.
+
+we write the mode expansion of the field operator as
+
+$$\begin{align}
+A^{\mu} & =\sum ^{\infty}_{n=-\infty}\sum ^{\infty}_{k,\bar{k}=0}a_{n,k,\bar{k}}\psi ^{\mu}_{(n,k,\bar{k})}+a^{\dagger}_{n,k,\bar{k}}\psi ^{*\mu} _{(n,k,\bar{k})} \\
+\psi ^{\mu} _{(n,k,\bar{k})} & =\mathcal{L}_{\xi _{-1}}^{k}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{k}}\psi _{(1,1)}^{\mu}+\psi _{n}^{\mu} \\
+\psi _{n} & =\begin{cases}
+0 & n=0 \\
+\mathcal{L}^{n}_{\xi _{-1}}\psi _{(1,0)} & n>0 \\
+\mathcal{L}^{|n|}_{\bar{\xi}_{-1}}\psi _{(0,1)} & n<0
+\end{cases}
+\end{align}$$
+
+the Noether charge associated with $\displaystyle{\xi _{0}}$ and $\displaystyle{\bar{\xi}_{0}}$ is given by
+
+$$\begin{align}
+H_{\xi_{0}} & =\sum ^{\infty}_{n=1} \sum ^{\infty}_{k,\bar{k}=0} (1+k+n)a^{\dagger}_{n,k,\bar{k}}a_{n,k,\bar{k}}+\sum ^{0}_{n=-\infty} \sum ^{\infty}_{k,\bar{k}=0} (1+k)a^{\dagger}_{n,k,\bar{k}}a_{n,k,\bar{k}} \\
+H_{\bar{\xi}_{0}} & =\sum ^{\infty}_{n=0}\sum ^{\infty}_{k,\bar{k}=0}(1+\bar{k})a^{\dagger}_{n,k,\bar{k}}a_{n,k,\bar{k}}+\sum ^{-1}_{n=-\infty}\sum ^{\infty}_{k,\bar{k}=0}(1+\bar{k}+n)a^{\dagger}_{n,k,\bar{k}}a_{n,k,\bar{k}}
+\end{align}$$
+
+and the partition function at finite temperature $\displaystyle{\beta}$ and angular potential $\displaystyle{J}$ is
+
+$$\begin{align}
+Z[\beta,\Omega] & =\mathrm{Tr}e^{-\beta H+i\alpha J} \\
+ & =\prod ^{\infty}_{\ell,\bar{\ell}=0} \frac{1-q^{\ell+1}\bar{q}^{\bar{\ell}+1}}{(1-q^{\ell+1}\bar{q}^{\bar{\ell}})(1-q^{\ell}\bar{q}^{\bar{\ell}+1})}
+\end{align}$$
+
+here $\displaystyle{q=e^{-\beta +i\alpha}}$ and $\displaystyle{\bar{q}=e^{-\beta -i\alpha}}$. this result is consistent with Xi
