@@ -72,7 +72,6 @@ Q_\xi&=\lim_{\varepsilon\to 0}\int_{\Sigma_\varepsilon}(X_\xi\cdot\Theta-\xi\cdo
 \end{aligned}
 $$
 
-
 ## Convergence of Conserved Charge
 
 Now we will determine whether the conserved charge $Q_\zeta$ is converge.

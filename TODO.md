@@ -39,6 +39,8 @@ box/.style={draw=black, thick, minimum size=6mm}
 \end{document}
 ```
 
+*吴老师似乎周末晚上刷arxiv？我是不是能学学？*
+
 ## career
 
 1. 2-3years, master
