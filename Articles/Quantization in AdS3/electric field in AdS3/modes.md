@@ -153,3 +153,4 @@ Z[\beta,\Omega] & =\mathrm{Tr}e^{-\beta H+i\alpha J} \\
 \end{align}$$
 
 here $\displaystyle{q=e^{-\beta +i\alpha}}$ and $\displaystyle{\bar{q}=e^{-\beta -i\alpha}}$. this result is consistent with Xi Yin's result.
+

@@ -68,7 +68,7 @@ n^{\mu}R_{\mu \nu}n^{\nu} & =n^{\mu}(\nabla _{\nu}\nabla _{\mu}-\nabla _{\mu}\na
  & =\nabla _{\mu}(n^{\nu}\nabla _{\nu}n^{\mu}-n^{\mu}\nabla _{\nu}n^{\nu})+K^{2}-K_{ab}K^{ab}
 \end{align}$$
 
-ignore all the boundary terms at present
+ignore all the boundary terms for the moment
 
 $$\tag{.}\begin{align}
 S & =\int _{M}\mathrm{d}^{d}x\sqrt{ -g }R +2\int _{\partial M}\mathrm{d}^{d-1}x\sqrt{ \sigma }K\\
