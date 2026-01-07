@@ -38,6 +38,23 @@ Q_{\Lambda} & =X_{\Lambda}\cdot \theta \\
  & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}\nabla _{\nu}\Lambda
 \end{align}$$
 
+---
+
+$$\begin{align}
+Q_{\Lambda} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}\nabla _{\nu}\Lambda \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}(\nabla _{\nu}(F^{\mu \nu}\Lambda)-\nabla _{\nu}F^{\mu \nu}\Lambda) \\
+ & =-\int _{\partial\Sigma}\mathrm{d}x\sqrt{ h }\tau _{\mu}n_{\nu}F^{\mu \nu}\Lambda
+\end{align}$$
+
+the second term vanishes since the eom, and the first term
+
+$$\begin{align}
+Q_{\Lambda} & \sim \int _{0}^{2\pi} \mathrm{d}\phi rF_{tr}\Lambda \\
+ & =\int ^{2\pi}_{0}\mathrm{d}\phi \mathcal{O}(r^{-2}\log r)=0
+\end{align}$$
+
+---
+
 the Poisson brackets between two gauge transformations is
 
 $$\begin{align}
@@ -54,5 +71,3 @@ I think we should add some boundary Lagrangian such as
 $$\begin{align}
 S_{bdy} & =-\frac{1}{2}\int _{\partial M}\mathrm{d}^{2}x\sqrt{ -\gamma }\gamma ^{\mu \nu}(\partial _{\mu}\phi-A_{\mu})(\partial _{\nu}\phi-A_{\nu})
 \end{align}$$
-
-
