@@ -15,6 +15,28 @@ E_{\phi} & =(\nabla ^{2}\phi-\mu ^{2}\phi) \\
 consider the action of the Casimir operators of global $\displaystyle{\mathrm{AdS}_{3}}$
 
 $$\begin{align}
-\mathcal{C}\phi & =\mathcal{L}
+\mathcal{C}\phi & =-\frac{1}{4}\nabla ^{2}\phi \\
+\mathcal{\bar{C}}\phi & =-\frac{1}{4}\nabla ^{2}\phi
 \end{align}$$
 
+then insert the eom
+
+$$\begin{align}
+\mathcal{C}\phi & =-\frac{1}{4}\mu ^{2} \\
+\mathcal{\bar{C}}\phi & =-\frac{1}{4}\mu ^{2}
+\end{align}$$
+
+suppose the conformal primary $\displaystyle{\ket{\phi}}$ has weights $(h,\bar{h})$, then
+
+$$\begin{align}
+C\ket{\phi} & =h(h-1)\ket{\phi} = -\frac{1}{4}\mu ^{2}\ket{\phi} \\
+\bar{C}\ket{\phi} & =\bar{h}(\bar{h}-1)\ket{\phi} = -\frac{1}{4}\mu ^{2}\ket{\phi}
+\end{align}$$
+
+which gives
+
+$$\begin{align}
+h=\bar{h} & =\frac{1\pm \sqrt{1+\mu ^{2}}}{2}
+\end{align}$$
+
+the normalizable mode corresponds to the choice of plus sign. the alternative quantization corresponds to the choice of minus sign, not unitary in this case...

@@ -74,4 +74,3 @@ $$\begin{align}
 
 which is also finite.
 
-我找不着那个文件了，我找找哪里有
