@@ -74,3 +74,28 @@ $$\begin{align}
 
 which is also finite.
 
+---
+
+under the $\displaystyle{\mathrm{SL}(2,\mathbb{R})}$ transformation
+
+$$\begin{align}
+A_{\mu}\to A'_{\mu} & =A_{\mu}+\mathcal{L}_{\xi}A_{\mu}
+\end{align}$$
+
+where the Killing vectors are
+
+$$\begin{align}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \partial _{t}-i(1+r^{2})^{1/2} \partial _{r}-r^{-1}(1+r^{2})^{1/2}\partial _{\phi} \right) \\
+\xi _{0} & =\frac{1}{2}(\partial _{t}-\partial _{\phi}) \\
+\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}(r(1+r^{2})^{-1/2}\partial _{t}+i(1+r^{2})^{1/2}\partial _{r}-r^{-1}(1+r^{2})^{1/2}\partial _{\phi} ) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \partial _{t}-i(1+r^{2})^{1/2} \partial _{r}+r^{-1}(1+r^{2})^{1/2}\partial _{\phi} \right) \\
+\bar{\xi}_{0} & =\frac{1}{2}(\partial _{t}+\partial _{\phi}) \\
+\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}(r(1+r^{2})^{-1/2}\partial _{t}+i(1+r^{2})^{1/2}\partial _{r}+r^{-1}(1+r^{2})^{1/2}\partial _{\phi} )
+\end{align}$$
+
+the asymptotic behavior of $\displaystyle{A}$ is preserved. consider the asymptotic behavior of the eom $\displaystyle{\nabla _{\mu}F^{\mu \nu}}$:
+
+$$\begin{align}
+\nabla _{\mu}F^{\mu t}\sim \nabla _{\mu}F^{\mu \phi} & =\mathcal{O}(r^{-1}) \\
+\nabla _{\mu}F^{\mu r} & = \mathcal{O}(r^{0})
+\end{align}$$
