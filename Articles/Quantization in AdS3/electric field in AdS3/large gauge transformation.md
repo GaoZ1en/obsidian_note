@@ -71,3 +71,4 @@ I think we should add some boundary Lagrangian such as
 $$\begin{align}
 S_{bdy} & =-\frac{1}{2}\int _{\partial M}\mathrm{d}^{2}x\sqrt{ -\gamma }\gamma ^{\mu \nu}(\partial _{\mu}\phi-A_{\mu})(\partial _{\nu}\phi-A_{\nu})
 \end{align}$$
+

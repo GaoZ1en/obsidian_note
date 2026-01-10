@@ -53,42 +53,169 @@ $$\begin{align}
 4z(1-z)\partial _{z}^{2}\Phi _{\pm}-4z\partial _{z}\Phi _{\pm}+\left(\frac{1}{z}+\omega ^{2}-\frac{m_{\pm}^{2}}{1-z}\right)\Phi _{\pm}=0
 \end{align}$$
 
----
-
-consider a pure guage $\displaystyle{A_{\mu}=\nabla _{\mu}\Lambda}$ with $\displaystyle{\Lambda = e^{-i\omega t+im\phi}\lambda (r)}$. The Lorentz guage condition $\displaystyle{\nabla ^{\mu}A_{\mu}=0}$ implies the massless scalar equation $\displaystyle{\nabla ^{2}\Lambda =0}$, which reads
+the solution with the correct asymptotic behavior is
 
 $$\begin{align}
-\frac{1}{r}\partial _{r}\left( r(1+r^{2})\partial _{r}\lambda  \right)+\left( \frac{\omega ^{2}}{1+r^{2}}-\frac{m^{2}}{r^{2}} \right)\lambda  & =0 \\
-(1+r^{2})\lambda ''+\frac{1+3r^{2}}{r}\lambda '+\left( \frac{\omega ^{2}}{1+r^{2}}-\frac{m^{2}}{r^{2}} \right)\lambda  & =0
+\Phi _{\pm} & =r^{|m_{\pm}|}(1+r^{2})^{(-|m_{\pm}|-1)/2}{}_{2}F_{1}\left( \frac{1}{2}(|m_{\pm}|-\omega+1), \frac{1}{2}(|m_{\pm}|+\omega+1);1; \frac{1}{1+r^{2}} \right)
 \end{align}$$
 
-The components of the pure gauge field are
+hypergeometric function should terminate to avoid divergence at $\displaystyle{r=0}$, which requires it truncates to a polynomial, thus
 
 $$\begin{align}
-A_{r} & =\partial _{r}\Lambda \implies f^{r}=g^{rr}\partial _{r}\lambda =(1+r^{2})\lambda ' \\
-A_{\phi} & =\partial _{\phi}\Lambda =im\Lambda \implies f^{\phi}=g^{\phi\phi}(im\lambda )=\frac{im}{r^{2}}\lambda 
+\frac{1}{2}(|m_{\pm}|-\omega+1) & =-n,\quad n\in \mathbb{N} \\
+\implies \omega _{n,m} & =1+|m_{\pm}|+2n
 \end{align}$$
 
-Substitute these into the definition of $\displaystyle{\Phi _{\pm}}$:
+which agrees with the spectrum obtained in the Proca field case by setting $\displaystyle{\mu\to 0}$. the normalized solutions are
 
 $$\begin{align}
-\Phi _{\pm}^{\text{gauge}} & =\frac{i}{2}f^{r}\pm \frac{1}{2}rf^{\phi} \\
- & =\frac{i}{2}\left[ (1+r^{2})\lambda '\pm \frac{m}{r}\lambda  \right]
+h_{+,m\geqslant 1,n}^{t} & =e^{-i(m+2n)t}e^{im\phi} \sqrt{ \frac{1}{8\pi n(n+m)} }\left[mr^{m}(1+r^{2})^{-(m+2)/2}P_{n}^{(n,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m-1}(1+r^{2})^{-(m+4)/2}P_{n}^{(0,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+h_{+,m\geqslant 1,n}^{r} & =-ie^{-i(m+2n)t}e^{im\phi} \sqrt{ \frac{(2n+m)^{2}}{8\pi n(n+m)} }r^{m-1}(1+r^{2})^{-m/2}P_{n}^{(0,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h_{+,m\geqslant 1,n}^{\phi} & =e^{-i(m+2n)t}e^{im\phi} \sqrt{ \frac{(2n+m)^{2}}{8\pi n(n+m)} }r^{m-2}(1+r^{2})^{-m/2}P_{n}^{(0,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-Now we check if this satisfies the EOM for $\displaystyle{\Phi _{\pm}}$. The operator is:
+with conformal weights $\displaystyle{(h,\bar{h})=(n+m,n)}$
 
 $$\begin{align}
-\mathcal{D}_{\pm}\Phi  & \equiv (1+r^{2})\Phi ''+\frac{1+3r^{2}}{r}\Phi '+\left( 1+\frac{\omega ^{2}}{1+r^{2}}-\frac{(m\mp 1)^{2}}{r^{2}} \right)\Phi 
+h^{t}_{+,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{8\pi(n+1)^{2}} }\left[(r^{2}-2)(1+r^{2})^{-2}P_{n}^{(0,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-4r^{2}(1+r^{2})^{-3}P_{n}^{(0,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+h^{r}_{+,m=0,n} & =-ie^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }r(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{\phi}_{+,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-Substitute $\displaystyle{\Phi _{\pm}^{\text{gauge}}}$ into $\displaystyle{\mathcal{D}_{\pm}\Phi }$. Using the scalar equation to replace $\displaystyle{\lambda ''}$ in terms of $\displaystyle{\lambda ',\lambda }$, one can verify that:
+with conformal weights $\displaystyle{(h,\bar{h})=(n+1,n+1)}$
 
 $$\begin{align}
-\mathcal{D}_{\pm}\Phi _{\pm}^{\text{gauge}} & \equiv 0
+h^{t}_{+,m\leqslant -1,n} & =e^{-i(2-m+2n)t}e^{im\phi}\sqrt{ \frac{1}{8\pi(1+n)(1+n-m)} }\left[(mr^{2}+2(m-1))r^{-m}(1+r^{2})^{-(m+4)/2}P_{n}^{(0,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{-m+2}(1+r^{2})^{-(-m+6)/2}P_{n}^{(0,-m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+h^{r}_{+,m\leqslant -1,n} & =-ie^{-i(2-m+2n)t}e^{im\phi}\sqrt{ \frac{(2+2n-m)^{2}}{8\pi(1+n)(1+n-m)} }r^{-m+1}(1+r^{2})^{-(-m+2)/2}P_{n}^{(0,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{\phi}_{+,m\leqslant -1,n} & =e^{-i(2-m+2n)t}e^{im\phi}\sqrt{ \frac{(2+2n-m)^{2}}{8\pi(1+n)(1+n-m)} }r^{-m}(1+r^{2})^{-(-m+2)/2}P_{n}^{(0,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-This confirms that the general solution for $\displaystyle{\Phi _{\pm}}$ contains the residual pure gauge modes. The "slowly decaying" branch (logarithmic branch) typically corresponds to these non-normalizable pure gauge modes.
+with conformal weights $\displaystyle{(h,\bar{h})=(n+1,n+1-m)}$
 
+$$\begin{align}
+h^{t}_{-,m\geqslant 1,n} & =e^{-i(2+m+2n)t}e^{im\phi}\sqrt{ \frac{1}{8\pi(1+n)(1+n+m)} }\left[(-mr^{2}-2(m+1))r^{m}(1+r^{2})^{-(m+4)/2}P_{n}^{(0,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m+2}(1+r^{2})^{-(m+6)/2}P_{n}^{(0,m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+h^{r}_{-,m\geqslant 1,n} & =-ie^{-i(2+m+2n)t}e^{im\phi}\sqrt{ \frac{(2+m+2n)^{2}}{8\pi(1+n)(1+n+m)} }r^{m+1}(1+r^{2})^{-(m+2)/2}P_{n}^{(0,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{\phi}_{-,m\geqslant 1,n} & =-e^{-i(2+m+2n)t}e^{im\phi}\sqrt{ \frac{(2+m+2n)^{2}}{8\pi(1+n)(1+n+m)} }r^{m}(1+r^{2})^{-(m+2)/2}P_{n}^{(0,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
 
-我来看看
+with conformal weights $\displaystyle{(h,\bar{h})=(n+m+1,n+1)}$
+
+$$\begin{align}
+h^{t}_{-,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{8\pi(1+n)^{2}} }\left[ (r^{2}-2)(1+r^{2})^{-2}P_{n}^{(0,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-4r^{2}(1+r^{2})^{-3}P_{n}^{(0,1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right] \\
+h^{r}_{-,m=0,n} & =-ie^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }r(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{\phi}_{-,m=0,n} & =-e^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+with conformal weights $\displaystyle{(h,\bar{h})=(n+1,n+1)}$
+
+$$\begin{align}
+h^{t}_{-,m\leqslant -1,n} & =e^{-i(-m+2n)t}e^{im\phi} \sqrt{ \frac{1}{8\pi n(n-m)} }\left[-mr^{-m}(1+r^{2})^{-(-m+2)/2}P_{n}^{(-,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{-m}(1+r^{2})^{-(-m+4)/2}P_{n}^{(0,-m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+h^{r}_{-,m\leqslant -1,n} & =-ie^{-i(-m+2n)t}e^{im\phi} \sqrt{ \frac{(2n-m)^{2}}{8\pi n(n-m)} }r^{-m-1}(1+r^{2})^{m/2}P_{n}^{(0,-m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{\phi}_{-,m\leqslant -1,n} & =-e^{-i(-m+2n)t}e^{im\phi}\sqrt{ \frac{(2n-m)^{2}}{8\pi n(n-m)} }r^{-m-2}(1+r^{2})^{m/2}P_{n}^{(0,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+with conformal weights $\displaystyle{(h,\bar{h})=(n,n-m)}$
+
+# gauge redundancy
+
+actually there are still residual guage redundancy left in the solutions above. solutions with conformal weight $\displaystyle{(h,\bar{h})=(k,\bar{k}),k,\bar{k}=\mathbb{Z}^{+}}$ in both sectors correspond to the same physical state. the conformal weight is defined as
+
+$$\begin{align}
+\mathcal{L}_{\xi _{0}}A^{\mu} & =-ihA^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{0}}A^{\mu} & =-i \bar{h}A^{\mu}
+\end{align}$$
+
+and the Killing vectors $\displaystyle{\xi}$'s are
+
+$$\begin{align}
+\xi _{0} & =\frac{1}{2}\left( \partial _{t}- \partial _{\phi} \right) \\
+\bar{\xi}_{0} & =\frac{1}{2}\left(\partial _{t}+\partial _{\phi}\right)
+\end{align}$$
+
+then we have to show
+
+1. $\displaystyle{h^{\mu}_{+,m=0,n}}$ and $\displaystyle{h^{\mu}_{-,m=0,n}}$ differ by a gauge transformation, $\displaystyle{n\in \mathbb{N}}$.
+2. $\displaystyle{h^{\mu}_{+,m\geqslant 1,n+1}}$ and $\displaystyle{h^{\mu}_{-,m\geqslant1,n}}$ differ by a gauge transformation, $\displaystyle{n\in \mathbb{N}}$.
+3. $\displaystyle{h^{\mu}_{+,m\leqslant -1,n}}$ and $\displaystyle{h^{\mu}_{-,m\leqslant -1,n+1}}$ differ by a gauge transformation, $\displaystyle{n\in \mathbb{N}}$.
+
+## $\displaystyle{h_{+,m=0,n}^{\mu},h^{\mu}_{-,m=0,n}}$
+
+we first write down these two solutions explicitly
+
+$$\begin{align}
+h^{t}_{+,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{8\pi(n+1)^{2}} }\left[(r^{2}-2)(1+r^{2})^{-2}P_{n}^{(0,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-4r^{2}(1+r^{2})^{-3}P_{n}^{(0,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+h^{r}_{+,m=0,n} & =-ie^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }r(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{\phi}_{+,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+and
+
+$$\begin{align}
+h^{t}_{-,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{8\pi(1+n)^{2}} }\left[ (r^{2}-2)(1+r^{2})^{-2}P_{n}^{(0,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-4r^{2}(1+r^{2})^{-3}P_{n}^{(0,1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right] \\
+h^{r}_{-,m=0,n} & =-ie^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }r(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{\phi}_{-,m=0,n} & =-e^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+consider the symplectic matrix $\displaystyle{i\Omega[h_{1},h_{2}^{*}]}$ between these two modes, we have
+
+$$\begin{align}
+i\Omega[h_{m=0,n},h_{m=0,n}] & =\begin{pmatrix}
+1 & -1 \\
+-1 & 1
+\end{pmatrix}
+\end{align}$$
+
+the eigenvalues of this matrix are $\displaystyle{0,2}$, thus there is one null direction, which means these two modes differ by a gauge transformation.
+
+## $\displaystyle{h^{\mu}_{+,m\geqslant 1,n+1}}$ and $\displaystyle{h^{\mu}_{-,m\geqslant1,n}}$
+
+similarly, consider the symplectic matrix between these two modes
+
+$$\begin{align}
+i\Omega[h_{m\geqslant 1,n_{1}},h_{m\geqslant 1,n_{2}}] & =\begin{pmatrix}
+1 & -1 \\
+-1 & 1
+\end{pmatrix}
+\end{align}$$
+
+the eigenvalues of this matrix are $\displaystyle{0,2}$, thus there is one null direction, which means these two modes differ by a gauge transformation.
+
+## $\displaystyle{h^{\mu}_{+,m\leqslant -1,n}}$ and $\displaystyle{h^{\mu}_{-,m\leqslant -1,n+1}}$
+
+similarly, for $\displaystyle{h^{\mu}_{+,m\leqslant -1,n}}$ and $\displaystyle{h^{\mu}_{-,m\leqslant -1,n+1}}$, consider the symplectic matrix between these two modes
+
+$$\begin{align}
+i\Omega[h_{m\leqslant -1,n_{1}},h_{m\leqslant -1,n_{2}}] & =\begin{pmatrix}
+1 & -1 \\
+-1 & 1
+\end{pmatrix}
+\end{align}$$
+
+the eigenvalues of this matrix are $\displaystyle{0,2}$, thus there is one null direction, which means these two modes differ by a gauge transformation.
+
+# edge mode
+
+besides the normalizable modes solved above, the following modes are not discussed
+
+$$\begin{align}
+h_{+,m\geqslant 1,n=0}^{t} & =e^{-im(t-\phi)}r^{m}(1+r^{2})^{-(m+2)/2} \\
+h_{+,m\geqslant 1,n=0}^{r} & =-ie^{-im(t-\phi)}r^{m-1}(1+r^{2})^{-m/2} \\
+h_{+,m\geqslant 1,n=0}^{\phi} & =e^{-im(t-\phi)}r^{m-2}(1+r^{2})^{-m/2}
+\end{align}$$
+
+with conformal weights $\displaystyle{(h,\bar{h})=(m,0)}$, and
+
+$$\begin{align}
+h^{t}_{-,m\leqslant -1,n=0} & =e^{im(t+\phi)}r^{-m}(1+r^{2})^{-(-m+2)/2} \\
+h^{r}_{-,m\leqslant -1,n=0} & =-ie^{im(t+\phi)}r^{-m-1}(1+r^{2})^{m/2} \\
+h^{\phi}_{-,m\leqslant -1,n=0} & =-e^{im(t+\phi)}r^{-m-2}(1+r^{2})^{m/2}
+\end{align}$$
+
+with conformal weights $\displaystyle{(h,\bar{h})=(0,-m)}$. these modes are not normalizable under the usual inner product (since the $\displaystyle{0}$ factor in the denominator, so we drop them in the following analysis).
+
+$$\begin{align}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \partial _{t}-i(1+r^{2})^{1/2} \partial _{r}-r^{-1}(1+r^{2})^{1/2}\partial _{\phi} \right) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \partial _{t}-i(1+r^{2})^{1/2} \partial _{r}+r^{-1}(1+r^{2})^{1/2}\partial _{\phi} \right) 
+\end{align}$$
+
+the field strength of these modes vanishes identically, thus they are pure gauge configurations.
