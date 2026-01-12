@@ -116,9 +116,25 @@ let $\displaystyle{\psi _{m}^{\ell}(x)}$ be functions belonging to the $\display
 
 *sol*.
 
+we have
 
+$$\begin{align}
+\psi ^{\ell'}_{m}(x) & =\sum ^{\ell}_{m'=-\ell} D^{\ell}_{m'm}\left( \vec{e}_{1},-\frac{\pi}{2} \right)\psi ^{\ell}_{m'}(x) 
+\end{align}$$
 
 # problem 6
 
 calculate $\displaystyle{\left\{d^{\ell}(\theta)(I^{\ell}_{3})^{2}d^{\ell}(\theta)^{-1}\right\}_{mm}}$, where $\displaystyle{d^{\ell}(\theta)}$ is the representation matrix of rotation group, and $\displaystyle{I^{\ell}_{3}}$ is the third generator of this representation.
+
+*sol*.
+
+we have
+
+$$\begin{align}
+\left\{d^{\ell}(\theta)(I^{\ell}_{3})^{2}d^{\ell}(\theta)^{-1}\right\}_{mm'} & = \braket{ \ell,m|(d^{\ell}(\theta)J_{z}d^{\ell}(\theta)^{-1})^{2}|\ell,m' } \\
+ & = \braket{ \ell,m|(J_{z}\cos \theta+J_{x}\sin \theta)^{2}|\ell,m' } \\
+ & =m^{2}\cos ^{2}\theta \delta _{mm'}+\sin ^{2}\theta\braket{ \ell,m|J_{x}^{2}|\ell,m' } +\sin \theta \cos \theta\braket{ \ell,m|J_{z}J_{x}+J_{x}J_{z}|\ell,m' }  \\
+ & =m^{2}\cos ^{2}\theta \delta _{mm'}+\frac{1}{2}(\ell(\ell+1)-m^{2})\sin ^{2}\theta \delta _{mm'} \\
+ & +\frac{1}{2}(m+m')\sin \theta \cos \theta (\sqrt{ (\ell-m)(\ell+m+1) }\delta _{m,m'+1}+\sqrt{ (\ell+m)(\ell-m+1) }\delta _{m,m'-1})
+\end{align}$$
 

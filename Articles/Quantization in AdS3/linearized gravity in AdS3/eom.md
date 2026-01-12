@@ -156,7 +156,7 @@ $$\begin{align}
 \mathcal{L}_{\xi _{a}}h_{R,0}^{\mu \nu} & =0, a=0,\pm 1
 \end{align}$$
 
-the solutions are given by boundary gravitons. ... at the moment I don't have the explicit expressions for them. 
+the solutions are given by boundary gravitons. ... at the moment I don't have the explicit expressions for them.
 
 ---
 
