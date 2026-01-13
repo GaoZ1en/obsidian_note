@@ -1,0 +1,10 @@
+--- Analyzing f(z) (Eq 1) ---
+Equation has regular singularities at z=0, z=1, z=inf
+Indices at z=0: (1, 1). Solution involves log(z).
+General solution near z=0: c1 * z + c2 * (z * log(z) + ...)
+Indices at z=1: (m/2, -m/2). Solution behaves as (1-z)^(m/2) and (1-z)^(-m/2).
+
+--- Analyzing Phi(z) (Eq 2) ---
+Indices at z=0: (1/2, 1/2). Solution involves log(z).
+General solution near z=0: c1 * z^(1/2) + c2 * z^(1/2) * log(z).
+Indices at z=1: (nu/2, -nu/2). Solution behaves as (1-z)^(nu/2) and (1-z)^(-nu/2).

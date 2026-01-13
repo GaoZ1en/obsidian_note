@@ -639,7 +639,7 @@ $$\begin{align}
  & =-\frac{3}{2}\mathrm{Vol}(\mathbb{H}_{3}/\mathbb{Z})\int ^{\infty}_{0}\frac{\mathrm{d}t}{t}(F+\partial _{u}S)|_{u=0} \\
  & +\sum ^{\infty}_{n=1} \frac{(2\pi \tau _{2})(2\pi)}{4|\sin \pi n\tau|^{2}}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\int ^{\infty}_{2\pi \tau _{2}}\mathrm{d}r\sinh r((F+\partial _{u}S)A_{\gamma ^{n}}+\partial _{u}^{2}SB_{\gamma ^{n}}) \\
  & =\sum ^{\infty}_{n=1} \frac{q^{n}+\bar{q}^{n}}{n|1-q^{n}|}|q|^{n\mu} \\
-\implies Z & =\prod ^{\infty}_{\ell,\ell'=0} \frac{1}{(1-q^{\ell+\mu+1}\bar{q}^{\ell'+\mu})(1-q^{\ell+\mu}\bar{q}^{\ell'+\mu+1})}
+\implies Z & =\prod ^{\infty}_{\ell,\ell'=0} \frac{1}{(1-q^{\ell+\mu/2+1}\bar{q}^{\ell'+\mu/2})(1-q^{\ell+\mu/2}\bar{q}^{\ell'+\mu/2+1})}
 \end{align}$$
 
 here we are not necessary to substract the non-physical longitudinal mode contribution since we already imposed the transversality condition in the heat kernel equation.

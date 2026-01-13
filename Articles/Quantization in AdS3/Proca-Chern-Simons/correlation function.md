@@ -187,9 +187,10 @@ $$\begin{align}
 g^{\mu_{1},\mu_{2}}(x_{1},x_{2}) & =2\xi _{1}^{\mu_{1}}(x_{1})\xi _{-1}^{\mu_{2}}(x_{2})+2\xi _{-1}^{\mu_{1}}(x_{1})\xi _{1}^{\mu_{2}}(x_{2})-4\xi _{0}^{\mu_{1}}(x_{1})\xi _{0}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-similarly we have
+similarly we have (check needed)
 
 $$\begin{align}
 \sum ^{\infty}_{n,\bar{n}=0}f^{\mu_{1}}_{v,n,\bar{n}}(x_{1})f_{v,n,\bar{n}}^{*\mu_{2}}(x_{2}) & =\frac{2}{\mu ^{2}}\partial ^{\mu_{1}}\partial ^{\mu_{2}}g_{\mu+2}(x_{1},x_{2})-\frac{i}{2\mu}\varepsilon ^{\mu_{2}\nu_{2}}_{~~~~~~\rho_{2}}(x_{2})g^{\rho_{2},\mu_{1}}(x_{1},x_{2})\partial _{\nu_{2}}g_{\mu+2}(x_{1},x_{2}) \\
  & +\frac{1}{2}g^{\mu_{1},\mu_{2}}(x_{1},x_{2})g_{\mu+2}(x_{1},x_{2})
 \end{align}$$
+

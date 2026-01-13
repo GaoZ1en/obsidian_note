@@ -47,7 +47,7 @@ $$\begin{align}
 \Phi _{\pm} & =\mathcal{O}(r^{0}) & \text{ as } & r\to 0
 \end{align}$$
 
-change of variable to $\displaystyle{\tan \rho=r}$ and then to $\displaystyle{z=\cos ^{2}\rho}$, we have
+change variable to $\displaystyle{\tan \rho=r}$ and then to $\displaystyle{z=\cos ^{2}\rho}$, we have
 
 $$\begin{align}
 4z(1-z)\partial _{z}^{2}\Phi _{\pm}-4z\partial _{z}\Phi _{\pm}+\left(\frac{1}{z}+\omega ^{2}-\frac{m_{\pm}^{2}}{1-z}\right)\Phi _{\pm}=0
@@ -213,9 +213,55 @@ h^{\phi}_{-,m\leqslant -1,n=0} & =-e^{im(t+\phi)}r^{-m-2}(1+r^{2})^{m/2}
 
 with conformal weights $\displaystyle{(h,\bar{h})=(0,-m)}$. these modes are not normalizable under the usual inner product (since the $\displaystyle{0}$ factor in the denominator, so we drop them in the following analysis).
 
+the field strength of these modes vanishes identically, thus they are pure gauge configurations.
+
+# zero energy modes
+
+for modes with $\displaystyle{\omega =0}$, we start from the eom and the gauge condition with all time derivatives dropped
+
 $$\begin{align}
-\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \partial _{t}-i(1+r^{2})^{1/2} \partial _{r}-r^{-1}(1+r^{2})^{1/2}\partial _{\phi} \right) \\
-\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \partial _{t}-i(1+r^{2})^{1/2} \partial _{r}+r^{-1}(1+r^{2})^{1/2}\partial _{\phi} \right) 
+(1+r^{2})\partial _{r}^{2}A^{t}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{1+5r^{2}}{r}\partial _{r}A^{t}+4A^{t} & =0 \\
+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{r}-(1+r^{2})\partial _{r}\partial _{\phi}A^{\phi}-\frac{2(1+r^{2})}{r}\partial _{\phi}A^{\phi} & =0 \\
+-\frac{1}{r^{2}}\partial _{r}\partial _{\phi}A^{r}+\frac{1}{r^{3}}\partial _{\phi}A^{r}+(1+r^{2})\partial _{r}^{2}A^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}A^{\phi}+4A^{\phi} & =0 \\
+\partial _{r}A^{r}+\frac{1}{r}A^{r}+\partial _{\phi}A^{\phi} & =0
 \end{align}$$
 
-the field strength of these modes vanishes identically, thus they are pure gauge configurations.
+insert the gauge condition to the second and the third equations, we have
+
+$$\begin{align}
+(1+r^{2})\partial _{r}^{2}A^{t}+\frac{1+5r^{2}}{r}\partial _{r}A^{t}+4A^{t}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t} & =0 \\
+(1+r^{2})\partial _{r}^{2}A^{r}+\frac{1+3r^{2}}{r}\partial _{r}A^{r}+A^{r}-\frac{1}{r^{2}}A^{r}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{r} & =\frac{2}{r}\partial _{\phi}A^{\phi} \\
+(1+r^{2})\partial _{r}^{2}A^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}A^{\phi}+4A^{\phi}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{\phi} & =-\frac{2}{r^{3}}\partial _{\phi}A^{r}
+\end{align}$$
+
+here $\displaystyle{A^{t}}$ decouples from other components, and the equation for $\displaystyle{A^{r}}$ and $\displaystyle{A^{\phi}}$ are the same as before with $\displaystyle{\omega =0}$. we can still introduce
+
+$$\begin{align}
+\Phi _{\pm} & =\frac{i}{2}A^{r}\pm \frac{1}{2}rA^{\phi}
+\end{align}$$
+
+and obtain
+
+$$\begin{align}
+(1+r^{2})\partial _{r}^{2}\Phi _{\pm}+\frac{1+3r^{2}}{r}\partial _{r}\Phi _{\pm}+\left(1-\frac{m_{\pm}^{2}}{r^{2}}\right)\Phi _{\pm} & =0 \\
+\implies 4z(1-z)\partial _{z}^{2}f^{t}-4\partial _{z}f^{t}+\left( \frac{4}{z}-\frac{m^{2}}{1-z} \right)f^{t} & =0\\
+4z(1-z)\partial _{z}^{2}\Phi _{\pm}-4z\partial _{z}\Phi _{\pm}+\left(\frac{1}{z}-\frac{m_{\pm}^{2}}{1-z}\right)\Phi _{\pm} & =0
+\end{align}$$
+
+the solutions of these equations are not regular at $\displaystyle{r=0}$, so there is no zero energy modes.
+
+# alternative boundary condition
+
+$$\begin{align}
+(1+r^{2})\partial _{r}^{2}\Phi_{\pm}+\frac{1+3r^{2}}{r}\partial _{r}\Phi _{\pm}+\left(1+\frac{\omega ^{2}}{1+r^{2}}-\frac{m_{\pm}^{2}}{r^{2}}\right)\Phi _{\pm} & =0 \\
+4z(1-z)\partial _{z}^{2}\Phi _{\pm}-4z\partial _{z}\Phi _{\pm}+\left(\frac{1}{z}+\omega ^{2}-\frac{m_{\pm}^{2}}{1-z}\right)\Phi _{\pm} & =0
+\end{align}$$
+
+we can also impose a looser boundary condition for $\displaystyle{\Phi _{\pm}}$ at $\displaystyle{r\to \infty}$ as
+
+$$\begin{align}
+\Phi _{\pm} & =\mathcal{O}(r^{-1}\log r)
+\end{align}$$
+
+apart from the previous solutions, we have new solutions
+
