@@ -289,4 +289,6 @@ $$\begin{align}
 \Phi _{\pm}^{(2)} & \sim r^{-|m_{\pm}|}
 \end{align}$$
 
-regularity at $\displaystyle{r=0}$ requires us to discard the second solution.
+regularity at $\displaystyle{r=0}$ requires us to discard the second solution...
+
+actually the solutions around $\displaystyle{z=1}$ does not necessarily match solutions around $\displaystyle{z=0}$... 
