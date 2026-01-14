@@ -364,3 +364,23 @@ $$\begin{align}
  & =-2H_{\xi}
 \end{align}$$
 
+---
+
+$$\begin{align}
+\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\rho}\nabla _{\rho}F_{1,\mu \nu}A_{2}^{\nu} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla ^{\nu}(\xi _{\nu}F_{1,\mu \rho}A_{2}^{\rho})-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}F_{1,\mu \rho}\nabla _{\nu}A_{2}^{\rho} \\
+\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}F_{1,\rho \nu}\nabla _{\mu}\xi ^{\rho}A_{2}^{\nu} & =-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}F_{1,\rho \nu}\nabla ^{\rho}\xi _{\mu}A_{2}^{\nu} \\
+ & =-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla ^{\nu}(\xi _{\mu}F_{1,\nu \rho}A_{2}^{\rho})+\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi _{\mu}(\nabla ^{\nu}F_{1,\nu \rho}A_{2}^{\rho}+F_{1,\nu \rho}\nabla ^{\nu}A_{2}^{\rho}) \\
+ & =-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla ^{\nu}(\xi _{\mu}F_{1,\nu \rho}A_{2}^{\rho})+\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi _{\mu}\left( \nabla ^{\nu}F_{1,\nu \rho}A_{2}^{\rho}+\frac{1}{2}F_{1,\nu \rho}F_{2}^{\nu \rho} \right) \\
+\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}F_{1,\mu \rho}\nabla _{\nu}\xi ^{\rho}A_{2}^{\nu} & =-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}F_{1,\mu \nu}\nabla ^{\nu}\xi _{\rho}A_{2}^{\rho} \\
+ & =-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla ^{\nu}(F_{1,\mu \nu}\xi _{\rho}A_{2}^{\rho})+\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla ^{\nu}F_{1,\mu \nu}\xi _{\rho}A_{2}^{\rho}+F_{1,\mu \nu}\xi _{\rho}\nabla ^{\nu}A_{2}^{\rho})
+\end{align}$$
+
+add them up
+
+$$\begin{align}
+(\text{...}) & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla ^{\nu}((\xi _{\nu}F_{1,\mu \rho}-\xi _{\mu}F_{1,\nu \rho})A_{2}^{\rho})-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\nabla ^{\nu}(F_{1,\mu \nu}\xi _{\rho}A_{2}^{\rho}) \\
+ & -\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}F_{1,\mu \rho}(\nabla _{\nu}A_{2}^{\rho}-\nabla ^{\nu}A_{2,\nu})+\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi _{\mu}\left(\nabla ^{\nu}F_{1,\nu \rho}A_{2}^{\rho}+\frac{1}{2}F_{1,\nu \rho}F_{2}^{\nu \rho}\right) \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }(\text{total derivatives}) \\
+ & -\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left(F_{1,\mu \rho}F_{2,\nu}^{~~~~\rho}-\frac{1}{2}g_{\mu \nu}F_{1,\rho \sigma}F_{2}^{\rho \sigma}-\mu ^{2}g_{\mu \nu}A_{1,\rho}A_{2}^{\rho}\right)
+\end{align}$$
+

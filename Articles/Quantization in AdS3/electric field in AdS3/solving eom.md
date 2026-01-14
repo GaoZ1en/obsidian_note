@@ -263,5 +263,30 @@ $$\begin{align}
 \Phi _{\pm} & =\mathcal{O}(r^{-1}\log r)
 \end{align}$$
 
-apart from the previous solutions, we have new solutions
+take the same ansatz as before, we arrive at the same hypergeometric equation
 
+$$\begin{align}
+z(1-z)w''+(1-(|m_{\pm}|+2)z)w'-\frac{1}{4}((|m_{\pm}|+1)^{2}-\omega ^{2})w=0
+\end{align}$$
+
+at $\displaystyle{z=1}$ ($\displaystyle{r=0}$), suppose the asymptotic behavior of the solution is
+
+$$\begin{align}
+w(z) & \sim(1-z)^{\alpha}
+\end{align}$$
+
+inserting this ansatz into the hypergeometric equation, we have the indicial equation
+
+$$\begin{align}
+\alpha(\alpha-1)+(|m_{\pm}|+1)\alpha & =0 \\
+\implies \alpha & =0,-|m_{\pm}|
+\end{align}$$
+
+so the two independent solutions behave as $\displaystyle{w\sim (1-z)^{0}\sim 1}$ and $\displaystyle{w\sim (1-z)^{-|m_{\pm}|}\sim r^{-2|m_{\pm}|}}$. combined with the prefactor $\displaystyle{r^{|m_{\pm}|}}$, the two solutions for $\displaystyle{\Phi _{\pm}}$ behave as
+
+$$\begin{align}
+\Phi _{\pm}^{(1)} & \sim r^{|m_{\pm}|} \\
+\Phi _{\pm}^{(2)} & \sim r^{-|m_{\pm}|}
+\end{align}$$
+
+regularity at $\displaystyle{r=0}$ requires us to discard the second solution.

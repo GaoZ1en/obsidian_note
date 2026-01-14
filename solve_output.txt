@@ -1,7 +1,0 @@
-Solving Eq 1...
-Solution 1 found:
-Eq(f(z), C1*z + O(z**6))
-
-Solving Eq 2...
-Solution 2 found:
-Eq(Phi(z), C1*sqrt(z) + O(z**6))
