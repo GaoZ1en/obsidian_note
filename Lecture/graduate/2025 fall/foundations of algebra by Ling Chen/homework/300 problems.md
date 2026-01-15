@@ -175,7 +175,7 @@ $$\begin{align}
 \end{cases}
 \end{align}$$
 
-16. suppose $\displaystyle{H}$ and $\displaystyle{K}$ are two subgroup of finite group $\displaystyle{G}$. prove that $\displaystyle{|HgK|=|H|[K:g^{-1}Hg\cap K]}$. z
+16. suppose $\displaystyle{H}$ and $\displaystyle{K}$ are two subgroup of finite group $\displaystyle{G}$. prove that $\displaystyle{|HgK|=|H|[K:g^{-1}Hg\cap K]}$.
 
 ## cyclic group
 
