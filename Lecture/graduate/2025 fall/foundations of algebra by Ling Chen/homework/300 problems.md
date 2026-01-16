@@ -270,8 +270,19 @@ suppose $\displaystyle{p}$ is a prime, $\displaystyle{G}$ is a finite group, the
 
 1. suppose $\displaystyle{p}$ is a prime factor of $\displaystyle{|G|}$, then $\displaystyle{G}$ contains an element with order $\displaystyle{p}$.
 *sol*. by Sylow theorem $\displaystyle{G}$ contains subgroup of order $\displaystyle{p}$, which is isomorphic to $\displaystyle{\mathbb{Z}_{p}}$...
-2. suppose $\displaystyle{p}$ is a prime factor of $\displaystyle{|G|}$, then the number $\displaystyle{N}$ of solutions of $\displaystyle{x^{p}=1}$ in $\displaystyle{G}$ satisfies $\displaystyle{p|N}$
-*sol*. the solutions of $\displaystyle{x^{p}=1}$ form a subgroup of $\displaystyle{G}$ of order $\displaystyle{p}$. by Sylow theorem, the number of subgroups of $\displaystyle{G}$ with order $\displaystyle{p}$ is $\displaystyle{kp+1,k\in \mathbb{N}}$, then $\displaystyle{G}$ has $\displaystyle{(kp+1)(p-1)}$ elements of order $\displaystyle{p}$, which implies that there are $\displaystyle{(kp+1)(p-1)+1=kp^{2}+(1-k)p}$ solutions.
+2. suppose $\displaystyle{p}$ is a prime factor of $\displaystyle{|G|}$, then the number $\displaystyle{N}$ of solutions of $\displaystyle{x^{p}=1}$ in $\displaystyle{G}$ satisfies $\displaystyle{p|N}$.
+*sol*. **(McKay's Proof / Cauchy's Theorem Strategy)**
+The set of solutions $Sol = \{x \in G \mid x^p = 1\}$ does **not** necessarily form a subgroup (e.g., in $S_3$, order-2 elements don't form a subgroup). So we cannot directly use Lagrange or Sylow on $Sol$.
+Instead, consider the set $\displaystyle{X=\{(g_{1},\dots,g_{p})\in G^{p} | g_{1}\dots g_{p}=e\}}$.
+*   The first $\displaystyle{p-1}$ elements can be chosen arbitrarily, and $\displaystyle{g_{p}=(g_{1}\dots g_{p-1})^{-1}}$ is uniquely determined. Thus $\displaystyle{|X|=|G|^{p-1}}$.
+*   Consider the cyclic permutation action of $\displaystyle{\mathbb{Z}_{p}}$ on $\displaystyle{X}$. The orbit of an element $\displaystyle{(g_{1},\dots,g_{p})}$ has size $\displaystyle{1}$ or $\displaystyle{p}$.
+*   Orbit size is $\displaystyle{1} \iff g_{1}=\dots=g_{p}=g$ and $\displaystyle{g^{p}=e}$. These correspond exactly to solutions of $\displaystyle{x^{p}=1}$.
+*   Let $\displaystyle{N}$ be the number of solutions. These are the fixed points.
+*   By Orbit-Stabilizer, $\displaystyle{|X| = N \times 1 + (\text{orbits of size } p) \times p}$.
+*   Thus $\displaystyle{|X| \equiv N \mod{p}}$.
+*   Since $\displaystyle{|X|=|G|^{p-1}}$ and $\displaystyle{p||G|}$, we have $\displaystyle{|X| \equiv 0 \mod p}$.
+*   Therefore $\displaystyle{N \equiv 0 \mod p}$, so $\displaystyle{p|N}$.
+(Note: Since $\displaystyle{e}$ is a solution, $\displaystyle{N \ge 1}$, so $\displaystyle{N}$ is a non-zero multiple of $\displaystyle{p}$, proving Cauchy's Theorem).
 3. prove that non-Abelian group of order $\displaystyle{6}$ is only $\displaystyle{S_{6}}$.
 *sol*. since $\displaystyle{6=2\times 3}$, by Sylow theorem, $\displaystyle{G}$ has one subgroup of order $\displaystyle{2}$ and one subgroup of order $\displaystyle{3}$. suppose the subgroup $\displaystyle{A=\braket{ \alpha }}$ is of order $\displaystyle{3}$ and $\displaystyle{B= \braket{ \beta }}$ is of order 2. since $\displaystyle{G}$ is non-Abelian then $\displaystyle{\alpha \beta\neq \beta \alpha}$, which implies $\displaystyle{\beta \alpha \beta ^{-1}=\alpha ^{2}}$. thus such group is isomorphic to $\displaystyle{S_{3}}$
 4. group $\displaystyle{G}$ of order $\displaystyle{200}$ has normal Sylow subgroup
