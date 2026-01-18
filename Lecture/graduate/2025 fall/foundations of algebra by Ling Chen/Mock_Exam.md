@@ -137,4 +137,5 @@ and it is impossible to make the above equation hold for any $\displaystyle{b\in
 $$\begin{align}
 \mathbb{Z}_{3}[i] & =\left\{a+bi|a,b\in\mathbb{Z}_{3}\right\} \\
  & =\left\{0,1,2,i,1+i,2+i,2i,1+2i,2+2i\right\}
+a) consider the quotient ring $\displaystyle{R /I\cong \mathbb{Z}_{3}[i]\cong \mathbb{Z}_{3}[x] /(x^{2}+1)}$. since $\displaystyle{x^{2}+1}$ in $\displaystyle{\mathbb{Z}_{3}[x]}$, so $\displaystyle{x^{2}+1}$ is not irreducible in $\displaystyle{\mathbb{Z}_{3}[x]}$, which implies $\displaystyle{\mathbb{Z}_{3}[i]}$ is not an integral domain, thus $\displaystyle{I}$ is not a prime ideal in $\displaystyle{R}$.
 \end{align}$$
