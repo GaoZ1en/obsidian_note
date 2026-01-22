@@ -15,6 +15,17 @@
        $$ H_0 = \int \widetilde{dk} \, \omega_k a^\dagger(\mathbf{k}) a(\mathbf{k}) + E_{vac} $$
        Explicitly show where the $\delta^3(0)$ terms (vacuum energy) come from.
 
+*sol*.
+a) the conjugate momentum and the Hamiltonian density is given by
+$$\begin{align}
+\pi(x) & =\frac{\partial \mathcal{L}}{\partial \dot{\phi}(x)} \\
+ & =\dot{\phi}(x) \\
+\mathcal{H}(x) & =\pi(x)\dot{\phi}(x)-\mathcal{L}(x) \\
+ & =\frac{1}{2}\pi ^{2}+\frac{1}{2}(\vec{\nabla} \phi)^{2}+\frac{1}{2}m^{2}\phi ^{2}+\frac{\lambda}{4!}\phi ^{4}
+\end{align}$$
+b)
+
+
 2.  **[Noether's Theorem - Proca Field]**
     Consider a complex vector field $V_\mu$ (Complex Proca) with:
     $$ \mathcal{L} = -\frac{1}{2} (\partial_\mu V_\nu - \partial_\nu V_\mu)^\dagger (\partial^\mu V^\nu - \partial^\nu V^\mu) - m^2 V_\mu^\dagger V^\mu $$
