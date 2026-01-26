@@ -1,22 +1,23 @@
-*basic notations*. metric
+# basic notations
+
+*metric*
 
 $$\begin{align}
 \mathrm{d}s^{2} & =g_{\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu}
 \end{align}$$
 
-Christoffel symbols
+*Christoffel symbols*
 
 $$\begin{align}
 \Gamma ^{\rho}_{~\mu \nu} & =\frac{1}{2}g^{\rho \sigma}\left(\partial _{\mu}g_{\sigma \nu}+\partial _{\nu}g_{\mu \sigma}-\partial _{\sigma}g_{\mu \nu}\right)
 \end{align}$$
 
-a simple method to calculate the Christoffel symbols:
-
+A simple method to calculate the Christoffel symbols via the action/Lagrangian:
 $$\begin{align}
 \Gamma ^{\rho}_{\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{\rho \sigma}\mathrm{d}g_{\sigma \nu}\mathrm{d}x^{\nu}-\frac{1}{2}g^{\rho \sigma}\partial _{\sigma}\mathrm{d}s^{2}
 \end{align}$$
 
-the covariant derivative is defined as
+*covariant derivative*
 
 $$\begin{align}
 \nabla _{\mu}V^{\nu} & =\partial _{\mu}V^{\nu}+\Gamma ^{\nu}_{~\mu \rho}V^{\rho} \\
@@ -59,14 +60,24 @@ $$\begin{align}
 
 to get the final answer.
 
-Ricci tensor and scalar
+*Ricci tensor, Ricci scalar*
 
 $$\begin{align}
 R_{\mu \nu} & =R^{\lambda}_{~\mu \lambda \nu} \\
 R & =g^{\mu \nu}R_{\mu \nu}
 \end{align}$$
 
-*hypersurface and extrinsic curvature*. suppose $\displaystyle{n^{\mu}}$ is the unit normal vector of a hypersurface, which satisfies
+in $\displaystyle{d}$ dimensions, the curvature tensor can be decomposes as
+
+$$\begin{align}
+R_{\mu \nu \rho \sigma} & =W_{\mu \nu \rho \sigma}+\frac{2}{d-2}(R_{\mu[\rho}R_{\sigma]\nu}-g_{\nu[\rho}R_{\sigma]\mu})-\frac{2}{(d-1)(d-2)}Rg_{\mu[\rho}g_{\sigma]\nu}
+\end{align}$$
+
+where the Weyl tensor $\displaystyle{W_{\mu \nu \rho \sigma}}$ is the totally trace-free part, which physical meaning is the tidal force and gravitational waves.
+
+# hypersurface and extrinsic curvature
+
+suppose $\displaystyle{n^{\mu}}$ is the unit normal vector of a hypersurface, which satisfies
 
 $$\begin{align}
 g_{\mu \nu}n^{\mu}n^{\nu} & =\varepsilon
@@ -107,7 +118,7 @@ $$\begin{align}
 
 the extrinsic curvature is $K_{\mu \nu} = \gamma ^{\rho}_{\mu}\gamma ^{\sigma}_{\nu}\nabla _{\rho}n_{\sigma}$. For null surfaces, $K_{\mu\nu}$ is often related to the expansion and shear of the null generators.
 
-*geodesic congruence and Raychaudhuri equation*
+# geodesic congruence and Raychaudhuri equation
 
 consider a congruence of geodesics with tangent vector field $\displaystyle{U^{\mu}}$ (normalized $\displaystyle{g_{\mu \nu}U^{\mu}U^{\nu}=-1}$ for timelike, and $\displaystyle{g_{\mu \nu}U^{\mu}U^{\nu}=0}$ for null). 
 
@@ -159,14 +170,16 @@ $$\begin{align}
 
 which shows that if $\displaystyle{\theta _{0}<0}$ at some initial affine parameter $\displaystyle{\lambda =0}$, then $\displaystyle{\theta \to -\infty}$ within an affine parameter $\displaystyle{\lambda \leqslant 2/|\theta _{0}|}$, indicating the formation of caustics/singularity (focusing theorem).
 
-*energy conditions*. in the former Raychaudhuri equations, we have used the strong energy condition (SEC) for timelike congruence and the null energy condition (NEC) for null congruence. here are some common energy conditions used in general relativity:
+## energy conditions
+
+in the former Raychaudhuri equations, we have used the strong energy condition (SEC) for timelike congruence and the null energy condition (NEC) for null congruence. Here are some common energy conditions used in general relativity:
 
 - **Null Energy Condition (NEC)**: $T_{\mu \nu} k^{\mu} k^{\nu} \geq 0$ for all null vectors $k^{\mu}$.
 - **Weak Energy Condition (WEC)**: $T_{\mu \nu} V^{\mu} V^{\nu} \geq 0$ for all timelike vectors $V^{\mu}$.
 - **Strong Energy Condition (SEC)**: $\left(T_{\mu \nu} - \frac{1}{2} T g_{\mu \nu}\right) V^{\mu} V^{\nu} \geq 0$ for all timelike vectors $V^{\mu}$.
 - **Dominant Energy Condition (DEC)**: $T_{\mu \nu} V^{\mu} V^{\nu} \geq 0$ and $T^{\mu}_{~\nu} V^{\nu}$ is a non-spacelike vector for all timelike vectors $V^{\mu}$
 
-*ADM formalism*
+# ADM formalism
 
 suppose the spacetime is foliated by a set of spacelike hypersurfaces, which is given by
 
@@ -281,61 +294,322 @@ which are in fact the same as the Hamiltonian and momentum constraints.
 
 *linearized gravity*
 
-consider a small perturbation $h_{\mu\nu}$ around a background metric $g_{\mu\nu}^{(0)}$ (for simplicity, we omit the superscript (0) in the following discussion). we have
+consider a small perturbation $h_{\mu\nu}$ around a background metric $g_{\mu\nu}^{(0)}$ (for simplicity, we omit the superscript (0) in the following discussion). the linearized eom is given by
+
 
 $$\begin{align}
-R_{\mu \nu} & =R^{(0)}_{\mu \nu}+\frac{1}{2}(h_{\nu}^{~\alpha}R_{\mu \alpha}^{(0)}+h_{\mu}^{~\alpha}R^{(0)}_{\nu \alpha}-2h^{\alpha \beta}R^{(0)}_{\mu \alpha \nu \beta}-\nabla^{(0)}_{\alpha}\nabla^{(0)\alpha}h_{\mu \nu}+\nabla_{\mu}^{(0)}\nabla^{(0)}_{\alpha}h_{\nu}^{~\alpha}+\nabla^{(0)}_{\nu}\nabla^{(0)}_{\alpha}h_{\mu}^{~\alpha}-\nabla_{\nu}^{(0)}\nabla_{\mu}^{(0)}h) \\
- & +\frac{1}{4}(-2h^{\beta \gamma}h_{\nu}^{~\alpha}R_{\mu \beta \alpha \gamma}^{(0)}+4h_{\alpha}^{~\gamma}h^{\alpha \beta}R^{(0)}_{\mu \beta \nu \gamma}-2h^{\beta \gamma}h_{\mu}^{~\alpha}R^{(0)}_{\nu \beta \alpha \gamma}-\nabla^{(0)}_{\alpha}h\nabla^{(0)\alpha}h_{\mu \nu}+2\nabla^{(0)\alpha}h_{\mu \nu}\nabla^{(0)}_{\beta}h_{\alpha}^{~\beta}+2h^{\alpha \beta}\nabla^{(0)}_{\beta}\nabla^{(0)}_{\alpha}h_{\mu \nu} \\
- & -2\nabla^{(0)}_{\alpha}h_{\nu \beta}\nabla^{(0)\beta}h_{\mu}^{~\alpha}+2\nabla^{(0)}_{\beta}h_{\nu \alpha}\nabla^{(0)\beta}h_{\mu}^{~\alpha}+\nabla^{(0)}_{\alpha}h\nabla^{(0)}_{\mu}h_{\nu}^{~\alpha}-2\nabla^{(0)}_{\beta}h_{\alpha}^{~\beta}\nabla^{(0)}_{\mu}h_{\nu}^{~\alpha}-2h^{\alpha \beta}\nabla^{(0)}_{\mu}\nabla^{(0)}_{\beta}h_{\nu \alpha}+\nabla^{(0)}_{\mu}h^{\alpha \beta}\nabla^{(0)}_{\nu}h_{\alpha \beta} \\
- & +\nabla^{(0)}_{\alpha}h\nabla^{(0)}_{\nu}h_{\mu}^{\alpha}-2\nabla^{(0)}_{\beta}h_{\alpha}^{\beta}\nabla^{(0)}_{\nu}h_{\mu}^{~\alpha}-2h^{\alpha \beta}\nabla^{(0)}_{\nu}\nabla^{(0)}_{\beta}h_{\mu \alpha}+2h^{\alpha \beta}\nabla^{(0)}_{\nu}\nabla^{(0)}_{\mu}h_{\mu \nu})+\mathcal{O}(h^{3})
+0 = &-\frac{1}{2}\nabla ^{2}h_{\mu \nu}+\nabla _{(\mu}\nabla _{|\alpha|}h_{\nu)}^{~\alpha}-\frac{1}{2}\nabla _{\mu}\nabla _{\nu}h+\frac{1}{2}g_{\mu \nu}(\nabla ^{2}h - \nabla _{\alpha}\nabla _{\beta}h^{\alpha \beta}) \\
+ & +\frac{2}{d-2}\Lambda h_{\mu \nu}+\frac{1}{d-2}\Lambda hg_{\mu \nu}-h^{\alpha \beta}R_{\mu \alpha \nu \beta}^{(0)}
 \end{align}$$
 
+after choosing the gauge
 
-
-and the linearized eom is given by
-
-
-
-*Linearized Gravity in $d$-dimensional Background with $\Lambda$*
-
-Assume the background $g_{\mu\nu}^{(0)}$ satisfies $G_{\mu\nu}^{(0)} + \Lambda g_{\mu\nu}^{(0)} = 0$.
-*   **Background Curvature**: 
-    $$\begin{align}
-    R^{(0)} = \frac{2d}{d-2} \Lambda, \quad R_{\mu\nu}^{(0)} = \frac{2}{d-2} \Lambda g_{\mu\nu}^{(0)}
-    \end{align}$$
-
-**1. Second-Order Action**:
-Expanded to $O(h^2)$ around an Einstein manifold background (indices raised/lowered by $g^{(0)}$):
 $$\begin{align}
-\mathcal{L}^{(2)} = \frac{\sqrt{-g^{(0)}}}{16\pi G} & \left[ -\frac{1}{2} \nabla_\rho h_{\mu\nu} \nabla^\rho h^{\mu\nu} + \nabla_\mu h^{\mu\nu} \nabla_\nu h - \nabla_\mu h^{\mu\nu} \nabla_\rho h^\rho_{~\nu} \right. \\
-& \left. + \frac{1}{2} \nabla_\mu h \nabla^\mu h + R^{(0)}_{\mu\rho\nu\sigma} h^{\mu\nu} h^{\rho\sigma} + \frac{2}{d-2}\Lambda \left( h_{\mu\nu} h^{\mu\nu} - \frac{1}{2} h^2 \right) + \Lambda \left( \frac{1}{2} h_{\mu\nu} h^{\mu\nu} - \frac{1}{4} h^2 \right) \right]
+\nabla _{\mu}h^{\mu \nu}-\frac{1}{2}\nabla ^{\nu}h=0 \\
+\implies \nabla _{\mu}h^{\mu \nu}=0, h=0
 \end{align}$$
-*(The last terms combine the linearized Ricci/Scalar contribution and the cosmological constant volume expansion).*
 
-**2. Wave Equation in Generalized Lorenz Gauge**:
-In the generalized Lorenz gauge $\nabla^\mu \bar{h}_{\mu\nu} = 0$:
+the eom can be simplified as
+
 $$\begin{align}
-\nabla_\rho \nabla^\rho \bar{h}_{\mu\nu} + 2 R^{(0)}_{\mu\rho\nu\sigma} \bar{h}^{\rho\sigma} - \frac{4}{d-2} \Lambda \bar{h}_{\mu\nu} = 0
+\nabla ^{2}h_{\mu \nu}+2h^{\rho \sigma}R_{\mu \rho \nu \sigma}-\frac{4}{d-2}\Lambda h_{\mu \nu} & =0
 \end{align}$$
-*   **Dimensional scaling**: For $d=4$, the mass-like term is $-2\Lambda \bar{h}_{\mu\nu}$. For $d=3$, it becomes $-4\Lambda \bar{h}_{\mu\nu}$.
 
----
+in 4D flat background, it reduces to the simple wave equation
 
-## 5. Important Solutions
-### Schwarzschild (Static, Spherically Symmetric, Vacuum)
-$$ ds^2 = -\left(1 - \frac{2GM}{r}\right)dt^2 + \left(1 - \frac{2GM}{r}\right)^{-1}dr^2 + r^2 d\Omega^2 $$
-*   **Event Horizon**: $r_s = 2GM$.
-*   **Geodesics**:
-    *   Conserved quantities: $E = -(1-2M/r)\dot{t}$, $L = r^2 \sin^2\theta \dot{\phi}$.
-    *   Equation: $\epsilon = - E^2 + \dot{r}^2 + V_{eff}(r)$.
+$$\begin{align}
+\partial^{2}h_{\mu \nu}=0
+\end{align}$$
 
-### FLRW (Cosmology)
-$$ ds^2 = -dt^2 + a^2(t) \left[ \frac{dr^2}{1-kr^2} + r^2 d\Omega^2 \right] $$
-*   $k = +1, 0, -1$ (Closed, Flat, Open).
-*   **Friedmann Equations**:
-    1.  $(\frac{\dot{a}}{a})^2 = \frac{8\pi G}{3}\rho - \frac{k}{a^2} + \frac{\Lambda}{3}$.
-    2.  $\frac{\ddot{a}}{a} = -\frac{4\pi G}{3}(\rho + 3p) + \frac{\Lambda}{3}$.
+the solution is plane wave with two physical polarization states.
 
-## 7. Black Hole Thermodynamics
-*   **Surface Gravity $\kappa$**: $T_H = \frac{\kappa}{2\pi}$. For Schwarzschild: $\kappa = \frac{1}{4GM}$.
-*   **Area Law**: $dS \ge 0$. Entropy $S_{BH} = \frac{A}{4G}$.
+$$\begin{align}
+\varepsilon _{\mu \nu}^{1} & =\begin{pmatrix}
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & -1 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix}, \varepsilon _{\mu \nu}^{2}=\begin{pmatrix}
+0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
+\end{align}$$
+
+or in circular polarization basis
+
+$$\begin{align}
+\varepsilon _{\mu \nu}^{\pm} & =\frac{1}{\sqrt{2}}\left( \varepsilon _{\mu \nu}^{1}\pm i\varepsilon _{\mu \nu}^{2} \right)=\frac{1}{\sqrt{2}}\begin{pmatrix}
+0 & 0 & 0 & 0 \\
+0 & 1 & \pm i & 0 \\
+0 & \pm i & -1 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
+\end{align}$$
+
+# non-perturbative solutions
+
+## Schwarzschild
+
+in $\displaystyle{d}$ dimensions with cosmological constant $\displaystyle{\Lambda}$, the Schwarzschild-(A)dS metric is given by
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-f(r)\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{f(r)}+r^{2}\mathrm{d}\Omega ^{2}_{d-2} \\
+f(r) & =1-\frac{16\pi M}{(d-2)\Omega _{d-2}r^{d-3}}-\frac{2\Lambda r^{2}}{(d-1)(d-2)}
+\end{align}$$
+
+where $\displaystyle{\Omega _{d-2}}$ is the volume of the unit $\displaystyle{S_{d-2}}$ sphere
+
+$$\begin{align}
+\Omega _{d-2} & =\frac{2\pi ^{(d-1)/2}}{\Gamma\left( \frac{d-1}{2} \right)}
+\end{align}$$
+
+### penrose diagram and causal structure
+
+to study the causal structure, we focus on the $\displaystyle{(t,r)}$ coordinates and take the example of 4d Schwarzschild with cosmological constant $\displaystyle{\Lambda =0}$. change to the tortoise coordinate
+
+$$\begin{align}
+\mathrm{d}r^{*} & =\frac{\mathrm{d}r}{f(r)}
+\end{align}$$
+
+and define the null coordinates $\displaystyle{u=t-r^{*}, v=t+r^{*}}$, we have
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-f(r)\mathrm{d}u\mathrm{d}v+r^{2}\mathrm{d}\Omega _{2}^{2}
+\end{align}$$
+
+then define the Kruskal coordinates to eliminate singularity at horizon. let $\displaystyle{\kappa=\frac{1}{2}f'(r_{h})}$ (surface gravity), and define
+
+$$\begin{align}
+U & =-e^{-\kappa u} \\
+V & =e^{\kappa v}
+\end{align}$$
+
+at horizon, $\displaystyle{r=r_{h}\implies UV=0}$, and the metric becomes
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-\frac{f(r)}{\kappa ^{2}e^{2\kappa r^{*}}}\mathrm{d}U\mathrm{d}V+r^{2}\mathrm{d}\Omega _{2}^{2}
+\end{align}$$
+
+which is regular at $\displaystyle{r=r_{h}}$. finally, we can compactify the coordinates to bring infinity to finite distance, e.g.,
+
+$$\begin{align}
+\mathcal{U} & =\arctan U \\
+\mathcal{V} & =\arctan V
+\end{align}$$
+
+and finally we can draw the Penrose diagram, where light cones are at $45^{\circ}$ angles. the boundary lines are
+- $\displaystyle{i^{0}}$: spacelike infinity.
+- $\displaystyle{i^{\pm}}$: future/past timelike infinity.
+- $\displaystyle{\mathscr{I}^{\pm}}$: future/past null infinity.
+- event horizon: $\displaystyle{r=r_{h}\implies UV=0}$.
+- singularity: $\displaystyle{r=0\implies UV=1}$
+- regions: $\displaystyle{UV<0}$ (outside horizon), $\displaystyle{UV>0}$ (inside horizon).
+- black hole: future event horizon.
+- white hole: past event horizon.
+- wormhole: Einstein-Rosen bridge connecting two asymptotically flat regions.
+
+we will use this procedure to draw Penrose diagrams for other spacetimes as well.
+
+#### flat spacetime
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-\mathrm{d}t^{2}+\mathrm{d}r^{2}+r^{2}\mathrm{d}\Omega _{2}^{2}
+\end{align}$$
+
+it is easy since we have no need to eliminate singularity here. define
+
+$$\begin{align}
+u & =t-r \\
+v & =t+r \\
+U & =\arctan u \\
+V & =\arctan v
+\end{align}$$
+
+then we can see
+- $\displaystyle{r=0\implies U=V}$ (origin).
+- $\displaystyle{r\to \infty \implies U=-\frac{\pi}{2}, V=\frac{\pi}{2}}$ (infinity).
+- regions: $\displaystyle{V>U}$ (physical spacetime), $\displaystyle{V<U}$ (unphysical).
+- boundaries: $\displaystyle{i^{0}}$ (spacelike infinity), $\displaystyle{i^{\pm}}$ (future/past timelike infinity), $\displaystyle{\mathscr{I}^{\pm}}$ (future/past null infinity).
+- the Penrose diagram is a diamond shape.
+
+#### Schwarzschild black hole with negative mass
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-f(r)\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{f(r)}+r^{2}\mathrm{d}\Omega ^{2} \\
+f(r) & =1+\frac{2\mathcal{M}}{r},\quad \mathcal{M}=-M>0
+\end{align}$$
+
+there is no horizon since $\displaystyle{f(r)>0 \,\forall r> 0}$, and there is a naked singularity at $\displaystyle{r=0}$. define
+
+$$\begin{align}
+\mathrm{d}r^{*} & =\frac{\mathrm{d}r}{f(r)} \\
+\implies r^{*} & =r-\mathcal{M}\ln \left(1+\frac{r}{2\mathcal{M}}\right)
+\end{align}$$
+
+and define null coordinates
+
+$$\begin{align}
+u & =t-r^{*} \\
+v & =t+r^{*}
+\end{align}$$
+
+then we have
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-f(r)\mathrm{d}u\mathrm{d}v+r^{2}\mathrm{d}\Omega _{2}^{2}
+\end{align}$$
+
+there is no need to define Kruskal coordinates since there is no horizon. finally, compactify the coordinates
+
+$$\begin{align}
+U & =\arctan u \\
+V & =\arctan v
+\end{align}$$
+
+then we have
+- $\displaystyle{r=0\implies U=V}$, timelike singularity.
+- other parts are the same as half of flat spacetime Penrose diagram.
+
+#### AdS spacetime
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-f(r)\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{f(r)}+r^{2}\mathrm{d}\Omega _{d-2}^{2} \\
+f(r) & =1+r^{2}
+\end{align}$$
+
+here we set the AdS radius $\displaystyle{\ell =1}$. define
+
+$$\begin{align}
+\mathrm{d}r^{*} & =\frac{\mathrm{d}r}{f(r)} \\
+\implies r^{*} & =\arctan r
+\end{align}$$
+
+and define null coordinates
+
+$$\begin{align}
+u & =t-r^{*} \\
+v & =t+r^{*}
+\end{align}$$
+
+then we have
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-f(r)\mathrm{d}u\mathrm{d}v+r^{2}\mathrm{d}\Omega _{d-2}^{2}
+\end{align}$$
+
+finally, compactify the coordinates
+
+$$\begin{align}
+U & =\arctan u \\
+V & =\arctan v
+\end{align}$$
+
+then we have
+- $\displaystyle{r=0\implies U=V}$, timelike origin.
+- $\displaystyle{r\to \infty \implies r^{*}\to \frac{\pi}{2}\implies v-u=\pi}$, timelike infinity.
+- regions: $\displaystyle{V>U}$ (physical spacetime), $\displaystyle{V<U}$ (unphysical).
+- boundaries: $\displaystyle{i^{\pm}}$ (future/past timelike infinity), $\displaystyle{\mathscr{I}^{\pm}}$ (future/past null infinity).
+- the Penrose diagram is an infinite strip.
+
+#### Reissener-Nordstrøm blackhole
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-f(r)\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{f(r)}+r^{2}\mathrm{d}\Omega _{2}^{2} \\
+f(r) & =1-\frac{2M}{r}+\frac{Q^{2}}{r^{2}}
+\end{align}$$
+
+there are two horizons at $\displaystyle{r_{\pm}=M\pm \sqrt{M^{2}-Q^{2}}}$ for $\displaystyle{M>|Q|}$ which we assume in the following. define
+
+$$\begin{align}
+\mathrm{d}r^{*} & =\frac{\mathrm{d}r}{f(r)} \\
+\implies r^{*} & =r+\frac{r_{+}^{2}}{r_{+}-r_{-}}\ln |r-r_{+}|-\frac{r_{-}^{2}}{r_{+}-r_{-}}\ln |r-r_{-}|
+\end{align}$$
+
+and define null coordinates
+
+$$\begin{align}
+u & =t-r^{*} \\
+v & =t+r^{*}
+\end{align}$$
+
+then we have
+
+$$\begin{align}
+\mathrm{d}s^{2} & =-f(r)\mathrm{d}u\mathrm{d}v+r^{2}\mathrm{d}\Omega _{2}^{2}
+\end{align}$$
+
+to eliminate singularity at horizons, define Kruskal coordinates in different regions:
+
+- region I ($r>r_{+}$):
+$$\begin{align}
+U & =-e^{-\kappa _{+}u} \\
+V & =e^{\kappa _{+}v}
+\end{align}$$
+- region II ($r_{-}<r<r_{+}$):
+$$\begin{align}
+U & =-e^{-\kappa _{+}u} \\
+V & =-e^{\kappa _{+}v}
+\end{align}$$
+- region III ($r<r_{-}$):
+$$\begin{align}
+U & =e^{-\kappa _{-}u} \\
+V & =-e^{\kappa _{-}v}
+\end{align}$$
+
+where $\displaystyle{\kappa _{\pm}=\frac{r_{+}-r_{-}}{2r_{\pm}^{2}}}$ are the surface gravities at the two horizons. finally, compactify the coordinates
+
+$$\begin{align}
+\mathcal{U} & =\arctan U \\
+\mathcal{V} & =\arctan V
+\end{align}$$
+
+then we have
+- $\displaystyle{r=r_{+}\implies UV=0}$, outer horizon.
+- $\displaystyle{r=r_{-}\implies UV=1}$, inner horizon.
+- $\displaystyle{r=0\implies UV=\frac{M^{2}}{M^{2}-Q^{2}}}$, timelike singularity.
+- regions: $\displaystyle{UV<0}$ (outside outer horizon), $\displaystyle{0<UV<1}$ (between horizons), $\displaystyle{UV>1}$ (inside inner horizon).
+- the Penrose diagram is an infinite tower of diamond shapes, between two shapes is the wormhole connecting two asymptotically flat regions.
+
+![[Attachments/Pasted image 20260126180911.png]]
+
+#### Gravitational collapse (Oppenheimer-Snyder)
+For a star collapsing into a black hole, the spacetime is patched by a star interior (FRW uniform density dust) and an exterior Schwarzschild metric.
+- The diagram starts with a smooth origin (like Minkowski) in the past.
+- The surface of the star follows a timelike trajectory, crossing the horizon $r=2M$ at some finite proper time.
+- The singularity $r=0$ forms in the future.
+- **Key difference**: No white hole, no "parallel universe" region. The causal past is modified compared to eternal Schwarzschild.
+
+#### FLRW Cosmology
+Metric in conformal time $\eta$:
+$$\begin{align}
+\mathrm{d}s^2 = a^2(\eta) [-\mathrm{d}\eta^2 + \mathrm{d}\chi^2 + S_k^2(\chi)\mathrm{d}\Omega^2]
+\end{align}$$
+The causal structure depends on the range of $\eta$ and $k$:
+1.  **Matter/Radiation Dominated ($k=0$)**: $\eta \in (0, \infty)$. Diagram is a triangle (singular Big Bang at $\eta=0$).
+2.  **Dark Energy Dominated (de Sitter)**: $\eta \in (-\infty, 0)$. Diagram is a square (infinite past to infinite future).
+    *   Has a cosmological event horizon for any observer.
+3.  **Minkowski**: $a=1$, $\eta \in (-\infty, \infty)$. Diamond.
+
+# Stellar Structure
+**TOV Equation** (Tolman-Oppenheimer-Volkoff) for static spherically symmetric stars:
+$$\begin{align}
+\frac{\mathrm{d}p}{\mathrm{d}r} &= - \frac{(\rho+p)(m + 4\pi r^3 p)}{r(r-2m)} \\
+\frac{\mathrm{d}m}{\mathrm{d}r} &= 4\pi r^2 \rho
+\end{align}$$
+Combined with Equation of State $p=p(\rho)$.
+*   **Buchdahl Limit**: For a stable static sphere, $M < \frac{4}{9}R$. If $R < \frac{9}{4}M$, it must collapse.
+
+# Cosmology
+**Friedmann Equations** for FLRW metric:
+$$\begin{align}
+\left( \frac{\dot{a}}{a} \right)^2 &= \frac{8\pi G}{3}\rho - \frac{k}{a^2} + \frac{\Lambda}{3} \\
+\frac{\ddot{a}}{a} &= -\frac{4\pi G}{3}(\rho + 3p) + \frac{\Lambda}{3}
+\end{align}$$
+**Conservation**: $\dot{\rho} + 3H(\rho+p) = 0$.
+**Parameters**:
+*   Critical density $\rho_c = \frac{3H^2}{8\pi G}$.
+*   Density parameter $\Omega = \rho/\rho_c$.
+*   Deceleration parameter $q = -\frac{a\ddot{a}}{\dot{a}^2}$.
+
