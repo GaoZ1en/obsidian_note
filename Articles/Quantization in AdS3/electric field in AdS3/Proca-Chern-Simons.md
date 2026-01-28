@@ -189,6 +189,10 @@ $$\begin{align}
 then the eom of Proca field can be written as
 
 $$\begin{align}
+\nabla _{\mu}F^{\mu \nu}-\mu ^{2}A^{\nu}=0
+\end{align}$$
+
+$$\begin{align}
 (\mathcal{D}^{+})_{\mu}^{~\nu}(\mathcal{D}^{-})_{\nu}^{~\rho}A_{\rho} & =0
 \end{align}$$
 
@@ -197,6 +201,11 @@ we have already discussed this system in our present work. here we will perform 
 $$\begin{align}
 (\mathcal{D}^{+})_{\mu}^{~\nu}A_{\nu} & =0\implies \varepsilon _{\mu}^{~\alpha \nu}\nabla _{\alpha}A_{\nu}=-\mu A_{\mu} \\
 (\mathcal{D}^{-})_{\mu}^{~\nu}A_{\nu} & =0\implies\varepsilon _{\mu}^{~\alpha \nu}\nabla _{\alpha}A_{\nu}=\mu A_{\mu}
+\end{align}$$
+
+$$\begin{align}
+\mathcal{D}^{+}A_{+}^{\nu} & =0 \\
+\implies \mathcal{D}^{\mp}A_{\pm}^{\nu} & = \mp\frac{2}{\mu}A_{\pm}^{\nu}
 \end{align}$$
 
 inserting to the Casimir operators, we have
