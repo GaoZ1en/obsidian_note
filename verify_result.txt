@@ -1,0 +1,63 @@
+--- Checking N=1, alpha -> -1 ---
+  j=0: Path1 (n fixed)=1e-09, Path2 (alpha fixed)=1e-12
+  j=1: Path1 (n fixed)=-2, Path2 (alpha fixed)=-2
+  j=2: Path1 (n fixed)=6, Path2 (alpha fixed)=6
+  j=3: Path1 (n fixed)=-12, Path2 (alpha fixed)=-12
+--- Checking N=1, alpha -> -2 ---
+  j=0: Path1 (n fixed)=-1, Path2 (alpha fixed)=-1e-07
+  j=1: Path1 (n fixed)=-1, Path2 (alpha fixed)=-1e-07
+  j=2: Path1 (n fixed)=2e+09, Path2 (alpha fixed)=2e+05
+  j=3: Path1 (n fixed)=-6e+09, Path2 (alpha fixed)=-6e+05
+  j=4: Path1 (n fixed)=1.2e+10, Path2 (alpha fixed)=1.2e+06
+--- Checking N=1, alpha -> -3 ---
+  j=0: Path1 (n fixed)=-2, Path2 (alpha fixed)=-2e-07
+  j=1: Path1 (n fixed)=-1e-09, Path2 (alpha fixed)=-1e-12
+  j=2: Path1 (n fixed)=-1e-09, Path2 (alpha fixed)=-1e-12
+  j=3: Path1 (n fixed)=2, Path2 (alpha fixed)=2
+  j=4: Path1 (n fixed)=-6, Path2 (alpha fixed)=-6
+  j=5: Path1 (n fixed)=12, Path2 (alpha fixed)=12
+--- Checking N=2, alpha -> -1 ---
+  j=0: Path1 (n fixed)=5e-10, Path2 (alpha fixed)=5e-13
+  j=1: Path1 (n fixed)=-3, Path2 (alpha fixed)=-3
+  j=2: Path1 (n fixed)=18, Path2 (alpha fixed)=18
+  j=3: Path1 (n fixed)=-60, Path2 (alpha fixed)=-60
+  j=4: Path1 (n fixed)=150, Path2 (alpha fixed)=150
+--- Checking N=2, alpha -> -2 ---
+  j=0: Path1 (n fixed)=-5e-10, Path2 (alpha fixed)=-5e-13
+  j=1: Path1 (n fixed)=-2e-09, Path2 (alpha fixed)=-2e-12
+  j=2: Path1 (n fixed)=9, Path2 (alpha fixed)=9
+  j=3: Path1 (n fixed)=-48, Path2 (alpha fixed)=-48
+  j=4: Path1 (n fixed)=150, Path2 (alpha fixed)=150
+  j=5: Path1 (n fixed)=-360, Path2 (alpha fixed)=-360
+--- Checking N=2, alpha -> -3 ---
+  j=0: Path1 (n fixed)=1, Path2 (alpha fixed)=1e-07
+  j=1: Path1 (n fixed)=1, Path2 (alpha fixed)=1e-07
+  j=2: Path1 (n fixed)=3, Path2 (alpha fixed)=3e-07
+  j=3: Path1 (n fixed)=-1.2e+10, Path2 (alpha fixed)=-1.2e+06
+  j=4: Path1 (n fixed)=6e+10, Path2 (alpha fixed)=6e+06
+  j=5: Path1 (n fixed)=-1.8e+11, Path2 (alpha fixed)=-1.8e+07
+  j=6: Path1 (n fixed)=4.2e+11, Path2 (alpha fixed)=4.2e+07
+--- Checking N=3, alpha -> -1 ---
+  j=0: Path1 (n fixed)=3.333e-10, Path2 (alpha fixed)=3.333e-13
+  j=1: Path1 (n fixed)=-4, Path2 (alpha fixed)=-4
+  j=2: Path1 (n fixed)=40, Path2 (alpha fixed)=40
+  j=3: Path1 (n fixed)=-200, Path2 (alpha fixed)=-200
+  j=4: Path1 (n fixed)=700, Path2 (alpha fixed)=700
+  j=5: Path1 (n fixed)=-1960, Path2 (alpha fixed)=-1960
+--- Checking N=3, alpha -> -2 ---
+  j=0: Path1 (n fixed)=-1.667e-10, Path2 (alpha fixed)=-1.667e-13
+  j=1: Path1 (n fixed)=-1.5e-09, Path2 (alpha fixed)=-1.5e-12
+  j=2: Path1 (n fixed)=12, Path2 (alpha fixed)=12
+  j=3: Path1 (n fixed)=-100, Path2 (alpha fixed)=-100
+  j=4: Path1 (n fixed)=450, Path2 (alpha fixed)=450
+  j=5: Path1 (n fixed)=-1470, Path2 (alpha fixed)=-1470
+  j=6: Path1 (n fixed)=3920, Path2 (alpha fixed)=3920
+--- Checking N=3, alpha -> -3 ---
+  j=0: Path1 (n fixed)=3.333e-10, Path2 (alpha fixed)=3.334e-13
+  j=1: Path1 (n fixed)=1e-09, Path2 (alpha fixed)=1e-12
+  j=2: Path1 (n fixed)=6e-09, Path2 (alpha fixed)=6.001e-12
+  j=3: Path1 (n fixed)=-40, Path2 (alpha fixed)=-40
+  j=4: Path1 (n fixed)=300, Path2 (alpha fixed)=300
+  j=5: Path1 (n fixed)=-1260, Path2 (alpha fixed)=-1260
+  j=6: Path1 (n fixed)=3920, Path2 (alpha fixed)=3920
+  j=7: Path1 (n fixed)=-1.008e+04, Path2 (alpha fixed)=-1.008e+04

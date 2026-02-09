@@ -4,11 +4,11 @@ $$\begin{align}
 S & =\int _{M}\mathrm{d}^{d}x\sqrt{ -g }\left( \frac{i}{2}\bar{\psi}\gamma ^{\mu}\partial _{\mu}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\overleftarrow{\partial _{\mu}}\psi -m\bar{\psi}\psi \right)
 \end{align}$$
 
-consider a diffeomorphism $\displaystyle{x^{\mu}\to x^{\mu}+\xi ^{\mu}}$, the transformation of the Dirac field is given by
+which gives the eom for $\displaystyle{\psi}$ and $\displaystyle{\bar{\psi}}$ as
 
 $$\begin{align}
-\delta _{\xi}\psi & =\mathcal{L}_{\xi}\psi \\
- & =\xi ^{\mu}\partial _{\mu}\psi +\frac{1}{4}\partial _{\mu}\xi _{\nu}\gamma ^{\mu \nu}\psi
+i\gamma ^{\mu}\partial _{\mu}\psi-m\psi & =0 \\
+-i\partial ^{\mu}\bar{\psi}\gamma ^{\mu}-m\bar{\psi} & =0
 \end{align}$$
 
 the canonical energy-momentum tensor derived from the translation invariance is
@@ -47,5 +47,14 @@ $$\begin{align}
 T^{\mu \nu}_{\text{sym}} & =T^{\mu \nu}_{\text{can}}+\partial _{\lambda}B^{\lambda \mu \nu} \\
  & =\frac{i}{2}\bar{\psi}\gamma ^{\mu}\overleftrightarrow{\partial ^{\nu}}\psi+\frac{i}{2}\partial _{\lambda}[\bar{\psi}(\eta ^{\mu \nu}\gamma ^{\lambda}-\eta ^{\nu \lambda}\gamma ^{\mu})\psi] \\
  & =\frac{i}{2}\bar{\psi}\gamma ^{\mu}\partial ^{\nu}\psi-\frac{i}{2}\partial ^{\nu}\bar{\psi}\gamma ^{\mu}\psi+\frac{i}{2}\eta ^{\mu \nu}\partial _{\lambda}\bar{\psi}\gamma ^{\lambda}\psi+\frac{i}{2}\eta ^{\mu \nu}\bar{\psi}\gamma ^{\lambda}\partial _{\lambda}\psi-\frac{i}{2}\partial ^{\nu}\bar{\psi}\gamma ^{\mu}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\partial ^{\nu}\psi \\
- & \approx 
+ & \approx -i\partial ^{\nu}\bar{\psi}\gamma ^{\mu}\psi
 \end{align}$$
+
+and finally symmetrizing the indices, we get
+
+$$\begin{align}
+T^{\mu \nu}_{\text{sym}} & =\frac{1}{2}(T^{\mu \nu}_{\text{sym}}+T^{\nu \mu}_{\text{sym}}) \\
+ & = -\frac{i}{2}\partial ^{\nu}\bar{\psi}\gamma ^{\mu}\psi-\frac{i}{2}\partial ^{\mu}\bar{\psi}\gamma ^{\nu}\psi \\
+ & \approx \frac{i}{4}\bar{\psi}\gamma ^{\mu}\overleftrightarrow{\partial ^{\nu}}\psi+\frac{i}{4}\bar{\psi}\gamma ^{\nu}\overleftrightarrow{\partial ^{\mu}}\psi
+\end{align}$$
+
