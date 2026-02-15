@@ -136,3 +136,4 @@ $$\begin{align}
     This provides the quantization condition for $\displaystyle{\omega}$.
 
 The solution for $\displaystyle{\Psi}$ can be found in terms of Hypergeometric functions (similar to the infinite case but with different parameters/indices), and the spectrum is determined by the root of the derivative condition at $\displaystyle{r_{0}}$.
+
