@@ -71,69 +71,59 @@ there is no nontrivial solution for $\displaystyle{f^{\mu}}$ that satisfies the 
 the constraint equation is more clear in the subscription form, i.e.,
 
 $$\begin{align}
--i\omega \partial _{r}f_{t}-im \frac{1+r^{2}}{r}\partial _{r}f_{\phi} & =0
+-i\omega \partial _{r}f_{t}-im \frac{1+r^{2}}{r^{2}}\partial _{r}f_{\phi} & =0
 \end{align}$$
 
 and other equations can be written as
 
 $$\begin{align}
-(1+r^{2})\partial _{r}^{2}f_t+\frac{1}{r}\partial _{r}f_{t}-\frac{m^{2}}{r^{2}}f_{t}-\frac{\omega m}{r^{2}(1+r^{2})}f_{\phi} & =0
+(1+r^{2})\partial _{r}^{2}f_{t}+\frac{1+r^{2}}{r}\partial _{r}f_{t}-\frac{m^{2}}{r^{2}}f_{t}-\frac{\omega m}{r^{2}}f_{\phi} & =0 \\
+(1+r^{2})\partial _{r}^{2}f_{\phi}+\frac{-1+r^{2}}{r}\partial _{r}f_{\phi}+\frac{\omega ^{2}}{1+r^{2}}f_{\phi}+\frac{\omega m}{1+r^{2}}f_{t} & =0
 \end{align}$$
+
+here
 
 $$\begin{align}
 f^{t} & =g^{tt}f_{t}=-\frac{1}{1+r^{2}}f_{t} \\
 f^{\phi} & =\frac{1}{r^{2}}f_{\phi}
 \end{align}$$
 
+introduce a new variable $\displaystyle{\xi = f_{\phi}'}$ to decouple the equations. these two equations can be combined into a single second order equation for $\displaystyle{\xi}$:
 
-However, a more systematic way to decouple the equations is to work in the Fourier domain $\displaystyle{A^{\mu}=e^{-i\omega t+im\phi}f^{\mu}(r)}$ (with $\displaystyle{f^{r}=0}$). The equations become:
-
-1.  Constraint (from $\displaystyle{\nabla _{\mu}F^{\mu r}=0}$):
-    $$\begin{align}
-    f^{t}{}' & = -\frac{m}{\omega}\frac{1+r^{2}}{r^{2}}f^{\phi}{}'
-    \end{align}$$
-    (Note: This relates the derivatives of the fields).
-
-2.  Dynamical equations (linear cobination of $\displaystyle{\nabla _{\mu}F^{\mu t}=0}$ and $\displaystyle{\nabla _{\mu}F^{\mu \phi}=0}$ reduces to):
-    $$\begin{align}
-    \frac{\mathrm{d}}{\mathrm{d}r}\left( r \frac{\mathrm{d}f^{t}}{\mathrm{d}r} \right) & = \frac{m}{r(1+r^{2})}(m f^{t}+\omega f^{\phi}) \\
-    \frac{\mathrm{d}}{\mathrm{d}r}\left( \frac{1+r^{2}}{r} \frac{\mathrm{d}f^{\phi}}{\mathrm{d}r} \right) & = -\frac{\omega}{r(1+r^{2})}(m f^{t}+\omega f^{\phi})
-    \end{align}$$
-    It can be shown that substituting (1) into the second dynamical equation yields the first dynamical equation, so the system is consistent and contains one independent dynamical degree of freedom.
-
-To solve this, we introduce an auxiliary scalar potential $\displaystyle{\Psi(r)}$ related to the field strength component $\displaystyle{F_{r\phi}}$:
 $$\begin{align}
-f^{\phi}{}'(r) & = -i\omega \Psi(r)
-\end{align}$$
-Then from the constraint (1), we have:
-$$\begin{align}
-f^{t}{}'(r) & = i m \frac{1+r^{2}}{r^{2}} \Psi(r)
+(1+r^{2})\xi''+\frac{-1+5r^{2}}{r}\xi'+\left(3+\frac{\omega ^{2}-4}{1+r^{2}}-\frac{m^{2}-1}{r^{2}}\right)\xi & =0
 \end{align}$$
 
-Substituting these into the second dynamical equation (for $\displaystyle{f^{\phi}}$):
+To find the boundary condition for $\displaystyle{\xi}$ at $\displaystyle{r=r_{0}}$, we revisit the equation of motion for $\displaystyle{f_{\phi}}$:
+
 $$\begin{align}
-\frac{\mathrm{d}}{\mathrm{d}r}\left( \frac{1+r^{2}}{r} (-i\omega \Psi) \right) & = -\frac{\omega}{r(1+r^{2})}(m f^{t}+\omega f^{\phi}) \\
-\implies \frac{\mathrm{d}}{\mathrm{d}r}\left( \frac{1+r^{2}}{r} \Psi \right) & = \frac{1}{i r(1+r^{2})}(m f^{t}+\omega f^{\phi})
-\end{align}$$
-Differentiating this relation with respect to $\displaystyle{r}$ again allows us to eliminate $\displaystyle{f^{t}, f^{\phi}}$ using their derivatives:
-$$\begin{align}
-\frac{\mathrm{d}}{\mathrm{d}r}\left[ r(1+r^{2}) \frac{\mathrm{d}}{\mathrm{d}r}\left( \frac{1+r^{2}}{r} \Psi \right) \right] & = \frac{1}{i} (m f^{t}{}' + \omega f^{\phi}{}') \\
-& = \frac{1}{i} \left( m \cdot im \frac{1+r^{2}}{r^{2}}\Psi + \omega \cdot (-i\omega \Psi) \right) \\
-& = \left( m^{2}\frac{1+r^{2}}{r^{2}} - \omega^{2} \right) \Psi
+(1+r^{2})f_{\phi}''+\frac{-1+r^{2}}{r}f_{\phi}'+\frac{\omega ^{2}}{1+r^{2}}f_{\phi}+\frac{\omega m}{1+r^{2}}f_{t} & =0
 \end{align}$$
 
-Thus, $\displaystyle{\Psi}$ satisfies a second-order linear ODE:
+Substitute $\displaystyle{f_{\phi}' = \xi}$ and $\displaystyle{f_{\phi}'' = \xi'}$ into this equation. At the boundary $\displaystyle{r=r_{0}}$, we have the Dirichlet conditions $\displaystyle{f_{\phi}(r_{0})=0}$ and $\displaystyle{f_{t}(r_{0})=0}$.
+Thus, the terms proportional to $\displaystyle{f_{\phi}}$ and $\displaystyle{f_{t}}$ vanish at the boundary. The equation simplifies to:
+
 $$\begin{align}
-\frac{\mathrm{d}}{\mathrm{d}r}\left[ r(1+r^{2}) \frac{\mathrm{d}}{\mathrm{d}r}\left( \frac{1+r^{2}}{r} \Psi \right) \right] + \left( \omega^{2} - m^{2}\frac{1+r^{2}}{r^{2}} \right) \Psi & = 0
+(1+r_{0}^{2})\xi'(r_{0})+\frac{-1+r_{0}^{2}}{r_{0}}\xi(r_{0}) & =0
 \end{align}$$
 
-**Boundary Conditions:**
-1.  **At the origin ($r \to 0$):** We require regular solutions.
-2.  **At the boundary ($r=r_{0}$):** The condition $\displaystyle{f^{t}(r_{0})=f^{\phi}(r_{0})=0}$ implies $\displaystyle{m f^{t}(r_{0}) + \omega f^{\phi}(r_{0}) = 0}$. From the intermediate equation above, this is equivalent to:
-    $$\begin{align}
-    \left. \frac{\mathrm{d}}{\mathrm{d}r}\left( \frac{1+r^{2}}{r} \Psi \right) \right|_{r=r_{0}} & = 0
-    \end{align}$$
-    This provides the quantization condition for $\displaystyle{\omega}$.
+This provides a mixed (Robin) boundary condition for $\displaystyle{\xi}$ at $\displaystyle{r=r_{0}}$.
 
-The solution for $\displaystyle{\Psi}$ can be found in terms of Hypergeometric functions (similar to the infinite case but with different parameters/indices), and the spectrum is determined by the root of the derivative condition at $\displaystyle{r_{0}}$.
+To solve the equation for $\displaystyle{\xi}$, we can make a variable substitution to transform it into a standard Hypergeometric equation. Let $\displaystyle{z = -r^{2}}$ (or $\displaystyle{z = \frac{r^{2}}{1+r^{2}}}$ for finite domain).
+Using $\displaystyle{z = -r^{2}}$, the equation becomes:
+$$\begin{align}
+z(1-z)\frac{\mathrm{d}^{2}\xi}{\mathrm{d}z^{2}} + (2-3z)\frac{\mathrm{d}\xi}{\mathrm{d}z} - \frac{1}{4}\left( 3 + \frac{\omega^{2}-4}{1-z} + \frac{m^{2}-1}{z} \right)\xi & = 0
+\end{align}$$
+We can strip off the asymptotic behaviors near singular points.
+Near $\displaystyle{z \to 0}$ (origin $\displaystyle{r \to 0}$): The term $\displaystyle{-\frac{m^{2}-1}{4z}}$ dominates. The indicial equation gives characteristic exponents related to $\displaystyle{\frac{m^{2}-1}{4}}$.
+Near $\displaystyle{z \to 1}$ (infinity if not cut off): The term $\displaystyle{-\frac{\omega^{2}-4}{4(1-z)}}$ dominates.
 
+Let $\displaystyle{\xi(z) = z^{\alpha} (1-z)^{\beta} F(z)}$. The standard form requires $\displaystyle{\xi \sim z^{\alpha}}$ near 0.
+Indicial equation at $\displaystyle{z=0}$: $\displaystyle{\alpha(\alpha-1) + 2\alpha - \frac{m^{2}-1}{4} = 0 \implies \alpha^{2} + \alpha - \frac{m^{2}-1}{4} = 0 \implies (2\alpha+1)^{2} = m^{2} \implies \alpha = \frac{\pm |m| - 1}{2}}$.
+For regularity of $f_{\phi} \sim r^{|m|}$, we expect $\xi = f'_{\phi} \sim r^{|m|-1} \sim z^{(|m|-1)/2}$. Thus we choose $\displaystyle{\alpha = \frac{|m|-1}{2}}$.
+
+Indicial equation at $\displaystyle{z=1}$: $\displaystyle{\beta(\beta-1) - (-3-1)\beta \dots}$ - wait, standard form is usually $\displaystyle{\frac{\dots}{1-z}}$. Let's just solve it directly.
+Using ansatz $\displaystyle{\xi = r^{|m|-1} (1+r^{2})^{\delta} H(-r^{2})}$.
+Let's try $\displaystyle{\xi = r^{|m|-1} (1+r^{2})^{1-\frac{\omega}{2}} F(-r^{2})}$.
+...
+(Detailed solution to usually follows here)
