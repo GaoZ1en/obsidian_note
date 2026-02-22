@@ -88,42 +88,47 @@ f^{t} & =g^{tt}f_{t}=-\frac{1}{1+r^{2}}f_{t} \\
 f^{\phi} & =\frac{1}{r^{2}}f_{\phi}
 \end{align}$$
 
-introduce a new variable $\displaystyle{\xi = f_{\phi}'}$ to decouple the equations. these two equations can be combined into a single second order equation for $\displaystyle{\xi}$:
+introduce a new variable $\displaystyle{\xi = f_{\phi}'}$ to decouple the equations. these two equations implies the same equation for $\displaystyle{\xi}$ as
 
 $$\begin{align}
 (1+r^{2})\xi''+\frac{-1+5r^{2}}{r}\xi'+\left(3+\frac{\omega ^{2}-4}{1+r^{2}}-\frac{m^{2}-1}{r^{2}}\right)\xi & =0
 \end{align}$$
 
-To find the boundary condition for $\displaystyle{\xi}$ at $\displaystyle{r=r_{0}}$, we revisit the equation of motion for $\displaystyle{f_{\phi}}$:
+to find the boundary condition for $\displaystyle{\xi}$ at $\displaystyle{r=r_{0}}$, we revisit the equation of motion for $\displaystyle{f_{\phi}}$:
 
 $$\begin{align}
-(1+r^{2})f_{\phi}''+\frac{-1+r^{2}}{r}f_{\phi}'+\frac{\omega ^{2}}{1+r^{2}}f_{\phi}+\frac{\omega m}{1+r^{2}}f_{t} & =0
+(1+r^{2}_{0})\xi'|_{r_{0}}+\frac{-1+r_{0}^{2}}{r_{0}}\xi|_{r_{0}} & =0
 \end{align}$$
 
-Substitute $\displaystyle{f_{\phi}' = \xi}$ and $\displaystyle{f_{\phi}'' = \xi'}$ into this equation. At the boundary $\displaystyle{r=r_{0}}$, we have the Dirichlet conditions $\displaystyle{f_{\phi}(r_{0})=0}$ and $\displaystyle{f_{t}(r_{0})=0}$.
-Thus, the terms proportional to $\displaystyle{f_{\phi}}$ and $\displaystyle{f_{t}}$ vanish at the boundary. The equation simplifies to:
+the two solutions near $\displaystyle{r=0}$ are given by
 
 $$\begin{align}
-(1+r_{0}^{2})\xi'(r_{0})+\frac{-1+r_{0}^{2}}{r_{0}}\xi(r_{0}) & =0
+\xi ^{(1)} & =r^{1-m}(1+r^{2})^{-1+\omega/2}{}_{2}F_{1}\left(\frac{-m+\omega}{2}, \frac{2-m+\omega}{2}; 1-m;-r^{2}\right) \\
+\xi ^{(2)} & =r^{1+m}(1+r^{2})^{-1+\omega/2}{}_{2}F_{1}\left(\frac{m+\omega}{2}, \frac{2+m+\omega}{2}; 1+m;-r^{2}\right)
 \end{align}$$
 
-This provides a mixed (Robin) boundary condition for $\displaystyle{\xi}$ at $\displaystyle{r=r_{0}}$.
+and we have to drop the first solution since it is not regular at $\displaystyle{r=0}$.
 
-To solve the equation for $\displaystyle{\xi}$, we can make a variable substitution to transform it into a standard Hypergeometric equation. Let $\displaystyle{z = -r^{2}}$ (or $\displaystyle{z = \frac{r^{2}}{1+r^{2}}}$ for finite domain).
-Using $\displaystyle{z = -r^{2}}$, the equation becomes:
 $$\begin{align}
-z(1-z)\frac{\mathrm{d}^{2}\xi}{\mathrm{d}z^{2}} + (2-3z)\frac{\mathrm{d}\xi}{\mathrm{d}z} - \frac{1}{4}\left( 3 + \frac{\omega^{2}-4}{1-z} + \frac{m^{2}-1}{z} \right)\xi & = 0
+\xi & = r^{1+m}(1+r^{2})^{-1+\omega/2}{}_{2}F_{1}\left(\frac{m+\omega}{2},\frac{2+m+\omega}{2};1+m;-r^{2}\right)
 \end{align}$$
-We can strip off the asymptotic behaviors near singular points.
-Near $\displaystyle{z \to 0}$ (origin $\displaystyle{r \to 0}$): The term $\displaystyle{-\frac{m^{2}-1}{4z}}$ dominates. The indicial equation gives characteristic exponents related to $\displaystyle{\frac{m^{2}-1}{4}}$.
-Near $\displaystyle{z \to 1}$ (infinity if not cut off): The term $\displaystyle{-\frac{\omega^{2}-4}{4(1-z)}}$ dominates.
 
-Let $\displaystyle{\xi(z) = z^{\alpha} (1-z)^{\beta} F(z)}$. The standard form requires $\displaystyle{\xi \sim z^{\alpha}}$ near 0.
-Indicial equation at $\displaystyle{z=0}$: $\displaystyle{\alpha(\alpha-1) + 2\alpha - \frac{m^{2}-1}{4} = 0 \implies \alpha^{2} + \alpha - \frac{m^{2}-1}{4} = 0 \implies (2\alpha+1)^{2} = m^{2} \implies \alpha = \frac{\pm |m| - 1}{2}}$.
-For regularity of $f_{\phi} \sim r^{|m|}$, we expect $\xi = f'_{\phi} \sim r^{|m|-1} \sim z^{(|m|-1)/2}$. Thus we choose $\displaystyle{\alpha = \frac{|m|-1}{2}}$.
+to satisfy the boundary condition at $\displaystyle{r=r_{0}}$, we have to require
 
-Indicial equation at $\displaystyle{z=1}$: $\displaystyle{\beta(\beta-1) - (-3-1)\beta \dots}$ - wait, standard form is usually $\displaystyle{\frac{\dots}{1-z}}$. Let's just solve it directly.
-Using ansatz $\displaystyle{\xi = r^{|m|-1} (1+r^{2})^{\delta} H(-r^{2})}$.
-Let's try $\displaystyle{\xi = r^{|m|-1} (1+r^{2})^{1-\frac{\omega}{2}} F(-r^{2})}$.
-...
-(Detailed solution to usually follows here)
+$$\begin{align}
+(1+r^{2}_{0})\xi'|_{r_{0}}+\frac{-1+r_{0}^{2}}{r_{0}}\xi|_{r_{0}} & =0
+\end{align}$$
+
+which determines the quantized spectrum of $\displaystyle{\omega}$ for each $\displaystyle{m}$. by numerically solving the above equation for large $\displaystyle{r_{0}}$, we can find the approximate spectrum of the gauge field in this finite AdS system. results are shown in the following figure for $\displaystyle{r_{0}=100}$ and $\displaystyle{m=0, 1, 2}$:
+
+![[Attachments/Pasted image 20260222224204.png]]
+
+this result highly agrees with the spectrum of the gauge field in the infinite AdS system, which is given by
+
+$$\begin{align}
+\omega _{nm} & =1+|m_{\pm}|+2n \\
+n & =0,1,2,...,m_{\pm}= m\pm 1
+\end{align}$$
+
+difference between the spectrum of the finite system and the infinite system can be attributed to the finite size effect, and some other subtle effects such as the choice of boundary conditions and on and on...
+
