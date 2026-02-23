@@ -244,3 +244,24 @@ $$\begin{align}
 Z(\tau,\tau) & =\prod ^{\infty}_{m=2} \frac{1}{|1-q^{m}|^{2}}
 \end{align}$$
 
+---
+
+now we will find the explicit form of the highest weight solutions. the primary states $\displaystyle{h_{L,0}^{\mu \nu}}$ and $\displaystyle{h_{R,0}^{\mu \nu}}$ satisfy the following equations
+
+$$\begin{align}
+\mathcal{L}_{\xi _{1}}h_{L,0}^{\mu \nu} & =0 \\
+\mathcal{L}_{\bar{\xi}_{a}}h_{L,0}^{\mu \nu} & =0, a=0, \pm 1 \\
+\mathcal{L}_{\bar{\xi}_{1}}h_{R,0}^{\mu \nu} & =0 \\
+\mathcal{L}_{\xi _{a}}h_{R,0}^{\mu \nu} & =0, a=0,\pm 1
+\end{align}$$
+
+where the Killing vectors are given by
+
+$$\begin{align}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \partial _{t}-i(1+r^{2})^{1/2} \partial _{r}-r^{-1}(1+r^{2})^{1/2}\partial _{\phi} \right) \\
+\xi _{0} & =\frac{1}{2}(\partial _{t}-\partial _{\phi}) \\
+\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}(r(1+r^{2})^{-1/2}\partial _{t}+i(1+r^{2})^{1/2}\partial _{r}-r^{-1}(1+r^{2})^{1/2}\partial _{\phi} ) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \partial _{t}-i(1+r^{2})^{1/2} \partial _{r}+r^{-1}(1+r^{2})^{1/2}\partial _{\phi} \right) \\
+\bar{\xi}_{0} & =\frac{1}{2}(\partial _{t}+\partial _{\phi}) \\
+\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}(r(1+r^{2})^{-1/2}\partial _{t}+i(1+r^{2})^{1/2}\partial _{r}+r^{-1}(1+r^{2})^{1/2}\partial _{\phi} )
+\end{align}$$
