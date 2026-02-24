@@ -265,3 +265,12 @@ $$\begin{align}
 \bar{\xi}_{0} & =\frac{1}{2}(\partial _{t}+\partial _{\phi}) \\
 \bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}(r(1+r^{2})^{-1/2}\partial _{t}+i(1+r^{2})^{1/2}\partial _{r}+r^{-1}(1+r^{2})^{1/2}\partial _{\phi} )
 \end{align}$$
+
+by some code or hand, we have
+
+$$\begin{align}
+h_{L,0}^{\mu \nu} & =\frac{e^{-2it}}{(1+r^{2})^{2}}\xi _{1}^{\mu}\xi _{1}^{\nu} \\
+h_{R,0}^{\mu \nu} & =\frac{e^{-2it}}{(1+r^{2})^{2}}\bar{\xi}_{1}^{\mu}\bar{\xi}_{1}^{\nu}
+\end{align}$$
+
+or just observe that 
