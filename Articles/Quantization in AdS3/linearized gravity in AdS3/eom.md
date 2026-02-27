@@ -266,13 +266,118 @@ $$\begin{align}
 \bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}(r(1+r^{2})^{-1/2}\partial _{t}+i(1+r^{2})^{1/2}\partial _{r}+r^{-1}(1+r^{2})^{1/2}\partial _{\phi} )
 \end{align}$$
 
-by some code or hand, we have
+just observe that the primary states of the highest weight modes for Maxwell theory is given by
 
 $$\begin{align}
-h_{L,0}^{\mu \nu} & =\frac{e^{-2it}}{(1+r^{2})^{2}}\xi _{1}^{\mu}\xi _{1}^{\nu} \\
-h_{R,0}^{\mu \nu} & =\frac{e^{-2it}}{(1+r^{2})^{2}}\bar{\xi}_{1}^{\mu}\bar{\xi}_{1}^{\nu}
+A_{L,0}^{\mu} & =\frac{e^{-2it}}{1+r^{2}}\bar{\xi} _{1}^{\mu} \\
+A_{R,0}^{\mu} & =\frac{e^{-2it}}{1+r^{2}}\xi_{1}^{\mu}
 \end{align}$$
 
-or just observe that 
+and they satisfies the highest weight conditions
 
-test
+$$\begin{align}
+\mathcal{L}_{\xi _{a}}A_{L,0}^{\mu} & =0, a=0,\pm 1 \\
+\mathcal{L}_{\bar{\xi}_{0}}A_{L,0}^{\mu} & =-iA_{L,0}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{1}}A_{L,0}^{\mu} & =0 \\
+\mathcal{L}_{\xi _{0}}A_{R,0}^{\mu} & =-iA_{R,0}^{\mu} \\
+\mathcal{L}_{\xi _{1}}A_{R,0}^{\mu} & =0 \\
+\mathcal{L}_{\bar{\xi}_{a}}A_{R,0}^{\mu} & =0, a=0,\pm 1
+\end{align}$$
+
+which are just the half of the highest weight conditions for linearized gravity, thus we can just "square" the highest weight state of Maxwell theory to get the highest weight state of linearized gravity as
+
+$$\begin{align}
+h_{L,0}^{\mu \nu} & =A^{\mu}_{L,0}A^{\nu}_{L,0} \\
+h_{R,0}^{\mu \nu} & =A^{\mu}_{R,0}A^{\nu}_{R,0}
+\end{align}$$
+
+and the explicit expressions are given by
+
+$$\begin{align}
+h_{L,0}^{\mu \nu} & =\frac{e^{-4it}}{(1+r^{2})^{2}}\bar{\xi} _{1}^{\mu}\bar{\xi} _{1}^{\nu} \\
+h_{R,0}^{\mu \nu} & =\frac{e^{-4it}}{(1+r^{2})^{2}}\xi_{1}^{\mu}\xi_{1}^{\nu}
+\end{align}$$
+
+or we can represent the primary states in the following form
+
+$$\begin{align}
+h_{\lambda,0}^{\mu \nu} & =e^{-i\omega t}e^{im\phi}f^{\mu \nu}(r)
+\end{align}$$
+
+where $\displaystyle{\lambda}$ denotes the different representations. and compute the action of Lie derivatives.
+
+---
+
+as a reference, the action of Lie derivatives on Maxwell fields are given by
+
+$$\begin{align}
+\mathcal{L}_{\xi_{0}}A_{\lambda,0,0}^{\mu} & =-\frac{i}{2}(\omega+m)A_{\lambda,0,0}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{0}}A_{\lambda,0,0}^{\mu} & =-\frac{i}{2}(\omega-m)A_{\lambda,0,0}^{\mu}
+\end{align}$$
+
+and
+
+$$\begin{align}
+\mathcal{L}_{\xi_{1}}A_{\lambda,0,0}^{t} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m-1)\phi}(1+r^{2})^{1/2}\left(\partial _{r}f^{t}+\frac{(\omega+m+1)r^{2}+m}{r(1+r^{2})}f^{t}-\frac{i}{(1+r^{2})^{2}}f^{r}-\frac{r}{1+r^{2}}f^{\phi}\right) \\
+\mathcal{L}_{\xi _{1}}A^{r}_{\lambda,0,0} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m-1)\phi}(1+r^{2})^{1/2}\left(-if^{t}+\partial _{r}f^{r}+\frac{(\omega+m-1)r^{2}+m}{r(1+r^{2})}f^{r}+if^{\phi}\right) \\
+\mathcal{L}_{\xi _{1}}A^{\phi}_{\lambda,0,0} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m-1)\phi}(1+r^{2})^{1/2}\left(-\frac{1}{r}f^{t}-\frac{i}{r^{2}(1+r^{2})}f^{r}+\partial _{r}f^{\phi}+\frac{(\omega+m+1)r^{2}+(m+1)}{r(1+r^{2})}f^{\phi}\right)
+\end{align}$$
+
+$$\begin{align}
+\mathcal{L}_{\bar{\xi}_{1}}A_{\lambda,0,0}^{t} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(\partial _{r}f^{t}+\frac{(\omega-m+1)r^{2}-m}{r(1+r^{2})}f^{t}-\frac{i}{(1+r^{2})^{2}}f^{r}+\frac{r}{1+r^{2}}f^{\phi}\right) \\
+\mathcal{L}_{\bar{\xi}_{1}}A_{\lambda,0,0}^{r} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(-if^{t}+\partial _{r}f^{r}+\frac{(\omega-m-1)r^{2}-m}{r(1+r^{2})}f^{r}-if^{\phi}\right) \\
+\mathcal{L}_{\bar{\xi}_{1}}A_{\lambda,0,0}^{\phi} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(\frac{1}{r}f^{t}+\frac{i}{r^{2}(1+r^{2})}f^{r}+\partial _{r}f^{\phi}+\frac{(\omega-m+1)r^{2}-(m-1)}{r(1+r^{2})}f^{\phi}\right)
+\end{align}$$
+
+$$\begin{align}
+\mathcal{L}_{\xi _{-1}}A_{\lambda,0,0}^{t} & =\frac{i}{2}e^{-i(\omega+1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(\partial _{r}f^{t}-\frac{(\omega+m-1)r^{2}+m}{r(1+r^{2})}f^{t}+\frac{i}{(1+r^{2})^{2}}f^{r}-\frac{r}{1+r^{2}}f^{\phi}\right) \\
+\mathcal{L}_{\xi _{-1}}A_{\lambda,0,0}^{r} & =\frac{i}{2}e^{-i(\omega+1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(if^{t}+\partial _{r}f^{r}-\frac{(\omega+m+1)r^{2}+m}{r(1+r^{2})}f^{r}-if^{\phi}\right) \\
+\mathcal{L}_{\xi _{-1}}A_{\lambda,0,0}^{\phi} & =\frac{i}{2}e^{-i(\omega+1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(-\frac{1}{r}f^{t}+\frac{i}{r^{2}(1+r^{2})}f^{r}+\partial _{r}f^{\phi}-\frac{(\omega+m-1)r^{2}+(m-1)}{r(1+r^{2})}f^{\phi}\right)
+\end{align}$$
+
+$$\begin{align}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \partial _{t}-i(1+r^{2})^{1/2} \partial _{r}-r^{-1}(1+r^{2})^{1/2}\partial _{\phi} \right) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \partial _{t}-i(1+r^{2})^{1/2} \partial _{r}+r^{-1}(1+r^{2})^{1/2}\partial _{\phi} \right)  \\
+\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}(r(1+r^{2})^{-1/2}\partial _{t}+i(1+r^{2})^{1/2}\partial _{r}-r^{-1}(1+r^{2})^{1/2}\partial _{\phi} )
+\end{align}$$
+
+---
+
+$$\begin{align}
+\mathcal{L}_{\xi_{0}}h_{\lambda,0}^{\mu \nu} & =-\frac{i}{2}(\omega+m)h_{\lambda,0}^{\mu \nu} \\
+\mathcal{L}_{\bar{\xi}_{0}}h_{\lambda,0}^{\mu \nu} & =-\frac{i}{2}(\omega-m)h_{\lambda,0}^{\mu \nu}
+\end{align}$$
+
+and
+
+$$\begin{align}
+\mathcal{L}_{\xi _{1}}h_{\lambda,0}^{\mu \nu} & =\xi ^{\rho}\partial _{\rho}h_{\lambda,0}^{\mu \nu}-h^{\rho \nu}\partial _{\rho}\xi ^{\mu}-h^{\mu \rho}\partial _{\rho}\xi ^{\nu}
+\end{align}$$
+
+$$\begin{align}
+\mathcal{L}_{\xi_{1}}h^{tt}_{\lambda,0} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m-1)\phi}(1+r^{2})^{1/2}\left(\partial _{r}f^{tt}+\frac{(\omega+m+2)r^{2}+m}{r(1+r^{2})}f^{tt}-\frac{2i}{(1+r^{2})^{2}}f^{r}-\frac{2r}{1+r^{2}}f^{\phi}\right) \\
+\mathcal{L}_{\xi _{1}}h^{tr}_{\lambda,0} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m-1)\phi}(1+r^{2})^{1/2}\left(-if^{tt}+\partial _{r}f^{tr}+\frac{(\omega+m)r^{2}+m}{r(1+r^{2})}f^{tr}+if^{t\phi}-\frac{i}{(1+r^{2})^{2}}f^{rr}-\frac{r}{1+r^{2}}f^{r\phi}\right) \\
+\mathcal{L}_{\xi_{1}}h_{\lambda,0}^{t\phi} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m-1)\phi}(1+r^{2})^{1/2}\left( -\frac{1}{r}f^{tt}-\frac{i}{r^{2}(1+r^{2})}f^{tr}+\partial _{r}f^{t\phi}+\frac{(\omega+m+2)r^{2}+(m+1)}{r(1+r^{2})}f^{t\phi}-\frac{i}{(1+r^{2})^{2}}f^{r\phi}-\frac{r}{1+r^{2}}f^{\phi \phi} \right) \\
+\mathcal{L}_{\xi_{1}}h_{\lambda,0}^{rr} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m-1)\phi}(1+r^{2})^{1/2}\left(-2if^{tr}+\partial _{r}f^{rr}+\frac{(\omega+m-2)r^{2}+m}{r(1+r^{2})}f^{rr}+2if^{r\phi}\right) \\
+\mathcal{L}_{\xi _{1}}h_{\lambda,0}^{r\phi} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m-1)\phi}(1+r^{2})^{1/2}\left(-\frac{1}{r}f^{tr}-if^{t\phi}-\frac{i}{r^{2}(1+r^{2})}f^{rr}+\partial _{r}f^{r\phi}+\frac{(\omega+m)r^{2}+(m+1)}{r(1+r^{2})}f^{r\phi}+if^{\phi \phi}\right) \\
+\mathcal{L}_{\xi _{1}}h_{\lambda,0}^{\phi \phi} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m-1)\phi}(1+r^{2})^{1/2}\left(-\frac{2}{r}f^{t\phi}-\frac{2i}{r^{2}(1+r^{2})}f^{r\phi}+\partial _{r}f^{\phi \phi}+\frac{(\omega+m+2)r^{2}+(m+2)}{r(1+r^{2})}f^{\phi \phi}\right)
+\end{align}$$
+
+$$\begin{align}
+\mathcal{L}_{\bar{\xi}_{1}}h_{\lambda,0}^{tt} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(\partial _{r}f^{tt}+\frac{(\omega-m+2)r^{2}-m}{r(1+r^{2})}f^{tt}-\frac{2i}{(1+r^{2})^{2}}f^{tr}+\frac{2r}{1+r^{2}}f^{r\phi}\right) \\
+\mathcal{L}_{\bar{\xi}_{1}}h_{\lambda,0}^{tr} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(-if^{tt}+\partial _{r}f^{rr}+\frac{(\omega-m)r^{2}-m}{r(1+r^{2})}f^{tr}-if^{t\phi}-\frac{i}{(1+r^{2})^{2}}f^{rr}+\frac{r}{1+r^{2}}f^{r\phi}\right) \\
+\mathcal{L}_{\bar{\xi}_{1}}h_{\lambda,0}^{t\phi} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(\frac{1}{r}f^{tt}+\frac{i}{r^{2}(1+r^{2})}f^{tr}+\partial _{r}f^{t\phi}+\frac{(\omega-m+2)r^{2}-(m-1)}{r(1+r^{2})}f^{t\phi}-\frac{i}{(1+r^{2})^{2}}f^{r\phi}+\frac{r}{1+r^{2}}f^{\phi \phi}\right) \\
+\mathcal{L}_{\bar{\xi}_{1}}h_{\lambda,0}^{rr} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(-2if^{tr}+\partial _{r}f^{rr}+\frac{(\omega-m-2)r^{2}-m}{r(1+r^{2})}f^{rr}-2if^{r\phi}\right) \\
+\mathcal{L}_{\bar{\xi}_{1}}h_{\lambda,0}^{r\phi} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(\frac{1}{r}f^{tr}-if^{t\phi}+\frac{i}{r^{2}(1+r^{2})}f^{rr}+\partial _{r}f^{r\phi}+\frac{(\omega-m)r^{2}-(m-1)}{r(1+r^{2})}f^{r\phi}-if^{\phi \phi}\right) \\
+\mathcal{L}_{\bar{\xi}_{1}}h_{\lambda,0}^{\phi \phi} & =-\frac{i}{2}e^{-i(\omega-1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(\frac{2}{r}f^{t\phi}+\frac{2i}{r^{2}(1+r^{2})}f^{r\phi}+\partial _{r}f^{\phi\phi}+\frac{(\omega-m+2)r^{2}-(m-2)}{r(1+r^{2})}f^{\phi \phi}\right)
+\end{align}$$
+
+$$\begin{align}
+\mathcal{L}_{\xi _{-1}}
+\end{align}$$
+
+$$\begin{align}
+\mathcal{L}_{\xi _{-1}}A_{\lambda,0,0}^{t} & =\frac{i}{2}e^{-i(\omega+1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(\partial _{r}f^{t}-\frac{(\omega+m-1)r^{2}+m}{r(1+r^{2})}f^{t}+\frac{i}{(1+r^{2})^{2}}f^{r}-\frac{r}{1+r^{2}}f^{\phi}\right) \\
+\mathcal{L}_{\xi _{-1}}A_{\lambda,0,0}^{r} & =\frac{i}{2}e^{-i(\omega+1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(if^{t}+\partial _{r}f^{r}-\frac{(\omega+m+1)r^{2}+m}{r(1+r^{2})}f^{r}-if^{\phi}\right) \\
+\mathcal{L}_{\xi _{-1}}A_{\lambda,0,0}^{\phi} & =\frac{i}{2}e^{-i(\omega+1)t}e^{i(m+1)\phi}(1+r^{2})^{1/2}\left(-\frac{1}{r}f^{t}+\frac{i}{r^{2}(1+r^{2})}f^{r}+\partial _{r}f^{\phi}-\frac{(\omega+m-1)r^{2}+(m-1)}{r(1+r^{2})}f^{\phi}\right)
+\end{align}$$
