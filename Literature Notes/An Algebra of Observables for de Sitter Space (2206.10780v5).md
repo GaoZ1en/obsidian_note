@@ -39,59 +39,64 @@ this allows us to define a ordering on projections: $\displaystyle{P\preceq Q}$ 
 | $\displaystyle{\mathrm{I}}$           | $\displaystyle{\left\{0,1,2,\dots,n\right\}}$ or $\displaystyle{\left\{0,1,2,\dots,\infty\right\}}$ | "atomic" projections exist.                                                             | matrix algebras $\displaystyle{M_{n}(\mathbb{C})}$, typical $\mathcal{B}(\mathcal{H})$ on separable Hilbert space |
 | $\displaystyle{\mathrm{II}_{1}}$      | $\displaystyle{[0,1]}$                                                                              | no atomic projections. the identity $\displaystyle{I}$ has finite dimension 1           | isomorphic to infinite tensor product of qubits/fermionic modes                                                   |
 | $\displaystyle{\mathrm{II}_{\infty}}$ | $\displaystyle{[0,\infty)}$                                                                         |                                                                                         | similar to Type II$\displaystyle{_1}$ tensor some infinite space                                                  |
-| $\displaystyle{\mathrm{III}}$         | $\displaystyle{\left\{0,\infty\right\}}$                                                            | all non-zero projections are equivalent to identity (infinite). no trace so no entropy. | Local QFT                                                                                                         |
+| $\displaystyle{\mathrm{III}}$         | $\displaystyle{\left\{0,\infty\right\}}$                                                            | all non-zero projections are equivalent to identity (infinite). no trace so no entropy. | Local QFT(more precisely, Type III$\displaystyle{_{1}}$)                                                          |
 
 in this paper, by including an observer, we dress the operators to the observer's worldline, and the algebra of observables in the de Sitter static patch becomes a Type II$_1$ von Neumann algebra by crossed product and positive projection. this allows us to define a notion of entropy for states of this algebra, which matches the expected generalized entropy in de Sitter space.
 
+## Tomita-Takesaki theory
 
-### Sub-classification of Type III Factors (Connes Classification)
-You asked about **Type III$_1$**.  Alain Connes (1973) classified Type III factors further using a parameter $\lambda \in [0, 1]$. This classification is based on the **Modular Spectrum** $S(\mathcal{M})$ (the intersection of the spectra of modular operators $\Delta_\phi$ for all faithful normal states $\phi$).
+in standard quantum mechanics (Type I), a state is defined by a density matrix $\displaystyle{\rho}$, and the expectation value of an operator $\displaystyle{A}$ is given by $\displaystyle{\langle A\rangle =\mathrm{Tr}(\rho A)}$. however, in quantum field theory of Type III, the trace is infinite and $\displaystyle{\rho}$ does not exist. Tomita-Takesaki theory proves that there exists an operator $\displaystyle{\Delta}$ that behaves like $\displaystyle{\rho}$ in generating dynamics.
 
-*   **Type III$_\lambda$ ($0 < \lambda < 1$)**: The spectrum of the modular operator is discrete powers of $\lambda$: $S(\mathcal{M}) = \{ \lambda^n : n \in \mathbb{Z} \} \cup \{0\}$. The modular flow is periodic with period $- \ln \lambda$. This often appears in statistical mechanics lattice models at critical points.
-*   **Type III$_0$**: The spectrum is minimal, $S(\mathcal{M}) = \{0, 1\}$.
-*   **Type III$_1$**: The modular spectrum is the entire positive real line: $S(\mathcal{M}) = [0, \infty)$.
-    *   **Physics Meaning**: This is the relevant case for **Local Quantum Field Theory** (including the de Sitter static patch).
-    *   It implies the modular Hamiltonian $H_{mod} = -\ln \Delta$ has a continuous spectrum spanning $(-\infty, \infty)$.
-    *   This reflects the fact that in a local region of QFT, one can boost modes to arbitrarily high or low energies. The algebra is "ergodic" under modular flow.
-    *   Because it's the "worst" kind of Type III (most non-commutative, furthest from having a trace), standard entropy definitions fail completely here. This necessitates the Crossed Product construction to "break" this invariance and find a Type II subalgebra.
+for a von Neumann algebra $\displaystyle{\mathcal{M}}$ acting on a Hilbert space $\displaystyle{\mathcal{H}}$ with a cyclic (which means$\displaystyle{\mathcal{M}|\Omega\rangle}$ is dense in $\displaystyle{\mathcal{H}}$) and separating (which means $\displaystyle{A|\Omega\rangle=0}$ implies $\displaystyle{A=0}$) vector $\displaystyle{|\Omega\rangle}$ (the vacuum), we can define the Tomita operator $\displaystyle{S}$ as
 
-## Modular Theory: The Physical Intuition (Tomita-Takesaki)
+$$\begin{align}
+S(A\ket{\Omega} )=A^{\dagger}\ket{\Omega} ,\forall A\in \mathcal{M}
+\end{align}$$
 
-To understand the Crossed Product, you **MUST** understand the **Modular Operator** $\Delta$. You can skip the deep math of the Modular Spectrum, but the operator is the engine of the entire construction.
+and the modular operator $\displaystyle{\Delta}$ is defined as
 
-### 1. The "Ghost" Density Matrix
-In standard Quantum Mechanics (Type I), a state is defined by a density matrix $\rho$:
-$$ \langle A \rangle = \text{Tr}(\rho A) $$
-In QFT (Type III), **$\rho$ does not exist** (trace is infinite). However, Tomita-Takesaki theory proves that an operator $\Delta$ exists that behaves *exactly like* $\rho$ in generating dynamics.
+$$\begin{align}
+\Delta & =S^{\dagger}S
+\end{align}$$
 
-### 2. Modular Hamiltonian $K$
-We define the **Modular Hamiltonian** as:
-$$ K = - \ln \Delta $$
-*   In Type I, if $\rho = e^{-\beta H}$, then $K = \beta H$. So $K$ is just the (scaled) Hamiltonian.
-*   In de Sitter space (Static Patch), strict math shows that for the vacuum state, **$K$ is exactly the generator of boost time translations** (the Killing vector field $\xi_t$).
+# main discussion
 
-### 3. Modular Flow $\sigma_t$
-$\Delta$ generates a unitary evolution group called the **Modular Automorphism Group**:
-$$ \sigma_t(A) = \Delta^{it} A \Delta^{-it} = e^{-iKt} A e^{iKt} $$
-*   **Key Insight**: In this paper, **"Modular Flow" = "Time Evolution"**.
-*   The Crossed Product $\mathcal{M} \rtimes_\sigma \mathbb{R}$ is literally mixing the algebra $\mathcal{M}$ with the "time translations" generated by this flow. This is why the Crossed Product naturally includes the Hamiltonian $H$.
+## static patch
 
-### 4. Construction of $\Delta$ (Tomita-Takesaki Theorem)
-You asked how $\Delta$ is constructed. It's built from the vacuum state $|\Omega\rangle$ and the algebra $\mathcal{M}$:
-1.  **Antilinear Tomita Operator $S$**:
-    Define an operator $S$ that maps an operator $A$ acting on the vacuum to its adjoint $A^\dagger$ acting on the vacuum:
-    $$ S (A |\Omega\rangle) = A^\dagger |\Omega\rangle, \quad \forall A \in \mathcal{M} $$
-    *(Note: This is well-defined only if $|\Omega\rangle$ is "cyclic" and "separating" for $\mathcal{M}$, which is true for the vacuum in QFT local algebras due to Reeh-Schlieder theorem).*
-2.  **Polar Decomposition**:
-    $S$ is usually unbounded and not self-adjoint. Decompose it into a positive self-adjoint part and an anti-unitary part:
-    $$ S = J \Delta^{1/2} $$
-    *   **$J$**: Modular Conjugation (anti-unitary). It maps the algebra to its commutant: $J \mathcal{M} J = \mathcal{M}'$. (In physics, this is often CPT or CRT symmetry).
-    *   **$\Delta$**: **Modular Operator** (positive self-adjoint). $\Delta = S^\dagger S$.
-    *   This $\Delta$ is the "Hamiltonian-like" generator.
-    For standard thermal states $\rho = e^{-\beta H}$, one finds $\Delta = e^{-\beta H} \otimes e^{\beta H}$ (acting on thermofield double), so $\Delta^{1/2}$ relates ket and bra.
+![image](http://koishiminipc:8080/i/597f896d-4df0-48b0-94a1-362d31c2949d.png)
 
-### Importance in this Paper
-- **Problem**: The algebra of observables in a de Sitter static patch ($\mathcal{A}_{dS}$) is **Type III$_1$**. It has no trace, so we cannot define density matrices or von Neumann entropy $S = -\text{Tr}(\rho \log \rho)$.
-- **Solution**: By including an observer (gravity constraints), we dress the operators to the observer's worldline.
-- **Result**: The algebra transforms: $\text{Type III}_1 \xrightarrow{\text{Crossed Product}} \text{Type II}_\infty \xrightarrow{\text{Project } q \ge 0} \text{Type II}_1$.
-- **Outcome**: Type II$_1$ algebras have a well-defined trace. We can now compute entropy, which matches the generalized entropy $A/4G + S_{matter}$. The "maximal entropy state" corresponds to empty de Sitter space ($\rho = \mathbb{1}$).
+consider an observer who enters a $\displaystyle{D}$-dimensional dS space $\displaystyle{X}$ at $\displaystyle{p}$ in past infinity, exits at $\displaystyle{q}$ in future infinity and travels on some worldline $\displaystyle{\gamma}$. $\displaystyle{P}$ is the static patch of the observer, which is causally accessible to the observer (can see and influence), and $\displaystyle{P'}$ is the complementary static patch.
+
+consider first an ordinary qft on $\displaystyle{X}$. such a theory has a Hilbert space $\displaystyle{\mathcal{H}}$ of physical states, and the algebra of observables in any local region is a von Neumann algebra of Type III (due to UV divergence?). in particular, we call the algebra of observables in the region $\displaystyle{P}$ as $\displaystyle{\mathcal{A}}$, and algebra in the region $\displaystyle{P'}$ is then $\displaystyle{\mathcal{A}'}$, since $\displaystyle{P}$ and $\displaystyle{P'}$ has no causal accessibility. the Tyle III nature of $\displaystyle{\mathcal{A}}$ and $\displaystyle{\mathcal{A}'}$ means that there is no natural notion of entropy for a state of either of these algebras, which is the goal of this paper to fix.
+
+## the thermal nature of the de Sitter space
+
+the Hilbert space $\displaystyle{\mathcal{H}}$ of a qft in a fixed de Sitter background contains a distinguished state $\displaystyle{\Psi_{\text{dS}}}$, the Bunch-Davies state, which is the natural "vacuum" of a qft in a background de Sitter space, and is invariant under the full automorphism group $\displaystyle{G_{\text{dS}}=\mathrm{SO}(1,D)}$ (or a double cover) of the de Sitter space.
+
+once we choose to focus on a particular static patch $\displaystyle{P}$, what is relavant is not the full de Sitter automorphism group,  but the subgroup $\displaystyle{G_{P}}$ that consists of automorphisms of $\displaystyle{P}$, which is $\displaystyle{G_{P}\cong\mathbb{R}_{t}\times \mathrm{SO}(D-1)}$. the $\displaystyle{\mathbb{R}_{t}}$ factor corresponds to the time translation symmetry of the static patch, and if the worldline $\displaystyle{\gamma}$ is chosen to be geodesic from $\displaystyle{p}$ to $\displaystyle{q}$, then $\displaystyle{\mathbb{R}_{t}}$ is the group of translations along $\displaystyle{\gamma}$. and the $\displaystyle{\mathrm{SO}(D-1)}$ factor is the rotations around $\displaystyle{\gamma}$. $\displaystyle{\mathbb{R}_{t}}$ is generated by a Killing vector field $\displaystyle{V}$ that we can choose to be future directed timelike in the static patch $\displaystyle{P}$ and past-directed timelike in the complementary patch $\displaystyle{P'}$. 
+
+the Bunch-Davies state $\displaystyle{\Psi_{\text{dS}}}$ has a thermal interpretation: after analytic continuation to Euclidean signature, $\displaystyle{V}$ becomes the generator of a rotation of $\displaystyle{S^{D}}$. as a result, correlation functions in the state $\displaystyle{\Psi_{\text{dS}}}$ can be analytically continued to a periodic functions in imaginary time and can be interpreted as correlation functions in a thermal ensemble with a Hamiltonian $\displaystyle{H_{P}}$ and inverse temperature $\displaystyle{\beta _{\text{dS}}=2\pi r_{\text{dS}}}$. here $\displaystyle{H_{P}}$ generates time translation of the static patch and $\displaystyle{r_{\text{dS}}}$ is the radius of the curvature of the de Sitter space.
+
+...
+
+## the algebra of observables
+
+timelike tbe theorem states that the algebra of observables in ordinary qft in an arbitrarilu small neighborhood of $\displaystyle{\gamma}$ is the same as the algebra of observables in the static patch.
+
+now suppose that gravity is also one of the fields that we want to consider in dS space. we assume that the Planck length $\displaystyle{\ell}$ is much less than $\displaystyle{r_{\text{dS}}}$, then gravity is very weakly coupled and can be treated perturbatively. in leading order, we make a quadratic approximation to the gravitational action and quantize gravitational perturbations in de Sitter space in a free field approximation. this leads to the construction of a Hilbert space $\displaystyle{\mathcal{H}_{\text{grav}}}$ that describes gravitational fluctuations. thus the full Hilbert space is
+
+$$\begin{align}
+\mathcal{H} & =\mathcal{H}_{\text{matt}}\otimes \mathcal{H}_{\text{grav}}
+\end{align}$$
+
+where now $\displaystyle{\mathcal{H}_{\text{matt}}}$ is the Hilbert space obtained by quantizing the matter fields.
+
+the thing is that as dS space is a closed universe, with compact spatial sections, the automorphism of dS space have to be treated as gauge constraints. this means that the Hilbert space that describes quantum fields and gravity in dS space, in the limit $\displaystyle{G_{N}\to 0}$, is not $\displaystyle{\mathcal{H}}$ but rather is a Hilbert space $\displaystyle{\widehat{\mathcal{H}}}$ that is constructed from $\displaystyle{\mathcal{H}}$ by imposing the dS generators as constraints. our goal is to construct the algebra of observables $\displaystyle{\widehat{\mathcal{A}}}$ that acts on $\displaystyle{\widehat{\mathcal{H}}}$ and corresponds to the static patch $\displaystyle{P}$...
+
+## including an observer
+
+instead of imposing constraints on the states (BRST procedure...), we will impose constraints on the algebra of observables.
+
+in the case of the static patch, imposing time translations as a constraint means replacing $\displaystyle{\mathcal{A}}$ by $\displaystyle{\mathcal{A}^{H}}$, its subalgebra consisting of operators that commute with $\displaystyle{H}$. however, the only $\displaystyle{H}$-invariant elements of $\displaystyle{\mathcal{A}}$ are $\displaystyle{c}$-numbers, which means $\displaystyle{\mathcal{A}^{H}}$ is trivial. the solution is to include the dofs of the observer.
+
+suppose the Hamiltonian of the observer is $\displaystyle{H_{\text{obs}}=q}$, where $\displaystyle{q\geqslant 0}$. then the Hilbert space of the observer is $\displaystyle{\mathcal{H}_{\text{obs}}=L^{2}(\mathbb{R}_{+})}$. we assume that the observer has access to any operator acting on $\displaystyle{\mathcal{H}_{\text{obs}}}$
