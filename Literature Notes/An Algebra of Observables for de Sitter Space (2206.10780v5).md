@@ -192,3 +192,132 @@ here we give a brief review of entanglement spectrum. in standard QM, for a dens
 
 # a bulk formula for the entropy
 
+we will consider states of the form
+
+$$\begin{align}
+\widehat{\Phi}=\Phi \otimes f(x)
+\end{align}$$
+
+where $\displaystyle{\Phi \in \mathcal{H},f(x)\in L^{2}(\mathbb{R})}$. because of the projection operator $\displaystyle{\Pi}$, it is natural to assume the function $\displaystyle{f(x)}$ has only support for $\displaystyle{x<0}$. we assume a normalization condition
+
+$$\begin{align}
+\braket{ \Phi|\Phi } =1=\int _{-\infty}^{0}\mathrm{d}x|f(x)|^{2}
+\end{align}$$
+
+assume the function $\displaystyle{f(x)}$ should be slowly varying. we choose
+
+$$\begin{align}
+f(x) & =\varepsilon ^{1/2}g(\varepsilon x),\varepsilon\ll \beta _{\text{dS}}
+\end{align}$$
+
+where $\displaystyle{g(x)}$ is a smooth, bounded function with support for $\displaystyle{x< 0}$ and $\displaystyle{\varepsilon}$ is a small parameter. in a state of this kind, $\displaystyle{p\approx 0}$, with an uncertainty of order $\displaystyle{\varepsilon}$. after this state evolves for a time $\displaystyle{t}$ with Hamiltonian $\displaystyle{H_{\text{obs}}=q}$, it has $\displaystyle{p\approx -t}$. with the same uncertainty. such a function $\displaystyle{f(x)}$ is mostly supported for $\displaystyle{x \sim -\frac{1}{\varepsilon}\ll 0}$, and hence $\displaystyle{\Phi \otimes f(x)}$ is approximately invariant under the projection operator $\displaystyle{\Pi=\Theta(-H-x)}$. so we can view $\displaystyle{\widehat{\Phi}=\Phi \otimes f(x)}$ as an element of $\displaystyle{\widehat{\mathcal{H}}=\Pi(\mathcal{H}\otimes L^{2}(\mathbb{R}))}$ (however the maximal entropic state $\displaystyle{\Psi_{\text{max}}}$ is not a state of this form)
+
+to compute the entropy of the state $\displaystyle{\widehat{\Phi}}$, we will first find an approximate formula for its density matrix $\displaystyle{\rho _{\widehat{\Phi}}}$ and then evaluate the von Neumann entropy $\displaystyle{S(\widehat{\Phi})=-\mathrm{Tr}(\rho _{\widehat{\Phi}}\log \rho _{\widehat{\Phi}})}$. let $\displaystyle{\Psi_{\text{dS}}\in \mathcal{H}}$ be the Bunch-Davies state, and let $\displaystyle{\Delta _{\Psi_{\text{dS}}}:\mathcal{H}\to \mathcal{H}}$ be its modular operator for the algebra $\displaystyle{\mathcal{A}}$. for simplicity we drop the $\displaystyle{\text{dS}}$ subscript in the following discussion.
+
+the modular Hamiltonian $\displaystyle{h_{\Psi}}$ is defined as
+
+$$\begin{align}
+h_{\Psi} & =-\ln \Delta _{\Psi}
+\end{align}$$
+
+we will also need the corresponding relative modular operator $\displaystyle{\Delta _{\Phi|\Psi}:\mathcal{H}\to \mathcal{H}}$ for the algebra $\displaystyle{\mathcal{A}}$ and the states $\displaystyle{\Phi}$ and $\displaystyle{\Psi}$. this operator is defined by $\displaystyle{\Delta _{\Phi|\Psi}=S^{\dagger}_{\Phi|\Psi}S_{\Phi|\Psi}}$, where the relative Tomita operator $\displaystyle{S_{\Phi|\Psi}}$ is antilinear and satisfies $\displaystyle{S_{\Phi|\Psi}a\Psi=a^{\dagger}\Phi,\forall a\in \mathcal{A}}$. from this it follows that
+
+$$\begin{align}
+\braket{ \Psi|\Delta _{\Phi|\Psi}a|\Psi }  & = \braket{ \Psi|S^{\dagger}_{\Phi|\Psi}S_{\Phi|\Psi}a|\Psi }  \\
+ & = \braket{ \Psi|S^{\dagger}_{\Phi|\Psi}a^{\dagger}|\Phi }  \\
+ & = \overline{\braket{ \Phi|a^{\dagger}|\Phi } } \\
+ & = \braket{ \Phi|a|\Phi } , \forall a\in \mathcal{A}
+\end{align}$$
+
+we write $\displaystyle{\Delta _{\Phi|\Psi}=e^{-h_{\Phi|\Psi}}}$, where $\displaystyle{h_{\Phi|\Psi}}$ is the relative modular Hamiltonian.
+
+the desired density matrix $\displaystyle{\rho _{\widehat{\Phi}}}$ is supposed to satisfy
+
+$$\begin{align}
+\braket{ \widehat{\Phi}|\hat{a}|\widehat{\Phi} } & =\mathrm{Tr}_{\rho _{\widehat{\Phi}}}\hat{a}, \forall\hat{a}\in \widehat{A}
+\end{align}$$
+
+but $\displaystyle{\mathrm{Tr}\rho _{\widehat{\Phi}}\hat{a}=\braket{ \Psi_{\text{max}}|\rho _{\widehat{\Phi}}\hat{a}|\Psi_{\text{max}} }}$. so the condition can be rewritten as
+
+$$\begin{align}
+\braket{ \widehat{\Phi}|\hat{a}|\widehat{\Phi} } & =\braket{ \Psi_{\text{max}}|\rho _{\widehat{\Phi}}\hat{a}|\Psi_{\text{max}} }, \forall\hat{a}\in \widehat{A}
+\end{align}$$
+
+one can find an approximation to the density matrix:
+
+$$\begin{align}
+\rho _{\Phi} & =\frac{1}{\beta} \bar{f}(x+h_{\Psi}/\beta)e^{-\beta x}\Delta _{\Phi|\Psi}f(x+h_{\Psi}/\beta)+\mathcal{O}(\varepsilon)
+\end{align}$$
+
+---
+
+how is this density matrix derived? the logic here is a "guess and verify" procedure. our goal is to find a density matrix $\displaystyle{\rho_{\widehat{\Phi}}}$ that satisfies the defining equation:
+
+$$\begin{align}
+\braket{ \Psi_{\text{max}}|\rho _{\widehat{\Phi}}\hat{a}|\Psi_{\text{max}} } & = \braket{ \widehat{\Phi}|\hat{a}|\widehat{\Phi} }, \forall\hat{a}\in \widehat{A}
+\end{align}$$
+
+notice the striking similarity between this goal and the defining property of the relative modular operator $\displaystyle{\Delta_{\Phi|\Psi}}$ in Tomita-Takesaki theory:
+
+$$\begin{align}
+\braket{ \Psi|\Delta _{\Phi|\Psi}a|\Psi } & = \braket{ \Phi|a|\Phi }, \forall a\in \mathcal{A}
+\end{align}$$
+
+this suggests that we can construct $\displaystyle{\rho_{\widehat{\Phi}}}$ by "dressing" the relative modular operator $\displaystyle{\Delta_{\Phi|\Psi}}$ to account for the observer. the necessary modifications are:
+
+1. **upgrading the state**: the QFT state $\displaystyle{\Phi}$ becomes the semiclassical state $\displaystyle{\widehat{\Phi} = \Phi \otimes f(x)}$. the vacuum $\displaystyle{\Psi}$ becomes the maximum entropy state $\displaystyle{\Psi_{\text{max}} = \Psi \otimes \sqrt{\beta}e^{\beta x / 2}}$.
+2. **compensating the thermal factor**: since $\displaystyle{\Psi_{\text{max}}}$ contains a thermal weight $\displaystyle{e^{\beta x/2}}$, its inner product inherently produces a factor of $\displaystyle{\beta e^{\beta x}}$. to cancel this out and recover the correct matrix elements, we must manually insert a compensating factor $\displaystyle{\frac{1}{\beta} e^{-\beta x}}$ into our ansatz for $\displaystyle{\rho_{\widehat{\Phi}}}$.
+3. **including the observer's wavefunction**: we need to wrap the operator with the observer's wavefunction $\displaystyle{f}$. however, a pure $\displaystyle{x}$ is not in the observable algebra $\displaystyle{\widehat{\mathcal{A}}}$. the invariant combination is $\displaystyle{x + h_{\Psi}/\beta}$.
+
+combining these ingredients, we guess the form:
+
+$$\begin{align}
+\rho _{\widehat{\Phi}} & \approx \frac{1}{\beta} \bar{f}(x+h_{\Psi}/\beta)e^{-\beta x}\Delta _{\Phi|\Psi}f(x+h_{\Psi}/\beta)
+\end{align}$$
+
+since we assumed $\displaystyle{f(x)}$ is highly semiclassical (a slowly varying function, meaning the uncertainty in the observer's energy is very small), $\displaystyle{f(x+h_{\Psi}/\beta)}$ approximately commutes with $\displaystyle{\Delta_{\Phi|\Psi}}$. this allows us to combine the wavefunctions into $\displaystyle{|f(x+h_{\Psi}/\beta)|^2}$:
+
+$$\begin{align}
+\rho _{\widehat{\Phi}} & = \frac{1}{\beta} |f(x+h_{\Psi}/\beta)|^{2}e^{-\beta x}\Delta _{\Phi|\Psi}+\mathcal{O}(\varepsilon)
+\end{align}$$
+
+---
+
+it suffices to verify
+
+$$\begin{align}
+\braket{ \widehat{\Phi}|\hat{a}|\widehat{\Phi} } & =\braket{ \Psi_{\text{max}}|\rho _{\widehat{\Phi}}\hat{a}|\Psi_{\text{max}} }
+\end{align}$$
+
+for $\displaystyle{\hat{a}=ae^{iu(\beta x+h_{\Psi})}, a\in \mathcal{A},u\in \mathbb{R}}$. we have chosen the state $\displaystyle{f(x)}$ of the observer's clock so that $\displaystyle{|p|\lesssim \varepsilon}$, but multiplication by $\displaystyle{e^{iu\beta x}}$ shifts $\displaystyle{p}$ by $\displaystyle{-u\beta}$. as a result, the LHS and RHS vanish exponentially unless $\displaystyle{|u|\lesssim \varepsilon/\beta}$, so we can restrict to that range of $\displaystyle{u}$. we have
+
+$$\begin{align}
+\braket{ \widehat{\Phi}|\hat{a}|\widehat{\Phi} } & =\int _{-\infty}^{0}\mathrm{d}x|f(x)|^{2}\braket{ \Phi|ae^{iu(h_{\Psi}+\beta x)}|\Phi } \\
+ & \approx \int _{-\infty}^{0} \mathrm{d}x|f(x)|^{2}e^{iu\beta x}\braket{ \Phi|a|\Phi } +\mathcal{O}(\varepsilon) \\
+ & =\int _{-\infty}^{0}\mathrm{d}x|f(x)|^{2}e^{iu\beta x}\braket{ \Psi|\Delta _{\Phi|\Psi}a|\Psi } +\mathcal{O}(\varepsilon) \\
+ & =\int _{-\infty}^{0} \mathrm{d}x\braket{ \Psi||f(x+h_{\Psi}/\beta)|^{2}\Delta _{\Phi|\Psi}\hat{a}|\Psi } +\mathcal{O}(\varepsilon) \\
+ & =\int _{-\infty}^{0}\beta\mathrm{d}xe^{\beta x}\braket{ \Psi| \frac{1}{\beta}|f(x+h_{\Psi}/\beta)|^{2}e^{-\beta x}\Delta _{\Phi|\Psi}\hat{a}|\Psi }+\mathcal{O}(\varepsilon) \\
+ & = \braket{ \Psi_{\text{max}}| \frac{1}{\beta}|f(x+h_{\Psi}/\beta)|^{2}e^{-\beta x}\Delta _{\Phi|\Psi}\hat{a}|\Psi_{\text{max}} } +\mathcal{O}(\varepsilon)
+\end{align}$$
+
+thus we have verified the defining equation for $\displaystyle{\rho_{\widehat{\Phi}}}$, and hence justified our guess for the density matrix. the von Neumann entropy of the state $\displaystyle{\widehat{\Phi}}$ is then given by
+
+$$\begin{align}
+S(\rho _{\widehat{\Phi}}) & =-\mathrm{Tr}(\rho _{\widehat{\Phi}}\log \rho _{\widehat{\Phi}}) \\
+ & = -\braket{ \widehat{\Phi}|\log \rho _{\widehat{\Phi}}|\widehat{\Phi} } 
+\end{align}$$
+
+to leading order in $\displaystyle{\varepsilon}$, we have
+
+$$\begin{align}
+-\log \rho _{\widehat{\Phi}} & =h_{\Phi|\Psi}+\beta x-\log|f(x)|^{2}+\log \beta
+\end{align}$$
+
+and the entropy is
+
+$$\begin{align}
+S(\rho _{\widehat{\Phi}}) & = \braket{ \Phi|h_{\Phi|\Psi}|\Phi }+\int _{-\infty}^{0}\mathrm{d}s|f(x)|^{2}(\beta x-\log|f(x)|^{2}+\log \beta) \\
+ & = \braket{ \Phi|h_{\Phi|\Psi}|\Phi }+\braket{ \widehat{\Phi}|\beta x|\widehat{\Phi} }+\int _{-\infty}^{0}\mathrm{d}x|f(x)|^{2}\left(-\log|f(x)|^{2}+\log \beta\right) \\
+ & = -\braket{ \Phi|h_{\Psi|\Phi}|\Phi }+\braket{ \widehat{\Phi}|h_{\Psi}+\beta x|\widehat{\Phi} } +\int _{-\infty}^{0}\mathrm{d}x|f(x)|^{2}(-\log|f(x)|^{2}+\log \beta)
+\end{align}$$
+
