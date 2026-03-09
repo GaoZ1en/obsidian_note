@@ -274,7 +274,7 @@ $$\begin{align}
 [Q(\bar{z}),Q(z)] & =\frac{1}{k \alpha}=\frac{i}{k}\omega ^{\bar{z}z}
 \end{align}$$
 
-by rescaling $\displaystyle{Q(\bar{z})}$, we obtain an algebra of creation and annihilation operators $\displaystyle{[a,a^{\dagger}]=1}$, represented by $\displaystyle{a=\frac{\partial}{\partial z}}$, and $\displaystyle{a^{\dagger}=z}$. this is known as teh Bargmann representation.
+by rescaling $\displaystyle{Q(\bar{z})}$, we obtain an algebra of creation and annihilation operators $\displaystyle{[a,a^{\dagger}]=1}$, represented by $\displaystyle{a=\frac{\partial}{\partial z}}$, and $\displaystyle{a^{\dagger}=z}$. this is known as the Bargmann representation.
 
 ---
 

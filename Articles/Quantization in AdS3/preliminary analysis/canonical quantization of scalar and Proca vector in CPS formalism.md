@@ -251,7 +251,7 @@ $$\tag{2.12}
 \end{align}
 $$
 
-(2.12) is only right for $\displaystyle{ij}$ and $\displaystyle{0i}$ components. for $\displaystyle{00}$ components, we have (?)
+(2.12) is only valid for $\displaystyle{ij}$ and $\displaystyle{0i}$ components. for $\displaystyle{00}$ components, we have (?)
 
 $$\tag{2.13}
 \begin{align}
