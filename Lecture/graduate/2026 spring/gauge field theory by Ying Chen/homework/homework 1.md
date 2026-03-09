@@ -40,14 +40,7 @@ u_{1}(p) \\ u_{2}(p)
 \end{pmatrix} & =0
 \end{align}$$
 
-thus we have
-
-$$\begin{align}
-u_{1}(p) & =\sqrt{E+m}\xi \\
-u_{2}(p) & =\frac{\vec{\sigma}\cdot \vec{p}}{\sqrt{E+m}}\xi
-\end{align}$$
-
-where $\displaystyle{\xi}$ is a two-component spinor. thus the solutions of the Dirac equation in the Dirac rep. are given by
+the solutions of the Dirac equation in the Dirac rep. are given by
 
 $$\begin{align}
 u(p) & =\begin{pmatrix}
@@ -55,7 +48,68 @@ u(p) & =\begin{pmatrix}
 \frac{\vec{\sigma}\cdot \vec{p}}{\sqrt{E+m}}\eta \\ \sqrt{E+m}\eta \end{pmatrix}
 \end{align}$$
 
+where $\displaystyle{\xi}$ and $\displaystyle{\eta}$ are two-component spinors corresponding to the spin degrees of freedom. the solutions correspond to a spin-1/2 particle, and the helicity and chirality are not good quantum numbers in this representation.
 
+### Weyl (Chiral) rep.
+
+the $\displaystyle{\gamma}$ matrices in the Weyl rep. are given by
+
+$$\begin{align}
+\gamma ^{0} & =\begin{pmatrix}
+0 & I \\
+I & 0
+\end{pmatrix},\gamma ^{i}=\begin{pmatrix}
+0 & \sigma ^{i} \\
+-\sigma ^{i} & 0
+\end{pmatrix}, \gamma^{5}=i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}=\begin{pmatrix}
+-I & 0 \\
+0 & I
+\end{pmatrix}
+\end{align}$$
+
+the Dirac equation $(i\gamma^{\mu}\partial_{\mu}-m)\psi(x)=0$ with plane wave ansatz $\psi(x) = u(p)e^{-ip\cdot x}$ becomes $(\not{p}-m)u(p)=0$, which can be written as
+
+$$\begin{align}
+\begin{pmatrix}
+-m & p_{0}-\vec{\sigma}\cdot \vec{p} \\
+p_{0}+\vec{\sigma}\cdot \vec{p} & -m
+\end{pmatrix}\begin{pmatrix}
+u_{L} \\ u_{R}
+\end{pmatrix} & =0
+\end{align}$$
+
+defining $\sigma^{\mu}=(I,\vec{\sigma})$ and $\bar{\sigma}^{\mu}=(I,-\vec{\sigma})$, we have
+
+$$\begin{align}
+(p\cdot \bar{\sigma})u_{R} = m u_{L}, \quad (p\cdot \sigma)u_{L} = m u_{R}
+\end{align}$$
+
+thus the solutions in the Weyl rep. are given by
+
+$$\begin{align}
+u^{s}(p) & =\begin{pmatrix}
+\sqrt{p\cdot \sigma}\xi^{s} \\ \sqrt{p\cdot \bar{\sigma}}\xi^{s}
+\end{pmatrix}, & v^{s}(p) & =\begin{pmatrix}
+\sqrt{p\cdot \sigma}\eta^{s} \\ -\sqrt{p\cdot \bar{\sigma}}\eta^{s}
+\end{pmatrix}
+\end{align}$$
+
+where $\displaystyle{\xi ^{s}}$ and $\displaystyle{\eta ^{s}}$ are two-component spinors corresponding to the spin degrees of freedom. in this representation, the upper and lower components of the Dirac spinor transform under different irreducible representations of the Lorentz group, representing left-handed and right-handed chiral states, respectively.
+
+### properties
+
+1. **spin**: the solutions correspond to a spin-1/2 particle. $\xi$ and $\eta$ are two-component spinors corresponding to the spin degrees of freedom.
+2. **helicity**: it is the projection of the spin along the direction of momentum, defined by the operator $h = \frac{\vec{\Sigma}\cdot \vec{p}}{|\vec{p}|}$. it is a conserved quantity for free particles.
+3. **chirality**: it is the eigenvalue of the $\gamma^{5}$ matrix operators. in the Weyl representation, the upper and lower components of the Dirac spinor transform under different irreducible representations of the Lorentz group, representing left-handed and right-handed chiral states.
+
+taking the limit $\displaystyle{m\to 0}$, the coupled equations in the Weyl representation become completely decoupled:
+
+$$\begin{align}
+(E-\vec{\sigma}\cdot \vec{p})u_{R}=0 \\
+(E+\vec{\sigma}\cdot \vec{p})u_{L}=0
+\end{align}$$
+
+which means $\vec{\sigma}\cdot \hat{p} \,u_{R} = u_{R}$ and $\vec{\sigma}\cdot \hat{p} \,u_{L} = -u_{L}$. in the massless limit, the chirality eigenstates become exactly the helicity eigenstates. a right-handed particle has positive helicity ($+1/2$), and a left-handed particle has negative helicity ($-1/2$).
 
 # problem 2
 
@@ -66,6 +120,63 @@ $$\begin{align}
 \end{align}$$
 
 where $\displaystyle{G_{F}}$ is the Fermi constant. calculate the decay width at tree level
+
+## solution
+
+![image](http://koishiminipc:8080/i/2600ff5b-ec5a-4c24-b775-950adc964342.png)
+
+the matrix element $\mathcal{M}$ is given by
+
+$$\begin{align}
+\mathcal{M} & =\frac{G_{F}}{\sqrt{2}}[\bar{u}(p_{\nu})\gamma^{\mu}(1-\gamma_{5})u(p_{\mu})][\bar{u}(p_{e})\gamma_{\mu}(1-\gamma_{5})v(p_{\bar{\nu}})]
+\end{align}$$
+
+the spin-averaged absolute square of the matrix element is
+
+$$\begin{align}
+\overline{|\mathcal{M}|^{2}} & =\frac{1}{2}\sum_{\text{spins}}|\mathcal{M}|^{2} \\
+ & =\frac{G_{F}^{2}}{4}\text{Tr}[\gamma^{\mu}(1-\gamma_{5})(\not{p}_{\mu}+m_{\mu})\gamma^{\nu}(1-\gamma_{5})\not{p}_{\nu}]\text{Tr}[\gamma_{\mu}(1-\gamma_{5})\not{p}_{e}\gamma_{\nu}(1-\gamma_{5})\not{p}_{\bar{\nu}}]
+\end{align}$$
+
+where we assumed neutrinos are massless. computing the traces using $(1-\gamma_5)^2 = 2(1-\gamma_5)$:
+
+$$\begin{align}
+\text{Tr}[\cdots]_{\mu} & =2\text{Tr}[\gamma^{\mu}(1-\gamma_{5})\not{p}_{\mu}\gamma^{\nu}\not{p}_{\nu}]=8[p_{\mu}^{\mu}p_{\nu}^{\nu}+p_{\mu}^{\nu}p_{\nu}^{\mu}-g^{\mu\nu}(p_{\mu}\cdot p_{\nu})-i\epsilon^{\mu\alpha\nu\beta}p_{\mu,\alpha}p_{\nu,\beta}] \\
+\text{Tr}[\cdots]_{e} & =8[p_{e,\mu}p_{\bar{\nu},\nu}+p_{e,\nu}p_{\bar{\nu},\mu}-g_{\mu\nu}(p_{e}\cdot p_{\bar{\nu}})-i\epsilon_{\mu\rho\nu\sigma}p_{e}^{\rho}p_{\bar{\nu}}^{\sigma}]
+\end{align}$$
+
+multiplying the two traces and using $\epsilon^{\mu\alpha\nu\beta}\epsilon_{\mu\rho\nu\sigma} = -2(\delta^{\alpha}_{\rho}\delta^{\beta}_{\sigma} - \delta^{\alpha}_{\sigma}\delta^{\beta}_{\rho})$, we get
+
+$$\begin{align}
+\overline{|\mathcal{M}|^{2}} & =64 G_{F}^{2} (p_{\mu}\cdot p_{\bar{\nu}})(p_{e}\cdot p_{\nu})
+\end{align}$$
+
+the differential decay rate formula is
+
+$$\begin{align}
+\mathrm{d}\Gamma & =\frac{1}{2m_{\mu}} \overline{|\mathcal{M}|^{2}} \mathrm{d}\Phi_{3}
+\end{align}$$
+
+where the three-body phase space is $\displaystyle{\mathrm{d}\Phi_{3}=(2\pi)^{4}\delta^{4}(p_{\mu}-p_{e}-p_{\nu}-p_{\bar{\nu}})\frac{\mathrm{d}^{3}\vec{p}_{e}}{(2\pi)^{3}2E_{e}}\frac{\mathrm{d}^{3}\vec{p}_{\nu}}{(2\pi)^{3}2E_{\nu}}\frac{\mathrm{d}^{3}\vec{p}_{\bar{\nu}}}{(2\pi)^{3}2E_{\bar{\nu}}}}$. integrating over the neutrino phase space gives
+
+$$\begin{align}
+\int \frac{\mathrm{d}^{3}\vec{p}_{\nu}}{2E_{\nu}}\frac{\mathrm{d}^{3}\vec{p}_{\bar{\nu}}}{2E_{\bar{\nu}}} \delta^{4}(q-p_{\nu}-p_{\bar{\nu}}) p_{\bar{\nu}}^{\alpha} p_{\nu}^{\beta} & = \frac{\pi}{6} (q^{2}g^{\alpha\beta}+2q^{\alpha}q^{\beta})
+\end{align}$$
+
+where $\displaystyle{q=p_{\mu}-p_{e}}$. therefore:
+
+$$\begin{align}
+\mathrm{d}\Gamma & = \frac{G_{F}^{2}}{m_{\mu}} \frac{\mathrm{d}^{3}\vec{p}_{e}}{(2\pi)^{5}2E_{e}} \frac{\pi}{6} [p_{\mu,\alpha}p_{e,\beta}(q^{2}g^{\alpha\beta}+2q^{\alpha}q^{\beta})] \\
+ & = \frac{G_{F}^{2}}{12\pi^{4}m_{\mu}} \frac{\mathrm{d}^{3}\vec{p}_{e}}{2E_{e}} [(p_{\mu}\cdot p_{e})q^{2}+2(p_{\mu}\cdot q)(p_{e}\cdot q)]
+\end{align}$$
+
+in the muon rest frame, ignoring the electron mass ($m_e \to 0$, $E_e = |\vec{p}_e|$), $\displaystyle{q^{2}=m_{\mu}^{2}-2m_{\mu}E_{e}}$, $\displaystyle{p_{\mu}\cdot p_{e}=m_{\mu}E_{e}}$, $\displaystyle{p_{\mu}\cdot q=m_{\mu}^{2}-m_{\mu}E_{e}}$ and $\displaystyle{p_{e}\cdot q=m_{\mu}E_{e}}$. substituting these, integrating over solid angle $4\pi$, and integrating $E_e$ from $0$ to $m_{\mu}/2$:
+
+$$\begin{align}
+\Gamma & = \int_{0}^{m_{\mu}/2} \frac{G_{F}^{2}}{12\pi^{3}m_{\mu}} E_{e} [m_{\mu}E_{e}(m_{\mu}^{2}-2m_{\mu}E_{e})+2(m_{\mu}^{2}-m_{\mu}E_{e})m_{\mu}E_{e}] \mathrm{d}E_{e} \\
+ & = \int_{0}^{m_{\mu}/2} \frac{G_{F}^{2} m_{\mu} E_{e}^{2}}{4\pi^{3}} \left(1-\frac{4E_{e}}{3m_{\mu}}\right) \mathrm{d}E_{e} \\
+ & = \frac{G_{F}^{2} m_{\mu}^{5}}{192\pi^{3}}
+\end{align}$$
 
 # problem 3
 
