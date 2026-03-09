@@ -1515,3 +1515,17 @@ $$\begin{align}
  & \implies (u^{2}-6u+8)^{-1} = \frac{47}{76} + \frac{189}{76}u - \frac{8}{76}u^{2}
 \end{align}$$
 
+if $\displaystyle{n}$ is a positive integer, $\displaystyle{a}$ is an integer that coprime to $\displaystyle{a}$, then $\displaystyle{a^{\varphi(n)}\equiv 1\mod{n}}$.
+consider the automorphism
+
+$$\begin{align}
+\phi:\mathbb{Z}_{n}\to \mathbb{Z}_{n} \\
+
+\end{align}$$
+
+$$\begin{align}
+R /K\cong f(R)
+\end{align}$$
+$$\begin{align}
+
+\end{align}$$
