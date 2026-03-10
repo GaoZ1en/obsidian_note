@@ -32,7 +32,7 @@ $$\begin{align}
 \Lambda & =-\int _{r_{0}}^{r}A_{r}(t,r',\phi )\mathrm{d}r'
 \end{align}$$
 
-which is well-defined since the spacetime is topologically trivial. after imposing the radial gauge, the eom becomes
+which is well-defined since the spacetime is topologically trivial in our case. after imposing the radial gauge, the eom becomes
 
 
 $$\begin{align}
@@ -130,5 +130,4 @@ $$\begin{align}
 n & =0,1,2,...,m_{\pm}= m\pm 1
 \end{align}$$
 
-difference between the spectrum of the finite system and the infinite system can be attributed to the finite size effect, and some other subtle effects such as the choice of boundary conditions and on and on...
-
+difference between the spectrum of the finite system and the infinite system can (?) be attributed to the finite size effect, and some other subtle effects such as the choice of boundary conditions and on and on...
