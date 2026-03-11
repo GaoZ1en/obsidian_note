@@ -538,4 +538,3 @@ h_{L,n}^{\mu \nu} & \propto\mathcal{L}_{\xi _{-1}}^{n}\left(A_{L,0}^{\mu}A_{L,0}
  & =\sum _{k=0}^{n}\binom{n}{k} \mathcal{L}_{\xi _{-1}}^{k}A_{L,0}^{\mu}\mathcal{L}_{\xi _{-1}}^{n-k}A_{L,0}^{\nu} \\
 h_{R,n}^{\mu \nu} & \propto \sum _{k=0}^{n}\binom{n}{k}\mathcal{L}_{\bar{\xi}_{-1}}^{k}A_{R,0}^{\mu}\mathcal{L}_{\bar{\xi}_{-1}}^{n-k}A_{R,0}^{\nu}
 \end{align}$$
-

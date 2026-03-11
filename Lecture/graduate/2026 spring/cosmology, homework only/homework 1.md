@@ -19,6 +19,8 @@ $$\begin{align}
 \implies & f'(R)R^{\mu \nu}-\frac{1}{2}f(R)g^{\mu \nu}-(\nabla ^{\mu}\nabla ^{\nu}-g^{\mu \nu}\nabla ^{2})f'(R)=8\pi GT^{\mu \nu}
 \end{align}$$
 
+(this problem can also be solved via the xAct package in Mathematica, but for the moment I don't have any passion to write the code for this problem.)
+
 # problem 2
 
 consider the Weyl transformation of the metric
@@ -31,22 +33,51 @@ derive the transformation of the Ricci scalar $\hat{R}$ under this Weyl transfor
 
 ## solution
 
-the Christoffel symbol transforms as
+the following mathematica code can be used to derive the transformation of the Ricci scalar under the Weyl transformation (however, it is ugly):
+
+```mathematica
+<<xAct`xTras` (* Load the xTras package *)
+
+(* Define the manifold, metric and the dimension of the manifold *)
+DefConstantSymbol[DD]
+DefManifold[MD,DD,IndexRange[a,f]]
+DefMetric[-1,gmetric[-a,-b],CD]
+
+(* Define the transformed metric *)
+DefTensor[\sigma[],MD]
+DefTensor[tg[-a,-b],MD,Symmetric[{1,2}]]
+DefTensor[tgup[a,b],MD,Symmetric[{1,2}]]
+IndexSet[tg[-a_,-b_],Exp[2 \sigma[]] gmetric[-a,-b]]
+IndexSet[tgup[a_,b_],Exp[-2 \sigma[]] gmetric[-a,-b]]
+
+(* Define and compute the transformed Christoffel symbols *)
+DefTensor[tGamma[c,-a,-b],MD,Symmetric[{2,3}]]
+IndexSet[tGamma[c_,-a_,-b_],(1/2) tgup[c,d] (PD[-a][tg[-b,d]] + PD[-b][tg[-a,d]] - PD[d][tg[-a,-b]])]
+
+(* Define and compute the transformed Riemann tensor *)
+DefTensor[tRiemann[c,-d,-a,-b],MD] (* I forget how to set the symmetry of the Riemann tensor, so I just ignore it *)
+IndexSet[tRiemann[c_,-d_,-a_,-b_],PD[-a][tGamma[c,-b,-d]] - PD[-b][tGamma[c,-a,-d]] + tGamma[c,-a,-e] tGamma[e,-b,-d] - tGamma[c,-b,-e] tGamma[e,-a,-d]]
+
+(* Define and compute the transformed Ricci tensor *)
+
+DefTensor[tRicci[-a,-b],MD,Symmetric[{1,2}]]
+IndexSet[tRicci[-a_,-b_],tRiemann[c,-a,-c,-b]]
+
+(* Define and compute the transformed Ricci scalar *)
+DefScalarFunction[tR[],MD]
+IndexSet[tR[],tgup[a,b] tRicci[-a,-b]]
+
+(* Print the final result *)
+ChangeCovD[tR[],PD,CD]//FullSimplification[gmetric]
+```
+
+the final result is
 
 $$\begin{align}
-\hat{\Gamma}^{\rho}_{~\mu \nu} & =\frac{1}{2}\hat{g}^{\rho \sigma}\left(\partial _{\mu}\hat{g}_{\sigma \nu}+\partial _{\nu}\hat{g}_{\sigma \mu}-\partial _{\sigma}\hat{g}_{\mu \nu}\right) \\
- & =\Gamma ^{\rho}_{~\mu \nu}+(\partial _{\mu}\sigma \delta ^{\rho}_{~\nu}+\partial _{\nu}\sigma \delta ^{\rho}_{~\mu}-\partial ^{\rho}\sigma g_{\mu \nu})
+e^{2\sigma}\hat{R} & =R-(d-2)\nabla ^{2}\sigma -(d-1)(d-2)\nabla _{\mu}\sigma \nabla ^{\mu}\sigma
 \end{align}$$
 
-and the Riemann tensor transforms as
-
-$$\begin{align}
-\hat{R}^{\rho}_{~\sigma \mu \nu} & =\partial _{\mu}\hat{\Gamma}^{\rho}_{~\nu \sigma}-\partial _{\nu}\hat{\Gamma} ^{\rho}_{~\mu \sigma}+\hat{\Gamma} ^{\rho}_{~\mu \lambda}\hat{\Gamma} ^{\lambda}_{~\nu \sigma}-\hat{\Gamma}^{\rho}_{~\nu \lambda}\hat{\Gamma}^{\lambda}_{~\mu \sigma} \\
- & =R^{\rho}_{~\sigma \mu \nu}+\partial _{\mu}\partial _{\nu}\sigma \delta ^{\rho}_{\sigma}+\partial _{\mu}\partial _{\sigma}\sigma \delta ^{\rho}_{\nu}-\partial _{\mu}\partial ^{\rho}\sigma g_{\nu \sigma}-\partial ^{\rho}\sigma \partial _{\mu}g_{\nu \sigma} \\
- & +\Gamma ^{\rho}_{~\mu \lambda}(\partial _{\nu}\sigma \delta ^{\lambda}_{\sigma}+\partial _{\sigma}\sigma \delta ^{\lambda}_{\nu}-\partial ^{\lambda}\sigma g_{\nu \sigma})+(\partial _{\mu}\sigma \delta ^{\rho}_{\lambda}+\partial _{\lambda}\sigma \delta ^{\rho}_{\mu}-\partial ^{\rho}\sigma g_{\mu \lambda})\Gamma ^{\lambda}_{~\nu \sigma} \\
- & +(\partial _{\mu}\sigma \delta ^{\rho}_{\lambda}+\partial _{\lambda}\sigma \delta ^{\rho}_{\mu}-\partial ^{\rho}\sigma g_{\mu \lambda})(\partial _{\nu}\sigma \delta ^{\lambda}_{\sigma}+\partial _{\sigma}\sigma \delta ^{\lambda}_{\nu}-\partial ^{\lambda}\sigma g_{\nu \sigma})-(\mu \leftrightarrow \nu) \\
- & =
-\end{align}$$
+which is exacyly the form we expected.
 
 # problem 3
 
@@ -60,17 +91,35 @@ derive the Einstein tensor for this metric.
 
 ## solution
 
-the non-zero Christoffel symbols are given by
+the following mathematica code can be used to derive the Einstein tensor for the LTB metric:
+
+```mathematica
+<<xAct`xTras` (* Load the xTras package *)
+
+(* Define the manifold, metric and coordinates *)
+DefManifold[M4,4,IndexRange[a,m]]
+DefMetric[1,gmetric[-a,-b],CD]
+DefChart[LTB,M4,{0,1,2,3},{t[],r[],theta[],phi[]}]
+
+(* Define the metric components *)
+DefScalarFunction@{X,Y}
+gmatrix={{-1,0,0,0},
+        {0,X[t[],r[]]^2,0,0},
+        {0,0,Y[t[],r[]]^2,0},
+        {0,0,0,Y[t[],r[]]^2 Sin[theta[]]^2}};
+MetricInBasis[gmetric,-LTB,gmatrix]
+MetricInBasis[gmetric,LTB,Inverse[gmatrix]]
+MetricCompute[gmetric,LTB,All,CVSimplify->Simplify]
+
+(* Compute the Einstein tensor *)
+ComponentArray[EinsteinCD[-{a, LTB}, -{b, LTB}]] // ToValues // MatrixForm
+```
+the running result is
 
 $$\begin{align}
-\Gamma ^{\rho}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =\frac{1}{2}g^{\rho \sigma}\left(\partial _{\mu}g_{\sigma \nu}+\partial _{\nu}g_{\mu \sigma}-\partial _{\sigma}g_{\mu \nu}\right)\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} \\
- & =g^{\rho \sigma}\mathrm{d}g_{\sigma \nu}\mathrm{d}x^{\nu}-\frac{1}{2}g^{\rho \sigma}\partial _{\sigma}\mathrm{d}s^{2}
-\end{align}$$
-
-$$\begin{align}
-\Gamma ^{t}_{~rr} & =\dot{X}X, \Gamma ^{t}_{~\theta \theta}=\dot{Y}Y, \Gamma ^{t}_{~\phi \phi}=\dot{Y}Y\sin ^{2}\theta
-\end{align}$$
-
-$$\begin{align}
-
+G_{tt} & =\frac{2YX'Y'-X(Y'^{2}+2YY'')+2X^{2}Y\dot{X}\dot{Y}+X^{3}(1+\dot{Y}^{2})}{X^{3}Y^{2}} \\
+G_{tr} & =\frac{2Y'\dot{X}-2XY''}{XY} \\
+G_{rr} & =\frac{Y'^{2}-X^{2}(1+\dot{Y}^{2}+2Y\ddot{Y})}{Y^{2}} \\
+G_{\theta \theta} & =-\frac{Y(X'Y'+X(-Y''+X(\dot{X}\dot{Y}+Y\ddot{X}+X\ddot{Y})))}{X^{3}} \\
+G_{\phi \phi} & =-\sin^{2}\theta  \frac{Y(X'Y'+X(-Y''+X(\dot{X}\dot{Y}+Y\ddot{X}+XY\ddot{Y})))}{X^{3}}
 \end{align}$$
