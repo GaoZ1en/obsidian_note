@@ -13,7 +13,7 @@ PI那里的人
 ## Zhe Feng
 
 主要就是讲了他的计算
-![[Lecture/Group meeting/Pasted image 20250221191813.png]]
+![[Lecture/group meeting/Pasted image 20250221191813.png]]
 
 希望加入合适的边界项后，使得
 

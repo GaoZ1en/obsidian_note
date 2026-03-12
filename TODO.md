@@ -3,7 +3,7 @@
 1. 协变相空间框架下的量子化
 	1. 线性引力
 	2. it seems that symplectic form defined in the covariant phase space formalism is strongly correlated to the Berry phase
-2. 可以借上课把若干经典读一读
+2. 阅读
 	1. large scale structure of spacetime by Hawking and Ellis
 	2. General Relativity by Wald
 	3. [Henneaux, Teitelboim] Quantization of gauge systems.pdf

@@ -1,4 +1,4 @@
-in this file we will reconsider all the models in [[Lecture/undergraguate/Hongbao Zhang/classical and quantum mechanics/examples/models|models]] and take the metric $\displaystyle{g_{\mu \nu}}$ as dynamical field (add the corresponding Einstein-Hilbert action), and try to find why under conformal transformation we will give the same result as diffeomorphism transformation???
+in this file we will reconsider all the models in [[Lecture/school lectures/undergraguate/Hongbao Zhang/classical and quantum mechanics/examples/models|models]] and take the metric $\displaystyle{g_{\mu \nu}}$ as dynamical field (add the corresponding Einstein-Hilbert action), and try to find why under conformal transformation we will give the same result as diffeomorphism transformation???
 
 $$\tag{.}
 \begin{align}

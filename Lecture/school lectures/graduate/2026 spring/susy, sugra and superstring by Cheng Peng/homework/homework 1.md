@@ -43,7 +43,7 @@ $$\begin{align}
 X_{a}\cdot \delta S & =\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{d-1}x\tau _{\mu}\alpha ^{\mu}_{a}
 \end{align}$$
 
-here we assume there is no classical anomaly. then we have the Noether current
+here we assume there is no anomaly. then we have the Noether current
 
 $$\begin{align}
 j_{a} ^{\mu} & =X_{a}\cdot \theta ^{\mu}-\alpha _{a} ^{\mu} \\
@@ -62,7 +62,7 @@ $$\begin{align}
 \delta _{a}\phi & =i[H_{a},\phi]
 \end{align}$$
 
-the correlator becomes
+the correlator becomes (again here we assume there is no anomaly)
 
 $$\begin{align}
 \braket{ \phi(x_{1})\dots \phi(x_{n}) }  & =\frac{1}{Z}\int \mathcal{D}\phi \phi(x_{1})\dots \phi(x_{n})e^{iS[\phi]} \\
@@ -76,4 +76,3 @@ which is equivalent to the local version (the required form)
 $$\begin{align}
 \partial _{\mu}\braket{ j_{a}^{\mu}\phi(x_{1})\dots \phi(x_{n}) } & =-\sum _{j}\delta ^{(d)}(x-x_{j})\braket{ \phi(x_{1})\dots[H_{a},\phi _{j}(x_{j})],\phi _{n}(x_{n}) } 
 \end{align}$$
-
