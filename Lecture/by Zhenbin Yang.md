@@ -65,3 +65,4 @@ I & =\frac{1}{4G}\int \mathrm{d}^{2}x\sqrt{ \hat{g} }(\varphi,\omega) \mathcal{D
 \end{align}$$
 
 (the $\displaystyle{\mathcal{D}}$ may be wrong). numerical analysis shows the phase of one-loop determinant meets the prediction by Maldecena. 
+
