@@ -1,4 +1,4 @@
-black hole thermodynamics...
+see https://arxiv.org/pdf/2512.01916 for more explicit discussion.
 
 for a general $\displaystyle{f(R_{\mu \nu \rho \sigma})}$ gravity. consider the covariant phase space formalism
 
