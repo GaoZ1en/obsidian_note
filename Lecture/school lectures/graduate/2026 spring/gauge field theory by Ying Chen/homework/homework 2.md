@@ -129,10 +129,17 @@ we have simply
 ### 4
 
 $$\begin{align}
-\braket{ 0|T\partial _{\mu}^{x}\phi(x)\phi(y)|0 } & =\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{6}2E_{\vec{k}}2E_{\vec{k}'}}\braket{\theta(x_{0}-y_{0}) 0|(-ik _{\mu}a_{\vec{k}}e^{-ik\cdot x}+ik _{\mu}a^{\dagger}_{\vec{k}}e^{ik\cdot x})(a_{\vec{k}'}e^{-ik\cdot y}+a^{\dagger}_{\vec{k}'}e^{ik'\cdot y})|0 } \\
- & +\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{6}2E_{\vec{k}}2E_{\vec{k}'}}\theta(y_{0}-x_{0})\braket{ 0|(a_{\vec{k}'}e^{-ik\cdot y}+a^{\dagger}_{\vec{k}'}e^{ik'\cdot y})(-ik _{\mu}a_{\vec{k}}e^{-ik\cdot x}+ik _{\mu}a_{\vec{k}}e^{ik\cdot x})|0 } \\
- & =\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2E_{k}}-ik _{\mu}\left(\theta(x_{0}-y_{0})e^{-ik\cdot(x-y)}+\theta(y_{0}-x_{0})e^{ik\cdot(x-y)}\right) \\
- & = 
+\braket{ 0|T\partial _{\mu}^{x}\phi(x)\phi(y)|0 } & =\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{6}2E_{\vec{k}}2E_{\vec{k}'}}\braket{\theta(x_{0}-y_{0}) 0|\partial _{\mu}^{x}(a_{\vec{k}}e^{-ik\cdot x}+a^{\dagger}_{\vec{k}}e^{ik\cdot x})(a_{\vec{k}'}e^{-ik\cdot y}+a^{\dagger}_{\vec{k}'}e^{ik'\cdot y})|0 } \\
+ & +\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{6}2E_{\vec{k}}2E_{\vec{k}'}}\theta(y_{0}-x_{0})\braket{ 0|(a_{\vec{k}'}e^{-ik\cdot y}+a^{\dagger}_{\vec{k}'}e^{ik'\cdot y})\partial ^{x} _{\mu}(a_{\vec{k}}e^{-ik\cdot x}+a_{\vec{k}}e^{ik\cdot x})|0 } \\
+ & =\partial _{\mu}^{x}\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2E_{\vec{k}}}\left(\theta(x_{0}-y_{0})e^{-ik\cdot(x-y)}+\theta(y_{0}-x_{0})e^{ik\cdot(x-y)}\right) \\
+ & -\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2E_{\vec{k}}}(e^{-ik\cdot(x-y)}-e^{ik\cdot(x-y)})\delta _{\mu}^{0} \delta(x_{0}-y_{0}) \\
+ & =\partial _{\mu}^{x} \braket{ 0|T\phi(x)\phi(y)|0 } 
+\end{align}$$
+
+the second term vanishes since the integrand is an odd function, but the integration domain is even in $\displaystyle{\vec{k}}$.
+
+$$\begin{align}
+\braket{ 0|T\partial _{\mu}^{x}\phi(x)\partial _{\nu}^{y}\phi(y)|0 } & =
 \end{align}$$
 
 
