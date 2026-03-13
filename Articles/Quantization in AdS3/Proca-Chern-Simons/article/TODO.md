@@ -12,4 +12,5 @@ This file tracks the missing mathematical substitutions, mock variables, and con
 ### 3. General Polish
 - [ ] Introduce cooperative introductory paragraphs (Section 1 is mostly a placeholder for your collaborator).
 - [ ] Double-check whether negative norms pop out in intermediate states if checking against purely pure-CS boundaries ($\mu \to 0$ limits).
-- [ ] Combine all `.md` files together into a final TeX or main markdown draft when all the above [TODO] boxes are checked.
+- [ ] Combine all `.md` files together into a final TeX or main markdown draft when all the above [TODO] boxes are checked.i
+
