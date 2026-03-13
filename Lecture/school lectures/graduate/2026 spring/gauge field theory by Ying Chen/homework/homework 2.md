@@ -129,7 +129,7 @@ we have simply
 ### 4
 
 $$\begin{align}
-\braket{ 0|T\partial _{\mu}^{x}\phi(x)\phi(y)|0 } & =\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{6}2E_{\vec{k}}2E_{\vec{k}'}}\braket{\theta(x_{0}-y_{0}) 0|\partial _{\mu}^{x}(a_{\vec{k}}e^{-ik\cdot x}+a^{\dagger}_{\vec{k}}e^{ik\cdot x})(a_{\vec{k}'}e^{-ik\cdot y}+a^{\dagger}_{\vec{k}'}e^{ik'\cdot y})|0 } \\
+\braket{ 0|T\partial _{\mu}^{x}\phi(x)\phi(y)|0 } & =\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{6}2E_{\vec{k}}2E_{\vec{k}'}}\theta(x_{0}-y_{0})\braket{ 0|\partial _{\mu}^{x}(a_{\vec{k}}e^{-ik\cdot x}+a^{\dagger}_{\vec{k}}e^{ik\cdot x})(a_{\vec{k}'}e^{-ik\cdot y}+a^{\dagger}_{\vec{k}'}e^{ik'\cdot y})|0 } \\
  & +\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{6}2E_{\vec{k}}2E_{\vec{k}'}}\theta(y_{0}-x_{0})\braket{ 0|(a_{\vec{k}'}e^{-ik\cdot y}+a^{\dagger}_{\vec{k}'}e^{ik'\cdot y})\partial ^{x} _{\mu}(a_{\vec{k}}e^{-ik\cdot x}+a_{\vec{k}}e^{ik\cdot x})|0 } \\
  & =\partial _{\mu}^{x}\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2E_{\vec{k}}}\left(\theta(x_{0}-y_{0})e^{-ik\cdot(x-y)}+\theta(y_{0}-x_{0})e^{ik\cdot(x-y)}\right) \\
  & -\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2E_{\vec{k}}}(e^{-ik\cdot(x-y)}-e^{ik\cdot(x-y)})\delta _{\mu}^{0} \delta(x_{0}-y_{0}) \\
@@ -139,9 +139,16 @@ $$\begin{align}
 the second term vanishes since the integrand is an odd function, but the integration domain is even in $\displaystyle{\vec{k}}$.
 
 $$\begin{align}
-\braket{ 0|T\partial _{\mu}^{x}\phi(x)\partial _{\nu}^{y}\phi(y)|0 } & =
+\braket{ 0|T\partial _{\mu}^{x}\phi(x)\partial _{\nu}^{y}\phi(y)|0 } & =\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{6}2E_{\vec{k}}2E_{\vec{k}'}}\theta(x_{0}-y_{0})\braket{ 0|\partial _{\mu}^{x}(a_{\vec{k}}e^{-ik\cdot x}+a^{\dagger}_{\vec{k}}e^{ik\cdot x})\partial _{\nu}^{y}(a_{\vec{k}'}e^{-ik\cdot y}+a^{\dagger}_{\vec{k}'}e^{ik\cdot y})|0 } \\
+ & +\int \frac{\mathrm{d}^{3}\vec{k}\mathrm{d}^{3}\vec{k}'}{(2\pi)^{6}2E_{\vec{k}}2E_{\vec{k}'}}\theta(y_{0}-x_{0})\braket{ 0|\partial _{\mu}^{y}(a_{\vec{k}'}e^{-ik\cdot y}+a^{\dagger}_{\vec{k}'}e^{ik\cdot y})\partial _{\mu}^{x}(a_{\vec{k}}e^{-ik\cdot x}+a^{\dagger}_{\vec{k}}e^{ik\cdot x})|0 } \\
+ & =\partial _{\mu}^{x}\partial _{\nu}^{y}\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2E_{\vec{k}}}\left(\theta(x_{0}-y_{0})e^{-ik\cdot(x-y)}+\theta(y_{0}-x_{0})e^{-ik\cdot(x-y)}\right) \\
+ & -\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2E_{\vec{k}}}\partial _{\nu}^{y}\left(e^{-ik\cdot(x-y)}-e^{ik\cdot(x-y)}\right)\delta _{\mu}^{0}\delta(x_{0}-y_{0}) \\
+ & +\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2E_{\vec{k}}}\partial _{\mu}^{x}\left(e^{-ik\cdot(x-y)}-e^{ik\cdot(x-u)}\right)\delta _{\nu}^{0}\delta(x_{0}-y_{0}) \\
+ & -\int \frac{\mathrm{d}^{3}\vec{k}}{(2\pi)^{3}2E_{\vec{k}}}(e^{-ik\cdot(x-y)}-e^{ik\cdot(x-y)})\delta _{\mu}^{0}\delta _{\nu}^{0}\partial _{y_{0}}\delta(x_{0}-y_{0}) \\
+ & =\partial _{\mu}^{x}\partial _{\nu}^{y}\braket{ 0|T\phi(x)\phi(y)|0 }-i\eta _{\mu 0}\eta _{\nu 0}\delta ^{4}(x-y)
 \end{align}$$
 
+the argument is quite similar to the problem 4 in the homework 1.
 
 # problem 2
 
@@ -151,4 +158,60 @@ consider QCD that contains heavy quarks. calculate the single gluon exchange con
 2. when the quarks are in the color octet state, the potential is repulsive
 
 ## solution
+
+the single gluon exchange process between a heavy quark $q$ and an antiquark $\bar{q}$ can be described by the $t$-channel scattering amplitude. in the non-relativistic limit, the interaction potential $V(\vec{r})$ is given by the Fourier transform of the non-relativistic scattering amplitude (Born approximation)
+
+$$ V(\vec{r}) = -\int \frac{\mathrm{d}^3\vec{q}}{(2\pi)^3} e^{i\vec{q}\cdot\vec{r}} \frac{\mathcal{M}_{\text{NR}}}{(2m_q)^2} $$
+
+the scattering amplitude for $q(p_1, i) + \bar{q}(p_2, j) \to q(p_1', i') + \bar{q}(p_2', j')$ is
+
+$$ i\mathcal{M} = \bar{u}(p_1')(-ig_s \gamma^\mu t^a_{i'i})u(p_1) \left( \frac{-i\eta_{\mu\nu}}{q^2} \right) \bar{v}(p_2)(-ig_s \gamma^\nu t^a_{jj'})v(p_2') $$
+
+where $i, j$ are initial color indices and $i', j'$ are final color indices for $q$ and $\bar{q}$ respectively. in the non-relativistic limit, the spatial momentum transfer is $\vec{q}$, and $q^2 \approx -|\vec{q}|^2$. the fermion bilinears reduce to $\bar{u}(p_1')\gamma^\mu u(p_1) \approx 2m_q \delta^{\mu 0}$ and $\bar{v}(p_2)\gamma^\nu v(p_2') \approx 2m_q \delta^{\nu 0}$. therefore
+
+$$ \mathcal{M}_{\text{NR}} \approx - \frac{g_s^2}{|\vec{q}|^2} (2m_q)^2 (\delta^{\mu 0}\delta^{\nu 0}\eta_{\mu\nu}) t^a_{i'i} t^a_{jj'} = - \frac{g_s^2}{|\vec{q}|^2} (2m_q)^2 (t^a_{i'i} t^a_{jj'}) $$
+
+using the Fourier transform $\int \frac{\mathrm{d}^3\vec{q}}{(2\pi)^3} \frac{e^{i\vec{q}\cdot\vec{r}}}{|\vec{q}|^2} = \frac{1}{4\pi r}$, we obtain the heavy quark potential 
+
+$$ V(r) = - \frac{g_s^2}{4\pi r} (t^a_{i'i} t^a_{jj'}) = V_0(r) \cdot \mathcal{C} $$
+
+where $V_0(r) = -\frac{\alpha_s}{r}$ (where $\alpha_s = \frac{g_s^2}{4\pi}$) is the attractive Coulomb-like spatial potential and $\mathcal{C} = t^a_{i'i} t^a_{jj'}$ is the effective color factor.
+
+now we evaluate this color factor for the singlet and octet combinations in $3 \otimes \bar{3} = 1 \oplus 8$.
+
+**1. color singlet state (attractive)**
+
+the normalized color singlet state is $|1\rangle = \frac{1}{\sqrt{3}} \delta_{ij} |i \bar{j}\rangle$. the factor $\mathcal{C}_1$ is the expectation value of the color operator $\mathcal{C}$ in this state:
+    
+$$\begin{align}
+\mathcal{C}_1 & = \langle 1 | \mathcal{C} | 1 \rangle = \left( \frac{1}{\sqrt{3}} \delta_{i'j'} \right) (t^a_{i'i} t^a_{jj'}) \left( \frac{1}{\sqrt{3}} \delta_{ij} \right) \\
+& = \frac{1}{3} \delta_{i'j'} \delta_{ij} t^a_{i'i} t^a_{jj'} = \frac{1}{3} t^a_{j'i} t^a_{ij'} = \frac{1}{3} \text{Tr}(t^a t^a)
+\end{align}$$
+
+using the normalization of the $\mathrm{SU}(3)$ generators $\text{Tr}(t^a t^b) = \frac{1}{2}\delta^{ab}$, we have $\text{Tr}(t^a t^a) = \frac{1}{2} \times 8 = 4$. thus
+
+$$\begin{align}
+\mathcal{C}_1 = \frac{4}{3} > 0
+\end{align}$$
+
+so the potential for the color singlet state is $\displaystyle{V_1(r) = -\frac{4}{3} \frac{\alpha_s}{r}}$. the negative overall sign rigorously proves that the potential is **attractive**.
+
+**2. color octet state (repulsive)**
+
+the normalized color octet state can be formulated as $|8^b\rangle = \sqrt{2} t^b_{ij} |i \bar{j}\rangle$, which is normalized since $\langle 8^c | 8^b \rangle = 2\text{Tr}(t^c t^b) = \delta^{cb}$. the color factor is
+
+$$\begin{align}
+\mathcal{C}_8 & = \langle 8^c | \mathcal{C} | 8^b \rangle = (\sqrt{2} (t^c)^{*}_{i'j'}) (t^a_{i'i} t^a_{jj'}) (\sqrt{2} t^b_{ij}) \\
+& = 2 t^c_{j'i'} t^a_{i'i} t^b_{ij} t^a_{jj'} = 2 \text{Tr}(t^c t^a t^b t^a)
+\end{align}$$
+
+*(note: we used $(t^c)^*_{i'j'} = (t^c)^\dagger_{j'i'} = t^c_{j'i'}$ and matched indices to form the matrix multiplication chain)*. using the $\mathrm{SU}(3)$ generator identity $\sum_a t^a t^b t^a = -\frac{1}{6} t^b$, we obtain:
+
+$$\begin{align}
+\mathcal{C}_8 & = 2 \text{Tr}\left(t^c \left(-\frac{1}{6} t^b\right)\right) = -\frac{1}{3} \text{Tr}(t^c t^b) = -\frac{1}{6} \delta^{cb}
+\end{align}$$
+
+so the effective color factor is $\mathcal{C}_8 = -1/6 < 0$. the potential for the color octet state is $\displaystyle{V_8(r) = +\frac{1}{6} \frac{\alpha_s}{r}}$. the positive overall sign rigorously proves that the potential is **repulsive**.
+
+*(Remark: This can also be derived via Casimir operators $T^a_q \cdot T^a_{\bar{q}} = \frac{1}{2}[C_2(R_{\text{tot}}) - 2C_F]$. For singlet $C_2(1)=0 \implies \boldsymbol{T}_1\cdot \boldsymbol{T}_2 = -4/3$. For octet $C_2(8)=3 \implies \boldsymbol{T}_1\cdot \boldsymbol{T}_2= +1/6$. Since $V(r) = \frac{\alpha_s}{r} (T^q \cdot T^{\bar{q}})$, it directly yields $-\frac{4}{3} \frac{\alpha_s}{r}$ and $+\frac{1}{6} \frac{\alpha_s}{r}$ as well.)*
 

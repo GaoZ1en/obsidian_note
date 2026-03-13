@@ -1,5 +1,3 @@
-in this file we will argue that in global $\displaystyle{\mathrm{AdS}_{3}}$, the highest weight modes of a free scalar field can be written as Jacobi polynomials.
-
 we have known that the highest weight modes can be written as
 
 $$\begin{align}

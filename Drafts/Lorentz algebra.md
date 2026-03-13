@@ -70,4 +70,3 @@ $$\begin{align}
  & =n^{\nu}K^{\mu}-n^{\mu}K^{\nu}+M^{\mu \nu} \\
  & =\varepsilon ^{\mu \nu \rho \sigma}n_{\rho}J_{\sigma}
 \end{align}$$
-
