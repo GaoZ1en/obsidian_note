@@ -26,29 +26,43 @@ $$\begin{align}
 
 By imposing the asymptotic boundary conditions defined in Section 2, boundary terms at spatial infinity $\displaystyle{\Gamma}$ purely vanish (as thoroughly explicitly verified in [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/5_appendices|Appendix A]]).
 
-From the volume integral, we read out the equations of motion (EOM), $E^\mu = 0$:
+From the volume integral, we read out the equations of motion, $E^\mu = 0$:
 
 $$E^\mu \equiv \nabla_\nu F^{\nu\mu} - \mu^2 A^\mu + \frac{k}{2\pi} \varepsilon^{\mu\nu\rho} \nabla_\nu A_\rho = 0.$$
 
-A remarkable feature of this massive geometry ($\mu > 0$) is that it possesses no gauge redundancies. By taking the covariant divergence of the EOM, we evaluate $\nabla_\mu E^\mu = 0$. Due to the strict antisymmetry of the field strength $F^{\nu\mu}$ and the Levi-Civita tensor $\varepsilon^{\mu\nu\rho}$, the derivatives of the kinetic and topological terms automatically vanish ($\nabla_\mu \nabla_\nu F^{\nu\mu} \equiv 0$ and $\nabla_\mu \varepsilon^{\mu\nu\rho} \nabla_\nu A_\rho \equiv 0$). This rigorously constrains the mass term:
+by taking a divergence of the EOM, we obtain the Lorentz transverse constraint:
 
-$$-\mu^2 \nabla_\mu A^\mu = 0 \quad \implies \quad \nabla_\mu A^\mu = 0.$$
+$$\begin{align}
+-\mu ^{2}\nabla _{\mu}A^{\mu} & =0 & \implies &  & \nabla _{\mu}A^{\mu} & =0
+\end{align}$$
 
-This intrinsic Lorentz transverse constraint dynamically removes the unphysical scalar degree of freedom, restricting the field uniquely to physically propagating components.
+We define the **pre-phase space** $\mathcal{\widetilde{P}}$ as the linear space spanned by all smooth field configurations $A_\mu$ that satisfy the EOM $E^\mu = 0$ along with our strict asymptotic boundary conditions.
 
-We define the **pre-phase space** $\mathcal{P}$ as the linear space spanned by all smooth field configurations $A_\mu$ that satisfy the EOM $E^\mu = 0$ along with our strict asymptotic boundary conditions. Because the system lacks local gauge redundancies, $\mathcal{P}$ simultaneously serves as the genuine physical phase space. 
-
-From the boundary terms of the variation, we isolate the specific symplectic potential one-form $\theta$ evaluated on a Cauchy surface $\Sigma$:
+From the boundary terms of the variation, we isolate the pre-symplectic potential $\theta$ evaluated on a Cauchy surface $\Sigma$:
 
 $$\theta[\delta A] = \int_\Sigma \mathrm{d}^2x \sqrt{\sigma} \, \tau_\mu \left( F^{\mu\nu}\delta A_\nu + \frac{k}{4\pi} \varepsilon^{\mu\nu\rho} A_\nu \delta A_\rho \right).$$
 
-Taking the exterior derivative in the configuration space ($\Omega = \delta \theta$), we derive the crucial covariant symplectic two-form evaluated on $\mathcal{P}$:
+Taking the exterior derivative in the configuration space, we derive the pre-sympliectic form evaluated on $\mathcal{\widetilde{P}}$:
 
-$$\Omega[\delta_1 A, \delta_2 A] = \int_\Sigma \mathrm{d}^2x \sqrt{\sigma} \, \tau_\mu \left( \delta_1 F^{\mu\nu} \delta_2 A_\nu - \delta_2 F^{\mu\nu} \delta_1 A_\nu + \frac{k}{2\pi} \varepsilon^{\mu\nu\rho} \delta_1 A_\nu \delta_2 A_\rho \right).$$
+$$\begin{align}
+\Omega[\delta _{1} A,\delta _{2} A] & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left(\delta _{1} F^{\mu \nu}\delta _{2} A_{\nu}+\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}\delta _{1}A_{\nu}\delta _{2}A_{\rho}\right)
+\end{align}$$
 
-Because the theory is linear, vectors in the tangent space at any point in $\mathcal{P}$ are purely identifiable with solutions themselves. Therefore, this defines the exact conserved bilinear symplectic product between any two valid classical solutions $A_1$ and $A_2$:
+which is a two-form of the configuration space. given a solution $\displaystyle{A_{i}^{\mu}}$ of the equation of motion, which is a point in the pre-phase space $\displaystyle{\mathcal{\widehat{P}}}$, we contruct the corresponding vector in the tangent space of $\displaystyle{\mathcal{\widehat{P}}}$ as
 
-$$\Omega[A_1, A_2] = \int_\Sigma \mathrm{d}^2x \sqrt{\sigma} \, \tau_\mu \left( F_1^{\mu\nu} A_{2\nu} - F_2^{\mu\nu} A_{1\nu} + \frac{k}{2\pi} \varepsilon^{\mu\nu\rho} A_{1\nu} A_{2\rho} \right).$$
+$$\begin{align}
+X_{A_{i}} & =\int \mathrm{d}^{3}xA_{i}^{\mu}(x) \frac{\delta}{\delta A^{\mu}(x)}
+\end{align}$$
+
+then we define the  between any two vectors in the tangent space as
+
+$$\begin{align}
+\Omega[A_{1},A_{2}] & =X_{A_{2}}\cdot X_{A_{1}}\cdot \Omega|_{\widehat{\mathcal{P}}} \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left(F_{1}^{\mu \nu}A_{2,\nu}-F_{2}^{\mu \nu}A_{1,\nu}+\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}(A_{1,\nu}A_{2,\rho}-A_{2,\nu}A_{1,\rho})\right) \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left(F_{1}^{\mu \nu}A_{2,\nu}-F_{2}^{\mu \nu}A_{1,\nu}+\frac{k}{2\pi}\varepsilon ^{\mu \nu \rho}A_{1,\nu}A_{2,\rho}\right)
+\end{align}$$
+
+this "inner product" will play a crucial role in the quantization procedure. (I don't know how to write here...)
 
 This integration yields finite physical quantities entirely independent of the choice of Cauchy slice $\Sigma$. In anticipation of forming a quantum Hilbert space, we will later utilize $i \Omega[A_1^*, A_2]$ to dictate the natural Hermitian inner product of the theory.
 
@@ -56,9 +70,32 @@ This integration yields finite physical quantities entirely independent of the c
 
 We now systematically apply Noether's procedure using the continuous isometries of the AdS background. Each Killing vector field $\xi^\mu$ generates a purely geometric transformation on the vector field mathematically encoded by the Lie derivative:
 
-$$\Delta_\xi A_\mu = \mathcal{L}_\xi A_\mu \equiv \xi^\nu \nabla_\nu A_\mu + A_\nu \nabla_\mu \xi^\nu.$$
+$$\delta _\xi A_\mu = \mathcal{L}_\xi A_\mu \equiv \xi^\nu \nabla_\nu A_\mu + A_\nu \nabla_\mu \xi^\nu.$$
 
-We denote the associated symmetric transformation on the configuration space as the vector field $X_\xi = \int \mathrm{d}^3x \, \mathcal{L}_\xi A_\mu \frac{\delta}{\delta A_\mu}$. Since the Lagrangian density $\mathcal{L}$ behaves as a scalar density, its transformation under diffeomorphism generated by $\xi$ forms a pure total derivative: $X_\xi \cdot \delta S = \int_M \mathrm{d}^3x \sqrt{-g} \nabla_\mu (\xi^\mu \mathcal{L})$. Applying Stokes' Theorem strictly attributes this total variation to boundary terms $\alpha_\xi\big|_{\Sigma_f} - \alpha_\xi\big|_{\Sigma_i}$, reading:
+and we denote the associated symmetric transformation as the vector field in the set of configuration:
+
+$$\begin{align}
+X_{\xi} & =\int \mathrm{d}^{3}x\delta _{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}}
+\end{align}$$
+
+the Killing vector $\displaystyle{\xi ^{\mu}}$ satisfies the Killing equation
+
+$$\begin{align}
+\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu} & =0
+\end{align}$$
+
+and the asymptotic behaviors
+
+$$\begin{align}
+\xi ^{t} & =\mathcal{O}(r^{0}) \\
+\xi ^{r} & =\mathcal{O}(r) \\
+\xi ^{\phi} & =\mathcal{O}(r^{0})
+\end{align}$$
+
+
+
+
+Since the Lagrangian density $\mathcal{L}$ behaves as a scalar density, its transformation under diffeomorphism generated by $\xi$ forms a pure total derivative: $X_\xi \cdot \delta S = \int_M \mathrm{d}^3x \sqrt{-g} \nabla_\mu (\xi^\mu \mathcal{L})$. Applying Stokes' Theorem strictly attributes this total variation to boundary terms $\alpha_\xi\big|_{\Sigma_f} - \alpha_\xi\big|_{\Sigma_i}$, reading:
 
 $$\alpha_\xi = \int_\Sigma \mathrm{d}^2x \sqrt{\sigma} \, \tau_\mu \xi^\mu \left( -\frac{1}{4}F_{\alpha\beta}F^{\alpha\beta} - \frac{1}{2}\mu^2 A_\alpha A^\alpha + \frac{k}{4\pi}\varepsilon^{\alpha\beta\gamma} A_\alpha \nabla_\beta A_\gamma \right).$$
 
@@ -75,3 +112,4 @@ We meticulously verify the fundamental Noether theorem statements (posited in Se
 3. **Fundamental Hamiltonian Equation**: Uniquely inserting $X_\xi$ to evaluate $X_\xi \cdot \Omega = -\delta Q_\xi$ maps dynamically identical elements. The system seamlessly realizes the Poisson mapping $\{Q_\xi, A\} = -\mathcal{L}_\xi A$, anchoring our symmetry generators inherently into the covariant brackets.
 
 As before, finite physical integration for these quantities (e.g., verifying that radial spatial flux diverges explicitly map to zero leaving only physical integrals purely along the Cauchy slice $\Sigma$) holds gracefully due to our specifically imposed asymptotic limits. The complete analytical proof for configuration finiteness is presented securely in Appendix A.
+

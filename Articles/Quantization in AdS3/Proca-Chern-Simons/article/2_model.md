@@ -90,3 +90,4 @@ $$\begin{align}
 \end{align}$$
 
 As demonstrated in detail in Appendix A (see [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/5_appendices|5_appendices]]), under these asymptotic boundary conditions, the action and its derivative physical quantities remain strictly finite. Thus, both the theory and its associated covariant variational principle are rigorously well-defined without the need for additional ad-hoc surface boundary counterterms.
+
