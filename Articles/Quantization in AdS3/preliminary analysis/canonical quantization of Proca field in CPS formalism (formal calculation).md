@@ -42,6 +42,7 @@ then the Poisson bracket between $\displaystyle{f}$ and $\displaystyle{g}$ is de
 $$\tag{1.5}
 \begin{align}
 \left\{f,g\right\} &=X_{f}\cdot X_{g}\cdot \omega \\
+ & =\omega ^{-1}(\delta f\wedge \delta g) \\
  & =\int _{\Sigma}\mathrm{d}^{d-1}x\left(\frac{\delta f}{\delta \phi} \frac{\delta g}{\delta \pi}-\frac{\delta f}{\delta \pi} \frac{\delta g}{\delta \phi}\right) 
 \end{align}
 $$
