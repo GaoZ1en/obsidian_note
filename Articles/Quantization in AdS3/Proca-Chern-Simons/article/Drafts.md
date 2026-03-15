@@ -67,7 +67,7 @@ X_{\xi}\cdot \Omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\l
 
 $$\begin{align}
 X_{\xi}\cdot \Omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\left(\xi ^{\rho}\nabla _{\rho}F_{\mu \nu}\delta A^{\nu}+F_{\rho \nu}\nabla _{\mu}\xi ^{\rho}\delta A^{\nu}+F_{\mu \rho}\nabla _{\nu}\xi ^{\rho}\delta A^{\nu}-\delta F_{\mu \nu}\xi ^{\rho}\nabla _{\rho}A^{\nu}+\delta F_{\mu \nu}A^{\rho}\nabla _{\rho}\xi ^{\nu}\right) \\
- & +\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}\xi ^{\lambda}\nabla _{\lambda}A^{\nu}\delta A^{\rho}-\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}\xi ^{\lambda}\nabla _{\lambda}\xi ^{\nu}\delta A^{\rho}
+ & +\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}\xi ^{\lambda}\nabla _{\lambda}A^{\nu}\delta A^{\rho}-\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}A^{\lambda}\nabla _{\lambda}\xi ^{\nu}\delta A^{\rho}
 \end{align}$$
 
 $$\begin{align}
@@ -79,6 +79,13 @@ X_{\xi}\cdot \Omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\
  & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\left( \frac{k}{2\pi} \varepsilon _{\mu \nu \rho}\xi ^{\lambda}\nabla _{\lambda}A_{\nu}\delta A_{\rho}+\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}A_{\lambda}\nabla _{\nu}\xi ^{\lambda}\delta A_{\rho} \right)
 \end{align}$$
 
+$$\begin{align}
+ & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\left(+\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}\xi ^{\lambda}\nabla _{\lambda}A^{\nu}\delta A^{\rho}+\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}A^{\lambda}\nabla _{\lambda}\xi ^{\rho}\delta A^{\nu}\right) \\
+ & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\left( -\frac{k}{2\pi}\varepsilon _{\nu \rho \sigma}\nabla ^{\rho}A^{\sigma}\xi_{\mu}\delta A^{\nu}+\frac{k}{2\pi}\varepsilon _{\mu \rho \sigma}\nabla ^{\rho}A^{\sigma}\xi _{\nu}\delta A^{\nu}+\frac{k}{2\pi}\varepsilon _{\mu \sigma \lambda}\nabla ^{\sigma}\delta A^{\lambda}A^{\rho}\xi _{\rho} \right) \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\left(\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}\nabla _{\lambda}(\xi ^{\lambda}A^{\nu}\delta A^{\rho})-\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}\nabla _{\lambda}\xi ^{\lambda}A^{\nu}\delta A^{\rho}-\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}\xi ^{\lambda}A^{\nu}\nabla _{\lambda}\delta A^{\rho}\right) \\
+ & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\left(\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}A^{\lambda}(\nabla _{\lambda}\xi ^{\rho}+\nabla ^{\rho}\xi _{\lambda})\delta A^{\nu}-\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}A^{\lambda}\nabla ^{\rho}\xi _{\lambda}\delta A^{\nu}+\frac{k}{2\pi}\varepsilon _{\mu \rho \sigma}\nabla ^{\rho}A^{\sigma}\xi _{\nu}\delta A^{\nu}+\frac{k}{2\pi}\varepsilon _{\mu \sigma \lambda}\nabla ^{\sigma}\delta A^{\lambda}A^{\rho}\xi _{\rho}\right) \\
+ & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\left(-\frac{k}{4\pi}\xi _{\mu}\varepsilon _{\nu \rho \sigma}\nabla ^{\rho}A^{\sigma}\delta A^{\nu}+\frac{k}{4\pi}\xi _{\mu}\varepsilon _{\nu \rho \sigma}\nabla ^{\rho}A^{\nu}\delta A^{\sigma}\right)
+\end{align}$$
 
 $$\begin{align}
 X_{\xi}\cdot \Omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\nabla _{\mu}\mathcal{L}_{\xi}\phi \delta \phi-\nabla _{\mu}\delta\phi \mathcal{L}_{\xi}\phi) \\
@@ -87,12 +94,4 @@ X_{\xi}\cdot \Omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(\
  & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}((\nabla _{\mu}\xi ^{\nu}+\nabla ^{\nu}\xi _{\mu})\nabla _{\nu}\phi \delta \phi-\nabla ^{\nu}\xi _{\mu}\nabla _{\nu}\phi \delta \phi+\nabla _{\nu}(\xi ^{\nu}\nabla _{\mu}\phi \delta \phi)-\nabla _{\nu}\xi ^{\nu}\nabla _{\mu}\phi \delta \phi-\xi ^{\nu}\nabla _{\mu}\phi \nabla _{\nu}\delta \phi-\nabla _{\mu}\delta \phi \xi ^{\nu}\nabla _{\nu}\phi) \\
  & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}((\nabla _{\mu}\xi ^{\nu}+\nabla ^{\nu}\xi _{\mu})\nabla _{\nu}\phi \delta \phi-\nabla ^{\nu}(\xi _{\mu}\nabla _{\nu}\phi \delta \phi)+\xi _{\mu}\nabla ^{2}\phi \delta \phi+\xi _{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\delta \phi \\
   & +\nabla _{\nu}(\xi ^{\nu}\nabla _{\mu}\phi \delta \phi)-\nabla _{\nu}\xi ^{\nu}\nabla _{\mu}\phi \delta \phi-\xi ^{\nu}\nabla _{\mu}\phi \nabla _{\nu}\delta \phi-\nabla _{\mu}\delta \phi \xi ^{\nu}\nabla _{\nu}\phi)
-\end{align}$$
-
-$$\begin{align}
- & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\left( -\frac{k}{2\pi}\varepsilon _{\nu \rho \sigma}\nabla ^{\rho}A^{\sigma}\xi_{\mu}\delta A^{\nu}+\frac{k}{2\pi}\varepsilon _{\mu \rho \sigma}\nabla ^{\rho}A^{\sigma}\xi _{\nu}\delta A^{\nu}+\frac{k}{2\pi}\varepsilon _{\mu \sigma \lambda}\nabla ^{\sigma}\delta A^{\lambda}A^{\rho}\xi _{\rho} \right) \\
- & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\left(+\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}\xi ^{\lambda}\nabla _{\lambda}A^{\nu}\delta A^{\rho}-\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}A^{\lambda}\nabla _{\lambda}\xi ^{\nu}\delta A^{\rho}\right) \\
- & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\left(-\frac{k}{2\pi}\varepsilon _{\nu \rho \sigma}\nabla ^{\rho}A^{\sigma}\xi _{\mu}\delta A^{\nu}+\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}(\nabla ^{\rho}A^{\sigma}\delta A^{\nu}+\nabla ^{\rho}\delta A^{\sigma}A^{\nu})\xi _{\nu}\right) \\
- & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\left(\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}\nabla _{\lambda}(\xi ^{\lambda}A^{\nu}\delta A^{\rho})-\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}\nabla _{\lambda}\xi ^{\lambda}A^{\nu}\delta A^{\rho}-\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}\xi ^{\lambda}A^{\nu}\nabla _{\lambda}\delta A^{\rho}\right) \\
- & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\left(-\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}A^{\lambda}(\nabla _{\lambda}\xi ^{\nu}+\nabla ^{\nu}\xi _{\lambda})\delta A^{\rho}+\frac{k}{2\pi}\varepsilon _{\mu \nu \rho}A^{\lambda}\nabla ^{\nu}\xi _{\lambda}\delta A^{\rho}\right)
 \end{align}$$
