@@ -67,3 +67,16 @@ X_{\xi}\cdot \Omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\l
  & =-\left.\delta \left( \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left(F^{\mu \rho}F^{\nu}_{~\rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{2}\mu ^{2}g^{\mu \nu}A_{\rho}A^{\sigma}\right)-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\nabla _{\nu}\left(\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}A_{\rho}A_{\sigma}\xi ^{\sigma}\right) \right)\right|_{\widehat{\mathcal{P}}} \\
  & =-\delta H_{\xi}
 \end{align}$$
+
+# "Casimir" operator
+
+$$\begin{align}
+\mathcal{D}_{\mu}^{~\nu}\mathcal{D}_{\nu}^{~\rho}A_{\rho} & =\varepsilon _{\mu}^{~\alpha \nu}\nabla _{\alpha}\varepsilon _{\nu}^{~\beta \rho}\nabla _{\beta}A_{\rho} \\
+ & =\varepsilon _{~\mu}^{\nu~\alpha}\varepsilon _{\nu}^{~\beta \rho}\nabla _{\alpha}\nabla _{\beta}A_{\rho} \\
+ & =-(\delta _{\mu}^{\beta}g^{\alpha \rho}-\delta _{\mu}^{\rho}g^{\alpha \beta})\nabla _{\alpha}\nabla _{\beta}A_{\rho} \\
+ & =-\nabla ^{\rho}\nabla _{\mu}A_{\rho}+\nabla ^{2}A_{\mu} \\
+ & =\nabla ^{2}A_{\mu}-[\nabla ^{\rho},\nabla _{\mu}]A_{\rho} \\
+ & =\nabla ^{2}A_{\mu}-R_{\mu \nu}A^{\nu} \\
+ & =\nabla ^{2}A_{\mu}+2A_{\mu}
+\end{align}$$
+
