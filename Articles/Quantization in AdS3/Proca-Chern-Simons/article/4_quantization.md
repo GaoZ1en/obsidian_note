@@ -1,26 +1,26 @@
-# 4. Mode Expansion and Quantization
+# 4. Representing the Hamiltonian system with a proper set of variables
 
-In this section, we seek the exact physical mode solutions for the free parameter space $(\mu, k)$ and perform the canonical quantization procedure. 
+So far, we have reformulated the model into a Hamiltonian system. In this section, by taking use of the mode expansion, we represent the Hamiltonian system with a proper set of variables and perform the canonical quantization procedure.
 
 ## 4.1 The framework
 
-Before going to the technical details, we first introduce the framework:
+Before going into the technical details, we first summarize the framework:
 
-We solve out a set of complete and independent modes $f_N^\mu(x)$ of the equations of motion. With the set of modes $f_N^\mu(x)$, we represent the general solution in the form of a mode expansion as
-
-$$
-A^\mu(x)\big|_{\widetilde{\mathcal{P}}} = \sum_N f_N^\mu(x) a_N .
-$$
-
-We view the coefficients $a_N$ in the mode expansion as a set of variables that parameterize the pre-phase space $\widetilde{\mathcal{P}}$ which is the set of solutions. And, by applying the general solution to the symplectic form, we compute the expression of the symplectic form represented with the set of variables $a_N$ as
+We construct an explicit set of complete and independent positive-energy modes $f_N^\mu(x)$ that satisfy the classical equations of motion. Spanned by this mode basis, the general physical solution can be securely parameterized through the generic mode expansion:
 
 $$
-\Omega\big|_{\widetilde{\mathcal{P}}} =\sum_{N_1, N_2} \Omega[f_{N_1}, f_{N_2}]\big|_{\widetilde{\mathcal{P}}} \delta a_{N_1} \wedge \delta a_{N_2}, 
+A^\mu(x)\big|_{\widetilde{\mathcal{P}}} = \sum_N (f_N^\mu(x) a_N +f_{N}^{*\mu}(x)a_{N}^{\dagger}).
 $$
 
-where $\displaystyle{\Omega[\cdot,\cdot]|_{\widetilde{P}}}$ is defined in former sections. Below, we will explicitly solve the modes and compute the expression of the symplectic form.
+By treating the Fourier coefficients $a_N$ as conjugate coordinates, we elegantly map the continuous solution space $\widetilde{\mathcal{P}}$ onto a discrete variable formulation. Inserting this general expanded solution systematically into the bilinear symplectic density, we directly reduce the expression of the overall symplectic form to the localized discrete modes $a_N$ as:
 
-## 4.2 Operator Factorization
+$$
+\Omega\big|_{\widetilde{\mathcal{P}}} =\sum_{N_1, N_2} \Omega[f_{N_1}, f^{*}_{N_2}]\big|_{\widetilde{\mathcal{P}}} \delta a_{N_1} \wedge \delta a^{\dagger}_{N_2}, 
+$$
+
+where $\Omega[\cdot,\cdot]|_{\widetilde{\mathcal{P}}}$ evaluates the fundamental symplectic pairing integrated over the initial spatial slices. Below, we mathematically solve for the exact profiles of these states and construct the explicit algebra of the reduced symplectic form respectively.
+
+## 4.2 Operator factorization for the equations of motion
 
 To elegantly solve the dynamically coupled Proca-Chern-Simons equations of motion, we define the first-order differential operator $\mathcal{D}$:
 
@@ -51,9 +51,11 @@ $$ \begin{align}
 
 In the following subsections, we will explicitly solve these two branches and confirm that they are indeed complete and independent.
 
-## 4.3 The Killing Symmetries and Casimir Operators
+## 4.3 The Killing symmetries
 
-To proceed with evaluating the exact physical solutions for the separated branches, we first leverage the rich isometry group of global $\mathrm{AdS}_3$ by introducing the Casimir operators of the Killing symmetry algebra $\mathrm{SL}(2, \mathbb{R})_L \times \mathrm{SL}(2, \mathbb{R})_R$ as:
+We will solve the modes and compute the expression of the symplectic form utilizing the Killing symmetries of the global $\mathrm{AdS}_3$ spacetime. The independent Killing fields $\xi_a, \bar{\xi}_a$ ($a \in \{-1, 0, 1\}$) form an $\mathrm{SL}(2, \mathbb{R})_L \times \mathrm{SL}(2, \mathbb{R})_R$ algebra under the Lie bracket.
+
+To proceed with evaluating the exact physical solutions for the separated branches, we construct the Casimir "operators" of the Killing symmetry algebra $\mathrm{SL}(2, \mathbb{R})_L \times \mathrm{SL}(2, \mathbb{R})_R$ as:
 
 $$ \begin{align}
 \mathcal{C} & =\mathcal{L}_{\xi_{0}}\mathcal{L}_{\xi_{0}}-\mathcal{L}_{\xi _{-1}}\mathcal{L}_{\xi _{1}}+i\mathcal{L}_{\xi_{0}} \\
@@ -67,7 +69,7 @@ $$ \begin{align}
  & =\mathcal{L}_{\bar{\xi}_{0}}\mathcal{L}_{\bar{\xi}_{0}}-\mathcal{L}_{\bar{\xi}_{1}}\mathcal{L}_{\bar{\xi}_{-1}}-i\mathcal{L}_{\bar{\xi}_{0}}.
 \end{align} $$
 
-Here, these algebraic Casimir operators commute with all the native Killing symmetries:
+Here, these algebraic Casimir operators strongly commute with all native Killing symmetries:
 
 $$ \begin{align}
 [\mathcal{C},\mathcal{L}_{\xi _{a}}] & =[\mathcal{C},\mathcal{L}_{\bar{\xi}_{a}}]=[\mathcal{\bar{C}},\mathcal{L}_{\xi _{a}}]=[\mathcal{\bar{C}},\mathcal{L}_{\bar{\xi}_{a}}]=0, \quad a \in \{-1,0,1\}.
@@ -80,78 +82,123 @@ $$ \begin{align}
 \mathcal{\bar{C}}A^{\mu} & =-\frac{1}{4}\nabla _{\nu}\nabla ^{\nu}A^{\mu}+\frac{1}{2}\varepsilon ^{\mu \nu}_{~~~\rho}\nabla _{\nu}A^{\rho}-\frac{1}{2}A^{\mu}.
 \end{align} $$
 
-Furthermore, by incorporating the constraint $\displaystyle{\nabla _{\mu}A^{\mu}=0}$ along with the geometric identity established earlier ($-\nabla^2 A_\mu - 2A_\mu = \mathcal{D}^2 A_\mu$), these actions can be equivalently and elegantly repackaged entirely in terms of the pure operator $\mathcal{D}$:
+Furthermore, by incorporating the transversality constraint $\nabla _{\mu}A^{\mu}=0$ along with the geometric identity established earlier ($-\nabla^2 A_\mu - 2A_\mu = \mathcal{D}^2 A_\mu$), these actions can be equivalently and elegantly repackaged entirely in terms of the pure operator $\mathcal{D}$:
 
 $$ \begin{align}
 \mathcal{C}A & =-\frac{1}{4}\mathcal{D}^{2}A-\frac{1}{2}\mathcal{D}A, \\
 \mathcal{\bar{C}}A & =-\frac{1}{4}\mathcal{D}^{2}A+\frac{1}{2}\mathcal{D}A.
 \end{align} $$
 
-This profound relationship demonstrates that the geometric operator $\mathcal{D}$ natively diagonalizes the $\mathrm{SL}(2, \mathbb{R})_L \times \mathrm{SL}(2, \mathbb{R})_R$ representations.
+This profound relationship guarantees that the geometric operator $\mathcal{D}$ intrinsically diagonalizes the basis mapped onto the isolated $\mathrm{SL}(2, \mathbb{R})_L \times \mathrm{SL}(2, \mathbb{R})_R$ representations.
 
-## 4.4 Representation of the Highest Weight States
+## 4.4 Solving the modes
 
-by taking use of the Killing symmetries, we choose the set of modes such that they form representations of the Killing symmetries $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$. and, in each representation, we furthermore choose the modes to be the eigenfunctionf of the time translation generator
+We now solve a set of complete and independent modes of the equations of motion utilizing the Killing symmetries. In building an appropriate basis framework, we systematically group these states spanning exact highest-weight representations reflecting the global symmetries. 
 
-$$\begin{align}
-\frac{\partial}{\partial t} & =\xi _{0}+\bar{\xi}_{0}
-\end{align}$$
+### 4.4.1 The eigenvalues of the Casimir "operators"
 
-and the rotation generator
+By directly mapping the highest-weight criteria bounds $\mathcal{D} A_{\pm,N} = \pm \mu_\pm A_{\pm,N}$ to the expanded continuous Casimir limits above, we naturally pinpoint their strict analytical eigenvalues separated uniquely across left- and right-handed sectors:
 
-$$\begin{align}
-\frac{\partial}{\partial \phi} & =-\xi _{0}+\bar{\xi}_{0}
-\end{align}$$
-
-under such a choice of the set of modes, we represent the individual modes in the form of
-
-$$\begin{align}
-f_{\lambda,N}^{\mu} & =e^{-i\omega t}e^{im\phi}\tilde{f}^{\mu}(r)
-\end{align}$$
-
-here, $\displaystyle{\lambda}$ labels the representations with $\displaystyle{+}$ and $\displaystyle{-}$ corresponding to the solutions of the factorized equations $\displaystyle{(\mathcal{D}\mp \mu _{\pm})f_{\pm}= 0}$, and $\displaystyle{N}$ labels the different modes in each representation. $\displaystyle{(\omega,m)}$ label the eigenvalye of the time translation and rotation generators as
-
-$$\begin{align}
-\mathcal{L}_{\frac{\partial}{\partial t}}f_{\lambda,N}^{\mu} & =-i\omega f_{\lambda,N}^{\mu} \\
-\mathcal{L}_{\frac{\partial}{\partial \phi}}f_{\lambda,N}^{\mu} & =imf_{\lambda,N}
-\end{align}$$
-
-respectively. $\displaystyle{m}$ is a real integer, and we make no assumption for $\displaystyle{\omega}$ for the moment.
-
-By directly substituting $\mathcal{D} A_{\pm,N} = \pm \mu_\pm A_{\pm,N}$ into the Casimir operator relations derived above, we naturally evaluate their eigenvalues on the separated left- and right-handed sectors:
-
-$$\begin{align}
-\mathcal{C}A_{+,N}^{\mu} & =\left(-\frac{1}{4}\mu _{+}^{2}+\frac{1}{2}\mu _{+}\right)A_{+,N}^{\mu} \\
+$$ \begin{align}
+\mathcal{C}A_{+,N}^{\mu} & =\left(-\frac{1}{4}\mu _{+}^{2}+\frac{1}{2}\mu _{+}\right)A_{+,N}^{\mu}, \\
 \mathcal{\bar{C}}A_{+,N}^{\mu} & =\left(-\frac{1}{4}\mu _{+}^{2}-\frac{1}{2}\mu _{+}\right)A_{+,N}^{\mu}
-\end{align}$$
+\end{align} $$
 
 and
 
-$$\begin{align}
-\mathcal{C}A_{-,N}^{\mu} & =\left(-\frac{1}{4}\mu _{-}^{2}-\frac{1}{2}\mu _{-}\right)A_{-,N}^{\mu} \\
-\mathcal{\bar{C}}A_{-,N}^{\mu} & =\left(-\frac{1}{4}\mu _{-}^{2}+\frac{1}{2}\mu _{-}\right)A_{-,N}^{\mu}
-\end{align}$$
+$$ \begin{align}
+\mathcal{C}A_{-,N}^{\mu} & =\left(-\frac{1}{4}\mu _{-}^{2}-\frac{1}{2}\mu _{-}\right)A_{-,N}^{\mu}, \\
+\mathcal{\bar{C}}A_{-,N}^{\mu} & =\left(-\frac{1}{4}\mu _{-}^{2}+\frac{1}{2}\mu _{-}\right)A_{-,N}^{\mu}.
+\end{align} $$
 
-We can trace back these eigenvalues $h(h-1)$ and $\bar{h}(\bar{h}-1)$ to identify the conformal dimensions $(h, \bar{h})$ associated to the two branches:
-$$ (h_+, \bar{h}_+) = \left(\frac{\mu_+}{2} \,,\, 1+\frac{\mu_+}{2}\right) $$
-$$ (h_-, \bar{h}_-) = \left(1+\frac{\mu_-}{2} \,,\, \frac{\mu_-}{2}\right) $$
-*(We drop the non-unitary branches with negative conformal dimensions as enforced by normalizability $\mu_\pm > 0$ and the boundary conditions).*
+### 4.4.2 Representation of the highest weight states
 
-Solving the first-order differential systems explicitly with the boundary asymptotic constraints yields the exact analytic configurations of the corresponding positive frequency primary states:
+For primary states $A_{\pm,0}^\mu$, their algebraic properties ensure decoupling from descending step extensions, meaning they are annihilated by the raising generators $\mathcal{L}_{\xi_1}$ and $\mathcal{L}_{\bar{\xi}_1}$. Thus we simply impose:
 
-$$ f_{+,0,0}^{\mu} = C_+ \frac{e^{-i(\mu_+ + 2)t}}{(1+r^2)^{1+\mu_+/2}} \xi_{1}^{\mu} $$
-$$ f_{-,0,0}^{\mu} = C_- \frac{e^{-i(-\mu_- + 2)t}}{(1+r^2)^{1+\mu_-/2}} \bar{\xi}_{1}^{\mu} $$
+$$ \begin{align}
+\mathcal{L}_{\xi _{1}} A_{\pm,0}^\mu & = 0, \\
+\mathcal{L}_{\bar{\xi}_{1}} A_{\pm,0}^\mu & = 0.
+\end{align} $$
 
-Here, $C_+$ and $C_-$ are normalization constants fixed entirely by enforcing the symplectic product condition $\omega[A, A^*] = -i\delta$. Their exact expressions and integrations are shifted to Appendix B. 
+Suppose the conformal dimensions of the primaries are $(h_{\pm}, \bar{h}_{\pm})$, i.e., they are eigenstates of $\mathcal{L}_{\xi _{0}}$ and $\mathcal{L}_{\bar{\xi}_{0}}$ with eigenvalues $h_{\pm}$ and $\bar{h}_{\pm}$ as
 
-All generalized excited descendant states filling up the physical degrees of freedom are then obtained through algebraic ladder operators:
-$$ f_{\pm,n,\bar{n}}^{\mu} = (\mathcal{L}_{\xi_{-1}})^n (\mathcal{L}_{\bar{\xi}_{-1}})^{\bar{n}} f_{\pm,0,0}^{\mu}. $$
+$$ \begin{align}
+\mathcal{L}_{\xi _{0}}A_{\pm,0}^{\mu} & =-ih_{\pm}A_{\pm,0}^{\mu}, \\
+\mathcal{L}_{\bar{\xi}_{0}}A_{\pm,0}^{\mu} & =-i\bar{h}_{\pm}A_{\pm,0}^{\mu};
+\end{align} $$
 
-## 4.5 Completeness of the Solution Spectrum
+then the Casimir eigenvalues can be expressed in terms of the conformal dimensions as
 
-Crucially, we must confirm that there are no additional physical configurations hiding outside the span of these highest-weight descendants. Extending the argument from the pure Proca case: assuming the existence of any leftover propagating physical zero-mode obeying both the transverse conditions $\nabla A = 0$ along with finite normalizable asymptotic behaviors, we could repeatedly apply the raising generators to lower their frequency. This hypothetical mode must eventually terminate to avoid violating positive energy boundedness (or asymptotic boundary fall-offs). The terminating state would exactly satisfy the conditions of a primary highest-weight mode. Because Eq. $(\mathcal{D} \mp \mu_\pm)A = 0$ are ordinary local differential equations whose complete spatial bases we already exhaustively retrieved as $\{f_{+,0,0}^\mu, f_{-,0,0}^\mu\}$, no such independent leftover state can physically be constructed. The direct sum $\mathcal{H}_+ \oplus \mathcal{H}_-$ is rigorously complete on the global boundary conditions. *(An exceptional case mapping integer gaps $\mu_+ - \mu_- \in \mathbb{Z}$ is briefly discussed in Appendix C).*
+$$ \begin{align}
+\mathcal{C}A_{\pm,0}^{\mu} & =(-h_{\pm}^{2}+h_{\pm})A_{\pm,0}^{\mu}, \\
+\mathcal{\bar{C}}A_{\pm,0}^{\mu} & =(-\bar{h}_{\pm}^{2}-\bar{h}_{\pm})A_{\pm,0}^{\mu},
+\end{align} $$
 
-## 4.6 Canonical Quantization and the Partition Function
+which gives the conformal dimensions of the primaries as
+
+$$ \begin{align}
+(h_{+},\bar{h}_{+})=\left(\frac{\mu _{+}}{2},1+\frac{\mu _{+}}{2}\right), \\
+(h_{-},\bar{h}_{-})=\left(1+\frac{\mu _{-}}{2},\frac{\mu _{-}}{2}\right).
+\end{align} $$
+
+We drop the non-unitary branches with negative conformal dimensions as enforced by normalizability $\mu_\pm > 0$ and the boundary conditions. By directly solving the highest weight conditions, we get the explicit forms of the primary states:
+
+$$ \begin{align}
+f_{+,0,0}^{\mu} & =\sqrt{ \frac{\mu _{+}+1}{\pi \mu _{+}} }\frac{e^{-i(\mu _{+}+2)t}}{(1+r^{2})^{1+\mu _{+}/2}}\xi _{1}^{\mu} \\
+f_{-,0,0}^{\mu} & =\sqrt{ \frac{\mu _{-}+1}{\pi \mu _{-}} }\frac{e^{-i(\mu _{-}+2)t}}{(1+r^{2})^{1+\mu _{-}/2}}\bar{\xi}_{1}^{\mu}
+\end{align} $$
+
+And their descendants are generated by the ladder operators $\mathcal{L}_{\xi _{-1}}$ and $\mathcal{L}_{\bar{\xi}_{-1}}$ as
+
+$$ \begin{align}
+f^{\mu}_{+,n,\bar{n}} & =\sqrt{ \frac{1}{n!(\mu _{+})_{n}\bar{n}!(\mu _{+}+2)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f_{+,0,0}^{\mu}, \\
+f^{\mu}_{-,n,\bar{n}} & =\sqrt{ \frac{1}{n!(\mu _{-}+2)_{n}\bar{n}!(\mu _{-})_{\bar{n}}} } \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f_{-,0,0}^{\mu}.
+\end{align} $$
+
+The normalization constants are fixed by enforcing the symplectic product condition $\Omega[A, A^*] = -i$. We will explain the details of the normalization in the next subsection.
+
+The actions of the Killing symmetries on these modes are
+
+$$ \begin{align}
+\mathcal{L}_{\xi_{0}}f_{+,n,\bar{n}}^{\mu} & =-i\left(\frac{\mu _{+}}{2}+n\right)f_{+,n,\bar{n}}^{\mu}, \\
+\mathcal{L}_{\xi _{-1}}f_{+,n,\bar{n}}^{\mu} & =\sqrt{ (n+1)(\mu _{+}+n) }f_{+,n+1,\bar{n}}^{\mu}, \\
+\mathcal{L}_{\xi _{1}}f_{+,n,\bar{n}}^{\mu} & =-\sqrt{ n(\mu _{+}+n-1) }f_{+,n-1,\bar{n}}^{\mu}, \\
+\mathcal{L}_{\bar{\xi}_{0}}f_{+,n,\bar{n}}^{\mu} & =-i\left(\frac{\mu _{+}}{2}+1+\bar{n}\right)f_{+,n,\bar{n}}^{\mu}, \\
+\mathcal{L}_{\bar{\xi}_{-1}}f_{+,n,\bar{n}}^{\mu} & =\sqrt{ (\bar{n}+1)(\mu _{+}+2+\bar{n}) }f_{+,n,\bar{n}+1}^{\mu}, \\
+\mathcal{L}_{\bar{\xi}_{1}}f_{+,n,\bar{n}}^{\mu} & =-\sqrt{ \bar{n}(\mu _{+}+1+\bar{n}) }f_{+,n,\bar{n}-1}^{\mu}
+\end{align} $$
+
+and
+
+$$ \begin{align}
+\mathcal{L}_{\xi_{0}}f_{-,n,\bar{n}}^{\mu} & =-i\left(\frac{\mu _{-}}{2}+1+n\right)f_{-,n,\bar{n}}^{\mu}, \\
+\mathcal{L}_{\xi _{-1}}f_{-,n,\bar{n}}^{\mu} & =\sqrt{ (n+1)(\mu _{-}+2+n) }f_{-,n+1,\bar{n}}^{\mu}, \\
+\mathcal{L}_{\xi _{1}}f_{-,n,\bar{n}}^{\mu} & =-\sqrt{ n(\mu _{-}+1+n) }f_{-,n-1,\bar{n}}^{\mu}, \\
+\mathcal{L}_{\bar{\xi}_{0}}f_{-,n,\bar{n}}^{\mu} & =-i\left(\frac{\mu _{-}}{2}+\bar{n}\right)f_{-,n,\bar{n}}^{\mu}, \\
+\mathcal{L}_{\bar{\xi}_{-1}}f_{-,n,\bar{n}}^{\mu} & =\sqrt{ (\bar{n}+1)(\mu _{-}+\bar{n}) }f_{-,n,\bar{n}+1}^{\mu}, \\
+\mathcal{L}_{\bar{\xi}_{1}}f_{-,n,\bar{n}}^{\mu} & =-\sqrt{ \bar{n}(\mu _{-}-1+\bar{n}) }f_{-,n,\bar{n}-1}^{\mu}.
+\end{align} $$
+
+We now provide a few remarks concerning the expressions above:
+
+1. $(\lambda)_{n}$ is the Pochhammer symbol defined as $(\lambda)_{n}=\frac{\Gamma(\lambda+n)}{\Gamma(\lambda)}$.
+2. The subscripts $+/-$ distinguish the two disconnected branches of the solution spectrum.
+3. See Appendix A for supplementary materials concerning the geometric setups, including a rigorous derivation of the explicit forms of the primary states and the normalization constants. There, we also provide algebraic arguments ensuring that there are no extra physical modes outside the full span of these highest-weight descendants.
+4. For special parameter choices with integer gaps $\mu_+ - \mu_- \in \mathbb{Z}$, the two branches may encounter degenerate overlapping states. We can systematically construct a complete orthogonal basis by choosing one physical mode from each overlapping pair. The details of this treatment are discussed in Appendix C.
+
+## 4.5 Symplectic form and Noether charges
+
+
+
+## 4.6 Hamiltonian system
+
+
+
+
+## 4.7 The Noether charges of the Killing symmetries
+
+
+## 4.8 Canonical quantization
 
 Expanding the classical vector field into its full complex orthonormal basis evaluated against $\omega$:
 
