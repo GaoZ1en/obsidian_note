@@ -152,12 +152,9 @@ Following the covariant phase space formalism presented in Section 1, we compute
 
 $$\begin{align}
 H_{\xi}|_{\mathcal{\widetilde{P}}} & =(X_{\xi}\cdot \theta-\alpha _{\xi})|_{\mathcal{\widetilde{P}}} \\
- & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu \rho}F^{\nu}_{~\rho}-\frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{2}\mu ^{2}g^{\mu \nu}A_{\rho}A^{\rho} \right) \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu \rho}F^{\nu}_{~\rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{2}\mu ^{2}g^{\mu \nu}A_{\rho}A^{\rho} \right) \\
  & +\left.\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left[ \nabla _{\nu}\left( F^{\mu \nu}A_{\rho}\xi ^{\rho}-\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}A_{\rho}A_{\sigma}\xi ^{\sigma} \right)+\left( \nabla _{\nu}F^{\nu \mu}-\mu ^{2}A^{\mu}+\frac{k}{2\pi}\varepsilon ^{\mu \rho \sigma}\nabla _{\rho}A_{\sigma} \right)A_{\rho}\xi ^{\rho} \right] \right|_{\widetilde{\mathcal{P}}}\\
- & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu \rho}F^{\nu}_{\rho}-\frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{2}\mu ^{2}g^{\mu \nu}A_{\rho}A^{\rho}\right) \\
- & -\left.\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }D_{\alpha}\left(\sigma ^{\alpha}_{\mu}\tau _{\nu}\left( F^{\mu \nu}-\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}A_{\rho} \right)A_{\sigma}\xi ^{\sigma}\right)\right|_{\widetilde{\mathcal{P}}} \\
- & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu \rho}F^{\nu}_{~\rho}-\frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{2}\mu ^{2}g^{\mu \nu}A_{\rho}A^{\rho}\right) \\
- & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma } \frac{k}{4\pi}D_{\alpha}\left(\sigma ^{\alpha}_{\mu}\tau _{\nu}\varepsilon ^{\mu \nu \rho}A_{\rho}A_{\sigma}\xi ^{\sigma}\right)
+ & =\left.\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu \rho}F^{\nu}_{\rho}-\frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{2}\mu ^{2}g^{\mu \nu}A_{\rho}A^{\rho}\right)\right|_{\widetilde{\mathcal{P}}}
 \end{align}$$
 
 Here, $\displaystyle{D_{\alpha}}$ is the covariant derivative compatible with the induced metric $\displaystyle{\sigma _{ab}}$ on $\Sigma$. We have used the following identity for an anti-symmetric tensor $\displaystyle{S^{\mu \nu}}$ to convert the second term in the last line to a total derivative:
@@ -176,7 +173,7 @@ X_{\xi}\cdot \Omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\l
  & +\tau ^{\mu}\nabla _{\rho}\xi ^{\rho}F_{\mu \nu}\delta A^{\nu}-\tau _{\mu}F_{\rho \nu}(\nabla ^{\mu}\xi ^{\rho}+\nabla ^{\rho}\xi ^{\mu})\delta A^{\nu}-\tau ^{\mu}F_{\mu \rho}(\nabla ^{\nu}\xi ^{\rho}+\nabla ^{\rho}\xi ^{\nu})\delta A_{\nu}+\tau ^{\mu}\delta F_{\mu \nu}A_{\rho}(\nabla ^{\rho}\xi ^{\nu}+\nabla ^{\nu}\xi _{\rho}) \\
  & -\tau ^{\mu}\xi _{\mu}\left( \nabla ^{\rho}F_{\rho \nu}-\mu ^{2}A_{\nu}+\frac{k}{2\pi}\varepsilon _{\nu \rho \sigma}\nabla ^{\rho}A^{\sigma} \right)\delta A^{\nu}+\tau ^{\mu}\xi _{\nu}\left( \nabla ^{\rho}F_{\rho \mu}-\mu ^{2}A_{\mu}+\frac{k}{2\pi}\varepsilon _{\mu \rho \sigma}\nabla ^{\rho}A^{\sigma} \right)\delta A^{\nu} \\
  & \left.\left. +\tau ^{\mu}\left( \nabla ^{\nu}\delta F_{\nu \mu}-\mu ^{2}\delta A_{\mu}+\frac{k}{2\pi}\varepsilon _{\mu \sigma \lambda}\nabla ^{\sigma}\delta A^{\lambda} \right)A^{\rho}\xi _{\rho} \right)\right|_{\widetilde{\mathcal{P}}} \\
- & =-\left.\delta \left( \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left(F^{\mu \rho}F^{\nu}_{~\rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{2}\mu ^{2}g^{\mu \nu}A_{\rho}A^{\sigma}\right)-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\nabla _{\nu}\left(\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}A_{\rho}A_{\sigma}\xi ^{\sigma}\right) \right)\right|_{\widetilde{\mathcal{P}}} \\
+ & =-\left.\delta \left( \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left(F^{\mu \rho}F^{\nu}_{~\rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{2}\mu ^{2}g^{\mu \nu}A_{\rho}A^{\sigma}\right) \right)\right|_{\widetilde{\mathcal{P}}} \\
  & =-\delta H_{\xi}
 \end{align}$$
 
@@ -199,8 +196,7 @@ $$\begin{align}
 with the bilinear form defined as
 
 $$\begin{align}
-H_{\xi}^{(2)}[A_{1},A_{2}] & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left(F_{1}^{\mu \rho}F_{2,~\rho}^{\nu}+F_{2}^{\mu \rho}F_{1,~\rho}^{\nu}-\frac{1}{2}g^{\mu \nu}F_{1,\rho \sigma}F_{2}^{\rho \sigma}+\mu ^{2}A_{1}^{\mu}A_{2}^{\nu}+\mu ^{2}A_{2}^{\mu}A_{1}^{\nu}-\mu ^{2}g^{\mu \nu}A_{1,\rho}A_{2}^{\rho}\right) \\
- & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\frac{k}{4\pi}D_{\alpha}\left(\sigma ^{\alpha}_{\mu}\tau _{\nu}\varepsilon ^{\mu \nu \rho}(A_{1,\rho}A_{2,\sigma}+A_{2,\rho}A_{1,\sigma})\xi ^{\sigma}\right)
+H_{\xi}^{(2)}[A_{1},A_{2}] & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left(F_{1}^{\mu \rho}F_{2,~\rho}^{\nu}+F_{2}^{\mu \rho}F_{1,~\rho}^{\nu}-\frac{1}{2}g^{\mu \nu}F_{1,\rho \sigma}F_{2}^{\rho \sigma}+\mu ^{2}A_{1}^{\mu}A_{2}^{\nu}+\mu ^{2}A_{2}^{\mu}A_{1}^{\nu}-\mu ^{2}g^{\mu \nu}A_{1,\rho}A_{2}^{\rho}\right)
 \end{align}$$
 
 Here, the expression $\displaystyle{H_{\xi}^{(2)}[\cdot, \cdot]}$ is directly connected to the Noether charge $\displaystyle{H_{\xi}}$ via
