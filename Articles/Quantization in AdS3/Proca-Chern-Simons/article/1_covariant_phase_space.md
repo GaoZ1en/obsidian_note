@@ -1,4 +1,4 @@
-# 1. A brief review for the covariant phase space formalism
+# 1. A brief review of the covariant phase space formalism
 
 In this section, we briefly review the covariant phase space formalism. Here, we only introduce the relevant notions and statements, tailoring the discussion towards field theories without gauge redundancies. We refer to [14, 15] for more details of the formalism and the proofs of the statements.
 

@@ -1,12 +1,12 @@
 # 3. Reformulating the model to a Hamiltonian system
 
-In this section, by making use of the covariant phase space formalism introduced in Section 1, we reformulate our model to a Hamiltonian system. And we also provide a general discussion for the Noether's theorem associated with the Killing symmetries. Here, Without pointing out explicitly, the near boundary contributions at spatial infinity $\displaystyle{\Gamma}$ vanish due to our strict asymptotic boundary conditions, as thoroughly explicitly verified in [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/5_appendices|Appendix A]].
+In this section, by making use of the covariant phase space formalism introduced in Section 1, we reformulate our model into a Hamiltonian system. And we also provide a general discussion for the Noether's theorem associated with the Killing symmetries. As explicitly verified in [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_a|Appendix A]], the near boundary contributions at spatial infinity $\displaystyle{\Gamma}$ vanish due to our asymptotic boundary conditions.
 
 ## 3.1 Reformulating the model to a Hamiltonian system
 
 We now apply our model to the covariant phase space formalism.
 
-Following the prescription, we first take a variation of the action $S$ concerning the dynamic field $A_\mu$:
+Following the prescription, we first take the variation of the action $S$ with respect to the dynamical field $A_\mu$:
 
 $$\begin{align}
 \delta S & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\left( \nabla _{\nu}F^{\nu \mu}-\mu ^{2}A^{\mu}+\frac{k}{2\pi}\varepsilon ^{\mu \nu \rho}\nabla _{\nu}A_{\rho}\right)\delta A_{\mu} \\
@@ -26,7 +26,7 @@ $$\begin{align}
 \tau ^{\mu} & =\frac{1}{1+r^{2}}\delta _{0}^{\mu}
 \end{align}$$
 
-The near boundary region's contributions to the integrals over $M, \Sigma_{f,i}$ in the final expression are finite. And, in deriving the variation of the action, we have used that the asymptotic boundary term from the integration by parts vanishes (as explicitly verified in [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/5_appendices|Appendix A]]).
+The near boundary region's contributions to the integrals over $M, \Sigma_{f,i}$ in the final expression are finite. In deriving the variation of the action, we have used that the asymptotic boundary term from the integration by parts vanishes (as explicitly verified in [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_a|Appendix A]]).
 
 From the variation of the action, we read out the equations of motion $E^\mu = 0$ as
 
@@ -48,7 +48,7 @@ $$\begin{align}
 
 Here, $\Sigma$ is a constant $t$ Cauchy surface. And $\theta$ is a one-form field of the set of configurations.
 
-Then, we define the pre-phase space $\mathcal{\widetilde{P}}$ as the set of solutions of the equations of motion along with our strict asymptotic boundary conditions. By taking an exterior derivative of the symplectic potential in the set of configurations, we get the symplectic form
+Then, we define the pre-phase space $\mathcal{\widetilde{P}}$ as the set of solutions of the equations of motion along with the asymptotic boundary conditions. By taking an exterior derivative of the symplectic potential in the set of configurations, we get the symplectic form
 
 $$\begin{align}
 \Omega[\delta _{1} A,\delta _{2} A] & =\int \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left(\delta _{1} F^{\mu \nu}\delta _{2} A_{\nu}+\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}\delta _{1}A_{\nu}\delta _{2}A_{\rho}\right)
@@ -104,7 +104,7 @@ $$\begin{align}
 \xi ^{\phi} & =\mathcal{O}(r^{0})
 \end{align}$$
 
-We now show that the Killing symmetries $\displaystyle{X_{\xi}}$ are indeed symmetries in the sense of Noether's theorem. We first show that the Killing symmetries preserve the asymptotic boundary conditions of the fields as
+We now show that the Killing vectors $X_{\xi}$ generate symmetries in the sense of Noether's theorem. We first show that the Killing symmetries preserve the asymptotic boundary conditions of the fields as
 
 $$\begin{align}
 X_{\xi}\cdot \delta A^{t} & =o(r^{-2}) \\
