@@ -186,7 +186,7 @@ We now provide a few remarks concerning the expressions above:
 1. $(\lambda)_{n}$ is the Pochhammer symbol defined as $(\lambda)_{n}=\frac{\Gamma(\lambda+n)}{\Gamma(\lambda)}$.
 2. The subscripts $+/-$ distinguish the two disconnected branches of the solution spectrum.
 3. See [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_b|Appendix B]] for supplementary materials concerning the geometric setups, including a rigorous derivation of the explicit forms of the primary states and the normalization constants. There, we also provide algebraic arguments ensuring that there are no extra physical modes outside the full span of these highest-weight descendants.
-4. Note that even for special parameter choices resulting in integer gaps $\mu_+ - \mu_- \in \mathbb{Z}$ where conformal weights of the two branches might overlap, these branches do not mix into logarithmic representations. They remain strictly orthogonal and independent because they unequivocally belong to different eigenspaces of the operator $\mathcal{D}$ (with strictly distinct eigenvalues $\mu_+$ and $-\mu_-$).
+4. For special parameter choices with integer gaps $\mu_+ - \mu_- \in \mathbb{Z}$, the two branches may encounter degenerate overlapping states. We can systematically construct a complete orthogonal basis by choosing one physical mode from each overlapping pair. The details of this treatment are discussed in [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_c|Appendix C]].
 
 ## 4.5 Symplectic form
 

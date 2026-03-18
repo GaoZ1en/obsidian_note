@@ -12,8 +12,11 @@ This file tracks the missing mathematical substitutions, mock variables, and con
 	- [x] this is not true.
 =======
 - [ ] **Symplectic Integrals (`appendix_b.md`, Appendix B):** Substitute the hard mathematical step-by-step integrals showing exactly how to go from $\omega(f_+, f_+^*) \dots$ to the final exact normalization coefficient $C_+ = \sqrt{\frac{\mu_++1}{\pi\mu_+}}$. (You can copy-paste and adapt the analogous workflow from `article.md`'s Appendix E/F, just with the extra term).
+<<<<<<< HEAD
 - [ ] **Exceptional cases logic (`appendix_c.md`, Appendix C):** Fill out the physical discussion discussing the resonance gap when $\mu_+ - \mu_- \in \mathbb{Z}$. It is currently stubbed. Explain what happens to the descending ladders and the implications for Hilbert space completeness (such as possible log terms or overlaps).
 >>>>>>> f6196bd5 (Daily snapshot: 2026-03-17)
+=======
+>>>>>>> 1592523a (sync by hand)
 
 ### 3. General Polish
 - [ ] Introduce cooperative introductory paragraphs (Section 1 is mostly a placeholder for your collaborator).
