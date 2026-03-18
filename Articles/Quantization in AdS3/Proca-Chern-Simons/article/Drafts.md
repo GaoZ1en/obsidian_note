@@ -79,4 +79,3 @@ $$\begin{align}
  & =\nabla ^{2}A_{\mu}-R_{\mu \nu}A^{\nu} \\
  & =\nabla ^{2}A_{\mu}+2A_{\mu}
 \end{align}$$
-

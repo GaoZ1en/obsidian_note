@@ -211,3 +211,4 @@ Finally, by building the Hamiltonian and angular momentum charge out of the crea
 
 $$ Z[\beta, \alpha] = \mathrm{Tr} \left( e^{-\beta H + i\alpha J} \right) = \prod_{n,\bar{n}=0}^{\infty} \frac{1}{\left(1-q^{\mu_{+}/2+1+n}\bar{q}^{\mu_{+}/2+\bar{n}}\right) \left(1-q^{-\mu_{-}/2+n}\bar{q}^{-\mu_{-}/2+1+\bar{n}}\right)} .$$
 This compact exact spectrum reveals the exact chiral asymmetric shift dictated by the topological Chern-Simons mass injection.
+
