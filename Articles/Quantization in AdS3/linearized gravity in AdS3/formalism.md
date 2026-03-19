@@ -226,3 +226,4 @@ the last term vanishes, leading to
 $$\begin{align}
 -h_{\mu \nu}+g^{(0)}_{\mu \nu}h-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu} & =0
 \end{align}$$
+
