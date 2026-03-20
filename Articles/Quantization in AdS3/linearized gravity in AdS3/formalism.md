@@ -173,8 +173,6 @@ $$\begin{align}
  & \sqrt{ -g^{(0)} }\delta h^{\mu \nu}\left( g^{(0)}_{\mu \nu}h-2h_{\mu \nu}+\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)2}h\right)
 \end{align}$$
 
-
-
 $$\begin{align}
 \delta L & =\sqrt{ -g^{(0)} }(\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}\delta h^{\mu \nu}-g^{(0)}_{\mu \nu}\nabla ^{(0)2}\delta h^{\mu \nu}) \\
  & +3\sqrt{ -g^{(0)} }g^{(0)}_{\mu \nu}h\delta h^{\mu \nu}-8\sqrt{ -g^{(0)} }h_{\mu \nu}\delta h^{\mu \nu} \\
