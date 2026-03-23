@@ -119,11 +119,11 @@ $$\begin{align}
 = & -\frac{4}{\mu ^{2}}\mathcal{L}_{\xi _{-1}}^{(1)}\left( \mathcal{L}_{\xi _{0}}^{(2)}+\frac{i\mu}{2} \right)g_{\mu+2}(x_{1},x_{2})\xi _{1}^{\mu_{1}}(x_{1})\xi _{0}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-3.
+3. 
 
 $$\begin{align}
  & \sum ^{\infty}_{n,\bar{n}=0}-\frac{2}{\mu ^{2}}\sqrt{ n(n-1)(\mu+n)(\mu+n+1) }\phi _{\mu+2,n,\bar{n}}(x_{1})\phi _{\mu+2,n-2,\bar{n}}^{*}(x_{2})\xi _{1}^{\mu_{1}}(x_{1})\xi _{1}^{\mu_{2}}(x_{2})  \\
-= & \sum ^{\infty}_{n,\bar{n}=0}\frac{2}{\mu ^{2}}\mathcal{L}_{\xi _{-1}}^{(2)}\phi _{\mu+2,n-1,\bar{n}}(x_{1})\mathcal{L}_{\xi _{-1}}^{(2)}\phi _{\mu+2,n-1,\bar{n}}(x_{2})\xi _{1}^{\mu_{1}}(x_{1})\xi _{1}^{\mu_{2}}(x_{2}) \\
+= & \sum ^{\infty}_{n,\bar{n}=0}\frac{2}{\mu ^{2}}\mathcal{L}_{\xi _{-1}}^{(1)}\phi _{\mu+2,n-1,\bar{n}}(x_{1})\mathcal{L}_{\xi _{-1}}^{(1)}\phi _{\mu+2,n-1,\bar{n}}(x_{2})\xi _{1}^{\mu_{1}}(x_{1})\xi _{1}^{\mu_{2}}(x_{2}) \\
 = & \frac{2}{\mu ^{2}} \mathcal{L}_{\xi _{-1}}^{(2)}\mathcal{L}_{\xi _{-1}}^{(2)}g_{\mu+2}(x_{1},x_{2})\xi _{1}^{\mu_{1}}(x_{1})\xi _{1}^{\mu_{2}}(x_{2})
 \end{align}$$
 
@@ -143,35 +143,35 @@ $$\begin{align}
 = & \frac{8}{\mu ^{2}}\left( \mathcal{L}_{\xi_{0}}^{(1)}\mathcal{L}_{\xi_{0}}^{(2)}-\frac{\mu ^{2}}{4} \right)g_{\mu+2}(x_{1},x_{2})\xi _{0}^{\mu_{1}}(x_{1})\xi _{0}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-6.
+6. 
 
 $$\begin{align}
 & \sum ^{\infty}_{n,\bar{n}=0}-4i \frac{n}{\mu ^{2}}\sqrt{ (n-1)(\mu+n) }\phi _{\mu+2,n-1,\bar{n}}(x_{1})\phi _{\mu+2,n-2,\bar{n}}^{*}(x_{2})\xi _{0}^{\mu_{1}}(x_{1})\xi _{1}^{\mu_{2}}(x_{2}) \\
 = & -\frac{4}{\mu ^{2}}\left(\mathcal{L}_{\xi_{0}}^{(1)}-i\frac{\mu}{2}\right)\mathcal{L}_{\xi _{-1}}^{(2)}g_{\mu+2}(x_{1},x_{2})\xi _{0}^{\mu_{1}}(x_{1})\xi_{1}^{\mu _{2}}(x_{2})
 \end{align}$$
 
-7. 
+7.  
 
 $$\begin{align}
  & \sum ^{\infty}_{n,\bar{n}=0}-\frac{2}{\mu ^{2}}\sqrt{ n(n-1)(\mu+n)(\mu+n+1) }\phi _{\mu+2,n-2,\bar{n}}(x_{2})\phi _{\mu+2,n,\bar{n}}^{*}(x_{2})\xi _{-1}^{\mu_{1}}(x_{1})\xi _{-1}^{\mu_{2}}(x_{2}) \\
-= & \frac{2}{\mu ^{2}}\mathcal{L}_{\xi _{1}}^{(1)}\mathcal{L}_{\xi _{1}}^{(2)}g_{\mu+2}(x_{1},x_{2})\xi _{-1}^{\mu_{1}}(x_{1})\xi _{-1}^{\mu_{2}}(x_{2})
+= & \frac{2}{\mu ^{2}}\mathcal{L}_{\xi _{1}}^{(1)}\mathcal{L}_{\xi _{1}}^{(1)}g_{\mu+2}(x_{1},x_{2})\xi _{-1}^{\mu_{1}}(x_{1})\xi _{-1}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-8.
+8. 
 
 $$\begin{align}
  & \sum ^{\infty}_{n,\bar{n}=0}+4i \frac{n}{\mu ^{2}}\sqrt{ (n-1)(\mu+n) }\phi _{\mu+2,n-2,\bar{n}}(x_{1})\phi _{\mu+2,n-1,\bar{n}}(x_{2})\xi _{-1}^{\mu _{1}}(x_{1})\xi _{0}^{\mu_{2}}(x_{2}) \\
 = & -\frac{4}{\mu ^{2}} \mathcal{L}_{\xi _{1}}^{(1)}\left(\mathcal{L}_{\xi _{0}}^{(2)}-i\frac{\mu}{2}\right)g_{\mu+2}(x_{1},x_{2})\xi _{-1}^{\mu_{1}}(x_{1})\xi _{0}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-9.
+9. 
 
 $$\begin{align}
 & \sum ^{\infty}_{n,\bar{n}=0}+2 \frac{n(n-1)}{\mu ^{2}}\phi _{\mu+2,n-2,\bar{n}}(x_{1})\phi _{\mu+2,n-2,\bar{n}}^{*}(x_{2})\xi _{-1}^{\mu_{1}}(x_{1})\xi _{1}^{\mu_{2}}(x_{2}) \\
 = & \frac{2}{\mu ^{2}}\left(\mathcal{L}_{\xi _{1}}^{(1)}\mathcal{L}_{\xi _{-1}}^{(2)}-i\mu \mathcal{L}_{\xi_{0}}^{(1)}+\frac{\mu ^{2}}{2}\right)g_{\mu+2}(x_{1},x_{2})\xi _{-1}^{\mu_{1}}(x_{1})\xi _{1}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-add them all together we get
+add them all together, we get
 
 $$\begin{align}
 \sum ^{\infty}_{n,\bar{n}=0} f_{u,n,\bar{n}}^{\mu_{1}}(x_{1})f_{u,n,\bar{n}}^{*\mu_{2}}(x_{2}) & =\frac{2}{\mu ^{2}}g^{\mu_{1}\nu_{2}}g^{\mu_{2}\nu_{2}}\partial _{\nu_{1}}\partial _{\nu_{2}}g_{\mu+2}(x_{1},x_{2}) \\
@@ -192,5 +192,42 @@ similarly we have (check needed)
 $$\begin{align}
 \sum ^{\infty}_{n,\bar{n}=0}f^{\mu_{1}}_{v,n,\bar{n}}(x_{1})f_{v,n,\bar{n}}^{*\mu_{2}}(x_{2}) & =\frac{2}{\mu ^{2}}\partial ^{\mu_{1}}\partial ^{\mu_{2}}g_{\mu+2}(x_{1},x_{2})-\frac{i}{2\mu}\varepsilon ^{\mu_{2}\nu_{2}}_{~~~~~~\rho_{2}}(x_{2})g^{\rho_{2},\mu_{1}}(x_{1},x_{2})\partial _{\nu_{2}}g_{\mu+2}(x_{1},x_{2}) \\
  & +\frac{1}{2}g^{\mu_{1},\mu_{2}}(x_{1},x_{2})g_{\mu+2}(x_{1},x_{2})
+\end{align}$$
+
+here we dropped the non-covariant contact term, which appears when we take the derivatives of the step function in the two point function of the scalar normal modes.
+
+add the two together, we have
+
+
+
+---
+
+for Proca-Chern-Simons theory, same procedure applies but with different parameters, we have
+
+$$\begin{align}
+f^{\mu}_{u,0,0} & =\sqrt{ \frac{\mu _{+}+1}{\pi \mu _{+}} } \frac{e^{-i(\mu _{+}+2)t}}{(1+r^{2})^{(\mu _{+}+2)/2}}\xi _{1}^{\mu} \\
+f_{u,n,\bar{n}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu _{+})_{n}(\mu _{+}+2)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f_{u,0,0}^{\mu} \\
+f_{v,0,0}^{\mu} & =\sqrt{ \frac{\mu _{-}+1}{\pi \mu _{-}} } \frac{e^{-i(\mu _{-}+2)t}}{(1+r^{2})^{(\mu _{-}+2)/2}}\bar{\xi}_{1}^{\mu} \\
+f_{v,n,\bar{n}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu _{-}+2)_{n}(\mu _{-})_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f_{v,0,0}^{\mu}
+\end{align}$$
+
+and we can write them in terms of the scalar normal modes
+
+$$\begin{align}
+f_{u,n,\bar{n}}^{\mu} & =\frac{1}{\mu _{+}}\sqrt{ 2(\mu _{+}+n)(\mu _{+}+n+1) }\phi _{\mu _{+}+2,n,\bar{n}}\xi _{1}^{\mu} \\
+ & +\frac{2i}{\mu _{+}}\sqrt{ 2n(\mu _{+}+n) }\phi _{\mu _{+}+2,n-1,\bar{n}}\xi _{0}^{\mu} \\
+ & -\frac{1}{\mu _{+}}\sqrt{ 2n(n-1) }\phi _{\mu _{+}+2,n-2,\bar{n}}\xi _{-1}^{\mu} \\
+ f_{v,n,\bar{n}}^{\mu} & =\frac{1}{\mu _{-}}\sqrt{ 2(\mu _{-}+\bar{n})(\mu _{-} +\bar{n}+1) }\phi _{\mu _{-}+2,n,\bar{n}}\bar{\xi} _{1}^{\mu} \\
+  & +\frac{2i}{\mu _{-}}\sqrt{ 2\bar{n}(\mu+\bar{n}) }\phi _{\mu _{-}+2,n,\bar{n}-1}\bar{\xi}_{0}^{\mu} \\
+ & -\frac{1}{\mu _{-}}\sqrt{ 2\bar{n}(\bar{n}-1) }\phi _{\mu _{-}+2,n,\bar{n}-2 }\bar{\xi}_{-1}^{\mu}
+\end{align}$$
+
+then we have
+
+$$\begin{align}
+\sum _{n,\bar{n}=0}^{\infty}f_{u,n,\bar{n}}^{\mu _{1}}f_{u,n,\bar{n}}^{*\mu _{2}} & =\frac{2}{\mu _{+} ^{2}}\partial ^{\mu_{1}}\partial ^{\mu_{2}}g_{\mu _{+}+2}(x_{1},x_{2})+\frac{i}{2\mu _{+}}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~\rho_{1}}(x_{1})g^{\rho_{1},\mu_{2}}(x_{1},x_{2})\partial _{\nu_{1}}g_{\mu _{+}+2}(x_{1},x_{2}) \\
+ & +\frac{1}{2}g^{\mu_{1},\mu_{2}}(x_{1},x_{2})g_{\mu _{+}+2}(x_{1},x_{2}) \\
+\sum _{n,\bar{n}=0}^{\infty}f_{v,n,\bar{n}}^{\mu _{1}}f_{v,n,\bar{n}}^{*\mu _{2}} & = \frac{2}{\mu _{-} ^{2}}\partial ^{\mu_{1}}\partial ^{\mu_{2}}g_{\mu _{-}+2}(x_{1},x_{2})-\frac{i}{2\mu _{-}}\varepsilon ^{\mu_{2}\nu_{2}}_{~~~~~~\rho_{2}}(x_{2})g^{\rho_{2},\mu_{1}}(x_{1},x_{2})\partial _{\nu_{2}}g_{\mu _{-}+2}(x_{1},x_{2}) \\
+ & +\frac{1}{2}g^{\mu_{1},\mu_{2}}(x_{1},x_{2})g_{\mu _{-}+2}(x_{1},x_{2})
 \end{align}$$
 
