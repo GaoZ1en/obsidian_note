@@ -1,5 +1,6 @@
 turn to Euclidean field theory
 
+
 $$\begin{align}
 A^{\tau}(\tau,r,\phi) & =iA^{t}(t=-i\tau,r,\phi) \\
 A^{r}(\tau,r,\phi) & =A^{r}(t=-i\tau,r,\phi) \\
@@ -196,9 +197,9 @@ $$\begin{align}
 
 here we dropped the non-covariant contact term, which appears when we take the derivatives of the step function in the two point function of the scalar normal modes.
 
-add the two together, we have
+add them together, we get
 
-
+(not done yet)
 
 ---
 
@@ -231,3 +232,4 @@ $$\begin{align}
  & +\frac{1}{2}g^{\mu_{1},\mu_{2}}(x_{1},x_{2})g_{\mu _{-}+2}(x_{1},x_{2})
 \end{align}$$
 
+1+1d electric theory, behavior of entanglement entropy.

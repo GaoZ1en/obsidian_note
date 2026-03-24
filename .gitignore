@@ -14,3 +14,6 @@
 /**/*.aux
 /**/*.log
 /**/*.pdf
+
+# Ignore MacOS files
+/.DS_Store
