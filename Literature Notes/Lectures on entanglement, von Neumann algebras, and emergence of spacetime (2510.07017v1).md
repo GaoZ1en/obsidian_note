@@ -12,3 +12,155 @@ pdf: "[[Attachments/Assets/Lectures on entanglement, von Neumann algebras, and e
 url: https://arxiv.org/abs/2510.07017v1
 tags: []
 ---
+# Type I and Type II von Neumann algebrs
+
+a von Neumann algebra $\displaystyle{\mathcal{M}}$ defines a subsystem, and vice versa.
+
+## density operators for type I and II algebras
+
+suppose the system is in a status $\displaystyle{\ket{\Psi}}$. when a von Neumann algebra $\displaystyle{\mathcal{M}}$ has a trace, it is possible to define a density operator $\displaystyle{\rho _{\mathcal{M}}}$ associated with $\displaystyle{\mathcal{M}}$ for $\displaystyle{\ket{\Psi}}$ as
+
+$$\begin{align}
+\mathrm{Tr}(A\rho _{\mathcal{M}}) & = \braket{ \Psi|A|\Psi },\quad \forall A\in \mathcal{M}
+\end{align}$$
+
+## type I algebras
+
+for $\displaystyle{\mathcal{M}}$ being a type I factor, there exists a factorization of the Hilbert space $\displaystyle{\mathcal{H}=\mathcal{H}_{R}\otimes \mathcal{H}_{L}}$ such that
+
+$$\begin{align}
+\mathcal{M} & =\mathcal{B}(\mathcal{H}_{R})\otimes 1_{L}, & \quad \mathrm{Tr} & =\mathrm{Tr}_{\mathcal{H}_{R}}, & \mathcal{M'}=1_{R}\otimes \mathcal{B}(\mathcal{H}_{L})
+\end{align}$$
+
+given a state $\displaystyle{\ket{\Psi}}$ on $\displaystyle{\mathcal{H}}$, it can be seen that the density operator $\displaystyle{\rho _{\mathcal{M}}}$ defined above is the reduced density matrix obtained by tracing out $\displaystyle{\mathcal{H}_{L}}$:
+
+$$\begin{align}
+\braket{ \Psi|A|\Psi }  & =\mathrm{Tr}_{\mathcal{H}_{R}}(\rho _{R}A), \quad \forall A\in \mathcal{M}
+\end{align}$$
+
+we conclude that $\displaystyle{\rho _{\mathcal{M}}=\rho _{R}=\mathrm{Tr}_{\mathcal{H}_{L}}\ket{\Psi}\bra{\Psi}}$.
+
+### generic type I
+
+consider a generic type I algebra $\displaystyle{\mathcal{M}}$ with non-trivial center. it can be shown that there exists a decomposition
+
+$$\begin{align}
+\mathcal{H} & =\oplus _{\alpha}\mathcal{H}_{\alpha}, & \mathcal{H}_{\alpha} & =\mathcal{H}_{R_{\alpha}}\otimes \mathcal{H}_{L_{\alpha}} \\
+\mathcal{M} & =\oplus _{\alpha}(\mathcal{B}(\mathcal{H}_{R_{\alpha}})\otimes 1_{L_{\alpha}}) & \mathcal{M}' & =\oplus _{\alpha}(1_{R_{\alpha}}\otimes \mathcal{B}(\mathcal{H}_{L_{\alpha}}))
+\end{align}$$
+
+a trace on $\displaystyle{\mathcal{M}}$ can be defined as
+
+$$\begin{align}
+\mathrm{Tr}A & =\sum _{\alpha}\mathrm{Tr}_{\alpha}A_{\alpha} \\
+ & \equiv \sum _{\alpha}\mathrm{Tr}_{\mathcal{H}_{R_{\alpha}}}A_{\alpha} \\
+A & =\sum _{\alpha}(A_{\alpha}\otimes 1_{L_{\alpha}}),\quad A_{\alpha}\in \mathcal{B}(\mathcal{H}_{R_{\alpha}})
+\end{align}$$
+
+now consider a state $\displaystyle{\rho}$
+
+$$\begin{align}
+\rho & =\oplus _{\alpha}p_{\alpha}\rho _{\alpha}, & \sum _{\alpha}p_{\alpha} & =1, & p_{\alpha} & \in[0,1], & \mathrm{Tr}_{\alpha}\rho _{\alpha} & =1
+\end{align}$$
+
+then we have
+
+$$\begin{align}
+\rho _{\mathcal{M}} & =\sum _{\alpha}p_{\alpha}\rho _{R_{\alpha}}\otimes 1_{L_{\alpha}}, &  \rho _{R_{\alpha}} & =\mathrm{Tr}_{H_{L_{\alpha}}}\rho _{\alpha}\in \mathcal{B}(\mathcal{H}_{R_{\alpha}})
+\end{align}$$
+
+then the entanglement entropy of the subsystem $\displaystyle{\mathcal{M}}$ in the state $\displaystyle{\rho}$ is then given by
+
+$$\begin{align}
+S_{\mathcal{M}} & \equiv-\mathrm{Tr}\rho _{\mathcal{M}}\log \rho _{\mathcal{M}} \\
+ & =-\sum _{\alpha}p_{\alpha}\log p_{\alpha}+\sum _{\alpha}p_{\alpha}S_{\alpha} \\
+S_{\alpha} & =-\mathrm{Tr}_{\alpha}\rho _{R_{\alpha}}\log \rho _{R_{\alpha}}
+\end{align}$$
+
+where the first term comes from statistics, and the second term comes from entanglement.
+
+## type II algebras
+
+### trace for $\displaystyle{\theta=\frac{\pi}{4}}$
+
+what does $\displaystyle{\theta=\frac{\pi}{4}}$ mean? it means that we have a state
+
+$$\begin{align}
+\ket{\Psi_{\theta}} =\sum _{i=1}^{\infty}\left(\cos \theta \ket{0} _{L,i}\ket{0} _{R,i}+\sin \theta \ket{1} _{L,i}\ket{1}_{R,i}\right) 
+\end{align}$$
+
+and when $\displaystyle{\theta=\frac{\pi}{4}}$, the $\displaystyle{R}$ system and $\displaystyle{L}$ system are maximally entangled. in this case, it is possible to define a trace on $\displaystyle{\mathcal{M}=\mathcal{M}_{R}}$ as
+
+$$\begin{align}
+\mathrm{Tr}A & =\braket{\Psi_{\pi /4}|A|\Psi_{\pi /4}},\quad \forall A\in \mathcal{M}
+\end{align}$$
+
+### type II$_{1}$ for $\displaystyle{\theta=\frac{\pi}{4}}$
+
+the maximal projection is the identity operator
+
+$$\begin{align}
+1 & =1_{2}\otimes 1_{2}\otimes \dots
+\end{align}$$
+
+and all other projections are subprojections of the identity operator. thus, the algebra $\displaystyle{\mathcal{M}}$ is a type II$_{1}$ factor.
+
+...
+
+# type III
+
+for type III algebras, there is no trace. and it is not possible to define a density operator (even in the renormalized sense) associated with $\displaystyle{\mathcal{M}}$ for a state.
+
+## emergent times, modular flows
+
+we first turn to type I case and reformulate the chracterization of entanglement in terms of modular flows. we consider
+
+$$\begin{align}
+\rho _{R} & =\mathrm{Tr}_{L}\ket{\Psi} \bra{\Psi} \equiv e^{-K_{R}},  & K_{R}=-\log \rho _{R}
+\end{align}$$
+
+the information contained in $\displaystyle{S_{R}}$ and $\displaystyle{S_{R}^{(n)}}$ is fully captured by the spectrum of $\displaystyle{K_{R}}$ (entanglement spectrum). the flow is generated by $\displaystyle{K_{R}}$:
+
+$$\begin{align}
+A(s) & =e^{isK_{R}}Ae^{-isK_{R}},\quad \forall A\in \mathcal{M}=\mathcal{B}(\mathcal{H}_{R})\otimes 1_{L}
+\end{align}$$
+
+the flow acts within the system. Kubo-Martin-Schwinger relation? similarly we introduce $\displaystyle{K_{L}=\log \rho _{L},\rho _{L}=\mathrm{Tr}_{R}\ket{\Psi}\bra{\Psi}}$. we can treat the $\displaystyle{R}$ and $\displaystyle{L}$ systems together by introducing
+
+$$\begin{align}
+\Delta _{\Psi} & =\rho _{R}\otimes \rho _{L}^{-1}, & -\log \Delta _{\Psi} & =K_{R}-K_{L}
+\end{align}$$
+
+that acts joint on both subsystems, with the flow and its counterpart in the $\displaystyle{L}$ subsystem written as
+
+$$\begin{align}
+\sigma _{s}(A) & =\Delta _{\Psi}^{-is}A\Delta _{\Psi}^{is}\in \mathcal{B}(\mathcal{H}_{R}), & \forall A\in \mathcal{B}(\mathcal{H}_{R}), s \in \mathbb{R} \\
+\sigma _{s}(A') & =\Delta _{\Psi}^{-is}A'\Delta _{\Psi}^{is}\in \mathcal{B}(\mathcal{H}_{L}), & \forall A'\in \mathcal{B}(\mathcal{H}_{L})
+\end{align}$$
+
+$\displaystyle{\Delta _{\Psi}}$ is called the modular operator, the action $\displaystyle{\sigma _{s}}$ is called the modular flow, and $\displaystyle{s}$ the modular time.
+
+the fact that in a pure state $\displaystyle{S_{R}=S_{L}}$ implies $\displaystyle{\Delta _{\Psi}}$ leaves $\displaystyle{\ket{\Psi}}$ invariant:
+
+$$\begin{align}
+\Delta _{\Psi}\ket{\Psi} & =\Delta _{\Psi}^{-1}\ket{\Psi} =\ket{\Psi} \implies (K_{R}-K_{L})\ket{\Psi} =0
+\end{align}$$
+
+which means the modular flow generated by $\displaystyle{\Delta _{\Psi}}$ is a symmetry of the state $\displaystyle{\ket{\Psi}}$. since $\displaystyle{\Delta _{\Psi}}$ is well-defined only when $\displaystyle{\rho _{R}}$ and $\displaystyle{\rho _{L}}$ are invertible, the Hilbert spaces $\displaystyle{\mathcal{H}_{R}}$ and $\displaystyle{\mathcal{H}_{L}}$ have the same dimension. so it is possible to define a anti-unitary operator $\displaystyle{J_{\Psi}}$ that swaps the $\displaystyle{R}$ and $\displaystyle{L}$ systems:
+
+$$\begin{align}
+\ket{\phi}  & =\sum _{m,n}\phi _{mn}\ket{m} _{R}\otimes \ket{n} _{L}\in \mathcal{H} \\
+J_{\Psi}\ket{\phi}  & =\sum _{m,n}\phi _{mn}^{*}\ket{n} _{R}\otimes \ket{m} _{L}
+\end{align}$$
+
+then $\displaystyle{J_{\Psi}}$ satisfies
+
+$$\begin{align}
+J_{\Psi}^{2} & =1
+\end{align}$$
+
+$\displaystyle{J_{\Psi}}$ is known as the modular conjugation operator. in order to generalize to the case of type III algebras, we introduce the notion of cyclic and separating vector. a state $\displaystyle{\ket{\Psi}}$ is called to be cyclic with respect to an algebra $\displaystyle{\mathcal{M}}$ if the set $\displaystyle{\left\{A\ket{\Psi},A\in \mathcal{M}\right\}}$ is dense in the Hilbert space $\displaystyle{\mathcal{H}}$. $\displaystyle{\rho _{R}}$ and $\displaystyle{\rho _{L}}$ are full-rank is equivalent to the statement that $\displaystyle{\ket{\Psi}}$ is cyclic with respect to $\displaystyle{\mathcal{M}=\mathcal{B}(\mathcal{H}_{R})\otimes 1_{L}}$ and its commutant $\displaystyle{\mathcal{M}'=1_{R}\otimes \mathcal{B}(\mathcal{H}_{L})}$. a state $\displaystyle{\ket{\Psi}}$ is called to be separating with respect to an algebra $\displaystyle{\mathcal{M}}$ if for any $A\in \mathcal{M}$, $A\ket{\Psi}=0$ implies $A=0$.
+
+Tomita-Takesaki theory says that for a von Neumann algebra $\displaystyle{\mathcal{M}}$ with a cyclic and separating vector $\displaystyle{\ket{\Psi}}$
+- there exists a positive modular operator $\displaystyle{\Delta _{\Psi}}$ leaving $\displaystyle{\ket{\Psi}}$ invariant
+
