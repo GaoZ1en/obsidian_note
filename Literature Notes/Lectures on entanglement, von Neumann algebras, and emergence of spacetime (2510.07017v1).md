@@ -164,3 +164,55 @@ $\displaystyle{J_{\Psi}}$ is known as the modular conjugation operator. in order
 Tomita-Takesaki theory says that for a von Neumann algebra $\displaystyle{\mathcal{M}}$ with a cyclic and separating vector $\displaystyle{\ket{\Psi}}$
 - there exists a positive modular operator $\displaystyle{\Delta _{\Psi}}$ leaving $\displaystyle{\ket{\Psi}}$ invariant
 
+$$\begin{align}
+\Delta _{\Psi}\ket{\Psi}  & =\ket{\Psi} 
+\end{align}$$
+
+    and $\displaystyle{K_{\Psi}=-\log \Delta _{\Psi}}$ generates unitary automorpshisms (modular flows) for $\displaystyle{\mathcal{M}}$ and $\displaystyle{\mathcal{M}'}$
+
+$$\begin{align}
+\sigma _{s}(A) & \equiv \Delta _{\Psi}^{-is}A\Delta _{\Psi}^{is}\in \mathcal{M}, & \forall A\in \mathcal{M}, s\in \mathbb{R} \\
+\sigma _{s}(A') & \equiv \Delta _{\Psi}^{-is}A'\Delta _{\Psi}^{is}\in \mathcal{M}', & \forall A'\in \mathcal{M}', 
+\end{align}$$
+
+- there exists an anti-unitary modular conjugation operator $\displaystyle{J_{\Psi}}$, with the properties
+
+$$\begin{align}
+J_{\Psi}\ket{\Psi}  & =\ket{\Psi} , &  J_{\Psi} & =J_{\Psi}^{-1}=J_{\Psi}^{\dagger}, & J_{\Psi}\Delta _{\Psi}J_{\Psi}=\Delta _{\Psi}^{-1} \\
+J_{\Psi}\mathcal{M}J_{\Psi} & =\mathcal{M}', & J_{\Psi}\mathcal{M}'J_{\Psi} & =\mathcal{M}
+\end{align}$$
+
+- the vector
+
+$$\begin{align}
+\Delta _{\Psi}^{-is}A\ket{\Psi}, A\in \mathcal{M}
+\end{align}$$
+
+    can be analytically continued to the strip $\displaystyle{0< \mathrm{Im}s< \frac{1}{2}}$ in the complex plane, and satisfies the Kubo-Martin-Schwinger (KMS) condition
+
+$$\begin{align}
+\Delta _{\Psi}^{-i(t+i/2)}A\ket{\Psi} & =\Delta _{\Psi}^{-it}J_{\Psi}A^{\dagger}\ket{\Psi} , t\in \mathbb{R}
+\end{align}$$
+
+- correlation functions of modular flowed operators
+
+$$\begin{align}
+f_{AB}(s) & =\braket{ \Psi|\sigma _{s}(A)B|\Psi } , &  A,B\in \mathcal{M}
+\end{align}$$
+
+    can be analytically continued into the strip $\displaystyle{0<\mathrm{Im}s< 1}$, and satisfy the KMS condition
+
+$$\begin{align}
+f_{AB}(s) & =f_{BA}(-s-i)
+\end{align}$$
+
+remark: the KMS condition is a generalization of the detailed balance condition for thermal equilibrium states, and it characterizes the thermal nature/emergent time of the modular flow.
+
+### classification of type III factors
+
+firstly, modular flows $\displaystyle{\sigma _{s}(\mathcal{M})}$ for all $\displaystyle{s \in \mathbb{R}}$ are inner automorphisms of $\displaystyle{\mathcal{M}}$ iff $\displaystyle{\mathcal{M}}$ is type I or II. we say $\displaystyle{\sigma _{s}}$ is an inner automorphism iff there exists a unitary operator $\displaystyle{U_{s}\in \mathcal{M}}$ such that
+
+$$\begin{align}
+\sigma _{s}(A) & \equiv \Delta _{\Psi}^{-is}A\Delta _{\Psi}^{is}=U^{\dagger}_{s}AU_{s},  & \forall A\in \mathcal{M}, s\in \mathbb{R}
+\end{align}$$
+
