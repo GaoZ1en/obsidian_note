@@ -76,3 +76,8 @@ which is equivalent to the local version (the required form)
 $$\begin{align}
 \partial _{\mu}\braket{ j_{a}^{\mu}\phi(x_{1})\dots \phi(x_{n}) } & =-\sum _{j}\delta ^{(d)}(x-x_{j})\braket{ \phi(x_{1})\dots[H_{a},\phi _{j}(x_{j})],\phi _{n}(x_{n}) } 
 \end{align}$$
+
+
+$$\begin{align}
+\braket{ 0|\phi(x)|\Phi } = 
+\end{align}$$
