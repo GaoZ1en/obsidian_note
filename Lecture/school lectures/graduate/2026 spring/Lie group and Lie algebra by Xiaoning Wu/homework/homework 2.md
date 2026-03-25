@@ -14,5 +14,3 @@ $$\begin{align}
  & =\mathbb{1}(\vec{n}\cdot \vec{m})+i\vec{\sigma}\cdot(\vec{n}\times \vec{m})
 \end{align}$$
 
-# problem 2
-
