@@ -131,3 +131,4 @@ n & =0,1,2,...,m_{\pm}= m\pm 1
 \end{align}$$
 
 difference between the spectrum of the finite system and the infinite system can (?) be attributed to the finite size effect, and some other subtle effects such as the choice of boundary conditions and on and on...
+
