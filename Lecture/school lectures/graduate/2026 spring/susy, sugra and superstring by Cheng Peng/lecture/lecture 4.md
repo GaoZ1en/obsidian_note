@@ -79,3 +79,4 @@ X^{\mu}(\tau, \sigma) & =X_{L}^{\mu}(\tau + \sigma)+X_{R}^{\mu}(\tau - \sigma)
 \end{align}$$
 
 the lecture ends here.
+
