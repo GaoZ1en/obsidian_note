@@ -1,0 +1,5 @@
+## generalities
+
+## scaling
+
+## broken symmetry
