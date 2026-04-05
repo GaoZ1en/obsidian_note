@@ -1,0 +1,83 @@
+# references
+
+- textbooks
+	- Feynman Integrals: A Comprehensive Treatment for Students and Researchers by Weinzierl
+		- 2201.03593
+	- Linear differential equations in the complex domain by Haraoka
+		- https://link.springer.com/content/pdf/10.1007/978-3-030-54663-2.pdf
+- papers
+	- Chetyrkin, K. G. and Tkachov, F. V. (1981). Integration by parts: The algorithm to calculate β-functions in 4 loops, Nucl. Phys. B 192: 159.
+	- Kotikov, A. V. (1991). Differential equations method: New technique for massive Feynman diagrams calculation, Phys. Lett. B254: 158–164.
+	- Remiddi, E. (1997). Differential equations for Feynman graph amplitudes, Nuovo Cim. A110: 1435–1452.
+	- Tarasov, O. V. (1996). Connection between Feynman integrals having different values of the space-time dimension, Phys. Rev. D 54: 6479.
+	- Baikov, P. A. (1997). Explicit solutions of the multiloop integral recurrence relations and its application., NIM in Phys. Res. A 389: 347.
+	- Beneke, M. and Smirnov, V. A. (1998). Asymptotic expansion of Feynman integrals near threshold, Nucl. Phys. B 522: 321–344.
+	- Laporta, S. (2000). High precision calculation of multiloop Feynman integrals by difference equations., Int. J. Mod. Phys. A 15: 5087.
+	- Henn, J. M. (2013). Multiloop integrals in dimensional regularization made simple, Phys.Rev.Lett. 110(25): 251601.
+	- Lee, R. N. (2015). Reducing differential equations for multiloop master integrals, JHEP 04 (2015) 108.
+	- Lee, R. N. (2021). Libra: A package for transformation of differential systems for multiloop integrals, Comput. Phys. Commun. 267: 108058.
+
+---
+
+we write the Lagrangian as
+
+$$\tag{1.1}
+\begin{align}
+\mathcal{L} & =\mathcal{L}_{\text{free}}+\mathcal{L}_{\text{int}}
+\end{align}
+$$
+
+the Feynman rules can be read from the Lagrangian. it is useful to introduce the following parametrization
+
+$$\tag{.}
+\begin{align}
+\frac{1}{\prod _{k}A^{n_{k}}_{k}} & =\frac{\Gamma\left( \sum _{k}n_{k} \right)}{\prod _{k}\Gamma(n_{k})}\int \prod _{k}\mathrm{d}x_{k} \frac{x_{k}^{n_{k}-1}}{\left( \sum _{k}A_{k}x_{k} \right)^{\sum n_{k}}}\delta\left( 1-\sum x_{k} \right)
+\end{align}
+$$
+
+for example
+
+$$\tag{.}
+\begin{align}
+\frac{1}{(p'-\ell)^{2}-m^{2}} \frac{1}{\ell ^{2}} \frac{1}{(p-\ell)^{2}-m^{2}} & =2\int \mathrm{d}z\mathrm{d}x  \frac{x}{(\ell ^{2}-2\ell(zp+\bar{z}p'))^{3}}
+\end{align}
+$$
+
+where we denote $\displaystyle{\bar{z}=1-z}$. 
+
+a general $\displaystyle{L}$-loop Feynman integral can be written as
+
+$$\tag{.}
+\begin{align}
+\int \frac{\mathrm{d}^{d}\ell_{1}\dots \mathrm{d}^{d}\ell _{\ell}}{i\pi ^{d/2}\dots i\pi ^{d/2}}\prod _{k} \frac{1}{D_{k}^{n_{k}}} & =\int \frac{\mathrm{d}^{d}\ell_{1}\dots \mathrm{d}^{d}\ell _{\ell}}{i\pi ^{d/2}\dots i\pi ^{d/2}} \frac{\Gamma\left( \sum _{k}n_{k} \right)}{\prod _{k}\Gamma(n_{k})} \int \prod _{k} \mathrm{d}x_{k} \frac{x_{k}^{n_{k}-1}}{\left( \sum _{k} x_{k}D_{k} \right)^{\sum n_{k}}}\delta\left( 1-\sum _{k}x_{k} \right)
+\end{align}
+$$
+
+in general, we have
+
+$$\tag{.}
+\begin{align}
+\sum _{k}x_{k}D_{k} & =A_{ij}(\ell _{i}\cdot \ell _{j})+2B_{i}\cdot \ell _{i}+C
+\end{align}
+$$
+
+make a shift $\displaystyle{\ell _{i}\to \ell _{i}-(A^{-1})_{ij}B_{j}}$, then
+
+$$\tag{.}
+\begin{align}
+\sum _{k}x_{k}D_{k} & =A_{ij}\ell _{i}\cdot \ell _{j}+C-B_{i}(A^{-1})_{ij}B_{j}
+\end{align}
+$$
+
+make a further shift $\displaystyle{\ell _{i}=(A^{-1})_{ij}\ell _{j}}$, the integral becomes
+
+$$\tag{.}
+\begin{align}
+\Gamma\left( \sum _{k}n_{k}-\frac{Ld}{2} \right)\int _{0}^{\infty} \prod _{k} \frac{\mathrm{d}x_{k} x^{n_{k}-1}}{\Gamma(n_{k})} \frac{F^{Ld/2-\sum _{k}n_{k}}}{V^{(L+1)d/2-\sum _{k}n_{k}}}
+\end{align}
+$$
+
+where $\displaystyle{V=\det A}$ is a polynomial in $\displaystyle{x_{k}}$ of degree $\displaystyle{L}$, and $\displaystyle{F=(C-B_{i}(A^{-1})_{ij}B_{j})V}$ is a polynomial in $\displaystyle{x_{k}}$ of degree $\displaystyle{L+1}$.
+
+IBP relation, Laporta algorithm, Heuristic search
+dimension shift relations
