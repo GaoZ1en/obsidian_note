@@ -11,7 +11,104 @@ This is a **personal Obsidian vault** (Markdown-based knowledge base) for a theo
 | Edit notes | Direct file edits | All content is `.md` with LaTeX math |
 | No build step | — | Static Markdown files only |
 | No lint/test | — | Not a software project |
-| Git operations | `git status`, `git add`, `git commit` | Standard Git repo |
+| Git operations | `git status`, `git diff`, `git add`, `git commit` | See Git Workflow below |
+
+## Agent Scope
+
+You are permitted to perform the following tasks:
+
+### 1. Git Operations
+- Run `git status`, `git diff`, `git add`, `git commit`
+- Write descriptive commit messages listing changed files and content summaries
+- **Always show the proposed commit message to the user before executing**
+
+### 2. Metadata Writing (YAML Frontmatter)
+Add or update YAML frontmatter at the top of notes. **Do NOT add tags or wiki-links** unless explicitly asked.
+
+**Literature notes** (arXiv papers in `Literature Notes/`):
+```yaml
+---
+paper id: 2206.10780v5
+title: Paper Title Here
+authors: [Author One, Author Two]
+publication date: 2022-06-22T00:22
+abstract: "Brief summary of the paper's abstract and main results."
+comments: "54 pages, v5: correction at end of section 2.4"
+url: https://arxiv.org/abs/2206.10780v5
+tags: []
+---
+```
+
+**Non-literature notes** (Articles, Note, Lecture, etc.):
+```yaml
+---
+title: Note Title
+date: 2025-04-05
+summary: "Brief summary of the note's content (1-2 sentences)."
+---
+```
+
+### 3. Formatting
+- Unify math display style (`$$ ... $$` for display, `$ ... $` for inline)
+- Fix heading hierarchy (no skipping levels: `#` → `##` → `###`)
+- Fix broken internal links
+- Standardize list formatting (`-` for unordered, `1.` for ordered)
+- Ensure consistent LaTeX physics notation (tensors, indices, differential forms)
+
+### 4. Content Processing
+- Generate summaries of long notes and add to frontmatter `summary` field
+- Organize uncategorized drafts into proper directories
+- Merge duplicate notes (only with explicit user confirmation)
+- Extract key formulas/results to `Note/useful results/` (only with explicit instruction)
+
+### 5. Home.md Maintenance
+- When new notes or directories are added, update `Home.md` table of contents
+- When files are deleted, remove corresponding entries from `Home.md`
+- Keep callout blocks (`>[!Note]`, `>[!article]`, etc.) consistent
+
+### Prohibited Actions
+- **Do NOT delete** any notes or content without explicit instruction
+- **Do NOT overwrite** existing content — only make incremental changes
+- **Do NOT add tags** (`#tag`) or wiki-links (`[[link]]`) unless explicitly asked
+- **Do NOT run** shell commands other than git operations
+- **Do NOT introduce** build scripts, tooling, or code
+
+### Pre-Execution Confirmation
+For any edit (not git operations), **show the planned changes to the user before executing**.
+
+## Git Commit Workflow
+
+When asked to commit, follow this process:
+
+1. Run `git status` to see changed files
+2. Run `git diff --stat` to understand the scope of changes
+3. Read changed files to understand their content
+4. Write a commit message using the format below
+5. **Show the proposed commit message to the user before executing**
+6. After confirmation, run `git add -A && git commit -m "..."`
+
+### Commit Message Format
+
+```
+<type>: <short summary>
+
+Changed files:
+- `path/to/file.md` — brief description of content
+- `path/to/file2.md` — brief description of content
+
+Details (optional):
+- What was added/modified
+```
+
+**Commit types:**
+| Type | Usage |
+|---|---|
+| `notes` | New notes added |
+| `update` | Existing notes modified |
+| `literature` | Literature/paper notes |
+| `thesis` | Thesis-related changes |
+| `refactor` | File reorganization |
+| `cleanup` | Deletions and housekeeping |
 
 ## Directory Structure
 
@@ -20,34 +117,56 @@ This is a **personal Obsidian vault** (Markdown-based knowledge base) for a theo
 ├── TODO.md                          # Research TODOs, career planning
 ├── Articles/                        # Academic article writing workspace
 │   ├── Quantization in AdS3/        # Main research topic
-│   │   ├── preliminary analysis/
+│   │   ├── Proca in AdS3/
+│   │   ├── Proca-Chern-Simons/
 │   │   ├── electric field in AdS3/
 │   │   ├── linearized gravity in AdS3/
+│   │   ├── preliminary analysis/
 │   │   └── thermodynamics of scalar in ads/
-│   └── Thesis/Bachelor/             # Bachelor thesis sections
-├── Literature Notes/                # Paper reading notes (arXiv IDs in filenames)
-├── Problems/                        # Homework organized by week
-│   ├── week 1/ … week 7/
-├── Lecture/                         # Lecture notes
-├── Drafts/                          # Draft documents
-└── Attachments/                     # Media (gitignored)
+│   ├── Noether charge/
+│   ├── Thesis/Bachelor/
+│   ├── TTbar deformation/
+│   ├── Test particle/
+│   ├── Ryu-Takayanagi formula/
+│   └── higher form symmetry/
+├── Literature Notes/                # arXiv paper reading notes
+├── Note/
+│   ├── Physics/                     # Physics topic notes
+│   ├── Mathematics/                 # Math reference notes
+│   ├── Code/                        # Programming tips (vim, xAct, tikz)
+│   ├── Reading/                     # Textbook/lecture reading notes
+│   │   ├── adscft/
+│   │   ├── black hole thermodynamics/
+│   │   ├── symmetry and topology/
+│   │   └── archived/                # Abandoned topics (was "give up")
+│   └── useful results/              # Quick-reference formulas
+├── Lecture/
+│   ├── courses/                     # University courses (by semester)
+│   │   ├── graduate/
+│   │   └── undergraduate/
+│   ├── conferences/                 # Conferences and summer schools
+│   ├── online-lectures/             # Online course notes
+│   ├── group-meetings/              # Weekly group meeting notes
+│   └── talks/                       # Academic talks and seminars
+├── Drafts/                          # Working drafts (uncategorized)
+└── Attachments/                     # Media files (gitignored)
 ```
 
 ## Markdown & LaTeX Conventions
 
 ### Math Delimiters
-- **Display math**: `$$ ... $$`
-- **Inline math**: `$ ... $`
+- **Display math (aligned)**: `$$\begin{align} ... \end{align}$$` — use for multi-line equations
+- **Display math (single)**: `$\displaystyle{...}$` — use for single-line displayed equations
 - Use standard LaTeX physics notation (tensors, indices, differential forms)
 
 ### Obsidian-Specific Syntax
-- **Wiki-links**: `[[Target Note]]` for internal linking
 - **Callouts**: `>[!Note]`, `>[!article]`, `>[!warning]`, etc.
-- **Tags**: `#tag` or `#nested/tag`
-- **Frontmatter**: YAML block at top of file (title, date, tags, etc.)
+- **Frontmatter**: YAML block at top of file
+- **Wiki-links**: `[[Target Note]]` — only use if already present in the file; do NOT add new ones unless asked
+- **Tags**: `#tag` — do NOT add tags unless explicitly asked
 
 ### Formatting
-- **Headings**: `#` through `######`, use hierarchical structure
+- **Headings**: `#` through `######`, use hierarchical structure (no skipping levels)
 - **Bold/Italic**: `**bold**` and `*italic*`
 - **Code**: `` `inline` `` for short code or commands
 - **Lists**: `-` for unordered, `1.` for ordered
@@ -60,24 +179,25 @@ This is a **personal Obsidian vault** (Markdown-based knowledge base) for a theo
 | Literature notes | `Title (arXiv ID).md` | `An Algebra of Observables for de Sitter Space (2206.10780v5).md` |
 | Article sections | `section N title.md` | `section 1 introduction.md` |
 | Appendices | `Appendix X description.md` | `Appendix A spacelike ADM decomposition.md` |
-| Problems | `problem N [description].md` | `problem 1.md`, `problem 2 trans. ver..md` |
 | Topic folders | lowercase with spaces | `electric field in AdS3/` |
+| Lecture courses | `course name by Instructor/` | `general relativity by Yu Tian and Xiaoning Wu/` |
 
 ## Git Configuration
 
 - `.gitignore` excludes: `.obsidian/`, `Attachments/`, `*.tex`, `*.pdf`, `*.aux`, `*.log`, `.DS_Store`
 - **Do NOT commit** files in `.obsidian/` or `Attachments/`
-- Commit messages should be descriptive and in English
+- Commit messages must be in English
 
 ## Agent Guidelines
 
 1. **Preserve existing content** — do not delete or overwrite notes without explicit instruction
 2. **Follow naming conventions** — match existing patterns for new files
 3. **Use proper LaTeX** — ensure math notation is consistent with physics conventions
-4. **Maintain wiki-links** — use `[[Note Name]]` syntax for cross-references
+4. **No tags or wiki-links** — do NOT add `#tags` or `[[links]]` unless explicitly asked
 5. **Language** — notes are primarily in English; some files use Chinese. Match the language of the target file.
-6. **No code generation** — this is not a software project; do not introduce build scripts or tooling unless explicitly requested
-7. **Respect structure** — place new files in the appropriate directory (`Articles/`, `Literature Notes/`, `Problems/`, etc.)
+6. **No code generation** — this is not a software project; do not introduce build scripts or tooling
+7. **Respect structure** — place new files in the appropriate directory
+8. **Show changes before editing** — always present your plan before making edits
 
 ## No Existing Cursor/Copilot Rules
 

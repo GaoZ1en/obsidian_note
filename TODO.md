@@ -13,10 +13,11 @@
 	2. w
 
 
+
 *应当搞清楚算的是什么量，而不是直接模仿别人的计算流程。*
 
 pdfcpu 可以方便的处理pdf文件
-write a TUI app for pdfcpu
+write a TUI app for pdfcpu. check ✅
 
 **如何画杨图？**
 
