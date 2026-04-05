@@ -66,6 +66,38 @@ summary: "Brief summary of the note's content (1-2 sentences)."
 - When files are deleted, remove corresponding entries from `Home.md`
 - Keep callout blocks (`>[!Note]`, `>[!article]`, etc.) consistent
 
+### 6. File Management & README Generation
+
+When asked to organize a directory, browse each `.md` file, categorize them by topic, and generate a `README.md`.
+
+**README.md format:**
+```markdown
+# Directory Name
+
+Brief description of what this directory contains.
+
+## Contents
+
+### Category Name (if applicable)
+| File | Description |
+|---|---|
+| file1.md | Brief description of content |
+| file2.md | Brief description of content |
+```
+
+**Workflow:**
+1. List all `.md` files in the target directory
+2. Read the first 10-15 lines of each file to understand its content
+3. Group files by topic/theme
+4. Write a `README.md` with directory title, description, and categorized file table
+5. Add reading order section if applicable
+6. **Show the proposed README to the user before creating the file**
+
+**When to add README:**
+- Directories with 5+ `.md` files
+- Directories with complex or non-obvious organization
+- Research directories with multiple subtopics
+
 ### Prohibited Actions
 - **Do NOT delete** any notes or content without explicit instruction
 - **Do NOT overwrite** existing content — only make incremental changes
@@ -198,6 +230,8 @@ Details (optional):
 6. **No code generation** — this is not a software project; do not introduce build scripts or tooling
 7. **Respect structure** — place new files in the appropriate directory
 8. **Show changes before editing** — always present your plan before making edits
+9. **Read before describing** — when generating README or commit messages, read file content first to produce accurate descriptions
+9. **Read before describing** — when generating README or commit messages, read file content first to produce accurate descriptions
 
 ## No Existing Cursor/Copilot Rules
 
