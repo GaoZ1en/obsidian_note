@@ -1,0 +1,11 @@
+---
+paper id: 1210.6600v1
+title: "Shadow Hamiltonians, Poisson Brackets, and Gauge Theories"
+authors: A. D. Kennedy, P. J. Silva, M. A. Clark
+publication date: 2012-10-24T16:48:17Z
+abstract: "Numerical lattice gauge theory computations to generate gauge field configurations including the effects of dynamical fermions are usually carried out using algorithms that require the molecular dynamics evolution of gauge fields using symplectic integrators. Sophisticated integrators are in common use but are hard to optimise, and force-gradient integrators show promise especially for large lattice volumes. We explain why symplectic integrators lead to very efficient Monte Carlo algorithms because they exactly conserve a shadow Hamiltonian. The shadow Hamiltonian may be expanded in terms of Poisson brackets, and can be used to optimize the integrators. We show how this may be done for gauge theories by extending the formulation of Hamiltonian mechanics on Lie groups to include Poisson brackets and shadows, and by giving a general method for the practical computation of forces, force-gradients, and Poisson brackets for gauge theories."
+comments: ""
+pdf: "[[Attachments/Assets/Shadow Hamiltonians, Poisson Brackets, and Gauge Theories (1210.6600v1).pdf]]"
+url: https://arxiv.org/abs/1210.6600v1
+tags: []
+---
