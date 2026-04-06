@@ -104,6 +104,7 @@ Brief description of what this directory contains.
 - **Do NOT add tags** (`#tag`) or wiki-links (`[[link]]`) unless explicitly asked
 - **Do NOT run** shell commands other than git operations
 - **Do NOT introduce** build scripts, tooling, or code
+- **Do NOT edit** `.keep-the-rhythm/` backup files unless explicitly asked
 
 ### Pre-Execution Confirmation
 For any edit (not git operations), **show the planned changes to the user before executing**.
@@ -232,6 +233,23 @@ Details (optional):
 8. **Show changes before editing** — always present your plan before making edits
 9. **Read before describing** — when generating README or commit messages, read file content first to produce accurate descriptions
 9. **Read before describing** — when generating README or commit messages, read file content first to produce accurate descriptions
+
+## Local AGENTS Hierarchy
+
+When working inside the following subtrees, consult the local `AGENTS.md` in addition to this root file:
+
+- `Articles/Quantization in AdS3/AGENTS.md` — umbrella rules for the AdS3 quantization research workspace
+- `Articles/Quantization in AdS3/Proca-Chern-Simons/AGENTS.md` — local manuscript and workflow rules for the Proca-Chern-Simons project
+- `Articles/Thesis/Bachelor/AGENTS.md` — thesis-specific structure and naming rules
+- `Lecture/courses/AGENTS.md` — course-note organization, homework, and cheat-sheet conventions
+- `Lecture/group-meetings/AGENTS.md` — chronological weekly meeting-note conventions
+- `Note/useful results/AGENTS.md` — compact quick-reference note conventions
+
+## Ignore During Routine Edits
+
+- `.keep-the-rhythm/` contains automated backups; do not edit, reorganize, or summarize it unless explicitly asked.
+- `.obsidian/` contains editor configuration; avoid modifying it unless the user explicitly asks.
+- `Attachments/` stores media and PDFs; do not reorganize or edit its contents unless explicitly asked.
 
 ## No Existing Cursor/Copilot Rules
 
