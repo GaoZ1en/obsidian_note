@@ -227,7 +227,7 @@ Details (optional):
 2. **Follow naming conventions** — match existing patterns for new files
 3. **Use proper LaTeX** — ensure math notation is consistent with physics conventions
 4. **No tags or wiki-links** — do NOT add `#tags` or `[[links]]` unless explicitly asked
-5. **Language** — notes are primarily in English; some files use Chinese. Match the language of the target file.
+5. **Language** — Conversation with the user should be in Chinese; internal reasoning (not shown), file edits, and commit messages must be written in English. Preserve the existing language of notes; do not translate or change a note's language unless explicitly requested by the user. When a proposed edit would change a note's language, present the language change clearly and require explicit user confirmation.
 6. **No code generation** — this is not a software project; do not introduce build scripts or tooling
 7. **Respect structure** — place new files in the appropriate directory
 8. **Show changes before editing** — always present your plan before making edits
