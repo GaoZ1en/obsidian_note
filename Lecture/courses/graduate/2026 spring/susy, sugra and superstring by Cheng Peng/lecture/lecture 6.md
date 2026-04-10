@@ -1,7 +1,66 @@
 ---
-title: "Lecture 6: Light-cone quantization of the bosonic string"
+title: "Lecture 6: Covariant and light-cone quantization of the bosonic string"
 date: 2026-04-09
-summary: "Light-cone gauge fixing and canonical quantization of the bosonic string; solving Virasoro constraints for X^-, transverse oscillator algebra, open/closed spectra, level matching, and Lorentz-consistency (D=26, a=1)."
+summary: "Covariant quantization of the bosonic string, including Virasoro constraints, negative-norm states, BRST cohomology, the no-ghost theorem, and light-cone gauge fixing with the critical spectrum."
+---
+
+before fixing light-cone gauge, it is useful to quantize the string covariantly in conformal gauge. in this approach all target-space coordinates $X^{\mu}$ are kept on equal footing, so lorentz covariance is manifest, but the fock space contains negative-norm states.
+
+with the usual mode expansion from the previous lecture, the covariant virasoro generators are
+
+$$\begin{align}
+L_{n} & =\frac{1}{2}\sum _{m=-\infty}^{\infty}:\alpha _{n-m}^{\mu}\alpha _{m\mu}: \\
+\tilde{L}_{n} & =\frac{1}{2}\sum _{m=-\infty}^{\infty}:\tilde{\alpha} _{n-m}^{\mu}\tilde{\alpha} _{m\mu}:
+\end{align}$$
+
+and their quantum algebra is
+
+$$\begin{align}
+[L_{m},L_{n}] & =(m-n)L_{m+n}+\frac{D}{12}m(m^{2}-1)\delta _{m+n,0} \\
+[\tilde{L}_{m},\tilde{L}_{n}] & =(m-n)\tilde{L}_{m+n}+\frac{D}{12}m(m^{2}-1)\delta _{m+n,0} \\
+[L_{m},\tilde{L}_{n}] & =0
+\end{align}$$
+
+the physical state conditions are imposed in the gupta-bleuler sense:
+
+$$\begin{align}
+L_{n}\ket{\mathrm{phys}} & =0,\qquad n>0 \\
+(L_{0}-a)\ket{\mathrm{phys}} & =0
+\end{align}$$
+
+for open strings, and
+
+$$\begin{align}
+L_{n}\ket{\mathrm{phys}} & =\tilde{L}_{n}\ket{\mathrm{phys}}=0,\qquad n>0 \\
+(L_{0}-a)\ket{\mathrm{phys}} & =(\tilde{L}_{0}-a)\ket{\mathrm{phys}}=0
+\end{align}$$
+
+together with level matching $L_{0}=\tilde{L}_{0}$ for closed strings.
+
+the danger of the covariant approach is already visible from the time-like oscillators. since
+
+$$\begin{align}
+[\alpha _{m}^{0},\alpha _{n}^{0}] & =-m\delta _{m+n,0}
+\end{align}$$
+
+states such as $\alpha _{-n}^{0}\ket{0;p}$ have negative norm. the virasoro constraints remove these unphysical excitations, while the descendant states of the form $L_{-n}\ket{\chi}$ are spurious or null and decouple from the physical spectrum.
+
+covariant quantization becomes fully consistent only in the critical bosonic string. the no-ghost theorem says that when
+
+$$\begin{align}
+D & =26,\qquad a=1
+\end{align}$$
+
+the physical hilbert space defined by the constraints is positive definite and isomorphic to the transverse light-cone spectrum. this is the covariant proof that the light-cone spectrum found later is the complete physical spectrum.
+
+a modern way to implement the same idea is brst quantization. introducing the reparametrization ghosts $(b,c)$, the brst charge is
+
+$$\begin{align}
+Q_{\mathrm{BRST}} & =\sum _{n}c_{-n}(L_{n}-a\delta _{n,0})-\frac{1}{2}\sum _{m,n}(m-n):c_{-m}c_{-n}b_{m+n}:
+\end{align}$$
+
+nilpotency requires the vanishing of the total conformal anomaly. equivalently, the matter central charge $c=D$ must cancel the ghost contribution $c_{\mathrm{gh}}=-26$, so again one gets $D=26$ and $a=1$. physical states are then identified with the brst cohomology at the appropriate ghost number.
+
 ---
 
 we start from flat target space and define the light-cone coordinates
