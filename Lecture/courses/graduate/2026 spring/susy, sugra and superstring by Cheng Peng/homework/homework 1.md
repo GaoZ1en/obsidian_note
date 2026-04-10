@@ -1,3 +1,9 @@
+---
+title: "Problem 1"
+date: 2026-04-10
+summary: "consider a general Lagrangian system"
+---
+
 # Problem 1
 
 consider a general Lagrangian system
@@ -76,3 +82,4 @@ which is equivalent to the local version (the required form)
 $$\begin{align}
 \partial _{\mu}\braket{ j_{a}^{\mu}\phi(x_{1})\dots \phi(x_{n}) } & =-\sum _{j}\delta ^{(d)}(x-x_{j})\braket{ \phi(x_{1})\dots[H_{a},\phi _{j}(x_{j})],\phi _{n}(x_{n}) } 
 \end{align}$$
+

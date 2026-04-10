@@ -1,3 +1,9 @@
+---
+title: "Application I: The Euclidean correlation function"
+date: 2026-04-09
+summary: "Analytic continuation of highest-weight mode expansion to Euclidean signature; derives the Euclidean two-point Green's function for Proca-Chern-Simons theory and discusses the path-integral vs canonical contact term."
+---
+
 # 5. Application I: The Euclidean correlation function
 
 In this section, we analytically continue the highest-weight mode expansion obtained in Section 4 to Euclidean signature and derive the Green's function equation satisfied by the Euclidean two-point function of the Proca-Chern-Simons theory.
@@ -284,7 +290,7 @@ G(x_{1},x_{2}) & =G_{+}(x_{1},x_{2})+G_{-}(x_{1},x_{2}) \\
  & =\frac{1}{2\bar{\mu}\mu _{+}}\nabla ^{\mu_{1}}\nabla ^{\mu_{2}}G_{\mu _{+}+2}(x_{1},x_{2})+\frac{1}{2\bar{\mu}\mu _{-}}\nabla ^{\mu_{1}}\nabla ^{\mu_{2}}G_{\mu _{-}+2}(x_{1},x_{2}) \\
  & +\frac{i}{2\bar{\mu}}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}g^{\rho_{1},\mu_{2}}(x_{1},x_{2})\nabla _{\nu_{1}}G_{\mu _{+}+2}(x_{1},x_{2})-\frac{i}{2\bar{\mu}}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}\bar{g}^{\rho_{1},\mu_{2}}(x_{1},x_{2})\nabla _{\nu_{1}}G_{\mu _{-}+2}(x_{1},x_{2}) \\
  & +\frac{\mu _{+}}{2\bar{\mu}}g^{\mu_{1},\mu_{2}}(x_{1},x_{2})G_{\mu _{+}+2}(x_{1},x_{2})+\frac{\mu _{-}}{2\bar{\mu}}\bar{g}^{\mu_{1},\mu_{2}}(x_{1},x_{2})G_{\mu _{-}+2}(x_{1},x_{2}) \\
- & -\frac{1}{\mu _{+}\mu _{-}} g^{\mu_{1}\tau}g^{\mu_{2}\tau} \frac{N(x_{1})}{\sqrt{ \sigma }(x_{1})}\delta ^{2}(x_{1}-x_{2})
+ & -\frac{1}{\mu ^{2}} g^{\mu_{1}\tau}g^{\mu_{2}\tau} \frac{N(x_{1})}{\sqrt{ \sigma }(x_{1})}\delta ^{2}(x_{1}-x_{2})
 \end{align}$$
 
 ## 5.4 Verification of the covariant Green's function equation
@@ -360,5 +366,145 @@ $$\begin{align}
 
 This is the desired Euclidean Green's function equation for the full Proca-Chern-Simons two-point function.
 
-## 5.5 path integral derivation of the contact term
+## 5.5 The path-integral interpretation of the contact term
 
+We now explain the origin of the contact term from the Euclidean path integral of the full Proca-Chern-Simons theory.
+
+We write the Euclidean metric in ADM form,
+
+$$\begin{align}
+\mathrm{d}s^{2} & =N^{2}\mathrm{d}\tau ^{2}+\sigma _{ab}\mathrm{d}x^{a}\mathrm{d}x^{b},
+\end{align}$$
+
+with
+
+$$\begin{align}
+N & =\sqrt{ 1+r^{2} }, & \sigma _{ab}\mathrm{d}x^{a}\mathrm{d}x^{b} & =\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2}.
+\end{align}$$
+
+Let $D_{a}$ denote the covariant derivative compatible with $\sigma _{ab}$, and define the spatial field strength
+
+$$\begin{align}
+\widetilde{F}_{ab} & :=D_{a}A_{b}-D_{b}A_{a}.
+\end{align}$$
+
+In Euclidean signature, the full Proca-Chern-Simons action can be written as
+
+$$\begin{align}
+S_{E}[A] & =\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }\left(\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}\mu ^{2}A_{\mu}A^{\mu}\right)+\frac{k}{8\pi}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }\,\varepsilon ^{\mu \nu \rho}A_{\mu}F_{\nu \rho}.
+\end{align}$$
+
+The Euclidean path-integral two-point function is defined by
+
+$$\begin{align}
+G_{\mathrm{path}}^{\mu _{1},\mu _{2}}(x_{1},x_{2}) & :=\frac{\displaystyle{\int \mathcal{D}A\,e^{-S_{E}[A]}A^{\mu _{1}}(x_{1})A^{\mu _{2}}(x_{2})}}{\displaystyle{\int \mathcal{D}A\,e^{-S_{E}[A]}}}.
+\end{align}$$
+
+Up to boundary terms, the corresponding quadratic kernel is precisely the operator that appeared in Section 5.4, so $G_{\mathrm{path}}^{\mu _{1},\mu _{2}}$ satisfies
+
+$$\begin{align}
+\left( \delta _{\rho _{1}}^{\mu _{1}}\nabla ^{2}-\nabla _{\rho _{1}}\nabla ^{\mu _{1}}+\frac{k}{4\pi}\varepsilon ^{\mu _{1}}_{~~~\nu _{1}\rho _{1}}\nabla ^{\nu _{1}}-\delta _{\rho _{1}}^{\mu _{1}}\mu ^{2} \right)G_{\mathrm{path}}^{\rho _{1},\mu _{2}}(x_{1},x_{2}) & =-\frac{g^{\mu _{1}\mu _{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}).
+\end{align}$$
+
+Equivalently, using the factorization into the two first-order branches, we may write
+
+$$\begin{align}
+G_{\mathrm{path}}^{\mu _{1},\mu _{2}}(x_{1},x_{2}) & =G_{+,\mathrm{path}}^{\mu _{1},\mu _{2}}(x_{1},x_{2})+G_{-,\mathrm{path}}^{\mu _{1},\mu _{2}}(x_{1},x_{2}),
+\end{align}$$
+
+where
+
+$$\begin{align}
+(\varepsilon _{\mu _{1}~~~\rho _{1}}^{~~~~\nu _{1}}\nabla _{\nu _{1}}-\mu _{+}g_{\mu _{1}\rho _{1}})G_{+,\mathrm{path}}^{\rho _{1},\mu _{2}}(x_{1},x_{2}) & =-\frac{1}{2\bar{\mu}}\frac{g^{\mu _{1}\mu _{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}), \\
+(\varepsilon _{\mu _{1}~~~\rho _{1}}^{~~~~\nu _{1}}\nabla _{\nu _{1}}+\mu _{-}g_{\mu _{1}\rho _{1}})G_{-,\mathrm{path}}^{\rho _{1},\mu _{2}}(x_{1},x_{2}) & =\frac{1}{2\bar{\mu}}\frac{g^{\mu _{1}\mu _{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}).
+\end{align}$$
+
+These are the path-integral counterparts of the branch equations in Section 5.4.
+
+To see how the contact term arises, we now decompose the action into the spatial components $A_{a},a=r,\phi$ and the Euclidean time component $A_{\tau}$. The ADM decomposition of the Euclidean action is
+
+$$\begin{align}
+S_{E} & =\int \mathrm{d}\tau \int _{\Sigma _{\tau}} \mathrm{d}^{2}x\sqrt{ \sigma }\left(\frac{1}{4}N\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2N}\sigma ^{ab}(\partial _{\tau}A_{a}-D_{a}A_{\tau})(\partial _{\tau}A_{b}-D_{b}A_{\tau})+\frac{\mu ^{2}N}{2}\sigma ^{ab}A_{a}A_{b}+\frac{\mu ^{2}}{2N}A_{\tau}^{2}\right. \\
+ & \left.+\frac{k}{4\pi}\varepsilon ^{ab}(A_{\tau}D_{a}A_{b}-A_{a}(\partial _{\tau}A_{b}-D_{b}A_{\tau}))\right)
+\end{align}$$
+
+where $\varepsilon ^{ab}$ is the antisymmetric tensor on the Cauchy surface $\displaystyle{\Sigma _{\tau}}$, normalized by $\sqrt{ \sigma }\varepsilon ^{r\phi}=1$. After integrating by parts on $\Sigma$, the Euclidean action can be written as a sum of two pieces:
+
+$$\begin{align}
+S_{E}[A_{a},A_{\tau}] & =S_{E}^{\mathrm{red}}[A_{a}]+S_{E}^{(A_{\tau})}[A_{a},A_{\tau}] \\
+S_{E}^{(A_{\tau})}[A_{a},A_{\tau}] & =\int \mathrm{d}\tau \int _{\Sigma}\mathrm{d}^{2}x\left[\frac{\sqrt{ \sigma }}{2}A_{\tau}\mathcal{D}A_{\tau}+A_{\tau}\mathcal{J}^{a}A_{a}\right],
+\end{align}$$
+
+where
+
+$$\begin{align}
+\mathcal{D} & :=\frac{\mu ^{2}}{N}-D_{a}\left(\frac{1}{N}\sigma ^{ab}D_{b}\right) \\
+\mathcal{J}^{a} & =D_{b}\left(\frac{\sqrt{ \sigma }}{N}\sigma ^{ba}\partial _{\tau}\right)+\frac{k}{2\pi}\varepsilon ^{ba}D_{b}.
+\end{align}$$
+
+At this stage one can already see that $A_{\tau}$ is non-dynamical. Integrating it out in the second-order Euclidean path integral produces the inverse kernel $\mathcal{D}^{-1}$ in the $\tau\tau$ component of $G_{\mathrm{path}}^{\mu_{1},\mu_{2}}(x_{1},x_{2})$. However, in the canonical formalism one first eliminates $A_{\tau}$ through the constraint. The canonical momentum conjugate to $A_{a}$ is
+
+$$\begin{align}
+\pi ^{a} & =\frac{\partial \mathcal{L}_{E}}{\partial(\partial _{\tau}A_{a})} \\
+ & =\frac{\sqrt{ \sigma }}{N}\sigma ^{ab}(\partial _{\tau}A_{b}-D_{b}A_{\tau})+\frac{k}{4\pi}\varepsilon ^{ab}A_{b}
+\end{align}$$
+
+and varying the action with respect to $A_{\tau}$ gives the constraint equation
+
+$$\begin{align}
+D_{a}\pi ^{a}+\frac{\mu ^{2}\sqrt{ \sigma }}{N}A_{\tau}+\frac{k}{4\pi}\epsilon ^{ab}D_{a}A_{b} & \approx0
+\end{align}$$
+
+Therefore
+
+$$\begin{align}
+\mathcal{A}_{\tau}^{\mathrm{cl}} & :=-\frac{N}{\mu ^{2}\sqrt{ \sigma }}\left( D_{a}\pi ^{a}+\frac{k}{4\pi}\epsilon ^{ab}D_{a}A_{b} \right)
+\end{align}$$
+
+The part of the action containing $A_{\tau}$ is then
+
+$$\begin{align}
+S_{E}^{(A_{\tau})} & =S_{E}^{\mathrm{red}}[A_{a},\pi ^{a}]+\int \mathrm{d}\tau \int _{\Sigma}\mathrm{d}^{2}x\,\frac{\mu ^{2}\sqrt{ \sigma }}{2N}\left(A_{\tau}-\mathcal{A}_{\tau}^{\mathrm{cl}}\right)^{2}.
+\end{align}$$
+
+Completing the square, we obtain
+
+$$\begin{align}
+S_{E}^{(\eta)} & =\int \mathrm{d}\tau \int _{\Sigma}\mathrm{d}^{2}x\,\frac{\mu ^{2}\sqrt{ \sigma }}{2N}\eta ^{2}.
+\end{align}$$
+
+It is therefore natural to separate the constrained part and the independent quantum fluctuation of $A_{\tau}$ by writing
+
+$$\begin{align}
+A_{\tau} & =A_{\tau}^{\mathrm{cl}}+\eta
+\end{align}$$
+
+with $\eta$ the shifted fluctuation integrated over in the path integral. The action then becomes
+
+$$\begin{align}
+S_{E}[A_{\tau},A_{a}] & =S_{E}^{\mathrm{red}}[A_{a},\pi ^{a}]+S_{E}^{(\eta)}[\eta]
+\end{align}$$
+
+The $\tau\tau$ component of the path-integral correlator therefore splits into two pieces:
+
+$$\begin{align}
+G_{\mathrm{path};\tau \tau}(x_{1},x_{2}) & = \left\langle A_{\tau}(x_{1})A_{\tau}(x_{2})\right\rangle _{\mathrm{path}} \\
+ & = \left\langle A_{\tau}^{\mathrm{cl}}(x_{1})A_{\tau}^{\mathrm{cl}}(x_{2})\right\rangle +\langle \eta (x_{1})\eta (x_{2})\rangle \\
+ & = G_{\tau,\tau}(x_{1},x_{2})+\frac{N(x_{1})}{\mu ^{2}\sqrt{ \sigma }(x_{1})}\delta ^{2}(x_{1}-x_{2})
+\end{align}$$
+
+The second term is precisely the canonical correlator. Therefore
+
+$$\begin{align}
+G_{\tau,\tau}(x_{1},x_{2}) & =G_{\mathrm{path};\tau \tau}(x_{1},x_{2})-\frac{N(x_{1})}{\mu ^{2}\sqrt{ \sigma }(x_{1})}\delta ^{2}(x_{1}-x_{2}).
+\end{align}$$
+
+Raising the two indices, we obtain exactly the same contact term as in the explicit mode sum:
+
+$$\begin{align}
+G^{\mu_{1},\mu_{2}}(x_{1},x_{2}) & =G_{\mathrm{path}}^{\mu_{1},\mu_{2}}(x_{1},x_{2})-\frac{1}{\mu ^{2}}g^{\mu_{1}\tau}g^{\mu_{2}\tau}\frac{N(x_{1})}{\sqrt{ \sigma }(x_{1})}\delta ^{2}(x_{1}-x_{2})
+\end{align}$$
+
+This also agrees with the branch decomposition of the explicit mode sum. 
+
+For a more systematic constrained-Hamiltonian derivation of this statement, based on the Faddeev-Senjanovic path integral for second-class systems, see [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_d|Appendix D]].
