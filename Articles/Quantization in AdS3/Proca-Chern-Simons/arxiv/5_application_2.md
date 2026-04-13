@@ -1,0 +1,151 @@
+---
+title: "5_application_2"
+date: 2026-04-13
+summary: ""
+---
+
+# 6. Application II: The thermal partition function
+
+In this section, we construct the coherent-state path integral associated with the oscillator representation derived in Section 4 and use it to compute the thermal partition function of the Proca-Chern-Simons theory on the global AdS$_3$ spacetime. Since the quantum theory has already been diagonalized into a collection of decoupled bosonic oscillators, the coherent-state representation provides the most direct path-integral description.
+
+## 6.1 The coherent-state path integral
+
+We first identify the physical Hamiltonian and angular momentum from the zero-mode Noether charges as
+
+$$\begin{align}
+H & =H_{\xi _{0}}+H_{\bar{\xi}_{0}}, \\
+J & =H_{\bar{\xi}_{0}}-H_{\xi _{0}}.
+\end{align}$$
+
+Using the expressions obtained in Section 4.7, and adopting normal ordering at the quantum level, we obtain
+
+$$\begin{align}
+H & =\sum ^{\infty}_{n,\bar{n}=0}\left[(\mu _{+}+1+n+\bar{n})a^{\dagger}_{+,n,\bar{n}}a_{+,n,\bar{n}}+(\mu _{-}+1+n+\bar{n})a^{\dagger}_{-,n,\bar{n}}a_{-,n,\bar{n}}\right], \\
+J & =\sum ^{\infty}_{n,\bar{n}=0}\left[(\bar{n}-n+1)a^{\dagger}_{+,n,\bar{n}}a_{+,n,\bar{n}}+(\bar{n}-n-1)a^{\dagger}_{-,n,\bar{n}}a_{-,n,\bar{n}}\right].
+\end{align}$$
+
+It is convenient to introduce the shorthand frequencies and angular-momentum quantum numbers
+
+$$\begin{align}
+\omega _{+,n,\bar{n}} & =\mu _{+}+1+n+\bar{n}, & j_{+,n,\bar{n}} & =\bar{n}-n+1, \\
+\omega _{-,n,\bar{n}} & =\mu _{-}+1+n+\bar{n}, & j_{-,n,\bar{n}} & =\bar{n}-n-1.
+\end{align}$$
+
+We now introduce coherent states for each oscillator mode by
+
+$$\begin{align}
+a_{\pm,n,\bar{n}}\ket{z_{\pm,n,\bar{n}}} & =z_{\pm,n,\bar{n}}\ket{z_{\pm,n,\bar{n}}}.
+\end{align}$$
+
+The coherent state of the full theory is the tensor product
+
+$$\begin{align}
+\ket{\boldsymbol{z}_{+},\boldsymbol{z}_{-}} & =\bigotimes ^{\infty}_{n,\bar{n}=0}\ket{z_{+,n,\bar{n}}}\otimes \ket{z_{-,n,\bar{n}}}.
+\end{align}$$
+
+Its inner product factorizes mode by mode as
+
+$$\begin{align}
+\braket{ \boldsymbol{z}_{1,+},\boldsymbol{z}_{1,-}|\boldsymbol{z}_{2,+},\boldsymbol{z}_{2,-} } & =\prod ^{\infty}_{n,\bar{n}=0}\exp\left(z^{*}_{1,+,n,\bar{n}}z_{2,+,n,\bar{n}}-\frac{1}{2}|z_{1,+,n,\bar{n}}|^{2}-\frac{1}{2}|z_{2,+,n,\bar{n}}|^{2}\right) \\
+& \quad \times \prod ^{\infty}_{n,\bar{n}=0}\exp\left(z^{*}_{1,-,n,\bar{n}}z_{2,-,n,\bar{n}}-\frac{1}{2}|z_{1,-,n,\bar{n}}|^{2}-\frac{1}{2}|z_{2,-,n,\bar{n}}|^{2}\right),
+\end{align}$$
+
+and the resolution of identity is
+
+$$\begin{align}
+\mathbf{1} & =\int \prod ^{\infty}_{n,\bar{n}=0}\frac{\mathrm{d}^{2}z_{+,n,\bar{n}}}{\pi}\frac{\mathrm{d}^{2}z_{-,n,\bar{n}}}{\pi}\ket{\boldsymbol{z}_{+},\boldsymbol{z}_{-}}\bra{\boldsymbol{z}_{+},\boldsymbol{z}_{-}}.
+\end{align}$$
+
+By inserting this completeness relation at each time slice, the derivation of the coherent-state path integral reduces mode by mode to the standard harmonic-oscillator calculation. Therefore the real-time transition amplitude can be written as
+
+$$\begin{align}
+\braket{ \boldsymbol{z}_{f,+},\boldsymbol{z}_{f,-}|e^{-iHT}|\boldsymbol{z}_{i,+},\boldsymbol{z}_{i,-} } & =\int _{\boldsymbol{z}_{+}=\boldsymbol{z}_{i,+}}^{\boldsymbol{z}_{+}=\boldsymbol{z}_{f,+}}\int _{\boldsymbol{z}_{-}=\boldsymbol{z}_{i,-}}^{\boldsymbol{z}_{-}=\boldsymbol{z}_{f,-}} \mathcal{D}^{2}\boldsymbol{z}_{+}\mathcal{D}^{2}\boldsymbol{z}_{-}\exp\left(iS[\boldsymbol{z}_{+},\boldsymbol{z}^{*}_{+},\boldsymbol{z}_{-},\boldsymbol{z}^{*}_{-}]\right).
+\end{align}$$
+
+Here the integration measures are
+
+$$\begin{align}
+\mathcal{D}^{2}\boldsymbol{z}_{\pm} & =\lim_{ N \to \infty } \prod ^{N-1}_{k=1}\prod ^{\infty}_{n,\bar{n}=0}\frac{\mathrm{d}^{2}z_{\pm,k,n,\bar{n}}}{\pi},
+\end{align}$$
+
+and the action is given by
+
+$$\begin{align}
+S[\boldsymbol{z}_{+},\boldsymbol{z}^{*}_{+},\boldsymbol{z}_{-},\boldsymbol{z}^{*}_{-}] & =\int ^{t_{f}}_{t_{i}}\mathrm{d}t\sum ^{\infty}_{n,\bar{n}=0}\left[\frac{i}{2}\left(z^{*}_{+,n,\bar{n}}\dot{z}_{+,n,\bar{n}}-\dot{z}^{*}_{+,n,\bar{n}}z_{+,n,\bar{n}}\right)-\omega _{+,n,\bar{n}}|z_{+,n,\bar{n}}|^{2}\right] \\
+& \quad +\int ^{t_{f}}_{t_{i}}\mathrm{d}t\sum ^{\infty}_{n,\bar{n}=0}\left[\frac{i}{2}\left(z^{*}_{-,n,\bar{n}}\dot{z}_{-,n,\bar{n}}-\dot{z}^{*}_{-,n,\bar{n}}z_{-,n,\bar{n}}\right)-\omega _{-,n,\bar{n}}|z_{-,n,\bar{n}}|^{2}\right].
+\end{align}$$
+
+This action is simply the sum of two independent towers of harmonic oscillators, with frequencies shifted by the Chern-Simons coupling through the parameters $\mu _{\pm}$.
+
+## 6.2 The thermal partition function
+
+We now compute the thermal partition function with angular potential,
+
+$$\begin{align}
+Z[\beta,\alpha] & =\mathrm{Tr}\left( e^{-\beta H+i\alpha J} \right),
+\end{align}$$
+
+where $\beta$ is the inverse temperature and $\alpha$ is the chemical potential conjugate to the angular momentum. In the coherent-state representation, the trace becomes the Euclidean path integral
+
+$$\begin{align}
+Z[\beta,\alpha] & =\int _{\boldsymbol{z}_{+}=\boldsymbol{z}_{+}(0)}^{\boldsymbol{z}_{+}=\boldsymbol{z}_{+}(\beta)}\int _{\boldsymbol{z}_{-}=\boldsymbol{z}_{-}(0)}^{\boldsymbol{z}_{-}=\boldsymbol{z}_{-}(\beta)} \mathcal{D}^{2}\boldsymbol{z}_{+}\mathcal{D}^{2}\boldsymbol{z}_{-}\exp\left(-S_{E}[\boldsymbol{z}_{+},\boldsymbol{z}^{*}_{+},\boldsymbol{z}_{-},\boldsymbol{z}^{*}_{-}]\right).
+\end{align}$$
+
+The Euclidean action is obtained by the Wick rotation $t=-i\tau$ and reads
+
+$$\begin{align}
+S_{E}[\boldsymbol{z}_{+},\boldsymbol{z}^{*}_{+},\boldsymbol{z}_{-},\boldsymbol{z}^{*}_{-}] & =\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left[\frac{1}{2}\left(z^{*}_{+,n,\bar{n}}\dot{z}_{+,n,\bar{n}}-\dot{z}^{*}_{+,n,\bar{n}}z_{+,n,\bar{n}}\right)+\omega _{+,n,\bar{n}}|z_{+,n,\bar{n}}|^{2}\right] \\
+& \quad +\int ^{\beta}_{0}\mathrm{d}\tau \sum ^{\infty}_{n,\bar{n}=0}\left[\frac{1}{2}\left(z^{*}_{-,n,\bar{n}}\dot{z}_{-,n,\bar{n}}-\dot{z}^{*}_{-,n,\bar{n}}z_{-,n,\bar{n}}\right)+\omega _{-,n,\bar{n}}|z_{-,n,\bar{n}}|^{2}\right].
+\end{align}$$
+
+The operator $e^{i\alpha J}$ twists the Euclidean boundary conditions mode by mode. Explicitly, we have
+
+$$\begin{align}
+z_{+,n,\bar{n}}(\beta) & =e^{i\alpha j_{+,n,\bar{n}}}z_{+,n,\bar{n}}(0)=e^{i\alpha (\bar{n}-n+1)}z_{+,n,\bar{n}}(0), \\
+z_{-,n,\bar{n}}(\beta) & =e^{i\alpha j_{-,n,\bar{n}}}z_{-,n,\bar{n}}(0)=e^{i\alpha (\bar{n}-n-1)}z_{-,n,\bar{n}}(0).
+\end{align}$$
+
+Since the Euclidean action is diagonal in the oscillator basis, the path integral factorizes into independent Gaussian integrals. Each mode contributes the standard bosonic factor
+
+$$\begin{align}
+Z_{\pm,n,\bar{n}}[\beta,\alpha] & =\frac{1}{1-e^{-\beta \omega _{\pm,n,\bar{n}}+i\alpha j_{\pm,n,\bar{n}}}}.
+\end{align}$$
+
+Therefore the full partition function is
+
+$$\begin{align}
+Z[\beta,\alpha] & =\prod ^{\infty}_{n,\bar{n}=0}\frac{1}{1-e^{-\beta (\mu _{+}+1+n+\bar{n})+i\alpha (\bar{n}-n+1)}}\frac{1}{1-e^{-\beta (\mu _{-}+1+n+\bar{n})+i\alpha (\bar{n}-n-1)}}.
+\end{align}$$
+
+Introducing the shorthand variables
+
+$$\begin{align}
+q & =e^{-\beta-i\alpha}, & \bar{q} & =e^{-\beta+i\alpha},
+\end{align}$$
+
+we can rewrite the partition function in a form adapted to the highest-weight structure:
+
+$$\begin{align}
+Z[\beta,\alpha] & =\prod ^{\infty}_{n,\bar{n}=0}\frac{1}{\left(1-q^{\mu _{+}/2+n}\bar{q}^{\mu _{+}/2+1+\bar{n}}\right)\left(1-q^{\mu _{-}/2+1+n}\bar{q}^{\mu _{-}/2+\bar{n}}\right)}.
+\end{align}$$
+
+Setting $\alpha =0$ gives the ordinary thermal partition function
+
+$$\begin{align}
+Z[\beta,0] & =\prod ^{\infty}_{n,\bar{n}=0}\frac{1}{1-e^{-\beta (\mu _{+}+1+n+\bar{n})}}\frac{1}{1-e^{-\beta (\mu _{-}+1+n+\bar{n})}}.
+\end{align}$$
+
+As a consistency check, the same result follows immediately from the operator formalism, since the occupation numbers of different modes are independent:
+
+$$\begin{align}
+Z[\beta,\alpha] & =\prod ^{\infty}_{n,\bar{n}=0}\sum ^{\infty}_{N_{+}=0}\sum ^{\infty}_{N_{-}=0}e^{-N_{+}(\beta \omega _{+,n,\bar{n}}-i\alpha j_{+,n,\bar{n}})}e^{-N_{-}(\beta \omega _{-,n,\bar{n}}-i\alpha j_{-,n,\bar{n}})} \\
+& =\prod ^{\infty}_{n,\bar{n}=0}\frac{1}{1-e^{-\beta \omega _{+,n,\bar{n}}+i\alpha j_{+,n,\bar{n}}}}\frac{1}{1-e^{-\beta \omega _{-,n,\bar{n}}+i\alpha j_{-,n,\bar{n}}}}.
+\end{align}$$
+
+Finally, in the pure Proca limit $k=0$, where $\mu _{+}=\mu _{-}=\mu$, the above expression reduces to
+
+$$\begin{align}
+Z_{\mathrm{Proca}}[\beta,\alpha] & =\prod ^{\infty}_{n,\bar{n}=0}\frac{1}{\left(1-q^{\mu /2+n}\bar{q}^{\mu /2+1+\bar{n}}\right)\left(1-q^{\mu /2+1+n}\bar{q}^{\mu /2+\bar{n}}\right)},
+\end{align}$$
+
+which is precisely the expected thermal partition function for the two Proca branches. The effect of the Chern-Simons coupling is therefore to split the two towers through the shifted masses $\mu _{\pm}$ while preserving the factorized oscillator structure of the quantum theory.

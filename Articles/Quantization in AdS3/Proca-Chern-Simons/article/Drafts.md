@@ -1,3 +1,9 @@
+---
+title: "Drafts"
+date: 2026-04-13
+summary: ""
+---
+
 # action
 
 by defining
@@ -78,4 +84,52 @@ $$\begin{align}
  & =\nabla ^{2}A_{\mu}-[\nabla ^{\rho},\nabla _{\mu}]A_{\rho} \\
  & =\nabla ^{2}A_{\mu}-R_{\mu \nu}A^{\nu} \\
  & =\nabla ^{2}A_{\mu}+2A_{\mu}
+\end{align}$$
+
+# 2d conformal transformation
+
+$$\begin{align}
+ & \frac{1}{2\pi i}\oint _{c}\mathrm{d}z[T(z)\varepsilon(z),\phi(w,\bar{w})]+\frac{1}{2\pi i}\oint _{c}\mathrm{d}\bar{z}[\bar{T}(\bar{z})\bar{\varepsilon}(\bar{z}),\phi(w,\bar{w})] \\
+= & \frac{1}{2\pi i}\oint _{c}\mathrm{d}z\varepsilon(z)\left(\frac{\partial _{w}}{z-w}+\frac{h}{(z-w)^{2}}\right)\phi(w,\bar{w})+\frac{1}{2\pi i}\oint _{c}\mathrm{d}\bar{z}\bar{\varepsilon}(\bar{z})\left(\frac{\partial _{\bar{w}}}{\bar{z}-\bar{w}}+\frac{\bar{h}}{(\bar{z}-\bar{w})^{2}}\right)\phi(w,\bar{w}) \\
+= & \varepsilon(w)\partial _{w}\phi(w,\bar{w})+h\partial _{w}\varepsilon(w)\phi(w,\bar{w})+\bar{\varepsilon}(\bar{w})\partial _{\bar{w}}\phi(w,\bar{w})+\bar{h}\partial _{\bar{w}}\bar{\varepsilon}(\bar{w})\phi(w,\bar{w}) \\
+= & \delta _{\varepsilon,\bar{\varepsilon}}\phi(w,\bar{w})
+\end{align}$$
+
+here we have used the operator product expansion
+
+$$\begin{align}
+T(z)\phi(w,\bar{w}) & \sim \frac{h}{(z-w)^{2}}\phi(w,\bar{w})+\frac{1}{z-w}\partial _{w}\phi(w,\bar{w}) \\
+\bar{T}(\bar{z})\phi(w,\bar{w}) & \sim \frac{\bar{h}}{(\bar{z}-\bar{w})^{2}}\phi(w,\bar{w})+\frac{1}{\bar{z}-\bar{w}}\partial _{\bar{w}}\phi(w,\bar{w})
+\end{align}$$
+
+# reconsider the Noether charge
+
+$$\begin{align}
+S_{\text{CS}} & =\frac{k}{4\pi}\int _{M}A\wedge \mathrm{d}A \\
+\delta S_{\text{CS}} & =\frac{k}{4\pi}\int _{M}\delta A\wedge \mathrm{d}A+A\wedge \mathrm{d}\delta A \\
+ & =\frac{k}{4\pi}\int _{M} 2\delta A\wedge \mathrm{d}A+\mathrm{d}(A\wedge \delta A) \\
+ & =\frac{k}{2\pi}\int _{M}\delta A\wedge \mathrm{d}A+\frac{k}{4\pi}\int _{\Sigma _{f}-\Sigma _{i}} A\wedge \delta A
+\end{align}$$
+
+$$\begin{align}
+X_{\xi}\cdot \delta S & =\frac{k}{4\pi}\int _{M} \mathcal{L}_{\xi}(A\wedge \mathrm{d}A) \\
+ & =\frac{k}{4\pi}\int _{\Sigma _{f}-\Sigma _{i}}i_{\xi}\left(A\wedge \mathrm{d}A\right) \\
+ & =\frac{k}{4\pi} \int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\rho}\xi ^{\rho}\left( -\frac{k}{4\pi}\varepsilon ^{\mu \nu \lambda}A_{\mu}\nabla _{\nu}A_{\lambda} \right)
+\end{align}$$
+
+then
+
+$$\begin{align}
+H_{\xi}|_{\widetilde{\mathcal{P}}} & =\frac{k}{4\pi}\int _{\Sigma}A\wedge \mathcal{L}_{\xi}A-i_{\xi}\left(A\wedge \mathrm{d}A\right) \\
+ & =\frac{k}{4\pi}\int _{\Sigma}A\wedge(\mathrm{d}(i_{\xi}A)+i_{\xi}F)-i_{\xi}\left(A\wedge F\right) \\
+ & =\frac{k}{4\pi}\int _{\Sigma} 2A\wedge i_{\xi}F-\mathrm{d}((i_{\xi}A)A) \\
+ & =-\frac{k}{4\pi}\int _{\partial \Sigma} i_{\xi}AA
+\end{align}$$
+
+$$\begin{align}
+H_{\xi}|_{\widetilde{\mathcal{P}}} & =(X_{\xi}\cdot \theta-\alpha _{\xi})|_{\widetilde{\mathcal{P}}} \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu \rho}F^{\nu}_{~\rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{2}\mu ^{2}g^{\mu \nu}A_{\rho}A^{\rho} \right) \\
+ & +\left.\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left[ \nabla _{\nu}\left( F^{\mu \nu}A_{\rho}\xi ^{\rho}-\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}A_{\rho}A_{\sigma}\xi ^{\sigma} \right)+\left( \nabla _{\nu}F^{\nu \mu}-\mu ^{2}A^{\mu}+\frac{k}{4\pi}\varepsilon ^{\mu \rho \sigma}\nabla _{\rho}A_{\sigma} \right)A_{\rho}\xi ^{\rho} \right] \right|_{\widetilde{\mathcal{P}}} \\
+ & =\left.\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left( F^{\mu \rho}F^{\nu}_{\rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{2}\mu ^{2}g^{\mu \nu}A_{\rho}A^{\rho}\right)\right|_{\widetilde{\mathcal{P}}} \\
+ & +\int _{\Sigma _{r}}\mathrm{d}^{2}x\sqrt{ \sigma }D_{\alpha}\left( \sigma ^{\alpha}_{~\mu}\tau _{\nu}\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}A_{\rho} A_{\sigma}\xi ^{\sigma} \right)
 \end{align}$$

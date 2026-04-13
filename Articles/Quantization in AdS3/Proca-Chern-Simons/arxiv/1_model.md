@@ -1,14 +1,14 @@
 ---
-title: "2_model"
+title: "1_model"
 date: 2026-04-13
 summary: ""
 ---
 
-# 2. The Proca-Chern-Simons theory in the global AdS$_3$ spacetime
+# 1. The Proca-Chern-Simons theory in the global AdS$_3$ spacetime
 
 In this section, we specify the background geometry, the Proca-Chern-Simons action, and the asymptotic boundary conditions used throughout the paper.
 
-## 2.1 Spacetime background
+## 1.1 Spacetime background
 
 We parameterize global AdS$_3$ by the standard coordinates $(t, r, \phi)$, with ranges $t \in (-\infty, +\infty)$, $r \in (0, +\infty)$, and angular periodicity $\phi \sim \phi + 2\pi$. The metric is
 
@@ -75,7 +75,7 @@ $$\begin{align}
 
 These algebraic identities will be used repeatedly in the later analysis, both in organizing the normal modes into highest-weight representations and in simplifying the covariant phase space computations.
 
-## 2.2 The action and asymptotic boundary conditions
+## 1.2 The action and asymptotic boundary conditions
 
 The dynamical field is a massive vector field $A_\mu(x)$. The action contains a Maxwell term, a Proca mass term with parameter $\mu > 0$, and a Chern-Simons term with real coupling $k \in \mathbb{R}$:
 
