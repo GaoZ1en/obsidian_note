@@ -1,3 +1,9 @@
+---
+title: "$$egin{align}"
+date: 2026-04-15
+summary: ""
+---
+
 $$\begin{align}
 S & =-\frac{1}{4}\int \mathrm{d}^{3}x\sqrt{ -g }F_{\mu \nu}F^{\mu \nu}
 \end{align}$$
@@ -99,3 +105,20 @@ $$\begin{align}
 \nabla _{\mu}F^{\mu t}\sim \nabla _{\mu}F^{\mu \phi} & =\mathcal{O}(r^{-1}) \\
 \nabla _{\mu}F^{\mu r} & = \mathcal{O}(r^{0})
 \end{align}$$
+
+---
+
+$$\begin{align}
+S & =-\frac{1}{4}\int \mathrm{d}^{3}x\sqrt{ -g }F_{\mu \nu}F^{\mu \nu} \\
+ & =-\frac{1}{2}\int \mathrm{d}^{3}xr(F_{tr}F^{tr}+F_{t\phi}F^{t\phi}+F_{r\phi}F^{r\phi}) \\
+ & =-\frac{1}{2}\int \mathrm{d}^{3}xr\left(\mathcal{O}(r^{-2})+\mathcal{O}(r^{-4})+\mathcal{O}(r^{-2})\right) \\
+ & =-\frac{1}{2}\int \mathrm{d}^{3}x \mathcal{O}(r^{-1}) \\
+ & \sim \log r \bigg|^{\infty}=\infty
+\end{align}$$
+
+$$\begin{align}
+S & =\frac{1}{2}\int \mathrm{d}^{3}xr\left(rF_{tr}^{2}+ \frac{1}{r(1+r^{2})}F_{t\phi}^{2}-\frac{1+r^{2}}{r}F_{r\phi}^{2}\right) \\
+ & =\frac{1}{2}\int \mathrm{d}^{3}x r\left(r(\partial _{r}A_{t})^{2}-\frac{1+r^{2}}{r}(\partial _{r}A_{\phi})^{2}\right)
+\end{align}$$
+
+these two terms dominate the asymptotic behavior of the action, which are both logarithmically divergent.

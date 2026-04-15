@@ -1,3 +1,9 @@
+---
+title: "we use the following pre-derived formula to give the final result"
+date: 2026-04-15
+summary: ""
+---
+
 we use the following pre-derived formula to give the final result
 
 $$\tag{.}\begin{align}
@@ -416,4 +422,3 @@ $$\begin{align}
 \end{align}$$
 
 here we use $\displaystyle{\omega[f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]=-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}}$, $\displaystyle{\omega[f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]=-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}}$, $\displaystyle{\omega[f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{r,n_{2},\bar{n}_{2}}]=i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}}$, $\displaystyle{\omega[f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]=i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}}$, and other terms are zero.
-

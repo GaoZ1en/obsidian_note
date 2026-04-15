@@ -1,3 +1,9 @@
+---
+title: "the eom of $\displaystyle{\mathrm{U}(1)}$ gauge theory is"
+date: 2026-04-15
+summary: ""
+---
+
 the eom of $\displaystyle{\mathrm{U}(1)}$ gauge theory is
 
 $$\begin{align}
@@ -292,3 +298,38 @@ $$\begin{align}
 regularity at $\displaystyle{r=0}$ requires us to discard the second solution.
 
 actually the solutions around $\displaystyle{z=1}$ does not necessarily match solutions around $\displaystyle{z=0}$... 
+
+---
+
+as a summary, the normalized solutions are
+
+$$\begin{align}
+h_{+,m\geqslant 1,n}^{t} & =e^{-i(m+2n)t}e^{im\phi} \sqrt{ \frac{1}{8\pi n(n+m)} }\left[mr^{m}(1+r^{2})^{-(m+2)/2}P_{n}^{(n,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m-1}(1+r^{2})^{-(m+4)/2}P_{n}^{(0,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+h_{+,m\geqslant 1,n}^{r} & =-ie^{-i(m+2n)t}e^{im\phi} \sqrt{ \frac{(2n+m)^{2}}{8\pi n(n+m)} }r^{m-1}(1+r^{2})^{-m/2}P_{n}^{(0,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h_{+,m\geqslant 1,n}^{\phi} & =e^{-i(m+2n)t}e^{im\phi} \sqrt{ \frac{(2n+m)^{2}}{8\pi n(n+m)} }r^{m-2}(1+r^{2})^{-m/2}P_{n}^{(0,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{t}_{+,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{8\pi(n+1)^{2}} }\left[(r^{2}-2)(1+r^{2})^{-2}P_{n}^{(0,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-4r^{2}(1+r^{2})^{-3}P_{n}^{(0,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+h^{r}_{+,m=0,n} & =-ie^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }r(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{\phi}_{+,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{t}_{+,m\leqslant -1,n} & =e^{-i(2-m+2n)t}e^{im\phi}\sqrt{ \frac{1}{8\pi(1+n)(1+n-m)} }\left[(mr^{2}+2(m-1))r^{-m}(1+r^{2})^{-(m+4)/2}P_{n}^{(0,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{-m+2}(1+r^{2})^{-(-m+6)/2}P_{n}^{(0,-m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+h^{r}_{+,m\leqslant -1,n} & =-ie^{-i(2-m+2n)t}e^{im\phi}\sqrt{ \frac{(2+2n-m)^{2}}{8\pi(1+n)(1+n-m)} }r^{-m+1}(1+r^{2})^{-(-m+2)/2}P_{n}^{(0,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{\phi}_{+,m\leqslant -1,n} & =e^{-i(2-m+2n)t}e^{im\phi}\sqrt{ \frac{(2+2n-m)^{2}}{8\pi(1+n)(1+n-m)} }r^{-m}(1+r^{2})^{-(-m+2)/2}P_{n}^{(0,-m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{t}_{-,m\geqslant 1,n} & =e^{-i(2+m+2n)t}e^{im\phi}\sqrt{ \frac{1}{8\pi(1+n)(1+n+m)} }\left[(-mr^{2}-2(m+1))r^{m}(1+r^{2})^{-(m+4)/2}P_{n}^{(0,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m+2}(1+r^{2})^{-(m+6)/2}P_{n}^{(0,m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+h^{r}_{-,m\geqslant 1,n} & =-ie^{-i(2+m+2n)t}e^{im\phi}\sqrt{ \frac{(2+m+2n)^{2}}{8\pi(1+n)(1+n+m)} }r^{m+1}(1+r^{2})^{-(m+2)/2}P_{n}^{(0,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{\phi}_{-,m\geqslant 1,n} & =-e^{-i(2+m+2n)t}e^{im\phi}\sqrt{ \frac{(2+m+2n)^{2}}{8\pi(1+n)(1+n+m)} }r^{m}(1+r^{2})^{-(m+2)/2}P_{n}^{(0,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{t}_{-,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{8\pi(1+n)^{2}} }\left[ (r^{2}-2)(1+r^{2})^{-2}P_{n}^{(0,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-4r^{2}(1+r^{2})^{-3}P_{n}^{(0,1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right] \\
+h^{r}_{-,m=0,n} & =-ie^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }r(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{\phi}_{-,m=0,n} & =-e^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{t}_{-,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{8\pi(1+n)^{2}} }\left[ (r^{2}-2)(1+r^{2})^{-2}P_{n}^{(0,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-4r^{2}(1+r^{2})^{-3}P_{n}^{(0,1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right] \\
+h^{r}_{-,m=0,n} & =-ie^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }r(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{\phi}_{-,m=0,n} & =-e^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+and the symplectic form between these modes are
+
+$$\begin{align}
+\Omega[h^{(+)}_{\pm,m_{1},n_{1}},h^{(-)}_{\pm,m_{2},n_{2}}] & =-i\delta _{n_{1},n_{2}}\delta _{m_{1},m_{2}} \\
+\Omega[h^{(+)}_{+,m_{1}\geqslant 1,n_{1}},h^{(-)}_{-,m_{2}\geqslant 1,n_{2}}] & =i\delta _{m_{1}m_{2}}\delta _{n_{1}-1,n_{2}} \\
+\Omega[h^{(+)}_{+,m_{1}=0,n_{1}},h^{(-)}_{-,m_{2}=0,n_{2}}] & =i\delta _{n_{1},n_{2}} \\
+\Omega[h^{(+)}_{+,m_{1}\leqslant -1,n_{1}},h^{(-)}_{-,m_{2}\leqslant -1,n_{2}}]& =i\delta _{m_{1},m_{2}}\delta _{n_{1},n_{2}-1}
+\end{align}$$
+

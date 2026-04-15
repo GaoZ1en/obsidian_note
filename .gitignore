@@ -17,3 +17,9 @@
 
 # Ignore MacOS files
 /**/.DS_Store
+
+# Ignore simulation codes
+/**/*.py
+/**/*.npz
+/**/requirements.txt
+/**/*.png

@@ -18,10 +18,10 @@ $$\begin{align}
 S_{\mathrm{E}} & =\int \mathrm{d}^{2}x\left(\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}\mu ^{2}A_{\mu}A^{\mu}\right)
 \end{align}$$
 
-the two-point correlation function satisfy the following Green function equation:
+the two-point correlation function satisfies the following Green function equation:
 
 $$\begin{align}
-[\delta _{\nu}^{\mu}(\nabla ^{2}-\mu ^{2})-\nabla _{\nu}\nabla ^{\mu}]G^{\nu \rho}(x_{1},x_{2}) & =-\eta ^{\mu\rho}\delta ^{3}(x_{1}-x_{2})
+[\delta _{\nu}^{\mu}(\nabla ^{2}-\mu ^{2})-\nabla _{\nu}\nabla ^{\mu}]G^{\nu \rho}(x_{1},x_{2}) & =-\delta ^{\mu\rho}\delta ^{2}(x_{1}-x_{2})
 \end{align}$$
 
 take a Fourier transform, we have
@@ -34,11 +34,11 @@ $$\begin{align}
 change back to position space, we have
 
 $$\begin{align}
-G^{\mu \nu}(x_{1},x_{2}) & =\int \frac{\mathrm{d}^{2}p}{(2\pi)^{2}}e^{ip\cdot (x_{1}-x_{2})}\frac{1}{p^{2}+\mu ^{2}}\left(\eta ^{\mu \nu}+\frac{p^{\mu}p^{\nu}}{\mu ^{2}}\right) \\
- & =\left(\eta ^{\mu \nu}-\frac{1}{\mu ^{2}}\partial _{x_{1}}^{\mu}\partial _{x_{1}}^{\nu}\right)\int \frac{\mathrm{d}^{2}p}{(2\pi)^{2}}\frac{e^{ip\cdot (x_{1}-x_{2})}}{p^{2}+\mu ^{2}}
+G^{\mu \nu}(x_{1},x_{2}) & =\int \frac{\mathrm{d}^{2}p}{(2\pi)^{2}}e^{ip\cdot (x_{1}-x_{2})}\frac{1}{p^{2}+\mu ^{2}}\left(\delta ^{\mu \nu}+\frac{p^{\mu}p^{\nu}}{\mu ^{2}}\right) \\
+ & =\left(\delta ^{\mu \nu}-\frac{1}{\mu ^{2}}\partial _{x_{1}}^{\mu}\partial _{x_{1}}^{\nu}\right)\int \frac{\mathrm{d}^{2}p}{(2\pi)^{2}}\frac{e^{ip\cdot (x_{1}-x_{2})}}{p^{2}+\mu ^{2}}
 \end{align}$$
 
-here $\displaystyle{ip\cdot(x_{1}-x_{2})=-\omega _{p}(\tau_{1}-\tau_{2})+ip(x_{1}-x_{2})}$.
+here $\displaystyle{ip\cdot(x_{1}-x_{2})=-p_{\tau}(\tau_{1}-\tau_{2})+ip_{x}(x_{1}-x_{2})}$.
 
 ---
 
@@ -80,8 +80,11 @@ $$\begin{align}
 G_{E}^{\mu_{1},\mu_{2}}(x_{1},x_{2}) & = \braket{ 0|\mathcal{T} A^{\mu}(x_{1})A^{\nu}(x_{2})|0 } \\
  & =\theta(\tau_{1}-\tau_{2})\int \frac{\mathrm{d}p}{2\pi 2\omega _{p}}e^{-\omega _{p}(\tau_{1}-\tau_{2})+ip(x_{1}-x_{2})}\left(\eta ^{\mu \nu}+\frac{p^{\mu}p^{\nu}}{\mu ^{2}}\right) \\
  & +\theta(\tau_{2}-\tau_{1})\int \frac{\mathrm{d}p}{2\pi 2\omega _{p}}e^{-\omega _{p}(\tau_{2}-\tau_{1})+ip(x_{1}-x_{2})}\left(\eta ^{\mu \nu}+\frac{p^{\mu}p^{\nu}}{\mu ^{2}}\right) \\
- & =\left( \eta ^{\mu \nu}-\frac{1}{\mu ^{2}}\partial _{x_{1}}^{\mu}\partial _{x_{1}}^{\nu} \right)\int \frac{\mathrm{d}^{2}p}{(2\pi)^{2}} \frac{e^{ip\cdot (x_{1}-x_{2})}}{p^{2}+\mu ^{2}}-\frac{1}{\mu ^{2}}\delta ^{\mu_{1}\tau}\delta ^{\mu_{2}\tau}\delta(x_{1}-x_{2})
+ & =\left( \delta ^{\mu \nu}-\frac{1}{\mu ^{2}}\partial _{x_{1}}^{\mu}\partial _{x_{1}}^{\nu} \right)\int \frac{\mathrm{d}^{2}p}{(2\pi)^{2}} \frac{e^{ip\cdot (x_{1}-x_{2})}}{p^{2}+\mu ^{2}}-\frac{1}{\mu ^{2}}\delta ^{\mu_{1}\tau}\delta ^{\mu_{2}\tau}\delta(x_{1}-x_{2})
 \end{align}$$
 
-again, here $\displaystyle{ip\cdot(x_{1}-x_{2})=-\omega _{p}(\tau_{1}-\tau_{2})+ip(x_{1}-x_{2})}$.
+again, here $\displaystyle{ip\cdot(x_{1}-x_{2})=-\omega _{p}(\tau_{1}-\tau_{2})+ip(x_{1}-x_{2})}$. we have
 
+$$\begin{align}
+G^{\mu \nu}_{\text{path}}(x_{1},x_{2}) & =G^{\mu \nu}_{\text{canonical}}(x_{1},x_{2})+\frac{1}{\mu ^{2}}\delta ^{\mu \tau}\delta ^{\nu \tau}\delta ^{2}(x_{1}-x_{2})
+\end{align}$$
