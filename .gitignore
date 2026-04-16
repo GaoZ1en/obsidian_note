@@ -2,8 +2,7 @@
 /.obsidian/
 
 # Ignore attachments and media files
-/Attachments/**/*.pdf
-/Attachments/**/*.pdf
+/Attachments/
 
 # Ignore json data files
 /.keep-the-rhythm/
