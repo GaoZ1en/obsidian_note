@@ -61,12 +61,30 @@ summary: "Brief summary of the note's content (1-2 sentences)."
 - Merge duplicate notes (only with explicit user confirmation)
 - Extract key formulas/results to `Note/useful results/` (only with explicit instruction)
 
-### 5. Home.md Maintenance
+### 5. Web-Assisted Literature Note Workflow
+
+When the user explicitly asks for online retrieval (for example, arXiv abstract/introduction lookup), the agent may use web sources to enrich a literature note.
+
+**Workflow:**
+1. Retrieve the requested source material from the web, preferably the arXiv abstract page and, if accessible, the introduction or PDF
+2. Read the target note before editing to understand its current frontmatter and structure
+3. Present the planned addition to the user before editing
+4. For literature notes, prefer adding a concise one-sentence `summary` field to YAML frontmatter without overwriting the existing `abstract`
+5. If the user asks for more context, append a short section at the end of the note such as `## Historical context and motivation`
+6. Clearly distinguish between direct source-based summary and broader background synthesis; do not present inferred context as if it were quoted from the paper
+7. Include the source URL in the conversation when summarizing externally retrieved material
+
+**Scope limits:**
+- Do not rewrite the existing `abstract` unless explicitly asked
+- Do not claim to have read the introduction if only the abstract was accessible
+- Keep additions short and incremental unless the user asks for a fuller note
+
+### 6. Home.md Maintenance
 - When new notes or directories are added, update `Home.md` table of contents
 - When files are deleted, remove corresponding entries from `Home.md`
 - Keep callout blocks (`>[!Note]`, `>[!article]`, etc.) consistent
 
-### 6. File Management & README Generation
+### 7. File Management & README Generation
 
 When asked to organize a directory, browse each `.md` file, categorize them by topic, and generate a `README.md`.
 
