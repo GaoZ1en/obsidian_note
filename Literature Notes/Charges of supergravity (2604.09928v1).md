@@ -258,6 +258,9 @@ and for the components of curvature
 
 $$\begin{align}
 \delta _{\lambda}F^{(s)ab} & =-[\lambda,F^{(s)}]^{ab}, & \frac{1}{\ell}\delta _{\lambda}F^{(s)a} & =-\frac{1}{\ell}\lambda ^{a}_{~b}F^{(s)b} \\
+\end{align}$$
+
+$$\begin{align}
 \delta _{\zeta}F^{(s)ab} & =-\frac{1}{\ell}[\zeta,T^{(s)}]^{ab}, & \frac{1}{\ell}\delta _{\zeta}F^{(s)a} & =-[\zeta,F^{(s)}]^{a}
 \end{align}$$
 
@@ -512,3 +515,35 @@ $$\begin{align}
 
 here $\displaystyle{C}$ is the charge-conjugation matrix.
 
+## possible extensions
+
+the present work already establishes the full covariant phase space analysis for $\mathcal{N}=1$ AdS supergravity in the constrained BF formulation, including the bulk and boundary symplectic structures, the charges associated with Lorentz symmetry, supersymmetry, translations, and diffeomorphisms, and the resulting boundary charge algebra. this makes the next natural questions rather sharp: which parts of the structure are special to $\mathrm{OSp}(1|4)$, and which persist in more general supergravity theories.
+
+the most direct extension is to move from $\mathcal{N}=1$ to extended supersymmetry, replacing $\mathrm{OSp}(1|4)$ by $\mathrm{OSp}(\mathcal{N}|4)$. this is the cleanest first step because the basic logic of the construction should remain the same:
+
+- the superconnection should now contain $\mathcal{N}$ gravitini and, depending on the formulation, additional $\mathfrak{so}(\mathcal{N})$ or $R$-symmetry gauge fields.
+- the supercurvature, constrained BF action, covariant presymplectic potential, and boundary charge expressions should all admit a parallel decomposition.
+- the main nontrivial checks are whether the translation charge still vanishes on-shell, how the supertorsion constraint is modified, and whether the boundary algebra acquires nontrivial $R$-symmetry generators or central extensions.
+
+from the point of view of actual calculation, the first tasks in this direction are:
+
+1. write down the $\mathrm{OSp}(\mathcal{N}|4)$ superalgebra in the same conventions as the present note, including the bosonic $\mathfrak{so}(2,3)\oplus \mathfrak{so}(\mathcal{N})$ sector and the anticommutator of supercharges.
+2. construct the corresponding superconnection and supercurvature, keeping the $R$-symmetry gauge field explicit.
+3. identify the appropriate constrained BF action and solve the analog of the $\mathbb{B}$-field equation.
+4. recompute the presymplectic potential and symplectic form in the covariant phase space framework.
+5. derive the Lorentz, supersymmetry, $R$-symmetry, translation, and diffeomorphism charges and check their on-shell reduction.
+6. compute the full boundary charge algebra and compare it with the expected $\mathrm{OSp}(\mathcal{N}|4)$ structure.
+
+besides higher supersymmetry, there are several other worthwhile extensions.
+
+one direction is to impose explicit asymptotically AdS boundary conditions and study finiteness, integrability, and nontrivial asymptotic symmetry generators. the present formulas are formal covariant phase space expressions; to extract physical content one still has to determine for which boundary data the charges are finite and integrable, and which symmetries remain nontrivial after quotienting by pure gauge directions.
+
+another direction is to evaluate the charges on concrete classical solutions, such as AdS$_4$ vacuum, supersymmetric black holes, BPS backgrounds, or geometries with nontrivial gravitino profiles. this would clarify how the formal boundary generators act in examples and whether one can read off BPS bounds or supersymmetric shortening conditions directly from the charge algebra.
+
+it is also important to understand more conceptually why the translation charge vanishes on-shell. one should check whether this is merely a consequence of the supertorsion constraint in the present formulation, or whether translations are in fact reducible to a combination of diffeomorphisms, Lorentz transformations, and supersymmetry once the equations of motion and boundary conditions are imposed.
+
+another natural extension is to compare the present covariant phase space construction directly with the Noether-Wald charge formalism in ordinary supergravity variables. if the two methods agree exactly, that gives a strong consistency check on the constrained BF formulation. if they differ by boundary improvements or topological contributions, that difference itself is structurally interesting.
+
+one should also examine more carefully the role of the topological terms, such as the Holst, Euler, Pontryagin, and Nieh-Yan contributions. although such terms do not change the local equations of motion, they can still modify the presymplectic potential, the boundary symplectic form, and the representative of conserved charges, so it is not automatic that they are invisible in the covariant phase space analysis.
+
+if the goal is to begin with the most direct project, then the extended supersymmetry direction is the right place to start. the main reason is that it changes the algebraic input while preserving the overall logic of the paper, so any new effect in the charge algebra, integrability conditions, or on-shell vanishing of translation generators can be traced cleanly to the enlarged superalgebra rather than to a completely different formalism.
