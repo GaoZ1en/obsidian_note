@@ -111,7 +111,7 @@ which again reproduces the expression used in the main text.
 We now turn to the Noether charge $H_{\xi,\mathrm{CS}}|_{\widetilde{P}}$. Its regulated expression is
 
 $$\begin{align}
-H_{\xi,\mathrm{CS}}|_{\widetilde{P}} & =\lim_{ r_{\infty} \to \infty }\int _{\Sigma _{r,\infty}}\mathrm{d}^{2}x\sqrt{ \sigma }D_{\alpha}\left( \sigma ^{\alpha}_{~\mu}\tau _{\nu}\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}A_{\rho} A_{\sigma}\xi ^{\sigma} \right) \\
+H_{\xi,\mathrm{CS}}|_{\widetilde{P}} & =\lim_{ r_{\infty} \to \infty }\int _{\Sigma _{r_{\infty}}}\mathrm{d}^{2}x\sqrt{ \sigma }D_{\alpha}\left( \sigma ^{\alpha}_{~\mu}\tau _{\nu}\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}A_{\rho} A_{\sigma}\xi ^{\sigma} \right) \\
  & =\lim_{ r_{\infty} \to \infty }\int _{H_{r_{\infty}}} \mathrm{d}x\sqrt{ h }\hat{n}_{a}\sigma ^{a}_{~\mu}\tau _{\nu}\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}A_{\rho}A_{\sigma}\xi ^{\sigma}
 \end{align}$$
 
@@ -139,7 +139,7 @@ $$\begin{align}
 H_{\xi,\mathrm{CS}}|_{\widetilde{P}} & =0
 \end{align}$$
 
-which means the Chern-Simons term does not contribute to the Noether charge, and the expression for $H_{\xi}|_{\widetilde{P}}$ is the same as the one used in the main text.
+which means the Chern-Simons term does not contribute to the Noether charge, and the expression for $H_{\xi}|_{\widetilde{\mathcal{P}}}$ is the same as the one used in the main text.
 
 Finally, we analyze the asymptotic behavior of $X_{\xi}\cdot \Omega _{\mathrm{CS}}|_{\widetilde{\mathcal{P}}}$. We obtain
 

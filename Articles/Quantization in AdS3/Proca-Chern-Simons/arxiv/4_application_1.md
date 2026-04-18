@@ -4,11 +4,11 @@ date: 2026-04-09
 summary: "Analytic continuation of highest-weight mode expansion to Euclidean signature; derives the Euclidean two-point Green's function for Proca-Chern-Simons theory and discusses the path-integral vs canonical contact term."
 ---
 
-# 5. Application I: The Euclidean correlation function
+# 4. Application I: The Euclidean correlation function
 
-In this section, we analytically continue the highest-weight mode expansion obtained in Section 4 to Euclidean signature and derive the Green's function equation satisfied by the Euclidean two-point function of the Proca-Chern-Simons theory.
+In this section, we analytically continue the highest-weight mode expansion obtained in Section 3 to Euclidean signature and derive the Green's function equation satisfied by the Euclidean two-point function of the Proca-Chern-Simons theory.
 
-## 5.1 The Euclidean background
+## 4.1 The Euclidean background
 
 We perform the Wick rotation $t=-i\tau$. The global AdS$_3$ metric then becomes
 
@@ -49,9 +49,9 @@ $$\begin{align}
 \nabla _{\mu}\bar{\xi}_{a,\nu} & =-i\varepsilon _{\mu \nu \rho}\bar{\xi}_{a}^{\rho}, \quad a=-1,0,1
 \end{align}$$
 
-## 5.2 The Euclidean correlation function
+## 4.2 The Euclidean correlation function
 
-We now analytically continue the normalizable modes constructed in Section 4. Under the Wick rotation, the field components transform as
+We now analytically continue the normalizable modes constructed in Section 3. Under the Wick rotation, the field components transform as
 
 $$\begin{align}
 A^{\tau}_{E}(\tau,r,\phi) & =iA^{t}(t=-i\tau,r,\phi) \\
@@ -86,31 +86,31 @@ G_{E}^{\mu_{1},\mu_{2}}(x_{1},x_{2}) & =\braket{ 0|\mathcal{T}A^{\mu_{1}}(x_{1})
 
 Here, $\mathcal{T}$ denotes ordering with respect to the Euclidean time $\tau$. In the remainder of this subsection, we suppress the subscript $E$ on the Proca-Chern-Simons correlators whenever no confusion can arise. Unless explicitly stated otherwise, all covariant derivatives in the Green's function equations below act on the first argument $x_{1}$.
 
-## 5.3 The explicit Euclidean correlation function
+## 4.3 The explicit Euclidean correlation function
 
-We now perform the direct sums over the two highest-weight branches and derive an explicit expression for the Euclidean correlation function. To keep the calculation manageable, it is convenient to rewrite the vector modes in terms of scalar highest-weight modes and the relevant bitensors. 
+We now perform the direct sums over the two highest-weight branches and derive an explicit expression for the Euclidean correlation function. To keep the calculation manageable, it is convenient to rewrite the vector modes in terms of scalar highest-weight modes and the relevant bitensors introduced in our previous paper.
 
-### 5.3.1 Mode sums in the scalar basis
+### 4.3.1 Mode sums in the scalar basis
 
-we first rewrite the vector highest-weight modes in a form adapted to the direct summation.
+We first rewrite the vector highest-weight modes in a form adapted to the direct summation.
 
 $$\begin{align}
-f_{+,n,\bar{n}}^{\mu} & =\sqrt{ \frac{1}{\bar{\mu}\mu _{+}} }\left(\sqrt{ 2(\mu _{+}+n)(\mu _{+}+k+1) }\phi _{\mu _{+}+2,n,\bar{n}}\xi _{1}^{\mu}\right. \\
+f_{+,n,\bar{n}}^{\mu} & =\sqrt{ \frac{1}{\bar{\mu}\mu _{+}} }\left(\sqrt{ 2(\mu _{+}+n)(\mu _{+}+n+1) }\phi _{\mu _{+}+2,n,\bar{n}}\xi _{1}^{\mu}\right. \\
  & +2i\sqrt{ 2n(\mu _{+}+n) }\phi _{\mu _{+}+2,n-1,\bar{n}}\xi _{0}^{\mu} \\
  & \left.-\sqrt{ 2n(n-1) }\phi _{\mu _{+}+2,n-2,\bar{n}}\xi _{-1}^{\mu}\right) \\
-f_{-,n,\bar{n}}^{\mu} & =\sqrt{ \frac{1}{\bar{\mu}\mu _{-}} }\left(\sqrt{ 2(\mu _{-}+\bar{n})(\mu _{-}+\bar{n})+1 }\phi _{\mu _{-}+2,n,\bar{n}}\bar{\xi}_{1}^{\mu}\right. \\
+f_{-,n,\bar{n}}^{\mu} & =\sqrt{ \frac{1}{\bar{\mu}\mu _{-}} }\left(\sqrt{ 2(\mu _{-}+\bar{n})(\mu _{-}+\bar{n}+1) }\phi _{\mu _{-}+2,n,\bar{n}}\bar{\xi}_{1}^{\mu}\right. \\
  & +2i\sqrt{ 2\bar{n}(\mu _{-}+\bar{n}) }\phi _{\mu _{-}+2,n,\bar{n}-1}\bar{\xi}_{0}^{\mu} \\
  & \left.-\sqrt{ 2\bar{n}(\bar{n}-1) }\phi _{\mu _{-}+2,n,\bar{n}-2}\bar{\xi}_{-1}^{\mu}\right)
 \end{align}$$
 
-here, $\displaystyle{\varphi _{\mu _{+}+2,n,\bar{n}}}$ is the scalar highest-weight mode defined by
+here, $\displaystyle{\varphi _{\Delta,n,\bar{n}}}$ is the scalar highest-weight mode defined by
 
 $$\begin{align}
 \phi _{\Delta,n,\bar{n}} & =\sqrt{ \frac{1}{n!\bar{n}!(\Delta)_{n}(\Delta)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\varphi _{\Delta,0,0} \\
 \phi _{\Delta,0,0} & =\frac{1}{\sqrt{ 2\pi }}\frac{e^{-\Delta \tau}}{(1+r^{2})^{\Delta /2}}
 \end{align}$$
 
-Sollowing the same strategy as in our previous paper, we obtain
+Following the same strategy as in our previous paper, we obtain
 
 $$\begin{align}
 \sum ^{\infty}_{n,\bar{n}=0}f_{+,n,\bar{n}}^{\mu_{1}}(x_{1})f^{*\mu_{2}}_{+,n,\bar{n}}(x_{2}) & = \frac{1}{2\bar{\mu}\mu _{+}}\nabla ^{\mu_{1}}\nabla ^{\mu_{2}} g_{\mu _{+}+2}(x_{1},x_{2})+\frac{i}{2\bar{\mu}}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}g^{\rho_{1},\mu_{2}}(x_{1},x_{2}) \nabla _{\nu_{1}}g_{\mu _{+}+2}(x_{1},x_{2}) \\
@@ -124,7 +124,7 @@ $$\begin{align}
  & +\frac{\mu _{-}}{2\bar{\mu}}\bar{g}^{\mu_{1},\mu_{2}}(x_{1},x_{2})g_{\mu _{-}+2}(x_{1},x_{2})
 \end{align}$$
 
-### 5.3.2 Time ordering and branch correlators
+### 4.3.2 Time ordering and branch correlators
 
 Given the unordered mode sums derived above, we now impose Euclidean time ordering and obtain the corresponding branch correlators.
 
@@ -134,7 +134,7 @@ $$\begin{align}
 G_{+}(x_{1},x_{2}) & =\lim_{ \varepsilon \to 0 } \left(\sum ^{\infty}_{n,\bar{n}=0} f_{+,n,\bar{n}}^{\mu_{1}}(x^{+}_{1})f_{+,n,\bar{n}}^{*\mu_{2}}(x_{2})\right)\Bigg|_{x^{+\mu}_{1}=x_{1}^{\mu}+\varepsilon \delta ^{\mu}_{\tau}}+\left(\sum ^{\infty}_{n,\bar{n}=0}f^{\mu_{2}}_{+,n,\bar{n}}(x_{2})f_{+,n,\bar{n}}^{*\mu_{1}}(x_{1}^{-})\right)\Bigg|_{x_{1}^{-\mu}=x_{1}^{\mu}-\varepsilon \delta ^{\mu}_{\tau}} \\
  & =\lim_{ \varepsilon \to 0 } \left(\frac{1}{2\bar{\mu}\mu _{+}}\nabla ^{\mu_{1}}\nabla ^{\mu_{2}}g_{\mu _{+}+2}(x_{1}^{+},x_{2})+\frac{i}{2\bar{\mu}}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}g^{\rho_{1},\mu_{2}}\nabla _{\nu_{1}}g_{\mu _{+}+2}(x^{+}_{1},x_{2})+\frac{\mu _{+}}{2\bar{\mu}}g^{\mu_{1},\mu_{2}}g_{\mu _{+}+2}(x^{+}_{1},x_{2})\right)\Bigg|_{x_{1}^{+\mu}=x_{1}^{\mu}+\varepsilon \delta _{\tau}^{\mu}}\theta(\tau_{1}-\tau_{2}) \\
  & +\left(\frac{1}{2\bar{\mu}\mu _{+}}\nabla ^{\mu_{2}}\nabla ^{\mu_{1}}g_{\mu _{+}+2}(x_{2},x_{1}^{-})+\frac{i}{2\bar{\mu}}\varepsilon ^{\mu_{2}\nu_{2}}_{~~~~~~~\rho_{2}}g^{\rho_{2},\mu_{1}}\nabla _{\nu_{2}}g_{\mu _{+}+2}(x_{2},x_{1}^{-})+\frac{\mu _{+}}{2\bar{\mu}}g^{\mu_{2},\mu_{1}}g_{\mu _{+}+2}(x_{2},x_{1}^{-})\right)\Bigg|_{x_{1}^{-\mu}=x_{1}^{\mu}-\varepsilon \delta _{\tau}^{\mu}}\theta(\tau_{2}-\tau_{1}) \\
- & =\lim_{ \varepsilon \to 0 } \frac{1}{2\bar{\mu}\mu _{+}}\left(\nabla ^{\mu_{1}}\nabla ^{\mu_{2}}g_{\mu _{+}+2}(x_{1}^{+},x_{2})\bigg|_{x_{1}^{+\mu}=x_{1}^{\mu}+\varepsilon \delta _{\tau}^{\mu}}\theta(\tau_{1}-\tau_{2})+\nabla ^{\mu_{2}}\nabla ^{\mu_{1}}g_{\mu _{+}+2}(x_{1}^{-},x_{2})\bigg|_{x_{2}^{-\mu}=x_{2}^{\mu}-\varepsilon \delta _{\tau}^{\mu}}\theta(\tau_{2}-\tau_{1})\right) \\
+ & =\lim_{ \varepsilon \to 0 } \frac{1}{2\bar{\mu}\mu _{+}}\left(\nabla ^{\mu_{1}}\nabla ^{\mu_{2}}g_{\mu _{+}+2}(x_{1}^{+},x_{2})\bigg|_{x_{1}^{+\mu}=x_{1}^{\mu}+\varepsilon \delta _{\tau}^{\mu}}\theta(\tau_{1}-\tau_{2})+\nabla ^{\mu_{2}}\nabla ^{\mu_{1}}g_{\mu _{+}+2}(x_{1}^{-},x_{2})\bigg|_{x_{1}^{-\mu}=x_{1}^{\mu}-\varepsilon \delta _{\tau}^{\mu}}\theta(\tau_{2}-\tau_{1})\right) \\
  & +\frac{i}{2\bar{\mu}}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}g^{\rho_{1},\mu_{2}}(x_{1},x_{2})\left(\nabla _{\nu_{1}}g_{\mu _{+}+2}(x_{1}^{+},x_{2})\bigg|_{x_{1}^{+\mu}=x_{1}^{\mu}+\varepsilon \delta _{\tau}^{\mu}}\theta(\tau_{1}-\tau_{2})+\nabla _{\nu_{1}}g_{\mu _{+}+2}(x_{1}^{-},x_{2})\bigg|_{x_{1}^{-\mu}=x_{1}^{\mu}-\varepsilon \delta _{\tau}^{\mu}}\theta(\tau_{2}-\tau_{1})\right) \\
  & +\frac{\mu _{+}}{2\bar{\mu}}\left(g^{\mu_{1},\mu_{2}}(x_{1},x_{2})\left(g_{\mu _{+}+2}(x_{1}^{+},x_{2})\bigg|_{x_{1}^{+\mu}=x_{1}^{\mu}+\varepsilon \delta _{\tau}^{\mu}}\theta(\tau_{1}-\tau_{2})+g_{\mu _{+}+2}(x_{1}^{-},x_{2})\bigg|_{x_{1}^{-\mu}=x_{1}^{\mu}-\varepsilon \delta _{\tau}^{\mu}}\theta(\tau_{2}-\tau_{1})\right)\right)
 \end{align}$$
@@ -158,7 +158,7 @@ G_{\Delta}(x_{1},x_{2}) & =\lim_{ \varepsilon \to 0 } \left(g_{\Delta}(x_{1}^{+}
 $$\begin{align}
 II & =\lim_{ \varepsilon \to 0 }\frac{i}{2\bar{\mu}}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}g^{\rho_{1},\mu_{2}}(x_{1},x_{2})\left(\nabla _{\nu_{1}}g_{\mu _{+}+2}(x_{1}^{+},x_{2})\bigg|_{x_{1}^{+\mu}=x_{1}^{\mu}+\varepsilon \delta _{\tau}^{\mu}}\theta(\tau_{1}-\tau_{2})+\nabla _{\nu_{1}}g_{\mu _{+}+2}(x_{1}^{-},x_{2})\bigg|_{x_{1}^{-\mu}=x_{1}^{\mu}-\varepsilon \delta _{\tau}^{\mu}}\theta(\tau_{2}-\tau_{1})\right) \\
  & =\lim_{ \varepsilon \to 0 } \frac{i}{2\bar{\mu}}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}g^{\rho_{1},\mu_{2}}(x_{1},x_{2})\left(\nabla _{\nu_{1}}(g_{\mu _{+}+2}(x_{1}^{+},x_{2})\bigg|_{x_{1}^{+\mu}=x_{1}^{\mu}+\varepsilon \delta ^{\mu}_{\tau}}\theta(\tau_{1}-\tau_{2})+g_{\mu _{+}+2}(x_{1}^{-},x_{2})\bigg|_{x_{1}^{-\mu}=x_{1}^{\mu}-\varepsilon \delta _{\tau}^{\mu}}\theta(\tau_{2}-\tau_{1}))\right. \\
- & \left.-(g_{\mu _{+}+2}(x_{1}^{+},x_{2})\bigg|_{x_{1}^{+\mu}=x_{1}^{\mu}+\varepsilon \delta _{\tau}^{\mu}}-g_{\mu _{+}+2}(x_{1}^{-},x_{2})\bigg|_{x_{1}^{-\mu}=x_{1}^{\mu}-\varepsilon \delta _{\tau}^{\mu}})g_{\nu_{2}\tau}\delta(\tau_{1}-\tau_{2})\right) \\
+ & \left.-(g_{\mu _{+}+2}(x_{1}^{+},x_{2})\bigg|_{x_{1}^{+\mu}=x_{1}^{\mu}+\varepsilon \delta _{\tau}^{\mu}}-g_{\mu _{+}+2}(x_{1}^{-},x_{2})\bigg|_{x_{1}^{-\mu}=x_{1}^{\mu}-\varepsilon \delta _{\tau}^{\mu}})g_{\nu_{1}\tau}\delta(\tau_{1}-\tau_{2})\right) \\
  & =\frac{i}{2\bar{\mu}}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}g^{\rho_{1},\mu_{2}}(x_{1},x_{2})\nabla _{\nu_{1}}G_{\mu _{+}+2}(x_{1},x_{2})
 \end{align}$$
 
@@ -184,16 +184,16 @@ G_{-}(x_{1},x_{2}) & =\frac{1}{2\bar{\mu}\mu _{-}}\nabla ^{\mu_{1}}\nabla ^{\mu_
 Finally, the full Euclidean correlation function is
 
 $$\begin{align}
-G(x_{1},x_{2}) & =G_{+}(x_{1},x_{2})+G_{-}(x_{1},x_{2}) \\
+G^{\mu_{1},\mu_{2}}(x_{1},x_{2}) & =G^{\mu_{1},\mu_{2}}_{+}(x_{1},x_{2})+G^{\mu_{1},\mu_{2}}_{-}(x_{1},x_{2}) \\
  & =\frac{1}{2\bar{\mu}\mu _{+}}\nabla ^{\mu_{1}}\nabla ^{\mu_{2}}G_{\mu _{+}+2}(x_{1},x_{2})+\frac{1}{2\bar{\mu}\mu _{-}}\nabla ^{\mu_{1}}\nabla ^{\mu_{2}}G_{\mu _{-}+2}(x_{1},x_{2}) \\
  & +\frac{i}{2\bar{\mu}}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}g^{\rho_{1},\mu_{2}}(x_{1},x_{2})\nabla _{\nu_{1}}G_{\mu _{+}+2}(x_{1},x_{2})-\frac{i}{2\bar{\mu}}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}\bar{g}^{\rho_{1},\mu_{2}}(x_{1},x_{2})\nabla _{\nu_{1}}G_{\mu _{-}+2}(x_{1},x_{2}) \\
  & +\frac{\mu _{+}}{2\bar{\mu}}g^{\mu_{1},\mu_{2}}(x_{1},x_{2})G_{\mu _{+}+2}(x_{1},x_{2})+\frac{\mu _{-}}{2\bar{\mu}}\bar{g}^{\mu_{1},\mu_{2}}(x_{1},x_{2})G_{\mu _{-}+2}(x_{1},x_{2}) \\
  & -\frac{1}{\mu ^{2}} g^{\mu_{1}\tau}g^{\mu_{2}\tau} \frac{N(x_{1})}{\sqrt{ \sigma }(x_{1})}\delta ^{2}(x_{1}-x_{2})
 \end{align}$$
 
-## 5.4 Verification of the covariant Green's function equation
+## 4.4 Verification of the covariant Green's function equation
 
-We now verify that the covariant part of the correlation function obtained above satisfies the expected Green's function equation. The non-covariant contact term exhibited in Section 5.3 is not included in this check and will be discussed separately.
+We now verify that the covariant part of the correlation function obtained above satisfies the expected Green's function equation. The non-covariant contact term exhibited in Section 4.3 is not included in this check and will be discussed separately.
 
 To derive the Green's function equation, it is useful to compare each branch with the corresponding pure Proca problem. The normalizable Euclidean modes of the pure Proca theory can be written as
 
@@ -245,26 +245,26 @@ $$\begin{align}
 The same reasoning applies to the Proca-Chern-Simons theory. Comparing the Euclidean mode functions above with the pure Proca modes, each branch is obtained by the replacement $\mu \rightarrow \mu_{\pm}$ together with the normalization factor $\sqrt{ \frac{\mu_{\pm}}{\bar{\mu}} }$. Since the correlator is quadratic in the modes, this precisely changes the source coefficient from $1/(2\mu_{\pm})$ to $1/(2\bar{\mu})$. Therefore the branch correlators of the Proca-Chern-Simons theory satisfy
 
 $$\begin{align}
-(\varepsilon _{\mu_{1}~~~\rho_{1}}^{~~~~\nu_{1}}\nabla _{\nu_{1}}-\mu _{+}g_{\mu_{1}\rho_{1}})G_{+}^{\rho_{1},\mu_{2}}(x_{1},x_{2}) & =-\frac{1}{2\bar{\mu}} \frac{g^{\mu_{1}\mu_{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}) \\
-(\varepsilon _{\mu_{1}~~~\rho_{1}}^{~~~~\nu_{1}}\nabla _{\nu_{1}}+\mu _{-}g_{\mu_{1}\rho_{1}})G_{-}^{\rho_{1},\mu_{2}}(x_{1},x_{2}) & =\frac{1}{2\bar{\mu}} \frac{g^{\mu_{1}\mu_{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}).
+(\varepsilon _{\mu_{1}~~~\rho_{1}}^{~~~~\nu_{1}}\nabla _{\nu_{1}}-\mu _{-}g_{\mu_{1}\rho_{1}})G_{+}^{\rho_{1},\mu_{2}}(x_{1},x_{2}) & =-\frac{1}{2\bar{\mu}} \frac{g^{\mu_{1}\mu_{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}) \\
+(\varepsilon _{\mu_{1}~~~\rho_{1}}^{~~~~\nu_{1}}\nabla _{\nu_{1}}+\mu _{+}g_{\mu_{1}\rho_{1}})G_{-}^{\rho_{1},\mu_{2}}(x_{1},x_{2}) & =\frac{1}{2\bar{\mu}} \frac{g^{\mu_{1}\mu_{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}).
 \end{align}$$
 
-Acting on these equations with the complementary operators $\varepsilon _{\mu}^{~\nu \rho}\nabla _{\nu}\mp\mu_{\pm} \delta _{\mu}^{\rho}$, we obtain
+Acting on these equations with the complementary operators $\varepsilon _{\mu}^{~\nu \rho}\nabla _{\nu}\pm\mu_{\pm} \delta _{\mu}^{\rho}$, we obtain
 
 $$\begin{align}
-\left( \delta _{\rho_{1}}^{\mu_{1}}\nabla ^{2}-\nabla _{\rho_{1}}\nabla ^{\mu_{1}}+\frac{k}{4\pi}\varepsilon ^{\mu_{1}}_{~~~\nu_{1}\rho_{1}}\nabla ^{\nu_{1}}-\delta _{\rho_{1}}^{\mu_{1}}\mu ^{2} \right)G_{+}^{\rho_{1},\mu_{2}}(x_{1},x_{2})  & =-\frac{1}{2\bar{\mu}}\left(\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}\nabla _{\nu_{1}}+\mu _{-}\delta ^{\mu_{1}}_{\rho_{1}}\right) \frac{g^{\rho_{1}\mu_{2}}}{\sqrt{ g(x_{1}) }} \delta ^{3}(x_{1}-x_{2}) \\
-\left( \delta _{\rho_{1}}^{\mu_{1}}\nabla ^{2}-\nabla _{\rho_{1}}\nabla ^{\mu_{1}}+\frac{k}{4\pi}\varepsilon ^{\mu_{1}}_{~~~\nu_{1}\rho_{1}}\nabla ^{\nu_{1}}-\delta _{\rho_{1}}^{\mu_{1}}\mu ^{2} \right)G_{-}^{\rho_{1},\mu_{2}}(x_{1},x_{2}) & =\frac{1}{2\bar{\mu}}\left(\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}\nabla _{\nu_{1}}-\mu _{+}\delta ^{\mu_{1}}_{\rho_{1}}\right) \frac{g^{\rho_{1}\mu_{2}}}{\sqrt{ g(x_{1}) }} \delta ^{3}(x_{1}-x_{2}).
+\left( \delta _{\rho_{1}}^{\mu_{1}}\nabla ^{2}-\nabla _{\rho_{1}}\nabla ^{\mu_{1}}+\frac{k}{2\pi}\varepsilon ^{\mu_{1}}_{~~~\nu_{1}\rho_{1}}\nabla ^{\nu_{1}}-\delta _{\rho_{1}}^{\mu_{1}}\mu ^{2} \right)G_{+}^{\rho_{1},\mu_{2}}(x_{1},x_{2})  & =-\frac{1}{2\bar{\mu}}\left(\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}\nabla _{\nu_{1}}+\mu _{+}\delta ^{\mu_{1}}_{\rho_{1}}\right) \frac{g^{\rho_{1}\mu_{2}}}{\sqrt{ g(x_{1}) }} \delta ^{3}(x_{1}-x_{2}) \\
+\left( \delta _{\rho_{1}}^{\mu_{1}}\nabla ^{2}-\nabla _{\rho_{1}}\nabla ^{\mu_{1}}+\frac{k}{2\pi}\varepsilon ^{\mu_{1}}_{~~~\nu_{1}\rho_{1}}\nabla ^{\nu_{1}}-\delta _{\rho_{1}}^{\mu_{1}}\mu ^{2} \right)G_{-}^{\rho_{1},\mu_{2}}(x_{1},x_{2}) & =\frac{1}{2\bar{\mu}}\left(\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}\nabla _{\nu_{1}}-\mu _{-}\delta ^{\mu_{1}}_{\rho_{1}}\right) \frac{g^{\rho_{1}\mu_{2}}}{\sqrt{ g(x_{1}) }} \delta ^{3}(x_{1}-x_{2}).
 \end{align}$$
 
 Finally, defining the full Euclidean correlator by $G^{\mu_{1},\mu_{2}}(x_{1},x_{2})=G_{+}^{\mu_{1},\mu_{2}}(x_{1},x_{2})+G_{-}^{\mu_{1},\mu_{2}}(x_{1},x_{2})$ and summing the two branch equations, we obtain
 
 $$\begin{align}
-\left( \delta _{\rho_{1}}^{\mu_{1}}\nabla ^{2}-\nabla _{\rho_{1}}\nabla ^{\mu_{1}}+\frac{k}{4\pi}\varepsilon ^{\mu_{1}}_{~~~\nu_{1}\rho_{1}}\nabla ^{\nu_{1}}-\delta _{\rho_{1}}^{\mu_{1}}\mu ^{2} \right)G^{\rho_{1},\mu_{2}}(x_{1},x_{2}) & =-\frac{g^{\mu_{1}\mu_{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}).
+\left( \delta _{\rho_{1}}^{\mu_{1}}\nabla ^{2}-\nabla _{\rho_{1}}\nabla ^{\mu_{1}}+\frac{k}{2\pi}\varepsilon ^{\mu_{1}}_{~~~\nu_{1}\rho_{1}}\nabla ^{\nu_{1}}-\delta _{\rho_{1}}^{\mu_{1}}\mu ^{2} \right)G^{\rho_{1},\mu_{2}}(x_{1},x_{2}) & =-\frac{g^{\mu_{1}\mu_{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}).
 \end{align}$$
 
 This is the desired Euclidean Green's function equation for the full Proca-Chern-Simons two-point function.
 
-## 5.5 The path-integral interpretation of the contact term
+## 4.5 The path-integral interpretation of the contact term
 
 We now explain the origin of the contact term from the Euclidean path integral of the full Proca-Chern-Simons theory.
 
@@ -298,10 +298,10 @@ $$\begin{align}
 G_{\mathrm{path}}^{\mu _{1},\mu _{2}}(x_{1},x_{2}) & :=\frac{\displaystyle{\int \mathcal{D}A\,e^{-S_{E}[A]}A^{\mu _{1}}(x_{1})A^{\mu _{2}}(x_{2})}}{\displaystyle{\int \mathcal{D}A\,e^{-S_{E}[A]}}}.
 \end{align}$$
 
-Up to boundary terms, the corresponding quadratic kernel is precisely the operator that appeared in Section 5.4, so $G_{\mathrm{path}}^{\mu _{1},\mu _{2}}$ satisfies
+Up to boundary terms, the corresponding quadratic kernel is precisely the operator that appeared in Section 4.4, so $G_{\mathrm{path}}^{\mu _{1},\mu _{2}}$ satisfies
 
 $$\begin{align}
-\left( \delta _{\rho _{1}}^{\mu _{1}}\nabla ^{2}-\nabla _{\rho _{1}}\nabla ^{\mu _{1}}+\frac{k}{4\pi}\varepsilon ^{\mu _{1}}_{~~~\nu _{1}\rho _{1}}\nabla ^{\nu _{1}}-\delta _{\rho _{1}}^{\mu _{1}}\mu ^{2} \right)G_{\mathrm{path}}^{\rho _{1},\mu _{2}}(x_{1},x_{2}) & =-\frac{g^{\mu _{1}\mu _{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}).
+\left( \delta _{\rho _{1}}^{\mu _{1}}\nabla ^{2}-\nabla _{\rho _{1}}\nabla ^{\mu _{1}}+\frac{k}{2\pi}\varepsilon ^{\mu _{1}}_{~~~\nu _{1}\rho _{1}}\nabla ^{\nu _{1}}-\delta _{\rho _{1}}^{\mu _{1}}\mu ^{2} \right)G_{\mathrm{path}}^{\rho _{1},\mu _{2}}(x_{1},x_{2}) & =-\frac{g^{\mu _{1}\mu _{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}).
 \end{align}$$
 
 Equivalently, using the factorization into the two first-order branches, we may write
@@ -313,11 +313,11 @@ G_{\mathrm{path}}^{\mu _{1},\mu _{2}}(x_{1},x_{2}) & =G_{+,\mathrm{path}}^{\mu _
 where
 
 $$\begin{align}
-(\varepsilon _{\mu _{1}~~~\rho _{1}}^{~~~~\nu _{1}}\nabla _{\nu _{1}}-\mu _{+}g_{\mu _{1}\rho _{1}})G_{+,\mathrm{path}}^{\rho _{1},\mu _{2}}(x_{1},x_{2}) & =-\frac{1}{2\bar{\mu}}\frac{g^{\mu _{1}\mu _{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}), \\
-(\varepsilon _{\mu _{1}~~~\rho _{1}}^{~~~~\nu _{1}}\nabla _{\nu _{1}}+\mu _{-}g_{\mu _{1}\rho _{1}})G_{-,\mathrm{path}}^{\rho _{1},\mu _{2}}(x_{1},x_{2}) & =\frac{1}{2\bar{\mu}}\frac{g^{\mu _{1}\mu _{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}).
+(\varepsilon _{\mu _{1}~~~\rho _{1}}^{~~~~\nu _{1}}\nabla _{\nu _{1}}-\mu _{-}g_{\mu _{1}\rho _{1}})G_{+,\mathrm{path}}^{\rho _{1},\mu _{2}}(x_{1},x_{2}) & =-\frac{1}{2\bar{\mu}}\frac{g^{\mu _{1}\mu _{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}), \\
+(\varepsilon _{\mu _{1}~~~\rho _{1}}^{~~~~\nu _{1}}\nabla _{\nu _{1}}+\mu _{+}g_{\mu _{1}\rho _{1}})G_{-,\mathrm{path}}^{\rho _{1},\mu _{2}}(x_{1},x_{2}) & =\frac{1}{2\bar{\mu}}\frac{g^{\mu _{1}\mu _{2}}}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}).
 \end{align}$$
 
-These are the path-integral counterparts of the branch equations in Section 5.4.
+These are the path-integral counterparts of the branch equations in Section 4.4.
 
 To see how the contact term arises, we now decompose the action into the spatial components $A_{a},a=r,\phi$ and the Euclidean time component $A_{\tau}$. The ADM decomposition of the Euclidean action is
 
@@ -391,7 +391,7 @@ G_{\mathrm{path};\tau \tau}(x_{1},x_{2}) & = \left\langle A_{\tau}(x_{1})A_{\tau
  & = G_{\tau,\tau}(x_{1},x_{2})+\frac{N(x_{1})}{\mu ^{2}\sqrt{ \sigma }(x_{1})}\delta ^{2}(x_{1}-x_{2})
 \end{align}$$
 
-The second term is precisely the canonical correlator. Therefore
+The first term is precisely the canonical correlator. Therefore
 
 $$\begin{align}
 G_{\tau,\tau}(x_{1},x_{2}) & =G_{\mathrm{path};\tau \tau}(x_{1},x_{2})-\frac{N(x_{1})}{\mu ^{2}\sqrt{ \sigma }(x_{1})}\delta ^{2}(x_{1}-x_{2}).

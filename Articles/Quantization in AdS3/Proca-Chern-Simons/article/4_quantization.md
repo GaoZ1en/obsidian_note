@@ -32,21 +32,21 @@ $$ \left( \mathcal{D}^2 + \frac{k}{2\pi}\mathcal{D} - \mu^2 \right) A = 0. $$
 
 Here, spacetime indices are implicitly contracted. This quadratic equation with respect to the operator $\mathcal{D}$ can be naturally factorized into two distinct, disconnected mode sectors:
 
-$$ (\mathcal{D} - \mu_+)(\mathcal{D} + \mu_-) A = 0, $$
+$$ (\mathcal{D} - \mu_-)(\mathcal{D} + \mu_+) A = 0, $$
 
 where the effective shifted masses are defined by
 
-$$ \mu_{\pm} = \bar{\mu} \mp \frac{k}{4\pi}, \qquad \bar{\mu} \equiv \sqrt{\mu^2 + \frac{k^2}{16\pi^2}}, \qquad \mu_{\pm} > 0. $$
+$$ \mu_{\pm} = \bar{\mu} \pm \frac{k}{4\pi}, \qquad \bar{\mu} \equiv \sqrt{\mu^2 + \frac{k^2}{16\pi^2}}, \qquad \mu_{\pm} > 0. $$
 
 Notice that the differential operators of the two sectors commute:
 
-$$ [\mathcal{D}-\mu_{+}, \mathcal{D}+\mu_{-}] = 0. $$
+$$ [\mathcal{D}-\mu_{-}, \mathcal{D}+\mu_{+}] = 0. $$
 
 Thus, the general solutions can be expressed as a linear combination of two independent branches satisfying the respective first-order equations:
 
 $$ \begin{align}
-(\mathcal{D} - \mu_+) A_+ & = 0, \\
-(\mathcal{D} + \mu_-) A_- & = 0.
+(\mathcal{D} + \mu_+) A_+ & = 0, \\
+(\mathcal{D} - \mu_-) A_- & = 0.
 \end{align} $$
 
 In the following subsections, we will explicitly solve these two branches and confirm that they are indeed complete and independent.
@@ -82,7 +82,7 @@ $$ \begin{align}
 \mathcal{\bar{C}}A^{\mu} & =-\frac{1}{4}\nabla _{\nu}\nabla ^{\nu}A^{\mu}+\frac{1}{2}\varepsilon ^{\mu \nu}_{~~~\rho}\nabla _{\nu}A^{\rho}-\frac{1}{2}A^{\mu}.
 \end{align} $$
 
-Furthermore, by incorporating the transversality constraint $\nabla _{\mu}A^{\mu}=0$ along with the geometric identity established earlier ($-\nabla^2 A_\mu - 2A_\mu = \mathcal{D}^2 A_\mu$), these actions can be equivalently written entirely in terms of the operator $\mathcal{D}$:
+Furthermore, by incorporating the transversality constraint $\nabla _{\mu}A^{\mu}=0$ along with the geometric identity established earlier ($\nabla^2 A_\mu + 2A_\mu = \mathcal{D}^2 A_\mu$), these actions can be equivalently written entirely in terms of the operator $\mathcal{D}$:
 
 $$ \begin{align}
 \mathcal{C}A & =-\frac{1}{4}\mathcal{D}^{2}A-\frac{1}{2}\mathcal{D}A, \\
@@ -95,7 +95,7 @@ This relation shows that $\mathcal{D}$ is naturally diagonalized on highest-weig
 
 We now use the Killing symmetries to construct a complete set of normalizable modes. These solutions organize naturally into highest-weight representations of $\mathrm{SL}(2, \mathbb{R})_L \times \mathrm{SL}(2, \mathbb{R})_R$.
 
-Applying $\mathcal{D} A_{\pm,N} = \pm \mu_\pm A_{\pm,N}$ to the Casimir operators immediately gives their eigenvalues in the left- and right-moving sectors:
+Applying $\mathcal{D} A_{+,N} = - \mu_+ A_{+,N}$ and $\mathcal{D} A_{-,N} = \mu_- A_{-,N}$ to the Casimir operators immediately gives their eigenvalues in the left- and right-moving sectors:
 
 $$ \begin{align}
 \mathcal{C}A_{+,N}^{\mu} & =\left(-\frac{1}{4}\mu _{+}^{2}+\frac{1}{2}\mu _{+}\right)A_{+,N}^{\mu}, \\
@@ -127,7 +127,7 @@ Then the Casimir eigenvalues can be written in terms of these conformal dimensio
 
 $$ \begin{align}
 \mathcal{C}A_{\pm,0}^{\mu} & =(-h_{\pm}^{2}+h_{\pm})A_{\pm,0}^{\mu}, \\
-\mathcal{\bar{C}}A_{\pm,0}^{\mu} & =(-\bar{h}_{\pm}^{2}-\bar{h}_{\pm})A_{\pm,0}^{\mu},
+\mathcal{\bar{C}}A_{\pm,0}^{\mu} & =(-\bar{h}_{\pm}^{2}+\bar{h}_{\pm})A_{\pm,0}^{\mu},
 \end{align} $$
 
 Solving these relations yields
@@ -137,7 +137,7 @@ $$ \begin{align}
 (h_{-},\bar{h}_{-})=\left(1+\frac{\mu _{-}}{2},\frac{\mu _{-}}{2}\right).
 \end{align} $$
 
-The non-unitary roots with negative conformal dimensions are excluded by the normalizability condition $\mu_\pm > 0$ together with the boundary conditions. Solving the highest-weight equations then gives the primary modes
+Solving the highest-weight equations then gives the primary modes
 
 $$ \begin{align}
 f_{+,0,0}^{\mu} & =\sqrt{ \frac{\mu _{+}+1}{\pi \bar{\mu}} }\frac{e^{-i(\mu _{+}+2)t}}{(1+r^{2})^{1+\mu _{+}/2}}\xi _{1}^{\mu} \\
@@ -264,7 +264,7 @@ All remaining brackets vanish.
 We now compute the conserved Noether charges associated with the Killing symmetries. On the covariant phase space, they are given by
 
 $$
-H_{\xi} = -\frac{1}{2} \Omega[A, \mathcal{L}_{\xi} A].
+H_{\xi} = \frac{1}{2} \Omega[A, \mathcal{L}_{\xi} A].
 $$
 
 Substituting the mode expansion and using the orthogonality relations derived in Section 4.5 yields bilinear expressions in the oscillator variables. For the Cartan generators $\xi_0$ and $\bar\xi_0$, we obtain

@@ -4,11 +4,11 @@ date: 2026-04-13
 summary: ""
 ---
 
-# 4. Representing the Hamiltonian system with a proper set of variables
+# 3. Representing the Hamiltonian system with a proper set of variables
 
 So far, we have reformulated the model as a Hamiltonian system. In this section, we follow the framework of our previous paper, introduce a mode basis, rewrite the symplectic structure in terms of discrete oscillator variables, and carry out the canonical quantization procedure.
 
-## 4.1 The framework
+## 3.1 The framework
 
 Before turning to the technical details, we summarize the strategy.
 
@@ -26,7 +26,7 @@ $$
 
 where $\Omega[\cdot,\cdot]|_{\widetilde{\mathcal{P}}}$ denotes the fundamental symplectic pairing integrated over a Cauchy slice. In the remainder of this section, we determine the explicit mode functions and derive the reduced symplectic form, the Noether charges, and the quantum oscillator algebra.
 
-## 4.2 Operator factorization for the equations of motion
+## 3.2 Operator factorization for the equations of motion
 
 To solve the dynamically coupled Proca-Chern-Simons equations of motion, we define the first-order differential operator $\mathcal{D}$:
 
@@ -38,26 +38,27 @@ $$ \left( \mathcal{D}^2 + \frac{k}{2\pi}\mathcal{D} - \mu^2 \right) A = 0. $$
 
 Here, spacetime indices are implicitly contracted. This quadratic equation with respect to the operator $\mathcal{D}$ can be naturally factorized into two distinct, disconnected mode sectors:
 
-$$ (\mathcal{D} - \mu_+)(\mathcal{D} + \mu_-) A = 0, $$
+$$ (\mathcal{D} - \mu_-)(\mathcal{D} + \mu_+) A = 0, $$
 
 where the effective shifted masses are defined by
 
-$$ \mu_{\pm} = \bar{\mu} \mp \frac{k}{4\pi}, \qquad \bar{\mu} \equiv \sqrt{\mu^2 + \frac{k^2}{16\pi^2}}, \qquad \mu_{\pm} > 0. $$
+$$ \mu_{\pm} = \bar{\mu} \pm \frac{k}{4\pi}, \qquad \bar{\mu} \equiv \sqrt{\mu^2 + \frac{k^2}{16\pi^2}}, \qquad \mu_{\pm} > 0. $$
 
 Notice that the differential operators of the two sectors commute:
 
-$$ [\mathcal{D}-\mu_{+}, \mathcal{D}+\mu_{-}] = 0. $$
+$$ [\mathcal{D}-\mu_{-}, \mathcal{D}+\mu_{+}] = 0. $$
 
 Thus, the general solutions can be expressed as a linear combination of two independent branches satisfying the respective first-order equations:
 
 $$ \begin{align}
-(\mathcal{D} - \mu_+) A_+ & = 0, \\
-(\mathcal{D} + \mu_-) A_- & = 0.
+(\mathcal{D} \pm \mu_\pm) A_\pm & = 0.
 \end{align} $$
+
+here, the subscripts $\displaystyle{\pm}$ are introduced to distinguish the two branches.
 
 In the following subsections, we will explicitly solve these two branches and confirm that they are indeed complete and independent.
 
-## 4.3 The Killing symmetries
+## 3.3 The Killing symmetries
 
 To construct the mode basis and evaluate the symplectic form, we exploit the Killing symmetries of global $\mathrm{AdS}_3$. The Killing fields $\xi_a$ and $\bar{\xi}_a$, with $a \in \{-1,0,1\}$, form an $\mathrm{SL}(2, \mathbb{R})_L \times \mathrm{SL}(2, \mathbb{R})_R$ algebra under the Lie bracket.
 
@@ -88,7 +89,7 @@ $$ \begin{align}
 \mathcal{\bar{C}}A^{\mu} & =-\frac{1}{4}\nabla _{\nu}\nabla ^{\nu}A^{\mu}+\frac{1}{2}\varepsilon ^{\mu \nu}_{~~~\rho}\nabla _{\nu}A^{\rho}-\frac{1}{2}A^{\mu}.
 \end{align} $$
 
-Furthermore, by incorporating the transversality constraint $\nabla _{\mu}A^{\mu}=0$ along with the geometric identity established earlier ($-\nabla^2 A_\mu - 2A_\mu = \mathcal{D}^2 A_\mu$), these actions can be equivalently written entirely in terms of the operator $\mathcal{D}$:
+Furthermore, by incorporating the transversality constraint $\nabla _{\mu}A^{\mu}=0$ along with the geometric identity established earlier ($\nabla^2 A_\mu + 2A_\mu = \mathcal{D}^2 A_\mu$), these actions can be equivalently written entirely in terms of the operator $\mathcal{D}$:
 
 $$ \begin{align}
 \mathcal{C}A & =-\frac{1}{4}\mathcal{D}^{2}A-\frac{1}{2}\mathcal{D}A, \\
@@ -97,11 +98,11 @@ $$ \begin{align}
 
 This relation shows that $\mathcal{D}$ is naturally diagonalized on highest-weight representations of $\mathrm{SL}(2, \mathbb{R})_L \times \mathrm{SL}(2, \mathbb{R})_R$.
 
-## 4.4 Solving the modes
+## 3.4 Solving the modes
 
 We now use the Killing symmetries to construct a complete set of normalizable modes. These solutions organize naturally into highest-weight representations of $\mathrm{SL}(2, \mathbb{R})_L \times \mathrm{SL}(2, \mathbb{R})_R$.
 
-Applying $\mathcal{D} A_{\pm,N} = \pm \mu_\pm A_{\pm,N}$ to the Casimir operators immediately gives their eigenvalues in the left- and right-moving sectors:
+Applying $\mathcal{D} A_{,N} = \mp \mu_\pm A_{\pm,N}$ to the Casimir operators immediately gives their eigenvalues in the left- and right-moving sectors:
 
 $$ \begin{align}
 \mathcal{C}A_{+,N}^{\mu} & =\left(-\frac{1}{4}\mu _{+}^{2}+\frac{1}{2}\mu _{+}\right)A_{+,N}^{\mu}, \\
@@ -133,7 +134,7 @@ Then the Casimir eigenvalues can be written in terms of these conformal dimensio
 
 $$ \begin{align}
 \mathcal{C}A_{\pm,0}^{\mu} & =(-h_{\pm}^{2}+h_{\pm})A_{\pm,0}^{\mu}, \\
-\mathcal{\bar{C}}A_{\pm,0}^{\mu} & =(-\bar{h}_{\pm}^{2}-\bar{h}_{\pm})A_{\pm,0}^{\mu},
+\mathcal{\bar{C}}A_{\pm,0}^{\mu} & =(-\bar{h}_{\pm}^{2}+\bar{h}_{\pm})A_{\pm,0}^{\mu},
 \end{align} $$
 
 Solving these relations yields
@@ -143,7 +144,7 @@ $$ \begin{align}
 (h_{-},\bar{h}_{-})=\left(1+\frac{\mu _{-}}{2},\frac{\mu _{-}}{2}\right).
 \end{align} $$
 
-The non-unitary roots with negative conformal dimensions are excluded by the normalizability condition $\mu_\pm > 0$ together with the boundary conditions. Solving the highest-weight equations then gives the primary modes
+The alternative sign choices are excluded by the Appendix C argument: admissible positive-energy modes satisfy $\omega \pm m > 0$, which for a primary mode is equivalent to $h_{\pm} > 0$ and $\bar{h}_{\pm} > 0$. Solving the highest-weight equations then gives the primary modes
 
 $$ \begin{align}
 f_{+,0,0}^{\mu} & =\sqrt{ \frac{\mu _{+}+1}{\pi \bar{\mu}} }\frac{e^{-i(\mu _{+}+2)t}}{(1+r^{2})^{1+\mu _{+}/2}}\xi _{1}^{\mu} \\
@@ -157,7 +158,7 @@ f^{\mu}_{+,n,\bar{n}} & =\sqrt{ \frac{1}{n!(\mu _{+})_{n}\bar{n}!(\mu _{+}+2)_{\
 f^{\mu}_{-,n,\bar{n}} & =\sqrt{ \frac{1}{n!(\mu _{-}+2)_{n}\bar{n}!(\mu _{-})_{\bar{n}}} } \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f_{-,0,0}^{\mu}.
 \end{align} $$
 
-The normalization constants are fixed by the condition $\Omega[A,A^*] = -i$; the details are given in Appendix B.
+The normalization constants are fixed by the condition $\Omega[A,A^*] = -i$.
 
 The actions of the Killing generators on these modes are
 
@@ -184,7 +185,7 @@ $$ \begin{align}
 here, the subscripts $\displaystyle{+/-}$ distinguish the two disconnected branches of the solution spectrum.
 
 
-## 4.5 Symplectic form
+## 3.5 Symplectic form
 
 We now evaluate the symplectic two-form $\Omega[\cdot,\cdot]$ on the mode basis derived above. Before performing explicit integrations, it is useful to establish a selection rule that determines which mode pairs can have non-vanishing symplectic products.
 
@@ -210,7 +211,7 @@ c_1 \Omega[f_1, f_2] & = \Omega[\mathcal{C} f_1, f_2] = \Omega[f_1, \mathcal{C} 
 
 Therefore $\Omega[f_1,f_2]$ can be non-zero only if the two modes have the same Casimir eigenvalues, $c_1=c_2$ and $\bar c_1=\bar c_2$, and opposite zero-mode weights, $h_1+h_2=0$ and $\bar h_1+\bar h_2=0$.
 
-For the physical descendant modes constructed above, this implies that the only non-vanishing pairings are between a mode and its complex conjugate. With the normalization chosen in Section 4.4 and Appendix B, we have
+For the physical descendant modes constructed above, this implies that the only non-vanishing pairings are between a mode and its complex conjugate. With the normalization chosen in Section 3.4, we have
 
 $$ \begin{align}
 \Omega[f_{+,n,\bar{n}}, f^{*}_{+,n,\bar{n}}] & = -i, \\
@@ -219,7 +220,7 @@ $$ \begin{align}
 
 By antisymmetry, $\Omega[f^*,f]=i$, and all remaining pairings vanish. The symplectic form is therefore block diagonal in the two branches and their descendant towers.
 
-## 4.6 Hamiltonian system
+## 3.6 Hamiltonian system
 
 With the complete mode basis and their symplectic pairings in hand, we can formulate the classical Hamiltonian system in terms of discrete variables. The general real transverse field is expanded as
 
@@ -227,7 +228,7 @@ $$ A^{\mu}(x) = \sum_{n,\bar{n}=0}^{\infty} \left( a_{+,n,\bar{n}} f^{\mu}_{+,n,
 
 The solution space is therefore coordinatized by the independent complex variables $(a_{\pm,n,\bar{n}}, a^{*}_{\pm,n,\bar{n}})$.
 
-Substituting this expansion into the symplectic form obtained in Section 4.5 yields
+Substituting this expansion into the symplectic form obtained in Section 3.5 yields
 
 $$ 
 \Omega\big|_{\widetilde{\mathcal{P}}} = -i \sum_{n,\bar{n}=0}^{\infty} \left( \delta a_{+,n,\bar{n}} \wedge \delta a^{*}_{+,n,\bar{n}} + \delta a_{-,n,\bar{n}} \wedge \delta a^{*}_{-,n,\bar{n}} \right). 
@@ -262,15 +263,15 @@ $$ \begin{align}
 
 All remaining brackets vanish.
 
-## 4.7 The Noether charges of the Killing symmetries
+## 3.7 The Noether charges of the Killing symmetries
 
 We now compute the conserved Noether charges associated with the Killing symmetries. On the covariant phase space, they are given by
 
 $$
-H_{\xi} = -\frac{1}{2} \Omega[A, \mathcal{L}_{\xi} A].
+H_{\xi} = \frac{1}{2} \Omega[A, \mathcal{L}_{\xi} A].
 $$
 
-Substituting the mode expansion and using the orthogonality relations derived in Section 4.5 yields bilinear expressions in the oscillator variables. For the Cartan generators $\xi_0$ and $\bar\xi_0$, we obtain
+Substituting the mode expansion and using the orthogonality relations derived in Section 3.5 yields bilinear expressions in the oscillator variables. For the Cartan generators $\xi_0$ and $\bar\xi_0$, we obtain
 
 $$ \begin{align}
 H_{\xi_0} & = \sum_{n,\bar{n}=0}^{\infty} \left[ \left(\frac{\mu_+}{2} + n\right) a^{*}_{+,n,\bar{n}} a_{+,n,\bar{n}} + \left(\frac{\mu_-}{2} + 1 + n\right) a^{*}_{-,n,\bar{n}} a_{-,n,\bar{n}} \right], \\
@@ -297,13 +298,13 @@ $$
 \{H_{\xi_a}, H_{\xi_b}\} = H_{[\xi_a,\xi_b]}.
 $$
 
-Moreover, using the brackets of Section 4.6, one verifies that
+Moreover, using the brackets of Section 3.6, one verifies that
 
 $$ \{H_{\xi}, A^\mu(x)\} = - \mathcal{L}_{\xi} A^\mu(x). $$
 
 This confirms that the Noether charges generate the expected geometric action on the field.
 
-## 4.8 Canonical quantization
+## 3.8 Canonical quantization
 
 So far, we have reduced the theory to a set of uncoupled oscillators. We now quantize them canonically.
 

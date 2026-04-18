@@ -6,7 +6,7 @@ summary: ""
 
 # 2. Reformulating the model as a Hamiltonian system
 
-In this section, we apply the covariant phase space formalism reviewed in Section 1 to the Proca-Chern-Simons model and rewrite it as a Hamiltonian system. We also discuss the Noether charges associated with the Killing symmetries. As shown in [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_a|Appendix A]], the near-boundary contributions at spatial infinity $\Gamma$ vanish under our asymptotic boundary conditions.
+In this section, we apply the covariant phase space formalism reviewed in Section 1 to the Proca-Chern-Simons model and rewrite it as a Hamiltonian system. We also discuss the Noether charges associated with the Killing symmetries. As shown in [[Articles/Quantization in AdS3/Proca-Chern-Simons/arxiv/appendix_a|Appendix_A]], the near-boundary contributions at spatial infinity $\Gamma$ vanish under our asymptotic boundary conditions.
 
 ## 2.1 The Hamiltonian system
 
@@ -29,7 +29,7 @@ $$\begin{align}
 The future-pointing unit normal vector orthogonal to these Cauchy surfaces is
 
 $$\begin{align}
-\tau ^{\mu} & =\frac{1}{1+r^{2}}\delta _{0}^{\mu}
+\tau ^{\mu} & =\frac{1}{\sqrt{ 1+r^{2} }}\delta _{0}^{\mu}
 \end{align}$$
 
 The contributions from the near-boundary region are finite. In particular, the boundary term produced by integration by parts vanishes at spatial infinity, as verified in [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_a|Appendix A]].
@@ -57,7 +57,7 @@ Here $\Sigma$ denotes a constant-$t$ Cauchy surface, and $\theta$ is a one-form 
 We define the pre-phase space $\widetilde{\mathcal{P}}$ as the space of solutions of the equations of motion obeying the asymptotic boundary conditions. Taking the exterior derivative of the symplectic potential on configuration space gives the symplectic form
 
 $$\begin{align}
-\Omega[\delta _{1} A,\delta _{2} A] & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left(\delta _{1} F^{\mu \nu}\delta _{2} A_{\nu}+\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}\delta _{1}A_{\nu}\delta _{2}A_{\rho}\right)
+\Omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left(\delta F^{\mu \nu}\wedge\delta A_{\nu}+\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}\delta A_{\nu}\wedge\delta A_{\rho}\right)
 \end{align}$$
 
 which is a two-form on configuration space. Pulling it back to $\widetilde{\mathcal{P}}$ gives the symplectic form $\Omega|_{\widetilde{\mathcal{P}}}$ of the pre-phase space.
@@ -78,11 +78,11 @@ $$\begin{align}
  & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left(F_{1}^{\mu \nu}A_{2,\nu}-F_{2}^{\mu \nu}A_{1,\nu}+\frac{k}{2\pi}\varepsilon ^{\mu \nu \rho}A_{1,\nu}A_{2,\rho}\right)
 \end{align}$$
 
-Here the point of $\widetilde{\mathcal{P}}$ is already regarded as a vector in the linear solution space. The bilinear form $\Omega[\cdot,\cdot]$ is finite and independent of the choice of Cauchy surface $\Sigma$. Later we will use $i\Omega[A_1^*,A_2]$ as the natural Hermitian inner product on the one-particle space.
+Here the point of $\widetilde{\mathcal{P}}$ is already regarded as a vector in the linear solution space. The bilinear form $\Omega[\cdot,\cdot]$ is finite and independent of the choice of Cauchy surface $\Sigma$. Later we will use $i\Omega[A_1,A^{*}_2]$ as the natural Hermitian inner product on the one-particle space.
 
-## 3.2 Noether theorem for Killing symmetries
+## 2.2 Noether theorem for Killing symmetries
 
-We now discuss the Noether charges associated with the Killing symmetries, which will play a central role in Section 4.
+We now discuss the Noether charges associated with the Killing symmetries, which will play a central role in Section 3.
 
 A Killing symmetry is represented on configuration space by the vector field
 
@@ -105,7 +105,7 @@ $$\begin{align}
 and the asymptotic falloffs
 
 $$\begin{align}
-\xi ^{t} & =\mathcal{O}(r^{0}), & \xi ^{r} & =\mathcal{O}(r)， & \xi ^{\phi} & =\mathcal{O}(r^{0})
+\xi ^{t} & =\mathcal{O}(r^{0}), & \xi ^{r} & =\mathcal{O}(r), & \xi ^{\phi} & =\mathcal{O}(r^{0})
 \end{align}$$
 
 These transformations preserve the asymptotic boundary conditions of the fields:
@@ -153,7 +153,7 @@ In the remainder of this section, we suppress the explicit restriction to $\wide
 
 $$\begin{align}
 X_{\xi}\cdot \Omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left((X_{\xi}\cdot \delta F^{\mu \nu})\delta A_{\nu}-(X_{\xi}\cdot \delta A_{\nu})\delta F^{\mu \nu}\right) \\
- & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu} \frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}[(X_{\xi}\cdot \delta A_{\nu})\delta A_{\rho}-(X_{\xi}\cdot \delta A_{\rho})\delta A_{\nu}] \\
+ & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu} \frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}[(X_{\xi}\cdot \delta A_{\nu})\delta A_{\rho}-(X_{\xi}\cdot \delta A_{\rho})\delta A_{\nu}] \\
  & =-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma } \Bigg[\tau _{\mu}\xi _{\nu}\left(\delta F^{\mu \rho}F^{\nu}_{~\rho}+F^{\mu \rho}\delta F_{\nu}^{~\rho}-\frac{1}{2}g^{\mu \nu}F_{\rho \sigma}\delta F^{\rho \sigma}+\mu ^{2}\delta A^{\mu}A^{\nu}+\mu ^{2}A^{\mu}\delta A^{\nu}-\mu ^{2}g^{\mu \nu}A_{\rho}\delta A^{\rho}\right) \\
  & \qquad +\tau _{\mu}\nabla _{\nu}\left(\delta F^{\mu \nu}\xi ^{\rho}A_{\rho}+F^{\mu \nu}\xi _{\rho}\delta A^{\rho}+F^{\nu \rho}\xi ^{\mu}\delta A^{\rho}-F^{\mu \rho}\xi ^{\nu}\delta A^{\rho}-\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}\delta A_{\rho}A_{\sigma}\xi ^{\sigma}-\frac{k}{4\pi}\varepsilon ^{\mu \nu \rho}A_{\rho}\delta A_{\sigma}\xi ^{\sigma}\right) \\
  & \qquad +\tau ^{\mu}\nabla _{\rho}\xi ^{\rho}F_{\mu \nu}\delta A^{\nu}-\tau _{\mu}F_{\rho \nu}(\nabla ^{\mu}\xi ^{\rho}+\nabla ^{\rho}\xi ^{\mu})\delta A^{\nu}-\tau ^{\mu}F_{\mu \rho}(\nabla ^{\nu}\xi ^{\rho}+\nabla ^{\rho}\xi ^{\nu})\delta A_{\nu}+\tau ^{\mu}\delta F_{\mu \nu}A_{\rho}(\nabla ^{\rho}\xi ^{\nu}+\nabla ^{\nu}\xi _{\rho}) \\
@@ -166,10 +166,8 @@ X_{\xi}\cdot \Omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\l
 In deriving this relation, we use the cyclic identity of the Levi-Civita tensor in three dimensions:
 
 $$\begin{align}
-\xi _{\mu}\varepsilon _{\nu \rho \sigma}+\xi _{\nu}\varepsilon _{\rho \sigma \mu}+\xi _{\rho}\varepsilon _{\sigma \mu \nu}+\xi _{\sigma}\varepsilon _{\mu \nu \rho} & =0
+-\xi _{\mu}\varepsilon _{\nu \rho \sigma}+\xi _{\nu}\varepsilon _{\rho \sigma \mu}-\xi _{\rho}\varepsilon _{\sigma \mu \nu}+\xi _{\sigma}\varepsilon _{\mu \nu \rho} & =0
 \end{align}$$
-
-Since the symplectic form $\Omega|_{\widetilde{\mathcal{P}}}$ is non-degenerate, the physical phase space coincides with the pre-phase space $\widetilde{\mathcal{P}}$.
 
 For later use, it is convenient to record three immediate consequences for the bilinear symplectic pairing $\Omega[\cdot,\cdot]$.
 
@@ -203,4 +201,4 @@ $$\begin{align}
 \Omega[\mathcal{L}_{\xi}A_{1},A_{2}]+\Omega[A_{1},\mathcal{L}_{\xi}A_{2}] & =0
 \end{align}$$
 
-The first statement follows from the same algebraic manipulations used in the Hamiltonian-equation check, while the second and third statements are immediate consequences of the first. These identities provide the bridge between the covariant Hamiltonian formulation of this section and the mode construction of Section 4.
+The first statement follows from the same algebraic manipulations used in the Hamiltonian-equation check, while the second and third statements are immediate consequences of the first. These identities provide the bridge between the covariant Hamiltonian formulation of this section and the mode construction of Section 3.

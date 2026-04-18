@@ -4,11 +4,11 @@ date: 2026-04-13
 summary: ""
 ---
 
-# 6. Application II: The thermal partition function
+# 5. Application II: The thermal partition function
 
 In this section, we construct the coherent-state path integral associated with the oscillator representation derived in Section 4 and use it to compute the thermal partition function of the Proca-Chern-Simons theory on the global AdS$_3$ spacetime. Since the quantum theory has already been diagonalized into a collection of decoupled bosonic oscillators, the coherent-state representation provides the most direct path-integral description.
 
-## 6.1 The coherent-state path integral
+## 5.1 The coherent-state path integral
 
 We first identify the physical Hamiltonian and angular momentum from the zero-mode Noether charges as
 
@@ -77,7 +77,7 @@ S[\boldsymbol{z}_{+},\boldsymbol{z}^{*}_{+},\boldsymbol{z}_{-},\boldsymbol{z}^{*
 
 This action is simply the sum of two independent towers of harmonic oscillators, with frequencies shifted by the Chern-Simons coupling through the parameters $\mu _{\pm}$.
 
-## 6.2 The thermal partition function
+## 5.2 The thermal partition function
 
 We now compute the thermal partition function with angular potential,
 
