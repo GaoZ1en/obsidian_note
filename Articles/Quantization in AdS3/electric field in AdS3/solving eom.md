@@ -69,7 +69,8 @@ hypergeometric function should terminate to avoid divergence at $\displaystyle{r
 
 $$\begin{align}
 \frac{1}{2}(|m_{\pm}|-\omega+1) & =-n,\quad n\in \mathbb{N} \\
-\implies \omega _{n,m} & =1+|m_{\pm}|+2n
+\implies \omega _{n,m} & =1+|m_{\pm}|+2n \\
+ & =1+|m\pm 1|+2n
 \end{align}$$
 
 which agrees with the spectrum obtained in the Proca field case by setting $\displaystyle{\mu\to 0}$. the normalized solutions are
@@ -155,6 +156,11 @@ h^{\phi}_{+,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }(1+r^{2})^{-1}P_{n}^{(
 \end{align}$$
 
 and
+
+$$\begin{align}
+\partial _{t}A^{t}+\partial _{r}A^{r}+\frac{1}{r}A^{r}+\partial _{\phi}A^{\phi} & =0 \\
+\partial _{t}A^{t}+ \frac{1}{r}\partial _{r}(rA^{r})+\partial _{\phi}A^{\phi} & =0
+\end{align}$$
 
 $$\begin{align}
 h^{t}_{-,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{8\pi(1+n)^{2}} }\left[ (r^{2}-2)(1+r^{2})^{-2}P_{n}^{(0,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-4r^{2}(1+r^{2})^{-3}P_{n}^{(0,1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right] \\

@@ -1,13 +1,14 @@
 ---
-
 paper id: 2604.07334v1
 title: "The BEF Symplectic Form: A Lagrangian Perspective"
-authors: [Mohd Ali, Georg Stettinger]
+authors:
+  - Mohd Ali
+  - Georg Stettinger
 publication date: 2026-04-08T17:49
-abstract: |
+abstract: |-
   In 2025, Bernardes, Erler and Firat proposed a novel, elegant expression for the symplectic form on phase space applicable to non-local theories. We show that this BEF symplectic structure can be derived directly from an $L_\infty$-Lagrangian by following the covariant phase space approach. Moreover, we establish a precise relation between the BEF symplectic structure and the Barnich--Brandt symplectic form for general finite-derivative theories. In particular, we prove that for theories with second-order equations of motion, the BEF symplectic structure coincides with the Barnich--Brandt construction, thereby explaining the emergence of the canonical corner term in general relativity within the BEF approach.
     We further argue that the BEF symplectic structure naturally encodes information about generic corner terms and some information about boundary conditions. In addition, we develop a general expression for the Hamiltonian in theories in $L_\infty$-form and present several explicit examples illustrating the construction.
-comments: "35 pages"
+comments: 35 pages
 pdf: "[[Attachments/Assets/The BEF Symplectic Form A Lagrangian Perspective (2604.07334v1).pdf]]"
 url: https://arxiv.org/abs/2604.07334v1
 tags: []
