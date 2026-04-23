@@ -1,5 +1,5 @@
 ---
-title: "case $\displaystyle{m=0}$"
+title: temporal gauge
 date: 2026-04-15
 summary: ""
 ---
@@ -104,7 +104,8 @@ therefore we have the normalizable modes
 
 $$\begin{align}
 A^{t} & =0,\quad A^{r} =0 \\
-A^{\phi} & =Ce^{-i(2n+2)t}(1+r^{2})^{-1}{}_{2}F_{1}\left(-n,n+2; 1; \frac{1}{1+r^{2}}\right)
+A^{\phi} & =Ce^{-i(2n+2)t}(1+r^{2})^{-1}{}_{2}F_{1}\left(-n,n+2; 1; \frac{1}{1+r^{2}}\right) \\
+ & =C' e^{-i(2n+2)t}(1+r^{2})^{-1} P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
 ## case $\displaystyle{m\neq 0}$

@@ -27,7 +27,7 @@ $$\begin{align}
  & =\frac{1}{2}\varepsilon _{\mu}^{~\alpha \nu}F_{\alpha \nu}
 \end{align}$$
 
-introduce Killing vectors in the global $\displaystyle{\mathrm{AdS}_{3}}$ coordinates $\displaystyle{(t,r,\phi)}$ as [[Articles/Quantization in AdS3/linearized gravity in AdS3/eom|eom]], we can decompose the solution space into irreducible representations of $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ algebra. 
+introduce Killing vectors in the global $\displaystyle{\mathrm{AdS}_{3}}$ coordinates $\displaystyle{(t,r,\phi)}$ as [[Articles/Quantization in AdS3/linearized gravity/eom|eom]], we can decompose the solution space into irreducible representations of $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ algebra. 
 
 notice that
 
@@ -121,7 +121,7 @@ $$\begin{align}
 \mathcal{\bar{C}}\ket{\psi} & =\bar{h}(\bar{h}-1)\ket{\psi}=0
 \end{align}$$
 
-which gives $\displaystyle{(h,\bar{h})=(0,0),(0,1),(1,0),(1,1)}$. see [[Articles/Quantization in AdS3/electric field in AdS3/modes|modes]], the solutions corresponding to these representations are as follows:
+which gives $\displaystyle{(h,\bar{h})=(0,0),(0,1),(1,0),(1,1)}$. see [[Articles/Quantization in AdS3/electric field/solving modes/modes|modes]], the solutions corresponding to these representations are as follows:
 
 1. for $\displaystyle{(h,\bar{h})=(0,0)}$, we have $\displaystyle{\psi _{(0,0)}^{\mu}=0}$, which is the trivial vacuum solution.
 2. for $\displaystyle{(h,\bar{h})=(1,0)}$, we have $\displaystyle{\psi _{(1,0)}^{\mu}= \frac{e^{-2it}}{1+r^{2}}\bar{\xi}^{\mu}_{1}}$, and its descendants $\displaystyle{\mathcal{L}_{\xi _{-1}}^{n}\psi _{(1,0)}^{\mu}}$, which are topologically non-trivial vacua solutions

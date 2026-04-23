@@ -1,4 +1,4 @@
-in [[Articles/Quantization in AdS3/Proca in AdS3/ADM decomposition|ADM decomposition]], we have derived an equation about $\displaystyle{A^{t}}$
+in [[Articles/Quantization in AdS3/Proca/ADM decomposition|ADM decomposition]], we have derived an equation about $\displaystyle{A^{t}}$
 
 $$\begin{align}
 -\frac{1}{N}D_{a}\left( \frac{1}{N}D^{a}(N^{2}A^{t}) \right)+\mu ^{2}A^{t} & =\frac{1}{N}D_{a}\left( \frac{1}{N}\partial _{t}A^{a} \right)

@@ -155,13 +155,6 @@ h^{r}_{+,m=0,n} & =-ie^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }r(1+r^{2})^{-1}P_{n}^{(
 h^{\phi}_{+,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-and
-
-$$\begin{align}
-\partial _{t}A^{t}+\partial _{r}A^{r}+\frac{1}{r}A^{r}+\partial _{\phi}A^{\phi} & =0 \\
-\partial _{t}A^{t}+ \frac{1}{r}\partial _{r}(rA^{r})+\partial _{\phi}A^{\phi} & =0
-\end{align}$$
-
 $$\begin{align}
 h^{t}_{-,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{8\pi(1+n)^{2}} }\left[ (r^{2}-2)(1+r^{2})^{-2}P_{n}^{(0,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-4r^{2}(1+r^{2})^{-3}P_{n}^{(0,1)'}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right] \\
 h^{r}_{-,m=0,n} & =-ie^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }r(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
@@ -179,7 +172,52 @@ i\Omega[h_{m=0,n},h_{m=0,n}] & =\begin{pmatrix}
 
 the eigenvalues of this matrix are $\displaystyle{0,2}$, thus there is one null direction, which means these two modes differ by a gauge transformation.
 
+write
+
+$$\begin{align}
+f_{m=0,n}^{\mu} & =\frac{1}{2}(h_{+,m=0,n}^{\mu}+h_{-,m=0,n}^{\mu}) \\
+g_{m=0,n}^{\mu} & =\frac{1}{2}(h_{+,m=0,n}^{\mu}-h_{-,m=0,n}^{\mu}) \\
+\implies f_{m=0,n}^{t} & = e^{-i(2+2n)t}\sqrt{ \frac{1}{8\pi(n+1)^{2}} }\left[(r^{2}-2)(1+r^{2})^{-2}P_{n}^{(0,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-4r^{2}(1+r^{2})^{-3}P_{n}^{(0,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+f_{m=0,n}^{r} & =-ie^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }r(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+f_{m=0,n}^{\phi} & =0 \\
+g_{m=0,n}^{t} & =0 \\
+g_{m=0,n}^{r} & =0 \\
+g_{m=0,n}^{\phi} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+the $\displaystyle{f}$ modes are pure gauge, and the $\displaystyle{g}$ modes are physical modes, which is exactly the same as the normalizable modes in the temporal gauge case. the asymptotic behavior of the $\displaystyle{f}$ modes is
+
+$$\begin{align}
+f_{m=0,n}^{t} & =\mathcal{O}(r^{-2}) \\
+f_{m=0,n}^{r} & =\mathcal{O}(r^{-1}) \\
+f_{m=0,n}^{\phi} & =0
+\end{align}$$
+
+and the asymptotic behavior of the corresponding gauge parameter is
+
+$$\begin{align}
+\Lambda _{m=0,n} & =\int dr f_{m=0,n}^{r} \\
+ & =\mathcal{O}(r^{0})
+\end{align}$$
+
+which are large gauge transformations, thus the $\displaystyle{f}$ modes are actually edge modes. 
+
+
 ## $\displaystyle{h^{\mu}_{+,m\geqslant 1,n+1}}$ and $\displaystyle{h^{\mu}_{-,m\geqslant1,n}}$
+
+we write these two modes explicitly
+
+$$\begin{align}
+h_{+,m\geqslant 1,n+1}^{t} & =e^{-i(2+m+2n)t}e^{im\phi} \sqrt{ \frac{1}{8\pi (1+n)(1+n+m)} }\left[mr^{m}(1+r^{2})^{-(m+2)/2}P_{n+1}^{(0,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m-1}(1+r^{2})^{-(m+4)/2}P_{n+1}^{(0,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+h_{+,m\geqslant 1,1+n}^{r} & =-ie^{-i(2+m+2n)t}e^{im\phi} \sqrt{ \frac{(2+2n+m)^{2}}{8\pi (1+n)(1+n+m)} }r^{m-1}(1+r^{2})^{-m/2}P_{1+n}^{(0,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h_{+,m\geqslant 1,1+n}^{\phi} & =e^{-i(2+m+2n)t}e^{im\phi} \sqrt{ \frac{(2+2n+m)^{2}}{8\pi (1+n)(1+n+m)} }r^{m-2}(1+r^{2})^{-m/2}P_{1+n}^{(0,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
+
+$$\begin{align}
+h^{t}_{-,m\geqslant 1,n} & =e^{-i(2+m+2n)t}e^{im\phi}\sqrt{ \frac{1}{8\pi(1+n)(1+n+m)} }\left[(-mr^{2}-2(m+1))r^{m}(1+r^{2})^{-(m+4)/2}P_{n}^{(0,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m+2}(1+r^{2})^{-(m+6)/2}P_{n}^{(0,m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+h^{r}_{-,m\geqslant 1,n} & =-ie^{-i(2+m+2n)t}e^{im\phi}\sqrt{ \frac{(2+m+2n)^{2}}{8\pi(1+n)(1+n+m)} }r^{m+1}(1+r^{2})^{-(m+2)/2}P_{n}^{(0,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
+h^{\phi}_{-,m\geqslant 1,n} & =-e^{-i(2+m+2n)t}e^{im\phi}\sqrt{ \frac{(2+m+2n)^{2}}{8\pi(1+n)(1+n+m)} }r^{m}(1+r^{2})^{-(m+2)/2}P_{n}^{(0,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
+\end{align}$$
 
 similarly, consider the symplectic matrix between these two modes
 
@@ -191,6 +229,9 @@ i\Omega[h_{m\geqslant 1,n_{1}},h_{m\geqslant 1,n_{2}}] & =\begin{pmatrix}
 \end{align}$$
 
 the eigenvalues of this matrix are $\displaystyle{0,2}$, thus there is one null direction, which means these two modes differ by a gauge transformation.
+
+however, for $\displaystyle{m\neq 0}$, we don't have such simple expression as $\displaystyle{f}$ and $\displaystyle{g}$ modes as in the $\displaystyle{m=0}$ case. but the conclusion is the same, there are still edge modes in these modes, which can be seen from the asymptotic behavior of the gauge parameter.
+
 
 ## $\displaystyle{h^{\mu}_{+,m\leqslant -1,n}}$ and $\displaystyle{h^{\mu}_{-,m\leqslant -1,n+1}}$
 
