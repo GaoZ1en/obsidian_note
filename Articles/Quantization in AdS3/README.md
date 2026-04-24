@@ -6,6 +6,7 @@ Research notes on quantization of gauge fields in AdS3 spacetime, including Proc
 
 | Directory | Description |
 |---|---|
+| `Chern-Simons/` | U(1) Chern-Simons theory: formalism, asymptotic behavior, boundary Lagrangians, and charges |
 | `Proca in AdS3/` | Main research: Proca field quantization, correlation functions, heat kernel method |
 | `Proca-Chern-Simons/` | Proca-Chern-Simons theory: formalism, Dirac fermions, Green functions |
 | `electric field in AdS3/` | Electric field quantization: modes, asymptotic behavior, large gauge transformations |
@@ -18,5 +19,6 @@ Research notes on quantization of gauge fields in AdS3 spacetime, including Proc
 1. Start with `preliminary analysis/` for foundational material on constrained Hamiltonian systems
 2. Move to `Proca in AdS3/` for the main quantization calculations
 3. See `Proca-Chern-Simons/` for the Chern-Simons coupling extension
-4. Consult `electric field in AdS3/` and `linearized gravity in AdS3/` for related topics
-5. See `thermodynamics of scalar in ads/` for thermodynamic quantities and heat kernel results
+4. Consult `Chern-Simons/` for the U(1) Chern-Simons boundary conditions and charge algebra
+5. Consult `electric field in AdS3/` and `linearized gravity in AdS3/` for related topics
+6. See `thermodynamics of scalar in ads/` for thermodynamic quantities and heat kernel results

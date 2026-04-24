@@ -1,0 +1,135 @@
+the action of $\displaystyle{\mathrm{U}(1)}$ gauge Chern-Simons is given by
+
+$$\begin{align}
+S & =\frac{k}{4\pi}\int \mathrm{d}^{3}x\sqrt{ -g } \varepsilon ^{\mu \nu \rho}A_{\mu}\nabla _{\nu}A_{\rho}
+\end{align}$$
+
+take a variation of the action
+
+$$\begin{align}
+\delta S & =\int _{M} \mathrm{d}^{3}x\sqrt{ -g } E^{\rho}\delta A_{\rho}+\theta|_{\Sigma _{f}}-\theta|_{\Sigma _{i}}-\frac{k}{4\pi}\int _{\Gamma}\mathrm{d}^{2}x\sqrt{ -\gamma }n_{\mu}\varepsilon ^{\mu \nu \rho}A_{\nu}\delta A_{\rho} \\
+E^{\rho} & =\frac{k}{2\pi} \varepsilon ^{\mu \nu \rho}\nabla _{\mu}A_{\nu} \\
+\theta & =\frac{k}{4\pi}\int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\varepsilon ^{\mu \nu \rho}A_{\nu}\delta A_{\rho} \\
+\implies \omega & =\frac{k}{4\pi}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\varepsilon ^{\mu \nu \rho}\delta A_{\nu}\wedge \delta A_{\rho}
+\end{align}$$
+
+here terms supported on the $\displaystyle{\Gamma}$ are neglected by suitable choice of the boundary Lagrangian, which will be discussed later.
+
+## modes
+
+we have solved the eoms in [[Articles/Quantization in AdS3/electric field/solving modes/Proca-Chern-Simons|Proca-Chern-Simons]], we have three branches.
+
+1. for $\displaystyle{(h,\bar{h})=(0,0)}$, we have $\displaystyle{\psi _{(0,0)}^{\mu}=0}$, which is the trivial vacuum solution.
+2. we have $\displaystyle{\psi _{(1,0)}^{\mu}=C_{(1,0)} \frac{e^{-2it}}{1+r^{2}}\bar{\xi}_{1}^{\mu}}$, and its descendants $\displaystyle{\mathcal{L}_{\xi _{-1}}^{n}\psi _{(1,0)}^{n}}$, which are topologically non-trivial vacua solutions. 
+	1. the corresponding gauge parameter is $\displaystyle{\Lambda _{(1,0)}=-\frac{iC_{(1,0)}}{2}\frac{e^{-i(t-\phi)}r}{(1+r^{2})^{1/2}}}$ and their desecendants $\displaystyle{\mathcal{L}_{\xi _{-1}}^{n}\Lambda _{(1,0)}}$.
+3. we have $\displaystyle{\psi _{(0,1)}^{\mu}=C_{(1,0)}\frac{e^{-2it}}{1+r^{2}}\xi _{1}^{\mu}}$, and its descendants $\displaystyle{\mathcal{L}_{\bar{\xi} _{-1}}^{n}\psi _{(0,1)}^{\mu}}$, which are topologically non-trivial vacua solutions. 
+	1. the corresponding gauge parameter is $\displaystyle{\Lambda _{(0,1)}=-\frac{iC_{(0,1)}}{2} \frac{e^{-i(t+\phi)}r}{(1+r^{2})^{1/2}}}$, and their desecendants $\displaystyle{\mathcal{L}_{\bar{\xi} _{-1}}^{n}\Lambda _{(0,1)}}$.
+
+the normalization constants are fixed by the symplectic form, which gives
+
+$$\begin{align}
+\omega[A,A^{*}] & = X_{A^{*}}\cdot X_{A}\cdot \omega \\
+ & =-i
+\end{align}$$
+
+where $\displaystyle{X_{A}}$ is defined as
+
+$$\begin{align}
+X_{A} & =\int \mathrm{d}^{3}x\sqrt{ -g } A_{\mu}\frac{\delta}{\delta A_{\mu}}
+\end{align}$$
+
+therefore we have
+
+$$\begin{align}
+\omega[\psi _{(1,0)},\psi _{(1,0)}^{*}] & =\frac{k}{\pi}\int _{0}^{\infty} \mathrm{d}r\int _{0}^{2\pi} \mathrm{d}\phi \sqrt{ \sigma }\tau ^{t}\varepsilon _{tr\phi}\psi _{(1,0)}^{r}\psi _{(1,0)}^{*\phi} \\
+ & = -\frac{ik}{4\pi}|C_{(1,0)}|^{2} \pi\implies C_{(1,0)}=\frac{2}{\sqrt{ k }} \\
+\omega[\psi _{(0,1)},\psi _{(0,1)}^{*}] & =\frac{k}{\pi}\int _{0}^{\infty}\mathrm{d}r\int _{0}^{2\pi}\mathrm{d}\phi \sqrt{ \sigma }\tau ^{t}\varepsilon _{tr\phi}\psi _{(0,1)}^{r}\psi _{(0,1)}^{*\phi} \\
+ & =\frac{ik}{4\pi}|C_{(0,1)}|^{2} \pi \implies C_{(0,1)}=\frac{2}{\sqrt{ -k }}
+\end{align}$$
+
+to ensure the normalizability of the modes, we have to choose the first branch for $\displaystyle{k> 0}$ and the second branch for $\displaystyle{k<0}$.
+
+## boundary Lagrangian and boundary conditions
+
+for simplicity, we denote
+
+$$\begin{align}
+A^{\pm} & =A^{t}\pm A^{\phi}|_{\Gamma} \\
+A^{t} & =\frac{1}{2}(A^{+}+A^{-}) \\
+A^{\phi} & =\frac{1}{2}(A^{+}-A^{-})
+\end{align}$$
+
+notice that for the first branch, we have $\displaystyle{A^{-}=0}$ and for the second branch, we have $\displaystyle{A^{+}=0}$.
+
+$$\begin{align}
+-\frac{k}{4\pi}\int _{\Gamma}\mathrm{d}^{2}x\sqrt{ -\gamma }n_{\mu}\varepsilon ^{\mu \nu \rho}A_{\nu}\delta A_{\rho} & =-\frac{k}{4\pi}\int _{\Gamma}\mathrm{d}^{2}x(A_{+}\delta A_{-}-A_{-}\delta A_{+})
+\end{align}$$
+
+for $\displaystyle{k> 0}$, we have to cancel the term $\displaystyle{A^{+}\delta A^{-}}$ by adding a boundary Lagrangian
+
+$$\begin{align}
+S_{\text{bdy}} & =\frac{k}{4\pi}\int _{\Gamma}\mathrm{d}^{2}xA_{+}A_{-}
+\end{align}$$
+
+thus the whole action becomes
+
+$$\begin{align}
+S_{\text{total}} & =\frac{k}{4\pi}\int _{M} \mathrm{d}^{3}x\sqrt{ -g }\varepsilon ^{\mu \nu \rho}A_{\mu}\nabla _{\nu}A_{\rho}+\frac{k}{4\pi}\int _{\Gamma}\mathrm{d}^{2}xA_{+}A_{-}
+\end{align}$$
+
+similarly, for $\displaystyle{k< 0}$, we have to add a boundary Lagrangian
+
+$$\begin{align}
+S_{\text{bdy}} & =-\frac{k}{4\pi}\int _{\Gamma}\mathrm{d}^{2}xA_{+}A_{-} \\
+\implies S_{\text{total}} & =\frac{k}{4\pi}\int _{M} \mathrm{d}^{3}x\sqrt{ -g }\varepsilon ^{\mu \nu \rho}A_{\mu}\nabla _{\nu}A_{\rho}-\frac{k}{4\pi}\int _{\Gamma}\mathrm{d}^{2}xA_{+}A_{-}
+\end{align}$$
+
+## Noether charges
+
+for simplicity, we only consider the case $\displaystyle{k>0}$, the case $\displaystyle{k<0}$ is similar.
+
+### gauge transformation
+
+consider a gauge transformation generated by $\displaystyle{\Lambda}$ (large gauge transformations that generating $\displaystyle{\mathcal{L}_{\xi _{-1}}^{n}\psi _{(1,0)}^{\mu}}$), we have
+
+$$\begin{align}
+X_{\Lambda} & =\int \mathrm{d}^{3}x\sqrt{ -g } \nabla _{\mu}\Lambda \frac{\delta}{\delta A_{\mu}}
+\end{align}$$
+
+act on the action, we have (the boundary term vanishes since $\displaystyle{A^{-}=0}$ onshell)
+
+$$\begin{align}
+X_{\Lambda}\cdot\delta S_{\text{total}} & =\frac{k}{4\pi}\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\varepsilon ^{\mu \nu \rho}(\nabla_{\mu}\Lambda\nabla _{\nu}A_{\rho}+A_{\mu}\nabla _{\nu}\nabla _{\rho}\Lambda) \\
+ & =-\frac{k}{4\pi}\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\varepsilon ^{\mu \nu \rho}\nabla _{\mu}(\nabla _{\nu}\Lambda A_{\rho}) \\
+ & =\alpha _{\Lambda}|_{\Sigma _{f}-\Sigma _{i}} \\
+\alpha _{\Lambda} & =\frac{k}{4\pi}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\varepsilon ^{\mu \nu \rho}\nabla _{\nu}\Lambda A_{\rho}
+\end{align}$$
+
+terms supported on $\displaystyle{\Gamma}$ are neglected since $\displaystyle{\nabla _{\mu}\Lambda}$ vanishes on $\displaystyle{\Gamma}$.
+
+thus the corresponding Noether charge is given by
+
+$$\begin{align}
+H_{\Lambda} & =X_{\Lambda}\cdot \theta-\alpha _{\Lambda} \\
+ & =\frac{k}{4\pi}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\varepsilon ^{\mu \nu \rho}(A_{\nu}\nabla _{\rho}\Lambda-\nabla _{\nu}\Lambda A_{\rho}) \\
+ & =\frac{k}{2\pi}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\varepsilon ^{\mu \nu \rho}A_{\nu}\nabla _{\rho}\Lambda
+\end{align}$$
+
+denote the trivial gauge parameter by $\displaystyle{\Lambda _{0}=0}$, $\displaystyle{\Lambda _{n}=\mathcal{L}_{\xi _{-1}}^{n}\Lambda _{(1,0)}}$ for $\displaystyle{n> 0}$ and $\displaystyle{\Lambda _{-n}=\Lambda _{n}^{*}}$, the corresponding Noether charges are denoted by $\displaystyle{H_{n}}$ for $\displaystyle{n\in \mathbb{Z}}$, we have
+
+$$\begin{align}
+\left\{H_{m},H_{n}\right\} & =X_{\Lambda _{m}}\cdot X_{\Lambda _{n}}\cdot \omega \\
+ & =X_{\Lambda _{n}}\cdot \delta H_{m} \\
+ & =\frac{k}{2\pi}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\varepsilon ^{\mu \nu \rho}\nabla _{\nu}\Lambda _{n}\nabla _{\rho}\Lambda _{m} \\
+ & =\begin{cases}
+0 & m=n=0 \\
+\delta _{m+n,0} & \text{otherwise}
+ \end{cases}
+\end{align}$$
+
+by rescaling the gauge parameters as $\displaystyle{\tilde{\Lambda}_{n}=\sqrt{ kn }\Lambda _{n}, n> 0}$ and $\displaystyle{\tilde{\Lambda}_{-n}=\tilde{\Lambda}_{n}^{*}}$, we recover the $\displaystyle{\mathrm{U}(1)}$ Kac-Moody algebra
+
+$$\begin{align}
+\left\{\tilde{H}_{m},\tilde{H}_{n}\right\} & = km\delta _{m+n,0}
+\end{align}$$
+
