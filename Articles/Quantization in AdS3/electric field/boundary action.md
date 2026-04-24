@@ -46,6 +46,8 @@ $$\begin{align}
 \mathcal{L}_{\bar{\xi}_{0}}\psi ^{\mu}_{(0,1)} & \propto (\partial _{t}+\partial _{\phi})\psi _{(0,1)}^{\mu}=0
 \end{align}$$
 
+---
+
 thus the boundary term is given by
 
 $$\begin{align}
@@ -55,3 +57,8 @@ $$\begin{align}
 
 in which the first two terms are of order $\displaystyle{\mathcal{O}(r^{0})}$, and the last two terms are of order $\displaystyle{\mathcal{O}(r^{-2})}$.
 
+---
+
+however they are pure gauge and $\displaystyle{F_{\mu \nu}\approx 0}$ onshell, so the boundary term vanishes onshell so we need not to add any boundary Lagrangian for these two branches as well. thus the variational principle is well-defined for all the three branches without adding any boundary Lagrangian onshell.
+
+we cannot normalize the $\displaystyle{(1,0)}$ and $\displaystyle{(0,1)}$ branches. they carry energy and angular momentum by the representation of the isometry group $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$, not by the symplectic form.
