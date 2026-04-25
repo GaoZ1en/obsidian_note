@@ -121,7 +121,7 @@ $$\begin{align}
 \mathcal{\bar{C}}\ket{\psi} & =\bar{h}(\bar{h}-1)\ket{\psi}=0
 \end{align}$$
 
-which gives $\displaystyle{(h,\bar{h})=(0,0),(0,1),(1,0),(1,1)}$. see [[Articles/Quantization in AdS3/electric field/solving modes/modes|modes]], the solutions corresponding to these representations are as follows:
+which gives $\displaystyle{(h,\bar{h})=(0,0),(0,1),(1,0),(1,1)}$. see [[Articles/Quantization in AdS3/electric field/solving modes/highest weight|highest weight]], the solutions corresponding to these representations are as follows:
 
 1. for $\displaystyle{(h,\bar{h})=(0,0)}$, we have $\displaystyle{\psi _{(0,0)}^{\mu}=0}$, which is the trivial vacuum solution.
 2. for $\displaystyle{(h,\bar{h})=(1,0)}$, we have $\displaystyle{\psi _{(1,0)}^{\mu}= \frac{e^{-2it}}{1+r^{2}}\bar{\xi}^{\mu}_{1}}$, and its descendants $\displaystyle{\mathcal{L}_{\xi _{-1}}^{n}\psi _{(1,0)}^{\mu}}$, which are topologically non-trivial vacua solutions
