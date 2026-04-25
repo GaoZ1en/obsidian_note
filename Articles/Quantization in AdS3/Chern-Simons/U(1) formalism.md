@@ -115,7 +115,7 @@ H_{\Lambda} & =X_{\Lambda}\cdot \theta-\alpha _{\Lambda} \\
  & =\frac{k}{2\pi}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\varepsilon ^{\mu \nu \rho}A_{\nu}\nabla _{\rho}\Lambda
 \end{align}$$
 
-denote the trivial gauge parameter by $\displaystyle{\Lambda _{0}=0}$, $\displaystyle{\Lambda _{n}=\mathcal{L}_{\xi _{-1}}^{n}\Lambda _{(1,0)}}$ for $\displaystyle{n> 0}$ and $\displaystyle{\Lambda _{-n}=\Lambda _{n}^{*}}$, the corresponding Noether charges are denoted by $\displaystyle{H_{n}}$ for $\displaystyle{n\in \mathbb{Z}}$, we have
+denote the trivial gauge parameter by $\displaystyle{\Lambda _{0}=0}$, $\displaystyle{\Lambda _{n}=\mathcal{L}_{\xi _{-1}}^{n-1}\Lambda _{(1,0)}}$ for $\displaystyle{n> 0}$ and $\displaystyle{\Lambda _{-n}=\Lambda _{n}^{*}}$, the corresponding Noether charges are denoted by $\displaystyle{H_{n}}$ for $\displaystyle{n\in \mathbb{Z}}$, we have
 
 $$\begin{align}
 \left\{H_{m},H_{n}\right\} & =X_{\Lambda _{m}}\cdot X_{\Lambda _{n}}\cdot \omega \\
