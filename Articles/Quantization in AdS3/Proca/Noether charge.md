@@ -120,7 +120,7 @@ $$\begin{align}
 -\delta H_{\xi_{0}} & =X_{\xi _{0}}\cdot \omega \\
  & =\sum ^{\infty}_{n_{1},n_{2}=0}\sum ^{\infty}_{\bar{n}_{1},\bar{n}_{2}=0}\omega[\mathcal{L}_{\xi _{0}}f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]a_{l,n_{1},\bar{n}_{1}}\delta a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi _{0}}f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]a_{r,n_{1},\bar{n}_{1}}\delta a^{\dagger}_{r,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi _{0}}f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]a^{\dagger}_{l,n_{1},\bar{n}_{1}}\delta a_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi _{0}}f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{r,n_{2},\bar{n}_{2}}]a^{\dagger}_{r,n_{1},\bar{n}_{1}}\delta a_{r,n_{2},\bar{n}_{2}} \\
  & =-\sum ^{\infty}_{n,\bar{n}=0}\left(\frac{\mu}{2}+n\right)(a_{l,n,\bar{n}}\delta a^{\dagger}_{l,n,\bar{n}}+a^{\dagger}_{l,n,\bar{n}}\delta a_{l,n,\bar{n}})+\left(\frac{\mu+2}{2}+n\right)(a_{r,n,\bar{n}}\delta a^{\dagger}_{r,n,\bar{n}}+a^{\dagger}_{r,n,\bar{n}}\delta a_{r,n,\bar{n}}) \\
-\implies H_{\xi_{0}} & =\sum ^{\infty}_{n,\bar{n}=0}\left( \frac{\mu}{2}+n \right)a_{l,n,\bar{n}}a^{\dagger}_{l,\bar{n}}+\left(\frac{\mu+2}{2}+n\right)a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}
+\implies H_{\xi_{0}} & =\sum ^{\infty}_{n,\bar{n}=0}\left( \frac{\mu}{2}+n \right)a_{l,n,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+\left(\frac{\mu+2}{2}+n\right)a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}
 \end{align}$$
 
 $$\begin{align}
@@ -157,7 +157,7 @@ $$\begin{align}
 ---
 
 $$\begin{align}
-H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\left( \tau _{\mu}\xi ^{\nu}F^{\mu}_{~~\rho}F_{\nu}^{~\rho}+\tau _{\nu}\xi ^{\nu}\left(- \frac{1}{4}F_{\rho \sigma}F^{\rho \sigma} -\frac{1}{2}\mu^{2}A_{\rho}A^{\rho} \right)\right)
+H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\left( \tau _{\mu}\xi ^{\nu}F^{\mu}_{~~\rho}F_{\nu}^{~\rho}+\tau _{\mu}\xi _{\nu}\mu ^{2}A^{\mu}A^{\nu}+\tau _{\nu}\xi ^{\nu}\left(- \frac{1}{4}F_{\rho \sigma}F^{\rho \sigma} -\frac{1}{2}\mu^{2}A_{\rho}A^{\rho} \right)\right)
 \end{align}$$
 
 $$\begin{align}
@@ -188,7 +188,7 @@ $$\begin{align}
 H_{\xi} & =\int \mathrm{d}r \mathrm{d}\phi \xi ^{t}\left(\frac{r(1+r^{2})^{2}}{2}(\partial _{r}A^{t})^{2}+\frac{1+r^{2}}{2r}(\partial _{\phi}A^{t})^{2}+\frac{r}{2(1+r^{2})^{2}}(\partial _{t}A^{r})^{2}+\frac{1}{2r(1+r^{2})}(\partial _{\phi}A^{r})^{2}+\frac{r^{3}}{2(1+r^{2})}(\partial _{t}A^{\phi})^{2}+\frac{r^{3}(1+r^{2})}{2}(\partial _{r}A^{\phi})^{2}\right. \\
  & \left.+r\partial _{r}A^{t}\partial _{t}A^{r}+r\partial _{\phi}A^{t}\partial _{t}A^{\phi}-r\partial _{\phi}A^{r}\partial _{r}A^{\phi}+2r^{2}(1+r^{2})A^{t}\partial _{r}A^{t}+\frac{2r^{2}}{1+r^{2}}A^{t}\partial _{t}A^{r}-2A^{\phi}\partial _{\phi}A^{r}+2r^{2}(1+r^{2})A^{\phi}\partial _{r}A^{\phi}+2r^{3}(A^{t})^{2}+2r(1+r^{2})(A^{\phi})^{2}\right) \\
  & +\xi ^{r}\left(-\frac{1}{r(1+r^{2})}\partial _{\phi}A^{t}\partial _{\phi}A^{r}+r\partial _{\phi}A^{t}\partial _{r}A^{\phi}-\frac{r}{(1+r^{2})^{2}} \partial _{\phi}A^{r}\partial _{t}A^{\phi}+\frac{r^{3}}{1+r^{2}}\partial _{t}A^{\phi}\partial _{r}A^{\phi}+\frac{2r^{2}}{1+r^{2}}A^{\phi}\partial _{t}A^{\phi}+2A^{\phi}\partial _{\phi}A^{t}\right) \\
- & +\xi ^{\phi}\left(r\partial _{r}A^{t}\partial _{\phi}A^{r}-r^{3}(1+r^{2})\partial _{r}A^{t}\partial _{r}A^{\phi}+\frac{r}{(1+r^{2})^{2}}\partial _{t}A^{r}\partial _{\phi}A^{r}-\frac{r^{3}}{1+r^{2}}\partial _{t}A^{r}\partial _{r}A^{\phi}+\frac{2r^{2}}{1+r^{2}}A^{t}\partial _{\phi}A^{r}-2r^{4}A^{t}\partial _{r}A^{\phi}-\frac{2r^{2}}{1+r^{2}}A^{\phi}\partial _{t}A^{r}-2r^{2}(1+r^{2})A^{\phi}\partial _{r}A^{t}-2r^{3}A^{t}A^{\phi}\right)
+ & +\xi ^{\phi}\left(r\partial _{r}A^{t}\partial _{\phi}A^{r}-r^{3}(1+r^{2})\partial _{r}A^{t}\partial _{r}A^{\phi}+\frac{r}{(1+r^{2})^{2}}\partial _{t}A^{r}\partial _{\phi}A^{r}-\frac{r^{3}}{1+r^{2}}\partial _{t}A^{r}\partial _{r}A^{\phi}+\frac{2r^{2}}{1+r^{2}}A^{t}\partial _{\phi}A^{r}-2r^{4}A^{t}\partial _{r}A^{\phi}-\frac{2r^{2}}{1+r^{2}}A^{\phi}\partial _{t}A^{r}-2r^{2}(1+r^{2})A^{\phi}\partial _{r}A^{t}-4r^{3}A^{t}A^{\phi}\right)
 \end{align}$$
 
 ---
