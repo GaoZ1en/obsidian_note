@@ -253,7 +253,7 @@ $$\tag{1.25}
 \left\{B_{m},B_{n}\right\} & =+\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m-n} \\
 \left\{B_{m},C_{n}\right\} & =-\frac{1}{2}(m-n)B_{m+n}+\frac{1}{2}(m+n)B_{m-n} \\
 \left\{B_{m},D_{n}\right\} & =+\frac{1}{2}(m-n)A_{m+n}-\frac{1}{2}(m+n)A_{m-n} \\
-\left\{C_{m},C_{n}\right\} & =-\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m+n} \\
+\left\{C_{m},C_{n}\right\} & =-\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m-n} \\
 \left\{C_{m},D_{n}\right\} & =-\frac{1}{2}(m-n)D_{m+n}+\frac{1}{2}(m+n)D_{m-n} \\
 \left\{D_{m},D_{n}\right\} & =-\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m-n}
 \end{align}
@@ -269,7 +269,7 @@ $$\tag{1.26}
 \left\{H_{A_{m}}',H_{D_{n}}'\right\} & =\frac{1}{2}(m-n)H_{B_{m+n}}+\frac{1}{2}(m+n)H_{B_{m-n}} \\
 \left\{H_{B_{m}}',H_{B_{n}}'\right\} & =\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}} \\
 \left\{H_{B_{m}}',H_{C_{n}}'\right\} & =\frac{1}{2}(m-n)H_{B_{m+n}}+\frac{1}{2}(m+n)H_{B_{m-n}} \\
-\left\{H_{B_{m}}',H_{D_{n}}'\right\} & =\frac{1}{2}(m-n)H_{A_{m+n}}+\frac{1}{2}(m+n)H_{A_{m-n}}-\frac{4\pi}{\gamma ^{2}}(\delta _{m,n}-\delta _{m,-n}) \\
+\left\{H_{B_{m}}',H_{D_{n}}'\right\} & =\frac{1}{2}(m-n)H_{A_{m+n}}+\frac{1}{2}(m+n)H_{A_{m-n}}-\frac{4\pi}{\gamma ^{2}}m^{3}(\delta _{m,n}-\delta _{m,-n}) \\
 \left\{H_{C_{m}}',H_{C_{n}}'\right\} & =\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}} \\
 \left\{H_{C_{m}}',H_{D_{n}}'\right\} & =\frac{1}{2}(m-n)H_{D_{m+n}}+\frac{1}{2}(m+n)H_{D_{m-n}} \\
 \left\{H_{D_{m}}',H_{D_{n}}'\right\} & =\frac{1}{2}(m-n)H_{C_{m+n}}+\frac{1}{2}(m+n)H_{C_{m-n}} 
@@ -289,8 +289,8 @@ then we have
 
 $$\tag{1.28}
 \begin{align}
-\left\{L_{m},L_{n}\right\} & =-i(m-n)L_{m+n}+\frac{4\pi}{\gamma ^{2}}m(m^{2}-1)\delta _{m,-n} \\
-\left\{\bar{L}_{m},\bar{L}_{n}\right\} & =-i(m-n)\bar{L}_{m+n}+\frac{4\pi}{\gamma ^{2}}m(m^{2}-1)\delta _{m,-n} \\
+\left\{L_{m},L_{n}\right\} & =-i(m-n)L_{m+n}-\frac{4\pi i}{\gamma ^{2}}m(m^{2}-1)\delta _{m,-n} \\
+\left\{\bar{L}_{m},\bar{L}_{n}\right\} & =-i(m-n)\bar{L}_{m+n}-\frac{4\pi i}{\gamma ^{2}}m(m^{2}-1)\delta _{m,-n} \\
 \left\{L_{m},\bar{L}_{n}\right\} & =0
 \end{align}
 $$
@@ -329,7 +329,7 @@ under this transformation, we have
 
 $$\tag{2.4}
 \begin{align}
-\tilde{\Gamma}^{\rho}_{~\mu \nu} & =\Gamma ^{\rho}_{~\mu \nu}+\delta ^{\rho}_{\mu}\nabla _{\nu}\sigma+\delta ^{\rho}_{\nu}\nabla _{\mu}\sigma+g_{\mu \nu}\nabla ^{\rho}\sigma \\
+\tilde{\Gamma}^{\rho}_{~\mu \nu} & =\Gamma ^{\rho}_{~\mu \nu}+\delta ^{\rho}_{\mu}\nabla _{\nu}\sigma+\delta ^{\rho}_{\nu}\nabla _{\mu}\sigma-g_{\mu \nu}\nabla ^{\rho}\sigma \\
 \tilde{R}_{\mu \nu \rho \sigma} & =R_{\mu \nu \rho \sigma}+g_{\mu \rho}\nabla _{\nu}\nabla _{\sigma}\sigma-g_{\nu \rho}\nabla _{\mu}\nabla _{\sigma}\sigma+g_{\nu \sigma}\nabla _{\mu}\nabla _{\rho}\sigma-g_{\mu \sigma}\nabla _{\nu}\nabla _{\rho}\sigma \\
  & +g_{\mu \rho}\nabla _{\nu}\sigma \nabla _{\sigma}\sigma-g_{\nu \rho}\nabla _{\mu}\sigma \nabla _{\sigma}\sigma+g_{\nu \sigma}\nabla _{\mu}\sigma \nabla _{\rho}\sigma-g_{\mu \sigma}\nabla _{\nu}\sigma \nabla _{\rho}\sigma \\
  & -(g_{\mu \rho}g_{\nu \sigma}-g_{\mu \sigma}g_{\nu \rho})\nabla _{\lambda}\sigma \nabla ^{\lambda}\sigma \\
@@ -337,7 +337,7 @@ $$\tag{2.4}
 \tilde{R} & =e^{-2\sigma}(R-2(d-1)\nabla ^{2}\sigma-(d-1)(d-2)\nabla _{\mu}\sigma \nabla ^{\mu}\sigma) \\
 \tilde{\nabla}_{\mu}\tilde{\phi} & =e^{-(d-2)\sigma/2}\left( \nabla _{\mu}\phi-\frac{d-2}{2}\nabla _{\mu}\sigma \phi \right) \\
 \tilde{\nabla}_{\mu}\tilde{\nabla}_{\nu}\tilde{\phi} & =e^{-(d-2)\sigma/2}\left( \nabla _{\mu}\nabla _{\nu}\phi-\frac{d}{2}\nabla _{\mu}\sigma \nabla _{\nu}\phi-\frac{d}{2}\nabla _{\mu}\phi \nabla _{\nu}\sigma+g_{\mu \nu}\nabla ^{\rho}\sigma \nabla _{\rho}\phi \right. \\
- &\left.  \frac{1}{4}(d-2)(d+2)\nabla _{\mu}\sigma \nabla _{\nu}\sigma \phi-\frac{d-2}{2}g_{\mu \nu}\nabla _{\rho}\sigma \sigma ^{\rho}\sigma \phi-\frac{d-2}{2}\nabla _{\mu}\nabla _{\nu}\sigma \phi \right) \\
+ &\left. +\frac{1}{4}(d-2)(d+2)\nabla _{\mu}\sigma \nabla _{\nu}\sigma \phi-\frac{d-2}{2}g_{\mu \nu}\nabla _{\rho}\sigma \nabla ^{\rho}\sigma \phi-\frac{d-2}{2}\nabla _{\mu}\nabla _{\nu}\sigma \phi \right) \\
 \tilde{\nabla}^{2}\tilde{\phi} & =e^{-(d+2)\sigma/2}\left( \nabla ^{2}\phi-\frac{d-2}{2}\nabla ^{2}\sigma \phi-\frac{1}{4}(d-2)^{2}\nabla _{\mu}\sigma \nabla ^{\mu}\sigma \phi \right)
 \end{align}
 $$
@@ -443,7 +443,7 @@ H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\left( \xi ^{\nu}\nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}\xi _{\mu}\nabla _{\nu}\phi \nabla ^{\nu}\phi-\frac{d-2}{8(d-1)}R\xi _{\mu}\phi ^{2}\right. \\
  & \left.-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}\phi ^{2}+\frac{d-2}{4d}\nabla _{\mu}\phi ^{2}\nabla _{\nu}\xi ^{\nu}\right) \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\phi \nabla ^{\rho}\phi +\frac{d-2}{4(d-1)}G_{\mu \nu}\phi ^{2}\right. \\
- & \left.-\frac{d-2}{4d}\nabla _{\mu}\nabla _{\nu}\phi ^{2}+\frac{d-2}{4d}g_{\mu \nu}\nabla ^{2}\phi ^{2}\right) \\
+ & \left.-\frac{d-2}{4(d-1)}\nabla _{\mu}\nabla _{\nu}\phi ^{2}+\frac{d-2}{4(d-1)}g_{\mu \nu}\nabla ^{2}\phi ^{2}\right) \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}
 \end{align}
 $$
@@ -473,7 +473,7 @@ the variation of the action is
 
 $$\tag{3.2}
 \begin{align}
-\delta S & =\int _{M}\varepsilon\left( \nabla ^{2}\phi-\frac{1}{\gamma}R-\frac{\mu}{2\gamma ^{2}}e^{\gamma \phi} \right)+\int _{\Sigma _{f}-\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\nabla _{\mu}\phi \delta \phi
+\delta S & =\int _{M}\varepsilon\left( \nabla ^{2}\phi-\frac{1}{\gamma}R-\frac{\mu}{2\gamma}e^{\gamma \phi} \right)\delta \phi+\int _{\Sigma _{f}-\Sigma _{i}}\varepsilon _{\Sigma}\tau ^{\mu}\nabla _{\mu}\phi \delta \phi
 \end{align}
 $$
 
@@ -554,7 +554,7 @@ finally we consider the Poisson bracket between Noether charges. we have
 $$\tag{3.11}
 \begin{align}
 \left\{H_{\xi},H_{\zeta}\right\} & = X_{\zeta}\cdot \delta H_{\xi}\\
- & =H_{\left\{\xi,\zeta\right\}}-\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(R(\xi _{\mu}\nabla _{\nu}\zeta ^{\nu}-\zeta _{\mu}\nabla _{\nu}\xi ^{\nu})+\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}\nabla _{\rho}\zeta ^{\rho}-\nabla _{\mu}\nabla _{\nu}\zeta ^{\rho}\nabla _{\nu}\xi ^{\rho})
+ & =H_{\left\{\xi,\zeta\right\}}-\frac{1}{\gamma ^{2}}\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(R(\xi _{\mu}\nabla _{\nu}\zeta ^{\nu}-\zeta _{\mu}\nabla _{\nu}\xi ^{\nu})+\nabla _{\mu}\nabla _{\nu}\xi ^{\nu}\nabla _{\rho}\zeta ^{\rho}-\nabla _{\mu}\nabla _{\nu}\zeta ^{\nu}\nabla _{\rho}\xi ^{\rho})
 \end{align}
 $$
 
@@ -567,7 +567,7 @@ consider a JT gravity in asymptotic $\displaystyle{\mathrm{AdS}_{2}}$ with Lagra
 $$\tag{4.1}
 \begin{align}
 L & =\Phi\left( R+2 \right)\varepsilon \\
-\ell |_{\Gamma} & =\Phi(K-1)\varepsilon
+\ell |_{\Gamma} & =2\Phi(K-1)\varepsilon
 \end{align}
 $$
 

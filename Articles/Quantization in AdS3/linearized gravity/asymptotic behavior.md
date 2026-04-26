@@ -51,16 +51,16 @@ and
 
 $$\begin{array}{c|cccccc}
 \mathcal{O}(r^{n}) & h_{t}^{~t} & h_{t}^{~\phi} & h_{\phi}^{~t} & h_{\phi}^{~\phi} & h_{t}^{~r} & h_{\phi}^{~r} & h_{r}^{~t} & h_{r}^{~\phi} & h_{r}^{~r} \\
-\hline \nabla ^{(0)}_{t} & -2 & -2 & -2 & -2 & -1 & -1 & -5 & -5 & -2 \\
+\hline \nabla ^{(0)}_{t} & -2 & -2 & -2 & -2 & 1 & 1 & -3 & -3 & -2 \\
 \nabla ^{(0)}_{r} & -3 & -3 & -3 & -3 & -2 & -2 & -6 & -6 & -3 \\
-\nabla ^{(0)}_{\phi} & -2 & -2 & -2 & -2 & -1 & -1 & -5 & -5 & -2
+\nabla ^{(0)}_{\phi} & -2 & -2 & -2 & -2 & 1 & 1 & -3 & -3 & -2
 \end{array}$$
 
 $$\begin{array}{c|cccccc}
 \mathcal{O}(r^{n}) & h^{t}_{~t} & h^{t}_{~\phi} & h^{\phi}_{~t} & h^{\phi}_{~\phi} & h^{r}_{~t} & h^{r}_{~\phi} & h^{t}_{~r} & h^{\phi}_{~r} & h^{r}_{~r} \\
-\hline \nabla ^{(0)}_{t} & -2 & -2 & -2 & -2 & -1 & -1 & -5 & -5 & -2 \\
+\hline \nabla ^{(0)}_{t} & -2 & -2 & -2 & -2 & 1 & 1 & -3 & -3 & -2 \\
 \nabla ^{(0)}_{r} & -3 & -3 & -3 & -3 & -2 & -2 & -6 & -6 & -3 \\
-\nabla ^{(0)}_{\phi} & -2 & -2 & -2 & -2 & -1 & -1 & -5 & -5 & -2
+\nabla ^{(0)}_{\phi} & -2 & -2 & -2 & -2 & 1 & 1 & -3 & -3 & -2
 \end{array}$$
 
 $$\begin{array}{c|cccccc}
@@ -121,7 +121,7 @@ $$\begin{align}
 $$\begin{array}{c|cccccc}
  & h_{tt} & h_{t\phi} & h_{\phi \phi} & h_{tr} & h_{r\phi} & h_{rr} \\
 \hline \nabla ^{(0)}_{t} & \partial _{t}h_{tt}-2r^{3}h_{tr}+\mathcal{O}(r^{-2}) & \partial _{t}h_{t\phi}-r^{3}h_{r\phi} & \partial _{t}h_{\phi \phi} & -r^{3}h_{rr}-\frac{1}{r}h_{tt}+\mathcal{O}(r^{-3}) & -\frac{1}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & \partial _{t}h_{rr}-\frac{2}{r}h_{tr}+\mathcal{O}(r^{-6}) \\
-\nabla ^{(0)}_{r} & \partial _{r}h_{rr}-\frac{2}{r}h_{tt}+\mathcal{O}(r^{-3}) & \partial _{r}h_{t\phi}-\frac{2}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & \partial _{r}h_{\phi \phi}-\frac{2}{r}h_{\phi \phi} & \partial _{r}h_{tr}+\mathcal{O}(r^{-6}) & \partial _{r}h_{r\phi}+\mathcal{O}(r^{-6}) & \partial _{r}h_{rr}+\frac{2}{r}h_{rr}+\mathcal{O}(r^{-7}) \\
+\nabla ^{(0)}_{r} & \partial _{r}h_{tt}-\frac{2}{r}h_{tt}+\mathcal{O}(r^{-3}) & \partial _{r}h_{t\phi}-\frac{2}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & \partial _{r}h_{\phi \phi}-\frac{2}{r}h_{\phi \phi} & \partial _{r}h_{tr}+\mathcal{O}(r^{-6}) & \partial _{r}h_{r\phi}+\mathcal{O}(r^{-6}) & \partial _{r}h_{rr}+\frac{2}{r}h_{rr}+\mathcal{O}(r^{-7}) \\
 \nabla ^{(0)}_{\phi} & \partial _{\phi}h_{tt} & \partial _{\phi}h_{t\phi}+r^{3}h_{tr}+\mathcal{O}(r^{-2}) & \partial _{\phi}h_{\phi \phi}+2r^{3}h_{r\phi}+\mathcal{O}(r^{-2}) & -\frac{1}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & -\frac{1}{r}h_{\phi \phi}+r^{3}h_{rr}+\mathcal{O}(r^{-3}) & \partial _{\phi}h_{rr}-\frac{2}{r}h_{r\phi}
 \end{array}$$
 
@@ -157,7 +157,7 @@ $$\begin{align}
 $$\begin{array}{c|cccccc}
  & h_{tt} & h_{t\phi} & h_{\phi \phi} & h_{tr} & h_{r\phi} & h_{rr} \\
 \hline \nabla ^{(0)}_{t} & \partial _{t}h_{tt}-2r^{3}h_{tr}+\mathcal{O}(r^{-2}) & \partial _{t}h_{t\phi}-r^{3}h_{r\phi} & \partial _{t}h_{\phi \phi} & -r^{3}h_{rr}-\frac{1}{r}h_{tt}+\mathcal{O}(r^{-3}) & -\frac{1}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & \partial _{t}h_{rr}-\frac{2}{r}h_{tr}+\mathcal{O}(r^{-6}) \\
-\nabla ^{(0)}_{r} & \partial _{r}h_{rr}-\frac{2}{r}h_{tt}+\mathcal{O}(r^{-3}) & \partial _{r}h_{t\phi}-\frac{2}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & \partial _{r}h_{\phi \phi}-\frac{2}{r}h_{\phi \phi} & \partial _{r}h_{tr}+\mathcal{O}(r^{-6}) & \partial _{r}h_{r\phi}+\mathcal{O}(r^{-6}) & \partial _{r}h_{rr}+\frac{2}{r}h_{rr}+\mathcal{O}(r^{-7}) \\
+\nabla ^{(0)}_{r} & \partial _{r}h_{tt}-\frac{2}{r}h_{tt}+\mathcal{O}(r^{-3}) & \partial _{r}h_{t\phi}-\frac{2}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & \partial _{r}h_{\phi \phi}-\frac{2}{r}h_{\phi \phi} & \partial _{r}h_{tr}+\mathcal{O}(r^{-6}) & \partial _{r}h_{r\phi}+\mathcal{O}(r^{-6}) & \partial _{r}h_{rr}+\frac{2}{r}h_{rr}+\mathcal{O}(r^{-7}) \\
 \nabla ^{(0)}_{\phi} & \partial _{\phi}h_{tt} & \partial _{\phi}h_{t\phi}+r^{3}h_{tr}+\mathcal{O}(r^{-2}) & \partial _{\phi}h_{\phi \phi}+2r^{3}h_{r\phi}+\mathcal{O}(r^{-2}) & -\frac{1}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & -\frac{1}{r}h_{\phi \phi}+r^{3}h_{rr}+\mathcal{O}(r^{-3}) & \partial _{\phi}h_{rr}-\frac{2}{r}h_{r\phi}
 \end{array}$$
 
@@ -189,3 +189,5 @@ $$\begin{array}{c|cccccc}
 & g^{(0)}_{tt} & g^{(0)}_{rr} & g^{(0)}_{\phi \phi} & g^{(0)tt} & g^{(0)rr} & g^{(0)\phi \phi} \\
 \hline & -r^{2}-1 & \frac{1}{r^{2}} -\frac{1}{r^{4}}+\mathcal{O}(r^{-6}) & r^{2} & -\frac{1}{r^{2}}+\frac{1}{r^{4}}+\mathcal{O}(r^{-6}) & r^{2}+1 & \frac{1}{r^{2}}
 \end{array}$$
+
+---

@@ -150,7 +150,32 @@ $$
 
 ### On-shell generating function
 
-Using the equation of motion, the source-dependent part of the on-shell action is
+Using the equation of motion, the source-dependent part of the on-shell action is obtained as follows.
+
+The source term has the schematic form $-\int_M\epsilon_M J c z^{-\Delta}\phi$. With
+
+$$
+J(k,z)=j(k)z_0^{d+1}\delta(z-z_0),
+$$
+
+the volume factor $\sqrt g=z^{-d-1}$ cancels $z_0^{d+1}$ at the support of the delta function, so
+
+$$
+\int_M\epsilon_M J c z^{-\Delta}\phi
+=
+\int\frac{d^d k}{(2\pi)^d}
+j(k)c z_0^{-\Delta}\phi(-k,z_0).
+$$
+
+For a quadratic Euclidean action $S_E=\frac{1}{2}\phi K\phi-J_{\mathrm{eff}}\phi$, the classical solution obeys $K\phi_{\mathrm{cl}}=J_{\mathrm{eff}}$ and
+
+$$
+S_{E,\mathrm{cl}}
+=
+-\frac{1}{2}J_{\mathrm{eff}}K^{-1}J_{\mathrm{eff}}.
+$$
+
+Therefore $\ln Z=-S_{E,\mathrm{cl}}$ gives
 
 $$
 \ln Z[j]\simeq -S_{E,\mathrm{cl}}[j]
@@ -197,7 +222,9 @@ K_\nu(x)I_\nu(x)
 +O(x^{2\nu+2}).
 $$
 
-The first terms give divergent or finite contact terms. The finite nonlocal term is
+The first terms give divergent or finite contact terms. Here "contact terms" means terms analytic in $k^2$. Their Fourier transforms are derivatives of delta functions supported at coincident boundary points. They are removed, or shifted by finite local counterterms, in the holographic renormalization scheme. The nonanalytic term proportional to $k^{2\nu}$ is the scheme-independent part for non-integer $\nu$.
+
+The finite nonlocal term is
 
 $$
 \langle O(k)O(-k)\rangle_{\mathrm{nonlocal}}
@@ -258,7 +285,7 @@ $$
 \left(\frac{k}{2}\right)^{2n}\log k
 $$
 
-up to the same overall source-coupling convention. In position space the renormalized distribution is still the conformal two-point function
+This formula is the finite logarithmic remainder obtained by analytic continuation from non-integer $\nu$. The pole in $\Gamma(-\nu)$ multiplies a local $k^{2n}$ term and is absorbed by counterterms; the scale-dependent remainder is $k^{2n}\log k$. In position space the renormalized distribution is still the conformal two-point function
 
 $$
 \langle O(x)O(0)\rangle
@@ -293,6 +320,30 @@ z^{\Delta_-}\alpha(k)
 $$
 
 Standard quantization treats $\alpha$ as the source and $\beta$ as the response. Alternate quantization treats $\beta$ as the source and gives an operator of dimension $\Delta_-$.
+
+Equivalently, after subtracting local terms, the alternate-quantization quadratic kernel is the inverse of the standard one, up to the sign convention of the Legendre transform:
+
+$$
+\mathcal G_-(k)
+\simeq
+-\mathcal G_+(k)^{-1}.
+$$
+
+For the normalization $c=\sqrt{2\nu}$ used above,
+
+$$
+\mathcal G_+(k)
+=
+\frac{\Gamma(-\nu)}{\Gamma(\nu)}
+\left(\frac{k}{2}\right)^{2\nu},
+\qquad
+\mathcal G_-(k)
+\propto
+\frac{\Gamma(\nu)}{\Gamma(-\nu)}
+\left(\frac{k}{2}\right)^{-2\nu}.
+$$
+
+The power $k^{-2\nu}$ Fourier transforms to a position-space two-point function with dimension $\Delta_-=d/2-\nu$.
 
 ### Interaction vertex
 
@@ -584,7 +635,37 @@ C_J\frac{I_{ij}(x)}{|x|^{2(d-1)}},
 I_{ij}(x)=\delta_{ij}-2\frac{x_ix_j}{x^2}.
 $$
 
-Here $C_J$ is the position-space normalization corresponding to $C_J^{(k)}$.
+Here $C_J$ is the position-space normalization corresponding to $C_J^{(k)}$. With the Fourier convention used here,
+
+$$
+\int\frac{d^d k}{(2\pi)^d}
+e^{ik\cdot x}
+\pi_{ij}(k)k^{d-2}
+=
+\mathcal A_J
+\frac{I_{ij}(x)}{|x|^{2(d-1)}},
+$$
+
+where analytic continuation gives
+
+$$
+\mathcal A_J
+=
+\frac{2^{d-2}(d-1)\Gamma(d-2)}
+{\pi^{d/2}\Gamma(1-d/2)}.
+$$
+
+Thus $C_J=C_J^{(k)}\mathcal A_J$, namely
+
+$$
+C_J
+=
+c^2g_{d+1}^2
+\frac{(d-1)\Gamma(d-2)}
+{2\pi^{d/2}\Gamma(d/2)},
+$$
+
+up to the same overall sign convention in the Euclidean source term.
 
 ### Even-dimensional boundary
 
@@ -600,7 +681,7 @@ K_\nu(x)I_\nu(x)
 +\cdots.
 $$
 
-After removing local counterterms, the momentum-space correlator is
+Since $\log(kz_0)=\log z_0+\log k$, the $\log z_0$ term is local in momentum space and is absorbed by a logarithmic counterterm. After removing local counterterms, the momentum-space correlator is
 
 $$
 \langle J_i(k)J_j(-k)\rangle_{\mathrm{nonlocal}}
@@ -699,6 +780,14 @@ k^{d-2}\log k, & d \text{ even}.
 $$
 
 The derivative factors give an additional two powers of momentum relative to the direct current correlator. Thus this operator has a different tensor structure and scaling behavior from the standard conserved current.
+
+For example, take a frame with $k=(K,0,\ldots,0)$ and decompose a constant $\xi$ into longitudinal and transverse parts. The transverse projector is $\pi_{mn}=\mathrm{diag}(0,1,\ldots,1)$ in this frame, and the tensor above reduces to a component proportional to
+
+$$
+K^2\xi_\perp^2\,\delta_i{}^1\delta_j{}^1\,\mathcal K(K).
+$$
+
+This is not proportional to the conserved-current tensor $I_{ij}(x)$ after Fourier transformation; it is the two-point function of the projected field strength operator.
 
 ### Holographic rule for Maxwell fields
 
@@ -909,6 +998,32 @@ $$
 \mathcal N_g=\frac{1}{32\pi G_N}.
 $$
 
+The factor of two comes from writing the quadratic action in the canonical form
+
+$$
+S_E^{(2)}
+=
+\frac{1}{2}\mathcal N_g
+\int dz\frac{d^d k}{(2\pi)^d}
+z^{1-d}
+\left[
+\partial_z H_{ij}(k,z)\partial_z H_{ij}(-k,z)
++k^2H_{ij}(k,z)H_{ij}(-k,z)
+\right].
+$$
+
+Varying this action gives the Sturm-Liouville operator
+
+$$
+\mathcal N_g
+\left[
+z^{d+1}\partial_z\left(z^{1-d}\partial_z\right)
+-z^2k^2
+\right],
+$$
+
+so the inverse propagator carries the normalization $\mathcal N_g$ and the Green function carries $\mathcal N_g^{-1}=32\pi G_N$.
+
 The TT bulk propagator is therefore
 
 $$
@@ -1008,6 +1123,12 @@ $$
 \frac{\Gamma(-d/2)}{\Gamma(d/2)}.
 $$
 
+The extrapolate factors exactly cancel the radial powers in the nonlocal term:
+
+$$
+z_0^{-2d}\cdot z_0^d\cdot z_0^d=z_0^0.
+$$
+
 For even $d$, replace the nonlocal factor by the logarithmic continuation
 
 $$
@@ -1092,7 +1213,13 @@ C_T
 \frac{L^{d-1}}{8\pi G_N}.
 $$
 
-In the pre-boundary extrapolate convention above, this same coefficient is obtained by choosing $c$ so that the finite nonlocal part of the kernel matches the standard stress-tensor normalization.
+In the pre-boundary extrapolate convention above, this same coefficient is obtained by choosing $c$ so that the finite nonlocal part of the kernel matches the standard stress-tensor normalization. Equivalently, the momentum-space coefficient
+
+$$
+\mathcal C_g\left(\frac{k}{2}\right)^d
+$$
+
+is first Fourier transformed together with the TT projector to the conformal tensor structure $\mathcal I_{ij,kl}(x)/|x|^{2d}$; the remaining scalar coefficient is then identified with $C_T$. This note keeps $c$ explicit until that final matching.
 
 ### Holographic rule for linear gravity
 

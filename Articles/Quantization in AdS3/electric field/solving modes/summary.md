@@ -20,6 +20,11 @@ A^{r} & =\mathcal{O}(r^{-1}\ln r) \\
 A^{\phi} & =\mathcal{O}(r^{-2})
 \end{align}$$
 
+$$\begin{align}
+A_{r} & =\mathcal{O}(r^{-3}\ln r) \\
+\Lambda & =\mathcal{O}(r^{-2}\ln r)
+\end{align}$$
+
 here the eom is
 
 $$\begin{align}

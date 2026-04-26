@@ -79,8 +79,8 @@ R & =R^{(0)}-h^{\mu \nu}R^{(0)}_{\mu \nu}+\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}
 \end{align}$$
 
 $$\begin{align}
- & =-6+2h+5h^{\mu \nu}h_{\mu \nu}+h^{2}+\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu}-\nabla ^{(0)2}h+h^{\mu \nu}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h-\frac{1}{4}\nabla ^{(0)}_{\mu}h\nabla ^{(0)\mu}h \\
- & -\nabla ^{(0)}_{\mu}h^{\mu \nu}\nabla ^{(0)\rho}h_{\nu \rho}+\nabla ^{(0)\mu}h\nabla ^{(0)}_{\nu}h_{\mu}^{~\nu}-2h^{\mu \nu}\nabla ^{(0)\rho}\nabla ^{(0)}_{\nu}h_{\mu \rho}+h^{\mu \nu}\nabla ^{(0)2}h_{\mu \nu} \\
+ & =-6+2h-2h^{\mu \nu}h_{\mu \nu}+\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu}-\nabla ^{(0)2}h+h^{\mu \nu}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h-\frac{1}{4}\nabla ^{(0)}_{\mu}h\nabla ^{(0)\mu}h \\
+ & -\nabla ^{(0)}_{\mu}h^{\mu \nu}\nabla ^{(0)\rho}h_{\nu \rho}+\nabla ^{(0)\mu}h\nabla ^{(0)}_{\nu}h_{\mu}^{~\nu}-h^{\mu \nu}\nabla ^{(0)}_{\nu}\nabla ^{(0)\rho}h_{\mu \rho}-h^{\mu \nu}\nabla ^{(0)\rho}\nabla ^{(0)}_{\nu}h_{\mu \rho}+h^{\mu \nu}\nabla ^{(0)2}h_{\mu \nu} \\
  & -\frac{1}{2}\nabla ^{(0)}_{\nu}h_{\mu \rho}\nabla ^{(0)\rho}h^{\mu \nu}+\frac{3}{4}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}
 \end{align}$$
 
@@ -97,100 +97,20 @@ the bulk Lagrangian
 $$\begin{align}
 L & =\sqrt{ -g }(R+2) \\
  & =\sqrt{ -g^{(0)} }\left( -4 \right)+\sqrt{ -g^{(0)} }(\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu}-\nabla ^{(0)2}h) \\
- & +\sqrt{ -g^{(0)} }\left(\frac{3}{2}h^{2}-4h_{\mu \nu}h^{\mu \nu}+h^{\mu \nu}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h-\frac{1}{4}\nabla ^{(0)}_{\mu}h\nabla ^{(0)\mu}h\right. \\
- & -\nabla ^{(0)}_{\mu}h^{\mu \nu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}+\nabla ^{(0)\mu}h\nabla ^{(0)}_{\nu}h_{\mu}^{~\nu}-2h^{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}+\frac{1}{2}h\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu} \\
- & \left.+h^{\mu \nu}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}h\nabla ^{(0)2}h-\frac{1}{2}\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\rho}h^{\mu \nu}+\frac{3}{4}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}+\mathcal{O}(h^{3})\right)
+ & +\sqrt{ -g^{(0)} }\left(\frac{1}{2}h^{2}-h_{\mu \nu}h^{\mu \nu}+h^{\mu \nu}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h-\frac{1}{4}\nabla ^{(0)}_{\mu}h\nabla ^{(0)\mu}h\right. \\
+ & -\nabla ^{(0)}_{\mu}h^{\mu \nu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}+\nabla ^{(0)\mu}h\nabla ^{(0)}_{\nu}h_{\mu}^{~\nu}-h^{\mu \nu}\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\rho}h_{\mu}^{~\rho}-h^{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}+\frac{1}{2}h\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu} \\
+ & \left.+h^{\mu \nu}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}h\nabla ^{(0)2}h-\frac{1}{2}\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\rho}h^{\mu \nu}+\frac{3}{4}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}+\mathcal{O}(h^{3})\right) \\
+ & := \sqrt{ -g^{(0)} }\mathcal{L}
 \end{align}$$
 
-take a variation
+take a variation of the action
 
 $$\begin{align}
-\delta L & =\sqrt{ -g^{(0)} }(\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}\delta h^{\mu \nu}-g^{(0)}_{\mu \nu}\nabla ^{(0)2}\delta h^{\mu \nu}) \\
- & +\sqrt{ -g^{(0)} }\left(\dots\right)
+\delta S & =\int _{M}\sqrt{ -g^{(0)} }E_{\mu \nu}\delta h^{\mu \nu}+\sqrt{ -g^{(0)} }\nabla ^{(0)}_{\mu}\theta^{\mu} \\
+E_{\mu \nu} & =-h_{\mu \nu}-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}+\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)2}h+\frac{1}{2}\nabla _{\mu}^{(0)}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}+\frac{1}{2}\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\rho}h_{\mu}^{~\rho}-\frac{1}{2}\nabla _{\mu}^{(0)}\nabla ^{(0)}_{\nu}h \\
+\theta ^{\mu} & =\nabla ^{(0)}_{\nu}\delta h^{\mu \nu}-\nabla ^{(0)\mu}\delta h \\
+\omega & =\int _{\Sigma}\sqrt{-g^{(0)}}\left[\frac12 \delta h_\mu{}^\nu\wedge \nabla ^{(0)}_\nu\delta h-\frac12 \delta h\wedge\nabla^{(0)\mu}\delta h+\frac12 \delta h\wedge\nabla_\nu ^{(0)}\delta h^{\mu\nu}+\frac12 \delta h^{\nu\rho}\wedge\nabla^{(0)\mu}\delta h_{\nu\rho}-\delta h^{\nu\rho}\wedge\nabla ^{(0)}_\rho\delta h_\mu{}_\nu\right].
 \end{align}$$
-
-$$\begin{align}
-\delta\left(h^{2} \right) & = 2g^{(0)}_{\mu \nu}h\delta h^{\mu \nu} \\
-\delta(h_{\mu \nu}h^{\mu \nu}) & =2h_{\mu \nu}\delta h^{\mu \nu}
-\end{align}$$
-
-$$\begin{align}
-\delta(h^{\mu \nu}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h) & =\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu}+g^{(0)}_{\mu \nu}h^{\rho \sigma}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu} \\
- & =\nabla _{\mu}^{(0)}\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu}+g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}(h^{\rho \sigma}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu})-g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}h^{\rho \sigma}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu} \\
- & =\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu}+\nabla ^{(0)}_{\rho}(g^{(0)}_{\mu \nu}h^{\rho \sigma}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu}-g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu})+g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu}
-\end{align}$$
-
-$$\begin{align}
-\delta(\nabla ^{(0)}_{\mu}h\nabla ^{(0)\mu}h) & =2g^{(0)}_{\mu \nu}\nabla ^{(0)\rho}h\nabla ^{(0)}_{\rho}\delta h^{\mu \nu} \\
- & =2\nabla ^{(0)}_{\rho}(g^{(0)}_{\mu \nu}\nabla ^{(0)\rho}h\delta h^{\mu \nu}))-2g^{(0)}_{\mu \nu}\nabla ^{(0)2}h\delta h^{\mu \nu}
-\end{align}$$
-
-$$\begin{align}
-\delta(\nabla ^{(0)}_{\mu}h^{\mu \nu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}) & =2\nabla ^{(0)}_{\mu}\delta h^{\mu \nu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho} \\
- & =2\nabla ^{(0)}_{\mu}(\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}\delta h^{\mu \nu})-2\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}\delta h^{\mu \nu}
-\end{align}$$
-
-$$\begin{align}
-\delta(\nabla ^{(0)}_{\mu}h\nabla ^{(0)}_{\nu}h^{\mu \nu}) & =g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\delta h^{\mu \nu}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}+\nabla ^{(0)}_{\mu}h\nabla ^{(0)}_{\nu}\delta h^{\mu \nu} \\
- & =\nabla ^{(0)}_{\rho}(g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu})-g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu}+\nabla ^{(0)}_{\mu}(\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu})-\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu}
-\end{align}$$
-
-$$\begin{align}
-\delta(h^{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}) & =\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}\delta h^{\mu \nu}+h_{\mu}^{~\rho}\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\rho}\delta h^{\mu\nu} \\
- & =\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}\delta h^{\mu \nu}+\nabla ^{(0)}_{\nu}(h_{\mu}^{~\rho}\nabla ^{(0)}_{\rho}\delta h^{\mu \nu})-\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}\nabla ^{(0)}_{\rho}\delta h^{\mu \nu} \\
- & =\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}\delta h^{\mu \nu}+\nabla ^{(0)}_{\nu}(h_{\mu}^{~\rho}\nabla ^{(0)}_{\rho}\delta h^{\mu \nu})-\nabla ^{(0)}_{\rho}(\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}\delta h^{\mu \nu})+\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}\delta h^{\mu \nu}
-\end{align}$$
-
-$$\begin{align}
-\delta\left( h\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu} \right) & =g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu}+h\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}\delta h^{\mu \nu} \\
- & =g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu}+\nabla ^{(0)}_{\mu}(h\nabla ^{(0)}_{\nu}\delta h^{\mu \nu})-\nabla ^{(0)}_{\mu}(\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu})+\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu}
-\end{align}$$
-
-$$\begin{align}
-\delta(h^{\mu \nu}\nabla ^{(0)2}h_{\mu \nu}) & =\nabla ^{(0)2}h_{\mu \nu}\delta h^{\mu \nu}+h_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)\rho}\delta h^{\mu \nu} \\
- & =\nabla ^{(0)2}h_{\mu \nu}\delta h^{\mu \nu}+\nabla ^{(0)}_{\rho}(h_{\mu \nu}\nabla ^{(0)\rho}\delta h^{\mu \nu}-\nabla ^{(0)\rho}h_{\mu \nu}\delta h^{\mu \nu})+\nabla ^{(0)2}h_{\mu \nu}\delta h^{\mu \nu}
-\end{align}$$
-
-$$\begin{align}
-\delta(h\nabla ^{(0)2}h) & =g^{(0)}_{\mu \nu}\nabla ^{(0)2}h\delta h^{\mu \nu}+g^{(0)}_{\mu \nu}h\nabla ^{(0)2}\delta h^{\mu \nu} \\
- & =2g^{(0)}_{\mu \nu}\nabla ^{(0)2}h\delta h^{\mu \nu}+\nabla ^{(0)}_{\rho}(g^{(0)}_{\mu \nu}h\nabla ^{(0)\rho}\delta h^{\mu \nu}-g^{(0)}_{\mu \nu}\nabla ^{(0)\rho}h\delta h^{\mu \nu})
-\end{align}$$
-
-$$\begin{align}
-\delta(\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\rho}h^{\mu \nu}) & =2\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\rho}\delta h^{\mu \nu} \\
- & =2\nabla ^{(0)\rho}(\nabla ^{(0)}_{\mu}h_{\nu \rho}\delta h^{\mu \nu})-2\nabla ^{(0)\rho}\nabla ^{(0)}_{\mu}h_{\nu \rho}\delta h^{\mu \nu}
-\end{align}$$
-
-$$\begin{align}
-\delta(\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}) & =2\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}\delta h^{\mu \nu} \\
- & =2\nabla ^{(0)}_{\rho}(\nabla ^{(0)\rho}h_{\mu \nu}\delta h^{\mu \nu})-2\nabla ^{(0)2}h_{\mu \nu}\delta h^{\mu \nu}
-\end{align}$$
-
-thus the variation of the Lagrangian is
-
-
-$$\begin{align}
- & \sqrt{ -g^{(0)} }\delta h^{\mu \nu}\left( g^{(0)}_{\mu \nu}h-2h_{\mu \nu}+\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)2}h\right)
-\end{align}$$
-
-$$\begin{align}
-\delta L & =\sqrt{ -g^{(0)} }(\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}\delta h^{\mu \nu}-g^{(0)}_{\mu \nu}\nabla ^{(0)2}\delta h^{\mu \nu}) \\
- & +3\sqrt{ -g^{(0)} }g^{(0)}_{\mu \nu}h\delta h^{\mu \nu}-8\sqrt{ -g^{(0)} }h_{\mu \nu}\delta h^{\mu \nu} \\
- & +\sqrt{ -g^{(0)} }\left(\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu}+\nabla ^{(0)}_{\rho}(g^{(0)}_{\mu \nu}h^{\rho \sigma}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu}-g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu})+g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu}\right) \\
- & -\frac{1}{4}\sqrt{ -g^{(0)} }\left(2\nabla ^{(0)}_{\rho}(g^{(0)}_{\mu \nu}\nabla ^{(0)\rho}h\delta h^{\mu \nu})-2g^{(0)}_{\mu \nu}\nabla ^{(0)2}h\delta h^{\mu \nu}\right) \\
- & -\sqrt{ -g^{(0)} }\left(2\nabla ^{(0)}_{\mu}(\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}\delta h^{\mu \nu})-2\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}\delta h^{\mu \nu}\right) \\
- & +\sqrt{ -g^{(0)} }(\nabla ^{(0)}_{\rho}(g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu})-g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu}+\nabla ^{(0)}_{\mu}(\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu})-\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu}) \\
- & -2\sqrt{ -g^{(0)} }\left(\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}\delta h^{\mu \nu}+\nabla ^{(0)}_{\nu}(h_{\mu}^{~\rho}\nabla ^{(0)}_{\rho}\delta h^{\mu \nu})-\nabla ^{(0)}_{\rho}(\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}\delta h^{\mu \nu})+\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho}\delta h^{\mu \nu}\right) \\
- & +\frac{1}{2}(g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h^{\mu \nu}+\nabla ^{(0)}_{\mu}(h\nabla ^{(0)}_{\nu}\delta h^{\mu \nu})-\nabla ^{(0)}_{\mu}(\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu})+\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu}) \\
- & +(\nabla ^{(0)2}h_{\mu \nu}\delta h^{\mu \nu}+\nabla ^{(0)}_{\rho}(h_{\mu \nu}\nabla ^{(0)\rho}\delta h^{\mu \nu}-\nabla ^{(0)\rho}h_{\mu \nu}\delta h^{\mu \nu})+\nabla ^{(0)2}h_{\mu \nu}\delta h^{\mu \nu}) \\
- & -\frac{1}{2}\left(2g^{(0)}_{\mu \nu}\nabla ^{(0)2}h\delta h^{\mu \nu}+\nabla ^{(0)}_{\rho}(g^{(0)}_{\mu \nu}h\nabla ^{(0)\rho}\delta h^{\mu \nu}-g^{(0)}_{\mu \nu}\nabla ^{(0)\rho}h\delta h^{\mu \nu})\right) \\
- & -\frac{1}{2}(2\nabla ^{(0)\rho}(\nabla ^{(0)}_{\mu}h_{\nu \rho}\delta h^{\mu \nu})-2\nabla ^{(0)\rho}\nabla ^{(0)}_{\mu}h_{\nu \rho}\delta h^{\mu \nu}) \\
- & +\frac{3}{4}(2\nabla ^{(0)}_{\rho}(\nabla ^{(0)\rho}h_{\mu \nu}\delta h^{\mu \nu})-2\nabla ^{(0)2}h_{\mu \nu}\delta h^{\mu \nu})
-\end{align}$$
-
-for the moment I cannot derive the eom from the Lagrangian...
-
----
 
 the linearized eom reads
 
@@ -200,17 +120,17 @@ $$\begin{align}
 
 take a trace, we have
 $$\begin{align}
--h-\frac{1}{2}\nabla ^{2}h-
+-h+\frac{1}{2}\nabla ^{(0)2}h-\frac{1}{2}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}=0
 \end{align}$$
 $$\begin{align}
-\implies 
+\implies \nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}=\nabla ^{(0)2}h-2h
 \end{align}$$
 
 plug it back to the eom, we get
 
 $$\begin{align}
 -h_{\mu \nu}+g^{(0)}_{\mu \nu}h-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}+\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}+\frac{1}{2}\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\rho}h_{\mu}^{~\rho}-\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h & =0 \\
-\implies -h_{\mu \nu}+g^{(0)}_{\mu \nu}h-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}+\frac{1}{2}\nabla ^{(0)}_{(\mu}(\nabla ^{(0)}_{\rho}h_{\nu)}^{~\rho}-\frac{1}{2}\nabla ^{(0)}_{\nu)}h) & =0
+\implies -h_{\mu \nu}+g^{(0)}_{\mu \nu}h-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}+\nabla ^{(0)}_{(\mu}(\nabla ^{(0)}_{\rho}h_{\nu)}^{~\rho}-\frac{1}{2}\nabla ^{(0)}_{\nu)}h) & =0
 \end{align}$$
 
 if we impose the de Donder gauge condition
@@ -225,3 +145,17 @@ $$\begin{align}
 -h_{\mu \nu}+g^{(0)}_{\mu \nu}h-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu} & =0
 \end{align}$$
 
+after gauge fixing, the action and the symplectic form becomes
+
+
+$$\begin{align}
+S & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\left( -4+2h_{\mu \nu}h^{\mu \nu}+h^{\mu \nu}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\rho}h^{\mu \nu}+\frac{3}{4}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}\right) \\
+\omega & =\int _{\Sigma}\sqrt{\sigma^{(0)}}\tau _{\mu}\left[\frac12 \delta h^{\nu\rho}\wedge\nabla^{(0)\mu}\delta h_{\nu\rho}-\delta h^{\nu\rho}\wedge\nabla ^{(0)}_\rho\delta h_\mu{}_\nu\right]
+\end{align}$$
+
+where $\displaystyle{\sigma _{ab}}$ is the induced metric on the Cauchy surface $\displaystyle{\Sigma}$, and $\displaystyle{\tau _{\mu}}$ is the unit normal vector to $\displaystyle{\Sigma}$.
+
+$$\begin{align}
+\mathrm{d}s^{2}_{\Sigma} & = \frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2} \\
+\tau _{\mu} & = \left( \sqrt{ 1+r^{2} },0,0 \right)
+\end{align}$$

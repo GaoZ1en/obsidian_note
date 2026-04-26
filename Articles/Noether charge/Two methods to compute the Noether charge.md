@@ -72,8 +72,8 @@ $$\tag{2.6}
 \begin{align}
 -X_{\xi}\cdot \Omega & =\frac{1}{16\pi G}\int_{\partial \Sigma}\left(\xi^{(0)a}\delta g_{zz}+2\xi^{(0)a}g^{(0)cd}\delta g_{cd}-2\xi^{(0)c}g^{(0)ad}\delta g_{cd}-zg^{(0)ad}\delta g_{zd}D_{c}^{(0)}\xi^{(0)c}-z\xi^{(0)a}g^{(0)cd}D_{c}^{(0)}\delta g_{zd}\right. \\
  & \left.+z\xi^{(0)a}g^{(0)cd}\partial_{z}\delta g_{cd}+z\xi^{(0)c}g^{(0)ad}D_{d}^{(0)}\delta g_{zc}-z\xi^{(0)c}g^{(0)ad}\partial_{z}\delta g_{cd}+zg^{(0)cd}\delta g_{zc}D_{d}^{(0)}\xi^{(0)a}-2z^{2}\xi^{(0)a}g^{(0)cd}\delta g_{zc}g_{zd}+\mathcal{O}(z^{2})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
- & =\delta\left(\frac{1}{16\pi G}\int_{\partial \Sigma}\left(\xi^{(0)a}\delta g_{zz}+2\xi^{(0)a}g^{(0)cd}g_{cd}-2\xi^{(0)c}g^{(0)ad}g_{cd}-zg^{(0)ad}g_{zd}D_{c}^{(0)}\xi^{(0)c}-z\xi^{(0)a}g^{(0)cd}D_{c}^{(0)}g_{zd}\right.\right. \\
- & \left.\left.-z\xi^{(0)a}g^{(0)cd}D_{c}^{(0)}g_{zd}+z\xi^{(0)c}g^{(0)ad}D_{d}^{(0)}g_{zc}+zg^{(0)cd}g_{zc}D_{d}^{(0)}\xi^{(0)a}-z^{2}\xi^{(0)a}g^{(0)cd}g_{zc}g_{zd}\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}\right)
+ & =\delta\left(\frac{1}{16\pi G}\int_{\partial \Sigma}\left(\xi^{(0)a}g_{zz}+2\xi^{(0)a}g^{(0)cd}g_{cd}-2\xi^{(0)c}g^{(0)ad}g_{cd}-zg^{(0)ad}g_{zd}D_{c}^{(0)}\xi^{(0)c}-z\xi^{(0)a}g^{(0)cd}D_{c}^{(0)}g_{zd}\right.\right. \\
+ & \left.\left.+z\xi^{(0)a}g^{(0)cd}\partial_{z}g_{cd}+z\xi^{(0)c}g^{(0)ad}D_{d}^{(0)}g_{zc}-z\xi^{(0)c}g^{(0)ad}\partial_{z}g_{cd}+zg^{(0)cd}g_{zc}D_{d}^{(0)}\xi^{(0)a}-z^{2}\xi^{(0)a}g^{(0)cd}g_{zc}g_{zd}\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}\right)
 \end{align}
 $$
 
@@ -81,9 +81,9 @@ then
 
 $$\tag{2.7}
 \begin{align}
-Q_{\xi} & =\lim_{ \varepsilon \to 0 } \frac{1}{16\pi G}\int_{\partial \Sigma}\left(\xi^{(0)a}\Delta g_{zz}+2\xi^{(0)a}g^{(0)cd}\Delta g_{cd}-2\xi^{(0)c}g^{(0)ad}\Delta g_{cd}-zg^{(0)ad}g_{zd}D_{c}\xi^{(0)c}-z\xi^{(0)a}g^{(0)cd}D_{c}^{(0)}g_{zd}\right. \\
- & \left.+z\xi^{(0)c}g^{(0)ad}D_{d}^{(0)}g_{zc}+zg^{(0)cd}g_{zc}D_{d}^{(0)}\xi^{(0)a}-z^{2}\xi^{(0)a}g^{(0)cd}g_{zc}g_{zd}\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}|_{z=\varepsilon} \\
- & =\frac{1}{8\pi G}\int_{\partial \Sigma}\xi^{(0)d}g^{(0)ac}(K_{ab}-K\gamma_{ab}+\gamma_{ab})\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}+\lim_{ \varepsilon \to 0 } \frac{\varepsilon}{16\pi G}\int_{\partial \Sigma}D_{c}^{(0)}(\xi^{(0)a}g^{(0)cd}g_{zd}-\xi^{(0)c}g^{(0)ad}g_{zd})\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}
+Q_{\xi} & =\lim_{ \varepsilon \to 0 } \frac{1}{16\pi G}\int_{\partial \Sigma}\left(\xi^{(0)a}\Delta g_{zz}+2\xi^{(0)a}g^{(0)cd}\Delta g_{cd}-2\xi^{(0)c}g^{(0)ad}\Delta g_{cd}-zg^{(0)ad}g_{zd}D_{c}^{(0)}\xi^{(0)c}-z\xi^{(0)a}g^{(0)cd}D_{c}^{(0)}g_{zd}\right. \\
+ & \left.+z\xi^{(0)a}g^{(0)cd}\partial_{z}g_{cd}+z\xi^{(0)c}g^{(0)ad}D_{d}^{(0)}g_{zc}-z\xi^{(0)c}g^{(0)ad}\partial_{z}g_{cd}+zg^{(0)cd}g_{zc}D_{d}^{(0)}\xi^{(0)a}-z^{2}\xi^{(0)a}g^{(0)cd}g_{zc}g_{zd}\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}|_{z=\varepsilon} \\
+ & =\frac{1}{8\pi G}\int_{\partial \Sigma}\xi^{(0)b}g^{(0)ac}(K_{bc}-K\gamma_{bc}+\gamma_{bc})\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}+\lim_{ \varepsilon \to 0 } \frac{\varepsilon}{16\pi G}\int_{\partial \Sigma}D_{c}^{(0)}(\xi^{(0)a}g^{(0)cd}g_{zd}-\xi^{(0)c}g^{(0)ad}g_{zd})\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}
 \end{align}
 $$
 
@@ -135,7 +135,7 @@ where
 
 $$\tag{3.4}
 \begin{align}
-Q_{\xi} & =-\int_{\Sigma}T^{\mu \nu}\tau_{\nu} \frac{1}{(d-1)!}\varepsilon_{\mu \mu_{1}\dots \mu_{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{d-1}}
+Q_{\xi} & =-\int_{\Sigma}T^{\mu \nu}\xi_{\nu} \frac{1}{(d-1)!}\varepsilon_{\mu \mu_{1}\dots \mu_{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{d-1}}
 \end{align}
 $$
 
@@ -157,7 +157,7 @@ consider the following symmetry
 
 $$\tag{4.2}
 \begin{align}
-X_{\xi}=\int_{M}\mathrm{d}^{2}x\left(\xi^{\mu}\nabla_{\mu}+\frac{1}{\gamma}\nabla_{\mu}\xi^{\mu}\right) \frac{\delta}{\delta \phi}
+X_{\xi}=\int_{M}\mathrm{d}^{2}x\left(\xi^{\mu}\nabla_{\mu}\phi+\frac{1}{\gamma}\nabla_{\mu}\xi^{\mu}\right) \frac{\delta}{\delta \phi}
 \end{align}
 $$
 
@@ -189,17 +189,9 @@ $$
 
 $$\tag{4.4}
 \begin{align}
-\delta\int_{\Sigma}(X_{\xi}\cdot \theta-\xi \cdot L) & =\delta \int_{\Sigma}\left(\frac{1}{2\pi}\nabla^{\mu}\phi(X_{\xi}\cdot \delta \phi)+\frac{1}{4\pi}\xi^{\mu}g^{\rho \sigma}\nabla_{\rho}\phi \nabla_{\sigma}\phi+\frac{1}{2\pi \gamma}\xi^{\mu}R\phi+\frac{\mu}{4\pi \gamma^{2}}\xi^{\mu}e^{\gamma \phi}\right)\varepsilon_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}} \\
- & =\delta\int_{\Sigma}\left(\frac{1}{2\pi}\nabla^{\mu}\phi\left( \xi^{\nu}\nabla_{\nu}\phi+\frac{1}{\gamma}\nabla_{\nu}\xi^{\nu} \right)+\frac{1}{4\pi}\xi^{\mu}g^{\rho \sigma}\nabla_{\rho}\phi \nabla_{\sigma}\phi+\frac{1}{2\pi \gamma}\xi^{\mu}R\phi+\frac{\mu}{4\pi \gamma^{2}}\xi^{\mu}e^{\gamma \phi}\right)\varepsilon_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}} \\
- & =\int_{\Sigma}(X_{\delta \xi}\cdot \theta-\delta \xi \cdot L)+\delta\int_{\Sigma}
-\end{align}
-$$
-
-$$\tag{4.4}
-\begin{align}
-\delta \int_{\Sigma}(X_{\xi}\cdot \theta-\xi \cdot L) & = \delta \int_{\Sigma}\left( -\frac{1}{2\pi}\nabla^{\mu}\phi(X_{\xi}\cdot \delta \phi)+\frac{1}{4\pi}g^{\rho \sigma}\nabla_{\rho}\phi \nabla_{\sigma}\phi \xi^{\mu}+\frac{1}{2\pi \gamma}R\phi \xi^{^{\mu}+\mu/4\pi \gamma^{2}}e^{\gamma \phi}\xi^{\mu} \right)\varepsilon_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}} \\
+\delta \int_{\Sigma}(X_{\xi}\cdot \theta-\xi \cdot L) & = \delta \int_{\Sigma}\left( -\frac{1}{2\pi}\nabla^{\mu}\phi(X_{\xi}\cdot \delta \phi)+\frac{1}{4\pi}g^{\rho \sigma}\nabla_{\rho}\phi \nabla_{\sigma}\phi \xi^{\mu}+\frac{1}{2\pi \gamma}R\phi \xi^{\mu}+\frac{\mu}{4\pi \gamma^{2}}e^{\gamma \phi}\xi^{\mu} \right)\varepsilon_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}} \\
  & =\int_{\Sigma}(X_{\delta \xi}\cdot \theta-\delta \xi \cdot L)+\delta'\int_{\Sigma}\left(-\frac{1}{2\pi}\nabla^{\mu}\phi\left(\xi^{\nu}\nabla_{\nu}\phi+\frac{1}{\gamma}\nabla_{\nu}\xi^{\nu}\right)+\frac{1}{4\pi}\xi^{\mu}g^{\rho \sigma}\nabla_{\rho}\phi \nabla_{\sigma}\phi+\frac{1}{2\pi \gamma}\xi^{\mu}R\phi+\frac{\mu}{4\pi \gamma^{2}}\xi^{\mu}e^{\gamma \phi}\right)\varepsilon_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}} \\
- & =\int_{\Sigma}(X_{\delta \xi}\cdot \theta-\delta \xi \cdot L)+\delta'\int_{\Sigma}T^{\mu \nu}\xi_{\nu}\varepsilon_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}} \\
+ & =\int_{\Sigma}(X_{\delta \xi}\cdot \theta-\delta \xi \cdot L)+\frac{1}{2\pi}\delta'\int_{\Sigma}T^{\mu \nu}\xi_{\nu}\varepsilon_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}} \\
 Q_{\xi} & =-\frac{1}{2\pi}\int_{\Sigma}T^{\mu \nu}\xi_{\nu}\varepsilon_{\mu \mu_{1}}\mathrm{d}x^{\mu_{1}} \\
 T^{\mu \nu} & =-\nabla^{\mu}\phi \nabla^{\nu}\phi+\frac{1}{2}g^{\mu \nu}\nabla_{\rho}\phi \nabla^{\rho}\phi+\frac{2}{\gamma}\nabla^{\mu}\nabla^{\nu}\phi-\frac{2}{\gamma}g^{\mu \nu}\nabla^{2}\phi+\frac{\mu}{2\gamma^{2}}g^{\mu \nu}e^{\gamma \phi}
 \end{align}
