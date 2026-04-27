@@ -3,7 +3,6 @@ R^{(0)}_{\mu \nu \rho \sigma} & =g^{(0)}_{\mu \sigma}g^{(0)}_{\nu \rho}-g^{(0)}_
 R^{(0)}_{\mu \nu} & =-2g^{(0)}_{\mu \nu} \\
 R^{(0)} & =-6
 \end{align}$$
-
 $$\begin{align}
 g_{\mu \nu} & =g^{(0)}_{\mu \nu}+h_{\mu \nu}
 \end{align}$$
@@ -159,3 +158,79 @@ $$\begin{align}
 \mathrm{d}s^{2}_{\Sigma} & = \frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2} \\
 \tau _{\mu} & = \left( \sqrt{ 1+r^{2} },0,0 \right)
 \end{align}$$
+
+---
+
+boundary action
+
+For the boundary term
+
+$$\begin{align}
+S_{\Gamma} & =\frac{1}{8\pi G}\int_{\Gamma}\mathrm{d}^{2}x\sqrt{-\gamma}(K-1),
+\end{align}$$
+
+use the radial decomposition near the cutoff surface and impose radial gauge
+
+$$\begin{align}
+h_{n\mu} & =0,
+\end{align}$$
+
+so that the lapse and shift are not perturbed and the induced metric is
+
+$$\begin{align}
+\gamma_{ab} & =\gamma^{(0)}_{ab}+h_{ab}.
+\end{align}$$
+
+Let $\displaystyle{\bar \gamma_{ab}=\gamma^{(0)}_{ab}}$, $\displaystyle{\bar K_{ab}=K_{ab}^{(0)}}$, $\displaystyle{\bar K=\bar \gamma^{ab}\bar K_{ab}}$, and $\displaystyle{h_{\Gamma}=\bar \gamma^{ab}h_{ab}}$. In this gauge,
+
+$$\begin{align}
+K_{ab} & =\bar K_{ab}+\frac{1}{2}\mathcal{L}_{n^{(0)}}h_{ab}+\mathcal{O}(h^{2}),\\
+\gamma^{ab} & =\bar \gamma^{ab}-h^{ab}+h^{a}{}_{c}h^{cb}+\mathcal{O}(h^{3}),\\
+\sqrt{-\gamma} & =\sqrt{-\bar \gamma}\left(1+\frac{1}{2}h_{\Gamma}+\frac{1}{8}h_{\Gamma}^{2}-\frac{1}{4}h_{ab}h^{ab}+\mathcal{O}(h^{3})\right).
+\end{align}$$
+
+The boundary action to quadratic order is
+
+$$\begin{align}
+S_{\Gamma} & =\frac{1}{8\pi G}\int_{\Gamma}\mathrm{d}^{2}x\sqrt{-\bar \gamma}\left(\mathcal{L}_{\Gamma}^{(0)}+\mathcal{L}_{\Gamma}^{(1)}+\mathcal{L}_{\Gamma}^{(2)}+\mathcal{O}(h^{3})\right),
+\end{align}$$
+
+where
+
+$$\begin{align}
+\mathcal{L}_{\Gamma}^{(0)} & =\bar K-1,\\
+\mathcal{L}_{\Gamma}^{(1)} & =\frac{1}{2}\bar \gamma^{ab}\mathcal{L}_{n^{(0)}}h_{ab}-\bar K^{ab}h_{ab}+\frac{1}{2}(\bar K-1)h_{\Gamma},\\
+\mathcal{L}_{\Gamma}^{(2)} & =\bar K_{ab}h^{a}{}_{c}h^{bc}-\frac{1}{2}h^{ab}\mathcal{L}_{n^{(0)}}h_{ab}+\frac{1}{4}h_{\Gamma}\bar \gamma^{ab}\mathcal{L}_{n^{(0)}}h_{ab}\\
+&\quad-\frac{1}{2}h_{\Gamma}\bar K^{ab}h_{ab}+\frac{1}{8}(\bar K-1)h_{\Gamma}^{2}-\frac{1}{4}(\bar K-1)h_{ab}h^{ab}.
+\end{align}$$
+
+Here all boundary indices are raised and lowered with $\displaystyle{\bar \gamma_{ab}}$. The corresponding xAct code is
+
+```mathematica
+Needs["xAct`xTensor`"];
+
+DefManifold[B, 2, {a, b, c, d, e, f, i, j, k, l}];
+DefMetric[-1, gam[-a, -b], CD, {"|", "D"}, PrintAs -> "\[Gamma]"];
+
+DefTensor[h[-a, -b], B, Symmetric[{1, 2}], PrintAs -> "h"];
+DefTensor[K0[-a, -b], B, Symmetric[{1, 2}], PrintAs -> "K"];
+DefTensor[Lnh[-a, -b], B, Symmetric[{1, 2}], PrintAs -> "Lnh"];
+
+sqrtExp =
+  1 + eps/2 h[c, -c] +
+    eps^2 (1/8 h[c, -c] h[d, -d] - 1/4 h[-c, -d] h[c, d]);
+
+invExp =
+  gam[a, b] - eps h[a, b] + eps^2 h[a, c] h[-c, b];
+
+kabExp =
+  K0[-a, -b] + eps/2 Lnh[-a, -b];
+
+expr = sqrtExp (invExp kabExp - 1);
+
+L0 = ToCanonical[Coefficient[Expand[expr], eps, 0]];
+L1 = ToCanonical[Coefficient[Expand[expr], eps, 1]];
+L2 = ToCanonical[Coefficient[Expand[expr], eps, 2]];
+
+{L0, L1, L2}
+```
