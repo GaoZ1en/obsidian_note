@@ -84,7 +84,7 @@ To analyze the boundary terms in $\delta S$, we first record the asymptotic beha
 
 $$\begin{align}
 \nabla _{t}F_{tr} & =o(r^{-1}) \\
-\nabla _{t}F_{t\phi} & =o(r^{-2}) \\
+\nabla _{t}F_{t\phi} & =o(r^{2}) \\
 \nabla _{t}F_{r\phi} & =o(r^{-1}) \\
 \nabla _{r}F_{tr} & =o(r^{-2}) \\
 \nabla _{r}F_{t\phi} & =o(r^{-1}) \\

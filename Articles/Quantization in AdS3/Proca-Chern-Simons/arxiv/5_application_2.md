@@ -6,7 +6,7 @@ summary: ""
 
 # 5. Application II: The thermal partition function
 
-In this section, we construct the coherent-state path integral associated with the oscillator representation derived in Section 4 and use it to compute the thermal partition function of the Proca-Chern-Simons theory on the global AdS$_3$ spacetime. Since the quantum theory has already been diagonalized into a collection of decoupled bosonic oscillators, the coherent-state representation provides the most direct path-integral description.
+In this section, we construct the coherent-state path integral associated with the oscillator representation derived in Section 3 and use it to compute the thermal partition function of the Proca-Chern-Simons theory on the global AdS$_3$ spacetime. Since the quantum theory has already been diagonalized into a collection of decoupled bosonic oscillators, the coherent-state representation provides the most direct path-integral description.
 
 ## 5.1 The coherent-state path integral
 
@@ -17,7 +17,7 @@ H & =H_{\xi _{0}}+H_{\bar{\xi}_{0}}, \\
 J & =H_{\bar{\xi}_{0}}-H_{\xi _{0}}.
 \end{align}$$
 
-Using the expressions obtained in Section 4.7, and adopting normal ordering at the quantum level, we obtain
+Using the expressions obtained in Section 3.7, and adopting normal ordering at the quantum level, we obtain
 
 $$\begin{align}
 H & =\sum ^{\infty}_{n,\bar{n}=0}\left[(\mu _{+}+1+n+\bar{n})a^{\dagger}_{+,n,\bar{n}}a_{+,n,\bar{n}}+(\mu _{-}+1+n+\bar{n})a^{\dagger}_{-,n,\bar{n}}a_{-,n,\bar{n}}\right], \\

@@ -54,7 +54,7 @@ n^{\mu} & =\left(0,(1+r^{2})^{1/2},0\right)
 To analyze the boundary terms in $\delta S$, we first record the asymptotic behavior of the non-vanishing components of $\nabla _{\mu}F_{\nu \rho}$:
 
 $$\begin{align}
-\nabla _{t}F_{tr} & =o(r^{-1}), & \nabla _{t}F_{t\phi} & =o(r^{-2}), & \nabla _{t}F_{r\phi} & =o(r^{-1}) \\
+\nabla _{t}F_{tr} & =o(r^{-1}), & \nabla _{t}F_{t\phi} & =o(r^{2}), & \nabla _{t}F_{r\phi} & =o(r^{-1}) \\
 \nabla _{r}F_{tr} & =o(r^{-2}), & \nabla _{r}F_{t\phi} & =o(r^{-1}), & \nabla _{r}F_{r\phi} & =o(r^{-2}) \\
 \nabla _{\phi}F_{tr} & =o(r^{-1}), & \nabla _{\phi}F_{t\phi} & =o(r^{2}), & \nabla _{\phi}F_{r\phi} & =o(r^{-1})
 \end{align}$$

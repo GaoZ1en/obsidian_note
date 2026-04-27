@@ -14,14 +14,14 @@ We begin with the Euclidean action of the Proca-Chern-Simons theory after the AD
 
 $$\begin{align}
 S_{E} & =\int \mathrm{d}\tau \int _{\Sigma _{\tau}} \mathrm{d}^{2}x\sqrt{ \sigma }\left(\frac{1}{4}N\tilde{F}_{ab}\tilde{F}^{ab}+\frac{1}{2N}\sigma ^{ab}(\partial _{\tau}A_{a}-D_{a}A_{\tau})(\partial _{\tau}A_{b}-D_{b}A_{\tau})+\frac{\mu ^{2}N}{2}\sigma ^{ab}A_{a}A_{b}+\frac{\mu ^{2}}{2N}A_{\tau}^{2}\right. \\
- & \left.+\frac{k}{4\pi}\varepsilon ^{ab}(A_{\tau}D_{a}A_{b}-A_{a}(\partial _{\tau}A_{b}-D_{b}A_{\tau}))\right)
+ & \left.-\frac{ik}{4\pi}\varepsilon ^{ab}(A_{\tau}D_{a}A_{b}-A_{a}(\partial _{\tau}A_{b}-D_{b}A_{\tau}))\right)
 \end{align}$$
 
 The canonical momentum conjugate to $\displaystyle{A_{a}}$ is
 
 $$\begin{align}
 \pi ^{a} & = \frac{\partial \mathcal{L}}{\partial(\partial _{\tau}A_{a})} \\
- & =\frac{\sqrt{ \sigma }}{N}\sigma ^{ab}(\partial _{\tau}A_{b}-D_{b}A_{\tau})+\frac{k}{4\pi}\epsilon^{ab}A_{b}
+ & =\frac{\sqrt{ \sigma }}{N}\sigma ^{ab}(\partial _{\tau}A_{b}-D_{b}A_{\tau})-\frac{ik}{4\pi}\epsilon^{ab}A_{b}
 \end{align}$$
 
 while the canonical momentum conjugate to $\displaystyle{A_{\tau}}$ gives the primary constraint
@@ -34,8 +34,8 @@ The Hamiltonian is then
 
 $$\begin{align}
 H & =\int _{\Sigma}\mathrm{d}^{2}x\left(\pi ^{a}\partial _{\tau}A_{a}-\mathcal{L}\right) \\
- & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\left(\frac{N}{2\sigma}\sigma _{ab}\pi ^{a}\pi ^{b}+\frac{\pi ^{a}}{\sqrt{ \sigma }}\left( D_{a}A_{\tau}-\frac{k}{4\pi} \frac{N}{\sqrt{ \sigma }}\sigma _{ab} \epsilon ^{bc}A_{c} \right)-\frac{1}{4}N\tilde{F}_{ab}\tilde{F}^{ab}\right. \\
- & \left.-\frac{N}{2}\left(\mu ^{2}+\left(\frac{k}{4\pi}\right)^{2}\right)\sigma ^{ab}A_{a}A_{b}-\frac{\mu ^{2}}{2N}A_{\tau}^{2}-\frac{k}{4\pi}\varepsilon ^{ab}A_{\tau}D_{a}A_{b}\right)
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\left(\frac{N}{2\sigma}\sigma _{ab}\pi ^{a}\pi ^{b}+\frac{\pi ^{a}}{\sqrt{ \sigma }}\left( D_{a}A_{\tau}+\frac{ik}{4\pi} \frac{N}{\sqrt{ \sigma }}\sigma _{ab} \epsilon ^{bc}A_{c} \right)-\frac{1}{4}N\tilde{F}_{ab}\tilde{F}^{ab}\right. \\
+ & \left.-\frac{N}{2}\left(\mu ^{2}+\left(\frac{k}{4\pi}\right)^{2}\right)\sigma ^{ab}A_{a}A_{b}-\frac{\mu ^{2}}{2N}A_{\tau}^{2}+\frac{ik}{4\pi}\varepsilon ^{ab}A_{\tau}D_{a}A_{b}\right)
 \end{align}$$
 
 Demanding the preservation of the primary constraint $\displaystyle{\chi _{1}=\pi ^{\tau}\approx 0}$ under time evolution yields the secondary constraint
@@ -43,7 +43,7 @@ Demanding the preservation of the primary constraint $\displaystyle{\chi _{1}=\p
 $$\begin{align}
 \chi _{2} & =\left\{\chi _{1},H\right\}_{\text{P}} \\
  & = -\frac{\delta H}{\delta A_{\tau}} \\
- & =D_{a}\pi ^{a}+\frac{\mu ^{2}\sqrt{ \sigma }}{N}A_{\tau}+\frac{k}{4\pi}\epsilon ^{ab}D_{a}A_{b}\approx 0
+ & =D_{a}\pi ^{a}+\frac{\mu ^{2}\sqrt{ \sigma }}{N}A_{\tau}-\frac{ik}{4\pi}\epsilon ^{ab}D_{a}A_{b}\approx 0
 \end{align}$$
 
 The secondary constraint $\displaystyle{\chi _{2}}$ is then preserved under time evolution without generating any further constraints:
@@ -83,17 +83,17 @@ Here the insertion of the delta functionals $\displaystyle{\prod _{\alpha}\delta
 Applied to the present model, this becomes
 
 $$\begin{align}
-Z & =\int \mathcal{D}A_{a}\,\mathcal{D}\pi ^{a}\,\mathcal{D}A_{\tau}\,\mathcal{D}\pi ^{\tau}\,\delta [\pi ^{\tau}]\,\delta \left[ D_{a}\pi ^{a}+\frac{\mu ^{2}\sqrt{ \sigma }}{N}A_{\tau}+\frac{k}{4\pi}\epsilon ^{ab}D_{a}A_{b} \right]\,\det {}^{1/2} C \exp \left(-\int \mathrm{d}\tau\int _{\Sigma _{\tau}}\mathrm{d}^{2}x\,[\pi ^{a}\partial _{\tau}A_{a}-H_{c}]\right)
+Z & =\int \mathcal{D}A_{a}\,\mathcal{D}\pi ^{a}\,\mathcal{D}A_{\tau}\,\mathcal{D}\pi ^{\tau}\,\delta [\pi ^{\tau}]\,\delta \left[ D_{a}\pi ^{a}+\frac{\mu ^{2}\sqrt{ \sigma }}{N}A_{\tau}-\frac{ik}{4\pi}\epsilon ^{ab}D_{a}A_{b} \right]\,\det {}^{1/2} C \exp \left(-\int \mathrm{d}\tau\int _{\Sigma _{\tau}}\mathrm{d}^{2}x\,[\pi ^{a}\partial _{\tau}A_{a}-H_{c}]\right)
 \end{align}$$
 
 Integrating out the momentum $\displaystyle{\pi ^{\tau}}$, and noting that the determinant factor $\displaystyle{\det {}^{1/2} C}$ is field independent, we obtain
 
 $$\begin{align}
-Z & =\mathcal{N}\int \mathcal{D}A_{a}\mathcal{D}\pi _{a}\mathcal{D}A_{\tau} \delta\left[ A_{\tau}+\frac{N}{\mu ^{2}\sqrt{ \sigma }}\left(D_{a}\pi ^{a}+\frac{k}{4\pi}\epsilon ^{ab}D_{a}A_{b}\right)\right] \\
- & \times \exp\left(-\int \mathrm{d}\tau \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\left[\frac{N}{2\sigma}\sigma _{ab}\pi ^{a}\pi ^{b}+\frac{1}{4}N\tilde{F}_{ab}\tilde{F}^{ab}+\frac{N}{2}\left(\mu ^{2}+\frac{k^{2}}{16\pi ^{2}}\right)\sigma ^{ab}A_{a}A_{b}+\frac{\mu ^{2}}{2N}A_{\tau}^{2}+\frac{k}{4\pi}A_{\tau}\varepsilon ^{ab}D_{a}A_{b}\right]\right)
+Z & =\mathcal{N}\int \mathcal{D}A_{a}\mathcal{D}\pi _{a}\mathcal{D}A_{\tau} \delta\left[ A_{\tau}+\frac{N}{\mu ^{2}\sqrt{ \sigma }}\left(D_{a}\pi ^{a}-\frac{ik}{4\pi}\epsilon ^{ab}D_{a}A_{b}\right)\right] \\
+ & \times \exp\left(-\int \mathrm{d}\tau \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\left[\frac{N}{2\sigma}\sigma _{ab}\pi ^{a}\pi ^{b}+\frac{1}{4}N\tilde{F}_{ab}\tilde{F}^{ab}+\frac{N}{2}\left(\mu ^{2}+\frac{k^{2}}{16\pi ^{2}}\right)\sigma ^{ab}A_{a}A_{b}+\frac{\mu ^{2}}{2N}A_{\tau}^{2}-\frac{ik}{4\pi}A_{\tau}\varepsilon ^{ab}D_{a}A_{b}\right]\right)
 \end{align}$$
 
-Here $\displaystyle{\mathcal{N}}$ is a field-independent normalization constant. For later convenience, we denote the delta functional $\displaystyle{\delta\left[ A_{\tau}+\frac{N}{\mu ^{2}\sqrt{ \sigma }}\left(D_{a}\pi ^{a}+\frac{k}{4\pi}\epsilon ^{ab}D_{a}A_{b}\right)\right]}$ by $\displaystyle{\delta [\chi_{2}]}$, and the exponential factor by $\displaystyle{\exp(-S_{E}[A_{a},A_{\tau};\pi ^{a}])}$. One should keep in mind, however, that $\displaystyle{S_{E}[A_{a},A_{\tau};\pi ^{a}]}$ is not the original Euclidean action, but the Hamiltonian action of the constrained system.
+Here $\displaystyle{\mathcal{N}}$ is a field-independent normalization constant. For later convenience, we denote the delta functional $\displaystyle{\delta\left[ A_{\tau}+\frac{N}{\mu ^{2}\sqrt{ \sigma }}\left(D_{a}\pi ^{a}-\frac{ik}{4\pi}\epsilon ^{ab}D_{a}A_{b}\right)\right]}$ by $\displaystyle{\delta [\chi_{2}]}$, and the exponential factor by $\displaystyle{\exp(-S_{E}[A_{a},A_{\tau};\pi ^{a}])}$. One should keep in mind, however, that $\displaystyle{S_{E}[A_{a},A_{\tau};\pi ^{a}]}$ is not the original Euclidean action, but the Hamiltonian action of the constrained system.
 
 ## B.3 Euclidean correlation functions and the contact term
 
@@ -106,7 +106,7 @@ G_{\tau,\tau}(x_{1},x_{2}) & = \frac{\displaystyle{\int \mathcal{D}A_{a}\mathcal
 We first integrate out $\displaystyle{A_{\tau}}$. The delta functional $\displaystyle{\delta [\chi_{2}]}$ enforces $A_{\tau}$ to coincide with the classical solution
 
 $$\begin{align}
-\mathcal{A}_{\tau}^{\mathrm{cl}} & =-\frac{N}{\mu ^{2}\sqrt{ \sigma }}\left(D_{a}\pi ^{a}+\frac{k}{4\pi}\epsilon ^{ab}D_{a}A_{b}\right)
+\mathcal{A}_{\tau}^{\mathrm{cl}} & =-\frac{N}{\mu ^{2}\sqrt{ \sigma }}\left(D_{a}\pi ^{a}-\frac{ik}{4\pi}\epsilon ^{ab}D_{a}A_{b}\right)
 \end{align}$$
 
 Therefore the correlation function can be computed by evaluating the path integral with $A_{\tau}$ fixed to $\mathcal{A}_{\tau}^{\mathrm{cl}}$:
@@ -129,19 +129,19 @@ $$\begin{align}
 The path integral over $\eta$ that appears in the calculation of $\displaystyle{G_{\tau,\tau;\text{path}}(x_{1},x_{2})}$ is Gaussian, with local propagator
 
 $$\begin{align}
-\braket{ \eta(x_{1})\eta(x_{2}) } & =\frac{N(x_{1})}{\mu ^{2}\sqrt{ \sigma }(x_{1})}\delta ^{2}(x_{1}-x_{2})
+\braket{ \eta(x_{1})\eta(x_{2}) } & =\frac{N(x_{1})}{\mu ^{2}\sqrt{ \sigma }(x_{1})}\delta ^{3}(x_{1}-x_{2})
 \end{align}$$
 
 Accordingly, the full correlator is the sum of the canonical correlator and this local term:
 
 $$\begin{align}
-G_{\mathrm{path};\tau \tau}(x_{1},x_{2}) & =G_{\tau,\tau}(x_{1},x_{2})+\frac{N(x_{1})}{\mu ^{2}\sqrt{ \sigma }(x_{1})}\delta ^{2}(x_{1}-x_{2})
+G_{\mathrm{path};\tau \tau}(x_{1},x_{2}) & =G_{\tau,\tau}(x_{1},x_{2})+\frac{N(x_{1})}{\mu ^{2}\sqrt{ \sigma }(x_{1})}\delta ^{3}(x_{1}-x_{2})
 \end{align}$$
 
 equivalently,
 
 $$\begin{align}
-G_{\tau,\tau}(x_{1},x_{2}) & =G_{\mathrm{path};\tau \tau}(x_{1},x_{2})-\frac{N(x_{1})}{\mu ^{2}\sqrt{ \sigma }(x_{1})}\delta ^{2}(x_{1}-x_{2}).
+G_{\tau,\tau}(x_{1},x_{2}) & =G_{\mathrm{path};\tau \tau}(x_{1},x_{2})-\frac{N(x_{1})}{\mu ^{2}\sqrt{ \sigma }(x_{1})}\delta ^{3}(x_{1}-x_{2}).
 \end{align}$$
 
 Thus the Faddeev-Senjanovic formalism makes the logic especially transparent: it directly produces the reduced phase-space, or equivalently canonical, Euclidean correlator, while the configuration-space path integral produces the covariant Euclidean Green's function. The contact term is exactly the contribution of the independent Gaussian fluctuation that is present in the configuration-space formulation but absent once the second-class constraint is imposed sharply.
@@ -149,7 +149,7 @@ Thus the Faddeev-Senjanovic formalism makes the logic especially transparent: it
 For correlation functions involving only the spatial components $A_{a}$, there is no analogous extra local term, because those fields remain genuine dynamical variables in both descriptions. After raising the indices, the relation between the two Euclidean correlation functions is therefore
 
 $$\begin{align}
-G^{\mu _{1},\mu _{2}}(x_{1},x_{2}) & =G_{\mathrm{path}}^{\mu _{1},\mu _{2}}(x_{1},x_{2})-\frac{1}{\mu ^{2}}g^{\mu _{1}\tau }g^{\mu _{2}\tau }\frac{N(x_{1})}{\sqrt{ \sigma }(x_{1})}\delta ^{2}(x_{1}-x_{2}),
+G^{\mu _{1},\mu _{2}}(x_{1},x_{2}) & =G_{\mathrm{path}}^{\mu _{1},\mu _{2}}(x_{1},x_{2})-\frac{1}{\mu ^{2}}g^{\mu _{1}\tau }g^{\mu _{2}\tau }\frac{N(x_{1})}{\sqrt{ \sigma }(x_{1})}\delta ^{3}(x_{1}-x_{2}),
 \end{align}$$
 
 which is exactly the contact term found in Section 4.3 and rederived in Section 4.5.

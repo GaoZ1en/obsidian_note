@@ -102,7 +102,7 @@ This relation shows that $\mathcal{D}$ is naturally diagonalized on highest-weig
 
 We now use the Killing symmetries to construct a complete set of normalizable modes. These solutions organize naturally into highest-weight representations of $\mathrm{SL}(2, \mathbb{R})_L \times \mathrm{SL}(2, \mathbb{R})_R$.
 
-Applying $\mathcal{D} A_{,N} = \mp \mu_\pm A_{\pm,N}$ to the Casimir operators immediately gives their eigenvalues in the left- and right-moving sectors:
+Applying $\mathcal{D} A_{\pm,N} = \mp \mu_\pm A_{\pm,N}$ to the Casimir operators immediately gives their eigenvalues in the left- and right-moving sectors:
 
 $$ \begin{align}
 \mathcal{C}A_{+,N}^{\mu} & =\left(-\frac{1}{4}\mu _{+}^{2}+\frac{1}{2}\mu _{+}\right)A_{+,N}^{\mu}, \\

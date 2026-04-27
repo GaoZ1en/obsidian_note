@@ -147,7 +147,47 @@ therefore we have the normalizable modes
 
 $$\begin{align}
 A^{t} & =0 \\
-A^{r} & =C_{1}r^{-1+|m|}(1+r^{2})^{-(2+|m|)/2}{}_{2}F_{1}\left(\frac{2+|m|-\omega}{2},\frac{2+|m|+\omega}{2};2;\frac{1}{1+r^{2}}\right) \\
-A^{\phi} & =\frac{1}{im}\left((1+r^{2})\partial _{r}(rf_{r})\right) \\
- & =\frac{C_{1}}{im} (1+r^{2})\partial _{r}\left( r^{|m|}(1+r^{2})^{-(2+|m|)/2}{}_{2}F_{1}\left(\frac{2+|m|-\omega}{2},\frac{2+|m|+\omega}{2}; 2; \frac{1}{1+r^{2}}\right) \right)
+A^{r} & =C_{1}e^{-i\omega _{nm}t}e^{im\phi}r^{-1+|m|}(1+r^{2})^{-|m|/2}{}_{2}F_{1}\left(-n,n+|m|+2;2;\frac{1}{1+r^{2}}\right) \\
+A^{\phi} & =-\frac{C_{1}}{im}e^{-i\omega _{nm}t}e^{im\phi} r^{-1}(1+r^{2})\partial _{r}\left( r^{|m|}(1+r^{2})^{-(2+|m|)/2}{}_{2}F_{1}\left(-n,n+|m|+2; 2; \frac{1}{1+r^{2}}\right) \right) \\
+\omega _{nm} & =2n+2+|m|, \quad n\in \mathbb{N}
+\end{align}$$
+
+---
+
+by introduce a scalar function $\displaystyle{\Psi}$ as
+
+$$\begin{align}
+A^t=0,\qquad A^r=\frac{1+r^2}{r}\partial_\phi \Psi,\qquad A^\phi=-\frac{1+r^2}{r}\partial_r\Psi 
+\end{align}$$
+
+the eom can be written as
+
+$$\begin{align}
+(1+r^{2})\partial _{r}^{2}\Psi+\frac{1+3r^{2}}{r}\partial _{r}\Psi-\frac{1}{1+r^{2}}\partial _{t}^{2}\Psi+\frac{1}{r^{2}}\partial _{\Phi}^{2}\Psi & =0
+\end{align}$$
+
+the solutions can be written in a more compact form for all $\displaystyle{m}$ as
+
+$$\begin{align}
+\Psi_{nm}=C_{nm} e^{-i\omega_{nm}t}e^{im\phi}r^{|m|}(1+r^2)^{-(|m|+2)/2}P_{n}^{(1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right), \\
+\omega_{nm}=2n+2+|m|, \quad n\in \mathbb{N}, m\in \mathbb{Z}
+\end{align}$$
+
+the symplectic form is given by
+
+$$\begin{align}
+\omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\delta F^{\mu \nu}\wedge \delta A_{\nu} \\
+ & =\dots
+\end{align}$$
+
+the normalization constant is determined by the symplectic form as
+
+$$\begin{align}
+\omega[A,A^{*}] & =-i
+\end{align}$$
+
+thus the normalization constant is given by
+
+$$\begin{align}
+C_{nm} & =\sqrt{ \frac{(n+|m|+1)}{2\pi \omega _{nm}^{2}(n+1)} }
 \end{align}$$

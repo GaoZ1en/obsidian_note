@@ -379,4 +379,3 @@ $$\begin{align}
 \Omega[h^{(+)}_{+,m_{1}=0,n_{1}},h^{(-)}_{-,m_{2}=0,n_{2}}] & =i\delta _{n_{1},n_{2}} \\
 \Omega[h^{(+)}_{+,m_{1}\leqslant -1,n_{1}},h^{(-)}_{-,m_{2}\leqslant -1,n_{2}}]& =i\delta _{m_{1},m_{2}}\delta _{n_{1},n_{2}-1}
 \end{align}$$
-

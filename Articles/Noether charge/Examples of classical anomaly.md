@@ -1,29 +1,3 @@
-# Examples of Classical Anomaly
-
-## Free chiral fermion
-
-$$
-S=\int{\rm d}x{\rm d}t\psi\partial_-\psi
-$$
-
-
-
-## Free massless boson in 2D
-
-$$
-S=-2\int{\rm d}x{\rm d}t\partial_-\phi\partial_+\phi
-$$
-
-
-
-## Floreanini-Jackiw chiral boson
-
-$$
-{\cal L}=\partial_t\phi\partial_x\phi-(\partial_x\phi)^2
-$$
-
-
-
 ## Classical Liouville Theory
 
 The action is
@@ -41,7 +15,7 @@ $$
 $$
 Equation of motion
 $$
-E=\nabla^2\phi-\frac{1}{\gamma}R-\frac{\mu}{2\gamma}e^{\gamma\phi}C=0
+E=\nabla^2\phi-\frac{1}{\gamma}R-\frac{\mu}{2\gamma}e^{\gamma\phi}=0
 $$
 and the symplectic potential
 $$
@@ -85,7 +59,7 @@ X_\xi\cdot\delta S&=-\frac{1}{2\pi}X_\xi\cdot\int_M{\rm d}^2x\sqrt{-g}\left(\nab
 &=-\frac{1}{2\pi}\int_M{\rm d}^2x\sqrt{-g}\left(\nabla^\mu\phi\nabla_\mu\left(\xi^\nu\nabla_\nu\phi+\frac{1}{\gamma}\nabla_\nu\xi^\nu\right)+\frac{1}{\gamma}R\left(\xi^\nu\nabla_\nu\phi+\frac{1}{\gamma}\nabla_\nu\xi^\nu\right)\right.\\
 &\left.+\frac{\mu}{2\gamma}e^{\gamma\phi}\left(\xi^\nu\nabla_\nu\phi+\frac{1}{\gamma}\nabla_\nu\xi^\nu\right)\right)\\
 &=-\frac{1}{2\pi}\int_M{\rm d}^2x\sqrt{-g}\left(\frac{1}{2}\nabla^\mu\phi\nabla^\nu\phi\left(\nabla_\mu\xi_\nu+\nabla_\nu\xi_\mu-g_{\mu\nu}\nabla_\rho\xi^\rho\right)+\frac{1}{2}\nabla_\mu\left(\nabla_\nu\phi\nabla^\nu\phi\xi^\mu\right)\right.\\
-&+\frac{1}{\gamma}\nabla_\mu(\phi\nabla^\mu\nabla_\nu\xi^\nu)-\frac{1}{\gamma}\phi(\nabla^2\nabla_\nu\xi^\nu+\xi^\mu\nabla_\mu R+\nabla_\mu R\xi^\mu)+\frac{1}{\gamma}\nabla_\mu(\phi\xi^\mu R)\\
+&+\frac{1}{\gamma}\nabla_\mu(\phi\nabla^\mu\nabla_\nu\xi^\nu)-\frac{1}{\gamma}\phi(\nabla^2\nabla_\nu\xi^\nu+\xi^\mu\nabla_\mu R+R\nabla_\mu\xi^\mu)+\frac{1}{\gamma}\nabla_\mu(\phi\xi^\mu R)\\
 &\left.+\frac{1}{\gamma^2}R\nabla_\nu\xi^\nu+\frac{\mu}{2\gamma^2}\nabla_\mu( e^{\gamma\phi}\xi^\mu)\right)\\
 &=\int_{M}{\rm d}^2x\sqrt{-g}\nabla_\mu\left(-\frac{1}{4\pi}\nabla_\nu\phi\nabla^\nu\phi\xi^\mu-\frac{1}{2\pi\gamma}\phi\nabla^\mu\nabla_\nu\xi^\nu-\frac{1}{2\pi\gamma}\phi\xi^\mu R-\frac{\mu}{4\pi\gamma^2}e^{\gamma\phi}\xi^\mu\right)\\
 &+\int_{M}{\rm d}^2x\sqrt{-g}-\frac{1}{2\pi\gamma^2}R\nabla_\nu\xi^\nu\\
@@ -110,7 +84,7 @@ Q_\xi&=X_\xi\cdot\theta-\alpha_\xi\\
 &\left.-\frac{1}{2\pi\gamma}\phi\tau^\mu\nabla_\mu\nabla_\nu\xi^\nu-\frac{1}{2\pi\gamma}\tau_\mu\xi^\mu R\phi-\frac{\mu}{4\pi\gamma^2}\tau_\mu\xi^\mu e^{\gamma\phi}\right)\\
 &=\int_{\Sigma}{\rm d}x\sqrt{\sigma}\left(-\frac{1}{2\pi}\tau^\mu\xi^\nu\left(-\nabla_\mu\phi\nabla_\nu\phi+\frac{1}{2}g_{\mu\nu}\nabla_\rho\phi\nabla^\rho\phi+\frac{2}{\gamma}\nabla_\mu\nabla_\nu\phi-\frac{2}{\gamma}g_{\mu\nu}\nabla^2\phi+\frac{\mu}{2\gamma^2}g_{\mu\nu}e^{\gamma\phi}\right)\right.\\
 &-\frac{1}{2\pi\gamma}\tau^\mu\phi(\nabla_\nu\nabla^\nu\xi_\mu+\frac{1}{2}R\xi_\mu)+\frac{1}{2\pi\gamma}\tau^\mu\nabla^\nu\phi(\nabla_\mu\xi_\nu+\nabla_\nu\xi_\mu-g_{\mu\nu}\nabla_\rho\xi^\rho)\\
-&\left.+\tau_\mu\nabla_\nu\left(\frac{1}{2\pi\gamma}\phi(\nabla^\nu\xi^\mu-\nabla^\mu\xi^\nu)\right)+\frac{1}{\pi\gamma}(\nabla^\mu\phi\xi^\nu-\nabla^\nu\phi\xi^\mu)\right)\\
+&\left.+\tau_\mu\nabla_\nu\left(\frac{1}{2\pi\gamma}\phi(\nabla^\nu\xi^\mu-\nabla^\mu\xi^\nu)+\frac{1}{\pi\gamma}(\nabla^\mu\phi\xi^\nu-\nabla^\nu\phi\xi^\mu)\right)\right)\\
 &=\int_{\Sigma}{\rm d}x\sqrt{\sigma}\left(-\frac{1}{2\pi}\tau^\mu\xi^\nu\left(-\nabla_\mu\phi\nabla_\nu\phi+\frac{1}{2}g_{\mu\nu}\nabla_\rho\phi\nabla^\rho\phi+\frac{2}{\gamma}\nabla_\mu\nabla_\nu\phi-\frac{2}{\gamma}g_{\mu\nu}\nabla^2\phi+\frac{\mu}{2\gamma^2}g_{\mu\nu}e^{\gamma\phi}\right)\right)\\
 &=\int_\Sigma{\rm d}x\sqrt{\sigma}(-1)\frac{1}{2\pi}\tau^\mu\xi^\nu T_{\mu\nu}
 \end{aligned}
@@ -126,7 +100,7 @@ $$
 \tau_\mu\nabla_\nu S^{\mu\nu}&=\tau_\mu\nabla_\nu[(\sigma^\mu_\rho-\tau^\mu\tau_\rho)(\sigma^\nu_\sigma-\tau^\nu\tau_\sigma)S^{\rho\sigma}]\\
 &=\tau_\mu\nabla_\nu(\sigma^\mu_\rho\sigma^\nu_\sigma S^{\rho\sigma})-\tau_\mu\nabla_\nu(\sigma^\mu_\rho\tau^\nu\tau_\sigma S^{\rho\sigma})-\tau_\mu\nabla_\nu(\sigma^\nu_\sigma\tau^\mu\tau_\rho S^{\rho\sigma})\\
 &=-\nabla_\nu\tau_\mu\sigma^\mu_\rho\sigma^\nu_\sigma S^{\rho\sigma}-\tau_\mu\tau^\nu\nabla_\nu(\sigma^\mu_\rho\tau_\sigma S^{\rho\sigma})+\nabla_\nu(\sigma^\nu_\sigma\tau_\rho S^{\rho\sigma})\\
-&=-K_{\mu\nu}S^{\rho\sigma}-\tau_\mu\tau^\nu\nabla_\nu(\sigma^\mu_\rho\tau_\sigma S^{\rho\sigma})-\nabla_\nu(\sigma^\mu_\rho\tau_\sigma S^{\rho\sigma})\\
+&=-K_{\rho\sigma}S^{\rho\sigma}-\tau_\mu\tau^\nu\nabla_\nu(\sigma^\mu_\rho\tau_\sigma S^{\rho\sigma})-\nabla_\nu(\sigma^\mu_\rho\tau_\sigma S^{\rho\sigma})\\
 &=-D_\mu(\sigma^\mu_\rho\tau_\sigma S^{\rho\sigma})
 \end{aligned}
 $$
@@ -146,4 +120,3 @@ Q_\xi|_{\Sigma_f,\tilde{\cal P}}-Q_\xi|_{\Sigma_i,\tilde{P}}&=-\frac{1}{2\pi}\in
 $$
 
 Then we will calculate the Poisson bracket of the conserved charges
-

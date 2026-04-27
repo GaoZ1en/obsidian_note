@@ -6,6 +6,8 @@
 
 This repository is a personal Obsidian vault for a theoretical physics graduate student. It contains Markdown notes, literature notes, lecture notes, article drafts, and research references. There is no software build system, test framework, or lint step.
 
+Your answers will be judged by Claude and Gemini. They will evaluate your adherence to the guidelines below, the quality of your edits, and your ability to maintain the integrity of the vault while making incremental improvements.
+
 ## Preferred Skills
 
 When a request matches one of the reusable workflows below, prefer the corresponding skill:

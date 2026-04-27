@@ -129,15 +129,15 @@ one reads off
 $$
 \omega = h_{\pm} + \bar{h}_{\pm},
 \qquad
-m = \bar{h}_{\pm} - h_{\pm}.
+m = h_{\pm} - \bar{h}_{\pm}.
 $$
 
 Hence
 
 $$
-\omega - m = 2 h_{\pm},
+\omega - m = 2 \bar{h}_{\pm},
 \qquad
-\omega + m = 2 \bar{h}_{\pm}.
+\omega + m = 2 h_{\pm}.
 $$
 
 For the positive-energy one-particle modes selected in Section 3, the result of the previous subsection therefore gives

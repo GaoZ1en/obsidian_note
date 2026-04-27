@@ -192,3 +192,63 @@ $$\begin{align}
 \left\{X^{\mu},X^{\nu}\right\}|_{\partial \Sigma} & =(\mathcal{F}^{-1})^{\mu \nu}
 \end{align}$$
 
+---
+
+consider the tensile case, with non-constant background fields, the action is given by
+
+$$\begin{align}
+S & =-\frac{T}{2}\int _{\mathcal{M}}\mathrm{d}^{2}\sigma\left(\sqrt{ -g }g^{ab}\nabla _{a}X^{\mu}\nabla _{b}X^{\nu}g_{\mu \nu}(X)+\epsilon ^{ab}B_{\mu \nu}(X)\nabla _{a}X^{\mu}\nabla _{b}X^{\nu}\right)
+\end{align}$$
+
+take a variation of the action
+
+$$\begin{align}
+\delta S & =T\int _{\mathcal{M}}\mathrm{d}^{2}\sigma \sqrt{ -g }E_{\rho}\delta X^{\rho}+\theta|_{\Sigma _{f}}-\theta|_{\Sigma _{i}} \\
+E_{\rho} & =g_{\mu \rho}(\nabla ^{2}X^{\mu}+\Gamma ^{\mu}_{~\rho \sigma}g^{ab}\nabla _{a}X^{\rho}\nabla _{b}X^{\sigma})-\frac{1}{2}\varepsilon ^{ab}H_{\mu \nu \rho}\nabla _{a}X^{\mu}\nabla _{b}X^{\nu}\delta X^{\rho} \\
+\theta & =T\int _{\Sigma}\mathrm{d}\sigma \sqrt{ \sigma }\tau _{a}(g^{ab}g_{\mu \nu}+\varepsilon ^{ab}B_{\mu \nu})\nabla _{b}X^{\mu}\delta X^{\nu}
+\end{align}$$
+
+where $\displaystyle{\sqrt{ -g }\varepsilon ^{ab}=\epsilon ^{ab}}$, and $\displaystyle{H_{\mu \nu \rho}=\partial _{\mu}B_{\nu \rho}+\partial _{\nu}B_{\rho \mu}+\partial _{\rho}B_{\mu \nu}}$. here the boundary condition is given by
+
+$$\begin{align}
+n_{a}(g^{ab}g_{\mu \nu}+\varepsilon ^{ab}B_{\mu \nu})\nabla _{b}X^{\nu}|_{\partial \Sigma} & =0 \\
+\implies n_{a}g^{ab}g_{\mu \nu}\nabla _{b}X^{\nu}|_{\partial \Sigma} & =-n_{a}\varepsilon ^{ab}B_{\mu \nu}\nabla _{b}X^{\nu}|_{\partial \Sigma}
+\end{align}$$
+
+for simplicity, we set $\displaystyle{g_{\mu \nu}=\eta _{\mu \nu}}$, choose the conformal gauge $\displaystyle{g^{ab}=\eta ^{ab}}$, and pick $\displaystyle{\tau _{a}=(1,0)}$ and $\displaystyle{n_{a}=(0,1)}$. we have
+
+$$\begin{align}
+\eta _{\mu \nu}X'^{\nu}|_{\partial \Sigma} & =B_{\mu \nu}\dot{X}^{\nu}|_{\partial\Sigma} \\
+\implies \dot{X}^{\mu} & =-(B^{-1}\eta)^{\mu}_{~\nu}X'^{\nu}
+\end{align}$$
+
+then the symplectic form becomes
+
+$$\begin{align}
+\omega & =\delta \theta \\
+ & =-T\int _{0}^{\pi}\mathrm{d}\sigma \left(\eta _{\mu \nu}\delta\dot{X}^{\mu}-B_{\mu \nu}\delta X'^{\mu}-\partial _{\rho}B_{\mu \nu}X'^{\mu}\delta X^{\rho}\right)\wedge \delta X^{\nu} \\
+ & =-T\int _{0}^{\pi}\mathrm{d}\sigma\left( \eta _{\mu \nu}\delta \dot{X}^{\mu}\wedge \delta X^{\nu}-\frac{1}{2}H_{\mu \nu \rho}X'^{\rho}\delta X^{\mu}\wedge \delta X^{\nu} \right) \\
+ & +\frac{T}{2}B_{\mu \nu}\delta X^{\mu}\wedge \delta X^{\nu}|_{\sigma=0}^{\sigma=\pi}
+\end{align}$$
+
+at boundary, we have
+
+$$\begin{align}
+\omega|_{\partial \Sigma} & = \frac{1}{2}\Omega_{\mu \nu}\delta X^{\mu}\wedge \delta X^{\nu} \\
+\Omega _{\mu \nu} & =T(B-\eta B^{-1}\eta)_{\mu \nu}
+\end{align}$$
+
+the variation of the symplectic form at boundary gives
+
+$$\begin{align}
+\delta \omega|_{\partial \Sigma} & =\frac{T}{6}H_{\mu \nu \rho}\delta X^{\mu}\wedge \delta X^{\nu}\wedge \delta X^{\rho}
+\end{align}$$
+
+the Jacobi identity is violated if $\displaystyle{H_{\mu \nu \rho}\neq 0}$. instead, we arrive at some nonassociative algebra for the endpoint coordinates
+
+$$\begin{align}
+\left\{X^{\mu},X^{\nu}\right\} & =\Theta ^{\mu \nu} \\
+\left\{X^{\mu},\left\{X^{\nu},X^{\rho}\right\}\right\}+\left\{X^{\nu},\left\{X^{\rho},X^{\mu}\right\}\right\}+\left\{X^{\rho},\left\{X^{\mu},X^{\nu}\right\}\right\} & =\Theta ^{\mu \lambda}\partial _{\lambda}\Theta ^{\nu \rho}+\Theta ^{\nu \lambda}\partial _{\lambda}\Theta ^{\rho \mu}+\Theta ^{\rho \lambda}\partial _{\lambda}\Theta ^{\mu \nu} \\
+ & \sim \Theta ^{\mu \lambda}\Theta ^{\nu \sigma}\Theta ^{\rho \tau}H_{\lambda \sigma \tau}
+\end{align}$$
+
