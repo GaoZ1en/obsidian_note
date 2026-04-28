@@ -152,7 +152,7 @@ A^{\phi} & =-\frac{C_{1}}{im}e^{-i\omega _{nm}t}e^{im\phi} r^{-1}(1+r^{2})\parti
 \omega _{nm} & =2n+2+|m|, \quad n\in \mathbb{N}
 \end{align}$$
 
----
+## a general procedure
 
 by introduce a scalar function $\displaystyle{\Psi}$ as
 
@@ -165,6 +165,8 @@ the eom can be written as
 $$\begin{align}
 (1+r^{2})\partial _{r}^{2}\Psi+\frac{1+3r^{2}}{r}\partial _{r}\Psi-\frac{1}{1+r^{2}}\partial _{t}^{2}\Psi+\frac{1}{r^{2}}\partial _{\Phi}^{2}\Psi & =0
 \end{align}$$
+
+### $\displaystyle{\omega\neq 0}$
 
 the solutions can be written in a more compact form for all $\displaystyle{m}$ as
 
@@ -191,3 +193,81 @@ thus the normalization constant is given by
 $$\begin{align}
 C_{nm} & =\sqrt{ \frac{(n+|m|+1)}{2\pi \omega _{nm}^{2}(n+1)} }
 \end{align}$$
+
+### $\displaystyle{\omega=0}$
+
+for $\displaystyle{\omega=0}$ case
+
+$$\begin{align}
+(1+r^{2})\partial _{r}^{2}\Psi+\frac{1+3r^{2}}{r}\partial _{r}\Psi+\frac{1}{r^{2}}\partial _{\Phi}^{2}\Psi & =0
+\end{align}$$
+
+To solve the zero-energy equation explicitly, we set
+
+$$\begin{align}
+\Psi(t,r,\phi) & =e^{im\phi}\psi_m(r)
+\end{align}$$
+
+and use Mathematica:
+
+```mathematica
+DSolve[
+  (1 + r^2) y''[r] + (1 + 3 r^2)/r y'[r] - m^2/r^2 y[r] == 0,
+  y[r],
+  r
+]
+```
+
+For $m=0$, Mathematica gives
+
+$$\begin{align}
+\psi_0(r) & =C_2+C_1\left(\log r-\frac{1}{2}\log(1+r^2)\right) \\
+& =C_2+C_1\log\frac{r}{\sqrt{1+r^2}} .
+\end{align}$$
+
+The $C_1$ branch gives
+
+$$\begin{align}
+A^\phi & =-\frac{1+r^2}{r}\partial_r\psi_0=-\frac{C_1}{r^2},
+\end{align}$$
+
+so it satisfies the asymptotic boundary condition at infinity. However, $\psi_0$ has a logarithmic singularity at $r=0$. If we require $\Psi$ itself to be regular at the origin, then $C_1=0$, and the remaining constant mode gives $A^r=A^\phi=0$.
+
+For $m\neq 0$, write $k=|m|$. For symbolic positive $k$, Mathematica gives the radial solutions in the form
+
+$$\begin{align}
+\psi_k(r)
+& =
+C_1 r^{-k}\,{}_{2}F_{1}\left(1-\frac{k}{2},-\frac{k}{2};1-k;-r^2\right) \\
+&\quad
++C_2 r^k\,{}_{2}F_{1}\left(1+\frac{k}{2},\frac{k}{2};1+k;-r^2\right).
+\end{align}$$
+
+For integer $k$, the first branch is understood as the limiting singular solution. It behaves as $r^{-k}$ near $r=0$, so regularity sets $C_1=0$. The regular branch is therefore
+
+$$\begin{align}
+\psi_k^{\mathrm{reg}}(r)
+& =
+C_2 r^k\,{}_{2}F_{1}\left(1+\frac{k}{2},\frac{k}{2};1+k;-r^2\right).
+\end{align}$$
+
+At large $r$, this branch has the asymptotic behavior
+
+$$\begin{align}
+\psi_k^{\mathrm{reg}}(r)
+& =
+C_2\frac{\Gamma(k+1)}{\Gamma\left(1+\frac{k}{2}\right)^2}
++\mathcal{O}(r^{-2}).
+\end{align}$$
+
+Since $m\neq 0$, the asymptotic condition on $A^r$ requires
+
+$$\begin{align}
+A^r=\frac{1+r^2}{r}\partial_\phi\Psi
+\sim imr\,\psi_k(r)
+=\mathcal{O}(r^{-1}),
+\end{align}$$
+
+which forces the constant term of $\psi_k(r)$ at infinity to vanish. The coefficient above is nonzero, so the regular branch must have $C_2=0$.
+
+Thus, imposing both the asymptotic boundary condition and regularity of $\Psi$ at $r=0$, there is no non-trivial zero-energy solution for $\Psi$. The only regular zero-energy solution is a constant $m=0$ mode, which produces the trivial gauge field $A=0$.

@@ -100,7 +100,7 @@ $$\begin{align}
 \mathcal{L}_{\xi _{0}}\psi _{(1,1)}^{\mu} & =-i\psi _{(1,1)}^{\mu} \\
 \mathcal{L}_{\bar{\xi}_{0}}\psi _{(1,1)}^{\mu} & =-i\psi _{(1,1)}^{\mu} \\
 \mathcal{L}_{\xi _{1}}\psi _{(1,1)}^{\mu} & =0 \\
-\mathcal{L}_{\bar{\xi}_{1}}\psi _{(1,1)}^{\mu} & =0
+\mathcal{L}_{\bar{\xi}_{1}}\psi _{(1,1)}^{\mu} & =\nabla ^{\mu}\Lambda _{\xi}
 \end{align}$$
 
 which leads to the solution
