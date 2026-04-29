@@ -88,7 +88,7 @@ Here, $\mathcal{T}$ denotes ordering with respect to the Euclidean time $\tau$. 
 
 ## 5.3 The explicit Euclidean correlation function
 
-We now perform the direct sums over the two highest-weight branches and derive an explicit expression for the Euclidean correlation function. To keep the calculation manageable, it is convenient to rewrite the vector modes in terms of scalar highest-weight modes and the relevant bitensors. The necessary definitions are reviewed in [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_c|Appendix C]].
+We now perform the direct sums over the two highest-weight branches and derive an explicit expression for the Euclidean correlation function. To keep the calculation manageable, it is convenient to rewrite the vector modes in terms of scalar highest-weight modes and the relevant bitensors. The necessary definitions are reviewed in [[Articles/Quantization in AdS3/Proca-Chern-Simons/arxiv/another template/appendix_c|Appendix C]].
 
 ### 5.3.1 Mode sums in the scalar basis
 
@@ -507,4 +507,4 @@ G^{\mu_{1},\mu_{2}}(x_{1},x_{2}) & =G_{\mathrm{path}}^{\mu_{1},\mu_{2}}(x_{1},x_
 
 This also agrees with the branch decomposition of the explicit mode sum. 
 
-For a more systematic constrained-Hamiltonian derivation of this statement, based on the Faddeev-Senjanovic path integral for second-class systems, see [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_d|Appendix D]].
+For a more systematic constrained-Hamiltonian derivation of this statement, based on the Faddeev-Senjanovic path integral for second-class systems, see [[Articles/Quantization in AdS3/Proca-Chern-Simons/arxiv/another template/appendix_d|Appendix D]].

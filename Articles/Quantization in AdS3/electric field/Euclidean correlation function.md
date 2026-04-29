@@ -209,11 +209,29 @@ G_{\mathrm{hw},+}^{\mu_1\mu_2}&=(D_1^{\mu_1}+\nabla_1^{\mu_1}\mathcal Q_1)(D_2^{
 where
 
 $$\begin{align}
-H(T,r_{1},r_{2},\phi)&=\sum_{n,\bar n\geq0}\chi_{n,\bar n}(x_{1})\chi_{n,\bar n}^{*}(x_{2}) \\
+H(x_{1},x_{2})&=\sum_{n,\bar n\geq0}\chi_{n,\bar n}(x_{1})\chi_{n,\bar n}^{*}(x_{2}) \\
  & =\int _{0}^{\infty} \mathrm{d}s\, s\, g_{2}(T+s,r_{1},r_{2},\phi)
 \end{align}$$
 
-is exactly the mode sums defined in the discussion of temporal gauge. the $T<0$ expression is obtained by complex conjugating the modes and exchanging the two insertions, as in the explicit mode sum above. we have
+is exactly the mode sums defined in the discussion of temporal gauge.
+
+---
+
+using $\displaystyle{P_{p}^{(q,1)}(-x)=(-1)^pP_{p}^{(1,q)}(x)}$, one finds
+
+$$\begin{align}
+\chi_{n,\bar n}(x)&=(-1)^p(-i)^q\Psi_{p,m_{n,\bar n}}(x),&p&=\min(n,\bar n),&q&=|n-\bar n|.
+\end{align}$$
+
+therefore the phases cancel in the product, and
+
+$$\begin{align}
+\sum_{n,\bar n\geq0}\chi_{n,\bar n}(x_{1})\chi_{n,\bar n}^{*}(x_{2})&=\sum_{p\geq0,m\in\mathbb Z}\Psi_{p,m}(x_{1})\Psi_{p,m}^{*}(x_{2}).
+\end{align}$$
+
+---
+
+the $T<0$ expression is obtained by complex conjugating the modes and exchanging the two insertions, as in the explicit mode sum above. we have
 
 $$\begin{align}
 G^{\mu_{1},\mu_{2}}_{\text{hw}} & =\theta(T)G^{\mu_{1},\mu_{2}}_{\text{hw},+}+\theta(-T)G^{\mu_{1},\mu_{2}}_{\text{hw},-} \\

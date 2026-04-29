@@ -32,7 +32,7 @@ $$\begin{align}
 \tau ^{\mu} & =\frac{1}{\sqrt{ 1+r^{2} }}\delta _{0}^{\mu}
 \end{align}$$
 
-The contributions from the near-boundary region are finite. In particular, the boundary term produced by integration by parts vanishes at spatial infinity, as verified in [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_a|Appendix A]].
+The contributions from the near-boundary region are finite. In particular, the boundary term produced by integration by parts vanishes at spatial infinity, as verified in [[Articles/Quantization in AdS3/Proca-Chern-Simons/arxiv/another template/appendix_a|Appendix A]].
 
 From this expression we read off the equations of motion $E^\mu = 0$:
 

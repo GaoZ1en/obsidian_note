@@ -249,4 +249,4 @@ Since $\mu _{+}\mu _{-}=\mu ^{2}$, this is exactly the same contact term that ap
 
 ---
 
-see also [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_d|appendix_d]] for more rigorous details.
+see also [[Articles/Quantization in AdS3/Proca-Chern-Simons/arxiv/another template/appendix_d|appendix_d]] for more rigorous details.

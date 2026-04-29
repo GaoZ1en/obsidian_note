@@ -1,6 +1,6 @@
 # 3. Reformulating the model as a Hamiltonian system
 
-In this section, we apply the covariant phase space formalism reviewed in Section 1 to the Proca-Chern-Simons model and rewrite it as a Hamiltonian system. We also discuss the Noether charges associated with the Killing symmetries. As shown in [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_a|Appendix A]], the near-boundary contributions at spatial infinity $\Gamma$ vanish under our asymptotic boundary conditions.
+In this section, we apply the covariant phase space formalism reviewed in Section 1 to the Proca-Chern-Simons model and rewrite it as a Hamiltonian system. We also discuss the Noether charges associated with the Killing symmetries. As shown in [[Articles/Quantization in AdS3/Proca-Chern-Simons/arxiv/another template/appendix_a|Appendix A]], the near-boundary contributions at spatial infinity $\Gamma$ vanish under our asymptotic boundary conditions.
 
 ## 3.1 The Hamiltonian system
 
@@ -26,7 +26,7 @@ $$\begin{align}
 \tau ^{\mu} & =\frac{1}{\sqrt{ 1+r^{2} }}\delta _{0}^{\mu}
 \end{align}$$
 
-The contributions from the near-boundary region are finite. In particular, the boundary term produced by integration by parts vanishes at spatial infinity, as verified in [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_a|Appendix A]].
+The contributions from the near-boundary region are finite. In particular, the boundary term produced by integration by parts vanishes at spatial infinity, as verified in [[Articles/Quantization in AdS3/Proca-Chern-Simons/arxiv/another template/appendix_a|Appendix A]].
 
 From this expression we read off the equations of motion $E^\mu = 0$:
 

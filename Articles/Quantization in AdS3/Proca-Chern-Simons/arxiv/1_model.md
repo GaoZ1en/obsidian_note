@@ -101,4 +101,4 @@ $$\begin{align}
 A_{t} & =o(r^{0}), & A_{r} & =o(r^{-3}), & A_{\phi} & =o(r^{0})
 \end{align}$$
 
-and the same falloffs hold for the corresponding variations. As shown in [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_a|Appendix A]], these asymptotic conditions ensure that the action and the physical quantities entering the covariant phase space analysis remain finite. Therefore, the theory admits a well-defined variational principle without the need for additional boundary counterterms.
+and the same falloffs hold for the corresponding variations. As shown in [[Articles/Quantization in AdS3/Proca-Chern-Simons/arxiv/another template/appendix_a|Appendix A]], these asymptotic conditions ensure that the action and the physical quantities entering the covariant phase space analysis remain finite. Therefore, the theory admits a well-defined variational principle without the need for additional boundary counterterms.

@@ -179,7 +179,7 @@ A few remarks are in order:
 
 1. $(\lambda)_{n}$ is the Pochhammer symbol defined as $(\lambda)_{n}=\frac{\Gamma(\lambda+n)}{\Gamma(\lambda)}$.
 2. The subscripts $+/-$ distinguish the two disconnected branches of the solution spectrum.
-3. See [[Articles/Quantization in AdS3/Proca-Chern-Simons/article/appendix_b|Appendix B]] the proof that no additional physical modes lie outside the span of these highest-weight descendants.
+3. See [[Articles/Quantization in AdS3/Proca-Chern-Simons/arxiv/another template/appendix_b|Appendix B]] the proof that no additional physical modes lie outside the span of these highest-weight descendants.
 
 ## 4.5 Symplectic form
 
