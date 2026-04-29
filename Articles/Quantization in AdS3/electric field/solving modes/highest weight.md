@@ -260,6 +260,54 @@ $$\begin{align}
 \psi_{(1,1),n,\bar{n}}^\mu& =\frac{\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\psi_{(1,1)}^\mu}{\sqrt{n!(n+1)!\bar{n}!(\bar{n}+1)!}},&n,\bar{n} & \geq 0 .
 \end{align}$$
 
+for reference, the unnormalized descendants have the closed form
+
+$$\begin{align}
+\widetilde{\psi}_{n,\bar{n}}^\mu
+&=\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\psi_{(1,1)}^\mu \\
+&=e^{-i\omega_{n,\bar n}t}e^{im_{n,\bar n}\phi}
+\left(f^t_{n,\bar n}(r),f^r_{n,\bar n}(r),f^\phi_{n,\bar n}(r)\right),
+\end{align}$$
+
+where
+
+$$\begin{align}
+\omega_{n,\bar n}&=2+n+\bar n, &
+m_{n,\bar n}&=n-\bar n, &
+p&=\min(n,\bar n), &
+q&=|n-\bar n|.
+\end{align}$$
+
+define
+
+$$\begin{align}
+s_{n,\bar n}(r)
+&=-iC(-i)^q p!(p+q+1)!
+\frac{r^q}{(1+r^2)^{1+q/2}}
+P_p^{(q,1)}\left(\frac{1-r^2}{1+r^2}\right).
+\end{align}$$
+
+for $m_{n,\bar n}\neq0$, the radial functions are
+
+$$\begin{align}
+f^r_{n,\bar n}
+&=\frac{m_{n,\bar n}\left(\omega_{n,\bar n}s_{n,\bar n}-r(1+r^2)\partial_rs_{n,\bar n}\right)}
+{(m_{n,\bar n}^2-\omega_{n,\bar n}^2)r}, \\
+f^t_{n,\bar n}
+&=-\frac{ir}{1+r^2}f^r_{n,\bar n}, \\
+f^\phi_{n,\bar n}
+&=\frac{(1+r^2)\partial_rs_{n,\bar n}+m_{n,\bar n}f^r_{n,\bar n}}
+{i\omega_{n,\bar n}r}.
+\end{align}$$
+
+the normalized modes are then
+
+$$\begin{align}
+\psi_{(1,1),n,\bar n}^\mu
+&=\frac{\widetilde{\psi}_{n,\bar n}^\mu}
+{\sqrt{n!(n+1)!\bar n!(\bar n+1)!}}.
+\end{align}$$
+
 they carry
 
 $$\begin{align}

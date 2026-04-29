@@ -498,15 +498,23 @@ $$\begin{align}
 h_{\mu \nu} & =\nabla _{\mu}\zeta _{\nu}+\nabla _{\nu}\zeta _{\mu}
 \end{align}$$
 
-where $\displaystyle{\zeta _{\mu}}$ is a vector field. by some algebra, we have
+where $\displaystyle{\zeta _{\mu}}$ is a vector field. by some algebra, for the $\displaystyle{(2,0)}$ primary, we have
 
 $$\begin{align}
-\zeta ^{t} & =\frac{iCr^{4}}{6(1+r^{2})^{2}}e^{-4it} \\
-\zeta ^{r} & =-\frac{Cr(2r^{3}+3)}{6(1+r^{2})}e^{-4it} \\
-\zeta ^{\phi} & =-\frac{iC(r^{2}+3)}{6(1+r^{2})}e^{-4it}
+h_{L,0}^{\mu,\nu} & =\nabla _{\mu}\zeta _{L}^{\nu}+\nabla _{\nu}\zeta _{L}^{\mu} \\
+\zeta _{L}^{t} & =\frac{iCe^{-2it+2i\phi}r^{4}}{24(1+r^{2})^{2}} \\
+\zeta _{L}^{r} & =-\frac{Ce^{-2it+2i\phi}r(3+2r^{2})}{24(1+r^{2})} \\
+\zeta _{L}^{\phi} & =-\frac{iCe^{-2it+2i\phi}(3+r^{2})}{24(1+r^{2})}
 \end{align}$$
 
-check needed.
+and for the $\displaystyle{(0,2)}$ primary, we have
+
+$$\begin{align}
+h_{R,0}^{\mu \nu} & =\nabla ^{\mu}\zeta _{R}^{\nu}+\nabla ^{\nu}\zeta _{R}^{\mu} \\
+\zeta _{R}^{t} & =\frac{iCe^{-2it-2i\phi}r^{4}}{24(1+r^{2})^{2}} \\
+\zeta _{R}^{r} & =-\frac{Ce^{-2it-2i\phi}r(3+2r^{2})}{24(1+r^{2})} \\
+\zeta _{R}^{\phi} & =\frac{iCe^{-2it-2i\phi}(3+r^{2})}{24(1+r^{2})}
+\end{align}$$
 
 # descendants
 
