@@ -166,7 +166,7 @@ Z[\beta,\Omega] & =\mathrm{Tr}e^{-\beta H+i\alpha J} \\
 
 here $\displaystyle{q=e^{-\beta +i\alpha}}$ and $\displaystyle{\bar{q}=e^{-\beta -i\alpha}}$. this result is consistent with Xi Yin's result.
 
-## loosen the highest weight condition
+## equivariance condition
 
 in the above discussion, we solve the highest weight conditions for $\displaystyle{(1,1)}$ branch
 
@@ -177,7 +177,7 @@ $$\begin{align}
 \mathcal{L}_{\bar{\xi}_{1}}\psi _{(1,1)}^{\mu} & =0
 \end{align}$$
 
-and only pure gauge modes are solved out. we try to loosen the highest weight conditions as
+and only pure gauge modes are solved out. for a gauge field, the highest-weight condition must be imposed equivariantly on the gauge-equivalence class rather than on a chosen representative. therefore the raising generators are required to annihilate the potential only modulo a gauge transformation:
 
 $$\begin{align}
 \mathcal{L}_{\xi _{0}}\psi _{(1,1)}^{\mu} & =-i\psi _{(1,1)}^{\mu} \\
