@@ -34,17 +34,18 @@ $$\begin{align}
 then the eom can be decomposed as
 
 $$\begin{align}
-(\mathcal{D}-\mu _{+})(\mathcal{D}+\mu _{-})A & =0 \\
-\mu _{\pm} & =\sqrt{ \mu ^{2}+\frac{k^{2}}{16\pi ^{2}} }\mp\frac{k}{4\pi}
+(\mathcal{D}-\mu _{-})(\mathcal{D}+\mu _{+})A & =0 \\
+\bar{\mu} & \equiv \sqrt{ \mu ^{2}+\frac{k^{2}}{16\pi ^{2}} } \\
+\mu _{\pm} & =\bar{\mu}\pm\frac{k}{4\pi}
 \end{align}$$
 
 thus the solution space can be decomposed into two sectors, each sector satisfies the first order equation
 
 $$\begin{align}
-(\mathcal{D}\mp\mu _{\pm})A_{\pm} & =0
+(\mathcal{D}\pm\mu _{\pm})A_{\pm} & =0
 \end{align}$$
 
-which corresponds to a left-handed vector mode with mass $\displaystyle{\mu _{+}}$ and a right-handed vector mode with mass $\displaystyle{\mu _{-}}$ respectively. the eigenvalue of the Casimir operator is given by
+which corresponds to the $+$ branch with mass $\displaystyle{\mu _{+}}$ and the $-$ branch with mass $\displaystyle{\mu _{-}}$ respectively. the eigenvalue of the Casimir operator is given by
 
 $$\begin{align}
 \mathcal{C}A_{+}^{\mu} & =\left( -\frac{1}{4}\mu _{+}^{2}+\frac{1}{2}\mu _{+} \right)A_{+}^{\mu} \\
@@ -68,28 +69,28 @@ $$\begin{align}
 the positive frequency mode solutions are given by
 
 $$\begin{align}
-f_{u,n,\bar{n}}^{\mu} & = \sqrt{ \frac{1}{n!\bar{n}!(\mu _{+})_{n}(\mu _{+}+2)_{\bar{n}}} } \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}A^{\mu}_{+,0,0} \\
-f_{u,0,0}^{\mu} & =\sqrt{ \frac{\mu _{+}+1}{\pi \mu _{+}} }\frac{e^{-i(\mu _{+}+2)t}}{(1+r^{2})^{1+\mu _{+}/2}}\xi _{1}^{\mu}
+f_{+,n,\bar{n}}^{\mu} & = \sqrt{ \frac{1}{n!\bar{n}!(\mu _{+})_{n}(\mu _{+}+2)_{\bar{n}}} } \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f^{\mu}_{+,0,0} \\
+f_{+,0,0}^{\mu} & =\sqrt{ \frac{\mu _{+}+1}{\pi \bar{\mu}} }\frac{e^{-i(\mu _{+}+2)t}}{(1+r^{2})^{1+\mu _{+}/2}}\xi _{1}^{\mu}
 \end{align}$$
 
 and
 
 $$\begin{align}
-f_{v,n,\bar{n}}^{\mu} & = \sqrt{ \frac{1}{n!\bar{n}!(\mu _{-}+2)_{n}(\mu _{-})_{\bar{n}}} } \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}A^{\mu}_{-,0,0} \\
-f_{v,0,0}^{\mu} & =\sqrt{ \frac{\mu _{-}+1}{\pi \mu _{-}} }\frac{e^{-i(\mu _{-}+2)t}}{(1+r^{2})^{1+\mu _{-}/2}}\bar{\xi} _{1}^{\mu}
+f_{-,n,\bar{n}}^{\mu} & = \sqrt{ \frac{1}{n!\bar{n}!(\mu _{-}+2)_{n}(\mu _{-})_{\bar{n}}} } \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}f^{\mu}_{-,0,0} \\
+f_{-,0,0}^{\mu} & =\sqrt{ \frac{\mu _{-}+1}{\pi \bar{\mu}} }\frac{e^{-i(\mu _{-}+2)t}}{(1+r^{2})^{1+\mu _{-}/2}}\bar{\xi}_{1}^{\mu}
 \end{align}$$
 
 here the normalization constant determined by the symplectic form
 
 $$\begin{align}
-\omega[A_{+,n_{1},\bar{n}_{1}},A^{*}_{+,n_{2},\bar{n}_{2}}] & =-i\delta _{n_{1}n_{2}}\delta _{\bar{n}_{1}\bar{n}_{2}} \\
-\omega[A_{-,n_{1},\bar{n}_{1}},A^{*}_{-,n_{2},\bar{n}_{2}}] & =-i\delta _{n_{1}n_{2}}\delta _{\bar{n}_{1}\bar{n}_{2}}
+\omega[f_{+,n_{1},\bar{n}_{1}},f^{*}_{+,n_{2},\bar{n}_{2}}] & =-i\delta _{n_{1}n_{2}}\delta _{\bar{n}_{1}\bar{n}_{2}} \\
+\omega[f_{-,n_{1},\bar{n}_{1}},f^{*}_{-,n_{2},\bar{n}_{2}}] & =-i\delta _{n_{1}n_{2}}\delta _{\bar{n}_{1}\bar{n}_{2}}
 \end{align}$$
 
 when $\displaystyle{k\to 0}$, we return to the Proca theory with $\displaystyle{\mu _{+}=\mu _{-}=\mu}$. take the following mode expansion
 
 $$\begin{align}
-A^{\mu} & =\sum _{n,\bar{n}=0}^{\infty}\left(a_{+,n,\bar{n}}A^{\mu}_{+,n,\bar{n}}+a^{\dagger}_{+,n,\bar{n}}A^{*\mu}_{+,n,\bar{n}}+a_{-,n,\bar{n}}A^{\mu}_{-,n,\bar{n}}+a^{\dagger}_{-,n,\bar{n}}A^{*\mu}_{}\right)
+A^{\mu} & =\sum _{n,\bar{n}=0}^{\infty}\left(a_{+,n,\bar{n}}f^{\mu}_{+,n,\bar{n}}+a^{\dagger}_{+,n,\bar{n}}f^{*\mu}_{+,n,\bar{n}}+a_{-,n,\bar{n}}f^{\mu}_{-,n,\bar{n}}+a^{\dagger}_{-,n,\bar{n}}f^{*\mu}_{-,n,\bar{n}}\right)
 \end{align}$$
 
 and promote $\displaystyle{a_{\pm,n,\bar{n}}}$ and $\displaystyle{a_{\pm,n,\bar{n}}^{\dagger}}$ to annihilation and creation operators, we can define the vacuum state $\displaystyle{\ket{\Omega}}$ as
@@ -97,4 +98,3 @@ and promote $\displaystyle{a_{\pm,n,\bar{n}}}$ and $\displaystyle{a_{\pm,n,\bar{
 $$\begin{align}
 a_{\pm,n,\bar{n}}\ket{\Omega} & =0, \forall n,\bar{n}
 \end{align}$$
-

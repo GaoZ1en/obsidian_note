@@ -1,3 +1,5 @@
+# second-order equation
+
 $$\tag{.}
 \begin{align}
 \nabla _{\mu}\nabla ^{\mu}A^{\nu}-\nabla _{\mu}\nabla ^{\nu}A^{\mu} & =\mu ^{2}A^{\nu}
@@ -361,20 +363,5 @@ A^{\phi}_{nm\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\
 \end{align}
 $$
 
-
----
-
-notice that when $\displaystyle{m\leqslant0}$, we write $\displaystyle{m'=-m\geqslant0}$, and $\displaystyle{\Phi _{m+}}$ satisfies the same equation as $\displaystyle{\Phi _{m'-}}$. similar situation for $\displaystyle{\Phi _{m-}}$, so the discussion about $\displaystyle{m=0}$ above agree with the discussion about generic $\displaystyle{m}$ above...
-
----
-
-in this part we will compare the result with the result via highest weight representation. but we will do this after dinner
-
-$$\tag{.}
-\begin{align}
-A_{0m\pm}^{t} & = \frac{1}{\mu+1+|m\mp 1|}\left[((\pm\mu+m)r^{2}+(\mp|m\mp 1|+m\mp 1))r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+3)/2}\right]e^{-i(\mu+1+|m\mp 1|)t}e^{im\phi} \\
-A^{r}_{0m\pm} & =\mp ir^{|m\mp 1|}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}e^{-i(\mu+1+|m\mp 1|)t}e^{im\phi} \\
-A^{\phi}_{0m\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}e^{-i(\mu+1+|m\mp 1|)t}e^{im\phi}
-\end{align}
-$$
+# first-order equation
 

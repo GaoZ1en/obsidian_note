@@ -105,7 +105,7 @@ $$\tag{1.3}\begin{align}
  & -2i^{m+2n-1}\sqrt{ \pi } \frac{\sqrt{ n(m+n) }}{\mu+m+2n} \sqrt{ \frac{\Gamma(m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+m+n)} }{f^{(+)}_{l,m+n,n-1}}^{\mu} \\
 {h^{(+)}_{-,m\geqslant 1,n}}^{\mu} & =-2i^{m+2n+1}\sqrt{ \pi } \frac{\sqrt{ (1+n)(1+m+n) }}{\mu+2+m+2n} \sqrt{ \frac{\Gamma(2+m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+2+m+n)} }{f^{(+)}_{r,m+n,n+1}}^{\mu} \\
  & +2i^{m+2n+1}\sqrt{ \pi } \frac{\sqrt{ (\mu+1+n)(\mu+1+m+n) }}{\mu+2+m+2n} \sqrt{ \frac{\Gamma(2+m+n)\Gamma(\mu+1+n)}{ \Gamma(1+n)\Gamma(\mu+2+m+n) }}{f^{(+)}_{l,1+m+n,n}}^{\mu} \\
-{h^{(+)}_{+,m\leqslant -1,n}}^{\mu} & =2i^{2n-m+1}\sqrt{ \pi } \frac{\sqrt{ (\mu+1+n)(\mu+1-m+n) }}{\mu+2-m+2n} \sqrt{ \frac{\Gamma(2-m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+2-m+n)} }{f^{(+)}_{r,n,1-m+n}} \\
+{h^{(+)}_{+,m\leqslant -1,n}}^{\mu} & =2i^{2n-m+1}\sqrt{ \pi } \frac{\sqrt{ (\mu+1+n)(\mu+1-m+n) }}{\mu+2-m+2n} \sqrt{ \frac{\Gamma(2-m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+2-m+n)} }{f^{(+)}_{r,n,1-m+n}}^{\mu} \\
  & -2i^{2n-m+1}\sqrt{ \pi } \frac{\sqrt{ (1+n)(1-m+n) }}{\mu+2-m+2n} \sqrt{ \frac{\Gamma(2-m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu+2-m+n)} }{f^{(+)}_{l,1+n,-m+n}}^{\mu} \\
 {h^{(+)}_{-,m\leqslant -1,n}}^{\mu} & =-2i^{2n-m-1}\sqrt{ \pi } \frac{\sqrt{ n(-m+n) }}{\mu-m+2n} \sqrt{ \frac{\Gamma(-m+n)\Gamma(\mu+1+n)}{\Gamma(1+n)\Gamma(\mu-m+n)} }{f^{(+)}_{r,-1+n,-m+n}}^{\mu} \\
  & +2i^{2n-m-1}\sqrt{ \pi } \frac{\sqrt{ (\mu+n)(\mu-m+n) }}{\mu-m+2n} \sqrt{ \frac{\Gamma(-m+n)\Gamma(\mu+1+n)}{\Gamma(n+1)\Gamma(\mu-m+n)} }{f^{(+)}_{l,n,-1-m+n}}^{\mu}
@@ -122,7 +122,7 @@ $$\tag{2.1}\begin{align}
 {h^{(+)}_{-,m=0,n}}^{t} & =e^{-i(\mu+2+2n)t} \frac{1}{\mu+2+2n}\left[(\mu r^{2}-2)(1+r^{2})^{-(\mu+4)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{2}(1+r^{2})^{-(\mu+6)/2}P_{n}^{(\mu,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
 {h^{(+)}_{-,m=0,n}}^{r} & =-ie^{-i(\mu+2+2n)t}r(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 {h^{(+)}_{-,m=0,n}}^{\phi} & =-e^{-i(\mu+2+2n)t}(1+r^{2})^{-(\mu+2)/2}P_{n}^{(\mu,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
-{h^{(+)}_{+,m\geqslant 1,n}}^{t} & =e^{-i(\mu+m+2n)t}e^{im\phi} \frac{1}{\mu+m+2n}\left[(\mu+m)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m-1}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+{h^{(+)}_{+,m\geqslant 1,n}}^{t} & =e^{-i(\mu+m+2n)t}e^{im\phi} \frac{1}{\mu+m+2n}\left[(\mu+m)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
 {h^{(+)}_{+,m\geqslant 1,n}}^{r} & =-ie^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 {h^{(+)}_{+,m\geqslant 1,n}}^{\phi} & =e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-2}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 {h^{(+)}_{-,m\geqslant 1,n}}^{t} & =e^{-i(\mu+2+m+2n)t}e^{im\phi} \frac{1}{\mu+2+m+2n}\left[((\mu-m)r^{2}-2(m+1))r^{m}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m+1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m+2}(1+r^{2})^{-(\mu+m+6)/2}P_{n}^{(\mu,m+1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
@@ -281,7 +281,7 @@ $$\begin{align}
 where
 
 $$\begin{align}
-{h^{(+)}_{+,m\geqslant 1,n}}^{t} & =e^{-i(\mu+m+2n)t}e^{im\phi} \frac{1}{\mu+m+2n}\left[(\mu+m)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m-1}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
+{h^{(+)}_{+,m\geqslant 1,n}}^{t} & =e^{-i(\mu+m+2n)t}e^{im\phi} \frac{1}{\mu+m+2n}\left[(\mu+m)r^{m}(1+r^{2})^{-(\mu+m+2)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m}(1+r^{2})^{-(\mu+m+4)/2}P_{n}^{(\mu,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
 {h^{(+)}_{+,m\geqslant 1,n}}^{r} & =-ie^{-i(\mu+m+2n)t}e^{im\phi}r^{m-1}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 {h^{(+)}_{+,m\geqslant 1,n}}^{\phi} & =e^{-i(\mu+m+2n)t}e^{im\phi}r^{m-2}(1+r^{2})^{-(\mu+m)/2}P_{n}^{(\mu,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
