@@ -42,6 +42,51 @@ here $\displaystyle{ip\cdot(x_{1}-x_{2})=-p_{\tau}(\tau_{1}-\tau_{2})+ip_{x}(x_{
 
 ---
 
+the numerical code also contains a literal stochastic path-integral computation. this is different from the analytic Gaussian inversion above. the analytic calculation uses the fact that the free Proca action is quadratic and directly inverts the momentum-space kernel. the stochastic calculation instead samples field configurations $A_{\tau}(\tau,x)$ and $A_{x}(\tau,x)$ with probability weight $e^{-S_{\mathrm{E}}[A]}$.
+
+on a periodic $N_{\tau}\times N_{x}$ lattice, with spacings $\Delta \tau$ and $\Delta x$, the sampled Euclidean action is
+
+$$
+S_{\mathrm{E}}[A]
+=\sum_{\tau,x}\Delta \tau \Delta x\left[
+\frac{1}{2}\left(D_{\tau}A_{x}(\tau,x)-D_{x}A_{\tau}(\tau,x)\right)^{2}
++\frac{1}{2}\mu ^{2}\left(A_{\tau}(\tau,x)^{2}+A_{x}(\tau,x)^{2}\right)
+\right],
+$$
+
+where $D_{\tau}$ and $D_{x}$ are forward lattice differences with periodic boundary conditions. because the Proca mass removes the gauge zero mode, no gauge fixing is needed for this free massive vector theory.
+
+the Metropolis update is a single-site update. for each component and each lattice site, the code proposes
+
+$$
+A_{\mu}(\tau,x)\longrightarrow A_{\mu}(\tau,x)+\epsilon \eta,
+$$
+
+where $\eta$ is a standard normal random variable and $\epsilon$ is controlled by `--mc-step-size`. the code computes the local action difference $\Delta S_{\mathrm{E}}$ from the mass term and the adjacent plaquettes touched by that variable, then accepts the proposal with probability
+
+$$
+P_{\mathrm{acc}}=\min(1,e^{-\Delta S_{\mathrm{E}}}).
+$$
+
+after `--mc-thermalization` sweeps are discarded, the code saves one configuration every `--mc-sweeps-between` sweeps. the measured correlator is the translationally averaged estimator
+
+$$
+G^{\mathrm{MC}}_{\mu\nu}(r)
+=\frac{1}{N_{\mathrm{cfg}}}\sum_{\mathrm{cfg}}
+\frac{1}{N_{\tau}N_{x}}\sum_{y}
+A_{\mu}^{(\mathrm{cfg})}(y+r)A_{\nu}^{(\mathrm{cfg})}(y).
+$$
+
+in the implementation this spatial average is evaluated by FFT convolution for each saved configuration. since the sampled variables are the Euclidean path-integral fields themselves, $G^{\mathrm{MC}}_{\mu\nu}$ should be compared with $G_{\text{path}}^{\mu\nu}$, not with $G_{\text{canonical}}^{\mu\nu}$. in particular, the $\tau\tau$ component at the origin contains the same lattice contact term
+
+$$
+\frac{1}{\mu ^{2}\Delta \tau \Delta x}\delta_{\tau,0}\delta_{x,0},
+$$
+
+which is subtracted in the canonical correlator. the local Metropolis algorithm is therefore a genuine path-integral sampling method, although it is much less efficient than direct Gaussian inversion for this free theory and thermalizes slowly at large $N$.
+
+---
+
 in canonical formalism, we expand the field in Fourier modes and quantize the theory. the mode expansion of the field in the Lorentzian signature is given by
 
 $$\begin{align}

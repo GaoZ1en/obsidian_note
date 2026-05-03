@@ -24,3 +24,6 @@
 /**/*.npz
 /**/requirements.txt
 /**/*.png
+
+# Ignore compressed files
+/**/*.zip
