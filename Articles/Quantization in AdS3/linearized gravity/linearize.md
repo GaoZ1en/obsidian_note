@@ -102,15 +102,6 @@ L & =\sqrt{ -g }(R+2) \\
  & := \sqrt{ -g^{(0)} }\mathcal{L}
 \end{align}$$
 
-take a variation of the action
-
-$$\begin{align}
-\delta S & =\int _{M}\sqrt{ -g^{(0)} }E_{\mu \nu}\delta h^{\mu \nu}+\sqrt{ -g^{(0)} }\nabla ^{(0)}_{\mu}\theta^{\mu} \\
-E_{\mu \nu} & =-h_{\mu \nu}-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}+\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)2}h+\frac{1}{2}\nabla _{\mu}^{(0)}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}+\frac{1}{2}\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\rho}h_{\mu}^{~\rho}-\frac{1}{2}\nabla _{\mu}^{(0)}\nabla ^{(0)}_{\nu}h \\
-\theta ^{\mu} & =\nabla ^{(0)}_{\nu}\delta h^{\mu \nu}-\nabla ^{(0)\mu}\delta h \\
-\omega & =\int _{\Sigma}\sqrt{-g^{(0)}}\left[\frac12 \delta h_\mu{}^\nu\wedge \nabla ^{(0)}_\nu\delta h-\frac12 \delta h\wedge\nabla^{(0)\mu}\delta h+\frac12 \delta h\wedge\nabla_\nu ^{(0)}\delta h^{\mu\nu}+\frac12 \delta h^{\nu\rho}\wedge\nabla^{(0)\mu}\delta h_{\nu\rho}-\delta h^{\nu\rho}\wedge\nabla ^{(0)}_\rho\delta h_\mu{}_\nu\right].
-\end{align}$$
-
 the linearized eom reads
 
 $$\begin{align}
@@ -144,93 +135,110 @@ $$\begin{align}
 -h_{\mu \nu}+g^{(0)}_{\mu \nu}h-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu} & =0
 \end{align}$$
 
-after gauge fixing, the action and the symplectic form becomes
-
+after gauge fixing, the action becomes
 
 $$\begin{align}
-S & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\left( -4+2h_{\mu \nu}h^{\mu \nu}+h^{\mu \nu}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\rho}h^{\mu \nu}+\frac{3}{4}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}\right) \\
-\omega & =\int _{\Sigma}\sqrt{\sigma^{(0)}}\tau _{\mu}\left[\frac12 \delta h^{\nu\rho}\wedge\nabla^{(0)\mu}\delta h_{\nu\rho}-\delta h^{\nu\rho}\wedge\nabla ^{(0)}_\rho\delta h_\mu{}_\nu\right]
+S & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\left( -4+2h_{\mu \nu}h^{\mu \nu}+h^{\mu \nu}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\rho}h^{\mu \nu}+\frac{3}{4}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}\right)
 \end{align}$$
 
-where $\displaystyle{\sigma _{ab}}$ is the induced metric on the Cauchy surface $\displaystyle{\Sigma}$, and $\displaystyle{\tau _{\mu}}$ is the unit normal vector to $\displaystyle{\Sigma}$.
+take a variation of the action, we get the eom and the symplectic form
 
 $$\begin{align}
-\mathrm{d}s^{2}_{\Sigma} & = \frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2} \\
-\tau _{\mu} & = \left( \sqrt{ 1+r^{2} },0,0 \right)
+\delta S & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }E_{\mu \nu}\delta h^{\mu \nu}+\theta|_{\Sigma _{f}}-\theta|_{\Sigma _{i}} \\
+\theta & =-\frac{1}{16\pi G}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\left( h_{\nu \rho}\nabla ^{\mu}\delta h^{\nu \rho}+\frac{1}{2}\delta h^{\nu \rho}\nabla ^{(0)\mu}h_{\nu \rho}-\delta h^{\nu \rho}\nabla ^{(0)}_{\rho}h^{\mu}_{~\nu} \right) \\
+\omega & =\delta \theta \\
+ & =-\frac{1}{16\pi G}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\left(\frac{1}{2}\delta h^{\nu \rho}\wedge \nabla ^{(0)\mu}\delta h_{\nu \rho}+\delta h^{\nu \rho}\nabla ^{(0)}_{\rho}\delta h^{\mu}_{~\nu}\right)
 \end{align}$$
 
 ---
 
-boundary action
-
-For the boundary term
+consider the boundary action
 
 $$\begin{align}
 S_{\Gamma} & =\frac{1}{8\pi G}\int_{\Gamma}\mathrm{d}^{2}x\sqrt{-\gamma}(K-1),
 \end{align}$$
 
-use the radial decomposition near the cutoff surface and impose radial gauge
+we first consider the outward pointing unit vector $\displaystyle{n_{\mu}}$, normalized by $\displaystyle{g^{\mu \nu}n_{\mu}n_{\nu}=1}$. we have
 
 $$\begin{align}
-h_{n\mu} & =0,
+n_{r} & =\frac{1}{r}+\frac{1}{2}rh_{rr}-\frac{1}{2r^{3}}+\mathcal{O}\left( r^{-5} \right) \\
+n_{a} & =0 \\
+n^{r} & =r-\frac{1}{2}r^{3}h_{rr}+\frac{1}{2r}+\mathcal{O}\left( r^{-3} \right) \\
+n^{a} & =-\frac{1}{r}\gamma ^{(0)ab}h_{rb}+\mathcal{O}(r^{-6})
 \end{align}$$
 
-so that the lapse and shift are not perturbed and the induced metric is
+then the induced metric.
 
 $$\begin{align}
-\gamma_{ab} & =\gamma^{(0)}_{ab}+h_{ab}.
+\gamma _{rr} & =g_{rr}-n_{r}n_{r} \\
+ & =\frac{1}{r^{2}}\gamma ^{(0)ab}h_{ra}h_{rb}+\mathcal{O}(r^{-6}) \\
+\gamma _{ra} & =g_{ra}-n_{r}n_{a} \\
+ & =h_{ra} \\
+ \gamma _{ab} & =g_{ab}-n_{a}n_{b} \\
+ & =r^{2}\gamma^{(0)}_{ab}+h_{ab}
 \end{align}$$
-
-Let $\displaystyle{\bar \gamma_{ab}=\gamma^{(0)}_{ab}}$, $\displaystyle{\bar K_{ab}=K_{ab}^{(0)}}$, $\displaystyle{\bar K=\bar \gamma^{ab}\bar K_{ab}}$, and $\displaystyle{h_{\Gamma}=\bar \gamma^{ab}h_{ab}}$. In this gauge,
 
 $$\begin{align}
-K_{ab} & =\bar K_{ab}+\frac{1}{2}\mathcal{L}_{n^{(0)}}h_{ab}+\mathcal{O}(h^{2}),\\
-\gamma^{ab} & =\bar \gamma^{ab}-h^{ab}+h^{a}{}_{c}h^{cb}+\mathcal{O}(h^{3}),\\
-\sqrt{-\gamma} & =\sqrt{-\bar \gamma}\left(1+\frac{1}{2}h_{\Gamma}+\frac{1}{8}h_{\Gamma}^{2}-\frac{1}{4}h_{ab}h^{ab}+\mathcal{O}(h^{3})\right).
+\gamma _{r}^{~r} & =0 \\
+\gamma _{r}^{~a} & =\frac{1}{r^{2}}\gamma ^{(0)ab}h_{rb}-\frac{1}{r^{4}}\gamma ^{(0)ab}\gamma ^{(0)cd}h_{bc}h_{rd}+\mathcal{O}(r^{-7}) \\
+\gamma _{a}^{~r} & =0 \\
+\gamma _{a}^{~b} & =\delta _{a}^{~b}
 \end{align}$$
-
-The boundary action to quadratic order is
 
 $$\begin{align}
-S_{\Gamma} & =\frac{1}{8\pi G}\int_{\Gamma}\mathrm{d}^{2}x\sqrt{-\bar \gamma}\left(\mathcal{L}_{\Gamma}^{(0)}+\mathcal{L}_{\Gamma}^{(1)}+\mathcal{L}_{\Gamma}^{(2)}+\mathcal{O}(h^{3})\right),
+\gamma ^{r}_{~r} & =0 \\
+\gamma ^{r}_{~a} & =0 \\
+\gamma ^{a}_{~r} & =\frac{1}{r^{2}}\gamma ^{(0)ab}h_{rb}-\frac{1}{r^{4}}\gamma ^{(0)ab}\gamma ^{(0)cd}h_{bc}h_{rd}+\mathcal{O}(r^{-7}) \\
+\gamma ^{a}_{~b} & =\delta ^{a}_{~b}
 \end{align}$$
-
-where
 
 $$\begin{align}
-\mathcal{L}_{\Gamma}^{(0)} & =\bar K-1,\\
-\mathcal{L}_{\Gamma}^{(1)} & =\frac{1}{2}\bar \gamma^{ab}\mathcal{L}_{n^{(0)}}h_{ab}-\bar K^{ab}h_{ab}+\frac{1}{2}(\bar K-1)h_{\Gamma},\\
-\mathcal{L}_{\Gamma}^{(2)} & =\bar K_{ab}h^{a}{}_{c}h^{bc}-\frac{1}{2}h^{ab}\mathcal{L}_{n^{(0)}}h_{ab}+\frac{1}{4}h_{\Gamma}\bar \gamma^{ab}\mathcal{L}_{n^{(0)}}h_{ab}\\
-&\quad-\frac{1}{2}h_{\Gamma}\bar K^{ab}h_{ab}+\frac{1}{8}(\bar K-1)h_{\Gamma}^{2}-\frac{1}{4}(\bar K-1)h_{ab}h^{ab}.
+\gamma ^{rr} & =0 \\
+\gamma ^{ra} & =0 \\
+\gamma ^{ab} & =\frac{1}{r^{2}}\gamma ^{(0)ab}-\frac{1}{r^{4}}h^{ab}+\mathcal{O}(r^{-6})
 \end{align}$$
 
-Here all boundary indices are raised and lowered with $\displaystyle{\bar \gamma_{ab}}$. The corresponding xAct code is
+where $\displaystyle{\gamma ^{(0)ab}=\mathrm{diag}(-1,+1)}$. the determinant of the induced metric
 
-```mathematica
-Needs["xAct`xTensor`"];
+$$\begin{align}
+\sqrt{-\gamma}& =r^{2}+\frac{1}{2}\left(1+r^{2}g^{(0)}_{ab}h^{ab}\right)+\mathcal{O}(r^{-2})
+\end{align}$$
 
-DefManifold[B, 2, {a, b, c, d, e, f, i, j, k, l}];
-DefMetric[-1, gam[-a, -b], CD, {"|", "D"}, PrintAs -> "\[Gamma]"];
+then the extrinsic curvature
 
-DefTensor[h[-a, -b], B, Symmetric[{1, 2}], PrintAs -> "h"];
-DefTensor[K0[-a, -b], B, Symmetric[{1, 2}], PrintAs -> "K"];
-DefTensor[Lnh[-a, -b], B, Symmetric[{1, 2}], PrintAs -> "Lnh"];
+$$\begin{align}
+K_{\mu \nu} & =\gamma _{\mu}^{~\rho}\gamma _{\nu}^{~\sigma}\nabla _{\rho}n_{\sigma} \\
+ & =\gamma _{\mu}^{~\rho}\gamma _{\nu}^{~\sigma}(\partial _{\rho}n_{\sigma}-\Gamma ^{\lambda}_{~\rho \sigma}n_{\lambda})
+\end{align}$$
 
-sqrtExp =
-  1 + eps/2 h[c, -c] +
-    eps^2 (1/8 h[c, -c] h[d, -d] - 1/4 h[-c, -d] h[c, d]);
+which gives
 
-invExp =
-  gam[a, b] - eps h[a, b] + eps^2 h[a, c] h[-c, b];
+$$\begin{align}
+K_{rr} & =\frac{1}{r^{2}}\gamma ^{(0)ab}h_{ra}h_{rb}+\mathcal{O}(r^{-10}) \\
+K_{ra} & =h_{ra}+\mathcal{O}(r^{-5}) \\
+K_{ab} & =\left( r^{2}+\frac{1}{2} -\frac{r^{4}}{2}h_{rr}\right)\gamma ^{(0)}_{ab}+\frac{r}{2}\partial _{r}h_{ab}+\mathcal{O}(r^{-2})
+\end{align}$$
 
-kabExp =
-  K0[-a, -b] + eps/2 Lnh[-a, -b];
+and
 
-expr = sqrtExp (invExp kabExp - 1);
+$$\begin{align}
+K^{rr} & =\frac{1}{2}[(1-r^{4}h_{rr})\gamma ^{(0)ab}h_{ra}h_{rb}+r\gamma ^{(0)ab}\gamma ^{(0)cd}h_{ra}h_{rc}\partial _{r}h_{cd}]+\mathcal{O}(r^{-8}) \\
+K^{ra} & =\frac{1}{2r^{2}}[(1-r^{4}h_{rr})\gamma ^{(0)ab}h_{rb}-r \gamma ^{(0)ab}\gamma ^{(0)cd}h_{rc}\partial _{r}h_{ad}]+\mathcal{O}(r^{-7}) \\
+K^{ab} & =\frac{1}{r^{2}}\gamma ^{(0)ab}+\frac{1}{r^{4}}\left[ 2\delta ^{a}_{t}\delta ^{b}_{t}+\frac{1}{2}\gamma ^{(0)ab}-2\gamma ^{(0)ab}\gamma ^{(0)cd}h_{cd}+\frac{r}{2}\gamma ^{(0)ab}\gamma ^{(0)cd}\partial _{r}h_{cd}-\frac{r^{4}}{2}\gamma ^{(0)ab}h_{rr} \right]+\mathcal{O}(r^{-6})
+\end{align}$$
 
-L0 = ToCanonical[Coefficient[Expand[expr], eps, 0]];
-L1 = ToCanonical[Coefficient[Expand[expr], eps, 1]];
-L2 = ToCanonical[Coefficient[Expand[expr], eps, 2]];
+and the trace
 
-{L0, L1, L2}
-```
+$$\begin{align}
+K & =2+\frac{1}{r^{2}}\left( -\gamma ^{(0)ab}h_{ab}+\frac{r}{2}\gamma ^{(0)ab}\partial _{r}h_{ab}-r^{4}h_{rr} \right)+\mathcal{O}(r^{-4})
+\end{align}$$
+
+the boundary Lagrangian is given by
+
+$$\begin{align}
+S_{\text{bdy}} & =\frac{1}{8\pi G}\int _{\Gamma} \mathrm{d}^{2}x\sqrt{ -\gamma }(K-1) \\
+ & =\frac{1}{8\pi G}\int _{\Gamma}\mathrm{d}^{2}x\left(r^{2}+\frac{1}{2}-\frac{1}{2}\gamma ^{(0)ab}h_{ab}+\frac{r}{2}\gamma ^{(0)ab}\partial _{r}h_{ab}-r^{4}h_{rr}+r^{2}\gamma ^{(0)ab}h_{ra}h_{rb}-rD^{(0)a}h_{ra}+\mathcal{O}\left(r^{-2} \right)\right)
+\end{align}$$
+
+---
+
