@@ -512,7 +512,7 @@ h_{\mu \nu} & =\nabla _{\mu}\zeta _{\nu}+\nabla _{\nu}\zeta _{\mu}
 where $\displaystyle{\zeta _{\mu}}$ is a vector field. by some algebra, for the $\displaystyle{(2,0)}$ primary, we have
 
 $$\begin{align}
-h_{L,0}^{\mu,\nu} & =\nabla _{\mu}\zeta _{L}^{\nu}+\nabla _{\nu}\zeta _{L}^{\mu} \\
+h_{L,0}^{\mu,\nu} & =\nabla ^{\mu}\zeta _{L}^{\nu}+\nabla ^{\nu}\zeta _{L}^{\mu} \\
 \zeta _{L}^{t} & =\frac{iCe^{-2it+2i\phi}r^{4}}{24(1+r^{2})^{2}} \\
 \zeta _{L}^{r} & =-\frac{Ce^{-2it+2i\phi}r(3+2r^{2})}{24(1+r^{2})} \\
 \zeta _{L}^{\phi} & =-\frac{iCe^{-2it+2i\phi}(3+r^{2})}{24(1+r^{2})}
