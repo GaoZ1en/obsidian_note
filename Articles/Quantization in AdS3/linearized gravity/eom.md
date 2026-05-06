@@ -163,21 +163,6 @@ h_{L,n}^{\mu \nu} & =\sharp\mathcal{L}_{\xi _{-1}}^{n}h_{L,0}^{\mu \nu} \\
 h_{R,n}^{\mu \nu} & =\sharp\mathcal{L}_{\bar{\xi}_{-1}}^{n}h_{R,0}^{\mu \nu}
 \end{align}$$
 
-here $\displaystyle{\sharp}$ is the normalization factor to be determined by the symplectic form. the symplectic potential is given by
-
-$$\begin{align}
-\theta & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\rho}\Theta ^{\rho} \\
-\Theta ^{\rho} & =-2(\delta ^{\rho}_{\mu}h_{\nu}^{~\sigma}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu}-\nabla ^{(0)}_{\mu}h_{\nu}^{~\rho}\delta h^{\mu \nu}) \\
- & +g^{(0)\rho \sigma}(h_{\mu \nu}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu}-\nabla ^{(0)}_{\sigma}h_{\mu \nu}\delta h^{\mu \nu}) \\
- & -\frac{1}{2}(\nabla ^{(0)}_{\mu}h_{\nu}^{~\rho}+\nabla ^{(0)}_{\nu}h_{\mu}^{~\rho})\delta h^{\mu\nu}+\frac{3}{2}\nabla ^{(0)\rho}h^{\mu \nu}\delta h_{\mu \nu}
-\end{align}$$
-
-here we have imposed the gauge conditions $\displaystyle{h=0,\nabla _{\mu}^{(0)}h^{\mu \nu}=0}$. the symplectic form is given by
-
-$$\begin{align}
-\omega & =\delta \theta \\
- & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\rho}\left( -\frac{3}{2}\delta h^{\mu \nu}\wedge (\nabla ^{(0)}_{\mu}\delta h_{\nu}^{~\rho}+\nabla _{\nu}^{(0)}\delta h_{\mu}^{~\rho})+\frac{1}{2}\delta h_{\mu \nu}\wedge\nabla ^{(0)\rho}\delta h^{\mu \nu} \right)
-\end{align}$$
 
 the each modes are orthogonal with respect to the symplectic form in the sense that
 
@@ -482,7 +467,33 @@ $$\begin{align}
 h_{R,0}^{\mu \nu} & =\frac{Ce^{-4it}}{(1+r^{2})^{2}}\xi _{1}^{\mu}\xi _{1}^{\nu}
 \end{align}$$
 
-which agree with the former results obtained by observing the "square" relation between the vector and tensor highest weight modes. furthermore, the transverse and traceless gauge condition are also satisfied
+the normalization constant is determined by the symplectic form as
+
+$$\begin{align}
+\omega[h,h^{*}] & =-i \\
+\implies C & =8\sqrt{ 3G }
+\end{align}$$
+
+where the symplectic form is given by
+
+$$\begin{align}
+\omega & =-\frac{1}{32\pi G}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\delta h^{\nu \rho}\wedge \nabla ^{(0)\mu}\delta h_{\nu \rho}+\frac{1}{16\pi G}\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu}\delta h^{\mu}_{~\rho}\wedge \delta h^{\nu \rho}
+\end{align}$$
+
+and the descendants
+
+$$\begin{align}
+h^{\mu \nu}_{L,n} & = C_{n} \mathcal{L}_{\xi _{-1}}^{n}h_{L,0}^{\mu \nu} \\
+h^{\mu \nu}_{R,\bar{n}} & =C_{\bar{n}}\mathcal{L}_{\bar{\xi} _{-1}}^{\bar{n}}h_{R,0}^{\mu \nu}
+\end{align}$$
+
+where the representation-theoretic normalization factors are
+
+$$\begin{align}
+C_{n} &=\sqrt{\frac{6}{n!(n+3)!}},&C_{\bar{n}} &=\sqrt{\frac{6}{\bar{n}!(\bar{n}+3)!}}.
+\end{align}$$
+
+These expressions agree with the former results obtained by observing the "square" relation between the vector and tensor highest weight modes. furthermore, the transverse and traceless gauge condition are also satisfied
 
 $$\begin{align}
 h_{\lambda,0} & =g_{\mu \nu}h^{\mu \nu} \\
@@ -516,33 +527,3 @@ h_{R,0}^{\mu \nu} & =\nabla ^{\mu}\zeta _{R}^{\nu}+\nabla ^{\nu}\zeta _{R}^{\mu}
 \zeta _{R}^{\phi} & =\frac{iCe^{-2it-2i\phi}(3+r^{2})}{24(1+r^{2})}
 \end{align}$$
 
-# descendants
-
-the descendants of the highest weight modes can be obtained by iterating the lowering operators $\displaystyle{\mathcal{L}_{\xi _{-1}}}$ and $\displaystyle{\mathcal{L}_{\bar{\xi}_{-1}}}$ on the primary modes $\displaystyle{h_{\lambda,0}^{\mu \nu}}$. however, since
-
-$$\begin{align}
-\mathcal{L}_{\bar{\xi} _{0}}h_{L,0}^{\mu \nu} & =0 \\
-\mathcal{L}_{\xi _{0}}h_{R,0}^{\mu \nu} & =0
-\end{align}$$
-
-and
-
-$$\begin{align}
-\mathcal{\bar{C}} h_{L,0}^{\mu \nu} & =0 \\
-\mathcal{C}h_{R,0}^{\mu \nu} & =0
-\end{align}$$
-
-we have
-
-$$\begin{align}
-\mathcal{L}_{\bar{\xi} _{-1}}h_{L,0}^{\mu \nu} & =0 \\
-\mathcal{L}_{\xi _{-1}}h_{R,0}^{\mu \nu} & =0
-\end{align}$$
-
-which means that we can only act $\displaystyle{\mathcal{L}_{\xi _{-1}}}$ on $\displaystyle{h_{L,0}^{\mu \nu}}$ and $\displaystyle{\mathcal{L}_{\bar{\xi} _{-1}}}$ on $\displaystyle{h_{R,0}^{\mu \nu}}$ to get the descendants. we have
-
-$$\begin{align}
-h_{L,n}^{\mu \nu} & \propto\mathcal{L}_{\xi _{-1}}^{n}\left(A_{L,0}^{\mu}A_{L,0}^{\nu}\right) \\
- & =\sum _{k=0}^{n}\binom{n}{k} \mathcal{L}_{\xi _{-1}}^{k}A_{L,0}^{\mu}\mathcal{L}_{\xi _{-1}}^{n-k}A_{L,0}^{\nu} \\
-h_{R,n}^{\mu \nu} & \propto \sum _{k=0}^{n}\binom{n}{k}\mathcal{L}_{\bar{\xi}_{-1}}^{k}A_{R,0}^{\mu}\mathcal{L}_{\bar{\xi}_{-1}}^{n-k}A_{R,0}^{\nu}
-\end{align}$$

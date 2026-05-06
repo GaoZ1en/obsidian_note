@@ -147,7 +147,22 @@ $$\begin{align}
 \delta S & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }E_{\mu \nu}\delta h^{\mu \nu}+\theta|_{\Sigma _{f}}-\theta|_{\Sigma _{i}} \\
 \theta & =-\frac{1}{16\pi G}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\left( h_{\nu \rho}\nabla ^{\mu}\delta h^{\nu \rho}+\frac{1}{2}\delta h^{\nu \rho}\nabla ^{(0)\mu}h_{\nu \rho}-\delta h^{\nu \rho}\nabla ^{(0)}_{\rho}h^{\mu}_{~\nu} \right) \\
 \omega & =\delta \theta \\
- & =-\frac{1}{16\pi G}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\left(\frac{1}{2}\delta h^{\nu \rho}\wedge \nabla ^{(0)\mu}\delta h_{\nu \rho}+\delta h^{\nu \rho}\nabla ^{(0)}_{\rho}\delta h^{\mu}_{~\nu}\right)
+ & =-\frac{1}{16\pi G}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\left(\frac{1}{2}\delta h^{\nu \rho}\wedge \nabla ^{(0)\mu}\delta h_{\nu \rho}+\delta h^{\nu \rho}\wedge\nabla ^{(0)}_{\rho}\delta h^{\mu}_{~\nu}\right) \\
+ & =-\frac{1}{32\pi G}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\delta h^{\nu \rho}\wedge \nabla ^{(0)\mu}\delta h_{\nu \rho}+\frac{1}{16\pi G}\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu}\delta h^{\mu}_{~\rho}\wedge \delta h^{\nu \rho}
+\end{align}$$
+
+where $\displaystyle{h^{(0)}}$ is the induced metric on $\displaystyle{\partial \Sigma}$
+
+$$\begin{align}
+\mathrm{d}s^{2}_{\partial \Sigma} & =h^{(0)}_{\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} \\
+ & =r^{2}\mathrm{d}\phi ^{2}|_{r\to \infty}
+\end{align}$$
+
+and $\displaystyle{\tau _{\mu}}$, $\displaystyle{n_{\mu}}$ read
+
+$$\begin{align}
+\tau _{\mu} & =\left(\sqrt{ 1+r^{2} },0,0\right) \\
+n_{\mu} & =\left(0,\frac{1}{\sqrt{ 1+r^{2} }},0\right)
 \end{align}$$
 
 ---
@@ -240,5 +255,4 @@ S_{\text{bdy}} & =\frac{1}{8\pi G}\int _{\Gamma} \mathrm{d}^{2}x\sqrt{ -\gamma }
  & =\frac{1}{8\pi G}\int _{\Gamma}\mathrm{d}^{2}x\left(r^{2}+\frac{1}{2}-\frac{1}{2}\gamma ^{(0)ab}h_{ab}+\frac{r}{2}\gamma ^{(0)ab}\partial _{r}h_{ab}-r^{4}h_{rr}+r^{2}\gamma ^{(0)ab}h_{ra}h_{rb}-rD^{(0)a}h_{ra}+\mathcal{O}\left(r^{-2} \right)\right)
 \end{align}$$
 
----
-
+the boundary action does not contribute to the symplectic form. 

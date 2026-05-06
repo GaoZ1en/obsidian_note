@@ -59,6 +59,10 @@ $$\begin{align}
 \nabla ^{2}\lambda & =-\nabla _{\mu}A^{\mu}
 \end{align}$$
 
+$$\begin{align}
+(1+r^{2})\partial ^{2}_{r}\lambda+\frac{1+3r^{2}}{r}\partial _{r}\lambda-\frac{1}{1+r^{2}}\partial _{t}^{2}\lambda+\frac{1}{r^{2}}\partial _{\phi}^{2}\lambda=-\nabla _{\mu}A^{\mu}=\mathcal{O}(r^{-2})
+\end{align}$$
+
 this is a well-defined linear hyperbolic equation for $\displaystyle{\lambda}$, thus we can always find a solution at least locally by some theory of PDE... we take a more careful analysis below. 
 
 we expand $\displaystyle{\lambda}$ and $\displaystyle{-(1+r^{2})\nabla _{\mu}A^{\mu}}$ in terms of a complete set of modes $\displaystyle{\phi _{nm}(r,\phi)}$ as

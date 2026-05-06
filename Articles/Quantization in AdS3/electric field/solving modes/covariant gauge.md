@@ -185,6 +185,12 @@ g_{m=0,n}^{r} & =0 \\
 g_{m=0,n}^{\phi} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
+$$\begin{align}
+f^{t} & =\frac{e^{-2it}}{\sqrt{ 8\pi }} \frac{r^{2}-2}{(1+r^{2})^{2}} \\
+f^{r} & =-\frac{ie^{-2it}}{\sqrt{ 2\pi }} \frac{r}{1+r^{2}} \\
+f^{\phi} & =0
+\end{align}$$
+
 the $\displaystyle{f}$ modes are pure gauge, and the $\displaystyle{g}$ modes are physical modes, which is exactly the same as the normalizable modes in the temporal gauge case. the asymptotic behavior of the $\displaystyle{f}$ modes is
 
 $$\begin{align}

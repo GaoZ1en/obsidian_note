@@ -214,8 +214,8 @@ $$\begin{align}
 the relaxed highest weight condition is also satisfied. one finds
 
 $$\begin{align}
-\mathcal{L}_{\xi_1}\psi_{(1,1)}^\mu& =\nabla^\mu\left(\frac{C}{2}\frac{r}{\sqrt{1+r^2}}e^{-i(t+\phi)}\right), \\
-\mathcal{L}_{\bar{\xi}_1}\psi_{(1,1)}^\mu& =\nabla^\mu\left(-\frac{C}{2}\frac{r}{\sqrt{1+r^2}}e^{-i(t-\phi)}\right).
+\mathcal{L}_{\xi_1}\psi_{(1,1)}^\mu& =\nabla^\mu\left(\frac{C}{2}\frac{r}{\sqrt{1+r^2}}e^{-i(t+\phi)}\right)\propto \psi _{(0,1)}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_1}\psi_{(1,1)}^\mu& =\nabla^\mu\left(-\frac{C}{2}\frac{r}{\sqrt{1+r^2}}e^{-i(t-\phi)}\right)\propto \psi _{(1,0)}^{\mu}
 \end{align}$$
 
 this mode is not pure gauge. equivalently, this mode can be written in terms of the Killing vectors as

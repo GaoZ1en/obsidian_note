@@ -30,6 +30,10 @@ A^{t} & = te^{im\phi}f^{t} \\
 A^{r,\phi} & =e^{im\phi}f^{r,\phi}
 \end{align}$$
 
+$$\begin{align}
+(t\pm \phi)e^{-i(t\pm \phi)}
+\end{align}$$
+
 the gauge condition becomes
 
 $$\begin{align}
