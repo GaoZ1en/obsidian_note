@@ -116,3 +116,49 @@ A\alpha \gamma(1-z)^{2}(\gamma F-(\gamma-\beta)F(\gamma+1))+\alpha \beta \gamma(
 -\alpha \gamma A+(\gamma-\alpha)(-\gamma+\alpha+\beta+1)zC & =0
 \end{align}$$
 
+---
+
+$$\begin{align}
+(a+b+n+1)P_{n}^{(a,b)}(x)+(x-1)P_{n}^{(a,b)'}(x) & =(a+b+n+1)P_{n}^{(a,b+1)}(x) \\
+(nx+n+2b)P_{n}^{(a,b)}(x)+(1-x^{2})P_{n}^{(a,b)'}(x) & =2(b+n)P_{n}^{(a,b-1)}(x) \\
+((a+b+n+1)x+(a-b+n+1))P_{n}^{(a,b)}(x)+(x^{2}-1)P_{n}^{(a,b)'}(x) & =2(n+1)P_{n+1}^{(a,b-1)}(x) \\
+nP_{n}^{(a,b)}(x)+(1-x)P_{n}^{(a,b)'}(x) & =(a+n)P_{n-1}^{(a,b+1)}(x)
+\end{align}$$
+
+Let $A=-n$, $B=n+a+b+1$, $C=a+1$, and write
+$F(A,B,C)={}_{2}F_{1}(A,B;C;z)$. The needed hypergeometric relations can be
+derived from the contiguous relations at the top of the note.
+
+First use shifted versions of those contiguous relations to get the auxiliary
+identities
+
+$$\begin{align}
+R_{\gamma}:\quad AB(1-z)F(A+1,B+1,C+1) & =C(A+B-C)F(A,B,C)+(C-A)(C-B)F(A,B,C+1), \\
+R_{\alpha}:\quad CF(A-1,B,C) & =C(1-z)F(A,B,C)+(C-B)zF(A,B,C+1), \\
+R_{\beta}:\quad CF(A,B-1,C) & =C(1-z)F(A,B,C)+(C-A)zF(A,B,C+1).
+\end{align}$$
+
+Together with the fourth and fifth top relations,
+
+$$\begin{align}
+T_{4}&=C(A-(C-B)z)F(A,B,C)-AC(1-z)F(A+1,B,C)+(C-A)(C-B)zF(A,B,C+1), \\
+T_{5}&=C(B-(C-A)z)F(A,B,C)-BC(1-z)F(A,B+1,C)+(C-A)(C-B)zF(A,B,C+1),
+\end{align}$$
+
+the eliminations are
+
+$$\begin{align}
+T_{5}+zR_{\gamma} &=-BC(1-z)\left[F(A,B+1,C)-F(A,B,C)-\frac{Az}{C}F(A+1,B+1,C+1)\right], \\
+(C-B)R_{\beta}-zR_{\gamma} &=-C\left[(B-C)F(A,B-1,C)-(B-C+Az)F(A,B,C)+\frac{AB}{C}z(1-z)F(A+1,B+1,C+1)\right], \\
+(C-A)R_{\alpha}-zR_{\gamma} &=C\left[(C-A)F(A-1,B,C)-(C-A-Bz)F(A,B,C)-\frac{AB}{C}z(1-z)F(A+1,B+1,C+1)\right], \\
+T_{4}+zR_{\gamma} &=-AC(1-z)\left[F(A+1,B,C)-F(A,B,C)-\frac{Bz}{C}F(A+1,B+1,C+1)\right].
+\end{align}$$
+
+Therefore the corresponding hypergeometric relations are
+
+$$\begin{align}
+F(A,B+1,C) & =F(A,B,C)+\frac{Az}{C}F(A+1,B+1,C+1) \\
+(B-C)F(A,B-1,C) & =(B-C+Az)F(A,B,C)-\frac{AB}{C}z(1-z)F(A+1,B+1,C+1) \\
+(C-A)F(A-1,B,C) & =(C-A-Bz)F(A,B,C)+\frac{AB}{C}z(1-z)F(A+1,B+1,C+1) \\
+F(A+1,B,C) & =F(A,B,C)+\frac{Bz}{C}F(A+1,B+1,C+1).
+\end{align}$$
