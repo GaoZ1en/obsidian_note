@@ -125,12 +125,9 @@ $$\begin{align}
 nP_{n}^{(a,b)}(x)+(1-x)P_{n}^{(a,b)'}(x) & =(a+n)P_{n-1}^{(a,b+1)}(x)
 \end{align}$$
 
-Let $A=-n$, $B=n+a+b+1$, $C=a+1$, and write
-$F(A,B,C)={}_{2}F_{1}(A,B;C;z)$. The needed hypergeometric relations can be
-derived from the contiguous relations at the top of the note.
+Let $A=-n$, $B=n+a+b+1$, $C=a+1$, and write $F(A,B,C)={}_{2}F_{1}(A,B;C;z)$. 
 
-First use shifted versions of those contiguous relations to get the auxiliary
-identities
+First use shifted versions of those contiguous relations to get the auxiliary identities
 
 $$\begin{align}
 R_{\gamma}:\quad AB(1-z)F(A+1,B+1,C+1) & =C(A+B-C)F(A,B,C)+(C-A)(C-B)F(A,B,C+1), \\

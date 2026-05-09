@@ -23,7 +23,7 @@ $$\begin{align}
 \implies \partial _{t}A^{t}+\partial _{r}A^{r}+\frac{1}{r}A^{r}+\partial _{\phi}A^{\phi} & =0
 \end{align}$$
 
-the only possibility that $\displaystyle{A^{\mu}}$ linearly depends on $\displaystyle{t}$ and satisfies the gauge condition is that $\displaystyle{A^{t}\propto t}$ and $\displaystyle{\partial _{t}A^{r,\phi}=0}$ (for modes with $\displaystyle{\partial _{t}A^{\mu}=0}$, we have already discussed in [[Articles/Quantization in AdS3/Proca/solving equation|solving equation]]). take a Fourier transformation as
+the only possibility that $\displaystyle{A^{\mu}}$ linearly depends on $\displaystyle{t}$ and satisfies the gauge condition is that $\displaystyle{A^{t}\propto t}$ and $\displaystyle{\partial _{t}A^{r,\phi}=0}$ (for modes with $\displaystyle{\partial _{t}A^{\mu}=0}$, we have already discussed in [[Articles/Quantization in AdS3/Proca/modes/solving equation|solving equation]]). take a Fourier transformation as
 
 $$\begin{align}
 A^{t} & = te^{im\phi}f^{t} \\

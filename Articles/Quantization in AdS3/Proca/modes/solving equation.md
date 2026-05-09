@@ -363,5 +363,70 @@ A^{\phi}_{nm\pm} & =r^{|m\mp 1|-1}(1+r^{2})^{-(\mu+|m\mp 1|+1)/2}P_{n}^{(\mu,|m\
 \end{align}
 $$
 
-# first-order equation
+# solving constraint without making ansatz
 
+we start from the eom
+
+$$\begin{align}
+(1+r^{2})\partial _{r}^{2}A^{t}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{1+5r^{2}}{r}\partial _{r}A^{t}+(4-\mu ^{2})A^{t}+\frac{1}{1+r^{2}}\partial _{t}\partial _{r}A^{r}+\frac{1-r^{2}}{r(1+r^{2})^{2}}\partial _{t}A^{r}+\frac{1}{1+r^{2}}\partial _{t}\partial _{\phi}A^{\phi} & =0 \\
+-(1+r^{2})\partial _{t}\partial _{r}A^{t}-2r\partial _{t}A^{t}-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{r}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{r}-\mu ^{2}A^{r}-(1+r^{2})\partial _{r}\partial _{\phi}A^{\phi}-\frac{2(1+r^{2})}{r}\partial _{\phi}A^{\phi} & =0 \\
+-\frac{1}{r^{2}}\partial _{t}\partial _{\phi}A^{t}-\frac{1}{r^{2}}\partial _{r}\partial _{\phi}A^{r}+\frac{1}{r^{3}}\partial _{\phi}A^{r}-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{\phi}+(1+r^{2})\partial _{r}^{2}A^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}A^{\phi}+(4-\mu ^{2})A^{\phi} & =0
+\end{align}$$
+
+taking the divergence of the Proca equation gives the constraint
+
+$$\begin{align}
+\nabla_\mu A^\mu=\partial_t A^t+\partial_r A^r+\partial_\phi A^\phi+\frac{1}{r}A^r=0,
+\end{align}$$
+
+where we used $\mu^2\neq0$. therefore
+
+$$\begin{align}
+\partial_t A^t&=-\partial_r A^r-\partial_\phi A^\phi-\frac{1}{r}A^r, \\
+\partial_r\partial_t A^t&=-\partial_r^2 A^r-\partial_r\partial_\phi A^\phi-\frac{1}{r}\partial_r A^r+\frac{1}{r^2}A^r, \\
+\partial_\phi\partial_t A^t&=-\partial_r\partial_\phi A^r-\partial_\phi^2 A^\phi-\frac{1}{r}\partial_\phi A^r.
+\end{align}$$
+
+substituting these relations into the $r$ and $\phi$ components removes $A^t$ without imposing any separated-mode ansatz. this gives
+
+$$\begin{align}
+&(1+r^2)\partial_r^2 A^r+\frac{1+3r^2}{r}\partial_r A^r-\frac{1}{1+r^2}\partial_t^2 A^r+\frac{1}{r^2}\partial_\phi^2 A^r+\left(1-\mu^2-\frac{1}{r^2}\right)A^r-\frac{2}{r}\partial_\phi A^\phi=0, \\
+&(1+r^2)\partial_r^2 A^\phi+\frac{3+5r^2}{r}\partial_r A^\phi-\frac{1}{1+r^2}\partial_t^2 A^\phi+\frac{1}{r^2}\partial_\phi^2 A^\phi+(4-\mu^2)A^\phi+\frac{2}{r^3}\partial_\phi A^r=0.
+\end{align}$$
+
+now define
+
+$$\begin{align}
+\psi=A^r,\qquad \varphi=rA^\phi.
+\end{align}$$
+
+after multiplying the second equation by $r$, the two equations become the symmetric coupled system
+
+$$\begin{align}
+\mathcal{D}\psi-\frac{2}{r^2}\partial_\phi\varphi&=0, \\
+\mathcal{D}\varphi+\frac{2}{r^2}\partial_\phi\psi&=0,
+\end{align}$$
+
+where
+
+$$\begin{align}
+\mathcal{D}=(1+r^2)\partial_r^2+\frac{1+3r^2}{r}\partial_r-\frac{1}{1+r^2}\partial_t^2+\frac{1}{r^2}\partial_\phi^2+1-\mu^2-\frac{1}{r^2}.
+\end{align}$$
+
+define
+
+$$\begin{align}
+\Phi_\pm=\frac{1}{2}(\varphi\pm i\psi).
+\end{align}$$
+
+then
+
+$$\begin{align}
+\left(\mathcal{D}\mp\frac{2i}{r^2}\partial_\phi\right)\Phi_\pm=0.
+\end{align}$$
+
+equivalently, the decoupled equations are
+
+$$\begin{align}
+\left[(1+r^2)\partial_r^2+\frac{1+3r^2}{r}\partial_r-\frac{1}{1+r^2}\partial_t^2+1-\mu^2+\frac{1}{r^2}\left(\partial_\phi^2\mp2i\partial_\phi-1\right)\right]\Phi_\pm=0.
+\end{align}$$
