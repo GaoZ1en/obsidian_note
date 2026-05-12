@@ -1,4 +1,4 @@
 ## preparation
 
-some basic concepts.
+some basic concepts. nothing much to say
 
