@@ -7,11 +7,12 @@ $$\begin{align}
 -h_{\mu \nu}+g^{(0)}_{\mu \nu}h-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}+\frac{1}{2}\nabla ^{(0)}_{(\mu}(\nabla ^{(0)}_{\rho}h_{\nu)}^{~\rho}-\frac{1}{2}\nabla ^{(0)}_{\nu)}h) & =0
 \end{align}$$
 
-here we assume that the de Donder gauge condition can be always be imposed
+here we assume that the de Donder gauge condition can be always be imposed (at least onshell)
 
 $$\begin{align}
 \nabla ^{(0)}_{\rho}h_{\nu}^{\rho}-\frac{1}{2}\nabla ^{(0)}_{\nu}h & =0
 \end{align}$$
+
 ---
 
 this is equivalent that for a general solution $\displaystyle{h_{\mu \nu}}$, we can always find a gauge transformation $\displaystyle{\xi _{\mu}}$ such that
@@ -222,7 +223,7 @@ here we have introduced the moduli $\displaystyle{\tau =\frac{1}{2\pi}(\alpha+i\
 and by the same procudure in [[Articles/Quantization in AdS3/Proca/coherent state path integral|coherent state path integral]], we can recover this result. [Xi Yin's result](https://arxiv.org/abs/0804.1773) reads
 
 $$\begin{align}
-Z(\tau,\tau) & =\prod ^{\infty}_{m=2} \frac{1}{|1-q^{m}|^{2}}
+Z(\tau,\bar{\tau}) & =\prod ^{\infty}_{m=2} \frac{1}{|1-q^{m}|^{2}}
 \end{align}$$
 
 # explicit form

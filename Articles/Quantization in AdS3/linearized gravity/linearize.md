@@ -109,10 +109,9 @@ $$\begin{align}
 \end{align}$$
 
 take a trace, we have
+
 $$\begin{align}
--h+\frac{1}{2}\nabla ^{(0)2}h-\frac{1}{2}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}=0
-\end{align}$$
-$$\begin{align}
+-h+\frac{1}{2}\nabla ^{(0)2}h-\frac{1}{2}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}=0 \\
 \implies \nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}=\nabla ^{(0)2}h-2h
 \end{align}$$
 

@@ -1,0 +1,4 @@
+## preparation
+
+some basic concepts.
+
