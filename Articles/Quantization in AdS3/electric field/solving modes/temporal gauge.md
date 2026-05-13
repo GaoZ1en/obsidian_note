@@ -26,6 +26,9 @@ $$\begin{align}
 -\frac{1}{r^{2}}\partial _{r}\partial _{\phi}A^{r}+\frac{1}{r^{3}}\partial _{\phi}A^{r}-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{\phi}+(1+r^{2})\partial _{r}^{2}A^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}A^{\phi}+4A^{\phi} & =0
 \end{align}$$
 
+
+## case $\displaystyle{m=0}$
+
 perform a Fourier transformation
 
 $$\begin{align}
@@ -39,8 +42,6 @@ $$\begin{align}
 \frac{\omega ^{2}}{1+r^{2}}f^{r}-\frac{m^{2}}{r^{2}}f^{r}-im(1+r^{2})\partial _{r}f^{\phi}-\frac{2im(1+r^{2})}{r}f^{\phi} & =0 \\
 -\frac{im}{r^{2}}\partial _{r}f^{r}+\frac{im}{r^{3}}f^{r}+\frac{\omega ^{2}}{1+r^{2}}f^{\phi}+(1+r^{2})\partial _{r}^{2}f^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}f^{\phi}+4f^{\phi} & =0
 \end{align}$$
-
-## case $\displaystyle{m=0}$
 
 for $\displaystyle{m=0}$, the equations of motion become
 
@@ -157,10 +158,47 @@ $$\begin{align}
 A^t=0,\qquad A^r=\frac{1+r^2}{r}\partial_\phi \Psi,\qquad A^\phi=-\frac{1+r^2}{r}\partial_r\Psi 
 \end{align}$$
 
-the eom can be written as
+the eoms can be rewritten as
 
 $$\begin{align}
-(1+r^{2})\partial _{r}^{2}\Psi+\frac{1+3r^{2}}{r}\partial _{r}\Psi-\frac{1}{1+r^{2}}\partial _{t}^{2}\Psi+\frac{1}{r^{2}}\partial _{\Phi}^{2}\Psi & =0
+\frac{1+r^{2}}{r}\partial _{\phi}(\mathcal{D}\Psi) & =0 \\
+-\left( \frac{1+r^{2}}{r}\partial _{r}+2 \right)(\mathcal{D}\Psi) & =0 \\
+\implies \mathcal{D}\Psi & =0
+\end{align}$$
+
+---
+
+in fact the second equation only implies
+
+$$\begin{align}
+\mathcal{D}\Psi & =\frac{C(t)}{1+r^{2}}
+\end{align}$$
+
+by using the redundancy of the parameterization
+
+$$\begin{align}
+\Psi & \to \Psi+q(t)
+\end{align}$$
+
+where $\displaystyle{q(t)}$ satisfies
+
+$$\begin{align}
+\mathcal{D}q=-\frac{1}{1+r^{2}}\ddot{q} & =\frac{C(t)}{1+r^{2}} \\
+\implies q & =-\int ^{t}\mathrm{d}t_{1}\int ^{t_{1}}\mathrm{d}t_{2}C(t_{2})+at+b
+\end{align}$$
+
+we have
+
+$$\begin{align}
+\mathcal{D}\Psi=0
+\end{align}$$
+
+---
+
+where
+
+$$\begin{align}
+\mathcal{D}\Psi & =(1+r^{2})\partial _{r}^{2}\Psi+\frac{1+3r^{2}}{r}\partial _{r}\Psi-\frac{1}{1+r^{2}}\partial _{t}^{2}\Psi+\frac{1}{r^{2}}\partial _{\phi}^{2}\Psi
 \end{align}$$
 
 the solutions can be written in a more compact form for all $\displaystyle{m}$ as

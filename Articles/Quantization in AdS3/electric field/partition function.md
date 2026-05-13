@@ -134,3 +134,8 @@ Hence the oscillator partition function takes the compact form
 $$\begin{align}
 Z[\beta,\alpha]& =\prod _{h=1}^{\infty}\prod _{\bar{h}=1}^{\infty}\frac{1}{1-q^{h}\bar{q}^{\bar{h}}}.
 \end{align}$$
+
+
+$$\begin{align}
+\prod ^{\infty}_{h=1}\prod ^{\infty}_{\bar{h}=1} \frac{1-q^{h+1}\bar{q}^{\bar{h}+1}}{(1-q^{h}\bar{q}^{\bar{h}+1})(1-q^{h+1}\bar{q}^{\bar{h}})} & =Z[\beta,\alpha]\prod ^{\infty}_{h=1} \frac{1}{1-q^{h}} 
+\end{align}$$

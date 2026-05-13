@@ -1,59 +1,64 @@
-we have solved out the solutions of eom
+in the metric
 
 $$\begin{align}
-h_{L,n}^{\mu \nu} & =\sqrt{ \frac{6}{n!(n+3)!} }\mathcal{L}_{\xi _{-1}}^{n}h_{L,0}^{\mu \nu} \\
-h_{L,0}^{\mu \nu} & =8\sqrt{ 3G } \frac{e^{-4it}}{(1+r^{2})^{2}}\bar{\xi} _{1}^{\mu}\bar{\xi}_{1}^{\nu} \\
-h_{R,\bar{n}}^{\mu \nu} & =\sqrt{ \frac{6}{\bar{n}!(\bar{n}+3)!} }\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}h_{R,0}^{\mu \nu} \\
-h_{R,0}^{\mu \nu} & =8\sqrt{ 3G } \frac{e^{-4it}}{(1+r^{2})^{2}}\xi _{1}^{\mu}\xi _{1}^{\nu}
+\mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2}
 \end{align}$$
 
-these modes are large gauge transformations, with gauge parameters
+we have six precise Killing vectors
 
 $$\begin{align}
-h_{L,n}^{\mu,\nu} & =\nabla _{\mu}\zeta _{L,n}^{\nu}+\nabla _{\nu}\zeta _{L,n}^{\mu} \\
-\zeta _{L,n}^{\mu} & =\sqrt{ \frac{6}{n!(n+3)!} }\mathcal{L}_{\xi _{1}}^{n}\zeta _{L,0}^{\mu} \\
-\zeta _{L,0}^{t} & =\frac{i\sqrt{ 3G }e^{-2it+2i\phi}r^{4}}{3(1+r^{2})^{2}} \\
-\zeta _{L,0}^{r} & =-\frac{\sqrt{ 3G }e^{-2it+2i\phi}r(3+2r^{2})}{3(1+r^{2})} \\
-\zeta _{L,0}^{\phi} & =-\frac{i\sqrt{ 3G }e^{-2it+2i\phi}(3+r^{2})}{3(1+r^{2})}
+\xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\xi _{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}-\frac{\partial}{\partial \phi} \right) \\
+\xi _{-1} & =\frac{1}{2}e^{-i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{1} & =\frac{1}{2}e^{i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{0} & =\frac{1}{2}\left( \frac{\partial}{\partial t}+\frac{\partial}{\partial \phi} \right) \\
+\bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
 \end{align}$$
 
-and
+and infinitely many asymptotic Killing vectors. known that
 
 $$\begin{align}
-h_{R,\bar{n}}^{\mu \nu} & =\nabla ^{\mu}\zeta _{R,\bar{n}}^{\nu}+\nabla ^{\nu}\zeta _{R,\bar{n}}^{\mu} \\
-\zeta _{R,\bar{n}}^{\mu} & =\sqrt{ \frac{6}{\bar{n}!(\bar{n}+3)!} }\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\zeta _{R,0}^{\mu} \\
-\zeta _{R,0}^{t} & =\frac{i\sqrt{ 3G }e^{-2it-2i\phi}r^{4}}{3(1+r^{2})^{2}} \\
-\zeta _{R,0}^{r} & =-\frac{\sqrt{ 3G }e^{-2it-2i\phi}r(3+2r^{2})}{3(1+r^{2})} \\
-\zeta _{R,0}^{\phi} & =\frac{i\sqrt{ 3G }e^{-2it-2i\phi}(3+r^{2})}{3(1+r^{2})}
+\zeta _{L}^{t} & =\frac{i\sqrt{ 3G }e^{-2it+2i\phi}r^{4}}{3(1+r^{2})^{2}} \\
+\zeta _{L}^{r} & =-\frac{\sqrt{ 3G }e^{-2it+2i\phi}r(3+2r^{2})}{3(1+r^{2})} \\
+\zeta _{L}^{\phi} & =-\frac{i\sqrt{ 3G }e^{-2it+2i\phi}(3+r^{2})}{3(1+r^{2})} \\
+\zeta _{R}^{t} & =\frac{i\sqrt{ 3G }e^{-2it-2i\phi}r^{4}}{3(1+r^{2})^{2}} \\
+\zeta _{R}^{r} & =-\frac{\sqrt{ 3G }e^{-2it-2i\phi}r(3+2r^{2})}{3(1+r^{2})} \\
+\zeta _{R}^{\phi} & =\frac{i\sqrt{ 3G }e^{-2it-2i\phi}(3+r^{2})}{3(1+r^{2})} \\
 \end{align}$$
 
-then we define
+define
 
 $$\begin{align}
-X_{n+1} & =\int \mathrm{d}^{3}x\sqrt{ -g^{(0)} }\sqrt{ n }\left(\nabla _{\mu}\zeta _{L,n,\nu}+\nabla _{\nu}\zeta _{L,n,\mu}\right)\frac{\delta}{\delta h_{\mu \nu}}, & \quad n\geqslant 1 \\
-X_{\bar{n}+1} & =\int \mathrm{d}^{3}x\sqrt{ -g^{(0)} }\sqrt{ \bar{n} }\left(\nabla _{\mu}\zeta _{R,\bar{n},\nu}+\nabla _{\nu}\zeta _{R,\bar{n},\mu}\right) \frac{\delta}{\delta h_{\mu \nu}}, & \quad \bar{n}\geqslant 1 \\
-X_{-(n+1)} & =\int \mathrm{d}^{3}x\sqrt{ -g^{(0)} }\sqrt{ -n }\left(\nabla _{\mu}\zeta _{L,n,\nu}^{*}+\nabla _{\nu}\zeta _{L,n,\mu}^{*}\right) \frac{\delta}{\delta h_{\mu \nu}}, & \quad n\geqslant 1 \\
-X_{-(\bar{n}+1)} & =\int \mathrm{d}^{3}x\sqrt{ -g^{(0)} }\sqrt{ -\bar{n} }\left(\nabla _{\mu}\zeta _{R,\bar{n},\nu}^{*}+\nabla _{\nu}\zeta _{R,\bar{n},\mu}^{*}\right) \frac{\delta}{\delta h_{\mu \nu}}, & \quad \bar{n}\geqslant 1 \\
-X_{0} & =0
+\xi _{-2} & = \frac{3}{2i\sqrt{ 3G }}\zeta _{L}, & \xi _{2} & =\xi _{-2}^{*} \\
+\bar{\xi}_{-2} & = \frac{3}{2i\sqrt{ 3G }}\zeta _{R}, & \bar{\xi}_{2} & =\bar{\xi}_{-2}^{*}
 \end{align}$$
 
-the corresponding Noether charges are denoted as $\displaystyle{H_{n},H_{\bar{n}}, n,\bar{n}\in \mathbb{Z}}$. the Poisson brackets between the Noether charges are given by
+Then the higher modes are fixed recursively by the Witt algebra. For $n\geq 2$,
 
 $$\begin{align}
-\left\{H_{n},H_{m}\right\} & =X_{n}\cdot X_{m}\cdot \omega
+\xi _{n+1} & =\frac{1}{i(n-1)}\mathcal{L}_{\xi _{1}}\xi _{n}, & \xi _{-(n+1)} & =-\frac{1}{i(n-1)}\mathcal{L}_{\xi _{-1}}\xi _{-n} \\
+\bar{\xi}_{n+1} & =\frac{1}{i(n-1)}\mathcal{L}_{\bar{\xi}_{1}}\bar{\xi}_{n}, & \bar{\xi}_{-(n+1)} & =-\frac{1}{i(n-1)}\mathcal{L}_{\bar{\xi}_{-1}}\bar{\xi}  _{-n}
 \end{align}$$
 
-here the symplectic form is given by
+these asymptotic Killing vectors satisfies two copies of Witt algebras asymptotically
 
 $$\begin{align}
+[\xi _{n},\xi _{m}] & =-i(n-m)\xi _{n+m}+\mathcal{O}(r^{-4}) \\
+[\bar{\xi} _{n},\bar{\xi} _{m}] & =-i(n-m)\bar{\xi}_{n+m}+\mathcal{O}(r^{-4})
+\end{align}$$
+
+we denote the corresponding Noether charges as $\displaystyle{H_{n}}$ for $\displaystyle{\xi _{n}}$ and $\displaystyle{\bar{H}_{n}}$ for $\displaystyle{\bar{\xi}_{n}}$, respectively. the Poisson bracket between the Noether charges is given by
+
+$$\begin{align}
+\left\{H_{\xi},H_{\zeta}\right\} & =X_{\xi}\cdot X_{\zeta}\cdot \omega
+\end{align}$$
+
+where $\displaystyle{X_{\xi}}$ and the symplectic form is defined as
+
+$$\begin{align}
+X_{\xi} & =\int \mathrm{d}^{3}x\left(\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu}\right) \frac{\delta}{\delta h_{\mu \nu}} \\
 \omega & =-\frac{1}{32\pi G}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\delta h^{\nu \rho}\wedge \nabla ^{(0)\mu}\delta h_{\nu \rho}+\frac{1}{16\pi G}\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu}\delta h^{\mu}_{~\rho}\wedge \delta h^{\nu \rho}
 \end{align}$$
 
-then the Poisson brackets gives
-
-$$\begin{align}
-\left\{H_{n},H_{m}\right\} & =-in\delta _{n+m,0} \\
-\left\{H_{\bar{n}},H_{\bar{m}}\right\} & =-i\bar{n}\delta _{\bar{n}+\bar{m},0} \\
-\left\{H_{n},H_{\bar{m}}\right\} & =0
-\end{align}$$
+then the algebra is
 

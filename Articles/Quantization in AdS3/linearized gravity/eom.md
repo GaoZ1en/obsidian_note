@@ -36,6 +36,7 @@ h & =0 \\
 since $\displaystyle{h_{\mu \nu}}$ is traceless, we can further impose the transverse condition
 
 $$\begin{align}
+h & =0 \\
 \nabla ^{(0)}_{\mu}h^{\mu \nu} & =0
 \end{align}$$
 
@@ -163,7 +164,6 @@ $$\begin{align}
 h_{L,n}^{\mu \nu} & =\sharp\mathcal{L}_{\xi _{-1}}^{n}h_{L,0}^{\mu \nu} \\
 h_{R,n}^{\mu \nu} & =\sharp\mathcal{L}_{\bar{\xi}_{-1}}^{n}h_{R,0}^{\mu \nu}
 \end{align}$$
-
 
 the each modes are orthogonal with respect to the symplectic form in the sense that
 
