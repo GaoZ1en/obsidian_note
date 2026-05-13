@@ -6,9 +6,11 @@
 /Literature Notes/articles/
 
 # Ignore json data files
+/**/*.json
 /.keep-the-rhythm/
 /.vscode/
 /.github/
+/.claude/
 
 # Ignore tex files in every folders
 /**/*.tex
