@@ -9,3 +9,7 @@ Research workspace for AdS3 quantization projects and linked subtopics.
 - When adding or removing major notes, update the local `README.md`.
 - Keep exploratory calculations in topic folders; manuscript-specific workflow rules belong to child folders with their own `AGENTS.md`.
 - Do not rename established topic folders such as `Proca in AdS3/` or `electric field in AdS3/` without explicit instruction.
+
+## Mathematica / xAct
+- For xAct calculations in this workspace, load `xTras` when available and use `FullSimplification[]` to simplify tensor expressions, especially after xPert/xCPS variations, curvature identities, or index canonicalization steps.
+- ignore `xPerm` and other loading errors.

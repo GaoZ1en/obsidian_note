@@ -50,15 +50,21 @@ $$\begin{align}
 we denote the corresponding Noether charges as $\displaystyle{H_{n}}$ for $\displaystyle{\xi _{n}}$ and $\displaystyle{\bar{H}_{n}}$ for $\displaystyle{\bar{\xi}_{n}}$, respectively. the Poisson bracket between the Noether charges is given by
 
 $$\begin{align}
-\left\{H_{\xi},H_{\zeta}\right\} & =X_{\xi}\cdot X_{\zeta}\cdot \omega
+\left\{H_{\xi},H_{\zeta}\right\} & \approx X_{\zeta}\cdot \delta H_{\xi}
 \end{align}$$
 
-where $\displaystyle{X_{\xi}}$ and the symplectic form is defined as
+where $\displaystyle{X_{\xi}}$ and the variation of the Noether charge are given by
 
 $$\begin{align}
-X_{\xi} & =\int \mathrm{d}^{3}x\left(\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu}\right) \frac{\delta}{\delta h_{\mu \nu}} \\
-\omega & =-\frac{1}{32\pi G}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\delta h^{\nu \rho}\wedge \nabla ^{(0)\mu}\delta h_{\nu \rho}+\frac{1}{16\pi G}\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu}\delta h^{\mu}_{~\rho}\wedge \delta h^{\nu \rho}
+X_{\xi} & =\int \mathrm{d}^{3}x\mathcal{L}_{\xi}h_{\mu \nu} \frac{\delta}{\delta h_{\mu \nu}} \\
+ & =\int \mathrm{d}^{3}x (\xi ^{\rho}\nabla ^{(0)}_{\rho}h_{\mu \nu}+h_{\mu \rho}\nabla ^{(0)}_{\nu}\xi ^{\rho}+h_{\rho \nu}\nabla ^{(0)}_{\mu}\xi ^{\rho}) \frac{\delta}{\delta h_{\mu \nu}} \\
+\delta H_{\xi} & =\int _{\partial \Sigma} \mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu}k _{\xi}^{\mu \nu}
 \end{align}$$
 
 then the algebra is
+
+$$\begin{align}
+[H_{n},H_{m}] & =-i(n-m)H_{n+m}-\frac{i}{8G}n(n^{2}-1)\delta _{n+m,0} \\
+[\bar{H}_{n},\bar{H}_{m}] & =-i(n-m)\bar{H}_{n+m}-\frac{i}{8G}n(n^{2}-1)\delta _{n+m,0}
+\end{align}$$
 

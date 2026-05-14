@@ -43,68 +43,96 @@ however it does not give the expected linear $\displaystyle{h}$ term appeared in
 we now take analysis of the action which does not fix the gauge
 
 $$\begin{align}
-S & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\left(\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu}-\nabla ^{(0)2}h+\frac{1}{2}h^{2}-h_{\mu \nu}h^{\mu \nu}+h^{\mu \nu}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h-\frac{1}{4}\nabla ^{(0)}_{\mu}h\nabla ^{(0)\mu}h-\nabla ^{(0)}_{\mu}h^{\mu \nu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}+\nabla ^{(0)}_{\mu}h\nabla ^{(0)}_{\nu}h^{\mu \nu}\right. \\
- & \left.-h^{\mu \nu}\nabla ^{(0)}_{\nu}\nabla ^{(0)\rho}h_{\mu \rho}-h^{\mu \nu}\nabla ^{(0)\rho}\nabla ^{(0)}_{\nu}h_{\mu \rho}+\frac{1}{2}h\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu}+h^{\mu \nu}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}h\nabla ^{(0)2}h-\frac{1}{2}\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\rho}h^{\mu \nu}+\frac{3}{4}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}\right)
+S & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\mathcal{L} \\
+\mathcal{L} & =\frac{1}{16\pi G}\left(\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu}-\nabla ^{(0)2}h+\frac{1}{2}h^{2}-h_{\mu \nu}h^{\mu \nu}+h^{\mu \nu}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h-\frac{1}{4}\nabla ^{(0)}_{\mu}h\nabla ^{(0)\mu}h\right. \\
+ & -\nabla ^{(0)}_{\mu}h^{\mu \nu}\nabla ^{(0)}_{\rho}h_{\nu}^{~\rho}+\nabla ^{(0)}_{\mu}h\nabla ^{(0)}_{\nu}h^{\mu \nu}-h^{\mu \nu}\nabla ^{(0)}_{\nu}\nabla ^{(0)\rho}h_{\mu \rho}-h^{\mu \nu}\nabla ^{(0)\rho}\nabla ^{(0)}_{\nu}h_{\mu \rho} \\
+ & \left.+\frac{1}{2}h\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h^{\mu \nu}+h^{\mu \nu}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}h\nabla ^{(0)2}h-\frac{1}{2}\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\rho}h^{\mu \nu}+\frac{3}{4}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}\right)
 \end{align}$$
 
 take a variation of the action, we have
 
 $$\begin{align}
 \delta S & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }E_{\mu \nu}\delta h^{\mu \nu}+\theta|_{\Sigma _{f}}-\theta|_{\Sigma _{i}} \\
-E_{\mu \nu} & =\frac{1}{16\pi G}\left( -h_{\mu \nu}-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}+\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)2}h\right. \\
- & \left. \qquad+\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\rho}h_{\nu}{}^{\rho}+\frac{1}{2}\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\rho}h_{\mu}{}^{\rho}-\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h \right) \\
+E_{\mu \nu} & =\frac{1}{16\pi G}\left( g^{(0)}_{\mu \nu}h-2h_{\mu \nu}+\frac{1}{2}\nabla ^{2}h_{\mu \nu}-\frac{1}{2}\nabla _{\rho}\nabla _{\mu}h_{\nu}^{~\rho}-\frac{1}{2}\nabla _{\rho}\nabla _{\nu}h_{\mu}^{~\rho}\right. \\
+ & \left.+\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}-\frac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)2}h+\frac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h \right) \\
 \theta & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\theta ^{\mu} \\
-\theta ^{\rho} & =\frac{1}{16\pi G}\left[ \nabla ^{(0)}_{\nu}\delta h^{\rho \nu}-\nabla ^{(0)\rho}\delta h \right. \\
- & \qquad+h^{\rho \sigma}\nabla ^{(0)}_{\sigma}\delta h-\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h-\frac{1}{2}\nabla ^{(0)\rho}h\,\delta h \\
- & \qquad-\nabla ^{(0)}_{\sigma}h_{\nu}{}^{\sigma}\delta h^{\rho \nu}-\nabla ^{(0)}_{\sigma}h_{\mu}{}^{\sigma}\delta h^{\mu \rho}+\nabla ^{(0)}_{\sigma}h^{\rho \sigma}\delta h+\nabla ^{(0)}_{\mu}h\,\delta h^{\mu \rho} \\
- & \qquad-\delta ^{\rho}_{\mu}h_{\nu}{}^{\sigma}\nabla ^{(0)}_{\sigma}\delta h^{\mu \nu}+\nabla ^{(0)}_{\mu}h_{\nu}{}^{\rho}\delta h^{\mu \nu}-h_{\nu}{}^{\sigma}\nabla ^{(0)}_{\sigma}\delta h^{\rho \nu}+\nabla ^{(0)}_{\mu}h_{\nu}{}^{\rho}\delta h^{\mu \nu} \\
- & \qquad+\frac{1}{2}\delta ^{\rho}_{\mu}h\nabla ^{(0)}_{\nu}\delta h^{\mu \nu}-\frac{1}{2}\delta ^{\rho}_{\mu}\nabla ^{(0)}_{\nu}h\,\delta h^{\mu \nu}+h_{\mu \nu}\nabla ^{(0)\rho}\delta h^{\mu \nu}-\nabla ^{(0)\rho}h_{\mu \nu}\delta h^{\mu \nu} \\
- & \left. \qquad-\frac{1}{2}h\nabla ^{(0)\rho}\delta h+\frac{1}{2}\nabla ^{(0)\rho}h\,\delta h-\frac{1}{2}\left( \nabla ^{(0)}_{\mu}h_{\nu}{}^{\rho}+\nabla ^{(0)}_{\nu}h_{\mu}{}^{\rho}\right)\delta h^{\mu \nu}+\frac{3}{2}\nabla ^{(0)\rho}h_{\mu \nu}\delta h^{\mu \nu} \right]
+\theta ^{\mu} & =-\frac{1}{16\pi G}\left(\nabla ^{(0)} _{\nu}\delta h^{\mu \nu}-\nabla ^{(0)\mu}\delta h+h^{\mu \nu}\nabla ^{(0)} _{\nu}\delta h-\frac{1}{2}h\nabla ^{(0)\mu}\delta h\right. \\
+ & +h^{\nu \rho}\nabla ^{(0)\mu}\delta h_{\nu \rho}-h^{\nu \rho}\nabla ^{(0)}_{\rho}\delta h^{\mu}_{~\nu}-h^{\mu \nu}\nabla ^{(0)}_{\rho}\delta h_{\nu}^{~\rho}+\frac{1}{2}h\nabla ^{(0)}_{\nu}\delta h^{\mu \nu} \\
+ & \left.+\frac{1}{2}\nabla ^{(0)\mu}h_{\nu \rho}\delta h^{\nu \rho}+\frac{1}{2}\nabla ^{(0)}_{\nu}h\delta h^{\mu \nu}-\nabla ^{(0)} _{\rho}h^{\nu \rho}\delta h^{\mu}_{~\nu}\right)
 \end{align}$$
 
-Here $h=g^{(0)\mu \nu}h_{\mu \nu}$ and $\delta h=g^{(0)}_{\mu \nu}\delta h^{\mu \nu}$. This is the xCPS output of `FirstVariation[{h}, CD][lagFull]` after collecting the Euler-Lagrange coefficient and the total derivative. The first line of $\theta ^{\rho}$ comes from the linear total derivative in the bulk Lagrangian; the remaining terms are the quadratic contribution.
+the diffeomorphism charges are given by
 
-The corresponding Mathematica code is
+$$\begin{align}
+H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\left(X_{\xi}\cdot \theta ^{\mu}+\xi ^{\mu}\mathcal{L}\right) \\
+ & \approx\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\nabla _{\nu}Q_{\xi}^{\nu \mu} \\
+ & =\int _{\partial\Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu}Q_{\xi}^{\nu \mu}
+\end{align}$$
 
-```mathematica
-Needs["xAct`xCPS`"];
-xAct`xCPS`ResetSession[];
+here
 
-DefManifold[M3, 3, {a, b, c, d, e, f, i, j, k, l, m, n, p, q, r, s,
-  u, v, w, x, y, z}];
-DefMetric[-1, g0[-a, -b], CD, PrintAs -> "g0"];
-DefTensor[h[-a, -b], M3, Symmetric[{-a, -b}], PrintAs -> "h"];
+$$\begin{align}
+Q_{\xi}^{\mu \nu}[g] & =-\frac{1}{16\pi G}\frac{\sqrt{-g}}{\sqrt{-g^{(0)}}}\left( \nabla _{g}^{\mu}\xi ^{\nu}-\nabla _{g}^{\nu}\xi ^{\mu} \right).
+\end{align}$$
 
-lagFull =
-  CD[-a][CD[-b][h[a, b]]] - CD[-a][CD[a][h[c, -c]]]
-  + 1/2 h[a, -a] h[b, -b] - h[-a, -b] h[a, b]
-  + h[a, b] CD[-a][CD[-b][h[c, -c]]]
-  - 1/4 CD[-a][h[b, -b]] CD[a][h[c, -c]]
-  - CD[-a][h[a, b]] CD[-c][h[-b, c]]
-  + CD[a][h[b, -b]] CD[-c][h[-a, c]]
-  - h[a, b] CD[-b][CD[-c][h[-a, c]]]
-  - h[a, b] CD[-c][CD[-b][h[-a, c]]]
-  + 1/2 h[a, -a] CD[-b][CD[-c][h[b, c]]]
-  + h[a, b] CD[-c][CD[c][h[-a, -b]]]
-  - 1/2 h[a, -a] CD[-b][CD[b][h[c, -c]]]
-  - 1/2 CD[-a][h[-b, -c]] CD[c][h[a, b]]
-  + 3/4 CD[-c][h[-a, -b]] CD[c][h[a, b]];
+the factor $\displaystyle{\sqrt{-g}/\sqrt{-g^{(0)}}}$ is important because all currents above are written with the background measure. Since the constant term in the action has been dropped, the relevant potential is
 
-fvFull = FirstVariation[{h}, CD,
-  Simplification -> False,
-  ContractMetric -> True
-][lagFull];
+$$\begin{align}
+Q_{\xi}^{\mu \nu} & =Q_{\xi}^{(1)\mu \nu}+Q_{\xi}^{(2)\mu \nu}.
+\end{align}$$
 
-thetaRaw = SymplecticPotential[{h}, CD][lagFull];
-eomRaw = xAct`xCPS`EOM[h[-m, -n], CD][lagFull];
+define
 
-Print["LagrangianQ = ", LagrangianQ[lagFull]];
-Print["First variation:"];
-Print[InputForm[fvFull]];
-Print["Symplectic potential:"];
-Print[InputForm[thetaRaw]];
-Print["Euler-Lagrange coefficient:"];
-Print[InputForm[eomRaw]];
-```
+$$\begin{align}
+A_{\xi}^{(0)\mu \nu} & =\nabla ^{(0)\mu}\xi ^{\nu}-\nabla ^{(0)\nu}\xi ^{\mu} \\
+A_{\xi}^{(1)\mu \nu} & =-h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}+h^{\nu \rho}\nabla ^{(0)}_{\rho}\xi ^{\mu}+\xi ^{\rho}\left( \nabla ^{(0)\mu}h^{\nu}{}_{\rho}-\nabla ^{(0)\nu}h^{\mu}{}_{\rho} \right) \\
+A_{\xi}^{(2)\mu \nu} & =h^{\mu}{}_{\rho}h^{\rho \sigma}\nabla ^{(0)}_{\sigma}\xi ^{\nu}-h^{\nu}{}_{\rho}h^{\rho \sigma}\nabla ^{(0)}_{\sigma}\xi ^{\mu} \\
+ & \qquad+\xi ^{\lambda}\left[ h^{\mu \rho}\left( \nabla ^{(0)\nu}h_{\rho \lambda}-\nabla ^{(0)}_{\rho}h^{\nu}{}_{\lambda} \right)-h^{\nu \rho}\left( \nabla ^{(0)\mu}h_{\rho \lambda}-\nabla ^{(0)}_{\rho}h^{\mu}{}_{\lambda} \right) \right] \\
+D^{(2)} & =\frac{1}{8}h^{2}-\frac{1}{4}h_{\rho \sigma}h^{\rho \sigma}.
+\end{align}$$
 
-The raw `FirstVariation` output should then be collected into the coefficient of `dlh` and the `TotalDerivativeOfCD[...]` term. On this machine `xPerm` does not connect, so I kept `Simplification -> False` and did the final index cleanup by hand.
+then
+
+$$\begin{align}
+Q_{\xi}^{(1)\mu \nu} & =-\frac{1}{16\pi G}\left( A_{\xi}^{(1)\mu \nu}+\frac{1}{2}hA_{\xi}^{(0)\mu \nu} \right) \\
+Q_{\xi}^{(2)\mu \nu} & =-\frac{1}{16\pi G}\left( A_{\xi}^{(2)\mu \nu}+\frac{1}{2}hA_{\xi}^{(1)\mu \nu}+D^{(2)}A_{\xi}^{(0)\mu \nu} \right).
+\end{align}$$
+
+then the variation of the Noether charge gives
+
+$$\begin{align}
+\delta H_{\xi} & =\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu}k^{\nu \mu}_{\xi}
+\end{align}$$
+
+here
+
+$$\begin{align}
+k_{\xi}^{\mu \nu} & =\delta Q_{\xi}^{\mu \nu}-2\xi ^{[\mu}\theta ^{\nu]}(\delta h;h) \\
+ & =\delta Q_{\xi}^{(1)\mu \nu}+\delta Q_{\xi}^{(2)\mu \nu}-2\xi ^{[\mu}\theta ^{\nu]}(\delta h;h).
+\end{align}$$
+
+the two variations of the potential are
+
+$$\begin{align}
+\delta Q_{\xi}^{(1)\mu \nu} & =-\frac{1}{16\pi G}\left( \delta A_{\xi}^{(1)\mu \nu}+\frac{1}{2}\delta hA_{\xi}^{(0)\mu \nu} \right) \\
+\delta Q_{\xi}^{(2)\mu \nu} & =-\frac{1}{16\pi G}\left( \delta A_{\xi}^{(2)\mu \nu}+\frac{1}{2}\delta hA_{\xi}^{(1)\mu \nu}+\frac{1}{2}h\delta A_{\xi}^{(1)\mu \nu}+\delta D^{(2)}A_{\xi}^{(0)\mu \nu} \right),
+\end{align}$$
+
+where
+
+$$\begin{align}
+\delta A_{\xi}^{(1)\mu \nu} & =-\delta h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}+\delta h^{\nu \rho}\nabla ^{(0)}_{\rho}\xi ^{\mu}+\xi ^{\rho}\left( \nabla ^{(0)\mu}\delta h^{\nu}{}_{\rho}-\nabla ^{(0)\nu}\delta h^{\mu}{}_{\rho} \right) \\
+\delta A_{\xi}^{(2)\mu \nu} & =\left( \delta h^{\mu}{}_{\rho}h^{\rho \sigma}+h^{\mu}{}_{\rho}\delta h^{\rho \sigma} \right)\nabla ^{(0)}_{\sigma}\xi ^{\nu}
+-\left( \delta h^{\nu}{}_{\rho}h^{\rho \sigma}+h^{\nu}{}_{\rho}\delta h^{\rho \sigma} \right)\nabla ^{(0)}_{\sigma}\xi ^{\mu} \\
+& +\xi ^{\lambda}\left[ \delta h^{\mu \rho}\left( \nabla ^{(0)\nu}h_{\rho \lambda}-\nabla ^{(0)}_{\rho}h^{\nu}{}_{\lambda} \right)+h^{\mu \rho}\left( \nabla ^{(0)\nu}\delta h_{\rho \lambda}-\nabla ^{(0)}_{\rho}\delta h^{\nu}{}_{\lambda} \right) \right. \\
+& \left. -\delta h^{\nu \rho}\left( \nabla ^{(0)\mu}h_{\rho \lambda}-\nabla ^{(0)}_{\rho}h^{\mu}{}_{\lambda} \right)-h^{\nu \rho}\left( \nabla ^{(0)\mu}\delta h_{\rho \lambda}-\nabla ^{(0)}_{\rho}\delta h^{\mu}{}_{\lambda} \right) \right] \\
+\delta D^{(2)} & =\frac{1}{4}h\delta h-\frac{1}{2}h_{\rho \sigma}\delta h^{\rho \sigma}.
+\end{align}$$
+
+for the Virasoro computation it is more convenient to write the leading part of the surface charge variation for a covariant perturbation $\displaystyle{\delta h_{\mu \nu}}$:
+
+$$\begin{align}
+k_{\xi}^{(0)\mu \nu}[\delta h] & =\frac{1}{16\pi G}\left[-\xi ^{\rho}\left( \nabla ^{(0)\mu}\delta h^{\nu}{}_{\rho}-\nabla ^{(0)\nu}\delta h^{\mu}{}_{\rho} \right)-\frac{1}{2}\delta h\left( \nabla ^{(0)\mu}\xi ^{\nu}-\nabla ^{(0)\nu}\xi ^{\mu} \right) \right. \\
+& \qquad-\xi ^{\nu}\left( \nabla ^{(0)\mu}\delta h-\nabla ^{(0)}_{\rho}\delta h^{\mu \rho} \right)+\xi ^{\mu}\left( \nabla ^{(0)\nu}\delta h-\nabla ^{(0)}_{\rho}\delta h^{\nu \rho} \right) \\
+& \left. \qquad-\delta h^{\nu \rho}\nabla ^{(0)}_{\rho}\xi ^{\mu}+\delta h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}\right].
+\end{align}$$
