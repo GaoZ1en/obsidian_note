@@ -4,11 +4,11 @@ date: 2026-05-15
 summary: "Separates the oscillator algebra of linearized edge modes from the Brown-Henneaux Virasoro algebra of asymptotic surface charges."
 ---
 
-# 3. Edge-mode and asymptotic-charge algebras
+# Edge-mode and asymptotic-charge algebras
 
 There are two related but distinct algebraic structures in the linearized theory. The first is the oscillator, or Kac-Moody-like, algebra obtained by evaluating the symplectic form on the large-diffeomorphism modes. The second is the Brown-Henneaux Virasoro algebra of asymptotic surface charges. They have different generators and encode different aspects of the boundary dynamics.
 
-## 3.1 Oscillator algebra from the symplectic form
+## Oscillator algebra from the symplectic form
 
 The first algebra is obtained directly from the large-diffeomorphism directions in the linearized phase space. The modes of Section 2 can be written as
 
@@ -63,7 +63,7 @@ $$
 
 This is the linear oscillator algebra of the edge-mode phase space. It organizes the perturbative boundary-graviton variables.
 
-## 3.2 Brown-Henneaux Virasoro charges
+## Brown-Henneaux Virasoro charges
 
 The second algebra comes from asymptotic spacetime symmetries. Starting from the exact Killing fields $\xi_0,\xi_{\pm1}$ and $\bar\xi_0,\bar\xi_{\pm1}$, the first non-trivial asymptotic generators are fixed by the large-diffeomorphism parameters of the primary boundary gravitons. With the normalization used above,
 
@@ -137,7 +137,7 @@ $$
 
 The formulas for the surface charge variation and the Noether potential used in this computation are recorded in Appendix B.
 
-## 3.3 Relation between the two algebras
+## Relation between the two algebras
 
 The oscillator algebra in Section 3.1 is the algebra of linear coordinates on the boundary-graviton phase space. The Virasoro algebra in Section 3.2 is the algebra of asymptotic symmetry charges acting on that phase space.
 

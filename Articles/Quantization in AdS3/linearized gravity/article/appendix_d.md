@@ -4,7 +4,7 @@ date: 2026-05-15
 summary: "Collects the metric, curvature, and extrinsic-curvature perturbation formulas used to obtain the linearized gravity action."
 ---
 
-# Appendix D: Perturbation of geometric quantities
+# Perturbation of geometric quantities
 
 This appendix records the perturbative geometric formulas used in Section 1. Expand around the AdS$_3$ background
 
@@ -26,7 +26,7 @@ $$
 
 Indices on $h_{\mu\nu}$ are raised and lowered with the background metric.
 
-## D.1 Metric and volume element
+## Metric and volume element
 
 The inverse metric expands as
 
@@ -62,7 +62,7 @@ $$
 h=g^{(0)\mu\nu}h_{\mu\nu}.
 $$
 
-## D.2 Connection and curvature
+## Connection and curvature
 
 The Levi-Civita connection is
 
@@ -175,7 +175,7 @@ $$
 \end{align}
 $$
 
-## D.3 Boundary normal and induced metric
+## Boundary normal and induced metric
 
 For the radial boundary $\Gamma$, let $a,b\in\{t,\phi\}$. The outward pointing unit normal satisfies $g^{\mu\nu}n_\mu n_\nu=1$. Under the Brown-Henneaux falloffs,
 
@@ -221,7 +221,7 @@ $$
 +\mathcal{O}(r^{-2}).
 $$
 
-## D.4 Extrinsic curvature and boundary Lagrangian
+## Extrinsic curvature and boundary Lagrangian
 
 The extrinsic curvature is
 

@@ -4,11 +4,11 @@ date: 2026-05-15
 summary: "Sets up linearized Einstein gravity on global AdS3, Brown-Henneaux boundary conditions, the ungauge-fixed equations of motion, and the covariant symplectic form."
 ---
 
-# 1. Linearized Einstein gravity in global AdS$_3$
+# Linearized Einstein gravity in global AdS$_3$
 
 In this section, we specify the background geometry, the renormalized gravitational action, the Brown-Henneaux boundary conditions, and the covariant phase space structure used in the rest of the paper. The presentation follows the same logic as the Proca-Chern-Simons analysis: first define the model and its boundary conditions, then extract the equations of motion and the symplectic form that will be used for quantization.
 
-## 1.1 Spacetime background
+## Spacetime background
 
 We work in global AdS$_3$ with AdS radius set to one. The coordinates are $(t,r,\phi)$, with $\phi\sim \phi+2\pi$, and the background metric is
 
@@ -43,7 +43,7 @@ $$
 
 These exact Killing fields will be used to build the highest-weight boundary modes in Section 2.
 
-## 1.2 Action and boundary conditions
+## Action and boundary conditions
 
 The renormalized gravitational action is
 
@@ -72,7 +72,7 @@ $$
 
 The same falloffs are imposed on allowed variations. These boundary conditions preserve the asymptotic AdS$_3$ structure while allowing non-trivial large diffeomorphisms at infinity. The component falloffs and boundary geometry are collected in Appendix A.
 
-## 1.3 Linearized equations and symplectic form
+## Linearized equations and symplectic form
 
 Expanding the bulk action around the background gives
 
@@ -151,23 +151,28 @@ This equation defines the linearized phase space before choosing representatives
 The symplectic potential is
 
 $$
+\begin{aligned}
 \theta
-=\int_\Sigma\mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu\Theta^\mu,
-\qquad
-\Theta^\mu=-\frac{1}{16\pi G}
-\left(
+&=\int_\Sigma\mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu\Theta^\mu,\\
+\Theta^\mu
+&=-\frac{1}{16\pi G}
+\Big(
 \nabla^{(0)}_\nu\delta h^{\mu\nu}
 -\nabla^{(0)\mu}\delta h
 +h^{\mu\nu}\nabla^{(0)}_\nu\delta h
--\frac{1}{2}h\nabla^{(0)\mu}\delta h
+-\frac{1}{2}h\nabla^{(0)\mu}\delta h\\
+&\qquad
 +h^{\nu\rho}\nabla^{(0)\mu}\delta h_{\nu\rho}
 -h^{\nu\rho}\nabla^{(0)}_\rho\delta h^\mu{}_\nu
--h^{\mu\nu}\nabla^{(0)}_\rho\delta h_\nu{}^\rho
+-h^{\mu\nu}\nabla^{(0)}_\rho\delta h_\nu{}^\rho\\
+&\qquad
 +\frac{1}{2}h\nabla^{(0)}_\nu\delta h^{\mu\nu}
-+\frac{1}{2}\nabla^{(0)\mu}h_{\nu\rho}\delta h^{\nu\rho}
++\frac{1}{2}\nabla^{(0)\mu}h_{\nu\rho}\delta h^{\nu\rho}\\
+&\qquad
 +\frac{1}{2}\nabla^{(0)}_\nu h\,\delta h^{\mu\nu}
 -\nabla^{(0)}_\rho h^{\nu\rho}\delta h^\mu{}_\nu
-\right).
+\Big).
+\end{aligned}
 $$
 
 The first two terms come from the total derivative $\mathcal{L}^{(1)}$; they do not contribute to the field-space exterior derivative because the background connection is fixed. The symplectic form is

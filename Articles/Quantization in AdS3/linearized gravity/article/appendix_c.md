@@ -4,11 +4,11 @@ date: 2026-05-15
 summary: "Derives the normalized left and right boundary-graviton modes and records their large-diffeomorphism representatives."
 ---
 
-# Appendix C: Highest-weight modes and pure-gauge representatives
+# Highest-weight modes and pure-gauge representatives
 
 This appendix summarizes the construction of the boundary-graviton modes used in Section 2.
 
-## C.1 Highest-weight conditions
+## Highest-weight conditions
 
 Consider a separated contravariant metric perturbation
 
@@ -59,7 +59,7 @@ $$
 (\nabla^{(0)2}+2)h_{\mu\nu}=0.
 $$
 
-## C.2 Normalization and descendants
+## Normalization and descendants
 
 The normalization constant is fixed by
 
@@ -95,7 +95,7 @@ $$
 \Omega[h_{L,n},h_{R,\bar m}]=0.
 $$
 
-## C.3 Pure-gauge representatives
+## Pure-gauge representatives
 
 The primary modes can be written as diffeomorphisms of the background:
 

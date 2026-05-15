@@ -4,11 +4,11 @@ date: 2026-05-15
 summary: "Collects the Brown-Henneaux falloffs and the boundary geometry used in the linearized gravity article."
 ---
 
-# Appendix A: Brown-Henneaux falloffs and boundary geometry
+# Brown-Henneaux falloffs and boundary geometry
 
 This appendix records the asymptotic estimates and boundary geometric data used in the main text.
 
-## A.1 Boundary conditions
+## Boundary conditions
 
 In global AdS$_3$,
 
@@ -59,7 +59,7 @@ $$
 
 The same falloffs are imposed on allowed variations $\delta h_{\mu\nu}$.
 
-## A.2 Boundary geometry
+## Boundary geometry
 
 The constant-$t$ Cauchy surface has induced metric
 
@@ -93,7 +93,7 @@ $$
 h^{(0)}_{\phi\phi}=r^2.
 $$
 
-## A.3 Use in radial power counting
+## Use in radial power counting
 
 The estimates above organize the large-radius behavior of the following quantities:
 
