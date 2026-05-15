@@ -21,13 +21,15 @@ These skills complement this file. They do not override the constraints below.
 
 ## Obsidian MCP Usage
 
-Use the Obsidian MCP server as the preferred access layer for this vault when it is available. MCP access changes the access method only; all repository rules in this file still apply.
+Use the Obsidian MCP server primarily as a read/search access layer for this vault when it is available. For Markdown edits, prefer the built-in file modification tools, especially `apply_patch`, because they are more predictable for empty files, large replacements, and precise article drafting. Before substantial writes, preview the effect with a dry run, proposed patch, or concise diff-style summary. MCP access changes the access method only; all repository rules in this file still apply.
 
 - Prefer `search_vault`, `read_note`, and `read_multiple_notes` for discovery and context gathering.
 - Treat `list_notes(folder=...)` results cautiously: this MCP may return the full vault instead of the requested folder. Filter results manually by path prefix and Markdown extension before using them.
 - Ignore hidden, generated, dependency, and attachment paths returned by MCP unless explicitly requested, including `.crush/`, `.github/`, `.keep-the-rhythm/`, `.obsidian/`, `.venv/`, `__pycache__/`, and `Attachments/`.
-- Before any MCP write operation, show the planned changes in the conversation.
-- Prefer `update_note` for note edits and use its `dryRun` option before applying changes when available.
+- Do not use MCP write operations for normal Markdown editing unless the user explicitly requests MCP writes.
+- Before any MCP write operation, show the planned changes in the conversation and use `dryRun` first when available.
+- Use built-in file modification tools for article drafts, empty files, large section rewrites, and precise Markdown/LaTeX edits.
+- If the chosen edit tool has no dry-run mode, show the intended replacement, proposed patch, or diff summary before applying substantial changes.
 - Do not use `auto_backlink_vault` unless explicitly requested; automatic backlinks count as adding wiki-links.
 - Do not use MCP tools to delete, move, rename, or reorganize notes or folders unless explicitly requested and confirmed.
 
@@ -35,7 +37,7 @@ Use the Obsidian MCP server as the preferred access layer for this vault when it
 
 | Task | Command | Notes |
 |---|---|---|
-| Edit notes | Obsidian MCP preferred; direct Markdown edits if MCP is unavailable | Markdown and LaTeX only; show planned changes first |
+| Edit notes | Built-in file modification tools preferred; Obsidian MCP read/search for discovery | Markdown and LaTeX only; show planned changes first |
 | Git inspection | `git status`, `git diff`, `git add`, `git commit` | Show the proposed commit message before executing |
 | No build step | — | Static Markdown vault only |
 | No lint or test step | — | No software tooling in this repository |
