@@ -56,8 +56,8 @@ $$\begin{align}
 where $\displaystyle{X_{\xi}}$ and the variation of the Noether charge are given by
 
 $$\begin{align}
-X_{\xi} & =\int \mathrm{d}^{3}x\mathcal{L}_{\xi}h_{\mu \nu} \frac{\delta}{\delta h_{\mu \nu}} \\
- & =\int \mathrm{d}^{3}x (\xi ^{\rho}\nabla ^{(0)}_{\rho}h_{\mu \nu}+h_{\mu \rho}\nabla ^{(0)}_{\nu}\xi ^{\rho}+h_{\rho \nu}\nabla ^{(0)}_{\mu}\xi ^{\rho}) \frac{\delta}{\delta h_{\mu \nu}} \\
+X_{\xi} & =\int \mathrm{d}^{3}x(\mathcal{L}_{\xi}g^{(0)}_{\mu \nu}+\mathcal{L}_{\xi}h_{\mu \nu}) \frac{\delta}{\delta h_{\mu \nu}} \\
+ & =\int \mathrm{d}^{3}x \left(\nabla ^{(0)}_{\mu}\xi _{\nu}+\nabla ^{(0)}_{\nu}\xi _{\mu}+\xi ^{\rho}\nabla ^{(0)}_{\rho}h_{\mu \nu}+h_{\mu \rho}\nabla ^{(0)}_{\nu}\xi ^{\rho}+h_{\rho \nu}\nabla ^{(0)}_{\mu}\xi ^{\rho}\right) \frac{\delta}{\delta h_{\mu \nu}} \\
 \delta H_{\xi} & =\int _{\partial \Sigma} \mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu}k _{\xi}^{\mu \nu}
 \end{align}$$
 
@@ -67,4 +67,3 @@ $$\begin{align}
 [H_{n},H_{m}] & =-i(n-m)H_{n+m}-\frac{i}{8G}n(n^{2}-1)\delta _{n+m,0} \\
 [\bar{H}_{n},\bar{H}_{m}] & =-i(n-m)\bar{H}_{n+m}-\frac{i}{8G}n(n^{2}-1)\delta _{n+m,0}
 \end{align}$$
-

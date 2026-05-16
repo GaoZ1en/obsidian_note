@@ -105,6 +105,28 @@ $$
 \{H_\xi,H_\zeta\}\simeq X_\zeta\cdot\delta H_\xi.
 $$
 
+For the Brown-Henneaux generators, the action on the perturbation is
+
+$$
+\delta_{\xi_m}h_{\mu\nu}
+=\mathcal{L}_{\xi_m}g^{(0)}_{\mu\nu}
++\mathcal{L}_{\xi_m}h_{\mu\nu}.
+$$
+
+To the order needed for the finite surface bracket, the leading surface form $k_{\xi_n}^{(0)}$ is sufficient. Its inhomogeneous insertion gives
+
+$$
+\oint k_{\xi_n}^{(0)}[\mathcal{L}_{\xi_m}g^{(0)}]
+=-\frac{i}{8G}n(n^2-1)\delta_{n+m,0},
+$$
+
+while its homogeneous insertion gives
+
+$$
+\oint k_{\xi_n}^{(0)}[\mathcal{L}_{\xi_m}h]
+=-i(n-m)H_{n+m}.
+$$
+
 Using the Brown-Henneaux falloffs and the surface form listed in Appendix B, one obtains
 
 $$

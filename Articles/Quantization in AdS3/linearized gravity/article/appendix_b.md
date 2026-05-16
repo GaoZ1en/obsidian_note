@@ -106,7 +106,15 @@ k_\xi^{(0)\mu\nu}[\delta h]
 \end{align}
 $$
 
-This is the expression used to evaluate the Brown-Henneaux central extension.
+This leading expression is enough for the finite Brown-Henneaux surface-charge algebra. For an asymptotic generator,
+
+$$
+\delta_{\xi_m}h_{\mu\nu}
+=\mathcal{L}_{\xi_m}g^{(0)}_{\mu\nu}
++\mathcal{L}_{\xi_m}h_{\mu\nu}.
+$$
+
+The insertion $\mathcal{L}_{\xi_m}g^{(0)}$ gives the central extension, and the insertion $\mathcal{L}_{\xi_m}h$ gives the field-dependent Witt term. The terms in the full $k_\xi$ that are linear in both $h$ and $\delta h$ do not contribute to the finite Brown-Henneaux bracket in this calculation.
 
 ## Brown-Henneaux central term
 
