@@ -1,166 +1,149 @@
 ---
-title: "3_algebras"
+title: 3_algebras
 date: 2026-05-15
-summary: "Separates the oscillator algebra of linearized edge modes from the Brown-Henneaux Virasoro algebra of asymptotic surface charges."
+summary: derivation of the Virasoro algebra
 ---
 
-# Edge-mode and asymptotic-charge algebras
+# Virasoro algebra
 
-There are two related but distinct algebraic structures in the linearized theory. The first is the oscillator, or Kac-Moody-like, algebra obtained by evaluating the symplectic form on the large-diffeomorphism modes. The second is the Brown-Henneaux Virasoro algebra of asymptotic surface charges. They have different generators and encode different aspects of the boundary dynamics.
+## asymptotic Killing vectors
 
-## Oscillator algebra from the symplectic form
+starting from the exact Killing fields $\displaystyle{\xi _{a}}$, $\displaystyle{\bar{\xi}_{a}}$ and the large-diffeomorphism parameters $\displaystyle{\zeta _{-,0}^{\mu}}$ and $\displaystyle{\zeta _{+,0}^{\mu}}$, we can construct the asymptotic Killing vectors as
 
-The first algebra is obtained directly from the large-diffeomorphism directions in the linearized phase space. The modes of Section 2 can be written as
+$$\begin{align}
+\xi _{-2} & =\frac{3}{2i\sqrt{ 3G }}\zeta _{L,0}, & \xi _{2} & =\xi _{-2}^{*} \\
+\bar{\xi}_{-2} & =\frac{3}{2i\sqrt{ 3G }}\zeta _{R,0}, & \bar{\xi}_{2} & =\bar{\xi}_{-2}^{*}
+\end{align}$$
 
-$$
-h_{L,n}^{\mu\nu}
-=\nabla^{(0)\mu}\zeta_{L,n}^{\nu}
-+\nabla^{(0)\nu}\zeta_{L,n}^{\mu},\qquad
-h_{R,\bar n}^{\mu\nu}
-=\nabla^{(0)\mu}\zeta_{R,\bar n}^{\nu}
-+\nabla^{(0)\nu}\zeta_{R,\bar n}^{\mu}.
-$$
+higher asymptotic generators are defined recursively as
 
-They generate vector fields on the phase space. For $n\geq1$, define
+$$\begin{align}
+\xi _{n+1} & =\frac{1}{i(n-1)}\mathcal{L}_{\xi_{1}}\xi _{n}, & \xi _{-(n+1)} & =-\frac{1}{i(n-1)}\mathcal{L}_{\xi _{-1}}\xi _{-n} \\
+\bar{\xi}_{n+1} & =\frac{1}{i(n-1)}\mathcal{L}_{\bar{\xi}_{1}}\bar{\xi}_{n}, & \bar{\xi}_{-(n+1)} & =-\frac{1}{i(n-1)}\mathcal{L}_{\bar{\xi}_{-1}}\bar{\xi}_{-n}, & n\geqslant 2
+\end{align}$$
 
-$$
-\begin{align}
-X_{n+1}
-&=\int\mathrm{d}^3x\sqrt{-g^{(0)}}\,\sqrt{n}
-\left(\nabla_\mu\zeta_{L,n,\nu}+\nabla_\nu\zeta_{L,n,\mu}\right)
-\frac{\delta}{\delta h_{\mu\nu}},\\
-X_{\bar n+1}
-&=\int\mathrm{d}^3x\sqrt{-g^{(0)}}\,\sqrt{\bar n}
-\left(\nabla_\mu\zeta_{R,\bar n,\nu}+\nabla_\nu\zeta_{R,\bar n,\mu}\right)
-\frac{\delta}{\delta h_{\mu\nu}}.
-\end{align}
-$$
+these asymptotic generators obey two copies of the Witt algebra asymptotically,
 
-The negative labels are obtained from the complex-conjugate modes, and $X_0=0$. Let $H_k^{\mathrm{osc}}$ and $\bar H_k^{\mathrm{osc}}$ denote the Hamiltonians associated with these phase-space vector fields. Their Poisson brackets are evaluated from the symplectic form:
+$$\begin{align}
+[\xi _{n},\xi _{m}] & =-i(n-m)\xi _{n+m}+\mathcal{O}(r^{-4}) \\
+[\bar{\xi}_{n},\bar{\xi}_{m}] & =-i(n-m)\bar{\xi}_{n+m}+\mathcal{O}(r^{-4}) \\
+[\xi _{n},\bar{\xi}_{m}] & =0,\quad n,m\in \mathbb{Z}
+\end{align}$$
 
-$$
-\{H_k^{\mathrm{osc}},H_l^{\mathrm{osc}}\}
-=X_k\cdot X_l\cdot\Omega.
-$$
+## Noether theorem for (asymptotic) Killing symmetries
 
-This gives
+we now discuss the Noether charges associated with the (asymptotic) Killing symmetries. a (asymptotic) Killing symmetry is represented on configuration space by the vector field
 
-$$
-\{H_k^{\mathrm{osc}},H_l^{\mathrm{osc}}\}
-=-ik\delta_{k+l,0},\qquad
-\{\bar H_k^{\mathrm{osc}},\bar H_l^{\mathrm{osc}}\}
-=-ik\delta_{k+l,0},\qquad
-\{H_k^{\mathrm{osc}},\bar H_l^{\mathrm{osc}}\}=0.
-$$
+$$\begin{align}
+X_{\xi} & =\int \mathrm{d}^{3}x\mathcal{L}_{\xi}g_{\mu \nu} \frac{\delta}{\delta g_{\mu \nu}} \\
+ & =\int \mathrm{d}^{3}x\left(\mathcal{L}_{\xi}g^{(0)}_{\mu \nu} +\mathcal{L}_{\xi}h_{\mu \nu}+\mathcal{O}(h^{2})\right) \frac{\delta}{\delta h_{\mu \nu}}
+\end{align}$$
 
-Equivalently, after quantization one may write the oscillator algebra as
+here $\displaystyle{\xi ^{\mu}}$ is a (asymptotic) Killing symmetry, i.e.,the asymptotic behavior of $\displaystyle{\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu}}$ satifies the Brown-Henneaux falloffs. the asymptotic behavior for $\displaystyle{\xi ^{\mu}}$ itself is
 
-$$
-[\alpha_k,\alpha_l]=k\,\delta_{k+l,0},\qquad
-[\bar{\alpha}_k,\bar{\alpha}_l]=k\,\delta_{k+l,0},\qquad
-[\alpha_k,\bar{\alpha}_l]=0.
-$$
+$$\begin{align}
+\xi ^{t} & =\mathcal{O}(r^{0}), & \xi ^{r} & =\mathcal{O}(r), & \xi ^{\phi} & =\mathcal{O}(r^{0})
+\end{align}$$
 
-This is the linear oscillator algebra of the edge-mode phase space. It organizes the perturbative boundary-graviton variables.
+which preserve the asymptotic boundary conditions of the field components of $\displaystyle{h_{\mu \nu}}$ as
 
-## Brown-Henneaux Virasoro charges
+$$\begin{align}
+X_{\xi}\cdot \delta h_{tt} & =\mathcal{O}(r^{0}), & X_{\xi}\cdot \delta h_{tr} & =\mathcal{O}(r^{-3}), & X_{\xi}\cdot \delta h_{t\phi} & =\mathcal{O}(r^{0}) \\
+ & & X_{\xi}\cdot \delta h_{rr} & =\mathcal{O}(r^{-4}), & X_{\xi}\cdot \delta h_{r\phi} & =\mathcal{O}(r^{-3}) \\
+ &  &  &  & X_{\xi}\cdot \delta h_{\phi \phi} & =\mathcal{O}(r^{0})
+\end{align}$$
 
-The second algebra comes from asymptotic spacetime symmetries. Starting from the exact Killing fields $\xi_0,\xi_{\pm1}$ and $\bar\xi_0,\bar\xi_{\pm1}$, the first non-trivial asymptotic generators are fixed by the large-diffeomorphism parameters of the primary boundary gravitons. With the normalization used above,
+act this symmetry vector $\displaystyle{X_{\xi}}$ on the bulk action, we have
 
-$$
-\xi_{-2}=\frac{3}{2i\sqrt{3G}}\zeta_{L,0},\qquad
-\bar{\xi}_{-2}=\frac{3}{2i\sqrt{3G}}\zeta_{R,0},
-$$
+$$\begin{align}
+X_{\xi}\cdot \delta S_{\text{bulk}} & =\alpha _{\xi}|_{\Sigma _{f}}-\alpha _{\xi}|_{\Sigma _{i}} \\
+\alpha _{\xi} & =-\frac{1}{16\pi G}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau ^{(0)}_{\mu}\xi ^{\mu}\left(\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}h^{\rho \sigma}-\nabla ^{(0)2}h+\mathcal{O}(h^{2})\right)
+\end{align}$$
 
-and $\xi_2=\xi_{-2}^*$, $\bar\xi_2=\bar\xi_{-2}^*$. Higher asymptotic generators are defined recursively by the Witt algebra:
+then the corresponding Noether charge is
 
-$$
-\begin{align}
-\xi_{n+1}&=\frac{1}{i(n-1)}\mathcal{L}_{\xi_1}\xi_n,&
-\xi_{-(n+1)}&=-\frac{1}{i(n-1)}\mathcal{L}_{\xi_{-1}}\xi_{-n},\\
-\bar{\xi}_{n+1}&=\frac{1}{i(n-1)}\mathcal{L}_{\bar{\xi}_1}\bar{\xi}_n,&
-\bar{\xi}_{-(n+1)}&=-\frac{1}{i(n-1)}\mathcal{L}_{\bar{\xi}_{-1}}\bar{\xi}_{-n},
-\end{align}
-$$
+$$\begin{align}
+H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
+ & \approx \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau ^{(0)} _{\mu}\nabla ^{(0)} _{\nu}Q_{\xi}^{\nu \mu} \\
+ & =\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}^{(0)}n^{(0)}_{\nu}Q_{\xi}^{\mu \nu}
+\end{align}$$
 
-for $n\geq2$. They obey two copies of the Witt algebra asymptotically,
+here $\displaystyle{h^{(0)}_{ij}}$ is the induced metric on the $\displaystyle{\partial \Sigma=\Sigma \cap \Gamma}$
 
-$$
-[\xi_n,\xi_m]=-i(n-m)\xi_{n+m}+\mathcal{O}(r^{-4}),\qquad
-[\bar{\xi}_n,\bar{\xi}_m]=-i(n-m)\bar{\xi}_{n+m}+\mathcal{O}(r^{-4}),
-$$
+$$\begin{align}
+\mathrm{d}s^{2}_{\partial \Sigma} & =h^{(0)}_{ij}\mathrm{d}x^{i}\mathrm{d}x^{j} \\
+ & =r^{2}\mathrm{d}\phi ^{2}, \quad r\to \infty
+\end{align}$$
 
-with $[\xi_n,\bar{\xi}_m]=0$. The modes $\xi_0,\xi_{\pm1}$ and $\bar{\xi}_0,\bar{\xi}_{\pm1}$ are exact AdS$_3$ Killing vectors; the higher modes are genuine asymptotic symmetries.
+and $\displaystyle{n^{(0)\mu}}$ is the outward-pointing unit normal vector orthogonal to the spatial boundary $\displaystyle{\Gamma}$, defined as
 
-Let $H_n$ and $\bar H_n$ be the corresponding surface charges. The charge variation is evaluated on the circle at spatial infinity,
+$$\begin{align}
+n^{(0)\mu} & =\sqrt{ 1+r^{2} }\delta ^{\mu}_{r}
+\end{align}$$
 
-$$
-\delta H_\xi
-=\int_{\partial\Sigma}\mathrm{d}x\sqrt{h^{(0)}}\,\tau_\mu n_\nu k_\xi^{\nu\mu}.
-$$
+here the $\displaystyle{Q_{\xi}^{\mu \nu}}$ is defined as
 
-Then the charge algebra follows from
+$$\begin{align}
+Q_{\xi}^{\mu \nu} & =\frac{1}{16\pi G}\left(A^{(1)\mu \nu}_{\xi}+\frac{1}{2}hA_{\xi}^{(0)\mu \nu}\right)+\mathcal{O}(h^{2}) \\
+A_{\xi}^{(0)\mu \nu} & =\nabla ^{(0)\mu}\xi ^{\xi}-\nabla ^{(0)\nu}\xi ^{\mu} \\
+A_{\xi}^{(1)\mu \nu} & =-h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}+h^{\nu \rho}\nabla ^{(0)}_{\rho}\xi ^{\mu}+\xi ^{\rho}(\nabla ^{(0)\mu}h^{\nu}_{~\rho}-\nabla ^{(0)\nu}h^{\mu}_{~\rho})
+\end{align}$$
 
-$$
-\{H_\xi,H_\zeta\}\simeq X_\zeta\cdot\delta H_\xi.
-$$
+higher order contributions are dropped since they does not affect our future discussion. to compute the Poisson brackets between Noether charges, we consider the variation of the Noether charge $\displaystyle{H_{\xi}}$
 
-For the Brown-Henneaux generators, the action on the perturbation is
+$$\begin{align}
+\delta H_{\xi} & \approx \int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau ^{(0)} _{\mu}n^{(0)}_{\nu}\left(Q_{\xi}^{\mu \nu}-2\xi ^{[\mu}\theta ^{\nu]}\right) \\
+ & =\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}^{(0)}n_{\nu}^{(0)}k _{\xi}^{(0)\mu \nu}
+\end{align}$$
 
-$$
-\delta_{\xi_m}h_{\mu\nu}
-=\mathcal{L}_{\xi_m}g^{(0)}_{\mu\nu}
-+\mathcal{L}_{\xi_m}h_{\mu\nu}.
-$$
+where $\displaystyle{\xi ^{[\mu}\theta ^{\nu]}=\frac{1}{2}(\xi ^{\mu}\theta ^{\nu}-\xi ^{\nu}\theta ^{\mu})}$, and
 
-To the order needed for the finite surface bracket, the leading surface form $k_{\xi_n}^{(0)}$ is sufficient. Its inhomogeneous insertion gives
+$$\begin{align}
+k _{\xi}^{\mu \nu} & =\delta Q_{\xi}^{\mu \nu}-2\xi ^{[\mu}\theta ^{\nu]} \\
+ & =\frac{1}{16\pi G}\left[ \xi ^{\rho}(\nabla ^{(0)\mu}\delta h^{\nu}_{~\rho}-\nabla ^{(0)\nu}\delta h^{\mu}_{~\rho})+\frac{1}{2}\delta h\left(\nabla ^{(0)\mu}\xi ^{\nu}-\nabla ^{(0)\nu}\xi ^{\mu}\right) \right. \\
+ & -\delta h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}+\delta h^{\nu \rho}\nabla ^{(0)}_{\rho}\xi ^{\mu}+\xi ^{\mu}(\nabla ^{(0)}_{\rho}\delta h^{\nu \rho}-\nabla ^{(0)\nu}\delta h) \\
+ & \left.-\xi ^{\nu}(\nabla ^{(0)}_{\rho}\delta h^{\mu \rho}-\nabla ^{(0)\mu}\delta h)\right]+\mathcal{O}(h\delta h)
+\end{align}$$
 
-$$
-\oint k_{\xi_n}^{(0)}[\mathcal{L}_{\xi_m}g^{(0)}]
-=-\frac{i}{8G}n(n^2-1)\delta_{n+m,0},
-$$
+again, higher order contributions are dropped. the Poisson bracket between two Noether charges $\displaystyle{H_{\xi}}$ and $\displaystyle{H_{\zeta}}$ corresponding to symmetry vectors $\displaystyle{X_{\xi}}$ and $\displaystyle{X_{\zeta}}$ are defined as
 
-while its homogeneous insertion gives
+$$\begin{align}
+\left\{H_{\xi},H_{\zeta}\right\} & =X_{\xi}\cdot X_{\zeta}\cdot \omega \\
+ & \approx X_{\zeta}\cdot \delta H_{\xi} \\
+ & =\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau ^{(0)}_{\mu}n^{(0)}_{\nu}(X_{\zeta}\cdot k _{\xi}^{\mu \nu})
+\end{align}$$
 
-$$
-\oint k_{\xi_n}^{(0)}[\mathcal{L}_{\xi_m}h]
-=-i(n-m)H_{n+m}.
-$$
+the $\displaystyle{\approx}$ holds because of the Noether theorem proved in our previous paper.
 
-Using the Brown-Henneaux falloffs and the surface form listed in Appendix B, one obtains
 
-$$
-\begin{align}
-\{H_n,H_m\}
-&=-i(n-m)H_{n+m}-\frac{i}{8G}n(n^2-1)\delta_{n+m,0},\\
-\{\bar H_n,\bar H_m\}
-&=-i(n-m)\bar H_{n+m}-\frac{i}{8G}n(n^2-1)\delta_{n+m,0},\\
+## Virasoro algebra
+
+following the discussion of Section 1.?, we now consider the algebras between Noether charges corresponding to these asymptotic Killing vectors. define the vector fields
+
+$$\begin{align}
+X_{\xi _{n}} & =\int \mathrm{d}^{3}x\left(\mathcal{L}_{\xi _{n}}g^{(0)}_{\mu \nu}+\mathcal{L}_{\xi _{n}}h_{\mu \nu}+\mathcal{O}(h^{2})\right) \frac{\delta}{\delta h_{\mu \nu}} \\
+X_{\bar{\xi}_{n}} & =\int \mathrm{d}^{3}x\left(\mathcal{L}_{\bar{\xi}_{n}}g^{(0)}_{\mu \nu}+\mathcal{L}_{\bar{\xi}_{n}}h_{\mu \nu}+\mathcal{O}(h^{2})\right) \frac{\delta}{\delta h_{\mu \nu}}
+\end{align}$$
+
+and let $\displaystyle{H_{n}}$ and $\displaystyle{\bar{H}_{n}}$ be the Noether charges corresponding to $\displaystyle{X_{\xi _{n}}}$ and $\displaystyle{X_{\bar{\xi}_{n}}}$ respectively. after gauge fixing, we have
+
+$$\begin{align}
+H_{\xi} & \approx \frac{1}{16\pi G}\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau ^{(0)}_{\mu}n^{(0)}_{\nu}\left(-h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}+h^{\nu \rho}\nabla ^{(0)}_{\rho}\xi ^{\mu}+\xi ^{\rho}\left(\nabla ^{(0)\mu}h^{\nu}_{~\rho}-\nabla ^{(0)\nu}h^{\mu}_{~\rho}\right)+\mathcal{O}(h^{2})\right) \\
+\delta H_{\xi} & \approx \frac{1}{16\pi G}\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}^{(0)}n_{\nu}^{(0)}\left(-\delta h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}+\delta h^{\nu \rho}\nabla ^{(0)}_{\rho}\xi ^{\mu}+\xi ^{\rho}(\nabla ^{(0)\mu}\delta h^{\nu}_{~\rho}-\nabla ^{(0)\nu}\delta h^{\mu}_{~\rho})+\mathcal{O}(h\delta h)\right)
+\end{align}$$
+
+the Poisson bracket between two Noether charges $\displaystyle{H_{\xi}}$ and $\displaystyle{H_{\zeta}}$ is defined as
+
+$$\begin{align}
+\{H_\xi,H_\zeta\}\approx X_\zeta\cdot\delta H_\xi.
+\end{align}$$
+
+by substituting $\displaystyle{\xi}$ and $\displaystyle{\zeta}$ into asymptotic Killing vectors $\displaystyle{\xi _{n}}$ and $\displaystyle{\bar{\xi}_{n}}$, we obtains the desired Virasoro algebra
+
+$$\begin{align}
+\{H_n,H_m\}&=-i(n-m)H_{n+m}-\frac{i}{8G}n(n^2-1)\delta_{n+m,0},\\
+\{\bar H_n,\bar H_m\}&=-i(n-m)\bar H_{n+m}-\frac{i}{8G}n(n^2-1)\delta_{n+m,0},\\
 \{H_n,\bar H_m\}&=0.
-\end{align}
-$$
+\end{align}$$
 
-In the standard quantum convention this is the Virasoro algebra
-
-$$
-\begin{align}
-[L_n,L_m]
-&=(n-m)L_{n+m}+\frac{c}{12}n(n^2-1)\delta_{n+m,0},\\
-[\bar L_n,\bar L_m]
-&=(n-m)\bar L_{n+m}+\frac{c}{12}n(n^2-1)\delta_{n+m,0},\\
-[L_n,\bar L_m]&=0,
-\end{align}
-$$
-
-with Brown-Henneaux central charge
-
-$$
-c=\frac{3}{2G}.
-$$
-
-The formulas for the surface charge variation and the Noether potential used in this computation are recorded in Appendix B.
-
-## Relation between the two algebras
-
-The oscillator algebra in Section 3.1 is the algebra of linear coordinates on the boundary-graviton phase space. The Virasoro algebra in Section 3.2 is the algebra of asymptotic symmetry charges acting on that phase space.
-
-The oscillator bracket is computed by inserting the explicit large-diffeomorphism modes into the symplectic form. The Virasoro bracket is computed by varying the asymptotic surface charges. The central term belongs to the surface-charge calculation, even though both structures are built from the same Brown-Henneaux boundary data.
+with central charge $\displaystyle{c=\frac{3}{2G}}$.
