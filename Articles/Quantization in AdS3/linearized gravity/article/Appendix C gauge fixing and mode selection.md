@@ -12,26 +12,127 @@ This appendix collects the subtle points behind the mode construction in Section
 
 TODO: Explain the role of TT gauge as a choice of representative for the linearized diffeomorphism class.
 
-## First-order factorization
-
-TODO: Record the operator $\mathcal{D}_{\mu}{}^{\nu}=\varepsilon_{\mu}{}^{\nu\rho}\nabla^{(0)}_\rho$ and the factorization of the TT equation.
-
 ## Casimir eigenvalues and highest weights
 
-TODO: Derive the Casimir eigenvalues of the two first-order branches and solve for the candidate highest-weight roots.
+On TT perturbations, the two $\mathfrak{sl}(2,\mathbb{R})$ Casimirs may be expressed in terms of $\mathcal{D}$ as in Section 2. Substituting the first-order equations gives
 
-## Physical sector selection
+$$\begin{array}{c|cc}
+&\mathcal{C}&\bar{\mathcal{C}}\\
+\hline
+h_{+,N}&0&-2\\
+h_{-,N}&-2&0
+\end{array}$$
 
-TODO: Explain the regularity, positive-frequency, and Brown-Henneaux boundary requirements that select the $(2,0)$ and $(0,2)$ boundary-graviton sectors.
+For a highest-weight state with weights $(h,\bar h)$,
 
-## Proper versus improper gauge modes
+$$\begin{align}
+\mathcal{C} & =-h^{2}+h \\
+\mathcal{\bar{C}} & =-\bar{h}^{2}+\bar{h}
+\end{align}$$
 
-TODO: Explain why locally pure-gauge perturbations survive as physical edge modes only when the corresponding gauge parameter is non-proper at the AdS boundary.
+The algebraic roots are therefore
 
-## Mixed roots
+$$\begin{align}
+h_{+}:&\quad (h,\bar h)=(0,2),(0,-1),(1,2),(1,-1),\\
+h_{-}:&\quad (h,\bar h)=(2,0),(-1,0),(2,1),(-1,1).
+\end{align}$$
 
-TODO: Explain why the mixed roots solve the formal Casimir equations but do not define independent physical boundary-graviton degrees of freedom.
+We keep only representatives that are regular in global AdS$_3$ and belong to the positive-energy linearized phase space. Equivalently, the quadratic generators associated with the two chiral translations are required to be non-negative on physical positive-frequency modes. Roots with a negative Cartan weight are therefore not admissible. The candidates left by these regularity and positivity requirements are
 
-## Explicit representatives and normalization
+$$
+(0,2),\qquad (2,0),\qquad (1,2),\qquad (2,1).
+$$
 
-TODO: Record the primary modes, descendants, gauge parameters $\zeta_{L/R,n}$, and the symplectic normalization.
+After the positivity condition above, the physical degrees of freedom are selected by two further requirements:
+
+- the representative is regular in global AdS$_3$;
+- the representative has non-vanishing symplectic norm, $\displaystyle{i\Omega[h,h^{*}]\neq 0}$.
+
+The roots $(2,0)$ and $(0,2)$ discussed in the main body satisfy these conditions and generate the two chiral boundary-graviton towers. Their descendants are obtained by acting with the lowering operator in the non-trivial chiral copy:
+
+$$\begin{align}
+h_{-,n}^{\mu\nu}
+&=\sqrt{\frac{6}{n!(n+3)!}}\,
+\mathcal{L}_{\xi_{-1}}^n h_{-,0}^{\mu\nu},\\
+h_{+,\bar n}^{\mu\nu}
+&=\sqrt{\frac{6}{\bar n!(\bar n+3)!}}\,
+\mathcal{L}_{\bar\xi_{-1}}^{\bar n}h_{+,0}^{\mu\nu}.
+\end{align}$$
+
+As for the roots $(1,2)$ and $(2,1)$, we first solve the primaries. For $\displaystyle{(1,2)}$, we write down the highest-weight conditions
+
+$$\begin{align}
+\mathcal{L}_{\xi_{0}}h_{(1,2),0}^{\mu \nu} & =-ih_{(1,2),0}^{\mu \nu} \\
+\mathcal{L}_{\bar{\xi}_{0}}h_{(1,2),0}^{\mu \nu} & =-2ih_{(1,2),0}^{\mu \nu} \\
+\mathcal{L}_{\xi _{1}}h_{(1,2),0}^{\mu \nu} & =\nabla ^{(0)\mu}\zeta ^{\nu}+\nabla ^{(0)\nu}\zeta ^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{1}}h_{(1,2),0}^{\mu \nu} & =\nabla ^{(0)\mu}\zeta'^{\nu}+\nabla ^{(0)\nu}\zeta'^{\mu}
+\end{align}$$
+
+Here $\displaystyle{\zeta}$ and $\displaystyle{\zeta'}$ are generators of proper gauge transformations. For the mixed-root solution below, however, the strict raising conditions are already satisfied, so the proper-gauge terms vanish for this explicit representative. Up to an overall normalization, the primary is
+
+$$\begin{align}
+h^{\mu \nu}_{(1,2),0}
+&=\frac{e^{-i(3t+\phi)}}{(1+r^{2})^{5/2}}\begin{pmatrix}
+\frac{2ir}{1+r^{2}} & 1-r^{2} & -\frac{i}{r} \\
+1-r^{2} & 2ir(1+r^{2}) & 1+r^{2} \\
+-\frac{i}{r} & 1+r^{2} & 0
+\end{pmatrix}^{\mu \nu}
+\end{align}$$
+
+Moreover, up to the same overall normalization, this solution is precisely the left descendant of the $(0,2)$ primary,
+
+$$
+h_{(1,2),0}^{\mu\nu}=\mathcal{L}_{\xi_{-1}}h_{+,0}^{\mu\nu}.
+$$
+
+The corresponding gauge parameter is obtained by the same action on the $(0,2)$ parameter,
+
+$$
+\zeta_{(1,2),0}^{\mu}
+:=\mathcal{L}_{\xi_{-1}}\zeta_{+,0}^{\mu},
+$$
+
+namely
+
+$$\begin{align}
+\zeta_{(1,2),0}^{t}&\sim e^{-i(3t+\phi)}\frac{r}{(1+r^2)^{5/2}},\\
+\zeta_{(1,2),0}^{r}&\sim-i\,e^{-i(3t+\phi)}\frac{1}{(1+r^2)^{3/2}},\\
+\zeta_{(1,2),0}^{\phi}&\sim -\,e^{-i(3t+\phi)}\frac{1}{r(1+r^2)^{3/2}}.
+\end{align}$$
+
+This gauge parameter vanishes at the boundary $\displaystyle{\Gamma}$, so the $(1,2)$ primary and its descendants are proper gauge modes.
+
+Similarly, the $(2,1)$ primary is obtained by solving the right-left exchanged highest-weight conditions. Up to an overall normalization,
+
+$$\begin{align}
+h^{\mu \nu}_{(2,1),0}
+&=\frac{e^{-i(3t-\phi)}}{(1+r^{2})^{5/2}}\begin{pmatrix}
+\frac{2ir}{1+r^{2}} & 1-r^{2} & \frac{i}{r} \\
+1-r^{2} & 2ir(1+r^{2}) & -(1+r^{2}) \\
+\frac{i}{r} & -(1+r^{2}) & 0
+\end{pmatrix}^{\mu \nu}.
+\end{align}$$
+
+With the corresponding normalization, it is the right descendant of the $(2,0)$ primary,
+
+$$
+h_{(2,1),0}^{\mu\nu}
+=\mathcal{L}_{\bar\xi_{-1}}h_{-,0}^{\mu\nu}.
+$$
+
+The corresponding gauge parameter is
+
+$$
+\zeta_{(2,1),0}^{\mu}
+:=\mathcal{L}_{\bar\xi_{-1}}\zeta_{-,0}^{\mu},
+$$
+
+with asymptotic behavior
+
+$$\begin{align}
+\zeta_{(2,1),0}^{t}&\sim e^{-i(3t-\phi)}\frac{r}{(1+r^2)^{5/2}},\\
+\zeta_{(2,1),0}^{r}&\sim-i\,e^{-i(3t-\phi)}\frac{1}{(1+r^2)^{3/2}},\\
+\zeta_{(2,1),0}^{\phi}&\sim e^{-i(3t-\phi)}\frac{1}{r(1+r^2)^{3/2}}.
+\end{align}$$
+
+This parameter also vanishes at $\displaystyle{\Gamma}$. Hence the mixed roots are regular solutions of the formal highest-weight problem, but their representatives have zero symplectic norm in the allowed Brown-Henneaux phase space and are removed by the proper-gauge quotient.

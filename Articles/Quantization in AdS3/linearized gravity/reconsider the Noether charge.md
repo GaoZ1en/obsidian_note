@@ -59,8 +59,8 @@ A_{\xi}^{(1)\mu \nu} & =-h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}+h^{\nu \rho}
 to compute the Poisson brackets between Noether charges, we consider the variation of the Noether charge
 
 $$\begin{align}
-\delta H_{\xi} & \approx \int _{\partial\Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu}(\delta Q_{\xi}^{\nu \mu}-2\xi ^{[\nu}\theta ^{\mu]}) \\
- & =\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu} k _{\xi}^{\nu \mu}
+\delta H_{\xi} & \approx \int _{\partial\Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu}(\delta Q_{\xi}^{\mu \nu}-2\xi ^{[\mu}\theta ^{\nu]}) \\
+ & =\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu} k _{\xi}^{\mu \nu}
 \end{align}$$
 
 where $\displaystyle{\xi ^{[\mu}\theta ^{\nu]}=\frac{1}{2}(\xi ^{\mu}\theta ^{\nu}-\xi ^{\nu}\theta ^{\mu})}$, and
@@ -82,8 +82,8 @@ for the asymptotic Killing vectors $\displaystyle{\xi _{n},\bar{\xi}_{n},n\in \m
 
 $$\begin{align}
 \left\{H_{n},H_{m}\right\} & \approx X_{m}\cdot \delta H_{n} \\
- & =\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu} (X_{m}\cdot k _{n}^{\nu \mu}) \\
- & =-i(n-m)H_{n+m}+\frac{i}{8G}n(n^{2}-1)\delta _{n+m,0} \\
-\left\{\bar{H}_{n},\bar{H}_{m}\right\} & =-i(n-m)\bar{H}_{n+m}+\frac{i}{8G}n(n^{2}-1)\delta _{n+m,0} \\
+ & =\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu} (X_{m}\cdot k _{n}^{\mu \nu}) \\
+ & =-i(n-m)H_{n+m}-\frac{i}{8G}n(n^{2}-1)\delta _{n+m,0} \\
+\left\{\bar{H}_{n},\bar{H}_{m}\right\} & =-i(n-m)\bar{H}_{n+m}-\frac{i}{8G}n(n^{2}-1)\delta _{n+m,0} \\
 \left\{H_{n},\bar{H}_{m}\right\} & =0
 \end{align}$$
