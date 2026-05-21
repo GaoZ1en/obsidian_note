@@ -8,6 +8,7 @@ Linearized gravity calculations in AdS3 background.
 |---|---|
 | `formalism.md` | Linearized gravity formalism |
 | `general linearized theory.md` | General linearized theory |
+| `bulk reconstruction.md` | Possible bulk-reconstruction direction based on scalar HKLL and Brown-Henneaux boundary-graviton modes |
 | `standard CPS formalism.md` | Standard covariant phase space formalism |
 | `eom.md` | Equations of motion |
 | `asymptotic behavior.md` | Asymptotic behavior of perturbations |
