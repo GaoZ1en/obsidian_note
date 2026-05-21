@@ -1,14 +1,11 @@
 ##### Learn from research, go to Europe or Canada (CSC)
 
-1. 协变相空间框架下的量子化
-	1. 线性引力
-	2. it seems that symplectic form defined in the covariant phase space formalism is strongly correlated to the Berry phase
-2. 阅读
+1. 阅读
 	1. large scale structure of spacetime by Hawking and Ellis
 	2. General Relativity by Wald
 	3. [Henneaux, Teitelboim] Quantization of gauge systems.pdf
-3. dynamic black hole entropy, Wald, apparent horizon.
-4. 多看点儿网课...这边的课太垃圾了
+2. dynamic black hole entropy, Wald, apparent horizon.
+3. 多看点儿网课...这边的课太垃圾了
 	1. [俄罗斯人的](https://teach-in.ru/course?categories=math&categories=physics)
 	2. w
 
