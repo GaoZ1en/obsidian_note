@@ -40,7 +40,7 @@ Here, spacetime indices are implicitly contracted. This quadratic equation with 
 
 $$ (\mathcal{D} - \mu_-)(\mathcal{D} + \mu_+) A = 0, $$
 
-where the effective shifted masses are defined by
+where the effective shifted masses are defined by 
 
 $$ \mu_{\pm} = \bar{\mu} \pm \frac{k}{4\pi}, \qquad \bar{\mu} \equiv \sqrt{\mu^2 + \frac{k^2}{16\pi^2}}, \qquad \mu_{\pm} > 0. $$
 

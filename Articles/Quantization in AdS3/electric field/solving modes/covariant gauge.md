@@ -73,6 +73,10 @@ $$\begin{align}
  & =1+|m\pm 1|+2n
 \end{align}$$
 
+$$\begin{align}
+\omega[A,A^{*}]=-i
+\end{align}$$
+
 which agrees with the spectrum obtained in the Proca field case by setting $\displaystyle{\mu\to 0}$. the normalized solutions are
 
 $$\begin{align}
@@ -185,12 +189,6 @@ g_{m=0,n}^{r} & =0 \\
 g_{m=0,n}^{\phi} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-$$\begin{align}
-f^{t} & =\frac{e^{-2it}}{\sqrt{ 8\pi }} \frac{r^{2}-2}{(1+r^{2})^{2}} \\
-f^{r} & =-\frac{ie^{-2it}}{\sqrt{ 2\pi }} \frac{r}{1+r^{2}} \\
-f^{\phi} & =0
-\end{align}$$
-
 the $\displaystyle{f}$ modes are pure gauge, and the $\displaystyle{g}$ modes are physical modes, which is exactly the same as the normalizable modes in the temporal gauge case. the asymptotic behavior of the $\displaystyle{f}$ modes is
 
 $$\begin{align}
@@ -202,12 +200,19 @@ f_{m=0,n}^{\phi} & =0
 and the asymptotic behavior of the corresponding gauge parameter is
 
 $$\begin{align}
-\Lambda _{m=0,n} & =\int dr f_{m=0,n}^{r} \\
- & =\mathcal{O}(r^{0})
+\Lambda _{m=0,n} & \sim C_{0,n}e^{-i(2n+2)t}
+\frac{1}{1+r^{2}}
+{}_{2}F_{1}\left(-n,n+2;2;\frac{1}{1+r^{2}}\right) \\
+ & =\mathcal{O}(r^{-2})
 \end{align}$$
 
-which are large gauge transformations, thus the $\displaystyle{f}$ modes are actually edge modes. 
+Here the gauge transformation is understood as
 
+$$\begin{align}
+A^{\mu}=\nabla ^{\mu}\Lambda=g^{\mu\nu}\partial _{\nu}\Lambda ,
+\end{align}$$
+
+so the radial component satisfies $\displaystyle{\partial _{r}\Lambda=A^{r}/(1+r^{2})}$ rather than $\displaystyle{\partial _{r}\Lambda=A^{r}}$. Therefore these $\displaystyle{m=0}$ null modes vanish at the boundary and are proper gauge transformations, not large gauge transformations.
 
 ## $\displaystyle{h^{\mu}_{+,m\geqslant 1,n+1}}$ and $\displaystyle{h^{\mu}_{-,m\geqslant1,n}}$
 
@@ -236,7 +241,38 @@ i\Omega[h_{m\geqslant 1,n_{1}},h_{m\geqslant 1,n_{2}}] & =\begin{pmatrix}
 
 the eigenvalues of this matrix are $\displaystyle{0,2}$, thus there is one null direction, which means these two modes differ by a gauge transformation.
 
-however, for $\displaystyle{m\neq 0}$, we don't have such simple expression as $\displaystyle{f}$ and $\displaystyle{g}$ modes as in the $\displaystyle{m=0}$ case. but the conclusion is the same, there are still edge modes in these modes, which can be seen from the asymptotic behavior of the gauge parameter.
+A convenient pure-gauge representative of this null direction can be written uniformly. Let
+
+$$\begin{align}
+p&=|m|, & N&\geq 1, & \omega&=p+2N .
+\end{align}$$
+
+For the $\displaystyle{m\geq 1}$ pair above, $\displaystyle{N=n+1}$. Up to an overall normalization,
+
+$$\begin{align}
+\Lambda _{m,N}
+&=C_{m,N}e^{-i(p+2N)t+im\phi}
+\frac{r^{p}}{(1+r^{2})^{p/2+1}}
+{}_{2}F_{1}\left(1-N,N+p+1;2;\frac{1}{1+r^{2}}\right),
+\end{align}$$
+
+and
+
+$$\begin{align}
+A^{\mu}_{\text{null}}&=\nabla ^{\mu}\Lambda _{m,N}, &
+\Box \Lambda _{m,N}&=0 .
+\end{align}$$
+
+Its boundary behavior is
+
+$$\begin{align}
+\Lambda _{m,N}
+&=C_{m,N}e^{-i(p+2N)t+im\phi}
+\left(r^{-2}+\mathcal{O}(r^{-4})\right),
+& r&\to\infty .
+\end{align}$$
+
+Thus these $\displaystyle{N\geq1}$ null modes are proper gauge transformations. They are not large gauge transformations, since the gauge parameter vanishes at the boundary.
 
 
 ## $\displaystyle{h^{\mu}_{+,m\leqslant -1,n}}$ and $\displaystyle{h^{\mu}_{-,m\leqslant -1,n+1}}$
@@ -251,6 +287,17 @@ i\Omega[h_{m\leqslant -1,n_{1}},h_{m\leqslant -1,n_{2}}] & =\begin{pmatrix}
 \end{align}$$
 
 the eigenvalues of this matrix are $\displaystyle{0,2}$, thus there is one null direction, which means these two modes differ by a gauge transformation.
+
+This is described by the same gauge parameter $\displaystyle{\Lambda _{m,N}}$ above, now with $\displaystyle{m\leq -1}$, $\displaystyle{p=-m}$, and $\displaystyle{N=n+1}$. Again
+
+$$\begin{align}
+\Lambda _{m,N}
+&=C_{m,N}e^{-i(p+2N)t+im\phi}
+\left(r^{-2}+\mathcal{O}(r^{-4})\right),
+& r&\to\infty ,
+\end{align}$$
+
+so this null direction is also a proper gauge transformation rather than a large gauge transformation.
 
 # edge mode
 
@@ -272,7 +319,19 @@ h^{\phi}_{-,m\leqslant -1,n=0} & =-e^{im(t+\phi)}r^{-m-2}(1+r^{2})^{m/2}
 
 with conformal weights $\displaystyle{(h,\bar{h})=(0,-m)}$. these modes are not normalizable under the usual inner product (since the $\displaystyle{0}$ factor in the denominator, so we drop them in the following analysis).
 
-the field strength of these modes vanishes identically, thus they are pure gauge configurations.
+the field strength of these modes vanishes identically, thus they are pure gauge configurations. More explicitly, for $\displaystyle{m\geq 1}$,
+
+$$\begin{align}
+\Lambda _{+,m}&=\frac{1}{im}e^{-im(t-\phi)}\left(\frac{r}{\sqrt{1+r^{2}}}\right)^{m}, &h^{\mu}_{+,m,n=0}&=\nabla ^{\mu}\Lambda _{+,m},
+\end{align}$$
+
+while for $\displaystyle{m\leq -1}$,
+
+$$\begin{align}
+\Lambda _{-,m}&=\frac{1}{i(-m)}e^{im(t+\phi)}\left(\frac{r}{\sqrt{1+r^{2}}}\right)^{-m}, &h^{\mu}_{-,m,n=0}&=\nabla ^{\mu}\Lambda _{-,m}.
+\end{align}$$
+
+These are large gauge transformations because the gauge parameters approach nonzero functions on the boundary. This is the distinction between the $\displaystyle{n=0}$ edge modes and the $\displaystyle{N\geq1}$ null modes above: both are pure gauge in the bulk, but only the $\displaystyle{n=0}$ edge modes have nonvanishing boundary gauge parameters.
 
 # zero energy modes
 

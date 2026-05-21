@@ -1,5 +1,9 @@
 in [[Articles/Quantization in AdS3/electric field/solving modes/Proca-Chern-Simons|Proca-Chern-Simons]] we have already known that the normal modes form $\displaystyle{(0,0)}$(trivial vacuum), $\displaystyle{(1,0)}$, $\displaystyle{(0,1)}$ and $\displaystyle{(1,1)}$ representation of $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ of global $\displaystyle{\mathrm{AdS}_{3}}$. in this file we will derive the explicit form of these states, at least the highest weight modes $\displaystyle{\psi _{(1,0)}^{\mu}}$, $\displaystyle{\psi _{(0,1)}^{\mu}}$ and $\displaystyle{\psi _{(1,1)}^{\mu}}$. normalization constants are ommited here for simplicity
 
+$$\begin{align}
+\mathcal{C}A^{\mu} & =\mathcal{\bar{C}}A^{\mu}=0\implies (h,\bar{h})=(0,0),(1,0),(0,1),(1,1)
+\end{align}$$
+
 ## solving the primaries
 
 we first write down the Killing vectors
@@ -60,7 +64,8 @@ for $\displaystyle{(1,0)}$ sector, we have the following highest weight conditio
 $$\begin{align}
 \mathcal{L}_{\xi _{0}}\psi _{(1,0)}^{\mu} & =-i\psi _{(1,0)}^{\mu} \\
 \mathcal{L}_{\xi _{1}}\psi _{(1,0)}^{\mu} & =0 \\
-\mathcal{L}_{\bar{\xi}_{a}}\psi _{(1,0)}^{\mu} & =0 \quad (a=0,\pm 1)
+\mathcal{L}_{\bar{\xi}_{0}}\psi _{(1,0)}^{\mu} & =0 \\
+\mathcal{L}_{\bar{\xi}_{1}}\psi ^{\mu}_{(1,0)} & =0 \\
 \end{align}$$
 
 which leads to the solution
@@ -117,8 +122,8 @@ $$\begin{align}
 which leads to the solution
 
 $$\begin{align}
-\psi _{(1,1)}^{t} & =\frac{C}{(1+r^{2})^{2}} \\
-\psi _{(1,1)}^{r} & =\frac{irC}{1+r^{2}} \\
+\psi _{(1,1)}^{t} & =\frac{C}{(1+r^{2})^{2}}e^{-2it} \\
+\psi _{(1,1)}^{r} & =\frac{irC}{1+r^{2}} e^{-2it} \\
 \psi _{(1,1)}^{\phi} & =0
 \end{align}$$
 
@@ -191,8 +196,8 @@ and only pure gauge modes are solved out. for a gauge field, the highest-weight 
 $$\begin{align}
 \mathcal{L}_{\xi _{0}}\psi _{(1,1)}^{\mu} & =-i\psi _{(1,1)}^{\mu} \\
 \mathcal{L}_{\bar{\xi}_{0}}\psi _{(1,1)}^{\mu} & =-i\psi _{(1,1)}^{\mu} \\
-\mathcal{L}_{\xi _{1}}\psi _{(1,1)}^{\mu} & =\nabla ^{\mu}\Lambda _{\xi} \\
-\mathcal{L}_{\bar{\xi}_{1}}\psi _{(1,1)}^{\mu} & =\nabla ^{\mu}\Lambda _{\xi}'
+\mathcal{L}_{\xi _{1}}\psi _{(1,1)}^{\mu} & =\nabla ^{\mu}\Lambda _{\xi}\propto \psi _{(0,1)}^{\mu} \\
+\mathcal{L}_{\bar{\xi}_{1}}\psi _{(1,1)}^{\mu} & =\nabla ^{\mu}\Lambda _{\xi}'\propto \psi _{(1,0)}^{\mu}
 \end{align}$$
 
 the first two equations fix the Fourier labels to

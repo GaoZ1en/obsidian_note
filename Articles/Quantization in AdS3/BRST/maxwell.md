@@ -117,3 +117,6 @@ H_{\text{BRST}} & =0
 
 *Maxwell theory is not a good example*...
 
+---
+
+in fact we should keep all the non-normalizable modes...

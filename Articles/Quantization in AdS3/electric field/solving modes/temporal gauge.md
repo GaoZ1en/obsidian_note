@@ -141,6 +141,10 @@ $$\begin{align}
 \omega_{nm}=2n+2+|m|, \quad n\in \mathbb{N}, m\in \mathbb{Z}
 \end{align}$$
 
+$$\begin{align}
+\mathcal{L}_{\xi_{0}}A^{\nu} & =\xi _{0}^{\mu}\nabla _{\mu}A^{\nu}-A^{\mu}\nabla _{\mu}\xi ^{\nu}
+\end{align}$$
+
 the symplectic form is given by
 
 $$\begin{align}
@@ -180,7 +184,7 @@ $$\begin{align}
 take the fourier transformation
 
 $$\begin{align}
-A^{\mu} & =e^{im\phi}f^{\mu}
+A^{\mu} & =e^{im\phi}f^{\mu}(r)
 \end{align}$$
 
 the eom becomes
@@ -258,3 +262,7 @@ $$\begin{align}
 \Lambda(r,\phi) & =e^{im\phi}\lambda_m(r), &
 A_\mu & =\partial_\mu \Lambda .
 \end{align}$$
+
+---
+
+now we want change to the covariant gauge. however the inverse process is simpler to achieve. 
