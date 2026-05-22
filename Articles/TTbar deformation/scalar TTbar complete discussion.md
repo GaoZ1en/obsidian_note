@@ -4,141 +4,104 @@ date: 2026-05-21
 summary: "A self-contained corrected discussion of the TTbar-deformed free scalar, including the flow equation, first-order conserved currents, canonical phase space, and all-order commuting hierarchy."
 ---
 
-# Scalar TTbar Complete Discussion
-
-This note reorganizes the scalar $T\bar T$ calculation into a single self-contained discussion. It keeps the normalization consistent, separates velocity variables from canonical variables, and incorporates the all-order phase-space structure.
-
-The guiding convention is
-
-$$
-x^\pm=t\pm x,
-\qquad
-\partial_\pm=\frac{1}{2}(\partial_t\pm\partial_x).
-$$
-
-Define
-
-$$
-a=\partial_+\phi=\frac{1}{2}(\dot\phi+\phi'),
-\qquad
-b=\partial_-\phi=\frac{1}{2}(\dot\phi-\phi'),
-$$
-
-and
-
-$$
-L_0=\frac{1}{2}ab
-=\frac{1}{8}(\dot\phi^2-\phi'^2).
-$$
-
-The deformation is local in
-
-$$
-F=\sqrt{1+4\lambda L_0}
-=\sqrt{1+2\lambda ab}
-=\sqrt{1+\frac{\lambda}{2}(\dot\phi^2-\phi'^2)}.
-$$
-
 # Flow Equation
 
-Take
+consider a massless scalar field in 2d with undeformed Lagrangian
 
-$$
-L_\lambda=\frac{\sqrt{1+4\lambda L_0}-1}{2\lambda}.
-$$
+$$\begin{align}
+\mathcal{L}_{0} & =\frac{1}{2}g^{\mu \nu}\nabla _{\mu}\phi \nabla _{\nu}\phi
+\end{align}$$
 
-For a background metric $g_{\mu\nu}$, with
+and assume the deformed Lagrangian depends only on $\displaystyle{\mathcal{L_{0}}}$
 
-$$
-L_0=\frac{1}{2}g^{\mu\nu}\partial_\mu\phi\partial_\nu\phi,
-$$
+$$\begin{align}
+\mathcal{L}_{\lambda} & =\mathcal{L}_{\lambda}(\mathcal{L}_{0}),  & \mathcal{L}_{\lambda=0} & =\mathcal{L}_{9}
+\end{align}$$
 
-the stress tensor convention is
+the action is given by
 
-$$
-\delta S_\lambda
-=\frac{1}{2}\int d^2x\sqrt{-g}\,
-T^{(\lambda)}_{\mu\nu}\delta g^{\mu\nu}.
-$$
+$$\begin{align}
+S_{\lambda} & =\int \mathrm{d}^{2}x\sqrt{ -g }\mathcal{L}_{\lambda}(\mathcal{L}_{0})
+\end{align}$$
 
-Then
+take a variation with respect to $\displaystyle{g^{\mu \nu}}$, we have
 
-$$
-T^{(\lambda)}_{\mu\nu}
-=\frac{\partial L_\lambda}{\partial L_0}
-\partial_\mu\phi\partial_\nu\phi
--g_{\mu\nu}L_\lambda.
-$$
+$$\begin{align}
+\delta S_{\lambda} & =\frac{1}{2}\int \mathrm{d}^{2}x\sqrt{ -g }T_{\mu \nu}^{(\lambda)}\delta g^{\mu \nu} \\
+ & =\int \mathrm{d}^{2}x\left[\frac{1}{2} \frac{\partial \mathcal{L}_{\lambda}}{\partial \mathcal{L}_{0}}\nabla _{\mu}\phi \nabla _{\nu}\phi-\frac{1}{2}g_{\mu \nu}\mathcal{L}_{\lambda}\right]\delta g^{\mu \nu} \\
+ \implies T_{\mu \nu}^{(\lambda)} & =\frac{\partial \mathcal{L}_{\lambda}}{\partial \mathcal{L}_{0}}\nabla _{\mu}\phi \nabla _{\nu}\phi-g_{\mu \nu}\mathcal{L}_{\lambda} \\
+ \implies \det T^{(\lambda)} & =\frac{1}{2}(T^{2}-T^{\mu \nu}T_{\mu \nu}) \\
+ & = \mathcal{L}_{\lambda}^{2}-2 \frac{\partial \mathcal{L}_{\lambda}}{\partial \mathcal{L}_{0}}\mathcal{L}_{0}\mathcal{L}_{\lambda}
+\end{align}$$
 
-In two dimensions,
+the flow equation is given by
 
-$$
-\det T^{(\lambda)}
-=L_\lambda^2
--2L_0L_\lambda\frac{\partial L_\lambda}{\partial L_0}.
-$$
+$$\begin{align}
+\frac{\partial \mathcal{L}_{\lambda}}{\partial \lambda} & =\det T^{(\lambda)} \\
+\implies \mathcal{L}_{\lambda} & =\frac{1}{2\lambda}(\sqrt{ 1+4\lambda \mathcal{L}_{0} }-1)
+\end{align}$$
 
-Since
+the first several orders read
 
-$$
-\frac{\partial L_\lambda}{\partial L_0}
-=\frac{1}{F},
-$$
+$$\begin{align}
+\mathcal{L}_{\lambda} & =\mathcal{L}_{0}-\lambda \mathcal{L}_{0}^{2}+2\lambda ^{2}\mathcal{L}_{0}^{3}+\mathcal{O}(\lambda ^{3})
+\end{align}$$
 
-one finds
+# CPS formalism
 
-$$
-\frac{\partial L_\lambda}{\partial\lambda}
-=L_\lambda^2
--2L_0L_\lambda\frac{\partial L_\lambda}{\partial L_0}.
-$$
+denote $\displaystyle{F=\sqrt{ 1+4\lambda \mathcal{L}_{0} }}$. take a variation of the action with respect to $\displaystyle{\phi}$.
 
-Thus $L_\lambda$ solves the $T\bar T$ flow equation with the chosen sign convention. Its small-$\lambda$ expansion is
+$$\begin{align}
+\delta S_{\lambda} & =\int \mathrm{d}^{2}x\sqrt{ -g } \frac{1}{F} \nabla _{\mu}\phi \nabla ^{\mu}\delta \phi \\
+ & =\int \mathrm{d}^{2}x\sqrt{ -g } \nabla _{\mu}\left(\frac{1}{F}\nabla ^{\mu}\phi\right)\delta \phi+\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}x\sqrt{ \sigma }\tau _{\mu} \frac{1}{F}\nabla ^{\mu}\phi \delta \phi
+\end{align}$$
 
-$$
-L_\lambda
-=L_0-\lambda L_0^2+2\lambda^2L_0^3+O(\lambda^3).
-$$
+the eom is
 
-# Equation of Motion
+$$\begin{align}
+\nabla _{\mu} \left( \frac{1}{F}\nabla ^{\mu}\phi \right) & =0 \\
+\implies \partial _{+}\left(\frac{b}{F}\right)+\partial _{-}\left(\frac{a}{F}\right)=0
+\end{align}$$
 
-The variation gives
+here $\displaystyle{a=\partial _{+}\phi,b=\partial _{-}\phi}$. and the symplectic form is given by
 
-$$
-\delta L_\lambda
-=\frac{b}{2F}\partial_+\delta\phi
-+\frac{a}{2F}\partial_-\delta\phi.
-$$
+$$\begin{align}
+\omega _{\lambda} & =\int _{\Sigma}\mathrm{d}x\sqrt{ \sigma }\tau _{\mu}\delta\left(\frac{1}{F}\nabla ^{\mu}\phi\right)\wedge \delta \phi
+\end{align}$$
 
-After integration by parts, the equation of motion is
+## undeformed conserved charges
 
-$$
-\partial_+\left(\frac{b}{F}\right)
-+\partial_-\left(\frac{a}{F}\right)=0.
-$$
+in the undeformed theory, the eom reads
 
-Expanding
+$$\begin{align}
+\partial _{+}\partial _{-}\phi & =0 \\
+\implies \partial _{+}b=0, & \quad\partial _{-}a=0 \\
+\implies \partial _{+}b^{n}=0, & \quad\partial _{-}a^{n}=0,n\in \mathbb{N}
+\end{align}$$
 
-$$
-F^{-1}=1-2\lambda L_0+O(\lambda^2),
-$$
+this gives the undeformed conserved charges
 
-we get
+$$\begin{align}
+Q_{+,n}^{(0)} & =\int \mathrm{d}xa^{n}, & Q_{-,n}^{(0)} & =\int \mathrm{d}xb^{n}
+\end{align}$$
 
-$$
-\partial_+\partial_-\phi
-=\lambda\left[
-\partial_+(L_0b)+\partial_-(L_0a)
-\right]+O(\lambda^2).
-$$
+on the other hand, define the symmetry generator
 
-At order $\lambda$, one may use the undeformed chiral equations inside the correction terms:
+$$\begin{align}
+X_{+,n} & =\int \mathrm{d}^{2}x \frac{n}{2}a^{n-1} \frac{\delta}{\delta \phi}, & X_{-,n} & =\int \mathrm{d}^{2}x \frac{n}{2}b^{n-1} \frac{\delta}{\delta \phi}
+\end{align}$$
 
-$$
-\partial_-a=O(\lambda),
-\qquad
-\partial_+b=O(\lambda).
-$$
+act on the symplectic form, we have
+
+$$\begin{align}
+X_{+,n}\cdot \omega _{0} & = \frac{n}{2}\int _{\Sigma}\mathrm{d}x \left(\partial _{x}(a^{n-1})\delta \phi-a^{n-1}\delta \dot{\phi}\right) \\
+ & =-n\int _{\Sigma}\mathrm{d}xa^{n-1}\left(\delta \phi'+\delta \dot{\phi}\right) \\
+ & =-\delta\left(\int _{\Sigma}\mathrm{d}xa^{n}\right) \\
+\implies Q_{+,n}^{(0)} & =\int _{\Sigma}\mathrm{d}xa^{n} \\
+ Q_{-,n}^{(0)} & =\int _{\Sigma}\mathrm{d}xb^{n}
+\end{align}$$
+
+after deformation, the definition of the symmetry generator and the corresponding Noether charge will deform respectively. 
 
 # First-Order Conserved Currents
 
