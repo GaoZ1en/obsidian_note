@@ -124,3 +124,54 @@ in a general triangulation
 
 ---
 
+discretized BF path integral
+
+$$\begin{align}
+Z & =\int \mathcal{D}A\prod _{e}\delta _{G}(h_{e}(A)) \\
+ & =\int \prod _{e}\mathrm{d}\mu _{}(h_{e}(A))\prod _{f} \sum ^{\infty}_{j_{f}=0} \dim(j_{f})\pi ^{j_{f}}_{m_{f}*_{f}}(h_{e_{1}})\dots \pi ^{j_{f}}_{*_{f}m_{f}}(h_{e_{\dots}})
+\end{align}$$
+
+here the integral to an edge is actually a projector
+
+$$\begin{align}
+ & \int \mathrm{d}\mu(h_{e})\pi ^{j_{1}}_{m_{1}n_{1}}(h_{e})\dots \pi ^{j_{4}}_{m_{4}n_{4}}(h_{e}) \\
+= & P^{j_{1}\dots j_{4}}_{m_{1}\dots m_{4},n_{1}\dots n_{4}} \\
+= & \sum _{i} i^{*}_{m_{1}\dots m_{4}}i_{n_{1}\dots n_{4}} \\
+= & \sum _{i} \ket{i} \bra{i} 
+\end{align}$$
+
+therefore
+
+$$\begin{align}
+Z & =\sum _{\left\{j_{f}\right\}} \prod _{f}\dim(j_{f})\mathrm{Tr}_{f}\left( \prod _{e}P_{e} \right)
+\end{align}$$
+
+here the trace contract over indices associated to faces.
+
+gravity is a constrained BF theory... nothing special. see [[Literature Notes/Charges of supergravity (2604.09928v1)|Charges of supergravity (2604.09928v1)]]
+
+---
+
+spinfoam quantization on a simplex in 4d.
+1. define $\displaystyle{Z_{pl}}$ on a single 4-simplex. the result is the spinfoam vertex amplitude
+2. quantize the contrained BF theory
+
+$$\begin{align}
+Z_{BF} & =\int \mathcal{D}A\mathcal{D}Be^{i/\ell _{p} \int (B+1/\gamma \star B)^{IJ}\wedge F_{IJ}}
+\end{align}$$
+
+3. quantize the simplicity constraint and impose the BF boundary Hilbert space.
+4. vertex amplitude
+
+$$\begin{align}
+A_{v} & =Z_{BF}(\text{bdy data}|_{\text{simplicity}})
+\end{align}$$
+
+...
+
+quantization of $\displaystyle{B}$ field....
+
+---
+
+EPRL proposal... less interested...
+
