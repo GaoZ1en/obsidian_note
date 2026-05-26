@@ -102,6 +102,10 @@ L & =\sqrt{ -g }(R+2) \\
  & := \sqrt{ -g^{(0)} }\mathcal{L}
 \end{align}$$
 
+$$\begin{align}
+g_{\mu \nu}\to g_{\mu \nu}^{(0)}+\sqrt{ G }h_{\mu \nu}
+\end{align}$$
+
 the linearized eom reads
 
 $$\begin{align}

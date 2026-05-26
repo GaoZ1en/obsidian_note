@@ -128,3 +128,7 @@ linearized Einstein equation evaluated on
 $h_{\mu\nu}=2\nabla^{(0)}_{(\mu}\zeta_{\nu)}$, so the pure gauge
 parametrization reduces the problem from solving six coupled equations for
 $h_{\mu\nu}$ to solving the divergence-free vector equation for $\zeta_{\mu}$.
+
+$$\begin{align}
+\varepsilon _{\mu}^{~\nu \rho}\nabla _{\nu}h_{\rho \sigma} & =\pm h_{\mu \sigma}
+\end{align}$$

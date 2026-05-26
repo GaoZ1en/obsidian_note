@@ -228,6 +228,13 @@ i\omega \partial _{r}((1+r^{2})\tilde{A}^{t})+\left(-\mu ^{2}-\frac{m^{2}}{r^{2}
 \end{align}
 $$
 
+$$\begin{align}
+\partial _{r}^{2}\left((1+r^{2})A^{t}\right)+\frac{1}{r}\partial _{r}((1+r^{2})A^{t})-\mu ^{2}A^{t}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{1}{1+r^{2}}\partial _{t}\partial _{r}A^{r}+\frac{1-r^{2}}{r(1+r^{2})^{2}}\partial _{t}A^{r}+\frac{1}{1+r^{2}}\partial _{t}\partial _{\phi}A^{\phi} & =0 \\
+-\partial _{t}\partial _{r}\left((1+r^{2})A^{t}\right)-\mu ^{2}A^{r}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{r}-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{r}-\partial _{r}\partial _{\phi}A^{\phi}-\frac{2(1+r^{2})}{r}\partial _{\phi}A^{\phi} & =0 \\
+\frac{1}{r^{2}}\partial _{t}\partial _{\phi}A^{t}-\partial _{r}\partial _{\phi}A^{r}+\frac{1}{r}\partial _{\phi}A^{r}+(1+r^{2})\partial _{r}^{2}A^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}A^{\phi}+4A^{\phi}-\mu ^{2}A^{\phi}-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{\phi} & =0 \\
+\partial _{t}A^{t}+\partial _{r}A^{r}+\frac{1}{r}A^{r}+\partial _{\phi}A^{\phi} & =0
+\end{align}$$
+
 insert the forth equation into the second and the third equation, we have
 
 $$\tag{.}
