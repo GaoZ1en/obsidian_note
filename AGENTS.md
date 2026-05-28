@@ -57,6 +57,12 @@ Use the Obsidian MCP server primarily as a read/search access layer for this vau
 - Do not edit `.keep-the-rhythm/`, `.obsidian/`, or `Attachments/` unless explicitly requested.
 - Do not commit `.obsidian/` or `Attachments/`.
 
+## Exposition Style
+
+- When drafting or patching note content, write the final positive exposition directly. Do not include defensive or meta-level discussion such as "unlike the naive approach", "the previous method was wrong", "this resolves the tension", "this is not saying", or similar commentary about failed attempts unless the user explicitly asks for a comparison, diagnosis, or debug explanation.
+- When adapting an argument from a paper or another note to a parallel model, present the parallel construction on its own terms. Mention the reference source when useful, then state the definitions, assumptions, sector decomposition, boundary conditions, and conclusion directly.
+- Keep conversation-level reasoning, discarded approaches, and repair history out of the note body. The note should read as a self-contained exposition, not as a record of how the answer was found.
+
 ## Metadata Templates
 
 ### Literature Notes
