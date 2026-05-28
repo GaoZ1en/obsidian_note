@@ -19,6 +19,53 @@ $$\begin{align}
 \implies\partial _{t}A^{t}+\partial _{r}A^{r}+\frac{1}{r}A^{r}+\partial _{\phi}A^{\phi} & =0
 \end{align}$$
 
+## accessibility of the covariant gauge
+
+The covariant gauge condition should be understood as a choice of representative in the gauge-orbit decomposition, not as a prescription that starts from an arbitrary written representative and then performs a gauge transformation while keeping the same naive falloff at every intermediate step. Under
+
+$$\begin{align}
+A^{\mu}\mapsto A^{\prime\mu}
+=A^{\mu}+\nabla^{\mu}\Lambda ,
+\end{align}$$
+
+the divergence shifts as
+
+$$\begin{align}
+\nabla_{\mu}A^{\prime\mu}
+&=\nabla_{\mu}A^{\mu}+\nabla_{\mu}\nabla^{\mu}\Lambda \\
+&=\nabla_{\mu}A^{\mu}+\Box\Lambda .
+\end{align}$$
+
+Formally, moving between two representatives in the same orbit amounts to solving
+
+$$\begin{align}
+\Box\Lambda=-\nabla_{\mu}A^{\mu}.
+\end{align}$$
+
+If one starts from a completely arbitrary off-shell representative and solves this equation directly, the particular solution can contain a slow branch, for example
+
+$$\begin{align}
+\Lambda\sim r^{-1}\log r ,
+\end{align}$$
+
+whose gradient does not preserve the falloff imposed on $A^\mu$. This does not mean that the covariant gauge slice is unavailable. Rather, it means that the naive representative was not adapted to the field-space split being used.
+
+The gauge-fixed off-shell space is instead organized as
+
+$$\begin{align}
+A^\mu=A_{\mathrm{cov}}^\mu+\nabla^\mu\Lambda,
+\qquad
+\nabla_\mu A_{\mathrm{cov}}^\mu=0,
+\end{align}$$
+
+with boundary conditions imposed on the transverse and longitudinal sectors separately. Proper gauge parameters vanish at the boundary. In the normalizable mode sector considered below, this statement can be checked mode by mode by comparing with temporal gauge: the temporal-gauge physical modes and the covariant-gauge physical representatives differ by a gauge parameter with no logarithmic branch, and the proper null directions have
+
+$$\begin{align}
+\Lambda=\mathcal{O}(r^{-2}),\qquad r\to\infty .
+\end{align}$$
+
+This is the Maxwell analogue of using square-integrable diffeomorphisms in the gravity gauge-fixing problem: the gauge condition defines the transverse representative in the chosen decomposition, while boundary-violating longitudinal branches are simply not part of the proper gauge sector.
+
 take the following ansatz
 
 $$\begin{align}

@@ -10,7 +10,52 @@ This appendix collects the subtle points behind the mode construction in Section
 
 ## TT gauge representatives
 
-TODO: Explain the role of TT gauge as a choice of representative for the linearized diffeomorphism class.
+We follow the field-space decomposition used in [Acosta--Garbarz--Goya--Leston](https://arxiv.org/pdf/2109.06938). An off-shell metric perturbation is organized as
+
+$$\begin{align}
+h_{\mu\nu}
+=h_{\mu\nu}^{TT}
++\Theta_{\mu\nu}\chi
++\mathcal{L}_{V}g^{(0)}_{\mu\nu}.
+\end{align}$$
+
+Here
+
+$$\begin{align}
+\nabla^{(0)\mu}h_{\mu\nu}^{TT}=0,\qquad
+g^{(0)\mu\nu}h_{\mu\nu}^{TT}=0,
+\end{align}$$
+
+and the last two terms are
+
+$$\begin{align}
+\Theta _{\mu \nu}\chi & =\frac{1}{2}(g_{\mu \nu}^{(0)}\nabla ^{(0)2}-\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu})\chi-g^{(0)}_{\mu \nu}\chi , \\
+\mathcal{L}_{V}g^{(0)}_{\mu\nu} & =\nabla ^{(0)}_{\mu}V_{\nu}+\nabla ^{(0)}_{\nu}V_{\mu}
+\end{align}$$
+
+The boundary conditions are imposed on the three sectors in this decomposition. The TT sector is the transverse and traceless representative sector. The middle term is a transverse scalar sector: using $R^{(0)}_{\mu\nu}=-2g^{(0)}_{\mu\nu}$, one checks
+
+$$\begin{align}
+\nabla^{(0)\mu}\Theta_{\mu\nu}\chi=0,
+\end{align}$$
+
+while its trace is
+
+$$\begin{align}
+g^{(0)\mu\nu}\Theta_{\mu\nu}\chi
+=\left(\nabla^{(0)2}-3\right)\chi .
+\end{align}$$
+
+Thus $\Theta_{\mu\nu}\chi$ carries the scalar trace-type part of the square-integrable fluctuation, rather than a longitudinal diffeomorphism. The vector sector $\mathcal{L}_{V}g^{(0)}_{\mu\nu}$ is the proper diffeomorphism sector; $V$ is taken to be square-integrable, so this sector is quotiented as gauge redundancy. Brown-Henneaux asymptotic diffeomorphisms are not part of this proper sector and are therefore retained as boundary-graviton data.
+
+For the physical normalizable modes considered below, the scalar sector is removed by the linearized Einstein equation. Equivalently, after choosing the de Donder representative, the trace equation sets the scalar trace part to zero. The remaining representative can therefore be chosen in TT gauge,
+
+$$\begin{align}
+h=0,\qquad
+\nabla^{(0)}_{\mu}h^{\mu\nu}=0 .
+\end{align}$$
+
+The highest-weight mode selection below is performed in this TT representative sector, with the square-integrable longitudinal sector quotiented and the Brown-Henneaux boundary-graviton sector kept.
 
 ## Casimir eigenvalues and highest weights
 
