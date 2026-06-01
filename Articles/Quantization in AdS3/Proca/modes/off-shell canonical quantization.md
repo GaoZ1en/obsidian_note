@@ -32,7 +32,7 @@ $$\begin{align}
 here $\displaystyle{\omega _{n}^{2}}$ are the eigenvalues of the spatial Laplacian. we have known from usual canonical quantization that
 
 $$\begin{align}
-\phi _{nm}(r,\phi) & =C_{nm}r^{m}(1+r^{2})^{-(\Delta+m)/2}{}_{2}F_{1}\left(-n,\Delta+n+m;\Delta; \frac{1}{1+r^{2}}\right)e^{im\phi} \\
+\phi _{nm}(r,\phi) & =C_{nm}e^{im\phi}r^{m}(1+r^{2})^{-(\Delta+m)/2}P_{n}^{(\Delta-1,m)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 \Delta & =1+\sqrt{ 1+\mu ^{2} } \\
 m & \in \mathbb{Z},n\in \mathbb{N} \\
 \omega _{nm}^{2} & =(\Delta+m+2n)^{2}
@@ -41,10 +41,11 @@ m & \in \mathbb{Z},n\in \mathbb{N} \\
 here $\displaystyle{C_{nm}}$ are normalization constants determined by
 
 $$\begin{align}
-\int _{\Sigma} \mathrm{d}^{2}x\frac{\sqrt{ \sigma }}{N}\phi _{n_{1}m_{1}}(r,\phi)\phi ^{*} _{n_{2}m_{2}}(r,\phi) & =\delta _{n_{1}n_{2}}\delta _{m_{1}m_{2}}
+\int _{\Sigma} \mathrm{d}^{2}x\frac{\sqrt{ \sigma }}{N}\phi _{n_{1}m_{1}}(r,\phi)\phi ^{*} _{n_{2}m_{2}}(r,\phi) & =\frac{1}{2\omega _{n_{1}m_{1}}}\delta _{n_{1}n_{2}}\delta _{m_{1}m_{2}} \\
+\implies C_{nm} & =\sqrt{ \frac{1}{2\pi} \frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}} }
 \end{align}$$
 
-(this inner product can be derived from the KG inner product up to a factor) upon substituting the mode expansion into the action, we obtain
+upon substituting the mode expansion into the action, we obtain
 
 $$\begin{align}
 S & =-\frac{1}{2}\int \mathrm{d}^{3}x\sqrt{ -g }(\nabla _{\mu}\phi \nabla ^{\mu}\phi+\mu ^{2}\phi ^{2}) \\
