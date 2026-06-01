@@ -29,7 +29,7 @@ The reachability of this gauge choice, and its interpretation as a choice of rep
 To solve the gauge-fixed equation, we introduce the first-order differential operator $\mathcal{D}$,
 
 $$\begin{align}
-\mathcal{D}_{\mu}^{~\nu} & =\varepsilon^{(0)}{} _{\mu}^{~\nu \rho}\nabla _{\rho}^{(0)}
+\mathcal{D}_{\mu}^{~\nu} & =\varepsilon^{(0)}{} _{\mu}^{~\rho \nu}\nabla _{\rho}^{(0)}
 \end{align}$$
 
 The second-order equation can then be written as
