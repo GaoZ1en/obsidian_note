@@ -71,7 +71,7 @@ Substituting this into the TT gauge condition gives
 
 $$\begin{align}
 h & =2\nabla ^{(0)}_{\mu}\zeta ^{\mu}=0 \\
-\nabla ^{(0)\mu}h_{\mu \nu} & =(\nabla ^{(0)2}-2)\zeta _{\nu}+2\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\mu}\zeta ^{\mu}=0 \\
+\nabla ^{(0)\mu}h_{\mu \nu} & =(\nabla ^{(0)2}-2)\zeta _{\nu}+\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\mu}\zeta ^{\mu}=0 \\
 \implies \nabla ^{(0)}_{\mu}\zeta ^{\mu} & =0 \\
 (\nabla ^{(0)2}-2)\zeta ^{\mu} & =0
 \end{align}$$
@@ -93,7 +93,7 @@ $$\begin{align}
 and the Lie derivatives commute with $\displaystyle{\nabla ^{(0)}}$, we have
 
 $$\begin{align}
-h_{L} & =\mathcal{L}_{\zeta _{L}}g^{(0)}, & h_{R} & =\mathcal{L}_{\zeta _{R}}h^{(0)}
+h_{L} & =\mathcal{L}_{\zeta _{L}}g^{(0)}, & h_{R} & =\mathcal{L}_{\zeta _{R}}g^{(0)}
 \end{align}$$
 
 are also solutions of linearised Einstein equation.
@@ -135,7 +135,7 @@ $$\begin{align}
 we expand
 
 $$\begin{align}
-h_{\mu \nu}(x) & =h_{ab}(x) \bar{\xi} _{a,\mu}(x)\bar{\xi} _{b,\nu}(x), \quad a,b\in\left\{-1,0,1\right\}
+h_{\mu \nu}(x) & =h_{ab}(x) \xi _{a,\mu}(x)\xi _{b,\nu}(x), \quad a,b\in\left\{-1,0,1\right\}
 \end{align}$$
 
 remembering that 
@@ -150,94 +150,26 @@ then the gauge fixing conditions give
 $$\begin{align}
  & h_{ab} =h_{ba} \\
 h=0\implies  & h_{1,-1}-\frac{1}{4}h_{00}=0, \\
-\nabla ^{(0)}_{\mu}h^{\mu \nu}=0\implies & \mathcal{L}_{\bar{\xi}_{1}}h_{11}+\mathcal{L}_{\bar{\xi}_{0}}h_{10}+\mathcal{L}_{\bar{\xi}_{-1}}h_{1,-1}=0, \\
- & \mathcal{L}_{\bar{\xi}_{1}}h_{10}+\mathcal{L}_{\bar{\xi}_{0}}h_{00}+\mathcal{L}_{\bar{\xi}_{-1}}h_{0,-1}=0, \\
- & \mathcal{L}_{\bar{\xi}_{1}}h_{1,-1}+\mathcal{L}_{\bar{\xi}_{0}}h_{0,-1}+\mathcal{L}_{\bar{\xi}_{-1}}h_{-1,-1}=0
+\nabla ^{(0)}_{\mu}h^{\mu \nu}=0\implies & \mathcal{L}_{\xi _{1}}h_{11}+\mathcal{L}_{\xi _{0}}h_{10}+\mathcal{L}_{\xi _{-1}}h_{1,-1}=0, \\
+ & \mathcal{L}_{\xi _{1}}h_{10}+\mathcal{L}_{\xi _{0}}h_{00}+\mathcal{L}_{\xi _{-1}}h_{0,-1}=0, \\
+ & \mathcal{L}_{\xi _{1}}h_{1,-1}+\mathcal{L}_{\xi _{0}}h_{0,-1}+\mathcal{L}_{\xi _{-1}}h_{-1,-1}=0
 \end{align}$$
 
 and the first order equation $\displaystyle{\varepsilon _{\mu}^{~\nu \rho}\nabla ^{(0)}_{\nu}h_{\rho \sigma}+h_{\mu \sigma}=0}$ gives
 
 $$\begin{align}
-E_{11}&\equiv (4-2i\mathcal{L}_{\bar{\xi}_{0}})h_{11}-i\mathcal{L}_{\bar{\xi}_{-1}}h_{10}=0, \\
-E_{10}&\equiv (4-2i\mathcal{L}_{\bar{\xi}_{0}})h_{10}-i\mathcal{L}_{\bar{\xi}_{-1}}h_{00}+2i\mathcal{L}_{\bar{\xi}_{1}}h_{11}=0, \\
-E_{1,-1}&\equiv (2-2i\mathcal{L}_{\bar{\xi}_{0}})h_{1,-1}-i\mathcal{L}_{\bar{\xi}_{-1}}h_{0,-1}+\frac{1}{2}h_{00}=0, \\
-E_{0,1}&\equiv 2i\mathcal{L}_{\bar{\xi}_{1}}h_{11}+4h_{10}-2i\mathcal{L}_{\bar{\xi}_{-1}}h_{1,-1}=0, \\
-E_{00}&\equiv 2i\mathcal{L}_{\bar{\xi}_{1}}h_{10}+4h_{1,-1}+3h_{00}-2i\mathcal{L}_{\bar{\xi}_{-1}}h_{0,-1}=0, \\
-E_{0,-1}&\equiv 2i\mathcal{L}_{\bar{\xi}_{1}}h_{1,-1}+4h_{0,-1}-2i\mathcal{L}_{\bar{\xi}_{-1}}h_{-1,-1}=0, \\
-E_{-1,1}&\equiv i\mathcal{L}_{\bar{\xi}_{1}}h_{10}+(2+2i\mathcal{L}_{\bar{\xi}_{0}})h_{1,-1}+\frac{1}{2}h_{00}=0, \\
-E_{-1,0}&\equiv i\mathcal{L}_{\bar{\xi}_{1}}h_{00}+(4+2i\mathcal{L}_{\bar{\xi}_{0}})h_{0,-1}=0, \\
-E_{-1,-1}&\equiv i\mathcal{L}_{\bar{\xi}_{1}}h_{0,-1}+(4+2i\mathcal{L}_{\bar{\xi}_{0}})h_{-1,-1}=0
+E_{11}&\equiv (2i\mathcal{L}_{\xi _{0}}-4)h_{11}+i\mathcal{L}_{\xi _{-1}}h_{10}=0, \\
+E_{10}&\equiv (2i\mathcal{L}_{\xi _{0}}-4)h_{10}-i\mathcal{L}_{\xi _{-1}}h_{00}-2i\mathcal{L}_{\xi _{1}}h_{11}=0, \\
+E_{1,-1}&\equiv (2i\mathcal{L}_{\xi _{0}}-2)h_{1,-1}-i\mathcal{L}_{\xi _{-1}}h_{0,-1}-\frac{1}{2}h_{00}=0, \\
+E_{0,1}&\equiv 2i\mathcal{L}_{\xi _{-1}}h_{1,-1}-4h_{10}-2i\mathcal{L}_{\xi _{1}}h_{11}=0, \\
+E_{00}&\equiv -2i\mathcal{L}_{\xi _{1}}h_{10}-4h_{1,-1}-3h_{00}+2i\mathcal{L}_{\xi _{-1}}h_{0,-1}=0, \\
+E_{0,-1}&\equiv -2i\mathcal{L}_{\xi _{1}}h_{1,-1}-4h_{0,-1}-2i\mathcal{L}_{\xi _{-1}}h_{-1,-1}=0, \\
+E_{-1,1}&\equiv -i\mathcal{L}_{\xi _{1}}h_{10}-(2+2i\mathcal{L}_{\xi _{0}})h_{1,-1}-\frac{1}{2}h_{00}=0, \\
+E_{-1,0}&\equiv -i\mathcal{L}_{\xi _{1}}h_{00}-(4+2i\mathcal{L}_{\xi _{0}})h_{0,-1}=0, \\
+E_{-1,-1}&\equiv -i\mathcal{L}_{\xi _{1}}h_{0,-1}-(4+2i\mathcal{L}_{\xi _{0}})h_{-1,-1}=0
 \end{align}$$
 
 then we can solve out the coefficients $\displaystyle{h_{ab}(x)}$ as
-
-$$\begin{align}
-h_{10}&=h_{1,-1}=h_{00}=h_{0,-1}=h_{-1,-1}=0, \\
-\mathcal{L}_{\bar{\xi}_{1}}h_{11}&=0, \\
-\mathcal{L}_{\bar{\xi}_{0}}h_{11}&=-2ih_{11}.
-\end{align}$$
-
-therefore we writing
-
-$$\begin{align}
-z & \equiv \frac{r\,e^{-i(t-\phi)}}{\sqrt{ 1+r^{2} }},
-\end{align}$$
-
-we have $\displaystyle{\mathcal{L}_{\bar{\xi}_{1}}z=\mathcal{L}_{\bar{\xi}_{0}}z=0}$, so the general solution is
-
-$$\begin{align}
-h_{11}(t,r,\phi) & =\frac{e^{-4it}}{(1+r^{2})^{2}}F(z),
-\end{align}$$
-
-with $\displaystyle{F}$ arbitrary. Imposing single-valuedness in $\displaystyle{\phi}$ and regularity at $\displaystyle{r=0}$ gives the power-series expansion
-
-$$\begin{align}
-F(z) & =\sum _{n=0}^{\infty}c_{n}z^{n},
-\end{align}$$
-
-so that
-
-$$\begin{align}
-h_{11}(t,r,\phi) & =\sum _{n=0}^{\infty}c_{n}\frac{r^{n}e^{-i(n+4)t+in\phi}}{(1+r^{2})^{2+n/2}}.
-\end{align}$$
-
-similarly for
-
-$$\begin{align}
-\varepsilon _{\mu}^{~\nu \rho}\nabla ^{(0)}_{\nu}h_{\rho \sigma}-h_{\mu \sigma}=0
-\end{align}$$
-
-we expand
-
-$$\begin{align}
-h_{\mu \nu} & =h_{ab}\xi _{a,\mu}\xi _{b,\nu}
-\end{align}$$
-
-and then
-
-$$\begin{align}
- & h_{ab}=h_{ba}, \\
-h=0\implies & h_{1,-1}-\frac{1}{4}h_{00}=0, \\
-\nabla ^{(0)}_{\mu}h^{\mu \nu} & \mathcal{L}_{\xi _{1}}h_{11}+\mathcal{L}_{\xi _{0}}h_{10}+\mathcal{L}_{\xi _{-1}}h_{1,-1}=0 \\
- & \mathcal{L}_{\xi _{1}}h_{10}+\mathcal{L}_{\xi _{0}}h_{00}+\mathcal{L}_{\xi _{-1}}h_{0,-1}=0 \\
- & \mathcal{L}_{\xi _{1}}h_{1,-1}+\mathcal{L}_{\xi _{0}}h_{0,-1}+\mathcal{L}_{\xi _{-1}}h_{-1,-1}=0
-\end{align}$$
-
-and the first-order equation gives
-
-$$\begin{align}
-\tilde{E}_{11}&\equiv (2i\mathcal{L}_{\xi _{0}}-4)h_{11}+i\mathcal{L}_{\xi _{-1}}h_{10}=0, \\
-\tilde{E}_{10}&\equiv (2i\mathcal{L}_{\xi _{0}}-4)h_{10}-i\mathcal{L}_{\xi _{-1}}h_{00}-2i\mathcal{L}_{\xi _{1}}h_{11}=0, \\
-\tilde{E}_{1,-1}&\equiv (2i\mathcal{L}_{\xi _{0}}-2)h_{1,-1}-i\mathcal{L}_{\xi _{-1}}h_{0,-1}-\frac{1}{2}h_{00}=0, \\
-\tilde{E}_{0,1}&\equiv 2i\mathcal{L}_{\xi _{-1}}h_{1,-1}-4h_{10}-2i\mathcal{L}_{\xi _{1}}h_{11}=0, \\
-\tilde{E}_{00}&\equiv -2i\mathcal{L}_{\xi _{1}}h_{10}-4h_{1,-1}-3h_{00}+2i\mathcal{L}_{\xi _{-1}}h_{0,-1}=0, \\
-\tilde{E}_{0,-1}&\equiv -2i\mathcal{L}_{\xi _{1}}h_{1,-1}-4h_{0,-1}-2i\mathcal{L}_{\xi _{-1}}h_{-1,-1}=0, \\
-\tilde{E}_{-1,1}&\equiv -i\mathcal{L}_{\xi _{1}}h_{10}-(2+2i\mathcal{L}_{\xi _{0}})h_{1,-1}-\frac{1}{2}h_{00}=0, \\
-\tilde{E}_{-1,0}&\equiv -i\mathcal{L}_{\xi _{1}}h_{00}-(4+2i\mathcal{L}_{\xi _{0}})h_{0,-1}=0, \\
-\tilde{E}_{-1,-1}&\equiv -i\mathcal{L}_{\xi _{1}}h_{0,-1}-(4+2i\mathcal{L}_{\xi _{0}})h_{-1,-1}=0
-\end{align}$$
-
-Solving these equations together with the TT constraints gives
 
 $$\begin{align}
 h_{10}&=h_{1,-1}=h_{00}=h_{0,-1}=h_{-1,-1}=0, \\
@@ -245,19 +177,19 @@ h_{10}&=h_{1,-1}=h_{00}=h_{0,-1}=h_{-1,-1}=0, \\
 \mathcal{L}_{\xi _{0}}h_{11}&=-2ih_{11}.
 \end{align}$$
 
-write
+therefore we writing
 
 $$\begin{align}
 w & \equiv \frac{r\,e^{-i(t+\phi)}}{\sqrt{ 1+r^{2} }}.
 \end{align}$$
 
-Since $\displaystyle{\mathcal{L}_{\xi _{1}}w=\mathcal{L}_{\xi _{0}}w=0}$, the general solution is
+we have $\displaystyle{\mathcal{L}_{\xi _{1}}w=\mathcal{L}_{\xi _{0}}w=0}$, so the general solution is
 
 $$\begin{align}
 h_{11}(t,r,\phi) & =\frac{e^{-4it}}{(1+r^{2})^{2}}G(w),
 \end{align}$$
 
-with $\displaystyle{G}$ arbitrary. Imposing single-valuedness in $\displaystyle{\phi}$ and regularity at $\displaystyle{r=0}$ gives
+with $\displaystyle{G}$ arbitrary. Imposing single-valuedness in $\displaystyle{\phi}$ and regularity at $\displaystyle{r=0}$ gives the power-series expansion
 
 $$\begin{align}
 G(w) & =\sum _{n=0}^{\infty}\tilde{c}_{n}w^{n},
@@ -269,3 +201,72 @@ $$\begin{align}
 h_{11}(t,r,\phi) & =\sum _{n=0}^{\infty}\tilde{c}_{n}\frac{r^{n}e^{-i(n+4)t-in\phi}}{(1+r^{2})^{2+n/2}}.
 \end{align}$$
 
+similarly for
+
+$$\begin{align}
+\varepsilon _{\mu}^{~\nu \rho}\nabla ^{(0)}_{\nu}h_{\rho \sigma}-h_{\mu \sigma}=0
+\end{align}$$
+
+we expand
+
+$$\begin{align}
+h_{\mu \nu} & =h_{ab}\bar{\xi} _{a,\mu}\bar{\xi} _{b,\nu}
+\end{align}$$
+
+and then
+
+$$\begin{align}
+ & h_{ab}=h_{ba}, \\
+h=0\implies & h_{1,-1}-\frac{1}{4}h_{00}=0, \\
+\nabla ^{(0)}_{\mu}h^{\mu \nu}=0\implies & \mathcal{L}_{\bar{\xi}_{1}}h_{11}+\mathcal{L}_{\bar{\xi}_{0}}h_{10}+\mathcal{L}_{\bar{\xi}_{-1}}h_{1,-1}=0, \\
+ & \mathcal{L}_{\bar{\xi}_{1}}h_{10}+\mathcal{L}_{\bar{\xi}_{0}}h_{00}+\mathcal{L}_{\bar{\xi}_{-1}}h_{0,-1}=0, \\
+ & \mathcal{L}_{\bar{\xi}_{1}}h_{1,-1}+\mathcal{L}_{\bar{\xi}_{0}}h_{0,-1}+\mathcal{L}_{\bar{\xi}_{-1}}h_{-1,-1}=0
+\end{align}$$
+
+and the first-order equation gives
+
+$$\begin{align}
+\tilde{E}_{11}&\equiv (4-2i\mathcal{L}_{\bar{\xi}_{0}})h_{11}-i\mathcal{L}_{\bar{\xi}_{-1}}h_{10}=0, \\
+\tilde{E}_{10}&\equiv (4-2i\mathcal{L}_{\bar{\xi}_{0}})h_{10}-i\mathcal{L}_{\bar{\xi}_{-1}}h_{00}+2i\mathcal{L}_{\bar{\xi}_{1}}h_{11}=0, \\
+\tilde{E}_{1,-1}&\equiv (2-2i\mathcal{L}_{\bar{\xi}_{0}})h_{1,-1}-i\mathcal{L}_{\bar{\xi}_{-1}}h_{0,-1}+\frac{1}{2}h_{00}=0, \\
+\tilde{E}_{0,1}&\equiv 2i\mathcal{L}_{\bar{\xi}_{1}}h_{11}+4h_{10}-2i\mathcal{L}_{\bar{\xi}_{-1}}h_{1,-1}=0, \\
+\tilde{E}_{00}&\equiv 2i\mathcal{L}_{\bar{\xi}_{1}}h_{10}+4h_{1,-1}+3h_{00}-2i\mathcal{L}_{\bar{\xi}_{-1}}h_{0,-1}=0, \\
+\tilde{E}_{0,-1}&\equiv 2i\mathcal{L}_{\bar{\xi}_{1}}h_{1,-1}+4h_{0,-1}-2i\mathcal{L}_{\bar{\xi}_{-1}}h_{-1,-1}=0, \\
+\tilde{E}_{-1,1}&\equiv i\mathcal{L}_{\bar{\xi}_{1}}h_{10}+(2+2i\mathcal{L}_{\bar{\xi}_{0}})h_{1,-1}+\frac{1}{2}h_{00}=0, \\
+\tilde{E}_{-1,0}&\equiv i\mathcal{L}_{\bar{\xi}_{1}}h_{00}+(4+2i\mathcal{L}_{\bar{\xi}_{0}})h_{0,-1}=0, \\
+\tilde{E}_{-1,-1}&\equiv i\mathcal{L}_{\bar{\xi}_{1}}h_{0,-1}+(4+2i\mathcal{L}_{\bar{\xi}_{0}})h_{-1,-1}=0
+\end{align}$$
+
+Solving these equations together with the TT constraints gives
+
+$$\begin{align}
+h_{10}&=h_{1,-1}=h_{00}=h_{0,-1}=h_{-1,-1}=0, \\
+\mathcal{L}_{\bar{\xi}_{1}}h_{11}&=0, \\
+\mathcal{L}_{\bar{\xi}_{0}}h_{11}&=-2ih_{11}.
+\end{align}$$
+
+write
+
+$$\begin{align}
+z & \equiv \frac{r\,e^{-i(t-\phi)}}{\sqrt{ 1+r^{2} }},
+\end{align}$$
+
+Since $\displaystyle{\mathcal{L}_{\bar{\xi}_{1}}z=\mathcal{L}_{\bar{\xi}_{0}}z=0}$, the general solution is
+
+$$\begin{align}
+h_{11}(t,r,\phi) & =\frac{e^{-4it}}{(1+r^{2})^{2}}F(z),
+\end{align}$$
+
+with $\displaystyle{F}$ arbitrary. Imposing single-valuedness in $\displaystyle{\phi}$ and regularity at $\displaystyle{r=0}$ gives
+
+$$\begin{align}
+F(z) & =\sum _{n=0}^{\infty}c_{n}z^{n},
+\end{align}$$
+
+so that
+
+$$\begin{align}
+h_{11}(t,r,\phi) & =\sum _{n=0}^{\infty}c_{n}\frac{r^{n}e^{-i(n+4)t+in\phi}}{(1+r^{2})^{2+n/2}}.
+\end{align}$$
+
+non-physical modes are obtained by taking $\displaystyle{\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}}$ of $\displaystyle{h_{11}}$.
