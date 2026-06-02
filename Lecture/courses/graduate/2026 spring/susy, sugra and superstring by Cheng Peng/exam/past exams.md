@@ -100,7 +100,6 @@ $$g = \begin{pmatrix} X_{-1} + X_{1} & X_{0} - X_{2} \\ -X_{0} - X_{2} & X_{-1} 
 
 $$g = e^{i\omega \sigma_{2}}e^{i\rho \sigma_{3}}e^{i\omega \sigma_{2}}, \qquad u = \frac{t + \phi}{2}, \quad v = \frac{t - \phi}{2}, \quad (4)$$
 
-
 $$\sigma_{1} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad \sigma_{2} = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad \sigma_{3} = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}. \quad (5)$$
 
 

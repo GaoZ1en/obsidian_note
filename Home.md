@@ -1,25 +1,31 @@
 This is a homepage
 
-This vault are mainly summarized as follows
+This vault is mainly organized as follows.
 
 >[!Note]
->This module contains my notes
+>This module contains my permanent notes and topic notes.
 >	submodules:
->		Mathematics: contains my mathematics notes
->		Physics: contains my physics notes
->		Code: contains my coding notes
+>		Mathematics: mathematics notes and calculations
+>		Physics: physics notes and technical summaries
+>		Code: coding notes and software-related references
+>		Reading: reading notes organized by topic
+>		useful results: reusable formulas and derived results
+>		arxiv: periodic arXiv screening notes
 
->[!periodic note]
->This module contains my daily/weekly/monthly/quarterly/yearly notes.
+>[!Literature]
+>This module contains literature notes for papers, mostly organized as reading records and paper summaries.
 
->[!article]
->This module contains everything during article writing. 
-
->[!Homework]
->This module contains my homework. Submodules are summarized as different seminars.
-
->[!Reading]
->This module contains my reading notes which need to be summarized later.
+>[!Article]
+>This module contains article-writing materials, project notes, drafts of sections, and thesis-related files.
 
 >[!Lecture]
->This module contains my lecture notes
+>This module contains lecture notes from courses, conferences, group meetings, and online talks.
+
+>[!Drafts]
+>This module contains temporary drafts, incomplete notes, and ideas that have not yet been reorganized into the main note system.
+
+>[!TODO]
+>`TODO.md` contains research plans, pending tasks, and short-term reminders.
+
+>[!Misc]
+>The root directory also contains standalone notes when a topic has not yet been moved into a dedicated module.
