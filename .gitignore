@@ -29,3 +29,6 @@
 
 # Ignore compressed files
 /**/*.zip
+
+# Ignore RTK.md
+/.RTK.md

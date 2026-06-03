@@ -159,7 +159,7 @@ and the first order equation $\displaystyle{\varepsilon _{\mu}^{~\nu \rho}\nabla
 
 $$\begin{align}
 E_{11}&\equiv (2i\mathcal{L}_{\xi _{0}}-4)h_{11}+i\mathcal{L}_{\xi _{-1}}h_{10}=0, \\
-E_{10}&\equiv (2i\mathcal{L}_{\xi _{0}}-4)h_{10}-i\mathcal{L}_{\xi _{-1}}h_{00}-2i\mathcal{L}_{\xi _{1}}h_{11}=0, \\
+E_{10}&\equiv (2i\mathcal{L}_{\xi _{0}}-4)h_{10}+i\mathcal{L}_{\xi _{-1}}h_{00}=0, \\
 E_{1,-1}&\equiv (2i\mathcal{L}_{\xi _{0}}-2)h_{1,-1}-i\mathcal{L}_{\xi _{-1}}h_{0,-1}-\frac{1}{2}h_{00}=0, \\
 E_{0,1}&\equiv 2i\mathcal{L}_{\xi _{-1}}h_{1,-1}-4h_{10}-2i\mathcal{L}_{\xi _{1}}h_{11}=0, \\
 E_{00}&\equiv -2i\mathcal{L}_{\xi _{1}}h_{10}-4h_{1,-1}-3h_{00}+2i\mathcal{L}_{\xi _{-1}}h_{0,-1}=0, \\
@@ -169,36 +169,76 @@ E_{-1,0}&\equiv -i\mathcal{L}_{\xi _{1}}h_{00}-(4+2i\mathcal{L}_{\xi _{0}})h_{0,
 E_{-1,-1}&\equiv -i\mathcal{L}_{\xi _{1}}h_{0,-1}-(4+2i\mathcal{L}_{\xi _{0}})h_{-1,-1}=0
 \end{align}$$
 
-then we can solve out the coefficients $\displaystyle{h_{ab}(x)}$ as
+A covariant organization of the branch is given by the Killing descendant module. Define
 
 $$\begin{align}
-h_{10}&=h_{1,-1}=h_{00}=h_{0,-1}=h_{-1,-1}=0, \\
-\mathcal{L}_{\xi _{1}}h_{11}&=0, \\
-\mathcal{L}_{\xi _{0}}h_{11}&=-2ih_{11}.
+D_{\pm}h_{\mu\nu}
+&\equiv
+\varepsilon _{\mu}^{~\rho\sigma}\nabla ^{(0)}_{\rho}h_{\sigma\nu}
+\pm h_{\mu\nu}.
 \end{align}$$
 
-therefore we writing
+For any Killing vector $\displaystyle{K\in\{\xi_a,\bar{\xi}_a\}}$, the Lie derivative preserves the background metric, connection, and volume form. Hence
 
 $$\begin{align}
-w & \equiv \frac{r\,e^{-i(t+\phi)}}{\sqrt{ 1+r^{2} }}.
+D_{\pm}\mathcal{L}_{K}h
+&=\mathcal{L}_{K}D_{\pm}h, \\
+\operatorname{tr}(\mathcal{L}_{K}h)
+&=\mathcal{L}_{K}\operatorname{tr}(h), \\
+\nabla ^{(0)\mu}(\mathcal{L}_{K}h)_{\mu\nu}
+&=\mathcal{L}_{K}\left(\nabla ^{(0)\mu}h_{\mu\nu}\right).
 \end{align}$$
 
-we have $\displaystyle{\mathcal{L}_{\xi _{1}}w=\mathcal{L}_{\xi _{0}}w=0}$, so the general solution is
+The generator of the $\displaystyle{D_{+}}$ branch is
 
 $$\begin{align}
-h_{11}(t,r,\phi) & =\frac{e^{-4it}}{(1+r^{2})^{2}}G(w),
+h^{\mathrm{gen}}_{\mu\nu}
+&=H(t,r,\phi)\xi _{1,\mu}\xi _{1,\nu}.
 \end{align}$$
 
-with $\displaystyle{G}$ arbitrary. Imposing single-valuedness in $\displaystyle{\phi}$ and regularity at $\displaystyle{r=0}$ gives the power-series expansion
+Substituting this generator into the TT conditions and the first-order equation gives
 
 $$\begin{align}
-G(w) & =\sum _{n=0}^{\infty}\tilde{c}_{n}w^{n},
+\mathcal{L}_{\xi _{1}}H&=0, \\
+\mathcal{L}_{\xi _{0}}H&=-2iH .
 \end{align}$$
 
-so that
+With
 
 $$\begin{align}
-h_{11}(t,r,\phi) & =\sum _{n=0}^{\infty}\tilde{c}_{n}\frac{r^{n}e^{-i(n+4)t-in\phi}}{(1+r^{2})^{2+n/2}}.
+w & \equiv \frac{r\,e^{-i(t+\phi)}}{\sqrt{ 1+r^{2} }}, &
+A&\equiv \frac{e^{-4it}}{(1+r^{2})^{2}},
+\end{align}$$
+
+we have $\displaystyle{\mathcal{L}_{\xi _{1}}w=\mathcal{L}_{\xi _{0}}w=0}$ and $\displaystyle{\mathcal{L}_{\xi _{1}}A=0,\ \mathcal{L}_{\xi _{0}}A=-2iA}$. Thus
+
+$$\begin{align}
+H(t,r,\phi) & =\frac{e^{-4it}}{(1+r^{2})^{2}}G(w).
+\end{align}$$
+
+Imposing single-valuedness in $\displaystyle{\phi}$ and regularity at $\displaystyle{r=0}$ gives
+
+$$\begin{align}
+G(w) & =\sum _{n=0}^{\infty}\tilde{c}_{n}w^{n}, \\
+H(t,r,\phi) & =\sum _{n=0}^{\infty}\tilde{c}_{n}\frac{r^{n}e^{-i(n+4)t-in\phi}}{(1+r^{2})^{2+n/2}}.
+\end{align}$$
+
+The function $\displaystyle{G(w)}$ packages the $\displaystyle{\bar{\xi}_{-1}}$ descendants. The primary generator is obtained from $\displaystyle{G(w)=1}$,
+
+$$\begin{align}
+h^{\mathrm{prim}}_{\mu\nu}
+&=A\xi _{1,\mu}\xi _{1,\nu}.
+\end{align}$$
+
+The descendant module is
+
+$$\begin{align}
+h^{(+)}_{\mu\nu}
+&=
+\sum _{m,n\geq 0}c_{mn}
+\mathcal{L}_{\xi _{-1}}^{m}
+\mathcal{L}_{\bar{\xi}_{-1}}^{n}
+h^{\mathrm{prim}}_{\mu\nu}.
 \end{align}$$
 
 similarly for
@@ -237,36 +277,55 @@ $$\begin{align}
 \tilde{E}_{-1,-1}&\equiv i\mathcal{L}_{\bar{\xi}_{1}}h_{0,-1}+(4+2i\mathcal{L}_{\bar{\xi}_{0}})h_{-1,-1}=0
 \end{align}$$
 
-Solving these equations together with the TT constraints gives
+The $\displaystyle{D_{-}}$ branch has the barred generator
 
 $$\begin{align}
-h_{10}&=h_{1,-1}=h_{00}=h_{0,-1}=h_{-1,-1}=0, \\
-\mathcal{L}_{\bar{\xi}_{1}}h_{11}&=0, \\
-\mathcal{L}_{\bar{\xi}_{0}}h_{11}&=-2ih_{11}.
+\bar{h}^{\mathrm{gen}}_{\mu\nu}
+&=\bar{H}(t,r,\phi)\bar{\xi}_{1,\mu}\bar{\xi}_{1,\nu}.
 \end{align}$$
 
-write
+Substituting this generator into the TT conditions and the first-order equation gives
 
 $$\begin{align}
-z & \equiv \frac{r\,e^{-i(t-\phi)}}{\sqrt{ 1+r^{2} }},
+\mathcal{L}_{\bar{\xi}_{1}}\bar{H}&=0, \\
+\mathcal{L}_{\bar{\xi}_{0}}\bar{H}&=-2i\bar{H}.
 \end{align}$$
 
-Since $\displaystyle{\mathcal{L}_{\bar{\xi}_{1}}z=\mathcal{L}_{\bar{\xi}_{0}}z=0}$, the general solution is
+Write
 
 $$\begin{align}
-h_{11}(t,r,\phi) & =\frac{e^{-4it}}{(1+r^{2})^{2}}F(z),
+z & \equiv \frac{r\,e^{-i(t-\phi)}}{\sqrt{ 1+r^{2} }}.
+\end{align}$$
+
+Since $\displaystyle{\mathcal{L}_{\bar{\xi}_{1}}z=\mathcal{L}_{\bar{\xi}_{0}}z=0}$ and $\displaystyle{\mathcal{L}_{\bar{\xi}_{1}}A=0,\ \mathcal{L}_{\bar{\xi}_{0}}A=-2iA}$, the generator coefficient is
+
+$$\begin{align}
+\bar{H}(t,r,\phi) & =\frac{e^{-4it}}{(1+r^{2})^{2}}F(z),
 \end{align}$$
 
 with $\displaystyle{F}$ arbitrary. Imposing single-valuedness in $\displaystyle{\phi}$ and regularity at $\displaystyle{r=0}$ gives
 
 $$\begin{align}
-F(z) & =\sum _{n=0}^{\infty}c_{n}z^{n},
+F(z) & =\sum _{n=0}^{\infty}c_{n}z^{n}, \\
+\bar{H}(t,r,\phi) & =\sum _{n=0}^{\infty}c_{n}\frac{r^{n}e^{-i(n+4)t+in\phi}}{(1+r^{2})^{2+n/2}}.
 \end{align}$$
 
-so that
+The primary generator is obtained from $\displaystyle{F(z)=1}$,
 
 $$\begin{align}
-h_{11}(t,r,\phi) & =\sum _{n=0}^{\infty}c_{n}\frac{r^{n}e^{-i(n+4)t+in\phi}}{(1+r^{2})^{2+n/2}}.
+\bar{h}^{\mathrm{prim}}_{\mu\nu}
+&=
+\frac{e^{-4it}}{(1+r^{2})^{2}}
+\bar{\xi}_{1,\mu}\bar{\xi}_{1,\nu}.
 \end{align}$$
 
-non-physical modes are obtained by taking $\displaystyle{\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}}$ of $\displaystyle{h_{11}}$.
+The corresponding descendant module is
+
+$$\begin{align}
+h^{(-)}_{\mu\nu}
+&=
+\sum _{m,n\geq 0}\bar{c}_{mn}
+\mathcal{L}_{\bar{\xi}_{-1}}^{m}
+\mathcal{L}_{\xi _{-1}}^{n}
+\bar{h}^{\mathrm{prim}}_{\mu\nu}.
+\end{align}$$
