@@ -160,10 +160,10 @@ and the first order equation $\displaystyle{\varepsilon _{\mu}^{~\nu \rho}\nabla
 $$\begin{align}
 E_{11}&\equiv (2i\mathcal{L}_{\xi _{0}}-4)h_{11}+i\mathcal{L}_{\xi _{-1}}h_{10}=0, \\
 E_{10}&\equiv (2i\mathcal{L}_{\xi _{0}}-4)h_{10}+i\mathcal{L}_{\xi _{-1}}h_{00}=0, \\
-E_{1,-1}&\equiv (2i\mathcal{L}_{\xi _{0}}-2)h_{1,-1}-i\mathcal{L}_{\xi _{-1}}h_{0,-1}-\frac{1}{2}h_{00}=0, \\
+E_{1,-1}&\equiv (2i\mathcal{L}_{\xi _{0}}-2)h_{1,-1}+i\mathcal{L}_{\xi _{-1}}h_{0,-1}-\frac{1}{2}h_{00}=0, \\
 E_{0,1}&\equiv 2i\mathcal{L}_{\xi _{-1}}h_{1,-1}-4h_{10}-2i\mathcal{L}_{\xi _{1}}h_{11}=0, \\
 E_{00}&\equiv -2i\mathcal{L}_{\xi _{1}}h_{10}-4h_{1,-1}-3h_{00}+2i\mathcal{L}_{\xi _{-1}}h_{0,-1}=0, \\
-E_{0,-1}&\equiv -2i\mathcal{L}_{\xi _{1}}h_{1,-1}-4h_{0,-1}-2i\mathcal{L}_{\xi _{-1}}h_{-1,-1}=0, \\
+E_{0,-1}&\equiv -2i\mathcal{L}_{\xi _{1}}h_{1,-1}-4h_{0,-1}+2i\mathcal{L}_{\xi _{-1}}h_{-1,-1}=0, \\
 E_{-1,1}&\equiv -i\mathcal{L}_{\xi _{1}}h_{10}-(2+2i\mathcal{L}_{\xi _{0}})h_{1,-1}-\frac{1}{2}h_{00}=0, \\
 E_{-1,0}&\equiv -i\mathcal{L}_{\xi _{1}}h_{00}-(4+2i\mathcal{L}_{\xi _{0}})h_{0,-1}=0, \\
 E_{-1,-1}&\equiv -i\mathcal{L}_{\xi _{1}}h_{0,-1}-(4+2i\mathcal{L}_{\xi _{0}})h_{-1,-1}=0
@@ -172,28 +172,21 @@ E_{-1,-1}&\equiv -i\mathcal{L}_{\xi _{1}}h_{0,-1}-(4+2i\mathcal{L}_{\xi _{0}})h_
 A covariant organization of the branch is given by the Killing descendant module. Define
 
 $$\begin{align}
-D_{\pm}h_{\mu\nu}
-&\equiv
-\varepsilon _{\mu}^{~\rho\sigma}\nabla ^{(0)}_{\rho}h_{\sigma\nu}
-\pm h_{\mu\nu}.
+\mathcal{D}_{\pm}h_{\mu\nu}&\equiv\varepsilon _{\mu}^{~\rho\sigma}\nabla ^{(0)}_{\rho}h_{\sigma\nu}\pm h_{\mu\nu}.
 \end{align}$$
 
 For any Killing vector $\displaystyle{K\in\{\xi_a,\bar{\xi}_a\}}$, the Lie derivative preserves the background metric, connection, and volume form. Hence
 
 $$\begin{align}
-D_{\pm}\mathcal{L}_{K}h
-&=\mathcal{L}_{K}D_{\pm}h, \\
-\operatorname{tr}(\mathcal{L}_{K}h)
-&=\mathcal{L}_{K}\operatorname{tr}(h), \\
-\nabla ^{(0)\mu}(\mathcal{L}_{K}h)_{\mu\nu}
-&=\mathcal{L}_{K}\left(\nabla ^{(0)\mu}h_{\mu\nu}\right).
+\mathcal{D}_{\pm}\mathcal{L}_{K}h&=\mathcal{L}_{K}\mathcal{D}_{\pm}h, \\
+\operatorname{tr}(\mathcal{L}_{K}h)&=\mathcal{L}_{K}\operatorname{tr}(h), \\
+\nabla ^{(0)\mu}(\mathcal{L}_{K}h)_{\mu\nu}&=\mathcal{L}_{K}\left(\nabla ^{(0)\mu}h_{\mu\nu}\right).
 \end{align}$$
 
-The generator of the $\displaystyle{D_{+}}$ branch is
+The generator of the $\displaystyle{\mathcal{D}_{+}}$ branch is
 
 $$\begin{align}
-h^{\mathrm{gen}}_{\mu\nu}
-&=H(t,r,\phi)\xi _{1,\mu}\xi _{1,\nu}.
+h^{\mathrm{gen}}_{\mu\nu}&=H(t,r,\phi)\xi _{1,\mu}\xi _{1,\nu}.
 \end{align}$$
 
 Substituting this generator into the TT conditions and the first-order equation gives
@@ -277,7 +270,7 @@ $$\begin{align}
 \tilde{E}_{-1,-1}&\equiv i\mathcal{L}_{\bar{\xi}_{1}}h_{0,-1}+(4+2i\mathcal{L}_{\bar{\xi}_{0}})h_{-1,-1}=0
 \end{align}$$
 
-The $\displaystyle{D_{-}}$ branch has the barred generator
+The $\displaystyle{\mathcal{D}_{-}}$ branch has the barred generator
 
 $$\begin{align}
 \bar{h}^{\mathrm{gen}}_{\mu\nu}
