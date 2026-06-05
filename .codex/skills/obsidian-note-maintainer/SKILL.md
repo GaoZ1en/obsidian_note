@@ -32,6 +32,9 @@ Apply fields incrementally. Preserve existing valid fields unless the user asks 
 
 - Use `$$ ... $$` for display math.
 - Use `$ ... $` for inline math.
+- For long LaTeX formulas, use a two-stage formula-layout workflow. It is acceptable to draft complex formulas in an expanded one-term-per-line working layout while checking coefficients, signs, indices, or xAct output, but final note content should use compact LaTeX source. Most importantly, if a display formula visually fits on one line, keep the source on one line as `$$ ... $$`; only introduce source line breaks when the displayed formula itself benefits from being multiline. In a multi-line environment, each equation or continuation that visually fits on one line should still occupy one source line. For multi-line environments, prefer `$$\begin{align}` and `\end{align}$$` on the delimiter lines. Do not leave `&`, `\\`, `=`, `+`, `\frac`, `\Gamma`, or single index factors on their own source lines. Avoid global newline-deletion passes; compact only inside intended math blocks and rerun relevant formula or formatting checks.
+- Avoid one-off shorthand symbols in final notes. If a symbol only abbreviates a formula that appears once or is immediately expanded again, write the formula explicitly instead; keep shorthand only when it is reused enough to reduce clutter.
+- Group displayed formulas by mathematical object or logical unit. Different perturbative orders, components, or cases of the same object should usually live in one `align` or display block, even if one entry is much longer; do not split them into separate formula blocks merely because some entries are short and others are long.
 - Do not skip heading levels.
 - Use `-` for unordered lists.
 - Use `1.` for ordered lists.
