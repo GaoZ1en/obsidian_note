@@ -1,7 +1,7 @@
 ---
 title: Superstring Exam Cheat Sheet
 date: 2026-06-01
-summary: "Compact open-book reference for the Cheng Peng superstring exam, covering worldsheet setup, spectra, CFT/OPE technology, bosonization, ghost systems, and high-frequency formulas."
+summary: "Compact open-book reference for the Cheng Peng superstring exam, covering worldsheet setup, spectra, compactification, T-duality, CFT/OPE technology, bosonization, ghost systems, and high-frequency formulas."
 ---
 
 # Core setup
@@ -565,7 +565,43 @@ $$
 
 Mixed sectors:
 
-- NS-R and R-NS give gravitini and dilatini.
+- NS-R has left NS vector oscillator and right R spinor ground state:
+
+$$
+b_{-1/2}^{i}\ket{0;k}_{\mathrm{NS}}
+\otimes
+\ket{\tilde{s};k}_{\mathrm{R}}.
+$$
+
+- R-NS has left R spinor ground state and right NS vector oscillator:
+
+$$
+\ket{s;k}_{\mathrm{R}}
+\otimes
+\tilde{b}_{-1/2}^{i}\ket{0;k}_{\mathrm{NS}}.
+$$
+
+For Type IIA,
+
+$$
+\mathrm{NS\text{-}R}:\quad 8_{v}\otimes 8_{c}=8_{s}\oplus 56_{s},
+$$
+
+$$
+\mathrm{R\text{-}NS}:\quad 8_{s}\otimes 8_{v}=8_{c}\oplus 56_{c}.
+$$
+
+For Type IIB,
+
+$$
+\mathrm{NS\text{-}R}:\quad 8_{v}\otimes 8_{s}=8_{c}\oplus 56_{c},
+$$
+
+$$
+\mathrm{R\text{-}NS}:\quad 8_{s}\otimes 8_{v}=8_{c}\oplus 56_{c}.
+$$
+
+The $56$ pieces are gravitini and the $8$ pieces are dilatini. Type IIA has opposite mixed-sector chiralities, while Type IIB has the same mixed-sector chirality.
 
 R-R sectors:
 
@@ -669,6 +705,180 @@ $$
 N_{R}-a_{R}=N_{L}+\frac{1}{2}p_{L}^{2}-1.
 $$
 
+# Compactification and T-duality
+
+## Closed string on a circle
+
+For one compact coordinate,
+
+$$
+X\sim X+2\pi R,
+\qquad
+n,w\in \mathbb{Z}.
+$$
+
+Momentum along the circle is quantized as
+
+$$
+p=\frac{n}{R}.
+$$
+
+A closed string may wind as
+
+$$
+X(\tau,\sigma+2\pi)=X(\tau,\sigma)+2\pi wR.
+$$
+
+A useful zero-mode form is
+
+$$
+X(\tau,\sigma)=x+\frac{\alpha'}{2}p_{L}(\tau+\sigma)
++\frac{\alpha'}{2}p_{R}(\tau-\sigma)+\text{oscillators},
+$$
+
+with
+
+$$
+p_{L}=\frac{n}{R}+\frac{wR}{\alpha'},
+\qquad
+p_{R}=\frac{n}{R}-\frac{wR}{\alpha'}.
+$$
+
+The compact zero-mode contribution satisfies
+
+$$
+\frac{1}{2}(p_{L}^{2}+p_{R}^{2})
+=\frac{n^{2}}{R^{2}}+\frac{w^{2}R^{2}}{\alpha'^{2}},
+$$
+
+and
+
+$$
+p_{L}^{2}-p_{R}^{2}=\frac{4nw}{\alpha'}.
+$$
+
+## Compactified closed-string spectrum
+
+For the compact bosonic closed string,
+
+$$
+M^{2}=p_{L}^{2}+\frac{4}{\alpha'}(N_{L}-1)
+=p_{R}^{2}+\frac{4}{\alpha'}(N_{R}-1).
+$$
+
+With the left/right convention above this gives
+
+$$
+N_{R}-N_{L}=nw.
+$$
+
+If the opposite convention for $\sigma$ is used, the sign of the displayed level-matching relation is reversed.
+
+For Type II superstrings, replace the bosonic intercepts by the appropriate RNS intercepts:
+
+$$
+M^{2}=p_{L}^{2}+\frac{4}{\alpha'}(N_{L}-a_{L})
+=p_{R}^{2}+\frac{4}{\alpha'}(N_{R}-a_{R}).
+$$
+
+## T-duality on a circle
+
+The spectrum is invariant under
+
+$$
+R\longleftrightarrow \frac{\alpha'}{R},
+\qquad
+n\longleftrightarrow w.
+$$
+
+Equivalently,
+
+$$
+p_{L}\to p_{L},
+\qquad
+p_{R}\to -p_{R}.
+$$
+
+At the coordinate level this is implemented by flipping one chiral part:
+
+$$
+X_{L}\to X_{L},
+\qquad
+X_{R}\to -X_{R}.
+$$
+
+The self-dual radius is
+
+$$
+R=\sqrt{\alpha'}.
+$$
+
+For the bosonic closed string, extra states become massless at this radius and enhance
+
+$$
+U(1)_{L}\times U(1)_{R}
+\to
+SU(2)_{L}\times SU(2)_{R}.
+$$
+
+Exam memory rule:
+
+- momentum modes are light when $R$ is large,
+- winding modes are light when $R$ is small,
+- T-duality exchanges the two descriptions.
+
+## Open-string T-duality and D-branes
+
+For an open string, T-duality along a spatial direction exchanges boundary conditions:
+
+$$
+\partial_{\sigma}X=0
+\quad\Longleftrightarrow\quad
+\partial_{\tau}\tilde X=0.
+$$
+
+Thus
+
+- Neumann in $X$ becomes Dirichlet in $\tilde X$,
+- Dirichlet in $X$ becomes Neumann in $\tilde X$.
+
+If an open string has Neumann directions
+
+$$
+X^{0},X^{1},\dots,X^{p}
+$$
+
+and Dirichlet directions transverse to them, its endpoint lies on a D$p$-brane.
+
+For a string stretched between two parallel branes separated by distance $L$, the classical stretching contribution shifts the open-string mass formula by
+
+$$
+M^{2}=\frac{L^{2}}{(2\pi\alpha')^{2}}+\frac{1}{\alpha'}(N-a).
+$$
+
+When $N$ coincident D-branes are present, Chan-Paton labels give a $U(N)$ gauge theory on the brane worldvolume. Strings stretched between separated branes become massive, giving the Higgsed phase.
+
+## Type II chirality under T-duality
+
+T-duality flips one right-moving spacetime chirality because it acts as
+
+$$
+X_{R}\to -X_{R}
+$$
+
+on the dualized direction. Therefore
+
+$$
+\text{Type IIA on }S^{1}_{R}
+\quad\longleftrightarrow\quad
+\text{Type IIB on }S^{1}_{\alpha'/R}.
+$$
+
+Useful memory rule:
+
+- T-duality along one circle exchanges Type IIA and Type IIB,
+- T-duality along an even number of circles preserves the Type IIA/IIB label.
+
 # CFT toolkit
 
 ## Primary fields and descendants
@@ -728,6 +938,363 @@ Exam template:
 2. Expand the leftover fields around $w$.
 3. Read off the coefficient of $(z-w)^{-2}$ as the conformal weight.
 4. Read off the coefficient of $(z-w)^{-1}$ as the derivative term.
+
+## From OPEs to mode algebras
+
+For fields of weights $h_{A}$ and $h_{B}$,
+
+$$
+A_{m}=\oint \frac{dz}{2\pi i}z^{m+h_{A}-1}A(z),
+\qquad
+B_{n}=\oint \frac{dw}{2\pi i}w^{n+h_{B}-1}B(w).
+$$
+
+The graded commutator is computed by nesting the $z$ contour around $w$:
+
+$$
+[A_{m},B_{n}]_{\mathrm{gr}}
+=
+\oint \frac{dw}{2\pi i}w^{n+h_{B}-1}
+\oint_{w}\frac{dz}{2\pi i}z^{m+h_{A}-1}A(z)B(w).
+$$
+
+Use the ordinary commutator for bosonic modes and the anticommutator when both modes are fermionic.
+
+If
+
+$$
+A(z)B(w)\sim \sum_{k\geq 1}\frac{C_{k}(w)}{(z-w)^{k}},
+$$
+
+expand
+
+$$
+z^{m+h_{A}-1}
+=
+\sum_{j\geq 0}
+\binom{m+h_{A}-1}{j}
+w^{m+h_{A}-1-j}(z-w)^{j}.
+$$
+
+Only the term with $j=k-1$ survives the $z$ residue. Therefore
+
+$$
+[A_{m},B_{n}]_{\mathrm{gr}}
+=
+\sum_{k\geq 1}
+\binom{m+h_{A}-1}{k-1}
+(C_{k})_{m+n}.
+$$
+
+For a derivative field,
+
+$$
+(\partial \phi)_{q}=-(q+h)\phi_{q}
+$$
+
+when
+
+$$
+\phi(z)=\sum_{q}\phi_{q}z^{-q-h}.
+$$
+
+Primary-field example:
+
+$$
+T(z)\phi(w)\sim \frac{h\phi(w)}{(z-w)^{2}}+\frac{\partial \phi(w)}{z-w}
+$$
+
+gives
+
+$$
+[L_{m},\phi_{n}]
+=h(m+1)\phi_{m+n}-(m+n+h)\phi_{m+n}
+=((h-1)m-n)\phi_{m+n}.
+$$
+
+Virasoro example:
+
+$$
+T(z)T(w)\sim
+\frac{c/2}{(z-w)^{4}}
++\frac{2T(w)}{(z-w)^{2}}
++\frac{\partial T(w)}{z-w}
+$$
+
+gives
+
+$$
+[L_{m},L_{n}]_{\mathrm{central}}
+=\frac{c}{2}\binom{m+1}{3}\delta_{m+n,0}
+=\frac{c}{12}m(m^{2}-1)\delta_{m+n,0},
+$$
+
+and
+
+$$
+2(m+1)L_{m+n}-(m+n+2)L_{m+n}
+=(m-n)L_{m+n}.
+$$
+
+Thus
+
+$$
+[L_{m},L_{n}]
+=(m-n)L_{m+n}
++\frac{c}{12}m(m^{2}-1)\delta_{m+n,0}.
+$$
+
+Supercurrent examples:
+
+$$
+T(z)G(w)\sim
+\frac{\frac{3}{2}G(w)}{(z-w)^{2}}
++\frac{\partial G(w)}{z-w}
+$$
+
+implies
+
+$$
+[L_{m},G_{r}]
+=\frac{3}{2}(m+1)G_{m+r}
+-\left(m+r+\frac{3}{2}\right)G_{m+r}
+=\left(\frac{m}{2}-r\right)G_{m+r}.
+$$
+
+If
+
+$$
+G(z)G(w)\sim
+\frac{2c/3}{(z-w)^{3}}
++\frac{2T(w)}{z-w},
+$$
+
+then
+
+$$
+\{G_{r},G_{s}\}
+=2L_{r+s}
++\frac{2c}{3}\binom{r+\frac{1}{2}}{2}\delta_{r+s,0}
+=2L_{r+s}
++\frac{c}{3}\left(r^{2}-\frac{1}{4}\right)\delta_{r+s,0}.
+$$
+
+Current algebra template:
+
+$$
+J^{a}(z)J^{b}(w)
+\sim
+\frac{k\kappa^{ab}}{(z-w)^{2}}
++\frac{i f^{ab}{}_{c}J^{c}(w)}{z-w}
+$$
+
+gives, for weight-one currents,
+
+$$
+[J_{m}^{a},J_{n}^{b}]
+=km\kappa^{ab}\delta_{m+n,0}
++i f^{ab}{}_{c}J_{m+n}^{c}.
+$$
+
+## Open-string CFT formulation
+
+After Wick rotation, the open-string worldsheet can be represented by the upper half-plane
+
+$$
+\Sigma=\{z\in \mathbb{C}\mid \operatorname{Im}z\geq 0\},
+\qquad
+\partial\Sigma=\mathbb{R}.
+$$
+
+Conformal boundary conditions require no momentum flow through the boundary:
+
+$$
+T(z)=\bar{T}(\bar{z})
+\qquad
+z=\bar{z}.
+$$
+
+For the RNS theory the supercurrent also obeys
+
+$$
+G(z)=\eta\,\bar{G}(\bar{z}),
+\qquad
+\eta=\pm 1,
+$$
+
+on each boundary component. The open string therefore has one copy of the Virasoro or super-Virasoro algebra after imposing the boundary gluing condition.
+
+For target-space bosons, Neumann and Dirichlet conditions become
+
+$$
+\partial X^{a}=\bar{\partial}X^{a}
+\qquad
+\text{on NN directions},
+$$
+
+$$
+\partial X^{i}=-\bar{\partial}X^{i}
+\qquad
+\text{on DD directions}.
+$$
+
+Equivalently, introduce the reflection matrix
+
+$$
+D^{\mu}{}_{\nu}
+=
+\begin{cases}
++\delta^{\mu}{}_{\nu}, & \text{Neumann direction},\\
+-\delta^{\mu}{}_{\nu}, & \text{Dirichlet direction},
+\end{cases}
+$$
+
+and use the doubling trick:
+
+$$
+\partial X_{\mathrm{dbl}}^{\mu}(z)
+=
+\begin{cases}
+\partial X^{\mu}(z), & \operatorname{Im}z>0,\\
+D^{\mu}{}_{\nu}\bar{\partial}X^{\nu}(\bar{z}), & \operatorname{Im}z<0.
+\end{cases}
+$$
+
+Then all boundary correlators can be computed as chiral correlators on the full plane. In NN directions,
+
+$$
+X^{a}(x)X^{b}(y)\sim -2\alpha'\eta^{ab}\ln|x-y|,
+$$
+
+so a boundary exponential has weight
+
+$$
+h\big(:e^{ik\cdot X(x)}:\big)=\alpha' k^{2}.
+$$
+
+Boundary vertex operators are integrated over the real boundary:
+
+$$
+\int_{\partial\Sigma} dx\, \mathcal{V}(x),
+$$
+
+and conformal invariance requires
+
+$$
+h(\mathcal{V})=1.
+$$
+
+The corresponding unintegrated bosonic-string vertex is
+
+$$
+U(x)=c(x)\mathcal{V}(x),
+$$
+
+because the boundary ghost $c$ has weight $-1$.
+
+Important open bosonic-string vertices:
+
+$$
+\mathcal{V}_{T}(x)=:e^{ik\cdot X(x)}:,
+\qquad
+h=\alpha' k^{2},
+$$
+
+$$
+\mathcal{V}_{A}(x)=\zeta_{\mu}\partial_{t}X^{\mu}(x)e^{ik\cdot X(x)},
+\qquad
+h=1+\alpha' k^{2}.
+$$
+
+Thus
+
+$$
+h(\mathcal{V}_{T})=1
+\quad\Longrightarrow\quad
+M^{2}=-\frac{1}{\alpha'},
+$$
+
+while
+
+$$
+h(\mathcal{V}_{A})=1
+\quad\Longrightarrow\quad
+k^{2}=0,
+$$
+
+together with
+
+$$
+k\cdot \zeta=0,
+\qquad
+\zeta_{\mu}\sim \zeta_{\mu}+\lambda k_{\mu}.
+$$
+
+For open RNS fermions at the two endpoints,
+
+$$
+\psi_{+}^{\mu}(\tau,0)=\eta_{0}D^{\mu}{}_{\nu}\psi_{-}^{\nu}(\tau,0),
+\qquad
+\psi_{+}^{\mu}(\tau,\pi)=\eta_{\pi}D^{\mu}{}_{\nu}\psi_{-}^{\nu}(\tau,\pi).
+$$
+
+The product of the endpoint signs determines the sector:
+
+$$
+\eta_{0}\eta_{\pi}=-1
+\quad\Longrightarrow\quad
+\mathrm{NS},
+\qquad
+\eta_{0}\eta_{\pi}=+1
+\quad\Longrightarrow\quad
+\mathrm{R}.
+$$
+
+For the open superstring, the massless NS gauge-boson vertex in the $(-1)$ picture is
+
+$$
+\mathcal{V}_{A}^{(-1)}(x)
+=
+\lambda^{A}e^{-\varphi}\zeta_{\mu}\psi^{\mu}e^{ik\cdot X}(x),
+$$
+
+with
+
+$$
+h(e^{-\varphi})=\frac{1}{2},
+\qquad
+h(\psi^{\mu})=\frac{1}{2},
+\qquad
+h(e^{ik\cdot X})=\alpha' k^{2}.
+$$
+
+Therefore
+
+$$
+h(\mathcal{V}_{A}^{(-1)})=1
+\quad\Longleftrightarrow\quad
+k^{2}=0.
+$$
+
+The unintegrated vertex is
+
+$$
+U_{A}^{(-1)}(x)=c\,\mathcal{V}_{A}^{(-1)}(x).
+$$
+
+Chan-Paton factors attach matrix labels to boundary vertices:
+
+$$
+\mathcal{V}_{ij}(x)=(\lambda^{A})_{ij}\mathcal{V}_{A}(x),
+$$
+
+and disk amplitudes are color ordered along the boundary, with factors such as
+
+$$
+\operatorname{Tr}(\lambda^{A_{1}}\lambda^{A_{2}}\cdots \lambda^{A_{n}}).
+$$
+
+The residual conformal group of the disk or upper half-plane is $PSL(2,\mathbb{R})$, so three boundary insertion points may be fixed in tree-level open-string amplitudes.
 
 ## Free boson
 
