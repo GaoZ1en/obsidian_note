@@ -26,6 +26,8 @@ L_{\rm CS}&=\frac{1}{2}\varepsilon^{\lambda\mu\nu}\Gamma^\rho{}_{\lambda\sigma}\
 \mathcal L_{\rm NMG}&=\frac{1}{2}-R_{\mu\nu}R^{\mu\nu}+\frac{3}{8}R^2.
 \end{align}$$
 
+we assume $\displaystyle{\mu>0}$ in the following discussion.
+
 ## Linearized action
 
 Set
@@ -144,12 +146,135 @@ m_1m_2&=-m^2-\frac{1}{2},\\
 m_1+m_2&=-\frac{m^2}{\mu}.
 \end{align}$$
 
-Then
+in the following discussion we denote the larger root as $\displaystyle{m_{+}}$ and the smaller root as $\displaystyle{m_{-}}$ (yes they may not be positive or negative, since $\displaystyle{m^{2}}$ may smaller than $\displaystyle{0}$). Then
 
-$$(D^L D^R D^{m_1}D^{m_2}h)_{\mu\nu}=0$$
+$$(D^L D^R D^{m_+}D^{m_-}h)_{\mu\nu}=0$$
 
 is equivalent to the TT equation above. Explicitly,
 
-$$D^L D^R D^{m_1}D^{m_2}h=-\frac{1}{m_1m_2}(\nabla^{(0)2}+2)\left[\nabla^{(0)2}h-\frac{m^2}{\mu}Eh-\left(m^2-\frac{5}{2}\right)h\right],$$
+$$D^L D^R D^{m_+}D^{m_-}h=-\frac{1}{m_1m_2}(\nabla^{(0)2}+2)\left[\nabla^{(0)2}h-\frac{m^2}{\mu}Eh-\left(m^2-\frac{5}{2}\right)h\right],$$
 
 where the last line suppresses tensor indices.
+
+## solutions
+
+### general discussion
+
+for cases $\displaystyle{m_{1}\neq m_{2}}$ and $\displaystyle{m_{1},m_{2}\neq \pm 1}$, the general solution is sum of contributions from each root $\displaystyle{m_{i}}$ and $\displaystyle{\pm 1}$. we have already solves the first order equations $\displaystyle{D^{L/R}h=0}$ in [[Articles/Quantization in AdS3/linearized gravity/eom|eom]]. we follows the same steps to find the solutions $\displaystyle{D^{m_{\pm}}h=0}$. consider the Casimir
+
+$$\begin{align}
+\mathcal{C}h_{\mu \nu} & =-\frac{1}{4}\mathcal{D}_{\mu}^{~\alpha}\mathcal{D}_{\alpha}^{~\beta}h_{\beta \nu}-\frac{1}{2}\mathcal{D}_{\mu}^{~\alpha}h_{\alpha \nu}-\frac{1}{2}\mathcal{D}_{\nu}^{~\alpha}h_{\mu \alpha}-\frac{3}{4}h_{\mu \nu} \\
+\mathcal{\bar{C}}h_{\mu \nu} & =-\frac{1}{4}\mathcal{D}_{\mu}^{~\alpha}\mathcal{D}_{\alpha}^{~\beta}h_{\beta \nu}+\frac{1}{2}\mathcal{D}_{\mu}^{~\alpha}h_{\alpha \nu}+\frac{1}{2}\mathcal{D}_{\nu}^{~\alpha}h_{\mu \alpha}-\frac{3}{4}h_{\mu \nu}
+\end{align}$$
+
+here
+
+$$\begin{align}
+\mathcal{D}_{\mu}^{~\alpha} & =\varepsilon _{\mu}^{~\nu \alpha}\nabla ^{(0)}_{\nu}
+\end{align}$$
+
+then
+
+$$\begin{align}
+\mathcal{C}h_{m_\pm,\mu \nu} & =\left(-\frac{1}{4}m_{\pm}^{2}+m_{\pm}-\frac{3}{4}\right)h_{\mu \nu} \\
+\mathcal{\bar{C}}h_{m_\pm,\mu \nu} & =\left(-\frac{1}{4}m_{\pm}^{2}-m_{\pm}-\frac{3}{4}\right)h_{\mu \nu}
+\end{align}$$
+
+suppose the primary state $\displaystyle{h_{m_{\pm},0,\mu \nu}}$ has the conformal dimension $\displaystyle{(h_{m_{\pm}},\bar{h}_{m_{\pm}})}$, then
+
+$$\begin{align}
+\mathcal{C}h_{m_{\pm},0,\mu \nu} & =(-h_{m_{\pm}}^{2}+h_{m_{\pm}})h_{m_{\pm},0,\mu \nu} \\
+\mathcal{\bar{C}}h_{m_{\pm},0,\mu \nu} & =(-\bar{h}_{m_{\pm}}^{2}+\bar{h}_{m_{\pm}})h_{m_{\pm},0,\mu \nu} \\
+\implies h_{m_{\pm}} & = \frac{m_{\pm}-1}{2}, \frac{3-m_{\pm}}{2}\\
+\bar{h}_{m_{\pm}} & = \frac{m_{\pm}+3}{2},-\frac{m_{\pm}+1}{2}
+\end{align}$$
+
+to avoid any exponential divergence at the boundary, the massive graviton solutions reduce to the following solutions with the following parameter regions
+
+1. $\displaystyle{m^{2}>0}$ and $\displaystyle{1-\frac{1}{2m^{2}}-\frac{1}{\mu}\geqslant 0}$, with admissible $\displaystyle{(h,\bar{h})}$ to be
+
+$$\begin{align}
+(h,\bar{h}) & = \left( \frac{3-m_{-}}{2},\frac{-1-m_{-}}{2}\right) \\
+(h,\bar{h}) & =\left(\frac{-1+m_{+}}{2},\frac{3+m_{+}}{2}\right)
+\end{align}$$
+![[gmg-parameter-region-positive-m2.png]]
+2. $\displaystyle{\mu\geqslant \frac{3}{4}}$ and $\displaystyle{m^{2}\leqslant -2\mu ^{2}-\mu \sqrt{ 4\mu ^{2}-2 }}$ and $\displaystyle{1-\frac{1}{2m^{2}}-\frac{1}{\mu}\geqslant 0}$, with admissible $\displaystyle{(h,\bar{h})}$ to be
+
+$$\begin{align}
+(h,\bar{h}) & =\left(\frac{m_{\pm}-1}{2},\frac{m_{\pm}+3}{2}\right)
+\end{align}$$
+
+![[gmg-parameter-region-negative-m2.png]]
+
+### highest-weight primary
+
+For a primary tensor with conformal dimension $(h,\bar h)$, the highest-weight conditions are
+
+$$\begin{align}
+\mathcal L_{\xi_1}h_{h,\bar h,\mu\nu}&=0,&\mathcal L_{\bar\xi_1}h_{h,\bar h,\mu\nu}&=0,\\
+\mathcal L_{\xi_0}h_{h,\bar h,\mu\nu}&=-ih\,h_{h,\bar h,\mu\nu},&\mathcal L_{\bar\xi_0}h_{h,\bar h,\mu\nu}&=-i\bar h\,h_{h,\bar h,\mu\nu}.
+\end{align}$$
+
+we have
+
+$$\begin{align}
+h^{(+)}_{h,\bar h,\mu\nu}&\propto \frac{e^{-i(h+\bar h+2)t}}{(1+r^{2})^{(h+\bar{h})/2+1}}\bar{\xi}_{1,\mu}\bar{\xi}_{1,\nu},\qquad h-\bar h=2,\\
+h^{(-)}_{h,\bar h,\mu\nu}&\propto \frac{e^{-i(h+\bar h+2)t}}{(1+r^{2})^{(h+\bar{h})/2+1}}\xi_{1,\mu}\xi_{1,\nu},\qquad h-\bar h=-2.
+\end{align}$$
+
+These components are transverse and traceless with respect to the background metric:
+
+$$g^{(0)\mu\nu}h^{(\sigma)}_{h,\bar h,\mu\nu}=0,\qquad \nabla^{(0)\mu}h^{(\sigma)}_{h,\bar h,\mu\nu}=0.$$
+
+The leading boundary behavior is componentwise
+
+$$h^{(\sigma)}_{h,\bar h,\mu\nu}\sim r^{2-h-\bar h}e^{-i(h+\bar h)t+2i\sigma\phi}\mathcal{O}(r^0)_{\mu\nu}$$
+
+so avoiding exponential divergence at the boundary requires $h+\bar h\geqslant2$, which leads to the regions discussed above.
+
+### double root
+
+Use the logarithmic factor
+
+$$y(t,r)=-it-\frac{1}{2}\log(1+r^2),$$
+
+which is the $(t,r,\phi)$ form of $-i\tau-\log\cosh\rho$ with $r=\sinh\rho$.
+
+In the parameter regions above with $\mu>0$, a massive factor coincides with a massless factor on the $D^{m_i}=D^L$ critical line. Algebraically,
+
+$$D^{m_i}=D^L\Longleftrightarrow 1-\frac{1}{2m^2}-\frac{1}{\mu}=0.$$
+
+With the lower-index mode convention used here, the $\mu>0$ logarithmic partner is the parameter derivative of the massive primary at the $D^{m_i}=D^L$ degenerate weight. Up to normalization,
+
+$$D^L(yh_{0,2})\propto h_{0,2},\qquad (D^L)^2(yh_{0,2})=0.$$
+
+When the two massive factors coincide with each other but not with a massless factor, $D^{m_+}=D^{m_-}=D^m$, the repeated first-order root in the second parameter region above is positive:
+
+$$m_+=m_-=m=\mu+\frac{1}{2}\sqrt{4\mu^2-2}\geqslant1.$$
+
+The endpoint $m=1$ is the triple root discussed below. Away from that endpoint the boundary-admissible massive primary is the $h^{(-)}$ branch, and the logarithmic partner is
+
+$$\begin{align}
+(D^m)(y\,h^{(-)}_{\frac{m-1}{2},\frac{m+3}{2}})&\propto h^{(-)}_{\frac{m-1}{2},\frac{m+3}{2}},& (D^m)^2(y\,h^{(-)}_{\frac{m-1}{2},\frac{m+3}{2}})&=0.
+\end{align}$$
+
+these logarithmic modes satisfy the TT gauge condition
+
+$$\begin{align}
+g^{(0)\mu \nu}h^{\log}_{\mu \nu} & =0, & \nabla ^{(0)\mu}h^{\log}_{\mu \nu} & =0
+\end{align}$$
+
+### triple root
+
+At a three-factor degeneration, there is also a logarithm-squared partner. For the standing assumption $\mu>0$, the degeneration $D^{m_+}=D^{m_-}=D^L$ occurs at $m_+=m_-=1$, with $m^2=-3/2$ and $\mu=3/4$, and the logarithm-squared partner is $y^2h^{(-)}_{0,2}$.
+
+The Jordan-chain relations are
+
+$$D^L(y^2h^{(-)}_{0,2})\propto yh^{(-)}_{0,2},\qquad (D^L)^3(y^2h^{(-)}_{0,2})=0.$$
+
+and the 2-log primary satisfies the TT gauge condition.
+
+$$\begin{align}
+g^{(0)\mu \nu}h^{2\log}_{\mu \nu} & =0, & \nabla ^{(0)\mu}h^{2\log}_{\mu \nu} & =0
+\end{align}$$
+
