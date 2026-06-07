@@ -197,14 +197,14 @@ $$\begin{align}
 (h,\bar{h}) & = \left( \frac{3-m_{-}}{2},\frac{-1-m_{-}}{2}\right) \\
 (h,\bar{h}) & =\left(\frac{-1+m_{+}}{2},\frac{3+m_{+}}{2}\right)
 \end{align}$$
-![[gmg-parameter-region-positive-m2.png]]
+![[Attachments/gmg-parameter-region-positive-m2.png]]
 2. $\displaystyle{\mu\geqslant \frac{3}{4}}$ and $\displaystyle{m^{2}\leqslant -2\mu ^{2}-\mu \sqrt{ 4\mu ^{2}-2 }}$ and $\displaystyle{1-\frac{1}{2m^{2}}-\frac{1}{\mu}\geqslant 0}$, with admissible $\displaystyle{(h,\bar{h})}$ to be
 
 $$\begin{align}
 (h,\bar{h}) & =\left(\frac{m_{\pm}-1}{2},\frac{m_{\pm}+3}{2}\right)
 \end{align}$$
 
-![[gmg-parameter-region-negative-m2.png]]
+![[Attachments/gmg-parameter-region-negative-m2.png]]
 
 ### highest-weight primary
 
