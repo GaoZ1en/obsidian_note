@@ -410,7 +410,7 @@ $$m^2=-\frac{3}{2},\qquad \mu=\frac{3}{4},\qquad \Delta_*=2,$$
 denote
 
 $$\begin{align}
-H^{(-)} & =(h^{(-)}_{0,2},h^{(-)}_{\log},h^{(-)}_{2\log}), & h^{(-)}_{\log} & =y\psi ^{(-)}_{0,2}, & h^{(-)}_{2\log}=y^{2}h ^{(-)}_{0,2}
+H^{(-)} & =(h^{(-)}_{0,2},h^{(-)}_{\log},h^{(-)}_{2\log}), & h^{(-)}_{\log} & =yh ^{(-)}_{0,2}, & h^{(-)}_{2\log}=y^{2}h ^{(-)}_{0,2}
 \end{align}$$
 
 direct evaluation gives
