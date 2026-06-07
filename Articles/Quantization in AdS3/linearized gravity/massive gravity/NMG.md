@@ -1,7 +1,7 @@
 ---
 title: NMG
 date: 2026-06-06
-summary: "Takes the new massive gravity limit of the GMG linearized TT equation and records the admissible massive and critical logarithmic modes on unit AdS3."
+summary: "Takes the new massive gravity limit of the GMG linearized TT equation and records the admissible massive modes, critical logarithmic modes, symplectic form, and normalization on unit AdS3."
 ---
 
 # New massive gravity
@@ -131,3 +131,101 @@ g^{(0)\mu\nu}h^{\log,R}_{\mu\nu}&=0,& \nabla^{(0)\mu}h^{\log,R}_{\mu\nu}&=0.
 \end{align}$$
 
 There is no logarithm-squared primary in the finite-$m^2$ NMG limit. Each massless factor has multiplicity two at $m^2=\frac{1}{2}$, and the GMG massive-massive double-root branch at finite $\mu$ is pushed to $m^2\to-\infty$ when $\mu\to\infty$. The formal equation $m_+=m_-$ gives $m^2=-\frac{1}{2}$, where the first-order factors $D^{m_i}$ are not defined and the Brown-Henneaux falloff condition is not satisfied.
+
+## TT gauge fixed action, symplectic form
+
+The NMG quadratic action and symplectic form are the $\mu\to\infty$ limit of the GMG result. The Chern-Simons contribution is absent, while the pure-gravity and curvature-squared contributions remain.
+
+Now impose the TT gauge
+
+$$\begin{align}
+g^{(0)\mu\nu}h_{\mu\nu}&=0,&\nabla^{(0)\mu}h_{\mu\nu}&=0.
+\end{align}$$
+
+The pure-gravity contribution becomes
+
+$$\begin{align}
+\mathcal L_{\rm PG,TT}^{(0)}&=-4,\\
+\mathcal L_{\rm PG,TT}^{(1)}&=0,\\
+\mathcal L_{\rm PG,TT}^{(2)}&=2h_{\mu\nu}h^{\mu\nu}+h^{\mu\nu}\nabla^{(0)}_\rho\nabla^{(0)\rho}h_{\mu\nu}-\frac{1}{2}\nabla^{(0)}_\nu h_{\mu\rho}\nabla^{(0)\rho}h^{\mu\nu}+\frac{3}{4}\nabla^{(0)}_\rho h_{\mu\nu}\nabla^{(0)\rho}h^{\mu\nu}.
+\end{align}$$
+
+The curvature-squared contribution becomes
+
+$$\begin{align}
+\mathcal L_{\rm NMG,TT}^{(0)}&=2,\\
+\mathcal L_{\rm NMG,TT}^{(1)}&=0,\\
+\mathcal L_{\rm NMG,TT}^{(2)}&=-2h_{\mu\nu}h^{\mu\nu}-\frac{3}{2}h^{\mu\nu}\nabla^{(0)}_\rho\nabla^{(0)\rho}h_{\mu\nu}+\frac{1}{4}\nabla^{(0)}_\nu h_{\mu\rho}\nabla^{(0)\rho}h^{\mu\nu}\\
+&\quad-\frac{3}{8}\nabla^{(0)}_\rho h_{\mu\nu}\nabla^{(0)\rho}h^{\mu\nu}-\frac{1}{4}\nabla^{(0)}_\rho\nabla^{(0)\rho}h^{\mu\nu}\nabla^{(0)}_\sigma\nabla^{(0)\sigma}h_{\mu\nu}.
+\end{align}$$
+
+The total NMG symplectic form is
+
+$$\begin{align}
+\omega_{\rm total}^{\rm NMG}&=\omega_{\rm PG}+\frac{1}{m^2}\omega_{\rm NMG},\\
+\omega_X&=\frac{1}{16\pi G}\int_\Sigma\mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu\,\omega_X^\mu
+\end{align}$$
+
+where the second term denotes the curvature-squared contribution. The pure-gravity current is
+
+$$\omega_{\rm PG}^\mu=-\frac{1}{2}\delta h^{\nu\rho}\wedge\nabla^{(0)\mu}\delta h_{\nu\rho}-\delta h^{\nu\rho}\wedge\nabla^{(0)}_\rho\delta h^\mu{}_\nu,$$
+
+and the curvature-squared current is
+
+$$\begin{align}
+\omega_{\rm NMG}^\mu&=\frac{9}{4}\delta h^{\nu\rho}\wedge\nabla^{(0)\mu}\delta h_{\nu\rho}+\frac{1}{2}\delta h^{\nu\rho}\wedge\nabla^{(0)\mu}\Box\delta h_{\nu\rho}\\
+&\quad+\frac{1}{2}\delta h^{\nu\rho}\wedge\nabla^{(0)}_\rho\delta h^\mu{}_\nu-\frac{1}{2}\nabla^{(0)\mu}\delta h^{\nu\rho}\wedge\Box\delta h_{\nu\rho}.
+\end{align}$$
+
+## Symplectic inner product
+
+Use the same normalization convention
+
+$$\omega[h,h^*]=-i.$$
+
+Let $\Delta=h+\bar h$. The NMG radial integrals are the $\mu\to\infty$ limit of the GMG integrals,
+
+$$\begin{align}
+I_{\rm PG}&=-i\frac{\Delta-1}{8(\Delta+1)},\\
+I_{\rm NMG}&=i\frac{(\Delta-1)(4\Delta^2-8\Delta+1)}{16(\Delta+1)}.
+\end{align}$$
+
+Therefore the two parity-related primaries have the same norm,
+
+$$\begin{align}
+\omega[h^{(\sigma)}_{h,\bar h},h^{(\sigma)*}_{h,\bar h}]&=\frac{i}{128G(\Delta+1)}F^{\rm NMG}(\Delta),\\
+F^{\rm NMG}(\Delta)&=-2(\Delta-1)+\frac{\Delta-1}{m^2}(4\Delta^2-8\Delta+1).
+\end{align}$$
+
+For a non-null primary, the overall coefficient $C$ in $C\,h^{(\sigma)}_{h,\bar h}$ is fixed by
+
+$$|C|^2=-\frac{128G(\Delta+1)}{F^{\rm NMG}(\Delta)}$$
+
+when the right-hand side is positive in the chosen convention. On the massive branches with $\Delta=m_++1$ and $m_+^2=m^2+\frac{1}{2}$, this function reduces to
+
+$$F^{\rm NMG}(m_++1)=m_+\left(2-\frac{1}{m^2}\right).$$
+
+At the critical point, let $\Delta_*$ be the degenerate weight and define
+
+$$h^{(\sigma)}_{\log,\mu\nu}=yh^{(\sigma)}_{\Delta_*,\mu\nu}=\partial_\Delta h^{(\sigma)}_{\Delta,\mu\nu}\big|_{\Delta=\Delta_*},\qquad H^{(\sigma)}=(h^{(\sigma)}_{\Delta_*},h^{(\sigma)}_{\log}).$$
+
+The limiting GMG double-root matrix gives
+
+$$\begin{align}
+\omega[H_i^{(\sigma)},H_j^{(\sigma)*}]&=\frac{i}{256G(\Delta_*+1)^2}\begin{pmatrix}
+2(\Delta_*+1)F^{\rm NMG}(\Delta_*) & A^{\rm NMG}(\Delta_*)\\
+A^{\rm NMG}(\Delta_*) & \dfrac{B^{\rm NMG}(\Delta_*)}{\Delta_*+1}
+\end{pmatrix},\\
+A^{\rm NMG}(\Delta)&=(\Delta+1)\frac{\mathrm{d}F^{\rm NMG}}{\mathrm{d}\Delta}-F^{\rm NMG}(\Delta),\\
+B^{\rm NMG}(\Delta)&=4+\frac{2}{m^2}(4\Delta^2+8\Delta-9).
+\end{align}$$
+
+At $m^2=\frac{1}{2}$, $\Delta_*=2$. For the two critical branches
+
+$$H^L=(h^{(-)}_{0,2},h^{\log,L}),\qquad H^R=(h^{(+)}_{2,0},h^{\log,R}),$$
+
+the non-vanishing inner products are
+
+$$\omega[H_i^L,H_j^{L*}]=\omega[H_i^R,H_j^{R*}]=\frac{i}{144G}\begin{pmatrix}0&3\\3&2\end{pmatrix},$$
+
+while the mixed $L/R$ pairings vanish by the angular integral.

@@ -1,7 +1,7 @@
 ---
 title: TMG
 date: 2026-06-06
-summary: "Takes the topologically massive gravity limit of the GMG linearized TT equation and records the admissible massive and logarithmic modes on unit AdS3."
+summary: "Takes the topologically massive gravity limit of the GMG linearized TT equation and records the admissible massive modes, logarithmic mode, symplectic form, and normalization on unit AdS3."
 ---
 
 # Topologically massive gravity
@@ -114,3 +114,85 @@ The logarithmic mode also satisfies the TT gauge condition,
 $$g^{(0)\mu\nu}h^{\log}_{\mu\nu}=0,\qquad \nabla^{(0)\mu}h^{\log}_{\mu\nu}=0.$$
 
 There is no logarithm-squared primary in this TMG limit, because only one massive first-order factor remains finite and the critical factorization has only two coincident $D^L$ factors.
+
+## TT gauge fixed action, symplectic form
+
+The TMG quadratic action and symplectic form are the $m^2\to\infty$ limit of the GMG result. The curvature-squared NMG density is absent, while the CS contribution remains the connection-space contribution inherited from the non-perturbative gravitational Chern-Simons term.
+
+Now impose the TT gauge
+
+$$\begin{align}
+g^{(0)\mu\nu}h_{\mu\nu}&=0,&\nabla^{(0)\mu}h_{\mu\nu}&=0.
+\end{align}$$
+
+The pure-gravity contribution becomes
+
+$$\begin{align}
+\mathcal L_{\rm PG,TT}^{(0)}&=-4,\\
+\mathcal L_{\rm PG,TT}^{(1)}&=0,\\
+\mathcal L_{\rm PG,TT}^{(2)}&=2h_{\mu\nu}h^{\mu\nu}+h^{\mu\nu}\nabla^{(0)}_\rho\nabla^{(0)\rho}h_{\mu\nu}-\frac{1}{2}\nabla^{(0)}_\nu h_{\mu\rho}\nabla^{(0)\rho}h^{\mu\nu}+\frac{3}{4}\nabla^{(0)}_\rho h_{\mu\nu}\nabla^{(0)\rho}h^{\mu\nu}.
+\end{align}$$
+
+The total TMG symplectic form is
+
+$$\begin{align}
+\omega_{\rm TMG}&=\omega_{\rm PG}+\frac{1}{\mu}\omega_{\rm CS},\\
+\omega_X&=\frac{1}{16\pi G}\int_\Sigma\mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu\,\omega_X^\mu
+\end{align}$$
+
+The pure-gravity current is
+
+$$\omega_{\rm PG}^\mu=-\frac{1}{2}\delta h^{\nu\rho}\wedge\nabla^{(0)\mu}\delta h_{\nu\rho}-\delta h^{\nu\rho}\wedge\nabla^{(0)}_\rho\delta h^\mu{}_\nu.$$
+
+For the CS piece, only the first-order connection variation is needed on the linearized phase space,
+
+$$\delta\Gamma^{(1)\rho}{}_{\mu\nu}=\frac{1}{2}g^{(0)\rho\sigma}\left(\nabla^{(0)}_\mu\delta h_{\sigma\nu}+\nabla^{(0)}_\nu\delta h_{\mu\sigma}-\nabla^{(0)}_\sigma\delta h_{\mu\nu}\right),$$
+
+and the $\mu$-independent CS current in the decomposition above is
+
+$$\omega_{\rm CS}^{\mu}=\frac{1}{2}\varepsilon^{(0)\mu\nu\rho}\delta\Gamma^{(1)\alpha}{}_{\nu\beta}\wedge\delta\Gamma^{(1)\beta}{}_{\rho\alpha}.$$
+
+## Symplectic inner product
+
+Use the same normalization convention
+
+$$\omega[h,h^*]=-i.$$
+
+Let $\Delta=h+\bar h$, and let $\sigma=\pm1$ denote the phase label in $h^{(\sigma)}\sim e^{-i\Delta t+2i\sigma\phi}$. The TMG radial integrals are the $m^2\to\infty$ limit of the GMG integrals,
+
+$$\begin{align}
+I_{\rm PG}&=-i\frac{\Delta-1}{8(\Delta+1)},\\
+I_{\rm CS}^{(\sigma)}&=i\sigma\frac{\Delta^2-2\Delta+2}{16(\Delta+1)}.
+\end{align}$$
+
+Therefore
+
+$$\begin{align}
+\omega[h^{(\sigma)}_{h,\bar h},h^{(\sigma)*}_{h,\bar h}]&=\frac{i}{128G(\Delta+1)}F^{\rm TMG}_\sigma(\Delta),\\
+F^{\rm TMG}_\sigma(\Delta)&=-2(\Delta-1)+\frac{\sigma}{\mu}(\Delta^2-2\Delta+2).
+\end{align}$$
+
+For a non-null primary, the overall coefficient $C$ in $C\,h^{(\sigma)}_{h,\bar h}$ is fixed by
+
+$$|C|^2=-\frac{128G(\Delta+1)}{F^{\rm TMG}_\sigma(\Delta)}$$
+
+when the right-hand side is positive in the chosen convention.
+
+At the TMG critical point, let $\Delta_*$ be the degenerate weight and define
+
+$$h^{(\sigma)}_{\log,\mu\nu}=yh^{(\sigma)}_{\Delta_*,\mu\nu}=\partial_\Delta h^{(\sigma)}_{\Delta,\mu\nu}\big|_{\Delta=\Delta_*},\qquad H^{(\sigma)}=(h^{(\sigma)}_{\Delta_*},h^{(\sigma)}_{\log}).$$
+
+The limiting GMG double-root matrix gives
+
+$$\begin{align}
+\omega[H_i^{(\sigma)},H_j^{(\sigma)*}]&=\frac{i}{256G(\Delta_*+1)^2}\begin{pmatrix}
+2(\Delta_*+1)F^{\rm TMG}_\sigma(\Delta_*) & A^{\rm TMG}_\sigma(\Delta_*)\\
+A^{\rm TMG}_\sigma(\Delta_*) & \dfrac{B^{\rm TMG}_\sigma(\Delta_*)}{\Delta_*+1}
+\end{pmatrix},\\
+A^{\rm TMG}_\sigma(\Delta)&=(\Delta+1)\frac{\mathrm{d}F^{\rm TMG}_\sigma}{\mathrm{d}\Delta}-F^{\rm TMG}_\sigma(\Delta),\\
+B^{\rm TMG}_\sigma(\Delta)&=4+\frac{\sigma}{\mu}(\Delta^2+2\Delta+6).
+\end{align}$$
+
+For the lower-index critical branch used above, $\mu=1$, $\Delta_*=2$, and $\sigma=-1$. Thus
+
+$$\omega[H_i^{(-)},H_j^{(-)*}]=-\frac{i}{6912G}\begin{pmatrix}72&24\\24&10\end{pmatrix},\qquad H^{(-)}=(h^{(-)}_{0,2},h^{\log}).$$
