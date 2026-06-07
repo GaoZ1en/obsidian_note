@@ -278,3 +278,156 @@ $$\begin{align}
 g^{(0)\mu \nu}h^{2\log}_{\mu \nu} & =0, & \nabla ^{(0)\mu}h^{2\log}_{\mu \nu} & =0
 \end{align}$$
 
+## TT gauge fixed action, symplectic form
+
+Now impose the TT gauge
+
+$$\begin{align}
+g^{(0)\mu\nu}h_{\mu\nu}&=0,&\nabla^{(0)\mu}h_{\mu\nu}&=0.
+\end{align}$$
+
+The pure-gravity contribution becomes
+
+$$\begin{align}
+\mathcal L_{\rm PG,TT}^{(0)}&=-4,\\
+\mathcal L_{\rm PG,TT}^{(1)}&=0,\\
+\mathcal L_{\rm PG,TT}^{(2)}&=2h_{\mu\nu}h^{\mu\nu}+h^{\mu\nu}\nabla^{(0)}_\rho\nabla^{(0)\rho}h_{\mu\nu}-\frac{1}{2}\nabla^{(0)}_\nu h_{\mu\rho}\nabla^{(0)\rho}h^{\mu\nu}+\frac{3}{4}\nabla^{(0)}_\rho h_{\mu\nu}\nabla^{(0)\rho}h^{\mu\nu}.
+\end{align}$$
+
+The NMG contribution becomes
+
+$$\begin{align}
+\mathcal L_{\rm NMG,TT}^{(0)}&=2,\\
+\mathcal L_{\rm NMG,TT}^{(1)}&=0,\\
+\mathcal L_{\rm NMG,TT}^{(2)}&=-2h_{\mu\nu}h^{\mu\nu}-\frac{3}{2}h^{\mu\nu}\nabla^{(0)}_\rho\nabla^{(0)\rho}h_{\mu\nu}+\frac{1}{4}\nabla^{(0)}_\nu h_{\mu\rho}\nabla^{(0)\rho}h^{\mu\nu}\\
+&\quad-\frac{3}{8}\nabla^{(0)}_\rho h_{\mu\nu}\nabla^{(0)\rho}h^{\mu\nu}-\frac{1}{4}\nabla^{(0)}_\rho\nabla^{(0)\rho}h^{\mu\nu}\nabla^{(0)}_\sigma\nabla^{(0)\sigma}h_{\mu\nu}.
+\end{align}$$
+
+the Chern-Simons contribution will be discussed later. by standard CPS procedure, we obtain the symplectic form as
+
+$$\begin{align}
+\omega_{\rm GMG} & =\omega_{\rm PG}+\frac{1}{\mu}\omega_{\rm CS}+\frac{1}{m^2}\omega_{\rm NMG} \\
+\omega & = \frac{1}{16\pi G} \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu} \omega ^{\mu}
+\end{align}$$
+
+For the pure-gravity piece, we have
+
+$$\begin{align}
+\omega ^{\mu}_{\mathrm{PG}} & =-\frac{1}{2}\delta h^{\nu \rho}\wedge \nabla ^{(0)\mu}\delta h_{\nu \rho}-\delta h^{\nu \rho}\wedge \nabla ^{(0)}_{\rho}\delta h^{\mu}_{~\nu} \\
+\omega_{\rm PG} & =-\frac{1}{32\pi G}\int_\Sigma\mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu\,\delta h^{\nu\rho}\wedge\nabla^{(0)\mu}\delta h_{\nu\rho}\\
+&\quad+\frac{1}{16\pi G}\int_{\partial\Sigma}\mathrm{d}x\sqrt{h^{(0)}}\,\tau_\mu n_\nu\,\delta h^\mu{}_\rho\wedge\delta h^{\nu\rho}.
+\end{align}$$
+
+
+For the NMG piece,
+
+$$\begin{align}
+\omega_{\rm NMG}^\mu&=\frac{9}{4}\delta h^{\nu\rho}\wedge\nabla^{(0)\mu}\delta h_{\nu\rho}+\frac{1}{2}\delta h^{\nu\rho}\wedge\nabla^{(0)\mu}\Box\delta h_{\nu\rho}\\
+&\quad+\frac{1}{2}\delta h^{\nu\rho}\wedge\nabla^{(0)}_\rho\delta h^\mu{}_\nu-\frac{1}{2}\nabla^{(0)\mu}\delta h^{\nu\rho}\wedge\Box\delta h_{\nu\rho}. \\
+\omega _{\mathrm{NMG}} & =\frac{1}{16\pi G}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\omega ^{\mu}_{\mathrm{NMG}}
+\end{align}$$
+
+For Chern-Simons piece, we adopt another route. Start from the non-perturbative gravitational Chern-Simons action
+
+$$S_{\text{CS}}=\frac{1}{32\pi G\mu}\int\operatorname{Tr}\left(\Gamma\wedge\mathrm{d}\Gamma+\frac{2}{3}\Gamma\wedge\Gamma\wedge\Gamma\right),$$
+
+Thus the symplectic symplectic current are
+
+$$\begin{align}
+\boldsymbol{\omega}_{\rm CS}&=\frac{1}{32\pi G\mu}\operatorname{Tr}\left(\delta\Gamma\wedge\delta\Gamma\right).
+\end{align}$$
+
+equivalently in the tensor form.
+
+$$\begin{align}
+\omega^\mu_{\rm CS} & =\frac{1}{2}\tilde\varepsilon^{\mu\nu\rho}\delta\Gamma^\alpha{}_{\nu\beta}\wedge\delta\Gamma^\beta{}_{\rho\alpha}. \\
+\omega _{\mathrm{CS}} & =\frac{1}{16\pi G}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\omega ^{\mu}_{\mathrm{CS}}
+\end{align}$$
+
+On the linearized phase space around $g^{(0)}_{\mu\nu}$, the quadratic symplectic current only needs
+
+$$\delta\Gamma^{(1)\rho}{}_{\mu\nu}=\frac{1}{2}g^{(0)\rho\sigma}\left(\nabla^{(0)}_\mu\delta h_{\sigma\nu}+\nabla^{(0)}_\nu\delta h_{\mu\sigma}-\nabla^{(0)}_\sigma\delta h_{\mu\nu}\right).$$
+
+Therefore the $\mu$-independent CS current in the decomposition above is
+
+$$\begin{align}
+\omega_{\rm CS}^{\mu} & =\frac{1}{2}\varepsilon^{(0)\mu\nu\rho}\delta\Gamma^{(1)\alpha}{}_{\nu\beta}\wedge\delta\Gamma^{(1)\beta}{}_{\rho\alpha} \\
+\omega_{\rm CS} & =\frac{1}{16\pi G}\int_\Sigma\mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu\omega_{\rm CS}^{\mu}.
+\end{align}$$
+
+## symplectic inner product
+
+now we will find the normalization constant for a general $\displaystyle{(h,\bar{h})}$ primary and its descendants, and its log-partners. the normalization condition is defined by the symplectic form
+
+$$\begin{align}
+\omega[h,h^{*}] & =-i
+\end{align}$$
+
+Let $\Delta=h+\bar h$. Direct evaluation of the three pieces of the GMG symplectic form gives the radial integrals
+
+$$\begin{align}
+I_{\rm PG}&=-i\frac{\Delta-1}{8(\Delta+1)},\\
+I_{\rm NMG}&=i\frac{(\Delta-1)(4\Delta^2-8\Delta+1)}{16(\Delta+1)},\\
+I_{\rm CS}^{(\sigma)}&=i\sigma\frac{\Delta^2-2\Delta+2}{16(\Delta+1)}.
+\end{align}$$
+
+Direct evaluation gives that
+
+$$\begin{align}
+\omega[h^{(\sigma)}_{h,\bar{h}},h^{(\sigma)*}_{h,\bar{h}}] & =\frac{i}{128G(\Delta+1)}F_{\sigma}(\Delta) \\
+F_{\sigma}(\Delta) & =-2(\Delta-1)+\frac{\sigma}{\mu}(\Delta ^{2}-2\Delta+2)+\frac{\Delta-1}{m^{2}}(4\Delta ^{2}-8\Delta+1)
+\end{align}$$
+
+this result matches the $\displaystyle{(2,0)}$ and $\displaystyle{(0,2)}$ normalization in the pure gravity limit.
+
+At a double root, let $\Delta_*$ be the degenerate weight of the branch $\eta$. The logarithmic partner is
+
+$$\begin{align}
+h^{(\sigma)}_{\log,\mu \nu} & =yh ^{(\sigma)}_{\Delta _{*},\mu \nu}=\partial _{\Delta}h^{(\sigma)}_{\Delta,\mu \nu}|_{\Delta=\Delta _{*}}
+\end{align}$$
+
+denote
+
+$$\begin{align}
+H^{(\sigma)} & =(h^{(\sigma)}_{\Delta _{*},\mu \nu},h^{(\sigma)}_{\log,\mu \nu})
+\end{align}$$
+
+direct evaluation gives that
+
+$$\begin{align}
+\omega[H_{i}^{(\sigma)},H_{j}^{(\sigma)*}] & =\frac{i}{256G(\Delta _{*}+1)^{2}}\begin{pmatrix}
+2(\Delta _{*}+1)F_{\sigma}(\Delta _{*}) & A_{\sigma}(\Delta _{*}) \\
+A_{\sigma}(\Delta _{*}) & \dfrac{B_{\sigma}(\Delta _{*})}{\Delta _{*}+1}
+\end{pmatrix} \\
+A_{\sigma}(\Delta) & =(\Delta+1)F'_{\sigma}(\Delta)-F_{\sigma}(\Delta) \\
+B_{\sigma}(\Delta) & =4+\frac{\sigma}{\mu}(\Delta ^{2}+2\Delta+6)+\frac{2}{m^{2}}(4\Delta ^{2}+8\Delta-9)
+\end{align}$$
+
+At the triple-root point recorded above, the parameters are given by
+
+$$m^2=-\frac{3}{2},\qquad \mu=\frac{3}{4},\qquad \Delta_*=2,$$
+
+denote
+
+$$\begin{align}
+H^{(-)} & =(h^{(-)}_{0,2},h^{(-)}_{\log},h^{(-)}_{2\log}), & h^{(-)}_{\log} & =y\psi ^{(-)}_{0,2}, & h^{(-)}_{2\log}=y^{2}h ^{(-)}_{0,2}
+\end{align}$$
+
+direct evaluation gives
+
+$$\begin{align}
+\omega[H^{(-)}_{i},H^{(-)*}_{j}] & =-\frac{i}{7776G}\begin{pmatrix}
+108 & 90 & 78 \\
+90 & 51 & -3 \\
+78 & -3 & 2
+\end{pmatrix}
+\end{align}$$
+
+## boundary algebra
+
+see https://arxiv.org/abs/0904.0403. the central charge is
+
+$$\begin{align}
+c_{L} & =\frac{3}{2G}\left( 1-\frac{1}{2m^{2}}-\frac{1}{\mu} \right) \\
+c_{R} & =\frac{3}{2G}\left( 1-\frac{1}{2m^{2}}+\frac{1}{\mu} \right)
+\end{align}$$
