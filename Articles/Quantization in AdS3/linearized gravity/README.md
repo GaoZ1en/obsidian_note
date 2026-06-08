@@ -42,3 +42,4 @@ Linearized-gravity notes for the AdS3 quantization project. The directory contai
 | `massive gravity/GMG.md` | Generalized massive gravity note organizing the linearized action and TT equations by pure-gravity, Chern-Simons, and NMG contributions. |
 | `massive gravity/TMG.md` | TMG mode-analysis note as the $m^2\to\infty$ limit of GMG. |
 | `massive gravity/NMG.md` | NMG mode-analysis note as the $\mu\to\infty$ limit of GMG. |
+| `massive gravity/a more general massive gravity.md` | Formal TT-sector classification of logarithmic phase spaces for factorized higher-derivative massive gravity. |
