@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Project Maintainer"
+  short_description: "Maintain active research project notes"
+  default_prompt: "Use $research-project-maintainer to update the project README, TODO, Drafts, or related notes for this research task."
