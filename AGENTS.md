@@ -1,5 +1,3 @@
-@./.RTK.md
-
 # AGENTS.md — Guidelines for AI Agents in This Repository
 
 This repository is a personal Obsidian vault for a theoretical physics graduate student. It contains Markdown notes, literature notes, lecture notes, article drafts, and research references. There is no software build system, test framework, or lint step.
@@ -21,6 +19,7 @@ These skills complement this file. They do not override the constraints below.
 
 | Task | Command | Notes |
 |---|---|---|
+| Inspect files | Built-in file read tools preferred; otherwise read-only shell commands are allowed | Use commands such as `rg`, `sed -n`, `cat`, `head`, `tail`, `nl`, `wc`, and `ls` only for inspection |
 | Edit notes | Built-in file read/modification tools preferred | Markdown and LaTeX only; show planned changes first |
 | Git inspection | `git status`, `git diff`, `git add`, `git commit` | Show the proposed commit message before executing |
 | No build step | — | Static Markdown vault only |
@@ -38,7 +37,7 @@ These skills complement this file. They do not override the constraints below.
 - Do not normalize, reorder, or rewrite existing frontmatter merely to match a template. Apply template fields incrementally only when fields are missing, malformed, clearly wrong, or explicitly requested.
 - Preserve the existing language of each note. Do not translate a note unless explicitly requested.
 - Conversation with the user should be in Chinese. File edits and commit messages should be in English unless the user explicitly requests a language change.
-- Do not run shell commands other than git operations. This restriction applies to shell commands, not to built-in file modification tools or non-shell Mathematica/xAct tool calls used for formula verification. If shell-based Mathematica execution is required, ask before running it unless the user has already explicitly authorized that command.
+- Do not use shell commands to edit files, run project code, install dependencies, access the network, or perform destructive operations unless explicitly requested. Prefer built-in file read/modification tools when they are available. If no dedicated file-read tool is available, read-only shell commands for inspecting files and directories are allowed, such as `rg`, `sed -n`, `cat`, `head`, `tail`, `nl`, `wc`, and `ls`. Git operations remain allowed for inspection, staging, and commits. This restriction applies to shell commands, not to built-in file modification tools or non-shell Mathematica/xAct tool calls used for formula verification. If shell-based Mathematica execution is required, ask before running it unless the user has already explicitly authorized that command.
 - Do not edit `.keep-the-rhythm/`, `.obsidian/`, or `Attachments/` unless explicitly requested.
 - Do not commit `.obsidian/` or `Attachments/`.
 
