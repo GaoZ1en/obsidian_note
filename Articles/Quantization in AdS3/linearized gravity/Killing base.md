@@ -79,6 +79,47 @@ a_{0,-1,n,\bar n}&=-2i\sqrt{\frac{(n+1)(n+2)(n+3)}{(n+4)(n+5)(n+6)}}\,b_{n+3,\ba
 a_{-1,-1,n,\bar n}&=\sqrt{\frac{(n+1)(n+2)(n+3)}{(n+5)(n+6)(n+7)}}\,b_{n+4,\bar n}.
 \end{align}$$
 
+For a single mode parameterized by $\displaystyle{b_{n,\bar n}}$, set all other $\displaystyle{b_{m,\bar m}}$ to zero. The unnormalized unbarred branch mode can be written as
+
+$$\begin{align}
+h^{(+)}_{\mu \nu,n,\bar{n}}&=b_{n,\bar n}h^{(+)}_{ab,n,\bar n}\xi_{a,\mu}\xi_{b,\nu}, \\
+h^{(+)}_{ab,n,\bar n}&=\begin{pmatrix}
+\phi_{n,\bar n} & 2i\sqrt{\frac{n}{n+3}}\phi_{n-1,\bar n} & -\sqrt{\frac{n(n-1)}{(n+2)(n+3)}}\phi_{n-2,\bar n} \\
+2i\sqrt{\frac{n}{n+3}}\phi_{n-1,\bar n} & -4\sqrt{\frac{n(n-1)}{(n+2)(n+3)}}\phi_{n-2,\bar n} & -2i\sqrt{\frac{n(n-1)(n-2)}{(n+1)(n+2)(n+3)}}\phi_{n-3,\bar n} \\
+-\sqrt{\frac{n(n-1)}{(n+2)(n+3)}}\phi_{n-2,\bar n} & -2i\sqrt{\frac{n(n-1)(n-2)}{(n+1)(n+2)(n+3)}}\phi_{n-3,\bar n} & \sqrt{\frac{(n-1)(n-2)(n-3)}{(n+1)(n+2)(n+3)}}\phi_{n-4,\bar n}
+\end{pmatrix}_{ab}, \quad a,b=(1,0,-1).
+\end{align}$$
+
+Entries containing $\displaystyle{\phi_{m,\bar n}}$ with $\displaystyle{m<0}$ are omitted. Using the symplectic form
+
+$$\begin{align}
+\omega & =-\frac{1}{32\pi G}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\delta h^{\nu \rho}\wedge \nabla ^{(0)\mu}\delta h_{\nu \rho} \\
+ & +\frac{1}{16\pi G}\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu}\delta h^{\mu}_{~\rho}\wedge \delta h^{\nu \rho}
+\end{align}$$
+
+and the normalized primary coefficient $\displaystyle{8\sqrt{6\pi G}}$ in the $\displaystyle{\phi_{0,0}}$ convention, the unnormalized modes satisfy
+
+$$\begin{align}
+\omega[h^{(+)}_{n,\bar n},(h^{(+)}_{m,\bar m})^{*}]&=-\frac{i}{384\pi G}\frac{(0)_{n}}{(4)_{n}}\delta_{nm}\delta_{\bar n\bar m}b_{n,\bar n}b^{*}_{m,\bar m} \\
+&=-\frac{i}{384\pi G}\delta_{n0}\delta_{m0}\delta_{\bar n\bar m}b_{0,\bar n}b^{*}_{0,\bar m}.
+\end{align}$$
+
+Thus only the $\displaystyle{n=0}$ tower has non-zero symplectic norm. For the basis mode $\displaystyle{b_{0,\bar n}=1}$, the condition
+
+$$\begin{align}
+\omega[h,h^{*}]&=-i
+\end{align}$$
+
+gives
+
+$$\begin{align}
+C_{0,\bar n}&=8\sqrt{6\pi G}, & \omega[C_{0,\bar n}h^{(+)}_{0,\bar n},(C_{0,\bar m}h^{(+)}_{0,\bar m})^{*}]&=-i\delta_{\bar n\bar m}.
+\end{align}$$
+
+The modes with $\displaystyle{n>0}$ are null with respect to $\displaystyle{\omega}$ and have no finite normalization to $\displaystyle{-i}$.
+
+---
+
 For the other first-order branch,
 
 $$\begin{align}
@@ -154,3 +195,28 @@ $$\begin{align}
 \tilde{a}_{-1,-1,n,\bar n}&=\sqrt{\frac{(\bar n+1)(\bar n+2)(\bar n+3)}{(\bar n+5)(\bar n+6)(\bar n+7)}}\,\tilde{b}_{n,\bar n+4}.
 \end{align}$$
 
+For a single mode parameterized by $\displaystyle{\tilde{b}_{n,\bar n}}$, set all other $\displaystyle{\tilde{b}_{m,\bar m}}$ to zero. The unnormalized barred branch mode can be written as
+
+$$\begin{align}
+h^{(-)}_{\mu \nu,n,\bar{n}}&=\tilde{b}_{n,\bar n}h^{(-)}_{ab,n,\bar n}\bar{\xi}_{a,\mu}\bar{\xi}_{b,\nu}, \\
+h^{(-)}_{ab,n,\bar n}&=\begin{pmatrix}
+\phi_{n,\bar n} & 2i\sqrt{\frac{\bar n}{\bar n+3}}\phi_{n,\bar n-1} & -\sqrt{\frac{\bar n(\bar n-1)}{(\bar n+2)(\bar n+3)}}\phi_{n,\bar n-2} \\
+2i\sqrt{\frac{\bar n}{\bar n+3}}\phi_{n,\bar n-1} & -4\sqrt{\frac{\bar n(\bar n-1)}{(\bar n+2)(\bar n+3)}}\phi_{n,\bar n-2} & -2i\sqrt{\frac{\bar n(\bar n-1)(\bar n-2)}{(\bar n+1)(\bar n+2)(\bar n+3)}}\phi_{n,\bar n-3} \\
+-\sqrt{\frac{\bar n(\bar n-1)}{(\bar n+2)(\bar n+3)}}\phi_{n,\bar n-2} & -2i\sqrt{\frac{\bar n(\bar n-1)(\bar n-2)}{(\bar n+1)(\bar n+2)(\bar n+3)}}\phi_{n,\bar n-3} & \sqrt{\frac{(\bar n-1)(\bar n-2)(\bar n-3)}{(\bar n+1)(\bar n+2)(\bar n+3)}}\phi_{n,\bar n-4}
+\end{pmatrix}_{ab}, \quad a,b=(1,0,-1).
+\end{align}$$
+
+Entries containing $\displaystyle{\phi_{n,m}}$ with $\displaystyle{m<0}$ are omitted. The symplectic pairing of the unnormalized barred modes is
+
+$$\begin{align}
+\omega[h^{(-)}_{n,\bar n},(h^{(-)}_{m,\bar m})^{*}]&=-\frac{i}{384\pi G}\frac{(0)_{\bar n}}{(4)_{\bar n}}\delta_{nm}\delta_{\bar n\bar m}\tilde{b}_{n,\bar n}\tilde{b}^{*}_{m,\bar m} \\
+&=-\frac{i}{384\pi G}\delta_{\bar n0}\delta_{\bar m0}\delta_{nm}\tilde{b}_{n,0}\tilde{b}^{*}_{m,0}.
+\end{align}$$
+
+Thus only the $\displaystyle{\bar n=0}$ tower has non-zero symplectic norm. For the basis mode $\displaystyle{\tilde{b}_{n,0}=1}$,
+
+$$\begin{align}
+\tilde{C}_{n,0}&=8\sqrt{6\pi G}, & \omega[\tilde{C}_{n,0}h^{(-)}_{n,0},(\tilde{C}_{m,0}h^{(-)}_{m,0})^{*}]&=-i\delta_{nm}.
+\end{align}$$
+
+The modes with $\displaystyle{\bar n>0}$ are null with respect to $\displaystyle{\omega}$ and have no finite normalization to $\displaystyle{-i}$.

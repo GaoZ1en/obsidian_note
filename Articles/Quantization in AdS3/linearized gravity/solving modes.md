@@ -260,7 +260,7 @@ and the first-order equation gives
 
 $$\begin{align}
 \tilde{E}_{11}&\equiv (4-2i\mathcal{L}_{\bar{\xi}_{0}})h_{11}-i\mathcal{L}_{\bar{\xi}_{-1}}h_{10}=0, \\
-\tilde{E}_{10}&\equiv (4-2i\mathcal{L}_{\bar{\xi}_{0}})h_{10}-i\mathcal{L}_{\bar{\xi}_{-1}}h_{00}+2i\mathcal{L}_{\bar{\xi}_{1}}h_{11}=0, \\
+\tilde{E}_{10}&\equiv (4-2i\mathcal{L}_{\bar{\xi}_{0}})h_{10}-i\mathcal{L}_{\bar{\xi}_{-1}}h_{00}=0, \\
 \tilde{E}_{1,-1}&\equiv (2-2i\mathcal{L}_{\bar{\xi}_{0}})h_{1,-1}-i\mathcal{L}_{\bar{\xi}_{-1}}h_{0,-1}+\frac{1}{2}h_{00}=0, \\
 \tilde{E}_{0,1}&\equiv 2i\mathcal{L}_{\bar{\xi}_{1}}h_{11}+4h_{10}-2i\mathcal{L}_{\bar{\xi}_{-1}}h_{1,-1}=0, \\
 \tilde{E}_{00}&\equiv 2i\mathcal{L}_{\bar{\xi}_{1}}h_{10}+4h_{1,-1}+3h_{00}-2i\mathcal{L}_{\bar{\xi}_{-1}}h_{0,-1}=0, \\
