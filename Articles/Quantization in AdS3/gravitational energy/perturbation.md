@@ -223,12 +223,8 @@ R^{(1)}_{\mu\nu}[X]
 and
 
 $$\begin{align}
-R^{(2)}_{\mu\nu}[h^{(1)},h^{(1)}]
-&=\nabla_\rho C[h^{(1)},h^{(1)}]^\rho{}_{\nu\mu}
--\nabla_\nu C[h^{(1)},h^{(1)}]^\rho{}_{\rho\mu}\\
-&\quad
-+C[h^{(1)}]^\rho{}_{\rho\lambda}C[h^{(1)}]^\lambda{}_{\nu\mu}
--C[h^{(1)}]^\rho{}_{\nu\lambda}C[h^{(1)}]^\lambda{}_{\rho\mu}.
+R^{(2)}_{\mu\nu}[h^{(1)},h^{(1)}]&=\nabla_\rho C[h^{(1)},h^{(1)}]^\rho{}_{\nu\mu}-\nabla_\nu C[h^{(1)},h^{(1)}]^\rho{}_{\rho\mu}\\
+&\quad+C[h^{(1)}]^\rho{}_{\rho\lambda}C[h^{(1)}]^\lambda{}_{\nu\mu}-C[h^{(1)}]^\rho{}_{\nu\lambda}C[h^{(1)}]^\lambda{}_{\rho\mu}.
 \end{align}$$
 
 The scalar curvature is
@@ -370,11 +366,7 @@ $$\begin{align}
 The quadratic source built from $h^{(1)}_{\mu\nu}$ is
 
 $$\begin{align}
-\mathcal{E}^{(2)}_{\mu\nu}[h^{(1)},h^{(1)}]
-&=R^{(2)}_{\mu\nu}[h^{(1)},h^{(1)}]
--\frac{1}{2}g^{(0)}_{\mu\nu}R^{(2)}[h^{(1)},h^{(1)}]\\
-&\quad
--\frac{1}{2}h^{(1)}_{\mu\nu}R^{(1)}[h^{(1)}].
+\mathcal{E}^{(2)}_{\mu\nu}[h^{(1)},h^{(1)}]&=R^{(2)}_{\mu\nu}[h^{(1)},h^{(1)}]-\frac{1}{2}g^{(0)}_{\mu\nu}R^{(2)}[h^{(1)},h^{(1)}]-\frac{1}{2}h^{(1)}_{\mu\nu}R^{(1)}[h^{(1)}].
 \end{align}$$
 
 If the bulk stress tensor is counted as $T_{\mu\nu}=O(\kappa^0)$, the perturbative equations are
