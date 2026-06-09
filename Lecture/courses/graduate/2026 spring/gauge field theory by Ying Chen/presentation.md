@@ -1,7 +1,7 @@
 ---
 title: Where Basic BRST Becomes Insufficient
 date: 2026-06-08
-summary: "Beamer-style notes on why the basic BRST construction is insufficient, followed by a concrete BV construction and two worked examples."
+summary: "Beamer-style notes on why the basic BRST construction is insufficient, followed by a concrete BV construction, two worked examples, and a short open string field theory application."
 ---
 
 ## 2-Form: Reducible Gauge Parameter
@@ -636,3 +636,65 @@ BV is a construction, not just a slogan:
 5. Add antifield-quadratic terms for open algebra.
 6. Solve $(S,S)=0$.
 7. Choose $\Psi$ and integrate over the gauge-fixed fields.
+
+---
+
+## Application: Cubic Open String Field Theory
+
+Witten's cubic open string field theory has the schematic action
+$$
+S_{\mathrm{OSFT}}
+=\frac12\langle \Psi,Q_B\Psi\rangle
++\frac{g_o}{3}\langle \Psi,\Psi*\Psi\rangle .
+$$
+
+Here:
+
+- $\Psi$ is the open string field;
+- $Q_B$ is the worldsheet BRST operator;
+- $*$ is the open-string star product;
+- $\langle-,-\rangle$ is the BPZ pairing.
+
+The classical gauge transformation is
+$$
+\delta\Psi
+=Q_B\Lambda
++g_o(\Psi*\Lambda-\Lambda*\Psi).
+$$
+
+---
+
+## Open String Field Theory as a BV Theory
+
+In the usual classical action, $\Psi$ has ghost number $1$.
+
+In the BV formulation, $\Psi$ is allowed to contain components of all ghost numbers. Since the BPZ pairing is nonzero when the total ghost number is $3$, components of ghost number $g$ are paired with components of ghost number $3-g$ and become field-antifield pairs.
+
+The same cubic functional becomes a BV master action. The master equation follows from the cyclicity of the BPZ pairing and the algebraic identities
+$$
+Q_B^2=0,
+\qquad
+Q_B(A*B)=(Q_BA)*B+(-1)^{|A|}A*(Q_BB),
+\qquad
+(A*B)*C=A*(B*C).
+$$
+
+Thus the consistency of the string interaction vertex is encoded as
+$$
+(S_{\mathrm{OSFT}},S_{\mathrm{OSFT}})=0 .
+$$
+
+---
+
+## Closing Point
+
+BV is useful because it turns gauge consistency into one equation.
+
+- For reducible theories, it adds the ghost-for-ghost complex.
+- For open algebras, it adds antifield-dependent correction terms.
+- For open string field theory, it packages the consistency of the cubic string vertex and its gauge fixing.
+
+The same master equation controls all three examples:
+$$
+(S,S)=0 .
+$$
