@@ -17,6 +17,13 @@
 /**/*.aux
 /**/*.log
 /**/*.pdf
+/**/*.fdb_latexmk
+/**/*.fls
+/**/*.nav
+/**/*.out
+/**/*.snm
+/**/*.synctex.gz
+/**/*.toc
 
 # Ignore MacOS files
 /**/.DS_Store
