@@ -131,7 +131,7 @@ R^{(1)}[X] & =\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}X^{\mu \nu}-\nabla ^{(0)2}X+
 and
 
 $$\begin{align}
-S_{\xi}^{\mu \nu} & =s_{2}\nabla ^{(0)[\mu}\xi ^{\nu]}+\dfrac{1}{2}hD_{1,\xi}^{[\mu \nu]}+D_{2,\xi}^{\mu \nu} \\
+S_{\xi}^{\mu \nu} & =s_{2}\nabla ^{(0)[\mu}\xi ^{\nu]}+\dfrac{1}{2}hD_{1,\xi}^{[\mu \nu]}+D_{2,\xi}^{[\mu \nu]} \\
 s_{2} & =-\dfrac{1}{4}h_{\rho \sigma}h^{\rho \sigma}+\dfrac{1}{8}h^{2} \\
 D_{1,\xi}^{\mu \nu} & =-h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}+\Gamma ^{(1)}[h]^{\nu \mu}_{~~~\rho}\xi ^{\rho} \\
 D_{2,\xi}^{\mu \nu} & =h^{\mu}_{~\lambda}h^{\lambda \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}-h^{\mu \rho}\Gamma ^{(1)}[h]^{\nu}_{~\rho \sigma}\xi ^{\sigma}+\Gamma ^{(2)}[h,h]^{\nu \mu}_{~~~\rho}\xi ^{\rho}
