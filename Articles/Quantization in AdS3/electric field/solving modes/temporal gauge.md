@@ -140,11 +140,7 @@ $$\begin{align}
 \Psi_{nm}=C_{nm} e^{-i\omega_{nm}t}e^{im\phi}r^{|m|}(1+r^2)^{-(|m|+2)/2}P_{n}^{(1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right), \\
 \omega_{nm}=2n+2+|m|, \quad n\in \mathbb{N}, m\in \mathbb{Z}
 \end{align}$$
-
-$$\begin{align}
-\mathcal{L}_{\xi_{0}}A^{\nu} & =\xi _{0}^{\mu}\nabla _{\mu}A^{\nu}-A^{\mu}\nabla _{\mu}\xi ^{\nu}
-\end{align}$$
-
+–––
 the symplectic form is given by
 
 $$\begin{align}
@@ -162,6 +158,13 @@ thus the normalization constant is given by
 
 $$\begin{align}
 C_{nm} & =\sqrt{ \frac{(n+|m|+1)}{2\pi \omega _{nm}^{2}(n+1)} }
+\end{align}$$
+
+the asymptotic behavior of these solutions are
+
+$$\begin{align}
+A^{t} & =\mathcal{O}(r^{-2}), & A^{r} & =\mathcal{O}(r^{-1}), & A^{\phi} & =\mathcal{O}(r^{-2}) \\
+A_{t} & =\mathcal{O}(r^{0}), & A_{r} & =\mathcal{O}(r^{-3}), & A_{\phi} & =\mathcal{O}(r^{0})
 \end{align}$$
 
 ## zero energy modes

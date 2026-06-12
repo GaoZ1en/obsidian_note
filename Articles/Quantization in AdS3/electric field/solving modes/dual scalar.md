@@ -32,7 +32,7 @@ C\ket{\psi}  & =h(h-1)\ket{\psi} =0 \\
 
 which gives $\displaystyle{(h,\bar{h})=(0,0),(0,1),(1,0),(1,1)}$. scalar modes should be spinless, so we neglect the $\displaystyle{(0,1)}$ and $\displaystyle{(1,0)}$ branches. 
 
-1. $\displaystyle{(h,\bar{h})=(0,0)}$, trivial vacuum.
+1. $\displaystyle{(h,\bar{h})=(0,0)}$, $\displaystyle{C_{1}+C_{2}\log \dfrac{r}{\sqrt{ 1+r^{2} }}}$.
 2. $\displaystyle{(h,\bar{h})=(1,1)}$, $\displaystyle{\phi _{0,0}= \frac{1}{\sqrt{ 2\pi }} \frac{e^{-2it}}{1+r^{2}}}$ and its descendants $\displaystyle{\phi _{n,\bar{n}}=\frac{\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\phi _{0,0}}{\sqrt{ n!(n+1)!\bar{n}!(\bar{n}+1)! }}}$.
 
 the duality relation $\displaystyle{\frac{1}{2}\varepsilon _{\mu \nu \rho}F^{\nu \rho} =\nabla _{\mu}\phi}$ maps these scalar modes to the Maxwell modes discussed in [[Articles/Quantization in AdS3/electric field/solving modes/highest weight|highest weight]]. since the relation is covariant under the $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ isometries, it is enough to identify the primary and then generate the descendants by the same lowering operations, modulo gauge transformations. for the primary, one convenient gauge representative is

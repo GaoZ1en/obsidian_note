@@ -1,4 +1,4 @@
-# temporal gauge
+ temporal gauge
 
 we have derived the normal modes in [[Articles/Quantization in AdS3/electric field/solving modes/temporal gauge|temporal gauge]] as
 
