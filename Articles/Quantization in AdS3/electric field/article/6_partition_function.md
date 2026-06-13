@@ -28,7 +28,7 @@ $$\begin{align}
 j_{nm} & =m.
 \end{align}$$
 
-In Section 4 we found that the normal-ordered Hamiltonian and angular momentum of the propagating sector are
+Indeed, Section 4 gives $H_{\partial_{\phi}}=-\sum m\,\hat{a}_{nm}^{\dagger}\hat{a}_{nm}$ from the Noether formula, so the physical angular momentum is defined as $J=-H_{\partial_{\phi}}$. Therefore the mode with factor $e^{im\phi}$ has physical angular-momentum eigenvalue $j_{nm}=m$, and the normal-ordered Hamiltonian and angular momentum operators of the propagating sector are
 
 $$\begin{align}
 H & =\sum _{n=0}^{\infty}\sum _{m\in \mathbb{Z}}\omega _{nm}\hat{a}^{\dagger}_{nm}\hat{a}_{nm}, \\
@@ -69,13 +69,13 @@ q & =e^{-\beta-i\alpha}, & \bar{q} & =e^{-\beta+i\alpha}.
 by introducing
 
 $$\begin{align}
-k & =n+\max(-m,0),  & \bar{k}=n+\max(m,0)
+k & =n+\max(m,0),  & \bar{k}=n+\max(-m,0)
 \end{align}$$
 
 the partition function takes the compact form
 
 $$\begin{align}
-Z[\beta,\alpha] & =\prod _{h=1}^{\infty}\prod _{\bar{h}=1}^{\infty}\frac{1}{1-q^{h}\bar{q}^{\bar{h}}}.
+Z[\beta,\alpha] & =\prod _{k=1}^{\infty}\prod _{\bar{k}=1}^{\infty}\frac{1}{1-q^{k}\bar{q}^{\bar{k}}}.
 \end{align}$$
 
 This is the canonical thermal partition function of the propagating Maxwell oscillators.

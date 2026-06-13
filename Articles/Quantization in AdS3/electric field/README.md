@@ -15,6 +15,7 @@ Quantization of Maxwell electric-field modes in global AdS3.
 | `article/appendix_a_falloffs_and_variational_principle.md` | Falloff estimates, off-shell variation checks, and variational principle |
 | `article/appendix_b_gauge_fixing_and_zero_modes.md` | Temporal gauge reachability, residual gauge fixing, and static pure-gauge modes |
 | `article/appendix_c_large_gauge_transformations.md` | Vanishing gauge charge and null symplectic directions for large gauge transformations |
+| `article/appendix_d_symplectic_normalization.md` | Explicit symplectic normalization of the temporal-gauge propagating modes |
 | `article/texfiles/` | LaTeX source organized with `main.tex`, shared preamble files, and section data files |
 
 ## Source notes

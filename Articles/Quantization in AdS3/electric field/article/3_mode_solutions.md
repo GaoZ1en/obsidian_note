@@ -54,7 +54,7 @@ n&\in\mathbb{N}, &
 m&\in\mathbb{Z},
 \end{align}$$
 
-where $\mathbb{N}=\{0,1,2,\ldots\}$. A convenient choice, anticipating the symplectic normalization established in Section 4.2, is
+where $\mathbb{N}=\{0,1,2,\ldots\}$. A convenient choice, anticipating the symplectic normalization stated in Section 4.2 and evaluated explicitly in Appendix D, is
 
 $$\begin{align}
 \Psi_{nm}&=\sqrt{\frac{n+|m|+1}{2\pi\omega_{nm}^{2}(n+1)}}e^{-i\omega_{nm}t}e^{im\phi}r^{|m|}(1+r^{2})^{-(|m|+2)/2}P_{n}^{(1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right).
@@ -154,7 +154,7 @@ $$\begin{align}
 
 The $(1,0)$ and $(0,1)$ branches have non-zero spin $h-\bar{h}=\pm1$, so they do not belong to the scalar sector. The $(0,0)$ branch contains the constant mode and the logarithmic radial solution $C_{1}+C_{2}\log\frac{r}{\sqrt{1+r^{2}}}$, and we do not include it in the normalizable propagating basis. We therefore keep only the $(1,1)$ branch.
 
-A convenient primary, written in the normalization that will be justified in Section 4.2, is
+A convenient primary, written in the normalization that will be justified in Section 4.2 and Appendix D, is
 
 $$\begin{align}
 \phi_{0,0}&=\frac{1}{\sqrt{2\pi}}\frac{e^{-2it}}{1+r^{2}}.
@@ -242,4 +242,4 @@ $$\begin{align}
 \phi_{nm}&\propto\omega_{nm}\Psi_{nm}.
 \end{align}$$
 
-The proportionality factor is a pure phase and does not change the field-strength basis or the symplectic normalization fixed in Section 4.2. Therefore the two constructions describe the same propagating Maxwell sector. The temporal-gauge basis keeps an explicit potential representative, while the dual-scalar basis keeps the gauge-invariant field strength manifest.
+The proportionality factor is a pure phase and does not change the field-strength basis or the symplectic normalization fixed in Section 4.2 and evaluated explicitly in Appendix D. Therefore the two constructions describe the same propagating Maxwell sector. The temporal-gauge basis keeps an explicit potential representative, while the dual-scalar basis keeps the gauge-invariant field strength manifest.
