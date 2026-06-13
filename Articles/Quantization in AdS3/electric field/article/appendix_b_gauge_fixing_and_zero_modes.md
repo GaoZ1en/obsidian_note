@@ -1,45 +1,45 @@
 ---
 title: "appendix_b_gauge_fixing_and_zero_modes"
 date: 2026-06-10
-summary: "Records temporal gauge reachability, residual gauge fixing, and the static pure-gauge sector."
+summary: "Records temporal gauge reachability, residual gauge fixing, reduction to the stream-function equation, and the static pure-gauge sector."
 ---
 
 # Appendix B: Gauge fixing and zero modes
 
-This appendix records the gauge-fixing details used in the temporal-gauge mode construction.
+This appendix records the gauge-fixing details used in Section 3. We first explain how temporal gauge is reached, then fix the residual spatial gauge freedom, then reduce the equations to the stream-function equation, and finally isolate the static configurations that do not belong to the propagating oscillator sector.
 
 ## B.1 Reaching temporal gauge
 
-For a general off-shell configuration $A_{\mu}$, temporal gauge can be reached locally by choosing
+For a general off-shell configuration $A_{\mu}$, temporal gauge can be reached locally by choosing the gauge parameter
 
 $$\begin{align}
 \Lambda(t,r,\phi)&=-\int^{t}\mathrm{d}t'\,A_{t}(t',r,\phi).
 \end{align}$$
 
-Then $A'_{t}=A_{t}+\partial_{t}\Lambda=0$. The temporal-gauge construction keeps the spatial falloffs
+This gives $A'_{t}=A_{t}+\partial_{t}\Lambda=0$. The spatial components transform as
 
 $$\begin{align}
 A'_{r}&=A_{r}-\int^{t}\mathrm{d}t'\,\partial_{r}A_{t}=o(r^{-1}), \\
 A'_{\phi}&=A_{\phi}-\int^{t}\mathrm{d}t'\,\partial_{\phi}A_{t}=O(r^{0}).
 \end{align}$$
 
-The explicit normalizable modes selected after residual gauge fixing obey the stronger behavior $A_{r}=O(r^{-3})$.
+Thus the temporal-gauge construction preserves the spatial falloff class introduced in Section 1. The explicit normalizable representatives selected after residual gauge fixing obey the stronger radial decay $A_{r}=O(r^{-3})$.
 
 ## B.2 Residual gauge fixing
 
-After imposing $A_{t}=0$, the residual gauge parameter is time independent. The remaining gauge condition used in the main text is
+After imposing $A_{t}=0$, the residual gauge parameter becomes time independent. The remaining condition used in the main text is
 
 $$\begin{align}
 \mathcal{C}[A]&=\partial_{r}A^{r}+\frac{1-r^{2}}{r(1+r^{2})}A^{r}+\partial_{\phi}A^{\phi}=0.
 \end{align}$$
 
-Equivalently,
+It is convenient to rewrite this condition as
 
 $$\begin{align}
 \partial_{r}\left(\frac{r}{1+r^{2}}A^{r}\right)+\partial_{\phi}\left(\frac{r}{1+r^{2}}A^{\phi}\right)&=0.
 \end{align}$$
 
-This local condition is solved by the stream function
+In this form, the constraint is solved locally by introducing a stream function $\Psi$ such that
 
 $$\begin{align}
 A^{r}&=\frac{1+r^{2}}{r}\partial_{\phi}\Psi, &
@@ -52,11 +52,11 @@ $$\begin{align}
 \left[(1+r^{2})\partial_{r}^{2}+\frac{1+r^{2}}{r}\partial_{r}+\frac{1}{r^{2}}\partial_{\phi}^{2}\right]\Lambda(r,\phi)&=-\mathcal{C}[A].
 \end{align}$$
 
-This fixes the proper residual gauge freedom, up to zero modes that are treated separately.
+This removes the proper residual gauge freedom, up to zero modes that must be treated separately.
 
 ## B.3 Reduction of the equations of motion
 
-With
+Once the temporal-gauge potential is parameterized by $\Psi$,
 
 $$\begin{align}
 A^{t}&=0, &
@@ -64,7 +64,7 @@ A^{r}&=\frac{1+r^{2}}{r}\partial_{\phi}\Psi, &
 A^{\phi}&=-\frac{1+r^{2}}{r}\partial_{r}\Psi,
 \end{align}$$
 
-the temporal-gauge equations reduce to
+the temporal-gauge Maxwell equations reduce to
 
 $$\begin{align}
 \frac{1+r^{2}}{r}\partial_{\phi}(\mathcal{D}_{0}\Psi)&=0, \\
@@ -77,17 +77,17 @@ $$\begin{align}
 \mathcal{D}_{0}\Psi&=(1+r^{2})\partial_{r}^{2}\Psi+\frac{1+3r^{2}}{r}\partial_{r}\Psi-\frac{1}{1+r^{2}}\partial_{t}^{2}\Psi+\frac{1}{r^{2}}\partial_{\phi}^{2}\Psi.
 \end{align}$$
 
-The second equation allows $\mathcal{D}_{0}\Psi=C(t)/(1+r^{2})$. The redundancy $\Psi\mapsto\Psi+q(t)$ removes this term, so the propagating sector is represented by $\mathcal{D}_{0}\Psi=0$.
+The second equation implies that $\mathcal{D}_{0}\Psi$ can differ from zero only by a term of the form $C(t)/(1+r^{2})$. This contribution is removable by the redundancy $\Psi\mapsto\Psi+q(t)$, so the propagating sector may be represented by the reduced equation $\mathcal{D}_{0}\Psi=0$ used in Section 3.
 
-## B.4 Static modes
+## B.4 Static zero modes
 
-For zero-energy modes, write
+The remaining zero-energy configurations are analyzed separately. For static modes, write
 
 $$\begin{align}
 A^{\mu}(r,\phi)&=e^{im\phi}f^{\mu}(r).
 \end{align}$$
 
-For $m=0$, the static equations allow
+For the axisymmetric sector $m=0$, the static equations allow
 
 $$\begin{align}
 f^{r}&=h_{0}(r), &
@@ -100,24 +100,24 @@ $$\begin{align}
 \Lambda_{0}(r)&=\int^{r}\frac{h_{0}(\rho)}{1+\rho^{2}}\,\mathrm{d}\rho.
 \end{align}$$
 
-For $m\neq0$, the general static solution can be written as
+For nonzero angular momentum, the general static solution can be written as
 
 $$\begin{align}
 f^{\phi}&=g_{m}(r), \\
 f^{r}&=-\frac{ir^{2}(1+r^{2})}{m}\left(g_{m}'(r)+\frac{2}{r}g_{m}(r)\right).
 \end{align}$$
 
-Equivalently, with
+It is convenient to rewrite this solution in terms of
 
 $$\begin{align}
 \lambda_{m}(r)&=\frac{r^{2}}{im}g_{m}(r),
 \end{align}$$
 
-one has
+for which
 
 $$\begin{align}
 f^{r}&=(1+r^{2})\lambda_{m}'(r), &
 f^{\phi}&=\frac{im}{r^{2}}\lambda_{m}(r).
 \end{align}$$
 
-Thus the $m\neq0$ static sector is locally generated by the residual gauge transformation $\Lambda=e^{im\phi}\lambda_{m}(r)$. These static modes are not part of the positive-frequency oscillator basis used in the main text.
+Thus the $m\neq0$ static sector is also locally generated by a residual gauge transformation, now with parameter $\Lambda=e^{im\phi}\lambda_{m}(r)$. Therefore all static zero modes in this appendix are residual gauge configurations. They do not contribute additional propagating degrees of freedom and are excluded from the positive-frequency oscillator basis used in the main text.
