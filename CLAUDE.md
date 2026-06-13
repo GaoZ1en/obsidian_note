@@ -16,6 +16,7 @@ When a request matches one of the reusable workflows below, prefer the correspon
 - `obsidian-note-maintainer` — maintain non-literature notes by fixing frontmatter, summaries, formatting, headings, lists, links, and math delimiters
 - `obsidian-directory-readme` — survey a note directory and draft a `README.md`
 - `notes-git-commit` — inspect note changes, draft a repository-style commit message, and commit after confirmation
+- `research-project-maintainer` — maintain active research project workspaces: summarize project state, update project README/TODO/Drafts files, turn conversations or advisor requests into concrete next actions, coordinate manuscript and topic notes, preserve local AGENTS rules, and trigger Mathematica/xAct verification before formula or derivation edits
 
 These skills complement this file. They do not override the constraints below.
 
@@ -35,6 +36,7 @@ Use the Obsidian MCP server as the preferred access layer for this vault when it
 
 | Task | Command | Notes |
 |---|---|---|
+| Inspect files | Built-in file read tools preferred; otherwise read-only shell commands are allowed | Use commands such as `rg`, `sed -n`, `cat`, `head`, `tail`, `nl`, `wc`, and `ls` only for inspection |
 | Edit notes | Obsidian MCP preferred; direct Markdown edits if MCP is unavailable | Markdown and LaTeX only; show planned changes first |
 | Git inspection | `git status`, `git diff`, `git add`, `git commit` | Show the proposed commit message before executing |
 | No build step | — | Static Markdown vault only |
@@ -49,9 +51,10 @@ Use the Obsidian MCP server as the preferred access layer for this vault when it
 - Show the proposed commit message before running `git commit`.
 - Do not add tags or new wiki-links unless explicitly requested.
 - Empty `tags: []` in literature-note frontmatter is allowed, but do not populate tags unless explicitly requested.
+- Do not normalize, reorder, or rewrite existing frontmatter merely to match a template. Apply template fields incrementally only when fields are missing, malformed, clearly wrong, or explicitly requested.
 - Preserve the existing language of each note. Do not translate a note unless explicitly requested.
 - Conversation with the user should be in Chinese. File edits and commit messages should be in English unless the user explicitly requests a language change.
-- Do not run shell commands other than git operations.
+- Do not use shell commands to edit files, run project code, install dependencies, access the network, or perform destructive operations unless explicitly requested. Prefer built-in file read/modification tools when they are available. If no dedicated file-read tool is available, read-only shell commands for inspecting files and directories are allowed, such as `rg`, `sed -n`, `cat`, `head`, `tail`, `nl`, `wc`, and `ls`. Git operations remain allowed for inspection, staging, and commits. This restriction applies to shell commands, not to built-in file modification tools or non-shell Mathematica/xAct tool calls used for formula verification. If shell-based Mathematica execution is required, ask before running it unless the user has already explicitly authorized that command.
 - Do not edit `.keep-the-rhythm/`, `.obsidian/`, or `Attachments/` unless explicitly requested.
 - Do not commit `.obsidian/` or `Attachments/`.
 
@@ -158,6 +161,22 @@ Commit types:
 - `thesis`
 - `refactor`
 - `cleanup`
+
+## Formula and Derivation Verification
+
+- Before modifying any mathematical formula, symbolic derivation, physics calculation, or equation-heavy note, verify every changed formula with Mathematica whenever it is computationally checkable.
+- Use xAct or Mathematica+xAct for tensor, covariant-derivative, variational, and differential-geometry identities where component-free tensor verification is the appropriate check.
+- Prefer available non-shell Mathematica/xAct tools for verification. Use shell-based Mathematica commands only with explicit user authorization.
+- For formula edits, report verification status in the conversation with compact `Verified:`, `Assumptions:`, and `Not verified:` entries.
+- For each formula edit, distinguish what was verified by Mathematica or xAct, what depends on stated assumptions or conventions, and what remains unverified because it is not directly machine-checkable.
+- Do not present an equation edit as correct merely from inspection. If machine verification is impossible or incomplete, state the exact missing evidence and the assumptions under which the formula is being kept.
+- When applying local formula-layout rules, distinguish short and long displays explicitly: keep short formulas and short component lists on one source line, but in genuinely multiline `align` blocks make every source line an actual LaTeX row by ending each non-final displayed row with `\\`. Do not insert source-only line breaks inside one displayed row. For long additive formulas, count only additive monomial terms on the right-hand side of the equality: keep at most six right-hand side terms on one displayed row; if there are more than six, split those right-hand side terms as evenly as possible across multiple `\\` rows. Do not count or constrain the left-hand side for this limit.
+
+## Exposition Style
+
+- When drafting or patching note content, write the final positive exposition directly. Do not include defensive or meta-level discussion such as "unlike the naive approach", "the previous method was wrong", "this resolves the tension", "this is not saying", or similar commentary about failed attempts unless the user explicitly asks for a comparison, diagnosis, or debug explanation.
+- When adapting an argument from a paper or another note to a parallel model, present the parallel construction on its own terms. Mention the reference source when useful, then state the definitions, assumptions, sector decomposition, boundary conditions, and conclusion directly.
+- Keep conversation-level reasoning, discarded approaches, and repair history out of the note body. The note should read as a self-contained exposition, not as a record of how the answer was found.
 
 ## Naming Conventions
 
