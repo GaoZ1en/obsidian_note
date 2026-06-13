@@ -109,9 +109,15 @@ $$\begin{align}
 \oint _{S^{1}}A_{\text{hol}} & =2\pi q_{\phi}=-\frac{2\pi q}{k},
 \end{align}$$
 
-and it obeys the $k>0$ boundary condition $A^{-}|_{\Gamma}=0$ in the same convention as the first branch of the pure $U(1)$ theory.
+and it asymptotically obeys the $k>0$ boundary condition $A^{-}|_{\Gamma}=0$ in the same convention as the first branch of the pure $U(1)$ theory. Indeed,
 
-The oscillator modes inherited from the pure $U(1)$ formalism are regular homogeneous modes. They describe residual boundary gauge transformations, while the delta-function source is carried by the holonomy representative; $A_{\text{def}}$ is its local spatial part. The representative $\lambda_{\text{reg}}$ obeys the source-free scalar equation
+$$\begin{align}
+A^{t}_{\text{hol}} & =\frac{q_{\phi}}{1+r^{2}}, &
+A^{\phi}_{\text{hol}} & =\frac{q_{\phi}}{r^{2}}, &
+A^{-}_{\text{hol}} & =A^{t}_{\text{hol}}-A^{\phi}_{\text{hol}}=-\frac{q_{\phi}}{r^{2}(1+r^{2})}=O(r^{-4}).
+\end{align}$$
+
+The oscillator modes inherited from the pure $U(1)$ formalism are regular homogeneous modes. They describe residual boundary gauge transformations, while the delta-function source is carried by the holonomy representative; $A_{\text{def}}$ is its local spatial part. To match the normalizable residual boundary modes of the pure $U(1)$ theory, choose a harmonic representative $\lambda_{\text{reg}}$ obeying
 
 $$\begin{align}
 \Box \lambda_{\text{reg}} & =0.
@@ -320,4 +326,3 @@ q & \sim q-kn.
 Thus the quantum defect labels are charges modulo $k$ in $U(1)_{k}$ Chern-Simons theory.
 
 The non-Abelian generalization follows the same pattern: a defect is specified by a representation or coadjoint orbit, and the field equation fixes the conjugacy class of the holonomy around the defect. For $\mathrm{AdS}_{3}$ gravity in Chern-Simons form, the group is replaced by $\mathrm{SL}(2,\mathbb{R})_{L}\times \mathrm{SL}(2,\mathbb{R})_{R}$, and the analog of the $U(1)$ charge $q$ is the pair of representation labels $(h,\bar{h})$, or equivalently the mass and spin of the defect.
-

@@ -1,5 +1,5 @@
 ---
-title: "radial gauge (wrong)"
+title: finite system
 date: 2026-04-15
 summary: ""
 ---
