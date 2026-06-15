@@ -41,6 +41,14 @@ These skills complement this file. They do not override the constraints below.
 - Do not edit `.keep-the-rhythm/`, `.obsidian/`, or `Attachments/` unless explicitly requested.
 - Do not commit `.obsidian/` or `Attachments/`.
 
+## Concurrent User Changes
+
+- If files differ from what the agent saw earlier, always assume the changes were made intentionally by the user or another authorized agent.
+- Treat the current file contents on disk as the source of truth. Do not restore, revert, overwrite, or "fix back" those changes unless the user explicitly asks.
+- When editing a file that has changed unexpectedly, re-read the relevant section and make the smallest possible edit on top of the current content.
+- Mention unexpected concurrent changes only when they affect the requested task, verification, or edit location. Do not treat them as errors merely because they differ from the agent's previous view.
+- If a concurrent change directly conflicts with the requested edit and the intended result is ambiguous, stop and ask for clarification before modifying that part.
+
 ## Formula and Derivation Verification
 
 - Before modifying any mathematical formula, symbolic derivation, physics calculation, or equation-heavy note, verify every changed formula with Mathematica whenever it is computationally checkable.
