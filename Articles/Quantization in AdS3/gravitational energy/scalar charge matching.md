@@ -110,9 +110,19 @@ where
 $$\begin{align}
 H_{\xi,h} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\mathcal{H}_{\xi,h}^{\mu} \\
 \mathcal{H}_{\xi,h}^{\mu} & =-\dfrac{1}{2}\left(h^{\mu \nu}\nabla ^{(0)}_{\nu}\mathcal{L}_{\xi}h-\dfrac{1}{2}h\nabla ^{(0)\mu}\mathcal{L}_{\xi}h+h^{\nu \rho}\nabla ^{(0)\mu}\mathcal{L}_{\xi}h_{\nu \rho}-h^{\nu \rho}\nabla ^{(0)}_{\rho}\mathcal{L}_{\xi}h^{\mu}_{~\nu}-h^{\mu \nu}\nabla ^{(0)}_{\rho}\mathcal{L}_{\xi}h_{\nu}^{~\rho}\right. \\
- & \left.+\dfrac{1}{2}h\nabla ^{(0)}_{\nu}\mathcal{L}_{\xi}h^{\mu \nu}+\dfrac{1}{2}\nabla ^{(0)\mu}h_{\nu \rho}\mathcal{L}_{\xi}h^{\nu \rho}+\dfrac{1}{2}\nabla ^{(0)}_{\nu}h\mathcal{L}_{\xi}h^{\mu \nu}-\nabla ^{(0)}_{\rho}h^{\nu \rho}\mathcal{L}_{\xi}h^{\mu}_{~\nu}+\dfrac{1}{2}\xi ^{\mu}\mathcal{L}^{(2)}_{g}[h]\right) \\
+ & \left.+\dfrac{1}{2}h\nabla ^{(0)}_{\nu}\mathcal{L}_{\xi}h^{\mu \nu}+\dfrac{1}{2}\nabla ^{(0)\mu}h_{\nu \rho}\mathcal{L}_{\xi}h^{\nu \rho}+\dfrac{1}{2}\nabla ^{(0)}_{\nu}h\mathcal{L}_{\xi}h^{\mu \nu}-\nabla ^{(0)}_{\rho}h^{\nu \rho}\mathcal{L}_{\xi}h^{\mu}_{~\nu}\right)+\dfrac{1}{2}\xi ^{\mu}\mathcal{L}^{(2)}_{g}[h] \\
  &=\xi_{\nu}T_{(h)}^{\mu\nu}+\nabla^{(0)}_{\nu}S_{\xi}^{\mu\nu}+\mathcal{R}_{\xi,h}^{\mu}
 \end{align}$$
+
+
+$$\begin{align}
+\mathcal{H}^{\mu}_{\xi,h}
+&=-\dfrac{1}{2}\mathcal{A}^{\mu}_{\xi,h}+\dfrac{1}{2}\xi^{\mu}\mathcal{L}^{(2)}_{g}[h],\\
+\mathcal{A}^{\mu}_{\xi,h}
+&=h^{\mu\nu}\nabla^{(0)}_{\nu}\mathcal{L}_{\xi}h-\dfrac{1}{2}h\nabla^{(0)\mu}\mathcal{L}_{\xi}h+h^{\nu\rho}\nabla^{(0)\mu}\mathcal{L}_{\xi}h_{\nu\rho}-h^{\nu\rho}\nabla^{(0)}_{\rho}\mathcal{L}_{\xi}h^{\mu}{}_{\nu}-h^{\mu\nu}\nabla^{(0)}_{\rho}\mathcal{L}_{\xi}h_{\nu}{}^{\rho} \\
+&\quad+\dfrac{1}{2}h\nabla^{(0)}_{\nu}\mathcal{L}_{\xi}h^{\mu\nu}+\dfrac{1}{2}\nabla^{(0)\mu}h_{\nu\rho}\mathcal{L}_{\xi}h^{\nu\rho}+\dfrac{1}{2}\nabla^{(0)}_{\nu}h\mathcal{L}_{\xi}h^{\mu\nu}-\nabla^{(0)}_{\rho}h^{\nu\rho}\mathcal{L}_{\xi}h^{\mu}{}_{\nu}.
+\end{align}$$
+
 
 here
 
@@ -140,7 +150,7 @@ D_{2,\xi}^{\mu \nu} & =h^{\mu}_{~\lambda}h^{\lambda \rho}\nabla ^{(0)}_{\rho}\xi
 and
 
 $$\begin{align}
-\mathcal{R}^{\mu}_{\xi,h} & =-2\xi ^{\rho}h^{\mu \sigma}\mathcal{E}_{\rho \sigma}^{(1)}[h]-\dfrac{1}{2}h\xi _{\nu}\mathcal{E}^{(1)\mu \nu}[h] \\
+\mathcal{R}^{\mu}_{\xi,h} & =\xi ^{\rho}h^{\mu \sigma}\mathcal{E}_{\rho \sigma}^{(1)}[h]-\dfrac{1}{2}h\xi _{\nu}\mathcal{E}^{(1)\mu \nu}[h] \\
 \mathcal{E}^{(1)}_{\mu \nu}[X] & =-X_{\mu \nu}-\dfrac{1}{2}\nabla ^{(0)2}X_{\mu \nu}+\dfrac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\rho}X_{\nu}^{~\rho}+\dfrac{1}{2}\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\rho}X_{\mu}^{~\rho} \\
  & -\dfrac{1}{2}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}X+\dfrac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)2}X-\dfrac{1}{2}g^{(0)}_{\mu \nu}\nabla ^{(0)}_{\rho}\nabla ^{(0)}_{\sigma}X^{\rho \sigma}
 \end{align}$$
