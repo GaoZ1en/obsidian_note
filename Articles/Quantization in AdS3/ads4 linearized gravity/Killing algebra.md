@@ -188,15 +188,35 @@ For standard quantization,
 
 $$\Delta=\dfrac{3}{2}+\sqrt{\dfrac{1}{4}+\mu^{2}}.$$
 
-The regular transverse primary triplet can be chosen as
+we introduce the spin-1 polarization (co)vectors as
 
 $$\begin{align}
-A_{+1}^{\mu} & =N e^{-i\Delta t+i\phi}(1+r^{2})^{-\Delta/2}\left(\dfrac{r\sin\theta}{1+r^{2}},-i\sin\theta,-\dfrac{i\cos\theta}{r},\dfrac{1}{r\sin\theta}\right), \\
-A_{0}^{\mu} & =N e^{-i\Delta t}(1+r^{2})^{-\Delta/2}\left(-\dfrac{ir\cos\theta}{1+r^{2}},-\cos\theta,\dfrac{\sin\theta}{r},0\right), \\
-A_{-1}^{\mu} & =N e^{-i\Delta t-i\phi}(1+r^{2})^{-\Delta/2}\left(\dfrac{r\sin\theta}{1+r^{2}},-i\sin\theta,-\dfrac{i\cos\theta}{r},-\dfrac{1}{r\sin\theta}\right).
+u_{+,\mu} & =e^{i\phi}\left(-r\sin\theta,-\dfrac{i\sin\theta}{1+r^{2}},-ir\cos\theta,r\sin\theta\right), \\
+u_{0,\mu} & =\left(ir\cos\theta,-\dfrac{\cos\theta}{1+r^{2}},r\sin\theta,0\right), \\
+u_{-,\mu} & =e^{-i\phi}\left(-r\sin\theta,-\dfrac{i\sin\theta}{1+r^{2}},-ir\cos\theta,-r\sin\theta\right).
 \end{align}$$
 
-The lower spin components are proportional to repeated action of $\mathcal{L}_{J_{-}}$ on $A_{+1}^{\mu}$. Here $N$ is fixed later by the vector symplectic norm. These three fields obey
+Then the regular transverse primary triplet can be chosen as
+
+$$\begin{align}
+A_{s}^{\mu} & =Ne^{-i\Delta t}(1+r^{2})^{-\Delta/2}u_{s}^{\mu}
+\end{align}$$
+
+With the normalization used above, the rotational ladder operators act as
+
+$$
+\mathcal{L}_{J_{-}}A_{+1}^{\mu}=\sqrt{2}A_{0}^{\mu},\qquad
+\mathcal{L}_{J_{-}}A_{0}^{\mu}=\frac{1}{\sqrt{2}}A_{-1}^{\mu},
+$$
+
+and
+
+$$
+\mathcal{L}_{J_{+}}A_{0}^{\mu}=-\frac{1}{\sqrt{2}}A_{+1}^{\mu},\qquad
+\mathcal{L}_{J_{+}}A_{-1}^{\mu}=-\sqrt{2}A_{0}^{\mu}.
+$$
+
+Here $N$ is fixed later by the vector symplectic norm. These three fields obey
 
 $$\nabla_{\mu}A_{s}^{\mu}=0,\qquad \left(\nabla^{2}+3-(\Delta-1)(\Delta-2)\right)A_{s}^{\mu}=0.$$
 
@@ -253,3 +273,136 @@ These gauge parameters obey
 $$\nabla^{2}\lambda_{s}=0.$$
 
 Thus the covariant potential retains the full $SO(3)$ primary triplet, while the residual-gauge branch and the longitudinal photon polarization are removed at the level of the gauge quotient. In the flat-space limit this quotient leaves the two helicity polarizations.
+
+## massive TT tensor
+
+For a symmetric two-tensor, the Lie derivative is
+
+$$\left(\mathcal{L}_{K}h\right)_{\mu\nu}=K^{\rho}\nabla_{\rho}h_{\mu\nu}+h_{\rho\nu}\nabla_{\mu}K^{\rho}+h_{\mu\rho}\nabla_{\nu}K^{\rho}.$$
+
+With the same quadratic Casimir, its action on the transverse-traceless spin-two sector is
+
+$$\mathcal{C}_{2}h_{\mu\nu}=(\nabla^{2}+8)h_{\mu\nu}.$$
+
+We consider the second-order massive spin-two equation in the transverse-traceless sector,
+
+$$\begin{align}
+\nabla^{\mu}h_{\mu\nu} & =0, & g^{\mu\nu}h_{\mu\nu} & =0, & \left(\nabla^{2}+2-\mu^{2}\right)h_{\mu\nu} & =0.
+\end{align}$$
+
+In this sector,
+
+$$\mathcal{C}_{2}h_{\mu\nu}=(\mu^{2}+6)h_{\mu\nu}.$$
+
+The spin-two primary is a quintet under the spatial rotation algebra. We write it as
+
+$$h_{s,\mu\nu},\qquad s=+2,+1,0,-1,-2,$$
+
+with
+
+$$\mathcal{L}_{E^{+}_{m}}h_{s,\mu\nu}=0,\qquad \mathcal{L}_{H}h_{s,\mu\nu}=-i\Delta h_{s,\mu\nu},\qquad \mathcal{L}_{J_{3}}h_{s,\mu\nu}=is h_{s,\mu\nu}.$$
+
+Equivalently, the Cartan weights of the spin component $s$ are
+
+$$\mathcal{L}_{L_{0}}h_{s,\mu\nu}=-i\dfrac{\Delta-s}{2}h_{s,\mu\nu},\qquad \mathcal{L}_{\bar{L}_{0}}h_{s,\mu\nu}=-i\dfrac{\Delta+s}{2}h_{s,\mu\nu}.$$
+
+It is enough to evaluate the Casimir on the highest rotational component $h_{+2,\mu\nu}$, which satisfies
+
+$$\mathcal{L}_{J_{+}}h_{+2,\mu\nu}=0,\qquad \mathcal{L}_{J_{3}}h_{+2,\mu\nu}=2i h_{+2,\mu\nu}.$$
+
+For this component,
+
+$$h=\dfrac{\Delta-2}{2},\qquad \bar{h}=\dfrac{\Delta+2}{2}.$$
+
+Using the highest-weight conditions, the Casimir action reduces to
+
+$$\begin{align}
+\mathcal{C}_{2}h_{+2,\mu\nu} & =\left(2h^{2}+2\bar{h}^{2}-3h-3\bar{h}+\bar{h}-h\right)h_{+2,\mu\nu} \\
+ & =\left(\Delta(\Delta-3)+6\right)h_{+2,\mu\nu}.
+\end{align}$$
+
+Thus the mass and the highest weight are related by
+
+$$\mu^{2}=\Delta(\Delta-3).$$
+
+For standard quantization,
+
+$$\Delta=\dfrac{3}{2}+\sqrt{\dfrac{9}{4}+\mu^{2}}.$$
+
+The regular transverse-traceless primary quintet can be written in terms of the following spin-one polarization covectors, whose components are ordered as $(t,r,\theta,\phi)$:
+
+$$\begin{align}
+u_{+,\mu} & =e^{i\phi}\left(-r\sin\theta,-\dfrac{i\sin\theta}{1+r^{2}},-ir\cos\theta,r\sin\theta\right), \\
+u_{0,\mu} & =\left(ir\cos\theta,-\dfrac{\cos\theta}{1+r^{2}},r\sin\theta,0\right), \\
+u_{-,\mu} & =e^{-i\phi}\left(-r\sin\theta,-\dfrac{i\sin\theta}{1+r^{2}},-ir\cos\theta,-r\sin\theta\right).
+\end{align}$$
+
+$$\begin{align}
+h_{+2,\mu\nu} & =N e^{-i\Delta t}(1+r^{2})^{-\Delta/2}u_{+,\mu}u_{+,\nu}, \\
+h_{+1,\mu\nu} & =N e^{-i\Delta t}(1+r^{2})^{-\Delta/2}\left(u_{+,\mu}u_{0,\nu}+u_{0,\mu}u_{+,\nu}\right), \\
+h_{0,\mu\nu} & =N e^{-i\Delta t}(1+r^{2})^{-\Delta/2}\left(u_{+,\mu}u_{-,\nu}+u_{-,\mu}u_{+,\nu}+4u_{0,\mu}u_{0,\nu}\right), \\
+h_{-1,\mu\nu} & =N e^{-i\Delta t}(1+r^{2})^{-\Delta/2}\left(u_{-,\mu}u_{0,\nu}+u_{0,\mu}u_{-,\nu}\right), \\
+h_{-2,\mu\nu} & =N e^{-i\Delta t}(1+r^{2})^{-\Delta/2}u_{-,\mu}u_{-,\nu}.
+\end{align}$$
+
+The lower spin components are generated from $h_{+2,\mu\nu}$ by repeated action of $\mathcal{L}_{J_{-}}$. With the normalization above,
+
+$$\begin{align}
+\mathcal{L}_{J_{-}}h_{+2,\mu\nu} & =\sqrt{2}\,h_{+1,\mu\nu}, &
+\mathcal{L}_{J_{-}}h_{+1,\mu\nu} & =\dfrac{1}{\sqrt{2}}h_{0,\mu\nu}, \\
+\mathcal{L}_{J_{-}}h_{0,\mu\nu} & =3\sqrt{2}\,h_{-1,\mu\nu}, &
+\mathcal{L}_{J_{-}}h_{-1,\mu\nu} & =\sqrt{2}\,h_{-2,\mu\nu}.
+\end{align}$$
+
+Here $N$ is fixed later by the spin-two symplectic norm. These five fields obey
+
+$$g^{\mu\nu}h_{s,\mu\nu}=0,\qquad \nabla^{\mu}h_{s,\mu\nu}=0,\qquad \left(\nabla^{2}+2-\Delta(\Delta-3)\right)h_{s,\mu\nu}=0.$$
+
+The remaining positive-energy descendants are generated by the $\mathcal{L}_{E^{-}_{m}}$ operators:
+
+$$h_{s;m_{1}\cdots m_{N},\mu\nu}=\mathcal{L}_{E^{-}_{m_{1}}}\cdots \mathcal{L}_{E^{-}_{m_{N}}}h_{s,\mu\nu},\qquad s=+2,+1,0,-1,-2,\qquad m_{j}\in\{-1,0,+1\}.$$
+
+## massless TT tensor
+
+For the massless Einstein equation in TT gauge, the field equation is
+
+$$\left(\nabla^{2}+2\right)h_{\mu\nu}=0.$$
+
+This is the $\mu^{2}=0$ limit of the massive spin-two relation
+
+$$\mu^{2}=\Delta(\Delta-3),$$
+
+so the two roots are
+
+$$\Delta=0,\qquad \Delta=3.$$
+
+The standard normalizable graviton branch is $\Delta=3$. Its covariant metric perturbation is represented by the spin-two $SO(3)$ quintet $h_{s,\mu\nu}$ with $s=+2,+1,0,-1,-2$, evaluated at $\Delta=3$. The linearized diffeomorphism redundancy is
+
+$$h_{\mu\nu}\sim h_{\mu\nu}+\nabla_{\mu}\zeta_{\nu}+\nabla_{\nu}\zeta_{\mu}.$$
+
+In TT gauge, residual gauge parameters satisfy
+
+$$\nabla^{\mu}\zeta_{\mu}=0,\qquad \left(\nabla^{2}-3\right)\zeta_{\mu}=0.$$
+
+The $\Delta=0$ branch is a residual-diffeomorphism branch. Evaluating the same quintet at $\Delta=0$, the highest spin component can be written as
+
+$$\left.h_{+2,\mu\nu}\right|_{\Delta=0}=\nabla_{\mu}\zeta_{+2,\nu}+\nabla_{\nu}\zeta_{+2,\mu},$$
+
+where
+
+$$\zeta_{+2,\mu}=\dfrac{N}{2}e^{2i\phi}\left(ir^{2}\sin^{2}\theta,-\dfrac{r\sin^{2}\theta}{1+r^{2}},-r^{2}\sin\theta\cos\theta,-ir^{2}\sin^{2}\theta\right).$$
+
+The remaining gauge parameters are generated with the same rotational ladder normalization:
+
+$$\begin{align}
+\zeta_{+1,\mu} & =\dfrac{1}{\sqrt{2}}\mathcal{L}_{J_{-}}\zeta_{+2,\mu}, &
+\zeta_{0,\mu} & =\sqrt{2}\mathcal{L}_{J_{-}}\zeta_{+1,\mu}, \\
+\zeta_{-1,\mu} & =\dfrac{1}{3\sqrt{2}}\mathcal{L}_{J_{-}}\zeta_{0,\mu}, &
+\zeta_{-2,\mu} & =\dfrac{1}{\sqrt{2}}\mathcal{L}_{J_{-}}\zeta_{-1,\mu}.
+\end{align}$$
+
+They obey
+
+$$\nabla^{\mu}\zeta_{s,\mu}=0,\qquad \left(\nabla^{2}-3\right)\zeta_{s,\mu}=0,\qquad \left.h_{s,\mu\nu}\right|_{\Delta=0}=\nabla_{\mu}\zeta_{s,\nu}+\nabla_{\nu}\zeta_{s,\mu}.$$
+
+Thus the covariant metric perturbation retains the full $SO(3)$ primary quintet before the gauge quotient. The quotient removes the gauge components, and in the flat-space limit the physical polarizations reduce to the two helicity-two polarizations.
