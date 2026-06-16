@@ -332,12 +332,6 @@ $$\Delta=\dfrac{3}{2}+\sqrt{\dfrac{9}{4}+\mu^{2}}.$$
 The regular transverse-traceless primary quintet can be written in terms of the following spin-one polarization covectors, whose components are ordered as $(t,r,\theta,\phi)$:
 
 $$\begin{align}
-u_{+,\mu} & =e^{i\phi}\left(-r\sin\theta,-\dfrac{i\sin\theta}{1+r^{2}},-ir\cos\theta,r\sin\theta\right), \\
-u_{0,\mu} & =\left(ir\cos\theta,-\dfrac{\cos\theta}{1+r^{2}},r\sin\theta,0\right), \\
-u_{-,\mu} & =e^{-i\phi}\left(-r\sin\theta,-\dfrac{i\sin\theta}{1+r^{2}},-ir\cos\theta,-r\sin\theta\right).
-\end{align}$$
-
-$$\begin{align}
 h_{+2,\mu\nu} & =N e^{-i\Delta t}(1+r^{2})^{-\Delta/2}u_{+,\mu}u_{+,\nu}, \\
 h_{+1,\mu\nu} & =N e^{-i\Delta t}(1+r^{2})^{-\Delta/2}\left(u_{+,\mu}u_{0,\nu}+u_{0,\mu}u_{+,\nu}\right), \\
 h_{0,\mu\nu} & =N e^{-i\Delta t}(1+r^{2})^{-\Delta/2}\left(u_{+,\mu}u_{-,\nu}+u_{-,\mu}u_{+,\nu}+4u_{0,\mu}u_{0,\nu}\right), \\
@@ -388,18 +382,17 @@ The $\Delta=0$ branch is a residual-diffeomorphism branch. Evaluating the same q
 
 $$\left.h_{+2,\mu\nu}\right|_{\Delta=0}=\nabla_{\mu}\zeta_{+2,\nu}+\nabla_{\nu}\zeta_{+2,\mu},$$
 
-where
-
-$$\zeta_{+2,\mu}=\dfrac{N}{2}e^{2i\phi}\left(ir^{2}\sin^{2}\theta,-\dfrac{r\sin^{2}\theta}{1+r^{2}},-r^{2}\sin\theta\cos\theta,-ir^{2}\sin^{2}\theta\right).$$
-
-The remaining gauge parameters are generated with the same rotational ladder normalization:
+where the gauge parameters are the following covectors, with components ordered as $\displaystyle{(t,r,\theta,\phi)}$:
 
 $$\begin{align}
-\zeta_{+1,\mu} & =\dfrac{1}{\sqrt{2}}\mathcal{L}_{J_{-}}\zeta_{+2,\mu}, &
-\zeta_{0,\mu} & =\sqrt{2}\mathcal{L}_{J_{-}}\zeta_{+1,\mu}, \\
-\zeta_{-1,\mu} & =\dfrac{1}{3\sqrt{2}}\mathcal{L}_{J_{-}}\zeta_{0,\mu}, &
-\zeta_{-2,\mu} & =\dfrac{1}{\sqrt{2}}\mathcal{L}_{J_{-}}\zeta_{-1,\mu}.
+\zeta_{+2,\mu} & =\dfrac{N}{2}e^{2i\phi}\left(ir^{2}\sin^{2}\theta,-\dfrac{r\sin^{2}\theta}{1+r^{2}},-r^{2}\sin\theta\cos\theta,-ir^{2}\sin^{2}\theta\right), \\
+\zeta_{+1,\mu} & =Ne^{i\phi}\left(r^{2}\sin\theta\cos\theta,\dfrac{ir\sin\theta\cos\theta}{1+r^{2}},\dfrac{i}{2}r^{2}\cos2\theta,-\dfrac{1}{2}r^{2}\sin\theta\cos\theta\right), \\
+\zeta_{0,\mu} & =\dfrac{N}{2}\left(-ir^{2}(1+3\cos2\theta),\dfrac{r(1+3\cos2\theta)}{1+r^{2}},-6r^{2}\sin\theta\cos\theta,0\right), \\
+\zeta_{-1,\mu} & =Ne^{-i\phi}\left(r^{2}\sin\theta\cos\theta,\dfrac{ir\sin\theta\cos\theta}{1+r^{2}},\dfrac{i}{2}r^{2}\cos2\theta,\dfrac{1}{2}r^{2}\sin\theta\cos\theta\right), \\
+\zeta_{-2,\mu} & =\dfrac{N}{2}e^{-2i\phi}\left(ir^{2}\sin^{2}\theta,-\dfrac{r\sin^{2}\theta}{1+r^{2}},-r^{2}\sin\theta\cos\theta,ir^{2}\sin^{2}\theta\right).
 \end{align}$$
+
+They are generated with the same rotational ladder normalization as the $\displaystyle{h_{s,\mu\nu}}$ quintet.
 
 They obey
 

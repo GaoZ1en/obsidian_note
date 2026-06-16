@@ -10,8 +10,12 @@ Research workspace for AdS3 quantization projects and linked subtopics.
 - Keep exploratory calculations in topic folders; manuscript-specific workflow rules belong to child folders with their own `AGENTS.md`.
 - Do not rename established topic folders such as `Proca in AdS3/` or `electric field in AdS3/` without explicit instruction.
 
-## Mathematica / xAct
+## Mathematica / xAct / Sage
 - For xAct calculations in this workspace, load `xTras` when available and use `FullSimplification[]` to simplify tensor expressions, especially after xPert/xCPS variations, curvature identities, or index canonicalization steps.
+- For representation-theory calculations in this workspace, use the Sage MCP before editing mathematical claims when the claim involves finite groups, Lie algebras, root systems, Weyl characters, Young diagrams, symmetric functions, tensor-product decompositions, compact-subalgebra branching, or combinatorial representation theory.
+  - In the AdS$_d$ and AdS$_4$ module notes, use Sage for checks of $SO(d-1)$ / $\mathfrak{so}(d-1)$ characters, $B_r/D_r$ WeylCharacterRing computations, symmetric traceless representations, Young-diagram tensor products, symmetric-power decompositions, and finite-order character or partition-function expansions.
+  - Keep Mathematica/xAct as the tool for differential-geometry, tensor, variational, covariant-phase-space, curvature, and component-field-equation checks.
+  - Report which checks were Sage-backed, which were Mathematica/xAct-backed, and which remain representation-theoretic assumptions or literature-derived statements.
 - ignore `xPerm` and other loading errors.
 - Avoid Mathematica protected built-in symbols as temporary variable names in checks. In particular, do not assign to `C`, `Gamma` or `D`; use descriptive names such as `cotton`, `gammaConn`, or `christoffel` instead.
 - For formula layout, use a two-stage workflow: draft and verify in an expanded working layout when it reduces formula errors, then compact the LaTeX source before leaving it in the note.
