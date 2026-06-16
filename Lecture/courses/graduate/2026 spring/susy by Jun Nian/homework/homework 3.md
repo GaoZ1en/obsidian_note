@@ -17,7 +17,7 @@ after evaluating these 4 Feynman diagrams, add their contributions together to s
 - 4-squark vertex $\displaystyle{-ig^{2}T^{a}T^{a}}$
 - yukawa coupling among squark, quark and gluino $\displaystyle{-i\sqrt{ 2 }gT^{a}}$
 - squark-gluon vertex $\displaystyle{igT^{a}(p+p')_{\mu}}$ with $\displaystyle{p_{\mu}}$ and $\displaystyle{p_{\mu}'}$ denoting the incoming and outgoing squark momenta
-- 2-quark 2-gluon vertex $\displaystyle{ig^{2}\left\{T^{a},T^{b}\right\}\eta _{\mu \nu}}$. 
+- 2-squark 2-gluon vertex $\displaystyle{ig^{2}\left\{T^{a},T^{b}\right\}\eta _{\mu \nu}}$.
 
 here $\displaystyle{a,b}$ denote gauge indices, $\displaystyle{i,j}$ denote flavor indices. for simplicity, consider only one flavor. introduce a UV cutoff $\displaystyle{\Lambda}$ in the momentum to regularize divergent integrals.
 
@@ -37,14 +37,26 @@ $$
 C_{F}=\frac{N_{c}^{2}-1}{2N_{c}}.
 $$
 
-we only keep the quadratically divergent part. the common factor $I_{\Lambda}$ is written after the Wick rotation.
+we only keep the quadratically divergent part. the external momentum and all masses are set to zero, so logarithmically divergent and finite terms are not tracked. the common factor $I_{\Lambda}$ is written after the Wick rotation,
+
+$$
+\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{i}{p^{2}}
+\longrightarrow
+\int ^{\Lambda}\frac{\mathrm{d}^{4}p_{E}}{(2\pi)^{4}}\frac{1}{p_{E}^{2}}
+=I_{\Lambda}.
+$$
 
 ### squark loop
 
 Using the 4-squark vertex and the internal squark propagator,
 
 $$
-\mathcal{M}_{\text{squark}}=(-ig^{2}T^{a}T^{a})\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{i}{p^{2}}=g^{2}C_{2}(R)I_{\Lambda}.
+\begin{align}
+\mathcal{M}_{\text{squark}}
+&=(-ig^{2}T^{a}T^{a})\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{i}{p^{2}} \\
+&=(-i)(i)g^{2}C_{2}(R)\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{1}{p^{2}} \\
+&=g^{2}C_{2}(R)I_{\Lambda}.
+\end{align}
 $$
 
 Thus
@@ -55,18 +67,20 @@ $$
 
 ### quark-gluino loop
 
-There is an extra minus sign from the closed fermion loop. the spinor trace gives
+There is an extra minus sign from the closed fermion loop. the two Yukawa vertices give $(-i\sqrt{2}gT^{a})(-i\sqrt{2}gT^{a})$, and the quark and gluino propagators give one $p\cdot\sigma$ and one $p\cdot\bar{\sigma}$ in the numerator. the spinor trace gives
 
 $$
 \operatorname{tr}(p_{\mu}\sigma ^{\mu}p_{\nu}\bar{\sigma}^{\nu})=2p^{2}.
 $$
 
-therefore
+therefore the loop contribution is
 
 $$
 \begin{align}
 \mathcal{M}_{\psi \lambda}
+&=-(-i\sqrt{2}gT^{a})(-i\sqrt{2}gT^{a})\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{i p_{\mu}\sigma ^{\mu}}{p^{2}}\frac{i p_{\nu}\bar{\sigma}^{\nu}}{p^{2}} \\
 &=-(-i\sqrt{2}g)^{2}i^{2}C_{2}(R)\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{\operatorname{tr}(p_{\mu}\sigma ^{\mu}p_{\nu}\bar{\sigma}^{\nu})}{(p^{2})^{2}} \\
+&=-(-2g^{2})(-1)C_{2}(R)\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{2p^{2}}{(p^{2})^{2}} \\
 &=-4g^{2}C_{2}(R)I_{\Lambda}.
 \end{align}
 $$
@@ -85,12 +99,13 @@ $$
 igT^{a}(p+0)_{\mu}=igT^{a}p_{\mu}.
 $$
 
-then
+the scalar and gauge propagators then give
 
 $$
 \begin{align}
 \mathcal{M}_{qA}
 &=(igT^{a}p_{\mu})(igT^{a}p_{\nu})\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{i}{p^{2}}\frac{-i\eta ^{\mu \nu}}{p^{2}} \\
+&=(i^{2})(i)(-i)g^{2}C_{2}(R)\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{p_{\mu}p_{\nu}\eta ^{\mu \nu}}{(p^{2})^{2}} \\
 &=-g^{2}C_{2}(R)\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{p^{2}}{(p^{2})^{2}} \\
 &=-g^{2}C_{2}(R)I_{\Lambda}.
 \end{align}
@@ -118,6 +133,7 @@ $$
 \begin{align}
 \mathcal{M}_{A}
 &=\frac{1}{2}(ig^{2}\{T^{a},T^{b}\}\eta _{\mu \nu})\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{-i\delta ^{ab}\eta ^{\mu \nu}}{p^{2}} \\
+&=\frac{1}{2}(i)(-i)g^{2}\delta ^{ab}\{T^{a},T^{b}\}\eta _{\mu \nu}\eta ^{\mu \nu}\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{1}{p^{2}} \\
 &=\frac{1}{2}g^{2}(2C_{2}(R))(4)I_{\Lambda} \\
 &=4g^{2}C_{2}(R)I_{\Lambda}.
 \end{align}
