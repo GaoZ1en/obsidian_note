@@ -326,4 +326,4 @@ Z_{1}^{(s),\mathrm{massless}}(\beta,0) & =\dfrac{q^{s+1}\left((2s+1)-(2s-1)q\rig
 
 The cases $\displaystyle{s=1}$ and $\displaystyle{s=2}$ reproduce the Proca/massive TT formulas and the Maxwell/graviton short-module formulas above.
 
-TODO: Match the module-character derivation above with the heat-kernel / Harish-Chandra character formula in general dimension.
+module-character matching with the heat-kernel / Harish-Chandra character formula in general dimension is presented in [[Articles/Quantization in AdS3/ads4 linearized gravity/heat kernel|heat kernel]]
