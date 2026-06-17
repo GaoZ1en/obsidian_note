@@ -1,6 +1,6 @@
 ---
 name: research-project-maintainer
-description: "Maintain active research project workspaces in this theoretical physics Obsidian vault. Use when Codex needs to advance the user's own research projects rather than general literature management: summarize project state, update project README/TODO/Drafts files, turn conversations or advisor requests into concrete next actions, coordinate manuscript and topic notes, preserve local AGENTS rules, and trigger Mathematica/xAct verification before formula or derivation edits."
+description: "Maintain active research project workspaces in this theoretical physics Obsidian vault. Use when Codex needs to advance the user's own research projects rather than general literature management: summarize project state, update project README/TODO/Drafts files, turn conversations or advisor requests into concrete next actions, coordinate manuscript and topic notes, preserve local AGENTS rules, and trigger Mathematica/xAct/Sage verification before formula or derivation edits."
 ---
 
 # Research Project Maintainer
@@ -70,6 +70,7 @@ Before modifying formulas, derivations, tensor identities, or equation-heavy sec
 
 - Use Mathematica for algebraic checks when computationally checkable.
 - Use xAct or Mathematica+xAct for tensor, variational, covariant-derivative, curvature, and differential-geometry checks.
+- Use Sage through the Sage MCP for representation-theory, discrete-algebra, finite-group, Lie-algebra, Weyl-character, Young-diagram, symmetric-function, tensor-product decomposition, and combinatorial-representation checks.
 - Report verification status with compact `Verified:`, `Assumptions:`, and `Not verified:` entries.
 - Do not present formula edits as correct from inspection alone.
 - If verification is blocked by tooling, keep the formula unchanged unless the user explicitly accepts an assumption-only edit.

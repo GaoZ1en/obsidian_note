@@ -53,7 +53,8 @@ These skills complement this file. They do not override the constraints below.
 
 - Before modifying any mathematical formula, symbolic derivation, physics calculation, or equation-heavy note, verify every changed formula with Mathematica whenever it is computationally checkable.
 - Use xAct or Mathematica+xAct for tensor, covariant-derivative, variational, and differential-geometry identities where component-free tensor verification is the appropriate check.
-- Prefer available non-shell Mathematica/xAct tools for verification. Use shell-based Mathematica commands only with explicit user authorization.
+- Use SageMath through the Sage MCP for representation-theory, discrete-algebra, finite-group, Lie-algebra, Weyl-character, Young-diagram, symmetric-function, tensor-product decomposition, and combinatorial-representation checks where Sage is the appropriate computational system.
+- Prefer available non-shell Mathematica/xAct/Sage MCP tools for verification. Use shell-based Mathematica commands only with explicit user authorization.
 - For formula edits, report verification status in the conversation with compact `Verified:`, `Assumptions:`, and `Not verified:` entries.
 - For each formula edit, distinguish what was verified by Mathematica or xAct, what depends on stated assumptions or conventions, and what remains unverified because it is not directly machine-checkable.
 - Do not present an equation edit as correct merely from inspection. If machine verification is impossible or incomplete, state the exact missing evidence and the assumptions under which the formula is being kept.

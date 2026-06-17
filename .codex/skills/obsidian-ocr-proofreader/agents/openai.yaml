@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian OCR Proofreader"
+  short_description: "Proofread OCR Markdown notes"
+  default_prompt: "Use $obsidian-ocr-proofreader to proofread this OCR-imported note and normalize its Markdown math delimiters."
