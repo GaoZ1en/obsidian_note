@@ -12,7 +12,7 @@ Working notes for adapting the AdS3 linearized-gravity setup to global AdS4 and 
 | `linearize.md` | Global AdS4 background conventions, perturbative Einstein equation, de Donder and TT reductions, quadratic Einstein-Hilbert density, symplectic current, and radial cutoff geometry. |
 | `Killing algebra.md` | Explicit $\mathfrak{so}(2,3)$ Killing generators, Cartan basis, quadratic Casimir, primary modes, mass-$\Delta$ relations, descendant construction, and gauge branches for scalar, vector, Maxwell, TT tensor, and graviton modes. |
 | `symplectic norm.md` | Covariant symplectic forms, normalizability conditions, primary normalization constants, descendant $SO(3)$ decompositions, and physical gauge quotients for Maxwell and gravity. |
-| `massless wavefunctions.md` | Direct Maxwell and graviton wavefunction representatives for the massless short modules, with quotient data used only to label the physical $SO(3)$ multiplets. |
+| `gauge representatives.md` | Direct Maxwell and graviton gauge representatives for the massless short modules, with quotient data used only to label the physical $SO(3)$ multiplets. |
 | `partition function.md` | AdS4 refined traces $\mathrm{Tr}\,e^{-\beta H+i\alpha J_3}$, one-particle characters, bosonic Fock-space partition functions, and the general integer-spin $s$ AdS4 formula. |
 | `so(2,d-1) algebra.md` | General AdS$_d$ compact decomposition, positive-energy highest-weight modules, $SO(d-1)$ symmetric-traceless characters, long-module characters, and massless short-module quotients. |
 | `heat kernel.md` | General AdS$_d$ thermal heat-kernel derivation of the spin-$s$ long and massless one-loop partition functions, matched to the $SO(2,d-1)$ module characters. |
@@ -24,7 +24,7 @@ The AdS4-specific notes build from local field data to Hilbert-space data:
 1. `linearize.md` fixes the background, perturbative Einstein equation, TT reduction, and symplectic current.
 2. `Killing algebra.md` constructs explicit highest-weight primaries and descendants for scalar, vector, Maxwell, TT tensor, and graviton branches.
 3. `symplectic norm.md` determines the normalizable physical modules and explains how gauge quotients remove longitudinal submodules.
-4. `massless wavefunctions.md` chooses direct representatives for the Maxwell and graviton short modules.
+4. `gauge representatives.md` chooses direct representatives for the Maxwell and graviton short modules.
 5. `partition function.md` converts those physical one-particle modules into refined AdS4 Fock-space partition functions.
 
 The general notes then abstract the same structure:
