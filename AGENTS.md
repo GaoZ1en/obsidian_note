@@ -25,6 +25,16 @@ These skills complement this file. They do not override the constraints below.
 | No build step | — | Static Markdown vault only |
 | No lint or test step | — | No software tooling in this repository |
 
+## PDF Reading And Verification
+
+- For mathematical PDFs, use text extraction and page rendering together instead of relying on extracted text alone.
+- Use `pdftotext -layout` or an equivalent PDF text extractor to locate sections, page ranges, equation numbers, and keywords quickly.
+- When formulas, tables, equation labels, line breaks, or missing content matter, render the relevant pages with Poppler, for example `pdftoppm`, and inspect the page images directly.
+- Treat rendered page inspection as evidence for what the PDF visibly contains, especially when text extraction drops symbols, scrambles subscripts/superscripts, or shows an apparently empty formula.
+- Treat text extraction as a navigation aid, not as authoritative mathematical content when layout or notation is important.
+- For derivation-heavy PDFs, verify computationally checkable algebra, tensor identities, representation-theory claims, or coordinate formulas with Mathematica, xAct, or Sage as appropriate.
+- In the response, distinguish what was found by text extraction, what was confirmed visually from rendered pages, and what was machine-verified.
+
 ## Global Constraints
 
 - Preserve existing content. Do not delete or overwrite notes without explicit instruction.
