@@ -24,7 +24,6 @@ A^{r} & =o(r^{-1}) \\
 A^{\phi} & =o(r^{-2})
 \end{align}$$
 
-
 consider the following ansatz
 
 $$\begin{align}
@@ -61,7 +60,7 @@ insert (4) into (2) and (3), we have
 
 $$\begin{align}
 (1+r^{2})\partial _{r}^{2}\tilde{A}^{r}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{A}^{r}+\left( 1-\mu ^{2}-\frac{m^{2}+1}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{r}-\frac{2im}{r}\tilde{A}^{\phi} & =0 \\
-\frac{2im}{r^{3}}\tilde{A}^{r}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =0 
+\frac{2im}{r^{3}}\tilde{A}^{r}+(1+r^{2})\partial _{r}^{2}\tilde{A}^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}\tilde{A}^{\phi}+\left( 4-\mu ^{2}-\frac{m^{2}}{r^{2}}+\frac{\omega ^{2}}{1+r^{2}} \right)\tilde{A}^{\phi} & =0
 \end{align}$$
 
 introduce
@@ -124,6 +123,7 @@ $$\begin{align}
 
 the solutions of $\displaystyle{(A^{t},A^{r},A^{\phi})}$ are
 1. first family
+
 $$\begin{align}
 \omega _{r,n,m} & =\mu+1+|m-1|+2n, \qquad n\in \mathbb{Z}, m\in \mathbb{Z} \\
 \tilde{A}^{t} & =C_{r,n,m} \frac{1}{\mu+1+|m-1|+2n}\left[((\mu+m)r^{2}+((m-1)-|m-1|))r^{|m-1|-1}(1+r^{2})^{-(\mu+3+|m-1|)/2}P_{n}^{(\mu,|m-1|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
@@ -131,7 +131,9 @@ $$\begin{align}
 \tilde{A}^{r} & =-iC_{r,n,m}r^{|m-1|}(1+r^{2})^{-(\mu+1+|m-1|)/2}P_{n}^{(\mu,|m-1|)}\left(\frac{r^{2}-1}{r^{2}+1}\right) \\
 \tilde{A}^{\phi} & =C_{r,n,m}r^{|m-1|-1}(1+r^{2})^{-(\mu+1+|m-1|)/2}P_{n}^{(\mu,|m-1|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
-2. second family
+
+1. second family
+
 $$\begin{align}
 \omega _{l,n,m} & =\mu+1+|m+1|+2n, \qquad n\in \mathbb{Z}, m\in \mathbb{Z} \\
 \tilde{A}^{t} & =C_{l,n,m} \frac{1}{\mu+1+|m+1|+2n}\left[((\mu-m)r^{2}-((m+1)+|m+1|))r^{|m+1|-1}(1+r^{2})^{-(\mu+3+|m+1|)/2}P_{n}^{(\mu,|m+1|)}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right. \\
@@ -142,13 +144,15 @@ $$\begin{align}
 
 to normalize the solutions, we consider the symplectic form
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \Omega[\delta _{1}A,\delta _{2}A] & =\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\delta_{1}A^{t}+\frac{2r^{2}}{1+r^{2}}\delta _{1}A^{t}+ \frac{r}{(1+r^{2})^{2}}\partial _{t}\delta _{1}A^{r} \right)\delta _{2}A^{r} \\
  & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{r}\delta_{2}A^{t}+\frac{2r^{2}}{1+r^{2}}\delta _{2}A^{t}+ \frac{r}{(1+r^{2})^{2}}\partial _{t}\delta _{2}A^{r} \right)\delta _{1}A^{r} \\
  & +\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{\phi}\delta_{1} A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{t}\delta_{1} A^{\phi} \right)\delta_{2} A^{\phi} \\
  & -\int \mathrm{d}r\mathrm{d}\phi\left( r\partial _{\phi}\delta_{2} A^{t}+\frac{r^{3}}{1+r^{2}}\partial _{t}\delta_{2} A^{\phi} \right)\delta_{1} A^{\phi}
-\end{align}$$
+\end{align}
+$$
 
 and insert one of the solutions into the $\displaystyle{\delta _{1}A}$ and its complex conjugate into the $\displaystyle{\delta _{2}A}$, then we can fix the normalization constant $\displaystyle{C_{r}}$ or $\displaystyle{C_{l}}$ such that
 
@@ -183,4 +187,3 @@ insert these solutions or their complex conjugates into the symplectic form, we 
 | $\displaystyle{h^{(+)}_{-,m\geqslant 1,n}}$                  | $\displaystyle{0}$                                                              | $\displaystyle{0}$                                                              | $\displaystyle{\frac{4i(\mu+n')(m+n')}{\mu ^{2}+(\mu+m+2n')^{2}-m^{2}} \sqrt{ \frac{n'(\mu+m+n')}{(m+n')(\mu+n')} }\delta _{n+1,n'}\delta _{m,m'}}$ | $\displaystyle{-i\delta _{n,n'}\delta _{m,m'}}$                                                                                              | $\displaystyle{0}$                                                                                                                        | $\displaystyle{0}$                                                                                                                               |
 | $\displaystyle{h^{(+)}_{+,m\leqslant -1,n}}$                 | $\displaystyle{0}$                                                              | $\displaystyle{0}$                                                              | $\displaystyle{0}$                                                                                                                                  | $\displaystyle{0}$                                                                                                                           | $\displaystyle{-i\delta _{n,n'}\delta _{m,m'}}$                                                                                           | $\displaystyle{\frac{4i(\mu+n')(-m+n')}{\mu ^{2}+(\mu-m+2n')-m^{2}}\sqrt{ \frac{n'(\mu-m+n')}{(-m+n')(\mu+n')} }\delta _{n,n'-1}\delta _{m,m'}}$ |
 | $\displaystyle{h^{(+)}_{-,m\leqslant -1,n}}$                 | $\displaystyle{0}$                                                              | $\displaystyle{0}$                                                              | $\displaystyle{0}$                                                                                                                                  | $\displaystyle{0}$                                                                                                                           | $\displaystyle{\frac{4i(\mu+n)(-m+n)}{\mu ^{2}+(\mu-m+2n)-m^{2}}\sqrt{ \frac{n(\mu-m+n)}{(-m+n)(\mu+n)} }\delta _{n-1,n'}\delta _{m,m'}}$ | $\displaystyle{-i\delta _{n,n'}\delta _{m,m'}}$                                                                                                  |
-

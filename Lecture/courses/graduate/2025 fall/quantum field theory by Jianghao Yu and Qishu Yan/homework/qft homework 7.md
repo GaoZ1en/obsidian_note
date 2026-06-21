@@ -31,7 +31,7 @@ $$\begin{align}
  & =L^{\mu}_{~\nu}-L^{\mu}_{~\nu}=0
 \end{align}$$
 
-2. calculate the propagator of the vector field.
+1. calculate the propagator of the vector field.
 
 we have known that the propagator $\displaystyle{G_{\mu \nu}}$ of the vector field satisfies
 
@@ -58,7 +58,7 @@ k^{2}(\Delta ^{\mu \alpha}+\lambda L^{\mu \alpha})(A\Delta _{\alpha \nu}+BL_{\al
 
 # Peskin 3.6
 
-let $\displaystyle{u_{i}, i=1,2,3,4}$ be four 4-component Dirac spinors. 
+let $\displaystyle{u_{i}, i=1,2,3,4}$ be four 4-component Dirac spinors.
 
 ## subproblem 1
 

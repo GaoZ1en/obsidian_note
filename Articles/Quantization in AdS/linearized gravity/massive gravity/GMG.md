@@ -12,11 +12,15 @@ This note records the GMG linearized action and TT equations using the same back
 
 For the unit-radius AdS$_3$ expansion set
 
-$$\lambda=-1-\frac{1}{4m^2}.$$
+$$\begin{align}
+\lambda=-1-\frac{1}{4m^2}.
+\end{align}$$
 
 Then the action is organized by source as
 
-$$I_{\rm GMG}=\frac{1}{16\pi G}\int d^3x\sqrt{-g}\left[\mathcal L_{\rm PG}+\frac{1}{\mu}L_{\rm CS}+\frac{1}{m^2}\mathcal L_{\rm NMG}\right],$$
+$$\begin{align}
+I_{\rm GMG}=\frac{1}{16\pi G}\int d^3x\sqrt{-g}\left[\mathcal L_{\rm PG}+\frac{1}{\mu}L_{\rm CS}+\frac{1}{m^2}\mathcal L_{\rm NMG}\right],
+\end{align}$$
 
 with
 
@@ -32,21 +36,29 @@ we assume $\displaystyle{\mu>0}$ in the following discussion.
 
 Set
 
-$$g_{\mu\nu}=g^{(0)}_{\mu\nu}+h_{\mu\nu},\qquad h\equiv g^{(0)\mu\nu}h_{\mu\nu}.$$
+$$\begin{align}
+g_{\mu\nu}=g^{(0)}_{\mu\nu}+h_{\mu\nu},\qquad h\equiv g^{(0)\mu\nu}h_{\mu\nu}.
+\end{align}$$
 
 The action through second order is written as
 
-$$I_{\rm GMG}=\frac{1}{16\pi G}\int d^3x\sqrt{-g^{(0)}}\left(\mathcal L^{(0)}+\mathcal L^{(1)}+\mathcal L^{(2)}\right)+\mathcal O(h^3),$$
+$$\begin{align}
+I_{\rm GMG}=\frac{1}{16\pi G}\int d^3x\sqrt{-g^{(0)}}\left(\mathcal L^{(0)}+\mathcal L^{(1)}+\mathcal L^{(2)}\right)+\mathcal O(h^3),
+\end{align}$$
 
 The coefficients in this section are not TT-gauge-fixed, and no integration by parts has been performed.
 
 with
 
-$$\mathcal L^{(n)}=\mathcal L_{\rm PG}^{(n)}+\frac{1}{\mu}L_{\rm CS}^{(n)}+\frac{1}{m^2}\mathcal L_{\rm NMG}^{(n)}.$$
+$$\begin{align}
+\mathcal L^{(n)}=\mathcal L_{\rm PG}^{(n)}+\frac{1}{\mu}L_{\rm CS}^{(n)}+\frac{1}{m^2}\mathcal L_{\rm NMG}^{(n)}.
+\end{align}$$
 
 Here $\mathcal L_{\rm PG}^{(n)}$ comes from $\sqrt{-g}(R+2)$, while $\mathcal L_{\rm NMG}^{(n)}$ comes from
 
-$$\sqrt{-g}\left[\frac{1}{2}-R_{\mu\nu}R^{\mu\nu}+\frac{3}{8}R^2\right].$$
+$$\begin{align}
+\sqrt{-g}\left[\frac{1}{2}-R_{\mu\nu}R^{\mu\nu}+\frac{3}{8}R^2\right].
+\end{align}$$
 
 The pure-gravity contribution is
 
@@ -75,11 +87,15 @@ $$\begin{align}
 
 For the Chern-Simons density, use the convention in the action:
 
-$$\sqrt{-g}\,L_{\rm CS}=\frac{1}{2}\tilde\varepsilon^{\lambda\mu\nu}\Gamma^\rho{}_{\lambda\sigma}\left(\partial_\mu\Gamma^\sigma{}_{\rho\nu}+\frac{2}{3}\Gamma^\sigma{}_{\mu\tau}\Gamma^\tau{}_{\nu\rho}\right),\qquad \tilde\varepsilon^{\lambda\mu\nu}=\sqrt{-g^{(0)}}\,\varepsilon^{(0)\lambda\mu\nu}.$$
+$$\begin{align}
+\sqrt{-g}\,L_{\rm CS}=\frac{1}{2}\tilde\varepsilon^{\lambda\mu\nu}\Gamma^\rho{}_{\lambda\sigma}\left(\partial_\mu\Gamma^\sigma{}_{\rho\nu}+\frac{2}{3}\Gamma^\sigma{}_{\mu\tau}\Gamma^\tau{}_{\nu\rho}\right),\qquad \tilde\varepsilon^{\lambda\mu\nu}=\sqrt{-g^{(0)}}\,\varepsilon^{(0)\lambda\mu\nu}.
+\end{align}$$
 
 Thus no determinant expansion multiplies the CS coefficients after factoring out $\sqrt{-g^{(0)}}$. With
 
-$$\Gamma^\rho{}_{\mu\nu}=\Gamma^{(0)\rho}{}_{\mu\nu}+\Gamma^{(1)\rho}{}_{\mu\nu}+\Gamma^{(2)\rho}{}_{\mu\nu}+\mathcal O(h^3),$$
+$$\begin{align}
+\Gamma^\rho{}_{\mu\nu}=\Gamma^{(0)\rho}{}_{\mu\nu}+\Gamma^{(1)\rho}{}_{\mu\nu}+\Gamma^{(2)\rho}{}_{\mu\nu}+\mathcal O(h^3),
+\end{align}$$
 
 where
 
@@ -103,11 +119,15 @@ L_{\rm CS}^{(2)}&=\frac{1}{2}\varepsilon^{(0)\lambda\mu\nu}\bigg[\Gamma^{(2)\rho
 
 Define the first-order parity operator
 
-$$(Eh)_{\mu\nu}\equiv \varepsilon_\mu{}^{\alpha\beta}\nabla^{(0)}_\alpha h_{\beta\nu}.$$
+$$\begin{align}
+(Eh)_{\mu\nu}\equiv \varepsilon_\mu{}^{\alpha\beta}\nabla^{(0)}_\alpha h_{\beta\nu}.
+\end{align}$$
 
 In TT gauge,
 
-$$\nabla^{(0)\mu}h_{\mu\nu}=0,\qquad h=0.$$
+$$\begin{align}
+\nabla^{(0)\mu}h_{\mu\nu}=0,\qquad h=0.
+\end{align}$$
 
 the three contributions to the linearized equation are
 
@@ -119,15 +139,21 @@ $$\begin{align}
 
 The sum gives
 
-$$\mathcal E_{\rm GMG}^{\rm TT}{}_{\mu\nu}=\frac{1}{2m^2}(\nabla^{(0)2}+2)\left[\nabla^{(0)2}h_{\mu\nu}-\frac{m^2}{\mu}(Eh)_{\mu\nu}-\left(m^2-\frac{5}{2}\right)h_{\mu\nu}\right],$$
+$$\begin{align}
+\mathcal E_{\rm GMG}^{\rm TT}{}_{\mu\nu}=\frac{1}{2m^2}(\nabla^{(0)2}+2)\left[\nabla^{(0)2}h_{\mu\nu}-\frac{m^2}{\mu}(Eh)_{\mu\nu}-\left(m^2-\frac{5}{2}\right)h_{\mu\nu}\right],
+\end{align}$$
 
 so the TT equation is
 
-$$(\nabla^{(0)2}+2)\left[\nabla^{(0)2}h_{\mu\nu}-\frac{m^2}{\mu}(Eh)_{\mu\nu}-\left(m^2-\frac{5}{2}\right)h_{\mu\nu}\right]=0.$$
+$$\begin{align}
+(\nabla^{(0)2}+2)\left[\nabla^{(0)2}h_{\mu\nu}-\frac{m^2}{\mu}(Eh)_{\mu\nu}-\left(m^2-\frac{5}{2}\right)h_{\mu\nu}\right]=0.
+\end{align}$$
 
 On TT tensors in the unit AdS$_3$ background,
 
-$$E^2h_{\mu\nu}=(\nabla^{(0)2}+3)h_{\mu\nu}.$$
+$$\begin{align}
+E^2h_{\mu\nu}=(\nabla^{(0)2}+3)h_{\mu\nu}.
+\end{align}$$
 
 ## First-order factorization
 
@@ -148,11 +174,15 @@ m_1+m_2&=-\frac{m^2}{\mu}.
 
 in the following discussion we denote the larger root as $\displaystyle{m_{+}}$ and the smaller root as $\displaystyle{m_{-}}$ (yes they may not be positive or negative, since $\displaystyle{m^{2}}$ may smaller than $\displaystyle{0}$). Then
 
-$$(D^L D^R D^{m_+}D^{m_-}h)_{\mu\nu}=0$$
+$$\begin{align}
+(D^L D^R D^{m_+}D^{m_-}h)_{\mu\nu}=0
+\end{align}$$
 
 is equivalent to the TT equation above. Explicitly,
 
-$$D^L D^R D^{m_+}D^{m_-}h=-\frac{1}{m_1m_2}(\nabla^{(0)2}+2)\left[\nabla^{(0)2}h-\frac{m^2}{\mu}Eh-\left(m^2-\frac{5}{2}\right)h\right],$$
+$$\begin{align}
+D^L D^R D^{m_+}D^{m_-}h=-\frac{1}{m_1m_2}(\nabla^{(0)2}+2)\left[\nabla^{(0)2}h-\frac{m^2}{\mu}Eh-\left(m^2-\frac{5}{2}\right)h\right],
+\end{align}$$
 
 where the last line suppresses tensor indices.
 
@@ -160,7 +190,7 @@ where the last line suppresses tensor indices.
 
 ### general discussion
 
-for cases $\displaystyle{m_{1}\neq m_{2}}$ and $\displaystyle{m_{1},m_{2}\neq \pm 1}$, the general solution is sum of contributions from each root $\displaystyle{m_{i}}$ and $\displaystyle{\pm 1}$. we have already solves the first order equations $\displaystyle{D^{L/R}h=0}$ in [[Articles/Quantization in AdS3/linearized gravity/eom|eom]]. we follows the same steps to find the solutions $\displaystyle{D^{m_{\pm}}h=0}$. consider the Casimir
+for cases $\displaystyle{m_{1}\neq m_{2}}$ and $\displaystyle{m_{1},m_{2}\neq \pm 1}$, the general solution is sum of contributions from each root $\displaystyle{m_{i}}$ and $\displaystyle{\pm 1}$. we have already solves the first order equations $\displaystyle{D^{L/R}h=0}$ in [[Articles/Quantization in AdS/linearized gravity/eom|eom]]. we follows the same steps to find the solutions $\displaystyle{D^{m_{\pm}}h=0}$. consider the Casimir
 
 $$\begin{align}
 \mathcal{C}h_{\mu \nu} & =-\frac{1}{4}\mathcal{D}_{\mu}^{~\alpha}\mathcal{D}_{\alpha}^{~\beta}h_{\beta \nu}-\frac{1}{2}\mathcal{D}_{\mu}^{~\alpha}h_{\alpha \nu}-\frac{1}{2}\mathcal{D}_{\nu}^{~\alpha}h_{\mu \alpha}-\frac{3}{4}h_{\mu \nu} \\
@@ -197,8 +227,9 @@ $$\begin{align}
 (h,\bar{h}) & = \left( \frac{3-m_{-}}{2},\frac{-1-m_{-}}{2}\right) \\
 (h,\bar{h}) & =\left(\frac{-1+m_{+}}{2},\frac{3+m_{+}}{2}\right)
 \end{align}$$
+
 ![[Attachments/gmg-parameter-region-positive-m2.png]]
-2. $\displaystyle{\mu\geqslant \frac{3}{4}}$ and $\displaystyle{m^{2}\leqslant -2\mu ^{2}-\mu \sqrt{ 4\mu ^{2}-2 }}$ and $\displaystyle{1-\frac{1}{2m^{2}}-\frac{1}{\mu}\geqslant 0}$, with admissible $\displaystyle{(h,\bar{h})}$ to be
+1. $\displaystyle{\mu\geqslant \frac{3}{4}}$ and $\displaystyle{m^{2}\leqslant -2\mu ^{2}-\mu \sqrt{ 4\mu ^{2}-2 }}$ and $\displaystyle{1-\frac{1}{2m^{2}}-\frac{1}{\mu}\geqslant 0}$, with admissible $\displaystyle{(h,\bar{h})}$ to be
 
 $$\begin{align}
 (h,\bar{h}) & =\left(\frac{m_{\pm}-1}{2},\frac{m_{\pm}+3}{2}\right)
@@ -224,11 +255,15 @@ h^{(-)}_{h,\bar h,\mu\nu}&\propto \frac{e^{-i(h+\bar h+2)t}}{(1+r^{2})^{(h+\bar{
 
 These components are transverse and traceless with respect to the background metric:
 
-$$g^{(0)\mu\nu}h^{(\sigma)}_{h,\bar h,\mu\nu}=0,\qquad \nabla^{(0)\mu}h^{(\sigma)}_{h,\bar h,\mu\nu}=0.$$
+$$\begin{align}
+g^{(0)\mu\nu}h^{(\sigma)}_{h,\bar h,\mu\nu}=0,\qquad \nabla^{(0)\mu}h^{(\sigma)}_{h,\bar h,\mu\nu}=0.
+\end{align}$$
 
 The leading boundary behavior is componentwise
 
-$$h^{(\sigma)}_{h,\bar h,\mu\nu}\sim r^{2-h-\bar h}e^{-i(h+\bar h)t+2i\sigma\phi}\mathcal{O}(r^0)_{\mu\nu}$$
+$$\begin{align}
+h^{(\sigma)}_{h,\bar h,\mu\nu}\sim r^{2-h-\bar h}e^{-i(h+\bar h)t+2i\sigma\phi}\mathcal{O}(r^0)_{\mu\nu}
+\end{align}$$
 
 so avoiding exponential divergence at the boundary requires $h+\bar h\geqslant2$, which leads to the regions discussed above.
 
@@ -236,21 +271,29 @@ so avoiding exponential divergence at the boundary requires $h+\bar h\geqslant2$
 
 Use the logarithmic factor
 
-$$y(t,r)=-it-\frac{1}{2}\log(1+r^2),$$
+$$\begin{align}
+y(t,r)=-it-\frac{1}{2}\log(1+r^2),
+\end{align}$$
 
 which is the $(t,r,\phi)$ form of $-i\tau-\log\cosh\rho$ with $r=\sinh\rho$.
 
 In the parameter regions above with $\mu>0$, a massive factor coincides with a massless factor on the $D^{m_i}=D^L$ critical line. Algebraically,
 
-$$D^{m_i}=D^L\Longleftrightarrow 1-\frac{1}{2m^2}-\frac{1}{\mu}=0.$$
+$$\begin{align}
+D^{m_i}=D^L\Longleftrightarrow 1-\frac{1}{2m^2}-\frac{1}{\mu}=0.
+\end{align}$$
 
 With the lower-index mode convention used here, the $\mu>0$ logarithmic partner is the parameter derivative of the massive primary at the $D^{m_i}=D^L$ degenerate weight. Up to normalization,
 
-$$D^L(yh_{0,2})\propto h_{0,2},\qquad (D^L)^2(yh_{0,2})=0.$$
+$$\begin{align}
+D^L(yh_{0,2})\propto h_{0,2},\qquad (D^L)^2(yh_{0,2})=0.
+\end{align}$$
 
 When the two massive factors coincide with each other but not with a massless factor, $D^{m_+}=D^{m_-}=D^m$, the repeated first-order root in the second parameter region above is positive:
 
-$$m_+=m_-=m=\mu+\frac{1}{2}\sqrt{4\mu^2-2}\geqslant1.$$
+$$\begin{align}
+m_+=m_-=m=\mu+\frac{1}{2}\sqrt{4\mu^2-2}\geqslant1.
+\end{align}$$
 
 The endpoint $m=1$ is the triple root discussed below. Away from that endpoint the boundary-admissible massive primary is the $h^{(-)}$ branch, and the logarithmic partner is
 
@@ -270,7 +313,9 @@ At a three-factor degeneration, there is also a logarithm-squared partner. For t
 
 The Jordan-chain relations are
 
-$$D^L(y^2h^{(-)}_{0,2})\propto yh^{(-)}_{0,2},\qquad (D^L)^3(y^2h^{(-)}_{0,2})=0.$$
+$$\begin{align}
+D^L(y^2h^{(-)}_{0,2})\propto yh^{(-)}_{0,2},\qquad (D^L)^3(y^2h^{(-)}_{0,2})=0.
+\end{align}$$
 
 and the 2-log primary satisfies the TT gauge condition.
 
@@ -318,7 +363,6 @@ $$\begin{align}
 &\quad+\frac{1}{16\pi G}\int_{\partial\Sigma}\mathrm{d}x\sqrt{h^{(0)}}\,\tau_\mu n_\nu\,\delta h^\mu{}_\rho\wedge\delta h^{\nu\rho}.
 \end{align}$$
 
-
 For the NMG piece,
 
 $$\begin{align}
@@ -329,7 +373,9 @@ $$\begin{align}
 
 For Chern-Simons piece, we adopt another route. Start from the non-perturbative gravitational Chern-Simons action
 
-$$S_{\text{CS}}=\frac{1}{32\pi G\mu}\int\operatorname{Tr}\left(\Gamma\wedge\mathrm{d}\Gamma+\frac{2}{3}\Gamma\wedge\Gamma\wedge\Gamma\right),$$
+$$\begin{align}
+S_{\text{CS}}=\frac{1}{32\pi G\mu}\int\operatorname{Tr}\left(\Gamma\wedge\mathrm{d}\Gamma+\frac{2}{3}\Gamma\wedge\Gamma\wedge\Gamma\right),
+\end{align}$$
 
 Thus the symplectic symplectic current are
 
@@ -346,7 +392,9 @@ $$\begin{align}
 
 On the linearized phase space around $g^{(0)}_{\mu\nu}$, the quadratic symplectic current only needs
 
-$$\delta\Gamma^{(1)\rho}{}_{\mu\nu}=\frac{1}{2}g^{(0)\rho\sigma}\left(\nabla^{(0)}_\mu\delta h_{\sigma\nu}+\nabla^{(0)}_\nu\delta h_{\mu\sigma}-\nabla^{(0)}_\sigma\delta h_{\mu\nu}\right).$$
+$$\begin{align}
+\delta\Gamma^{(1)\rho}{}_{\mu\nu}=\frac{1}{2}g^{(0)\rho\sigma}\left(\nabla^{(0)}_\mu\delta h_{\sigma\nu}+\nabla^{(0)}_\nu\delta h_{\mu\sigma}-\nabla^{(0)}_\sigma\delta h_{\mu\nu}\right).
+\end{align}$$
 
 Therefore the $\mu$-independent CS current in the decomposition above is
 
@@ -405,7 +453,9 @@ B_{\sigma}(\Delta) & =4+\frac{\sigma}{\mu}(\Delta ^{2}+2\Delta+6)+\frac{2}{m^{2}
 
 At the triple-root point recorded above, the parameters are given by
 
-$$m^2=-\frac{3}{2},\qquad \mu=\frac{3}{4},\qquad \Delta_*=2,$$
+$$\begin{align}
+m^2=-\frac{3}{2},\qquad \mu=\frac{3}{4},\qquad \Delta_*=2,
+\end{align}$$
 
 denote
 

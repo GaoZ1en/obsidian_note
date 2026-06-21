@@ -3,7 +3,7 @@
 calculate the vertex of process $\displaystyle{\ell _{2}(p_{2})\to \ell _{1}(p_{1})+\gamma(k)}$ with the intermediate states
 
 1. neutral scalar $\displaystyle{S^{0}}$, charged fermion $\displaystyle{F^{-}}$
-2. neutral fermion, charged scalar $\displaystyle{S^{-}}$
+1. neutral fermion, charged scalar $\displaystyle{S^{-}}$
 
 and check Ward identity for both cases. assume the Yukawa coupling constant is
 
@@ -12,7 +12,7 @@ $$\begin{align}
  & =-g\bar{\ell}_{1}S^{-}F^{0}-g\bar{F}^{0}\ell _{2}S^{-}+\text{h.c.} \quad \text{for case 2}
 \end{align}$$
 
-*sol*. 
+*sol*.
 
 ## case 1
 
@@ -170,7 +170,7 @@ $$\begin{align}
 \frac{1}{A_{1}A_{2}\dots A_{n}} & =\int ^{1}_{0} \prod ^{n}_{i=1}\mathrm{d}x_{i} \delta\left( \sum ^{n}_{i=1} x_{i}-1 \right) \frac{(n-1)!}{\left[ \sum ^{n}_{i=1}x_{i}A_{i} \right]^{n}}
 \end{align}$$
 
-2. momentum shift. 
+1. momentum shift.
 
 after parametrization, the denominator $\displaystyle{D}$ is quadratic in the loop momentum $\displaystyle{\ell}$. we can complete the square to remove the linear term:
 
@@ -180,13 +180,13 @@ $$\begin{align}
 
 where $\displaystyle{Q}$ is a linear combination of external momenta weighted by Feynman parameters, and $\displaystyle{\Delta=M^{2}-Q^{2}}$ is the effective mass term. we then shift the integration variable $\displaystyle{\tilde{\ell}=\ell+Q}$. the denominator becomes $\displaystyle{(\tilde{\ell}^{2}+\Delta)^{n}}$.
 
-3. numerator simplification
+1. numerator simplification
 
 the numerator is a polynomial in the loop momentum. after the shift $\displaystyle{\ell \to \tilde{\ell}-Q}$, we expand the numerator in powers of $\displaystyle{\tilde{\ell}}$. due to the symmetric integration over the full $\displaystyle{d}$-momentum space:
 - odd powers of $\displaystyle{\tilde{\ell}}$ vanish: $\displaystyle{\int \mathrm{d}^{d}\tilde{\ell} \frac{\tilde{\ell}^{\mu}}{(\tilde{\ell}^{2}+\Delta)^{n}}=0}$
 - even powers can be replaced using Lorentz invariance: $\displaystyle{\tilde{\ell}^{\mu}\tilde{\ell}^{\nu} \to \frac{1}{d} g^{\mu\nu} \tilde{\ell}^{2}}$
 
-4. Wick rotation
+1. Wick rotation
 
 to perform the integral, we rotate the contour of the $\displaystyle{\ell^{0}}$ integration to the imaginary axis (Euclidean space):
 
@@ -197,7 +197,7 @@ $$\begin{align}
 
 the denominator becomes $\displaystyle{(\ell^{2}+\Delta)^{n}=(\ell _{E}^{2}+\Delta)^{n}}$
 
-5. dimensional regularization
+1. dimensional regularization
 
 we evaluate the Euclidean integrals in $\displaystyle{d=4-2\epsilon}$ dimensions. the master formulas are:
 
@@ -206,7 +206,7 @@ $$\begin{align}
 \int \frac{\mathrm{d}^{d}\ell _{E}}{(2\pi)^{d}} \frac{\ell _{E}^{2}}{(\ell ^{2}_{E}+\Delta)^{n}} & =\frac{1}{(4\pi)^{d/2}} \frac{d}{2} \frac{\Gamma\left( n-\frac{d}{2}-1 \right)}{\Gamma(n)} \Delta ^{\frac{d}{2}-n+1}
 \end{align}$$
 
-6. expansion and renormalization
+1. expansion and renormalization
 
 finally, we expand the result around $\displaystyle{\epsilon \to 0}$.
 - terms with $\displaystyle{\Gamma(0)}$ or $\displaystyle{\Gamma(-n)}$ manifest as poles $\displaystyle{1/\epsilon}$ (UV divergences).

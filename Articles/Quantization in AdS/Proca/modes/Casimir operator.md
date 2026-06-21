@@ -72,10 +72,12 @@ $$\begin{align}
 \end{cases}
 \end{align}$$
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 {f^{+}_{l,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+2)t}(1+r^{2})^{-(\mu+2)/2}\xi _{1}^{\mu} \\
 {f^{+}_{r,0,0}}^{\mu} & =\sqrt{ \frac{\mu+1}{\pi \mu} }e^{-i(\mu+2)t}(1+r^{2})^{-(\mu+2)/2}\tilde{\xi}_{1}^{\mu}
-\end{align}$$
+\end{align}
+$$
 
 ---
 
@@ -143,7 +145,7 @@ $$\begin{align}
 \xi _{0}^{\rho}\xi ^{\nu}_{0}-\frac{1}{2}\xi ^{\rho}_{-1}\xi ^{\nu}_{1}-\frac{1}{2}\xi ^{\rho}_{1}\xi ^{\nu}_{-1} & =-\frac{1}{4}g^{\rho \nu}
 \end{align}$$
 
-which can be derived from the explicit form of Killing vectors or Killing 
+which can be derived from the explicit form of Killing vectors or Killing
 
 $$\begin{align}
 \nabla _{\rho}g^{\rho \nu} & =0 \\

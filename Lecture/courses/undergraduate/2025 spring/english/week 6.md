@@ -9,6 +9,4 @@ hustle(拼命)... gig(零工)... slacking(摸鱼)... cushy job(轻松的工作).
 
 mandatory()
 
-slouch(懒散)... stutter(口吃)... fidget(坐立不安)... procrastinate(拖延)... arrogant(傲慢)... ramble(喋喋不休)... 
-
-
+slouch(懒散)... stutter(口吃)... fidget(坐立不安)... procrastinate(拖延)... arrogant(傲慢)... ramble(喋喋不休)...

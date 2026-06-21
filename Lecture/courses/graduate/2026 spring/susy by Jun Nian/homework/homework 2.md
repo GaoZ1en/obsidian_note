@@ -82,7 +82,7 @@ the ISS model has the following superpotential
 
 $$\begin{align}
 W & =h\operatorname{Tr}\bar{q}\Phi q-h\mu ^{2}\operatorname{Tr}\Phi \\
-& =h \bar{q}^{i}_{a}\Phi ^{j}_{~i}q^{a}_{j}-h\mu ^{2}\Phi ^{i}_{~i} 
+& =h \bar{q}^{i}_{a}\Phi ^{j}_{~i}q^{a}_{j}-h\mu ^{2}\Phi ^{i}_{~i}
 \end{align}$$
 
 here $\displaystyle{h}$ and $\displaystyle{\mu}$ are two constant parameters, while $\displaystyle{q,\bar{q}}$ and $\displaystyle{\Phi}$ are three chiral superfields with the color index $\displaystyle{a=1,\dots,N_{c}}$ and the flavor indices $\displaystyle{i,j=1,\dots,N_{f}}$. these color and flavor indices label the components of superfields, and different components can be viewed as independent fields. derive the scalar potential in this case, and discuss if SUSY is spontaneously broken for $\displaystyle{N_{c}<N_{f}}$.
@@ -110,4 +110,4 @@ $$\begin{align}
 \bar{q}q=\mu ^{2}\mathbb{I}_{N_{f}}
 \end{align}$$
 
-since $\displaystyle{\mathrm{rank}\bar{q}q\leqslant N_{c}}$. if $\displaystyle{\mu ^{2}\neq 0}$, the rank of RHS is $\displaystyle{N_{f}}$. so when $\displaystyle{N_{c}<N_{f}}$, the above eq don't hold. thus we must have SSB SUSY. 
+since $\displaystyle{\mathrm{rank}\bar{q}q\leqslant N_{c}}$. if $\displaystyle{\mu ^{2}\neq 0}$, the rank of RHS is $\displaystyle{N_{f}}$. so when $\displaystyle{N_{c}<N_{f}}$, the above eq don't hold. thus we must have SSB SUSY.

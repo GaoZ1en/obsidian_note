@@ -1,10 +1,10 @@
 so many people...
 
 1. ideas of general relativity
-2. Lagrangian formalism of general relativity
-3. Hamiltonian formalism of general relativity
-4. ideas of LQG
-5. Palatini formalism of general relativity
+1. Lagrangian formalism of general relativity
+1. Hamiltonian formalism of general relativity
+1. ideas of LQG
+1. Palatini formalism of general relativity
 
 ---
 
@@ -104,4 +104,3 @@ X_{\mathcal{S}(N)} & =\int _{\Sigma}\mathrm{d}^{3}x\left[\mathcal{L}_{N\tau}h_{a
 ## ideas of LQG
 
 the idea is to combine basic principles of general relativity and quantum mechanics. and the dynamical dofs are chosen to be holonomies $\displaystyle{h(e)}$ and electric flux $\displaystyle{\tilde{E}(S)}$.
-

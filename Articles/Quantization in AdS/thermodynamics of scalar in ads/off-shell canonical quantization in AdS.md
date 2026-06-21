@@ -23,4 +23,3 @@ $$\begin{align}
 \end{align}$$
 
 ---
-

@@ -21,9 +21,11 @@ $$\begin{align}
 
 we expand the field operator as
 
-$$\tag{1.1}\begin{align}
+$$
+\tag{1.1}\begin{align}
 A^{\mu} & =\sum _{n=0}^{\infty}\sum _{m=-\infty}^{\infty}\left({h^{(+)}_{+,m,n}}^{\mu}a_{+,m,n}+{h^{(+)}_{-,m,n}}^{\mu}a_{-,m,n}+{h^{(-)}_{+,m,n}}^{\mu}a^{\dagger}_{+,m,n}+{h^{(-)}_{-,m,n}}^{\mu}a^{\dagger}_{-,m,n}\right)
-\end{align}$$
+\end{align}
+$$
 
 the symplectic form is defined as
 

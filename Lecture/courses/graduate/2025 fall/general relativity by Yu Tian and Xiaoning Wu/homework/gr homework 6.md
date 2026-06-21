@@ -17,7 +17,7 @@ $$\begin{align}
 V_{\text{eff}}(r) & =\left( 1-\frac{2M}{r} \right)\left( 1+\frac{L^{2}}{r^{2}} \right)
 \end{align}$$
 
-*sol*. 
+*sol*.
 
 we first present the non-zero Christoffel symbols of Schwarzschild metric:
 
@@ -79,4 +79,4 @@ give the condition that the particle cannot move to infinity with conserved ener
 
 *sol*.
 
-the particle cannot move to infinity if its conserved energy $\displaystyle{E}$ is less than the effective potential $\displaystyle{V_{\text{eff}}(r)}$ at its maximum. 
+the particle cannot move to infinity if its conserved energy $\displaystyle{E}$ is less than the effective potential $\displaystyle{V_{\text{eff}}(r)}$ at its maximum.

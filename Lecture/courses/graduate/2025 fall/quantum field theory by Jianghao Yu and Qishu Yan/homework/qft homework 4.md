@@ -35,9 +35,9 @@ $$\begin{align}
 p^{0}\delta ^{3}(\vec{p}'-\vec{p}) & =k^{0}\delta ^{3}(\vec{k}'-\vec{k})
 \end{align}$$
 
-here $\displaystyle{p',p}$ are future directed timelike vector and they are related to $\displaystyle{k',k}$ respectively by a Lorentz transformation. 
+here $\displaystyle{p',p}$ are future directed timelike vector and they are related to $\displaystyle{k',k}$ respectively by a Lorentz transformation.
 
-*sol*. 
+*sol*.
 
 we only need to check this for a boost. consider a boost with velocity $\displaystyle{v}$ along a future directed timelike unit vector $\displaystyle{\hat{n}}$. decompose $\displaystyle{\vec{p}=p_{\parallel}\hat{n}+\vec{p}_{\bot}}$, then
 

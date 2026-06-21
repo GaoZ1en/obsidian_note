@@ -115,7 +115,7 @@ and BRST nilpotency on $\displaystyle{\bar c}$ holds only after using the ghost 
 This suggests two possible routes:
 
 1. Work with the off-shell BRST action including $\displaystyle{B}$, compute the CPS symplectic form on the extended field space, then impose BRST cohomology.
-2. Work with the $\displaystyle{B}$-integrated action, but accept that BRST nilpotency and the cohomological interpretation are on-shell statements.
+1. Work with the $\displaystyle{B}$-integrated action, but accept that BRST nilpotency and the cohomological interpretation are on-shell statements.
 
 The first route is conceptually cleaner for combining BRST with CPS.
 

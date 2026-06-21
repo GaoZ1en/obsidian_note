@@ -2,98 +2,98 @@
 
 to see how the formalism works in practice, it is enough to study the undeformed free massless scalar on flat $1+1$ dimensional Minkowski space,
 
-$$
+$$\begin{align}
 S_0=\int \mathrm d^2x\,\mathcal L_0,
 \qquad
 \mathcal L_0=\frac{1}{2}(\dot\phi^2-\phi'^2).
-$$
+\end{align}$$
 
 here $\dot\phi:=\partial_t\phi$ and $\phi':=\partial_x\phi$. the canonical momentum is
 
-$$
+$$\begin{align}
 \pi=\frac{\partial \mathcal L_0}{\partial \dot\phi}=\dot\phi.
-$$
+\end{align}$$
 
 the Hilbert stress tensor is
 
-$$
+$$\begin{align}
 T^{(0)}_{\mu\nu}=\partial_\mu\phi\,\partial_\nu\phi-\frac{1}{2}\eta_{\mu\nu}(\partial\phi)^2,
-$$
+\end{align}$$
 
 so in canonical variables,
 
-$$
+$$\begin{align}
 T^{(0)}_{00}=\frac{1}{2}(\pi^2+\phi'^2),
 \qquad
 T^{(0)}_{01}=\pi\phi',
 \qquad
 T^{(0)}_{11}=\frac{1}{2}(\pi^2+\phi'^2).
-$$
+\end{align}$$
 
 therefore
 
-$$
+$$\begin{align}
 \det T^{(0)}
 =T^{(0)}_{00}T^{(0)}_{11}-(T^{(0)}_{01})^2
 =\frac{1}{4}(\pi^2-\phi'^2)^2
 =\frac{1}{4}(\dot\phi^2-\phi'^2)^2.
-$$
+\end{align}$$
 
 with the convention
 
-$$
+$$\begin{align}
 \partial_\lambda \mathcal L_\lambda=\det T^{(\lambda)},
-$$
+\end{align}$$
 
 the deformed Lagrangian begins as
 
-$$
+$$\begin{align}
 \mathcal L_\lambda
 =\frac{1}{2}(\dot\phi^2-\phi'^2)
 +\frac{\lambda}{4}(\dot\phi^2-\phi'^2)^2
 +O(\lambda^2).
-$$
+\end{align}$$
 
 # symplectic potential and its $\lambda$-flow
 
 for a first-order Lagrangian in time derivatives, the symplectic potential on a constant-time slice $\Sigma$ is
 
-$$
+$$\begin{align}
 \Theta_{\Sigma,\lambda}=\int_\Sigma \mathrm dx\,\pi_\lambda\,\delta\phi,
-$$
+\end{align}$$
 
 with
 
-$$
+$$\begin{align}
 \pi_\lambda=\frac{\partial \mathcal L_\lambda}{\partial \dot\phi}
 =\dot\phi+\lambda(\dot\phi^2-\phi'^2)\dot\phi+O(\lambda^2).
-$$
+\end{align}$$
 
 evaluated at $\lambda=0$, this gives
 
-$$
+$$\begin{align}
 \partial_\lambda \Theta_{\Sigma,\lambda}\big|_{\lambda=0}
 =\int_\Sigma \mathrm dx\,(\dot\phi^2-\phi'^2)\dot\phi\,\delta\phi
 =\int_\Sigma \mathrm dx\,(\pi^2-\phi'^2)\pi\,\delta\phi.
-$$
+\end{align}$$
 
 so the field-space one-form that controls the deformation is
 
-$$
+$$\begin{align}
 B_{\Sigma,0}=\int_\Sigma \mathrm dx\,(\pi^2-\phi'^2)\pi\,\delta\phi.
-$$
+\end{align}$$
 
 the undeformed symplectic form is the usual canonical one,
 
-$$
+$$\begin{align}
 \Omega_{\Sigma,0}=\int_\Sigma \mathrm dx\,\delta\pi\wedge\delta\phi.
-$$
+\end{align}$$
 
 therefore
 
-$$
+$$\begin{align}
 \partial_\lambda \Omega_{\Sigma,\lambda}\big|_{\lambda=0}=\delta B_{\Sigma,0}.
-$$
+\end{align}$$
 
 this is the concrete version of the general formal statement in the self-consistent formalism note.
 
@@ -101,29 +101,29 @@ this is the concrete version of the general formal statement in the self-consist
 
 to trivialize the first-order change of the symplectic form, solve
 
-$$
+$$\begin{align}
 i_{Y_0}\Omega_{\Sigma,0}=-B_{\Sigma,0}.
-$$
+\end{align}$$
 
 because
 
-$$
+$$\begin{align}
 \Omega_{\Sigma,0}=\int_\Sigma \mathrm dx\,\delta\pi\wedge\delta\phi,
-$$
+\end{align}$$
 
 one convenient choice is
 
-$$
+$$\begin{align}
 Y_0=-\int_\Sigma \mathrm dx\,(\pi^2-\phi'^2)\pi\,\frac{\delta}{\delta\pi(x)}.
-$$
+\end{align}$$
 
 indeed,
 
-$$
+$$\begin{align}
 i_{Y_0}\Omega_{\Sigma,0}
 =-\int_\Sigma \mathrm dx\,(\pi^2-\phi'^2)\pi\,\delta\phi
 =-B_{\Sigma,0}.
-$$
+\end{align}$$
 
 so for the free scalar the first-order deformation vector can be written explicitly. this is the object that should be used to transport symmetries and observables if one wants a dressed picture.
 
@@ -131,46 +131,46 @@ so for the free scalar the first-order deformation vector can be written explici
 
 the undeformed massless scalar has the shift symmetry
 
-$$
+$$\begin{align}
 \delta_a\phi=a,
 \qquad
 X_a=a\int_\Sigma \mathrm dx\,\frac{\delta}{\delta\phi(x)},
-$$
+\end{align}$$
 
 with constant parameter $a$. because the $T\bar T$ deformation depends only on derivatives of $\phi$, this geometric action does not need to change in the bare picture:
 
-$$
+$$\begin{align}
 \partial_\lambda X_a=0.
-$$
+\end{align}$$
 
 however the corresponding charge does deform. to first order,
 
-$$
+$$\begin{align}
 Q_a(\lambda)=a\int_\Sigma \mathrm dx\,\pi_\lambda
 =a\int_\Sigma \mathrm dx\Big[\pi+\lambda(\pi^2-\phi'^2)\pi\Big]+O(\lambda^2),
-$$
+\end{align}$$
 
 so
 
-$$
+$$\begin{align}
 \partial_\lambda Q_a\big|_{\lambda=0}
 =a\int_\Sigma \mathrm dx\,(\pi^2-\phi'^2)\pi
 =i_{X_a}B_{\Sigma,0}.
-$$
+\end{align}$$
 
 this is exactly the bare-picture formula
 
-$$
+$$\begin{align}
 \partial_\lambda H_{\xi,\lambda}=i_{X_\xi}B_{\Sigma,\lambda}+c_\xi(\lambda)
-$$
+\end{align}$$
 
 with the additive constant chosen to vanish.
 
 # what this example shows
 
 1. even in a very simple theory, $\partial_\lambda\Omega_\Sigma$ is not naturally zero; it is naturally field-space exact.
-2. the deformation of the symmetry data is most cleanly organized by the phase-space vector $Y_\lambda$, not by guessing $\partial_\lambda X_\xi$ directly.
-3. in the bare picture the symmetry vector can stay fixed while the charge deforms.
-4. in the dressed picture one transports both observables and symmetry generators by the flow generated by $Y_\lambda$.
+1. the deformation of the symmetry data is most cleanly organized by the phase-space vector $Y_\lambda$, not by guessing $\partial_\lambda X_\xi$ directly.
+1. in the bare picture the symmetry vector can stay fixed while the charge deforms.
+1. in the dressed picture one transports both observables and symmetry generators by the flow generated by $Y_\lambda$.
 
 if I want to continue this note further, the next natural step is to compute the dressed translation or conformal generators on the plane, or to compare this perturbative construction with the exact Born-Infeld type expression for the $T\bar T$-deformed scalar Lagrangian.

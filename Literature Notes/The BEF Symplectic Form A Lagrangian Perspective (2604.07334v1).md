@@ -93,7 +93,7 @@ the $\displaystyle{\sigma}$ operator play a role as time, and does not depend on
 we consider a $\displaystyle{\sigma}$-modified action
 
 $$\begin{align}
-S_{\sigma} & =-\sum ^{\infty}_{n=1} \frac{1}{(n+1)!}\omega(\sigma \phi,L_{n}(\phi,\dots,\phi)) 
+S_{\sigma} & =-\sum ^{\infty}_{n=1} \frac{1}{(n+1)!}\omega(\sigma \phi,L_{n}(\phi,\dots,\phi))
 \end{align}$$
 
 take a variation of the action

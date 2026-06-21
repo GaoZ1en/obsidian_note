@@ -1,6 +1,6 @@
 1. expansion in eigen-functions
-2. equations of motion for correlation functions
-3. 3
-4. 4
-5. 5
-6. 6
+1. equations of motion for correlation functions
+1. 3
+1. 4
+1. 5
+1. 6

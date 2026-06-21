@@ -57,7 +57,7 @@ S[x^{\mu}] & =-m\int \sqrt{-\eta _{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu}}\mathrm{d}
 
 ---
 
-here in the Hamiltonian action, $\displaystyle{\lambda}$ term is actually a constraint. 
+here in the Hamiltonian action, $\displaystyle{\lambda}$ term is actually a constraint.
 
 ## Lagrange formalism
 
@@ -90,7 +90,7 @@ $$\begin{align}
 \left[ \frac{\partial L}{\partial q^{i}}-\frac{\mathrm{d}}{\mathrm{d}t}\left(  \frac{\partial L}{\partial \dot{q}^{i}} \right) \right]\Big|_{q^{i}=\gamma ^{i}(t)} & =0
 \end{align}$$
 
-the Lagrangian $\displaystyle{L\in C^{\infty}(J^{1})=C^{\infty}(TM\times \mathbb{R})}$. $\displaystyle{J^{1}}$ is a simple example of the socalled jet bundle/space. here $\displaystyle{\mathbb{R}}$ is the base space, and $\displaystyle{TM}$ is the fibre. the trivialization $\displaystyle{\pi :J^{1}\to \mathbb{R}}$, with $\displaystyle{\pi(t,p)=t}$, where $\displaystyle{t\in \mathbb{R},p \in TM}$. the sections of $\displaystyle{J^{1}}$ is exactly the trajectories: $\displaystyle{\gamma:T\to J^{1}}$ such that $\displaystyle{\pi \circ\gamma=\mathrm{id}_{\mathbb{R}}}$. 
+the Lagrangian $\displaystyle{L\in C^{\infty}(J^{1})=C^{\infty}(TM\times \mathbb{R})}$. $\displaystyle{J^{1}}$ is a simple example of the socalled jet bundle/space. here $\displaystyle{\mathbb{R}}$ is the base space, and $\displaystyle{TM}$ is the fibre. the trivialization $\displaystyle{\pi :J^{1}\to \mathbb{R}}$, with $\displaystyle{\pi(t,p)=t}$, where $\displaystyle{t\in \mathbb{R},p \in TM}$. the sections of $\displaystyle{J^{1}}$ is exactly the trajectories: $\displaystyle{\gamma:T\to J^{1}}$ such that $\displaystyle{\pi \circ\gamma=\mathrm{id}_{\mathbb{R}}}$.
 
 definition: jet bundle $\displaystyle{J^{k}(E)\to T}$, with local coordinates $\displaystyle{\left\{(t,[\gamma]_{t}),t\in T,\gamma \text{ section}, [\cdot]_{t}\text{ equivalent class of sections at } t\right\}}$. the equivalent relation here means that
 
@@ -136,7 +136,7 @@ $$\begin{align}
 which satisfies the following properties
 
 1. $\displaystyle{f\in C^{\infty}(J^{k}(E))}$, $\displaystyle{\gamma ^{*} _{\text{pr}}\left( \frac{Df}{\mathrm{d}t} \right)=\frac{\mathrm{d}}{\mathrm{d}t}(\gamma ^{*}_{\text{pr}}(f))}$
-2. if $\displaystyle{\gamma}$ is a solution to $\displaystyle{\left\{E_{\alpha}\right\}}$, then $\displaystyle{\gamma}$ also solves $\displaystyle{\frac{D^{\ell}E_{\alpha}}{\mathrm{d}t^{\ell}}}$
+1. if $\displaystyle{\gamma}$ is a solution to $\displaystyle{\left\{E_{\alpha}\right\}}$, then $\displaystyle{\gamma}$ also solves $\displaystyle{\frac{D^{\ell}E_{\alpha}}{\mathrm{d}t^{\ell}}}$
 
 *Euler-Lagrange derivative* is defined as
 
@@ -147,4 +147,3 @@ $$\begin{align}
 so the eom's are defined as $\displaystyle{E_{i}:=\frac{\delta ^{\text{EL}}L}{\delta q^{i}}}$.
 
 Hamiltonian formalism?
-

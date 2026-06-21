@@ -8,7 +8,8 @@ summary: "Finds Euler angles for specified rotation matrices and rotation axes; 
 
 find the Euler angles of the following rotation transformation $\displaystyle{R}$:
 
-1. 
+1.
+
 $$\begin{align}
 R(\alpha,\beta,\gamma) & =\frac{1}{4}\begin{pmatrix}
 -\sqrt{ 3 }-2 & \sqrt{ 3 }-2 & -\sqrt{ 2 } \\
@@ -17,7 +18,8 @@ R(\alpha,\beta,\gamma) & =\frac{1}{4}\begin{pmatrix}
 \end{pmatrix}
 \end{align}$$
 
-2. 
+2.
+
 $$\begin{align}
 R(\alpha,\beta,\gamma) & =\frac{1}{8}\begin{pmatrix}
 \sqrt{ 6 }+2\sqrt{ 3 } & 3\sqrt{ 2 }-2 & 2\sqrt{ 6 } \\
@@ -42,14 +44,14 @@ R(\alpha,\beta,\gamma) & =R(\vec{e}_{3},\alpha)R(\vec{e}_{2},\beta)R(\vec{e}_{3}
 we solve out the Euler angles as follows:
 
 1. $\displaystyle{\alpha=\frac{3\pi}{4},\beta=\frac{\pi}{6},\gamma=\frac{\pi}{4}}$
-2. $\displaystyle{\alpha=\frac{\pi}{6},\beta=\frac{\pi}{4},\gamma=-\frac{\pi}{3}}$
+1. $\displaystyle{\alpha=\frac{\pi}{6},\beta=\frac{\pi}{4},\gamma=-\frac{\pi}{3}}$
 
 # problem 2
 
 find the Euler angles of the following rotation transformation $\displaystyle{R(\vec{n},\omega)}$:
 
 1. $\displaystyle{R(\vec{e}_{1}\sin \theta+\vec{e}_{3}\cos \theta,\pi)}$
-2. $\displaystyle{R\left[ \frac{\vec{e}_{1}+\vec{e}_{2}+\vec{e}_{3}}{\sqrt{ 3 }},\frac{2\pi}{3} \right]}$
+1. $\displaystyle{R\left[ \frac{\vec{e}_{1}+\vec{e}_{2}+\vec{e}_{3}}{\sqrt{ 3 }},\frac{2\pi}{3} \right]}$
 
 ## solution
 
@@ -71,7 +73,8 @@ n_{z} & 0 & -n_{x} \\
 
 we have
 
-1. 
+1.
+
 $$\begin{align}
 R(\vec{e}_{1}\sin \theta+\vec{e}_{3}\cos \theta,\pi) & =\begin{pmatrix}
 -\cos 2\theta & 0 & \sin 2\theta \\
@@ -81,7 +84,8 @@ R(\vec{e}_{1}\sin \theta+\vec{e}_{3}\cos \theta,\pi) & =\begin{pmatrix}
 \implies \beta & =2\theta,\alpha=0,\gamma=\pi
 \end{align}$$
 
-2. 
+2.
+
 $$\begin{align}
 R\left[ \frac{\vec{e}_{1}+\vec{e}_{2}+\vec{e}_{3}}{\sqrt{ 3 }},\frac{2\pi}{3} \right] & =\begin{pmatrix}
 0 & 0 & 1 \\
@@ -90,4 +94,3 @@ R\left[ \frac{\vec{e}_{1}+\vec{e}_{2}+\vec{e}_{3}}{\sqrt{ 3 }},\frac{2\pi}{3} \r
 \end{pmatrix} \\
 \implies \beta & =\frac{\pi}{2},\alpha=0,\gamma=\frac{\pi}{2}
 \end{align}$$
-

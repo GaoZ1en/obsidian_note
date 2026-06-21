@@ -3,7 +3,7 @@
 # free scalar
 
 $$\begin{align}
-S & =-\frac{1}{2}\int \mathrm{d}^{d}x\sqrt{ -g }\nabla _{\mu}\phi \nabla ^{\mu}\phi & 
+S & =-\frac{1}{2}\int \mathrm{d}^{d}x\sqrt{ -g }\nabla _{\mu}\phi \nabla ^{\mu}\phi &
 \end{align}$$
 
 需要注意的是在我们常用的记号下辛势和辛形式会多一个负号
@@ -25,4 +25,3 @@ $$\begin{align}
 很遗憾的是对conformal transformation的变换支持不太行...
 
 不过给出粒子的几率分布像是相对论量子力学的
-

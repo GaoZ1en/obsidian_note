@@ -7,4 +7,3 @@ age = "14"
 print("name:", name, "age:", age)
 print(f"name:{name},age:{age}") // recommended
 ```
-

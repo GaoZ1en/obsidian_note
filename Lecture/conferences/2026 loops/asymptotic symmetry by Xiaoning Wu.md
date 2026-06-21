@@ -47,7 +47,7 @@ Petrov characterization of Weyl curvature.
 - N:
 - O:
 
-Petrov type I is called algebraically trivial(?), and other types are called algebraically special(?). a 
+Petrov type I is called algebraically trivial(?), and other types are called algebraically special(?). a
 
 theorem. (how to determine the Petrov type)
 

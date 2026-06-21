@@ -114,8 +114,8 @@ open set, closed set, limit point, interior, closure, boundary.
 
 topological space:
 1. the union of any collection of open sets is open.
-2. the finite intersection of open sets is open.
-3. the empty set and the whole space are open.
+1. the finite intersection of open sets is open.
+1. the empty set and the whole space are open.
 
 topological basis:
 - any open set can be expressed as a union of basis elements.
@@ -130,7 +130,7 @@ what is neighborhood of a point? a set that contains an open set which contains 
 
 ---
 
-compactness: any open cover has a finit subcover. 
+compactness: any open cover has a finit subcover.
 - any open cover that consists of basis elements has a finite subcover.
 - compact subset is compact under the subspace topology, that is, a open set of the subset is the intersection of the subset with a open set of the whole space.
 - compact subset of a Hausdorff space is closed.
@@ -151,5 +151,3 @@ path connectedness: any two points can be connected by a continuous curve.
 - path connectedness implies connectedness
 
 soldering. suppose $\displaystyle{X}$ and $\displaystyle{Y}$ are subspaces of some topological space. suppose $\displaystyle{f:X\to Z,g:Y\to Z}$, and $\displaystyle{f=g, \forall x \in X\cap Y}$, define the soldered map as $\displaystyle{f\cup g:X\cup Y\to Z}$ in the natural way. the if $\displaystyle{X}$ and $\displaystyle{Y}$ are closed in $\displaystyle{X\cup Y}$, and $\displaystyle{f}$ and $\displaystyle{g}$ are continuous, then $\displaystyle{f\cup g}$ is continuous.
-
-

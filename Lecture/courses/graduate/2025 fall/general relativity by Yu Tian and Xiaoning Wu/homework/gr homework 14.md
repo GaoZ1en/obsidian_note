@@ -19,7 +19,7 @@ $$\begin{align}
 \hat{R}^{l}_{~ijk} & =e_{i}(\Gamma ^{l}_{~jk})-e_{j}(\Gamma ^{l}_{~ik})+\Gamma ^{m}_{~jk}\Gamma ^{l}_{~im}-\Gamma ^{m}_{~ik}\Gamma ^{l}_{~jm}-C^{m}_{~ij}\Gamma ^{l}_{~mk}
 \end{align}$$
 
-2. check that when the frames are coordinate frames, the formula reduces to the usual coordinate expression for the curvature coefficients.
+1. check that when the frames are coordinate frames, the formula reduces to the usual coordinate expression for the curvature coefficients.
 
 *sol*.
 
@@ -34,7 +34,7 @@ $$\begin{align}
  & = e_{i}(\Gamma ^{l}_{~jk})-e_{j}(\Gamma ^{l}_{~ik})+\Gamma ^{m}_{~jk}\Gamma ^{l}_{~im}-\Gamma ^{m}_{~ik}\Gamma ^{l}_{~jm}-C^{m}_{~ij}\Gamma ^{l}_{~mk}
 \end{align}$$
 
-2. for coordinate frames, we have $\displaystyle{[e_{i},e_{j}]=0}$, so $\displaystyle{C^{m}_{~ij}=0}$. also, $\displaystyle{e_{i}=\partial _{i}}$. thus the formula reduces to
+1. for coordinate frames, we have $\displaystyle{[e_{i},e_{j}]=0}$, so $\displaystyle{C^{m}_{~ij}=0}$. also, $\displaystyle{e_{i}=\partial _{i}}$. thus the formula reduces to
 
 $$\begin{align}
 \hat{R}^{l}_{~ijk} & =\partial _{i}(\Gamma ^{l}_{~jk})-\partial _{j}(\Gamma ^{l}_{~ik})+\Gamma ^{m}_{~jk}\Gamma ^{l}_{~im}-\Gamma ^{m}_{~ik}\Gamma ^{l}_{~jm}
@@ -84,7 +84,7 @@ h_{\theta z} & = 0
 
 thus the extrinsic curvature tensor is $\displaystyle{h=-R\mathrm{d}\theta ^{2}}$.
 
-2. sphere. without loss of generality, consider a sphere of radius $\displaystyle{R}$ at the origin. parameterize it as 
+1. sphere. without loss of generality, consider a sphere of radius $\displaystyle{R}$ at the origin. parameterize it as
 
 $$\begin{align}
 \Phi(\theta,\phi) & =(R\sin \theta \cos \phi,R\sin \theta \sin \phi,R\cos \theta)
@@ -122,4 +122,3 @@ thus the extrisic curvature is then
 $$\begin{align}
 h & =-R\mathrm{d}\theta ^{2}-R\sin ^{2}\theta \mathrm{d}\phi ^{2}
 \end{align}$$
-

@@ -193,8 +193,8 @@ $$\begin{align}
 then we have to show
 
 1. $\displaystyle{h^{\mu}_{+,m=0,n}}$ and $\displaystyle{h^{\mu}_{-,m=0,n}}$ differ by a gauge transformation, $\displaystyle{n\in \mathbb{N}}$.
-2. $\displaystyle{h^{\mu}_{+,m\geqslant 1,n+1}}$ and $\displaystyle{h^{\mu}_{-,m\geqslant1,n}}$ differ by a gauge transformation, $\displaystyle{n\in \mathbb{N}}$.
-3. $\displaystyle{h^{\mu}_{+,m\leqslant -1,n}}$ and $\displaystyle{h^{\mu}_{-,m\leqslant -1,n+1}}$ differ by a gauge transformation, $\displaystyle{n\in \mathbb{N}}$.
+1. $\displaystyle{h^{\mu}_{+,m\geqslant 1,n+1}}$ and $\displaystyle{h^{\mu}_{-,m\geqslant1,n}}$ differ by a gauge transformation, $\displaystyle{n\in \mathbb{N}}$.
+1. $\displaystyle{h^{\mu}_{+,m\leqslant -1,n}}$ and $\displaystyle{h^{\mu}_{-,m\leqslant -1,n+1}}$ differ by a gauge transformation, $\displaystyle{n\in \mathbb{N}}$.
 
 ## $\displaystyle{h_{+,m=0,n}^{\mu},h^{\mu}_{-,m=0,n}}$
 
@@ -320,7 +320,6 @@ $$\begin{align}
 \end{align}$$
 
 Thus these $\displaystyle{N\geq1}$ null modes are proper gauge transformations. They are not large gauge transformations, since the gauge parameter vanishes at the boundary.
-
 
 ## $\displaystyle{h^{\mu}_{+,m\leqslant -1,n}}$ and $\displaystyle{h^{\mu}_{-,m\leqslant -1,n+1}}$
 
@@ -456,7 +455,7 @@ $$\begin{align}
 
 regularity at $\displaystyle{r=0}$ requires us to discard the second solution.
 
-actually the solutions around $\displaystyle{z=1}$ does not necessarily match solutions around $\displaystyle{z=0}$... 
+actually the solutions around $\displaystyle{z=1}$ does not necessarily match solutions around $\displaystyle{z=0}$...
 
 ---
 

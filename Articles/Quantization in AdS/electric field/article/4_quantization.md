@@ -18,9 +18,9 @@ A^{\mu}(x)\big|_{\widetilde{\mathcal{P}}_{\mathrm{osc}}}&=\sum_{N}\left(f_{N}^{\
 
 Here $N$ is a collective index. Treating the Fourier coefficients $a_N$ and $a_N^*$ as conjugate coordinates maps the continuous solution space $\widetilde{\mathcal{P}}$ to a discrete set of variables. Substituting the mode expansion into the bilinear symplectic form reduces it to
 
-$$
-\Omega\big|_{\widetilde{\mathcal{P}}} =\sum_{N_1, N_2} \Omega[f_{N_1}, f^{*}_{N_2}]\big|_{\widetilde{\mathcal{P}}} \delta a_{N_1} \wedge \delta a^{*}_{N_2}, 
-$$
+$$\begin{align}
+\Omega\big|_{\widetilde{\mathcal{P}}} =\sum_{N_1, N_2} \Omega[f_{N_1}, f^{*}_{N_2}]\big|_{\widetilde{\mathcal{P}}} \delta a_{N_1} \wedge \delta a^{*}_{N_2},
+\end{align}$$
 
 where $\Omega[\cdot,\cdot]|_{\widetilde{\mathcal{P}}}$ denotes the fundamental symplectic pairing integrated over a Cauchy slice.
 

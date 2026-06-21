@@ -13,13 +13,13 @@ $$\begin{align}
 \end{align}$$
 
 1. prove that $\displaystyle{r=\rho\left( 1+\frac{M}{2\rho} \right)^{2}}$
-2. insert this transformation into the Schwarzschild metric and show that
+1. insert this transformation into the Schwarzschild metric and show that
 
 $$\begin{align}
 \mathrm{d}s^{2} & =-\left( \frac{1-\frac{M}{2\rho}}{1+\frac{M}{2\rho}} \right)^{2}\mathrm{d}t^{2}+\left( 1+\frac{M}{2\rho} \right)^{4}(\mathrm{d}\rho ^{2}+\rho ^{2}\mathrm{d}\Omega ^{2})
 \end{align}$$
 
-3. at $\displaystyle{\rho\to \infty}$, expand $\displaystyle{g_{tt}}$ to order $\displaystyle{\mathcal{O}(\rho ^{-1})}$. show that
+1. at $\displaystyle{\rho\to \infty}$, expand $\displaystyle{g_{tt}}$ to order $\displaystyle{\mathcal{O}(\rho ^{-1})}$. show that
 
 $$\begin{align}
 g_{tt}\approx -\left( 1-\frac{2M}{\rho} \right)+\mathcal{O}(\rho ^{-2})
@@ -84,4 +84,3 @@ $$\begin{align}
 \end{align}$$
 
 consistent with the Newtonian limit.
-

@@ -1,6 +1,6 @@
  temporal gauge
 
-we have derived the normal modes in [[Articles/Quantization in AdS3/electric field/solving modes/temporal gauge|temporal gauge]] as
+we have derived the normal modes in [[Articles/Quantization in AdS/electric field/solving modes/temporal gauge|temporal gauge]] as
 
 $$\begin{align}
 A^{t} & =0, & A^{r}=\frac{1+r^2}{r}\partial _{\phi} \Psi, & A^{\phi}=-\frac{1+r^2}{r}\partial _{r}\Psi
@@ -101,7 +101,7 @@ and
 
 $$\begin{align}
 \braket{ 0|\mathcal{T}A^{\mu_{1}}(x_{1})A^{\mu_{2}}(x_{2})|0 } & =\theta(\tau_{1}-\tau_{2}) D_{x_{1}}^{\mu_{1}}D_{x_{2}}^{\mu_{2}}H(T,r_{1},r_{2},\phi)+\theta(\tau_{2}-\tau_{1}) D_{x_{1}}^{\mu_{1}}D_{x_{2}}^{\mu_{2}}H(-T,r_{1},r_{2},\phi) \\
- & =D_{x_{1}}^{\mu_{1}}D_{x_{2}}^{\mu_{2}}H(|T|,r_{1},r_{2},\phi)  
+ & =D_{x_{1}}^{\mu_{1}}D_{x_{2}}^{\mu_{2}}H(|T|,r_{1},r_{2},\phi)
 \end{align}$$
 
 and this correlation function satisfies the Green function equation as
@@ -112,7 +112,7 @@ $$\begin{align}
 
 # highest weight
 
-we have derived the bulk modes forms a $\displaystyle{(1,1)}$ rep for the isometry group $\displaystyle{\mathrm{SO}(2,2)\cong \mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ in [[Articles/Quantization in AdS3/electric field/solving modes/highest weight|highest weight]] as
+we have derived the bulk modes forms a $\displaystyle{(1,1)}$ rep for the isometry group $\displaystyle{\mathrm{SO}(2,2)\cong \mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ in [[Articles/Quantization in AdS/electric field/solving modes/highest weight|highest weight]] as
 
 $$\begin{align}
 \psi_{0,0}^\mu& =\frac{1}{\sqrt{2\pi}}\frac{r e^{-3it}}{(1+r^2)^{3/2}}\left(e^{-i\phi}\bar{\xi}_1^\mu-e^{i\phi}\xi_1^\mu\right). \\

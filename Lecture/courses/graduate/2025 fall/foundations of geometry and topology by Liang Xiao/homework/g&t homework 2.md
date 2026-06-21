@@ -13,7 +13,7 @@ z & =c\cos \theta
 
 with $\displaystyle{\theta \in[0,\pi],\phi \in[0,2\pi]}$
 
-2. $\displaystyle{\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}-\frac{z^{2}}{c^{2}}=1}$
+1. $\displaystyle{\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}-\frac{z^{2}}{c^{2}}=1}$
 
 introduce
 
@@ -25,7 +25,7 @@ z & =c\sinh \chi
 
 with $\displaystyle{\chi \in \mathbb{R},\phi \in[0,2\pi]}$
 
-3. $\displaystyle{z=\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}}$
+1. $\displaystyle{z=\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}}$
 
 introduce
 
@@ -117,7 +117,7 @@ H & =\frac{EN+GL-2FM}{2(EG-F^{2})} \\
  & =\frac{g'f''-f'g''}{2(f'^{2}+g'^{2})^{3/2}}
 \end{align}$$
 
-2. $\displaystyle{z=f(x,y)}$
+1. $\displaystyle{z=f(x,y)}$
 
 write $\displaystyle{\boldsymbol{x}(x,y)=(x,y,f(x,y))}$. first fundamental forms
 
@@ -149,7 +149,7 @@ M & =\frac{EN+GL-2FM}{2(EG-F^{2})} \\
  & =\frac{(1+f_{x}^{2})f_{yy}+(1+f_{y}^{2})f_{xx}-2f_{x}f_{y}f_{xy}}{2(1+f_{x}^{2}+f_{y}^{2})^{3/2}}
 \end{align}$$
 
-3. $\displaystyle{\boldsymbol{x}(u,v)=(f(u)\cos v,f(u)\sin v,g(u))}$ with $\displaystyle{f'^{2}+g'^{2}=1}$
+1. $\displaystyle{\boldsymbol{x}(u,v)=(f(u)\cos v,f(u)\sin v,g(u))}$ with $\displaystyle{f'^{2}+g'^{2}=1}$
 
 first fundamental forms
 
@@ -246,7 +246,7 @@ $$\begin{align}
 \implies K & =0
 \end{align}$$
 
-2. $\displaystyle{I=\mathrm{d}u^{2}+\sin ^{2}u\mathrm{d}v^{2}}$
+1. $\displaystyle{I=\mathrm{d}u^{2}+\sin ^{2}u\mathrm{d}v^{2}}$
 
 choose $\displaystyle{\omega_{1}=\mathrm{d}u,\omega_{2}=\sin u\mathrm{d}v}$, then by the structure equations
 
@@ -264,7 +264,7 @@ $$\begin{align}
 \implies K & =1
 \end{align}$$
 
-3. $\displaystyle{I=\frac{\mathrm{d}u^{2}+\mathrm{d}v^{2}}{(c+u^{2}+v^{2})^{2}}}$
+1. $\displaystyle{I=\frac{\mathrm{d}u^{2}+\mathrm{d}v^{2}}{(c+u^{2}+v^{2})^{2}}}$
 
 choose $\displaystyle{\omega_{1}=\frac{\mathrm{d}u}{c+u^{2}+v^{2}},\omega_{2}=\frac{\mathrm{d}v}{c+u^{2}+v^{2}}}$, then by the structure equations
 
@@ -303,7 +303,7 @@ $$\begin{align}
 
 notice that the principal curvatures are $\displaystyle{\kappa_{1}=1,\kappa_{2}=-1}$, which gives $\displaystyle{K=\kappa_{1}\kappa_{2}=-1}$, contradicting the fact that the Gaussian curvature of the metric $\displaystyle{\varphi=\mathrm{d}u^{2}+\mathrm{d}v^{2}}$ is $\displaystyle{K=0}$. so there is no such surface.
 
-2. $\displaystyle{\varphi=\mathrm{d}u^{2}+\cos ^{2}u\mathrm{d}v^{2},\psi=\cos ^{2}u\mathrm{d}u^{2}+\mathrm{d}v^{2}}$
+1. $\displaystyle{\varphi=\mathrm{d}u^{2}+\cos ^{2}u\mathrm{d}v^{2},\psi=\cos ^{2}u\mathrm{d}u^{2}+\mathrm{d}v^{2}}$
 
 from the first fundamental form
 

@@ -55,4 +55,3 @@ $$\begin{align}
 \end{align}$$
 
 which gives the same Poisson bracket as the Dirac formalism...
-

@@ -5,6 +5,7 @@ Detailed calculations on Proca field quantization in AdS3, organized by topic.
 ## Contents
 
 ### Quantization & Formalism
+
 | File | Description |
 |---|---|
 | `quantization of gauge systems.md` | First/second class constraints, constraint surface geometry |
@@ -16,6 +17,7 @@ Detailed calculations on Proca field quantization in AdS3, organized by topic.
 | `Proca with Lagrangian multiplier.md` | Lagrangian multiplier method |
 
 ### Scalar Field in AdS
+
 | File | Description |
 |---|---|
 | `scalar.md` | Highest weight modes and Killing vectors |
@@ -28,6 +30,7 @@ Detailed calculations on Proca field quantization in AdS3, organized by topic.
 | `global coordinates.md` | Global coordinate calculations |
 
 ### Correlation Functions
+
 | File | Description |
 |---|---|
 | `correlation function.md` | Scalar correlation function derivation |
@@ -38,6 +41,7 @@ Detailed calculations on Proca field quantization in AdS3, organized by topic.
 | `retarded function.md` | Retarded Green functions |
 
 ### Thermodynamics & Heat Kernel
+
 | File | Description |
 |---|---|
 | `heat kernel method.md` | Heat kernel method on H3 (804 lines, comprehensive) |
@@ -45,6 +49,7 @@ Detailed calculations on Proca field quantization in AdS3, organized by topic.
 | `Euler-Maclaurin.md` | Euler-Maclaurin summation formula |
 
 ### Mathematical Tools
+
 | File | Description |
 |---|---|
 | `Casimir operator.md` | Casimir operator calculations |

@@ -5,8 +5,8 @@
 we only need to verify the subgroup criteria:
 
 1. the identity element $\displaystyle{e}$ of $\displaystyle{G}$ is in $\displaystyle{H_{1}\cap H_{2}}$ since $\displaystyle{e\in H_{1}}$ and $\displaystyle{e\in H_{2}}$.
-2. if $\displaystyle{a,b\in H_{1}\cap H_{2}}$, then $\displaystyle{a,b\in H_{1}}$ and $\displaystyle{a,b\in H_{2}}$. since $\displaystyle{H_{1}}$ and $\displaystyle{H_{2}}$ are subgroups, we have $\displaystyle{ab\in H_{1}}$ and $\displaystyle{ab\in H_{2}}$. thus, $\displaystyle{ab\in H_{1}\cap H_{2}}$.
-3. if $\displaystyle{a\in H_{1}\cap H_{2}}$, then $\displaystyle{a\in H_{1}}$ and $\displaystyle{a\in H_{2}}$. since $\displaystyle{H_{1}}$ and $\displaystyle{H_{2}}$ are subgroups, we have $\displaystyle{a^{-1}\in H_{1}}$ and $\displaystyle{a^{-1}\in H_{2}}$. thus, $\displaystyle{a^{-1}\in H_{1}\cap H_{2}}$.
+1. if $\displaystyle{a,b\in H_{1}\cap H_{2}}$, then $\displaystyle{a,b\in H_{1}}$ and $\displaystyle{a,b\in H_{2}}$. since $\displaystyle{H_{1}}$ and $\displaystyle{H_{2}}$ are subgroups, we have $\displaystyle{ab\in H_{1}}$ and $\displaystyle{ab\in H_{2}}$. thus, $\displaystyle{ab\in H_{1}\cap H_{2}}$.
+1. if $\displaystyle{a\in H_{1}\cap H_{2}}$, then $\displaystyle{a\in H_{1}}$ and $\displaystyle{a\in H_{2}}$. since $\displaystyle{H_{1}}$ and $\displaystyle{H_{2}}$ are subgroups, we have $\displaystyle{a^{-1}\in H_{1}}$ and $\displaystyle{a^{-1}\in H_{2}}$. thus, $\displaystyle{a^{-1}\in H_{1}\cap H_{2}}$.
 
 therefore we conclude that $\displaystyle{H_{1}\cap H_{2}}$ is a subgroup of $\displaystyle{G}$.
 
@@ -64,15 +64,15 @@ the set is $\displaystyle{G=\left\{I,-I,\sigma _{x},\sigma _{y},i\sigma _{z},-i\
 
 conjugacy classes:
 1. $\displaystyle{\left\{I\right\}}$ itself
-2. $\displaystyle{\left\{-I\right\}}$ itself
-3. $\displaystyle{\left\{\sigma _{x},-\sigma _{x}\right\}}$
-4. $\displaystyle{\left\{\sigma _{y},-\sigma _{y}\right\}}$
-5. $\displaystyle{\left\{i\sigma _{z},-i\sigma _{z}\right\}}$
+1. $\displaystyle{\left\{-I\right\}}$ itself
+1. $\displaystyle{\left\{\sigma _{x},-\sigma _{x}\right\}}$
+1. $\displaystyle{\left\{\sigma _{y},-\sigma _{y}\right\}}$
+1. $\displaystyle{\left\{i\sigma _{z},-i\sigma _{z}\right\}}$
 
 invariant subgroups:
 1. $\displaystyle{\left\{I,-I\right\}\cong C_{2}}$, corresponding quotient group is $\displaystyle{G/\left\{I,-I\right\}\cong C_{2}\times C_{2}}$
-2. $\displaystyle{\braket{ i\sigma _{z}}=\left\{I,i\sigma _{z},-I,-i\sigma _{z}\right\}\cong C_{4}}$, corresponding quotient group is $\displaystyle{G/\braket{ i\sigma _{z}}\cong C_{2}}$
-3. trivial ones, $\displaystyle{\left\{I\right\}}$ and $\displaystyle{G}$ itself, corresponding quotient groups are $\displaystyle{G/\left\{I\right\}\cong G}$ and $\displaystyle{G/G\cong \left\{I\right\}}$.
+1. $\displaystyle{\braket{ i\sigma _{z}}=\left\{I,i\sigma _{z},-I,-i\sigma _{z}\right\}\cong C_{4}}$, corresponding quotient group is $\displaystyle{G/\braket{ i\sigma _{z}}\cong C_{2}}$
+1. trivial ones, $\displaystyle{\left\{I\right\}}$ and $\displaystyle{G}$ itself, corresponding quotient groups are $\displaystyle{G/\left\{I\right\}\cong G}$ and $\displaystyle{G/G\cong \left\{I\right\}}$.
 
 isomorphism to $\displaystyle{D_{4}}$:
 notice that the $\displaystyle{D_{4}}$ is the symmetry group of a square, which has 8 elements: 4 rotations $\displaystyle{e,\rho,\rho ^{2},\rho ^{3}}$ and 4 reflections $\displaystyle{\tau,\tau \rho,\tau \rho ^{2},\tau \rho ^{3}}$. we can establish a mapping between the elements of $\displaystyle{G}$ and $\displaystyle{D_{4}}$ as follows:
@@ -129,7 +129,7 @@ $$\begin{align}
 g & =|G|=\sum _{S\in C_{\alpha}}|\mathcal{P}(S)|
 \end{align}$$
 
-2. if $\displaystyle{S_{j},QS_{k}Q^{-1}}$ lie in the same class, then $\displaystyle{Q}$ induces a bijection $\displaystyle{\mathcal{P}(S_{j})\to \mathcal{P}(S_{j})}$ via $\displaystyle{P\mapsto QP}$. hence all $\displaystyle{|\mathcal{P}(S)|=m(a)}$ are equal
+1. if $\displaystyle{S_{j},QS_{k}Q^{-1}}$ lie in the same class, then $\displaystyle{Q}$ induces a bijection $\displaystyle{\mathcal{P}(S_{j})\to \mathcal{P}(S_{j})}$ via $\displaystyle{P\mapsto QP}$. hence all $\displaystyle{|\mathcal{P}(S)|=m(a)}$ are equal
 
 therefore $\displaystyle{g=n(a)m(a)}$, and so $\displaystyle{m(a)=g/n(a)}$
 
@@ -139,12 +139,13 @@ therefore $\displaystyle{g=n(a)m(a)}$, and so $\displaystyle{m(a)=g/n(a)}$
 
 the point group $\displaystyle{T}$ is the symmetry group of a tetrahedron (without reflection), which has 12 elements:
 1. identity: $\displaystyle{E}$, with order $\displaystyle{1}$
-2. rotations about axes through vertices and the centers of opposite faces: $\displaystyle{R_{1},R_{1}^{2},R_{2},R_{2}^{2},R_{3},R_{3}^{2},R_{4},R_{4}^{2}}$, with order $\displaystyle{3}$
-3. rotations about axes through midpoints of opposite edges: $\displaystyle{S_{1},S_{2},S_{3}}$, with order $\displaystyle{2}$
+1. rotations about axes through vertices and the centers of opposite faces: $\displaystyle{R_{1},R_{1}^{2},R_{2},R_{2}^{2},R_{3},R_{3}^{2},R_{4},R_{4}^{2}}$, with order $\displaystyle{3}$
+1. rotations about axes through midpoints of opposite edges: $\displaystyle{S_{1},S_{2},S_{3}}$, with order $\displaystyle{2}$
 
 without loss of generality, we choose the 3‑cycle subgroup $\displaystyle{C_{3}=\{E, R_{1}, R_{1}^{2}\}}$. we can extend the multiplication table of $\displaystyle{C_{3}}$ to that of $\displaystyle{T}$ as follows:
 
-$$\begin{array}{c|cccccccccccc}
+$$
+\begin{array}{c|cccccccccccc}
 \circ & E & R_1 & R_1^2 & R_2 & R_2^2 & R_3 & R_3^2 & R_4 & R_4^2 & S_1 & S_2 & S_3 \\
 \hline
 E & E & R_1 & R_1^2 & R_2 & R_2^2 & R_3 & R_3^2 & R_4 & R_4^2 & S_1 & S_2 & S_3 \\
@@ -159,11 +160,13 @@ R_4^2 & R_4^2 & R_2 & R_3^2 & S_1 & S_1 & S_2 & S_3 & E & R_4 & R_1^2 & R_1 & R_
 S_1 & S_1 & R_4^2 & S_1 & R_3^2 & R_2^2 & R_4 & R_1 & R_2 & R_1^2 & S_1 & R_3 & E \\
 S_2 & S_2 & S_1 & R_4^2 & R_1^2 & R_3^2 & S_1 & R_2^2 & R_1 & R_4 & R_3 & S_2 & E \\
 S_3 & S_3 & S_1 & S_1 & R_4 & R_1^2 & R_2^2 & R_1 & R_3^2 & R_2 & E & S_3 & R_4^2
-\end{array}$$
+\end{array}
+$$
 
 # problem 7
 
-$$\begin{array}{c|cccccccccccc}
+$$
+\begin{array}{c|cccccccccccc}
 \circ & E & A & B & C & D & F & I & J & K & L & M & N \\
 \hline
 E & E & A & B & C & D & F & I & J & K & L & M & N \\
@@ -178,14 +181,15 @@ K & K & M & J & F & I & D & B & C & N & E & L & A \\
 L & L & N & I & J & F & C & D & B & E & M & A & K \\
 M & M & K & D & B & C & J & F & I & L & A & N & E \\
 N & N & L & C & D & B & I & J & F & A & K & E & M
-\end{array}$$
+\end{array}
+$$
 
 1. *find the inverse of each element in the group*
-2. *find the center of the group*
-3. *list the period and order of each element in the group*
-4. *find all conjugacy classes of the group*
-5. *find all the invariant subgroups of the group and the corresponding quotient groups*
-6. *verify that if $\displaystyle{G}$ is isomorphic to $\displaystyle{T}$ or $\displaystyle{D_{6}}$*
+1. *find the center of the group*
+1. *list the period and order of each element in the group*
+1. *find all conjugacy classes of the group*
+1. *find all the invariant subgroups of the group and the corresponding quotient groups*
+1. *verify that if $\displaystyle{G}$ is isomorphic to $\displaystyle{T}$ or $\displaystyle{D_{6}}$*
 
 solution:
 1. the inverse of each element in the group is as follows:
@@ -196,8 +200,8 @@ D^{-1} & =J, & F^{-1} & =B, & I^{-1} & =C, & J^{-1} & =D \\
 K^{-1} & =L, & L^{-1} & =K, & M^{-1} & =N, & N^{-1} & =M
 \end{align}$$
 
-2. the center of the group is $\displaystyle{Z(G)=\{E,A\}}$
-3. the period and order of each element in the group are as follows:
+1. the center of the group is $\displaystyle{Z(G)=\{E,A\}}$
+1. the period and order of each element in the group are as follows:
 
 | element            | period                                      | order |
 | ------------------ | ------------------------------------------- | ----- |
@@ -214,15 +218,15 @@ K^{-1} & =L, & L^{-1} & =K, & M^{-1} & =N, & N^{-1} & =M
 | $\displaystyle{M}$ | $\displaystyle{\left\{E,M,N\right\}}$       | 3     |
 | $\displaystyle{N}$ | $\displaystyle{\left\{E,N,M\right\}}$       | 3     |
 
-4. the conjugacy classes of the group are as follows:
+1. the conjugacy classes of the group are as follows:
 	1. $\displaystyle{\left\{E\right\}}$ itself
-	2. $\displaystyle{\left\{A\right\}}$ itself
-	3. $\displaystyle{\left\{B,C,D\right\}}$, $\displaystyle{\left\{F,I,J\right\}}$
-	4. $\displaystyle{\left\{K,L\right\}}$
-	5. $\displaystyle{\left\{M,N\right\}}$
-5. the invariant subgroups of the group and the corresponding quotient groups are as follows:
+	1. $\displaystyle{\left\{A\right\}}$ itself
+	1. $\displaystyle{\left\{B,C,D\right\}}$, $\displaystyle{\left\{F,I,J\right\}}$
+	1. $\displaystyle{\left\{K,L\right\}}$
+	1. $\displaystyle{\left\{M,N\right\}}$
+1. the invariant subgroups of the group and the corresponding quotient groups are as follows:
 	1. $\displaystyle{\left\{E,A\right\}\cong C_{2}}$, corresponding quotient group is $\displaystyle{G/\left\{E,A\right\}\cong D_{3}}$
-	2. $\displaystyle{\braket{M}=\left\{E,M,N\right\}\cong C_{3}}$, corresponding quotient group is $\displaystyle{G/\braket{M}\cong C_{4}}$
-	3. $\displaystyle{\braket{K}=\left\{E,K,N,A,M,L\right\}\cong C_{6}}$, corresponding quotient group is $\displaystyle{G/\braket{K}\cong C_{2}}$
-	4. trivial ones, $\displaystyle{\left\{E\right\}}$ and $\displaystyle{G}$ itself, corresponding quotient groups are $\displaystyle{G/\left\{E\right\}\cong G}$ and $\displaystyle{G/G\cong \left\{E\right\}}$.
-6. notice that $\displaystyle{T}$ has no order-$\displaystyle{6}$ elements, and $\displaystyle{K,L}$ are of order $\displaystyle{6}$, thus $\displaystyle{G\not\cong T}$. similarly, notice that $\displaystyle{D_{6}}$ has $\displaystyle{7}$ order-$\displaystyle{2}$ elements, while $\displaystyle{G}$ has only $\displaystyle{1}$ order-$\displaystyle{2}$ element $\displaystyle{A}$, thus $\displaystyle{G\not\cong D_{6}}$.
+	1. $\displaystyle{\braket{M}=\left\{E,M,N\right\}\cong C_{3}}$, corresponding quotient group is $\displaystyle{G/\braket{M}\cong C_{4}}$
+	1. $\displaystyle{\braket{K}=\left\{E,K,N,A,M,L\right\}\cong C_{6}}$, corresponding quotient group is $\displaystyle{G/\braket{K}\cong C_{2}}$
+	1. trivial ones, $\displaystyle{\left\{E\right\}}$ and $\displaystyle{G}$ itself, corresponding quotient groups are $\displaystyle{G/\left\{E\right\}\cong G}$ and $\displaystyle{G/G\cong \left\{E\right\}}$.
+1. notice that $\displaystyle{T}$ has no order-$\displaystyle{6}$ elements, and $\displaystyle{K,L}$ are of order $\displaystyle{6}$, thus $\displaystyle{G\not\cong T}$. similarly, notice that $\displaystyle{D_{6}}$ has $\displaystyle{7}$ order-$\displaystyle{2}$ elements, while $\displaystyle{G}$ has only $\displaystyle{1}$ order-$\displaystyle{2}$ element $\displaystyle{A}$, thus $\displaystyle{G\not\cong D_{6}}$.

@@ -15,9 +15,11 @@ C_{nm} & =\sqrt{ \frac{1}{2\pi}\frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}} }
 
 here we use
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 \int _{0}^{\infty} \mathrm{d}r r^{2\beta+1}(1+r^{2})^{-(\alpha+\beta+2)}\left[P^{(\alpha,\beta}_{n}\left( \frac{r^{2}-1}{r^{2}+1} \right) \right]^{2} & =\frac{\Gamma(n+\alpha+1)\Gamma(n+\beta+1)}{2(2n+\alpha+\beta+1)\Gamma(n+\alpha+\beta+1)n!}
-\end{align}$$
+\end{align}
+$$
 
 and we have
 
@@ -106,4 +108,3 @@ $$\begin{align}
  & =\sum ^{\infty}_{\bar{n}=0}{f^{(+)}_{l,\bar{n},\bar{n}}}^{\mu_{1}} \sqrt{ \frac{(\mu+\bar{n}+1)(\mu+\bar{n})}{\mu ^{2} \pi } }\xi _{1}^{\mu_{2}}+\sum ^{\infty}_{\bar{n}=0}{f^{(+)}_{l,\bar{n}+1,\bar{n}}}^{\mu_{1}}\sqrt{ \frac{(\bar{n}+1)(\mu+\bar{n}+1)}{\pi \mu ^{2}} }\xi_{0}^{\mu_{2}} \\
  & -\sum ^{\infty}_{\bar{n}=0}{f^{(+)}_{l,\bar{n}+2,\bar{n}}}^{\mu_{1}}\sqrt{ \frac{(\bar{n}+2)(\bar{n}+1)}{\pi \mu ^{2}} }\xi _{-1}^{\mu_{2}}
 \end{align}$$
-

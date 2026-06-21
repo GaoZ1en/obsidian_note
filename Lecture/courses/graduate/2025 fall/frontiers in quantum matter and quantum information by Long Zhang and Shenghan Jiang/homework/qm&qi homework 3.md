@@ -41,13 +41,15 @@ i & 0
 
 and then
 
-$$\begin{align} \\
+$$
+\begin{align} \\
 XY^{n}X & = (XYX)^{n} \\
  & =(-1)^{n}Y^{n} \\
 XR_{y}(\theta)X & =\sum ^{\infty}_{n=0}\left( \frac{-i\theta}{2} \right)^{n}XY^{n}X \\
  & =\sum ^{\infty}_{n=0}\left( \frac{i\theta}{2} \right)^{n}Y^{n} \\
  & =R_{y}(-\theta)
-\end{align}$$
+\end{align}
+$$
 
 ## exercise 4.13
 
@@ -170,7 +172,7 @@ $$\begin{align}
  & = ac\ket{00} +ad\ket{01} +bc\ket{10} -bc\ket{11} \\
 \text{CZ}_{21}\ket{\psi _{1}} \otimes \ket{\psi _{2}} & =c\ket{0} _{2}\otimes (a\ket{0}_{1}+b\ket{1} _{1} )+d\ket{1} _{2}\otimes (a\ket{0} _{1}-b\ket{1} _{1}) \\
  & =ac\ket{00} +ad\ket{01} +bc\ket{10} -bd\ket{11} \\
- & =\text{CZ}_{12}\ket{\psi _{1}} \otimes \ket{\psi _{2}} 
+ & =\text{CZ}_{12}\ket{\psi _{1}} \otimes \ket{\psi _{2}}
 \end{align}$$
 
 or we can denote the incoming state be $\displaystyle{\ket{\psi}=\sum _{ij}c_{ij}\ket{ij}}$, then
@@ -178,7 +180,7 @@ or we can denote the incoming state be $\displaystyle{\ket{\psi}=\sum _{ij}c_{ij
 $$\begin{align}
 \text{C-}Z_{12}\ket{\psi} & = \sum _{ij}c_{ij}\delta _{i 0}\ket{ij} -c_{ij}\delta _{i 1}\ket{ij}  \\
  & = \sum _{ij}c_{ij}(\delta _{j 0}-\delta _{j 1})\ket{ij} \\
- & =\text{C-}Z_{21}\ket{\psi} 
+ & =\text{C-}Z_{21}\ket{\psi}
 \end{align}$$
 
 ## exersice 4.21
@@ -191,9 +193,9 @@ verify the following circuit identity
 
 let $\displaystyle{\ket{\psi}=a\ket{0}_{3}+b\ket{1}_{3}}$ be the target qubit.
 1. the control qubit is $\displaystyle{\ket{00}_{12}}$. the target qubit remains unchanged. and since all the CNOT gates' control qubit is $\displaystyle{\ket{0}}$, then RHS act the same as LHS.
-2. the control qubit is $\displaystyle{\ket{01}_{12}}$. the target qubit remains unchanged. RHS implies that $\displaystyle{VV^{\dagger}=I}$ act on the target qubit, which is also unchanged. so LHS act the same as RHS.
-3. the control qubit is $\displaystyle{\ket{10}_{12}}$. the target qubit remains unchanged. RHS implies that $\displaystyle{V^{\dagger}V=I}$ act on the target qubit, which is also unchanged. so LHS act the same as RHS.
-4. the control qubit is $\displaystyle{\ket{11}_{12}}$. the target qubit becomes $\displaystyle{U\ket{\psi}}$. RHS implies that $\displaystyle{V^{2}=U}$ act on the target qubit, which is also $\displaystyle{U\ket{\psi}}$. so LHS act the same as RHS.
+1. the control qubit is $\displaystyle{\ket{01}_{12}}$. the target qubit remains unchanged. RHS implies that $\displaystyle{VV^{\dagger}=I}$ act on the target qubit, which is also unchanged. so LHS act the same as RHS.
+1. the control qubit is $\displaystyle{\ket{10}_{12}}$. the target qubit remains unchanged. RHS implies that $\displaystyle{V^{\dagger}V=I}$ act on the target qubit, which is also unchanged. so LHS act the same as RHS.
+1. the control qubit is $\displaystyle{\ket{11}_{12}}$. the target qubit becomes $\displaystyle{U\ket{\psi}}$. RHS implies that $\displaystyle{V^{2}=U}$ act on the target qubit, which is also $\displaystyle{U\ket{\psi}}$. so LHS act the same as RHS.
 
 as a result, LHS act the same as RHS in all cases.
 
@@ -220,17 +222,16 @@ C^{1}(U) & =(I\otimes A) \cdot CNOT \cdot (I\otimes B) \cdot CNOT \cdot (I\otime
 
 1. for $\displaystyle{U=R_{x}(\theta)=}$
 
-
 Useful conjugation identities: X R_z(φ) X = R_z(−φ), X R_y(φ) X = R_y(−φ).
 
-1) U = R_x(θ).
+1. U = R_x(θ).
 - Pick A = R_y(−π/2), B = R_z(−θ/2), C = R_y(π/2). Then ABC = I and
 	A X B X C = R_y(−π/2) [X R_z(−θ/2) X] R_y(π/2) = R_y(−π/2) R_z(θ) R_y(π/2) = R_x(θ).
 
 	Hence
 	C^1(R_x(θ)) = (I⊗R_y(−π/2)) · CNOT · (I⊗R_z(−θ/2)) · CNOT · (I⊗R_y(π/2)).
 
-2) U = R_y(θ).
+1. U = R_y(θ).
 - Pick A = R_x(π/2), B = R_z(−θ/2), C = R_x(−π/2). Then ABC = I and
 	A X B X C = R_x(π/2) [X R_z(−θ/2) X] R_x(−π/2) = R_x(π/2) R_z(θ) R_x(−π/2) = R_y(θ).
 
@@ -253,8 +254,6 @@ C^{2}NOT & =(I\otimes I\otimes H)CNOT_{23}(I\otimes I\otimes T^{\dagger})CNOT_{1
 \end{align}$$
 
 *sol*.
-
-
 
 ## exercise 4.27
 
@@ -339,6 +338,7 @@ CX_{1}C=\begin{pmatrix}
 1 & 0 & 0 & 0
 \end{pmatrix}=X_{1}X_{2}
 \end{align}$$
+
 $$\begin{align}
 CY_{1}C & =\begin{pmatrix}
 1 & 0 & 0 & 0 \\
@@ -362,6 +362,7 @@ i & 0 & 0 & 0 \\
 i & 0 & 0 & 0
 \end{pmatrix}=Y_{1}X_{2}
 \end{align}$$
+
 $$\begin{align}
 CZ_{1}C & =\begin{pmatrix}
 1 & 0 & 0 & 0 \\
@@ -385,6 +386,7 @@ CZ_{1}C & =\begin{pmatrix}
 0 & 0 & 0 & -1
 \end{pmatrix}=Z_{1}
 \end{align}$$
+
 $$\begin{align}
 CX_{2}C & =\begin{pmatrix}
 1 & 0 & 0 & 0 \\
@@ -408,6 +410,7 @@ CX_{2}C & =\begin{pmatrix}
 0 & 0 & 1 & 0
 \end{pmatrix}=X_{2}
 \end{align}$$
+
 $$\begin{align}
 CY_{2}C & =\begin{pmatrix}
 1 & 0 & 0 & 0 \\
@@ -431,6 +434,7 @@ i & 0 & 0 & 0 \\
 0 & 0 & -i & 0
 \end{pmatrix}=Z_{1}Y_{2}
 \end{align}$$
+
 $$\begin{align}
 CZ_{2}C & =\begin{pmatrix}
 1 & 0 & 0 & 0 \\
@@ -454,6 +458,7 @@ CZ_{2}C & =\begin{pmatrix}
 0 & 0 & 0 & 1
 \end{pmatrix}=Z_{1}Z_{2}
 \end{align}$$
+
 $$\begin{align}
 R_{z}(\theta) & =\begin{pmatrix}
 e^{-i\theta/2} & 0 \\
@@ -488,6 +493,7 @@ e^{-i\theta/2} & 0 & 0 & 0 \\
 0 & 0 & 0 & e^{i\theta/2}
 \end{pmatrix}=CR_{z,1}(\theta)
 \end{align}$$
+
 $$\begin{align}
 R_{x}(\theta) & =\begin{pmatrix}
 \cos \frac{\theta}{2} & -i\sin \frac{\theta}{2} \\
@@ -534,17 +540,17 @@ check that the above circuit is equivalent to the quantum teleportation circuit
 
 Let qubit 1 be |ψ⟩ = a|0⟩ + b|1⟩, and qubits 2–3 share |Φ+⟩ = (|00⟩+|11⟩)/√2. In standard teleportation, after Alice applies CNOT1→2 and H on qubit 1, the joint state can be written as
 
-$$
+$$\begin{align}
 \frac{1}{2} \sum_{m_1,m_2\in\{0,1\}} |m_1m_2\rangle_{12} \otimes X^{m_2} Z^{m_1} |\psi\rangle_3.
-$$
+\end{align}$$
 
 Now insert, before measuring qubits 1 and 2, the two extra gates: CX2→3 and CZ1→3. These act as controlled Pauli operations conditioned on the (about-to-be) measurement outcomes m2 and m1, respectively, so they multiply an extra factor X^{m_2} Z^{m_1} on Bob’s qubit in each branch:
 
-$$
+$$\begin{align}
 \frac{1}{2} \sum_{m_1,m_2} |m_1m_2\rangle_{12} \otimes (X^{m_2} Z^{m_1})(X^{m_2} Z^{m_1}) |\psi\rangle_3
- 
+
  = \frac{1}{2} \sum_{m_1,m_2} |m_1m_2\rangle_{12} \otimes (-1)^{m_1 m_2}\,|\psi\rangle_3.
-$$
+\end{align}$$
 
 Since $(-1)^{m_1 m_2}$ is a global phase depending only on the measurement outcomes, qubit 3 is exactly |ψ⟩ and is now decoupled from qubits 1–2. Therefore:
 
@@ -553,10 +559,8 @@ Since $(-1)^{m_1 m_2}$ is a global phase depending only on the measurement outco
 
 Remark (operational nuance): These additional CX and CZ gates are nonlocal (they couple Alice’s qubits to Bob’s), so the protocol is no longer LOCC-only. They effectively move the classical corrections into coherent, pre-applied quantum gates, which is why Bob’s final correction becomes the identity.
 
-
 ## exercise 4.34
 
 suppose we have a single qubit operator $\displaystyle{U}$ with eigenvalues $\displaystyle{\pm1}$, so that $\displaystyle{U}$ is both Hermitian and unitary, so it can be regarded as an observable and a quantum gate. suppose we wish to measuer the observable $\displaystyle{U}$. that is, we derise to obtain a measurement result indicating one of the two eigenvalues, and leaving a pose-measurement state which is the corresponding eigenvector. how can this be implemented by a quantum circuit? show that the following circuit implements a measurement of $\displaystyle{U}$:
 
 ![image](http://100.94.165.49:8080/i/0580b621-ad91-47c1-b9d5-b6ca9f4ac512.jpg)
-

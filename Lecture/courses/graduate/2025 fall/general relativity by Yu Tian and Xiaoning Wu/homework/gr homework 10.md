@@ -16,4 +16,4 @@ $$\begin{align}
 \frac{\mathrm{d}p}{\mathrm{d}r} & =-\frac{Gm\rho}{r^{2}}
 \end{align}$$
 
-we can also get it by taking the Newtonian limit $\displaystyle{p\ll \rho, \frac{Gm}{r}\ll 1}$. 
+we can also get it by taking the Newtonian limit $\displaystyle{p\ll \rho, \frac{Gm}{r}\ll 1}$.

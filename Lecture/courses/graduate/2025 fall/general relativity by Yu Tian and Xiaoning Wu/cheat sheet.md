@@ -13,6 +13,7 @@ $$\begin{align}
 \end{align}$$
 
 A simple method to calculate the Christoffel symbols via the action/Lagrangian:
+
 $$\begin{align}
 \Gamma ^{\rho}_{\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{\rho \sigma}\mathrm{d}g_{\sigma \nu}\mathrm{d}x^{\nu}-\frac{1}{2}g^{\rho \sigma}\partial _{\sigma}\mathrm{d}s^{2}
 \end{align}$$
@@ -55,7 +56,7 @@ R^{\rho}_{~\sigma \mu \nu} & = \braket{ \mathrm{d}\Gamma ^{\rho}_{~\sigma}+\Gamm
 and use
 
 $$\begin{align}
-\braket{ \mathrm{d}x^{\mu}\wedge \mathrm{d}x^{\nu},\partial _{\rho}\otimes \partial _{\sigma} }  & = \delta ^{\mu}_{\rho}\delta ^{\nu}_{\sigma}-\delta ^{\mu}_{\sigma}\delta ^{\nu}_{\rho} 
+\braket{ \mathrm{d}x^{\mu}\wedge \mathrm{d}x^{\nu},\partial _{\rho}\otimes \partial _{\sigma} }  & = \delta ^{\mu}_{\rho}\delta ^{\nu}_{\sigma}-\delta ^{\mu}_{\sigma}\delta ^{\nu}_{\rho}
 \end{align}$$
 
 to get the final answer.
@@ -120,7 +121,7 @@ the extrinsic curvature is $K_{\mu \nu} = \gamma ^{\rho}_{\mu}\gamma ^{\sigma}_{
 
 # geodesic congruence and Raychaudhuri equation
 
-consider a congruence of geodesics with tangent vector field $\displaystyle{U^{\mu}}$ (normalized $\displaystyle{g_{\mu \nu}U^{\mu}U^{\nu}=-1}$ for timelike, and $\displaystyle{g_{\mu \nu}U^{\mu}U^{\nu}=0}$ for null). 
+consider a congruence of geodesics with tangent vector field $\displaystyle{U^{\mu}}$ (normalized $\displaystyle{g_{\mu \nu}U^{\mu}U^{\nu}=-1}$ for timelike, and $\displaystyle{g_{\mu \nu}U^{\mu}U^{\nu}=0}$ for null).
 
 for timelike geodesic congruence, define the projection tensor $\displaystyle{h_{\mu \nu}=g_{\mu \nu}+U_{\mu}U_{\nu}}$ (it is actually the induced metric for the hypersurface orthogonal to $\displaystyle{U^{\mu}}$, if the congruence is hypersurface orthogonal). the tensor $\displaystyle{B_{\mu \nu}=\nabla _{\nu}U_{\mu}}$ can be decomposed as
 
@@ -180,35 +181,46 @@ in the former Raychaudhuri equations, we have used the strong energy condition (
 - **Dominant Energy Condition (DEC)**: $T_{\mu \nu} V^{\mu} V^{\nu} \geq 0$ and $T^{\mu}_{~\nu} V^{\nu}$ is a non-spacelike vector for all timelike vectors $V^{\mu}$
 
 # Electromagnetism
+
 Maxwell's equations in curved spacetime:
+
 $$\begin{align}
 \nabla_\mu F^{\mu\nu} &= J^\nu \\
 \nabla_{[\mu} F_{\nu\rho]} &= 0 \implies \partial_{[\mu} F_{\nu\rho]} = 0
 \end{align}$$
+
 where $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$.
 **Energy-Momentum Tensor**:
+
 $$\begin{align}
 T_{\mu\nu}^{EM} = \frac{1}{4\pi} \left( F_{\mu\alpha}F_\nu^{~\alpha} - \frac{1}{4}g_{\mu\nu}F_{\alpha\beta}F^{\alpha\beta} \right)
 \end{align}$$
+
 Trace $T = 0$ (conformally invariant).
 **Observer Decomposition**: For an observer with 4-velocity $Z^\mu$:
-*   Electric field $E^\mu = F^{\mu\nu}Z_\nu$.
-*   Magnetic field $B^\mu = \frac{1}{2}\epsilon^{\mu\nu\rho\sigma}F_{\nu\rho}Z_\sigma$ (duality).
-*   **DEC**: Electromagnetic field satisfies Dominant Energy Condition.
+-   Electric field $E^\mu = F^{\mu\nu}Z_\nu$.
+-   Magnetic field $B^\mu = \frac{1}{2}\epsilon^{\mu\nu\rho\sigma}F_{\nu\rho}Z_\sigma$ (duality).
+-   **DEC**: Electromagnetic field satisfies Dominant Energy Condition.
 
 # Conserved Quantities
+
 **Conserved Current**: If $\xi^\mu$ is a Killing vector ($\nabla_{(\mu}\xi_{\nu)}=0$), and $\nabla_\mu T^{\mu\nu}=0$, then $J^\mu = T^{\mu\nu}\xi_\nu$ is conserved:
+
 $$\begin{align}
 \nabla_\mu J^\mu = (\nabla_\mu T^{\mu\nu})\xi_\nu + T^{\mu\nu}(\nabla_\mu \xi_\nu) = 0
 \end{align}$$
+
 since $T^{\mu\nu}$ is symmetric and $\nabla_\mu \xi_\nu$ is antisymmetric.
 
 **Komar Mass/Angular Momentum**:
 For a stationary spacetime with timelike Killing vector $\xi^\mu_{(t)}$:
+
 $$\begin{align}
 M_K &= -\frac{1}{8\pi G} \int_{\partial \Sigma} \nabla^\alpha \xi^\beta_{(t)} \mathrm{d}S_{\alpha\beta}
 \end{align}$$
+
 For rotational Killing vector $\xi^\mu_{(\phi)}$:
+
 $$\begin{align}
 J_K &= \frac{1}{16\pi G} \int_{\partial \Sigma} \nabla^\alpha \xi^\beta_{(\phi)} \mathrm{d}S_{\alpha\beta}
 \end{align}$$
@@ -329,7 +341,6 @@ which are in fact the same as the Hamiltonian and momentum constraints.
 *linearized gravity*
 
 consider a small perturbation $h_{\mu\nu}$ around a background metric $g_{\mu\nu}^{(0)}$ (for simplicity, we omit the superscript (0) in the following discussion). the linearized eom is given by
-
 
 $$\begin{align}
 0 = &-\frac{1}{2}\nabla ^{2}h_{\mu \nu}+\nabla _{(\mu}\nabla _{|\alpha|}h_{\nu)}^{~\alpha}-\frac{1}{2}\nabla _{\mu}\nabla _{\nu}h+\frac{1}{2}g_{\mu \nu}(\nabla ^{2}h - \nabla _{\alpha}\nabla _{\beta}h^{\alpha \beta}) \\
@@ -469,13 +480,16 @@ then we can see
 - the Penrose diagram is a diamond shape.
 
 #### Rindler Spacetime (Uniform Acceleration)
+
 Flat spacetime seen by observer with proper acceleration $\alpha$:
+
 $$\begin{align}
 \mathrm{d}s^2 &= -(\alpha x)^2 \mathrm{d}t^2 + \mathrm{d}x^2 + \mathrm{d}y^2 + \mathrm{d}z^2
 \end{align}$$
-*   **Horizon**: $x=0$ (Rindler horizon).
-*   **Unruh Effect**: Observer sees vacuum as thermal state with $T = \frac{\alpha}{2\pi}$.
-*   **Geodesics**: Light rays $x = \pm e^{\alpha t}$. Massive particles $x^2 - t^2 = 1/\alpha^2$ (hyperbolas).
+
+-   **Horizon**: $x=0$ (Rindler horizon).
+-   **Unruh Effect**: Observer sees vacuum as thermal state with $T = \frac{\alpha}{2\pi}$.
+-   **Geodesics**: Light rays $x = \pm e^{\alpha t}$. Massive particles $x^2 - t^2 = 1/\alpha^2$ (hyperbolas).
 
 #### Schwarzschild black hole with negative mass
 
@@ -586,16 +600,21 @@ $$\begin{align}
 to eliminate singularity at horizons, define Kruskal coordinates in different regions:
 
 - region I ($r>r_{+}$):
+
 $$\begin{align}
 U & =-e^{-\kappa _{+}u} \\
 V & =e^{\kappa _{+}v}
 \end{align}$$
+
 - region II ($r_{-}<r<r_{+}$):
+
 $$\begin{align}
 U & =-e^{-\kappa _{+}u} \\
 V & =-e^{\kappa _{+}v}
 \end{align}$$
+
 - region III ($r<r_{-}$):
+
 $$\begin{align}
 U & =e^{-\kappa _{-}u} \\
 V & =-e^{\kappa _{-}v}
@@ -618,29 +637,36 @@ then we have
 ![[Attachments/Pasted image 20260126180911.png]]
 
 #### Kerr Metric
+
 Rotating black hole in Boyer-Lindquist coordinates:
+
 $$\begin{align}
 \mathrm{d}s^2 &= -\left(1-\frac{2Mr}{\Sigma}\right)\mathrm{d}t^2 - \frac{4Mra\sin^2\theta}{\Sigma}\mathrm{d}t\mathrm{d}\phi + \frac{\Sigma}{\Delta}\mathrm{d}r^2 + \Sigma\mathrm{d}\theta^2 + \left(r^2+a^2+\frac{2Mra^2\sin^2\theta}{\Sigma}\right)\sin^2\theta\mathrm{d}\phi^2
 \end{align}$$
+
 where $\Sigma = r^2 + a^2\cos^2\theta$, $\Delta = r^2 - 2Mr + a^2$.
-*   **Horizons**: $\Delta(r_\pm) = 0 \implies r_\pm = M \pm \sqrt{M^2-a^2}$.
-*   **Ergosphere**: region where $g_{tt} > 0$ (timelike K.V. becomes spacelike). $r_+ < r < M + \sqrt{M^2-a^2\cos^2\theta}$.
-*   **Angular Velocity of Horizon**: $\Omega_H = \frac{a}{r_+^2+a^2}$.
-*   **Singularity**: Ring singularity at $r=0, \theta=\pi/2$ (i.e. $\Sigma=0$).
+-   **Horizons**: $\Delta(r_\pm) = 0 \implies r_\pm = M \pm \sqrt{M^2-a^2}$.
+-   **Ergosphere**: region where $g_{tt} > 0$ (timelike K.V. becomes spacelike). $r_+ < r < M + \sqrt{M^2-a^2\cos^2\theta}$.
+-   **Angular Velocity of Horizon**: $\Omega_H = \frac{a}{r_+^2+a^2}$.
+-   **Singularity**: Ring singularity at $r=0, \theta=\pi/2$ (i.e. $\Sigma=0$).
 
 # Black Hole Thermodynamics
+
 ## The Four Laws
+
 - **Zeroth Law**: Surface gravity $\kappa$ is constant on the horizon.
 - **First Law**: $dM = \frac{\kappa}{8\pi G} dA + \Omega_H dJ + \Phi_H dQ$.
 - **Second Law**: $\delta A \ge 0$ (weak cosmic censorship holds).
 - **Third Law**: Impossible to reach extremality ($\kappa=0$) in finite steps.
 
 ## Hawking Radiation
+
 - **Temperature**: $T_H = \frac{\kappa}{2\pi}$.
 - **Entropy**: $S = \frac{A}{4G}$.
 - **Evaporation**: Power $P \propto 1/M^2$. Lifetime $\tau \propto M^3$.
 
 ## Penrose Process
+
 Extraction of energy from a rotating black hole.
 - Particle enters ergosphere ($E_1$), splits into $E_2$ (falls in) and $E_3$ (escapes).
 - Inside ergosphere, negative energy states exist relative to infinity ($E = -p_\mu \xi^\mu_{(t)} < 0$) because $\xi^\mu_{(t)}$ is spacelike.
@@ -648,6 +674,7 @@ Extraction of energy from a rotating black hole.
 - **Irreducible Mass**: $M^2 = M_{irr}^2 + \frac{J^2}{4M_{irr}^2}$. $M_{irr} = \sqrt{\frac{A}{16\pi}}$. Process is limited by $\delta M_{irr} \ge 0$.
 
 #### Gravitational collapse (Oppenheimer-Snyder)
+
 For a star collapsing into a black hole, the spacetime is patched by a star interior (FRW uniform density dust) and an exterior Schwarzschild metric.
 - The diagram starts with a smooth origin (like Minkowski) in the past.
 - The surface of the star follows a timelike trajectory, crossing the horizon $r=2M$ at some finite proper time.
@@ -655,40 +682,49 @@ For a star collapsing into a black hole, the spacetime is patched by a star inte
 - **Key difference**: No white hole, no "parallel universe" region. The causal past is modified compared to eternal Schwarzschild.
 
 #### FLRW Cosmology
+
 Metric in conformal time $\eta$:
+
 $$\begin{align}
 \mathrm{d}s^2 = a^2(\eta) [-\mathrm{d}\eta^2 + \mathrm{d}\chi^2 + S_k^2(\chi)\mathrm{d}\Omega^2]
 \end{align}$$
+
 The causal structure depends on the range of $\eta$ and $k$:
 1.  **Matter/Radiation Dominated ($k=0$)**: $\eta \in (0, \infty)$. Diagram is a triangle (singular Big Bang at $\eta=0$).
-2.  **Dark Energy Dominated (de Sitter)**: $\eta \in (-\infty, 0)$. Diagram is a square (infinite past to infinite future).
-    *   Has a cosmological event horizon for any observer.
-3.  **Minkowski**: $a=1$, $\eta \in (-\infty, \infty)$. Diamond.
+1.  **Dark Energy Dominated (de Sitter)**: $\eta \in (-\infty, 0)$. Diagram is a square (infinite past to infinite future).
+    -   Has a cosmological event horizon for any observer.
+1.  **Minkowski**: $a=1$, $\eta \in (-\infty, \infty)$. Diamond.
 
 # Stellar Structure
+
 **TOV Equation** (Tolman-Oppenheimer-Volkoff) for static spherically symmetric stars:
+
 $$\begin{align}
 \frac{\mathrm{d}p}{\mathrm{d}r} &= - \frac{(\rho+p)(m + 4\pi r^3 p)}{r(r-2m)} \\
 \frac{\mathrm{d}m}{\mathrm{d}r} &= 4\pi r^2 \rho
 \end{align}$$
+
 Combined with Equation of State $p=p(\rho)$.
-*   **Buchdahl Limit**: For a stable static sphere, $M < \frac{4}{9}R$. If $R < \frac{9}{4}M$, it must collapse.
+-   **Buchdahl Limit**: For a stable static sphere, $M < \frac{4}{9}R$. If $R < \frac{9}{4}M$, it must collapse.
 
 # Cosmology
+
 **Friedmann Equations** for FLRW metric:
+
 $$\begin{align}
 \left( \frac{\dot{a}}{a} \right)^2 &= \frac{8\pi G}{3}\rho - \frac{k}{a^2} + \frac{\Lambda}{3} \\
 \frac{\ddot{a}}{a} &= -\frac{4\pi G}{3}(\rho + 3p) + \frac{\Lambda}{3}
 \end{align}$$
+
 **Conservation**: $\dot{\rho} + 3H(\rho+p) = 0$.
 **Parameters**:
-*   Critical density $\rho_c = \frac{3H^2}{8\pi G}$.
-*   Density parameter $\Omega = \rho/\rho_c$.
-*   Deceleration parameter $q = -\frac{a\ddot{a}}{\dot{a}^2}$.
+-   Critical density $\rho_c = \frac{3H^2}{8\pi G}$.
+-   Density parameter $\Omega = \rho/\rho_c$.
+-   Deceleration parameter $q = -\frac{a\ddot{a}}{\dot{a}^2}$.
 **Redshift**: $1+z = \frac{a(t_{obs})}{a(t_{emit})}$.
 **Hubble's Law**: $v = H d$.
 **Inflation**: Solves Horizon and Flatness problems by $a(t) \sim e^{Ht}$ phase ($\ddot{a}>0$).
 
 # Metric Compatibility
-$\nabla_\rho g_{\mu\nu} = 0$. This uniquely determines the Christoffel symbols (Levi-Civita connection).
 
+$\nabla_\rho g_{\mu\nu} = 0$. This uniquely determines the Christoffel symbols (Levi-Civita connection).

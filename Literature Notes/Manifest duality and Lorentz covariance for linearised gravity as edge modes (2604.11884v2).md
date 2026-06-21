@@ -90,7 +90,7 @@ $$\begin{align}
 \mathrm{D}\cdot & =\mathrm{d}\cdot+[\Omega,\cdot]
 \end{align}$$
 
-where $\displaystyle{\Omega}$ is the $\displaystyle{\mathrm{AdS}_{5}}$ background connection taking value in the $\displaystyle{\mathfrak{so}(2,4)}$ algebra. since the connection is flat, the covariant derivative is nilpotent $\displaystyle{\mathrm{D}^{2}=0}$. 
+where $\displaystyle{\Omega}$ is the $\displaystyle{\mathrm{AdS}_{5}}$ background connection taking value in the $\displaystyle{\mathfrak{so}(2,4)}$ algebra. since the connection is flat, the covariant derivative is nilpotent $\displaystyle{\mathrm{D}^{2}=0}$.
 
 consider a vector space $\displaystyle{V}$ of totally antisymmetric $\displaystyle{3}$-tensors of $\displaystyle{\mathfrak{so}(2,4)}$. we use underlined indices to denote elements of this vector space as
 
@@ -136,7 +136,7 @@ to derive the equations of motion, vary $\displaystyle{B}$:
 
 $$\begin{align}
 \delta S_{\text{bulk}} & =\int _M \braket{ \underline{\star}\delta B\wedge DB+\underline{\star}B\wedge D\delta B }+\int _{\partial M}\braket{ \delta B\wedge \star B }  \\
- & =\int _{M}\braket{ 2\underline{\star}\delta B\wedge \mathrm{D}B }+\int _{\partial M}\braket{ \delta B\wedge (\star B+\underline{\star}B)}  
+ & =\int _{M}\braket{ 2\underline{\star}\delta B\wedge \mathrm{D}B }+\int _{\partial M}\braket{ \delta B\wedge (\star B+\underline{\star}B)}
 \end{align}$$
 
 the bulk and boundary eoms are
@@ -185,7 +185,7 @@ and introducing the shorthand $\displaystyle{F=\mathrm{D}A}$, so $\displaystyle{
 plugging $\displaystyle{B=F+v\wedge R}$ back into the action, all remaining bulk terms collapse to a total derivative. the resulting boundary action is
 
 $$\begin{align}
-S & =\frac{1}{2}\int _{\partial M}\braket{ (F+v\wedge R)\wedge \star(F+v\wedge R)+2v\wedge R\wedge \underline{\star}F } 
+S & =\frac{1}{2}\int _{\partial M}\braket{ (F+v\wedge R)\wedge \star(F+v\wedge R)+2v\wedge R\wedge \underline{\star}F }
 \end{align}$$
 
 the paper therefore imposes the following asymptotic conditions by hand:
@@ -273,7 +273,7 @@ the boundary action reduces to
 
 $$\begin{align}
 S & =\int _{\partial M}\mathrm{d}^{4}x\braket{  \frac{1}{2}\varepsilon ^{ijk}R_{i}(\underline{\star}F)_{jk}+\frac{1}{4}F_{\alpha \beta}F^{\alpha \beta}+R_{i}F^{-i}-\frac{1}{2}R_{i}R^{i} } \\
- & =\frac{1}{2}\int _{\partial M}\mathrm{d}^{4}x\braket{ F_{ij}F^{ij}+\epsilon ^{ijk}F^{0}_{~~i}(\underline{\star}F)_{jk} } 
+ & =\frac{1}{2}\int _{\partial M}\mathrm{d}^{4}x\braket{ F_{ij}F^{ij}+\epsilon ^{ijk}F^{0}_{~~i}(\underline{\star}F)_{jk} }
 \end{align}$$
 
 in the second line, we have integrated out the non-dynamical field $\displaystyle{R_{i}}$. (Schwarz-Sen action?)
@@ -292,4 +292,3 @@ by some construction, we can show the boundary action reduces to the Bunster-Hen
 $$\begin{align}
 S & =-\int _{\partial M}\mathrm{d}^{4}x\left[\varepsilon ^{ijk}\epsilon _{ab}\partial _{0}Z^{(a)}_{mi}\partial _{j}S^{(b)m}{}_{k}+\frac{1}{2}\delta _{ab}S^{(a)\ell}{}_{i}\delta ^{ijk}_{\ell mn}\partial _{j}\omega ^{(b)\underline{mn}}{}_{k}\right]
 \end{align}$$
-

@@ -5,18 +5,18 @@ focus on fundamental concepts/issues in QG, not on calculation and phenomenologi
 we adopt the natural units, $\displaystyle{c=\hbar=G=1}$. $\displaystyle{(-,+,\dots,+)}$ signature for Minskowskian spacetime and $\displaystyle{(+,\dots,+)}$ for Euclidean spacetime.
 
 references:
-0. H. Zhang, Quantum Field Theory
+1. H. Zhang, Quantum Field Theory
 1. R. M. Wald, General Relativity
-2. R. P. Geroch, Special Topics in Particle Physics
-3. R. M. Wald, Quantum Field Theory in Curved Spacetime and Black Hole Theromodynamics
-4. S. Weinberg, The Quantum Theory of Fields
-5. M. D. Schwartz, Quantum Field Theory and the Standard Model
-6. A. Bilal, Advanced Quantum Field Theory, Renormalization, Non-Abelian Gauge Theory and Anomalies.
-7. M. Srednicki, Quantum Field Theory
-8. M. E. Peskin and D. U. Schroeder, An Introduction to Quantum Field Theory
-9. A. Zee, Quantum Field Theory in a Nutshell
+1. R. P. Geroch, Special Topics in Particle Physics
+1. R. M. Wald, Quantum Field Theory in Curved Spacetime and Black Hole Theromodynamics
+1. S. Weinberg, The Quantum Theory of Fields
+1. M. D. Schwartz, Quantum Field Theory and the Standard Model
+1. A. Bilal, Advanced Quantum Field Theory, Renormalization, Non-Abelian Gauge Theory and Anomalies.
+1. M. Srednicki, Quantum Field Theory
+1. M. E. Peskin and D. U. Schroeder, An Introduction to Quantum Field Theory
+1. A. Zee, Quantum Field Theory in a Nutshell
 
-our discussion are limited to globally hyperbolic spacetimes. 
+our discussion are limited to globally hyperbolic spacetimes.
 
 # Schrodinger's prescription for NRQM
 
@@ -150,7 +150,8 @@ $$\begin{align}
 
 which gives
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 \int _{\mathcal{M}}\mathrm{d}\mu \varphi ^{*}(v^{a}\nabla _{a}\phi+v\phi) & =\int _{M}\mathrm{d}\mu (v^{a}\nabla _{a}\varphi+v\varphi)^{*}\phi \\
  & =\int _{M}\mathrm{d}\mu (v^{*a}\nabla _{a}\varphi ^{*}+v^{*}\varphi ^{*})\phi \\
  & =\int _{M}\mathrm{d}\mu \varphi ^{*}(-v^{*a}\nabla _{a}\phi+(-\nabla _{a}v^{*a}+v^{*})\phi) \\
@@ -158,7 +159,8 @@ $$\tag{.}\begin{align}
 v^{a}=-v^{*a} \\
 v-v^{*}=-\nabla _{a}v^{*a}=\nabla _{a}v^{a}
 \end{cases}
-\end{align}$$
+\end{align}
+$$
 
 and the commutator of two operators $\displaystyle{[V,U]}$ can be expressed as
 
@@ -224,13 +226,13 @@ $$\begin{align}
 \vec{x}'(x) & =\frac{1}{(2\pi)^{d/2}}\int \frac{\mathrm{d}^{d-1}k}{\sqrt{ 2\omega _{k} }}e^{ik _{a}(x^{a}-x'^{a})}
 \end{align}$$
 
-smear in a Compton length(here some signal may be wrong). so RQM works, but breaks when one focuses onto the region smaller than Comption length, which means there are creation and annihilation of particles, due to Heisenberg uncertainty principle. 
+smear in a Compton length(here some signal may be wrong). so RQM works, but breaks when one focuses onto the region smaller than Comption length, which means there are creation and annihilation of particles, due to Heisenberg uncertainty principle.
 
 ---
 
 1. condition for an operator to be Hermitian
-2. commutator of two operators
-3. Lie derivative of the volume form
-4. The geometry of the mass shell
-5. Hermiticity of the position operator
-6. Commutator of the position operator and the momentum operator
+1. commutator of two operators
+1. Lie derivative of the volume form
+1. The geometry of the mass shell
+1. Hermiticity of the position operator
+1. Commutator of the position operator and the momentum operator

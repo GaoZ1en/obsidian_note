@@ -2,7 +2,7 @@
 
 write down the Young operator corresponding to the following Young tableau.
 
-1. 
+1.
 ```tikz
 \begin{document}
 \def \youngdiagram{3,1}
@@ -22,7 +22,7 @@ box/.style={draw=black, thick, minimum size=6mm}
 \end{document}
 ```
 
-2. 
+2.
 
 ```tikz
 \begin{document}
@@ -43,7 +43,7 @@ box/.style={draw=black, thick, minimum size=6mm}
 \end{document}
 ```
 
-3. 
+3.
 
 ```tikz
 \begin{document}
@@ -82,7 +82,7 @@ $$\begin{align}
  & -(1 4)-(124)-(134)-(14)(23)-(1234)-(1324)
 \end{align}$$
 
-2. we can write down the row symmetrizer $\displaystyle{P}$ and the column antisymmetrizer $\displaystyle{Q}$
+1. we can write down the row symmetrizer $\displaystyle{P}$ and the column antisymmetrizer $\displaystyle{Q}$
 
 $$\begin{align}
 P & =(I+(12))(I+(34)) \\
@@ -100,7 +100,7 @@ $$\begin{align}
  & -(24)-(142)-(243)-(1432)+(13)(24)+(1423)+(1324)+(14)(23)
 \end{align}$$
 
-3. we can write down the row symmetrizer $\displaystyle{P}$ and the column antisymmetrizer $\displaystyle{Q}$
+1. we can write down the row symmetrizer $\displaystyle{P}$ and the column antisymmetrizer $\displaystyle{Q}$
 
 $$\begin{align}
 P & =I+(12)+(13)+(14)+(23)+(24)+(34)+(123)+(124)+(134)+(234) \\
@@ -123,13 +123,22 @@ $$\begin{align}
 for a given Young tableau, let $H$ be the set of horizontal permutations (permutations among numbers in the same row) and $V$ be the set of vertical permutations (permutations among numbers in the same column).
 
 the row symmetrizer $P$ is defined as the sum of all horizontal permutations:
-$$ P = \sum_{h \in H} h $$
+
+$$\begin{align}
+P = \sum_{h \in H} h
+\end{align}$$
 
 the column antisymmetrizer $Q$ is defined as the signed sum of all vertical permutations:
-$$ Q = \sum_{v \in V} \text{sgn}(v) v $$
+
+$$\begin{align}
+Q = \sum_{v \in V} \text{sgn}(v) v
+\end{align}$$
 
 the Young operator $Y$ is the product of the column antisymmetrizer and the row symmetrizer:
-$$ Y = Q P = \left( \sum_{v \in V} \text{sgn}(v) v \right) \left( \sum_{h \in H} h \right) $$
+
+$$\begin{align}
+Y = Q P = \left( \sum_{v \in V} \text{sgn}(v) v \right) \left( \sum_{h \in H} h \right)
+\end{align}$$
 
 *we have*
 
@@ -323,14 +332,23 @@ I & =\frac{1}{24}(\mathcal{Y}_{1}+\mathcal{Y}_{10})+\frac{1}{8}(\mathcal{Y}_{2}+
 
 the identity element $I$ of the symmetric group $S_n$ can be expanded in terms of the Young operators $\mathcal{Y}_T$ corresponding to all standard Young tableaux $T$:
 
-$$ I = \sum_{T \in \text{SYT}_n} \frac{1}{h_T} \mathcal{Y}_T $$
+$$\begin{align}
+I = \sum_{T \in \text{SYT}_n} \frac{1}{h_T} \mathcal{Y}_T
+\end{align}$$
 
 where $h_T$ is the product of the hook lengths of the tableau $T$. The sum runs over all standard Young tableaux for all partitions of $n$.
 
 for a cell $(i, j)$ in a Young diagram (where $i$ is the row index and $j$ is the column index), the **hook length** $h_{i,j}$ is defined as the number of cells in the same row to the right of $(i, j)$ plus the number of cells in the same column below $(i, j)$ plus 1 (for the cell itself).
-$$ h_{i,j} = (\text{cells to the right}) + (\text{cells below}) + 1 $$
+
+$$\begin{align}
+h_{i,j} = (\text{cells to the right}) + (\text{cells below}) + 1
+\end{align}$$
+
 The value $h_T$ (which depends only on the shape of the tableau) is the product of all hook lengths in the diagram:
-$$ h_T = \prod_{(i,j) \in \text{diagram}} h_{i,j} $$
+
+$$\begin{align}
+h_T = \prod_{(i,j) \in \text{diagram}} h_{i,j}
+\end{align}$$
 
 # problem 3
 
@@ -402,7 +420,7 @@ P_{2} & =(359)(47)(68) \\
 P_{2}Q_{2} & =(3568974)=R
 \end{align}$$
 
-2. express $\displaystyle{R}$ as $\displaystyle{P_{1}Q_{1},P_{1}\in \mathcal{P}_{1},Q_{1}\in \mathcal{Q}_{1}}$
+1. express $\displaystyle{R}$ as $\displaystyle{P_{1}Q_{1},P_{1}\in \mathcal{P}_{1},Q_{1}\in \mathcal{Q}_{1}}$
 we look for a vertical permutation $\displaystyle{Q_{1}\in \mathcal{Q}_{1}}$ such that $\displaystyle{Q_{1}T_{2}}$ has the same set of numbers in each row as $\displaystyle{T_{1}}$. this can be easily done by swapping $\displaystyle{(37)}$ and $\displaystyle{(69)}$, so $\displaystyle{Q_{1}=(37)(69)}$. then we need to recover the right order in each row. this is can be easily done by applying $\displaystyle{P_{1}=(34)(567)(89)}$. thus
 
 $$\begin{align}
@@ -556,13 +574,13 @@ let $T_1, T_2, \dots, T_f$ be the standard Young tableaux of shape $\lambda$ in 
 
 1.  **Diagonal Elements:**
 	1. if $i$ and $i+1$ are in the same row in $T_a$, then $D(\sigma_i)_{aa} = 1$.
-	2. if $i$ and $i+1$ are in the same column in $T_a$, then $D(\sigma_i)_{aa} = -1$.
-	3. otherwise, $D(\sigma_i)_{aa} = -1/d_{i,i+1}(T_a)$, where $d_{i,i+1}(T_a)$ is the **axial distance** from $i$ to $i+1$ in $T_a$.
-	4. *axial distance* $d(u, v)$ is defined as $(c_v - c_u) - (r_v - r_u)$, where $(r, c)$ are row and column indices (1-based). So if $v$ is to the right and above $u$, distance is positive.
-2.  **Off-Diagonal Elements:**
+	1. if $i$ and $i+1$ are in the same column in $T_a$, then $D(\sigma_i)_{aa} = -1$.
+	1. otherwise, $D(\sigma_i)_{aa} = -1/d_{i,i+1}(T_a)$, where $d_{i,i+1}(T_a)$ is the **axial distance** from $i$ to $i+1$ in $T_a$.
+	1. *axial distance* $d(u, v)$ is defined as $(c_v - c_u) - (r_v - r_u)$, where $(r, c)$ are row and column indices (1-based). So if $v$ is to the right and above $u$, distance is positive.
+1.  **Off-Diagonal Elements:**
 	1. if $T_b$ is obtained from $T_a$ by swapping $i$ and $i+1$ (this is only possible if they are not in the same row or column), then:$$ D(\sigma_i)_{ab} = \sqrt{1 - \frac{1}{d_{i,i+1}(T_a)^2}} $$
-	2. note that $D(\sigma_i)_{ba} = D(\sigma_i)_{ab}$.
-	3. otherwise, $D(\sigma_i)_{ab} = 0$.
+	1. note that $D(\sigma_i)_{ba} = D(\sigma_i)_{ab}$.
+	1. otherwise, $D(\sigma_i)_{ab} = 0$.
 
 for a general permutation $\pi$, decompose it into adjacent transpositions and multiply the matrices.
 for the cycle $(1~2~3~4~5)$, we can write it as $(1~2)(2~3)(3~4)(4~5)$.
@@ -571,18 +589,20 @@ for the cycle $(1~2~3~4~5)$, we can write it as $(1~2)(2~3)(3~4)(4~5)$.
 
 compute the characters of all conjugacy classes in the symmetric group $\displaystyle{\mathrm{S}_{6}}$ for the following irreducible representations using the method of equivalent:
 1. $\displaystyle{[3,2,1]}$
-2. $\displaystyle{[3,3]}$
-3. $\displaystyle{[2,2,2]}$
+1. $\displaystyle{[3,3]}$
+1. $\displaystyle{[2,2,2]}$
 
 *sol*. the character table of $\displaystyle{\mathrm{S}_{6}}$ are summarized as follows
 
-$$\begin{array}{c|cccc}
+$$
+\begin{array}{c|cccc}
  & (1)^{6} & (1^{4},2) & (1^{3},3) & (1^{2},2^{2}) & (1^{2},4) & (1,2,3) & (1,5) & (6) & (2^{3}) & (2,4) & (3^{2}) \\
 \hline
 [3,2,1] & 16 & 0 & -2 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & -2 \\
 [3,3] & 5 & 1 & -1 & 1 & -1 & 1 & 0 & 0 & -3 & -1 & 2 \\
 [2,2,2] & 5 & -1 & -1 & 1 & 1 & -1 & 0 & 0 & 3 & -1 & 2
-\end{array}$$
+\end{array}
+$$
 
 see [Murnaghan-Nakayama rule](https://en.wikipedia.org/wiki/Murnaghan%E2%80%93Nakayama_rule)
 
@@ -799,8 +819,8 @@ U & =\begin{pmatrix}
 
 using the Littlewood-Richardson rule, compute the reduction of the following outer products of permutation group representations:
 1. $\displaystyle{[3,2,1]\otimes[3]}$
-2. $\displaystyle{[3,2]\otimes[2,1]}$
-3. $\displaystyle{[2,1]\otimes[4,2^{3}]}$
+1. $\displaystyle{[3,2]\otimes[2,1]}$
+1. $\displaystyle{[2,1]\otimes[4,2^{3}]}$
 
 *sol*.
 we have
@@ -814,13 +834,12 @@ $$\begin{align}
 
 *summary*. see [Littlewood-Richardson rule](https://en.wikipedia.org/wiki/Littlewood%E2%80%93Richardson_rule)
 
-
 # problem 8
 
 using the Littlewood-Richardson rule, compute the restriction of the following irreducible representations of the group $S_6$ to the subgroup $S_3 \otimes S_3$, and decompose them into irreducible representations of the subgroup.
 1. $[4,2]$
-2. $[2,2,1,1]$
-3. $[3,3]$
+1. $[2,2,1,1]$
+1. $[3,3]$
 
 *sol*.
 
@@ -831,4 +850,3 @@ $$\begin{align}
 [2,2,1,1] & \simeq [1^{3}]\otimes [2,1]\oplus [2,1]\otimes [2,1] \\
 [3,3] & \simeq[3]\otimes [3]\oplus [2,1]\otimes [2,1]
 \end{align}$$
-

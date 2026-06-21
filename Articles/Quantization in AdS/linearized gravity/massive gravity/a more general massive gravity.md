@@ -12,19 +12,27 @@ This note treats the question in `guide.md` in a deliberately formal setting. In
 
 Use the same unit-radius AdS$_3$ background and lower-index tensor convention as `GMG.md`. In the TT sector,
 
-$$g^{(0)\mu\nu}h_{\mu\nu}=0,\qquad \nabla^{(0)\mu}h_{\mu\nu}=0.$$
+$$\begin{align}
+g^{(0)\mu\nu}h_{\mu\nu}=0,\qquad \nabla^{(0)\mu}h_{\mu\nu}=0.
+\end{align}$$
 
 Let
 
-$$(\mathscr E h)_{\mu\nu}\equiv \varepsilon_\mu{}^{\alpha\beta}\nabla^{(0)}_\alpha h_{\beta\nu}.$$
+$$\begin{align}
+(\mathscr E h)_{\mu\nu}\equiv \varepsilon_\mu{}^{\alpha\beta}\nabla^{(0)}_\alpha h_{\beta\nu}.
+\end{align}$$
 
 Assume the linearized equation can be represented on this TT space as
 
-$$\mathcal P(\mathscr E)h_{\mu\nu}=0,\qquad \mathcal P(z)=\gamma\prod_A(z-\lambda_A)^{p_A},$$
+$$\begin{align}
+\mathcal P(\mathscr E)h_{\mu\nu}=0,\qquad \mathcal P(z)=\gamma\prod_A(z-\lambda_A)^{p_A},
+\end{align}$$
 
 with real $\gamma$ and real roots $|\lambda_A|\geqslant 1$ (since for $\displaystyle{|\lambda _{A}|\leqslant 1}$, no highest weight modes exists), where complex zeroes are excluded for the branches under consideration. The formal quadratic action is
 
-$$I^{(2)}_{\mathcal P}=-\frac{\mathcal N}{2}\int_{\mathcal M}\mathrm d^3x\sqrt{-g^{(0)}}\,h^{\mu\nu}\mathcal P(\mathscr E)h_{\mu\nu},$$
+$$\begin{align}
+I^{(2)}_{\mathcal P}=-\frac{\mathcal N}{2}\int_{\mathcal M}\mathrm d^3x\sqrt{-g^{(0)}}\,h^{\mu\nu}\mathcal P(\mathscr E)h_{\mu\nu},
+\end{align}$$
 
 where $\mathcal N$ includes the overall normalization such as $1/(16\pi G)$ and any constant factors removed from the first-order factors. This action is a useful CPS representative when $\mathcal P(\mathscr E)$ is formally self-adjoint under the TT inner product and the boundary condition kills the Green-identity flux.
 
@@ -32,23 +40,33 @@ where $\mathcal N$ includes the overall normalization such as $1/(16\pi G)$ and 
 
 Let $\omega_{\mathscr E}$ denote the symplectic current obtained from the first-order quadratic action with operator $\mathscr E$. For
 
-$$\mathcal P(z)=\sum_{n=0}^N c_n z^n,$$
+$$\begin{align}
+\mathcal P(z)=\sum_{n=0}^N c_n z^n,
+\end{align}$$
 
 the Green identity for the action above gives the polynomial symplectic current
 
-$$\omega_{\mathcal P}(u,v)=\mathcal N\sum_{n=1}^N c_n\sum_{a=0}^{n-1}\omega_{\mathscr E}(\mathscr E^a u,\mathscr E^{n-1-a}v),$$
+$$\begin{align}
+\omega_{\mathcal P}(u,v)=\mathcal N\sum_{n=1}^N c_n\sum_{a=0}^{n-1}\omega_{\mathscr E}(\mathscr E^a u,\mathscr E^{n-1-a}v),
+\end{align}$$
 
 up to the overall sign convention chosen in $\omega_{\mathscr E}$. Thus, for analytic eigenmode families
 
-$$\mathscr E h_\lambda=\lambda h_\lambda,\qquad \mathscr E h_\mu=\mu h_\mu,$$
+$$\begin{align}
+\mathscr E h_\lambda=\lambda h_\lambda,\qquad \mathscr E h_\mu=\mu h_\mu,
+\end{align}$$
 
 the integrated symplectic form satisfies
 
-$$\Omega_{\mathcal P}[h_\lambda,h_\mu^*]=\mathcal N\,\frac{\mathcal P(\lambda)-\mathcal P(\mu)}{\lambda-\mu}\,\Omega_{\mathscr E}[h_\lambda,h_\mu^*],$$
+$$\begin{align}
+\Omega_{\mathcal P}[h_\lambda,h_\mu^*]=\mathcal N\,\frac{\mathcal P(\lambda)-\mathcal P(\mu)}{\lambda-\mu}\,\Omega_{\mathscr E}[h_\lambda,h_\mu^*],
+\end{align}$$
 
 with the coincident limit
 
-$$\Omega_{\mathcal P}[h_\lambda,h_\lambda^*]=\mathcal N\,\mathcal P'(\lambda)\,\Omega_{\mathscr E}[h_\lambda,h_\lambda^*].$$
+$$\begin{align}
+\Omega_{\mathcal P}[h_\lambda,h_\lambda^*]=\mathcal N\,\mathcal P'(\lambda)\,\Omega_{\mathscr E}[h_\lambda,h_\lambda^*].
+\end{align}$$
 
 For simple roots, this reproduces the usual rule that the norm of a branch is controlled by the derivative of the factorized operator at the root. Distinct roots are orthogonal after the angular and time-frequency integrals, unless the two modes have the same global quantum numbers.
 
@@ -56,23 +74,33 @@ For simple roots, this reproduces the usual rule that the norm of a branch is co
 
 Consider one critical root $\lambda_*$ of multiplicity $p$:
 
-$$\mathcal P(z)=(z-\lambda_*)^p Q(z),\qquad Q(\lambda_*)\neq0.$$
+$$\begin{align}
+\mathcal P(z)=(z-\lambda_*)^p Q(z),\qquad Q(\lambda_*)\neq0.
+\end{align}$$
 
 Let $h_\lambda$ be an analytic primary family near $\lambda_*$. Define
 
-$$h_q\equiv \frac{1}{q!}\partial_\lambda^q h_\lambda\big|_{\lambda=\lambda_*},\qquad q=0,\ldots,p-1.$$
+$$\begin{align}
+h_q\equiv \frac{1}{q!}\partial_\lambda^q h_\lambda\big|_{\lambda=\lambda_*},\qquad q=0,\ldots,p-1.
+\end{align}$$
 
 Then
 
-$$(\mathscr E-\lambda_*)h_0=0,\qquad (\mathscr E-\lambda_*)h_q=h_{q-1}\quad(q\geq1),$$
+$$\begin{align}
+(\mathscr E-\lambda_*)h_0=0,\qquad (\mathscr E-\lambda_*)h_q=h_{q-1}\quad(q\geq1),
+\end{align}$$
 
 and
 
-$$\mathcal P(\mathscr E)h_q=0,\qquad q=0,\ldots,p-1.$$
+$$\begin{align}
+\mathcal P(\mathscr E)h_q=0,\qquad q=0,\ldots,p-1.
+\end{align}$$
 
 This is the rank-$p$ Jordan chain. In the explicit AdS$_3$ highest-weight modes of `GMG.md`, $h_q$ is represented by a degree-$q$ logarithmic mode,
 
-$$h_q\sim y^q h_0+\text{lower powers of }y,\qquad y(t,r)=-it-\frac{1}{2}\log(1+r^2),$$
+$$\begin{align}
+h_q\sim y^q h_0+\text{lower powers of }y,\qquad y(t,r)=-it-\frac{1}{2}\log(1+r^2),
+\end{align}$$
 
 after converting the root parameter to the conformal-weight parameter.
 
@@ -80,43 +108,63 @@ after converting the root parameter to the conformal-weight parameter.
 
 Use the Hermitian norm matrix
 
-$$G_{ab}\equiv -i\,\Omega_{\mathcal P}[h_a,h_b^*],\qquad a,b=0,\ldots,p-1.$$
+$$\begin{align}
+G_{ab}\equiv -i\,\Omega_{\mathcal P}[h_a,h_b^*],\qquad a,b=0,\ldots,p-1.
+\end{align}$$
 
 Let
 
-$$K(x,y)\equiv -i\,\mathcal N\,\Omega_{\mathscr E}[h_{\lambda_*+x},h_{\lambda_*+y}^*]\,\frac{\mathcal P(\lambda_*+x)-\mathcal P(\lambda_*+y)}{x-y}.$$
+$$\begin{align}
+K(x,y)\equiv -i\,\mathcal N\,\Omega_{\mathscr E}[h_{\lambda_*+x},h_{\lambda_*+y}^*]\,\frac{\mathcal P(\lambda_*+x)-\mathcal P(\lambda_*+y)}{x-y}.
+\end{align}$$
 
 Then
 
-$$G_{ab}=[x^a y^b]K(x,y),$$
+$$\begin{align}
+G_{ab}=[x^a y^b]K(x,y),
+\end{align}$$
 
 where $[x^a y^b]$ extracts the coefficient in the Taylor expansion. If
 
-$$N_*\equiv -i\,\mathcal N\,\Omega_{\mathscr E}[h_{\lambda_*},h_{\lambda_*}^*],$$
+$$\begin{align}
+N_*\equiv -i\,\mathcal N\,\Omega_{\mathscr E}[h_{\lambda_*},h_{\lambda_*}^*],
+\end{align}$$
 
 the root multiplicity forces the leading pattern
 
-$$G_{ab}=0\quad(a+b<p-1),\qquad G_{ab}=N_*Q(\lambda_*)\quad(a+b=p-1).$$
+$$\begin{align}
+G_{ab}=0\quad(a+b<p-1),\qquad G_{ab}=N_*Q(\lambda_*)\quad(a+b=p-1).
+\end{align}$$
 
 Entries with $a+b\geq p$ depend on derivatives of $Q$ and on the parameter dependence of the seed first-order norm. They are basis-dependent under triangular redefinitions of the logarithmic partners,
 
-$$h_q\mapsto h_q+\sum_{r<q}\alpha_{qr}h_r,$$
+$$\begin{align}
+h_q\mapsto h_q+\sum_{r<q}\alpha_{qr}h_r,
+\end{align}$$
 
 but the first non-zero anti-diagonal, rank, and signature are invariant.
 
 The first examples are
 
-$$G^{(1)}=(a),\qquad a=N_*Q(\lambda_*),$$
+$$\begin{align}
+G^{(1)}=(a),\qquad a=N_*Q(\lambda_*),
+\end{align}$$
 
-$$G^{(2)}=\begin{pmatrix}0&a\\ a&b\end{pmatrix},$$
+$$
+G^{(2)}=\begin{pmatrix}0&a\\ a&b\end{pmatrix},
+$$
 
 and
 
-$$G^{(3)}=\begin{pmatrix}0&0&a\\ 0&a&b\\ a&b&c\end{pmatrix}.$$
+$$
+G^{(3)}=\begin{pmatrix}0&0&a\\ 0&a&b\\ a&b&c\end{pmatrix}.
+$$
 
 For the full rank-$p$ chain,
 
-$$\det G^{(p)}=(-1)^{p(p-1)/2}\left(N_*Q(\lambda_*)\right)^p.$$
+$$\begin{align}
+\det G^{(p)}=(-1)^{p(p-1)/2}\left(N_*Q(\lambda_*)\right)^p.
+\end{align}$$
 
 Thus the formal CPS form is non-degenerate on the full Jordan block whenever $N_*Q(\lambda_*)\neq0$. The corresponding Hermitian norm is indefinite for every $p\geq2$: for $p=2r$ the canonical anti-diagonal form has signature $(r,r)$, while for $p=2r+1$ it has signature $(r+1,r)$ or $(r,r+1)$ depending on the sign of $N_*Q(\lambda_*)$.
 
@@ -124,11 +172,15 @@ Thus the formal CPS form is non-degenerate on the full Jordan block whenever $N_
 
 Let the primary have total conformal weight $\Delta_*=h+\bar h$, so that the leading radial behavior is
 
-$$h_q\sim r^{2-\Delta_*}(\log r)^q.$$
+$$\begin{align}
+h_q\sim r^{2-\Delta_*}(\log r)^q.
+\end{align}$$
 
 A logarithmic boundary condition $\mathcal B_s$ keeps the initial Jordan segment
 
-$$\mathcal B_s:\qquad \operatorname{span}\{h_0,h_1,\ldots,h_{s-1}\},\qquad 1\leq s\leq p.$$
+$$\begin{align}
+\mathcal B_s:\qquad \operatorname{span}\{h_0,h_1,\ldots,h_{s-1}\},\qquad 1\leq s\leq p.
+\end{align}$$
 
 This is the natural isometry-invariant choice because the Jordan lowering map sends $h_q$ to $h_{q-1}$. The boundary interpretation is:
 
@@ -138,23 +190,33 @@ This is the natural isometry-invariant choice because the Jordan lowering map se
 
 Restricting the Gram matrix to $\mathcal B_s$ gives
 
-$$\operatorname{Rad}(G|_{\mathcal B_s})=\operatorname{span}\{h_0,\ldots,h_{\min(s,p-s)-1}\},\qquad \operatorname{rank}(G|_{\mathcal B_s})=\max(0,2s-p),$$
+$$\begin{align}
+\operatorname{Rad}(G|_{\mathcal B_s})=\operatorname{span}\{h_0,\ldots,h_{\min(s,p-s)-1}\},\qquad \operatorname{rank}(G|_{\mathcal B_s})=\max(0,2s-p),
+\end{align}$$
 
 with the convention that the displayed span is empty when $\min(s,p-s)=0$, and again assuming $N_*Q(\lambda_*)\neq0$. Hence the quotient
 
-$$\mathcal H_s=\mathcal B_s/\operatorname{Rad}(G|_{\mathcal B_s})$$
+$$\begin{align}
+\mathcal H_s=\mathcal B_s/\operatorname{Rad}(G|_{\mathcal B_s})
+\end{align}$$
 
 is non-trivial and non-degenerate exactly when
 
-$$s>\frac{p}{2}.$$
+$$\begin{align}
+s>\frac{p}{2}.
+\end{align}$$
 
 Its surviving Jordan length is
 
-$$\ell=2s-p,$$
+$$\begin{align}
+\ell=2s-p,
+\end{align}$$
 
 with representatives
 
-$$h_{p-s},h_{p-s+1},\ldots,h_{s-1}.$$
+$$\begin{align}
+h_{p-s},h_{p-s+1},\ldots,h_{s-1}.
+\end{align}$$
 
 The important low-rank cases are:
 
@@ -173,12 +235,12 @@ Thus a critical logarithmic phase space can have a well-defined CPS symplectic s
 The formal construction fails, or becomes physically incomplete, in the following precise ways.
 
 1. The operator $\mathcal P(\mathscr E)$ is not formally self-adjoint under the TT inner product. Then the quadratic action $-\frac{1}{2}h\mathcal P(\mathscr E)h$ does not define a conserved CPS form without additional structure.
-2. The boundary condition does not kill the Green-identity flux. Then $\Omega_{\mathcal P}$ depends on the Cauchy slice and the candidate phase space is not symplectic.
-3. The seed anti-diagonal coefficient vanishes, $N_*Q(\lambda_*)=0$. Then the expected first non-zero anti-diagonal is absent, and the root collision is more degenerate than the polynomial multiplicity alone indicates.
-4. The root has $\Delta_*<2$ in the standard AdS$_3$ asymptotic problem. Then the primary and all its logarithmic partners violate the boundary falloff before the CPS quotient can be formed.
-5. Strict Brown-Henneaux at a repeated massless root keeps only the primary. Since the primary norm is proportional to $\mathcal P'(\lambda_*)=0$, the resulting quotient is trivial. A non-trivial logarithmic phase space requires relaxed logarithmic boundary conditions.
-6. For every non-trivial logarithmic block with length at least two, the Hermitian norm is indefinite. This obstructs a positive-norm Hilbert space, but it does not obstruct a well-defined classical CPS symplectic structure.
-7. Without a parent covariant gravitational Lagrangian, the formal action does not fix the JKM ambiguity, boundary counterterms, or the Virasoro central charges. Those data must be supplied separately before comparing the bulk logarithmic phase space to a boundary algebra.
+1. The boundary condition does not kill the Green-identity flux. Then $\Omega_{\mathcal P}$ depends on the Cauchy slice and the candidate phase space is not symplectic.
+1. The seed anti-diagonal coefficient vanishes, $N_*Q(\lambda_*)=0$. Then the expected first non-zero anti-diagonal is absent, and the root collision is more degenerate than the polynomial multiplicity alone indicates.
+1. The root has $\Delta_*<2$ in the standard AdS$_3$ asymptotic problem. Then the primary and all its logarithmic partners violate the boundary falloff before the CPS quotient can be formed.
+1. Strict Brown-Henneaux at a repeated massless root keeps only the primary. Since the primary norm is proportional to $\mathcal P'(\lambda_*)=0$, the resulting quotient is trivial. A non-trivial logarithmic phase space requires relaxed logarithmic boundary conditions.
+1. For every non-trivial logarithmic block with length at least two, the Hermitian norm is indefinite. This obstructs a positive-norm Hilbert space, but it does not obstruct a well-defined classical CPS symplectic structure.
+1. Without a parent covariant gravitational Lagrangian, the formal action does not fix the JKM ambiguity, boundary counterterms, or the Virasoro central charges. Those data must be supplied separately before comparing the bulk logarithmic phase space to a boundary algebra.
 
 ## Answer to the classification question
 

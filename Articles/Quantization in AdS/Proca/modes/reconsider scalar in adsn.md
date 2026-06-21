@@ -96,6 +96,7 @@ the normalization constant is determined by the Klein-Gordon inner product defin
 $$\begin{align}
 \omega[\phi _{n_{1}\ell_{1}\mathbf{m}_{1}},\phi ^{*}_{n_{2}\ell_{2}\mathbf{m}_{2}}] & =-i\delta _{n_{1}n_{2}}\delta _{\ell_{1}\ell_{2}}\delta _{\mathbf{m}_{1}\mathbf{m}_{2}}
 \end{align}$$
+
 ---
 
 now we will try to derive the time ordered correlation function in Euclidean signature. in this case our spacetime metric becomes

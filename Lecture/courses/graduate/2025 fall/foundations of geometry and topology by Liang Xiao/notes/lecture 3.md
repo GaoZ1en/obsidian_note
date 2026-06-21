@@ -27,4 +27,3 @@ $$\begin{align}
 thus the normal curvature depends on the second derivative of the curve and the gradient of the defining function of the surface.
 
 ---
-

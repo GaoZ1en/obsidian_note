@@ -61,12 +61,14 @@ The highest-weight mode selection below is performed in this TT representative s
 
 On TT perturbations, the two $\mathfrak{sl}(2,\mathbb{R})$ Casimirs may be expressed in terms of $\mathcal{D}$ as in Section 2. Substituting the first-order equations gives
 
-$$\begin{array}{c|cc}
+$$
+\begin{array}{c|cc}
 &\mathcal{C}&\bar{\mathcal{C}}\\
 \hline
 h_{+,N}&0&-2\\
 h_{-,N}&-2&0
-\end{array}$$
+\end{array}
+$$
 
 For a highest-weight state with weights $(h,\bar h)$,
 
@@ -84,9 +86,9 @@ h_{-}:&\quad (h,\bar h)=(2,0),(-1,0),(2,1),(-1,1).
 
 We keep only representatives that are regular in global AdS$_3$ and belong to the positive-energy linearized phase space. Equivalently, the quadratic generators associated with the two chiral translations are required to be non-negative on physical positive-frequency modes. Roots with a negative Cartan weight are therefore not admissible. The candidates left by these regularity and positivity requirements are
 
-$$
+$$\begin{align}
 (0,2),\qquad (2,0),\qquad (1,2),\qquad (2,1).
-$$
+\end{align}$$
 
 After the positivity condition above, the physical degrees of freedom are selected by two further requirements:
 
@@ -126,16 +128,16 @@ h^{\mu \nu}_{(1,2),0}
 
 Moreover, up to the same overall normalization, this solution is precisely the left descendant of the $(0,2)$ primary,
 
-$$
+$$\begin{align}
 h_{(1,2),0}^{\mu\nu}=\mathcal{L}_{\xi_{-1}}h_{+,0}^{\mu\nu}.
-$$
+\end{align}$$
 
 The corresponding gauge parameter is obtained by the same action on the $(0,2)$ parameter,
 
-$$
+$$\begin{align}
 \zeta_{(1,2),0}^{\mu}
 :=\mathcal{L}_{\xi_{-1}}\zeta_{+,0}^{\mu},
-$$
+\end{align}$$
 
 namely
 
@@ -160,17 +162,17 @@ h^{\mu \nu}_{(2,1),0}
 
 With the corresponding normalization, it is the right descendant of the $(2,0)$ primary,
 
-$$
+$$\begin{align}
 h_{(2,1),0}^{\mu\nu}
 =\mathcal{L}_{\bar\xi_{-1}}h_{-,0}^{\mu\nu}.
-$$
+\end{align}$$
 
 The corresponding gauge parameter is
 
-$$
+$$\begin{align}
 \zeta_{(2,1),0}^{\mu}
 :=\mathcal{L}_{\bar\xi_{-1}}\zeta_{-,0}^{\mu},
-$$
+\end{align}$$
 
 with asymptotic behavior
 

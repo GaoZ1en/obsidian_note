@@ -18,8 +18,8 @@ are metrices on $\displaystyle{X}$ or not.
 
 a function $\displaystyle{d:X\times X\to \mathbb{R}}$ is called a metric if it satisfies the following conditions:
 1. $\displaystyle{d(x,y)\geqslant0}$ for all $\displaystyle{x,y\in X}$, and $\displaystyle{d(x,y)=0}$ if and only if $\displaystyle{x=y}$.
-2. $\displaystyle{d(x,y)=d(y,x)}$ for all $\displaystyle{x,y\in X}$ (symmetry).
-3. $\displaystyle{d(x,z)\leqslant d(x,y)+d(y,z)}$ for all $\displaystyle{x,y,z\in X}$ (triangle inequality).
+1. $\displaystyle{d(x,y)=d(y,x)}$ for all $\displaystyle{x,y\in X}$ (symmetry).
+1. $\displaystyle{d(x,z)\leqslant d(x,y)+d(y,z)}$ for all $\displaystyle{x,y,z\in X}$ (triangle inequality).
 
 ### solution
 
@@ -118,6 +118,7 @@ $\displaystyle{\tau _{1}}$ is a topology on $\displaystyle{X}$ since $\displayst
 $\displaystyle{\tau _{2}}$ is not a topology on $\displaystyle{X}$ since $\displaystyle{\emptyset\in \tau _{2}}$, but $\displaystyle{X\notin \tau _{2}}$.
 $\displaystyle{\tau _{3}}$ is a topology on $\displaystyle{X}$ since $\displaystyle{\emptyset,X\in \tau _{3}}$, and for any $\displaystyle{U,V\in \tau _{3}}$, we have $\displaystyle{(U\cap V)^{c}=U^{c}\cup V^{c}}$ is a countable set, which means $\displaystyle{U\cap V\in \tau _{3}}$, and for any $\displaystyle{\{U_{j}\}_{j\in J}\subseteq \tau _{3}}$, we have $\displaystyle{(\bigcup_{j\in J}U_{j})^{c}=\bigcap_{j\in J}U_{j}^{c}}$ is a countable set, which means $\displaystyle{\bigcup_{j\in J}U_{j}\in \tau _{3}}$.
 because it is not closed under arbitrary unions. Although $\displaystyle{\emptyset,X\in \tau _{2}}$ (since $\displaystyle{X^{c}=\emptyset}$ is finite), consider $\displaystyle{X=\mathbb{Z}}$. let $\displaystyle{U_{1}}$ be the set of all integers except non-negative even numbers, and $\displaystyle{U_{2}}$ be the set of all integers except positive odd numbers. both have infinite complements, so $\displaystyle{U_{1},U_{2}\in \tau _{2}}$. however, $\displaystyle{(U_{1}\cup U_{2})^{c}=\{0\}}$, which is finite and non-empty, so $\displaystyle{U_{1}\cup U_{2}
+
 ## problem 7
 
 for Euclidean space $\displaystyle{\mathbb{R}^{n}}$ with norm $\displaystyle{\left\|x\right\|=\sqrt{ (x^{1})^{2}+\dots+(x^{n})^{2} }, \forall x=(x^{1},\dots,x^{n})\in \mathbb{R}}$. prove the Cauchy inequality
@@ -127,7 +128,7 @@ $$\begin{align}
 \end{align}$$
 
 and the Minkowski inequality
- 
+
 $$\begin{align}
 \left\|x+y\right\|\leqslant \left\|x\right\|+\left\|y\right\|
 \end{align}$$
@@ -221,4 +222,3 @@ $$\begin{align}
 y^{i} & =\frac{x^{i}}{1+x^{n}}, \quad i=1,\dots,n-1 \\
 y^{n} & =\frac{1}{1+x^{n}}
 \end{align}$$
-

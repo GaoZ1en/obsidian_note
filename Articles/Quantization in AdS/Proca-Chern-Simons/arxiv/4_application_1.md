@@ -403,6 +403,6 @@ $$\begin{align}
 G^{\mu_{1},\mu_{2}}(x_{1},x_{2}) & =G_{\mathrm{path}}^{\mu_{1},\mu_{2}}(x_{1},x_{2})-\frac{1}{\mu ^{2}}g^{\mu_{1}\tau}g^{\mu_{2}\tau}\frac{N(x_{1})}{\sqrt{ \sigma }(x_{1})}\delta ^{3}(x_{1}-x_{2})
 \end{align}$$
 
-This also agrees with the branch decomposition of the explicit mode sum. 
+This also agrees with the branch decomposition of the explicit mode sum.
 
-For a more systematic constrained-Hamiltonian derivation of this statement, based on the Faddeev-Senjanovic path integral for second-class systems, see [[Articles/Quantization in AdS3/Proca-Chern-Simons/arxiv/appendix_b|Appendix B]].
+For a more systematic constrained-Hamiltonian derivation of this statement, based on the Faddeev-Senjanovic path integral for second-class systems, see [[Articles/Quantization in AdS/Proca-Chern-Simons/arxiv/appendix_b|Appendix B]].

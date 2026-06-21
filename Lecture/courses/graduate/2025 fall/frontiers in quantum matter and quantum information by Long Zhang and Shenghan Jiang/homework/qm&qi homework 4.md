@@ -120,7 +120,7 @@ so $\mathcal{F\circ E}$ has an operator-sum representation and is a quantum oper
 
 write the action of all kinds of quantum channels and operations on the density matrix in terms of the bloch sphere representation.
 
-*sol*. 
+*sol*.
 
 for a single qubit, write $\rho = \tfrac{1}{2}(I + r\cdot \sigma)$ with $r=(r_x,r_y,r_z)\in\mathbb{R}^3$. in matrix form
 
@@ -133,11 +133,14 @@ $$
 any qubit cptp map acts as an affine map on the bloch vector: $r' = A r + t$. below are four common channels and their comparison with the matrix form.
 
 1. unitary channel $\mathcal{U}(\rho)=U\rho U^\dagger$ (unital)
-$$
+
+$$\begin{align}
 r' = R_U r,\quad (R_U)_{ij} = \tfrac{1}{2}\operatorname{Tr}[\sigma_i U\sigma_j U^\dagger],\quad t=0.
-$$
+\end{align}$$
+
 matrix form: $\rho' = U\rho U^\dagger$.
-2. pauli channel $\mathcal{E}(\rho)= p_0\rho + p_x X\rho X + p_y Y\rho Y + p_z Z\rho Z$，$\sum p_\alpha=1$（unital）
+1. pauli channel $\mathcal{E}(\rho)= p_0\rho + p_x X\rho X + p_y Y\rho Y + p_z Z\rho Z$，$\sum p_\alpha=1$（unital）
+
 $$
 r' = (\lambda_x r_x,\; \lambda_y r_y,\; \lambda_z r_z),\quad
 \begin{cases}
@@ -146,38 +149,41 @@ r' = (\lambda_x r_x,\; \lambda_y r_y,\; \lambda_z r_z),\quad
 \lambda_z = 1 - 2(p_x+p_y).
 \end{cases}
 $$
+
 matrix-form comparison using $a,b,c$:
-$$
-\begin{aligned}
+
+$$\begin{aligned}
 a' &= \tfrac{1}{2}\big(1 + \lambda_z (a-b)\big),\\
 b' &= 1-a' = \tfrac{1}{2}\big(1 - \lambda_z (a-b)\big),\\
 c' &= \tfrac{1}{2}(\lambda_x r_x + i\,\lambda_y r_y)
 \;=\; \lambda_x\,\mathrm{Re}\,c\; +\; i\,\lambda_y\,\mathrm{Im}\,c.
-\end{aligned}
-$$
+\end{aligned}$$
+
 	1. special cases (bit/phase/bit-phase flip with probability $p$):
 		1. bit-flip (X): $r'=(r_x,(1-2p)r_y,(1-2p)r_z)$，$c' = \mathrm{Re}\,c + i(1-2p)\,\mathrm{Im}\,c$.
-		2. phase-flip (Z): $r'=((1-2p)r_x,(1-2p)r_y,r_z)$，$c' = (1-2p)\,c$.
-		3. bit-phase flip (Y): $r'=((1-2p)r_x, r_y, (1-2p)r_z)$，$c' = (1-2p)\,\mathrm{Re}\,c + i\,\mathrm{Im}\,c$.
-3. depolarizing channel（choose the common parametrization）
-$$
+		1. phase-flip (Z): $r'=((1-2p)r_x,(1-2p)r_y,r_z)$，$c' = (1-2p)\,c$.
+		1. bit-phase flip (Y): $r'=((1-2p)r_x, r_y, (1-2p)r_z)$，$c' = (1-2p)\,\mathrm{Re}\,c + i\,\mathrm{Im}\,c$.
+1. depolarizing channel（choose the common parametrization）
+
+$$\begin{align}
 \mathcal{D}_p(\rho) = (1-p)\,\rho + p\,\tfrac{I}{2},\quad p\in[0,1].
-$$
+\end{align}$$
+
 bloch: $r'=(1-p)\,r$（isotropic shrink），$t=0$.matrix:
-$$
-\begin{aligned}
+
+$$\begin{aligned}
 a' &= \tfrac{1}{2}\big(1 + (1-p)(a-b)\big),\\
 c' &= (1-p)\,c.
-\end{aligned}
-$$
+\end{aligned}$$
+
 note another popular parametrization $\mathcal{D}_q(\rho)=\big(1-\tfrac{4q}{3}\big)\rho + \tfrac{q}{3}(X\rho X + Y\rho Y + Z\rho Z)$, which corresponds to $1-p = 1-\tfrac{4q}{3}$.
-4. dephasing (phase damping) channel
-$$
+1. dephasing (phase damping) channel
+
+$$\begin{align}
 r' = (\eta r_x,\; \eta r_y,\; r_z),\quad \eta\in[0,1],\quad t=0.
-$$
+\end{align}$$
+
 matrix: $a'=a$, $c' = \eta\,c$.it is equivalent to applying $Z$ with probability $p$ where $\eta = 1-2p$.
-
-
 
 # problem 3
 

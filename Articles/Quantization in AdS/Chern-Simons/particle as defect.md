@@ -77,7 +77,7 @@ $$\begin{align}
 \lambda(t,r,\varphi+2\pi) & =\lambda(t,r,\varphi)+2\pi n,\qquad n\in \mathbb{Z}.
 \end{align}$$
 
-Now take $k>0$ and impose the same boundary condition as in [[Articles/Quantization in AdS3/Chern-Simons/U(1) formalism|U(1) formalism]], namely $A^{-}|_{\Gamma}=0$. The allowed boundary modes are the first branch, with dependence on $x^{-}=t-\varphi$. Thus write
+Now take $k>0$ and impose the same boundary condition as in [[Articles/Quantization in AdS/Chern-Simons/U(1) formalism|U(1) formalism]], namely $A^{-}|_{\Gamma}=0$. The allowed boundary modes are the first branch, with dependence on $x^{-}=t-\varphi$. Thus write
 
 $$\begin{align}
 \lambda(t,r,\varphi) & =\lambda_{0}+n\varphi+

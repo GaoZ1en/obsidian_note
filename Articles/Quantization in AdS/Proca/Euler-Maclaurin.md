@@ -49,4 +49,3 @@ $$\begin{align}
  & +\sum ^{n}_{k=1} \frac{(-)^{k}B_{k}h^{2k}}{(2k)!}(F^{(2k-1)}(a+mh)-F^{(2k-1)}(a)) \\
  & +\frac{h^{2n+1}}{(2n)!}\int ^{1}_{0}\varphi _{2n}(t)\sum ^{m-1}_{s=0}F^{(2n)}(a+hs+ht)\mathrm{d}t
 \end{align}$$
-

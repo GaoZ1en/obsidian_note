@@ -1,4 +1,5 @@
 # homework 1
+
 $$\begin{align}
 T^{\mu \nu} & =F^{\mu}_{~\rho}F^{\nu \rho}-\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}
 \end{align}$$
@@ -13,7 +14,7 @@ g_{\mu \nu}T^{\mu \nu} & =g_{\mu \nu}F^{\mu}_{~\rho}F^{\nu \rho}-\frac{1}{4}g_{\
  & =0
 \end{align}$$
 
-2. verify that the stress tensor $\displaystyle{T^{\mu \nu}}$ is conserved, i.e., $\displaystyle{\nabla _{\mu}T^{\mu \nu}=F^{\nu \rho}J_{\rho}}$
+1. verify that the stress tensor $\displaystyle{T^{\mu \nu}}$ is conserved, i.e., $\displaystyle{\nabla _{\mu}T^{\mu \nu}=F^{\nu \rho}J_{\rho}}$
 
 $$\begin{align}
 \nabla _{\mu}T^{\mu \nu} & =\nabla _{\mu}F^{\mu}_{~\rho}F^{\nu \rho}+F_{\mu\rho}\nabla ^{\mu}F^{\nu \rho}-\frac{1}{4}\nabla ^{\nu}(F_{\rho \sigma}F^{\rho \sigma}) \\

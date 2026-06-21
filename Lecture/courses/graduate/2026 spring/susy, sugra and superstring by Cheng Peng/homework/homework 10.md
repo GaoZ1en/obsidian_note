@@ -51,4 +51,4 @@ $$\begin{align}
  & =\frac{1}{2\pi \alpha'}\int \mathrm{d}^{2}\sigma i(B-AC_{0})\partial _{\alpha}X^{\mu}\partial ^{\alpha}\psi _{\mu}
 \end{align}$$
 
-thus we have $\displaystyle{B=AC_{0}}$. 
+thus we have $\displaystyle{B=AC_{0}}$.

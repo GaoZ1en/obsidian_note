@@ -45,6 +45,5 @@ k^{\rho}A_{\nu \rho}-\frac{1}{2}k _{\nu}A^{\lambda}_{~\lambda} & =0
 which implies
 
 $$\begin{align}
-\braket{ T_{\mu \nu}^{G} } \to \frac{k _{\mu}k _{\nu}}{16\pi G}\left( A^{\rho \sigma}A^{*}_{\rho \sigma}-\frac{1}{2}|A^{\lambda}_{~\lambda}|^{2}\right)= \braket{ T_{\mu \nu}^{G} } 
+\braket{ T_{\mu \nu}^{G} } \to \frac{k _{\mu}k _{\nu}}{16\pi G}\left( A^{\rho \sigma}A^{*}_{\rho \sigma}-\frac{1}{2}|A^{\lambda}_{~\lambda}|^{2}\right)= \braket{ T_{\mu \nu}^{G} }
 \end{align}$$
-

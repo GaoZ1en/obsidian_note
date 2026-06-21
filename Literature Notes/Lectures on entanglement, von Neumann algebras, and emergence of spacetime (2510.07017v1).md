@@ -12,6 +12,7 @@ pdf: "[[Attachments/Assets/Lectures on entanglement, von Neumann algebras, and e
 url: https://arxiv.org/abs/2510.07017v1
 tags: []
 ---
+
 # Type I and Type II von Neumann algebrs
 
 a von Neumann algebra $\displaystyle{\mathcal{M}}$ defines a subsystem, and vice versa.
@@ -86,7 +87,7 @@ where the first term comes from statistics, and the second term comes from entan
 what does $\displaystyle{\theta=\frac{\pi}{4}}$ mean? it means that we have a state
 
 $$\begin{align}
-\ket{\Psi_{\theta}} =\sum _{i=1}^{\infty}\left(\cos \theta \ket{0} _{L,i}\ket{0} _{R,i}+\sin \theta \ket{1} _{L,i}\ket{1}_{R,i}\right) 
+\ket{\Psi_{\theta}} =\sum _{i=1}^{\infty}\left(\cos \theta \ket{0} _{L,i}\ket{0} _{R,i}+\sin \theta \ket{1} _{L,i}\ket{1}_{R,i}\right)
 \end{align}$$
 
 and when $\displaystyle{\theta=\frac{\pi}{4}}$, the $\displaystyle{R}$ system and $\displaystyle{L}$ system are maximally entangled. in this case, it is possible to define a trace on $\displaystyle{\mathcal{M}=\mathcal{M}_{R}}$ as
@@ -165,14 +166,14 @@ Tomita-Takesaki theory says that for a von Neumann algebra $\displaystyle{\mathc
 - there exists a positive modular operator $\displaystyle{\Delta _{\Psi}}$ leaving $\displaystyle{\ket{\Psi}}$ invariant
 
 $$\begin{align}
-\Delta _{\Psi}\ket{\Psi}  & =\ket{\Psi} 
+\Delta _{\Psi}\ket{\Psi}  & =\ket{\Psi}
 \end{align}$$
 
     and $\displaystyle{K_{\Psi}=-\log \Delta _{\Psi}}$ generates unitary automorpshisms (modular flows) for $\displaystyle{\mathcal{M}}$ and $\displaystyle{\mathcal{M}'}$
 
 $$\begin{align}
 \sigma _{s}(A) & \equiv \Delta _{\Psi}^{-is}A\Delta _{\Psi}^{is}\in \mathcal{M}, & \forall A\in \mathcal{M}, s\in \mathbb{R} \\
-\sigma _{s}(A') & \equiv \Delta _{\Psi}^{-is}A'\Delta _{\Psi}^{is}\in \mathcal{M}', & \forall A'\in \mathcal{M}', 
+\sigma _{s}(A') & \equiv \Delta _{\Psi}^{-is}A'\Delta _{\Psi}^{is}\in \mathcal{M}', & \forall A'\in \mathcal{M}',
 \end{align}$$
 
 - there exists an anti-unitary modular conjugation operator $\displaystyle{J_{\Psi}}$, with the properties

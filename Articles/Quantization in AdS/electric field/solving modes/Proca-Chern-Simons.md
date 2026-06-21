@@ -27,7 +27,7 @@ $$\begin{align}
  & =\frac{1}{2}\varepsilon _{\mu}^{~\alpha \nu}F_{\alpha \nu}
 \end{align}$$
 
-introduce Killing vectors in the global $\displaystyle{\mathrm{AdS}_{3}}$ coordinates $\displaystyle{(t,r,\phi)}$ as [[Articles/Quantization in AdS3/linearized gravity/eom|eom]], we can decompose the solution space into irreducible representations of $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ algebra. 
+introduce Killing vectors in the global $\displaystyle{\mathrm{AdS}_{3}}$ coordinates $\displaystyle{(t,r,\phi)}$ as [[Articles/Quantization in AdS/linearized gravity/eom|eom]], we can decompose the solution space into irreducible representations of $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ algebra.
 
 notice that
 
@@ -63,7 +63,7 @@ $$\begin{align}
 (1+r^{2})\partial ^{2}_{r}\lambda+\frac{1+3r^{2}}{r}\partial _{r}\lambda-\frac{1}{1+r^{2}}\partial _{t}^{2}\lambda+\frac{1}{r^{2}}\partial _{\phi}^{2}\lambda=-\nabla _{\mu}A^{\mu}=\mathcal{O}(r^{-2})
 \end{align}$$
 
-this is a well-defined linear hyperbolic equation for $\displaystyle{\lambda}$, thus we can always find a solution at least locally by some theory of PDE... we take a more careful analysis below. 
+this is a well-defined linear hyperbolic equation for $\displaystyle{\lambda}$, thus we can always find a solution at least locally by some theory of PDE... we take a more careful analysis below.
 
 we expand $\displaystyle{\lambda}$ and $\displaystyle{-(1+r^{2})\nabla _{\mu}A^{\mu}}$ in terms of a complete set of modes $\displaystyle{\phi _{nm}(r,\phi)}$ as
 
@@ -125,12 +125,12 @@ $$\begin{align}
 \mathcal{\bar{C}}\ket{\psi} & =\bar{h}(\bar{h}-1)\ket{\psi}=0
 \end{align}$$
 
-which gives $\displaystyle{(h,\bar{h})=(0,0),(0,1),(1,0),(1,1)}$. see [[Articles/Quantization in AdS3/electric field/solving modes/highest weight|highest weight]], the solutions corresponding to these representations are as follows:
+which gives $\displaystyle{(h,\bar{h})=(0,0),(0,1),(1,0),(1,1)}$. see [[Articles/Quantization in AdS/electric field/solving modes/highest weight|highest weight]], the solutions corresponding to these representations are as follows:
 
 1. for $\displaystyle{(h,\bar{h})=(0,0)}$, we have $\displaystyle{\psi _{(0,0)}^{\mu}=0}$, which is the trivial vacuum solution.
-2. for $\displaystyle{(h,\bar{h})=(1,0)}$, we have $\displaystyle{\psi _{(1,0)}^{\mu}= \frac{e^{-2it}}{1+r^{2}}\bar{\xi}^{\mu}_{1}}$, and its descendants $\displaystyle{\mathcal{L}_{\xi _{-1}}^{n}\psi _{(1,0)}^{\mu}}$, which are topologically non-trivial vacua solutions
-3. for $\displaystyle{(h,\bar{h})=(0,1)}$, we have $\displaystyle{\psi ^{\mu}_{(0,1)}=\frac{e^{-2it}}{1+r^{2}}\xi _{1}^{\mu}}$, and its descendants $\displaystyle{\mathcal{L}_{\bar{\xi} _{-1}}^{n}\psi _{(0,1)}^{\mu}}$, which are topologically non-trivial vacua solutions
-4. for $\displaystyle{(h,\bar{h})=(1,1)}$, we have $\displaystyle{\psi ^{\mu}_{(1,1)}=\dots}$, and its descendants $\displaystyle{\mathcal{L}_{\xi _{-1}}^{k}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{k}}\psi _{(1,1)}^{\mu}}$. the choice of $\displaystyle{\alpha}$ and $\displaystyle{\beta}$ are actually equivalent and related by a gauge transformation.
+1. for $\displaystyle{(h,\bar{h})=(1,0)}$, we have $\displaystyle{\psi _{(1,0)}^{\mu}= \frac{e^{-2it}}{1+r^{2}}\bar{\xi}^{\mu}_{1}}$, and its descendants $\displaystyle{\mathcal{L}_{\xi _{-1}}^{n}\psi _{(1,0)}^{\mu}}$, which are topologically non-trivial vacua solutions
+1. for $\displaystyle{(h,\bar{h})=(0,1)}$, we have $\displaystyle{\psi ^{\mu}_{(0,1)}=\frac{e^{-2it}}{1+r^{2}}\xi _{1}^{\mu}}$, and its descendants $\displaystyle{\mathcal{L}_{\bar{\xi} _{-1}}^{n}\psi _{(0,1)}^{\mu}}$, which are topologically non-trivial vacua solutions
+1. for $\displaystyle{(h,\bar{h})=(1,1)}$, we have $\displaystyle{\psi ^{\mu}_{(1,1)}=\dots}$, and its descendants $\displaystyle{\mathcal{L}_{\xi _{-1}}^{k}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{k}}\psi _{(1,1)}^{\mu}}$. the choice of $\displaystyle{\alpha}$ and $\displaystyle{\beta}$ are actually equivalent and related by a gauge transformation.
 
 thus the Hilbert space is spanned by $\displaystyle{\psi _{(1,1)}^{\mu}}$ and its descendants that defined under the background of $\displaystyle{\psi _{(0,0)}^{\mu}}$, $\displaystyle{\psi _{(1,0)}^{\mu}}$, $\displaystyle{\psi _{(0,1)}^{\mu}}$ and their descendants, i.e., define
 
@@ -180,7 +180,7 @@ $$\begin{align}
 \prod ^{\infty}_{\ell,\ell'=0} \frac{1-q^{\ell+1}\bar{q}^{\ell'+1}}{(1-q^{\ell+1}\bar{q}^{\ell'})(1-q^{\ell}\bar{q}^{\ell'+1})} & =\prod ^{\infty}_{\ell=1} \frac{1}{|1-q^{\ell}|^{2}}\prod ^{\infty}_{\ell,\ell'=0}  \frac{1}{1-q^{\ell+1}\bar{q}^{\ell'+1}}
 \end{align}$$
 
-which matches our result precisely. 
+which matches our result precisely.
 
 # Proca
 
@@ -227,7 +227,7 @@ $$\begin{align}
 \end{cases}
 \end{align}$$
 
-so the sector $\displaystyle{\mathcal{D}^{+}A=0}$ corresponds to the highest weight representation with $\displaystyle{(h,\bar{h})=\left( \frac{\mu}{2},1+\frac{\mu}{2} \right)}$, and the sector $\displaystyle{\mathcal{D}^{-}A=0}$ corresponds to the highest weight representation with $\displaystyle{(h,\bar{h})=\left( 1+\frac{\mu}{2},\frac{\mu}{2} \right)}$. below discussions are the same as our present work. 
+so the sector $\displaystyle{\mathcal{D}^{+}A=0}$ corresponds to the highest weight representation with $\displaystyle{(h,\bar{h})=\left( \frac{\mu}{2},1+\frac{\mu}{2} \right)}$, and the sector $\displaystyle{\mathcal{D}^{-}A=0}$ corresponds to the highest weight representation with $\displaystyle{(h,\bar{h})=\left( 1+\frac{\mu}{2},\frac{\mu}{2} \right)}$. below discussions are the same as our present work.
 
 # Chern-Simons
 
@@ -260,15 +260,19 @@ $$\begin{align}
 here $\displaystyle{\mathcal{D}}$ is the operator defined before. the solution is pure gauge (one sector of boundary dofs of Maxwell theory), and physical dofs are related to large gauge transformations. the choice of physical modes depends on the sign of $\displaystyle{k}$ due to unitarity requirements.
 
 the Chern-Simons term induces a current algebra (Kac-Moody algebra) on the boundary. For the left-moving sector (corresponding to $\displaystyle{\psi_{\mu}^{(1,0)}}$), the commutation relations are:
+
 $$\begin{align}
 [J_n, J_m] = k n \delta_{n+m, 0}
 \end{align}$$
+
 The norm of the state $\displaystyle{J_{-n}\ket{0}}$ is proportional to $\displaystyle{k}$. Thus, unitarity (positive norm) requires $\displaystyle{k>0}$.
 
 For the right-moving sector (corresponding to $\displaystyle{\psi_{\mu}^{(0,1)}}$), the commutation relations have the opposite sign due to orientation:
+
 $$\begin{align}
 [\bar{J}_n, \bar{J}_m] = -k n \delta_{n+m, 0}
 \end{align}$$
+
 Unitarity requires $\displaystyle{-k>0}$, i.e., $\displaystyle{k<0}$.
 
 Therefore:
@@ -282,7 +286,7 @@ $$\begin{align}
  & =\prod _{m=1}^{\infty}\frac{1}{1-\bar{q}^{m}}, \quad k<0
 \end{align}$$
 
-where $\displaystyle{q=e^{-\beta+i\alpha}}$... 
+where $\displaystyle{q=e^{-\beta+i\alpha}}$...
 
 # Maxwell-Chern-Simons theory
 
@@ -297,6 +301,7 @@ the eom is
 $$\begin{align}
 \nabla _{\nu}F^{\nu \mu}+\frac{k}{2\pi}\varepsilon ^{\mu \nu \rho}\nabla _{\nu}A_{\rho} & =0
 \end{align}$$
+
 define
 
 $$\begin{align}
@@ -347,7 +352,7 @@ $$\begin{align}
 (\mathcal{D}-\mu _{-})A & =0
 \end{align}$$
 
-notice that $\displaystyle{\mu _{+}> 0, \mu _{-}< 0}$, the first sector corresponds to left-handed modes of $\displaystyle{(h,\bar{h})=\left( \frac{\mu_{+}}{2}, 1+\frac{\mu _{+}}{2} \right)}$ and the second sector corresponds to right-handed modes of $\displaystyle{(h,\bar{h})=\left( 1+\frac{\mu _{-}}{2},\frac{\mu _{-}}{2} \right)}$. the Chern-Simons term here induces a chiral asymmetry between the two sectors. the physical Hilbert space is then the direct sum of these two representations. 
+notice that $\displaystyle{\mu _{+}> 0, \mu _{-}< 0}$, the first sector corresponds to left-handed modes of $\displaystyle{(h,\bar{h})=\left( \frac{\mu_{+}}{2}, 1+\frac{\mu _{+}}{2} \right)}$ and the second sector corresponds to right-handed modes of $\displaystyle{(h,\bar{h})=\left( 1+\frac{\mu _{-}}{2},\frac{\mu _{-}}{2} \right)}$. the Chern-Simons term here induces a chiral asymmetry between the two sectors. the physical Hilbert space is then the direct sum of these two representations.
 
 suppose the action is
 
@@ -376,4 +381,3 @@ $$\begin{align}
 Z[\beta,\alpha] & =\mathrm{Tr}e^{-\beta H+i\alpha J} \\
  & =\prod ^{\infty}_{n,\bar{n}=0} \frac{1}{(1-q^{\mu _{+}/2+1+n}\bar{q}^{\mu _{+}/2+\bar{n}})(1-q^{-\mu _{-}/2+n}\bar{q}^{-\mu _{-}/2+1+\bar{n}})}
 \end{align}$$
-

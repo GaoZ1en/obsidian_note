@@ -75,7 +75,7 @@ $$\begin{align}
 \bar{\partial}_{A} & =\pi ^{(p,q+1)}D_{A}
 \end{align}$$
 
-here $\displaystyle{\Omega ^{p,q}(E)=E\times \Omega ^{p,q}(X)}$, where $\displaystyle{\Omega ^{p,q}(X)}$ is the bundle of $\displaystyle{(p,q)}$ forms on $\displaystyle{X}$. if $\displaystyle{\bar{\partial}_{A}^{2}=0}$, then $\displaystyle{E}$ becomes endowed with a holomorphic structure. 
+here $\displaystyle{\Omega ^{p,q}(E)=E\times \Omega ^{p,q}(X)}$, where $\displaystyle{\Omega ^{p,q}(X)}$ is the bundle of $\displaystyle{(p,q)}$ forms on $\displaystyle{X}$. if $\displaystyle{\bar{\partial}_{A}^{2}=0}$, then $\displaystyle{E}$ becomes endowed with a holomorphic structure.
 
 consider a line bundle $\displaystyle{\mathcal{L}}$ with connection such that $\displaystyle{\bar{\partial}_{A}^{2}=0}$, which means that in a local patch, we can solve the equation $\displaystyle{\bar{\partial}_{A}s=0}$. given an open covering $\displaystyle{U_{\alpha}}$, let us find local sections $\displaystyle{e_{\alpha}}$ satisfying $\displaystyle{\bar{\partial}_{A}e_{\alpha}=0}$ within each $\displaystyle{U_{\alpha}}$. we can ensure the $\displaystyle{e_{\alpha}}$ are nowhere zero inside $\displaystyle{U_{\alpha}}$ by dividing by an appropriate holomorphic function to cancel their zeros (if necessary). the sectios $\displaystyle{e_{\alpha}}$ is called a holomorphic frame. a general section can be expanded in terms of it $\displaystyle{s=s_{\alpha}e_{\alpha}}$. note that $\displaystyle{s}$ is holomorphic iff $\displaystyle{s_{\alpha}}$ is a holomorphic function
 
@@ -191,7 +191,7 @@ where $\displaystyle{\iota:\mathcal{H}_{k}\to \mathcal{H}_{\text{full}}}$ is inc
 $$\begin{align}
 \braket{ s_{i},Q(f)s_{j} }  & = \braket{ s_{i},\Pi_{0}M_{f}s_{j} } \\
  & = \braket{ \Pi_{0}s_{i},M_{f}s_{j} }= \braket{ s_{i},M_{f}s_{j} } \\
- & =\int _{X}\mathrm{dvol} (s_{i}^{*})_{\alpha}(s_{j})_{\alpha}f(z,\bar{z})e^{-kK_{\alpha}}  
+ & =\int _{X}\mathrm{dvol} (s_{i}^{*})_{\alpha}(s_{j})_{\alpha}f(z,\bar{z})e^{-kK_{\alpha}}
 \end{align}$$
 
 ## example: particle in a magnetic field
@@ -258,7 +258,7 @@ $$\begin{align}
 \braket{ \psi _{1}|Q(\bar{z})|\psi _{2} } & =\alpha \int \frac{\mathrm{d}^{2}z}{2\pi} \psi ^{*}_{1}(\bar{z})\bar{z}\psi _{2}(z)e^{-k\alpha z\bar{z}} \\
  & =\alpha \int \frac{\mathrm{d}^{2}z}{2\pi} \psi ^{*}_{1}(\bar{z})\psi _{2}(z) \left( -\frac{1}{k\alpha} \frac{\partial}{\partial z} \right)e^{-k \alpha z\bar{z}} \\
  & =\alpha \int \frac{\mathrm{d}^{2}z}{2\pi} \psi ^{*}_{1}(\bar{z}) \left(\frac{1}{k\alpha} \frac{\partial}{\partial z}\psi _{2}(z)\right) e^{-k \alpha z\bar{z}} \\
- & =\braket{ \psi _{1}| \frac{1}{k \alpha}\frac{\partial}{\partial z}\psi _{2} } 
+ & =\braket{ \psi _{1}| \frac{1}{k \alpha}\frac{\partial}{\partial z}\psi _{2} }
 \end{align}$$
 
 thus we find
@@ -291,7 +291,7 @@ $$\begin{align}
 note that different choices of $\displaystyle{\gamma}$ give different embeddings of $\displaystyle{\mathcal{H}_{k}}$ inside $\displaystyle{\mathcal{H}_{\text{full}}}$. however, all these copies of $\displaystyle{\mathcal{H}_{k}}$ are ismorphic, and we can define a Berry connection on $\displaystyle{\gamma}$-space by
 
 $$\begin{align}
-i\braket{ \psi _{1}|\mathcal{A}_{\gamma}|\psi _{2} }  & = \braket{ \iota(\psi _{1}), \frac{\partial}{\partial \gamma}\iota(\psi _{2}) } 
+i\braket{ \psi _{1}|\mathcal{A}_{\gamma}|\psi _{2} }  & = \braket{ \iota(\psi _{1}), \frac{\partial}{\partial \gamma}\iota(\psi _{2}) }
 \end{align}$$
 
 $\displaystyle{\mathcal{A}_{\gamma}}$ can be represented as an 2nd order differential operator in $\displaystyle{z}$. this connection gives a notion of parallel transport on the space of complex structures (the $\displaystyle{\gamma}$ parameter here), allowing us to identify states in $\displaystyle{\mathcal{H}_{k}}$ for one choice of $\displaystyle{\gamma}$ with states in $\displaystyle{\mathcal{H}_{k}}$ for another choice. importantly, this connection is (projectively) flat, so that the identification does not depend on the path in $\displaystyle{\gamma}$-space we choose. this means that the different choices of complex structure do not affect physical observables, which can all be computed in terms of operators on $\displaystyle{\mathcal{H}_{k}}$. however the generalization of this result to higher-dimensional spaces of complex structures is nontrivial, and flatness of the Berry connection is not guaranteed.
@@ -373,6 +373,7 @@ $$\begin{align}
 \braket{ \psi _{1}|J^{3}J^{\pm}|\psi _{2} }  & =(j+1)^{2}\braket{ \psi _{1}|Q(x^{3})Q(x^{\pm})|\psi _{2} } \\
  & =(j+1)^{2}\int \frac{\mathrm{d}^{2}z}{2\pi} \frac{\psi _{1}^{*}(\bar{z})x^{3}x^{\pm}\psi _{2}(z)}{(1+|z|^{2})^{k+2}}
 \end{align}$$
+
 ...
 
 furthermore, $\displaystyle{J^{i}}$ act irreducibly on $\displaystyle{\mathcal{H}_{k}}$, furnishing the spin-$\displaystyle{j=\frac{k}{2}}$ representation of $\displaystyle{\mathfrak{su}(2)}$.
@@ -470,4 +471,3 @@ $$\begin{align}
 \end{align}$$
 
 ## quantum mechanics on a symplectic quotient
-

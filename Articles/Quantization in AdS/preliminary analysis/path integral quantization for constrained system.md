@@ -1,4 +1,5 @@
-$$\tag{1.1}
+$$
+\tag{1.1}
 \begin{align}
 L & = \frac{1}{2}m\dot{x}^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}-\frac{1}{2}kx^{2}
 \end{align}
@@ -6,15 +7,17 @@ $$
 
 consider the amplitude
 
-$$\tag{1.2}
+$$
+\tag{1.2}
 \begin{align}
-\braket{ x=x_{f}|e^{-iH(t_{f}-t_{i})e^{-i\alpha}}|x=x_{i} } 
+\braket{ x=x_{f}|e^{-iH(t_{f}-t_{i})e^{-i\alpha}}|x=x_{i} }
 \end{align}
 $$
 
 here $\displaystyle{0<\alpha\leqslant \frac{\pi}{2}}$ plays the role of a continuous Wick rotation. we can reformulate the amplitude into path integral as
 
-$$\tag{1.3}
+$$
+\tag{1.3}
 \begin{align}
  & ~~~~~\braket{ x=x_{f}|e^{-iH(t_{f}-t_{i})e^{-i\alpha}}|x=x_{i} } \\
  & = \braket{ x=x_{f}|e^{-iH\Delta te^{-i\alpha}}\dots e^{-iH\Delta te^{-i\alpha}}|x=x_{i} } \\
@@ -34,11 +37,12 @@ $$\begin{align}
 \braket{ x_{f}|e^{-iH\Delta T}|x_{i} }  & =\int ^{x=x_{f}} _{x=x_{i}} \mathcal{D}x\mathcal{D}p\exp\left(i \int _{t_{i}}^{t_{f}} \mathrm{d}t (p\dot{x}-H)\right)
 \end{align}$$
 
-here we choose $\displaystyle{x_{n}=x_{f},x_{0}=x_{i}}$, and $\displaystyle{0<\beta\leqslant \frac{\pi}{2}}$ plays the same rule as $\displaystyle{\alpha}$. 
+here we choose $\displaystyle{x_{n}=x_{f},x_{0}=x_{i}}$, and $\displaystyle{0<\beta\leqslant \frac{\pi}{2}}$ plays the same rule as $\displaystyle{\alpha}$.
 
 then consider the time ordered correlation function (assuming $\displaystyle{t_{i}< t'<t<t_{f}}$)
 
-$$\tag{1.4}
+$$
+\tag{1.4}
 \begin{align}
  & ~~~~~\braket{ x_{f}|e^{-iHt_{f}e^{-i\alpha}}\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})e^{iHt_{i}e^{-i\alpha}}|x_{i} } \\
  & =\braket{ x_{f}|e^{-iHt_{f}e^{-i\alpha}}x(te^{-i\alpha})x(t'e^{-i\alpha})e^{iHt_{i}e^{-i\alpha}}|x_{i} }   \\
@@ -56,7 +60,8 @@ $$\tag{1.4}
 \end{align}
 $$
 
-$$\tag{1.4}
+$$
+\tag{1.4}
 \begin{align}
  & ~~~~~\braket{ x_{f}|e^{-iHt_{f}e^{-i\alpha}}\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})e^{iHt_{i}e^{-i\alpha}}|x_{i} } \\
  & =\mathcal{N}\int [\mathcal{D}x\mathcal{\phi}]_{x(t_{i})=x_{i},x(t_{f})=x_{f}} x(t)x(t')\exp\left[i \int _{t_{i}}^{t_{f}}\mathrm{d}t\left( \frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}-\frac{1}{2}kx^{2}e^{-i\alpha}\right)\right]
@@ -65,7 +70,8 @@ $$
 
 then define the normalized correlation function
 
-$$\tag{1.5}
+$$
+\tag{1.5}
 \begin{align}
 \frac{\braket{ x_{f}|e^{-iHt_{f}e^{-i\alpha}}\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})e^{iHt_{i}e^{-i\alpha}}|x_{i} }}{\braket{ x_{f}|e^{-iH(t_{f}-t_{i})e^{-i\alpha}}|x_{i} }}
 \end{align}
@@ -73,7 +79,8 @@ $$
 
 by taking $\displaystyle{t_{f}\to+\infty, t_{i}\to-\infty}$, we get the vacuum correlation function (Gell-Mann-Low theorem)
 
-$$\tag{1.6}
+$$
+\tag{1.6}
 \begin{align}
 \frac{\braket{ 0|\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})|0 }}{\braket{ 0|0 } }  & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi x(t)x(t') \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}
 \end{align}
@@ -81,9 +88,10 @@ $$
 
 ---
 
-introduce 
+introduce
 
-$$\tag{2.1}
+$$
+\tag{2.1}
 \begin{align}
 Z[J,\eta] & =\int \mathcal{D}x\mathcal{D}\phi \exp\left( i \int _{-\infty}^{+\infty}\mathrm{d}t(L[x,\phi]+Jx+\eta \phi) \right) \\
  & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi +\frac{1}{2}\phi ^{2}+Jx+\eta \phi\right)\right) \\
@@ -94,7 +102,8 @@ $$
 
 where $\displaystyle{G(t,t')}$ satisfies
 
-$$\tag{2.2}
+$$
+\tag{2.2}
 \begin{align}
 \left( m' \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k -i\varepsilon\right)G(t,t')=\delta(t-t')\implies G(t,t')=-\frac{1}{2\pi im'} \int _{-\infty}^{+\infty} \frac{\mathrm{d}p_{0}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}e^{-ip_{0}(t-t')}
 \end{align}
@@ -102,7 +111,8 @@ $$
 
 then
 
-$$\tag{2.3}
+$$
+\tag{2.3}
 \begin{align}
 \frac{\braket{ 0|\mathcal{T}x(t)\phi(t')|0 }}{\braket{ 0|0 } } & = -\frac{\delta ^{2}\log Z[J,\eta]}{\delta J(t)\delta J(t')}\Big|_{J=0,\eta=0} \\
  & = G(t,t') \\
@@ -118,7 +128,8 @@ $$
 
 or we should not integrate out $\displaystyle{\phi}$ first????
 
-$$\tag{3.1}
+$$
+\tag{3.1}
 \begin{align}
 Z[J_{x},J_{\phi}] & =\int \mathcal{D}x\mathcal{D}\phi \exp\left( i \int _{-\infty}^{+\infty}\mathrm{d}t(L[x,\phi]+J_{x}x+J_{\phi} \phi) \right) \\
  & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left( -\frac{1}{2}X DX^{T}+XJ^{T} \right)\right) \\
@@ -131,7 +142,8 @@ $$
 
 and $\displaystyle{D^{-1}(t,t')}$ satisfies
 
-$$\tag{3.2}
+$$
+\tag{3.2}
 \begin{align}
 iD(t)D^{-1}(t,t') & =\delta(t-t')\mathbb{1}_{2\times2} \\
 \implies D^{-1}(t,t') & =\int \frac{\mathrm{d}p_{0}}{2\pi m'} \frac{i}{p_{0}^{2}-\omega ^{2}+i\varepsilon}e^{-ip_{0}(t-t')} \begin{pmatrix}
@@ -143,7 +155,8 @@ $$
 
 then
 
-$$\tag{3.3}
+$$
+\tag{3.3}
 \begin{align}
 \braket{ 0|\mathcal{T}x(t)x(t')|0 } & =-\frac{\delta ^{2}\log Z[J]}{\delta J_{x}(t)\delta J_{x}(t')}\Big|_{J=0} \\
  & =D^{-1}(t,t')_{xx}= -\frac{1}{2\pi im'} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon} \\
@@ -158,7 +171,8 @@ $$
 
 in canonical formalism, we have
 
-$$\tag{3.4}
+$$
+\tag{3.4}
 \begin{align}
 \braket{ 0|\mathcal{T}\phi(t)\phi(t')|0 } & =\frac{\lambda ^{2}}{2\pi im'} \partial _{t}^{2}\int \mathrm{d}p_{0}\frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}-\frac{i \lambda ^{2}}{m'}\delta(t-t')
 \end{align}
@@ -168,7 +182,8 @@ $$
 
 keep $\displaystyle{\alpha}$ and $\displaystyle{\beta}$ finite and do the path integral again...
 
-$$\tag{4.1}
+$$
+\tag{4.1}
 \begin{align}
 \frac{\braket{ 0|\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})|0 }}{\braket{ 0|0 } }  & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi x(t)x(t') \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)}}
 \end{align}
@@ -176,7 +191,8 @@ $$
 
 introduce
 
-$$\tag{4.2}
+$$
+\tag{4.2}
 \begin{align}
 Z[J_{x},J_{\phi}] & = \int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}+J_{x}x+J_{\phi}\phi\right)\right) \\
  & =\int \mathcal{D}x\mathcal{D}\phi \exp\left(\int _{-\infty}^{+\infty}\mathrm{d}t\left(-\frac{i}{2}XDX^{T}+iJX^{T}\right)\right) \\
@@ -186,7 +202,8 @@ $$
 
 where
 
-$$\tag{4.3}
+$$
+\tag{4.3}
 \begin{align}
 X & =\begin{pmatrix}x & \phi\end{pmatrix} \\
 D & =\begin{pmatrix}me^{i\alpha} \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+ke^{-i\alpha} & -e^{i(\alpha+\beta)/2}\lambda \frac{\mathrm{d}}{\mathrm{d}t} \\e^{i(\alpha+\beta)/2}\lambda \frac{\mathrm{d}}{\mathrm{d}t} & -e^{i\beta} \\\end{pmatrix} \\
@@ -196,7 +213,8 @@ $$
 
 and $\displaystyle{D^{-1}(t,t')}$ satisfies
 
-$$\tag{4.4}
+$$
+\tag{4.4}
 \begin{align}
 iDD^{-1}(t,t') & =\delta(t-t')\mathbb{1}_{2\times2} \\
 \implies D^{-1}(t,t') & = -\frac{1}{2\pi im'} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}e^{i\alpha}-\omega ^{2}e^{-i\alpha}}\begin{pmatrix}
@@ -208,7 +226,8 @@ $$
 
 this can be done by some Fourier analysis and linear algebra. then we have
 
-$$\tag{4.5}
+$$
+\tag{4.5}
 \begin{align}
 \braket{ x(t)x(t') }_{\alpha,\beta} & = \frac{\delta ^{2}\log Z[J]}{i^{2}\delta J_{x}(t)\delta J_{x}(t')}\Big|_{J=0} \\
  & =-\frac{1}{2\pi im'}\int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}e^{i\alpha}-\omega ^{2} e^{-i\alpha}} \\
@@ -223,15 +242,17 @@ by taking $\displaystyle{\alpha,\beta\to0}$, we return the result in (3.3)
 
 ---
 
-this section is referred from the Chapter sixteen in the *Quantization of Gauge Systems* by Henneaux and Teitelboim. 
+this section is referred from the Chapter sixteen in the *Quantization of Gauge Systems* by Henneaux and Teitelboim.
 
-$$\tag{5.1}
+$$
+\tag{5.1}
 \begin{align}
 L & =\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi ^{2}
 \end{align}
 $$
 
-$$\tag{5.2}
+$$
+\tag{5.2}
 \begin{align}
 p_{x} & = \frac{\partial L}{\partial \dot{x}}=m\dot{x}-\lambda \phi \\
 p_{\phi} & = \frac{\partial L}{\partial \dot{\phi}} =0
@@ -240,7 +261,8 @@ $$
 
 then we get a primary constraint $\displaystyle{\varphi _{1}=p_{\phi}\approx 0}$. the Hamiltonian is
 
-$$\tag{5.3}
+$$
+\tag{5.3}
 \begin{align}
 H & =p_{x}\dot{x}-L \\
  & =\frac{p_{x}^{2}}{2m}+\frac{\lambda p_{x}\phi}{m}+\left( \frac{\lambda ^{2}}{2m}-\frac{1}{2} \right)\phi ^{2}+\frac{1}{2}kx^{2} \\
@@ -248,10 +270,10 @@ H & =p_{x}\dot{x}-L \\
 \end{align}
 $$
 
-
 consider the Poisson bracket between $\displaystyle{\varphi _{1}}$ and $\displaystyle{H}$
 
-$$\tag{5.4}
+$$
+\tag{5.4}
 \begin{align}
 \left\{\varphi _{1},H\right\} & =- \frac{\partial H}{\partial \phi} \\
  & =-\frac{\lambda p_{x}}{m}-\left( \frac{\lambda ^{2}}{m}-1 \right)\phi
@@ -264,7 +286,8 @@ $$\begin{align}
 
 then we get a secondary constraint $\displaystyle{\varphi _{2}=-\frac{\lambda p_{x}}{m}-\left(\frac{\lambda ^{2}}{m}-1\right)\phi \approx 0}$, and
 
-$$\tag{5.5}
+$$
+\tag{5.5}
 \begin{align}
 \left\{\varphi _{1},\varphi _{2}\right\} & =\frac{\lambda ^{2}}{m}-1
 \end{align}
@@ -272,7 +295,8 @@ $$
 
 define (here we do not concern about the overall factor $\displaystyle{\mathcal{N}}$)
 
-$$\tag{5.6}
+$$
+\tag{5.6}
 \begin{align}
 Z[J_{x},J_{\phi}] & =\mathcal{N}\int \mathcal{D}x\mathcal{D}p_{x}\mathcal{D}\phi \mathcal{D}p_{\phi} \prod ^{2}_{i=1}\delta(\varphi _{i}) \det\left(\left\{\varphi _{i},\varphi _{j}\right\}\right)^{1/2} \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t (p_{x}\dot{x}-H[x,\phi]+J_{x}x+J_{\phi}\phi)\right) \\
  & =\mathcal{N}\int \mathcal{D}x\mathcal{D}p_{x}\mathcal{D}\phi \mathcal{D}p_{\phi} \delta(p_{\phi}) \delta\left( -\frac{\lambda p_{x}}{m}-\left( \frac{\lambda ^{2}}{m}-1 \right)\phi \right)\exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(p_{x}\dot{x}-\frac{p_{x}^{2}}{2m}\right.\right. \\
@@ -286,7 +310,8 @@ $$
 
 here we integrate out $\displaystyle{\phi}$. $\displaystyle{D= m' \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k}$ and $\displaystyle{D^{-1}(t,t')}$ satisfies
 
-$$\tag{5.7}
+$$
+\tag{5.7}
 \begin{align}
 iDD^{-1}(t,t') & =\delta(t-t') \\
 \implies D^{-1}(t,t') & =-\frac{1}{2\pi im} \int \mathrm{d}p_{0} \frac{e^{-ip_{0}(t-t')}}{p_{0}^{2}-\omega ^{2}+i\varepsilon}
@@ -297,7 +322,8 @@ then we get the results in (2.3).
 
 ---
 
-$$\tag{6.1}
+$$
+\tag{6.1}
 \begin{align}
 \braket{ x(t)\phi(t') }   & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi x(t)\phi(t') \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int _{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{-i\beta}\right)\right)}}
 \end{align}
@@ -305,7 +331,8 @@ $$
 
 integrate out $\displaystyle{\phi}$.
 
-$$\tag{6.2}
+$$
+\tag{6.2}
 \begin{align}
 \braket{ x(t)\phi(t') }_{\alpha,\beta}  & = \frac{\displaystyle\int \mathcal{D}x\mathcal{D}\phi x(t)\phi(t') \exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)}{\displaystyle \int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left( \frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)} \\
  & = \frac{\displaystyle{\int \mathcal{D}xx(t) e^{i(\alpha-\beta)/2}\lambda \dot{x}(t')\exp\left(i \int ^{+\infty}_{-\infty} \mathrm{d}t\left( \frac{1}{2}m'\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha} \right)\right)}}{\displaystyle{\int \mathcal{D}x \exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m'\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}\right)\right)}} \\
@@ -313,13 +340,14 @@ $$\tag{6.2}
  & =e^{i(\alpha-\beta)/2}\lambda \partial _{t'}\braket{ x(t)x(t') }_{\alpha} \\
  & =e^{i(\alpha-\beta)/2}\lambda \partial _{t'} \braket{ 0|\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})|0 } \\
  & =e^{i(\alpha-\beta)/2}\lambda \braket{ 0|\mathcal{T}x(te^{-i\alpha})\dot{x}(t'e^{-i\alpha})|0 }  \\
- & = \braket{ 0|\mathcal{T}x(te^{-i\alpha})\phi(t'e^{-i\alpha})|0 } 
+ & = \braket{ 0|\mathcal{T}x(te^{-i\alpha})\phi(t'e^{-i\alpha})|0 }
 \end{align}
 $$
 
 similarly, we have
 
-$$\tag{6.3}
+$$
+\tag{6.3}
 \begin{align}
  & \braket{ \phi(t)\phi(t') } _{\alpha,\beta}  \\
  & = \frac{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \phi(t)\phi(t')\exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)}}{\displaystyle{\int \mathcal{D}x\mathcal{D}\phi \exp\left(i \int ^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}e^{i\alpha}-\frac{1}{2}kx^{2}e^{-i\alpha}-\lambda \dot{x}\phi e^{i(\alpha+\beta)/2}+\frac{1}{2}\phi ^{2}e^{i\beta}\right)\right)}} \\
@@ -332,9 +360,10 @@ $$\tag{6.3}
 \end{align}
 $$
 
-where $\displaystyle{\delta _{i_{1}i_{2}}}$ term comes from the quantum fluctuation of $\displaystyle{\phi}$, 
+where $\displaystyle{\delta _{i_{1}i_{2}}}$ term comes from the quantum fluctuation of $\displaystyle{\phi}$,
 
-$$\tag{6.4}
+$$
+\tag{6.4}
 \begin{align}
  & \int \prod _{i}\mathrm{d}\phi _{i}\phi _{i_{1}}\phi _{i_{2}}\exp \left(i\sum _{i}\Delta t \frac{1}{2}(\phi _{i}-\phi _{i,\mathrm{cl}})^{2}e^{i\beta}\right)  \\
 & =\int \prod _{i}\mathrm{d}\phi'_{i}\phi _{i_{1}}'\phi _{i_{2}}'\exp\left(i \sum _{i}\Delta t \frac{1}{2}\phi_{i}^{'2}e^{i\beta}\right)+\int \prod _{i}\mathrm{d}\phi _{i}\phi _{i_{1},\mathrm{cl}}\phi _{i_{2},\mathrm{cl}}\exp\left(i \sum _{i}\Delta t \frac{1}{2}\phi _{i}^{'2}e^{i\beta}\right) \\
@@ -343,8 +372,8 @@ $$\tag{6.4}
 \end{align}
 $$
 
-
-$$\tag{6.5}
+$$
+\tag{6.5}
 \begin{align}
 \braket{ \phi(t)\phi(t') } _{\alpha,\beta} & =e^{i(\alpha-\beta)}\lambda ^{2}\partial _{t}\partial _{t'}\braket{ 0|\mathcal{T}x(te^{-i\alpha})x(t'e^{-i\alpha})|0 } +i\delta(t-t')e^{-i\beta} \\
  & =e^{i(\alpha-\beta)/2}\lambda \partial _{t}\braket{ 0|\mathcal{T}x(te^{-i\alpha})\phi(t'e^{-i\alpha})|0 } +i\delta(t-t')e^{-i\beta} \\
@@ -358,6 +387,8 @@ and the extra term is exactly the difference between canonical formalism and the
 
 ---
 
-$$Z = \int \mathcal{D}p\mathcal{D}q \, \prod_a \delta(\chi_a(p,q)) \, \text{det}^{1/2}(\{\chi_a, \chi_b\}) \, \exp\left(i\int dt (p\dot{q} - H)\right)$$
+$$\begin{align}
+Z = \int \mathcal{D}p\mathcal{D}q \, \prod_a \delta(\chi_a(p,q)) \, \text{det}^{1/2}(\{\chi_a, \chi_b\}) \, \exp\left(i\int dt (p\dot{q} - H)\right)
+\end{align}$$
 
 The $\text{det}^{1/2}(\{\chi_a, \chi_b\})$ factor ensures the correct integration measure on the reduced phase space. this is the path integral quantization of a system with second class constraints.

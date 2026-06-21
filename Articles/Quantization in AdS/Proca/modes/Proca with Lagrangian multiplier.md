@@ -114,4 +114,3 @@ $$\begin{align}
 \end{align}$$
 
 which gives the usual logitudinal mode and constrained temporal mode.
-

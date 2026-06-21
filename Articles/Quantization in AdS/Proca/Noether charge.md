@@ -40,10 +40,13 @@ H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\lef
 \end{align}$$
 
 the eom is
-$$\begin{align} \\
+
+$$
+\begin{align} \\
 \varphi=e^{-i\omega t}e^{im\phi}\tilde{\varphi} \\
 (1+r^{2})\partial _{r}^{2}\tilde{\varphi}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{\varphi}+ \left( -\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}}-\frac{m^{2}}{r^{2}} \right)\tilde{\varphi} =0
-\end{align}$$
+\end{align}
+$$
 
 finiteness of the action gives the following two asymptotic behavior of $\displaystyle{\varphi}$:
 
@@ -101,9 +104,11 @@ X_{\xi}\cdot \omega[\delta A_{1},\delta A_{2}] & =\omega[\mathcal{L}_{\xi}A_{1},
  & =\sum ^{\infty}_{n_{1},n_{2}=0}\sum ^{\infty}_{\bar{n}_{1},\bar{n}_{2}=0}\omega[\mathcal{L}_{\xi}f^{(+)}_{l,n_{1},\bar{n}_{1}},f^{(-)}_{l,n_{2},\bar{n}_{2}}]a_{l,n_{1},\bar{n}_{1}}\delta a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi}f^{(+)}_{r,n_{1},\bar{n}_{1}},f^{(-)}_{r,n_{2},\bar{n}_{2}}]a_{r,n_{1},\bar{n}_{1}}\delta a^{\dagger}_{r,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi}f^{(-)}_{l,n_{1},\bar{n}_{1}},f^{(+)}_{l,n_{2},\bar{n}_{2}}]a^{\dagger}_{l,n_{1},\bar{n}_{1}}\delta a_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi}f^{(-)}_{r,n_{1},\bar{n}_{1}},f^{(+)}_{r,n_{2},\bar{n}_{2}}]a^{\dagger}_{r,n_{1},\bar{n}_{1}}\delta a_{r,n_{2},\bar{n}_{2}}
 \end{align}$$
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 \omega[f^{(+)}_{l/r,n_{1},\bar{n}_{1}},f^{(-)}_{l/r,n_{2},\bar{n}_{2}}]=-i\delta _{n_{1},n_{2}}\delta _{\bar{n}_{1},\bar{n}_{2}}
-\end{align}$$
+\end{align}
+$$
 
 $$\begin{align}
 -\delta H_{\xi_{-1}} & =X_{\xi _{-1}}\cdot \omega \\
@@ -168,13 +173,16 @@ $$\begin{align}
  & \left. +\xi ^{\phi}\left(\frac{1}{1+r^{2}}\partial _{t}A^{r}+(1+r^{2})\partial _{r}A^{t}+2rA^{t}\right)\left(\partial _{\phi}A^{r}-r^{2}(1+r^{2})\partial _{r}A^{\phi}-2r(1+r^{2})A^{\phi}\right) \right)
 \end{align}$$
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 \sqrt{ \sigma }\tau _{\nu}\xi ^{\nu}\left(-\frac{1}{4}F_{\rho \sigma}F^{\rho \sigma}\right) & =-r\xi ^{t}\left(-\frac{1}{2}F_{tr}F^{tr}-\frac{1}{2}F_{t\phi}F^{t\phi}-\frac{1}{2}F_{r\phi}F^{r\phi}\right) \\
  & =\frac{1}{2}r\xi ^{t}\left(-\left( \frac{1}{1+r^{2}}\partial _{t}A^{r}+(1+r^{2})\partial _{r}A^{t}+2rA^{t} \right)^{2}-\frac{1}{r^{2}(1+r^{2})}(r^{2}\partial _{t}A^{\phi}+(1+r^{2})\partial _{\phi}A^{t})^{2}+\frac{1+r^{2}}{r^{2}}\left(r^{2}\partial _{r}A^{\phi}-\frac{1}{1+r^{2}}\partial _{\phi}A^{r}+2rA^{\phi}\right)^{2}\right) \\
 \sqrt{ \sigma }\tau _{\nu}\xi ^{\nu}\left(-\frac{1}{2}\mu ^{2}A_{\rho}A^{\rho}\right) & =\frac{1}{2}\mu ^{2}r\xi ^{t}\left( -(1+r^{2})(A^{t})^{2}+\frac{1}{1+r^{2}}(A^{r})^{2}+r^{2}(A^{\phi})^{2} \right)
-\end{align}$$
+\end{align}
+$$
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 \xi ^{t} & : \frac{r}{2}\left(\frac{1}{1+r^{2}}\partial _{t}A^{r}+(1+r^{2})\partial _{r}A^{t}+2rA^{t}\right)^{2}+\frac{1}{2r(1+r^{2})}(r^{2}\partial _{t}A^{\phi}+(1+r^{2})\partial _{\phi}A^{t})^{2}+\frac{1+r^{2}}{2r}\left( r^{2}\partial _{r}A^{\phi}-\frac{1}{1+r^{2}}\partial _{\phi}A^{r}+2rA^{\phi} \right)^{2} \\
  & =\frac{r(1+r^{2})^{2}}{2}(\partial _{r}A^{t})^{2}+\frac{1+r^{2}}{2r}(\partial _{\phi}A^{t})^{2}+\frac{r}{2(1+r^{2})^{2}}(\partial _{t}A^{r})^{2}+\frac{1}{2r(1+r^{2})}(\partial _{\phi}A^{r})^{2}+\frac{r^{3}}{2(1+r^{2})}(\partial _{t}A^{\phi})^{2}+\frac{r^{3}(1+r^{2})}{2}(\partial _{r}A^{\phi})^{2} \\
  & +r\partial _{r}A^{t}\partial _{t}A^{r}+r\partial _{\phi}A^{t}\partial _{t}A^{\phi}-r\partial _{\phi}A^{r}\partial _{r}A^{\phi}+2r^{2}(1+r^{2})A^{t}\partial _{r}A^{t}+\frac{2r^{2}}{1+r^{2}}A^{t}\partial _{t}A^{r}-2A^{\phi}\partial _{\phi}A^{r}+2r^{2}(1+r^{2})A^{\phi}\partial _{r}A^{\phi}+2r^{3}(A^{t})^{2}+2r(1+r^{2})(A^{\phi})^{2} \\
@@ -182,7 +190,8 @@ $$\tag{.}\begin{align}
  & =-\frac{1}{r(1+r^{2})}\partial _{\phi}A^{t}\partial _{\phi}A^{r}+r\partial _{\phi}A^{t}\partial _{r}A^{\phi}-\frac{r}{(1+r^{2})^{2}} \partial _{\phi}A^{r}\partial _{t}A^{\phi}+\frac{r^{3}}{1+r^{2}}\partial _{t}A^{\phi}\partial _{r}A^{\phi}+\frac{2r^{2}}{1+r^{2}}A^{\phi}\partial _{t}A^{\phi}+2A^{\phi}\partial _{\phi}A^{t} \\
 \xi ^{\phi} & : \frac{r}{1+r^{2}}\left( \frac{1}{1+r^{2}}\partial _{t}A^{r}+(1+r^{2})\partial _{r}A^{t}+2rA^{t} \right)(\partial _{\phi}A^{r}-r^{2}(1+r^{2})\partial _{r}A^{\phi}-2r(1+r^{2})A^{\phi}) \\
  & =r\partial _{r}A^{t}\partial _{\phi}A^{r}-r^{3}(1+r^{2})\partial _{r}A^{t}\partial _{r}A^{\phi}+\frac{r}{(1+r^{2})^{2}}\partial _{t}A^{r}\partial _{\phi}A^{r}-\frac{r^{3}}{1+r^{2}}\partial _{t}A^{r}\partial _{r}A^{\phi}+\frac{2r^{2}}{1+r^{2}}A^{t}\partial _{\phi}A^{r}-2r^{4}A^{t}\partial _{r}A^{\phi}-\frac{2r^{2}}{1+r^{2}}A^{\phi}\partial _{t}A^{r}-2r^{2}(1+r^{2})A^{\phi}\partial _{r}A^{t}-2r^{3}A^{t}A^{\phi}
-\end{align}$$
+\end{align}
+$$
 
 $$\begin{align}
 H_{\xi} & =\int \mathrm{d}r \mathrm{d}\phi \xi ^{t}\left(\frac{r(1+r^{2})^{2}}{2}(\partial _{r}A^{t})^{2}+\frac{1+r^{2}}{2r}(\partial _{\phi}A^{t})^{2}+\frac{r}{2(1+r^{2})^{2}}(\partial _{t}A^{r})^{2}+\frac{1}{2r(1+r^{2})}(\partial _{\phi}A^{r})^{2}+\frac{r^{3}}{2(1+r^{2})}(\partial _{t}A^{\phi})^{2}+\frac{r^{3}(1+r^{2})}{2}(\partial _{r}A^{\phi})^{2}\right. \\
@@ -194,10 +203,13 @@ H_{\xi} & =\int \mathrm{d}r \mathrm{d}\phi \xi ^{t}\left(\frac{r(1+r^{2})^{2}}{2
 ---
 
 notice that
-$$\tag{.}\begin{align}
+
+$$
+\tag{.}\begin{align}
 X_{\xi _{1}}\cdot X_{\xi _{2}}\cdot \omega & =\left\{H_{\xi_{1}},H_{\xi_{2}}\right\} \\
  & =H_{\left\{\xi _{1},\xi _{2}\right\}}
-\end{align}$$
+\end{align}
+$$
 
 then we have
 
@@ -234,12 +246,14 @@ $$\begin{align}
  & =\sum ^{\infty}_{n,\bar{n}=0}\left( \frac{\mu}{2}+n \right)a_{l,n,\bar{n}}a^{\dagger}_{l,\bar{n}}+\left(\frac{\mu+2}{2}+n\right)a_{r,n,\bar{n}}a^{\dagger}_{r,n,\bar{n}}
 \end{align}$$
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 \omega[\mathcal{L}_{\xi_{1}}A,\mathcal{L}_{\xi_{0}}A] & =\sum ^{\infty}_{n_{1},n_{2}=0}\sum ^{\infty}_{\bar{n}_{1},\bar{n}_{2}=0}\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{0}}f^{(-)}_{l,n_{2},\bar{n}_{2}}]a_{l,n_{1},n_{2}}a^{\dagger}_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(+)}_{r,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{0}}f^{(-)}_{r,n_{2},\bar{n}_{2}}]a_{r,n_{1},n_{2}}a^{\dagger}_{r,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(-)}_{l,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{0}}f^{(+)}_{l,n_{2},\bar{n}_{2}}]a^{\dagger}_{l,n_{1},n_{2}}a_{l,n_{2},\bar{n}_{2}}+\omega[\mathcal{L}_{\xi_{1}}f^{(-)}_{r,n_{1},\bar{n}_{1}},\mathcal{L}_{\xi_{0}}f^{(+)}_{r,n_{2},\bar{n}_{2}}]a^{\dagger}_{l,n_{1},n_{2}}a_{r,n_{2},\bar{n}_{2}} \\
  & =-\sum ^{\infty}_{n,\bar{n}=0}\sqrt{ (n+1)(\mu+n) }a_{l,n+1,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+\sqrt{ (n+1)(\mu+n+2) }a_{r,n+1,\bar{n}}a^{\dagger}_{r,n,\bar{n}} \\
 \implies H_{\xi _{1}} & =i\omega[\mathcal{L}_{\xi_{1}}A,\mathcal{L}_{\xi_{0}}A] \\
  & =-i\sum ^{\infty}_{n,\bar{n}=0}\sqrt{ (n+1)(\mu+n) }a_{l,n+1,\bar{n}}a^{\dagger}_{l,n,\bar{n}}+\sqrt{ (n+1)(\mu+n+2) }a_{r,n+1,\bar{n}}a^{\dagger}_{r,n,\bar{n}}
-\end{align}$$
+\end{align}
+$$
 
 as a summary
 
@@ -282,7 +296,7 @@ X_{\xi} \cdot \omega & =\int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}
  & =-\delta H_{\xi}
 \end{align}$$
 
-here we drop all the total derivatives. 
+here we drop all the total derivatives.
 
 $$\begin{align}
 X_{\xi}\cdot\omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}[(X_{\xi}\cdot\delta F^{\mu \nu})\delta A_{\nu}-\delta F^{\mu \nu}(X_{\xi}\cdot \delta A_{\nu})] \\
@@ -308,10 +322,9 @@ X_{\xi}\cdot \omega & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\x
  & =-\delta\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\left(F^{\mu \rho}F^{\nu}_{~\rho}+\mu ^{2}A^{\mu}A^{\nu}-\frac{1}{4}g_{\mu \nu}F^{\rho \sigma}F_{\rho \sigma}-\frac{1}{2}g_{\mu \nu}\mu ^{2}A^{\rho}A_{\rho}\right)
 \end{align}$$
 
-here we also drop all the total derivatives. 
+here we also drop all the total derivatives.
 
 ---
-
 
 $$\begin{align}
 H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left( \nabla _{\mu}\varphi \nabla _{\nu}\varphi-\frac{1}{2}g_{\mu \nu}\nabla _{\rho}\varphi \nabla ^{\rho}\varphi-\frac{1}{2}g_{\mu \nu}\mu ^{2}\varphi ^{2} \right)
@@ -383,4 +396,3 @@ $$\begin{align}
  & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }(\text{total derivatives}) \\
  & -\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\left(F_{1,\mu \rho}F_{2,\nu}^{~~~~\rho}-\frac{1}{2}g_{\mu \nu}F_{1,\rho \sigma}F_{2}^{\rho \sigma}-\mu ^{2}g_{\mu \nu}A_{1,\rho}A_{2}^{\rho}\right)
 \end{align}$$
-

@@ -73,7 +73,6 @@ $$\begin{align}
 
 ## symplectic form
 
-
 take the expansions
 
 $$\begin{align}

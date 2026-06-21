@@ -63,9 +63,9 @@ Then the radial equation becomes the hypergeometric equation
 
 $$\begin{align}
 s(1-s)F''+\left(c-(A+B+1)s\right)F'-ABF&=0,\\
-A&=\frac{1+a+i\nu+ip}{2},&
-B&=\frac{1+a+i\nu-ip}{2},&
-c&=1+a .
+A=\frac{1+a+i\nu+ip}{2},\quad
+B=\frac{1+a+i\nu-ip}{2},\quad
+c=1+a .
 \end{align}$$
 
 The mode regular at $r=0$ is therefore

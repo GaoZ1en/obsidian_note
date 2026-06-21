@@ -10,20 +10,21 @@ the aim is to understand the properties of CFT without referring to specific Lan
 
 # generalities
 
-consider CFT on flat Euclidean or Lorentzian space with coordinates $\displaystyle{x^{\mu}}$ and metric $\displaystyle{\delta _{\mu \nu}/\eta _{\mu \nu}}$. 
+consider CFT on flat Euclidean or Lorentzian space with coordinates $\displaystyle{x^{\mu}}$ and metric $\displaystyle{\delta _{\mu \nu}/\eta _{\mu \nu}}$.
 
 conformal transformations are diffeomorphism $\displaystyle{x\to x'}$ that $\displaystyle{\frac{\partial x'^{\mu}}{\partial x^{\nu}}=\Omega(x)\Lambda ^{\mu}_{~\nu}(x)}$ and $\displaystyle{\eta _{\rho \sigma}\Lambda ^{\rho}_{~\mu}\Lambda ^{\sigma}_{~\nu}=\eta _{\mu \nu}}$.
 
 denote $\displaystyle{d}$ the dimension of spacetime. when $\displaystyle{d\geqslant 3}$, any conformal transformation can be obtained by compositing 4 types of basic transformations
 
 1. translations, $\displaystyle{\Omega=1}$
-2. rotations, $\displaystyle{\Omega=1}$
-3. dilatations, $\displaystyle{x'^{\mu}=\Omega x^{\mu}}$
-4. inversions, $\displaystyle{x'^{\mu}= \frac{x^{\mu}}{x^{2}}}$
+1. rotations, $\displaystyle{\Omega=1}$
+1. dilatations, $\displaystyle{x'^{\mu}=\Omega x^{\mu}}$
+1. inversions, $\displaystyle{x'^{\mu}= \frac{x^{\mu}}{x^{2}}}$
 
 all conformal transformations form a Lie group of $\displaystyle{\frac{(d+1)(d+2)}{2}}$ dimensions, with its Lie algebra isomorphic to the Lie algebra $\displaystyle{\mathfrak{so}(d+1,1)}$ for Euclidean space and $\displaystyle{\mathfrak{so}(d,2)}$ for Lorentzian space. the generators are $\displaystyle{P_{\mu},M_{\mu \nu},K_{\mu},D}$, shared by the following non-zero commutation relations
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 [D,P_{\mu}] & =P_{\mu}, & [D,K_{\mu}] & =-K_{\mu}, \\
 [K_{\mu},P_{\nu}] & =2\eta _{\mu \nu}D-2M_{\mu \nu},
@@ -32,7 +33,8 @@ $$
 
 so $\displaystyle{P_{\mu}}$ and $\displaystyle{K_{\mu}}$ act as raising and lowering operators. we will study what happens to operators inserted at a position $\displaystyle{x=0}$ then move them by translations
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \mathcal{O}(x) & =e^{x^{\mu}P_{\mu}}\mathcal{O}(x)e^{-x^{\mu}P_{\mu}}+(\text{ commutation relations })
 \end{align}
@@ -40,7 +42,8 @@ $$
 
 we need to study the action of the stabiliser of the conformal group at the origin. the stabiliser is $\displaystyle{M_{\mu \nu},K_{\mu}}$ and $\displaystyle{D}$.
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \mathcal{O}(0) & =\mathcal{O}^{i}_{\Delta,r}(0)
 \end{align}
@@ -48,7 +51,8 @@ $$
 
 $\displaystyle{\mathcal{O}^{i}_{\Delta,r}(0)}$ forms a finite dimensional irreducible representation, and it is characterized by
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 [D,\mathcal{O}^{i}_{\Delta,r}(0)] & =\Delta \mathcal{O}^{i}_{\Delta,r}(0) \\
 [M_{\mu \nu},\mathcal{O}^{i}_{\Delta,r}(0)] & =(R_{\mu \nu})^{i}_{~j}\mathcal{O}^{j}_{\Delta,r}(0)
@@ -59,7 +63,8 @@ where $\displaystyle{\Delta}$ is the conformal dimension and $\displaystyle{(R_{
 
 in physically interesting cases, the spectrum of the dilatation generator is real and bounded from below, so the conformal multiplet must contain an operator with lowest possible conformal dimension. assume $\displaystyle{\mathcal{O}(0)}$ is the lowest dimensional operator, then
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 [K_{\mu},\mathcal{O}^{i}_{\Delta,r}(0)] & =0
 \end{align}
@@ -67,7 +72,8 @@ $$
 
 we call such $\displaystyle{\mathcal{O}^{i}_{\Delta,r}(0)}$ as primary operators, and the other operators in the multiplet are called descendants. descendants are obtained by acting $\displaystyle{n\geqslant 1}$ times with $\displaystyle{P_{\mu}}$ on the primaries
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 [P_{\mu},\mathcal{O}^{i}_{\Delta,r}(0)]=\partial _{\mu}\mathcal{O}^{i}_{\Delta,r}(0)
 \end{align}
@@ -77,16 +83,17 @@ the aim is to compute the correlators of primary operators. we have
 
 1. conformal symmetries (Ward identities of conformal transformations), which fixes the spacetime dependence of 2 and 3 point functions.
 	1. $\displaystyle{\braket{ \mathcal{O}_{\Delta_{1}}(x_{1})\mathcal{O}_{\Delta_{2}}(x_{2}) }=\frac{C\delta _{\Delta_{1}\Delta_{2}}}{x_{12}^{2\Delta _{1}}}}$, where $\displaystyle{x_{12}=|x_{1}-x_{2}|}$
-	2. $\displaystyle{\braket{ \mathcal{O}_{\Delta_{1}}(x_{1})\mathcal{O}_{\Delta_{2}}(x_{2})\mathcal{O}_{\Delta_{3}}(x_{3}) }=\frac{f_{123}}{x_{12}^{\Delta_{1}+\Delta_{2}-\Delta_{3}}x_{23}^{\Delta_{2}+\Delta_{3}-\Delta_{1}}x_{31}^{\Delta_{3}+\Delta_{1}-\Delta_{2}}}}$
-2. unitarity
+	1. $\displaystyle{\braket{ \mathcal{O}_{\Delta_{1}}(x_{1})\mathcal{O}_{\Delta_{2}}(x_{2})\mathcal{O}_{\Delta_{3}}(x_{3}) }=\frac{f_{123}}{x_{12}^{\Delta_{1}+\Delta_{2}-\Delta_{3}}x_{23}^{\Delta_{2}+\Delta_{3}-\Delta_{1}}x_{31}^{\Delta_{3}+\Delta_{1}-\Delta_{2}}}}$
+1. unitarity
 	1. imposes contraints on the spectrum
 		1. $\displaystyle{\Delta\geqslant \frac{d-2}{2}}$ for scalars
-		2. $\displaystyle{\Delta\geqslant d+\ell-2}$ for operators of spin $\displaystyle{\ell\geqslant 1}$ traceless symmetric representations of Lorentz group $\displaystyle{(2\ell,2\ell)}$.
-		3. $\displaystyle{f_{123}\in \mathbb{R}}$.
+		1. $\displaystyle{\Delta\geqslant d+\ell-2}$ for operators of spin $\displaystyle{\ell\geqslant 1}$ traceless symmetric representations of Lorentz group $\displaystyle{(2\ell,2\ell)}$.
+		1. $\displaystyle{f_{123}\in \mathbb{R}}$.
 
 for 4 point functions, we have
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \braket{ \mathcal{O}_{\Delta_{1}}(x_{1})\mathcal{O}_{\Delta_{2}}(x_{2})\mathcal{O}_{\Delta_{3}}(x_{3})\mathcal{O}_{\Delta_{4}}(x_{4}) }  & = \frac{g(u,v)}{(x_{12}^{2})^{\Delta_{1}+\Delta_{2}}(x_{34}^{2})^{\Delta_{3}+\Delta_{4}}}\left( \frac{x_{24}^{2}}{x_{12}^{2}} \right)^{\Delta_{12}/2}\left( \frac{x_{14}^{2}}{x_{13}^{2}} \right)^{\Delta_{34}/2}
 \end{align}
@@ -96,7 +103,8 @@ where $\displaystyle{\Delta _{ij}=\Delta _{i}-\Delta _{j}}$ and cross ratios $\d
 
 OPE
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \mathcal{O}_{i}(x_{1})\mathcal{O}_{j}(x_{2}) & =\sum _{k}\lambda _{ijk}(x_{1},x_{2},y,\partial _{y})\mathcal{O}_{k}(y)
 \end{align}
@@ -104,7 +112,8 @@ $$
 
 write
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \lambda _{ijk}(x_{1},x_{2},y,\partial _{y}) & =f_{ijk}\hat{\lambda}_{ijk}(x_{1},x_{2},y,\partial _{y})
 \end{align}
@@ -112,7 +121,8 @@ $$
 
 where $\displaystyle{f_{ijk}}$ is the structure constant, and $\displaystyle{\hat{\lambda}_{ijk}}$ is a function that fully fixed by conformal symmetry. OPE in CFTs has a finite radius of convergence, which is determined by the distance to the next operator insertion. by using OPE, we can reduce $\displaystyle{n}$-pt function to $\displaystyle{n-1}$pt function. we first consider a 4-pt function, and we can write
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \braket{ \mathcal{O}(x_{1})\mathcal{O}(x_{2})\mathcal{O}(x_{3})\mathcal{O}(x_{4}) }  & = \frac{g(u,v)}{x_{12}^{2\Delta _{\mathcal{O}}}x_{34}^{2\Delta _{\mathcal{O}}}}
 \end{align}
@@ -120,7 +130,8 @@ $$
 
 use OPE
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \mathcal{O}(x_{1})\mathcal{O}(x_{2}) & =\sum _{k}f_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}\hat{\lambda}_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}(x_{1},x_{2},y,\partial _{y})\mathcal{O}_{k}(y)|_{y=\frac{x_{1}+x_{2}}{2}} \\
 \mathcal{O}(x_{3})\mathcal{O}(x_{4}) & =\sum _{k}f_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}\hat{\lambda}_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}(x_{3},x_{4},y,\partial _{y})\mathcal{O}_{k}(y)|_{y=\frac{x_{3}+x_{4}}{2}}
@@ -129,7 +140,8 @@ $$
 
 then
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \braket{ \mathcal{O}(x_{1})\mathcal{O}(x_{2})\mathcal{O}(x_{3})\mathcal{O}(x_{4}) }  & = \sum _{k}f_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}^{2}\hat{\lambda}_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}(x_{1},x_{2},y,\partial _{y})\hat{\lambda}_{\mathcal{O}\mathcal{O}\mathcal{O}_{k}}(x_{3},x_{4},y,\partial _{y})\braket{ \mathcal{O}_{k}(y)\mathcal{O}_{k}(y') } |_{y=\frac{x_{1}+x_{2}}{2},y'=\frac{x_{3}+x_{4}}{2}}
 \end{align}
@@ -137,7 +149,8 @@ $$
 
 the $\displaystyle{\hat{\lambda}\hat{\lambda}\braket{ \mathcal{O}_{k}(y)\mathcal{O}_{k}(y') }}$ is fully fixed by conformal symmetry, we call it conformal blocks and denote as $\displaystyle{G_{\Delta,\ell}(u,v)}$. then we have
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \braket{ \mathcal{O}(x_{1})\mathcal{O}(x_{2})\mathcal{O}(x_{3})\mathcal{O}(x_{4}) }  & =\sum _{\Delta,\ell} \frac{f^{2}_{\mathcal{O}\mathcal{O}\mathcal{O}_{\Delta,\ell}} G_{\Delta,\ell}(u,v)}{x_{12}^{2\Delta _{\mathcal{O}}}x_{34}^{2\Delta _{\mathcal{O}}}}
 \end{align}
@@ -145,7 +158,8 @@ $$
 
 this has a beautiful diagrammatic representation. in $\mathrm{AdS}_{4}$, $\displaystyle{u=z\bar{z},v=(1-z)(1-\bar{z})}$, we have
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 G^{\Delta _{12}\Delta _{34}}_{\Delta,\ell}(u,v) & =\frac{1}{(-2)^{\ell}} \frac{z\bar{z}}{z-\bar{z}} \left(K_{\dots}?\right)
 \end{align}
@@ -153,7 +167,8 @@ $$
 
 where $\displaystyle{K\dots}$. by another OPE, we have
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \frac{g(u,v)}{x_{12}^{2\Delta _{\mathcal{O}}}x_{34}^{2\Delta _{\mathcal{O}}}} & =\frac{g(u',v')}{x_{23}^{2\Delta _{\mathcal{O}}}x_{14}^{2\Delta _{\mathcal{O}}}}
 \end{align}
@@ -161,7 +176,8 @@ $$
 
 where $\displaystyle{u'=\frac{x_{23}^{2}x_{14}^{2}}{x_{13}^{2}x_{24}^{2}}=v,v'=\frac{x_{12}^{2}x_{34}^{2}}{x_{13}^{2}x_{24}^{2}}=u}$, which gives the crossing equation
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 g(u,v) & =\left( \frac{u}{v} \right)^{2\Delta _{\mathcal{O}}}g(v,u)
 \end{align}
@@ -169,7 +185,8 @@ $$
 
 bootstrap equation
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \sum _{\Delta,\ell}f^{2}_{\mathcal{O}\mathcal{O}\mathcal{o}_{\Delta,\ell}}G_{\Delta,\ell}(u,v) & =\left( \frac{u}{v} \right)^{\Delta}\sum _{\Delta',\ell'}f^{2}_{\mathcal{O}\mathcal{O}\mathcal{O}_{\Delta',\ell'}}G_{\Delta',\ell'}(v,u)
 \end{align}
@@ -179,12 +196,13 @@ the aim is to find the spectrum of $\displaystyle{\Delta,\ell}$ and $\displaysty
 
 1. $\displaystyle{\tau=\Delta-\ell}$, conformal twist?
 	1. $\displaystyle{G_{\Delta,\ell}(z,\bar{z})=(z\bar{z})^{\tau/2}\tilde{G}_{\Delta,\ell}(z,\bar{z})}$
-	2. $\displaystyle{G_{\Delta,\ell}(z,\bar{z})\underset{v\to 0}{\to}-(z\bar{z})^{\tau/2}(1-(1-z)(1-\bar{z}))^{\ell}{}_{2}F_{1}\left( \frac{\tau}{2}+\ell,\frac{\tau}{2}+\ell;\tau+2\ell;1-v \right)}$
-	3. $\displaystyle{G_{\Delta,\ell}(z,\bar{z})\underset{u\to 0}{\to}a(u,v)\log u+b(u,v)}$
+	1. $\displaystyle{G_{\Delta,\ell}(z,\bar{z})\underset{v\to 0}{\to}-(z\bar{z})^{\tau/2}(1-(1-z)(1-\bar{z}))^{\ell}{}_{2}F_{1}\left( \frac{\tau}{2}+\ell,\frac{\tau}{2}+\ell;\tau+2\ell;1-v \right)}$
+	1. $\displaystyle{G_{\Delta,\ell}(z,\bar{z})\underset{u\to 0}{\to}a(u,v)\log u+b(u,v)}$
 
 we write the bootstrap equation as
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \sum _{\tau,\ell}f^{2}_{\mathcal{OOO}_{\tau,\ell}}u^{\tau/2}\tilde{G}_{\tau,\ell}(u,v) & =\left( \frac{u}{v} \right)^{\Delta _{\mathcal{O}}}\left( \sum _{\tau',\ell'}f^{2}_{\mathcal{OOO}_{\tau;,\ell;}}v^{\tau'/2}\tilde{G}_{\tau',\ell'}(v,u) \right) \\
 1+\sum _{\tau,\ell}f^{2}_{\mathcal{OOO}_{\tau,\ell}}u^{\tau/2}\tilde{G}_{\tau,\ell}(u,v) & =\left( \frac{u}{v} \right)^{\Delta _{\mathcal{O}}}\left(\sum _{\tau',\ell'}f^{2}_{\mathcal{OOO}_{\tau;,\ell;}}v^{\tau'/2}\tilde{G}_{\tau',\ell'}(v,u) \right)
@@ -193,10 +211,11 @@ $$
 
 in the second line we separate the identity operator. in the limit $\displaystyle{u\to 0}$
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \frac{1}{u^{\Delta _{\mathcal{O}}}}\sim \frac{1}{v^{\Delta _{\mathcal{O}}}}\left(\sum _{\tau',\ell'}f^{2}_{\mathcal{OOO}_{\tau',\ell'}}v^{\tau'/2}\tilde{G}_{\tau',\ell'}(v,u)\right)
 \end{align}
 $$
 
-since $\displaystyle{\tilde{G}_{\tau',\ell'}\sim \log u}$, the rhs is $\displaystyle{\log}$. however the lhs is power law, the only way to solve this is that the sum is not converge for all real $\displaystyle{u}$. 
+since $\displaystyle{\tilde{G}_{\tau',\ell'}\sim \log u}$, the rhs is $\displaystyle{\log}$. however the lhs is power law, the only way to solve this is that the sum is not converge for all real $\displaystyle{u}$.

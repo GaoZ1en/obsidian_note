@@ -18,7 +18,7 @@ $$\begin{align}
 |HgK| & =|H|[K:g^{-1}Hg\cap K]
 \end{align}$$
 
-*sol*. 
+*sol*.
 
 consider the action of $\displaystyle{H\times K}$ on $\displaystyle{G}$: $\displaystyle{g\mapsto hgk}$. the orbit of this action is $\displaystyle{HgK}$. the stabilizer of $\displaystyle{g}$ is $\displaystyle{\left\{(h,k)|hgk=g,h\in H,k\in K\right\}}$. from $\displaystyle{hgk=g\implies g^{-1}hg=k^{-1}}$. let $\displaystyle{a=g^{-1}hg}$, we have $\displaystyle{a\in g^{-1}Hg}$ and $\displaystyle{a\in K\implies a\in g^{-1}Hg\cap K}$. thus, there is a one-to-one correspondence between the stabilizer of $\displaystyle{g}$ and $\displaystyle{g^{-1}Hg\cap K}$. by the orbit-stabilizer theorem, we have
 
@@ -56,4 +56,3 @@ $$\begin{align}
 thus, in both cases, we have $\displaystyle{|S|<|G|}$, which means $\displaystyle{S\neq G}$.
 
 for infinite groups, this conclusion does not hold. for example, consider the group $\displaystyle{G=\mathrm{GL}(n,\mathbb{Z})}$ and its subgroup $\displaystyle{H}$ consisting all inversible upper triangular complex matrices with rank $\displaystyle{n}$. by Jordan normal form, any matrix in $\displaystyle{G}$ is conjugate to an upper triangular matrix, thus the union of all conjugate subgroups of $\displaystyle{H}$ is equal to $\displaystyle{G}$.
-

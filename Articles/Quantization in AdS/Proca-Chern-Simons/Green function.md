@@ -1,4 +1,4 @@
-in this file we will solve for Green function and compare the result with [[Articles/Quantization in AdS3/Proca-Chern-Simons/correlation function|correlation function]]. we first solve for the Green function of free scalar, then review the bitensor formalism, and then the Green function of Proca theory, finally the Proca-Chern-Simons theory.
+in this file we will solve for Green function and compare the result with [[Articles/Quantization in AdS/Proca-Chern-Simons/correlation function|correlation function]]. we first solve for the Green function of free scalar, then review the bitensor formalism, and then the Green function of Proca theory, finally the Proca-Chern-Simons theory.
 
 in the following discussion we will use the global coordinate of $\displaystyle{\mathrm{AdS}_{3}}$
 
@@ -105,4 +105,4 @@ $$\begin{align}
 G_{\mu \nu'}(x,x') & =\mathcal{F}(u)\nabla _{\mu}\nabla _{\nu'}u+\nabla _{\mu}\nabla _{\nu'}\mathcal{S}(u)
 \end{align}$$
 
-here $\displaystyle{u=\cosh \sigma-1}$. 
+here $\displaystyle{u=\cosh \sigma-1}$.

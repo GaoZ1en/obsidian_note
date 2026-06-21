@@ -34,7 +34,7 @@ take the plane wave ansatz $\displaystyle{\psi(x)=u(p)e^{-ip\cdot x}}$, we have
 $$\begin{align}
 \begin{pmatrix}
 E-m & -\vec{\sigma}\cdot \vec{p} \\
-\vec{\sigma}\cdot \vec{p} & -E-m 
+\vec{\sigma}\cdot \vec{p} & -E-m
 \end{pmatrix}\begin{pmatrix}
 u_{1}(p) \\ u_{2}(p)
 \end{pmatrix} & =0
@@ -99,8 +99,8 @@ where $\displaystyle{\xi ^{s}}$ and $\displaystyle{\eta ^{s}}$ are two-component
 ### properties
 
 1. **spin**: the solutions correspond to a spin-1/2 particle. $\xi$ and $\eta$ are two-component spinors corresponding to the spin degrees of freedom.
-2. **helicity**: it is the projection of the spin along the direction of momentum, defined by the operator $h = \frac{\vec{\Sigma}\cdot \vec{p}}{|\vec{p}|}$. it is a conserved quantity for free particles.
-3. **chirality**: it is the eigenvalue of the $\gamma^{5}$ matrix operators. in the Weyl representation, the upper and lower components of the Dirac spinor transform under different irreducible representations of the Lorentz group, representing left-handed and right-handed chiral states.
+1. **helicity**: it is the projection of the spin along the direction of momentum, defined by the operator $h = \frac{\vec{\Sigma}\cdot \vec{p}}{|\vec{p}|}$. it is a conserved quantity for free particles.
+1. **chirality**: it is the eigenvalue of the $\gamma^{5}$ matrix operators. in the Weyl representation, the upper and lower components of the Dirac spinor transform under different irreducible representations of the Lorentz group, representing left-handed and right-handed chiral states.
 
 taking the limit $\displaystyle{m\to 0}$, the coupled equations in the Weyl representation become completely decoupled:
 

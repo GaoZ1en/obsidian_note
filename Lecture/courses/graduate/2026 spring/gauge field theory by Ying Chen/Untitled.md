@@ -10,17 +10,17 @@ summary: "A worked Mathematica workflow for deriving Feynman rules from a Yukawa
 
 Take one Dirac fermion $\psi$ and one real scalar $\phi$ with interaction
 
-$$
+$$\begin{align}
 \mathcal L_{\mathrm{int}}
 =
 -g\phi\bar\psi\psi
 -
 \frac{\lambda}{4!}\phi^4.
-$$
+\end{align}$$
 
 The full Lagrangian used in FeynRules was
 
-$$
+$$\begin{align}
 \mathcal L
 =
 i\bar\psi\gamma^\mu\partial_\mu\psi
@@ -33,15 +33,15 @@ i\bar\psi\gamma^\mu\partial_\mu\psi
 g\phi\bar\psi\psi
 -
 \frac{\lambda}{4!}\phi^4.
-$$
+\end{align}$$
 
 FeynRules returned two nonzero interaction vertices:
 
-$$
+$$\begin{align}
 \phi\phi\phi\phi:\ -i\lambda,
 \qquad
 \bar\psi\psi\phi:\ -ig.
-$$
+\end{align}$$
 
 ## Package setup
 
@@ -174,17 +174,17 @@ which gives
 
 For a Dirac fermion with only $\phi\bar\psi\psi$ and $\phi^4$ interactions, fermion number is conserved. Hence
 
-$$
+$$\begin{align}
 \psi\psi\to\phi\phi\phi
-$$
+\end{align}$$
 
 is forbidden at every perturbative order:
 
-$$
+$$\begin{align}
 \mathcal M(\psi\psi\to3\phi)=0,
 \qquad
 d\sigma(\psi\psi\to3\phi)=0.
-$$
+\end{align}$$
 
 FeynArts confirms this at one loop:
 
@@ -216,11 +216,11 @@ in total: 0 Classes amplitudes
 
 The process
 
-$$
+$$\begin{align}
 \psi(p_1)+\bar\psi(p_2)
 \to
 \phi(k_1)+\phi(k_2)+\phi(k_3)
-$$
+\end{align}$$
 
 is allowed. FeynArts gives
 
@@ -231,33 +231,33 @@ one loop: 169 amplitudes
 
 The tree amplitude splits into two classes:
 
-$$
+$$\begin{align}
 \mathcal M^{(0)}
 =
 \mathcal M_{g\lambda}^{(0)}
 +
 \mathcal M_{g^3}^{(0)}.
-$$
+\end{align}$$
 
 The first class is scalar exchange,
 
-$$
+$$\begin{align}
 \psi\bar\psi\to\phi^\ast\to\phi\phi\phi,
-$$
+\end{align}$$
 
 with schematic amplitude
 
-$$
+$$\begin{align}
 \mathcal M_{g\lambda}^{(0)}
 =
 \bar v(p_2)(-ig)u(p_1)
 \frac{i}{(p_1+p_2)^2-m_\phi^2}
 (-i\lambda).
-$$
+\end{align}$$
 
 The second class is emission of the three final scalars from the fermion line. There are $3!$ permutations:
 
-$$
+$$\begin{align}
 \mathcal M_{g^3}^{(0)}
 =
 (-ig)^3
@@ -268,7 +268,7 @@ $$
 \frac{i(\not p_1-\not k_{\pi(1)}+m_\psi)}
 {(p_1-k_{\pi(1)})^2-m_\psi^2}
 u(p_1).
-$$
+\end{align}$$
 
 ## FeynArts and FeynCalc code
 
@@ -358,7 +358,7 @@ The first one-loop term in FeynCalc form is
 
 The physical one-loop correction to the cross section is the interference of the renormalized one-loop amplitude with the tree amplitude:
 
-$$
+$$\begin{align}
 d\sigma_{\text{1-loop}}
 =
 \frac{1}{3!}
@@ -372,7 +372,7 @@ d\sigma_{\text{1-loop}}
 \right]
 }
 \,d\Phi_3.
-$$
+\end{align}$$
 
 The factor $1/3!$ accounts for the three identical final-state scalars. The squared one-loop amplitude $|\mathcal M^{(1)}|^2$ contributes only at two-loop order in the cross section expansion.
 

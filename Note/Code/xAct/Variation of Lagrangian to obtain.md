@@ -147,6 +147,7 @@ VarAction[expr_,
 ```
 
 PerturbAction just calculate the derivative of the Lagrangian with respect to the tensor field without considering the change of measure. However VarAction take it into consideration. For other tensor field other than the metric, they are equivalent.
+
 ## Examples
 
 ### Preliminaries
@@ -209,5 +210,3 @@ See [[Note/Physics/Miscellaneous/Lovelock theorem|Lovelock theorem]]. Now we wil
 L=RiemannCD[a,b,c,d]Riemann[-a,-b,-c,-d]-4RicciCD[a,b]RicciCD[-a,-b]+RicciScalarCD[]RicciScalarCD[]
 VarAction[L,g[a,b]]
 ```
-
-

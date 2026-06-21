@@ -52,4 +52,4 @@ $$\begin{align}
 \implies \frac{\partial \mathcal{L}}{\partial \nabla _{\mu}\phi}\nabla _{\rho}\phi & +2 \frac{\partial \mathcal{L}}{\partial g_{\mu \nu}}g_{\rho \nu}=0
 \end{align}$$
 
-this argument naturally generalizes to theories with other field components by requiring the general covariance of the Lagrangian. 
+this argument naturally generalizes to theories with other field components by requiring the general covariance of the Lagrangian.

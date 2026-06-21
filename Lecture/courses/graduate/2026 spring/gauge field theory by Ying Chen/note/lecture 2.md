@@ -15,7 +15,7 @@ $$\begin{align}
 then asymptotic states $\displaystyle{\ket{\psi _{\alpha}^{\pm}}}$ satisfies
 
 $$\begin{align}
-\ket{\psi _{\alpha}^{\pm}} & =\Omega(\mp \infty)\ket{\phi _{\alpha}}  
+\ket{\psi _{\alpha}^{\pm}} & =\Omega(\mp \infty)\ket{\phi _{\alpha}}
 \end{align}$$
 
 the S-matrix is defined as
@@ -23,7 +23,7 @@ the S-matrix is defined as
 $$\begin{align}
 S_{\beta \alpha} & = \braket{ \psi _{\beta}^{-}|\psi _{\alpha}^{+} }  \\
  & = \braket{ \phi _{\beta}|\Omega ^{\dagger}(+\infty)\Omega(-\infty)|\phi _{\alpha} } \\
- & = \braket{ \phi _{\beta}|U(+\infty,-\infty)|\phi _{\alpha} }  
+ & = \braket{ \phi _{\beta}|U(+\infty,-\infty)|\phi _{\alpha} }
 \end{align}$$
 
 where
@@ -39,17 +39,17 @@ the S-matrix satisfies the following properties
 $$\begin{align}
 (S^{\dagger}S)_{\beta \alpha} & =\sum _{\gamma}S_{\beta \gamma}^{\dagger}S_{\gamma \alpha} \\
  & =\sum _{\gamma}\braket{ \psi ^{+}_{\beta}|\psi _{\gamma}^{-} } \braket{ \psi _{\gamma}^{-}|\psi _{\alpha}^{+} } \\
- & = \braket{ \psi _{\beta}^{+}|\psi _{\alpha}^{+} }=\delta _{\beta \alpha} 
+ & = \braket{ \psi _{\beta}^{+}|\psi _{\alpha}^{+} }=\delta _{\beta \alpha}
 \end{align}$$
 
 similar argument applies to $\displaystyle{SS^{\dagger}=I}$
 
-2. symmetry
+1. symmetry
 
 suppose the theory is invariant under some symmetry, the states transforms as
 
 $$\begin{align}
-\ket{\phi' _{\alpha}} & =U(a)\ket{\phi _{\alpha}} 
+\ket{\phi' _{\alpha}} & =U(a)\ket{\phi _{\alpha}}
 \end{align}$$
 
 then by principle of relativity
@@ -93,7 +93,7 @@ optical theorem.
 $$\begin{align}
 S^{\dagger}S & =I \\
 \implies-i(T-T^{\dagger}) & =T^{\dagger}T \\
-\implies -i\braket{ \phi _{\beta}|T-T^{\dagger}|\phi _{\alpha} }  & =\int \mathrm{d}\gamma\braket{ \phi _{\beta}|T^{\dagger}|\phi _{\gamma} } \braket{ \phi _{\gamma}|T|\phi _{\alpha} } 
+\implies -i\braket{ \phi _{\beta}|T-T^{\dagger}|\phi _{\alpha} }  & =\int \mathrm{d}\gamma\braket{ \phi _{\beta}|T^{\dagger}|\phi _{\gamma} } \braket{ \phi _{\gamma}|T|\phi _{\alpha} }
 \end{align}$$
 
 intermediate states are all physical...
@@ -121,10 +121,10 @@ $$\begin{align}
 
 where $\displaystyle{\tilde{G}_{c,\text{amp}}^{(m+n)}}$ is the amputated Green function.
 
-the LSZ formula can be generalized to 
+the LSZ formula can be generalized to
 
 $$\begin{align}
-\braket{ \Omega|T\mathcal{O}_{1}(y_{1})\dots \mathcal{O}_{n}(y_{n})\mathcal{O}_{1}'(z_{1})\dots \mathcal{O}_{m}'(z_{m})|\Omega }  
+\braket{ \Omega|T\mathcal{O}_{1}(y_{1})\dots \mathcal{O}_{n}(y_{n})\mathcal{O}_{1}'(z_{1})\dots \mathcal{O}_{m}'(z_{m})|\Omega }
 \end{align}$$
 
 where $\displaystyle{\mathcal{O}}$'s consist of fundamental field operators, and generate asymptotic free states.
@@ -164,4 +164,3 @@ $$\begin{align}
 \end{align}$$
 
 time dependent perturbation theory.
-

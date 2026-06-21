@@ -40,9 +40,9 @@ $$\begin{align}
 therefore we have four branches of solutions
 
 1. $\displaystyle{(h,\bar{h})=(0,0)}$, $\displaystyle{\psi ^{\mu}_{(0,0)}=0}$, trivial vacuum.
-2. $\displaystyle{(h,\bar{h})=(1,0)}$, $\displaystyle{\psi _{(1,0)}^{\mu}=C_{(1,0)} \frac{e^{-2it}}{1+r^{2}}\bar{\xi}^{\mu}_{1}}$ with desendants $\displaystyle{\psi _{n}^{\mu}=C_{n}\mathcal{L}_{\xi _{-1}}^{n}\psi _{(1,0)}^{\mu}}$
-3. $\displaystyle{(h,\bar{h})=(0,1)}$, $\displaystyle{\psi ^{\mu}_{(0,1)}=C_{(0,1)} \frac{e^{-2it}}{1+r^{2}}\xi _{1}^{\mu}}$ with descendants $\displaystyle{\psi _{\bar{n}}^{\mu}=C_{\bar{n}}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\psi _{(0,1)}^{\mu}}$
-4. $\displaystyle{(h,\bar{h})=\left(\frac{k}{4\pi},1+\frac{k}{4\pi}\right)}$, $\displaystyle{\psi ^{\mu}_{\text{bulk}}= C_{\text{bulk}} \frac{e^{-i(2+k/2\pi)t}}{(1+r^{2})^{1+k/4\pi}}\xi_{1}^{\mu}}$ with descendants $\displaystyle{\psi _{n\bar{n}}^{\mu}=C_{n\bar{n}}\mathcal{L}_{\xi_{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\psi _{\text{bulk}}^{\mu}}$
+1. $\displaystyle{(h,\bar{h})=(1,0)}$, $\displaystyle{\psi _{(1,0)}^{\mu}=C_{(1,0)} \frac{e^{-2it}}{1+r^{2}}\bar{\xi}^{\mu}_{1}}$ with desendants $\displaystyle{\psi _{n}^{\mu}=C_{n}\mathcal{L}_{\xi _{-1}}^{n}\psi _{(1,0)}^{\mu}}$
+1. $\displaystyle{(h,\bar{h})=(0,1)}$, $\displaystyle{\psi ^{\mu}_{(0,1)}=C_{(0,1)} \frac{e^{-2it}}{1+r^{2}}\xi _{1}^{\mu}}$ with descendants $\displaystyle{\psi _{\bar{n}}^{\mu}=C_{\bar{n}}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\psi _{(0,1)}^{\mu}}$
+1. $\displaystyle{(h,\bar{h})=\left(\frac{k}{4\pi},1+\frac{k}{4\pi}\right)}$, $\displaystyle{\psi ^{\mu}_{\text{bulk}}= C_{\text{bulk}} \frac{e^{-i(2+k/2\pi)t}}{(1+r^{2})^{1+k/4\pi}}\xi_{1}^{\mu}}$ with descendants $\displaystyle{\psi _{n\bar{n}}^{\mu}=C_{n\bar{n}}\mathcal{L}_{\xi_{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\psi _{\text{bulk}}^{\mu}}$
 
 the normalization constants are determined by the symplectic form as
 
@@ -57,11 +57,11 @@ C_{(1,0)} & =\frac{2}{\sqrt{ k }} & C_{n} & = \sqrt{\frac{1}{n!(n+1)!}} \\
 C_{\text{bulk}} & =\sqrt{\frac{2(k+2\pi)}{\pi k}} & C_{n\bar{n}} & =\sqrt{ \frac{1}{n!\left( \frac{k}{2\pi} \right)_{n}\bar{n}!\left( 2+\frac{k}{2\pi} \right)_{\bar{n}}} }
 \end{align}$$
 
-and when $\displaystyle{k>0}$, the $\displaystyle{(0,1)}$ branch are not normalizable. 
+and when $\displaystyle{k>0}$, the $\displaystyle{(0,1)}$ branch are not normalizable.
 
 ## boundary condition
 
-by the same logic as [[Articles/Quantization in AdS3/Chern-Simons/U(1) formalism|U(1) formalism]], we impose the boundary action
+by the same logic as [[Articles/Quantization in AdS/Chern-Simons/U(1) formalism|U(1) formalism]], we impose the boundary action
 
 $$\begin{align}
 S_{\text{bdy}} & =\frac{k}{4\pi}\int _{\Gamma}\mathrm{d}^{2}xA_{+}A_{-}
@@ -83,9 +83,8 @@ $$\begin{align}
 \omega & =-i\sum ^{\infty}_{n=0} \delta a_{n}\wedge \delta a^{\dagger}_{n}-i\sum ^{\infty}_{n,\bar{n}=0} \delta a_{n\bar{n}}\wedge \delta a^{\dagger}_{n\bar{n}}
 \end{align}$$
 
-by the same logic as [[Articles/Quantization in AdS3/Chern-Simons/U(1) formalism|U(1) formalism]], we recover the $\displaystyle{\mathrm{U}(1)}$ Kac-Moody algebra at the boundary as
+by the same logic as [[Articles/Quantization in AdS/Chern-Simons/U(1) formalism|U(1) formalism]], we recover the $\displaystyle{\mathrm{U}(1)}$ Kac-Moody algebra at the boundary as
 
 $$\begin{align}
 \left\{\tilde{H}_{m},\tilde{H}_{n}\right\} & =km\delta _{m+n,0}
 \end{align}$$
-

@@ -33,7 +33,7 @@ $$\begin{align}
 \mathrm{d}s_{Y}^{2} & =\mathrm{d}\tau ^{2}+\mathrm{d}s^{2}_{W}
 \end{align}$$
 
-where $\displaystyle{\mathrm{d}s^{2}_{W}}$ is the metric on $\displaystyle{W}$, where $\displaystyle{\tau}$ parameterized the normal direction. we normalize $\displaystyle{\tau}$ to vanish long $\displaystyle{W}$ and to be negative away from $\displaystyle{W}$. we assume this product description is valib at least in a range $\displaystyle{(-\varepsilon,0]}$. 
+where $\displaystyle{\mathrm{d}s^{2}_{W}}$ is the metric on $\displaystyle{W}$, where $\displaystyle{\tau}$ parameterized the normal direction. we normalize $\displaystyle{\tau}$ to vanish long $\displaystyle{W}$ and to be negative away from $\displaystyle{W}$. we assume this product description is valib at least in a range $\displaystyle{(-\varepsilon,0]}$.
 
 we impose on $\displaystyle{\Psi}$ the following local boundary condition
 
@@ -53,7 +53,7 @@ $$\begin{align}
 \mathcal{D}_{W} & =\sum _{\mu\neq \tau}\gamma ^{\tau}\gamma ^{\mu}D_{\mu}
 \end{align}$$
 
-is a self-adjoint Dirac operator on the boundary $\displaystyle{W}$. notice that $\displaystyle{\gamma ^{\tau}}$ and $\displaystyle{\mathcal{D}_{W}}$ anticommute with each other. 
+is a self-adjoint Dirac operator on the boundary $\displaystyle{W}$. notice that $\displaystyle{\gamma ^{\tau}}$ and $\displaystyle{\mathcal{D}_{W}}$ anticommute with each other.
 
 ---
 
@@ -72,5 +72,4 @@ where $\displaystyle{\chi}$ is a fermion field on $\displaystyle{W}$. since it v
 
 to quantize the fermion field $\displaystyle{\Psi}$, we choose the Pauli-Villars regulator. we take the Pauli-Villars regulator field to have a positive mass parameter, since we do not want the regulator field to have a low energy mode progagating along the boundary, which would be quite unphysical.
 
-now we want to compute the partition function 
-
+now we want to compute the partition function

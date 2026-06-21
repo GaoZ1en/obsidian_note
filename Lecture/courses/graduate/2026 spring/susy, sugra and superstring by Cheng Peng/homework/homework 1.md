@@ -21,7 +21,7 @@ $$\begin{align}
 up to a surface term in the initial and final Cauchy surface.
 
 1. prove that there is a conserved current (Noether theorem)
-2. consider the correlator
+1. consider the correlator
 
 $$\begin{align}
 \braket{ \phi(x_{1})\phi(x_{2})\dots \phi(x_{n}) }  & =\frac{1}{Z}\int \mathcal{D}\phi \exp\left( i\int \mathrm{d}^{d}x\mathcal{L}[x,\phi(x)] \right) \phi(x_{1})\phi(x_{2})\dots \phi(x_{n})
@@ -80,6 +80,5 @@ $$\begin{align}
 which is equivalent to the local version (the required form)
 
 $$\begin{align}
-\partial _{\mu}\braket{ j_{a}^{\mu}\phi(x_{1})\dots \phi(x_{n}) } & =-\sum _{j}\delta ^{(d)}(x-x_{j})\braket{ \phi(x_{1})\dots[H_{a},\phi _{j}(x_{j})],\phi _{n}(x_{n}) } 
+\partial _{\mu}\braket{ j_{a}^{\mu}\phi(x_{1})\dots \phi(x_{n}) } & =-\sum _{j}\delta ^{(d)}(x-x_{j})\braket{ \phi(x_{1})\dots[H_{a},\phi _{j}(x_{j})],\phi _{n}(x_{n}) }
 \end{align}$$
-

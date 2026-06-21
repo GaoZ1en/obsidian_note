@@ -12,7 +12,9 @@ In this section, we specify the background geometry, the Proca-Chern-Simons acti
 
 We parameterize global AdS$_3$ by the standard coordinates $(t, r, \phi)$, with ranges $t \in (-\infty, +\infty)$, $r \in (0, +\infty)$, and angular periodicity $\phi \sim \phi + 2\pi$. The metric is
 
-$$\mathrm{d}s^2 = -(1+r^2)\mathrm{d}t^2 + \frac{\mathrm{d}r^2}{1+r^2} + r^2 \mathrm{d}\phi^2.$$
+$$\begin{align}
+\mathrm{d}s^2 = -(1+r^2)\mathrm{d}t^2 + \frac{\mathrm{d}r^2}{1+r^2} + r^2 \mathrm{d}\phi^2.
+\end{align}$$
 
 The isometry group is $\mathrm{SL}(2, \mathbb{R}) \times \mathrm{SL}(2, \mathbb{R})$. A convenient basis of Killing fields generating the algebra $\mathfrak{sl}(2, \mathbb{R}) \oplus \mathfrak{sl}(2, \mathbb{R})$ is
 
@@ -79,7 +81,9 @@ These algebraic identities will be used repeatedly in the later analysis, both i
 
 The dynamical field is a massive vector field $A_\mu(x)$. The action contains a Maxwell term, a Proca mass term with parameter $\mu > 0$, and a Chern-Simons term with real coupling $k \in \mathbb{R}$:
 
-$$S = -\frac{1}{4}\int_M \mathrm{d}^3x \sqrt{-g} F_{\mu\nu} F^{\mu\nu} - \frac{1}{2}\mu^2 \int_M \mathrm{d}^3x \sqrt{-g} A_\mu A^\mu + \frac{k}{4\pi} \int_M \mathrm{d}^3x \sqrt{-g} \, \varepsilon^{\mu\nu\rho} A_\mu \nabla_\nu A_\rho,$$
+$$\begin{align}
+S = -\frac{1}{4}\int_M \mathrm{d}^3x \sqrt{-g} F_{\mu\nu} F^{\mu\nu} - \frac{1}{2}\mu^2 \int_M \mathrm{d}^3x \sqrt{-g} A_\mu A^\mu + \frac{k}{4\pi} \int_M \mathrm{d}^3x \sqrt{-g} \, \varepsilon^{\mu\nu\rho} A_\mu \nabla_\nu A_\rho,
+\end{align}$$
 
 Here $F_{\mu\nu} = \nabla_\mu A_\nu - \nabla_\nu A_\mu$ is the field strength, and $\varepsilon^{\mu\nu\rho}$ is the Levi-Civita tensor defined by $\varepsilon^{\mu\nu\rho} = \frac{1}{\sqrt{-g}} \hat{\epsilon}^{\mu\nu\rho}$ with $\hat{\epsilon}^{tr\phi} = 1$. The integration region $M$ is the bulk spacetime region between the initial constant-$t$ Cauchy surface $\Sigma_i$ at $t=t_i$ and the final Cauchy surface $\Sigma_f$ at $t=t_f$, with $t_f > t_i$.
 
@@ -101,4 +105,4 @@ $$\begin{align}
 A_{t} & =o(r^{0}), & A_{r} & =o(r^{-3}), & A_{\phi} & =o(r^{0})
 \end{align}$$
 
-and the same falloffs hold for the corresponding variations. As shown in [[Articles/Quantization in AdS3/Proca-Chern-Simons/arxiv/another template/appendix_a|Appendix A]], these asymptotic conditions ensure that the action and the physical quantities entering the covariant phase space analysis remain finite. Therefore, the theory admits a well-defined variational principle without the need for additional boundary counterterms.
+and the same falloffs hold for the corresponding variations. As shown in [[Articles/Quantization in AdS/Proca-Chern-Simons/arxiv/another template/appendix_a|Appendix A]], these asymptotic conditions ensure that the action and the physical quantities entering the covariant phase space analysis remain finite. Therefore, the theory admits a well-defined variational principle without the need for additional boundary counterterms.

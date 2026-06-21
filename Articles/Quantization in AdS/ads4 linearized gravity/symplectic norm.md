@@ -4,7 +4,7 @@ $$\begin{align}
 \mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\dfrac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\left(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\phi ^{2}\right)
 \end{align}$$
 
-and we will find the normalization constant of modes in the highest-weight module discussed in [[Articles/Quantization in AdS3/ads4 linearized gravity/Killing algebra|Killing algebra]]. the main purpose is to find which module is physical in gauge systems, especially in Maxwell theory and linearized gravity, discussed as below.
+and we will find the normalization constant of modes in the highest-weight module discussed in [[Articles/Quantization in AdS/ads4 linearized gravity/Killing algebra|Killing algebra]]. the main purpose is to find which module is physical in gauge systems, especially in Maxwell theory and linearized gravity, discussed as below.
 
 ## massive scalar
 
@@ -35,7 +35,7 @@ $$\begin{align}
  & =\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta\phi \wedge \delta \phi
 \end{align}$$
 
-we have already solved the highest weight primary in [[Articles/Quantization in AdS3/ads4 linearized gravity/Killing algebra|Killing algebra]]
+we have already solved the highest weight primary in [[Articles/Quantization in AdS/ads4 linearized gravity/Killing algebra|Killing algebra]]
 
 $$\begin{align}
 \phi_{0} & =\dfrac{Ne^{-i\Delta t}}{(1+r^{2})^{\Delta/2}}
@@ -247,7 +247,7 @@ and they are not physical edge modes.
 
 ## massive TT tensor
 
-we adopt the symplectic form obtained in [[Articles/Quantization in AdS3/ads4 linearized gravity/linearize|linearize]], since the mass term does not contribute to the symplectic form
+we adopt the symplectic form obtained in [[Articles/Quantization in AdS/ads4 linearized gravity/linearize|linearize]], since the mass term does not contribute to the symplectic form
 
 $$\begin{align}
 \omega & =\dfrac{1}{2}\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}\left(-\dfrac{1}{2}\delta h^{\nu \rho}\wedge \nabla ^{\mu}\delta h_{\nu \rho}-3\nabla_{\rho}(\delta h^{\nu \rho}\wedge \delta h^{\mu}_{~\nu})\right) \\

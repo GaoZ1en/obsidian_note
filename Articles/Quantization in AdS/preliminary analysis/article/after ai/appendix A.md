@@ -4,7 +4,8 @@
 
 We now examine a mechanical system characterized by the following Lagrangian:
 
-$$\tag{1.1}
+$$
+\tag{1.1}
 \begin{align}
 L[x,\phi] & =\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda \dot{x}\phi+\frac{1}{2}\phi^{2}
 \end{align}
@@ -12,7 +13,8 @@ $$
 
 This action describes a modified harmonic oscillator with an effective Lagrangian $\displaystyle{L[x]=\frac{1}{2}(m-\lambda^{2})\dot{x}^{2}-\frac{1}{2}kx^{2}}$, where the auxiliary field $\phi$ introduces second-class constraints. Throughout our analysis, we assume that $\displaystyle{m-\lambda^{2}>0}$ to ensure the kinetic term remains positive definite. Performing a variation of the Lagrangian yields:
 
-$$\tag{1.2}
+$$
+\tag{1.2}
 \begin{align}
 \delta L & =E_{x}\delta x+ E_{\phi}\delta \phi+ \frac{\mathrm{d}}{\mathrm{d}t}\theta
 \end{align}
@@ -20,7 +22,8 @@ $$
 
 with the Euler-Lagrange operators and symplectic potential given by:
 
-$$\tag{1.3}
+$$
+\tag{1.3}
 \begin{align}
 E_{x} & =-(m\ddot{x}+kx-\lambda \dot{\phi}) \\
 E_{\phi} & =\phi-\lambda \dot{x} \\
@@ -30,7 +33,8 @@ $$
 
 The symplectic form, derived as the exterior derivative of this potential, takes the form:
 
-$$\tag{1.4}
+$$
+\tag{1.4}
 \begin{align}
 \omega & =m\delta \dot{x}\wedge \delta x-\lambda \delta \phi \wedge \delta x
 \end{align}
@@ -38,7 +42,8 @@ $$
 
 The general solution to the equations of motion $\displaystyle{E_{x}=E_{\phi}=0}$ can be expressed as:
 
-$$\tag{1.5}
+$$
+\tag{1.5}
 \begin{align}
 x(t) & =\frac{1}{\sqrt{2m'\omega}}(ae^{-i \omega t}+a^{\dagger}e^{i \omega t}) \\
 \phi(t) & =\frac{i\lambda \omega}{\sqrt{2m'\omega}}(-ae^{-i \omega t}+a^{\dagger}e^{i\omega t})
@@ -47,7 +52,8 @@ $$
 
 where $\displaystyle{m'=m-\lambda^{2}}$ represents the effective mass and $\displaystyle{\omega=\sqrt{k/m'}}$ denotes the natural frequency of oscillation. Under this parameterization, the symplectic form assumes the canonical expression:
 
-$$\tag{1.6}
+$$
+\tag{1.6}
 \begin{align}
 \omega & =i\delta a^{\dagger}\wedge \delta a
 \end{align}
@@ -55,7 +61,8 @@ $$
 
 The Hamiltonian flows corresponding to the dynamical variables $\displaystyle{x(t)}$ and $\displaystyle{\phi(t)}$ are constructed as:
 
-$$\tag{1.7}
+$$
+\tag{1.7}
 \begin{align}
 X_{x(t)} & =i\left(\frac{\delta x(t)}{\delta a^{\dagger}}\frac{\delta}{\delta a}-\frac{\delta x(t)}{\delta a}\frac{\delta}{\delta a^{\dagger}}\right) \\
  & =-\frac{i}{\sqrt{2m'\omega}}\left(e^{-i \omega t}\frac{\delta}{\delta a^{\dagger}}-e^{i \omega t}\frac{\delta}{\delta a}\right) \\
@@ -66,7 +73,8 @@ $$
 
 Upon quantization, these Hamiltonian flows yield the commutation relations between the dynamical variables:
 
-$$\tag{1.8}
+$$
+\tag{1.8}
 \begin{align}
 [x(t),x(t')] & =iX_{x(t)}\cdot X_{x(t')}\cdot \omega \\
  & =\frac{i}{m'\omega}\sin \omega(t-t') \\
@@ -79,13 +87,14 @@ $$
 
 The two-point time-ordered correlation functions, fundamental to the quantum theory, are expressed as:
 
-$$\tag{1.9}
+$$
+\tag{1.9}
 \begin{align}
 \braket{0|\mathcal{T}x(t)x(t')|0} & =\theta(t-t')\braket{0|x(t)x(t')|0}+\theta(t'-t)\braket{0|x(t')x(t)|0} \\
  & =\frac{1}{2m'\omega}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')}) \\
  & =\frac{1}{im'}\int\frac{\mathrm{d}p_{0}}{2\pi}\frac{e^{-ip_{0}(t-t')}}{-p_{0}^{2}+\omega^{2}-i\varepsilon} \\
 \braket{0|\mathcal{T}x(t)\phi(t')|0} & =\theta(t-t')\braket{0|x(t)\phi(t')|0}+\theta(t'-t)\braket{0|\phi(t')x(t)|0} \\
- & =-\frac{i\lambda}{2m'}(\theta(t-t')e^{-i \omega(t-t')}-\theta(t'-t)e^{i \omega(t-t')}) \\ 
+ & =-\frac{i\lambda}{2m'}(\theta(t-t')e^{-i \omega(t-t')}-\theta(t'-t)e^{i \omega(t-t')}) \\
  & =-\frac{\lambda}{im'}\partial_{t}\int\frac{\mathrm{d}p_{0}}{2\pi}\frac{e^{-ip_{0}(t-t')}}{-p_{0}^{2}+\omega^{2}-i\varepsilon} \\
 \braket{0|\mathcal{T}\phi(t)\phi(t')|0} & =\theta(t-t')\braket{0|\phi(t)\phi(t')|0}+\theta(t'-t)\braket{0|\phi(t')\phi(t)|0} \\
  & =\frac{\lambda^{2}\omega}{2m'}(\theta(t-t')e^{-i \omega(t-t')}+\theta(t'-t)e^{i \omega(t-t')}) \\
@@ -99,7 +108,8 @@ A notable feature in these expressions is the presence of a delta function in $\
 
 To elucidate the quantum structure of this constrained system from a complementary perspective, we introduce the generating functional:
 
-$$\tag{1.10}
+$$
+\tag{1.10}
 \begin{align}
 Z[J,\eta] & =\int\mathcal{D}x\mathcal{D}\phi\exp\left(i\int_{-\infty}^{+\infty}\mathrm{d}t(L[x,\phi]+Jx+\eta\phi)\right) \\
  & =\exp\left(-\frac{i}{2}\int_{-\infty}^{+\infty}\mathrm{d}t\eta^{2}\right)\exp\left(-\frac{1}{2}\int_{-\infty}^{+\infty}\mathrm{d}t\mathrm{d}t'(J-\lambda\dot{\eta})(t)G(t,t')(J-\lambda\dot{\eta})(t')\right)
@@ -108,7 +118,8 @@ $$
 
 where the Green's function $\displaystyle{G(t,t')}$ satisfies the differential equation:
 
-$$\tag{1.11}
+$$
+\tag{1.11}
 \begin{align}
 \left(m'\frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}+k-i\varepsilon\right)G(t,t')=\delta(t-t')
 \end{align}
@@ -116,7 +127,8 @@ $$
 
 This equation admits the solution:
 
-$$\tag{1.12}
+$$
+\tag{1.12}
 \begin{align}
 G(t,t') & =\frac{1}{im'}\int\frac{\mathrm{d}p_{0}}{2\pi}\frac{e^{-ip_{0}(t-t')}}{-p_{0}^{2}+\omega^{2}-i\varepsilon}
 \end{align}
@@ -124,7 +136,8 @@ $$
 
 From this generating functional, we can derive correlation functions through functional differentiation:
 
-$$\tag{1.13}
+$$
+\tag{1.13}
 \begin{align}
 \braket{x(t)x(t')} & =\frac{\delta^{2}Z[J,\eta]}{i^{2}\delta J(t)\delta J(t')}\Big|_{J=\eta=0} \\
  & =G(t,t') \\
@@ -138,7 +151,8 @@ $$
 
 To establish the precise relationship between these path integral correlation functions and the time-ordered correlation functions derived in the canonical approach, we must analyze their explicit forms. For the mixed correlation function involving $x$ and $\phi$, we have:
 
-$$\tag{1.14}
+$$
+\tag{1.14}
 \begin{align}
 \braket{x(t)\phi(t')} & =\frac{\displaystyle{\int\mathcal{D}x\mathcal{D}\phi\,x(t)\phi(t')\exp\left(i\int_{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda\dot{x}\phi+\frac{1}{2}\phi^{2}\right)\right)}}{\displaystyle{\int\mathcal{D}x\mathcal{D}\phi\exp\left(i\int^{+\infty}_{-\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda\dot{x}\phi+\frac{1}{2}\phi^{2}\right)\right)}} \\
  & =\frac{\displaystyle{\int\mathcal{D}x\,\lambda x(t)\dot{x}(t')\exp\left(i\int_{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m'\dot{x}^{2}-\frac{1}{2}kx^{2}\right)\right)}}{\displaystyle{\int\mathcal{D}x\exp\left(i\int_{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m'\dot{x}^{2}-\frac{1}{2}kx^{2}\right)\right)}} \\
@@ -151,7 +165,8 @@ $$
 
 This calculation demonstrates that the mixed correlation function in the path integral approach coincides with the time-ordered correlation function in the canonical formalism. For the self-correlation of the auxiliary field $\phi$, we find:
 
-$$\tag{1.15}
+$$
+\tag{1.15}
 \begin{align}
 \braket{\phi(t)\phi(t')} & =\frac{\displaystyle{\int\mathcal{D}x\mathcal{D}\phi\,\phi(t)\phi(t')\exp\left(i\int_{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda\dot{x}\phi+\frac{1}{2}\phi^{2}\right)\right)}}{\displaystyle{\int\mathcal{D}x\mathcal{D}\phi\exp\left(i\int_{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2}-\lambda\dot{x}\phi+\frac{1}{2}\phi^{2}\right)\right)}} \\
  & =\frac{\displaystyle{\int\mathcal{D}x\left(\lambda^{2}\dot{x}(t)\dot{x}(t')+i\delta(t-t')\right)\exp\left(i\int_{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m'\dot{x}^{2}-\frac{1}{2}kx^{2}\right)\right)}}{\displaystyle{\int\mathcal{D}x\exp\left(i\int_{-\infty}^{+\infty}\mathrm{d}t\left(\frac{1}{2}m'\dot{x}^{2}-\frac{1}{2}kx^{2}\right)\right)}} \\
@@ -161,7 +176,8 @@ $$
 
 The second term in this expression, $i\delta(t-t')$, arises from quantum fluctuations of the auxiliary field $\phi$. Examining the first term more closely:
 
-$$\tag{1.16}
+$$
+\tag{1.16}
 \begin{align}
 \lambda^{2}\partial_{t}\partial_{t'}\braket{0|\mathcal{T}x(t)x(t')|0} & =\lambda\partial_{t}\braket{0|\mathcal{T}x(t)\phi(t')|0} \\
  & =\braket{0|\mathcal{T}\phi(t)\phi(t')|0}+\lambda\delta(t-t')\braket{0|[x(t),\phi(t')]|0} \\
@@ -171,7 +187,8 @@ $$
 
 Combining these results, we arrive at the fundamental relation:
 
-$$\tag{1.17}
+$$
+\tag{1.17}
 \begin{align}
 \braket{\phi(t)\phi(t')} & =\braket{0|\mathcal{T}\phi(t)\phi(t')|0}+\frac{im}{m'}\delta(t-t')
 \end{align}
@@ -187,7 +204,8 @@ This equation reveals a profound insight: the path integral correlation function
 
 For systems exhibiting second class constraints, Faddeev and Senjanovic developed a rigorous path integral formulation:
 
-$$\tag{1.18}
+$$
+\tag{1.18}
 \begin{align}
 Z & =\int\mathcal{D}\phi^{a}\mathcal{D}\pi_{a}\prod_{i}\delta(\varphi_{i})\det(\{\varphi_{i},\varphi_{j}\}_{\mathrm{PB}})^{1/2}\exp\left(i\int\mathrm{d}^{d}x(\pi_{a}\dot{\phi}^{a}-H[\phi^{a},\pi_{a}])\right)
 \end{align}
@@ -197,7 +215,8 @@ In this expression, $\displaystyle{\varphi_{i}}$ represents the collection of se
 
 Applying this formalism to our model, we define the generating functional:
 
-$$\tag{1.19}
+$$
+\tag{1.19}
 \begin{align}
 Z[J,\eta] & =\int\mathcal{D}x\mathcal{D}p_{x}\mathcal{D}\phi\mathcal{D}p_{\phi}\prod^{2}_{i=1}\delta(\varphi_{i})\det\left(\{\varphi_{i},\varphi_{j}\}_{\mathrm{PB}}\right)^{1/2} \\
 & \times\exp\left(i\int^{+\infty}_{-\infty}\mathrm{d}t(p_{x}\dot{x}+p_{\phi}\dot{\phi}-H[x,\phi]+Jx+\eta\phi)\right) \\
@@ -208,6 +227,6 @@ $$
 
 The subsequent analysis proceeds identically to our discussion in the path integral formalism section, demonstrating the equivalence of these approaches when properly formulated.
 
-*References:* 
+*References:*
 - [Faddeev and Senjanovic, "Covariant Quantization of Gauge Theories with Second Class Constraints"](https://doi.org/10.1016/0003-4916(76)90062-2)
 - Henneaux and Teitelboim, "Quantization of Gauge Systems", Princeton University Press (1992)

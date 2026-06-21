@@ -10,12 +10,12 @@ url: https://arxiv.org/abs/2109.00997v2
 tags: []
 ---
 
-asymptotic symmetry group is defined as the quotient of the group of residual gauge transformations modulo the group of trivial gauge transformations. here trivial means that the gauge transformatio is associated to a vanishing canonical charge. the aymptotic symmetry group is equivalently defined as the group of global symmetries of the class of theories given the set of boundary conditions. 
+asymptotic symmetry group is defined as the quotient of the group of residual gauge transformations modulo the group of trivial gauge transformations. here trivial means that the gauge transformatio is associated to a vanishing canonical charge. the aymptotic symmetry group is equivalently defined as the group of global symmetries of the class of theories given the set of boundary conditions.
 
 notations:
 1. $\displaystyle{\Phi^{i}=\left\{\phi,A_{\mu},g_{\mu \nu},\dots\right\}}$ for dynamical and background fields
-2. $\displaystyle{\mathbf{L}[\Phi ^{i}]}$ for Lagrangian
-3. $\displaystyle{\delta _{\lambda}\Phi ^{i}}$ for gauge transformation with parameter $\displaystyle{\lambda=\lambda ^{\alpha}(\Phi ^{i}(x^{\mu}),x^{\mu})}$, which form an algebra given by $\displaystyle{[\delta _{\lambda_{1}},\delta _{\lambda_{2}}]\Phi ^{i}=\delta _{[\lambda_{1},\lambda_{2}]}\Phi ^{i},[\lambda_{1},\lambda_{2}]^{\alpha}=C^{\alpha}_{\beta \gamma}(\lambda _{1}^{\beta},\lambda_{2})^{\gamma}+\delta _{\lambda_{1}}\lambda_{2}^{\alpha}-\delta _{\lambda_{2}}\lambda _{1}^{\alpha}}$.
+1. $\displaystyle{\mathbf{L}[\Phi ^{i}]}$ for Lagrangian
+1. $\displaystyle{\delta _{\lambda}\Phi ^{i}}$ for gauge transformation with parameter $\displaystyle{\lambda=\lambda ^{\alpha}(\Phi ^{i}(x^{\mu}),x^{\mu})}$, which form an algebra given by $\displaystyle{[\delta _{\lambda_{1}},\delta _{\lambda_{2}}]\Phi ^{i}=\delta _{[\lambda_{1},\lambda_{2}]}\Phi ^{i},[\lambda_{1},\lambda_{2}]^{\alpha}=C^{\alpha}_{\beta \gamma}(\lambda _{1}^{\beta},\lambda_{2})^{\gamma}+\delta _{\lambda_{1}}\lambda_{2}^{\alpha}-\delta _{\lambda_{2}}\lambda _{1}^{\alpha}}$.
 
 take a variation of the Lagrangian
 
@@ -85,7 +85,7 @@ $$\begin{align}
  & =H_{[\lambda_{1},\lambda_{2}]}+K_{\lambda_{1},\lambda_{2}}
 \end{align}$$
 
-where $\displaystyle{K_{\lambda_{1},\lambda_{2}}}$ is the central extension that only depend on the background fields. 
+where $\displaystyle{K_{\lambda_{1},\lambda_{2}}}$ is the central extension that only depend on the background fields.
 
 # celestial asymptotic symmetry groups
 
@@ -97,7 +97,7 @@ $$\begin{align}
 u & =t-r,v=t+r
 \end{align}$$
 
-where $\displaystyle{\gamma _{AB}}$ is the $\displaystyle{S^{n-2}}$ round metric. we define the boundaries of $\displaystyle{\mathcal{I}^{+}}$ to be the spheres $\displaystyle{\mathcal{I}^{+}_{\pm}}$ defined as the limit $\displaystyle{u\to \pm \infty}$ taken after $\displaystyle{r\to \infty}$ and similarly the boundaries of $\displaystyle{\mathcal{I}^{-}}$. 
+where $\displaystyle{\gamma _{AB}}$ is the $\displaystyle{S^{n-2}}$ round metric. we define the boundaries of $\displaystyle{\mathcal{I}^{+}}$ to be the spheres $\displaystyle{\mathcal{I}^{+}_{\pm}}$ defined as the limit $\displaystyle{u\to \pm \infty}$ taken after $\displaystyle{r\to \infty}$ and similarly the boundaries of $\displaystyle{\mathcal{I}^{-}}$.
 
 retarded and advanced coordinates are not appropriate to describe $\displaystyle{i^{0,\pm}}$. near $\displaystyle{i_{0}}$ we introduce $\displaystyle{(\tau,\rho,x^{A})}$ where $\displaystyle{t=\rho \sinh \tau,r=R+\rho \cosh \tau}$ for large $\displaystyle{R}$, with $\displaystyle{i^{0}}$ being defined as the $\displaystyle{\rho\to \infty}$ limit. near $\displaystyle{i^{\pm}}$ we introduce coordinate $\displaystyle{\hat{\tau},\hat{\rho},x^{A}}$ where $\displaystyle{t=\pm T+\hat{\tau}\cosh \hat{\rho}, r=\hat{\tau}\sinh \rho}$ for large $\displaystyle{T}$, and then $\displaystyle{i^{\pm}}$ are defined as the surface $\displaystyle{\hat{\tau}\to \infty}$. the metric reads
 
@@ -106,7 +106,7 @@ $$\begin{align}
 \mathrm{d}s^{2} & =-\mathrm{d}\hat{\tau}^{2}+\hat{\tau}^{2}(\mathrm{d}\hat{\rho}^{2}+\sinh ^{2}\hat{\rho}\gamma _{AB}\mathrm{d}x^{A}\mathrm{d}x^{B})+\mathcal{O}(\hat{\tau})
 \end{align}$$
 
-in Minskowski spacetime with $\displaystyle{d\geqslant 4}$, the infrared strcture of any propagating field at each asymptotic boundary can be decomposed in terms of multipole moments which appear at higher and higher subleading orders in the expansion from each boundary. in that sense, there is an infinite amount of holographic fields deal to a propagating field in Minskowsi spacetime. for comparison, in $\displaystyle{\mathrm{AdS}}$ there is only two holographiv fields (source and vacuum expectation). 
+in Minskowski spacetime with $\displaystyle{d\geqslant 4}$, the infrared strcture of any propagating field at each asymptotic boundary can be decomposed in terms of multipole moments which appear at higher and higher subleading orders in the expansion from each boundary. in that sense, there is an infinite amount of holographic fields deal to a propagating field in Minskowsi spacetime. for comparison, in $\displaystyle{\mathrm{AdS}}$ there is only two holographiv fields (source and vacuum expectation).
 
 ## 3d flat gravity
 

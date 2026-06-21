@@ -35,7 +35,7 @@ S_{\text{Pol}} & =-\frac{T}{2}\int \mathrm{d}^{2}\tau \sqrt{ -g } g^{ab} \frac{\
 \end{align}$$
 
 to see their equivalence, we can take the variation of $\displaystyle{S_{\text{Pol}}}$ with respect to the worldsheet metric $g^{ab}$. let $\displaystyle{h_{ab} = \frac{\partial X^\mu}{\partial \tau^a} \frac{\partial X^\nu}{\partial \tau^b} G_{\mu\nu}}$ be the induced metric.
-    
+
 $$\begin{align}
 \delta S_{\text{Pol}}& = -\frac{T}{2}\int \mathrm{d}^{2}\tau \sqrt{-g} \delta g^{ab} \left( h_{ab} - \frac{1}{2}g_{ab}h \right)
 \end{align}$$
@@ -47,7 +47,6 @@ h_{ab} & =\frac{1}{2}g_{ab}h
 \end{align}$$
 
 taking the determinant on both sides
-
 
 $$\begin{align}
 \det h & =\frac{1}{4}h^{2}\det g_{ab}
@@ -95,17 +94,17 @@ h & = \frac{1}{2} \cdot 2 \cdot (h + m^2) \\
 \implies m^2 & = 0
 \end{align}$$
 
-This shows that the equations of motion are **inconsistent** unless $m^2 = 0$. 
+This shows that the equations of motion are **inconsistent** unless $m^2 = 0$.
 
-Physically, this happens because the classical string worldsheet theory enjoys an extra local symmetry: **Weyl invariance** (local scale invariance, $g_{ab} \to e^{2\omega(\tau)} g_{ab}$). 
+Physically, this happens because the classical string worldsheet theory enjoys an extra local symmetry: **Weyl invariance** (local scale invariance, $g_{ab} \to e^{2\omega(\tau)} g_{ab}$).
 In exactly $D=2$ dimensions, the kinetic term $\sqrt{-g} g^{ab} h_{ab}$ is Weyl invariant because the transformation of the measure $\sqrt{-g} \to e^{2\omega}\sqrt{-g}$ perfectly cancels the inverse metric $g^{ab} \to e^{-2\omega}g^{ab}$. However, the "mass term" $\sqrt{-g} m^2$ changes by a factor of $e^{2\omega}$, which explicitly breaks the Weyl symmetry. To preserve this crucial symmetry (which is necessary to remove negative-norm states/ghosts during quantization), the classical worldsheet cosmological constant $m^2$ must vanish.
 
 ---
 
-to perform canonical quantization, we have to solve the eom for $\displaystyle{X^{\mu}}$ first. before solving the eom, we first analyse the symmetry of the Polyakov action. 
+to perform canonical quantization, we have to solve the eom for $\displaystyle{X^{\mu}}$ first. before solving the eom, we first analyse the symmetry of the Polyakov action.
 
 - reparameterization with $\displaystyle{\tau _{a}\to \tau _{a}'}$
 - Weyl symmetry with $\displaystyle{g_{ab}\to e^{2\sigma}g_{ab}}$
 - target space symmetries...
 
-by Weyl symmetry, we can set the world-sheet metric $\displaystyle{g_{ab}}$ to $\displaystyle{\delta _{ab}}$. 
+by Weyl symmetry, we can set the world-sheet metric $\displaystyle{g_{ab}}$ to $\displaystyle{\delta _{ab}}$.

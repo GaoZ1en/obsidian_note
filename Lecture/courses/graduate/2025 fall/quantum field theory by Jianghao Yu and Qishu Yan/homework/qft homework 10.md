@@ -3,7 +3,7 @@
 calculate
 
 $$\begin{align}
-\braket{ 0|\phi(x_{1})\bar{\psi}(x_{1})\psi(x_{1})\phi(x_{2})\bar{\psi}(x_{2})\psi(x_{2})|0 } 
+\braket{ 0|\phi(x_{1})\bar{\psi}(x_{1})\psi(x_{1})\phi(x_{2})\bar{\psi}(x_{2})\psi(x_{2})|0 }
 \end{align}$$
 
 using Wick theorem. here the Yukawa coupling interaction is given by
@@ -35,7 +35,7 @@ $$\begin{align}
 \braket{ 0|\phi(x)\phi(y)|0 }
 \end{align}$$
 
-and retarded propagator, advanced propagator, Feynman propagator and anti-Feynman propagator for a free real scalar field $\displaystyle{\phi}$ defined in 4d Minkowskian spacetime. 
+and retarded propagator, advanced propagator, Feynman propagator and anti-Feynman propagator for a free real scalar field $\displaystyle{\phi}$ defined in 4d Minkowskian spacetime.
 
 *sol*.
 
@@ -110,4 +110,3 @@ $$\begin{align}
 \end{align}$$
 
 here $\displaystyle{\mathcal{T}}$ and $\displaystyle{\bar{\mathcal{T}}}$ are the time-ordering and anti-time-ordering operators respectively.
-

@@ -101,7 +101,7 @@ we claim that $\displaystyle{U_{a,b}\subseteq V\cup W}$. take $\displaystyle{\fo
 now $\displaystyle{U_{a,b}}$ is closed, and since $\displaystyle{\mathbb{Z}}$ is compact, $\displaystyle{U_{a,b}}$ is also compact as a closed subset. hence the open cover $\displaystyle{\{V, W\}}$ of $\displaystyle{U_{a,b}}$ admits a finite subcover. but $\displaystyle{W}$ is a union of infinitely many open sets, so there exist finitely many primes $\displaystyle{q_1, q_2, \dots, q_m}$, each satisfying $\displaystyle{q_j \not\equiv b \pmod{a}}$, such that
 
 $$\begin{align}
-U_{a,b} & \subseteq V \cup \bigcup_{j=1}^m U_{q_j,0} 
+U_{a,b} & \subseteq V \cup \bigcup_{j=1}^m U_{q_j,0}
 \end{align}$$
 
 now construct an integer $\displaystyle{x}$ satisfying the following systems of congruences:
@@ -116,17 +116,17 @@ for those $\displaystyle{q_{j}}$ dividing $\displaystyle{a}$, no extra condition
 
 now check the properties of $\displaystyle{x}$:
 1. from $\displaystyle{x\equiv b\pmod{a}}$, we have $\displaystyle{x\in U_{a,b}}$
-2. for each $\displaystyle{p_i}$, we have $\displaystyle{x\equiv 1\pmod{p_i}}$, so $\displaystyle{x\notin U_{p_i,0}}$; thus $\displaystyle{x\notin V}$
-3. for each $\displaystyle{q_j}$: if $\displaystyle{q_j \nmid a}$, then $\displaystyle{x\equiv 1\pmod{q_j}}$, so $\displaystyle{x\notin U_{q_j,0}}$; if $\displaystyle{q_j \mid a}$, then $\displaystyle{x\equiv b\pmod{q_j}}$ with $\displaystyle{b \not\equiv 0\pmod{q_j}}$, so again $\displaystyle{x\notin U_{q_j,0}}$. hence $\displaystyle{x}$ is not in any $\displaystyle{U_{q_j,0}}$.
+1. for each $\displaystyle{p_i}$, we have $\displaystyle{x\equiv 1\pmod{p_i}}$, so $\displaystyle{x\notin U_{p_i,0}}$; thus $\displaystyle{x\notin V}$
+1. for each $\displaystyle{q_j}$: if $\displaystyle{q_j \nmid a}$, then $\displaystyle{x\equiv 1\pmod{q_j}}$, so $\displaystyle{x\notin U_{q_j,0}}$; if $\displaystyle{q_j \mid a}$, then $\displaystyle{x\equiv b\pmod{q_j}}$ with $\displaystyle{b \not\equiv 0\pmod{q_j}}$, so again $\displaystyle{x\notin U_{q_j,0}}$. hence $\displaystyle{x}$ is not in any $\displaystyle{U_{q_j,0}}$.
 
 therefore $\displaystyle{x\not\in V\cup\left(\bigcup ^{m}_{j=1}U_{q_{j},0}\right)}$, contradicting the fact that $\displaystyle{x\in U_{a,b}\subseteq V\cup\left(\bigcup ^{m}_{j=1}U_{q_{j},0}\right)}$. hence our assumption is false: there must be infinitely many primes of the form $\displaystyle{an+b}$.
 
 # problem 11
 
 suppose $\displaystyle{A}$ is a compact subset of metric space $\displaystyle{X}$.
-1. prove $\displaystyle{\exists x,y\in A, \text{ s.t. } d(x,y)}$ equals the diameter of $\displaystyle{A}$. 
-2. prove that $\displaystyle{\forall x\in X}$, $\displaystyle{\exists y\in A\text{ s.t. }d(x,A)=d(x,y)}$.
-3. prove that $\displaystyle{\forall B\subset X}$ that is closed and disjoint from $\displaystyle{A}$, $\displaystyle{d(A,B)> 0}$.
+1. prove $\displaystyle{\exists x,y\in A, \text{ s.t. } d(x,y)}$ equals the diameter of $\displaystyle{A}$.
+1. prove that $\displaystyle{\forall x\in X}$, $\displaystyle{\exists y\in A\text{ s.t. }d(x,A)=d(x,y)}$.
+1. prove that $\displaystyle{\forall B\subset X}$ that is closed and disjoint from $\displaystyle{A}$, $\displaystyle{d(A,B)> 0}$.
 
 *sol*.
 
@@ -142,13 +142,13 @@ F(x,y) & =\begin{cases}
 \end{align}$$
 
 1. prove that $\displaystyle{F}$ is separately continuous
-2. calculate $\displaystyle{g:E^{1}\to E^{1}}$ defined by $\displaystyle{g(x)=F(x,x)}$
-3. prove that $\displaystyle{F}$ is not continuous
+1. calculate $\displaystyle{g:E^{1}\to E^{1}}$ defined by $\displaystyle{g(x)=F(x,x)}$
+1. prove that $\displaystyle{F}$ is not continuous
 
 *sol*.
 1. for fixed $y_0 \neq 0$, $F(x, y_0) = \frac{x y_0}{x^2 + y_0^2}$ is a rational function with non-zero denominator, hence continuous. At $y_0=0$, $F(x,0) = 0$ for all $x$, which is constant and continuous. same for fixed $x_0$.
-2. $\displaystyle{g(x)=F(x,x)=\frac{x^2}{x^2+x^2}=\frac{1}{2}}$ for $\displaystyle{x\neq 0}$, and $\displaystyle{g(0)=0}$.
-3. if $F$ were continuous at $(0,0)$, then $\lim_{x \to 0} g(x) = \lim_{x \to 0} F(x,x)$ should equal $F(0,0) = 0$. however, for $x \neq 0$, $g(x) = 1/2$, so the limit is $1/2 \neq 0$. thus $F$ is not continuous.
+1. $\displaystyle{g(x)=F(x,x)=\frac{x^2}{x^2+x^2}=\frac{1}{2}}$ for $\displaystyle{x\neq 0}$, and $\displaystyle{g(0)=0}$.
+1. if $F$ were continuous at $(0,0)$, then $\lim_{x \to 0} g(x) = \lim_{x \to 0} F(x,x)$ should equal $F(0,0) = 0$. however, for $x \neq 0$, $g(x) = 1/2$, so the limit is $1/2 \neq 0$. thus $F$ is not continuous.
 
 # problem 13
 
@@ -182,15 +182,15 @@ if we glue the Mobius band to itself along its boundary, what surface do we get?
 describe the following spaces:
 
 1. cylinder $\displaystyle{S^{1}\times[0,1]}$, and gluing its every boundary component to a point
-2. torus $\displaystyle{T^{2}}$, and gluing the subset consisting of a meridian and a longitude to a point
-3. sphere $\displaystyle{S^{2}}$, and gluing its equator to a point
-4. $\displaystyle{E^{2}}$, and gluing every circle $\displaystyle{\{(x,y)|x^{2}+y^{2}=r^{2}\}}$ to a point for every $\displaystyle{r>0}$
+1. torus $\displaystyle{T^{2}}$, and gluing the subset consisting of a meridian and a longitude to a point
+1. sphere $\displaystyle{S^{2}}$, and gluing its equator to a point
+1. $\displaystyle{E^{2}}$, and gluing every circle $\displaystyle{\{(x,y)|x^{2}+y^{2}=r^{2}\}}$ to a point for every $\displaystyle{r>0}$
 
 *sol*.
 1. **Sphere $S^2$**. (Collapsing the top circle to a point gives a cone/disk, collapsing the bottom circle gives another cone/disk. Two cones glued at their base form a sphere. Alternatively, this is the suspension of $S^1$, which is $S^2$.)
-2. **Sphere $S^2$**. (The meridian and longitude form a wedge of two circles $S^1 \vee S^1$. The torus $T^2$ can be viewed as a cell complex $e^0 \cup e^1_1 \cup e^1_2 \cup e^2$. Collapsing the 1-skeleton ($S^1 \vee S^1$) to a point contracts everything except the interior of the 2-cell. The result is homeomorphic to $S^2$.)
-3. **Wedge of two spheres $S^2 \vee S^2$**. (The equator divides the sphere into two hemispheres. Identifying the equator to a point pinches the sphere in the middle, resulting in two spheres touching at that point.)
-4. **Half-line $[0,\infty)$**. (Each circle $x^2+y^2=r^2$ is identified to a point $r$. The origin is identified to $0$. The topology is the quotient topology, which corresponds to the standard topology on $[0,\infty)$.)
+1. **Sphere $S^2$**. (The meridian and longitude form a wedge of two circles $S^1 \vee S^1$. The torus $T^2$ can be viewed as a cell complex $e^0 \cup e^1_1 \cup e^1_2 \cup e^2$. Collapsing the 1-skeleton ($S^1 \vee S^1$) to a point contracts everything except the interior of the 2-cell. The result is homeomorphic to $S^2$.)
+1. **Wedge of two spheres $S^2 \vee S^2$**. (The equator divides the sphere into two hemispheres. Identifying the equator to a point pinches the sphere in the middle, resulting in two spheres touching at that point.)
+1. **Half-line $[0,\infty)$**. (Each circle $x^2+y^2=r^2$ is identified to a point $r$. The origin is identified to $0$. The topology is the quotient topology, which corresponds to the standard topology on $[0,\infty)$.)
 
 # problem 17
 
@@ -198,7 +198,7 @@ prove that $\displaystyle{\mathbb{Z}}$ with arithmetic progression topology is n
 
 *sol*. we have shown that each $\displaystyle{U_{a,b}}$ is both open and closed in $\displaystyle{\mathbb{Z}}$ with the arithmetic progression topology. then consider $\displaystyle{2\mathbb{Z}}$ and $\displaystyle{2\mathbb{Z}+1}$, they are disjoint and their union is $\displaystyle{\mathbb{Z}}$, thus they form a separation of $\displaystyle{\mathbb{Z}}$. hence $\displaystyle{\mathbb{Z}}$ is not connected.
 
-$\displaystyle{\forall x,y\in \mathbb{Z}}$, let prime $\displaystyle{p>|x-y|}$, then $\displaystyle{x\not \equiv y\pmod{p}}$, so $\displaystyle{x \in U_{p,x\pmod{p}}}$ and $\displaystyle{y \in U_{p,y\pmod{p}}}$. these two open sets are disjoint, thus the space is Hausdorff. 
+$\displaystyle{\forall x,y\in \mathbb{Z}}$, let prime $\displaystyle{p>|x-y|}$, then $\displaystyle{x\not \equiv y\pmod{p}}$, so $\displaystyle{x \in U_{p,x\pmod{p}}}$ and $\displaystyle{y \in U_{p,y\pmod{p}}}$. these two open sets are disjoint, thus the space is Hausdorff.
 
 let $\displaystyle{C}$ be a connected component containing $\displaystyle{x}$. if $\displaystyle{y\in C}$ and $\displaystyle{y\neq x}$, we can find disjoint open sets $\displaystyle{U,V}$ separating $\displaystyle{x}$ and $\displaystyle{y}$ as shown above. $\displaystyle{C\subset U\cup V}$ implies $\displaystyle{C=(C\cap U)\cup(C\cap V)}$. since $\displaystyle{C}$ is connected, one must be empty, contradiction. so connected components are indeed single points.
 
@@ -207,4 +207,3 @@ let $\displaystyle{C}$ be a connected component containing $\displaystyle{x}$. i
 suppose $\displaystyle{f:X\to Y}$ is continuous and closed, the coimage of $\displaystyle{y\in Y}$ is compact in $\displaystyle{X}$. prove that if $\displaystyle{K}$ is compact in $\displaystyle{Y}$, then $\displaystyle{f^{-1}(K)}$ is compact in $\displaystyle{X}$.
 
 *sol*. for $\displaystyle{y\in Y}$, consider open cover $\displaystyle{U_{\alpha},\alpha \in A}$ of $\displaystyle{f^{-1}(y)}$. since $\displaystyle{f\left( X-\bigcup _{\alpha \in A}U_{\alpha} \right)}$ is closed, $\displaystyle{\exists V_{y}\subset Y,\text{ s.t. }f^{-1}(V_{y})\subset \bigcup _{\alpha \in A}U_{\alpha}}$, then $\displaystyle{\left\{V_{y}|y\in K\right\}}$ is an open cover of $\displaystyle{K}$. since $\displaystyle{K}$ is compact, $\displaystyle{\exists y_1,y_2,\ldots,y_n\in K}$ such that $\displaystyle{K\subseteq \bigcup _{i=1}^{n}V_{y_i}}$. thus, $\displaystyle{f^{-1}(K)\subseteq \bigcup _{i=1}^{n}f^{-1}(V_{y_i})\subseteq \bigcup _{\alpha \in A}U_{\alpha}}$. since each $\displaystyle{f^{-1}(V_{y_i})}$ can be covered by finitely many $\displaystyle{U_{\alpha}}$, we conclude that $\displaystyle{f^{-1}(K)}$ is compact.
-

@@ -34,7 +34,7 @@ $$\begin{align}
 and the correlation function is
 
 $$\begin{align}
-\braket{ \phi(x_{1})\phi(x_{2}) }  & = \braket{ 0|\mathcal{T}\phi(x_{1})\phi(x_{2})|0 } \\ 
+\braket{ \phi(x_{1})\phi(x_{2}) }  & = \braket{ 0|\mathcal{T}\phi(x_{1})\phi(x_{2})|0 } \\
  & =i\int \frac{\mathrm{d}^{2}k}{(2\pi)^{2}}\frac{e^{ik(x_{1}-x_{2})}}{k^{2}+m^{2}-i\varepsilon} \\
 \end{align}$$
 
@@ -63,4 +63,4 @@ $$\begin{align}
  & =\frac{1}{4\pi}\left[-2\gamma -2\ln\left(\frac{|x_{1}-x_{2}|}{2}\right)+E_{1}\left(\frac{(x_{1}-x_{2})^{2}}{4\Lambda}\right)\right]\quad (\Lambda\to \infty)
 \end{align}$$
 
-where $\displaystyle{E_{1}(x)=\int ^{\infty}_{x} \frac{e^{-t}}{t}\mathrm{d}t}$ is the exponential integral function. we can see that 
+where $\displaystyle{E_{1}(x)=\int ^{\infty}_{x} \frac{e^{-t}}{t}\mathrm{d}t}$ is the exponential integral function. we can see that

@@ -1,18 +1,19 @@
 Newtonian formalism, deterministic
-Lagrangian formalism, equivalent to Newtonian formalism...? 
+Lagrangian formalism, equivalent to Newtonian formalism...?
 Hamiltonian formalism, equivalent to Newtonian formalism...?
 
 some standard computation for Lagrangian formalism.
 related to path integral formalism
 
-$$\tag{1.1}
+$$
+\tag{1.1}
 \begin{align}
 \langle x(t_{f})|x(t_{i})\rangle\sim \int _{t_{i}}^{t_{f}} \mathcal{D}xe^{iS[x]}
 \end{align}
 $$
 
-
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \frac{8\times9}{12}=6
 \end{align}
@@ -28,7 +29,8 @@ the 2.1 section of my thesis
 
 some Hamiltonian mechanics
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \mathcal{L}_{X_{\xi}}A=\mathcal{L}_{\xi}A
 \end{align}
@@ -38,7 +40,8 @@ is not always satisfied.
 
 怎么理解$\displaystyle{\delta x(t)}$的矢量理解？
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \delta J_{\xi} & =\delta(X_{\xi}\cdot \Theta)-\delta(\xi \cdot \mathbf{L}) \\
  & =\delta(X_{\xi}\cdot \Theta)-\xi \cdot \delta \mathbf{L} \\
@@ -51,13 +54,15 @@ $$
 
 考虑证明
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \dot{p}=\left\{p,H\right\}
 \end{align}
 $$
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 H=\frac{p^2}{2m}+V(x)
 \end{align}
@@ -65,7 +70,8 @@ $$
 
 一般的解
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 x(t)=x(x_{0},p_{0};t) \\
 p(t)=p(x_{0},p_{0};t)
@@ -74,7 +80,8 @@ $$
 
 那么
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \dot{p}=\left\{p,H\right\}=X_{\xi}\cdot \delta p|_{\tilde{\mathcal{P}}} & = \Omega ^{AB}(\delta p)_{A}(\delta H)_{B}|_{\tilde{\mathcal{P}}} \\
  &  =\left( \frac{\delta}{\delta x} \otimes \frac{\delta}{\delta p}-\frac{\delta}{\delta p}\otimes  \frac{\delta}{\delta x} \right)^{AB}(\delta p)_{A}\left( \frac{p\delta p}{m}+V'(x)\delta x \right)_{B}\Big|_{\tilde{\mathcal{P}}} \\

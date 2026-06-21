@@ -78,7 +78,7 @@ $$\begin{align}
 k _{\xi}^{\mu \nu} & =\frac{1}{16\pi G}\left[\xi ^{\rho}\left( \nabla ^{(0)\mu}\delta h^{\nu}{}_{\rho}-\nabla ^{(0)\nu}\delta h^{\mu}{}_{\rho} \right)-\delta h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}+\delta h^{\nu \rho}\nabla ^{(0)}_{\rho}\xi ^{\mu}\right]+O(h\delta h)
 \end{align}$$
 
-for the asymptotic Killing vectors $\displaystyle{\xi _{n},\bar{\xi}_{n},n\in \mathbb{Z}}$ defined in [[Articles/Quantization in AdS3/linearized gravity/Virasoro algebra|Virasoro algebra]], we compute the Poisson brackets as
+for the asymptotic Killing vectors $\displaystyle{\xi _{n},\bar{\xi}_{n},n\in \mathbb{Z}}$ defined in [[Articles/Quantization in AdS/linearized gravity/Virasoro algebra|Virasoro algebra]], we compute the Poisson brackets as
 
 $$\begin{align}
 \left\{H_{n},H_{m}\right\} & \approx X_{m}\cdot \delta H_{n} \\

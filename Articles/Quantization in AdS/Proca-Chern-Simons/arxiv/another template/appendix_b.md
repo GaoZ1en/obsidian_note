@@ -52,25 +52,25 @@ f_{-,n,\bar{n}}^{\mu} & =\sqrt{ \frac{1}{n!\bar{n}!(\mu _{-}+2)_{n}(\mu _{-})_{\
 
 These definitions immediately imply the following recursion relations. For the $+$ branch,
 
-$$ \begin{align}
+$$\begin{align}
 \mathcal{L}_{\xi_{0}}f_{+,n,\bar{n}}^{\mu} & =-i\left(\frac{\mu _{+}}{2}+n\right)f_{+,n,\bar{n}}^{\mu}, \\
 \mathcal{L}_{\xi _{-1}}f_{+,n,\bar{n}}^{\mu} & =\sqrt{ (n+1)(\mu _{+}+n) }f_{+,n+1,\bar{n}}^{\mu}, \\
 \mathcal{L}_{\xi _{1}}f_{+,n,\bar{n}}^{\mu} & =-\sqrt{ n(\mu _{+}+n-1) }f_{+,n-1,\bar{n}}^{\mu}, \\
 \mathcal{L}_{\bar{\xi}_{0}}f_{+,n,\bar{n}}^{\mu} & =-i\left(\frac{\mu _{+}}{2}+1+\bar{n}\right)f_{+,n,\bar{n}}^{\mu}, \\
 \mathcal{L}_{\bar{\xi}_{-1}}f_{+,n,\bar{n}}^{\mu} & =\sqrt{ (\bar{n}+1)(\mu _{+}+2+\bar{n}) }f_{+,n,\bar{n}+1}^{\mu}, \\
 \mathcal{L}_{\bar{\xi}_{1}}f_{+,n,\bar{n}}^{\mu} & =-\sqrt{ \bar{n}(\mu _{+}+1+\bar{n}) }f_{+,n,\bar{n}-1}^{\mu}.
-\end{align} $$
+\end{align}$$
 
 For the $-$ branch, we similarly obtain
 
-$$ \begin{align}
+$$\begin{align}
 \mathcal{L}_{\xi_{0}}f_{-,n,\bar{n}}^{\mu} & =-i\left(\frac{\mu _{-}}{2}+1+n\right)f_{-,n,\bar{n}}^{\mu}, \\
 \mathcal{L}_{\xi _{-1}}f_{-,n,\bar{n}}^{\mu} & =\sqrt{ (n+1)(\mu _{-}+2+n) }f_{-,n+1,\bar{n}}^{\mu}, \\
 \mathcal{L}_{\xi _{1}}f_{-,n,\bar{n}}^{\mu} & =-\sqrt{ n(\mu _{-}+1+n) }f_{-,n-1,\bar{n}}^{\mu}, \\
 \mathcal{L}_{\bar{\xi}_{0}}f_{-,n,\bar{n}}^{\mu} & =-i\left(\frac{\mu _{-}}{2}+\bar{n}\right)f_{-,n,\bar{n}}^{\mu}, \\
 \mathcal{L}_{\bar{\xi}_{-1}}f_{-,n,\bar{n}}^{\mu} & =\sqrt{ (\bar{n}+1)(\mu _{-}+\bar{n}) }f_{-,n,\bar{n}+1}^{\mu}, \\
 \mathcal{L}_{\bar{\xi}_{1}}f_{-,n,\bar{n}}^{\mu} & =-\sqrt{ \bar{n}(\mu _{-}-1+\bar{n}) }f_{-,n,\bar{n}-1}^{\mu}.
-\end{align} $$
+\end{align}$$
 
 We now verify that these definitions indeed guarantee the desired normalization for all descendants. Since the proof for the $-$ branch is completely analogous, it is sufficient to consider the $+$ branch.
 

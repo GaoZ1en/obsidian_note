@@ -1,4 +1,5 @@
 # Mock Group Theory Exam: The Final Check
+
 *Scope: Point Groups (inc. Double Groups), Permutation Groups, Continuous Groups (Standard)*
 
 ## Part 1: Double Groups (The New Challenge)
@@ -12,7 +13,7 @@ a) Fermions (half-integer spin) have the property that their wavefunction change
 b) Yes, $R$ (rotation by $2\pi$) corresponds to $-I$ in spinor representations and commutes with all spatial rotations. Thus $zRz^{-1} = R$, so it is in the center. Consequently, $\{R\}$ forms a conjugacy class by itself (distinct from $\{E\}$).
 c) If the axis is **bilateral**, the class **splits** into two classes: one containing the original axes $\{C_2, \dots\}$ and one containing the flipped versions $\{RC_2, \dots\}$. (If the axis were not bilateral, they would merge into a single class of double size).
 
-2.  **[Constructing $D_3'$]**
+1.  **[Constructing $D_3'$]**
     Consider the Double Group $D_3'$ (Order 12).
     The original $D_3$ has classes: $\{E\}$, $\{C_3, C_3^2\}$, $\{3C_2'\}$.
     a) Identify the classes of $D_3'$.
@@ -23,10 +24,10 @@ c) If the axis is **bilateral**, the class **splits** into two classes: one cont
 *sol*.
 a) The classes of $D_3'$ (Order 12) are 6 in total:
    1. $\{E\}$
-   2. $\{R\}$
-   3. $\{C_3, C_3^2\}$ (Orbit of $C_3$ under conjugations. $C_2 c_3 C_2^{-1} = c_3^{-1} = c_3^2$. Is $R c_3$ reachable? No, $C_3$ is not bilateral in a way that mixes branches? Actually in $D_3$, $C_3$ and $C_3^{-1}$ are conjugate. In Double group, they remain conjugate. $ \{c_3, c_3^2\} $ are distinct from $\{R c_3, R c_3^2\}$. So $C_3$ splits). -> $\{C_3, C_3^2\}$ is class 3.
-   4. $\{RC_3, RC_3^2\}$ is class 4.
-   5. $\{3C_2', 3RC_2'\}$? The $C_2'$ axes in $D_3$ are bilateral (perpendicular to $C_3$). By Opechowski rules, bilateral $C_2$ classes SPLIT.
+   1. $\{R\}$
+   1. $\{C_3, C_3^2\}$ (Orbit of $C_3$ under conjugations. $C_2 c_3 C_2^{-1} = c_3^{-1} = c_3^2$. Is $R c_3$ reachable? No, $C_3$ is not bilateral in a way that mixes branches? Actually in $D_3$, $C_3$ and $C_3^{-1}$ are conjugate. In Double group, they remain conjugate. $ \{c_3, c_3^2\} $ are distinct from $\{R c_3, R c_3^2\}$. So $C_3$ splits). -> $\{C_3, C_3^2\}$ is class 3.
+   1. $\{RC_3, RC_3^2\}$ is class 4.
+   1. $\{3C_2', 3RC_2'\}$? The $C_2'$ axes in $D_3$ are bilateral (perpendicular to $C_3$). By Opechowski rules, bilateral $C_2$ classes SPLIT.
       So we have $\{3C_2'\}$ as class 5.
       And $\{3RC_2'\}$ as class 6.
 b) Sum of squares: $12$.
@@ -40,7 +41,7 @@ c) For $E_{1/2}$ ($j=1/2$, dim 2):
 
 ## Part 2: Symmetric Groups
 
-3.  **[Character Calculation without Table]**
+1.  **[Character Calculation without Table]**
     For the symmetric group $S_5$:
     Consider the irreducible representation $\lambda = [3,2]$.
     a) Calculate its dimension using the Hook Length formula.
@@ -61,7 +62,7 @@ b) **Character of (123)** (Cycle type $\mu = (3, 1, 1)$):
    Shape:
    X X X
    X X
-   
+
    **Attempt 1**: Remove from bottom right.
    End at (1,1). Hook path (1,1) $\to$ (1,0) $\to$ (0,2)? No, discontinuous.
    End at (1,1). Hook path (1,1) $\to$ (0,1) $\to$ (0,2)? Yes. These cells are connected along the rim.
@@ -83,7 +84,7 @@ b) **Character of (123)** (Cycle type $\mu = (3, 1, 1)$):
 
    Total Character $\chi = -1 + 1 = 0$.
 
-4.  **[Inner Product]**
+1.  **[Inner Product]**
     In $S_4$, decompose the Kronecker product of the standard representation $[3,1]$ with itself.
     $[3,1] \otimes [3,1] = \dots$
     Verify the dimensions on both sides.
@@ -95,28 +96,32 @@ b) **Character of (123)** (Cycle type $\mu = (3, 1, 1)$):
    $(123)$: $1-1=0$.
    $(1234)$: $0-1=-1$.
    $(12)(34)$: $0-1=-1$.
-   
+
    Squared Character $\chi^2$:
    $(9, 1, 0, 1, 1)$.
-   
+
    Decomposition via orthogonality:
    $n_{[4]} = \frac{1}{24}(9 + 6(1) + 8(0) + 6(1) + 3(1)) = 1$.
    $n_{[1^4]} = \frac{1}{24}(9 - 6(1) + 0 - 6(1) + 3(1)) = 0$.
    $n_{[2,2]} = \frac{1}{24}(2(9) + 0 + 0 + 0 + 3(2)(1)) = \frac{24}{24} = 1$.
    $n_{[3,1]} = \frac{1}{24}(3(9) + 6(1)(1) + 0 + 6(-1)(1) + 3(-1)(1)) = \frac{24}{24} = 1$.
    $n_{[2,1,1]} = \frac{1}{24}(3(9) + 6(-1)(1) + 0 + 6(1)(1) + 3(-1)(1)) = \frac{24}{24} = 1$.
-   
+
    Result: $[3,1] \otimes [3,1] \cong [4] \oplus [3,1] \oplus [2,1,1] \oplus [2,2]$.
    Dimensions: $3 \times 3 = 1 + 3 + 3 + 2 = 9$. Verified.
 
 ## Part 3: Continuous Groups (SU(2)/SO(3))
 
-5.  **[Wigner-Eckart Theorem]**
+1.  **[Wigner-Eckart Theorem]**
     Consider a tensor operator $T^{(1)}_q$ (rank 1, spherical vector).
     We are interested in matrix elements between angular momentum states $|j, m\rangle$.
     a) Selection rules: For which $j', m'$ is $\langle j', m' | T^{(1)}_q | 1, 0 \rangle$ non-zero? (Initial state $j=1$).
     b) Calculate the ratio of matrix elements:
-       $$ \frac{\langle 1, 1 | T^{(1)}_1 | 1, 0 \rangle}{\langle 1, 1 | T^{(1)}_0 | 1, 1 \rangle} $$
+
+$$\begin{align}
+\frac{\langle 1, 1 | T^{(1)}_1 | 1, 0 \rangle}{\langle 1, 1 | T^{(1)}_0 | 1, 1 \rangle}
+\end{align}$$
+
        *(Hint: Express in terms of Clebsch-Gordan coefficients $\langle j_1 m_1 j_2 m_2 | J M \rangle$)*.
 *sol*.
 a) Selection rules:
@@ -134,7 +139,7 @@ b) Ratio:
    Denominator term $(m, q) = (1, 0)$. Corresponds to $|1,1\rangle|1,0\rangle$. Coeff is $+1/\sqrt{2}$.
    Ratio = $-1$.
 
-6.  **[SO(3) Homomorphism]**
+1.  **[SO(3) Homomorphism]**
     Consider the vector $\vec{v} = (x, y, z)$. Map it to a $2 \times 2$ traceless Hermitian matrix $X = \vec{v} \cdot \vec{\sigma}$.
     Show that the transformation $X' = U X U^\dagger$ (where $U \in SU(2)$) preserves the determinant of $X$.
     How does this relate to the invariance of the length of $\vec{v}$?
@@ -150,7 +155,7 @@ b) Ratio:
 
 ## Part 4: Final Boss (Review)
 
-7.  **[Degeneracy Lifting]**
+1.  **[Degeneracy Lifting]**
     A particle with spin $s=1/2$ is in an orbital state with $l=1$ (p-orbital).
     The system has full rotational symmetry (total $J$ is conserved).
     a) Under $SO(3)$, what are the irreducible components of the total Hilbert space $1 \otimes 1/2$?
@@ -169,4 +174,4 @@ b) We decompose $D^{(3/2)}$ under $O'$.
    $6C_2' (\alpha=\pi)$: $\chi(\pi) = 0$.
    Character vector on $O$ classes: $(4, -1, 0, 0, 0)$.
    This corresponds exactly to the 4-dimensional spinor representation $\Gamma_8$ (or $U'$) of the cubic double group.
-   Conclusion: The $J=3/2$ level **does not split**. It transforms as the irreducible representation $\Gamma_8$. 
+   Conclusion: The $J=3/2$ level **does not split**. It transforms as the irreducible representation $\Gamma_8$.

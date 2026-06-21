@@ -4,7 +4,7 @@ for the Steane's 7-qubit code, show that an encoding circuit can be designed as 
 
 ![image](http://100.94.165.49:8080/i/3ae04f5c-d9e8-4a2d-b2c6-f2e45a556018.png)
 
-here $\displaystyle{\ket{\psi}=a\ket{0}+b\ket{1}}$. 
+here $\displaystyle{\ket{\psi}=a\ket{0}+b\ket{1}}$.
 
 *sol*.
 
@@ -132,7 +132,7 @@ $$\begin{align}
  & =\sum _{ij}c_{ij}\ket{i}_{1}(\ket{j} _{2}\ket{0}_{a}+(-1)^{a}\ket{j+1}_{2}\ket{1} _{a} )
 \end{align}$$
 
-2. measure $\displaystyle{Z_{1}Z_{a}}$ with outcome $\displaystyle{(-1)^{b}}$. the projector is $\displaystyle{P_{b}=\frac{1+(-1)^{b}Z_{1}Z_{a}}{2}}$. the state becomes
+1. measure $\displaystyle{Z_{1}Z_{a}}$ with outcome $\displaystyle{(-1)^{b}}$. the projector is $\displaystyle{P_{b}=\frac{1+(-1)^{b}Z_{1}Z_{a}}{2}}$. the state becomes
 
 $$\begin{align}
 \ket{\Psi_{2}}  & =P_{b}\ket{\Psi_{1}}  \\
@@ -146,14 +146,14 @@ $$\begin{align}
 \ket{\Psi_{2}} & \propto \sum _{j}c_{bj}\ket{b} _{1}\ket{j} _{2}\ket{0} _{a}+(-1)^{a}c_{b+1,j}\ket{b+1} _{1}\ket{j+1} _{2}\ket{1} _{a}
 \end{align}$$
 
-3. measure $\displaystyle{X_{a}}$ with outcome $\displaystyle{(-1)^{c}}$, and we project onto the eigenstate $\displaystyle{\ket{+_{c}}_{a}=\frac{\ket{0}+(-1)^{c}\ket{1}}{\sqrt{2}}}$. the state becomes
+1. measure $\displaystyle{X_{a}}$ with outcome $\displaystyle{(-1)^{c}}$, and we project onto the eigenstate $\displaystyle{\ket{+_{c}}_{a}=\frac{\ket{0}+(-1)^{c}\ket{1}}{\sqrt{2}}}$. the state becomes
 
 $$\begin{align}
 \ket{\Psi_{3}} & =\braket{ +_{c}|\Psi_{2} } \\
  & \propto\sum _{j} c_{bj}\ket{b} _{1}\ket{j} _{2}+(-1)^{a+c}c_{b+1,j}\ket{b+1} _{1}\ket{j+1} _{2}
 \end{align}$$
 
-4. corrections by applying $\displaystyle{Z_{1}^{a+c}X_{2}^{b}}$, the state becomes
+1. corrections by applying $\displaystyle{Z_{1}^{a+c}X_{2}^{b}}$, the state becomes
 
 $$\begin{align}
 \ket{\text{out}} & = Z_{1}^{a+c}X_{2}^{b}\ket{\Psi_{3}} \\
@@ -161,7 +161,7 @@ $$\begin{align}
  & =\sum _{j}c_{b,j}(-1)^{b(a+c)}\ket{b} _{1}\ket{j+b} _{2}+(-1)^{a+c}c_{b+1,j}(-1)^{(b+1)(a+c)}\ket{b+1} _{1}\ket{j+1+b} _{2} \\
  & =(-1)^{b(a+c)}\sum _{j}c_{b,j}\ket{b} _{1}\ket{j+b} _{2}+c_{b+1,j}\ket{b+1} _{1}\ket{j+1+b} _{2} \\
  & =(-1)^{b(a+c)}\sum _{i,j}c_{i,j}\ket{i} _{1}\ket{j+i} _{2} \\
- & \propto CNOT_{1\to2}\ket{\psi} _{12} 
+ & \propto CNOT_{1\to2}\ket{\psi} _{12}
 \end{align}$$
 
 therefore, the circuit implements the CNOT gate fault-tolerantly.
@@ -191,7 +191,8 @@ $$\begin{align}
  & \propto \sum _{i}c_{i}\ket{i} \ket{0} _{a}+c_{i}(-1)^{a+i}\ket{i} \ket{1} _{a} \\
  & =\sum _{i}c_{i}\ket{i} (\ket{0} _{a}+(-1)^{a+i}\ket{1} _{a} )
 \end{align}$$
-2. measure $\displaystyle{X_{1}}$ with outcome $\displaystyle{(-1)^{b}}$, and we project onto the eigenstate $\displaystyle{\ket{+_{b}}=\frac{\ket{0}+(-1)^{b}\ket{1}}{\sqrt{2}}}$. the state becomes
+
+1. measure $\displaystyle{X_{1}}$ with outcome $\displaystyle{(-1)^{b}}$, and we project onto the eigenstate $\displaystyle{\ket{+_{b}}=\frac{\ket{0}+(-1)^{b}\ket{1}}{\sqrt{2}}}$. the state becomes
 
 $$\begin{align}
 \ket{\Psi_{2}}  & =\braket{ +_{b}|\Psi_{1} } \\
@@ -199,7 +200,7 @@ $$\begin{align}
  & \propto\sum _{i}c_{i}(\delta _{i,0}+(-1)^{b}\delta _{i,1}) (\ket{0} _{a}+(-1)^{a+i}\ket{1} _{a})
 \end{align}$$
 
-3. corrections by applying $\displaystyle{X^{b}Z^{a}}$, the state becomes
+1. corrections by applying $\displaystyle{X^{b}Z^{a}}$, the state becomes
 
 $$\begin{align}
 \ket{\text{out}}  & =X^{b}Z^{a}\ket{\Psi_{2}}  \\
@@ -211,15 +212,15 @@ if $\displaystyle{b=0}$, then the output state is $\displaystyle{\ket{\text{out}
 
 the consider the second circuit. the first step is the same, so we can directly consider the second step.
 
-2. measure $\displaystyle{Y_{a}}$ with outcome $\displaystyle{(-1)^{b}}$, and we project onto the eigenstate $\displaystyle{\ket{+_{b}}_{a}=\frac{\ket{0}_{a}+i(-1)^{b}\ket{1}_{a}}{\sqrt{2}}}$. the state becomes
+1. measure $\displaystyle{Y_{a}}$ with outcome $\displaystyle{(-1)^{b}}$, and we project onto the eigenstate $\displaystyle{\ket{+_{b}}_{a}=\frac{\ket{0}_{a}+i(-1)^{b}\ket{1}_{a}}{\sqrt{2}}}$. the state becomes
 
 $$\begin{align}
 \ket{\Psi_{2}} & =\braket{ +_{b}|\Psi_{1} } & \\
  & \propto\sum _{i}c_{i}\ket{i} (\bra{0}_{a}-i(-1)^{b}\bra{1}_{a} )(\ket{0} _{a}+(-1)^{a+i}\ket{1} _{a} ) \\
- & =\sum _{i}c_{i}\ket{i}(1-i(-1)^{a+b+i}) 
+ & =\sum _{i}c_{i}\ket{i}(1-i(-1)^{a+b+i})
 \end{align}$$
 
-3. corrections by applying $\displaystyle{Z^{a+b}}$, the state becomes
+1. corrections by applying $\displaystyle{Z^{a+b}}$, the state becomes
 
 $$\begin{align}
 \ket{\text{out}} & =Z^{a+b}_{1} \ket{\Psi_{2}}  \\
@@ -244,7 +245,7 @@ after the operation of transveral $\displaystyle{T}$ gates, $\displaystyle{\bar{
 
 $$\begin{align}
 \ket{\Psi_{1}}  & =(T^{\dagger})^{\otimes 7}T^{\otimes 7}\ket{\bar{0}}\otimes \ket{\bar{0}} +(T^{\dagger})^{\otimes 7}\bar{X}T^{\otimes 7}\ket{\bar{0}} \otimes \ket{\bar{1}}  \\
- & =\ket{\bar{0}} \otimes \ket{\bar{0}} +(T^{\dagger}XT)^{\otimes 7}\ket{\bar{0}} \otimes \ket{\bar{1}}  
+ & =\ket{\bar{0}} \otimes \ket{\bar{0}} +(T^{\dagger}XT)^{\otimes 7}\ket{\bar{0}} \otimes \ket{\bar{1}}
 \end{align}$$
 
 after measuring $\displaystyle{\bar{X}}$ on the second block with outcome $\displaystyle{(-1)^{a}}$, and projecting onto the eigenstate $\displaystyle{\ket{+_{a}}=\frac{\ket{\bar{0}}+(-1)^{a}\ket{\bar{1}}}{\sqrt{2}}}$, the state becomes
@@ -263,7 +264,7 @@ $$\begin{align}
  & =\ket{\bar{0}} +(-1)^{a}e^{i\pi /4}\bar{Z}^{a}\ket{\bar{1}} \\
  & =\ket{\bar{0}} +(-1)^{a}e^{i\pi /4}(-1)^{a}\ket{\bar{1}} \\
  & =\ket{\bar{0}} +e^{i\pi /4}\ket{\bar{1}} \\
- & =TH\ket{\bar{0}} 
+ & =TH\ket{\bar{0}}
 \end{align}$$
 
 which is the magic state $\displaystyle{\ket{A}}$.
@@ -274,9 +275,9 @@ a generic $\displaystyle{C_{3}}$ operator can be implemented with the quantum te
 
 ![image](http://100.94.165.49:8080/i/d2a69d49-e908-414b-b270-4073142c36b2.png)
 
-here the choice of $\displaystyle{\sigma _{a}}$ depends on the Bell basis measurement result. $\displaystyle{V\sigma _{a}V^{-1}}$ is a Clifford operator, thus can be implemented fault-tolorently. 
+here the choice of $\displaystyle{\sigma _{a}}$ depends on the Bell basis measurement result. $\displaystyle{V\sigma _{a}V^{-1}}$ is a Clifford operator, thus can be implemented fault-tolorently.
 
-*sol*. 
+*sol*.
 
 let the initial state be $\displaystyle{\ket{\psi}=\alpha \ket{\bar{0}}+\beta \ket{\bar{1}}}$. the magic Bell state is $\displaystyle{(I\otimes V)\ket{\beta _{00}}=\frac{1}{\sqrt{ 2 }}(\ket{\bar{0}}\otimes V\ket{\bar{0}}+\ket{\bar{1}}\otimes V\ket{\bar{1}})}$. the total state is
 
@@ -317,9 +318,9 @@ design a circuit to fault-tolerantly prepare the magic Bell state $\displaystyle
 *sol*.
 
 1. prepare a standard Bell state $\displaystyle{\ket{\beta_{00}}_{12} = \frac{\ket{\bar{0}\bar{0}} + \ket{\bar{1}\bar{1}}}{\sqrt{2}}}$ fault-tolerantly.
-2. prepare an ancilla qubit in the magic state $\displaystyle{\ket{A}_3 = V\ket{\bar{+}}}$ fault-tolerantly as (similar to problem 7)
+1. prepare an ancilla qubit in the magic state $\displaystyle{\ket{A}_3 = V\ket{\bar{+}}}$ fault-tolerantly as (similar to problem 7)
 ![image](http://100.94.165.49:8080/i/3e63c462-941d-4b52-bad0-0199cf24a5b1.png)
-3. use the ancilla to teleport the $V$ gate onto qubit 2:
+1. use the ancilla to teleport the $V$ gate onto qubit 2:
    - apply a CNOT gate with qubit 3 as control and qubit 2 as target (or perform a Bell measurement on 2 and 3).
    - measure qubit 2 in the $Z$ basis (outcome $m$).
    - if $m=1$, apply the correction $V X V^\dagger$ to qubit 3.

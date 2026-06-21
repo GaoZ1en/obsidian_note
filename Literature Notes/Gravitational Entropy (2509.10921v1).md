@@ -9,6 +9,7 @@ pdf: "[[Attachments/Assets/Gravitational Entropy (2509.10921v1).pdf]]"
 url: https://arxiv.org/abs/2509.10921v1
 tags: []
 ---
+
 # covariant phase space
 
 $$\begin{align}
@@ -127,9 +128,11 @@ R^{\mu \nu}-\frac{1}{2}Rg^{\mu \nu}+\Lambda g^{\mu \nu}=0  \\
 
 and the linearized eom for $\displaystyle{\delta g_{\mu \nu}}$
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 \square \delta g_{\mu \nu}+g^{\rho \sigma}\nabla _{\mu}\nabla _{\nu}\delta g_{\rho \sigma}-\nabla _{\mu}\nabla _{\rho}\delta g^{\rho}_{~\nu}-\nabla _{\nu}\nabla _{\rho}\delta g^{\rho}_{~\mu}+2R_{\mu \rho \nu \sigma}\delta g^{\rho \sigma} & =0
-\end{align}$$
+\end{align}
+$$
 
 the Noether current is given by
 
@@ -166,7 +169,8 @@ $$\begin{align}
 
 then
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 \nabla _{a}\xi_{b} & =\partial _{a}\xi_{b}-\Gamma ^{c}_{~ab}\xi_{c} \\
  & =-\delta _{a}^{r}\delta ^{t}_{b}f'(r)+\frac{1}{2}(\delta ^{r}_{a}\delta ^{t}_{b}+\delta ^{t}_{a}\delta ^{r}_{b})f'(r) \\
  & =\frac{1}{2}\left(\delta ^{t}_{a}\delta ^{r}_{b}-\delta ^{r}_{a}\delta ^{t}_{b}\right)f'(r) \\
@@ -174,7 +178,8 @@ $$\tag{.}\begin{align}
  & =\frac{1}{4}[f'(r)]^{2}|_{r_{H}} \\
  & =\frac{1}{16M^{2}} \\
 \implies \kappa & =\frac{1}{4M}
-\end{align}$$
+\end{align}
+$$
 
 ---
 
@@ -329,6 +334,7 @@ H_{\xi,\mathrm{EM}} & =\int _{\Sigma}J_{\xi,\mathrm{EM}}=-\frac{1}{2}\int _{\Sig
  & =\frac{Q^{2}}{4r_{+}} \\
 H_{\xi} & =\frac{M}{2}
 \end{align}$$
+
 ...
 
 # De Sitter space
@@ -405,4 +411,4 @@ actually this is the Schwarzschild-de Sitter metric.
 
 gravitational entropy can be defined as a Noether charge of the horizon Killing vector. this definition does not rely on the notion of temperature and is applicable to horizons that are not necessarily associated with black holes.
 
-here some of the computations need to be checked again. 
+here some of the computations need to be checked again.

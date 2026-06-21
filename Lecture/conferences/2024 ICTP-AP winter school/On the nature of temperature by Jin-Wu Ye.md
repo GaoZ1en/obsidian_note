@@ -15,6 +15,3 @@ micro canonical/canonical/grand canonical ensembles
 actually doppler effects play a crucial role in relativistic temperature. the temperature is determined both by the motion of observer and reservior.
 
 in finite temperature, space and time are not unified however. we can not tell the physical meaning of complexified space.
-
-
-

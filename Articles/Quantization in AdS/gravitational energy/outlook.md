@@ -10,20 +10,20 @@ The perturbative setup in `Articles/Quantization in AdS3/gravitational energy/pe
 
 The basic point is not that pure three-dimensional Einstein gravity has local propagating gravitons. It does not. Rather, the first-order Brown-Henneaux boundary gravitons can be represented by bulk metric perturbations $h^{(1)}_{\mu\nu}$, and their quadratic backreaction is encoded in the second-order equation
 
-$$
+$$\begin{align}
 \mathcal{E}^{(1)}_{\mu\nu}[h^{(2)}]
 =
 T_{\mu\nu}
 -\mathcal{E}^{(2)}_{\mu\nu}[h^{(1)},h^{(1)}].
-$$
+\end{align}$$
 
 This motivates the local representative
 
-$$
+$$\begin{align}
 T^{\mathrm{grav}}_{\mu\nu}[h^{(1)}]
 :=
 -\mathcal{E}^{(2)}_{\mu\nu}[h^{(1)},h^{(1)}].
-$$
+\end{align}$$
 
 This object should not be treated as a gauge-invariant local stress tensor. It is a convenient representative of the quadratic gravitational energy density in a chosen perturbative description. The physical quantities are the integrated charges and canonical energies obtained from it.
 
@@ -31,30 +31,30 @@ This object should not be treated as a gauge-invariant local stress tensor. It i
 
 For a global AdS$_3$ Killing field or an allowed Brown-Henneaux asymptotic Killing field $\xi^\mu$, define the quadratic gravitational charge by
 
-$$
+$$\begin{align}
 H^{\mathrm{grav}}_\xi[h^{(1)}]
 =
 \int_\Sigma \mathrm{d}^2x\sqrt{\sigma^{(0)}}\,
 \tau^{(0)\mu}\xi^\nu
 T^{\mathrm{grav}}_{\mu\nu}[h^{(1)}].
-$$
+\end{align}$$
 
 Equivalently,
 
-$$
+$$\begin{align}
 H^{\mathrm{grav}}_\xi[h^{(1)}]
 =
 -\int_\Sigma \mathrm{d}^2x\sqrt{\sigma^{(0)}}\,
 \tau^{(0)\mu}\xi^\nu
 \mathcal{E}^{(2)}_{\mu\nu}[h^{(1)},h^{(1)}].
-$$
+\end{align}$$
 
 The source for $h^{(2)}_{\mu\nu}$ is then
 
-$$
+$$\begin{align}
 \mathcal{T}^{(2)}_{\mu\nu}
 =T_{\mu\nu}+T^{\mathrm{grav}}_{\mu\nu}[h^{(1)}],
-$$
+\end{align}$$
 
 so the second-order boundary charge of $h^{(2)}_{\mu\nu}$ can be interpreted as the sum of matter energy and quadratic gravitational energy.
 
@@ -62,7 +62,7 @@ so the second-order boundary charge of $h^{(2)}_{\mu\nu}$ can be interpreted as 
 
 The first-order perturbation can be expanded in the same basis of linearized AdS$_3$ gravity modes used in the existing `linearized gravity` notes:
 
-$$
+$$\begin{align}
 h^{(1)}_{\mu\nu}
 =
 \sum_n
@@ -72,16 +72,16 @@ a_{L,n}h_{L,n,\mu\nu}
 +a^\dagger_{L,n}h^*_{L,n,\mu\nu}
 +a^\dagger_{R,n}h^*_{R,n,\mu\nu}
 \right).
-$$
+\end{align}$$
 
 After quantization, $H^{\mathrm{grav}}_\xi$ becomes a quadratic operator in the oscillator modes,
 
-$$
+$$\begin{align}
 H^{\mathrm{grav}}_\xi
 \sim
 \sum_{m,n}
 a^\dagger_m\mathcal{K}^{(\xi)}_{mn}a_n,
-$$
+\end{align}$$
 
 with the kernel determined by the Killing field or asymptotic symmetry generator $\xi^\mu$. For $\xi=\partial_t$ and $\xi=\partial_\phi$, this should reproduce the energy and angular momentum operators of the boundary graviton sector. For asymptotic conformal generators, the same construction should connect to the Virasoro charges.
 
@@ -91,15 +91,15 @@ This gives a practical meaning to the local representative $T^{\mathrm{grav}}_{\
 
 For a boundary interval $A$, the vacuum modular flow is generated in the bulk by an AdS-Rindler Killing field $\xi_A^\mu$ preserving the corresponding entanglement wedge. The gravitational contribution to the modular Hamiltonian should then be represented semiclassically by
 
-$$
+$$\begin{align}
 K^{\mathrm{grav}}_A
 \sim
 H^{\mathrm{grav}}_{\xi_A}[h^{(1)}].
-$$
+\end{align}$$
 
 In covariant phase-space language, the more invariant object is the canonical energy
 
-$$
+$$\begin{align}
 \mathcal{W}_{\Sigma_A}[h^{(1)};\xi_A]
 =
 \int_{\Sigma_A}
@@ -107,27 +107,27 @@ $$
 g^{(0)};
 h^{(1)},\mathcal{L}_{\xi_A}h^{(1)}
 \right).
-$$
+\end{align}$$
 
 Thus the local expression
 
-$$
+$$\begin{align}
 \int_{\Sigma_A}
 \sqrt{\sigma^{(0)}}\,\tau^{(0)\mu}\xi_A^\nu
 T^{\mathrm{grav}}_{\mu\nu}[h^{(1)}]
-$$
+\end{align}$$
 
 should be viewed as a representative of the same quadratic canonical energy, modulo boundary terms and gauge choices.
 
 This is the point at which the construction should connect to a JLMS-type formula,
 
-$$
+$$\begin{align}
 K^{\mathrm{CFT}}_A
 =
 \frac{\hat A_{\gamma_A}}{4G_N}
 +K^{\mathrm{bulk}}_a
 +\cdots .
-$$
+\end{align}$$
 
 For pure AdS$_3$ gravity, the bulk modular Hamiltonian contains no local propagating graviton sector in the usual higher-dimensional sense. Instead, the gravitational contribution is carried by boundary gravitons and edge-mode data. The quadratic charge $H^{\mathrm{grav}}_{\xi_A}$ is the natural candidate for the semiclassical gravitational part of this modular Hamiltonian.
 
@@ -143,12 +143,12 @@ The proposed interpretation is:
 
 The useful slogan is:
 
-$$
+$$\begin{align}
 \text{local representative}
 \quad\longrightarrow\quad
 \text{canonical energy}
 \quad\longrightarrow\quad
 \text{modular Hamiltonian}.
-$$
+\end{align}$$
 
 This keeps the local description as a calculational device while preserving the gauge-invariant meaning of the final charges.

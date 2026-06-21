@@ -155,6 +155,7 @@ R(X,Y,Z,W) & =II(X,W)II(Y,Z)-II(X,Z)II(Y,W)
 where $\displaystyle{R}$ is the Riemann curvature tensor of the surface $\displaystyle{M}$, and $\displaystyle{X,Y,Z,W\in TM}$ are tangent vectors.
 
 the Codazzi-Mainardi equations are
+
 $$\begin{align}
 (\nabla_{X}II)(Y,Z) & =(\nabla_{Y}II)(X,Z)
 \end{align}$$

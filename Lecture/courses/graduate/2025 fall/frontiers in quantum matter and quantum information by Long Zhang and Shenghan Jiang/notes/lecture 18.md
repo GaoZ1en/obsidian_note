@@ -71,7 +71,7 @@ to construct a logical qubit, we need 4 Majorana fermions. we first bind them to
 
 $$\begin{align}
 \ket{\tilde{0}}  & =\ket{01}  \\
-\ket{\tilde{1}} & =\ket{10}  
+\ket{\tilde{1}} & =\ket{10}
 \end{align}$$
 
 here Majorana modes $\displaystyle{12}$ binds to fermion 1, and so on. then the logical Pauli operators can be represented as
@@ -87,10 +87,10 @@ H & = \frac{1}{2}(X+Z)=e^{-i\pi/4}\sigma _{12}\sigma _{23}\sigma _{12}
 as for CNOT gate, we need Majorana 1-4 as control qubit, Majorana 5-8 as auxiliary in $\displaystyle{\ket{\tilde{0}}+\ket{\tilde{1}}}$ and Majorana 9-12 as target,  and we need projective measurement of $\displaystyle{i\gamma _{i}\gamma _{j}}$ and $\displaystyle{-\gamma _{i}\gamma _{j}\gamma _{k}\gamma _{l}=(i\gamma _{i}\gamma_{j})(i\gamma _{k}\gamma _{l})}$.
 
 1. measurement of $\displaystyle{P_{1}=-\gamma _{3}\gamma_{4}\gamma_{5}\gamma_{6}}$
-2. action of $\displaystyle{H}$ on auxiliary and target
-3. measurement of $\displaystyle{P_{2}=-\gamma_{7}\gamma_{8}\gamma_{9}\gamma_{10}}$
-4. action of $\displaystyle{H}$ on auxiliary and target
-5. measurement of $\displaystyle{P_{3}=-\gamma_{5}\gamma_{6}\gamma_{7}\gamma_{8}}$
+1. action of $\displaystyle{H}$ on auxiliary and target
+1. measurement of $\displaystyle{P_{2}=-\gamma_{7}\gamma_{8}\gamma_{9}\gamma_{10}}$
+1. action of $\displaystyle{H}$ on auxiliary and target
+1. measurement of $\displaystyle{P_{3}=-\gamma_{5}\gamma_{6}\gamma_{7}\gamma_{8}}$
 
 the whole circuit is equivalent to the action of
 
@@ -100,9 +100,9 @@ $$\begin{align}
 
 then if
 1. $\displaystyle{P_{2}=+1,P_{1}P_{3}=+1}$, CNOT
-2. $\displaystyle{P_{2}=+1,P_{1}P_{3}=-1}$, apply $\displaystyle{X_{\text{target}}}$
-3. $\displaystyle{P_{2}=-1,P_{1}P_{3}=+1}$, apply $\displaystyle{Z_{\text{control}}}$
-4. $\displaystyle{P_{2}=-1,P_{1}P_{3}=-1}$, apply $\displaystyle{X_{\text{target}}Z_{\text{control}}}$
+1. $\displaystyle{P_{2}=+1,P_{1}P_{3}=-1}$, apply $\displaystyle{X_{\text{target}}}$
+1. $\displaystyle{P_{2}=-1,P_{1}P_{3}=+1}$, apply $\displaystyle{Z_{\text{control}}}$
+1. $\displaystyle{P_{2}=-1,P_{1}P_{3}=-1}$, apply $\displaystyle{X_{\text{target}}Z_{\text{control}}}$
 
 actually we cannot realize beyond Clifford gates since braiding are in the Clifford group. we cannot realize universal quantum computing...
 
@@ -173,7 +173,7 @@ $$\begin{align}
 
 however if there is a zero mode, there are two possibilities
 1. there are two mode that transform into each other under particle-hole transformation
-2. remains invariant under particle-hole transformation under $\displaystyle{u=v^{*}}$. we get a Majorana zero mode.
+1. remains invariant under particle-hole transformation under $\displaystyle{u=v^{*}}$. we get a Majorana zero mode.
 
 add magnetic flux. and apply a gauge transformation to remove the vector potential $\displaystyle{A}$. as a consequence we have to impose twisted periodic condition
 
@@ -213,9 +213,9 @@ $$\begin{align}
 \implies f(r) & =C\exp\left(-\int _{0}^{r} \frac{\mu}{\Delta(r)}\mathrm{d}r\right)
 \end{align}$$
 
-which gives a specific bound state, which is a Majorana fermion. under perturbation that preserve particle-hole-transformation, this bound state is stable, unless the energy gap encloses. 
+which gives a specific bound state, which is a Majorana fermion. under perturbation that preserve particle-hole-transformation, this bound state is stable, unless the energy gap encloses.
 
-Atiyah-Singer index theorem ensures our statement is effective. 
+Atiyah-Singer index theorem ensures our statement is effective.
 
 ---
 

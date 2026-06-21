@@ -43,6 +43,7 @@ the eom becomes
 $$\begin{align}
 u''+\left( E^{2}-m^{2}-\frac{2EZ\alpha}{r}-\frac{\ell(\ell+1)-Z^{2}\alpha ^{2}}{r^{2}} \right)u(r) & =0
 \end{align}$$
+
 when $\displaystyle{r\to \infty}$, we require the field $\displaystyle{\phi}$ converge, $\displaystyle{u\sim e^{-\beta r}}$, where $\displaystyle{\beta=\sqrt{ \mu^{2}-E^{2} }}$. when $\displaystyle{r\to 0}$, we require the field $\displaystyle{\phi}$ canonical, $\displaystyle{u\sim r^{\lambda+1}}$, where the effective angular quantum number $\displaystyle{\lambda=-\frac{1}{2}+\sqrt{ \left( \ell+\frac{1}{2} \right)^{2}-Z^{2}\alpha ^{2} }}$. let
 
 $$\begin{align}
@@ -213,4 +214,4 @@ $$\begin{align}
  & =\frac{(eE)^{2}}{4\pi^{3}}\,\mathrm{Li}_{2}\!\left( \exp\left(-\frac{\pi m^{2}}{eE}\right) \right)
 \end{align}$$
 
-which is the well-known Schwinger effect. #TODO calculation check needed. 
+which is the well-known Schwinger effect. #TODO calculation check needed.

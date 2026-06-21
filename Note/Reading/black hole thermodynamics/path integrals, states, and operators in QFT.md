@@ -2,7 +2,8 @@
 
 a Euclidean path integral defines a transition amplitude under evolution by $\displaystyle{e^{-\beta H}}$
 
-$$\tag{3.1}
+$$
+\tag{3.1}
 \begin{align}
 \braket{ \phi _{2}|e^{-\beta H}|\phi _{1} }  & =\int ^{\phi(\tau=\beta)=\phi _{2}}_{\phi(\tau=0)=\phi_{1}}\mathcal{D}\phi e^{-S_{E}[\phi]}
 \end{align}
@@ -14,9 +15,10 @@ and it can be visualized as ..
 
 the transition amplitude defines the wave function. for example
 
-$$\tag{3.2}
+$$
+\tag{3.2}
 \begin{align}
-\ket{\Psi} & =\ket{\phi _{1}(\tau)}=e^{-\tau H}\ket{\phi _{1}} 
+\ket{\Psi} & =\ket{\phi _{1}(\tau)}=e^{-\tau H}\ket{\phi _{1}}
 \end{align}
 $$
 
@@ -24,7 +26,8 @@ $$
 
 a "cut" is a Cauchy surface of the Euclidean manifold. to define the transition amplitude, we specified data on two cuts, at $\displaystyle{\tau=0}$ and $\displaystyle{\tau=\beta}$. we can formally write a state as
 
-$$\tag{3.3}
+$$
+\tag{3.3}
 \begin{align}
 \ket{\Psi} =\int ^{\phi(\tau=\beta)=??}_{\phi(\tau=0)=\phi_{1}}\mathcal{D}\phi e^{-S_{E}[\phi]}
 \end{align}
@@ -38,15 +41,17 @@ we can also insert some operators in the path integral. then the path integral i
 
 expand some state $\displaystyle{\ket{Y}}$ in energy eigenstates
 
-$$\tag{3.4}
+$$
+\tag{3.4}
 \begin{align}
-\ket{Y}  & =\sum _{n}y_{n}\ket{n}, & H\ket{n} =E_{n}\ket{n} 
+\ket{Y}  & =\sum _{n}y_{n}\ket{n}, & H\ket{n} =E_{n}\ket{n}
 \end{align}
 $$
 
 then evolve over a long Euclidean time, only the lowest energy state remains
 
-$$\tag{3.5}
+$$
+\tag{3.5}
 \begin{align}
 e^{-\tau H}\ket{Y} \approx e^{-\tau E_{0}}y_{0}\ket{n} , \tau\to \infty
 \end{align}
@@ -54,7 +59,8 @@ $$
 
 it follows that we can define ground state by doing a path integral that extends all the way to infinite in one direction.
 
-$$\tag{3.6}
+$$
+\tag{3.6}
 \begin{align}
 \ket{0}  & =\int _{-\infty}\mathcal{D}\phi e^{-S_{E}[\phi]}
 \end{align}
@@ -64,7 +70,8 @@ $$
 
 following the above discussion, we can define the vacuum-to-vacuum amplitude as
 
-$$\tag{3.7}
+$$
+\tag{3.7}
 \begin{align}
 \braket{ 0|0 }  & =\int \mathcal{D}\phi e^{-S_{E}[\phi]}
 \end{align}
@@ -72,7 +79,8 @@ $$
 
 expectation values of local operator are computed by similar path integrals, but with extra operator insertions
 
-$$\tag{3.8}
+$$
+\tag{3.8}
 \begin{align}
 \braket{ O_{1}(x_{1})O_{2}(x_{2}) }  & = \braket{ 0|O_{1}(x_{1})O_{2}(x_{2})|0 }  \\
  & =\int \mathcal{D}\phi O_{1}(x_{1})O_{2}(x_{2})e^{-S_{E}[\phi]}
@@ -83,7 +91,8 @@ $$
 
 as definition, we have
 
-$$\tag{3.9}
+$$
+\tag{3.9}
 \begin{align}
 \rho & \equiv e^{-\beta H}=\int _{\phi(\tau=0)=??}^{\phi(\tau=\beta)=??}\mathcal{D}\phi e^{-S_{E}[\phi]}
 \end{align}
@@ -93,7 +102,8 @@ $$
 
 as definition, the partition function is the trace of the density matrix
 
-$$\tag{3.10}
+$$
+\tag{3.10}
 \begin{align}
 Z(\beta) & =\mathrm{Tr}e^{-\beta H}=\sum _{\phi}\braket{ \phi|e^{-\beta H}|\phi }  \\
  & =\sum _{\phi}\int _{\phi(\tau=0)=\phi}^{\phi(\tau=\beta)=\phi}\mathcal{D}\phi e^{-\beta H}
@@ -106,11 +116,11 @@ this seems like to perform a path integral on a torus, since we make a trace.
 
 equal-time correlator at finite temperature are defined by
 
-$$\tag{3.11}
+$$
+\tag{3.11}
 \begin{align}
 \braket{ O_{1}(t=0,\vec{x}_{1})O_{2}(t=0,\vec{x}_{2})\dots }_{\beta} & =\mathrm{Tr}e^{-\beta H}O_{1}(0,\vec{x}_{1})O_{2}(0,\vec{x}_{2})\dots
 \end{align}
 $$
 
 #### exercise: finite-temperature correlators in 2d CFT
-

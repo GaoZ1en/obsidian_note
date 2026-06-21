@@ -171,4 +171,3 @@ $$\begin{align}
 X^{1} & =a^{1}\tau ^{1}, \\
 X^{i} & =0, \quad(i\neq 1)
 \end{align}$$
-

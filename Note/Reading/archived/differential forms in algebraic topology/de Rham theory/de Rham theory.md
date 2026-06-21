@@ -4,7 +4,8 @@ the Mayer-Vietoris sequence is a long exact sequence in algebraic topology that 
 
 a **covariant** functor $\displaystyle{F}$ from a category $\displaystyle{\mathscr{H}}$ to a category $\displaystyle{\mathscr{L}}$ associated to every object $\displaystyle{A}$ in $\displaystyle{\mathscr{H}}$ and an object $\displaystyle{F(A)}$ in $\displaystyle{\mathscr{L}}$, and every morphism $\displaystyle{f:A\to B}$ in $\displaystyle{\mathscr{H}}$ and a morphism $\displaystyle{F(f):F(A)\to F(B)}$ in $\displaystyle{\mathscr{L}}$ such that $\displaystyle{F}$ preserves composition and identity.
 
-$$\tag{1.1}
+$$
+\tag{1.1}
 \begin{align}
 F(g\circ f) & F(g)\circ F(f) \\
 F(1_{A}) & =1_{F(A)}
@@ -68,4 +69,3 @@ a manifold $\displaystyle{M}$ of dimension $\displaystyle{n}$ is orientable iff 
 >[!Lemma Poincare lemma]
 > $$\begin{align}H^{p}(\mathbb{R}^{n})=\begin{cases}\mathbb{R}, & p=0 \\0, & p>0\end{cases},\quad
 H^{p}_{c}(\mathbb{R}^{n})=\begin{cases}\mathbb{R}, & p=n \\0, & p<n\end{cases}\end{align}$$
-

@@ -34,7 +34,7 @@ where $\displaystyle{\mathcal{L}_{0}=\frac{1}{2}\partial _{\mu}\phi \partial ^{\
 
 # problem 2
 
-prove the Furry theorem. 
+prove the Furry theorem.
 
 ## solution
 
@@ -106,7 +106,7 @@ where $\displaystyle{\Gamma}$ is some Clifford algebra, and $\displaystyle{U(\ve
 
 $$\begin{align}
 C(\vec{R},t) & =\int \mathrm{d}^{3}\vec{x}\braket{ \Omega|T\Phi(\vec{x},t;\vec{R})\Phi ^{\dagger}(\vec{x},0;\vec{R})|\Omega }  \\
- & \propto e^{-2iMt}\braket{ U_{C}(\vec{R},t) } 
+ & \propto e^{-2iMt}\braket{ U_{C}(\vec{R},t) }
 \end{align}$$
 
 where $\displaystyle{\braket{ U_{C}(R,t) }}$ is the expectation of the Wilson loop that long the 4-dimensional space time rectangle with length $\displaystyle{t}$ along the time direction while $\displaystyle{R}$ along the spatial direction.
@@ -126,7 +126,7 @@ then
 $$\begin{align}
 C(\vec{R},t) & =\int \mathrm{d}^{3}\vec{x} \int \mathcal{D}\psi \mathcal{D}\bar{\psi}\Phi(\vec{x},t;R)\Phi ^{\dagger}(\vec{x},0;R)e^{iS_{e}} \\
  & =\int \mathrm{d}^{3}\vec{x} \braket{ \mathrm{Tr}(S_{F}(\vec{x}+\vec{R},0;\vec{x}+\vec{R},t;A)U(\vec{x}+\vec{R},t;\vec{x},t)\Gamma S_{F}(\vec{x},t;\vec{x},0)U^{\dagger}(\vec{x}+\vec{R},0;\vec{x},0)\Gamma')} \\
- & \qquad- \braket{ \mathrm{Tr}(S_{F}(\vec{x},t;\vec{x}+\vec{R},t;A)U(\vec{x}+\vec{R},t;\vec{x},t)\Gamma)\mathrm{Tr}(S_{F}(\vec{x}+\vec{R},0);\vec{x},0)U^{\dagger}(\vec{x}+R,0,\vec{x},0;A)\Gamma') } 
+ & \qquad- \braket{ \mathrm{Tr}(S_{F}(\vec{x},t;\vec{x}+\vec{R},t;A)U(\vec{x}+\vec{R},t;\vec{x},t)\Gamma)\mathrm{Tr}(S_{F}(\vec{x}+\vec{R},0);\vec{x},0)U^{\dagger}(\vec{x}+R,0,\vec{x},0;A)\Gamma') }
 \end{align}$$
 
 in the second step we have integrated out the $\displaystyle{\psi,\bar{\psi}}$. and $\displaystyle{S_{F}}$ is defined as the fermion propagator in the presence of background gauge field $\displaystyle{A_{\mu}}$:
@@ -159,7 +159,7 @@ $$\begin{align}
 then we have
 
 $$\begin{align}
-\text{the leading piece for }t>0\text{ is}\qquad 
+\text{the leading piece for }t>0\text{ is}\qquad
 S_{F}((\vec{x},t),(\vec{y},0);A) & \simeq e^{-iMt}\delta ^{3}(\vec{x}-\vec{y})P_{+}\mathcal{P}\exp\left(-ie\int _{0}^{t}\mathrm{d}\tau A_{0}(\vec{x},\tau)\right), \\
 S_{F}((\vec{y},0),(\vec{x},t);A) & \simeq e^{-iMt}\delta ^{3}(\vec{x}-\vec{y})P_{-}\mathcal{P}\exp\left(+ie\int _{0}^{t}\mathrm{d}\tau A_{0}(\vec{x},\tau)\right),
 \end{align}$$
@@ -292,7 +292,7 @@ $$\begin{align}
 \braket{ W(C) }  & \approx \exp\left(-iV(R)T\right)
 \end{align}$$
 
-here $\displaystyle{V(R)=-C_{2}(F) \frac{g^{2}}{4\pi R}}$, where $\displaystyle{C_{2}(F)}$ is the eigenvalue of the Casimir operator of the gauge group in the fundamental representation. 
+here $\displaystyle{V(R)=-C_{2}(F) \frac{g^{2}}{4\pi R}}$, where $\displaystyle{C_{2}(F)}$ is the eigenvalue of the Casimir operator of the gauge group in the fundamental representation.
 
 ## solution
 
@@ -308,4 +308,3 @@ $$\begin{align}
 \braket{ W(C) }  & \approx \exp\left(-iV(R)T\right) \\
 V(R) & =C_{2}(F) \frac{g^{2}}{4\pi R}
 \end{align}$$
-

@@ -24,7 +24,10 @@ summary: "开卷期末总复习笔记，按背景宇宙学、热历史、微扰�
 ### 核心定义与物理量
 
 宇宙学的背景假设是大尺度上的均匀各向同性，因此时空取 FRW 度规：
-$$\mathrm{d}s^{2}=-\mathrm{d}t^{2}+a^{2}(t)\left[\frac{\mathrm{d}r^{2}}{1-k r^{2}}+r^{2}\left(\mathrm{d}\theta^{2}+\sin^{2}\theta\,\mathrm{d}\phi^{2}\right)\right].$$
+
+$$\begin{align}
+\mathrm{d}s^{2}=-\mathrm{d}t^{2}+a^{2}(t)\left[\frac{\mathrm{d}r^{2}}{1-k r^{2}}+r^{2}\left(\mathrm{d}\theta^{2}+\sin^{2}\theta\,\mathrm{d}\phi^{2}\right)\right].
+\end{align}$$
 
 其中：
 
@@ -34,31 +37,58 @@ $$\mathrm{d}s^{2}=-\mathrm{d}t^{2}+a^{2}(t)\left[\frac{\mathrm{d}r^{2}}{1-k r^{2
 - $1+z=a_0/a=1/a$ 是红移与尺度因子的关系。
 
 若取平直宇宙 $k=0$，则
-$$\mathrm{d}s^{2}=-\mathrm{d}t^{2}+a^{2}(t)\mathrm{d}\mathbf{x}^{2}.$$
+
+$$\begin{align}
+\mathrm{d}s^{2}=-\mathrm{d}t^{2}+a^{2}(t)\mathrm{d}\mathbf{x}^{2}.
+\end{align}$$
 
 共形时间 $\eta$ 由 $\mathrm{d}t=a\,\mathrm{d}\eta$ 定义，此时
-$$\mathrm{d}s^{2}=a^{2}(\eta)\left(-\mathrm{d}\eta^{2}+\mathrm{d}\mathbf{x}^{2}\right),\qquad \mathcal{H}\equiv \frac{a'}{a}=aH.$$
+
+$$\begin{align}
+\mathrm{d}s^{2}=a^{2}(\eta)\left(-\mathrm{d}\eta^{2}+\mathrm{d}\mathbf{x}^{2}\right),\qquad \mathcal{H}\equiv \frac{a'}{a}=aH.
+\end{align}$$
 
 ### 必背公式
 
 Christoffel 符号中最常考的是
-$$\Gamma^1_{01}=\Gamma^1_{10}=\frac{\dot a}{a}=H,\qquad \Gamma^0_{11}=\frac{a\dot a}{1-k r^{2}}.$$
+
+$$\begin{align}
+\Gamma^1_{01}=\Gamma^1_{10}=\frac{\dot a}{a}=H,\qquad \Gamma^0_{11}=\frac{a\dot a}{1-k r^{2}}.
+\end{align}$$
 
 理想流体能动张量为
-$$T_{\mu\nu}=(\rho+p)u_\mu u_\nu+p g_{\mu\nu}.$$
+
+$$\begin{align}
+T_{\mu\nu}=(\rho+p)u_\mu u_\nu+p g_{\mu\nu}.
+\end{align}$$
 
 在共动系中
-$$u^\mu=(1,0,0,0),\qquad T^\mu_{\ \nu}=\mathrm{diag}(-\rho,p,p,p).$$
+
+$$\begin{align}
+u^\mu=(1,0,0,0),\qquad T^\mu_{\ \nu}=\mathrm{diag}(-\rho,p,p,p).
+\end{align}$$
 
 Friedmann 方程与加速度方程：
-$$H^{2}=\frac{8\pi G}{3}\rho-\frac{k}{a^{2}},$$
-$$\frac{\ddot a}{a}=-\frac{4\pi G}{3}(\rho+3p).$$
+
+$$\begin{align}
+H^{2}=\frac{8\pi G}{3}\rho-\frac{k}{a^{2}},
+\end{align}$$
+
+$$\begin{align}
+\frac{\ddot a}{a}=-\frac{4\pi G}{3}(\rho+3p).
+\end{align}$$
 
 能量动量守恒给出连续性方程：
-$$\dot\rho+3H(\rho+p)=0.$$
+
+$$\begin{align}
+\dot\rho+3H(\rho+p)=0.
+\end{align}$$
 
 若 $p=w\rho$，则
-$$\rho\propto a^{-3(1+w)}.$$
+
+$$\begin{align}
+\rho\propto a^{-3(1+w)}.
+\end{align}$$
 
 常见组分的标度行为：
 
@@ -72,11 +102,22 @@ $$\rho\propto a^{-3(1+w)}.$$
 ### 最短必要推导
 
 由 $\nabla_\mu T^{\mu 0}=0$ 可直接得到
-$$\dot\rho+3H(\rho+p)=0.$$
+
+$$\begin{align}
+\dot\rho+3H(\rho+p)=0.
+\end{align}$$
+
 若再代入 $p=w\rho$，则
-$$\frac{\dot\rho}{\rho}=-3(1+w)\frac{\dot a}{a},$$
+
+$$\begin{align}
+\frac{\dot\rho}{\rho}=-3(1+w)\frac{\dot a}{a},
+\end{align}$$
+
 积分得
-$$\rho\propto a^{-3(1+w)}.$$
+
+$$\begin{align}
+\rho\propto a^{-3(1+w)}.
+\end{align}$$
 
 ### 物理图像与常见解释
 
@@ -87,17 +128,30 @@ $$\rho\propto a^{-3(1+w)}.$$
 ### 标量场作为宇宙学流体
 
 最小耦合标量场作用量
-$$S=\int \mathrm{d}^{4}x\sqrt{-g}\left(\frac{R}{16\pi G}-\frac{1}{2}\nabla_\mu\phi\nabla^\mu\phi-V(\phi)\right).$$
+
+$$\begin{align}
+S=\int \mathrm{d}^{4}x\sqrt{-g}\left(\frac{R}{16\pi G}-\frac{1}{2}\nabla_\mu\phi\nabla^\mu\phi-V(\phi)\right).
+\end{align}$$
 
 其能量密度与压强为
-$$\rho_\phi=\frac{1}{2}\dot\phi^{2}+V(\phi),\qquad p_\phi=\frac{1}{2}\dot\phi^{2}-V(\phi).$$
+
+$$\begin{align}
+\rho_\phi=\frac{1}{2}\dot\phi^{2}+V(\phi),\qquad p_\phi=\frac{1}{2}\dot\phi^{2}-V(\phi).
+\end{align}$$
 
 若 $\dot\phi^2\ll V(\phi)$，则
-$$p_\phi\simeq -\rho_\phi,\qquad w_\phi\simeq -1,$$
+
+$$\begin{align}
+p_\phi\simeq -\rho_\phi,\qquad w_\phi\simeq -1,
+\end{align}$$
+
 表现得像宇宙学常数。
 
 在平直 FRW 背景下，标量场方程为
-$$\ddot\phi+3H\dot\phi+V'(\phi)=0.$$
+
+$$\begin{align}
+\ddot\phi+3H\dot\phi+V'(\phi)=0.
+\end{align}$$
 
 ### 易错点 / 常见变体
 
@@ -121,62 +175,127 @@ FRW 背景宇宙学的核心就是：几何由 $a(t)$ 描述，动力学由 Frie
 ### 核心定义与物理量
 
 早期宇宙通常处于局域热平衡，可用分布函数
-$$f(E)=\frac{1}{\exp[(E-\mu)/T]\pm 1}$$
+
+$$\begin{align}
+f(E)=\frac{1}{\exp[(E-\mu)/T]\pm 1}
+\end{align}$$
+
 描述粒子，其中 $+$ 对应费米子，$-$ 对应玻色子。高温稀薄极限下可近似为 Maxwell-Boltzmann：
-$$f(E)\simeq \exp\left[-\frac{E-\mu}{T}\right].$$
+
+$$\begin{align}
+f(E)\simeq \exp\left[-\frac{E-\mu}{T}\right].
+\end{align}$$
 
 粒子数密度、能量密度、压强的一般表达式为
-$$n=g\int\frac{\mathrm{d}^{3}p}{(2\pi)^3}f,\qquad \rho=g\int\frac{\mathrm{d}^{3}p}{(2\pi)^3}E f,\qquad p=g\int\frac{\mathrm{d}^{3}p}{(2\pi)^3}\frac{p^{2}}{3E}f.$$
+
+$$\begin{align}
+n=g\int\frac{\mathrm{d}^{3}p}{(2\pi)^3}f,\qquad \rho=g\int\frac{\mathrm{d}^{3}p}{(2\pi)^3}E f,\qquad p=g\int\frac{\mathrm{d}^{3}p}{(2\pi)^3}\frac{p^{2}}{3E}f.
+\end{align}$$
 
 ### 必背公式
 
 相对论极限 $T\gg m$：
-$$n_\gamma=\frac{2\zeta(3)}{\pi^{2}}T^{3},\qquad \rho_\gamma=\frac{\pi^{2}}{15}T^{4},$$
-$$n_\nu=\frac{3}{2}\frac{\zeta(3)}{\pi^{2}}T_\nu^{3},\qquad \rho_\nu=\frac{7}{8}\frac{\pi^{2}}{15}T_\nu^{4}.$$
+
+$$\begin{align}
+n_\gamma=\frac{2\zeta(3)}{\pi^{2}}T^{3},\qquad \rho_\gamma=\frac{\pi^{2}}{15}T^{4},
+\end{align}$$
+
+$$\begin{align}
+n_\nu=\frac{3}{2}\frac{\zeta(3)}{\pi^{2}}T_\nu^{3},\qquad \rho_\nu=\frac{7}{8}\frac{\pi^{2}}{15}T_\nu^{4}.
+\end{align}$$
 
 一般相对论组分的能量密度常写为
-$$\rho=\frac{\pi^{2}}{30}g_* T^{4},$$
+
+$$\begin{align}
+\rho=\frac{\pi^{2}}{30}g_* T^{4},
+\end{align}$$
+
 其中 $g_*$ 是能量密度的有效自由度。
 
 非相对论极限 $T\ll m$：
-$$E\simeq m+\frac{p^{2}}{2m},$$
-$$n=g\left(\frac{mT}{2\pi}\right)^{3/2}\exp\left(\frac{\mu-m}{T}\right).$$
+
+$$\begin{align}
+E\simeq m+\frac{p^{2}}{2m},
+\end{align}$$
+
+$$\begin{align}
+n=g\left(\frac{mT}{2\pi}\right)^{3/2}\exp\left(\frac{\mu-m}{T}\right).
+\end{align}$$
 
 熵密度与共动熵守恒：
-$$s=\frac{\rho+p-\mu n}{T},\qquad s=\frac{2\pi^{2}}{45}g_{*s}T^{3},\qquad s a^{3}=\text{const}.$$
+
+$$\begin{align}
+s=\frac{\rho+p-\mu n}{T},\qquad s=\frac{2\pi^{2}}{45}g_{*s}T^{3},\qquad s a^{3}=\text{const}.
+\end{align}$$
 
 辐射主导时期的 Hubble 参数：
-$$H=1.66\sqrt{g_*}\frac{T^{2}}{M_{\mathrm{Pl}}}.$$
+
+$$\begin{align}
+H=1.66\sqrt{g_*}\frac{T^{2}}{M_{\mathrm{Pl}}}.
+\end{align}$$
 
 辐射主导时期的宇宙年龄数量级：
-$$t\sim \frac{1}{2H}\propto T^{-2}.$$
+
+$$\begin{align}
+t\sim \frac{1}{2H}\propto T^{-2}.
+\end{align}$$
 
 ### 最短必要推导
 
 非相对论数密度的关键在于高斯积分：
-$$n=g e^{(\mu-m)/T}\int\frac{\mathrm{d}^{3}p}{(2\pi)^3}\exp\left(-\frac{p^2}{2mT}\right),$$
+
+$$\begin{align}
+n=g e^{(\mu-m)/T}\int\frac{\mathrm{d}^{3}p}{(2\pi)^3}\exp\left(-\frac{p^2}{2mT}\right),
+\end{align}$$
+
 因此
-$$n=g\left(\frac{mT}{2\pi}\right)^{3/2}\exp\left(\frac{\mu-m}{T}\right).$$
+
+$$\begin{align}
+n=g\left(\frac{mT}{2\pi}\right)^{3/2}\exp\left(\frac{\mu-m}{T}\right).
+\end{align}$$
 
 相对论组分的 $g_*$ 与 $g_{*s}$ 定义为
-$$\rho=\frac{\pi^2}{30}g_* T^4,\qquad s=\frac{2\pi^2}{45}g_{*s}T^3.$$
+
+$$\begin{align}
+\rho=\frac{\pi^2}{30}g_* T^4,\qquad s=\frac{2\pi^2}{45}g_{*s}T^3.
+\end{align}$$
+
 若第 $i$ 个粒子种类与光子同温，则
-$$g_*=\sum_{\text{boson}}g_i\left(\frac{T_i}{T}\right)^4+\frac{7}{8}\sum_{\text{fermion}}g_i\left(\frac{T_i}{T}\right)^4,$$
-$$g_{*s}=\sum_{\text{boson}}g_i\left(\frac{T_i}{T}\right)^3+\frac{7}{8}\sum_{\text{fermion}}g_i\left(\frac{T_i}{T}\right)^3.$$
+
+$$\begin{align}
+g_*=\sum_{\text{boson}}g_i\left(\frac{T_i}{T}\right)^4+\frac{7}{8}\sum_{\text{fermion}}g_i\left(\frac{T_i}{T}\right)^4,
+\end{align}$$
+
+$$\begin{align}
+g_{*s}=\sum_{\text{boson}}g_i\left(\frac{T_i}{T}\right)^3+\frac{7}{8}\sum_{\text{fermion}}g_i\left(\frac{T_i}{T}\right)^3.
+\end{align}$$
 
 在常见宇宙学阶段：
 
 - 光子单独贡献时：$g_*=g_{*s}=2$。
-- 中微子退耦附近，$\gamma,e^\pm,\nu,\bar\nu$ 都相对论：  
-  $$g_*=2+\frac{7}{8}(4+6)=\frac{43}{4}=10.75.$$
-- $e^\pm$ 湮灭后但在中微子仍相对论时，光子与中微子温度不同：  
-  $$g_{*,0}\simeq 2+\frac{7}{8}\times 6\left(\frac{4}{11}\right)^{4/3}\approx 3.36,$$
-  $$g_{*s,0}\simeq 2+\frac{7}{8}\times 6\left(\frac{4}{11}\right)\approx 3.91.$$
+- 中微子退耦附近，$\gamma,e^\pm,\nu,\bar\nu$ 都相对论：
+
+$$\begin{align}
+g_*=2+\frac{7}{8}(4+6)=\frac{43}{4}=10.75.
+\end{align}$$
+
+- $e^\pm$ 湮灭后但在中微子仍相对论时，光子与中微子温度不同：
+
+$$\begin{align}
+g_{*,0}\simeq 2+\frac{7}{8}\times 6\left(\frac{4}{11}\right)^{4/3}\approx 3.36,
+\end{align}$$
+
+$$\begin{align}
+g_{*s,0}\simeq 2+\frac{7}{8}\times 6\left(\frac{4}{11}\right)\approx 3.91.
+\end{align}$$
 
 ### freeze-out / decoupling 的通用判断套路
 
 热宇宙学题目里最常见的判断标准是比较
-$$\frac{\Gamma}{H}.$$
+
+$$\begin{align}
+\frac{\Gamma}{H}.
+\end{align}$$
 
 - 若 $\Gamma/H\gg 1$，相互作用足够快，体系保持平衡。
 - 若 $\Gamma/H\lesssim 1$，粒子来不及跟上膨胀，开始 freeze-out 或 decoupling。
@@ -184,26 +303,52 @@ $$\frac{\Gamma}{H}.$$
 一类非常典型的数量级题是：
 
 1. 先写出反应率
-$$\Gamma\sim n\langle \sigma v\rangle.$$
-2. 再根据极限写 $n(T)$ 与 $\sigma(T)$ 的标度。
-3. 最后令 $\Gamma\sim H$，解出退耦温度。
+
+$$\begin{align}
+\Gamma\sim n\langle \sigma v\rangle.
+\end{align}$$
+
+1. 再根据极限写 $n(T)$ 与 $\sigma(T)$ 的标度。
+1. 最后令 $\Gamma\sim H$，解出退耦温度。
 
 ### 光子数密度、熵密度、重子光子比
 
 今天的 CMB 温度为
-$$T_{\gamma,0}\simeq 2.725\,\mathrm{K}.$$
+
+$$\begin{align}
+T_{\gamma,0}\simeq 2.725\,\mathrm{K}.
+\end{align}$$
+
 因此
-$$n_{\gamma,0}=\frac{2\zeta(3)}{\pi^2}T_{\gamma,0}^3\approx 411\,\mathrm{cm}^{-3}.$$
+
+$$\begin{align}
+n_{\gamma,0}=\frac{2\zeta(3)}{\pi^2}T_{\gamma,0}^3\approx 411\,\mathrm{cm}^{-3}.
+\end{align}$$
 
 对光子，
-$$s_\gamma=\frac{\rho_\gamma+p_\gamma}{T_\gamma}=\frac{4}{3}\frac{\rho_\gamma}{T_\gamma}=\frac{4\pi^2}{45}T_\gamma^3.$$
+
+$$\begin{align}
+s_\gamma=\frac{\rho_\gamma+p_\gamma}{T_\gamma}=\frac{4}{3}\frac{\rho_\gamma}{T_\gamma}=\frac{4\pi^2}{45}T_\gamma^3.
+\end{align}$$
+
 因此
-$$\frac{s_\gamma}{n_\gamma}=\frac{4\pi^2/45}{2\zeta(3)/\pi^2}\approx 3.60.$$
+
+$$\begin{align}
+\frac{s_\gamma}{n_\gamma}=\frac{4\pi^2/45}{2\zeta(3)/\pi^2}\approx 3.60.
+\end{align}$$
 
 重子光子比定义为
-$$\eta\equiv \frac{n_B}{n_\gamma}\sim 6\times 10^{-10}.$$
+
+$$\begin{align}
+\eta\equiv \frac{n_B}{n_\gamma}\sim 6\times 10^{-10}.
+\end{align}$$
+
 因此每重子熵大约是
-$$\frac{s_\gamma}{n_B}=\frac{s_\gamma/n_\gamma}{n_B/n_\gamma}\approx \frac{3.60}{6\times 10^{-10}}\approx 6\times 10^9.$$
+
+$$\begin{align}
+\frac{s_\gamma}{n_B}=\frac{s_\gamma/n_\gamma}{n_B/n_\gamma}\approx \frac{3.60}{6\times 10^{-10}}\approx 6\times 10^9.
+\end{align}$$
+
 这就是宇宙“每个重子对应大量光子”的精确表述，也是复合与 BBN 温标之所以远低于简单束缚能尺度的重要原因。
 
 ### 物理图像与常见解释
@@ -247,140 +392,307 @@ $$\frac{s_\gamma}{n_B}=\frac{s_\gamma/n_\gamma}{n_B/n_\gamma}\approx \frac{3.60}
 ### 必背公式
 
 中微子退耦由
-$$\Gamma_\nu\sim G_F^2 T^5,\qquad H\sim 1.66\sqrt{g_*}\frac{T^2}{M_{\mathrm{Pl}}}$$
+
+$$\begin{align}
+\Gamma_\nu\sim G_F^2 T^5,\qquad H\sim 1.66\sqrt{g_*}\frac{T^2}{M_{\mathrm{Pl}}}
+\end{align}$$
+
 决定，因此
-$$T_{\nu,\mathrm{dec}}\sim \left(\frac{1.66\sqrt{g_*}}{G_F^2 M_{\mathrm{Pl}}}\right)^{1/3}\sim \mathcal{O}(1)\,\mathrm{MeV}.$$
+
+$$\begin{align}
+T_{\nu,\mathrm{dec}}\sim \left(\frac{1.66\sqrt{g_*}}{G_F^2 M_{\mathrm{Pl}}}\right)^{1/3}\sim \mathcal{O}(1)\,\mathrm{MeV}.
+\end{align}$$
 
 电子正电子湮灭后，由熵守恒得到
-$$\frac{T_{\nu,0}}{T_{\gamma,0}}=\left(\frac{4}{11}\right)^{1/3},\qquad T_{\nu,0}\simeq 1.95\,\mathrm{K}.$$
+
+$$\begin{align}
+\frac{T_{\nu,0}}{T_{\gamma,0}}=\left(\frac{4}{11}\right)^{1/3},\qquad T_{\nu,0}\simeq 1.95\,\mathrm{K}.
+\end{align}$$
 
 复合反应
-$$e^-+p\rightleftharpoons H+\gamma$$
+
+$$\begin{align}
+e^-+p\rightleftharpoons H+\gamma
+\end{align}$$
+
 在热平衡下满足 Saha 方程：
-$$\frac{n_e n_p}{n_H}\simeq \left(\frac{m_e T}{2\pi}\right)^{3/2}e^{-E_0/T},\qquad E_0=13.6\,\mathrm{eV}.$$
+
+$$\begin{align}
+\frac{n_e n_p}{n_H}\simeq \left(\frac{m_e T}{2\pi}\right)^{3/2}e^{-E_0/T},\qquad E_0=13.6\,\mathrm{eV}.
+\end{align}$$
 
 定义电离度
-$$X_e\equiv \frac{n_e}{n_B},\qquad n_B=n_p+n_H,\qquad n_e=n_p,$$
+
+$$\begin{align}
+X_e\equiv \frac{n_e}{n_B},\qquad n_B=n_p+n_H,\qquad n_e=n_p,
+\end{align}$$
+
 则可写成
-$$\frac{X_e^2}{1-X_e}=\frac{1}{n_B}\left(\frac{m_e T}{2\pi}\right)^{3/2}e^{-E_0/T}.$$
+
+$$\begin{align}
+\frac{X_e^2}{1-X_e}=\frac{1}{n_B}\left(\frac{m_e T}{2\pi}\right)^{3/2}e^{-E_0/T}.
+\end{align}$$
 
 ### 最短必要推导
 
 Saha 方程来自非相对论密度公式和化学平衡条件
-$$\mu_e+\mu_p=\mu_H,\qquad \mu_\gamma=0.$$
+
+$$\begin{align}
+\mu_e+\mu_p=\mu_H,\qquad \mu_\gamma=0.
+\end{align}$$
 
 对电子、质子、氢原子分别写
-$$n_i=g_i\left(\frac{m_i T}{2\pi}\right)^{3/2}\exp\left(\frac{\mu_i-m_i}{T}\right),$$
+
+$$\begin{align}
+n_i=g_i\left(\frac{m_i T}{2\pi}\right)^{3/2}\exp\left(\frac{\mu_i-m_i}{T}\right),
+\end{align}$$
+
 再取比值即可得到上式。
 
 中微子温度关系来自电子正电子湮灭前后的共动熵守恒：
-$$g_{*s,\mathrm{before}}(aT)^3_{\mathrm{before}}=g_{*s,\mathrm{after}}(aT)^3_{\mathrm{after}},$$
+
+$$\begin{align}
+g_{*s,\mathrm{before}}(aT)^3_{\mathrm{before}}=g_{*s,\mathrm{after}}(aT)^3_{\mathrm{after}},
+\end{align}$$
+
 其中
-$$g_{*s,\mathrm{before}}=2+\frac{7}{8}\times 4=\frac{11}{2},\qquad g_{*s,\mathrm{after}}=2.$$
+
+$$\begin{align}
+g_{*s,\mathrm{before}}=2+\frac{7}{8}\times 4=\frac{11}{2},\qquad g_{*s,\mathrm{after}}=2.
+\end{align}$$
 
 ### 中微子退耦的完整数量级推导
 
 中微子在 $MeV$ 量级时仍通过弱相互作用和电子正电子热浴交换能量。此时典型反应有
-$$\nu+\bar\nu\leftrightarrow e^++e^-,\qquad \nu+e^\pm\leftrightarrow \nu+e^\pm.$$
+
+$$\begin{align}
+\nu+\bar\nu\leftrightarrow e^++e^-,\qquad \nu+e^\pm\leftrightarrow \nu+e^\pm.
+\end{align}$$
 
 相对论电子的数密度标度为
-$$n_{e^\pm}\sim T^3.$$
+
+$$\begin{align}
+n_{e^\pm}\sim T^3.
+\end{align}$$
+
 弱相互作用截面由费米常数给出，数量级为
-$$\sigma_{\mathrm{weak}}\sim G_F^2 E^2\sim G_F^2 T^2.$$
+
+$$\begin{align}
+\sigma_{\mathrm{weak}}\sim G_F^2 E^2\sim G_F^2 T^2.
+\end{align}$$
+
 因此
-$$\Gamma_\nu\sim n\langle \sigma v\rangle \sim T^3\times G_F^2 T^2=G_F^2 T^5.$$
+
+$$\begin{align}
+\Gamma_\nu\sim n\langle \sigma v\rangle \sim T^3\times G_F^2 T^2=G_F^2 T^5.
+\end{align}$$
 
 辐射主导时期
-$$H=1.66\sqrt{g_*}\frac{T^2}{M_{\mathrm{Pl}}}.$$
+
+$$\begin{align}
+H=1.66\sqrt{g_*}\frac{T^2}{M_{\mathrm{Pl}}}.
+\end{align}$$
+
 在中微子退耦附近
-$$g_*=2+\frac{7}{8}(4+6)=10.75.$$
+
+$$\begin{align}
+g_*=2+\frac{7}{8}(4+6)=10.75.
+\end{align}$$
+
 令 $\Gamma_\nu\sim H$，得到
-$$G_F^2 T_{\nu,\mathrm{dec}}^5\sim 1.66\sqrt{10.75}\frac{T_{\nu,\mathrm{dec}}^2}{M_{\mathrm{Pl}}},$$
+
+$$\begin{align}
+G_F^2 T_{\nu,\mathrm{dec}}^5\sim 1.66\sqrt{10.75}\frac{T_{\nu,\mathrm{dec}}^2}{M_{\mathrm{Pl}}},
+\end{align}$$
+
 从而
-$$T_{\nu,\mathrm{dec}}\sim \left(\frac{1.66\sqrt{10.75}}{G_F^2 M_{\mathrm{Pl}}}\right)^{1/3}\approx 1.5\,\mathrm{MeV}.$$
+
+$$\begin{align}
+T_{\nu,\mathrm{dec}}\sim \left(\frac{1.66\sqrt{10.75}}{G_F^2 M_{\mathrm{Pl}}}\right)^{1/3}\approx 1.5\,\mathrm{MeV}.
+\end{align}$$
+
 因此标准结论通常记为
-$$T_{\nu,\mathrm{dec}}\sim 1\,\mathrm{MeV}.$$
+
+$$\begin{align}
+T_{\nu,\mathrm{dec}}\sim 1\,\mathrm{MeV}.
+\end{align}$$
 
 ### $e^\pm$ 湮灭前后的熵守恒
 
 中微子退耦后，电子正电子继续和光子保持热平衡，而中微子已经只随膨胀冷却：
-$$T_\nu\propto a^{-1}.$$
+
+$$\begin{align}
+T_\nu\propto a^{-1}.
+\end{align}$$
 
 随后 $e^\pm$ 在 $T\sim m_e$ 附近湮灭，把熵注入光子热浴。对光子-电子正电子体系用共动熵守恒：
-$$g_{*s,\mathrm{before}}a^3 T_{\gamma,\mathrm{before}}^3=g_{*s,\mathrm{after}}a^3 T_{\gamma,\mathrm{after}}^3.$$
+
+$$\begin{align}
+g_{*s,\mathrm{before}}a^3 T_{\gamma,\mathrm{before}}^3=g_{*s,\mathrm{after}}a^3 T_{\gamma,\mathrm{after}}^3.
+\end{align}$$
+
 湮灭前
-$$g_{*s,\mathrm{before}}=2+\frac{7}{8}(2+2)=\frac{11}{2},$$
+
+$$\begin{align}
+g_{*s,\mathrm{before}}=2+\frac{7}{8}(2+2)=\frac{11}{2},
+\end{align}$$
+
 湮灭后
-$$g_{*s,\mathrm{after}}=2.$$
+
+$$\begin{align}
+g_{*s,\mathrm{after}}=2.
+\end{align}$$
+
 因此
-$$\frac{11}{2}T_{\gamma,\mathrm{before}}^3=2T_{\gamma,\mathrm{after}}^3,$$
+
+$$\begin{align}
+\frac{11}{2}T_{\gamma,\mathrm{before}}^3=2T_{\gamma,\mathrm{after}}^3,
+\end{align}$$
+
 即
-$$T_{\gamma,\mathrm{after}}=\left(\frac{11}{4}\right)^{1/3}T_{\gamma,\mathrm{before}}.$$
+
+$$\begin{align}
+T_{\gamma,\mathrm{after}}=\left(\frac{11}{4}\right)^{1/3}T_{\gamma,\mathrm{before}}.
+\end{align}$$
 
 因为在湮灭开始前光子与中微子温度相同，而之后中微子不被加热，所以
-$$T_{\nu,\mathrm{after}}=T_{\gamma,\mathrm{before}}.$$
+
+$$\begin{align}
+T_{\nu,\mathrm{after}}=T_{\gamma,\mathrm{before}}.
+\end{align}$$
+
 于是得到
-$$\frac{T_\nu}{T_\gamma}=\left(\frac{4}{11}\right)^{1/3},\qquad T_{\nu,0}\simeq 1.95\,\mathrm{K}.$$
+
+$$\begin{align}
+\frac{T_\nu}{T_\gamma}=\left(\frac{4}{11}\right)^{1/3},\qquad T_{\nu,0}\simeq 1.95\,\mathrm{K}.
+\end{align}$$
 
 ### 复合与光子退耦：不是同一件事
 
 复合指反应
-$$e^-+p\to H+\gamma$$
+
+$$\begin{align}
+e^-+p\to H+\gamma
+\end{align}$$
+
 开始使中性氢大量形成，即自由电子数密度显著下降。
 
 光子退耦指 Thomson 散射率
-$$\Gamma_T=n_e\sigma_T c$$
+
+$$\begin{align}
+\Gamma_T=n_e\sigma_T c
+\end{align}$$
+
 变得小于膨胀率 $H$，因此光子自由程变得和 Hubble 尺度相当，开始自由传播。
 
 所以时间顺序是：
 
 1. 先由 Saha 方程决定 $X_e(T)$ 从接近 1 开始快速下降。
-2. 因为 $n_e=X_e n_B$ 下降，Thomson 散射率也下降。
-3. 当 $\Gamma_T<H$ 时才发生 photon decoupling。
+1. 因为 $n_e=X_e n_B$ 下降，Thomson 散射率也下降。
+1. 当 $\Gamma_T<H$ 时才发生 photon decoupling。
 
 ### 从 $X_e(T)$ 到 $\Gamma_T<H$ 的估算
 
 由 Saha 方程
-$$\frac{X_e^2}{1-X_e}=\frac{1}{n_B}\left(\frac{m_e T}{2\pi}\right)^{3/2}e^{-E_0/T},$$
+
+$$\begin{align}
+\frac{X_e^2}{1-X_e}=\frac{1}{n_B}\left(\frac{m_e T}{2\pi}\right)^{3/2}e^{-E_0/T},
+\end{align}$$
+
 再用
-$$n_B=\eta n_\gamma=\eta\frac{2\zeta(3)}{\pi^2}T^3,$$
+
+$$\begin{align}
+n_B=\eta n_\gamma=\eta\frac{2\zeta(3)}{\pi^2}T^3,
+\end{align}$$
+
 可得
-$$\frac{X_e^2}{1-X_e}\propto \frac{1}{\eta}\left(\frac{m_e}{T}\right)^{3/2}e^{-E_0/T}.$$
+
+$$\begin{align}
+\frac{X_e^2}{1-X_e}\propto \frac{1}{\eta}\left(\frac{m_e}{T}\right)^{3/2}e^{-E_0/T}.
+\end{align}$$
 
 因为 $\eta\sim 10^{-10}$ 很小，所以即使 $T\ll E_0$，高能尾部仍足以保持较高电离度。只有当
-$$T_{\mathrm{rec}}\sim 0.3\,\mathrm{eV}$$
+
+$$\begin{align}
+T_{\mathrm{rec}}\sim 0.3\,\mathrm{eV}
+\end{align}$$
+
 附近时，$X_e$ 才开始明显下降。
 
 之后 Thomson 散射率
-$$\Gamma_T=n_e\sigma_T c=X_e n_B \sigma_T c$$
+
+$$\begin{align}
+\Gamma_T=n_e\sigma_T c=X_e n_B \sigma_T c
+\end{align}$$
+
 随 $X_e$ 降低而迅速减小。由于
-$$H\sim H_0\sqrt{\Omega_{m0}}(1+z)^{3/2}$$
+
+$$\begin{align}
+H\sim H_0\sqrt{\Omega_{m0}}(1+z)^{3/2}
+\end{align}$$
+
 在复合附近变化较慢，因此当 $X_e$ 下降一到两个数量级后，很快便达到
-$$\Gamma_T\lesssim H.$$
+
+$$\begin{align}
+\Gamma_T\lesssim H.
+\end{align}$$
+
 这对应于
-$$z_{\mathrm{dec}}\sim 1100,\qquad T_{\mathrm{dec}}\sim 0.26\,\mathrm{eV}.$$
+
+$$\begin{align}
+z_{\mathrm{dec}}\sim 1100,\qquad T_{\mathrm{dec}}\sim 0.26\,\mathrm{eV}.
+\end{align}$$
 
 ### BBN：从 $n/p$ 到 $^4\mathrm{He}$ 丰度
 
 在 $T\gtrsim 1\,\mathrm{MeV}$ 时，弱相互作用
-$$n+\nu_e\leftrightarrow p+e^-,\qquad n+e^+\leftrightarrow p+\bar\nu_e,\qquad n\leftrightarrow p+e^-+\bar\nu_e$$
+
+$$\begin{align}
+n+\nu_e\leftrightarrow p+e^-,\qquad n+e^+\leftrightarrow p+\bar\nu_e,\qquad n\leftrightarrow p+e^-+\bar\nu_e
+\end{align}$$
+
 保持中子和质子的化学平衡，因此
-$$\frac{n_n}{n_p}\simeq \exp\left(-\frac{Q}{T}\right),\qquad Q\equiv m_n-m_p=1.293\,\mathrm{MeV}.$$
+
+$$\begin{align}
+\frac{n_n}{n_p}\simeq \exp\left(-\frac{Q}{T}\right),\qquad Q\equiv m_n-m_p=1.293\,\mathrm{MeV}.
+\end{align}$$
 
 当这些弱反应冻结时，取
-$$T_f\sim 0.8\,\mathrm{MeV},$$
+
+$$\begin{align}
+T_f\sim 0.8\,\mathrm{MeV},
+\end{align}$$
+
 则
-$$\left(\frac{n}{p}\right)_f\simeq e^{-Q/T_f}\approx e^{-1.293/0.8}\approx 0.20.$$
+
+$$\begin{align}
+\left(\frac{n}{p}\right)_f\simeq e^{-Q/T_f}\approx e^{-1.293/0.8}\approx 0.20.
+\end{align}$$
 
 从弱冻结到真正核合成开始之间，中子还会发生一部分 $\beta$ 衰变，因此到 deuterium bottleneck 解开时，常用估算是
-$$\left(\frac{n}{p}\right)_{\mathrm{BBN}}\sim \frac{1}{7}\text{ 到 }\frac{1}{6}.$$
+
+$$\begin{align}
+\left(\frac{n}{p}\right)_{\mathrm{BBN}}\sim \frac{1}{7}\text{ 到 }\frac{1}{6}.
+\end{align}$$
 
 当温度降到
-$$T_D\sim 0.1\,\mathrm{MeV}$$
+
+$$\begin{align}
+T_D\sim 0.1\,\mathrm{MeV}
+\end{align}$$
+
 时，氘能够稳定存在，随后几乎所有剩余中子都会迅速被锁进 $^4\mathrm{He}$。因为 $^4\mathrm{He}$ 每个核含两个中子、两个质子，故其质量丰度近似为
-$$Y_p\equiv \frac{4n_{\mathrm{He}}}{n_B}\simeq \frac{2(n/p)}{1+(n/p)}.$$
+
+$$\begin{align}
+Y_p\equiv \frac{4n_{\mathrm{He}}}{n_B}\simeq \frac{2(n/p)}{1+(n/p)}.
+\end{align}$$
+
 若取 $(n/p)\sim 1/7$，则
-$$Y_p\simeq \frac{2/7}{1+1/7}=\frac{2}{8}\approx 0.25.$$
+
+$$\begin{align}
+Y_p\simeq \frac{2/7}{1+1/7}=\frac{2}{8}\approx 0.25.
+\end{align}$$
+
 这就是标准宇宙学里 $^4\mathrm{He}$ 质量丰度约 $25\%$ 的经典数量级解释。
 
 ### 物理图像与常见解释
@@ -441,67 +753,123 @@ $$Y_p\simeq \frac{2/7}{1+1/7}=\frac{2}{8}\approx 0.25.$$
 - 角直径距离 $D_A$
 
 对平直宇宙，
-$$\chi(z)=\int_0^z \frac{c\,\mathrm{d}z'}{H(z')}.$$
+
+$$\begin{align}
+\chi(z)=\int_0^z \frac{c\,\mathrm{d}z'}{H(z')}.
+\end{align}$$
 
 一般曲率下，横向共动距离写成
-$$D_M=
+
+$$
+D_M=
 \begin{cases}
 \frac{c}{H_0\sqrt{\Omega_{k0}}}\sinh\left(\sqrt{\Omega_{k0}}H_0\chi/c\right), & \Omega_{k0}>0, \\
 \chi, & \Omega_{k0}=0, \\
 \frac{c}{H_0\sqrt{|\Omega_{k0}|}}\sin\left(\sqrt{|\Omega_{k0}|}H_0\chi/c\right), & \Omega_{k0}<0.
-\end{cases}$$
+\end{cases}
+$$
 
 ### 必背公式
 
 红移与尺度因子：
-$$1+z=\frac{1}{a}.$$
+
+$$\begin{align}
+1+z=\frac{1}{a}.
+\end{align}$$
 
 光度距离定义：
-$$F=\frac{L}{4\pi D_L^2},\qquad D_L=\sqrt{\frac{L}{4\pi F}}.$$
+
+$$\begin{align}
+F=\frac{L}{4\pi D_L^2},\qquad D_L=\sqrt{\frac{L}{4\pi F}}.
+\end{align}$$
 
 角直径距离定义：
-$$D_A=\frac{\text{物理横向尺度}}{\text{张角}}.$$
+
+$$\begin{align}
+D_A=\frac{\text{物理横向尺度}}{\text{张角}}.
+\end{align}$$
 
 Etherington reciprocity relation：
-$$D_L=(1+z)^2 D_A.$$
+
+$$\begin{align}
+D_L=(1+z)^2 D_A.
+\end{align}$$
 
 平直宇宙中
-$$D_L=(1+z)\chi,\qquad D_A=\frac{\chi}{1+z}.$$
+
+$$\begin{align}
+D_L=(1+z)\chi,\qquad D_A=\frac{\chi}{1+z}.
+\end{align}$$
 
 距离模数：
-$$\mu=m-M=5\log_{10}\left(\frac{D_L}{10\,\mathrm{pc}}\right).$$
+
+$$\begin{align}
+\mu=m-M=5\log_{10}\left(\frac{D_L}{10\,\mathrm{pc}}\right).
+\end{align}$$
 
 $H(z)$ 的标准形式：
-$$H^2(z)=H_0^2\left[\Omega_{r0}(1+z)^4+\Omega_{m0}(1+z)^3+\Omega_{k0}(1+z)^2+\Omega_{\Lambda 0}\right].$$
+
+$$\begin{align}
+H^2(z)=H_0^2\left[\Omega_{r0}(1+z)^4+\Omega_{m0}(1+z)^3+\Omega_{k0}(1+z)^2+\Omega_{\Lambda 0}\right].
+\end{align}$$
 
 ### 最短必要推导
 
 从 FRW 径向 null geodesic 出发，令 $\mathrm{d}s^2=0$、$\mathrm{d}\Omega=0$，则
-$$0=-c^2\mathrm{d}t^2+a^2(t)\frac{\mathrm{d}r^2}{1-k r^2}.$$
+
+$$\begin{align}
+0=-c^2\mathrm{d}t^2+a^2(t)\frac{\mathrm{d}r^2}{1-k r^2}.
+\end{align}$$
+
 若取平直情形，得到
-$$\mathrm{d}r=\frac{c\,\mathrm{d}t}{a(t)}.$$
+
+$$\begin{align}
+\mathrm{d}r=\frac{c\,\mathrm{d}t}{a(t)}.
+\end{align}$$
+
 结合
-$$\frac{\mathrm{d}z}{\mathrm{d}t}=-(1+z)H(z),$$
+
+$$\begin{align}
+\frac{\mathrm{d}z}{\mathrm{d}t}=-(1+z)H(z),
+\end{align}$$
+
 可写成
-$$r=\int_{t_e}^{t_0}\frac{c\,\mathrm{d}t}{a(t)}=\int_0^z \frac{c\,\mathrm{d}z'}{H(z')}\equiv \chi(z).$$
+
+$$\begin{align}
+r=\int_{t_e}^{t_0}\frac{c\,\mathrm{d}t}{a(t)}=\int_0^z \frac{c\,\mathrm{d}z'}{H(z')}\equiv \chi(z).
+\end{align}$$
 
 若在平直宇宙中定义横向物理距离为 $a r$，而光路积分得到共动半径 $r=\chi$，则
-$$D_A=\frac{a r}{\theta}=\frac{\chi}{1+z},\qquad D_L=(1+z)^2 D_A=(1+z)\chi.$$
+
+$$\begin{align}
+D_A=\frac{a r}{\theta}=\frac{\chi}{1+z},\qquad D_L=(1+z)^2 D_A=(1+z)\chi.
+\end{align}$$
 
 ### $D_L=(1+z)^2D_A$ 的来源分解
 
 这一定律最好不要死记，考试里可以按三步解释：
 
 1. 单个光子的能量红移一因子 $1/(1+z)$。
-2. 光子到达率因为时间膨胀再多一因子 $1/(1+z)$。
-3. 波前面积由角直径距离控制，面积标度是 $4\pi D_A^2$。
+1. 光子到达率因为时间膨胀再多一因子 $1/(1+z)$。
+1. 波前面积由角直径距离控制，面积标度是 $4\pi D_A^2$。
 
 因此观测到的流量为
-$$F=\frac{L}{4\pi D_A^2(1+z)^2},$$
+
+$$\begin{align}
+F=\frac{L}{4\pi D_A^2(1+z)^2},
+\end{align}$$
+
 与光度距离定义
-$$F=\frac{L}{4\pi D_L^2}$$
+
+$$\begin{align}
+F=\frac{L}{4\pi D_L^2}
+\end{align}$$
+
 比较，即得
-$$D_L=(1+z)^2 D_A.$$
+
+$$\begin{align}
+D_L=(1+z)^2 D_A.
+\end{align}$$
 
 ### 物理图像与常见解释
 
@@ -516,33 +884,66 @@ $$D_L=(1+z)^2 D_A.$$
 
 - 横向共动距离是 $D_M$。
 - 角直径距离是
-$$D_A=\frac{D_M}{1+z}.$$
+
+$$\begin{align}
+D_A=\frac{D_M}{1+z}.
+\end{align}$$
+
 - 光度距离是
-$$D_L=(1+z)D_M=(1+z)^2 D_A.$$
+
+$$\begin{align}
+D_L=(1+z)D_M=(1+z)^2 D_A.
+\end{align}$$
+
 - 体积平均距离常用于 BAO：
-$$D_V(z)\equiv \left[D_M^2(z)\frac{cz}{H(z)}\right]^{1/3}.$$
+
+$$\begin{align}
+D_V(z)\equiv \left[D_M^2(z)\frac{cz}{H(z)}\right]^{1/3}.
+\end{align}$$
 
 因此开卷时最稳的路线是：先求 $H(z)$，再积分得 $\chi(z)$，最后根据几何情形转成 $D_M,D_A,D_L$。
 
 ### 低红移展开
 
 若定义 deceleration 参数和 jerk 参数，并默认忽略曲率项的低红移修正，
-$$q\equiv -\frac{\ddot a}{aH^2},\qquad j\equiv \frac{a^{(3)}}{aH^3},$$
+
+$$\begin{align}
+q\equiv -\frac{\ddot a}{aH^2},\qquad j\equiv \frac{a^{(3)}}{aH^3},
+\end{align}$$
+
 则在 $z=0$ 附近，
-$$H(z)=H_0\left[1+(1+q_0)z+\frac{1}{2}(j_0-q_0^2)z^2+\mathcal{O}(z^3)\right],$$
+
+$$\begin{align}
+H(z)=H_0\left[1+(1+q_0)z+\frac{1}{2}(j_0-q_0^2)z^2+\mathcal{O}(z^3)\right],
+\end{align}$$
+
 从而
-$$D_L(z)=\frac{c}{H_0}\left[z+\frac{1}{2}(1-q_0)z^2-\frac{1}{6}(1-q_0-3q_0^2+j_0)z^3+\mathcal{O}(z^4)\right].$$
+
+$$\begin{align}
+D_L(z)=\frac{c}{H_0}\left[z+\frac{1}{2}(1-q_0)z^2-\frac{1}{6}(1-q_0-3q_0^2+j_0)z^3+\mathcal{O}(z^4)\right].
+\end{align}$$
 
 这是低红移宇宙学距离展开的高频结果。
 
 ### 宇宙年龄与 lookback time
 
 从
-$$\mathrm{d}t=-\frac{\mathrm{d}z}{(1+z)H(z)}$$
+
+$$\begin{align}
+\mathrm{d}t=-\frac{\mathrm{d}z}{(1+z)H(z)}
+\end{align}$$
+
 可得
-$$t(z)=\int_z^\infty \frac{\mathrm{d}z'}{(1+z')H(z')},$$
+
+$$\begin{align}
+t(z)=\int_z^\infty \frac{\mathrm{d}z'}{(1+z')H(z')},
+\end{align}$$
+
 以及
-$$t_L(z)\equiv t_0-t(z)=\int_0^z \frac{\mathrm{d}z'}{(1+z')H(z')}.$$
+
+$$\begin{align}
+t_L(z)\equiv t_0-t(z)=\int_0^z \frac{\mathrm{d}z'}{(1+z')H(z')}.
+\end{align}$$
 
 这两个积分在数值题里都很常见：
 
@@ -554,20 +955,48 @@ $$t_L(z)\equiv t_0-t(z)=\int_0^z \frac{\mathrm{d}z'}{(1+z')H(z')}.$$
 若题目给定 $\Omega_{m0}$、$H_0$，并让你算某个红移 $z$ 的距离或宇宙年龄，标准模板是：
 
 1. 写
-$$H(z)=H_0\sqrt{\Omega_{m0}(1+z)^3+\Omega_{r0}(1+z)^4+\Omega_{k0}(1+z)^2+\Omega_{\Lambda 0}}.$$
-2. 若可忽略辐射与曲率，就简化成
-$$H(z)=H_0\sqrt{\Omega_{m0}(1+z)^3+\Omega_{\Lambda 0}}.$$
-3. 再按题意做积分：
-$$\chi(z)=\int_0^z \frac{c\,\mathrm{d}z'}{H(z')},\qquad t(z)=\int_z^\infty \frac{\mathrm{d}z'}{(1+z')H(z')},\qquad t_L(z)=\int_0^z \frac{\mathrm{d}z'}{(1+z')H(z')}.$$
-4. 最后转换：
-$$D_L=(1+z)D_M,\qquad D_A=\frac{D_M}{1+z}.$$
+
+$$\begin{align}
+H(z)=H_0\sqrt{\Omega_{m0}(1+z)^3+\Omega_{r0}(1+z)^4+\Omega_{k0}(1+z)^2+\Omega_{\Lambda 0}}.
+\end{align}$$
+
+1. 若可忽略辐射与曲率，就简化成
+
+$$\begin{align}
+H(z)=H_0\sqrt{\Omega_{m0}(1+z)^3+\Omega_{\Lambda 0}}.
+\end{align}$$
+
+1. 再按题意做积分：
+
+$$\begin{align}
+\chi(z)=\int_0^z \frac{c\,\mathrm{d}z'}{H(z')},\qquad t(z)=\int_z^\infty \frac{\mathrm{d}z'}{(1+z')H(z')},\qquad t_L(z)=\int_0^z \frac{\mathrm{d}z'}{(1+z')H(z')}.
+\end{align}$$
+
+1. 最后转换：
+
+$$\begin{align}
+D_L=(1+z)D_M,\qquad D_A=\frac{D_M}{1+z}.
+\end{align}$$
 
 例如在平直 $\Lambda\mathrm{CDM}$ 中取
-$$\Omega_{m0}=0.3,\qquad \Omega_{\Lambda 0}=0.7,\qquad H_0=70\,\mathrm{km\,s^{-1}\,Mpc^{-1}},\qquad z=1,$$
+
+$$\begin{align}
+\Omega_{m0}=0.3,\qquad \Omega_{\Lambda 0}=0.7,\qquad H_0=70\,\mathrm{km\,s^{-1}\,Mpc^{-1}},\qquad z=1,
+\end{align}$$
+
 则
-$$H(z=1)\approx 123.25\,\mathrm{km\,s^{-1}\,Mpc^{-1}},$$
-$$\chi(z=1)\approx 3.30\,\mathrm{Gpc},\qquad D_L(z=1)\approx 6.61\,\mathrm{Gpc},\qquad D_A(z=1)\approx 1.65\,\mathrm{Gpc},$$
-$$t(z=1)\approx 5.75\,\mathrm{Gyr},\qquad t_L(z=1)\approx 7.72\,\mathrm{Gyr}.$$
+
+$$\begin{align}
+H(z=1)\approx 123.25\,\mathrm{km\,s^{-1}\,Mpc^{-1}},
+\end{align}$$
+
+$$\begin{align}
+\chi(z=1)\approx 3.30\,\mathrm{Gpc},\qquad D_L(z=1)\approx 6.61\,\mathrm{Gpc},\qquad D_A(z=1)\approx 1.65\,\mathrm{Gpc},
+\end{align}$$
+
+$$\begin{align}
+t(z=1)\approx 5.75\,\mathrm{Gyr},\qquad t_L(z=1)\approx 7.72\,\mathrm{Gyr}.
+\end{align}$$
 
 ### 易错点 / 常见变体
 
@@ -593,105 +1022,243 @@ $$t(z=1)\approx 5.75\,\mathrm{Gyr},\qquad t_L(z=1)\approx 7.72\,\mathrm{Gyr}.$$
 ### 核心定义与物理量
 
 宇宙学微扰论研究的是背景量之上的小起伏，例如
-$$\rho(t,\mathbf{x})=\bar\rho(t)+\delta\rho(t,\mathbf{x}),\qquad p(t,\mathbf{x})=\bar p(t)+\delta p(t,\mathbf{x}),\qquad \mathbf{v}=\bar{\mathbf{v}}+\delta\mathbf{v}.$$
+
+$$\begin{align}
+\rho(t,\mathbf{x})=\bar\rho(t)+\delta\rho(t,\mathbf{x}),\qquad p(t,\mathbf{x})=\bar p(t)+\delta p(t,\mathbf{x}),\qquad \mathbf{v}=\bar{\mathbf{v}}+\delta\mathbf{v}.
+\end{align}$$
 
 密度对比定义为
-$$\delta\equiv \frac{\delta\rho}{\bar\rho}.$$
+
+$$\begin{align}
+\delta\equiv \frac{\delta\rho}{\bar\rho}.
+\end{align}$$
 
 相对论标量微扰最一般的线元可写为
-$$\mathrm{d}s^2=a^2(\eta)\left[-(1+2A)\mathrm{d}\eta^2+2\partial_i B\,\mathrm{d}\eta\,\mathrm{d}x^i+\left((1+2C)\delta_{ij}+2D_{ij}E\right)\mathrm{d}x^i\mathrm{d}x^j\right],$$
+
+$$\begin{align}
+\mathrm{d}s^2=a^2(\eta)\left[-(1+2A)\mathrm{d}\eta^2+2\partial_i B\,\mathrm{d}\eta\,\mathrm{d}x^i+\left((1+2C)\delta_{ij}+2D_{ij}E\right)\mathrm{d}x^i\mathrm{d}x^j\right],
+\end{align}$$
+
 其中
-$$D_{ij}\equiv \partial_i\partial_j-\frac{1}{3}\delta_{ij}\nabla^2,\qquad \mathcal H\equiv \frac{a'}{a}.$$
+
+$$\begin{align}
+D_{ij}\equiv \partial_i\partial_j-\frac{1}{3}\delta_{ij}\nabla^2,\qquad \mathcal H\equiv \frac{a'}{a}.
+\end{align}$$
 
 Newtonian gauge 取
-$$B=E=0,\qquad A=\Phi,\qquad C=-\Psi,$$
+
+$$\begin{align}
+B=E=0,\qquad A=\Phi,\qquad C=-\Psi,
+\end{align}$$
+
 于是
-$$\mathrm{d}s^2=a^2(\eta)\left[-(1+2\Phi)\mathrm{d}\eta^2+(1-2\Psi)\mathrm{d}\mathbf{x}^2\right].$$
+
+$$\begin{align}
+\mathrm{d}s^2=a^2(\eta)\left[-(1+2\Phi)\mathrm{d}\eta^2+(1-2\Psi)\mathrm{d}\mathbf{x}^2\right].
+\end{align}$$
 
 Bardeen potentials 定义为
-$$\Phi_B\equiv A+\frac{1}{a}\left[a(B-E')\right]',\qquad \Psi_B\equiv -C+\frac{1}{3}\nabla^2E-\mathcal H(B-E').$$
+
+$$\begin{align}
+\Phi_B\equiv A+\frac{1}{a}\left[a(B-E')\right]',\qquad \Psi_B\equiv -C+\frac{1}{3}\nabla^2E-\mathcal H(B-E').
+\end{align}$$
+
 在 Newtonian gauge 中它们就退化为 $\Phi_B=\Phi$、$\Psi_B=\Psi$。若无各向异性应力，通常有 $\Phi=\Psi$。
 
 ### 必背公式
 
 牛顿版微扰中，亚视界、非相对论物质主导时的连续方程、Euler 方程与 Poisson 方程为
-$$\dot\delta+\frac{1}{a}\nabla\cdot\mathbf v=0,\qquad \dot{\mathbf v}+H\mathbf v=-\frac{1}{a}\nabla\Phi,\qquad \nabla^2\Phi=4\pi G a^2\bar\rho\,\delta.$$
+
+$$\begin{align}
+\dot\delta+\frac{1}{a}\nabla\cdot\mathbf v=0,\qquad \dot{\mathbf v}+H\mathbf v=-\frac{1}{a}\nabla\Phi,\qquad \nabla^2\Phi=4\pi G a^2\bar\rho\,\delta.
+\end{align}$$
+
 它们合并为
-$$\ddot\delta_m+2H\dot\delta_m-4\pi G\bar\rho_m\delta_m=0.$$
+
+$$\begin{align}
+\ddot\delta_m+2H\dot\delta_m-4\pi G\bar\rho_m\delta_m=0.
+\end{align}$$
 
 物质主导时期的增长模：
-$$\delta_m\propto a.$$
+
+$$\begin{align}
+\delta_m\propto a.
+\end{align}$$
 
 若流体有压强，线性扰动方程改写为
-$$\ddot\delta+2H\dot\delta+\left(\frac{c_s^2k^2}{a^2}-4\pi G\bar\rho\right)\delta=0.$$
+
+$$\begin{align}
+\ddot\delta+2H\dot\delta+\left(\frac{c_s^2k^2}{a^2}-4\pi G\bar\rho\right)\delta=0.
+\end{align}$$
 
 对辐射主导时期，
-$$a\propto t^{1/2},\qquad H=\frac{1}{2t},\qquad \bar\rho=\frac{3}{32\pi G t^2},\qquad c_s^2=\frac{1}{3},$$
+
+$$\begin{align}
+a\propto t^{1/2},\qquad H=\frac{1}{2t},\qquad \bar\rho=\frac{3}{32\pi G t^2},\qquad c_s^2=\frac{1}{3},
+\end{align}$$
+
 因此
-$$\ddot\delta+\frac{1}{t}\dot\delta+\left(\frac{k^2}{3a^2}-\frac{3}{8t^2}\right)\delta=0.$$
+
+$$\begin{align}
+\ddot\delta+\frac{1}{t}\dot\delta+\left(\frac{k^2}{3a^2}-\frac{3}{8t^2}\right)\delta=0.
+\end{align}$$
+
 在长波极限 $k\to 0$ 下设 $\delta\propto t^n$，得到
-$$n^2-\frac{3}{8}=0,\qquad n=\pm \sqrt{\frac{3}{8}}.$$
+
+$$\begin{align}
+n^2-\frac{3}{8}=0,\qquad n=\pm \sqrt{\frac{3}{8}}.
+\end{align}$$
 
 Jeans 波数、Jeans 物理波长和 Jeans 质量分别为
-$$k_J^2=\frac{4\pi G\bar\rho\,a^2}{c_s^2},\qquad \lambda_J^{\mathrm{phys}}=\frac{2\pi a}{k_J}=c_s\sqrt{\frac{\pi}{G\bar\rho}},$$
-$$M_J\sim \frac{4\pi}{3}\bar\rho\left(\frac{\lambda_J^{\mathrm{phys}}}{2}\right)^3.$$
+
+$$\begin{align}
+k_J^2=\frac{4\pi G\bar\rho\,a^2}{c_s^2},\qquad \lambda_J^{\mathrm{phys}}=\frac{2\pi a}{k_J}=c_s\sqrt{\frac{\pi}{G\bar\rho}},
+\end{align}$$
+
+$$\begin{align}
+M_J\sim \frac{4\pi}{3}\bar\rho\left(\frac{\lambda_J^{\mathrm{phys}}}{2}\right)^3.
+\end{align}$$
 
 定义线性增长因子 $D(z)$：
-$$\delta_m(k,z)=D(z)\delta_m(k,0),\qquad D(0)=1.$$
+
+$$\begin{align}
+\delta_m(k,z)=D(z)\delta_m(k,0),\qquad D(0)=1.
+\end{align}$$
 
 原初曲率扰动 $\mathcal{R}$ 的功率谱定义为
-$$\langle \mathcal{R}(\mathbf{k})\mathcal{R}(\mathbf{k}')\rangle=(2\pi)^3\delta^{(3)}(\mathbf{k}+\mathbf{k}')P_{\mathcal{R}}(k).$$
+
+$$\begin{align}
+\langle \mathcal{R}(\mathbf{k})\mathcal{R}(\mathbf{k}')\rangle=(2\pi)^3\delta^{(3)}(\mathbf{k}+\mathbf{k}')P_{\mathcal{R}}(k).
+\end{align}$$
 
 无量纲功率谱定义为
-$$\Delta^2(k)\equiv \frac{k^3}{2\pi^2}P(k).$$
+
+$$\begin{align}
+\Delta^2(k)\equiv \frac{k^3}{2\pi^2}P(k).
+\end{align}$$
 
 对近乎标度不变的原初谱，
-$$\Delta_{\mathcal{R}}^2(k)=A_s\left(\frac{k}{k_*}\right)^{n_s-1},\qquad P_{\mathcal{R}}(k)=\frac{2\pi^2}{k^3}A_s\left(\frac{k}{k_*}\right)^{n_s-1}.$$
+
+$$\begin{align}
+\Delta_{\mathcal{R}}^2(k)=A_s\left(\frac{k}{k_*}\right)^{n_s-1},\qquad P_{\mathcal{R}}(k)=\frac{2\pi^2}{k^3}A_s\left(\frac{k}{k_*}\right)^{n_s-1}.
+\end{align}$$
 
 相对论标量微扰在规范变换
-$$\eta\mapsto \tilde\eta=\eta+\xi^0,\qquad x^i\mapsto \tilde x^i=x^i+\partial^iL$$
+
+$$\begin{align}
+\eta\mapsto \tilde\eta=\eta+\xi^0,\qquad x^i\mapsto \tilde x^i=x^i+\partial^iL
+\end{align}$$
+
 下满足
-$$\tilde A=A-\mathcal H\xi^0-(\xi^0)',\qquad \tilde B=B+\xi^0-L',$$
-$$\tilde C=C-\mathcal H\xi^0-\frac{1}{3}\nabla^2L,\qquad \tilde E=E-L.$$
+
+$$\begin{align}
+\tilde A=A-\mathcal H\xi^0-(\xi^0)',\qquad \tilde B=B+\xi^0-L',
+\end{align}$$
+
+$$\begin{align}
+\tilde C=C-\mathcal H\xi^0-\frac{1}{3}\nabla^2L,\qquad \tilde E=E-L.
+\end{align}$$
+
 因此
-$$\Phi_B=A+\frac{1}{a}\left[a(B-E')\right]',\qquad \Psi_B=-C+\frac{1}{3}\nabla^2E-\mathcal H(B-E')$$
+
+$$\begin{align}
+\Phi_B=A+\frac{1}{a}\left[a(B-E')\right]',\qquad \Psi_B=-C+\frac{1}{3}\nabla^2E-\mathcal H(B-E')
+\end{align}$$
+
 都是规范不变量。
 
 在 Newtonian gauge 中，一阶 Einstein 方程可整理成
-$$\nabla^2\Psi-3\mathcal H(\Psi'+\mathcal H\Phi)=4\pi G a^2\delta\rho,$$
-$$\partial_i(\Psi'+\mathcal H\Phi)=4\pi G a^2(\bar\rho+\bar p)v_i,$$
-$$\Psi''+\mathcal H(\Phi'+2\Psi')+\left(2\mathcal H'+\mathcal H^2\right)\Phi-\frac{1}{3}\nabla^2(\Phi-\Psi)=4\pi G a^2\delta p,$$
-$$\partial_i\partial_j(\Phi-\Psi)-\frac{1}{3}\delta_{ij}\nabla^2(\Phi-\Psi)=8\pi G a^2\Sigma_{ij}.$$
+
+$$\begin{align}
+\nabla^2\Psi-3\mathcal H(\Psi'+\mathcal H\Phi)=4\pi G a^2\delta\rho,
+\end{align}$$
+
+$$\begin{align}
+\partial_i(\Psi'+\mathcal H\Phi)=4\pi G a^2(\bar\rho+\bar p)v_i,
+\end{align}$$
+
+$$\begin{align}
+\Psi''+\mathcal H(\Phi'+2\Psi')+\left(2\mathcal H'+\mathcal H^2\right)\Phi-\frac{1}{3}\nabla^2(\Phi-\Psi)=4\pi G a^2\delta p,
+\end{align}$$
+
+$$\begin{align}
+\partial_i\partial_j(\Phi-\Psi)-\frac{1}{3}\delta_{ij}\nabla^2(\Phi-\Psi)=8\pi G a^2\Sigma_{ij}.
+\end{align}$$
+
 若各向异性张力为零，即 $\Sigma_{ij}=0$，则
-$$\Phi=\Psi.$$
+
+$$\begin{align}
+\Phi=\Psi.
+\end{align}$$
 
 这时相对论 Poisson 方程为
-$$\nabla^2\Phi-3\mathcal H(\Phi'+\mathcal H\Phi)=4\pi G a^2\delta\rho,$$
+
+$$\begin{align}
+\nabla^2\Phi-3\mathcal H(\Phi'+\mathcal H\Phi)=4\pi G a^2\delta\rho,
+\end{align}$$
+
 在亚视界极限 $k\gg aH$ 且势变化缓慢时退化为
-$$\nabla^2\Phi\simeq 4\pi G a^2\delta\rho.$$
+
+$$\begin{align}
+\nabla^2\Phi\simeq 4\pi G a^2\delta\rho.
+\end{align}$$
 
 对绝热扰动 $\delta p=c_s^2\delta\rho$，Bardeen equation 可写为
-$$\Phi''+3(1+c_s^2)\mathcal H\Phi'+\left[2\mathcal H'+(1+3c_s^2)\mathcal H^2-c_s^2\nabla^2\right]\Phi=0,$$
+
+$$\begin{align}
+\Phi''+3(1+c_s^2)\mathcal H\Phi'+\left[2\mathcal H'+(1+3c_s^2)\mathcal H^2-c_s^2\nabla^2\right]\Phi=0,
+\end{align}$$
+
 Fourier 空间中即
-$$\Phi_k''+3(1+c_s^2)\mathcal H\Phi_k'+\left[c_s^2k^2+2\mathcal H'+(1+3c_s^2)\mathcal H^2\right]\Phi_k=0.$$
+
+$$\begin{align}
+\Phi_k''+3(1+c_s^2)\mathcal H\Phi_k'+\left[c_s^2k^2+2\mathcal H'+(1+3c_s^2)\mathcal H^2\right]\Phi_k=0.
+\end{align}$$
 
 ### 最短必要推导
 
 先看牛顿版。对连续方程再取时间导数，并用 Euler 方程消去 $\mathbf v$，得到
-$$\ddot\delta+\frac{1}{a}\nabla\cdot\dot{\mathbf v}-\frac{\dot a}{a^2}\nabla\cdot\mathbf v=0.$$
+
+$$\begin{align}
+\ddot\delta+\frac{1}{a}\nabla\cdot\dot{\mathbf v}-\frac{\dot a}{a^2}\nabla\cdot\mathbf v=0.
+\end{align}$$
+
 再用连续方程 $\nabla\cdot\mathbf v=-a\dot\delta$ 和 Poisson 方程代回，即得
-$$\ddot\delta+2H\dot\delta-4\pi G\bar\rho\,\delta=0.$$
+
+$$\begin{align}
+\ddot\delta+2H\dot\delta-4\pi G\bar\rho\,\delta=0.
+\end{align}$$
+
 若保留压强项 $\delta p=c_s^2\delta\rho$，则同样可得到
-$$\ddot\delta+2H\dot\delta+\left(\frac{c_s^2k^2}{a^2}-4\pi G\bar\rho\right)\delta=0.$$
+
+$$\begin{align}
+\ddot\delta+2H\dot\delta+\left(\frac{c_s^2k^2}{a^2}-4\pi G\bar\rho\right)\delta=0.
+\end{align}$$
+
 辐射主导长波极限下设 $\delta\propto t^n$，立刻得到
-$$n(n-1)+n-\frac{3}{8}=0\qquad \Longrightarrow\qquad n=\pm \sqrt{\frac{3}{8}}.$$
+
+$$\begin{align}
+n(n-1)+n-\frac{3}{8}=0\qquad \Longrightarrow\qquad n=\pm \sqrt{\frac{3}{8}}.
+\end{align}$$
 
 再看相对论版。规范变换下
-$$B-E'\mapsto B-E'+\xi^0,$$
+
+$$\begin{align}
+B-E'\mapsto B-E'+\xi^0,
+\end{align}$$
+
 因此
-$$\frac{1}{a}\left[a(B-E')\right]'\mapsto \frac{1}{a}\left[a(B-E')\right]'+\mathcal H\xi^0+(\xi^0)'.$$
+
+$$\begin{align}
+\frac{1}{a}\left[a(B-E')\right]'\mapsto \frac{1}{a}\left[a(B-E')\right]'+\mathcal H\xi^0+(\xi^0)'.
+\end{align}$$
+
 这恰好抵消 $A$ 的变换
-$$A\mapsto A-\mathcal H\xi^0-(\xi^0)',$$
+
+$$\begin{align}
+A\mapsto A-\mathcal H\xi^0-(\xi^0)',
+\end{align}$$
+
 所以 $\Phi_B$ 不变；$\Psi_B$ 的不变性同理。Newtonian gauge 只是把这两个规范不变量直接写成 $\Phi,\Psi$。
 
 ### 超视界与亚视界
@@ -753,29 +1320,54 @@ $$A\mapsto A-\mathcal H\xi^0-(\xi^0)',$$
 ### 必背公式
 
 常用写法是
-$$\delta_m(k,z)=M(k,z)\mathcal{R}(k),\qquad M(k,z)=\frac{2k^2}{5\Omega_{m0}H_0^2}T(k)D(z).$$
+
+$$\begin{align}
+\delta_m(k,z)=M(k,z)\mathcal{R}(k),\qquad M(k,z)=\frac{2k^2}{5\Omega_{m0}H_0^2}T(k)D(z).
+\end{align}$$
 
 因此
-$$P_{mm}(k,z)=M^2(k,z)P_{\mathcal{R}}(k).$$
+
+$$\begin{align}
+P_{mm}(k,z)=M^2(k,z)P_{\mathcal{R}}(k).
+\end{align}$$
 
 在线性、实空间、线性偏置近似下，
-$$P_{gg}(k,z)=b_g^2(k,z)P_{mm}(k,z).$$
+
+$$\begin{align}
+P_{gg}(k,z)=b_g^2(k,z)P_{mm}(k,z).
+\end{align}$$
 
 若考虑 Kaiser 红移空间畸变，则
-$$P_{gg}^{\mathrm{obs}}(k,\mu,z)\simeq [b_g(z)+f(z)\mu^2]^2 P_{mm}(k,z)+P_{\mathrm{shot}},$$
+
+$$\begin{align}
+P_{gg}^{\mathrm{obs}}(k,\mu,z)\simeq [b_g(z)+f(z)\mu^2]^2 P_{mm}(k,z)+P_{\mathrm{shot}},
+\end{align}$$
+
 其中
-$$f(z)\equiv \frac{\mathrm{d}\ln D}{\mathrm{d}\ln a}.$$
+
+$$\begin{align}
+f(z)\equiv \frac{\mathrm{d}\ln D}{\mathrm{d}\ln a}.
+\end{align}$$
 
 物质辐射相等时进入视界的共动波数为
-$$k_{\mathrm{eq}}=a_{\mathrm{eq}}H_{\mathrm{eq}}\simeq 0.073\,\Omega_{m0}h^2\,\mathrm{Mpc}^{-1}.$$
+
+$$\begin{align}
+k_{\mathrm{eq}}=a_{\mathrm{eq}}H_{\mathrm{eq}}\simeq 0.073\,\Omega_{m0}h^2\,\mathrm{Mpc}^{-1}.
+\end{align}$$
 
 ### 最短必要推导
 
 物质功率谱的结构可以压缩成一条链：
-$$P_{\mathcal{R}}(k)\xrightarrow{\ T(k)\ }\ P_{mm}(k,z)\xrightarrow{\ b_g\ }\ P_{gg}(k,z).$$
+
+$$\begin{align}
+P_{\mathcal{R}}(k)\xrightarrow{\ T(k)\ }\ P_{mm}(k,z)\xrightarrow{\ b_g\ }\ P_{gg}(k,z).
+\end{align}$$
 
 更明确地，
-$$P_{gg}(k,z)=b_g^2(k,z)\left[\frac{2k^2}{5\Omega_{m0}H_0^2}T(k)D(z)\right]^2 P_{\mathcal{R}}(k).$$
+
+$$\begin{align}
+P_{gg}(k,z)=b_g^2(k,z)\left[\frac{2k^2}{5\Omega_{m0}H_0^2}T(k)D(z)\right]^2 P_{\mathcal{R}}(k).
+\end{align}$$
 
 这里各项的意义要分清：
 
@@ -788,27 +1380,58 @@ $$P_{gg}(k,z)=b_g^2(k,z)\left[\frac{2k^2}{5\Omega_{m0}H_0^2}T(k)D(z)\right]^2 P_
 ### 关联函数与功率谱的双向关系
 
 定义密度场的 Fourier 变换为
-$$\delta(\mathbf x)=\int \frac{\mathrm d^3k}{(2\pi)^3}\,\delta(\mathbf k)e^{i\mathbf k\cdot\mathbf x}.$$
+
+$$\begin{align}
+\delta(\mathbf x)=\int \frac{\mathrm d^3k}{(2\pi)^3}\,\delta(\mathbf k)e^{i\mathbf k\cdot\mathbf x}.
+\end{align}$$
+
 功率谱定义为
-$$\langle \delta(\mathbf k)\delta(\mathbf k')\rangle=(2\pi)^3\delta^{(3)}(\mathbf k+\mathbf k')P(k).$$
+
+$$\begin{align}
+\langle \delta(\mathbf k)\delta(\mathbf k')\rangle=(2\pi)^3\delta^{(3)}(\mathbf k+\mathbf k')P(k).
+\end{align}$$
+
 两点关联函数定义为
-$$\xi(\mathbf r)\equiv \langle \delta(\mathbf x)\delta(\mathbf x+\mathbf r)\rangle.$$
+
+$$\begin{align}
+\xi(\mathbf r)\equiv \langle \delta(\mathbf x)\delta(\mathbf x+\mathbf r)\rangle.
+\end{align}$$
+
 由 Fourier 变换直接得到
-$$\xi(\mathbf r)=\int \frac{\mathrm d^3k}{(2\pi)^3}P(k)e^{i\mathbf k\cdot\mathbf r}.$$
+
+$$\begin{align}
+\xi(\mathbf r)=\int \frac{\mathrm d^3k}{(2\pi)^3}P(k)e^{i\mathbf k\cdot\mathbf r}.
+\end{align}$$
+
 若宇宙在统计上各向同性，则只依赖于 $r=|\mathbf r|$，从而
-$$\xi(r)=\int \frac{k^2\,\mathrm dk}{2\pi^2}P(k)\frac{\sin kr}{kr}.$$
+
+$$\begin{align}
+\xi(r)=\int \frac{k^2\,\mathrm dk}{2\pi^2}P(k)\frac{\sin kr}{kr}.
+\end{align}$$
+
 反过来，
-$$P(k)=4\pi\int r^2\,\mathrm dr\,\xi(r)\frac{\sin kr}{kr}.$$
+
+$$\begin{align}
+P(k)=4\pi\int r^2\,\mathrm dr\,\xi(r)\frac{\sin kr}{kr}.
+\end{align}$$
+
 这就是“相关函数和功率谱是一对 Fourier-Bessel 变换”的最标准结论。
 
 ### 为什么 CDM 在辐射主导时期只对数增长
 
 在辐射主导时期，背景总能量密度由辐射主导，因此 Hubble 阻尼很强，而 Poisson 方程右边真正主导势阱的是辐射而非 CDM 本身。对亚视界 CDM 扰动，增长方程中的引力源项不能像物质主导时期那样有效克服膨胀阻尼，因此其增长非常慢，只得到
-$$\delta_m\propto \ln a.$$
+
+$$\begin{align}
+\delta_m\propto \ln a.
+\end{align}$$
+
 这段缓慢增长称为 Mészáros 效应。
 
 一旦进入物质主导时期，CDM 自身主导引力势阱，才恢复
-$$\delta_m\propto a.$$
+
+$$\begin{align}
+\delta_m\propto a.
+\end{align}$$
 
 ### $T(k)$ 的物理来源
 
@@ -826,11 +1449,22 @@ $$\delta_m\propto a.$$
 若一个模在辐射主导时期进入视界：
 
 - 非相对论物质扰动在辐射主导时期只能对数增长：
-$$\delta_m\propto \ln a.$$
+
+$$\begin{align}
+\delta_m\propto \ln a.
+\end{align}$$
+
 - 到物质主导时期才转为
-$$\delta_m\propto a.$$
+
+$$\begin{align}
+\delta_m\propto a.
+\end{align}$$
+
 - 辐射扰动由于压强效应会发生声学振荡：
-$$\delta_r\sim \cos(k c_s\eta+\varphi),\qquad c_s\simeq \frac{1}{\sqrt{3}}.$$
+
+$$\begin{align}
+\delta_r\sim \cos(k c_s\eta+\varphi),\qquad c_s\simeq \frac{1}{\sqrt{3}}.
+\end{align}$$
 
 因此，小尺度模因为更早进入辐射主导时期的视界而被压制，这就是 $P_{mm}(k)$ 在大 $k$ 端下降的根本原因。
 
@@ -856,11 +1490,22 @@ P_mm(k, z=0)
 若原初谱近乎标度不变 $n_s\simeq 1$：
 
 - 在 $k\ll k_{\mathrm{eq}}$：
-$$T(k)\simeq 1,\qquad P_{mm}(k)\propto k^{n_s}\approx k.$$
+
+$$\begin{align}
+T(k)\simeq 1,\qquad P_{mm}(k)\propto k^{n_s}\approx k.
+\end{align}$$
+
 - 在 $k\gg k_{\mathrm{eq}}$：
-$$T(k)\sim \frac{\ln(k/k_{\mathrm{eq}})}{(k/k_{\mathrm{eq}})^2},$$
+
+$$\begin{align}
+T(k)\sim \frac{\ln(k/k_{\mathrm{eq}})}{(k/k_{\mathrm{eq}})^2},
+\end{align}$$
+
 因此
-$$P_{mm}(k)\propto k^{n_s-4}\ln^2(k/k_{\mathrm{eq}})\approx k^{-3}\ln^2 k.$$
+
+$$\begin{align}
+P_{mm}(k)\propto k^{n_s-4}\ln^2(k/k_{\mathrm{eq}})\approx k^{-3}\ln^2 k.
+\end{align}$$
 
 ### $k_{\mathrm{eq}}$、BAO 尺度与声学视界的区别
 
@@ -903,7 +1548,10 @@ $$P_{mm}(k)\propto k^{n_s-4}\ln^2(k/k_{\mathrm{eq}})\approx k^{-3}\ln^2 k.$$
 ### 核心定义与物理量
 
 CMB 各向异性描述的是天空方向 $\hat{\mathbf{n}}$ 上温度涨落
-$$\Theta(\hat{\mathbf{n}})\equiv \frac{\delta T}{T}(\hat{\mathbf{n}}).$$
+
+$$\begin{align}
+\Theta(\hat{\mathbf{n}})\equiv \frac{\delta T}{T}(\hat{\mathbf{n}}).
+\end{align}$$
 
 弱引力透镜描述的是光线在弱引力势中传播时的微小偏折，可用透镜势、偏折角、剪切与会聚表征。
 
@@ -912,22 +1560,25 @@ $$\Theta(\hat{\mathbf{n}})\equiv \frac{\delta T}{T}(\hat{\mathbf{n}}).$$
 高频标准答案就是以下四项：
 
 1. 内禀温度涨落：最后散射面上 $\Theta_0=\delta T/T$ 本身的空间起伏。
-2. Sachs-Wolfe 引力红移：光子离开势阱时发生引力红移。
-3. Doppler 效应：最后散射面上重子-光子流体本征速度沿视线方向的投影。
-4. Integrated Sachs-Wolfe 效应：光子传播过程中若引力势随时间演化，则沿线积分产生额外红蓝移。
+1. Sachs-Wolfe 引力红移：光子离开势阱时发生引力红移。
+1. Doppler 效应：最后散射面上重子-光子流体本征速度沿视线方向的投影。
+1. Integrated Sachs-Wolfe 效应：光子传播过程中若引力势随时间演化，则沿线积分产生额外红蓝移。
 
 压缩写法常记为
-$$\Theta_{\mathrm{obs}}\sim \Theta_0+\Psi+\hat{\mathbf{n}}\cdot \mathbf{v}_b+\int(\Phi'+\Psi')\,\mathrm{d}\eta.$$
+
+$$\begin{align}
+\Theta_{\mathrm{obs}}\sim \Theta_0+\Psi+\hat{\mathbf{n}}\cdot \mathbf{v}_b+\int(\Phi'+\Psi')\,\mathrm{d}\eta.
+\end{align}$$
 
 ### 最后散射前后的物理时间顺序
 
 考试里若要写得完整，可以按下列顺序组织：
 
 1. 很早时光子、电子、重子紧耦合，形成重子-光子流体。
-2. 原初扰动进入视界后，流体在引力和辐射压作用下发生声学振荡。
-3. 复合使自由电子显著减少。
-4. Thomson 散射率下降，光子退耦，形成最后散射面。
-5. 退耦后的 CMB 光子基本自由传播，但沿途仍受引力势变化与弱透镜影响。
+1. 原初扰动进入视界后，流体在引力和辐射压作用下发生声学振荡。
+1. 复合使自由电子显著减少。
+1. Thomson 散射率下降，光子退耦，形成最后散射面。
+1. 退耦后的 CMB 光子基本自由传播，但沿途仍受引力势变化与弱透镜影响。
 
 ### 四个 CMB 源项与 line-of-sight 的对应
 
@@ -943,17 +1594,41 @@ line-of-sight 思想是：今天看到的各向异性由“最后散射面局域
 ### 角功率谱与 cosmic variance
 
 把温度涨落展开成球谐函数：
-$$\Theta(\hat{\mathbf n})=\sum_{\ell=0}^\infty\sum_{m=-\ell}^{\ell}a_{\ell m}Y_{\ell m}(\hat{\mathbf n}).$$
+
+$$\begin{align}
+\Theta(\hat{\mathbf n})=\sum_{\ell=0}^\infty\sum_{m=-\ell}^{\ell}a_{\ell m}Y_{\ell m}(\hat{\mathbf n}).
+\end{align}$$
+
 若统计各向同性成立，则
-$$\langle a_{\ell m}\rangle=0,\qquad \langle a_{\ell m}a_{\ell' m'}^*\rangle=C_\ell\,\delta_{\ell\ell'}\delta_{mm'}.$$
+
+$$\begin{align}
+\langle a_{\ell m}\rangle=0,\qquad \langle a_{\ell m}a_{\ell' m'}^*\rangle=C_\ell\,\delta_{\ell\ell'}\delta_{mm'}.
+\end{align}$$
+
 因此角功率谱定义为
-$$C_\ell=\langle |a_{\ell m}|^2\rangle.$$
+
+$$\begin{align}
+C_\ell=\langle |a_{\ell m}|^2\rangle.
+\end{align}$$
+
 一个无偏估计量为
-$$\hat C_\ell=\frac{1}{2\ell+1}\sum_{m=-\ell}^{\ell}|a_{\ell m}|^2.$$
+
+$$\begin{align}
+\hat C_\ell=\frac{1}{2\ell+1}\sum_{m=-\ell}^{\ell}|a_{\ell m}|^2.
+\end{align}$$
+
 若 $a_{\ell m}$ 服从高斯统计，则
-$$\mathrm{Var}(\hat C_\ell)=\frac{2}{2\ell+1}C_\ell^2,$$
+
+$$\begin{align}
+\mathrm{Var}(\hat C_\ell)=\frac{2}{2\ell+1}C_\ell^2,
+\end{align}$$
+
 于是
-$$\Delta C_\ell=\sqrt{\frac{2}{2\ell+1}}\,C_\ell,\qquad \frac{\Delta C_\ell}{C_\ell}=\sqrt{\frac{2}{2\ell+1}}.$$
+
+$$\begin{align}
+\Delta C_\ell=\sqrt{\frac{2}{2\ell+1}}\,C_\ell,\qquad \frac{\Delta C_\ell}{C_\ell}=\sqrt{\frac{2}{2\ell+1}}.
+\end{align}$$
+
 这就是 cosmic variance。它说明低 $\ell$ 处可用的 $m$ 模数太少，因此即使实验无噪声也存在不可消除的统计误差。
 
 ### CMB 声学峰与阻尼的物理图像
@@ -1003,13 +1678,24 @@ CMB 透镜的主要观测量：
 ### 透镜势、偏折角、会聚、剪切之间的关系
 
 若把透镜写成二维势 $\phi(\hat{\mathbf n})$，则
-$$\mathbf d=\nabla\phi$$
+
+$$\begin{align}
+\mathbf d=\nabla\phi
+\end{align}$$
+
 是偏折角。
 
 放大矩阵由二阶导数决定，其中
-$$\kappa=-\frac{1}{2}\nabla^2\phi$$
+
+$$\begin{align}
+\kappa=-\frac{1}{2}\nabla^2\phi
+\end{align}$$
+
 描述各向同性放大或缩小，而剪切描述形状被拉伸成椭圆。常写为
-$$\gamma_1=\frac{1}{2}(\partial_1^2-\partial_2^2)\phi,\qquad \gamma_2=\partial_1\partial_2\phi.$$
+
+$$\begin{align}
+\gamma_1=\frac{1}{2}(\partial_1^2-\partial_2^2)\phi,\qquad \gamma_2=\partial_1\partial_2\phi.
+\end{align}$$
 
 因此：
 
@@ -1050,7 +1736,11 @@ Ia 型超新星经光变曲线宽度与颜色校正后可视为标准化烛光�
 - 测视星等 $m$
 - 由校准关系获得绝对星等 $M$
 - 得距离模数
-$$\mu=m-M=5\log_{10}\left(\frac{D_L}{10\,\mathrm{pc}}\right)$$
+
+$$\begin{align}
+\mu=m-M=5\log_{10}\left(\frac{D_L}{10\,\mathrm{pc}}\right)
+\end{align}$$
+
 - 反推出光度距离 $D_L(z)$
 
 SNIa 直接敏感于背景膨胀史，因此最常用来约束晚期暗能量。
@@ -1058,34 +1748,48 @@ SNIa 直接敏感于背景膨胀史，因此最常用来约束晚期暗能量。
 标准答题链条是：
 
 1. 通过局域样本校准 $M$。
-2. 对高红移 SNIa 测 $m(z)$。
-3. 得到 $\mu(z)=m(z)-M$。
-4. 再由
-$$\mu(z)=5\log_{10}\left(\frac{D_L}{10\,\mathrm{pc}}\right)$$
+1. 对高红移 SNIa 测 $m(z)$。
+1. 得到 $\mu(z)=m(z)-M$。
+1. 再由
+
+$$\begin{align}
+\mu(z)=5\log_{10}\left(\frac{D_L}{10\,\mathrm{pc}}\right)
+\end{align}$$
+
 得到 $D_L(z)$。
-5. 与理论模型 $D_L^{\mathrm{th}}(z;\Omega_{m0},\Omega_{\Lambda 0},w,\dots)$ 拟合，约束宇宙学参数。
+1. 与理论模型 $D_L^{\mathrm{th}}(z;\Omega_{m0},\Omega_{\Lambda 0},w,\dots)$ 拟合，约束宇宙学参数。
 
 ### BAO：标准尺
 
 BAO 的标准尺是拖曳时期留下的声学视界 $r_d$。
 
 若测到横向角尺度 $\Delta\theta$，则
-$$r_d=(1+z)D_A(z)\Delta\theta.$$
+
+$$\begin{align}
+r_d=(1+z)D_A(z)\Delta\theta.
+\end{align}$$
+
 因此
-$$D_A(z)=\frac{r_d}{(1+z)\Delta\theta}.$$
+
+$$\begin{align}
+D_A(z)=\frac{r_d}{(1+z)\Delta\theta}.
+\end{align}$$
 
 若测到径向红移间隔 $\Delta z$，则
-$$r_d=\frac{c\,\Delta z}{H(z)}.$$
+
+$$\begin{align}
+r_d=\frac{c\,\Delta z}{H(z)}.
+\end{align}$$
 
 实际观测常同时利用横向和径向 BAO，分别约束 $D_A(z)$ 与 $H(z)$。
 
 更完整地说，BAO 的观测量到推断量链条是：
 
 1. 由 CMB 或早期宇宙理论给出标准尺 $r_d$。
-2. 在星系两点相关函数或功率谱中测到 BAO 特征尺度。
-3. 横向 BAO 给出 $D_A(z)/r_d$。
-4. 径向 BAO 给出 $c/[H(z)r_d]$。
-5. 若只做各向同性平均，常得到组合量 $D_V(z)/r_d$。
+1. 在星系两点相关函数或功率谱中测到 BAO 特征尺度。
+1. 横向 BAO 给出 $D_A(z)/r_d$。
+1. 径向 BAO 给出 $c/[H(z)r_d]$。
+1. 若只做各向同性平均，常得到组合量 $D_V(z)/r_d$。
 
 ### AP 效应
 
@@ -1096,12 +1800,18 @@ Alcock-Paczynski 效应的核心思想是：
 - 就会人为引入横向与径向的形变差异。
 
 横向与径向距离分别为
-$$\Delta r_\perp=(1+z)D_A(z)\Delta\theta,\qquad \Delta r_\parallel=\frac{c\,\Delta z}{H(z)}.$$
+
+$$\begin{align}
+\Delta r_\perp=(1+z)D_A(z)\Delta\theta,\qquad \Delta r_\parallel=\frac{c\,\Delta z}{H(z)}.
+\end{align}$$
 
 因此 AP 效应约束的是
-$$F_{\mathrm{AP}}(z)=\frac{(1+z)D_A(z)H(z)}{c}.$$
 
-AP 题最标准的表述是：  
+$$\begin{align}
+F_{\mathrm{AP}}(z)=\frac{(1+z)D_A(z)H(z)}{c}.
+\end{align}$$
+
+AP 题最标准的表述是：
 “本征各向同性结构在错误宇宙学下会被映射成表观各向异性，因此通过恢复统计各向同性即可约束 $D_A(z)$ 与 $H(z)$ 的组合。”
 
 ### 标准尺 / 标准烛光 / 标准警报器
@@ -1127,7 +1837,10 @@ AP 题最标准的表述是：
 ### 核心定义与物理量
 
 Inflation 是一段近似指数膨胀阶段，满足
-$$\ddot a>0,\qquad \frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{1}{aH}\right)<0.$$
+
+$$\begin{align}
+\ddot a>0,\qquad \frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{1}{aH}\right)<0.
+\end{align}$$
 
 也就是说，共动哈勃半径 $1/(aH)$ 在 inflation 期间减小。
 
@@ -1143,100 +1856,196 @@ Inflation 通过让当前可观测宇宙在早期曾处于同一小因果连通�
 ### 标量场暴涨的最小框架
 
 若由标量场驱动暴涨，则
-$$\rho_\phi=\frac{1}{2}\dot\phi^2+V(\phi),\qquad p_\phi=\frac{1}{2}\dot\phi^2-V(\phi).$$
+
+$$\begin{align}
+\rho_\phi=\frac{1}{2}\dot\phi^2+V(\phi),\qquad p_\phi=\frac{1}{2}\dot\phi^2-V(\phi).
+\end{align}$$
 
 slow-roll 条件下
-$$\dot\phi^2\ll V,\qquad |\ddot\phi|\ll 3H|\dot\phi|,$$
+
+$$\begin{align}
+\dot\phi^2\ll V,\qquad |\ddot\phi|\ll 3H|\dot\phi|,
+\end{align}$$
+
 因此
-$$H^2\simeq \frac{8\pi G}{3}V,\qquad 3H\dot\phi\simeq -V'(\phi).$$
+
+$$\begin{align}
+H^2\simeq \frac{8\pi G}{3}V,\qquad 3H\dot\phi\simeq -V'(\phi).
+\end{align}$$
 
 slow-roll 参数常定义为
-$$\epsilon\equiv \frac{M_{\mathrm{Pl}}^2}{2}\left(\frac{V'}{V}\right)^2,\qquad \eta\equiv M_{\mathrm{Pl}}^2\frac{V''}{V}.$$
+
+$$\begin{align}
+\epsilon\equiv \frac{M_{\mathrm{Pl}}^2}{2}\left(\frac{V'}{V}\right)^2,\qquad \eta\equiv M_{\mathrm{Pl}}^2\frac{V''}{V}.
+\end{align}$$
 
 暴涨条件大致要求 $\epsilon\ll 1$。
 
 ### slow-roll 如何从动力学方程导出
 
 标量场在 FRW 中满足
-$$\ddot\phi+3H\dot\phi+V'(\phi)=0,$$
+
+$$\begin{align}
+\ddot\phi+3H\dot\phi+V'(\phi)=0,
+\end{align}$$
+
 同时 Friedmann 方程给出
-$$H^2=\frac{1}{3M_{\mathrm{Pl}}^2}\left(\frac{1}{2}\dot\phi^2+V\right).$$
+
+$$\begin{align}
+H^2=\frac{1}{3M_{\mathrm{Pl}}^2}\left(\frac{1}{2}\dot\phi^2+V\right).
+\end{align}$$
 
 若势能主导且场缓慢滚动，即
-$$\dot\phi^2\ll V,\qquad |\ddot\phi|\ll 3H|\dot\phi|,$$
+
+$$\begin{align}
+\dot\phi^2\ll V,\qquad |\ddot\phi|\ll 3H|\dot\phi|,
+\end{align}$$
+
 则上两式分别近似成
-$$H^2\simeq \frac{V}{3M_{\mathrm{Pl}}^2},\qquad 3H\dot\phi\simeq -V'.$$
+
+$$\begin{align}
+H^2\simeq \frac{V}{3M_{\mathrm{Pl}}^2},\qquad 3H\dot\phi\simeq -V'.
+\end{align}$$
+
 这就是 slow-roll 近似最常用的两条方程。
 
 ### $\epsilon_H$ 与 $\epsilon_V$
 
 几何 slow-roll 参数可定义为
-$$\epsilon_H\equiv -\frac{\dot H}{H^2}.$$
+
+$$\begin{align}
+\epsilon_H\equiv -\frac{\dot H}{H^2}.
+\end{align}$$
+
 对标量场，
-$$\dot H=-\frac{\dot\phi^2}{2M_{\mathrm{Pl}}^2},$$
+
+$$\begin{align}
+\dot H=-\frac{\dot\phi^2}{2M_{\mathrm{Pl}}^2},
+\end{align}$$
+
 因此
-$$\epsilon_H=\frac{\dot\phi^2}{2M_{\mathrm{Pl}}^2 H^2}.$$
+
+$$\begin{align}
+\epsilon_H=\frac{\dot\phi^2}{2M_{\mathrm{Pl}}^2 H^2}.
+\end{align}$$
 
 再用 slow-roll 近似
-$$\dot\phi\simeq -\frac{V'}{3H},\qquad H^2\simeq \frac{V}{3M_{\mathrm{Pl}}^2},$$
+
+$$\begin{align}
+\dot\phi\simeq -\frac{V'}{3H},\qquad H^2\simeq \frac{V}{3M_{\mathrm{Pl}}^2},
+\end{align}$$
+
 可得
-$$\epsilon_H\simeq \frac{M_{\mathrm{Pl}}^2}{2}\left(\frac{V'}{V}\right)^2\equiv \epsilon_V.$$
+
+$$\begin{align}
+\epsilon_H\simeq \frac{M_{\mathrm{Pl}}^2}{2}\left(\frac{V'}{V}\right)^2\equiv \epsilon_V.
+\end{align}$$
+
 所以在 slow-roll 阶段，几何定义与势能定义近似一致。
 
 ### e-fold 数
 
 定义
-$$N\equiv \ln\frac{a_{\mathrm{end}}}{a}=\int_t^{t_{\mathrm{end}}}H\,\mathrm{d}t.$$
+
+$$\begin{align}
+N\equiv \ln\frac{a_{\mathrm{end}}}{a}=\int_t^{t_{\mathrm{end}}}H\,\mathrm{d}t.
+\end{align}$$
 
 在 slow-roll 下，
-$$N\simeq \frac{1}{M_{\mathrm{Pl}}^2}\int_{\phi_{\mathrm{end}}}^{\phi}\frac{V}{V'}\,\mathrm{d}\phi.$$
+
+$$\begin{align}
+N\simeq \frac{1}{M_{\mathrm{Pl}}^2}\int_{\phi_{\mathrm{end}}}^{\phi}\frac{V}{V'}\,\mathrm{d}\phi.
+\end{align}$$
 
 解决视界问题通常需要
-$$N\sim 50\text{--}60,$$
+
+$$\begin{align}
+N\sim 50\text{--}60,
+\end{align}$$
+
 但精确数值依赖 inflation 结束能标和再热历史。
 
 ### 视界问题的尺度比较链条
 
 没有 inflation 时，在辐射和物质主导时期
-$$\frac{1}{aH}$$
+
+$$\begin{align}
+\frac{1}{aH}
+\end{align}$$
+
 随时间增大，因此今天可观测宇宙中的两个相距很远区域，在复合时对应于多个彼此不因果连通的小块。
 
 Inflation 期间则相反：
-$$\frac{\mathrm d}{\mathrm dt}\left(\frac{1}{aH}\right)<0.$$
+
+$$\begin{align}
+\frac{\mathrm d}{\mathrm dt}\left(\frac{1}{aH}\right)<0.
+\end{align}$$
+
 这意味着今天的大尺度模在早期曾经位于视界内：
 
 1. 先在 inflation 前或 inflation 早期处于 $k>aH$ 的因果连通区。
-2. inflation 使其被拉到 $k<aH$ 的超视界区。
-3. 晚期辐射/物质主导时，共动哈勃半径重新增大，这些模再进入视界。
+1. inflation 使其被拉到 $k<aH$ 的超视界区。
+1. 晚期辐射/物质主导时，共动哈勃半径重新增大，这些模再进入视界。
 
 因此 inflation 让今天的大尺度结构都可以起源于一个早期因果连通区域。
 
 ### 题面中常见的 e-fold 估算套路
 
 若题目给定 inflation 结束能标、再热阶段的 $w$ 和再热温度，则通常按
-$$N_{\min}\simeq \ln\left(\frac{a_{\mathrm{end}}H_{\mathrm{end}}}{a_0H_0}\right)$$
+
+$$\begin{align}
+N_{\min}\simeq \ln\left(\frac{a_{\mathrm{end}}H_{\mathrm{end}}}{a_0H_0}\right)
+\end{align}$$
+
 来估算，并把
-$$\frac{a_{\mathrm{end}}}{a_0}=\frac{a_{\mathrm{end}}}{a_{\mathrm{rh}}}\frac{a_{\mathrm{rh}}}{a_0}$$
+
+$$\begin{align}
+\frac{a_{\mathrm{end}}}{a_0}=\frac{a_{\mathrm{end}}}{a_{\mathrm{rh}}}\frac{a_{\mathrm{rh}}}{a_0}
+\end{align}$$
+
 拆成：
 
 - inflation 结束到再热完成：用 $\rho\propto a^{-3(1+w)}$。
 - 再热完成到今天：用熵守恒 $aTg_{*s}^{1/3}=\text{const}$。
 
 对本次 $exam.md$ 的参数，
-$$\rho_{\mathrm{end}}^{1/4}=10^{15}\,\mathrm{GeV},\qquad w=0,\qquad T_{\mathrm{rh}}=10^5\,\mathrm{GeV},$$
+
+$$\begin{align}
+\rho_{\mathrm{end}}^{1/4}=10^{15}\,\mathrm{GeV},\qquad w=0,\qquad T_{\mathrm{rh}}=10^5\,\mathrm{GeV},
+\end{align}$$
+
 估算得到
-$$N_{\min}\approx 50.1.$$
+
+$$\begin{align}
+N_{\min}\approx 50.1.
+\end{align}$$
 
 把数量级拆得更细一点：
 
 1. inflation 结束时
-$$H_{\mathrm{end}}\simeq \sqrt{\frac{\rho_{\mathrm{end}}}{3M_{\mathrm{Pl}}^2}}\simeq \frac{(10^{15}\,\mathrm{GeV})^2}{\sqrt{3}\,M_{\mathrm{Pl}}}.$$
-2. 若再热前 $w=0$，则
-$$\rho\propto a^{-3},\qquad \frac{a_{\mathrm{rh}}}{a_{\mathrm{end}}}=\left(\frac{\rho_{\mathrm{end}}}{\rho_{\mathrm{rh}}}\right)^{1/3}=\left(\frac{10^{15}}{10^5}\right)^{4/3}.$$
-3. 再热后熵守恒给出
-$$\frac{a_{\mathrm{rh}}}{a_0}=\frac{T_0}{T_{\mathrm{rh}}}\left(\frac{g_{*s,0}}{g_{*s,\mathrm{rh}}}\right)^{1/3}.$$
-4. 最后代入
-$$N_{\min}\simeq \ln\left(\frac{H_{\mathrm{end}}}{H_0}\right)+\ln\left(\frac{a_{\mathrm{end}}}{a_0}\right)$$
+
+$$\begin{align}
+H_{\mathrm{end}}\simeq \sqrt{\frac{\rho_{\mathrm{end}}}{3M_{\mathrm{Pl}}^2}}\simeq \frac{(10^{15}\,\mathrm{GeV})^2}{\sqrt{3}\,M_{\mathrm{Pl}}}.
+\end{align}$$
+
+1. 若再热前 $w=0$，则
+
+$$\begin{align}
+\rho\propto a^{-3},\qquad \frac{a_{\mathrm{rh}}}{a_{\mathrm{end}}}=\left(\frac{\rho_{\mathrm{end}}}{\rho_{\mathrm{rh}}}\right)^{1/3}=\left(\frac{10^{15}}{10^5}\right)^{4/3}.
+\end{align}$$
+
+1. 再热后熵守恒给出
+
+$$\begin{align}
+\frac{a_{\mathrm{rh}}}{a_0}=\frac{T_0}{T_{\mathrm{rh}}}\left(\frac{g_{*s,0}}{g_{*s,\mathrm{rh}}}\right)^{1/3}.
+\end{align}$$
+
+1. 最后代入
+
+$$\begin{align}
+N_{\min}\simeq \ln\left(\frac{H_{\mathrm{end}}}{H_0}\right)+\ln\left(\frac{a_{\mathrm{end}}}{a_0}\right)
+\end{align}$$
+
 即可得到约 $50$ 个 e-fold。
 
 ### 暴涨扰动的高频补充
@@ -1244,13 +2053,28 @@ $$N_{\min}\simeq \ln\left(\frac{H_{\mathrm{end}}}{H_0}\right)+\ln\left(\frac{a_{
 若考到 inflation 如何产生原初扰动，可记住：
 
 - 标量曲率扰动的无量纲谱振幅近似为
-$$\Delta_{\mathcal{R}}^2(k)\simeq \frac{H^2}{8\pi^2\epsilon M_{\mathrm{Pl}}^2}\bigg|_{k=aH}.$$
+
+$$\begin{align}
+\Delta_{\mathcal{R}}^2(k)\simeq \frac{H^2}{8\pi^2\epsilon M_{\mathrm{Pl}}^2}\bigg|_{k=aH}.
+\end{align}$$
+
 - 张量扰动谱近似为
-$$\Delta_t^2(k)\simeq \frac{2H^2}{\pi^2 M_{\mathrm{Pl}}^2}\bigg|_{k=aH}.$$
+
+$$\begin{align}
+\Delta_t^2(k)\simeq \frac{2H^2}{\pi^2 M_{\mathrm{Pl}}^2}\bigg|_{k=aH}.
+\end{align}$$
+
 - 因而
-$$r\equiv \frac{\Delta_t^2}{\Delta_{\mathcal{R}}^2}\simeq 16\epsilon.$$
+
+$$\begin{align}
+r\equiv \frac{\Delta_t^2}{\Delta_{\mathcal{R}}^2}\simeq 16\epsilon.
+\end{align}$$
+
 - 标量谱指数
-$$n_s-1\simeq -6\epsilon+2\eta.$$
+
+$$\begin{align}
+n_s-1\simeq -6\epsilon+2\eta.
+\end{align}$$
 
 其中：
 
@@ -1258,39 +2082,86 @@ $$n_s-1\simeq -6\epsilon+2\eta.$$
 - $n_s$ 描述谱是否精确标度不变；$n_s=1$ 对应 Harrison-Zel'dovich 谱。
 - $r$ 比较张量与标量的相对强度，因此直接反映暴涨能标与 slow-roll 斜率。
 
-若题目问“为什么 inflation 产生近乎标度不变谱”，最标准的答法是：  
+若题目问“为什么 inflation 产生近乎标度不变谱”，最标准的答法是：
 因为在 quasi-de Sitter 背景中，不同 $k$ 模穿越视界时 $H$ 和 $\epsilon$ 变化都很慢，所以各尺度获得的涨落振幅几乎相同，只留下小的 tilt，即 $n_s-1$ 由 slow-roll 参数控制。
 
 ### 张量模式的最短推导骨架
 
 若只保留张量扰动，自由度写成
-$$\mathrm d s^2=a^2(\tau)\left[-\mathrm d\tau^2+\left(\delta_{ij}+h_{ij}\right)\mathrm d x^i\mathrm d x^j\right],\qquad \partial^i h_{ij}=0,\qquad h^i_{\ i}=0.$$
+
+$$\begin{align}
+\mathrm d s^2=a^2(\tau)\left[-\mathrm d\tau^2+\left(\delta_{ij}+h_{ij}\right)\mathrm d x^i\mathrm d x^j\right],\qquad \partial^i h_{ij}=0,\qquad h^i_{\ i}=0.
+\end{align}$$
+
 把 Einstein-Hilbert 作用量展开到二阶，得到
-$$S_T^{(2)}=\frac{M_P^2}{8}\int \mathrm d\tau\,\mathrm d^3x\,a^2\left[(h'_{ij})^2-(\partial_k h_{ij})^2\right].$$
+
+$$\begin{align}
+S_T^{(2)}=\frac{M_P^2}{8}\int \mathrm d\tau\,\mathrm d^3x\,a^2\left[(h'_{ij})^2-(\partial_k h_{ij})^2\right].
+\end{align}$$
+
 对每个偏振模式引入规范化变量
-$$v_\lambda\equiv \frac{aM_P}{2}h_\lambda,$$
+
+$$\begin{align}
+v_\lambda\equiv \frac{aM_P}{2}h_\lambda,
+\end{align}$$
+
 则作用量化成
-$$S_T^{(2)}=\frac{1}{2}\sum_\lambda\int \mathrm d\tau\,\mathrm d^3k\left[|v_\lambda'|^2-\left(k^2-\frac{a''}{a}\right)|v_\lambda|^2\right].$$
+
+$$\begin{align}
+S_T^{(2)}=\frac{1}{2}\sum_\lambda\int \mathrm d\tau\,\mathrm d^3k\left[|v_\lambda'|^2-\left(k^2-\frac{a''}{a}\right)|v_\lambda|^2\right].
+\end{align}$$
+
 于是模方程为
-$$v_{\lambda,k}''+\left(k^2-\frac{a''}{a}\right)v_{\lambda,k}=0.$$
+
+$$\begin{align}
+v_{\lambda,k}''+\left(k^2-\frac{a''}{a}\right)v_{\lambda,k}=0.
+\end{align}$$
+
 在 de Sitter 近似下
-$$a(\tau)=-\frac{1}{H\tau},\qquad \frac{a''}{a}=\frac{2}{\tau^2},$$
+
+$$\begin{align}
+a(\tau)=-\frac{1}{H\tau},\qquad \frac{a''}{a}=\frac{2}{\tau^2},
+\end{align}$$
+
 所以
-$$v_k''+\left(k^2-\frac{2}{\tau^2}\right)v_k=0.$$
+
+$$\begin{align}
+v_k''+\left(k^2-\frac{2}{\tau^2}\right)v_k=0.
+\end{align}$$
+
 取 Bunch-Davies 初态
-$$v_k\to \frac{e^{-ik\tau}}{\sqrt{2k}}\qquad (-k\tau\to\infty),$$
+
+$$\begin{align}
+v_k\to \frac{e^{-ik\tau}}{\sqrt{2k}}\qquad (-k\tau\to\infty),
+\end{align}$$
+
 对应解可写为
-$$v_k=\frac{1}{\sqrt{2k}}\left(1-\frac{i}{k\tau}\right)e^{-ik\tau}.$$
+
+$$\begin{align}
+v_k=\frac{1}{\sqrt{2k}}\left(1-\frac{i}{k\tau}\right)e^{-ik\tau}.
+\end{align}$$
+
 在超视界极限 $|k\tau|\ll 1$，
-$$\Delta_{t,\lambda}^2(k)\equiv \frac{k^3}{2\pi^2}|h_k|^2=\frac{H^2}{\pi^2M_P^2},$$
+
+$$\begin{align}
+\Delta_{t,\lambda}^2(k)\equiv \frac{k^3}{2\pi^2}|h_k|^2=\frac{H^2}{\pi^2M_P^2},
+\end{align}$$
+
 加上两个偏振后得到
-$$\Delta_t^2(k)=\frac{2H^2}{\pi^2M_P^2}\bigg|_{k=aH}.$$
+
+$$\begin{align}
+\Delta_t^2(k)=\frac{2H^2}{\pi^2M_P^2}\bigg|_{k=aH}.
+\end{align}$$
+
 这就是作业里张量谱题最短但完整的答题骨架。
 
 ### 再热时期振荡标量场的有效状态方程
 
 若势能 $V(\phi)\propto \phi^n$，快速振荡时间平均后
-$$w=\frac{n-2}{n+2}.$$
+
+$$\begin{align}
+w=\frac{n-2}{n+2}.
+\end{align}$$
 
 特别地：
 
@@ -1323,32 +2194,60 @@ Inflation 的本质不是“宇宙膨胀得很快”这么简单，而是“共�
 ### 10.1 $\Lambda\mathrm{CDM}$ 在 $z=1$ 的典型数值
 
 取
-$$\Omega_{m0}=0.3,\qquad \Omega_{\Lambda 0}=0.7,\qquad H_0=70\,\mathrm{km\,s^{-1}\,Mpc^{-1}},$$
+
+$$\begin{align}
+\Omega_{m0}=0.3,\qquad \Omega_{\Lambda 0}=0.7,\qquad H_0=70\,\mathrm{km\,s^{-1}\,Mpc^{-1}},
+\end{align}$$
+
 忽略辐射，则
-$$H(z)=H_0\sqrt{\Omega_{m0}(1+z)^3+\Omega_{\Lambda 0}}.$$
+
+$$\begin{align}
+H(z)=H_0\sqrt{\Omega_{m0}(1+z)^3+\Omega_{\Lambda 0}}.
+\end{align}$$
 
 在 $z=1$：
-$$H(z=1)\approx 123.25\,\mathrm{km\,s^{-1}\,Mpc^{-1}},$$
-$$\chi(z=1)\approx 3.30\,\mathrm{Gpc},\qquad D_L(z=1)\approx 6.61\,\mathrm{Gpc},\qquad D_A(z=1)\approx 1.65\,\mathrm{Gpc}.$$
+
+$$\begin{align}
+H(z=1)\approx 123.25\,\mathrm{km\,s^{-1}\,Mpc^{-1}},
+\end{align}$$
+
+$$\begin{align}
+\chi(z=1)\approx 3.30\,\mathrm{Gpc},\qquad D_L(z=1)\approx 6.61\,\mathrm{Gpc},\qquad D_A(z=1)\approx 1.65\,\mathrm{Gpc}.
+\end{align}$$
 
 从大爆炸到 $z=1$ 的宇宙年龄约为
-$$t(z=1)\approx 5.75\,\mathrm{Gyr}.$$
+
+$$\begin{align}
+t(z=1)\approx 5.75\,\mathrm{Gyr}.
+\end{align}$$
 
 ### 10.2 现在的光子与中微子背景
 
 现在的 CMB 温度约为
-$$T_{\gamma,0}\simeq 2.725\,\mathrm{K}.$$
+
+$$\begin{align}
+T_{\gamma,0}\simeq 2.725\,\mathrm{K}.
+\end{align}$$
 
 对应的光子数密度与能量密度近似为
-$$n_{\mathrm{CMB}}\approx 411\,\mathrm{cm}^{-3},\qquad \Omega_{\gamma,0}\approx 2.47\times 10^{-5}.$$
+
+$$\begin{align}
+n_{\mathrm{CMB}}\approx 411\,\mathrm{cm}^{-3},\qquad \Omega_{\gamma,0}\approx 2.47\times 10^{-5}.
+\end{align}$$
 
 中微子背景温度为
-$$T_{\nu,0}=\left(\frac{4}{11}\right)^{1/3}T_{\gamma,0}\simeq 1.95\,\mathrm{K}.$$
+
+$$\begin{align}
+T_{\nu,0}=\left(\frac{4}{11}\right)^{1/3}T_{\gamma,0}\simeq 1.95\,\mathrm{K}.
+\end{align}$$
 
 ### 10.3 中微子质量的宇宙学约束
 
 若中微子今天非相对论，则
-$$\Omega_{\nu,0}h^2\simeq \frac{\sum_f m_{\nu_f}}{94\,\mathrm{eV}}.$$
+
+$$\begin{align}
+\Omega_{\nu,0}h^2\simeq \frac{\sum_f m_{\nu_f}}{94\,\mathrm{eV}}.
+\end{align}$$
 
 这给出中微子总质量与宇宙学能量密度之间的直接联系。
 
@@ -1357,17 +2256,34 @@ $$\Omega_{\nu,0}h^2\simeq \frac{\sum_f m_{\nu_f}}{94\,\mathrm{eV}}.$$
 这几类题都出现在作业里，但不属于本次期末主线。若老师临时扩题，可以只记主结论，把它们当作“附录速查”而不是主体复习线：
 
 $f(R)$ 引力场方程：
-$$f'(R)R_{\mu\nu}-\frac{1}{2}f(R)g_{\mu\nu}-\left(\nabla_\mu\nabla_\nu-g_{\mu\nu}\Box\right)f'(R)=8\pi G T_{\mu\nu}.$$
+
+$$\begin{align}
+f'(R)R_{\mu\nu}-\frac{1}{2}f(R)g_{\mu\nu}-\left(\nabla_\mu\nabla_\nu-g_{\mu\nu}\Box\right)f'(R)=8\pi G T_{\mu\nu}.
+\end{align}$$
 
 共形变换
-$$\hat g_{\mu\nu}=\Omega^2 g_{\mu\nu}$$
+
+$$\begin{align}
+\hat g_{\mu\nu}=\Omega^2 g_{\mu\nu}
+\end{align}$$
+
 下，$D$ 维 Ricci 标量的一般公式为
-$$\hat R=\Omega^{-2}\left[R-2(D-1)\Box\ln\Omega-(D-1)(D-2)(\nabla\ln\Omega)^2\right].$$
+
+$$\begin{align}
+\hat R=\Omega^{-2}\left[R-2(D-1)\Box\ln\Omega-(D-1)(D-2)(\nabla\ln\Omega)^2\right].
+\end{align}$$
+
 在四维时空中可改写成
-$$\hat R=\frac{1}{\Omega^2}R-\frac{6}{\Omega^3}\Box\Omega.$$
+
+$$\begin{align}
+\hat R=\frac{1}{\Omega^2}R-\frac{6}{\Omega^3}\Box\Omega.
+\end{align}$$
 
 LTB 模型是球对称但非均匀的尘埃宇宙学解，其度规为
-$$\mathrm{d}s^2=-\mathrm{d}t^2+X^2(t,r)\mathrm{d}r^2+Y^2(t,r)\left(\mathrm{d}\theta^2+\sin^2\theta\,\mathrm{d}\phi^2\right).$$
+
+$$\begin{align}
+\mathrm{d}s^2=-\mathrm{d}t^2+X^2(t,r)\mathrm{d}r^2+Y^2(t,r)\left(\mathrm{d}\theta^2+\sin^2\theta\,\mathrm{d}\phi^2\right).
+\end{align}$$
 
 若没明确考广义相对论专题，这些项在开卷时应放低优先级。
 

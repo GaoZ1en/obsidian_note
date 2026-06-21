@@ -42,18 +42,18 @@ $$\begin{align}
 
 The renormalized gravitational action is
 
-$$
+$$\begin{align}
 S[g]=\frac{1}{16\pi G}\int_M\mathrm{d}^3x\sqrt{-g}(R+2)
 +\frac{1}{8\pi G}\int_\Gamma\mathrm{d}^2x\sqrt{-\gamma}(K-1).
-$$
+\end{align}$$
 
 Here the spacetime region $M$ is bounded by the initial and final Cauchy surfaces $\Sigma _{i}$ and $\Sigma _{f}$, together with the timelike cutoff surface $\Gamma$. Thus $\partial M=\Sigma_i\cup\Sigma_f\cup\Gamma$. The metric induced on $\Gamma$ is denoted by $\gamma_{ab}$, and $K$ is the trace of its extrinsic curvature. The counterterm is the standard local counterterm for asymptotically AdS$_3$ gravity with unit AdS radius.
 
 We expand around the global AdS$_3$ background as
 
-$$
+$$\begin{align}
 g_{\mu\nu}=g^{(0)}_{\mu\nu}+h_{\mu\nu}.
-$$
+\end{align}$$
 
 The perturbation obeys Brown-Henneaux boundary conditions:
 
@@ -71,12 +71,12 @@ $$\begin{align}
 
 Expanding the bulk part of the action around the background gives
 
-$$
+$$\begin{align}
 S_{\mathrm{bulk}}[g^{(0)}+h]
 =\frac{1}{16\pi G}\int_M\mathrm{d}^3x\sqrt{-g^{(0)}}
 \left(\mathcal{L}^{(0)}+\mathcal{L}^{(1)}+\mathcal{L}^{(2)}\right)
 +\mathcal{O}(h^3),
-$$
+\end{align}$$
 
 where
 

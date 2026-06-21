@@ -39,7 +39,7 @@ $$\begin{align}
 (\alpha+\beta+k+1)P_{k}^{(\alpha,\beta)}(x)-(1-x) \frac{\mathrm{d}}{\mathrm{d}x}P_{k}^{(\alpha,\beta)}(x)=(\alpha+\beta+k+1)P_{k}^{(\alpha,\beta+1)}(x)
 \end{align}$$
 
-and set $\displaystyle{\alpha=\Delta-1,\beta=n-\bar{n},k=\bar{n}}$. and the action of $\displaystyle{\mathcal{L}_{\bar{\xi}_{-1}}}$ is the same by symmetry $\displaystyle{n\leftrightarrow \bar{n}}$. thus by induction, we have proved our assumption. 
+and set $\displaystyle{\alpha=\Delta-1,\beta=n-\bar{n},k=\bar{n}}$. and the action of $\displaystyle{\mathcal{L}_{\bar{\xi}_{-1}}}$ is the same by symmetry $\displaystyle{n\leftrightarrow \bar{n}}$. thus by induction, we have proved our assumption.
 
 ---
 
@@ -48,6 +48,7 @@ we will prove the identity used above. we start from the recurrence relation of 
 $$\begin{align}
 \gamma F-\alpha zF(\alpha+1,\gamma+1)-\gamma F(\beta-1) & =0 \tag{1}
 \end{align}$$
+
 t
 set $\displaystyle{\alpha\to-k,\beta\to k+\alpha+\beta+1,\gamma\to \alpha+1,z\to \frac{1-x}{2}}$, we have
 

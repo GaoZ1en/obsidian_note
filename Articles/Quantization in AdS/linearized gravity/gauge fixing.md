@@ -12,7 +12,7 @@ for a general configuration $\displaystyle{h^{\mu \nu}}$ that satisfies the asym
 $$\begin{align}
 \begin{array}{c|ccc}
 \mathcal{O}(r^{n}) & h_{tt}, h_{t\phi}, h_{\phi \phi} & h_{tr},h_{r\phi} & h_{rr} \\
-\hline & 0 & -3 & -4 
+\hline & 0 & -3 & -4
 \end{array} \\
 \begin{array}{c|cccc}
 \mathcal{O}(r^{n}) & h_{t}^{~t},h_{t}^{~\phi},h_{\phi}^{~t},h_{\phi}^{~\phi} & h_{t}^{~r},h_{\phi}^{~r} & h_{r}^{~t},h_{r}^{~\phi} & h_{r}^{~r} \\

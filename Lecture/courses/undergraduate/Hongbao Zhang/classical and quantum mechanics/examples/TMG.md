@@ -24,7 +24,8 @@ $$
 
 where
 
-$$\tag{1.3}
+$$
+\tag{1.3}
 \begin{align}
 2\delta \Gamma \wedge \Omega & =\delta \Gamma ^{\mu}_{\nu \rho}R^{\nu}_{\mu \sigma \lambda}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} \\
  & =\frac{1}{2}(\nabla _{\nu}\delta g_{\mu \rho}+\nabla _{\rho}\delta g_{\mu \nu}-\nabla _{\mu}\delta g_{\nu \rho})R^{\nu \mu}_{~~~~\sigma \lambda}\mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} \\
@@ -36,7 +37,8 @@ $$
 
 where
 
-$$\tag{1.4}
+$$
+\tag{1.4}
 \begin{align}
 C^{\mu \nu}  & = \varepsilon ^{\mu\sigma \lambda}\nabla _{\rho}R^{\nu \rho}_{~~~~\sigma \lambda} \\
  & =\varepsilon ^{\mu \sigma \lambda}\nabla _{\sigma}\left( R^{\mu}_{\lambda}-\frac{1}{4}\delta ^{\mu}_{\lambda}R \right)
@@ -45,7 +47,8 @@ $$
 
 is the Cotton tensor. we have used that
 
-$$\tag{1.5}
+$$
+\tag{1.5}
 \begin{align}
 \mathrm{d}x^{\rho}\wedge \mathrm{d}x^{\sigma}\wedge \mathrm{d}x^{\lambda} & =\frac{1}{3!}\varepsilon ^{\rho \sigma \lambda}\varepsilon _{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
 R^{\nu \mu}_{~~~~\sigma \lambda} & =(\delta ^{\nu}_{\sigma}R^{\mu}_{\lambda}+\delta ^{\mu}_{\lambda}R^{\nu}_{\sigma}-\delta ^{\nu}_{\lambda}R^{\mu}_{\sigma}-\delta ^{\mu}_{\sigma}R^{\nu}_{\rho})-\frac{1}{2}R(\delta ^{\nu}_{\sigma}\delta ^{\mu}_{\lambda}-\delta ^{\mu}_{\sigma}\delta ^{\nu}_{\lambda})
@@ -54,7 +57,8 @@ $$
 
 the symplectic potential is
 
-$$\tag{1.6}
+$$
+\tag{1.6}
 \begin{align}
 \Theta _{\text{gCS}} & =-\mathrm{Tr}(\Gamma \wedge \delta \Gamma)+n_{\nu}\varepsilon ^{\rho \sigma \lambda}R^{\nu \mu}_{~~~~\sigma \lambda}\delta g_{\mu \rho}\varepsilon _{\Gamma}
 \end{align}

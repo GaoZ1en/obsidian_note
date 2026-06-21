@@ -16,7 +16,8 @@ $$\begin{align}
 \Pi^{\mu \nu}(q^{2})=(g^{\mu \nu}q^{2}-q^{\mu}q^{\nu})\Pi & (q^{2})
 \end{align}$$
 
-*sol*. 
+*sol*.
+
 ### Feynman rules
 
 the free Lagrangian for the complex scalar field is $\displaystyle{\mathcal{L}_{0}=\partial _{\mu}\phi ^{*}\partial ^{\mu}\phi-m^{2}\phi ^{*}\phi}$. the propagator for the complex field is defined as $\displaystyle{\langle 0|T\phi (x)\phi ^{*}(y)|0\rangle}$. since $\displaystyle{\phi}$ satisfies the same klein-gordon equation as a real scalar field, the propagator is identical in form:
@@ -48,9 +49,11 @@ $$\begin{align}
 
 thus the feynman rule for the vertex is **$-ie(p+p')^{\mu}$** (where $\displaystyle{p,p'}$ are the momenta along the charge flow direction).
 - **4-point vertex (seagull)**:
+
 $$\begin{align}
 e^{2}g^{\mu \nu}A_{\mu}A_{\nu}\phi ^{*}\phi & \to e^{2}g^{\mu \nu}\varepsilon _{\mu}\varepsilon _{\nu}
 \end{align}$$
+
 thus the feynman rule for the vertex is **$2ie^{2}g^{\mu \nu}$** (for two photons $\displaystyle{\mu,\nu}$). the extra factor of 2 is due to the two identical photons.
 
 ### cross section $\displaystyle{e^{+}e^{-}\to \phi \phi ^{*}}$
@@ -210,11 +213,13 @@ $$\begin{align}
 \end{align}$$
 
 1.  **$\displaystyle{A^{(0)}}$ term**: corresponds to setting all $\displaystyle{k_{i}=0}$ in the propagators.
-    $$\begin{align}
+
+$$\begin{align}
     A^{(0)} & \sim \int \mathrm{d}^{4}p \mathrm{Tr}\left[\gamma ^{\mu} \frac{1}{\not{p}-m}\gamma ^{\nu} \frac{1}{\not{p}-m}\gamma ^{\rho} \frac{1}{\not{p}-m}\gamma ^{\sigma} \frac{1}{\not{p}-m}\right]
-    \end{align}$$
+\end{align}$$
+
     physically, this term represents a local 4-photon coupling $\displaystyle{(A_{\mu}A^{\mu})^{2}}$, which is **not gauge invariant**. thus the gauge symmetry requires $\displaystyle{A^{(0)}=0}$ (or it is removed by regulariztion).
-2.  **$\displaystyle{A^{(1)}, A^{(2)}, A^{(3)}}$ terms**: similarly, there are no gauge invariant local operators of dimension 5, 6, or 7 for the photon field (the lowest is the Euler-Heisenberg term $\displaystyle{(F_{\mu \nu}F^{\mu \nu})^{2}\sim k^{4}}$ of dimension 8). therefore, all terms below $\displaystyle{k^{4}}$ must vanish or cancel in the sum of diagrams due to gauge invariance.
+1.  **$\displaystyle{A^{(1)}, A^{(2)}, A^{(3)}}$ terms**: similarly, there are no gauge invariant local operators of dimension 5, 6, or 7 for the photon field (the lowest is the Euler-Heisenberg term $\displaystyle{(F_{\mu \nu}F^{\mu \nu})^{2}\sim k^{4}}$ of dimension 8). therefore, all terms below $\displaystyle{k^{4}}$ must vanish or cancel in the sum of diagrams due to gauge invariance.
 
 the first non-vanishing contribution is of order $\displaystyle{k^{4}}$. the loop integral for this term behaves as:
 
@@ -224,5 +229,3 @@ $$\begin{align}
 \end{align}$$
 
 which is UV convergent ($\displaystyle{D_{\text{eff}}=4-8=-4}$). thus the box diagram is finite.
-
-

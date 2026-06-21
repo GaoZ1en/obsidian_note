@@ -9,8 +9,8 @@ C & = \frac{1}{16\pi G}\lim_{r \to \infty} \int_{S_{r}} \left( \partial_{i} h_{i
 consider the $t = \text{const}$ spacelike hypersurface $\Sigma$ in the Schwarzschild spacetime, expressed in standard Schwarzschild coordinates $(t, r, \theta, \phi)$:
 
 1. compute the induced three-metric $h_{ab}$ on this hypersurface $\Sigma$.
-2. rewrite and expand this metric at spatial infinity in terms of the asymptotically Cartesian coordinates $\{x^{i}\}$ compatible with $\Sigma$, keeping terms up to order $\mathcal{O}(r^{-1})$.
-3. substitute the resulting expression into the formula above and take the limit $r \to \infty$ to verify that $C = M$.
+1. rewrite and expand this metric at spatial infinity in terms of the asymptotically Cartesian coordinates $\{x^{i}\}$ compatible with $\Sigma$, keeping terms up to order $\mathcal{O}(r^{-1})$.
+1. substitute the resulting expression into the formula above and take the limit $r \to \infty$ to verify that $C = M$.
 
 *sol*.
 
@@ -20,7 +20,7 @@ $$\begin{align}
 \mathrm{d}s^{2}_{\Sigma} & =\frac{\mathrm{d}r^{2}}{1-\frac{2GM}{r}}+r^{2}\mathrm{d}\theta ^{2}+r^{2}\sin ^{2}\theta \mathrm{d}\phi ^{2}
 \end{align}$$
 
-2. we have
+1. we have
 
 $$\begin{align}
 \mathrm{d}s^{2}_{\Sigma} & =\left( 1+\frac{2GM}{r}+\mathcal{O}(r^{-2}) \right)\mathrm{d}r^{2}+r^{2}\mathrm{d}\theta ^{2}+r^{2}\sin ^{2}\theta \mathrm{d}\phi ^{2} \\
@@ -28,7 +28,7 @@ $$\begin{align}
 \implies h_{ij} & =\delta _{ij}+\frac{2GMx_{i}x_{j}}{r^{3}}
 \end{align}$$
 
-3. we have
+1. we have
 
 $$\begin{align}
 h_{ij}n^{i}n^{j} & =1\implies n^{j}=\frac{x^{j}}{r}

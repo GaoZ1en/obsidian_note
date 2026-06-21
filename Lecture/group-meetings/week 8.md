@@ -17,7 +17,8 @@ PI那里的人
 
 希望加入合适的边界项后，使得
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \delta S & =\int_{M}E^{\mu \nu}\delta g_{\mu \nu}+\int_{\Gamma}T^{ab}\delta g_{ab}
 \end{align}

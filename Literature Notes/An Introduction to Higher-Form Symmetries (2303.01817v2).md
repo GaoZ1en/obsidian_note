@@ -60,7 +60,7 @@ $$\begin{align}
 where $\displaystyle{J_{a}=X_{a}\cdot \theta-\mu _{a}}$ is the Noether current. this is the Ward identity. or in a local version
 
 $$\begin{align}
-\partial _{\mu}\braket{ J_{a}^{\mu}(x)\mathcal{O}_{1}(x_{1})\dots \mathcal{O}_{n}(x_{n}) }=-\sum _{j} \delta ^{(D)}(x-x_{j})\braket{\mathcal{O}_{1}(x_{1})\dots [H_{a},\mathcal{O}_{j}(x_{j})]\dots \mathcal{O}_{n}(x_{n})  }  
+\partial _{\mu}\braket{ J_{a}^{\mu}(x)\mathcal{O}_{1}(x_{1})\dots \mathcal{O}_{n}(x_{n}) }=-\sum _{j} \delta ^{(D)}(x-x_{j})\braket{\mathcal{O}_{1}(x_{1})\dots [H_{a},\mathcal{O}_{j}(x_{j})]\dots \mathcal{O}_{n}(x_{n})  }
 \end{align}$$
 
 then choose $\displaystyle{\mathcal{O}_{1}(x_{1})\dots=\phi(x)}$
@@ -74,7 +74,7 @@ $$\begin{align}
 in the last line we deform $\displaystyle{\Sigma _{f}}$ and $\displaystyle{\Sigma _{i}}$ and make them identity out some neighborhood $\displaystyle{U_{x}}$ of $\displaystyle{x}$. in the $\displaystyle{U_{x}}$, $\displaystyle{\Sigma _{f}}$ and $\displaystyle{\Sigma _{i}}$ actually forms a closed $\displaystyle{d-1}$ surface $\displaystyle{\Sigma}$ (which is *not* a Cauchy surface) that contains $\displaystyle{x}$ in its interior. where $\displaystyle{\mathrm{Link}(S,x)}$ is the link number between the closed surface $\displaystyle{S}$ and point $\displaystyle{x}$. it is topological since it is unaffected by deformation of the surface as long as the deformations do not cross the point $\displaystyle{y}$. we can write it in the finite form as
 
 $$\begin{align}
-\braket{ U(g,S)\phi(x) } & =R(g)\braket{ \phi(x) }  
+\braket{ U(g,S)\phi(x) } & =R(g)\braket{ \phi(x) }
 \end{align}$$
 
 where
@@ -88,7 +88,7 @@ t_{a} & =X_{a}\cdot \delta \phi
 thus we provides an relation between the symmetry generator $\displaystyle{X_{a}}$ and topological operator $\displaystyle{H_{a}}$ and $\displaystyle{U(g,S)}$ at quantum level in the covariant phase space formalism. we say 0-form symmetry acts on 0-dim objects $\displaystyle{\phi(x)}$ as
 
 $$\begin{align}
-\braket{ U(g,S)\phi(x) } & =R(g)\braket{ \phi(x) }  
+\braket{ U(g,S)\phi(x) } & =R(g)\braket{ \phi(x) }
 \end{align}$$
 
 ## higher-form symmetries
@@ -112,7 +112,7 @@ $$\begin{align}
 or a local form
 
 $$\begin{align}
-\mathrm{d}\braket{ \star J(x)W[C] } & = -i \oint _{C} \mathrm{d}^{p}y\delta ^{(d)}(x-y)\braket{ X_{\eta}\cdot \delta W[C] } 
+\mathrm{d}\braket{ \star J(x)W[C] } & = -i \oint _{C} \mathrm{d}^{p}y\delta ^{(d)}(x-y)\braket{ X_{\eta}\cdot \delta W[C] }
 \end{align}$$
 
 here we do the same glue procedure to $\displaystyle{\Sigma _{f}-\Sigma _{i}}$ to form a closed surface $\displaystyle{\Sigma}$. choose $\displaystyle{\eta}$ as the Poincare dual of the codimension $\displaystyle{p}$ surface $\displaystyle{S}$ of $\displaystyle{\Sigma}$, which is defined as
@@ -124,7 +124,7 @@ $$\begin{align}
 then we have (by analogy due to my poor math level)
 
 $$\begin{align}
-\braket{ H[S]W[C] } & =-i\mathrm{Link}(S,C)\braket{ X_{\eta _{S}}\cdot \delta W[C] } 
+\braket{ H[S]W[C] } & =-i\mathrm{Link}(S,C)\braket{ X_{\eta _{S}}\cdot \delta W[C] }
 \end{align}$$
 
 here we denote $\displaystyle{H[S]=H_{\eta _{S}}}$.

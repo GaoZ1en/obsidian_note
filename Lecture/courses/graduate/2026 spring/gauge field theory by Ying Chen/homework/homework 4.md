@@ -158,4 +158,3 @@ we define its generating functional as
 $$\begin{align}
 Z[\bar{\eta},\eta,J] & =\int \mathcal{D}\bar{\psi}\mathcal{D}\psi\mathcal{D}\phi \exp\left(i\int \mathrm{d}^{4}x\ (\mathcal{L}+\bar{\eta}\psi+\bar{\psi}\eta+J\phi)\right) .
 \end{align}$$
-

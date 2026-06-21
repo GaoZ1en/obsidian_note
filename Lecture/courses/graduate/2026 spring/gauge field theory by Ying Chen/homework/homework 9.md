@@ -1,35 +1,61 @@
-
 # problem
 
 1. Use renormalized perturbation theory to discuss the one-loop renormalization of QED, adopting the dimensional regularization scheme.
 	1. Introduce the renormalized fields and the wave-function renormalization constants of the fields. Write the QED Lagrangian as the sum of a renormalized part and a counterterm part, namely,
-	 $$\mathcal{L}_{QED}=\mathcal{L}^{R}_{QED}+\delta\mathcal{L}_{QED}.$$
-	2. Based on the above form of the Lagrangian, write down the Feynman rules given by the renormalized part and by the counterterm part.
-	3. In QED, there are only three types of divergent one-particle-irreducible diagrams: the electron self-energy diagram, the vacuum polarization diagram, and the vertex correction diagram. At every order in perturbation theory, these divergences can be canceled by choosing appropriate counterterm coefficients. Determine, at the one-loop level, the counterterm coefficients in the $\overline{MS}$ renormalization scheme.
-	 $$\begin{aligned}
+
+$$\begin{align}
+\mathcal{L}_{QED}=\mathcal{L}^{R}_{QED}+\delta\mathcal{L}_{QED}.
+\end{align}$$
+
+	1. Based on the above form of the Lagrangian, write down the Feynman rules given by the renormalized part and by the counterterm part.
+	1. In QED, there are only three types of divergent one-particle-irreducible diagrams: the electron self-energy diagram, the vacuum polarization diagram, and the vertex correction diagram. At every order in perturbation theory, these divergences can be canceled by choosing appropriate counterterm coefficients. Determine, at the one-loop level, the counterterm coefficients in the $\overline{MS}$ renormalization scheme.
+
+$$\begin{aligned}
    i\Pi_{\mu\nu}(q)&=-(-ie)^2\int \frac{d^4k}{(2\pi)^4}\mathrm{tr}\left[\gamma_\mu\frac{i(\hat{k}+m)}{k^2-m^2}\gamma_\nu\frac{i(\hat{k}+\hat{q}+m)}{(k+q)^2-m^2}\right] \\
    &=-e^2\int_0^1 dx\int \frac{d^4k}{(2\pi)^4}\frac{\mathrm{tr}\left[\gamma_\mu(\hat{k}+m)\gamma_\nu(\hat{k}+\hat{q}+m)\right]}{[l^2-\Delta]^2}.
-   \end{aligned}$$
+\end{aligned}$$
+
    Here,
-   $$l=k+xq,\qquad \Delta=m^2-x(1-x)q^2.$$
+
+$$\begin{align}
+l=k+xq,\qquad \Delta=m^2-x(1-x)q^2.
+\end{align}$$
+
    Make the change of integration variable
-   $$k\to k=l-xq,$$
+
+$$\begin{align}
+k\to k=l-xq,
+\end{align}$$
+
    and at the same time simplify the numerator $D_{\mu\nu}$:
-   $$\begin{aligned}
+
+$$\begin{aligned}
    D_{\mu\nu}&=\mathrm{tr}\left[\gamma_\mu(\hat{k}+m)\gamma_\nu(\hat{k}+\hat{q}+m)\right] \\
    &=2l_\mu l_\nu-g_{\mu\nu}l^2-2x(1-x)q_\mu q_\nu+g_{\mu\nu}\left(m^2+x(1-x)q^2\right).
-   \end{aligned}$$
+\end{aligned}$$
 
    Notes:
 	   a) In the $\overline{MS}$ scheme, the counterterm coefficients are used to cancel the divergent terms in loop diagrams, namely the terms proportional to $1/\epsilon$. Therefore, the counterterm coefficients should be proportional to $1/\epsilon$.
 	   b) Hence, we only need to focus on the divergent part. The divergent part comes from the behavior of the loop-momentum integral as the upper limit of the loop momentum goes to infinity. In this limit, after Feynman parametrization, the external momenta and finite mass parameters may all be approximated as zero.
 	   c) Therefore, a convenient way to extract the counterterm coefficients is as follows. First express the Lorentz structure of the loop integral — in QED, this means Lorentz tensors and Lorentz vectors — in terms of the external momenta, the $\gamma$ matrices, and the metric tensor $g_{\mu\nu}$, and separate it out. Then set the external momenta in the integrand and the mass parameters in the denominator to zero. In this way, the logarithmically divergent loop integral can be treated by the simple analogy
-   $$\int \frac{d^4k}{(2\pi)^4}\frac{1}{k^4}\to\frac{i}{(4\pi)^2}\frac{1}{\epsilon}.$$
+
+$$\begin{align}
+\int \frac{d^4k}{(2\pi)^4}\frac{1}{k^4}\to\frac{i}{(4\pi)^2}\frac{1}{\epsilon}.
+\end{align}$$
+
 	   d) Then determine the counterterm coefficient that cancels this term.
-3. Let the wave-function renormalization constant of the electron field be
-   $$Z_2=1+\delta_1,$$
+1. Let the wave-function renormalization constant of the electron field be
+
+$$\begin{align}
+Z_2=1+\delta_1,
+\end{align}$$
+
    and let the counterterm coefficient of the vertex be $\delta_2$. Verify that, at the one-loop level,
-   $$\delta_1=\delta_2.$$
+
+$$\begin{align}
+\delta_1=\delta_2.
+\end{align}$$
+
    This relation is in fact a necessary consequence of the Ward identity associated with electromagnetic current conservation. Its direct physical meaning is the universality of electric charge.
 
 ## solution

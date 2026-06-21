@@ -2,21 +2,22 @@
 
 suppose $\displaystyle{G}$ is a non-Abelian group, and $\displaystyle{D(G)}$ is a irreducible faithful representation of $\displaystyle{G}$, $\displaystyle{D(R)}$ is the representation matrix of element $\displaystyle{R}$. show that whether these set of matrices form a representation of $\displaystyle{G}$, if yes, state whether it is faithful or not.
 1. $\displaystyle{\left\{D(R)^{\dagger}\right\}}$
-2. $\displaystyle{\left\{D(R)^{T}\right\}}$
-3. $\displaystyle{D(R^{-1})}$
-4. $\displaystyle{D(R)^{*}}$
-5. $\displaystyle{D(R^{-1})^{\dagger}}$
-6. $\displaystyle{\det D(R)}$
-7. $\displaystyle{\mathrm{Tr}D(R)}$
+1. $\displaystyle{\left\{D(R)^{T}\right\}}$
+1. $\displaystyle{D(R^{-1})}$
+1. $\displaystyle{D(R)^{*}}$
+1. $\displaystyle{D(R^{-1})^{\dagger}}$
+1. $\displaystyle{\det D(R)}$
+1. $\displaystyle{\mathrm{Tr}D(R)}$
 
 *sol*.
 1. $\displaystyle{D(R_{1}R_{2})^{\dagger}=(D(R_{1})D(R_{2}))^{\dagger}=D(R_{2})^{\dagger}D(R_{1})^{\dagger}}$, which implies $\displaystyle{\left\{D(R)^{\dagger}\right\}}$ is not a representation of $\displaystyle{G}$. actually it is a faithful representation of the opposite group of $\displaystyle{G}$
-2. $\displaystyle{D(R_{1}R_{2})^{T}=(D(R_{1})D(R_{2}))^{T}=D(R_{2})^{T}D(R_{1})^{T}}$, which implies $\displaystyle{\left\{D(R)^{T}\right\}}$ is not a representation of $\displaystyle{G}$. actually it is a faithful representation of the opposite group of $\displaystyle{G}$
-3. denote $\displaystyle{\bar{D}(R)=D(R^{-1})}$, then $\displaystyle{\bar{D}(R_{1}R_{2})=D(R_{2}^{-1}R_{1}^{-1})=D(R_{2}^{-1})D(R_{1}^{-1})=\bar{D}(R_{2})\bar{D}(R_{1})}$, which implies $\displaystyle{D(R^{-1})}$ is not a representation of $\displaystyle{G}$. since $\displaystyle{D}$ is faithful, then $\displaystyle{D(R_{1})\neq D(R_{2})\implies D(R_{1}^{-1})\neq D(R_{2}^{-1})}$, so $\displaystyle{D(R^{-1})}$ is also faithful.
-4. $\displaystyle{D(R_{1}R_{2})^{*}=D(R_{1})^{*}D(R_{2})^{*}}$, which implies $\displaystyle{D(R)^{*}}$ is a representation of $\displaystyle{G}$. since $\displaystyle{D}$ is faithful, then $\displaystyle{D(R_{1})\neq D(R_{2})\implies D(R_{1})^{*}\neq D(R_{2})^{*}}$, so $\displaystyle{D(R)^{*}}$ is also faithful.
-5. from 1 and 3, we have $\displaystyle{D((R_{1}R_{2})^{-1})^{\dagger}=D(R^{-1}_{1})^{\dagger}D(R_{2}^{-1})^{\dagger}}$, which implies $\displaystyle{D(R^{-1})^{\dagger}}$ is a representation of $\displaystyle{G}$. since $\displaystyle{D}$ is faithful, then $\displaystyle{D(R_{1})\neq D(R_{2})\implies D(R_{1}^{-1})^{\dagger}\neq D(R_{2}^{-1})^{\dagger}}$, so $\displaystyle{D(R^{-1})^{\dagger}}$ is also faithful.
-6. $\displaystyle{\det D(R_{1}R_{2})=\det(D(R_{1})D(R_{2}))=\det D(R_{1})\det D(R_{2})}$, which implies $\displaystyle{\det D(R)}$ is a one-dimensional representation of $\displaystyle{G}$. since $\displaystyle{G}$ is non-Abelian, if $\displaystyle{\det D(R)}$ is faithful, then $\displaystyle{G}$ is isomorphic to a subgroup of $\displaystyle{U(1)}$, which is Abelian. so $\displaystyle{\det D(R)}$ is not faithful.
-7. $\displaystyle{\mathrm{Tr}D(R)}$ is the character of the representation $\displaystyle{D}$, which is a class function. so $\displaystyle{\mathrm{Tr}D(R)}$ is not a representation of $\displaystyle{G}$.
+1. $\displaystyle{D(R_{1}R_{2})^{T}=(D(R_{1})D(R_{2}))^{T}=D(R_{2})^{T}D(R_{1})^{T}}$, which implies $\displaystyle{\left\{D(R)^{T}\right\}}$ is not a representation of $\displaystyle{G}$. actually it is a faithful representation of the opposite group of $\displaystyle{G}$
+1. denote $\displaystyle{\bar{D}(R)=D(R^{-1})}$, then $\displaystyle{\bar{D}(R_{1}R_{2})=D(R_{2}^{-1}R_{1}^{-1})=D(R_{2}^{-1})D(R_{1}^{-1})=\bar{D}(R_{2})\bar{D}(R_{1})}$, which implies $\displaystyle{D(R^{-1})}$ is not a representation of $\displaystyle{G}$. since $\displaystyle{D}$ is faithful, then $\displaystyle{D(R_{1})\neq D(R_{2})\implies D(R_{1}^{-1})\neq D(R_{2}^{-1})}$, so $\displaystyle{D(R^{-1})}$ is also faithful.
+1. $\displaystyle{D(R_{1}R_{2})^{*}=D(R_{1})^{*}D(R_{2})^{*}}$, which implies $\displaystyle{D(R)^{*}}$ is a representation of $\displaystyle{G}$. since $\displaystyle{D}$ is faithful, then $\displaystyle{D(R_{1})\neq D(R_{2})\implies D(R_{1})^{*}\neq D(R_{2})^{*}}$, so $\displaystyle{D(R)^{*}}$ is also faithful.
+1. from 1 and 3, we have $\displaystyle{D((R_{1}R_{2})^{-1})^{\dagger}=D(R^{-1}_{1})^{\dagger}D(R_{2}^{-1})^{\dagger}}$, which implies $\displaystyle{D(R^{-1})^{\dagger}}$ is a representation of $\displaystyle{G}$. since $\displaystyle{D}$ is faithful, then $\displaystyle{D(R_{1})\neq D(R_{2})\implies D(R_{1}^{-1})^{\dagger}\neq D(R_{2}^{-1})^{\dagger}}$, so $\displaystyle{D(R^{-1})^{\dagger}}$ is also faithful.
+1. $\displaystyle{\det D(R_{1}R_{2})=\det(D(R_{1})D(R_{2}))=\det D(R_{1})\det D(R_{2})}$, which implies $\displaystyle{\det D(R)}$ is a one-dimensional representation of $\displaystyle{G}$. since $\displaystyle{G}$ is non-Abelian, if $\displaystyle{\det D(R)}$ is faithful, then $\displaystyle{G}$ is isomorphic to a subgroup of $\displaystyle{U(1)}$, which is Abelian. so $\displaystyle{\det D(R)}$ is not faithful.
+1. $\displaystyle{\mathrm{Tr}D(R)}$ is the character of the representation $\displaystyle{D}$, which is a class function. so $\displaystyle{\mathrm{Tr}D(R)}$ is not a representation of $\displaystyle{G}$.
+
 # problem 2
 
 In the group algebra of a finite group, the representation generated by right multiplication of group elements, denoted as $\displaystyle{\bar{D}(G)}$, is equivalent to the regular representation. Specifically, calculate the similarity transformation matrix between these two representations generated by left and right multiplication of group elements in the group algebra of the $\displaystyle{\mathrm{D}_{3}}$ group. Can this method be generalized to compute the similarity transformation matrix between these two representations for general finite groups?
@@ -104,7 +105,8 @@ X^{-1}(D^{T}(R)\times D^{T}(R))X & =\sum _{j}a_{j}D^{j}(R)
 
 the $\displaystyle{\mathrm{T}}$ group has four irreducible representations: three one-dimensional representations $\displaystyle{D^{A},D^{E},D^{\bar{E}}}$ and one three-dimensional representation $\displaystyle{D^{T}}$. the character table is given by
 
-$$\begin{array}{c|cccc}
+$$
+\begin{array}{c|cccc}
  & E & 3c_{2} & 4c_{3} & 4c_{3}^{-1} \\
  \hline
 D^{A} & 1 & 1 & 1 & 1 \\
@@ -112,7 +114,8 @@ D^{E} & 1 & 1 & \omega & \omega ^{2} \\
 D^{\bar{E}} & 1 & 1 & \omega ^{2} & \omega  \\
 D^{T} & 3 & -1 & 0 & 0 \\
 D^{T}\times D^{T} & 9 & 1 & 0 & 0
-\end{array}$$
+\end{array}
+$$
 
 here $\displaystyle{\omega=e^{2\pi i/3}}$. thus the decomposition of $\displaystyle{D^{T}\times D^{T}}$ into irreducible representations is
 
@@ -173,7 +176,8 @@ which is the desired block-diagonal form corresponding to the decomposition $\di
 
 calculate the table of characters for the following group $\displaystyle{G}$ with group table
 
-$$\begin{array}{c|cccccccccccc}
+$$
+\begin{array}{c|cccccccccccc}
 \circ & E & A & B & C & D & F & I & J & K & L & M & N \\
 \hline
 E & E & A & B & C & D & F & I & J & K & L & M & N \\
@@ -188,16 +192,17 @@ K & K & M & J & F & I & D & B & C & N & E & L & A \\
 L & L & N & I & J & F & C & D & B & E & M & A & K \\
 M & M & K & D & B & C & J & F & I & L & A & N & E \\
 N & N & L & C & D & B & I & J & F & A & K & E & M
-\end{array}$$
+\end{array}
+$$
 
 *sol*.
 
 the conjugacy classes of $\displaystyle{G}$ are
 1. $\displaystyle{\left\{E\right\}}$ itself
-2. $\displaystyle{\left\{A\right\}}$ itself
-3. $\displaystyle{\left\{B,C,D\right\}}$, $\displaystyle{\left\{F,I,J\right\}}$
-4. $\displaystyle{\left\{K,L\right\}}$
-5. $\displaystyle{\left\{M,N\right\}}$
+1. $\displaystyle{\left\{A\right\}}$ itself
+1. $\displaystyle{\left\{B,C,D\right\}}$, $\displaystyle{\left\{F,I,J\right\}}$
+1. $\displaystyle{\left\{K,L\right\}}$
+1. $\displaystyle{\left\{M,N\right\}}$
 thus there are 6 irreducible representations. the dimensions $\displaystyle{d_{r}}$ of these irreducible representations satisfy
 
 $$\begin{align}
@@ -206,7 +211,8 @@ $$\begin{align}
 
 which implies that there are 4 one-dimensional irreducible representations and 2 two-dimensional irreducible representations. notice that this group is isomorphic to $\displaystyle{\mathrm{D}_{3}\times \mathrm{C}_{2}}$ (since the center of $\displaystyle{G}$ is $\displaystyle{\left\{E,A\right\}\cong\mathrm{C}_{2}}$, and the quotient group $\displaystyle{G/\left\{E,A\right\}\cong \mathrm{D}_{3}}$), so the character table can be constructed directly from the character tables of $\displaystyle{\mathrm{D}_{3}}$ and $\displaystyle{\mathrm{C}_{2}}$. the character table is given by
 
-$$\begin{array}{c|cccccc}
+$$
+\begin{array}{c|cccccc}
  & \left\{E\right\} & \left\{A\right\} & \left\{B,C,D\right\} & \left\{F,I,J\right\} & \left\{K,L\right\} & \left\{M,N\right\} \\
  \hline
 A_{1} & 1 & 1 & 1 & 1 & 1 & 1 \\
@@ -215,7 +221,8 @@ A_{3} & 1 & -1 & 1 & -1 & 1 & -1 \\
 A_{4} & 1 & -1 & -1 & 1 & 1 & -1 \\
 E_{1} & 2 & 2 & 0 & 0 & -1 & -1 \\
 E_{2} & 2 & -2 & 0 & 0 & -1 & 1
-\end{array}$$
+\end{array}
+$$
 
 # problem 6
 
@@ -252,7 +259,6 @@ $$\begin{align}
 \psi _{3}(x,y) & =xy^{2} \\
 \psi _{4}(x,y) & =y^{3}
 \end{align}$$
-
 
 known that the function space spanned by $\displaystyle{\left\{\psi _{i}(x,y)\right\},i=1,2,3,4}$ is invariant under the action of $\displaystyle{\mathrm{D}_{3}}$ group, i.e.,
 
@@ -311,19 +317,21 @@ D(SR^{2}) & =D(S)D(R)^{2}
 
 the conjugacy classes of $\displaystyle{\mathrm{D}_{3}}$ are
 1. $\displaystyle{\left\{E\right\}}$ itself
-2. $\displaystyle{\left\{R,R^{2}\right\}}$
-3. $\displaystyle{\left\{S,SR,SR^{2}\right\}}$
+1. $\displaystyle{\left\{R,R^{2}\right\}}$
+1. $\displaystyle{\left\{S,SR,SR^{2}\right\}}$
 
 and the character table is given by
 
-$$\begin{array}{c|ccc}
+$$
+\begin{array}{c|ccc}
  & \left\{E\right\} & \left\{R,R^{2}\right\} & \left\{S,SR,SR^{2}\right\} \\
  \hline
 A_{1} & 1 & 1 & 1 \\
 A_{2} & 1 & 1 & -1 \\
 E & 2 & -1 & 0 \\
 D & 4 & 1 & 0
-\end{array}$$
+\end{array}
+$$
 
 thus the decomposition of the representation $\displaystyle{D}$ into irreducible representations is
 
@@ -348,4 +356,3 @@ E: & \quad \begin{pmatrix}
 \psi _{1}(x,y)-\psi _{4}(x,y) \\ \psi _{2}(x,y)+\psi _{3}(x,y) \end{pmatrix} = \begin{pmatrix}
 x^{3}-y^{3} \\ x^{2}y + xy^{2} \end{pmatrix}
 \end{align}$$
-

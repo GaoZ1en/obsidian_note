@@ -22,10 +22,10 @@ S_{F}(x,y;A) & = \braket{ \psi(x)\bar{\psi}(y) } _{A} \\
 
 the questions are
 1. prove that $\displaystyle{S_{F}(x,y;A)=M^{-1}(x,y;A)}$
-2. let $\displaystyle{\mathcal{O}_{A}(x)=\bar{\psi}(x)\Gamma _{A}\psi(x),\mathcal{O}_{B}(x)=\bar{\psi}(x)\Gamma _{B}(x)\psi(x)}$ be two local operators. present the Green function
+1. let $\displaystyle{\mathcal{O}_{A}(x)=\bar{\psi}(x)\Gamma _{A}\psi(x),\mathcal{O}_{B}(x)=\bar{\psi}(x)\Gamma _{B}(x)\psi(x)}$ be two local operators. present the Green function
 
 $$\begin{align}
-G_{AB}(x,y) & =\braket{ \Omega|T\mathcal{O}_{A}(x)\mathcal{O}_{B}(x)|\Omega } 
+G_{AB}(x,y) & =\braket{ \Omega|T\mathcal{O}_{A}(x)\mathcal{O}_{B}(x)|\Omega }
 \end{align}$$
 
 as the functional integral over gauge field $\displaystyle{A_{\mu}}$.
@@ -96,8 +96,8 @@ G_{AB}(x,y) & =
 # problem 2
 
 1. explain the relation among Green function, connected Green function, amputated Green function and regularized vertex function.
-2. prove that connected Green function can always be expressed by full propagator and regularized vertex function.
-3. effective action is the same as classical action at tree level. derive the Feynman rule of electric vertex.
+1. prove that connected Green function can always be expressed by full propagator and regularized vertex function.
+1. effective action is the same as classical action at tree level. derive the Feynman rule of electric vertex.
 
 ## solution
 
@@ -179,7 +179,7 @@ $$\begin{align}
 i \frac{1}{\xi}\partial ^{2}\partial _{\mu} \frac{\delta iW}{\delta J_{\mu}(x)}-\partial _{\mu}J^{\mu}(x)-e \bar{\eta}(x) \frac{\delta iW}{\delta \bar{\eta}(x)}-e \frac{\delta iW}{\delta \eta(x)}\eta(x)=0
 \end{align}$$
 
-2. the full propagator for photon is given by
+1. the full propagator for photon is given by
 
 $$\begin{align}
 G^{\mu \nu}(x-y) & \equiv \braket{ \Omega|TA^{\mu}(x)A^{\nu}(y)|\Omega }  \\
@@ -291,7 +291,7 @@ $$\begin{align}
 \end{align}$$
 
 1. the self-energy correction of photon coming from the high order perturbation of 2-photon regularized vertex. write the effective action as $\displaystyle{\Gamma=\Gamma ^{(0)}+\Gamma'}$. here $\displaystyle{\Gamma ^{(0)}}$ is the classical approximation, i.e., the classical action $\displaystyle{S=\int \mathrm{d}^{4}x\mathcal{L}_{\text{eff}}(x)}$. then the high order correction of the 2-photon regularized vertex (photon self energy) is $\displaystyle{\Pi^{\mu \nu}(x-y)= \frac{i\delta ^{2}\Gamma'}{\delta A_{\mu}(x)\delta A_{\nu}(x)}\bigg|_{A=\psi=\bar{\psi}=0}}$. prove that the self-energy correction is transverse, i.e., we have $\displaystyle{\partial _{\mu}\Pi^{\mu \nu}(x-y)=0}$.
-2. prove that the regularized vertex with $\displaystyle{n(\geqslant 3)}$ photon external lines satisfies the Ward identity
+1. prove that the regularized vertex with $\displaystyle{n(\geqslant 3)}$ photon external lines satisfies the Ward identity
 
 $$\begin{align}
 k _{i,\mu _{i}}\Gamma ^{\mu_{1}\mu_{2},\dots \mu _{n}}(k_{1},k_{2},\dots,k _{n})=0
@@ -383,8 +383,8 @@ $$\begin{align}
 with $\displaystyle{D_{\mu}=\partial _{\mu}-igA_{\mu},A_{\mu}=A_{\mu}^{a}t^{a}}$.
 
 1. write down the local gauge transformation of $\displaystyle{A_{\mu}(x),\psi(x),\bar{\psi}(x)}$
-2. explain what gauge fixing and gauge (compensation?) mean in path integral quantization
-3. the axial gauge can be expressed as $\displaystyle{F^{a}[A]=n^{\mu}A_{\mu}^{a}=0}$, where $\displaystyle{n^{\mu}}$ is an arbitrary constant vector. complete the Faddeev-Popov path integral quantization under this gauge.
+1. explain what gauge fixing and gauge (compensation?) mean in path integral quantization
+1. the axial gauge can be expressed as $\displaystyle{F^{a}[A]=n^{\mu}A_{\mu}^{a}=0}$, where $\displaystyle{n^{\mu}}$ is an arbitrary constant vector. complete the Faddeev-Popov path integral quantization under this gauge.
 
 ## solution
 

@@ -17,12 +17,12 @@ here terms supported on the $\displaystyle{\Gamma}$ are neglected by suitable ch
 
 ## modes
 
-we have solved the eoms in [[Articles/Quantization in AdS3/electric field/solving modes/Proca-Chern-Simons|Proca-Chern-Simons]], we have three branches.
+we have solved the eoms in [[Articles/Quantization in AdS/electric field/solving modes/Proca-Chern-Simons|Proca-Chern-Simons]], we have three branches.
 
 1. for $\displaystyle{(h,\bar{h})=(0,0)}$, we have $\displaystyle{\psi _{(0,0)}^{\mu}=0}$, which is the trivial vacuum solution.
-2. we have $\displaystyle{\psi _{(1,0)}^{\mu}=C_{(1,0)} \frac{e^{-2it}}{1+r^{2}}\bar{\xi}_{1}^{\mu}}$, and its descendants $\displaystyle{\mathcal{L}_{\xi _{-1}}^{n}\psi _{(1,0)}^{n}}$, which are topologically non-trivial vacua solutions. 
+1. we have $\displaystyle{\psi _{(1,0)}^{\mu}=C_{(1,0)} \frac{e^{-2it}}{1+r^{2}}\bar{\xi}_{1}^{\mu}}$, and its descendants $\displaystyle{\mathcal{L}_{\xi _{-1}}^{n}\psi _{(1,0)}^{n}}$, which are topologically non-trivial vacua solutions.
 	1. the corresponding gauge parameter is $\displaystyle{\Lambda _{(1,0)}=-\frac{iC_{(1,0)}}{2}\frac{e^{-i(t-\phi)}r}{(1+r^{2})^{1/2}}}$ and their desecendants $\displaystyle{\mathcal{L}_{\xi _{-1}}^{n}\Lambda _{(1,0)}}$.
-3. we have $\displaystyle{\psi _{(0,1)}^{\mu}=C_{(1,0)}\frac{e^{-2it}}{1+r^{2}}\xi _{1}^{\mu}}$, and its descendants $\displaystyle{\mathcal{L}_{\bar{\xi} _{-1}}^{n}\psi _{(0,1)}^{\mu}}$, which are topologically non-trivial vacua solutions. 
+1. we have $\displaystyle{\psi _{(0,1)}^{\mu}=C_{(1,0)}\frac{e^{-2it}}{1+r^{2}}\xi _{1}^{\mu}}$, and its descendants $\displaystyle{\mathcal{L}_{\bar{\xi} _{-1}}^{n}\psi _{(0,1)}^{\mu}}$, which are topologically non-trivial vacua solutions.
 	1. the corresponding gauge parameter is $\displaystyle{\Lambda _{(0,1)}=-\frac{iC_{(0,1)}}{2} \frac{e^{-i(t+\phi)}r}{(1+r^{2})^{1/2}}}$, and their desecendants $\displaystyle{\mathcal{L}_{\bar{\xi} _{-1}}^{n}\Lambda _{(0,1)}}$.
 
 the normalization constants are fixed by the symplectic form, which gives

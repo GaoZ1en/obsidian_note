@@ -15,7 +15,7 @@ here the Levi-Civita $\displaystyle{\varepsilon ^{\mu \nu \rho}}$ is normalized 
 $$\begin{align}
 (1+r^{2})\partial _{r}^{2}A^{t}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{1+5r^{2}}{r}\partial _{r}A^{t}+(4-\mu ^{2})A^{t}+\frac{1}{1+r^{2}}\partial _{t}\partial _{r}A^{r}+\frac{1-r^{2}}{r(1+r^{2})^{2}}\partial _{t}A^{r}+\frac{1}{1+r^{2}}\partial _{t}\partial _{\phi}A^{\phi} &  \\
 -(1+r^{2})\partial _{t}\partial _{r}A^{t}-2r\partial _{t}A^{t}-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{r}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{r}-\mu ^{2}A^{r}-(1+r^{2})\partial _{r}\partial _{\phi}A^{\phi}-\frac{2(1+r^{2})}{r}\partial _{\phi}A^{\phi} &  \\
--\frac{1}{r^{2}}\partial _{t}\partial _{\phi}A^{t}-\frac{1}{r^{2}}\partial _{r}\partial _{\phi}A^{r}+\frac{1}{r^{3}}\partial _{\phi}A^{r}-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{\phi}+(1+r^{2})\partial _{r}^{2}A^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}A^{\phi}+(4-\mu ^{2})A^{\phi} & 
+-\frac{1}{r^{2}}\partial _{t}\partial _{\phi}A^{t}-\frac{1}{r^{2}}\partial _{r}\partial _{\phi}A^{r}+\frac{1}{r^{3}}\partial _{\phi}A^{r}-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{\phi}+(1+r^{2})\partial _{r}^{2}A^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}A^{\phi}+(4-\mu ^{2})A^{\phi} &
 \end{align}$$
 
 and the Chern-Simons part gives
@@ -23,7 +23,7 @@ and the Chern-Simons part gives
 $$\begin{align}
 -\frac{k}{2\pi}\left(r\partial _{r}A^{\phi}+2A^{\phi}-\frac{1}{r(1+r^{2})}\partial _{\phi}A^{r}\right) &  \\
 +\frac{k}{2\pi r}\left(r^{2}\partial _{t}A^{\phi}+(1+r^{2})\partial _{\phi}A^{t}\right) &  \\
--\frac{k}{2\pi}\left(\frac{1}{r(1+r^{2})}\partial _{t}A^{r}+\frac{1+r^{2}}{r}\partial _{r}A^{t}+2A^{t}\right) & 
+-\frac{k}{2\pi}\left(\frac{1}{r(1+r^{2})}\partial _{t}A^{r}+\frac{1+r^{2}}{r}\partial _{r}A^{t}+2A^{t}\right) &
 \end{align}$$
 
 therefore, the full eom is
@@ -94,7 +94,6 @@ $$\begin{align}
 \varphi & =r\tilde{A}^{\phi}, \\
 \Phi_{\tau} & =\frac{1}{2}\left(rf^{\phi} - i\tau f^{r}\right).
 \end{align}$$
-
 
 then the two decoupled radial equations are
 

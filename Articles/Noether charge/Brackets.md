@@ -2,7 +2,8 @@
 
 choose boundary coordinates
 
-$$\tag{1.1}
+$$
+\tag{1.1}
 \begin{align}
 x^{a}=\left\{t,\phi\right\}
 \end{align}
@@ -10,7 +11,8 @@ $$
 
 with periodicity
 
-$$\tag{1.2}
+$$
+\tag{1.2}
 \begin{align}
 \phi \sim \phi+2\pi
 \end{align}
@@ -18,7 +20,8 @@ $$
 
 and boundary metric
 
-$$\tag{1.3}
+$$
+\tag{1.3}
 \begin{align}
 g^{(0)}_{ab}\mathrm{d}x^{a}\mathrm{d}x^{b} & =-\mathrm{d}t^{2}+\mathrm{d}\phi^{2}
 \end{align}
@@ -26,7 +29,8 @@ $$
 
 and conformal Killing fields
 
-$$\tag{1.4}
+$$
+\tag{1.4}
 \begin{align}
 A_{n,a}=A_{-n,a} & =\cos nt\cos n\phi \left(\frac{\partial}{\partial t}\right)_{a}-\sin nt\sin n\phi \left(\frac{\partial}{\partial \phi}\right)_{a} \\
 B_{n,a}=B_{-n,a} & =\sin nt\sin n\phi \left(\frac{\partial}{\partial t}\right)_{a}-\cos nt\cos n\phi \left(\frac{\partial}{\partial \phi} \right)_{a}\\
@@ -37,7 +41,8 @@ $$
 
 calculate relevant quantities and brackets
 
-$$\tag{1.5}
+$$
+\tag{1.5}
 \begin{align}
 \left\{Q_{A_{m}},Q_{A_{n}}\right\}, \left\{Q_{A_{m}},Q_{B_{n}}\right\}, \left\{Q_{A_{m}},Q_{C_{n}}\right\}, \left\{Q_{A_{m}},Q_{D_{n}}\right\} \\
 \left\{Q_{B_{m}},Q_{B_{n}}\right\}, \left\{Q_{B_{m}},Q_{C_{n}}\right\}, \left\{Q_{B_{m}},Q_{D_{n}}\right\} \\
@@ -48,14 +53,16 @@ $$
 
 here we use
 
-$$\tag{1.6}
+$$
+\tag{1.6}
 \begin{align}
 \left\{Q_{\xi},Q_{\zeta}\right\}& =Q_{\left\{\xi,\zeta\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}-\zeta^{(0)a}D_{b}^{(0)}\xi^{(0)b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}\xi^{(0)c}D_{d}^{(0)}\zeta^{(0)d}-D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c}D_{d}^{(0)}\xi^{(0)d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}
 \end{align}
 $$
 
-$$\tag{1.7}
+$$
+\tag{1.7}
 \begin{align}
 T_{ab}^{(0)} & =\frac{1}{4G}(K_{ab}-K\gamma_{ab}+\gamma_{ab})^{(0)} \\
 Q_{\xi}& =-\left.\int_{\partial \Sigma} \frac{1}{2\pi}g^{(0)ab}T^{(0)}_{bc}\xi^{(0)c}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}\right|_{\tilde{\mathcal{P}}} \\
@@ -66,7 +73,8 @@ $$
 
 we first introduce several relevant quantities
 
-$$\tag{2.1}
+$$
+\tag{2.1}
 \begin{align}
 R^{(0)} & = 0\\
 T^{(0)}_{ab} & = \lim_{ z \to 0 } \frac{1}{4G}\left(\frac{1}{2}\Delta g_{zz}g^{(0)}_{ab}-\Delta g_{ab}-\frac{1}{2}z\partial_{z}\Delta g_{ab}+g^{(0)cd}\Delta g_{cd}g^{(0)}_{ab}+\frac{1}{2}zg^{(0)cd}\partial_{z}\Delta g_{cd}g^{(0)}_{ab}\right. \\
@@ -76,7 +84,8 @@ $$
 
 Lie brackets
 
-$$\tag{2.2}
+$$
+\tag{2.2}
 \begin{align}
 \left\{A_{m},A_{n}\right\} & =+\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m-n} \\
 \left\{A_{m},B_{n}\right\} & =-\frac{1}{2}(m-n)D_{m+n}-\frac{1}{2}(m+n)D_{m-n} \\
@@ -93,7 +102,8 @@ $$
 
 and
 
-$$\tag{2.2}
+$$
+\tag{2.2}
 \begin{align}
 D_{a}^{(0)}A_{n}^{a} & =D_{t}^{(0)}A_{n}^{t}+D_{\phi}^{(0)}A_{n}^{\phi}=-2n\sin nt\cos n\phi\\
 D_{a}^{(0)}B_{n}^{a} & =D_{t}^{(0)}B_{n}^{t}+D_{\phi}^{(0)}B_{n}^{\phi}=2n\cos nt\sin n\phi\\
@@ -134,7 +144,8 @@ A(Amt*D[Ant,t]-Ant*D[Amt,t]+Am\phi*D[Ant,\phi]-An\phi*D[Amt,\phi])+BA(Amt*D[An\p
 
 ---
 
-$$\tag{3.1}
+$$
+\tag{3.1}
 \begin{align}
 \left\{Q_{A_{m}},Q_{A_{n}}\right\}& =Q_{\left\{A_{m},A_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(A_{m}^{a}D_{b}^{(0)}A_{n}^{b}-A_{n}^{a}D_{b}^{(0)}A_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}A_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}A_{n}^{c}D_{d}^{(0)}A_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -145,7 +156,8 @@ $$\tag{3.1}
 \end{align}
 $$
 
-$$\tag{3.2}
+$$
+\tag{3.2}
 \begin{align}
 \left\{Q_{A_{m}},Q_{B_{n}}\right\}& =Q_{\left\{A_{m},B_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(A_{m}^{a}D_{b}^{(0)}B_{n}^{b}-B_{n}^{a}D_{b}^{(0)}A_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}B_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}B_{n}^{c}D_{d}^{(0)}A_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -156,7 +168,8 @@ $$\tag{3.2}
 \end{align}
 $$
 
-$$\tag{3.3}
+$$
+\tag{3.3}
 \begin{align}
 \left\{Q_{A_{m}},Q_{C_{n}}\right\}& =Q_{\left\{A_{m},C_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(A_{m}^{a}D_{b}^{(0)}C_{n}^{b}-C_{n}^{a}D_{b}^{(0)}A_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}C_{n}^{c}D_{d}^{(0)}A_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -168,7 +181,8 @@ $$\tag{3.3}
 \end{align}
 $$
 
-$$\tag{3.4}
+$$
+\tag{3.4}
 \begin{align}
 \left\{Q_{A_{m}},Q_{D_{n}}\right\}& =Q_{\left\{A_{m},D_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(A_{m}^{a}D_{b}^{(0)}D_{n}^{b}-D_{n}^{a}D_{b}^{(0)}A_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}A_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -179,7 +193,8 @@ $$\tag{3.4}
 \end{align}
 $$
 
-$$\tag{3.5}
+$$
+\tag{3.5}
 \begin{align}
 \left\{Q_{B_{m}},Q_{B_{n}}\right\}& =Q_{\left\{B_{m},B_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(B_{m}^{a}D_{b}^{(0)}B_{n}^{b}-B_{n}^{a}D_{b}^{(0)}B_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}B_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}B_{n}^{c}D_{d}^{(0)}B_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -190,7 +205,8 @@ $$\tag{3.5}
 \end{align}
 $$
 
-$$\tag{3.6}
+$$
+\tag{3.6}
 \begin{align}
 \left\{Q_{B_{m}},Q_{C_{n}}\right\}& =Q_{\left\{B_{m},C_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(B_{m}^{a}D_{b}^{(0)}C_{n}^{b}-C_{n}^{a}D_{b}^{(0)}B_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}C_{n}^{c}D_{d}^{(0)}B_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -201,7 +217,8 @@ $$\tag{3.6}
 \end{align}
 $$
 
-$$\tag{3.7}
+$$
+\tag{3.7}
 \begin{align}
 \left\{Q_{B_{m}},Q_{D_{n}}\right\}& =Q_{\left\{B_{m},D_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(B_{m}^{a}D_{b}^{(0)}D_{n}^{b}-D_{n}^{a}D_{b}^{(0)}B_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}B_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -213,7 +230,8 @@ $$\tag{3.7}
 \end{align}
 $$
 
-$$\tag{3.8}
+$$
+\tag{3.8}
 \begin{align}
 \left\{Q_{C_{m}},Q_{C_{n}}\right\}& =Q_{\left\{C_{m},C_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(C_{m}^{a}D_{b}^{(0)}C_{n}^{b}-C_{n}^{a}D_{b}^{(0)}C_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}C_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}C_{n}^{c}D_{d}^{(0)}C_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -224,7 +242,8 @@ $$\tag{3.8}
 \end{align}
 $$
 
-$$\tag{3.9}
+$$
+\tag{3.9}
 \begin{align}
 \left\{Q_{C_{m}},Q_{D_{n}}\right\}& =Q_{\left\{C_{m},D_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(C_{m}^{a}D_{b}^{(0)}D_{n}^{b}-D_{n}^{a}D_{b}^{(0)}C_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}C_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}C_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -235,8 +254,8 @@ $$\tag{3.9}
 \end{align}
 $$
 
-
-$$\tag{3.10}
+$$
+\tag{3.10}
 \begin{align}
 \left\{Q_{D_{m}},Q_{D_{n}}\right\}& =Q_{\left\{D_{m},D_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(D_{m}^{a}D_{b}^{(0)}D_{n}^{b}-D_{n}^{a}D_{b}^{(0)}D_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}D_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}D_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -251,7 +270,8 @@ $$
 
 in this section the conformal Killing vectors remain unchanged, and the metric becomes
 
-$$\tag{4.1}
+$$
+\tag{4.1}
 \begin{align}
 g^{(0)}_{ab}\mathrm{d}x^{a}\mathrm{d}x^{b} & =\frac{1}{\cos^{2}t}(-\mathrm{d}t^{2}+\mathrm{d}\phi^{2})
 \end{align}
@@ -259,7 +279,8 @@ $$
 
 then we have
 
-$$\tag{4.2}
+$$
+\tag{4.2}
 \begin{align}
 g^{(0)}_{tt} & =-\frac{1}{\cos^{2}t},g^{(0)}_{\phi \phi}=\frac{1}{\cos^{2}t},g^{(0)}_{t\phi}=0 \\
 g^{(0)tt} & =-\cos^{2}t,g^{(0)\phi \phi}=\cos^{2}t,g^{(0)t\phi}=0 \\
@@ -272,7 +293,8 @@ $$
 
 and the Lie brackets of conformal Killing vectors remain unchanged, since they do not depend on the connection.
 
-$$\tag{4.3}
+$$
+\tag{4.3}
 \begin{align}
 D^{(0)}_{a}A^{a}_{n} & =-2n\sin nt\cos n\phi+2\cos nt\cos n\phi\tan t\\
 D^{(0)}_{a}B^{a}_{n} & =2n\cos nt\sin n\phi+2\sin nt\sin n\phi\tan t \\
@@ -281,7 +303,8 @@ D_{a}^{(0)}D_{n}^{a} & =-2n\sin nt\sin n\phi+2\cos nt\sin n\phi\tan t
 \end{align}
 $$
 
-$$\tag{4.4}
+$$
+\tag{4.4}
 \begin{align}
 \left\{Q_{A_{m}},Q_{A_{n}}\right\}& =Q_{\left\{A_{m},A_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(A_{m}^{a}D_{b}^{(0)}A_{n}^{b}-A_{n}^{a}D_{b}^{(0)}A_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}A_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}A_{n}^{c}D_{d}^{(0)}A_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -292,7 +315,8 @@ $$\tag{4.4}
 \end{align}
 $$
 
-$$\tag{4.5}
+$$
+\tag{4.5}
 \begin{align}
 \left\{Q_{A_{m}},Q_{B_{n}}\right\}& =Q_{\left\{A_{m},B_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(A_{m}^{a}D_{b}^{(0)}B_{n}^{b}-B_{n}^{a}D_{b}^{(0)}A_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}B_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}B_{n}^{c}D_{d}^{(0)}A_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -303,7 +327,8 @@ $$\tag{4.5}
 \end{align}
 $$
 
-$$\tag{4.6}
+$$
+\tag{4.6}
 \begin{align}
 \left\{Q_{A_{m}},Q_{C_{n}}\right\}& =Q_{\left\{A_{m},C_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(A_{m}^{a}D_{b}^{(0)}C_{n}^{b}-C_{n}^{a}D_{b}^{(0)}A_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}C_{n}^{c}D_{d}^{(0)}A_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -316,7 +341,8 @@ $$\tag{4.6}
 \end{align}
 $$
 
-$$\tag{4.7}
+$$
+\tag{4.7}
 \begin{align}
 \left\{Q_{A_{m}},Q_{D_{n}}\right\}& =Q_{\left\{A_{m},D_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(A_{m}^{a}D_{b}^{(0)}D_{n}^{b}-D_{n}^{a}D_{b}^{(0)}A_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}A_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -327,7 +353,8 @@ $$\tag{4.7}
 \end{align}
 $$
 
-$$\tag{4.8}
+$$
+\tag{4.8}
 \begin{align}
 \left\{Q_{B_{m}},Q_{B_{n}}\right\}& =Q_{\left\{B_{m},B_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(B_{m}^{a}D_{b}^{(0)}B_{n}^{b}-B_{n}^{a}D_{b}^{(0)}B_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}B_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}B_{n}^{c}D_{d}^{(0)}B_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -338,7 +365,8 @@ $$\tag{4.8}
 \end{align}
 $$
 
-$$\tag{4.9}
+$$
+\tag{4.9}
 \begin{align}
 \left\{Q_{B_{m}},Q_{C_{n}}\right\}& =Q_{\left\{B_{m},C_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(B_{m}^{a}D_{b}^{(0)}C_{n}^{b}-C_{n}^{a}D_{b}^{(0)}B_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}C_{n}^{c}D_{d}^{(0)}B_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -349,7 +377,8 @@ $$\tag{4.9}
 \end{align}
 $$
 
-$$\tag{4.10}
+$$
+\tag{4.10}
 \begin{align}
 \left\{Q_{B_{m}},Q_{D_{n}}\right\}& =Q_{\left\{B_{m},D_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(B_{m}^{a}D_{b}^{(0)}D_{n}^{b}-D_{n}^{a}D_{b}^{(0)}B_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}B_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -362,7 +391,8 @@ $$\tag{4.10}
 \end{align}
 $$
 
-$$\tag{4.11}
+$$
+\tag{4.11}
 \begin{align}
 \left\{Q_{C_{m}},Q_{C_{n}}\right\}& =Q_{\left\{C_{m},C_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(C_{m}^{a}D_{b}^{(0)}C_{n}^{b}-C_{n}^{a}D_{b}^{(0)}C_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}C_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}C_{n}^{c}D_{d}^{(0)}C_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -373,7 +403,8 @@ $$\tag{4.11}
 \end{align}
 $$
 
-$$\tag{4.12}
+$$
+\tag{4.12}
 \begin{align}
 \left\{Q_{C_{m}},Q_{D_{n}}\right\}& =Q_{\left\{C_{m},D_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(C_{m}^{a}D_{b}^{(0)}D_{n}^{b}-D_{n}^{a}D_{b}^{(0)}C_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}C_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}C_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -384,7 +415,8 @@ $$\tag{4.12}
 \end{align}
 $$
 
-$$\tag{4.13}
+$$
+\tag{4.13}
 \begin{align}
 \left\{Q_{D_{m}},Q_{D_{n}}\right\}& =Q_{\left\{D_{m},D_{n}\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}(D_{m}^{a}D_{b}^{(0)}D_{n}^{b}-D_{n}^{a}D_{b}^{(0)}D_{m}^{b})\right. \\
  & \left. -\frac{1}{32\pi G}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}D_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}D_{m}^{d})\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -397,7 +429,8 @@ $$
 
 as a summary, we have
 
-$$\tag{4.14}
+$$
+\tag{4.14}
 \begin{align}
 \left\{Q_{A_{m}},Q_{A_{n}}\right\} & =\frac{1}{2}(m-n)Q_{C_{m+n}}+\frac{1}{2}(m+n)Q_{C_{m-n}} \\
 \left\{Q_{A_{m}},Q_{B_{n}}\right\} & =-\frac{1}{2}(m-n)Q_{D_{m+n}}-\frac{1}{2}(m+n)Q_{D_{m-n}} ,\\
@@ -415,23 +448,26 @@ $$
 ---
 self-contained check
 
-we first calculate 
+we first calculate
 
-$$\tag{5.1}
+$$
+\tag{5.1}
 \begin{align}
 Q_{X_{m}}|_{\Sigma_{f},\tilde{\mathcal{P}}}-Q_{X_{m}}|_{\Sigma_{i},\tilde{\mathcal{P}}}, X=A,B,C,D
 \end{align}
 $$
 
-and then we will check 
+and then we will check
 
-$$\tag{5.2}
+$$
+\tag{5.2}
 \begin{align}
 \left\{Q_{X_{m}},Q_{Y_{n}}\right\}|_{\Sigma_{f}-\Sigma_{i}}=0, \quad X,Y=A,B,C,D
 \end{align}
 $$
 
-$$\tag{5.3}
+$$
+\tag{5.3}
 \begin{align}
 Q_{X_{m}}|_{t_{f},\tilde{\mathcal{P}}}-Q_{X_{m}}|_{t_{i},\tilde{\mathcal{P}}} & =-\frac{1}{32\pi G}\int_{\Gamma}R^{(0)}D_{a}^{(0)}X^{c}_{m}\cdot \frac{1}{2!}\varepsilon_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}} \\
  & =\beta_{X_{m}}|_{\Gamma}
@@ -440,7 +476,8 @@ $$
 
 I think we will calculate $\displaystyle{-\frac{1}{32\pi G}\int_{\Gamma}R^{(0)}D_{a}^{(0)}X_{m}^{c}\cdot \frac{1}{2!}\varepsilon_{a_{0}a_{1}}^{(0)}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}}}$ explicitly
 
-$$\tag{5.4}
+$$
+\tag{5.4}
 \begin{align}
 Q_{A_{m}}|_{\Sigma_{t_{f}}-\Sigma_{t_{i}},\tilde{\mathcal{P}}} & =-\frac{1}{32\pi G}\int_{\Gamma}R^{(0)}D_{a}^{(0)}X^{a}_{m}\cdot \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}} \\
  & =-\frac{1}{16\pi G}\int_{t_{i}}^{t_{f}} \frac{\mathrm{d}t}{\cos^{2}t}\int_{0}^{2\pi} D_{a}^{(0)}A_{m}^{a}\mathrm{d}\phi \\
@@ -454,7 +491,8 @@ $$
 
 other brackets automatically satisfy $\displaystyle{\left\{Q_{X_{m}},Q_{Y_{n}}\right\}}|_{\Sigma_{f}-\Sigma_{i}}=0$, except $\displaystyle{\left\{Q_{A_{m}},Q_{C_{n}}\right\}}$ and $\displaystyle{\left\{Q_{B_{m}},Q_{D_{n}}\right\}}$, since (5.4) and vanishing central extension terms
 
-$$\tag{5.6}
+$$
+\tag{5.6}
 \begin{align}
 \left\{Q_{A_{m}},Q_{C_{n}}\right\}|_{\Sigma_{f}-\Sigma_{i}} & =-\frac{1}{2}(m-n)Q_{A_{m+n}}|_{\Sigma_{f}-\Sigma_{i}}+\frac{1}{2}(m+n)Q_{A_{m-n}}|_{\Sigma_{f}-\Sigma_{i}}+\frac{1}{8G}m^{3}(\delta_{m,n}-\delta_{m,-n})(\sec^{2}t_{f}-\sec^{2}t_{i}) \\
  & =0\\
@@ -462,4 +500,3 @@ $$\tag{5.6}
  & =0
 \end{align}
 $$
-

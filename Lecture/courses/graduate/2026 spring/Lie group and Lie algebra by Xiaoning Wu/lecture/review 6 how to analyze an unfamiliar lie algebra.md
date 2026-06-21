@@ -12,19 +12,29 @@ This note gives a workflow. It is meant for questions of the form: a group or Li
 
 If a Lie group is defined by a matrix equation, write
 
-$$g(t)=I+tX+O(t^2).$$
+$$\begin{align}
+g(t)=I+tX+O(t^2).
+\end{align}$$
 
 Then expand the group condition to first order.
 
 Examples:
 
-$$g^\dagger g=I\quad\Rightarrow\quad X^\dagger+X=0.$$
+$$\begin{align}
+g^\dagger g=I\quad\Rightarrow\quad X^\dagger+X=0.
+\end{align}$$
 
-$$\det g=1\quad\Rightarrow\quad \operatorname{tr}X=0.$$
+$$\begin{align}
+\det g=1\quad\Rightarrow\quad \operatorname{tr}X=0.
+\end{align}$$
 
-$$g^TQg=Q\quad\Rightarrow\quad X^TQ+QX=0.$$
+$$\begin{align}
+g^TQg=Q\quad\Rightarrow\quad X^TQ+QX=0.
+\end{align}$$
 
-$$g^TJg=J\quad\Rightarrow\quad X^TJ+JX=0.$$
+$$\begin{align}
+g^TJg=J\quad\Rightarrow\quad X^TJ+JX=0.
+\end{align}$$
 
 These give unitary, special linear, orthogonal, and symplectic Lie algebras.
 
@@ -34,19 +44,31 @@ Dimension is the number of independent generators. Rank is the dimension of a Ca
 
 For matrix algebras, count independent parameters:
 
-$$\dim \mathfrak{sl}_N=N^2-1,$$
+$$\begin{align}
+\dim \mathfrak{sl}_N=N^2-1,
+\end{align}$$
 
-$$\dim \mathfrak{so}_N=\frac{N(N-1)}{2},$$
+$$\begin{align}
+\dim \mathfrak{so}_N=\frac{N(N-1)}{2},
+\end{align}$$
 
-$$\dim \mathfrak{sp}_{2n}=n(2n+1).$$
+$$\begin{align}
+\dim \mathfrak{sp}_{2n}=n(2n+1).
+\end{align}$$
 
 Rank:
 
-$$\operatorname{rank}\mathfrak{sl}_N=N-1,$$
+$$\begin{align}
+\operatorname{rank}\mathfrak{sl}_N=N-1,
+\end{align}$$
 
-$$\operatorname{rank}\mathfrak{so}_{2n+1}=n,\qquad \operatorname{rank}\mathfrak{so}_{2n}=n,$$
+$$\begin{align}
+\operatorname{rank}\mathfrak{so}_{2n+1}=n,\qquad \operatorname{rank}\mathfrak{so}_{2n}=n,
+\end{align}$$
 
-$$\operatorname{rank}\mathfrak{sp}_{2n}=n.$$
+$$\begin{align}
+\operatorname{rank}\mathfrak{sp}_{2n}=n.
+\end{align}$$
 
 Dimension and rank often identify the candidate type up to low-rank isomorphisms.
 
@@ -56,11 +78,15 @@ For classical matrix algebras, choose a maximal diagonal block whenever possible
 
 For $\mathfrak{sl}_N$:
 
-$$\mathfrak{h}=\{\operatorname{diag}(h_1,\ldots,h_N)\mid \sum_i h_i=0\}.$$
+$$\begin{align}
+\mathfrak{h}=\{\operatorname{diag}(h_1,\ldots,h_N)\mid \sum_i h_i=0\}.
+\end{align}$$
 
 For orthogonal and symplectic algebras, a convenient complex Cartan subalgebra has diagonal weights
 
-$$\pm e_1,\ldots,\pm e_n,$$
+$$\begin{align}
+\pm e_1,\ldots,\pm e_n,
+\end{align}$$
 
 with an extra zero weight in the defining representation of $B_n$.
 
@@ -68,19 +94,27 @@ with an extra zero weight in the defining representation of $B_n$.
 
 A root vector $E_\alpha$ satisfies
 
-$$[H,E_\alpha]=\alpha(H)E_\alpha,\qquad H\in\mathfrak{h}.$$
+$$\begin{align}
+[H,E_\alpha]=\alpha(H)E_\alpha,\qquad H\in\mathfrak{h}.
+\end{align}$$
 
 For $\mathfrak{sl}_N$, the off-diagonal matrix $E_{ij}$ gives
 
-$$[H,E_{ij}]=(h_i-h_j)E_{ij},$$
+$$\begin{align}
+[H,E_{ij}]=(h_i-h_j)E_{ij},
+\end{align}$$
 
 so the root is
 
-$$\alpha=\epsilon_i-\epsilon_j.$$
+$$\begin{align}
+\alpha=\epsilon_i-\epsilon_j.
+\end{align}$$
 
 For orthogonal and symplectic algebras, roots are combinations of the form
 
-$$\pm e_i\pm e_j,\qquad \pm e_i,\qquad \pm 2e_i,$$
+$$\begin{align}
+\pm e_i\pm e_j,\qquad \pm e_i,\qquad \pm 2e_i,
+\end{align}$$
 
 depending on the type.
 
@@ -90,7 +124,9 @@ Choose a positive half of the roots and then find indecomposable positive roots.
 
 The Dynkin diagram is determined by the Cartan matrix
 
-$$A_{ij}=\frac{2(\alpha_i,\alpha_j)}{(\alpha_j,\alpha_j)}.$$
+$$\begin{align}
+A_{ij}=\frac{2(\alpha_i,\alpha_j)}{(\alpha_j,\alpha_j)}.
+\end{align}$$
 
 Recognition rules:
 
@@ -113,7 +149,9 @@ For classical types:
 
 Then identify the adjoint representation:
 
-$$\dim \operatorname{ad}\mathfrak{g}=\dim\mathfrak{g}.$$
+$$\begin{align}
+\dim \operatorname{ad}\mathfrak{g}=\dim\mathfrak{g}.
+\end{align}$$
 
 For simple $\mathfrak{g}$, the weights of the adjoint representation are the roots together with the zero weight of multiplicity equal to the rank.
 
@@ -122,13 +160,15 @@ For simple $\mathfrak{g}$, the weights of the adjoint representation are the roo
 Useful tests:
 
 1. If the algebra has a nonzero abelian ideal, it is not semisimple.
-2. If it splits as a direct sum, it is semisimple but not simple.
-3. If the Killing form is nondegenerate, it is semisimple.
-4. If the Dynkin diagram is connected, the complex semisimple algebra is simple.
+1. If it splits as a direct sum, it is semisimple but not simple.
+1. If the Killing form is nondegenerate, it is semisimple.
+1. If the Dynkin diagram is connected, the complex semisimple algebra is simple.
 
 Low-rank warning:
 
-$$D_2\simeq A_1\oplus A_1$$
+$$\begin{align}
+D_2\simeq A_1\oplus A_1
+\end{align}$$
 
 is semisimple but not simple.
 
@@ -138,7 +178,9 @@ The same complex Lie algebra can have different real forms.
 
 Examples:
 
-$$\mathfrak{sl}_2(\mathbb{C})\text{ as a complex algebra},\qquad \mathfrak{su}(2),\qquad \mathfrak{sl}_2(\mathbb{R})$$
+$$\begin{align}
+\mathfrak{sl}_2(\mathbb{C})\text{ as a complex algebra},\qquad \mathfrak{su}(2),\qquad \mathfrak{sl}_2(\mathbb{R})
+\end{align}$$
 
 are related but not identical as real Lie algebras.
 
@@ -154,22 +196,22 @@ For physics questions:
 Use this checklist:
 
 1. Write the highest weights of the input representations.
-2. Add them to get the highest possible output weight.
-3. Use known small decompositions if available.
-4. Use dimension as a check.
-5. If the group has a center, check center charges.
-6. If the representation is real or pseudoreal, make sure the result respects that structure.
+1. Add them to get the highest possible output weight.
+1. Use known small decompositions if available.
+1. Use dimension as a check.
+1. If the group has a center, check center charges.
+1. If the representation is real or pseudoreal, make sure the result respects that structure.
 
 # Step 10: State the answer in a stable form
 
 A good final answer contains:
 
 1. Lie algebra type.
-2. Rank and dimension.
-3. Matrix model or defining condition.
-4. Root system and Dynkin diagram type.
-5. Fundamental representations used in the problem.
-6. Any low-rank isomorphism or covering-group issue.
+1. Rank and dimension.
+1. Matrix model or defining condition.
+1. Root system and Dynkin diagram type.
+1. Fundamental representations used in the problem.
+1. Any low-rank isomorphism or covering-group issue.
 
 # Worked miniature examples
 
@@ -177,15 +219,21 @@ A good final answer contains:
 
 The algebra is
 
-$$\mathfrak{sl}_4(\mathbb{C}).$$
+$$\begin{align}
+\mathfrak{sl}_4(\mathbb{C}).
+\end{align}$$
 
 Thus it is type $A_3$, with
 
-$$\operatorname{rank}=3,\qquad \dim=4^2-1=15.$$
+$$\begin{align}
+\operatorname{rank}=3,\qquad \dim=4^2-1=15.
+\end{align}$$
 
 The low-rank isomorphism is
 
-$$A_3\simeq D_3,$$
+$$\begin{align}
+A_3\simeq D_3,
+\end{align}$$
 
 so the same complex algebra is also $\mathfrak{so}_6(\mathbb{C})$.
 
@@ -193,15 +241,21 @@ so the same complex algebra is also $\mathfrak{so}_6(\mathbb{C})$.
 
 The algebra is
 
-$$\mathfrak{so}_5(\mathbb{C}).$$
+$$\begin{align}
+\mathfrak{so}_5(\mathbb{C}).
+\end{align}$$
 
 Thus it is type $B_2$, with
 
-$$\operatorname{rank}=2,\qquad \dim=\frac{5\cdot 4}{2}=10.$$
+$$\begin{align}
+\operatorname{rank}=2,\qquad \dim=\frac{5\cdot 4}{2}=10.
+\end{align}$$
 
 The low-rank isomorphism is
 
-$$B_2\simeq C_2,$$
+$$\begin{align}
+B_2\simeq C_2,
+\end{align}$$
 
 so this is also $\mathfrak{sp}_4(\mathbb{C})$.
 
@@ -209,16 +263,20 @@ so this is also $\mathfrak{sp}_4(\mathbb{C})$.
 
 The only simple type with a triple bond is
 
-$$G_2.$$
+$$\begin{align}
+G_2.
+\end{align}$$
 
 It has
 
-$$\operatorname{rank}=2,\qquad \dim=14.$$
+$$\begin{align}
+\operatorname{rank}=2,\qquad \dim=14.
+\end{align}$$
 
 # Exam moves
 
 1. Linearize the group condition first.
-2. Count dimension and rank before drawing roots.
-3. Use roots to identify the Dynkin type.
-4. Use low-rank isomorphisms as a final check.
-5. Keep real-form statements separate from complexified Lie algebra statements.
+1. Count dimension and rank before drawing roots.
+1. Use roots to identify the Dynkin type.
+1. Use low-rank isomorphisms as a final check.
+1. Keep real-form statements separate from complexified Lie algebra statements.

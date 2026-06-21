@@ -1,6 +1,6 @@
 force is doomed in modern physics
 1. gravity is kind of the manifestation of curved spacetime in GR
-2. when gravity is included, S-matrix is the only observable for asymptotically flat spacetime
+1. when gravity is included, S-matrix is the only observable for asymptotically flat spacetime
 
 # in states, out states and S-matrix
 
@@ -137,7 +137,7 @@ T_{\alpha \beta}^{+} & =(\psi _{\beta},V\psi _{\alpha}^{+}) \\
  & =(\psi _{\beta},V\psi _{\alpha})+\left( \psi _{\beta},V \frac{1}{E_{\alpha}-H_{0}+i\varepsilon}V\psi _{\alpha} \right)+\left(\psi _{\beta},V \frac{1}{E_{\alpha}-H_{0}+i\varepsilon}V \frac{1}{E_{\alpha}-H_{0}+i\varepsilon}V\psi _{\alpha}\right)+\dots
 \end{align}$$
 
-this is the old-fashioned perturbation theory. 
+this is the old-fashioned perturbation theory.
 
 # time dependent perturbation theory and Dyson series
 
@@ -170,10 +170,10 @@ U(t,t') & =e^{-iH_{0}t}e^{-iH(t-t')}e^{-iH_{0}t'}
 
 we have several properties
 1. $\displaystyle{U(t,t)=I}$
-2. $\displaystyle{U(t,0)=\Lambda(t)}$
-3. $\displaystyle{U(t,t')U(t',t'')=U(t,t'')}$
-4. $\displaystyle{U(\infty,-\infty)=S}$
-5. $\displaystyle{i\partial _{t}U(t,t')=V_{I}(t)U(t,t')}$
+1. $\displaystyle{U(t,0)=\Lambda(t)}$
+1. $\displaystyle{U(t,t')U(t',t'')=U(t,t'')}$
+1. $\displaystyle{U(\infty,-\infty)=S}$
+1. $\displaystyle{i\partial _{t}U(t,t')=V_{I}(t)U(t,t')}$
 
 from 5 and 1, we have the following perturabtion expansion
 
@@ -193,8 +193,8 @@ S & =U(\infty,-\infty) \\
 if we have $\displaystyle{[\mathcal{V}(x),\mathcal{V}(x')]=0}$ for spacelike separation, the S-matrix is naturally Poincare (diffeomorphism) invariant. there are still several problems here
 
 1. definition of $\displaystyle{\mathcal{V}[\hat{\phi}]}$
-2. IR divergence of $\displaystyle{\int \mathrm{d}^{d}x\dots}$
-3. convergence of the Dyson series $\displaystyle{T\exp\left(-i \int \mathrm{d}^{d}x\mathcal{V}(x)\right)}$
+1. IR divergence of $\displaystyle{\int \mathrm{d}^{d}x\dots}$
+1. convergence of the Dyson series $\displaystyle{T\exp\left(-i \int \mathrm{d}^{d}x\mathcal{V}(x)\right)}$
 
 consider
 
@@ -209,7 +209,7 @@ the third term
 $$\begin{align}
 (-i)^{2}\int _{-\infty}^{+\infty}\mathrm{d}\tau_{1}\int _{-\infty}^{\tau_{1}} \mathrm{d}\tau_{2}\braket{ \beta|V(\tau_{1})V(\tau_{2})|\alpha } & =(-i)^{2}\int _{-\infty}^{+\infty}\mathrm{d}\tau_{1}\int ^{\tau_{1}}_{-\infty}\mathrm{d}\tau_{2} \int \mathrm{d}\gamma \braket{ \beta|V|\gamma } \braket{ \gamma|V|\alpha } e^{i(E_{\beta}-E_{\alpha})t}e^{iE_{\gamma}(\tau_{1}-\tau_{2})} \\
  & =-2\pi i\delta(E_{\beta}-E_{\alpha})\int \mathrm{d}\gamma \frac{\braket{ \beta|V|\gamma } \braket{ \gamma|V|\alpha }}{E_{\alpha}-E_{\gamma}+i\varepsilon} \\
- & =-2\pi i\delta(E_{\beta}-E_{\alpha})\braket{ \beta|V \frac{1}{E_{\alpha}-H_{0}+i\varepsilon}V|\alpha } 
+ & =-2\pi i\delta(E_{\beta}-E_{\alpha})\braket{ \beta|V \frac{1}{E_{\alpha}-H_{0}+i\varepsilon}V|\alpha }
 \end{align}$$
 
 # Lehmann-Symanzik-Zimmermann reduction formula and time ordered correlation functions
@@ -299,7 +299,7 @@ $$\begin{align}
 that is the LSZ reduction formula, which gives the following properties of S-matrix
 
 1. permutation symmetry
-2. momentum-energy conservation
-3. unitary
+1. momentum-energy conservation
+1. unitary
 
 there are still some inconvenients here...

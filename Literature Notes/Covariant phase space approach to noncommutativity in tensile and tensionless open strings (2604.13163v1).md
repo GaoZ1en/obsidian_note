@@ -145,7 +145,7 @@ $$\begin{align}
 \left\{X^{\mu},X^{\nu}\right\}|_{\partial \Sigma} & =(\mathcal{B}^{-1})^{\mu \nu}
 \end{align}$$
 
-which is exactly the tensionless limit of the Seiberg-Witten noncommutativity parameter. 
+which is exactly the tensionless limit of the Seiberg-Witten noncommutativity parameter.
 
 ---
 
@@ -251,4 +251,3 @@ $$\begin{align}
 \left\{X^{\mu},\left\{X^{\nu},X^{\rho}\right\}\right\}+\left\{X^{\nu},\left\{X^{\rho},X^{\mu}\right\}\right\}+\left\{X^{\rho},\left\{X^{\mu},X^{\nu}\right\}\right\} & =\Theta ^{\mu \lambda}\partial _{\lambda}\Theta ^{\nu \rho}+\Theta ^{\nu \lambda}\partial _{\lambda}\Theta ^{\rho \mu}+\Theta ^{\rho \lambda}\partial _{\lambda}\Theta ^{\mu \nu} \\
  & \sim \Theta ^{\mu \lambda}\Theta ^{\nu \sigma}\Theta ^{\rho \tau}H_{\lambda \sigma \tau}
 \end{align}$$
-

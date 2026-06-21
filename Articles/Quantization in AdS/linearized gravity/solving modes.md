@@ -33,7 +33,7 @@ $$\begin{align}
 here
 
 $$\begin{align}
-\mathcal{L}X&=f\partial_{r}^{2}X+\frac{1+3r^{2}}{r}\partial_{r}X-\frac{1}{f}\partial_{t}^{2}X+\frac{1}{r^{2}}\partial_{\phi}^{2}X 
+\mathcal{L}X&=f\partial_{r}^{2}X+\frac{1+3r^{2}}{r}\partial_{r}X-\frac{1}{f}\partial_{t}^{2}X+\frac{1}{r^{2}}\partial_{\phi}^{2}X
 \end{align}$$
 
 and
@@ -138,7 +138,7 @@ $$\begin{align}
 h_{\mu \nu}(x) & =h_{ab}(x) \xi _{a,\mu}(x)\xi _{b,\nu}(x), \quad a,b\in\left\{-1,0,1\right\}
 \end{align}$$
 
-remembering that 
+remembering that
 
 $$\begin{align}
 \nabla _{\mu}\xi _{a,\nu} & =-\varepsilon _{\mu \nu \rho}\xi _{a}^{\rho} \\

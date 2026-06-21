@@ -53,7 +53,7 @@ the asymptotic behavior remains unchanged.
 by introduce a scalar function $\displaystyle{\Psi}$ as
 
 $$\begin{align}
-A^t=0,\qquad A^r=\frac{1+r^2}{r}\partial_\phi \Psi,\qquad A^\phi=-\frac{1+r^2}{r}\partial_r\Psi 
+A^t=0,\qquad A^r=\frac{1+r^2}{r}\partial_\phi \Psi,\qquad A^\phi=-\frac{1+r^2}{r}\partial_r\Psi
 \end{align}$$
 
 ---
@@ -140,6 +140,7 @@ $$\begin{align}
 \Psi_{nm}=C_{nm} e^{-i\omega_{nm}t}e^{im\phi}r^{|m|}(1+r^2)^{-(|m|+2)/2}P_{n}^{(1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right), \\
 \omega_{nm}=2n+2+|m|, \quad n\in \mathbb{N}, m\in \mathbb{Z}
 \end{align}$$
+
 –––
 the symplectic form is given by
 
@@ -268,4 +269,4 @@ A_\mu & =\partial_\mu \Lambda .
 
 ---
 
-now we want change to the covariant gauge. however the inverse process is simpler to achieve. 
+now we want change to the covariant gauge. however the inverse process is simpler to achieve.

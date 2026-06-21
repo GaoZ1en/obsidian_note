@@ -114,6 +114,7 @@ H & =\sum _{j}-ih \gamma _{2j-1}\gamma _{2j}-iJ\gamma _{2j}\gamma _{2j+1}
 \end{align}$$
 
 ---
+
 # tensor network state and SPT phase
 
 MPS, PEPS, DMRG, ..., what are these?
@@ -125,13 +126,13 @@ for example,
 $$\begin{align}
 \ket{\psi}  & =\sum _{i_{1}i_{2}i_{3}}\psi _{i_{1}i_{2}i_{3}}\ket{i_{1}} \ket{i_{2}} \ket{i_{3}}  \\
 \mathcal{\hat{O}} & =\sum _{ij}\mathcal{O}_{ij}\ket{i} \bra{j}  \\
-\mathcal{T} & =\sum _{i_{1}i_{2}ji_{3}}T_{i_{1}i_{2}ji_{3}} \bra{i_{1}} \bra{i_{2}} \ket{j} \bra{i_{3}}  
+\mathcal{T} & =\sum _{i_{1}i_{2}ji_{3}}T_{i_{1}i_{2}ji_{3}} \bra{i_{1}} \bra{i_{2}} \ket{j} \bra{i_{3}}
 \end{align}$$
 
 then
 
 $$\begin{align}
-\sum T_{i_{1}i_{2}ji_{3}}\psi _{i_{1}i_{2}i_{3}}\mathcal{O}_{ij}\ket{i} 
+\sum T_{i_{1}i_{2}ji_{3}}\psi _{i_{1}i_{2}i_{3}}\mathcal{O}_{ij}\ket{i}
 \end{align}$$
 
 represents the following diagram
@@ -147,14 +148,14 @@ $$\begin{align}
 and consider
 
 $$\begin{align}
-\hat{A} & =A_{i\alpha \beta}\ket{1} \ket{\alpha} \bra{\beta} 
+\hat{A} & =A_{i\alpha \beta}\ket{1} \ket{\alpha} \bra{\beta}
 \end{align}$$
 
 and we can construct
 
 $$\begin{align}
  & \sum _{\left\{\alpha\right\}}A_{i_{1}\alpha _{1}\alpha _{2}}A_{i_{2}\alpha _{2}\alpha _{3}}\ldots A_{i_{L}\alpha _{L}\alpha _{1}}\ket{i_{1}i_{2}\ldots i_{L}} \\
-= & \mathrm{Tr}\left(A_{1}\dots A_{L}\right)\ket{i_{1}i_{2}\ldots i_{L}} 
+= & \mathrm{Tr}\left(A_{1}\dots A_{L}\right)\ket{i_{1}i_{2}\ldots i_{L}}
 \end{align}$$
 
 the benefit of MPS is that it can efficiently represent states with low entanglement, largely reducing the number of parameters from $\displaystyle{2^{L}}$ to $\displaystyle{LD^{2}}$, where $\displaystyle{D}$ is the bond dimension.
@@ -176,7 +177,6 @@ the entanglement entropy between left and right Rindler wedge is
 $$\begin{align}
 S_{R} & =-\mathrm{Tr}(\rho _{R}\log \rho _{R}) \\
  & =\beta \braket{E}+\log Z
- \end{align}$$
+\end{align}$$
 
 which is the thermal entropy of the Rindler observer, satisfying the area law.
-

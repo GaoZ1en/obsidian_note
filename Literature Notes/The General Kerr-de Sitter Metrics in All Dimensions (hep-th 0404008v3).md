@@ -53,4 +53,3 @@ if $\displaystyle{D=2n+1}$, there is no $\displaystyle{z}$ coordinates, the term
 $$\begin{align}
 U & =\frac{1}{r}\prod ^{n-1}_{j=1}(r^{2}+a_{j}^{2})
 \end{align}$$
-

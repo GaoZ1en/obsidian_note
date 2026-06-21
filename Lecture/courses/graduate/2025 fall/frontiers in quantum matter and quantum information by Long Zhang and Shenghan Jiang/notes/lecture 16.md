@@ -19,7 +19,7 @@ $$\begin{align}
 Z _{s}\ket{\psi} & =\ket{\psi} ,\quad \forall s \\
 X _{p}\ket{\psi} & =\ket{\psi} ,\quad \forall p
 \end{align}$$
- 
+
 which can be expressed as
 
 $$\begin{align}
@@ -32,7 +32,7 @@ $$\begin{align}
 \ket{\psi _{i}} & =\bar{X} _{i}\ket{\psi} ,\quad i=1,2,\ldots ,2g
 \end{align}$$
 
-these ground states are characterized by the homology classes of the loops on the surface, $\displaystyle{H_{1}(\Gamma,\mathbb{Z}_{2})}$. 
+these ground states are characterized by the homology classes of the loops on the surface, $\displaystyle{H_{1}(\Gamma,\mathbb{Z}_{2})}$.
 
 consider the dual lattice, vertex operators and plaquette operators exchange with each other... the normalizer of stabilizer group $\displaystyle{N(S)}$ modulus $\displaystyle{S}$ characterize the logical Pauli operators of the logical qubits
 
@@ -57,10 +57,10 @@ N(S)/S & =H_{1}(\Gamma,\partial _{\text{smooth}};\mathbb{Z}_{2})\times H_{1}(\Ga
 
 the code distance $\displaystyle{d}$ equals the minimal length of either nontrivial boundary-to-boundary string.
 
-consider the QEC. suppose errors happen independently on each physical qubit with equal probability. 
+consider the QEC. suppose errors happen independently on each physical qubit with equal probability.
 
 act the stabilizers $\displaystyle{Z_{v},X_{p}}$.
 
 1. bit-flip. $\displaystyle{Z_{v}=-1}$, find a shortest curve $\displaystyle{C}$ that link every $\displaystyle{v}$, which means $\displaystyle{\partial C=v}$, then apply $\displaystyle{X_{C}}$...
-	1. if the shortest curve belongs to another homology class (compared with the correct one), the correction fails... 
+	1. if the shortest curve belongs to another homology class (compared with the correct one), the correction fails...
 		1. when code distance grows, the probability of failure correction approaches to 0.

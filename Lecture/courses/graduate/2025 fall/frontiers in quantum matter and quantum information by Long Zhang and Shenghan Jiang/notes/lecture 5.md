@@ -3,13 +3,13 @@ last class what is MPS in tensor network???
 use MPS to illustrate SSB... for example in Ising model, in the physical leg, we label as $\displaystyle{U(g)}$ and in the internal leg, we label as $\displaystyle{W(g)}$ and $\displaystyle{W^{\dagger}(g)}$. here $\displaystyle{U(g)}$ and $\displaystyle{W(g)}$ are some representation of the symmetry group $\displaystyle{g}$. contracting internal legs, and the symmetry only act on the physical legs as
 
 $$\begin{align}
-\bigotimes_{j}U_{j}(g)\ket{\psi} =\ket{\psi} 
+\bigotimes_{j}U_{j}(g)\ket{\psi} =\ket{\psi}
 \end{align}$$
 
 consider the following state
 
 $$\begin{align}
-\ket{\uparrow\uparrow\dots \uparrow}+\ket{\downarrow\downarrow\dots \downarrow} 
+\ket{\uparrow\uparrow\dots \uparrow}+\ket{\downarrow\downarrow\dots \downarrow}
 \end{align}$$
 
 the tensor representation of this state is
@@ -36,13 +36,13 @@ $$\begin{align}
 where $\displaystyle{T_{\alpha \alpha',\beta \beta'}=\sum _{i}M^{i}_{\alpha \beta}(M^{*})^{i}_{\alpha'\beta'}}$, here $\displaystyle{M^{i}_{\alpha \beta}}$ is the tensor representation of the state. and $\displaystyle{T(Z)_{\alpha \alpha',\beta \beta'}=\sum _{ij}M^{i}_{\alpha \beta}Z_{ij}(M^{*})^{j}_{\alpha'\beta'}}$. take the eigenstate decomposation of $\displaystyle{T}$ as
 
 $$\begin{align}
-T & =\sum _{\alpha}\lambda _{\alpha}\ket{\lambda _{\alpha}} \bra{\lambda _{\alpha}} 
+T & =\sum _{\alpha}\lambda _{\alpha}\ket{\lambda _{\alpha}} \bra{\lambda _{\alpha}}
 \end{align}$$
 
 when thermodynamic limit is imposed, we have the leading term
 
 $$\begin{align}
-\lim_{ L\gg \ell \to \infty } \braket{ \psi|Z_{1}Z_{\ell}|\psi } & \sim \braket{ \lambda_{1}|T(Z)|\lambda_{1} } \braket{ \lambda_{1}|T(Z)|\lambda_{1} } 
+\lim_{ L\gg \ell \to \infty } \braket{ \psi|Z_{1}Z_{\ell}|\psi } & \sim \braket{ \lambda_{1}|T(Z)|\lambda_{1} } \braket{ \lambda_{1}|T(Z)|\lambda_{1} }
 \end{align}$$
 
 where $\displaystyle{\lambda_{1}}$ is the largest eigenvalue. by symmetry, we have $\displaystyle{\lim_{ L\gg \ell \to \infty }\braket{ \psi|Z_{1}Z_{\ell}|\psi }=0}$ in the symmetric phase. however in the SSB phase, since
@@ -92,10 +92,10 @@ h & =\prod _{j}X_{2j-1}
 \end{align}$$
 
 $\displaystyle{Z_{j-1}X_{j}Z_{j+1}\ket{\psi} =\ket{\psi}}$ implies the wave function has the following symmetry, $\displaystyle{Z_{j-1}}$ acts on the physical leg of site $\displaystyle{j-1}$, and so on. impose the following symmetry that
-* $\displaystyle{Z}$ acts on the physical leg and $\displaystyle{W}$ acts on the right imaginary leg
-* $\displaystyle{X}$ acts on the physical leg, $\displaystyle{W}$ acts on the left imaginary leg, and $\displaystyle{V}$ acts on the right imaginary leg
-* $\displaystyle{Z}$ acts on the physical leg and $\displaystyle{V}$ acts on the left imaginary leg
-* $\displaystyle{\implies}$ $\displaystyle{X}$ acts on the left imaginary leg and $\displaystyle{Z}$ acts on the right imaginary leg
+- $\displaystyle{Z}$ acts on the physical leg and $\displaystyle{W}$ acts on the right imaginary leg
+- $\displaystyle{X}$ acts on the physical leg, $\displaystyle{W}$ acts on the left imaginary leg, and $\displaystyle{V}$ acts on the right imaginary leg
+- $\displaystyle{Z}$ acts on the physical leg and $\displaystyle{V}$ acts on the left imaginary leg
+- $\displaystyle{\implies}$ $\displaystyle{X}$ acts on the left imaginary leg and $\displaystyle{Z}$ acts on the right imaginary leg
 
 with $\displaystyle{W^{2}=V^{2}=1}$. one of the solution is $\displaystyle{W=Z}$ and $\displaystyle{V=X}$. then the act of $\displaystyle{g}$ or $\displaystyle{h}$ gives only $\displaystyle{X}$'s act on the physical leg of even or odd sites. we can use $\displaystyle{U_{j}(g),W_{j-\frac{1}{2}}(g),W_{j+\frac{1}{2}}(g)}$... to label above $\displaystyle{X}$ and $\displaystyle{Z}$'s. we have
 
@@ -105,14 +105,14 @@ U_{j}(g)U_{j}(h) & =U_{j}(h)U_{j}(g) \\
 W_{j-\frac{1}{2}}(g)W_{j-\frac{1}{2}}(h) & =-W_{j-\frac{1}{2}}(h)W_{j-\frac{1}{2}}(g)
 \end{align}$$
 
-this is a *projective* representation. this is a general feature of 1d SPT. 
+this is a *projective* representation. this is a general feature of 1d SPT.
 
 string order parameter. consider the expectation of $\displaystyle{g}$
 
 $$\begin{align}
 0=\braket{ \psi|g|\psi }  & = \braket{ \psi|X_{0}X_{2}\dots X_{2L}|\psi }  \\
  & = \braket{ \psi|Z_{-1}Z_{1}Z_{1}Z_{3}\dots Z_{2L-1}Z_{2L+1}|\psi }  \\
- & = \braket{ \psi|Z_{-1}Z_{2L+1}|\psi } 
+ & = \braket{ \psi|Z_{-1}Z_{2L+1}|\psi }
 \end{align}$$
 
 so we can consider
@@ -129,5 +129,4 @@ $$\begin{align}
 \braket{ \psi|C_{0}(g)U_{1}(h)\dots U_{L}(h)C_{L+1}(g)|\psi }  & = C'\neq 0
 \end{align}$$
 
-where $\displaystyle{C_{j}(h)}$ creates a domain wall that carries $\displaystyle{h}$ charge. 
-
+where $\displaystyle{C_{j}(h)}$ creates a domain wall that carries $\displaystyle{h}$ charge.

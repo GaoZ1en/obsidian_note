@@ -59,10 +59,10 @@ where we have defined $\displaystyle{F^{\perp}_{\mu \nu}=\nabla _{\mu}A_{\nu}^{\
 
 $$\begin{align}
 A_{+,n,\bar{n}}^{\perp} & \propto \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\xi _{1} \\
-A_{-,n,\bar{n}}^{\perp} & \propto \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{1} 
+A_{-,n,\bar{n}}^{\perp} & \propto \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}_{1}
 \end{align}$$
 
-2. the longitudinal scalar sector with mass $\displaystyle{\mu ^{2}/\alpha}$;
+1. the longitudinal scalar sector with mass $\displaystyle{\mu ^{2}/\alpha}$;
 
 $$\begin{align}
 \chi_{n,\bar{n}} & \propto \mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i\Delta t}}{(1+r^{2})^{\Delta /2}} \\

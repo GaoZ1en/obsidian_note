@@ -2,7 +2,8 @@
 
 考虑具有以下渐进行为的度规
 
-$$\tag{B.1}
+$$
+\tag{B.1}
 \begin{align}
 g_{zz} & =\frac{1}{z^{2}}+\mathcal{O}(z^{0}) \\
 g_{za} & =\mathcal{O}(z^{-1}) \\
@@ -12,7 +13,8 @@ $$
 
 其中 $\displaystyle{g^{(0)}_{ab}}$ 仅依赖于边界坐标 $\displaystyle{x^{a}}$。根据 $\displaystyle{g_{\mu \nu}g^{\nu \rho}=\delta^{\rho}_{\mu}}$，可以得到 $\displaystyle{g^{\mu \nu}}$ 的渐进行为
 
-$$\tag{B.2}
+$$
+\tag{B.2}
 \begin{align}
 g^{zz} & =z^{2}-z^{4}\left( g_{zz}-\frac{1}{z^{2}} \right)+z^{6}g^{(0)ab}g_{za}g_{zb}+\mathcal{O}(z^{6}) \\
 g^{za} & =-z^{4}g^{(0)ab}g_{zb}+z^{6}\left( g_{zz}-\frac{1}{z^{2}} \right)g^{(0)ab}g_{zb}+z^{6}g^{(0)ab}\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)g^{(0)cd}g_{zd} \\
@@ -23,7 +25,8 @@ $$
 
 其中 $\displaystyle{g^{(0)ab}}$ 为 $\displaystyle{g^{(0)}_{ab}}$ 的逆，即有 $\displaystyle{g^{(0)}_{ab}g^{(0)bc}=\delta^{c}_{a}}$。进而可以得到度规张量的行列式 $\displaystyle{\sqrt{ -g }}$，以及体元 $\displaystyle{\varepsilon_{\mu \nu \rho}}$ 的渐进行为
 
-$$\tag{B.3}
+$$
+\tag{B.3}
 \begin{align}
 \sqrt{ -g } & =\frac{1}{z^{3}}\sqrt{ -g^{(0)} }\left[1+\frac{1}{2}z^{2}\left( g_{zz}-\frac{1}{z^{2}} \right)+\frac{1}{2}z^{2}g^{(0)ab}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)-\frac{1}{2}z^{4}g^{(0)ab}g_{za}g_{zb}+\mathcal{O}(z^{4})\right] \\
 \varepsilon_{za_{0}a_{1}} & =-\frac{1}{z^{3}}\left[1+\frac{1}{2}z^{2}\left( g_{zz}-\frac{1}{z^{2}} \right)+\frac{1}{2}z^{2}g^{(0)ab}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)-\frac{1}{2}z^{4}g^{(0)ab}g_{za}g_{zb}+\mathcal{O}(z^{4})\right]\varepsilon^{(0)}_{a_{0}a_{1}}
@@ -32,7 +35,8 @@ $$
 
 其中 $\displaystyle{\sqrt{ -g^{(0)} }}$ 和 $\displaystyle{\varepsilon^{(0)}_{a_{0}a_{1}}}$ 分别是渐进边界 $\displaystyle{\Gamma_z}$ 上的度规张量行列式与体元。然后根据 $\displaystyle{\Gamma^{\rho}_{~\mu \nu}=\frac{1}{2}g^{\rho \sigma}(\partial_{\mu}g_{\sigma \nu}+\partial_{\nu}g_{\mu \sigma}-\partial_{\sigma}g_{\mu \nu})}$，计算克氏符 $\displaystyle{\Gamma^{\rho}_{~\mu \nu}}$ 的渐进行为
 
-$$\tag{B.4}
+$$
+\tag{B.4}
 \begin{align}
 \Gamma^{z}_{~zz} & =-\frac{1}{z}+z\left( g_{zz}-\frac{1}{z^{2}} \right)+\frac{1}{2}z^{2}\partial_{z}\left( g_{zz}-\frac{1}{z^{2}} \right)-z^{3}g^{(0)ab}g_{za}g_{zb}-z^{4}g^{(0)ab}g_{za}\partial_{z}g_{zb}+\mathcal{O}(z^{3}) \\
 \Gamma^{a}_{~zz} & =zg^{(0)ab}+z^{2}g^{(0)ab}\partial_{z}g_{zb}-\frac{1}{2}z^{2}g^{(0)ab}\partial_{z}\left( g_{zz}-\frac{1}{z^{2}} \right)-z^{3}\left( g_{zz}-\frac{1}{z^{2}} \right)g^{(0)ab}g_{zb}-\frac{1}{2}z^{4}\partial_{z}\left( g_{zz}-\frac{1}{z^{2}} \right)g^{(0)ab}g_{zb} \\
@@ -51,7 +55,8 @@ $$
 
 其中 $\displaystyle{\Gamma^{(0)c}_{~~~~~~ab}}$ 为渐进边界 $\displaystyle{\Gamma_z}$ 上关于 $\displaystyle{g^{(0)}_{ab}}$ 的克氏符，定义为
 
-$$\tag{B.5}
+$$
+\tag{B.5}
 \begin{align}
 \Gamma^{(0)c}_{~~~~~~ab} & =\frac{1}{2}g^{(0)cd}(\partial_{a}g_{bd}^{(0)}+\partial_{b}g_{ad}^{(0)}-\partial_{d}g_{ab}^{(0)})
 \end{align}
@@ -59,7 +64,8 @@ $$
 
 $\displaystyle{D^{(0)}_{a}}$ 是对应于 $\displaystyle{\Gamma^{(0)c}_{~~~~~~ab}}$ 的协变导数。进一步根据 $\displaystyle{R^{\rho}_{~\sigma \mu \nu}=\partial_{\mu}\Gamma^{\rho}_{~\sigma \nu}-\partial_{\nu}\Gamma^{\rho}_{~\mu \sigma}+\Gamma^{\rho}_{~\mu \lambda}\Gamma^{\lambda}_{~\nu \sigma}-\Gamma^{\rho}_{~\nu \lambda}\Gamma^{\lambda}_{~\mu \sigma}}$，计算Riemann张量 $\displaystyle{R^{\rho}_{~\sigma \mu \nu}}$ 的渐进行为
 
-$$\tag{B.6}
+$$
+\tag{B.6}
 \begin{align}
 R^{\rho}_{~\sigma zz} & =0 \\
 R^{z}_{~zza} & =-g_{za}-\frac{1}{2}z^{3}g_{za}\partial_{z}\left( g_{zz}-\frac{1}{z^{2}} \right)-\frac{3}{2}z^{3}g^{(0)bc}\partial_{z}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)g_{zc}+\frac{1}{2}z^{3}g^{(0)bc}(D_{a}^{(0)}g_{zb}+D_{b}^{(0)}g_{za})g_{zc} \\
@@ -95,7 +101,8 @@ $$
 
 其中 $\displaystyle{R^{(0)c}_{~~~~~~dab}}$ 为渐进边界 $\displaystyle{\Gamma_z}$ 上关于 $\displaystyle{g^{(0)}_{ab}}$ 的Riemann张量，定义为
 
-$$\tag{B.7}
+$$
+\tag{B.7}
 \begin{align}
 R^{(0)c}_{~~~~~~dab} & =\partial_{a}\Gamma^{(0)c}_{~~~~~~bd}-\partial_{b}\Gamma^{(0)c}_{~~~~~~ad}+\Gamma^{(0)c}_{~~~~~~ae}\Gamma^{(0)e}_{~~~~~~bd}-\Gamma^{(0)c}_{~~~~~~be}\Gamma^{(0)e}_{~~~~~~ad}
 \end{align}
@@ -103,7 +110,8 @@ $$
 
 再对Riemann张量 $\displaystyle{R^{\rho}_{~\sigma \mu \nu}}$ 进行缩并，计算Ricci张量 $\displaystyle{R_{\mu \nu}=R^{\rho}_{~\mu \rho \nu}}$ 和Ricci标量 $\displaystyle{R=g^{\mu \nu}R_{\mu \nu}}$ 的渐进行为
 
-$$\tag{B.8}
+$$
+\tag{B.8}
 \begin{align}
 R_{zz} & = -\frac{2}{z^{2}}-2\left( g_{zz}-\frac{1}{z^{2}} \right)-z\partial_{z}\left( g_{zz}-\frac{1}{z^{2}} \right)-\frac{3}{2}zg^{(0)ab}\partial_{z}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)-\frac{1}{2}z^{2}g^{(0)ab}\partial_{z}^{2}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)+zg^{(0)ab}D_{a}^{(0)}g_{zb} \\
  & +z^{2}g^{(0)ab}D_{a}^{(0)}\partial_{z}g_{zb}+2z^{2}g^{(0)ab}g_{za}g_{zb}+2z^{3}g^{(0)ab}g_{za}\partial_{z}g_{zb}+\mathcal{O}(z^{2}) \\
@@ -122,7 +130,8 @@ $$
 
 其中 $\displaystyle{R^{(0)}_{ab}=R^{(0)c}_{~~~~~~acb}}$ 是渐进边界 $\displaystyle{\Gamma_z}$ 上关于 $\displaystyle{g^{(0)}_{ab}}$ 的Ricci张量，$\displaystyle{R^{(0)}=g^{(0)ab}R^{(0)}_{ab}}$ 是渐进边界 $\displaystyle{\Gamma_z}$ 上关于 $\displaystyle{g^{(0)}_{ab}}$ 的Ricci标量。这里我们使用了
 
-$$\tag{B.9}
+$$
+\tag{B.9}
 \begin{align}
 R^{(0)}_{ab} & =\frac{1}{2}R^{(0)}g^{(0)}_{ab}
 \end{align}
@@ -130,7 +139,8 @@ $$
 
 (B,8)对一般的二维时空成立。最终得到运动方程 $\displaystyle{\tilde{E}_{\mu \nu}}$ 的渐进行为
 
-$$\tag{B.10}
+$$
+\tag{B.10}
 \begin{align}
 \tilde{E}_{zz} & =\frac{1}{16\pi G}\left[\frac{1}{2}R^{(0)}+\left( g_{zz}-\frac{1}{z^{2}} \right)+g^{(0)ab}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)+\frac{1}{2}zg^{(0)ab}\partial_{z}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)-zg^{(0)ab}D_{a}^{(0)}g_{zb}-z^{2}g^{(0)ab}g_{za}g_{zb}+\mathcal{O}(z^{2})\right] \\
 \tilde{E}_{za} & =\frac{1}{16\pi G}\left[\frac{1}{2}zD_{a}^{(0)}\left( g_{zz}-\frac{1}{z^{2}} \right)+zg^{(0)bc}\left( D_{a}^{(0)}\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)-D_{c}^{(0)}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right) \right)+\frac{1}{2}z^{2}R^{(0)}g_{za}-\frac{1}{2}z^{3}g_{za}\partial_{z}\left( g_{zz}-\frac{1}{z^{2}} \right) \right. \\
@@ -143,7 +153,8 @@ $$
 
 接下来我们计算渐进边界 $\displaystyle{\Gamma_z}$ 上物理量的渐进行为。法余矢 $\displaystyle{n_{\mu}}$ 正交于 $\displaystyle{\Gamma_z}$，从而有 $\displaystyle{n_{a}=0}$；归一化要求 $\displaystyle{g^{\mu \nu}n_{\mu}n_{\nu}=1}$，由此得到
 
-$$\tag{B.11}
+$$
+\tag{B.11}
 \begin{align}
 n_{z} & =-\frac{1}{z}-\frac{1}{2}z\left( g_{zz}-\frac{1}{z^{2}} \right)+\frac{1}{2}z^{3}g^{(0)ab}g_{za}g_{zb}+\mathcal{O}(z^{3}) \\
 n_{a} & =0 \\
@@ -154,7 +165,8 @@ $$
 
 进而可以计算诱导度规 $\displaystyle{\gamma_{\mu \nu}=g_{\mu \nu}-n_{\mu}n_{\nu}}$ 的渐进行为
 
-$$\tag{B.12}
+$$
+\tag{B.12}
 \begin{align}
 \gamma_{zz} & =z^{2}g^{(0)ab}g_{za}g_{zb}+\mathcal{O}(z^{2}) \\
 \gamma_{za} & =g_{za} \\
@@ -164,7 +176,8 @@ $$
 
 以及
 
-$$\tag{B.13}
+$$
+\tag{B.13}
 \begin{align}
 \gamma^{z}_{z} & =0 \\
 \gamma^{z}_{a} & =0 \\
@@ -176,9 +189,10 @@ $$\tag{B.13}
 \end{align}
 $$
 
-诱导度规 $\displaystyle{\gamma_{\mu \nu}}$ 的行列式以及 $\displaystyle{\varepsilon^{(\Gamma_{z})}_{\mu \nu}}$ 
+诱导度规 $\displaystyle{\gamma_{\mu \nu}}$ 的行列式以及 $\displaystyle{\varepsilon^{(\Gamma_{z})}_{\mu \nu}}$
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 \sqrt{ -\gamma } & =\frac{1}{z^{2}}\sqrt{ -g^{(0)} }\left[1+\frac{1}{2}z^{2}g^{(0)ab}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)+\mathcal{O}(z^{4})\right] \\
 \varepsilon^{(\Gamma_{z})}_{a_{0}a_{1}} & =\frac{1}{z^{2}}\left[ 1+\frac{1}{2}z^{2}g^{(0)ab}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)+\mathcal{O}(z^{4}) \right]\varepsilon^{(0)}_{a_{0}a_{1}}
@@ -187,7 +201,8 @@ $$
 
 进而可以得到关于 $\displaystyle{\gamma_{ab}}$ 的克氏符 $\displaystyle{\tilde{\Gamma}^{c}_{~ab}}$、Ricci张量 $\displaystyle{\tilde{R}_{ab}}$ 和Ricci标量 $\displaystyle{\tilde{R}}$ 的渐进行为
 
-$$\tag{B.14}
+$$
+\tag{B.14}
 \begin{align}
 \tilde{\Gamma}^{c}_{~ab} & =\Gamma^{(0)c}_{~~~~~~ab}+\frac{1}{2}z^{2}g^{(0)cd}\left( D_{a}^{(0)}\left( g_{bd}-\frac{1}{z^{2}}g^{(0)}_{bd} \right)+D_{b}^{(0)}\left( g_{ad}-\frac{1}{z^{2}}g^{(0)}_{ad} \right)-D_{d}^{(0)}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right) \right)+\mathcal{O}(z^{4}) \\
 \tilde{R}_{ab} & =R^{(0)}_{ab}+\frac{1}{2}z^{2}g^{(0)cd}\left(D_{c}^{(0)}D_{a}^{(0)}\left( g_{bd}-\frac{1}{z^{2}}g^{(0)}_{bd} \right)+D_{c}^{(0)}D_{b}^{(0)}\left( g_{ad}-\frac{1}{z^{2}}g^{(0)}_{ad} \right)-D_{b}^{(0)}D_{a}^{(0)}\left( g_{cd}-\frac{1}{z^{2}}g^{(0)}_{cd} \right)\right. \\
@@ -199,7 +214,8 @@ $$
 
 进一步计算外曲率 $\displaystyle{K_{\mu \nu}=\gamma^{\rho}_{\mu}\gamma^{\sigma}_{\nu}\nabla_{\rho}n_{\sigma}}$ 的渐进行为
 
-$$\tag{B.15}
+$$
+\tag{B.15}
 \begin{align}
 K_{zz} & =z^{2}g^{(0)ab}g_{za}g_{zb}-\frac{1}{2}z^{4}g^{(0)ab}g_{za}g_{zb}\left( g_{zz}-\frac{1}{z^{2}} \right)-2z^{4}g^{(0)ac}g^{(0)bd}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)g_{zc}g_{zd} \\
  & -\frac{1}{2}z^{5}g^{(0)ac}g^{(0)bd}\partial_{z}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)g_{zc}g_{zd}+z^{5}g^{(0)ac}g^{(0)bd}D_{a}^{(0)}g_{zb}g_{zc}g_{zd}+\frac{1}{2}z^{6}g^{(0)ab}g^{(0)cd}g_{za}g_{zb}g_{zc}g_{zd}+\mathcal{O}(z^{4}) \\
@@ -215,7 +231,8 @@ $$
 
 以及外曲率迹 $\displaystyle{K=\gamma^{\mu \nu}K_{\mu \nu}}$ 的渐进行为
 
-$$\tag{B.16}
+$$
+\tag{B.16}
 \begin{align}
 K & =2-z^{2}\left( g_{zz}-\frac{1}{z^{2}} \right)-z^{2}g^{(0)ab}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)-\frac{1}{2}z^{3}g^{(0)ab}\partial_{z}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right) \\
  & +z^{3}g^{(0)ab}D_{a}^{(0)}g_{zb}+z^{4}g^{(0)ab}g_{za}g_{zb}+\mathcal{O}(z^{4})
@@ -224,7 +241,8 @@ $$
 
 最后我们计算能动张量 $\displaystyle{T_{\mu \nu}}$ 的渐进行为
 
-$$\tag{B.17}
+$$
+\tag{B.17}
 \begin{align}
 T_{zz} & =\mathcal{O}(z^{2}) \\
 T_{za} & =\frac{1}{4G}\left[\frac{1}{2}z^{2}g_{za}\left( g_{zz}-\frac{1}{z^{2}} \right)-z^{2}g^{(0)bc}\left(\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)g_{zc}-\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)g_{za}\right)-z^{3}g^{(0)bc}g_{za}D_{b}^{(0)}g_{zc}\right. \\
@@ -239,4 +257,3 @@ T^{ab} & =\frac{1}{4G}\left[ \frac{1}{2}z^{4}g^{(0)ab}\left( g_{zz}-\frac{1}{z^{
  & \left.-\frac{1}{2}z^{6}g^{(0)ab}g^{(0)cd}g_{zc}g_{zd}+\mathcal{O}(z^{6})\right]
 \end{align}
 $$
-

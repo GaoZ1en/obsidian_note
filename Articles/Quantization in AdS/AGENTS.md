@@ -1,9 +1,11 @@
 # AGENTS.md — Quantization in AdS3
 
 ## Scope
+
 Research workspace for AdS3 quantization projects and linked subtopics.
 
 ## Rules
+
 - Treat subfolders as separate topic tracks; do not flatten or merge them.
 - Preserve established notation across related notes unless correcting a clear mistake.
 - When adding or removing major notes, update the local `README.md`.
@@ -11,6 +13,7 @@ Research workspace for AdS3 quantization projects and linked subtopics.
 - Do not rename established topic folders such as `Proca in AdS3/` or `electric field in AdS3/` without explicit instruction.
 
 ## Mathematica / xAct / Sage
+
 - For xAct calculations in this workspace, load `xTras` when available and use `FullSimplification[]` to simplify tensor expressions, especially after xPert/xCPS variations, curvature identities, or index canonicalization steps.
 - For representation-theory calculations in this workspace, use the Sage MCP before editing mathematical claims when the claim involves finite groups, Lie algebras, root systems, Weyl characters, Young diagrams, symmetric functions, tensor-product decompositions, compact-subalgebra branching, or combinatorial representation theory.
   - In the AdS$_d$ and AdS$_4$ module notes, use Sage for checks of $SO(d-1)$ / $\mathfrak{so}(d-1)$ characters, $B_r/D_r$ WeylCharacterRing computations, symmetric traceless representations, Young-diagram tensor products, symmetric-power decompositions, and finite-order character or partition-function expansions.

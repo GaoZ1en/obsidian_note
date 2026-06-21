@@ -13,46 +13,46 @@ FT measurement:
 
 measure $\displaystyle{Z}$ on each qubit in a fault-tolerant way:
 1. prepare an ancilla in the Shor state $\displaystyle{\ket{\text{Shor}}=\sum _{y_{1}y_{2}\dots y_{r}\equiv0\mod{2}}\ket{y_{1}y_{2}\dots y_{r}}=\frac{1}{\sqrt{ 2 }}(\ket{++\dots+}+\ket{--\dots-})}$ (which can be corrected)
-2. apply CNOT gate from data qubits to ancilla qubits
-3. measure the ancilla qubits
+1. apply CNOT gate from data qubits to ancilla qubits
+1. measure the ancilla qubits
 
 the advantage of Shor state is that we can only extract the overall parity information, and not every individual bit
 
 how to construct a cat state $\displaystyle{\ket{\text{cat}}=\frac{1}{\sqrt{ 2 }}(\ket{00\dots0}+\ket{11\dots 1})}$
 1. prepare $\displaystyle{\ket{+}\otimes \ket{0}\otimes \ket{0}\otimes \dots \otimes \ket{0}}$ (act a Hadamard gate on the first qubit $\displaystyle{\ket{0}}$)
-2. apply CNOT gates from the first qubit to all other qubits
+1. apply CNOT gates from the first qubit to all other qubits
 	1. which can be modified to apply CNOT gates from the previous qubit to the next qubit, which is a more fault-tolerant way
 
 and how to construct the Shor state from cat state?
 1. prepare a cat state
-2. apply Hadamard gates to all qubits
+1. apply Hadamard gates to all qubits
 
 more generally, to measure a stabilizer $\displaystyle{S}$ in a FT way:
 1. rotate the stabilizer to $\displaystyle{Z^{\otimes r}}$ by applying appropriate gates on data qubits
-2. measure $\displaystyle{Z^{\otimes r}}$ in a FT way
-3. rotate back
+1. measure $\displaystyle{Z^{\otimes r}}$ in a FT way
+1. rotate back
 
 so for stabilizer code, the measurement of stabilizers can be done in a FT way.
 
 Clifford hierarchy:
 1. Pauli group. FT$\displaystyle{\checkmark}$
-2. Clifford group: normalizer of Pauli group. FT$\displaystyle{\checkmark}$
+1. Clifford group: normalizer of Pauli group. FT$\displaystyle{\checkmark}$
 
 by introducing auxiliary states, we can implement any gate in the Clifford hierarchy in a FT way...
 
 how to implement the $\displaystyle{T}$ gate in a FT way:
 1. prepare the auxiliary state $\displaystyle{\ket{A}=\frac{1}{\sqrt{ 2 }}(\ket{0}+e^{i\pi/4}\ket{1})=T\ket{+}}$
-2. apply a CNOT gate from data qubit to auxiliary qubit
-3. measure the auxiliary qubit in the $\displaystyle{Z}$ basis
-4. if the measurement outcome is $\displaystyle{+1}$, do nothing; if the measurement outcome is $\displaystyle{-1}$, apply the $\displaystyle{S}$ gate to the data qubit
+1. apply a CNOT gate from data qubit to auxiliary qubit
+1. measure the auxiliary qubit in the $\displaystyle{Z}$ basis
+1. if the measurement outcome is $\displaystyle{+1}$, do nothing; if the measurement outcome is $\displaystyle{-1}$, apply the $\displaystyle{S}$ gate to the data qubit
 
 how to measure the $\displaystyle{TXT^{\dagger}}$ gate in a FT way:
 1. notice that $\displaystyle{(TXT^{\dagger})^{2}=I}$, we can implement it via the usual way:
 	1. prepare the auxiliary state $\displaystyle{\ket{\bar{0}}}$, and act a Hadamard gate to get $\displaystyle{\ket{\bar{+}}}$
-	2. apply a C-$\displaystyle{TXT^{\dagger}}$ gate from the auxiliary qubit to the data qubit
+	1. apply a C-$\displaystyle{TXT^{\dagger}}$ gate from the auxiliary qubit to the data qubit
 		1. notice that $\displaystyle{TXT^{\dagger}}$ is a conjugation measure, so we can implement C-$\displaystyle{TXT^{\dagger}}$ by applying $\displaystyle{T}$ gate to the data qubit before and after a CNOT gate, and then applying $\displaystyle{T^{\dagger}}$ gate to the data qubit
-		2. and $\displaystyle{T}$ gate on the logic qubit is actually the same as $\displaystyle{T}$ gate on each physical qubit transversally
-	3. apply a Hadamard gate to the auxiliary qubit and measure it in the $\displaystyle{Z}$ basis
+		1. and $\displaystyle{T}$ gate on the logic qubit is actually the same as $\displaystyle{T}$ gate on each physical qubit transversally
+	1. apply a Hadamard gate to the auxiliary qubit and measure it in the $\displaystyle{Z}$ basis
 
 thus we can implement any gate in the Clifford hierarchy in a FT way, given that we can prepare the auxiliary states in a FT way.
 

@@ -128,7 +128,6 @@ $$\begin{align}
 
 Therefore only the flavor singlet axial current has an anomaly, while all flavor octet axial currents remain conserved in the chiral limit.
 
-
 # problem 2
 
 prove that the transition amplitude induced by the axial current $\displaystyle{j _{5}^{3,\mu}}$ from vacuum to two photons is

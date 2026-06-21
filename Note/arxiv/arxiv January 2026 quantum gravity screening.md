@@ -120,7 +120,7 @@ This shortlist is biased toward topics close to quantum gravity and covariant ph
 ## Suggested reading order
 
 1. [2601.03077](https://arxiv.org/abs/2601.03077) for covariant phase space and thermodynamic motivation.
-2. [2601.18490](https://arxiv.org/abs/2601.18490) for 3d gravity, Chern-Simons, BF theory, and quantization.
-3. [2601.04647](https://arxiv.org/abs/2601.04647) and [2601.05312](https://arxiv.org/abs/2601.05312) for complementary AdS/CFT black hole and stringy observable calculations.
-4. [2601.03361](https://arxiv.org/abs/2601.03361) if the immediate interest is soft/celestial symmetry structures.
-5. [2601.18618](https://arxiv.org/abs/2601.18618) and [2601.20286](https://arxiv.org/abs/2601.20286) for quantum-gravity-inspired collapse and quantum cosmology.
+1. [2601.18490](https://arxiv.org/abs/2601.18490) for 3d gravity, Chern-Simons, BF theory, and quantization.
+1. [2601.04647](https://arxiv.org/abs/2601.04647) and [2601.05312](https://arxiv.org/abs/2601.05312) for complementary AdS/CFT black hole and stringy observable calculations.
+1. [2601.03361](https://arxiv.org/abs/2601.03361) if the immediate interest is soft/celestial symmetry structures.
+1. [2601.18618](https://arxiv.org/abs/2601.18618) and [2601.20286](https://arxiv.org/abs/2601.20286) for quantum-gravity-inspired collapse and quantum cosmology.

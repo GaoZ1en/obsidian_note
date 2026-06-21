@@ -6,7 +6,7 @@ point particle. the most natural action is
 
 $$\begin{align}
 S & =-m\int \mathrm{d}s \\
- & =-m\int \sqrt{ -G_{\mu \nu}\frac{\mathrm{d}X^{\mu}}{\mathrm{d}\lambda} \frac{\mathrm{d}X^{\nu}}{\mathrm{d}\lambda} }\mathrm{d}\lambda 
+ & =-m\int \sqrt{ -G_{\mu \nu}\frac{\mathrm{d}X^{\mu}}{\mathrm{d}\lambda} \frac{\mathrm{d}X^{\nu}}{\mathrm{d}\lambda} }\mathrm{d}\lambda
 \end{align}$$
 
 this action has a reparameterization symmetry, and a gauge constraint.

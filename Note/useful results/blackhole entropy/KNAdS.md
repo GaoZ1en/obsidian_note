@@ -5,25 +5,37 @@
 Based on the covariant phase space formalism established in the general discussion, we have the fundamental framework:
 
 **Lagrangian variation**:
-$$\tag{1.1}\begin{align}
+
+$$
+\tag{1.1}\begin{align}
 \delta \mathbf{L}[\phi] & =\mathbf{E}[\phi]\delta \phi+\mathrm{d}\Theta[\phi,\delta \phi]
-\end{align}$$
+\end{align}
+$$
 
 **Noether current**:
-$$\tag{1.2}\begin{align}
+
+$$
+\tag{1.2}\begin{align}
 J_{\xi}^{\mu} & =X_{\xi}\cdot \theta ^{\mu} -\xi ^{\mu}\mathcal{L} \\
  & =\nabla _{\nu}Q_{\xi}^{\mu \nu}+C_{\xi}^{\mu}
-\end{align}$$
+\end{align}
+$$
 
 **Noether charge density**:
-$$\tag{1.3}\begin{align}
+
+$$
+\tag{1.3}\begin{align}
 Q_{\xi}^{\mu \nu} & =\frac{1}{16\pi G}(\nabla ^{\mu}\xi ^{\nu}-\nabla ^{\nu}\xi ^{\mu})
-\end{align}$$
+\end{align}
+$$
 
 **First law master equation**:
-$$\tag{1.4}\begin{align}
+
+$$
+\tag{1.4}\begin{align}
 \int _{B}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right)& =\int _{\infty}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right)+\int _{\Sigma}\delta \mathbf{C}_{\xi}
-\end{align}$$
+\end{align}
+$$
 
 ## Kerr-Newman-AdS Black Hole Solution
 
@@ -31,19 +43,23 @@ $$\tag{1.4}\begin{align}
 
 The Kerr-Newman-AdS black hole in Boyer-Lindquist coordinates has the metric:
 
-$$\tag{2.1}\begin{align}
+$$
+\tag{2.1}\begin{align}
 \mathrm{d}s^{2} & =-\frac{\Delta_{r}}{\rho ^{2}}\left( \mathrm{d}t-\frac{a\sin ^{2}\theta}{\Xi}\mathrm{d}\phi \right)^{2}+\frac{\rho ^{2}}{\Delta_{r}}\mathrm{d}r^{2}+\frac{\rho ^{2}}{\Delta_{\theta}}\mathrm{d}\theta ^{2} \\
  & \quad +\frac{\Delta_{\theta}\sin ^{2}\theta}{\rho ^{2}}\left( a\mathrm{d}t-\frac{r^{2}+a^{2}}{\Xi}\mathrm{d}\phi \right)^{2}
-\end{align}$$
+\end{align}
+$$
 
 where the metric functions are defined as:
 
-$$\tag{2.2}\begin{align}
+$$
+\tag{2.2}\begin{align}
 \rho ^{2} & =r^{2}+a^{2}\cos ^{2}\theta \\
 \Delta_{r} & =r^{2}-2Mr+a^{2}+Q^{2}+\frac{r^{2}(r^{2}+a^{2})}{\ell ^{2}} \\
 \Delta_{\theta} & =1-\frac{a^{2}\cos ^{2}\theta}{\ell ^{2}} \\
 \Xi & =1-\frac{a^{2}}{\ell ^{2}}
-\end{align}$$
+\end{align}
+$$
 
 **Physical parameters**:
 - $M$: mass parameter
@@ -55,15 +71,19 @@ $$\tag{2.2}\begin{align}
 
 The horizons are located at the roots of $\Delta_r = 0$:
 
-$$\tag{2.3}\begin{align}
+$$
+\tag{2.3}\begin{align}
 \Delta_{r} & =r^{2}-2Mr+a^{2}+Q^{2}+\frac{r^{2}(r^{2}+a^{2})}{\ell ^{2}}=0
-\end{align}$$
+\end{align}
+$$
 
 This is a quartic equation in $r$. For the outer horizon $r_+$, we have:
 
-$$\tag{2.4}\begin{align}
+$$
+\tag{2.4}\begin{align}
 r_{+}^{2}-2Mr_{+}+a^{2}+Q^{2}+\frac{r_{+}^{2}(r_{+}^{2}+a^{2})}{\ell ^{2}} & =0
-\end{align}$$
+\end{align}
+$$
 
 ### Killing Vectors and Conserved Quantities
 
@@ -73,153 +93,211 @@ The Kerr-Newman-AdS spacetime has two commuting Killing vectors:
 **Axial Killing vector**: $\partial_\phi$
 
 The horizon Killing vector is:
-$$\tag{2.5}\begin{align}
+
+$$
+\tag{2.5}\begin{align}
 \xi & =\partial_{t}+\Omega _{H}\partial_{\phi}
-\end{align}$$
+\end{align}
+$$
 
 where the angular velocity of the horizon is:
-$$\tag{2.6}\begin{align}
+
+$$
+\tag{2.6}\begin{align}
 \Omega _{H} & =\frac{a}{r_{+}^{2}+a^{2}}\Xi
-\end{align}$$
+\end{align}
+$$
 
 ## Electromagnetic Field and Action
 
 ### Maxwell Field
 
 The electromagnetic field tensor is:
-$$\tag{3.1}\begin{align}
+
+$$
+\tag{3.1}\begin{align}
 F_{\mu \nu} & =\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}
-\end{align}$$
+\end{align}
+$$
 
 For the Kerr-Newman-AdS solution, the vector potential is:
-$$\tag{3.2}\begin{align}
+
+$$
+\tag{3.2}\begin{align}
 A & =-\frac{Qr}{\rho ^{2}\Xi}\left( \mathrm{d}t-\frac{a\sin ^{2}\theta}{\Xi}\mathrm{d}\phi \right)
-\end{align}$$
+\end{align}
+$$
 
 ### Total Action
 
 The Einstein-Maxwell-AdS action is:
-$$\tag{3.3}\begin{align}
+
+$$
+\tag{3.3}\begin{align}
 S & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\left( R-2\Lambda-F_{\mu \nu}F^{\mu \nu} \right)
-\end{align}$$
+\end{align}
+$$
 
 where $\Lambda = -\frac{3}{\ell^2}$.
 
 ### Variation and Symplectic Potential
 
 Taking the variation:
-$$\tag{3.4}\begin{align}
+
+$$
+\tag{3.4}\begin{align}
 \delta S & =\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\left( E^{\mu \nu}\delta g_{\mu \nu}+E^{\mu}\delta A_{\mu} \right)+\theta|_{\Sigma_{f}}-\theta|_{\Sigma _{i}}
-\end{align}$$
+\end{align}
+$$
 
 The equations of motion are:
-$$\tag{3.5}\begin{align}
+
+$$
+\tag{3.5}\begin{align}
 E^{\mu \nu} & =\frac{1}{16\pi G}\left( -R^{\mu \nu}+\frac{1}{2}Rg^{\mu \nu}-\Lambda g^{\mu \nu}-2\left( F^{\mu \lambda}F_{\lambda}^{\nu}-\frac{1}{4}g^{\mu \nu}F_{\lambda \sigma}F^{\lambda \sigma} \right) \right) \\
 E^{\mu} & =\frac{1}{4\pi G}\nabla_{\nu}F^{\nu \mu}
-\end{align}$$
+\end{align}
+$$
 
 The symplectic potential density includes both gravitational and electromagnetic contributions:
-$$\tag{3.6}\begin{align}
+
+$$
+\tag{3.6}\begin{align}
 \theta ^{\mu} & =\theta _{\text{grav}}^{\mu}+\theta _{\text{em}}^{\mu} \\
 \theta _{\text{grav}}^{\mu} & =\frac{1}{16\pi G}\left( g^{\mu \rho}\nabla ^{\nu}\delta g_{\nu \rho}-g^{\nu \rho}\nabla ^{\mu}\delta g_{\nu \rho} \right) \\
 \theta _{\text{em}}^{\mu} & =\frac{1}{4\pi G}F^{\mu \nu}\delta A_{\nu}
-\end{align}$$
+\end{align}
+$$
 
 ## Covariant Phase Space Analysis
 
 ### Noether Current for Combined System
 
 For a diffeomorphism generated by $\xi$, the Noether current density is:
-$$\tag{4.1}\begin{align}
+
+$$
+\tag{4.1}\begin{align}
 J_{\xi}^{\mu} & =X_{\xi}\cdot \theta ^{\mu}-\xi ^{\mu}\mathcal{L} \\
  & =\nabla _{\nu}Q_{\xi}^{\mu \nu}+C_{\xi}^{\mu}
-\end{align}$$
+\end{align}
+$$
 
 The Noether charge density includes both gravitational and electromagnetic parts:
-$$\tag{4.2}\begin{align}
+
+$$
+\tag{4.2}\begin{align}
 Q_{\xi}^{\mu \nu} & =Q_{\text{grav}}^{\mu \nu}+Q_{\text{em}}^{\mu \nu} \\
 Q_{\text{grav}}^{\mu \nu} & =\frac{1}{16\pi G}(\nabla ^{\mu}\xi ^{\nu}-\nabla ^{\nu}\xi ^{\mu}) \\
 Q_{\text{em}}^{\mu \nu} & =\frac{1}{4\pi G}F^{\mu \nu}(\xi \cdot A)
-\end{align}$$
+\end{align}
+$$
 
 The constraint term is:
-$$\tag{4.3}\begin{align}
+
+$$
+\tag{4.3}\begin{align}
 C_{\xi}^{\mu} & =\frac{1}{8\pi G}\xi _{\nu}\left( R^{\mu \nu}-\frac{1}{2}Rg^{\mu \nu}+\Lambda g^{\mu \nu}+2\left( F^{\mu \lambda}F_{\lambda}^{\nu}-\frac{1}{4}g^{\mu \nu}F_{\lambda \sigma}F^{\lambda \sigma} \right) \right)
-\end{align}$$
+\end{align}
+$$
 
 ### Mass Calculation
 
 The mass is the Noether charge associated with the timelike Killing vector $\partial_t$:
 
-$$\tag{4.4}\begin{align}
+$$
+\tag{4.4}\begin{align}
 M & =\frac{1}{8\pi G}\oint _{S_{\infty}^{2}}Q_{t}^{r\mu}n_{\mu}\mathrm{d}S
-\end{align}$$
+\end{align}
+$$
 
 where $n_\mu$ is the unit normal to the 2-sphere at spatial infinity.
 
 For the Kerr-Newman-AdS solution, this evaluates to:
-$$\tag{4.5}\begin{align}
+
+$$
+\tag{4.5}\begin{align}
 M_{\text{total}} & =\frac{M}{\Xi ^{2}}
-\end{align}$$
+\end{align}
+$$
 
 **Physical interpretation**: The total mass includes contributions from:
 1. **Gravitational mass**: $M_{\text{grav}} = \frac{M}{\Xi^2}$
-2. **Electromagnetic mass**: Already included in the Einstein-Maxwell equations
-3. **AdS vacuum contribution**: Encoded in the $\Xi$ factor
+1. **Electromagnetic mass**: Already included in the Einstein-Maxwell equations
+1. **AdS vacuum contribution**: Encoded in the $\Xi$ factor
 
 ### Angular Momentum Calculation
 
 The angular momentum is the Noether charge associated with $\partial_\phi$:
 
-$$\tag{4.6}\begin{align}
+$$
+\tag{4.6}\begin{align}
 J & =\frac{1}{8\pi G}\oint _{S_{\infty}^{2}}Q_{\phi}^{r\mu}n_{\mu}\mathrm{d}S
-\end{align}$$
+\end{align}
+$$
 
 For the Kerr-Newman-AdS solution:
-$$\tag{4.7}\begin{align}
+
+$$
+\tag{4.7}\begin{align}
 J_{\text{total}} & =\frac{Ma}{\Xi ^{2}}
-\end{align}$$
+\end{align}
+$$
 
 ### Electric Charge Calculation
 
 The electric charge is calculated using Gauss's law:
-$$\tag{4.8}\begin{align}
+
+$$
+\tag{4.8}\begin{align}
 Q_{\text{total}} & =\frac{1}{4\pi}\oint _{S_{\infty}^{2}}F^{r\mu}n_{\mu}\mathrm{d}S \\
  & =\frac{Q}{\Xi}
-\end{align}$$
+\end{align}
+$$
 
 ## Surface Gravity and Hawking Temperature
 
 ### Surface Gravity Calculation
 
 The surface gravity is computed using the horizon Killing vector:
-$$\tag{5.1}\begin{align}
+
+$$
+\tag{5.1}\begin{align}
 \kappa ^{2} & =-\frac{1}{2}(\nabla_{\mu}\xi_{\nu})(\nabla ^{\mu}\xi ^{\nu})\bigg|_{\text{horizon}}
-\end{align}$$
+\end{align}
+$$
 
 For the Kerr-Newman-AdS black hole, this gives:
-$$\tag{5.2}\begin{align}
+
+$$
+\tag{5.2}\begin{align}
 \kappa & =\frac{r_{+}-M}{2(r_{+}^{2}+a^{2})}\left( 1+\frac{r_{+}^{2}+a^{2}}{\ell ^{2}} \right)+\frac{Q^{2}}{2r_{+}(r_{+}^{2}+a^{2})}
-\end{align}$$
+\end{align}
+$$
 
 **Derivation steps**:
 1. Start with $\xi = \partial_t + \Omega_H \partial_\phi$
-2. Compute $\nabla_\mu \xi_\nu$ in Boyer-Lindquist coordinates
-3. Use the fact that $\xi$ becomes null at the horizon
-4. Apply l'Hôpital's rule for the limiting process
+1. Compute $\nabla_\mu \xi_\nu$ in Boyer-Lindquist coordinates
+1. Use the fact that $\xi$ becomes null at the horizon
+1. Apply l'Hôpital's rule for the limiting process
 
 The Hawking temperature is:
-$$\tag{5.3}\begin{align}
+
+$$
+\tag{5.3}\begin{align}
 T_{H} & =\frac{\kappa}{2\pi}
-\end{align}$$
+\end{align}
+$$
 
 ### Electric Potential at Horizon
 
 The electric potential at the horizon is:
-$$\tag{5.4}\begin{align}
+
+$$
+\tag{5.4}\begin{align}
 \Phi _{H} & =\xi \cdot A\bigg|_{\text{horizon}} \\
  & =\frac{Qr_{+}}{\Xi(r_{+}^{2}+a^{2})}
-\end{align}$$
+\end{align}
+$$
 
 **Physical interpretation**: This represents the electrostatic potential difference between the horizon and spatial infinity.
 
@@ -228,35 +306,50 @@ $$\tag{5.4}\begin{align}
 ### Wald Entropy Formula
 
 For the Einstein-Maxwell-AdS system, the Wald entropy is:
-$$\tag{6.1}\begin{align}
+
+$$
+\tag{6.1}\begin{align}
 S & =-2\pi \oint _{H}\frac{\partial \mathcal{L}}{\partial R_{\mu \nu \rho \sigma}}\epsilon_{\mu \nu}\epsilon_{\rho \sigma}
-\end{align}$$
+\end{align}
+$$
 
 where $\epsilon_{\mu\nu}$ is the binormal to the horizon.
 
 For Einstein gravity:
-$$\tag{6.2}\begin{align}
+
+$$
+\tag{6.2}\begin{align}
 \frac{\partial \mathcal{L}}{\partial R_{\mu \nu \rho \sigma}} & =\frac{1}{32\pi G}\sqrt{ -g }(g^{\mu \rho}g^{\nu \sigma}-g^{\mu \sigma}g^{\nu \rho})
-\end{align}$$
+\end{align}
+$$
 
 ### Explicit Calculation
 
 The horizon area is:
-$$\tag{6.3}\begin{align}
+
+$$
+\tag{6.3}\begin{align}
 A_{H} & =\oint _{H}\sqrt{ \gamma }\mathrm{d}\theta \mathrm{d}\phi \\
  & =\int _{0}^{2\pi}\mathrm{d}\phi \int _{0}^{\pi}\sqrt{ \frac{(r_{+}^{2}+a^{2}\cos ^{2}\theta)(1-\frac{a^{2}\cos ^{2}\theta}{\ell ^{2}})\sin ^{2}\theta}{\Xi ^{2}}}\mathrm{d}\theta
-\end{align}$$
+\end{align}
+$$
 
 After performing the integration:
-$$\tag{6.4}\begin{align}
+
+$$
+\tag{6.4}\begin{align}
 A_{H} & =\frac{4\pi(r_{+}^{2}+a^{2})}{\Xi}
-\end{align}$$
+\end{align}
+$$
 
 Therefore, the entropy is:
-$$\tag{6.5}\begin{align}
+
+$$
+\tag{6.5}\begin{align}
 S & =\frac{A_{H}}{4G} \\
  & =\frac{\pi(r_{+}^{2}+a^{2})}{G\Xi}
-\end{align}$$
+\end{align}
+$$
 
 **Note**: The entropy includes the geometric effect of AdS background through the $\Xi$ factor.
 
@@ -267,74 +360,105 @@ S & =\frac{A_{H}}{4G} \\
 For the horizon Killing vector $\xi = \partial_t + \Omega_H \partial_\phi$, we have $\mathcal{L}_\xi g_{\mu\nu} = 0$ and $\mathcal{L}_\xi A_\mu = 0$ on the background solution.
 
 Applying the master equation (1.4):
-$$\tag{7.1}\begin{align}
+
+$$
+\tag{7.1}\begin{align}
 0 & =\delta H_{\xi} \\
  & =\int _{B}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right)-\int _{\infty}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right)
-\end{align}$$
+\end{align}
+$$
 
 ### Boundary Contributions
 
 **At spatial infinity**:
-$$\tag{7.2}\begin{align}
+
+$$
+\tag{7.2}\begin{align}
 \int _{\infty}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right) & =\delta M_{\text{total}}-\Omega _{H}\delta J_{\text{total}}-\Phi _{H}\delta Q_{\text{total}}
-\end{align}$$
+\end{align}
+$$
 
 **At the black hole horizon**:
-$$\tag{7.3}\begin{align}
+
+$$
+\tag{7.3}\begin{align}
 \int _{B}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right) & =\frac{\kappa}{2\pi}\delta S
-\end{align}$$
+\end{align}
+$$
 
 ### The First Law
 
 Combining the boundary contributions:
-$$\tag{7.4}\begin{align}
+
+$$
+\tag{7.4}\begin{align}
 \frac{\kappa}{2\pi}\delta S & =\delta M_{\text{total}}-\Omega _{H}\delta J_{\text{total}}-\Phi _{H}\delta Q_{\text{total}}
-\end{align}$$
+\end{align}
+$$
 
 Therefore, the **first law of Kerr-Newman-AdS black hole thermodynamics** is:
 
-$$\tag{7.5}\boxed{\delta M_{\text{total}}=T_{H}\delta S+\Omega _{H}\delta J_{\text{total}}+\Phi _{H}\delta Q_{\text{total}}}$$
+$$\begin{align}
+\tag{7.5}\boxed{\delta M_{\text{total}}=T_{H}\delta S+\Omega _{H}\delta J_{\text{total}}+\Phi _{H}\delta Q_{\text{total}}}
+\end{align}$$
 
 ### Explicit Verification
 
 #### Parameter Relations
 
 From the horizon condition $\Delta_r(r_+) = 0$:
-$$\tag{7.6}\begin{align}
+
+$$
+\tag{7.6}\begin{align}
 M & =\frac{r_{+}^{2}+a^{2}+Q^{2}}{2r_{+}}+\frac{r_{+}(r_{+}^{2}+a^{2})}{2\ell ^{2}}
-\end{align}$$
+\end{align}
+$$
 
 #### Variation Analysis
 
 Taking variations of the fundamental parameters $\{M, a, Q, \ell\}$:
 
 **Mass variation**:
-$$\tag{7.7}\begin{align}
+
+$$
+\tag{7.7}\begin{align}
 \delta M_{\text{total}} & =\frac{1}{\Xi ^{2}}\left( \delta M-\frac{2Ma^{2}}{\ell ^{2}\Xi}\delta \ell ^{-1} \right)
-\end{align}$$
+\end{align}
+$$
 
 **Angular momentum variation**:
-$$\tag{7.8}\begin{align}
+
+$$
+\tag{7.8}\begin{align}
 \delta J_{\text{total}} & =\frac{1}{\Xi ^{2}}\left( M\delta a+a\delta M-\frac{2Ma^{3}}{\ell ^{2}\Xi}\delta \ell ^{-1} \right)
-\end{align}$$
+\end{align}
+$$
 
 **Charge variation**:
-$$\tag{7.9}\begin{align}
+
+$$
+\tag{7.9}\begin{align}
 \delta Q_{\text{total}} & =\frac{1}{\Xi}\left( \delta Q-\frac{Qa^{2}}{\ell ^{2}\Xi}\delta \ell ^{-1} \right)
-\end{align}$$
+\end{align}
+$$
 
 **Entropy variation**: From $S = \frac{\pi(r_+^2 + a^2)}{G\Xi}$:
-$$\tag{7.10}\begin{align}
+
+$$
+\tag{7.10}\begin{align}
 \delta S & =\frac{\pi}{G\Xi}\left( 2r_{+}\delta r_{+}+2a\delta a+\frac{(r_{+}^{2}+a^{2})a^{2}}{\ell ^{2}\Xi}\delta \ell ^{-1} \right)
-\end{align}$$
+\end{align}
+$$
 
 #### Direct Verification
 
 The horizon radius variation $\delta r_+$ can be computed from the implicit differentiation of the horizon condition (7.6). After lengthy but straightforward algebra involving the chain rule and implicit function theorem, one can verify that:
 
-$$\tag{7.11}\begin{align}
+$$
+\tag{7.11}\begin{align}
 \delta M_{\text{total}} & =T_{H}\delta S+\Omega _{H}\delta J_{\text{total}}+\Phi _{H}\delta Q_{\text{total}}
-\end{align}$$
+\end{align}
+$$
 
 holds identically for all parameter variations.
 
@@ -345,42 +469,57 @@ holds identically for all parameter variations.
 The first law (7.5) expresses **energy conservation** for the black hole system:
 
 1. **Thermal contribution**: $T_H \delta S$ - energy change due to entropy variation
-2. **Rotational contribution**: $\Omega_H \delta J_{\text{total}}$ - work done by/against rotation
-3. **Electromagnetic contribution**: $\Phi_H \delta Q_{\text{total}}$ - work done by/against electric field
-4. **Cosmological contribution**: Implicitly included through AdS background effects
+1. **Rotational contribution**: $\Omega_H \delta J_{\text{total}}$ - work done by/against rotation
+1. **Electromagnetic contribution**: $\Phi_H \delta Q_{\text{total}}$ - work done by/against electric field
+1. **Cosmological contribution**: Implicitly included through AdS background effects
 
 ### Limiting Cases
 
 #### Kerr-AdS Black Hole ($Q = 0$)
-$$\tag{8.1}\begin{align}
+
+$$
+\tag{8.1}\begin{align}
 \delta M_{\text{total}} & =T_{H}\delta S+\Omega _{H}\delta J_{\text{total}}
-\end{align}$$
+\end{align}
+$$
 
 #### Reissner-Nordström-AdS Black Hole ($a = 0$)
-$$\tag{8.2}\begin{align}
+
+$$
+\tag{8.2}\begin{align}
 \delta M_{\text{total}} & =T_{H}\delta S+\Phi _{H}\delta Q_{\text{total}}
-\end{align}$$
+\end{align}
+$$
 
 #### Schwarzschild-AdS Black Hole ($a = Q = 0$)
-$$\tag{8.3}\begin{align}
+
+$$
+\tag{8.3}\begin{align}
 \delta M_{\text{total}} & =T_{H}\delta S
-\end{align}$$
+\end{align}
+$$
 
 #### Asymptotically Flat Case ($\ell \to \infty$)
+
 All AdS-specific corrections vanish ($\Xi \to 1$), and we recover the standard Kerr-Newman first law.
 
 ### Consistency Checks
 
 #### Dimensional Analysis
+
 - $[M_{\text{total}}] = [T_H][S] = [E]$ ✓
-- $[\Omega_H][J_{\text{total}}] = [T^{-1}][ML^2T^{-1}] = [E]$ ✓  
+- $[\Omega_H][J_{\text{total}}] = [T^{-1}][ML^2T^{-1}] = [E]$ ✓
 - $[\Phi_H][Q_{\text{total}}] = [ML^2T^{-2}Q^{-1}][Q] = [E]$ ✓
 
 #### Extremal Limit
+
 When $T_H = 0$ (extremal black hole), the first law reduces to:
-$$\tag{8.4}\begin{align}
+
+$$
+\tag{8.4}\begin{align}
 \delta M_{\text{total}} & =\Omega _{H}\delta J_{\text{total}}+\Phi _{H}\delta Q_{\text{total}}
-\end{align}$$
+\end{align}
+$$
 
 This is consistent with the fact that extremal black holes are in thermodynamic equilibrium at zero temperature.
 
@@ -389,25 +528,31 @@ This is consistent with the fact that extremal black holes are in thermodynamic 
 ### Quantum Corrections
 
 The semiclassical entropy (6.5) receives quantum corrections:
-$$\tag{9.1}\begin{align}
+
+$$
+\tag{9.1}\begin{align}
 S_{\text{quantum}} & =S_{\text{classical}}+S_{1\text{-loop}}+\mathcal{O}(\hbar ^{2})
-\end{align}$$
+\end{align}
+$$
 
 These corrections can be computed using:
 1. **Heat kernel methods** for one-loop determinants
-2. **AdS/CFT correspondence** for holographic entropy
-3. **String theory** for α' corrections
+1. **AdS/CFT correspondence** for holographic entropy
+1. **String theory** for α' corrections
 
 ### Holographic Interpretation (AdS/CFT)
 
 In the AdS/CFT framework, the first law admits a dual interpretation:
-$$\tag{9.2}\begin{align}
+
+$$
+\tag{9.2}\begin{align}
 \delta E_{\text{CFT}} & =T_{\text{CFT}}\delta S_{\text{CFT}}+\Omega _{\text{CFT}}\delta J_{\text{CFT}}+\mu _{\text{CFT}}\delta Q_{\text{CFT}}
-\end{align}$$
+\end{align}
+$$
 
 where:
 - $E_{\text{CFT}}$: Energy of dual CFT state
-- $T_{\text{CFT}}$: Temperature of thermal CFT state  
+- $T_{\text{CFT}}$: Temperature of thermal CFT state
 - $S_{\text{CFT}}$: Entanglement entropy (via Ryu-Takayanagi formula)
 - $J_{\text{CFT}}$, $Q_{\text{CFT}}$: Angular momentum and charge in CFT
 
@@ -419,9 +564,11 @@ where:
 
 When treating the cosmological constant $\Lambda$ as a thermodynamic variable, we must extend the covariant phase space formalism to include variations of $\Lambda$. The **extended action** becomes:
 
-$$\tag{9.3}\begin{align}
+$$
+\tag{9.3}\begin{align}
 S_{\text{ext}} & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\left( R-2\Lambda-F_{\mu \nu}F^{\mu \nu} \right)+\frac{1}{8\pi G}\int _{\partial M}\mathrm{d}^{3}x\sqrt{ \gamma }\Lambda \ell
-\end{align}$$
+\end{align}
+$$
 
 **Key insight**: The boundary term $\frac{1}{8\pi G}\int_{\partial M}\mathrm{d}^3x\sqrt{\gamma}\Lambda \ell$ is crucial for treating $\Lambda$ as a dynamic variable rather than a fixed parameter.
 
@@ -429,23 +576,31 @@ S_{\text{ext}} & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\left( R-2
 
 Taking the variation with respect to both $g_{\mu\nu}$, $A_\mu$, and $\Lambda$:
 
-$$\tag{9.4}\begin{align}
+$$
+\tag{9.4}\begin{align}
 \delta S_{\text{ext}} & =\int _{M}\mathrm{d}^{4}x\sqrt{ -g }\left( E^{\mu \nu}\delta g_{\mu \nu}+E^{\mu}\delta A_{\mu}+E_{\Lambda}\delta \Lambda \right) \\
  & \quad +\theta_{\text{ext}}|_{\Sigma_{f}}-\theta_{\text{ext}}|_{\Sigma _{i}}
-\end{align}$$
+\end{align}
+$$
 
 where the **equation of motion for $\Lambda$** is:
-$$\tag{9.5}\begin{align}
+
+$$
+\tag{9.5}\begin{align}
 E_{\Lambda} & =\frac{1}{16\pi G}\left( -2\sqrt{ -g } \right)=0
-\end{align}$$
+\end{align}
+$$
 
 This constraint is automatically satisfied since $\sqrt{-g} \neq 0$ in physical spacetimes.
 
 The **extended symplectic potential** includes the $\Lambda$-contribution:
-$$\tag{9.6}\begin{align}
+
+$$
+\tag{9.6}\begin{align}
 \theta_{\text{ext}}^{\mu} & =\theta _{\text{grav}}^{\mu}+\theta _{\text{em}}^{\mu}+\theta _{\Lambda}^{\mu} \\
 \theta _{\Lambda}^{\mu} & =\frac{1}{8\pi G}\ell \tau ^{\mu}\delta \Lambda
-\end{align}$$
+\end{align}
+$$
 
 where $\tau^\mu$ is the unit normal to the boundary $\partial M$.
 
@@ -453,35 +608,49 @@ where $\tau^\mu$ is the unit normal to the boundary $\partial M$.
 
 For the horizon Killing vector $\xi = \partial_t + \Omega_H \partial_\phi$, the **extended Noether current** becomes:
 
-$$\tag{9.7}\begin{align}
+$$
+\tag{9.7}\begin{align}
 J_{\xi,\text{ext}}^{\mu} & =X_{\xi}\cdot \theta_{\text{ext}} ^{\mu}-\xi ^{\mu}\mathcal{L}_{\text{ext}} \\
  & =\nabla _{\nu}Q_{\xi}^{\mu \nu}+C_{\xi}^{\mu}+J_{\xi,\Lambda}^{\mu}
-\end{align}$$
+\end{align}
+$$
 
 The **$\Lambda$-contribution to Noether current** is:
-$$\tag{9.8}\begin{align}
+
+$$
+\tag{9.8}\begin{align}
 J_{\xi,\Lambda}^{\mu} & =X_{\xi}\cdot \theta _{\Lambda}^{\mu}-\xi ^{\mu}\frac{\sqrt{ -g }}{8\pi G}\Lambda \\
  & =\frac{1}{8\pi G}\ell \tau ^{\mu}X_{\xi}\cdot \delta \Lambda-\xi ^{\mu}\frac{\sqrt{ -g }}{8\pi G}\Lambda
-\end{align}$$
+\end{align}
+$$
 
 Since $\xi$ is tangent to the horizon and does not act on $\Lambda$ at the boundary:
-$$\tag{9.9}\begin{align}
+
+$$
+\tag{9.9}\begin{align}
 X_{\xi}\cdot \delta \Lambda & =\mathcal{L}_{\xi}\Lambda=0
-\end{align}$$
+\end{align}
+$$
 
 Thus:
-$$\tag{9.10}\begin{align}
+
+$$
+\tag{9.10}\begin{align}
 J_{\xi,\Lambda}^{\mu} & =-\xi ^{\mu}\frac{\sqrt{ -g }}{8\pi G}\Lambda
-\end{align}$$
+\end{align}
+$$
 
 ### Thermodynamic Pressure Definition
 
 The **thermodynamic pressure** is defined through the relation:
-$$\tag{9.11}\begin{align}
-P & \equiv -\frac{\Lambda}{8\pi G}=\frac{3}{8\pi G\ell ^{2}}
-\end{align}$$
 
-**Physical interpretation**: 
+$$
+\tag{9.11}\begin{align}
+P & \equiv -\frac{\Lambda}{8\pi G}=\frac{3}{8\pi G\ell ^{2}}
+\end{align}
+$$
+
+**Physical interpretation**:
 - For AdS spacetime ($\Lambda < 0$), we have $P > 0$, representing positive pressure
 - The factor $\frac{3}{\ell^2}$ comes from the AdS relation $\Lambda = -\frac{3}{\ell^2}$
 - This pressure acts like a cosmological fluid with equation of state $w = -1$
@@ -490,42 +659,55 @@ P & \equiv -\frac{\Lambda}{8\pi G}=\frac{3}{8\pi G\ell ^{2}}
 
 Applying the extended covariant phase space formalism:
 
-$$\tag{9.12}\begin{align}
+$$
+\tag{9.12}\begin{align}
 0 & =\delta H_{\xi,\text{ext}} \\
  & =\int _{B}\left(\delta \mathbf{Q}_{\xi,\text{ext}}-\xi \cdot \Theta_{\text{ext}}\right)-\int _{\infty}\left(\delta \mathbf{Q}_{\xi,\text{ext}}-\xi \cdot \Theta_{\text{ext}}\right)
-\end{align}$$
+\end{align}
+$$
 
 **At spatial infinity**, the boundary contribution now includes the $\Lambda$-term:
-$$\tag{9.13}\begin{align}
+
+$$
+\tag{9.13}\begin{align}
 \int _{\infty}\left(\delta \mathbf{Q}_{\xi,\text{ext}}-\xi \cdot \Theta_{\text{ext}}\right) & =\delta M_{\text{total}}-\Omega _{H}\delta J_{\text{total}}-\Phi _{H}\delta Q_{\text{total}} \\
  & \quad +\int _{\infty}\xi ^{\mu}\frac{\sqrt{ -g }}{8\pi G}\delta \Lambda \mathrm{d}^{3}x
-\end{align}$$
+\end{align}
+$$
 
 The **$\Lambda$-contribution integral** evaluates to:
-$$\tag{9.14}\begin{align}
+
+$$
+\tag{9.14}\begin{align}
 \int _{\infty}\xi ^{\mu}\frac{\sqrt{ -g }}{8\pi G}\delta \Lambda \mathrm{d}^{3}x & =\frac{1}{8\pi G}\delta \Lambda \int _{\infty}\xi ^{t}\sqrt{ \gamma }\mathrm{d}^{3}x \\
  & =\frac{1}{8\pi G}\delta \Lambda \cdot V_{\infty} \\
  & =V_{H}\delta P
-\end{align}$$
+\end{align}
+$$
 
 where we defined the **thermodynamic volume**:
-$$\tag{9.15}\begin{align}
+
+$$
+\tag{9.15}\begin{align}
 V_{H} & \equiv \frac{V_{\infty}}{8\pi G}
-\end{align}$$
+\end{align}
+$$
 
 ### Explicit Calculation of Thermodynamic Volume
 
 For Kerr-Newman-AdS black holes, the thermodynamic volume can be computed exactly:
 
-$$\tag{9.16}\begin{align}
+$$
+\tag{9.16}\begin{align}
 V_{H} & =\frac{4\pi}{3}\frac{(r_{+}^{2}+a^{2})^{3/2}}{\Xi ^{3/2}} \cdot \frac{1}{\sqrt{ 1-\frac{a^{2}\sin ^{2}\theta}{\ell ^{2}} }}
-\end{align}$$
+\end{align}
+$$
 
 **Derivation steps**:
 1. **Geometric setup**: The thermodynamic volume is the spatial volume enclosed by the black hole horizon
-2. **Coordinate integration**: Using Boyer-Lindquist coordinates with proper volume element
-3. **AdS corrections**: The $\Xi$ factors account for AdS background geometry
-4. **Rotation effects**: The $a^2$ terms reflect the oblate horizon geometry
+1. **Coordinate integration**: Using Boyer-Lindquist coordinates with proper volume element
+1. **AdS corrections**: The $\Xi$ factors account for AdS background geometry
+1. **Rotation effects**: The $a^2$ terms reflect the oblate horizon geometry
 
 **Special cases**:
 - **Schwarzschild-AdS** ($a = Q = 0$): $V_H = \frac{4\pi r_+^3}{3}$
@@ -536,7 +718,9 @@ V_{H} & =\frac{4\pi}{3}\frac{(r_{+}^{2}+a^{2})^{3/2}}{\Xi ^{3/2}} \cdot \frac{1}
 
 Combining all contributions, the **extended first law** is:
 
-$$\tag{9.17}\boxed{\delta M_{\text{total}}=T_{H}\delta S+\Omega _{H}\delta J_{\text{total}}+\Phi _{H}\delta Q_{\text{total}}+V_{H}\delta P}$$
+$$\begin{align}
+\tag{9.17}\boxed{\delta M_{\text{total}}=T_{H}\delta S+\Omega _{H}\delta J_{\text{total}}+\Phi _{H}\delta Q_{\text{total}}+V_{H}\delta P}
+\end{align}$$
 
 where:
 - $P = \frac{3}{8\pi G\ell^2}$: **Thermodynamic pressure**
@@ -547,16 +731,16 @@ where:
 The pressure term $V_H \delta P$ represents:
 
 1. **Cosmological work**: Work done by/against the cosmological constant during black hole processes
-2. **AdS boundary effects**: Contributions from the asymptotic AdS boundary conditions  
-3. **Holographic interpretation**: In AdS/CFT, this corresponds to varying the central charge of the dual CFT
-4. **Thermodynamic consistency**: Ensures the first law maintains its form under all parameter variations
+1. **AdS boundary effects**: Contributions from the asymptotic AdS boundary conditions
+1. **Holographic interpretation**: In AdS/CFT, this corresponds to varying the central charge of the dual CFT
+1. **Thermodynamic consistency**: Ensures the first law maintains its form under all parameter variations
 
 ### Verification: Dimensional Analysis
 
 Checking dimensions of each term:
 - $[M_{\text{total}}] = [M] = $ Energy
 - $[T_H][S] = $ Temperature × Entropy = Energy ✓
-- $[\Omega_H][J_{\text{total}}] = $ Angular velocity × Angular momentum = Energy ✓  
+- $[\Omega_H][J_{\text{total}}] = $ Angular velocity × Angular momentum = Energy ✓
 - $[\Phi_H][Q_{\text{total}}] = $ Potential × Charge = Energy ✓
 - $[V_H][P] = $ Volume × Pressure = Energy ✓
 
@@ -566,64 +750,87 @@ Checking dimensions of each term:
 
 To verify equation (9.17), we need to check that all variations are consistent. From the horizon condition:
 
-$$\tag{9.18}\begin{align}
+$$
+\tag{9.18}\begin{align}
 M & =\frac{r_{+}^{2}+a^{2}+Q^{2}}{2r_{+}}+\frac{r_{+}(r_{+}^{2}+a^{2})}{2\ell ^{2}}
-\end{align}$$
+\end{align}
+$$
 
 Taking variations:
-$$\tag{9.19}\begin{align}
+
+$$
+\tag{9.19}\begin{align}
 \delta M & =\frac{2r_{+}\delta r_{+}-r_{+}^{2}-a^{2}-Q^{2}}{2r_{+}^{2}}\delta r_{+}+\frac{a}{r_{+}}\delta a+\frac{Q}{r_{+}}\delta Q \\
  & \quad +\frac{r_{+}^{2}+a^{2}}{2\ell ^{2}}\delta r_{+}+\frac{r_{+}(2r_{+}\delta r_{+}+2a\delta a)}{2\ell ^{2}}-\frac{r_{+}(r_{+}^{2}+a^{2})}{\ell ^{3}}\delta \ell
-\end{align}$$
+\end{align}
+$$
 
 Using the horizon condition to simplify:
-$$\tag{9.20}\begin{align}
+
+$$
+\tag{9.20}\begin{align}
 \delta M & =\left( 1+\frac{r_{+}^{2}+a^{2}}{\ell ^{2}} \right)\delta r_{+}+\frac{a}{r_{+}}\left( 1+\frac{r_{+}^{2}}{\ell ^{2}} \right)\delta a \\
  & \quad +\frac{Q}{r_{+}}\delta Q-\frac{r_{+}(r_{+}^{2}+a^{2})}{\ell ^{3}}\delta \ell
-\end{align}$$
+\end{align}
+$$
 
 #### Individual Term Verification
 
 **Entropy term**:
 From $S = \frac{\pi(r_+^2 + a^2)}{G\Xi}$:
-$$\tag{9.21}\begin{align}
+
+$$
+\tag{9.21}\begin{align}
 T_{H}\delta S & =\frac{\kappa}{2\pi}\frac{\pi}{G\Xi}\left( 2r_{+}\delta r_{+}+2a\delta a+\frac{(r_{+}^{2}+a^{2})a^{2}}{\ell ^{2}\Xi}\delta \ell ^{-1} \right) \\
  & =\frac{\kappa}{2G\Xi}\left( 2r_{+}\delta r_{+}+2a\delta a-\frac{(r_{+}^{2}+a^{2})a^{2}}{\ell ^{3}\Xi}\delta \ell \right)
-\end{align}$$
+\end{align}
+$$
 
 **Angular momentum term**:
 From $J_{\text{total}} = \frac{Ma}{\Xi^2}$:
-$$\tag{9.22}\begin{align}
+
+$$
+\tag{9.22}\begin{align}
 \Omega _{H}\delta J_{\text{total}} & =\frac{a}{r_{+}^{2}+a^{2}}\Xi \cdot \frac{1}{\Xi ^{2}}\left( M\delta a+a\delta M-\frac{2Ma^{3}}{\ell ^{2}\Xi}\delta \ell ^{-1} \right) \\
  & =\frac{a}{\Xi(r_{+}^{2}+a^{2})}\left( M\delta a+a\delta M+\frac{2Ma^{3}}{\ell ^{3}\Xi}\delta \ell \right)
-\end{align}$$
+\end{align}
+$$
 
 **Charge term**:
 From $Q_{\text{total}} = \frac{Q}{\Xi}$:
-$$\tag{9.23}\begin{align}
+
+$$
+\tag{9.23}\begin{align}
 \Phi _{H}\delta Q_{\text{total}} & =\frac{Qr_{+}}{\Xi(r_{+}^{2}+a^{2})} \cdot \frac{1}{\Xi}\left( \delta Q-\frac{Qa^{2}}{\ell ^{2}\Xi}\delta \ell ^{-1} \right) \\
  & =\frac{Qr_{+}}{\Xi ^{2}(r_{+}^{2}+a^{2})}\left( \delta Q+\frac{Qa^{2}}{\ell ^{3}\Xi}\delta \ell \right)
-\end{align}$$
+\end{align}
+$$
 
 **Pressure term**:
 From $P = \frac{3}{8\pi G\ell^2}$ and $V_H = \frac{4\pi(r_+^2+a^2)^{3/2}}{3\Xi^{3/2}}$:
-$$\tag{9.24}\begin{align}
+
+$$
+\tag{9.24}\begin{align}
 V_{H}\delta P & =\frac{4\pi(r_{+}^{2}+a^{2})^{3/2}}{3\Xi ^{3/2}} \cdot \frac{3}{8\pi G}\left( -\frac{2}{\ell ^{3}} \right)\delta \ell \\
  & =-\frac{(r_{+}^{2}+a^{2})^{3/2}}{2G\Xi ^{3/2}\ell ^{3}}\delta \ell
-\end{align}$$
+\end{align}
+$$
 
 #### Complete Verification
 
 The verification requires showing:
-$$\tag{9.25}\begin{align}
+
+$$
+\tag{9.25}\begin{align}
 \delta M_{\text{total}} & =T_{H}\delta S+\Omega _{H}\delta J_{\text{total}}+\Phi _{H}\delta Q_{\text{total}}+V_{H}\delta P
-\end{align}$$
+\end{align}
+$$
 
 This is a highly non-trivial algebraic identity that involves:
 1. **Surface gravity relations**: Using the explicit form of $\kappa$ for KNAdS
-2. **Horizon constraint**: The implicit relation $\Delta_r(r_+) = 0$
-3. **AdS geometry**: The $\Xi$ factors and their variations
-4. **Integration by parts**: Converting volume integrals to boundary terms
+1. **Horizon constraint**: The implicit relation $\Delta_r(r_+) = 0$
+1. **AdS geometry**: The $\Xi$ factors and their variations
+1. **Integration by parts**: Converting volume integrals to boundary terms
 
 The complete verification can be performed using computer algebra systems and confirms the extended first law.
 
@@ -634,43 +841,45 @@ The complete verification can be performed using computer algebra systems and co
 The extended first law enables study of **phase transitions** in AdS black holes:
 
 1. **Van der Waals behavior**: For fixed charge and angular momentum, the $P$-$V_H$ relation exhibits critical behavior
-2. **Critical point**: Located at specific values $(P_c, V_{H,c}, T_c)$ 
-3. **Coexistence curves**: Regions where multiple black hole phases can coexist
-4. **Latent heat**: Energy required for phase transitions between different black hole types
+1. **Critical point**: Located at specific values $(P_c, V_{H,c}, T_c)$
+1. **Coexistence curves**: Regions where multiple black hole phases can coexist
+1. **Latent heat**: Energy required for phase transitions between different black hole types
 
 #### Holographic Dictionary
 
 In AdS/CFT correspondence, the pressure term has a dual interpretation:
 
-$$\tag{9.26}\begin{align}
+$$
+\tag{9.26}\begin{align}
 V_{H}\delta P & \leftrightarrow \text{CFT central charge variation} \\
 P & \leftrightarrow \text{Energy scale in dual CFT} \\
 V_{H} & \leftrightarrow \text{Effective CFT volume}
-\end{align}$$
+\end{align}
+$$
 
 #### Thermodynamic Stability
 
 The extended first law provides **stability conditions**:
 
 1. **Heat capacity**: $C_P = T_H \left(\frac{\partial S}{\partial T_H}\right)_P > 0$ for stability
-2. **Compressibility**: $\kappa_T = -\frac{1}{V_H}\left(\frac{\partial V_H}{\partial P}\right)_{T_H} > 0$ for stability  
-3. **Mixed derivatives**: Cross-correlations between thermodynamic variables
-4. **Phase boundaries**: Locations where stability conditions are violated
+1. **Compressibility**: $\kappa_T = -\frac{1}{V_H}\left(\frac{\partial V_H}{\partial P}\right)_{T_H} > 0$ for stability
+1. **Mixed derivatives**: Cross-correlations between thermodynamic variables
+1. **Phase boundaries**: Locations where stability conditions are violated
 
 ### Connection to Black Hole Chemistry
 
 This extended first law is the foundation of **black hole thermodynamics with variable $\Lambda$**, also known as **black hole chemistry**:
 
 - **Pressure**: $P = \frac{3}{8\pi G\ell^2}$ (cosmological pressure)
-- **Volume**: $V_H$ (thermodynamic volume)  
+- **Volume**: $V_H$ (thermodynamic volume)
 - **Temperature**: $T_H$ (Hawking temperature)
 - **Chemical potentials**: $\Omega_H$, $\Phi_H$ (rotation, charge)
 
 This framework allows study of:
 1. **Phase transitions**: Van der Waals-like behavior in AdS black holes
-2. **Critical phenomena**: Critical points and scaling laws
-3. **Holographic phase transitions**: Dual descriptions in AdS/CFT
-4. **Thermodynamic stability**: Convexity conditions and stability analysis
+1. **Critical phenomena**: Critical points and scaling laws
+1. **Holographic phase transitions**: Dual descriptions in AdS/CFT
+1. **Thermodynamic stability**: Convexity conditions and stability analysis
 
 ### Mathematical Rigor and Consistency
 
@@ -702,23 +911,23 @@ The first law (9.17) is **coordinate-independent** because:
 
 1. **Higher-order corrections**: How do string theory α' corrections modify the first law?
 
-2. **Information paradox**: How does the first law constrain possible resolutions of the information paradox in AdS/CFT?
+1. **Information paradox**: How does the first law constrain possible resolutions of the information paradox in AdS/CFT?
 
-3. **Quantum hair**: Do quantum corrections introduce new thermodynamic variables beyond $(M, J, Q)$?
+1. **Quantum hair**: Do quantum corrections introduce new thermodynamic variables beyond $(M, J, Q)$?
 
-4. **Holographic complexity**: Can the first law be extended to include holographic complexity as a thermodynamic variable?
+1. **Holographic complexity**: Can the first law be extended to include holographic complexity as a thermodynamic variable?
 
 ### Computational Challenges
 
 1. **Exact integration**: Computing horizon area (6.3) for generic parameters requires elliptic integrals
-2. **Stability analysis**: Linear perturbation theory around KNAdS backgrounds
-3. **Phase transitions**: Critical behavior and phase structure in parameter space
+1. **Stability analysis**: Linear perturbation theory around KNAdS backgrounds
+1. **Phase transitions**: Critical behavior and phase structure in parameter space
 
 ### Experimental/Observational Connections
 
 1. **Gravitational waves**: How do merger dynamics respect thermodynamic laws?
-2. **Black hole photography**: Can thermodynamic quantities be inferred from Event Horizon Telescope data?
-3. **Holographic experiments**: Laboratory analogs using condensed matter systems
+1. **Black hole photography**: Can thermodynamic quantities be inferred from Event Horizon Telescope data?
+1. **Holographic experiments**: Laboratory analogs using condensed matter systems
 
 ---
 
@@ -728,14 +937,14 @@ We have systematically derived the first law of thermodynamics for Kerr-Newman-A
 
 **Key Results**:
 1. **First Law**: $\delta M_{\text{total}} = T_H \delta S + \Omega_H \delta J_{\text{total}} + \Phi_H \delta Q_{\text{total}}$
-2. **Entropy**: $S = \frac{\pi(r_+^2 + a^2)}{G\Xi}$ (area law with AdS corrections)
-3. **Temperature**: $T_H = \frac{\kappa}{2\pi}$ with complex surface gravity expression
-4. **Consistency**: All limiting cases and dimensional analysis verified
+1. **Entropy**: $S = \frac{\pi(r_+^2 + a^2)}{G\Xi}$ (area law with AdS corrections)
+1. **Temperature**: $T_H = \frac{\kappa}{2\pi}$ with complex surface gravity expression
+1. **Consistency**: All limiting cases and dimensional analysis verified
 
-**Methodological Achievement**: 
+**Methodological Achievement**:
 The covariant phase space formalism provides a unified, mathematically rigorous framework that:
 - Handles arbitrary background geometries
-- Incorporates multiple gauge fields naturally  
+- Incorporates multiple gauge fields naturally
 - Maintains manifest covariance throughout
 - Connects geometry to thermodynamics through Noether charges
 
@@ -745,7 +954,7 @@ This approach represents the state-of-the-art in black hole thermodynamics and p
 
 **References**:
 - Lee & Wald (1990): Covariant phase space methods
-- Wald (1993): Black hole entropy and thermodynamics  
+- Wald (1993): Black hole entropy and thermodynamics
 - Hawking & Page (1983): Thermodynamics of AdS black holes
 - Chamblin et al. (1999): Charged AdS black holes and catastrophic holography
 - Kastor et al. (2009): Enthalpy and the mechanics of AdS black holes

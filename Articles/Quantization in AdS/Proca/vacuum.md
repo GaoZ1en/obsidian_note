@@ -69,6 +69,6 @@ as a further application of Weyl's law, we can ...?
 
 ---
 
-for infinite $\displaystyle{\Sigma}$, we can define a series of $\displaystyle{\Sigma _{R}\subset \Sigma}$, and when $\displaystyle{R}$ grows, $\displaystyle{\Sigma _{R}}$ approaches to $\displaystyle{\Sigma}$. by same construction, we can show that same statement holds for unit volume...? 
+for infinite $\displaystyle{\Sigma}$, we can define a series of $\displaystyle{\Sigma _{R}\subset \Sigma}$, and when $\displaystyle{R}$ grows, $\displaystyle{\Sigma _{R}}$ approaches to $\displaystyle{\Sigma}$. by same construction, we can show that same statement holds for unit volume...?
 
-nonono this does not work for $\displaystyle{\mathrm{AdS}_{3}}$ at least, the spectrum is of order $\displaystyle{n^{2}}$, which implies that the inner product of vacuum is zero 
+nonono this does not work for $\displaystyle{\mathrm{AdS}_{3}}$ at least, the spectrum is of order $\displaystyle{n^{2}}$, which implies that the inner product of vacuum is zero

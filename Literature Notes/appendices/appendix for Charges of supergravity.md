@@ -333,7 +333,6 @@ $$\begin{align}
 =\mathbb D^{\mathbb A}\delta \mathbb A.
 \end{align}$$
 
-
 ## bosonic constrained BF theory
 
 ### equation of motion for the bosonic $B$ field
@@ -550,7 +549,6 @@ B^{(s)ab} & =\frac{1}{2(\alpha^2+\beta^2)}\left(\beta \delta^{ab}_{cd}-\alpha \e
 \mathscr{\bar{B}} & =\frac{1}{\alpha^2+\beta^2}\mathscr{\bar F}(\beta-\alpha \gamma^5)
 \end{align}$$
 
-
 ### solving the $\mathbb A$ equation of motion in components
 
 The second field equation is
@@ -598,7 +596,6 @@ $$\begin{align}
 \end{align}$$
 
 ### gauge transformation of the supercurvature
-
 
 Using $\delta_\epsilon \mathbb A_\mu=\mathbb D_\mu \Upsilon$,
 
@@ -1160,7 +1157,7 @@ X_{\Upsilon} & =\int \mathrm{d}^{4}x\sqrt{ -g }\left(\delta _{\Upsilon} \mathbb{
 $$\begin{align}
 X_{\Upsilon}\cdot \delta S & =\int _{M}\braket{ \delta _{\Upsilon}\mathbb{B}\wedge\left(\mathbb{F}-\beta \mathbb{B}-\frac{\alpha}{2}\star \mathbb{B}\right) } +\int _{M}\braket{ \mathbb{B}\wedge \delta _{\Upsilon}\mathbb{F} } \\
  & =\int _{M}\braket{ -i[\Upsilon,\mathbb{B}]\wedge\left( \mathbb{F}-\beta \mathbb{B}-\frac{\alpha}{2}\star \mathbb{B} \right) }+\int _{M}\braket{ \mathbb{B}\wedge -i[\Upsilon,\mathbb{F}] } \\
- & =\frac{i\alpha}{2}\int _{M}\braket{ [\Upsilon,\mathbb{B}]\wedge \star \mathbb{B} } 
+ & =\frac{i\alpha}{2}\int _{M}\braket{ [\Upsilon,\mathbb{B}]\wedge \star \mathbb{B} }
 \end{align}$$
 
 for bosonic gauge transformations,

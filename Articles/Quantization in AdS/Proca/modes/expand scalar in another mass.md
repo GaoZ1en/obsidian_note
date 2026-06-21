@@ -32,15 +32,15 @@ S & =\sum _{m=-\infty}^{\infty}\int _{0}^{\infty}\mathrm{d}k\int _{t_i}^{t_f}\ma
 
 Consider a free scalar field with mass $\mu$ on $\mathrm{AdS}_{3}$ with the action
 
-$$
+$$\begin{align}
 S = -\frac{1}{2} \int d^3 x \sqrt{-g} (\nabla_\mu \phi \nabla^\mu \phi + \mu^2 \phi^2).
-$$
+\end{align}$$
 
 In global coordinates $ds^2 = -(1+r^2)dt^2 + \frac{dr^2}{1+r^2} + r^2 d\phi^2$,
 
-$$
+$$\begin{align}
 S = \frac{1}{2} \int dt d^2x \left[ \frac{r}{1+r^2} (\partial_t \phi)^2 - r(1+r^2)(\partial_r \phi)^2 - \frac{1}{r} (\partial_\phi \phi)^2 - r \mu^2 \phi^2 \right].
-$$
+\end{align}$$
 
 Introduce a reference mass $\mu_{0}$ (with conformal dimension $\Delta_{0} = 1 + \sqrt{1+\mu_{0}^{2}}$). The normalized eigenmodes of the $\mu_{0}$ theory are
 

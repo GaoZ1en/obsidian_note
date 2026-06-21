@@ -12,7 +12,9 @@ In this section, we specify the background geometry, the Maxwell action, and the
 
 We parameterize global AdS$_3$ by the standard coordinates $(t, r, \phi)$, with ranges $t \in (-\infty, +\infty)$, $r \in (0, +\infty)$, and angular periodicity $\phi \sim \phi + 2\pi$. The metric is
 
-$$\mathrm{d}s^2 = -(1+r^2)\mathrm{d}t^2 + \frac{\mathrm{d}r^2}{1+r^2} + r^2 \mathrm{d}\phi^2.$$
+$$\begin{align}
+\mathrm{d}s^2 = -(1+r^2)\mathrm{d}t^2 + \frac{\mathrm{d}r^2}{1+r^2} + r^2 \mathrm{d}\phi^2.
+\end{align}$$
 
 The isometry group is $\mathrm{SL}(2, \mathbb{R}) \times \mathrm{SL}(2, \mathbb{R})$. A convenient basis of Killing fields generating the algebra $\mathfrak{sl}(2, \mathbb{R}) \oplus \mathfrak{sl}(2, \mathbb{R})$ is
 
@@ -31,7 +33,9 @@ These Killing fields will be used in Section 2 when we discuss the symmetry gene
 
 The dynamical field is a $\mathrm{U}(1)$ gauge potential $A_\mu(x)$. The action is
 
-$$S = -\frac{1}{4}\int_M \mathrm{d}^3x \sqrt{-g} F_{\mu\nu} F^{\mu\nu},$$
+$$\begin{align}
+S = -\frac{1}{4}\int_M \mathrm{d}^3x \sqrt{-g} F_{\mu\nu} F^{\mu\nu},
+\end{align}$$
 
 where
 

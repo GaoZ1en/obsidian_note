@@ -74,7 +74,7 @@ $$\begin{align}
 we have
 
 $$\begin{align}
-\psi ^{\dagger}\bar{\sigma}^{\mu}\chi & =\psi ^{\dagger}_{\dot{\alpha}}\bar{\sigma}^{\mu\dot{\alpha}\beta}\chi _{\beta} \\ 
+\psi ^{\dagger}\bar{\sigma}^{\mu}\chi & =\psi ^{\dagger}_{\dot{\alpha}}\bar{\sigma}^{\mu\dot{\alpha}\beta}\chi _{\beta} \\
  & =-\chi _{\beta}\bar{\sigma}^{\mu\dot{\alpha}\beta}\psi ^{\dagger}_{\dot{\alpha}} \\
  & =-\chi ^{\beta}\sigma ^{\mu}_{\beta \dot{\alpha}}\psi ^{\dagger \dot{\alpha}} \\
  & =-\chi \sigma ^{\mu}\psi ^{\dagger}

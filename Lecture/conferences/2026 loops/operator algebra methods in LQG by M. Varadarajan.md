@@ -1,5 +1,5 @@
 1. GNS representation
-2. ...
+1. ...
 
 ---
 
@@ -10,12 +10,12 @@ an $\displaystyle{*}$-algebra $\displaystyle{\mathcal{S}}$ is an algebra equippe
 the GNS construction relies on a positive linear functional (PLF) $\displaystyle{\omega}$ defined on a $\displaystyle{\star}$-algebra $\displaystyle{\mathcal{S}}$. GNS construct a representation of the algebra $\displaystyle{\mathcal{S}}$ on a Hilbert space. steps:
 1. define a vector space $\displaystyle{V}$
 	1. we will choose $\displaystyle{V\equiv \mathcal{S}}$
-	2. in particular, $\displaystyle{\ket{\Omega}=\ket{1}}$
-2. represent $\displaystyle{\forall A\in \mathcal{S}}$ as a linear operator $\displaystyle{\Lambda(A)}$ on $\displaystyle{V}$
+	1. in particular, $\displaystyle{\ket{\Omega}=\ket{1}}$
+1. represent $\displaystyle{\forall A\in \mathcal{S}}$ as a linear operator $\displaystyle{\Lambda(A)}$ on $\displaystyle{V}$
 	1. $\displaystyle{\Lambda(A)\ket{B}=\ket{AB}}$
-3. define a scalar product $\displaystyle{(\cdot,\cdot)}$ on $\displaystyle{V}$.
+1. define a scalar product $\displaystyle{(\cdot,\cdot)}$ on $\displaystyle{V}$.
 	1. $\displaystyle{(\ket{A},\ket{B})=\omega(A^{*}B)}$
-4. Cauchy completion of $\displaystyle{V}$ with respect to $\displaystyle{(\cdot,\cdot)}$ will yield the GNS Hilbert space.
+1. Cauchy completion of $\displaystyle{V}$ with respect to $\displaystyle{(\cdot,\cdot)}$ will yield the GNS Hilbert space.
 
 if every state in $\displaystyle{V}$ can be written as $\displaystyle{\Lambda(\dots)\ket{\Omega}}$ then the rep. is called cyclic.
 
@@ -55,7 +55,7 @@ $$\begin{align}
 
 then
 1. $\displaystyle{\omega(W(a,b))=\braket{ \Omega|\hat{W}(a,b)|\Omega }}$
-2. the state $\displaystyle{\ket{W(a,b)}}$ corresponds to the coherent state
+1. the state $\displaystyle{\ket{W(a,b)}}$ corresponds to the coherent state
 
 *a PLF for LQC*
 
@@ -80,9 +80,9 @@ nothing nontrivial.
 
 Gelfand showed that every Abelian $\displaystyle{C*}$-algebra can be realized as the Abelian $\displaystyle{C*}$-algebra $\displaystyle{\mathcal{F}_{\Delta}}$ of continuous functions on a certain compact Hausdorff space $\displaystyle{\Delta}$. more precisely:
 1. any Abelian $\displaystyle{C*}$-algebra $\displaystyle{\mathcal{C}}$ is isomorphic to the Abelian $\displaystyle{C*}$-algebra $\displaystyle{\mathcal{F}_{\Delta}}$ of continuous (complex-valued) functions on a compact Hausdorff space $\displaystyle{\Delta}$, which is refered to as the spectrum of the $\displaystyle{C*}$-algebra $\displaystyle{\mathcal{C}}$
-2. elements of $\displaystyle{\Delta}$ are in 1-1 correspondence to the homomorphism $\displaystyle{\mathcal{C}\to \mathbb{C}}$.
-3. $\displaystyle{f_{A}(h)=h(A)}$. 
-4. the topology of $\displaystyle{\Delta}$ is defined to be the weakest topology. 
+1. elements of $\displaystyle{\Delta}$ are in 1-1 correspondence to the homomorphism $\displaystyle{\mathcal{C}\to \mathbb{C}}$.
+1. $\displaystyle{f_{A}(h)=h(A)}$.
+1. the topology of $\displaystyle{\Delta}$ is defined to be the weakest topology.
 
 this suggest us that we can represent element of $\displaystyle{\mathcal{C}}$ as a multiplication representation of $\displaystyle{\Delta}$...
 
@@ -103,4 +103,3 @@ $$\begin{align}
 then $\displaystyle{\mathcal{C}}$ is obtained by Cauchy completion of $\displaystyle{\mathcal{S}}$ in the sup norm.
 
 ...
-

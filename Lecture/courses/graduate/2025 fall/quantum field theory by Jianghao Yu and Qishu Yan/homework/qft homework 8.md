@@ -47,13 +47,14 @@ $$\begin{align}
 \Theta ^{\mu \nu} & = \frac{2}{\sqrt{ -g }} \frac{\delta S}{\delta g_{\mu \nu}} \Big|_{g=\eta}\\
  & =F^{\mu \rho}F^{\nu}_{~\rho}+m^{2}V^{\mu}V^{\nu}+(D^{\mu}\phi)^{\dagger}D^{\nu}\phi+(D^{\nu}\phi)^{\dagger}D^{\mu}\phi-\frac{1}{2}\eta ^{\mu \nu}\mathcal{L}
 \end{align}$$
+
 here we have used the eom. the current corresponding to $\displaystyle{\delta \phi=i\varepsilon \phi}$ gives
 
 $$\begin{align}
 J^{\mu} & =-i(D^{\mu}\phi \phi ^{\dagger}-(D^{\mu}\phi)^{\dagger}\phi)
 \end{align}$$
 
-which is exactly the current coupled to $\displaystyle{V_{\mu}}$ up to a constant. 
+which is exactly the current coupled to $\displaystyle{V_{\mu}}$ up to a constant.
 
 now we will consider the quantization. we assume that $\displaystyle{\mathcal{H}(\phi ^{\dagger}\phi)}$ has only one minimum at $\displaystyle{\phi =0}$ (otherwise we need to handle SSB... it's complicated so we will discuss it later), and all the interactions are small so that perturbation theory is valid. rewrite the Lagrangian density as
 
@@ -76,6 +77,7 @@ $$\begin{align}
  & =\pi _{\phi}\pi _{\phi}^{\dagger}+\partial _{i}\phi ^{\dagger}\partial _{i}\phi+\frac{1}{2}\pi ^{i}_{V}\pi ^{i}_{V}-\frac{1}{4}(\partial _{i}V^{j}-\partial _{j}V^{i})(\partial _{i}V^{j}-\partial _{j}V^{i})+\frac{1}{2}m^{2}(V^{i})^{2}-\frac{1}{2}m^{2}(V^{0})^{2}-\pi ^{i}_{V}\partial _{i}V^{0} \\
  & -igV^{0}(\pi _{\phi}\phi-\pi _{\phi}^{\dagger}\phi ^{^{\dagger}})+igV^{i}(\phi ^{\dagger}\partial _{i}\phi-\phi \partial _{i}\phi ^{\dagger})+g^{2}(V^{i})^{2}\phi ^{\dagger}\phi+\mathcal{H}(\phi ^{\dagger}\phi)
 \end{align}$$
+
 integrate out the $\displaystyle{V^{0}}$, we have
 
 $$\begin{align}
@@ -84,6 +86,7 @@ $$\begin{align}
  & =\pi _{\phi}\pi ^{\dagger}_{\phi}+\partial _{i}\phi ^{\dagger}\partial _{i}\phi+\frac{1}{2}\pi ^{i}_{V}\pi ^{i}_{V}+\frac{1}{2m}(\partial _{i}\pi ^{i}_{V})^{2}-\frac{1}{4}(\partial _{i}V^{j}-\partial _{j}V^{i})(\partial _{i}V^{j}-\partial _{j}V^{i})+\frac{1}{2}m^{2}(V^{i})^{2} \\
  & +igV^{i}(\phi ^{\dagger}\partial _{i}\phi-\phi \partial _{i}\phi ^{\dagger})+g^{2}(V^{i})^{2}\phi ^{\dagger}\phi+\mathcal{H}(\phi ^{\dagger}\phi)-\frac{ig}{m}\partial _{i}\pi ^{i}_{V}(\pi _{\phi}\phi-\pi _{\phi}^{\dagger}\phi ^{\dagger})-\frac{g^{2}}{2m}(\pi _{\phi}\phi-\pi _{\phi}^{\dagger}\phi ^{\dagger})^{2}
 \end{align}$$
+
 the first line of the result gives the free Hamiltonian density, while the second line describes the interaction between scalar and vector. upon canonical quantization, we impose the equal-time commutation relations
 
 $$\begin{align}
@@ -147,4 +150,3 @@ $$\begin{align}
  & =\int \mathrm{d}p \frac{p}{p^{2}+\varepsilon ^{2}}f(p)\mp i\varepsilon \int \mathrm{d}p \frac{f(p)}{p^{2}+\varepsilon ^{2}} \\
  & =\mathcal{P}\int \mathrm{d}p \frac{f(p)}{p}\mp i\pi f(0)
 \end{align}$$
-

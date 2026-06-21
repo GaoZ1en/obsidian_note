@@ -4,11 +4,10 @@ higher form symmetry act on extended objects... how to understand it?
 
 ### usual formalism
 
-
-
 ## CPS formalism
 
-$$\tag{2.1}
+$$
+\tag{2.1}
 \begin{align}
 S & =-\frac{1}{4}\int _{M}F_{\mu \nu}F^{\mu \nu}\varepsilon
 \end{align}
@@ -16,7 +15,8 @@ $$
 
 where $\displaystyle{\varepsilon=\frac{1}{d!}\varepsilon _{\mu_{0}\dots \mu _{d-1}}\mathrm{d}x^{\mu_{0}}\wedge\dots \wedge \mathrm{d}x^{\mu _{d-1}}}$. perform a variation
 
-$$\tag{2.2}
+$$
+\tag{2.2}
 \begin{align}
 S & =-\frac{1}{2}\int _{M} F^{\mu \nu}\delta F_{\mu \nu}\varepsilon \\
  & =-\int _{M} F^{\mu \nu}\partial _{\mu}\delta A_{\nu}\varepsilon \\
@@ -27,7 +27,8 @@ $$
 
 consider the following diffeomorphism
 
-$$\tag{2.3}
+$$
+\tag{2.3}
 \begin{align}
 X_{\xi} & =\int \mathrm{d}^{d}x\mathcal{L}_{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}}
 \end{align}
@@ -37,7 +38,8 @@ where $\displaystyle{\xi _{\mu}}$ satisfies $\displaystyle{\partial _{\mu}\xi ^{
 
 then act this symmetry on the action
 
-$$\tag{2.4}
+$$
+\tag{2.4}
 \begin{align}
 X_{\xi}\cdot \delta S & = \int _{M} \mathcal{L}_{\xi}\mathbf{L}=\int _{M}\mathrm{d}(\xi \cdot \mathbf{L}) \\
  & =\int _{\Sigma _{f}-\Sigma _{i}}\frac{1}{4}F_{\rho \sigma}F^{\rho \sigma}\tau ^{\mu}\xi _{\mu}\varepsilon _{\Sigma}
@@ -46,7 +48,8 @@ $$
 
 so we have the Noether charge
 
-$$\tag{2.5}
+$$
+\tag{2.5}
 \begin{align}
 H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
  & =\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}(X_{\xi}\cdot \delta A^{\nu})F_{\mu \nu}-\int _{\Sigma}\varepsilon _{\Sigma}\tau ^{\mu}\xi ^{\nu} \frac{1}{4}g_{\mu \nu}F_{\rho \sigma}F^{\rho \sigma} \\
@@ -91,6 +94,8 @@ $$\begin{align}
 X_{\xi} & =\int \mathrm{d}^{4}x\left( \delta _{\xi}g_{\mu \nu} \frac{\delta}{\delta g_{\mu \nu}}+\delta _{\xi}A_{\mu} \frac{\delta}{\delta A_{\mu}} \right)
 \end{align}$$
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 \delta _{\xi}S & =X_{\xi}\cdot \delta S
-\end{align}$$
+\end{align}
+$$

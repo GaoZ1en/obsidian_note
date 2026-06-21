@@ -73,7 +73,7 @@ where
 $$\begin{align}
 \sum ^{\infty}_{n,\bar{n}=0}{f^{(+)}_{l,n,\bar{n}}}^{\mu_{1}}{f^{(-)}_{l,n,\bar{n}}}^{\mu_{2}}=\frac{\mu+1}{\pi \mu}\sum ^{\infty}_{n,\bar{n}=0} \frac{1}{n!\bar{n}!(\mu+2)_{n}(\mu)_{\bar{n}}} & \left(\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}^{\mu_{1}}_{1}(x_{1})+2i\bar{n}\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}-1} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}^{\mu_{1}}_{0}(x_{1})-\bar{n}(\bar{n}-1)\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}-2} \frac{e^{-i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}^{\mu_{1}}_{-1}(x_{1})\right) \\
  \times& \left(\mathcal{L}_{\xi _{1}}^{n}\mathcal{L}_{\bar{\xi}_{1}}^{\bar{n}} \frac{e^{i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}^{\mu_{2}}_{1}(x_{2})-2i\bar{n}\mathcal{L}_{\xi _{1}}^{n}\mathcal{L}_{\bar{\xi}_{1}}^{\bar{n}-1} \frac{e^{i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}^{\mu_{2}}_{0}(x_{2})-\bar{n}(\bar{n}-1)\mathcal{L}_{\xi _{1}}^{n}\mathcal{L}_{\bar{\xi}_{1}}^{\bar{n}-2} \frac{e^{i(\mu+2)t}}{(1+r^{2})^{(\mu+2)/2}}\bar{\xi}^{\mu_{2}}_{1}(x_{2})\right) \\
- 
+
 \end{align}$$
 
 $$\begin{align}

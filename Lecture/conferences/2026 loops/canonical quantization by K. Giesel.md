@@ -84,4 +84,3 @@ $$\begin{align}
 ---
 
 Palatini formulation, see [[Literature Notes/Charges of supergravity (2604.09928v1)|Charges of supergravity (2604.09928v1)]]
-

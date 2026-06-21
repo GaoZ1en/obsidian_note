@@ -1,6 +1,6 @@
 # time ordered correlation function
 
-in [[Articles/Quantization in AdS3/Proca-Chern-Simons/correlation function|correlation function]] we have derived the following two expressions
+in [[Articles/Quantization in AdS/Proca-Chern-Simons/correlation function|correlation function]] we have derived the following two expressions
 
 $$\begin{align}
 \sum ^{\infty}_{n,\bar{n}=0} f_{u,n,\bar{n}}^{\mu_{1}}(x_{1})f_{u,n,\bar{n}}^{*\mu_{2}}(x_{2}) & =\frac{1}{2\mu ^{2}}\nabla^{\mu_{1}}\nabla ^{\mu_{2}}g_{\mu+2}(x_{1},x_{2})+\frac{i}{2\mu}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~\rho_{1}}(x_{1})g^{\rho_{1},\mu_{2}}(x_{1},x_{2})\nabla _{\nu_{1}}g_{\mu+2}(x_{1},x_{2}) \\
@@ -132,7 +132,7 @@ therefore
 
 $$\begin{align}
 \braket{ 0|\mathcal{T}A^{\mu_{1}}(x_{1})A^{\mu_{2}}(x_{2})|0 } & =-\frac{1}{\mu ^{2}}g^{\mu_{1}\tau}g^{\mu_{2}\tau} \frac{N^{2}(x_{1})}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2}) \\
- & +\left[ \frac{1}{\mu ^{2}}\nabla ^{\mu_{1}}\nabla ^{\mu_{2}}+\frac{i}{2\mu}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}\mathcal{A}^{\rho_{1},\mu_{2}}\nabla _{\nu_{1}}+\frac{1}{2}\mathcal{S}^{\mu_{1},\mu_{2}} \right]\braket{ 0|\mathcal{T}\phi(x_{1})\phi(x_{2})|0 }  
+ & +\left[ \frac{1}{\mu ^{2}}\nabla ^{\mu_{1}}\nabla ^{\mu_{2}}+\frac{i}{2\mu}\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}\mathcal{A}^{\rho_{1},\mu_{2}}\nabla _{\nu_{1}}+\frac{1}{2}\mathcal{S}^{\mu_{1},\mu_{2}} \right]\braket{ 0|\mathcal{T}\phi(x_{1})\phi(x_{2})|0 }
 \end{align}$$
 
 # verification
@@ -150,7 +150,7 @@ $$\begin{align}
 (\nabla ^{2}-\mu(\mu+2))_{x_{1}}\braket{ 0|\mathcal{T}\phi(x_{1})\phi(x_{2})|0 } & =-\frac{1}{\sqrt{ g(x_{1}) }}\delta ^{3}(x_{1}-x_{2})
 \end{align}$$
 
-then 
+then
 
 $$\begin{align}
  & \frac{1}{\mu ^{2}}(g_{\mu_{1}\lambda_{1}}\nabla ^{2}-\nabla _{\mu_{1}}\nabla _{\lambda_{1}}-g_{\mu_{1} \lambda_{1}}\mu ^{2})\nabla ^{\mu_{1}}\nabla ^{\mu_{2}}\braket{ 0|\mathcal{T}\phi(x_{1})\phi(x_{2})|0 }  \\
@@ -249,7 +249,7 @@ $$\begin{align}
 
 which is consistent with the equation of motion. therefore we have verified that the covariant part of the correlation function is consistent with the equation of motion.
 
-however this procedure is not compatible with the Proca-Chern-Simons theory. we have to prove for each branch of the correlation function that it is consistent with the equation of motion... 
+however this procedure is not compatible with the Proca-Chern-Simons theory. we have to prove for each branch of the correlation function that it is consistent with the equation of motion...
 
 ---
 
@@ -314,7 +314,7 @@ act $\displaystyle{\varepsilon _{\mu}^{~\nu \rho}\nabla _{\nu}\pm\mu \delta _{\m
 
 $$\begin{align}
  \braket{ 0|\mathcal{T}A^{\mu_{1}}_{u}(x_{1})A_{u}^{\mu_{2}}(x_{2})|0 } & =\frac{1}{2\mu}\left(\varepsilon ^{\mu_{1}\nu_{1}}_{~~~~~~~\rho_{1}}\nabla _{\nu_{1}}+\mu \delta ^{\mu_{1}}_{\rho_{1}}\right)\braket{ 0|\mathcal{T}A^{\rho_{1}}(x_{1})A^{\mu_{2}}(x_{2})|0 }  \\
-\braket{ 0|\mathcal{T}A^{\mu_{1}}_{v}(x_{1})A_{v}^{\mu_{2}}(x_{2})|0 } & =-\frac{1}{2\mu}(\varepsilon _{~~~~~~~\rho_{1}}^{\mu_{1}\nu_{1}}\nabla _{\nu_{1}}-\mu \delta ^{\mu_{1}}_{\rho_{1}})\braket{ 0|\mathcal{T}A^{\rho_{1}}(x_{1})A^{\mu_{2}}(x_{2})|0 } 
+\braket{ 0|\mathcal{T}A^{\mu_{1}}_{v}(x_{1})A_{v}^{\mu_{2}}(x_{2})|0 } & =-\frac{1}{2\mu}(\varepsilon _{~~~~~~~\rho_{1}}^{\mu_{1}\nu_{1}}\nabla _{\nu_{1}}-\mu \delta ^{\mu_{1}}_{\rho_{1}})\braket{ 0|\mathcal{T}A^{\rho_{1}}(x_{1})A^{\mu_{2}}(x_{2})|0 }
 \end{align}$$
 
 then act $\displaystyle{\varepsilon _{\mu}^{~\nu \rho}\nabla _{\nu}\mp \mu \delta _{\mu}^{\rho}}$ on the above correlation function, we have

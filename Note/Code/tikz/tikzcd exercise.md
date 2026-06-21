@@ -25,7 +25,7 @@ A \arrow[r, tail, two heads, dashed] & B
 \end{tikzcd}\end{document}
 ```
 
-Also, we can color the arrow as well as labels or do the other things as 
+Also, we can color the arrow as well as labels or do the other things as
 
 ```
 \arrow[<options>]{<direction>}<label>
@@ -82,4 +82,3 @@ D \arrow[r] & E \arrow[r] &F
 0 \ar[r]& \mathbb{R} \ar[r]& \Omega^{0,0} \ar[r,"\mathrm{d}_H"] \ar[u,"\mathrm{d}_V"] & \Omega^{1,0} \ar[r,"\mathrm{d}_H"] \ar[u,"\mathrm{d}_V"] & \dots \ar[r,"\mathrm{d}_H"] & \Omega^{p-1,0} \ar[r,"\mathrm{d}_H"] \ar[u,"\mathrm{d}_V"] & \Omega^{p,0} \ar[u,"\mathrm{d}_V"] \ar[ur,"E"]& & \\
 \end{tikzcd}\end{document}
 ```
-

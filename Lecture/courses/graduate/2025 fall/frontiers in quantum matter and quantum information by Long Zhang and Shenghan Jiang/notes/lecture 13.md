@@ -4,11 +4,11 @@ stabilizer code
 1. examples
 	1. CSS code
 		1. St..? code
-		2. surface code
-	2. 5-qubit code
+		1. surface code
+	1. 5-qubit code
 fault tolerant, quantum computing
-2. error propagatiion and general idea
-3. FT diagosis and rea?
+1. error propagatiion and general idea
+1. FT diagosis and rea?
 
 ---
 
@@ -21,7 +21,7 @@ what is stabilizer code?
 	- dimension of $\displaystyle{C(S)}$ is $\displaystyle{2^{k}}$
 
 examples:
-Shor's 9-qubit code, with stabilizer generators 
+Shor's 9-qubit code, with stabilizer generators
 
 $$\begin{align}
 S = \langle & Z_1 Z_2, Z_2 Z_3, Z_4 Z_5, Z_5 Z_6, Z_7 Z_8, Z_8 Z_9, \\

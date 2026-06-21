@@ -6,7 +6,8 @@ They will prove the so-called 1.5 Noether theorem for BV rank-1 systems, and exp
 
 They constructed a BRST covariant phase space that is geometrically trigraded (and quadrigraded for susy or topological quantum field theory's).
 
-$$\tag{1.1}
+$$
+\tag{1.1}
 \begin{align}
 [Q_{\mathrm{Noether}},S_{\mathrm{physical}}]=0
 \end{align}

@@ -21,7 +21,6 @@ moduli stabilization??? what cycle? complex structure moduli and Kahler moduli? 
 
 source of moduli potentials
 
-
 | fluxes                   | $\displaystyle{V(R)\propto R^{-6-2p}}$     |
 | ------------------------ | ------------------------------------------ |
 | p-branes, Op-planes      | $\displaystyle{V(R)\propto T_{p}R^{p-15}}$ |

@@ -1,6 +1,5 @@
 turn to Euclidean field theory
 
-
 $$\begin{align}
 A^{\tau}(\tau,r,\phi) & =iA^{t}(t=-i\tau,r,\phi) \\
 A^{r}(\tau,r,\phi) & =A^{r}(t=-i\tau,r,\phi) \\
@@ -102,7 +101,7 @@ $$\begin{align}
  & +2 \frac{n(n-1)}{\mu ^{2}}\phi _{\mu+2,n-2,\bar{n}}(x_{1})\phi _{\mu+2,n-2,\bar{n}}^{*}(x_{2})\xi _{-1}^{\mu_{1}}(x_{1})\xi _{1}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-1. 
+1.
 
 $$\begin{align}
  & \sum ^{\infty}_{n,\bar{n}=0} \frac{2(\mu+n)(\mu+n+1)}{\mu ^{2}}\phi _{\mu+2,n,\bar{n}}(x_{1})\phi ^{*}_{\mu+2,n,\bar{n}}(x_{2})\xi _{1}^{\mu_{1}}(x_{1})\xi _{-1}^{\mu_{2}}(x_{2}) \\
@@ -112,7 +111,7 @@ $$\begin{align}
 = & \left(\frac{2}{\mu ^{2}}\mathcal{L}_{\xi _{1}}^{(1)}\mathcal{L}_{\xi_{1}}^{(2)}+\frac{2i}{\mu}\mathcal{L}_{\xi_{0}}^{(1)}+1\right)g_{\mu+2}(x_{1},x_{2})\xi _{1}^{\mu_{1}}(x_{1})\xi _{-1}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-2. 
+2.
 
 $$\begin{align}
  & \sum ^{\infty}_{n,\bar{n}=0}-4i \frac{\mu+n}{\mu ^{2}}\sqrt{ n(\mu+n+1) } \phi _{\mu+2,n,\bar{n}}(x_{1})\phi _{\mu+2,n-1,\bar{n}}^{*}(x_{2})\xi_{1}^{\mu_{1}}(x_{1})\xi _{0}^{\mu_{2}}(x_{2}) \\
@@ -120,7 +119,7 @@ $$\begin{align}
 = & -\frac{4}{\mu ^{2}}\mathcal{L}_{\xi _{-1}}^{(1)}\left( \mathcal{L}_{\xi _{0}}^{(2)}+\frac{i\mu}{2} \right)g_{\mu+2}(x_{1},x_{2})\xi _{1}^{\mu_{1}}(x_{1})\xi _{0}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-3. 
+3.
 
 $$\begin{align}
  & \sum ^{\infty}_{n,\bar{n}=0}-\frac{2}{\mu ^{2}}\sqrt{ n(n-1)(\mu+n)(\mu+n+1) }\phi _{\mu+2,n,\bar{n}}(x_{1})\phi _{\mu+2,n-2,\bar{n}}^{*}(x_{2})\xi _{1}^{\mu_{1}}(x_{1})\xi _{1}^{\mu_{2}}(x_{2})  \\
@@ -128,7 +127,7 @@ $$\begin{align}
 = & \frac{2}{\mu ^{2}} \mathcal{L}_{\xi _{-1}}^{(2)}\mathcal{L}_{\xi _{-1}}^{(2)}g_{\mu+2}(x_{1},x_{2})\xi _{1}^{\mu_{1}}(x_{1})\xi _{1}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-4. 
+4.
 
 $$\begin{align}
  & \sum ^{\infty}_{n,\bar{n}=0}4i \frac{\mu+n}{\mu ^{2}}\sqrt{ n(\mu+n+1) }\phi _{\mu+2,n-1,\bar{n}}(x_{1})\phi _{\mu+2,n,\bar{n}}^{*}(x_{2})\xi _{0}^{\mu_{1}}(x_{1})\xi _{-1}^{\mu_{2}}(x_{2}) \\
@@ -136,7 +135,7 @@ $$\begin{align}
 = & -\frac{4}{\mu ^{2}}\left(\mathcal{L}_{\xi _{0}}^{(1)}-\frac{i\mu}{2}\right)\mathcal{L}_{\xi _{1}}^{(2)}g_{\mu+2}(x_{1},x_{2})\xi _{0}^{\mu_{1}}(x_{1})\xi _{-1}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-5. 
+5.
 
 $$\begin{align}
  & \sum ^{\infty}_{n,\bar{n}=0}+8 \frac{n(\mu+n)}{\mu ^{2}}\phi _{\mu+2,n-1,\bar{n}}(x_{1})\phi _{\mu+2,n-1,\bar{n}}^{*}(x_{2})\xi _{0}^{\mu_{1}}(x_{1})\xi _{0}^{\mu_{2}}(x_{2}) \\
@@ -144,28 +143,28 @@ $$\begin{align}
 = & \frac{8}{\mu ^{2}}\left( \mathcal{L}_{\xi_{0}}^{(1)}\mathcal{L}_{\xi_{0}}^{(2)}-\frac{\mu ^{2}}{4} \right)g_{\mu+2}(x_{1},x_{2})\xi _{0}^{\mu_{1}}(x_{1})\xi _{0}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-6. 
+6.
 
 $$\begin{align}
 & \sum ^{\infty}_{n,\bar{n}=0}-4i \frac{n}{\mu ^{2}}\sqrt{ (n-1)(\mu+n) }\phi _{\mu+2,n-1,\bar{n}}(x_{1})\phi _{\mu+2,n-2,\bar{n}}^{*}(x_{2})\xi _{0}^{\mu_{1}}(x_{1})\xi _{1}^{\mu_{2}}(x_{2}) \\
 = & -\frac{4}{\mu ^{2}}\left(\mathcal{L}_{\xi_{0}}^{(1)}-i\frac{\mu}{2}\right)\mathcal{L}_{\xi _{-1}}^{(2)}g_{\mu+2}(x_{1},x_{2})\xi _{0}^{\mu_{1}}(x_{1})\xi_{1}^{\mu _{2}}(x_{2})
 \end{align}$$
 
-7.  
+7.
 
 $$\begin{align}
  & \sum ^{\infty}_{n,\bar{n}=0}-\frac{2}{\mu ^{2}}\sqrt{ n(n-1)(\mu+n)(\mu+n+1) }\phi _{\mu+2,n-2,\bar{n}}(x_{2})\phi _{\mu+2,n,\bar{n}}^{*}(x_{2})\xi _{-1}^{\mu_{1}}(x_{1})\xi _{-1}^{\mu_{2}}(x_{2}) \\
 = & \frac{2}{\mu ^{2}}\mathcal{L}_{\xi _{1}}^{(1)}\mathcal{L}_{\xi _{1}}^{(1)}g_{\mu+2}(x_{1},x_{2})\xi _{-1}^{\mu_{1}}(x_{1})\xi _{-1}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-8. 
+8.
 
 $$\begin{align}
  & \sum ^{\infty}_{n,\bar{n}=0}+4i \frac{n}{\mu ^{2}}\sqrt{ (n-1)(\mu+n) }\phi _{\mu+2,n-2,\bar{n}}(x_{1})\phi _{\mu+2,n-1,\bar{n}}(x_{2})\xi _{-1}^{\mu _{1}}(x_{1})\xi _{0}^{\mu_{2}}(x_{2}) \\
 = & -\frac{4}{\mu ^{2}} \mathcal{L}_{\xi _{1}}^{(1)}\left(\mathcal{L}_{\xi _{0}}^{(2)}-i\frac{\mu}{2}\right)g_{\mu+2}(x_{1},x_{2})\xi _{-1}^{\mu_{1}}(x_{1})\xi _{0}^{\mu_{2}}(x_{2})
 \end{align}$$
 
-9. 
+9.
 
 $$\begin{align}
 & \sum ^{\infty}_{n,\bar{n}=0}+2 \frac{n(n-1)}{\mu ^{2}}\phi _{\mu+2,n-2,\bar{n}}(x_{1})\phi _{\mu+2,n-2,\bar{n}}^{*}(x_{2})\xi _{-1}^{\mu_{1}}(x_{1})\xi _{1}^{\mu_{2}}(x_{2}) \\
@@ -195,11 +194,11 @@ $$\begin{align}
  & +\frac{1}{2}g^{\mu_{1},\mu_{2}}(x_{1},x_{2})g_{\mu+2}(x_{1},x_{2})
 \end{align}$$
 
-where $\displaystyle{\bar{g}^{\mu _{1},\mu _{2}}(x_{1},x_{2})=2\bar{\xi}_{-1}^{\mu_{1}}(x_{1})\bar{\xi}_{1}^{\mu_{2}}+2\bar{\xi}_{-1}^{\mu_{1}}(x_{1})\bar{\xi}_{1}^{\mu _{2}}(x_{2})-4\bar{\xi}_{0}^{\mu_{1}}(x_{1})\bar{\xi}_{0}^{\mu_{2}}(x_{2})}$. 
+where $\displaystyle{\bar{g}^{\mu _{1},\mu _{2}}(x_{1},x_{2})=2\bar{\xi}_{-1}^{\mu_{1}}(x_{1})\bar{\xi}_{1}^{\mu_{2}}+2\bar{\xi}_{-1}^{\mu_{1}}(x_{1})\bar{\xi}_{1}^{\mu _{2}}(x_{2})-4\bar{\xi}_{0}^{\mu_{1}}(x_{1})\bar{\xi}_{0}^{\mu_{2}}(x_{2})}$.
 
 add them together, we get
 
-(see [[Articles/Quantization in AdS3/Proca-Chern-Simons/reconsider the correlation function|reconsider the correlation function]])
+(see [[Articles/Quantization in AdS/Proca-Chern-Simons/reconsider the correlation function|reconsider the correlation function]])
 
 here we dropped the non-covariant contact term, which appears when we take the derivatives of the step function in the two point function of the scalar normal modes.
 

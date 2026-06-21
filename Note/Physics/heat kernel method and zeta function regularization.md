@@ -216,4 +216,3 @@ $$\begin{align}
 \end{align}$$
 
 which gives the correct thermal partition function of a harmonic oscillator.
-

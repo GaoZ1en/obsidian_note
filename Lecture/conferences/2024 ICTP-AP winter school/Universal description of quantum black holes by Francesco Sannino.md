@@ -6,7 +6,8 @@ see 2403.12679
 
 effective metric of quantum black holes
 
-$$\tag{1.1}
+$$
+\tag{1.1}
 \begin{align}
 \mathrm{d}s^{2} & =-h(z)\mathrm{d}r^{2}+ \frac{\mathrm{d}z^{2}}{f(z)}+z^{2}\mathrm{d}\theta^{2}+z^{2}\sin^{2}\theta \mathrm{d}\phi^{2} \\
 f(z) & =1-\frac{2\chi}{z}e^{\Phi(d)},h(z)=1-\frac{2\chi}{z}e^{\Psi(d)} \\

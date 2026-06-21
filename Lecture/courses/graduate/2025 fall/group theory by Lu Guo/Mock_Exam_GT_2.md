@@ -1,4 +1,5 @@
 # Mock Group Theory Exam 2
+
 *Time Limit: 2 Hours*
 
 ## Part 1: Foundations & Point Groups
@@ -10,8 +11,7 @@
 a) Schur's Second Lemma states that if a matrix $M$ commutes with all matrices of an irreducible representation $D^{(\mu)}(g)$ of a group $G$, then $M$ must be a scalar multiple of the identity matrix. In other words, $M D^{(\mu)}(g) = D^{(\mu)}(g) M$ for all $g \in G$ implies that $M = \lambda I$ for some scalar $\lambda$.
 b) The Regular Representation of a finite group $G$ is a representation that acts on the vector space spanned by the elements of the group itself. Its dimension is equal to the order of the group, $|G|$. In its decomposition into irreducible representations, each irrep $D^{(\mu)}$ appears a number of times equal to its dimension $d_\mu$. Thus, the Regular Representation contains every irrep of $G$ with multiplicity equal to its dimension.
 
-
-2.  **[Point Group $C_{6v}$]**
+1.  **[Point Group $C_{6v}$]**
     Consider the point group $C_{6v}$ (symmetry of a hexagon, Order 12).
     Generators: $C_6$ (rotation $60^\circ$), $\sigma_v$ (reflection).
     a) Identify the 6 conjugacy classes.
@@ -26,11 +26,11 @@ a) The conjugacy classes of $C_{6v}$ are:
 - $3\sigma_v$ (reflections through vertical planes)
 - $3\sigma_d$ (reflections through diagonal planes)
 b) A normal subgroup of index 2 is the subgroup of rotations: $C_6 = \{E, C_6, C_6^2, C_6^3, C_6^4, C_6^5\}$.
-c) that is, $\displaystyle{C_{6}+(C_{6v}-C_{6})I}$. 
+c) that is, $\displaystyle{C_{6}+(C_{6v}-C_{6})I}$.
 
 ## Part 2: Character Tables & Functions
 
-3.  **[Table Construction]**
+1.  **[Table Construction]**
     Consider the Tetrahedral group $T$ (Order 12).
     Classes: $E$ (1), $3C_2$ (3), $4C_3$ (4), $4C_3'$ (4).
     (Note: $C_3$ and $C_3'$ are inverse classes but not conjugate in $T$. $C_3$ is rotation by $120^\circ$, $C_3'$ by $240^\circ$. Wait, in $T$, are they separate?)
@@ -48,9 +48,8 @@ b) we have
 | B2             | 1                  | 1                       | $\displaystyle{\omega ^{-1}}$ | $\displaystyle{\omega}$       |
 | E              | 3                  | -1                      | 0                             | 0                             |
 c) obvious.
- 
 
-4.  **[Tensor Product Space]**
+1.  **[Tensor Product Space]**
     Group $D_3$ acts on standard vector space $V$ spanned by $(x, y, z)$.
     We know $z \sim A_2$ (Wait, verify $D_3$ definition: $C_2$ perpendicular to $C_3$. Usually $z \to -z$ under $C_2$, so $A_2$? Or $A_1$? Let's assume standard $D_3$: $z$ is odd parity under $C_2$, so $A_2$). $(x, y) \sim E$.
     Consider the space of rank-2 tensors $T_{ij} \sim V \otimes V$ (9 dimensional).
@@ -75,7 +74,7 @@ Decomposition $T = n_1 A_1 \oplus n_2 A_2 \oplus n_3 E$:
 - $n_{E} = \frac{1}{6} (1\cdot 9 \cdot 2 + 2\cdot 0 \cdot (-1) + 3\cdot 1 \cdot 0) = \frac{18}{6} = 3$.
 Result: $V \otimes V = 2A_1 \oplus A_2 \oplus 3E$.
 
-b) 
+b)
 - **Scalar (Trace)**: Corresponds to the identity invariant, usually of symmetry type $A_1$. Specifically, $x^2+y^2$ ($A_1$) and $z^2$ ($A_1$).
 - **Antisymmetric Tensor**: Corresponds to the vector cross product basis ($L_i$). The symmetric square extracts symmetric tensors, the antisymmetric square ($\frac{1}{2}(\chi^2(g) - \chi(g^2))$) extracts the rest.
   - $\chi_{antisym}(E) = \frac{1}{2}(9-3) = 3$.
@@ -86,7 +85,7 @@ b)
 
 ## Part 3: Symmetric Groups
 
-5.  **[Young Tableaux $S_4$]**
+1.  **[Young Tableaux $S_4$]**
     Consider the partition $\lambda = [2,2]$ of $S_4$.
     a) Draw all Standard Young Tableaux (SYT).
     b) Construct the **Young Operator** for the tableau $T_1 = \begin{smallmatrix} 1 & 2 \\ 3 & 4 \end{smallmatrix}$.
@@ -94,6 +93,7 @@ b)
     d) Calculate the matrix element $D(2,3)$ connecting $|T_1\rangle$ to other states.
 *sol*.
 a) The SYT for partition [2,2] of $\displaystyle{S_{4}}$ are:
+
 $$\begin{align}
 \begin{pmatrix}
 1 & 2 \\
@@ -103,6 +103,7 @@ $$\begin{align}
 2 & 4
 \end{pmatrix}
 \end{align}$$
+
 b) the Young operator for the tableau $\displaystyle{T_{1}}$ is
 
 $$\begin{align}
@@ -110,14 +111,18 @@ $$\begin{align}
 P & =e+(12)+(34)+(12)(34) \\
 Q & =e-(13)-(24)+(13)(24)
 \end{align}$$
+
 c) we have
+
 $$\begin{align}
 D(12) & =\begin{pmatrix}
 1 & 0 \\
 0 & -1
 \end{pmatrix}
 \end{align}$$
+
 d) we have
+
 $$\begin{align}
 D(23) & =\begin{pmatrix}
 -\frac{1}{2} & \frac{\sqrt{ 3 }}{2} \\
@@ -125,31 +130,33 @@ D(23) & =\begin{pmatrix}
 \end{pmatrix}
 \end{align}$$
 
-6.  **[Subgroup Restriction]**
+1.  **[Subgroup Restriction]**
     Consider the irrep $[3,1]$ of $S_4$ (Dimension 3).
     Restrict this to the subgroup $S_3$ (acting on particles 1,2,3).
     Decompose the result into irreps of $S_3$.
     (Hint: The characters of $S_4$ restricted to $S_3$ elements must be sums of $S_3$ characters).
 *sol*. we have
+
 $$\begin{align}
 [3,1]\cong[2,1]\oplus [3]
 \end{align}$$
 
 ## Part 4: Continuous Groups
 
-7.  **[Lie Algebra]**
+1.  **[Lie Algebra]**
     The generators of a group satisfy $[J_i, J_j] = i \epsilon_{ijk} J_k$.
     Define raising and lowering operators $J_\pm = J_x \pm i J_y$.
     a) Calculate $[J_z, J_+]$ and $[J_+, J_-]$.
     b) What is the value of the Casimir operator $J^2$ on a state $|j, m\rangle$?
 *sol*. we have $\displaystyle{[J_{z},J_{+}]=J_{z}}$, $\displaystyle{[J_{+},J_{-}]=2J_{z}}$, and $\displaystyle{J^{2}\ket{j,m}=j(j+1)\ket{j,m}}$
 
-8.  **[Rotation of Eigenstates]**
+1.  **[Rotation of Eigenstates]**
     Consider a system with angular momentum $j=1$.
     We want to find the eigenstate of the operator $J_x$ corresponding to eigenvalue $+1$.
     Express this state $|j=1, m_x=+1\rangle$ as a linear combination of the standard $J_z$ eigenstates $|1, 1\rangle, |1, 0\rangle, |1, -1\rangle$.
     (Hint: You can diagonalize the $3 \times 3$ matrix of $J_x$ or apply a rotation of $\pi/2$ around $y$ to the state $|1, 1\rangle_z$).
 *sol*. we have
+
 $$\begin{align}
 J_{x} & =\begin{pmatrix}
 0 & \frac{1}{\sqrt{ 2 }} & 0 \\
@@ -157,7 +164,9 @@ J_{x} & =\begin{pmatrix}
 0 & \frac{1}{\sqrt{ 2 }} & 0
 \end{pmatrix}
 \end{align}$$
+
 and the eigenvector for eigenvalue $\displaystyle{1}$ is
+
 $$\begin{align}
 \begin{pmatrix}
 \frac{1}{2} \\

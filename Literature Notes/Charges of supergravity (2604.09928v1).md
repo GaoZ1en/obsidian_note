@@ -77,6 +77,7 @@ $$\begin{align}
 \mathscr{\bar{F}} & =\kappa \mathscr{D}^{A}\bar{\psi} \\
  & =\kappa\left(\mathscr{D}^{\omega}\bar{\psi}-\frac{1}{2\ell}e^{a}\wedge \bar{\psi}\gamma _{a}\right)
 \end{align}$$
+
 (what does the superscript $\displaystyle{4}$ in $\displaystyle{F^{(s)a4}}$ mean?)
 it is convenient to introcude the complete covariant differential that acts on superalgebra-valued $\displaystyle{n}$-forms
 
@@ -149,7 +150,7 @@ $$\begin{align}
 introduce the superalgebra-valued $\displaystyle{2}$-form $\displaystyle{\mathbb{B}=(B^{(s)IJ},\mathscr{B})}$ and its dual $\displaystyle{\star \mathbb{B}=(\star B^{(s)ab},\star B^{(s)a},\star \mathscr{B})=(\epsilon ^{abcd}B_{cd}^{(s)},0,\gamma ^{5}\mathscr{B})}$, the action can be compactly written as
 
 $$\begin{align}
-16\pi S(\mathbb{A,B}) & =\int\braket{ \mathbb{B\wedge F} } -\frac{\beta}{2}\braket{ \mathbb{B\wedge B} }-\frac{\alpha}{4}\braket{ \mathbb{B\wedge \star \mathbb{B}} } 
+16\pi S(\mathbb{A,B}) & =\int\braket{ \mathbb{B\wedge F} } -\frac{\beta}{2}\braket{ \mathbb{B\wedge B} }-\frac{\alpha}{4}\braket{ \mathbb{B\wedge \star \mathbb{B}} }
 \end{align}$$
 
 with the inner product defined as
@@ -381,7 +382,7 @@ $$\begin{align}
 \mathscr{H}_{\partial \Sigma}[\xi] & =\frac{1}{16\pi}\int _{\partial \Sigma}B_{IJ}^{(s)}\iota _{\xi}A^{IJ}+\frac{\kappa}{4\pi}\int _{\partial \Sigma}\mathscr{\bar{B}}\iota _{\xi}\psi
 \end{align}$$
 
-in the case of $\displaystyle{\xi}$ being tangential to the $\displaystyle{\Sigma}$ the bulk contribution to the charge vanishes. 
+in the case of $\displaystyle{\xi}$ being tangential to the $\displaystyle{\Sigma}$ the bulk contribution to the charge vanishes.
 
 ## algebra of charges
 
@@ -393,7 +394,7 @@ $$\begin{align}
 
 ### gauge algebra
 
-we will consider the algebra of charges associated with local gauge symmetries. 
+we will consider the algebra of charges associated with local gauge symmetries.
 
 $$\begin{align}
 \mathscr{H}_{L}[\lambda] & =-\frac{1}{16\pi}\int _{\partial \Sigma}B_{ab}^{(s)}\lambda ^{ab} \\
@@ -528,11 +529,11 @@ the most direct extension is to move from $\mathcal{N}=1$ to extended supersymme
 from the point of view of actual calculation, the first tasks in this direction are:
 
 1. write down the $\mathrm{OSp}(\mathcal{N}|4)$ superalgebra in the same conventions as the present note, including the bosonic $\mathfrak{so}(2,3)\oplus \mathfrak{so}(\mathcal{N})$ sector and the anticommutator of supercharges.
-2. construct the corresponding superconnection and supercurvature, keeping the $R$-symmetry gauge field explicit.
-3. identify the appropriate constrained BF action and solve the analog of the $\mathbb{B}$-field equation.
-4. recompute the presymplectic potential and symplectic form in the covariant phase space framework.
-5. derive the Lorentz, supersymmetry, $R$-symmetry, translation, and diffeomorphism charges and check their on-shell reduction.
-6. compute the full boundary charge algebra and compare it with the expected $\mathrm{OSp}(\mathcal{N}|4)$ structure.
+1. construct the corresponding superconnection and supercurvature, keeping the $R$-symmetry gauge field explicit.
+1. identify the appropriate constrained BF action and solve the analog of the $\mathbb{B}$-field equation.
+1. recompute the presymplectic potential and symplectic form in the covariant phase space framework.
+1. derive the Lorentz, supersymmetry, $R$-symmetry, translation, and diffeomorphism charges and check their on-shell reduction.
+1. compute the full boundary charge algebra and compare it with the expected $\mathrm{OSp}(\mathcal{N}|4)$ structure.
 
 besides higher supersymmetry, there are several other worthwhile extensions.
 

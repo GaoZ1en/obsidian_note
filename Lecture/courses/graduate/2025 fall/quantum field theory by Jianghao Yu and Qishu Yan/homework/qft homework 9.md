@@ -162,7 +162,6 @@ i\mathcal{M}_{2} & = \frac{ie^{2}}{(p_{1}+p_{2})^{2}} [ \bar{u}^{s_{3}}(\vec{p}_
 i\mathcal{M} & = i\mathcal{M}_{1} - i\mathcal{M}_{2}
 \end{align}$$
 
-
 ## $\displaystyle{e^{+}+e^{-} \to \gamma +\gamma}$
 
 there are two tree level Feynman diagrams
@@ -199,6 +198,7 @@ $$\begin{align}
 \frac{1}{4}\sum _{s_{1}s_{2}\lambda \lambda'} & = \frac{e^{4}}{4}\sum _{s_{1}s_{2}}\mathrm{Tr}(\Gamma ^{\mu \nu}u^{s_{1}}(\vec{p}_{1})\bar{u}^{s_{1}}(\vec{p}_{1})\bar{\Gamma}_{\mu \nu}v^{s_{2}}(\vec{p}_{2})\bar{v}^{s_{2}}(\vec{p}_{2})) \\
  & =\frac{e^{4}}{4}\mathrm{Tr}(\Gamma ^{\mu \nu}(-ip\!\!\! /_{1}+m)\bar{\Gamma} _{\mu \nu}(-ip\!\!\! /_{2}-m))
 \end{align}$$
+
 ## $\displaystyle{e^{+}+e^{-}\to \mu ^{+}+\mu ^{-}}$
 
 there is only one tree level Feynman diagram
@@ -225,7 +225,6 @@ $$\begin{align}
  & =\frac{8e^{4}}{s^{2}}((p_{1}\cdot p_{3})^{2}+(p_{1}\cdot p_{4})^{2}+m_{\mu}^{2}(p_{1}\cdot p_{2})+m_{e}^{2}(p_{3}\cdot p_{4})+2m_{\mu}^{2}m_{e}^{2}) \\
  & =\frac{2e^{4}}{s^{2}}\left( t^{2}+u^{2}+2(t+u-s)(m_{\mu}^{2}+m_{e}^{2})+2(m_{\mu}^{2}+m_{e}^{2})^{2}+16m_{\mu}^{2}m_{e}^{2} \right)
 \end{align}$$
-
 
 ## appendix: formalism
 
@@ -310,18 +309,18 @@ thus we can summarize the calculation as following Feynman rules:
 
 1. external lines:
 	1. incoming fermion: $\displaystyle{u^{s}(\vec{p})}$
-	2. outgoing fermion: $\displaystyle{\bar{u}^{s}(\vec{p})}$
-	3. incoming antifermion: $\displaystyle{\bar{v}^{s}(\vec{p})}$
-	4. outgoing antifermion: $\displaystyle{v^{s}(\vec{p})}$
-	5. incoming photon: $\displaystyle{\varepsilon ^{\lambda}_{\mu}(\vec{p})}$
-	6. outgoing photon: $\displaystyle{\varepsilon ^{\lambda*}_{\mu}(\vec{p})}$
-2. propagators:
+	1. outgoing fermion: $\displaystyle{\bar{u}^{s}(\vec{p})}$
+	1. incoming antifermion: $\displaystyle{\bar{v}^{s}(\vec{p})}$
+	1. outgoing antifermion: $\displaystyle{v^{s}(\vec{p})}$
+	1. incoming photon: $\displaystyle{\varepsilon ^{\lambda}_{\mu}(\vec{p})}$
+	1. outgoing photon: $\displaystyle{\varepsilon ^{\lambda*}_{\mu}(\vec{p})}$
+1. propagators:
 	1. fermion: $\displaystyle{\frac{-ip\!\!\!/+m}{p^{2}+m^{2}-i\epsilon}}$
-	2. photon: $\displaystyle{\frac{-i\eta _{\mu \nu}}{k^{2}-i\epsilon}}$
-	3. with a integral over internal momentum $\displaystyle{\int \frac{\mathrm{d}^{4}p}{(2\pi)^{4}}}$
-3. vertex
+	1. photon: $\displaystyle{\frac{-i\eta _{\mu \nu}}{k^{2}-i\epsilon}}$
+	1. with a integral over internal momentum $\displaystyle{\int \frac{\mathrm{d}^{4}p}{(2\pi)^{4}}}$
+1. vertex
 	1. $\displaystyle{-ie(2\pi)^{4}\delta ^{(4)}\left( \sum p \right)\gamma ^{\mu}}$
-4. loops
+1. loops
 	1. include a factor of $\displaystyle{-1}$ for fermion loops
 
 thus for each Feynman diagram, we can write down the corresponding matrix element $\displaystyle{i\mathcal{M}}$ (subtracting the overall $\displaystyle{(2\pi)^{4}\delta ^{(4)}\left( \sum p \right)}$) by following the above rules.
@@ -383,7 +382,7 @@ $$\begin{align}
 
 if we cannot detect the spin or polarization of the initial and final particles, we need to average and sum over these degrees of freedom. and if the initial particles are polarized, we should fix their spin states without averaging.
 
-in the trace formalism, this is handled by introducing spin projection operators. the completeness relation 
+in the trace formalism, this is handled by introducing spin projection operators. the completeness relation
 
 $$\begin{align}
 \sum _{s}u^{s}(\vec{p})\bar{u}^{s}(\vec{p}) & =-ip\!\!\!/+m

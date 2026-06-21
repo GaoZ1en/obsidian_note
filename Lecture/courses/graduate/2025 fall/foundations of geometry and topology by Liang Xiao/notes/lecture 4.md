@@ -1,3 +1,3 @@
-Lobachevsky geometry. 
+Lobachevsky geometry.
 
 point set topology.

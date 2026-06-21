@@ -15,7 +15,7 @@ and we have four symmetries of the representative of MPS, which uniquely determi
 
 the common features are
 1.  $\displaystyle{U_{j}(g)U_{j}(h)=U_{j}(h)U_{j}(g)}$ on the physical legs
-2. $\displaystyle{W_{j-\frac{1}{2}}(g)W_{j-\frac{1}{2}}(h)=-W_{j-\frac{1}{2}}(h)W_{j-\frac{1}{2}(g)}}$ on the imaginary legs. projective representation
+1. $\displaystyle{W_{j-\frac{1}{2}}(g)W_{j-\frac{1}{2}}(h)=-W_{j-\frac{1}{2}}(h)W_{j-\frac{1}{2}(g)}}$ on the imaginary legs. projective representation
 	1. this relation will give all the universal properties of SPT
 3.string order parameter
 
@@ -66,7 +66,7 @@ we call it frustrated-free Hamiltonian. the ground state can be expressed via MP
 the representative of the MPS can be written as
 
 $$\begin{align}
-\sqrt{ 2 }\ket{1}\ket{\downarrow} \bra{\uparrow} -\ket{0} \ket{\uparrow} \bra{\uparrow} +\ket{0} \ket{\downarrow} \bra{\downarrow} -\sqrt{ 2 }\ket{-1} \ket{\uparrow} \bra{\downarrow}  
+\sqrt{ 2 }\ket{1}\ket{\downarrow} \bra{\uparrow} -\ket{0} \ket{\uparrow} \bra{\uparrow} +\ket{0} \ket{\downarrow} \bra{\downarrow} -\sqrt{ 2 }\ket{-1} \ket{\uparrow} \bra{\downarrow}
 \end{align}$$
 
 it can be shown that
@@ -109,7 +109,7 @@ contract physical legs on the RHS, we get a reduced density matrix of the LHS
 $$\begin{align}
 \rho _{L} & =\mathrm{Tr}_{R}(\ket{\psi} \bra{\psi} ) \\
  & =\sum _{i,i',j}\psi _{ij}\psi ^{*}_{i'j}\ket{i} \bra{i'} \\
- & =\sum e^{-\lambda _{\alpha}}\ket{\lambda _{\alpha}} \bra{\lambda _{\alpha}} 
+ & =\sum e^{-\lambda _{\alpha}}\ket{\lambda _{\alpha}} \bra{\lambda _{\alpha}}
 \end{align}$$
 
 and $\displaystyle{\left\{\lambda _{\alpha}\right\}}$ is called the entanglement spectrum. for AKLT, $\displaystyle{\lambda}$ form a spin 1/2 representation

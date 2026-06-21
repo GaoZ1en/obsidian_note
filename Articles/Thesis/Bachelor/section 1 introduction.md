@@ -1,4 +1,3 @@
-
 协变相空间方法是理论物理特别是引力研究中的一种重要的数学框架，旨在以协变（即不依赖于时空分解）的方式表述物理系统的相空间结构以及动力学。它结合了经典力学、场论和广义相对论的思想，尤其适用于处理具有规范对称性、引力系统及量子引力理论的相空间构造。
 
 协变相空间方法的起源可追溯至经典力学中的Hamilton理论\cite[mathematical methods of classical mechanics]。在Hamilton理论中，系统的相空间--即底流形$\displaystyle{M}$的余切丛$\displaystyle{T^{*}M}$具有自然的辛结构，并通过Poisson括号描述系统的动力学。然而，传统的正则方法需要将时空分解为“时空+空间”（如ADM分解），这破坏了广义相对论所要求的协变性。
@@ -12,13 +11,13 @@
 在渐进对称性分析中，协变相空间理论的基本步骤可以被粗略地总结为
 
 1. 定义预相空间$\displaystyle{\tilde{\mathcal{P}}}$为满足渐进边界条件的运动方程的解的集合（footnote）；
-2. 根据体内拉氏量，定义预辛形式$\displaystyle{\tilde{\Omega}}$，使得$\displaystyle{\tilde{\Omega}}$成为$\displaystyle{\tilde{\mathcal{P}}}$的预辛结构；
-3. 将渐进对称性看作预相空间$\displaystyle{\tilde{\mathcal{P}}}$上的矢量场，并与与预辛形式$\displaystyle{\tilde{\Omega}}$定义对应的守恒荷。
+1. 根据体内拉氏量，定义预辛形式$\displaystyle{\tilde{\Omega}}$，使得$\displaystyle{\tilde{\Omega}}$成为$\displaystyle{\tilde{\mathcal{P}}}$的预辛结构；
+1. 将渐进对称性看作预相空间$\displaystyle{\tilde{\mathcal{P}}}$上的矢量场，并与与预辛形式$\displaystyle{\tilde{\Omega}}$定义对应的守恒荷。
 
 这一方法在渐进对称性分析中被广泛使用，但是仍然有一些令人不满意之处。
 
 1. 边界拉氏量在引力研究中发挥了重要的作用，但是在这一方法内完全没有涉及；
-2. 渐进对称性并不是Noether定理意义上的对称性，而只作用在运动方程的解上；
-3. 渐进对称性的守恒荷的计算同Noether荷的计算有很大差异。
+1. 渐进对称性并不是Noether定理意义上的对称性，而只作用在运动方程的解上；
+1. 渐进对称性的守恒荷的计算同Noether荷的计算有很大差异。
 
 考虑到以上问题，我们提出了一种新的方法，将协变相空间方法与Noether定理相结合，以处理渐进对称性问题。我们将在第二章中介绍这一方法，并在第三章中以$\displaystyle{d}$维谐振子，经典Liouville理论、纯 $\displaystyle{\text{AdS}_{3}}$ 引力以及TMG[cite]为例，使用这一框架研究它们的（渐进）对称性与对应的Noether荷。我们相信这一框架可以在更广泛的场景中得到应用，为理论物理的研究提供新的视角。

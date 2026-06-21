@@ -31,12 +31,16 @@ T_{\nu,0} & =\left(\frac{4}{11}\right)^{1/3}T_{\gamma,0}=1.95\text{K} \\
 The derivation of the neutrino temperature relies on the **conservation of comoving entropy before and after electron-positron annihilation**:
 
 1. **Neutrino decoupling**: At temperature $T \sim 1\text{ MeV}$, neutrinos decouple. Thereafter, their temperature scales with the cosmic expansion as $T_\nu \propto a^{-1}$.
-2. **Electron-positron annihilation**: Subsequently, as the temperature drops to the order of the electron mass $T \sim m_e = 0.511\text{ MeV}$, electron-positron pairs annihilate ($e^+ + e^- \to \gamma + \gamma$). The entropy released entirely heats the photon bath, without heating the already decoupled neutrinos.
-3. **Change in effective degrees of freedom for entropy**: Before and after this process, the comoving entropy of the system $S \propto g_{*S} (aT)^{3} = \text{const}$ is conserved.
+1. **Electron-positron annihilation**: Subsequently, as the temperature drops to the order of the electron mass $T \sim m_e = 0.511\text{ MeV}$, electron-positron pairs annihilate ($e^+ + e^- \to \gamma + \gamma$). The entropy released entirely heats the photon bath, without heating the already decoupled neutrinos.
+1. **Change in effective degrees of freedom for entropy**: Before and after this process, the comoving entropy of the system $S \propto g_{*S} (aT)^{3} = \text{const}$ is conserved.
    - Before annihilation (photons + electron-positron pairs): $g_{*S, \text{before}} = g_\gamma + \frac{7}{8}(g_{e^-} + g_{e^+}) = 2 + \frac{7}{8}(2 + 2) = \frac{11}{2}$. Since neutrinos just decoupled, let the photon temperature be $T_{\text{before}} = T_\nu$.
    - After annihilation (only photons remain): $g_{*S, \text{after}} = g_\gamma = 2$. At this point, the photons are heated, yielding a temperature $T_\gamma$.
-4. **Derivation result**: Substituting into the entropy conservation equation gives $\frac{11}{2} (aT_\nu)^3 = 2 (aT_\gamma)^3$, which implies:
-   $$ T_\nu = \left(\frac{4}{11}\right)^{1/3} T_\gamma $$
+1. **Derivation result**: Substituting into the entropy conservation equation gives $\frac{11}{2} (aT_\nu)^3 = 2 (aT_\gamma)^3$, which implies:
+
+$$\begin{align}
+T_\nu = \left(\frac{4}{11}\right)^{1/3} T_\gamma
+\end{align}$$
+
 ---
 
 cosmological bound for neutrino mass
@@ -65,7 +69,7 @@ H^{2} & =\frac{8\pi G}{3}\rho _{e} \\
 \rho _{e} & \propto a^{-4} \\
 T  & \propto a^{-1}\propto 1+z \\
 \implies t & =\frac{1}{2H}=\frac{1}{2}\sqrt{\frac{3}{8\pi G\rho _{e}}} \\
- & =\frac{1}{2}\sqrt{\frac{90}{8\pi ^{3}Gg_{e}}}T^{-2} 
+ & =\frac{1}{2}\sqrt{\frac{90}{8\pi ^{3}Gg_{e}}}T^{-2}
 \end{align}$$
 
 then by measuring temperature, we can derive the age of the universe at that time.
@@ -170,7 +174,7 @@ at that time, the reaction rate for a free electron capturing a proton to form h
 
 $$\begin{align}
 \Gamma & =n_{e}\braket{ \sigma v } \\
- & =\left(\frac{45\sigma}{4\pi ^{2}}\dots?\right) 
+ & =\left(\frac{45\sigma}{4\pi ^{2}}\dots?\right)
 \end{align}$$
 
 the expansion rate at that time is given by:

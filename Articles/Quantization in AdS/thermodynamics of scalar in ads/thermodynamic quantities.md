@@ -1,4 +1,4 @@
-in [[Articles/Quantization in AdS3/thermodynamics of scalar in ads/scalar in AdS and flat spacetime|scalar in AdS and flat spacetime]] we have already got the partition function of a free scalar in $\displaystyle{\mathrm{AdS}_{d+1}}$
+in [[Articles/Quantization in AdS/thermodynamics of scalar in ads/scalar in AdS and flat spacetime|scalar in AdS and flat spacetime]] we have already got the partition function of a free scalar in $\displaystyle{\mathrm{AdS}_{d+1}}$
 
 $$\begin{align}
 \ln Z & =\sum ^{\infty}_{n=0}\sum ^{\infty}_{\ell=0} \frac{(2\ell+d-2)(\ell+d-3)!}{\ell!(d-2)!} \ln(1-e^{-\beta(\Delta+\ell+2n)}) \\
@@ -28,7 +28,7 @@ F & =-\frac{1}{\beta}\sum ^{\infty}_{k=1} \frac{1}{k}\frac{e^{-\beta k\Delta}}{(
 S & =\beta ^{2}\frac{\partial F}{\partial \beta} \\
  & \approx\frac{d+1}{\beta ^{d}}\zeta (d+1)+\frac{d}{2}(\Delta _{-}-\Delta _{+}) \frac{1}{\beta ^{d-1}}\zeta(d)
 \end{align}$$
- 
+
 in general we expand
 
 $$\begin{align}
@@ -61,4 +61,3 @@ $$\begin{align}
 \ln Z[\beta,\mu _{i}] & =\sum ^{\infty}_{n=0}\sum ^{\infty}_{\ell=0}\sum _{\mathbf{m}}\ln(1-e^{-\beta (\Delta +\ell +2n)+i\mu _{i}m_{i}}) \\
  & =\sum ^{\infty}_{k=1} \frac{1}{k}e^{-\beta k\Delta}\sum ^{\infty}_{n=0} e^{-2\beta kn}\sum ^{\infty}_{\ell=0} e^{-\beta k\ell}\sum _{\mathbf{m}} e^{i\mu _{i}km_{i}}
 \end{align}$$
-

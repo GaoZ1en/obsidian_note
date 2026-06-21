@@ -2,17 +2,17 @@ from today we will begin our lectures on quantum information.
 
 overview of this lecture.
 quantum operations
-* unitary gates
-	* singlet qubit gates
-	* controlled gates
-	* universal gates
-* measurements
-	* projective measurements
-	* POVMs
-* noise and channels
-	* system-environment interactions
-	* operator-sums
-	* examples
+- unitary gates
+	- singlet qubit gates
+	- controlled gates
+	- universal gates
+- measurements
+	- projective measurements
+	- POVMs
+- noise and channels
+	- system-environment interactions
+	- operator-sums
+	- examples
 
 reference: Nielsen-Chuang chapter 4, 8
 
@@ -24,10 +24,10 @@ classical operations/gates. NOT, AND, OR, NAND, NOR, XOR, XNOR.
 
 to build a classical/quantum computer
 1. some (qu)bits
-2. initialization
-3. classical operations/unitary operations(gates)
-4. measurement
-5. long decoherence time
+1. initialization
+1. classical operations/unitary operations(gates)
+1. measurement
+1. long decoherence time
 
 ---
 
@@ -35,19 +35,19 @@ basic quantum gates
 
 consider a single qubit $\displaystyle{\ket{\psi}=\cos \frac{\theta}{2}\ket{0}+e^{i\phi}\sin \frac{\theta}{2}\ket{1}}$. we have
 1. $\displaystyle{X=\begin{pmatrix}0&1\\1&0\end{pmatrix},Y=\begin{pmatrix}0&-i\\i&0\end{pmatrix},Z=\begin{pmatrix}1&0\\0&-1\end{pmatrix}}$. they are also unitaru and Hermitian, which means we can use them as quantum gates and measurement operators.
-2. a general rotation, Euler angles or axis-angle representation. $\displaystyle{R_{\vec{n}}(\theta)=\exp\left(-i\theta\frac{\vec{\sigma}\cdot \vec{n}}{2}\right)=\cos \frac{\theta}{2} \hat{I}-i\sin \frac{\theta}{2}(\vec{n}\cdot \vec{\sigma})}$
-3. Hadamard gate: $\displaystyle{H=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix}=\frac{X+Z}{\sqrt{ 2 }}=R_{\frac{\hat{x}+\hat{z}}{\sqrt{ 2 }}}(\pi)}$
+1. a general rotation, Euler angles or axis-angle representation. $\displaystyle{R_{\vec{n}}(\theta)=\exp\left(-i\theta\frac{\vec{\sigma}\cdot \vec{n}}{2}\right)=\cos \frac{\theta}{2} \hat{I}-i\sin \frac{\theta}{2}(\vec{n}\cdot \vec{\sigma})}$
+1. Hadamard gate: $\displaystyle{H=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix}=\frac{X+Z}{\sqrt{ 2 }}=R_{\frac{\hat{x}+\hat{z}}{\sqrt{ 2 }}}(\pi)}$
 	1. $\displaystyle{H\ket{0}=\frac{1}{\sqrt{ 2 }}(\ket{0}+\ket{1})=\ket{\to}, H\ket{1}=\frac{1}{\sqrt{ 2 }}(\ket{0}-\ket{1})=\ket{\leftarrow}}$. some kind of Fourier transform. Shor's algorithm.
-4. phase gate: $\displaystyle{S=\begin{pmatrix}1 & 0 \\ 0 & i\end{pmatrix}=R_{\hat{z}}\left( \frac{\pi}{2} \right)}$
-5. $\displaystyle{\frac{\pi}{8}}$ gate: $\displaystyle{T=\begin{pmatrix}1  & 0 \\ 0 & e^{i\pi/4}\end{pmatrix}=R_{\hat{z}}\left( \frac{\pi}{8} \right)}$.
+1. phase gate: $\displaystyle{S=\begin{pmatrix}1 & 0 \\ 0 & i\end{pmatrix}=R_{\hat{z}}\left( \frac{\pi}{2} \right)}$
+1. $\displaystyle{\frac{\pi}{8}}$ gate: $\displaystyle{T=\begin{pmatrix}1  & 0 \\ 0 & e^{i\pi/4}\end{pmatrix}=R_{\hat{z}}\left( \frac{\pi}{8} \right)}$.
 
 one theorem states that by combining $\displaystyle{H,S,T}$ gates, we can generate any single qubit unitary operation in an arbitrary precision. so we call them universal single qubit gates.
 
 we need multi-qubit gates to build a quantum computer. two-qubit gates:
 1. CNOT gate: $\displaystyle{U_{CNOT}=\ket{0}\bra{0}\otimes I+\ket{1}\bra{1}\otimes X_{2}}$. it flips the target qubit if the control qubit is $\displaystyle{\ket{1}}$.
 	1. some generalization of XOR in classical logic.
-	2. be used to create entanglement. for example, $\displaystyle{U_{CNOT}\ket{+}\ket{0}=\frac{1}{\sqrt{ 2 }}(\ket{00}+\ket{11})}$.
-	3. CU gate: $\displaystyle{U_{CU}=\ket{0}\bra{0}\otimes I+\ket{1}\bra{1}\otimes U}$. it applies $U$ on the target qubit if the control qubit is $\displaystyle{\ket{1}}$.
+	1. be used to create entanglement. for example, $\displaystyle{U_{CNOT}\ket{+}\ket{0}=\frac{1}{\sqrt{ 2 }}(\ket{00}+\ket{11})}$.
+	1. CU gate: $\displaystyle{U_{CU}=\ket{0}\bra{0}\otimes I+\ket{1}\bra{1}\otimes U}$. it applies $U$ on the target qubit if the control qubit is $\displaystyle{\ket{1}}$.
 
 for a general rotation $\displaystyle{U=e^{i\alpha}R_{z}(\beta)R_{y}(\gamma)R_{z}(\delta)=e^{i\alpha}AXBXC}$, where
 
@@ -65,7 +65,7 @@ $$\begin{align}
 U_{CU} & =(I\otimes C)\cdot U_{CNOT}\cdot (I\otimes B)\cdot U_{CNOT}\cdot (I\otimes A)\cdot(e^{-i\alpha}\otimes I)
 \end{align}$$
 
-2. SWAP gate: $\displaystyle{U_{SWAP}\ket{\psi}\ket{\phi}=\ket{\phi}\ket{\psi}}$. it can be decomposed into three CNOT gates as $\displaystyle{U_{SWAP}=U_{CNOT}^{12}U_{CNOT}^{21}U_{CNOT}^{12}}$.
+1. SWAP gate: $\displaystyle{U_{SWAP}\ket{\psi}\ket{\phi}=\ket{\phi}\ket{\psi}}$. it can be decomposed into three CNOT gates as $\displaystyle{U_{SWAP}=U_{CNOT}^{12}U_{CNOT}^{21}U_{CNOT}^{12}}$.
 
 measurements
 
@@ -98,7 +98,7 @@ $$\begin{align}
  & = \frac{1}{2}(I+M)\ket{\psi} \otimes \ket{0} +\frac{1}{2}(I-M)\ket{\psi} \otimes \ket{1}
 \end{align}$$
 
-this can be generalized to any measurement with product of Pauli matrices. 
+this can be generalized to any measurement with product of Pauli matrices.
 
 noise and correction. density matrix $\displaystyle{\rho=\sum _{i}p_{i}\ket{\psi _{i}}\bra{\psi _{i}}}$. $\displaystyle{\rho}$ is Hermitian, $\displaystyle{\mathrm{Tr}\rho=1}$, and positive definite. under unitary evolution, $\displaystyle{\rho \to U\rho U^{\dagger}}$. and under measurement, $\displaystyle{\rho \to \frac{P_{n}\rho P_{n}}{\mathrm{Tr}(P_{n}\rho P_{n})}}$ with probability $\displaystyle{\mathrm{Tr}(P_{n}\rho P_{n})}$, where $P_{n} =\sum _{i}\ket{n_{i}}\bra{n_{i}}$ is the projection operator corresponding to outcome $\displaystyle{n}$.
 
@@ -119,4 +119,3 @@ $$\begin{align}
 \end{align}$$
 
 here we do a partial trace over the environment to get the reduced density matrix of the system $\displaystyle{\rho _{S}}$.
-

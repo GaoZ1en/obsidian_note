@@ -36,7 +36,7 @@ H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\
  & \approx\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\nabla ^{(0)}_{\nu}Q_{\xi}^{\nu \mu}
 \end{align}$$
 
-however it does not give the expected linear $\displaystyle{h}$ term appeared in $\displaystyle{Q_{\xi}}$. 
+however it does not give the expected linear $\displaystyle{h}$ term appeared in $\displaystyle{Q_{\xi}}$.
 
 ---
 
@@ -139,4 +139,4 @@ k_{\xi}^{(0)\mu \nu}[\delta h] & =\frac{1}{16\pi G}\left[-\xi ^{\rho}\left( \nab
 
 and $\displaystyle{k_{\xi}^{(1)}}$ does not contribute to the algebra.
 
-see [[Articles/Quantization in AdS3/linearized gravity/reconsider the Noether charge|reconsider the Noether charge]] for more detailed discussion.
+see [[Articles/Quantization in AdS/linearized gravity/reconsider the Noether charge|reconsider the Noether charge]] for more detailed discussion.

@@ -113,7 +113,7 @@ Therefore the correlation function can be computed by evaluating the path integr
 
 $$\begin{align}
 G_{\tau,\tau}(x_{1},x_{2}) & =\frac{\displaystyle{\int \mathcal{D}A_{a}\mathcal{D}\pi ^{a}e^{-S_{E}[A_{a},A_{\tau}=\mathcal{A}_{\tau}^{\mathrm{cl}};\pi ^{a}]}\mathcal{A}_{\tau}^{\mathrm{cl}}(x_{1})\mathcal{A}_{\tau}^{\mathrm{cl}}(x_{2})}}{\displaystyle{\int \mathcal{D}A_{a}\mathcal{D}\pi ^{a}e^{-S_{E}[A_{a},A_{\tau}=\mathcal{A}_{\tau}^{\mathrm{cl}};\pi ^{a}]}}} \\
- & = \braket{ \mathcal{A}_{\tau}^{\mathrm{cl}}(x_{1})\mathcal{A}_{\tau}^{\mathrm{cl}}(x_{2}) } 
+ & = \braket{ \mathcal{A}_{\tau}^{\mathrm{cl}}(x_{1})\mathcal{A}_{\tau}^{\mathrm{cl}}(x_{2}) }
 \end{align}$$
 
 This is precisely the canonical correlator, because the second-class constraint has already removed $A_{\tau}$ as an independent integration variable.

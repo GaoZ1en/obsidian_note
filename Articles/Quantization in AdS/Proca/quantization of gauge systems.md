@@ -116,7 +116,7 @@ $$\begin{align}
 \Lambda^{m}=U^{M}+v^{a}V_{a}^{m}
 \end{align}$$
 
-where $\displaystyle{U^{m}}$ is a particular solution of the inhomogeneous equation, and $\displaystyle{V_{a}^{m}}$ is a basis of the general solution of the corresponding homogeneous equation, $\displaystyle{v^{a}}$ is totallu arbitrary. 
+where $\displaystyle{U^{m}}$ is a particular solution of the inhomogeneous equation, and $\displaystyle{V_{a}^{m}}$ is a basis of the general solution of the corresponding homogeneous equation, $\displaystyle{v^{a}}$ is totallu arbitrary.
 
 $$\begin{align}
 \dot{\mathcal{O}} & \approx[\mathcal{O},H+u^{m}\phi _{m}] \\
@@ -174,9 +174,9 @@ $$\begin{align}
 \delta F & =\varepsilon ^{a}\eta ^{a'}[F,[\phi _{a},\phi _{a'}]]+\mathcal{O}(\varepsilon ^{2})+\mathcal{O}(\eta ^{2})
 \end{align}$$
 
-2. the Poisson bracket $\displaystyle{[\phi _{a},H']}$ of any first-class primary constraint with the first-class Hamiltonian generates a gauge transformation
+1. the Poisson bracket $\displaystyle{[\phi _{a},H']}$ of any first-class primary constraint with the first-class Hamiltonian generates a gauge transformation
 
-the proof is similar to above. the two results indicate that we may expect some secondary first-class constraints to generate gauge transformations as well. 
+the proof is similar to above. the two results indicate that we may expect some secondary first-class constraints to generate gauge transformations as well.
 
 Dirac conjecture states that all first-class constraints generate gauge transformations. we adopt this conjecture in the following discussions, however, it is not always true (for example, Henneaux-Teitelboim-Zanelli model, $\displaystyle{L=\frac{1}{2}e^{y}\dot{x}^{2}}$)...
 
@@ -239,7 +239,7 @@ C_{b}(q,p)\approx 0
 of gauge conditions must satisfy
 
 1. the chosen gauge must be accessble
-2. the conditions must fix the gauge completely
+1. the conditions must fix the gauge completely
 
 these two conditions imply that the number of independent gauge conditions must be equal to the number of independent first-class constraints. and the second condition requires that the matrix $\displaystyle{[C_{b},\gamma _{a}]}$ should be invertible. thus we have
 
@@ -266,13 +266,13 @@ where $\displaystyle{N}$ is the number of canonical pairs $\displaystyle{(q^{n},
 
 the vector space $\displaystyle{C^{\infty}(P)}$ is endowed with two algebraic structrues:
 1. pointwise product, for which $\displaystyle{C^{\infty}(P)}$ is a associative commutative algebra
-2. Dirac bracket, for which $\displaystyle{C^{\infty}(P)}$ is a Lie algebra
+1. Dirac bracket, for which $\displaystyle{C^{\infty}(P)}$ is a Lie algebra
 
 the space $\displaystyle{C^{\infty}(\Sigma)}$ can be algebraically characterized as follows:
 1. functions that vanish on $\displaystyle{\Sigma}$ form an ideal $\displaystyle{\mathcal{N}}$ of the algebra $\displaystyle{C^{\infty}(P)}$ with respect to pointwise product. such elements in $\displaystyle{\mathcal{N}}$ are of the form $\displaystyle{\lambda ^{a}\gamma _{a}+\lambda ^{\alpha}\chi _{\alpha}}$
-2. the quotient algebra $\displaystyle{C^{\infty}(P)/\mathcal{N}=C^{\infty}(\Sigma)}$. 
+1. the quotient algebra $\displaystyle{C^{\infty}(P)/\mathcal{N}=C^{\infty}(\Sigma)}$.
 
-a classical observable $\displaystyle{F}$ is a function on the constraint surface that is gauge invariant. 
+a classical observable $\displaystyle{F}$ is a function on the constraint surface that is gauge invariant.
 
 $$\begin{align}
 [F,\gamma _{a}]_{\text{D}} & \approx 0
@@ -344,7 +344,7 @@ and the null directions are spanned by the vectors $\displaystyle{X^{\lambda}_{a
 we only need to show that there are $\displaystyle{M}$ independent null directions. notice that $\displaystyle{Y^{\lambda}}$ is tangent to $\displaystyle{\gamma _{a}=0}$ iff $\displaystyle{Y^{\lambda}\partial _{\lambda}\gamma _{a}\approx 0}$, this implies
 
 1. $\displaystyle{X^{\lambda}_{a}}$ are tangent to $\displaystyle{\gamma _{a}=0}$, since $\displaystyle{X^{\lambda}_{b}\partial _{\lambda}\gamma _{b}=[\gamma _{b},\gamma _{a}]\approx 0}$
-2. $\displaystyle{\sigma _{\lambda \mu}X^{\lambda}_{a}Y^{\mu}\approx 0}$ whenever $\displaystyle{Y^{\mu}}$ is tangent to the constraint surface, since $\displaystyle{\sigma _{\lambda \mu}X^{\lambda}_{a}Y^{\mu}= -Y^{\mu}\partial _{\mu}\gamma _{a}}$$\displaystyle{\implies}$ $\displaystyle{X^{\lambda}_{a}}$ are null directions of $\displaystyle{\sigma _{ij}}$.
+1. $\displaystyle{\sigma _{\lambda \mu}X^{\lambda}_{a}Y^{\mu}\approx 0}$ whenever $\displaystyle{Y^{\mu}}$ is tangent to the constraint surface, since $\displaystyle{\sigma _{\lambda \mu}X^{\lambda}_{a}Y^{\mu}= -Y^{\mu}\partial _{\mu}\gamma _{a}}$$\displaystyle{\implies}$ $\displaystyle{X^{\lambda}_{a}}$ are null directions of $\displaystyle{\sigma _{ij}}$.
 
 on the constraint surface, the vectors $\displaystyle{X^{\lambda}_{a}}$ generate $\displaystyle{M}$-dimensional manifold by Frobenius theorem. we only need to show that
 
@@ -362,6 +362,7 @@ if one factors out by the null surfaces, one gets a smaller space with an invert
 
 however if one takes the quotient of the constraint surface by the gauge orbits, one loses desirable features such as locality and manifest covariance. therefore it is often preferable to work on the full constraint surface and to deal with gauge invariance in some other way (BRST theory).
  (actually Dirac bracket)
+
 ## second class constraints
 
 define
@@ -421,4 +422,3 @@ $$\begin{align}
  & \approx \sigma ^{ij}\partial _{i}f\partial _{j}g+[F,\chi _{\alpha}]C^{\alpha \beta}[\chi _{\beta},G] \\
 \implies [F,G]^{*} & \approx [f,g]_{\text{D}}
 \end{align}$$
-

@@ -1,17 +1,17 @@
 examples of physical models
 
 1. scalar field
-2. gauge field
+1. gauge field
 	1. Chern-Simons theory
-	2. Yang-Mills theory
-3. $\displaystyle{\sigma}$-model
-4. gravity
-5. ...
+	1. Yang-Mills theory
+1. $\displaystyle{\sigma}$-model
+1. gravity
+1. ...
 
 each of them has a huge configuration space. so the path integrals are hard to calculate. but in several special cases, the path integral has definite definition.
 
 1. imaginary time quantum mechanics (Wie? measure)
-2. asymptotic expansion (perturbative renormalization theory)
+1. asymptotic expansion (perturbative renormalization theory)
 
 the goal of this lecture is to consider some homological nature of the path integral
 
@@ -50,11 +50,9 @@ such that $\displaystyle{\mathrm{d}_{n}\circ \mathrm{d}_{n+1}=0}$. we write $\di
 
 and the $\displaystyle{n}$-th cohomology group is defined as
 
-$$
-\begin{align}
+$$\begin{align}
 H^{n}(C^{*},\mathrm{d}) & = \frac{\mathrm{Ker}(\mathrm{d}_{n})}{\mathrm{Im}(\mathrm{d}_{n-1})}
-\end{align}
-$$
+\end{align}$$
 
 ### examples
 
@@ -75,11 +73,9 @@ we can also consider differential forms with compact support. and we can define 
 
 Stokes' theorem
 
-$$
-\begin{align}
+$$\begin{align}
 \int _{M}\mathrm{d}\omega & =\int _{\partial M}\omega
-\end{align}
-$$
+\end{align}$$
 
 >[!Theorem Poincare Lemma]
 > $$\begin{align}H^{p}(\mathbb{R}^{n})=\begin{cases}\mathbb{R}, & p=0 \\0, & p>0\end{cases},\quad
@@ -87,10 +83,11 @@ H^{p}_{c}(\mathbb{R}^{n})=\begin{cases}\mathbb{R}, & p=n \\0, & p<n\end{cases}\e
 
 we prove the case for $\displaystyle{n=1}$. if $\displaystyle{f\in H^{0}(\mathbb{R})}$, then we have $\displaystyle{\mathrm{d}f=0\implies f\equiv \mathrm{Const}.}$
 if $\displaystyle{f\in H^{0}_{c}(\mathbb{R})}$, then we have $\displaystyle{\mathrm{d}f=0}$ and $\displaystyle{f}$ has compact support $\displaystyle{\implies f\equiv 0}$
-let $\displaystyle{\alpha=f(x)\mathrm{d}x}$ is a closed form, $\displaystyle{\mathrm{d}\alpha=0}$, then let $\displaystyle{g(\alpha)=\int _{a}^{x}\alpha}$, and we have $\displaystyle{\alpha=\mathrm{d}g(\alpha)}$, so we have $\displaystyle{H^{1}(\mathbb{R})=0}$. 
+let $\displaystyle{\alpha=f(x)\mathrm{d}x}$ is a closed form, $\displaystyle{\mathrm{d}\alpha=0}$, then let $\displaystyle{g(\alpha)=\int _{a}^{x}\alpha}$, and we have $\displaystyle{\alpha=\mathrm{d}g(\alpha)}$, so we have $\displaystyle{H^{1}(\mathbb{R})=0}$.
 consider the integral map $\displaystyle{\int _{\mathbb{R}}:\Omega ^{1}_{c}(\mathbb{R})\to \mathbb{R}}$. this map is surjective. we know that
 
-$$\tag(1.1)
+$$
+\tag(1.1)
 \begin{align}
 \int _{\mathbb{R}}\mathrm{d}f & =0
 \end{align}
@@ -102,7 +99,8 @@ for $\displaystyle{n>1}$, we have a similar proof. see Bott-Tu, Differential for
 
 algebraically, the integral is exactly cohomology.
 
-$$\tag{1.2}
+$$
+\tag{1.2}
 \begin{align}
 \int _{\mathbb{R}^{n}}=H^{*}_{c}
 \end{align}
@@ -113,4 +111,3 @@ $$
 so we can use homology to study integral (and path integral).
 
 if $\displaystyle{U\subset \mathbb{R}^{n}}$ has non-trivial topology $\displaystyle{\implies}$ nontrivial cohomology
-

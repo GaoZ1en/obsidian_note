@@ -2,11 +2,11 @@ overview of this lecture
 
  # quantum error correction
  1. classical code
- 2. bit-flip & phase-flip code
- 3. Shor's code
- 4. QEC condition
+ 1. bit-flip & phase-flip code
+ 1. Shor's code
+ 1. QEC condition
 	 1. error basis
- 5. stabilizer code
+ 1. stabilizer code
 	 1. general fomalism
 
 ---
@@ -20,7 +20,7 @@ quantumly, encode->erro diagnosis (now there are bit-flip and phase-flip)->
 Shor's code. we first encode against phase-flip, then bit-flip, which means
 
 $$\begin{align}
-\ket{0/1} \to \ket{000/111}\to \frac{1}{\sqrt{2}}(\ket{000}+\ket{111})^{\otimes 3}/\frac{1}{\sqrt{2}}(\ket{000}-\ket{111})^{\otimes 3} 
+\ket{0/1} \to \ket{000/111}\to \frac{1}{\sqrt{2}}(\ket{000}+\ket{111})^{\otimes 3}/\frac{1}{\sqrt{2}}(\ket{000}-\ket{111})^{\otimes 3}
 \end{align}$$
 
 in general, $\displaystyle{\ket{\psi}=a\ket{0}+b\ket{1}}$ is encoded as

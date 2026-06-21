@@ -22,15 +22,15 @@ Working notes for adapting the AdS3 linearized-gravity setup to global AdS4 and 
 The AdS4-specific notes build from local field data to Hilbert-space data:
 
 1. `linearize.md` fixes the background, perturbative Einstein equation, TT reduction, and symplectic current.
-2. `Killing algebra.md` constructs explicit highest-weight primaries and descendants for scalar, vector, Maxwell, TT tensor, and graviton branches.
-3. `symplectic norm.md` determines the normalizable physical modules and explains how gauge quotients remove longitudinal submodules.
-4. `gauge representatives.md` chooses direct representatives for the Maxwell and graviton short modules.
-5. `partition function.md` converts those physical one-particle modules into refined AdS4 Fock-space partition functions.
+1. `Killing algebra.md` constructs explicit highest-weight primaries and descendants for scalar, vector, Maxwell, TT tensor, and graviton branches.
+1. `symplectic norm.md` determines the normalizable physical modules and explains how gauge quotients remove longitudinal submodules.
+1. `gauge representatives.md` chooses direct representatives for the Maxwell and graviton short modules.
+1. `partition function.md` converts those physical one-particle modules into refined AdS4 Fock-space partition functions.
 
 The general notes then abstract the same structure:
 
 1. `so(2,d-1) algebra.md` gives the representation-theoretic character formulas for AdS$_d$.
-2. `heat kernel.md` derives the same long and short spin-$s$ partition functions from the non-zero-image thermal AdS$_d$ heat kernel.
+1. `heat kernel.md` derives the same long and short spin-$s$ partition functions from the non-zero-image thermal AdS$_d$ heat kernel.
 
 ## Current result
 

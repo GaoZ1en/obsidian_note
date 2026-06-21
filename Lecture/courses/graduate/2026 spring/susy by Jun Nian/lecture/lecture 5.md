@@ -41,7 +41,8 @@ W_{\text{ADS}} & =c\left(\dfrac{\Lambda^{3N_{c}-N_{f}}}{\det M}\right)^{1/(N_{c}
 Seiberg duality is an infrared equivalence between two different four-dimensional $\mathcal{N}=1$ supersymmetric gauge theories. The two theories have different ultraviolet Lagrangians, different gauge groups, and different elementary fields, but they flow to the same low-energy fixed point or to the same low-energy effective theory.
 
 The standard example is massless SQCD. The electric theory is
-$$
+
+$$\begin{align}
 G_e=SU(N_c),
 \qquad
 Q_j\in \mathbf{N_c},
@@ -49,17 +50,21 @@ Q_j\in \mathbf{N_c},
 \widetilde Q^i\in \overline{\mathbf{N_c}},
 \qquad
 W_e=0,
-$$
+\end{align}$$
+
 with $i,j=1,\dots,N_f$. Its useful gauge-invariant chiral operators are the mesons (superfield)
-$$
+
+$$\begin{align}
 M^i{}_j=\widetilde Q^i Q_j,
-$$
+\end{align}$$
+
 and, for $N_f\geq N_c$, the baryons (superfield)
-$$
+
+$$\begin{align}
 B\sim Q^{N_c},
 \qquad
 \widetilde B\sim \widetilde Q^{N_c}.
-$$
+\end{align}$$
 
 ---
 
@@ -81,43 +86,55 @@ W_{\text{eff}} & =c_{N_{c} ,N_{f}}\left(\dfrac{\Lambda ^{3N_{c} -N_{f}}}{\det M}
 ---
 
 For $N_f>N_c+1$, the magnetic dual theory has gauge group
-$$
+
+$$\begin{align}
 G_m=SU(\widetilde N_c),
 \qquad
 \widetilde N_c=N_f-N_c.
-$$
+\end{align}$$
+
 It contains dual quarks $q,\widetilde q$ charged under $SU(\widetilde N_c)$, together with an elementary gauge-singlet meson field $M^i{}_j$ carrying the same flavor quantum numbers as the electric composite $\widetilde Q^iQ_j$. The magnetic superpotential is schematically
-$$
+
+$$\begin{align}
 W_m=\frac{1}{\mu}M^i{}_j q_i\widetilde q^j,
-$$
+\end{align}$$
+
 where $\mu$ is a matching scale used to give $M$ canonical engineering dimension in the magnetic Lagrangian.
 
 The basic operator map is
-$$
+
+$$\begin{align}
 \widetilde Q^iQ_j\longleftrightarrow M^i{}_j,
 \qquad
 B\sim Q^{N_c}\longleftrightarrow b\sim q^{\widetilde N_c},
 \qquad
 \widetilde B\sim \widetilde Q^{N_c}\longleftrightarrow \widetilde b\sim \widetilde q^{\widetilde N_c}.
-$$
+\end{align}$$
+
 Thus the meson is composite in the electric theory but elementary in the magnetic theory, while electric baryons are mapped to magnetic baryons. The electric and magnetic strong-coupling scales obey a holomorphic matching relation of the form
-$$
+
+$$\begin{align}
 \Lambda_e^{3N_c-N_f}\Lambda_m^{3\widetilde N_c-N_f}\sim \mu^{N_f},
-$$
+\end{align}$$
+
 up to convention-dependent signs and normalization factors.
 
 The non-anomalous global symmetry is the same in both descriptions:
-$$
+
+$$\begin{align}
 SU(N_f)_L\times SU(N_f)_R\times U(1)_B\times U(1)_R.
-$$
+\end{align}$$
+
 At the superconformal fixed point, the anomaly-free $R$-charges are
-$$
+
+$$\begin{align}
 R(Q)=R(\widetilde Q)=1-\frac{N_c}{N_f},
 \qquad
 R(M)=2\left(1-\frac{N_c}{N_f}\right),
 \qquad
 R(q)=R(\widetilde q)=\frac{N_c}{N_f}.
-$$
+\end{align}$$
+
 These values make the magnetic superpotential have $R(W_m)=2$, as required for an $\mathcal{N}=1$ superpotential.
 
 Important checks of the duality include:
@@ -135,4 +152,3 @@ The infrared interpretation depends on $N_f$:
 - For $N_f\leq N_c$, the dynamics is instead described by quantum-deformed moduli spaces or Affleck-Dine-Seiberg superpotentials rather than by a nontrivial magnetic gauge group of the above form.
 
 The main lesson is that the gauge group and elementary fields are not themselves invariant notions of the infrared theory. Seiberg duality identifies different microscopic gauge descriptions that give the same quantum physics at long distances.
-

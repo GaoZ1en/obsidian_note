@@ -32,9 +32,9 @@ $$\begin{align}
 \varphi\to \mathcal{o}(r^{-1}),r\to \infty
 \end{align}$$
 
-we expand the field in terms of normal modes, i.e., the complete set of solutions to the Klein-Gordon equation. 
+we expand the field in terms of normal modes, i.e., the complete set of solutions to the Klein-Gordon equation.
 
-we first consider the $\mathrm{AdS}_{3}$ case. there are two methods to find the normal modes: 
+we first consider the $\mathrm{AdS}_{3}$ case. there are two methods to find the normal modes:
 
 1. solve the eom directly using separation of variables. the final results are
 
@@ -45,7 +45,7 @@ $$\begin{align}
 m & \in \mathbb{Z}, n\in \mathbb{N}
 \end{align}$$
 
-2. use the representation theory of the isometry group $\mathrm{SO}(2,2)$ of $\mathrm{AdS}_{3}$. the normal modes can be labeled by two non-negative integers $\displaystyle{n,\bar{n}}$. the final results are
+1. use the representation theory of the isometry group $\mathrm{SO}(2,2)$ of $\mathrm{AdS}_{3}$. the normal modes can be labeled by two non-negative integers $\displaystyle{n,\bar{n}}$. the final results are
 
 $$\begin{align}
 \varphi _{n,\bar{n}}(x) & =\sqrt{ \frac{1}{n!\bar{n}!(\Delta)_{n}(\Delta)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\varphi _{00}(x) \\

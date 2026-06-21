@@ -2,7 +2,8 @@
 
 consider the boundary stress tensor $\displaystyle{T_{\mu \nu}=\frac{1}{4G}(K_{\mu \nu}-K\gamma_{\mu \nu}+\gamma_{\mu \nu})}$, its diffeomorphism is given by
 
-$$\tag{1.1}
+$$
+\tag{1.1}
 \begin{align}
 4G\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}X_{\xi}\cdot \delta T_{\mu \nu} & =\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\left(X_{\xi}\cdot \delta K_{\mu \nu}-X_{\xi}\cdot \delta K\gamma_{\mu \nu}-X_{\xi}\cdot \gamma_{\mu \nu}K+X_{\xi}\cdot \delta \gamma_{\mu \nu}\right)\\
  & =\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}X_{\xi}\cdot \delta K_{\mu \nu}-\gamma^{\mu \nu}\gamma_{\alpha \beta}X_{\xi}\cdot \delta K_{\mu \nu}+K^{\mu \nu}\gamma_{\alpha \beta}X_{\xi}\cdot \delta \gamma_{\mu \nu}-K\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}X_{\xi}\cdot \delta \gamma_{\mu \nu}+\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}X_{\xi}\cdot \delta \gamma_{\mu \nu}\\
@@ -16,7 +17,8 @@ $$
 
 here we use
 
-$$\tag{1.2}
+$$
+\tag{1.2}
 \begin{align}
 \gamma^\mu_\alpha\gamma^\nu_\beta R_{\mu\nu} & =\tilde R_{\alpha\beta}+\gamma^\mu_\alpha\gamma^\nu_\beta n^\rho\nabla_\rho K_{\mu\nu}+2K_{\alpha\gamma}K^{\gamma}_\beta-KK_{\alpha\beta}-\frac{1}{N}D_\beta D_\alpha N \\
 R & =\tilde{R}-K^{2}-K_{\alpha \beta}K^{\alpha \beta}-2n^{\mu}\nabla_{\mu}K-\frac{2}{N}D^{2}N
@@ -25,7 +27,8 @@ $$
 
 and
 
-$$\tag{1.3}
+$$
+\tag{1.3}
 \begin{align}
 \gamma^\mu_\alpha\gamma^\nu_\beta(X_\xi\cdot\delta\gamma_{\mu\nu})&=D_\alpha(\gamma_{\beta\gamma}\xi^\gamma)+D_\beta(\gamma_{\alpha\gamma}\xi^\gamma)+2K_{\alpha\beta}n_\gamma\xi^\gamma \\
 \gamma^\mu_\alpha\gamma^\nu_\beta(X_\xi\cdot\delta K_{\mu\nu})&=K_{\alpha\mu}D_\beta(\gamma^\mu_\nu\xi^\nu)+K_{\beta\mu}D_\alpha(\gamma^\mu_\nu\xi^\nu)+D_\mu K_{\alpha\beta}\gamma^\mu_\nu\xi^\nu-D_\alpha D_\beta(n_\mu\xi^\mu)\\
@@ -35,7 +38,8 @@ $$
 
 ## via $\displaystyle{\mathcal{L}_{\xi}\delta S_{\varepsilon}}$
 
-$$\tag{2.1}
+$$
+\tag{2.1}
 \begin{align}
 S_{\varepsilon} & =\int_{M_{\varepsilon}}\mathbf{L}+\int_{\Gamma_{\varepsilon}}\ell \\ \\
 \delta S_{\varepsilon} & =\int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}\delta g_{\mu \nu}+\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta \gamma_{\mu \nu}+\int_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}\Theta-\int_{\partial\Sigma_{f,\varepsilon}-\partial \Sigma_{i,\varepsilon}}\mathbf{C}_{\varepsilon} \\
@@ -47,7 +51,8 @@ $$
 
 consider the Lie derivative of $\displaystyle{\delta S_{\varepsilon}}$ with respect to $\displaystyle{X_{\xi}}$. on the one hand
 
-$$\tag{2.2}
+$$
+\tag{2.2}
 \begin{align}
 \mathcal{L}_{X_{\xi}}\delta S_{\varepsilon} & =X_{\xi}\cdot \delta^{2}S_{\varepsilon}+\delta(X_{\xi}\cdot \delta S_{\varepsilon})=\delta(X_{\xi} \cdot \delta S_{\varepsilon}) \\
  & =\delta \left(\int_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}\xi \cdot \mathbf{L}+\int_{\partial \Sigma_{f,\varepsilon}-\partial \Sigma_{i,\varepsilon}}\mu_{\xi}+\int_{\Gamma_{\varepsilon}}\nu_{\xi}\right) \\
@@ -57,7 +62,8 @@ $$
 
 on the other hand
 
-$$\tag{2.3}
+$$
+\tag{2.3}
 \begin{align}
 \delta^{2}S_{\varepsilon} & =\delta\left(\int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}\delta g_{\mu \nu}+\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta \gamma_{\mu \nu}+\int_{\Sigma_{f,\varepsilon},\Sigma_{i,\varepsilon}}\Theta-\int_{\partial \Sigma_{f,\varepsilon}-\partial \Sigma_{i,\varepsilon}}\mathbf{C}_{\varepsilon}\right) \\
  & =\int_{M_{\varepsilon}}\delta \mathbf{E}^{\mu \nu}\wedge \delta g_{\mu \nu}+\int_{\Gamma_{\varepsilon}}\delta\mathbf{F}^{\mu \nu}\wedge \delta \gamma_{\mu \nu}+\int_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}\delta \Theta-\int_{\partial \Sigma_{f,\varepsilon}-\partial \Sigma_{i,\varepsilon}}\delta\mathbf{C}_{\varepsilon} \\
@@ -66,7 +72,8 @@ X_{\xi}\cdot \delta^{2}S_{\varepsilon} & =\int_{M_{\varepsilon}}(X_{\xi}\cdot \d
 \end{align}
 $$
 
-$$\tag{2.4}
+$$
+\tag{2.4}
 \begin{align}
 \delta(X_{\xi}\cdot \delta S_{\varepsilon}) & =\delta\left(\int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})+\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}(X_{\xi}\cdot \delta\gamma_{\mu \nu})+\int_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}X_{\xi}\cdot \Theta-\int_{\partial \Sigma_{f,\varepsilon}-\partial \Sigma_{i,\varepsilon}}X_{\xi}\cdot \mathbf{C}_{\varepsilon}\right) \\
  & =\int_{M_{\varepsilon}}(\delta \mathbf{E}^{u\nu}(X_{\xi}\cdot \delta g_{\mu \nu})+\mathbf{E}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu}))+\int_{\Gamma_{\varepsilon}}(\delta \mathbf{F}^{\mu \nu}(X_{\xi}\cdot \delta \gamma_{\mu \nu})+\mathbf{F}^{\mu \nu}\delta(X_{\xi}\cdot \delta \gamma_{\mu \nu})) \\
@@ -76,7 +83,8 @@ $$
 
 summing over (2.4) and (2.5), we have
 
-$$\tag{2.5}
+$$
+\tag{2.5}
 \begin{align}
 \mathcal{L}_{X_{\xi}}\delta S_{\varepsilon} & =X_{\xi}\cdot \delta^{2}S_{\varepsilon}+\delta(X_{\xi}\cdot \delta S_{\varepsilon}) \\
  & =\int_{M_{\varepsilon}}((X_{\xi}\cdot \delta \mathbf{E}^{\mu \nu})\delta g_{\mu \nu}+\mathbf{E}^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu}))+\int_{\Gamma_{\varepsilon}}((X_{\xi}\cdot \delta \mathbf{F}^{\mu \nu})\delta \gamma_{\mu \nu}+\mathbf{F}^{\mu \nu}(X_{\xi}\cdot \delta \gamma_{\mu \nu})) \\
@@ -86,7 +94,8 @@ $$
 
 now we will direct calculate each term in (2.5). we first consider terms supporting on $\displaystyle{M_{\varepsilon}}$
 
-$$\tag{2.6}
+$$
+\tag{2.6}
 \begin{align}
 X_{\xi}\cdot \delta \mathbf{E}^{\mu \nu}\delta g_{\mu \nu} & =\left( X_{\xi}\cdot \delta(g^{\mu \rho}g^{\nu \sigma}\tilde{E}_{\rho \sigma})+\frac{1}{2}\tilde{E}^{\mu \nu}g^{\rho \sigma}X_{\xi}\cdot\delta g_{\rho \sigma}\right)\delta g_{\mu \nu}\varepsilon \\
  & =\left( g^{\nu \sigma}\tilde{E}_{\rho \sigma}(X_{\xi}\cdot \delta g^{\mu \rho})+g^{\mu \rho}\tilde{E}_{\rho \sigma}(X_{\xi}\cdot \delta g^{\nu \sigma})+g^{\mu \rho}g^{\nu \sigma}(X_{\xi}\cdot \delta \tilde{E}_{\rho \sigma})+\frac{1}{2}\tilde{E}^{\mu \nu}g^{\rho \sigma}(X_{\xi}\cdot \delta g_{\rho \sigma}) \right)\delta g_{\mu \nu}\varepsilon \\
@@ -98,7 +107,8 @@ $$
 
 here we use
 
-$$\tag{2.7}
+$$
+\tag{2.7}
 \begin{align}
 X_{\xi}\cdot \delta g_{\mu \nu} & =\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu} \\
 X_{\xi}\cdot \delta g^{\mu \nu} & =-\nabla^{\mu}\xi^{\nu}-\nabla^{\nu}\xi^{\mu} \\
@@ -107,7 +117,8 @@ X_{\xi}\cdot \delta \tilde{E}_{\mu \nu} & =\mathcal{L}_{\xi}\tilde{E}_{\mu \nu}\
 \end{align}
 $$
 
-$$\tag{2.8}
+$$
+\tag{2.8}
 \begin{align}
 \mathbf{E}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu}) & =\mathbf{E}^{\mu \nu}\delta(\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}) \\
  & =\mathbf{E}^{\mu \nu}\nabla_{\mu}(\delta g_{\rho \nu}\xi^{\rho})+\mathbf{E}^{\mu \nu}\nabla_{\nu}(\delta g_{\mu\rho}\xi^{\rho})-2\mathbf{E}^{\mu \nu}\delta \Gamma^{\rho}_{\mu \nu}\xi_{\rho} \\
@@ -115,9 +126,11 @@ $$\tag{2.8}
  & =\mathbf{E}^{\rho \nu}\nabla_{\rho}\xi^{\mu}\delta g_{\mu \nu}+\mathbf{E}^{\mu \rho}\nabla_{\rho}\xi^{\nu}\delta g_{\mu \nu}+\mathbf{E}^{\mu \nu}\xi^{\rho}\nabla_{\rho}\delta g_{\mu \nu}
 \end{align}
 $$
+
 here we use
 
-$$\tag{2.9}
+$$
+\tag{2.9}
 \begin{align}
 \delta \Gamma^{\rho}_{\mu \nu} & = \frac{1}{2}g^{\rho \sigma}(\nabla_{\mu}\delta g_{\sigma \nu}+\nabla_{\nu}\delta g_{\mu \sigma}-\nabla_{\sigma}\delta g_{\mu \nu})
 \end{align}
@@ -125,7 +138,8 @@ $$
 
 sum over (2.6) and (2.8), we have
 
-$$\tag{2.9}
+$$
+\tag{2.9}
 \begin{align}
 (X_{\xi}\cdot \delta \mathbf{E}^{\mu \nu})\delta g_{\mu \nu}+\mathbf{E}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu}) & =-\mathbf{E}^{\rho \nu}\nabla_{\rho}\xi^{\mu}\delta g_{\mu \nu}-\mathbf{E}^{\mu \rho}\nabla_{\rho}\xi^{\nu}\delta g_{\mu \nu}+\xi^{\rho}\nabla_{\rho}\mathbf{E}^{\mu \nu}\delta g_{\mu \nu}+\mathbf{E}^{\mu \nu}\nabla_{\rho}\xi^{\rho}\delta g_{\mu \nu} \\
  & +\mathbf{E}^{\rho \nu}\nabla_{\rho}\xi^{\mu}\delta g_{\mu \nu}+\mathbf{E}^{\mu \rho}\nabla_{\rho}\xi^{\nu}\delta g_{\mu \nu}+\mathbf{E}^{\mu \nu}\xi^{\rho}\nabla_{\rho}\delta g_{\mu \nu} \\
@@ -135,7 +149,8 @@ $$
 
 we then consider terms supporting on $\displaystyle{\Gamma_{\varepsilon}}$
 
-$$\tag{2.10}
+$$
+\tag{2.10}
 \begin{align}
 4\pi(X_{\xi}\cdot \delta \mathbf{F}^{\mu \nu})\delta \gamma_{\mu \nu} & =-X_{\xi}\cdot \delta(\gamma^{\mu \rho}\gamma^{\nu \sigma}T_{\rho \sigma}\varepsilon^{\Gamma_{\varepsilon}})\cdot \delta\gamma_{\mu \nu} \\
  & =-X_{\xi}\cdot \delta \gamma^{\mu \rho}\gamma^{\nu \sigma}T_{\rho\sigma}\delta \gamma_{\mu \nu}\varepsilon^{\Gamma_{\varepsilon}}-\gamma^{\mu \rho}X_{\xi}\cdot \delta \gamma^{\nu \sigma}T_{\rho \sigma}\delta \gamma_{\mu \nu} \varepsilon^{\Gamma_{\varepsilon}}-\gamma^{\mu \rho}\gamma^{\nu \sigma}X_{\xi}\cdot \delta T_{\rho \sigma}\delta \gamma_{\mu \nu}\varepsilon^{\Gamma_{\varepsilon}}- X_{\xi}\cdot \delta \varepsilon^{\Gamma_{\varepsilon}}T^{\mu \nu}\delta \gamma_{\mu \nu} \\
@@ -150,14 +165,16 @@ $$
 
 here we use
 
-$$\tag{2.11}
+$$
+\tag{2.11}
 \begin{align}
 X_{\xi}\cdot \delta \gamma_{\mu \nu} & =D_{\mu}(\gamma_{\nu \rho}\xi^{\rho})+D_{\nu}(\gamma_{\mu \rho}\xi^{\rho})+2K_{\mu \nu}n_{\rho}\xi^{\rho} \\
 X_{\xi}\cdot \delta \gamma^{\mu \nu} & =-\gamma^{\mu \rho}\gamma^{\nu \sigma}X_{\xi}\cdot \delta \gamma_{\rho \sigma}
 \end{align}
 $$
 
-$$\tag{2.12}
+$$
+\tag{2.12}
 \begin{align}
 4\pi \mathbf{F}^{\mu \nu}\delta(X_{\xi}\cdot \delta \gamma_{\mu \nu})\varepsilon^{\Gamma_{\varepsilon}} & =-T^{\mu \nu}\delta(X_{\xi}\cdot \delta \gamma_{\mu \nu})\varepsilon^{\Gamma_{\varepsilon}} \\
  & =-T^{\mu \nu}\delta(D_{\mu}(\gamma_{\rho\nu}\xi^{\rho})+D_{\nu}(\gamma_{\mu \rho}\xi^{\rho})+2K_{\mu \nu}n_{\rho}\xi^{\rho})\varepsilon^{\Gamma_{\varepsilon}} \\
@@ -171,13 +188,15 @@ $$
 
 here we use
 
-$$\tag{2.13}
+$$
+\tag{2.13}
 \begin{align}
 \delta \tilde{\Gamma}^{\rho}_{\mu \nu} & =\frac{1}{2}\gamma^{\rho \sigma}(D_{\mu}\delta \gamma_{\sigma \nu}+D_{\nu}\delta \gamma_{\mu \sigma}-D_{\sigma}\delta \gamma_{\mu \nu})
 \end{align}
 $$
 
-$$\tag{2.14}
+$$
+\tag{2.14}
 \begin{align}
 -16\pi G\delta\nu_{\xi} & =-\delta\left((\tilde{R}-K_{\mu \nu}K^{\mu \nu}+K^{2}-2K+2)n_{\rho}\xi^{\rho}\varepsilon^{\Gamma_{\varepsilon}}\right) \\
  & =-\delta(\tilde{R}-K_{\mu \nu}K^{\mu \nu}+K^{2}-2K+2)n_{\rho}\xi^{\rho}\varepsilon^{\Gamma_{\varepsilon}}-\frac{1}{2}(\tilde{R}-K_{\mu \nu}K^{\mu \nu}+K^{2}-2K+2)n_{\rho}\xi^{\rho}\gamma^{\mu \nu}\delta \gamma_{\mu \nu}\varepsilon^{\Gamma_{\varepsilon}} \\
@@ -190,7 +209,8 @@ $$
 
 here we use
 
-$$\tag{2.15}
+$$
+\tag{2.15}
 \begin{align}
 \delta \tilde{R} & =-\tilde{R}^{\mu \nu}\delta \gamma_{\mu \nu}+D^{\mu}D^{\nu}\delta \gamma_{\mu \nu}-\gamma^{\mu \nu}D^{2}\delta \gamma_{\mu \nu} \\
  \tilde{R}^{\mu \nu} & =\frac{1}{2}\tilde{R}\gamma^{\mu \nu}
@@ -199,7 +219,8 @@ $$
 
 summing over (2.10), (2.12) and (2.14), we have
 
-$$\tag{2.13}
+$$
+\tag{2.13}
 \begin{align}
  0 & =4\pi(X_{\xi}\cdot \delta \mathbf{F}^{\mu \nu})\delta \gamma_{\mu \nu}+4\pi \mathbf{F}^{\mu \nu}\delta(X_{\xi}\cdot \delta \gamma_{\mu \nu})-4\pi \delta \nu_{\xi}+4\pi \xi \cdot \mathbf{E}^{\mu \nu}\delta g_{\mu \nu} \\
  & =D^{\mu}(\gamma_{\rho\sigma}\xi^{\sigma})T^{\rho \nu}\delta \gamma_{\mu \nu}\varepsilon^{\Gamma_{\varepsilon}}+D_{\rho}(\gamma^{\mu}_{\sigma}\xi^{\sigma})T^{\rho \nu}\delta \gamma_{\mu \nu}\varepsilon^{\Gamma_{\varepsilon}}+2K^{\mu}_{\rho}n_{\sigma}\xi^{\sigma}T^{\rho \nu}\delta \gamma_{\mu \nu}\varepsilon^{\Gamma_{\varepsilon}} \\
@@ -218,7 +239,8 @@ $$
 
 ## asymptotic behavior
 
-$$\tag{3.1}
+$$
+\tag{3.1}
 \begin{align}
 4GT_{ab} & =K_{ab}-K\gamma_{ab}+\gamma_{ab} \\
  & =-\Delta g_{ab}+g^{(0)}_{ab}g^{(0)cd}\Delta g_{cd}-\frac{1}{2}z^{2}g^{(0)}_{ab}g^{(0)cd}g_{zc}g_{zd}+\frac{1}{2}g^{(0)}_{ab}\Delta g_{zz} \\
@@ -232,7 +254,8 @@ $$
 
 and contract with $\displaystyle{X_{\xi}}$, we have
 
-$$\tag{3.2}
+$$
+\tag{3.2}
 \begin{align}
 4GX_{\xi}\cdot \delta T_{ab} & =
 \end{align}
@@ -240,7 +263,8 @@ $$
 
 on the other hand
 
-$$\tag{3.3}
+$$
+\tag{3.3}
 \begin{align}
  & 4G(T^{(0)}_{ac}D_{b}^{(0)}\xi^{(0)c}+T_{cb}^{(0)}D_{a}^{(0)}\xi^{(0)c}+\xi^{(0)c}D_{c}^{(0)}T_{ab}^{(0)})+(D^{(0)}_{a}D_{b}^{(0)}\xi^{(1)z}-g^{(0)}_{ab}D_{c}^{(0)}D^{c(0)}\xi^{(1)z}) \\
 = & -\Delta g_{ac}D_{b}^{(0)}\xi^{(0)c}-\Delta g_{bc}D_{a}^{(0)}\xi^{(0)c}-\xi^{(0)c}D_{c}^{(0)}\Delta g_{ab}+(D_{a}^{(0)}\xi^{(0)}_{b}+D_{b}^{(0)}\xi^{(0)}_{a})g^{(0)cd}\Delta g_{cd} \\
@@ -254,11 +278,13 @@ $$\tag{3.3}
 $$
 
 completed but waiting to be summarized.
+
 ## appendix H.3
 
 with the result of the asymptotic behaviors, we can further get
 
-$$\tag{4.1}
+$$
+\tag{4.1}
 \begin{align}
 X_{\xi}\cdot \delta T^{(0)}_{ab}|_{\tilde{\mathcal{P}}} & =T^{(0)}_{ac}D_{b}^{(0)}\xi^{(0)c}+T_{cb}^{(0)}D_{a}^{(0)}\xi^{(0)c}+\xi^{(0)c}D_{c}^{(0)}T_{ab}^{(0)}+\frac{1}{4G}(D^{(0)}_{a}D_{b}^{(0)}\xi^{(1)z}-g^{(0)}_{ab}D_{c}^{(0)}D^{c(0)}\xi^{(1)z})
 \end{align}
@@ -266,7 +292,8 @@ $$
 
 Apply the Lie algebra on $\displaystyle{\delta S=\alpha_{\xi}|_{\Sigma_{f}-\Sigma_{i}}+\beta_{\xi}|_{\Gamma}}$.
 
-$$\tag{4.2}
+$$
+\tag{4.2}
 \begin{align}
 \mathcal{L}_{X_{\xi}}\delta S & =X_{\xi}\cdot \delta \lim_{ \varepsilon \to 0 } \left(\int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}\delta g_{\mu \nu}+\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta g_{\mu \nu}+\theta|_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}\right) \\
  & +\delta\left(X_{\xi}\cdot\left(\int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}\delta g_{\mu \nu}+\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta g_{\mu \nu}+\theta|_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}\right)\right) \\
@@ -278,7 +305,8 @@ $$
 
 on the other hand, we have
 
-$$\tag{4.3}
+$$
+\tag{4.3}
 \begin{align}
 \mathcal{L}_{\xi}\delta S & =\delta(X_{\xi}\cdot \delta S)=\lim_{ \varepsilon \to 0 } (\delta \alpha_{\xi}|_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}+\delta )\beta|_{\Gamma_{\varepsilon}}
 \end{align}
@@ -286,7 +314,8 @@ $$
 
 by comparing, we have
 
-$$\tag{4.4}
+$$
+\tag{4.4}
 \begin{align}
 0 & =\lim_{ \varepsilon \to 0 } \left(\int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu})+\int_{M_{\varepsilon}}(X_{\xi}\cdot \delta \mathbf{E}^{\mu \nu})\delta g_{\mu \nu}+\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu})+\int_{\Gamma_{\varepsilon}}(X_{\xi}\cdot \delta \mathbf{F}^{\mu \nu})\delta g_{\mu \nu}\right. \\
  & \left(\left.X_{\xi}\cdot \delta \theta+\delta(X_{\xi}\cdot \theta-\alpha_{\xi})\right)|_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}-\delta \beta_{\xi}|_{\Gamma_{\varepsilon}}\right)
@@ -295,7 +324,8 @@ $$
 
 then apply the Noether theorem and restrict to the prephase space $\displaystyle{\tilde{\mathcal{P}}}$, we have
 
-$$\tag{4.5}
+$$
+\tag{4.5}
 \begin{align}
 0 & =\lim_{ \varepsilon \to 0 } \left(\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu})+\int_{\Gamma_{\varepsilon}}(X_{\xi}\cdot \delta \mathbf{F}^{\mu \nu})\delta g_{\mu \nu}-\delta \beta_{\xi}|_{\Gamma_{\varepsilon}}\right) \\
  & =\lim_{ \varepsilon \to 0 } \left(-\frac{1}{4\pi}\int_{\Gamma_{\varepsilon}}g^{(0)ac}g^{(0)bd}T_{ab}\delta(X_{\xi}\cdot \delta g^{(0)}_{cd})\varepsilon^{(0)}-\frac{1}{4\pi}\int_{\Gamma_{\varepsilon}}X_{\xi}\cdot \delta(g^{(0)ac}g^{(0)bd}T_{ab})\delta g_{cd}^{(0)}\varepsilon^{(0)}-\delta \beta_{\xi}|_{\Gamma_{\varepsilon}}\right)
@@ -306,7 +336,8 @@ $$
 
 Poisson brackets are always defined on-shell. now consider the brackets between two Noether charges
 
-$$\tag{5.1}
+$$
+\tag{5.1}
 \begin{align}
 \left\{Q_{\xi},Q_{\zeta}\right\} & =X_{Q_{\zeta}}\cdot \delta Q_{\xi}=-X_{Q_{\zeta}}\cdot X_{\xi}\cdot \omega|_{\tilde{\mathcal{P}}}=X_{\xi}\cdot X_{Q_{\zeta}}\cdot \omega|_{\tilde{\mathcal{P}}}=-X_{\xi}\cdot \delta Q_{\zeta}|_{\tilde{\mathcal{P}}}=X_{\zeta}\cdot \delta Q_{\xi}|_{\tilde{\mathcal{P}}}
 \end{align}
@@ -314,7 +345,8 @@ $$
 
 then
 
-$$\tag{5.2}
+$$
+\tag{5.2}
 \begin{align}
 \left\{Q_{\xi},Q_{\zeta}\right\} & =-X_{\xi}\cdot \delta Q_{\zeta}|_{\tilde{\mathcal{P}}} \\
  & =\left.\int_{\partial \Sigma} \frac{1}{2\pi}g^{(0)ab}(X_{\xi}\cdot \delta T^{(0)}_{bc})\zeta^{(0)c}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}}\right|_{\tilde{\mathcal{P}}} \\
@@ -332,7 +364,8 @@ $$
 
 原文中有少许typo
 
-$$\tag{5.3}
+$$
+\tag{5.3}
 \begin{align}
  & =-\frac{1}{2\pi}g^{(0)ab}T_{bc}^{(0)}\xi^{(0)d}D_{d}^{(0)}\zeta^{(0)c}+\frac{1}{2\pi}g^{(0)ab}T_{bc}^{(0)}\zeta^{(0)d}D_{d}^{(0)}\xi^{(0)c} \\
  & +\frac{1}{4\pi}\xi^{(0)a}g^{(0)bc}T_{bc}^{(0)}D_{d}^{(0)}\zeta^{(0)d}+\frac{1}{2\pi}\xi^{(0)a}g^{(0)bc}D_{b}^{(0)}T_{cd}^{(0)}\zeta^{(0)d} \\
@@ -342,7 +375,8 @@ $$\tag{5.3}
 \end{align}
 $$
 
-$$\tag{5.4}
+$$
+\tag{5.4}
 \begin{align}
 & -\frac{1}{2\pi}g^{(0)ab}T_{bc}^{(0)}\xi^{(0)d}D_{d}^{(0)}\zeta^{(0)c}+\frac{1}{2\pi}g^{(0)ab}T_{bc}^{(0)}\zeta^{(0)d}D_{d}^{(0)}\xi^{(0)c} \\
  & +\frac{1}{4\pi}\xi^{(0)a}g^{(0)bc}T_{bc}^{(0)}D_{d}^{(0)}\zeta^{(0)d}+\frac{1}{2\pi}\xi^{(0)a}g^{(0)bc}D_{b}^{(0)}T_{cd}^{(0)}\zeta^{(0)d} \\
@@ -353,7 +387,8 @@ $$\tag{5.4}
 \end{align}
 $$
 
-$$\tag{5.5}
+$$
+\tag{5.5}
 \begin{align}
 & \frac{1}{2\pi}g^{(0)ab}T_{bc}^{(0)}\zeta^{(0)d}D_{d}^{(0)}\xi^{(0)c}+\frac{1}{2\pi}g^{(0)ab}D_{b}^{(0)}\xi^{(0)c}T_{cd}^{(0)}\zeta^{(0)d} +\frac{1}{2\pi}g^{(0)ac}D_{b}^{(0)}T^{(0)}_{cd}\zeta^{(0)d}\xi^{(0)b} \\
 = & \frac{1}{2\pi}g^{(0)ab}\left(T^{(0)}_{bd}\zeta^{(0)c}D_{c}^{(0)}\xi^{(0)d}+T_{dc}^{(0)}\zeta^{(0)c}D_{b}^{(0)}\xi^{(0)d}+\xi^{(0)d}D_{d}^{(0)}T^{(0)}_{bc}\zeta^{(0)c}\right)
@@ -362,7 +397,8 @@ $$
 
 the basic idea is to gather terms that are proportional to the conformal Killing equation.
 
-$$\tag{5.6}
+$$
+\tag{5.6}
 \begin{align}
 D_{a}^{(0)}\xi^{(0)}_{b}+D_{b}^{(0)}\xi^{(0)}_{a}-g^{(0)}_{ab}D_{c}^{(0)}\xi^{(0)c}=0
 \end{align}
@@ -370,7 +406,8 @@ $$
 
 we will consider another example to feel the idea. consider a current $\displaystyle{j^{a}}$ satisfying $\displaystyle{D_{a}^{(0)}j^{a}=0}$, and a vector satisfying $\displaystyle{D_{a}^{(0)}\xi^{(0)}_{b}+D_{b}^{(0)}\xi_{a}^{(0)}=0}$, then on the one hand
 
-$$\tag{5.7}
+$$
+\tag{5.7}
 \begin{align}
 \int_{\partial \Sigma}\mathcal{L}_{\xi^{(0)}}j^{(0)a}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} & =\int_{\partial \Sigma}(\xi^{(0)b}D_{b}^{(0)}j^{(0)a}-j^{(0)b}D_{b}^{(0)}\xi^{(0)a})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
  & =\int_{\partial \Sigma}\left(D_{b}^{(0)}(\xi^{(0)b}j^{(0)a}-j^{(0)b}\xi^{(0)a})-D_{b}^{(0)}\xi^{(0)b}j^{(0)a}+D_{b}^{(0)}j^{(0)b}\xi^{(0)a}\right)\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
@@ -380,7 +417,8 @@ $$
 
 on the other hand
 
-$$\tag{5.8}
+$$
+\tag{5.8}
 \begin{align}
 \int_{\partial \Sigma}g^{(0)ab}\mathcal{L}_{\xi^{(0)}}j^{(0)}_{b}\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\int_{\partial \Sigma}g^{(0)ab}(\xi^{(0)c}D_{c}^{(0)}j^{(0)}_{b}+j_{c}^{(0)}D_{b}^{(0)}\xi^{(0)c})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
  & =\int_{\partial \Sigma}D_{c}^{(0)}(g^{(0)ab}\xi^{(0)c}j^{(0)}_{b})-g^{(0)av}D_{c}^{(0)}\xi^{(0)c}j^{(0)}_{b} \\
@@ -392,7 +430,8 @@ $$
 
 or another equivalent way
 
-$$\tag{5.9}
+$$
+\tag{5.9}
 \begin{align}
 \int_{\partial \Sigma}g^{(0)ab}\mathcal{L}_{\xi^{(0)}}j_{b}^{(0)}\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\int_{\partial \Sigma}(\mathcal{L}_{\xi}^{(0)}(g^{(0)ab}j^{(0)}_{b})-j^{(0)}_{b}\mathcal{L}_{\xi^{(0)}}g^{(0)ab})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
  & =\int_{\partial \Sigma}(\xi^{(0)c}D_{c}^{(0)}(g^{(0)ab}j_{b}^{(0)})-g^{(0)bc}j^{(0)}_{c}D_{b}^{(0)}\xi^{(0)a}+g^{(0)ac}g^{(0)bd}(D_{c}^{(0)}\xi^{(0)}_{d}+D_{d}^{(0)}\xi_{c}^{(0)})j_{b}^{(0)})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
@@ -405,7 +444,8 @@ $$
 
 now we will prove (5.2)
 
-$$\tag{5.9}
+$$
+\tag{5.9}
 \begin{align}
  & \frac{1}{2\pi}\int_{\partial \Sigma} g^{(0)ab}(T^{(0)}_{dc}D_{b}^{(0)}\xi^{(0)d}\zeta^{(0)c}+T^{(0)}_{bd}D_{c}^{(0)}\xi^{(0)d}\zeta^{(0)c}+\xi^{(0)d}D_{d}^{(0)}T^{(0)}_{bc}\zeta^{(0)c})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}}  \\
 = & \frac{1}{2\pi}\int_{\partial \Sigma}g^{(0)ab}\mathcal{L}_{\xi^{(0)}}T^{(0)}_{bc}\zeta^{(0)c}\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}}=\frac{1}{2\pi}\int_{\partial \Sigma}g^{(0)ab}(\mathcal{L}_{\xi^{(0)}}(T^{(0)}_{bc}\zeta^{(0)c})-T^{(0)}_{bc}\mathcal{L}_{\xi^{(0)}}\zeta^{(0)c})\varepsilon_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -432,7 +472,8 @@ $$
 
 we now transform (5.2) into a more symmetric form.
 
-$$\tag{5.?}
+$$
+\tag{5.?}
 \begin{align}
 \left\{Q_{\xi},Q_{\zeta}\right\}|_{\tilde{\mathcal{P}}} & =Q_{\left\{\xi,\zeta\right\}}+\int_{\partial \Sigma}\left(-\frac{1}{32\pi G}R^{(0)}\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}+\frac{1}{16\pi G}g^{(0)ab}(D_{c}^{(0)}D_{b}^{(0)}\zeta^{(0)c}-D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c})D_{d}^{(0)}\xi^{(0)d}\right. \\
  & +\frac{1}{32\pi G}g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c}D_{d}^{(0)}\xi^{(0)d}-\frac{1}{32\pi G}g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}\xi^{(0)c}D_{d}^{(0)}\zeta^{(0)d} \\
@@ -447,7 +488,8 @@ $$
 
 then we will show that the bracket is time-independent. this can be easily verified by
 
-$$\tag{5.?}
+$$
+\tag{5.?}
 \begin{align}
 \left\{Q_{\xi},Q_{\zeta}\right\}|_{\Sigma_{f}-\Sigma_{i}}=X_{\xi}\cdot X_{\zeta}\cdot \omega|_{\Sigma_{f}-\Sigma_{i}}=0
 \end{align}
@@ -455,7 +497,8 @@ $$
 
 since $\displaystyle{\omega|_{\Sigma_{f}-\Sigma_{i},\tilde{\mathcal{P}}}=0}$. we now present a direct calculation
 
-$$\tag{5.?}
+$$
+\tag{5.?}
 \begin{align}
 \left\{Q_{\xi},Q_{\zeta}\right\}|_{\Sigma_{f}-\Sigma_{i}} & =-\frac{1}{32\pi G}\int_{\Gamma}R^{(0)}D^{(0)}_{a}\left\{\xi,\zeta\right\}^{(0)a}\varepsilon^{(\Gamma)}-\frac{1}{32\pi G}\int_{\Gamma}D_{a}^{(0)}\left[-R^{(0)}(\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}-\zeta^{(0)a}D_{b}^{(0)}\zeta^{(0)b})\right. \\
  & \left.-g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}\xi^{(0)c}D_{d}^{(0)}\zeta^{(0)d}+g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c}D_{d}^{(0)}\xi^{(0)d}\right]\varepsilon^{(\Gamma)} \\
@@ -464,4 +507,3 @@ $$\tag{5.?}
  & =0
 \end{align}
 $$
-

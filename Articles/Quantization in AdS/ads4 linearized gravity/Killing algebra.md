@@ -53,7 +53,9 @@ i(mJ_{m}-nJ_{n}), & mn=0,\ m+n\neq 0 \\
 
 These relations, together with antisymmetry of the Lie bracket, give the full complexified AdS$_{4}$ Killing algebra. The geometric time and azimuthal generators are recovered as
 
-$$H=\partial _{t}=L_{0}+\bar L_{0},\qquad J_{3}=\partial _{\phi }=L_{0}-\bar L_{0}.$$
+$$\begin{align}
+H=\partial _{t}=L_{0}+\bar L_{0},\qquad J_{3}=\partial _{\phi }=L_{0}-\bar L_{0}.
+\end{align}$$
 
 The real Killing algebra is recovered by taking the corresponding real form.
 
@@ -77,15 +79,21 @@ $$\begin{align}
 
 acting the Casimir on scalar fields, this operator is exactly the scalar Laplacian:
 
-$$\mathcal{C}_{2}\phi=\nabla^{2}\phi.$$
+$$\begin{align}
+\mathcal{C}_{2}\phi=\nabla^{2}\phi.
+\end{align}$$
 
 therefore for a scalar with mass $\displaystyle{\mu}$, we have
 
-$$\mathcal{C}_{2}\phi=\mu^{2}\phi.$$
+$$\begin{align}
+\mathcal{C}_{2}\phi=\mu^{2}\phi.
+\end{align}$$
 
 the scalar highest-weight primary is annihilated by the energy-lowering generators and is a rotational singlet:
 
-$$\mathcal{L}_{E^{+}_{m}}\phi_{0}=0,\qquad \mathcal{L}_{J_{\pm}}\phi_{0}=0,\qquad m=-1,0,+1.$$
+$$\begin{align}
+\mathcal{L}_{E^{+}_{m}}\phi_{0}=0,\qquad \mathcal{L}_{J_{\pm}}\phi_{0}=0,\qquad m=-1,0,+1.
+\end{align}$$
 
 we take its Cartan weights to be $\displaystyle{(h,\bar{h})}$, i.e., we have
 
@@ -103,75 +111,109 @@ $$\begin{align}
 
 Moreover, the rotational-singlet condition implies
 
-$$0=\mathcal{L}_{[J_{+},J_{-}]}\phi _{0}=i\mathcal{L}_{L_{0}-\bar{L}_{0}}\phi _{0}=(h-\bar{h})\phi _{0},$$
+$$\begin{align}
+0=\mathcal{L}_{[J_{+},J_{-}]}\phi _{0}=i\mathcal{L}_{L_{0}-\bar{L}_{0}}\phi _{0}=(h-\bar{h})\phi _{0},
+\end{align}$$
 
 so $h=\bar{h}$. Setting $\Delta=2h=2\bar{h}$ gives
 
-$$\mathcal{C}_{2}\phi _{0}=\Delta(\Delta-3)\phi _{0}.$$
+$$\begin{align}
+\mathcal{C}_{2}\phi _{0}=\Delta(\Delta-3)\phi _{0}.
+\end{align}$$
 
 the regular scalar primary is
 
-$$\phi_{0}=N\dfrac{e^{-i\Delta t}}{(1+r^{2})^{\Delta/2}},$$
+$$\begin{align}
+\phi_{0}=N\dfrac{e^{-i\Delta t}}{(1+r^{2})^{\Delta/2}},
+\end{align}$$
 
 where $N$ is fixed later by the Klein-Gordon norm.
 
 so the mass and highest weight are related by
 
-$$\mu^{2}=\Delta(\Delta-3).$$
+$$\begin{align}
+\mu^{2}=\Delta(\Delta-3).
+\end{align}$$
 
 for standard quantization,
 
-$$\Delta=\dfrac{3}{2}+\sqrt{\dfrac{9}{4}+\mu^{2}}.$$
+$$\begin{align}
+\Delta=\dfrac{3}{2}+\sqrt{\dfrac{9}{4}+\mu^{2}}.
+\end{align}$$
 
 the descendants are obtained by repeated action of the energy-raising generators:
 
-$$\phi_{m_{1}\cdots m_{N}}=\mathcal{L}_{E^{-}_{m_{1}}}\cdots \mathcal{L}_{E^{-}_{m_{N}}}\phi_{0},\qquad m_{j}\in\{-1,0,+1\}.$$
+$$\begin{align}
+\phi_{m_{1}\cdots m_{N}}=\mathcal{L}_{E^{-}_{m_{1}}}\cdots \mathcal{L}_{E^{-}_{m_{N}}}\phi_{0},\qquad m_{j}\in\{-1,0,+1\}.
+\end{align}$$
 
 since $[E^{-}_{m},E^{-}_{n}]=0$, the level-$N$ descendants form symmetric products of the spin-one $SO(3)$ representation. they decompose into angular momenta $\ell=N,N-2,\ldots$, matching the global scalar spectrum
 
-$$\omega=\Delta+\ell+2p,\qquad p=0,1,2,\ldots.$$
+$$\begin{align}
+\omega=\Delta+\ell+2p,\qquad p=0,1,2,\ldots.
+\end{align}$$
 
 ## massive vector
 
 For a vector field, the Lie derivative contains the spin term:
 
-$$\left(\mathcal{L}_{K}A\right)^{\mu}=K^{\nu}\nabla_{\nu}A^{\mu}-A^{\nu}\nabla_{\nu}K^{\mu}.$$
+$$\begin{align}
+\left(\mathcal{L}_{K}A\right)^{\mu}=K^{\nu}\nabla_{\nu}A^{\mu}-A^{\nu}\nabla_{\nu}K^{\mu}.
+\end{align}$$
 
 With the same quadratic Casimir, its action on a vector field is
 
-$$\mathcal{C}_{2}A^{\mu}=(\nabla^{2}+3)A^{\mu}.$$
+$$\begin{align}
+\mathcal{C}_{2}A^{\mu}=(\nabla^{2}+3)A^{\mu}.
+\end{align}$$
 
 The Proca equation is
 
-$$\nabla_{\nu}F^{\nu\mu}-\mu^{2}A^{\mu}=0,\qquad F_{\mu\nu}=\nabla_{\mu}A_{\nu}-\nabla_{\nu}A_{\mu}.$$
+$$\begin{align}
+\nabla_{\nu}F^{\nu\mu}-\mu^{2}A^{\mu}=0,\qquad F_{\mu\nu}=\nabla_{\mu}A_{\nu}-\nabla_{\nu}A_{\mu}.
+\end{align}$$
 
 For $\mu^{2}\neq0$, it implies the transverse condition $\nabla_{\mu}A^{\mu}=0$. On transverse vectors in AdS$_{4}$, the Proca equation becomes
 
-$$\left(\nabla^{2}+3-\mu^{2}\right)A^{\mu}=0,$$
+$$\begin{align}
+\left(\nabla^{2}+3-\mu^{2}\right)A^{\mu}=0,
+\end{align}$$
 
 and hence
 
-$$\mathcal{C}_{2}A^{\mu}=\mu^{2}A^{\mu}.$$
+$$\begin{align}
+\mathcal{C}_{2}A^{\mu}=\mu^{2}A^{\mu}.
+\end{align}$$
 
 The spin-one primary is a triplet under the spatial rotation algebra. We write it as
 
-$$A_{s}^{\mu},\qquad s=+1,0,-1,$$
+$$\begin{align}
+A_{s}^{\mu},\qquad s=+1,0,-1,
+\end{align}$$
 
 with
 
-$$\mathcal{L}_{E^{+}_{m}}A_{s}^{\mu}=0,\qquad \mathcal{L}_{H}A_{s}^{\mu}=-i\Delta A_{s}^{\mu},\qquad \mathcal{L}_{J_{3}}A_{s}^{\mu}=isA_{s}^{\mu}.$$
+$$\begin{align}
+\mathcal{L}_{E^{+}_{m}}A_{s}^{\mu}=0,\qquad \mathcal{L}_{H}A_{s}^{\mu}=-i\Delta A_{s}^{\mu},\qquad \mathcal{L}_{J_{3}}A_{s}^{\mu}=isA_{s}^{\mu}.
+\end{align}$$
 
 Equivalently, the Cartan weights of the spin component $s$ are
 
-$$\mathcal{L}_{L_{0}}A_{s}^{\mu}=-i\dfrac{\Delta-s}{2}A_{s}^{\mu},\qquad \mathcal{L}_{\bar{L}_{0}}A_{s}^{\mu}=-i\dfrac{\Delta+s}{2}A_{s}^{\mu}.$$
+$$\begin{align}
+\mathcal{L}_{L_{0}}A_{s}^{\mu}=-i\dfrac{\Delta-s}{2}A_{s}^{\mu},\qquad \mathcal{L}_{\bar{L}_{0}}A_{s}^{\mu}=-i\dfrac{\Delta+s}{2}A_{s}^{\mu}.
+\end{align}$$
 
 It is enough to evaluate the Casimir on the highest rotational component $A_{+1}^{\mu}$, which satisfies
 
-$$\mathcal{L}_{J_{+}}A_{+1}^{\mu}=0,\qquad \mathcal{L}_{J_{3}}A_{+1}^{\mu}=iA_{+1}^{\mu}.$$
+$$\begin{align}
+\mathcal{L}_{J_{+}}A_{+1}^{\mu}=0,\qquad \mathcal{L}_{J_{3}}A_{+1}^{\mu}=iA_{+1}^{\mu}.
+\end{align}$$
 
 For this component,
 
-$$h=\dfrac{\Delta-1}{2},\qquad \bar{h}=\dfrac{\Delta+1}{2}.$$
+$$\begin{align}
+h=\dfrac{\Delta-1}{2},\qquad \bar{h}=\dfrac{\Delta+1}{2}.
+\end{align}$$
 
 Using the highest-weight conditions, the Casimir action reduces to
 
@@ -182,11 +224,15 @@ $$\begin{align}
 
 Thus the Proca mass and the highest weight are related by
 
-$$\mu^{2}=(\Delta-1)(\Delta-2).$$
+$$\begin{align}
+\mu^{2}=(\Delta-1)(\Delta-2).
+\end{align}$$
 
 For standard quantization,
 
-$$\Delta=\dfrac{3}{2}+\sqrt{\dfrac{1}{4}+\mu^{2}}.$$
+$$\begin{align}
+\Delta=\dfrac{3}{2}+\sqrt{\dfrac{1}{4}+\mu^{2}}.
+\end{align}$$
 
 we introduce the spin-1 polarization (co)vectors as
 
@@ -204,61 +250,81 @@ A_{s}^{\mu} & =Ne^{-i\Delta t}(1+r^{2})^{-\Delta/2}u_{s}^{\mu}
 
 With the normalization used above, the rotational ladder operators act as
 
-$$
+$$\begin{align}
 \mathcal{L}_{J_{-}}A_{+1}^{\mu}=\sqrt{2}A_{0}^{\mu},\qquad
 \mathcal{L}_{J_{-}}A_{0}^{\mu}=\frac{1}{\sqrt{2}}A_{-1}^{\mu},
-$$
+\end{align}$$
 
 and
 
-$$
+$$\begin{align}
 \mathcal{L}_{J_{+}}A_{0}^{\mu}=-\frac{1}{\sqrt{2}}A_{+1}^{\mu},\qquad
 \mathcal{L}_{J_{+}}A_{-1}^{\mu}=-\sqrt{2}A_{0}^{\mu}.
-$$
+\end{align}$$
 
 Here $N$ is fixed later by the vector symplectic norm. These three fields obey
 
-$$\nabla_{\mu}A_{s}^{\mu}=0,\qquad \left(\nabla^{2}+3-(\Delta-1)(\Delta-2)\right)A_{s}^{\mu}=0.$$
+$$\begin{align}
+\nabla_{\mu}A_{s}^{\mu}=0,\qquad \left(\nabla^{2}+3-(\Delta-1)(\Delta-2)\right)A_{s}^{\mu}=0.
+\end{align}$$
 
 The remaining positive-energy descendants are generated by the $\mathcal{L}_{E^{-}_{m}}$ operators:
 
-$$A^{\mu}_{s;m_{1}\cdots m_{N}}=\mathcal{L}_{E^{-}_{m_{1}}}\cdots \mathcal{L}_{E^{-}_{m_{N}}}A_{s}^{\mu},\qquad s=+1,0,-1,\qquad m_{j}\in\{-1,0,+1\}.$$
+$$\begin{align}
+A^{\mu}_{s;m_{1}\cdots m_{N}}=\mathcal{L}_{E^{-}_{m_{1}}}\cdots \mathcal{L}_{E^{-}_{m_{N}}}A_{s}^{\mu},\qquad s=+1,0,-1,\qquad m_{j}\in\{-1,0,+1\}.
+\end{align}$$
 
 ## massless vector
 
 For Maxwell theory the equation of motion is
 
-$$\nabla_{\nu}F^{\nu\mu}=0,$$
+$$\begin{align}
+\nabla_{\nu}F^{\nu\mu}=0,
+\end{align}$$
 
 with the gauge redundancy
 
-$$A_{\mu}\sim A_{\mu}+\nabla_{\mu}\lambda.$$
+$$\begin{align}
+A_{\mu}\sim A_{\mu}+\nabla_{\mu}\lambda.
+\end{align}$$
 
 We work in the covariant gauge
 
-$$\nabla_{\mu}A^{\mu}=0.$$
+$$\begin{align}
+\nabla_{\mu}A^{\mu}=0.
+\end{align}$$
 
 In this gauge, the Maxwell equation becomes
 
-$$\left(\nabla^{2}+3\right)A^{\mu}=0,$$
+$$\begin{align}
+\left(\nabla^{2}+3\right)A^{\mu}=0,
+\end{align}$$
 
 so the same Casimir relation gives
 
-$$\mathcal{C}_{2}A^{\mu}=0.$$
+$$\begin{align}
+\mathcal{C}_{2}A^{\mu}=0.
+\end{align}$$
 
 The massless limit of the spin-one formula
 
-$$\mu^{2}=(\Delta-1)(\Delta-2)$$
+$$\begin{align}
+\mu^{2}=(\Delta-1)(\Delta-2)
+\end{align}$$
 
 therefore gives two branches,
 
-$$\Delta=1,\qquad \Delta=2.$$
+$$\begin{align}
+\Delta=1,\qquad \Delta=2.
+\end{align}$$
 
 The standard Maxwell photon branch is $\Delta=2$. Its covariant potential is represented by the spin-one $SO(3)$ triplet $A_{s}^{\mu}$ with $s=+1,0,-1$, evaluated at $\Delta=2$. The component $s=0$ is part of the covariant vector potential; the physical Hilbert space is obtained only after imposing the gauge identification.
 
 The $\Delta=1$ branch is a residual-gauge branch. It is obtained by evaluating the same primary triplet at $\Delta=1$, and can be written as a pure gauge mode
 
-$$\left.A_{s}^{\mu}\right|_{\Delta=1}=\nabla^{\mu}\lambda_{s},$$
+$$\begin{align}
+\left.A_{s}^{\mu}\right|_{\Delta=1}=\nabla^{\mu}\lambda_{s},
+\end{align}$$
 
 with
 
@@ -270,7 +336,9 @@ $$\begin{align}
 
 These gauge parameters obey
 
-$$\nabla^{2}\lambda_{s}=0.$$
+$$\begin{align}
+\nabla^{2}\lambda_{s}=0.
+\end{align}$$
 
 Thus the covariant potential retains the full $SO(3)$ primary triplet, while the residual-gauge branch and the longitudinal photon polarization are removed at the level of the gauge quotient. In the flat-space limit this quotient leaves the two helicity polarizations.
 
@@ -278,11 +346,15 @@ Thus the covariant potential retains the full $SO(3)$ primary triplet, while the
 
 For a symmetric two-tensor, the Lie derivative is
 
-$$\left(\mathcal{L}_{K}h\right)_{\mu\nu}=K^{\rho}\nabla_{\rho}h_{\mu\nu}+h_{\rho\nu}\nabla_{\mu}K^{\rho}+h_{\mu\rho}\nabla_{\nu}K^{\rho}.$$
+$$\begin{align}
+\left(\mathcal{L}_{K}h\right)_{\mu\nu}=K^{\rho}\nabla_{\rho}h_{\mu\nu}+h_{\rho\nu}\nabla_{\mu}K^{\rho}+h_{\mu\rho}\nabla_{\nu}K^{\rho}.
+\end{align}$$
 
 With the same quadratic Casimir, its action on the transverse-traceless spin-two sector is
 
-$$\mathcal{C}_{2}h_{\mu\nu}=(\nabla^{2}+8)h_{\mu\nu}.$$
+$$\begin{align}
+\mathcal{C}_{2}h_{\mu\nu}=(\nabla^{2}+8)h_{\mu\nu}.
+\end{align}$$
 
 We consider the second-order massive spin-two equation in the transverse-traceless sector,
 
@@ -292,27 +364,39 @@ $$\begin{align}
 
 In this sector,
 
-$$\mathcal{C}_{2}h_{\mu\nu}=(\mu^{2}+6)h_{\mu\nu}.$$
+$$\begin{align}
+\mathcal{C}_{2}h_{\mu\nu}=(\mu^{2}+6)h_{\mu\nu}.
+\end{align}$$
 
 The spin-two primary is a quintet under the spatial rotation algebra. We write it as
 
-$$h_{s,\mu\nu},\qquad s=+2,+1,0,-1,-2,$$
+$$\begin{align}
+h_{s,\mu\nu},\qquad s=+2,+1,0,-1,-2,
+\end{align}$$
 
 with
 
-$$\mathcal{L}_{E^{+}_{m}}h_{s,\mu\nu}=0,\qquad \mathcal{L}_{H}h_{s,\mu\nu}=-i\Delta h_{s,\mu\nu},\qquad \mathcal{L}_{J_{3}}h_{s,\mu\nu}=is h_{s,\mu\nu}.$$
+$$\begin{align}
+\mathcal{L}_{E^{+}_{m}}h_{s,\mu\nu}=0,\qquad \mathcal{L}_{H}h_{s,\mu\nu}=-i\Delta h_{s,\mu\nu},\qquad \mathcal{L}_{J_{3}}h_{s,\mu\nu}=is h_{s,\mu\nu}.
+\end{align}$$
 
 Equivalently, the Cartan weights of the spin component $s$ are
 
-$$\mathcal{L}_{L_{0}}h_{s,\mu\nu}=-i\dfrac{\Delta-s}{2}h_{s,\mu\nu},\qquad \mathcal{L}_{\bar{L}_{0}}h_{s,\mu\nu}=-i\dfrac{\Delta+s}{2}h_{s,\mu\nu}.$$
+$$\begin{align}
+\mathcal{L}_{L_{0}}h_{s,\mu\nu}=-i\dfrac{\Delta-s}{2}h_{s,\mu\nu},\qquad \mathcal{L}_{\bar{L}_{0}}h_{s,\mu\nu}=-i\dfrac{\Delta+s}{2}h_{s,\mu\nu}.
+\end{align}$$
 
 It is enough to evaluate the Casimir on the highest rotational component $h_{+2,\mu\nu}$, which satisfies
 
-$$\mathcal{L}_{J_{+}}h_{+2,\mu\nu}=0,\qquad \mathcal{L}_{J_{3}}h_{+2,\mu\nu}=2i h_{+2,\mu\nu}.$$
+$$\begin{align}
+\mathcal{L}_{J_{+}}h_{+2,\mu\nu}=0,\qquad \mathcal{L}_{J_{3}}h_{+2,\mu\nu}=2i h_{+2,\mu\nu}.
+\end{align}$$
 
 For this component,
 
-$$h=\dfrac{\Delta-2}{2},\qquad \bar{h}=\dfrac{\Delta+2}{2}.$$
+$$\begin{align}
+h=\dfrac{\Delta-2}{2},\qquad \bar{h}=\dfrac{\Delta+2}{2}.
+\end{align}$$
 
 Using the highest-weight conditions, the Casimir action reduces to
 
@@ -323,11 +407,15 @@ $$\begin{align}
 
 Thus the mass and the highest weight are related by
 
-$$\mu^{2}=\Delta(\Delta-3).$$
+$$\begin{align}
+\mu^{2}=\Delta(\Delta-3).
+\end{align}$$
 
 For standard quantization,
 
-$$\Delta=\dfrac{3}{2}+\sqrt{\dfrac{9}{4}+\mu^{2}}.$$
+$$\begin{align}
+\Delta=\dfrac{3}{2}+\sqrt{\dfrac{9}{4}+\mu^{2}}.
+\end{align}$$
 
 The regular transverse-traceless primary quintet can be written in terms of the following spin-one polarization covectors, whose components are ordered as $(t,r,\theta,\phi)$:
 
@@ -350,37 +438,53 @@ $$\begin{align}
 
 Here $N$ is fixed later by the spin-two symplectic norm. These five fields obey
 
-$$g^{\mu\nu}h_{s,\mu\nu}=0,\qquad \nabla^{\mu}h_{s,\mu\nu}=0,\qquad \left(\nabla^{2}+2-\Delta(\Delta-3)\right)h_{s,\mu\nu}=0.$$
+$$\begin{align}
+g^{\mu\nu}h_{s,\mu\nu}=0,\qquad \nabla^{\mu}h_{s,\mu\nu}=0,\qquad \left(\nabla^{2}+2-\Delta(\Delta-3)\right)h_{s,\mu\nu}=0.
+\end{align}$$
 
 The remaining positive-energy descendants are generated by the $\mathcal{L}_{E^{-}_{m}}$ operators:
 
-$$h_{s;m_{1}\cdots m_{N},\mu\nu}=\mathcal{L}_{E^{-}_{m_{1}}}\cdots \mathcal{L}_{E^{-}_{m_{N}}}h_{s,\mu\nu},\qquad s=+2,+1,0,-1,-2,\qquad m_{j}\in\{-1,0,+1\}.$$
+$$\begin{align}
+h_{s;m_{1}\cdots m_{N},\mu\nu}=\mathcal{L}_{E^{-}_{m_{1}}}\cdots \mathcal{L}_{E^{-}_{m_{N}}}h_{s,\mu\nu},\qquad s=+2,+1,0,-1,-2,\qquad m_{j}\in\{-1,0,+1\}.
+\end{align}$$
 
 ## massless TT tensor
 
 For the massless Einstein equation in TT gauge, the field equation is
 
-$$\left(\nabla^{2}+2\right)h_{\mu\nu}=0.$$
+$$\begin{align}
+\left(\nabla^{2}+2\right)h_{\mu\nu}=0.
+\end{align}$$
 
 This is the $\mu^{2}=0$ limit of the massive spin-two relation
 
-$$\mu^{2}=\Delta(\Delta-3),$$
+$$\begin{align}
+\mu^{2}=\Delta(\Delta-3),
+\end{align}$$
 
 so the two roots are
 
-$$\Delta=0,\qquad \Delta=3.$$
+$$\begin{align}
+\Delta=0,\qquad \Delta=3.
+\end{align}$$
 
 The standard normalizable graviton branch is $\Delta=3$. Its covariant metric perturbation is represented by the spin-two $SO(3)$ quintet $h_{s,\mu\nu}$ with $s=+2,+1,0,-1,-2$, evaluated at $\Delta=3$. The linearized diffeomorphism redundancy is
 
-$$h_{\mu\nu}\sim h_{\mu\nu}+\nabla_{\mu}\zeta_{\nu}+\nabla_{\nu}\zeta_{\mu}.$$
+$$\begin{align}
+h_{\mu\nu}\sim h_{\mu\nu}+\nabla_{\mu}\zeta_{\nu}+\nabla_{\nu}\zeta_{\mu}.
+\end{align}$$
 
 In TT gauge, residual gauge parameters satisfy
 
-$$\nabla^{\mu}\zeta_{\mu}=0,\qquad \left(\nabla^{2}-3\right)\zeta_{\mu}=0.$$
+$$\begin{align}
+\nabla^{\mu}\zeta_{\mu}=0,\qquad \left(\nabla^{2}-3\right)\zeta_{\mu}=0.
+\end{align}$$
 
 The $\Delta=0$ branch is a residual-diffeomorphism branch. Evaluating the same quintet at $\Delta=0$, the highest spin component can be written as
 
-$$\left.h_{+2,\mu\nu}\right|_{\Delta=0}=\nabla_{\mu}\zeta_{+2,\nu}+\nabla_{\nu}\zeta_{+2,\mu},$$
+$$\begin{align}
+\left.h_{+2,\mu\nu}\right|_{\Delta=0}=\nabla_{\mu}\zeta_{+2,\nu}+\nabla_{\nu}\zeta_{+2,\mu},
+\end{align}$$
 
 where the gauge parameters are the following covectors, with components ordered as $\displaystyle{(t,r,\theta,\phi)}$:
 
@@ -396,6 +500,8 @@ They are generated with the same rotational ladder normalization as the $\displa
 
 They obey
 
-$$\nabla^{\mu}\zeta_{s,\mu}=0,\qquad \left(\nabla^{2}-3\right)\zeta_{s,\mu}=0,\qquad \left.h_{s,\mu\nu}\right|_{\Delta=0}=\nabla_{\mu}\zeta_{s,\nu}+\nabla_{\nu}\zeta_{s,\mu}.$$
+$$\begin{align}
+\nabla^{\mu}\zeta_{s,\mu}=0,\qquad \left(\nabla^{2}-3\right)\zeta_{s,\mu}=0,\qquad \left.h_{s,\mu\nu}\right|_{\Delta=0}=\nabla_{\mu}\zeta_{s,\nu}+\nabla_{\nu}\zeta_{s,\mu}.
+\end{align}$$
 
 Thus the covariant metric perturbation retains the full $SO(3)$ primary quintet before the gauge quotient. The quotient removes the gauge components, and in the flat-space limit the physical polarizations reduce to the two helicity-two polarizations.

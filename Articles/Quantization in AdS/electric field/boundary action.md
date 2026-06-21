@@ -1,4 +1,4 @@
-we have already derived the [[Articles/Quantization in AdS3/electric field/solving modes/highest weight|highest weight]] for Maxwell theory in $\displaystyle{\mathrm{AdS}_{3}}$. the variation of the action leads to a boundary term supported on $\displaystyle{\Gamma}$, which is given by
+we have already derived the [[Articles/Quantization in AdS/electric field/solving modes/highest weight|highest weight]] for Maxwell theory in $\displaystyle{\mathrm{AdS}_{3}}$. the variation of the action leads to a boundary term supported on $\displaystyle{\Gamma}$, which is given by
 
 $$\begin{align}
 -\int _{\Gamma}\mathrm{d}^{2}x\sqrt{ -\gamma }n_{\mu}F^{\mu \nu}\delta A_{\nu}= \mathcal{O}(r^{1})

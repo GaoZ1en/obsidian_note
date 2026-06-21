@@ -2,21 +2,29 @@
 
 Set
 
-$$g_{\mu\nu}=g^{(0)}_{\mu\nu}+h_{\mu\nu},\qquad h\equiv g^{(0)\mu\nu}h_{\mu\nu}.$$
+$$\begin{align}
+g_{\mu\nu}=g^{(0)}_{\mu\nu}+h_{\mu\nu},\qquad h\equiv g^{(0)\mu\nu}h_{\mu\nu}.
+\end{align}$$
 
 The action through second order is written as
 
-$$I_{\rm GMG}=\frac{1}{16\pi G}\int d^3x\sqrt{-g^{(0)}}\left(\mathcal L^{(0)}+\mathcal L^{(1)}+\mathcal L^{(2)}\right)+\mathcal O(h^3),$$
+$$\begin{align}
+I_{\rm GMG}=\frac{1}{16\pi G}\int d^3x\sqrt{-g^{(0)}}\left(\mathcal L^{(0)}+\mathcal L^{(1)}+\mathcal L^{(2)}\right)+\mathcal O(h^3),
+\end{align}$$
 
 The coefficients in this section are not TT-gauge-fixed, and no integration by parts has been performed.
 
 with
 
-$$\mathcal L^{(n)}=\mathcal L_{\rm PG}^{(n)}+\frac{1}{\mu}L_{\rm CS}^{(n)}+\frac{1}{m^2}\mathcal L_{\rm NMG}^{(n)}.$$
+$$\begin{align}
+\mathcal L^{(n)}=\mathcal L_{\rm PG}^{(n)}+\frac{1}{\mu}L_{\rm CS}^{(n)}+\frac{1}{m^2}\mathcal L_{\rm NMG}^{(n)}.
+\end{align}$$
 
 Here $\mathcal L_{\rm PG}^{(n)}$ comes from $\sqrt{-g}(R+2)$, while $\mathcal L_{\rm NMG}^{(n)}$ comes from
 
-$$\sqrt{-g}\left[\frac{1}{2}-R_{\mu\nu}R^{\mu\nu}+\frac{3}{8}R^2\right].$$
+$$\begin{align}
+\sqrt{-g}\left[\frac{1}{2}-R_{\mu\nu}R^{\mu\nu}+\frac{3}{8}R^2\right].
+\end{align}$$
 
 The pure-gravity contribution is
 
@@ -45,11 +53,15 @@ $$\begin{align}
 
 For the Chern-Simons density, use the convention in the action:
 
-$$\sqrt{-g}\,L_{\rm CS}=\frac{1}{2}\tilde\varepsilon^{\lambda\mu\nu}\Gamma^\rho{}_{\lambda\sigma}\left(\partial_\mu\Gamma^\sigma{}_{\rho\nu}+\frac{2}{3}\Gamma^\sigma{}_{\mu\tau}\Gamma^\tau{}_{\nu\rho}\right),\qquad \tilde\varepsilon^{\lambda\mu\nu}=\sqrt{-g^{(0)}}\,\varepsilon^{(0)\lambda\mu\nu}.$$
+$$\begin{align}
+\sqrt{-g}\,L_{\rm CS}=\frac{1}{2}\tilde\varepsilon^{\lambda\mu\nu}\Gamma^\rho{}_{\lambda\sigma}\left(\partial_\mu\Gamma^\sigma{}_{\rho\nu}+\frac{2}{3}\Gamma^\sigma{}_{\mu\tau}\Gamma^\tau{}_{\nu\rho}\right),\qquad \tilde\varepsilon^{\lambda\mu\nu}=\sqrt{-g^{(0)}}\,\varepsilon^{(0)\lambda\mu\nu}.
+\end{align}$$
 
 Thus no determinant expansion multiplies the CS coefficients after factoring out $\sqrt{-g^{(0)}}$. With
 
-$$\Gamma^\rho{}_{\mu\nu}=\Gamma^{(0)\rho}{}_{\mu\nu}+\Gamma^{(1)\rho}{}_{\mu\nu}+\Gamma^{(2)\rho}{}_{\mu\nu}+\mathcal O(h^3),$$
+$$\begin{align}
+\Gamma^\rho{}_{\mu\nu}=\Gamma^{(0)\rho}{}_{\mu\nu}+\Gamma^{(1)\rho}{}_{\mu\nu}+\Gamma^{(2)\rho}{}_{\mu\nu}+\mathcal O(h^3),
+\end{align}$$
 
 where
 
@@ -123,7 +135,9 @@ L_{\rm CS,TT}^{(2)}&=\frac{1}{2}\varepsilon^{(0)\lambda\mu\nu}\bigg[\Gamma_{\rm 
 
 Let $\delta h_{\mu\nu}$ denote the vertical one-form used by xCPS, and set $\Box\equiv\nabla^{(0)}_\rho\nabla^{(0)\rho}$. In the xCPS normal convention, the first variation of a gauge-fixed density takes the form
 
-$$\delta\mathcal L_X=\mathcal E_X^{\mu\nu}\delta h_{\mu\nu}+\nabla^{(0)}_\mu\Theta_X^\mu,$$
+$$\begin{align}
+\delta\mathcal L_X=\mathcal E_X^{\mu\nu}\delta h_{\mu\nu}+\nabla^{(0)}_\mu\Theta_X^\mu,
+\end{align}$$
 
 and the symplectic current is $j_X^\mu=\delta\Theta_X^\mu$. For the pure-gravity density,
 
@@ -143,7 +157,9 @@ j_{\rm NMG}^\mu&=-\frac{9}{4}\delta h^{\nu\rho}\wedge\nabla^{(0)\mu}\delta h_{\n
 
 Thus the xCPS symplectic form for the tensorial PG and NMG gauge-fixed pieces is
 
-$$\Omega_{\rm PG+NMG}^{\rm xCPS}=\frac{1}{16\pi G}\int_\Sigma\mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu\left(j_{\rm PG}^\mu+\frac{1}{m^2}j_{\rm NMG}^\mu\right).$$
+$$\begin{align}
+\Omega_{\rm PG+NMG}^{\rm xCPS}=\frac{1}{16\pi G}\int_\Sigma\mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu\left(j_{\rm PG}^\mu+\frac{1}{m^2}j_{\rm NMG}^\mu\right).
+\end{align}$$
 
 The raw Chern-Simons representative above is a connection expression containing $\partial_\mu\Gamma$ and background Christoffels, not a tensorial xCPS Lagrangian scalar. Therefore xCPS does not directly compute $j_{\rm CS}^\mu$ from $L_{\rm CS,TT}^{(n)}$ without either a coordinate-component treatment or replacing the CS density by a covariant representative differing by a total derivative.
 
@@ -157,7 +173,9 @@ S_{\text{CS}} & =\frac{1}{32\pi G\mu}\int \operatorname{Tr}\left(\Gamma\wedge\ma
 
 After removing the overall prefactor, the first variation of the CS three-form is
 
-$$\delta\operatorname{Tr}\left(\Gamma\wedge\mathrm{d}\Gamma+\frac{2}{3}\Gamma\wedge\Gamma\wedge\Gamma\right)=2\operatorname{Tr}\left(\delta\Gamma\wedge R\right)-\mathrm{d}\operatorname{Tr}\left(\Gamma\wedge\delta\Gamma\right).$$
+$$\begin{align}
+\delta\operatorname{Tr}\left(\Gamma\wedge\mathrm{d}\Gamma+\frac{2}{3}\Gamma\wedge\Gamma\wedge\Gamma\right)=2\operatorname{Tr}\left(\delta\Gamma\wedge R\right)-\mathrm{d}\operatorname{Tr}\left(\Gamma\wedge\delta\Gamma\right).
+\end{align}$$
 
 Thus the CS contribution to the Lee-Wald potential and symplectic current, with the overall prefactor included, is
 
@@ -168,11 +186,15 @@ $$\begin{align}
 
 Equivalently, for the density convention used above,
 
-$$\sqrt{-g}\,L_{\rm CS}=\frac{1}{2}\tilde\varepsilon^{\lambda\mu\nu}\Gamma^\rho{}_{\lambda\sigma}\left(\partial_\mu\Gamma^\sigma{}_{\rho\nu}+\frac{2}{3}\Gamma^\sigma{}_{\mu\tau}\Gamma^\tau{}_{\nu\rho}\right),$$
+$$\begin{align}
+\sqrt{-g}\,L_{\rm CS}=\frac{1}{2}\tilde\varepsilon^{\lambda\mu\nu}\Gamma^\rho{}_{\lambda\sigma}\left(\partial_\mu\Gamma^\sigma{}_{\rho\nu}+\frac{2}{3}\Gamma^\sigma{}_{\mu\tau}\Gamma^\tau{}_{\nu\rho}\right),
+\end{align}$$
 
 the variation is
 
-$$\delta\left(\sqrt{-g}\,L_{\rm CS}\right)=\frac{1}{2}\tilde\varepsilon^{\lambda\mu\nu}\delta\Gamma^\rho{}_{\lambda\sigma}R^\sigma{}_{\rho\mu\nu}+\partial_\mu\tilde\Theta^\mu_{\rm CS},$$
+$$\begin{align}
+\delta\left(\sqrt{-g}\,L_{\rm CS}\right)=\frac{1}{2}\tilde\varepsilon^{\lambda\mu\nu}\delta\Gamma^\rho{}_{\lambda\sigma}R^\sigma{}_{\rho\mu\nu}+\partial_\mu\tilde\Theta^\mu_{\rm CS},
+\end{align}$$
 
 with
 
@@ -183,12 +205,18 @@ $$\begin{align}
 
 On the linearized phase space around $g^{(0)}_{\mu\nu}$, the quadratic symplectic current only needs the first-order connection variation
 
-$$\delta\Gamma^{(1)\rho}{}_{\mu\nu}=\frac{1}{2}g^{(0)\rho\sigma}\left(\nabla^{(0)}_\mu\delta h_{\sigma\nu}+\nabla^{(0)}_\nu\delta h_{\mu\sigma}-\nabla^{(0)}_\sigma\delta h_{\mu\nu}\right).$$
+$$\begin{align}
+\delta\Gamma^{(1)\rho}{}_{\mu\nu}=\frac{1}{2}g^{(0)\rho\sigma}\left(\nabla^{(0)}_\mu\delta h_{\sigma\nu}+\nabla^{(0)}_\nu\delta h_{\mu\sigma}-\nabla^{(0)}_\sigma\delta h_{\mu\nu}\right).
+\end{align}$$
 
 Therefore the CS current entering the quadratic GMG symplectic form is
 
-$$j_{\rm CS}^{(2)\mu}=-\frac{1}{2}\varepsilon^{(0)\mu\nu\rho}\delta\Gamma^{(1)\alpha}{}_{\nu\beta}\wedge\delta\Gamma^{(1)\beta}{}_{\rho\alpha},$$
+$$\begin{align}
+j_{\rm CS}^{(2)\mu}=-\frac{1}{2}\varepsilon^{(0)\mu\nu\rho}\delta\Gamma^{(1)\alpha}{}_{\nu\beta}\wedge\delta\Gamma^{(1)\beta}{}_{\rho\alpha},
+\end{align}$$
 
 and
 
-$$\Omega_{\rm CS}^{(2)}=\frac{1}{16\pi G\mu}\int_\Sigma\mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu j_{\rm CS}^{(2)\mu}.$$
+$$\begin{align}
+\Omega_{\rm CS}^{(2)}=\frac{1}{16\pi G\mu}\int_\Sigma\mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu j_{\rm CS}^{(2)\mu}.
+\end{align}$$

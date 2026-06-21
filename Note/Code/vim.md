@@ -4,4 +4,3 @@
 ```vim 
 :起始行号,$s/C\.\(\d\+\)/\=printf('C.%d', submatch(1)+5)/g
 ```
-

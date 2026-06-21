@@ -1,4 +1,5 @@
 # Mock Group Theory Exam 5 (Hard Mode)
+
 *Time Limit: 2.5 Hours | Focus: Calculation & Conceptual Depth*
 
 ## Part 1: Conceptual Foundations
@@ -10,7 +11,7 @@
 a) $SO(3)$ is not simply connected because it has a non-trivial fundamental group, specifically $\pi_1(SO(3)) \cong \mathbb{Z}_2$. This means there exist loops in $SO(3)$ that cannot be continuously contracted to a point. In contrast, $SU(2)$ is simply connected, meaning every loop can be contracted to a point. The relationship between them is given by the double cover homomorphism: $SU(2) \to SO(3)$, where each element of $SO(3)$ corresponds to two elements in $SU(2)$. The kernel of this homomorphism is $\{\pm I\}$, which reflects the two-to-one mapping.
 b) A conjugacy class of $S_n$ splits into two classes in $A_n$ if and only if the permutations in that class can be expressed as products of an even number of transpositions and the cycle structure of the permutations is such that all cycles are of odd length or there are an even number of cycles of even length. This ensures that the permutations remain even when restricted to $A_n$.
 
-2.  **[Point Group Structure $O$]**
+1.  **[Point Group Structure $O$]**
     Consider the Octahedral Group $O$ (rotational symmetry of a cube, Order 24).
     a) Show that $O \cong S_4$ by identifying the objects being permuted.
     b) Identify a subgroup of $O$ isomorphic to $D_4$. Is it an invariant subgroup?
@@ -43,7 +44,7 @@ c) $\displaystyle{O_{h}\cong O\times\left\{E,I\right\}}$, with order $\displayst
 
 ## Part 2: Representations & Projection Operators
 
-3.  **[Function Space Projection]**
+1.  **[Function Space Projection]**
     Group $D_3$ (Order 6). Irreps: $A_1, A_2, E$.
     Consider the generic function $f(x,y,z) = x^2$.
     Use the **Projection Operator** method to construct the symmetry-adapted basis functions belonging to the **E representation** derived from $x^2$.
@@ -76,8 +77,7 @@ P^{E}\phi _{3} & =\frac{2}{3}(x^{2}-y^{2})-\frac{1}{3}\left(  -\frac{1}{2}(x^{2}
 
 thus the symmetry-adapted basis functions belonging to the E representation derived from $x^2$ are $\{xy, x^2 - y^2\}$.
 
-
-4.  **[Product Representation]**
+1.  **[Product Representation]**
     In the group $C_{4v}$ (Order 8), considering the irreps $A_1, A_2, B_1, B_2, E$.
     a) Determine the decomposition of the direct product $E \otimes E$.
     b) Determine the decomposition of $E \otimes B_1$.
@@ -126,7 +126,7 @@ $E \otimes B_1 \cong E$.
 
 ## Part 3: Symmetric Group $S_n$
 
-5.  **[Complex Matrix Elements]**
+1.  **[Complex Matrix Elements]**
     Consider the partition $\lambda = [3,1]$ of $S_4$.
     Label the standard tableaux $T_1, T_2, T_3$.
     a) Calculate the representation matrix for the **non-adjacent** transposition $(1,3)$ in the standard orthogonal representation.
@@ -134,6 +134,7 @@ $E \otimes B_1 \cong E$.
     b) Verify that the trace of your result matches the character $\chi^{[3,1]}((13))$.
 *sol*.
 a) use $\displaystyle{(13)=(23)(12)(23)}$, and we have
+
 $$\begin{align}
 D(12) & =\begin{pmatrix}
 1 & 0 & 0 \\
@@ -147,6 +148,7 @@ D(23) & =\begin{pmatrix}
 \end{pmatrix} \\
 \implies D(13) & =D(23)D(12)D(23)
 \end{align}$$
+
 b) the character table of $\displaystyle{S_{4}}$ is given by
 
 | Irrep     | E   | 6(12) | 8(123) | 6(1234) | 3(12)(34) |
@@ -159,31 +161,35 @@ b) the character table of $\displaystyle{S_{4}}$ is given by
 
 which gives $\displaystyle{\chi ^{[3,1]}((13))=1}$, matching the trace of our calculated matrix.
 
-
-6.  **[Outer Product]**
+1.  **[Outer Product]**
     Consider the "Outer Product" of representations (related to Littlewood-Richardson).
     We take an irrep $[2]$ of $S_2$ acting on indices $\{1,2\}$ and $[1]$ of $S_1$ acting on $\{3\}$.
     Induce this product representation from $S_2 \times S_1$ up to $S_3$.
     Decompose the result into $S_3$ irreps.
 我寻思着你倒是来点大点儿的群啊
+
 ## Part 4: Continuous Groups (SU(2)/SO(3))
 
-7.  **[Inverse Problem]**
+1.  **[Inverse Problem]**
     Given the $SU(2)$ matrix:
-    $$ U = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix} $$
+
+$$
+U = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}
+$$
+
     a) Determine the rotation axis $\hat{n}$ and rotation angle $\theta$ corresponding to this element.
     b) If this operator acts on the spin state $|\psi\rangle = \binom{1}{0}$ (Spin Up along z), what is the expectation value $\langle S_y \rangle$ of the new state?
 *sol*.
 a) since $\displaystyle{U(\hat{n},\theta)=\cos \frac{\theta}{2}I-i\sin \frac{\theta}{2}\hat{n}\cdot \sigma}$, we haev $\displaystyle{\hat{n}=\hat{x},\theta=\pi}$
 b) I don't want to do any more Dirac notation anymore...
 
-
-8.  **[Clebsch-Gordan & Tensors]**
+1.  **[Clebsch-Gordan & Tensors]**
     Consider the product of two spin-1/2 states: $\frac{1}{2} \otimes \frac{1}{2} = 0 \oplus 1$.
     The triplet states $|1, m\rangle$ are symmetric, the singlet $|0,0\rangle$ is antisymmetric.
     Construct the explicit $4 \times 4$ matrix for the rotation operator $D^{(1/2 \otimes 1/2)}(\hat{z}, \alpha)$ and show it is block diagonal in the coupled basis.
 *sol*.
 we have
+
 $$\begin{align}
 D^{(1/2)}(\hat{z},\alpha) & =\begin{pmatrix}
 e^{-i\alpha/2} & 0 \\ 0 & e^{i\alpha/2} \end{pmatrix} \\
@@ -195,4 +201,3 @@ e^{-i\alpha} & 0 & 0 & 0 \\
 0 & 0 & 0 & e^{i\alpha}
 \end{pmatrix}
 \end{align}$$
-

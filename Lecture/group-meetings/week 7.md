@@ -1,12 +1,14 @@
 ## Zhe Feng
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 S_{CS} & =\int_{M_{z_{0}}}\mathbf{L}_{CS}+\int_{\Gamma_{\varepsilon}}\int_{\varepsilon}^{z_{0}}\varepsilon^{(0)ab}\left[D_{a}^{(0)}g_{zb}-\partial_{z}(zg^{(0)}_{ac}\Gamma^{(0)c}_{~~~~~~bd}g^{(0)de}g_{ze})+\mathcal{O}(z^{1})\right]\mathrm{d}z\cdot \frac{1}{2!}\varepsilon_{a_{1}a_{2}}^{(0)}\mathrm{d}x^{a_{1}}\wedge\mathrm{d}x^{a_{2}}
 \end{align}
 $$
 
-$$\tag{.}
+$$
+\tag{.}
 \begin{align}
 
 \end{align}
@@ -30,13 +32,8 @@ $$
 
 ## Yu-Ting Wen
 
-
-
 ## Zi-Qian Hu
-
-
 
 ## Xiao-Shuai Wang
 
 将要调研什么东西能够用这个框架计算，到时候看看能做什么
-

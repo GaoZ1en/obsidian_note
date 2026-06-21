@@ -85,17 +85,21 @@ E^{\alpha} & =B^{\alpha \beta}\phi _{\beta}-C^{\alpha a}\dot{x}_{a} \\
 
 the eom gives the following solutions
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 x_{a} & =V_{a}t+X_{a} \\
 \phi _{\alpha} & =(B^{-1})_{\alpha \beta}C^{\beta b}V_{b}
-\end{align}$$
+\end{align}
+$$
 
 then the symplectic form becomes
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 \omega & =(A^{ab}-(B^{-1})_{\alpha \beta}C^{\alpha a}C^{\beta b})\delta V_{b}\wedge \delta x_{a} \\
  & =\delta p_{0}^{a}\wedge \delta x_{0,a}
-\end{align}$$
+\end{align}
+$$
 
 $$\begin{align}
 x_{a} & =V_{a}t+X_{a} \\
@@ -297,4 +301,3 @@ $$\begin{align}
  & =(1-\lambda ^{2})\delta x_{0}\wedge \delta v_{0} \\
  & =(1-\lambda ^{2})\delta v_{0}\wedge \delta x_{0}
 \end{align}$$
-

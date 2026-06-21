@@ -9,4 +9,3 @@ pdf: "[[Attachments/Assets/Rotating Black Holes in Higher Dimensions with a Cosm
 url: https://arxiv.org/abs/hep-th/0409155v1
 tags:
 ---
-

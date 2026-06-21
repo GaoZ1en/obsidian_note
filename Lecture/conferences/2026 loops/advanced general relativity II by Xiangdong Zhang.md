@@ -1,8 +1,8 @@
 1. basic elements of $\displaystyle{\mathrm{SU}(2)}$ group
-2. connection dynamics from canonical transformation
-3. connection dynamics from Lagrangian
-4. connection dynamics beyond general relativity
-5. holonomy
+1. connection dynamics from canonical transformation
+1. connection dynamics from Lagrangian
+1. connection dynamics beyond general relativity
+1. holonomy
 
 ---
 
@@ -113,4 +113,3 @@ S & =\frac{1}{2\kappa}\int _{M} \left( R+\frac{1}{2\beta}\star R \right)\wedge e
 \end{align}$$
 
 not so intereted...
-

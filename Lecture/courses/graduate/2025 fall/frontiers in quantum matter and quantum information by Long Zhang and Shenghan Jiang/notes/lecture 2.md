@@ -39,7 +39,7 @@ $$\begin{align}
 \braket{ \mathcal{O} } & = \braket{ g\mathcal{O}g^{-1} } =-\braket{ \mathcal{O} } \implies\braket{ \mathcal{O} } =0
 \end{align}$$
 
-while in the SSB phase, the expectation value of order parameter is non-zero. 
+while in the SSB phase, the expectation value of order parameter is non-zero.
 
 ODLRO (off-diagonal long range order) is another feature of SSB, and can be used to distinguish non-SSB phase and SSB phase. consider the correlation function of order parameter
 
@@ -60,4 +60,4 @@ H_{\mathrm{eff}} & =(2h+E_{0})\hat{1}-J\sum ^{N}_{j=1}\left(\ket{j+1} \bra{j} +\
 k & =\frac{2\pi}{N}n_{k},n_{k}=0,1,\dots,N-1
 \end{align}$$
 
-which is a Hamiltonian of free particle. when $\displaystyle{h\sim J}$, charge condensation, and we get SSB. 
+which is a Hamiltonian of free particle. when $\displaystyle{h\sim J}$, charge condensation, and we get SSB.

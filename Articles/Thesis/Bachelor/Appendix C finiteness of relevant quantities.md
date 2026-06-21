@@ -4,7 +4,8 @@
 
 首先我们介绍一种证明特定类型积分有限的方法。考虑函数 $\displaystyle{f(x)=\mathcal{O}(z^{-1})}$，或者更加精确地有
 
-$$\tag{C.1}
+$$
+\tag{C.1}
 \begin{align}
 f(x) & =\frac{c}{z}+\omicron\left( \frac{1}{z^{1-s}} \right)
 \end{align}
@@ -12,7 +13,8 @@ $$
 
 其中 $\displaystyle{s>0}$ 。我们考虑下面的积分
 
-$$\tag{C.2}
+$$
+\tag{C.2}
 \begin{align}
 F(\varepsilon) & =\int^{z_{0}}_{\varepsilon}\mathrm{d}zf(z)
 \end{align}
@@ -20,7 +22,8 @@ $$
 
 以及其在 $\displaystyle{\varepsilon\to 0}$ 时的渐进行为。我们首先将积分 $\displaystyle{F(\varepsilon)}$ 改写为
 
-$$\tag{C.3}
+$$
+\tag{C.3}
 \begin{align}
 F(\varepsilon) & =\int^{z_{0}}_{\varepsilon}\mathrm{d}z\left[\frac{\partial}{\partial z}(zf(z)\log z)-\log z \frac{\partial}{\partial z}(zf(z))\right] \\
  & =z_{0}f(z_{0})\log z_{0}-\varepsilon f(\varepsilon)\log \varepsilon-\int^{z_{0}}_{\varepsilon}\mathrm{d}z\log z\partial_{z}(zf(z))
@@ -29,7 +32,8 @@ $$
 
 定义
 
-$$\tag{C.4}
+$$
+\tag{C.4}
 \begin{align}
 H(\varepsilon) & =z_{0}f(z_{0})\log z_{0}-\varepsilon f(\varepsilon) \log \varepsilon-\int^{z_{0}}_{0}\mathrm{d}z\log z(zf(z))
 \end{align}
@@ -37,7 +41,8 @@ $$
 
 由于(C.1)，(C.4)是良定义的。因此我们有
 
-$$\tag{C.5}
+$$
+\tag{C.5}
 \begin{align}
 F(\varepsilon)-H(\varepsilon) & =\int^{\varepsilon}_{0}\log z\partial_{z}(zf(z)) \\
  & =\omicron(\varepsilon^{s}\log \varepsilon)
@@ -48,7 +53,8 @@ $$
 
 计算拉氏量密度 $\displaystyle{\mathbf{L}}$ 和 $\displaystyle{\ell}$ 的渐进行为
 
-$$\tag{C.6}
+$$
+\tag{C.6}
 \begin{align}
 \mathbf{L} & =\frac{1}{16\pi G}\left[\frac{4}{z^{3}}-\frac{1}{z}R^{(0)}+2\partial_{z}\left( g_{zz}-\frac{1}{z^{2}} \right)+2g^{(0)ab}\partial_{z}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)+zg^{(0)ab}\partial_{z}^{2}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)\right. \\
  & \left.-2zg^{(0)ab}D_{a}^{(0)}\partial_{z}g_{zb}-4zg^{(0)ab}g_{za}g_{zb}-4z^{2}g^{(0)ab}g_{za}\partial_{z}g_{zb}+\mathcal{O}(z)\right]\cdot \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}z\wedge \mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}} \\
@@ -59,7 +65,8 @@ $$
 
 那么对于作用量的体内项，可以做如下分解
 
-$$\tag{C.7}
+$$
+\tag{C.7}
 \begin{align}
 \int_{M_{\varepsilon}}\mathbf{L} & =\int_{M_{z_{0}}}\mathbf{L}+\int_{M_{\varepsilon}-M_{z_{0}}}\mathbf{L} \\
  & =\int_{M_{z_{0}}}\mathbf{L}-\int_{\Gamma}\int_{\varepsilon}^{z_{0}}\mathrm{d}z\mathbf{L}_{za_{0}a_{1}}\cdot \frac{1}{2!}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}}
@@ -68,7 +75,8 @@ $$
 
 其中 $\displaystyle{M_{z_{0}}}$ 被 $\displaystyle{\Sigma_{f},\Sigma_{i}}$ 以及 $\displaystyle{\Gamma_{z_{0}}}$ 所包围。我们引入 $\displaystyle{H_{1}(z,x)}$ 使得
 
-$$\tag{C.8}
+$$
+\tag{C.8}
 \begin{align}
 \mathbf{L}_{za_{0}a_{1}} & =\frac{1}{16\pi G}\left[\frac{4}{z^{3}}-\frac{1}{z}R^{(0)}+2\partial_{z}\left( g_{zz}-\frac{1}{z^{2}} \right)+2g^{(0)ab}\partial_{z}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)+zg^{(0)ab}\partial_{z}^{2}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)\right. \\
  & \left.-2zg^{(0)ab}D_{a}^{(0)}\partial_{z}g_{zb}-4zg^{(0)ab}g_{za}g_{zb}-4z^{2}g^{(0)ab}g_{za}\partial_{z}g_{zb}+H(z,x)\right]\varepsilon_{a_{0}a_{1}}^{(0)}\\
@@ -78,7 +86,8 @@ $$
 
 那么
 
-$$\tag{C.9}
+$$
+\tag{C.9}
 \begin{align}
 \mathbf{L}_{za_{0}a_{1}} & =\frac{1}{16\pi G}\left[\partial_{z}\left(-\frac{2}{z^{2}}-\log zR^{(0)}+2\left( g_{zz}-\frac{1}{z^{2}} \right)+g^{(0)ab}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)+zg^{(0)ab}\partial_{z}\left( g_{ab}-\frac{1}{z^{2}}g^{(0)}_{ab} \right)\right.\right. \\
  & \left.\left.-2zg^{(0)ab}D_{a}^{(0)}g_{zb}+2z\log zg^{(0)ab}D_{a}^{(0)}g_{zb}-2z^{2}g^{(0)ab}g_{za}g_{zb}\right)-2\log zg^{(0)ab}D_{a}^{(0)}\partial_{z}(zg_{zb})+H_{1}(z,x)\right]\varepsilon_{a_{0}a_{1}}^{(0)} \\
@@ -93,7 +102,8 @@ $$
 
 考虑将 $\displaystyle{g_{za}}$ 的渐进行为进一步展开为
 
-$$\tag{C.10}
+$$
+\tag{C.10}
 \begin{align}
 g_{za} & =\frac{1}{z}g^{(-1)}_{za}+\mathcal{O}(z^{-1+s})
 \end{align}
@@ -101,7 +111,8 @@ $$
 
 其中 $\displaystyle{g^{(-1)}_{za}}$ 与 $\displaystyle{z}$ 无关，$\displaystyle{s>0}$。那么根据(C.5)，有
 
-$$\tag{C.11}
+$$
+\tag{C.11}
 \begin{align}
 S-\int_{M_{\varepsilon}}\mathbf{L}-\int_{\Gamma_{\varepsilon}}\ell & =\int_{\Gamma}\left[\int^{z_{0}}_{\varepsilon}\mathrm{d}z \frac{1}{16\pi G}\left(2\log zg^{(0)ab}D_{a}^{(0)}\partial_{z}(zg_{zb})-H_{1}(z,x)\right)\right]\cdot \frac{1}{2!}\varepsilon_{a_{0}a_{1}}^{(0)}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}}+\mathcal{O}(\varepsilon^{2}\log \varepsilon) \\
  & =\mathcal{O}(\varepsilon^{s}\log \varepsilon)+\mathcal{O}(\varepsilon^{2}\log \varepsilon)
@@ -114,7 +125,8 @@ $$
 
 首先我们给出 $\displaystyle{\delta g_{zz},\delta g_{za},\delta g_{ab}}$ 和 $\displaystyle{\delta g_{ab}-\frac{1}{z^{2}}\delta g^{(0)}_{ab}}$ 的渐进行为
 
-$$\tag{C.12}
+$$
+\tag{C.12}
 \begin{align}
 \delta g_{zz} & =\mathcal{O}(z^{0}) \\
 \delta g_{za} & =\mathcal{O}(z^{-1}) \\
@@ -125,7 +137,8 @@ $$
 
 以及 $\displaystyle{\nabla_{\mu}\delta g_{\nu \rho}}$ 的渐进行为
 
-$$\tag{C.13}
+$$
+\tag{C.13}
 \begin{align}
 \nabla_{z}\delta g_{zz} & =\partial_{z}\delta g_{zz}+\frac{2}{z}\delta g_{zz}-2zg^{(0)ab}g_{za}\delta g_{zb}-2z^{2}g^{(0)ab}\partial_{z}g_{za}\delta g_{zb}+\mathcal{O}(z) \\
 \nabla_{z}\delta g_{za} & =\partial_{z}\delta g_{za}+\frac{2}{z}\delta g_{za}-\frac{1}{z}g^{(0)bc}g_{zc}\delta g_{ab}^{(0)}-g^{(0)bc}\partial_{zc}\delta g_{ab}^{(0)}+\mathcal{O}(z^{0}) \\
@@ -140,7 +153,8 @@ $$
 
 从而计算得到()中各量的渐进行为
 
-$$\tag{C.14}
+$$
+\tag{C.14}
 \begin{align}
 \mathbf{E}^{\mu \nu}\delta g_{\mu \nu} & =\frac{1}{16\pi G}\left[\frac{1}{2}g^{(0)ab}\partial_{z}\left( g_{zz}-\frac{1}{z^{2}} \right)\delta g_{ab}^{(0)}+\frac{3}{2}(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})\partial_{z}\left( g_{cd}-\frac{1}{z^{2}}g^{(0)}_{cd} \right)\delta g_{ab}^{(0)}\right. \\
  & +\frac{1}{2}z(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})\partial_{z}^{2}\left( g_{cd}-\frac{1}{z^{2}}g^{(0)}_{cd} \right)\delta g_{ab}^{(0)}-(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})D_{c}^{(0)}g_{zd}\delta g_{ab}^{(0)} \\
@@ -162,7 +176,8 @@ $$
 
 首先我们证明
 
-$$\tag{C.15}
+$$
+\tag{C.15}
 \begin{align}
 \lim_{ \varepsilon \to 0 } \int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}\delta g_{\mu \nu}
 \end{align}
@@ -170,7 +185,8 @@ $$
 
 的有限性。我们做类似于(C.7)的分解
 
-$$\tag{C.16}
+$$
+\tag{C.16}
 \begin{align}
 \int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}\delta g_{\mu \nu} & =\int_{M_{z_{0}}}\mathbf{E}^{\mu \nu}\delta g_{\mu \nu}-\int_{\Gamma}\left[\int^{z_{0}}_{\varepsilon}\mathrm{d}z(\mathbf{E}^{\mu \nu}\delta g_{\mu \nu})_{za_{0}a_{1}}\right]\cdot \frac{1}{2!}\varepsilon_{a_{0}a_{1}}^{(0)}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}}
 \end{align}
@@ -178,7 +194,8 @@ $$
 
 以及引入 $\displaystyle{H_{2}(z,x)}$ 使得
 
-$$\tag{C.17}
+$$
+\tag{C.17}
 \begin{align}
 (\mathbf{E}^{\mu \nu}\delta g_{\mu \nu})_{za_{0}a_{1}} & =\frac{1}{16\pi G}\left[\frac{1}{2}g^{(0)ab}\partial_{z}\left( g_{zz}-\frac{1}{z^{2}} \right)\delta g_{ab}^{(0)}+\frac{3}{2}(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})\partial_{z}\left( g_{cd}-\frac{1}{z^{2}}g^{(0)}_{cd} \right)\delta g_{ab}^{(0)}\right. \\
  & +\frac{1}{2}z(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})\partial_{z}^{2}\left( g_{cd}-\frac{1}{z^{2}}g^{(0)}_{cd} \right)\delta g_{ab}^{(0)}-(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})D_{c}^{(0)}g_{zd}\delta g_{ab}^{(0)} \\
@@ -190,7 +207,8 @@ $$
 
 那么将(C.17)重写为
 
-$$\tag{C.18}
+$$
+\tag{C.18}
 \begin{align}
 (\mathbf{E}^{\mu \nu}\delta g_{\mu \nu})_{za_{0}a_{1}} & =\frac{1}{16\pi G}\left[\partial_{z}\left( \frac{1}{2}\left( g_{zz}-\frac{1}{z^{2}} \right)\delta g_{ab}^{(0)}+(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})\left( g_{cd}-\frac{1}{z^{2}}g_{cd}^{(0)} \right)\delta g_{ab}^{(0)} \right)\right. \\
  & +\frac{1}{2}z(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})\partial_{z}\left( g_{cd}-\frac{1}{z^{2}}g^{(0)}_{cd} \right)\delta g_{ab}^{(0)}-z(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})D_{c}^{(0)}g_{zd}\delta g_{ab}^{(0)} \\
@@ -200,7 +218,8 @@ $$
 
 从而
 
-$$\tag{C.19}
+$$
+\tag{C.19}
 \begin{align}
 \lim_{ \varepsilon \to 0 } \int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}\delta g_{\mu \nu} & =\int_{M_{z_{0}}}\mathbf{E}^{\mu \nu}\delta g_{\mu \nu}+\int_{\Gamma} \frac{1}{16\pi G}\left( -\frac{1}{2}\left( g_{zz}-\frac{1}{z^{2}} \right)\delta g_{ab}^{(0)}-(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})\left( g_{cd}-\frac{1}{z^{2}}g_{cd}^{(0)} \right)\delta g_{ab}^{(0)} \right) \\
  & -\frac{1}{2}z(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})\partial_{z}\left( g_{cd}-\frac{1}{z^{2}}g^{(0)}_{cd} \right)\delta g_{ab}^{(0)}+z(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})D_{c}^{(0)}g_{zd}\delta g_{ab}^{(0)} \\
@@ -213,7 +232,8 @@ $$
 
 因此(C.15)是有限的。然后我们证明
 
-$$\tag{C.20}
+$$
+\tag{C.20}
 \begin{align}
 \lim_{ \varepsilon \to 0 } \int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta g_{\mu \nu}
 \end{align}
@@ -221,7 +241,8 @@ $$
 
 的有限性。直接计算得到
 
-$$\tag{C.21}
+$$
+\tag{C.21}
 \begin{align}
 \lim_{ \varepsilon \to 0 } \int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta g_{\mu \nu} & =\lim_{ \varepsilon \to 0 } \int_{\Gamma_{\varepsilon}}\left(-\frac{1}{2}g^{(0)ab}\left( g_{zz}-\frac{1}{z^{2}} \right)\delta g_{ab}^{(0)}-(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})\left( g_{cd}-\frac{1}{z^{2}}g^{(0)}_{cd} \right)\delta g^{(0)}_{ab}\right. \\
  & -\frac{1}{2}z(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})\partial_{z}\left( g_{cd}-\frac{1}{z^{2}}g^{(0)}_{cd} \right)\delta g_{ab}^{(0)}+z(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})D_{c}^{(0)}g_{zd}\delta g_{ab}^{(0)} \\
@@ -231,7 +252,8 @@ $$
 
 因此(C.20)是有限的。最后我们证明
 
-$$\tag{C.22}
+$$
+\tag{C.22}
 \begin{align}
 \lim_{ \varepsilon \to 0 } \left(\int_{\Sigma_{\varepsilon}}\Theta-\int_{\partial \Sigma_{\varepsilon}}\mathbf{C}\right)
 \end{align}
@@ -239,7 +261,8 @@ $$
 
 的有限性。将(C.22)的 $\displaystyle{\Theta}$ 项分解为
 
-$$\tag{C.23}
+$$
+\tag{C.23}
 \begin{align}
 \int_{\Sigma_{\varepsilon}}\Theta & =\int_{\Sigma_{z_{0}}}\Theta-\int_{\partial \Sigma}\left[ \int^{z_{0}}_{\varepsilon} \mathrm{d}z\Theta_{za_{1}}\right]\mathrm{d}x^{a_{1}}
 \end{align}
@@ -247,7 +270,8 @@ $$
 
 并引入 $\displaystyle{H_{3}^{a}(z,x)}$ 使得
 
-$$\tag{C.24}
+$$
+\tag{C.24}
 \begin{align}
 \Theta_{za_{1}} & =\frac{1}{16\pi G}\left(-\frac{1}{z}(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})D_{b}^{(0)}g_{cd}-g^{(0)ab}\delta g_{zb}+zg^{(0)ab}\partial_{z}\delta g_{zb}-zg^{(0)ac}g^{(0)bd}\partial_{z}g_{zb}\delta g_{cd}^{(0)}\right. \\
  & \left.-(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})g_{zb}\delta g_{cd}^{(0)}+H_{3}^{a}(z,x)\right)\varepsilon_{aa_{1}}^{(0)} \\
@@ -257,7 +281,8 @@ $$
 
 那么将(C.24)重写为
 
-$$\tag{C.25}
+$$
+\tag{C.25}
 \begin{align}
 \Theta_{za_{1}} & =\frac{1}{16\pi G}\left(\partial_{z}\left(zg^{(0)ab}\delta g_{zb}-zg^{(0)ac}g^{(0)bd}g_{zb}\delta g_{cd}^{(0)}-\log z(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})D_{b}^{(0)}\delta g_{cd}^{(0)}\right.\right. \\
  & \left.z\log z\left(-2g^{(0)ab}\delta g_{zb}-g^{(0)ab}g^{(0)cd}g_{zb}\delta g_{cd}^{(0)}+2g^{(0)ac}g^{(0)bd}g_{zb}\delta g_{cd}^{(0)}\right)\right)+2\log zg^{(0)ab}\partial_{z}(z\delta g_{zb}) \\
@@ -267,7 +292,8 @@ $$
 
 从而
 
-$$\tag{C.26}
+$$
+\tag{C.26}
 \begin{align}
 \int_{\Sigma_{\varepsilon}}\Theta & =\int_{\Sigma_{z_{0}}}\Theta+\int_{\partial \Sigma} \frac{1}{16\pi G}\left(-zg^{(0)ab}\delta g_{zb}+zg^{(0)ac}g^{(0)bd}g_{zb}\delta g_{cd}^{(0)}+\log z(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})D_{b}^{(0)}\delta g_{cd}^{(0)}\right. \\
  & \left.\left.+z\log z(2g^{(0)ab}\delta g_{zb}+g^{(0)ab}g^{(0)cd}g_{zb}\delta g_{cd}^{(0)}-2g^{(0)ac}g^{(0)bd}g_{zb}\delta g_{cd}^{(0)})\right)\right|_{z=z_{0}-z=\varepsilon}\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -278,7 +304,8 @@ $$
 
 另外 $\displaystyle{\mathbf{C}}$ 项给出
 
-$$\tag{C.27}
+$$
+\tag{C.27}
 \begin{align}
 -\int_{\partial \Sigma_{\varepsilon}}\mathbf{C} & =\int_{\partial \Sigma} \frac{1}{16\pi G}\left(-zg^{(0)ab}\delta g_{zb}+zg^{(0)ac}g^{(0)bd}g_{zb}\delta g^{(0)}_{cd}+\log z(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})D_{b}^{(0)}\delta g_{cd}^{(0)}\right. \\
  & \left.\left.+z\log z(2g^{(0)ab}\delta g_{zb}+g^{(0)ab}g^{(0)cd}g_{zb}\delta g_{cd}^{(0)}-2g^{(0)ac}g^{(0)bd}g_{zb}\delta g_{cd}^{(0)})\right)\right|_{z=\varepsilon}\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}}+\mathcal{O}(\varepsilon^{2}\log \varepsilon)
@@ -287,7 +314,8 @@ $$
 
 将(C.26)和(C.27)相加，得到
 
-$$\tag{C.28}
+$$
+\tag{C.28}
 \begin{align}
 \int_{\Sigma_{\varepsilon}}\Theta-\int_{\partial \Sigma_{\varepsilon}}\mathbf{C} & =\int_{\Sigma_{z_{0}}}\Theta+\int_{\partial \Sigma} \frac{1}{16\pi G}\left(-zg^{(0)ab}\delta g_{zb}+zg^{(0)ac}g^{(0)bd}g_{zb}\delta g^{(0)}_{cd}+\log z(g^{(0)ab}g^{(0)cd}-g^{(0)ac}g^{(0)bd})D_{b}^{(0)}\delta g_{cd}^{(0)}\right. \\
  & \left.\left.+z\log z(2g^{(0)ab}\delta g_{zb}+g^{(0)ab}g^{(0)cd}g_{zb}\delta g_{cd}^{(0)}-2g^{(0)ac}g^{(0)bd}g_{zb}\delta g_{cd}^{(0)})\right)\right|_{z=z_{0}}\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
@@ -298,7 +326,8 @@ $$
 
 从而
 
-$$\tag{C.29}
+$$
+\tag{C.29}
 \begin{align}
 \lim_{ \varepsilon \to 0 } \left(\int_{\Sigma_{\varepsilon}}\Theta-\int_{\partial \Sigma_{\varepsilon}}\mathbf{C}\right)-\left(\int_{\Sigma_{\varepsilon}}\Theta-\int_{\partial \Sigma_{\varepsilon}}\mathbf{C}\right)  & =\int_{\partial \Sigma}\left[\int^{z_{0}}_{\varepsilon}\mathrm{d}z \frac{1}{16\pi G}\left(-2\log zg^{(0)ab}\partial_{z}(z\delta g_{zb})-\log z g^{(0)ab}g^{(0)cd}\partial_{z}(zg_{zb})\delta g_{cd}^{(0)}\right.\right. \\
  & \left.\left.+2\log zg^{(0)ac}g^{(0)bd}\partial_{z}(zg_{zb})\delta g_{cd}^{(0)}-H_{3}^{a}(z,x)\right)\right]\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}}+\mathcal{O}(\varepsilon^{2}\log \varepsilon) \\
@@ -312,7 +341,8 @@ $$
 
 对于以 $\displaystyle{\xi^{\mu}}$ 为参数的微分同胚，我们要求 $\displaystyle{\xi^{\mu}}$ 具有以下渐进行为
 
-$$\tag{C.30}
+$$
+\tag{C.30}
 \begin{align}
 \xi^{z} & =z\xi^{(1)z}+\mathcal{O}(z^{3}) \\
 \xi^{a} & =\xi^{(0)a}+\mathcal{O}(z^{2})
@@ -321,7 +351,8 @@ $$
 
 其中 $\displaystyle{\xi^{(1)z}}$ 和 $\displaystyle{\xi^{(0)a}}$ 为任意无关于 $\displaystyle{z}$ 的函数。首先我们计算微分同胚作用于度规 $\displaystyle{g_{\mu \nu}}$ 的渐进行为
 
-$$\tag{C.31}
+$$
+\tag{C.31}
 \begin{align}
 X_{\xi}\cdot \delta g_{zz} & =D_{a}^{(0)}\left( g_{zz}-\frac{1}{z^{2}} \right)\xi^{(0)a}+2g_{za}\partial_{z}(\xi^{a}-\xi^{(0)a})+2\left( g_{zz}-\frac{1}{z^{2}} \right)\xi^{(1)z}+z\partial_{z}\left( g_{zz}-\frac{1}{z^{2}} \right)\xi^{(1)z} \\
  & -\frac{2}{z^{3}}(\xi^{z}-z\xi^{(1)z})+\frac{2}{z^{2}}\partial_{z}(\xi^{z}-z\xi^{(1)z})+\mathcal{O}(z^{2}) \\
@@ -334,7 +365,8 @@ $$
 
 然后我们计算得到()中各量的渐进行为
 
-$$\tag{C.32}
+$$
+\tag{C.32}
 \begin{align}
 \xi \cdot \mathbf{L} & =\frac{1}{16\pi G}\left(-\frac{4}{z}\xi^{(0)a}+\frac{1}{z}R^{(0)}\xi^{(0)a}-2\partial_{z}\left( g_{zz}-\frac{1}{z^{2}} \right)\xi^{(0)a}-2g^{(0)bc}\partial_{z}\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)\xi^{(0)a}-zg^{(0)bc}\partial_{z}^{2}\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)\xi^{(0)a}\right. \\
  & \left.+2zg^{(0)bc}D_{b}^{(0)}\partial_{z}g_{zc}\xi^{(0)a}+4zg^{(0)bc}g_{zb}g_{zc}\xi^{(0)a}+4z^{2}g^{(0)bc}g_{zb}\partial_{z}g_{zc}\xi^{(0)c}-\frac{4}{z^{3}}(\xi^{a}-\xi^{(0)a})+\mathcal{O}(z)\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -349,7 +381,8 @@ $$
 
 首先我们证明
 
-$$\tag{C.33}
+$$
+\tag{C.33}
 \begin{align}
 \lim_{ \varepsilon \to 0 } \left(\int_{\Sigma_{\varepsilon}}\xi \cdot \mathbf{L}-\int_{\partial \Sigma_{\varepsilon}}\mu_{\xi}\right)
 \end{align}
@@ -357,7 +390,8 @@ $$
 
 的有限性。我们做类似于(C.7)的分解
 
-$$\tag{C.34}
+$$
+\tag{C.34}
 \begin{align}
 \int_{\Sigma_{\varepsilon}}\xi \cdot \mathbf{L} & =\int_{\Sigma_{z_{0}}}\xi \cdot \mathbf{L}-\int_{\partial \Sigma}\left[\int^{z_{0}}_{\varepsilon}\mathrm{d}z(\xi \cdot \mathbf{L})_{za_{1}}\right]\mathrm{d}x^{a_{1}}
 \end{align}
@@ -365,7 +399,8 @@ $$
 
 并引入 $\displaystyle{H^{a}_{4}(z,x)}$ 使得
 
-$$\tag{C.35}
+$$
+\tag{C.35}
 \begin{align}
 (\xi \cdot \mathbf{L})_{za_{1}} & =\frac{1}{16\pi G}\left(-\frac{4}{z^{3}}\xi^{(0)a}+\frac{1}{z}R^{(0)}\xi^{(0)a}-2\partial_{z}\left( g_{zz}-\frac{1}{z^{2}} \right)\xi^{(0)a}-2g^{(0)bc}\partial_{z}\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)\xi^{(0)a}-zg^{(0)bc}\partial_{z}^{2}\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)\xi^{(0)a}\right. \\
  & \left.+2zg^{(0)bc}D_{b}^{(0)}\partial_{z}g_{zc}\xi^{(0)a}+4zg^{(0)bc}g_{zb}g_{zc}\xi^{(0)a}+4z^{2}g^{(0)bc}g_{zb}\partial_{z}g_{zc}\xi^{(0)a}-\frac{4}{z^{3}}(\xi^{a}-\xi^{(0)a})+H^{a}_{4}(z,x)\right)\varepsilon^{(0)}_{aa_{1}}\mathrm{d}x^{a_{1}} \\
@@ -375,7 +410,8 @@ $$
 
 将(C.35)改写为
 
-$$\tag{C.36}
+$$
+\tag{C.36}
 \begin{align}
 (\xi \cdot \mathbf{L})_{za_{1}} & =\frac{1}{16\pi G}\left(\partial_{z}\left(\frac{2}{z^{^{2}}}\xi^{(0)a}-2\left( g_{zz}-\frac{1}{z^{2}} \right)\xi^{(0)a}-g^{(0)bc}\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)\xi^{(0)a}-zg^{(0)bc}\partial_{z}\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)\xi^{(0)a}\right.\right. \\
  & \left.+2zg^{(0)bc}D_{b}^{(0)}g_{zc}\xi^{(0)a}+2z^{2}g^{(0)bc}g_{zb}g_{zc}\xi^{(0)a}+\log z\left( R^{(0)}\xi^{(0)a}-2zg^{(0)bc}D^{(0)}_{b}g_{zc}\xi^{(0)a}-\frac{4}{z^{2}}(\xi^{a}-\xi^{(0)a}) \right)\right) \\
@@ -385,7 +421,8 @@ $$
 
 考虑将 $\displaystyle{\xi^{a}}$ 的渐进行为进一步展开为
 
-$$\tag{C.37}
+$$
+\tag{C.37}
 \begin{align}
 \xi^{a} & =\xi^{(0)a}+z^{2}\xi^{(2)a}+\mathcal{O}(z^{2+s})
 \end{align}
@@ -393,7 +430,8 @@ $$
 
 其中 $\displaystyle{\xi^{(2)a}}$ 独立于 $\displaystyle{z}$。于是
 
-$$\tag{C.38}
+$$
+\tag{C.38}
 \begin{align}
 \int_{\Sigma_{\varepsilon}}\xi \cdot \mathbf{L}-\int_{\partial \Sigma_{\varepsilon}}\mu_{\xi}& =\int_{\Sigma_{z_{0}}}\xi \cdot \mathbf{L}+\int_{\partial \Sigma} \frac{1}{16\pi G}\left(-\frac{2}{z^{2}}\xi^{(0)a}+2\left( g_{zz}-\frac{1}{z^{2}} \right)\xi^{(0)a}+g^{(0)bc}\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)\xi^{(0)a}\right. \\
  & +zg^{(0)bc}\partial_{z}\left( g_{bc}-\frac{1}{z^{2}}g^{(0)}_{bc} \right)\xi^{(0)a}-2zg^{(0)bc}D_{b}^{(0)}g_{zc}\xi^{(0)a}-2z^{2}g^{(0)bc}g_{zb}g_{zc}\xi^{(0)a} \\
@@ -407,7 +445,8 @@ $$
 
 从而
 
-$$\tag{C.39}
+$$
+\tag{C.39}
 \begin{align}
 \lim_{ \varepsilon \to 0 } \left(\int_{\Sigma_{\varepsilon}}\xi \cdot \mathbf{L}-\int_{\partial \Sigma_{\varepsilon}}\mu_{\xi}\right)-\left(\int_{\Sigma_{\varepsilon}}\xi \cdot \mathbf{L}-\int_{\partial \Sigma_{\varepsilon}}\mu_{\xi}\right) & =\mathcal{O}(\varepsilon^{s}\log \varepsilon)+\mathcal{O}(\varepsilon^{2}\log \varepsilon)
 \end{align}
@@ -415,7 +454,8 @@ $$
 
 因此(C.33)是有限的。最后证明
 
-$$\tag{C.40}
+$$
+\tag{C.40}
 \begin{align}
 \lim_{ \varepsilon \to 0 } \int_{\Gamma_{\varepsilon}}\nu_{\xi}
 \end{align}
@@ -423,7 +463,8 @@ $$
 
 的有限性。直接计算得到
 
-$$\tag{C.41}
+$$
+\tag{C.41}
 \begin{align}
 \lim_{ \varepsilon \to 0 } \int_{\Gamma_{\varepsilon}}\nu_{\xi} & =-\int_{\Gamma} \frac{1}{16\pi G}R^{(0)}\xi^{(1)z}\cdot \frac{1}{2!}\varepsilon^{(0)}_{a_{0}a_{1}}\mathrm{d}x^{a_{0}}\wedge \mathrm{d}x^{a_{1}}
 \end{align}

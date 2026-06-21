@@ -5,17 +5,23 @@
 The Taub-NUT spacetime represents a unique class of solutions with **magnetic mass** or **NUT charge**, requiring extension of the standard covariant phase space formalism to include:
 
 **Magnetic charge contribution**:
-$$\tag{1.1}\begin{align}
+
+$$
+\tag{1.1}\begin{align}
 \theta _{\text{mag}}^{\mu} & =\frac{1}{8\pi G}N\omega ^{\mu} \\
 Q_{\xi,\text{mag}}^{\mu \nu} & =\frac{1}{8\pi G}N(\nabla ^{\mu}\xi ^{\nu}-\nabla ^{\nu}\xi ^{\mu})
-\end{align}$$
+\end{align}
+$$
 
 where $N$ is the NUT parameter and $\omega^\mu$ is the twist potential.
 
 **Extended first law structure**:
-$$\tag{1.2}\begin{align}
+
+$$
+\tag{1.2}\begin{align}
 \delta M & =T_{H}\delta S+\Omega _{H}\delta J+\Phi _{H}\delta Q+\Psi _{H}\delta N
-\end{align}$$
+\end{align}
+$$
 
 where $\Psi_H$ is the **magnetic potential** conjugate to NUT charge.
 
@@ -24,15 +30,21 @@ where $\Psi_H$ is the **magnetic potential** conjugate to NUT charge.
 ### Metric and Physical Parameters
 
 The **Taub-NUT metric** in Boyer-Lindquist-like coordinates:
-$$\tag{2.1}\begin{align}
+
+$$
+\tag{2.1}\begin{align}
 \mathrm{d}s^{2} & =-\frac{\Delta}{\rho ^{2}}(\mathrm{d}t+2N\cos \theta \mathrm{d}\phi)^{2}+\frac{\rho ^{2}}{\Delta}\mathrm{d}r^{2}+\rho ^{2}\mathrm{d}\theta ^{2}+\rho ^{2}\sin ^{2}\theta \mathrm{d}\phi ^{2}
-\end{align}$$
+\end{align}
+$$
 
 where:
-$$\tag{2.2}\begin{align}
+
+$$
+\tag{2.2}\begin{align}
 \Delta & =r^{2}-2Mr+N^{2} \\
 \rho ^{2} & =r^{2}+N^{2}\cos ^{2}\theta
-\end{align}$$
+\end{align}
+$$
 
 **Physical parameters**:
 - $M$: mass parameter
@@ -47,16 +59,22 @@ $$\tag{2.2}\begin{align}
 **Azimuthal Killing vector**: $\partial_\phi$
 
 **Horizon Killing vector**:
-$$\tag{2.3}\begin{align}
+
+$$
+\tag{2.3}\begin{align}
 \xi & =\partial_{t}+\Omega _{H}\partial_{\phi}
-\end{align}$$
+\end{align}
+$$
 
 #### Horizon Structure
 
 **Horizons** located at $\Delta = 0$:
-$$\tag{2.4}\begin{align}
+
+$$
+\tag{2.4}\begin{align}
 r_{\pm} & =M\pm \sqrt{ M^{2}-N^{2} }
-\end{align}$$
+\end{align}
+$$
 
 **Outer horizon**: $r_+ = M + \sqrt{M^2 - N^2}$
 **Inner horizon**: $r_- = M - \sqrt{M^2 - N^2}$
@@ -66,40 +84,55 @@ r_{\pm} & =M\pm \sqrt{ M^{2}-N^{2} }
 #### Angular Velocity and Surface Gravity
 
 **Angular velocity** at the horizon:
-$$\tag{2.5}\begin{align}
+
+$$
+\tag{2.5}\begin{align}
 \Omega _{H} & =\frac{2N}{r_{+}^{2}+N^{2}}
-\end{align}$$
+\end{align}
+$$
 
 **Surface gravity**:
-$$\tag{2.6}\begin{align}
+
+$$
+\tag{2.6}\begin{align}
 \kappa & =\frac{r_{+}-r_{-}}{2(r_{+}^{2}+N^{2})} \\
  & =\frac{2\sqrt{ M^{2}-N^{2} }}{2(r_{+}^{2}+N^{2})} \\
  & =\frac{\sqrt{ M^{2}-N^{2} }}{(M+\sqrt{ M^{2}-N^{2} })^{2}+N^{2}}
-\end{align}$$
+\end{align}
+$$
 
 **Hawking temperature**:
-$$\tag{2.7}\begin{align}
+
+$$
+\tag{2.7}\begin{align}
 T_{H} & =\frac{\kappa}{2\pi}=\frac{\sqrt{ M^{2}-N^{2} }}{2\pi((M+\sqrt{ M^{2}-N^{2} })^{2}+N^{2})}
-\end{align}$$
+\end{align}
+$$
 
 ### Misner String and Topology
 
 #### Dirac String Singularity
 
 The Taub-NUT solution has a **Dirac string singularity** along:
-$$\tag{2.8}\begin{align}
+
+$$
+\tag{2.8}\begin{align}
 \theta & =0 \text{ or } \pi \\
 t & =\text{const}
-\end{align}$$
+\end{align}
+$$
 
 This is a **coordinate singularity** that can be removed by appropriate coordinate patches, but reflects the non-trivial topology.
 
 #### Misner String
 
 To avoid closed timelike curves, we impose **Misner periodicity**:
-$$\tag{2.9}\begin{align}
+
+$$
+\tag{2.9}\begin{align}
 t & \sim t+8\pi N
-\end{align}$$
+\end{align}
+$$
 
 This creates a **Misner string** - a topological defect that is the price for regularity.
 
@@ -108,9 +141,12 @@ This creates a **Misner string** - a topological defect that is the price for re
 ### Extended Action and Variation
 
 The **Einstein-Hilbert action** remains:
-$$\tag{3.1}\begin{align}
+
+$$
+\tag{3.1}\begin{align}
 S & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{4}x\sqrt{ -g }R
-\end{align}$$
+\end{align}
+$$
 
 But the **boundary conditions** and **topology** require careful treatment due to the NUT charge.
 
@@ -119,38 +155,53 @@ But the **boundary conditions** and **topology** require careful treatment due t
 #### Mass Calculation
 
 The **ADM mass** includes both electric and magnetic contributions:
-$$\tag{3.2}\begin{align}
+
+$$
+\tag{3.2}\begin{align}
 M_{\text{ADM}} & =\frac{1}{16\pi G}\oint _{S_{\infty}^{2}}Q_{t}^{r\mu}n_{\mu}\mathrm{d}S \\
  & =\frac{1}{16\pi G}\oint _{S_{\infty}^{2}}\left( \nabla ^{r}t^{\mu}-\nabla ^{\mu}t^{r} \right)n_{\mu}\mathrm{d}S
-\end{align}$$
+\end{align}
+$$
 
 **Explicit calculation**:
-$$\tag{3.3}\begin{align}
+
+$$
+\tag{3.3}\begin{align}
 M_{\text{ADM}} & =M
-\end{align}$$
+\end{align}
+$$
 
 #### Angular Momentum with NUT Contribution
 
 The **total angular momentum** includes NUT-induced contribution:
-$$\tag{3.4}\begin{align}
+
+$$
+\tag{3.4}\begin{align}
 J_{\text{total}} & =\frac{1}{16\pi G}\oint _{S_{\infty}^{2}}Q_{\phi}^{r\mu}n_{\mu}\mathrm{d}S \\
  & =\frac{1}{16\pi G}\oint _{S_{\infty}^{2}}\left( \nabla ^{r}\phi^{\mu}-\nabla ^{\mu}\phi^{r} \right)n_{\mu}\mathrm{d}S
-\end{align}$$
+\end{align}
+$$
 
 **Result**:
-$$\tag{3.5}\begin{align}
+
+$$
+\tag{3.5}\begin{align}
 J_{\text{total}} & =0
-\end{align}$$
+\end{align}
+$$
 
 The Taub-NUT solution has **zero orbital angular momentum** but non-zero NUT charge.
 
 #### NUT Charge Calculation
 
 The **NUT charge** is computed as:
-$$\tag{3.6}\begin{align}
+
+$$
+\tag{3.6}\begin{align}
 \mathcal{N} & =\frac{1}{16\pi G}\oint _{S_{\infty}^{2}}\epsilon_{\mu \nu \rho \sigma}n^{\mu}\nabla ^{\nu}\xi ^{\rho}\mathrm{d}S^{\sigma} \\
  & =N
-\end{align}$$
+\end{align}
+$$
 
 where $\xi$ is the appropriate Killing vector and the integral is over spatial infinity.
 
@@ -159,20 +210,26 @@ where $\xi$ is the appropriate Killing vector and the integral is over spatial i
 #### Horizon Area
 
 The **horizon area** requires careful treatment of the angular coordinate:
-$$\tag{3.7}\begin{align}
+
+$$
+\tag{3.7}\begin{align}
 A_{H} & =\oint _{H}\sqrt{ \gamma }\mathrm{d}\theta \mathrm{d}\phi \\
  & =\int _{0}^{2\pi}\mathrm{d}\phi \int _{0}^{\pi}\sqrt{ \rho ^{2}(r_{+})\rho ^{2}(r_{+})\sin ^{2}\theta }\mathrm{d}\theta \\
  & =4\pi(r_{+}^{2}+N^{2})
-\end{align}$$
+\end{align}
+$$
 
 #### Bekenstein-Hawking Entropy
 
 Using the **area law**:
-$$\tag{3.8}\begin{align}
+
+$$
+\tag{3.8}\begin{align}
 S & =\frac{A_{H}}{4G} \\
  & =\frac{\pi(r_{+}^{2}+N^{2})}{G} \\
  & =\frac{\pi}{G}(M+\sqrt{ M^{2}-N^{2} })^{2}+\frac{\pi N^{2}}{G}
-\end{align}$$
+\end{align}
+$$
 
 **Physical interpretation**: The entropy receives contributions from both the horizon area and the NUT charge.
 
@@ -181,17 +238,23 @@ S & =\frac{A_{H}}{4G} \\
 #### Definition of Magnetic Potential
 
 The **magnetic potential** $\Psi_H$ conjugate to NUT charge is defined through:
-$$\tag{3.9}\begin{align}
+
+$$
+\tag{3.9}\begin{align}
 \Psi _{H} & =\xi \cdot \omega \bigg|_{\text{horizon}}
-\end{align}$$
+\end{align}
+$$
 
 where $\omega$ is the **twist potential** associated with the NUT charge.
 
 **Explicit calculation**:
-$$\tag{3.10}\begin{align}
+
+$$
+\tag{3.10}\begin{align}
 \Psi _{H} & =\frac{2N\Omega _{H}}{1+\Omega _{H}^{2}} \\
  & =\frac{4N^{2}}{r_{+}^{2}+N^{2}}
-\end{align}$$
+\end{align}
+$$
 
 #### Physical Meaning
 
@@ -204,66 +267,96 @@ $\Psi_H$ represents the **magnetic analogue** of electric potential:
 ### Master Equation Application
 
 For the horizon Killing vector $\xi = \partial_t + \Omega_H \partial_\phi$:
-$$\tag{4.1}\begin{align}
+
+$$
+\tag{4.1}\begin{align}
 0 & =\delta H_{\xi} \\
  & =\int _{H}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right)-\int _{\infty}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right)
-\end{align}$$
+\end{align}
+$$
 
 ### Boundary Contributions
 
 **At spatial infinity**:
-$$\tag{4.2}\begin{align}
+
+$$
+\tag{4.2}\begin{align}
 \int _{\infty}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right) & =\delta M-\Omega _{H}\delta J_{\text{total}}-\Psi _{H}\delta \mathcal{N}
-\end{align}$$
+\end{align}
+$$
 
 Since $J_{\text{total}} = 0$ for Taub-NUT:
-$$\tag{4.3}\begin{align}
+
+$$
+\tag{4.3}\begin{align}
 \int _{\infty}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right) & =\delta M-\Psi _{H}\delta N
-\end{align}$$
+\end{align}
+$$
 
 **At the horizon**:
-$$\tag{4.4}\begin{align}
+
+$$
+\tag{4.4}\begin{align}
 \int _{H}\left(\delta \mathbf{Q}_{\xi}-\xi \cdot \Theta\right) & =\frac{\kappa}{2\pi}\delta S
-\end{align}$$
+\end{align}
+$$
 
 ### Taub-NUT First Law
 
 Combining the boundary contributions:
-$$\tag{4.5}\begin{align}
+
+$$
+\tag{4.5}\begin{align}
 \frac{\kappa}{2\pi}\delta S & =\delta M-\Psi _{H}\delta N
-\end{align}$$
+\end{align}
+$$
 
 **First law of Taub-NUT black hole thermodynamics**:
-$$\tag{4.6}\boxed{\delta M=T_{H}\delta S+\Psi _{H}\delta N}$$
+
+$$\begin{align}
+\tag{4.6}\boxed{\delta M=T_{H}\delta S+\Psi _{H}\delta N}
+\end{align}$$
 
 ### Explicit Verification
 
 #### Parameter Relations
 
 From the horizon condition and definitions:
-$$\tag{4.7}\begin{align}
+
+$$
+\tag{4.7}\begin{align}
 M & =\frac{r_{+}+r_{-}}{2} \\
 N^{2} & =\frac{(r_{+}-r_{-})^{2}}{4} \\
 S & =\frac{\pi(r_{+}^{2}+N^{2})}{G}
-\end{align}$$
+\end{align}
+$$
 
 #### Variation Analysis
 
 **Mass variation**:
-$$\tag{4.8}\begin{align}
+
+$$
+\tag{4.8}\begin{align}
 \delta M & =\frac{1}{2}(\delta r_{+}+\delta r_{-})
-\end{align}$$
+\end{align}
+$$
 
 **NUT charge variation**:
-$$\tag{4.9}\begin{align}
+
+$$
+\tag{4.9}\begin{align}
 \delta N & =\frac{r_{+}-r_{-}}{4N}(\delta r_{+}-\delta r_{-})
-\end{align}$$
+\end{align}
+$$
 
 **Entropy variation**:
-$$\tag{4.10}\begin{align}
+
+$$
+\tag{4.10}\begin{align}
 \delta S & =\frac{\pi}{G}(2r_{+}\delta r_{+}+2N\delta N) \\
  & =\frac{\pi}{G}\left( 2r_{+}\delta r_{+}+\frac{r_{+}-r_{-}}{2}(\delta r_{+}-\delta r_{-}) \right)
-\end{align}$$
+\end{align}
+$$
 
 #### Direct Verification
 
@@ -276,8 +369,8 @@ Substituting into the first law (4.6) and using the expressions for $T_H$ and $\
 The first law (4.6) shows:
 
 1. **Thermal contribution**: $T_H \delta S$ - standard entropy-temperature term
-2. **Magnetic contribution**: $\Psi_H \delta N$ - work done by/against NUT charge
-3. **No rotational term**: Despite non-zero $\Omega_H$, the solution has $J = 0$
+1. **Magnetic contribution**: $\Psi_H \delta N$ - work done by/against NUT charge
+1. **No rotational term**: Despite non-zero $\Omega_H$, the solution has $J = 0$
 
 ### Unique Aspects of Taub-NUT Thermodynamics
 
@@ -300,11 +393,14 @@ The NUT parameter introduces:
 #### Extremal Taub-NUT ($M = N$)
 
 When $M = N$:
-$$\tag{4.11}\begin{align}
+
+$$
+\tag{4.11}\begin{align}
 r_{+} & =r_{-}=M \\
 T_{H} & =0 \\
 S & =\frac{2\pi M^{2}}{G}
-\end{align}$$
+\end{align}
+$$
 
 **Properties**:
 - Zero temperature (degenerate horizon)
@@ -314,25 +410,34 @@ S & =\frac{2\pi M^{2}}{G}
 #### Near-Extremal Thermodynamics
 
 For $M - N \ll M$:
-$$\tag{4.12}\begin{align}
+
+$$
+\tag{4.12}\begin{align}
 T_{H} & \sim \sqrt{ M-N } \\
 S & \sim M^{2} \\
 \Psi _{H} & \sim 1
-\end{align}$$
+\end{align}
+$$
 
 ## Taub-NUT-AdS Extension
 
 ### AdS Background
 
 With cosmological constant $\Lambda = -3/\ell^2$:
-$$\tag{5.1}\begin{align}
+
+$$
+\tag{5.1}\begin{align}
 \Delta & =r^{2}-2Mr+N^{2}+\frac{r^{2}}{\ell ^{2}}
-\end{align}$$
+\end{align}
+$$
 
 ### Extended First Law with Pressure
 
 Including thermodynamic pressure:
-$$\tag{5.2}\boxed{\delta M=T_{H}\delta S+\Psi _{H}\delta N+V_{H}\delta P}$$
+
+$$\begin{align}
+\tag{5.2}\boxed{\delta M=T_{H}\delta S+\Psi _{H}\delta N+V_{H}\delta P}
+\end{align}$$
 
 where:
 - $P = \frac{3}{8\pi G\ell^2}$: thermodynamic pressure
@@ -344,8 +449,8 @@ where:
 
 Taub-NUT black holes can have **quantum hair** through:
 1. **Topological quantum numbers**: Related to Misner string
-2. **Non-local correlations**: Due to gravitomagnetic field
-3. **Entanglement structure**: Modified by NUT charge
+1. **Non-local correlations**: Due to gravitomagnetic field
+1. **Entanglement structure**: Modified by NUT charge
 
 ### Holographic Aspects
 
@@ -359,9 +464,12 @@ In AdS/CFT context:
 #### Entropy Bounds
 
 **Generalized entropy bound**:
-$$\tag{5.3}\begin{align}
+
+$$
+\tag{5.3}\begin{align}
 S_{\text{total}} & \leq S_{\text{BH}}+S_{\text{string}}
-\end{align}$$
+\end{align}
+$$
 
 where $S_{\text{string}}$ is the entropy associated with the Misner string.
 
@@ -401,8 +509,8 @@ Possible analogues in:
 
 **Resolution methods**:
 1. **Double cover**: Remove Dirac strings through topology
-2. **Coordinate patches**: Multiple charts to cover spacetime
-3. **Fiber bundle**: Proper geometric description
+1. **Coordinate patches**: Multiple charts to cover spacetime
+1. **Fiber bundle**: Proper geometric description
 
 ### Thermodynamic Consistency
 
@@ -426,9 +534,9 @@ We have systematically derived the thermodynamics of Taub-NUT black holes using 
 
 **Key Results**:
 1. **First Law**: $\delta M = T_H \delta S + \Psi_H \delta N$
-2. **Magnetic Potential**: $\Psi_H = \frac{4N^2}{r_+^2 + N^2}$
-3. **Modified Entropy**: $S = \frac{\pi(r_+^2 + N^2)}{G}$
-4. **Unique Topology**: Misner string and non-trivial causal structure
+1. **Magnetic Potential**: $\Psi_H = \frac{4N^2}{r_+^2 + N^2}$
+1. **Modified Entropy**: $S = \frac{\pi(r_+^2 + N^2)}{G}$
+1. **Unique Topology**: Misner string and non-trivial causal structure
 
 **Methodological Achievements**:
 - Extended covariant phase space to include magnetic charges
@@ -448,7 +556,7 @@ This analysis provides the foundation for understanding exotic black hole soluti
 
 **References**:
 - Taub (1951): Original NUT solution - Ann. Math. 53, 472
-- Newman et al. (1963): NUT generalization - J. Math. Phys. 4, 915  
+- Newman et al. (1963): NUT generalization - J. Math. Phys. 4, 915
 - Misner (1963): String singularities - J. Math. Phys. 4, 924
 - Demianski & Newman (1966): Rotating NUT - Bull. Acad. Pol. Sci. 14, 653
 - Mann & Stelea (2006): NUT thermodynamics - Phys. Lett. B 634, 448

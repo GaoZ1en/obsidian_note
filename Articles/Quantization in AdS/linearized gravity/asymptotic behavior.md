@@ -6,10 +6,12 @@ $$\begin{align}
 
 we have to impose boundary conditions on the metric perturbations $\displaystyle{h_{\mu \nu }}$ as $\displaystyle{r\to \infty }$. here we adopt the Brown-Henneaux boundary conditions are given by (see [(4.3)](https://link.springer.com/article/10.1007/BF01211590)): (here we choose a different chooice of asymptotic behavior of $\displaystyle{h_{tr}}$ and $\displaystyle{h_{r\phi}}$ compared to the results of Zhe Feng's notes)
 
-$$\begin{array}{c|ccc}
+$$
+\begin{array}{c|ccc}
 \mathcal{O}(r^{n}) & h_{tt}, h_{t\phi}, h_{\phi \phi} & h_{tr},h_{r\phi} & h_{rr} \\
-\hline & 0 & -3 & -4 
-\end{array}$$
+\hline & 0 & -3 & -4
+\end{array}
+$$
 
 then
 
@@ -26,10 +28,12 @@ $$\begin{align}
 
 and
 
-$$\begin{array}{c|ccc}
+$$
+\begin{array}{c|ccc}
 \mathcal{O}(r^{n}) & h^{tt}, h^{t\phi}, h^{\phi \phi} & h^{tr},h^{r\phi} & h^{rr} \\
 \hline & -4 & -3 & 0
-\end{array}$$
+\end{array}
+$$
 
 then the trace and the square of the metric perturbations behaves as
 
@@ -40,35 +44,43 @@ h_{\mu \nu}h^{\mu \nu} & =\mathcal{O}(r^{-4})
 
 covariant derivatives of the metric perturbations behaves as
 
-$$\begin{array}{c|cccccc}
+$$
+\begin{array}{c|cccccc}
 \mathcal{O}(r^{n}) & h_{tt} & h_{t\phi} & h_{\phi \phi} & h_{tr} & h_{r\phi} & h_{rr} \\
 \hline \nabla ^{(0)}_{t} & 0 & 0 & 0 & -1 & -1 & -4 \\
 \nabla ^{(0)}_{r} & -1 & -1 & -1 & -4 & -4 & -5 \\
 \nabla ^{(0)}_{\phi} & 0 & 0 & 0 & -1 & -1 & -4
-\end{array}$$
+\end{array}
+$$
 
 and
 
-$$\begin{array}{c|cccccc}
+$$
+\begin{array}{c|cccccc}
 \mathcal{O}(r^{n}) & h_{t}^{~t} & h_{t}^{~\phi} & h_{\phi}^{~t} & h_{\phi}^{~\phi} & h_{t}^{~r} & h_{\phi}^{~r} & h_{r}^{~t} & h_{r}^{~\phi} & h_{r}^{~r} \\
 \hline \nabla ^{(0)}_{t} & -2 & -2 & -2 & -2 & 1 & 1 & -3 & -3 & -2 \\
 \nabla ^{(0)}_{r} & -3 & -3 & -3 & -3 & -2 & -2 & -6 & -6 & -3 \\
 \nabla ^{(0)}_{\phi} & -2 & -2 & -2 & -2 & 1 & 1 & -3 & -3 & -2
-\end{array}$$
+\end{array}
+$$
 
-$$\begin{array}{c|cccccc}
+$$
+\begin{array}{c|cccccc}
 \mathcal{O}(r^{n}) & h^{t}_{~t} & h^{t}_{~\phi} & h^{\phi}_{~t} & h^{\phi}_{~\phi} & h^{r}_{~t} & h^{r}_{~\phi} & h^{t}_{~r} & h^{\phi}_{~r} & h^{r}_{~r} \\
 \hline \nabla ^{(0)}_{t} & -2 & -2 & -2 & -2 & 1 & 1 & -3 & -3 & -2 \\
 \nabla ^{(0)}_{r} & -3 & -3 & -3 & -3 & -2 & -2 & -6 & -6 & -3 \\
 \nabla ^{(0)}_{\phi} & -2 & -2 & -2 & -2 & 1 & 1 & -3 & -3 & -2
-\end{array}$$
+\end{array}
+$$
 
-$$\begin{array}{c|cccccc}
+$$
+\begin{array}{c|cccccc}
 \mathcal{O}(r^{n}) & h^{tt} & h^{t\phi} & h^{\phi \phi} & h^{tr} & h^{r\phi} & h^{rr} \\
 \hline \nabla ^{(0)}_{t} & -4 & -4 & -4 & -1 & -1 & 0 \\
 \nabla ^{(0)}_{r} & -5 & -5 & -5 & -4 & -4 & -1 \\
 \nabla ^{(0)}_{\phi} & -4 & -4 & -4 & -1 & -1 & 0
-\end{array}$$
+\end{array}
+$$
 
 $$\begin{align}
 \nabla ^{(0)t}h_{tt}\sim \nabla ^{(0)t}h_{t\phi}\sim \nabla ^{(0)t}h_{\phi \phi}\sim \nabla ^{(0)\phi}h_{tt}\sim \nabla ^{(0)\phi}h_{t\phi}\sim \nabla ^{(0)\phi}h_{\phi \phi} & =\mathcal{O}(r^{-2}) \\
@@ -118,30 +130,31 @@ $$\begin{align}
 
 *covariant derivatives of metric perturbation*
 
-$$\begin{array}{c|cccccc}
+$$
+\begin{array}{c|cccccc}
  & h_{tt} & h_{t\phi} & h_{\phi \phi} & h_{tr} & h_{r\phi} & h_{rr} \\
 \hline \nabla ^{(0)}_{t} & \partial _{t}h_{tt}-2r^{3}h_{tr}+\mathcal{O}(r^{-2}) & \partial _{t}h_{t\phi}-r^{3}h_{r\phi} & \partial _{t}h_{\phi \phi} & -r^{3}h_{rr}-\frac{1}{r}h_{tt}+\mathcal{O}(r^{-3}) & -\frac{1}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & \partial _{t}h_{rr}-\frac{2}{r}h_{tr}+\mathcal{O}(r^{-6}) \\
 \nabla ^{(0)}_{r} & \partial _{r}h_{tt}-\frac{2}{r}h_{tt}+\mathcal{O}(r^{-3}) & \partial _{r}h_{t\phi}-\frac{2}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & \partial _{r}h_{\phi \phi}-\frac{2}{r}h_{\phi \phi} & \partial _{r}h_{tr}+\mathcal{O}(r^{-6}) & \partial _{r}h_{r\phi}+\mathcal{O}(r^{-6}) & \partial _{r}h_{rr}+\frac{2}{r}h_{rr}+\mathcal{O}(r^{-7}) \\
 \nabla ^{(0)}_{\phi} & \partial _{\phi}h_{tt} & \partial _{\phi}h_{t\phi}+r^{3}h_{tr}+\mathcal{O}(r^{-2}) & \partial _{\phi}h_{\phi \phi}+2r^{3}h_{r\phi}+\mathcal{O}(r^{-2}) & -\frac{1}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & -\frac{1}{r}h_{\phi \phi}+r^{3}h_{rr}+\mathcal{O}(r^{-3}) & \partial _{\phi}h_{rr}-\frac{2}{r}h_{r\phi}
-\end{array}$$
+\end{array}
+$$
 
-$$\begin{array}{c|cccccc}
+$$
+\begin{array}{c|cccccc}
 \mathcal{O}(r^{n}) & h_{tt} & h_{t\phi} & h_{\phi \phi} & h_{tr} & h_{r\phi} & h_{rr} \\
 \hline \nabla ^{(0)}_{t} & 0 & 0 & 0 & -1 & -1 & -4 \\
 \nabla ^{(0)}_{r} & -1 & -1 & -1 & -4 & -4 & -5 \\
 \nabla ^{(0)}_{\phi} & 0 & 0 & 0 & -1 & -1 & -4
-\end{array}$$
+\end{array}
+$$
 
 *Christoffel symbols*
-
 
 $$\begin{align}
 \Gamma ^{\rho}_{~\mu \nu} & ={\Gamma ^{(0)}}^{\rho}_{~\mu \nu}+\frac{1}{2}g^{(0)\rho \sigma}(\nabla ^{(0)}_{\mu}h_{\sigma \nu}+\nabla _{\nu}^{(0)}h_{\mu \sigma}-\nabla ^{(0)}_{\sigma}h_{\mu \nu}) \\
  & +\frac{1}{2}h^{\rho \alpha}(\nabla ^{(0)}_{\alpha}h_{\mu \nu}-\nabla ^{(0)}_{\mu}h_{\alpha \nu}-\nabla ^{(0)}_{\nu}h_{\mu \alpha}) \\
- & +\frac{1}{2}h_{\alpha}^{~\beta}h^{\rho \alpha}(\nabla ^{(0)}_{\mu}h_{\beta \nu}+\nabla ^{(0)}_{\nu}h_{\mu \beta}-\nabla ^{(0)}_{\beta}h_{\mu \nu})+\mathcal{O}(h^{4}) 
+ & +\frac{1}{2}h_{\alpha}^{~\beta}h^{\rho \alpha}(\nabla ^{(0)}_{\mu}h_{\beta \nu}+\nabla ^{(0)}_{\nu}h_{\mu \beta}-\nabla ^{(0)}_{\beta}h_{\mu \nu})+\mathcal{O}(h^{4})
 \end{align}$$
-
-
 
 $$\begin{align}
 \Gamma ^{t}_{~tt} & =-\frac{1}{2r^{2}}\partial _{t}h_{tt}+r h_{tr}+\mathcal{O}(r^{-4}) \\
@@ -154,13 +167,14 @@ $$\begin{align}
  & =-\frac{1}{2r^{2}}(2\partial _{\phi}h_{t\phi}+2r^{3}h_{tr}-\partial _{t}h_{\phi \phi})+\mathcal{O}(r^{-4})
 \end{align}$$
 
-$$\begin{array}{c|cccccc}
+$$
+\begin{array}{c|cccccc}
  & h_{tt} & h_{t\phi} & h_{\phi \phi} & h_{tr} & h_{r\phi} & h_{rr} \\
 \hline \nabla ^{(0)}_{t} & \partial _{t}h_{tt}-2r^{3}h_{tr}+\mathcal{O}(r^{-2}) & \partial _{t}h_{t\phi}-r^{3}h_{r\phi} & \partial _{t}h_{\phi \phi} & -r^{3}h_{rr}-\frac{1}{r}h_{tt}+\mathcal{O}(r^{-3}) & -\frac{1}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & \partial _{t}h_{rr}-\frac{2}{r}h_{tr}+\mathcal{O}(r^{-6}) \\
 \nabla ^{(0)}_{r} & \partial _{r}h_{tt}-\frac{2}{r}h_{tt}+\mathcal{O}(r^{-3}) & \partial _{r}h_{t\phi}-\frac{2}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & \partial _{r}h_{\phi \phi}-\frac{2}{r}h_{\phi \phi} & \partial _{r}h_{tr}+\mathcal{O}(r^{-6}) & \partial _{r}h_{r\phi}+\mathcal{O}(r^{-6}) & \partial _{r}h_{rr}+\frac{2}{r}h_{rr}+\mathcal{O}(r^{-7}) \\
 \nabla ^{(0)}_{\phi} & \partial _{\phi}h_{tt} & \partial _{\phi}h_{t\phi}+r^{3}h_{tr}+\mathcal{O}(r^{-2}) & \partial _{\phi}h_{\phi \phi}+2r^{3}h_{r\phi}+\mathcal{O}(r^{-2}) & -\frac{1}{r}h_{t\phi}+\mathcal{O}(r^{-3}) & -\frac{1}{r}h_{\phi \phi}+r^{3}h_{rr}+\mathcal{O}(r^{-3}) & \partial _{\phi}h_{rr}-\frac{2}{r}h_{r\phi}
-\end{array}$$
-
+\end{array}
+$$
 
 $$\begin{align}
 \Gamma ^{t}_{~tr} & =\frac{1}{r}-\frac{1}{r^{3}}+\mathcal{O}(r^{-5}) \\
@@ -173,7 +187,7 @@ $$\begin{align}
 $$\begin{align}
 \begin{array}{c|ccc}
 \mathcal{O}(r^{n}) & h_{tt}, h_{t\phi}, h_{\phi \phi} & h_{tr},h_{r\phi} & h_{rr} \\
-\hline & 0 & -3 & -4 
+\hline & 0 & -3 & -4
 \end{array} \\
 \begin{array}{c|ccc}
 \mathcal{O}(r^{n}) & h^{tt}, h^{t\phi}, h^{\phi \phi} & h^{tr},h^{r\phi} & h^{rr} \\
@@ -185,9 +199,11 @@ $$\begin{align}
 \end{array}
 \end{align}$$
 
-$$\begin{array}{c|cccccc}
+$$
+\begin{array}{c|cccccc}
 & g^{(0)}_{tt} & g^{(0)}_{rr} & g^{(0)}_{\phi \phi} & g^{(0)tt} & g^{(0)rr} & g^{(0)\phi \phi} \\
 \hline & -r^{2}-1 & \frac{1}{r^{2}} -\frac{1}{r^{4}}+\mathcal{O}(r^{-6}) & r^{2} & -\frac{1}{r^{2}}+\frac{1}{r^{4}}+\mathcal{O}(r^{-6}) & r^{2}+1 & \frac{1}{r^{2}}
-\end{array}$$
+\end{array}
+$$
 
 ---

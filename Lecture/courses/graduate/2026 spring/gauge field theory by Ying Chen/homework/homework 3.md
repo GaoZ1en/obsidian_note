@@ -2,13 +2,13 @@
 
 attempt to establish an electroweak unification theory that includes only the first-generation leptons. the following are the key steps:
 1. determine the degrees of freedom of the theory
-2. determine the symmetry of the theory
-3. construct the corresponding gauge theory
-4. determine the interaction term for the charged currem $\displaystyle{(W^{\pm})}$
-5. explain the necessity of introducing the $\displaystyle{(U(1))}$ weak hypercharge symmetry, localize it, and construct the corresponding gauge theory
-6. finally, write down the standard form of the electroweak unification theory
-7. what is the neutral current, and what are its characteristics
-8. introduce the Higgs mechanism and discuss the origin of masses for the gauge bosons and the Higgs particle
+1. determine the symmetry of the theory
+1. construct the corresponding gauge theory
+1. determine the interaction term for the charged currem $\displaystyle{(W^{\pm})}$
+1. explain the necessity of introducing the $\displaystyle{(U(1))}$ weak hypercharge symmetry, localize it, and construct the corresponding gauge theory
+1. finally, write down the standard form of the electroweak unification theory
+1. what is the neutral current, and what are its characteristics
+1. introduce the Higgs mechanism and discuss the origin of masses for the gauge bosons and the Higgs particle
 
 ## solution
 
@@ -96,4 +96,3 @@ $$\begin{align}
 \end{align}$$
 
 where $\displaystyle{m_{h}=\sqrt{2\lambda}v}$ is the mass of the Higgs particle. that's the complete electroweak unification theory for the first-generation leptons.
-

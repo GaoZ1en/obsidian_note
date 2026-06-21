@@ -76,7 +76,7 @@ a = input("what is your name")
 print(type(a))
 ```
 
-## 
+##
 
 转义字符\
 
@@ -172,4 +172,3 @@ try:
 except Wrong_Denominator[ZeroDivisionError]:
   print("denominator cannot be zero")
 ```
-

@@ -2,11 +2,13 @@
 
 consider the SSH model, the Hamiltonian is
 
-$$\tag{1.0}\begin{align}
+$$
+\tag{1.0}\begin{align}
 H & =\sum ^{L}_{j=1}\left(-t_{1}c_{j,a}^{\dagger}c_{j,b}-t_{2}c^{\dagger}_{j,b}c_{j+1,a}+\text{h.c.}\right)
-\end{align}$$
+\end{align}
+$$
 
-where $\displaystyle{c_{j,a}}$ and $\displaystyle{c_{j,b}}$ are the fermion annihilation operators on sublattices $\displaystyle{a}$ and $\displaystyle{b}$ of the $\displaystyle{j}$-th unit cell, and $\displaystyle{t_{1}}$ and $\displaystyle{t_{2}}$ are real positive hopping amplitudes. we adopt periodic boundary conditions, i.e., $\displaystyle{c_{L+1,a/b}=c_{1,a/b}}$. 
+where $\displaystyle{c_{j,a}}$ and $\displaystyle{c_{j,b}}$ are the fermion annihilation operators on sublattices $\displaystyle{a}$ and $\displaystyle{b}$ of the $\displaystyle{j}$-th unit cell, and $\displaystyle{t_{1}}$ and $\displaystyle{t_{2}}$ are real positive hopping amplitudes. we adopt periodic boundary conditions, i.e., $\displaystyle{c_{L+1,a/b}=c_{1,a/b}}$.
 
 ## energy spectrum solution
 
@@ -32,7 +34,6 @@ c_{k,b}
 \end{pmatrix} \\
 H(k) & =-(t_{1}+t_{2}\cos k)\sigma _{x}-t_{2}\sin k\sigma _{y}
 \end{align}$$
-
 
 then
 
@@ -65,7 +66,8 @@ $$\begin{align}
 
 define operators
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 \begin{pmatrix}
 d_{k,+} \\
 d_{k,-}
@@ -73,7 +75,8 @@ d_{k,-}
 c_{k,a} \\
 c_{k,b}
 \end{pmatrix}
-\end{align}$$
+\end{align}
+$$
 
 then the Hamiltonian becomes
 
@@ -86,6 +89,7 @@ the ground state is obtained by filling all negative-energy states
 $$\begin{align}
 \ket{\psi} =\prod _{k}d_{k,-}^{\dagger}\ket{0}
 \end{align}$$
+
 the trajectory of $\displaystyle{\vec{n}_{k}}$ are shown in the following pictures. topological trivial phase: $\displaystyle{t_{1}>t_{2}}$, the winding number $\displaystyle{\nu=0}$; topological non-trivial phase: $\displaystyle{t_{1}<t_{2}}$, the winding number $\displaystyle{\nu=1}$.
 
 ![[Attachments/Pasted image 20251007194324.png]]
@@ -112,8 +116,11 @@ H & =\sum ^{L-1}_{j=1}-t_{2}(\alpha _{j}^{\dagger}\alpha _{j}-\beta _{j}^{\dagge
 \end{align}$$
 
 we have 2 degenerate ground states:
-$$\ket{\psi _{L}} =c_{1,a}^{\dagger}\prod ^{L-1}_{j=1}\alpha _{j}^{\dagger}\ket{0},\qquad
-\ket{\psi _{R}} =c_{L,b}^{\dagger}\prod ^{L-1}_{j=1}\alpha _{j}^{\dagger}\ket{0}.$$
+
+$$\begin{align}
+\ket{\psi _{L}} =c_{1,a}^{\dagger}\prod ^{L-1}_{j=1}\alpha _{j}^{\dagger}\ket{0},\qquad
+\ket{\psi _{R}} =c_{L,b}^{\dagger}\prod ^{L-1}_{j=1}\alpha _{j}^{\dagger}\ket{0}.
+\end{align}$$
 
 when $\displaystyle{\frac{t_{2}}{t_{1}}\gg1}$. the Hamiltonian can be written as
 
@@ -124,11 +131,23 @@ V & =\sum ^{L}_{j=1}\left(-t_{1}c_{j,a}^{\dagger}c_{j,b}-t_{1}c^{\dagger}_{j,b}c
 \end{align}$$
 
 let $|L\rangle=c_{1,a}^{\dagger}|0\rangle$, $|R\rangle=c_{L,b}^{\dagger}|0\rangle$ (single-particle edge subspace). define the projectors: $P=|L\rangle\langle L|+|R\rangle\langle R|$, $Q=1-P$. perturbation:
-$$V = - t_1 \sum_{j=1}^{L} ( c_{j,a}^{\dagger} c_{j,b} + c_{j,b}^{\dagger} c_{j,a}).$$
+
+$$\begin{align}
+V = - t_1 \sum_{j=1}^{L} ( c_{j,a}^{\dagger} c_{j,b} + c_{j,b}^{\dagger} c_{j,a}).
+\end{align}$$
+
 lowest non-vanishing contribution linking $|L\rangle$ to $|R\rangle$ involves $L$ hoppings and $L-1$ virtual denominators of size $\Delta_{\text{bulk}}\sim t_2$. effective matrix element
-$$\delta = \langle L| V (\frac{1}{E_0-H_0} Q V)^{L-1} |R\rangle \sim C \frac{t_1^{L}}{t_2^{L-1}},$$
+
+$$\begin{align}
+\delta = \langle L| V (\frac{1}{E_0-H_0} Q V)^{L-1} |R\rangle \sim C \frac{t_1^{L}}{t_2^{L-1}},
+\end{align}$$
+
 with $C=O(1)$. energy splitting:
-$$\Delta E = 2|\delta| \sim 2C\, t_1 \left(\frac{t_1}{t_2}\right)^{L-1},$$
+
+$$\begin{align}
+\Delta E = 2|\delta| \sim 2C\, t_1 \left(\frac{t_1}{t_2}\right)^{L-1},
+\end{align}$$
+
 exponentially small for fixed $t_1/t_2<1$ in the thermodynamic limit $L\to\infty$.
 
 further add the following perturbation
@@ -138,7 +157,11 @@ V & =\sum ^{L-1}_{j=1}\left(-t'c^{\dagger}_{j,a}c_{j+1,a}-t'c^{\dagger}_{j,b}c_{
 \end{align}$$
 
 and set $\displaystyle{t_{1}=0,t_{2}\gg t'>0}$. the leading process coupling edges requires $(L-1)$ same-sublattice hops with $(L-2)$ virtual denominators, giving
-$$\delta' \sim C' \frac{t'^{\,L}}{t_2^{L-1}},\qquad \Delta E' \sim 2|\delta'|,$$
+
+$$\begin{align}
+\delta' \sim C' \frac{t'^{\,L}}{t_2^{L-1}},\qquad \Delta E' \sim 2|\delta'|,
+\end{align}$$
+
 again vanish in thermodynamic limit $\displaystyle{L\to \infty}$ for fixed $t'/t_2<1$.
 
 # Heisenberg model
@@ -149,7 +172,7 @@ $$\begin{align}
 H & =\sum _{\braket{ ij } ,s}\left(-t_{ij}c^{\dagger}_{is}c_{js}+\text{h.c.}\right)+\sum _{i}Un_{i\uparrow}n_{i\downarrow}
 \end{align}$$
 
-where $\displaystyle{c_{i\uparrow}}$ and $\displaystyle{c_{i\downarrow}}$ are annihilation operators of spin 1/2 fermion for site $\displaystyle{i}$. the summation is taken over all bonds $\displaystyle{\braket{ ij }}$, and $\displaystyle{U\gg t_{ij}>0}$. 
+where $\displaystyle{c_{i\uparrow}}$ and $\displaystyle{c_{i\downarrow}}$ are annihilation operators of spin 1/2 fermion for site $\displaystyle{i}$. the summation is taken over all bonds $\displaystyle{\braket{ ij }}$, and $\displaystyle{U\gg t_{ij}>0}$.
 
 ## two-site model
 
@@ -160,7 +183,10 @@ H & =\sum _{s}\left(-tc^{\dagger}_{1s}c_{2s}-tc^{\dagger}_{2s}c_{1s}\right)+U(n_
 \end{align}$$
 
 The full two-site Fock space has dimension $4\times 4=16$ (each site: $|0\rangle,|\uparrow\rangle,|\downarrow\rangle,|\uparrow\downarrow\rangle$). Fix total particle number $N=2$: remaining 6 states consist of two double-occupancy states and four singly-occupied spin states. A convenient ordered $N=2$ basis:
-$$\{c_{1\uparrow}^{\dagger}c_{1\downarrow}^{\dagger}|0\rangle,\ c_{2\uparrow}^{\dagger}c_{2\downarrow}^{\dagger}|0\rangle,\ c_{1\uparrow}^{\dagger}c_{2\uparrow}^{\dagger}|0\rangle,\ c_{1\uparrow}^{\dagger}c_{2\downarrow}^{\dagger}|0\rangle,\ c_{1\downarrow}^{\dagger}c_{2\uparrow}^{\dagger}|0\rangle,\ c_{1\downarrow}^{\dagger}c_{2\downarrow}^{\dagger}|0\rangle\}. $$
+
+$$\begin{align}
+\{c_{1\uparrow}^{\dagger}c_{1\downarrow}^{\dagger}|0\rangle,\ c_{2\uparrow}^{\dagger}c_{2\downarrow}^{\dagger}|0\rangle,\ c_{1\uparrow}^{\dagger}c_{2\uparrow}^{\dagger}|0\rangle,\ c_{1\uparrow}^{\dagger}c_{2\downarrow}^{\dagger}|0\rangle,\ c_{1\downarrow}^{\dagger}c_{2\uparrow}^{\dagger}|0\rangle,\ c_{1\downarrow}^{\dagger}c_{2\downarrow}^{\dagger}|0\rangle\}.
+\end{align}$$
 
 set $\displaystyle{t=0}$, the energy levels and eigenstates are summarized as follows
 
@@ -177,13 +203,16 @@ $$\begin{align}
 \ket{S} & =\frac{1}{\sqrt{ 2 }}(c_{1\uparrow}^{\dagger}c_{2\downarrow}^{\dagger}-c_{1\downarrow}^{\dagger}c_{2\uparrow}^{\dagger})\ket{0} \\
 \ket{T_{0}} & =\frac{1}{\sqrt{ 2 }}(c_{1\uparrow}^{\dagger}c_{2\downarrow}^{\dagger}+c_{1\downarrow}^{\dagger}c_{2\uparrow}^{\dagger})\ket{0} \\
 \ket{T_{+}} & =c_{1\uparrow}^{\dagger}c_{2\uparrow}^{\dagger}\ket{0} \\
-\ket{T_{-}} & =c_{1\downarrow}^{\dagger}c_{2\downarrow}^{\dagger}\ket{0} 
+\ket{T_{-}} & =c_{1\downarrow}^{\dagger}c_{2\downarrow}^{\dagger}\ket{0}
 \end{align}$$
 
 where $\displaystyle{\ket{S}}$ lies in the singlet subspace of total spin $\displaystyle{S=0}$, and $\displaystyle{\ket{T_{0}},\ket{T_{+}},\ket{T_{-}}}$ lie in the triplet subspace of total spin $\displaystyle{S=1}$. so if we introduce a perturbation that mixes the states, the singlet and triplet subspaces will not be mixed due to their different spins
 
 for $U\gg t>0$ treat hopping as perturbation. Let
-$$V= -t \sum_s (c_{1s}^{\dagger} c_{2s} + c_{2s}^{\dagger} c_{1s}).$$
+
+$$\begin{align}
+V= -t \sum_s (c_{1s}^{\dagger} c_{2s} + c_{2s}^{\dagger} c_{1s}).
+\end{align}$$
 
 define $\displaystyle{\vec{S}_{i}=\sum _{\alpha \beta} \frac{1}{2}c_{i\alpha}\vec{\sigma}_{\alpha \beta}c_{i\beta}}$ and the projection operator $\displaystyle{P}$ which projects onto the subspace with no double occupancy (since we are deriving the low energy effective Hamiltonian). the effective Hamiltonian is given by
 
@@ -218,7 +247,7 @@ PV_{ij}^{2}P & =t_{ij}^{2}P\sum _{ss'}(\tilde{c}^{\dagger}_{is}\tilde{c}_{js}\ti
  & =2t_{ij}^{2}\left(1-\mathcal{P}_{ij}\right)
 \end{align}$$
 
-here $\displaystyle{\mathcal{P}_{ij}=\sum _{ss'}\tilde{c}_{is}^{\dagger}\tilde{c}_{js'}^{\dagger}\tilde{c}_{js}\tilde{c}_{is'}}$ is the spin exchange operator between site $\displaystyle{i}$ and $\displaystyle{j}$, which can be written as 
+here $\displaystyle{\mathcal{P}_{ij}=\sum _{ss'}\tilde{c}_{is}^{\dagger}\tilde{c}_{js'}^{\dagger}\tilde{c}_{js}\tilde{c}_{is'}}$ is the spin exchange operator between site $\displaystyle{i}$ and $\displaystyle{j}$, which can be written as
 
 $$\begin{align}
 \mathcal{P}_{ij} & =\frac{1}{2}+2\vec{S}_{i}\cdot \vec{S}_{j}

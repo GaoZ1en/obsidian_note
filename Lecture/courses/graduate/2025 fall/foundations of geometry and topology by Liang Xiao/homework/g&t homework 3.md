@@ -33,20 +33,20 @@ which is not closed in $\displaystyle{\mathbb{R}}$.
 find the interior, closure, and boundary of the following point sets in $\displaystyle{\mathbb{R}^{2}}$:
 1. $\displaystyle{A=\left\{(x,y)|1<x^{2}+y^{2}\leqslant 2\right\}}$
 *sol*. $\displaystyle{\mathrm{int}A=\left\{(x,y)|1<x^{2}+y^{2}<2\right\},\bar{A}=\left\{(x,y)|1\leqslant x^{2}+y^{2}\leqslant 2\right\},\partial A=\left\{(x,y)|x^{2}+y^{2}=1\text{ or }2\right\}}$
-2. $\displaystyle{B=\left\{(x,y)|x\neq 0 \text{ or }y\neq 0\right\}}$
+1. $\displaystyle{B=\left\{(x,y)|x\neq 0 \text{ or }y\neq 0\right\}}$
 *sol*. $\displaystyle{\mathrm{int}B=B,\bar{B}=\mathbb{R}^{2},\partial B=\left\{(x,y)|x=0\text{ or }y=0\right\}}$
-3. $\displaystyle{C=\mathbb{R}^{2}-\left\{\left( x,\sin \frac{1}{x} \right)| x> 0\right\}}$
+1. $\displaystyle{C=\mathbb{R}^{2}-\left\{\left( x,\sin \frac{1}{x} \right)| x> 0\right\}}$
 *sol*. $\displaystyle{\mathrm{int}C=\mathbb{R}^{2}-\left\{\left( x,\sin \frac{1}{x} \right)|x> 0\right\}\cup\left\{(0,y)|-1\leqslant y\leqslant 1\right\}, \bar{C}=\mathbb{R}^{2},\partial C=\left\{\left( x,\sin \frac{1}{x} \right)|x> 0\right\}\cup\left\{(0,y)|-1\leqslant y\leqslant 1\right\}}$
 
 # problem 4
 
 consider the following topology of $\displaystyle{\mathbb{R}}$: $\displaystyle{\tau_{1}}$ usual topology, $\displaystyle{\tau_{2}}$ finite complement topology, $\displaystyle{\tau_{3}}$ upper limit topology.
 1. for each topology, find the closure of $\displaystyle{K=\left\{\frac{1}{n}|n\in \mathbb{Z}_{+}\right\}}$.
-*sol*. 
+*sol*.
 $\displaystyle{\tau_{1}}$: $\displaystyle{\bar{K}=K\cup \left\{0\right\}}$, since $\displaystyle{0}$ is a limit point of $\displaystyle{K}$ in the usual topology.
 $\displaystyle{\tau_{2}}$: $\displaystyle{\bar{K}=\mathbb{R}}$, since in the finite complement topology, every non-empty open set is dense.
 $\displaystyle{\tau_{3}}$: $\displaystyle{\bar{K}=K}$, since $\displaystyle{K}$ is closed in the upper limit topology.
-2. which topology satisfies the Hausdorff axiom?
+1. which topology satisfies the Hausdorff axiom?
 *sol*.
 $\displaystyle{\tau_{1}}$: $\displaystyle{\forall x_{1},x_{2}\in \mathbb{R},x_{1}<x_{2}}$. let $\displaystyle{U_{x_{1}}=\left( x_{1}-\frac{\varepsilon}{3},x_{1}+\frac{\varepsilon}{3} \right)\in \tau_{1},U_{x_{2}}=\left( x_{2}-\frac{\varepsilon}{3},x_{2}+\frac{\varepsilon}{3} \right)\in \tau_{1},\varepsilon=x_{2}-x_{1}}$. then $\displaystyle{U_{x_{1}}\cap U_{x_{2}}=\emptyset}$. thus $\displaystyle{\tau_{1}}$ satisfies the Hausdorff axiom.
 $\displaystyle{\tau_{2}}$: $\displaystyle{\forall x_{1}\ni U_{x_{1}}\in \tau_{2},x_{2}\ni U_{x_{2}}\in \tau_{2}}$, since the complements of $\displaystyle{U_{x_{1}}}$ and $\displaystyle{U_{x_{2}}}$ are finite, $\displaystyle{U_{x_{1}}\cap U_{x_{2}}\neq \emptyset}$. thus $\displaystyle{\tau_{2}}$ does not satisfy the Hausdorff axiom.
@@ -57,7 +57,7 @@ $\displaystyle{\tau_{3}}$ is similar to $\displaystyle{\tau_{1}}$, thus $\displa
 find the limit points of the following subsets of $\displaystyle{\mathbb{R}}$
 1. $\displaystyle{\left\{\frac{1}{m}+\frac{1}{n}|m,n\in \mathbb{Z}_{+}\right\}}$
 *sol*. $\displaystyle{\left\{\frac{1}{m}|m\in \mathbb{Z}_{+}\right\}}$
-2. $\displaystyle{\left\{\frac{1}{n}\sin n|n=\mathbb{Z}_{+}\right\}}$
+1. $\displaystyle{\left\{\frac{1}{n}\sin n|n=\mathbb{Z}_{+}\right\}}$
 *sol*. $\displaystyle{\left\{0\right\}}$
 
 # problem 6
@@ -69,7 +69,7 @@ suppose $\displaystyle{X}$ is the set of all real numbers, let $\displaystyle{\b
 to prove that $\displaystyle{\beta}$ is a basis for a topology on $\displaystyle{X}$, we need to verify the two conditions of a basis:
 1. $\displaystyle{\forall x\in X}$, there exists at least one basis element $\displaystyle{B\in \beta}$ such that $\displaystyle{x\in B}$.
 *proof*. for any $\displaystyle{x\in X}$, let $\displaystyle{B=[x,x+1)}$. then $\displaystyle{x\in B\in \beta}$. thus the first condition is satisfied.
-2. $\displaystyle{\forall x\in B_{1}\cap B_{2}}$, where $\displaystyle{B_{1},B_{2}\in \beta}$, there exists a basis element $\displaystyle{B_{3}\in \beta}$ such that $\displaystyle{x\in B_{3}\subseteq B_{1}\cap B_{2}}$.
+1. $\displaystyle{\forall x\in B_{1}\cap B_{2}}$, where $\displaystyle{B_{1},B_{2}\in \beta}$, there exists a basis element $\displaystyle{B_{3}\in \beta}$ such that $\displaystyle{x\in B_{3}\subseteq B_{1}\cap B_{2}}$.
 *proof*. let $\displaystyle{B_{1}=[a_{1},b_{1}),B_{2}=[a_{2},b_{2})}$. then $\displaystyle{B_{1}\cap B_{2}=[\max(a_{1},a_{2}),\min(b_{1},b_{2}))}$. let $\displaystyle{B_{3}=[x,\min(b_{1},b_{2}))}$. then $\displaystyle{x\in B_{3}\subseteq B_{1}\cap B_{2}}$. thus the second condition is satisfied.
 
 then $\displaystyle{\beta}$ is a basis for a topology on $\displaystyle{X}$. we denote this topology as $\displaystyle{\tau}$. now we need to prove that $\displaystyle{\forall B\in \beta}$ is both open and closed in $\displaystyle{(X,\tau)}$. we only need to prove $\displaystyle{B}$ is closed in $\displaystyle{(X,\tau)}$, since by definition $\displaystyle{B}$ is open in $\displaystyle{(X,\tau)}$. suppose $\displaystyle{B=[a,b)}$ and the complement of $\displaystyle{B}$ is $\displaystyle{X-B=(-\infty,a)\cup[b,\infty)}$. define $\displaystyle{D_{n}=[-n,a),E_{n}=[b,n)}$, then $\displaystyle{X-B=\bigcup ^{\infty}_{n}D_{n}\cup E_{n}}$. so $\displaystyle{B}$ is also closed in $\displaystyle{(X,\tau)}$.
@@ -92,7 +92,7 @@ let $\displaystyle{U=Y-\left\{y_{1},y_{2},\dots,y_{n}\right\}\subseteq Y}$ be an
 
 # problem 9
 
-let $\displaystyle{A}$ be a subset of a metric space. prove that $\displaystyle{d(x,A)=0\iff x \in \bar{A}}$. 
+let $\displaystyle{A}$ be a subset of a metric space. prove that $\displaystyle{d(x,A)=0\iff x \in \bar{A}}$.
 
 *sol*.
 
@@ -112,5 +112,5 @@ define $\displaystyle{A=\left\{(x,y)|y=\frac{1}{x},x>0\right\}}$ and $\displayst
 suppose $\displaystyle{\mathbb{Z}}$ is the set of integers. $\displaystyle{A_{a,b}=\left\{\dots,a-2b,a-b,a,a+b,\dots\right\}}$ is arithmetic sequence on $\displaystyle{\mathbb{Z}}$ that passes $\displaystyle{a}$, and $\displaystyle{b\neq 0}$. prove that
 1. the collection of all such arithmetic sequences $\displaystyle{\beta}$ forms a basis of a topology on $\displaystyle{\mathbb{Z}}$. this topology is called arithmetic sequence topology.
 *sol*. $\displaystyle{\forall x \in \mathbb{Z}}$, let $\displaystyle{A_{x,1}}$ be a basis element in $\displaystyle{\beta}$. then $\displaystyle{x\in A_{x,1}}$. $\displaystyle{\forall x \in A_{a_{1},b_{1}}\cap A_{a_{2},b_{2}}}$, where $\displaystyle{A_{a_{1},b_{1}},A_{a_{2},b_{2}}\in \beta}$, let $\displaystyle{b_{3}=\mathrm{lcm}(b_{1},b_{2})}$, and let $\displaystyle{a_{3}}$ be the unique integer such that $\displaystyle{a_{3}\equiv a_{1}\mod b_{1}}$ and $\displaystyle{a_{3}\equiv a_{2}\mod b_{2}}$. then $\displaystyle{x\in A_{a_{3},b_{3}}\subseteq A_{a_{1},b_{1}}\cap A_{a_{2},b_{2}}}$. thus $\displaystyle{\beta}$ forms a basis of a topology on $\displaystyle{\mathbb{Z}}$.
-2. sequence $\displaystyle{\left\{n!\right\}}$ converges to $\displaystyle{0}$ under arithmetic sequence topology.
+1. sequence $\displaystyle{\left\{n!\right\}}$ converges to $\displaystyle{0}$ under arithmetic sequence topology.
 *sol*. $\displaystyle{\forall A_{0,b}\in \beta}$, let $\displaystyle{N=b}$, then $\displaystyle{\forall n>N}$, $\displaystyle{n!\equiv 0\mod b}$, so $\displaystyle{n!\in A_{0,b}}$. thus sequence $\displaystyle{\left\{n!\right\}}$ converges to $\displaystyle{0}$ under arithmetic sequence topology.

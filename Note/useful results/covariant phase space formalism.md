@@ -15,6 +15,7 @@ S & =\int _{M}\mathbf{L}+\int _{\Gamma}\ell
 ### Yang-Mills
 
 the action of Yang-Mills theory is given by
+
 $$\begin{align}
 S & =-\frac{1}{4}\int _{M} \mathrm{d}^{4}x\sqrt{ -g }F^{a}_{\mu \nu}F_{a}^{\mu \nu}
 \end{align}$$
@@ -68,7 +69,7 @@ H_{\varepsilon} & =X_{\varepsilon}\cdot \theta-\int _{\Sigma}\mathrm{d}^{3}x\sqr
  & =f^{a}_{~bc}\int _{\Sigma}\mathrm{d}^{3}x\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}_{a}A^{b}_{\nu}\varepsilon ^{c}
 \end{align}$$
 
-which is the Yang-Mills charge associated with gauge parameter $\displaystyle{\varepsilon ^{a}}$. to get results of Maxwell theory, we just set the structure constant $\displaystyle{f^{a}_{~bc}=0}$ and drop the Lie algebra indices. 
+which is the Yang-Mills charge associated with gauge parameter $\displaystyle{\varepsilon ^{a}}$. to get results of Maxwell theory, we just set the structure constant $\displaystyle{f^{a}_{~bc}=0}$ and drop the Lie algebra indices.
 
 then we consider the Poisson bracket between two gauge Noether charges
 
@@ -82,7 +83,6 @@ where $\displaystyle{[\varepsilon,\eta]_{a}=f_{abc}\varepsilon _{b}\eta _{c}}$. 
 ### Chern-Simons
 
 the action of Chern-Simons theory in 3-dimension is given by
-
 
 $$\begin{align}
 S & =\frac{k}{4\pi}\int _{M}\mathrm{Tr}\left(A\wedge \mathrm{d}A+\frac{2}{3}A\wedge A\wedge A\right)
@@ -111,7 +111,6 @@ X_{\varepsilon}\cdot \omega & =\frac{k}{2\pi}\int _{\Sigma}\mathrm{Tr}((X_{\vare
 \implies H_{\varepsilon} & =\frac{k}{2\pi}\int _{\partial \Sigma}\mathrm{Tr}(\varepsilon A)-\frac{k}{2\pi}\int _{\Sigma}\mathrm{Tr}(\varepsilon F) \\
  & \approx \frac{k}{2\pi}\int _{\partial \Sigma}\mathrm{Tr}(\varepsilon A)
 \end{align}$$
-
 
 ## gravity
 

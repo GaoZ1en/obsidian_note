@@ -9,4 +9,3 @@ check that $\displaystyle{i\gamma _{2}\gamma _{3}}$ acts as the Pauli operator $
 # problem 3
 
 Qi-Wu-Zhang model for quantum anomalous Hall effect...
-

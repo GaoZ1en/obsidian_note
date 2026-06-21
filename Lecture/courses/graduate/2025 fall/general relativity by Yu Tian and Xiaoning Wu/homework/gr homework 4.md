@@ -10,20 +10,25 @@ z & =R\cos \theta
 
 1. find the metric tensor $\displaystyle{g_{\mu \nu}}$ in this coordinate.
 *sol*. we have
+
 $$\begin{align}
 \mathrm{d}s^{2} & =\mathrm{d}x^{2}+\mathrm{d}y^{2}+\mathrm{d}z^{2} \\
  & =R^{2}(\mathrm{d}\theta ^{2}+\sin ^{2}\theta \mathrm{d}\phi ^{2})
 \end{align}$$
+
 the non-zero components are $\displaystyle{g_{\theta \theta}=R^{2},g_{\phi \phi}=R^{2}\sin ^{2}\theta}$
-2. write down inverse metric tensor $\displaystyle{g^{\mu \nu}}$.
+1. write down inverse metric tensor $\displaystyle{g^{\mu \nu}}$.
 *sol*. $\displaystyle{g^{\theta \theta}=\frac{1}{R^{2}},g^{\phi \phi}=\frac{1}{R^{2}\sin ^{2}\theta}}$
-3. calculate the Christoffel symbols $\displaystyle{\Gamma^{\lambda}_{\mu \nu}}$.
+1. calculate the Christoffel symbols $\displaystyle{\Gamma^{\lambda}_{\mu \nu}}$.
 *sol*. we first introduce a useful formula. we write
+
 $$\begin{align}
 \Gamma ^{\rho}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =\frac{1}{2}g^{\rho \sigma}\left(\partial _{\mu}g_{\sigma \nu}+\partial _{\nu}g_{\mu \sigma}-\partial _{\sigma}g_{\mu \nu}\right)\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} \\
  & =g^{\rho \sigma}\mathrm{d}g_{\sigma \nu}\mathrm{d}x^{\nu}-\frac{1}{2}g^{\rho \sigma}\partial _{\sigma}\mathrm{d}s^{2}
 \end{align}$$
+
 then
+
 $$\begin{align}
 \Gamma ^{\theta}_{~\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =g^{\theta \theta}\mathrm{d}g_{\theta \theta}\mathrm{d}\theta-\frac{1}{2}g^{\theta \theta}\partial _{\theta}\mathrm{d}s^{2} \\
  & =-\frac{1}{2}\partial _{\theta}\sin ^{2}\theta \mathrm{d}\phi ^{2} \\
@@ -59,4 +64,3 @@ $$\begin{align}
 \end{align}$$
 
 since we have prove that $\displaystyle{\nabla _{\nu}k^{\mu}}$ is a tensor, we conclude that $\displaystyle{\mathcal{L}_{\xi}k^{\mu}}$ is also a tensor, i.e., it transforms as a vector under a coordinate transformation.
-

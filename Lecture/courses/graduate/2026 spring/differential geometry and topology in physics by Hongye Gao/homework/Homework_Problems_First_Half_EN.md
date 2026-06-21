@@ -18,19 +18,19 @@ $$
 
 Let $X$ be an arbitrary set of points, and let the complement of a subset $A_j \subseteq X$ be defined as $A_j^c := X \setminus A_j$, where $j$ is a member of some index set $J$. Prove the following de Morgan formulas:
 
-$$
+$$\begin{align}
 \left( \bigcap_{j \in J} A_j \right)^c = \bigcup_{j \in J} A_j^c,
 \qquad
 \left( \bigcup_{j \in J} A_j \right)^c = \bigcap_{j \in J} A_j^c.
-$$
+\end{align}$$
 
 ### 1.3
 
 An equivalence relation "$\sim$" among mathematical objects $A, B, C, \dots$ is a binary relation satisfying the following conditions:
 
 1. Reflexivity: $A \sim A$;
-2. Symmetry: If $A \sim B$, then $B \sim A$;
-3. Transitivity: If $A \sim B$ and $B \sim C$, then $A \sim C$.
+1. Symmetry: If $A \sim B$, then $B \sim A$;
+1. Transitivity: If $A \sim B$ and $B \sim C$, then $A \sim C$.
 
 Prove that the homeomorphism relation between topological spaces is an equivalence relation.
 
@@ -38,9 +38,9 @@ Prove that the homeomorphism relation between topological spaces is an equivalen
 
 Let $\operatorname{Id}_X: X \to X$ be the identity map, i.e., $\forall x \in X, \operatorname{Id}_X(x) = x$. We may specify a collection of open sets $\tau = \{U, U', U'', \dots\}$ on $X$, making it a topological space, and denote this space by $X_\tau$ to emphasize that the topology on $X$ is defined by $\tau$. Now let $\tau_1, \tau_2$ be two different topologies on $X$ defined by two different collections of open sets. Prove that
 
-$$
+$$\begin{align}
 \operatorname{Id}_X: X_{\tau_1} \to X_{\tau_2}
-$$
+\end{align}$$
 
 is a continuous map if and only if the topology determined by $\tau_1$ is no weaker than the topology determined by $\tau_2$.
 
@@ -52,41 +52,41 @@ Let $X, Y$ be topological spaces. Prove that a map $f: X \to Y$ is continuous if
 
 Let the set $X$ be an infinite set. Determine which of the following families of subsets $\tau_1, \tau_2, \tau_3$ form a topology on $X$, and explain your reasoning:
 
-$$
+$$\begin{align}
 \tau_1 = \{ U \subset X \mid U^c \text{ is a finite set or } X \text{ itself} \},
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 \tau_2 = \{ U \subset X \mid U^c \text{ is an infinite set or the empty set} \},
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 \tau_3 = \{ U \subset X \mid U^c \text{ is a countable set or } X \text{ itself} \}.
-$$
+\end{align}$$
 
 ### 1.7
 
 In Euclidean space $\mathbb{R}^n$, a norm is defined by
 
-$$
+$$\begin{align}
 \|x\| := \sqrt{(x^1)^2 + \cdots + (x^n)^2}, \qquad
 \forall x = (x^1, \dots, x^n) \in \mathbb{R}^n.
-$$
+\end{align}$$
 
 For any two points $x, y \in \mathbb{R}^n$, prove the Cauchy inequality
 
-$$
+$$\begin{align}
 \left( \sum_{j=1}^n x^j y^j \right)^2
 \le
 \left( \sum_{j=1}^n (x^j)^2 \right)
 \left( \sum_{j=1}^n (y^j)^2 \right)
-$$
+\end{align}$$
 
 and the Minkowski inequality
 
-$$
+$$\begin{align}
 \|x + y\| \le \|x\| + \|y\|,
-$$
+\end{align}$$
 
 and prove that the function $d(x,y) := \|x - y\|$ induced by the norm $\|\cdot\|$ satisfies the three axioms of a metric.
 
@@ -98,9 +98,9 @@ Let the metric topology on the set of real numbers $\mathbb{R}$ be defined by th
 
 Prove that the unit open ball in the metric space $\mathbb{R}^n$,
 
-$$
+$$\begin{align}
 B^n := \{ x \in \mathbb{R}^n \mid \|x\| < 1 \},
-$$
+\end{align}$$
 
 is homeomorphic to $\mathbb{R}^n$.
 
@@ -108,9 +108,9 @@ is homeomorphic to $\mathbb{R}^n$.
 
 Let the topological space $X$ be a Hausdorff space, and let $f: X \to X$ be a continuous self-map. Prove that the fixed-point set of this map,
 
-$$
+$$\begin{align}
 \mathcal{F}(f) := \{ x \in X \mid f(x) = x \},
-$$
+\end{align}$$
 
 is a closed subset of $X$.
 
@@ -120,15 +120,15 @@ Hint: It suffices to prove that the complement of the fixed-point set $\mathcal{
 
 Let
 
-$$
+$$\begin{align}
 S^{n-1} := \{ (x^1, \dots, x^n) \in \mathbb{R}^n \mid (x^1)^2 + \cdots + (x^n)^2 = 1 \}
-$$
+\end{align}$$
 
 be the unit sphere. Using the north pole and the south pole as reference points respectively, construct the stereographic projection from $S^{n-1}$ to the hyperplane
 
-$$
+$$\begin{align}
 \mathbb{R}^{n-1} := \{ (x^1, \dots, x^n) \in \mathbb{R}^n \mid x^n = 0 \}.
-$$
+\end{align}$$
 
 ### 1.12
 
@@ -144,9 +144,9 @@ Explain, according to the definition, that any open set in $\mathbb{R}^N$ is a (
 
 Let $0 \le \theta < 2\pi$, and let $\mathbf{n}$ be an arbitrary unit vector in $\mathbb{R}^3$ ($\mathbf{n} \cdot \mathbf{n} = 1$). Denote by $I_k$ the $k \times k$ identity matrix, and let $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ denote the three Pauli matrices. Derive the following formula:
 
-$$
+$$\begin{align}
 e^{i\theta(\mathbf{n} \cdot \boldsymbol{\sigma})} = I_2 \cos\theta + i(\mathbf{n} \cdot \boldsymbol{\sigma}) \sin\theta.
-$$
+\end{align}$$
 
 ### 2.3
 
@@ -168,9 +168,9 @@ $$
 
 The Grassmannian manifold $G_{k,n}(\mathbb{R})$ consisting of all $k$-dimensional linear subspaces in $\mathbb{R}^n$ can be written as a coset space of the orthogonal group,
 
-$$
+$$\begin{align}
 G_{k,n}(\mathbb{R}) = O(n) / O(k) \times O(n-k).
-$$
+\end{align}$$
 
 Explain this.
 
@@ -179,20 +179,20 @@ Explain this.
 Prove that the following maps $f$ between differentiable manifolds are smooth:
 
 1. $f: S^1 = \{ z \in \mathbb{C} \mid |z| = 1 \} \to S^1, \quad z \mapsto f(z) = z^n \quad (n \in \mathbb{Z})$;
-2. $f: S^n = \{ \mathbf{x} \in \mathbb{R}^{n+1} \mid \|\mathbf{x}\| = 1 \} \to S^n, \quad \mathbf{x} \mapsto f(\mathbf{x}) = -\mathbf{x}$;
-3. $f: S^3 = \{ (w,z) \in \mathbb{C}^2 \mid |w|^2 + |z|^2 = 1 \} \to S^2 = \{ (x_1, x_2, x_3) \in \mathbb{R}^3 \mid x_1^2 + x_2^2 + x_3^2 = 1 \}$,
+1. $f: S^n = \{ \mathbf{x} \in \mathbb{R}^{n+1} \mid \|\mathbf{x}\| = 1 \} \to S^n, \quad \mathbf{x} \mapsto f(\mathbf{x}) = -\mathbf{x}$;
+1. $f: S^3 = \{ (w,z) \in \mathbb{C}^2 \mid |w|^2 + |z|^2 = 1 \} \to S^2 = \{ (x_1, x_2, x_3) \in \mathbb{R}^3 \mid x_1^2 + x_2^2 + x_3^2 = 1 \}$,
 
-$$
+$$\begin{align}
 (w,z) \mapsto f(w,z) = \bigl( 2\operatorname{Re}(z \bar{w}), \; 2\operatorname{Im}(z \bar{w}), \; |z|^2 - |w|^2 \bigr).
-$$
+\end{align}$$
 
 ### 2.6
 
 Consider the tangent spaces $T_p M$ on a differentiable manifold $M$. The union of these tangent spaces,
 
-$$
+$$\begin{align}
 \bigcup_{p \in M} T_p M,
-$$
+\end{align}$$
 
 forms a vector bundle over $M$. Explain why. (Note: This vector bundle is called the tangent bundle of $M$, often denoted by $TM$.)
 
@@ -200,33 +200,33 @@ forms a vector bundle over $M$. Explain why. (Note: This vector bundle is called
 
 Let $M$ be a differentiable manifold, $X = X^\mu \partial / \partial x^\mu \in \mathfrak{X}(M)$ a smooth vector field on $M$, and
 
-$$
+$$\begin{align}
 t = t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n}
 \frac{\partial}{\partial x^{\mu_1}} \otimes \cdots \otimes
 \frac{\partial}{\partial x^{\mu_m}} \otimes
 dx^{\nu_1} \otimes \cdots \otimes dx^{\nu_n}
 \in \mathcal{T}(M)^m_n
-$$
+\end{align}$$
 
 a smooth $(m,n)$-type tensor field on $M$. Prove that the Lie derivative of this tensor field,
 
-$$
+$$\begin{align}
 \mathcal{L}_X t = (\mathcal{L}_X t)^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n}
 \frac{\partial}{\partial x^{\mu_1}} \otimes \cdots \otimes
 \frac{\partial}{\partial x^{\mu_m}} \otimes
 dx^{\nu_1} \otimes \cdots \otimes dx^{\nu_n},
-$$
+\end{align}$$
 
 has the component coefficients
 
-$$
+$$\begin{align}
 (\mathcal{L}_X t)^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n}
 = X^\lambda \partial_\lambda t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n}
 + \sum_{j=1}^{n} \partial_{\nu_j} X^\lambda
 \, t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_{j-1} \lambda \nu_{j+1} \cdots \nu_n}
 - \sum_{k=1}^{m} \partial_\lambda X^{\mu_k}
 \, t^{\mu_1 \cdots \mu_{k-1} \lambda \mu_{k+1} \cdots \mu_m}_{\nu_1 \cdots \nu_n}.
-$$
+\end{align}$$
 
 Here $\partial_\lambda$ is the abbreviated notation for the partial differential operator $\partial / \partial x^\lambda$.
 
@@ -234,38 +234,38 @@ Here $\partial_\lambda$ is the abbreviated notation for the partial differential
 
 Let $M$ be a differentiable manifold. For all $f \in \mathcal{F}(M)$ and $X, Y \in \mathfrak{X}(M)$, derive the following identities:
 
-$$
+$$\begin{align}
 \mathcal{L}_{fX} Y = f \mathcal{L}_X Y - Y[f] X,
 \qquad
 \mathcal{L}_X (fY) = f \mathcal{L}_X Y + X[f] Y.
-$$
+\end{align}$$
 
 ### 2.9
 
 Let $M, N$ be differentiable manifolds, $X, Y \in \mathfrak{X}(M)$, and $f: M \to N$ a smooth map. Prove that
 
-$$
+$$\begin{align}
 f_* [X, Y] = [f_* X, f_* Y].
-$$
+\end{align}$$
 
 ### 2.10
 
 Let $M, N$ be differentiable manifolds and $f: M \to N$ a smooth map. For any differential forms $\omega, \xi \in \Omega^*(N)$ on $N$, prove the identities
 
-$$
+$$\begin{align}
 f^*(\omega \wedge \xi) = (f^* \omega) \wedge (f^* \xi),
 \qquad
 d(f^* \omega) = f^*(d\omega).
-$$
+\end{align}$$
 
 ### 2.11
 
 Let $M$ be a differentiable manifold, $X, Y \in \mathfrak{X}(M)$, $\omega \in \Omega^r(M)$, and $\eta \in \Omega^*(M)$. Prove:
 
 1. $$(\mathcal{L}_X \omega)(X_1, \dots, X_r) = X[\omega(X_1, \dots, X_r)] - \sum_{j=1}^r \omega(X_1, \dots, [X, X_j], \dots, X_r);$$
-2. $$i_X(\omega \wedge \eta) = i_X \omega \wedge \eta + (-1)^r \omega \wedge i_X \eta;$$
-3. $$i_X^2 = 0;$$
-4. $$\mathcal{L}_X i_X \omega = i_X \mathcal{L}_X \omega.$$
+1. $$i_X(\omega \wedge \eta) = i_X \omega \wedge \eta + (-1)^r \omega \wedge i_X \eta;$$
+1. $$i_X^2 = 0;$$
+1. $$\mathcal{L}_X i_X \omega = i_X \mathcal{L}_X \omega.$$
 
 ### 2.12
 
@@ -275,9 +275,9 @@ Let $(M, \omega)$ be a symplectic manifold and $X_H$ a Hamiltonian vector field 
 
 The integration measure for an $N \times N$ Hermitian matrix $H = (H^i_j)$ is
 
-$$
+$$\begin{align}
 d\mu(H) := \prod_i dH^i_i \prod_{j \neq k} dH^j_k.
-$$
+\end{align}$$
 
 Perform the change of variables
 
@@ -291,24 +291,24 @@ H = U \begin{pmatrix}
 \qquad d\Omega = U^\dagger dU,
 $$
 
-$$
+$$\begin{align}
 d\mu(H) \to d\mu(\lambda, \Omega) = |\det \mathcal{J}| \, d\mu(H),
 \qquad
 \mathcal{J} = \frac{\partial(\lambda_i, \Omega^j_k)}{\partial(H^i_i, H^j_k)}.
-$$
+\end{align}$$
 
 The Jacobian matrix $\mathcal{J}$ in this expression can be computed via the following considerations:
 
 1. Regard $H$ as an unperturbed Hamiltonian, the state vector $\mathbf{u}$ as an $N$-component column vector, and the solution of the eigenvalue equation $H\mathbf{u} = \lambda \mathbf{u}$ as describing the $N$ eigenvalues $\lambda = \lambda_i$ and orthonormal eigenvectors $\mathbf{u} = \mathbf{u}_i$ of $H$. Verify that these eigenstates can be used to construct the unitary matrix $U = (\mathbf{u}_1, \dots, \mathbf{u}_N)$ in the change of variables, i.e., $\mathbf{u}_j = (U^i_j)_{1 \le i \le N}$.
-2. Perform a perturbation $H \to H + \delta H$. The resulting eigenvalue perturbations $\delta\lambda_i$ and eigenstate perturbations $\delta\mathbf{u}_i$ can, to first order, be expressed as linear combinations of $\delta H^i_i, \delta H^j_k$. With reference to perturbation theory in quantum mechanics, explain the following formulas:
+1. Perform a perturbation $H \to H + \delta H$. The resulting eigenvalue perturbations $\delta\lambda_i$ and eigenstate perturbations $\delta\mathbf{u}_i$ can, to first order, be expressed as linear combinations of $\delta H^i_i, \delta H^j_k$. With reference to perturbation theory in quantum mechanics, explain the following formulas:
 
-$$
+$$\begin{align}
 \delta\lambda_i = \sum_{j,k=1}^{N} (U^j_i)^* \delta H^j_k U^k_i + O((\delta H)^2),
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 \delta U^i_j = \sum_{k=1}^{N} \frac{\sum_{m,n=1}^{N} (U^m_k)^* \delta H^m_n U^n_j}{\lambda_j - \lambda_k} U^i_k + O((\delta H)^2),
-$$
+\end{align}$$
 
 $$
 \delta\Omega^i_j = \begin{cases}
@@ -317,19 +317,19 @@ O((\delta H)^2), & i = j.
 \end{cases}
 $$
 
-3. The transformation $\delta H^i_j \to \widetilde{\delta H}^i_j := \sum_{m,n} (U^m_i)^* \delta H^m_n U^n_j$ satisfies
+1. The transformation $\delta H^i_j \to \widetilde{\delta H}^i_j := \sum_{m,n} (U^m_i)^* \delta H^m_n U^n_j$ satisfies
 
-$$
+$$\begin{align}
 \operatorname{Tr}(\widetilde{\delta H} \cdot \widetilde{\delta H})
 = \operatorname{Tr}(\delta H \cdot \delta H).
-$$
+\end{align}$$
 
 This metric-preserving transformation does not affect the integration measure; hence the Jacobian matrix $\mathcal{J}$ can be determined from the following linear expansion coefficients:
 
-$$
+$$\begin{align}
 (\delta\lambda_i, \delta\Omega^j_k)
 = \mathcal{J} \cdot (\delta H^i_i, \delta H^j_k) + O((\delta H)^2),
-$$
+\end{align}$$
 
 where
 
@@ -340,11 +340,11 @@ $$
 \end{cases}
 $$
 
-4. From the above results, derive the change-of-variables formula for the integration measure:
+1. From the above results, derive the change-of-variables formula for the integration measure:
 
-$$
+$$\begin{align}
 d\mu(H) = \prod_{i < j} (\lambda_i - \lambda_j)^2 \times d\lambda_1 d\lambda_2 \cdots d\lambda_N \times \prod_{i \neq j} d\Omega_{ij}.
-$$
+\end{align}$$
 
 ### 2.14
 
@@ -363,9 +363,9 @@ $$
 Prove:
 
 1. When $s > m$, $\delta^{\nu_1 \cdots \nu_s}_{\mu_1 \cdots \mu_s} = 0$;
-2. $\delta^{1 \cdots m}_{\mu_1 \cdots \mu_m} = \epsilon_{\mu_1 \cdots \mu_m}$;
-3. $\epsilon_{\mu_1 \cdots \mu_m} \epsilon^{\nu_1 \cdots \nu_m} = \delta^{\nu_1 \cdots \nu_m}_{\mu_1 \cdots \mu_m}$;
-4. $\epsilon_{\mu_1 \cdots \mu_k \mu_{k+1} \cdots \mu_m} \epsilon^{\mu_1 \cdots \mu_k \nu_{k+1} \cdots \nu_m} = k! \, \delta^{\nu_{k+1} \cdots \nu_m}_{\mu_{k+1} \cdots \mu_m}$.
+1. $\delta^{1 \cdots m}_{\mu_1 \cdots \mu_m} = \epsilon_{\mu_1 \cdots \mu_m}$;
+1. $\epsilon_{\mu_1 \cdots \mu_m} \epsilon^{\nu_1 \cdots \nu_m} = \delta^{\nu_1 \cdots \nu_m}_{\mu_1 \cdots \mu_m}$;
+1. $\epsilon_{\mu_1 \cdots \mu_k \mu_{k+1} \cdots \mu_m} \epsilon^{\mu_1 \cdots \mu_k \nu_{k+1} \cdots \nu_m} = k! \, \delta^{\nu_{k+1} \cdots \nu_m}_{\mu_{k+1} \cdots \mu_m}$.
 
 ### 2.15
 
@@ -375,9 +375,9 @@ Derive $\alpha_q \wedge {*}\beta_q = \beta_q \wedge {*}\alpha_q$, and further pr
 
 Establish the identity
 
-$$
+$$\begin{align}
 {**}\omega_q = (-1)^{q(m-q)} \omega_q.
-$$
+\end{align}$$
 
 ## 3 Homology Groups and the de Rham Theorem
 
@@ -390,11 +390,11 @@ Determine whether the 1-simplices (red) and 2-simplices (blue) in figures (a)–
 ### 3.2
 
 1. Let $K_1, K_2$ be subcomplexes of a complex $K$ (i.e., subsets $K_{1,2} \subset K$ consisting of certain simplices of $K$, with $K_{1,2}$ satisfying the conditions of a complex). Prove that $K_1 \cup K_2$ and $K_1 \cap K_2$ are also subcomplexes of $K$.
-2. If $K_1 \cap K_2$ is an $r$-dimensional complex, then for $q > r+1$ we have
+1. If $K_1 \cap K_2$ is an $r$-dimensional complex, then for $q > r+1$ we have
 
-$$
+$$\begin{align}
 H_q(K_1 \cup K_2) \simeq H_q(K_1) \oplus H_q(K_2).
-$$
+\end{align}$$
 
 ### 3.3
 

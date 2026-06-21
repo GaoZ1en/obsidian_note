@@ -1,4 +1,3 @@
-
 ## $\displaystyle{L_{\infty}}$-algebra
 
 an $\displaystyle{L_{\infty}}$-algebra is somewhat like a generalization of a Lie algebra, where the Jacobi identity is relaxed and replaced by a series of higher homotopy relations. it consists of a graded vector space $\displaystyle{V}$ together with a collection of multilinear maps $\displaystyle{l_{n}:V^{\otimes n}\to V}$ for $\displaystyle{n\geq 1}$, called the higher brackets, which satisfy certain coherence conditions
@@ -15,9 +14,9 @@ where $\displaystyle{\mathrm{Sh}(i,n-i)}$ denotes the set of $(i,n-i)$-shuffles 
 
 an $\displaystyle{A_{\infty}}$-algebra is the associative analogue of an $\displaystyle{L_{\infty}}$-algebra. it consists of a graded vector space $\displaystyle{A}$ together with multilinear maps
 
-$$
+$$\begin{align}
 \displaystyle{m_{n}:A^{\otimes n}\to A,\qquad n\geq 1}
-$$
+\end{align}$$
 
 of degree $\displaystyle{2-n}$ satisfying the Stasheff identities
 

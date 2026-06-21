@@ -61,6 +61,7 @@ $$\begin{align}
 ## partition function
 
 the general solution of the eom is given by
+
 $$\begin{align}
 \varphi & =\sum ^{\infty}_{n,\bar{n}=0}\left(a_{n,\bar{n}}\phi _{n,\bar{n}}(x)+a^{\dagger}_{n,\bar{n}}\phi _{n,\bar{n}}(x)\right) \\
 \phi_{n,\bar{n}}(x) & =\sqrt{ \frac{1}{n!\bar{n}!(\Delta)_{n}(\Delta)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\varphi _{00}(x) \\

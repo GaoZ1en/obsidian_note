@@ -3,9 +3,9 @@ This note summarizes core concepts in point-set topology with concise definition
 ## 1. Topological spaces
 
 - Topology on a set $X$: a collection $T \subseteq \mathcal{P}(X)$ such that
-  1) $\emptyset, X \in T$;
-  2) arbitrary unions of sets in $T$ are in $T$;
-  3) finite intersections of sets in $T$ are in $T$.
+  1. $\emptyset, X \in T$;
+  1. arbitrary unions of sets in $T$ are in $T$;
+  1. finite intersections of sets in $T$ are in $T$.
   Elements of T are called open sets; closed sets are complements of open sets.
 
 - Neighborhood: $U$ is a neighborhood of $x$ if $x \in U$ and $U$ is open.

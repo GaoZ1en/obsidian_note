@@ -48,8 +48,8 @@ x_{D}=\tau & =it
 and cutoff $\displaystyle{|k _{\text{E}}|<\Lambda_{0}}$, where $\displaystyle{k _{\text{E}}}$ is the Euclidean momentum. as a summary, our procudeure is as follows
 
 1. Wick rotate to Euclidean space
-2. impose $\displaystyle{|k _{\mathrm{E}}|<\Lambda _{0}}$ to perform integrals
-3. Wick rotate back to Minkowski spacetime
+1. impose $\displaystyle{|k _{\mathrm{E}}|<\Lambda _{0}}$ to perform integrals
+1. Wick rotate back to Minkowski spacetime
 
 # integrating out UV modes
 
@@ -124,8 +124,8 @@ S_{\Lambda}[\phi'] & =\int \mathrm{d}^{D}x'\left(\frac{1}{2}(\nabla'\phi')^{2}+\
 this whole procedure is called the renormalization group. as a summarize
 
 1. integrate out the high energy degrees of freedom
-2. fix spacetime integral by rescaling the spacetime variables
-3. fix the normalization of fields
+1. fix spacetime integral by rescaling the spacetime variables
+1. fix the normalization of fields
 
 renormalization group generates a flow in the space of theory, and two theory on the same flowline are actually the same theory
 
@@ -211,12 +211,12 @@ $$\begin{align}
 in the vicinity of this other fixed point we can still talk of marginal, relevant and irrelevant couplings classifying if deforming in that direction will bring us away or back towards our fixed point of origin. more explicitly
 
 1. $\displaystyle{\beta _{a}>0\iff \Delta _{a}<0}$: irrelevant deformation
-2. $\displaystyle{\beta _{a}<0\iff \Delta _{a}>0}$: relevant deformation
-3. $\displaystyle{\beta _{a}=0\iff \Delta _{a}=0}$: marginal deformation
+1. $\displaystyle{\beta _{a}<0\iff \Delta _{a}>0}$: relevant deformation
+1. $\displaystyle{\beta _{a}=0\iff \Delta _{a}=0}$: marginal deformation
 
 quite importantly, it is fairly generic that there will be an infinite number of irrelevant operators and only a handful of marginal or relevant operators.
 
-the difference between the scaling dimension $\displaystyle{\Delta _{a}}$ and the ordinary mass dimension is often called the anomalous dimension. 
+the difference between the scaling dimension $\displaystyle{\Delta _{a}}$ and the ordinary mass dimension is often called the anomalous dimension.
 
 # $\displaystyle{\phi ^{4}}$ theory
 
@@ -240,7 +240,7 @@ $$\begin{align}
  & \approx-2g_{2}- \frac{1}{16\pi ^{2}} \frac{g_{4}}{1+g_{2}}
 \end{align}$$
 
-here we keep the leading order, and subtitute $\displaystyle{g_{4}=\lambda_{0},g_{2}=\Lambda ^{-2}m_{0}^{2}}$. 
+here we keep the leading order, and subtitute $\displaystyle{g_{4}=\lambda_{0},g_{2}=\Lambda ^{-2}m_{0}^{2}}$.
 
 then we consider the 1-loop vertex
 
@@ -254,4 +254,3 @@ $$\begin{align}
  & =\frac{3\lambda_{0}^{2}}{16\pi ^{2}}\frac{\Lambda ^{4}}{(\Lambda ^{2}+m_{0}^{2})^{2}} \\
  & =\frac{3g_{4}^{2}}{16\pi ^{2}(1+g_{2})^{2}}
 \end{align}$$
-

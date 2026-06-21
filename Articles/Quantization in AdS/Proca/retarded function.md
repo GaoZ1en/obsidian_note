@@ -57,8 +57,7 @@ $$\begin{align}
  & =\int _{\Sigma _{t_{0}}} \mathrm{d}^{2}x'\sqrt{ \sigma }\tau ^{\mu}\left(G_{\text{ret}}(x,x')\partial _{\mu}'\phi(x')-\phi(x')\partial _{\mu}G_{\text{ret}}(x,x')\right)
 \end{align}$$
 
-now we will discuss the asymptotic behavior of $\displaystyle{\phi(x)}$. 
-
+now we will discuss the asymptotic behavior of $\displaystyle{\phi(x)}$.
 
 in Lorentzian signature, the geodesic distance $\displaystyle{\rho}$ is related to the invariant distance $\displaystyle{P(x,x')}$ by $\displaystyle{\cosh \rho = P(x,x')}$, where
 

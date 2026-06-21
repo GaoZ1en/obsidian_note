@@ -218,9 +218,9 @@ Z[\beta,\alpha] & =\mathrm{Tr}e^{-\beta H+i\alpha J} \\
  & =\prod ^{\infty}_{m=2}\frac{1}{|1-q^{m}|^{2}}
 \end{align}$$
 
-here we have introduced the moduli $\displaystyle{\tau =\frac{1}{2\pi}(\alpha+i\beta)}$, and $\displaystyle{q=e^{2\pi i\tau}}$. 
+here we have introduced the moduli $\displaystyle{\tau =\frac{1}{2\pi}(\alpha+i\beta)}$, and $\displaystyle{q=e^{2\pi i\tau}}$.
 
-and by the same procudure in [[Articles/Quantization in AdS3/Proca/coherent state path integral|coherent state path integral]], we can recover this result. [Xi Yin's result](https://arxiv.org/abs/0804.1773) reads
+and by the same procudure in [[Articles/Quantization in AdS/Proca/coherent state path integral|coherent state path integral]], we can recover this result. [Xi Yin's result](https://arxiv.org/abs/0804.1773) reads
 
 $$\begin{align}
 Z(\tau,\bar{\tau}) & =\prod ^{\infty}_{m=2} \frac{1}{|1-q^{m}|^{2}}
@@ -527,4 +527,3 @@ h_{R,0}^{\mu \nu} & =\nabla ^{\mu}\zeta _{R}^{\nu}+\nabla ^{\nu}\zeta _{R}^{\mu}
 \zeta _{R}^{r} & =-\frac{Ce^{-2it-2i\phi}r(3+2r^{2})}{24(1+r^{2})} \\
 \zeta _{R}^{\phi} & =\frac{iCe^{-2it-2i\phi}(3+r^{2})}{24(1+r^{2})}
 \end{align}$$
-

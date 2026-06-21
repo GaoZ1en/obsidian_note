@@ -1,4 +1,4 @@
-we couple a charged point defect to a $\displaystyle{\mathrm{U}(1)}$ gauge field just like [[Articles/Quantization in AdS3/Chern-Simons/particle as defect|particle as defect]], but with Maxwell action
+we couple a charged point defect to a $\displaystyle{\mathrm{U}(1)}$ gauge field just like [[Articles/Quantization in AdS/Chern-Simons/particle as defect|particle as defect]], but with Maxwell action
 
 $$\begin{align}
 S[A;\gamma] & =-\dfrac{1}{2}\int _{M}F\wedge \star F+q\int _{\gamma}A.
@@ -118,7 +118,7 @@ A_{t} & \sim -\frac{q}{2\pi}\log r, &
 F_{tr} & \sim \frac{q}{2\pi r},
 \end{align}$$
 
-which violates the asymptotic phase space used in [[Articles/Quantization in AdS3/electric field/article/1_model|1_model]], where $A_{t}=O(r^{0})$ and $F_{tr}=o(r^{-1})$.
+which violates the asymptotic phase space used in [[Articles/Quantization in AdS/electric field/article/1_model|1_model]], where $A_{t}=O(r^{0})$ and $F_{tr}=o(r^{-1})$.
 
 Therefore a single charged defect is a well-defined external source, but it is not a finite-energy state in the present pure Maxwell phase space.
 
@@ -127,8 +127,8 @@ Therefore a single charged defect is a well-defined external source, but it is n
 To stay within the Maxwell phase space used in this note set, one must impose vanishing total charge at infinity. The clean options are:
 
 1. work in a neutral sector, for example a defect-antidefect pair or a defect together with a compensating boundary charge, so that the net flux through the asymptotic circle vanishes and the logarithmic large-$r$ tail cancels;
-2. move to a screened theory such as Maxwell-Chern-Simons or Proca-Chern-Simons, where the gauge field acquires a mass gap and an isolated charged defect has finite-energy falloff.
+1. move to a screened theory such as Maxwell-Chern-Simons or Proca-Chern-Simons, where the gauge field acquires a mass gap and an isolated charged defect has finite-energy falloff.
 
 In pure Maxwell theory, the local UV divergence is handled by worldline mass renormalization, but that does not solve the infrared and asymptotic obstruction of a single net charge.
 
-Unlike the Chern-Simons defect, the Maxwell defect does not generate a topological holonomy sector or a boundary Kac-Moody algebra in the phase space used here. The gauge transformations with $\Lambda =O(r^{0})$ remain null directions of the symplectic form, as discussed in [[Articles/Quantization in AdS3/electric field/article/appendix_c_large_gauge_transformations|appendix_c_large_gauge_transformations]], and the physical effect of the defect is the Coulomb flux itself.
+Unlike the Chern-Simons defect, the Maxwell defect does not generate a topological holonomy sector or a boundary Kac-Moody algebra in the phase space used here. The gauge transformations with $\Lambda =O(r^{0})$ remain null directions of the symplectic form, as discussed in [[Articles/Quantization in AdS/electric field/article/appendix_c_large_gauge_transformations|appendix_c_large_gauge_transformations]], and the physical effect of the defect is the Coulomb flux itself.

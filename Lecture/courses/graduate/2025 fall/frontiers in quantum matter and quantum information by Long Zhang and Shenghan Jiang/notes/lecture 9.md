@@ -10,7 +10,7 @@ H = - \sum_v A_v - \sum_p B_p
 
 where $A_v = \prod_{i \in +} X_i$ and $B_p = \prod_{i \in \square} Z_i$. on the boundary, the vertex operators involve only three edges, while there is no plaquette operator at the boundary.
 
-the Hamiltonian is still exactly solvable, since every term commutes with each other. the degeneracy of ground states is now $2^{2g + b -1}$, where $g$ is the genus of the surface and $b$ is the number of boundaries. for a half-infinite plane with a single boundary, the ground state is unique. the ground states are characterized by first homology group of the surface $H_1(\Sigma, \mathbb{Z}_2)$. 
+the Hamiltonian is still exactly solvable, since every term commutes with each other. the degeneracy of ground states is now $2^{2g + b -1}$, where $g$ is the genus of the surface and $b$ is the number of boundaries. for a half-infinite plane with a single boundary, the ground state is unique. the ground states are characterized by first homology group of the surface $H_1(\Sigma, \mathbb{Z}_2)$.
 
 the ground state is constructed by projecting the state $|0\rangle^{\otimes n}$ to the +1 eigenspace of all stabilizers (vertex and plaquette operators):
 

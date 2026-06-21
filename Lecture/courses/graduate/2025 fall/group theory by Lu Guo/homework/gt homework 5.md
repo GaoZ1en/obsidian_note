@@ -119,7 +119,7 @@ let $\displaystyle{\psi _{m}^{\ell}(x)}$ be functions belonging to the $\display
 we have
 
 $$\begin{align}
-\psi ^{\ell'}_{m}(x) & =\sum ^{\ell}_{m'=-\ell} D^{\ell}_{m'm}\left( \vec{e}_{1},-\frac{\pi}{2} \right)\psi ^{\ell}_{m'}(x) 
+\psi ^{\ell'}_{m}(x) & =\sum ^{\ell}_{m'=-\ell} D^{\ell}_{m'm}\left( \vec{e}_{1},-\frac{\pi}{2} \right)\psi ^{\ell}_{m'}(x)
 \end{align}$$
 
 # problem 6
@@ -137,4 +137,3 @@ $$\begin{align}
  & =m^{2}\cos ^{2}\theta \delta _{mm'}+\frac{1}{2}(\ell(\ell+1)-m^{2})\sin ^{2}\theta \delta _{mm'} \\
  & +\frac{1}{2}(m+m')\sin \theta \cos \theta (\sqrt{ (\ell-m)(\ell+m+1) }\delta _{m,m'+1}+\sqrt{ (\ell+m)(\ell-m+1) }\delta _{m,m'-1})
 \end{align}$$
-

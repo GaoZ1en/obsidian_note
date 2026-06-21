@@ -13,7 +13,7 @@ A_{g}\psi(g) & = \frac{\mathrm{d}}{\mathrm{d}t}\bigg|_{t=0} \psi(g\exp(tA))
 there exists a unique Harr measure $\displaystyle{\mu _{H}}$ satisfies
 
 1. invariant, $\displaystyle{\mu _{H}(h)=\mu _{H}(gh)=\mu _{H}(hg)=\mu _{H}(h^{-1})}$
-2. normalized, $\displaystyle{\mu _{H}(G)=1}$
+1. normalized, $\displaystyle{\mu _{H}(G)=1}$
 
 angular momentum, generator of $\displaystyle{\mathfrak{su}(2)}$.
 
@@ -74,7 +74,7 @@ J_{3}^{(R)}[\pi _{j}(g)]^{m}_{~n} & =-m[\pi _{j}(g)]^{m}_{~n}
 
 interwiners. specially
 1. for $\displaystyle{V_{1}=V_{2}=V_{j}}$, the interwiner $\displaystyle{I^{m}_{~n}=\delta ^{m}_{n}}$
-2. for $\displaystyle{V_{1}=V_{j}, V_{2}=V_{j}^{*}}$, the interwiner $\displaystyle{I_{m'm}=(-1)^{j-m}\delta _{m,-m'},I^{mm'}=(-1)^{j-m}\delta _{m,-m'}}$
+1. for $\displaystyle{V_{1}=V_{j}, V_{2}=V_{j}^{*}}$, the interwiner $\displaystyle{I_{m'm}=(-1)^{j-m}\delta _{m,-m'},I^{mm'}=(-1)^{j-m}\delta _{m,-m'}}$
 
 in general, consider the direct product representation
 
@@ -87,7 +87,7 @@ the interwiner
 
 $$\begin{align}
 I^{J}_{j_{1}j_{2}} & :V_{1}\otimes V_{2}\to \oplus V_{J} \\
-e_{m_{1}}^{j_{1}}\otimes e_{m_{2}}^{j_{2}} & \mapsto I^{J}_{j_{1}j_{2}}(e^{j_{1}}_{m_{1}}\otimes e^{j_{2}}_{m_{2}})=\sum _{M}\braket{ JM|j_{1}m_{1}j_{2}m_{2} }e^{J}_{M} 
+e_{m_{1}}^{j_{1}}\otimes e_{m_{2}}^{j_{2}} & \mapsto I^{J}_{j_{1}j_{2}}(e^{j_{1}}_{m_{1}}\otimes e^{j_{2}}_{m_{2}})=\sum _{M}\braket{ JM|j_{1}m_{1}j_{2}m_{2} }e^{J}_{M}
 \end{align}$$
 
 where $\displaystyle{\braket{ JM|j_{1}m_{1}j_{2}m_{2} }}$ is the CG coefficient, which is chosen to be real. more generally
@@ -134,8 +134,8 @@ A & =\mathrm{d}eA^{i}_{a}\tau _{i}
 which satisfies
 
 1. $\displaystyle{h_{e_{1}\circ e_{2}}(A)=h_{e_{1}}(A)h_{e_{2}}(A)}$
-2. $\displaystyle{h_{e^{-1}}(A)=h_{e}(A)^{-1}}$
-3. under the gauge transformation, $\displaystyle{h_{e}(A^{g})=g(b(e))h_{e}(A)g(f(e))^{-1}}$
+1. $\displaystyle{h_{e^{-1}}(A)=h_{e}(A)^{-1}}$
+1. under the gauge transformation, $\displaystyle{h_{e}(A^{g})=g(b(e))h_{e}(A)g(f(e))^{-1}}$
 
 and the flux $\displaystyle{\tilde{E}_{i}(S)}$ of densitized triad $\displaystyle{E_{i}^{a}}$ through a 2-surface $\displaystyle{S\subset \Sigma}$ is defined by
 

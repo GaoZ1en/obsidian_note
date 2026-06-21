@@ -10,7 +10,7 @@ characteristic curve method...
 
 ## Amplitude from crossing-symmetric celestial OPE
 
-celestial holography, asymptotic flat spacetime. 
+celestial holography, asymptotic flat spacetime.
 
 this work gives a first discussion about how to get bulk information via CCFT
 
@@ -20,7 +20,6 @@ the result is massless scattering amplitude and thus the celestial amplitudes ca
 
 $\mathrm{AdS/CFT}$
 1. entropy
-2. $\mathrm{AdS}$ amplitude
-3. tensor network
-4. ...
-
+1. $\mathrm{AdS}$ amplitude
+1. tensor network
+1. ...

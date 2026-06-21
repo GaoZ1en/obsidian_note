@@ -1,6 +1,7 @@
 # Runge-Kutta
 
-$$\tag{1.1}
+$$
+\tag{1.1}
 \begin{align}
 \begin{cases}
 \dot{y}=f(t,y) & t\in[a,b] \\
@@ -11,7 +12,8 @@ $$
 
 define $\displaystyle{h=\frac{a-b}{n}}$
 
-$$\tag{1.2}
+$$
+\tag{1.2}
 \begin{align}
 \frac{y(t_{i+1})-y(t_{i})}{h} = y'(t_{i}+\theta h) \\
 \implies y(t_{i+1})=y(t_{i})+hk _{\mathrm{ave}}
@@ -22,7 +24,8 @@ $$
 
 here we choose $\displaystyle{k _{\mathrm{ave}}=\frac{K_{1}+K_{2}}{2}}$
 
-$$\tag{1.3}
+$$
+\tag{1.3}
 \begin{align}
 y_{i+1} & =y_{i}+\frac{h}{2}(K_{1}+K_{2})
 \end{align}
@@ -34,7 +37,8 @@ Euler formula is acturally 2ed order Runge-Kutta method.
 
 the basic idea of Runge-Kutta method is to use weighted avarage of slope to minimize the error. in general we have
 
-$$\tag{1.4}
+$$
+\tag{1.4}
 \begin{align}
 y_{i+1} & =y_{i}+h\sum ^{N}_{m=1}\lambda _{m}K_{m} \\
 K_{1} & =f(t_{i},y_{i}) \\
@@ -44,11 +48,10 @@ $$
 
 where $\displaystyle{\lambda _{m},\alpha _{m},\beta _{m,j}}$ are constants.
 
-
-
 ## 2ed order Runge-Kutta
 
-$$\tag{1.5}
+$$
+\tag{1.5}
 \begin{align}
 y_{i+1} & =y_{i}+h(\lambda _{1}K_{1}+\lambda _{2}K_{2}) \\
 K_{1} & =f(t_{i},y_{i}) \\
@@ -58,7 +61,8 @@ $$
 
 take a Taylor expansion
 
-$$\tag{1.6}
+$$
+\tag{1.6}
 \begin{align}
 y_{i+1} & =y_{i}+\lambda _{1}hf(t_{i}+y_{i})+\lambda_{2}h\left(f(t_{i},y_{i})+\frac{\partial f}{\partial t}\alpha h+\frac{\partial f}{\partial y}\beta hK_{1} \right) \\
  & +\frac{1}{2}\lambda _{2}h\left(\frac{\partial ^{2}f}{\partial t^{2}}\alpha ^{2}h^{2}+\frac{\partial ^{2}f}{\partial y^{2}}\beta ^{2}h^{2}K_{1}^{2}+2\frac{\partial ^{2}f}{\partial t\partial y}\alpha \beta h^{2}K_{1}\right)
@@ -67,7 +71,8 @@ $$
 
 let $\displaystyle{\alpha=\beta=p}$, we have
 
-$$\tag{1.7}
+$$
+\tag{1.7}
 \begin{align}
 y_{i+1} & =y_{i}+hf(t_{i},y_{i})(\lambda_{1}+\lambda_{2})+\frac{1}{2} \frac{\partial f}{\partial t}h^{2}+\frac{1}{2} \frac{\partial f}{\partial y}K_{1}h^{2} \\
  & \begin{cases}
@@ -78,14 +83,14 @@ y_{i+1} & =y_{i}+hf(t_{i},y_{i})(\lambda_{1}+\lambda_{2})+\frac{1}{2} \frac{\par
 $$
 
 1. $\displaystyle{\lambda _{1}=\lambda _{2}=\frac{1}{2},p=1}$, we got the Euler formula.
-2. $\displaystyle{\lambda _{1}=0,\lambda _{2}=1,p=\frac{1}{2}}$, we got the middle point formula
-
+1. $\displaystyle{\lambda _{1}=0,\lambda _{2}=1,p=\frac{1}{2}}$, we got the middle point formula
 
 ## 3rd and 4st order Runge-Kutta
 
 3rd order is similar to the 2nd order
 
-$$\tag{1.8}
+$$
+\tag{1.8}
 \begin{align}
 y_{i+1} & = y_{i}+h(\lambda _{1}K_{1}+\lambda _{2}K_{2}+\lambda _{3}K_{3}) \\
 K_{1} & =f(t_{i},y_{i}) \\
@@ -96,7 +101,8 @@ $$
 
 after a long derivation, we have
 
-$$\tag{1.9}
+$$
+\tag{1.9}
 \begin{align}
 r+s & =1 \\
 \lambda _{1}+\lambda _{2}+\lambda _{3} & =1 \\
@@ -106,9 +112,10 @@ r+s & =1 \\
 \end{align}
 $$
 
-a useful formula is to choose 
+a useful formula is to choose
 
-$$\tag{1.10}
+$$
+\tag{1.10}
 \begin{align}
 y_{i+1} & =y_{i}+\frac{h}{6}(K_{1}+4K_{2}+K_{3}) \\
 K_{1} & =f(t_{i},y_{i}) \\
@@ -119,7 +126,8 @@ $$
 
 and a 4st order method is
 
-$$\tag{1.11}
+$$
+\tag{1.11}
 \begin{align}
 y_{i+1} & =y_{i}+\frac{1}{6}h(K_{1}+2K_{2}+2K_{3}+K_{4}) \\
 K_{1} & =f(t_{i},y_{i}) \\
@@ -135,29 +143,39 @@ $$
 
 The most common implementation uses embedded Runge-Kutta formulas (like Dormand-Prince or Fehlberg methods) that compute two approximations of different orders:
 
-$$y_{n+1}^{(p)} \approx \text{pth-order approximation}$$
-$$y_{n+1}^{(p+1)} \approx \text{(p+1)th-order approximation}$$
+$$\begin{align}
+y_{n+1}^{(p)} \approx \text{pth-order approximation}
+\end{align}$$
+
+$$\begin{align}
+y_{n+1}^{(p+1)} \approx \text{(p+1)th-order approximation}
+\end{align}$$
 
 The local error is estimated as:
 
-$$\varepsilon \approx \|y_{n+1}^{(p+1)} - y_{n+1}^{(p)}\|$$
+$$\begin{align}
+\varepsilon \approx \|y_{n+1}^{(p+1)} - y_{n+1}^{(p)}\|
+\end{align}$$
 
 ## Step Size Adjustment Algorithm
 
 1. Compute solution at next step using two RK formulas of orders $p$ and $p+1$
-2. Estimate error $\varepsilon$
-3. Compare with tolerance $\text{tol}$
-4. Adjust step size using:
+1. Estimate error $\varepsilon$
+1. Compare with tolerance $\text{tol}$
+1. Adjust step size using:
 
-$$h_{\text{new}} = h_{\text{old}} \cdot \left(\frac{\text{tol}}{\varepsilon}\right)^{1/(p+1)}$$
+$$\begin{align}
+h_{\text{new}} = h_{\text{old}} \cdot \left(\frac{\text{tol}}{\varepsilon}\right)^{1/(p+1)}
+\end{align}$$
 
-5. Accept step if $\varepsilon \leq \text{tol}$, otherwise reject and retry with $h_{\text{new}}$
+1. Accept step if $\varepsilon \leq \text{tol}$, otherwise reject and retry with $h_{\text{new}}$
 
 The formula incorporates a safety factor (typically 0.8-0.9) and may include bounds on maximum step size changes to avoid oscillatory behavior.
 
 # initial value problem
 
-$$\tag{1.1}
+$$
+\tag{1.1}
 \begin{align}
 \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}}+\omega ^{2}x=0
 \end{align}
@@ -165,7 +183,8 @@ $$
 
 rewrite
 
-$$\tag{1.2}
+$$
+\tag{1.2}
 \begin{align}
 y & =\begin{pmatrix}
 x \\
@@ -179,7 +198,8 @@ $$
 
 then the ode (1.1) can be expressed as
 
-$$\tag{1.3}
+$$
+\tag{1.3}
 \begin{align}
 \dot{y} & =\begin{pmatrix}
 y_{2} \\
@@ -193,13 +213,17 @@ then we will use 4st order Runge-Kutta method to solve this 1st order ode.
 # scipy
 
 ## Core Functionality
+
 `scipy.integrate.solve_ivp` is SciPy's modern implementation for solving initial value problems (IVPs) of ordinary differential equations (ODEs):
 
-$$\frac{d\mathbf{y}}{dt} = \mathbf{f}(t, \mathbf{y}), \quad \mathbf{y}(t_0) = \mathbf{y}_0$$
+$$\begin{align}
+\frac{d\mathbf{y}}{dt} = \mathbf{f}(t, \mathbf{y}), \quad \mathbf{y}(t_0) = \mathbf{y}_0
+\end{align}$$
 
 Where $\mathbf{y}$ can be a vector (system of ODEs).
 
 ## Function Signature
+
 ```python
 scipy.integrate.solve_ivp(fun, t_span, y0, method='RK45', t_eval=None, 
                           dense_output=False, events=None, vectorized=False,
@@ -211,30 +235,33 @@ scipy.integrate.solve_ivp(fun, t_span, y0, method='RK45', t_eval=None,
 `solve_ivp` supports multiple numerical integration methods:
 
 1. **`'RK45'`** (default): Explicit Runge-Kutta method of order 5(4) - the Dormand-Prince method with adaptive step size control and error estimation using the 4th-order approximation
-   
-2. **`'RK23'`**: Explicit Runge-Kutta method of order 3(2) - Bogacki-Shampine formula with adaptive step size
 
-3. **`'DOP853'`**: Explicit Runge-Kutta method of order 8 - appropriate for high-precision requirements
+1. **`'RK23'`**: Explicit Runge-Kutta method of order 3(2) - Bogacki-Shampine formula with adaptive step size
 
-4. **`'Radau'`**: Implicit Runge-Kutta method of the Radau IIA family of order 5 - suitable for stiff problems
+1. **`'DOP853'`**: Explicit Runge-Kutta method of order 8 - appropriate for high-precision requirements
 
-5. **`'BDF'`**: Implicit multi-step variable-order (1 to 5) method based on backward differentiation formulas - good for stiff problems
+1. **`'Radau'`**: Implicit Runge-Kutta method of the Radau IIA family of order 5 - suitable for stiff problems
 
-6. **`'LSODA'`**: Adams/BDF method with automatic stiffness detection and method switching - versatile for mixed stiff/non-stiff problems
+1. **`'BDF'`**: Implicit multi-step variable-order (1 to 5) method based on backward differentiation formulas - good for stiff problems
+
+1. **`'LSODA'`**: Adams/BDF method with automatic stiffness detection and method switching - versatile for mixed stiff/non-stiff problems
 
 ## Key Parameters
 
 ### Essential Parameters
+
 - **`fun`**: Function defining the ODE system, with signature `fun(t, y, *args)`
 - **`t_span`**: Tuple defining integration interval `(t0, tf)`
 - **`y0`**: Initial state vector (array-like)
 
 ### Output Control
+
 - **`t_eval`**: Specific time points to evaluate solution at
 - **`dense_output`**: When `True`, returns a continuous solution function
 - **`vectorized`**: Set to `True` if `fun` can handle vectorized calls
 
 ### Tolerances and Error Control
+
 ```python
 solve_ivp(fun, t_span, y0, method='RK45', rtol=1e-3, atol=1e-6)
 ```
@@ -243,6 +270,7 @@ solve_ivp(fun, t_span, y0, method='RK45', rtol=1e-3, atol=1e-6)
 - **`atol`**: Absolute tolerance for error control
 
 ## Event Detection
+
 `solve_ivp` can detect events during integration:
 
 ```python
@@ -258,6 +286,7 @@ solve_ivp(fun, t_span, y0, events=event_function)
 ```
 
 ## Return Object
+
 The function returns an `OdeResult` object with attributes:
 
 - **`t`**: Time points
@@ -333,11 +362,11 @@ plt.show()
 
 1. **Jacobian specification**: For stiff methods (`'Radau'`, `'BDF'`), supply the Jacobian matrix using the `jac` parameter for better performance
 
-2. **Step size control**: Adjust `rtol` and `atol` based on problem scale and precision needs
+1. **Step size control**: Adjust `rtol` and `atol` based on problem scale and precision needs
 
-3. **Vectorization**: Set `vectorized=True` if your ODE function supports array inputs for parallel evaluation
+1. **Vectorization**: Set `vectorized=True` if your ODE function supports array inputs for parallel evaluation
 
-4. **Sparse Jacobian**: For large sparse systems, provide sparse Jacobian matrices
+1. **Sparse Jacobian**: For large sparse systems, provide sparse Jacobian matrices
 
 ## Relation to Other SciPy ODE Solvers
 
@@ -346,12 +375,10 @@ plt.show()
 - Offers more methods and better control than legacy solvers
 - Returns a more comprehensive result object
 
-$$
-\begin{align}
+$$\begin{align}
 \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} & =-\frac{b}{m}|\dot{x}^{2}+\dot{y}^{2}|^{p/2} \dot{x} \\
 \frac{\mathrm{d}^{2}y}{\mathrm{d}t^{2}} & =-g-\frac{b}{m}|\dot{x}^{2}+\dot{y}^{2}|^{p/2} \dot{y}
-\end{align}
-$$
+\end{align}$$
 
 # Stiff odes
 
@@ -396,4 +423,4 @@ sol = solve_ivp(
 
 method
 1. initial guess
-2. shooting method
+1. shooting method

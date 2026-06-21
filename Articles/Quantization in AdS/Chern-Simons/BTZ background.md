@@ -31,7 +31,7 @@ here $\displaystyle{\Gamma _{R}}$ is the outer spatial boundary and $\displaysty
 
 ## boundary action and boundary condition
 
-by similar argument to [[Articles/Quantization in AdS3/Chern-Simons/U(1) formalism|U(1) formalism]], we have to introduce boundary action
+by similar argument to [[Articles/Quantization in AdS/Chern-Simons/U(1) formalism|U(1) formalism]], we have to introduce boundary action
 
 $$\begin{align}
 S_{\text{bdy}} & =\frac{k}{4\pi}\int _{\Gamma _{R}}\mathrm{d}^{2}x A_{+}A_{-}-\frac{k}{4\pi}\int _{\Gamma _{+}}\mathrm{d}^{2}x A_{+}A_{-}
@@ -71,7 +71,6 @@ where
 $$\begin{align}
 \chi(r) & =\frac{r-r_{+}}{R-r_{+}}
 \end{align}$$
-
 
 the two constants $\displaystyle{q_{r}}$ and $\displaystyle{q_{\phi}}$ are topological zero modes. they are measured by
 
@@ -121,7 +120,7 @@ $$\begin{align}
 A & =q_{r}\mathrm{d}\chi+q_{\phi}(\mathrm{d}\phi-\mathrm{d}t)+\sum _{n=1}^{\infty}\left(a_{R,n}\mathrm{d}\Lambda _{R,n}+a_{+,n}\mathrm{d}\Lambda _{+,n}+a^{\dagger}_{R,n}\mathrm{d}\Lambda ^{*}_{R,n}+a^{\dagger}_{+,n}\mathrm{d}\Lambda _{+,n}^{*}\right),
 \end{align}$$
 
-here we have ignored pure gauge redundancy that vanishes on both $\displaystyle{\Gamma _{R}}$ and $\displaystyle{\Gamma _{+}}$. 
+here we have ignored pure gauge redundancy that vanishes on both $\displaystyle{\Gamma _{R}}$ and $\displaystyle{\Gamma _{+}}$.
 
 ---
 
@@ -174,7 +173,7 @@ $$\begin{align}
 
 # $\displaystyle{\mathrm{SU}(2)}$ Chern-Simons
 
-then we will consider the $\displaystyle{\mathrm{SU}(2)}$ Chern-Simons theory. we follow the same notation as [[Articles/Quantization in AdS3/Chern-Simons/SU(2) formalism|SU(2) formalism]]. choose an anti-Hermitian basis $\displaystyle{T_{a}}$ of $\displaystyle{\mathfrak{su}(2)}$ satisfying
+then we will consider the $\displaystyle{\mathrm{SU}(2)}$ Chern-Simons theory. we follow the same notation as [[Articles/Quantization in AdS/Chern-Simons/SU(2) formalism|SU(2) formalism]]. choose an anti-Hermitian basis $\displaystyle{T_{a}}$ of $\displaystyle{\mathfrak{su}(2)}$ satisfying
 
 $$\begin{align}
 \mathrm{Tr}(T_{a}T_{b}) & =-\frac{1}{2}\delta _{ab}, &
@@ -223,7 +222,7 @@ F & =0.
 
 ## large gauge transformations
 
-for large gauge transformations, we can take the same procedure as [[Articles/Quantization in AdS3/Chern-Simons/SU(2) formalism|SU(2) formalism]]. first isolate the two boundary components by the radial profiles
+for large gauge transformations, we can take the same procedure as [[Articles/Quantization in AdS/Chern-Simons/SU(2) formalism|SU(2) formalism]]. first isolate the two boundary components by the radial profiles
 
 $$\begin{align}
 \chi _{R}(r) & =\frac{r-r_{+}}{R-r_{+}}, &

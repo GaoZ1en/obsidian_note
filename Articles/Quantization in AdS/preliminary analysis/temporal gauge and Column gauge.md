@@ -1,4 +1,5 @@
-$$\tag{1.1}
+$$
+\tag{1.1}
 \begin{align}
 S & =\int \mathrm{d}^{4}x\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}\right)
 \end{align}
@@ -6,7 +7,8 @@ $$
 
 make a variation
 
-$$\tag{1.2}
+$$
+\tag{1.2}
 \begin{align}
 \delta S & =\int \mathrm{d}^{4}xE_{\nu}\delta A^{\nu}+\theta|_{\Sigma _{f}-\Sigma _{i}} \\
 E_{0} & =\vec{\nabla}^{2}A_{0}-\partial _{0}(\vec{\nabla}\cdot \vec{A}) \\
@@ -17,7 +19,8 @@ $$
 
 if we impose temporal gauge $\displaystyle{A^{0}=0}$, the equation of motion for $\displaystyle{A^{0}}$ gives
 
-$$\tag{1.3}
+$$
+\tag{1.3}
 \begin{align}
 -\partial _{0}(\vec{\nabla}\cdot \vec{A})=0\implies \vec{\nabla}\cdot \vec{A}=C(\vec{x})
 \end{align}
@@ -27,7 +30,8 @@ we need another gauge transformation to set $\displaystyle{\vec{\nabla}\cdot \ve
 
 if we impose Column guage $\displaystyle{\vec{\nabla}\cdot \vec{A}=0}$, the equation of motion for $\displaystyle{A^{0}}$ gives
 
-$$\tag{1.4}
+$$
+\tag{1.4}
 \begin{align}
 \vec{\nabla}^{2}A_{0}=0
 \end{align}

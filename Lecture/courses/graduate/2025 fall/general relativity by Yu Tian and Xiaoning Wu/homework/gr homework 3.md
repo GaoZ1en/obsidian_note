@@ -22,4 +22,3 @@ when $\displaystyle{\lambda=s}$, the geodesic equation is
 $$\begin{align}
 \frac{\mathrm{d}^{2}x^{\lambda}}{\mathrm{d}s^{2}}+\Gamma ^{\lambda}_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}s} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}s} & =\frac{\mathrm{d}x^{\rho}}{\mathrm{d}s}\nabla _{\rho} \frac{\mathrm{d}x^{\lambda}}{\mathrm{d}s}
 \end{align}$$
-

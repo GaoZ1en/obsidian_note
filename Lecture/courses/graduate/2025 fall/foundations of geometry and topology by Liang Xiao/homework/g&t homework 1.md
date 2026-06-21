@@ -8,7 +8,7 @@ $$\begin{align}
  & =\frac{ab}{(a^{2}\sin^{2}t+b^{2}\cos^{2}t)^{3/2}}
 \end{align}$$
 
-2. $\displaystyle{\boldsymbol{\beta}(t)=(a\cosh t,b\sinh t)}$
+1. $\displaystyle{\boldsymbol{\beta}(t)=(a\cosh t,b\sinh t)}$
 
 $$\begin{align}
 \kappa(t) & =\frac{x'(t)y''(t)-y'(t)x''(t)}{(x'^{2}(t)+y'^{2}(t))^{3/2}} \\
@@ -27,7 +27,7 @@ $$\begin{align}
  & =\frac{b}{a^{2}+b^{2}\cosh 2t}
 \end{align}$$
 
-2. $\displaystyle{\boldsymbol{\beta}(t)=(3t-t^{2},3t^{2},3t+t^{2})}$
+1. $\displaystyle{\boldsymbol{\beta}(t)=(3t-t^{2},3t^{2},3t+t^{2})}$
 
 $$\begin{align}
 \kappa(t) & =\frac{|\boldsymbol{\beta}'(t)\times \boldsymbol{\beta}''(t)|}{|\boldsymbol{\beta}'(t)|^{3}} \\
@@ -123,7 +123,7 @@ $$\begin{align}
 
 thus the curvature of curve $\displaystyle{C}$ is zero, which means $\displaystyle{C}$ is a straight line.
 
-2. *suppose all the principal normals of a space curve $\displaystyle{C}$ pass through a fixed point. prove that $\displaystyle{C}$ is a circle*
+1. *suppose all the principal normals of a space curve $\displaystyle{C}$ pass through a fixed point. prove that $\displaystyle{C}$ is a circle*
 
 following the same idea as above, we have
 
@@ -163,7 +163,7 @@ y(s) & =\int^{s}\sin \theta(s)\mathrm{d}s=\int^{s}\frac{s}{\sqrt{ a^{2}+s^{2} }}
 
 thus the curve is given by $\displaystyle{\boldsymbol{\alpha}(s)=\left(a\ln \left(s+\sqrt{ a^{2}+s^{2} }\right),\sqrt{ a^{2}+s^{2} }\right)}$ up to a rigid motion.
 
-2. $\displaystyle{\kappa(s)=\frac{1}{\sqrt{ a^{2}-s^{2} }}}$
+1. $\displaystyle{\kappa(s)=\frac{1}{\sqrt{ a^{2}-s^{2} }}}$
 
 define $\displaystyle{\theta(s)=\int^{s}\kappa(s)\mathrm{d}s=\arcsin\frac{s}{a}}$, then we have
 
@@ -244,7 +244,7 @@ t+\sqrt{ 3 }\sin t \\
 
 and $\displaystyle{\det \begin{pmatrix}0 & \frac{\sqrt{ 3 }}{2} & -\frac{1}{2} \\1 & 0 & 0 \\0 & -\frac{1}{2} & -\frac{\sqrt{ 3 }}{2}\end{pmatrix}=1}$, thus these two curves are the same up to a rigid motion.
 
-2. *find the curvature and torsion of $\displaystyle{\boldsymbol\alpha(t)}$*
+1. *find the curvature and torsion of $\displaystyle{\boldsymbol\alpha(t)}$*
 
 we only neet to find the curvature and torsion of $\displaystyle{\boldsymbol\beta(t)}$, since they are the same curve. the Frenet frame is given by
 

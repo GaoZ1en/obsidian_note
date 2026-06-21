@@ -144,6 +144,7 @@ and restoring the spectral shift factor $\displaystyle{K_{n}(t,r)=e^{-\rho ^{2}t
 ---
 
 then the partition function at 1-loop is given by
+
 $$\begin{align}
 Z & =\frac{1}{2}\int ^{\infty}_{0^{+}} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }K(t,x,x) \\
  & =\frac{1}{2}\mathrm{Vol}(\mathbb{H}_{3})\int ^{\infty}_{0} \frac{\mathrm{d}t}{t} \frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}} \\
@@ -230,7 +231,7 @@ $$\begin{align}
 \nabla ^{\mu}u\nabla _{\mu}\nabla _{\nu}\nabla _{\nu'}u & =\nabla _{\nu}u\nabla _{\nu'}u \\
 \nabla ^{\mu}u\nabla _{\mu}\nabla _{\nu'}u & =(1+u)\nabla _{\nu'}u \\
 \nabla ^{\mu}\nabla _{\mu'}u\nabla _{\mu}\nabla _{\nu'}u & =g_{\mu'\nu'}+\nabla _{\mu'}u\nabla _{\nu'}u \\
-\nabla _{\mu}\nabla _{\nu}\nabla _{\nu'}u & =g_{\mu \nu}\nabla _{\nu'}u 
+\nabla _{\mu}\nabla _{\nu}\nabla _{\nu'}u & =g_{\mu \nu}\nabla _{\nu'}u
 \end{align}$$
 
 introduce the standard bitensor basis
@@ -242,14 +243,19 @@ C_{\mu \nu'} & =\nabla _{\mu}u\nabla _{\nu'}u=\sinh ^{2}rn_{\mu}n_{\nu'}
 
 on $\displaystyle{\mathbb{H}_{3}}$, the following identities hold:
 1. Hessian decomposition
+
 $$\begin{align}
 B_{\mu \nu'} & =(1+u)(2n_{\mu}n_{\nu'}-g_{\mu \nu'})
 \end{align}$$
-2. Laplacian of u
+
+1. Laplacian of u
+
 $$\begin{align}
 \nabla ^{2}u & =3(1+u)
 \end{align}$$
-3. derivatives of $\displaystyle{n}$ along the geodesic
+
+1. derivatives of $\displaystyle{n}$ along the geodesic
+
 $$\begin{align}
 \nabla _{\mu}n_{\nu} & =\coth r(g_{\mu \nu}-n_{\mu}n_{\nu}) \\
 \nabla _{\mu}n_{\nu'} & =-\mathrm{csch}r(g_{\mu \nu'}+n_{\mu}n_{\nu'})
@@ -276,7 +282,7 @@ $$\begin{align}
 \implies(\nabla ^{2}+2-\mu ^{2})(\nabla _{\mu}\nabla _{\nu'}S) & =\nabla _{\mu}\nabla _{\nu'}(\nabla ^{2}S-\mu ^{2}S)
 \end{align}$$
 
-then consider $\displaystyle{FB_{\mu \nu}}$. 
+then consider $\displaystyle{FB_{\mu \nu}}$.
 
 $$\begin{align}
 \nabla ^{2}(FB_{\mu \nu'}) & =\nabla ^{2}FB_{\mu \nu'}+2\nabla ^{\alpha}F\nabla _{\alpha}B_{\mu \nu'}+F\nabla ^{2}B_{\mu \nu'} \\
@@ -618,6 +624,7 @@ S & =-\frac{2}{(4\pi)^{3/2}\sqrt{ t }} \frac{\cosh r}{\sinh r} \int ^{r}_{0} e^{
 \end{align}$$
 
 the trace of the heat kernel is given by
+
 $$\begin{align}
 K(t) &= \mathrm{Tr}(K_{\mu \nu}(t,x,x)) \\
  & =-3\mathrm{Vol}(\mathbb{H}_{3})(F+\partial _{u}S)|_{u=0} \\

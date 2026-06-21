@@ -14,7 +14,7 @@ then the ground state can be written as
 
 $$\begin{align}
 \ket{\Psi} & =\prod _{j}(1+A_{j})\ket{0} \\
- & =\sum _{\text{all possible loops}}\ket{\text{(loops)}} 
+ & =\sum _{\text{all possible loops}}\ket{\text{(loops)}}
 \end{align}$$
 
 loop condensation...
@@ -22,16 +22,16 @@ loop condensation...
 see [[Note/Reading/symmetry and topology/topology/the toric code and homology|the toric code and homology]] for more info. we can see that there are two types of excitation states, which are string excitations but energy is carried by endpoints. we call fractional excitation. and excitation are anyons, which means, if an $\displaystyle{m}$ charge (which live on plaquette) turn around an $\displaystyle{e}$ charge (which live on site), we will got a phase of $\displaystyle{\pi}$. more specifically, consider a $\displaystyle{e}$ charge live on site $\displaystyle{o}$, the excitation state $\displaystyle{\ket{\Psi_{e}}}$ satisfies
 
 $$\begin{align}
-A_{o}\ket{\Psi_{e}} & =-\ket{\Psi_{e}} 
+A_{o}\ket{\Psi_{e}} & =-\ket{\Psi_{e}}
 \end{align}$$
 
 consider a loop $\displaystyle{\mathcal{C}}$ around the site $\displaystyle{o}$ in the counter-clock wise, then
 
 $$\begin{align}
-\prod _{j\in \mathcal{C}} B_{j}\ket{\Psi _{e}}  & =-\ket{\Psi_{e}} 
+\prod _{j\in \mathcal{C}} B_{j}\ket{\Psi _{e}}  & =-\ket{\Psi_{e}}
 \end{align}$$
 
-the bound state of $\displaystyle{e}$ and $\displaystyle{m}$, which is a fermion (because of the braiding, topological spin-1/2...). a metaphor of rubber ribbon. order with such excitation are called tolopogical order. 
+the bound state of $\displaystyle{e}$ and $\displaystyle{m}$, which is a fermion (because of the braiding, topological spin-1/2...). a metaphor of rubber ribbon. order with such excitation are called tolopogical order.
 
 the ground states are 4-fold degenerate on torus. in general, the ground states are characterized by the first homology group $\displaystyle{H_{1}(M,\mathbb{Z}_{2})}$ of the manifold $\displaystyle{M}$ on which the toric code is defined. the degeneracy is given by $\displaystyle{2^{2g}}$, where $\displaystyle{g}$ is the genus of the surface, and are called logical qubits or code space.
 
@@ -49,4 +49,4 @@ then there will be phase transition at some critical $\displaystyle{h_{x},h_{z}}
 
 in the language of quantum information, errors correspond to creation of anyons. the robustness of ground state degeneracy against local perturbation corresponds to the ability of the code to correct local errors. the phase transition corresponds to the error threshold of the code, beyond which error correction fails. code length $\displaystyle{L}$, error rate $\displaystyle{p}$, if $\displaystyle{p<p_{c}}$, then we can correct errors with probability approaching 1 as $\displaystyle{L\to \infty}$; if $\displaystyle{p>p_{c}}$, then error correction fails with probability approaching 1 as $\displaystyle{L\to \infty}$. the critical error rate $\displaystyle{p_{c}}$ corresponds to the phase transition point in the toric code model with perturbations.
 
-the shortage of the toric code model is that its efficient is low, since $\displaystyle{N}$ physical qubits only encode $\displaystyle{O(1)}$ logical qubits, and 
+the shortage of the toric code model is that its efficient is low, since $\displaystyle{N}$ physical qubits only encode $\displaystyle{O(1)}$ logical qubits, and

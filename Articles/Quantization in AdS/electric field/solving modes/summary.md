@@ -42,7 +42,7 @@ this asymptotic behavior is invariant under gauge transformation $\displaystyle{
 however, with the above asymptotic behavior, we have
 
 $$\begin{align}
-\sqrt{ -g }F_{\mu \nu}F^{\mu \nu} & =\mathcal{O}(r^{-1}) 
+\sqrt{ -g }F_{\mu \nu}F^{\mu \nu} & =\mathcal{O}(r^{-1})
 \end{align}$$
 
 and the whole action contains a logarithmic divergence... but we keep this in mind for now and proceed to analyze the solutions of the eom with the above asymptotic behavior.
@@ -132,6 +132,7 @@ for $\displaystyle{c-a-b=0}$, where $\displaystyle{\psi(x)=\frac{\mathrm{d}}{\ma
 $$\begin{align}
 \Phi _{\pm} & =\mathcal{O}(r^{-1})
 \end{align}$$
+
 as $\displaystyle{r\to \infty}$, then we have to set the coefficient of the leading term $\displaystyle{\ln z}$ to zero, which implies
 
 $$\begin{align}

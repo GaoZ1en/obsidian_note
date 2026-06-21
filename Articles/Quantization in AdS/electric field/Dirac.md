@@ -6,7 +6,6 @@ summary: "Derives the Dirac action in a general curved spacetime; obtains equati
 
 the action for the Dirac field in a general curved spacetime is
 
-
 $$\begin{align}
 S & =\int _{M}\mathrm{d}^{d}x\sqrt{ -g }\left( \frac{i}{2}\bar{\psi}\gamma ^{\mu}\nabla _{\mu}\psi-\frac{i}{2}\bar{\psi}\gamma ^{\mu}\overleftarrow{\nabla}_{\mu}\psi -m\bar{\psi}\psi \right).
 \end{align}$$
@@ -145,7 +144,6 @@ $$\begin{align}
 \end{align}$$
 
 the corresponding Noether charge is therefore
-
 
 $$\begin{align}
 H_{\xi} & =X_{\xi}\cdot \theta-\alpha _{\xi} \\

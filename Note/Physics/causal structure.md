@@ -2,7 +2,7 @@
 
 ## Abstract
 
-We present a concise, self‑contained development of the causal theory of Lorentzian spacetimes: local structure (light cones), causal relations, the hierarchy of global causality conditions, and their culmination in global hyperbolicity and singularity theorems. Emphasis is placed on precise definitions, minimal hypotheses, and logically ordered implications. Physical remarks are restricted to clarifying necessity of assumptions. 
+We present a concise, self‑contained development of the causal theory of Lorentzian spacetimes: local structure (light cones), causal relations, the hierarchy of global causality conditions, and their culmination in global hyperbolicity and singularity theorems. Emphasis is placed on precise definitions, minimal hypotheses, and logically ordered implications. Physical remarks are restricted to clarifying necessity of assumptions.
 
 ## Notation and Conventions
 
@@ -10,7 +10,7 @@ We present a concise, self‑contained development of the causal theory of Loren
 
 **Causal Relations**:
 - $p \ll q$: $q$ is in the chronological future of $p$
-- $p < q$: $q$ is in the causal future of $p$  
+- $p < q$: $q$ is in the causal future of $p$
 - $p \leq q$: $p < q$ or $p = q$
 
 **Causal Sets**:
@@ -29,10 +29,16 @@ We present a concise, self‑contained development of the causal theory of Loren
 ### 1.1 Lorentzian Structure
 
 **Definition 1.1 (Spacetime)**. A spacetime is a smooth 4–manifold $M$ with Lorentzian metric $g_{ab}$ of signature $(-,+,+,+)$. In local coordinates $(x^{\mu})$ the line element is
-$$ds^2 = g_{\mu\nu} dx^{\mu} dx^{\nu}. \tag{1.1}$$
+
+$$\begin{align}
+ds^2 = g_{\mu\nu} dx^{\mu} dx^{\nu}. \tag{1.1}
+\end{align}$$
 
 **Definition 1.2 (Causal types)**. For $V^a \in T_pM$:
-$$g_{ab} V^a V^b \begin{cases}<0 & \text{timelike},\\=0 & \text{null},\\>0 & \text{spacelike}.\end{cases} \tag{1.2}$$
+
+$$
+g_{ab} V^a V^b \begin{cases}<0 & \text{timelike},\\=0 & \text{null},\\>0 & \text{spacelike}.\end{cases} \tag{1.2}
+$$
 
 **Definition 1.3 (Light cone)**. $\mathcal{C}_p = \{ V \neq 0 : g(V,V)=0\}$ partitions $T_pM$ into timelike, null, spacelike regions.
 
@@ -50,18 +56,22 @@ Remark. Only causal curves can represent physical signal/worldline propagation.
 $p \ll q$ if some timelike curve joins $p$ to $q$; $p < q$ if some causal curve joins them; $p \le q$ if $p<q$ or $p=q$.
 
 **Definition 2.2 (Future/past sets)**.
-$$\begin{aligned}
+
+$$
+\begin{aligned}
 I^{\pm}(p) &= \{ q : p \ll q \}\; ,\\
 J^{\pm}(p) &= \{ q : p < q \}.
-\end{aligned} \tag{2.1}$$
+\end{aligned} \tag{2.1}
+$$
+
 We have $I^+(p) \subset J^+(p)$ and analogously for past sets.
 
 ### 2.2 Structural Properties
 
 **Proposition 2.3**. For all $p$:
 1. (Transitivity) $p<q<r \Rightarrow p<r$.
-2. (Irreflexivity) $p \not< p$ in causal spacetimes.
-3. (Boundary structure) $I^+(p) \subset J^+(p) \subset \overline{I^+(p)}$, with $\partial I^+(p)$ generated (where differentiable) by future null geodesics from $p$. If the spacetime is **causally simple** (i.e. every $J^\pm(p)$ is closed) then $\overline{I^+(p)} = J^+(p)$.
+1. (Irreflexivity) $p \not< p$ in causal spacetimes.
+1. (Boundary structure) $I^+(p) \subset J^+(p) \subset \overline{I^+(p)}$, with $\partial I^+(p)$ generated (where differentiable) by future null geodesics from $p$. If the spacetime is **causally simple** (i.e. every $J^\pm(p)$ is closed) then $\overline{I^+(p)} = J^+(p)$.
 
 *Proof*. (1)(2) As before. (3) Inclusion $I^+\subset J^+$ is by definition. Any timelike curve can be $C^0$-approximated by a causal curve; conversely a point $q$ reached by a future directed causal curve from $p$ that is not timelike-related can be joined by a limit of timelike curves if no obstruction arises; in general pathological (non causally simple) spacetimes can produce additional boundary limit points, so only $J^+(p) \subset \overline{I^+(p)}$ is universal (Hawking–Ellis Prop. 6.3.1). Causal simplicity ensures $J^+(p)$ closed hence equality. Generator statement follows from pushing interior timelike curves to the boundary leading to achronal null geodesic segments. ∎
 
@@ -82,7 +92,10 @@ We have $I^+(p) \subset J^+(p)$ and analogously for past sets.
 ## III. Hierarchy of Causality
 
 **Chain (3.1)**:
-$$\text{Globally hyperbolic} \Rightarrow \text{Stably causal} \Rightarrow \text{Strongly causal} \Rightarrow \text{Distinguishing} \Rightarrow \text{Causal} \Rightarrow \text{Chronological} \Rightarrow \text{Non-totally vicious} $$
+
+$$\begin{align}
+\text{Globally hyperbolic} \Rightarrow \text{Stably causal} \Rightarrow \text{Strongly causal} \Rightarrow \text{Distinguishing} \Rightarrow \text{Causal} \Rightarrow \text{Chronological} \Rightarrow \text{Non-totally vicious}
+\end{align}$$
 
 Each arrow is strict (standard counterexamples omitted here for brevity).
 
@@ -99,9 +112,17 @@ Example: Misner space is non‑totally vicious; Gödel spacetime (every point on
 **Proposition 3.4**. Chronological $\Leftrightarrow$ existence of continuous $t : M \to \mathbb{R}$ strictly increasing on timelike curves.
 
 *Proof*. ($\Rightarrow$) Pick a countable dense set $\{p_n\}$ in $M$. Define
-$$t_0(q)= \sum_{n=1}^\infty 2^{-n}\, \chi_{I^+(p_n)}(q). \tag{3.2}$$
+
+$$\begin{align}
+t_0(q)= \sum_{n=1}^\infty 2^{-n}\, \chi_{I^+(p_n)}(q). \tag{3.2}
+\end{align}$$
+
 Chronology implies $I^+(p_n)$ are open and if $p \ll q$ then every timelike future of $p$ is also that of $q$, so $t_0$ is strictly increasing along timelike curves. Regularise: choose a locally finite partition of unity $\{\phi_i\}$ subordinate to a convex normal covering and define
-$$t(q)= \sum_i \left( \inf_{r\in \mathrm{supp}\,\phi_i} t_0(r)\right) \phi_i(q). \tag{3.3}$$
+
+$$\begin{align}
+t(q)= \sum_i \left( \inf_{r\in \mathrm{supp}\,\phi_i} t_0(r)\right) \phi_i(q). \tag{3.3}
+\end{align}$$
+
 Then $t$ is continuous and preserves strict increase because any timelike advance crosses at least one support where $t_0$ has strictly larger characteristic sum. ($\Leftarrow$) If a closed timelike curve existed from $p$ to $p$, the strict increase would give $t(p)<t(p)$ contradiction. ∎
 
 Example: Minkowski space with $t=x^0$; exterior Schwarzschild $(r>2M)$ is chronological.
@@ -185,7 +206,11 @@ Properties: (i) Null $C^0$ hypersurface; (ii) Generated by future inextendible n
 Expansion (schematic): $\theta_{(\ell)} = \frac12 q^{ab} \mathcal L_{\ell} q_{ab}$ with $q_{ab}$ induced 2‑metric.
 
 **Equation (4.1)**. For null normal $\ell^a$ and induced metric $q_{ab}= g_{ab}+ n_a \ell_b + \ell_a n_b$ (with $\ell\cdot n=-1$):
-$$\theta_{(\ell)} = q^{ab} \nabla_a \ell_b. \tag{4.1}$$
+
+$$\begin{align}
+\theta_{(\ell)} = q^{ab} \nabla_a \ell_b. \tag{4.1}
+\end{align}$$
+
 Derivation: $\mathcal L_{\ell} q_{ab}=2 (\nabla_{(a} \ell_{b)} + \ell_{(a} a_{b)})$ with $a_b= \ell^c\nabla_c \ell_b$. For affinely parametrised null generators $a_b=0$ and contraction with $q^{ab}$ gives (4.1).
 
 ### 4.2 Additional Horizon Notions
@@ -217,16 +242,30 @@ Derivation: $\mathcal L_{\ell} q_{ab}=2 (\nabla_{(a} \ell_{b)} + \ell_{(a} a_{b)
 Preserved: Null directions / causal order (null cone invariance), conformal class of angles, unparameterised null geodesics.
 
 Affine parameter change: If $k^a$ is affinely parametrised for $g$, then for $\tilde g$:
-$$k^b \tilde \nabla_b k^a = 2 (k^b \nabla_b \ln \Omega) k^a, \tag{5.1}$$
+
+$$\begin{align}
+k^b \tilde \nabla_b k^a = 2 (k^b \nabla_b \ln \Omega) k^a, \tag{5.1}
+\end{align}$$
+
 so $d\tilde\lambda = \Omega^{-2} d\lambda$ yields an affine parameter for $\tilde g$.
 
 Curvature transformations (in 4D):
-$$\tilde R = \Omega^{-2}( R - 6\Omega^{-1} \Box \Omega), \qquad \tilde R_{ab}= R_{ab} - 2\Omega^{-1} \nabla_a \nabla_b \Omega - g_{ab}\Omega^{-1} \Box \Omega + 2\Omega^{-2}(2 \nabla_a \Omega \nabla_b \Omega - g_{ab} (\nabla \Omega)^2). \tag{5.2}$$
+
+$$\begin{align}
+\tilde R = \Omega^{-2}( R - 6\Omega^{-1} \Box \Omega), \qquad \tilde R_{ab}= R_{ab} - 2\Omega^{-1} \nabla_a \nabla_b \Omega - g_{ab}\Omega^{-1} \Box \Omega + 2\Omega^{-2}(2 \nabla_a \Omega \nabla_b \Omega - g_{ab} (\nabla \Omega)^2). \tag{5.2}
+\end{align}$$
+
 Weyl tensor invariance:
-$$\tilde C^a{}_{bcd} = C^a{}_{bcd}. \tag{5.3}$$
+
+$$\begin{align}
+\tilde C^a{}_{bcd} = C^a{}_{bcd}. \tag{5.3}
+\end{align}$$
 
 Expansion transformation (null congruence): For $\ell^a$ generating null geodesics,
-$$\tilde \theta = \Omega^{-2}\left( \theta + 2 \ell^a \nabla_a \ln \Omega \right). \tag{5.4}$$
+
+$$\begin{align}
+\tilde \theta = \Omega^{-2}\left( \theta + 2 \ell^a \nabla_a \ln \Omega \right). \tag{5.4}
+\end{align}$$
 
 Implication: Regularity of $\Omega^{-2} C_{abcd}$ at boundary gives finite radiative data (peeling heuristic).
 
@@ -255,10 +294,10 @@ Null infinity ($\mathcal I$): Components of $\mathscr{B}$ that are null hypersur
 ### 5.8 Practical Construction Algorithm (Penrose Diagram)
 
 1. Choose symmetry-adapted null coordinates $(u,v)$.
-2. Map $u,v \mapsto U(u), V(v)$ sending infinities to finite endpoints (e.g. $\arctan$ or $\tanh$).
-3. Rescale metric with $\Omega^2 = (dU/du)(dV/dv)$ (up to angular factor) to obtain finite line element.
-4. Identify boundary components: solve $\Omega=0$ and classify normal causal type.
-5. Suppress angular part to 1+1 diagram, retain causal orientation (null at $45^\circ$).
+1. Map $u,v \mapsto U(u), V(v)$ sending infinities to finite endpoints (e.g. $\arctan$ or $\tanh$).
+1. Rescale metric with $\Omega^2 = (dU/du)(dV/dv)$ (up to angular factor) to obtain finite line element.
+1. Identify boundary components: solve $\Omega=0$ and classify normal causal type.
+1. Suppress angular part to 1+1 diagram, retain causal orientation (null at $45^\circ$).
 
 **Common pitfalls**: (i) Missing global identifications (quotients) leading to misdrawn causal edges; (ii) Dropping angular part too early obscuring whether a boundary is point ($i^0$) or cylinder ($\mathcal I$); (iii) Confusing timelike vs null boundary (AdS vs Minkowski) altering horizon definition.
 
@@ -273,7 +312,11 @@ Null infinity ($\mathcal I$): Components of $\mathscr{B}$ that are null hypersur
 **Definition 6.3 (Conjugate points)**. Points joined by a nontrivial Jacobi field vanishing at both.
 
 **Jacobi Equation**: The deviation vector $\xi^a$ between nearby geodesics satisfies:
-$$\frac{D^2\xi^a}{D\tau^2} + R^a_{\ bcd}u^b u^c \xi^d = 0$$
+
+$$\begin{align}
+\frac{D^2\xi^a}{D\tau^2} + R^a_{\ bcd}u^b u^c \xi^d = 0
+\end{align}$$
+
 where $u^a$ is the geodesic tangent vector.
 
 ### 6.2 Energy and Focusing
@@ -281,24 +324,51 @@ where $u^a$ is the geodesic tangent vector.
 Energy conditions (already earlier): NEC: $T_{ab}\ell^a \ell^b\ge0$; SEC: $R_{ab}u^a u^b\ge0$.
 
 Raychaudhuri (timelike, hypersurface‑orthogonal, $\omega=0$):
-$$\frac{d\theta}{d\tau} = -\tfrac13 \theta^2 - \sigma_{ab}\sigma^{ab} - R_{ab}u^a u^b. \tag{6.1}$$
+
+$$\begin{align}
+\frac{d\theta}{d\tau} = -\tfrac13 \theta^2 - \sigma_{ab}\sigma^{ab} - R_{ab}u^a u^b. \tag{6.1}
+\end{align}$$
+
 Null version:
-$$\frac{d\theta}{d\lambda} = -\tfrac12 \theta^2 - \sigma_{ab}\sigma^{ab} - R_{ab}\ell^a \ell^b. \tag{6.2}$$
+
+$$\begin{align}
+\frac{d\theta}{d\lambda} = -\tfrac12 \theta^2 - \sigma_{ab}\sigma^{ab} - R_{ab}\ell^a \ell^b. \tag{6.2}
+\end{align}$$
 
 **Derivation (Raychaudhuri)**. Let $B_{ab}= \nabla_b u_a$ for geodesic ($a^a=0$) timelike congruence with $u^a u_a=-1$. Decompose
-$$B_{ab}= \frac{1}{3}\theta h_{ab} + \sigma_{ab} + \omega_{ab}, \tag{6.3}$$
+
+$$\begin{align}
+B_{ab}= \frac{1}{3}\theta h_{ab} + \sigma_{ab} + \omega_{ab}, \tag{6.3}
+\end{align}$$
+
 with projector $h_{ab}= g_{ab}+u_a u_b$, shear $\sigma_{ab}$ symmetric tracefree orthogonal, vorticity $\omega_{ab}$ antisymmetric. Using $\dot B_{ab}= u^c\nabla_c B_{ab}$ and Ricci identity:
-$$u^c\nabla_c B^a_{\ b}= - B^a_{\ c} B^c_{\ b} - R^a_{\ c b d} u^c u^d. \tag{6.4}$$
+
+$$\begin{align}
+u^c\nabla_c B^a_{\ b}= - B^a_{\ c} B^c_{\ b} - R^a_{\ c b d} u^c u^d. \tag{6.4}
+\end{align}$$
+
 Taking trace, employing $\omega_{ab}\omega^{ab}\ge0$ and $B_{ab}B^{ba}= \tfrac{1}{3}\theta^2 + \sigma_{ab}\sigma^{ab} - \omega_{ab}\omega^{ab}$ yields
-$$\dot \theta = -\tfrac{1}{3}\theta^2 - \sigma_{ab}\sigma^{ab} + \omega_{ab}\omega^{ab} - R_{ab}u^a u^b. \tag{6.5}$$
+
+$$\begin{align}
+\dot \theta = -\tfrac{1}{3}\theta^2 - \sigma_{ab}\sigma^{ab} + \omega_{ab}\omega^{ab} - R_{ab}u^a u^b. \tag{6.5}
+\end{align}$$
+
 For hypersurface orthogonal $\omega_{ab}=0$ giving (6.1). Null version analogous with $\tfrac12$ in place of $\tfrac13$ due to screen space dimension.
 
 **Lemma 6.4 (Focusing)**. If $\theta_0<0$ initially and the appropriate energy condition holds, then $\theta \to -\infty$ within affine/proper parameter $\le 3/|\theta_0|$ (timelike) or $\le 2/|\theta_0|$ (null); a conjugate point forms in finite parameter.
 
 *Proof*. With $\omega=0$, SEC/NEC imply $R_{ab}u^a u^b \ge0$ or $R_{ab}\ell^a \ell^b \ge0$ so (6.1)-(6.2) give differential inequalities
-$$\dot\theta \le -\frac{1}{3}\theta^2, \qquad \theta'< -\frac{1}{2}\theta^2. \tag{6.6}$$
+
+$$\begin{align}
+\dot\theta \le -\frac{1}{3}\theta^2, \qquad \theta'< -\frac{1}{2}\theta^2. \tag{6.6}
+\end{align}$$
+
 Integrate timelike case: $d\theta/\theta^2 \ge - d\tau/3$ so
-$$\frac{1}{\theta(\tau)} \ge \frac{1}{\theta_0} + \frac{\tau-\tau_0}{3}. \tag{6.7}$$
+
+$$\begin{align}
+\frac{1}{\theta(\tau)} \ge \frac{1}{\theta_0} + \frac{\tau-\tau_0}{3}. \tag{6.7}
+\end{align}$$
+
 With $\theta_0<0$ the RHS hits zero at $\tau -\tau_0 = -3/\theta_0 = 3/|\theta_0|$. Thus $\theta\to -\infty$ before or at that bound. Blow‑up implies cross sectional area $\to 0$ forming a conjugate point (Jacobi field with vanishing length). Null case identical with $1/2$ replacing $1/3$. ∎
 
 ### 6.3 Hawking Theorem
@@ -334,8 +404,8 @@ Schwarzschild interior: trapped $S^2$ at $r<2M$ since $\theta_{(\ell)}=\tfrac{2}
 
 **Types of singular behavior**:
 1. *Quasi-regular*: Topological obstruction (e.g. edge) without curvature blow‑up.
-2. *p.p. curvature singularity*: Parallelly propagated components diverge though scalars may remain finite (e.g. certain plane waves).
-3. *Strong curvature (Tipler / Królak)*: Volume of any extended object crushed to zero—integral conditions on tidal tensor diverge.
+1. *p.p. curvature singularity*: Parallelly propagated components diverge though scalars may remain finite (e.g. certain plane waves).
+1. *Strong curvature (Tipler / Królak)*: Volume of any extended object crushed to zero—integral conditions on tidal tensor diverge.
 
 **Informal (Tipler strong)**. Along causal geodesic $\gamma$ with affine parameter $\lambda\to \lambda_*$, for every Jacobi triad the triple integral $\int^\lambda d\lambda'\int^{\lambda'} d\lambda'' |R|$ diverges (schematic), ensuring full destruction.
 
@@ -352,25 +422,36 @@ Schwarzschild interior: trapped $S^2$ at $r<2M$ since $\theta_{(\ell)}=\tfrac{2}
 Let $\gamma$ be a future incomplete causal geodesic with affine (null) or proper (timelike) parameter $\lambda$ approaching an endpoint $\lambda_*<\infty$. Let $Z^a_{(i)}(\lambda)$ ($i=1,2,3$ for timelike, $i=1,2$ for null screen space) be an orthonormal (or screen-orthogonal) Jacobi basis orthogonal to the tangent.
 
 Define the volume (area) element of an infinitesimal geodesic ball (pencil) by
-$$V(\lambda)= \sqrt{\det \big( g(Z_{(i)}, Z_{(j)}) \big)}.$$
+
+$$\begin{align}
+V(\lambda)= \sqrt{\det \big( g(Z_{(i)}, Z_{(j)}) \big)}.
+\end{align}$$
 
 Introduce tidal scalar $\mathcal R(\lambda)$ schematically representing appropriate frame components (e.g. $R_{ab}u^a u^b$ plus shear terms for focusing inequalities or full $R_{acbd}u^c u^d$ contractions controlling Jacobi evolution). Precise component choice does not affect divergence classification if equivalence classes under bounded positive factors are used.
 
 **Definition 6.8 (Królak strong curvature)**. $\gamma$ encounters a Królak strong curvature singularity at $\lambda_*$ if there exists at least one Jacobi basis such that
-$$\int^{\lambda_*} d\lambda'\, |\mathcal R(\lambda')| = \infty.$$
+
+$$\begin{align}
+\int^{\lambda_*} d\lambda'\, |\mathcal R(\lambda')| = \infty.
+\end{align}$$
+
 Equivalently: the first integral of tidal magnitude diverges, forcing *initial* crushing (expansion necessarily becomes negative and unbounded).
 
 **Definition 6.9 (Tipler strong curvature)**. $\gamma$ encounters a Tipler strong curvature singularity at $\lambda_*$ if for every Jacobi basis spanning directions orthogonal to the tangent,
-$$\int^{\lambda_*} d\lambda' \int^{\lambda'} d\lambda'' |\mathcal R(\lambda'')| = \infty,$$
+
+$$\begin{align}
+\int^{\lambda_*} d\lambda' \int^{\lambda'} d\lambda'' |\mathcal R(\lambda'')| = \infty,
+\end{align}$$
+
 which is equivalent to $V(\lambda) \to 0$ for all such bases—complete volume collapse of any extended object.
 
 **Relation**. Tipler strong ⇒ Królak strong; converse not necessarily. Tipler demands double integral divergence (stronger crushing), Królak only single integral (initial focusing) divergence.
 
 **Remarks**:
 1. The classification is insensitive to bounded rescalings of $\mathcal R$.
-2. In plane wave spacetimes certain null geodesics exhibit Królak strong but not Tipler strong behavior.
-3. Strong singularities thus defined are invariant under $C^2$ extensions; removable (quasi-regular) singularities fail both.
-4. Classical singularity theorems do not ensure strong (Tipler/Królak) character; additional curvature growth assumptions are required.
+1. In plane wave spacetimes certain null geodesics exhibit Królak strong but not Tipler strong behavior.
+1. Strong singularities thus defined are invariant under $C^2$ extensions; removable (quasi-regular) singularities fail both.
+1. Classical singularity theorems do not ensure strong (Tipler/Królak) character; additional curvature growth assumptions are required.
 
 ### 6.9 Quantum Energy Conditions and Generalized Focusing
 
@@ -384,7 +465,7 @@ Classical NEC/SEC fail in semiclassical settings. Replacements:
 
 **Quantum expansion**. $\Theta = \theta + (2\pi/\hbar) S'_{\text{out}}$, conjectured $d\Theta/d\lambda \le 0$ (QFC). Recovers classical focusing when $S'_{\text{out}}=0$.
 
-**Penrose under ANEC (schematic)**. Trapped surface initial $\theta_0<0$; integrate null Raychaudhuri with curvature term replaced by $8\pi T_{kk}$; ANEC prevents net negative compensation needed to avoid blow‑up ⇒ null incompleteness unless shear / stress cancel (nongeneric). 
+**Penrose under ANEC (schematic)**. Trapped surface initial $\theta_0<0$; integrate null Raychaudhuri with curvature term replaced by $8\pi T_{kk}$; ANEC prevents net negative compensation needed to avoid blow‑up ⇒ null incompleteness unless shear / stress cancel (nongeneric).
 
 **Inflationary cosmology**. SEC violation ($R_{ab}u^a u^b<0$) but averaged convergence $\int R_{ab}u^a u^b d\tau \ge 0$ can still yield Hawking-type results (Borde–Guth–Vilenkin shows past-incompleteness of inflationary spacetimes under averaged Hubble expansion assumptions).
 
@@ -394,8 +475,8 @@ Classical NEC/SEC fail in semiclassical settings. Replacements:
 
 **Limitations of Classical Singularity Theorems**:
 1. **Energy conditions**: May be violated by quantum effects
-2. **Generic conditions**: May not hold in special symmetric cases
-3. **Nature of singularity**: Theorems prove incompleteness, not specific singularity type
+1. **Generic conditions**: May not hold in special symmetric cases
+1. **Nature of singularity**: Theorems prove incompleteness, not specific singularity type
 
 **Quantum Modifications**:
 - Hawking radiation violates null energy condition
@@ -414,6 +495,7 @@ Classical NEC/SEC fail in semiclassical settings. Replacements:
 ### Core Framework
 
 **Essential Causal Relations**:
+
 $$\begin{align}
 	ext{Vector Classification:} &\quad g_{ab}V^a V^b \begin{cases} < 0 & \text{timelike} \\ = 0 & \text{null} \\ > 0 & \text{spacelike} \end{cases} \\
 	ext{Causal Future:} &\quad J^+(p) = \{q \in M : p < q\} \\
@@ -423,9 +505,13 @@ $$\begin{align}
 \end{align}$$
 
 **Causal Hierarchy (Complete Chain of Implications)**:
-$$\text{Non-totally vicious} \subset \text{Chronological} \subset \text{Causal} \subset \text{Distinguishing} \subset \text{Strongly causal} \subset \text{Stably causal} \subset \text{Globally hyperbolic}$$
+
+$$\begin{align}
+\text{Non-totally vicious} \subset \text{Chronological} \subset \text{Causal} \subset \text{Distinguishing} \subset \text{Strongly causal} \subset \text{Stably causal} \subset \text{Globally hyperbolic}
+\end{align}$$
 
 **Characterization Conditions**:
+
 $$\begin{align}
 \text{Chronological:} &\quad p \notin I^+(p) \text{ for all } p \in M \\
 \text{Causal:} &\quad p \notin J^+(p) \setminus \{p\} \text{ for all } p \in M \\
@@ -438,6 +524,7 @@ $$\begin{align}
 ### Singularity Theorem Framework
 
 **Energy Conditions**:
+
 $$\begin{align}
 	ext{Null Energy Condition:} &\quad T_{ab}\ell^a \ell^b \geq 0 \text{ for all null } \ell^a \\
 	ext{Strong Energy Condition:} &\quad R_{ab}u^a u^b \geq 0 \text{ for all timelike } u^a \\
@@ -445,6 +532,7 @@ $$\begin{align}
 \end{align}$$
 
 **Raychaudhuri Equations**:
+
 $$\begin{align}
 	ext{Timelike:} &\quad \frac{d\theta}{d\tau} = -\frac{1}{3}\theta^2 - \sigma_{ab}\sigma^{ab} + \omega_{ab}\omega^{ab} - R_{ab}u^a u^b \\
 	ext{Null:} &\quad \frac{d\theta}{d\lambda} = -\frac{1}{2}\theta^2 - \sigma_{ab}\sigma^{ab} - R_{ab}\ell^a \ell^b
@@ -452,17 +540,17 @@ $$\begin{align}
 
 **Fundamental Singularity Results**:
 - **Hawking (1966)**: Cosmological singularities under SEC + contracting Cauchy surface
-- **Penrose (1965)**: Black hole singularities under NEC + trapped surface  
+- **Penrose (1965)**: Black hole singularities under NEC + trapped surface
 - **Hawking-Penrose (1970)**: Unified theorem combining both scenarios
 
 ## VII. Summary (Structural)
 
-1. Local: classification of vectors/curves (Defs 1.1–1.4).  
-2. Relations: $I^\pm, J^\pm$, closure and transitivity (Prop 2.3).  
-3. Hierarchy: Definitions 3.2–3.9; chain (3.1). Time functions refine causality.  
-4. Horizons: global null boundaries; trapped surfaces drive focusing.  
-5. Conformal completion: encodes asymptotics without altering causal order.  
-6. Focusing (Lemma 6.4) + energy + global hypotheses ⇒ singularities (Thms 6.5–6.7).  
+1. Local: classification of vectors/curves (Defs 1.1–1.4).
+1. Relations: $I^\pm, J^\pm$, closure and transitivity (Prop 2.3).
+1. Hierarchy: Definitions 3.2–3.9; chain (3.1). Time functions refine causality.
+1. Horizons: global null boundaries; trapped surfaces drive focusing.
+1. Conformal completion: encodes asymptotics without altering causal order.
+1. Focusing (Lemma 6.4) + energy + global hypotheses ⇒ singularities (Thms 6.5–6.7).
 
 Essential mechanism: Raychaudhuri + sign control of Ricci term + global avoidance of causal pathologies force finite‑parameter conjugate formation; global structure prohibits extension, yielding incompleteness.
 

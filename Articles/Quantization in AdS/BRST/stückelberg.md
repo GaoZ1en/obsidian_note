@@ -10,4 +10,3 @@ $$\begin{align}
 A_{\mu} & \to A_{\mu}+\nabla _{\mu}\Lambda \\
 \phi & \to \phi+\Lambda
 \end{align}$$
-

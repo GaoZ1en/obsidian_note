@@ -13,4 +13,3 @@ $$\begin{align}
  & =(\delta _{ij}+i\varepsilon _{ijk}\sigma _{k})n_{i}m_{j} \\
  & =\mathbb{1}(\vec{n}\cdot \vec{m})+i\vec{\sigma}\cdot(\vec{n}\times \vec{m})
 \end{align}$$
-

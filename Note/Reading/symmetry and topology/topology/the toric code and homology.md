@@ -2,7 +2,8 @@
 
 the Hamiltonian is defined as
 
-$$\tag{1.1}
+$$
+\tag{1.1}
 \begin{align}
 H & =-\sum _{j}A_{j}-\sum _{p}B_{p}
 \end{align}
@@ -14,17 +15,19 @@ now consider states satify the star condition $\displaystyle{A_{j}=1}$. this mea
 
 because $\displaystyle{\left[A_{j},B_{p}\right]=0}$, $\displaystyle{B_{p}}$ acts within the subspace of closed string states. the action of $\displaystyle{B_{p}}$ is
 
-$$\tag{1.2}
+$$
+\tag{1.2}
 \begin{align}
-B_{p}\ket{C}  & =\ket{C+\partial p} 
+B_{p}\ket{C}  & =\ket{C+\partial p}
 \end{align}
 $$
 
-where the addition is understood mod 2. 
+where the addition is understood mod 2.
 
 the ground state $\displaystyle{\ket{\Omega}}$ is defined as $\displaystyle{B_{p}\ket{\Omega}=\ket{\Omega}}$, and this is the equivalence relation defining "homology". if the lattice were simply connected, then this would mean that there is a unique ground state
 
-$$\tag{1.3}
+$$
+\tag{1.3}
 \begin{align}
 \ket{\Omega _{0}}  & =\sum _{C}\ket{C} =\prod _{p} \frac{1}{2}(1+B_{p})\otimes _{x}\ket{0} _{x}
 \end{align}
@@ -36,7 +39,8 @@ if the space has non-contractible loops (for example, in the torus), there are i
 
 it is notable that the degeneracy is stable to local perturbations of the Hamiltonian. these groundstates are connected by the action of Wilson loops $\displaystyle{W_{C}}$
 
-$$\tag{1.4}
+$$
+\tag{1.4}
 \begin{align}
 W_{C}\equiv \prod _{\ell \in C}X_{\ell}
 \end{align}
@@ -44,7 +48,8 @@ $$
 
 where $\displaystyle{C}$ is a non-contractable curve. Note that $\displaystyle{[W_{C},P]=0}$, we can use $\displaystyle{W_{C}}$ to get other ground states. to see that the remaining state must be independent of $\displaystyle{\ket{\Omega}}$ and to understand the multiplicity better, define the conjugate (magnetic) loop operator ('t Hooft loop) $\displaystyle{V_{\hat{C}}}$ as
 
-$$\tag{1.5}
+$$
+\tag{1.5}
 \begin{align}
 V_{\hat{C}} & =\prod _{\ell \bot \hat{C}}Z_{\ell}
 \end{align}
@@ -54,19 +59,21 @@ where $\displaystyle{\hat{C}}$ is a path which passes in between the lattice poi
 
 we have the following relations
 
-$$\tag{1.6}
+$$
+\tag{1.6}
 \begin{align}
 V_{\hat{C}}W_{C} & =(-1)^{\#C\cap \hat{C}}W_{C}V_{\hat{C}}
 \end{align}
 $$
 
-this algebra must be represented on the groundstates (and actually on every energy states). and it has no one-dimensional representations. 
+this algebra must be represented on the groundstates (and actually on every energy states). and it has no one-dimensional representations.
 
 (this means that the ground state degeneracy is at least $\displaystyle{2^{2g}}$. to see that it is exactly $\displaystyle{2^{2g}}$, we can use the fact that the algebra of operators $\displaystyle{W_{C}}$ and $\displaystyle{V_{\hat{C}}}$ has a representation on the homology of the lattice. this means that there are $\displaystyle{2^{2g}}$ independent ground states, and they are all connected by the action of $\displaystyle{W_{C}}$ and $\displaystyle{V_{\hat{C}}}$.)
 
 consider a perturbation of the toric code Hamiltonian
 
-$$\tag{1.7}
+$$
+\tag{1.7}
 \begin{align}
 H' & =H-g\sum _{\ell}X_{\ell}-h\sum _{\ell}Z_{\ell}
 \end{align}
@@ -74,7 +81,8 @@ $$
 
 at finite $\displaystyle{g,h}$, there is tunneling between the topologically degenerate groundstates, since in that case
 
-$$\tag{1.8}
+$$
+\tag{1.8}
 \begin{align}
 \left[ H,\sum _{\ell \in C} X_{\ell}\right],\left[ H,\sum _{\ell \in\hat{C}}Z_{\ell} \right]\neq0
 \end{align}
@@ -82,7 +90,8 @@ $$
 
 this means
 
-$$\tag{1.9}
+$$
+\tag{1.9}
 \begin{align}
 \braket{ \Omega _{0}|H|\Omega _{1} } \equiv \Gamma\neq 0
 \end{align}
@@ -90,27 +99,29 @@ $$
 
 which will lead to a splitting of the topological degeneracy. the amplitude $\displaystyle{\Gamma}$ goes like
 
-$$\tag{1.10}
+$$
+\tag{1.10}
 \begin{align}
 \Gamma \sim e^{-L|\log g/4|}
 \end{align}
 $$
 
-is extremely small in the thermodynamic limit ($\displaystyle{L\gg1}$). 
+is extremely small in the thermodynamic limit ($\displaystyle{L\gg1}$).
 
 ### spontaneous breaking of 1-form symmetries, Landau paradigm beyond Landau paradigm :)
 
-topological order is spontaneous breaking of discrete higher-form symmetries, just as in the case of Landau paradigm. 
+topological order is spontaneous breaking of discrete higher-form symmetries, just as in the case of Landau paradigm.
 
 string condensation. notice that the phase with topological order involves the condensation of the electric flux strings, in the sense that the operator $\displaystyle{W_{C}}$ for contractable loops which create these strings have a nonzero ground state expactation
 
-$$\tag{1.11}
+$$
+\tag{1.11}
 \begin{align}
 \braket{ \Omega|W_{C}|\Omega } \overset{g=\infty}{=} 1
 \end{align}
 $$
 
-this is the order parameter for the 1-form symmetry breaking. 
+this is the order parameter for the 1-form symmetry breaking.
 
 ### gauge theory notation
 
@@ -120,35 +131,37 @@ there are two kinds of particle excitations in the $\displaystyle{2\mathrm{d}}$ 
 
 notice that it is not possible to creat a single excitation from the ground state. instead, the excitations are created by the endpoints of open Wilson lines. again there are two kinds
 
-$$\tag{1.12}
+$$
+\tag{1.12}
 \begin{align}
 W_{C}=\prod _{\ell \in C}X_{\ell}, V_{\hat{C}}=\prod _{\ell \bot\hat{C}}Z_{\ell}
 \end{align}
 $$
 
-here $\displaystyle{C}$ is a curve in the lattice and $\displaystyle{\hat{C}}$ is a curve in the dual lattice. endpoints of $\displaystyle{W_{C}}$ violates $\displaystyle{A_{s}}$ are are called $\displaystyle{e}$-particles, with $\displaystyle{\Delta H=-g\sum _{\ell}X_{\ell}}$ the kinetic term for them. while endpoints of $\displaystyle{V_{\hat{C}}}$ violates $\displaystyle{B_{p}}$ and are called $\displaystyle{m}$-particles with $\displaystyle{\Delta H=-h\sum _{\ell}Z_{\ell}}$ the kinetic term. 
+here $\displaystyle{C}$ is a curve in the lattice and $\displaystyle{\hat{C}}$ is a curve in the dual lattice. endpoints of $\displaystyle{W_{C}}$ violates $\displaystyle{A_{s}}$ are are called $\displaystyle{e}$-particles, with $\displaystyle{\Delta H=-g\sum _{\ell}X_{\ell}}$ the kinetic term for them. while endpoints of $\displaystyle{V_{\hat{C}}}$ violates $\displaystyle{B_{p}}$ and are called $\displaystyle{m}$-particles with $\displaystyle{\Delta H=-h\sum _{\ell}Z_{\ell}}$ the kinetic term.
 
-the $\displaystyle{e}$-particles and $\displaystyle{m}$-particles are both bosons in the sense of the wave function is symmetrized. and they are their own antiparticles (just like photon and magnetic monopole). but the $\displaystyle{e}$-particles and $\displaystyle{m}$-particles are mutual semions, which means that if we put an $\displaystyle{m}$-particle and move an $\displaystyle{e}$ particle around it, the wave function acquires a phase of $\displaystyle{\pi}$. this is because (1.6). from the gauge theory point of view, this is just the Bohm-Aharonov effect of moving an electric charge around a clump of $\displaystyle{\pi}$-flux. this also means that a bound state of $\displaystyle{e}$ an $\displaystyle{m}$ is a fermion. 
+the $\displaystyle{e}$-particles and $\displaystyle{m}$-particles are both bosons in the sense of the wave function is symmetrized. and they are their own antiparticles (just like photon and magnetic monopole). but the $\displaystyle{e}$-particles and $\displaystyle{m}$-particles are mutual semions, which means that if we put an $\displaystyle{m}$-particle and move an $\displaystyle{e}$ particle around it, the wave function acquires a phase of $\displaystyle{\pi}$. this is because (1.6). from the gauge theory point of view, this is just the Bohm-Aharonov effect of moving an electric charge around a clump of $\displaystyle{\pi}$-flux. this also means that a bound state of $\displaystyle{e}$ an $\displaystyle{m}$ is a fermion.
 
 the mutual statistics of $\displaystyle{e}$ and $\displaystyle{m}$ implies the topological ground state degeneracy.
 
 ### the phase diagram
 
-perturbations $\displaystyle{\Delta H=-\sum _{\ell}(gX_{\ell}+hZ_{\ell})}$ produce a nonzero correlation length. these couplings $\displaystyle{h}$ and $\displaystyle{g}$ are respectively an electric string tension and a hopping amplitude and fugacity for the $\displaystyle{e}$-particles. make these two big and the model is confined or higgsed, respectively. 
+perturbations $\displaystyle{\Delta H=-\sum _{\ell}(gX_{\ell}+hZ_{\ell})}$ produce a nonzero correlation length. these couplings $\displaystyle{h}$ and $\displaystyle{g}$ are respectively an electric string tension and a hopping amplitude and fugacity for the $\displaystyle{e}$-particles. make these two big and the model is confined or higgsed, respectively.
 
 ![[Attachments/Pasted image 20250417145002.png]]
 
 see Fradkin-Shenker 1979 for more details.
- 
+
  (...)
- 
+
 now jump into abstract topology:
 
 ## cell complexes and homology
 
 take a $\displaystyle{d}$-dimensional manifold $\displaystyle{X}$ whose topology is interest and chop it up into simply-connected cells. the gluing data is encoded in a boundary map $\displaystyle{\partial}$. let $\displaystyle{\Delta _{k}}$ be the set of $\displaystyle{k}$-cells in the triangulation of $\displaystyle{X}$, and choose an abelian group $\displaystyle{A}$(some rings $\displaystyle{R}$ with unitary). define a vector space
 
-$$\tag{1.13}
+$$
+\tag{1.13}
 \begin{align}
 \Omega _{k}\equiv \Omega _{k}(\Delta,A)\equiv \mathrm{span}_{A}\left\{\sigma \in \Delta _{k}\right\}
 \end{align}
@@ -156,7 +169,8 @@ $$
 
 to be spanned by vectors associated with $\displaystyle{k}$-cells $\displaystyle{\sigma}$, with coefficients in $\displaystyle{A}$, (actually, an $\displaystyle{A}$-module). an element $\displaystyle{C\in \Omega _{k}}$ is called a $\displaystyle{k}$-chain. the boundary map defines a map between $\displaystyle{\Omega _{k}}$ and $\displaystyle{\Omega _{k-1}}$, and has the following core property
 
-$$\tag{1.14}
+$$
+\tag{1.14}
 \begin{align}
 \partial _{k-1}\circ\partial _{k} & =0
 \end{align}
@@ -173,7 +187,8 @@ we write $\displaystyle{\partial ^{2}=0}$ for simplicity. then $\displaystyle{(\
 
 we can define the $\displaystyle{n}$-th homology group of this chain complex
 
-$$\tag{1.15}
+$$
+\tag{1.15}
 \begin{align}
 H_{n}(\Delta,A) & \equiv \frac{\mathrm{Ker}(\partial _{n})}{\mathrm{Im}(\partial _{n+1})}
 \end{align}
@@ -189,15 +204,17 @@ then we will consider a generalization of the toric code model.
 
 consider putting a spin variable on the $\displaystyle{p}$-cells of $\displaystyle{\Delta}$ (as compared to the 1-cells in the toric code). more generally, let's put an $\displaystyle{N}$-dimensional Hilbert space $\displaystyle{\mathcal{H}_{N}\equiv \mathrm{span}\left\{\ket{n},n=0,\dots,N-1\right\}}$ on each $\displaystyle{p}$-cells, on which act the operators
 
-$$\tag{1.16}
+$$
+\tag{1.16}
 \begin{align}
-\mathbf{Z} &=\sum ^{N-1}_{n=0}\ket{n} \bra{n} \omega ^{n},\quad \mathbf{X}\equiv \sum ^{N-1}_{n=0}\ket{n} \bra{n+1} 
+\mathbf{Z} &=\sum ^{N-1}_{n=0}\ket{n} \bra{n} \omega ^{n},\quad \mathbf{X}\equiv \sum ^{N-1}_{n=0}\ket{n} \bra{n+1}
 \end{align}
 $$
 
 where $\displaystyle{\omega\equiv \zeta _{N}}$. $\displaystyle{\mathbf{Z}}$ and $\displaystyle{\mathbf{X}}$ satisfy the Heisenberg algebra $\displaystyle{\mathbf{XZ}=\omega \mathbf{ZX}}$. we have to choose the orientation $\displaystyle{\sigma}$ of each $\displaystyle{p}$-cell. we define $\displaystyle{\mathbf{Z}_{-\sigma}=\mathbf{Z}_{\sigma}^{-1}}$. we need to define the vicinity map $\displaystyle{v}$ (the dual map of $\displaystyle{\partial}$)
 
-$$\tag{1.17}
+$$
+\tag{1.17}
 \begin{align}
 v & :\Omega _{p}\to \Omega _{p+1} \\
 \sigma & \mapsto v(\sigma)\equiv\left\{\mu \in \Delta _{p+1}|\partial \mu=+\sigma+\dots\right\}
@@ -206,7 +223,8 @@ $$
 
 and we have
 
-$$\tag{1.18}
+$$
+\tag{1.18}
 \begin{align}
 \braket{ \sigma,v\mu }  & = \braket{ \partial \sigma ,v}
 \end{align}
@@ -214,7 +232,8 @@ $$
 
 consider the Hamiltonian
 
-$$\tag{1.19}
+$$
+\tag{1.19}
 \begin{align}
 H & =-J_{p-1}\sum _{s \in \Delta _{p-1}}A_{s}-J_{p+1}\sum _{\mu \in \Delta _{p+1}}B_{\mu}-\Gamma _{p}\sum _{\sigma \in \Delta _{p}}\mathbb{Z}_{\sigma}+\mathrm{h.c.}
 \end{align}
@@ -222,7 +241,8 @@ $$
 
 with
 
-$$\tag{1.20}
+$$
+\tag{1.20}
 \begin{align}
 A_{s} & \equiv \prod _{\sigma \in v(s)}\mathbf{Z}_{\sigma},\quad B_{\mu} =\prod _{\sigma \in \partial \mu} \mathbf{X}_{\sigma}
 \end{align}
@@ -230,7 +250,8 @@ $$
 
 one has the following algebra
 
-$$\tag{1.21}
+$$
+\tag{1.21}
 \begin{align}
 [A_{s},A_{s'}]=0, [B_{\mu},B_{\mu'}]=0, [A_{s},B_{\mu}]=0, \forall s,s'\in \Delta _{p-1}, \mu, \mu'\in \Delta _{p+1}
 \end{align}
@@ -238,7 +259,8 @@ $$
 
 for $\displaystyle{\Gamma _{p}=0}$ this Hamiltonian is exactly solvable, since we have
 
-$$\tag{1.22}
+$$
+\tag{1.22}
 \begin{align}
 B_{\mu}A_{s} & =\prod _{\sigma'\in \partial \mu}\mathbf{X}_{\sigma'}\prod _{\sigma \in v(s)}\mathbf{Z}_{\sigma}=A_{s}B_{\mu}\prod _{\sigma'\in \partial \mu}\prod _{\sigma \in vs}\omega ^{\braket{ \sigma,\sigma' } }=A_{s}B_{\mu}\omega ^{\braket{ v(s),\partial \mu } }=0
 \end{align}
@@ -246,7 +268,8 @@ $$
 
 as in the toric code, we require
 
-$$\tag{1.23}
+$$
+\tag{1.23}
 \begin{align}
 \sum _{\sigma \in v(s)} k _{\sigma}=0\mod N, \forall s\in \Delta _{p-1}
 \end{align}
@@ -301,9 +324,9 @@ the only mystery is the Bockstein $\displaystyle{\partial _{\star}}$. here is th
 the technique here is called the diagram chase.
 
 1. start with an element $\displaystyle{c\in \mathrm{Ker}\partial \subset \Omega _{p}(A_{1}/A_{2})}$. by exactness we have $\displaystyle{c=\pi(b), b\in \Omega _{p}(A_{1})}$.
-2. consider $\displaystyle{\partial b\in \Omega _{p-1}(A_{1})}$. by commutation we have $\displaystyle{\pi(\partial b)=\partial(\pi (b))=\partial c=0\implies \partial b\in \mathrm{Ker}(\pi :\Omega _{p-1}(A_{1})\to \Omega _{p-1}(A_{1}/A_{2}))}$
-3. by exactness, $\displaystyle{\partial b\in \mathrm{Im}(i:\Omega _{p-1}(A_{2})\to \Omega _{p-1}(A_{1}))\implies \partial b=i(c),a\in \Omega _{p-1}(A_{2})}$
-4. finally $\displaystyle{i(\partial (a))=\partial(i(a))=\partial ^{2}(b)=0\implies \partial a=0\implies a\in \mathrm{Ker}\partial \subset \Omega _{p-1}(A_{2})}$, define $\displaystyle{\partial _{\star}c=a}$
+1. consider $\displaystyle{\partial b\in \Omega _{p-1}(A_{1})}$. by commutation we have $\displaystyle{\pi(\partial b)=\partial(\pi (b))=\partial c=0\implies \partial b\in \mathrm{Ker}(\pi :\Omega _{p-1}(A_{1})\to \Omega _{p-1}(A_{1}/A_{2}))}$
+1. by exactness, $\displaystyle{\partial b\in \mathrm{Im}(i:\Omega _{p-1}(A_{2})\to \Omega _{p-1}(A_{1}))\implies \partial b=i(c),a\in \Omega _{p-1}(A_{2})}$
+1. finally $\displaystyle{i(\partial (a))=\partial(i(a))=\partial ^{2}(b)=0\implies \partial a=0\implies a\in \mathrm{Ker}\partial \subset \Omega _{p-1}(A_{2})}$, define $\displaystyle{\partial _{\star}c=a}$
 
 ---
 in this part we will prove some important theorems via diagram chasing
@@ -320,30 +343,30 @@ A' \arrow{r}{f'} & B' \arrow{r}{g'} & C' \arrow{r}{h'} & D' \arrow{r}{k'} & E'
 
 if $\displaystyle{\beta,\delta}$ are isomorphisms, $\displaystyle{\alpha}$ is surjective and $\displaystyle{\varepsilon}$ is injective, then $\displaystyle{\gamma}$ is also an isomorphism.
 
-* surjectivity
+- surjectivity
 1. consider $\displaystyle{c'\in C'}$.
-2. since $\displaystyle{\delta}$ is surjective, $\displaystyle{\exists d\in D \text{ s.t. }\delta(d)=h'(c')}$
-3. by commutation, $\displaystyle{k'(\delta(d))=\varepsilon(k(d))}$
-4. by exactness, $\displaystyle{\mathrm{Im}h'=\mathrm{Ker}k'\implies k'(h'(c'))=k'(\delta(d))=\varepsilon(k(d))=0}$
-5. since $\displaystyle{\varepsilon}$ is injective, $\displaystyle{k(d)=0\implies d\in \mathrm{Ker}(k)}$
-6. by exactness, $\displaystyle{d\in \mathrm{Im}(h)}$, that is $\displaystyle{\exists c\in C, \text{ s.t. }h(c)=d}$
-7. by commutation, $\displaystyle{h'(\gamma(c))=\delta(h(c))=\delta(d)=h'(c')\implies h'(\gamma(c)-c')=0}\implies \gamma(c)-c'\in \mathrm{Ker}h'$
-8. by exactness, $\displaystyle{\gamma(c)-c'\in \mathrm{Im}g'\implies \exists b'\in B',\text{ s.t. }g'(b')=\gamma(c)-c'}$
-9. since $\displaystyle{\beta}$ is surjective, $\displaystyle{\exists b\in B,\text{ s.t. }\beta(b)=b'}$
-10. by commutation $\displaystyle{g'(\beta(b))=\gamma(g(b))=g'(b')=\gamma(c)-c'}$
-11. since $\displaystyle{\gamma}$ is homomorphism, $\displaystyle{\gamma(c-g(b))=c'}$, thus $\displaystyle{\gamma}$ is surjective.
-* injective
+1. since $\displaystyle{\delta}$ is surjective, $\displaystyle{\exists d\in D \text{ s.t. }\delta(d)=h'(c')}$
+1. by commutation, $\displaystyle{k'(\delta(d))=\varepsilon(k(d))}$
+1. by exactness, $\displaystyle{\mathrm{Im}h'=\mathrm{Ker}k'\implies k'(h'(c'))=k'(\delta(d))=\varepsilon(k(d))=0}$
+1. since $\displaystyle{\varepsilon}$ is injective, $\displaystyle{k(d)=0\implies d\in \mathrm{Ker}(k)}$
+1. by exactness, $\displaystyle{d\in \mathrm{Im}(h)}$, that is $\displaystyle{\exists c\in C, \text{ s.t. }h(c)=d}$
+1. by commutation, $\displaystyle{h'(\gamma(c))=\delta(h(c))=\delta(d)=h'(c')\implies h'(\gamma(c)-c')=0}\implies \gamma(c)-c'\in \mathrm{Ker}h'$
+1. by exactness, $\displaystyle{\gamma(c)-c'\in \mathrm{Im}g'\implies \exists b'\in B',\text{ s.t. }g'(b')=\gamma(c)-c'}$
+1. since $\displaystyle{\beta}$ is surjective, $\displaystyle{\exists b\in B,\text{ s.t. }\beta(b)=b'}$
+1. by commutation $\displaystyle{g'(\beta(b))=\gamma(g(b))=g'(b')=\gamma(c)-c'}$
+1. since $\displaystyle{\gamma}$ is homomorphism, $\displaystyle{\gamma(c-g(b))=c'}$, thus $\displaystyle{\gamma}$ is surjective.
+- injective
 1. consider $\displaystyle{c\in C,\text{ s.t. }\gamma(c)=0}$ (we only need to verify that $\displaystyle{c=0}$)
-2. $\displaystyle{h'(\gamma(c))=0\implies \gamma(c)\in \mathrm{Ker}(h')}$
-3. by commutation, $\displaystyle{\delta(h(c))=h'(\gamma(c))=0}$
-4. since $\displaystyle{\delta}$ is injective, $\displaystyle{h(c)=0\implies c\in \mathrm{Ker}(h)}$
-5. by exactness $\displaystyle{c\in \mathrm{Im}(g)\implies \exists b\in B,\text{ s.t. }g(b)=c}$
-6. by commutation, $\displaystyle{\gamma(g(b))=\gamma(c)=0=g'(\beta(b))\implies \beta(b)\in \mathrm{Ker}(g')}$
-7. by exactness $\displaystyle{\beta(b)\in \mathrm{Im}(f')\implies \exists a'\in A',f'(a')=\beta(b)}$
-8. since $\displaystyle{\alpha}$ is surjective, $\displaystyle{\exists a\in A, \text{ s.t. }\alpha(a)=a'}$
-9. by commutation, $\displaystyle{f'(\alpha(a))=\beta(f(a))=f'(a')=\beta(b)=> \beta(b-f(a))=0}$
-10. since $\displaystyle{\beta}$ is injective $\displaystyle{b=f(a)}$
-11. then $\displaystyle{c=g(b)=g(f(a))=0}$ by exactness.
+1. $\displaystyle{h'(\gamma(c))=0\implies \gamma(c)\in \mathrm{Ker}(h')}$
+1. by commutation, $\displaystyle{\delta(h(c))=h'(\gamma(c))=0}$
+1. since $\displaystyle{\delta}$ is injective, $\displaystyle{h(c)=0\implies c\in \mathrm{Ker}(h)}$
+1. by exactness $\displaystyle{c\in \mathrm{Im}(g)\implies \exists b\in B,\text{ s.t. }g(b)=c}$
+1. by commutation, $\displaystyle{\gamma(g(b))=\gamma(c)=0=g'(\beta(b))\implies \beta(b)\in \mathrm{Ker}(g')}$
+1. by exactness $\displaystyle{\beta(b)\in \mathrm{Im}(f')\implies \exists a'\in A',f'(a')=\beta(b)}$
+1. since $\displaystyle{\alpha}$ is surjective, $\displaystyle{\exists a\in A, \text{ s.t. }\alpha(a)=a'}$
+1. by commutation, $\displaystyle{f'(\alpha(a))=\beta(f(a))=f'(a')=\beta(b)=> \beta(b-f(a))=0}$
+1. since $\displaystyle{\beta}$ is injective $\displaystyle{b=f(a)}$
+1. then $\displaystyle{c=g(b)=g(f(a))=0}$ by exactness.
 
 Short Five Lemma: consider the following commutative diagram of short exact sequences:
 
@@ -370,16 +393,16 @@ A' \arrow{r}{f'} & B' \arrow{r}{g'} & C' \arrow{r}{h'} & D'
 each line is exact. if $\displaystyle{\alpha}$ is surjective and $\displaystyle{\beta,\delta}$ are injective, then $\displaystyle{\gamma}$ is injective. dually, if $\displaystyle{\delta}$ is injective and $\displaystyle{\alpha,\gamma}$ are surjective, then $\displaystyle{\beta}$ is surjective.
 
 1. consider $\displaystyle{c\in C, \text{ s.t. }\gamma(c)=0}$
-2. $\displaystyle{h'(\gamma(c))=0\implies \gamma(c)\in \mathrm{Ker}(h')}$
-3. by commutation, $\displaystyle{\delta(h(c))=h'(\gamma(c))=0}$
-4. since $\displaystyle{\delta}$ is injective, $\displaystyle{h(c)=0\implies c\in \mathrm{Ker}(h)}$
-5. by exactness, $\displaystyle{c\in \mathrm{Im}(g)\implies \exists b\in B,\text{ s.t. }g(b)=c}$
-6. by commutation, $\displaystyle{g'(\beta(b))=\gamma(g(b))=\gamma(c)=0\implies \beta(b)\in \mathrm{Ker}(g')}$
-7. by exactness $\displaystyle{\beta(b)\in \mathrm{Im}(g')\implies \exists a'\in A', \text{ s.t. }f'(a')=\beta(b)}$
-8. since $\displaystyle{\alpha}$ is surjective, $\displaystyle{\exists a\in A, \text{ s.t. }\alpha(a)=a'}$
-9. by commutation, $\displaystyle{\beta(f(a))=f'(\alpha(a))=f'(a')=\beta(b)\implies \beta(b-f(a))=0}$
-10. since $\displaystyle{\beta}$ is injective, $\displaystyle{b-f(a)=0}$
-11. then $\displaystyle{c=g(b)=g(f(a))=0}$ by exactness
+1. $\displaystyle{h'(\gamma(c))=0\implies \gamma(c)\in \mathrm{Ker}(h')}$
+1. by commutation, $\displaystyle{\delta(h(c))=h'(\gamma(c))=0}$
+1. since $\displaystyle{\delta}$ is injective, $\displaystyle{h(c)=0\implies c\in \mathrm{Ker}(h)}$
+1. by exactness, $\displaystyle{c\in \mathrm{Im}(g)\implies \exists b\in B,\text{ s.t. }g(b)=c}$
+1. by commutation, $\displaystyle{g'(\beta(b))=\gamma(g(b))=\gamma(c)=0\implies \beta(b)\in \mathrm{Ker}(g')}$
+1. by exactness $\displaystyle{\beta(b)\in \mathrm{Im}(g')\implies \exists a'\in A', \text{ s.t. }f'(a')=\beta(b)}$
+1. since $\displaystyle{\alpha}$ is surjective, $\displaystyle{\exists a\in A, \text{ s.t. }\alpha(a)=a'}$
+1. by commutation, $\displaystyle{\beta(f(a))=f'(\alpha(a))=f'(a')=\beta(b)\implies \beta(b-f(a))=0}$
+1. since $\displaystyle{\beta}$ is injective, $\displaystyle{b-f(a)=0}$
+1. then $\displaystyle{c=g(b)=g(f(a))=0}$ by exactness
 
 sharp 3x3 Lemma
 
@@ -396,13 +419,11 @@ sharp 3x3 Lemma
 
 every columns are exact and the lower two lines are exact, then the first line is also exact
 
-* $\displaystyle{g}$ is surjective
+- $\displaystyle{g}$ is surjective
 
-* $\displaystyle{f}$ is injective
+- $\displaystyle{f}$ is injective
 
-* $\displaystyle{\mathrm{Ker}g=\mathrm{Im}f}$
-
-
+- $\displaystyle{\mathrm{Ker}g=\mathrm{Im}f}$
 
 salamander lemma provides a universal description of above theorems.
 
@@ -410,13 +431,14 @@ salamander lemma provides a universal description of above theorems.
 
 back to our main discussion.  any discrete Abelian group is of the form
 
-$$\tag{1.24}
+$$
+\tag{1.24}
 \begin{align}
 A=\mathbb{Z}^{r}\oplus \mathbb{Z}_{p_{1}}\oplus \cdots \oplus \mathbb{Z}_{p_{k}}\oplus\dots
 \end{align}
 $$
 
-**universal coefficients theorem** states that taking $\displaystyle{A=\mathbb{Z}}$ in the homology contains all the information we would get by choosing other Abelian groups. 
+**universal coefficients theorem** states that taking $\displaystyle{A=\mathbb{Z}}$ in the homology contains all the information we would get by choosing other Abelian groups.
 
 ## duality
 

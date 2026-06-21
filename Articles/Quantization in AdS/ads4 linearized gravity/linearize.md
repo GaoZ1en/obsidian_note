@@ -10,19 +10,27 @@ summary: "Sets up global AdS4, the perturbative Einstein equation, de Donder and
 
 The bulk action is
 
-$$S_{\mathrm{bulk}}=\frac{1}{16\pi G_{4}}\int_{M}\mathrm{d}^{4}x\sqrt{-g}\,(R+6).$$
+$$\begin{align}
+S_{\mathrm{bulk}}=\frac{1}{16\pi G_{4}}\int_{M}\mathrm{d}^{4}x\sqrt{-g}\,(R+6).
+\end{align}$$
 
 The equation of motion is
 
-$$R_{\mu\nu}-\frac{1}{2}Rg_{\mu\nu}-3g_{\mu\nu}=0.$$
+$$\begin{align}
+R_{\mu\nu}-\frac{1}{2}Rg_{\mu\nu}-3g_{\mu\nu}=0.
+\end{align}$$
 
 Use global AdS$_4$ coordinates
 
-$$\mathrm{d}s^{2}=-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\theta^{2}+r^{2}\sin^{2}\theta\,\mathrm{d}\phi^{2}.$$
+$$\begin{align}
+\mathrm{d}s^{2}=-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\theta^{2}+r^{2}\sin^{2}\theta\,\mathrm{d}\phi^{2}.
+\end{align}$$
 
 The determinant and inverse metric are
 
-$$\sqrt{-g^{(0)}}=r^{2}\sin\theta,\qquad {g^{(0)}}^{\mu\nu}=\mathrm{diag}\left(-\frac{1}{1+r^{2}},1+r^{2},\frac{1}{r^{2}},\frac{1}{r^{2}\sin^{2}\theta}\right).$$
+$$\begin{align}
+\sqrt{-g^{(0)}}=r^{2}\sin\theta,\qquad {g^{(0)}}^{\mu\nu}=\mathrm{diag}\left(-\frac{1}{1+r^{2}},1+r^{2},\frac{1}{r^{2}},\frac{1}{r^{2}\sin^{2}\theta}\right).
+\end{align}$$
 
 The non-vanishing Christoffel symbols are
 
@@ -50,7 +58,9 @@ R^{(0)}&=-12.
 
 Define the metric perturbation by
 
-$$g_{\mu\nu}=g^{(0)}_{\mu\nu}+h_{\mu\nu}.$$
+$$\begin{align}
+g_{\mu\nu}=g^{(0)}_{\mu\nu}+h_{\mu\nu}.
+\end{align}$$
 
 The inverse metric and volume element are
 
@@ -63,7 +73,9 @@ where $h={g^{(0)}}^{\mu\nu}h_{\mu\nu}$.
 
 The linearized connection is
 
-$$\delta\Gamma^{\rho}_{~\mu\nu}=\frac{1}{2}{g^{(0)}}^{\rho\sigma}\left(\nabla^{(0)}_{\mu}h_{\sigma\nu}+\nabla^{(0)}_{\nu}h_{\mu\sigma}-\nabla^{(0)}_{\sigma}h_{\mu\nu}\right).$$
+$$\begin{align}
+\delta\Gamma^{\rho}_{~\mu\nu}=\frac{1}{2}{g^{(0)}}^{\rho\sigma}\left(\nabla^{(0)}_{\mu}h_{\sigma\nu}+\nabla^{(0)}_{\nu}h_{\mu\sigma}-\nabla^{(0)}_{\sigma}h_{\mu\nu}\right).
+\end{align}$$
 
 Before using the AdS$_4$ curvature identities, the linearized Ricci tensor is
 
@@ -84,7 +96,9 @@ $$\begin{align}
 
 The linearized Einstein tensor with cosmological term is
 
-$$E_{\mu\nu}:=\delta R_{\mu\nu}-\frac{1}{2}g^{(0)}_{\mu\nu}\delta R-\frac{1}{2}R^{(0)}h_{\mu\nu}-3h_{\mu\nu}.$$
+$$\begin{align}
+E_{\mu\nu}:=\delta R_{\mu\nu}-\frac{1}{2}g^{(0)}_{\mu\nu}\delta R-\frac{1}{2}R^{(0)}h_{\mu\nu}-3h_{\mu\nu}.
+\end{align}$$
 
 Equivalently,
 
@@ -96,19 +110,27 @@ E_{\mu\nu}=&-h_{\mu\nu}-\frac{1}{2}g^{(0)}_{\mu\nu}h-\frac{1}{2}\nabla^{(0)2}h_{
 
 The equation of motion is
 
-$$E_{\mu\nu}=0.$$
+$$\begin{align}
+E_{\mu\nu}=0.
+\end{align}$$
 
 Introduce the de Donder functional
 
-$$B_{\nu}:=\nabla^{(0)}_{\rho}h_{\nu}^{~\rho}-\frac{1}{2}\nabla^{(0)}_{\nu}h.$$
+$$\begin{align}
+B_{\nu}:=\nabla^{(0)}_{\rho}h_{\nu}^{~\rho}-\frac{1}{2}\nabla^{(0)}_{\nu}h.
+\end{align}$$
 
 Then the same equation can be written as
 
-$$E_{\mu\nu}=-h_{\mu\nu}-\frac{1}{2}g^{(0)}_{\mu\nu}h-\frac{1}{2}\nabla^{(0)2}h_{\mu\nu}+\frac{1}{2}g^{(0)}_{\mu\nu}\nabla^{(0)2}h-\frac{1}{2}g^{(0)}_{\mu\nu}\nabla^{(0)}_{\rho}\nabla^{(0)}_{\sigma}h^{\rho\sigma}+\nabla^{(0)}_{(\mu}B_{\nu)}.$$
+$$\begin{align}
+E_{\mu\nu}=-h_{\mu\nu}-\frac{1}{2}g^{(0)}_{\mu\nu}h-\frac{1}{2}\nabla^{(0)2}h_{\mu\nu}+\frac{1}{2}g^{(0)}_{\mu\nu}\nabla^{(0)2}h-\frac{1}{2}g^{(0)}_{\mu\nu}\nabla^{(0)}_{\rho}\nabla^{(0)}_{\sigma}h^{\rho\sigma}+\nabla^{(0)}_{(\mu}B_{\nu)}.
+\end{align}$$
 
 Taking the trace gives
 
-$$-3h+\nabla^{(0)2}h-\nabla^{(0)}_{\rho}\nabla^{(0)}_{\sigma}h^{\rho\sigma}=0.$$
+$$\begin{align}
+-3h+\nabla^{(0)2}h-\nabla^{(0)}_{\rho}\nabla^{(0)}_{\sigma}h^{\rho\sigma}=0.
+\end{align}$$
 
 ## TT gauge
 
@@ -128,7 +150,9 @@ $$\begin{align}
 
 Expand the Einstein-Hilbert density directly:
 
-$$\sqrt{-g}(R+6)=\sqrt{-g^{(0)}}\left(-6+\mathcal{L}_{1}+\mathcal{L}_{2}+\mathcal{O}(h^{3})\right),\qquad \mathcal{L}_{1}=\nabla^{(0)}_{\mu}\nabla^{(0)}_{\nu}h^{\mu\nu}-\nabla^{(0)2}h.$$
+$$\begin{align}
+\sqrt{-g}(R+6)=\sqrt{-g^{(0)}}\left(-6+\mathcal{L}_{1}+\mathcal{L}_{2}+\mathcal{O}(h^{3})\right),\qquad \mathcal{L}_{1}=\nabla^{(0)}_{\mu}\nabla^{(0)}_{\nu}h^{\mu\nu}-\nabla^{(0)2}h.
+\end{align}$$
 
 The quadratic density is
 
@@ -141,7 +165,9 @@ $$\begin{align}
 
 The quadratic action is
 
-$$S_{2}=\frac{1}{16\pi G_{4}}\int_{M}\mathrm{d}^{4}x\sqrt{-g^{(0)}}\,\mathcal{L}_{2}.$$
+$$\begin{align}
+S_{2}=\frac{1}{16\pi G_{4}}\int_{M}\mathrm{d}^{4}x\sqrt{-g^{(0)}}\,\mathcal{L}_{2}.
+\end{align}$$
 
 The first variation is
 
@@ -174,11 +200,15 @@ $$\begin{align}
 
 On a large-radius cutoff surface $\Gamma_{R}$ with coordinates $(t,\theta,\phi)$, the induced metric is
 
-$$\gamma^{(0)}_{ab}\mathrm{d}x^{a}\mathrm{d}x^{b}=-(1+R^{2})\mathrm{d}t^{2}+R^{2}\mathrm{d}\theta^{2}+R^{2}\sin^{2}\theta\,\mathrm{d}\phi^{2}.$$
+$$\begin{align}
+\gamma^{(0)}_{ab}\mathrm{d}x^{a}\mathrm{d}x^{b}=-(1+R^{2})\mathrm{d}t^{2}+R^{2}\mathrm{d}\theta^{2}+R^{2}\sin^{2}\theta\,\mathrm{d}\phi^{2}.
+\end{align}$$
 
 The outward unit normal is
 
-$$n_{\mu}=\left(0,\frac{1}{\sqrt{1+r^{2}}},0,0\right),\qquad n^{\mu}=\left(0,\sqrt{1+r^{2}},0,0\right).$$
+$$\begin{align}
+n_{\mu}=\left(0,\frac{1}{\sqrt{1+r^{2}}},0,0\right),\qquad n^{\mu}=\left(0,\sqrt{1+r^{2}},0,0\right).
+\end{align}$$
 
 The background extrinsic curvature components are
 
@@ -190,6 +220,8 @@ K^{(0)}_{\phi\phi}&=r\sqrt{1+r^{2}}\sin^{2}\theta.
 
 The trace is
 
-$$K^{(0)}=\frac{2+3r^{2}}{r\sqrt{1+r^{2}}}=3+\frac{1}{2r^{2}}+\mathcal{O}(r^{-4}).$$
+$$\begin{align}
+K^{(0)}=\frac{2+3r^{2}}{r\sqrt{1+r^{2}}}=3+\frac{1}{2r^{2}}+\mathcal{O}(r^{-4}).
+\end{align}$$
 
 For the Dirichlet variational problem and holographic renormalization, the AdS$_4$ cutoff action uses the GHY term together with the standard three-dimensional boundary counterterms. This differs from the AdS$_3$ case because the boundary curvature counterterm already contributes at leading finite order.

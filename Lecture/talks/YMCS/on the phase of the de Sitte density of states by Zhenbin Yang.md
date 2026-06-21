@@ -11,7 +11,7 @@ $$\begin{align}
 I & =\int \phi _{\mu \nu}(-\hat{\nabla} ^{2}+2)\phi _{\mu \nu}-\frac{\left( 1-\frac{2}{D} \right)}{2}h(-\hat{\nabla}^{2}-2(D-1))h+\text{gauge fixing}
 \end{align}$$
 
-where $\displaystyle{h}$ is the conformal mode and $\displaystyle{\phi _{\mu \nu}}$ is the traceless part of gravitational fluctuation. the coupling constant for $\displaystyle{h}$ is negative when $\displaystyle{D>2}$, which leads to a wrong sign Gaussian and the instability of the $\displaystyle{h}$ modes. the partition function will gives a infinite $\displaystyle{i}$ factors, which prevents a state-counting interpretation. 
+where $\displaystyle{h}$ is the conformal mode and $\displaystyle{\phi _{\mu \nu}}$ is the traceless part of gravitational fluctuation. the coupling constant for $\displaystyle{h}$ is negative when $\displaystyle{D>2}$, which leads to a wrong sign Gaussian and the instability of the $\displaystyle{h}$ modes. the partition function will gives a infinite $\displaystyle{i}$ factors, which prevents a state-counting interpretation.
 
 by introducing an observer, [[2412.14014]] Maldecena cancel mostly the phase of partition fuction. see 2412.14014 for more info. the final phase will be
 
@@ -64,5 +64,4 @@ I & =\frac{1}{4G}\int \mathrm{d}^{2}x\sqrt{ \hat{g} }(\varphi,\omega) \mathcal{D
 \end{pmatrix}
 \end{align}$$
 
-(the $\displaystyle{\mathcal{D}}$ may be wrong). numerical analysis shows the phase of one-loop determinant meets the prediction by Maldecena. 
-
+(the $\displaystyle{\mathcal{D}}$ may be wrong). numerical analysis shows the phase of one-loop determinant meets the prediction by Maldecena.

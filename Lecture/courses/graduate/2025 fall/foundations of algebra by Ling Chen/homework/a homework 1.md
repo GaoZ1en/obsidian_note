@@ -1,6 +1,6 @@
 # problem 1
 
-let $\displaystyle{G=\left\{(a,b)|a,b\in \mathbb{R},a\neq 0\right\}}$. define $\displaystyle{\cdot:G\times G\to G,(a,b)(c,d)=(ac,ad+b)}$. prove that $\displaystyle{(G,\cdot)}$ is a group. 
+let $\displaystyle{G=\left\{(a,b)|a,b\in \mathbb{R},a\neq 0\right\}}$. define $\displaystyle{\cdot:G\times G\to G,(a,b)(c,d)=(ac,ad+b)}$. prove that $\displaystyle{(G,\cdot)}$ is a group.
 
 *sol*.
 
@@ -12,7 +12,7 @@ thus $\displaystyle{(G,\cdot)}$ is a group.
 
 # problem 2
 
-suppose $\displaystyle{(G,\cdot)}$ is a semi-group. prove that iff $\displaystyle{\forall a,b\in G}$, $\displaystyle{ax=b}$ and $\displaystyle{ya=b}$ is solvable in $\displaystyle{G}$, $\displaystyle{(G,\cdot )}$ is a group. 
+suppose $\displaystyle{(G,\cdot)}$ is a semi-group. prove that iff $\displaystyle{\forall a,b\in G}$, $\displaystyle{ax=b}$ and $\displaystyle{ya=b}$ is solvable in $\displaystyle{G}$, $\displaystyle{(G,\cdot )}$ is a group.
 
 *sol*.
 $\displaystyle{\implies}$. $\displaystyle{xa=a}$, denote the solution as $\displaystyle{e}$. then $\displaystyle{\forall b\in G}$, consider the equation $\displaystyle{ay=b}$, then $\displaystyle{eb=eay=ay=b}$, $\displaystyle{e}$ is a left unit of $\displaystyle{G}$. since $\displaystyle{\forall b\in G,yb=e}$ is solvable$\displaystyle{\implies b}$ has a left inverse. then $\displaystyle{(G,\cdot)}$ is a group.

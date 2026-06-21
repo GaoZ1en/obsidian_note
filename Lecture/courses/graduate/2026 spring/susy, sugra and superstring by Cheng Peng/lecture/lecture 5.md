@@ -113,4 +113,3 @@ where the $\displaystyle{a}$ is the normal ordering constant, which is given by
 $$\begin{align}
 a & =\frac{D-2}{24}
 \end{align}$$
-

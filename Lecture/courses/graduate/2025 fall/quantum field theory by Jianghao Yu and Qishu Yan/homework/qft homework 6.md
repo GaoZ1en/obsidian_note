@@ -55,7 +55,6 @@ $$\begin{align}
 C\bar{\psi}\psi C & =C\bar{\psi}C C\psi C
 \end{align}$$
 
-
 $$\begin{align}
 \gamma ^{\mu}\gamma ^{\nu}+\gamma ^{\nu}\gamma ^{\mu} & =2g^{\mu \nu}
 \end{align}$$
@@ -74,7 +73,6 @@ C\psi ^{\dagger}C & =(C\psi C)^{^{\dagger}} \\
 \end{align}$$
 
 in the Dirac representation, the gamma matrices are given by
-
 
 so we have
 

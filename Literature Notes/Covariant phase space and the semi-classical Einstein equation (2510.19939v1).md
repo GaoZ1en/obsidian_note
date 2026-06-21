@@ -94,7 +94,7 @@ using standard properties of modular flow, it is easy to check that
 
 $$\begin{align}
 \braket{ \hat{\psi}_{s}|a|\hat{\psi}_{s} }  & = \braket{ \psi|a|\psi }  \\
-\braket{ \hat{\psi}_{s}|a'|\hat{\psi}_{s} }  & = \braket{ \psi|\Delta ^{-is}_{\Omega}a'\Delta ^{is}_{\Omega}|\psi } 
+\braket{ \hat{\psi}_{s}|a'|\hat{\psi}_{s} }  & = \braket{ \psi|\Delta ^{-is}_{\Omega}a'\Delta ^{is}_{\Omega}|\psi }
 \end{align}$$
 
 if $\displaystyle{\psi}$ is stationary at late times, i.e., $\displaystyle{\lim_{ s \to \infty }\braket{ \psi|\Delta _{\Omega} ^{-is}a'\Omega ^{is}_{\Omega}|\psi }=\omega'(a)}$. then the purification $\displaystyle{\hat{\psi}_{s}}$ approaches the state $\displaystyle{\Omega}$ on $\displaystyle{D(\bar{r})}$ as $\displaystyle{s\to \infty}$. with this purification, we can define the subregion Berry connection as
@@ -118,7 +118,7 @@ $$\begin{align}
 where the second term of RHS
 
 $$\begin{align}
--X_{\xi}\cdot \mathcal{F}^{r} & =\int _{r}\varepsilon _{\partial M}\tau ^{\mu}\xi ^{\nu}\braket{ T_{\mu \nu} } 
+-X_{\xi}\cdot \mathcal{F}^{r} & =\int _{r}\varepsilon _{\partial M}\tau ^{\mu}\xi ^{\nu}\braket{ T_{\mu \nu} }
 \end{align}$$
 
 expand the whole equality in $\displaystyle{G}$, we get at leading order
@@ -134,4 +134,3 @@ S_{\mathrm{CFT}} ^{(1)} & =\frac{\mathcal{A}^{(1)}}{4G}+S_{\mathrm{bulk}} ^{(1)}
 \end{align}$$
 
 which is the *FLM formula*(?).
-

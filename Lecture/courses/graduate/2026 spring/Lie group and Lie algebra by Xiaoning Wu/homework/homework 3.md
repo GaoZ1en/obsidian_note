@@ -8,9 +8,9 @@ summary: "Derives the invariant measure of SU(2) from the parametrized matrix A(
 
 starting from the following parametrized matrix of $\mathrm{SU}(2)$:
 
-$$
+$$\begin{align}
 A(\vec{n},\theta) = \cos \frac{\theta}{2} - i\vec{\sigma}\cdot \vec{n}\sin \frac{\theta}{2},
-$$
+\end{align}$$
 
 derive the invariant measure.
 
@@ -41,9 +41,9 @@ then
 
 using $(\vec{a}\cdot \vec{\sigma})(\vec{b}\cdot \vec{\sigma}) = \vec{a}\cdot \vec{b} + i(\vec{a}\times \vec{b})\cdot \vec{\sigma}$, we have
 
-$$
+$$\begin{align}
 A^{-1} \mathrm{d}A =-i\vec{\sigma}\cdot \left[\frac{1}{2}\vec{n}\,\mathrm{d}\theta + \sin \frac{\theta}{2}\cos \frac{\theta}{2}\,\mathrm{d}\vec{n} - \sin ^2\frac{\theta}{2}(\vec{n}\times \mathrm{d}\vec{n})\right].
-$$
+\end{align}$$
 
 for
 

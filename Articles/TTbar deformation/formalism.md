@@ -45,17 +45,17 @@ $$\begin{align}
  & =\int _{\partial \Sigma}\alpha _{\lambda}
 \end{align}$$
 
-by imposing appropriate boundary conditions or adding suitable boundary terms, we can make $\displaystyle{\int _{\partial \Sigma}\alpha _{\lambda}=0}$, which means the symplectic form is invariant along the flow of $\lambda$, i.e., $\partial_\lambda \Omega_\lambda = 0$. 
+by imposing appropriate boundary conditions or adding suitable boundary terms, we can make $\displaystyle{\int _{\partial \Sigma}\alpha _{\lambda}=0}$, which means the symplectic form is invariant along the flow of $\lambda$, i.e., $\partial_\lambda \Omega_\lambda = 0$.
 
 # flow of symmetries, conserved charges and their algebra
 
 suppose we have a symmetry, which can be characterized by a vector of configuration space
 
 $$\begin{align}
-X_{\xi _{\lambda}} & = \int \mathrm{d}^{2}x\sqrt{ -g }\delta _{\xi _{\lambda}}\phi \frac{\delta}{\delta \phi} 
+X_{\xi _{\lambda}} & = \int \mathrm{d}^{2}x\sqrt{ -g }\delta _{\xi _{\lambda}}\phi \frac{\delta}{\delta \phi}
 \end{align}$$
 
-act on the action, 
+act on the action,
 
 $$\begin{align}
 X_{\xi _{\lambda}}\cdot \delta S_{\lambda} & =\alpha _{\xi _{\lambda}}|_{\Sigma _{f}-\Sigma _{i}}
@@ -112,4 +112,3 @@ $$\begin{align}
 \end{align}$$
 
 which means the algebra of Noether charges is also deformed along the flow of $\lambda$.
-

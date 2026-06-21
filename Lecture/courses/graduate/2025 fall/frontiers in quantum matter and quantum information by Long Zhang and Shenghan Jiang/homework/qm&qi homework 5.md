@@ -57,7 +57,7 @@ $$\begin{align}
  & =\frac{1}{\sqrt{8}}\left( \ket{1111111}+\ket{0101010}+\ket{1001100}+\ket{1110000}+\ket{0011001}+\ket{0100101}+\ket{1000011}+\ket{0010110} \right)
 \end{align}$$
 
-here $C$ is the classical $[7,4,3]$ hamming code, $C_{\text{even}}$ the subset of even-weight codewords, $C_{\text{odd}}=C_{\text{even}}+1111111$. 
+here $C$ is the classical $[7,4,3]$ hamming code, $C_{\text{even}}$ the subset of even-weight codewords, $C_{\text{odd}}=C_{\text{even}}+1111111$.
 
 in general, for a CSS code with check matrix $\displaystyle{H=\mathrm{diag}(H_{X},H_{Z})}$, we can construct the logical qubit states as
 
@@ -110,11 +110,11 @@ to show that this code can correct any 1-qubit error, we need to verify that any
 now we will verify the QEC condition. let $E_a,E_b$ be arbitrary single-qubit errors from the set $\{I,X,Y,Z\}$ acting on any of the 5 qubits. we have the following cases:
 
 1. both $E_a,E_b$ are identity: trivial, $P E_a^{\dagger} E_b P = P$.
-2. one of $E_a,E_b$ is identity, the other is a single-qubit Pauli error: since single-qubit Pauli errors map code space to orthogonal error spaces, we have $P E_a^{\dagger} E_b P = 0$.
-3. both $E_a,E_b$ are single-qubit Pauli errors:
+1. one of $E_a,E_b$ is identity, the other is a single-qubit Pauli error: since single-qubit Pauli errors map code space to orthogonal error spaces, we have $P E_a^{\dagger} E_b P = 0$.
+1. both $E_a,E_b$ are single-qubit Pauli errors:
 	1. if they act on different qubits, then $E_a^{\dagger} E_b$ is a two-qubit error, which maps code space to an orthogonal error space, so $P E_a^{\dagger} E_b P = 0$.
-	2. if they act on the same qubit but are different Pauli operators, then $E_a^{\dagger} E_b$ is proportional to a third Pauli operator on that qubit, which is a single-qubit error and maps code space to an orthogonal error space, so $P E_a^{\dagger} E_b P = 0$.
-	3. if they are the same Pauli operator on the same qubit, then $E_a^{\dagger} E_b = I$, so $P E_a^{\dagger} E_b P = P$.
+	1. if they act on the same qubit but are different Pauli operators, then $E_a^{\dagger} E_b$ is proportional to a third Pauli operator on that qubit, which is a single-qubit error and maps code space to an orthogonal error space, so $P E_a^{\dagger} E_b P = 0$.
+	1. if they are the same Pauli operator on the same qubit, then $E_a^{\dagger} E_b = I$, so $P E_a^{\dagger} E_b P = P$.
 
 which verifies the QEC condition
 

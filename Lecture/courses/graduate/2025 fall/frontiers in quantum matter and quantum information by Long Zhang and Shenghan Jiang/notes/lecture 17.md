@@ -66,7 +66,7 @@ $$\begin{align}
 
 which form the Pauli algebra for 4 logical qubits. the code distance is $\displaystyle{4}$. boundary?
 
-the Steane's code is actually a kind of planar color code. 
+the Steane's code is actually a kind of planar color code.
 
 3d color code. the construction is similar, but with 4 colors, and the simpliest 3d color code realized universal quantum gate transversally for logical qubits. it is good.
 
@@ -76,9 +76,6 @@ anyon. can only appear in 2+1-dim spacetime. world line braiding.
 
 anyon can be viewed as a bound state of electric particle and magnetic flux. topological spin and anyon statistics, somehow spin-statistics theorem.
 
-toric code, e-particle and m-particle and their bound state. Abelian anyon, FQHE, Laughling states, double fermion model. 
+toric code, e-particle and m-particle and their bound state. Abelian anyon, FQHE, Laughling states, double fermion model.
 
 Abelian anyon cannot be used to do topological quantum computing. non-Abelian anyon...
-
-
-

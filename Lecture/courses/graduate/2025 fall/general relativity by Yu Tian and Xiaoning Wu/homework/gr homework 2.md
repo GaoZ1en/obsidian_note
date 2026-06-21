@@ -16,7 +16,7 @@ prove that $\displaystyle{S}$ satisfies the transformation law of $\displaystyle
 
 *sol*.
 
-notice that under $\displaystyle{x\mapsto x'}$, 
+notice that under $\displaystyle{x\mapsto x'}$,
 
 $$\begin{align}
 S^{\mu_{2}'\dots \mu _{r}'}_{~~~~~~~~~~~~\nu _{2}\dots \nu _{s}} & =T^{\alpha'\mu_{2}'\dots \mu _{r}'}_{~~~~~~~~~~~~~~~~\alpha' \nu _{2}'\dots \nu _{s}'} \\
@@ -34,7 +34,7 @@ $$\begin{align}
 A^{\mu} & =B^{\mu}_{~\alpha}C^{\alpha}, & \forall p \in U
 \end{align}$$
 
-prove that if $\displaystyle{A,B\neq 0}$ and $\displaystyle{B}$ is inversible at every point in $\displaystyle{U}$, $\displaystyle{C}$ is a contravariant vector. 
+prove that if $\displaystyle{A,B\neq 0}$ and $\displaystyle{B}$ is inversible at every point in $\displaystyle{U}$, $\displaystyle{C}$ is a contravariant vector.
 
 *sol*. since $\displaystyle{B}$ is inversible, denote the inverse $\displaystyle{B^{\mu}_{~\alpha}}$ as $\displaystyle{D_{\mu}^{~\alpha}}$, which satisfies $\displaystyle{D_{\mu}^{~\beta}B^{\mu}_{\alpha}=\delta ^{\beta}_{\alpha}}$. then
 
@@ -78,4 +78,3 @@ D_{\mu'}B^{\lambda'} & =\partial _{\mu'}B^{\lambda'}+\Gamma ^{\lambda'}_{~\mu'\n
  & =\frac{\partial x^{\mu}}{\partial x^{\mu'}} \frac{\partial x^{\lambda'}}{\partial x^{\lambda}}\left(\partial _{\mu}B^{\lambda}+\Gamma ^{\lambda}_{~\mu \nu}B^{\nu}\right) \\
  & =\frac{\partial x^{\mu}}{\partial x^{\mu'}} \frac{\partial x^{\lambda'}}{\partial x^{\lambda}}D_{\mu}B^{\lambda}
 \end{align}$$
-

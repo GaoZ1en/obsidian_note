@@ -1,4 +1,3 @@
-
 in general we want to find a linearized/effective theory for a general field theory
 
 $$\begin{align}
@@ -48,4 +47,3 @@ thus the linearized theory is governed by the quadratic action
 $$\begin{align}
 S^{(2)}[\delta \phi] & =\frac{1}{2}\int \left. \frac{\delta ^{2}\mathbf{L}}{\delta \phi ^{2}} \right|_{\phi ^{(0)}}(\delta \phi)^{2}
 \end{align}$$
-

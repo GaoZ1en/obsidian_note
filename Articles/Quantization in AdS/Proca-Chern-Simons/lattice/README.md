@@ -66,9 +66,9 @@ python proca_1p1_lattice.py \
 
 The Metropolis estimator samples the Euclidean field variables directly, so it should be compared with `path_coordinate`, not with `canonical_coordinate`. The canonical correlator differs from the path-integral correlator by the ultralocal $\tau\tau$ contact term
 
-$$
+$$\begin{align}
 \frac{1}{m^2 \Delta \tau \Delta x}\delta_{\tau,0}\delta_{x,0}.
-$$
+\end{align}$$
 
 For `m=1`, `L=beta=1`, and `N=32`, this contact coefficient is `1024`; therefore the $\tau\tau$ correlator at the origin is expected to be much closer to the path-integral result than to the canonical result.
 
@@ -82,15 +82,15 @@ Output
 Notes
 - The lattice kernel is the naive discretization of
 
-$$
+$$\begin{align}
 K_{\mu\nu}(p)=\left(m^{2}+\hat{p}^{2}\right)\delta_{\mu\nu}-\hat{p}_{\mu}\hat{p}_{\nu},
-$$
+\end{align}$$
 
 with symmetric lattice momenta $\hat{p}_{\mu}=\frac{2}{a_{\mu}}\sin\frac{k_{\mu}}{2}$.
 - In momentum space the script uses
 
-$$
+$$\begin{align}
 G_{\mathrm{can};\tau\tau}(k)=G_{\mathrm{path};\tau\tau}(k)-\frac{1}{m^{2}},
-$$
+\end{align}$$
 
 so the coordinate-space difference is exactly the lattice contact term at the origin.

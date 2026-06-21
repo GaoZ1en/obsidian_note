@@ -2,29 +2,35 @@ some details about lecture 6...
 
 what 2-cochain 2-cocycle??? what's going on here?
 
-the main problem here is that how many SPT phases are there in 1+1d with symmetry group $\displaystyle{G}$. the answer is given by the second group cohomology $\displaystyle{H^{2}(G,U(1))}$. 
+the main problem here is that how many SPT phases are there in 1+1d with symmetry group $\displaystyle{G}$. the answer is given by the second group cohomology $\displaystyle{H^{2}(G,U(1))}$.
 
 why $H^{2}(G,U(1))$?
 
 - setup: 1+1d bosonic, gapped, short-range entangled phases with on-site unitary symmetry $G$ and no intrinsic topological order. boundaries (0+1d edges) can carry projective representations of $G$.
 
 - algebraic classification via group cohomology:
-	1) 2-cochain: a function $\omega: G\times G\to U(1)$.
-	2) 2-cocycle: a 2-cochain obeying the associativity (cocycle) condition
-		 $$
-		 \omega(g,h)\,\omega(gh,k)=\omega(h,k)\,\omega(g,hk)\quad \forall g,h,k\in G.
-		 $$
-	3) coboundary: given a 1-cochain $\alpha:G\to U(1)$, its (trivial) 2-cocycle is
-		 $$
-		 (\delta\alpha)(g,h)=\frac{\alpha(g)\,\alpha(h)}{\alpha(gh)}.
-		 $$
-	4) group $H^{2}(G,U(1))$ is 2-cocycles modulo coboundaries: distinct cohomology classes correspond to inequivalent projective multipliers.
+	1. 2-cochain: a function $\omega: G\times G\to U(1)$.
+	1. 2-cocycle: a 2-cochain obeying the associativity (cocycle) condition
+
+$$\begin{align}
+\omega(g,h)\,\omega(gh,k)=\omega(h,k)\,\omega(g,hk)\quad \forall g,h,k\in G.
+\end{align}$$
+
+	1. coboundary: given a 1-cochain $\alpha:G\to U(1)$, its (trivial) 2-cocycle is
+
+$$\begin{align}
+(\delta\alpha)(g,h)=\frac{\alpha(g)\,\alpha(h)}{\alpha(gh)}.
+\end{align}$$
+
+	1. group $H^{2}(G,U(1))$ is 2-cocycles modulo coboundaries: distinct cohomology classes correspond to inequivalent projective multipliers.
 
 - physical meaning (edge/projective rep viewpoint):
 	- a gapped SPT bulk with symmetry $G$ can host an edge Hilbert space carrying a projective representation $\hat U(g)$:
-		$$
-		\hat U(g)\,\hat U(h)=\omega(g,h)\,\hat U(gh),
-		$$
+
+$$\begin{align}
+\hat U(g)\,\hat U(h)=\omega(g,h)\,\hat U(gh),
+\end{align}$$
+
 		where $\omega$ is a 2-cocycle. Rephasing $\hat U(g)\to \alpha(g)\hat U(g)$ changes $\omega\to \omega\,\delta\alpha$, i.e. the cohomology class $[\omega]$ is invariant. Different $[\omega]\in H^{2}(G,U(1))$ label distinct SPTs that cannot be adiabatically connected without breaking $G$ or closing the gap.
 
 - physical meaning (bulk path-integral viewpoint):
@@ -32,9 +38,11 @@ why $H^{2}(G,U(1))$?
 
 - examples:
 	- $G=\mathbb{Z}_n$: $H^{2}(\mathbb{Z}_n,U(1))\cong \mathbb{Z}_n$. Representative cocycles can be taken as
-		$$
-		\omega(a,b)=\exp\Big(\frac{2\pi i\,p}{n^2}\,a\,(b\, \text{mod }n)\Big),\quad p\in\{0,1,\dots,n-1\}.
-		$$
+
+$$\begin{align}
+\omega(a,b)=\exp\Big(\frac{2\pi i\,p}{n^2}\,a\,(b\, \text{mod }n)\Big),\quad p\in\{0,1,\dots,n-1\}.
+\end{align}$$
+
 	- $G=\mathbb{Z}_2\times\mathbb{Z}_2$: $H^{2}(G,U(1))\cong \mathbb{Z}_2$. This is the Haldane-type nontrivial SPT for spin chains with $\mathbb{Z}_2\times\mathbb{Z}_2$ symmetry.
 	- $G=\mathrm{U}(1)$ (continuous compact Lie): $H^{2}(\mathrm{U}(1),U(1))\cong 0$ (for strictly on-site unitary symmetry without additional structure), so no nontrivial 1+1d bosonic SPT protected solely by on-site $\mathrm{U}(1)$.
 

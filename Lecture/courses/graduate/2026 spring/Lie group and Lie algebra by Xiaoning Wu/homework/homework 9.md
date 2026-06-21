@@ -8,73 +8,107 @@
 
 由 root string theorem，沿着 $\beta$ 方向穿过 $\alpha$ 的根串恰为
 
-$$\alpha-q\beta,\alpha-(q-1)\beta,\ldots,\alpha,\ldots,\alpha+(p-1)\beta,\alpha+p\beta,$$
+$$\begin{align}
+\alpha-q\beta,\alpha-(q-1)\beta,\ldots,\alpha,\ldots,\alpha+(p-1)\beta,\alpha+p\beta,
+\end{align}$$
 
 并且满足
 
-$$q-p=\langle \alpha,\beta^\vee\rangle=\frac{2(\alpha,\beta)}{(\beta,\beta)}.$$
+$$\begin{align}
+q-p=\langle \alpha,\beta^\vee\rangle=\frac{2(\alpha,\beta)}{(\beta,\beta)}.
+\end{align}$$
 
 因此这个根串完全包含在二维子空间 $\mathrm{span}_{\mathbb{R}}\{\alpha,\beta\}$ 内。把整个根系限制到这个二维子空间，得到一个 reduced crystallographic rank-two root system。它的不可约部分只能是
 
-$$A_1\times A_1,\quad A_2,\quad B_2=C_2,\quad G_2.$$
+$$\begin{align}
+A_1\times A_1,\quad A_2,\quad B_2=C_2,\quad G_2.
+\end{align}$$
 
 在这些 rank-two 根系中，沿任意根方向的根串最大长度分别不超过
 
-$$1,\quad 2,\quad 3,\quad 4.$$
+$$\begin{align}
+1,\quad 2,\quad 3,\quad 4.
+\end{align}$$
 
 最大值只可能在 $G_2$ 中出现。因此一般都有
 
-$$p+q+1\leq 4.$$
+$$\begin{align}
+p+q+1\leq 4.
+\end{align}$$
 
 ## main ideas
 
 给定两个根 $\alpha,\beta$，固定 $\alpha$ 并沿着 $\beta$ 的方向看所有仍然是根的元素
 
-$$\alpha+n\beta.$$
+$$\begin{align}
+\alpha+n\beta.
+\end{align}$$
 
 这些根组成的有限序列叫做穿过 $\alpha$ 的 $\beta$-string。它可以写成
 
-$$\alpha-q\beta,\alpha-(q-1)\beta,\ldots,\alpha,\ldots,\alpha+(p-1)\beta,\alpha+p\beta,$$
+$$\begin{align}
+\alpha-q\beta,\alpha-(q-1)\beta,\ldots,\alpha,\ldots,\alpha+(p-1)\beta,\alpha+p\beta,
+\end{align}$$
 
 其中 $\alpha+(p+1)\beta$ 和 $\alpha-(q+1)\beta$ 都不是根。因此根串长度是
 
-$$p+q+1.$$
+$$\begin{align}
+p+q+1.
+\end{align}$$
 
 Root string theorem 说明这条根串没有中间缺口，并且两端长度满足
 
-$$q-p=\langle \alpha,\beta^\vee\rangle,\qquad \beta^\vee=\frac{2\beta}{(\beta,\beta)}.$$
+$$\begin{align}
+q-p=\langle \alpha,\beta^\vee\rangle,\qquad \beta^\vee=\frac{2\beta}{(\beta,\beta)}.
+\end{align}$$
 
 这个定理的证明来自 $\mathfrak{sl}_2$ 表示论。对根 $\beta$，取根向量 $E_\beta,E_{-\beta}$ 和
 
-$$H_\beta=[E_\beta,E_{-\beta}],$$
+$$\begin{align}
+H_\beta=[E_\beta,E_{-\beta}],
+\end{align}$$
 
 它们生成一个 $\mathfrak{sl}_2$ 子代数。这个 $\mathfrak{sl}_2$ 作用在根空间串
 
-$$\mathfrak{g}_{\alpha-q\beta},\ldots,\mathfrak{g}_{\alpha},\ldots,\mathfrak{g}_{\alpha+p\beta}$$
+$$\begin{align}
+\mathfrak{g}_{\alpha-q\beta},\ldots,\mathfrak{g}_{\alpha},\ldots,\mathfrak{g}_{\alpha+p\beta}
+\end{align}$$
 
 上，其中 $E_\beta$ 把根空间向右移一格，$E_{-\beta}$ 把根空间向左移一格。$H_\beta$ 在 $\mathfrak{g}_{\alpha+n\beta}$ 上的权重是
 
-$$\langle\alpha+n\beta,\beta^\vee\rangle=\langle\alpha,\beta^\vee\rangle+2n.$$
+$$\begin{align}
+\langle\alpha+n\beta,\beta^\vee\rangle=\langle\alpha,\beta^\vee\rangle+2n.
+\end{align}$$
 
 有限维 $\mathfrak{sl}_2$ 表示的权重串连续且关于 $0$ 对称，所以最高权和最低权满足
 
-$$\langle\alpha,\beta^\vee\rangle+2p=-\left(\langle\alpha,\beta^\vee\rangle-2q\right),$$
+$$\begin{align}
+\langle\alpha,\beta^\vee\rangle+2p=-\left(\langle\alpha,\beta^\vee\rangle-2q\right),
+\end{align}$$
 
 从而得到
 
-$$q-p=\langle\alpha,\beta^\vee\rangle.$$
+$$\begin{align}
+q-p=\langle\alpha,\beta^\vee\rangle.
+\end{align}$$
 
 本题还用到一个降维观察。若 $\alpha,\beta$ 不成比例，取
 
-$$\Phi_{\alpha,\beta}=\Phi\cap \mathrm{span}_{\mathbb{R}}\{\alpha,\beta\}.$$
+$$\begin{align}
+\Phi_{\alpha,\beta}=\Phi\cap \mathrm{span}_{\mathbb{R}}\{\alpha,\beta\}.
+\end{align}$$
 
 这不是把根投影到平面上，而是在原根系中只保留已经落在该二维平面里的根。它仍然是 reduced crystallographic rank-two root system：有限性、reduced 性和 Cartan 整数性都从 $\Phi$ 继承；反射封闭性也成立，因为若 $\mu,\gamma$ 都在这个平面内，则
 
-$$s_\gamma(\mu)=\mu-\langle\mu,\gamma^\vee\rangle\gamma$$
+$$\begin{align}
+s_\gamma(\mu)=\mu-\langle\mu,\gamma^\vee\rangle\gamma
+\end{align}$$
 
 仍然在同一个平面内，同时又是原根系中的根。因此可以用 rank-two reduced crystallographic root system 的分类
 
-$$A_1\times A_1,\quad A_2,\quad B_2=C_2,\quad G_2$$
+$$\begin{align}
+A_1\times A_1,\quad A_2,\quad B_2=C_2,\quad G_2
+\end{align}$$
 
 来检查最长根串。最大长度只在 $G_2$ 中达到，为 $4$，所以一般有 $p+q+1\leq 4$。
 
@@ -82,42 +116,56 @@ $$A_1\times A_1,\quad A_2,\quad B_2=C_2,\quad G_2$$
 
 利用式 $(5.23)$ 分别计算 $SO(N)$ 群如下各最高权表示
 
-$$M=\sum_{\mu=1}^{\ell} M_\mu \omega_\mu$$
+$$\begin{align}
+M=\sum_{\mu=1}^{\ell} M_\mu \omega_\mu
+\end{align}$$
 
 的二阶卡西米尔不变量 $C_2(M)$：
 
 1. $N=2\ell+1$，$$M=\sum_{u=1}^{\ell-1} (\lambda_u - \lambda_{u+1})\, w_u + 2\lambda_\ell w_\ell$$
-2. $N=2\ell+1$，$$M=\lambda_1 w_1 + w_\ell$$
-3. $N=2\ell$，$$M=\sum_{u=1}^{\ell-1} (\lambda_u - \lambda_{u+1})\, w_u + (\lambda_{\ell-1}+\lambda_\ell)\, w_\ell$$
-4. $N=2\ell$，   $$M=\lambda_1 w_1 + w_\ell$$
+1. $N=2\ell+1$，$$M=\lambda_1 w_1 + w_\ell$$
+1. $N=2\ell$，$$M=\sum_{u=1}^{\ell-1} (\lambda_u - \lambda_{u+1})\, w_u + (\lambda_{\ell-1}+\lambda_\ell)\, w_\ell$$
+1. $N=2\ell$，   $$M=\lambda_1 w_1 + w_\ell$$
 
 ## solution
 
 取长根长度平方为 $2$ 的标准归一化。对最高权 $M$，二阶 Casimir 为
 
-$$C_2(M)=(M,M+2\rho),$$
+$$\begin{align}
+C_2(M)=(M,M+2\rho),
+\end{align}$$
 
 其中 $\rho$ 是所有正根半和。
 
 对 $B_\ell=\mathfrak{so}(2\ell+1)$，取正交归一基 $e_i$，使得
 
-$$\omega_u=e_1+\cdots+e_u\quad (1\leq u<\ell),\qquad \omega_\ell=\frac{1}{2}(e_1+\cdots+e_\ell),$$
+$$\begin{align}
+\omega_u=e_1+\cdots+e_u\quad (1\leq u<\ell),\qquad \omega_\ell=\frac{1}{2}(e_1+\cdots+e_\ell),
+\end{align}$$
 
 并且
 
-$$\rho=\sum_{i=1}^{\ell}\left(\ell-i+\frac{1}{2}\right)e_i.$$
+$$\begin{align}
+\rho=\sum_{i=1}^{\ell}\left(\ell-i+\frac{1}{2}\right)e_i.
+\end{align}$$
 
 对情形 1，题目给出的最高权正好是
 
-$$M=\sum_{i=1}^{\ell}\lambda_i e_i.$$
+$$\begin{align}
+M=\sum_{i=1}^{\ell}\lambda_i e_i.
+\end{align}$$
 
 因此
 
-$$C_2(M)=\sum_{i=1}^{\ell}\lambda_i\left(\lambda_i+2\ell-2i+1\right).$$
+$$\begin{align}
+C_2(M)=\sum_{i=1}^{\ell}\lambda_i\left(\lambda_i+2\ell-2i+1\right).
+\end{align}$$
 
 对情形 2，有
 
-$$M=\lambda_1\omega_1+\omega_\ell=\left(\lambda_1+\frac{1}{2}\right)e_1+\frac{1}{2}\sum_{i=2}^{\ell}e_i.$$
+$$\begin{align}
+M=\lambda_1\omega_1+\omega_\ell=\left(\lambda_1+\frac{1}{2}\right)e_1+\frac{1}{2}\sum_{i=2}^{\ell}e_i.
+\end{align}$$
 
 所以
 
@@ -128,27 +176,39 @@ C_2(M) & =\left(\lambda_1+\frac{1}{2}\right)\left(\lambda_1+2\ell-\frac{1}{2}\ri
 
 对 $D_\ell=\mathfrak{so}(2\ell)$，取
 
-$$\omega_u=e_1+\cdots+e_u\quad (1\leq u\leq \ell-2),$$
+$$\begin{align}
+\omega_u=e_1+\cdots+e_u\quad (1\leq u\leq \ell-2),
+\end{align}$$
 
 以及
 
-$$\omega_{\ell-1}=\frac{1}{2}(e_1+\cdots+e_{\ell-1}-e_\ell),\qquad \omega_\ell=\frac{1}{2}(e_1+\cdots+e_{\ell-1}+e_\ell).$$
+$$\begin{align}
+\omega_{\ell-1}=\frac{1}{2}(e_1+\cdots+e_{\ell-1}-e_\ell),\qquad \omega_\ell=\frac{1}{2}(e_1+\cdots+e_{\ell-1}+e_\ell).
+\end{align}$$
 
 Weyl 向量为
 
-$$\rho=\sum_{i=1}^{\ell}(\ell-i)e_i.$$
+$$\begin{align}
+\rho=\sum_{i=1}^{\ell}(\ell-i)e_i.
+\end{align}$$
 
 对情形 3，题目给出的最高权化为
 
-$$M=\sum_{i=1}^{\ell}\lambda_i e_i,$$
+$$\begin{align}
+M=\sum_{i=1}^{\ell}\lambda_i e_i,
+\end{align}$$
 
 所以
 
-$$C_2(M)=\sum_{i=1}^{\ell}\lambda_i\left(\lambda_i+2\ell-2i\right).$$
+$$\begin{align}
+C_2(M)=\sum_{i=1}^{\ell}\lambda_i\left(\lambda_i+2\ell-2i\right).
+\end{align}$$
 
 对情形 4，
 
-$$M=\lambda_1\omega_1+\omega_\ell=\left(\lambda_1+\frac{1}{2}\right)e_1+\frac{1}{2}\sum_{i=2}^{\ell}e_i.$$
+$$\begin{align}
+M=\lambda_1\omega_1+\omega_\ell=\left(\lambda_1+\frac{1}{2}\right)e_1+\frac{1}{2}\sum_{i=2}^{\ell}e_i.
+\end{align}$$
 
 于是
 
@@ -165,52 +225,70 @@ C_2(M) & =\left(\lambda_1+\frac{1}{2}\right)\left(\lambda_1+2\ell-\frac{3}{2}\ri
 
 对 $SU(3)$，杨图 $[4]$ 对应最高权
 
-$$[4]=[4,0,0],\qquad (p,q)=(4,0).$$
+$$\begin{align}
+[4]=[4,0,0],\qquad (p,q)=(4,0).
+\end{align}$$
 
 因此
 
-$$\dim(4,0)=\frac{(4+1)(0+1)(4+0+2)}{2}=15.$$
+$$\begin{align}
+\dim(4,0)=\frac{(4+1)(0+1)(4+0+2)}{2}=15.
+\end{align}$$
 
 采用 Gelfand-Tsetlin pattern
 
-$$\Lambda=\begin{matrix}
+$$
+\Lambda=\begin{matrix}
 \lambda_1 && \lambda_2 && \lambda_3\\
 & a && b\\
 && c
-\end{matrix}$$
+\end{matrix}
+$$
 
 其中 interlacing 条件为
 
-$$\lambda_1\geq a\geq \lambda_2,\qquad \lambda_2\geq b\geq \lambda_3,\qquad a\geq c\geq b.$$
+$$\begin{align}
+\lambda_1\geq a\geq \lambda_2,\qquad \lambda_2\geq b\geq \lambda_3,\qquad a\geq c\geq b.
+\end{align}$$
 
 在本题中 $(\lambda_1,\lambda_2,\lambda_3)=(4,0,0)$，所以
 
-$$\Lambda_{a,c}=\begin{matrix}
+$$
+\Lambda_{a,c}=\begin{matrix}
 4 && 0 && 0\\
 & a && 0\\
 && c
-\end{matrix},\qquad 0\leq c\leq a\leq 4.$$
+\end{matrix},\qquad 0\leq c\leq a\leq 4.
+$$
 
 这给出 $1+2+3+4+5=15$ 个 Gelfand-Tsetlin 基。权重可由
 
-$$n_1=c,\qquad n_2=a-c,\qquad n_3=4-a$$
+$$\begin{align}
+n_1=c,\qquad n_2=a-c,\qquad n_3=4-a
+\end{align}$$
 
 读出，因此平面权坐标为
 
-$$\mu=(n_1-n_2,n_2-n_3)=(2c-a,2a-c-4).$$
+$$\begin{align}
+\mu=(n_1-n_2,n_2-n_3)=(2c-a,2a-c-4).
+\end{align}$$
 
 所有权重重数都是 $1$，所以方块权图和平面权图相同。权重坐标为
 
-$$\begin{gathered}
+$$
+\begin{gathered}
 (4,0),(2,1),(0,2),(-2,3),(-4,4),\\
 (3,-1),(1,0),(-1,1),(-3,2),\\
 (2,-2),(0,-1),(-2,0),\\
 (1,-3),(-1,-2),(0,-4).
-\end{gathered}$$
+\end{gathered}
+$$
 
 等价地，半标准杨表为一行四格：
 
-$$1111,\ 1112,\ 1113,\ 1122,\ 1123,\ 1133,\ 1222,\ 1223,\ 1233,\ 1333,\ 2222,\ 2223,\ 2233,\ 2333,\ 3333.$$
+$$\begin{align}
+1111,\ 1112,\ 1113,\ 1122,\ 1123,\ 1133,\ 1222,\ 1223,\ 1233,\ 1333,\ 2222,\ 2223,\ 2233,\ 2333,\ 3333.
+\end{align}$$
 
 正则张量杨表只有一个：
 
@@ -237,18 +315,22 @@ box/.style={draw=black, thick, minimum size=6mm}
 
 在 GT 基上，Cartan 生成元的矩阵元为对角形式：
 
-$$H_1\ket{\Lambda}=(n_1-n_2)\ket{\Lambda},\qquad H_2\ket{\Lambda}=(n_2-n_3)\ket{\Lambda}.$$
+$$\begin{align}
+H_1\ket{\Lambda}=(n_1-n_2)\ket{\Lambda},\qquad H_2\ket{\Lambda}=(n_2-n_3)\ket{\Lambda}.
+\end{align}$$
 
 非对角生成元的非零位置由 interlacing 条件决定：
 
-$$\begin{array}{c|c}
+$$
+\begin{array}{c|c}
 \text{生成元} & \text{非零矩阵元位置}\\
 \hline
 E_{12} & c\mapsto c+1,\quad c<a\\
 E_{21} & c\mapsto c-1,\quad c>0\\
 E_{23} & a\mapsto a+1,\quad a<4\\
 E_{32} & a\mapsto a-1,\quad c<a
-\end{array}$$
+\end{array}
+$$
 
 其余矩阵元为零。具体数值系数由选定的正交归一 GT 基规范决定。
 
@@ -260,48 +342,64 @@ E_{32} & a\mapsto a-1,\quad c<a
 
 对 $SU(3)$，杨图 $[3,1]$ 对应
 
-$$[3,1]=[3,1,0],\qquad (p,q)=(3-1,1-0)=(2,1).$$
+$$\begin{align}
+[3,1]=[3,1,0],\qquad (p,q)=(3-1,1-0)=(2,1).
+\end{align}$$
 
 因此
 
-$$\dim(2,1)=\frac{(2+1)(1+1)(2+1+2)}{2}=15.$$
+$$\begin{align}
+\dim(2,1)=\frac{(2+1)(1+1)(2+1+2)}{2}=15.
+\end{align}$$
 
 GT 顶行为 $(3,1,0)$，所以基由
 
-$$\Lambda_{a,b,c}=\begin{matrix}
+$$
+\Lambda_{a,b,c}=\begin{matrix}
 3 && 1 && 0\\
 & a && b\\
 && c
-\end{matrix}$$
+\end{matrix}
+$$
 
 给出，其中
 
-$$3\geq a\geq 1,\qquad 1\geq b\geq 0,\qquad a\geq c\geq b.$$
+$$\begin{align}
+3\geq a\geq 1,\qquad 1\geq b\geq 0,\qquad a\geq c\geq b.
+\end{align}$$
 
 权重由
 
-$$n_1=c,\qquad n_2=a+b-c,\qquad n_3=4-a-b$$
+$$\begin{align}
+n_1=c,\qquad n_2=a+b-c,\qquad n_3=4-a-b
+\end{align}$$
 
 读出，因此平面权坐标为
 
-$$\mu=(n_1-n_2,n_2-n_3)=(2c-a-b,2a+2b-c-4).$$
+$$\begin{align}
+\mu=(n_1-n_2,n_2-n_3)=(2c-a-b,2a+2b-c-4).
+\end{align}$$
 
 15 个半标准杨表可以记为
 
-$$\begin{gathered}
+$$
+\begin{gathered}
 (111;2),\ (111;3),\ (112;2),\ (112;3),\ (113;2),\ (113;3),\\
 (122;2),\ (122;3),\ (123;2),\ (123;3),\ (133;2),\ (133;3),\\
 (222;3),\ (223;3),\ (233;3).
-\end{gathered}$$
+\end{gathered}
+$$
 
 这里 $(abc;d)$ 表示第一行为 $a,b,c$，第二行第一格为 $d$。对应平面权重及重数为
 
-$$\begin{array}{c|c}
+$$
+\begin{array}{c|c}
 \text{平面权} & \text{重数}\\
 \hline
 (3,-1),(2,1),(2,-2),(1,-3),(0,2),(-1,-2),(-2,3),(-2,0),(-3,2) & 1\\
 (1,0),(-1,1),(0,-1) & 2
-\end{array}$$
+\end{array}
+$$
 
 因此平面权图有 $12$ 个不同权点，其中 $(1,0),(-1,1),(0,-1)$ 是二重权。方块权图则有 $15$ 个方块，即把这三个二重权点各拆成两个方块，其余权点各对应一个方块。
 
@@ -356,11 +454,14 @@ box/.style={draw=black, thick, minimum size=6mm}
 
 Cartan 生成元在 GT 基上仍为对角形式：
 
-$$H_1\ket{\Lambda}=(n_1-n_2)\ket{\Lambda},\qquad H_2\ket{\Lambda}=(n_2-n_3)\ket{\Lambda}.$$
+$$\begin{align}
+H_1\ket{\Lambda}=(n_1-n_2)\ket{\Lambda},\qquad H_2\ket{\Lambda}=(n_2-n_3)\ket{\Lambda}.
+\end{align}$$
 
 非对角生成元的非零位置为
 
-$$\begin{array}{c|c}
+$$
+\begin{array}{c|c}
 \text{生成元} & \text{非零矩阵元位置}\\
 \hline
 E_{12} & c\mapsto c+1,\quad c<a\\
@@ -369,7 +470,8 @@ E_{23} & a\mapsto a+1,\quad a<3\\
 E_{23} & b\mapsto b+1,\quad b<1,\ c\geq b+1\\
 E_{32} & a\mapsto a-1,\quad a>1,\ c\leq a-1\\
 E_{32} & b\mapsto b-1,\quad b>0
-\end{array}$$
+\end{array}
+$$
 
 其余矩阵元为零。具体数值系数同样由选定的正交归一 GT 基规范决定。
 
@@ -377,39 +479,53 @@ E_{32} & b\mapsto b-1,\quad b>0
 
 这两题的关键是把四种描述统一起来：
 
-$$\text{Young diagram}\quad \Longleftrightarrow\quad \text{GT pattern}\quad \Longleftrightarrow\quad \text{semistandard Young tableau}\quad \Longleftrightarrow\quad \text{weight diagram}.$$
+$$\begin{align}
+\text{Young diagram}\quad \Longleftrightarrow\quad \text{GT pattern}\quad \Longleftrightarrow\quad \text{semistandard Young tableau}\quad \Longleftrightarrow\quad \text{weight diagram}.
+\end{align}$$
 
 杨图 $[\lambda_1,\lambda_2,\lambda_3]$ 对应 $SU(3)$ 的 Dynkin label
 
-$$(p,q)=(\lambda_1-\lambda_2,\lambda_2-\lambda_3).$$
+$$\begin{align}
+(p,q)=(\lambda_1-\lambda_2,\lambda_2-\lambda_3).
+\end{align}$$
 
 GT pattern 的每一行可以直接读成半标准杨表的截断形状：第 $k$ 行表示 tableau 中所有不超过 $k$ 的格子组成的 Young diagram。相邻两行形状的差，就是填入数字 $k$ 的格子。
 
 若
 
-$$\Lambda=\begin{matrix}
+$$
+\Lambda=\begin{matrix}
 m_{13} && m_{23} && m_{33}\\
 & m_{12} && m_{22}\\
 && m_{11}
-\end{matrix},$$
+\end{matrix},
+$$
 
 记三行行和为
 
-$$S_1=m_{11},\qquad S_2=m_{12}+m_{22},\qquad S_3=m_{13}+m_{23}+m_{33}.$$
+$$\begin{align}
+S_1=m_{11},\qquad S_2=m_{12}+m_{22},\qquad S_3=m_{13}+m_{23}+m_{33}.
+\end{align}$$
 
 则对应的 $U(3)$ 权为
 
-$$(n_1,n_2,n_3)=(S_1,S_2-S_1,S_3-S_2),$$
+$$\begin{align}
+(n_1,n_2,n_3)=(S_1,S_2-S_1,S_3-S_2),
+\end{align}$$
 
 $SU(3)$ 平面权坐标可直接写成
 
-$$(n_1-n_2,n_2-n_3)=(2S_1-S_2,2S_2-S_1-S_3).$$
+$$\begin{align}
+(n_1-n_2,n_2-n_3)=(2S_1-S_2,2S_2-S_1-S_3).
+\end{align}$$
 
 平面权图只记录权和重数；方块权图记录每一个具体 GT 基。当某个平面权重数大于 $1$ 时，平面权图上只有一个点，方块权图中要拆成多个方块。
 
 取 Chevalley 基
 
-$$e_1=E_{12},\quad f_1=E_{21},\qquad e_2=E_{23},\quad f_2=E_{32}.$$
+$$\begin{align}
+e_1=E_{12},\quad f_1=E_{21},\qquad e_2=E_{23},\quad f_2=E_{32}.
+\end{align}$$
 
 在 GT 基中，$f_i$ 把从下数第 $i$ 行的某一个 entry 减 $1$，$e_i$ 把从下数第 $i$ 行的某一个 entry 加 $1$。若加减后不满足 interlacing 条件，则该项矩阵元为零。方块权图中的线就是这些非零矩阵元；单线和双线通常用来区分 $\alpha_1$ 与 $\alpha_2$ 两个 simple-root 方向。
 
@@ -421,37 +537,53 @@ $$e_1=E_{12},\quad f_1=E_{21},\qquad e_2=E_{23},\quad f_2=E_{32}.$$
 
 这几题都可以用同一个框架处理。取 Cartan 子代数的正交基 $e_i$。一个 Gelfand-Tsetlin/方块权图基可以写成
 
-$$\ket{\mu,r},$$
+$$\begin{align}
+\ket{\mu,r},
+\end{align}$$
 
 其中 $\mu$ 是权，$r=1,\ldots,m_\mu$ 是该权空间的重数标签。Cartan 生成元对角作用：
 
-$$H_i\ket{\mu,r}=\mu_i\ket{\mu,r}.$$
+$$\begin{align}
+H_i\ket{\mu,r}=\mu_i\ket{\mu,r}.
+\end{align}$$
 
 对根生成元 $E_\alpha$，非零矩阵元只可能出现在
 
-$$\bra{\mu+\alpha,s}E_\alpha\ket{\mu,r}\neq 0$$
+$$\begin{align}
+\bra{\mu+\alpha,s}E_\alpha\ket{\mu,r}\neq 0
+\end{align}$$
 
 的位置；若 $\mu+\alpha$ 不是该表示的权，则对应矩阵元为零。下面列出的权重和重数已经给出全部非零矩阵元的位置。具体数值系数依赖正交归一 GT 基的规范。
 
 对 $C_3=\mathfrak{sp}(6)$，根系为
 
-$$\Phi(C_3)=\{\pm 2e_i,\ \pm e_i\pm e_j\mid 1\leq i<j\leq 3\}.$$
+$$\begin{align}
+\Phi(C_3)=\{\pm 2e_i,\ \pm e_i\pm e_j\mid 1\leq i<j\leq 3\}.
+\end{align}$$
 
 最高权 $(0,0,1)$ 即 $\omega_3=e_1+e_2+e_3$。该表示维数为 $14$，权重全部为一重：
 
-$$\mu=\pm e_1,\ \pm e_2,\ \pm e_3,\quad \frac{1}{2}\left(\pm 2e_1\pm 2e_2\pm 2e_3\right).$$
+$$\begin{align}
+\mu=\pm e_1,\ \pm e_2,\ \pm e_3,\quad \frac{1}{2}\left(\pm 2e_1\pm 2e_2\pm 2e_3\right).
+\end{align}$$
 
 等价地，
 
-$$\mu=\pm e_1,\ \pm e_2,\ \pm e_3,\quad \pm e_1\pm e_2\pm e_3,$$
+$$\begin{align}
+\mu=\pm e_1,\ \pm e_2,\ \pm e_3,\quad \pm e_1\pm e_2\pm e_3,
+\end{align}$$
 
 其中最后一项的三个符号任取。因此 GT 基可记为
 
-$$\{\ket{\pm e_i}\}_{i=1}^{3}\cup \{\ket{\pm e_1\pm e_2\pm e_3}\}.$$
+$$\begin{align}
+\{\ket{\pm e_i}\}_{i=1}^{3}\cup \{\ket{\pm e_1\pm e_2\pm e_3}\}.
+\end{align}$$
 
 非零矩阵元由
 
-$$E_\alpha:\ket{\mu}\mapsto \ket{\mu+\alpha},\qquad \alpha\in\Phi(C_3),$$
+$$\begin{align}
+E_\alpha:\ket{\mu}\mapsto \ket{\mu+\alpha},\qquad \alpha\in\Phi(C_3),
+\end{align}$$
 
 且 $\mu+\alpha$ 仍属于上面的权集时给出。
 
@@ -463,33 +595,47 @@ $$E_\alpha:\ket{\mu}\mapsto \ket{\mu+\alpha},\qquad \alpha\in\Phi(C_3),$$
 
 对 $C_2=\mathfrak{sp}(4)$，伴随表示最高权是最高根
 
-$$\theta=2e_1=2\omega_1,$$
+$$\begin{align}
+\theta=2e_1=2\omega_1,
+\end{align}$$
 
 所以它的 Dynkin label 为 $(2,0)$，维数为
 
-$$\dim\mathfrak{sp}(4)=2(2\cdot 2+1)=10.$$
+$$\begin{align}
+\dim\mathfrak{sp}(4)=2(2\cdot 2+1)=10.
+\end{align}$$
 
 伴随表示的非零权正好是根：
 
-$$\Phi(C_2)=\{\pm 2e_1,\ \pm 2e_2,\ \pm e_1\pm e_2\}.$$
+$$\begin{align}
+\Phi(C_2)=\{\pm 2e_1,\ \pm 2e_2,\ \pm e_1\pm e_2\}.
+\end{align}$$
 
 零权空间维数等于 rank，即为 $2$。因此 GT/方块权图基可以取为
 
-$$\{\ket{\alpha}\mid \alpha\in\Phi(C_2)\}\cup\{\ket{0,1},\ket{0,2}\}.$$
+$$\begin{align}
+\{\ket{\alpha}\mid \alpha\in\Phi(C_2)\}\cup\{\ket{0,1},\ket{0,2}\}.
+\end{align}$$
 
 平面权图是 $C_2$ 根图：四个长根 $\pm 2e_1,\pm 2e_2$ 和四个短根 $\pm e_1\pm e_2$，中心零权点重数为 $2$。方块权图则把中心零权点拆成两个方块。
 
 Cartan 生成元作用为
 
-$$H_i\ket{\alpha}=\alpha_i\ket{\alpha},\qquad H_i\ket{0,a}=0.$$
+$$\begin{align}
+H_i\ket{\alpha}=\alpha_i\ket{\alpha},\qquad H_i\ket{0,a}=0.
+\end{align}$$
 
 根生成元在伴随表示中由 Lie bracket 给出：
 
-$$E_\beta\ket{\alpha}\propto \ket{\alpha+\beta}\quad \text{if }\alpha+\beta\in\Phi(C_2),$$
+$$\begin{align}
+E_\beta\ket{\alpha}\propto \ket{\alpha+\beta}\quad \text{if }\alpha+\beta\in\Phi(C_2),
+\end{align}$$
 
 并且
 
-$$E_\beta\ket{-\beta}\in \operatorname{span}\{\ket{0,1},\ket{0,2}\},\qquad E_\beta\ket{0,a}\propto \ket{\beta}.$$
+$$\begin{align}
+E_\beta\ket{-\beta}\in \operatorname{span}\{\ket{0,1},\ket{0,2}\},\qquad E_\beta\ket{0,a}\propto \ket{\beta}.
+\end{align}$$
 
 除此之外矩阵元为零。
 
@@ -501,53 +647,77 @@ $$E_\beta\ket{-\beta}\in \operatorname{span}\{\ket{0,1},\ket{0,2}\},\qquad E_\be
 
 对 $B_3=\mathfrak{so}(7)$，取正交基 $e_1,e_2,e_3$。根系为
 
-$$\Phi(B_3)=\{\pm e_i,\ \pm e_i\pm e_j\mid 1\leq i<j\leq 3\}.$$
+$$\begin{align}
+\Phi(B_3)=\{\pm e_i,\ \pm e_i\pm e_j\mid 1\leq i<j\leq 3\}.
+\end{align}$$
 
 三个基本表示分别如下。
 
 1. 向量表示 $(1,0,0)$：
 
-   $$\dim(1,0,0)=7.$$
+$$\begin{align}
+\dim(1,0,0)=7.
+\end{align}$$
 
    权重为
 
-   $$\mu=0,\quad \pm e_1,\quad \pm e_2,\quad \pm e_3,$$
+$$\begin{align}
+\mu=0,\quad \pm e_1,\quad \pm e_2,\quad \pm e_3,
+\end{align}$$
 
    全部一重。因此基为
 
-   $$\{\ket{0},\ket{\pm e_1},\ket{\pm e_2},\ket{\pm e_3}\}.$$
+$$\begin{align}
+\{\ket{0},\ket{\pm e_1},\ket{\pm e_2},\ket{\pm e_3}\}.
+\end{align}$$
 
-2. 伴随表示 $(0,1,0)$：
+1. 伴随表示 $(0,1,0)$：
 
-   $$\dim(0,1,0)=\dim\mathfrak{so}(7)=21.$$
+$$\begin{align}
+\dim(0,1,0)=\dim\mathfrak{so}(7)=21.
+\end{align}$$
 
    非零权是全部根 $\Phi(B_3)$，零权重数为 $3$。因此基为
 
-   $$\{\ket{\alpha}\mid \alpha\in\Phi(B_3)\}\cup\{\ket{0,1},\ket{0,2},\ket{0,3}\}.$$
+$$\begin{align}
+\{\ket{\alpha}\mid \alpha\in\Phi(B_3)\}\cup\{\ket{0,1},\ket{0,2},\ket{0,3}\}.
+\end{align}$$
 
-3. 旋量表示 $(0,0,1)$：
+1. 旋量表示 $(0,0,1)$：
 
-   $$\dim(0,0,1)=8.$$
+$$\begin{align}
+\dim(0,0,1)=8.
+\end{align}$$
 
    权重为
 
-   $$\mu=\frac{1}{2}(\pm e_1\pm e_2\pm e_3),$$
+$$\begin{align}
+\mu=\frac{1}{2}(\pm e_1\pm e_2\pm e_3),
+\end{align}$$
 
    三个符号任取，全部一重。因此基为
 
-   $$\left\{\ket{\frac{1}{2}(\pm e_1\pm e_2\pm e_3)}\right\}.$$
+$$\begin{align}
+\left\{\ket{\frac{1}{2}(\pm e_1\pm e_2\pm e_3)}\right\}.
+\end{align}$$
 
 对这三个表示，Cartan 生成元均按
 
-$$H_i\ket{\mu,r}=\mu_i\ket{\mu,r}$$
+$$\begin{align}
+H_i\ket{\mu,r}=\mu_i\ket{\mu,r}
+\end{align}$$
 
 对角作用。根生成元的非零矩阵元位置统一为
 
-$$E_\alpha:\ket{\mu,r}\mapsto \ket{\mu+\alpha,s},\qquad \alpha\in\Phi(B_3),$$
+$$\begin{align}
+E_\alpha:\ket{\mu,r}\mapsto \ket{\mu+\alpha,s},\qquad \alpha\in\Phi(B_3),
+\end{align}$$
 
 其中 $\mu+\alpha$ 必须仍是该表示的权。对伴随表示还要加上
 
-$$E_\alpha\ket{-\alpha}\in \operatorname{span}\{\ket{0,1},\ket{0,2},\ket{0,3}\},\qquad E_\alpha\ket{0,a}\propto \ket{\alpha}.$$
+$$\begin{align}
+E_\alpha\ket{-\alpha}\in \operatorname{span}\{\ket{0,1},\ket{0,2},\ket{0,3}\},\qquad E_\alpha\ket{0,a}\propto \ket{\alpha}.
+\end{align}$$
 
 # problem 8
 
@@ -557,35 +727,51 @@ $$E_\alpha\ket{-\alpha}\in \operatorname{span}\{\ket{0,1},\ket{0,2},\ket{0,3}\},
 
 按本题所用表格约定，$(0,1)$ 是 $7$ 维基本表示，$(1,0)$ 是 $14$ 维伴随表示。设 $\alpha_s$ 是短简单根，$\alpha_l$ 是长简单根，则 $G_2$ 的短正根为
 
-$$\alpha_s,\quad \alpha_s+\alpha_l,\quad 2\alpha_s+\alpha_l,$$
+$$\begin{align}
+\alpha_s,\quad \alpha_s+\alpha_l,\quad 2\alpha_s+\alpha_l,
+\end{align}$$
 
 长正根为
 
-$$\alpha_l,\quad 3\alpha_s+\alpha_l,\quad 3\alpha_s+2\alpha_l.$$
+$$\begin{align}
+\alpha_l,\quad 3\alpha_s+\alpha_l,\quad 3\alpha_s+2\alpha_l.
+\end{align}$$
 
 对 $7$ 维表示 $(0,1)$，权重为
 
-$$0,\quad \pm\alpha_s,\quad \pm(\alpha_s+\alpha_l),\quad \pm(2\alpha_s+\alpha_l),$$
+$$\begin{align}
+0,\quad \pm\alpha_s,\quad \pm(\alpha_s+\alpha_l),\quad \pm(2\alpha_s+\alpha_l),
+\end{align}$$
 
 全部一重。因此基可取为
 
-$$\ket{0},\quad \ket{\pm\alpha_s},\quad \ket{\pm(\alpha_s+\alpha_l)},\quad \ket{\pm(2\alpha_s+\alpha_l)}.$$
+$$\begin{align}
+\ket{0},\quad \ket{\pm\alpha_s},\quad \ket{\pm(\alpha_s+\alpha_l)},\quad \ket{\pm(2\alpha_s+\alpha_l)}.
+\end{align}$$
 
 对 $14$ 维伴随表示 $(1,0)$，非零权是全部 $12$ 个根，零权重数为 $2$。因此基可取为
 
-$$\{\ket{\alpha}\mid \alpha\in\Phi(G_2)\}\cup\{\ket{0,1},\ket{0,2}\}.$$
+$$\begin{align}
+\{\ket{\alpha}\mid \alpha\in\Phi(G_2)\}\cup\{\ket{0,1},\ket{0,2}\}.
+\end{align}$$
 
 Cartan 生成元作用为
 
-$$H_i\ket{\mu,r}=\mu(H_i)\ket{\mu,r}.$$
+$$\begin{align}
+H_i\ket{\mu,r}=\mu(H_i)\ket{\mu,r}.
+\end{align}$$
 
 根生成元的非零矩阵元位置由
 
-$$E_\alpha:\ket{\mu,r}\mapsto \ket{\mu+\alpha,s},\qquad \alpha\in\Phi(G_2),$$
+$$\begin{align}
+E_\alpha:\ket{\mu,r}\mapsto \ket{\mu+\alpha,s},\qquad \alpha\in\Phi(G_2),
+\end{align}$$
 
 且 $\mu+\alpha$ 仍是该表示的权来决定。对伴随表示还包括
 
-$$E_\alpha\ket{-\alpha}\in \operatorname{span}\{\ket{0,1},\ket{0,2}\},\qquad E_\alpha\ket{0,a}\propto \ket{\alpha}.$$
+$$\begin{align}
+E_\alpha\ket{-\alpha}\in \operatorname{span}\{\ket{0,1},\ket{0,2}\},\qquad E_\alpha\ket{0,a}\propto \ket{\alpha}.
+\end{align}$$
 
 # problem 9
 
@@ -596,36 +782,50 @@ $$E_\alpha\ket{-\alpha}\in \operatorname{span}\{\ket{0,1},\ket{0,2}\},\qquad E_\
 直积表示分解的通用步骤如下。
 
 1. 先把两个因子的最高权相加，得到直积中的最高最高权。
-2. 用 Weyl character 或 Littlewood-Richardson 规则分解 character。
-3. 若要写 Clebsch-Gordan 系数，就在每个不可约分量的最高权空间中解
+1. 用 Weyl character 或 Littlewood-Richardson 规则分解 character。
+1. 若要写 Clebsch-Gordan 系数，就在每个不可约分量的最高权空间中解
 
-   $$E_{\alpha_i}v=0\qquad \text{for all simple roots }\alpha_i,$$
+$$\begin{align}
+E_{\alpha_i}v=0\qquad \text{for all simple roots }\alpha_i,
+\end{align}$$
 
    得到该不可约分量的最高权态，再用降算符生成其余态。
 
 对本题，$[2]$ 是二阶对称张量，故
 
-$$[2]\otimes[1]=[3]\oplus[2,1].$$
+$$\begin{align}
+[2]\otimes[1]=[3]\oplus[2,1].
+\end{align}$$
 
 维数检验为
 
-$$6\cdot 3=10+8=18.$$
+$$\begin{align}
+6\cdot 3=10+8=18.
+\end{align}$$
 
 令 $\ket{ij}_S$ 表示归一化对称态。最高权态为
 
-$$\ket{[3];111}=\ket{11}_S\ket{1}.$$
+$$\begin{align}
+\ket{[3];111}=\ket{11}_S\ket{1}.
+\end{align}$$
 
 在权 $(2,1,0)$ 的二维空间中，取
 
-$$a=\ket{11}_S\ket{2},\qquad b=\ket{12}_S\ket{1}.$$
+$$\begin{align}
+a=\ket{11}_S\ket{2},\qquad b=\ket{12}_S\ket{1}.
+\end{align}$$
 
 完全对称分量为
 
-$$\ket{[3];112}=\frac{1}{\sqrt{3}}a+\sqrt{\frac{2}{3}}b.$$
+$$\begin{align}
+\ket{[3];112}=\frac{1}{\sqrt{3}}a+\sqrt{\frac{2}{3}}b.
+\end{align}$$
 
 与它正交的最高权态属于 $[2,1]$：
 
-$$\ket{[2,1];112}=\sqrt{\frac{2}{3}}a-\frac{1}{\sqrt{3}}b.$$
+$$\begin{align}
+\ket{[2,1];112}=\sqrt{\frac{2}{3}}a-\frac{1}{\sqrt{3}}b.
+\end{align}$$
 
 其余 Clebsch-Gordan 系数由 $SU(3)$ 的降算符 $E_{21}$ 和 $E_{32}$ 作用得到。
 
@@ -637,15 +837,21 @@ $$\ket{[2,1];112}=\sqrt{\frac{2}{3}}a-\frac{1}{\sqrt{3}}b.$$
 
 对 $C_2=\mathfrak{sp}(4)$，$(1,0)$ 是 $4$ 维基本表示。由 Weyl character 分解，
 
-$$ (1,0)\otimes(1,0)=(2,0)\oplus(0,1)\oplus(0,0). $$
+$$\begin{align}
+(1,0)\otimes(1,0)=(2,0)\oplus(0,1)\oplus(0,0).
+\end{align}$$
 
 维数检验为
 
-$$4\cdot 4=10+5+1=16.$$
+$$\begin{align}
+4\cdot 4=10+5+1=16.
+\end{align}$$
 
 从张量对称性看，
 
-$$S^2(1,0)=(2,0),\qquad \wedge^2(1,0)=(0,1)\oplus(0,0).$$
+$$\begin{align}
+S^2(1,0)=(2,0),\qquad \wedge^2(1,0)=(0,1)\oplus(0,0).
+\end{align}$$
 
 其中 singlet 来自 $Sp(4)$ 不变辛形式 $\Omega_{ab}$。因此该分解是无重数分解，每个最高权态唯一。实际求 CG 系数时，先在 $V_{(1,0)}\otimes V_{(1,0)}$ 中取对称、反对称部分，再从反对称部分中分离出与 $\Omega_{ab}$ 成比例的 singlet，剩余 traceless 反对称部分就是 $(0,1)$。
 
@@ -657,15 +863,21 @@ $$S^2(1,0)=(2,0),\qquad \wedge^2(1,0)=(0,1)\oplus(0,0).$$
 
 对 $C_2$，$(0,1)$ 是 $5$ 维表示，可看成 $\wedge^2(1,0)$ 去掉辛迹后的 traceless 部分。Weyl character 分解给出
 
-$$ (0,1)\otimes(0,1)=(0,2)\oplus(2,0)\oplus(0,0). $$
+$$\begin{align}
+(0,1)\otimes(0,1)=(0,2)\oplus(2,0)\oplus(0,0).
+\end{align}$$
 
 维数检验为
 
-$$5\cdot 5=14+10+1=25.$$
+$$\begin{align}
+5\cdot 5=14+10+1=25.
+\end{align}$$
 
 其中
 
-$$S^2(0,1)=(0,2)\oplus(0,0),\qquad \wedge^2(0,1)=(2,0).$$
+$$\begin{align}
+S^2(0,1)=(0,2)\oplus(0,0),\qquad \wedge^2(0,1)=(2,0).
+\end{align}$$
 
 因此也是无重数分解。CG 系数的构造方式是：先按交换两个 $(0,1)$ 因子的对称性分成 $S^2$ 和 $\wedge^2$，再从 $S^2$ 中取出唯一不变态作为 $(0,0)$，其正交补就是 $(0,2)$。
 
@@ -687,15 +899,21 @@ $$S^2(0,1)=(0,2)\oplus(0,0),\qquad \wedge^2(0,1)=(2,0).$$
 
 Weyl character 分解为
 
-$$ (0,2,0)\otimes(1,0,0)=(1,2,0)\oplus(0,1,1)\oplus(1,1,0). $$
+$$\begin{align}
+(0,2,0)\otimes(1,0,0)=(1,2,0)\oplus(0,1,1)\oplus(1,1,0).
+\end{align}$$
 
 维数检验为
 
-$$90\cdot 6=350+126+64=540.$$
+$$\begin{align}
+90\cdot 6=350+126+64=540.
+\end{align}$$
 
 CG 系数可以按最高权态逐个构造。最高最高权为
 
-$$ (0,2,0)+(1,0,0)=(1,2,0), $$
+$$\begin{align}
+(0,2,0)+(1,0,0)=(1,2,0),
+\end{align}$$
 
 所以 $(1,2,0)$ 分量的最高权态就是两个因子最高权态的张量积。然后在剩余权空间中求所有简单升算符共同湮灭的向量，依次得到 $(0,1,1)$ 和 $(1,1,0)$ 的最高权态。表中的主权重数列用于控制每个候选最高权在乘积表示中的剩余重数。
 
@@ -717,23 +935,33 @@ $$ (0,2,0)+(1,0,0)=(1,2,0), $$
 
 沿用本题表格的约定：$(0,1)$ 是 $7$ 维表示，$(1,0)$ 是 $14$ 维伴随表示。Weyl character 分解为
 
-$$ (1,0)\otimes(1,0)=(0,0)\oplus(1,0)\oplus(0,2)\oplus(0,3)\oplus(2,0). $$
+$$\begin{align}
+(1,0)\otimes(1,0)=(0,0)\oplus(1,0)\oplus(0,2)\oplus(0,3)\oplus(2,0).
+\end{align}$$
 
 维数检验为
 
-$$14\cdot 14=1+14+27+77+77=196.$$
+$$\begin{align}
+14\cdot 14=1+14+27+77+77=196.
+\end{align}$$
 
 另一个直积为
 
-$$ (1,0)\otimes(0,1)=(0,1)\oplus(0,2)\oplus(1,1). $$
+$$\begin{align}
+(1,0)\otimes(0,1)=(0,1)\oplus(0,2)\oplus(1,1).
+\end{align}$$
 
 维数检验为
 
-$$14\cdot 7=7+27+64=98.$$
+$$\begin{align}
+14\cdot 7=7+27+64=98.
+\end{align}$$
 
 最高权态展开的计算方式与上一题相同：在每个候选最高权的乘积权空间中解
 
-$$E_{\alpha_s}v=0,\qquad E_{\alpha_l}v=0,$$
+$$\begin{align}
+E_{\alpha_s}v=0,\qquad E_{\alpha_l}v=0,
+\end{align}$$
 
 其中 $\alpha_s,\alpha_l$ 是短、长简单根。表中各主权重数列给出每个权空间中需要消去的已知分量数；解出的 null vector 就是对应不可约表示的最高权态，之后用降算符生成整个不可约分量。
 
@@ -761,7 +989,9 @@ $$\begin{align}
 
 维数检验为
 
-$$26\cdot 26=1+26+52+273+324=676.$$
+$$\begin{align}
+26\cdot 26=1+26+52+273+324=676.
+\end{align}$$
 
 CG 最高权态同样通过解简单升算符方程得到。由于这个分解无重数，每个不可约分量的最高权态在扣除更高分量以后唯一确定。表中的主权重数列正是用来判断每一步剩余权空间维数的。
 
@@ -769,13 +999,17 @@ CG 最高权态同样通过解简单升算符方程得到。由于这个分解�
 
 计算 $SU(3)$ 群和 $SU(6)$ 群用下列杨图标记的不可约表示的维数：
 
-$$[3],\quad [2,1],\quad [3,3],\quad [4,2],\quad [5,1].$$
+$$\begin{align}
+[3],\quad [2,1],\quad [3,3],\quad [4,2],\quad [5,1].
+\end{align}$$
 
 ## solution
 
 对 $SU(N)$，杨图 $\lambda$ 的维数由 hook formula 给出：
 
-$$\dim_N\lambda=\prod_{(i,j)\in\lambda}\frac{N+j-i}{h_{ij}},$$
+$$\begin{align}
+\dim_N\lambda=\prod_{(i,j)\in\lambda}\frac{N+j-i}{h_{ij}},
+\end{align}$$
 
 其中 $h_{ij}$ 是方格 $(i,j)$ 的 hook length。计算得
 
@@ -804,35 +1038,63 @@ $$\begin{aligned}
 
 对 $SU(3)$：
 
-$$[2,1]\otimes[3,0]=[5,1]\oplus[4,2]\oplus[3]\oplus[2,1],$$
+$$\begin{align}
+[2,1]\otimes[3,0]=[5,1]\oplus[4,2]\oplus[3]\oplus[2,1],
+\end{align}$$
 
-$$8\cdot 10=35+27+10+8=80.$$
+$$\begin{align}
+8\cdot 10=35+27+10+8=80.
+\end{align}$$
 
-$$[3,0]\otimes[3,0]=[6]\oplus[5,1]\oplus[4,2]\oplus[3,3],$$
+$$\begin{align}
+[3,0]\otimes[3,0]=[6]\oplus[5,1]\oplus[4,2]\oplus[3,3],
+\end{align}$$
 
-$$10\cdot 10=28+35+27+10=100.$$
+$$\begin{align}
+10\cdot 10=28+35+27+10=100.
+\end{align}$$
 
-$$[3,0]\otimes[3,3]=[6,3]\oplus[4,2]\oplus[2,1]\oplus[0],$$
+$$\begin{align}
+[3,0]\otimes[3,3]=[6,3]\oplus[4,2]\oplus[2,1]\oplus[0],
+\end{align}$$
 
-$$10\cdot 10=64+27+8+1=100.$$
+$$\begin{align}
+10\cdot 10=64+27+8+1=100.
+\end{align}$$
 
-$$[4,2]\otimes[2,1]=[6,3]\oplus[5,4]\oplus[5,1]\oplus2[4,2]\oplus[3,3]\oplus[3]\oplus[2,1],$$
+$$\begin{align}
+[4,2]\otimes[2,1]=[6,3]\oplus[5,4]\oplus[5,1]\oplus2[4,2]\oplus[3,3]\oplus[3]\oplus[2,1],
+\end{align}$$
 
-$$27\cdot 8=64+35+35+2\cdot27+10+10+8=216.$$
+$$\begin{align}
+27\cdot 8=64+35+35+2\cdot27+10+10+8=216.
+\end{align}$$
 
 对 $SU(6)$：
 
-$$[2,1]\otimes[3,0]=[5,1]\oplus[4,2]\oplus[4,1,1]\oplus[3,2,1],$$
+$$\begin{align}
+[2,1]\otimes[3,0]=[5,1]\oplus[4,2]\oplus[4,1,1]\oplus[3,2,1],
+\end{align}$$
 
-$$70\cdot 56=3920.$$
+$$\begin{align}
+70\cdot 56=3920.
+\end{align}$$
 
-$$[3,0]\otimes[3,0]=[6]\oplus[5,1]\oplus[4,2]\oplus[3,3],$$
+$$\begin{align}
+[3,0]\otimes[3,0]=[6]\oplus[5,1]\oplus[4,2]\oplus[3,3],
+\end{align}$$
 
-$$56\cdot 56=3136.$$
+$$\begin{align}
+56\cdot 56=3136.
+\end{align}$$
 
-$$[3,0]\otimes[3,3]=[6,3]\oplus[5,3,1]\oplus[4,3,2]\oplus[3,3,3],$$
+$$\begin{align}
+[3,0]\otimes[3,3]=[6,3]\oplus[5,3,1]\oplus[4,3,2]\oplus[3,3,3],
+\end{align}$$
 
-$$56\cdot 490=27440.$$
+$$\begin{align}
+56\cdot 490=27440.
+\end{align}$$
 
 $$\begin{align}
 [4,2]\otimes[2,1]
@@ -840,76 +1102,106 @@ $$\begin{align}
 &\quad\oplus[5,2,1,1]\oplus[4,4,1]\oplus[4,3,2]\oplus[4,3,1,1]\oplus[4,2,2,1],
 \end{align}$$
 
-$$1134\cdot70=79380.$$
+$$\begin{align}
+1134\cdot70=79380.
+\end{align}$$
 
 # problem 17
 
 把下面 $SU(6)$ 群的无迹混合张量表示变换成协变张量表示，并计算这些表示的维数：
 
-$$1.\ [3,2,1]^*;\qquad 2.\ [3,2,1]\backslash[3,3]^*;\qquad 3.\ [4,3,1]\backslash[3,2]^*.$$
+$$\begin{align}
+1.\ [3,2,1]^*;\qquad 2.\ [3,2,1]\backslash[3,3]^*;\qquad 3.\ [4,3,1]\backslash[3,2]^*.
+\end{align}$$
 
 ## solution
 
 对 $SU(6)$，把反变杨图 $[\mu]^*$ 改写成协变杨图时，可以取 Dynkin label 反序。等价地，若
 
-$$\mu=[\mu_1,\mu_2,\ldots,\mu_6],\qquad \mu_6=0,$$
+$$\begin{align}
+\mu=[\mu_1,\mu_2,\ldots,\mu_6],\qquad \mu_6=0,
+\end{align}$$
 
 则
 
-$$[\mu]^*=[\mu_1-\mu_6,\mu_1-\mu_5,\ldots,\mu_1-\mu_2].$$
+$$\begin{align}
+[\mu]^*=[\mu_1-\mu_6,\mu_1-\mu_5,\ldots,\mu_1-\mu_2].
+\end{align}$$
 
 混合无迹表示 $[\lambda]\backslash[\mu]^*$ 对应的协变最高权，是 $[\lambda]$ 的 Dynkin label 加上 $[\mu]^*$ 的 Dynkin label。
 
 1. 对 $[3,2,1]^*$：
 
-   $$[3,2,1]^*=[3,3,3,2,1],\qquad \dim=896.$$
+$$\begin{align}
+[3,2,1]^*=[3,3,3,2,1],\qquad \dim=896.
+\end{align}$$
 
-2. 对 $[3,2,1]\backslash[3,3]^*$：
+1. 对 $[3,2,1]\backslash[3,3]^*$：
 
-   $$[3,3]^*=[3,3,3,3],$$
-
-   因此
-
-   $$[3,2,1]\backslash[3,3]^*\longleftrightarrow[6,5,4,3],\qquad \dim=147840.$$
-
-3. 对 $[4,3,1]\backslash[3,2]^*$：
-
-   $$[3,2]^*=[3,3,3,3,1],$$
+$$\begin{align}
+[3,3]^*=[3,3,3,3],
+\end{align}$$
 
    因此
 
-   $$[4,3,1]\backslash[3,2]^*\longleftrightarrow[7,6,4,3,1],\qquad \dim=612500.$$
+$$\begin{align}
+[3,2,1]\backslash[3,3]^*\longleftrightarrow[6,5,4,3],\qquad \dim=147840.
+\end{align}$$
+
+1. 对 $[4,3,1]\backslash[3,2]^*$：
+
+$$\begin{align}
+[3,2]^*=[3,3,3,3,1],
+\end{align}$$
+
+   因此
+
+$$\begin{align}
+[4,3,1]\backslash[3,2]^*\longleftrightarrow[7,6,4,3,1],\qquad \dim=612500.
+\end{align}$$
 
 ### 直积表示分解的要点
 
 直积表示分解的目标是把
 
-$$V_\lambda\otimes V_\mu$$
+$$\begin{align}
+V_\lambda\otimes V_\mu
+\end{align}$$
 
 写成不可约表示直和：
 
-$$V_\lambda\otimes V_\mu=\bigoplus_\nu N_{\lambda\mu}^{\nu}V_\nu.$$
+$$\begin{align}
+V_\lambda\otimes V_\mu=\bigoplus_\nu N_{\lambda\mu}^{\nu}V_\nu.
+\end{align}$$
 
 最稳定的流程是：
 
 1. 最高权先相加。$\lambda+\mu$ 一定是直积中的最高最高权，所以 $V_{\lambda+\mu}$ 至少出现一次。
-2. 用 character 分解：
+1. 用 character 分解：
 
-   $$\chi_\lambda\chi_\mu=\sum_\nu N_{\lambda\mu}^{\nu}\chi_\nu.$$
+$$\begin{align}
+\chi_\lambda\chi_\mu=\sum_\nu N_{\lambda\mu}^{\nu}\chi_\nu.
+\end{align}$$
 
-3. 对 $SU(N)$，character 分解等价于 Littlewood-Richardson 规则：
+1. 对 $SU(N)$，character 分解等价于 Littlewood-Richardson 规则：
 
-   $$[\lambda]\otimes[\mu]=\sum_\nu c_{\lambda\mu}^{\nu}[\nu].$$
+$$\begin{align}
+[\lambda]\otimes[\mu]=\sum_\nu c_{\lambda\mu}^{\nu}[\nu].
+\end{align}$$
 
    若是 $SU(N)$，满高为 $N$ 的整列可以删掉，因为它对应行列式表示，在 $SU(N)$ 上平凡。
-4. 对 $SO(N),USp(2r),G_2,F_4$ 等群，最稳妥的方法是先把表示写成 Dynkin label，再用 Weyl character 分解。
-5. 最后做维数检验：
+1. 对 $SO(N),USp(2r),G_2,F_4$ 等群，最稳妥的方法是先把表示写成 Dynkin label，再用 Weyl character 分解。
+1. 最后做维数检验：
 
-   $$\dim V_\lambda\dim V_\mu=\sum_\nu N_{\lambda\mu}^{\nu}\dim V_\nu.$$
+$$\begin{align}
+\dim V_\lambda\dim V_\mu=\sum_\nu N_{\lambda\mu}^{\nu}\dim V_\nu.
+\end{align}$$
 
 若题目要求 Clebsch-Gordan 系数，则在乘积表示的候选最高权空间中解
 
-$$E_{\alpha_i}v=0\qquad \text{for all simple roots }\alpha_i.$$
+$$\begin{align}
+E_{\alpha_i}v=0\qquad \text{for all simple roots }\alpha_i.
+\end{align}$$
 
 解出的最高权态展开系数就是该不可约分量最高权态的 CG 系数；其余态由降算符生成。重数 $N_{\lambda\mu}^{\nu}>1$ 时，需要在同一个最高权空间中取一组正交归一的最高权态。
 
@@ -917,89 +1209,125 @@ $$E_{\alpha_i}v=0\qquad \text{for all simple roots }\alpha_i.$$
 
 按下列步骤证明
 
-$$\sum_{A=1}^{N^2-1} (T_A)_{ac}(T_A)_{bd}=\frac{1}{2}\delta_a^d\delta_b^c-\frac{1}{2N}\delta_a^c\delta_b^d.$$
+$$\begin{align}
+\sum_{A=1}^{N^2-1} (T_A)_{ac}(T_A)_{bd}=\frac{1}{2}\delta_a^d\delta_b^c-\frac{1}{2N}\delta_a^c\delta_b^d.
+\end{align}$$
 
 其中，$(T_A)_{ac}$ 是 $SU(N)$ 群自身表示的生成元。
 
 1. $SU(N)$ 群不变的 $(2,2)$ 阶混合张量 $T_{ab}^{cd}$ 只能是
 
-   $$\delta_a^c\delta_b^d\quad \text{和}\quad \delta_a^d\delta_b^c$$
+$$\begin{align}
+\delta_a^c\delta_b^d\quad \text{和}\quad \delta_a^d\delta_b^c
+\end{align}$$
 
    的线性组合。
 
-2. 定义 $SU(N)$ 群 $(2,2)$ 阶混合张量
+1. 定义 $SU(N)$ 群 $(2,2)$ 阶混合张量
 
-   $$T_{ab}^{cd}=\sum_{A=1}^{N^2-1}(T_A)_{ac}(T_A)_{bd}.$$
+$$\begin{align}
+T_{ab}^{cd}=\sum_{A=1}^{N^2-1}(T_A)_{ac}(T_A)_{bd}.
+\end{align}$$
 
    证明它在 $SU(N)$ 变换中保持不变。
 
-3. 把 $T_{ab}^{cd}$ 按 $\delta$ 函数展开，确定组合系数，最后证明上式。
+1. 把 $T_{ab}^{cd}$ 按 $\delta$ 函数展开，确定组合系数，最后证明上式。
 
 ## solution
 
 取基本表示中的生成元归一化为
 
-$$\operatorname{tr}(T_A T_B)=\frac{1}{2}\delta_{AB},\qquad \operatorname{tr}T_A=0.$$
+$$\begin{align}
+\operatorname{tr}(T_A T_B)=\frac{1}{2}\delta_{AB},\qquad \operatorname{tr}T_A=0.
+\end{align}$$
 
 定义
 
-$$S_{ab}^{cd}=\sum_{A=1}^{N^2-1}(T_A)_a^{\ c}(T_A)_b^{\ d}.$$
+$$\begin{align}
+S_{ab}^{cd}=\sum_{A=1}^{N^2-1}(T_A)_a^{\ c}(T_A)_b^{\ d}.
+\end{align}$$
 
 在 $SU(N)$ 变换下，
 
-$$T_A\mapsto U T_A U^{-1}$$
+$$\begin{align}
+T_A\mapsto U T_A U^{-1}
+\end{align}$$
 
 仍然是 $\mathfrak{su}(N)$ 的一组正交归一基，因此 $S_{ab}^{cd}$ 是 $SU(N)$ 不变的 $(2,2)$ 阶混合张量。由不变张量分类，它只能写成
 
-$$S_{ab}^{cd}=A\delta_a^c\delta_b^d+B\delta_a^d\delta_b^c.$$
+$$\begin{align}
+S_{ab}^{cd}=A\delta_a^c\delta_b^d+B\delta_a^d\delta_b^c.
+\end{align}$$
 
 先令 $c=a$ 并求和。左边为
 
-$$S_{ab}^{ad}=\sum_A (T_A)_a^{\ a}(T_A)_b^{\ d}=0,$$
+$$\begin{align}
+S_{ab}^{ad}=\sum_A (T_A)_a^{\ a}(T_A)_b^{\ d}=0,
+\end{align}$$
 
 因为 $T_A$ 无迹。右边为
 
-$$A N\delta_b^d+B\delta_b^d,$$
+$$\begin{align}
+A N\delta_b^d+B\delta_b^d,
+\end{align}$$
 
 所以
 
-$$B=-AN.$$
+$$\begin{align}
+B=-AN.
+\end{align}$$
 
 再令 $c=b,d=a$ 并求和。左边为
 
-$$S_{ab}^{ba}=\sum_A (T_A)_a^{\ b}(T_A)_b^{\ a}=\sum_A \operatorname{tr}(T_A T_A)=\frac{N^2-1}{2}.$$
+$$\begin{align}
+S_{ab}^{ba}=\sum_A (T_A)_a^{\ b}(T_A)_b^{\ a}=\sum_A \operatorname{tr}(T_A T_A)=\frac{N^2-1}{2}.
+\end{align}$$
 
 右边为
 
-$$A\delta_a^b\delta_b^a+B\delta_a^a\delta_b^b=AN+BN^2.$$
+$$\begin{align}
+A\delta_a^b\delta_b^a+B\delta_a^a\delta_b^b=AN+BN^2.
+\end{align}$$
 
 代入 $B=-AN$ 得
 
-$$-AN(N^2-1)=\frac{N^2-1}{2},\qquad A=-\frac{1}{2N},\qquad B=\frac{1}{2}.$$
+$$\begin{align}
+-AN(N^2-1)=\frac{N^2-1}{2},\qquad A=-\frac{1}{2N},\qquad B=\frac{1}{2}.
+\end{align}$$
 
 因此
 
-$$S_{ab}^{cd}=\frac{1}{2}\delta_a^d\delta_b^c-\frac{1}{2N}\delta_a^c\delta_b^d,$$
+$$\begin{align}
+S_{ab}^{cd}=\frac{1}{2}\delta_a^d\delta_b^c-\frac{1}{2N}\delta_a^c\delta_b^d,
+\end{align}$$
 
 即
 
-$$\sum_{A=1}^{N^2-1}(T_A)_a^{\ c}(T_A)_b^{\ d}=\frac{1}{2}\delta_a^d\delta_b^c-\frac{1}{2N}\delta_a^c\delta_b^d.$$
+$$\begin{align}
+\sum_{A=1}^{N^2-1}(T_A)_a^{\ c}(T_A)_b^{\ d}=\frac{1}{2}\delta_a^d\delta_b^c-\frac{1}{2N}\delta_a^c\delta_b^d.
+\end{align}$$
 
 # problem 19
 
 计算下列杨图标记的 $SO(6)$ 群不可约表示的维数：
 
-$$1.\ [4,2];\qquad 2.\ [3,2];\qquad 3.\ [4,4];\qquad 4.\ [3,1,1];\qquad 5.\ [3,3,1].$$
+$$\begin{align}
+1.\ [4,2];\qquad 2.\ [3,2];\qquad 3.\ [4,4];\qquad 4.\ [3,1,1];\qquad 5.\ [3,3,1].
+\end{align}$$
 
 ## solution
 
 利用 $SO(6)\simeq SU(4)$，也可以直接用 $D_3$ 的 Weyl 维数公式。若普通张量杨图为
 
-$$\lambda=[\lambda_1,\lambda_2,\lambda_3],$$
+$$\begin{align}
+\lambda=[\lambda_1,\lambda_2,\lambda_3],
+\end{align}$$
 
 则对应 $D_3$ Dynkin label 为
 
-$$a=(\lambda_1-\lambda_2,\lambda_2-\lambda_3,\lambda_2+\lambda_3).$$
+$$\begin{align}
+a=(\lambda_1-\lambda_2,\lambda_2-\lambda_3,\lambda_2+\lambda_3).
+\end{align}$$
 
 计算得
 
@@ -1027,11 +1355,15 @@ $$\begin{aligned}
 
 正旋量表示等于在普通张量最高权上加上正手征 spinor 最高权
 
-$$\frac{1}{2}(e_1+e_2+e_3).$$
+$$\begin{align}
+\frac{1}{2}(e_1+e_2+e_3).
+\end{align}$$
 
 因此若普通杨图为 $\lambda=[\lambda_1,\lambda_2,\lambda_3]$，则
 
-$$[+s(\lambda)]\quad\longleftrightarrow\quad (\lambda_1-\lambda_2,\lambda_2-\lambda_3,\lambda_2+\lambda_3+1).$$
+$$\begin{align}
+[+s(\lambda)]\quad\longleftrightarrow\quad (\lambda_1-\lambda_2,\lambda_2-\lambda_3,\lambda_2+\lambda_3+1).
+\end{align}$$
 
 由 $D_3$ Weyl 维数公式得
 
@@ -1051,15 +1383,21 @@ $$[+s(\lambda)]\quad\longleftrightarrow\quad (\lambda_1-\lambda_2,\lambda_2-\lam
 
 记二阶旋量基为
 
-$$x\left(\frac{1}{2}\right),\qquad x\left(-\frac{1}{2}\right).$$
+$$\begin{align}
+x\left(\frac{1}{2}\right),\qquad x\left(-\frac{1}{2}\right).
+\end{align}$$
 
 对 $SO(2\ell+1)$ 的基本旋量表示，状态基可写为
 
-$$W(\alpha_1,\ldots,\alpha_\ell)=x(\alpha_1)\otimes\cdots\otimes x(\alpha_\ell),\qquad \alpha_i=\pm\frac{1}{2},$$
+$$\begin{align}
+W(\alpha_1,\ldots,\alpha_\ell)=x(\alpha_1)\otimes\cdots\otimes x(\alpha_\ell),\qquad \alpha_i=\pm\frac{1}{2},
+\end{align}$$
 
 其权为
 
-$$m=(\alpha_1,\ldots,\alpha_\ell).$$
+$$\begin{align}
+m=(\alpha_1,\ldots,\alpha_\ell).
+\end{align}$$
 
 因此 $SO(7)$ 对应 $B_3$，基本旋量表示维数为 $2^3=8$，基为
 
@@ -1078,7 +1416,9 @@ $$m=(\alpha_1,\ldots,\alpha_\ell).$$
 
 对 $SO(8)$，对应 $D_4$。Dirac 旋量空间有 $2^4=16$ 个
 
-$$W(\alpha_1,\alpha_2,\alpha_3,\alpha_4),\qquad \alpha_i=\pm\frac{1}{2},$$
+$$\begin{align}
+W(\alpha_1,\alpha_2,\alpha_3,\alpha_4),\qquad \alpha_i=\pm\frac{1}{2},
+\end{align}$$
 
 但它分裂成两个 $8$ 维 Weyl 旋量表示。按常用约定，正手征表示 $S_+$ 取负号个数为偶数的状态：
 
@@ -1095,9 +1435,13 @@ $$W(\alpha_1,\alpha_2,\alpha_3,\alpha_4),\qquad \alpha_i=\pm\frac{1}{2},$$
 
 负手征表示 $S_-$ 取负号个数为奇数的状态：
 
-$$W(+,+,+,-),\ W(+,+,-,+),\ W(+,-,+,+),\ W(-,+,+,+),$$
+$$\begin{align}
+W(+,+,+,-),\ W(+,+,-,+),\ W(+,-,+,+),\ W(-,+,+,+),
+\end{align}$$
 
-$$W(+,-,-,-),\ W(-,+,-,-),\ W(-,-,+,-),\ W(-,-,-,+).$$
+$$\begin{align}
+W(+,-,-,-),\ W(-,+,-,-),\ W(-,-,+,-),\ W(-,-,-,+).
+\end{align}$$
 
 它们的权仍然由对应的四个 $\alpha_i$ 组成。
 
@@ -1109,40 +1453,54 @@ $$W(+,-,-,-),\ W(-,+,-,-),\ W(-,-,+,-),\ W(-,-,-,+).$$
 
 利用双覆盖
 
-$$Spin(4)\simeq SU(2)_L\times SU(2)_R,\qquad SO(4)\simeq \frac{SU(2)_L\times SU(2)_R}{\mathbb{Z}_2}.$$
+$$\begin{align}
+Spin(4)\simeq SU(2)_L\times SU(2)_R,\qquad SO(4)\simeq \frac{SU(2)_L\times SU(2)_R}{\mathbb{Z}_2}.
+\end{align}$$
 
 任意 $SO(4)$ 元素可共轭到两个互相正交平面中的旋转：
 
-$$R(\theta_1,\theta_2)=
+$$
+R(\theta_1,\theta_2)=
 \begin{pmatrix}
 \cos\theta_1&-\sin\theta_1&0&0\\
 \sin\theta_1&\cos\theta_1&0&0\\
 0&0&\cos\theta_2&-\sin\theta_2\\
 0&0&\sin\theta_2&\cos\theta_2
-\end{pmatrix}.$$
+\end{pmatrix}.
+$$
 
 因此共轭类由两个角 $\theta_1,\theta_2$ 决定，交换两个平面不改变类。对应到 $SU(2)_L\times SU(2)_R$ 的两个 class angles 是
 
-$$\theta_L=\theta_1+\theta_2,\qquad \theta_R=\theta_1-\theta_2.$$
+$$\begin{align}
+\theta_L=\theta_1+\theta_2,\qquad \theta_R=\theta_1-\theta_2.
+\end{align}$$
 
 不可约表示 $D^{jk}$ 是
 
-$$D^{jk}=D^j_L\otimes D^k_R,$$
+$$\begin{align}
+D^{jk}=D^j_L\otimes D^k_R,
+\end{align}$$
 
 其中 $j,k=0,\frac{1}{2},1,\ldots$，且能降到 $SO(4)$ 的表示需要 $j+k\in\mathbb{Z}$。$SU(2)$ spin-$j$ 表示的特征标为
 
-$$\chi_j(\theta)=\frac{\sin\left((2j+1)\theta/2\right)}{\sin(\theta/2)}.$$
+$$\begin{align}
+\chi_j(\theta)=\frac{\sin\left((2j+1)\theta/2\right)}{\sin(\theta/2)}.
+\end{align}$$
 
 所以
 
-$$\chi_{jk}(\theta_1,\theta_2)=
+$$\begin{align}
+\chi_{jk}(\theta_1,\theta_2)=
 \frac{\sin\left((2j+1)(\theta_1+\theta_2)/2\right)}{\sin\left((\theta_1+\theta_2)/2\right)}
 \times
-\frac{\sin\left((2k+1)(\theta_1-\theta_2)/2\right)}{\sin\left((\theta_1-\theta_2)/2\right)}.$$
+\frac{\sin\left((2k+1)(\theta_1-\theta_2)/2\right)}{\sin\left((\theta_1-\theta_2)/2\right)}.
+\end{align}$$
 
 当分母为零时取连续极限。例如 $D^{1/2,1/2}$ 是 $SO(4)$ 的向量表示，其特征标为
 
-$$\chi_{1/2,1/2}=2\cos\theta_1+2\cos\theta_2,$$
+$$\begin{align}
+\chi_{1/2,1/2}=2\cos\theta_1+2\cos\theta_2,
+\end{align}$$
 
 与四维旋转矩阵的迹一致。
 
@@ -1150,83 +1508,111 @@ $$\chi_{1/2,1/2}=2\cos\theta_1+2\cos\theta_2,$$
 
 计算下面固有洛伦兹变换 $A$ 的六个参数
 
-$$A(\varphi,\theta,\omega,\alpha,\beta,\gamma)=\begin{pmatrix}
+$$
+A(\varphi,\theta,\omega,\alpha,\beta,\gamma)=\begin{pmatrix}
 1 & 0 & 0 & 0 \\
 0 & \sqrt{3}/2 & (\cosh\omega)/2 & -i(\sinh\omega)/2 \\
 0 & -1/2 & \sqrt{3}(\cosh\omega)/2 & -i\sqrt{3}(\sinh\omega)/2 \\
 0 & 0 & i\sinh\omega & \cosh\omega
-\end{pmatrix}.$$
+\end{pmatrix}.
+$$
 
 ## solution
 
 采用前面 Euler 角约定
 
-$$R(\alpha,\beta,\gamma)=R_3(\alpha)R_2(\beta)R_3(\gamma),$$
+$$\begin{align}
+R(\alpha,\beta,\gamma)=R_3(\alpha)R_2(\beta)R_3(\gamma),
+\end{align}$$
 
 并把固有 Lorentz 变换写成
 
-$$A(\varphi,\theta,\omega,\alpha,\beta,\gamma)=R_3(\varphi)R_2(\theta)L_3(\omega)R_3(\alpha)R_2(\beta)R_3(\gamma),$$
+$$\begin{align}
+A(\varphi,\theta,\omega,\alpha,\beta,\gamma)=R_3(\varphi)R_2(\theta)L_3(\omega)R_3(\alpha)R_2(\beta)R_3(\gamma),
+\end{align}$$
 
 其中
 
-$$L_3(\omega)=
+$$
+L_3(\omega)=
 \begin{pmatrix}
 1&0&0&0\\
 0&1&0&0\\
 0&0&\cosh\omega&-i\sinh\omega\\
 0&0&i\sinh\omega&\cosh\omega
-\end{pmatrix}.$$
+\end{pmatrix}.
+$$
 
 题目矩阵的第四列给出 boost 方向：
 
-$$-i\sinh\omega\left(0,\frac{1}{2},\frac{\sqrt{3}}{2}\right).$$
+$$\begin{align}
+-i\sinh\omega\left(0,\frac{1}{2},\frac{\sqrt{3}}{2}\right).
+\end{align}$$
 
 而
 
-$$R_3(\varphi)R_2(\theta)e_3=(\cos\varphi\sin\theta,\sin\varphi\sin\theta,\cos\theta).$$
+$$\begin{align}
+R_3(\varphi)R_2(\theta)e_3=(\cos\varphi\sin\theta,\sin\varphi\sin\theta,\cos\theta).
+\end{align}$$
 
 因此可取
 
-$$\varphi=\frac{\pi}{2},\qquad \theta=\frac{\pi}{6}.$$
+$$\begin{align}
+\varphi=\frac{\pi}{2},\qquad \theta=\frac{\pi}{6}.
+\end{align}$$
 
 剩余右侧 Euler 旋转满足
 
-$$R_3(\alpha)R_2(\beta)R_3(\gamma)=R_3\left(-\frac{\pi}{2}\right),$$
+$$\begin{align}
+R_3(\alpha)R_2(\beta)R_3(\gamma)=R_3\left(-\frac{\pi}{2}\right),
+\end{align}$$
 
 所以取
 
-$$\alpha=0,\qquad \beta=0,\qquad \gamma=-\frac{\pi}{2}.$$
+$$\begin{align}
+\alpha=0,\qquad \beta=0,\qquad \gamma=-\frac{\pi}{2}.
+\end{align}$$
 
 于是六个参数为
 
-$$\boxed{\varphi=\frac{\pi}{2},\quad \theta=\frac{\pi}{6},\quad \omega=\omega,\quad \alpha=0,\quad \beta=0,\quad \gamma=-\frac{\pi}{2}.}$$
+$$\begin{align}
+\boxed{\varphi=\frac{\pi}{2},\quad \theta=\frac{\pi}{6},\quad \omega=\omega,\quad \alpha=0,\quad \beta=0,\quad \gamma=-\frac{\pi}{2}.}
+\end{align}$$
 
 代回可得
 
-$$R_3\left(\frac{\pi}{2}\right)R_2\left(\frac{\pi}{6}\right)L_3(\omega)R_3\left(-\frac{\pi}{2}\right)
+$$
+R_3\left(\frac{\pi}{2}\right)R_2\left(\frac{\pi}{6}\right)L_3(\omega)R_3\left(-\frac{\pi}{2}\right)
 =
 \begin{pmatrix}
 1 & 0 & 0 & 0 \\
 0 & \sqrt{3}/2 & (\cosh\omega)/2 & -i(\sinh\omega)/2 \\
 0 & -1/2 & \sqrt{3}(\cosh\omega)/2 & -i\sqrt{3}(\sinh\omega)/2 \\
 0 & 0 & i\sinh\omega & \cosh\omega
-\end{pmatrix}.$$
+\end{pmatrix}.
+$$
 
 # problem 24
 
 用钩形规则计算 $USp(6)$ 群和 $USp(8)$ 群用下列杨图标记的不可约表示维数：
 
-$$[3],\quad [1^3],\quad [3,3,2],\quad [3,2,1],\quad [4,3,2,1].$$
+$$\begin{align}
+[3],\quad [1^3],\quad [3,3,2],\quad [3,2,1],\quad [4,3,2,1].
+\end{align}$$
 
 ## solution
 
 对 $USp(2r)$，杨图
 
-$$\lambda=[\lambda_1,\ldots,\lambda_r]$$
+$$\begin{align}
+\lambda=[\lambda_1,\ldots,\lambda_r]
+\end{align}$$
 
 对应 $C_r$ Dynkin label
 
-$$(\lambda_1-\lambda_2,\lambda_2-\lambda_3,\ldots,\lambda_{r-1}-\lambda_r,\lambda_r).$$
+$$\begin{align}
+(\lambda_1-\lambda_2,\lambda_2-\lambda_3,\ldots,\lambda_{r-1}-\lambda_r,\lambda_r).
+\end{align}$$
 
 用 $C_r$ Weyl 维数公式计算得
 
@@ -1244,7 +1630,9 @@ $$(\lambda_1-\lambda_2,\lambda_2-\lambda_3,\ldots,\lambda_{r-1}-\lambda_r,\lambd
 
 用钩形规则计算 $USp(2\ell)$ 群，$\ell\geq 3$，用三行杨图
 
-$$[n,m,p]$$
+$$\begin{align}
+[n,m,p]
+\end{align}$$
 
 标记的不可约表示维数。
 
@@ -1252,19 +1640,27 @@ $$[n,m,p]$$
 
 对 $USp(2\ell)$，三行杨图
 
-$$[n,m,p],\qquad n\geq m\geq p\geq 0,$$
+$$\begin{align}
+[n,m,p],\qquad n\geq m\geq p\geq 0,
+\end{align}$$
 
 对应 $C_\ell$ 最高权
 
-$$\lambda=n e_1+m e_2+p e_3.$$
+$$\begin{align}
+\lambda=n e_1+m e_2+p e_3.
+\end{align}$$
 
 Weyl 维数公式可写成 symplectic hook rule 的形式：
 
-$$\dim[n,m,p]=\prod_{i=1}^{\ell}\frac{\lambda_i+\ell-i+1}{\ell-i+1}\prod_{1\leq i<j\leq \ell}\frac{\lambda_i-\lambda_j+j-i}{j-i}\frac{\lambda_i+\lambda_j+2\ell-i-j+2}{2\ell-i-j+2},$$
+$$\begin{align}
+\dim[n,m,p]=\prod_{i=1}^{\ell}\frac{\lambda_i+\ell-i+1}{\ell-i+1}\prod_{1\leq i<j\leq \ell}\frac{\lambda_i-\lambda_j+j-i}{j-i}\frac{\lambda_i+\lambda_j+2\ell-i-j+2}{2\ell-i-j+2},
+\end{align}$$
 
 其中
 
-$$\lambda_1=n,\qquad \lambda_2=m,\qquad \lambda_3=p,\qquad \lambda_i=0\quad (i\geq 4).$$
+$$\begin{align}
+\lambda_1=n,\qquad \lambda_2=m,\qquad \lambda_3=p,\qquad \lambda_i=0\quad (i\geq 4).
+\end{align}$$
 
 把尾部的 $\lambda_i=0$ 代入，可得显式三行公式
 
@@ -1287,29 +1683,41 @@ $$\begin{align}
 
 这类表示维数题的核心步骤是
 
-$$\text{题目标签}\longrightarrow \text{最高权 }\lambda \longrightarrow \text{Weyl 维数公式或 hook formula}\longrightarrow \dim V_\lambda.$$
+$$\begin{align}
+\text{题目标签}\longrightarrow \text{最高权 }\lambda \longrightarrow \text{Weyl 维数公式或 hook formula}\longrightarrow \dim V_\lambda.
+\end{align}$$
 
 第一步是识别群对应的根系：
 
-$$SU(N)\leftrightarrow A_{N-1},\qquad SO(2r)\leftrightarrow D_r,\qquad SO(2r+1)\leftrightarrow B_r,\qquad USp(2r)\leftrightarrow C_r.$$
+$$\begin{align}
+SU(N)\leftrightarrow A_{N-1},\qquad SO(2r)\leftrightarrow D_r,\qquad SO(2r+1)\leftrightarrow B_r,\qquad USp(2r)\leftrightarrow C_r.
+\end{align}$$
 
 第二步是把题目中的杨图、旋量标签或混合张量标签翻译成 Dynkin label。例如 $SU(N)$ 杨图 $\lambda=[\lambda_1,\lambda_2,\ldots]$ 对应
 
-$$(\lambda_1-\lambda_2,\lambda_2-\lambda_3,\ldots).$$
+$$\begin{align}
+(\lambda_1-\lambda_2,\lambda_2-\lambda_3,\ldots).
+\end{align}$$
 
 对 $USp(2r)$，杨图 $\lambda=[\lambda_1,\ldots,\lambda_r]$ 对应
 
-$$(\lambda_1-\lambda_2,\ldots,\lambda_{r-1}-\lambda_r,\lambda_r).$$
+$$\begin{align}
+(\lambda_1-\lambda_2,\ldots,\lambda_{r-1}-\lambda_r,\lambda_r).
+\end{align}$$
 
 对 $SO(6)\simeq D_3$，普通张量杨图 $[\lambda_1,\lambda_2,\lambda_3]$ 对应
 
-$$(\lambda_1-\lambda_2,\lambda_2-\lambda_3,\lambda_2+\lambda_3),$$
+$$\begin{align}
+(\lambda_1-\lambda_2,\lambda_2-\lambda_3,\lambda_2+\lambda_3),
+\end{align}$$
 
 正旋量表示再把最后一个 Dynkin label 加 $1$。
 
 第三步使用统一公式
 
-$$\dim V_\lambda=\prod_{\alpha>0}\frac{(\lambda+\rho,\alpha)}{(\rho,\alpha)},$$
+$$\begin{align}
+\dim V_\lambda=\prod_{\alpha>0}\frac{(\lambda+\rho,\alpha)}{(\rho,\alpha)},
+\end{align}$$
 
 其中 $\rho$ 是正根半和。对 $SU(N)$，这个公式化为普通 hook formula；对 $USp(2r)$，它化为 symplectic hook rule；对 $SO(N)$，可以使用 orthogonal hook rule，也可以直接转成 $B_r/D_r$ 最高权后套 Weyl 公式。
 

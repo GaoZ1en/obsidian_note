@@ -4,7 +4,8 @@ again, gravitational perturbation theory
 
 define
 
-$$\tag{1.1}
+$$
+\tag{1.1}
 \begin{align}
 \mathfrak{g}^{\mu \nu}=\eta^{\mu \nu}-h^{\mu \nu}
 \end{align}
@@ -12,7 +13,8 @@ $$
 
 consider a black hole with a point source
 
-$$\tag{1.2}
+$$
+\tag{1.2}
 \begin{align}
 S & =\int \mathrm{d}^{4x}\left( \frac{1}{16\pi G}R+\frac{1}{2}j^{\mu \nu}g_{\mu \nu} \right) \\
 j^{\mu \nu} & =Mv^{\mu}v^{\nu}\delta^{3}(x)
@@ -21,7 +23,8 @@ $$
 
 then the generating functional
 
-$$\tag{1.3}
+$$
+\tag{1.3}
 \begin{align}
 \exp{W[]}
 \end{align}
@@ -33,7 +36,8 @@ introduce new variables $\displaystyle{\tilde{\mathfrak{g}}_{\mu \nu}}$ so that 
 
 by induction, we can prove that
 
-$$\tag{1.4}
+$$
+\tag{1.4}
 \begin{align}
 h^{00} & =8\left( 1-\frac{M}{r} \right)^{-1}-8-\frac{4M}{r}-\frac{M^{2}}{r^{2}} \\
 h^{ij} & =\frac{M^{2}x^{i}x^{j}}{r^{2}}

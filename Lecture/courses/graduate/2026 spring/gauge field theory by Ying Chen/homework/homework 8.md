@@ -72,7 +72,7 @@ $$\begin{align}
 
 at one-loop level
 1. calculate the self-energy 1PI functions for both the scalar and the fermion;
-2. under dimensional regularization, discuss the 1-loop renormalization of mass and wave function
+1. under dimensional regularization, discuss the 1-loop renormalization of mass and wave function
 
 ## solution
 
@@ -212,7 +212,7 @@ Only the pole terms are displayed; the finite parts depend on the renormalizatio
 
 if $\displaystyle{4m_{f0}> m_{0}> 2m_{f 0}}$, the scalar will decay into an fermion-antifermion pair.
 1. discuss the imaginary part of scalar self-energy
-2. calculate the decay width at tree level, and verify the opitcal theorem.
+1. calculate the decay width at tree level, and verify the opitcal theorem.
 
 ## solution
 

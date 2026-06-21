@@ -1,4 +1,4 @@
-we follow results obtained in [[Articles/Quantization in AdS3/ads4 linearized gravity/symplectic norm|symplectic norm]]. and try to find a natural generalization of ads3 case.
+we follow results obtained in [[Articles/Quantization in AdS/ads4 linearized gravity/symplectic norm|symplectic norm]]. and try to find a natural generalization of ads3 case.
 
 it seems to be convenient to consider the following operator trace
 
@@ -11,7 +11,7 @@ where $\displaystyle{\mathcal{H}}$ is the Fock space, and $\displaystyle{H,J_{3}
 
 ## massive scalar
 
-as written in [[Articles/Quantization in AdS3/ads4 linearized gravity/symplectic norm|symplectic norm]], the scalar primary is a rotational singlet,
+as written in [[Articles/Quantization in AdS/ads4 linearized gravity/symplectic norm|symplectic norm]], the scalar primary is a rotational singlet,
 
 $$\begin{align}
 \mathcal{H}_{0}^{\mathrm{scalar}} & =V_{0}.
@@ -326,4 +326,4 @@ Z_{1}^{(s),\mathrm{massless}}(\beta,0) & =\dfrac{q^{s+1}\left((2s+1)-(2s-1)q\rig
 
 The cases $\displaystyle{s=1}$ and $\displaystyle{s=2}$ reproduce the Proca/massive TT formulas and the Maxwell/graviton short-module formulas above.
 
-module-character matching with the heat-kernel / Harish-Chandra character formula in general dimension is presented in [[Articles/Quantization in AdS3/ads4 linearized gravity/heat kernel|heat kernel]]
+module-character matching with the heat-kernel / Harish-Chandra character formula in general dimension is presented in [[Articles/Quantization in AdS/ads4 linearized gravity/heat kernel|heat kernel]]

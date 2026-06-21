@@ -6,7 +6,7 @@ summary: ""
 
 # 2. Reformulating the model as a Hamiltonian system
 
-In this section, we apply the covariant phase space formalism reviewed in Section 1 to the Proca-Chern-Simons model and rewrite it as a Hamiltonian system. We also discuss the Noether charges associated with the Killing symmetries. As shown in [[Articles/Quantization in AdS3/Proca-Chern-Simons/arxiv/appendix_a|Appendix_A]], the near-boundary contributions at spatial infinity $\Gamma$ vanish under our asymptotic boundary conditions.
+In this section, we apply the covariant phase space formalism reviewed in Section 1 to the Proca-Chern-Simons model and rewrite it as a Hamiltonian system. We also discuss the Noether charges associated with the Killing symmetries. As shown in [[Articles/Quantization in AdS/Proca-Chern-Simons/arxiv/appendix_a|Appendix_A]], the near-boundary contributions at spatial infinity $\Gamma$ vanish under our asymptotic boundary conditions.
 
 ## 2.1 The Hamiltonian system
 
@@ -32,7 +32,7 @@ $$\begin{align}
 \tau ^{\mu} & =\frac{1}{\sqrt{ 1+r^{2} }}\delta _{0}^{\mu}
 \end{align}$$
 
-The contributions from the near-boundary region are finite. In particular, the boundary term produced by integration by parts vanishes at spatial infinity, as verified in [[Articles/Quantization in AdS3/Proca-Chern-Simons/arxiv/another template/appendix_a|Appendix A]].
+The contributions from the near-boundary region are finite. In particular, the boundary term produced by integration by parts vanishes at spatial infinity, as verified in [[Articles/Quantization in AdS/Proca-Chern-Simons/arxiv/another template/appendix_a|Appendix A]].
 
 From this expression we read off the equations of motion $E^\mu = 0$:
 
@@ -125,14 +125,11 @@ X_{\xi}\cdot \delta S & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\xi ^{\rho}\nabla _{
 
 The contribution from spatial infinity $\Gamma$ is finite and vanishes because of the asymptotic behaviors of $\xi ^{\mu}$ and $A^{\mu}$. We therefore identify
 
-
 $$\begin{align}
 \alpha _{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\rho}\xi ^{\rho}\left(\frac{1}{4}F_{\mu \nu}F^{\mu \nu}+\frac{1}{2}\mu ^{2}A_{\mu}A^{\mu}-\frac{k}{4\pi}\varepsilon ^{\mu \nu \lambda}A_{\mu}\nabla _{\nu}A_{\lambda}\right)
 \end{align}$$
 
 Following the prescription reviewed in Section 1, the corresponding Noether charge evaluated on $\widetilde{\mathcal{P}}$ is
-
-
 
 $$\begin{align}
 H_{\xi}|_{\widetilde{\mathcal{P}}} & =(X_{\xi}\cdot \theta-\alpha _{\xi})|_{\widetilde{\mathcal{P}}} \\

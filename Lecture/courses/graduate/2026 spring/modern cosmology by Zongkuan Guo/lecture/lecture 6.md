@@ -27,4 +27,3 @@ $$\begin{align}
 p(t, \mathbf{x}) & =\bar{p}(t)+\delta p \\
 v(t, \mathbf{x}) & =\bar{v}(t)+\delta v
 \end{align}$$
-

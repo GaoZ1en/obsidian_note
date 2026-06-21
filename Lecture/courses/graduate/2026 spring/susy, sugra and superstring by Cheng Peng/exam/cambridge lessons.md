@@ -43,10 +43,10 @@ Cambridge papers often insist that the student can still do the classical theory
 The most typical questions are:
 
 1. Derive the equations of motion and boundary conditions from the Polyakov action.
-2. Derive the stress tensor and Virasoro constraints.
-3. Prove target-space translation or Lorentz invariance and compute the corresponding charges.
-4. Write an explicit rotating open-string solution and extract $E$ and $J$.
-5. Show how a string stretched between D-branes acquires a classical mass contribution.
+1. Derive the stress tensor and Virasoro constraints.
+1. Prove target-space translation or Lorentz invariance and compute the corresponding charges.
+1. Write an explicit rotating open-string solution and extract $E$ and $J$.
+1. Show how a string stretched between D-branes acquires a classical mass contribution.
 
 ## What to prepare
 
@@ -96,10 +96,10 @@ The course already teaches the ingredients, but the Part III papers push one ste
 Typical forms are:
 
 1. Derive the tree-level $n$-tachyon amplitude from the Polyakov path integral.
-2. Distinguish integrated and unintegrated vertex operators.
-3. Explain why the amplitude is independent of insertion points after gauge fixing.
-4. Derive the four-point tachyon amplitude and discuss crossing symmetry.
-5. Use conformal weight $(1,1)$ or $1$ to recover the on-shell condition.
+1. Distinguish integrated and unintegrated vertex operators.
+1. Explain why the amplitude is independent of insertion points after gauge fixing.
+1. Derive the four-point tachyon amplitude and discuss crossing symmetry.
+1. Use conformal weight $(1,1)$ or $1$ to recover the on-shell condition.
 
 ## What to prepare
 
@@ -154,10 +154,10 @@ They often want the student to explain:
 The common question shapes are:
 
 1. Derive the conformal weights and central charge of a ghost system.
-2. Explain why ghosts appear when gauge fixing the Polyakov path integral.
-3. Write the BRST charge and explain the meaning of each term.
-4. Show that nilpotency requires vanishing total anomaly.
-5. Explain the meaning of BRST-closed and BRST-exact states.
+1. Explain why ghosts appear when gauge fixing the Polyakov path integral.
+1. Write the BRST charge and explain the meaning of each term.
+1. Show that nilpotency requires vanishing total anomaly.
+1. Explain the meaning of BRST-closed and BRST-exact states.
 
 ## What to prepare
 
@@ -204,10 +204,10 @@ The standard circle compactification problem is pushed until it reveals:
 Typical questions:
 
 1. Derive the compact-boson mode expansion and mass formula.
-2. Show that the spectrum is invariant under $R\leftrightarrow \alpha'/R$.
-3. Explain how T-duality exchanges Neumann and Dirichlet conditions for open strings.
-4. Show how extra massless states appear at the self-dual radius.
-5. Explain why T-duality exchanges Type IIA and Type IIB.
+1. Show that the spectrum is invariant under $R\leftrightarrow \alpha'/R$.
+1. Explain how T-duality exchanges Neumann and Dirichlet conditions for open strings.
+1. Show how extra massless states appear at the self-dual radius.
+1. Explain why T-duality exchanges Type IIA and Type IIB.
 
 ## What to prepare
 
@@ -259,10 +259,10 @@ At the more advanced end they also add:
 Typical questions:
 
 1. Show that $p+1$ Neumann directions define a D$p$-brane.
-2. Derive the mass formula of a string stretched between separated branes.
-3. Explain why coincident branes enhance the gauge symmetry.
-4. Explain how RR form fields couple to D-branes.
-5. Explain the BPS no-force condition for parallel branes.
+1. Derive the mass formula of a string stretched between separated branes.
+1. Explain why coincident branes enhance the gauge symmetry.
+1. Explain how RR form fields couple to D-branes.
+1. Explain the BPS no-force condition for parallel branes.
 
 ## What to prepare
 
@@ -312,10 +312,10 @@ Technically, this means:
 Typical forms:
 
 1. Write the sigma-model action in background fields.
-2. State the leading beta functions for $G$, $B$, and $\Phi$.
-3. Explain why the dilaton equation is not fully independent.
-4. Expand a simple curved target-space sigma model around a background point and identify the divergent renormalization diagram.
-5. Explain why a given curved space is or is not automatically a consistent string background.
+1. State the leading beta functions for $G$, $B$, and $\Phi$.
+1. Explain why the dilaton equation is not fully independent.
+1. Expand a simple curved target-space sigma model around a background point and identify the divergent renormalization diagram.
+1. Explain why a given curved space is or is not automatically a consistent string background.
 
 ## What to prepare
 
@@ -362,10 +362,10 @@ Instead of classifying spectra only in Hilbert-space language, this topic asks f
 Typical questions:
 
 1. Write the torus partition function.
-2. Explain why modular invariance is required.
-3. Explain what the $T$ and $S$ transformations test.
-4. Show why one spin structure alone is not enough.
-5. Explain why heterotic lattices must be even and self-dual.
+1. Explain why modular invariance is required.
+1. Explain what the $T$ and $S$ transformations test.
+1. Show why one spin structure alone is not enough.
+1. Explain why heterotic lattices must be even and self-dual.
 
 ## What to prepare
 
@@ -405,14 +405,14 @@ This is the first place where the worldsheet theory is no longer just free boson
 Typical questions:
 
 1. Derive the conserved chiral currents of a WZW model.
-2. Write the stress tensor in terms of currents.
-3. Explain the factorized solution
+1. Write the stress tensor in terms of currents.
+1. Explain the factorized solution
 
-$$
+$$\begin{align}
 g(x^{+},x^{-})=g_{+}(x^{+})g_{-}(x^{-}).
-$$
+\end{align}$$
 
-4. Explain why a curved target can still yield an exact CFT.
+1. Explain why a curved target can still yield an exact CFT.
 
 ## What to prepare
 
@@ -438,25 +438,25 @@ Low for the current exam, unless the instructor explicitly signals interest in A
 These are the best extensions to prepare if the aim is still the Cheng Peng exam rather than a full Part III course:
 
 1. classical string mechanics,
-2. vertex operators and tree-level amplitudes,
-3. ghosts, BRST, and critical dimension,
-4. compactification and T-duality.
+1. vertex operators and tree-level amplitudes,
+1. ghosts, BRST, and critical dimension,
+1. compactification and T-duality.
 
 ## Second line
 
 These are useful if time allows:
 
 1. D-branes as physical boundary conditions,
-2. background fields and Weyl-invariance constraints,
-3. one-loop partition functions and modular invariance.
+1. background fields and Weyl-invariance constraints,
+1. one-loop partition functions and modular invariance.
 
 ## Lowest priority for the current exam
 
 These are valuable but less likely to be the first payoff:
 
 1. WZW and exact curved-background models,
-2. advanced BPS brane physics and M-theory interpretation,
-3. Hagedorn thermodynamics beyond the conceptual slogan.
+1. advanced BPS brane physics and M-theory interpretation,
+1. Hagedorn thermodynamics beyond the conceptual slogan.
 
 # If one wanted to turn these into new revision sheets
 
@@ -465,17 +465,17 @@ The most efficient next three mini-notes would be:
 1. `BRST and ghost logic`
    Because it closes the conceptual gap between constraints and physical states.
 
-2. `Vertex operators and the 4-tachyon amplitude`
+1. `Vertex operators and the 4-tachyon amplitude`
    Because it is the most exam-like extension of the existing CFT material.
 
-3. `Classical string solutions and Noether charges`
+1. `Classical string solutions and Noether charges`
    Because Cambridge repeatedly treats this as standard string mechanics rather than optional background material.
 
 # Final lesson
 
 The strongest lesson from the Cambridge papers is that string theory is examined as a connected hierarchy:
 
-$$
+$$\begin{align}
 \text{classical worldsheet}
 \to
 \text{quantized CFT}
@@ -485,6 +485,6 @@ $$
 \text{vertex operators and amplitudes}
 \to
 \text{spacetime interpretation}.
-$$
+\end{align}$$
 
 If revision is organized in that order, almost every Part III question becomes a variation on a familiar chain rather than a new topic.

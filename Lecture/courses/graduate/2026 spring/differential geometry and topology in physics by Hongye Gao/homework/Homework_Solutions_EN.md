@@ -12,8 +12,8 @@ Let $(X, d)$ be a metric space. Verify whether $d_1$ and $d_2$ are distance func
 
 **Metric axioms** (for all $x,y,z \in X$):
 1. **Non-negativity**: $d(x,y) \ge 0$, and $d(x,y) = 0 \iff x = y$;
-2. **Symmetry**: $d(x,y) = d(y,x)$;
-3. **Triangle inequality**: $d(x,z) \le d(x,y) + d(y,z)$.
+1. **Symmetry**: $d(x,y) = d(y,x)$;
+1. **Triangle inequality**: $d(x,z) \le d(x,y) + d(y,z)$.
 
 ---
 
@@ -27,14 +27,12 @@ Define $f(t) = \frac{t}{1+t}$ for $t \ge 0$. Then $f'(t) = \frac{1}{(1+t)^2} > 0
 
 *Triangle inequality*: Since $f$ is increasing, $d(x,z) \le d(x,y) + d(y,z)$ implies $f(d(x,z)) \le f(d(x,y) + d(y,z))$. For a concave function with $f(0) = 0$, we have $f(a+b) \le f(a) + f(b)$ for $a,b \ge 0$. Proof:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 f(a) + f(b) - f(a+b)
 &= \frac{a}{1+a} + \frac{b}{1+b} - \frac{a+b}{1+a+b} \\[4pt]
 &= \frac{a(1+b)(1+a+b) + b(1+a)(1+a+b) - (a+b)(1+a)(1+b)}{(1+a)(1+b)(1+a+b)} \\[4pt]
 &= \frac{2ab + a^2b + ab^2}{(1+a)(1+b)(1+a+b)} \ge 0.
-\end{aligned}
-$$
+\end{aligned}$$
 
 Hence $d_1(x,z) \le d_1(x,y) + d_1(y,z)$. $\checkmark$
 
@@ -59,9 +57,9 @@ Hence $d_1(x,z) \le d_1(x,y) + d_1(y,z)$. $\checkmark$
 
 Now, using the triangle inequality of $d$ and monotonicity of $t \mapsto \min(t, 1)$:
 
-$$
+$$\begin{align}
 d_2(x,z) = \min(d(x,z), 1) \le \min(d(x,y) + d(y,z), 1) \le \min(d(x,y), 1) + \min(d(y,z), 1) = d_2(x,y) + d_2(y,z).
-$$
+\end{align}$$
 
 $\checkmark$
 
@@ -79,15 +77,13 @@ Let $X$ be an arbitrary set and $A_j \subseteq X$ for $j \in J$. The complement 
 
 *Proof*:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 x \in \Bigl(\bigcap_{j \in J} A_j\Bigr)^c
 &\iff x \notin \bigcap_{j \in J} A_j \\
 &\iff \exists\, j \in J \text{ such that } x \notin A_j \quad (\text{negation of "for all $j$, $x \in A_j$"}) \\
 &\iff \exists\, j \in J \text{ such that } x \in A_j^c \\
 &\iff x \in \bigcup_{j \in J} A_j^c.
-\end{aligned}
-$$
+\end{aligned}$$
 
 Thus the two sets are equal. $\square$
 
@@ -95,15 +91,13 @@ Thus the two sets are equal. $\square$
 
 *Proof*:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 x \in \Bigl(\bigcup_{j \in J} A_j\Bigr)^c
 &\iff x \notin \bigcup_{j \in J} A_j \\
 &\iff \forall\, j \in J,\; x \notin A_j \quad (\text{negation of "there exists $j$ with $x \in A_j$"}) \\
 &\iff \forall\, j \in J,\; x \in A_j^c \\
 &\iff x \in \bigcap_{j \in J} A_j^c. \quad \square
-\end{aligned}
-$$
+\end{aligned}$$
 
 ---
 
@@ -115,9 +109,9 @@ Let $\sim$ denote the homeomorphism relation: $X \sim Y$ iff there exists a home
 
 1. **Reflexivity**: $\operatorname{Id}_X: X \to X$ is a homeomorphism (bijective, continuous, inverse is itself). Hence $X \sim X$.
 
-2. **Symmetry**: If $X \sim Y$, there exists a homeomorphism $f: X \to Y$. Then $f^{-1}: Y \to X$ is also bijective, continuous, with continuous inverse $(f^{-1})^{-1} = f$. Hence $Y \sim X$.
+1. **Symmetry**: If $X \sim Y$, there exists a homeomorphism $f: X \to Y$. Then $f^{-1}: Y \to X$ is also bijective, continuous, with continuous inverse $(f^{-1})^{-1} = f$. Hence $Y \sim X$.
 
-3. **Transitivity**: If $X \sim Y$ (via $f: X \to Y$) and $Y \sim Z$ (via $g: Y \to Z$), then $g \circ f: X \to Z$ is:
+1. **Transitivity**: If $X \sim Y$ (via $f: X \to Y$) and $Y \sim Z$ (via $g: Y \to Z$), then $g \circ f: X \to Z$ is:
    - Bijective (composition of bijections);
    - Continuous (composition of continuous maps);
    - Has continuous inverse $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$ (composition of continuous maps).
@@ -159,8 +153,8 @@ All three conditions are satisfied, so homeomorphism is an equivalence relation.
 
 Recall the axioms for a topology $\tau$ on $X$:
 1. $\varnothing \in \tau$ and $X \in \tau$;
-2. Arbitrary unions of members of $\tau$ belong to $\tau$;
-3. Finite intersections of members of $\tau$ belong to $\tau$.
+1. Arbitrary unions of members of $\tau$ belong to $\tau$;
+1. Finite intersections of members of $\tau$ belong to $\tau$.
 
 ---
 
@@ -193,8 +187,8 @@ Furthermore: take two sets whose complements are infinite. Their intersection ma
 Wait — the problem says $X$ is an infinite set, not necessarily uncountable. If $X$ is countably infinite, then $X^c = \varnothing$ (countable) so $\varnothing \in \tau_3$, and $X \in \tau_3$ by definition. In this case:
 
 1. $\varnothing, X \in \tau_3$. $\checkmark$
-2. Let $\{U_\alpha\}$ be a collection in $\tau_3$. Either some $U_\alpha = X$, giving $\bigcup U_\alpha = X \in \tau_3$, or all $U_\alpha \neq X$ so each $U_\alpha^c$ is countable. Then $(\bigcup U_\alpha)^c = \bigcap U_\alpha^c$ is an intersection of countable sets, hence countable. So $\bigcup U_\alpha \in \tau_3$.
-3. For a finite collection $\{U_i\}_{i=1}^n$, either some $U_i = X$ (intersection is the other sets, still in $\tau_3$ by a similar argument), or all $U_i^c$ are countable. Then $(\bigcap U_i)^c = \bigcup U_i^c$, a finite union of countable sets, hence countable. So $\bigcap U_i \in \tau_3$.
+1. Let $\{U_\alpha\}$ be a collection in $\tau_3$. Either some $U_\alpha = X$, giving $\bigcup U_\alpha = X \in \tau_3$, or all $U_\alpha \neq X$ so each $U_\alpha^c$ is countable. Then $(\bigcup U_\alpha)^c = \bigcap U_\alpha^c$ is an intersection of countable sets, hence countable. So $\bigcup U_\alpha \in \tau_3$.
+1. For a finite collection $\{U_i\}_{i=1}^n$, either some $U_i = X$ (intersection is the other sets, still in $\tau_3$ by a similar argument), or all $U_i^c$ are countable. Then $(\bigcap U_i)^c = \bigcup U_i^c$, a finite union of countable sets, hence countable. So $\bigcap U_i \in \tau_3$.
 
 Thus for countably infinite $X$, $\tau_3$ **is a topology** (the cocountable topology coincides with the cofinite topology when $X$ is countable). For uncountable $X$, we must also check $\varnothing$: $\varnothing^c = X$ is uncountable and $\varnothing \neq X$, so $\varnothing \notin \tau_3$. In this case $\tau_3$ fails the first axiom (**not a topology** unless we add $\varnothing$).
 
@@ -220,15 +214,15 @@ Thus for countably infinite $X$, $\tau_3$ **is a topology** (the cocountable top
 
 *Proof*: Define the quadratic polynomial in $\lambda \in \mathbb{R}$:
 
-$$
+$$\begin{align}
 P(\lambda) := \sum_{j=1}^n (x^j + \lambda y^j)^2 = \sum_{j=1}^n (x^j)^2 + 2\lambda \sum_{j=1}^n x^j y^j + \lambda^2 \sum_{j=1}^n (y^j)^2 \ge 0.
-$$
+\end{align}$$
 
 The quadratic $P(\lambda) = A + 2B\lambda + C\lambda^2$ with $A = \sum (x^j)^2$, $B = \sum x^j y^j$, $C = \sum (y^j)^2$ is non-negative for all $\lambda$. Its discriminant must satisfy $B^2 - AC \le 0$. Hence:
 
-$$
+$$\begin{align}
 \Bigl(\sum_{j=1}^n x^j y^j\Bigr)^2 \le \Bigl(\sum_{j=1}^n (x^j)^2\Bigr) \Bigl(\sum_{j=1}^n (y^j)^2\Bigr). \quad \square
-$$
+\end{align}$$
 
 ---
 
@@ -236,14 +230,12 @@ $$
 
 *Proof*:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 \|x+y\|^2 &= \sum_{j=1}^n (x^j + y^j)^2
 = \sum_{j=1}^n (x^j)^2 + 2\sum_{j=1}^n x^j y^j + \sum_{j=1}^n (y^j)^2 \\
 &\le \|x\|^2 + 2\|x\|\|y\| + \|y\|^2 \quad \text{(by Cauchy-Schwarz: } \sum x^j y^j \le \|x\|\|y\|\text{)} \\
 &= (\|x\| + \|y\|)^2.
-\end{aligned}
-$$
+\end{aligned}$$
 
 Taking square roots (all quantities are non-negative) gives $\|x+y\| \le \|x\| + \|y\|$. $\square$
 
@@ -253,13 +245,13 @@ Taking square roots (all quantities are non-negative) gives $\|x+y\| \le \|x\| +
 
 1. **Non-negativity**: $d(x,y) = \|x-y\| \ge 0$ by definition of the norm. $d(x,y) = 0 \iff \|x-y\| = 0 \iff x-y = 0 \iff x = y$.
 
-2. **Symmetry**: $d(x,y) = \|x-y\| = \|(-1)(y-x)\| = |-1| \cdot \|y-x\| = \|y-x\| = d(y,x)$.
+1. **Symmetry**: $d(x,y) = \|x-y\| = \|(-1)(y-x)\| = |-1| \cdot \|y-x\| = \|y-x\| = d(y,x)$.
 
-3. **Triangle inequality**: For any $x,y,z \in \mathbb{R}^n$:
+1. **Triangle inequality**: For any $x,y,z \in \mathbb{R}^n$:
 
-   $$
-   d(x,z) = \|x-z\| = \|(x-y) + (y-z)\| \le \|x-y\| + \|y-z\| = d(x,y) + d(y,z),
-   $$
+$$\begin{align}
+d(x,z) = \|x-z\| = \|(x-y) + (y-z)\| \le \|x-y\| + \|y-z\| = d(x,y) + d(y,z),
+\end{align}$$
 
    where we used Minkowski's inequality. $\square$
 
@@ -273,15 +265,15 @@ Recall: The Euclidean topology on $\mathbb{R}$ is generated by open intervals $(
 
 - **Interior**: $\mathring{\mathbb{Q}}$ is the largest open set contained in $\mathbb{Q}$. Any non-empty open interval contains irrational numbers, so no non-empty open set is contained entirely in $\mathbb{Q}$. The only open subset of $\mathbb{Q}$ is $\varnothing$. Hence:
 
-  $$
-  \mathring{\mathbb{Q}} = \varnothing.
-  $$
+$$\begin{align}
+\mathring{\mathbb{Q}} = \varnothing.
+\end{align}$$
 
 - **Closure**: $\overline{\mathbb{Q}}$ is the smallest closed set containing $\mathbb{Q}$. Since $\mathbb{Q}$ is dense in $\mathbb{R}$ (between any two reals there is a rational), every real number is a limit point of $\mathbb{Q}$. Hence:
 
-  $$
-  \overline{\mathbb{Q}} = \mathbb{R}.
-  $$
+$$\begin{align}
+\overline{\mathbb{Q}} = \mathbb{R}.
+\end{align}$$
 
 - **Boundary**: $\partial\mathbb{Q} = \overline{\mathbb{Q}} \setminus \mathring{\mathbb{Q}} = \mathbb{R} \setminus \varnothing = \mathbb{R}$.
 
@@ -293,15 +285,15 @@ Recall: The Euclidean topology on $\mathbb{R}$ is generated by open intervals $(
 
 Define the map $f: B^n \to \mathbb{R}^n$ by
 
-$$
+$$\begin{align}
 f(x) := \frac{x}{1 - \|x\|},
-$$
+\end{align}$$
 
 with inverse $g: \mathbb{R}^n \to B^n$ given by
 
-$$
+$$\begin{align}
 g(y) := \frac{y}{1 + \|y\|}.
-$$
+\end{align}$$
 
 *Verification*:
 - For $x \in B^n$, $\|x\| < 1$, so $1 - \|x\| > 0$, and $\|f(x)\| = \frac{\|x\|}{1-\|x\|} < \infty$. So $f(x) \in \mathbb{R}^n$.
@@ -342,37 +334,37 @@ The unit sphere is $S^{n-1} = \{ (x^1, \dots, x^n) \in \mathbb{R}^n \mid \sum_{i
 
 Let $P = (x^1, \dots, x^n) \in S^{n-1} \setminus \{N\}$. The line through $N$ and $P$ is parametrized by $N + t(P - N)$, $t \in \mathbb{R}$. Its intersection with the hyperplane $x^n = 0$ occurs when the $n$-th coordinate vanishes:
 
-$$
+$$\begin{align}
 1 + t(x^n - 1) = 0 \implies t = \frac{1}{1 - x^n}.
-$$
+\end{align}$$
 
 The projection point $\varphi_N(P) = (u^1, \dots, u^{n-1}, 0)$ has coordinates
 
-$$
+$$\begin{align}
 u^i = 0 + t(x^i - 0) = \frac{x^i}{1 - x^n}, \qquad i = 1, \dots, n-1.
-$$
+\end{align}$$
 
 The inverse map: given $u = (u^1, \dots, u^{n-1}) \in \mathbb{R}^{n-1}$, the corresponding point on $S^{n-1}$ is
 
-$$
+$$\begin{align}
 x^i = \frac{2u^i}{1 + \|u\|^2} \quad (i = 1, \dots, n-1), \qquad
 x^n = \frac{\|u\|^2 - 1}{\|u\|^2 + 1}.
-$$
+\end{align}$$
 
 **From the south pole** $S = (0, \dots, 0, -1)$:
 
 Similarly, the line through $S$ and $P$ gives $t = \frac{1}{1 + x^n}$ (setting $-1 + t(x^n + 1) = 0$), yielding
 
-$$
+$$\begin{align}
 v^i = \frac{x^i}{1 + x^n}, \qquad i = 1, \dots, n-1.
-$$
+\end{align}$$
 
 Inverse:
 
-$$
+$$\begin{align}
 x^i = \frac{2v^i}{1 + \|v\|^2} \quad (i = 1, \dots, n-1), \qquad
 x^n = \frac{1 - \|v\|^2}{1 + \|v\|^2}.
-$$
+\end{align}$$
 
 Together, the two charts $(S^{n-1} \setminus \{N\}, \varphi_N)$ and $(S^{n-1} \setminus \{S\}, \varphi_S)$ form an atlas for $S^{n-1}$.
 
@@ -391,9 +383,9 @@ These charts cover $S^n$ since $U_N \cup U_S = S^n$. Both $\varphi_N$ and $\varp
 
 The transition map $\varphi_S \circ \varphi_N^{-1}: \mathbb{R}^n \setminus \{0\} \to \mathbb{R}^n \setminus \{0\}$ is:
 
-$$
+$$\begin{align}
 u \mapsto v = \frac{u}{\|u\|^2},
-$$
+\end{align}$$
 
 which is smooth ($C^\infty$) on $\mathbb{R}^n \setminus \{0\}$. Similarly $\varphi_N \circ \varphi_S^{-1}(v) = v / \|v\|^2$ is smooth. Since the transition maps are $C^\infty$, the atlas is smooth, making $S^n$ an $n$-dimensional differentiable manifold. $\square$
 
@@ -432,42 +424,40 @@ Thus $GL(n, \mathbb{R})$ is a Lie group. $\square$
 
 The Pauli matrices satisfy the Clifford algebra relation:
 
-$$
+$$\begin{align}
 \sigma_a \sigma_b = \delta_{ab} I_2 + i \epsilon_{abc} \sigma_c.
-$$
+\end{align}$$
 
 Let $A := i\theta(\mathbf{n} \cdot \boldsymbol{\sigma}) = i\theta \sum_{a=1}^3 n_a \sigma_a$. Then:
 
-$$
+$$\begin{align}
 A^2 = (i\theta)^2 (n_a \sigma_a)(n_b \sigma_b) = -\theta^2 n_a n_b (\delta_{ab} I_2 + i \epsilon_{abc} \sigma_c).
-$$
+\end{align}$$
 
 The term $n_a n_b \epsilon_{abc} = 0$ because $\epsilon_{abc}$ is antisymmetric while $n_a n_b$ is symmetric. Hence:
 
-$$
+$$\begin{align}
 A^2 = -\theta^2 (n_a n_b \delta_{ab}) I_2 = -\theta^2 (\mathbf{n} \cdot \mathbf{n}) I_2 = -\theta^2 I_2.
-$$
+\end{align}$$
 
 Therefore $A^{2k} = (-\theta^2)^k I_2 = (-1)^k \theta^{2k} I_2$ and $A^{2k+1} = (-1)^k \theta^{2k} A$.
 
 Now compute the matrix exponential:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 e^A &= \sum_{k=0}^\infty \frac{A^k}{k!}
 = \sum_{k=0}^\infty \frac{A^{2k}}{(2k)!} + \sum_{k=0}^\infty \frac{A^{2k+1}}{(2k+1)!} \\
 &= I_2 \sum_{k=0}^\infty \frac{(-1)^k \theta^{2k}}{(2k)!} + A \sum_{k=0}^\infty \frac{(-1)^k \theta^{2k}}{(2k+1)!} \\
 &= I_2 \cos\theta + \frac{A}{i\theta} \frac{1}{i} \sum_{k=0}^\infty \frac{(-1)^k \theta^{2k+1}}{(2k+1)!}.
-\end{aligned}
-$$
+\end{aligned}$$
 
 Wait — more carefully. $A = i\theta(\mathbf{n} \cdot \boldsymbol{\sigma})$, and $\frac{A^{2k+1}}{(2k+1)!} = \frac{(-1)^k \theta^{2k} A}{(2k+1)!}$. Then $\sum_{k=0}^\infty \frac{(-1)^k \theta^{2k}}{(2k+1)!} A = \frac{A}{\theta} \sum_{k=0}^\infty \frac{(-1)^k \theta^{2k+1}}{(2k+1)!} = \frac{A}{\theta} \sin\theta$.
 
 Since $A/\theta = i(\mathbf{n} \cdot \boldsymbol{\sigma})$, we obtain:
 
-$$
+$$\begin{align}
 e^{i\theta(\mathbf{n} \cdot \boldsymbol{\sigma})} = I_2 \cos\theta + i(\mathbf{n} \cdot \boldsymbol{\sigma}) \sin\theta. \quad \square
-$$
+\end{align}$$
 
 *(Mathematica verification: checked with `MatrixExp` — the difference is zero.)*
 
@@ -488,8 +478,7 @@ $$
 
 For $k = 0$, $A^0 = I_{n+1} = \begin{pmatrix} I_n & 0 \\ 0^T & 1 \end{pmatrix}$. Thus the series for $e^A$ splits:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 e^A &= \sum_{k=0}^\infty \frac{A^k}{k!}
 = \begin{pmatrix} I_n & 0 \\ 0^T & 1 \end{pmatrix} + \sum_{k=1}^\infty \frac{1}{k!} \begin{pmatrix} B^k & B^{k-1} \mathbf{b} \\ 0^T & 0 \end{pmatrix} \\[8pt]
 &= \begin{pmatrix}
@@ -501,8 +490,7 @@ I_n + \sum_{k=1}^\infty \frac{B^k}{k!} &
 e^B & \bigl(\sum_{k=1}^\infty \frac{B^{k-1}}{k!}\bigr) \mathbf{b} \\[8pt]
 0^T & 1
 \end{pmatrix}.
-\end{aligned}
-$$
+\end{aligned}$$
 
 Now, $\sum_{k=1}^\infty \frac{B^{k-1}}{k!} = \sum_{j=0}^\infty \frac{B^j}{(j+1)!} = I_n + \sum_{j=1}^\infty \frac{B^j}{(j+1)!} =: C$, exactly as defined. Therefore:
 
@@ -526,15 +514,15 @@ The stabilizer (isotropy subgroup) of the standard $k$-plane consists of orthogo
 
 By the orbit-stabilizer theorem for group actions on manifolds:
 
-$$
+$$\begin{align}
 G_{k,n}(\mathbb{R}) \cong O(n) / \bigl(O(k) \times O(n-k)\bigr).
-$$
+\end{align}$$
 
 This exhibits $G_{k,n}(\mathbb{R})$ as a homogeneous space. The dimension is:
 
-$$
+$$\begin{align}
 \dim G_{k,n}(\mathbb{R}) = \dim O(n) - \dim O(k) - \dim O(n-k) = \frac{n(n-1)}{2} - \frac{k(k-1)}{2} - \frac{(n-k)(n-k-1)}{2} = k(n-k).
-$$
+\end{align}$$
 
 ---
 
@@ -556,9 +544,9 @@ $f(w,z) = \bigl(2\operatorname{Re}(z\bar{w}),\; 2\operatorname{Im}(z\bar{w}),\; 
 
 Each component is a polynomial (or real part thereof) in $w, \bar{w}, z, \bar{z}$. As a map $\mathbb{C}^2 \to \mathbb{R}^3$ it is smooth. Restricted to $S^3 = \{(w,z): |w|^2 + |z|^2 = 1\}$, the image lies in $S^2$ since:
 
-$$
+$$\begin{align}
 (2\operatorname{Re}(z\bar{w}))^2 + (2\operatorname{Im}(z\bar{w}))^2 + (|z|^2 - |w|^2)^2 = 4|z|^2|w|^2 + (|z|^2 - |w|^2)^2 = (|z|^2 + |w|^2)^2 = 1.
-$$
+\end{align}$$
 
 Thus $f|_{S^3}: S^3 \to S^2$ is smooth as the restriction of a smooth map to an embedded submanifold. $\square$
 
@@ -572,24 +560,24 @@ We need to verify the vector bundle structure:
 
 1. **Total space**: $E = TM = \bigcup_{p \in M} T_p M$, with projection $\pi: TM \to M$ sending each tangent vector $v \in T_p M$ to $p$.
 
-2. **Local trivialization**: For a coordinate chart $(U, \varphi = (x^1, \dots, x^n))$ on $M$, the tangent vectors on $U$ can be expressed in the coordinate basis: every $v \in T_p M$ ($p \in U$) is uniquely $v = \sum_{\mu=1}^n v^\mu \frac{\partial}{\partial x^\mu}\big|_p$. The map:
+1. **Local trivialization**: For a coordinate chart $(U, \varphi = (x^1, \dots, x^n))$ on $M$, the tangent vectors on $U$ can be expressed in the coordinate basis: every $v \in T_p M$ ($p \in U$) is uniquely $v = \sum_{\mu=1}^n v^\mu \frac{\partial}{\partial x^\mu}\big|_p$. The map:
 
-   $$
-   \psi_U: \pi^{-1}(U) \to U \times \mathbb{R}^n, \qquad
+$$\begin{align}
+\psi_U: \pi^{-1}(U) \to U \times \mathbb{R}^n, \qquad
    \Bigl(p, v^\mu \frac{\partial}{\partial x^\mu}\Big|_p\Bigr) \mapsto (p, (v^1, \dots, v^n))
-   $$
+\end{align}$$
 
    is a bijection, and $\psi_U$ composed with projection to $U$ equals $\pi$.
 
-3. **Transition functions**: For two overlapping charts $(U, \varphi)$ and $(V, \tilde{\varphi})$, on $U \cap V$ the coordinates transform as $\tilde{x}^\nu = \tilde{x}^\nu(x^1, \dots, x^n)$. Tangent vector components transform via the Jacobian:
+1. **Transition functions**: For two overlapping charts $(U, \varphi)$ and $(V, \tilde{\varphi})$, on $U \cap V$ the coordinates transform as $\tilde{x}^\nu = \tilde{x}^\nu(x^1, \dots, x^n)$. Tangent vector components transform via the Jacobian:
 
-   $$
-   \tilde{v}^\nu = \frac{\partial \tilde{x}^\nu}{\partial x^\mu} v^\mu.
-   $$
+$$\begin{align}
+\tilde{v}^\nu = \frac{\partial \tilde{x}^\nu}{\partial x^\mu} v^\mu.
+\end{align}$$
 
    The transition function $\psi_V \circ \psi_U^{-1}: (U \cap V) \times \mathbb{R}^n \to (U \cap V) \times \mathbb{R}^n$ is $(p, v) \mapsto (p, J(p) \cdot v)$, where $J(p)$ is the Jacobian matrix. Since the coordinate changes are smooth, $J(p)$ depends smoothly on $p$, and the map is linear on fibers.
 
-4. **Vector space structure**: Each fiber $\pi^{-1}(p) = T_p M$ is an $n$-dimensional real vector space.
+1. **Vector space structure**: Each fiber $\pi^{-1}(p) = T_p M$ is an $n$-dimensional real vector space.
 
 Thus $TM$ satisfies all axioms of a smooth vector bundle of rank $n$ over $M$. $\square$
 
@@ -601,9 +589,9 @@ Thus $TM$ satisfies all axioms of a smooth vector bundle of rank $n$ over $M$. $
 
 Let $X = X^\mu \partial_\mu$ and
 
-$$
+$$\begin{align}
 t = t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n} \partial_{\mu_1} \otimes \cdots \otimes \partial_{\mu_m} \otimes dx^{\nu_1} \otimes \cdots \otimes dx^{\nu_n}.
-$$
+\end{align}$$
 
 The Lie derivative $\mathcal{L}_X$ acts as a derivation: on functions $\mathcal{L}_X f = X[f] = X^\lambda \partial_\lambda f$, on vector fields $\mathcal{L}_X Y = [X, Y]$ (with components $(\mathcal{L}_X Y)^\mu = X^\lambda \partial_\lambda Y^\mu - Y^\lambda \partial_\lambda X^\mu$), on 1-forms $(\mathcal{L}_X \omega)_\nu = X^\lambda \partial_\lambda \omega_\nu + \omega_\lambda \partial_\nu X^\lambda$, and extended to tensor products via the Leibniz rule.
 
@@ -615,12 +603,12 @@ For a general $(m,n)$-tensor, applying $\mathcal{L}_X$ using the Leibniz rule gi
 
 Summing all contributions yields the stated formula:
 
-$$
+$$\begin{align}
 (\mathcal{L}_X t)^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n}
 = X^\lambda \partial_\lambda t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n}
 + \sum_{j=1}^{n} \partial_{\nu_j} X^\lambda \, t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_{j-1} \lambda \nu_{j+1} \cdots \nu_n}
 - \sum_{k=1}^{m} \partial_\lambda X^{\mu_k} \, t^{\mu_1 \cdots \mu_{k-1} \lambda \mu_{k+1} \cdots \mu_m}_{\nu_1 \cdots \nu_n}. \quad \square
-$$
+\end{align}$$
 
 ---
 
@@ -632,29 +620,25 @@ Recall that for vector fields, $\mathcal{L}_X Y = [X, Y]$. Use the definition $[
 
 **(1)** $\mathcal{L}_{fX} Y = [fX, Y]$:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 [fX, Y](g) &= (fX)[Y[g]] - Y[(fX)[g]] \\
 &= f X[Y[g]] - Y[f X[g]] \\
 &= f X[Y[g]] - \bigl(Y[f] X[g] + f Y[X[g]]\bigr) \quad \text{(Leibniz rule for $Y$)}\\
 &= f \bigl(X[Y[g]] - Y[X[g]]\bigr) - Y[f] X[g] \\
 &= f [X, Y](g) - Y[f] X(g).
-\end{aligned}
-$$
+\end{aligned}$$
 
 Thus $[fX, Y] = f[X, Y] - Y[f] X$, i.e., $\mathcal{L}_{fX}Y = f\mathcal{L}_X Y - Y[f] X$. $\square$
 
 **(2)** $\mathcal{L}_X(fY) = [X, fY]$:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 [X, fY](g) &= X[(fY)[g]] - (fY)[X[g]] \\
 &= X[f Y[g]] - f Y[X[g]] \\
 &= X[f] Y[g] + f X[Y[g]] - f Y[X[g]] \quad \text{(Leibniz rule for $X$)} \\
 &= f \bigl(X[Y[g]] - Y[X[g]]\bigr) + X[f] Y[g] \\
 &= f [X, Y](g) + X[f] Y(g).
-\end{aligned}
-$$
+\end{aligned}$$
 
 Thus $\mathcal{L}_X(fY) = f\mathcal{L}_X Y + X[f] Y$. $\square$
 
@@ -668,15 +652,13 @@ This requires $f: M \to N$ to be a smooth map and $X, Y$ to be $f$-related to $f
 
 For any smooth function $g \in \mathcal{F}(N)$ and $p \in M$:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 (f_*[X, Y])_p(g) &= [X, Y]_p (g \circ f) \\
 &= X_p[Y(g \circ f)] - Y_p[X(g \circ f)] \\
 &= X_p[(f_*Y)(g) \circ f] - Y_p[(f_*X)(g) \circ f] \\
 &= (f_*X)_{f(p)}[(f_*Y)(g)] - (f_*Y)_{f(p)}[(f_*X)(g)] \\
 &= [f_*X, f_*Y]_{f(p)}(g).
-\end{aligned}
-$$
+\end{aligned}$$
 
 The key step uses that for $h: N \to \mathbb{R}$, $X_p(h \circ f) = (f_*X)_{f(p)}(h)$. This is the definition of the pushforward. Hence $f_*[X, Y] = [f_*X, f_*Y]$. $\square$
 
@@ -690,8 +672,7 @@ The key step uses that for $h: N \to \mathbb{R}$, $X_p(h \circ f) = (f_*X)_{f(p)
 
 For $p \in M$ and $v_1, \dots, v_{r+s} \in T_p M$:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 f^*(\omega \wedge \xi)_p(v_1, \dots, v_{r+s})
 &= (\omega \wedge \xi)_{f(p)}(f_* v_1, \dots, f_* v_{r+s}) \\
 &= \frac{1}{r!\, s!} \sum_{\sigma \in S_{r+s}} \operatorname{sgn}(\sigma)\,
@@ -701,8 +682,7 @@ f^*(\omega \wedge \xi)_p(v_1, \dots, v_{r+s})
 (f^*\omega)_p(v_{\sigma(1)}, \dots, v_{\sigma(r)})\,
 (f^*\xi)_p(v_{\sigma(r+1)}, \dots, v_{\sigma(r+s)}) \\
 &= \bigl((f^*\omega) \wedge (f^*\xi)\bigr)_p(v_1, \dots, v_{r+s}).
-\end{aligned}
-$$
+\end{aligned}$$
 
 Thus $f^*(\omega \wedge \xi) = f^*\omega \wedge f^*\xi$. $\square$
 
@@ -732,15 +712,13 @@ Thus $d(f^*\omega) = f^*(d\omega)$. $\square$
 
 *Proof*: For vector fields $Y_1, \dots, Y_{r+s-1}$:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 i_X(\omega \wedge \eta)(Y_1, \dots, Y_{r+s-1})
 &= (\omega \wedge \eta)(X, Y_1, \dots, Y_{r+s-1}) \\
 &= \frac{1}{r!\, s!} \sum_{\sigma \in S_{r+s}} \operatorname{sgn}(\sigma)\,
 \omega(v_{\sigma(1)}, \dots, v_{\sigma(r)})\,
 \eta(v_{\sigma(r+1)}, \dots, v_{\sigma(r+s)}),
-\end{aligned}
-$$
+\end{aligned}$$
 
 where $\{v_1, \dots, v_{r+s}\} = \{X, Y_1, \dots, Y_{r+s-1}\}$. The sum splits into terms where $X$ appears among the arguments of $\omega$ (giving $i_X\omega \wedge \eta$) and terms where $X$ appears among the arguments of $\eta$. In the latter case, moving $X$ past the $r$ arguments of $\omega$ introduces a sign $(-1)^r$, giving $(-1)^r \omega \wedge i_X\eta$. Hence the formula. $\square$
 
@@ -752,15 +730,15 @@ where $\{v_1, \dots, v_{r+s}\} = \{X, Y_1, \dots, Y_{r+s-1}\}$. The sum splits i
 
 *Proof*: Using Cartan's formula $\mathcal{L}_X = i_X d + d i_X$:
 
-$$
+$$\begin{align}
 \mathcal{L}_X i_X \omega = (i_X d + d i_X)(i_X \omega) = i_X d i_X \omega + d i_X^2 \omega = i_X d i_X \omega,
-$$
+\end{align}$$
 
 since $i_X^2 = 0$. Meanwhile:
 
-$$
+$$\begin{align}
 i_X \mathcal{L}_X \omega = i_X(i_X d + d i_X)\omega = i_X^2 d \omega + i_X d i_X \omega = i_X d i_X \omega.
-$$
+\end{align}$$
 
 Thus both sides equal $i_X d i_X \omega$. $\square$
 
@@ -772,15 +750,15 @@ Thus both sides equal $i_X d i_X \omega$. $\square$
 
 By Cartan's formula:
 
-$$
+$$\begin{align}
 \mathcal{L}_{X_H}\theta = i_{X_H} d\theta + d i_{X_H} \theta = i_{X_H} \omega + d(\theta(X_H)).
-$$
+\end{align}$$
 
 Since $X_H$ is a Hamiltonian vector field, by definition $i_{X_H}\omega = -dH$ (where $H$ is the Hamiltonian function). Thus:
 
-$$
+$$\begin{align}
 \mathcal{L}_{X_H}\theta = -dH + d(\theta(X_H)) = d\bigl(\theta(X_H) - H\bigr).
-$$
+\end{align}$$
 
 This is the exterior derivative of the function $f := \theta(X_H) - H \in \mathcal{F}(M)$, i.e., an exact differential. $\square$
 
@@ -794,9 +772,9 @@ We work through the four steps outlined in the problem.
 
 **(1)** The Hermitian matrix $H$ satisfies $H \mathbf{u}_i = \lambda_i \mathbf{u}_i$ with $\mathbf{u}_i^\dagger \mathbf{u}_j = \delta_{ij}$. The unitary matrix $U = (\mathbf{u}_1, \dots, \mathbf{u}_N)$ diagonalizes $H$:
 
-$$
+$$\begin{align}
 H = U \Lambda U^\dagger, \qquad \Lambda = \operatorname{diag}(\lambda_1, \dots, \lambda_N).
-$$
+\end{align}$$
 
 Indeed, $\mathbf{u}_j = (U_j^1, \dots, U_j^N)^T$ but the problem notation is $\mathbf{u}_j = (U^i_j)_{1 \le i \le N}$, i.e., the $j$-th column of $U$ is $\mathbf{u}_j$. $\checkmark$
 
@@ -804,63 +782,63 @@ Indeed, $\mathbf{u}_j = (U_j^1, \dots, U_j^N)^T$ but the problem notation is $\m
 
 First-order perturbation theory gives:
 
-$$
+$$\begin{align}
 \delta\lambda_i = \mathbf{u}_i^\dagger \delta H \mathbf{u}_i = \sum_{j,k} (U^j_i)^* \delta H^j_k U^k_i,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 \delta\mathbf{u}_i = \sum_{k \neq i} \frac{\mathbf{u}_k^\dagger \delta H \mathbf{u}_i}{\lambda_i - \lambda_k} \mathbf{u}_k,
-$$
+\end{align}$$
 
 which in components reads:
 
-$$
+$$\begin{align}
 \delta U^i_j = \sum_{k \neq j} \frac{\sum_{m,n} (U^m_k)^* \delta H^m_n U^n_j}{\lambda_j - \lambda_k} U^i_k.
-$$
+\end{align}$$
 
 The angular differential $d\Omega = U^\dagger dU$ has components:
 
-$$
+$$\begin{align}
 \delta\Omega^i_j = (U^\dagger \delta U)^i_j = \sum_{k} (U^k_i)^* \delta U^k_j.
-$$
+\end{align}$$
 
 For $i = j$: $\delta\Omega^i_i = \sum_k (U^k_i)^* \delta U^k_i = \frac{1}{2} \delta(\sum_k |U^k_i|^2) = 0$ (to first order), since $\sum_k |U^k_i|^2 = 1$ is fixed.
 
 For $i \neq j$:
 
-$$
+$$\begin{align}
 \delta\Omega^i_j = \sum_k (U^k_i)^* \frac{\sum_{m,n} (U^m_j)^* \delta H^m_n U^n_i}{\lambda_i - \lambda_j} U^k_j
 = \frac{\sum_{m,n} (U^m_i)^* \delta H^m_n U^n_j}{\lambda_j - \lambda_i}.
-$$
+\end{align}$$
 
 These match the formulas given in the problem. $\checkmark$
 
 **(3)** The transformation $\widetilde{\delta H}^i_j = \sum_{m,n} (U^m_i)^* \delta H^m_n U^n_j$ is a unitary change of basis:
 
-$$
+$$\begin{align}
 \widetilde{\delta H} = U^\dagger \delta H U.
-$$
+\end{align}$$
 
 Since the trace of a product is invariant under unitary transformations:
 
-$$
+$$\begin{align}
 \operatorname{Tr}(\widetilde{\delta H} \cdot \widetilde{\delta H}) = \operatorname{Tr}(U^\dagger \delta H U \cdot U^\dagger \delta H U) = \operatorname{Tr}(U^\dagger \delta H \delta H U) = \operatorname{Tr}(\delta H \delta H).
-$$
+\end{align}$$
 
 Thus $|\det U|^2 = 1$, and the transformation preserves the integration measure.
 
 In the $\widetilde{\delta H}$ basis, the formulas simplify because $U$ becomes the identity. To first order:
 
-$$
+$$\begin{align}
 \delta\lambda_i = \widetilde{\delta H}^i_i, \qquad
 \delta\Omega^j_k = \frac{\widetilde{\delta H}^j_k}{\lambda_k - \lambda_j} \;\; (j \neq k).
-$$
+\end{align}$$
 
 The Jacobian between $(\delta\lambda_i, \delta\Omega^j_k)_{j \neq k}$ and $\widetilde{\delta H}$ is diagonal: each $\delta\lambda_i$ picks up $\widetilde{\delta H}^i_i$ with coefficient 1, and each $\delta\Omega^j_k$ ($j \neq k$) picks up $\widetilde{\delta H}^j_k$ with coefficient $1/(\lambda_k - \lambda_j)$. The determinant of this linear transformation is:
 
-$$
+$$\begin{align}
 \det \mathcal{J} = \prod_{j \neq k} \frac{1}{\lambda_k - \lambda_j} = \prod_{j<k} \frac{1}{(\lambda_j - \lambda_k)^2},
-$$
+\end{align}$$
 
 where we used $\prod_{j \neq k} (\lambda_k - \lambda_j) = \prod_{j<k} (\lambda_j - \lambda_k)(\lambda_k - \lambda_j) = (-1)^{N(N-1)/2} \prod_{j<k} (\lambda_j - \lambda_k)^2$, and absolute value removes the sign.
 
@@ -870,15 +848,15 @@ The original measure is $d\mu(H) = \prod_i dH^i_i \prod_{j \neq k} dH^j_k$.
 
 Since the unitary transformation preserves the measure, $d\mu(H) = d\mu(\widetilde{\delta H})$. Then:
 
-$$
+$$\begin{align}
 d\mu(\widetilde{\delta H}) = |\det \mathcal{J}|^{-1} \prod_i d\lambda_i \prod_{j \neq k} d\Omega^j_k.
-$$
+\end{align}$$
 
 Now $|\det \mathcal{J}|^{-1} = \prod_{j<k} (\lambda_j - \lambda_k)^2$. And $\Omega$ is anti-Hermitian ($\Omega^\dagger = -\Omega$) since $U^\dagger U = I \implies dU^\dagger U + U^\dagger dU = 0$, so $\Omega^\dagger = U^\dagger dU^\dagger U = -(U^\dagger dU) = -\Omega$. Thus $\Omega^j_k = -\overline{\Omega^k_j}$, and the independent real variables are the $d\Omega^j_k$ for $j \neq k$ (with appropriate real/imaginary decomposition). The product $\prod_{j \neq k} d\Omega^j_k$ is understood as the product over all $j \neq k$ of the independent real differentials. Hence:
 
-$$
+$$\begin{align}
 d\mu(H) = \prod_{j<k} (\lambda_j - \lambda_k)^2 \; d\lambda_1 \cdots d\lambda_N \prod_{j \neq k} d\Omega^j_k. \quad \square
-$$
+\end{align}$$
 
 This is the celebrated Weyl integration formula / Vandermonde determinant measure for Hermitian matrix models.
 
@@ -902,18 +880,18 @@ Define $\delta^{\nu_1 \cdots \nu_s}_{\mu_1 \cdots \mu_s} := \det\begin{pmatrix} 
 
 *Proof*: From (2), $\epsilon_{\mu_1 \cdots \mu_m} = \delta^{1 \cdots m}_{\mu_1 \cdots \mu_m}$ and $\epsilon^{\nu_1 \cdots \nu_m} = \delta^{\nu_1 \cdots \nu_m}_{1 \cdots m}$. Then:
 
-$$
+$$\begin{align}
 \epsilon_{\mu_1 \cdots \mu_m} \epsilon^{\nu_1 \cdots \nu_m}
 = \sum_{\sigma \in S_m} \operatorname{sgn}(\sigma) \delta^{\sigma(1)}_{\mu_1} \cdots \delta^{\sigma(m)}_{\mu_m}
 \sum_{\tau \in S_m} \operatorname{sgn}(\tau) \delta^{\nu_1}_{\tau(1)} \cdots \delta^{\nu_m}_{\tau(m)}.
-$$
+\end{align}$$
 
 The product $\delta^{\sigma(i)}_{\mu_i} \delta^{\nu_i}_{\tau(i)}$ summed over all indices gives $\delta^{\nu_i}_{\mu_{\sigma^{-1}(i)}}$ after contracting $\sigma$ and $\tau$. More directly, using the determinant representation:
 
-$$
+$$\begin{align}
 \epsilon_{\mu_1 \cdots \mu_m} = \det(\delta^i_{\mu_j}), \qquad
 \epsilon^{\nu_1 \cdots \nu_m} = \det(\delta^{\nu_i}_j).
-$$
+\end{align}$$
 
 Their product is $\det(\delta^i_{\mu_j}) \cdot \det(\delta^{\nu_i}_j) = \det\bigl(\sum_{k} \delta^i_{\mu_k} \delta^{\nu_k}_j\bigr) = \det(\delta^{\nu_j}_{\mu_i}) = \delta^{\nu_1 \cdots \nu_m}_{\mu_1 \cdots \mu_m}$, where we used $\det(AB) = \det A \cdot \det B$ and the fact that $\sum_{k} \delta^i_{\mu_k} \delta^{\nu_k}_j = \delta^{\nu_j}_{\mu_i}$ (treating $\mu_k$ and $\nu_k$ as dummy summed indices — this is the statement that the matrix product of the two matrices equals the matrix with entries $\delta^{\nu_j}_{\mu_i}$). $\square$
 
@@ -921,13 +899,11 @@ Their product is $\det(\delta^i_{\mu_j}) \cdot \det(\delta^{\nu_i}_j) = \det\big
 
 *Proof*: Using (3), $\epsilon_{\mu_1 \cdots \mu_m} \epsilon^{\nu_1 \cdots \nu_m} = \delta^{\nu_1 \cdots \nu_m}_{\mu_1 \cdots \mu_m}$. Now contract the first $k$ upper and lower indices:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 \epsilon_{\mu_1 \cdots \mu_k \mu_{k+1} \cdots \mu_m} \epsilon^{\mu_1 \cdots \mu_k \nu_{k+1} \cdots \nu_m}
 &= \delta^{\mu_1 \cdots \mu_k \nu_{k+1} \cdots \nu_m}_{\mu_1 \cdots \mu_k \mu_{k+1} \cdots \mu_m} \\
 &= \sum_{\sigma \in S_m} \operatorname{sgn}(\sigma) \delta^{\sigma(1)}_{\mu_1} \cdots \delta^{\sigma(k)}_{\mu_k} \delta^{\sigma(k+1)}_{\mu_{k+1}} \cdots \delta^{\sigma(m)}_{\mu_m}\big|_{\text{first }k\text{ upper}= \text{first }k\text{ lower}}.
-\end{aligned}
-$$
+\end{aligned}$$
 
 When we sum over $\mu_1, \dots, \mu_k$, the only non-zero contribution comes from permutations where $\{\sigma(1), \dots, \sigma(k)\} = \{1, \dots, k\}$ (so the upper and lower first $k$ indices match as sets). There are $k!$ such permutations (all permutations of the first $k$ elements among themselves), each with sign 1 (since $\operatorname{sgn}(\sigma) \cdot \operatorname{sgn}(\sigma|_{\text{first }k}) = 1$ after the contraction). For each of these, the remaining $(m-k)$ indices contribute $\delta^{\nu_{k+1} \cdots \nu_m}_{\mu_{k+1} \cdots \mu_m}$. Summing over the $k!$ equivalent permutations gives the factor $k!$. $\square$
 
@@ -939,40 +915,38 @@ When we sum over $\mu_1, \dots, \mu_k$, the only non-zero contribution comes fro
 
 On an $m$-dimensional (pseudo-)Riemannian manifold, for $q$-forms $\alpha = \frac{1}{q!} \alpha_{\mu_1 \cdots \mu_q} dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q}$, the Hodge dual is:
 
-$$
+$$\begin{align}
 {*}\alpha = \frac{\sqrt{|g|}}{q!\, (m-q)!} \alpha_{\mu_1 \cdots \mu_q} \epsilon^{\mu_1 \cdots \mu_q}_{\qquad \nu_{q+1} \cdots \nu_m} dx^{\nu_{q+1}} \wedge \cdots \wedge dx^{\nu_m}.
-$$
+\end{align}$$
 
 The wedge product $\alpha \wedge {*}\beta$ is an $m$-form. In local coordinates:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 \alpha \wedge {*}\beta
 &= \frac{1}{q!} \alpha_{\mu_1 \cdots \mu_q} dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q}
 \wedge \frac{\sqrt{|g|}}{q!\, (m-q)!} \beta^{\nu_1 \cdots \nu_q} \epsilon_{\nu_1 \cdots \nu_q \rho_1 \cdots \rho_{m-q}} dx^{\rho_1} \wedge \cdots \wedge dx^{\rho_{m-q}} \\
 &= \frac{\sqrt{|g|}}{(q!)^2 (m-q)!} \alpha_{\mu_1 \cdots \mu_q} \beta^{\nu_1 \cdots \nu_q}
 \epsilon_{\nu_1 \cdots \nu_q \rho_1 \cdots \rho_{m-q}}
 dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q} \wedge dx^{\rho_1} \wedge \cdots \wedge dx^{\rho_{m-q}}.
-\end{aligned}
-$$
+\end{aligned}$$
 
 The $m$-form $dx^{\mu_1} \wedge \cdots \wedge dx^{\rho_{m-q}}$ is non-zero only when all indices are distinct, proportional to $\epsilon^{\mu_1 \cdots \mu_q \rho_1 \cdots \rho_{m-q}} d^m x$. Contracting the two Levi-Civita symbols gives:
 
-$$
+$$\begin{align}
 \epsilon_{\nu_1 \cdots \nu_q \rho_1 \cdots \rho_{m-q}} \epsilon^{\mu_1 \cdots \mu_q \rho_1 \cdots \rho_{m-q}} = q!\, (m-q)! \, \delta^{\mu_1 \cdots \mu_q}_{\nu_1 \cdots \nu_q}.
-$$
+\end{align}$$
 
 Thus (after careful index algebra):
 
-$$
+$$\begin{align}
 \alpha \wedge {*}\beta = \frac{\sqrt{|g|}}{q!} \alpha_{\mu_1 \cdots \mu_q} \beta^{\mu_1 \cdots \mu_q} \, d^m x = (\alpha, \beta) \, dV,
-$$
+\end{align}$$
 
 where $(\alpha, \beta) := \frac{1}{q!} \alpha_{\mu_1 \cdots \mu_q} \beta^{\mu_1 \cdots \mu_q}$ is the pointwise inner product and $dV = \sqrt{|g|}\, d^m x$ is the volume form. Since this expression is manifestly symmetric in $\alpha$ and $\beta$ (the contraction $\alpha_{\mu} \beta^{\mu}$ is symmetric), we have:
 
-$$
+$$\begin{align}
 \alpha \wedge {*}\beta = \beta \wedge {*}\alpha.
-$$
+\end{align}$$
 
 The integrated inner product is $(\alpha, \beta) := \int_M \alpha \wedge {*}\beta = \int_M \beta \wedge {*}\alpha = (\beta, \alpha)$. $\square$
 
@@ -986,47 +960,45 @@ For a $q$-form $\omega_q$ on an $m$-dimensional Riemannian manifold:
 
 The first Hodge dual ${*}\omega_q$ is an $(m-q)$-form. Applying the Hodge star again:
 
-$$
+$$\begin{align}
 {**}\omega_q = {*}({*}\omega_q).
-$$
+\end{align}$$
 
 The Hodge star on a $p$-form in $m$ dimensions satisfies:
 
-$$
+$$\begin{align}
 {*}(dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_p}) = \frac{\sqrt{|g|}}{(m-p)!} \epsilon^{\mu_1 \cdots \mu_p}_{\qquad \nu_{p+1} \cdots \nu_m} dx^{\nu_{p+1}} \wedge \cdots \wedge dx^{\nu_m}.
-$$
+\end{align}$$
 
 Applying ${*}$ twice to the basis $q$-form:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 {**} (dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q})
 &= {*}\!\left( \frac{\sqrt{|g|}}{(m-q)!} \epsilon^{\mu_1 \cdots \mu_q}_{\qquad \nu_{q+1} \cdots \nu_m} dx^{\nu_{q+1}} \wedge \cdots \wedge dx^{\nu_m} \right) \\
 &= \frac{\sqrt{|g|}}{(m-q)!} \epsilon^{\mu_1 \cdots \mu_q}_{\qquad \nu_{q+1} \cdots \nu_m}
 \frac{\sqrt{|g|}}{q!} \epsilon^{\nu_{q+1} \cdots \nu_m}_{\qquad \rho_1 \cdots \rho_q} dx^{\rho_1} \wedge \cdots \wedge dx^{\rho_q}.
-\end{aligned}
-$$
+\end{aligned}$$
 
 Now use the Levi-Civita contraction identity:
 
-$$
+$$\begin{align}
 \epsilon^{\mu_1 \cdots \mu_q}_{\qquad \nu_{q+1} \cdots \nu_m} \epsilon^{\nu_{q+1} \cdots \nu_m}_{\qquad \rho_1 \cdots \rho_q}
 = (-1)^{q(m-q)} q!\, (m-q)! \, \delta^{\mu_1 \cdots \mu_q}_{\rho_1 \cdots \rho_q}.
-$$
+\end{align}$$
 
 (The sign $(-1)^{q(m-q)}$ arises from moving all $q$ upper indices past all $m-q$ lower indices in the contraction of the two Levi-Civita symbols.) The metric factors give $(\sqrt{|g|})^2 / |g| = 1$ (in the Riemannian case; for pseudo-Riemannian there is an additional $(-1)^{q(m-q)} \operatorname{sgn}(\det g)$, but for Euclidean signature $\det g > 0$).
 
 Thus:
 
-$$
+$$\begin{align}
 {**} (dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q}) = (-1)^{q(m-q)} dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q}.
-$$
+\end{align}$$
 
 By linearity, this holds for any $q$-form:
 
-$$
+$$\begin{align}
 {**}\omega_q = (-1)^{q(m-q)} \omega_q. \quad \square
-$$
+\end{align}$$
 
 **Remark**: For pseudo-Riemannian manifolds with metric signature $(p, r)$ ($p$ positive, $r$ negative eigenvalues), the formula generalizes to ${**}\omega_q = (-1)^{q(m-q)+r} \omega_q$.
 
@@ -1062,15 +1034,15 @@ In a simplicial complex, simplices are **regularly situated** if their intersect
 
 *Proof*: The Mayer-Vietoris sequence for the pair $(K_1, K_2)$ reads:
 
-$$
+$$\begin{align}
 \cdots \to H_q(K_1 \cap K_2) \to H_q(K_1) \oplus H_q(K_2) \to H_q(K_1 \cup K_2) \to H_{q-1}(K_1 \cap K_2) \to \cdots
-$$
+\end{align}$$
 
 For $q > r+1$, we have $q > r$ and $q-1 > r$. Since $\dim(K_1 \cap K_2) = r$, the homology groups $H_q(K_1 \cap K_2)$ and $H_{q-1}(K_1 \cap K_2)$ vanish (the complex has no simplices in dimensions $\ge r+1$). The exact sequence at $H_q$ becomes:
 
-$$
+$$\begin{align}
 0 \to H_q(K_1) \oplus H_q(K_2) \to H_q(K_1 \cup K_2) \to 0,
-$$
+\end{align}$$
 
 which gives the isomorphism $H_q(K_1 \cup K_2) \cong H_q(K_1) \oplus H_q(K_2)$. $\square$
 
@@ -1139,9 +1111,9 @@ The Klein bottle can be constructed from a square with edge identifications $aba
 
 The cellular chain complex is:
 
-$$
+$$\begin{align}
 0 \to C_2 \xrightarrow{\partial_2} C_1 \xrightarrow{\partial_1} C_0 \to 0,
-$$
+\end{align}$$
 
 with $C_0 \cong \mathbb{Z}$, $C_1 \cong \mathbb{Z}^2$ (generators $a, b$), $C_2 \cong \mathbb{Z}$.
 

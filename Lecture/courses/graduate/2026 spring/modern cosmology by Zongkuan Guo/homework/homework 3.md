@@ -3,7 +3,7 @@
 Assume that there are three generations of neutrinos and that each neutrino is its own antiparticle. In the hot Big Bang cosmological model, after neutrino decoupling, the cosmic neutrino background (CNB) is formed in the universe.
 
 1. Calculate the temperature at which neutrinos decouple.
-2. Given that the present temperature of the cosmic background photons is $\displaystyle{2.73\mathrm{K}}$, find the present temperature of the cosmic background neutrinos.
+1. Given that the present temperature of the cosmic background photons is $\displaystyle{2.73\mathrm{K}}$, find the present temperature of the cosmic background neutrinos.
 
 ## solution
 

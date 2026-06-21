@@ -14,9 +14,11 @@ tags: []
 
 we start from the following general Lagrangian
 
-$$\tag{.}\begin{align}
+$$
+\tag{.}\begin{align}
 \mathbf{L} & =\varepsilon F(R_{abcd},g_{ab})
-\end{align}$$
+\end{align}
+$$
 
 take a variation
 
@@ -148,7 +150,7 @@ $$\begin{align}
 S & =(\beta \partial _{\beta}-1)[I(\beta)]|_{\beta _{0}}
 \end{align}$$
 
-we like to resort to the translation isometry along the imaginary time direction, whereby one can rewrite $\displaystyle{I(\beta)=\frac{\beta}{\beta_{0}}I_{\beta_{0}}(\beta)}$, with $\displaystyle{I_{\beta_{0}}(\beta)}$ the action evaluated on the Euclidean black hole of the inverse temperature $\displaystyle{\beta}$ with imaginary time interval $\displaystyle{[0,\beta_{0}]}$. accordingly, 
+we like to resort to the translation isometry along the imaginary time direction, whereby one can rewrite $\displaystyle{I(\beta)=\frac{\beta}{\beta_{0}}I_{\beta_{0}}(\beta)}$, with $\displaystyle{I_{\beta_{0}}(\beta)}$ the action evaluated on the Euclidean black hole of the inverse temperature $\displaystyle{\beta}$ with imaginary time interval $\displaystyle{[0,\beta_{0}]}$. accordingly,
 
 $$\begin{align}
 S & =\beta \partial _{\beta}[I_{\beta_{0}}(\beta)]|_{\beta_{0}}
@@ -168,7 +170,7 @@ $$\begin{align}
 S & =-2\pi \int _{\mathcal{B}}\psi ^{abcd}\varepsilon _{ab}\varepsilon _{cd}\tilde{\varepsilon}
 \end{align}$$
 
-after Wick rotation back to the Lorentz spacetime, the above result is exactly equivalent to the Wald formula for the black hole entropy. 
+after Wick rotation back to the Lorentz spacetime, the above result is exactly equivalent to the Wald formula for the black hole entropy.
 
 on the other hand
 

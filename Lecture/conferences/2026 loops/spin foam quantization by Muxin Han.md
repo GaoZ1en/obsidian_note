@@ -2,11 +2,11 @@
 
 building block: quantum tetrahedron.
 
-classically, the tetrahedron has 6 dofs (edges). 
+classically, the tetrahedron has 6 dofs (edges).
 
 equivalently, we use 4 faces to describe it $\displaystyle{\vec{A}_{i=1,\dots,4}}$. there is redundancy. constraints
 1. closure condition: $\displaystyle{\sum ^{4}_{i=4}\vec{A}_{i}=0}$
-2. gauge transformation: 3D rotations
+1. gauge transformation: 3D rotations
 
 quantum geometry from LQG. $\displaystyle{\vec{A}_{i}}$ becomes (flux) operators with the commutation relation
 
@@ -63,7 +63,7 @@ $$\begin{align}
 
 remarks
 1. background independent, spacetimes are emergent from quantum states
-2. geometrical quantities are operators of the Hilbert space $\displaystyle{\mathcal{H}_{\text{LQG}}}$. 
+1. geometrical quantities are operators of the Hilbert space $\displaystyle{\mathcal{H}_{\text{LQG}}}$.
 
 ---
 
@@ -137,7 +137,7 @@ $$\begin{align}
  & \int \mathrm{d}\mu(h_{e})\pi ^{j_{1}}_{m_{1}n_{1}}(h_{e})\dots \pi ^{j_{4}}_{m_{4}n_{4}}(h_{e}) \\
 = & P^{j_{1}\dots j_{4}}_{m_{1}\dots m_{4},n_{1}\dots n_{4}} \\
 = & \sum _{i} i^{*}_{m_{1}\dots m_{4}}i_{n_{1}\dots n_{4}} \\
-= & \sum _{i} \ket{i} \bra{i} 
+= & \sum _{i} \ket{i} \bra{i}
 \end{align}$$
 
 therefore
@@ -154,14 +154,14 @@ gravity is a constrained BF theory... nothing special. see [[Literature Notes/Ch
 
 spinfoam quantization on a simplex in 4d.
 1. define $\displaystyle{Z_{pl}}$ on a single 4-simplex. the result is the spinfoam vertex amplitude
-2. quantize the contrained BF theory
+1. quantize the contrained BF theory
 
 $$\begin{align}
 Z_{BF} & =\int \mathcal{D}A\mathcal{D}Be^{i/\ell _{p} \int (B+1/\gamma \star B)^{IJ}\wedge F_{IJ}}
 \end{align}$$
 
-3. quantize the simplicity constraint and impose the BF boundary Hilbert space.
-4. vertex amplitude
+1. quantize the simplicity constraint and impose the BF boundary Hilbert space.
+1. vertex amplitude
 
 $$\begin{align}
 A_{v} & =Z_{BF}(\text{bdy data}|_{\text{simplicity}})
@@ -174,4 +174,3 @@ quantization of $\displaystyle{B}$ field....
 ---
 
 EPRL proposal... less interested...
-

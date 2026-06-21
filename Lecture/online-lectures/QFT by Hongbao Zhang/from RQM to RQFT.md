@@ -63,7 +63,7 @@ $$\begin{align}
  & =(c^{\dagger}(\sigma)\varphi,\psi)
 \end{align}$$
 
-2. $\displaystyle{[c(\sigma),c(\tau)]=[a(\bar{\sigma}),a(\bar{\tau})]=0}$.
+1. $\displaystyle{[c(\sigma),c(\tau)]=[a(\bar{\sigma}),a(\bar{\tau})]=0}$.
 
 $$\begin{align}
 c(\sigma)c(\tau)\psi & =c(\sigma)(0,\tau ^{\alpha}\psi,\sqrt{ 2 }\tau ^{(\alpha}\psi ^{\beta)}+\sqrt{ 3 }\tau ^{(\alpha}\psi ^{\beta \gamma)},\dots) \\
@@ -73,7 +73,7 @@ c(\sigma)c(\tau)\psi & =c(\sigma)(0,\tau ^{\alpha}\psi,\sqrt{ 2 }\tau ^{(\alpha}
 \implies[a(\bar{\sigma}),a(\bar{\tau})] & =0
 \end{align}$$
 
-3. $\displaystyle{[a(\bar{\sigma}),c(\tau)]=\bar{\sigma}_{\alpha}\tau ^{\alpha}\mathbb{I}}$. 
+1. $\displaystyle{[a(\bar{\sigma}),c(\tau)]=\bar{\sigma}_{\alpha}\tau ^{\alpha}\mathbb{I}}$.
 
 $$\begin{align}
 a(\bar{\sigma})c(\tau)\psi & =a(\bar{\sigma})(0,\tau^{\alpha}\psi,\sqrt{ 2 }\tau^{(\alpha}\psi ^{\beta)},\sqrt{ 3 }\tau ^{(\alpha}\psi ^{\beta \gamma)},\dots) \\
@@ -235,33 +235,34 @@ we then define
 
 $$\begin{align}
 D^{-}(f,g) & = -\braket{ 0|\hat{\phi}(g)\hat{\phi}(f)|0 }  \\
- & = \braket{ 0|[c(\sigma _{g}),a(\bar{\sigma}_{f})]|0 } 
+ & = \braket{ 0|[c(\sigma _{g}),a(\bar{\sigma}_{f})]|0 }
 \end{align}$$
 
 and then
 
 $$\begin{align}
 D(f,g) & =D^{+}(f,g)+D^{-}(f,g) \\
- & =\braket{ 0|[\hat{\phi}(f),\hat{\phi}(g)]|0 } 
+ & =\braket{ 0|[\hat{\phi}(f),\hat{\phi}(g)]|0 }
 \end{align}$$
 
 we have the following properties
 
-1. 
+1.
+
 $$\begin{align}
 D^{+}(f,g) & =-D^{-}(g,f)=-\overline{D^{-}(f,g)} \\
 \implies D(f,g) & =-D(g,f)=-\overline{D(f,g)}
 \end{align}$$
 
-2. $\displaystyle{D^{\pm}(f,g),D(f,g)}$ are Poincare (diffepmorphism?) invariance, i.e.,
+1. $\displaystyle{D^{\pm}(f,g),D(f,g)}$ are Poincare (diffepmorphism?) invariance, i.e.,
 
 $$\begin{align}
 D^{\pm}(\phi ^{*}f,\phi ^{*}g) & =D^{\pm}(f,g) \\
 D(\phi ^{*}f,\phi ^{*}g) & =D(f,g)
 \end{align}$$
 
-where $\displaystyle{\phi}$ is a Poincare transformation (diffeomorphism?). 
-3. if $\displaystyle{\mathrm{supp}(f)\cap\left(J^{+}(\mathrm{supp}(g))\cup J^{-}(\mathrm{supp}(g))\right)=0}$, then $\displaystyle{D(f,g)=0}$.
+where $\displaystyle{\phi}$ is a Poincare transformation (diffeomorphism?).
+1. if $\displaystyle{\mathrm{supp}(f)\cap\left(J^{+}(\mathrm{supp}(g))\cup J^{-}(\mathrm{supp}(g))\right)=0}$, then $\displaystyle{D(f,g)=0}$.
 
 if we choose test function as $\displaystyle{f(y)=\delta(y-x)}$, we get the usual results.
 
@@ -335,4 +336,3 @@ D^{\mathrm{R}}(x,x') & =\theta(x^{0}-x'^{0})\braket{ 0|\hat{\phi}(x)\hat{\phi}^{
 D^{\mathrm{A}}(x,x') & =-\theta(x'^{0}-x^{0})\braket{ 0|\hat{\phi}(x)\hat{\phi}^{\dagger}(x')|0 }  \\
 D^{\mathrm{F}}(x,x') & =\braket{ 0|T\hat{\phi}(x)\hat{\phi}^{\dagger}(x')|0 }
 \end{align}$$
-

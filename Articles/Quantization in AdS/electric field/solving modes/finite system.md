@@ -26,7 +26,7 @@ $$\begin{align}
 -\frac{1}{r^{2}}\partial _{t}\partial _{\phi}A^{t}-\frac{1}{r^{2}}\partial _{r}\partial _{\phi}A^{r}+\frac{1}{r^{3}}\partial _{\phi}A^{r}-\frac{1}{1+r^{2}}\partial _{t}^{2}A^{\phi}+(1+r^{2})\partial _{r}^{2}A^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}A^{\phi}+4A^{\phi} & =0
 \end{align}$$
 
-since the system is no longer conformally invariant, we cannot impose covariant gauge condition $\displaystyle{\nabla _{\mu}A^{\mu}=0}$. 
+since the system is no longer conformally invariant, we cannot impose covariant gauge condition $\displaystyle{\nabla _{\mu}A^{\mu}=0}$.
 
 # radial gauge (wrong)
 
@@ -43,7 +43,6 @@ $$\begin{align}
 \end{align}$$
 
 which is well-defined since the spacetime is topologically trivial in our case. after imposing the radial gauge, the eom becomes
-
 
 $$\begin{align}
 (1+r^{2})\partial _{r}^{2}A^{t}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{1+5r^{2}}{r}\partial _{r}A^{t}+4A^{t}+\frac{1}{1+r^{2}}\partial _{t}\partial _{\phi}A^{\phi} & =0 \\
@@ -217,7 +216,7 @@ $$\begin{align}
 {}_{2}F_{1}\left(\frac{2-\omega _{n}}{2},\frac{2+\omega _{n}}{2};1; \frac{1}{1+r_{0}^{2}}\right)=0
 \end{align}$$
 
-where $\displaystyle{\omega _{n}}$ is the $\displaystyle{n}$th smallest zero point of the above equation. 
+where $\displaystyle{\omega _{n}}$ is the $\displaystyle{n}$th smallest zero point of the above equation.
 
 ## for $\displaystyle{m\neq 0}$
 
@@ -258,7 +257,7 @@ $$\begin{align}
 \partial _{r}\left(r^{|m|}(1+r^{2})^{\omega/2}{}_{2}F_{1}\left(\frac{|m|+\omega _{nm}}{2},\frac{2+|m|+\omega _{nm}}{2},1+|m|,-r^{2}\right)\right)\Bigg|_{r=r_{0}}=0
 \end{align}$$
 
-where $\displaystyle{\omega _{nm}}$ is the $\displaystyle{n}$th smallest zero point of the above equation. 
+where $\displaystyle{\omega _{nm}}$ is the $\displaystyle{n}$th smallest zero point of the above equation.
 
 ## numerical simulation
 

@@ -8,7 +8,9 @@ summary: "Compact recognition guide for G2, F4, E6, E7, and E8, emphasizing rank
 
 The exceptional complex simple Lie algebras are
 
-$$G_2,\qquad F_4,\qquad E_6,\qquad E_7,\qquad E_8.$$
+$$\begin{align}
+G_2,\qquad F_4,\qquad E_6,\qquad E_7,\qquad E_8.
+\end{align}$$
 
 For an exam based on physical group theory, the usual goal is recognition rather than construction from first principles.
 
@@ -26,7 +28,9 @@ For an exam based on physical group theory, the usual goal is recognition rather
 
 $G_2$ has rank $2$ and dimension $14$. Its root system has $12$ roots:
 
-$$\#\Phi(G_2)=12,\qquad \dim G_2=\#\Phi+\operatorname{rank}=12+2=14.$$
+$$\begin{align}
+\#\Phi(G_2)=12,\qquad \dim G_2=\#\Phi+\operatorname{rank}=12+2=14.
+\end{align}$$
 
 ![G2 root system](../../../../../../Attachments/lie-g2-roots.png)
 
@@ -34,21 +38,29 @@ There are two root lengths, with squared length ratio $3:1$. The Dynkin diagram 
 
 The most useful representations are
 
-$$7,\qquad 14.$$
+$$\begin{align}
+7,\qquad 14.
+\end{align}$$
 
 The representation $14$ is the adjoint. A standard tensor product is
 
-$$7\otimes 7=27\oplus 14\oplus 7\oplus 1.$$
+$$\begin{align}
+7\otimes 7=27\oplus 14\oplus 7\oplus 1.
+\end{align}$$
 
 This also splits into symmetric and antisymmetric parts:
 
-$$S^2 7=27\oplus 1,\qquad \wedge^2 7=14\oplus 7.$$
+$$\begin{align}
+S^2 7=27\oplus 1,\qquad \wedge^2 7=14\oplus 7.
+\end{align}$$
 
 # F4
 
 $F_4$ has rank $4$ and dimension $52$. Its root system has $48$ roots:
 
-$$\dim F_4=48+4=52.$$
+$$\begin{align}
+\dim F_4=48+4=52.
+\end{align}$$
 
 It has two root lengths. The smallest nontrivial representation has dimension $26$, and the adjoint has dimension $52$.
 
@@ -63,7 +75,9 @@ Exam recognition signs:
 
 $E_6$ has rank $6$ and dimension $78$. The smallest nontrivial representations are
 
-$$27,\qquad \overline{27}.$$
+$$\begin{align}
+27,\qquad \overline{27}.
+\end{align}$$
 
 The adjoint representation is $78$.
 
@@ -101,17 +115,21 @@ Exam recognition signs:
 
 The most useful compact table is
 
-$$G_2:(2,14,7),\qquad F_4:(4,52,26),\qquad E_6:(6,78,27),\qquad E_7:(7,133,56),\qquad E_8:(8,248,248).$$
+$$\begin{align}
+G_2:(2,14,7),\qquad F_4:(4,52,26),\qquad E_6:(6,78,27),\qquad E_7:(7,133,56),\qquad E_8:(8,248,248).
+\end{align}$$
 
 The entries are
 
-$$(\operatorname{rank},\dim,\text{smallest nontrivial representation}).$$
+$$\begin{align}
+(\operatorname{rank},\dim,\text{smallest nontrivial representation}).
+\end{align}$$
 
 # Exam moves
 
 1. If rank is $2$ and the diagram has a triple bond, the answer is $G_2$.
-2. If the dimension is $52$, think $F_4$.
-3. If $27$ and $\overline{27}$ appear, think $E_6$.
-4. If $56$ appears with dimension $133$, think $E_7$.
-5. If $248$ is both the adjoint and the smallest nontrivial representation, think $E_8$.
-6. For exceptional algebras, use tables for detailed decompositions unless the course explicitly trained a computation.
+1. If the dimension is $52$, think $F_4$.
+1. If $27$ and $\overline{27}$ appear, think $E_6$.
+1. If $56$ appears with dimension $133$, think $E_7$.
+1. If $248$ is both the adjoint and the smallest nontrivial representation, think $E_8$.
+1. For exceptional algebras, use tables for detailed decompositions unless the course explicitly trained a computation.

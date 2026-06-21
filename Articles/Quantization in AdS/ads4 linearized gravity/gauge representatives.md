@@ -4,7 +4,7 @@ date: 2026-06-17
 summary: "Constructs direct gauge-fixed representatives for the Maxwell and graviton short modules in global AdS4, separating explicit wavefunctions from the representation-theoretic quotient."
 ---
 
-we have already solved the mode structure in [[Articles/Quantization in AdS3/ads4 linearized gravity/symplectic norm|symplectic norm]] for massive scalar, massless vector and massless TT tensor at each energy level. in this note we will find explicit closed forms for the gauge representatives.
+we have already solved the mode structure in [[Articles/Quantization in AdS/ads4 linearized gravity/symplectic norm|symplectic norm]] for massive scalar, massless vector and massless TT tensor at each energy level. in this note we will find explicit closed forms for the gauge representatives.
 
 ---
 
