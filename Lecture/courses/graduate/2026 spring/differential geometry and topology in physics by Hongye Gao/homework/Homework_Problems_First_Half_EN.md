@@ -19,9 +19,7 @@ $$
 Let $X$ be an arbitrary set of points, and let the complement of a subset $A_j \subseteq X$ be defined as $A_j^c := X \setminus A_j$, where $j$ is a member of some index set $J$. Prove the following de Morgan formulas:
 
 $$\begin{align}
-\left( \bigcap_{j \in J} A_j \right)^c = \bigcup_{j \in J} A_j^c,
-\qquad
-\left( \bigcup_{j \in J} A_j \right)^c = \bigcap_{j \in J} A_j^c.
+\left( \bigcap_{j \in J} A_j \right)^c = \bigcup_{j \in J} A_j^c, \qquad \left( \bigcup_{j \in J} A_j \right)^c = \bigcap_{j \in J} A_j^c.
 \end{align}$$
 
 ### 1.3
@@ -76,10 +74,7 @@ $$\begin{align}
 For any two points $x, y \in \mathbb{R}^n$, prove the Cauchy inequality
 
 $$\begin{align}
-\left( \sum_{j=1}^n x^j y^j \right)^2
-\le
-\left( \sum_{j=1}^n (x^j)^2 \right)
-\left( \sum_{j=1}^n (y^j)^2 \right)
+\left( \sum_{j=1}^n x^j y^j \right)^2 \le \left( \sum_{j=1}^n (x^j)^2 \right) \left( \sum_{j=1}^n (y^j)^2 \right)
 \end{align}$$
 
 and the Minkowski inequality
@@ -201,30 +196,21 @@ forms a vector bundle over $M$. Explain why. (Note: This vector bundle is called
 Let $M$ be a differentiable manifold, $X = X^\mu \partial / \partial x^\mu \in \mathfrak{X}(M)$ a smooth vector field on $M$, and
 
 $$\begin{align}
-t = t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n}
-\frac{\partial}{\partial x^{\mu_1}} \otimes \cdots \otimes
-\frac{\partial}{\partial x^{\mu_m}} \otimes
-dx^{\nu_1} \otimes \cdots \otimes dx^{\nu_n}
+t = t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n} \frac{\partial}{\partial x^{\mu_1}} \otimes \cdots \otimes \frac{\partial}{\partial x^{\mu_m}} \otimes dx^{\nu_1} \otimes \cdots \otimes dx^{\nu_n}
 \in \mathcal{T}(M)^m_n
 \end{align}$$
 
 a smooth $(m,n)$-type tensor field on $M$. Prove that the Lie derivative of this tensor field,
 
 $$\begin{align}
-\mathcal{L}_X t = (\mathcal{L}_X t)^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n}
-\frac{\partial}{\partial x^{\mu_1}} \otimes \cdots \otimes
-\frac{\partial}{\partial x^{\mu_m}} \otimes
-dx^{\nu_1} \otimes \cdots \otimes dx^{\nu_n},
+\mathcal{L}_X t = (\mathcal{L}_X t)^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n} \frac{\partial}{\partial x^{\mu_1}} \otimes \cdots \otimes \frac{\partial}{\partial x^{\mu_m}} \otimes dx^{\nu_1} \otimes \cdots \otimes dx^{\nu_n},
 \end{align}$$
 
 has the component coefficients
 
 $$\begin{align}
-(\mathcal{L}_X t)^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n}
-= X^\lambda \partial_\lambda t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n}
-+ \sum_{j=1}^{n} \partial_{\nu_j} X^\lambda
-\, t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_{j-1} \lambda \nu_{j+1} \cdots \nu_n}
-- \sum_{k=1}^{m} \partial_\lambda X^{\mu_k}
+(\mathcal{L}_X t)^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n} = X^\lambda \partial_\lambda t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n} + \sum_{j=1}^{n} \partial_{\nu_j} X^\lambda
+\, t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_{j-1} \lambda \nu_{j+1} \cdots \nu_n} - \sum_{k=1}^{m} \partial_\lambda X^{\mu_k}
 \, t^{\mu_1 \cdots \mu_{k-1} \lambda \mu_{k+1} \cdots \mu_m}_{\nu_1 \cdots \nu_n}.
 \end{align}$$
 
@@ -235,9 +221,7 @@ Here $\partial_\lambda$ is the abbreviated notation for the partial differential
 Let $M$ be a differentiable manifold. For all $f \in \mathcal{F}(M)$ and $X, Y \in \mathfrak{X}(M)$, derive the following identities:
 
 $$\begin{align}
-\mathcal{L}_{fX} Y = f \mathcal{L}_X Y - Y[f] X,
-\qquad
-\mathcal{L}_X (fY) = f \mathcal{L}_X Y + X[f] Y.
+\mathcal{L}_{fX} Y = f \mathcal{L}_X Y - Y[f] X, \qquad \mathcal{L}_X (fY) = f \mathcal{L}_X Y + X[f] Y.
 \end{align}$$
 
 ### 2.9
@@ -253,8 +237,7 @@ f_* [X, Y] = [f_* X, f_* Y].
 Let $M, N$ be differentiable manifolds and $f: M \to N$ a smooth map. For any differential forms $\omega, \xi \in \Omega^*(N)$ on $N$, prove the identities
 
 $$\begin{align}
-f^*(\omega \wedge \xi) = (f^* \omega) \wedge (f^* \xi),
-\qquad
+f^*(\omega \wedge \xi) = (f^* \omega) \wedge (f^* \xi), \qquad
 d(f^* \omega) = f^*(d\omega).
 \end{align}$$
 
@@ -292,9 +275,7 @@ H = U \begin{pmatrix}
 $$
 
 $$\begin{align}
-d\mu(H) \to d\mu(\lambda, \Omega) = |\det \mathcal{J}| \, d\mu(H),
-\qquad
-\mathcal{J} = \frac{\partial(\lambda_i, \Omega^j_k)}{\partial(H^i_i, H^j_k)}.
+d\mu(H) \to d\mu(\lambda, \Omega) = |\det \mathcal{J}| \, d\mu(H), \qquad \mathcal{J} = \frac{\partial(\lambda_i, \Omega^j_k)}{\partial(H^i_i, H^j_k)}.
 \end{align}$$
 
 The Jacobian matrix $\mathcal{J}$ in this expression can be computed via the following considerations:
@@ -320,15 +301,13 @@ $$
 1. The transformation $\delta H^i_j \to \widetilde{\delta H}^i_j := \sum_{m,n} (U^m_i)^* \delta H^m_n U^n_j$ satisfies
 
 $$\begin{align}
-\operatorname{Tr}(\widetilde{\delta H} \cdot \widetilde{\delta H})
-= \operatorname{Tr}(\delta H \cdot \delta H).
+\operatorname{Tr}(\widetilde{\delta H} \cdot \widetilde{\delta H}) = \operatorname{Tr}(\delta H \cdot \delta H).
 \end{align}$$
 
 This metric-preserving transformation does not affect the integration measure; hence the Jacobian matrix $\mathcal{J}$ can be determined from the following linear expansion coefficients:
 
 $$\begin{align}
-(\delta\lambda_i, \delta\Omega^j_k)
-= \mathcal{J} \cdot (\delta H^i_i, \delta H^j_k) + O((\delta H)^2),
+(\delta\lambda_i, \delta\Omega^j_k) = \mathcal{J} \cdot (\delta H^i_i, \delta H^j_k) + O((\delta H)^2),
 \end{align}$$
 
 where

@@ -398,8 +398,7 @@ $$\begin{align}
 因此
 
 $$\begin{align}
-\frac{a_{\mathrm{rh}}}{a_{\mathrm{end}}}=\left(\frac{\rho_{\mathrm{end}}}{\rho_{\mathrm{rh}}}\right)^{1/3}
-=\left(\frac{10^{15}}{10^{5}}\right)^{4/3},
+\frac{a_{\mathrm{rh}}}{a_{\mathrm{end}}}=\left(\frac{\rho_{\mathrm{end}}}{\rho_{\mathrm{rh}}}\right)^{1/3} =\left(\frac{10^{15}}{10^{5}}\right)^{4/3},
 \end{align}$$
 
 也即
@@ -423,8 +422,7 @@ T_0\simeq 2.35\times 10^{-13}\,\mathrm{GeV},\qquad T_{\mathrm{rh}}=10^{5}\,\math
 得到
 
 $$\begin{align}
-\frac{a_{\mathrm{end}}}{a_0}=\frac{a_{\mathrm{end}}}{a_{\mathrm{rh}}}\frac{a_{\mathrm{rh}}}{a_0}
-\simeq 10^{-40/3}\times \frac{T_0}{10^{5}\,\mathrm{GeV}}\left(\frac{3.91}{106.75}\right)^{1/3}.
+\frac{a_{\mathrm{end}}}{a_0}=\frac{a_{\mathrm{end}}}{a_{\mathrm{rh}}}\frac{a_{\mathrm{rh}}}{a_0} \simeq 10^{-40/3}\times \frac{T_0}{10^{5}\,\mathrm{GeV}}\left(\frac{3.91}{106.75}\right)^{1/3}.
 \end{align}$$
 
 于是

@@ -982,8 +982,7 @@ E_{\alpha_s}v=0,\qquad E_{\alpha_l}v=0,
 $(0,0,0,1)$ 是 $F_4$ 的 $26$ 维基本表示。Weyl character 分解为
 
 $$\begin{align}
-(0,0,0,1)\otimes(0,0,0,1)
-&=(0,0,0,0)\oplus(0,0,0,1)\oplus(1,0,0,0)\\
+(0,0,0,1)\otimes(0,0,0,1) &=(0,0,0,0)\oplus(0,0,0,1)\oplus(1,0,0,0)\\
 &\quad\oplus(0,0,1,0)\oplus(0,0,0,2).
 \end{align}$$
 
@@ -1097,8 +1096,7 @@ $$\begin{align}
 \end{align}$$
 
 $$\begin{align}
-[4,2]\otimes[2,1]
-&=[6,3]\oplus[6,2,1]\oplus[5,4]\oplus2[5,3,1]\oplus[5,2,2]\\
+[4,2]\otimes[2,1] &=[6,3]\oplus[6,2,1]\oplus[5,4]\oplus2[5,3,1]\oplus[5,2,2]\\
 &\quad\oplus[5,2,1,1]\oplus[4,4,1]\oplus[4,3,2]\oplus[4,3,1,1]\oplus[4,2,2,1],
 \end{align}$$
 
@@ -1490,10 +1488,7 @@ $$\begin{align}
 所以
 
 $$\begin{align}
-\chi_{jk}(\theta_1,\theta_2)=
-\frac{\sin\left((2j+1)(\theta_1+\theta_2)/2\right)}{\sin\left((\theta_1+\theta_2)/2\right)}
-\times
-\frac{\sin\left((2k+1)(\theta_1-\theta_2)/2\right)}{\sin\left((\theta_1-\theta_2)/2\right)}.
+\chi_{jk}(\theta_1,\theta_2)= \frac{\sin\left((2j+1)(\theta_1+\theta_2)/2\right)}{\sin\left((\theta_1+\theta_2)/2\right)} \times \frac{\sin\left((2k+1)(\theta_1-\theta_2)/2\right)}{\sin\left((\theta_1-\theta_2)/2\right)}.
 \end{align}$$
 
 当分母为零时取连续极限。例如 $D^{1/2,1/2}$ 是 $SO(4)$ 的向量表示，其特征标为
@@ -1665,16 +1660,10 @@ $$\begin{align}
 把尾部的 $\lambda_i=0$ 代入，可得显式三行公式
 
 $$\begin{align}
-\dim[n,m,p]
-&=\frac{(n+\ell)(m+\ell-1)(p+\ell-2)}{\ell(\ell-1)(\ell-2)}
-\times\frac{(n-m+1)(n-p+2)(m-p+1)}{2}\\
+\dim[n,m,p] &=\frac{(n+\ell)(m+\ell-1)(p+\ell-2)}{\ell(\ell-1)(\ell-2)} \times\frac{(n-m+1)(n-p+2)(m-p+1)}{2}\\
 &\quad\times\frac{(n+m+2\ell-1)(n+p+2\ell-2)(m+p+2\ell-3)}{(2\ell-1)(2\ell-2)(2\ell-3)}\\
-&\quad\times\prod_{j=4}^{\ell}\left[
-\frac{(n+j-1)(n+2\ell-j+1)}{(j-1)(2\ell-j+1)}
-\times\frac{(m+j-2)(m+2\ell-j)}{(j-2)(2\ell-j)}\right.\\
-&\quad\left.\times
-\frac{(p+j-3)(p+2\ell-j-1)}{(j-3)(2\ell-j-1)}
-\right].
+&\quad\times\prod_{j=4}^{\ell}\left[ \frac{(n+j-1)(n+2\ell-j+1)}{(j-1)(2\ell-j+1)} \times\frac{(m+j-2)(m+2\ell-j)}{(j-2)(2\ell-j)}\right.\\
+&\quad\left.\times \frac{(p+j-3)(p+2\ell-j-1)}{(j-3)(2\ell-j-1)} \right].
 \end{align}$$
 
 上式中当 $\ell=3$ 时，最后的乘积为空，按 $1$ 处理。

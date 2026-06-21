@@ -31,8 +31,7 @@ Y_t=a_t s_t,
 where $s_t$ symmetrizes indices in each row and $a_t$ antisymmetrizes indices in each column. since in $SU(3)$ the complete antisymmetrization of four fundamental indices is zero, the diagram $[1,1,1,1]$ does not contribute. hence
 
 $$\begin{align}
-\mathbf{3}^{\otimes 4}=[4]\oplus 3[3,1]\oplus 2[2,2]\oplus 3[2,1,1]
-=\mathbf{15'}\oplus 3\cdot \mathbf{15}\oplus 2\cdot \overline{\mathbf{6}}\oplus 3\cdot \mathbf{3}.
+\mathbf{3}^{\otimes 4}=[4]\oplus 3[3,1]\oplus 2[2,2]\oplus 3[2,1,1] =\mathbf{15'}\oplus 3\cdot \mathbf{15}\oplus 2\cdot \overline{\mathbf{6}}\oplus 3\cdot \mathbf{3}.
 \end{align}$$
 
 to verify the dimensions, use the hook-length formula for $SU(3)$:

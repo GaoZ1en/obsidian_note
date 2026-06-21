@@ -32,9 +32,7 @@ the nonzero Littlewood-Richardson coefficients are
 therefore
 
 $$\begin{align}
-[3,1]\otimes[2,1]
-=
-[5,2]\oplus[5,1,1]\oplus[4,3]\oplus 2[4,2,1]\oplus[3,3,1]\oplus[3,2,2].
+[3,1]\otimes[2,1] = [5,2]\oplus[5,1,1]\oplus[4,3]\oplus 2[4,2,1]\oplus[3,3,1]\oplus[3,2,2].
 \end{align}$$
 
 for $SU(3)$, a full column of height $3$ is trivial, so Young diagrams that differ by one such column describe the same irreducible representation. hence
@@ -49,9 +47,7 @@ $$\begin{align}
 thus the $SU(3)$ decomposition is
 
 $$\begin{align}
-[3,1]\otimes[2,1]
-=
-[5,2]\oplus[4]\oplus[4,3]\oplus 2[3,1]\oplus[2,2]\oplus[1].
+[3,1]\otimes[2,1] = [5,2]\oplus[4]\oplus[4,3]\oplus 2[3,1]\oplus[2,2]\oplus[1].
 \end{align}$$
 
 now verify the dimensions by the hook-length formula. for an $SU(3)$ Young diagram $\lambda$,
@@ -65,40 +61,25 @@ where $h_{ij}$ is the hook length of the box $(i,j)$.
 for the two factors,
 
 $$\begin{align}
-\dim[3,1]
-=
-\frac{3}{4}\cdot\frac{4}{2}\cdot\frac{5}{1}\cdot\frac{2}{1}
-=15,
+\dim[3,1] = \frac{3}{4}\cdot\frac{4}{2}\cdot\frac{5}{1}\cdot\frac{2}{1} =15,
 \end{align}$$
 
 $$\begin{align}
-\dim[2,1]
-=
-\frac{3}{3}\cdot\frac{4}{1}\cdot\frac{2}{1}
-=8.
+\dim[2,1] = \frac{3}{3}\cdot\frac{4}{1}\cdot\frac{2}{1} =8.
 \end{align}$$
 
 for the irreducible summands,
 
 $$\begin{align}
-\dim[5,2]
-=
-\frac{3}{6}\cdot\frac{4}{5}\cdot\frac{5}{3}\cdot\frac{6}{2}\cdot\frac{7}{1}\cdot\frac{2}{2}\cdot\frac{3}{1}
-=42,
+\dim[5,2] = \frac{3}{6}\cdot\frac{4}{5}\cdot\frac{5}{3}\cdot\frac{6}{2}\cdot\frac{7}{1}\cdot\frac{2}{2}\cdot\frac{3}{1} =42,
 \end{align}$$
 
 $$\begin{align}
-\dim[4]
-=
-\frac{3}{4}\cdot\frac{4}{3}\cdot\frac{5}{2}\cdot\frac{6}{1}
-=15,
+\dim[4] = \frac{3}{4}\cdot\frac{4}{3}\cdot\frac{5}{2}\cdot\frac{6}{1} =15,
 \end{align}$$
 
 $$\begin{align}
-\dim[4,3]
-=
-\frac{3}{5}\cdot\frac{4}{4}\cdot\frac{5}{3}\cdot\frac{6}{1}\cdot\frac{2}{3}\cdot\frac{3}{2}\cdot\frac{4}{1}
-=24,
+\dim[4,3] = \frac{3}{5}\cdot\frac{4}{4}\cdot\frac{5}{3}\cdot\frac{6}{1}\cdot\frac{2}{3}\cdot\frac{3}{2}\cdot\frac{4}{1} =24,
 \end{align}$$
 
 $$\begin{align}
@@ -106,17 +87,11 @@ $$\begin{align}
 \end{align}$$
 
 $$\begin{align}
-\dim[2,2]
-=
-\frac{3}{3}\cdot\frac{4}{2}\cdot\frac{2}{2}\cdot\frac{3}{1}
-=6,
+\dim[2,2] = \frac{3}{3}\cdot\frac{4}{2}\cdot\frac{2}{2}\cdot\frac{3}{1} =6,
 \end{align}$$
 
 $$\begin{align}
-\dim[1]
-=
-\frac{3}{1}
-=3.
+\dim[1] = \frac{3}{1} =3.
 \end{align}$$
 
 therefore
@@ -128,7 +103,5 @@ $$\begin{align}
 so the decomposition is dimensionally consistent. equivalently,
 
 $$\begin{align}
-\mathbf{15}\otimes\mathbf{8}
-=
-\mathbf{42}\oplus\mathbf{15}\oplus\mathbf{24}\oplus 2\cdot\mathbf{15}\oplus\mathbf{6}\oplus\mathbf{3}.
+\mathbf{15}\otimes\mathbf{8} = \mathbf{42}\oplus\mathbf{15}\oplus\mathbf{24}\oplus 2\cdot\mathbf{15}\oplus\mathbf{6}\oplus\mathbf{3}.
 \end{align}$$

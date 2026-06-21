@@ -11,8 +11,7 @@ find the Euler angles of the following rotation transformation $\displaystyle{R}
 1.
 
 $$\begin{align}
-R(\alpha,\beta,\gamma) & =\frac{1}{4}\begin{pmatrix}
--\sqrt{ 3 }-2 & \sqrt{ 3 }-2 & -\sqrt{ 2 } \\
+R(\alpha,\beta,\gamma) & =\frac{1}{4}\begin{pmatrix} -\sqrt{ 3 }-2 & \sqrt{ 3 }-2 & -\sqrt{ 2 } \\
 \sqrt{ 3 }-2 & -\sqrt{ 3 }-2 & \sqrt{ 2 } \\
 -\sqrt{ 2 } & \sqrt{ 2 } & 2\sqrt{ 3 }
 \end{pmatrix}
@@ -21,8 +20,7 @@ R(\alpha,\beta,\gamma) & =\frac{1}{4}\begin{pmatrix}
 2.
 
 $$\begin{align}
-R(\alpha,\beta,\gamma) & =\frac{1}{8}\begin{pmatrix}
-\sqrt{ 6 }+2\sqrt{ 3 } & 3\sqrt{ 2 }-2 & 2\sqrt{ 6 } \\
+R(\alpha,\beta,\gamma) & =\frac{1}{8}\begin{pmatrix} \sqrt{ 6 }+2\sqrt{ 3 } & 3\sqrt{ 2 }-2 & 2\sqrt{ 6 } \\
 \sqrt{ 2 }-6 & \sqrt{ 6 }+2\sqrt{ 3 } & 2\sqrt{ 2 } \\
 -2\sqrt{ 2 } & -2\sqrt{ 6 } & 4\sqrt{ 2 }
 \end{pmatrix}
@@ -76,8 +74,7 @@ we have
 1.
 
 $$\begin{align}
-R(\vec{e}_{1}\sin \theta+\vec{e}_{3}\cos \theta,\pi) & =\begin{pmatrix}
--\cos 2\theta & 0 & \sin 2\theta \\
+R(\vec{e}_{1}\sin \theta+\vec{e}_{3}\cos \theta,\pi) & =\begin{pmatrix} -\cos 2\theta & 0 & \sin 2\theta \\
 0 & -1 & 0 \\
 \sin 2\theta & 0 & \cos 2\theta
 \end{pmatrix} \\

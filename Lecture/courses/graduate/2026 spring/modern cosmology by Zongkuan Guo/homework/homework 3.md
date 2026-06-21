@@ -41,8 +41,7 @@ T_{\mathrm{dec}} & \sim \left(\frac{1.66\sqrt{g_*}}{G_F^2M_{\mathrm{Pl}}}\right)
 Using
 
 $$\begin{align}
-G_F & =1.166\times 10^{-5}\mathrm{GeV}^{-2}, &
-M_{\mathrm{Pl}} & =1.22\times 10^{19}\mathrm{GeV},
+G_F & =1.166\times 10^{-5}\mathrm{GeV}^{-2}, & M_{\mathrm{Pl}} & =1.22\times 10^{19}\mathrm{GeV},
 \end{align}$$
 
 we obtain
@@ -66,8 +65,7 @@ $$\begin{align}
 Hence
 
 $$\begin{align}
-T_{\nu,0}
-& =\left(\frac{4}{11}\right)^{1/3}T_{\gamma,0} \\
+T_{\nu,0} & =\left(\frac{4}{11}\right)^{1/3}T_{\gamma,0} \\
 & =\left(\frac{4}{11}\right)^{1/3}(2.73\mathrm{K}) \\
 & \simeq 1.95\mathrm{K}.
 \end{align}$$

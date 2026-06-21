@@ -762,8 +762,7 @@ $$\begin{align}
 线性阶修正为
 
 $$\begin{align}
-\delta\Gamma^0_{00}=\Phi',
-\qquad
+\delta\Gamma^0_{00}=\Phi', \qquad
 \delta\Gamma^0_{0i}=\partial_i\Phi,
 \end{align}$$
 
@@ -772,8 +771,7 @@ $$\begin{align}
 \end{align}$$
 
 $$\begin{align}
-\delta\Gamma^i_{00}=\partial^i\Phi,
-\qquad
+\delta\Gamma^i_{00}=\partial^i\Phi, \qquad
 \delta\Gamma^i_{0j}=-\Psi'\delta^i_j,
 \end{align}$$
 
@@ -1133,8 +1131,7 @@ $$\begin{align}
 反过来，
 
 $$\begin{align}
-P_g(k)=\int \mathrm{d}^3r\,\xi_g(r)e^{-i\mathbf k\cdot \mathbf r}
-=4\pi\int_0^\infty \mathrm{d}r\,r^2\xi_g(r)\frac{\sin kr}{kr}.
+P_g(k)=\int \mathrm{d}^3r\,\xi_g(r)e^{-i\mathbf k\cdot \mathbf r} =4\pi\int_0^\infty \mathrm{d}r\,r^2\xi_g(r)\frac{\sin kr}{kr}.
 \end{align}$$
 
 这就是星系两点关联函数与功率谱之间的 Fourier 对偶关系。

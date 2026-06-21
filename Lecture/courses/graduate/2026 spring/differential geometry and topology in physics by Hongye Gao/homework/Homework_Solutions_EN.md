@@ -28,8 +28,7 @@ Define $f(t) = \frac{t}{1+t}$ for $t \ge 0$. Then $f'(t) = \frac{1}{(1+t)^2} > 0
 *Triangle inequality*: Since $f$ is increasing, $d(x,z) \le d(x,y) + d(y,z)$ implies $f(d(x,z)) \le f(d(x,y) + d(y,z))$. For a concave function with $f(0) = 0$, we have $f(a+b) \le f(a) + f(b)$ for $a,b \ge 0$. Proof:
 
 $$\begin{aligned}
-f(a) + f(b) - f(a+b)
-&= \frac{a}{1+a} + \frac{b}{1+b} - \frac{a+b}{1+a+b} \\[4pt]
+f(a) + f(b) - f(a+b) &= \frac{a}{1+a} + \frac{b}{1+b} - \frac{a+b}{1+a+b} \\[4pt]
 &= \frac{a(1+b)(1+a+b) + b(1+a)(1+a+b) - (a+b)(1+a)(1+b)}{(1+a)(1+b)(1+a+b)} \\[4pt]
 &= \frac{2ab + a^2b + ab^2}{(1+a)(1+b)(1+a+b)} \ge 0.
 \end{aligned}$$
@@ -78,8 +77,7 @@ Let $X$ be an arbitrary set and $A_j \subseteq X$ for $j \in J$. The complement 
 *Proof*:
 
 $$\begin{aligned}
-x \in \Bigl(\bigcap_{j \in J} A_j\Bigr)^c
-&\iff x \notin \bigcap_{j \in J} A_j \\
+x \in \Bigl(\bigcap_{j \in J} A_j\Bigr)^c &\iff x \notin \bigcap_{j \in J} A_j \\
 &\iff \exists\, j \in J \text{ such that } x \notin A_j \quad (\text{negation of "for all $j$, $x \in A_j$"}) \\
 &\iff \exists\, j \in J \text{ such that } x \in A_j^c \\
 &\iff x \in \bigcup_{j \in J} A_j^c.
@@ -92,8 +90,7 @@ Thus the two sets are equal. $\square$
 *Proof*:
 
 $$\begin{aligned}
-x \in \Bigl(\bigcup_{j \in J} A_j\Bigr)^c
-&\iff x \notin \bigcup_{j \in J} A_j \\
+x \in \Bigl(\bigcup_{j \in J} A_j\Bigr)^c &\iff x \notin \bigcup_{j \in J} A_j \\
 &\iff \forall\, j \in J,\; x \notin A_j \quad (\text{negation of "there exists $j$ with $x \in A_j$"}) \\
 &\iff \forall\, j \in J,\; x \in A_j^c \\
 &\iff x \in \bigcap_{j \in J} A_j^c. \quad \square
@@ -231,8 +228,7 @@ $$\begin{align}
 *Proof*:
 
 $$\begin{aligned}
-\|x+y\|^2 &= \sum_{j=1}^n (x^j + y^j)^2
-= \sum_{j=1}^n (x^j)^2 + 2\sum_{j=1}^n x^j y^j + \sum_{j=1}^n (y^j)^2 \\
+\|x+y\|^2 &= \sum_{j=1}^n (x^j + y^j)^2 = \sum_{j=1}^n (x^j)^2 + 2\sum_{j=1}^n x^j y^j + \sum_{j=1}^n (y^j)^2 \\
 &\le \|x\|^2 + 2\|x\|\|y\| + \|y\|^2 \quad \text{(by Cauchy-Schwarz: } \sum x^j y^j \le \|x\|\|y\|\text{)} \\
 &= (\|x\| + \|y\|)^2.
 \end{aligned}$$
@@ -445,8 +441,7 @@ Therefore $A^{2k} = (-\theta^2)^k I_2 = (-1)^k \theta^{2k} I_2$ and $A^{2k+1} = 
 Now compute the matrix exponential:
 
 $$\begin{aligned}
-e^A &= \sum_{k=0}^\infty \frac{A^k}{k!}
-= \sum_{k=0}^\infty \frac{A^{2k}}{(2k)!} + \sum_{k=0}^\infty \frac{A^{2k+1}}{(2k+1)!} \\
+e^A &= \sum_{k=0}^\infty \frac{A^k}{k!} = \sum_{k=0}^\infty \frac{A^{2k}}{(2k)!} + \sum_{k=0}^\infty \frac{A^{2k+1}}{(2k+1)!} \\
 &= I_2 \sum_{k=0}^\infty \frac{(-1)^k \theta^{2k}}{(2k)!} + A \sum_{k=0}^\infty \frac{(-1)^k \theta^{2k}}{(2k+1)!} \\
 &= I_2 \cos\theta + \frac{A}{i\theta} \frac{1}{i} \sum_{k=0}^\infty \frac{(-1)^k \theta^{2k+1}}{(2k+1)!}.
 \end{aligned}$$
@@ -479,11 +474,11 @@ $$
 For $k = 0$, $A^0 = I_{n+1} = \begin{pmatrix} I_n & 0 \\ 0^T & 1 \end{pmatrix}$. Thus the series for $e^A$ splits:
 
 $$\begin{aligned}
-e^A &= \sum_{k=0}^\infty \frac{A^k}{k!}
-= \begin{pmatrix} I_n & 0 \\ 0^T & 1 \end{pmatrix} + \sum_{k=1}^\infty \frac{1}{k!} \begin{pmatrix} B^k & B^{k-1} \mathbf{b} \\ 0^T & 0 \end{pmatrix} \\[8pt]
+e^A &= \sum_{k=0}^\infty \frac{A^k}{k!} = \begin{pmatrix} I_n & 0 \\
+0^T & 1 \end{pmatrix} + \sum_{k=1}^\infty \frac{1}{k!} \begin{pmatrix} B^k & B^{k-1} \mathbf{b} \\
+0^T & 0 \end{pmatrix} \\[8pt]
 &= \begin{pmatrix}
-I_n + \sum_{k=1}^\infty \frac{B^k}{k!} &
-\sum_{k=1}^\infty \frac{B^{k-1}}{k!} \mathbf{b} \\[8pt]
+I_n + \sum_{k=1}^\infty \frac{B^k}{k!} & \sum_{k=1}^\infty \frac{B^{k-1}}{k!} \mathbf{b} \\[8pt]
 0^T & 1
 \end{pmatrix} \\[8pt]
 &= \begin{pmatrix}
@@ -604,10 +599,7 @@ For a general $(m,n)$-tensor, applying $\mathcal{L}_X$ using the Leibniz rule gi
 Summing all contributions yields the stated formula:
 
 $$\begin{align}
-(\mathcal{L}_X t)^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n}
-= X^\lambda \partial_\lambda t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n}
-+ \sum_{j=1}^{n} \partial_{\nu_j} X^\lambda \, t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_{j-1} \lambda \nu_{j+1} \cdots \nu_n}
-- \sum_{k=1}^{m} \partial_\lambda X^{\mu_k} \, t^{\mu_1 \cdots \mu_{k-1} \lambda \mu_{k+1} \cdots \mu_m}_{\nu_1 \cdots \nu_n}. \quad \square
+(\mathcal{L}_X t)^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n} = X^\lambda \partial_\lambda t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_n} + \sum_{j=1}^{n} \partial_{\nu_j} X^\lambda \, t^{\mu_1 \cdots \mu_m}_{\nu_1 \cdots \nu_{j-1} \lambda \nu_{j+1} \cdots \nu_n} - \sum_{k=1}^{m} \partial_\lambda X^{\mu_k} \, t^{\mu_1 \cdots \mu_{k-1} \lambda \mu_{k+1} \cdots \mu_m}_{\nu_1 \cdots \nu_n}. \quad \square
 \end{align}$$
 
 ---
@@ -673,14 +665,9 @@ The key step uses that for $h: N \to \mathbb{R}$, $X_p(h \circ f) = (f_*X)_{f(p)
 For $p \in M$ and $v_1, \dots, v_{r+s} \in T_p M$:
 
 $$\begin{aligned}
-f^*(\omega \wedge \xi)_p(v_1, \dots, v_{r+s})
-&= (\omega \wedge \xi)_{f(p)}(f_* v_1, \dots, f_* v_{r+s}) \\
-&= \frac{1}{r!\, s!} \sum_{\sigma \in S_{r+s}} \operatorname{sgn}(\sigma)\,
-\omega_{f(p)}(f_* v_{\sigma(1)}, \dots, f_* v_{\sigma(r)})\,
-\xi_{f(p)}(f_* v_{\sigma(r+1)}, \dots, f_* v_{\sigma(r+s)}) \\
-&= \frac{1}{r!\, s!} \sum_{\sigma \in S_{r+s}} \operatorname{sgn}(\sigma)\,
-(f^*\omega)_p(v_{\sigma(1)}, \dots, v_{\sigma(r)})\,
-(f^*\xi)_p(v_{\sigma(r+1)}, \dots, v_{\sigma(r+s)}) \\
+f^*(\omega \wedge \xi)_p(v_1, \dots, v_{r+s}) &= (\omega \wedge \xi)_{f(p)}(f_* v_1, \dots, f_* v_{r+s}) \\
+&= \frac{1}{r!\, s!} \sum_{\sigma \in S_{r+s}} \operatorname{sgn}(\sigma)\, \omega_{f(p)}(f_* v_{\sigma(1)}, \dots, f_* v_{\sigma(r)})\, \xi_{f(p)}(f_* v_{\sigma(r+1)}, \dots, f_* v_{\sigma(r+s)}) \\
+&= \frac{1}{r!\, s!} \sum_{\sigma \in S_{r+s}} \operatorname{sgn}(\sigma)\, (f^*\omega)_p(v_{\sigma(1)}, \dots, v_{\sigma(r)})\, (f^*\xi)_p(v_{\sigma(r+1)}, \dots, v_{\sigma(r+s)}) \\
 &= \bigl((f^*\omega) \wedge (f^*\xi)\bigr)_p(v_1, \dots, v_{r+s}).
 \end{aligned}$$
 
@@ -713,11 +700,8 @@ Thus $d(f^*\omega) = f^*(d\omega)$. $\square$
 *Proof*: For vector fields $Y_1, \dots, Y_{r+s-1}$:
 
 $$\begin{aligned}
-i_X(\omega \wedge \eta)(Y_1, \dots, Y_{r+s-1})
-&= (\omega \wedge \eta)(X, Y_1, \dots, Y_{r+s-1}) \\
-&= \frac{1}{r!\, s!} \sum_{\sigma \in S_{r+s}} \operatorname{sgn}(\sigma)\,
-\omega(v_{\sigma(1)}, \dots, v_{\sigma(r)})\,
-\eta(v_{\sigma(r+1)}, \dots, v_{\sigma(r+s)}),
+i_X(\omega \wedge \eta)(Y_1, \dots, Y_{r+s-1}) &= (\omega \wedge \eta)(X, Y_1, \dots, Y_{r+s-1}) \\
+&= \frac{1}{r!\, s!} \sum_{\sigma \in S_{r+s}} \operatorname{sgn}(\sigma)\, \omega(v_{\sigma(1)}, \dots, v_{\sigma(r)})\, \eta(v_{\sigma(r+1)}, \dots, v_{\sigma(r+s)}),
 \end{aligned}$$
 
 where $\{v_1, \dots, v_{r+s}\} = \{X, Y_1, \dots, Y_{r+s-1}\}$. The sum splits into terms where $X$ appears among the arguments of $\omega$ (giving $i_X\omega \wedge \eta$) and terms where $X$ appears among the arguments of $\eta$. In the latter case, moving $X$ past the $r$ arguments of $\omega$ introduces a sign $(-1)^r$, giving $(-1)^r \omega \wedge i_X\eta$. Hence the formula. $\square$
@@ -807,8 +791,7 @@ For $i = j$: $\delta\Omega^i_i = \sum_k (U^k_i)^* \delta U^k_i = \frac{1}{2} \de
 For $i \neq j$:
 
 $$\begin{align}
-\delta\Omega^i_j = \sum_k (U^k_i)^* \frac{\sum_{m,n} (U^m_j)^* \delta H^m_n U^n_i}{\lambda_i - \lambda_j} U^k_j
-= \frac{\sum_{m,n} (U^m_i)^* \delta H^m_n U^n_j}{\lambda_j - \lambda_i}.
+\delta\Omega^i_j = \sum_k (U^k_i)^* \frac{\sum_{m,n} (U^m_j)^* \delta H^m_n U^n_i}{\lambda_i - \lambda_j} U^k_j = \frac{\sum_{m,n} (U^m_i)^* \delta H^m_n U^n_j}{\lambda_j - \lambda_i}.
 \end{align}$$
 
 These match the formulas given in the problem. $\checkmark$
@@ -881,8 +864,7 @@ Define $\delta^{\nu_1 \cdots \nu_s}_{\mu_1 \cdots \mu_s} := \det\begin{pmatrix} 
 *Proof*: From (2), $\epsilon_{\mu_1 \cdots \mu_m} = \delta^{1 \cdots m}_{\mu_1 \cdots \mu_m}$ and $\epsilon^{\nu_1 \cdots \nu_m} = \delta^{\nu_1 \cdots \nu_m}_{1 \cdots m}$. Then:
 
 $$\begin{align}
-\epsilon_{\mu_1 \cdots \mu_m} \epsilon^{\nu_1 \cdots \nu_m}
-= \sum_{\sigma \in S_m} \operatorname{sgn}(\sigma) \delta^{\sigma(1)}_{\mu_1} \cdots \delta^{\sigma(m)}_{\mu_m}
+\epsilon_{\mu_1 \cdots \mu_m} \epsilon^{\nu_1 \cdots \nu_m} = \sum_{\sigma \in S_m} \operatorname{sgn}(\sigma) \delta^{\sigma(1)}_{\mu_1} \cdots \delta^{\sigma(m)}_{\mu_m}
 \sum_{\tau \in S_m} \operatorname{sgn}(\tau) \delta^{\nu_1}_{\tau(1)} \cdots \delta^{\nu_m}_{\tau(m)}.
 \end{align}$$
 
@@ -900,8 +882,7 @@ Their product is $\det(\delta^i_{\mu_j}) \cdot \det(\delta^{\nu_i}_j) = \det\big
 *Proof*: Using (3), $\epsilon_{\mu_1 \cdots \mu_m} \epsilon^{\nu_1 \cdots \nu_m} = \delta^{\nu_1 \cdots \nu_m}_{\mu_1 \cdots \mu_m}$. Now contract the first $k$ upper and lower indices:
 
 $$\begin{aligned}
-\epsilon_{\mu_1 \cdots \mu_k \mu_{k+1} \cdots \mu_m} \epsilon^{\mu_1 \cdots \mu_k \nu_{k+1} \cdots \nu_m}
-&= \delta^{\mu_1 \cdots \mu_k \nu_{k+1} \cdots \nu_m}_{\mu_1 \cdots \mu_k \mu_{k+1} \cdots \mu_m} \\
+\epsilon_{\mu_1 \cdots \mu_k \mu_{k+1} \cdots \mu_m} \epsilon^{\mu_1 \cdots \mu_k \nu_{k+1} \cdots \nu_m} &= \delta^{\mu_1 \cdots \mu_k \nu_{k+1} \cdots \nu_m}_{\mu_1 \cdots \mu_k \mu_{k+1} \cdots \mu_m} \\
 &= \sum_{\sigma \in S_m} \operatorname{sgn}(\sigma) \delta^{\sigma(1)}_{\mu_1} \cdots \delta^{\sigma(k)}_{\mu_k} \delta^{\sigma(k+1)}_{\mu_{k+1}} \cdots \delta^{\sigma(m)}_{\mu_m}\big|_{\text{first }k\text{ upper}= \text{first }k\text{ lower}}.
 \end{aligned}$$
 
@@ -922,9 +903,7 @@ $$\begin{align}
 The wedge product $\alpha \wedge {*}\beta$ is an $m$-form. In local coordinates:
 
 $$\begin{aligned}
-\alpha \wedge {*}\beta
-&= \frac{1}{q!} \alpha_{\mu_1 \cdots \mu_q} dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q}
-\wedge \frac{\sqrt{|g|}}{q!\, (m-q)!} \beta^{\nu_1 \cdots \nu_q} \epsilon_{\nu_1 \cdots \nu_q \rho_1 \cdots \rho_{m-q}} dx^{\rho_1} \wedge \cdots \wedge dx^{\rho_{m-q}} \\
+\alpha \wedge {*}\beta &= \frac{1}{q!} \alpha_{\mu_1 \cdots \mu_q} dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q} \wedge \frac{\sqrt{|g|}}{q!\, (m-q)!} \beta^{\nu_1 \cdots \nu_q} \epsilon_{\nu_1 \cdots \nu_q \rho_1 \cdots \rho_{m-q}} dx^{\rho_1} \wedge \cdots \wedge dx^{\rho_{m-q}} \\
 &= \frac{\sqrt{|g|}}{(q!)^2 (m-q)!} \alpha_{\mu_1 \cdots \mu_q} \beta^{\nu_1 \cdots \nu_q}
 \epsilon_{\nu_1 \cdots \nu_q \rho_1 \cdots \rho_{m-q}}
 dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q} \wedge dx^{\rho_1} \wedge \cdots \wedge dx^{\rho_{m-q}}.
@@ -973,17 +952,14 @@ $$\begin{align}
 Applying ${*}$ twice to the basis $q$-form:
 
 $$\begin{aligned}
-{**} (dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q})
-&= {*}\!\left( \frac{\sqrt{|g|}}{(m-q)!} \epsilon^{\mu_1 \cdots \mu_q}_{\qquad \nu_{q+1} \cdots \nu_m} dx^{\nu_{q+1}} \wedge \cdots \wedge dx^{\nu_m} \right) \\
-&= \frac{\sqrt{|g|}}{(m-q)!} \epsilon^{\mu_1 \cdots \mu_q}_{\qquad \nu_{q+1} \cdots \nu_m}
-\frac{\sqrt{|g|}}{q!} \epsilon^{\nu_{q+1} \cdots \nu_m}_{\qquad \rho_1 \cdots \rho_q} dx^{\rho_1} \wedge \cdots \wedge dx^{\rho_q}.
+{**} (dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q}) &= {*}\!\left( \frac{\sqrt{|g|}}{(m-q)!} \epsilon^{\mu_1 \cdots \mu_q}_{\qquad \nu_{q+1} \cdots \nu_m} dx^{\nu_{q+1}} \wedge \cdots \wedge dx^{\nu_m} \right) \\
+&= \frac{\sqrt{|g|}}{(m-q)!} \epsilon^{\mu_1 \cdots \mu_q}_{\qquad \nu_{q+1} \cdots \nu_m} \frac{\sqrt{|g|}}{q!} \epsilon^{\nu_{q+1} \cdots \nu_m}_{\qquad \rho_1 \cdots \rho_q} dx^{\rho_1} \wedge \cdots \wedge dx^{\rho_q}.
 \end{aligned}$$
 
 Now use the Levi-Civita contraction identity:
 
 $$\begin{align}
-\epsilon^{\mu_1 \cdots \mu_q}_{\qquad \nu_{q+1} \cdots \nu_m} \epsilon^{\nu_{q+1} \cdots \nu_m}_{\qquad \rho_1 \cdots \rho_q}
-= (-1)^{q(m-q)} q!\, (m-q)! \, \delta^{\mu_1 \cdots \mu_q}_{\rho_1 \cdots \rho_q}.
+\epsilon^{\mu_1 \cdots \mu_q}_{\qquad \nu_{q+1} \cdots \nu_m} \epsilon^{\nu_{q+1} \cdots \nu_m}_{\qquad \rho_1 \cdots \rho_q} = (-1)^{q(m-q)} q!\, (m-q)! \, \delta^{\mu_1 \cdots \mu_q}_{\rho_1 \cdots \rho_q}.
 \end{align}$$
 
 (The sign $(-1)^{q(m-q)}$ arises from moving all $q$ upper indices past all $m-q$ lower indices in the contraction of the two Levi-Civita symbols.) The metric factors give $(\sqrt{|g|})^2 / |g| = 1$ (in the Riemannian case; for pseudo-Riemannian there is an additional $(-1)^{q(m-q)} \operatorname{sgn}(\det g)$, but for Euclidean signature $\det g > 0$).
