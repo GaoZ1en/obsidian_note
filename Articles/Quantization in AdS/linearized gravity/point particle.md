@@ -85,9 +85,7 @@ X^{A}(\tau) & =U^{A}\cos \tau+V^{A}\sin \tau,
 where $A=-1,0,1,2$ and
 
 $$\begin{align}
-\eta_{AB}U^{A}U^{B} & =-1, &
-\eta_{AB}V^{A}V^{B} & =-1, &
-\eta_{AB}U^{A}V^{B} & =0,
+\eta_{AB}U^{A}U^{B} & =-1, & \eta_{AB}V^{A}V^{B} & =-1, & \eta_{AB}U^{A}V^{B} & =0,
 \end{align}$$
 
 with $\eta=\operatorname{diag}(-1,-1,+1,+1)$. the corresponding global-coordinate solution is obtained from
@@ -165,9 +163,7 @@ L_{-1} & =\frac{1}{2}\left(J_{-1,1}+J_{0,2}+iJ_{-1,2}-iJ_{0,1}\right), \\
 these generators satisfy two copies of $\displaystyle{\mathfrak{sl}(2,\mathbb{R})}$ algebras
 
 $$\begin{align}
-[L_{p},L_{q}] & =(p-q)L_{p+q}, &
-[\bar{L}_{p},\bar{L}_{q}] & =(p-q)\bar{L}_{p+q}, &
-[L_{p},\bar{L}_{q}] & =0,
+[L_{p},L_{q}] & =(p-q)L_{p+q}, & [\bar{L}_{p},\bar{L}_{q}] & =(p-q)\bar{L}_{p+q}, & [L_{p},\bar{L}_{q}] & =0,
 \end{align}$$
 
 where $p,q=0,\pm 1$. the quadratic Casimirs of the two $\mathfrak{sl}(2,\mathbb{R})$ factors are
@@ -206,8 +202,7 @@ C_{R}\ket{h,\bar{h}} & =\bar h(\bar h-1)\ket{h,\bar{h}}.
 thus a spinless massive particle is described by $h=\bar h$ with
 
 $$\begin{align}
-h(h-1) & =\frac{m^{2}}{4}, &
-\Delta & :=h+\bar h=2h.
+h(h-1) & =\frac{m^{2}}{4}, & \Delta & :=h+\bar h=2h.
 \end{align}$$
 
 equivalently,

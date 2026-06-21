@@ -122,8 +122,7 @@ where
 
 $$\begin{align}
 \delta A_{\xi}^{(1)\mu \nu} & =-\delta h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}+\delta h^{\nu \rho}\nabla ^{(0)}_{\rho}\xi ^{\mu}+\xi ^{\rho}\left( \nabla ^{(0)\mu}\delta h^{\nu}{}_{\rho}-\nabla ^{(0)\nu}\delta h^{\mu}{}_{\rho} \right) \\
-\delta A_{\xi}^{(2)\mu \nu} & =\left( \delta h^{\mu}{}_{\rho}h^{\rho \sigma}+h^{\mu}{}_{\rho}\delta h^{\rho \sigma} \right)\nabla ^{(0)}_{\sigma}\xi ^{\nu}
--\left( \delta h^{\nu}{}_{\rho}h^{\rho \sigma}+h^{\nu}{}_{\rho}\delta h^{\rho \sigma} \right)\nabla ^{(0)}_{\sigma}\xi ^{\mu} \\
+\delta A_{\xi}^{(2)\mu \nu} & =\left( \delta h^{\mu}{}_{\rho}h^{\rho \sigma}+h^{\mu}{}_{\rho}\delta h^{\rho \sigma} \right)\nabla ^{(0)}_{\sigma}\xi ^{\nu} -\left( \delta h^{\nu}{}_{\rho}h^{\rho \sigma}+h^{\nu}{}_{\rho}\delta h^{\rho \sigma} \right)\nabla ^{(0)}_{\sigma}\xi ^{\mu} \\
 & +\xi ^{\lambda}\left[ \delta h^{\mu \rho}\left( \nabla ^{(0)\nu}h_{\rho \lambda}-\nabla ^{(0)}_{\rho}h^{\nu}{}_{\lambda} \right)+h^{\mu \rho}\left( \nabla ^{(0)\nu}\delta h_{\rho \lambda}-\nabla ^{(0)}_{\rho}\delta h^{\nu}{}_{\lambda} \right) \right. \\
 & \left. -\delta h^{\nu \rho}\left( \nabla ^{(0)\mu}h_{\rho \lambda}-\nabla ^{(0)}_{\rho}h^{\mu}{}_{\lambda} \right)-h^{\nu \rho}\left( \nabla ^{(0)\mu}\delta h_{\rho \lambda}-\nabla ^{(0)}_{\rho}\delta h^{\mu}{}_{\lambda} \right) \right] \\
 \delta D^{(2)} & =\frac{1}{4}h\delta h-\frac{1}{2}h_{\rho \sigma}\delta h^{\rho \sigma}.

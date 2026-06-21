@@ -32,7 +32,8 @@ $$\begin{align}
 in general, we have
 
 $$\begin{align}
-\frac{\mathrm{d}^{n}S}{\mathrm{d}\varepsilon ^{n}}\bigg|_{\varepsilon=0} & =\int \left( \sum ^{n}_{m=1} \left. \frac{\delta ^{m}\mathbf{L}}{\delta \phi ^{m}} \right|_{\phi ^{(0)}} \sum _{\substack{k_1, k_2, \dots, k_m \geq 1 \\ k_1 + k_2 + \dots + k_m = n}} \frac{n!}{k_1! k_2! \dots k_m!} \delta^{k_1} \phi \delta^{k_2} \phi \dots \delta^{k_m} \phi \right)
+\frac{\mathrm{d}^{n}S}{\mathrm{d}\varepsilon ^{n}}\bigg|_{\varepsilon=0} & =\int \left( \sum ^{n}_{m=1} \left. \frac{\delta ^{m}\mathbf{L}}{\delta \phi ^{m}} \right|_{\phi ^{(0)}} \sum _{\substack{k_1, k_2, \dots, k_m \geq 1 \\
+k_1 + k_2 + \dots + k_m = n}} \frac{n!}{k_1! k_2! \dots k_m!} \delta^{k_1} \phi \delta^{k_2} \phi \dots \delta^{k_m} \phi \right)
 \end{align}$$
 
 therefore, the full expansion of the action up to $\displaystyle{\mathcal{O}(\varepsilon ^{2})}$ is

@@ -85,15 +85,13 @@ K^{\mathbb{H}_{2n+1}/\mathbb{Z}}(t,x,x') & =\sum _{n\in \mathbb{Z}}K^{\mathbb{H}
 - 在基本域 $\mathcal{F}$ 上取迹，得到
 
 $$\begin{align}
-\operatorname{Tr}\,e^{-t(-\nabla^2+\mu^2)}\Big|_{\mathbb{H}_d/\mathbb{Z}}
-	= \int_{\mathcal{F}} d^d x\sqrt{g}\, K^{\mathbb{H}_d/\mathbb{Z}}(t,x,x)\,.
+\operatorname{Tr}\,e^{-t(-\nabla^2+\mu^2)}\Big|_{\mathbb{H}_d/\mathbb{Z}} = \int_{\mathcal{F}} d^d x\sqrt{g}\, K^{\mathbb{H}_d/\mathbb{Z}}(t,x,x)\,.
 \end{align}$$
 
 - 由 Selberg/Gutzwiller 型迹公式，分解为体积项与闭测地之和：
 
 $$\begin{align}
-\operatorname{Tr}\,e^{-t(-\nabla^2+\mu^2)}
-	= \mathrm{Vol}(\mathcal{F})\,\frac{e^{-(\mu^2+\rho^2)t}}{(4\pi t)^{d/2}}
+\operatorname{Tr}\,e^{-t(-\nabla^2+\mu^2)} = \mathrm{Vol}(\mathcal{F})\,\frac{e^{-(\mu^2+\rho^2)t}}{(4\pi t)^{d/2}}
 
 	+ e^{-(\mu^2+\rho^2)t}\,\frac{\ell}{(4\pi t)^{1/2}}\sum_{n\neq0}\frac{e^{-\ell^2 n^2/(4t)}}{\mathcal{D}_d\bigl(n\,|\,\beta,\boldsymbol{\theta}\bigr)}\,.
 \end{align}$$
@@ -101,8 +99,7 @@ $$\begin{align}
 - 其中“Poincaré 映射”的行列式因子为
 
 $$\begin{align}
-\mathcal{D}_d\bigl(n\,|\,\beta,\boldsymbol{\theta}\bigr)
-	=\prod_{j=1}^{N}\Bigl[4\bigl(\sinh^2\tfrac{n\beta}{2}+\sin^2\tfrac{n\theta_j}{2}\bigr)\Bigr]\;\times\;\Bigl[2\sinh\tfrac{n\beta}{2}\Bigr]^{\,d-1-2N}.
+\mathcal{D}_d\bigl(n\,|\,\beta,\boldsymbol{\theta}\bigr) =\prod_{j=1}^{N}\Bigl[4\bigl(\sinh^2\tfrac{n\beta}{2}+\sin^2\tfrac{n\theta_j}{2}\bigr)\Bigr]\;\times\;\Bigl[2\sinh\tfrac{n\beta}{2}\Bigr]^{\,d-1-2N}.
 \end{align}$$
 
 	当 $d$ 为奇数时 $d-1=2N$，后一因子指数为 $0$；当 $d$ 为偶数时 $d-1=2N+1$，存在一个未旋转法向方向，产生额外因子 $2\sinh(n\beta/2)$。
@@ -118,8 +115,8 @@ $$\begin{align}
 对非平凡类的 $t$ 积分可化为 $K_{1/2}$，从而得到
 
 $$\begin{aligned}
--\ln \det(-\nabla^2+\mu^2)\Big|_{\\text{non-trivial}}
-&= \frac{1}{2}\int_0^{\infty}\!\frac{dt}{t}\; e^{-At}\,\frac{\ell}{(4\pi t)^{1/2}}\sum_{n\neq0}\frac{e^{-B_n/t}}{\mathcal{D}_d(n)}\\
+-\ln \det(-\nabla^2+\mu^2)\Big|_{\\
+text{non-trivial}} &= \frac{1}{2}\int_0^{\infty}\!\frac{dt}{t}\; e^{-At}\,\frac{\ell}{(4\pi t)^{1/2}}\sum_{n\neq0}\frac{e^{-B_n/t}}{\mathcal{D}_d(n)}\\
 &= \sum_{n=1}^{\infty} \frac{1}{2n}\,\frac{e^{- n\ell\sqrt{A}}}{\mathcal{D}_d\bigl(n\,|\,\beta,\boldsymbol{\theta}\bigr)}\,.
 \end{aligned}$$
 

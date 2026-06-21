@@ -35,15 +35,9 @@ $$\begin{align}
 The non-vanishing Christoffel symbols are
 
 $$\begin{align}
-{\Gamma^{(0)}}^{t}_{tr}={\Gamma^{(0)}}^{t}_{rt}&=\frac{r}{1+r^{2}},&
-{\Gamma^{(0)}}^{r}_{tt}&=r(1+r^{2}),&
-{\Gamma^{(0)}}^{r}_{rr}&=-\frac{r}{1+r^{2}},\\
-{\Gamma^{(0)}}^{r}_{\theta\theta}&=-r(1+r^{2}),&
-{\Gamma^{(0)}}^{r}_{\phi\phi}&=-r(1+r^{2})\sin^{2}\theta,&
-{\Gamma^{(0)}}^{\theta}_{r\theta}={\Gamma^{(0)}}^{\theta}_{\theta r}&=\frac{1}{r},\\
-{\Gamma^{(0)}}^{\theta}_{\phi\phi}&=-\sin\theta\cos\theta,&
-{\Gamma^{(0)}}^{\phi}_{r\phi}={\Gamma^{(0)}}^{\phi}_{\phi r}&=\frac{1}{r},&
-{\Gamma^{(0)}}^{\phi}_{\theta\phi}={\Gamma^{(0)}}^{\phi}_{\phi\theta}&=\cot\theta.
+{\Gamma^{(0)}}^{t}_{tr}={\Gamma^{(0)}}^{t}_{rt}&=\frac{r}{1+r^{2}},& {\Gamma^{(0)}}^{r}_{tt}&=r(1+r^{2}),& {\Gamma^{(0)}}^{r}_{rr}&=-\frac{r}{1+r^{2}},\\
+{\Gamma^{(0)}}^{r}_{\theta\theta}&=-r(1+r^{2}),& {\Gamma^{(0)}}^{r}_{\phi\phi}&=-r(1+r^{2})\sin^{2}\theta,& {\Gamma^{(0)}}^{\theta}_{r\theta}={\Gamma^{(0)}}^{\theta}_{\theta r}&=\frac{1}{r},\\
+{\Gamma^{(0)}}^{\theta}_{\phi\phi}&=-\sin\theta\cos\theta,& {\Gamma^{(0)}}^{\phi}_{r\phi}={\Gamma^{(0)}}^{\phi}_{\phi r}&=\frac{1}{r},& {\Gamma^{(0)}}^{\phi}_{\theta\phi}={\Gamma^{(0)}}^{\phi}_{\phi\theta}&=\cot\theta.
 \end{align}$$
 
 The curvature convention is
@@ -213,9 +207,7 @@ n_{\mu}=\left(0,\frac{1}{\sqrt{1+r^{2}}},0,0\right),\qquad n^{\mu}=\left(0,\sqrt
 The background extrinsic curvature components are
 
 $$\begin{align}
-K^{(0)}_{tt}&=-r\sqrt{1+r^{2}},&
-K^{(0)}_{\theta\theta}&=r\sqrt{1+r^{2}},&
-K^{(0)}_{\phi\phi}&=r\sqrt{1+r^{2}}\sin^{2}\theta.
+K^{(0)}_{tt}&=-r\sqrt{1+r^{2}},& K^{(0)}_{\theta\theta}&=r\sqrt{1+r^{2}},& K^{(0)}_{\phi\phi}&=r\sqrt{1+r^{2}}\sin^{2}\theta.
 \end{align}$$
 
 The trace is

@@ -27,31 +27,18 @@ $$\begin{align}
 Solving the Klein-Gordon equation directly by separation of variables gives the normal modes
 
 $$\begin{align}
-\varphi_{n,m}(t,r,\phi)
-&=
-\mathcal N_{n,m}\,
-e^{-i\omega_{n,m}t}e^{im\phi}
+\varphi_{n,m}(t,r,\phi) &= \mathcal N_{n,m}\, e^{-i\omega_{n,m}t}e^{im\phi}
 r^{|m|}(1+r^2)^{-(\Delta+|m|)/2}
-P_n^{(\Delta-1,|m|)}
-\left(\frac{r^2-1}{r^2+1}\right),\\
+P_n^{(\Delta-1,|m|)} \left(\frac{r^2-1}{r^2+1}\right),\\
 \omega_{n,m}&=\Delta+2n+|m|,\\
-\mathcal N_{n,m}
-&=
-\sqrt{\frac{1}{2\pi}
-\frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}}},
-\qquad
+\mathcal N_{n,m} &= \sqrt{\frac{1}{2\pi} \frac{(\Delta+n)_{|m|}}{(n+1)_{|m|}}}, \qquad
 n\in\mathbb N,\quad m\in\mathbb Z .
 \end{align}$$
 
 The field expansion is
 
 $$\begin{align}
-\phi(t,r,\phi)
-=\sum_{n=0}^{\infty}\sum_{m\in\mathbb Z}
-\left(
-a_{n,m}\varphi_{n,m}(t,r,\phi)
-+a^\dagger_{n,m}\varphi^*_{n,m}(t,r,\phi)
-\right),
+\phi(t,r,\phi) =\sum_{n=0}^{\infty}\sum_{m\in\mathbb Z} \left( a_{n,m}\varphi_{n,m}(t,r,\phi) +a^\dagger_{n,m}\varphi^*_{n,m}(t,r,\phi) \right),
 \end{align}$$
 
 with $[a_{n,m},a^\dagger_{n',m'}]=\delta_{nn'}\delta_{mm'}$ after quantization.
@@ -59,55 +46,34 @@ with $[a_{n,m},a^\dagger_{n',m'}]=\delta_{nn'}\delta_{mm'}$ after quantization.
 Near the boundary, the radial part behaves as
 
 $$\begin{align}
-\varphi_{n,m}(t,r,\phi)
-&\sim
-B_{n,m}\,
-r^{-\Delta}e^{-i\omega_{n,m}t}e^{im\phi},
-\\
-B_{n,m}
-&=
-\mathcal N_{n,m}
-\frac{(\Delta)_n}{n!}.
+\varphi_{n,m}(t,r,\phi) &\sim
+B_{n,m}\, r^{-\Delta}e^{-i\omega_{n,m}t}e^{im\phi}, \\
+B_{n,m} &= \mathcal N_{n,m} \frac{(\Delta)_n}{n!}.
 \end{align}$$
 
 The extrapolate dictionary identifies the CFT operator with the boundary limit
 
 $$\begin{align}
-O(t,\phi)
-=\lim_{r\to\infty}c\,r^\Delta\phi(t,r,\phi).
+O(t,\phi) =\lim_{r\to\infty}c\,r^\Delta\phi(t,r,\phi).
 \end{align}$$
 
 Thus the same oscillators appear in the CFT mode expansion:
 
 $$\begin{align}
-O(t,\phi)
-=c\sum_{n,m}
-\left(
-B_{n,m}e^{-i\omega_{n,m}t}e^{im\phi}a_{n,m}
-+B_{n,m}^*e^{i\omega_{n,m}t}e^{-im\phi}a^\dagger_{n,m}
-\right).
+O(t,\phi) =c\sum_{n,m} \left( B_{n,m}e^{-i\omega_{n,m}t}e^{im\phi}a_{n,m} +B_{n,m}^*e^{i\omega_{n,m}t}e^{-im\phi}a^\dagger_{n,m} \right).
 \end{align}$$
 
 Projecting $O(t,\phi)$ onto the positive-frequency cylinder mode $e^{-i\omega_{n,m}t}e^{im\phi}$ extracts $a_{n,m}$ up to the known coefficient $cB_{n,m}$. Substituting this back into the bulk expansion gives the global mode-sum reconstruction
 
 $$\begin{align}
-\phi(t,r,\phi)
-=
-\sum_{n,m}
-\left[
-\frac{\varphi_{n,m}(t,r,\phi)}
-{cB_{n,m}}\,
-O_{n,m}
-+\mathrm{h.c.}
-\right],
+\phi(t,r,\phi) = \sum_{n,m} \left[ \frac{\varphi_{n,m}(t,r,\phi)}
+{cB_{n,m}}\, O_{n,m} +\mathrm{h.c.} \right],
 \end{align}$$
 
 where $O_{n,m}$ denotes the corresponding positive-frequency boundary mode of $O$. Equivalently, after summing over modes, one may write
 
 $$\begin{align}
-\phi(t,r,\phi)
-=\int\mathrm{d}t'\mathrm{d}\phi'\,
-K_\Delta(t,r,\phi|t',\phi')O(t',\phi').
+\phi(t,r,\phi) =\int\mathrm{d}t'\mathrm{d}\phi'\, K_\Delta(t,r,\phi|t',\phi')O(t',\phi').
 \end{align}$$
 
 The kernel is just the mode sum built from $\varphi_{n,m}/B_{n,m}$. This is the global-cylinder version of HKLL. No Poincare patch is required; the Poincare smearing function is only a different representation of the same inversion problem.
@@ -115,20 +81,15 @@ The kernel is just the mode sum built from $\varphi_{n,m}/B_{n,m}$. This is the 
 The relation to the highest-weight labels is also direct. Writing $u=t-\phi$ and $v=t+\phi$,
 
 $$\begin{align}
-e^{-i\omega_{n,m}t+im\phi}
-=
-e^{-i h_{n,m}u-i\bar h_{n,m}v},
-\qquad
-h_{n,m}=\frac{\omega_{n,m}+m}{2},
-\quad
+e^{-i\omega_{n,m}t+im\phi} = e^{-i h_{n,m}u-i\bar h_{n,m}v}, \qquad
+h_{n,m}=\frac{\omega_{n,m}+m}{2}, \quad
 \bar h_{n,m}=\frac{\omega_{n,m}-m}{2}.
 \end{align}$$
 
 For $m\ge0$, this gives
 
 $$\begin{align}
-h_{n,m}=\frac{\Delta}{2}+n+m,
-\qquad
+h_{n,m}=\frac{\Delta}{2}+n+m, \qquad
 \bar h_{n,m}=\frac{\Delta}{2}+n,
 \end{align}$$
 
@@ -158,81 +119,56 @@ For spin two, the dual CFT data are stress-tensor modes. In higher-dimensional A
 The scalar discussion above suggests the cleanest way to formulate the gravity problem: start from the explicit normal modes in global coordinates, take their Brown-Henneaux boundary limit, identify the corresponding CFT modes, and invert the mode expansion. The current linearized-gravity draft already gives the analogue of the scalar bulk mode expansion:
 
 $$\begin{align}
-h_{\mu\nu}
-=\sum_{n=0}^{\infty}
-\left(a_{-,n}h_{-,n,\mu\nu}+a_{-,n}^\dagger h^*_{-,n,\mu\nu}\right)
-+\sum_{\bar n=0}^{\infty}
-\left(a_{+,\bar n}h_{+,\bar n,\mu\nu}+a_{+,\bar n}^\dagger h^*_{+,\bar n,\mu\nu}\right),
+h_{\mu\nu} =\sum_{n=0}^{\infty} \left(a_{-,n}h_{-,n,\mu\nu}+a_{-,n}^\dagger h^*_{-,n,\mu\nu}\right) +\sum_{\bar n=0}^{\infty} \left(a_{+,\bar n}h_{+,\bar n,\mu\nu}+a_{+,\bar n}^\dagger h^*_{+,\bar n,\mu\nu}\right),
 \end{align}$$
 
 with
 
 $$\begin{align}
-\Omega[h_{-,n},h^*_{-,m}]=-i\delta_{nm},
-\qquad
+\Omega[h_{-,n},h^*_{-,m}]=-i\delta_{nm}, \qquad
 \Omega[h_{+,\bar n},h^*_{+,\bar m}]=-i\delta_{\bar n\bar m}.
 \end{align}$$
 
 The two physical towers have primary weights
 
 $$\begin{align}
-h_{-,0}:\ (2,0),
-\qquad
+h_{-,0}:\ (2,0), \qquad
 h_{+,0}:\ (0,2),
 \end{align}$$
 
 and correspond to the two Brown-Henneaux chiral sectors. Since the mode $n=0$ has boundary weight $2$, the natural CFT comparison is with Virasoro descendants generated by $L_{-m}$ and $\bar L_{-m}$ with
 
 $$\begin{align}
-m=n+2,
-\qquad
+m=n+2, \qquad
 \bar m=\bar n+2.
 \end{align}$$
 
 On the CFT vacuum module,
 
 $$\begin{align}
-\langle 0|L_mL_{-m}|0\rangle
-=\frac{c}{12}m(m^2-1),
-\qquad
+\langle 0|L_mL_{-m}|0\rangle =\frac{c}{12}m(m^2-1), \qquad
 m\ge2,
 \end{align}$$
 
 and similarly for the barred sector. Thus, up to phase conventions, a unit-normalized oscillator should be related to a Virasoro mode by
 
 $$\begin{align}
-a_{-,n}^\dagger
-\sim
-\sqrt{\frac{12}{c\,m(m^2-1)}}\,L_{-m},
-\qquad
-a_{-,n}
-\sim
-\sqrt{\frac{12}{c\,m(m^2-1)}}\,L_m,
-\qquad
+a_{-,n}^\dagger \sim \sqrt{\frac{12}{c\,m(m^2-1)}}\,L_{-m}, \qquad
+a_{-,n} \sim \sqrt{\frac{12}{c\,m(m^2-1)}}\,L_m, \qquad
 m=n+2,
 \end{align}$$
 
 with the analogous barred formula for $a_{+,\bar n}$ and $\bar L_{\bar m}$. Using the Brown-Henneaux central charge $c=3/(2G)$, the normalization factor becomes
 
 $$\begin{align}
-\sqrt{\frac{12}{c\,m(m^2-1)}}
-=
-\sqrt{\frac{8G}{m(m^2-1)}}.
+\sqrt{\frac{12}{c\,m(m^2-1)}} = \sqrt{\frac{8G}{m(m^2-1)}}.
 \end{align}$$
 
 This gives a concrete mode-sum version of spin-two reconstruction:
 
 $$\begin{align}
-\hat h_{\mu\nu}(X)
-\sim
-\sum_{n=0}^{\infty}
-\sqrt{\frac{8G}{m(m^2-1)}}
-\left[
-h_{-,n,\mu\nu}(X)L_m
-+h^*_{-,n,\mu\nu}(X)L_{-m}
-\right]
-+(\mathrm{barred}),
-\qquad
+\hat h_{\mu\nu}(X) \sim
+\sum_{n=0}^{\infty} \sqrt{\frac{8G}{m(m^2-1)}} \left[ h_{-,n,\mu\nu}(X)L_m +h^*_{-,n,\mu\nu}(X)L_{-m} \right] +(\mathrm{barred}), \qquad
 m=n+2.
 \end{align}$$
 
@@ -241,9 +177,7 @@ The placement of $L_{\pm m}$ depends on the positive-frequency convention used f
 Equivalently, one can package the sum into chiral smearing kernels,
 
 $$\begin{align}
-\hat h_{\mu\nu}(X)
-=\int \mathrm{d}u'\,K^{(L)}_{\mu\nu}(X|u')T(u')
-+\int \mathrm{d}v'\,K^{(R)}_{\mu\nu}(X|v')\bar T(v'),
+\hat h_{\mu\nu}(X) =\int \mathrm{d}u'\,K^{(L)}_{\mu\nu}(X|u')T(u') +\int \mathrm{d}v'\,K^{(R)}_{\mu\nu}(X|v')\bar T(v'),
 \end{align}$$
 
 where $u=t-\phi$ and $v=t+\phi$. The kernels are determined by summing the normalized Brown-Henneaux modes against the Fourier modes of $T$ and $\bar T$. This is the closest analogue of HKLL in the present pure-gravity setup.

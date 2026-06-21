@@ -110,8 +110,6 @@ can be decomposed into two first-order operators
 
 $$\begin{align}
 (\varepsilon _{\mu}^{~\nu \rho}\nabla ^{(0)}_{\nu}+\delta ^{\rho}_{\mu})(\varepsilon _{\rho}^{~\sigma \lambda}\nabla _{\sigma} ^{(0)}-\delta _{\rho}^{\lambda})h_{\lambda \kappa} & =0
-
-
 \end{align}$$
 
 therefore the solutions to the eom can be rewritten as
@@ -199,8 +197,7 @@ $$\begin{align}
 With
 
 $$\begin{align}
-w & \equiv \frac{r\,e^{-i(t+\phi)}}{\sqrt{ 1+r^{2} }}, &
-A&\equiv \frac{e^{-4it}}{(1+r^{2})^{2}},
+w & \equiv \frac{r\,e^{-i(t+\phi)}}{\sqrt{ 1+r^{2} }}, & A&\equiv \frac{e^{-4it}}{(1+r^{2})^{2}},
 \end{align}$$
 
 we have $\displaystyle{\mathcal{L}_{\xi _{1}}w=\mathcal{L}_{\xi _{0}}w=0}$ and $\displaystyle{\mathcal{L}_{\xi _{1}}A=0,\ \mathcal{L}_{\xi _{0}}A=-2iA}$. Thus
@@ -219,18 +216,13 @@ H(t,r,\phi) & =\sum _{n=0}^{\infty}\tilde{c}_{n}\frac{r^{n}e^{-i(n+4)t-in\phi}}{
 The function $\displaystyle{G(w)}$ packages the $\displaystyle{\bar{\xi}_{-1}}$ descendants. The primary generator is obtained from $\displaystyle{G(w)=1}$,
 
 $$\begin{align}
-h^{\mathrm{prim}}_{\mu\nu}
-&=A\xi _{1,\mu}\xi _{1,\nu}.
+h^{\mathrm{prim}}_{\mu\nu} &=A\xi _{1,\mu}\xi _{1,\nu}.
 \end{align}$$
 
 The descendant module is
 
 $$\begin{align}
-h^{(+)}_{\mu\nu}
-&=
-\sum _{m,n\geq 0}c_{mn}
-\mathcal{L}_{\xi _{-1}}^{m}
-\mathcal{L}_{\bar{\xi}_{-1}}^{n}
+h^{(+)}_{\mu\nu} &= \sum _{m,n\geq 0}c_{mn} \mathcal{L}_{\xi _{-1}}^{m} \mathcal{L}_{\bar{\xi}_{-1}}^{n}
 h^{\mathrm{prim}}_{\mu\nu}.
 \end{align}$$
 
@@ -273,8 +265,7 @@ $$\begin{align}
 The $\displaystyle{\mathcal{D}_{-}}$ branch has the barred generator
 
 $$\begin{align}
-\bar{h}^{\mathrm{gen}}_{\mu\nu}
-&=\bar{H}(t,r,\phi)\bar{\xi}_{1,\mu}\bar{\xi}_{1,\nu}.
+\bar{h}^{\mathrm{gen}}_{\mu\nu} &=\bar{H}(t,r,\phi)\bar{\xi}_{1,\mu}\bar{\xi}_{1,\nu}.
 \end{align}$$
 
 Substituting this generator into the TT conditions and the first-order equation gives
@@ -306,19 +297,13 @@ F(z) & =\sum _{n=0}^{\infty}c_{n}z^{n}, \\
 The primary generator is obtained from $\displaystyle{F(z)=1}$,
 
 $$\begin{align}
-\bar{h}^{\mathrm{prim}}_{\mu\nu}
-&=
-\frac{e^{-4it}}{(1+r^{2})^{2}}
+\bar{h}^{\mathrm{prim}}_{\mu\nu} &= \frac{e^{-4it}}{(1+r^{2})^{2}}
 \bar{\xi}_{1,\mu}\bar{\xi}_{1,\nu}.
 \end{align}$$
 
 The corresponding descendant module is
 
 $$\begin{align}
-h^{(-)}_{\mu\nu}
-&=
-\sum _{m,n\geq 0}\bar{c}_{mn}
-\mathcal{L}_{\bar{\xi}_{-1}}^{m}
-\mathcal{L}_{\xi _{-1}}^{n}
+h^{(-)}_{\mu\nu} &= \sum _{m,n\geq 0}\bar{c}_{mn} \mathcal{L}_{\bar{\xi}_{-1}}^{m} \mathcal{L}_{\xi _{-1}}^{n}
 \bar{h}^{\mathrm{prim}}_{\mu\nu}.
 \end{align}$$

@@ -92,8 +92,7 @@ g^{(0)\mu \nu}h_{\mu \nu} & =0, & \nabla ^{(0)\mu}h_{\mu \nu} & =0
 The gauge conditions are imposed directly on the unintegrated densities above. No integration by parts is used. The only additional simplifications are the unit-AdS$_3$ commutator consequences
 
 $$\begin{align}
-\nabla^{(0)}_\rho\nabla^{(0)}_\nu h_\mu{}^\rho&=-3h_{\mu\nu},&
-\nabla^{(0)}_\mu\nabla^{(0)\rho}h^{\mu\nu}&=-3h^{\rho\nu}.
+\nabla^{(0)}_\rho\nabla^{(0)}_\nu h_\mu{}^\rho&=-3h_{\mu\nu},& \nabla^{(0)}_\mu\nabla^{(0)\rho}h^{\mu\nu}&=-3h^{\rho\nu}.
 \end{align}$$
 
 The pure-gravity contribution becomes

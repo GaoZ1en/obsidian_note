@@ -44,8 +44,7 @@ $$\begin{align}
 and finally
 
 $$\begin{align}
-[E^{+}_{m},E^{-}_{n}] & =\begin{cases}
--i((1+m)L_{0}+(1-m)\bar{L}_{0}), & n=-m \\
+[E^{+}_{m},E^{-}_{n}] & =\begin{cases} -i((1+m)L_{0}+(1-m)\bar{L}_{0}), & n=-m \\
 i(mJ_{m}-nJ_{n}), & mn=0,\ m+n\neq 0 \\
 0, & mn=1
 \end{cases}
@@ -251,15 +250,13 @@ A_{s}^{\mu} & =Ne^{-i\Delta t}(1+r^{2})^{-\Delta/2}u_{s}^{\mu}
 With the normalization used above, the rotational ladder operators act as
 
 $$\begin{align}
-\mathcal{L}_{J_{-}}A_{+1}^{\mu}=\sqrt{2}A_{0}^{\mu},\qquad
-\mathcal{L}_{J_{-}}A_{0}^{\mu}=\frac{1}{\sqrt{2}}A_{-1}^{\mu},
+\mathcal{L}_{J_{-}}A_{+1}^{\mu}=\sqrt{2}A_{0}^{\mu},\qquad \mathcal{L}_{J_{-}}A_{0}^{\mu}=\frac{1}{\sqrt{2}}A_{-1}^{\mu},
 \end{align}$$
 
 and
 
 $$\begin{align}
-\mathcal{L}_{J_{+}}A_{0}^{\mu}=-\frac{1}{\sqrt{2}}A_{+1}^{\mu},\qquad
-\mathcal{L}_{J_{+}}A_{-1}^{\mu}=-\sqrt{2}A_{0}^{\mu}.
+\mathcal{L}_{J_{+}}A_{0}^{\mu}=-\frac{1}{\sqrt{2}}A_{+1}^{\mu},\qquad \mathcal{L}_{J_{+}}A_{-1}^{\mu}=-\sqrt{2}A_{0}^{\mu}.
 \end{align}$$
 
 Here $N$ is fixed later by the vector symplectic norm. These three fields obey
@@ -430,10 +427,8 @@ h_{-2,\mu\nu} & =N e^{-i\Delta t}(1+r^{2})^{-\Delta/2}u_{-,\mu}u_{-,\nu}.
 The lower spin components are generated from $h_{+2,\mu\nu}$ by repeated action of $\mathcal{L}_{J_{-}}$. With the normalization above,
 
 $$\begin{align}
-\mathcal{L}_{J_{-}}h_{+2,\mu\nu} & =\sqrt{2}\,h_{+1,\mu\nu}, &
-\mathcal{L}_{J_{-}}h_{+1,\mu\nu} & =\dfrac{1}{\sqrt{2}}h_{0,\mu\nu}, \\
-\mathcal{L}_{J_{-}}h_{0,\mu\nu} & =3\sqrt{2}\,h_{-1,\mu\nu}, &
-\mathcal{L}_{J_{-}}h_{-1,\mu\nu} & =\sqrt{2}\,h_{-2,\mu\nu}.
+\mathcal{L}_{J_{-}}h_{+2,\mu\nu} & =\sqrt{2}\,h_{+1,\mu\nu}, & \mathcal{L}_{J_{-}}h_{+1,\mu\nu} & =\dfrac{1}{\sqrt{2}}h_{0,\mu\nu}, \\
+\mathcal{L}_{J_{-}}h_{0,\mu\nu} & =3\sqrt{2}\,h_{-1,\mu\nu}, & \mathcal{L}_{J_{-}}h_{-1,\mu\nu} & =\sqrt{2}\,h_{-2,\mu\nu}.
 \end{align}$$
 
 Here $N$ is fixed later by the spin-two symplectic norm. These five fields obey

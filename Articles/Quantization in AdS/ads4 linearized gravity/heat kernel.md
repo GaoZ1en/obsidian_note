@@ -77,27 +77,20 @@ $$\begin{align}
 The Harish-Chandra character on the $m$-th thermal image is
 
 $$\begin{align}
-\chi_{\lambda,s}^{\rm HC}(\gamma^m)
-=\frac{2\cos(m\beta\lambda)\,\chi_s^{(n)}(\mathbf y^m)}{\Theta_d(m;\beta,\mathbf\alpha)}
-=\frac{2q^{m\rho}\cos(m\beta\lambda)\,\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}.
+\chi_{\lambda,s}^{\rm HC}(\gamma^m) =\frac{2\cos(m\beta\lambda)\,\chi_s^{(n)}(\mathbf y^m)}{\Theta_d(m;\beta,\mathbf\alpha)} =\frac{2q^{m\rho}\cos(m\beta\lambda)\,\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}.
 \end{align}$$
 
 The non-zero-image traced heat kernel is therefore
 
 $$\begin{align}
-K_s^{(d)}(t;\beta,\mathbf\alpha)
-=\frac{\beta}{2\pi}\sum_{m\in\mathbb Z\setminus\{0\}}\int_0^\infty d\lambda\,
-\chi_{\lambda,s}^{\rm HC}(\gamma^m)e^{-t(\lambda^2+\rho^2+s)}.
+K_s^{(d)}(t;\beta,\mathbf\alpha) =\frac{\beta}{2\pi}\sum_{m\in\mathbb Z\setminus\{0\}}\int_0^\infty d\lambda\, \chi_{\lambda,s}^{\rm HC}(\gamma^m)e^{-t(\lambda^2+\rho^2+s)}.
 \end{align}$$
 
 The terms with $m$ and $-m$ are equal for real symmetric traceless characters.  Using the Gaussian integral gives
 
 $$\begin{align}
-\boxed{
-K_s^{(d)}(t;\beta,\mathbf\alpha)
-=\frac{\beta}{\sqrt{\pi t}}
-\sum_{m=1}^{\infty}
-\frac{q^{m\rho}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}
+\boxed{ K_s^{(d)}(t;\beta,\mathbf\alpha) =\frac{\beta}{\sqrt{\pi t}}
+\sum_{m=1}^{\infty} \frac{q^{m\rho}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}
 \exp\!\left[-\frac{m^2\beta^2}{4t}-t(\rho^2+s)\right].
 }
 \end{align}$$
@@ -113,8 +106,7 @@ $$\begin{align}
 whose normalizable lowest energy is $\Delta$.  The shift is chosen as
 
 $$\begin{align}
-\boxed{
-M_s^2(\Delta)=\Delta(\Delta-n)-s=\Delta(\Delta-d+1)-s.
+\boxed{ M_s^2(\Delta)=\Delta(\Delta-n)-s=\Delta(\Delta-d+1)-s.
 }
 \end{align}$$
 
@@ -127,12 +119,8 @@ $$\begin{align}
 The shifted heat trace entering the determinant is
 
 $$\begin{align}
-\boxed{
-\mathbb K_{s,\Delta}^{(d)}(t;\beta,\mathbf\alpha)
-=K_s^{(d)}(t;\beta,\mathbf\alpha)e^{-tM_s^2(\Delta)}
-=\frac{\beta}{\sqrt{\pi t}}
-\sum_{m=1}^{\infty}
-\frac{q^{m\rho}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}
+\boxed{ \mathbb K_{s,\Delta}^{(d)}(t;\beta,\mathbf\alpha) =K_s^{(d)}(t;\beta,\mathbf\alpha)e^{-tM_s^2(\Delta)} =\frac{\beta}{\sqrt{\pi t}}
+\sum_{m=1}^{\infty} \frac{q^{m\rho}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}
 \exp\!\left[-\frac{m^2\beta^2}{4t}-t(\Delta-\rho)^2\right].
 }
 \end{align}$$
@@ -140,40 +128,30 @@ $$\begin{align}
 For the standard branch $\Delta=\rho+\nu$ with $\nu\geq0$,
 
 $$\begin{align}
-Z_{s,\Delta}^{\rm long}
-=\left[\det{}_{s}^{\rm TT}\mathcal O_{s,\Delta}\right]^{-1/2},
-\qquad
-\log Z_{s,\Delta}^{\rm long}
-=\frac12\int_0^\infty\frac{dt}{t}\,\mathbb K_{s,\Delta}^{(d)}(t;\beta,\mathbf\alpha).
+Z_{s,\Delta}^{\rm long} =\left[\det{}_{s}^{\rm TT}\mathcal O_{s,\Delta}\right]^{-1/2}, \qquad
+\log Z_{s,\Delta}^{\rm long} =\frac12\int_0^\infty\frac{dt}{t}\,\mathbb K_{s,\Delta}^{(d)}(t;\beta,\mathbf\alpha).
 \end{align}$$
 
 The proper-time integral
 
 $$\begin{align}
-\int_0^\infty dt\,t^{-3/2}\exp\!\left[-\frac{a^2}{4t}-b^2t\right]
-=\frac{2\sqrt\pi}{a}e^{-ab},\qquad a,b>0,
+\int_0^\infty dt\,t^{-3/2}\exp\!\left[-\frac{a^2}{4t}-b^2t\right] =\frac{2\sqrt\pi}{a}e^{-ab},\qquad a,b>0,
 \end{align}$$
 
 with $a=m\beta$ and $b=\Delta-\rho$ gives
 
 $$\begin{aligned}
-\log Z_{s,\Delta}^{\rm long}
-&=\frac12\sum_{m=1}^{\infty}
-\frac{\beta q^{m\rho}\chi_s^{(n)}(\mathbf y^m)}{\sqrt\pi\,D_d(q^m,\mathbf y^m)}
+\log Z_{s,\Delta}^{\rm long} &=\frac12\sum_{m=1}^{\infty} \frac{\beta q^{m\rho}\chi_s^{(n)}(\mathbf y^m)}{\sqrt\pi\,D_d(q^m,\mathbf y^m)}
 \int_0^\infty dt\,t^{-3/2}
 \exp\!\left[-\frac{m^2\beta^2}{4t}-t(\Delta-\rho)^2\right]\\
-&=\sum_{m=1}^{\infty}\frac1m\,
-\frac{q^{m\rho}e^{-m\beta(\Delta-\rho)}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}\\
-&=\boxed{\sum_{m=1}^{\infty}\frac1m\,
-\frac{q^{m\Delta}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}}.
+&=\sum_{m=1}^{\infty}\frac1m\, \frac{q^{m\rho}e^{-m\beta(\Delta-\rho)}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}\\
+&=\boxed{\sum_{m=1}^{\infty}\frac1m\, \frac{q^{m\Delta}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}}.
 \end{aligned}$$
 
 Equivalently, the one-particle character is
 
 $$\begin{align}
-\boxed{
-Z_{1,\rm long}^{(s)}(q,\mathbf y)=
-\frac{q^\Delta\chi_s^{(n)}(\mathbf y)}{D_d(q,\mathbf y)}.
+\boxed{ Z_{1,\rm long}^{(s)}(q,\mathbf y)= \frac{q^\Delta\chi_s^{(n)}(\mathbf y)}{D_d(q,\mathbf y)}.
 }
 \end{align}$$
 
@@ -196,21 +174,15 @@ $$\begin{align}
 The determinant ratio is
 
 $$\begin{align}
-\boxed{
-Z_s^{\rm massless}
-=\left[
-\frac{\det_{s-1}^{\rm TT}\left(-\nabla_{s-1}^2+M_{s-1}^2(s+d-2)\right)}
-{\det_s^{\rm TT}\left(-\nabla_s^2+M_s^2(s+d-3)\right)}
-\right]^{1/2}.
+\boxed{ Z_s^{\rm massless} =\left[ \frac{\det_{s-1}^{\rm TT}\left(-\nabla_{s-1}^2+M_{s-1}^2(s+d-2)\right)}
+{\det_s^{\rm TT}\left(-\nabla_s^2+M_s^2(s+d-3)\right)} \right]^{1/2}.
 }
 \end{align}$$
 
 Therefore the effective heat kernel is the heat-kernel representative of the quotient:
 
 $$\begin{align}
-\boxed{
-\mathbb K_{s,\rm massless}^{(d)}(t)
-=\mathbb K_{s,s+d-3}^{(d)}(t)-\mathbb K_{s-1,s+d-2}^{(d)}(t).
+\boxed{ \mathbb K_{s,\rm massless}^{(d)}(t) =\mathbb K_{s,s+d-3}^{(d)}(t)-\mathbb K_{s-1,s+d-2}^{(d)}(t).
 }
 \end{align}$$
 
@@ -223,36 +195,24 @@ s+d-3-\rho=s+\rho-2,\qquad s+d-2-\rho=s+\rho-1,
 this becomes
 
 $$\begin{align}
-\boxed{
-\mathbb K_{s,\rm massless}^{(d)}(t)
-=\frac{\beta}{\sqrt{\pi t}}
-\sum_{m=1}^{\infty}
-\frac{q^{m\rho}}{D_d(q^m,\mathbf y^m)}
-\exp\!\left[-\frac{m^2\beta^2}{4t}\right]
-\left[
-\chi_s^{(n)}(\mathbf y^m)e^{-t(s+\rho-2)^2}
--
-\chi_{s-1}^{(n)}(\mathbf y^m)e^{-t(s+\rho-1)^2}
-\right].
+\boxed{ \mathbb K_{s,\rm massless}^{(d)}(t) =\frac{\beta}{\sqrt{\pi t}}
+\sum_{m=1}^{\infty} \frac{q^{m\rho}}{D_d(q^m,\mathbf y^m)}
+\exp\!\left[-\frac{m^2\beta^2}{4t}\right] \left[ \chi_s^{(n)}(\mathbf y^m)e^{-t(s+\rho-2)^2} - \chi_{s-1}^{(n)}(\mathbf y^m)e^{-t(s+\rho-1)^2} \right].
 }
+\end{align}
 \end{align}$$
 
 The proper-time integral then gives
 
 $$\begin{align}
-\boxed{
-\log Z_s^{\rm massless}(q,\mathbf y)
-=\sum_{m=1}^{\infty}\frac1m\,
-\frac{q^{m(s+d-3)}\chi_s^{(n)}(\mathbf y^m)-q^{m(s+d-2)}\chi_{s-1}^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}.
+\boxed{ \log Z_s^{\rm massless}(q,\mathbf y) =\sum_{m=1}^{\infty}\frac1m\, \frac{q^{m(s+d-3)}\chi_s^{(n)}(\mathbf y^m)-q^{m(s+d-2)}\chi_{s-1}^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}.
 }
 \end{align}$$
 
 The corresponding one-particle character is
 
 $$\begin{align}
-\boxed{
-Z_{1,\rm massless}^{(s)}(q,\mathbf y)=
-\frac{q^{s+d-3}\chi_s^{(d-1)}(\mathbf y)-q^{s+d-2}\chi_{s-1}^{(d-1)}(\mathbf y)}{D_d(q,\mathbf y)}.
+\boxed{ Z_{1,\rm massless}^{(s)}(q,\mathbf y)= \frac{q^{s+d-3}\chi_s^{(d-1)}(\mathbf y)-q^{s+d-2}\chi_{s-1}^{(d-1)}(\mathbf y)}{D_d(q,\mathbf y)}.
 }
 \end{align}$$
 
@@ -267,55 +227,41 @@ D_d(q,1)=(1-q)^n.
 The dimension of the rank-$s$ symmetric traceless $SO(n)$ representation is
 
 $$\begin{align}
-g_s^{(n)}=\chi_s^{(n)}(1)
-=\binom{n+s-1}{s}-\binom{n+s-3}{s-2}
-=\frac{(n+2s-2)(n+s-3)!}{s!(n-2)!},
+g_s^{(n)}=\chi_s^{(n)}(1) =\binom{n+s-1}{s}-\binom{n+s-3}{s-2} =\frac{(n+2s-2)(n+s-3)!}{s!(n-2)!},
 \end{align}$$
 
 where the second binomial is absent for $s<2$.  Hence
 
 $$\begin{align}
-\boxed{
-Z_{1,\rm long}^{(s)}(q,1)=\frac{g_s^{(n)}q^\Delta}{(1-q)^n}
-=\frac{g_s^{(d-1)}q^\Delta}{(1-q)^{d-1}}.
+\boxed{ Z_{1,\rm long}^{(s)}(q,1)=\frac{g_s^{(n)}q^\Delta}{(1-q)^n} =\frac{g_s^{(d-1)}q^\Delta}{(1-q)^{d-1}}.
 }
 \end{align}$$
 
 For a massless spin-$s$ field,
 
 $$\begin{align}
-\boxed{
-Z_{1,\rm massless}^{(s)}(q,1)=
-\frac{q^{s+d-3}\left(g_s^{(d-1)}-qg_{s-1}^{(d-1)}\right)}{(1-q)^{d-1}}.
+\boxed{ Z_{1,\rm massless}^{(s)}(q,1)= \frac{q^{s+d-3}\left(g_s^{(d-1)}-qg_{s-1}^{(d-1)}\right)}{(1-q)^{d-1}}.
 }
 \end{align}$$
 
 The minimally coupled massless scalar is not gauge-shortened.  It is the scalar long formula with $M_0^2=0$, hence $\Delta=d-1$ on the standard branch:
 
 $$\begin{align}
-\boxed{
-\log Z_{\rm scalar,\,m^2=0}^{\rm AdS_d}
-=\sum_{m=1}^{\infty}\frac1m\frac{q^{m(d-1)}}{D_d(q^m,\mathbf y^m)}.
+\boxed{ \log Z_{\rm scalar,\,m^2=0}^{\rm AdS_d} =\sum_{m=1}^{\infty}\frac1m\frac{q^{m(d-1)}}{D_d(q^m,\mathbf y^m)}.
 }
 \end{align}$$
 
 For Maxwell, set $s=1$ in the massless formula:
 
 $$\begin{align}
-\boxed{
-\log Z_{\rm Max}^{\rm AdS_d}
-=\sum_{m=1}^{\infty}\frac1m\,
-\frac{q^{m(d-2)}\chi_1^{(d-1)}(\mathbf y^m)-q^{m(d-1)}}{D_d(q^m,\mathbf y^m)}.
+\boxed{ \log Z_{\rm Max}^{\rm AdS_d} =\sum_{m=1}^{\infty}\frac1m\, \frac{q^{m(d-2)}\chi_1^{(d-1)}(\mathbf y^m)-q^{m(d-1)}}{D_d(q^m,\mathbf y^m)}.
 }
 \end{align}$$
 
 For the graviton, set $s=2$:
 
 $$\begin{align}
-\boxed{
-\log Z_{\rm grav}^{\rm AdS_d}
-=\sum_{m=1}^{\infty}\frac1m\,
-\frac{q^{m(d-1)}\chi_2^{(d-1)}(\mathbf y^m)-q^{md}\chi_1^{(d-1)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}.
+\boxed{ \log Z_{\rm grav}^{\rm AdS_d} =\sum_{m=1}^{\infty}\frac1m\, \frac{q^{m(d-1)}\chi_2^{(d-1)}(\mathbf y^m)-q^{md}\chi_1^{(d-1)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}.
 }
 \end{align}$$
 

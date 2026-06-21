@@ -10,20 +10,16 @@ $$\begin{align}
 for a general configuration $\displaystyle{h^{\mu \nu}}$ that satisfies the asymptotic behaviors
 
 $$\begin{align}
-\begin{array}{c|ccc}
-\mathcal{O}(r^{n}) & h_{tt}, h_{t\phi}, h_{\phi \phi} & h_{tr},h_{r\phi} & h_{rr} \\
+\begin{array}{c|ccc} \mathcal{O}(r^{n}) & h_{tt}, h_{t\phi}, h_{\phi \phi} & h_{tr},h_{r\phi} & h_{rr} \\
 \hline & 0 & -3 & -4
 \end{array} \\
-\begin{array}{c|cccc}
-\mathcal{O}(r^{n}) & h_{t}^{~t},h_{t}^{~\phi},h_{\phi}^{~t},h_{\phi}^{~\phi} & h_{t}^{~r},h_{\phi}^{~r} & h_{r}^{~t},h_{r}^{~\phi} & h_{r}^{~r} \\
+\begin{array}{c|cccc} \mathcal{O}(r^{n}) & h_{t}^{~t},h_{t}^{~\phi},h_{\phi}^{~t},h_{\phi}^{~\phi} & h_{t}^{~r},h_{\phi}^{~r} & h_{r}^{~t},h_{r}^{~\phi} & h_{r}^{~r} \\
 \hline & -2 & -1 & -5 & -2
 \end{array} \\
-\begin{array}{c|cccc}
-\mathcal{O}(r^{n}) & h^{t}_{~t},h^{t}_{~\phi},h^{\phi}_{~t},h^{\phi}_{~\phi} & h^{r}_{~t},h^{r}_{~\phi} & h^{t}_{~r},h^{\phi}_{~r} & h^{r}_{~r} \\
+\begin{array}{c|cccc} \mathcal{O}(r^{n}) & h^{t}_{~t},h^{t}_{~\phi},h^{\phi}_{~t},h^{\phi}_{~\phi} & h^{r}_{~t},h^{r}_{~\phi} & h^{t}_{~r},h^{\phi}_{~r} & h^{r}_{~r} \\
 \hline & -2 & -1 & -5 & -2
 \end{array} \\
-\begin{array}{c|ccc}
-\mathcal{O}(r^{n}) & h^{tt}, h^{t\phi}, h^{\phi \phi} & h^{tr},h^{r\phi} & h^{rr} \\
+\begin{array}{c|ccc} \mathcal{O}(r^{n}) & h^{tt}, h^{t\phi}, h^{\phi \phi} & h^{tr},h^{r\phi} & h^{rr} \\
 \hline & -4 & -3 & 0
 \end{array}
 \end{align}$$

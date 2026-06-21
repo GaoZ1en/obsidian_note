@@ -33,8 +33,7 @@ $$\begin{align}
 The quotient condition gives the Matsubara labels
 
 $$\begin{align}
-\Psi_{\ell m p}(\tau,\phi,r)&=e^{i\nu_{\ell m}\tau}e^{im\phi}R_{\nu_{\ell m}mp}(r),&
-\nu_{\ell m}\beta+m\theta&=2\pi\ell ,
+\Psi_{\ell m p}(\tau,\phi,r)&=e^{i\nu_{\ell m}\tau}e^{im\phi}R_{\nu_{\ell m}mp}(r),& \nu_{\ell m}\beta+m\theta&=2\pi\ell ,
 \end{align}$$
 
 where $\ell,m\in\mathbb Z$. In the untwisted case $\theta=0$, $\nu_{\ell m}=2\pi\ell/\beta$.
@@ -71,8 +70,7 @@ c=1+a .
 The mode regular at $r=0$ is therefore
 
 $$\begin{align}
-R_{\nu m p}^{\mathrm{reg}}(r)
-&=r^{|m|}(1+r^2)^{i\nu/2}{}_2F_1\left(\frac{1+|m|+i\nu+ip}{2},\frac{1+|m|+i\nu-ip}{2};1+|m|;-r^2\right).
+R_{\nu m p}^{\mathrm{reg}}(r) &=r^{|m|}(1+r^2)^{i\nu/2}{}_2F_1\left(\frac{1+|m|+i\nu+ip}{2},\frac{1+|m|+i\nu-ip}{2};1+|m|;-r^2\right).
 \end{align}$$
 
 For a massive scalar operator,
@@ -88,20 +86,16 @@ With the AdS3 convention $\Delta=1+\sqrt{1+\mu^2}$, this eigenvalue is $p^2+(\De
 The Euclidean spectral normalization uses the $L^2$ measure on a fundamental domain,
 
 $$\begin{align}
-\langle \Psi,\Psi'\rangle_E
-&=\int_0^\beta d\tau\int_0^{2\pi}d\phi\int_0^\infty dr\,r\,\Psi^*(\tau,\phi,r)\Psi'(\tau,\phi,r).
+\langle \Psi,\Psi'\rangle_E &=\int_0^\beta d\tau\int_0^{2\pi}d\phi\int_0^\infty dr\,r\,\Psi^*(\tau,\phi,r)\Psi'(\tau,\phi,r).
 \end{align}$$
 
 The hypergeometric connection formula gives the large-$r$ behavior
 
 $$\begin{align}
-R_{\nu m p}^{\mathrm{reg}}(r)
-&=C_+(p,\nu,m)r^{-1+ip}+C_-(p,\nu,m)r^{-1-ip}+O(r^{-3+ip})+O(r^{-3-ip}),\\
-C_+(p,\nu,m)
-&=\frac{\Gamma(1+|m|)\Gamma(ip)}
+R_{\nu m p}^{\mathrm{reg}}(r) &=C_+(p,\nu,m)r^{-1+ip}+C_-(p,\nu,m)r^{-1-ip}+O(r^{-3+ip})+O(r^{-3-ip}),\\
+C_+(p,\nu,m) &=\frac{\Gamma(1+|m|)\Gamma(ip)}
 {\Gamma\left(\frac{1+|m|+i\nu+ip}{2}\right)\Gamma\left(\frac{1+|m|-i\nu+ip}{2}\right)},\\
-C_-(p,\nu,m)
-&=\frac{\Gamma(1+|m|)\Gamma(-ip)}
+C_-(p,\nu,m) &=\frac{\Gamma(1+|m|)\Gamma(-ip)}
 {\Gamma\left(\frac{1+|m|+i\nu-ip}{2}\right)\Gamma\left(\frac{1+|m|-i\nu-ip}{2}\right)} .
 \end{align}$$
 
@@ -109,19 +103,15 @@ Choose the radial normalization
 
 $$\begin{align}
 \widehat R_{\nu m p}(r)&=\mathcal N_{\nu m p}R_{\nu m p}^{\mathrm{reg}}(r),\\
-\mathcal N_{\nu m p}
-&=\frac{\Gamma\left(\frac{1+|m|+i\nu+ip}{2}\right)\Gamma\left(\frac{1+|m|-i\nu+ip}{2}\right)}
+\mathcal N_{\nu m p} &=\frac{\Gamma\left(\frac{1+|m|+i\nu+ip}{2}\right)\Gamma\left(\frac{1+|m|-i\nu+ip}{2}\right)}
 {\sqrt{2\pi}\,\Gamma(1+|m|)\Gamma(ip)} .
 \end{align}$$
 
 This phase convention sets the outgoing coefficient to $1/\sqrt{2\pi}$:
 
 $$\begin{align}
-\widehat R_{\nu m p}(r)
-&=\frac{1}{\sqrt{2\pi}}r^{-1+ip}+\frac{S_{\nu m}(p)}{\sqrt{2\pi}}r^{-1-ip}+O(r^{-3+ip})+O(r^{-3-ip}),\\
-S_{\nu m}(p)
-&=\frac{\Gamma(-ip)}{\Gamma(ip)}
-\frac{\Gamma\left(\frac{1+|m|+i\nu+ip}{2}\right)\Gamma\left(\frac{1+|m|-i\nu+ip}{2}\right)}
+\widehat R_{\nu m p}(r) &=\frac{1}{\sqrt{2\pi}}r^{-1+ip}+\frac{S_{\nu m}(p)}{\sqrt{2\pi}}r^{-1-ip}+O(r^{-3+ip})+O(r^{-3-ip}),\\
+S_{\nu m}(p) &=\frac{\Gamma(-ip)}{\Gamma(ip)} \frac{\Gamma\left(\frac{1+|m|+i\nu+ip}{2}\right)\Gamma\left(\frac{1+|m|-i\nu+ip}{2}\right)}
 {\Gamma\left(\frac{1+|m|+i\nu-ip}{2}\right)\Gamma\left(\frac{1+|m|-i\nu-ip}{2}\right)} .
 \end{align}$$
 
@@ -134,15 +124,13 @@ $$\begin{align}
 The fully normalized modes are
 
 $$\begin{align}
-\Psi_{\ell m p}(\tau,\phi,r)
-&=\frac{1}{\sqrt{2\pi\beta}}e^{i\nu_{\ell m}\tau}e^{im\phi}\widehat R_{\nu_{\ell m}mp}(r),
+\Psi_{\ell m p}(\tau,\phi,r) &=\frac{1}{\sqrt{2\pi\beta}}e^{i\nu_{\ell m}\tau}e^{im\phi}\widehat R_{\nu_{\ell m}mp}(r),
 \end{align}$$
 
 and obey
 
 $$\begin{align}
-\int_0^\beta d\tau\int_0^{2\pi}d\phi\int_0^\infty dr\,r\,\Psi_{\ell m p}^*\Psi_{\ell' m' p'}
-&=\delta_{\ell\ell'}\delta_{mm'}\delta(p-p').
+\int_0^\beta d\tau\int_0^{2\pi}d\phi\int_0^\infty dr\,r\,\Psi_{\ell m p}^*\Psi_{\ell' m' p'} &=\delta_{\ell\ell'}\delta_{mm'}\delta(p-p').
 \end{align}$$
 
 # Wronskian Form of the Normalization
@@ -156,8 +144,7 @@ $$\begin{align}
 For two radial modes with the same $\nu,m$ but different spectral labels $p,p'$, Green's identity gives
 
 $$\begin{align}
-(\lambda_{p'}-\lambda_p)\int_0^R dr\,r\,R_p^*R_{p'}
-&=\left[r(1+r^2)\left((\partial_rR_p^*)R_{p'}-R_p^*\partial_rR_{p'}\right)\right]_{0}^{R}.
+(\lambda_{p'}-\lambda_p)\int_0^R dr\,r\,R_p^*R_{p'} &=\left[r(1+r^2)\left((\partial_rR_p^*)R_{p'}-R_p^*\partial_rR_{p'}\right)\right]_{0}^{R}.
 \end{align}$$
 
 The lower endpoint vanishes for the regular modes. The upper endpoint is fixed by the plane-wave asymptotics in $\log r$ and gives the same $\delta(p-p')$ normalization as above.
@@ -169,9 +156,7 @@ This Wronskian bilinear is the Euclidean analog of a flux or symplectic-current 
 With the normalized basis, the spectral representation of the massive heat kernel on the quotient is
 
 $$\begin{align}
-K_{\beta,\theta}(s;x,x')
-&=\sum_{\ell\in\mathbb Z}\sum_{m\in\mathbb Z}\int_0^\infty dp\,
-\Psi_{\ell m p}(x)\Psi_{\ell m p}^*(x')e^{-s(p^2+1+\mu^2)} .
+K_{\beta,\theta}(s;x,x') &=\sum_{\ell\in\mathbb Z}\sum_{m\in\mathbb Z}\int_0^\infty dp\, \Psi_{\ell m p}(x)\Psi_{\ell m p}^*(x')e^{-s(p^2+1+\mu^2)} .
 \end{align}$$
 
 Poisson resumming the Matsubara label gives the image-sum representation on $\mathbb H^3/\mathbb Z$. The image sum and the Matsubara spectral sum are therefore equivalent representations of the same Euclidean determinant, even though their individual labels are different from the Lorentzian canonical normal-mode labels.

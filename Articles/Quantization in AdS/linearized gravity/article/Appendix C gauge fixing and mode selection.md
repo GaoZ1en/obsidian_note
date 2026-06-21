@@ -13,10 +13,7 @@ This appendix collects the subtle points behind the mode construction in Section
 We follow the field-space decomposition used in [Acosta--Garbarz--Goya--Leston](https://arxiv.org/pdf/2109.06938). An off-shell metric perturbation is organized as
 
 $$\begin{align}
-h_{\mu\nu}
-=h_{\mu\nu}^{TT}
-+\Theta_{\mu\nu}\chi
-+\mathcal{L}_{V}g^{(0)}_{\mu\nu}.
+h_{\mu\nu} =h_{\mu\nu}^{TT} +\Theta_{\mu\nu}\chi +\mathcal{L}_{V}g^{(0)}_{\mu\nu}.
 \end{align}$$
 
 Here
@@ -42,8 +39,7 @@ $$\begin{align}
 while its trace is
 
 $$\begin{align}
-g^{(0)\mu\nu}\Theta_{\mu\nu}\chi
-=\left(\nabla^{(0)2}-3\right)\chi .
+g^{(0)\mu\nu}\Theta_{\mu\nu}\chi =\left(\nabla^{(0)2}-3\right)\chi .
 \end{align}$$
 
 Thus $\Theta_{\mu\nu}\chi$ carries the scalar trace-type part of the square-integrable fluctuation, rather than a longitudinal diffeomorphism. The vector sector $\mathcal{L}_{V}g^{(0)}_{\mu\nu}$ is the proper diffeomorphism sector; $V$ is taken to be square-integrable, so this sector is quotiented as gauge redundancy. Brown-Henneaux asymptotic diffeomorphisms are not part of this proper sector and are therefore retained as boundary-graviton data.
@@ -51,8 +47,7 @@ Thus $\Theta_{\mu\nu}\chi$ carries the scalar trace-type part of the square-inte
 For the physical normalizable modes considered below, the scalar sector is removed by the linearized Einstein equation. Equivalently, after choosing the de Donder representative, the trace equation sets the scalar trace part to zero. The remaining representative can therefore be chosen in TT gauge,
 
 $$\begin{align}
-h=0,\qquad
-\nabla^{(0)}_{\mu}h^{\mu\nu}=0 .
+h=0,\qquad \nabla^{(0)}_{\mu}h^{\mu\nu}=0 .
 \end{align}$$
 
 The highest-weight mode selection below is performed in this TT representative sector, with the square-integrable longitudinal sector quotiented and the Brown-Henneaux boundary-graviton sector kept.
@@ -98,12 +93,8 @@ After the positivity condition above, the physical degrees of freedom are select
 The roots $(2,0)$ and $(0,2)$ discussed in the main body satisfy these conditions and generate the two chiral boundary-graviton towers. Their descendants are obtained by acting with the lowering operator in the non-trivial chiral copy:
 
 $$\begin{align}
-h_{-,n}^{\mu\nu}
-&=\sqrt{\frac{6}{n!(n+3)!}}\,
-\mathcal{L}_{\xi_{-1}}^n h_{-,0}^{\mu\nu},\\
-h_{+,\bar n}^{\mu\nu}
-&=\sqrt{\frac{6}{\bar n!(\bar n+3)!}}\,
-\mathcal{L}_{\bar\xi_{-1}}^{\bar n}h_{+,0}^{\mu\nu}.
+h_{-,n}^{\mu\nu} &=\sqrt{\frac{6}{n!(n+3)!}}\, \mathcal{L}_{\xi_{-1}}^n h_{-,0}^{\mu\nu},\\
+h_{+,\bar n}^{\mu\nu} &=\sqrt{\frac{6}{\bar n!(\bar n+3)!}}\, \mathcal{L}_{\bar\xi_{-1}}^{\bar n}h_{+,0}^{\mu\nu}.
 \end{align}$$
 
 As for the roots $(1,2)$ and $(2,1)$, we first solve the primaries. For $\displaystyle{(1,2)}$, we write down the highest-weight conditions
@@ -118,9 +109,7 @@ $$\begin{align}
 Here $\displaystyle{\zeta}$ and $\displaystyle{\zeta'}$ are generators of proper gauge transformations. For the mixed-root solution below, however, the strict raising conditions are already satisfied, so the proper-gauge terms vanish for this explicit representative. Up to an overall normalization, the primary is
 
 $$\begin{align}
-h^{\mu \nu}_{(1,2),0}
-&=\frac{e^{-i(3t+\phi)}}{(1+r^{2})^{5/2}}\begin{pmatrix}
-\frac{2ir}{1+r^{2}} & 1-r^{2} & -\frac{i}{r} \\
+h^{\mu \nu}_{(1,2),0} &=\frac{e^{-i(3t+\phi)}}{(1+r^{2})^{5/2}}\begin{pmatrix} \frac{2ir}{1+r^{2}} & 1-r^{2} & -\frac{i}{r} \\
 1-r^{2} & 2ir(1+r^{2}) & 1+r^{2} \\
 -\frac{i}{r} & 1+r^{2} & 0
 \end{pmatrix}^{\mu \nu}
@@ -135,8 +124,7 @@ h_{(1,2),0}^{\mu\nu}=\mathcal{L}_{\xi_{-1}}h_{+,0}^{\mu\nu}.
 The corresponding gauge parameter is obtained by the same action on the $(0,2)$ parameter,
 
 $$\begin{align}
-\zeta_{(1,2),0}^{\mu}
-:=\mathcal{L}_{\xi_{-1}}\zeta_{+,0}^{\mu},
+\zeta_{(1,2),0}^{\mu} :=\mathcal{L}_{\xi_{-1}}\zeta_{+,0}^{\mu},
 \end{align}$$
 
 namely
@@ -152,9 +140,7 @@ This gauge parameter vanishes at the boundary $\displaystyle{\Gamma}$, so the $(
 Similarly, the $(2,1)$ primary is obtained by solving the right-left exchanged highest-weight conditions. Up to an overall normalization,
 
 $$\begin{align}
-h^{\mu \nu}_{(2,1),0}
-&=\frac{e^{-i(3t-\phi)}}{(1+r^{2})^{5/2}}\begin{pmatrix}
-\frac{2ir}{1+r^{2}} & 1-r^{2} & \frac{i}{r} \\
+h^{\mu \nu}_{(2,1),0} &=\frac{e^{-i(3t-\phi)}}{(1+r^{2})^{5/2}}\begin{pmatrix} \frac{2ir}{1+r^{2}} & 1-r^{2} & \frac{i}{r} \\
 1-r^{2} & 2ir(1+r^{2}) & -(1+r^{2}) \\
 \frac{i}{r} & -(1+r^{2}) & 0
 \end{pmatrix}^{\mu \nu}.
@@ -163,15 +149,13 @@ h^{\mu \nu}_{(2,1),0}
 With the corresponding normalization, it is the right descendant of the $(2,0)$ primary,
 
 $$\begin{align}
-h_{(2,1),0}^{\mu\nu}
-=\mathcal{L}_{\bar\xi_{-1}}h_{-,0}^{\mu\nu}.
+h_{(2,1),0}^{\mu\nu} =\mathcal{L}_{\bar\xi_{-1}}h_{-,0}^{\mu\nu}.
 \end{align}$$
 
 The corresponding gauge parameter is
 
 $$\begin{align}
-\zeta_{(2,1),0}^{\mu}
-:=\mathcal{L}_{\bar\xi_{-1}}\zeta_{-,0}^{\mu},
+\zeta_{(2,1),0}^{\mu} :=\mathcal{L}_{\bar\xi_{-1}}\zeta_{-,0}^{\mu},
 \end{align}$$
 
 with asymptotic behavior

@@ -31,10 +31,8 @@ $$\begin{align}
 They satisfy the standard commutation relations
 
 $$\begin{align}
-[\xi_0,\xi_{\pm1}]&=\pm i\xi_{\pm1},&
-[\xi_1,\xi_{-1}]&=-2i\xi_0,\\
-[\bar{\xi}_0,\bar{\xi}_{\pm1}]&=\pm i\bar{\xi}_{\pm1},&
-[\bar{\xi}_1,\bar{\xi}_{-1}]&=-2i\bar{\xi}_0,\\
+[\xi_0,\xi_{\pm1}]&=\pm i\xi_{\pm1},& [\xi_1,\xi_{-1}]&=-2i\xi_0,\\
+[\bar{\xi}_0,\bar{\xi}_{\pm1}]&=\pm i\bar{\xi}_{\pm1},& [\bar{\xi}_1,\bar{\xi}_{-1}]&=-2i\bar{\xi}_0,\\
 [\xi_a,\bar{\xi}_b]&=0, & a,b & \in\left\{-1,0,1\right\}
 \end{align}$$
 
@@ -43,8 +41,7 @@ $$\begin{align}
 The renormalized gravitational action is
 
 $$\begin{align}
-S[g]=\frac{1}{16\pi G}\int_M\mathrm{d}^3x\sqrt{-g}(R+2)
-+\frac{1}{8\pi G}\int_\Gamma\mathrm{d}^2x\sqrt{-\gamma}(K-1).
+S[g]=\frac{1}{16\pi G}\int_M\mathrm{d}^3x\sqrt{-g}(R+2) +\frac{1}{8\pi G}\int_\Gamma\mathrm{d}^2x\sqrt{-\gamma}(K-1).
 \end{align}$$
 
 Here the spacetime region $M$ is bounded by the initial and final Cauchy surfaces $\Sigma _{i}$ and $\Sigma _{f}$, together with the timelike cutoff surface $\Gamma$. Thus $\partial M=\Sigma_i\cup\Sigma_f\cup\Gamma$. The metric induced on $\Gamma$ is denoted by $\gamma_{ab}$, and $K$ is the trace of its extrinsic curvature. The counterterm is the standard local counterterm for asymptotically AdS$_3$ gravity with unit AdS radius.
@@ -72,10 +69,7 @@ $$\begin{align}
 Expanding the bulk part of the action around the background gives
 
 $$\begin{align}
-S_{\mathrm{bulk}}[g^{(0)}+h]
-=\frac{1}{16\pi G}\int_M\mathrm{d}^3x\sqrt{-g^{(0)}}
-\left(\mathcal{L}^{(0)}+\mathcal{L}^{(1)}+\mathcal{L}^{(2)}\right)
-+\mathcal{O}(h^3),
+S_{\mathrm{bulk}}[g^{(0)}+h] =\frac{1}{16\pi G}\int_M\mathrm{d}^3x\sqrt{-g^{(0)}} \left(\mathcal{L}^{(0)}+\mathcal{L}^{(1)}+\mathcal{L}^{(2)}\right) +\mathcal{O}(h^3),
 \end{align}$$
 
 where
