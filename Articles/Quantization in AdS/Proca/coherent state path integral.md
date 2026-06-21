@@ -734,8 +734,7 @@ S_{E}[\boldsymbol{z},\boldsymbol{z}^{*}] & =\sum _{\sigma=\pm}\int \mathrm{d}^{3
 thus
 
 $$\begin{align}
-Z(\beta)
-&= \prod_{\sigma=\pm}\prod_{\vec{k}}\prod_{m\in\mathbb{Z}} \int \frac{\mathrm{d}^{2}z_{\vec{k},\sigma}(i\omega _{m})}{\pi}\,\exp\Big(-z^{*}_{\vec{k},\sigma}(i\omega _{m})\big(-i\omega _{m}+\omega _{\vec{k}}\big)z_{\vec{k},\sigma}(i\omega _{m})\Big) \\
+Z(\beta) &= \prod_{\sigma=\pm}\prod_{\vec{k}}\prod_{m\in\mathbb{Z}} \int \frac{\mathrm{d}^{2}z_{\vec{k},\sigma}(i\omega _{m})}{\pi}\,\exp\Big(-z^{*}_{\vec{k},\sigma}(i\omega _{m})\big(-i\omega _{m}+\omega _{\vec{k}}\big)z_{\vec{k},\sigma}(i\omega _{m})\Big) \\
 &= \prod_{\sigma=\pm}\prod_{\vec{k}}\prod_{m\in\mathbb{Z}} \frac{1}{-i\omega _{m}+\omega _{\vec{k}}} \\
  & =\prod_{\vec{k}} \frac{1}{(1-e^{-\beta\,\omega _{\vec{k}}})^{2}}
 \end{align}$$

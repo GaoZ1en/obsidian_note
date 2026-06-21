@@ -80,8 +80,7 @@ $$\begin{align}
 Now take $k>0$ and impose the same boundary condition as in [[Articles/Quantization in AdS/Chern-Simons/U(1) formalism|U(1) formalism]], namely $A^{-}|_{\Gamma}=0$. The allowed boundary modes are the first branch, with dependence on $x^{-}=t-\varphi$. Thus write
 
 $$\begin{align}
-\lambda(t,r,\varphi) & =\lambda_{0}+n\varphi+
-\sum _{\ell>0}\left(\lambda_{\ell}f_{\ell}(r)e^{-i\ell(t-\varphi)}+\lambda_{\ell}^{*}f_{\ell}(r)e^{i\ell(t-\varphi)}\right).
+\lambda(t,r,\varphi) & =\lambda_{0}+n\varphi+ \sum _{\ell>0}\left(\lambda_{\ell}f_{\ell}(r)e^{-i\ell(t-\varphi)}+\lambda_{\ell}^{*}f_{\ell}(r)e^{i\ell(t-\varphi)}\right).
 \end{align}$$
 
 The sourced connection decomposes into a boundary-compatible holonomy representative and regular homogeneous modes. Its local spatial part near the defect is
@@ -99,8 +98,7 @@ $$\begin{align}
 With the $k>0$ chiral boundary condition, use the holonomy representative
 
 $$\begin{align}
-A_{\text{hol}} & =q_{\phi}(\mathrm{d}\varphi-\mathrm{d}t), &
-q_{\phi} & =-\frac{q}{k}.
+A_{\text{hol}} & =q_{\phi}(\mathrm{d}\varphi-\mathrm{d}t), & q_{\phi} & =-\frac{q}{k}.
 \end{align}$$
 
 It has the same angular holonomy around the defect,
@@ -112,9 +110,7 @@ $$\begin{align}
 and it asymptotically obeys the $k>0$ boundary condition $A^{-}|_{\Gamma}=0$ in the same convention as the first branch of the pure $U(1)$ theory. Indeed,
 
 $$\begin{align}
-A^{t}_{\text{hol}} & =\frac{q_{\phi}}{1+r^{2}}, &
-A^{\phi}_{\text{hol}} & =\frac{q_{\phi}}{r^{2}}, &
-A^{-}_{\text{hol}} & =A^{t}_{\text{hol}}-A^{\phi}_{\text{hol}}=-\frac{q_{\phi}}{r^{2}(1+r^{2})}=O(r^{-4}).
+A^{t}_{\text{hol}} & =\frac{q_{\phi}}{1+r^{2}}, & A^{\phi}_{\text{hol}} & =\frac{q_{\phi}}{r^{2}}, & A^{-}_{\text{hol}} & =A^{t}_{\text{hol}}-A^{\phi}_{\text{hol}}=-\frac{q_{\phi}}{r^{2}(1+r^{2})}=O(r^{-4}).
 \end{align}$$
 
 The oscillator modes inherited from the pure $U(1)$ formalism are regular homogeneous modes. They describe residual boundary gauge transformations, while the delta-function source is carried by the holonomy representative; $A_{\text{def}}$ is its local spatial part. To match the normalizable residual boundary modes of the pure $U(1)$ theory, choose a harmonic representative $\lambda_{\text{reg}}$ obeying
@@ -126,15 +122,13 @@ $$\begin{align}
 For a mode $\lambda_{\ell}(t,r,\varphi)=f_{\ell}(r)e^{-i\ell(t-\varphi)}$, this gives
 
 $$\begin{align}
-\frac{1}{r}\partial _{r}\left(r(1+r^{2})\partial _{r}f_{\ell}\right)
-+\ell^{2}\left(\frac{1}{1+r^{2}}-\frac{1}{r^{2}}\right)f_{\ell} & =0.
+\frac{1}{r}\partial _{r}\left(r(1+r^{2})\partial _{r}f_{\ell}\right) +\ell^{2}\left(\frac{1}{1+r^{2}}-\frac{1}{r^{2}}\right)f_{\ell} & =0.
 \end{align}$$
 
 The two local radial solutions are
 
 $$\begin{align}
-f_{\ell}^{(+)}(r) & =\left(\frac{r}{\sqrt{1+r^{2}}}\right)^{\ell}, &
-f_{\ell}^{(-)}(r) & =\left(\frac{\sqrt{1+r^{2}}}{r}\right)^{\ell}.
+f_{\ell}^{(+)}(r) & =\left(\frac{r}{\sqrt{1+r^{2}}}\right)^{\ell}, & f_{\ell}^{(-)}(r) & =\left(\frac{\sqrt{1+r^{2}}}{r}\right)^{\ell}.
 \end{align}$$
 
 Regularity at $r=0$ and the normalization $f_{\ell}(\infty)=1$ select
@@ -180,8 +174,7 @@ $$\begin{align}
 As a sourced connection on the full disk, the transformed field satisfies
 
 $$\begin{align}
--\frac{q}{k}\mathrm{d}\varphi+n\mathrm{d}\varphi
-& =-\frac{q-kn}{k}\mathrm{d}\varphi,
+-\frac{q}{k}\mathrm{d}\varphi+n\mathrm{d}\varphi & =-\frac{q-kn}{k}\mathrm{d}\varphi,
 \end{align}$$
 
 so the representative charge changes as $q\mapsto q-kn$. This gives the charge identification modulo $k$ in the compact theory. Since the physical holonomy of a compact $U(1)$ connection is $\exp(i\oint_C A)$, the shift by $2\pi n$ is invisible to unit-charge probes. For the Wilson line insertion,
@@ -209,8 +202,7 @@ The same logic applied to the Chern-Simons path integral gives the level quantiz
 On $M=\mathbb{R}_{t}\times \Sigma$, write $A=A_{t}\mathrm{d}t+A_{i}\mathrm{d}x^{i}$. Up to boundary terms, the action takes the canonical form
 
 $$\begin{align}
-S & =\frac{k}{4\pi}\int \mathrm{d}t\int _{\Sigma}\mathrm{d}^{2}x\,\epsilon^{ij}A_{i}\dot{A}_{j}
-+\int \mathrm{d}t\int _{\Sigma}\mathrm{d}^{2}x\,A_{t}\left(\frac{k}{2\pi}F_{12}+q\delta^{(2)}(x-x_{\gamma})\right)
+S & =\frac{k}{4\pi}\int \mathrm{d}t\int _{\Sigma}\mathrm{d}^{2}x\,\epsilon^{ij}A_{i}\dot{A}_{j} +\int \mathrm{d}t\int _{\Sigma}\mathrm{d}^{2}x\,A_{t}\left(\frac{k}{2\pi}F_{12}+q\delta^{(2)}(x-x_{\gamma})\right)
 \end{align}$$
 
 for a static defect at $x_{\gamma}\in \Sigma$. Thus $A_{t}$ imposes the Gauss constraint
@@ -222,8 +214,7 @@ $$\begin{align}
 and the symplectic form on the space of spatial connections is
 
 $$\begin{align}
-\Omega _{\Sigma} & =\frac{k}{4\pi}\int _{\Sigma}\delta A\wedge \delta A
-=\frac{k}{4\pi}\int _{\Sigma}\epsilon^{ij}\delta A_{i}\wedge \delta A_{j}.
+\Omega _{\Sigma} & =\frac{k}{4\pi}\int _{\Sigma}\delta A\wedge \delta A =\frac{k}{4\pi}\int _{\Sigma}\epsilon^{ij}\delta A_{i}\wedge \delta A_{j}.
 \end{align}$$
 
 For fixed charge $q$ and fixed worldline $\gamma$, the Wilson-line coupling fixes the Gauss constraint. The defect contribution enters $\Omega_{\Sigma}$ through the allowed singular sector of $A$.
@@ -233,9 +224,7 @@ Take the spatial slice to be a punctured disk $\Sigma_{*}$ around the defect. Th
 Choose any path $I$ connecting the puncture boundary to the asymptotic boundary, and choose a function $\chi$ on $\Sigma_{*}$ whose values differ by one between the two ends of $I$. A spacetime representative of the topological sector is
 
 $$\begin{align}
-A_{\text{top}} & =q_{r}\mathrm{d}\chi+A_{\text{hol}}, &
-A_{\text{hol}} & =q_{\phi}(\mathrm{d}\varphi-\mathrm{d}t), &
-q_{\phi} & =-\frac{q}{k}.
+A_{\text{top}} & =q_{r}\mathrm{d}\chi+A_{\text{hol}}, & A_{\text{hol}} & =q_{\phi}(\mathrm{d}\varphi-\mathrm{d}t), & q_{\phi} & =-\frac{q}{k}.
 \end{align}$$
 
 On a constant-time slice, this restricts to
@@ -247,8 +236,7 @@ A_{\text{top}}|_{\Sigma_{*}} & =q_{r}\mathrm{d}\chi+q_{\phi}\mathrm{d}\varphi.
 The zero modes are measured by
 
 $$\begin{align}
-\int _{I}A_{\text{top}} & =q_{r}, &
-\oint _{S^{1}}A_{\text{top}} & =2\pi q_{\phi}=-\frac{2\pi q}{k},
+\int _{I}A_{\text{top}} & =q_{r}, & \oint _{S^{1}}A_{\text{top}} & =2\pi q_{\phi}=-\frac{2\pi q}{k},
 \end{align}$$
 
 modulo endpoint gauge transformations. The choice of $\chi$ is only a representative of the relative cohomology class; $q_{r}$ is the radial Wilson line connecting the defect boundary to the asymptotic boundary, while $q_{\phi}$ is fixed by the defect charge sector. The full flat connection is
@@ -260,15 +248,13 @@ A & =A_{\text{top}}+\mathrm{d}\lambda_{\text{reg}}.
 Substituting its spatial restriction into the symplectic form gives
 
 $$\begin{align}
-\Omega _{\Sigma_{*}} & =k\delta q_{r}\wedge \delta q_{\phi}
-+\frac{k}{4\pi}\int _{\partial \Sigma_{*}}\delta\lambda_{\text{reg}}\wedge \mathrm{d}\delta\lambda_{\text{reg}}.
+\Omega _{\Sigma_{*}} & =k\delta q_{r}\wedge \delta q_{\phi} +\frac{k}{4\pi}\int _{\partial \Sigma_{*}}\delta\lambda_{\text{reg}}\wedge \mathrm{d}\delta\lambda_{\text{reg}}.
 \end{align}$$
 
 For a fixed defect charge $q$, $\delta q_{\phi}=0$ and the topological term drops out. Across charge sectors, $q_{r}$ is conjugate to $q_{\phi}$:
 
 $$\begin{align}
-\{q_{r},q_{\phi}\} & =-\frac{1}{k}, &
-[\hat{q}_{r},\hat{q}_{\phi}] & =-\frac{i}{k}.
+\{q_{r},q_{\phi}\} & =-\frac{1}{k}, & [\hat{q}_{r},\hat{q}_{\phi}] & =-\frac{i}{k}.
 \end{align}$$
 
 The inner boundary contribution from the regular modes vanishes as $\epsilon\to0$ because $f_{\ell}(r)\sim r^{\ell}$. Thus only the asymptotic circle contributes to the oscillator part:

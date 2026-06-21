@@ -45,9 +45,7 @@ so this system is of first class, i.e., a gauge system.
 introduce the ghost $c$, anti-ghost $\bar{c}$, and the Nakanishi-Lautrup field $B$. their ghost numbers are
 
 $$\begin{align}
-\operatorname{gh}(c) & =1, &
-\operatorname{gh}(\bar{c}) & =-1, &
-\operatorname{gh}(B) & =0.
+\operatorname{gh}(c) & =1, & \operatorname{gh}(\bar{c}) & =-1, & \operatorname{gh}(B) & =0.
 \end{align}$$
 
 the Lagrangian BRST differential is
@@ -131,15 +129,13 @@ $$\begin{align}
 the Lagrangian ghost $c$ packages the gauge parameter and its time derivative. schematically,
 
 $$\begin{align}
-c^{1} & \sim \dot{c}, &
-c^{2} & \sim c,
+c^{1} & \sim \dot{c}, & c^{2} & \sim c,
 \end{align}$$
 
 so that
 
 $$\begin{align}
-sq_{1} & =\{q_{1},Q_{\mathrm{BFV}}\}\sim \dot{c}, &
-sq_{2} & =\{q_{2},Q_{\mathrm{BFV}}\}\sim c.
+sq_{1} & =\{q_{1},Q_{\mathrm{BFV}}\}\sim \dot{c}, & sq_{2} & =\{q_{2},Q_{\mathrm{BFV}}\}\sim c.
 \end{align}$$
 
 the physical Hilbert space is the ghost-number-zero BRST cohomology,
@@ -163,12 +159,7 @@ $$\begin{align}
 all fields are periodic on the thermal circle, while the ghosts are also periodic because they are Faddeev-Popov ghosts rather than thermal matter fermions. choose the Euclidean gauge-fixed action
 
 $$\begin{align}
-S_{E}
- & =\int _{0}^{\beta}\mathrm{d}\tau\left[
-\frac{1}{2}(q_{1}-\partial_{\tau}q_{2})^{2}
-+\frac{1}{2\xi}q_{2}^{2}
-+\bar{c}c
-\right].
+S_{E} & =\int _{0}^{\beta}\mathrm{d}\tau\left[ \frac{1}{2}(q_{1}-\partial_{\tau}q_{2})^{2} +\frac{1}{2\xi}q_{2}^{2} +\bar{c}c \right].
 \end{align}$$
 
 this corresponds to the gauge condition
@@ -198,7 +189,8 @@ q_{1} & q_{2}
 \end{pmatrix}
 K_{\xi}
 \begin{pmatrix}
-q_{1} \\ q_{2}
+q_{1} \\
+q_{2}
 \end{pmatrix},
 \end{align}$$
 
@@ -214,8 +206,7 @@ K_{\xi} & =\begin{pmatrix}
 expand in thermal Fourier modes
 
 $$\begin{align}
-q_{i}(\tau) & =\sum _{n\in \mathbb{Z}}q_{i,n}e^{i\omega _{n}\tau}, &
-\omega _{n} & =\frac{2\pi n}{\beta}.
+q_{i}(\tau) & =\sum _{n\in \mathbb{Z}}q_{i,n}e^{i\omega _{n}\tau}, & \omega _{n} & =\frac{2\pi n}{\beta}.
 \end{align}$$
 
 on the $n$-th mode,
@@ -238,8 +229,7 @@ all $\omega _{n}$ dependence cancels. this is the finite-dimensional analogue of
 the one-loop determinant is
 
 $$\begin{align}
-Z_{\mathrm{1-loop}}(\beta)
- & =\frac{\det M}{\sqrt{\det K_{\xi}}} \\
+Z_{\mathrm{1-loop}}(\beta) & =\frac{\det M}{\sqrt{\det K_{\xi}}} \\
  & =\exp\left[-\frac{1}{2}\sum _{n\in \mathbb{Z}}\log \xi^{-1}+\sum _{n\in \mathbb{Z}}\log 1\right]. \\
  & =1
 \end{align}$$
@@ -283,8 +273,7 @@ Q & =cC,
 where $c$ is the reparametrization ghost. since the constraint algebra is abelian,
 
 $$\begin{align}
-\{Q,Q\}
- & =0.
+\{Q,Q\} & =0.
 \end{align}$$
 
 the corresponding BRST transformations are
@@ -298,8 +287,7 @@ sN & =\dot{c}, &sc & =0.
 introduce the anti-ghost $\bar{c}$ and the Nakanishi-Lautrup field $B$,
 
 $$\begin{align}
-s\bar{c} & =B, &
-sB & =0.
+s\bar{c} & =B, & sB & =0.
 \end{align}$$
 
 choose the clock gauge
@@ -386,44 +374,32 @@ sN & =\dot{c},
 we get
 
 $$\begin{align}
-s\Psi
- & =\int \mathrm{d}\tau\left[
-B(N-1)+\frac{\xi}{2}B^{2}-\bar{c}\dot{c}
-\right].
+s\Psi & =\int \mathrm{d}\tau\left[ B(N-1)+\frac{\xi}{2}B^{2}-\bar{c}\dot{c} \right].
 \end{align}$$
 
 therefore the gauge-fixed action is
 
 $$\begin{align}
-S_{\mathrm{BRST}}
- & =\int \mathrm{d}\tau\left[
-p\dot{q}+p_{t}\dot{t}-NC
-{}+B(N-1)+\frac{\xi}{2}B^{2}-\bar{c}\dot{c}
-\right].
+S_{\mathrm{BRST}} & =\int \mathrm{d}\tau\left[ p\dot{q}+p_{t}\dot{t}-NC
+{}+B(N-1)+\frac{\xi}{2}B^{2}-\bar{c}\dot{c} \right].
 \end{align}$$
 
 now the ghost is dynamical:
 
 $$\begin{align}
-S_{\mathrm{gh}}
- & =-\int \mathrm{d}\tau\,\bar{c}\partial_{\tau}c.
+S_{\mathrm{gh}} & =-\int \mathrm{d}\tau\,\bar{c}\partial_{\tau}c.
 \end{align}$$
 
 on the thermal circle the ghosts are periodic Faddeev-Popov ghosts,
 
 $$\begin{align}
-c(\tau)
- & =\sum _{n\in \mathbb{Z}}c_{n}e^{i\omega _{n}\tau}, &
-\omega _{n}
- & =\frac{2\pi n}{\beta}.
+c(\tau) & =\sum _{n\in \mathbb{Z}}c_{n}e^{i\omega _{n}\tau}, & \omega _{n} & =\frac{2\pi n}{\beta}.
 \end{align}$$
 
 the Faddeev-Popov determinant is
 
 $$\begin{align}
-Z_{\mathrm{gh}}
- & =\det{}'\partial_{\tau}
- =\prod _{n\in \mathbb{Z},\,n\neq 0}i\omega _{n}.
+Z_{\mathrm{gh}} & =\det{}'\partial_{\tau} =\prod _{n\in \mathbb{Z},\,n\neq 0}i\omega _{n}.
 \end{align}$$
 
 the prime removes the constant ghost zero mode. this zero mode is the residual constant reparametrization left unfixed by $N=1$.
@@ -431,35 +407,26 @@ the prime removes the constant ghost zero mode. this zero mode is the residual c
 equivalently, the absolute value of the ghost determinant is controlled by the second-order heat kernel
 
 $$\begin{align}
-|Z_{\mathrm{gh}}|^{2}
- & =\det{}'(-\partial_{\tau}^{2}),
+|Z_{\mathrm{gh}}|^{2} & =\det{}'(-\partial_{\tau}^{2}),
 \end{align}$$
 
 with
 
 $$\begin{align}
-\operatorname{Tr}'e^{s\partial_{\tau}^{2}}
- & =
-\sum _{n\in \mathbb{Z},\,n\neq 0}
+\operatorname{Tr}'e^{s\partial_{\tau}^{2}} & = \sum _{n\in \mathbb{Z},\,n\neq 0}
 \exp\left[-s\left(\frac{2\pi n}{\beta}\right)^{2}\right].
 \end{align}$$
 
 zeta regularization gives the standard circle result
 
 $$\begin{align}
-\det{}'(-\partial_{\tau}^{2})
- & =\beta^{2},
-&
-|Z_{\mathrm{gh}}|
- & =\beta,
+\det{}'(-\partial_{\tau}^{2}) & =\beta^{2}, & |Z_{\mathrm{gh}}| & =\beta,
 \end{align}$$
 
 up to a phase convention for the first-order operator $\partial_{\tau}$. this $\beta$ factor is not a physical oscillator state-counting factor. it belongs to the gauge sector and is canceled by the residual reparametrization volume or, equivalently, by the normalization of the clock sector. after this BRST normalization, the physical thermal partition function is still
 
 $$\begin{align}
-Z_{\mathrm{phys}}(\beta)
- & =
-\frac{1}{2\sinh(\beta\omega/2)}.
+Z_{\mathrm{phys}}(\beta) & = \frac{1}{2\sinh(\beta\omega/2)}.
 \end{align}$$
 
 the proper-time gauge is therefore a better toy model for the heat-kernel logic: the ghost has a genuine kinetic operator, but the BRST cohomology still leaves only the ordinary harmonic oscillator as the physical sector.

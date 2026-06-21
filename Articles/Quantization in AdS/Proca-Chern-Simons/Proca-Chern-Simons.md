@@ -203,13 +203,11 @@ inserting to the Casimir operators, we have
 
 $$\begin{align}
 \mathcal{C}A_{\mu} & =-\frac{1}{4}\nabla ^{2}A_{\mu}-\frac{1}{2}\varepsilon _{\mu} ^{~\nu \rho}\nabla _{\nu}A_{\rho}-\frac{1}{2}A_{\mu} \\
- & =\begin{cases}
--\frac{1}{4}\mu ^{2}+\frac{1}{2}\mu & \mathcal{D}^{+}A=0 \\
+ & =\begin{cases} -\frac{1}{4}\mu ^{2}+\frac{1}{2}\mu & \mathcal{D}^{+}A=0 \\
 -\frac{1}{4}\mu ^{2}-\frac{1}{2}\mu & \mathcal{D}^{-}A=0
 \end{cases} \\
 \mathcal{\bar{C}}A_{\mu} & =-\frac{1}{4}\nabla ^{2}A_{\mu}+\frac{1}{2}\varepsilon _{\mu}^{~\nu \rho}\nabla _{\nu}A_{\rho}-\frac{1}{2}A_{\mu} \\
- & =\begin{cases}
--\frac{1}{4}\mu ^{2}-\frac{1}{2}\mu & \mathcal{D}^{+}A=0 \\
+ & =\begin{cases} -\frac{1}{4}\mu ^{2}-\frac{1}{2}\mu & \mathcal{D}^{+}A=0 \\
 -\frac{1}{4}\mu ^{2}+\frac{1}{2}\mu & \mathcal{D}^{-}A=0
 \end{cases}
 \end{align}$$

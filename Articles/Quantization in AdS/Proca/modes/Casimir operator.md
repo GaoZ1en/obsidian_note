@@ -52,8 +52,7 @@ the eom can be written as
 
 $$\begin{align}
 \nabla _{\mu}F^{\mu \nu} & =\mu ^{2}A^{\nu} \\
-\implies &  \begin{cases}
-\nabla _{\mu}A^{\mu} =0 \\
+\implies &  \begin{cases} \nabla _{\mu}A^{\mu} =0 \\
 \nabla ^{2}A^{\mu}-(\mu ^{2}-2)A^{\mu}=0
 \end{cases}
 \end{align}$$
@@ -63,11 +62,9 @@ then
 $$\begin{align}
 (\mathcal{C}+\mathcal{\bar{C}}) & =-\frac{1}{2}\mu ^{2} \\
 (\mathcal{C}-\mathcal{\bar{C}})^{2} & =\mu ^{2} \\
-\implies  & \begin{cases}
-\mathcal{C} =-\frac{1}{4}\mu ^{2}-\frac{1}{2}\mu \\
+\implies  & \begin{cases} \mathcal{C} =-\frac{1}{4}\mu ^{2}-\frac{1}{2}\mu \\
 \mathcal{\bar{C}}=-\frac{1}{4}\mu ^{2}+\frac{1}{2}\mu
-\end{cases} \text{ or } \begin{cases}
-\mathcal{C}=-\frac{1}{4}\mu ^{2}+\frac{1}{2}\mu \\
+\end{cases} \text{ or } \begin{cases} \mathcal{C}=-\frac{1}{4}\mu ^{2}+\frac{1}{2}\mu \\
 \mathcal{\bar{C}}=-\frac{1}{4}\mu ^{2}-\frac{1}{2}\mu
 \end{cases}
 \end{align}$$

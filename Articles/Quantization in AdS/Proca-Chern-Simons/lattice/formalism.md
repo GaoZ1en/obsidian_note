@@ -47,11 +47,7 @@ the numerical code also contains a literal stochastic path-integral computation.
 on a periodic $N_{\tau}\times N_{x}$ lattice, with spacings $\Delta \tau$ and $\Delta x$, the sampled Euclidean action is
 
 $$\begin{align}
-S_{\mathrm{E}}[A]
-=\sum_{\tau,x}\Delta \tau \Delta x\left[
-\frac{1}{2}\left(D_{\tau}A_{x}(\tau,x)-D_{x}A_{\tau}(\tau,x)\right)^{2}
-+\frac{1}{2}\mu ^{2}\left(A_{\tau}(\tau,x)^{2}+A_{x}(\tau,x)^{2}\right)
-\right],
+S_{\mathrm{E}}[A] =\sum_{\tau,x}\Delta \tau \Delta x\left[ \frac{1}{2}\left(D_{\tau}A_{x}(\tau,x)-D_{x}A_{\tau}(\tau,x)\right)^{2} +\frac{1}{2}\mu ^{2}\left(A_{\tau}(\tau,x)^{2}+A_{x}(\tau,x)^{2}\right) \right],
 \end{align}$$
 
 where $D_{\tau}$ and $D_{x}$ are forward lattice differences with periodic boundary conditions. because the Proca mass removes the gauge zero mode, no gauge fixing is needed for this free massive vector theory.
@@ -71,9 +67,7 @@ P_{\mathrm{acc}}=\min(1,e^{-\Delta S_{\mathrm{E}}}).
 after `--mc-thermalization` sweeps are discarded, the code saves one configuration every `--mc-sweeps-between` sweeps. the measured correlator is the translationally averaged estimator
 
 $$\begin{align}
-G^{\mathrm{MC}}_{\mu\nu}(r)
-=\frac{1}{N_{\mathrm{cfg}}}\sum_{\mathrm{cfg}}
-\frac{1}{N_{\tau}N_{x}}\sum_{y}
+G^{\mathrm{MC}}_{\mu\nu}(r) =\frac{1}{N_{\mathrm{cfg}}}\sum_{\mathrm{cfg}} \frac{1}{N_{\tau}N_{x}}\sum_{y}
 A_{\mu}^{(\mathrm{cfg})}(y+r)A_{\nu}^{(\mathrm{cfg})}(y).
 \end{align}$$
 

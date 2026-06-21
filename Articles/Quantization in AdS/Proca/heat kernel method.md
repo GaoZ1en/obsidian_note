@@ -680,8 +680,7 @@ S_{E} & =\int \mathrm{d}\tau\left(\frac{1}{2}m\left( \frac{\mathrm{d}x}{\mathrm{
 X & =\begin{pmatrix}
 x & \varphi
 \end{pmatrix}, \\
-\mathcal{O} & =\begin{pmatrix}
--m\partial _{\tau}^{2}+k & \lambda \partial _{\tau} \\
+\mathcal{O} & =\begin{pmatrix} -m\partial _{\tau}^{2}+k & \lambda \partial _{\tau} \\
 -\lambda \partial _{\tau} & 1
 \end{pmatrix}.
 \end{align}$$
@@ -711,9 +710,7 @@ the Euclidean heat kernel in the diagonal variables satisfies
 $$\begin{align}
 (\partial _{t}+\mathcal{O}')K'(t,\tau,\tau') & =0, \\
 K'(0,\tau,\tau') & =\delta(\tau-\tau')I_{2}, \\
-\mathcal{O}' & =
-\begin{pmatrix}
--M\partial _{\tau}^{2}+k & 0 \\
+\mathcal{O}' & = \begin{pmatrix} -M\partial _{\tau}^{2}+k & 0 \\
 0 & 1
 \end{pmatrix}.
 \end{align}$$
@@ -721,8 +718,7 @@ K'(0,\tau,\tau') & =\delta(\tau-\tau')I_{2}, \\
 on $\displaystyle{\mathbb{R}}$, this gives
 
 $$\begin{align}
-K'(t,\tau,\tau') & =
-\begin{pmatrix}
+K'(t,\tau,\tau') & = \begin{pmatrix}
 K_{x}(t,\tau,\tau') & 0 \\
 0 & K_{\tilde{\varphi}}(t,\tau,\tau')
 \end{pmatrix}, \\
@@ -777,8 +773,7 @@ $$\begin{align}
 hence
 
 $$\begin{align}
-Z_{S^{1}} & =\frac{e^{-\beta\Omega/2}}{1-e^{-\beta\Omega}},
-& \Omega & =\sqrt{\frac{k}{m-\lambda ^{2}}}.
+Z_{S^{1}} & =\frac{e^{-\beta\Omega/2}}{1-e^{-\beta\Omega}}, & \Omega & =\sqrt{\frac{k}{m-\lambda ^{2}}}.
 \end{align}$$
 
 ---
@@ -791,9 +786,7 @@ S_{E} & =\int \mathrm{d}\tau\left(\frac{1}{2}m\dot{x}^{2}+\frac{1}{2}kx^{2}-\lam
 X & =\begin{pmatrix}
 x & \varphi
 \end{pmatrix}, \\
-\mathcal{O} & =
-\begin{pmatrix}
--m\partial _{\tau}^{2}+k & \lambda \partial _{\tau} \\
+\mathcal{O} & = \begin{pmatrix} -m\partial _{\tau}^{2}+k & \lambda \partial _{\tau} \\
 -\lambda \partial _{\tau} & 1
 \end{pmatrix}.
 \end{align}$$
@@ -809,8 +802,7 @@ on $\displaystyle{\mathbb{R}}$, translation invariance gives the Fourier represe
 
 $$\begin{align}
 K^{\mathbb{R}}(s;\tau,\tau') & =\int _{-\infty}^{\infty}\frac{\mathrm{d}p}{2\pi}e^{ip(\tau-\tau')}e^{-s\mathcal{O}(p)}, \\
-\mathcal{O}(p) & =
-\begin{pmatrix}
+\mathcal{O}(p) & = \begin{pmatrix}
 mp^{2}+k & i\lambda p \\
 -i\lambda p & 1
 \end{pmatrix}.
@@ -827,16 +819,11 @@ D(p) & =\sqrt{(A(p)-1)^{2}+4\lambda ^{2}p^{2}}.
 then
 
 $$\begin{align}
-e^{-s\mathcal{O}(p)}
- & =e^{-sT(p)/2}
+e^{-s\mathcal{O}(p)} & =e^{-sT(p)/2}
 \begin{pmatrix}
-\cosh \frac{sD(p)}{2}-\frac{A(p)-1}{D(p)}\sinh \frac{sD(p)}{2}
-&
--\frac{2i\lambda p}{D(p)}\sinh \frac{sD(p)}{2}
+\cosh \frac{sD(p)}{2}-\frac{A(p)-1}{D(p)}\sinh \frac{sD(p)}{2} & -\frac{2i\lambda p}{D(p)}\sinh \frac{sD(p)}{2}
 \\
-\frac{2i\lambda p}{D(p)}\sinh \frac{sD(p)}{2}
-&
-\cosh \frac{sD(p)}{2}+\frac{A(p)-1}{D(p)}\sinh \frac{sD(p)}{2}
+\frac{2i\lambda p}{D(p)}\sinh \frac{sD(p)}{2} & \cosh \frac{sD(p)}{2}+\frac{A(p)-1}{D(p)}\sinh \frac{sD(p)}{2}
 \end{pmatrix}.
 \end{align}$$
 
@@ -851,8 +838,7 @@ K^{S^{1}}(s;\tau,\tau') & =\sum _{\ell\in\mathbb{Z}}K^{\mathbb{R}}(s;\tau,\tau'+
 the two eigenvalues of $\displaystyle{\mathcal{O}(p)}$ are
 
 $$\begin{align}
-\Lambda _{\pm}(p) & =
-\frac{1}{2}\left(T(p)\pm D(p)\right).
+\Lambda _{\pm}(p) & = \frac{1}{2}\left(T(p)\pm D(p)\right).
 \end{align}$$
 
 the trace of the heat kernel on the circle follows directly from the image sum:
@@ -881,8 +867,7 @@ $$\begin{align}
 where
 
 $$\begin{align}
-M & =m-\lambda ^{2}, &
-\Omega & =\sqrt{\frac{k}{M}}.
+M & =m-\lambda ^{2}, & \Omega & =\sqrt{\frac{k}{M}}.
 \end{align}$$
 
 define

@@ -41,12 +41,11 @@ H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\lef
 
 the eom is
 
-$$
-\begin{align} \\
+$$\begin{align}
+\\
 \varphi=e^{-i\omega t}e^{im\phi}\tilde{\varphi} \\
 (1+r^{2})\partial _{r}^{2}\tilde{\varphi}+\frac{1+3r^{2}}{r}\partial _{r}\tilde{\varphi}+ \left( -\mu ^{2}+\frac{\omega ^{2}}{1+r^{2}}-\frac{m^{2}}{r^{2}} \right)\tilde{\varphi} =0
-\end{align}
-$$
+\end{align}$$
 
 finiteness of the action gives the following two asymptotic behavior of $\displaystyle{\varphi}$:
 

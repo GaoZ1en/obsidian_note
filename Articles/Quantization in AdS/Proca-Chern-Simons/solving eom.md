@@ -163,15 +163,13 @@ $$\begin{align}
 the $+$ mass branch corresponds to the $f_{+}$ symbols in `formalism.md`, and the $-$ mass branch corresponds to the $f_{-}$ symbols. compared with the Proca $f_{l/r}$ symbols, the normalizations are
 
 $$\begin{align}
-f_{+,p,q}^{\mu} & =\sqrt{\frac{M_{+}}{\bar{\mu}}}\,f_{l,p,q}^{(M_{+})\mu}, &
-f_{-,p,q}^{\mu} & =\sqrt{\frac{M_{-}}{\bar{\mu}}}\,f_{r,p,q}^{(M_{-})\mu}.
+f_{+,p,q}^{\mu} & =\sqrt{\frac{M_{+}}{\bar{\mu}}}\,f_{l,p,q}^{(M_{+})\mu}, & f_{-,p,q}^{\mu} & =\sqrt{\frac{M_{-}}{\bar{\mu}}}\,f_{r,p,q}^{(M_{-})\mu}.
 \end{align}$$
 
 for a fixed mass branch $\displaystyle{\sigma}$, write the unnormalized Proca-type modes as
 
 $$\begin{align}
-H_{+,nm}^{(\sigma)\mu} & =\frac{1}{N_{-,nm}^{(\sigma)}}A_{(-,\sigma),nm}^{\mu}, &
-H_{-,nm}^{(\sigma)\mu} & =-\frac{1}{N_{+,nm}^{(\sigma)}}A_{(+,\sigma),nm}^{\mu}.
+H_{+,nm}^{(\sigma)\mu} & =\frac{1}{N_{-,nm}^{(\sigma)}}A_{(-,\sigma),nm}^{\mu}, & H_{-,nm}^{(\sigma)\mu} & =-\frac{1}{N_{+,nm}^{(\sigma)}}A_{(+,\sigma),nm}^{\mu}.
 \end{align}$$
 
 suppose a degenerate pair satisfies
@@ -193,17 +191,14 @@ here the $A$ modes and the normalization constants in each line are the degenera
 for $\displaystyle{m=0}$, the degenerate pair is $\displaystyle{A_{(-,\sigma),n0}^{\mu}}$ and $\displaystyle{A_{(+,\sigma),n0}^{\mu}}$. it is related to $\displaystyle{f_{+,n+1,n}^{\mu}}$ for $\displaystyle{\sigma=+}$ and $\displaystyle{f_{-,n,n+1}^{\mu}}$ for $\displaystyle{\sigma=-}$. with
 
 $$\begin{align}
-W & =M_{\sigma}+2n+2, &
-Q & =\frac{2i^{2n+1}\sqrt{\pi}}{W}\sqrt{\frac{n+1}{M_{\sigma}+n+1}},
+W & =M_{\sigma}+2n+2, & Q & =\frac{2i^{2n+1}\sqrt{\pi}}{W}\sqrt{\frac{n+1}{M_{\sigma}+n+1}},
 \end{align}$$
 
 we have
 
 $$\begin{align}
-a & =Q(M_{\sigma}+n+1), &
-b & =-Q(n+1), \\
-c & =-Q(n+1), &
-d & =Q(M_{\sigma}+n+1).
+a & =Q(M_{\sigma}+n+1), & b & =-Q(n+1), \\
+c & =-Q(n+1), & d & =Q(M_{\sigma}+n+1).
 \end{align}$$
 
 for $\displaystyle{m\geqslant 1}$, the degenerate pair is $\displaystyle{A_{(-,\sigma),n+1,m}^{\mu}}$ and $\displaystyle{A_{(+,\sigma),nm}^{\mu}}$. it is related to $\displaystyle{f_{+,m+n+1,n}^{\mu}}$ for $\displaystyle{\sigma=+}$ and $\displaystyle{f_{-,m+n,n+1}^{\mu}}$ for $\displaystyle{\sigma=-}$. with

@@ -83,8 +83,7 @@ a longitudinal mode $\displaystyle{\nabla _{\mu}\lambda}$ is the BRST image of t
 At the level of modes, one expects a BRST quartet structure:
 
 $$\begin{align}
-\lambda \quad\longleftrightarrow\quad A_{\mu}^{\mathrm{L}}=\nabla _{\mu}\lambda,
-\qquad
+\lambda \quad\longleftrightarrow\quad A_{\mu}^{\mathrm{L}}=\nabla _{\mu}\lambda, \qquad
 \bar c \quad\longleftrightarrow\quad B.
 \end{align}$$
 

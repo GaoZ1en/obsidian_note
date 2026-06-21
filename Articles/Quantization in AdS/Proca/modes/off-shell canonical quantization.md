@@ -102,13 +102,8 @@ where $I=(s,n,\bar{n})$ and $q_{I,A}=(a_{I},b_{I},c_{I})$. the desired off-shell
 Using Mathematica to expand the unreduced action in components gives, with $f=1+r^{2}$,
 
 $$\begin{align}
-S & =\frac{1}{2}\int \mathrm{d}t\mathrm{d}r\mathrm{d}\phi\left[
-r\left(\frac{\dot{A}^{r}}{f}+\partial_{r}(fA^{t})\right)^{2}
-+\frac{1}{fr}\left(r^{2}\dot{A}^{\phi}+f\partial_{\phi}A^{t}\right)^{2}\right. \\
-&\left.\qquad
--\frac{f}{r}\left(\partial_{r}(r^{2}A^{\phi})-\frac{1}{f}\partial_{\phi}A^{r}\right)^{2}
-+\mu^{2}rf(A^{t})^{2}-\frac{\mu^{2}r}{f}(A^{r})^{2}-\mu^{2}r^{3}(A^{\phi})^{2}
-\right].
+S & =\frac{1}{2}\int \mathrm{d}t\mathrm{d}r\mathrm{d}\phi\left[ r\left(\frac{\dot{A}^{r}}{f}+\partial_{r}(fA^{t})\right)^{2} +\frac{1}{fr}\left(r^{2}\dot{A}^{\phi}+f\partial_{\phi}A^{t}\right)^{2}\right. \\
+&\left.\qquad -\frac{f}{r}\left(\partial_{r}(r^{2}A^{\phi})-\frac{1}{f}\partial_{\phi}A^{r}\right)^{2} +\mu^{2}rf(A^{t})^{2}-\frac{\mu^{2}r}{f}(A^{r})^{2}-\mu^{2}r^{3}(A^{\phi})^{2} \right].
 \end{align}$$
 
 With the convention that no integration by parts in $t$ has been performed, $B^{AB}_{IJ}$ is the coefficient of $q_{I,A}\dot{q}_{J,B}$. In a complex basis the second profile should be complex conjugated; in a real basis the stars below can be omitted. The nonzero kinetic coefficients are
@@ -128,19 +123,9 @@ B^{ac}_{IJ} & =\int \mathrm{d}r\mathrm{d}\phi\,r(\partial_{\phi}T_{I})P_{J}^{*}.
 The coefficients in the term $-\frac{1}{2}V^{AB}_{IJ}q_{I,A}q_{J,B}$ are
 
 $$\begin{align}
-V^{aa}_{IJ} & =-\int \mathrm{d}r\mathrm{d}\phi\left[
-r\partial_{r}(fT_{I})\partial_{r}(fT_{J}^{*})
-+\frac{f}{r}(\partial_{\phi}T_{I})(\partial_{\phi}T_{J}^{*})
-+\mu^{2}rfT_{I}T_{J}^{*}
-\right], \\
-V^{bb}_{IJ} & =\int \mathrm{d}r\mathrm{d}\phi\left[
-\frac{1}{rf}(\partial_{\phi}R_{I})(\partial_{\phi}R_{J}^{*})
-+\frac{\mu^{2}r}{f}R_{I}R_{J}^{*}
-\right], \\
-V^{cc}_{IJ} & =\int \mathrm{d}r\mathrm{d}\phi\left[
-\frac{f}{r}\partial_{r}(r^{2}P_{I})\partial_{r}(r^{2}P_{J}^{*})
-+\mu^{2}r^{3}P_{I}P_{J}^{*}
-\right], \\
+V^{aa}_{IJ} & =-\int \mathrm{d}r\mathrm{d}\phi\left[ r\partial_{r}(fT_{I})\partial_{r}(fT_{J}^{*}) +\frac{f}{r}(\partial_{\phi}T_{I})(\partial_{\phi}T_{J}^{*}) +\mu^{2}rfT_{I}T_{J}^{*} \right], \\
+V^{bb}_{IJ} & =\int \mathrm{d}r\mathrm{d}\phi\left[ \frac{1}{rf}(\partial_{\phi}R_{I})(\partial_{\phi}R_{J}^{*}) +\frac{\mu^{2}r}{f}R_{I}R_{J}^{*} \right], \\
+V^{cc}_{IJ} & =\int \mathrm{d}r\mathrm{d}\phi\left[ \frac{f}{r}\partial_{r}(r^{2}P_{I})\partial_{r}(r^{2}P_{J}^{*}) +\mu^{2}r^{3}P_{I}P_{J}^{*} \right], \\
 V^{bc}_{IJ} & =-\int \mathrm{d}r\mathrm{d}\phi\,\frac{1}{r}(\partial_{\phi}R_{I})\partial_{r}(r^{2}P_{J}^{*}), \\
 V^{cb}_{IJ} & =-\int \mathrm{d}r\mathrm{d}\phi\,\frac{1}{r}\partial_{r}(r^{2}P_{I})(\partial_{\phi}R_{J}^{*}).
 \end{align}$$
@@ -150,19 +135,15 @@ All other entries vanish in this convention. Notice in particular that $V^{aa}_{
 For the primary highest-weight profiles one can do the radial integrals directly. For either primary tower $s=u,v$, Mathematica gives
 
 $$\begin{align}
-K^{bb}_{ss} & =\frac{\mu+1}{4\mu(\mu+2)}, &
-K^{cc}_{ss} & =\frac{1}{4\mu}, \\
-B^{ab}_{ss} & =\frac{i}{4\mu(\mu+2)}, &
-B^{ac}_{ss} & =\frac{i}{4\mu}, \\
+K^{bb}_{ss} & =\frac{\mu+1}{4\mu(\mu+2)}, & K^{cc}_{ss} & =\frac{1}{4\mu}, \\
+B^{ab}_{ss} & =\frac{i}{4\mu(\mu+2)}, & B^{ac}_{ss} & =\frac{i}{4\mu}, \\
 V^{aa}_{ss} & =-\frac{(\mu+1)(\mu+3)}{4\mu(\mu+2)}.
 \end{align}$$
 
 The cross terms between the two primary towers vanish by the angular integral. However, the componentwise potential terms involving $R$ and $P$ are not separately finite. Near $r=0$ the primary profiles have
 
 $$\begin{align}
-R_{s,0,0} & \sim -iC_{0}e^{im_{s}\phi}, &
-P_{s,0,0} & \sim \pm \frac{C_{0}}{r}e^{im_{s}\phi}, &
-C_{0}^{2} & =\frac{\mu+1}{4\pi\mu}.
+R_{s,0,0} & \sim -iC_{0}e^{im_{s}\phi}, & P_{s,0,0} & \sim \pm \frac{C_{0}}{r}e^{im_{s}\phi}, & C_{0}^{2} & =\frac{\mu+1}{4\pi\mu}.
 \end{align}$$
 
 Therefore the magnetic part contains

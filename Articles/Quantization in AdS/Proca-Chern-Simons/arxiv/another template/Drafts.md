@@ -81,9 +81,7 @@ The formulas above are the compressed versions used in the main text. Here we re
 We first collect a few geometric identities. For a Killing field $\xi ^{\mu}$,
 
 $$\begin{align}
-\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu} & =0, &
-\nabla _{\rho}\xi ^{\rho} & =0, &
-\nabla _{\lambda}\varepsilon ^{\mu \nu \rho} & =0 .
+\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu} & =0, & \nabla _{\rho}\xi ^{\rho} & =0, & \nabla _{\lambda}\varepsilon ^{\mu \nu \rho} & =0 .
 \end{align}$$
 
 The induced action on the fields is
@@ -251,9 +249,7 @@ Hence this part also reduces to a boundary term at $\partial \Sigma$, and vanish
 The third line is proportional to the Killing equation:
 
 $$\begin{align}
-\nabla _{\rho}\xi ^{\rho} & =0, &
-\nabla ^{\mu}\xi ^{\rho}+\nabla ^{\rho}\xi ^{\mu} & =0, &
-\nabla ^{\nu}\xi ^{\rho}+\nabla ^{\rho}\xi ^{\nu} & =0,
+\nabla _{\rho}\xi ^{\rho} & =0, & \nabla ^{\mu}\xi ^{\rho}+\nabla ^{\rho}\xi ^{\mu} & =0, & \nabla ^{\nu}\xi ^{\rho}+\nabla ^{\rho}\xi ^{\nu} & =0,
 \end{align}$$
 
 so it vanishes identically.

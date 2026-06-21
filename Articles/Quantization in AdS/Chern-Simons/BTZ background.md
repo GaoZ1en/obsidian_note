@@ -75,8 +75,7 @@ $$\begin{align}
 the two constants $\displaystyle{q_{r}}$ and $\displaystyle{q_{\phi}}$ are topological zero modes. they are measured by
 
 $$\begin{align}
-\int _{r_{+}}^{R}A_{\text{rad}} & =q_{r}, &
-\oint _{S^{1}}A_{\text{ang}} & =2\pi q_{\phi}.
+\int _{r_{+}}^{R}A_{\text{rad}} & =q_{r}, & \oint _{S^{1}}A_{\text{ang}} & =2\pi q_{\phi}.
 \end{align}$$
 
 to isolate the large gauge transformations associated with the two boundary components, we can use the two radial profiles
@@ -176,9 +175,7 @@ $$\begin{align}
 then we will consider the $\displaystyle{\mathrm{SU}(2)}$ Chern-Simons theory. we follow the same notation as [[Articles/Quantization in AdS/Chern-Simons/SU(2) formalism|SU(2) formalism]]. choose an anti-Hermitian basis $\displaystyle{T_{a}}$ of $\displaystyle{\mathfrak{su}(2)}$ satisfying
 
 $$\begin{align}
-\mathrm{Tr}(T_{a}T_{b}) & =-\frac{1}{2}\delta _{ab}, &
-[T_{a},T_{b}] & =\varepsilon _{abc}T_{c}, &
-\braket{T_{a}T_{b}} & =-\mathrm{Tr}(T_{a}T_{b}).
+\mathrm{Tr}(T_{a}T_{b}) & =-\frac{1}{2}\delta _{ab}, & [T_{a},T_{b}] & =\varepsilon _{abc}T_{c}, & \braket{T_{a}T_{b}} & =-\mathrm{Tr}(T_{a}T_{b}).
 \end{align}$$
 
 write $\displaystyle{A=A^{a}T_{a}}$ and $\displaystyle{F=\mathrm{d}A+A\wedge A}$. the bulk action is given by
@@ -225,8 +222,7 @@ F & =0.
 for large gauge transformations, we can take the same procedure as [[Articles/Quantization in AdS/Chern-Simons/SU(2) formalism|SU(2) formalism]]. first isolate the two boundary components by the radial profiles
 
 $$\begin{align}
-\chi _{R}(r) & =\frac{r-r_{+}}{R-r_{+}}, &
-\chi _{+}(r) & =1-\chi _{R}(r).
+\chi _{R}(r) & =\frac{r-r_{+}}{R-r_{+}}, & \chi _{+}(r) & =1-\chi _{R}(r).
 \end{align}$$
 
 for $\displaystyle{n>0}$, a convenient normalized scalar basis for the chiral large gauge parameters is
@@ -291,8 +287,7 @@ the topological zero modes are described by the two holonomies of the flat conne
 
 $$\begin{align}
 A_{\text{top}} & =Q_{r}\mathrm{d}\chi+Q_{\phi}(\mathrm{d}\phi-\mathrm{d}t), \\
-Q_{r} & =q_{r}T_{3}, &
-Q_{\phi} & =q_{\phi}T_{3}.
+Q_{r} & =q_{r}T_{3}, & Q_{\phi} & =q_{\phi}T_{3}.
 \end{align}$$
 
 more invariantly, one can take $\displaystyle{Q_{r},Q_{\phi}\in \mathfrak{su}(2)}$, but the flatness condition gives
@@ -304,22 +299,19 @@ F[A_{\text{top}}] & =[Q_{r},Q_{\phi}]\mathrm{d}\chi\wedge(\mathrm{d}\phi-\mathrm
 so $\displaystyle{[Q_{r},Q_{\phi}]=0}$. for $\displaystyle{\mathrm{SU}(2)}$, such a commuting pair can be rotated into a common Cartan direction. the gauge-invariant angular datum is the conjugacy class of
 
 $$\begin{align}
-U_{\phi} & =\mathcal{P}\exp\oint _{S^{1}}A_{\text{top}}
-=\exp(2\pi Q_{\phi}),
+U_{\phi} & =\mathcal{P}\exp\oint _{S^{1}}A_{\text{top}} =\exp(2\pi Q_{\phi}),
 \end{align}$$
 
 while
 
 $$\begin{align}
-U_{r} & =\mathcal{P}\exp\int _{r_{+}}^{R}A_{\text{top}}
-=\exp(Q_{r})
+U_{r} & =\mathcal{P}\exp\int _{r_{+}}^{R}A_{\text{top}} =\exp(Q_{r})
 \end{align}$$
 
 measures the relative holonomy between the horizon and the outer boundary. with $\displaystyle{\braket{T_{a}T_{b}}=\delta _{ab}/2}$, the Cartan representative gives
 
 $$\begin{align}
-\Omega _{\text{top}} & =k\braket{ \delta Q_{r}\wedge \delta Q_{\phi} }
-=\frac{k}{2}\delta q_{r}\wedge \delta q_{\phi}, \\
+\Omega _{\text{top}} & =k\braket{ \delta Q_{r}\wedge \delta Q_{\phi} } =\frac{k}{2}\delta q_{r}\wedge \delta q_{\phi}, \\
 \{q_{r},q_{\phi}\} & =-\frac{2}{k}.
 \end{align}$$
 

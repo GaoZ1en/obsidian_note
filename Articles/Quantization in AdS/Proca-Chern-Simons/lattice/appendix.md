@@ -35,39 +35,24 @@ $$\begin{align}
 with the analogous expression for $\tau_{2}>\tau_{1}$. In the lattice formulation, the periodic Euclidean time and space directions are discretized as
 
 $$\begin{align}
-\tau_{j}=j\Delta\tau,\qquad x_{\ell}=\ell\Delta x,
-\qquad
+\tau_{j}=j\Delta\tau,\qquad x_{\ell}=\ell\Delta x, \qquad
 j=0,\dots,N_{\tau}-1,\qquad \ell=0,\dots,N_{x}-1.
 \end{align}$$
 
 The continuum momenta are replaced by lattice momenta
 
 $$\begin{align}
-\widehat{\omega}_{n}
-&=\frac{2}{\Delta\tau}\sin\frac{\omega_{n}}{2},
-&
-\widehat{k}_{m}
-&=\frac{2}{\Delta x}\sin\frac{k_{m}}{2},
-\\
-\omega_{n}
-&=\frac{2\pi n}{N_{\tau}},
-&
-k_{m}
-&=\frac{2\pi m}{N_{x}}.
+\widehat{\omega}_{n} &=\frac{2}{\Delta\tau}\sin\frac{\omega_{n}}{2}, & \widehat{k}_{m} &=\frac{2}{\Delta x}\sin\frac{k_{m}}{2}, \\
+\omega_{n} &=\frac{2\pi n}{N_{\tau}}, & k_{m} &=\frac{2\pi m}{N_{x}}.
 \end{align}$$
 
 The canonical correlator is then implemented in momentum space as
 
 $$\begin{align}
-\widetilde{G}_{\text{can}}^{\tau\tau}(n,m)
-&=-\frac{\widehat{k}_{m}^{2}}
-{\mu^{2}\left(\mu^{2}+\widehat{\omega}_{n}^{2}+\widehat{k}_{m}^{2}\right)},
-\\
-\widetilde{G}_{\text{can}}^{\tau x}(n,m)
-&=\widetilde{G}_{\text{can}}^{x\tau}(n,m)
-=\frac{\widehat{\omega}_{n}\widehat{k}_{m}}
-{\mu^{2}\left(\mu^{2}+\widehat{\omega}_{n}^{2}+\widehat{k}_{m}^{2}\right)},
-\\
+\widetilde{G}_{\text{can}}^{\tau\tau}(n,m) &=-\frac{\widehat{k}_{m}^{2}}
+{\mu^{2}\left(\mu^{2}+\widehat{\omega}_{n}^{2}+\widehat{k}_{m}^{2}\right)}, \\
+\widetilde{G}_{\text{can}}^{\tau x}(n,m) &=\widetilde{G}_{\text{can}}^{x\tau}(n,m) =\frac{\widehat{\omega}_{n}\widehat{k}_{m}}
+{\mu^{2}\left(\mu^{2}+\widehat{\omega}_{n}^{2}+\widehat{k}_{m}^{2}\right)}, \\
 \widetilde{G}_{\text{can}}^{xx}(n,m)&=\frac{\mu^{2}+\widehat{k}_{m}^{2}}{\mu^{2}\left(\mu^{2}+\widehat{\omega}_{n}^{2}+\widehat{k}_{m}^{2}\right)}.
 \end{align}$$
 
