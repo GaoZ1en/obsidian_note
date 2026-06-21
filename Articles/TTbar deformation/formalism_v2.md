@@ -9,32 +9,26 @@ summary: "A covariant phase space account of how the TTbar flow deforms the symp
 Consider a one-parameter family of local actions on a fixed background metric $g_{\mu\nu}$,
 
 $$\begin{align}
-S_\lambda[\phi;g]=\int_M \mathbf L_\lambda,
-\qquad
+S_\lambda[\phi;g]=\int_M \mathbf L_\lambda, \qquad
 \mathbf L_\lambda=\sqrt{-g}\,\mathcal L_\lambda\,\mathrm d^2x .
 \end{align}$$
 
 In this note I keep $g_{\mu\nu}$ fixed when constructing the phase space, so $\delta g_{\mu\nu}=0$. The stress tensor is still defined by metric variation. With the convention
 
 $$\begin{align}
-\delta S_\lambda
-=-\frac{1}{2}\int_M d^2x\sqrt{-g}\,
-T_{\mu\nu}^{(\lambda)}\delta g^{\mu\nu},
+\delta S_\lambda =-\frac{1}{2}\int_M d^2x\sqrt{-g}\, T_{\mu\nu}^{(\lambda)}\delta g^{\mu\nu},
 \end{align}$$
 
 we have
 
 $$\begin{align}
-T^{(\lambda)}_{\mu\nu}
-=-\frac{2}{\sqrt{-g}}\frac{\delta S_\lambda}{\delta g^{\mu\nu}}.
+T^{(\lambda)}_{\mu\nu} =-\frac{2}{\sqrt{-g}}\frac{\delta S_\lambda}{\delta g^{\mu\nu}}.
 \end{align}$$
 
 The $T\bar T$ flow equation is
 
 $$\begin{align}
-\partial_\lambda \mathbf L_\lambda
-=\mathbf O^{T\bar T}_\lambda
-:=\frac{1}{2}\sqrt{-g}\,\varepsilon^{\mu\nu}\varepsilon^{\rho\sigma}
+\partial_\lambda \mathbf L_\lambda =\mathbf O^{T\bar T}_\lambda :=\frac{1}{2}\sqrt{-g}\,\varepsilon^{\mu\nu}\varepsilon^{\rho\sigma}
 T^{(\lambda)}_{\mu\rho}T^{(\lambda)}_{\nu\sigma}\,\mathrm d^2x .
 \end{align}$$
 
@@ -45,22 +39,19 @@ The overall sign of the flow depends on the stress-tensor and $T\bar T$ conventi
 The basic variation of the Lagrangian $2$-form is
 
 $$\begin{align}
-\delta \mathbf L_\lambda
-=\mathbf E_\lambda\,\delta\phi+d\mathbf\Theta_\lambda(\delta\phi),
+\delta \mathbf L_\lambda =\mathbf E_\lambda\,\delta\phi+d\mathbf\Theta_\lambda(\delta\phi),
 \end{align}$$
 
 where $\mathbf E_\lambda=0$ is the equation of motion and $\mathbf\Theta_\lambda$ is the symplectic potential current. For two variations $\delta_1,\delta_2$ we define the symplectic current
 
 $$\begin{align}
-\mathbf\omega_\lambda(\delta_1,\delta_2)
-=\delta_1\mathbf\Theta_\lambda(\delta_2)-\delta_2\mathbf\Theta_\lambda(\delta_1).
+\mathbf\omega_\lambda(\delta_1,\delta_2) =\delta_1\mathbf\Theta_\lambda(\delta_2)-\delta_2\mathbf\Theta_\lambda(\delta_1).
 \end{align}$$
 
 Integrating over a Cauchy slice $\Sigma$ gives the presymplectic form
 
 $$\begin{align}
-\Omega_{\Sigma,\lambda}(\delta_1,\delta_2)
-=\int_\Sigma \mathbf\omega_\lambda(\delta_1,\delta_2).
+\Omega_{\Sigma,\lambda}(\delta_1,\delta_2) =\int_\Sigma \mathbf\omega_\lambda(\delta_1,\delta_2).
 \end{align}$$
 
 Equivalently, if
@@ -82,9 +73,7 @@ Here $\delta$ is the field-space exterior derivative. In gauge theories $\Omega_
 Since $\delta$ and $\partial_\lambda$ commute,
 
 $$\begin{align}
-\delta\,\partial_\lambda \mathbf L_\lambda
-=\partial_\lambda \mathbf E_\lambda\,\delta\phi
-+d(\partial_\lambda\mathbf\Theta_\lambda).
+\delta\,\partial_\lambda \mathbf L_\lambda =\partial_\lambda \mathbf E_\lambda\,\delta\phi +d(\partial_\lambda\mathbf\Theta_\lambda).
 \end{align}$$
 
 Antisymmetrizing in two variations and then imposing the equations of motion and the linearized equations gives
@@ -110,9 +99,7 @@ The latter would require extra locality and cohomological assumptions, and it ca
 The more useful identity is the field-space exact relation
 
 $$\begin{align}
-\partial_\lambda \Omega_{\Sigma,\lambda}
-=\delta B_{\Sigma,\lambda},
-\qquad
+\partial_\lambda \Omega_{\Sigma,\lambda} =\delta B_{\Sigma,\lambda}, \qquad
 B_{\Sigma,\lambda}:=\int_\Sigma \partial_\lambda\mathbf\Theta_\lambda .
 \end{align}$$
 
@@ -122,35 +109,28 @@ For the deformed scalar with
 
 $$\begin{align}
 x^\pm=t\pm x,\qquad
-\partial_\pm=\frac{1}{2}(\partial_t\pm\partial_x),
-\qquad
+\partial_\pm=\frac{1}{2}(\partial_t\pm\partial_x), \qquad
 L_0=\frac{1}{2}\partial_+\phi\,\partial_-\phi,
 \end{align}$$
 
 one finds
 
 $$\begin{align}
-\theta_\lambda^t=\frac{\dot\phi}{4F}\delta\phi,
-\qquad
+\theta_\lambda^t=\frac{\dot\phi}{4F}\delta\phi, \qquad
 F=\sqrt{1+4\lambda L_0}.
 \end{align}$$
 
 Thus
 
 $$\begin{align}
-\pi_\lambda=\frac{\dot\phi}{4F},
-\qquad
+\pi_\lambda=\frac{\dot\phi}{4F}, \qquad
 \Omega_{\Sigma,\lambda}=\int_\Sigma dx\,\delta\pi_\lambda\wedge\delta\phi .
 \end{align}$$
 
 Expanded in the original velocity variable,
 
 $$\begin{align}
-\Omega_{\Sigma,\lambda}
-=\frac{1}{4}\int dx\,\delta\dot\phi\wedge\delta\phi
--\frac{\lambda}{16}\int dx\,
-\delta\left[(\dot\phi^2-\phi'^2)\dot\phi\right]\wedge\delta\phi
-+O(\lambda^2).
+\Omega_{\Sigma,\lambda} =\frac{1}{4}\int dx\,\delta\dot\phi\wedge\delta\phi -\frac{\lambda}{16}\int dx\, \delta\left[(\dot\phi^2-\phi'^2)\dot\phi\right]\wedge\delta\phi +O(\lambda^2).
 \end{align}$$
 
 Therefore $\partial_\lambda\Omega_{\Sigma,\lambda}$ is not zero in these coordinates. What is true is that the deformation can be absorbed into a canonical change of phase-space coordinates.
@@ -182,8 +162,7 @@ This definition is broader than Noether's theorem. Some charges come from spacet
 The scalar example illustrates this distinction. The deformed charges
 
 $$\begin{align}
-Q_{\pm,n}^{(\lambda)}
-=Q_{\pm,n}^{(0)}+\lambda Q_{\pm,n}^{(1)}+O(\lambda^2)
+Q_{\pm,n}^{(\lambda)} =Q_{\pm,n}^{(0)}+\lambda Q_{\pm,n}^{(1)}+O(\lambda^2)
 \end{align}$$
 
 are local conserved charges of an integrable hierarchy. They are naturally studied as Hamiltonian functionals on the deformed phase space, even when they are not ordinary Noether charges associated with a spacetime symmetry parameter $\xi$.
@@ -205,8 +184,7 @@ $$\begin{align}
 The Noether current is then
 
 $$\begin{align}
-\mathbf J_{\xi,\lambda}
-=\mathbf\Theta_\lambda(\delta_\xi\phi)-\mathbf M_{\xi,\lambda},
+\mathbf J_{\xi,\lambda} =\mathbf\Theta_\lambda(\delta_\xi\phi)-\mathbf M_{\xi,\lambda},
 \end{align}$$
 
 and on-shell,
@@ -238,30 +216,25 @@ $$\begin{align}
 Differentiating the Hamiltonian relation gives
 
 $$\begin{align}
-i_X\,\partial_\lambda\Omega_{\Sigma,\lambda}
-=-\delta(\partial_\lambda H_\lambda).
+i_X\,\partial_\lambda\Omega_{\Sigma,\lambda} =-\delta(\partial_\lambda H_\lambda).
 \end{align}$$
 
 Using $\partial_\lambda\Omega_{\Sigma,\lambda}=\delta B_{\Sigma,\lambda}$,
 
 $$\begin{align}
-i_X\delta B_{\Sigma,\lambda}
-=-\delta(\partial_\lambda H_\lambda).
+i_X\delta B_{\Sigma,\lambda} =-\delta(\partial_\lambda H_\lambda).
 \end{align}$$
 
 Since
 
 $$\begin{align}
-\mathcal L_XB_{\Sigma,\lambda}
-=i_X\delta B_{\Sigma,\lambda}+\delta(i_XB_{\Sigma,\lambda}),
+\mathcal L_XB_{\Sigma,\lambda} =i_X\delta B_{\Sigma,\lambda}+\delta(i_XB_{\Sigma,\lambda}),
 \end{align}$$
 
 we get
 
 $$\begin{align}
-\delta(\partial_\lambda H_\lambda)
-=-\mathcal L_XB_{\Sigma,\lambda}
-+\delta(i_XB_{\Sigma,\lambda}).
+\delta(\partial_\lambda H_\lambda) =-\mathcal L_XB_{\Sigma,\lambda} +\delta(i_XB_{\Sigma,\lambda}).
 \end{align}$$
 
 If, in addition, $\mathcal L_XB_{\Sigma,\lambda}=0$, then
@@ -313,18 +286,14 @@ The charge algebra must be discussed at three levels:
 The scalar example shows why these should not be conflated. The densities of the deformed charges are not equal to their undeformed densities. To first order,
 
 $$\begin{align}
-q_{+,n}^{(\lambda)}
-=A^n+\lambda\frac{n-1}{2}A^nB^2+O(\lambda^2),
-\qquad
-q_{-,n}^{(\lambda)}
-=B^n+\lambda\frac{n-1}{2}A^2B^n+O(\lambda^2),
+q_{+,n}^{(\lambda)} =A^n+\lambda\frac{n-1}{2}A^nB^2+O(\lambda^2), \qquad
+q_{-,n}^{(\lambda)} =B^n+\lambda\frac{n-1}{2}A^2B^n+O(\lambda^2),
 \end{align}$$
 
 where $(A,B)$ are the chiral combinations built from the deformed canonical momentum. Nevertheless, the first-order brackets of the integrated charges reduce to total derivatives, so
 
 $$\begin{align}
-\{Q_{\sigma,m}^{(\lambda)},Q_{\rho,n}^{(\lambda)}\}
-=O(\lambda^2)
+\{Q_{\sigma,m}^{(\lambda)},Q_{\rho,n}^{(\lambda)}\} =O(\lambda^2)
 \end{align}$$
 
 under periodic boundary conditions or sufficiently fast falloff.
@@ -342,8 +311,7 @@ U_\lambda^*\Omega_{\Sigma,\lambda}=\Omega_{\Sigma,0}.
 For dressed charges this gives the transported algebra
 
 $$\begin{align}
-\{H^{\mathrm{dress}}_{\xi,\lambda},H^{\mathrm{dress}}_{\zeta,\lambda}\}_0
-=H^{\mathrm{dress}}_{[\xi,\zeta],\lambda}+K_0(\xi,\zeta),
+\{H^{\mathrm{dress}}_{\xi,\lambda},H^{\mathrm{dress}}_{\zeta,\lambda}\}_0 =H^{\mathrm{dress}}_{[\xi,\zeta],\lambda}+K_0(\xi,\zeta),
 \end{align}$$
 
 up to central extensions, boundary terms, and global subtleties. On a cylinder the flow is more delicate because zero modes, winding sectors, and cohomology can obstruct a global canonical trivialization.
@@ -393,8 +361,7 @@ a=\partial_+\phi,\qquad b=\partial_-\phi,
    versus the canonical chiral variables
 
 $$\begin{align}
-A=2\pi_\lambda+\frac{1}{2}\phi',
-   \qquad
+A=2\pi_\lambda+\frac{1}{2}\phi', \qquad
    B=2\pi_\lambda-\frac{1}{2}\phi'.
 \end{align}$$
 
@@ -403,8 +370,7 @@ A=2\pi_\lambda+\frac{1}{2}\phi',
 1. Prove conservation and commutativity under one fixed convention for the light-cone normalization. The current draft should use
 
 $$\begin{align}
-L_0=\frac{1}{2}\partial_+\phi\,\partial_-\phi,
-   \qquad
+L_0=\frac{1}{2}\partial_+\phi\,\partial_-\phi, \qquad
    F=\sqrt{1+2\lambda\partial_+\phi\,\partial_-\phi}.
 \end{align}$$
 

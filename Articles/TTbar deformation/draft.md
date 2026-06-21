@@ -37,15 +37,13 @@ $$\begin{align}
 The resulting tensor is
 
 $$\begin{align}
-T^{(\lambda)}_{\mu\nu}
-=\frac{\partial L_\lambda}{\partial L_0}\partial_\mu\phi\partial_\nu\phi-g_{\mu\nu}L_\lambda .
+T^{(\lambda)}_{\mu\nu} =\frac{\partial L_\lambda}{\partial L_0}\partial_\mu\phi\partial_\nu\phi-g_{\mu\nu}L_\lambda .
 \end{align}$$
 
 The determinant identity also checks out:
 
 $$\begin{align}
-\det T^{(\lambda)}
-=L_\lambda^2-2L_0L_\lambda\frac{\partial L_\lambda}{\partial L_0}.
+\det T^{(\lambda)} =L_\lambda^2-2L_0L_\lambda\frac{\partial L_\lambda}{\partial L_0}.
 \end{align}$$
 
 For
@@ -57,10 +55,7 @@ L_\lambda=\frac{\sqrt{1+4\lambda L_0}-1}{2\lambda},
 Mathematica gives
 
 $$\begin{align}
-\frac{\partial L_\lambda}{\partial\lambda}
--\left(
-L_\lambda^2-2L_0L_\lambda\frac{\partial L_\lambda}{\partial L_0}
-\right)=0,
+\frac{\partial L_\lambda}{\partial\lambda} -\left( L_\lambda^2-2L_0L_\lambda\frac{\partial L_\lambda}{\partial L_0} \right)=0,
 \end{align}$$
 
 and
@@ -106,8 +101,7 @@ $$\begin{align}
 and $\partial_\pm=\frac{1}{2}(\partial_t\pm\partial_x)$, one obtains
 
 $$\begin{align}
-\partial_t(J_{+,n}^{(\lambda)}-\Theta_{+,n}^{(\lambda)})
-=\partial_x(J_{+,n}^{(\lambda)}+\Theta_{+,n}^{(\lambda)}).
+\partial_t(J_{+,n}^{(\lambda)}-\Theta_{+,n}^{(\lambda)}) =\partial_x(J_{+,n}^{(\lambda)}+\Theta_{+,n}^{(\lambda)}).
 \end{align}$$
 
 Thus $q=J-\Theta$ is conserved with flux $j=-(J+\Theta)$. The statement that one may equivalently use $J+\Theta$ as the density is not correct without changing the defining conservation equation or chirality convention.
@@ -123,8 +117,7 @@ F^{-1}=1-2\lambda L_0+O(\lambda^2),
 the first-order equation of motion becomes
 
 $$\begin{align}
-\partial_+\partial_-\phi
-=\lambda\left[\partial_+(L_0b)+\partial_-(L_0a)\right]+O(\lambda^2).
+\partial_+\partial_-\phi =\lambda\left[\partial_+(L_0b)+\partial_-(L_0a)\right]+O(\lambda^2).
 \end{align}$$
 
 Using the leading-order chiral equations inside the order-$\lambda$ terms,
@@ -136,10 +129,7 @@ $$\begin{align}
 one finds
 
 $$\begin{align}
-\partial_-a^n
-=\frac{n\lambda}{2}a^{n-1}b^2\partial_+a
-+\frac{n\lambda}{2}a^{n+1}\partial_-b
-+O(\lambda^2).
+\partial_-a^n =\frac{n\lambda}{2}a^{n-1}b^2\partial_+a +\frac{n\lambda}{2}a^{n+1}\partial_-b +O(\lambda^2).
 \end{align}$$
 
 The proposed correction
@@ -151,8 +141,7 @@ J_{+,n}^{(1)}=-na^nL_0=-\frac{n}{2}a^{n+1}b
 cancels the second term, and the remaining term is
 
 $$\begin{align}
-\frac{n}{2}a^{n-1}b^2\partial_+a
-=\partial_+\left(\frac{1}{2}a^nb^2\right)
+\frac{n}{2}a^{n-1}b^2\partial_+a =\partial_+\left(\frac{1}{2}a^nb^2\right)
 \end{align}$$
 
 to leading order. Therefore
@@ -168,19 +157,13 @@ is correct. The minus-sector formula follows by exchanging $a\leftrightarrow b$.
 Given the density choice $q=J-\Theta$, the first-order plus-sector charge is
 
 $$\begin{align}
-Q_{+,n}^{(\lambda)}
-=\int dx\left[
-a^n-\frac{n\lambda}{2}a^{n+1}b-\frac{\lambda}{2}a^nb^2
-\right]+O(\lambda^2),
+Q_{+,n}^{(\lambda)} =\int dx\left[ a^n-\frac{n\lambda}{2}a^{n+1}b-\frac{\lambda}{2}a^nb^2 \right]+O(\lambda^2),
 \end{align}$$
 
 and the minus-sector charge is
 
 $$\begin{align}
-Q_{-,n}^{(\lambda)}
-=\int dx\left[
-b^n-\frac{n\lambda}{2}ab^{n+1}-\frac{\lambda}{2}a^2b^n
-\right]+O(\lambda^2).
+Q_{-,n}^{(\lambda)} =\int dx\left[ b^n-\frac{n\lambda}{2}ab^{n+1}-\frac{\lambda}{2}a^2b^n \right]+O(\lambda^2).
 \end{align}$$
 
 These formulas are correct with the conventions of Sections 3 and 4.
@@ -236,37 +219,29 @@ C=\frac{1}{2}p(16p^2-s^2)=\frac{1}{2}AB(A+B).
 Substituting into the charge densities gives
 
 $$\begin{align}
-q_{+,n}^{(\lambda)}
-=A^n+\lambda\frac{n-1}{2}A^nB^2+O(\lambda^2),
+q_{+,n}^{(\lambda)} =A^n+\lambda\frac{n-1}{2}A^nB^2+O(\lambda^2),
 \end{align}$$
 
 and
 
 $$\begin{align}
-q_{-,n}^{(\lambda)}
-=B^n+\lambda\frac{n-1}{2}A^2B^n+O(\lambda^2).
+q_{-,n}^{(\lambda)} =B^n+\lambda\frac{n-1}{2}A^2B^n+O(\lambda^2).
 \end{align}$$
 
 The plus, minus, and mixed brackets reduce to total derivatives. The key first-order identities are
 
 $$\begin{align}
-\{Q_{+,m}^{(1)},Q_{+,n}^{(0)}\}
-+\{Q_{+,m}^{(0)},Q_{+,n}^{(1)}\}
-=mn(n-1)\int dx\,\partial_x(A^{m+n-2}B^2),
+\{Q_{+,m}^{(1)},Q_{+,n}^{(0)}\} +\{Q_{+,m}^{(0)},Q_{+,n}^{(1)}\} =mn(n-1)\int dx\,\partial_x(A^{m+n-2}B^2),
 \end{align}$$
 
 $$\begin{align}
-\{Q_{-,m}^{(1)},Q_{-,n}^{(0)}\}
-+\{Q_{-,m}^{(0)},Q_{-,n}^{(1)}\}
-=-mn(n-1)\int dx\,\partial_x(A^2B^{m+n-2}),
+\{Q_{-,m}^{(1)},Q_{-,n}^{(0)}\} +\{Q_{-,m}^{(0)},Q_{-,n}^{(1)}\} =-mn(n-1)\int dx\,\partial_x(A^2B^{m+n-2}),
 \end{align}$$
 
 and
 
 $$\begin{align}
-\{Q_{+,m}^{(0)},Q_{-,n}^{(1)}\}
-+\{Q_{+,m}^{(1)},Q_{-,n}^{(0)}\}
-=2(n-1)\int dx\,\partial_x(A^mB^n).
+\{Q_{+,m}^{(0)},Q_{-,n}^{(1)}\} +\{Q_{+,m}^{(1)},Q_{-,n}^{(0)}\} =2(n-1)\int dx\,\partial_x(A^mB^n).
 \end{align}$$
 
 Thus the conclusion
@@ -288,8 +263,7 @@ L_\lambda=L_0-\lambda L_0^2+O(\lambda^2),
 and
 
 $$\begin{align}
-\delta L_\lambda
-=\frac{b}{2F}\partial_+\delta\phi+\frac{a}{2F}\partial_-\delta\phi.
+\delta L_\lambda =\frac{b}{2F}\partial_+\delta\phi+\frac{a}{2F}\partial_-\delta\phi.
 \end{align}$$
 
 The symplectic potential components
@@ -304,16 +278,13 @@ are also correct.
 For equal time,
 
 $$\begin{align}
-\theta_\lambda^t
-=\frac{1}{2}(\theta_\lambda^++\theta_\lambda^-)
-=\frac{\dot\phi}{4F}\delta\phi.
+\theta_\lambda^t =\frac{1}{2}(\theta_\lambda^++\theta_\lambda^-) =\frac{\dot\phi}{4F}\delta\phi.
 \end{align}$$
 
 Therefore
 
 $$\begin{align}
-\pi_\lambda=\frac{\partial L_\lambda}{\partial\dot\phi}
-=\frac{\dot\phi}{4F},
+\pi_\lambda=\frac{\partial L_\lambda}{\partial\dot\phi} =\frac{\dot\phi}{4F},
 \end{align}$$
 
 and
@@ -325,22 +296,19 @@ $$\begin{align}
 The first-order expansion is
 
 $$\begin{align}
-\pi_\lambda
-=\frac{1}{4}\dot\phi-\frac{\lambda}{16}\dot\phi(\dot\phi^2-\phi'^2)+O(\lambda^2).
+\pi_\lambda =\frac{1}{4}\dot\phi-\frac{\lambda}{16}\dot\phi(\dot\phi^2-\phi'^2)+O(\lambda^2).
 \end{align}$$
 
 Hence
 
 $$\begin{align}
-\Omega_1
-=-\frac{1}{16}\int dx\,\delta\left[(\dot\phi^2-\phi'^2)\dot\phi\right]\wedge\delta\phi,
+\Omega_1 =-\frac{1}{16}\int dx\,\delta\left[(\dot\phi^2-\phi'^2)\dot\phi\right]\wedge\delta\phi,
 \end{align}$$
 
 and
 
 $$\begin{align}
-\delta\left[(\dot\phi^2-\phi'^2)\dot\phi\right]
-=(3\dot\phi^2-\phi'^2)\delta\dot\phi-2\dot\phi\phi'\delta\phi'.
+\delta\left[(\dot\phi^2-\phi'^2)\dot\phi\right] =(3\dot\phi^2-\phi'^2)\delta\dot\phi-2\dot\phi\phi'\delta\phi'.
 \end{align}$$
 
 Thus Eq. (4.60)--Eq. (4.63) are correct. Eq. (4.51), however, has a typo and should read

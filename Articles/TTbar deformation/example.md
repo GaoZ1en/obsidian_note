@@ -3,9 +3,7 @@
 to see how the formalism works in practice, it is enough to study the undeformed free massless scalar on flat $1+1$ dimensional Minkowski space,
 
 $$\begin{align}
-S_0=\int \mathrm d^2x\,\mathcal L_0,
-\qquad
-\mathcal L_0=\frac{1}{2}(\dot\phi^2-\phi'^2).
+S_0=\int \mathrm d^2x\,\mathcal L_0, \qquad \mathcal L_0=\frac{1}{2}(\dot\phi^2-\phi'^2).
 \end{align}$$
 
 here $\dot\phi:=\partial_t\phi$ and $\phi':=\partial_x\phi$. the canonical momentum is
@@ -23,20 +21,15 @@ T^{(0)}_{\mu\nu}=\partial_\mu\phi\,\partial_\nu\phi-\frac{1}{2}\eta_{\mu\nu}(\pa
 so in canonical variables,
 
 $$\begin{align}
-T^{(0)}_{00}=\frac{1}{2}(\pi^2+\phi'^2),
-\qquad
-T^{(0)}_{01}=\pi\phi',
-\qquad
+T^{(0)}_{00}=\frac{1}{2}(\pi^2+\phi'^2), \qquad
+T^{(0)}_{01}=\pi\phi', \qquad
 T^{(0)}_{11}=\frac{1}{2}(\pi^2+\phi'^2).
 \end{align}$$
 
 therefore
 
 $$\begin{align}
-\det T^{(0)}
-=T^{(0)}_{00}T^{(0)}_{11}-(T^{(0)}_{01})^2
-=\frac{1}{4}(\pi^2-\phi'^2)^2
-=\frac{1}{4}(\dot\phi^2-\phi'^2)^2.
+\det T^{(0)} =T^{(0)}_{00}T^{(0)}_{11}-(T^{(0)}_{01})^2 =\frac{1}{4}(\pi^2-\phi'^2)^2 =\frac{1}{4}(\dot\phi^2-\phi'^2)^2.
 \end{align}$$
 
 with the convention
@@ -48,10 +41,7 @@ $$\begin{align}
 the deformed Lagrangian begins as
 
 $$\begin{align}
-\mathcal L_\lambda
-=\frac{1}{2}(\dot\phi^2-\phi'^2)
-+\frac{\lambda}{4}(\dot\phi^2-\phi'^2)^2
-+O(\lambda^2).
+\mathcal L_\lambda =\frac{1}{2}(\dot\phi^2-\phi'^2) +\frac{\lambda}{4}(\dot\phi^2-\phi'^2)^2 +O(\lambda^2).
 \end{align}$$
 
 # symplectic potential and its $\lambda$-flow
@@ -65,16 +55,13 @@ $$\begin{align}
 with
 
 $$\begin{align}
-\pi_\lambda=\frac{\partial \mathcal L_\lambda}{\partial \dot\phi}
-=\dot\phi+\lambda(\dot\phi^2-\phi'^2)\dot\phi+O(\lambda^2).
+\pi_\lambda=\frac{\partial \mathcal L_\lambda}{\partial \dot\phi} =\dot\phi+\lambda(\dot\phi^2-\phi'^2)\dot\phi+O(\lambda^2).
 \end{align}$$
 
 evaluated at $\lambda=0$, this gives
 
 $$\begin{align}
-\partial_\lambda \Theta_{\Sigma,\lambda}\big|_{\lambda=0}
-=\int_\Sigma \mathrm dx\,(\dot\phi^2-\phi'^2)\dot\phi\,\delta\phi
-=\int_\Sigma \mathrm dx\,(\pi^2-\phi'^2)\pi\,\delta\phi.
+\partial_\lambda \Theta_{\Sigma,\lambda}\big|_{\lambda=0} =\int_\Sigma \mathrm dx\,(\dot\phi^2-\phi'^2)\dot\phi\,\delta\phi =\int_\Sigma \mathrm dx\,(\pi^2-\phi'^2)\pi\,\delta\phi.
 \end{align}$$
 
 so the field-space one-form that controls the deformation is
@@ -120,9 +107,7 @@ Y_0=-\int_\Sigma \mathrm dx\,(\pi^2-\phi'^2)\pi\,\frac{\delta}{\delta\pi(x)}.
 indeed,
 
 $$\begin{align}
-i_{Y_0}\Omega_{\Sigma,0}
-=-\int_\Sigma \mathrm dx\,(\pi^2-\phi'^2)\pi\,\delta\phi
-=-B_{\Sigma,0}.
+i_{Y_0}\Omega_{\Sigma,0} =-\int_\Sigma \mathrm dx\,(\pi^2-\phi'^2)\pi\,\delta\phi =-B_{\Sigma,0}.
 \end{align}$$
 
 so for the free scalar the first-order deformation vector can be written explicitly. this is the object that should be used to transport symmetries and observables if one wants a dressed picture.
@@ -132,8 +117,7 @@ so for the free scalar the first-order deformation vector can be written explici
 the undeformed massless scalar has the shift symmetry
 
 $$\begin{align}
-\delta_a\phi=a,
-\qquad
+\delta_a\phi=a, \qquad
 X_a=a\int_\Sigma \mathrm dx\,\frac{\delta}{\delta\phi(x)},
 \end{align}$$
 
@@ -146,16 +130,13 @@ $$\begin{align}
 however the corresponding charge does deform. to first order,
 
 $$\begin{align}
-Q_a(\lambda)=a\int_\Sigma \mathrm dx\,\pi_\lambda
-=a\int_\Sigma \mathrm dx\Big[\pi+\lambda(\pi^2-\phi'^2)\pi\Big]+O(\lambda^2),
+Q_a(\lambda)=a\int_\Sigma \mathrm dx\,\pi_\lambda =a\int_\Sigma \mathrm dx\Big[\pi+\lambda(\pi^2-\phi'^2)\pi\Big]+O(\lambda^2),
 \end{align}$$
 
 so
 
 $$\begin{align}
-\partial_\lambda Q_a\big|_{\lambda=0}
-=a\int_\Sigma \mathrm dx\,(\pi^2-\phi'^2)\pi
-=i_{X_a}B_{\Sigma,0}.
+\partial_\lambda Q_a\big|_{\lambda=0} =a\int_\Sigma \mathrm dx\,(\pi^2-\phi'^2)\pi =i_{X_a}B_{\Sigma,0}.
 \end{align}$$
 
 this is exactly the bare-picture formula

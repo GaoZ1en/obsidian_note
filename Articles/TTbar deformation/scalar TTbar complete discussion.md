@@ -108,62 +108,45 @@ after deformation, the definition of the symmetry generator and the correspondin
 For the plus sector, look for
 
 $$\begin{align}
-J_{+,n}^{(\lambda)}
-=a^n+\lambda J_{+,n}^{(1)}+O(\lambda^2),
-\qquad
-\Theta_{+,n}^{(\lambda)}
-=\lambda\Theta_{+,n}^{(1)}+O(\lambda^2),
+J_{+,n}^{(\lambda)} =a^n+\lambda J_{+,n}^{(1)}+O(\lambda^2), \qquad
+\Theta_{+,n}^{(\lambda)} =\lambda\Theta_{+,n}^{(1)}+O(\lambda^2),
 \end{align}$$
 
 satisfying
 
 $$\begin{align}
-\partial_-J_{+,n}^{(\lambda)}
-=\partial_+\Theta_{+,n}^{(\lambda)}.
+\partial_-J_{+,n}^{(\lambda)} =\partial_+\Theta_{+,n}^{(\lambda)}.
 \end{align}$$
 
 Using the deformed equation of motion,
 
 $$\begin{align}
-\partial_-a^n
-=\frac{n\lambda}{2}a^{n-1}b^2\partial_+a
-+\frac{n\lambda}{2}a^{n+1}\partial_-b
-+O(\lambda^2).
+\partial_-a^n =\frac{n\lambda}{2}a^{n-1}b^2\partial_+a +\frac{n\lambda}{2}a^{n+1}\partial_-b +O(\lambda^2).
 \end{align}$$
 
 Choose
 
 $$\begin{align}
-J_{+,n}^{(1)}
-=-na^nL_0
-=-\frac{n}{2}a^{n+1}b.
+J_{+,n}^{(1)} =-na^nL_0 =-\frac{n}{2}a^{n+1}b.
 \end{align}$$
 
 Then
 
 $$\begin{align}
-\partial_-\left(a^n+\lambda J_{+,n}^{(1)}\right)
-=\frac{n\lambda}{2}a^{n-1}b^2\partial_+a
-+O(\lambda^2)
-=\lambda\partial_+\left(\frac{1}{2}a^nb^2\right)
-+O(\lambda^2),
+\partial_-\left(a^n+\lambda J_{+,n}^{(1)}\right) =\frac{n\lambda}{2}a^{n-1}b^2\partial_+a +O(\lambda^2) =\lambda\partial_+\left(\frac{1}{2}a^nb^2\right) +O(\lambda^2),
 \end{align}$$
 
 so
 
 $$\begin{align}
-\Theta_{+,n}^{(1)}
-=\frac{1}{2}a^nb^2.
+\Theta_{+,n}^{(1)} =\frac{1}{2}a^nb^2.
 \end{align}$$
 
 The minus sector follows by exchanging $a\leftrightarrow b$:
 
 $$\begin{align}
-J_{-,n}^{(1)}
-=-\frac{n}{2}ab^{n+1},
-\qquad
-\Theta_{-,n}^{(1)}
-=\frac{1}{2}a^2b^n.
+J_{-,n}^{(1)} =-\frac{n}{2}ab^{n+1}, \qquad
+\Theta_{-,n}^{(1)} =\frac{1}{2}a^2b^n.
 \end{align}$$
 
 # First-Order Charges
@@ -171,42 +154,31 @@ J_{-,n}^{(1)}
 From
 
 $$\begin{align}
-\partial_-J_{+,n}^{(\lambda)}
-=\partial_+\Theta_{+,n}^{(\lambda)}
+\partial_-J_{+,n}^{(\lambda)} =\partial_+\Theta_{+,n}^{(\lambda)}
 \end{align}$$
 
 and $\partial_\pm=\frac{1}{2}(\partial_t\pm\partial_x)$, one obtains
 
 $$\begin{align}
-\partial_t(J_{+,n}^{(\lambda)}-\Theta_{+,n}^{(\lambda)})
-=\partial_x(J_{+,n}^{(\lambda)}+\Theta_{+,n}^{(\lambda)}).
+\partial_t(J_{+,n}^{(\lambda)}-\Theta_{+,n}^{(\lambda)}) =\partial_x(J_{+,n}^{(\lambda)}+\Theta_{+,n}^{(\lambda)}).
 \end{align}$$
 
 Thus the conserved density is
 
 $$\begin{align}
-q_{+,n}^{(\lambda)}
-=J_{+,n}^{(\lambda)}-\Theta_{+,n}^{(\lambda)}
+q_{+,n}^{(\lambda)} =J_{+,n}^{(\lambda)}-\Theta_{+,n}^{(\lambda)}
 \end{align}$$
 
 with flux $-(J_{+,n}^{(\lambda)}+\Theta_{+,n}^{(\lambda)})$. Therefore
 
 $$\begin{align}
-Q_{+,n}^{(\lambda)}
-=\int dx\left[
-a^n-\frac{n\lambda}{2}a^{n+1}b
--\frac{\lambda}{2}a^nb^2
-\right]+O(\lambda^2),
+Q_{+,n}^{(\lambda)} =\int dx\left[ a^n-\frac{n\lambda}{2}a^{n+1}b -\frac{\lambda}{2}a^nb^2 \right]+O(\lambda^2),
 \end{align}$$
 
 and
 
 $$\begin{align}
-Q_{-,n}^{(\lambda)}
-=\int dx\left[
-b^n-\frac{n\lambda}{2}ab^{n+1}
--\frac{\lambda}{2}a^2b^n
-\right]+O(\lambda^2).
+Q_{-,n}^{(\lambda)} =\int dx\left[ b^n-\frac{n\lambda}{2}ab^{n+1} -\frac{\lambda}{2}a^2b^n \right]+O(\lambda^2).
 \end{align}$$
 
 These are integrable hierarchy charges. For generic $n$, they should not be identified with ordinary spacetime Noether charges.
@@ -216,53 +188,38 @@ These are integrable hierarchy charges. For generic $n$, they should not be iden
 The symplectic potential current is read off from the boundary term:
 
 $$\begin{align}
-\theta_\lambda^+
-=\frac{b}{2F}\delta\phi,
-\qquad
-\theta_\lambda^-
-=\frac{a}{2F}\delta\phi.
+\theta_\lambda^+ =\frac{b}{2F}\delta\phi, \qquad
+\theta_\lambda^- =\frac{a}{2F}\delta\phi.
 \end{align}$$
 
 The equal-time component is
 
 $$\begin{align}
-\theta_\lambda^t
-=\frac{1}{2}(\theta_\lambda^++\theta_\lambda^-)
-=\frac{\dot\phi}{4F}\delta\phi.
+\theta_\lambda^t =\frac{1}{2}(\theta_\lambda^++\theta_\lambda^-) =\frac{\dot\phi}{4F}\delta\phi.
 \end{align}$$
 
 Hence the canonical momentum is
 
 $$\begin{align}
-\pi_\lambda
-=\frac{\partial L_\lambda}{\partial\dot\phi}
-=\frac{\dot\phi}{4F},
+\pi_\lambda =\frac{\partial L_\lambda}{\partial\dot\phi} =\frac{\dot\phi}{4F},
 \end{align}$$
 
 and the symplectic form is
 
 $$\begin{align}
-\Omega_\lambda
-=\int dx\,\delta\pi_\lambda\wedge\delta\phi.
+\Omega_\lambda =\int dx\,\delta\pi_\lambda\wedge\delta\phi.
 \end{align}$$
 
 In velocity variables,
 
 $$\begin{align}
-\pi_\lambda
-=\frac{1}{4}\dot\phi
--\frac{\lambda}{16}\dot\phi(\dot\phi^2-\phi'^2)
-+O(\lambda^2),
+\pi_\lambda =\frac{1}{4}\dot\phi -\frac{\lambda}{16}\dot\phi(\dot\phi^2-\phi'^2) +O(\lambda^2),
 \end{align}$$
 
 so
 
 $$\begin{align}
-\Omega_\lambda
-=\frac{1}{4}\int dx\,\delta\dot\phi\wedge\delta\phi
--\frac{\lambda}{16}\int dx\,
-\delta\left[(\dot\phi^2-\phi'^2)\dot\phi\right]\wedge\delta\phi
-+O(\lambda^2).
+\Omega_\lambda =\frac{1}{4}\int dx\,\delta\dot\phi\wedge\delta\phi -\frac{\lambda}{16}\int dx\, \delta\left[(\dot\phi^2-\phi'^2)\dot\phi\right]\wedge\delta\phi +O(\lambda^2).
 \end{align}$$
 
 Thus the deformation of the symplectic form is nonzero in fixed velocity variables. The canonical variables $(\phi,\pi_\lambda)$ absorb it into Darboux form.
@@ -272,8 +229,7 @@ Thus the deformation of the symplectic form is nonzero in fixed velocity variabl
 Let
 
 $$\begin{align}
-p:=\pi_\lambda,
-\qquad
+p:=\pi_\lambda, \qquad
 s:=\phi'.
 \end{align}$$
 
@@ -286,22 +242,19 @@ p=\frac{\dot\phi}{4\sqrt{1+\frac{\lambda}{2}(\dot\phi^2-s^2)}}.
 Choosing the branch connected to $\lambda=0$,
 
 $$\begin{align}
-\dot\phi
-=4p\sqrt{\frac{1-\frac{\lambda}{2}s^2}{1-8\lambda p^2}}.
+\dot\phi =4p\sqrt{\frac{1-\frac{\lambda}{2}s^2}{1-8\lambda p^2}}.
 \end{align}$$
 
 To first order,
 
 $$\begin{align}
-\dot\phi
-=4p+\lambda p(16p^2-s^2)+O(\lambda^2).
+\dot\phi =4p+\lambda p(16p^2-s^2)+O(\lambda^2).
 \end{align}$$
 
 Define the canonical chiral variables
 
 $$\begin{align}
-A=2p+\frac{1}{2}s,
-\qquad
+A=2p+\frac{1}{2}s, \qquad
 B=2p-\frac{1}{2}s.
 \end{align}$$
 
@@ -324,30 +277,26 @@ $$\begin{align}
 In terms of $A,B$,
 
 $$\begin{align}
-a=A+\lambda C+O(\lambda^2),
-\qquad
+a=A+\lambda C+O(\lambda^2), \qquad
 b=B+\lambda C+O(\lambda^2),
 \end{align}$$
 
 where
 
 $$\begin{align}
-C=\frac{1}{2}p(16p^2-s^2)
-=\frac{1}{2}AB(A+B).
+C=\frac{1}{2}p(16p^2-s^2) =\frac{1}{2}AB(A+B).
 \end{align}$$
 
 Substituting the first-order charges into canonical variables gives
 
 $$\begin{align}
-q_{+,n}^{(\lambda)}
-=A^n+\lambda\frac{n-1}{2}A^nB^2+O(\lambda^2),
+q_{+,n}^{(\lambda)} =A^n+\lambda\frac{n-1}{2}A^nB^2+O(\lambda^2),
 \end{align}$$
 
 and
 
 $$\begin{align}
-q_{-,n}^{(\lambda)}
-=B^n+\lambda\frac{n-1}{2}A^2B^n+O(\lambda^2).
+q_{-,n}^{(\lambda)} =B^n+\lambda\frac{n-1}{2}A^2B^n+O(\lambda^2).
 \end{align}$$
 
 # First-Order Commutativity
@@ -355,30 +304,23 @@ q_{-,n}^{(\lambda)}
 Using the canonical brackets, the first-order bracket corrections are total derivatives:
 
 $$\begin{align}
-\{Q_{+,m}^{(1)},Q_{+,n}^{(0)}\}
-+\{Q_{+,m}^{(0)},Q_{+,n}^{(1)}\}
-=mn(n-1)\int dx\,\partial_x(A^{m+n-2}B^2),
+\{Q_{+,m}^{(1)},Q_{+,n}^{(0)}\} +\{Q_{+,m}^{(0)},Q_{+,n}^{(1)}\} =mn(n-1)\int dx\,\partial_x(A^{m+n-2}B^2),
 \end{align}$$
 
 $$\begin{align}
-\{Q_{-,m}^{(1)},Q_{-,n}^{(0)}\}
-+\{Q_{-,m}^{(0)},Q_{-,n}^{(1)}\}
-=-mn(n-1)\int dx\,\partial_x(A^2B^{m+n-2}),
+\{Q_{-,m}^{(1)},Q_{-,n}^{(0)}\} +\{Q_{-,m}^{(0)},Q_{-,n}^{(1)}\} =-mn(n-1)\int dx\,\partial_x(A^2B^{m+n-2}),
 \end{align}$$
 
 and
 
 $$\begin{align}
-\{Q_{+,m}^{(0)},Q_{-,n}^{(1)}\}
-+\{Q_{+,m}^{(1)},Q_{-,n}^{(0)}\}
-=2(n-1)\int dx\,\partial_x(A^mB^n).
+\{Q_{+,m}^{(0)},Q_{-,n}^{(1)}\} +\{Q_{+,m}^{(1)},Q_{-,n}^{(0)}\} =2(n-1)\int dx\,\partial_x(A^mB^n).
 \end{align}$$
 
 Therefore
 
 $$\begin{align}
-\{Q_{\sigma,m}^{(\lambda)},Q_{\rho,n}^{(\lambda)}\}
-=O(\lambda^2)
+\{Q_{\sigma,m}^{(\lambda)},Q_{\rho,n}^{(\lambda)}\} =O(\lambda^2)
 \end{align}$$
 
 under periodic boundary conditions or sufficiently fast falloff.
@@ -388,32 +330,21 @@ under periodic boundary conditions or sufficiently fast falloff.
 The canonical Hamiltonian density is
 
 $$\begin{align}
-h_\lambda(A,B)
-=p\dot\phi-L_\lambda
-=\frac{1-\sqrt{
-\left(1-\frac{\lambda}{2}(A+B)^2\right)
-\left(1-\frac{\lambda}{2}(A-B)^2\right)
+h_\lambda(A,B) =p\dot\phi-L_\lambda =\frac{1-\sqrt{ \left(1-\frac{\lambda}{2}(A+B)^2\right) \left(1-\frac{\lambda}{2}(A-B)^2\right)
 }}{2\lambda}.
 \end{align}$$
 
 It expands as
 
 $$\begin{align}
-h_\lambda
-=\frac{A^2+B^2}{4}
-+\frac{\lambda}{4}A^2B^2
-+\frac{\lambda^2}{8}A^2B^2(A^2+B^2)
-+O(\lambda^3).
+h_\lambda =\frac{A^2+B^2}{4} +\frac{\lambda}{4}A^2B^2 +\frac{\lambda^2}{8}A^2B^2(A^2+B^2) +O(\lambda^3).
 \end{align}$$
 
 The equations of motion become
 
 $$\begin{align}
-\partial_t A
-=2\partial_x\left(\frac{\partial h_\lambda}{\partial A}\right),
-\qquad
-\partial_t B
-=-2\partial_x\left(\frac{\partial h_\lambda}{\partial B}\right).
+\partial_t A =2\partial_x\left(\frac{\partial h_\lambda}{\partial A}\right), \qquad
+\partial_t B =-2\partial_x\left(\frac{\partial h_\lambda}{\partial B}\right).
 \end{align}$$
 
 This is a two-component hydrodynamic system.
@@ -423,45 +354,35 @@ This is a two-component hydrodynamic system.
 Define
 
 $$\begin{align}
-\Delta=A^2-B^2,
-\qquad
-\mathcal D=4-4\lambda(A^2+B^2)+\lambda^2\Delta^2.
+\Delta=A^2-B^2, \qquad \mathcal D=4-4\lambda(A^2+B^2)+\lambda^2\Delta^2.
 \end{align}$$
 
 Then
 
 $$\begin{align}
-R_+=\frac{2+\lambda\Delta}{A},
-\qquad
+R_+=\frac{2+\lambda\Delta}{A}, \qquad
 R_-=\frac{2-\lambda\Delta}{B}
 \end{align}$$
 
 are Riemann invariants. They obey
 
 $$\begin{align}
-\partial_t R_+
-=v_+\partial_xR_+,
-\qquad
-\partial_t R_-
-=v_-\partial_xR_-,
+\partial_t R_+ =v_+\partial_xR_+, \qquad
+\partial_t R_- =v_-\partial_xR_-,
 \end{align}$$
 
 where
 
 $$\begin{align}
-v_+=\frac{2-\lambda\Delta}{\sqrt{\mathcal D}},
-\qquad
+v_+=\frac{2-\lambda\Delta}{\sqrt{\mathcal D}}, \qquad
 v_-=-\frac{2+\lambda\Delta}{\sqrt{\mathcal D}}.
 \end{align}$$
 
 Equivalently, one may use
 
 $$\begin{align}
-U=\frac{2}{R_+}
-=\frac{2A}{2+\lambda(A^2-B^2)},
-\qquad
-V=\frac{2}{R_-}
-=\frac{2B}{2-\lambda(A^2-B^2)}.
+U=\frac{2}{R_+} =\frac{2A}{2+\lambda(A^2-B^2)}, \qquad
+V=\frac{2}{R_-} =\frac{2B}{2-\lambda(A^2-B^2)}.
 \end{align}$$
 
 These reduce to $A,B$ at $\lambda=0$.
@@ -477,16 +398,14 @@ $$\begin{align}
 Equivalently,
 
 $$\begin{align}
-j_A=2q_Ah_{AA}-2q_Bh_{AB},
-\qquad
+j_A=2q_Ah_{AA}-2q_Bh_{AB}, \qquad
 j_B=2q_Ah_{AB}-2q_Bh_{BB},
 \end{align}$$
 
 and the flux integrability condition is
 
 $$\begin{align}
-\partial_B(2q_Ah_{AA}-2q_Bh_{AB})
-=\partial_A(2q_Ah_{AB}-2q_Bh_{BB}).
+\partial_B(2q_Ah_{AA}-2q_Bh_{AB}) =\partial_A(2q_Ah_{AB}-2q_Bh_{BB}).
 \end{align}$$
 
 At $\lambda=0$, this reduces to
@@ -500,33 +419,19 @@ so the undeformed conserved densities are arbitrary sums of left- and right-movi
 For the plus branch with $q_{+,n}^{(0)}=A^n$, the perturbative solution is
 
 $$\begin{align}
-q_{+,n}^{(\lambda)}
-=A^n
-+\lambda\frac{n-1}{2}A^nB^2
-+\lambda^2\left[
-\frac{n-1}{4}A^{n+2}B^2
-+\frac{n(n-1)}{8}A^nB^4
-\right]
-+O(\lambda^3).
+q_{+,n}^{(\lambda)} =A^n +\lambda\frac{n-1}{2}A^nB^2 +\lambda^2\left[ \frac{n-1}{4}A^{n+2}B^2 +\frac{n(n-1)}{8}A^nB^4 \right] +O(\lambda^3).
 \end{align}$$
 
 At the next orders,
 
 $$\begin{align}
-q_{+,n}^{(3)}
-=\frac{n(n-1)(n+1)}{48}A^nB^6
-+\frac{n^2-1}{8}A^{n+2}B^4
-+\frac{n-1}{8}A^{n+4}B^2,
+q_{+,n}^{(3)} =\frac{n(n-1)(n+1)}{48}A^nB^6 +\frac{n^2-1}{8}A^{n+2}B^4 +\frac{n-1}{8}A^{n+4}B^2,
 \end{align}$$
 
 and
 
 $$\begin{align}
-q_{+,n}^{(4)}
-=\frac{(n-1)n(n+1)(n+2)}{384}A^nB^8
-+\frac{(n-1)(n+1)(n+2)}{32}A^{n+2}B^6
-+\frac{3(n-1)(n+2)}{32}A^{n+4}B^4
-+\frac{n-1}{16}A^{n+6}B^2.
+q_{+,n}^{(4)} =\frac{(n-1)n(n+1)(n+2)}{384}A^nB^8 +\frac{(n-1)(n+1)(n+2)}{32}A^{n+2}B^6 +\frac{3(n-1)(n+2)}{32}A^{n+4}B^4 +\frac{n-1}{16}A^{n+6}B^2.
 \end{align}$$
 
 The minus branch is obtained by exchanging $A\leftrightarrow B$.
@@ -534,56 +439,43 @@ The minus branch is obtained by exchanging $A\leftrightarrow B$.
 Set
 
 $$\begin{align}
-x=\frac{\lambda A^2}{2},
-\qquad
+x=\frac{\lambda A^2}{2}, \qquad
 y=\frac{\lambda B^2}{2}.
 \end{align}$$
 
 The coefficient pattern is captured by the closed candidate
 
 $$\begin{align}
-q_{+,n}^{(\lambda)}
-=A^n\left[
-1+(n-1)y\,F_4(1,n;n,2;x,y)
-\right],
+q_{+,n}^{(\lambda)} =A^n\left[ 1+(n-1)y\,F_4(1,n;n,2;x,y) \right],
 \end{align}$$
 
 where $F_4$ is Appell's hypergeometric function,
 
 $$\begin{align}
-F_4(a,b;c,d;x,y)
-=\sum_{k,l\ge0}
-\frac{(a)_{k+l}(b)_{k+l}}{(c)_k(d)_l\,k!\,l!}
+F_4(a,b;c,d;x,y) =\sum_{k,l\ge0} \frac{(a)_{k+l}(b)_{k+l}}{(c)_k(d)_l\,k!\,l!}
 x^ky^l.
 \end{align}$$
 
 Equivalently,
 
 $$\begin{align}
-q_{+,n}^{(\lambda)}
-=A^n\left[
-1+\sum_{l\ge1}\sum_{k\ge0}
-c_{k,l}^{(n)}x^ky^l
-\right],
+q_{+,n}^{(\lambda)} =A^n\left[ 1+\sum_{l\ge1}\sum_{k\ge0}
+c_{k,l}^{(n)}x^ky^l \right],
 \end{align}$$
 
 with
 
 $$\begin{align}
-c_{k,l}^{(n)}
-=(n-1)\frac{(n+k)_{l-1}}{l!}
+c_{k,l}^{(n)} =(n-1)\frac{(n+k)_{l-1}}{l!}
 \binom{k+l-1}{k}.
 \end{align}$$
 
 Substituting the Appell-$F_4$ expression into the flux integrability equation reduces it to the standard Appell-$F_4$ differential equations with parameters
 
 $$\begin{align}
-a=1,
-\qquad
-b=n,
-\qquad
-c=n,
-\qquad
+a=1, \qquad
+b=n, \qquad
+c=n, \qquad
 d=2.
 \end{align}$$
 
@@ -600,41 +492,27 @@ Q=\int dx\,q(A,B)
 be one of the Appell-$F_4$ charges. Its Hamiltonian flow is
 
 $$\begin{align}
-\partial_\tau A=2\partial_xq_A,
-\qquad
+\partial_\tau A=2\partial_xq_A, \qquad
 \partial_\tau B=-2\partial_xq_B.
 \end{align}$$
 
 This flow is diagonal in the same Riemann invariants $R_\pm$ precisely when
 
 $$\begin{align}
-4AB\lambda[-2+\lambda(A^2+B^2)](q_{AA}+q_{BB})
-+2\left[
-4-4\lambda(A^2+B^2)
-+\lambda^2(A^4+6A^2B^2+B^4)
-\right]q_{AB}=0.
+4AB\lambda[-2+\lambda(A^2+B^2)](q_{AA}+q_{BB}) +2\left[ 4-4\lambda(A^2+B^2) +\lambda^2(A^4+6A^2B^2+B^4) \right]q_{AB}=0.
 \end{align}$$
 
 The Appell-$F_4$ densities satisfy this equation. Therefore every charge in this family generates a diagonal flow
 
 $$\begin{align}
-\partial_\tau R_+
-=w_+(R_+,R_-)\partial_xR_+,
-\qquad
-\partial_\tau R_-
-=w_-(R_+,R_-)\partial_xR_-.
+\partial_\tau R_+ =w_+(R_+,R_-)\partial_xR_+, \qquad
+\partial_\tau R_- =w_-(R_+,R_-)\partial_xR_-.
 \end{align}$$
 
 For a two-component diagonal hydrodynamic system, the Tsarev commuting-flow condition reduces to
 
 $$\begin{align}
-\frac{\partial_{R_-}w_+}{w_- - w_+}
-=
-\frac{\partial_{R_-}v_+}{v_- - v_+},
-\qquad
-\frac{\partial_{R_+}w_-}{w_+ - w_-}
-=
-\frac{\partial_{R_+}v_-}{v_+ - v_-}.
+\frac{\partial_{R_-}w_+}{w_- - w_+} = \frac{\partial_{R_-}v_+}{v_- - v_+}, \qquad \frac{\partial_{R_+}w_-}{w_+ - w_-} = \frac{\partial_{R_+}v_-}{v_+ - v_-}.
 \end{align}$$
 
 These equations are equivalent to the conservation-law equation for $q$. Hence the Appell-$F_4$ charges generate mutually commuting diagonal flows.
@@ -642,8 +520,7 @@ These equations are equivalent to the conservation-law equation for $q$. Hence t
 Equivalently,
 
 $$\begin{align}
-\{Q_{\sigma,m}^{(\lambda)},Q_{\rho,n}^{(\lambda)}\}
-=\int dx\,\partial_xP_{\sigma\rho,mn}^{(\lambda)}.
+\{Q_{\sigma,m}^{(\lambda)},Q_{\rho,n}^{(\lambda)}\} =\int dx\,\partial_xP_{\sigma\rho,mn}^{(\lambda)}.
 \end{align}$$
 
 Under periodic boundary conditions or boundary conditions that kill the flux term,
@@ -659,15 +536,13 @@ The explicit bracket checks through $O(\lambda^3)$ are finite-order tests of thi
 The exact canonical map uses the local branch
 
 $$\begin{align}
-\dot\phi
-=4p\sqrt{\frac{1-\frac{\lambda}{2}\phi'^2}{1-8\lambda p^2}},
+\dot\phi =4p\sqrt{\frac{1-\frac{\lambda}{2}\phi'^2}{1-8\lambda p^2}},
 \end{align}$$
 
 so the real Darboux patch requires
 
 $$\begin{align}
-1-\frac{\lambda}{2}\phi'^2>0,
-\qquad
+1-\frac{\lambda}{2}\phi'^2>0, \qquad
 1-8\lambda p^2>0,
 \end{align}$$
 
