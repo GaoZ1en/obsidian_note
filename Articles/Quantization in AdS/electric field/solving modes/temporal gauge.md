@@ -220,31 +220,20 @@ $$\begin{align}
 For $m\neq 0$, the first equation gives
 
 $$\begin{align}
-f^r
-& =
--\frac{ir^2(1+r^2)}{m}
-\left(\partial_r f^\phi+\frac{2}{r}f^\phi\right).
+f^r & = -\frac{ir^2(1+r^2)}{m} \left(\partial_r f^\phi+\frac{2}{r}f^\phi\right).
 \end{align}$$
 
 Substituting this expression into the second equation gives an identity:
 
 $$\begin{align}
-&-\frac{im}{r^{2}}\partial _{r}f^{r}
-+\frac{im}{r^{3}}f^{r}
-+(1+r^{2})\partial _{r}^{2}f^{\phi}
-+\frac{3+5r^{2}}{r}\partial _{r}f^{\phi}
-+4f^{\phi}
-=0 .
+&-\frac{im}{r^{2}}\partial _{r}f^{r} +\frac{im}{r^{3}}f^{r} +(1+r^{2})\partial _{r}^{2}f^{\phi} +\frac{3+5r^{2}}{r}\partial _{r}f^{\phi} +4f^{\phi} =0 .
 \end{align}$$
 
 Therefore $f^\phi$ is arbitrary, and the general $m\neq0$ solution is
 
 $$\begin{align}
 f^\phi & =g_m(r), \\
-f^r
-& =
--\frac{ir^2(1+r^2)}{m}
-\left(g_m'(r)+\frac{2}{r}g_m(r)\right).
+f^r & = -\frac{ir^2(1+r^2)}{m} \left(g_m'(r)+\frac{2}{r}g_m(r)\right).
 \end{align}$$
 
 Equivalently, defining
@@ -256,15 +245,13 @@ $$\begin{align}
 we have
 
 $$\begin{align}
-f^r & =(1+r^2)\lambda_m'(r), &
-f^\phi & =\frac{im}{r^2}\lambda_m(r).
+f^r & =(1+r^2)\lambda_m'(r), & f^\phi & =\frac{im}{r^2}\lambda_m(r).
 \end{align}$$
 
 Thus every $m\neq0$ zero-energy solution of the static equations is locally a residual pure gauge mode,
 
 $$\begin{align}
-\Lambda(r,\phi) & =e^{im\phi}\lambda_m(r), &
-A_\mu & =\partial_\mu \Lambda .
+\Lambda(r,\phi) & =e^{im\phi}\lambda_m(r), & A_\mu & =\partial_\mu \Lambda .
 \end{align}$$
 
 ---

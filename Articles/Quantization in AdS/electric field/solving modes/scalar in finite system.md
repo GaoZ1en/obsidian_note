@@ -19,8 +19,7 @@ S & =-\frac{1}{2}\int \mathrm{d}^{3}x\sqrt{ -g }(\nabla _{\mu}\phi \nabla ^{\mu}
 we assume
 
 $$\begin{align}
-\mu ^{2} & >-1, &
-\Delta & =1+\sqrt{ 1+\mu ^{2} } >1,
+\mu ^{2} & >-1, & \Delta & =1+\sqrt{ 1+\mu ^{2} } >1,
 \end{align}$$
 
 so we stay away from the BF-saturated logarithmic case and keep only standard quantization in the infinite-volume limit. the finite system is the truncated region
@@ -38,9 +37,7 @@ $$\begin{align}
 the comparison target at $\displaystyle{r_{0}\to \infty}$ is the standard-quantization spectrum
 
 $$\begin{align}
-\omega _{n,m}^{(\infty)} & =\Delta +2n+|m|, &
-n & =0,1,2,\ldots, &
-m & \in \mathbb{Z},
+\omega _{n,m}^{(\infty)} & =\Delta +2n+|m|, & n & =0,1,2,\ldots, & m & \in \mathbb{Z},
 \end{align}$$
 
 with normal modes
@@ -57,8 +54,7 @@ for finite $\displaystyle{r_{0}}$, the problem is instead a Dirichlet Sturm-Liou
 take the separated ansatz
 
 $$\begin{align}
-\phi (t,r,\phi ) & =e^{-i\omega t}e^{im\phi }R_{\omega m}(r), &
-m & \in \mathbb{Z}.
+\phi (t,r,\phi ) & =e^{-i\omega t}e^{im\phi }R_{\omega m}(r), & m & \in \mathbb{Z}.
 \end{align}$$
 
 the Klein-Gordon equation $\displaystyle{(\nabla ^{2}-\mu ^{2})\phi =0}$ reduces to
@@ -110,8 +106,7 @@ B_{m}(\omega ) & =0.
 since $\displaystyle{\Gamma(x)}$ has poles at the non-positive integers, this happens precisely when
 
 $$\begin{align}
-\frac{|m|+\Delta -\omega}{2} & =-n, &
-n & =0,1,2,\ldots,
+\frac{|m|+\Delta -\omega}{2} & =-n, & n & =0,1,2,\ldots,
 \end{align}$$
 
 namely

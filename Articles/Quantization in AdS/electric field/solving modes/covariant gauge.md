@@ -24,15 +24,13 @@ $$\begin{align}
 The covariant gauge condition should be understood as a choice of representative in the gauge-orbit decomposition, not as a prescription that starts from an arbitrary written representative and then performs a gauge transformation while keeping the same naive falloff at every intermediate step. Under
 
 $$\begin{align}
-A^{\mu}\mapsto A^{\prime\mu}
-=A^{\mu}+\nabla^{\mu}\Lambda ,
+A^{\mu}\mapsto A^{\prime\mu} =A^{\mu}+\nabla^{\mu}\Lambda ,
 \end{align}$$
 
 the divergence shifts as
 
 $$\begin{align}
-\nabla_{\mu}A^{\prime\mu}
-&=\nabla_{\mu}A^{\mu}+\nabla_{\mu}\nabla^{\mu}\Lambda \\
+\nabla_{\mu}A^{\prime\mu} &=\nabla_{\mu}A^{\mu}+\nabla_{\mu}\nabla^{\mu}\Lambda \\
 &=\nabla_{\mu}A^{\mu}+\Box\Lambda .
 \end{align}$$
 
@@ -53,8 +51,7 @@ whose gradient does not preserve the falloff imposed on $A^\mu$. This does not m
 The gauge-fixed off-shell space is instead organized as
 
 $$\begin{align}
-A^\mu=A_{\mathrm{cov}}^\mu+\nabla^\mu\Lambda,
-\qquad
+A^\mu=A_{\mathrm{cov}}^\mu+\nabla^\mu\Lambda, \qquad
 \nabla_\mu A_{\mathrm{cov}}^\mu=0,
 \end{align}$$
 
@@ -247,8 +244,7 @@ f_{m=0,n}^{\phi} & =0
 and the asymptotic behavior of the corresponding gauge parameter is
 
 $$\begin{align}
-\Lambda _{m=0,n} & \sim C_{0,n}e^{-i(2n+2)t}
-\frac{1}{1+r^{2}}
+\Lambda _{m=0,n} & \sim C_{0,n}e^{-i(2n+2)t} \frac{1}{1+r^{2}}
 {}_{2}F_{1}\left(-n,n+2;2;\frac{1}{1+r^{2}}\right) \\
  & =\mathcal{O}(r^{-2})
 \end{align}$$
@@ -297,26 +293,20 @@ p&=|m|, & N&\geq 1, & \omega&=p+2N .
 For the $\displaystyle{m\geq 1}$ pair above, $\displaystyle{N=n+1}$. Up to an overall normalization,
 
 $$\begin{align}
-\Lambda _{m,N}
-&=C_{m,N}e^{-i(p+2N)t+im\phi}
-\frac{r^{p}}{(1+r^{2})^{p/2+1}}
+\Lambda _{m,N} &=C_{m,N}e^{-i(p+2N)t+im\phi} \frac{r^{p}}{(1+r^{2})^{p/2+1}}
 {}_{2}F_{1}\left(1-N,N+p+1;2;\frac{1}{1+r^{2}}\right),
 \end{align}$$
 
 and
 
 $$\begin{align}
-A^{\mu}_{\text{null}}&=\nabla ^{\mu}\Lambda _{m,N}, &
-\Box \Lambda _{m,N}&=0 .
+A^{\mu}_{\text{null}}&=\nabla ^{\mu}\Lambda _{m,N}, & \Box \Lambda _{m,N}&=0 .
 \end{align}$$
 
 Its boundary behavior is
 
 $$\begin{align}
-\Lambda _{m,N}
-&=C_{m,N}e^{-i(p+2N)t+im\phi}
-\left(r^{-2}+\mathcal{O}(r^{-4})\right),
-& r&\to\infty .
+\Lambda _{m,N} &=C_{m,N}e^{-i(p+2N)t+im\phi} \left(r^{-2}+\mathcal{O}(r^{-4})\right), & r&\to\infty .
 \end{align}$$
 
 Thus these $\displaystyle{N\geq1}$ null modes are proper gauge transformations. They are not large gauge transformations, since the gauge parameter vanishes at the boundary.
@@ -337,10 +327,7 @@ the eigenvalues of this matrix are $\displaystyle{0,2}$, thus there is one null 
 This is described by the same gauge parameter $\displaystyle{\Lambda _{m,N}}$ above, now with $\displaystyle{m\leq -1}$, $\displaystyle{p=-m}$, and $\displaystyle{N=n+1}$. Again
 
 $$\begin{align}
-\Lambda _{m,N}
-&=C_{m,N}e^{-i(p+2N)t+im\phi}
-\left(r^{-2}+\mathcal{O}(r^{-4})\right),
-& r&\to\infty ,
+\Lambda _{m,N} &=C_{m,N}e^{-i(p+2N)t+im\phi} \left(r^{-2}+\mathcal{O}(r^{-4})\right), & r&\to\infty ,
 \end{align}$$
 
 so this null direction is also a proper gauge transformation rather than a large gauge transformation.

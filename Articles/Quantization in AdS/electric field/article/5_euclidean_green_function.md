@@ -34,10 +34,7 @@ $$\begin{align}
 Acting with the same first-order differential operator as in Lorentzian signature gives
 
 $$\begin{align}
-A_{nm,E}^{\mu}&=D^{\mu}\Psi_{nm}^{E}, &
-D^{\tau}&=0, &
-D^{r}&=\frac{1+r^{2}}{r}\partial_{\phi}, &
-D^{\phi}&=-\frac{1+r^{2}}{r}\partial_{r}.
+A_{nm,E}^{\mu}&=D^{\mu}\Psi_{nm}^{E}, & D^{\tau}&=0, & D^{r}&=\frac{1+r^{2}}{r}\partial_{\phi}, & D^{\phi}&=-\frac{1+r^{2}}{r}\partial_{r}.
 \end{align}$$
 
 Because $D^{\tau}=0$, the continued basis remains in temporal gauge. Therefore only the spatial components contribute to the correlator.
@@ -60,8 +57,7 @@ $$\begin{align}
 where the scalar kernel is
 
 $$\begin{align}
-H(T,r_{1},r_{2},\varphi)&=\sum_{n=0}^{\infty}\sum_{m\in\mathbb{Z}}\Psi_{nm}^{E}(T,r_{1},\phi_{1})\Psi_{nm}^{E*}(0,r_{2},\phi_{2}), &
-T&\geq0.
+H(T,r_{1},r_{2},\varphi)&=\sum_{n=0}^{\infty}\sum_{m\in\mathbb{Z}}\Psi_{nm}^{E}(T,r_{1},\phi_{1})\Psi_{nm}^{E*}(0,r_{2},\phi_{2}), & T&\geq0.
 \end{align}$$
 
 The full time-ordered correlator is therefore
@@ -102,8 +98,7 @@ H(T,r_{1},r_{2},\varphi)&=\sum_{n=0}^{\infty}\sum_{m\in\mathbb{Z}}\Psi_{nm}^{E}(
 Summing over the scalar basis gives
 
 $$\begin{align}
-H(T,r_{1},r_{2},\varphi)&=\int_{0}^{\infty}\mathrm{d}s\,s\,g_{2}(T+s,r_{1},r_{2},\varphi), &
-T&\geq0.
+H(T,r_{1},r_{2},\varphi)&=\int_{0}^{\infty}\mathrm{d}s\,s\,g_{2}(T+s,r_{1},r_{2},\varphi), & T&\geq0.
 \end{align}$$
 
 The Euclidean Maxwell two-point function is then

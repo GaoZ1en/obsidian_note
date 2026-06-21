@@ -63,8 +63,7 @@ A_{t}(r) & =-\frac{q}{2\pi}\log r+c,
 and hence
 
 $$\begin{align}
-F & =\mathrm{d}A=\frac{q}{2\pi r}\mathrm{d}t\wedge \mathrm{d}r, &
-\star F & =\frac{q}{2\pi}\mathrm{d}\phi.
+F & =\mathrm{d}A=\frac{q}{2\pi r}\mathrm{d}t\wedge \mathrm{d}r, & \star F & =\frac{q}{2\pi}\mathrm{d}\phi.
 \end{align}$$
 
 This indeed reproduces the flux condition
@@ -114,8 +113,7 @@ m_{\text{ren}}(\mu) & =m_{\text{bare}}(\epsilon)+\frac{q^{2}}{4\pi}\log \frac{\m
 However, the $R\to \infty$ divergence is not a local defect renormalization issue. It reflects the fact that an isolated nonzero electric charge in three-dimensional Maxwell theory produces a long-range Coulomb field with
 
 $$\begin{align}
-A_{t} & \sim -\frac{q}{2\pi}\log r, &
-F_{tr} & \sim \frac{q}{2\pi r},
+A_{t} & \sim -\frac{q}{2\pi}\log r, & F_{tr} & \sim \frac{q}{2\pi r},
 \end{align}$$
 
 which violates the asymptotic phase space used in [[Articles/Quantization in AdS/electric field/article/1_model|1_model]], where $A_{t}=O(r^{0})$ and $F_{tr}=o(r^{-1})$.

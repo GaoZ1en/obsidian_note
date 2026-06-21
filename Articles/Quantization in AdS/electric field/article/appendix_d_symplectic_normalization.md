@@ -19,9 +19,7 @@ $$\begin{align}
 On a constant-$t$ slice of global AdS$_3$,
 
 $$\begin{align}
-\mathrm{d}s_{\Sigma}^{2}&=\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi^{2}, &
-\sqrt{\sigma}&=\frac{r}{\sqrt{1+r^{2}}}, &
-\tau_{\mu}&=-\sqrt{1+r^{2}}\,\delta_{\mu}^{t}.
+\mathrm{d}s_{\Sigma}^{2}&=\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi^{2}, & \sqrt{\sigma}&=\frac{r}{\sqrt{1+r^{2}}}, & \tau_{\mu}&=-\sqrt{1+r^{2}}\,\delta_{\mu}^{t}.
 \end{align}$$
 
 Therefore the pairing becomes
@@ -33,15 +31,13 @@ $$\begin{align}
 For the temporal-gauge representative $A^{\mu}=D^{\mu}\Psi$, the lowered components are
 
 $$\begin{align}
-A_{r}&=\frac{1}{r}\partial_{\phi}\Psi, &
-A_{\phi}&=-r(1+r^{2})\partial_{r}\Psi,
+A_{r}&=\frac{1}{r}\partial_{\phi}\Psi, & A_{\phi}&=-r(1+r^{2})\partial_{r}\Psi,
 \end{align}$$
 
 while the field-strength components are
 
 $$\begin{align}
-F^{tr}&=-\frac{1}{r}\partial_{t}\partial_{\phi}\Psi, &
-F^{t\phi}&=\frac{1}{r}\partial_{t}\partial_{r}\Psi.
+F^{tr}&=-\frac{1}{r}\partial_{t}\partial_{\phi}\Psi, & F^{t\phi}&=\frac{1}{r}\partial_{t}\partial_{r}\Psi.
 \end{align}$$
 
 We now write the separated mode as

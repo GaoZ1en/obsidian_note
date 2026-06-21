@@ -34,8 +34,7 @@ $$\begin{align}
 The Maxwell bulk term then behaves as
 
 $$\begin{align}
-\sqrt{-g}\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}\right)
-&=-\frac{r}{2}\left(F_{tr}F^{tr}+F_{t\phi}F^{t\phi}+F_{r\phi}F^{r\phi}\right)=o(r^{-1})
+\sqrt{-g}\left(-\frac{1}{4}F_{\mu \nu}F^{\mu \nu}\right) &=-\frac{r}{2}\left(F_{tr}F^{tr}+F_{t\phi}F^{t\phi}+F_{r\phi}F^{r\phi}\right)=o(r^{-1})
 \end{align}$$
 
 Hence the contribution from the near-boundary region to the bulk action integral over $M$ is finite.
@@ -82,10 +81,8 @@ With these estimates, the integrands appearing in the bulk and boundary terms of
 
 $$\begin{align}
 \sqrt{ -g }\nabla _{\nu}F^{\nu \mu}\delta A_{\mu} & =o(r^{-1}) \\
-\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}\delta A_{\nu}
-&=-r\left(F^{tr}\delta A_{r}+F^{t\phi}\delta A_{\phi}\right)=o(r^{-1}) \\
-(-1)\sqrt{ -\gamma }n_{\mu}F^{\mu \nu}\delta A_{\nu}
-&=r\left(F^{rt}\delta A_{t}+F^{r\phi}\delta A_{\phi}\right)=o(r^{0})
+\sqrt{ \sigma }\tau _{\mu}F^{\mu \nu}\delta A_{\nu} &=-r\left(F^{tr}\delta A_{r}+F^{t\phi}\delta A_{\phi}\right)=o(r^{-1}) \\
+(-1)\sqrt{ -\gamma }n_{\mu}F^{\mu \nu}\delta A_{\nu} &=r\left(F^{rt}\delta A_{t}+F^{r\phi}\delta A_{\phi}\right)=o(r^{0})
 \end{align}$$
 
 Consequently, the regulated boundary contribution at $r=r_{\infty}$ vanishes in the limit, and we recover
@@ -132,8 +129,7 @@ which again reproduces the expression used in the main text.
 We now turn to the total-derivative term in the Noether charge $H_{\xi}|_{\widetilde{\mathcal{P}}}$. Its regulated expression is
 
 $$\begin{align}
-\lim_{ r_{\infty} \to \infty }\int _{\Sigma _{r_{\infty}}}\mathrm{d}^{2}x\sqrt{ \sigma }D_{\alpha}\left(\sigma ^{\alpha}_{~\nu}\tau _{\mu}F^{\mu \nu}A_{\rho}\xi ^{\rho}\right)
-&=\lim_{ r_{\infty} \to \infty }\int _{H_{r_{\infty}}}\mathrm{d}x\sqrt{ h }\hat{n}_{\alpha}\sigma ^{\alpha}_{~\nu}\tau _{\mu}F^{\mu \nu}A_{\rho}\xi ^{\rho}
+\lim_{ r_{\infty} \to \infty }\int _{\Sigma _{r_{\infty}}}\mathrm{d}^{2}x\sqrt{ \sigma }D_{\alpha}\left(\sigma ^{\alpha}_{~\nu}\tau _{\mu}F^{\mu \nu}A_{\rho}\xi ^{\rho}\right) &=\lim_{ r_{\infty} \to \infty }\int _{H_{r_{\infty}}}\mathrm{d}x\sqrt{ h }\hat{n}_{\alpha}\sigma ^{\alpha}_{~\nu}\tau _{\mu}F^{\mu \nu}A_{\rho}\xi ^{\rho}
 \end{align}$$
 
 Here $\Sigma _{r_{\infty}}$ denotes the portion of $\Sigma$ inside the cutoff surface, and $H_{r_{\infty}}$ is the intersection of $\Sigma$ with $r=r_{\infty}$. The induced metric on $H_{r_{\infty}}$ is
@@ -151,8 +147,7 @@ $$\begin{align}
 Now $A_{\rho}\xi ^{\rho}=O(r^{0})$, so the integrands of the boundary contributions to $H_{\xi}|_{\widetilde{\mathcal{P}}}$ scale as
 
 $$\begin{align}
-\sqrt{ h }\hat{n}_{\alpha}\sigma ^{\alpha}_{~\nu}\tau _{\mu}F^{\mu \nu}A_{\rho}\xi ^{\rho}
-&=rF^{rt}A_{\rho}\xi ^{\rho}=o(r^{0})
+\sqrt{ h }\hat{n}_{\alpha}\sigma ^{\alpha}_{~\nu}\tau _{\mu}F^{\mu \nu}A_{\rho}\xi ^{\rho} &=rF^{rt}A_{\rho}\xi ^{\rho}=o(r^{0})
 \end{align}$$
 
 Hence no extra contribution survives from spatial infinity, and the Noether charge reduces to the expression quoted in the main text.
@@ -160,17 +155,14 @@ Hence no extra contribution survives from spatial infinity, and the Noether char
 Finally, we analyze the asymptotic behavior of $X_{\xi}\cdot \omega |_{\widetilde{\mathcal{P}}}$. We obtain
 
 $$\begin{align}
-X_{\xi}\cdot \omega |_{\widetilde{\mathcal{P}}}
-&=\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left((\mathcal{L}_{\xi}F^{\mu \nu})\delta A_{\nu}-(\mathcal{L}_{\xi}A_{\nu})\delta F^{\mu \nu}\right)\Big|_{\widetilde{\mathcal{P}}}
+X_{\xi}\cdot \omega |_{\widetilde{\mathcal{P}}} &=\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left((\mathcal{L}_{\xi}F^{\mu \nu})\delta A_{\nu}-(\mathcal{L}_{\xi}A_{\nu})\delta F^{\mu \nu}\right)\Big|_{\widetilde{\mathcal{P}}}
 \end{align}$$
 
 The Lie derivative preserves the asymptotic class, so $\mathcal{L}_{\xi}A$ has the same falloffs as $A$, and $\mathcal{L}_{\xi}F$ has the same falloffs as $F$. The integrands of the corresponding large-$r$ terms therefore behave as
 
 $$\begin{align}
-\sqrt{ \sigma }\tau _{\mu}(\mathcal{L}_{\xi}F^{\mu \nu})\delta A_{\nu}
-&=-r\left((\mathcal{L}_{\xi}F^{tr})\delta A_{r}+(\mathcal{L}_{\xi}F^{t\phi})\delta A_{\phi}\right)=o(r^{-1}) \\
--\sqrt{ \sigma }\tau _{\mu}(\mathcal{L}_{\xi}A_{\nu})\delta F^{\mu \nu}
-&=r\left((\mathcal{L}_{\xi}A_{r})\delta F^{tr}+(\mathcal{L}_{\xi}A_{\phi})\delta F^{t\phi}\right)=o(r^{-1})
+\sqrt{ \sigma }\tau _{\mu}(\mathcal{L}_{\xi}F^{\mu \nu})\delta A_{\nu} &=-r\left((\mathcal{L}_{\xi}F^{tr})\delta A_{r}+(\mathcal{L}_{\xi}F^{t\phi})\delta A_{\phi}\right)=o(r^{-1}) \\
+-\sqrt{ \sigma }\tau _{\mu}(\mathcal{L}_{\xi}A_{\nu})\delta F^{\mu \nu} &=r\left((\mathcal{L}_{\xi}A_{r})\delta F^{tr}+(\mathcal{L}_{\xi}A_{\phi})\delta F^{t\phi}\right)=o(r^{-1})
 \end{align}$$
 
 Hence $X_{\xi}\cdot \omega |_{\widetilde{\mathcal{P}}}$ is finite and receives no additional obstruction from spatial infinity. The same falloff counting also shows that the symplectic form $\omega |_{\widetilde{\mathcal{P}}}$ itself is finite. We therefore conclude that the theory admits a well-defined variational principle, that the Noether analysis used in Section 2 is valid, and that the relevant boundary contributions at spatial infinity vanish.

@@ -15,22 +15,19 @@ A^{\mu} & \sim e^{-i\omega t+im\phi}.
 With
 
 $$\begin{align}
-\xi _{0} & =\frac{1}{2}(\partial _{t}-\partial _{\phi}), &
-\bar{\xi}_{0} & =\frac{1}{2}(\partial _{t}+\partial _{\phi}),
+\xi _{0} & =\frac{1}{2}(\partial _{t}-\partial _{\phi}), & \bar{\xi}_{0} & =\frac{1}{2}(\partial _{t}+\partial _{\phi}),
 \end{align}$$
 
 the conformal weights are
 
 $$\begin{align}
-h & =\frac{\omega+m}{2}, &
-\bar{h} & =\frac{\omega-m}{2}.
+h & =\frac{\omega+m}{2}, & \bar{h} & =\frac{\omega-m}{2}.
 \end{align}$$
 
 Thus
 
 $$\begin{align}
-E & =\omega=h+\bar{h}, &
-J & =m=h-\bar{h}.
+E & =\omega=h+\bar{h}, & J & =m=h-\bar{h}.
 \end{align}$$
 
 In the following comparison $n=0,1,2,\ldots$ denotes the radial quantum number of the propagating normalizable modes.
@@ -40,8 +37,7 @@ In the following comparison $n=0,1,2,\ldots$ denotes the radial quantum number o
 In temporal gauge one sets $A^{t}=0$. After imposing the normalizability condition, the propagating modes have
 
 $$\begin{align}
-\omega _{n,m}^{\mathrm{temp}} & =2n+2+|m|, &
-J & =m.
+\omega _{n,m}^{\mathrm{temp}} & =2n+2+|m|, & J & =m.
 \end{align}$$
 
 For $m=0$, the normalizable mode has only an angular component,
@@ -103,9 +99,7 @@ p&=|m|, & N&\geq 1, & \omega&=p+2N ,
 then a representative gauge parameter is
 
 $$\begin{align}
-\Lambda _{m,N}
-&\propto e^{-i(p+2N)t+im\phi}
-\frac{r^{p}}{(1+r^{2})^{p/2+1}}
+\Lambda _{m,N} &\propto e^{-i(p+2N)t+im\phi} \frac{r^{p}}{(1+r^{2})^{p/2+1}}
 {}_{2}F_{1}\left(1-N,N+p+1;2;\frac{1}{1+r^{2}}\right),
 \end{align}$$
 
@@ -118,8 +112,7 @@ $$\begin{align}
 Thus these null directions vanish at the boundary and should be quotiented as ordinary gauge redundancy. After quotienting by this residual gauge redundancy and keeping the separate large-gauge edge representatives out of the propagating spectrum, the Lorenz-gauge spectrum is
 
 $$\begin{align}
-\omega _{n,m}^{\mathrm{Lorenz}} & =2n+2+|m|, &
-J & =m.
+\omega _{n,m}^{\mathrm{Lorenz}} & =2n+2+|m|, & J & =m.
 \end{align}$$
 
 The physical representatives may be chosen as follows:
@@ -145,12 +138,8 @@ representations of $\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})$.
 The propagating normalizable modes are the descendants of the $(1,1)$ primary:
 
 $$\begin{align}
-\psi ^{\mu}_{(k,\bar{k}),(1,1)}
-& =
-\mathcal{L}_{\xi _{-1}}^{k}
-\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{k}}
-\psi _{(1,1)}^{\mu},
-\qquad k,\bar{k}=0,1,2,\ldots .
+\psi ^{\mu}_{(k,\bar{k}),(1,1)} & = \mathcal{L}_{\xi _{-1}}^{k} \mathcal{L}_{\bar{\xi}_{-1}}^{\bar{k}}
+\psi _{(1,1)}^{\mu}, \qquad k,\bar{k}=0,1,2,\ldots .
 \end{align}$$
 
 Their conformal weights are
@@ -162,29 +151,25 @@ $$\begin{align}
 so
 
 $$\begin{align}
-E & =2+k+\bar{k}, &
-J & =k-\bar{k}.
+E & =2+k+\bar{k}, & J & =k-\bar{k}.
 \end{align}$$
 
 This agrees with temporal and Lorenz gauge after the identification
 
 $$\begin{align}
-m & =k-\bar{k}, &
-n & =\min(k,\bar{k}).
+m & =k-\bar{k}, & n & =\min(k,\bar{k}).
 \end{align}$$
 
 Equivalently,
 
 $$\begin{align}
-k & =n+\max(m,0), &
-\bar{k} & =n+\max(-m,0).
+k & =n+\max(m,0), & \bar{k} & =n+\max(-m,0).
 \end{align}$$
 
 Substituting this into the highest-weight result gives
 
 $$\begin{align}
-E & =2+2n+|m|, &
-J & =m.
+E & =2+2n+|m|, & J & =m.
 \end{align}$$
 
 # Direct dictionary
@@ -209,100 +194,68 @@ J_{n,m} & =m.
 The agreement above can be made mode-by-mode at the level of the vector potential. Choose the phase convention for the covariant-gauge physical representative as
 
 $$\begin{align}
-A_{\mathrm{cov},n,m}^{\mu}
-&=
-\begin{cases}
--h_{-,m,n}^{\mu}, & m\geq 1, \\
+A_{\mathrm{cov},n,m}^{\mu} &= \begin{cases} -h_{-,m,n}^{\mu}, & m\geq 1, \\
 g_{0,n}^{\mu}, & m=0, \\
-h_{+,m,n}^{\mu}, & m\leq -1,
-\end{cases}
+h_{+,m,n}^{\mu}, & m\leq -1, \end{cases}
 \end{align}$$
 
 so that its field strength agrees with the temporal-gauge representative,
 
 $$\begin{align}
-F[A_{\mathrm{cov},n,m}]_{\mu\nu}
-&=
-F[A_{\mathrm{temp},n,m}]_{\mu\nu}.
+F[A_{\mathrm{cov},n,m}]_{\mu\nu} &= F[A_{\mathrm{temp},n,m}]_{\mu\nu}.
 \end{align}$$
 
 Then
 
 $$\begin{align}
-A_{\mathrm{cov},n,m}^{\mu}
-&=
-A_{\mathrm{temp},n,m}^{\mu}
-+\nabla ^{\mu}\Lambda_{n,m}.
+A_{\mathrm{cov},n,m}^{\mu} &= A_{\mathrm{temp},n,m}^{\mu} +\nabla ^{\mu}\Lambda_{n,m}.
 \end{align}$$
 
 For $m=0$, the two representatives are already identical in this normalization:
 
 $$\begin{align}
-\Lambda_{n,0}&=0, &
-g_{0,n}^{\mu}&=A_{\mathrm{temp},n,0}^{\mu}.
+\Lambda_{n,0}&=0, & g_{0,n}^{\mu}&=A_{\mathrm{temp},n,0}^{\mu}.
 \end{align}$$
 
 For $m\neq0$, set
 
 $$\begin{align}
-q&=|m|, &
-\omega_{n,m}&=2n+2+q, &
-y&=\frac{r^{2}-1}{r^{2}+1},
+q&=|m|, & \omega_{n,m}&=2n+2+q, & y&=\frac{r^{2}-1}{r^{2}+1},
 \end{align}$$
 
 and define
 
 $$\begin{align}
-N_{n,q}
-&=
-\sqrt{\frac{1}{8\pi(n+1)(n+q+1)}} ,
+N_{n,q} &= \sqrt{\frac{1}{8\pi(n+1)(n+q+1)}} ,
 \end{align}$$
 
 $$\begin{align}
-B_{n,q}(r)
-&=
-\left[-q r^{2}-2(q+1)\right]
+B_{n,q}(r) &= \left[-q r^{2}-2(q+1)\right]
 r^{q}(1+r^{2})^{-(q+2)/2}
 P_{n}^{(0,q+1)}(y) \\
-&\quad
--4r^{q+2}(1+r^{2})^{-(q+4)/2}
-\frac{\mathrm{d}}{\mathrm{d}y}P_{n}^{(0,q+1)}(y).
+&\quad -4r^{q+2}(1+r^{2})^{-(q+4)/2} \frac{\mathrm{d}}{\mathrm{d}y}P_{n}^{(0,q+1)}(y).
 \end{align}$$
 
 The gauge parameter can be chosen as
 
 $$\begin{align}
-\Lambda_{n,m}
-&=
-i\,\mathrm{sgn}(m)\,
-\frac{N_{n,|m|}}{\omega_{n,m}}\,
-e^{-i\omega_{n,m}t+im\phi}
+\Lambda_{n,m} &= i\,\mathrm{sgn}(m)\, \frac{N_{n,|m|}}{\omega_{n,m}}\, e^{-i\omega_{n,m}t+im\phi}
 B_{n,|m|}(r).
 \end{align}$$
 
 Equivalently, since $A_{\mathrm{temp}}^{t}=0$, this parameter is read directly from the time component as
 
 $$\begin{align}
-\Lambda_{n,m}
-&=
-\frac{1+r^{2}}{i\omega_{n,m}}
+\Lambda_{n,m} &= \frac{1+r^{2}}{i\omega_{n,m}}
 A_{\mathrm{cov},n,m}^{t}.
 \end{align}$$
 
 A direct component check gives
 
 $$\begin{align}
-\nabla ^{t}\Lambda_{n,m}
-&=
-A_{\mathrm{cov},n,m}^{t}, \\
-\nabla ^{r}\Lambda_{n,m}
-&=
-A_{\mathrm{cov},n,m}^{r}
--A_{\mathrm{temp},n,m}^{r}, \\
-\nabla ^{\phi}\Lambda_{n,m}
-&=
-A_{\mathrm{cov},n,m}^{\phi}
--A_{\mathrm{temp},n,m}^{\phi}.
+\nabla ^{t}\Lambda_{n,m} &= A_{\mathrm{cov},n,m}^{t}, \\
+\nabla ^{r}\Lambda_{n,m} &= A_{\mathrm{cov},n,m}^{r} -A_{\mathrm{temp},n,m}^{r}, \\
+\nabla ^{\phi}\Lambda_{n,m} &= A_{\mathrm{cov},n,m}^{\phi} -A_{\mathrm{temp},n,m}^{\phi}.
 \end{align}$$
 
 Thus the covariant-gauge and temporal-gauge representatives differ only by the proper gauge transformation generated by $\Lambda_{n,m}$. The expression contains only Jacobi polynomials and rational powers of $r$ and $1+r^{2}$; no $\log r$ term is required.
@@ -330,23 +283,14 @@ h_{-,m\leqslant -1,n=0}^{\mu}.
 They have vanishing field strength and are pure gauge in the bulk. Their gauge parameters are
 
 $$\begin{align}
-\Lambda _{+,m}
-&=\frac{1}{im}e^{-im(t-\phi)}
-\left(\frac{r}{\sqrt{1+r^{2}}}\right)^{m},
-&m&\geq1,\\
-\Lambda _{-,m}
-&=\frac{1}{i(-m)}e^{im(t+\phi)}
-\left(\frac{r}{\sqrt{1+r^{2}}}\right)^{-m},
-&m&\leq-1 .
+\Lambda _{+,m} &=\frac{1}{im}e^{-im(t-\phi)} \left(\frac{r}{\sqrt{1+r^{2}}}\right)^{m}, &m&\geq1,\\
+\Lambda _{-,m} &=\frac{1}{i(-m)}e^{im(t+\phi)} \left(\frac{r}{\sqrt{1+r^{2}}}\right)^{-m}, &m&\leq-1 .
 \end{align}$$
 
 At the boundary,
 
 $$\begin{align}
-\Lambda _{+,m}
-&\to \frac{1}{im}e^{-im(t-\phi)}, &
-\Lambda _{-,m}
-&\to \frac{1}{i(-m)}e^{im(t+\phi)} .
+\Lambda _{+,m} &\to \frac{1}{im}e^{-im(t-\phi)}, & \Lambda _{-,m} &\to \frac{1}{i(-m)}e^{im(t+\phi)} .
 \end{align}$$
 
 These are precisely the chiral large-gauge representatives that match the highest-weight $(1,0)$ and $(0,1)$ towers. They carry

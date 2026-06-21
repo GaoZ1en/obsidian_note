@@ -7,8 +7,7 @@ L & =\dfrac{1}{2}B_{ij}\dot{x}^{i}\dot{x}^{j}-\dfrac{1}{2}C_{ij}x^{i}x^{j}+\dfra
 Assume that $B_{ij}$, $C_{ij}$, and $D_{ab}$ are symmetric and that $B_{ij}$ is non-degenerate. The canonical momenta are
 
 $$\begin{align}
-p_{i}&=B_{ij}\dot{x}^{j}+E_{i,a}y^{a},&
-\pi_{a}&=0.
+p_{i}&=B_{ij}\dot{x}^{j}+E_{i,a}y^{a},& \pi_{a}&=0.
 \end{align}$$
 
 Thus the primary constraints are
@@ -39,16 +38,13 @@ K_{ab}&:=D_{ab}-E_{i,a}(B^{-1})^{ij}E_{j,b}.
 With the canonical Poisson brackets $\{x^{i},p_{j}\}=\delta^{i}_{j}$ and $\{y^{a},\pi_{b}\}=\delta^{a}_{b}$, the constraint brackets are
 
 $$\begin{align}
-\{\phi_{a},\phi_{b}\}&=0,&
-\{\phi_{a},\chi_{b}\}&=-K_{ab},&
-\{\chi_{a},\chi_{b}\}&=0.
+\{\phi_{a},\phi_{b}\}&=0,& \{\phi_{a},\chi_{b}\}&=-K_{ab},& \{\chi_{a},\chi_{b}\}&=0.
 \end{align}$$
 
 Therefore the constraint matrix for $(\phi_{a},\chi_{a})$ is
 
 $$\begin{align}
-\mathcal{C}_{AB}&=
-\begin{pmatrix}
+\mathcal{C}_{AB}&= \begin{pmatrix}
 0&-K\\
 K&0
 \end{pmatrix}.
@@ -69,15 +65,13 @@ K_{ab}v^{b}&=0,
 then the combinations
 
 $$\begin{align}
-\phi_{v}&:=v^{a}\phi_{a},&
-\chi_{v}&:=v^{a}\chi_{a}
+\phi_{v}&:=v^{a}\phi_{a},& \chi_{v}&:=v^{a}\chi_{a}
 \end{align}$$
 
 commute with all $\phi_{a}$ and $\chi_{a}$. In this null direction,
 
 $$\begin{align}
-\chi_{v}&=v^{a}E_{i,a}(B^{-1})^{ij}p_{j}=R^{i}p_{i},&
-R^{i}&:=(B^{-1})^{ij}E_{j,a}v^{a}.
+\chi_{v}&=v^{a}E_{i,a}(B^{-1})^{ij}p_{j}=R^{i}p_{i},& R^{i}&:=(B^{-1})^{ij}E_{j,a}v^{a}.
 \end{align}$$
 
 Preservation of $\chi_{v}$ gives
@@ -89,9 +83,7 @@ $$\begin{align}
 Thus the null direction gives a first-class gauge chain precisely when
 
 $$\begin{align}
-K_{ab}v^{b}&=0,&
-C_{ij}R^{j}&=0,&
-R^{i}&=(B^{-1})^{ij}E_{j,a}v^{a}.
+K_{ab}v^{b}&=0,& C_{ij}R^{j}&=0,& R^{i}&=(B^{-1})^{ij}E_{j,a}v^{a}.
 \end{align}$$
 
 If $K_{ab}v^{b}=0$ but $C_{ij}R^{j}\neq 0$, preservation of $\chi_{v}$ produces an additional constraint instead of a gauge redundancy. Hence the theory becomes a gauge theory only along null directions of $K$ whose induced $x$-direction is also a zero mode of the potential.
@@ -105,10 +97,8 @@ G[\epsilon]&=\epsilon(t)\chi_{v}-\dot{\epsilon}(t)\phi_{v}.
 It generates
 
 $$\begin{align}
-\delta_{\epsilon}x^{i}&=\{x^{i},G[\epsilon]\}=\epsilon(t)R^{i},&
-\delta_{\epsilon}y^{a}&=\{y^{a},G[\epsilon]\}=-\dot{\epsilon}(t)v^{a},\\
-\delta_{\epsilon}p_{i}&=\{p_{i},G[\epsilon]\}=0,&
-\delta_{\epsilon}\pi_{a}&=\{\pi_{a},G[\epsilon]\}=-\epsilon(t)K_{ab}v^{b}=0.
+\delta_{\epsilon}x^{i}&=\{x^{i},G[\epsilon]\}=\epsilon(t)R^{i},& \delta_{\epsilon}y^{a}&=\{y^{a},G[\epsilon]\}=-\dot{\epsilon}(t)v^{a},\\
+\delta_{\epsilon}p_{i}&=\{p_{i},G[\epsilon]\}=0,& \delta_{\epsilon}\pi_{a}&=\{\pi_{a},G[\epsilon]\}=-\epsilon(t)K_{ab}v^{b}=0.
 \end{align}$$
 
 ---
@@ -124,9 +114,7 @@ L&=\frac{1}{2}\left(\dot{x}_{1}^{2}+\dot{x}_{2}^{2}\right)+y\left(\dot{x}_{1}+\d
 The canonical momenta are
 
 $$\begin{align}
-p_{1}&=\dot{x}_{1}+y,&
-p_{2}&=\dot{x}_{2}+y,&
-\pi&=0.
+p_{1}&=\dot{x}_{1}+y,& p_{2}&=\dot{x}_{2}+y,& \pi&=0.
 \end{align}$$
 
 The primary constraint is
@@ -144,16 +132,13 @@ H_{c}&=\frac{1}{2}\left(p_{1}^{2}+p_{2}^{2}\right)-y\left(p_{1}+p_{2}\right)+\fr
 Preservation of the primary constraint gives the secondary constraint
 
 $$\begin{align}
-\dot{\phi}=\{\phi,H_{T}\}&=p_{1}+p_{2}\approx 0,&
-\chi&:=p_{1}+p_{2}\approx 0.
+\dot{\phi}=\{\phi,H_{T}\}&=p_{1}+p_{2}\approx 0,& \chi&:=p_{1}+p_{2}\approx 0.
 \end{align}$$
 
 The constraint brackets are
 
 $$\begin{align}
-\{\phi,\phi\}&=0,&
-\{\phi,\chi\}&=0,&
-\{\chi,\chi\}&=0,
+\{\phi,\phi\}&=0,& \{\phi,\chi\}&=0,& \{\chi,\chi\}&=0,
 \end{align}$$
 
 and the secondary constraint is preserved automatically:
@@ -171,12 +156,8 @@ G[\epsilon]&=\epsilon(t)\chi-\dot{\epsilon}(t)\phi=\epsilon(t)(p_{1}+p_{2})-\dot
 It gives
 
 $$\begin{align}
-\delta_{\epsilon}x_{1}&=\epsilon(t),&
-\delta_{\epsilon}x_{2}&=\epsilon(t),&
-\delta_{\epsilon}y&=-\dot{\epsilon}(t),\\
-\delta_{\epsilon}p_{1}&=0,&
-\delta_{\epsilon}p_{2}&=0,&
-\delta_{\epsilon}\pi&=0.
+\delta_{\epsilon}x_{1}&=\epsilon(t),& \delta_{\epsilon}x_{2}&=\epsilon(t),& \delta_{\epsilon}y&=-\dot{\epsilon}(t),\\
+\delta_{\epsilon}p_{1}&=0,& \delta_{\epsilon}p_{2}&=0,& \delta_{\epsilon}\pi&=0.
 \end{align}$$
 
 ## Partition function check
@@ -190,9 +171,7 @@ S_{E}&=\int_{0}^{\beta}\mathrm{d}\tau\left[\frac{1}{2}\left(\dot{x}_{1}^{2}+\dot
 where the dot now denotes $\mathrm{d}/\mathrm{d}\tau$. The Euclidean gauge transformation is
 
 $$\begin{align}
-\delta_{\epsilon}x_{1}&=\epsilon,&
-\delta_{\epsilon}x_{2}&=\epsilon,&
-\delta_{\epsilon}y&=-\dot{\epsilon}.
+\delta_{\epsilon}x_{1}&=\epsilon,& \delta_{\epsilon}x_{2}&=\epsilon,& \delta_{\epsilon}y&=-\dot{\epsilon}.
 \end{align}$$
 
 Choose the gauge condition
@@ -219,36 +198,30 @@ where $\mathcal{N}_{y}$ is the field-independent Gaussian factor from the auxili
 Now compute the same object from the canonical constrained system. Use the first-class constraints
 
 $$\begin{align}
-\phi&=\pi\approx 0,&
-\chi&=p_{1}+p_{2}\approx 0,
+\phi&=\pi\approx 0,& \chi&=p_{1}+p_{2}\approx 0,
 \end{align}$$
 
 and fix them by
 
 $$\begin{align}
-\gamma_{1}&:=y=0,&
-\gamma_{2}&:=\frac{x_{1}+x_{2}}{2}=0.
+\gamma_{1}&:=y=0,& \gamma_{2}&:=\frac{x_{1}+x_{2}}{2}=0.
 \end{align}$$
 
 For the ordered set $(\phi,\chi,\gamma_{1},\gamma_{2})$, the constraint matrix is
 
 $$\begin{align}
-\mathcal{M}_{AB}&=\{\Psi_{A},\Psi_{B}\}=
-\begin{pmatrix}
+\mathcal{M}_{AB}&=\{\Psi_{A},\Psi_{B}\}= \begin{pmatrix}
 0&0&-1&0\\
 0&0&0&-1\\
 1&0&0&0\\
 0&1&0&0
-\end{pmatrix},&
-\det\mathcal{M}&=1.
+\end{pmatrix},& \det\mathcal{M}&=1.
 \end{align}$$
 
 The corresponding Dirac bracket on the gauge slice gives
 
 $$\begin{align}
-\{x_{1},p_{1}\}_{D}&=\frac{1}{2},&
-\{x_{1},x_{1}\}_{D}&=0,&
-\{p_{1},p_{1}\}_{D}&=0.
+\{x_{1},p_{1}\}_{D}&=\frac{1}{2},& \{x_{1},x_{1}\}_{D}&=0,& \{p_{1},p_{1}\}_{D}&=0.
 \end{align}$$
 
 The reduced Hamiltonian in these original variables is $H=p_{1}^{2}+\Omega^{2}x_{1}^{2}$. With $[x_{1},p_{1}]=i/2$, this Hamiltonian has spectrum $E_{n}=\Omega(n+\frac{1}{2})$, hence the canonical trace is
@@ -267,17 +240,13 @@ Z_{\mathrm{can}}&=\int \mathcal{D}x_{1}\mathcal{D}x_{2}\mathcal{D}y\mathcal{D}p_
 The delta functions impose
 
 $$\begin{align}
-\pi&=0,&
-y&=0,&
-p_{2}&=-p_{1},&
-x_{2}&=-x_{1}.
+\pi&=0,& y&=0,& p_{2}&=-p_{1},& x_{2}&=-x_{1}.
 \end{align}$$
 
 On this slice,
 
 $$\begin{align}
-p_{1}\dot{x}_{1}+p_{2}\dot{x}_{2}&=2p_{1}\dot{x}_{1},&
-H_{c}&=p_{1}^{2}+\Omega^{2}x_{1}^{2}.
+p_{1}\dot{x}_{1}+p_{2}\dot{x}_{2}&=2p_{1}\dot{x}_{1},& H_{c}&=p_{1}^{2}+\Omega^{2}x_{1}^{2}.
 \end{align}$$
 
 Hence
@@ -290,8 +259,7 @@ Z_{\mathrm{can}}&=\int \mathcal{D}x_{1}\mathcal{D}p_{1}\exp\left[\int_{0}^{\beta
 The nontrivial $\beta$ and $\Omega$ dependence is therefore identical:
 
 $$\begin{align}
-Z_{\mathrm{FP}}&\propto Z_{\mathrm{can}}\propto \left[\det\nolimits_{\mathrm{P}}\left(-\partial_{\tau}^{2}+\Omega^{2}\right)\right]^{-1/2}
-=\frac{1}{2\sinh\left(\frac{\beta\Omega}{2}\right)}.
+Z_{\mathrm{FP}}&\propto Z_{\mathrm{can}}\propto \left[\det\nolimits_{\mathrm{P}}\left(-\partial_{\tau}^{2}+\Omega^{2}\right)\right]^{-1/2} =\frac{1}{2\sinh\left(\frac{\beta\Omega}{2}\right)}.
 \end{align}$$
 
 Thus Faddeev-Popov quantization and canonical constrained quantization give the same partition function for this model. The proportionality constants $\mathcal{N}_{y}$ and $\mathcal{N}_{p}$ are field-independent normalization factors fixed by the same choice of functional measure.
