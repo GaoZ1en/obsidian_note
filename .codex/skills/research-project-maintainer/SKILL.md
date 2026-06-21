@@ -74,7 +74,7 @@ Before modifying formulas, derivations, tensor identities, or equation-heavy sec
 - Report verification status with compact `Verified:`, `Assumptions:`, and `Not verified:` entries.
 - Do not present formula edits as correct from inspection alone.
 - If verification is blocked by tooling, keep the formula unchanged unless the user explicitly accepts an assumption-only edit.
-- When applying local formula-layout rules, distinguish short and long displays explicitly: keep short formulas and short component lists on one source line, but in genuinely multiline `align` blocks make every source line an actual LaTeX row by ending each non-final displayed row with `\\`. Do not insert source-only line breaks inside one displayed row. For long additive formulas, count only additive monomial terms on the right-hand side of the equality: keep at most six right-hand-side terms on one displayed row; if there are more than six, split those right-hand-side terms as evenly as possible across multiple `\\` rows. Do not count or constrain the left-hand side for this limit.
+- For formula source layout, rely on the local formatter plugin for mechanical delimiter, `align`, blank-line, and lint cleanup. Only hand-tune layout when it affects mathematical readability or the user asks.
 
 ## Project State Updates
 

@@ -1,0 +1,29 @@
+---
+title: Keep Me
+tags: [do-not-touch]
+---
+# Heading
+Paragraph with trailing spaces.
+
+
+\[
+a=b
+\]
+
+```tex
+\[
+do not change this
+\]
+```
+
++ item
+2) item
+
+> [!note]
+> + keep callout marker
+
+$$
+\begin{equation}
+E=mc^2
+\end{equation}
+$$

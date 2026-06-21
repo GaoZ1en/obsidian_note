@@ -1,0 +1,29 @@
+{
+  "name": "koishi-markdown-formatter",
+  "version": "0.1.0",
+  "description": "A conservative Obsidian Markdown formatter for physics notes.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node esbuild.config.mjs production",
+    "dev": "node esbuild.config.mjs",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "obsidian",
+    "markdown",
+    "formatter",
+    "latex"
+  ],
+  "author": "Koishi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "esbuild": "^0.25.5",
+    "obsidian": "^1.8.7",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

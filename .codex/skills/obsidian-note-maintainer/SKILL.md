@@ -30,18 +30,13 @@ Apply fields incrementally. Preserve existing valid fields unless the user asks 
 
 ## Formatting
 
-- Use `$$ ... $$` for display math.
 - Use `$ ... $` for inline math.
-- For LaTeX formulas, use a two-stage formula-layout workflow. It is acceptable to draft complex formulas in an expanded one-term-per-line working layout while checking coefficients, signs, indices, or xAct output, but final note content should use compact LaTeX source.
-  - If a display formula visually fits on one line, keep the whole source on one line as `$$ ... $$`, or as a single-line `$$\begin{align} ... \end{align}$$` when alignment columns are useful. Short component lists should not be expanded into separate `\\` rows merely because they contain several components.
-  - If a formula genuinely needs multiple visual lines, each source line in the final `align` block must be an actual LaTeX row: end every non-final displayed row with `\\`. Do not insert source-only line breaks inside one displayed row.
-  - For long additive formulas, count only additive monomial terms on the right-hand side of the equality. Keep at most six right-hand-side terms on one displayed row. If there are more than six, split those right-hand-side terms as evenly as possible across multiple `\\` rows. Do not count or constrain the left-hand side for this limit.
-  - For multi-line environments, prefer `$$\begin{align}` and `\end{align}$$` on the delimiter lines. Do not leave `&`, `\\`, `=`, `+`, `\frac`, `\Gamma`, or single index factors on their own source lines. Avoid global newline-deletion passes; compact only inside intended math blocks and rerun relevant formula or formatting checks.
+- Let the local formatter plugin handle mechanical Markdown cleanup: display delimiters, `align` wrappers, blank lines, list markers, and trailing whitespace.
+- Do not spend prompt budget manually compacting formula source unless editing a snippet that will not pass through the formatter, the source layout affects mathematical readability, or the user asks.
 - Avoid local shorthand symbols that merely rename a single simple expression, term, mode, or already-labelled object. A shorthand should reduce real repetition, name an object or family with independent semantic content, or make a multi-step derivation clearer; otherwise write the expression inline and keep its existing labels or arguments visible.
 - Group displayed formulas by mathematical object or logical unit. Different perturbative orders, components, or cases of the same object should usually live in one `align` or display block, even if one entry is much longer; do not split them into separate formula blocks merely because some entries are short and others are long.
 - Do not skip heading levels.
-- Use `-` for unordered lists.
-- Use `1.` for ordered lists.
+- Prefer ordinary Markdown headings and lists; the formatter handles marker normalization and spacing cleanup.
 - Repair broken internal links only when the intended target is clear.
 - Keep LaTeX notation consistent with the surrounding note, especially tensors, indices, and differential forms.
 - Keep Obsidian callout syntax consistent when callouts are already present.
