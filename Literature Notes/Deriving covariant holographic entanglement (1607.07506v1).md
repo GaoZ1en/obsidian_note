@@ -32,8 +32,7 @@ where $E_A$ is a codimension-2 bulk extremal surface anchored on $\partial A$. T
 The field theory computation of $\operatorname{Tr}\rho_A^q$ in a time-dependent state is naturally a Schwinger-Keldysh path integral with $2q$ Lorentzian folds. Assuming the boundary replica symmetry extends into the bulk, the quotient geometry has a codimension-2 fixed locus $e_q$. A local analysis near $e_q$ shows that regularity plus the bulk equations of motion force
 
 $$\begin{align}
-\lim_{q \to 1} e_q = E_A,
-\qquad
+\lim_{q \to 1} e_q = E_A, \qquad
 K^a = 0,
 \end{align}$$
 
@@ -85,12 +84,9 @@ so the limiting surface is extremal. The variation of the Lorentzian on-shell ac
 ### Formula (2.1): time-dependent density matrix
 
 $$\begin{align}
-|\Psi(t)\rangle = e^{iHt}|\Psi_0\rangle,
-\qquad
-\langle\Psi(t)|=\langle\Psi_0|e^{-iHt},
-\qquad
-\rho(t)=|\Psi(t)\rangle\langle\Psi(t)|
-=e^{iHt}\rho_0 e^{-iHt}.
+|\Psi(t)\rangle = e^{iHt}|\Psi_0\rangle, \qquad
+\langle\Psi(t)|=\langle\Psi_0|e^{-iHt}, \qquad
+\rho(t)=|\Psi(t)\rangle\langle\Psi(t)| =e^{iHt}\rho_0 e^{-iHt}.
 \end{align}$$
 
 This formula fixes the real-time orientation convention used in the paper. The ket and bra are evolved on opposite branches. With the authors' convention, $e^{iHt}$ evolves the ket from the chosen initial time to $t$, while the conjugate branch carries the opposite sign in the action. The important point is not the sign convention itself but the doubling: a density matrix is not computed by a single time contour.
@@ -104,17 +100,11 @@ Local unpacking:
 ### Formula (2.2): wavefunctionals as path integrals
 
 $$\begin{align}
-\Psi(t,\phi_0(x))
-=\int [D\phi]\,
-e^{iS[\phi]_{-\infty}^{t}}\,
-\delta(\phi(t,x)-\phi_0(x)),
+\Psi(t,\phi_0(x)) =\int [D\phi]\, e^{iS[\phi]_{-\infty}^{t}}\, \delta(\phi(t,x)-\phi_0(x)),
 \end{align}$$
 
 $$\begin{align}
-\overline\Psi(t,\phi_0(x))
-=\int [D\phi]\,
-e^{iS[\phi]_{t}^{-\infty}}\,
-\delta(\phi(t,x)-\phi_0(x)).
+\overline\Psi(t,\phi_0(x)) =\int [D\phi]\, e^{iS[\phi]_{t}^{-\infty}}\, \delta(\phi(t,x)-\phi_0(x)).
 \end{align}$$
 
 The delta function fixes the field value on the final Cauchy slice. The two actions are integrated along opposite time orientations. This is the path-integral version of the ket/bra doubling in (2.1).
@@ -124,9 +114,7 @@ The second integral is not a new theory. It is the conjugate branch of the same 
 ### Formula (2.3): path integral for $\rho$
 
 $$\begin{align}
-\rho = |\Psi\rangle\langle\Psi|
-=\int [D\phi]\,
-e^{iS^\uparrow[\phi]-iS^\downarrow[\phi]}.
+\rho = |\Psi\rangle\langle\Psi| =\int [D\phi]\, e^{iS^\uparrow[\phi]-iS^\downarrow[\phi]}.
 \end{align}$$
 
 The arrows label the forward and backward branches. When the two branches are glued along the whole Cauchy slice $\Sigma_t$, the path integral computes $\operatorname{Tr}\rho(t)$. To compute $\rho_A$, one glues only along $A^c$ and leaves open boundary data on $A$.
@@ -172,11 +160,7 @@ This formula is the boundary ancestor of the bulk conical or S-brane singularity
 ### Formula (2.6): modular entropy
 
 $$\begin{align}
-\widetilde S_A^{(q)}
-=-q^2\partial_q
-\left[
-\frac{1}{q}\log\operatorname{Tr}_A(\rho_A)^q
-\right].
+\widetilde S_A^{(q)} =-q^2\partial_q \left[ \frac{1}{q}\log\operatorname{Tr}_A(\rho_A)^q \right].
 \end{align}$$
 
 This is a Legendre-transform-like version of the Renyi entropy. It is technically easier in gravity because $\partial_q$ can be interpreted as a variation of the saddle geometry.
@@ -188,9 +172,7 @@ At $q=1$, $\widetilde S_A^{(1)}$ agrees with the von Neumann entropy. For a ther
 ### Formula (3.1): local Euclidean metric near a candidate surface
 
 $$\begin{align}
-ds_E^2
-=dx^2+dt_E^2
-\left(\gamma_{ij}+2K^x_{ij}x+2K^t_{ij}t_E\right)dy^i dy^j+\cdots.
+ds_E^2 =dx^2+dt_E^2 \left(\gamma_{ij}+2K^x_{ij}x+2K^t_{ij}t_E\right)dy^i dy^j+\cdots.
 \end{align}$$
 
 Here $y^i$ are coordinates along the codimension-2 surface, while $(x,t_E)$ are normal coordinates. The coefficients $K^x_{ij}$ and $K^t_{ij}$ are extrinsic curvatures in the two normal directions.
@@ -224,11 +206,7 @@ The assumption behind the formula is unbroken replica symmetry in the dominant b
 ### Formula (3.4): Euclidean near-defect ansatz
 
 $$\begin{aligned}
-ds^2
-=&\left(q^2dr^2+r^2d\tau^2\right)
-\left(\gamma_{ij}
-+2K^x_{ij}r^q\cos\tau
-+2K^t_{ij}r^q\sin\tau\right)dy^i dy^j \\
+ds^2 =&\left(q^2dr^2+r^2d\tau^2\right) \left(\gamma_{ij} +2K^x_{ij}r^q\cos\tau +2K^t_{ij}r^q\sin\tau\right)dy^i dy^j \\
 &+\left[r^{f_q(q-1)}-1\right]\delta g_{\mu\nu}dx^\mu dx^\nu+\cdots.
 \end{aligned}$$
 
@@ -242,8 +220,7 @@ The $K$ terms are the continuation of the linear normal expansion in (3.1). The 
 ### Formula (3.5): minimal surface condition in the Euclidean case
 
 $$\begin{align}
-\lim_{q\to 1} e_q \to E_A,
-\qquad
+\lim_{q\to 1} e_q \to E_A, \qquad
 E_A\in M,\quad t=0,\quad K^x=0.
 \end{align}$$
 
@@ -254,12 +231,7 @@ Thus the fixed locus becomes a minimal surface. This is the RT result.
 ### Formula (3.6): variation of the gravitational action
 
 $$\begin{align}
-\delta I[\widehat M_q]
-=\int_{\widehat M_q}
-\left[
-\text{EOM}\cdot\delta g_q
-+d\Theta(g_q,\delta g_q)
-\right].
+\delta I[\widehat M_q] =\int_{\widehat M_q} \left[ \text{EOM}\cdot\delta g_q +d\Theta(g_q,\delta g_q) \right].
 \end{align}$$
 
 This is the standard covariant phase space decomposition. On shell, the EOM term vanishes, so the action variation is a boundary term.
@@ -269,8 +241,7 @@ For ordinary AdS/CFT variations, the boundary term lives at the asymptotic bound
 ### Formula (3.7): localization on the fixed locus
 
 $$\begin{align}
-\partial_q I[\widehat M_q]
-=\int_{e_q(\epsilon)}
+\partial_q I[\widehat M_q] =\int_{e_q(\epsilon)}
 \Theta(g_q,\partial_q g_q).
 \end{align}$$
 
@@ -281,11 +252,8 @@ This is the gravitational reason the final answer is an area. The $q$-variation 
 ### Formula (3.8): Gibbons-Hawking evaluation
 
 $$\begin{align}
-\partial_q I[\widehat M_q]
-=-\partial_q I_{\text{bdy}}[\widehat M_q],
-\qquad
-I_{\text{bdy}}[\widehat M_q]
-=\frac{1}{8\pi G_N}\int_{e_q(\epsilon)}K_\epsilon.
+\partial_q I[\widehat M_q] =-\partial_q I_{\text{bdy}}[\widehat M_q], \qquad
+I_{\text{bdy}}[\widehat M_q] =\frac{1}{8\pi G_N}\int_{e_q(\epsilon)}K_\epsilon.
 \end{align}$$
 
 The regulated tube is treated as a temporary boundary. For Einstein gravity, its contribution is the Gibbons-Hawking term.
@@ -295,8 +263,7 @@ The minus sign appears because the small tube is an inner boundary around an exc
 ### Formula (3.9): Euclidean modular entropy area
 
 $$\begin{align}
-\partial_q I[\widehat M_q]
-=\frac{\operatorname{Area}(e_q)}{4q^2G_N}.
+\partial_q I[\widehat M_q] =\frac{\operatorname{Area}(e_q)}{4q^2G_N}.
 \end{align}$$
 
 Using the local metric, $K_\epsilon=1/(q\epsilon)$, and the induced measure supplies the compensating factor of $\epsilon$. The finite remainder is the area of $e_q$ divided by $4q^2G_N$.
@@ -308,9 +275,7 @@ At $q\to 1$, $e_q\to E_A$, so this gives the RT area formula.
 ### Formula (3.10): local Lorentzian/Rindler metric near $e$
 
 $$\begin{align}
-ds^2
-=dr^2-r^2d\tau^2
-\left(\gamma_{mn}+r e^{\pm\tau}K^\pm_{mn}+\cdots\right)dy^m dy^n.
+ds^2 =dr^2-r^2d\tau^2 \left(\gamma_{mn}+r e^{\pm\tau}K^\pm_{mn}+\cdots\right)dy^m dy^n.
 \end{align}$$
 
 This is the Lorentzian analogue of the adapted expansion near a codimension-2 surface. The normal plane now has Rindler signature. The four Rindler wedges meet at $e$.
@@ -318,8 +283,7 @@ This is the Lorentzian analogue of the adapted expansion near a codimension-2 su
 Crossing a Rindler horizon is encoded by
 
 $$\begin{align}
-\tau\to\tau+\frac{\pi i}{2},
-\qquad
+\tau\to\tau+\frac{\pi i}{2}, \qquad
 r\to i^{-1}r.
 \end{align}$$
 
@@ -328,11 +292,7 @@ Again, the imaginary shift is a labeling device for real Lorentzian wedges. Four
 ### Formula (3.11): Lorentzian replicated near-defect ansatz
 
 $$\begin{aligned}
-ds^2
-=&\left(q^2dr^2-r^2d\tau^2\right)
-\left(\gamma_{ij}
-+2K^x_{ij}r^q\cosh\tau
-+2K^t_{ij}r^q\sinh\tau\right)dy^i dy^j \\
+ds^2 =&\left(q^2dr^2-r^2d\tau^2\right) \left(\gamma_{ij} +2K^x_{ij}r^q\cosh\tau +2K^t_{ij}r^q\sinh\tau\right)dy^i dy^j \\
 &+\left[r^{f_q(q-1)}-1\right]\delta g_{\mu\nu}dx^\mu dx^\nu+\cdots.
 \end{aligned}$$
 
@@ -351,8 +311,7 @@ This formula is schematic but decisive. For $q$ near $1$, the local curvature co
 No allowed $\mathbb Z_q$-symmetric correction in $\delta g_{\mu\nu}$ can cancel this divergence. Therefore the equations of motion impose
 
 $$\begin{align}
-K^x=0,
-\qquad
+K^x=0, \qquad
 K^t=0.
 \end{align}$$
 
@@ -361,17 +320,13 @@ This is where the extremal surface condition comes from dynamically. It is not a
 ### Formula (3.13): null-expansion form of extremality
 
 $$\begin{align}
-K^a=0
-\quad\Longrightarrow\quad
-\theta_\pm
-=\frac{1}{\sqrt 2}(K^0\pm K^1)=0,
+K^a=0 \quad\Longrightarrow\quad
+\theta_\pm =\frac{1}{\sqrt 2}(K^0\pm K^1)=0,
 \end{align}$$
 
 $$\begin{align}
-\Longrightarrow
-\qquad
-\lim_{q\to 1}e_q=E_A,
-\qquad
+\Longrightarrow \qquad
+\lim_{q\to 1}e_q=E_A, \qquad
 E_A\in M\ \text{is extremal}.
 \end{align}$$
 
@@ -388,8 +343,7 @@ The surface must also lie on an admissible bulk Cauchy slice $\widetilde\Sigma_t
 ### Formula (3.14): Lorentzian boundary term
 
 $$\begin{align}
-\partial_q I[\widehat M_q]
-=-\frac{1}{8\pi G_N}
+\partial_q I[\widehat M_q] =-\frac{1}{8\pi G_N}
 \partial_q\int_{e_q(\epsilon)}K_\epsilon.
 \end{align}$$
 
@@ -400,8 +354,7 @@ The boundary terms at the Schwinger-Keldysh turning surface $\widetilde\Sigma_t$
 ### Formula (3.15): Lorentzian modular entropy area
 
 $$\begin{align}
-\partial_q I[\widehat M_q]
-=\frac{i\,\operatorname{Area}(e_q)}{4q^2G_N}.
+\partial_q I[\widehat M_q] =\frac{i\,\operatorname{Area}(e_q)}{4q^2G_N}.
 \end{align}$$
 
 The extra factor of $i$ is the Lorentzian action convention: the path integral weight is $e^{iS}$ rather than $e^{-I_E}$. After translating to the entropy, the physical answer is real and equals the HRT area at $q=1$.
@@ -409,9 +362,7 @@ The extra factor of $i$ is the Lorentzian action convention: the path integral w
 This completes the main derivation:
 
 $$\begin{align}
-S_A
-=\widetilde S_A^{(1)}
-=\frac{\operatorname{Area}(E_A)}{4G_N}.
+S_A =\widetilde S_A^{(1)} =\frac{\operatorname{Area}(E_A)}{4G_N}.
 \end{align}$$
 
 ## Discussion formula
@@ -421,11 +372,8 @@ S_A
 The paper quotes the maximin/surgery inequality schematically as
 
 $$\begin{align}
-\operatorname{Area}(E_{A_1\cap A_2})
-+\operatorname{Area}(E_{A_1\cup A_2})
-\le
-\sum_{i=1}^2 \operatorname{Area}(P E_{A_i})
-\le
+\operatorname{Area}(E_{A_1\cap A_2}) +\operatorname{Area}(E_{A_1\cup A_2}) \le
+\sum_{i=1}^2 \operatorname{Area}(P E_{A_i}) \le
 \sum_{i=1}^2 \operatorname{Area}(E_{A_i}).
 \end{align}$$
 
@@ -445,10 +393,7 @@ The authors' replica perspective adds a restriction: the relevant Cauchy slices 
 ### Formula (A.1): Lorentzian action for integer $q$
 
 $$\begin{align}
-I[M_q]
-=\int_{M_q}L
-+\int_{\partial M_q}L_{\text{bdy}}
-+\int_{\widetilde\Sigma_t}L_{\text{SK}}.
+I[M_q] =\int_{M_q}L +\int_{\partial M_q}L_{\text{bdy}} +\int_{\widetilde\Sigma_t}L_{\text{SK}}.
 \end{align}$$
 
 The first two terms are the usual bulk and asymptotic boundary terms. The last term is specific to the Schwinger-Keldysh construction: when two Lorentzian pieces are glued across a bulk Cauchy slice, the variational principle needs the appropriate matching term.
@@ -458,9 +403,7 @@ For integer $q$, $M_q$ is the full smooth replicated geometry. Replica symmetry 
 ### Formula (A.2): corner or jump boundary term
 
 $$\begin{align}
-I_{\text{bdy}}
-=\frac{1}{8\pi G_N}\int_{e^{\text{jump}}_1(\epsilon)}K_\epsilon
-=\cosh^{-1}(n_1\cdot n_2).
+I_{\text{bdy}} =\frac{1}{8\pi G_N}\int_{e^{\text{jump}}_1(\epsilon)}K_\epsilon =\cosh^{-1}(n_1\cdot n_2).
 \end{align}$$
 
 This formula evaluates the contribution from a segment where the regulator surface jumps between spacelike and timelike pieces. The vectors $n_1$ and $n_2$ are the initial and final unit normals.
@@ -470,16 +413,13 @@ For the Lorentzian cone, the regulator becomes nearly null at the jump. The $i\e
 ### Formula (A.3): quotient boundary term
 
 $$\begin{align}
-I_{\text{bdy}}[\widehat M_q]
-=\frac{4i}{4q}\,
-\frac{\operatorname{Area}(e_q)}{4G_N}.
+I_{\text{bdy}}[\widehat M_q] =\frac{4i}{4q}\, \frac{\operatorname{Area}(e_q)}{4G_N}.
 \end{align}$$
 
 The factor of $4$ counts the four horizon crossings around the local Lorentzian normal plane. The factor $1/q$ comes from comparing normals in locally flat coordinates
 
 $$\begin{align}
-x=r\cosh(\tau/q),
-\qquad
+x=r\cosh(\tau/q), \qquad
 t=r\sinh(\tau/q).
 \end{align}$$
 
@@ -488,10 +428,7 @@ This appendix computation supplies the local boundary-term justification for the
 ### Formula (A.4): Einstein gravity plus a scalar
 
 $$\begin{align}
-I[\widehat M_q]
-=I_{\text{EH}}[\widehat M_q]
--\int_{\widehat M_q}d^{d+1}x\sqrt{-g}
-\left[(\partial\phi)^2+V(\phi)\right].
+I[\widehat M_q] =I_{\text{EH}}[\widehat M_q] -\int_{\widehat M_q}d^{d+1}x\sqrt{-g} \left[(\partial\phi)^2+V(\phi)\right].
 \end{align}$$
 
 This is a test problem for the Lorentzian prescription. The scalar has small boundary source $\lambda\varphi(\tau)$, and the authors examine the $O(\lambda^2)$ correction to the modular entropy.
@@ -501,11 +438,7 @@ The purpose is not to solve a new scalar model. It is to check that the Lorentzi
 ### Formula (A.5): scalar contribution to modular entropy
 
 $$\begin{align}
-\left.\widetilde S_A^{(q)}\right|_{\lambda^2}
-=
-\left.\frac{A}{4q^2G_N}\right|_{\lambda^2}
-=-i\int_{\widehat M_q}T^\phi_{\mu\nu}\partial_q g^{\mu\nu}
-=-i\partial_q\int_{\partial\widehat M_q}\phi\,\partial_{\vec n}\phi.
+\left.\widetilde S_A^{(q)}\right|_{\lambda^2} = \left.\frac{A}{4q^2G_N}\right|_{\lambda^2} =-i\int_{\widehat M_q}T^\phi_{\mu\nu}\partial_q g^{\mu\nu} =-i\partial_q\int_{\partial\widehat M_q}\phi\,\partial_{\vec n}\phi.
 \end{align}$$
 
 This formula gives three equivalent ways to compute the $O(\lambda^2)$ correction:
@@ -527,10 +460,7 @@ This is the local AdS metric used for the scalar example. The source is allowed 
 ### Formula (A.7): hyperbolic patch metric
 
 $$\begin{align}
-ds^2
-=f(\rho)\frac{du^2}{u^2}
--\rho^2d\tau^2
-+\frac{d\rho^2}{f(\rho)}.
+ds^2 =f(\rho)\frac{du^2}{u^2} -\rho^2d\tau^2 +\frac{d\rho^2}{f(\rho)}.
 \end{align}$$
 
 At $q=1$,
@@ -542,10 +472,8 @@ f(\rho)=\rho^2+1.
 The coordinate transformation to Poincare variables is
 
 $$\begin{align}
-\rho^2=\frac{x^2-t^2}{z^2},
-\qquad
-u^2=x^2-t^2+z^2,
-\qquad
+\rho^2=\frac{x^2-t^2}{z^2}, \qquad
+u^2=x^2-t^2+z^2, \qquad
 \tanh\tau=\frac{t}{x}.
 \end{align}$$
 
@@ -562,45 +490,26 @@ The hyperbolic chart makes the $q$-variation simple, while the Poincare chart ma
 For a scalar mode $\lambda e^{i\omega t}f_\omega(z)$, the paper writes
 
 $$\begin{align}
-i\left.\widetilde S_A^{(1)}\right|_{\lambda^2}
-=\int_M \widetilde T_\phi,
+i\left.\widetilde S_A^{(1)}\right|_{\lambda^2} =\int_M \widetilde T_\phi,
 \end{align}$$
 
 with
 
 $$\begin{align}
 \widetilde T_\phi
-\equiv
-\sqrt{-g}\,T^\phi_{\mu\nu}\partial_q g^{\mu\nu}.
+\equiv \sqrt{-g}\,T^\phi_{\mu\nu}\partial_q g^{\mu\nu}.
 \end{align}$$
 
 In Poincare variables this becomes
 
 $$\begin{align}
-\widetilde T_\phi
-=
-\frac{2z}{(l^2+z^2)^2}
-\left[
-(T^\phi_{ll}-T^\phi_{zz})(l^2-z^2)
-+4lz\,T^\phi_{zl}
-\right],
+\widetilde T_\phi = \frac{2z}{(l^2+z^2)^2} \left[ (T^\phi_{ll}-T^\phi_{zz})(l^2-z^2) +4lz\,T^\phi_{zl} \right],
 \end{align}$$
 
 and, using the scalar mode,
 
 $$\begin{align}
-\widetilde T_\phi
-=
-\frac{2z(l^2-z^2)}{(l^2+z^2)^2}
-\left(
-t^2l^2\omega^2 f_\omega f_{-\omega}
--f'_\omega f'_{-\omega}
-\right)
-+\frac{4itz^2\omega}{(l^2+z^2)^2}
-\left(
-f_\omega f'_{-\omega}
--f_{-\omega}f'_\omega
-\right),
+\widetilde T_\phi = \frac{2z(l^2-z^2)}{(l^2+z^2)^2} \left( t^2l^2\omega^2 f_\omega f_{-\omega} -f'_\omega f'_{-\omega} \right) +\frac{4itz^2\omega}{(l^2+z^2)^2} \left( f_\omega f'_{-\omega} -f_{-\omega}f'_\omega \right),
 \end{align}$$
 
 where
@@ -628,9 +537,7 @@ In Euclidean LM, $\rho_A^q$ is represented by a Euclidean replicated geometry. T
 The boundary trace over $A^c$ glues fields differently on $A$ and $A^c$. In the bulk, the authors assume that this split extends to a split of a bulk Cauchy slice
 
 $$\begin{align}
-\widetilde\Sigma_t=R_A\cup R_A^c,
-\qquad
-\partial R_A=E_A\cup A.
+\widetilde\Sigma_t=R_A\cup R_A^c, \qquad \partial R_A=E_A\cup A.
 \end{align}$$
 
 This assumption is later justified a posteriori by replica symmetry and the emergence of the fixed locus. It is also what makes the homology constraint natural rather than an extra rule.

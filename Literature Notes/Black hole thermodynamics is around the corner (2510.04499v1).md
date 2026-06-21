@@ -60,8 +60,7 @@ $$\begin{align}
 \begin{pmatrix}
 n_{2}^{a} \\
 r_{2}^{a}
-\end{pmatrix} & =\begin{pmatrix}
--\cos \theta & \sin \theta \\
+\end{pmatrix} & =\begin{pmatrix} -\cos \theta & \sin \theta \\
 \sin \theta & \cos \theta
 \end{pmatrix}\begin{pmatrix}
 n_{1}^{a} \\
@@ -69,8 +68,7 @@ r_{1}^{a}
 \end{pmatrix}, & \begin{pmatrix}
 n_{1}^{a} \\
 r_{1}^{a}
-\end{pmatrix} & =\begin{pmatrix}
--\cos \theta & \sin \theta \\
+\end{pmatrix} & =\begin{pmatrix} -\cos \theta & \sin \theta \\
 \sin \theta & \cos \theta
 \end{pmatrix}\begin{pmatrix}
 n_{2}^{a} \\

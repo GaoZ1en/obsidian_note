@@ -106,8 +106,7 @@ D^\omega V^a & =\mathrm d V^a+\omega^a{}_{b}\wedge V^b, \\
 The main note writes
 
 $$\begin{align}
-\mathbb A=\frac12 A^{IJ}M_{IJ}+\kappa \bar\psi Q
-=\frac12\omega^{ab}M_{ab}+\frac1\ell e^a P_a+\kappa \bar\psi Q .
+\mathbb A=\frac12 A^{IJ}M_{IJ}+\kappa \bar\psi Q =\frac12\omega^{ab}M_{ab}+\frac1\ell e^a P_a+\kappa \bar\psi Q .
 \end{align}$$
 
 The second equality is obtained by splitting the $\mathrm{SO}(2,3)$ connection into
@@ -119,8 +118,7 @@ A^{ab}=\omega^{ab}, \qquad A^{a4}=\frac{1}{\ell}e^a.
 Therefore
 
 $$\begin{align}
-\frac12 A^{IJ}M_{IJ}
-& =\frac12 A^{ab}M_{ab}+A^{a4}M_{a4} \\
+\frac12 A^{IJ}M_{IJ} & =\frac12 A^{ab}M_{ab}+A^{a4}M_{a4} \\
 & =\frac12 \omega^{ab}M_{ab}+\frac1\ell e^a P_a,
 \end{align}$$
 
@@ -133,8 +131,7 @@ The notation $F^{(s)a4}$ means the $(a,4)$ component of the $\mathrm{SO}(2,3)$ c
 The curvature is
 
 $$\begin{align}
-\mathbb F
-=\mathrm d\mathbb A-\frac{i}{2}[[\mathbb A\overset\wedge, \mathbb A]].
+\mathbb F =\mathrm d\mathbb A-\frac{i}{2}[[\mathbb A\overset\wedge, \mathbb A]].
 \end{align}$$
 
 Write
@@ -146,8 +143,7 @@ $$\begin{align}
 so that $\mathbb A=\Omega+\Psi$. Then
 
 $$\begin{align}
-\mathbb F
-& =\mathrm d\Omega+\mathrm d\Psi-\frac{i}{2}[[\Omega\overset\wedge,\Omega]]-i[[\Omega\overset\wedge,\Psi]]-\frac{i}{2}[[\Psi\overset\wedge,\Psi]].
+\mathbb F & =\mathrm d\Omega+\mathrm d\Psi-\frac{i}{2}[[\Omega\overset\wedge,\Omega]]-i[[\Omega\overset\wedge,\Psi]]-\frac{i}{2}[[\Psi\overset\wedge,\Psi]].
 \end{align}$$
 
 We now evaluate each term.
@@ -155,8 +151,7 @@ We now evaluate each term.
 First,
 
 $$\begin{align}
-\mathrm d\Omega
-=\frac12 \mathrm d\omega^{ab}M_{ab}+\frac1\ell \mathrm de^a P_a.
+\mathrm d\Omega =\frac12 \mathrm d\omega^{ab}M_{ab}+\frac1\ell \mathrm de^a P_a.
 \end{align}$$
 
 Second,
@@ -171,8 +166,7 @@ $$\begin{align}
 Therefore the purely bosonic part is
 
 $$\begin{align}
-\mathrm d\Omega-\frac{i}{2}[[\Omega\overset\wedge,\Omega]]
-& =\frac12\left(\mathrm d\omega^{ab}+\omega^a{}_c\wedge \omega^{cb}+\frac1{\ell^2}e^a\wedge e^b\right)M_{ab} \\
+\mathrm d\Omega-\frac{i}{2}[[\Omega\overset\wedge,\Omega]] & =\frac12\left(\mathrm d\omega^{ab}+\omega^a{}_c\wedge \omega^{cb}+\frac1{\ell^2}e^a\wedge e^b\right)M_{ab} \\
 & \quad +\frac1\ell \left(\mathrm de^a+\omega^a{}_b\wedge e^b\right)P_a.
 \end{align}$$
 
@@ -201,16 +195,14 @@ $$\begin{align}
 Together with $\mathrm d\Psi=\kappa \mathrm d\bar\psi \, Q$, this gives
 
 $$\begin{align}
-\mathrm d\Psi-i[[\Omega\overset\wedge,\Psi]]
-& =\kappa \left(\mathrm d\bar\psi-\frac14\omega^{ab}\wedge \bar\psi \gamma_{ab}-\frac1{2\ell}e^a\wedge \bar\psi\gamma_a\right)Q \\
+\mathrm d\Psi-i[[\Omega\overset\wedge,\Psi]] & =\kappa \left(\mathrm d\bar\psi-\frac14\omega^{ab}\wedge \bar\psi \gamma_{ab}-\frac1{2\ell}e^a\wedge \bar\psi\gamma_a\right)Q \\
 & =\mathscr{\bar F}\, Q,
 \end{align}$$
 
 here we define
 
 $$\begin{align}
-\mathscr{\bar F}=\kappa \mathscr D^A \bar\psi
-=\kappa\left(\mathrm d\bar\psi-\frac14\omega^{ab}\wedge \bar\psi \gamma_{ab}-\frac1{2\ell}e^a\wedge \bar\psi\gamma_a\right)
+\mathscr{\bar F}=\kappa \mathscr D^A \bar\psi =\kappa\left(\mathrm d\bar\psi-\frac14\omega^{ab}\wedge \bar\psi \gamma_{ab}-\frac1{2\ell}e^a\wedge \bar\psi\gamma_a\right)
 \end{align}$$
 
 Finally, compute the fermion bilinear contribution:
@@ -241,16 +233,13 @@ F^{(s)ab} & =F^{ab}-\frac{\kappa ^{2}}{2}\bar{\psi}\wedge \gamma ^{ab}\psi \\
  & =R^{ab}+\frac{1}{\ell ^{2}}e^{a}\wedge e^{b}-\frac{\kappa ^{2}}{2}\bar{\psi}\wedge \gamma ^{ab}\psi, \\
 F^{(s)a} & =F^a+\frac{\kappa ^{2}}{2}\bar{\psi}\wedge \gamma ^{a}\psi \\
  & =\frac{1}{\ell}D^{\omega}e^{a}+\frac{\kappa ^{2}}{2}\bar{\psi}\wedge \gamma ^{a}\psi. \\
-\mathscr{\bar{F}} & =\kappa \mathscr D^A \bar\psi
-=\kappa\left(\mathrm d\bar\psi-\frac14\omega^{ab}\wedge \bar\psi \gamma_{ab}-\frac1{2\ell}e^a\wedge \bar\psi\gamma_a\right).
+\mathscr{\bar{F}} & =\kappa \mathscr D^A \bar\psi =\kappa\left(\mathrm d\bar\psi-\frac14\omega^{ab}\wedge \bar\psi \gamma_{ab}-\frac1{2\ell}e^a\wedge \bar\psi\gamma_a\right).
 \end{align}$$
 
 Similarly, by acting on $\psi$ rather than $\bar\psi$,
 
 $$\begin{align}
-\mathscr F
-=\kappa \mathscr D^A\psi
-=\kappa\left(\mathscr D^\omega\psi+\frac1{2\ell}e^a\wedge \gamma_a\psi\right).
+\mathscr F =\kappa \mathscr D^A\psi =\kappa\left(\mathscr D^\omega\psi+\frac1{2\ell}e^a\wedge \gamma_a\psi\right).
 \end{align}$$
 
 ### Bianchi identity for the supercurvature
@@ -320,17 +309,14 @@ $$\begin{align}
 its variation is
 
 $$\begin{align}
-\delta \mathbb F
-& =\mathrm d(\delta \mathbb A)-\frac{i}{2}\delta [[\mathbb A\overset\wedge,\mathbb A]] \\
+\delta \mathbb F & =\mathrm d(\delta \mathbb A)-\frac{i}{2}\delta [[\mathbb A\overset\wedge,\mathbb A]] \\
 & =\mathrm d(\delta \mathbb A)-\frac{i}{2}\left([[\delta\mathbb A\overset\wedge,\mathbb A]]+[[\mathbb A\overset\wedge,\delta \mathbb A]]\right).
 \end{align}$$
 
 Because the graded bracket is antisymmetric in the two entries, the two terms are equal, so
 
 $$\begin{align}
-\delta \mathbb F
-=\mathrm d(\delta \mathbb A)-i[[\mathbb A\overset\wedge,\delta \mathbb A]]
-=\mathbb D^{\mathbb A}\delta \mathbb A.
+\delta \mathbb F =\mathrm d(\delta \mathbb A)-i[[\mathbb A\overset\wedge,\delta \mathbb A]] =\mathbb D^{\mathbb A}\delta \mathbb A.
 \end{align}$$
 
 ## bosonic constrained BF theory
@@ -377,15 +363,13 @@ $$\begin{align}
 Since $\star^2=-\mathbf 1$ in Lorentzian signature on internal bivectors,
 
 $$\begin{align}
-(\beta \mathbf 1+\alpha \star)(\beta \mathbf 1-\alpha \star)
-=\beta^2+\alpha^2.
+(\beta \mathbf 1+\alpha \star)(\beta \mathbf 1-\alpha \star) =\beta^2+\alpha^2.
 \end{align}$$
 
 Hence
 
 $$\begin{align}
-B^{ab}
-& =\frac{1}{\alpha^2+\beta^2}(\beta \mathbf 1-\alpha \star)F^{ab} \\
+B^{ab} & =\frac{1}{\alpha^2+\beta^2}(\beta \mathbf 1-\alpha \star)F^{ab} \\
 & =\frac{1}{2(\alpha^2+\beta^2)}\left(\beta \delta^{ab}_{cd}-\alpha \epsilon^{ab}{}_{cd}\right)F^{cd}.
 \end{align}$$
 
@@ -463,10 +447,7 @@ The algebra is lengthy but straightforward: every term is generated by substitut
 The supersymmetric action is
 
 $$\begin{align}
-16\pi S(\mathbb A,\mathbb B)
-=\int \langle \mathbb B\wedge \mathbb F\rangle
--\frac{\beta}{2}\langle \mathbb B\wedge \mathbb B\rangle
--\frac{\alpha}{4}\langle \mathbb B\wedge \star \mathbb B\rangle .
+16\pi S(\mathbb A,\mathbb B) =\int \langle \mathbb B\wedge \mathbb F\rangle -\frac{\beta}{2}\langle \mathbb B\wedge \mathbb B\rangle -\frac{\alpha}{4}\langle \mathbb B\wedge \star \mathbb B\rangle .
 \end{align}$$
 
 By definition of the inner product,
@@ -484,8 +465,7 @@ $$\begin{align}
 while
 
 $$\begin{align}
-\langle \mathbb B\wedge \star \mathbb B\rangle
-=\epsilon_{abcd}B^{(s)ab}\wedge B^{(s)cd}+4\mathscr{\bar B}\wedge \gamma^5 \mathscr B.
+\langle \mathbb B\wedge \star \mathbb B\rangle =\epsilon_{abcd}B^{(s)ab}\wedge B^{(s)cd}+4\mathscr{\bar B}\wedge \gamma^5 \mathscr B.
 \end{align}$$
 
 This reproduces the component form in the note.
@@ -600,8 +580,7 @@ $$\begin{align}
 Using $\delta_\epsilon \mathbb A_\mu=\mathbb D_\mu \Upsilon$,
 
 $$\begin{align}
-\delta_\epsilon \mathbb F_{\mu\nu}
-& =\mathbb D_\mu(\delta_\epsilon \mathbb A_\nu)-\mathbb D_\nu(\delta_\epsilon \mathbb A_\mu) \\
+\delta_\epsilon \mathbb F_{\mu\nu} & =\mathbb D_\mu(\delta_\epsilon \mathbb A_\nu)-\mathbb D_\nu(\delta_\epsilon \mathbb A_\mu) \\
 & =\mathbb D_\mu \mathbb D_\nu \Upsilon-\mathbb D_\nu \mathbb D_\mu \Upsilon \\
 & =[\mathbb D_\mu,\mathbb D_\nu]\Upsilon \\
 & =i[\Upsilon,\mathbb F_{\mu\nu}].
@@ -638,9 +617,7 @@ which takes the same form as supercurvature.
 The gauge-breaking term is
 
 $$\begin{align}
-L_{\mathrm{break}}
-=-\frac{\alpha}{4}\epsilon_{abcd}B^{(s)ab}\wedge B^{(s)cd}
--\alpha \mathscr{\bar B}\wedge \gamma^5 \mathscr B.
+L_{\mathrm{break}} =-\frac{\alpha}{4}\epsilon_{abcd}B^{(s)ab}\wedge B^{(s)cd} -\alpha \mathscr{\bar B}\wedge \gamma^5 \mathscr B.
 \end{align}$$
 
 Vary the bosonic part:
@@ -671,8 +648,7 @@ $$\begin{align}
 Substitute the supersymmetry transformation of $\mathscr{\bar B}$ and $\mathscr B$. After canceling the $B^{ab}$ terms against the bosonic variation, the surviving term is
 
 $$\begin{align}
-\delta_\epsilon L_{\mathrm{break}}
-=2\alpha B^{(s)a}\wedge \bar\epsilon \gamma_a \gamma^5 \mathscr B.
+\delta_\epsilon L_{\mathrm{break}} =2\alpha B^{(s)a}\wedge \bar\epsilon \gamma_a \gamma^5 \mathscr B.
 \end{align}$$
 
 Since
@@ -714,8 +690,7 @@ $$\begin{align}
 Applied to the gauge field,
 
 $$\begin{align}
-\mathcal L_\xi A^{IJ}
-& =\iota_\xi \mathrm dA^{IJ}+\mathrm d(\iota_\xi A^{IJ}) \\
+\mathcal L_\xi A^{IJ} & =\iota_\xi \mathrm dA^{IJ}+\mathrm d(\iota_\xi A^{IJ}) \\
 & =\iota_\xi\left(F^{IJ}+A^I{}_K\wedge A^{KJ}-\kappa^2\bar\psi \gamma^{IJ}\wedge \psi\right)+D^A(\iota_\xi A^{IJ}) \\
 & =\iota_\xi F^{IJ}+D^A(\iota_\xi A^{IJ})+\kappa^2 \bar\psi \gamma^{IJ}\iota_\xi \psi.
 \end{align}$$
@@ -723,11 +698,8 @@ $$\begin{align}
 Similarly, for the gravitino,
 
 $$\begin{align}
-\mathcal L_\xi \bar\psi
-& =\iota_\xi \mathrm d\bar\psi+\mathrm d(\iota_\xi \bar\psi) \\
-& =\frac1\kappa \iota_\xi \mathscr{\bar F}
-+\mathscr D^A(\iota_\xi \bar\psi)
-+\bar\psi \gamma_{IJ}\iota_\xi A^{IJ}.
+\mathcal L_\xi \bar\psi & =\iota_\xi \mathrm d\bar\psi+\mathrm d(\iota_\xi \bar\psi) \\
+& =\frac1\kappa \iota_\xi \mathscr{\bar F} +\mathscr D^A(\iota_\xi \bar\psi) +\bar\psi \gamma_{IJ}\iota_\xi A^{IJ}.
 \end{align}$$
 
 These are the identities used in the charge derivation.
@@ -783,8 +755,7 @@ $$\begin{align}
 Expanding components gives
 
 $$\begin{align}
-16\pi \Omega
-=\int_\Sigma \delta B_{IJ}^{(s)}\wedge \delta A^{IJ}+4\kappa \delta \mathscr{\bar B}\wedge \delta \psi.
+16\pi \Omega =\int_\Sigma \delta B_{IJ}^{(s)}\wedge \delta A^{IJ}+4\kappa \delta \mathscr{\bar B}\wedge \delta \psi.
 \end{align}$$
 
 This follows directly because $\delta^2=0$ and only the antisymmetrized field-space wedge remains.
@@ -877,8 +848,7 @@ If $\xi$ is tangent to $\Sigma$, then $\iota_\xi$ annihilates the pulled-back to
 The note uses
 
 $$\begin{align}
-\{\mathscr H[\Xi_1],\mathscr H[\Xi_2]\}
-=\frac12\left(\delta_{\Xi_1}\mathscr H[\Xi_2]-\delta_{\Xi_2}\mathscr H[\Xi_1]\right).
+\{\mathscr H[\Xi_1],\mathscr H[\Xi_2]\} =\frac12\left(\delta_{\Xi_1}\mathscr H[\Xi_2]-\delta_{\Xi_2}\mathscr H[\Xi_1]\right).
 \end{align}$$
 
 This antisymmetrized definition ensures graded antisymmetry and avoids double counting.
@@ -1084,8 +1054,7 @@ From the variation of the action derived above,
 $$\begin{align}
 16\pi \delta S & =\int _{M}\braket{ \delta \mathbb{B}\wedge \mathbb{F}+\mathbb{B}\wedge \delta \mathbb{F}-\beta \delta \mathbb{B}\wedge \mathbb{B}-\frac{\alpha}{2}\delta \mathbb{B}\wedge \star \mathbb{B} } \\
  & =\int _{M}\braket{ \delta \mathbb{B}\wedge\left( \mathbb{F-\beta \mathbb{B-\frac{\alpha}{2}\star \mathbb{B}}} \right) }+\int _{M}\braket{ \mathbb{B}\wedge \mathbb{D}^{\mathbb{A}}\delta \mathbb{A} } \\
- & =\int_M \left\langle \delta \mathbb B\wedge \left(\mathbb F-\beta \mathbb B-\frac{\alpha}{2}\star \mathbb B\right)\right\rangle
--\int_M \langle \mathbb D^{\mathbb A}\mathbb B\wedge \delta \mathbb A\rangle+\int_{\partial M}\langle \mathbb B\wedge \delta \mathbb A\rangle.
+ & =\int_M \left\langle \delta \mathbb B\wedge \left(\mathbb F-\beta \mathbb B-\frac{\alpha}{2}\star \mathbb B\right)\right\rangle -\int_M \langle \mathbb D^{\mathbb A}\mathbb B\wedge \delta \mathbb A\rangle+\int_{\partial M}\langle \mathbb B\wedge \delta \mathbb A\rangle.
 \end{align}$$
 
 Therefore the symplectic potential on a Cauchy slice $\Sigma$ is
@@ -1120,29 +1089,17 @@ X_\Upsilon \cdot \delta \mathbb B & = \delta_\Upsilon \mathbb B = -i[\Upsilon,\m
 In components,
 
 $$\begin{align}
-\delta_\lambda \omega^{ab} & =D^\omega \lambda^{ab}, &
-\delta_\lambda e^a & =-\lambda^a{}_b e^b, &
-\delta_\lambda \bar\psi & =-\frac14 \bar\psi \gamma_{ab}\lambda^{ab}, \\
-\delta_\zeta \omega^{ab} & =\frac1\ell(e^a \zeta^b-e^b\zeta^a), &
-\delta_\zeta e^a & =\ell D^\omega \zeta^a, &
-\delta_\zeta \bar\psi & =-\frac12 \bar\psi \gamma_a \zeta^a, \\
-\delta_\epsilon \omega^{ab} & =\kappa \bar\epsilon \gamma^{ab}\psi, &
-\delta_\epsilon e^a & =-\ell \kappa \bar\epsilon \gamma^a \psi, &
-\delta_\epsilon \bar\psi & =\frac1\kappa\left(\mathscr D^\omega \bar\epsilon-\frac1{2\ell}e^a \bar\epsilon \gamma_a\right).
+\delta_\lambda \omega^{ab} & =D^\omega \lambda^{ab}, & \delta_\lambda e^a & =-\lambda^a{}_b e^b, & \delta_\lambda \bar\psi & =-\frac14 \bar\psi \gamma_{ab}\lambda^{ab}, \\
+\delta_\zeta \omega^{ab} & =\frac1\ell(e^a \zeta^b-e^b\zeta^a), & \delta_\zeta e^a & =\ell D^\omega \zeta^a, & \delta_\zeta \bar\psi & =-\frac12 \bar\psi \gamma_a \zeta^a, \\
+\delta_\epsilon \omega^{ab} & =\kappa \bar\epsilon \gamma^{ab}\psi, & \delta_\epsilon e^a & =-\ell \kappa \bar\epsilon \gamma^a \psi, & \delta_\epsilon \bar\psi & =\frac1\kappa\left(\mathscr D^\omega \bar\epsilon-\frac1{2\ell}e^a \bar\epsilon \gamma_a\right).
 \end{align}$$
 
 The corresponding transformations of $\mathbb B$ are
 
 $$\begin{align}
-\delta_\lambda B^{(s)ab} & =-[\lambda,B^{(s)}]^{ab}, &
-\delta_\lambda B^{(s)a} & =-\lambda^a{}_b B^{(s)b}, &
-\delta_\lambda \mathscr{\bar B} & =\frac14 \mathscr{\bar B}\gamma_{ab}\lambda^{ab}, \\
-\delta_\zeta B^{(s)ab} & =B^{(s)a}\zeta^b-B^{(s)b}\zeta^a, &
-\delta_\zeta B^{(s)a} & =B^{(s)ab}\zeta_b, &
-\delta_\zeta \mathscr{\bar B} & =\frac12 \mathscr{\bar B}\gamma_a\zeta^a, \\
-\delta_\epsilon B^{(s)a} & =-\bar\epsilon \gamma^a \mathscr B, &
-\delta_\epsilon B^{(s)ab} & =\bar\epsilon \gamma^{ab}\mathscr B, &
-\delta_\epsilon \mathscr{\bar B} & =-\frac14 \bar\epsilon \gamma^{ab}B^{(s)}_{ab}-\frac12 \bar\epsilon \gamma_a B^{(s)a}.
+\delta_\lambda B^{(s)ab} & =-[\lambda,B^{(s)}]^{ab}, & \delta_\lambda B^{(s)a} & =-\lambda^a{}_b B^{(s)b}, & \delta_\lambda \mathscr{\bar B} & =\frac14 \mathscr{\bar B}\gamma_{ab}\lambda^{ab}, \\
+\delta_\zeta B^{(s)ab} & =B^{(s)a}\zeta^b-B^{(s)b}\zeta^a, & \delta_\zeta B^{(s)a} & =B^{(s)ab}\zeta_b, & \delta_\zeta \mathscr{\bar B} & =\frac12 \mathscr{\bar B}\gamma_a\zeta^a, \\
+\delta_\epsilon B^{(s)a} & =-\bar\epsilon \gamma^a \mathscr B, & \delta_\epsilon B^{(s)ab} & =\bar\epsilon \gamma^{ab}\mathscr B, & \delta_\epsilon \mathscr{\bar B} & =-\frac14 \bar\epsilon \gamma^{ab}B^{(s)}_{ab}-\frac12 \bar\epsilon \gamma_a B^{(s)a}.
 \end{align}$$
 
 we write
@@ -1221,10 +1178,8 @@ H_D[\xi] & = X_\xi \cdot \theta - \alpha_\xi \\
 Now use the Cartan-type identities
 
 $$\begin{align}
-\mathcal L_\xi A^{IJ}
-& =\iota_\xi F^{IJ}+D^A(\iota_\xi A^{IJ})+\kappa^2 \bar\psi \gamma^{IJ}\iota_\xi \psi, \\
-\mathcal L_\xi \bar\psi
-& =\frac1\kappa \iota_\xi \mathscr{\bar F}+\mathscr D^A(\iota_\xi \bar\psi)+\bar\psi \gamma_{IJ}\iota_\xi A^{IJ}.
+\mathcal L_\xi A^{IJ} & =\iota_\xi F^{IJ}+D^A(\iota_\xi A^{IJ})+\kappa^2 \bar\psi \gamma^{IJ}\iota_\xi \psi, \\
+\mathcal L_\xi \bar\psi & =\frac1\kappa \iota_\xi \mathscr{\bar F}+\mathscr D^A(\iota_\xi \bar\psi)+\bar\psi \gamma_{IJ}\iota_\xi A^{IJ}.
 \end{align}$$
 
 Substituting them into $H_D[\xi]$ gives
@@ -1303,8 +1258,7 @@ $$\begin{align}
 #### Lorentz-supersymmetry
 
 $$\begin{align}
-\delta_{\lambda_1}H_S[\epsilon_2]
-& =\frac{1}{4\pi}\int_{\partial \Sigma}\delta_{\lambda_1}\mathscr{\bar B}\,\epsilon_2 \\
+\delta_{\lambda_1}H_S[\epsilon_2] & =\frac{1}{4\pi}\int_{\partial \Sigma}\delta_{\lambda_1}\mathscr{\bar B}\,\epsilon_2 \\
 & =\frac{1}{16\pi}\int_{\partial \Sigma}\mathscr{\bar B}\gamma_{ab}\lambda_1^{ab}\epsilon_2.
 \end{align}$$
 
@@ -1348,17 +1302,14 @@ $$\begin{align}
 
 $$\begin{align}
 \delta_{\epsilon_2}H_S[\epsilon_1] & =\frac{1}{4\pi}\int_{\partial \Sigma}\delta_{\epsilon_2}\mathscr{\bar B}\,\epsilon_1 \\
-& =\frac{1}{4\pi}\int_{\partial \Sigma}
-\left(-\frac14 \bar\epsilon_2 \gamma^{ab}B^{(s)}_{ab}-\frac12 \bar\epsilon_2 \gamma_a B^{(s)a}\right)\epsilon_1 \\
-& =-\frac{1}{16\pi}\int_{\partial \Sigma}B^{(s)}_{ab}\,\bar\epsilon_2 \gamma^{ab}\epsilon_1
--\frac{1}{8\pi}\int_{\partial \Sigma}B^{(s)}_a\,\bar\epsilon_2 \gamma^a \epsilon_1.
+& =\frac{1}{4\pi}\int_{\partial \Sigma} \left(-\frac14 \bar\epsilon_2 \gamma^{ab}B^{(s)}_{ab}-\frac12 \bar\epsilon_2 \gamma_a B^{(s)a}\right)\epsilon_1 \\
+& =-\frac{1}{16\pi}\int_{\partial \Sigma}B^{(s)}_{ab}\,\bar\epsilon_2 \gamma^{ab}\epsilon_1 -\frac{1}{8\pi}\int_{\partial \Sigma}B^{(s)}_a\,\bar\epsilon_2 \gamma^a \epsilon_1.
 \end{align}$$
 
 Using the antisymmetry properties of Majorana bilinears, this becomes
 
 $$\begin{align}
-\{H_S[\epsilon_1],H_S[\epsilon_2]\}
-=H_L[\lambda_{12}]+H_T[\zeta_{12}],
+\{H_S[\epsilon_1],H_S[\epsilon_2]\} =H_L[\lambda_{12}]+H_T[\zeta_{12}],
 \end{align}$$
 
 with
@@ -1399,8 +1350,7 @@ The diffeomorphism charge is
 
 $$\begin{align}
 H_D[\xi]
-\approx \frac{1}{16\pi}\int_{\partial \Sigma}B^{(s)}_{IJ}\iota_\xi A^{IJ}
-+\frac{\kappa}{4\pi}\int_{\partial \Sigma}\mathscr{\bar B}\iota_\xi \psi.
+\approx \frac{1}{16\pi}\int_{\partial \Sigma}B^{(s)}_{IJ}\iota_\xi A^{IJ} +\frac{\kappa}{4\pi}\int_{\partial \Sigma}\mathscr{\bar B}\iota_\xi \psi.
 \end{align}$$
 
 Because diffeomorphisms act by Lie derivatives on all fields and parameters,
