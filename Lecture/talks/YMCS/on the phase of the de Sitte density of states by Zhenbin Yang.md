@@ -58,8 +58,7 @@ I & =\frac{1}{4G}\int \mathrm{d}^{2}x\sqrt{ \hat{g} }(\varphi,\omega) \mathcal{D
 \varphi \\
 \omega
 \end{pmatrix} \\
-\mathcal{D} & =\begin{pmatrix}
--\frac{V'}{2} & -\nabla ^{2}-V' \\
+\mathcal{D} & =\begin{pmatrix} -\frac{V'}{2} & -\nabla ^{2}-V' \\
 -\nabla ^{2}-V' & \dots
 \end{pmatrix}
 \end{align}$$

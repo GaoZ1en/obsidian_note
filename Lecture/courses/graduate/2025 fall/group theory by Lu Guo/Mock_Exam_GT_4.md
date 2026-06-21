@@ -107,7 +107,6 @@ D(23) & =\begin{pmatrix}
 \end{align}$$
 
 $$\begin{align}
-
 \end{align}$$
 
 1.  **[Branching & Clebsch-Gordan]**
@@ -155,8 +154,7 @@ thus
 
 $$\begin{align}
 D^{(1)}(0,\pi,0) & =e^{-i\pi J_{y}} \\
- & =\begin{pmatrix}
--\frac{1}{2} & 0 & -\frac{\sqrt{ 3 }}{2} \\
+ & =\begin{pmatrix} -\frac{1}{2} & 0 & -\frac{\sqrt{ 3 }}{2} \\
 0 & 1 & 0 \\
 -\frac{\sqrt{ 3 }}{2} & 0 & \frac{1}{2}
 \end{pmatrix}

@@ -58,9 +58,9 @@ $$\begin{align}
 equivalently, in the double-layer notation one can write the constant as $\,\big|\braket{ v_l | (\hat{1}\otimes W^{*}) | v_r }\big|^{2}$.
 1. for $\displaystyle{J>h}$, the system is in $\displaystyle{\mathbb{Z}_{2}}$ SSB phase, and one obtains two-fold ground state degeneracy, which are cat states with distinct $\displaystyle{\mathbb{Z}_{2}}$ quantum number $\displaystyle{\pm1}$. we first express the $\displaystyle{\mathbb{Z}_{2}}$ even cat state $\displaystyle{\ket{\Psi_{e}}}$ as a translationally invariant MPS. besides the physical $\displaystyle{\mathbb{Z}_{2}}$ symmetry constraint, we also impose another $\displaystyle{\mathbb{Z}_{2}}$ symmetry acting exclusively on virtual legs
 
-$$
-\begin{align}M_{j} & =J\cdot M_{j}\cdot J^{\dagger}\end{align}
-$$
+$$\begin{align}
+M_{j} & =J\cdot M_{j}\cdot J^{\dagger}
+\end{align}$$
 
    where $\displaystyle{J^{2}=\hat{1}}$ and $\displaystyle{\left\{W(g),J\right\}=0}$. physically, $\displaystyle{J}$ can be viewed as the "renormalized" charge.
 the \displaystyle{\mathbb{Z}_{2}} IGG imposes additional symmetry on the transfer matrix \displaystyle{T}. show that spectrum of \displaystyle{T} is at least two-fold degenerate due to this additional symmetry. normalize the dominant eigenvalue as \displaystyle{1} with two-fold degeneracy. denote the associated two (right) eigenstates as \displaystyle{\ket{v^{e}_{r}}} and \displaystyle{\ket{v^{o}_{r}}}, show that \displaystyle{\ket{v^{o}_{r}}=(J\otimes \hat{1})\ket{v^{e}_{r}}}.

@@ -91,7 +91,8 @@ assume that for coprime positive integers $\displaystyle{a}$ and $\displaystyle{
 
 $$\begin{align}
 V & = \bigcup_{i=1}^k U_{p_i, 0} \\
-W & = \bigcup_{\substack{q \text{ prime},\ q \neq p_i, \\ q \not\equiv b \pmod{a}}} U_{q, 0}
+W & = \bigcup_{\substack{q \text{ prime},\ q \neq p_i, \\
+q \not\equiv b \pmod{a}}} U_{q, 0}
 \end{align}$$
 
 the $\displaystyle{V}$ is the set of multiples of these primes. since $\displaystyle{V}$ is a finite union of closed sets, it is closed. the $\displaystyle{W}$ is the union of multiples of all primes not in the residue class $\displaystyle{b \pmod{a}}$ (and distinct from the $\displaystyle{p_i}$). this is an open set.
@@ -135,8 +136,7 @@ suppose $\displaystyle{A}$ is a compact subset of metric space $\displaystyle{X}
 suppose $\displaystyle{F:E^{1}\times E^{1}\to E^{1}}$ is defined as
 
 $$\begin{align}
-F(x,y) & =\begin{cases}
-\frac{xy}{x^{2}+y^{2}} & (x,y)\neq (0,0) \\
+F(x,y) & =\begin{cases} \frac{xy}{x^{2}+y^{2}} & (x,y)\neq (0,0) \\
 0 & (x,y)=(0,0)
 \end{cases}
 \end{align}$$

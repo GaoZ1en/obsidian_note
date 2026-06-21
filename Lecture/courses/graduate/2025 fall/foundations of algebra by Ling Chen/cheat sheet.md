@@ -1592,7 +1592,6 @@ consider the automorphism
 
 $$\begin{align}
 \phi:\mathbb{Z}_{n}\to \mathbb{Z}_{n} \\
-
 \end{align}$$
 
 $$\begin{align}
@@ -1600,5 +1599,4 @@ R /K\cong f(R)
 \end{align}$$
 
 $$\begin{align}
-
 \end{align}$$

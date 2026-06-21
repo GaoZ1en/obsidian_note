@@ -55,8 +55,7 @@ c)
 a) we have
 
 $$\begin{align}
-C_{3} & =\begin{pmatrix}
--\frac{1}{2} & -\frac{\sqrt{ 3 }}{2} \\
+C_{3} & =\begin{pmatrix} -\frac{1}{2} & -\frac{\sqrt{ 3 }}{2} \\
 \frac{\sqrt{ 3 }}{2} & -\frac{1}{2}
 \end{pmatrix} \\
 C_{2}' & =\begin{pmatrix}
@@ -80,12 +79,10 @@ D(C_{3})\phi _{2}(x,y) & =\left(-\frac{1}{2}x+\frac{\sqrt{ 3 }}{2}y\right)^{2}-\
 thus
 
 $$\begin{align}
-D(C_{3}) & =\begin{pmatrix}
--\frac{1}{2} & \frac{\sqrt{ 3 }}{2} \\
+D(C_{3}) & =\begin{pmatrix} -\frac{1}{2} & \frac{\sqrt{ 3 }}{2} \\
 -\frac{\sqrt{ 3 }}{2} & -\frac{1}{2}
 \end{pmatrix} \\
-D(C_{2}') & =\begin{pmatrix}
--1 & 0 \\
+D(C_{2}') & =\begin{pmatrix} -1 & 0 \\
 0 & 1
 \end{pmatrix}
 \end{align}$$
@@ -125,14 +122,12 @@ D(23) & =\begin{pmatrix}
 0 & -\frac{1}{2} & \frac{\sqrt{ 3 }}{2} \\
 0 & \frac{\sqrt{ 3 }}{2} & \frac{1}{2}
 \end{pmatrix} \\
-D(34) & =\begin{pmatrix}
--\frac{1}{3} & \frac{2\sqrt{ 2 }}{3} & 0 \\
+D(34) & =\begin{pmatrix} -\frac{1}{3} & \frac{2\sqrt{ 2 }}{3} & 0 \\
 \frac{2\sqrt{ 2 }}{3} & \frac{1}{3} & 0 \\
 0 & 0 & 1
 \end{pmatrix} \\
 \implies D(24) & =D(23)D(34) \\
- & =\begin{pmatrix}
--\frac{1}{3} & \frac{2\sqrt{ 2 }}{3} & 0 \\
+ & =\begin{pmatrix} -\frac{1}{3} & \frac{2\sqrt{ 2 }}{3} & 0 \\
 0 & -\frac{1}{6} & \frac{\sqrt{ 3 }}{2} \\
  +\frac{2\sqrt{ 2 }}{3} & -\frac{1}{3} & 0
 \end{pmatrix}
@@ -176,14 +171,13 @@ $$\begin{align}
 $$\begin{align}
 U(\hat{n},\theta) & =\exp\left(-i\frac{\theta}{2}\hat{n}\cdot \vec{\sigma}\right) \\
  & =\cos\left(\frac{\theta}{2}\right)I - i\sin\left(\frac{\theta}{2}\right)(\hat{n}\cdot \vec{\sigma}) \\
- & =\begin{pmatrix}
-\frac{\sqrt{ 2 }}{2} & 0 \\
+ & =\begin{pmatrix} \frac{\sqrt{ 2 }}{2} & 0 \\
 0 & \frac{\sqrt{ 2 }}{2}
 \end{pmatrix}+\frac{\sqrt{ 2 }}{2}\begin{pmatrix}
-0 & 1 \\-1 & 0
+0 & 1 \\
+-1 & 0
 \end{pmatrix} \\
- & =\begin{pmatrix}
-\frac{\sqrt{ 2 }}{2} & \frac{\sqrt{ 2 }}{2} \\
+ & =\begin{pmatrix} \frac{\sqrt{ 2 }}{2} & \frac{\sqrt{ 2 }}{2} \\
 -\frac{\sqrt{ 2 }}{2} & \frac{\sqrt{ 2 }}{2}
 \end{pmatrix}
 \end{align}$$

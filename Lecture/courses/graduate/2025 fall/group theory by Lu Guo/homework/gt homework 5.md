@@ -3,8 +3,7 @@
 calculate the Euler angles of the following rotation transformation matrix $\displaystyle{R}$:
 
 $$\begin{align}
-R(\alpha,\beta,\gamma) & =\frac{1}{4}\begin{pmatrix}
--\sqrt{ 3 }-2 & \sqrt{ 3 }-2 & -\sqrt{ 2 } \\
+R(\alpha,\beta,\gamma) & =\frac{1}{4}\begin{pmatrix} -\sqrt{ 3 }-2 & \sqrt{ 3 }-2 & -\sqrt{ 2 } \\
 \sqrt{ 3 }-2 & -\sqrt{ 3 }-2 & \sqrt{ 2 } \\
 -\sqrt{ 2 } & \sqrt{ 2 } & 2\sqrt{ 3 }
 \end{pmatrix}

@@ -77,7 +77,6 @@ in the Dirac representation, the gamma matrices are given by
 so we have
 
 $$\begin{align}
-
 \end{align}$$
 
 |                      | $\displaystyle{\bar{\psi}\psi}$ | $\displaystyle{i\bar{\psi}\gamma ^{5}\psi}$ | $\displaystyle{\bar{\psi}\gamma ^{\mu}\psi}$ | $\displaystyle{\bar{\psi}\gamma ^{\mu}\gamma ^{5}\psi}$ | $\displaystyle{\bar{\psi}\sigma ^{\mu \nu}\psi}$ | $\displaystyle{\partial _{\mu}}$ |

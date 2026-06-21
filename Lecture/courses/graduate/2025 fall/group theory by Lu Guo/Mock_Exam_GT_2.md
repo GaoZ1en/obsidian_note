@@ -124,8 +124,7 @@ D(12) & =\begin{pmatrix}
 d) we have
 
 $$\begin{align}
-D(23) & =\begin{pmatrix}
--\frac{1}{2} & \frac{\sqrt{ 3 }}{2} \\
+D(23) & =\begin{pmatrix} -\frac{1}{2} & \frac{\sqrt{ 3 }}{2} \\
 \frac{\sqrt{ 3 }}{2} & \frac{1}{2}
 \end{pmatrix}
 \end{align}$$
@@ -168,8 +167,7 @@ J_{x} & =\begin{pmatrix}
 and the eigenvector for eigenvalue $\displaystyle{1}$ is
 
 $$\begin{align}
-\begin{pmatrix}
-\frac{1}{2} \\
+\begin{pmatrix} \frac{1}{2} \\
 \frac{1}{\sqrt{ 2 }} \\
 \frac{1}{2}
 \end{pmatrix}

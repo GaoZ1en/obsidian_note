@@ -8,8 +8,7 @@ m\cdot \bar{m} & =1
 we denote $\displaystyle{D=\nabla _{l},D'=\nabla _{n},\delta=\nabla _{m},\bar{\delta}=\nabla _{\bar{m}}}$, we define the complex connection coefficients as
 
 $$\begin{align}
-\begin{matrix}
- & \braket{ m,\nabla l }  & \braket{ n,\nabla l }  & \braket{ \bar{m},\nabla m }  & \braket{ \bar{m},\nabla n }  \\
+\begin{matrix} & \braket{ m,\nabla l }  & \braket{ n,\nabla l }  & \braket{ \bar{m},\nabla m }  & \braket{ \bar{m},\nabla n }  \\
 D & -\kappa & -(\varepsilon+\bar{\varepsilon}) & \varepsilon-\bar{\varepsilon} & \pi \\
 D' & -\tau & -(\gamma+\bar{\gamma}) & \gamma-\bar{\gamma} & \nu \\
 \delta & -\sigma & -(\bar{\alpha}+\beta) & -\bar{\alpha}+\beta & \mu \\

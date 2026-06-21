@@ -7,7 +7,9 @@ $$\begin{align}
 where $\displaystyle{\psi(x)}$ is the spinor wave function for the particle and the matrices, $\displaystyle{\left\{\gamma ^{\mu}\right\}}$ are given by
 
 $$\begin{align}
-\gamma ^{0}=\begin{pmatrix}\mathbf{1} & 0 \\0 & -\mathbf{1}\end{pmatrix},\quad \gamma ^{j} & =\begin{pmatrix}0 & \sigma _{j} \\-\sigma _{j} & 0\end{pmatrix}
+\gamma ^{0}=\begin{pmatrix}\mathbf{1} & 0 \\
+0 & -\mathbf{1}\end{pmatrix},\quad \gamma ^{j} & =\begin{pmatrix}0 & \sigma _{j} \\
+-\sigma _{j} & 0\end{pmatrix}
 \end{align}$$
 
 Here $\displaystyle{\mathbf{1}}$ is the 2x2 unit matrix and $\displaystyle{\left\{\sigma _{j}\right\}}$ are the Pauli matrices which satisfy $\displaystyle{\sigma _{j}^{2}=\mathbf{1}}$ and $\displaystyle{\sigma _{i}\sigma _{j}=-\sigma _{j}\sigma _{i}=i\varepsilon _{ijk}\sigma_{k}}$. verify that

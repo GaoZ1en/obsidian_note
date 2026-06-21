@@ -58,8 +58,7 @@ $$\begin{align}
 \vec{a}'(s) \\
 \vec{b}'(s) \\
 \vec{c}'(s)
-\end{pmatrix} & =\begin{pmatrix}
- & \alpha & \beta \\
+\end{pmatrix} & =\begin{pmatrix} & \alpha & \beta \\
 -\alpha &  & \gamma \\
 -\beta & -\gamma
 \end{pmatrix}\begin{pmatrix}

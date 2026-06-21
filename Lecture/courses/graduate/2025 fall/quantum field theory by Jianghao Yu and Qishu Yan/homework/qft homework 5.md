@@ -72,14 +72,11 @@ $$\begin{align}
 we have
 
 $$\begin{align}
-\sum _{s}u^{s}(p)\bar{u}^{s}(p) & =\sum _{s}\begin{pmatrix}
-\sqrt{ p\cdot \sigma }\xi ^{s} \\
+\sum _{s}u^{s}(p)\bar{u}^{s}(p) & =\sum _{s}\begin{pmatrix} \sqrt{ p\cdot \sigma }\xi ^{s} \\
 \sqrt{ p\cdot \bar{\sigma} }\xi ^{s}
-\end{pmatrix}\begin{pmatrix}
-\sqrt{ p\cdot \bar{\sigma} }\xi ^{s\dagger} & \sqrt{ p\cdot \sigma }\xi ^{s}
+\end{pmatrix}\begin{pmatrix} \sqrt{ p\cdot \bar{\sigma} }\xi ^{s\dagger} & \sqrt{ p\cdot \sigma }\xi ^{s}
 \end{pmatrix} \\
- & =\begin{pmatrix}
--m & p\cdot \sigma \\
+ & =\begin{pmatrix} -m & p\cdot \sigma \\
 p\cdot \bar{\sigma} & -m
 \end{pmatrix}=\gamma \cdot p-m
 \end{align}$$

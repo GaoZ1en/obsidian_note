@@ -48,8 +48,7 @@ D\psi _{3}(x,y) & =\psi _{3}(x,y)
 thus the representation matrices are
 
 $$\begin{align}
-D & =\begin{pmatrix}
--\frac{1}{2} & -\frac{\sqrt{ 3 }}{2} & 0 \\
+D & =\begin{pmatrix} -\frac{1}{2} & -\frac{\sqrt{ 3 }}{2} & 0 \\
 \frac{\sqrt{ 3 }}{2} & -\frac{1}{2} & 0 \\
 0 & 0 & 1
 \end{pmatrix}
@@ -187,8 +186,7 @@ thus the matrix of $\displaystyle{(2,3)}$ in this representation is calculated a
 - diagonal elements are given by $\displaystyle{\frac{1}{\rho}}$, where $\displaystyle{\rho}$ is the axial distance between 2 and 3 in each tableau; off-diagonal elements are given by $\displaystyle{\sqrt{1-\frac{1}{\rho^{2}}}}$ if exchanging 2 and 3 gives another standard tableau, otherwise 0. thus we have
 
 $$\begin{align}
-D(23) & =\begin{pmatrix}
-\frac{1}{2} & 0 & \frac{\sqrt{ 3 }}{2} & 0 & 0 \\
+D(23) & =\begin{pmatrix} \frac{1}{2} & 0 & \frac{\sqrt{ 3 }}{2} & 0 & 0 \\
 0 & \frac{1}{2} & 0 & \frac{\sqrt{ 3 }}{2} & 0 \\
 \frac{\sqrt{ 3 }}{2} & 0 & -\frac{1}{2} &0 & 0 \\
 0 & \frac{\sqrt{ 3 }}{2} & 0 & -\frac{1}{2} & 0 \\

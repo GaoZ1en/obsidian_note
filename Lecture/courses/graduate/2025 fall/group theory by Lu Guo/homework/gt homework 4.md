@@ -526,8 +526,7 @@ D^{[2,2,1]}((12)) & =\begin{pmatrix}
 \end{align}$$
 
 $$\begin{align}
-D^{[2,2,1]}((23)) & =\begin{pmatrix}
-\frac{1}{2} & 0 & \frac{\sqrt{ 3 }}{2} & 0 & 0 \\
+D^{[2,2,1]}((23)) & =\begin{pmatrix} \frac{1}{2} & 0 & \frac{\sqrt{ 3 }}{2} & 0 & 0 \\
 0 & \frac{1}{2} & 0 & \frac{\sqrt{ 3 }}{2} & 0 \\
 \frac{\sqrt{ 3 }}{2} & 0 & -\frac{1}{2} & 0 & 0 \\
 0 & \frac{\sqrt{ 3 }}{2} & 0 & -\frac{1}{2} & 0 \\
@@ -546,8 +545,7 @@ D^{[2,2,1]}((34)) & =\begin{pmatrix}
 \end{align}$$
 
 $$\begin{align}
-D^{[2,2,1]}((45)) & =\begin{pmatrix}
-\frac{1}{2} & \frac{\sqrt{ 3 }}{2} & 0 & 0 & 0 \\
+D^{[2,2,1]}((45)) & =\begin{pmatrix} \frac{1}{2} & \frac{\sqrt{ 3 }}{2} & 0 & 0 & 0 \\
 \frac{\sqrt{ 3 }}{2} & -\frac{1}{2} & 0 & 0 & 0 \\
 0 & 0 & \frac{1}{2} & \frac{\sqrt{ 3 }}{2} & 0 \\
 0 & 0 & \frac{\sqrt{ 3 }}{2} & -\frac{1}{2} & 0 \\
@@ -557,8 +555,7 @@ D^{[2,2,1]}((45)) & =\begin{pmatrix}
 
 $$\begin{align}
 D^{[2,2,1]}((12345)) & =D^{[2,2,1]}((12))D^{[2,2,1]}((23))D^{[2,2,1]}((34))D^{[2,2,1]}((45)) \\
- & =\begin{pmatrix}
-\frac{1}{4} & \frac{\sqrt{ 3 }}{4} & -\frac{\sqrt{ 3 }}{4} & -\frac{3}{4} & 0 \\
+ & =\begin{pmatrix} \frac{1}{4} & \frac{\sqrt{ 3 }}{4} & -\frac{\sqrt{ 3 }}{4} & -\frac{3}{4} & 0 \\
 -\frac{\sqrt{ 3 }}{4} & \frac{1}{4} & \frac{1}{4} & -\frac{\sqrt{ 3 }}{12} & -\frac{\sqrt{ 6 }}{3} \\
 -\frac{\sqrt{ 3 }}{4} & -\frac{3}{4} & -\frac{1}{4} & -\frac{\sqrt{ 3 }}{4} & 0 \\
 \frac{3}{4} & -\frac{\sqrt{ 3 }}{4} & \frac{\sqrt{ 3 }}{12} & -\frac{1}{12} & -\frac{\sqrt{ 2 }}{3} \\

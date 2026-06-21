@@ -241,8 +241,7 @@ y
 consider the generators $\displaystyle{R,S}$. their transformation matrices are exactly the representation matrices of the two-dimensional irreducible representation $\displaystyle{E}$ of $\displaystyle{\mathrm{D}_{3}}$:
 
 $$\begin{align}
-R & =E(R)=\frac{1}{2}\begin{pmatrix}
--1 & -\sqrt{ 3 } \\
+R & =E(R)=\frac{1}{2}\begin{pmatrix} -1 & -\sqrt{ 3 } \\
 \sqrt{ 3 } & -1
 \end{pmatrix} \\
 S & =E(S)=\begin{pmatrix}
@@ -285,8 +284,7 @@ $$\begin{align}
  & =-\frac{3}{8}\psi _{1}(x,y)-\frac{\sqrt{ 3 }}{8}\psi _{2}(x,y)+\frac{5}{8}\psi _{3}(x,y)-\frac{\sqrt{ 3 }}{8}\psi _{4}(x,y) \\
 \psi _{4}(R(x,y)) & =\frac{1}{2^{3}}(\sqrt{ 3 }x - y)^{3} \\
  & =\frac{3\sqrt{ 3 }}{8}x^{3}-\frac{9}{8}x^{2}y+\frac{3\sqrt{ 3 }}{8}xy^{2}-\frac{1}{8}y^{3} \\
-\implies D(R) & =\begin{pmatrix}
--\frac{1}{8} & -\frac{3\sqrt{ 3 }}{8} & -\frac{9}{8} & -\frac{3\sqrt{ 3 }}{8} \\
+\implies D(R) & =\begin{pmatrix} -\frac{1}{8} & -\frac{3\sqrt{ 3 }}{8} & -\frac{9}{8} & -\frac{3\sqrt{ 3 }}{8} \\
 \frac{\sqrt{ 3 }}{8} & \frac{5}{8} & \frac{\sqrt{ 3 }}{8} & -\frac{3}{8} \\
 -\frac{3}{8} & -\frac{\sqrt{ 3 }}{8} & \frac{5}{8} & -\frac{\sqrt{ 3 }}{8} \\
 \frac{3\sqrt{ 3 }}{8} & -\frac{9}{8} & \frac{3\sqrt{ 3 }}{8} & -\frac{1}{8}
@@ -353,6 +351,8 @@ $$\begin{align}
 A_{1}: & \quad \psi _{1}(x,y)+\psi _{4}(x,y) = x^{3}+y^{3} \\
 A_{2}: & \quad \psi _{2}(x,y)-\psi _{3}(x,y) = x^{2}y - xy^{2} \\
 E: & \quad \begin{pmatrix}
-\psi _{1}(x,y)-\psi _{4}(x,y) \\ \psi _{2}(x,y)+\psi _{3}(x,y) \end{pmatrix} = \begin{pmatrix}
-x^{3}-y^{3} \\ x^{2}y + xy^{2} \end{pmatrix}
+\psi _{1}(x,y)-\psi _{4}(x,y) \\
+\psi _{2}(x,y)+\psi _{3}(x,y) \end{pmatrix} = \begin{pmatrix}
+x^{3}-y^{3} \\
+x^{2}y + xy^{2} \end{pmatrix}
 \end{align}$$

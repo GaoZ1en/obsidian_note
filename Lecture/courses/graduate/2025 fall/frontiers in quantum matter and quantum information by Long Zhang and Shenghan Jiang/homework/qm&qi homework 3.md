@@ -41,15 +41,14 @@ i & 0
 
 and then
 
-$$
-\begin{align} \\
+$$\begin{align}
+\\
 XY^{n}X & = (XYX)^{n} \\
  & =(-1)^{n}Y^{n} \\
 XR_{y}(\theta)X & =\sum ^{\infty}_{n=0}\left( \frac{-i\theta}{2} \right)^{n}XY^{n}X \\
  & =\sum ^{\infty}_{n=0}\left( \frac{i\theta}{2} \right)^{n}Y^{n} \\
  & =R_{y}(-\theta)
-\end{align}
-$$
+\end{align}$$
 
 ## exercise 4.13
 
@@ -480,8 +479,7 @@ e^{-i\theta/2} & 0 & 0 & 0 \\
 0 & 0 & 0 & e^{i\theta/2} \\
 0 & 0 & e^{i\theta/2} & 0
 \end{pmatrix} \\
- & =
-\begin{pmatrix}
+ & = \begin{pmatrix}
 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 0 & 1 \\

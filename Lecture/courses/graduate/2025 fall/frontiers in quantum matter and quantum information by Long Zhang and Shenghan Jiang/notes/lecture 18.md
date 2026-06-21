@@ -61,8 +61,7 @@ then
 
 $$\begin{align}
 \sigma _{ij}^{2} & =i\gamma _{i}\gamma _{j} \\
- & =\begin{cases}
-+1 & \text{parity even} \\
+ & =\begin{cases} +1 & \text{parity even} \\
 -1 & \text{parity odd}
 \end{cases}
 \end{align}$$
@@ -242,8 +241,7 @@ after hybridization
 
 $$\begin{align}
 \Delta H & =+A\vec{k}\cdot \vec{\sigma}\tau _{x} \\
- & =\begin{pmatrix}
- & Ak _{z} &  & A(k _{x}-i k_{y}) \\
+ & =\begin{pmatrix} & Ak _{z} &  & A(k _{x}-i k_{y}) \\
 Ak _{z} &  & A(k _{x}+ik _{y}) &  \\
  & A(k _{x}-i k _{y}) &  & -Ak _{z} \\
 A(k _{x}+ik _{y}) & & -Ak _{z}

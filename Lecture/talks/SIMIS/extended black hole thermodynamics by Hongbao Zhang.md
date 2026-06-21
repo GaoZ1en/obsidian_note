@@ -57,13 +57,12 @@ $$\begin{align}
 
 introducing auxiliary gauge fields, see PRL 132. 191401(2024) K.Hajian, B.Tekin. by CPS formalism
 
-$$
-\begin{align} \\
+$$\begin{align}
+\\
 \tilde{\mathbf{L}} & =\mathbf{L}_{0}+\alpha ^{i}(\mathbf{L}_{i}-\mathrm{d}A_{i}) \\
 \delta\tilde{\mathbf{L}} & =(\mathbf{E}_{0}^{\phi}+\alpha ^{i}\mathbf{E}^{\phi}_{i})\delta \phi+(\mathbf{L}_{i}-\mathrm{d}A_{i})\delta \alpha ^{i}+(\mathrm{d}\alpha ^{i})\delta A_{i} \\
  & -\Theta _{i}\mathrm{d}\alpha ^{i}+\mathrm{d}(\Theta _{0}+\alpha ^{i}\Theta _{i}-\alpha ^{i}\delta A_{i})
-\end{align}
-$$
+\end{align}$$
 
 following the same procedure, we will endend up with
 

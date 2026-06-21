@@ -56,23 +56,35 @@ calculate the inverse metric $\displaystyle{g^{\mu \nu}}$ in both cases.
 *sol*. for problem 1, we have
 
 $$\begin{align}
-g_{\mu \nu} & =\begin{pmatrix} -\left( 1-\frac{2M}{r} \right) & \frac{2M}{r} & 0 & 0 \\ \frac{2M}{r} & \left( 1+\frac{2M}{r} \right) & 0 & 0 \\ 0 & 0 & r^{2} & 0 \\ 0 & 0 & 0 & r^{2}\sin^{2}\theta \end{pmatrix}
+g_{\mu \nu} & =\begin{pmatrix} -\left( 1-\frac{2M}{r} \right) & \frac{2M}{r} & 0 & 0 \\
+\frac{2M}{r} & \left( 1+\frac{2M}{r} \right) & 0 & 0 \\
+0 & 0 & r^{2} & 0 \\
+0 & 0 & 0 & r^{2}\sin^{2}\theta \end{pmatrix}
 \end{align}$$
 
 then
 
 $$\begin{align}
-g^{\mu \nu} & =\begin{pmatrix} -\left( 1+\frac{2M}{r} \right) & \frac{2M}{r} & 0 & 0 \\ \frac{2M}{r} & \left( 1-\frac{2M}{r} \right) & 0 & 0 \\ 0 & 0 & \frac{1}{r^{2}} & 0 \\ 0 & 0 & 0 & \frac{1}{r^{2}\sin^{2}\theta} \end{pmatrix}
+g^{\mu \nu} & =\begin{pmatrix} -\left( 1+\frac{2M}{r} \right) & \frac{2M}{r} & 0 & 0 \\
+\frac{2M}{r} & \left( 1-\frac{2M}{r} \right) & 0 & 0 \\
+0 & 0 & \frac{1}{r^{2}} & 0 \\
+0 & 0 & 0 & \frac{1}{r^{2}\sin^{2}\theta} \end{pmatrix}
 \end{align}$$
 
 for problem 2, we have
 
 $$\begin{align}
-g_{\mu \nu} & =\begin{pmatrix} -\left( 1-\frac{2M}{r} \right) & 1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & r^{2} & 0 \\ 0 & 0 & 0 & r^{2}\sin^{2}\theta \end{pmatrix}
+g_{\mu \nu} & =\begin{pmatrix} -\left( 1-\frac{2M}{r} \right) & 1 & 0 & 0 \\
+1 & 0 & 0 & 0 \\
+0 & 0 & r^{2} & 0 \\
+0 & 0 & 0 & r^{2}\sin^{2}\theta \end{pmatrix}
 \end{align}$$
 
 then
 
 $$\begin{align}
-g^{\mu \nu} & =\begin{pmatrix} 0 & 1 & 0 & 0 \\ 1 & \left( 1-\frac{2M}{r} \right) & 0 & 0 \\ 0 & 0 & \frac{1}{r^{2}} & 0 \\ 0 & 0 & 0 & \frac{1}{r^{2}\sin^{2}\theta} \end{pmatrix}
+g^{\mu \nu} & =\begin{pmatrix} 0 & 1 & 0 & 0 \\
+1 & \left( 1-\frac{2M}{r} \right) & 0 & 0 \\
+0 & 0 & \frac{1}{r^{2}} & 0 \\
+0 & 0 & 0 & \frac{1}{r^{2}\sin^{2}\theta} \end{pmatrix}
 \end{align}$$

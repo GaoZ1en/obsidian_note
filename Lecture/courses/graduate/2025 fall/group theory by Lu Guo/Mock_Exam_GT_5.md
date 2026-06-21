@@ -192,7 +192,8 @@ we have
 
 $$\begin{align}
 D^{(1/2)}(\hat{z},\alpha) & =\begin{pmatrix}
-e^{-i\alpha/2} & 0 \\ 0 & e^{i\alpha/2} \end{pmatrix} \\
+e^{-i\alpha/2} & 0 \\
+0 & e^{i\alpha/2} \end{pmatrix} \\
 \implies D^{(1/2\otimes 1/2)}(\hat{z},\alpha) & =D^{(1/2)}(\hat{z},\alpha)\otimes D^{(1/2)}(\hat{z},\alpha) \\
  & =\begin{pmatrix}
 e^{-i\alpha} & 0 & 0 & 0 \\

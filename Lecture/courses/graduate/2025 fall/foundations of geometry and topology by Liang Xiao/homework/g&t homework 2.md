@@ -177,14 +177,12 @@ Gaussian curvature and mean curvature
 $$\begin{align}
 K & =\frac{LN-M^{2}}{EG-F^{2}} \\
  & =\frac{(-g'f''+f'g'')g'}{f} \\
- & = \begin{cases}
--\frac{f''}{f} & g' \neq 0 \\
+ & = \begin{cases} -\frac{f''}{f} & g' \neq 0 \\
 0 & g' = 0
 \end{cases}\\
 H & =\frac{EN+GL-2FM}{2(EG-F^{2})} \\
  & =\frac{g'-fg'f''+ff'g''}{2f} \\
- & =\begin{cases}
-\frac{1}{2}\left(-\frac{f''}{g'}+\frac{g'}{f}\right) & g' \neq 0 \\
+ & =\begin{cases} \frac{1}{2}\left(-\frac{f''}{g'}+\frac{g'}{f}\right) & g' \neq 0 \\
 \frac{1}{2}g'' & g' = 0
 \end{cases}
 \end{align}$$
@@ -212,8 +210,7 @@ M & =\frac{EN+GL-2FM}{2(EG-F^{2})}
 Theorema Egregium states that the Gaussian curvature $\displaystyle{K}$ is an intrinsic invariant of the surface, i.e.,
 
 $$\begin{align}
-K & =\frac{1}{(EG-F^{2})}\begin{vmatrix}
--\frac{1}{2}G_{uu}+F_{uv}-\frac{1}{2}E_{vv} & \frac{1}{2}E_{u} & F_{u}-\frac{1}{2}E_{v} \\
+K & =\frac{1}{(EG-F^{2})}\begin{vmatrix} -\frac{1}{2}G_{uu}+F_{uv}-\frac{1}{2}E_{vv} & \frac{1}{2}E_{u} & F_{u}-\frac{1}{2}E_{v} \\
 F_{v}-\frac{1}{2}F_{u} & E & F \\
 \frac{1}{2}G_{v} & F & G
 \end{vmatrix}-\frac{1}{(EG-F^{2})^{2}}\begin{vmatrix}
