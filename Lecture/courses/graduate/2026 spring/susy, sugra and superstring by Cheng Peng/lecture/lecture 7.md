@@ -216,8 +216,7 @@ $$\begin{align}
 to extract the commutator we integrate $z$ around $w$ and then integrate $w$. the double pole gives a derivative:
 
 $$\begin{align}
-[A_{m}^{i},A_{n}^{j}] & = -\delta^{ij}\oint \frac{\mathrm{d}w}{2\pi i}\partial \left(e^{i(m+n)k\cdot X(w)}\right)
-+ \text{zero-mode contribution}
+[A_{m}^{i},A_{n}^{j}] & = -\delta^{ij}\oint \frac{\mathrm{d}w}{2\pi i}\partial \left(e^{i(m+n)k\cdot X(w)}\right) + \text{zero-mode contribution}
 \end{align}$$
 
 on a state with the normalization $2\alpha' p\cdot k=1$, the zero-mode part turns this into the standard Heisenberg algebra,

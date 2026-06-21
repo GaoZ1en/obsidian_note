@@ -38,8 +38,7 @@ In the current course material, this topic is already touched implicitly wheneve
 BRST quantization replaces the list of physical-state constraints by a single cohomological condition:
 
 $$\begin{align}
-Q_{\mathrm{BRST}}\ket{\mathrm{phys}}=0,
-\qquad
+Q_{\mathrm{BRST}}\ket{\mathrm{phys}}=0, \qquad
 \ket{\mathrm{phys}}\sim \ket{\mathrm{phys}}+Q_{\mathrm{BRST}}\ket{\chi}.
 \end{align}$$
 
@@ -91,10 +90,7 @@ is the correct physical-state condition and why states differing by a BRST-exact
 Bosonic-string BRST charge:
 
 $$\begin{align}
-Q_{\mathrm{BRST}}
-=
-\sum_{n} c_{-n}(L_{n}-a\delta_{n,0})
--\frac{1}{2}\sum_{m,n}(m-n):c_{-m}c_{-n}b_{m+n}:.
+Q_{\mathrm{BRST}} = \sum_{n} c_{-n}(L_{n}-a\delta_{n,0}) -\frac{1}{2}\sum_{m,n}(m-n):c_{-m}c_{-n}b_{m+n}:.
 \end{align}$$
 
 Core statements:
@@ -192,8 +188,7 @@ The most natural exam problems are:
 Open-string tachyon:
 
 $$\begin{align}
-V_{\mathrm{tachyon}}(x)=:e^{ik\cdot X(x)}:,
-\qquad
+V_{\mathrm{tachyon}}(x)=:e^{ik\cdot X(x)}:, \qquad
 h=\alpha' k^{2}.
 \end{align}$$
 
@@ -206,28 +201,22 @@ V_{\mathrm{vector}}(x)=\zeta_{\mu}:\partial X^{\mu}e^{ik\cdot X}:(x),
 with physical-state conditions
 
 $$\begin{align}
-k^{2}=0,
-\qquad
-k\cdot \zeta=0,
-\qquad
+k^{2}=0, \qquad
+k\cdot \zeta=0, \qquad
 \zeta_{\mu}\sim \zeta_{\mu}+\lambda k_{\mu}.
 \end{align}$$
 
 Closed-string tensor:
 
 $$\begin{align}
-V_{\mathrm{closed}}(z,\bar z)
-=
-\epsilon_{\mu\nu}:\partial X^{\mu}\bar{\partial}X^{\nu}e^{ik\cdot X}:,
+V_{\mathrm{closed}}(z,\bar z) = \epsilon_{\mu\nu}:\partial X^{\mu}\bar{\partial}X^{\nu}e^{ik\cdot X}:,
 \end{align}$$
 
 with
 
 $$\begin{align}
-(h,\bar h)=(1,1),
-\qquad
-k^{2}=0,
-\qquad
+(h,\bar h)=(1,1), \qquad
+k^{2}=0, \qquad
 k^{\mu}\epsilon_{\mu\nu}=k^{\nu}\epsilon_{\mu\nu}=0.
 \end{align}$$
 
@@ -293,8 +282,7 @@ The most natural exam problems are:
 1. Show that the closed-string spectrum is invariant under
 
 $$\begin{align}
-R\leftrightarrow \frac{\alpha'}{R},
-\qquad
+R\leftrightarrow \frac{\alpha'}{R}, \qquad
 n\leftrightarrow w.
 \end{align}$$
 
@@ -306,36 +294,28 @@ n\leftrightarrow w.
 For a closed string on a circle of radius $R$:
 
 $$\begin{align}
-p=\frac{n}{R},
-\qquad
+p=\frac{n}{R}, \qquad
 \text{winding } = w.
 \end{align}$$
 
 Left/right momenta:
 
 $$\begin{align}
-p_{L}=\frac{n}{R}+\frac{wR}{\alpha'},
-\qquad
+p_{L}=\frac{n}{R}+\frac{wR}{\alpha'}, \qquad
 p_{R}=\frac{n}{R}-\frac{wR}{\alpha'}.
 \end{align}$$
 
 Mass formula:
 
 $$\begin{align}
-M^{2}
-=
-p_{L}^{2}+\frac{4}{\alpha'}(N_{L}-1)
-=
-p_{R}^{2}+\frac{4}{\alpha'}(N_{R}-1).
+M^{2} = p_{L}^{2}+\frac{4}{\alpha'}(N_{L}-1) = p_{R}^{2}+\frac{4}{\alpha'}(N_{R}-1).
 \end{align}$$
 
 T-duality:
 
 $$\begin{align}
-R\leftrightarrow \frac{\alpha'}{R},
-\qquad
-n\leftrightarrow w,
-\qquad
+R\leftrightarrow \frac{\alpha'}{R}, \qquad
+n\leftrightarrow w, \qquad
 X_{R}\to -X_{R}.
 \end{align}$$
 
@@ -423,8 +403,7 @@ The most natural exam problems are:
 Circle compactification:
 
 $$\begin{align}
-X\sim X+2\pi R,
-\qquad
+X\sim X+2\pi R, \qquad
 p=\frac{n}{R}.
 \end{align}$$
 
@@ -479,18 +458,14 @@ It upgrades the Hilbert-space construction to the one-loop worldsheet consistenc
 The central object is the torus partition function
 
 $$\begin{align}
-Z(\tau,\bar{\tau})
-=
-\operatorname{Tr}\left(q^{L_{0}-c/24}\bar{q}^{\tilde{L}_{0}-\tilde{c}/24}\right),
-\qquad
+Z(\tau,\bar{\tau}) = \operatorname{Tr}\left(q^{L_{0}-c/24}\bar{q}^{\tilde{L}_{0}-\tilde{c}/24}\right), \qquad
 q=e^{2\pi i\tau},
 \end{align}$$
 
 and the requirement of invariance under
 
 $$\begin{align}
-T:\tau\mapsto \tau+1,
-\qquad
+T:\tau\mapsto \tau+1, \qquad
 S:\tau\mapsto -\frac{1}{\tau}.
 \end{align}$$
 
@@ -532,18 +507,14 @@ The most natural exam problems are:
 Torus amplitude:
 
 $$\begin{align}
-Z(\tau,\bar\tau)
-=
-\operatorname{Tr}\left(q^{L_{0}-c/24}\bar q^{\tilde L_{0}-\tilde c/24}\right),
-\qquad
+Z(\tau,\bar\tau) = \operatorname{Tr}\left(q^{L_{0}-c/24}\bar q^{\tilde L_{0}-\tilde c/24}\right), \qquad
 q=e^{2\pi i\tau}.
 \end{align}$$
 
 Modular generators:
 
 $$\begin{align}
-T:\tau\mapsto \tau+1,
-\qquad
+T:\tau\mapsto \tau+1, \qquad
 S:\tau\mapsto -\frac{1}{\tau}.
 \end{align}$$
 
@@ -589,12 +560,7 @@ Instead of writing the RNS theory in components, one introduces worldsheet super
 Schematically:
 
 $$\begin{align}
-\mathbb{X}^{\mu}
-=
-X^{\mu}
-+i\theta^{+}\Psi_{+}^{\mu}
-+i\theta^{-}\Psi_{-}^{\mu}
-+i\theta^{+}\theta^{-}F^{\mu}.
+\mathbb{X}^{\mu} = X^{\mu} +i\theta^{+}\Psi_{+}^{\mu} +i\theta^{-}\Psi_{-}^{\mu} +i\theta^{+}\theta^{-}F^{\mu}.
 \end{align}$$
 
 ## Why it is a natural next step
@@ -627,12 +593,7 @@ The most natural exam problems are:
 Basic superfield:
 
 $$\begin{align}
-\mathbb X^{\mu}
-=
-X^{\mu}
-+i\theta^{+}\Psi_{+}^{\mu}
-+i\theta^{-}\Psi_{-}^{\mu}
-+i\theta^{+}\theta^{-}F^{\mu}.
+\mathbb X^{\mu} = X^{\mu} +i\theta^{+}\Psi_{+}^{\mu} +i\theta^{-}\Psi_{-}^{\mu} +i\theta^{+}\theta^{-}F^{\mu}.
 \end{align}$$
 
 Covariant derivatives:
@@ -644,10 +605,8 @@ D_{\pm}=\frac{\partial}{\partial \theta^{\pm}}-i\theta^{\pm}\partial_{\pm}.
 Superspace action:
 
 $$\begin{align}
-S
-\propto
-\int d^{2}\sigma\, d\theta^{+}d\theta^{-}\,
-(D_{+}\mathbb X^{\mu})(D_{-}\mathbb X_{\mu}).
+S \propto
+\int d^{2}\sigma\, d\theta^{+}d\theta^{-}\, (D_{+}\mathbb X^{\mu})(D_{-}\mathbb X_{\mu}).
 \end{align}$$
 
 After component expansion one gets:
@@ -726,8 +685,7 @@ The structural facts to know are:
 For the $SL(2,\mathbb{R})$ WZW example one should remember:
 
 $$\begin{align}
-\partial_{-}(\partial_{+}g\,g^{-1})=0,
-\qquad
+\partial_{-}(\partial_{+}g\,g^{-1})=0, \qquad
 \partial_{+}(g^{-1}\partial_{-}g)=0,
 \end{align}$$
 

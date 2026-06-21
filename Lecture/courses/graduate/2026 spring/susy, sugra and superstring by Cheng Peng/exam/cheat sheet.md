@@ -47,8 +47,7 @@ $$\begin{align}
 and the Virasoro constraints are
 
 $$\begin{align}
-T_{++}=\frac{1}{\alpha'}\partial_{+}X^{\mu}\partial_{+}X_{\mu}=0,
-\qquad
+T_{++}=\frac{1}{\alpha'}\partial_{+}X^{\mu}\partial_{+}X_{\mu}=0, \qquad
 T_{--}=\frac{1}{\alpha'}\partial_{-}X^{\mu}\partial_{-}X_{\mu}=0.
 \end{align}$$
 
@@ -81,23 +80,20 @@ $$\begin{align}
 \end{align}$$
 
 $$\begin{align}
-[\tilde{\alpha}_{m}^{\mu},\tilde{\alpha}_{n}^{\nu}]=m\eta^{\mu\nu}\delta_{m+n,0},
-\qquad
+[\tilde{\alpha}_{m}^{\mu},\tilde{\alpha}_{n}^{\nu}]=m\eta^{\mu\nu}\delta_{m+n,0}, \qquad
 [\alpha_{m}^{\mu},\tilde{\alpha}_{n}^{\nu}]=0.
 \end{align}$$
 
 RNS fermions:
 
 $$\begin{align}
-\{b_{r}^{i},b_{s}^{j}\}=\delta^{ij}\delta_{r+s,0},
-\qquad r,s\in \mathbb{Z}+\frac{1}{2}
+\{b_{r}^{i},b_{s}^{j}\}=\delta^{ij}\delta_{r+s,0}, \qquad r,s\in \mathbb{Z}+\frac{1}{2}
 \end{align}$$
 
 in the NS sector, and
 
 $$\begin{align}
-\{d_{m}^{i},d_{n}^{j}\}=\delta^{ij}\delta_{m+n,0},
-\qquad m,n\in \mathbb{Z}
+\{d_{m}^{i},d_{n}^{j}\}=\delta^{ij}\delta_{m+n,0}, \qquad m,n\in \mathbb{Z}
 \end{align}$$
 
 in the R sector.
@@ -127,8 +123,7 @@ L_{m}=\oint \frac{dz}{2\pi i} z^{m+1}T(z).
 Bosonic open string physical state conditions:
 
 $$\begin{align}
-L_{n}\ket{\mathrm{phys}}=0\quad (n>0),
-\qquad
+L_{n}\ket{\mathrm{phys}}=0\quad (n>0), \qquad
 (L_{0}-1)\ket{\mathrm{phys}}=0.
 \end{align}$$
 
@@ -139,26 +134,22 @@ L_{n}\ket{\mathrm{phys}}=\tilde{L}_{n}\ket{\mathrm{phys}}=0\quad (n>0),
 \end{align}$$
 
 $$\begin{align}
-(L_{0}-1)\ket{\mathrm{phys}}=(\tilde{L}_{0}-1)\ket{\mathrm{phys}}=0,
-\qquad
+(L_{0}-1)\ket{\mathrm{phys}}=(\tilde{L}_{0}-1)\ket{\mathrm{phys}}=0, \qquad
 L_{0}=\tilde{L}_{0}.
 \end{align}$$
 
 RNS open-string mass formula:
 
 $$\begin{align}
-M^{2}=\frac{1}{\alpha'}(N-a),
-\qquad
-a_{\mathrm{NS}}=\frac{1}{2},
-\qquad
+M^{2}=\frac{1}{\alpha'}(N-a), \qquad
+a_{\mathrm{NS}}=\frac{1}{2}, \qquad
 a_{\mathrm{R}}=0.
 \end{align}$$
 
 RNS closed-string mass formula:
 
 $$\begin{align}
-M^{2}=\frac{4}{\alpha'}(N_{L}-a_{L})=\frac{4}{\alpha'}(N_{R}-a_{R}),
-\qquad
+M^{2}=\frac{4}{\alpha'}(N_{L}-a_{L})=\frac{4}{\alpha'}(N_{R}-a_{R}), \qquad
 N_{L}-a_{L}=N_{R}-a_{R}.
 \end{align}$$
 
@@ -167,31 +158,19 @@ N_{L}-a_{L}=N_{R}-a_{R}.
 Flat-space RNS action in conformal gauge:
 
 $$\begin{align}
-S_{\mathrm{RNS}}
-=-\frac{1}{4\pi\alpha'}\int d^{2}\sigma
-\left(
-\partial_{a}X^{\mu}\partial^{a}X_{\mu}
--i\bar{\psi}^{\mu}\rho^{a}\partial_{a}\psi_{\mu}
-\right).
+S_{\mathrm{RNS}} =-\frac{1}{4\pi\alpha'}\int d^{2}\sigma \left( \partial_{a}X^{\mu}\partial^{a}X_{\mu} -i\bar{\psi}^{\mu}\rho^{a}\partial_{a}\psi_{\mu} \right).
 \end{align}$$
 
 In light-cone form this becomes
 
 $$\begin{align}
-S_{\mathrm{RNS}}
-=-\frac{1}{2\pi\alpha'}\int d^{2}\sigma
-\left(
-\partial_{+}X^{\mu}\partial_{-}X_{\mu}
--i\psi_{+}^{\mu}\partial_{-}\psi_{+\mu}
--i\psi_{-}^{\mu}\partial_{+}\psi_{-\mu}
-\right).
+S_{\mathrm{RNS}} =-\frac{1}{2\pi\alpha'}\int d^{2}\sigma \left( \partial_{+}X^{\mu}\partial_{-}X_{\mu} -i\psi_{+}^{\mu}\partial_{-}\psi_{+\mu} -i\psi_{-}^{\mu}\partial_{+}\psi_{-\mu} \right).
 \end{align}$$
 
 Worldsheet supersymmetry transformations:
 
 $$\begin{align}
-\delta X^{\mu}=i\bar{\varepsilon}\psi^{\mu},
-\qquad
+\delta X^{\mu}=i\bar{\varepsilon}\psi^{\mu}, \qquad
 \delta \psi^{\mu}=\rho^{a}\partial_{a}X^{\mu}\varepsilon.
 \end{align}$$
 
@@ -202,34 +181,29 @@ $$\begin{align}
 \end{align}$$
 
 $$\begin{align}
-\delta \psi_{+}^{\mu}=-\partial_{+}X^{\mu}\varepsilon_{-},
-\qquad
+\delta \psi_{+}^{\mu}=-\partial_{+}X^{\mu}\varepsilon_{-}, \qquad
 \delta \psi_{-}^{\mu}=\partial_{-}X^{\mu}\varepsilon_{+}.
 \end{align}$$
 
 Stress tensor and supercurrent:
 
 $$\begin{align}
-T_{++}=\frac{1}{\alpha'}\partial_{+}X^{\mu}\partial_{+}X_{\mu}
-+\frac{i}{2\alpha'}\psi_{+}^{\mu}\partial_{+}\psi_{+\mu},
+T_{++}=\frac{1}{\alpha'}\partial_{+}X^{\mu}\partial_{+}X_{\mu} +\frac{i}{2\alpha'}\psi_{+}^{\mu}\partial_{+}\psi_{+\mu},
 \end{align}$$
 
 $$\begin{align}
-T_{--}=\frac{1}{\alpha'}\partial_{-}X^{\mu}\partial_{-}X_{\mu}
-+\frac{i}{2\alpha'}\psi_{-}^{\mu}\partial_{-}\psi_{-\mu},
+T_{--}=\frac{1}{\alpha'}\partial_{-}X^{\mu}\partial_{-}X_{\mu} +\frac{i}{2\alpha'}\psi_{-}^{\mu}\partial_{-}\psi_{-\mu},
 \end{align}$$
 
 $$\begin{align}
-G_{+}\propto \psi_{+}^{\mu}\partial_{+}X_{\mu},
-\qquad
+G_{+}\propto \psi_{+}^{\mu}\partial_{+}X_{\mu}, \qquad
 G_{-}\propto \psi_{-}^{\mu}\partial_{-}X_{\mu}.
 \end{align}$$
 
 In conformal gauge the physical constraints are
 
 $$\begin{align}
-T_{\pm\pm}=0,
-\qquad
+T_{\pm\pm}=0, \qquad
 G_{\pm}=0.
 \end{align}$$
 
@@ -238,8 +212,7 @@ G_{\pm}=0.
 ## Open string NN
 
 $$\begin{align}
-X^{\mu}(\tau,\sigma)=x^{\mu}+2\alpha' p^{\mu}\tau
-+i\sqrt{2\alpha'}\sum_{n\neq 0}\frac{\alpha_{n}^{\mu}}{n}e^{-in\tau}\cos(n\sigma).
+X^{\mu}(\tau,\sigma)=x^{\mu}+2\alpha' p^{\mu}\tau +i\sqrt{2\alpha'}\sum_{n\neq 0}\frac{\alpha_{n}^{\mu}}{n}e^{-in\tau}\cos(n\sigma).
 \end{align}$$
 
 ## Open string DD
@@ -247,16 +220,14 @@ X^{\mu}(\tau,\sigma)=x^{\mu}+2\alpha' p^{\mu}\tau
 If
 
 $$\begin{align}
-X^{i}(\tau,0)=y_{0}^{i},
-\qquad
+X^{i}(\tau,0)=y_{0}^{i}, \qquad
 X^{i}(\tau,\pi)=y_{\pi}^{i},
 \end{align}$$
 
 then
 
 $$\begin{align}
-X^{i}(\tau,\sigma)=y_{0}^{i}+\frac{y_{\pi}^{i}-y_{0}^{i}}{\pi}\sigma
-+i\sqrt{2\alpha'}\sum_{n\neq 0}\frac{\alpha_{n}^{i}}{n}e^{-in\tau}\sin(n\sigma).
+X^{i}(\tau,\sigma)=y_{0}^{i}+\frac{y_{\pi}^{i}-y_{0}^{i}}{\pi}\sigma +i\sqrt{2\alpha'}\sum_{n\neq 0}\frac{\alpha_{n}^{i}}{n}e^{-in\tau}\sin(n\sigma).
 \end{align}$$
 
 No momentum zero mode appears in this direction.
@@ -266,23 +237,20 @@ No momentum zero mode appears in this direction.
 For ND:
 
 $$\begin{align}
-\partial_{\sigma}X^{i}(\tau,0)=0,
-\qquad
+\partial_{\sigma}X^{i}(\tau,0)=0, \qquad
 X^{i}(\tau,\pi)=y^{i},
 \end{align}$$
 
 so
 
 $$\begin{align}
-X^{i}(\tau,\sigma)=y^{i}
-+i\sqrt{2\alpha'}\sum_{r\in \mathbb{Z}+\frac{1}{2}}\frac{\alpha_{r}^{i}}{r}e^{-ir\tau}\cos(r\sigma).
+X^{i}(\tau,\sigma)=y^{i} +i\sqrt{2\alpha'}\sum_{r\in \mathbb{Z}+\frac{1}{2}}\frac{\alpha_{r}^{i}}{r}e^{-ir\tau}\cos(r\sigma).
 \end{align}$$
 
 For DN:
 
 $$\begin{align}
-X^{i}(\tau,\sigma)=y^{i}
-+i\sqrt{2\alpha'}\sum_{r\in \mathbb{Z}+\frac{1}{2}}\frac{\alpha_{r}^{i}}{r}e^{-ir\tau}\sin(r\sigma).
+X^{i}(\tau,\sigma)=y^{i} +i\sqrt{2\alpha'}\sum_{r\in \mathbb{Z}+\frac{1}{2}}\frac{\alpha_{r}^{i}}{r}e^{-ir\tau}\sin(r\sigma).
 \end{align}$$
 
 The key fact is: ND or DN gives half-integer modes.
@@ -290,10 +258,7 @@ The key fact is: ND or DN gives half-integer modes.
 ## Closed bosonic string
 
 $$\begin{align}
-X^{\mu}(z,\bar{z})=x^{\mu}
--i\frac{\alpha'}{2}p^{\mu}\ln(z\bar{z})
-+i\sqrt{\frac{\alpha'}{2}}\sum_{n\neq 0}\frac{\alpha_{n}^{\mu}}{n}z^{-n}
-+i\sqrt{\frac{\alpha'}{2}}\sum_{n\neq 0}\frac{\tilde{\alpha}_{n}^{\mu}}{n}\bar{z}^{-n}.
+X^{\mu}(z,\bar{z})=x^{\mu} -i\frac{\alpha'}{2}p^{\mu}\ln(z\bar{z}) +i\sqrt{\frac{\alpha'}{2}}\sum_{n\neq 0}\frac{\alpha_{n}^{\mu}}{n}z^{-n} +i\sqrt{\frac{\alpha'}{2}}\sum_{n\neq 0}\frac{\tilde{\alpha}_{n}^{\mu}}{n}\bar{z}^{-n}.
 \end{align}$$
 
 ## RNS fermion mode expansions
@@ -309,8 +274,7 @@ $$\begin{align}
 Therefore the modes are half-integer:
 
 $$\begin{align}
-\psi_{+}^{\mu}(x^{+})=\sum_{r\in \mathbb{Z}+\frac{1}{2}} b_{r}^{\mu}e^{-irx^{+}},
-\qquad
+\psi_{+}^{\mu}(x^{+})=\sum_{r\in \mathbb{Z}+\frac{1}{2}} b_{r}^{\mu}e^{-irx^{+}}, \qquad
 \psi_{-}^{\mu}(x^{-})=\sum_{r\in \mathbb{Z}+\frac{1}{2}} \tilde{b}_{r}^{\mu}e^{-irx^{-}}.
 \end{align}$$
 
@@ -323,8 +287,7 @@ $$\begin{align}
 Therefore the modes are integer:
 
 $$\begin{align}
-\psi_{+}^{\mu}(x^{+})=\sum_{n\in \mathbb{Z}} d_{n}^{\mu}e^{-inx^{+}},
-\qquad
+\psi_{+}^{\mu}(x^{+})=\sum_{n\in \mathbb{Z}} d_{n}^{\mu}e^{-inx^{+}}, \qquad
 \psi_{-}^{\mu}(x^{-})=\sum_{n\in \mathbb{Z}} \tilde{d}_{n}^{\mu}e^{-inx^{-}}.
 \end{align}$$
 
@@ -352,9 +315,7 @@ $$\begin{align}
 In light-cone gauge there are $8$ transverse bosons and $8$ transverse fermions, so
 
 $$\begin{align}
-E_{0,\mathrm{NS}}
-=-8\cdot \frac{1}{24}-8\cdot \frac{1}{48}
-=-\frac{1}{2}.
+E_{0,\mathrm{NS}} =-8\cdot \frac{1}{24}-8\cdot \frac{1}{48} =-\frac{1}{2}.
 \end{align}$$
 
 Therefore the NS intercept is
@@ -366,8 +327,7 @@ a_{\mathrm{NS}}=-E_{0,\mathrm{NS}}=\frac{1}{2}.
 In the R sector the bosonic and fermionic zero-point energies cancel:
 
 $$\begin{align}
-E_{0,\mathrm{R}}=0,
-\qquad
+E_{0,\mathrm{R}}=0, \qquad
 a_{\mathrm{R}}=0.
 \end{align}$$
 
@@ -407,8 +367,7 @@ Low levels:
 1. $N=0$:
 
 $$\begin{align}
-\ket{0;k},
-\qquad
+\ket{0;k}, \qquad
 M^{2}=-\frac{1}{\alpha'}.
 \end{align}$$
 
@@ -417,8 +376,7 @@ This is the tachyon, a scalar of $SO(25)$.
 1. $N=1$:
 
 $$\begin{align}
-\alpha_{-1}^{i}\ket{0;k},
-\qquad
+\alpha_{-1}^{i}\ket{0;k}, \qquad
 M^{2}=0.
 \end{align}$$
 
@@ -427,10 +385,8 @@ This is a massless vector of $SO(24)$ with $24$ polarizations.
 1. $N=2$:
 
 $$\begin{align}
-\alpha_{-2}^{i}\ket{0;k},
-\qquad
-\alpha_{-1}^{i}\alpha_{-1}^{j}\ket{0;k},
-\qquad
+\alpha_{-2}^{i}\ket{0;k}, \qquad
+\alpha_{-1}^{i}\alpha_{-1}^{j}\ket{0;k}, \qquad
 M^{2}=\frac{1}{\alpha'}.
 \end{align}$$
 
@@ -451,8 +407,7 @@ $$\begin{align}
 Mass formula:
 
 $$\begin{align}
-M^{2}=\frac{4}{\alpha'}(N_{L}-1)=\frac{4}{\alpha'}(N_{R}-1),
-\qquad
+M^{2}=\frac{4}{\alpha'}(N_{L}-1)=\frac{4}{\alpha'}(N_{R}-1), \qquad
 N_{L}=N_{R}.
 \end{align}$$
 
@@ -475,13 +430,7 @@ $$\begin{align}
 This decomposes as
 
 $$\begin{align}
-24\otimes 24
-=
-\text{symmetric traceless}
-\oplus
-\text{antisymmetric}
-\oplus
-\text{trace}.
+24\otimes 24 = \text{symmetric traceless} \oplus \text{antisymmetric} \oplus \text{trace}.
 \end{align}$$
 
 These give the graviton, Kalb-Ramond field, and dilaton.
@@ -491,8 +440,7 @@ These give the graviton, Kalb-Ramond field, and dilaton.
 NS sector first surviving state after GSO:
 
 $$\begin{align}
-b_{-1/2}^{i}\ket{0;k}_{\mathrm{NS}},
-\qquad
+b_{-1/2}^{i}\ket{0;k}_{\mathrm{NS}}, \qquad
 M^{2}=0,
 \end{align}$$
 
@@ -501,8 +449,7 @@ which transforms as $8_{v}$.
 R sector ground state:
 
 $$\begin{align}
-\ket{s;k}_{\mathrm{R}},
-\qquad
+\ket{s;k}_{\mathrm{R}}, \qquad
 M^{2}=0,
 \end{align}$$
 
@@ -568,17 +515,13 @@ Mixed sectors:
 - NS-R has left NS vector oscillator and right R spinor ground state:
 
 $$\begin{align}
-b_{-1/2}^{i}\ket{0;k}_{\mathrm{NS}}
-\otimes
-\ket{\tilde{s};k}_{\mathrm{R}}.
+b_{-1/2}^{i}\ket{0;k}_{\mathrm{NS}} \otimes \ket{\tilde{s};k}_{\mathrm{R}}.
 \end{align}$$
 
 - R-NS has left R spinor ground state and right NS vector oscillator:
 
 $$\begin{align}
-\ket{s;k}_{\mathrm{R}}
-\otimes
-\tilde{b}_{-1/2}^{i}\ket{0;k}_{\mathrm{NS}}.
+\ket{s;k}_{\mathrm{R}} \otimes \tilde{b}_{-1/2}^{i}\ket{0;k}_{\mathrm{NS}}.
 \end{align}$$
 
 For Type IIA,
@@ -631,10 +574,8 @@ Chirality rule:
 The three basic triality-related representations are
 
 $$\begin{align}
-8_{v},
-\qquad
-8_{s},
-\qquad
+8_{v}, \qquad
+8_{s}, \qquad
 8_{c}.
 \end{align}$$
 
@@ -657,8 +598,7 @@ $$\begin{align}
 \end{align}$$
 
 $$\begin{align}
-8_{v}\otimes 8_{s}=8_{c}\oplus 56_{c},
-\qquad
+8_{v}\otimes 8_{s}=8_{c}\oplus 56_{c}, \qquad
 8_{v}\otimes 8_{c}=8_{s}\oplus 56_{s}.
 \end{align}$$
 
@@ -712,8 +652,7 @@ N_{R}-a_{R}=N_{L}+\frac{1}{2}p_{L}^{2}-1.
 For one compact coordinate,
 
 $$\begin{align}
-X\sim X+2\pi R,
-\qquad
+X\sim X+2\pi R, \qquad
 n,w\in \mathbb{Z}.
 \end{align}$$
 
@@ -732,23 +671,20 @@ X(\tau,\sigma+2\pi)=X(\tau,\sigma)+2\pi wR.
 A useful zero-mode form is
 
 $$\begin{align}
-X(\tau,\sigma)=x+\frac{\alpha'}{2}p_{L}(\tau+\sigma)
-+\frac{\alpha'}{2}p_{R}(\tau-\sigma)+\text{oscillators},
+X(\tau,\sigma)=x+\frac{\alpha'}{2}p_{L}(\tau+\sigma) +\frac{\alpha'}{2}p_{R}(\tau-\sigma)+\text{oscillators},
 \end{align}$$
 
 with
 
 $$\begin{align}
-p_{L}=\frac{n}{R}+\frac{wR}{\alpha'},
-\qquad
+p_{L}=\frac{n}{R}+\frac{wR}{\alpha'}, \qquad
 p_{R}=\frac{n}{R}-\frac{wR}{\alpha'}.
 \end{align}$$
 
 The compact zero-mode contribution satisfies
 
 $$\begin{align}
-\frac{1}{2}(p_{L}^{2}+p_{R}^{2})
-=\frac{n^{2}}{R^{2}}+\frac{w^{2}R^{2}}{\alpha'^{2}},
+\frac{1}{2}(p_{L}^{2}+p_{R}^{2}) =\frac{n^{2}}{R^{2}}+\frac{w^{2}R^{2}}{\alpha'^{2}},
 \end{align}$$
 
 and
@@ -762,8 +698,7 @@ p_{L}^{2}-p_{R}^{2}=\frac{4nw}{\alpha'}.
 For the compact bosonic closed string,
 
 $$\begin{align}
-M^{2}=p_{L}^{2}+\frac{4}{\alpha'}(N_{L}-1)
-=p_{R}^{2}+\frac{4}{\alpha'}(N_{R}-1).
+M^{2}=p_{L}^{2}+\frac{4}{\alpha'}(N_{L}-1) =p_{R}^{2}+\frac{4}{\alpha'}(N_{R}-1).
 \end{align}$$
 
 With the left/right convention above this gives
@@ -777,8 +712,7 @@ If the opposite convention for $\sigma$ is used, the sign of the displayed level
 For Type II superstrings, replace the bosonic intercepts by the appropriate RNS intercepts:
 
 $$\begin{align}
-M^{2}=p_{L}^{2}+\frac{4}{\alpha'}(N_{L}-a_{L})
-=p_{R}^{2}+\frac{4}{\alpha'}(N_{R}-a_{R}).
+M^{2}=p_{L}^{2}+\frac{4}{\alpha'}(N_{L}-a_{L}) =p_{R}^{2}+\frac{4}{\alpha'}(N_{R}-a_{R}).
 \end{align}$$
 
 ## T-duality on a circle
@@ -786,24 +720,21 @@ M^{2}=p_{L}^{2}+\frac{4}{\alpha'}(N_{L}-a_{L})
 The spectrum is invariant under
 
 $$\begin{align}
-R\longleftrightarrow \frac{\alpha'}{R},
-\qquad
+R\longleftrightarrow \frac{\alpha'}{R}, \qquad
 n\longleftrightarrow w.
 \end{align}$$
 
 Equivalently,
 
 $$\begin{align}
-p_{L}\to p_{L},
-\qquad
+p_{L}\to p_{L}, \qquad
 p_{R}\to -p_{R}.
 \end{align}$$
 
 At the coordinate level this is implemented by flipping one chiral part:
 
 $$\begin{align}
-X_{L}\to X_{L},
-\qquad
+X_{L}\to X_{L}, \qquad
 X_{R}\to -X_{R}.
 \end{align}$$
 
@@ -832,8 +763,7 @@ Exam memory rule:
 For an open string, T-duality along a spatial direction exchanges boundary conditions:
 
 $$\begin{align}
-\partial_{\sigma}X=0
-\quad\Longleftrightarrow\quad
+\partial_{\sigma}X=0 \quad\Longleftrightarrow\quad
 \partial_{\tau}\tilde X=0.
 \end{align}$$
 
@@ -869,8 +799,7 @@ X_{R}\to -X_{R}
 on the dualized direction. Therefore
 
 $$\begin{align}
-\text{Type IIA on }S^{1}_{R}
-\quad\longleftrightarrow\quad
+\text{Type IIA on }S^{1}_{R} \quad\longleftrightarrow\quad
 \text{Type IIB on }S^{1}_{\alpha'/R}.
 \end{align}$$
 
@@ -886,17 +815,13 @@ Useful memory rule:
 A primary field of weights $(h,\bar{h})$ transforms as
 
 $$\begin{align}
-\delta \mathcal{O}
-=-(\varepsilon\partial+h\partial\varepsilon+\bar{\varepsilon}\bar{\partial}+\bar{h}\bar{\partial}\bar{\varepsilon})\mathcal{O}.
+\delta \mathcal{O} =-(\varepsilon\partial+h\partial\varepsilon+\bar{\varepsilon}\bar{\partial}+\bar{h}\bar{\partial}\bar{\varepsilon})\mathcal{O}.
 \end{align}$$
 
 Equivalent finite form:
 
 $$\begin{align}
-\mathcal{O}'(z',\bar{z}')
-=\left(\frac{\partial z'}{\partial z}\right)^{-h}
-\left(\frac{\partial \bar{z}'}{\partial \bar{z}}\right)^{-\bar{h}}
-\mathcal{O}(z,\bar{z}).
+\mathcal{O}'(z',\bar{z}') =\left(\frac{\partial z'}{\partial z}\right)^{-h} \left(\frac{\partial \bar{z}'}{\partial \bar{z}}\right)^{-\bar{h}} \mathcal{O}(z,\bar{z}).
 \end{align}$$
 
 Descendants are obtained by acting with $L_{-n}$ on primaries. For example, $\partial X$ is primary of weight $1$, but $\partial^{n}X$ for $n>1$ is a descendant, not a primary.
@@ -944,17 +869,14 @@ Exam template:
 For fields of weights $h_{A}$ and $h_{B}$,
 
 $$\begin{align}
-A_{m}=\oint \frac{dz}{2\pi i}z^{m+h_{A}-1}A(z),
-\qquad
+A_{m}=\oint \frac{dz}{2\pi i}z^{m+h_{A}-1}A(z), \qquad
 B_{n}=\oint \frac{dw}{2\pi i}w^{n+h_{B}-1}B(w).
 \end{align}$$
 
 The graded commutator is computed by nesting the $z$ contour around $w$:
 
 $$\begin{align}
-[A_{m},B_{n}]_{\mathrm{gr}}
-=
-\oint \frac{dw}{2\pi i}w^{n+h_{B}-1}
+[A_{m},B_{n}]_{\mathrm{gr}} = \oint \frac{dw}{2\pi i}w^{n+h_{B}-1}
 \oint_{w}\frac{dz}{2\pi i}z^{m+h_{A}-1}A(z)B(w).
 \end{align}$$
 
@@ -969,9 +891,7 @@ A(z)B(w)\sim \sum_{k\geq 1}\frac{C_{k}(w)}{(z-w)^{k}},
 expand
 
 $$\begin{align}
-z^{m+h_{A}-1}
-=
-\sum_{j\geq 0}
+z^{m+h_{A}-1} = \sum_{j\geq 0}
 \binom{m+h_{A}-1}{j}
 w^{m+h_{A}-1-j}(z-w)^{j}.
 \end{align}$$
@@ -979,9 +899,7 @@ w^{m+h_{A}-1-j}(z-w)^{j}.
 Only the term with $j=k-1$ survives the $z$ residue. Therefore
 
 $$\begin{align}
-[A_{m},B_{n}]_{\mathrm{gr}}
-=
-\sum_{k\geq 1}
+[A_{m},B_{n}]_{\mathrm{gr}} = \sum_{k\geq 1}
 \binom{m+h_{A}-1}{k-1}
 (C_{k})_{m+n}.
 \end{align}$$
@@ -1007,93 +925,67 @@ T(z)\phi(w)\sim \frac{h\phi(w)}{(z-w)^{2}}+\frac{\partial \phi(w)}{z-w}
 gives
 
 $$\begin{align}
-[L_{m},\phi_{n}]
-=h(m+1)\phi_{m+n}-(m+n+h)\phi_{m+n}
-=((h-1)m-n)\phi_{m+n}.
+[L_{m},\phi_{n}] =h(m+1)\phi_{m+n}-(m+n+h)\phi_{m+n} =((h-1)m-n)\phi_{m+n}.
 \end{align}$$
 
 Virasoro example:
 
 $$\begin{align}
-T(z)T(w)\sim
-\frac{c/2}{(z-w)^{4}}
-+\frac{2T(w)}{(z-w)^{2}}
-+\frac{\partial T(w)}{z-w}
+T(z)T(w)\sim \frac{c/2}{(z-w)^{4}} +\frac{2T(w)}{(z-w)^{2}} +\frac{\partial T(w)}{z-w}
 \end{align}$$
 
 gives
 
 $$\begin{align}
-[L_{m},L_{n}]_{\mathrm{central}}
-=\frac{c}{2}\binom{m+1}{3}\delta_{m+n,0}
-=\frac{c}{12}m(m^{2}-1)\delta_{m+n,0},
+[L_{m},L_{n}]_{\mathrm{central}} =\frac{c}{2}\binom{m+1}{3}\delta_{m+n,0} =\frac{c}{12}m(m^{2}-1)\delta_{m+n,0},
 \end{align}$$
 
 and
 
 $$\begin{align}
-2(m+1)L_{m+n}-(m+n+2)L_{m+n}
-=(m-n)L_{m+n}.
+2(m+1)L_{m+n}-(m+n+2)L_{m+n} =(m-n)L_{m+n}.
 \end{align}$$
 
 Thus
 
 $$\begin{align}
-[L_{m},L_{n}]
-=(m-n)L_{m+n}
-+\frac{c}{12}m(m^{2}-1)\delta_{m+n,0}.
+[L_{m},L_{n}] =(m-n)L_{m+n} +\frac{c}{12}m(m^{2}-1)\delta_{m+n,0}.
 \end{align}$$
 
 Supercurrent examples:
 
 $$\begin{align}
-T(z)G(w)\sim
-\frac{\frac{3}{2}G(w)}{(z-w)^{2}}
-+\frac{\partial G(w)}{z-w}
+T(z)G(w)\sim \frac{\frac{3}{2}G(w)}{(z-w)^{2}} +\frac{\partial G(w)}{z-w}
 \end{align}$$
 
 implies
 
 $$\begin{align}
-[L_{m},G_{r}]
-=\frac{3}{2}(m+1)G_{m+r}
--\left(m+r+\frac{3}{2}\right)G_{m+r}
-=\left(\frac{m}{2}-r\right)G_{m+r}.
+[L_{m},G_{r}] =\frac{3}{2}(m+1)G_{m+r} -\left(m+r+\frac{3}{2}\right)G_{m+r} =\left(\frac{m}{2}-r\right)G_{m+r}.
 \end{align}$$
 
 If
 
 $$\begin{align}
-G(z)G(w)\sim
-\frac{2c/3}{(z-w)^{3}}
-+\frac{2T(w)}{z-w},
+G(z)G(w)\sim \frac{2c/3}{(z-w)^{3}} +\frac{2T(w)}{z-w},
 \end{align}$$
 
 then
 
 $$\begin{align}
-\{G_{r},G_{s}\}
-=2L_{r+s}
-+\frac{2c}{3}\binom{r+\frac{1}{2}}{2}\delta_{r+s,0}
-=2L_{r+s}
-+\frac{c}{3}\left(r^{2}-\frac{1}{4}\right)\delta_{r+s,0}.
+\{G_{r},G_{s}\} =2L_{r+s} +\frac{2c}{3}\binom{r+\frac{1}{2}}{2}\delta_{r+s,0} =2L_{r+s} +\frac{c}{3}\left(r^{2}-\frac{1}{4}\right)\delta_{r+s,0}.
 \end{align}$$
 
 Current algebra template:
 
 $$\begin{align}
-J^{a}(z)J^{b}(w)
-\sim
-\frac{k\kappa^{ab}}{(z-w)^{2}}
-+\frac{i f^{ab}{}_{c}J^{c}(w)}{z-w}
+J^{a}(z)J^{b}(w) \sim \frac{k\kappa^{ab}}{(z-w)^{2}} +\frac{i f^{ab}{}_{c}J^{c}(w)}{z-w}
 \end{align}$$
 
 gives, for weight-one currents,
 
 $$\begin{align}
-[J_{m}^{a},J_{n}^{b}]
-=km\kappa^{ab}\delta_{m+n,0}
-+i f^{ab}{}_{c}J_{m+n}^{c}.
+[J_{m}^{a},J_{n}^{b}] =km\kappa^{ab}\delta_{m+n,0} +i f^{ab}{}_{c}J_{m+n}^{c}.
 \end{align}$$
 
 ## Open-string CFT formulation
@@ -1101,24 +993,20 @@ $$\begin{align}
 After Wick rotation, the open-string worldsheet can be represented by the upper half-plane
 
 $$\begin{align}
-\Sigma=\{z\in \mathbb{C}\mid \operatorname{Im}z\geq 0\},
-\qquad
-\partial\Sigma=\mathbb{R}.
+\Sigma=\{z\in \mathbb{C}\mid \operatorname{Im}z\geq 0\}, \qquad \partial\Sigma=\mathbb{R}.
 \end{align}$$
 
 Conformal boundary conditions require no momentum flow through the boundary:
 
 $$\begin{align}
-T(z)=\bar{T}(\bar{z})
-\qquad
+T(z)=\bar{T}(\bar{z}) \qquad
 z=\bar{z}.
 \end{align}$$
 
 For the RNS theory the supercurrent also obeys
 
 $$\begin{align}
-G(z)=\eta\,\bar{G}(\bar{z}),
-\qquad
+G(z)=\eta\,\bar{G}(\bar{z}), \qquad
 \eta=\pm 1,
 \end{align}$$
 
@@ -1127,14 +1015,12 @@ on each boundary component. The open string therefore has one copy of the Viraso
 For target-space bosons, Neumann and Dirichlet conditions become
 
 $$\begin{align}
-\partial X^{a}=\bar{\partial}X^{a}
-\qquad
+\partial X^{a}=\bar{\partial}X^{a} \qquad
 \text{on NN directions},
 \end{align}$$
 
 $$\begin{align}
-\partial X^{i}=-\bar{\partial}X^{i}
-\qquad
+\partial X^{i}=-\bar{\partial}X^{i} \qquad
 \text{on DD directions}.
 \end{align}$$
 
@@ -1195,84 +1081,68 @@ because the boundary ghost $c$ has weight $-1$.
 Important open bosonic-string vertices:
 
 $$\begin{align}
-\mathcal{V}_{T}(x)=:e^{ik\cdot X(x)}:,
-\qquad
+\mathcal{V}_{T}(x)=:e^{ik\cdot X(x)}:, \qquad
 h=\alpha' k^{2},
 \end{align}$$
 
 $$\begin{align}
-\mathcal{V}_{A}(x)=\zeta_{\mu}\partial_{t}X^{\mu}(x)e^{ik\cdot X(x)},
-\qquad
+\mathcal{V}_{A}(x)=\zeta_{\mu}\partial_{t}X^{\mu}(x)e^{ik\cdot X(x)}, \qquad
 h=1+\alpha' k^{2}.
 \end{align}$$
 
 Thus
 
 $$\begin{align}
-h(\mathcal{V}_{T})=1
-\quad\Longrightarrow\quad
+h(\mathcal{V}_{T})=1 \quad\Longrightarrow\quad
 M^{2}=-\frac{1}{\alpha'},
 \end{align}$$
 
 while
 
 $$\begin{align}
-h(\mathcal{V}_{A})=1
-\quad\Longrightarrow\quad
+h(\mathcal{V}_{A})=1 \quad\Longrightarrow\quad
 k^{2}=0,
 \end{align}$$
 
 together with
 
 $$\begin{align}
-k\cdot \zeta=0,
-\qquad
+k\cdot \zeta=0, \qquad
 \zeta_{\mu}\sim \zeta_{\mu}+\lambda k_{\mu}.
 \end{align}$$
 
 For open RNS fermions at the two endpoints,
 
 $$\begin{align}
-\psi_{+}^{\mu}(\tau,0)=\eta_{0}D^{\mu}{}_{\nu}\psi_{-}^{\nu}(\tau,0),
-\qquad
+\psi_{+}^{\mu}(\tau,0)=\eta_{0}D^{\mu}{}_{\nu}\psi_{-}^{\nu}(\tau,0), \qquad
 \psi_{+}^{\mu}(\tau,\pi)=\eta_{\pi}D^{\mu}{}_{\nu}\psi_{-}^{\nu}(\tau,\pi).
 \end{align}$$
 
 The product of the endpoint signs determines the sector:
 
 $$\begin{align}
-\eta_{0}\eta_{\pi}=-1
-\quad\Longrightarrow\quad
-\mathrm{NS},
-\qquad
-\eta_{0}\eta_{\pi}=+1
-\quad\Longrightarrow\quad
-\mathrm{R}.
+\eta_{0}\eta_{\pi}=-1 \quad\Longrightarrow\quad \mathrm{NS}, \qquad
+\eta_{0}\eta_{\pi}=+1 \quad\Longrightarrow\quad \mathrm{R}.
 \end{align}$$
 
 For the open superstring, the massless NS gauge-boson vertex in the $(-1)$ picture is
 
 $$\begin{align}
-\mathcal{V}_{A}^{(-1)}(x)
-=
-\lambda^{A}e^{-\varphi}\zeta_{\mu}\psi^{\mu}e^{ik\cdot X}(x),
+\mathcal{V}_{A}^{(-1)}(x) = \lambda^{A}e^{-\varphi}\zeta_{\mu}\psi^{\mu}e^{ik\cdot X}(x),
 \end{align}$$
 
 with
 
 $$\begin{align}
-h(e^{-\varphi})=\frac{1}{2},
-\qquad
-h(\psi^{\mu})=\frac{1}{2},
-\qquad
+h(e^{-\varphi})=\frac{1}{2}, \qquad
+h(\psi^{\mu})=\frac{1}{2}, \qquad
 h(e^{ik\cdot X})=\alpha' k^{2}.
 \end{align}$$
 
 Therefore
 
 $$\begin{align}
-h(\mathcal{V}_{A}^{(-1)})=1
-\quad\Longleftrightarrow\quad
+h(\mathcal{V}_{A}^{(-1)})=1 \quad\Longleftrightarrow\quad
 k^{2}=0.
 \end{align}$$
 
@@ -1335,10 +1205,8 @@ per real scalar.
 **Normal-ordering shortcut**:
 
 $$\begin{align}
-:AB:(z)\, C(w)
-\sim
-(A(z)C(w))_{\mathrm{sing}}\, B(z)
-+(B(z)C(w))_{\mathrm{sing}}\, A(z).
+:AB:(z)\, C(w) \sim
+(A(z)C(w))_{\mathrm{sing}}\, B(z) +(B(z)C(w))_{\mathrm{sing}}\, A(z).
 \end{align}$$
 
 For two normal-ordered bilinears, include both single and double contractions.
@@ -1388,27 +1256,21 @@ Further physical-state conditions:
 - open vector:
 
 $$\begin{align}
-k\cdot \zeta=0,
-\qquad
+k\cdot \zeta=0, \qquad
 \zeta_{\mu}\sim \zeta_{\mu}+\lambda k_{\mu}.
 \end{align}$$
 
 - closed tensor:
 
 $$\begin{align}
-k^{\mu}\epsilon_{\mu\nu}=0,
-\qquad
+k^{\mu}\epsilon_{\mu\nu}=0, \qquad
 k^{\nu}\epsilon_{\mu\nu}=0.
 \end{align}$$
 
 Then decompose
 
 $$\begin{align}
-\epsilon_{\mu\nu}
-=
-\epsilon_{(\mu\nu)}^{\mathrm{traceless}}
-+\epsilon_{[\mu\nu]}
-+\frac{1}{D}\eta_{\mu\nu}\epsilon^{\rho}{}_{\rho}
+\epsilon_{\mu\nu} = \epsilon_{(\mu\nu)}^{\mathrm{traceless}} +\epsilon_{[\mu\nu]} +\frac{1}{D}\eta_{\mu\nu}\epsilon^{\rho}{}_{\rho}
 \end{align}$$
 
 into graviton, Kalb-Ramond field, and dilaton.
@@ -1442,8 +1304,7 @@ c=D.
 For bosonic string BRST consistency,
 
 $$\begin{align}
-c_{\mathrm{matter}}+c_{bc}=0
-\quad\Longrightarrow\quad
+c_{\mathrm{matter}}+c_{bc}=0 \quad\Longrightarrow\quad
 D-26=0.
 \end{align}$$
 
@@ -1568,8 +1429,7 @@ $$\begin{align}
 \end{align}$$
 
 $$\begin{align}
-\psi(z)\psi(w)\sim 0,
-\qquad
+\psi(z)\psi(w)\sim 0, \qquad
 \bar{\psi}(z)\bar{\psi}(w)\sim 0.
 \end{align}$$
 
@@ -1608,8 +1468,7 @@ e^{aH(z)}e^{bH(w)}\sim (z-w)^{-ab}e^{(a+b)H(w)}.
 The standard bosonization of a complex fermion is
 
 $$\begin{align}
-\psi=e^{iH},
-\qquad
+\psi=e^{iH}, \qquad
 \bar{\psi}=e^{-iH}.
 \end{align}$$
 
@@ -1630,8 +1489,7 @@ which is regular.
 More generally, the exam-style answer is
 
 $$\begin{align}
-a=\pm i,
-\qquad
+a=\pm i, \qquad
 b=\mp i.
 \end{align}$$
 
@@ -1662,8 +1520,7 @@ b(z)c(w)\sim \frac{1}{z-w}.
 If the conformal weights are
 
 $$\begin{align}
-h_{b}=\lambda,
-\qquad
+h_{b}=\lambda, \qquad
 h_{c}=1-\lambda,
 \end{align}$$
 
@@ -1688,8 +1545,7 @@ c_{bc}=-26.
 Mode expansions:
 
 $$\begin{align}
-b(z)=\sum_{n} b_{n} z^{-n-\lambda},
-\qquad
+b(z)=\sum_{n} b_{n} z^{-n-\lambda}, \qquad
 c(z)=\sum_{n} c_{n} z^{-n-(1-\lambda)}.
 \end{align}$$
 
@@ -1710,8 +1566,7 @@ $$\begin{align}
 and
 
 $$\begin{align}
-\beta(z)\beta(w)\sim 0,
-\qquad
+\beta(z)\beta(w)\sim 0, \qquad
 \gamma(z)\gamma(w)\sim 0.
 \end{align}$$
 
@@ -1734,8 +1589,7 @@ T(z)\gamma(w)\sim \frac{(1-\lambda)\gamma(w)}{(z-w)^{2}}+\frac{\partial\gamma(w)
 Therefore,
 
 $$\begin{align}
-h_{\beta}=\lambda,
-\qquad
+h_{\beta}=\lambda, \qquad
 h_{\gamma}=1-\lambda.
 \end{align}$$
 
@@ -1754,8 +1608,7 @@ c_{\beta\gamma}=11.
 Mode expansions:
 
 $$\begin{align}
-\beta(z)=\sum_{r}\beta_{r} z^{-r-\lambda},
-\qquad
+\beta(z)=\sum_{r}\beta_{r} z^{-r-\lambda}, \qquad
 \gamma(z)=\sum_{r}\gamma_{r} z^{-r-(1-\lambda)}.
 \end{align}$$
 
@@ -1766,8 +1619,7 @@ $$\begin{align}
 \end{align}$$
 
 $$\begin{align}
-[\beta_{r},\beta_{s}]=0,
-\qquad
+[\beta_{r},\beta_{s}]=0, \qquad
 [\gamma_{r},\gamma_{s}]=0.
 \end{align}$$
 
@@ -1784,10 +1636,8 @@ Exam template for ghost computations:
 Choose a null vector $k^{\mu}$ and transverse polarizations $\zeta_{i}^{\mu}$:
 
 $$\begin{align}
-k^{2}=0,
-\qquad
-\zeta_{i}\cdot k=0,
-\qquad
+k^{2}=0, \qquad
+\zeta_{i}\cdot k=0, \qquad
 \zeta_{i}\cdot \zeta_{j}=\delta_{ij}.
 \end{align}$$
 
@@ -1838,8 +1688,7 @@ S_{p}^{(p)}=-D_{p}\int d^{p+1}\sigma \sqrt{-g}(g^{ab}\gamma_{ab}+C_{p}).
 The classical equivalence requires
 
 $$\begin{align}
-C_{p}=-(p-1),
-\qquad
+C_{p}=-(p-1), \qquad
 D_{p}=\frac{T_{p}}{2}.
 \end{align}$$
 
@@ -1866,22 +1715,19 @@ $$
 Then
 
 $$\begin{align}
-\det g=1
-\quad\Longrightarrow\quad
+\det g=1 \quad\Longrightarrow\quad
 X_{-1}^{2}+X_{0}^{2}-X_{1}^{2}-X_{2}^{2}=1.
 \end{align}$$
 
 Standard intrinsic coordinates:
 
 $$\begin{align}
-X_{-1}=\cosh\rho\cos t,
-\qquad
+X_{-1}=\cosh\rho\cos t, \qquad
 X_{0}=\cosh\rho\sin t,
 \end{align}$$
 
 $$\begin{align}
-X_{1}=\sinh\rho\cos\phi,
-\qquad
+X_{1}=\sinh\rho\cos\phi, \qquad
 X_{2}=\sinh\rho\sin\phi.
 \end{align}$$
 
@@ -1890,24 +1736,21 @@ X_{2}=\sinh\rho\sin\phi.
 Action:
 
 $$\begin{align}
-S=\frac{k}{16\pi}\int_{\Sigma} d^{2}\xi\, \operatorname{Tr}(\partial^{a}g^{-1}\partial_{a}g)
--\frac{ik}{24\pi}\int_{B} d^{3}y\, \epsilon_{\alpha\beta\gamma}
+S=\frac{k}{16\pi}\int_{\Sigma} d^{2}\xi\, \operatorname{Tr}(\partial^{a}g^{-1}\partial_{a}g) -\frac{ik}{24\pi}\int_{B} d^{3}y\, \epsilon_{\alpha\beta\gamma}
 g^{-1}\partial^{\alpha}g\, g^{-1}\partial^{\beta}g\, g^{-1}\partial^{\gamma}g.
 \end{align}$$
 
 Chiral currents:
 
 $$\begin{align}
-J_{L,+}=\frac{k}{2\pi}\partial_{+}g\, g^{-1},
-\qquad
+J_{L,+}=\frac{k}{2\pi}\partial_{+}g\, g^{-1}, \qquad
 J_{R,-}=\frac{k}{2\pi}g^{-1}\partial_{-}g.
 \end{align}$$
 
 Equations of motion:
 
 $$\begin{align}
-\partial_{-}(\partial_{+}g\,g^{-1})=0,
-\qquad
+\partial_{-}(\partial_{+}g\,g^{-1})=0, \qquad
 \partial_{+}(g^{-1}\partial_{-}g)=0.
 \end{align}$$
 
@@ -1920,13 +1763,11 @@ g(x^{+},x^{-})=g_{+}(x^{+})g_{-}(x^{-}).
 Energy-momentum tensor:
 
 $$\begin{align}
-T_{++}=\frac{k}{8\pi}\operatorname{Tr}\big[(g^{-1}\partial_{+}g)^{2}\big]
-=\frac{\pi}{2k}\operatorname{Tr}(J_{L,+}^{2}),
+T_{++}=\frac{k}{8\pi}\operatorname{Tr}\big[(g^{-1}\partial_{+}g)^{2}\big] =\frac{\pi}{2k}\operatorname{Tr}(J_{L,+}^{2}),
 \end{align}$$
 
 $$\begin{align}
-T_{--}=\frac{k}{8\pi}\operatorname{Tr}\big[(g^{-1}\partial_{-}g)^{2}\big]
-=\frac{\pi}{2k}\operatorname{Tr}(J_{R,-}^{2}).
+T_{--}=\frac{k}{8\pi}\operatorname{Tr}\big[(g^{-1}\partial_{-}g)^{2}\big] =\frac{\pi}{2k}\operatorname{Tr}(J_{R,-}^{2}).
 \end{align}$$
 
 ## Spectral flow
@@ -1940,8 +1781,7 @@ h=h_{+}(x^{+})h_{-}(x^{-})
 is a solution, then
 
 $$\begin{align}
-g_{+}=e^{i\frac{w_{R}x^{+}\sigma_{2}}{2}}h_{+}(x^{+}),
-\qquad
+g_{+}=e^{i\frac{w_{R}x^{+}\sigma_{2}}{2}}h_{+}(x^{+}), \qquad
 g_{-}=h_{-}(x^{-})e^{i\frac{w_{L}x^{-}\sigma_{2}}{2}}
 \end{align}$$
 
@@ -1970,10 +1810,8 @@ $$\begin{align}
 Long-string solution generated from the spacelike geodesic:
 
 $$\begin{align}
-t(\tau,\sigma)=w\tau,
-\qquad
-\phi(\tau,\sigma)=w\sigma,
-\qquad
+t(\tau,\sigma)=w\tau, \qquad
+\phi(\tau,\sigma)=w\sigma, \qquad
 \rho(\tau,\sigma)=\tau.
 \end{align}$$
 
@@ -1992,8 +1830,7 @@ e^{aH(z)}e^{bH(w)}\sim (z-w)^{-ab}e^{(a+b)H(w)}.
 1. For ghost systems, remember:
 
 $$\begin{align}
-c_{bc}=1-3(2\lambda-1)^{2},
-\qquad
+c_{bc}=1-3(2\lambda-1)^{2}, \qquad
 c_{\beta\gamma}=2-12\lambda(1-\lambda).
 \end{align}$$
 

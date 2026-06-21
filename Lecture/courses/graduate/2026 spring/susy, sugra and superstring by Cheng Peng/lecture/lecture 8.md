@@ -42,35 +42,24 @@ X^{\mu}(z,\bar{z}) & = X_{L}^{\mu}(z) + X_{R}^{\mu}(\bar{z})
 with oscillator expansions
 
 $$\begin{align}
-X^{\mu}(z,\bar{z})
-& =
-x^{\mu}
-- i\frac{\alpha'}{2}p^{\mu}\ln(z\bar{z}) \\
-&\quad
-+ i\sqrt{\frac{\alpha'}{2}}\sum_{n\neq 0}\frac{\alpha_{n}^{\mu}}{n}z^{-n}
-+ i\sqrt{\frac{\alpha'}{2}}\sum_{n\neq 0}\frac{\tilde{\alpha}_{n}^{\mu}}{n}\bar{z}^{-n}.
+X^{\mu}(z,\bar{z}) & = x^{\mu} - i\frac{\alpha'}{2}p^{\mu}\ln(z\bar{z}) \\
+&\quad + i\sqrt{\frac{\alpha'}{2}}\sum_{n\neq 0}\frac{\alpha_{n}^{\mu}}{n}z^{-n} + i\sqrt{\frac{\alpha'}{2}}\sum_{n\neq 0}\frac{\tilde{\alpha}_{n}^{\mu}}{n}\bar{z}^{-n}.
 \end{align}$$
 
 the holomorphic and antiholomorphic OPEs are independent:
 
 $$\begin{align}
-X_{L}^{\mu}(z)X_{L}^{\nu}(w)
-& \sim -\frac{\alpha'}{2}\eta^{\mu\nu}\ln(z-w) \\
-X_{R}^{\mu}(\bar{z})X_{R}^{\nu}(\bar{w})
-& \sim -\frac{\alpha'}{2}\eta^{\mu\nu}\ln(\bar{z}-\bar{w}) \\
-X_{L}^{\mu}(z)X_{R}^{\nu}(\bar{w})
-& \sim 0.
+X_{L}^{\mu}(z)X_{L}^{\nu}(w) & \sim -\frac{\alpha'}{2}\eta^{\mu\nu}\ln(z-w) \\
+X_{R}^{\mu}(\bar{z})X_{R}^{\nu}(\bar{w}) & \sim -\frac{\alpha'}{2}\eta^{\mu\nu}\ln(\bar{z}-\bar{w}) \\
+X_{L}^{\mu}(z)X_{R}^{\nu}(\bar{w}) & \sim 0.
 \end{align}$$
 
 correspondingly there are two commuting oscillator algebras,
 
 $$\begin{align}
-[\alpha_{m}^{\mu},\alpha_{n}^{\nu}]
-& = m\eta^{\mu\nu}\delta_{m+n,0} \\
-[\tilde{\alpha}_{m}^{\mu},\tilde{\alpha}_{n}^{\nu}]
-& = m\eta^{\mu\nu}\delta_{m+n,0} \\
-[\alpha_{m}^{\mu},\tilde{\alpha}_{n}^{\nu}]
-& = 0.
+[\alpha_{m}^{\mu},\alpha_{n}^{\nu}] & = m\eta^{\mu\nu}\delta_{m+n,0} \\
+[\tilde{\alpha}_{m}^{\mu},\tilde{\alpha}_{n}^{\nu}] & = m\eta^{\mu\nu}\delta_{m+n,0} \\
+[\alpha_{m}^{\mu},\tilde{\alpha}_{n}^{\nu}] & = 0.
 \end{align}$$
 
 this left-right factorization is the main CFT input behind closed-string quantization.
@@ -99,9 +88,7 @@ h & = \frac{\alpha' k^{2}}{4} \\
 more general oscillator states are obtained by multiplying the exponential by derivatives of $X$:
 
 $$\begin{align}
-\mathcal{O}(z,\bar{z})
-& =
-\partial^{r_{1}}X^{\mu_{1}}\cdots \partial^{r_{a}}X^{\mu_{a}}
+\mathcal{O}(z,\bar{z}) & = \partial^{r_{1}}X^{\mu_{1}}\cdots \partial^{r_{a}}X^{\mu_{a}}
 \bar{\partial}^{s_{1}}X^{\nu_{1}}\cdots \bar{\partial}^{s_{b}}X^{\nu_{b}}
 e^{ik\cdot X(z,\bar{z})}.
 \end{align}$$
@@ -155,9 +142,7 @@ N_{L}-N_{R} & = 0.
 adding either condition gives the closed-string mass formula
 
 $$\begin{align}
-M^{2} & = -p^{2}
-= \frac{4}{\alpha'}(N_{L}-1)
-= \frac{4}{\alpha'}(N_{R}-1).
+M^{2} & = -p^{2} = \frac{4}{\alpha'}(N_{L}-1) = \frac{4}{\alpha'}(N_{R}-1).
 \end{align}$$
 
 ## vertex operators as physical states
@@ -189,9 +174,7 @@ M^{2} & = -k^{2}=-\frac{4}{\alpha'}.
 for the first excited closed-string state, the vertex operator is
 
 $$\begin{align}
-V_{\epsilon,k}(z,\bar{z})
-& =
-\epsilon_{\mu\nu}:\partial X^{\mu}\bar{\partial}X^{\nu}e^{ik\cdot X}:
+V_{\epsilon,k}(z,\bar{z}) & = \epsilon_{\mu\nu}:\partial X^{\mu}\bar{\partial}X^{\nu}e^{ik\cdot X}:
 \end{align}$$
 
 and the weight condition gives
@@ -228,8 +211,7 @@ $$\begin{align}
 therefore the left- and right-moving sectors are not independent. by the doubling trick, one extends the holomorphic field to the lower half-plane and works with a single chiral field. this is why open strings have only one copy of the oscillator algebra,
 
 $$\begin{align}
-[\alpha_{m}^{\mu},\alpha_{n}^{\nu}]
-& = m\eta^{\mu\nu}\delta_{m+n,0},
+[\alpha_{m}^{\mu},\alpha_{n}^{\nu}] & = m\eta^{\mu\nu}\delta_{m+n,0},
 \end{align}$$
 
 rather than independent $\alpha_{n}^{\mu}$ and $\tilde{\alpha}_{n}^{\mu}$ modes.
@@ -237,11 +219,7 @@ rather than independent $\alpha_{n}^{\mu}$ and $\tilde{\alpha}_{n}^{\mu}$ modes.
 in strip coordinates, the Neumann open-string mode expansion is
 
 $$\begin{align}
-X^{\mu}(\tau,\sigma)
-& =
-x^{\mu}
-+ 2\alpha' p^{\mu}\tau
-+ i\sqrt{2\alpha'}\sum_{n\neq 0}\frac{\alpha_{n}^{\mu}}{n}
+X^{\mu}(\tau,\sigma) & = x^{\mu} + 2\alpha' p^{\mu}\tau + i\sqrt{2\alpha'}\sum_{n\neq 0}\frac{\alpha_{n}^{\mu}}{n}
 e^{-in\tau}\cos(n\sigma),
 \end{align}$$
 
@@ -288,9 +266,7 @@ M^{2} & = -k^{2}=-\frac{1}{\alpha'}.
 the first excited open-string vertex is
 
 $$\begin{align}
-V_{\zeta,k}(x)
-& =
-\zeta_{\mu}:\partial X^{\mu}e^{ik\cdot X}:(x).
+V_{\zeta,k}(x) & = \zeta_{\mu}:\partial X^{\mu}e^{ik\cdot X}:(x).
 \end{align}$$
 
 its weight is
@@ -348,11 +324,9 @@ $$\begin{align}
 schematically,
 
 $$\begin{align}
-\text{closed string}
-& \sim
+\text{closed string} & \sim
 \text{left mover}\otimes \text{right mover}, \\
-\text{open string}
-& \sim
+\text{open string} & \sim
 \text{one boundary chiral sector}.
 \end{align}$$
 
@@ -438,8 +412,7 @@ N_{L} & = N_{R}
 and the mass formula is
 
 $$\begin{align}
-M^{2} & = \frac{4}{\alpha'}(N_{L}-1)
-       = \frac{4}{\alpha'}(N_{R}-1)
+M^{2} & = \frac{4}{\alpha'}(N_{L}-1) = \frac{4}{\alpha'}(N_{R}-1)
 \end{align}$$
 
 the first few closed-string levels are:
@@ -451,13 +424,7 @@ the first few closed-string levels are:
 at the massless level, the tensor product of left and right transverse vectors decomposes into
 
 $$\begin{align}
-24\otimes 24
-& =
-\left(\text{symmetric traceless}\right)
-\oplus
-\left(\text{antisymmetric}\right)
-\oplus
-\left(\text{trace}\right)
+24\otimes 24 & = \left(\text{symmetric traceless}\right) \oplus \left(\text{antisymmetric}\right) \oplus \left(\text{trace}\right)
 \end{align}$$
 
 which gives the graviton, the Kalb-Ramond two-form, and the dilaton. this is the first place where closed strings naturally contain a spin-two field.

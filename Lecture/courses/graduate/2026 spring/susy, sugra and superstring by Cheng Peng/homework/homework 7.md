@@ -15,15 +15,13 @@ $$\begin{align}
 and
 
 $$\begin{align}
-L_{0} & = \frac{1}{2}\alpha _{0}^{2}+N, &
-\tilde{L}_{0} & = \frac{1}{2}\tilde{\alpha} _{0}^{2}+\tilde{N},
+L_{0} & = \frac{1}{2}\alpha _{0}^{2}+N, & \tilde{L}_{0} & = \frac{1}{2}\tilde{\alpha} _{0}^{2}+\tilde{N},
 \end{align}$$
 
 with the physical state conditions
 
 $$\begin{align}
-(L_{0}-1)|\phi\rangle & = 0, &
-(\tilde{L}_{0}-1)|\phi\rangle & = 0.
+(L_{0}-1)|\phi\rangle & = 0, & (\tilde{L}_{0}-1)|\phi\rangle & = 0.
 \end{align}$$
 
 derive the mass-shell condition.
@@ -45,8 +43,7 @@ $$\begin{align}
 therefore
 
 $$\begin{align}
-L_{0} & = \frac{\alpha'}{4}p^{2}+N, &
-\tilde{L}_{0} & = \frac{\alpha'}{4}p^{2}+\tilde{N}.
+L_{0} & = \frac{\alpha'}{4}p^{2}+N, & \tilde{L}_{0} & = \frac{\alpha'}{4}p^{2}+\tilde{N}.
 \end{align}$$
 
 imposing the physical state conditions gives

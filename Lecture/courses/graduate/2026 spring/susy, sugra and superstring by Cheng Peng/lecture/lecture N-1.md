@@ -61,13 +61,7 @@ up to a harmless convention-dependent normalization. the constraints then solve 
 before gauge fixing, the flat-space RNS action in conformal gauge has the schematic form
 
 $$\begin{align}
-S_{\mathrm{RNS}}
-& =
--\frac{1}{4\pi\alpha'}\int \mathrm{d}^{2}\sigma
-\left(
-\partial_{a}X^{\mu}\partial^{a}X_{\mu}
-- i \bar{\psi}^{\mu}\rho^{a}\partial_{a}\psi_{\mu}
-\right).
+S_{\mathrm{RNS}} & = -\frac{1}{4\pi\alpha'}\int \mathrm{d}^{2}\sigma \left( \partial_{a}X^{\mu}\partial^{a}X_{\mu} - i \bar{\psi}^{\mu}\rho^{a}\partial_{a}\psi_{\mu} \right).
 \end{align}$$
 
 before imposing light-cone gauge, this theory has:
@@ -89,23 +83,14 @@ covariantly these become the Virasoro and super-Virasoro constraints. in light-c
 the light-cone RNS action reduces to
 
 $$\begin{align}
-S_{\mathrm{LC}}
-& =
-\frac{1}{4\pi\alpha'}\int \mathrm{d}^{2}\sigma
-\left(
-\partial_{a}X^{i}\partial^{a}X^{i}
-+ i\psi_{+}^{i}\partial_{-}\psi_{+}^{i}
-+ i\psi_{-}^{i}\partial_{+}\psi_{-}^{i}
-\right).
+S_{\mathrm{LC}} & = \frac{1}{4\pi\alpha'}\int \mathrm{d}^{2}\sigma \left( \partial_{a}X^{i}\partial^{a}X^{i} + i\psi_{+}^{i}\partial_{-}\psi_{+}^{i} + i\psi_{-}^{i}\partial_{+}\psi_{-}^{i} \right).
 \end{align}$$
 
 the target-space Poincare charges are still present, although not all of them are manifest. the transverse momentum and angular momentum are directly
 
 $$\begin{align}
 P^{i} & = \frac{1}{2\pi\alpha'}\int \mathrm{d}\sigma\,\partial_{\tau}X^{i}, \\
-J^{ij} & = \frac{1}{2\pi\alpha'}\int \mathrm{d}\sigma
-\left(X^{i}\partial_{\tau}X^{j}-X^{j}\partial_{\tau}X^{i}\right)
-+\text{fermions}.
+J^{ij} & = \frac{1}{2\pi\alpha'}\int \mathrm{d}\sigma \left(X^{i}\partial_{\tau}X^{j}-X^{j}\partial_{\tau}X^{i}\right) +\text{fermions}.
 \end{align}$$
 
 the Lorentz generators involving $-$ are more complicated because $X^{-}$ is composite. quantum consistency of these generators is one way to see the critical dimension $D=10$.
@@ -115,22 +100,15 @@ the Lorentz generators involving $-$ are more complicated because $X^{-}$ is com
 the transverse bosons have the oscillator algebra
 
 $$\begin{align}
-[\alpha_{m}^{i},\alpha_{n}^{j}]
-& =
-m\delta^{ij}\delta_{m+n,0}.
+[\alpha_{m}^{i},\alpha_{n}^{j}] & = m\delta^{ij}\delta_{m+n,0}.
 \end{align}$$
 
 for closed strings there are two commuting copies,
 
 $$\begin{align}
-[\alpha_{m}^{i},\alpha_{n}^{j}]
-& =
-m\delta^{ij}\delta_{m+n,0}, \\
-[\tilde{\alpha}_{m}^{i},\tilde{\alpha}_{n}^{j}]
-& =
-m\delta^{ij}\delta_{m+n,0}, \\
-[\alpha_{m}^{i},\tilde{\alpha}_{n}^{j}]
-& =0 .
+[\alpha_{m}^{i},\alpha_{n}^{j}] & = m\delta^{ij}\delta_{m+n,0}, \\
+[\tilde{\alpha}_{m}^{i},\tilde{\alpha}_{n}^{j}] & = m\delta^{ij}\delta_{m+n,0}, \\
+[\alpha_{m}^{i},\tilde{\alpha}_{n}^{j}] & =0 .
 \end{align}$$
 
 the worldsheet fermions have two possible boundary conditions around the spatial circle.
@@ -145,9 +123,7 @@ so their modes are half-integer,
 
 $$\begin{align}
 r & \in \mathbb{Z}+\frac{1}{2}, \\
-\{b_{r}^{i},b_{s}^{j}\}
-& =
-\delta^{ij}\delta_{r+s,0}.
+\{b_{r}^{i},b_{s}^{j}\} & = \delta^{ij}\delta_{r+s,0}.
 \end{align}$$
 
 in the R sector, fermions are periodic:
@@ -160,9 +136,7 @@ so their modes are integer,
 
 $$\begin{align}
 m & \in \mathbb{Z}, \\
-\{d_{m}^{i},d_{n}^{j}\}
-& =
-\delta^{ij}\delta_{m+n,0}.
+\{d_{m}^{i},d_{n}^{j}\} & = \delta^{ij}\delta_{m+n,0}.
 \end{align}$$
 
 the R zero modes satisfy
@@ -176,14 +150,8 @@ therefore they generate the Clifford algebra of $SO(8)$. the R ground state is n
 for one open-string sector the level operator is
 
 $$\begin{align}
-N_{\mathrm{NS}}
-& =
-\sum_{n=1}^{\infty}\alpha_{-n}^{i}\alpha_{n}^{i}
-+\sum_{r>0}r\, b_{-r}^{i}b_{r}^{i}, \\
-N_{\mathrm{R}}
-& =
-\sum_{n=1}^{\infty}\alpha_{-n}^{i}\alpha_{n}^{i}
-+\sum_{m=1}^{\infty}m\, d_{-m}^{i}d_{m}^{i}.
+N_{\mathrm{NS}} & = \sum_{n=1}^{\infty}\alpha_{-n}^{i}\alpha_{n}^{i} +\sum_{r>0}r\, b_{-r}^{i}b_{r}^{i}, \\
+N_{\mathrm{R}} & = \sum_{n=1}^{\infty}\alpha_{-n}^{i}\alpha_{n}^{i} +\sum_{m=1}^{\infty}m\, d_{-m}^{i}d_{m}^{i}.
 \end{align}$$
 
 the light-cone normal-ordering constants are
@@ -196,19 +164,13 @@ a_{\mathrm{R}} & =0 .
 the open-string mass formula is
 
 $$\begin{align}
-M^{2}
-& =
-\frac{1}{\alpha'}(N-a).
+M^{2} & = \frac{1}{\alpha'}(N-a).
 \end{align}$$
 
 for closed strings there are left- and right-moving levels, and
 
 $$\begin{align}
-M^{2}
-& =
-\frac{4}{\alpha'}(N_{L}-a_{L})
-=
-\frac{4}{\alpha'}(N_{R}-a_{R}),
+M^{2} & = \frac{4}{\alpha'}(N_{L}-a_{L}) = \frac{4}{\alpha'}(N_{R}-a_{R}),
 \end{align}$$
 
 with level matching
@@ -261,8 +223,7 @@ which is massless and transforms as the $SO(8)$ vector $8_{v}$.
 in the R sector the zero modes produce spinors. the GSO projection keeps one chirality,
 
 $$\begin{align}
-8_{s}
-\qquad \text{or} \qquad
+8_{s} \qquad \text{or} \qquad
 8_{c}.
 \end{align}$$
 
@@ -279,11 +240,7 @@ in spacetime terms, the NS sector supplies bosons and the R sector supplies ferm
 Type II strings are closed oriented superstrings. their Hilbert space is
 
 $$\begin{align}
-\mathcal{H}_{\mathrm{II}}
-& =
-\left(\mathcal{H}_{\mathrm{NS}}\oplus \mathcal{H}_{\mathrm{R}}\right)_{L}
-\otimes
-\left(\mathcal{H}_{\mathrm{NS}}\oplus \mathcal{H}_{\mathrm{R}}\right)_{R},
+\mathcal{H}_{\mathrm{II}} & = \left(\mathcal{H}_{\mathrm{NS}}\oplus \mathcal{H}_{\mathrm{R}}\right)_{L} \otimes \left(\mathcal{H}_{\mathrm{NS}}\oplus \mathcal{H}_{\mathrm{R}}\right)_{R},
 \end{align}$$
 
 subject to level matching.
@@ -316,18 +273,15 @@ the mixed sectors NS-R and R-NS give the gravitini and dilatini. Type IIA is non
 the first massive level is obtained by raising one side to the next GSO-allowed level and imposing level matching. for example, the left-moving first massive NS building blocks are
 
 $$\begin{align}
-\alpha_{-1}^{i}b_{-1/2}^{j}\ket{0;k}_{\mathrm{NS}},
-\qquad
-b_{-3/2}^{i}\ket{0;k}_{\mathrm{NS}},
-\qquad
+\alpha_{-1}^{i}b_{-1/2}^{j}\ket{0;k}_{\mathrm{NS}}, \qquad
+b_{-3/2}^{i}\ket{0;k}_{\mathrm{NS}}, \qquad
 b_{-1/2}^{i}b_{-1/2}^{j}b_{-1/2}^{k}\ket{0;k}_{\mathrm{NS}}.
 \end{align}$$
 
 R-sector first massive states are built from
 
 $$\begin{align}
-\alpha_{-1}^{i}\ket{s;k}_{\mathrm{R}},
-\qquad
+\alpha_{-1}^{i}\ket{s;k}_{\mathrm{R}}, \qquad
 d_{-1}^{i}\ket{s;k}_{\mathrm{R}}.
 \end{align}$$
 
@@ -352,8 +306,7 @@ together with their fermionic superpartners.
 consistency also requires open strings. their endpoints carry Chan-Paton labels,
 
 $$\begin{align}
-\ket{k;i,j},
-\qquad i,j=1,\dots,N .
+\ket{k;i,j}, \qquad i,j=1,\dots,N .
 \end{align}$$
 
 the unoriented projection restricts the Chan-Paton algebra. anomaly cancellation fixes
@@ -379,10 +332,8 @@ where $\lambda^{a}$ is an $SO(32)$ Chan-Paton generator. this gives the gauge bo
 the first massive open-string level is generated by states such as
 
 $$\begin{align}
-\lambda^{a}\alpha_{-1}^{i}b_{-1/2}^{j}\ket{0;k}_{\mathrm{NS}},
-\qquad
-\lambda^{a}b_{-3/2}^{i}\ket{0;k}_{\mathrm{NS}},
-\qquad
+\lambda^{a}\alpha_{-1}^{i}b_{-1/2}^{j}\ket{0;k}_{\mathrm{NS}}, \qquad
+\lambda^{a}b_{-3/2}^{i}\ket{0;k}_{\mathrm{NS}}, \qquad
 \lambda^{a}d_{-1}^{i}\ket{s;k}_{\mathrm{R}}.
 \end{align}$$
 
@@ -405,28 +356,21 @@ $$\begin{align}
 there are exactly two choices relevant for ten-dimensional supersymmetric heterotic strings:
 
 $$\begin{align}
-\Gamma_{16}^{SO(32)},
-\qquad
+\Gamma_{16}^{SO(32)}, \qquad
 \Gamma_{8}^{E_{8}}\oplus \Gamma_{8}^{E_{8}}.
 \end{align}$$
 
 the mass formulas can be written as
 
 $$\begin{align}
-\frac{\alpha'}{4}M^{2}
-& =
-N_{R}-a_{R}, \\
-\frac{\alpha'}{4}M^{2}
-& =
-N_{L}+\frac{1}{2}p_{L}^{2}-1,
+\frac{\alpha'}{4}M^{2} & = N_{R}-a_{R}, \\
+\frac{\alpha'}{4}M^{2} & = N_{L}+\frac{1}{2}p_{L}^{2}-1,
 \end{align}$$
 
 with level matching
 
 $$\begin{align}
-N_{R}-a_{R}
-& =
-N_{L}+\frac{1}{2}p_{L}^{2}-1 .
+N_{R}-a_{R} & = N_{L}+\frac{1}{2}p_{L}^{2}-1 .
 \end{align}$$
 
 here $a_{R}=1/2$ in the right-moving NS sector and $a_{R}=0$ in the right-moving R sector.
@@ -461,10 +405,8 @@ tensored with the right-moving massless NS excitation. these roots generate eith
 the first massive heterotic states are constrained by the same level-matching equation. examples are obtained by increasing the right-moving level using
 
 $$\begin{align}
-\tilde{\alpha}_{-1}^{i}\tilde{b}_{-1/2}^{j},
-\qquad
-\tilde{b}_{-3/2}^{i},
-\qquad
+\tilde{\alpha}_{-1}^{i}\tilde{b}_{-1/2}^{j}, \qquad
+\tilde{b}_{-3/2}^{i}, \qquad
 \tilde{d}_{-1}^{i}
 \end{align}$$
 
@@ -475,14 +417,7 @@ and increasing the left-moving side by ordinary bosonic oscillators, internal os
 in the Green-Schwarz formalism spacetime supersymmetry is built in from the start. after fixing light-cone gauge and kappa symmetry, the physical fields are again eight transverse bosons and eight physical worldsheet fermions. schematically,
 
 $$\begin{align}
-S_{\mathrm{GS,LC}}
-& =
-\frac{1}{4\pi\alpha'}\int \mathrm{d}^{2}\sigma
-\left(
-\partial_{a}X^{i}\partial^{a}X^{i}
-+ i S^{a}\partial_{+}S^{a}
-+ i \tilde{S}^{a}\partial_{-}\tilde{S}^{a}
-\right),
+S_{\mathrm{GS,LC}} & = \frac{1}{4\pi\alpha'}\int \mathrm{d}^{2}\sigma \left( \partial_{a}X^{i}\partial^{a}X^{i} + i S^{a}\partial_{+}S^{a} + i \tilde{S}^{a}\partial_{-}\tilde{S}^{a} \right),
 \end{align}$$
 
 where $S^{a}$ and $\tilde{S}^{a}$ are $SO(8)$ spinors. Type IIA and Type IIB are again distinguished by the relative chirality of these two spinors.
@@ -505,8 +440,7 @@ the light-cone canonical construction tells us what the Hilbert space looks like
 a torus can be written as
 
 $$\begin{align}
-z & \sim z+1,
-\qquad
+z & \sim z+1, \qquad
 z \sim z+\tau,
 \end{align}$$
 
@@ -528,14 +462,8 @@ physically, $T$ shifts one cycle by the other, while $S$ exchanges the two cycle
 in operator language the oriented closed-string one-loop amplitude has the schematic form
 
 $$\begin{align}
-Z(\tau,\bar{\tau})
-& =
-\mathrm{Tr}_{\mathcal{H}_{\mathrm{closed}}}
-\left(
-q^{L_{0}-c/24}
-\bar{q}^{\tilde{L}_{0}-\tilde{c}/24}
-\right),
-\qquad
+Z(\tau,\bar{\tau}) & = \mathrm{Tr}_{\mathcal{H}_{\mathrm{closed}}} \left( q^{L_{0}-c/24}
+\bar{q}^{\tilde{L}_{0}-\tilde{c}/24} \right), \qquad
 q=e^{2\pi i\tau}.
 \end{align}$$
 
@@ -559,32 +487,24 @@ $$\begin{align}
 \left[\begin{array}{c}
 a \\
 b
-\end{array}\right],
-\qquad
+\end{array}\right], \qquad
 a,b\in \{0,1\},
 \end{align}$$
 
 where $a$ and $b$ record periodic or anti-periodic boundary conditions around the two cycles. modular transformations mix these spin structures:
 
 $$\begin{align}
-T:\quad
-\left[\begin{array}{c}
+T:\quad \left[\begin{array}{c}
 a \\
 b
-\end{array}\right]
-& \mapsto
-\left[\begin{array}{c}
+\end{array}\right] & \mapsto \left[\begin{array}{c}
 a \\
 a+b
-\end{array}\right],
-\\
-S:\quad
-\left[\begin{array}{c}
+\end{array}\right], \\
+S:\quad \left[\begin{array}{c}
 a \\
 b
-\end{array}\right]
-& \mapsto
-\left[\begin{array}{c}
+\end{array}\right] & \mapsto \left[\begin{array}{c}
 b \\
 a
 \end{array}\right].
@@ -602,9 +522,7 @@ both choices are modular invariant. the difference is not visible as a failure o
 for heterotic strings the right-moving superstring side is modular consistent by the same RNS GSO mechanism. the left-moving bosonic side contains the internal lattice contribution
 
 $$\begin{align}
-\Theta_{\Gamma}(\tau)
-& =
-\sum_{p\in \Gamma} q^{p^{2}/2}.
+\Theta_{\Gamma}(\tau) & = \sum_{p\in \Gamma} q^{p^{2}/2}.
 \end{align}$$
 
 $T$ invariance requires
@@ -622,8 +540,7 @@ $$\begin{align}
 so the lattice must also be self-dual. in sixteen dimensions the two even self-dual Euclidean lattices are precisely
 
 $$\begin{align}
-\Gamma_{16}^{SO(32)},
-\qquad
+\Gamma_{16}^{SO(32)}, \qquad
 \Gamma_{8}^{E_{8}}\oplus \Gamma_{8}^{E_{8}}.
 \end{align}$$
 
@@ -678,9 +595,7 @@ N_{L}-a_{L} & = N_{R}-a_{R}.
 for heterotic strings this becomes
 
 $$\begin{align}
-N_{R}-a_{R}
-& =
-N_{L}+\frac{1}{2}p_{L}^{2}-1.
+N_{R}-a_{R} & = N_{L}+\frac{1}{2}p_{L}^{2}-1.
 \end{align}$$
 
 fourth, the two appearances of $SO(32)$ have different origins. Type I $SO(32)$ comes from Chan-Paton factors and orientifold consistency. heterotic $SO(32)$ comes from an even self-dual internal lattice.

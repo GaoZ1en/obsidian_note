@@ -3,7 +3,8 @@
 known that
 
 $$\begin{align}
-\psi & =\begin{pmatrix}\psi _{+} \\\psi _{-}\end{pmatrix}, & \bar{\psi} & =\psi ^{T}C, & C & =\rho ^{0}
+\psi & =\begin{pmatrix}\psi _{+} \\
+\psi _{-}\end{pmatrix}, & \bar{\psi} & =\psi ^{T}C, & C & =\rho ^{0}
 \end{align}$$
 
 derive the component form of $\displaystyle{\bar{\psi}}$.
@@ -20,8 +21,7 @@ $$\begin{align}
  0 & 1 \\
  -1 & 0
 \end{pmatrix} \\
- & =\begin{pmatrix}
- -\psi _{-} & \psi _{+}
+ & =\begin{pmatrix} -\psi _{-} & \psi _{+}
  \end{pmatrix}
 \end{align}$$
 

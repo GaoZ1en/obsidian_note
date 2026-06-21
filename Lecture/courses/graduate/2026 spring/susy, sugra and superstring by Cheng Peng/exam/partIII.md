@@ -69,8 +69,7 @@ The action is invariant under:
 In conformal gauge one gets free wave equations plus the Virasoro constraints
 
 $$\begin{align}
-\partial_{+}\partial_{-}X^{\mu}=0,
-\qquad
+\partial_{+}\partial_{-}X^{\mu}=0, \qquad
 T_{++}=T_{--}=0.
 \end{align}$$
 
@@ -79,8 +78,7 @@ T_{++}=T_{--}=0.
 Use
 
 $$\begin{align}
-L_{0}\ket{\psi}=\ket{\psi},
-\qquad
+L_{0}\ket{\psi}=\ket{\psi}, \qquad
 L_{n>0}\ket{\psi}=0.
 \end{align}$$
 
@@ -105,15 +103,13 @@ The theorem states that in the critical dimension the covariant physical Hilbert
 Gauge-fix the Polyakov path integral to conformal gauge and divide by the conformal Killing group. Correlation functions of vertex operators produce amplitudes. For tachyons the essential ingredients are:
 
 $$\begin{align}
-\left\langle X^{\mu}(z,\bar z)X^{\nu}(w,\bar w)\right\rangle
-=-\frac{\alpha'}{2}\eta^{\mu\nu}\ln|z-w|^{2},
+\left\langle X^{\mu}(z,\bar z)X^{\nu}(w,\bar w)\right\rangle =-\frac{\alpha'}{2}\eta^{\mu\nu}\ln|z-w|^{2},
 \end{align}$$
 
 and therefore
 
 $$\begin{align}
-\left\langle \prod_{i} e^{ik_{i}\cdot X(z_{i},\bar z_{i})}\right\rangle
-\propto
+\left\langle \prod_{i} e^{ik_{i}\cdot X(z_{i},\bar z_{i})}\right\rangle \propto
 \prod_{i<j}|z_{ij}|^{\alpha' k_{i}\cdot k_{j}}.
 \end{align}$$
 
@@ -122,16 +118,14 @@ $$\begin{align}
 For one compact coordinate $X\sim X+2\pi R$,
 
 $$\begin{align}
-p_{L}=\frac{n}{R}+\frac{wR}{\alpha'},
-\qquad
+p_{L}=\frac{n}{R}+\frac{wR}{\alpha'}, \qquad
 p_{R}=\frac{n}{R}-\frac{wR}{\alpha'}.
 \end{align}$$
 
 The mass formula is
 
 $$\begin{align}
-M^{2}=p_{L}^{2}+\frac{4}{\alpha'}(N_{L}-1)
-=p_{R}^{2}+\frac{4}{\alpha'}(N_{R}-1),
+M^{2}=p_{L}^{2}+\frac{4}{\alpha'}(N_{L}-1) =p_{R}^{2}+\frac{4}{\alpha'}(N_{R}-1),
 \end{align}$$
 
 with level matching
@@ -230,8 +224,7 @@ This is the higher-dimensional analogue of a point particle coupling $\int A_{\m
 Under T-duality on a circle,
 
 $$\begin{align}
-R\leftrightarrow \frac{\alpha'}{R},
-\qquad
+R\leftrightarrow \frac{\alpha'}{R}, \qquad
 X_{R}\to -X_{R}.
 \end{align}$$
 
@@ -264,8 +257,7 @@ Compactifying eleven-dimensional supergravity on $S^{1}$ gives ten-dimensional T
 The Nambu-Goto action is
 
 $$\begin{align}
-S_{\mathrm{NG}}=-T\int d^{2}\sigma \sqrt{-\det\gamma_{ab}},
-\qquad
+S_{\mathrm{NG}}=-T\int d^{2}\sigma \sqrt{-\det\gamma_{ab}}, \qquad
 \gamma_{ab}=\partial_{a}X\cdot\partial_{b}X.
 \end{align}$$
 
@@ -306,8 +298,7 @@ and physical states are BRST cohomology classes.
 Same formulas as in the 2001 paper. The essential exam point is the invariance of the spectrum under
 
 $$\begin{align}
-R\leftrightarrow \frac{\alpha'}{R},
-\qquad
+R\leftrightarrow \frac{\alpha'}{R}, \qquad
 n\leftrightarrow w.
 \end{align}$$
 
@@ -375,8 +366,7 @@ $$\begin{align}
 With fermions $\psi^{\mu}$ the action becomes the RNS action. The transformations
 
 $$\begin{align}
-\delta X^{\mu}=i\bar\varepsilon \psi^{\mu},
-\qquad
+\delta X^{\mu}=i\bar\varepsilon \psi^{\mu}, \qquad
 \delta\psi^{\mu}=\rho^{a}\partial_{a}X^{\mu}\varepsilon
 \end{align}$$
 
@@ -408,8 +398,7 @@ leading to the Hagedorn temperature. At low energy, the massless closed-string s
 For the open bosonic string,
 
 $$\begin{align}
-(L_{0}-1)\ket{\mathrm{phys}}=0
-\quad\Longrightarrow\quad
+(L_{0}-1)\ket{\mathrm{phys}}=0 \quad\Longrightarrow\quad
 \alpha' M^{2}=N-1.
 \end{align}$$
 
@@ -420,12 +409,7 @@ The central term in the Virasoro algebra comes from normal ordering and must be 
 The sigma-model action is
 
 $$\begin{align}
-S=\frac{1}{4\pi\alpha'}\int d^{2}\sigma \sqrt{h}
-\left[
-h^{ab}G_{\mu\nu}(X)\partial_{a}X^{\mu}\partial_{b}X^{\nu}
-+i\epsilon^{ab}B_{\mu\nu}(X)\partial_{a}X^{\mu}\partial_{b}X^{\nu}
-+\alpha'\Phi(X)R^{(2)}
-\right].
+S=\frac{1}{4\pi\alpha'}\int d^{2}\sigma \sqrt{h} \left[ h^{ab}G_{\mu\nu}(X)\partial_{a}X^{\mu}\partial_{b}X^{\nu} +i\epsilon^{ab}B_{\mu\nu}(X)\partial_{a}X^{\mu}\partial_{b}X^{\nu} +\alpha'\Phi(X)R^{(2)} \right].
 \end{align}$$
 
 Each background field becomes a coupling in the two-dimensional quantum field theory.
@@ -468,8 +452,7 @@ X(\tau,\sigma)=x+\frac{\alpha'}{2}p_{L}(\tau+\sigma)+\frac{\alpha'}{2}p_{R}(\tau
 Neumann directions have cosine modes and momentum zero modes. Dirichlet directions have sine modes and fixed endpoints:
 
 $$\begin{align}
-X^{i}(\tau,0)=y_{0}^{i},
-\qquad
+X^{i}(\tau,0)=y_{0}^{i}, \qquad
 X^{i}(\tau,\pi)=y_{\pi}^{i}.
 \end{align}$$
 
@@ -526,10 +509,7 @@ R_{\mu\nu}-\frac{1}{4}H_{\mu\rho\sigma}H_{\nu}{}^{\rho\sigma}+2\nabla_{\mu}\nabl
 plus the $B$-field and dilaton equations. These arise as Euler-Lagrange equations of the spacetime effective action
 
 $$\begin{align}
-\int d^{26}X \sqrt{-G}\, e^{-2\Phi}
-\left(
-R+4(\nabla\Phi)^{2}-\frac{1}{12}H^{2}+\cdots
-\right).
+\int d^{26}X \sqrt{-G}\, e^{-2\Phi} \left( R+4(\nabla\Phi)^{2}-\frac{1}{12}H^{2}+\cdots \right).
 \end{align}$$
 
 # 2011 paper 44: String Theory
@@ -541,8 +521,7 @@ R+4(\nabla\Phi)^{2}-\frac{1}{12}H^{2}+\cdots
 1. Define quasi-primary and primary operators, then analyze a fermionic $bc$ system with
 
 $$\begin{align}
-b(z)c(w)=\frac{1}{z-w}+\cdots,
-\qquad
+b(z)c(w)=\frac{1}{z-w}+\cdots, \qquad
 T=:(\partial b)c:-\lambda \partial:bc:.
 \end{align}$$
 
@@ -556,8 +535,7 @@ Show that $b$ and $c$ are primary and compute their weights and central charge.
 The Nambu-Goto action is
 
 $$\begin{align}
-S_{\mathrm{NG}}=-T\int d^{2}\sigma \sqrt{-\det \gamma_{\alpha\beta}},
-\qquad
+S_{\mathrm{NG}}=-T\int d^{2}\sigma \sqrt{-\det \gamma_{\alpha\beta}}, \qquad
 \gamma_{\alpha\beta}=\partial_{\alpha}X\cdot \partial_{\beta}X.
 \end{align}$$
 
@@ -592,15 +570,13 @@ decomposes into symmetric traceless, antisymmetric, and trace parts, identified 
 The reduced amplitude comes from
 
 $$\begin{align}
-\left\langle \prod_{i=1}^{4} e^{ik_{i}\cdot X(z_{i},\bar z_{i})}\right\rangle
-\propto \prod_{i<j}|z_{ij}|^{\alpha' k_{i}\cdot k_{j}},
+\left\langle \prod_{i=1}^{4} e^{ik_{i}\cdot X(z_{i},\bar z_{i})}\right\rangle \propto \prod_{i<j}|z_{ij}|^{\alpha' k_{i}\cdot k_{j}},
 \end{align}$$
 
 followed by division by $SL(2,\mathbb C)$ and integration over the remaining cross-ratio. The result is the Virasoro-Shapiro amplitude
 
 $$\begin{align}
-A\propto g_{s}^{2}\,
-\frac{\Gamma(-1-\alpha's/4)\Gamma(-1-\alpha't/4)\Gamma(-1-\alpha'u/4)}
+A\propto g_{s}^{2}\, \frac{\Gamma(-1-\alpha's/4)\Gamma(-1-\alpha't/4)\Gamma(-1-\alpha'u/4)}
 {\Gamma(2+\alpha's/4)\Gamma(2+\alpha't/4)\Gamma(2+\alpha'u/4)}.
 \end{align}$$
 
@@ -702,8 +678,7 @@ Exactly as in 2003, 2011, 2017, and 2024: use the free-field correlator, divide 
 The action is
 
 $$\begin{align}
-I=\int_{\Sigma} d^{p+1}\xi\, \sqrt{\gamma}
-\left(\gamma^{\mu\nu}\partial_{\mu}X^{a}\partial_{\nu}X^{b}\eta_{ab}-(p-1)\right).
+I=\int_{\Sigma} d^{p+1}\xi\, \sqrt{\gamma} \left(\gamma^{\mu\nu}\partial_{\mu}X^{a}\partial_{\nu}X^{b}\eta_{ab}-(p-1)\right).
 \end{align}$$
 
 Variation with respect to $X^{a}$ gives
@@ -717,8 +692,7 @@ Variation with respect to $\gamma_{\mu\nu}$ gives an algebraic relation setting 
 For the open string with NN boundary conditions, conformal gauge gives the standard mode expansion and operator constraints
 
 $$\begin{align}
-L_{n}\ket{\mathrm{phys}}=0\quad (n>0),
-\qquad
+L_{n}\ket{\mathrm{phys}}=0\quad (n>0), \qquad
 (L_{0}-a)\ket{\mathrm{phys}}=0.
 \end{align}$$
 
@@ -743,8 +717,7 @@ $$\begin{align}
 so one chirality is right-moving and the other left-moving. Under
 
 $$\begin{align}
-\delta X^{a}=i\bar\epsilon \psi^{a},
-\qquad
+\delta X^{a}=i\bar\epsilon \psi^{a}, \qquad
 \delta\psi^{a}=(\gamma^{\mu}\partial_{\mu}X^{a})\epsilon,
 \end{align}$$
 
@@ -786,12 +759,7 @@ then the Buscher procedure replaces $V$ by $V^{-1}$ while keeping the transverse
 The Polyakov action in general backgrounds is
 
 $$\begin{align}
-S=\frac{1}{4\pi\alpha'}\int d^{2}\sigma \sqrt{h}
-\left(
-h^{\mu\nu}g_{mn}(X)\partial_{\mu}X^{m}\partial_{\nu}X^{n}
-+ i\epsilon^{\mu\nu}b_{mn}(X)\partial_{\mu}X^{m}\partial_{\nu}X^{n}
-+ \alpha' \Phi(X)R^{(2)}
-\right).
+S=\frac{1}{4\pi\alpha'}\int d^{2}\sigma \sqrt{h} \left( h^{\mu\nu}g_{mn}(X)\partial_{\mu}X^{m}\partial_{\nu}X^{n} + i\epsilon^{\mu\nu}b_{mn}(X)\partial_{\mu}X^{m}\partial_{\nu}X^{n} + \alpha' \Phi(X)R^{(2)} \right).
 \end{align}$$
 
 Splitting
@@ -803,8 +771,7 @@ $$\begin{align}
 shows that the constant part contributes
 
 $$\begin{align}
-e^{-\Phi_{0}\chi}=g_{s}^{-\chi},
-\qquad
+e^{-\Phi_{0}\chi}=g_{s}^{-\chi}, \qquad
 g_{s}=e^{\Phi_{0}},
 \end{align}$$
 
@@ -815,8 +782,7 @@ to a worldsheet of Euler character $\chi$.
 For the solution
 
 $$\begin{align}
-X^{1}+iX^{2}=\frac12 e^{-it+i\sigma},
-\qquad
+X^{1}+iX^{2}=\frac12 e^{-it+i\sigma}, \qquad
 X^{3}+iX^{4}=\frac12 e^{it+i\sigma},
 \end{align}$$
 
@@ -827,8 +793,7 @@ the induced metric is constant and diagonal in suitable coordinates. The proper 
 The Hamiltonian constraints
 
 $$\begin{align}
-P^{2}+(TX')^{2}=0,
-\qquad
+P^{2}+(TX')^{2}=0, \qquad
 X'\cdot P=0
 \end{align}$$
 
@@ -875,8 +840,7 @@ Q_{\mathrm{BRST}}=c\,\phi,
 and $Q_{\mathrm{BRST}}^{2}=0$ enforces the mass-shell constraint. For the bosonic string,
 
 $$\begin{align}
-Q_{\mathrm{BRST}}
-=\frac12\sum_{p,q}c_{-p}\left[\alpha_{q}\cdot\alpha_{p-q}-(p-q)c_{-q}b_{p+q}\right].
+Q_{\mathrm{BRST}} =\frac12\sum_{p,q}c_{-p}\left[\alpha_{q}\cdot\alpha_{p-q}-(p-q)c_{-q}b_{p+q}\right].
 \end{align}$$
 
 Using
@@ -970,8 +934,7 @@ and discuss open-string boundary conditions and their Noether charges.
 The phase-space equations are
 
 $$\begin{align}
-\dot X^{m}=eP^{m}+uX'^{m},
-\qquad
+\dot X^{m}=eP^{m}+uX'^{m}, \qquad
 \dot P^{m}=(eTX'^{m}+uP^{m})'.
 \end{align}$$
 
@@ -998,9 +961,7 @@ For the open string, stationarity requires the endpoint term to vanish, so one m
 The translation and Lorentz Noether charges are the standard
 
 $$\begin{align}
-\mathcal P_{m}=\int d\sigma\, P_{m},
-\qquad
-\mathcal J_{mn}=\int d\sigma\, (X_{m}P_{n}-X_{n}P_{m}).
+\mathcal P_{m}=\int d\sigma\, P_{m}, \qquad \mathcal J_{mn}=\int d\sigma\, (X_{m}P_{n}-X_{n}P_{m}).
 \end{align}$$
 
 ### 2. Massive spin 2 and string levels
@@ -1026,8 +987,7 @@ a massless vector of $SO(D-2)$,
 - level $N=1$ gives
 
 $$\begin{align}
-\alpha_{-1}^{I}\ket{0},
-\qquad
+\alpha_{-1}^{I}\ket{0}, \qquad
 b_{-1/2}^{I}b_{-1/2}^{J}\ket{0},
 \end{align}$$
 
@@ -1080,8 +1040,7 @@ derive the reduced four-point amplitude and discuss its analytic structure.
 ND boundary conditions imply half-integer bosonic modes in each transverse direction:
 
 $$\begin{align}
-X^{I}\sim \sum_{r\in \mathbb Z+1/2}\frac{\alpha_{r}^{I}}{r}e^{-ir\tau}\sin r\sigma
-\quad \text{or} \quad
+X^{I}\sim \sum_{r\in \mathbb Z+1/2}\frac{\alpha_{r}^{I}}{r}e^{-ir\tau}\sin r\sigma \quad \text{or} \quad
 \cos r\sigma
 \end{align}$$
 
@@ -1104,8 +1063,7 @@ gives the corresponding intercept. The first three levels are built with one, tw
 For
 
 $$\begin{align}
-S=-\frac{1}{4\pi\alpha'}\int d^{2}\xi \sqrt{-h}\, h^{\mu\nu}\partial_{\mu}X^{a}\partial_{\nu}X^{b}g_{ab}(X)
-+\frac{1}{4\pi}\int d^{2}\xi \sqrt{-h}\,R^{(2)}\Phi(X),
+S=-\frac{1}{4\pi\alpha'}\int d^{2}\xi \sqrt{-h}\, h^{\mu\nu}\partial_{\mu}X^{a}\partial_{\nu}X^{b}g_{ab}(X) +\frac{1}{4\pi}\int d^{2}\xi \sqrt{-h}\,R^{(2)}\Phi(X),
 \end{align}$$
 
 the lowest-order Weyl-invariance condition is
@@ -1135,8 +1093,7 @@ This is the cleanest manifestation of dual resonance.
 The Majorana condition means the worldsheet spinor can be chosen real. Under
 
 $$\begin{align}
-\delta X^{a}=\sqrt{\frac{\alpha'}{2}}\, i\bar\epsilon \psi^{a},
-\qquad
+\delta X^{a}=\sqrt{\frac{\alpha'}{2}}\, i\bar\epsilon \psi^{a}, \qquad
 \delta\psi^{a}=\sqrt{\frac{1}{2\alpha'}}\,\gamma^{\mu}\partial_{\mu}X^{a}\epsilon,
 \end{align}$$
 
@@ -1197,8 +1154,7 @@ c_{bc}=-26.
 Consistency requires
 
 $$\begin{align}
-c_{\mathrm{matter}}+c_{bc}=0
-\quad\Longrightarrow\quad
+c_{\mathrm{matter}}+c_{bc}=0 \quad\Longrightarrow\quad
 D=26.
 \end{align}$$
 
@@ -1242,10 +1198,7 @@ At tree level the sphere three-point function is fixed completely by conformal s
 The bosonic BRST charge is
 
 $$\begin{align}
-Q_{\mathrm{BRST}}
-=
-\sum_{n} c_{-n}(L_{n}-a\delta_{n,0})
--\frac{1}{2}\sum_{m,n}(m-n):c_{-m}c_{-n}b_{m+n}:.
+Q_{\mathrm{BRST}} = \sum_{n} c_{-n}(L_{n}-a\delta_{n,0}) -\frac{1}{2}\sum_{m,n}(m-n):c_{-m}c_{-n}b_{m+n}:.
 \end{align}$$
 
 Nilpotency requires vanishing total central charge.
@@ -1280,11 +1233,7 @@ $$\begin{align}
 Variation with respect to the worldsheet metric gives
 
 $$\begin{align}
-T_{ab}=-\frac{4\pi}{\sqrt{-h}}\frac{\delta S}{\delta h^{ab}}
-=\frac{1}{\alpha'}
-\left(
-\partial_{a}X\cdot\partial_{b}X-\frac{1}{2}h_{ab}h^{cd}\partial_{c}X\cdot\partial_{d}X
-\right).
+T_{ab}=-\frac{4\pi}{\sqrt{-h}}\frac{\delta S}{\delta h^{ab}} =\frac{1}{\alpha'} \left( \partial_{a}X\cdot\partial_{b}X-\frac{1}{2}h_{ab}h^{cd}\partial_{c}X\cdot\partial_{d}X \right).
 \end{align}$$
 
 Its trace vanishes classically:
@@ -1340,8 +1289,7 @@ $$\begin{align}
 for the bosonic closed-string tachyon. The $n$-point tree amplitude is
 
 $$\begin{align}
-\mathcal A_{n}
-\propto
+\mathcal A_{n} \propto
 g_{s}^{n-2}
 \int \frac{\prod_{i} d^{2}z_{i}}{\mathrm{vol}\, SL(2,\mathbb C)}
 \prod_{i<j}|z_{ij}|^{\alpha' k_{i}\cdot k_{j}}.
@@ -1406,8 +1354,7 @@ T=(1-\lambda)(\partial\beta\,\gamma)-\lambda(\beta\,\partial\gamma),
 and therefore
 
 $$\begin{align}
-h_{\beta}=\lambda,
-\qquad
+h_{\beta}=\lambda, \qquad
 h_{\gamma}=1-\lambda.
 \end{align}$$
 
@@ -1461,27 +1408,20 @@ for it to be primary, identify the graviton and $B$-field vertex operators, and 
 With NN boundary conditions,
 
 $$\begin{align}
-X^{\mu}=x^{\mu}+2\alpha' p^{\mu}\tau
-+i\sqrt{2\alpha'}\sum_{n\neq 0}\frac{\alpha_{n}^{\mu}}{n}e^{-in\tau}\cos n\sigma.
+X^{\mu}=x^{\mu}+2\alpha' p^{\mu}\tau +i\sqrt{2\alpha'}\sum_{n\neq 0}\frac{\alpha_{n}^{\mu}}{n}e^{-in\tau}\cos n\sigma.
 \end{align}$$
 
 Covariant quantization imposes
 
 $$\begin{align}
-[x^{\mu},p^{\nu}]=i\eta^{\mu\nu},
-\qquad
+[x^{\mu},p^{\nu}]=i\eta^{\mu\nu}, \qquad
 [\alpha_{m}^{\mu},\alpha_{n}^{\nu}]=m\eta^{\mu\nu}\delta_{m+n,0}.
 \end{align}$$
 
 The Noether current for target-space Lorentz transformations is
 
 $$\begin{align}
-J_{\alpha}^{\mu\nu}
-=
-\frac{1}{2\pi\alpha'}
-\left(
-X^{\mu}\partial_{\alpha}X^{\nu}-X^{\nu}\partial_{\alpha}X^{\mu}
-\right),
+J_{\alpha}^{\mu\nu} = \frac{1}{2\pi\alpha'} \left( X^{\mu}\partial_{\alpha}X^{\nu}-X^{\nu}\partial_{\alpha}X^{\mu} \right),
 \end{align}$$
 
 and the charge
@@ -1509,8 +1449,7 @@ c=1+12\alpha' q^{2}
 up to the sign convention encoded in the timelike/spacelike choice for $X$. This comes from the action
 
 $$\begin{align}
-S[X]=\frac{1}{4\pi\alpha'}\int d^{2}\sigma \sqrt g\, g^{\alpha\beta}\partial_{\alpha}X\partial_{\beta}X
-+\frac{q}{4\pi}\int d^{2}\sigma \sqrt g\, X R^{(2)}.
+S[X]=\frac{1}{4\pi\alpha'}\int d^{2}\sigma \sqrt g\, g^{\alpha\beta}\partial_{\alpha}X\partial_{\beta}X +\frac{q}{4\pi}\int d^{2}\sigma \sqrt g\, X R^{(2)}.
 \end{align}$$
 
 By tensoring $D$ free scalars with a linear-dilaton direction, one can tune the total matter central charge to 26 even when the number of geometric flat directions is $D<26$. String perturbation theory can become unreliable where the dilaton grows and therefore $g_{s}=e^{\Phi}$ becomes large.
@@ -1526,10 +1465,8 @@ V_{\epsilon,k}=:\epsilon_{\mu\nu}\partial X^{\mu}\bar\partial X^{\nu}e^{ik\cdot 
 the OPE with $T$ and $\bar T$ gives:
 
 $$\begin{align}
-k^{2}=0,
-\qquad
-k^{\mu}\epsilon_{\mu\nu}=0,
-\qquad
+k^{2}=0, \qquad
+k^{\mu}\epsilon_{\mu\nu}=0, \qquad
 k^{\nu}\epsilon_{\mu\nu}=0
 \end{align}$$
 
@@ -1544,8 +1481,7 @@ encode the gauge redundancy.
 The pure-trace operator is not primary for $k\neq 0$, but
 
 $$\begin{align}
-(\eta_{\mu\nu}+\xi_{\mu}k_{\nu}+k_{\mu}\xi_{\nu})
-:\partial X^{\mu}\bar\partial X^{\nu}e^{ik\cdot X}:
+(\eta_{\mu\nu}+\xi_{\mu}k_{\nu}+k_{\mu}\xi_{\nu}) :\partial X^{\mu}\bar\partial X^{\nu}e^{ik\cdot X}:
 \end{align}$$
 
 can be made primary by choosing $\xi$ so that the transversality conditions hold. This is the dilaton vertex.
@@ -1561,11 +1497,7 @@ ds^{2}=G_{ij}(y)dy^{i}dy^{j}+V(y)dz^{2}.
 The first-order action introduces a worldsheet one-form $p_{\alpha}$:
 
 $$\begin{align}
-S_{2}[Y,Z,p]
-=
-\frac{1}{4\pi\alpha'}\int d^{2}\sigma\, G_{ij}(Y)\partial^{\alpha}Y^{i}\partial_{\alpha}Y^{j}
-+\pi\alpha' \int d^{2}\sigma\, V^{-1}(Y)p^{\alpha}p_{\alpha}
-+ i\int d^{2}\sigma\, p^{\alpha}\partial_{\alpha}Z.
+S_{2}[Y,Z,p] = \frac{1}{4\pi\alpha'}\int d^{2}\sigma\, G_{ij}(Y)\partial^{\alpha}Y^{i}\partial_{\alpha}Y^{j} +\pi\alpha' \int d^{2}\sigma\, V^{-1}(Y)p^{\alpha}p_{\alpha} + i\int d^{2}\sigma\, p^{\alpha}\partial_{\alpha}Z.
 \end{align}$$
 
 Integrating out $p_{\alpha}$ reproduces the original sigma model. Integrating out $Z$ instead imposes
@@ -1609,8 +1541,7 @@ derive the $GG$ OPE and the mode anticommutator, then discuss the sigma-model eq
 The free-field path integral gives
 
 $$\begin{align}
-\left\langle \prod_{i=1}^{4} e^{ik_{i}\cdot X(z_{i},\bar z_{i})}\right\rangle
-\propto
+\left\langle \prod_{i=1}^{4} e^{ik_{i}\cdot X(z_{i},\bar z_{i})}\right\rangle \propto
 \prod_{i<j}|z_{ij}|^{\alpha' k_{i}\cdot k_{j}}.
 \end{align}$$
 
@@ -1629,25 +1560,21 @@ The massless Type II amplitude has poles corresponding to exchange of massless N
 On the cylinder, the Hamiltonian and momentum are generated by $L_{0}+\tilde L_{0}$ and $L_{0}-\tilde L_{0}$. The torus partition function is
 
 $$\begin{align}
-Z(\tau,\bar\tau)=\operatorname{Tr}\left(q^{L_{0}-c/24}\bar q^{\tilde L_{0}-\tilde c/24}\right),
-\qquad
+Z(\tau,\bar\tau)=\operatorname{Tr}\left(q^{L_{0}-c/24}\bar q^{\tilde L_{0}-\tilde c/24}\right), \qquad
 q=e^{2\pi i\tau}.
 \end{align}$$
 
 For a compact boson:
 
 $$\begin{align}
-p_{L}=\frac{n}{R}+\frac{wR}{\alpha'},
-\qquad
+p_{L}=\frac{n}{R}+\frac{wR}{\alpha'}, \qquad
 p_{R}=\frac{n}{R}-\frac{wR}{\alpha'},
 \end{align}$$
 
 and
 
 $$\begin{align}
-Z_{R}(\tau,\bar\tau)
-=
-\frac{1}{|\eta(\tau)|^{2}}
+Z_{R}(\tau,\bar\tau) = \frac{1}{|\eta(\tau)|^{2}}
 \sum_{n,w\in\mathbb Z}
 q^{\frac{\alpha'}{4}p_{L}^{2}}
 \bar q^{\frac{\alpha'}{4}p_{R}^{2}}.
@@ -1727,8 +1654,7 @@ $$\begin{align}
 and the constraints are
 
 $$\begin{align}
-T_{++}=0,
-\qquad
+T_{++}=0, \qquad
 T_{--}=0.
 \end{align}$$
 
@@ -1741,15 +1667,13 @@ P^{\mu}=\frac{1}{2\pi\alpha'}\int_{0}^{\pi} d\sigma\, \dot X^{\mu},
 and Lorentz invariance gives
 
 $$\begin{align}
-J^{\mu\nu}=\frac{1}{2\pi\alpha'}\int_{0}^{\pi} d\sigma\,
-\left(X^{\mu}\dot X^{\nu}-X^{\nu}\dot X^{\mu}\right).
+J^{\mu\nu}=\frac{1}{2\pi\alpha'}\int_{0}^{\pi} d\sigma\, \left(X^{\mu}\dot X^{\nu}-X^{\nu}\dot X^{\mu}\right).
 \end{align}$$
 
 For NN boundary conditions the mode expansion is
 
 $$\begin{align}
-X^{\mu}=x^{\mu}+2\alpha' p^{\mu}\tau
-+i\sqrt{2\alpha'}\sum_{n\neq 0}\frac{\alpha_{n}^{\mu}}{n}e^{-in\tau}\cos n\sigma.
+X^{\mu}=x^{\mu}+2\alpha' p^{\mu}\tau +i\sqrt{2\alpha'}\sum_{n\neq 0}\frac{\alpha_{n}^{\mu}}{n}e^{-in\tau}\cos n\sigma.
 \end{align}$$
 
 Only the zero mode contributes to $P^{\mu}$:
@@ -1761,8 +1685,7 @@ P^{\mu}=p^{\mu}.
 In static gauge $X^{0}=A\tau$, the standard rigid rotating solution in one plane is
 
 $$\begin{align}
-X^{1}=a\cos\tau\cos\sigma,
-\qquad
+X^{1}=a\cos\tau\cos\sigma, \qquad
 X^{2}=a\sin\tau\cos\sigma,
 \end{align}$$
 
@@ -1779,8 +1702,7 @@ $$\begin{align}
 so
 
 $$\begin{align}
-\langle \partial X(z)\partial X(w)\rangle
-=-\frac{\alpha'}{2}\frac{1}{(z-w)^{2}}.
+\langle \partial X(z)\partial X(w)\rangle =-\frac{\alpha'}{2}\frac{1}{(z-w)^{2}}.
 \end{align}$$
 
 The stress tensor is
@@ -1855,28 +1777,23 @@ S_{\mathrm P}=-\frac{1}{4\pi\alpha'}\int d^{2}\sigma \sqrt{-h}\, h^{ab}\partial_
 \end{align}$$
 
 $$\begin{align}
-\partial_{+}\partial_{-}X^{\mu}=0,
-\qquad
+\partial_{+}\partial_{-}X^{\mu}=0, \qquad
 T_{++}=T_{--}=0.
 \end{align}$$
 
 ## Bosonic spectra
 
 $$\begin{align}
-M_{\mathrm{open}}^{2}=\frac{1}{\alpha'}(N-1),
-\qquad
-M_{\mathrm{closed}}^{2}=\frac{4}{\alpha'}(N_{L}-1)=\frac{4}{\alpha'}(N_{R}-1),
-\qquad
+M_{\mathrm{open}}^{2}=\frac{1}{\alpha'}(N-1), \qquad
+M_{\mathrm{closed}}^{2}=\frac{4}{\alpha'}(N_{L}-1)=\frac{4}{\alpha'}(N_{R}-1), \qquad
 N_{L}=N_{R}.
 \end{align}$$
 
 ## Compactification
 
 $$\begin{align}
-p_{L}=\frac{n}{R}+\frac{wR}{\alpha'},
-\qquad
-p_{R}=\frac{n}{R}-\frac{wR}{\alpha'},
-\qquad
+p_{L}=\frac{n}{R}+\frac{wR}{\alpha'}, \qquad
+p_{R}=\frac{n}{R}-\frac{wR}{\alpha'}, \qquad
 R\leftrightarrow \frac{\alpha'}{R}.
 \end{align}$$
 
@@ -1893,16 +1810,14 @@ T(z)T(w)\sim \frac{c/2}{(z-w)^{4}}+\frac{2T(w)}{(z-w)^{2}}+\frac{\partial T(w)}{
 ## Ghosts
 
 $$\begin{align}
-c_{bc}=-26,
-\qquad
+c_{bc}=-26, \qquad
 c_{\beta\gamma}=11\quad \text{for } \lambda=\frac{3}{2}.
 \end{align}$$
 
 ## Tree-level amplitudes
 
 $$\begin{align}
-\mathcal A_{n}
-\propto
+\mathcal A_{n} \propto
 g_{s}^{n-2}
 \int \frac{\prod_{i} d^{2}z_{i}}{\mathrm{vol}\, SL(2,\mathbb C)}
 \prod_{i<j}|z_{ij}|^{\alpha' k_{i}\cdot k_{j}}.

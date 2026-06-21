@@ -55,8 +55,7 @@ A(m) & = c_{3}m^{3}+c_{1}m
 solves the recurrence, and matching $A(1)$ and $A(2)$ gives
 
 $$\begin{align}
-c_{3} & = \frac{A(2)-2A(1)}{6}, &
-c_{1} & = A(1)-c_{3}.
+c_{3} & = \frac{A(2)-2A(1)}{6}, & c_{1} & = A(1)-c_{3}.
 \end{align}$$
 
 hence the general solution is
@@ -101,8 +100,7 @@ L_{2}L_{-2}|\Omega\rangle & = \frac{1}{4}\alpha _{1}\cdot \alpha _{1}\,\alpha _{
 using the oscillator algebra,
 
 $$\begin{align}
-\alpha _{1}\cdot \alpha _{1}\,\alpha _{-1}\cdot \alpha _{-1}|\Omega\rangle
-& = \alpha _{1}^{\mu}\left[\alpha _{1\mu},\alpha _{-1}\cdot \alpha _{-1}\right]|\Omega\rangle \\
+\alpha _{1}\cdot \alpha _{1}\,\alpha _{-1}\cdot \alpha _{-1}|\Omega\rangle & = \alpha _{1}^{\mu}\left[\alpha _{1\mu},\alpha _{-1}\cdot \alpha _{-1}\right]|\Omega\rangle \\
 & = 2\alpha _{1}^{\mu}\alpha _{-1\mu}|\Omega\rangle \\
 & = 2\left[\alpha _{1}^{\mu},\alpha _{-1\mu}\right]|\Omega\rangle \\
 & = 2D|\Omega\rangle.
@@ -136,8 +134,7 @@ A(2) & = 8c_{3}+2c_{1} = \frac{D}{2},
 we obtain
 
 $$\begin{align}
-c_{3} & = \frac{D}{12}, &
-c_{1} & = -\frac{D}{12}.
+c_{3} & = \frac{D}{12}, & c_{1} & = -\frac{D}{12}.
 \end{align}$$
 
 thus
@@ -187,8 +184,7 @@ now consider the candidate state $\alpha _{-m}^{0}|p\rangle$ with $m>0$.
 for $m>1$, act with $L_{1}$:
 
 $$\begin{align}
-L_{1}\alpha _{-m}^{0}|p\rangle
-& = [L_{1},\alpha _{-m}^{0}]|p\rangle \\
+L_{1}\alpha _{-m}^{0}|p\rangle & = [L_{1},\alpha _{-m}^{0}]|p\rangle \\
 & = m\alpha _{1-m}^{0}|p\rangle.
 \end{align}$$
 
@@ -197,8 +193,7 @@ since $1-m<0$, the mode $\alpha _{1-m}^{0}$ is still a creation operator, so thi
 the only nontrivial case is $m=1$. then
 
 $$\begin{align}
-L_{1}\alpha _{-1}^{0}|p\rangle
-& = [L_{1},\alpha _{-1}^{0}]|p\rangle \\
+L_{1}\alpha _{-1}^{0}|p\rangle & = [L_{1},\alpha _{-1}^{0}]|p\rangle \\
 & = \alpha _{0}^{0}|p\rangle \\
 & = \sqrt{ 2\alpha' }\,p^{0}|p\rangle.
 \end{align}$$
@@ -212,8 +207,7 @@ p^{0} & = 0.
 for $n\ge 2$ we have
 
 $$\begin{align}
-L_{n}\alpha _{-1}^{0}|p\rangle
-& = [L_{n},\alpha _{-1}^{0}]|p\rangle \\
+L_{n}\alpha _{-1}^{0}|p\rangle & = [L_{n},\alpha _{-1}^{0}]|p\rangle \\
 & = \alpha _{n-1}^{0}|p\rangle \\
 & = 0,
 \end{align}$$
@@ -223,8 +217,7 @@ because $n-1>0$ is an annihilation mode. so the only extra requirement is indeed
 the norm of this state is negative:
 
 $$\begin{align}
-\langle p|\alpha _{1}^{0}\alpha _{-1}^{0}|p\rangle
-& = \langle p|[\alpha _{1}^{0},\alpha _{-1}^{0}]|p\rangle \\
+\langle p|\alpha _{1}^{0}\alpha _{-1}^{0}|p\rangle & = \langle p|[\alpha _{1}^{0},\alpha _{-1}^{0}]|p\rangle \\
 & = \eta ^{00}\langle p|p\rangle \\
 & = -\langle p|p\rangle.
 \end{align}$$

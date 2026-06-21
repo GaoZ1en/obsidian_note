@@ -323,10 +323,7 @@ $$\begin{align}
 得到
 
 $$\begin{align}
-\delta S_{p}=-\frac{T_{p}}{2}\int d^{p+1}\sigma \sqrt{-g}
-\left[
-\gamma_{ab}-\frac{1}{2}g_{ab}(g^{cd}\gamma_{cd}+C_{p})
-\right]\delta g^{ab}.
+\delta S_{p}=-\frac{T_{p}}{2}\int d^{p+1}\sigma \sqrt{-g} \left[ \gamma_{ab}-\frac{1}{2}g_{ab}(g^{cd}\gamma_{cd}+C_{p}) \right]\delta g^{ab}.
 \end{align}$$
 
 因此 $g_{ab}$ 的运动方程是
@@ -380,9 +377,7 @@ $$\begin{align}
 所以 on shell 有 $g_{ab}=\gamma_{ab}$。代回作用量：
 
 $$\begin{align}
-S_{p}\big|_{g=\gamma}
-=-\frac{T_{p}}{2}\int d^{p+1}\sigma \sqrt{-\gamma}\left((p+1)-(p-1)\right)
-=-T_{p}\int d^{p+1}\sigma \sqrt{-\gamma}.
+S_{p}\big|_{g=\gamma} =-\frac{T_{p}}{2}\int d^{p+1}\sigma \sqrt{-\gamma}\left((p+1)-(p-1)\right) =-T_{p}\int d^{p+1}\sigma \sqrt{-\gamma}.
 \end{align}$$
 
 这正是标准的 Nambu-Goto 型 $p$-brane 作用量。
@@ -517,8 +512,7 @@ c=11,
 按共形维数写成
 
 $$\begin{align}
-\beta(z)=\sum_{r}\beta_{r}z^{-r-\lambda},
-\qquad
+\beta(z)=\sum_{r}\beta_{r}z^{-r-\lambda}, \qquad
 \gamma(z)=\sum_{r}\gamma_{r}z^{-r-(1-\lambda)}.
 \end{align}$$
 
@@ -651,9 +645,7 @@ X_{\mathrm{osc}}^{i}(\tau,0)=X_{\mathrm{osc}}^{i}(\tau,\pi)=0,
 故本征函数是 $\sin(n\sigma)$。最终模式展开是
 
 $$\begin{align}
-X^{i}(\tau,\sigma)
-=y_{0}^{i}+\frac{y_{\pi}^{i}-y_{0}^{i}}{\pi}\sigma
-+i\sqrt{2\alpha'}\sum_{n\neq 0}\frac{\alpha_{n}^{i}}{n}e^{-in\tau}\sin(n\sigma).
+X^{i}(\tau,\sigma) =y_{0}^{i}+\frac{y_{\pi}^{i}-y_{0}^{i}}{\pi}\sigma +i\sqrt{2\alpha'}\sum_{n\neq 0}\frac{\alpha_{n}^{i}}{n}e^{-in\tau}\sin(n\sigma).
 \end{align}$$
 
 这里没有该方向的动量零模；取而代之的是端点分离给出的线性拉伸项。
@@ -693,9 +685,7 @@ C_{p}=-(p-1).
 此时代回作用量，
 
 $$\begin{align}
-S_{p}^{(p)}\big|_{g=\gamma}
-=-D_{p}\int d^{p+1}\sigma \sqrt{-\gamma}\left((p+1)-(p-1)\right)
-=-2D_{p}\int d^{p+1}\sigma \sqrt{-\gamma}.
+S_{p}^{(p)}\big|_{g=\gamma} =-D_{p}\int d^{p+1}\sigma \sqrt{-\gamma}\left((p+1)-(p-1)\right) =-2D_{p}\int d^{p+1}\sigma \sqrt{-\gamma}.
 \end{align}$$
 
 要与
@@ -811,12 +801,7 @@ $$\begin{align}
 并对作用量变分。整理边界项后得到
 
 $$\begin{align}
-\delta S
-=-\frac{k}{4\pi}\int d^{2}\xi\,
-\operatorname{Tr}\!\left[
-(\partial_{-}\omega_{L})(\partial_{+}g\,g^{-1})
-+(\partial_{+}\omega_{R})(g^{-1}\partial_{-}g)
-\right].
+\delta S =-\frac{k}{4\pi}\int d^{2}\xi\, \operatorname{Tr}\!\left[ (\partial_{-}\omega_{L})(\partial_{+}g\,g^{-1}) +(\partial_{+}\omega_{R})(g^{-1}\partial_{-}g) \right].
 \end{align}$$
 
 因此 Noether 流可以取为
@@ -842,28 +827,21 @@ $$\begin{align}
 Wess-Zumino 项与世界面度规无关，所以 $T_{ab}$ 只来自 kinetic term：
 
 $$\begin{align}
-T_{ab}=\frac{k}{8\pi}\operatorname{Tr}
-\left(
-g^{-1}\partial_{a}g\,g^{-1}\partial_{b}g
--\frac{1}{2}\eta_{ab}\,g^{-1}\partial_{c}g\,g^{-1}\partial^{c}g
-\right).
+T_{ab}=\frac{k}{8\pi}\operatorname{Tr} \left( g^{-1}\partial_{a}g\,g^{-1}\partial_{b}g -\frac{1}{2}\eta_{ab}\,g^{-1}\partial_{c}g\,g^{-1}\partial^{c}g \right).
 \end{align}$$
 
 在光锥坐标下，
 
 $$\begin{align}
-T_{++}=\frac{k}{8\pi}\operatorname{Tr}\!\left[(g^{-1}\partial_{+}g)^{2}\right],
-\qquad
-T_{--}=\frac{k}{8\pi}\operatorname{Tr}\!\left[(g^{-1}\partial_{-}g)^{2}\right],
-\qquad
+T_{++}=\frac{k}{8\pi}\operatorname{Tr}\!\left[(g^{-1}\partial_{+}g)^{2}\right], \qquad
+T_{--}=\frac{k}{8\pi}\operatorname{Tr}\!\left[(g^{-1}\partial_{-}g)^{2}\right], \qquad
 T_{+-}=0.
 \end{align}$$
 
 用上面的守恒流表示，就是
 
 $$\begin{align}
-T_{++}=\frac{\pi}{2k}\operatorname{Tr}(J_{L,+}^{2}),
-\qquad
+T_{++}=\frac{\pi}{2k}\operatorname{Tr}(J_{L,+}^{2}), \qquad
 T_{--}=\frac{\pi}{2k}\operatorname{Tr}(J_{R,-}^{2}).
 \end{align}$$
 
@@ -872,8 +850,7 @@ T_{--}=\frac{\pi}{2k}\operatorname{Tr}(J_{R,-}^{2}).
 对 $g$ 做任意变分，记
 
 $$\begin{align}
-\delta g=g\,\epsilon
-\quad\text{或}\quad
+\delta g=g\,\epsilon \quad\text{或}\quad
 \delta g=\epsilon g,
 \end{align}$$
 
@@ -986,8 +963,7 @@ g=g_{+}(x^{+})g_{-}(x^{-})
 1. 对静止类时世界线，
 
 $$\begin{align}
-g=e^{i\tau\sigma_{2}}
-=e^{i x^{+}\sigma_{2}/2}e^{i x^{-}\sigma_{2}/2}.
+g=e^{i\tau\sigma_{2}} =e^{i x^{+}\sigma_{2}/2}e^{i x^{-}\sigma_{2}/2}.
 \end{align}$$
 
 因此可取
@@ -1005,8 +981,7 @@ $$\begin{align}
 1. 对类空直线，
 
 $$\begin{align}
-g=e^{\tau\sigma_{3}}
-=e^{x^{+}\sigma_{3}/2}e^{x^{-}\sigma_{3}/2},
+g=e^{\tau\sigma_{3}} =e^{x^{+}\sigma_{3}/2}e^{x^{-}\sigma_{3}/2},
 \end{align}$$
 
 因此可取
@@ -1042,8 +1017,7 @@ h=h_{+}(x^{+})h_{-}(x^{-})
 已经满足运动方程，则定义
 
 $$\begin{align}
-g_{+}=e^{i\frac{w_{R}x^{+}\sigma_{2}}{2}}h_{+}(x^{+}),
-\qquad
+g_{+}=e^{i\frac{w_{R}x^{+}\sigma_{2}}{2}}h_{+}(x^{+}), \qquad
 g_{-}=h_{-}(x^{-})e^{i\frac{w_{L}x^{-}\sigma_{2}}{2}},
 \end{align}$$
 
@@ -1060,16 +1034,14 @@ g=g_{+}g_{-}
 设
 
 $$\begin{align}
-h=e^{iu\sigma_{2}}e^{\rho\sigma_{3}}e^{iv\sigma_{2}},
-\qquad
+h=e^{iu\sigma_{2}}e^{\rho\sigma_{3}}e^{iv\sigma_{2}}, \qquad
 u=\frac{t+\phi}{2},\quad v=\frac{t-\phi}{2}.
 \end{align}$$
 
 则 spectral flow 后
 
 $$\begin{align}
-u\to u+\frac{w_{R}x^{+}}{2},
-\qquad
+u\to u+\frac{w_{R}x^{+}}{2}, \qquad
 v\to v+\frac{w_{L}x^{-}}{2}.
 \end{align}$$
 
@@ -1077,14 +1049,12 @@ v\to v+\frac{w_{L}x^{-}}{2}.
 
 $$\begin{align}
 t=u+v\to
-t+\frac{w_{R}x^{+}+w_{L}x^{-}}{2}
-=t+\frac{w_{L}+w_{R}}{2}\tau-\frac{w_{L}-w_{R}}{2}\sigma,
+t+\frac{w_{R}x^{+}+w_{L}x^{-}}{2} =t+\frac{w_{L}+w_{R}}{2}\tau-\frac{w_{L}-w_{R}}{2}\sigma,
 \end{align}$$
 
 $$\begin{align}
 \phi=u-v\to
-\phi+\frac{w_{R}x^{+}-w_{L}x^{-}}{2}
-=\phi+\frac{w_{L}+w_{R}}{2}\sigma-\frac{w_{L}-w_{R}}{2}\tau.
+\phi+\frac{w_{R}x^{+}-w_{L}x^{-}}{2} =\phi+\frac{w_{L}+w_{R}}{2}\sigma-\frac{w_{L}-w_{R}}{2}\tau.
 \end{align}$$
 
 这就是题目给出的变换。
@@ -1098,8 +1068,7 @@ $$\begin{align}
 时，时空时间 $t$ 必须单值，因此
 
 $$\begin{align}
-\Delta t=-\pi(w_{L}-w_{R})=0
-\quad\Longrightarrow\quad
+\Delta t=-\pi(w_{L}-w_{R})=0 \quad\Longrightarrow\quad
 w_{L}=w_{R}.
 \end{align}$$
 
@@ -1118,20 +1087,16 @@ w_{L}=w_{R}=w,\qquad w\in \mathbb{Z}.
 对守恒流，直接代入定义得到
 
 $$\begin{align}
-J_{L,+}(g)
-=e^{i\frac{w_{R}x^{+}\sigma_{2}}{2}}
+J_{L,+}(g) =e^{i\frac{w_{R}x^{+}\sigma_{2}}{2}}
 J_{L,+}(h)
-e^{-i\frac{w_{R}x^{+}\sigma_{2}}{2}}
-+\frac{k}{2\pi}\,\partial_{+}\!\left(e^{i\frac{w_{R}x^{+}\sigma_{2}}{2}}\right)
+e^{-i\frac{w_{R}x^{+}\sigma_{2}}{2}} +\frac{k}{2\pi}\,\partial_{+}\!\left(e^{i\frac{w_{R}x^{+}\sigma_{2}}{2}}\right)
 e^{-i\frac{w_{R}x^{+}\sigma_{2}}{2}},
 \end{align}$$
 
 $$\begin{align}
-J_{R,-}(g)
-=e^{-i\frac{w_{L}x^{-}\sigma_{2}}{2}}
+J_{R,-}(g) =e^{-i\frac{w_{L}x^{-}\sigma_{2}}{2}}
 J_{R,-}(h)
-e^{i\frac{w_{L}x^{-}\sigma_{2}}{2}}
-+\frac{k}{2\pi}\,e^{-i\frac{w_{L}x^{-}\sigma_{2}}{2}}
+e^{i\frac{w_{L}x^{-}\sigma_{2}}{2}} +\frac{k}{2\pi}\,e^{-i\frac{w_{L}x^{-}\sigma_{2}}{2}}
 \partial_{-}\!\left(e^{i\frac{w_{L}x^{-}\sigma_{2}}{2}}\right).
 \end{align}$$
 
@@ -1140,17 +1105,11 @@ e^{i\frac{w_{L}x^{-}\sigma_{2}}{2}}
 能动量张量则相应发生谱流平移：
 
 $$\begin{align}
-T_{++}(g)
-=T_{++}(h)
-+\frac{k w_{R}}{8\pi}\operatorname{Tr}\!\left(\sigma_{2}\partial_{+}h\,h^{-1}\right)
-+\frac{k w_{R}^{2}}{16\pi}\operatorname{Tr}(\sigma_{2}^{2}),
+T_{++}(g) =T_{++}(h) +\frac{k w_{R}}{8\pi}\operatorname{Tr}\!\left(\sigma_{2}\partial_{+}h\,h^{-1}\right) +\frac{k w_{R}^{2}}{16\pi}\operatorname{Tr}(\sigma_{2}^{2}),
 \end{align}$$
 
 $$\begin{align}
-T_{--}(g)
-=T_{--}(h)
-+\frac{k w_{L}}{8\pi}\operatorname{Tr}\!\left(\sigma_{2}h^{-1}\partial_{-}h\right)
-+\frac{k w_{L}^{2}}{16\pi}\operatorname{Tr}(\sigma_{2}^{2}).
+T_{--}(g) =T_{--}(h) +\frac{k w_{L}}{8\pi}\operatorname{Tr}\!\left(\sigma_{2}h^{-1}\partial_{-}h\right) +\frac{k w_{L}^{2}}{16\pi}\operatorname{Tr}(\sigma_{2}^{2}).
 \end{align}$$
 
 由于 $\operatorname{Tr}(\sigma_{2}^{2})=2$，最后一项是 $w^{2}$ 型常数平移。这正是 spectral flow 改变解的能量和角动量数据的原因。
@@ -1160,8 +1119,7 @@ T_{--}(g)
 把 4.2.5(b) 的类空直线解
 
 $$\begin{align}
-h=e^{\tau\sigma_{3}}
-=e^{x^{+}\sigma_{3}/2}e^{x^{-}\sigma_{3}/2}
+h=e^{\tau\sigma_{3}} =e^{x^{+}\sigma_{3}/2}e^{x^{-}\sigma_{3}/2}
 \end{align}$$
 
 做等左右谱流 $w_{L}=w_{R}=w\in \mathbb{Z}$，得到
@@ -1203,29 +1161,18 @@ t(\tau,\sigma)=w\tau,\qquad
 对应的守恒流可直接由 4.3.2 的一般公式代入 $h=e^{\tau\sigma_{3}}$ 得到：
 
 $$\begin{align}
-J_{L,+}(h)=\frac{k}{4\pi}\sigma_{3},
-\qquad
+J_{L,+}(h)=\frac{k}{4\pi}\sigma_{3}, \qquad
 J_{R,-}(h)=\frac{k}{4\pi}\sigma_{3},
 \end{align}$$
 
 所以
 
 $$\begin{align}
-J_{L,+}(g)
-=\frac{k}{2\pi}
-\left(
-\frac{i w}{2}\sigma_{2}
-+e^{i\frac{w x^{+}\sigma_{2}}{2}}\frac{\sigma_{3}}{2}e^{-i\frac{w x^{+}\sigma_{2}}{2}}
-\right),
+J_{L,+}(g) =\frac{k}{2\pi} \left( \frac{i w}{2}\sigma_{2} +e^{i\frac{w x^{+}\sigma_{2}}{2}}\frac{\sigma_{3}}{2}e^{-i\frac{w x^{+}\sigma_{2}}{2}} \right),
 \end{align}$$
 
 $$\begin{align}
-J_{R,-}(g)
-=\frac{k}{2\pi}
-\left(
-\frac{i w}{2}\sigma_{2}
-+e^{-i\frac{w x^{-}\sigma_{2}}{2}}\frac{\sigma_{3}}{2}e^{i\frac{w x^{-}\sigma_{2}}{2}}
-\right).
+J_{R,-}(g) =\frac{k}{2\pi} \left( \frac{i w}{2}\sigma_{2} +e^{-i\frac{w x^{-}\sigma_{2}}{2}}\frac{\sigma_{3}}{2}e^{i\frac{w x^{-}\sigma_{2}}{2}} \right).
 \end{align}$$
 
 ## 可能的出题规律
@@ -1236,8 +1183,7 @@ J_{R,-}(g)
    玻色弦要记住
 
 $$\begin{align}
-M^{2}_{\text{open}}=\frac{N-1}{\alpha'},
-\qquad
+M^{2}_{\text{open}}=\frac{N-1}{\alpha'}, \qquad
 M^{2}_{\text{closed}}=\frac{4(N_{L}-1)}{\alpha'},
 \end{align}$$
 
@@ -1251,8 +1197,7 @@ M^{2}_{\text{closed}}=\frac{4(N_{L}-1)}{\alpha'},
    标准答案始终是
 
 $$\begin{align}
-C_{p}=-(p-1),
-\qquad
+C_{p}=-(p-1), \qquad
 D_{p}=\frac{T_{p}}{2}
 \end{align}$$
 

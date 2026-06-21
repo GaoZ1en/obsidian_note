@@ -19,19 +19,14 @@ The coordinates $\theta^\alpha$ and $\bar\theta_{\dot\alpha}$ anti-commute with 
 One useful realization of the supercharges as differential operators on superspace is
 
 $$\begin{align}
-Q_\alpha
-&= \frac{\partial}{\partial\theta^\alpha}
--i(\sigma^\mu\bar\theta)_\alpha\partial_\mu,\\
-\bar Q_{\dot\alpha}
-&= -\frac{\partial}{\partial\bar\theta^{\dot\alpha}}
-+i(\theta\sigma^\mu)_{\dot\alpha}\partial_\mu.
+Q_\alpha &= \frac{\partial}{\partial\theta^\alpha} -i(\sigma^\mu\bar\theta)_\alpha\partial_\mu,\\
+\bar Q_{\dot\alpha} &= -\frac{\partial}{\partial\bar\theta^{\dot\alpha}} +i(\theta\sigma^\mu)_{\dot\alpha}\partial_\mu.
 \end{align}$$
 
 In this differential-operator representation,
 
 $$\begin{align}
-\{Q_\alpha,\bar Q_{\dot\beta}\}
-=2i(\sigma^\mu)_{\alpha\dot\beta}\partial_\mu,
+\{Q_\alpha,\bar Q_{\dot\beta}\} =2i(\sigma^\mu)_{\alpha\dot\beta}\partial_\mu,
 \end{align}$$
 
 which is the superspace version of $\{Q_\alpha,\bar Q_{\dot\beta}\}=2(\sigma^\mu)_{\alpha\dot\beta}P_\mu$ after fixing the convention for the translation generator.
@@ -39,20 +34,14 @@ which is the superspace version of $\{Q_\alpha,\bar Q_{\dot\beta}\}=2(\sigma^\mu
 The covariant derivatives are defined with the opposite signs in the spacetime-translation terms:
 
 $$\begin{align}
-D_\alpha
-&= \frac{\partial}{\partial\theta^\alpha}
-+i(\sigma^\mu\bar\theta)_\alpha\partial_\mu,\\
-\bar D_{\dot\alpha}
-&= -\frac{\partial}{\partial\bar\theta^{\dot\alpha}}
--i(\theta\sigma^\mu)_{\dot\alpha}\partial_\mu.
+D_\alpha &= \frac{\partial}{\partial\theta^\alpha} +i(\sigma^\mu\bar\theta)_\alpha\partial_\mu,\\
+\bar D_{\dot\alpha} &= -\frac{\partial}{\partial\bar\theta^{\dot\alpha}} -i(\theta\sigma^\mu)_{\dot\alpha}\partial_\mu.
 \end{align}$$
 
 They satisfy
 
 $$\begin{align}
-\{D_\alpha,\bar D_{\dot\beta}\}
-=-2i(\sigma^\mu)_{\alpha\dot\beta}\partial_\mu,
-\qquad
+\{D_\alpha,\bar D_{\dot\beta}\} =-2i(\sigma^\mu)_{\alpha\dot\beta}\partial_\mu, \qquad
 \{D,Q\}=\{D,\bar Q\}=\{\bar D,Q\}=\{\bar D,\bar Q\}=0.
 \end{align}$$
 
@@ -89,13 +78,9 @@ $$\begin{align}
 Reading off the components of $\delta_\epsilon\Phi$ gives the off-shell transformations
 
 $$\begin{align}
-\delta_\epsilon\phi
-&=\sqrt{2}\epsilon^\alpha\psi_\alpha,\\
-\delta_\epsilon\psi_\alpha
-&=i\sqrt{2}(\sigma^\mu\bar\epsilon)_\alpha\partial_\mu\phi
-+\sqrt{2}\epsilon_\alpha F,\\
-\delta_\epsilon F
-&=i\sqrt{2}\bar\epsilon_{\dot\alpha}
+\delta_\epsilon\phi &=\sqrt{2}\epsilon^\alpha\psi_\alpha,\\
+\delta_\epsilon\psi_\alpha &=i\sqrt{2}(\sigma^\mu\bar\epsilon)_\alpha\partial_\mu\phi +\sqrt{2}\epsilon_\alpha F,\\
+\delta_\epsilon F &=i\sqrt{2}\bar\epsilon_{\dot\alpha}
 (\bar\sigma^\mu)^{\dot\alpha\beta}\partial_\mu\psi_\beta.
 \end{align}$$
 
@@ -106,8 +91,7 @@ Together with the conjugate transformations, these are the component rules used 
 The interacting Wess-Zumino model is written compactly as
 
 $$\begin{align}
-S=\int d^4x\,d^4\theta\,\Phi^\dagger\Phi
-+\left(\int d^4x\,d^2\theta\,W(\Phi)+\text{h.c.}\right).
+S=\int d^4x\,d^4\theta\,\Phi^\dagger\Phi +\left(\int d^4x\,d^2\theta\,W(\Phi)+\text{h.c.}\right).
 \end{align}$$
 
 The first term is a $D$-term integral over all fermionic coordinates. It gives the kinetic terms for $\phi$ and $\psi$, together with the auxiliary term $F^*F$. The second term is an $F$-term integral over chiral superspace. It is supersymmetric because the highest chiral component changes by a total derivative.
@@ -115,15 +99,13 @@ The first term is a $D$-term integral over all fermionic coordinates. It gives t
 In components, the superpotential part gives
 
 $$\begin{align}
-\mathcal{L}_W
-=F W'(\phi)-\frac12 W''(\phi)\psi\psi+\text{h.c.}
+\mathcal{L}_W =F W'(\phi)-\frac12 W''(\phi)\psi\psi+\text{h.c.}
 \end{align}$$
 
 The auxiliary-field equation is
 
 $$\begin{align}
-F^*=-W'(\phi),
-\qquad
+F^*=-W'(\phi), \qquad
 F=-W'(\phi)^*.
 \end{align}$$
 
@@ -158,11 +140,7 @@ V\mapsto V+i(\Lambda-\Lambda^\dagger).
 Many components of $V$ are gauge artifacts. In Wess-Zumino gauge,
 
 $$\begin{align}
-V_{\mathrm{WZ}}
-=-\theta\sigma^\mu\bar\theta A_\mu
-+i\theta\theta\bar\theta\bar\lambda
--i\bar\theta\bar\theta\theta\lambda
-+\frac12\theta\theta\bar\theta\bar\theta D.
+V_{\mathrm{WZ}} =-\theta\sigma^\mu\bar\theta A_\mu +i\theta\theta\bar\theta\bar\lambda -i\bar\theta\bar\theta\theta\lambda +\frac12\theta\theta\bar\theta\bar\theta D.
 \end{align}$$
 
 The physical multiplet is
@@ -184,20 +162,13 @@ In the non-Abelian theory the exponential form must be kept, and $W_\alpha$ tran
 The pure super Yang-Mills action is
 
 $$\begin{align}
-S_{\mathrm{SYM}}
-=\frac{1}{4g^2}\int d^4x\,d^2\theta\,\mathrm{Tr}(W^\alpha W_\alpha)
-+\text{h.c.}
+S_{\mathrm{SYM}} =\frac{1}{4g^2}\int d^4x\,d^2\theta\,\mathrm{Tr}(W^\alpha W_\alpha) +\text{h.c.}
 \end{align}$$
 
 In components it contains the Yang-Mills kinetic term, the gaugino kinetic term, and the auxiliary $D$ term:
 
 $$\begin{align}
-\mathcal{L}_{\mathrm{SYM}}
-=\frac{1}{g^2}\mathrm{Tr}\left(
--\frac14 F_{\mu\nu}F^{\mu\nu}
--i\bar\lambda\bar\sigma^\mu D_\mu\lambda
-+\frac12 D^2
-\right).
+\mathcal{L}_{\mathrm{SYM}} =\frac{1}{g^2}\mathrm{Tr}\left( -\frac14 F_{\mu\nu}F^{\mu\nu} -i\bar\lambda\bar\sigma^\mu D_\mu\lambda +\frac12 D^2 \right).
 \end{align}$$
 
 Matter chiral multiplets in a gauge representation are coupled by replacing the kinetic term with
@@ -232,15 +203,13 @@ The matter sector consists of $N_f$ flavors of chiral superfields
 
 $$\begin{align}
 Q_i\in \mathbf{N_c},\qquad
-\widetilde Q^i\in \overline{\mathbf{N_c}},
-\qquad i=1,\dots,N_f.
+\widetilde Q^i\in \overline{\mathbf{N_c}}, \qquad i=1,\dots,N_f.
 \end{align}$$
 
 Their component fields are
 
 $$\begin{align}
-Q_i=(q_i,\psi_{q_i},F_{q_i}),
-\qquad
+Q_i=(q_i,\psi_{q_i},F_{q_i}), \qquad
 \widetilde Q^i=(\widetilde q^i,\psi_{\widetilde q^i},F_{\widetilde q^i}).
 \end{align}$$
 
@@ -249,18 +218,9 @@ The Weyl fermions $\psi_{q_i}$ and $\psi_{\widetilde q^i}$ are the quark fields 
 In matrix notation, the superspace action is
 
 $$\begin{align}
-S_{\mathrm{SQCD}}
-&=\frac{1}{4g^2}\int d^4x\,d^2\theta\,
-\mathrm{Tr}(W^\alpha W_\alpha)+\text{h.c.}\\
-&\quad+\int d^4x\,d^4\theta\,
-\left(
-Q_i^\dagger e^V Q_i
-+\widetilde Q_i e^{-V}\widetilde Q^{\dagger i}
-\right)\\
-&\quad+\left(
-\int d^4x\,d^2\theta\,W_{\mathrm{SQCD}}
-+\text{h.c.}
-\right).
+S_{\mathrm{SQCD}} &=\frac{1}{4g^2}\int d^4x\,d^2\theta\, \mathrm{Tr}(W^\alpha W_\alpha)+\text{h.c.}\\
+&\quad+\int d^4x\,d^4\theta\, \left( Q_i^\dagger e^V Q_i +\widetilde Q_i e^{-V}\widetilde Q^{\dagger i} \right)\\
+&\quad+\left( \int d^4x\,d^2\theta\,W_{\mathrm{SQCD}} +\text{h.c.} \right).
 \end{align}$$
 
 The massless theory has
@@ -286,10 +246,7 @@ The baryon number assignments are opposite for $Q$ and $\widetilde Q$.
 The auxiliary $D^a$ field gives the scalar potential
 
 $$\begin{align}
-V_D=\frac{g^2}{2}\sum_a
-\left(
-q_i^\dagger T^a q_i-\widetilde q_i T^a\widetilde q_i^\dagger
-\right)^2.
+V_D=\frac{g^2}{2}\sum_a \left( q_i^\dagger T^a q_i-\widetilde q_i T^a\widetilde q_i^\dagger \right)^2.
 \end{align}$$
 
 For the massless theory the classical vacua are described by $F=0$ and $D=0$ modulo gauge transformations. Useful gauge-invariant chiral operators are the mesons
@@ -301,8 +258,7 @@ M^i{}_j=\widetilde Q^i Q_j,
 and, when $N_f\geq N_c$, the baryons
 
 $$\begin{align}
-B\sim Q^{N_c},
-\qquad
+B\sim Q^{N_c}, \qquad
 \widetilde B\sim \widetilde Q^{N_c}.
 \end{align}$$
 
@@ -337,19 +293,14 @@ For each generation $i=1,2,3$, the matter chiral superfields are
 Each Standard Model Weyl fermion is placed in a chiral multiplet, so the MSSM also contains scalar quarks and scalar leptons. The supersymmetric gauge kinetic terms are
 
 $$\begin{align}
-S_{\mathrm{gauge}}
-=\sum_{a=1,2,3}\frac{1}{4g_a^2}
-\int d^4x\,d^2\theta\,
-\mathrm{Tr}(W_a^\alpha W_{a\alpha})
-+\text{h.c.},
+S_{\mathrm{gauge}} =\sum_{a=1,2,3}\frac{1}{4g_a^2}
+\int d^4x\,d^2\theta\, \mathrm{Tr}(W_a^\alpha W_{a\alpha}) +\text{h.c.},
 \end{align}$$
 
 where the trace is only needed for the non-Abelian factors. The matter kinetic terms have the schematic form
 
 $$\begin{align}
-S_{\mathrm{matter}}
-=\int d^4x\,d^4\theta\,
-\sum_\Phi \Phi^\dagger e^{V_3+V_2+Y_\Phi V_1}\Phi,
+S_{\mathrm{matter}} =\int d^4x\,d^4\theta\, \sum_\Phi \Phi^\dagger e^{V_3+V_2+Y_\Phi V_1}\Phi,
 \end{align}$$
 
 with the understanding that only the gauge factors acting on $\Phi$ are present, and representation matrices and conventional factors of the gauge couplings are suppressed.
@@ -357,8 +308,7 @@ with the understanding that only the gauge factors acting on $\Phi$ are present,
 The MSSM needs two Higgs chiral superfields,
 
 $$\begin{align}
-H_u:(\mathbf{1},\mathbf{2})_{1/2},
-\qquad
+H_u:(\mathbf{1},\mathbf{2})_{1/2}, \qquad
 H_d:(\mathbf{1},\mathbf{2})_{-1/2}.
 \end{align}$$
 
@@ -367,11 +317,7 @@ There are two reasons for this. First, the superpotential must be holomorphic, s
 The renormalizable R-parity preserving MSSM superpotential is
 
 $$\begin{align}
-W_{\mathrm{MSSM}}
-=(y_u)^{ij}Q_i\cdot H_u\,U_j^c
--(y_d)^{ij}Q_i\cdot H_d\,D_j^c
--(y_e)^{ij}L_i\cdot H_d\,E_j^c
-+\mu H_u\cdot H_d.
+W_{\mathrm{MSSM}} =(y_u)^{ij}Q_i\cdot H_u\,U_j^c -(y_d)^{ij}Q_i\cdot H_d\,D_j^c -(y_e)^{ij}L_i\cdot H_d\,E_j^c +\mu H_u\cdot H_d.
 \end{align}$$
 
 Here
@@ -403,18 +349,8 @@ The exact supersymmetric MSSM still predicts degenerate Standard Model particles
 
 $$\begin{align}
 \mathcal{L}_{\mathrm{soft}}^{\mathrm{MSSM}}
-\supset
-&-\sum_\Phi m_\Phi^2|\phi_\Phi|^2
--\left(
-\frac12\sum_{a=1}^3 M_a\lambda_a\lambda_a
-+B\mu H_u\cdot H_d
-\right.\\
-&\left.
-+(A_u)^{ij}\widetilde Q_i\cdot H_u\,\widetilde U_j^c
--(A_d)^{ij}\widetilde Q_i\cdot H_d\,\widetilde D_j^c
--(A_e)^{ij}\widetilde L_i\cdot H_d\,\widetilde E_j^c
-+\text{h.c.}
-\right).
+\supset &-\sum_\Phi m_\Phi^2|\phi_\Phi|^2 -\left( \frac12\sum_{a=1}^3 M_a\lambda_a\lambda_a +B\mu H_u\cdot H_d \right.\\
+&\left. +(A_u)^{ij}\widetilde Q_i\cdot H_u\,\widetilde U_j^c -(A_d)^{ij}\widetilde Q_i\cdot H_d\,\widetilde D_j^c -(A_e)^{ij}\widetilde L_i\cdot H_d\,\widetilde E_j^c +\text{h.c.} \right).
 \end{align}$$
 
 These terms split the superpartner spectrum while keeping the ultraviolet behavior controlled in the sense of soft breaking.
@@ -445,8 +381,7 @@ V=\sum_i |F_i|^2+\frac12\sum_a D^aD^a.
 A supersymmetric vacuum requires all auxiliary expectation values to vanish:
 
 $$\begin{align}
-\langle F_i\rangle=0,
-\qquad
+\langle F_i\rangle=0, \qquad
 \langle D^a\rangle=0.
 \end{align}$$
 
@@ -503,14 +438,7 @@ one cannot conclude that supersymmetry is necessarily broken. It only means that
 The model examples above motivate the general question of how to use supersymmetry as a useful organizing principle while allowing the observed low-energy spectrum to be non-supersymmetric. Hard explicit breaking destroys the ultraviolet cancellations in a generic way. Soft breaking keeps the most important ultraviolet improvement by allowing only controlled relevant operators, such as scalar masses, gaugino masses, and holomorphic scalar interactions:
 
 $$\begin{align}
-\mathcal{L}_{\mathrm{soft}}
-=-m_i^2\phi_i^*\phi_i
--\left(
-\frac12 M_a\lambda^a\lambda^a
-+\frac16 A_{ijk}\phi_i\phi_j\phi_k
-+\frac12 B_{ij}\phi_i\phi_j
-+\text{h.c.}
-\right).
+\mathcal{L}_{\mathrm{soft}} =-m_i^2\phi_i^*\phi_i -\left( \frac12 M_a\lambda^a\lambda^a +\frac16 A_{ijk}\phi_i\phi_j\phi_k +\frac12 B_{ij}\phi_i\phi_j +\text{h.c.} \right).
 \end{align}$$
 
 This is the bridge from exact supersymmetric field theories to phenomenological supersymmetric models such as the MSSM, where supersymmetry is useful precisely because its explicit breaking can be organized softly.

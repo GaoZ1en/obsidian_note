@@ -43,12 +43,9 @@ Seiberg duality is an infrared equivalence between two different four-dimensiona
 The standard example is massless SQCD. The electric theory is
 
 $$\begin{align}
-G_e=SU(N_c),
-\qquad
-Q_j\in \mathbf{N_c},
-\qquad
-\widetilde Q^i\in \overline{\mathbf{N_c}},
-\qquad
+G_e=SU(N_c), \qquad
+Q_j\in \mathbf{N_c}, \qquad
+\widetilde Q^i\in \overline{\mathbf{N_c}}, \qquad
 W_e=0,
 \end{align}$$
 
@@ -61,8 +58,7 @@ M^i{}_j=\widetilde Q^i Q_j,
 and, for $N_f\geq N_c$, the baryons (superfield)
 
 $$\begin{align}
-B\sim Q^{N_c},
-\qquad
+B\sim Q^{N_c}, \qquad
 \widetilde B\sim \widetilde Q^{N_c}.
 \end{align}$$
 
@@ -88,8 +84,7 @@ W_{\text{eff}} & =c_{N_{c} ,N_{f}}\left(\dfrac{\Lambda ^{3N_{c} -N_{f}}}{\det M}
 For $N_f>N_c+1$, the magnetic dual theory has gauge group
 
 $$\begin{align}
-G_m=SU(\widetilde N_c),
-\qquad
+G_m=SU(\widetilde N_c), \qquad
 \widetilde N_c=N_f-N_c.
 \end{align}$$
 
@@ -104,10 +99,8 @@ where $\mu$ is a matching scale used to give $M$ canonical engineering dimension
 The basic operator map is
 
 $$\begin{align}
-\widetilde Q^iQ_j\longleftrightarrow M^i{}_j,
-\qquad
-B\sim Q^{N_c}\longleftrightarrow b\sim q^{\widetilde N_c},
-\qquad
+\widetilde Q^iQ_j\longleftrightarrow M^i{}_j, \qquad
+B\sim Q^{N_c}\longleftrightarrow b\sim q^{\widetilde N_c}, \qquad
 \widetilde B\sim \widetilde Q^{N_c}\longleftrightarrow \widetilde b\sim \widetilde q^{\widetilde N_c}.
 \end{align}$$
 
@@ -128,10 +121,8 @@ SU(N_f)_L\times SU(N_f)_R\times U(1)_B\times U(1)_R.
 At the superconformal fixed point, the anomaly-free $R$-charges are
 
 $$\begin{align}
-R(Q)=R(\widetilde Q)=1-\frac{N_c}{N_f},
-\qquad
-R(M)=2\left(1-\frac{N_c}{N_f}\right),
-\qquad
+R(Q)=R(\widetilde Q)=1-\frac{N_c}{N_f}, \qquad
+R(M)=2\left(1-\frac{N_c}{N_f}\right), \qquad
 R(q)=R(\widetilde q)=\frac{N_c}{N_f}.
 \end{align}$$
 

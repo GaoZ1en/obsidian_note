@@ -145,10 +145,7 @@ and
 
 $$\begin{align}
 T(z)T(w) & =\frac{1}{\alpha'^{2}}\eta _{\mu \nu}\eta _{\rho \sigma}:\partial X^{\mu}(z)\partial X^{\nu}(z)::\partial X^{\rho}(w)\partial X^{\sigma}(w): \\
- & \sim \frac{1}{\alpha'^2}\eta_{\mu\nu}\eta_{\rho\sigma}\left[
-4\left(-\frac{\alpha'}{2}\right)\frac{\eta^{\mu\rho}}{(z-w)^2}:\partial X^\nu(z)\partial X^\sigma(w):
-+2\left(\frac{\alpha'^2}{4}\right)\frac{\eta^{\mu\rho}\eta^{\nu\sigma}}{(z-w)^4}
-\right] \\
+ & \sim \frac{1}{\alpha'^2}\eta_{\mu\nu}\eta_{\rho\sigma}\left[ 4\left(-\frac{\alpha'}{2}\right)\frac{\eta^{\mu\rho}}{(z-w)^2}:\partial X^\nu(z)\partial X^\sigma(w): +2\left(\frac{\alpha'^2}{4}\right)\frac{\eta^{\mu\rho}\eta^{\nu\sigma}}{(z-w)^4} \right] \\
  & =-\frac{2}{\alpha'}\frac{:\partial X(z)\cdot\partial X(w):}{(z-w)^2}+\frac{D}{2(z-w)^4} \\
  & \sim \frac{D}{2(z-w)^4}+\frac{2T(w)}{(z-w)^2}+\frac{\partial T(w)}{z-w}
 \end{align}$$
