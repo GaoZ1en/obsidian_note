@@ -12,6 +12,7 @@ Long vault workflows live in local skills under `.codex/skills/`. When a request
 - `obsidian-note-maintainer` at `.codex/skills/obsidian-note-maintainer/SKILL.md` - maintain non-literature notes by fixing frontmatter, summaries, formatting, headings, lists, links, and math delimiters.
 - `obsidian-directory-readme` at `.codex/skills/obsidian-directory-readme/SKILL.md` - survey note directories, draft `README.md` files, and maintain `Home.md` when note directories change.
 - `notes-git-commit` at `.codex/skills/notes-git-commit/SKILL.md` - inspect note changes, draft a repository-style commit message, and commit after confirmation.
+- `pandoc-texfiles` at `.codex/skills/pandoc-texfiles/SKILL.md` - create or maintain Pandoc workflows that convert article Markdown files into `texfiles/data/*.tex` fragments.
 
 These skills complement this file. They do not override the constraints below.
 
@@ -22,8 +23,16 @@ These skills complement this file. They do not override the constraints below.
 | Inspect files | Built-in file read tools preferred; otherwise read-only shell commands are allowed | Use commands such as `rg`, `sed -n`, `cat`, `head`, `tail`, `nl`, `wc`, and `ls` only for inspection |
 | Edit notes | Built-in file read/modification tools preferred | Markdown and LaTeX only; show planned changes first |
 | Git inspection | `git status`, `git diff`, `git add`, `git commit` | Show the proposed commit message before executing |
+| Article Markdown to TeX fragments | `python3 scripts/pandoc-texfiles/build_texfiles.py --config <article>/pandoc-texfiles.yaml --dry-run --force` | Preview the exact Pandoc commands before regenerating fragments |
 | No build step | — | Static Markdown vault only |
 | No lint or test step | — | No software tooling in this repository |
+
+## Reusable Scripts
+
+- `scripts/pandoc-texfiles/` contains the shared helper for converting article Markdown files into LaTeX fragments under an article-local `texfiles/data/` tree.
+- Each article project should keep its own `pandoc-texfiles.yaml` mapping file and, when useful, a thin local `Makefile` that delegates to the root helper.
+- Default workflow: run `make texfiles-dry-run` or the helper's `--dry-run --force` mode first, inspect the Pandoc commands, then run `make texfiles` only when regenerating fragments is intended.
+- `make pdf` in an article directory should compile the existing `texfiles/main.tex` and should not regenerate Markdown-derived fragments.
 
 ## PDF Reading And Verification
 
@@ -93,6 +102,7 @@ These skills complement this file. They do not override the constraints below.
 - `Lecture/` — course notes, conference notes, online lectures, group meetings, and talks
 - `Drafts/` — uncategorized drafts
 - `Attachments/` — media files and PDFs, normally ignored
+- `scripts/` — reusable repository helper scripts, including Markdown-to-TeX article conversion tools
 
 ## Local AGENTS Hierarchy
 

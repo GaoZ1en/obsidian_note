@@ -1,0 +1,99 @@
+pandoc:
+  from: markdown+wikilinks_title_after_pipe
+  to: latex
+  wrap: none
+
+postprocess:
+  strip_heading_numbers: true
+  strip_appendix_prefix: true
+  inline_math: dollar
+  display_math: align
+  compact_blank_lines: true
+  heading_labels:
+    "The Maxwell theory in the global AdS$_3$ spacetime": "sec:maxwell-fields-global-ads3"
+    "Spacetime background": "subsec:spacetime-background"
+    "The action and asymptotic boundary conditions": "subsec:action-eom"
+    "Reformulating the model as a Hamiltonian system": "sec:hamiltonian-and-symmetries"
+    "The Hamiltonian system": "subsec:hamiltonian-system"
+    "Noether theorem for Killing symmetries": "subsec:noether-killing-symmetries"
+    "Mode solutions": "sec:mode-solutions"
+    "Temporal gauge": "subsec:temporal-gauge"
+    "Dual scalar formalism": "subsec:dual-scalar-field-strength"
+    "Equivalence of the two constructions": "subsec:equivalence-two-constructions"
+    "Representing the Hamiltonian system with a proper set of variables": "sec:quantization"
+    "The framework": "subsec:quantization-framework"
+    "Symplectic form": "subsec:symplectic-form"
+    "Hamiltonian system": "subsec:hamiltonian-system-discrete"
+    "The Noether charges of the Killing symmetries": "subsec:noether-charges-killing"
+    "Canonical quantization": "subsec:canonical-quantization"
+    "Euclidean correlation function": "sec:euclidean-correlation-function"
+    "Euclidean background and modes": "subsec:euclidean-temporal-gauge-modes"
+    "Time-ordered mode sum": "subsec:mode-sum"
+    "Reduction to a scalar kernel": "subsec:scalar-mode-sum"
+    "Application II: The thermal partition function": "sec:thermal-partition-function"
+    "Canonical setup": "subsec:canonical-setup"
+    "The thermal partition function": "subsec:thermal-partition-function"
+    "An analysis of the near-boundary contributions to relevant quantities": "app:falloffs-variational-principle"
+    "Gauge fixing and zero modes": "app:gauge-fixing-zero-modes"
+    "Reaching temporal gauge": "subsec:app-reaching-temporal-gauge"
+    "Residual gauge fixing": "subsec:app-residual-gauge-fixing"
+    "Reduction of the equations of motion": "subsec:app-eom-reduction"
+    "Static zero modes": "subsec:app-static-modes"
+    "Large gauge transformations": "app:large-gauge-transformations"
+    "Symplectic normalization of the propagating modes": "app:symplectic-normalization"
+    "Evaluation of the symplectic pairing": "app:symplectic-pairing-evaluation"
+    "Fixing the normalization constant": "app:fixing-normalization-constant"
+  heading_pdf_strings:
+    "The Maxwell theory in the global AdS$_3$ spacetime": "The Maxwell theory in the global AdS3 spacetime"
+  text_replacements:
+    '{\Huge|}': '\bigg|'
+  reference_replacements:
+    "Section 1.1": 'Section \ref{subsec:spacetime-background}'
+    "Section 1.2": 'Section \ref{subsec:action-eom}'
+    "Section 1": 'Section \ref{sec:maxwell-fields-global-ads3}'
+    "Section 2.1": 'Section \ref{subsec:hamiltonian-system}'
+    "Section 2.2": 'Section \ref{subsec:noether-killing-symmetries}'
+    "Section 2": 'Section \ref{sec:hamiltonian-and-symmetries}'
+    "Section 3.1": 'Section \ref{subsec:temporal-gauge}'
+    "Section 3.2": 'Section \ref{subsec:dual-scalar-field-strength}'
+    "Section 3.3": 'Section \ref{subsec:equivalence-two-constructions}'
+    "Section 3": 'Section \ref{sec:mode-solutions}'
+    "Section 4.1": 'Section \ref{subsec:quantization-framework}'
+    "Section 4.2": 'Section \ref{subsec:symplectic-form}'
+    "Section 4.3": 'Section \ref{subsec:hamiltonian-system-discrete}'
+    "Section 4.4": 'Section \ref{subsec:noether-charges-killing}'
+    "Section 4.5": 'Section \ref{subsec:canonical-quantization}'
+    "Section 4": 'Section \ref{sec:quantization}'
+    "Section 5.1": 'Section \ref{subsec:euclidean-temporal-gauge-modes}'
+    "Section 5.2": 'Section \ref{subsec:mode-sum}'
+    "Section 5.3": 'Section \ref{subsec:scalar-mode-sum}'
+    "Section 5": 'Section \ref{sec:euclidean-correlation-function}'
+    "Section 6.1": 'Section \ref{subsec:canonical-setup}'
+    "Section 6.2": 'Section \ref{subsec:thermal-partition-function}'
+    "Section 6": 'Section \ref{sec:thermal-partition-function}'
+    "Appendix A": 'Appendix \ref{app:falloffs-variational-principle}'
+    "Appendix B": 'Appendix \ref{app:gauge-fixing-zero-modes}'
+    "Appendix C": 'Appendix \ref{app:large-gauge-transformations}'
+    "Appendix D": 'Appendix \ref{app:symplectic-normalization}'
+
+fragments:
+  - source: "1_model.md"
+    target: "texfiles/data/section_1.tex"
+  - source: "2_hamiltonian_and_symmetries.md"
+    target: "texfiles/data/section_2.tex"
+  - source: "3_mode_solutions.md"
+    target: "texfiles/data/section_3.tex"
+  - source: "4_quantization.md"
+    target: "texfiles/data/section_4.tex"
+  - source: "5_euclidean_green_function.md"
+    target: "texfiles/data/section_5.tex"
+  - source: "6_partition_function.md"
+    target: "texfiles/data/section_6.tex"
+  - source: "appendix_a_falloffs_and_variational_principle.md"
+    target: "texfiles/data/appendix_a.tex"
+  - source: "appendix_b_gauge_fixing_and_zero_modes.md"
+    target: "texfiles/data/appendix_b.tex"
+  - source: "appendix_c_large_gauge_transformations.md"
+    target: "texfiles/data/appendix_c.tex"
+  - source: "appendix_d_symplectic_normalization.md"
+    target: "texfiles/data/appendix_d.tex"

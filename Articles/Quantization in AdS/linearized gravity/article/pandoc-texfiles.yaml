@@ -1,0 +1,18 @@
+pandoc:
+  from: markdown+wikilinks_title_after_pipe
+  to: latex
+  wrap: none
+
+fragments:
+  - source: "1_model.md"
+    target: "texfiles/data/section_1.tex"
+  - source: "2_quantization.md"
+    target: "texfiles/data/section_2.tex"
+  - source: "3_algebras.md"
+    target: "texfiles/data/section_3.tex"
+  - source: "Appendix A perturbative formulas.md"
+    target: "texfiles/data/appendix_a.tex"
+  - source: "Appendix B falloffs and finiteness checks.md"
+    target: "texfiles/data/appendix_b.tex"
+  - source: "Appendix C gauge fixing and mode selection.md"
+    target: "texfiles/data/appendix_c.tex"

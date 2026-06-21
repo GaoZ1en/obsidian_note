@@ -7,13 +7,18 @@
 
 # Ignore json data files
 /**/*.json
+!/tools/obsidian-md-formatter/package.json
+!/tools/obsidian-md-formatter/package-lock.json
+!/tools/obsidian-md-formatter/manifest.json
+!/tools/obsidian-md-formatter/tsconfig.json
+!/tools/obsidian-md-formatter/versions.json
 /.keep-the-rhythm/
 /.vscode/
 /.github/
 /.claude/
 
 # Ignore tex files in every folders
-/**/*.tex
+!/**/*.tex
 /**/*.aux
 /**/*.log
 /**/*.pdf

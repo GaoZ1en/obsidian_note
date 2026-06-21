@@ -101,14 +101,14 @@ summary: "Brief summary of the note's content in one or two sentences."
 When the user explicitly asks for online retrieval:
 
 1. Read the target note before editing.
-2. If an arXiv ID or arXiv URL is already known, go directly to `https://arxiv.org/html/<id>` as the primary source when available.
-3. If the HTML page is unavailable or insufficient, use the arXiv abstract page `https://arxiv.org/abs/<id>` next.
-4. Use the PDF or introduction only when the HTML and abstract pages are inaccessible or clearly insufficient.
-5. Prefer direct source retrieval over generic web search when the canonical paper URL is already known.
-6. If the user provides a specific source URL, treat it as the primary source unless it is clearly insufficient.
-7. Distinguish source-based summary from broader synthesis.
-8. Include the source URL in the conversation when summarizing external material.
-9. If broader context is requested, append a short section such as `## Historical context and motivation`.
+1. If an arXiv ID or arXiv URL is already known, go directly to `https://arxiv.org/html/<id>` as the primary source when available.
+1. If the HTML page is unavailable or insufficient, use the arXiv abstract page `https://arxiv.org/abs/<id>` next.
+1. Use the PDF or introduction only when the HTML and abstract pages are inaccessible or clearly insufficient.
+1. Prefer direct source retrieval over generic web search when the canonical paper URL is already known.
+1. If the user provides a specific source URL, treat it as the primary source unless it is clearly insufficient.
+1. Distinguish source-based summary from broader synthesis.
+1. Include the source URL in the conversation when summarizing external material.
+1. If broader context is requested, append a short section such as `## Historical context and motivation`.
 
 ## Formatting Conventions
 
@@ -134,11 +134,11 @@ When the user explicitly asks for online retrieval:
 When asked to commit:
 
 1. Run `git status`.
-2. Run `git diff --stat`.
-3. Read the changed Markdown files before describing them.
-4. Draft the commit message in English.
-5. Show the proposed message before executing.
-6. After confirmation, run `git add -A` and `git commit -m "..."`.
+1. Run `git diff --stat`.
+1. Read the changed Markdown files before describing them.
+1. Draft the commit message in English.
+1. Show the proposed message before executing.
+1. After confirmation, run `git add -A` and `git commit -m "..."`.
 
 Commit message format:
 

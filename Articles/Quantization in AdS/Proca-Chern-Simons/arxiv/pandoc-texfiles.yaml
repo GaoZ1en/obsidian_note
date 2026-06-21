@@ -1,0 +1,94 @@
+pandoc:
+  from: markdown+wikilinks_title_after_pipe
+  to: latex
+  wrap: none
+
+postprocess:
+  strip_heading_numbers: false
+  strip_appendix_prefix: false
+  inline_math: dollar
+  display_math: align
+  compact_blank_lines: true
+  heading_labels:
+    "1. The Proca-Chern-Simons theory in the global AdS$_3$ spacetime": "sec:proca-cs-global-ads3"
+    "1.1 Spacetime background": "subsec:proca-cs-spacetime-background"
+    "1.2 The action and asymptotic boundary conditions": "subsec:proca-cs-action-boundary"
+    "2. Reformulating the model as a Hamiltonian system": "sec:hamiltonian-and-symmetries"
+    "2.1 The Hamiltonian system": "subsec:hamiltonian-system"
+    "2.2 Noether theorem for Killing symmetries": "subsec:noether-killing-symmetries"
+    "3. Representing the Hamiltonian system with a proper set of variables": "sec:quantization"
+    "3.1 The framework": "subsec:quantization-framework"
+    "3.2 Operator factorization for the equations of motion": "subsec:operator-factorization"
+    "3.3 The Killing symmetries": "subsec:killing-symmetries"
+    "3.4 Solving the modes": "subsec:solving-modes"
+    "3.5 Symplectic form": "subsec:symplectic-form"
+    "3.6 Hamiltonian system": "subsec:discrete-hamiltonian-system"
+    "3.7 The Noether charges of the Killing symmetries": "subsec:noether-charges-killing"
+    "3.8 Canonical quantization": "subsec:canonical-quantization"
+    "4. Application I: The Euclidean correlation function": "sec:euclidean-correlation-function"
+    "4.1 The Euclidean background": "subsec:euclidean-background"
+    "4.2 The Euclidean correlation function": "subsec:euclidean-correlation-function"
+    "4.3 The explicit Euclidean correlation function": "subsec:explicit-euclidean-correlation-function"
+    "4.3.1 Mode sums in the scalar basis": "subsubsec:mode-sums-scalar-basis"
+    "4.3.2 Time ordering and branch correlators": "subsubsec:time-ordering-branch-correlators"
+    "4.4 Verification of the covariant Green's function equation": "subsec:covariant-green-function-check"
+    "4.5 The path-integral interpretation of the contact term": "subsec:path-integral-contact-term"
+    "5. Application II: The thermal partition function": "sec:thermal-partition-function"
+    "5.1 The coherent-state path integral": "subsec:coherent-state-path-integral"
+    "5.2 The thermal partition function": "subsec:thermal-partition-function"
+    "Appendix A: An analysis of the near-boundary contributions to relevant quantities": "app:near-boundary-contributions"
+    "Appendix B: The Faddeev-Senjanovic formalism": "app:faddeev-senjanovic"
+    "B.1 The second-class constraints": "subsec:fs-second-class-constraints"
+    "B.2 The Faddeev-Senjanovic phase-space path integral": "subsec:fs-phase-space-path-integral"
+    "B.3 Euclidean correlation functions and the contact term": "subsec:fs-euclidean-contact-term"
+    "B.4 Comparison with the configuration-space path integral": "subsec:fs-configuration-space-comparison"
+    "B.5 Discussion": "subsec:fs-discussion"
+    "Appendix C: Symplectic positivity and the admissible highest-weight roots": "app:symplectic-positivity"
+    "C.1 Positive-definite bilinears for separated modes": "subsec:positive-definite-bilinears"
+    "C.2 Consequences for the highest-weight roots": "subsec:highest-weight-root-consequences"
+  heading_pdf_strings:
+    "1. The Proca-Chern-Simons theory in the global AdS$_3$ spacetime": "1. The Proca-Chern-Simons theory in the global AdS3 spacetime"
+  reference_replacements:
+    '\href{Articles/Quantization\%20in\%20AdS3/Proca-Chern-Simons/arxiv/appendix_a}{Appendix\_A}': '\hyperref[app:near-boundary-contributions]{Appendix~A}'
+    '\href{Articles/Quantization\%20in\%20AdS3/Proca-Chern-Simons/arxiv/another\%20template/appendix_a}{Appendix A}': '\hyperref[app:near-boundary-contributions]{Appendix~A}'
+    '\href{Articles/Quantization\%20in\%20AdS3/Proca-Chern-Simons/arxiv/appendix_b}{Appendix B}': '\hyperref[app:faddeev-senjanovic]{Appendix~B}'
+    "the Appendix C argument": 'the \hyperref[app:symplectic-positivity]{Appendix~C} argument'
+    "shown in Appendix A": 'shown in \hyperref[app:near-boundary-contributions]{Appendix~A}'
+    "Section 4.5": '\hyperref[subsec:path-integral-contact-term]{Section~4.5}'
+    "Section 4.4": '\hyperref[subsec:covariant-green-function-check]{Section~4.4}'
+    "Section 4.3": '\hyperref[subsec:explicit-euclidean-correlation-function]{Section~4.3}'
+    "Section 4.2": '\hyperref[subsec:euclidean-correlation-function]{Section~4.2}'
+    "Section 4.1": '\hyperref[subsec:euclidean-background]{Section~4.1}'
+    "Section 3.7": '\hyperref[subsec:noether-charges-killing]{Section~3.7}'
+    "Section 3.6": '\hyperref[subsec:discrete-hamiltonian-system]{Section~3.6}'
+    "Section 3.5": '\hyperref[subsec:symplectic-form]{Section~3.5}'
+    "Section 3.4": '\hyperref[subsec:solving-modes]{Section~3.4}'
+    "Section 3.3": '\hyperref[subsec:killing-symmetries]{Section~3.3}'
+    "Section 3.2": '\hyperref[subsec:operator-factorization]{Section~3.2}'
+    "Section 3.1": '\hyperref[subsec:quantization-framework]{Section~3.1}'
+    "Section 2.2": '\hyperref[subsec:noether-killing-symmetries]{Section~2.2}'
+    "Section 2.1": '\hyperref[subsec:hamiltonian-system]{Section~2.1}'
+    "Section 6": '\hyperref[sec:thermal-partition-function]{Section~5}'
+    "Section 5": '\hyperref[sec:thermal-partition-function]{Section~5}'
+    "Section 4": '\hyperref[sec:euclidean-correlation-function]{Section~4}'
+    "Section 3": '\hyperref[sec:quantization]{Section~3}'
+    "Section 2": '\hyperref[sec:hamiltonian-and-symmetries]{Section~2}'
+    "Section 1": '\hyperref[sec:proca-cs-global-ads3]{Section~1}'
+
+fragments:
+  - source: "1_model.md"
+    target: "texfiles/data/section_1.tex"
+  - source: "2_hamiltonian_and_symmetries.md"
+    target: "texfiles/data/section_2.tex"
+  - source: "3_quantization.md"
+    target: "texfiles/data/section_3.tex"
+  - source: "4_application_1.md"
+    target: "texfiles/data/section_4.tex"
+  - source: "5_application_2.md"
+    target: "texfiles/data/section_5.tex"
+  - source: "appendix_a.md"
+    target: "texfiles/data/appendix_a.tex"
+  - source: "appendix_b.md"
+    target: "texfiles/data/appendix_b.tex"
+  - source: "appendix_c.md"
+    target: "texfiles/data/appendix_c.tex"
