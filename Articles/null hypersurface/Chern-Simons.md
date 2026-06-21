@@ -29,16 +29,13 @@ we will specify the $\displaystyle{S_{\text{bdy}}}$ later.
 near $\displaystyle{\mathcal{N}}$ choose Gaussian null collar coordinates
 
 $$\begin{align}
-x^{\mu} & =(u,\rho,\phi),&
-0 & \leq \rho <\epsilon,&
-\phi & \sim \phi+2\pi
+x^{\mu} & =(u,\rho,\phi),& 0 & \leq \rho <\epsilon,& \phi & \sim \phi+2\pi
 \end{align}$$
 
 with orientation $\displaystyle{\mathrm{d}u\wedge \mathrm{d}\rho\wedge \mathrm{d}\phi}$ and
 
 $$\begin{align}
-\mathcal{N} & =\{\rho=0\},&
-C_{u} & =\{\rho=0,u=\text{constant}\}.
+\mathcal{N} & =\{\rho=0\},& C_{u} & =\{\rho=0,u=\text{constant}\}.
 \end{align}$$
 
 The metric is only used to identify the boundary as null. A convenient local choice is
@@ -59,8 +56,7 @@ $$\begin{align}
 To get a definite mode problem, choose the chiral null boundary term
 
 $$\begin{align}
-S_{\mathrm{bdy}}^{(+)}[A] & =\frac{k}{4\pi}\int_{\mathcal{N}}\mathrm{d}u\,\mathrm{d}\phi\left(A_{u}A_{\phi}+vA_{\phi}^{2}\right),&
-v & >0 .
+S_{\mathrm{bdy}}^{(+)}[A] & =\frac{k}{4\pi}\int_{\mathcal{N}}\mathrm{d}u\,\mathrm{d}\phi\left(A_{u}A_{\phi}+vA_{\phi}^{2}\right),& v & >0 .
 \end{align}$$
 
 Then the boundary part of the variation is
@@ -82,16 +78,13 @@ The opposite chirality is obtained from $\displaystyle{S_{\mathrm{bdy}}^{(-)}=\f
 The null boundary carries the Carroll data
 
 $$\begin{align}
-q_{ab}\mathrm{d}x^{a}\mathrm{d}x^{b} & =R_{\mathcal{N}}^{2}\mathrm{d}\phi^{2},&
-\ell^{a}\partial _{a} & =\partial _{u},&
-q_{ab}\ell^{b} & =0 .
+q_{ab}\mathrm{d}x^{a}\mathrm{d}x^{b} & =R_{\mathcal{N}}^{2}\mathrm{d}\phi^{2},& \ell^{a}\partial _{a} & =\partial _{u},& q_{ab}\ell^{b} & =0 .
 \end{align}$$
 
 Together with the cut vector $\displaystyle{s^{a}\partial _{a}=\partial _{\phi}}$, the chiral boundary condition can be written as
 
 $$\begin{align}
-V_{\pm}^{a} & =\ell^{a}\pm v s^{a},&
-\iota _{V_{\pm}}A & =0 .
+V_{\pm}^{a} & =\ell^{a}\pm v s^{a},& \iota _{V_{\pm}}A & =0 .
 \end{align}$$
 
 In components this is exactly
@@ -121,24 +114,20 @@ A & =\mathrm{d}\Lambda .
 Gauge transformations whose parameter vanishes on $\displaystyle{\mathcal{N}}$ are degenerate directions of the presymplectic form. The physical modes are therefore the boundary values of $\displaystyle{\Lambda}$ on $\displaystyle{\mathcal{N}}$. A smooth representative for each non-zero Fourier mode is obtained by choosing a disk radial coordinate $\displaystyle{r\in[0,1]}$ that agrees with $\displaystyle{r=1-\rho}$ in the collar and taking
 
 $$\begin{align}
-\Lambda _{n}^{(+)}(u,\rho,\phi) & =C_{n}\,r^{n}e^{-in(vu-\phi)},&
-n & =1,2,\ldots .
+\Lambda _{n}^{(+)}(u,\rho,\phi) & =C_{n}\,r^{n}e^{-in(vu-\phi)},& n & =1,2,\ldots .
 \end{align}$$
 
 The corresponding connection mode is
 
 $$\begin{align}
 A_{n}^{(+)} & =\mathrm{d}\Lambda _{n}^{(+)},\\
-A_{n,u}^{(+)} & =-inv\Lambda _{n}^{(+)},&
-A_{n,\rho}^{(+)} & =-\frac{n}{r}\Lambda _{n}^{(+)},&
-A_{n,\phi}^{(+)} & =in\Lambda _{n}^{(+)} .
+A_{n,u}^{(+)} & =-inv\Lambda _{n}^{(+)},& A_{n,\rho}^{(+)} & =-\frac{n}{r}\Lambda _{n}^{(+)},& A_{n,\phi}^{(+)} & =in\Lambda _{n}^{(+)} .
 \end{align}$$
 
 These modes obey
 
 $$\begin{align}
-\mathrm{d}A_{n}^{(+)} & =0,&
-\left(A_{n,u}^{(+)}+vA_{n,\phi}^{(+)}\right)\big|_{\mathcal{N}} & =0 .
+\mathrm{d}A_{n}^{(+)} & =0,& \left(A_{n,u}^{(+)}+vA_{n,\phi}^{(+)}\right)\big|_{\mathcal{N}} & =0 .
 \end{align}$$
 
 Their complex conjugates are the negative-frequency modes. The zero mode is a constant gauge parameter on the disk and has no symplectic norm. A non-zero $\displaystyle{\mathrm{d}\phi}$ holonomy would be a separate global sector on an annulus, but it is excluded for a smooth connection on $\displaystyle{D^{2}}$.
@@ -152,8 +141,7 @@ A & =\sum_{n=1}^{\infty}\left(a_{n}A_{n}^{(+)}+a_{n}^{*}A_{n}^{(+)*}\right)+\mat
 where $\displaystyle{\Lambda _{\mathrm{small}}|_{\mathcal{N}}=0}$ is pure gauge. For $\displaystyle{k<0}$ the positive-norm branch is the opposite chirality
 
 $$\begin{align}
-\Lambda _{n}^{(-)}(u,\rho,\phi) & =C_{n}\,r^{n}e^{-in(vu+\phi)},&
-A_{u}^{(-)}-vA_{\phi}^{(-)} & =0 .
+\Lambda _{n}^{(-)}(u,\rho,\phi) & =C_{n}\,r^{n}e^{-in(vu+\phi)},& A_{u}^{(-)}-vA_{\phi}^{(-)} & =0 .
 \end{align}$$
 
 ## symplectic normalization
@@ -226,8 +214,7 @@ $$\begin{align}
 It is represented by the non-zero chiral boundary modes
 
 $$\begin{align}
-\epsilon _{n}^{(+)} & =e^{-in(vu-\phi)},&
-n & \in \mathbb{Z}\setminus\{0\}.
+\epsilon _{n}^{(+)} & =e^{-in(vu-\phi)},& n & \in \mathbb{Z}\setminus\{0\}.
 \end{align}$$
 
 The left-moving polarization uses $\displaystyle{\partial _{u}-v\partial _{\phi}}$ and $\displaystyle{\epsilon _{n}^{(-)}=e^{-in(vu+\phi)}}$ instead.
@@ -268,8 +255,7 @@ The last line uses the equation of motion $\displaystyle{F_{u\phi}=\partial _{u}
 For the chiral boundary condition and its preserving symmetry,
 
 $$\begin{align}
-A_{u}+vA_{\phi} & =0,&
-(\partial _{u}+v\partial _{\phi})\epsilon & =0,
+A_{u}+vA_{\phi} & =0,& (\partial _{u}+v\partial _{\phi})\epsilon & =0,
 \end{align}$$
 
 the flux density vanishes:

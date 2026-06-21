@@ -44,8 +44,7 @@ $$\begin{aligned}
 Therefore we have
 
 $$\begin{align}
-\gamma^\mu_\alpha\gamma^\nu_\beta\gamma^\rho_\gamma n^\sigma R_{\mu\nu\rho\sigma}
-=D_\alpha K_{\beta\gamma}-D_\beta K_{\alpha\gamma}
+\gamma^\mu_\alpha\gamma^\nu_\beta\gamma^\rho_\gamma n^\sigma R_{\mu\nu\rho\sigma} =D_\alpha K_{\beta\gamma}-D_\beta K_{\alpha\gamma}
 \end{align}$$
 
 Again, contracting indices $\alpha$ and $\gamma$, we have

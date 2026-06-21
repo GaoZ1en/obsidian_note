@@ -28,7 +28,8 @@ Then
 
 $$\begin{aligned}
 \delta S&=\int_{M}E_a\delta\phi^a+\int_{\Sigma_+-\Sigma_-}(\Theta+\delta\ell)+\int_{\Gamma}{\rm d}C\\
-&=\int_{M}E_a\delta\phi^a+\int_{\Sigma_+-\Sigma_-}(\Theta+\delta\ell)+\int_{\partial\Gamma}C\\\\
+&=\int_{M}E_a\delta\phi^a+\int_{\Sigma_+-\Sigma_-}(\Theta+\delta\ell)+\int_{\partial\Gamma}C\\
+\\
 &=\int_{M}E_a\delta\phi^a+\int_{\Sigma_+-\Sigma_-}(\Theta+\delta\ell-{\rm d}C)
 \end{aligned}$$
 

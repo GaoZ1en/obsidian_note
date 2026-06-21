@@ -173,8 +173,7 @@ $$\begin{align}
 1. Dong 公式：
 
 $$\begin{align}
-S = 2\pi \int_{\gamma_A} d^{d-1}y \sqrt{h} \Big[ \frac{\partial \mathcal L}{\partial R_{z\bar z z\bar z}} +
-		 \sum_{\alpha} \frac{\lambda_\alpha}{\kappa_\alpha} (K K)_{\alpha} \Big],
+S = 2\pi \int_{\gamma_A} d^{d-1}y \sqrt{h} \Big[ \frac{\partial \mathcal L}{\partial R_{z\bar z z\bar z}} + \sum_{\alpha} \frac{\lambda_\alpha}{\kappa_\alpha} (K K)_{\alpha} \Big],
 \end{align}$$
 
 	其中第二项概括所有二阶外挠曲补偿；系数由二阶导数结构（详见 Dong/Camps 原始推导）给定。

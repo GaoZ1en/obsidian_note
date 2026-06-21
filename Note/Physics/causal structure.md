@@ -497,7 +497,9 @@ Classical NEC/SEC fail in semiclassical settings. Replacements:
 **Essential Causal Relations**:
 
 $$\begin{align}
-	ext{Vector Classification:} &\quad g_{ab}V^a V^b \begin{cases} < 0 & \text{timelike} \\ = 0 & \text{null} \\ > 0 & \text{spacelike} \end{cases} \\
+	ext{Vector Classification:} &\quad g_{ab}V^a V^b \begin{cases} < 0 & \text{timelike} \\
+= 0 & \text{null} \\
+> 0 & \text{spacelike} \end{cases} \\
 	ext{Causal Future:} &\quad J^+(p) = \{q \in M : p < q\} \\
 	ext{Chronological Future:} &\quad I^+(p) = \{q \in M : p \ll q\} \\
 	ext{Event Horizon:} &\quad \mathcal{H}^+ = \partial J^-(\mathcal{I}^+) \\
