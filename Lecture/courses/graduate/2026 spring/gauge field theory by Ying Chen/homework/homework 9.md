@@ -63,10 +63,8 @@ $$\begin{align}
 Use dimensional regularization with $d=4-2\epsilon$. Introduce renormalized fields and parameters by
 
 $$\begin{align}
-\psi _{0} & =Z_{2}^{1/2}\psi, &
-A_{0}^{\mu} & =Z_{3}^{1/2}A^{\mu}, \\
-m_{0} & =Z_{m}m, &
-e_{0} & =\mu ^{\epsilon}Z_{e}e.
+\psi _{0} & =Z_{2}^{1/2}\psi, & A_{0}^{\mu} & =Z_{3}^{1/2}A^{\mu}, \\
+m_{0} & =Z_{m}m, & e_{0} & =\mu ^{\epsilon}Z_{e}e.
 \end{align}$$
 
 It is also useful to introduce the vertex renormalization constant $Z_{1}$ by
@@ -78,136 +76,93 @@ Z_{1}e & =Z_{e}Z_{2}Z_{3}^{1/2}e.
 Then the QED Lagrangian can be written as
 
 $$\begin{align}
-\mathcal{L}_{QED}
-& =
-\mathcal{L}_{QED}^{R}+\delta \mathcal{L}_{QED},
+\mathcal{L}_{QED} & = \mathcal{L}_{QED}^{R}+\delta \mathcal{L}_{QED},
 \end{align}$$
 
 where, in a covariant gauge,
 
 $$\begin{align}
-\mathcal{L}_{QED}^{R}
-& =
--\frac{1}{4}F_{\mu \nu}F^{\mu \nu}
--\frac{1}{2\xi}(\partial _{\mu}A^{\mu})^{2}
-+\bar{\psi}(i\hat{\partial}-m)\psi
--e\bar{\psi}\gamma ^{\mu}A_{\mu}\psi,
+\mathcal{L}_{QED}^{R} & = -\frac{1}{4}F_{\mu \nu}F^{\mu \nu} -\frac{1}{2\xi}(\partial _{\mu}A^{\mu})^{2} +\bar{\psi}(i\hat{\partial}-m)\psi -e\bar{\psi}\gamma ^{\mu}A_{\mu}\psi,
 \end{align}$$
 
 and
 
 $$\begin{align}
-\delta \mathcal{L}_{QED}
-& =
--\frac{1}{4}\delta _{3}F_{\mu \nu}F^{\mu \nu}
-+\delta _{1}\bar{\psi}i\hat{\partial}\psi
--\delta m\,\bar{\psi}\psi
--e\delta _{2}\bar{\psi}\gamma ^{\mu}A_{\mu}\psi.
+\delta \mathcal{L}_{QED} & = -\frac{1}{4}\delta _{3}F_{\mu \nu}F^{\mu \nu} +\delta _{1}\bar{\psi}i\hat{\partial}\psi -\delta m\,\bar{\psi}\psi -e\delta _{2}\bar{\psi}\gamma ^{\mu}A_{\mu}\psi.
 \end{align}$$
 
 Here
 
 $$\begin{align}
-\delta _{1} & =Z_{2}-1, &
-\delta _{3} & =Z_{3}-1, &
-\delta _{2} & =Z_{1}-1, \\
+\delta _{1} & =Z_{2}-1, & \delta _{3} & =Z_{3}-1, & \delta _{2} & =Z_{1}-1, \\
 \delta m & =(Z_{2}Z_{m}-1)m.
 \end{align}$$
 
 The renormalized Feynman rules are
 
 $$\begin{align}
-\text{electron propagator:}\qquad
-& \frac{i(\hat{p}+m)}{p^{2}-m^{2}+i\varepsilon}, \\
-\text{photon propagator:}\qquad
-& \frac{-i}{k^{2}+i\varepsilon}
-\left[g_{\mu \nu}-(1-\xi)\frac{k_{\mu}k_{\nu}}{k^{2}}\right], \\
-\text{photon-electron vertex:}\qquad
-& -ie\gamma ^{\mu}.
+\text{electron propagator:}\qquad & \frac{i(\hat{p}+m)}{p^{2}-m^{2}+i\varepsilon}, \\
+\text{photon propagator:}\qquad & \frac{-i}{k^{2}+i\varepsilon} \left[g_{\mu \nu}-(1-\xi)\frac{k_{\mu}k_{\nu}}{k^{2}}\right], \\
+\text{photon-electron vertex:}\qquad & -ie\gamma ^{\mu}.
 \end{align}$$
 
 The counterterm Feynman rules are
 
 $$\begin{align}
-\text{electron two-point counterterm:}\qquad
-& i(\delta _{1}\hat{p}-\delta m), \\
-\text{photon two-point counterterm:}\qquad
-& i\delta _{3}(q^{2}g_{\mu \nu}-q_{\mu}q_{\nu}), \\
-\text{vertex counterterm:}\qquad
-& -ie\delta _{2}\gamma ^{\mu}.
+\text{electron two-point counterterm:}\qquad & i(\delta _{1}\hat{p}-\delta m), \\
+\text{photon two-point counterterm:}\qquad & i\delta _{3}(q^{2}g_{\mu \nu}-q_{\mu}q_{\nu}), \\
+\text{vertex counterterm:}\qquad & -ie\delta _{2}\gamma ^{\mu}.
 \end{align}$$
 
 Now determine the pole parts in the $\overline{MS}$ scheme. In Feynman gauge, the one-loop electron self-energy has divergent part
 
 $$\begin{align}
--i\Sigma(\hat{p})_{\mathrm{div}}
-& =
-\frac{ie^{2}}{(4\pi )^{2}}\frac{1}{\epsilon}
+-i\Sigma(\hat{p})_{\mathrm{div}} & = \frac{ie^{2}}{(4\pi )^{2}}\frac{1}{\epsilon}
 (\hat{p}-4m).
 \end{align}$$
 
 The counterterm $i(\delta _{1}\hat{p}-\delta m)$ cancels this divergence, so
 
 $$\begin{align}
-\delta _{1} & =
--\frac{e^{2}}{(4\pi )^{2}}\frac{1}{\epsilon}, &
-\delta m & =
--\frac{4e^{2}m}{(4\pi )^{2}}\frac{1}{\epsilon}.
+\delta _{1} & = -\frac{e^{2}}{(4\pi )^{2}}\frac{1}{\epsilon}, & \delta m & = -\frac{4e^{2}m}{(4\pi )^{2}}\frac{1}{\epsilon}.
 \end{align}$$
 
 Equivalently, since $\delta m=(Z_{2}Z_{m}-1)m$,
 
 $$\begin{align}
-Z_{m}-1
-& =
--\frac{3e^{2}}{(4\pi )^{2}}\frac{1}{\epsilon}.
+Z_{m}-1 & = -\frac{3e^{2}}{(4\pi )^{2}}\frac{1}{\epsilon}.
 \end{align}$$
 
 For the vacuum polarization, after the Feynman parametrization in the question and the shift $k=l-xq$, the divergent part is transverse:
 
 $$\begin{align}
-i\Pi _{\mu \nu}(q)_{\mathrm{div}}
-& =
-\frac{ie^{2}}{12\pi ^{2}}\frac{1}{\epsilon}
+i\Pi _{\mu \nu}(q)_{\mathrm{div}} & = \frac{ie^{2}}{12\pi ^{2}}\frac{1}{\epsilon}
 (q^{2}g_{\mu \nu}-q_{\mu}q_{\nu}).
 \end{align}$$
 
 This is canceled by the photon counterterm, hence
 
 $$\begin{align}
-\delta _{3}
-& =
--\frac{e^{2}}{12\pi ^{2}}\frac{1}{\epsilon}
-=-\frac{e^{2}}{(4\pi )^{2}}\frac{4}{3}\frac{1}{\epsilon}.
+\delta _{3} & = -\frac{e^{2}}{12\pi ^{2}}\frac{1}{\epsilon} =-\frac{e^{2}}{(4\pi )^{2}}\frac{4}{3}\frac{1}{\epsilon}.
 \end{align}$$
 
 For the one-loop vertex correction, the divergent part has the same Dirac structure as the tree vertex:
 
 $$\begin{align}
-i\Lambda ^{\mu}_{\mathrm{div}}
-& =
--\frac{ie^{3}}{(4\pi )^{2}}\frac{1}{\epsilon}\gamma ^{\mu}.
+i\Lambda ^{\mu}_{\mathrm{div}} & = -\frac{ie^{3}}{(4\pi )^{2}}\frac{1}{\epsilon}\gamma ^{\mu}.
 \end{align}$$
 
 The vertex counterterm $-ie\delta _{2}\gamma ^{\mu}$ cancels this pole, so
 
 $$\begin{align}
-\delta _{2}
-& =
--\frac{e^{2}}{(4\pi )^{2}}\frac{1}{\epsilon}.
+\delta _{2} & = -\frac{e^{2}}{(4\pi )^{2}}\frac{1}{\epsilon}.
 \end{align}$$
 
 Collecting the one-loop $\overline{MS}$ counterterms in Feynman gauge,
 
 $$\begin{align}
-\delta _{1} & =
--\frac{e^{2}}{(4\pi )^{2}}\frac{1}{\epsilon}, &
-\delta _{2} & =
--\frac{e^{2}}{(4\pi )^{2}}\frac{1}{\epsilon}, \\
-\delta _{3} & =
--\frac{e^{2}}{(4\pi )^{2}}\frac{4}{3}\frac{1}{\epsilon}, &
-\delta m & =
--\frac{4e^{2}m}{(4\pi )^{2}}\frac{1}{\epsilon}.
+\delta _{1} & = -\frac{e^{2}}{(4\pi )^{2}}\frac{1}{\epsilon}, & \delta _{2} & = -\frac{e^{2}}{(4\pi )^{2}}\frac{1}{\epsilon}, \\
+\delta _{3} & = -\frac{e^{2}}{(4\pi )^{2}}\frac{4}{3}\frac{1}{\epsilon}, & \delta m & = -\frac{4e^{2}m}{(4\pi )^{2}}\frac{1}{\epsilon}.
 \end{align}$$
 
 The equality
@@ -219,17 +174,13 @@ $$\begin{align}
 is the one-loop form of the Ward identity $Z_{1}=Z_{2}$. More explicitly, the Ward-Takahashi identity for the proper vertex and inverse full propagator is
 
 $$\begin{align}
-q_{\mu}\Gamma ^{\mu}(p+q,p)
-& =
-S^{-1}(p+q)-S^{-1}(p).
+q_{\mu}\Gamma ^{\mu}(p+q,p) & = S^{-1}(p+q)-S^{-1}(p).
 \end{align}$$
 
 Taking the limit $q\to 0$ gives
 
 $$\begin{align}
-\Gamma ^{\mu}(p,p)
-& =
-\frac{\partial S^{-1}(p)}{\partial p_{\mu}}.
+\Gamma ^{\mu}(p,p) & = \frac{\partial S^{-1}(p)}{\partial p_{\mu}}.
 \end{align}$$
 
 Thus the divergent coefficient multiplying $\gamma ^{\mu}$ in the vertex function is the same as the divergent coefficient multiplying $\hat{p}$ in the electron inverse propagator. This proves $\delta _{1}=\delta _{2}$ at one loop, and the same identity enforces $Z_{1}=Z_{2}$ to all orders.

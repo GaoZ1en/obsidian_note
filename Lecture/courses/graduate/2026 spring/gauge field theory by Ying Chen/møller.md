@@ -42,8 +42,7 @@ Use the massless Mandelstam variables
 $$\begin{align}
 s = (p_1+p_2)^2, \qquad
 t = (p_1-p_3)^2, \qquad
-u = (p_1-p_4)^2,
-\qquad s+t+u=0.
+u = (p_1-p_4)^2, \qquad s+t+u=0.
 \end{align}$$
 
 In the center-of-mass frame,
@@ -56,23 +55,13 @@ u = -\frac{s}{2}(1+\cos\theta).
 There are two photon-exchange diagrams. The $t$-channel amplitude is
 
 $$\begin{align}
-i\mathcal{M}_t
-=
-(-ie)^2
-\frac{-i}{t}
-\left[\bar{u}(p_3)\gamma^\mu u(p_1)\right]
-\left[\bar{u}(p_4)\gamma_\mu u(p_2)\right],
+i\mathcal{M}_t = (-ie)^2 \frac{-i}{t} \left[\bar{u}(p_3)\gamma^\mu u(p_1)\right] \left[\bar{u}(p_4)\gamma_\mu u(p_2)\right],
 \end{align}$$
 
 and the $u$-channel amplitude is
 
 $$\begin{align}
-i\mathcal{M}_u
-=
--(-ie)^2
-\frac{-i}{u}
-\left[\bar{u}(p_4)\gamma^\mu u(p_1)\right]
-\left[\bar{u}(p_3)\gamma_\mu u(p_2)\right].
+i\mathcal{M}_u = -(-ie)^2 \frac{-i}{u} \left[\bar{u}(p_4)\gamma^\mu u(p_1)\right] \left[\bar{u}(p_3)\gamma_\mu u(p_2)\right].
 \end{align}$$
 
 The extra minus sign in $\mathcal{M}_u$ is the fermion exchange sign for identical final-state electrons. Thus
@@ -86,68 +75,35 @@ $$\begin{align}
 The unpolarized spin average gives
 
 $$\begin{align}
-\overline{|\mathcal{M}|^2}
-=
-\frac{e^4}{4}
-\left[
-\frac{T_t}{t^2}
-+
-\frac{T_u}{u^2}
--
-\frac{2T_{tu}}{tu}
-\right],
+\overline{|\mathcal{M}|^2} = \frac{e^4}{4} \left[ \frac{T_t}{t^2} + \frac{T_u}{u^2} - \frac{2T_{tu}}{tu} \right],
+\end{align}
 \end{align}$$
 
 where
 
 $$\begin{aligned}
-T_t
-&=
-\operatorname{tr}\left(\not{p}_3\gamma^\mu \not{p}_1\gamma^\nu\right)
-\operatorname{tr}\left(\not{p}_4\gamma_\mu \not{p}_2\gamma_\nu\right)
-= 8(s^2+u^2), \\
-T_u
-&=
-\operatorname{tr}\left(\not{p}_4\gamma^\mu \not{p}_1\gamma^\nu\right)
-\operatorname{tr}\left(\not{p}_3\gamma_\mu \not{p}_2\gamma_\nu\right)
-= 8(s^2+t^2), \\
-T_{tu}
-&=
-\operatorname{tr}\left(\not{p}_3\gamma^\mu \not{p}_1\gamma^\nu
-\not{p}_4\gamma_\mu \not{p}_2\gamma_\nu\right)
-= -8s^2.
+T_t &= \operatorname{tr}\left(\not{p}_3\gamma^\mu \not{p}_1\gamma^\nu\right) \operatorname{tr}\left(\not{p}_4\gamma_\mu \not{p}_2\gamma_\nu\right) = 8(s^2+u^2), \\
+T_u &= \operatorname{tr}\left(\not{p}_4\gamma^\mu \not{p}_1\gamma^\nu\right) \operatorname{tr}\left(\not{p}_3\gamma_\mu \not{p}_2\gamma_\nu\right) = 8(s^2+t^2), \\
+T_{tu} &= \operatorname{tr}\left(\not{p}_3\gamma^\mu \not{p}_1\gamma^\nu
+\not{p}_4\gamma_\mu \not{p}_2\gamma_\nu\right) = -8s^2.
 \end{aligned}$$
 
 Therefore
 
 $$\begin{align}
-\overline{|\mathcal{M}|^2}
-=
-2e^4
-\left[
-\frac{s^2+u^2}{t^2}
-+
-\frac{s^2+t^2}{u^2}
-+
-\frac{2s^2}{tu}
-\right].
+\overline{|\mathcal{M}|^2} = 2e^4 \left[ \frac{s^2+u^2}{t^2} + \frac{s^2+t^2}{u^2} + \frac{2s^2}{tu} \right].
 \end{align}$$
 
 Equivalently, using $u=-s-t$,
 
 $$\begin{align}
-\overline{|\mathcal{M}|^2}
-=
-\frac{4e^4(s^2+st+t^2)^2}{t^2(s+t)^2}.
+\overline{|\mathcal{M}|^2} = \frac{4e^4(s^2+st+t^2)^2}{t^2(s+t)^2}.
 \end{align}$$
 
 In the center-of-mass frame this becomes
 
 $$\begin{align}
-\overline{|\mathcal{M}|^2}
-=
-4e^4
-\frac{(3+\cos^2\theta)^2}{(1-\cos^2\theta)^2}.
+\overline{|\mathcal{M}|^2} = 4e^4 \frac{(3+\cos^2\theta)^2}{(1-\cos^2\theta)^2}.
 \end{align}$$
 
 ## Differential cross section
@@ -155,21 +111,14 @@ $$\begin{align}
 For massless $2\to2$ scattering,
 
 $$\begin{align}
-\frac{d\sigma}{d\Omega}
-=
-\frac{1}{64\pi^2 s}\overline{|\mathcal{M}|^2}.
+\frac{d\sigma}{d\Omega} = \frac{1}{64\pi^2 s}\overline{|\mathcal{M}|^2}.
 \end{align}$$
 
 Because the two final electrons are identical, integrating over the full solid angle requires an additional factor $1/2$. Hence
 
 $$\begin{align}
-\frac{d\sigma}{d\Omega}
-=
-\frac{1}{2}\frac{1}{64\pi^2s}
-\overline{|\mathcal{M}|^2}
-=
-\frac{\alpha^2}{2s}
-\frac{(3+\cos^2\theta)^2}{(1-\cos^2\theta)^2},
+\frac{d\sigma}{d\Omega} = \frac{1}{2}\frac{1}{64\pi^2s}
+\overline{|\mathcal{M}|^2} = \frac{\alpha^2}{2s} \frac{(3+\cos^2\theta)^2}{(1-\cos^2\theta)^2},
 \end{align}$$
 
 where $\alpha=e^2/(4\pi)$. If the final-state electrons are artificially labeled, or if one integrates over only one hemisphere, the factor $1/2$ should be omitted accordingly.

@@ -69,7 +69,8 @@ after SSB, the Higgs field acquires a vacuum expectation value $\displaystyle{v=
 
 $$\begin{align}
 \Phi & =\begin{pmatrix}
-0 \\ \frac{v+h}{\sqrt{2}}
+0 \\
+\frac{v+h}{\sqrt{2}}
 \end{pmatrix}
 \end{align}$$
 

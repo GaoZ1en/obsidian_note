@@ -25,7 +25,8 @@ $$\begin{align}
 i\partial _{0}-m & i\vec{\sigma}\cdot \vec{\nabla} \\
 i\vec{\sigma}\cdot \vec{\nabla} & -i\partial _{0}-m
 \end{pmatrix}\begin{pmatrix}
-\psi _{1} \\ \psi _{2}
+\psi _{1} \\
+\psi _{2}
 \end{pmatrix} & =0
 \end{align}$$
 
@@ -36,16 +37,18 @@ $$\begin{align}
 E-m & -\vec{\sigma}\cdot \vec{p} \\
 \vec{\sigma}\cdot \vec{p} & -E-m
 \end{pmatrix}\begin{pmatrix}
-u_{1}(p) \\ u_{2}(p)
+u_{1}(p) \\
+u_{2}(p)
 \end{pmatrix} & =0
 \end{align}$$
 
 the solutions of the Dirac equation in the Dirac rep. are given by
 
 $$\begin{align}
-u(p) & =\begin{pmatrix}
-\sqrt{E+m}\xi \\ \frac{\vec{\sigma}\cdot \vec{p}}{\sqrt{E+m}}\xi \end{pmatrix}, & v(p) & =\begin{pmatrix}
-\frac{\vec{\sigma}\cdot \vec{p}}{\sqrt{E+m}}\eta \\ \sqrt{E+m}\eta \end{pmatrix}
+u(p) & =\begin{pmatrix} \sqrt{E+m}\xi \\
+\frac{\vec{\sigma}\cdot \vec{p}}{\sqrt{E+m}}\xi \end{pmatrix}, & v(p) & =\begin{pmatrix} \frac{\vec{\sigma}\cdot \vec{p}}{\sqrt{E+m}}\eta \\
+\sqrt{E+m}\eta \end{pmatrix}
+\end{align}
 \end{align}$$
 
 where $\displaystyle{\xi}$ and $\displaystyle{\eta}$ are two-component spinors corresponding to the spin degrees of freedom. the solutions correspond to a spin-1/2 particle, and the helicity and chirality are not good quantum numbers in this representation.
@@ -61,8 +64,7 @@ I & 0
 \end{pmatrix},\gamma ^{i}=\begin{pmatrix}
 0 & \sigma ^{i} \\
 -\sigma ^{i} & 0
-\end{pmatrix}, \gamma^{5}=i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}=\begin{pmatrix}
--I & 0 \\
+\end{pmatrix}, \gamma^{5}=i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}=\begin{pmatrix} -I & 0 \\
 0 & I
 \end{pmatrix}
 \end{align}$$
@@ -70,11 +72,11 @@ I & 0
 the Dirac equation $(i\gamma^{\mu}\partial_{\mu}-m)\psi(x)=0$ with plane wave ansatz $\psi(x) = u(p)e^{-ip\cdot x}$ becomes $(\not{p}-m)u(p)=0$, which can be written as
 
 $$\begin{align}
-\begin{pmatrix}
--m & p_{0}-\vec{\sigma}\cdot \vec{p} \\
+\begin{pmatrix} -m & p_{0}-\vec{\sigma}\cdot \vec{p} \\
 p_{0}+\vec{\sigma}\cdot \vec{p} & -m
 \end{pmatrix}\begin{pmatrix}
-u_{L} \\ u_{R}
+u_{L} \\
+u_{R}
 \end{pmatrix} & =0
 \end{align}$$
 
@@ -87,10 +89,10 @@ $$\begin{align}
 thus the solutions in the Weyl rep. are given by
 
 $$\begin{align}
-u^{s}(p) & =\begin{pmatrix}
-\sqrt{p\cdot \sigma}\xi^{s} \\ \sqrt{p\cdot \bar{\sigma}}\xi^{s}
-\end{pmatrix}, & v^{s}(p) & =\begin{pmatrix}
-\sqrt{p\cdot \sigma}\eta^{s} \\ -\sqrt{p\cdot \bar{\sigma}}\eta^{s}
+u^{s}(p) & =\begin{pmatrix} \sqrt{p\cdot \sigma}\xi^{s} \\
+\sqrt{p\cdot \bar{\sigma}}\xi^{s}
+\end{pmatrix}, & v^{s}(p) & =\begin{pmatrix} \sqrt{p\cdot \sigma}\eta^{s} \\
+-\sqrt{p\cdot \bar{\sigma}}\eta^{s}
 \end{pmatrix}
 \end{align}$$
 

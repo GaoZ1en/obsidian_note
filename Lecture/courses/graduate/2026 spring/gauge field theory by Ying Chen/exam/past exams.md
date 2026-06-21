@@ -78,16 +78,14 @@ p^{2}-M_{0}^{2}-\mathrm{Re}\Sigma(p^{2}) & =\left(1-\dfrac{\mathrm{d}}{\mathrm{d
 where
 
 $$\begin{align}
-Z & =\left(1-\dfrac{\mathrm{d}}{\mathrm{d}p^{2}}\mathrm{Re}\Sigma(p^{2})|_{p^{2}=M^{2}}\right)^{-1}
-\simeq 1+\dfrac{\mathrm{d}}{\mathrm{d}p^{2}}\mathrm{Re}\Sigma(p^{2})|_{p^{2}=M^{2}} .
+Z & =\left(1-\dfrac{\mathrm{d}}{\mathrm{d}p^{2}}\mathrm{Re}\Sigma(p^{2})|_{p^{2}=M^{2}}\right)^{-1} \simeq 1+\dfrac{\mathrm{d}}{\mathrm{d}p^{2}}\mathrm{Re}\Sigma(p^{2})|_{p^{2}=M^{2}} .
 \end{align}$$
 
 this implies that the full propagator can be written as
 
-$$
-\begin{align}
-D(p^{2}) & =\dfrac{iZ}{p^{2}-M^{2}-iZ\mathrm{Im}\Sigma(p^{2})}.\end{align}
-$$
+$$\begin{align}
+D(p^{2}) & =\dfrac{iZ}{p^{2}-M^{2}-iZ\mathrm{Im}\Sigma(p^{2})}.
+\end{align}$$
 
 The optical theorem gives $-Z\mathrm{Im}\Sigma(M^{2})=M\Gamma_{\text{tot}}$. In the narrow-width approximation we can take $\mathrm{Im}\Sigma(p^{2})\approx \mathrm{Im}\Sigma(M^{2})$, and accordingly
 
@@ -148,8 +146,7 @@ $$\begin{align}
 In unitary gauge one writes $\phi=(0,0,v+h)$. The scalar kinetic term gives
 
 $$\begin{align}
-\dfrac{1}{2}(D_{\mu}\phi ^{a})(D^{\mu}\phi ^{a})
-& \supset \dfrac{1}{2}g^{2}v^{2}\left(A_{\mu}^{1}A^{1,\mu}+A_{\mu}^{2}A^{2,\mu}\right).
+\dfrac{1}{2}(D_{\mu}\phi ^{a})(D^{\mu}\phi ^{a}) & \supset \dfrac{1}{2}g^{2}v^{2}\left(A_{\mu}^{1}A^{1,\mu}+A_{\mu}^{2}A^{2,\mu}\right).
 \end{align}$$
 
 Therefore $A_{\mu}^{1}$ and $A_{\mu}^{2}$ acquire the same mass
@@ -187,9 +184,7 @@ $$\begin{align}
 and exponentiating it gives the ghost Lagrangian. Its quadratic part is
 
 $$\begin{align}
-\mathcal{L}_{\mathrm{gh}}^{(2)}
-& =\bar{c}^{i}(-\partial ^{2}-\xi M_{W}^{2})c^{i}
-+\bar{c}^{3}(-\partial ^{2})c^{3},\qquad i=1,2.
+\mathcal{L}_{\mathrm{gh}}^{(2)} & =\bar{c}^{i}(-\partial ^{2}-\xi M_{W}^{2})c^{i} +\bar{c}^{3}(-\partial ^{2})c^{3},\qquad i=1,2.
 \end{align}$$
 
 Thus the Goldstone and ghost fields in the broken directions have mass squared $\xi M_{W}^{2}$, while the unbroken ghost remains massless:
@@ -202,17 +197,13 @@ D_{c}^{33}(p) & =\dfrac{i}{p^{2}+i\varepsilon}.
 The massive gauge boson propagator is
 
 $$\begin{align}
-D_{\mu \nu}^{ij}(p)
-& =\dfrac{-i\delta ^{ij}}{p^{2}-M_{W}^{2}+i\varepsilon}
-\left[g_{\mu \nu}-\dfrac{(1-\xi)p_{\mu}p_{\nu}}{p^{2}-\xi M_{W}^{2}+i\varepsilon}\right],
-\qquad i,j=1,2,
+D_{\mu \nu}^{ij}(p) & =\dfrac{-i\delta ^{ij}}{p^{2}-M_{W}^{2}+i\varepsilon} \left[g_{\mu \nu}-\dfrac{(1-\xi)p_{\mu}p_{\nu}}{p^{2}-\xi M_{W}^{2}+i\varepsilon}\right], \qquad i,j=1,2,
 \end{align}$$
 
 and the unbroken massless gauge boson has the usual covariant-gauge propagator
 
 $$\begin{align}
-D_{\mu \nu}^{33}(p)
-& =\dfrac{-i}{p^{2}+i\varepsilon}\left[g_{\mu \nu}-(1-\xi)\dfrac{p_{\mu}p_{\nu}}{p^{2}+i\varepsilon}\right].
+D_{\mu \nu}^{33}(p) & =\dfrac{-i}{p^{2}+i\varepsilon}\left[g_{\mu \nu}-(1-\xi)\dfrac{p_{\mu}p_{\nu}}{p^{2}+i\varepsilon}\right].
 \end{align}$$
 
 三、(20 分) 在引入拉格朗日乘子时的 QED 的等效拉氏量为
@@ -266,9 +257,7 @@ $$\begin{align}
 1. (5 分）实际上，可以证明反常项满足
 
 $$\begin{align}
-\dfrac{e^{2}}{16\pi ^{2}}\varepsilon ^{\mu \nu \rho \sigma}F_{\mu \nu}F_{\rho \sigma}
-& =\partial _{\mu}K^{\mu}, &
-K^{\mu}&=\dfrac{e^{2}}{4\pi ^{2}}\varepsilon ^{\mu \nu \rho \sigma}A_{\nu}\partial _{\rho}A_{\sigma}.
+\dfrac{e^{2}}{16\pi ^{2}}\varepsilon ^{\mu \nu \rho \sigma}F_{\mu \nu}F_{\rho \sigma} & =\partial _{\mu}K^{\mu}, & K^{\mu}&=\dfrac{e^{2}}{4\pi ^{2}}\varepsilon ^{\mu \nu \rho \sigma}A_{\nu}\partial _{\rho}A_{\sigma}.
 \end{align}$$
 
 我们可以引入新的流
@@ -280,17 +269,14 @@ $$\begin{align}
 则上述反常的 Ward 恒等式可以写作
 
 $$\begin{align}
-\partial _{\mu}\braket{ \bar{j}_{5}^{\mu}(x)\psi(x_{1})\bar{\psi}(x_{2}) }
-& =2im_{0}\braket{ j_{5}(x)\psi(x_{1})\bar{\psi}(x_{2}) }  \\
-&\quad -\delta(x-x_{1})\gamma_{5}\braket{ \psi(x)\bar{\psi}(x_{2}) }
--\delta(x-x_{2})\braket{ \psi(x_{1})\bar{\psi}(x) } \gamma_{5}.
+\partial _{\mu}\braket{ \bar{j}_{5}^{\mu}(x)\psi(x_{1})\bar{\psi}(x_{2}) } & =2im_{0}\braket{ j_{5}(x)\psi(x_{1})\bar{\psi}(x_{2}) }  \\
+&\quad -\delta(x-x_{1})\gamma_{5}\braket{ \psi(x)\bar{\psi}(x_{2}) } -\delta(x-x_{2})\braket{ \psi(x_{1})\bar{\psi}(x) } \gamma_{5}.
 \end{align}$$
 
 做傅里叶变换（从 $\displaystyle{x}$ 点流入 $\displaystyle{q}$, 从 $\displaystyle{x_{2}}$ 点流向 $\displaystyle{x}$ 点的动量为 $\displaystyle{p}$，则从 $\displaystyle{x}$ 流向 $\displaystyle{x_{1}}$ 的动量为 $\displaystyle{p+q}$）有动量空间的 Ward 恒等式
 
 $$\begin{align}
-q_{\mu}G^{\mu}_{5,c}(q,p)
-& =2m_{0}G_{5,c}(q,p)+i\gamma _{5}\tilde{S}_{f}(p)+i\tilde{S}_{f}(p+q)\gamma_{5}.
+q_{\mu}G^{\mu}_{5,c}(q,p) & =2m_{0}G_{5,c}(q,p)+i\gamma _{5}\tilde{S}_{f}(p)+i\tilde{S}_{f}(p+q)\gamma_{5}.
 \end{align}$$
 
 其中 $\displaystyle{G_{5,c}^{\mu},G_{5,c}}$ 分别为 $\displaystyle{\braket{ \bar{j}_{5}^{\mu}(x)\psi(x_{1})\bar{\psi}(x_{2}) },\braket{ j_{5}(x)\psi(x_{1})\bar{\psi}(x_{2}) }}$ 的连通部分的动量空间表达式（非连通部分没有贡献），$\displaystyle{\tilde{S}_{f}}$ 是前面得到的费米子的全传播子。我们知道，连通格林函数可以表示为截腿格林函数和全传播子的乘积。具体而言，
@@ -303,8 +289,7 @@ G_{5,c}(q,p) & =\tilde{S}_{f}(p+q)G_{5,amp}\tilde{S}_{f}(p).
 则反常的 Ward 恒等式用截腿格林函数表示为
 
 $$\begin{align}
-q_{\mu}G^{\mu}_{5,amp}(q,p)
-& =2m_{0}G_{5,amp}(q,p)+i\tilde{S}^{-1}_{f}(p+q)\gamma _{5}+i\gamma _{5}\tilde{S}_{f}^{-1}(p).
+q_{\mu}G^{\mu}_{5,amp}(q,p) & =2m_{0}G_{5,amp}(q,p)+i\tilde{S}^{-1}_{f}(p+q)\gamma _{5}+i\gamma _{5}\tilde{S}_{f}^{-1}(p).
 \end{align}$$
 
 利用该 Ward 恒等式证明：费米子质量的辐射修正 $\displaystyle{\Sigma(m)}$ 正比于 $\displaystyle{m_{0}}$ （提示：QED 中，$\displaystyle{G^{\mu}_{5,amp}(q,p)}$ 没有 $\displaystyle{q^{2}=0}$ 的极点，所以在取 $\displaystyle{q_{\mu}\to0}$ 的极限时，$\displaystyle{q_{\mu}G^{\mu}_{5,amp}=0}$）。这个结论的重要物理含义是“费米子质量是相称性重正化的，手征对称性不被辐射修正所破坏”。
@@ -312,8 +297,7 @@ q_{\mu}G^{\mu}_{5,amp}(q,p)
 sol. Since $\displaystyle{G^{\mu}_{5,amp}(q,p)}$ has no pole at $\displaystyle{q^{2}=0}$, taking the limit $\displaystyle{q_{\mu}\to0}$ gives $\displaystyle{q_{\mu}G^{\mu}_{5,amp}=0}$. Thus
 
 $$\begin{align}
--2m_{0}G_{5,amp}(0,p)
-& =i\tilde{S}^{-1}_{f}(p)\gamma_{5}+i\gamma _{5}\tilde{S}_{f}^{-1}(p) \\
+-2m_{0}G_{5,amp}(0,p) & =i\tilde{S}^{-1}_{f}(p)\gamma_{5}+i\gamma _{5}\tilde{S}_{f}^{-1}(p) \\
 & =i\left\{\gamma \cdot p-m_{0}-\Sigma(\gamma \cdot p),\gamma_{5}\right\} \\
 & =i\left(-2m_{0}\gamma_{5}-\left\{\Sigma(\gamma \cdot p),\gamma_{5}\right\}\right).
 \end{align}$$
@@ -354,29 +338,25 @@ D_{c}^{ab}(p) & =\dfrac{i\delta^{ab}}{p^{2}+i\varepsilon},
 and the ghost-gluon vertex is proportional to $gf^{abc}p_{\mu}$, where $p_{\mu}$ is the momentum carried by the differentiated antighost line. In Feynman gauge, the one-loop ghost self-energy has pole part
 
 $$\begin{align}
-i\Pi_{c,\mathrm{div}}^{ab}(p)
-& =-i\delta ^{ab}p^{2}\dfrac{g^{2}C_{A}}{16\pi ^{2}}\dfrac{1}{2\varepsilon}.
+i\Pi_{c,\mathrm{div}}^{ab}(p) & =-i\delta ^{ab}p^{2}\dfrac{g^{2}C_{A}}{16\pi ^{2}}\dfrac{1}{2\varepsilon}.
 \end{align}$$
 
 The counterterm insertion from $\delta _{3}^{c}(\partial _{\mu}\bar{c}^{a})\partial ^{\mu}c^{a}$ cancels this pole, so
 
 $$\begin{align}
-\delta _{3}^{c}
-& =\dfrac{g^{2}C_{A}}{16\pi ^{2}}\dfrac{1}{2\varepsilon}.
+\delta _{3}^{c} & =\dfrac{g^{2}C_{A}}{16\pi ^{2}}\dfrac{1}{2\varepsilon}.
 \end{align}$$
 
 The one-loop ghost-gluon vertex correction is proportional to the tree vertex. Its $\overline{\mathrm{MS}}$ counterterm is
 
 $$\begin{align}
-\delta _{1}^{c}
-& =-\dfrac{g^{2}C_{A}}{16\pi ^{2}}\dfrac{1}{2\varepsilon}.
+\delta _{1}^{c} & =-\dfrac{g^{2}C_{A}}{16\pi ^{2}}\dfrac{1}{2\varepsilon}.
 \end{align}$$
 
 For $\mathrm{SU}(3)$, $C_{A}=C_{2}(G)=3$, hence
 
 $$\begin{align}
-\delta _{3}^{c}& =\dfrac{3g^{2}}{32\pi ^{2}}\dfrac{1}{\varepsilon},&
-\delta _{1}^{c}& =-\dfrac{3g^{2}}{32\pi ^{2}}\dfrac{1}{\varepsilon}.
+\delta _{3}^{c}& =\dfrac{3g^{2}}{32\pi ^{2}}\dfrac{1}{\varepsilon},& \delta _{1}^{c}& =-\dfrac{3g^{2}}{32\pi ^{2}}\dfrac{1}{\varepsilon}.
 \end{align}$$
 
 1. （10 分）如果已知 $\displaystyle{Z_{3}=1-\dfrac{g^{2}}{16\pi ^{2}} \dfrac{1}{\varepsilon}\left( \dfrac{4}{3}n_{f}C(r)-\dfrac{5}{3}C_{2}(G) \right)}$，其中$\displaystyle{C(r)=\dfrac{1}{2},C_{2}(G)=3}$，利用裸耦合常数 $\displaystyle{g_{0}}$ 满足的重正化群方程计算 $\displaystyle{\beta}$ 函数 $\displaystyle{\beta(g)=\mu\dfrac{\mathrm{d}}{\mathrm{d}\mu}g}$， 从而给出跑动耦合常数 $\displaystyle{g(\mu)}$ 的表达式，并说明非阿贝尔规范理论的渐进自由的含义。可以看出这种计算方式和计算规范场-费米子场耦合及费米自能的单圈修正的结果是相同的。这个结论是由 BRST 对称性保证的，即 BRST 对称性给出 $\displaystyle{\dfrac{Z_{1}}{Z_{2}}=\dfrac{Z_{1}^{c}}{Z_{3}^{c}}=\dfrac{Z_{1}^{3g}}{Z_{3}}=\left( \dfrac{Z_{1}^{4g}}{Z_{3}} \right)^{1/2}}$ 或者$\displaystyle{\delta_{1}-\delta_{2}=\delta_{1}^{c}-\delta_{3}^{c}=\delta_{1}^{3g}-\delta_{3}=\dfrac{1}{2}(\delta_{1}^{4g}-\delta_{3})}$，其物理含义是规范耦合常数的普适性。
@@ -390,8 +370,7 @@ $$\begin{align}
 the coupling renormalization constant is, to one loop,
 
 $$\begin{align}
-Z_{g}& =1+\delta _{g},&
-\delta _{g}& =\delta _{1}^{c}-\delta _{3}^{c}-\dfrac{1}{2}\delta _{3}.
+Z_{g}& =1+\delta _{g},& \delta _{g}& =\delta _{1}^{c}-\delta _{3}^{c}-\dfrac{1}{2}\delta _{3}.
 \end{align}$$
 
 Using
@@ -467,15 +446,13 @@ F_{\mu \nu} & \to VF_{\mu \nu}V^{\dagger} & \implies F^{a}_{\mu \nu} & =F_{\mu \
 sol. The condition $F_{\mu \nu}(x\to \infty)=0$ only says that the gauge field approaches a flat connection at infinity. A flat connection is locally pure gauge, so $A_{\mu}(x\to \infty)$ need not vanish:
 
 $$\begin{align}
-A_{\mu}(x) & \longrightarrow \dfrac{i}{g}V(x)\partial _{\mu}V^{\dagger}(x),&
-F_{\mu \nu}(x) & \longrightarrow 0.
+A_{\mu}(x) & \longrightarrow \dfrac{i}{g}V(x)\partial _{\mu}V^{\dagger}(x),& F_{\mu \nu}(x) & \longrightarrow 0.
 \end{align}$$
 
 Equivalently, one may write
 
 $$\begin{align}
-A_{\mu}(x) & =VA^{(0)}_{\mu}(x)V^{\dagger}+\dfrac{i}{g}V\partial _{\mu}V^{\dagger},&
-A_{\mu}^{(0)}(x\to \infty)&=0,
+A_{\mu}(x) & =VA^{(0)}_{\mu}(x)V^{\dagger}+\dfrac{i}{g}V\partial _{\mu}V^{\dagger},& A_{\mu}^{(0)}(x\to \infty)&=0,
 \end{align}$$
 
 二、（20 分）接上题：
@@ -494,12 +471,8 @@ sol.
 $$\begin{align}
 D_{\mu}\phi & =\partial _{\mu}\phi+igA_{\mu}^{a}t^{a}\phi,\quad t^{a}=\dfrac{\tau ^{a}}{2} \\
 \mathcal{L} & =(D_{\mu}\phi)^{\dagger}D^{\mu}\phi \\
- & =\partial _{\mu}\phi^{\dagger}\partial ^{\mu}\phi
- +igA_{\mu}^{a}(\partial ^{\mu}\phi^{\dagger}t^{a}\phi-\phi^{\dagger}t^{a}\partial ^{\mu}\phi)
- +g^{2}A_{\mu}^{a}A^{b,\mu}\phi^{\dagger}t^{a}t^{b}\phi \\
- & =\partial _{\mu}\phi^{\dagger}\partial ^{\mu}\phi
- +\dfrac{ig}{2}A_{\mu}^{a}(\partial ^{\mu}\phi^{\dagger}\tau ^{a}\phi-\phi^{\dagger}\tau ^{a}\partial ^{\mu}\phi)
- +\dfrac{g^{2}}{4}A_{\mu}^{a}A^{a,\mu}\phi^{\dagger}\phi.
+ & =\partial _{\mu}\phi^{\dagger}\partial ^{\mu}\phi +igA_{\mu}^{a}(\partial ^{\mu}\phi^{\dagger}t^{a}\phi-\phi^{\dagger}t^{a}\partial ^{\mu}\phi) +g^{2}A_{\mu}^{a}A^{b,\mu}\phi^{\dagger}t^{a}t^{b}\phi \\
+ & =\partial _{\mu}\phi^{\dagger}\partial ^{\mu}\phi +\dfrac{ig}{2}A_{\mu}^{a}(\partial ^{\mu}\phi^{\dagger}\tau ^{a}\phi-\phi^{\dagger}\tau ^{a}\partial ^{\mu}\phi) +\dfrac{g^{2}}{4}A_{\mu}^{a}A^{a,\mu}\phi^{\dagger}\phi.
 \end{align}$$
 
 1. （10 分）对于第（1）小题中的实标量场，引入具有对称性自发破缺（SSB）的自相互作用势（$\displaystyle{\mu ^{2}>0,\lambda >0}$）$$\begin{align}V(\phi) & =-\mu ^{2}\mathrm{Tr}(\phi \phi)+\lambda (\mathrm{Tr}\phi \phi)^{2}, & \phi=\phi ^{a}t^{a}\end{align}$$或者$$\begin{align}V(\phi) & =-\dfrac{\mu ^{2}}{2}(\phi ^{T}\phi)+\dfrac{\lambda}{4}(\phi ^{T}\phi)^{2}, & \phi=(\phi_{1},\phi_{2},\phi_{3})^{T}\end{align}$$请讨论SSB 的形态及后果，如几个对称性破坏，还剩几个对称性，SSB 之后的粒子谱（规范玻色子获得质量情况、标量场获得质量情况等）.
@@ -524,8 +497,7 @@ $$\begin{align}
 In unitary gauge one writes $\phi=(0,0,v+h)$. The scalar kinetic term gives
 
 $$\begin{align}
-\dfrac{1}{2}(D_{\mu}\phi ^{a})(D^{\mu}\phi ^{a})
-& \supset \dfrac{1}{2}g^{2}v^{2}\left(A_{\mu}^{1}A^{1,\mu}+A_{\mu}^{2}A^{2,\mu}\right).
+\dfrac{1}{2}(D_{\mu}\phi ^{a})(D^{\mu}\phi ^{a}) & \supset \dfrac{1}{2}g^{2}v^{2}\left(A_{\mu}^{1}A^{1,\mu}+A_{\mu}^{2}A^{2,\mu}\right).
 \end{align}$$
 
 Therefore $A_{\mu}^{1}$ and $A_{\mu}^{2}$ acquire the same mass
@@ -566,8 +538,7 @@ A_{\mu} & \to A_{\mu}-\dfrac{1}{e}\partial _{\mu}\alpha \\
 because $D_{\mu}=\partial _{\mu}+ieA_{\mu}$. Hence
 
 $$\begin{align}
-M[A,h](x,y)
-& =\dfrac{\delta f(A^{\alpha},h^{\alpha},\eta^{\alpha})(x)}{\delta\alpha(y)}\bigg|_{\alpha=0} \\
+M[A,h](x,y) & =\dfrac{\delta f(A^{\alpha},h^{\alpha},\eta^{\alpha})(x)}{\delta\alpha(y)}\bigg|_{\alpha=0} \\
 & =\left[-\dfrac{1}{e}\partial _{x}^{2}-\xi ev(v+h(x))\right]\delta ^{4}(x-y).
 \end{align}$$
 
@@ -582,8 +553,7 @@ sol.
 we have
 
 $$\begin{align}
-\mathcal{L}_{\text{gh}}
-& =\bar{c}M'c \\
+\mathcal{L}_{\text{gh}} & =\bar{c}M'c \\
 & =\bar{c}\left(-\partial ^{2}-\xi e^{2}v(v+h)\right)c \\
 & =\partial _{\mu}\bar{c}\partial ^{\mu}c-\xi m_{A}^{2}\bar{c}c-\xi e^{2}v\,h\bar{c}c,
 \end{align}$$
@@ -651,8 +621,7 @@ $$\begin{align}
 the coupling renormalization constant is, to one loop,
 
 $$\begin{align}
-Z_{g}& =1+\delta _{g},&
-\delta _{g}& =\delta _{1}^{c}-\delta _{3}^{c}-\dfrac{1}{2}\delta _{3}.
+Z_{g}& =1+\delta _{g},& \delta _{g}& =\delta _{1}^{c}-\delta _{3}^{c}-\dfrac{1}{2}\delta _{3}.
 \end{align}$$
 
 Using
@@ -728,10 +697,8 @@ $$\begin{align}
 sol. The scalar kinetic term and $V(\phi)$ are invariant because the transformation is a global phase rotation and $V$ depends only on $|\phi|^{2}$. The color kinetic term is also invariant because the PQ phase is global and commutes with the color $\mathrm{SU}(3)$ generators. For the Yukawa term,
 
 $$\begin{align}
-\bar{Q}_{L}Q_{R}\phi
-&\longrightarrow
-e^{-i\alpha/2}\bar{Q}_{L}\,e^{-i\alpha/2}Q_{R}\,e^{i\alpha}\phi
-=\bar{Q}_{L}Q_{R}\phi,
+\bar{Q}_{L}Q_{R}\phi &\longrightarrow
+e^{-i\alpha/2}\bar{Q}_{L}\,e^{-i\alpha/2}Q_{R}\,e^{i\alpha}\phi =\bar{Q}_{L}Q_{R}\phi,
 \end{align}$$
 
 and the complex conjugate term is invariant in the same way.
@@ -739,9 +706,7 @@ and the complex conjugate term is invariant in the same way.
 sol. Substituting the vacuum expectation value into the Yukawa interaction gives
 
 $$\begin{align}
--(f_{Q}\bar{Q}_{L}Q_{R}\phi+\mathrm{c.c.})
-&\longrightarrow
--\dfrac{f_{Q}f_{a}}{\sqrt{2}}(\bar{Q}_{L}Q_{R}+\bar{Q}_{R}Q_{L})\\
+-(f_{Q}\bar{Q}_{L}Q_{R}\phi+\mathrm{c.c.}) &\longrightarrow -\dfrac{f_{Q}f_{a}}{\sqrt{2}}(\bar{Q}_{L}Q_{R}+\bar{Q}_{R}Q_{L})\\
 &=-m_{Q}\bar{Q}Q,
 \end{align}$$
 
@@ -755,18 +720,14 @@ m_{Q} & =\dfrac{f_{Q}f_{a}}{\sqrt{2}}.
 sol. The axion phase in the mass term is removed by the chiral rotation
 
 $$\begin{align}
-Q &\to e^{-i\gamma _{5}a/2f_{a}}Q,&
-Q_{L}&\to e^{ia/2f_{a}}Q_{L},&
-Q_{R}&\to e^{-ia/2f_{a}}Q_{R}.
+Q &\to e^{-i\gamma _{5}a/2f_{a}}Q,& Q_{L}&\to e^{ia/2f_{a}}Q_{L},& Q_{R}&\to e^{-ia/2f_{a}}Q_{R}.
 \end{align}$$
 
 Indeed,
 
 $$\begin{align}
-\bar{Q}_{L}Q_{R}e^{ia/f_{a}}
-&\longrightarrow
-e^{-ia/2f_{a}}\bar{Q}_{L}\,e^{-ia/2f_{a}}Q_{R}\,e^{ia/f_{a}}
-=\bar{Q}_{L}Q_{R},
+\bar{Q}_{L}Q_{R}e^{ia/f_{a}} &\longrightarrow
+e^{-ia/2f_{a}}\bar{Q}_{L}\,e^{-ia/2f_{a}}Q_{R}\,e^{ia/f_{a}} =\bar{Q}_{L}Q_{R},
 \end{align}$$
 
 and similarly for the complex conjugate. Classically this trades the phase in the mass term for a derivative coupling to the axial current; after the heavy quark is integrated out, the relevant low-energy effect is the anomalous Jacobian of the fermion measure.
@@ -774,21 +735,15 @@ and similarly for the complex conjugate. Classically this trades the phase in th
 For one heavy Dirac quark in the fundamental representation of color $\mathrm{SU}(3)$, Fujikawa's Jacobian gives
 
 $$\begin{align}
-\mathcal{D}\bar{Q}\mathcal{D}Q
-&\to
-\mathcal{D}\bar{Q}\mathcal{D}Q
-\exp\left[
-i\int \mathrm{d}^{4}x\,
-\dfrac{g^{2}}{32\pi ^{2}}\dfrac{a}{f_{a}}
-F_{\mu\nu}^{a}\tilde{F}^{a,\mu\nu}
-\right].
+\mathcal{D}\bar{Q}\mathcal{D}Q &\to \mathcal{D}\bar{Q}\mathcal{D}Q
+\exp\left[ i\int \mathrm{d}^{4}x\, \dfrac{g^{2}}{32\pi ^{2}}\dfrac{a}{f_{a}}
+F_{\mu\nu}^{a}\tilde{F}^{a,\mu\nu} \right].
 \end{align}$$
 
 Therefore the effective Lagrangian obtains
 
 $$\begin{align}
-\delta \mathcal{L}_{\mathrm{KSVZ}}
-&=\dfrac{g^{2}}{32\pi ^{2}}\dfrac{a}{f_{a}}
+\delta \mathcal{L}_{\mathrm{KSVZ}} &=\dfrac{g^{2}}{32\pi ^{2}}\dfrac{a}{f_{a}}
 F_{\mu\nu}^{a}\tilde{F}^{a,\mu\nu}.
 \end{align}$$
 
@@ -816,68 +771,52 @@ D_{\mu} & =\partial _{\mu}-igA_{\mu},
 the finite gauge transformations are
 
 $$\begin{align}
-A_{\mu} & \to A_{\mu}^{V}=VA_{\mu}V^{\dagger}+\dfrac{i}{g}V\partial _{\mu}V^{\dagger},&
-F_{\mu\nu} & \to F_{\mu\nu}^{V}=VF_{\mu\nu}V^{\dagger}.
+A_{\mu} & \to A_{\mu}^{V}=VA_{\mu}V^{\dagger}+\dfrac{i}{g}V\partial _{\mu}V^{\dagger},& F_{\mu\nu} & \to F_{\mu\nu}^{V}=VF_{\mu\nu}V^{\dagger}.
 \end{align}$$
 
 For $V=e^{i\theta}$, $\theta=\theta ^{a}t^{a}$, the infinitesimal transformations are
 
 $$\begin{align}
-\delta A_{\mu}^{a}
-&=\dfrac{1}{g}\partial _{\mu}\theta ^{a}-\varepsilon ^{abc}\theta ^{b}A_{\mu}^{c},&
-\delta F_{\mu\nu}^{a}
-&=-\varepsilon ^{abc}\theta ^{b}F_{\mu\nu}^{c}.
+\delta A_{\mu}^{a} &=\dfrac{1}{g}\partial _{\mu}\theta ^{a}-\varepsilon ^{abc}\theta ^{b}A_{\mu}^{c},& \delta F_{\mu\nu}^{a} &=-\varepsilon ^{abc}\theta ^{b}F_{\mu\nu}^{c}.
 \end{align}$$
 
 1. For an adjoint real scalar,
 
 $$\begin{align}
-(D_{\mu}\phi)^{a}
-&=\partial _{\mu}\phi ^{a}+g\varepsilon ^{abc}A_{\mu}^{b}\phi ^{c},
+(D_{\mu}\phi)^{a} &=\partial _{\mu}\phi ^{a}+g\varepsilon ^{abc}A_{\mu}^{b}\phi ^{c},
 \end{align}$$
 
 and
 
 $$\begin{align}
-\mathcal{L}_{\phi}
-&=\mathrm{Tr}(D_{\mu}\phi D^{\mu}\phi)-V(\phi)\\
+\mathcal{L}_{\phi} &=\mathrm{Tr}(D_{\mu}\phi D^{\mu}\phi)-V(\phi)\\
 &=\dfrac{1}{2}(D_{\mu}\phi ^{a})(D^{\mu}\phi ^{a})-V(\phi).
 \end{align}$$
 
 In components the kinetic term is
 
 $$\begin{align}
-\dfrac{1}{2}\partial _{\mu}\phi ^{a}\partial ^{\mu}\phi ^{a}
- +g\varepsilon ^{abc}A_{\mu}^{a}\phi ^{b}\partial ^{\mu}\phi ^{c}
- +\dfrac{g^{2}}{2}\left(A_{\mu}^{a}A^{a,\mu}\phi ^{b}\phi ^{b}-(A_{\mu}^{a}\phi ^{a})^{2}\right).
+\dfrac{1}{2}\partial _{\mu}\phi ^{a}\partial ^{\mu}\phi ^{a} +g\varepsilon ^{abc}A_{\mu}^{a}\phi ^{b}\partial ^{\mu}\phi ^{c} +\dfrac{g^{2}}{2}\left(A_{\mu}^{a}A^{a,\mu}\phi ^{b}\phi ^{b}-(A_{\mu}^{a}\phi ^{a})^{2}\right).
 \end{align}$$
 
 For a fundamental complex doublet,
 
 $$\begin{align}
-D_{\mu}\phi
-&=\partial _{\mu}\phi-igA_{\mu}^{a}t^{a}\phi,&
-t^{a}&=\dfrac{\tau ^{a}}{2},
+D_{\mu}\phi &=\partial _{\mu}\phi-igA_{\mu}^{a}t^{a}\phi,& t^{a}&=\dfrac{\tau ^{a}}{2},
 \end{align}$$
 
 and
 
 $$\begin{align}
-\mathcal{L}_{\phi}
-&=(D_{\mu}\phi)^{\dagger}D^{\mu}\phi-V(\phi)\\
-&=\partial _{\mu}\phi^{\dagger}\partial ^{\mu}\phi
- +igA_{\mu}^{a}(\phi^{\dagger}t^{a}\partial ^{\mu}\phi-\partial ^{\mu}\phi^{\dagger}t^{a}\phi)
- +g^{2}A_{\mu}^{a}A^{b,\mu}\phi^{\dagger}t^{a}t^{b}\phi-V(\phi)\\
-&=\partial _{\mu}\phi^{\dagger}\partial ^{\mu}\phi
- +\dfrac{ig}{2}A_{\mu}^{a}(\phi^{\dagger}\tau ^{a}\partial ^{\mu}\phi-\partial ^{\mu}\phi^{\dagger}\tau ^{a}\phi)
- +\dfrac{g^{2}}{4}A_{\mu}^{a}A^{a,\mu}\phi^{\dagger}\phi-V(\phi).
+\mathcal{L}_{\phi} &=(D_{\mu}\phi)^{\dagger}D^{\mu}\phi-V(\phi)\\
+&=\partial _{\mu}\phi^{\dagger}\partial ^{\mu}\phi +igA_{\mu}^{a}(\phi^{\dagger}t^{a}\partial ^{\mu}\phi-\partial ^{\mu}\phi^{\dagger}t^{a}\phi) +g^{2}A_{\mu}^{a}A^{b,\mu}\phi^{\dagger}t^{a}t^{b}\phi-V(\phi)\\
+&=\partial _{\mu}\phi^{\dagger}\partial ^{\mu}\phi +\dfrac{ig}{2}A_{\mu}^{a}(\phi^{\dagger}\tau ^{a}\partial ^{\mu}\phi-\partial ^{\mu}\phi^{\dagger}\tau ^{a}\phi) +\dfrac{g^{2}}{4}A_{\mu}^{a}A^{a,\mu}\phi^{\dagger}\phi-V(\phi).
 \end{align}$$
 
 1. The minima obey
 
 $$\begin{align}
-\phi ^{a}\phi ^{a}&=v^{2},&
-v^{2}&=\dfrac{\mu ^{2}}{\lambda}.
+\phi ^{a}\phi ^{a}&=v^{2},& v^{2}&=\dfrac{\mu ^{2}}{\lambda}.
 \end{align}$$
 
 By a gauge rotation one can choose
@@ -895,16 +834,13 @@ $$\begin{align}
 In unitary gauge, $\phi=(0,0,v+h)$. The scalar kinetic term gives
 
 $$\begin{align}
-\dfrac{1}{2}(D_{\mu}\phi ^{a})(D^{\mu}\phi ^{a})
-&\supset
-\dfrac{1}{2}g^{2}v^{2}\left(A_{\mu}^{1}A^{1,\mu}+A_{\mu}^{2}A^{2,\mu}\right).
+\dfrac{1}{2}(D_{\mu}\phi ^{a})(D^{\mu}\phi ^{a}) &\supset \dfrac{1}{2}g^{2}v^{2}\left(A_{\mu}^{1}A^{1,\mu}+A_{\mu}^{2}A^{2,\mu}\right).
 \end{align}$$
 
 Thus
 
 $$\begin{align}
-M_{1}^{2}=M_{2}^{2}&=g^{2}v^{2},&
-M_{3}^{2}&=0.
+M_{1}^{2}=M_{2}^{2}&=g^{2}v^{2},& M_{3}^{2}&=0.
 \end{align}$$
 
 Two Goldstone modes are eaten by $A_{\mu}^{1},A_{\mu}^{2}$, and the radial scalar has
@@ -930,36 +866,26 @@ G^{3}&=\partial _{\mu}A^{3,\mu},
 with
 
 $$\begin{align}
-\mathcal{L}_{\mathrm{gf}}
-&=-\dfrac{1}{2\xi}G^{a}G^{a}.
+\mathcal{L}_{\mathrm{gf}} &=-\dfrac{1}{2\xi}G^{a}G^{a}.
 \end{align}$$
 
 The Faddeev-Popov determinant is
 
 $$\begin{align}
-\Delta_{\mathrm{FP}}[A,\phi]
-&=\det M[A,\phi],&
-M^{ab}(x,y)
-&=\dfrac{\delta G^{a}[A^{\alpha},\phi^{\alpha}](x)}{\delta \alpha ^{b}(y)}\bigg|_{\alpha=0}.
+\Delta_{\mathrm{FP}}[A,\phi] &=\det M[A,\phi],& M^{ab}(x,y) &=\dfrac{\delta G^{a}[A^{\alpha},\phi^{\alpha}](x)}{\delta \alpha ^{b}(y)}\bigg|_{\alpha=0}.
 \end{align}$$
 
 At the quadratic level around the vacuum,
 
 $$\begin{align}
-M^{ij}
-&=\left(-\partial ^{2}-\xi M_{W}^{2}\right)\delta ^{ij},&
-i,j&=1,2,\\
-M^{33}
-&=-\partial ^{2},&
-M^{i3}&=M^{3i}=0,
+M^{ij} &=\left(-\partial ^{2}-\xi M_{W}^{2}\right)\delta ^{ij},& i,j&=1,2,\\
+M^{33} &=-\partial ^{2},& M^{i3}&=M^{3i}=0,
 \end{align}$$
 
 where $M_{W}^{2}=g^{2}v^{2}$. Therefore the broken ghosts have mass squared $\xi M_{W}^{2}$, and the unbroken ghost is massless:
 
 $$\begin{align}
-\mathcal{L}_{\mathrm{gh}}^{(2)}
-&=\bar{c}^{i}(-\partial ^{2}-\xi M_{W}^{2})c^{i}
-+\bar{c}^{3}(-\partial ^{2})c^{3}.
+\mathcal{L}_{\mathrm{gh}}^{(2)} &=\bar{c}^{i}(-\partial ^{2}-\xi M_{W}^{2})c^{i} +\bar{c}^{3}(-\partial ^{2})c^{3}.
 \end{align}$$
 
 二、（20 分）量子色动力学（QCD）
@@ -970,15 +896,13 @@ sol.
 1. Under a local color transformation,
 
 $$\begin{align}
-u(\vec y,0)&\to U(\vec y,0)u(\vec y,0),&
-\bar d(\vec x,0)&\to \bar d(\vec x,0)U^{\dagger}(\vec x,0).
+u(\vec y,0)&\to U(\vec y,0)u(\vec y,0),& \bar d(\vec x,0)&\to \bar d(\vec x,0)U^{\dagger}(\vec x,0).
 \end{align}$$
 
 Hence
 
 $$\begin{align}
-\bar d(\vec x,0)\gamma _{5}u(\vec y,0)
-&\to
+\bar d(\vec x,0)\gamma _{5}u(\vec y,0) &\to
 \bar d(\vec x,0)U^{\dagger}(\vec x,0)\gamma _{5}U(\vec y,0)u(\vec y,0).
 \end{align}$$
 
@@ -987,21 +911,16 @@ For $\vec x\ne \vec y$, $U(\vec x,0)$ and $U(\vec y,0)$ are independent local ga
 A gauge-invariant bilocal operator is obtained by inserting a Wilson line between the two quark fields:
 
 $$\begin{align}
-\phi_{\pi ^{+}}^{\Gamma}(\vec x,\vec y)
-&=
-\langle \Omega|
+\phi_{\pi ^{+}}^{\Gamma}(\vec x,\vec y) &= \langle \Omega|
 \bar d(\vec x,0)\gamma _{5}W_{\Gamma}(\vec x,\vec y;0)u(\vec y,0)
 |\pi ^{+},\vec p=0\rangle,\\
-W_{\Gamma}(\vec x,\vec y;0)
-&=
-P\exp\left(ig\int_{\Gamma:\,\vec y\to \vec x} \mathrm{d}z^{i}\,A_{i}^{a}(z,0)t^{a}\right).
+W_{\Gamma}(\vec x,\vec y;0) &= P\exp\left(ig\int_{\Gamma:\,\vec y\to \vec x} \mathrm{d}z^{i}\,A_{i}^{a}(z,0)t^{a}\right).
 \end{align}$$
 
 Since
 
 $$\begin{align}
-W_{\Gamma}(\vec x,\vec y;0)
-&\to U(\vec x,0)W_{\Gamma}(\vec x,\vec y;0)U^{\dagger}(\vec y,0),
+W_{\Gamma}(\vec x,\vec y;0) &\to U(\vec x,0)W_{\Gamma}(\vec x,\vec y;0)U^{\dagger}(\vec y,0),
 \end{align}$$
 
 the color matrices cancel in the full bilocal operator. On the lattice, $W_{\Gamma}$ is the ordered product of link variables along the chosen spatial path $\Gamma$. The resulting wave function is gauge invariant but depends on the chosen path.
@@ -1009,46 +928,32 @@ the color matrices cancel in the full bilocal operator. On the lattice, $W_{\Gam
 1. For fixed gauge background $A$, the two degenerate flavors give
 
 $$\begin{align}
-\int D\bar\psi D\psi\,
-e^{-\sum_{i=1,2}\bar\psi_iM[A]\psi_i}
-&=[\det M[A]]^{2}.
+\int D\bar\psi D\psi\, e^{-\sum_{i=1,2}\bar\psi_iM[A]\psi_i} &=[\det M[A]]^{2}.
 \end{align}$$
 
 The Grassmann two-point contraction is
 
 $$\begin{align}
-\langle \psi_i(x)\bar\psi_j(y)\rangle_A
-&=\delta _{ij}S_F[A](x,y),&
-S_F[A]&=M^{-1}[A].
+\langle \psi_i(x)\bar\psi_j(y)\rangle_A &=\delta _{ij}S_F[A](x,y),& S_F[A]&=M^{-1}[A].
 \end{align}$$
 
 For
 
 $$\begin{align}
-O(x)&=\bar d(x)\gamma _{5}u(x),&
-O^{\dagger}(y)&=\bar u(y)\gamma _{5}d(y),
+O(x)&=\bar d(x)\gamma _{5}u(x),& O^{\dagger}(y)&=\bar u(y)\gamma _{5}d(y),
 \end{align}$$
 
 the only nonzero Wick contraction connects $u(x)$ with $\bar u(y)$ and $d(y)$ with $\bar d(x)$. Thus, with the sign convention for $O^{\dagger}$ used in the question,
 
 $$\begin{align}
-\langle O(x)O^{\dagger}(y)\rangle_A
-&=
-\operatorname{Tr}_{c,s}\left[
-S_F[A](x,y)\gamma _{5}S_F[A](y,x)\gamma _{5}
-\right],
+\langle O(x)O^{\dagger}(y)\rangle_A &= \operatorname{Tr}_{c,s}\left[ S_F[A](x,y)\gamma _{5}S_F[A](y,x)\gamma _{5} \right],
 \end{align}$$
 
 where the trace is over color and spinor indices. Integrating the fixed-background contraction over gauge fields gives
 
 $$\begin{align}
-\langle O(x)O^{\dagger}(y)\rangle
-&=
-\dfrac{1}{Z[0,0]}
-\int DA\,[\det M[A]]^{2}e^{-S_g[A]}
-\operatorname{Tr}_{c,s}\left[
-S_F[A](x,y)\gamma _{5}S_F[A](y,x)\gamma _{5}
-\right].
+\langle O(x)O^{\dagger}(y)\rangle &= \dfrac{1}{Z[0,0]}
+\int DA\,[\det M[A]]^{2}e^{-S_g[A]} \operatorname{Tr}_{c,s}\left[ S_F[A](x,y)\gamma _{5}S_F[A](y,x)\gamma _{5} \right].
 \end{align}$$
 
 This is the displayed formula with the coordinate arguments suppressed.
@@ -1089,10 +994,8 @@ sol.
 1. The scalar kinetic term and the potential are invariant because the PQ transformation is a global phase rotation and $V$ depends only on $|\phi|^{2}$. The color kinetic term is invariant because the PQ phase commutes with the color $\mathrm{SU}(3)$ generators. For the Yukawa term,
 
 $$\begin{align}
-\bar Q_LQ_R\phi
-&\to
-e^{-i\alpha/2}\bar Q_L\,e^{-i\alpha/2}Q_R\,e^{i\alpha}\phi
-=\bar Q_LQ_R\phi.
+\bar Q_LQ_R\phi &\to
+e^{-i\alpha/2}\bar Q_L\,e^{-i\alpha/2}Q_R\,e^{i\alpha}\phi =\bar Q_LQ_R\phi.
 \end{align}$$
 
 The complex conjugate term is invariant as well. Hence $\mathcal{L}_{\mathrm{KSVZ}}$ has the stated global $\mathrm{U}(1)_{\mathrm{PQ}}$ symmetry.
@@ -1106,9 +1009,7 @@ $$\begin{align}
 so
 
 $$\begin{align}
--(f_Q\bar Q_LQ_R\phi+\mathrm{c.c.})
-&\to
--\dfrac{f_Qf_a}{\sqrt{2}}
+-(f_Q\bar Q_LQ_R\phi+\mathrm{c.c.}) &\to -\dfrac{f_Qf_a}{\sqrt{2}}
 (\bar Q_LQ_R+\bar Q_RQ_L)\\
 &=-m_Q\bar QQ.
 \end{align}$$
@@ -1122,55 +1023,41 @@ m_Q&=\dfrac{f_Qf_a}{\sqrt{2}}.
 1. Substituting the nonlinear parametrization into the Yukawa term gives
 
 $$\begin{align}
--(f_Q\bar Q_LQ_R\phi+\mathrm{c.c.})
-&=
--\dfrac{f_Q}{\sqrt{2}}(\rho+f_a)
+-(f_Q\bar Q_LQ_R\phi+\mathrm{c.c.}) &= -\dfrac{f_Q}{\sqrt{2}}(\rho+f_a)
 \bar Q_LQ_R e^{ia/f_a}+\mathrm{c.c.}
 \end{align}$$
 
 At energies far below $m_{\rho}$, set $\rho=0$ in the leading interaction. Using $m_Q=f_Qf_a/\sqrt{2}$,
 
 $$\begin{align}
-\mathcal{L}_{aQ}
-&=-m_Q\bar Q_LQ_Re^{ia/f_a}+\mathrm{c.c.}
+\mathcal{L}_{aQ} &=-m_Q\bar Q_LQ_Re^{ia/f_a}+\mathrm{c.c.}
 \end{align}$$
 
 1. The chiral rotation
 
 $$\begin{align}
-Q&\to e^{-i\gamma_5a/(2f_a)}Q,&
-Q_L&\to e^{ia/(2f_a)}Q_L,&
-Q_R&\to e^{-ia/(2f_a)}Q_R
+Q&\to e^{-i\gamma_5a/(2f_a)}Q,& Q_L&\to e^{ia/(2f_a)}Q_L,& Q_R&\to e^{-ia/(2f_a)}Q_R
 \end{align}$$
 
 removes the axion phase from the mass term:
 
 $$\begin{align}
-\bar Q_LQ_Re^{ia/f_a}
-&\to
-e^{-ia/(2f_a)}\bar Q_L\,e^{-ia/(2f_a)}Q_R\,e^{ia/f_a}
-=\bar Q_LQ_R.
+\bar Q_LQ_Re^{ia/f_a} &\to
+e^{-ia/(2f_a)}\bar Q_L\,e^{-ia/(2f_a)}Q_R\,e^{ia/f_a} =\bar Q_LQ_R.
 \end{align}$$
 
 Classically this makes $Q$ a mass eigenstate and trades the phase for derivative couplings to the axial current. Quantum mechanically, the fermion measure is not invariant. For one heavy Dirac quark in the fundamental representation of color $\mathrm{SU}(3)$, Fujikawa's Jacobian gives
 
 $$\begin{align}
-\mathcal{D}\bar Q\mathcal{D}Q
-&\to
-\mathcal{D}\bar Q\mathcal{D}Q
-\exp\left[
-i\int \mathrm{d}^{4}x\,
-\dfrac{g^{2}}{32\pi^{2}}\dfrac{a}{f_a}
-F_{\mu\nu}^{a}\tilde F^{a,\mu\nu}
-\right].
+\mathcal{D}\bar Q\mathcal{D}Q &\to \mathcal{D}\bar Q\mathcal{D}Q
+\exp\left[ i\int \mathrm{d}^{4}x\, \dfrac{g^{2}}{32\pi^{2}}\dfrac{a}{f_a}
+F_{\mu\nu}^{a}\tilde F^{a,\mu\nu} \right].
 \end{align}$$
 
 Thus the low-energy effective Lagrangian obtains
 
 $$\begin{align}
-\delta\mathcal L_{\mathrm{KSVZ}}
-&=
-\dfrac{g^{2}}{32\pi^{2}}\dfrac{a}{f_a}
+\delta\mathcal L_{\mathrm{KSVZ}} &= \dfrac{g^{2}}{32\pi^{2}}\dfrac{a}{f_a}
 F_{\mu\nu}^{a}\tilde F^{a,\mu\nu}.
 \end{align}$$
 
@@ -1230,67 +1117,44 @@ All required counterterms have the same form as terms already present in the Lag
 1. Introduce
 
 $$\begin{align}
-\phi_0&=Z_{\phi}^{1/2}\phi,&
-\psi_0&=Z_{\psi}^{1/2}\psi.
+\phi_0&=Z_{\phi}^{1/2}\phi,& \psi_0&=Z_{\psi}^{1/2}\psi.
 \end{align}$$
 
 Write
 
 $$\begin{align}
-\mathcal{L}
-&=\mathcal{L}_{r}+\delta\mathcal{L},
+\mathcal{L} &=\mathcal{L}_{r}+\delta\mathcal{L},
 \end{align}$$
 
 where
 
 $$\begin{align}
-\mathcal{L}_{r}
-&=
-\dfrac{1}{2}(\partial_{\mu}\phi)^{2}
--\dfrac{1}{2}m^{2}\phi^{2}
-+\bar\psi(i/\!\!\!{\partial}-M)\psi
--ig\bar\psi\gamma^{5}\psi\phi
--\dfrac{\lambda}{4!}\phi^{4},
+\mathcal{L}_{r} &= \dfrac{1}{2}(\partial_{\mu}\phi)^{2} -\dfrac{1}{2}m^{2}\phi^{2} +\bar\psi(i/\!\!\!{\partial}-M)\psi -ig\bar\psi\gamma^{5}\psi\phi -\dfrac{\lambda}{4!}\phi^{4},
 \end{align}$$
 
 and
 
 $$\begin{align}
-\delta\mathcal{L}
-&=
-\dfrac{1}{2}\delta Z_{\phi}(\partial_{\mu}\phi)^{2}
--\dfrac{1}{2}\delta m^{2}\phi^{2}
-+\delta Z_{\psi}\bar\psi i/\!\!\!{\partial}\psi
--\delta M\bar\psi\psi\\
-&\quad
--i\delta g\,\bar\psi\gamma^{5}\psi\phi
--\dfrac{\delta\lambda}{4!}\phi^{4}.
+\delta\mathcal{L} &= \dfrac{1}{2}\delta Z_{\phi}(\partial_{\mu}\phi)^{2} -\dfrac{1}{2}\delta m^{2}\phi^{2} +\delta Z_{\psi}\bar\psi i/\!\!\!{\partial}\psi -\delta M\bar\psi\psi\\
+&\quad -i\delta g\,\bar\psi\gamma^{5}\psi\phi -\dfrac{\delta\lambda}{4!}\phi^{4}.
 \end{align}$$
 
 The renormalized Feynman rules are
 
 $$\begin{align}
-\text{scalar propagator:}\qquad
-&\dfrac{i}{p^{2}-m^{2}+i\epsilon},\\
-\text{fermion propagator:}\qquad
-&\dfrac{i(/\!\!\! p+M)}{p^{2}-M^{2}+i\epsilon},\\
-\text{pseudoscalar Yukawa vertex:}\qquad
-&g\gamma^{5},\\
-\text{four-scalar vertex:}\qquad
-&-i\lambda.
+\text{scalar propagator:}\qquad &\dfrac{i}{p^{2}-m^{2}+i\epsilon},\\
+\text{fermion propagator:}\qquad &\dfrac{i(/\!\!\! p+M)}{p^{2}-M^{2}+i\epsilon},\\
+\text{pseudoscalar Yukawa vertex:}\qquad &g\gamma^{5},\\
+\text{four-scalar vertex:}\qquad &-i\lambda.
 \end{align}$$
 
 The counterterm insertions are
 
 $$\begin{align}
-\phi\phi:\qquad
-&i(\delta Z_{\phi}p^{2}-\delta m^{2}),\\
-\psi\bar\psi:\qquad
-&i(\delta Z_{\psi}/\!\!\! p-\delta M),\\
-\bar\psi\psi\phi:\qquad
-&\delta g\,\gamma^{5},\\
-\phi^{4}:\qquad
-&-i\delta\lambda.
+\phi\phi:\qquad &i(\delta Z_{\phi}p^{2}-\delta m^{2}),\\
+\psi\bar\psi:\qquad &i(\delta Z_{\psi}/\!\!\! p-\delta M),\\
+\bar\psi\psi\phi:\qquad &\delta g\,\gamma^{5},\\
+\phi^{4}:\qquad &-i\delta\lambda.
 \end{align}$$
 
 All momenta are taken incoming. If one chooses a convention where the Yukawa vertex is written as $-ig\gamma^{5}$, the same convention must be used for the counterterm vertex; physical amplitudes are unchanged.
@@ -1298,15 +1162,13 @@ All momenta are taken incoming. If one chooses a convention where the Yukawa ver
 1. Fourier transforming the Ward identity and amputating the external fermion propagators gives the Ward-Takahashi identity for the proper current vertex:
 
 $$\begin{align}
-k_{\mu}\Gamma_{0}^{\mu}(k;p+k,p)
-&=S_{0}^{-1}(p+k)-S_{0}^{-1}(p).
+k_{\mu}\Gamma_{0}^{\mu}(k;p+k,p) &=S_{0}^{-1}(p+k)-S_{0}^{-1}(p).
 \end{align}$$
 
 Taking $k\to0$ gives
 
 $$\begin{align}
-\Gamma_{0}^{\mu}(0;p,p)
-&=\dfrac{\partial S_{0}^{-1}(p)}{\partial p_{\mu}}.
+\Gamma_{0}^{\mu}(0;p,p) &=\dfrac{\partial S_{0}^{-1}(p)}{\partial p_{\mu}}.
 \end{align}$$
 
 Therefore the divergent coefficient of the current vertex is the same as the divergent coefficient of the fermion kinetic term. If the current vertex is renormalized by
@@ -1330,25 +1192,19 @@ j_{0}^{\mu}&=Z_{J}j^{\mu}.
 Since $G_{2}^{0}=Z_{2}G_{2}$, the bare three-point function can be written as
 
 $$\begin{align}
-G_{3}^{0,\mu}
-&=G_{2}^{0}\Gamma_{0}^{\mu}G_{2}^{0}
-=Z_{2}^{2}G_{2}\Gamma_{0}^{\mu}G_{2}.
+G_{3}^{0,\mu} &=G_{2}^{0}\Gamma_{0}^{\mu}G_{2}^{0} =Z_{2}^{2}G_{2}\Gamma_{0}^{\mu}G_{2}.
 \end{align}$$
 
 The renormalized three-point function is
 
 $$\begin{align}
-G_{3}^{\mu}
-&=Z_{2}^{-1}Z_{J}^{-1}G_{3}^{0,\mu}
-=Z_{2}Z_{J}^{-1}G_{2}\Gamma_{0}^{\mu}G_{2}.
+G_{3}^{\mu} &=Z_{2}^{-1}Z_{J}^{-1}G_{3}^{0,\mu} =Z_{2}Z_{J}^{-1}G_{2}\Gamma_{0}^{\mu}G_{2}.
 \end{align}$$
 
 But by definition it must also be
 
 $$\begin{align}
-G_{3}^{\mu}
-&=G_{2}\Gamma^{\mu}G_{2}
-=Z_{1}G_{2}\Gamma_{0}^{\mu}G_{2}.
+G_{3}^{\mu} &=G_{2}\Gamma^{\mu}G_{2} =Z_{1}G_{2}\Gamma_{0}^{\mu}G_{2}.
 \end{align}$$
 
 Thus

@@ -59,23 +59,20 @@ e^{-x\hat a^\dagger}\hat a e^{x\hat a^\dagger} = \hat a + x. \tag{2}
 1. 请利用 Baker-Campbell-Hausdorff 公式证明相干态 $|\alpha\rangle$ 的两种表示等价，即证明：
 
 $$\begin{align}
-\exp\left(-\frac{|\alpha|^2}{2}\right)\exp(\alpha a^\dagger)|0\rangle
-   = \exp(\alpha a^\dagger - \alpha^* a)|0\rangle . \tag{1}
+\exp\left(-\frac{|\alpha|^2}{2}\right)\exp(\alpha a^\dagger)|0\rangle = \exp(\alpha a^\dagger - \alpha^* a)|0\rangle . \tag{1}
 \end{align}$$
 
 1. 定义坐标算符 $q$ 和动量算符 $p$，
 
 $$\begin{align}
-q = \sqrt{\frac{1}{2m\omega}}(a+a^\dagger),
-   \qquad
+q = \sqrt{\frac{1}{2m\omega}}(a+a^\dagger), \qquad
    p = -i\sqrt{\frac{m\omega}{2}}(a-a^\dagger). \tag{2}
 \end{align}$$
 
    请证明相干态 $|\alpha\rangle$ 的坐标和动量方差分别为：
 
 $$\begin{align}
-\Delta q = \frac{1}{2m\omega},
-   \qquad
+\Delta q = \frac{1}{2m\omega}, \qquad
    \Delta p = \frac{m\omega}{2}. \tag{3}
 \end{align}$$
 
@@ -116,8 +113,7 @@ Q(\alpha) = \frac{1}{\pi}\langle \alpha|\rho|\alpha\rangle . \tag{7}
 Wigner 函数 $W(\alpha,\alpha^*)$ 可用于直接计算算符的对称序（Weyl 序）平均值。为了计算某个一般算符 $F(a,a^\dagger)$ 的期望值，我们需要找到一个对应的 c-number 函数 $f_s(\alpha,\alpha^*)$，使得：
 
 $$\begin{align}
-\langle F(a,a^\dagger)\rangle
-= \int d^2\alpha\, f_s(\alpha,\alpha^*) W(\alpha,\alpha^*) . \tag{8}
+\langle F(a,a^\dagger)\rangle = \int d^2\alpha\, f_s(\alpha,\alpha^*) W(\alpha,\alpha^*) . \tag{8}
 \end{align}$$
 
 请推导并找到光子数算符 $F(a,a^\dagger)=a^\dagger a$ 对应的 c-number 函数 $f_s(\alpha,\alpha^*)$。
@@ -152,8 +148,7 @@ i\frac{d}{dt}|\Psi(t)\rangle=\hat H(t)|\Psi(t)\rangle .
 对于混合态，系统可由密度矩阵描述：
 
 $$\begin{align}
-\hat\rho(t)=\sum_i p_i |\phi_i(t)\rangle\langle \phi_i(t)| ,
-\tag{2}
+\hat\rho(t)=\sum_i p_i |\phi_i(t)\rangle\langle \phi_i(t)| , \tag{2}
 \end{align}$$
 
 其中 $p_i\geq 0$ 且 $\sum_i p_i=1$，并假设每个纯态 $|\phi_i(t)\rangle$ 均满足薛定谔方程演化。
@@ -182,9 +177,7 @@ $$\begin{align}
 对于任意系统算符 $\hat A_\alpha$，定义其频率分量
 
 $$\begin{align}
-\hat A_\alpha(\omega)
-=
-\sum_{E_{\varepsilon'}-E_\varepsilon=\omega}
+\hat A_\alpha(\omega) = \sum_{E_{\varepsilon'}-E_\varepsilon=\omega}
 \hat P(\varepsilon)\hat A_\alpha \hat P(\varepsilon') .
 \tag{4}
 \end{align}$$
@@ -192,10 +185,7 @@ $$\begin{align}
 请证明：
 
 $$\begin{align}
-[\hat H_S,\hat A_\alpha(\omega)]
-=
--\omega \hat A_\alpha(\omega),
-\tag{5}
+[\hat H_S,\hat A_\alpha(\omega)] = -\omega \hat A_\alpha(\omega), \tag{5}
 \end{align}$$
 
 $$\begin{align}
@@ -210,20 +200,7 @@ $$\begin{align}
 考虑一个与谐振子热库耦合的二能级系统，其约化密度矩阵满足主方程
 
 $$\begin{align}
-\frac{d}{dt}\hat\rho(t)
-=
-\Gamma_\downarrow
-\left(
-\hat\sigma_-\hat\rho(t)\hat\sigma_+
--\frac12\{\hat\sigma_+\hat\sigma_-,\hat\rho(t)\}
-\right)
-+
-\Gamma_\uparrow
-\left(
-\hat\sigma_+\hat\rho(t)\hat\sigma_-
--\frac12\{\hat\sigma_-\hat\sigma_+,\hat\rho(t)\}
-\right),
-\tag{7}
+\frac{d}{dt}\hat\rho(t) = \Gamma_\downarrow \left( \hat\sigma_-\hat\rho(t)\hat\sigma_+ -\frac12\{\hat\sigma_+\hat\sigma_-,\hat\rho(t)\} \right) + \Gamma_\uparrow \left( \hat\sigma_+\hat\rho(t)\hat\sigma_- -\frac12\{\hat\sigma_-\hat\sigma_+,\hat\rho(t)\} \right), \tag{7}
 \end{align}$$
 
 其中 $\hat\sigma_\pm$ 为二能级系统的升降算符。
@@ -231,37 +208,26 @@ $$\begin{align}
 定义布洛赫矢量分量
 
 $$\begin{align}
-S_\pm(t)=\mathrm{Tr}\big(\hat\rho(t)\hat\sigma_\pm\big),
-\qquad
+S_\pm(t)=\mathrm{Tr}\big(\hat\rho(t)\hat\sigma_\pm\big), \qquad
 S_z(t)=\mathrm{Tr}\big(\hat\rho(t)\hat\sigma_z\big),
 \end{align}$$
 
 利用泡利矩阵关系
 
 $$\begin{align}
-\hat\sigma_z\hat\sigma_\pm=\pm \hat\sigma_\pm,
-\qquad
-\hat\sigma_\pm\hat\sigma_z=\mp \hat\sigma_\pm,
-\qquad
-\hat\sigma_\pm\hat\sigma_\mp=\frac12(1\pm \hat\sigma_z),
-\tag{8}
+\hat\sigma_z\hat\sigma_\pm=\pm \hat\sigma_\pm, \qquad
+\hat\sigma_\pm\hat\sigma_z=\mp \hat\sigma_\pm, \qquad
+\hat\sigma_\pm\hat\sigma_\mp=\frac12(1\pm \hat\sigma_z), \tag{8}
 \end{align}$$
 
 推导以下方程：
 
 $$\begin{align}
-\frac{d}{dt}S_-(t)
-=
--\frac{\Gamma_\uparrow+\Gamma_\downarrow}{2}S_-(t),
-\tag{9}
+\frac{d}{dt}S_-(t) = -\frac{\Gamma_\uparrow+\Gamma_\downarrow}{2}S_-(t), \tag{9}
 \end{align}$$
 
 $$\begin{align}
-\frac{d}{dt}S_z(t)
-=
--(\Gamma_\uparrow+\Gamma_\downarrow)S_z(t)
-+
-(\Gamma_\uparrow-\Gamma_\downarrow).
+\frac{d}{dt}S_z(t) = -(\Gamma_\uparrow+\Gamma_\downarrow)S_z(t) + (\Gamma_\uparrow-\Gamma_\downarrow).
 \tag{10}
 \end{align}$$
 
@@ -270,20 +236,7 @@ $$\begin{align}
 考虑一个与热库耦合的光学腔中的单模，其约化密度矩阵满足主方程
 
 $$\begin{align}
-\frac{d}{dt}\hat\rho(t)
-=
-\Gamma_\downarrow
-\left(
-\hat a\hat\rho \hat a^\dagger
--\frac12\{\hat a^\dagger \hat a,\hat\rho\}
-\right)
-+
-\Gamma_\uparrow
-\left(
-\hat a^\dagger \hat\rho \hat a
--\frac12\{\hat a\hat a^\dagger,\hat\rho\}
-\right),
-\tag{11}
+\frac{d}{dt}\hat\rho(t) = \Gamma_\downarrow \left( \hat a\hat\rho \hat a^\dagger -\frac12\{\hat a^\dagger \hat a,\hat\rho\} \right) + \Gamma_\uparrow \left( \hat a^\dagger \hat\rho \hat a -\frac12\{\hat a\hat a^\dagger,\hat\rho\} \right), \tag{11}
 \end{align}$$
 
 其中 $\hat a,\hat a^\dagger$ 为腔场湮灭与产生算符。
@@ -305,17 +258,7 @@ $$\begin{align}
 考虑两个频率同为 $\omega_0$ 的玻色子谐振子 $a,b$（如微腔模式或机械振子），它们之间无直接相互作用，但同时耦合到一个一维公共玻色子热库中。谐振子 $a$ 的位置为 $x_a=0$，谐振子 $b$ 的位置为 $x_b=L$。在相互作用绘景与旋转波近似下，总相互作用哈密顿量为
 
 $$\begin{align}
-\hat V(t)
-=
-\sum_k
-\left(
-g_k \hat a e^{-i\omega_0 t}\hat c_k^\dagger e^{i\omega_k t}
-+
-g_k \hat b e^{-i\omega_0 t}\hat c_k^\dagger e^{i\omega_k t}e^{ikL}
-+
-\mathrm{h.c.}
-\right),
-\tag{12}
+\hat V(t) = \sum_k \left( g_k \hat a e^{-i\omega_0 t}\hat c_k^\dagger e^{i\omega_k t} + g_k \hat b e^{-i\omega_0 t}\hat c_k^\dagger e^{i\omega_k t}e^{ikL} + \mathrm{h.c.} \right), \tag{12}
 \end{align}$$
 
 其中热库处于零温真空态。
@@ -329,14 +272,7 @@ $$\begin{align}
    的实部和虚部，将其写为以下形式：
 
 $$\begin{align}
-\frac{d\hat\rho_S}{dt}
-   =
-   -i[\hat H_{\mathrm{eff}},\hat\rho_S]
-   +
-   \mathcal L_{\mathrm{local}}(\hat\rho_S)
-   +
-   \mathcal L_{\mathrm{coop}}(\hat\rho_S),
-   \tag{13}
+\frac{d\hat\rho_S}{dt} = -i[\hat H_{\mathrm{eff}},\hat\rho_S] + \mathcal L_{\mathrm{local}}(\hat\rho_S) + \mathcal L_{\mathrm{coop}}(\hat\rho_S), \tag{13}
 \end{align}$$
 
    其中 $\mathcal L_{\mathrm{local}}(\hat\rho_S)$ 是每个谐振子本身的局域耗散算符。请显式写出环境诱导的相干耦合哈密顿量 $\hat H_{\mathrm{eff}}$ 和协同耗散项 $\mathcal L_{\mathrm{coop}}(\hat\rho_S)$，并讨论 $L\to 0$ 和 $L=\lambda_0/4$（或四分之一波长的奇数倍）两种极限下的耦合强度。
@@ -352,40 +288,19 @@ $$\begin{align}
 考虑一个受经典单色场驱动的二能级原子。在以驱动频率 $\omega_d$ 旋转的参考系中，并作旋波近似（RWA）后，该系统的有效哈密顿量为：
 
 $$\begin{align}
-\hat H_0
-=
-\frac{\delta\omega}{2}\hat\sigma_z
-+
-\frac{A}{2}\hat\sigma_x ,
-\tag{1}
+\hat H_0 = \frac{\delta\omega}{2}\hat\sigma_z + \frac{A}{2}\hat\sigma_x , \tag{1}
 \end{align}$$
 
 其中 $\delta\omega=\omega_a-\omega_d$ 为失谐量，$A$ 为驱动场的振幅。系统与热库环境耦合导致耗散，其动力学由完整的 Lindblad 主方程描述：
 
 $$\begin{align}
-\frac{d}{dt}\hat\rho(t)
-=
--i[\hat H_0,\hat\rho(t)]
-+
-\Gamma_\downarrow
-\left(
-\hat\sigma_-\hat\rho\hat\sigma_+
--\frac12\{\hat\sigma_+\hat\sigma_-,\hat\rho\}
-\right)
-+
-\Gamma_\uparrow
-\left(
-\hat\sigma_+\hat\rho\hat\sigma_-
--\frac12\{\hat\sigma_-\hat\sigma_+,\hat\rho\}
-\right),
-\tag{2}
+\frac{d}{dt}\hat\rho(t) = -i[\hat H_0,\hat\rho(t)] + \Gamma_\downarrow \left( \hat\sigma_-\hat\rho\hat\sigma_+ -\frac12\{\hat\sigma_+\hat\sigma_-,\hat\rho\} \right) + \Gamma_\uparrow \left( \hat\sigma_+\hat\rho\hat\sigma_- -\frac12\{\hat\sigma_-\hat\sigma_+,\hat\rho\} \right), \tag{2}
 \end{align}$$
 
 其中 $\hat\sigma_\pm$ 为原子的升降算符，由热库引起的向上和向下跃迁速率分别为
 
 $$\begin{align}
-\Gamma_\uparrow=\Gamma n_{\mathrm{th}},
-\qquad
+\Gamma_\uparrow=\Gamma n_{\mathrm{th}}, \qquad
 \Gamma_\downarrow=\Gamma(n_{\mathrm{th}}+1),
 \end{align}$$
 
@@ -398,14 +313,9 @@ $$\begin{align}
 1. 请推导布洛赫矢量 $z$ 分量的运动方程（光学布洛赫方程之一）：
 
 $$\begin{align}
-\frac{d}{dt}\langle \hat\sigma_z(t)\rangle
-=
-A\langle \hat\sigma_y(t)\rangle
--
-\Gamma_t\langle \hat\sigma_z(t)\rangle
--
-\Gamma .
+\frac{d}{dt}\langle \hat\sigma_z(t)\rangle = A\langle \hat\sigma_y(t)\rangle - \Gamma_t\langle \hat\sigma_z(t)\rangle - \Gamma .
 \tag{3}
+\end{align}
 \end{align}$$
 
 1. 求解布洛赫矢量 $z$ 分量的稳态解 $\langle \hat\sigma_z\rangle_s$。
@@ -415,29 +325,21 @@ A\langle \hat\sigma_y(t)\rangle
 承接上题，在零温（$n_{\mathrm{th}}=0\Rightarrow \Gamma_t=\Gamma$）且严格共振（$\delta\omega=0$）的情形下，光学布洛赫方程可写为紧凑的矩阵形式
 
 $$\begin{align}
-\frac{d}{dt}\langle \hat{\boldsymbol\sigma}(t)\rangle
-=
-G\langle \hat{\boldsymbol\sigma}(t)\rangle+\beta .
+\frac{d}{dt}\langle \hat{\boldsymbol\sigma}(t)\rangle = G\langle \hat{\boldsymbol\sigma}(t)\rangle+\beta .
 \tag{4}
 \end{align}$$
 
 为了求解布洛赫矢量的含时演化，定义算符
 
 $$\begin{align}
-\hat{\boldsymbol\sigma}'(t)
-=
-\hat{\boldsymbol\sigma}(t)
--
-\langle \hat{\boldsymbol\sigma}\rangle_s
+\hat{\boldsymbol\sigma}'(t) = \hat{\boldsymbol\sigma}(t) - \langle \hat{\boldsymbol\sigma}\rangle_s
+\end{align}
 \end{align}$$
 
 以表示布洛赫矢量相对稳态的偏移量，其演化方程可简化为齐次方程
 
 $$\begin{align}
-\frac{d}{dt}\langle \hat{\boldsymbol\sigma}'(t)\rangle
-=
-G\langle \hat{\boldsymbol\sigma}'(t)\rangle ,
-\tag{5}
+\frac{d}{dt}\langle \hat{\boldsymbol\sigma}'(t)\rangle = G\langle \hat{\boldsymbol\sigma}'(t)\rangle , \tag{5}
 \end{align}$$
 
 其中演化矩阵为：
@@ -455,8 +357,7 @@ $$
 已知矩阵 $G$ 的本征值为
 
 $$\begin{align}
-\lambda_1=-\Gamma/2,
-\qquad
+\lambda_1=-\Gamma/2, \qquad
 \lambda_{2,3}=-3\Gamma/4\pm i\mu,
 \end{align}$$
 
@@ -469,42 +370,17 @@ $$\begin{align}
 1. 请基于上述矩阵形式，推导各分量期望值的含时演化解析解：
 
 $$\begin{align}
-\langle \hat\sigma_x(t)\rangle
-=
-\langle \hat\sigma_x(0)\rangle e^{-\frac{\Gamma}{2}t},
-\tag{7}
+\langle \hat\sigma_x(t)\rangle = \langle \hat\sigma_x(0)\rangle e^{-\frac{\Gamma}{2}t}, \tag{7}
 \end{align}$$
 
 $$\begin{align}
-\langle \hat\sigma_y(t)\rangle
-=
-\langle \hat\sigma_y^s\rangle
-+
-\left[
-\langle \hat\sigma_y'(0)\rangle
-\left(
-\cos\mu t+\frac{\Gamma}{4\mu}\sin\mu t
-\right)
--
-\frac{A}{\mu}\langle \hat\sigma_z'(0)\rangle\sin\mu t
-\right]
-e^{-\frac{3\Gamma}{4}t},
-\tag{8}
+\langle \hat\sigma_y(t)\rangle = \langle \hat\sigma_y^s\rangle + \left[ \langle \hat\sigma_y'(0)\rangle \left( \cos\mu t+\frac{\Gamma}{4\mu}\sin\mu t \right) - \frac{A}{\mu}\langle \hat\sigma_z'(0)\rangle\sin\mu t \right]
+e^{-\frac{3\Gamma}{4}t}, \tag{8}
+\end{align}
 \end{align}$$
 
 $$\begin{align}
-\langle \hat\sigma_z(t)\rangle
-=
-\langle \hat\sigma_z^s\rangle
-+
-\left[
-\langle \hat\sigma_z'(0)\rangle
-\left(
-\cos\mu t-\frac{\Gamma}{4\mu}\sin\mu t
-\right)
-+
-\frac{A}{\mu}\langle \hat\sigma_y'(0)\rangle\sin\mu t
-\right]
+\langle \hat\sigma_z(t)\rangle = \langle \hat\sigma_z^s\rangle + \left[ \langle \hat\sigma_z'(0)\rangle \left( \cos\mu t-\frac{\Gamma}{4\mu}\sin\mu t \right) + \frac{A}{\mu}\langle \hat\sigma_y'(0)\rangle\sin\mu t \right]
 e^{-\frac{3\Gamma}{4}t}.
 \tag{9}
 \end{align}$$
@@ -512,13 +388,8 @@ e^{-\frac{3\Gamma}{4}t}.
 1. 假设原子的初始状态为激发态，即
 
 $$\begin{align}
-\langle \hat\sigma_z(0)\rangle=1,
-\qquad
-\langle \hat\sigma_x(0)\rangle
-=
-\langle \hat\sigma_y(0)\rangle
-=
-0,
+\langle \hat\sigma_z(0)\rangle=1, \qquad
+\langle \hat\sigma_x(0)\rangle = \langle \hat\sigma_y(0)\rangle = 0,
 \end{align}$$
 
 请分别针对欠阻尼（$\Gamma/A<4$）和过阻尼（$\Gamma/A>4$）两种物理情形，在布洛赫球面上画出布洛赫矢量随时间演化的轨迹。
@@ -532,10 +403,7 @@ $$\begin{align}
 对于一个阈值以下的非简并光学参量振荡器（NDOPO），在相互作用绘景下，其哈密顿量可以表示为：
 
 $$\begin{align}
-\hat H_0
-=
-i\xi(\hat a^\dagger \hat b^\dagger-\hat a\hat b),
-\tag{1}
+\hat H_0 = i\xi(\hat a^\dagger \hat b^\dagger-\hat a\hat b), \tag{1}
 \end{align}$$
 
 其中 $\xi>0$ 表示有效的非线性耦合率（正比于泵浦光强）。为简单起见，假设这两个腔模式（$\hat a$ 与 $\hat b$）具有相同的腔衰减率 $\gamma$，并且独立地与真空热库耦合，它们对应的输入噪声算符分别为 $\hat a_{\mathrm{in}}(t)$ 和 $\hat b_{\mathrm{in}}(t)$。
@@ -544,13 +412,8 @@ i\xi(\hat a^\dagger \hat b^\dagger-\hat a\hat b),
 1. 在物理学中处理对称耦合系统的一个经典方法是引入“集体模式”。定义一组新的正交玻色算符：
 
 $$\begin{align}
-\hat c_+
-=
-\frac{\hat a+\hat b}{\sqrt2},
-\qquad
-\hat c_-
-=
-\frac{\hat a-\hat b}{\sqrt2}.
+\hat c_+ = \frac{\hat a+\hat b}{\sqrt2}, \qquad
+\hat c_- = \frac{\hat a-\hat b}{\sqrt2}.
 \tag{2}
 \end{align}$$
 
@@ -559,21 +422,14 @@ $$\begin{align}
 1. 为了验证信号光与闲置光之间的量子非局域关联，定义双模的联合正交振幅算符（EPR 型算符）：
 
 $$\begin{align}
-\hat X_\pm
-   =
-   \frac1{\sqrt2}(\hat X_a\pm \hat X_b),
-   \qquad
-   \hat Y_\pm
-   =
-   \frac1{\sqrt2}(\hat Y_a\pm \hat Y_b),
-   \tag{3}
+\hat X_\pm = \frac1{\sqrt2}(\hat X_a\pm \hat X_b), \qquad
+   \hat Y_\pm = \frac1{\sqrt2}(\hat Y_a\pm \hat Y_b), \tag{3}
 \end{align}$$
 
    其中
 
 $$\begin{align}
-\hat X_a=\hat a+\hat a^\dagger,
-   \qquad
+\hat X_a=\hat a+\hat a^\dagger, \qquad
    \hat Y_a=-i(\hat a-\hat a^\dagger),
 \end{align}$$
 
@@ -584,8 +440,7 @@ $$\begin{align}
    （b）证明在阈值以下的任意频率（$\xi<\gamma/2$），始终满足
 
 $$\begin{align}
-S_{X_+}(\omega)<1,
-   \qquad
+S_{X_+}(\omega)<1, \qquad
    S_{Y_-}(\omega)<1.
 \end{align}$$
 
@@ -596,27 +451,21 @@ S_{X_+}(\omega)<1,
 在开放量子系统理论中，对于与热库相互作用的光学谐振腔，腔外远场算符与腔内场算符满足如下输入-输出关系：
 
 $$\begin{align}
-\hat a_{\mathrm{out}}(t)-\hat a_{\mathrm{in}}(t)
-=
-\sqrt\gamma \hat a(t).
+\hat a_{\mathrm{out}}(t)-\hat a_{\mathrm{in}}(t) = \sqrt\gamma \hat a(t).
 \tag{4}
 \end{align}$$
 
 在频域中，稳态下的输入算符 $\hat F_{\mathrm{in}}$ 和输出算符 $\hat F_{\mathrm{out}}$ 可以通过散射矩阵（scattering matrix）相联系，其傅里叶变换满足如下线性关系：
 
 $$\begin{align}
-\hat F_{\mathrm{out}}(\omega)
-=
-S(\omega)\hat F_{\mathrm{in}}(\omega).
+\hat F_{\mathrm{out}}(\omega) = S(\omega)\hat F_{\mathrm{in}}(\omega).
 \tag{5}
 \end{align}$$
 
 其中 $\hat F(\omega)$ 是算符 $\hat F(t)$ 在稳态下的频域形式。对于单一模式的情形，散射矩阵退化为一个标量函数 $S(\omega)$，满足：
 
 $$\begin{align}
-\hat a_{\mathrm{out}}(\omega)
-=
-S(\omega)\hat a_{\mathrm{in}}(\omega).
+\hat a_{\mathrm{out}}(\omega) = S(\omega)\hat a_{\mathrm{in}}(\omega).
 \tag{6}
 \end{align}$$
 
@@ -629,9 +478,7 @@ $$\begin{align}
 假设腔场以耗散率 $\gamma$ 与外部环境耦合，满足标准的时域输入-输出关系
 
 $$\begin{align}
-\hat a_{\mathrm{out}}(t)-\hat a_{\mathrm{in}}(t)
-=
-\sqrt\gamma \hat a(t).
+\hat a_{\mathrm{out}}(t)-\hat a_{\mathrm{in}}(t) = \sqrt\gamma \hat a(t).
 \end{align}$$
 
 请推导并计算频域下该自由谐振子的散射矩阵 $S(\omega)$。
@@ -647,8 +494,7 @@ $$\begin{align}
 由 $N=a^\dagger a$ 和 $[a,a^\dagger]=1$ 得
 
 $$\begin{align}
-[N,a]=[a^\dagger a,a]=a^\dagger[a,a]+[a^\dagger,a]a=-a,
-\qquad
+[N,a]=[a^\dagger a,a]=a^\dagger[a,a]+[a^\dagger,a]a=-a, \qquad
 [N,a^\dagger]=a^\dagger .
 \end{align}$$
 
@@ -712,8 +558,7 @@ $$\begin{align}
 
 $$\begin{align}
 a|n\rangle=\sqrt n\,|n-1\rangle,\qquad
-a^\dagger|n\rangle=\sqrt{n+1}\,|n+1\rangle,
-\qquad
+a^\dagger|n\rangle=\sqrt{n+1}\,|n+1\rangle, \qquad
 N|n\rangle=n|n\rangle .
 \end{align}$$
 
@@ -788,15 +633,13 @@ $$\begin{align}
 是 c-number，并与 $A,B$ 对易。BCH 公式给出
 
 $$\begin{align}
-e^{A+B}=e^{-\frac12[A,B]}e^Ae^B
-=e^{-|\alpha|^2/2}e^{\alpha a^\dagger}e^{-\alpha^*a}.
+e^{A+B}=e^{-\frac12[A,B]}e^Ae^B =e^{-|\alpha|^2/2}e^{\alpha a^\dagger}e^{-\alpha^*a}.
 \end{align}$$
 
 由于 $a|0\rangle=0$，有 $e^{-\alpha^*a}|0\rangle=|0\rangle$，所以
 
 $$\begin{align}
-\exp(\alpha a^\dagger-\alpha^*a)|0\rangle
-=e^{-|\alpha|^2/2}e^{\alpha a^\dagger}|0\rangle.
+\exp(\alpha a^\dagger-\alpha^*a)|0\rangle =e^{-|\alpha|^2/2}e^{\alpha a^\dagger}|0\rangle.
 \end{align}$$
 
 这就是式 (1)。
@@ -827,9 +670,7 @@ $$\begin{align}
 而
 
 $$\begin{align}
-\langle q^2\rangle
-=\frac{1}{2m\omega}\langle a^2+a^{\dagger 2}+aa^\dagger+a^\dagger a\rangle
-=\frac{(\alpha+\alpha^*)^2+1}{2m\omega}.
+\langle q^2\rangle =\frac{1}{2m\omega}\langle a^2+a^{\dagger 2}+aa^\dagger+a^\dagger a\rangle =\frac{(\alpha+\alpha^*)^2+1}{2m\omega}.
 \end{align}$$
 
 所以
@@ -847,8 +688,7 @@ $$\begin{align}
 且
 
 $$\begin{align}
-\langle p^2\rangle
-=-\frac{m\omega}{2}\langle a^2+a^{\dagger 2}-aa^\dagger-a^\dagger a\rangle,
+\langle p^2\rangle =-\frac{m\omega}{2}\langle a^2+a^{\dagger 2}-aa^\dagger-a^\dagger a\rangle,
 \end{align}$$
 
 于是
@@ -890,8 +730,7 @@ B(r)=S^\dagger(\xi)a^\dagger S(\xi).
 由于 $S=e^{rG}$ 且 $G^\dagger=-G$，
 
 $$\begin{align}
-\frac{dA}{dr}=S^\dagger[a,G]S,\qquad
-\frac{dB}{dr}=S^\dagger[a^\dagger,G]S.
+\frac{dA}{dr}=S^\dagger[a,G]S,\qquad \frac{dB}{dr}=S^\dagger[a^\dagger,G]S.
 \end{align}$$
 
 直接计算
@@ -904,8 +743,7 @@ $$\begin{align}
 因此
 
 $$\begin{align}
-\frac{dA}{dr}=-e^{i\theta}B,\qquad
-\frac{dB}{dr}=-e^{-i\theta}A,
+\frac{dA}{dr}=-e^{i\theta}B,\qquad \frac{dB}{dr}=-e^{-i\theta}A,
 \end{align}$$
 
 初值为 $A(0)=a$、$B(0)=a^\dagger$。解这个线性方程组得到
@@ -939,8 +777,7 @@ Q_\beta(\alpha)=\frac1\pi|\langle\alpha|\beta\rangle|^2.
 利用相干态重叠
 
 $$\begin{align}
-\langle\alpha|\beta\rangle
-=\exp\left(-\frac12|\alpha|^2-\frac12|\beta|^2+\alpha^*\beta\right),
+\langle\alpha|\beta\rangle =\exp\left(-\frac12|\alpha|^2-\frac12|\beta|^2+\alpha^*\beta\right),
 \end{align}$$
 
 得到
@@ -990,16 +827,14 @@ $$\begin{align}
 对应 c-number 函数 $|\alpha|^2$。因此
 
 $$\begin{align}
-a^\dagger a
-\quad\longleftrightarrow\quad
+a^\dagger a \quad\longleftrightarrow\quad
 f_s(\alpha,\alpha^*)=|\alpha|^2-\frac12.
 \end{align}$$
 
 也就是说
 
 $$\begin{align}
-\langle a^\dagger a\rangle
-=\int d^2\alpha\,\left(|\alpha|^2-\frac12\right)W(\alpha,\alpha^*).
+\langle a^\dagger a\rangle =\int d^2\alpha\,\left(|\alpha|^2-\frac12\right)W(\alpha,\alpha^*).
 \end{align}$$
 
 其中 $-1/2$ 来自真空涨落或等价地来自 $aa^\dagger=a^\dagger a+1$。
@@ -1027,17 +862,14 @@ W_{\mathrm{th}}(0,0)=\frac{1}{\pi(2\bar n_{\mathrm{th}}+1)}.
 于是原点非负的条件为
 
 $$\begin{align}
--\frac{1-\epsilon}{\pi}
-+\frac{\epsilon}{\pi(2\bar n_{\mathrm{th}}+1)}
-\ge 0.
+-\frac{1-\epsilon}{\pi} +\frac{\epsilon}{\pi(2\bar n_{\mathrm{th}}+1)} \ge 0.
 \end{align}$$
 
 解得阈值
 
 $$\begin{align}
 \epsilon\ge
-\epsilon_c
-=\frac{2\bar n_{\mathrm{th}}+1}{2\bar n_{\mathrm{th}}+2}.
+\epsilon_c =\frac{2\bar n_{\mathrm{th}}+1}{2\bar n_{\mathrm{th}}+2}.
 \end{align}$$
 
 特别地，若混入的是真空热态 $\bar n_{\mathrm{th}}=0$，则
@@ -1061,8 +893,7 @@ $$\begin{align}
 求导。假设 $p_i$ 不随时间变化，
 
 $$\begin{align}
-\frac{d\rho}{dt}
-=\sum_i p_i\left(|\dot\phi_i\rangle\langle\phi_i|+|\phi_i\rangle\langle\dot\phi_i|\right).
+\frac{d\rho}{dt} =\sum_i p_i\left(|\dot\phi_i\rangle\langle\phi_i|+|\phi_i\rangle\langle\dot\phi_i|\right).
 \end{align}$$
 
 由薛定谔方程
@@ -1086,17 +917,13 @@ $$\begin{align}
 代回去：
 
 $$\begin{align}
-\frac{d\rho}{dt}
-=\sum_i p_i\left(-iH|\phi_i\rangle\langle\phi_i|
-+i|\phi_i\rangle\langle\phi_i|H\right).
+\frac{d\rho}{dt} =\sum_i p_i\left(-iH|\phi_i\rangle\langle\phi_i| +i|\phi_i\rangle\langle\phi_i|H\right).
 \end{align}$$
 
 因此
 
 $$\begin{align}
-\frac{d\rho}{dt}
-=-iH\rho+i\rho H
-=-i[H,\rho].
+\frac{d\rho}{dt} =-iH\rho+i\rho H =-i[H,\rho].
 \end{align}$$
 
 这就是刘维尔-冯诺依曼方程。
@@ -1106,8 +933,7 @@ $$\begin{align}
 由定义
 
 $$\begin{align}
-A_\alpha(\omega)
-=\sum_{E_{\varepsilon'}-E_\varepsilon=\omega}
+A_\alpha(\omega) =\sum_{E_{\varepsilon'}-E_\varepsilon=\omega}
 P(\varepsilon)A_\alpha P(\varepsilon')
 \end{align}$$
 
@@ -1121,15 +947,8 @@ P(\varepsilon')H_S=E_{\varepsilon'}P(\varepsilon')
 可得
 
 $$\begin{aligned}
-[H_S,A_\alpha(\omega)]
-&=
-\sum_{E_{\varepsilon'}-E_\varepsilon=\omega}
-\left(
-E_\varepsilon P(\varepsilon)A_\alpha P(\varepsilon')
--E_{\varepsilon'}P(\varepsilon)A_\alpha P(\varepsilon')
-\right)\\
-&=
-\sum_{E_{\varepsilon'}-E_\varepsilon=\omega}
+[H_S,A_\alpha(\omega)] &= \sum_{E_{\varepsilon'}-E_\varepsilon=\omega} \left( E_\varepsilon P(\varepsilon)A_\alpha P(\varepsilon') -E_{\varepsilon'}P(\varepsilon)A_\alpha P(\varepsilon') \right)\\
+&= \sum_{E_{\varepsilon'}-E_\varepsilon=\omega}
 (E_\varepsilon-E_{\varepsilon'})
 P(\varepsilon)A_\alpha P(\varepsilon')\\
 &=-\omega A_\alpha(\omega).
@@ -1138,8 +957,7 @@ P(\varepsilon)A_\alpha P(\varepsilon')\\
 另一方面，频率分量对所有 Bohr 频率求和等价于对所有能量对求和：
 
 $$\begin{align}
-\sum_\omega A_\alpha(\omega)
-=\sum_{\varepsilon,\varepsilon'}P(\varepsilon)A_\alpha P(\varepsilon').
+\sum_\omega A_\alpha(\omega) =\sum_{\varepsilon,\varepsilon'}P(\varepsilon)A_\alpha P(\varepsilon').
 \end{align}$$
 
 利用完备性
@@ -1151,10 +969,7 @@ $$\begin{align}
 得到
 
 $$\begin{align}
-\sum_\omega A_\alpha(\omega)
-=\left(\sum_\varepsilon P(\varepsilon)\right)A_\alpha
-\left(\sum_{\varepsilon'}P(\varepsilon')\right)
-=A_\alpha.
+\sum_\omega A_\alpha(\omega) =\left(\sum_\varepsilon P(\varepsilon)\right)A_\alpha \left(\sum_{\varepsilon'}P(\varepsilon')\right) =A_\alpha.
 \end{align}$$
 
 ## 题目 3 解答
@@ -1168,22 +983,15 @@ $$\begin{align}
 主方程为
 
 $$\begin{align}
-\dot\rho=\Gamma_\downarrow\mathcal D[\sigma_-]\rho
-+\Gamma_\uparrow\mathcal D[\sigma_+]\rho.
+\dot\rho=\Gamma_\downarrow\mathcal D[\sigma_-]\rho +\Gamma_\uparrow\mathcal D[\sigma_+]\rho.
 \end{align}$$
 
 任意算符 $O$ 的期望值满足伴随方程
 
 $$\begin{align}
-\frac{d}{dt}\langle O\rangle
-=\Gamma_\downarrow\left\langle
-\sigma_+O\sigma_-
--\frac12\{\sigma_+\sigma_-,O\}
-\right\rangle
-+\Gamma_\uparrow\left\langle
-\sigma_-O\sigma_+
--\frac12\{\sigma_-\sigma_+,O\}
-\right\rangle.
+\frac{d}{dt}\langle O\rangle =\Gamma_\downarrow\left\langle
+\sigma_+O\sigma_- -\frac12\{\sigma_+\sigma_-,O\} \right\rangle +\Gamma_\uparrow\left\langle
+\sigma_-O\sigma_+ -\frac12\{\sigma_-\sigma_+,O\} \right\rangle.
 \end{align}$$
 
 取 $O=\sigma_-$。利用 $\sigma_-^2=0$、$\sigma_+\sigma_-=(1+\sigma_z)/2$、$\sigma_-\sigma_+=(1-\sigma_z)/2$，并用
@@ -1196,25 +1004,19 @@ $$\begin{align}
 得到
 
 $$\begin{align}
-\frac{d}{dt}S_-
-=-\frac{\Gamma_\downarrow}{2}S_-
--\frac{\Gamma_\uparrow}{2}S_-
-=-\frac{\Gamma_\uparrow+\Gamma_\downarrow}{2}S_-.
+\frac{d}{dt}S_- =-\frac{\Gamma_\downarrow}{2}S_- -\frac{\Gamma_\uparrow}{2}S_- =-\frac{\Gamma_\uparrow+\Gamma_\downarrow}{2}S_-.
 \end{align}$$
 
 取 $O=\sigma_z$。向下跃迁使激发态布居减少、基态布居增加；向上跃迁反之。直接代数计算给出
 
 $$\begin{align}
-\frac{d}{dt}S_z
-=-\Gamma_\downarrow(1+S_z)+\Gamma_\uparrow(1-S_z).
+\frac{d}{dt}S_z =-\Gamma_\downarrow(1+S_z)+\Gamma_\uparrow(1-S_z).
 \end{align}$$
 
 整理得
 
 $$\begin{align}
-\frac{d}{dt}S_z
-=-(\Gamma_\uparrow+\Gamma_\downarrow)S_z
-+(\Gamma_\uparrow-\Gamma_\downarrow).
+\frac{d}{dt}S_z =-(\Gamma_\uparrow+\Gamma_\downarrow)S_z +(\Gamma_\uparrow-\Gamma_\downarrow).
 \end{align}$$
 
 ## 题目 4 解答
@@ -1222,42 +1024,33 @@ $$\begin{align}
 仍写
 
 $$\begin{align}
-\dot\rho=\Gamma_\downarrow\mathcal D[a]\rho
-+\Gamma_\uparrow\mathcal D[a^\dagger]\rho.
+\dot\rho=\Gamma_\downarrow\mathcal D[a]\rho +\Gamma_\uparrow\mathcal D[a^\dagger]\rho.
 \end{align}$$
 
 对 $O=a$ 使用伴随 Lindblad 方程：
 
 $$\begin{align}
-\frac{d}{dt}\langle a\rangle
-=\Gamma_\downarrow\left\langle
-a^\dagger a a-\frac12\{a^\dagger a,a\}
-\right\rangle
-+\Gamma_\uparrow\left\langle
-a a a^\dagger-\frac12\{aa^\dagger,a\}
-\right\rangle.
+\frac{d}{dt}\langle a\rangle =\Gamma_\downarrow\left\langle
+a^\dagger a a-\frac12\{a^\dagger a,a\} \right\rangle +\Gamma_\uparrow\left\langle
+a a a^\dagger-\frac12\{aa^\dagger,a\} \right\rangle.
 \end{align}$$
 
 由 $[a,a^\dagger]=1$ 化简为
 
 $$\begin{align}
-\frac{d}{dt}\langle a\rangle
-=-\frac{\Gamma_\downarrow-\Gamma_\uparrow}{2}\langle a\rangle.
+\frac{d}{dt}\langle a\rangle =-\frac{\Gamma_\downarrow-\Gamma_\uparrow}{2}\langle a\rangle.
 \end{align}$$
 
 令 $N=a^\dagger a$。同理，
 
 $$\begin{align}
-\frac{d}{dt}\langle N\rangle
-=-\Gamma_\downarrow\langle N\rangle+\Gamma_\uparrow(\langle N\rangle+1)
-=-(\Gamma_\downarrow-\Gamma_\uparrow)\langle N\rangle+\Gamma_\uparrow.
+\frac{d}{dt}\langle N\rangle =-\Gamma_\downarrow\langle N\rangle+\Gamma_\uparrow(\langle N\rangle+1) =-(\Gamma_\downarrow-\Gamma_\uparrow)\langle N\rangle+\Gamma_\uparrow.
 \end{align}$$
 
 若 $\Gamma_\downarrow>\Gamma_\uparrow$，稳态平均光子数为
 
 $$\begin{align}
-\langle N\rangle_{\mathrm{ss}}
-=\frac{\Gamma_\uparrow}{\Gamma_\downarrow-\Gamma_\uparrow}.
+\langle N\rangle_{\mathrm{ss}} =\frac{\Gamma_\uparrow}{\Gamma_\downarrow-\Gamma_\uparrow}.
 \end{align}$$
 
 若热库参数写成 $\Gamma_\downarrow=\kappa(\bar n+1)$、$\Gamma_\uparrow=\kappa\bar n$，则
@@ -1277,13 +1070,7 @@ A_a=a,\qquad A_b=b.
 Born-Markov 近似和零温热库关联函数给出一般形式
 
 $$\begin{align}
-\dot\rho_S
-=-i[H_{\mathrm{eff}},\rho_S]
-+\sum_{i,j=a,b}\gamma_{ij}
-\left(
-A_j\rho_S A_i^\dagger
--\frac12\{A_i^\dagger A_j,\rho_S\}
-\right),
+\dot\rho_S =-i[H_{\mathrm{eff}},\rho_S] +\sum_{i,j=a,b}\gamma_{ij} \left( A_j\rho_S A_i^\dagger -\frac12\{A_i^\dagger A_j,\rho_S\} \right),
 \end{align}$$
 
 其中 $\gamma_{aa}=\gamma_{bb}=\gamma$ 是局域衰减率，交叉系数由热库传播相位决定。把
@@ -1295,39 +1082,27 @@ $$\begin{align}
 分成实部和虚部后，虚部给出环境诱导的相干耦合
 
 $$\begin{align}
-H_{\mathrm{eff}}
-=S_{ab}a^\dagger b+S_{ba}b^\dagger a.
+H_{\mathrm{eff}} =S_{ab}a^\dagger b+S_{ba}b^\dagger a.
 \end{align}$$
 
 局域耗散项为
 
 $$\begin{align}
-\mathcal L_{\mathrm{local}}\rho_S
-=\gamma\left(a\rho_Sa^\dagger-\frac12\{a^\dagger a,\rho_S\}\right)
-+\gamma\left(b\rho_Sb^\dagger-\frac12\{b^\dagger b,\rho_S\}\right).
+\mathcal L_{\mathrm{local}}\rho_S =\gamma\left(a\rho_Sa^\dagger-\frac12\{a^\dagger a,\rho_S\}\right) +\gamma\left(b\rho_Sb^\dagger-\frac12\{b^\dagger b,\rho_S\}\right).
 \end{align}$$
 
 协同耗散项为
 
 $$\begin{aligned}
-\mathcal L_{\mathrm{coop}}\rho_S
-&=
-\gamma_{ab}\left(
-b\rho_Sa^\dagger-\frac12\{a^\dagger b,\rho_S\}
-\right)\\
-&\quad+
-\gamma_{ba}\left(
-a\rho_Sb^\dagger-\frac12\{b^\dagger a,\rho_S\}
-\right).
+\mathcal L_{\mathrm{coop}}\rho_S &= \gamma_{ab}\left( b\rho_Sa^\dagger-\frac12\{a^\dagger b,\rho_S\} \right)\\
+&\quad+ \gamma_{ba}\left( a\rho_Sb^\dagger-\frac12\{b^\dagger a,\rho_S\} \right).
 \end{aligned}$$
 
 在一维双向热库中，常用相位约定给出
 
 $$\begin{align}
-\gamma_{ab}=\gamma_{ba}=\gamma\cos(k_0L),
-\qquad
-S_{ab}=S_{ba}=\frac{\gamma}{2}\sin(k_0L),
-\qquad
+\gamma_{ab}=\gamma_{ba}=\gamma\cos(k_0L), \qquad
+S_{ab}=S_{ba}=\frac{\gamma}{2}\sin(k_0L), \qquad
 k_0=\frac{2\pi}{\lambda_0}.
 \end{align}$$
 
@@ -1348,26 +1123,14 @@ $$\begin{align}
 只保留协同耗散时，正规 $P$ 表示写作
 
 $$\begin{align}
-\rho=\int d^2\alpha\,d^2\beta\,
-P(\alpha,\alpha^*,\beta,\beta^*)
+\rho=\int d^2\alpha\,d^2\beta\, P(\alpha,\alpha^*,\beta,\beta^*)
 |\alpha,\beta\rangle\langle\alpha,\beta|.
 \end{align}$$
 
 零温阻尼的正规 $P$ 方程只产生一阶漂移项。协同耗散贡献为
 
 $$\begin{align}
-\left.\frac{\partial P}{\partial t}\right|_{\mathrm{coop}}
-=
-\frac{\gamma_{ab}}{2}
-\left[
-\frac{\partial}{\partial\alpha}(\beta P)
-+\frac{\partial}{\partial\alpha^*}(\beta^*P)
-\right]
-+\frac{\gamma_{ba}}{2}
-\left[
-\frac{\partial}{\partial\beta}(\alpha P)
-+\frac{\partial}{\partial\beta^*}(\alpha^*P)
-\right].
+\left.\frac{\partial P}{\partial t}\right|_{\mathrm{coop}} = \frac{\gamma_{ab}}{2} \left[ \frac{\partial}{\partial\alpha}(\beta P) +\frac{\partial}{\partial\alpha^*}(\beta^*P) \right] +\frac{\gamma_{ba}}{2} \left[ \frac{\partial}{\partial\beta}(\alpha P) +\frac{\partial}{\partial\beta^*}(\alpha^*P) \right].
 \end{align}$$
 
 因此在零温热库下，协同耗散项不产生二阶扩散项。它在相空间中产生模式间混合的线性漂移：
@@ -1386,8 +1149,7 @@ $$\begin{align}
 哈密顿量部分给出
 
 $$\begin{align}
-\frac{d}{dt}\langle\sigma_z\rangle_H
-=i\langle[H_0,\sigma_z]\rangle.
+\frac{d}{dt}\langle\sigma_z\rangle_H =i\langle[H_0,\sigma_z]\rangle.
 \end{align}$$
 
 其中
@@ -1399,33 +1161,26 @@ H_0=\frac{\delta\omega}{2}\sigma_z+\frac{A}{2}\sigma_x.
 由于 $[\sigma_z,\sigma_z]=0$ 且 $[\sigma_x,\sigma_z]=-2i\sigma_y$，
 
 $$\begin{align}
-i\left\langle\left[\frac{A}{2}\sigma_x,\sigma_z\right]\right\rangle
-=A\langle\sigma_y\rangle.
+i\left\langle\left[\frac{A}{2}\sigma_x,\sigma_z\right]\right\rangle =A\langle\sigma_y\rangle.
 \end{align}$$
 
 耗散部分与第 4 次作业题目 3 相同：
 
 $$\begin{align}
-\left.\frac{d}{dt}\langle\sigma_z\rangle\right|_{\mathrm{diss}}
-=-(\Gamma_\uparrow+\Gamma_\downarrow)\langle\sigma_z\rangle
-+(\Gamma_\uparrow-\Gamma_\downarrow).
+\left.\frac{d}{dt}\langle\sigma_z\rangle\right|_{\mathrm{diss}} =-(\Gamma_\uparrow+\Gamma_\downarrow)\langle\sigma_z\rangle +(\Gamma_\uparrow-\Gamma_\downarrow).
 \end{align}$$
 
 又
 
 $$\begin{align}
-\Gamma_\uparrow-\Gamma_\downarrow
-=\Gamma n_{\mathrm{th}}-\Gamma(n_{\mathrm{th}}+1)
-=-\Gamma,
-\qquad
+\Gamma_\uparrow-\Gamma_\downarrow =\Gamma n_{\mathrm{th}}-\Gamma(n_{\mathrm{th}}+1) =-\Gamma, \qquad
 \Gamma_t=\Gamma_\uparrow+\Gamma_\downarrow.
 \end{align}$$
 
 因此
 
 $$\begin{align}
-\frac{d}{dt}\langle\sigma_z\rangle
-=A\langle\sigma_y\rangle-\Gamma_t\langle\sigma_z\rangle-\Gamma.
+\frac{d}{dt}\langle\sigma_z\rangle =A\langle\sigma_y\rangle-\Gamma_t\langle\sigma_z\rangle-\Gamma.
 \end{align}$$
 
 为求稳态，需要同时使用完整 Bloch 方程：
@@ -1445,16 +1200,14 @@ $$\begin{align}
 其中 $x=\langle\sigma_x\rangle$、$y=\langle\sigma_y\rangle$、$z=\langle\sigma_z\rangle$。令三者导数为零，解得
 
 $$\begin{align}
-z_s
-=-\frac{\Gamma(\Gamma_t^2+4\delta\omega^2)}
+z_s =-\frac{\Gamma(\Gamma_t^2+4\delta\omega^2)}
 {\Gamma_t(\Gamma_t^2+4\delta\omega^2+2A^2)}.
 \end{align}$$
 
 同时
 
 $$\begin{align}
-y_s=\frac{2A\Gamma}{\Gamma_t^2+4\delta\omega^2+2A^2},
-\qquad
+y_s=\frac{2A\Gamma}{\Gamma_t^2+4\delta\omega^2+2A^2}, \qquad
 x_s=-\frac{4A\delta\omega\,\Gamma}
 {\Gamma_t(\Gamma_t^2+4\delta\omega^2+2A^2)}.
 \end{align}$$
@@ -1496,8 +1249,7 @@ $$\begin{align}
 所以
 
 $$\begin{align}
-\langle\sigma_x(t)\rangle
-=\langle\sigma_x(0)\rangle e^{-\Gamma t/2}.
+\langle\sigma_x(t)\rangle =\langle\sigma_x(0)\rangle e^{-\Gamma t/2}.
 \end{align}$$
 
 $y',z'$ 子空间满足
@@ -1570,32 +1322,12 @@ $$
 分量形式正是
 
 $$\begin{align}
-\langle\sigma_y(t)\rangle
-=
-\langle\sigma_y^s\rangle
-+
-\left[
-\langle\sigma_y'(0)\rangle
-\left(
-\cos\mu t+\frac{\Gamma}{4\mu}\sin\mu t
-\right)
--\frac{A}{\mu}\langle\sigma_z'(0)\rangle\sin\mu t
-\right]
+\langle\sigma_y(t)\rangle = \langle\sigma_y^s\rangle + \left[ \langle\sigma_y'(0)\rangle \left( \cos\mu t+\frac{\Gamma}{4\mu}\sin\mu t \right) -\frac{A}{\mu}\langle\sigma_z'(0)\rangle\sin\mu t \right]
 e^{-3\Gamma t/4},
 \end{align}$$
 
 $$\begin{align}
-\langle\sigma_z(t)\rangle
-=
-\langle\sigma_z^s\rangle
-+
-\left[
-\langle\sigma_z'(0)\rangle
-\left(
-\cos\mu t-\frac{\Gamma}{4\mu}\sin\mu t
-\right)
-+\frac{A}{\mu}\langle\sigma_y'(0)\rangle\sin\mu t
-\right]
+\langle\sigma_z(t)\rangle = \langle\sigma_z^s\rangle + \left[ \langle\sigma_z'(0)\rangle \left( \cos\mu t-\frac{\Gamma}{4\mu}\sin\mu t \right) +\frac{A}{\mu}\langle\sigma_y'(0)\rangle\sin\mu t \right]
 e^{-3\Gamma t/4}.
 \end{align}$$
 
@@ -1608,19 +1340,14 @@ x(0)=0,\qquad y(0)=0,\qquad z(0)=1,
 则轨迹始终位于 $x=0$ 平面内。初始偏移为
 
 $$\begin{align}
-y'(0)=-y_s=-\frac{2A\Gamma}{\Gamma^2+2A^2},
-\qquad
+y'(0)=-y_s=-\frac{2A\Gamma}{\Gamma^2+2A^2}, \qquad
 z'(0)=1-z_s=1+\frac{\Gamma^2}{\Gamma^2+2A^2}.
 \end{align}$$
 
 欠阻尼情形 $\Gamma/A<4$ 时，$\mu$ 为实数。轨迹在 $y$-$z$ 平面内围绕稳态点
 
 $$\begin{align}
-(y_s,z_s)=
-\left(
-\frac{2A\Gamma}{\Gamma^2+2A^2},
--\frac{\Gamma^2}{\Gamma^2+2A^2}
-\right)
+(y_s,z_s)= \left( \frac{2A\Gamma}{\Gamma^2+2A^2}, -\frac{\Gamma^2}{\Gamma^2+2A^2} \right)
 \end{align}$$
 
 作阻尼螺旋，振幅包络按 $e^{-3\Gamma t/4}$ 衰减。
@@ -1628,16 +1355,14 @@ $$\begin{align}
 过阻尼情形 $\Gamma/A>4$ 时，令
 
 $$\begin{align}
-\nu=\sqrt{\Gamma^2/16-A^2},
-\qquad
+\nu=\sqrt{\Gamma^2/16-A^2}, \qquad
 \mu=i\nu.
 \end{align}$$
 
 将上式中的三角函数改写成双曲函数：
 
 $$\begin{align}
-\cos\mu t=\cosh\nu t,\qquad
-\frac{\sin\mu t}{\mu}=\frac{\sinh\nu t}{\nu}.
+\cos\mu t=\cosh\nu t,\qquad \frac{\sin\mu t}{\mu}=\frac{\sinh\nu t}{\nu}.
 \end{align}$$
 
 此时轨迹不再绕稳态旋转，而是在 $x=0$ 平面内以两个实衰减率
@@ -1655,16 +1380,14 @@ $$\begin{align}
 采用输入-输出关系
 
 $$\begin{align}
-a_{\mathrm{out}}-a_{\mathrm{in}}=\sqrt\gamma\,a,
-\qquad
+a_{\mathrm{out}}-a_{\mathrm{in}}=\sqrt\gamma\,a, \qquad
 b_{\mathrm{out}}-b_{\mathrm{in}}=\sqrt\gamma\,b,
 \end{align}$$
 
 对应的 Langevin 方程取
 
 $$\begin{align}
-\dot a=-i[a,H_0]-\frac{\gamma}{2}a-\sqrt\gamma\,a_{\mathrm{in}},
-\qquad
+\dot a=-i[a,H_0]-\frac{\gamma}{2}a-\sqrt\gamma\,a_{\mathrm{in}}, \qquad
 \dot b=-i[b,H_0]-\frac{\gamma}{2}b-\sqrt\gamma\,b_{\mathrm{in}}.
 \end{align}$$
 
@@ -1677,8 +1400,7 @@ H_0=i\xi(a^\dagger b^\dagger-ab)
 得到
 
 $$\begin{align}
--i[a,H_0]=\xi b^\dagger,\qquad
--i[b^\dagger,H_0]=\xi a.
+-i[a,H_0]=\xi b^\dagger,\qquad -i[b^\dagger,H_0]=\xi a.
 \end{align}$$
 
 因此
@@ -1707,21 +1429,17 @@ c_{\pm,\mathrm{in}}=\frac{a_{\mathrm{in}}\pm b_{\mathrm{in}}}{\sqrt2}.
 哈密顿量可写成
 
 $$\begin{align}
-H_0
-=\frac{i\xi}{2}(c_+^{\dagger 2}-c_+^2)
--\frac{i\xi}{2}(c_-^{\dagger 2}-c_-^2).
+H_0 =\frac{i\xi}{2}(c_+^{\dagger 2}-c_+^2) -\frac{i\xi}{2}(c_-^{\dagger 2}-c_-^2).
 \end{align}$$
 
 因此两个超模式彼此解耦：
 
 $$\begin{align}
-\dot c_+
-=\xi c_+^\dagger-\frac{\gamma}{2}c_+-\sqrt\gamma\,c_{+,\mathrm{in}},
+\dot c_+ =\xi c_+^\dagger-\frac{\gamma}{2}c_+-\sqrt\gamma\,c_{+,\mathrm{in}},
 \end{align}$$
 
 $$\begin{align}
-\dot c_-
-=-\xi c_-^\dagger-\frac{\gamma}{2}c_--\sqrt\gamma\,c_{-,\mathrm{in}}.
+\dot c_- =-\xi c_-^\dagger-\frac{\gamma}{2}c_--\sqrt\gamma\,c_{-,\mathrm{in}}.
 \end{align}$$
 
 这就是两个独立 DOPO，只是二者的泵浦相位相差 $\pi$。
@@ -1736,23 +1454,19 @@ Y_c=-i(c-c^\dagger).
 严格使用上面的哈密顿量和 $c_\pm=(a\pm b)/\sqrt2$ 时，被压缩的组合是 $X_-$ 与 $Y_+$。若按题目最后指定的正相关/负相关组合 $X_+$、$Y_-$，等价于把泵浦相位反转，或对 $b$ 模作相位重定义 $b\to-b$。在这个相位约定下，两个压缩谱为
 
 $$\begin{align}
-S_{X_+}(\omega)
-=1-\frac{2\gamma\xi}
+S_{X_+}(\omega) =1-\frac{2\gamma\xi}
 {(\gamma/2+\xi)^2+\omega^2},
 \end{align}$$
 
 $$\begin{align}
-S_{Y_-}(\omega)
-=1-\frac{2\gamma\xi}
+S_{Y_-}(\omega) =1-\frac{2\gamma\xi}
 {(\gamma/2+\xi)^2+\omega^2}.
 \end{align}$$
 
 也可写成
 
 $$\begin{align}
-S_{X_+}(\omega)=S_{Y_-}(\omega)
-=
-\frac{(\gamma/2-\xi)^2+\omega^2}
+S_{X_+}(\omega)=S_{Y_-}(\omega) = \frac{(\gamma/2-\xi)^2+\omega^2}
 {(\gamma/2+\xi)^2+\omega^2}.
 \end{align}$$
 
@@ -1784,8 +1498,7 @@ S_{Y_-}(\omega)<1.
 自由腔的 Heisenberg-Langevin 方程为
 
 $$\begin{align}
-\dot a(t)
-=-i\omega_0 a(t)-\frac{\gamma}{2}a(t)-\sqrt\gamma\,a_{\mathrm{in}}(t).
+\dot a(t) =-i\omega_0 a(t)-\frac{\gamma}{2}a(t)-\sqrt\gamma\,a_{\mathrm{in}}(t).
 \end{align}$$
 
 这里的噪声项符号与题目给出的输入-输出关系
@@ -1803,40 +1516,32 @@ a(\omega)=\int_{-\infty}^{\infty}dt\,e^{i\omega t}a(t),
 则 $\dot a(t)\to -i\omega a(\omega)$。频域方程为
 
 $$\begin{align}
-\left[\frac{\gamma}{2}+i(\omega_0-\omega)\right]a(\omega)
-=-\sqrt\gamma\,a_{\mathrm{in}}(\omega).
+\left[\frac{\gamma}{2}+i(\omega_0-\omega)\right]a(\omega) =-\sqrt\gamma\,a_{\mathrm{in}}(\omega).
 \end{align}$$
 
 因此
 
 $$\begin{align}
-a(\omega)
-=-\frac{\sqrt\gamma}{\frac{\gamma}{2}+i(\omega_0-\omega)}
+a(\omega) =-\frac{\sqrt\gamma}{\frac{\gamma}{2}+i(\omega_0-\omega)}
 a_{\mathrm{in}}(\omega).
 \end{align}$$
 
 由输入-输出关系
 
 $$\begin{align}
-a_{\mathrm{out}}(\omega)
-=a_{\mathrm{in}}(\omega)+\sqrt\gamma\,a(\omega)
+a_{\mathrm{out}}(\omega) =a_{\mathrm{in}}(\omega)+\sqrt\gamma\,a(\omega)
 \end{align}$$
 
 得到
 
 $$\begin{align}
-a_{\mathrm{out}}(\omega)
-=
-\left[
-1-\frac{\gamma}{\frac{\gamma}{2}+i(\omega_0-\omega)}
-\right]a_{\mathrm{in}}(\omega).
+a_{\mathrm{out}}(\omega) = \left[ 1-\frac{\gamma}{\frac{\gamma}{2}+i(\omega_0-\omega)} \right]a_{\mathrm{in}}(\omega).
 \end{align}$$
 
 所以散射矩阵为
 
 $$\begin{align}
-S(\omega)
-=\frac{i(\omega_0-\omega)-\gamma/2}
+S(\omega) =\frac{i(\omega_0-\omega)-\gamma/2}
 {i(\omega_0-\omega)+\gamma/2}.
 \end{align}$$
 

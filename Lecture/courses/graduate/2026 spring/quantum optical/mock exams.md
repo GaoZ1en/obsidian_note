@@ -49,8 +49,7 @@
 单模电磁场的每个模式等价于一个频率为 $\omega$ 的谐振子，因此哈密顿量可写成 $H=\hbar\omega(N+1/2)$，其中 $N=a^\dagger a$。由 $[a,a^\dagger]=1$ 得
 
 $$\begin{align}
-[N,a]=a^\dagger aa-aa^\dagger a=-a,
-\qquad
+[N,a]=a^\dagger aa-aa^\dagger a=-a, \qquad
 [N,a^\dagger]=a^\dagger aa^\dagger-a^\dagger a^\dagger a=a^\dagger .
 \end{align}$$
 
@@ -123,8 +122,7 @@ $$\begin{align}
 且 $p_i$ 不随时间变化，每个 $|\phi_i\rangle$ 满足 $i|\dot\phi_i\rangle=H|\phi_i\rangle$，则
 
 $$\begin{align}
-\dot\rho=\sum_i p_i\left(|\dot\phi_i\rangle\langle\phi_i|+|\phi_i\rangle\langle\dot\phi_i|\right)
-=-iH\rho+i\rho H=-i[H,\rho].
+\dot\rho=\sum_i p_i\left(|\dot\phi_i\rangle\langle\phi_i|+|\phi_i\rangle\langle\dot\phi_i|\right) =-iH\rho+i\rho H=-i[H,\rho].
 \end{align}$$
 
 迹保持来自对易子的迹为零：
@@ -138,9 +136,7 @@ $$\begin{align}
 $\Gamma_\downarrow$ 表示从激发态向低能级的衰减率，$\Gamma_\uparrow$ 表示由热库导致的向上激发率。用伴随 Lindblad 方程
 
 $$\begin{align}
-\frac{d}{dt}\langle O\rangle
-=\Gamma_\downarrow\left\langle\sigma_+O\sigma_--\frac12\{\sigma_+\sigma_-,O\}\right\rangle
-+\Gamma_\uparrow\left\langle\sigma_-O\sigma_+-\frac12\{\sigma_-\sigma_+,O\}\right\rangle
+\frac{d}{dt}\langle O\rangle =\Gamma_\downarrow\left\langle\sigma_+O\sigma_--\frac12\{\sigma_+\sigma_-,O\}\right\rangle +\Gamma_\uparrow\left\langle\sigma_-O\sigma_+-\frac12\{\sigma_-\sigma_+,O\}\right\rangle
 \end{align}$$
 
 并取 $O=\sigma_-$，两类跃迁都会破坏相干性，因此得到
@@ -268,8 +264,7 @@ a|n\rangle=\sqrt n\,|n-1\rangle,\qquad a^\dagger|n\rangle=\sqrt{n+1}\,|n+1\rangl
 可得矩阵元
 
 $$\begin{align}
-\langle m|a|n\rangle=\sqrt n\,\delta_{m,n-1},
-\qquad
+\langle m|a|n\rangle=\sqrt n\,\delta_{m,n-1}, \qquad
 \langle m|a^\dagger|n\rangle=\sqrt{n+1}\,\delta_{m,n+1}.
 \end{align}$$
 
@@ -292,8 +287,7 @@ $$\begin{align}
 有
 
 $$\begin{align}
-\langle q\rangle=\frac{\alpha+\alpha^*}{\sqrt{2m\omega}},
-\qquad
+\langle q\rangle=\frac{\alpha+\alpha^*}{\sqrt{2m\omega}}, \qquad
 \langle q^2\rangle=\frac{(\alpha+\alpha^*)^2+1}{2m\omega},
 \end{align}$$
 
@@ -306,8 +300,7 @@ $$\begin{align}
 同理，
 
 $$\begin{align}
-\langle p\rangle=-i\sqrt{\frac{m\omega}{2}}(\alpha-\alpha^*),
-\qquad
+\langle p\rangle=-i\sqrt{\frac{m\omega}{2}}(\alpha-\alpha^*), \qquad
 (\Delta p)^2=\frac{m\omega}{2}.
 \end{align}$$
 
@@ -318,17 +311,14 @@ $$\begin{align}
 $A_\alpha(\omega)$ 只保留把能量 $E_{\varepsilon'}$ 的态连接到 $E_\varepsilon$ 的部分，且 $E_{\varepsilon'}-E_\varepsilon=\omega$。由
 
 $$\begin{align}
-H_SP(\varepsilon)=E_\varepsilon P(\varepsilon),
-\qquad
+H_SP(\varepsilon)=E_\varepsilon P(\varepsilon), \qquad
 P(\varepsilon')H_S=E_{\varepsilon'}P(\varepsilon')
 \end{align}$$
 
 得
 
 $$\begin{align}
-[H_S,P(\varepsilon)A_\alpha P(\varepsilon')]
-=(E_\varepsilon-E_{\varepsilon'})P(\varepsilon)A_\alpha P(\varepsilon')
-=-\omega P(\varepsilon)A_\alpha P(\varepsilon').
+[H_S,P(\varepsilon)A_\alpha P(\varepsilon')] =(E_\varepsilon-E_{\varepsilon'})P(\varepsilon)A_\alpha P(\varepsilon') =-\omega P(\varepsilon)A_\alpha P(\varepsilon').
 \end{align}$$
 
 对所有满足能量差为 $\omega$ 的项求和，即
@@ -340,9 +330,7 @@ $$\begin{align}
 再对全部 Bohr 频率求和，相当于对所有能量投影求和：
 
 $$\begin{align}
-\sum_\omega A_\alpha(\omega)
-=\sum_{\varepsilon,\varepsilon'}P(\varepsilon)A_\alpha P(\varepsilon')
-=A_\alpha.
+\sum_\omega A_\alpha(\omega) =\sum_{\varepsilon,\varepsilon'}P(\varepsilon)A_\alpha P(\varepsilon') =A_\alpha.
 \end{align}$$
 
 ### 题目 5
@@ -362,8 +350,7 @@ $$\begin{align}
 若 $\Gamma_\downarrow>\Gamma_\uparrow$，稳态满足
 
 $$\begin{align}
-\langle a^\dagger a\rangle_{\mathrm{ss}}
-=\frac{\Gamma_\uparrow}{\Gamma_\downarrow-\Gamma_\uparrow}.
+\langle a^\dagger a\rangle_{\mathrm{ss}} =\frac{\Gamma_\uparrow}{\Gamma_\downarrow-\Gamma_\uparrow}.
 \end{align}$$
 
 ### 题目 6
@@ -371,8 +358,7 @@ $$\begin{align}
 失谐 $\delta\omega$ 给出旋转系中能级偏移，驱动振幅 $A$ 给出横向 Rabi 驱动。哈密顿量部分满足
 
 $$\begin{align}
-\left.\dot z\right|_H=i\left\langle\left[\frac{\delta\omega}{2}\sigma_z+\frac A2\sigma_x,\sigma_z\right]\right\rangle
-=A\langle\sigma_y\rangle.
+\left.\dot z\right|_H=i\left\langle\left[\frac{\delta\omega}{2}\sigma_z+\frac A2\sigma_x,\sigma_z\right]\right\rangle =A\langle\sigma_y\rangle.
 \end{align}$$
 
 加入耗散后
@@ -491,8 +477,7 @@ Q(\alpha)=\frac1\pi\langle\alpha|\rho|\alpha\rangle.
 由于 $\rho$ 是正算符，$\langle\alpha|\rho|\alpha\rangle\ge0$，所以 $Q(\alpha)$ 总非负。若 $\rho=|\beta\rangle\langle\beta|$，
 
 $$\begin{align}
-Q_\beta(\alpha)=\frac1\pi|\langle\alpha|\beta\rangle|^2
-=\frac1\pi e^{-|\alpha-\beta|^2}.
+Q_\beta(\alpha)=\frac1\pi|\langle\alpha|\beta\rangle|^2 =\frac1\pi e^{-|\alpha-\beta|^2}.
 \end{align}$$
 
 若 $\rho=|n\rangle\langle n|$，用
@@ -518,8 +503,7 @@ $$\begin{align}
 任意算符 $O$ 的期望值满足伴随形式
 
 $$\begin{align}
-\frac{d}{dt}\langle O\rangle
-=\left\langle L^\dagger O L-\frac12\{L^\dagger L,O\}\right\rangle
+\frac{d}{dt}\langle O\rangle =\left\langle L^\dagger O L-\frac12\{L^\dagger L,O\}\right\rangle
 \end{align}$$
 
 乘以相应跃迁率后求和。该结构在马尔可夫近似下保持密度矩阵的迹和正性，因此适合描述无记忆开放系统。
@@ -541,9 +525,7 @@ H_{\mathrm{eff}}=S_{ab}a^\dagger b+S_{ba}b^\dagger a,
 实部给出协同耗散
 
 $$\begin{align}
-\mathcal L_{\mathrm{coop}}\rho
-=\gamma_{ab}\left(b\rho a^\dagger-\frac12\{a^\dagger b,\rho\}\right)
-+\gamma_{ba}\left(a\rho b^\dagger-\frac12\{b^\dagger a,\rho\}\right).
+\mathcal L_{\mathrm{coop}}\rho =\gamma_{ab}\left(b\rho a^\dagger-\frac12\{a^\dagger b,\rho\}\right) +\gamma_{ba}\left(a\rho b^\dagger-\frac12\{b^\dagger a,\rho\}\right).
 \end{align}$$
 
 在常用一维相位约定下，$L\to0$ 时协同耗散最大；$L=\lambda_0/4$ 时 $\cos(k_0L)=0$，协同耗散消失，而相干交换由 $\sin(k_0L)$ 控制并达到最大模值。
@@ -565,16 +547,14 @@ $$\begin{align}
 加入阻尼和输入噪声，
 
 $$\begin{align}
-\dot a=\xi b^\dagger-\frac\gamma2 a-\sqrt\gamma a_{\mathrm{in}},
-\qquad
+\dot a=\xi b^\dagger-\frac\gamma2 a-\sqrt\gamma a_{\mathrm{in}}, \qquad
 \dot b^\dagger=\xi a-\frac\gamma2 b^\dagger-\sqrt\gamma b_{\mathrm{in}}^\dagger.
 \end{align}$$
 
 定义 $c_\pm=(a\pm b)/\sqrt2$ 和 $c_{\pm,\mathrm{in}}=(a_{\mathrm{in}}\pm b_{\mathrm{in}})/\sqrt2$，得到两个解耦方程
 
 $$\begin{align}
-\dot c_+=\xi c_+^\dagger-\frac\gamma2 c_+-\sqrt\gamma c_{+,\mathrm{in}},
-\qquad
+\dot c_+=\xi c_+^\dagger-\frac\gamma2 c_+-\sqrt\gamma c_{+,\mathrm{in}}, \qquad
 \dot c_-=-\xi c_-^\dagger-\frac\gamma2 c_--\sqrt\gamma c_{-,\mathrm{in}}.
 \end{align}$$
 
@@ -625,17 +605,13 @@ $$\begin{align}
 零点能是 $H=\hbar\omega(N+1/2)$ 中的常数项，它与任何算符对易，因此不影响 $a$ 和 $a^\dagger$ 的升降性质。由 $[H,a^\dagger]=\hbar\omega a^\dagger$ 得
 
 $$\begin{align}
-[H,(a^\dagger)^m]
-=\sum_{j=0}^{m-1}(a^\dagger)^j[H,a^\dagger](a^\dagger)^{m-1-j}
-=m\hbar\omega(a^\dagger)^m.
+[H,(a^\dagger)^m] =\sum_{j=0}^{m-1}(a^\dagger)^j[H,a^\dagger](a^\dagger)^{m-1-j} =m\hbar\omega(a^\dagger)^m.
 \end{align}$$
 
 若 $H|n\rangle=E_n|n\rangle$，则
 
 $$\begin{align}
-H(a^\dagger)^m|n\rangle
-=\left((a^\dagger)^mH+m\hbar\omega(a^\dagger)^m\right)|n\rangle
-=(E_n+m\hbar\omega)(a^\dagger)^m|n\rangle.
+H(a^\dagger)^m|n\rangle =\left((a^\dagger)^mH+m\hbar\omega(a^\dagger)^m\right)|n\rangle =(E_n+m\hbar\omega)(a^\dagger)^m|n\rangle.
 \end{align}$$
 
 ### 题目 2
@@ -650,8 +626,7 @@ e^{-x a^\dagger}a^\dagger e^{x a^\dagger}=a^\dagger
 可得
 
 $$\begin{align}
-e^{-x a^\dagger}N e^{x a^\dagger}
-=a^\dagger(a+x)=N+xa^\dagger.
+e^{-x a^\dagger}N e^{x a^\dagger} =a^\dagger(a+x)=N+xa^\dagger.
 \end{align}$$
 
 同理，
@@ -679,8 +654,7 @@ G=\frac12(e^{-i\theta}a^2-e^{i\theta}a^{\dagger2}).
 定义 $A(r)=S^\dagger aS$、$B(r)=S^\dagger a^\dagger S$，则
 
 $$\begin{align}
-\frac{dA}{dr}=-e^{i\theta}B,\qquad
-\frac{dB}{dr}=-e^{-i\theta}A,
+\frac{dA}{dr}=-e^{i\theta}B,\qquad \frac{dB}{dr}=-e^{-i\theta}A,
 \end{align}$$
 
 且 $A(0)=a$、$B(0)=a^\dagger$。解得
@@ -727,16 +701,14 @@ n_{\mathrm{ss}}=\bar n.
 共振时 $\delta\omega=0$，稳态方程为
 
 $$\begin{align}
--\frac{\Gamma_t}{2}x_s=0,\qquad
--Az_s-\frac{\Gamma_t}{2}y_s=0,\qquad
+-\frac{\Gamma_t}{2}x_s=0,\qquad -Az_s-\frac{\Gamma_t}{2}y_s=0,\qquad
 Ay_s-\Gamma_tz_s-\Gamma=0.
 \end{align}$$
 
 由第一式 $x_s=0$，第二式 $y_s=-2Az_s/\Gamma_t$。代入第三式得
 
 $$\begin{align}
-z_s=-\frac{\Gamma\Gamma_t}{\Gamma_t^2+2A^2},
-\qquad
+z_s=-\frac{\Gamma\Gamma_t}{\Gamma_t^2+2A^2}, \qquad
 y_s=\frac{2A\Gamma}{\Gamma_t^2+2A^2}.
 \end{align}$$
 
@@ -747,8 +719,7 @@ $A\to0$ 时回到热平衡反转 $z_s=-\Gamma/\Gamma_t$；$A\to\infty$ 时 $z_s\
 $X_+$ 被压缩表示两个模式的振幅正相关，$Y_-$ 被压缩表示相位正交分量负相关。在题目指定相位约定下，阈值以下输出谱为
 
 $$\begin{align}
-S_{X_+}(\omega)=S_{Y_-}(\omega)
-=\frac{(\gamma/2-\xi)^2+\omega^2}{(\gamma/2+\xi)^2+\omega^2}.
+S_{X_+}(\omega)=S_{Y_-}(\omega) =\frac{(\gamma/2-\xi)^2+\omega^2}{(\gamma/2+\xi)^2+\omega^2}.
 \end{align}$$
 
 当 $0<\xi<\gamma/2$ 时，
@@ -816,8 +787,7 @@ a^m|n\rangle=0.
 当 $m\le n$ 时反复使用 $a|n\rangle=\sqrt n|n-1\rangle$，得到
 
 $$\begin{align}
-a^m|n\rangle=\sqrt{n(n-1)\cdots(n-m+1)}\,|n-m\rangle
-=\sqrt{\frac{n!}{(n-m)!}}|n-m\rangle.
+a^m|n\rangle=\sqrt{n(n-1)\cdots(n-m+1)}\,|n-m\rangle =\sqrt{\frac{n!}{(n-m)!}}|n-m\rangle.
 \end{align}$$
 
 再由 $N|n-m\rangle=(n-m)|n-m\rangle$，立刻得到
@@ -875,15 +845,7 @@ a^\dagger a\longleftrightarrow |\alpha|^2-\frac12.
 零温正规 $P$ 表示中，损耗项只对应确定性衰减漂移，不产生热扩散。只保留协同耗散时，
 
 $$\begin{align}
-\left.\frac{\partial P}{\partial t}\right|_{\mathrm{coop}}
-=\frac{\gamma_{ab}}2\left[
-\frac{\partial}{\partial\alpha}(\beta P)
-+\frac{\partial}{\partial\alpha^*}(\beta^*P)
-\right]
-+\frac{\gamma_{ba}}2\left[
-\frac{\partial}{\partial\beta}(\alpha P)
-+\frac{\partial}{\partial\beta^*}(\alpha^*P)
-\right].
+\left.\frac{\partial P}{\partial t}\right|_{\mathrm{coop}} =\frac{\gamma_{ab}}2\left[ \frac{\partial}{\partial\alpha}(\beta P) +\frac{\partial}{\partial\alpha^*}(\beta^*P) \right] +\frac{\gamma_{ba}}2\left[ \frac{\partial}{\partial\beta}(\alpha P) +\frac{\partial}{\partial\beta^*}(\alpha^*P) \right].
 \end{align}$$
 
 因此对应的漂移为
@@ -997,9 +959,7 @@ $$\begin{align}
 归一化条件为 $\sum_n|c_n|^2=1$。由于 $N|n\rangle=n|n\rangle$，
 
 $$\begin{align}
-\langle\psi|N|\psi\rangle
-=\sum_{m,n}c_m^*c_n\langle m|N|n\rangle
-=\sum_n n|c_n|^2.
+\langle\psi|N|\psi\rangle =\sum_{m,n}c_m^*c_n\langle m|N|n\rangle =\sum_n n|c_n|^2.
 \end{align}$$
 
 ### 题目 2
@@ -1039,8 +999,7 @@ D(\alpha)=e^{-|\alpha|^2/2}e^{\alpha a^\dagger}e^{-\alpha^*a}.
 Wigner 函数负值是非经典性信号，因为经典相空间概率分布不能取负。混合态原点处的 Wigner 函数为
 
 $$\begin{align}
-W_\rho(0)= (1-\epsilon)\left(-\frac1\pi\right)
-+\epsilon\frac{1}{\pi(2\bar n_{\mathrm{th}}+1)}.
+W_\rho(0)= (1-\epsilon)\left(-\frac1\pi\right) +\epsilon\frac{1}{\pi(2\bar n_{\mathrm{th}}+1)}.
 \end{align}$$
 
 令其非负，得到
@@ -1068,9 +1027,7 @@ A_\alpha(\omega)=\sum_{E'-E=\omega}P(E)A_\alpha P(E'),
 取厄米共轭得
 
 $$\begin{align}
-A_\alpha^\dagger(\omega)
-=\sum_{E'-E=\omega}P(E')A_\alpha^\dagger P(E)
-=A_\alpha^\dagger(-\omega).
+A_\alpha^\dagger(\omega) =\sum_{E'-E=\omega}P(E')A_\alpha^\dagger P(E) =A_\alpha^\dagger(-\omega).
 \end{align}$$
 
 在 Born-Markov 主方程中，不同频率分量对应不同跃迁通道，其系数由热库在对应频率处的关联函数决定。
@@ -1114,8 +1071,7 @@ H_0=i\xi(a^\dagger b^\dagger-ab)
 得
 
 $$\begin{align}
-H_0=\frac{i\xi}{2}(c_+^{\dagger2}-c_+^2)
--\frac{i\xi}{2}(c_-^{\dagger2}-c_-^2).
+H_0=\frac{i\xi}{2}(c_+^{\dagger2}-c_+^2) -\frac{i\xi}{2}(c_-^{\dagger2}-c_-^2).
 \end{align}$$
 
 两个超模式互不耦合，分别等价于两个 DOPO；二者前面的符号相反，表示泵浦相位相差 $\pi$。
@@ -1181,17 +1137,13 @@ H|n\rangle=\hbar\omega\left(n+\frac12\right)|n\rangle.
 对易子的线性性使得只需证明单项式情形，再推广到任意幂级数。利用 Leibniz 规则，
 
 $$\begin{align}
-[a^\dagger,a^r]
-=\sum_{j=0}^{r-1}a^j[a^\dagger,a]a^{r-1-j}
-=-r a^{r-1}.
+[a^\dagger,a^r] =\sum_{j=0}^{r-1}a^j[a^\dagger,a]a^{r-1-j} =-r a^{r-1}.
 \end{align}$$
 
 同理，
 
 $$\begin{align}
-[a,(a^\dagger)^s]
-=\sum_{j=0}^{s-1}(a^\dagger)^j[a,a^\dagger](a^\dagger)^{s-1-j}
-=s(a^\dagger)^{s-1}.
+[a,(a^\dagger)^s] =\sum_{j=0}^{s-1}(a^\dagger)^j[a,a^\dagger](a^\dagger)^{s-1-j} =s(a^\dagger)^{s-1}.
 \end{align}$$
 
 ### 题目 3
@@ -1205,9 +1157,7 @@ $$\begin{align}
 得
 
 $$\begin{align}
-\langle\alpha|\beta\rangle
-=e^{-|\alpha|^2/2-|\beta|^2/2}\sum_{n=0}^\infty\frac{(\alpha^*\beta)^n}{n!}
-=\exp\left(-\frac{|\alpha|^2}{2}-\frac{|\beta|^2}{2}+\alpha^*\beta\right).
+\langle\alpha|\beta\rangle =e^{-|\alpha|^2/2-|\beta|^2/2}\sum_{n=0}^\infty\frac{(\alpha^*\beta)^n}{n!} =\exp\left(-\frac{|\alpha|^2}{2}-\frac{|\beta|^2}{2}+\alpha^*\beta\right).
 \end{align}$$
 
 因此
@@ -1233,8 +1183,7 @@ $$\begin{align}
 若 $H$ 不显含时，则
 
 $$\begin{align}
-\frac{d}{dt}\mathrm{Tr}(\rho H)=\mathrm{Tr}(\dot\rho H)
-=-i\mathrm{Tr}([H,\rho]H)=0,
+\frac{d}{dt}\mathrm{Tr}(\rho H)=\mathrm{Tr}(\dot\rho H) =-i\mathrm{Tr}([H,\rho]H)=0,
 \end{align}$$
 
 其中最后一步使用迹的循环性。
@@ -1347,8 +1296,7 @@ $$\begin{align}
 真空中 $\langle X\rangle=\langle P\rangle=0$，并且
 
 $$\begin{align}
-\langle X^2\rangle=\frac14\langle0|aa^\dagger|0\rangle=\frac14,
-\qquad
+\langle X^2\rangle=\frac14\langle0|aa^\dagger|0\rangle=\frac14, \qquad
 \langle P^2\rangle=\frac14.
 \end{align}$$
 
@@ -1390,8 +1338,7 @@ $$\begin{align}
 因此
 
 $$\begin{align}
-g^{(2)}(0)=
-\frac{\langle a^\dagger a^\dagger aa\rangle}{\langle a^\dagger a\rangle^2}=1.
+g^{(2)}(0)= \frac{\langle a^\dagger a^\dagger aa\rangle}{\langle a^\dagger a\rangle^2}=1.
 \end{align}$$
 
 若 $g^{(2)}(0)<1$，表示反聚束，即光子倾向于一个一个到达，这是经典随机强度模型不能给出的非经典信号。
@@ -1444,8 +1391,7 @@ x(t)=x(0)e^{-\Gamma t/2}.
 $X_a+X_b$ 被压缩表示两个模式振幅正相关；$Y_a-Y_b$ 被压缩表示两个模式相位正交分量负相关。在题目相位约定下，
 
 $$\begin{align}
-S_{X_+}(\omega)=S_{Y_-}(\omega)
-=\frac{(\gamma/2-\xi)^2+\omega^2}{(\gamma/2+\xi)^2+\omega^2}.
+S_{X_+}(\omega)=S_{Y_-}(\omega) =\frac{(\gamma/2-\xi)^2+\omega^2}{(\gamma/2+\xi)^2+\omega^2}.
 \end{align}$$
 
 零频处
@@ -1531,9 +1477,7 @@ e^{-x a^\dagger}f(a)e^{x a^\dagger}=f(a+x).
 例如 $f(a)=a^2$ 时，
 
 $$\begin{align}
-e^{-x a^\dagger}a^2e^{x a^\dagger}
-=\left(e^{-x a^\dagger}ae^{x a^\dagger}\right)^2
-=(a+x)^2.
+e^{-x a^\dagger}a^2e^{x a^\dagger} =\left(e^{-x a^\dagger}ae^{x a^\dagger}\right)^2 =(a+x)^2.
 \end{align}$$
 
 ### 题目 3
@@ -1547,8 +1491,7 @@ a^\dagger a\longleftrightarrow |\alpha|^2-\frac12.
 于是
 
 $$\begin{align}
-\langle N\rangle
-=\int d^2\alpha\left(|\alpha|^2-\frac12\right)W(\alpha,\alpha^*).
+\langle N\rangle =\int d^2\alpha\left(|\alpha|^2-\frac12\right)W(\alpha,\alpha^*).
 \end{align}$$
 
 $Q$ 函数是正的 Husimi 分布，即使态非经典，$Q$ 也不会取负。
@@ -1670,9 +1613,7 @@ $$\begin{align}
 以及对易子的 Leibniz 规则，
 
 $$\begin{align}
-[H,a^m]
-=\sum_{j=0}^{m-1}a^j[H,a]a^{m-1-j}
-=-m\hbar\omega a^m.
+[H,a^m] =\sum_{j=0}^{m-1}a^j[H,a]a^{m-1-j} =-m\hbar\omega a^m.
 \end{align}$$
 
 数态从真空态递推生成。真空态满足 $a|0\rangle=0$，归一化后
@@ -1706,8 +1647,7 @@ D^\dagger(\alpha)=D^{-1}(\alpha)=D(-\alpha).
 用 BCH 计算相似变换：
 
 $$\begin{align}
-D^\dagger(\alpha)aD(\alpha)
-=a+[a,\alpha a^\dagger-\alpha^*a]=a+\alpha,
+D^\dagger(\alpha)aD(\alpha) =a+[a,\alpha a^\dagger-\alpha^*a]=a+\alpha,
 \end{align}$$
 
 更高阶对易子为零。
@@ -1734,8 +1674,7 @@ $$\begin{align}
 Lindblad 方程在此基础上加入马尔可夫耗散：
 
 $$\begin{align}
-\dot\rho=-i[H,\rho]
-+\sum_j\gamma_j\left(L_j\rho L_j^\dagger-\frac12\{L_j^\dagger L_j,\rho\}\right).
+\dot\rho=-i[H,\rho] +\sum_j\gamma_j\left(L_j\rho L_j^\dagger-\frac12\{L_j^\dagger L_j,\rho\}\right).
 \end{align}$$
 
 封闭系统的迹保持来自 $\mathrm{Tr}[H,\rho]=0$；Lindblad 耗散子的迹保持来自
@@ -1787,8 +1726,7 @@ S(\omega)=\frac{i(\omega_0-\omega)-\gamma/2}{i(\omega_0-\omega)+\gamma/2}.
 NDOPO 阈值以下的压缩谱为
 
 $$\begin{align}
-S_{\mathrm{sq}}(\omega)
-=\frac{(\gamma/2-\xi)^2+\omega^2}{(\gamma/2+\xi)^2+\omega^2}.
+S_{\mathrm{sq}}(\omega) =\frac{(\gamma/2-\xi)^2+\omega^2}{(\gamma/2+\xi)^2+\omega^2}.
 \end{align}$$
 
 稳定阈值以下要求

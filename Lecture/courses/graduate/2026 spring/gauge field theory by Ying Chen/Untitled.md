@@ -11,35 +11,21 @@ summary: "A worked Mathematica workflow for deriving Feynman rules from a Yukawa
 Take one Dirac fermion $\psi$ and one real scalar $\phi$ with interaction
 
 $$\begin{align}
-\mathcal L_{\mathrm{int}}
-=
--g\phi\bar\psi\psi
--
-\frac{\lambda}{4!}\phi^4.
+\mathcal L_{\mathrm{int}} = -g\phi\bar\psi\psi - \frac{\lambda}{4!}\phi^4.
+\end{align}
 \end{align}$$
 
 The full Lagrangian used in FeynRules was
 
 $$\begin{align}
-\mathcal L
-=
-i\bar\psi\gamma^\mu\partial_\mu\psi
--m_\psi\bar\psi\psi
-+
-\frac{1}{2}\partial_\mu\phi\,\partial^\mu\phi
--
-\frac{1}{2}m_\phi^2\phi^2
--
-g\phi\bar\psi\psi
--
-\frac{\lambda}{4!}\phi^4.
+\mathcal L = i\bar\psi\gamma^\mu\partial_\mu\psi -m_\psi\bar\psi\psi + \frac{1}{2}\partial_\mu\phi\,\partial^\mu\phi - \frac{1}{2}m_\phi^2\phi^2 - g\phi\bar\psi\psi - \frac{\lambda}{4!}\phi^4.
+\end{align}
 \end{align}$$
 
 FeynRules returned two nonzero interaction vertices:
 
 $$\begin{align}
-\phi\phi\phi\phi:\ -i\lambda,
-\qquad
+\phi\phi\phi\phi:\ -i\lambda, \qquad
 \bar\psi\psi\phi:\ -ig.
 \end{align}$$
 
@@ -181,8 +167,7 @@ $$\begin{align}
 is forbidden at every perturbative order:
 
 $$\begin{align}
-\mathcal M(\psi\psi\to3\phi)=0,
-\qquad
+\mathcal M(\psi\psi\to3\phi)=0, \qquad
 d\sigma(\psi\psi\to3\phi)=0.
 \end{align}$$
 
@@ -232,11 +217,7 @@ one loop: 169 amplitudes
 The tree amplitude splits into two classes:
 
 $$\begin{align}
-\mathcal M^{(0)}
-=
-\mathcal M_{g\lambda}^{(0)}
-+
-\mathcal M_{g^3}^{(0)}.
+\mathcal M^{(0)} = \mathcal M_{g\lambda}^{(0)} + \mathcal M_{g^3}^{(0)}.
 \end{align}$$
 
 The first class is scalar exchange,
@@ -248,24 +229,17 @@ $$\begin{align}
 with schematic amplitude
 
 $$\begin{align}
-\mathcal M_{g\lambda}^{(0)}
-=
-\bar v(p_2)(-ig)u(p_1)
-\frac{i}{(p_1+p_2)^2-m_\phi^2}
+\mathcal M_{g\lambda}^{(0)} = \bar v(p_2)(-ig)u(p_1) \frac{i}{(p_1+p_2)^2-m_\phi^2}
 (-i\lambda).
 \end{align}$$
 
 The second class is emission of the three final scalars from the fermion line. There are $3!$ permutations:
 
 $$\begin{align}
-\mathcal M_{g^3}^{(0)}
-=
-(-ig)^3
+\mathcal M_{g^3}^{(0)} = (-ig)^3
 \sum_{\pi\in S_3}
-\bar v(p_2)
-\frac{i(\not p_1-\not k_{\pi(1)}-\not k_{\pi(2)}+m_\psi)}
-{(p_1-k_{\pi(1)}-k_{\pi(2)})^2-m_\psi^2}
-\frac{i(\not p_1-\not k_{\pi(1)}+m_\psi)}
+\bar v(p_2) \frac{i(\not p_1-\not k_{\pi(1)}-\not k_{\pi(2)}+m_\psi)}
+{(p_1-k_{\pi(1)}-k_{\pi(2)})^2-m_\psi^2} \frac{i(\not p_1-\not k_{\pi(1)}+m_\psi)}
 {(p_1-k_{\pi(1)})^2-m_\psi^2}
 u(p_1).
 \end{align}$$
@@ -359,17 +333,8 @@ The first one-loop term in FeynCalc form is
 The physical one-loop correction to the cross section is the interference of the renormalized one-loop amplitude with the tree amplitude:
 
 $$\begin{align}
-d\sigma_{\text{1-loop}}
-=
-\frac{1}{3!}
-\frac{1}{4\sqrt{(p_1\cdot p_2)^2-m_\psi^4}}
-\,
-\overline{
-2\operatorname{Re}
-\left[
-\mathcal M^{(0)\ast}
-\mathcal M_{\mathrm{ren}}^{(1)}
-\right]
+d\sigma_{\text{1-loop}} = \frac{1}{3!} \frac{1}{4\sqrt{(p_1\cdot p_2)^2-m_\psi^4}}
+\, \overline{ 2\operatorname{Re} \left[ \mathcal M^{(0)\ast} \mathcal M_{\mathrm{ren}}^{(1)} \right]
 }
 \,d\Phi_3.
 \end{align}$$

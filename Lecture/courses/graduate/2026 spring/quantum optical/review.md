@@ -202,8 +202,7 @@ $$\begin{align}
 产生湮灭算符的作用为
 
 $$\begin{align}
-a|n\rangle=\sqrt n\,|n-1\rangle,
-\qquad
+a|n\rangle=\sqrt n\,|n-1\rangle, \qquad
 a^\dagger|n\rangle=\sqrt{n+1}\,|n+1\rangle.
 \end{align}$$
 
@@ -228,8 +227,7 @@ $$\begin{align}
 考试中常用矩阵元：
 
 $$\begin{align}
-\langle m|a|n\rangle=\sqrt n\,\delta_{m,n-1},
-\qquad
+\langle m|a|n\rangle=\sqrt n\,\delta_{m,n-1}, \qquad
 \langle m|a^\dagger|n\rangle=\sqrt{n+1}\,\delta_{m,n+1}.
 \end{align}$$
 
@@ -266,8 +264,7 @@ $$\begin{align}
 Baker-Campbell-Hausdorff 公式在量子光学中常用于处理指数算符。最常用形式是
 
 $$\begin{align}
-e^{-A}Be^A
-=B+[B,A]+\frac{1}{2!}[[B,A],A]+\frac{1}{3!}[[[B,A],A],A]+\cdots.
+e^{-A}Be^A =B+[B,A]+\frac{1}{2!}[[B,A],A]+\frac{1}{3!}[[[B,A],A],A]+\cdots.
 \end{align}$$
 
 若高阶对易子终止，结果可以精确求出。例如令 $A=x a^\dagger$，则
@@ -363,8 +360,7 @@ $$\begin{align}
 两个相干态的重叠为
 
 $$\begin{align}
-\langle\alpha|\beta\rangle
-=\exp\left[-\frac12|\alpha|^2-\frac12|\beta|^2+\alpha^*\beta\right],
+\langle\alpha|\beta\rangle =\exp\left[-\frac12|\alpha|^2-\frac12|\beta|^2+\alpha^*\beta\right],
 \end{align}$$
 
 所以
@@ -384,8 +380,7 @@ $$\begin{align}
 相干态中的光子数概率为
 
 $$\begin{align}
-P_n=|\langle n|\alpha\rangle|^2
-=e^{-|\alpha|^2}\frac{|\alpha|^{2n}}{n!}.
+P_n=|\langle n|\alpha\rangle|^2 =e^{-|\alpha|^2}\frac{|\alpha|^{2n}}{n!}.
 \end{align}$$
 
 这是 Poisson 分布。令
@@ -473,8 +468,7 @@ $$\begin{align}
 定义正则变量
 
 $$\begin{align}
-q=\frac{1}{\sqrt{2m\omega}}(a+a^\dagger),
-\qquad
+q=\frac{1}{\sqrt{2m\omega}}(a+a^\dagger), \qquad
 p=-i\sqrt{\frac{m\omega}{2}}(a-a^\dagger).
 \end{align}$$
 
@@ -487,16 +481,14 @@ $$\begin{align}
 在相干态中，
 
 $$\begin{align}
-\langle q\rangle=\frac{\alpha+\alpha^*}{\sqrt{2m\omega}},
-\qquad
+\langle q\rangle=\frac{\alpha+\alpha^*}{\sqrt{2m\omega}}, \qquad
 \langle p\rangle=-i\sqrt{\frac{m\omega}{2}}(\alpha-\alpha^*).
 \end{align}$$
 
 方差与真空态相同：
 
 $$\begin{align}
-(\Delta q)^2=\frac{1}{2m\omega},
-\qquad
+(\Delta q)^2=\frac{1}{2m\omega}, \qquad
 (\Delta p)^2=\frac{m\omega}{2}.
 \end{align}$$
 
@@ -513,8 +505,7 @@ $$\begin{align}
 压缩算符定义为
 
 $$\begin{align}
-S(\xi)=\exp\left[\frac12(\xi^*a^2-\xi a^{\dagger 2})\right],
-\qquad
+S(\xi)=\exp\left[\frac12(\xi^*a^2-\xi a^{\dagger 2})\right], \qquad
 \xi=re^{i\theta}.
 \end{align}$$
 
@@ -531,8 +522,7 @@ S^\dagger(\xi)a^\dagger S(\xi)=a^\dagger\cosh r-ae^{-i\theta}\sinh r.
 定义沿压缩角旋转的正交分量
 
 $$\begin{align}
-Y_1=ae^{-i\theta/2}+a^\dagger e^{i\theta/2},
-\qquad
+Y_1=ae^{-i\theta/2}+a^\dagger e^{i\theta/2}, \qquad
 Y_2=-i(ae^{-i\theta/2}-a^\dagger e^{i\theta/2}).
 \end{align}$$
 
@@ -545,8 +535,7 @@ $$\begin{align}
 压缩真空态 $S(\xi)|0\rangle$ 中，
 
 $$\begin{align}
-(\Delta Y_1)^2=e^{-2r},
-\qquad
+(\Delta Y_1)^2=e^{-2r}, \qquad
 (\Delta Y_2)^2=e^{2r}.
 \end{align}$$
 
@@ -593,8 +582,7 @@ a^\dagger a\quad\longleftrightarrow\quad |\alpha|^2-\frac12.
 于是
 
 $$\begin{align}
-\langle a^\dagger a\rangle
-=\int d^2\alpha\left(|\alpha|^2-\frac12\right)W(\alpha,\alpha^*).
+\langle a^\dagger a\rangle =\int d^2\alpha\left(|\alpha|^2-\frac12\right)W(\alpha,\alpha^*).
 \end{align}$$
 
 Wigner 函数可以取负。单光子态在原点处的负值是非经典性的典型标志：
@@ -1114,8 +1102,7 @@ S(\Omega)\propto \left|\int dt\,\ddot d(t)e^{i\Omega t}\right|^2.
 对 $p$ 求导：
 
 $$\begin{align}
-\frac{\partial S}{\partial p}=0
-\quad\Rightarrow\quad
+\frac{\partial S}{\partial p}=0 \quad\Rightarrow\quad
 \int_{t'}^t [p-A(\tau)]\,d\tau=0.
 \end{align}$$
 
@@ -1550,9 +1537,7 @@ $$\begin{align}
 代入本征方程：
 
 $$\begin{align}
-a|\alpha\rangle=\sum_{n=1}^\infty c_n\sqrt n\,|n-1\rangle
-=\sum_{n=0}^\infty c_{n+1}\sqrt{n+1}\,|n\rangle
-=\alpha\sum_{n=0}^\infty c_n|n\rangle.
+a|\alpha\rangle=\sum_{n=1}^\infty c_n\sqrt n\,|n-1\rangle =\sum_{n=0}^\infty c_{n+1}\sqrt{n+1}\,|n\rangle =\alpha\sum_{n=0}^\infty c_n|n\rangle.
 \end{align}$$
 
 逐项比较得递推关系
@@ -1564,8 +1549,7 @@ c_{n+1}=\frac{\alpha}{\sqrt{n+1}}c_n,\qquad c_n=\frac{\alpha^n}{\sqrt{n!}}c_0.
 归一化条件给出
 
 $$\begin{align}
-1=\sum_{n=0}^\infty |c_n|^2=|c_0|^2\sum_{n=0}^\infty\frac{|\alpha|^{2n}}{n!}
-=|c_0|^2 e^{|\alpha|^2},
+1=\sum_{n=0}^\infty |c_n|^2=|c_0|^2\sum_{n=0}^\infty\frac{|\alpha|^{2n}}{n!} =|c_0|^2 e^{|\alpha|^2},
 \end{align}$$
 
 所以
@@ -1577,9 +1561,7 @@ $$\begin{align}
 两个相干态的重叠为
 
 $$\begin{align}
-\langle\alpha|\beta\rangle
-=e^{-(|\alpha|^2+|\beta|^2)/2}\sum_{n=0}^\infty\frac{(\alpha^*\beta)^n}{n!}
-=\exp\left[-\frac12|\alpha|^2-\frac12|\beta|^2+\alpha^*\beta\right].
+\langle\alpha|\beta\rangle =e^{-(|\alpha|^2+|\beta|^2)/2}\sum_{n=0}^\infty\frac{(\alpha^*\beta)^n}{n!} =\exp\left[-\frac12|\alpha|^2-\frac12|\beta|^2+\alpha^*\beta\right].
 \end{align}$$
 
 因此
@@ -1599,9 +1581,7 @@ $$\begin{align}
 验证方法是在 Fock 基中取矩阵元：
 
 $$\begin{align}
-\frac1\pi\int d^2\alpha\,\langle m|\alpha\rangle\langle\alpha|n\rangle
-=\frac{1}{\pi\sqrt{m!n!}}\int_0^\infty r\,dr\,e^{-r^2}r^{m+n}\int_0^{2\pi}d\theta\,e^{i(n-m)\theta}
-=\delta_{mn}.
+\frac1\pi\int d^2\alpha\,\langle m|\alpha\rangle\langle\alpha|n\rangle =\frac{1}{\pi\sqrt{m!n!}}\int_0^\infty r\,dr\,e^{-r^2}r^{m+n}\int_0^{2\pi}d\theta\,e^{i(n-m)\theta} =\delta_{mn}.
 \end{align}$$
 
 ## 6.2 光子数统计
@@ -1705,8 +1685,7 @@ $$\begin{align}
 定义压缩算符
 
 $$\begin{align}
-S(\xi)=\exp\left[\frac12(\xi^*a^2-\xi a^{\dagger 2})\right],
-\qquad \xi=re^{i\theta}.
+S(\xi)=\exp\left[\frac12(\xi^*a^2-\xi a^{\dagger 2})\right], \qquad \xi=re^{i\theta}.
 \end{align}$$
 
 标准 Bogoliubov 变换为
@@ -1766,9 +1745,7 @@ $$\begin{align}
 这称为 Glauber-Sudarshan $P$ 表示。对正规序算符有
 
 $$\begin{align}
-\langle (a^\dagger)^m a^n\rangle
-=\mathrm{Tr}\left[\rho (a^\dagger)^m a^n\right]
-=\int d^2\alpha\,P(\alpha)(\alpha^*)^m\alpha^n.
+\langle (a^\dagger)^m a^n\rangle =\mathrm{Tr}\left[\rho (a^\dagger)^m a^n\right] =\int d^2\alpha\,P(\alpha)(\alpha^*)^m\alpha^n.
 \end{align}$$
 
 推导只用到
@@ -1845,9 +1822,7 @@ $$\begin{align}
 积分一次再代回，得到
 
 $$\begin{align}
-\frac{d\rho_I(t)}{dt}
-=-i[H_I(t),\rho_I(0)]
--\int_0^t ds\,[H_I(t),[H_I(s),\rho_I(s)]].
+\frac{d\rho_I(t)}{dt} =-i[H_I(t),\rho_I(0)] -\int_0^t ds\,[H_I(t),[H_I(s),\rho_I(s)]].
 \end{align}$$
 
 对热库取迹，并假设 $\mathrm{Tr}_B[H_I(t)\rho_B]=0$，第一项消失。
@@ -1863,8 +1838,7 @@ $$\begin{align}
 于是
 
 $$\begin{align}
-\frac{d\rho_S(t)}{dt}
-=-\int_0^t ds\,\mathrm{Tr}_B[H_I(t),[H_I(s),\rho_S(s)\otimes\rho_B]].
+\frac{d\rho_S(t)}{dt} =-\int_0^t ds\,\mathrm{Tr}_B[H_I(t),[H_I(s),\rho_S(s)\otimes\rho_B]].
 \end{align}$$
 
 Markov 近似假设热库关联时间 $\tau_B$ 远小于系统演化时间 $\tau_S$，于是
@@ -1876,8 +1850,7 @@ $$\begin{align}
 令 $s=t-\tau$，得
 
 $$\begin{align}
-\frac{d\rho_S(t)}{dt}
-=-\int_0^\infty d\tau\,\mathrm{Tr}_B[H_I(t),[H_I(t-\tau),\rho_S(t)\otimes\rho_B]].
+\frac{d\rho_S(t)}{dt} =-\int_0^\infty d\tau\,\mathrm{Tr}_B[H_I(t),[H_I(t-\tau),\rho_S(t)\otimes\rho_B]].
 \end{align}$$
 
 ## 7.3 频率分解与 Lindblad 形式
@@ -1921,11 +1894,7 @@ H_{\mathrm{LS}}=\sum_{\omega,\alpha,\beta}S_{\alpha\beta}(\omega)A_\alpha^\dagge
 在 secular 近似下，不同 Bohr 频率的快速振荡项被丢弃，得到 Lindblad 主方程
 
 $$\begin{align}
-\frac{d\rho}{dt}
-=-i[H_S+H_{\mathrm{LS}},\rho]
-+\sum_{\omega,\alpha,\beta}\gamma_{\alpha\beta}(\omega)
-\left(A_\beta(\omega)\rho A_\alpha^\dagger(\omega)
--\frac12\{A_\alpha^\dagger(\omega)A_\beta(\omega),\rho\}\right).
+\frac{d\rho}{dt} =-i[H_S+H_{\mathrm{LS}},\rho] +\sum_{\omega,\alpha,\beta}\gamma_{\alpha\beta}(\omega) \left(A_\beta(\omega)\rho A_\alpha^\dagger(\omega) -\frac12\{A_\alpha^\dagger(\omega)A_\beta(\omega),\rho\}\right).
 \end{align}$$
 
 这一步的要点是：Born 近似给出二阶耦合，Markov 近似消去记忆核，secular 近似保证生成元是完全正的 Lindblad 形式。
@@ -1935,10 +1904,7 @@ $$\begin{align}
 单模腔与热库耦合后，在旋转波近似下主方程为
 
 $$\begin{align}
-\frac{d\rho}{dt}
-=-i[\omega_0a^\dagger a,\rho]
-+\kappa(\bar n+1)\mathcal D[a]\rho
-+\kappa\bar n\,\mathcal D[a^\dagger]\rho.
+\frac{d\rho}{dt} =-i[\omega_0a^\dagger a,\rho] +\kappa(\bar n+1)\mathcal D[a]\rho +\kappa\bar n\,\mathcal D[a^\dagger]\rho.
 \end{align}$$
 
 其中
@@ -1978,10 +1944,7 @@ $$\begin{align}
 则阻尼谐振子的主方程对应
 
 $$\begin{align}
-\frac{\partial P}{\partial t}
-=\frac{\partial}{\partial\alpha}\left[\left(\frac\kappa2+i\omega_0\right)\alpha P\right]
-+\frac{\partial}{\partial\alpha^*}\left[\left(\frac\kappa2-i\omega_0\right)\alpha^* P\right]
-+\kappa\bar n\,\frac{\partial^2P}{\partial\alpha\,\partial\alpha^*}.
+\frac{\partial P}{\partial t} =\frac{\partial}{\partial\alpha}\left[\left(\frac\kappa2+i\omega_0\right)\alpha P\right] +\frac{\partial}{\partial\alpha^*}\left[\left(\frac\kappa2-i\omega_0\right)\alpha^* P\right] +\kappa\bar n\,\frac{\partial^2P}{\partial\alpha\,\partial\alpha^*}.
 \end{align}$$
 
 前两项是漂移项，最后一项是扩散项。
@@ -2117,8 +2080,7 @@ $$\begin{align}
 关于延迟时间 $\tau$ 满足同一个齐次演化矩阵 $M$：
 
 $$\begin{align}
-\frac{d}{d\tau}\langle\vec O(t+\tau)B(t)\rangle
-=M\langle\vec O(t+\tau)B(t)\rangle
+\frac{d}{d\tau}\langle\vec O(t+\tau)B(t)\rangle =M\langle\vec O(t+\tau)B(t)\rangle
 \end{align}$$
 
 初值由 $\tau=0$ 的算符乘积给出。
@@ -2206,8 +2168,7 @@ a(\omega)=-\frac{\sqrt\kappa}{\kappa/2-i(\omega-\omega_c)}a_{\mathrm{in}}(\omega
 因此
 
 $$\begin{align}
-a_{\mathrm{out}}(\omega)
-=\left[1-\frac{\kappa}{\kappa/2-i(\omega-\omega_c)}\right]a_{\mathrm{in}}(\omega).
+a_{\mathrm{out}}(\omega) =\left[1-\frac{\kappa}{\kappa/2-i(\omega-\omega_c)}\right]a_{\mathrm{in}}(\omega).
 \end{align}$$
 
 方括号中的系数就是单端口腔的散射振幅。
@@ -2245,13 +2206,11 @@ $$\begin{align}
 频域解为
 
 $$\begin{align}
-X_{1,\mathrm{out}}(\omega)
-=-\frac{\kappa/2+\epsilon+i\omega}{\kappa/2-\epsilon-i\omega}X_{1,\mathrm{in}}(\omega),
+X_{1,\mathrm{out}}(\omega) =-\frac{\kappa/2+\epsilon+i\omega}{\kappa/2-\epsilon-i\omega}X_{1,\mathrm{in}}(\omega),
 \end{align}$$
 
 $$\begin{align}
-X_{2,\mathrm{out}}(\omega)
-=-\frac{\kappa/2-\epsilon+i\omega}{\kappa/2+\epsilon-i\omega}X_{2,\mathrm{in}}(\omega).
+X_{2,\mathrm{out}}(\omega) =-\frac{\kappa/2-\epsilon+i\omega}{\kappa/2+\epsilon-i\omega}X_{2,\mathrm{in}}(\omega).
 \end{align}$$
 
 若输入是真空噪声，归一化输出谱为

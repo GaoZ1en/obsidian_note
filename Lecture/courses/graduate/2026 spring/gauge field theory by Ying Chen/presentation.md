@@ -9,8 +9,7 @@ summary: "Beamer-style notes on why the basic BRST construction is insufficient,
 Free Abelian 2-form:
 
 $$\begin{align}
-S_0[B]=-\frac{1}{12}\int d^Dx\,H_{\mu\nu\rho}H^{\mu\nu\rho},
-\qquad
+S_0[B]=-\frac{1}{12}\int d^Dx\,H_{\mu\nu\rho}H^{\mu\nu\rho}, \qquad
 H_{\mu\nu\rho}=3\partial_{[\mu}B_{\nu\rho]} .
 \end{align}$$
 
@@ -23,8 +22,7 @@ $$\begin{align}
 Parameter redundancy:
 
 $$\begin{align}
-\Lambda_\mu\sim \Lambda_\mu+\partial_\mu\alpha,
-\qquad
+\Lambda_\mu\sim \Lambda_\mu+\partial_\mu\alpha, \qquad
 \delta_{\Lambda=d\alpha}B=0 .
 \end{align}$$
 
@@ -41,16 +39,14 @@ G_\nu(B)=\partial^\mu B_{\mu\nu}=0 .
 Then
 
 $$\begin{align}
-\delta_\Lambda G_\nu=M_\nu^{\ \rho}\Lambda_\rho,
-\qquad
+\delta_\Lambda G_\nu=M_\nu^{\ \rho}\Lambda_\rho, \qquad
 M_\nu^{\ \rho}=\Box\delta_\nu^{\ \rho}-\partial_\nu\partial^\rho .
 \end{align}$$
 
 Naively,
 
 $$\begin{align}
-Z_{\mathrm{naive}}
-=\int DB\,\delta[G(B)]\det M\,e^{iS_0[B]} .
+Z_{\mathrm{naive}} =\int DB\,\delta[G(B)]\det M\,e^{iS_0[B]} .
 \end{align}$$
 
 ---
@@ -66,8 +62,7 @@ S_{\mathrm{gh}}=\int d^Dx\,\bar c^\nu M_\nu^{\ \rho}c_\rho .
 But
 
 $$\begin{align}
-M_\nu^{\ \rho}\partial_\rho\alpha
-=\Box\partial_\nu\alpha-\partial_\nu\Box\alpha=0 .
+M_\nu^{\ \rho}\partial_\rho\alpha =\Box\partial_\nu\alpha-\partial_\nu\Box\alpha=0 .
 \end{align}$$
 
 So $\det M=0$: the path integral still contains the redundancy of $\Lambda_\mu$.
@@ -79,24 +74,20 @@ So $\det M=0$: the path integral still contains the redundancy of $\Lambda_\mu$.
 Fields:
 
 $$\begin{align}
-X^i:\Sigma\to M,
-\qquad
+X^i:\Sigma\to M, \qquad
 A_i\in\Omega^1(\Sigma,X^*T^*M).
 \end{align}$$
 
 Action:
 
 $$\begin{align}
-S_0[X,A]
-=\int_\Sigma A_i\wedge dX^i
-+\frac12\pi^{ij}(X)A_i\wedge A_j .
+S_0[X,A] =\int_\Sigma A_i\wedge dX^i +\frac12\pi^{ij}(X)A_i\wedge A_j .
 \end{align}$$
 
 Gauge transformations:
 
 $$\begin{align}
-\delta_\epsilon X^i=\pi^{ij}(X)\epsilon_j,
-\qquad
+\delta_\epsilon X^i=\pi^{ij}(X)\epsilon_j, \qquad
 \delta_\epsilon A_i=-d\epsilon_i-\partial_i\pi^{jk}(X)A_j\epsilon_k .
 \end{align}$$
 
@@ -107,18 +98,14 @@ $$\begin{align}
 For a general Poisson tensor $\pi^{ij}(X)$,
 
 $$\begin{align}
-[\delta_{\epsilon_1},\delta_{\epsilon_2}]
-=\delta_{\epsilon_3}
-+\text{EOM terms},
-\qquad
+[\delta_{\epsilon_1},\delta_{\epsilon_2}] =\delta_{\epsilon_3} +\text{EOM terms}, \qquad
 \epsilon_{3i}=\partial_i\pi^{jk}\epsilon_{1j}\epsilon_{2k}.
 \end{align}$$
 
 The equations of motion are
 
 $$\begin{align}
-dX^i+\pi^{ij}A_j=0,
-\qquad
+dX^i+\pi^{ij}A_j=0, \qquad
 dA_i+\frac12\partial_i\pi^{jk}A_j\wedge A_k=0 .
 \end{align}$$
 
@@ -129,24 +116,20 @@ dA_i+\frac12\partial_i\pi^{jk}A_j\wedge A_k=0 .
 Gauge fixing would give
 
 $$\begin{align}
-Z_\Psi=\int D\Phi\,
-\exp\left[\frac{i}{\hbar}(S_0+s\Psi)\right].
+Z_\Psi=\int D\Phi\, \exp\left[\frac{i}{\hbar}(S_0+s\Psi)\right].
 \end{align}$$
 
 For an open algebra,
 
 $$\begin{align}
-s(S_0+s\Psi)=s^2\Psi
-\sim
-\frac{\delta\Psi}{\delta\Phi^I}
+s(S_0+s\Psi)=s^2\Psi \sim \frac{\delta\Psi}{\delta\Phi^I}
 N^{IJ}\frac{\delta S_0}{\delta\Phi^J}.
 \end{align}$$
 
 EOM insertions are not zero:
 
 $$\begin{align}
-\left\langle F\frac{\delta S_0}{\delta\Phi^I}\right\rangle
-=i\hbar\left\langle\frac{\delta F}{\delta\Phi^I}\right\rangle .
+\left\langle F\frac{\delta S_0}{\delta\Phi^I}\right\rangle =i\hbar\left\langle\frac{\delta F}{\delta\Phi^I}\right\rangle .
 \end{align}$$
 
 ---
@@ -166,8 +149,7 @@ BV does this by enlarging the field space and solving one master equation.
 Start from a general gauge theory:
 
 $$\begin{align}
-S_0[\phi],
-\qquad
+S_0[\phi], \qquad
 \delta_\epsilon\phi^i=R^i_{\alpha}(\phi)\epsilon^\alpha .
 \end{align}$$
 
@@ -180,11 +162,8 @@ $$\begin{align}
 Allow both complications:
 
 $$\begin{align}
-R^i_\alpha Z^\alpha_a=0,
-\qquad
-[R_\alpha,R_\beta]^i
-=R^i_\gamma f^\gamma_{\alpha\beta}
-+\frac{\delta S_0}{\delta\phi^j}M^{ji}_{\alpha\beta}.
+R^i_\alpha Z^\alpha_a=0, \qquad
+[R_\alpha,R_\beta]^i =R^i_\gamma f^\gamma_{\alpha\beta} +\frac{\delta S_0}{\delta\phi^j}M^{ji}_{\alpha\beta}.
 \end{align}$$
 
 Closed irreducible BRST is the special case $Z=0$ and $M=0$.
@@ -202,9 +181,7 @@ $$\begin{align}
 Then add an antifield for every $\Phi^A$:
 
 $$\begin{align}
-\Phi_A^*=(\phi_i^*,c_\alpha^*,c^*_{(1)a},\cdots),
-\qquad
-\operatorname{gh}(\Phi_A^*)=-1-\operatorname{gh}(\Phi^A).
+\Phi_A^*=(\phi_i^*,c_\alpha^*,c^*_{(1)a},\cdots), \qquad \operatorname{gh}(\Phi_A^*)=-1-\operatorname{gh}(\Phi^A).
 \end{align}$$
 
 Antifields are not new physical particles. They are bookkeeping variables for transformations, algebra, and EOM terms.
@@ -216,15 +193,8 @@ Antifields are not new physical particles. They are bookkeeping variables for tr
 Define the BV antibracket:
 
 $$\begin{align}
-(F,G)
-=\int
-\left(
-\frac{\delta_R F}{\delta\Phi^A}
-\frac{\delta_L G}{\delta\Phi_A^*}
--
-\frac{\delta_R F}{\delta\Phi_A^*}
-\frac{\delta_L G}{\delta\Phi^A}
-\right).
+(F,G) =\int \left( \frac{\delta_R F}{\delta\Phi^A} \frac{\delta_L G}{\delta\Phi_A^*} - \frac{\delta_R F}{\delta\Phi_A^*} \frac{\delta_L G}{\delta\Phi^A} \right).
+\end{align}
 \end{align}$$
 
 This bracket pairs each field with its antifield.
@@ -242,19 +212,14 @@ s_{\mathrm{BV}}F=(F,S_{\mathrm{BV}}).
 The minimal action is built by adding the data of the gauge system:
 
 $$\begin{align}
-S_{\min}
-=S_0
-+\phi_i^*R^i_\alpha c^\alpha
-+\cdots .
+S_{\min} =S_0 +\phi_i^*R^i_\alpha c^\alpha +\cdots .
 \end{align}$$
 
 The next terms record the possible complications:
 
 $$\begin{align}
 S_{\min}\supset
-c_\alpha^*Z^\alpha_a c^a_{(1)}
-+c_\gamma^*f^\gamma_{\alpha\beta}c^\alpha c^\beta
-+\phi_i^*\phi_j^*M^{ji}_{\alpha\beta}c^\alpha c^\beta .
+c_\alpha^*Z^\alpha_a c^a_{(1)} +c_\gamma^*f^\gamma_{\alpha\beta}c^\alpha c^\beta +\phi_i^*\phi_j^*M^{ji}_{\alpha\beta}c^\alpha c^\beta .
 \end{align}$$
 
 The master equation fixes the precise coefficients and signs.
@@ -308,8 +273,7 @@ It simultaneously imposes:
 Then
 
 $$\begin{align}
-s_{\mathrm{BV}}^2F
-=\frac12(F,(S_{\mathrm{BV}},S_{\mathrm{BV}}))=0 .
+s_{\mathrm{BV}}^2F =\frac12(F,(S_{\mathrm{BV}},S_{\mathrm{BV}}))=0 .
 \end{align}$$
 
 Nilpotency is off shell on the extended BV space.
@@ -327,8 +291,7 @@ $$\begin{align}
 Concretely,
 
 $$\begin{align}
-\bar c^{*\alpha}=G^\alpha+\frac{\xi}{2}b^\alpha,
-\qquad
+\bar c^{*\alpha}=G^\alpha+\frac{\xi}{2}b^\alpha, \qquad
 \phi_i^*=\bar c_\alpha\frac{\delta G^\alpha}{\delta\phi^i}.
 \end{align}$$
 
@@ -339,18 +302,13 @@ $$\begin{align}
 After substituting $\Phi^*=\delta\Psi/\delta\Phi$,
 
 $$\begin{align}
-S_\Psi
-=S_0
-+b_\alpha G^\alpha
-+\frac{\xi}{2}b_\alpha b^\alpha
--\bar c_\alpha M^\alpha_{\ \beta}c^\beta .
+S_\Psi =S_0 +b_\alpha G^\alpha +\frac{\xi}{2}b_\alpha b^\alpha -\bar c_\alpha M^\alpha_{\ \beta}c^\beta .
 \end{align}$$
 
 Here
 
 $$\begin{align}
-M^\alpha_{\ \beta}
-=\frac{\delta G^\alpha}{\delta\phi^i}R^i_\beta
+M^\alpha_{\ \beta} =\frac{\delta G^\alpha}{\delta\phi^i}R^i_\beta
 \end{align}$$
 
 is the Faddeev-Popov operator.
@@ -360,8 +318,7 @@ So $b_\alpha$ imposes the gauge condition, while $\bar c_\alpha,c^\alpha$ produc
 Before that, they let the master equation see the EOM:
 
 $$\begin{align}
-s_{\mathrm{BV}}\phi_i^*
-=\frac{\delta S_0}{\delta\phi^i}+\cdots .
+s_{\mathrm{BV}}\phi_i^* =\frac{\delta S_0}{\delta\phi^i}+\cdots .
 \end{align}$$
 
 So antifields are not extra propagating fields; they are sources that make the algebraic consistency conditions local and off shell.
@@ -373,18 +330,14 @@ So antifields are not extra propagating fields; they are sources that make the a
 If the theory is closed and irreducible,
 
 $$\begin{align}
-Z=0,
-\qquad
+Z=0, \qquad
 M=0 .
 \end{align}$$
 
 Then the minimal BV action reduces to the familiar form
 
 $$\begin{align}
-S_{\min}
-=S_0
-+\phi_i^*R^i_\alpha c^\alpha
-+\frac12 c_\gamma^*f^\gamma_{\alpha\beta}c^\alpha c^\beta .
+S_{\min} =S_0 +\phi_i^*R^i_\alpha c^\alpha +\frac12 c_\gamma^*f^\gamma_{\alpha\beta}c^\alpha c^\beta .
 \end{align}$$
 
 The point of BV is that this is only the easiest truncation, not the starting assumption.
@@ -404,8 +357,7 @@ G^\alpha(\phi)=0,
 add a non-minimal pair:
 
 $$\begin{align}
-s\bar c_\alpha=b_\alpha,
-\qquad
+s\bar c_\alpha=b_\alpha, \qquad
 sb_\alpha=0 .
 \end{align}$$
 
@@ -426,9 +378,7 @@ The gauge-fixing fermion has ghost number $-1$.
 For a gauge condition $G^\alpha(\phi)=0$, choose
 
 $$\begin{align}
-\Psi
-=\int \bar c_\alpha
-\left(G^\alpha(\phi)+\frac{\xi}{2}b^\alpha\right).
+\Psi =\int \bar c_\alpha \left(G^\alpha(\phi)+\frac{\xi}{2}b^\alpha\right).
 \end{align}$$
 
 Then eliminate antifields by
@@ -444,24 +394,19 @@ $$\begin{align}
 The gauge-fixed action is
 
 $$\begin{align}
-S_\Psi(\Phi)
-=S_{\mathrm{BV}}
-\left(\Phi,\Phi^*=\frac{\delta\Psi}{\delta\Phi}\right).
+S_\Psi(\Phi) =S_{\mathrm{BV}} \left(\Phi,\Phi^*=\frac{\delta\Psi}{\delta\Phi}\right).
 \end{align}$$
 
 Then
 
 $$\begin{align}
-Z_\Psi
-=\int D\Phi\,
-\exp\left[\frac{i}{\hbar}S_\Psi(\Phi)\right].
+Z_\Psi =\int D\Phi\, \exp\left[\frac{i}{\hbar}S_\Psi(\Phi)\right].
 \end{align}$$
 
 At quantum level:
 
 $$\begin{align}
-\frac12(S_{\mathrm{BV}},S_{\mathrm{BV}})
--i\hbar\Delta S_{\mathrm{BV}}=0 .
+\frac12(S_{\mathrm{BV}},S_{\mathrm{BV}}) -i\hbar\Delta S_{\mathrm{BV}}=0 .
 \end{align}$$
 
 ---
@@ -471,10 +416,8 @@ $$\begin{align}
 Minimal fields:
 
 $$\begin{align}
-B_{\mu\nu},
-\qquad
-c_\mu,
-\qquad
+B_{\mu\nu}, \qquad
+c_\mu, \qquad
 \rho .
 \end{align}$$
 
@@ -486,10 +429,8 @@ Meanings:
 Antifields:
 
 $$\begin{align}
-B^{*\mu\nu},
-\qquad
-c^{*\mu},
-\qquad
+B^{*\mu\nu}, \qquad
+c^{*\mu}, \qquad
 \rho^* .
 \end{align}$$
 
@@ -500,11 +441,8 @@ c^{*\mu},
 The minimal BV action is
 
 $$\begin{align}
-S_{\min}
-=S_0[B]
-+\int d^Dx\,B^{*\mu\nu}
-(\partial_\mu c_\nu-\partial_\nu c_\mu)
-+\int d^Dx\,c^{*\mu}\partial_\mu\rho .
+S_{\min} =S_0[B] +\int d^Dx\,B^{*\mu\nu}
+(\partial_\mu c_\nu-\partial_\nu c_\mu) +\int d^Dx\,c^{*\mu}\partial_\mu\rho .
 \end{align}$$
 
 The first antifield term says
@@ -532,9 +470,7 @@ s\rho=0 .
 Nilpotency is explicit:
 
 $$\begin{align}
-s^2B_{\mu\nu}
-=\partial_\mu\partial_\nu\rho
--\partial_\nu\partial_\mu\rho=0 .
+s^2B_{\mu\nu} =\partial_\mu\partial_\nu\rho -\partial_\nu\partial_\mu\rho=0 .
 \end{align}$$
 
 The missing direction in the naive FP determinant has become part of the minimal BV complex.
@@ -546,11 +482,7 @@ The missing direction in the naive FP determinant has become part of the minimal
 A schematic gauge-fixing fermion is
 
 $$\begin{align}
-\Psi
-=\int d^Dx\,
-\bar c^\nu\partial^\mu B_{\mu\nu}
-+\int d^Dx\,\bar\rho\,\partial^\mu c_\mu
-+\cdots .
+\Psi =\int d^Dx\, \bar c^\nu\partial^\mu B_{\mu\nu} +\int d^Dx\,\bar\rho\,\partial^\mu c_\mu +\cdots .
 \end{align}$$
 
 Interpretation:
@@ -575,27 +507,22 @@ B_{\mu\nu}.
 The naive operator has zero modes:
 
 $$\begin{align}
-M_1=d^\dagger d,
-\qquad
+M_1=d^\dagger d, \qquad
 \ker M_1\supset \operatorname{im}d .
 \end{align}$$
 
 BV gauge fixing also imposes a condition on the vector ghost:
 
 $$\begin{align}
-d^\dagger B=0,
-\qquad
+d^\dagger B=0, \qquad
 d^\dagger c=0 .
 \end{align}$$
 
 So the determinant is taken on the quotient by the exact ghost direction:
 
 $$\begin{align}
-\det M_1
-\quad\leadsto\quad
-\det{}'\!\left(d^\dagger d\big|_{\Omega^1/\operatorname{im}d}\right)
-\times
-\text{scalar ghost factor}.
+\det M_1 \quad\leadsto\quad
+\det{}'\!\left(d^\dagger d\big|_{\Omega^1/\operatorname{im}d}\right) \times \text{scalar ghost factor}.
 \end{align}$$
 
 BV does not make $M_1$ invertible on all one-forms; it replaces the singular determinant by the determinant of the gauge complex.
@@ -607,10 +534,8 @@ BV does not make $M_1$ invertible on all one-forms; it replaces the singular det
 Minimal fields:
 
 $$\begin{align}
-X^i,
-\qquad
-A_i,
-\qquad
+X^i, \qquad
+A_i, \qquad
 c_i .
 \end{align}$$
 
@@ -619,10 +544,8 @@ The ghost $c_i$ replaces the gauge parameter $\epsilon_i$.
 Antifields:
 
 $$\begin{align}
-X_i^*,
-\qquad
-A^{*i},
-\qquad
+X_i^*, \qquad
+A^{*i}, \qquad
 c^{*i}.
 \end{align}$$
 
@@ -633,12 +556,8 @@ c^{*i}.
 One common component form, up to sign conventions, is
 
 $$\begin{aligned}
-S_{\min}=S_0
-&+\int_\Sigma X_i^*\pi^{ij}c_j
--\int_\Sigma A^{*i}\wedge
-\left(dc_i+\partial_i\pi^{jk}A_jc_k\right)\\
-&+\frac12\int_\Sigma c^{*i}\partial_i\pi^{jk}c_jc_k
-+\frac14\int_\Sigma A^{*i}\wedge A^{*j}
+S_{\min}=S_0 &+\int_\Sigma X_i^*\pi^{ij}c_j -\int_\Sigma A^{*i}\wedge \left(dc_i+\partial_i\pi^{jk}A_jc_k\right)\\
+&+\frac12\int_\Sigma c^{*i}\partial_i\pi^{jk}c_jc_k +\frac14\int_\Sigma A^{*i}\wedge A^{*j}
 \partial_i\partial_j\pi^{kl}c_kc_l .
 \end{aligned}$$
 
@@ -709,9 +628,7 @@ BV is a construction, not just a slogan:
 Witten's cubic open string field theory has the schematic action
 
 $$\begin{align}
-S_{\mathrm{OSFT}}
-=\frac12\langle \Psi,Q_B\Psi\rangle
-+\frac{g_o}{3}\langle \Psi,\Psi*\Psi\rangle .
+S_{\mathrm{OSFT}} =\frac12\langle \Psi,Q_B\Psi\rangle +\frac{g_o}{3}\langle \Psi,\Psi*\Psi\rangle .
 \end{align}$$
 
 Here:
@@ -724,9 +641,7 @@ Here:
 The classical gauge transformation is
 
 $$\begin{align}
-\delta\Psi
-=Q_B\Lambda
-+g_o(\Psi*\Lambda-\Lambda*\Psi).
+\delta\Psi =Q_B\Lambda +g_o(\Psi*\Lambda-\Lambda*\Psi).
 \end{align}$$
 
 ---
@@ -740,10 +655,8 @@ In the BV formulation, $\Psi$ is allowed to contain components of all ghost numb
 The same cubic functional becomes a BV master action. The master equation follows from the cyclicity of the BPZ pairing and the algebraic identities
 
 $$\begin{align}
-Q_B^2=0,
-\qquad
-Q_B(A*B)=(Q_BA)*B+(-1)^{|A|}A*(Q_BB),
-\qquad
+Q_B^2=0, \qquad
+Q_B(A*B)=(Q_BA)*B+(-1)^{|A|}A*(Q_BB), \qquad
 (A*B)*C=A*(B*C).
 \end{align}$$
 
