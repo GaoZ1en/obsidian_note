@@ -1,0 +1,1015 @@
+\documentclass[aspectratio=169,professionalfonts]{beamer}
+
+% Compile from this directory with:
+% latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build "presentation.tex"
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+
+\pdfstringdefDisableCommands{%
+  \def\translate#1{#1}%
+}
+
+% ---------- Presentation metadata ----------
+\title[Where Basic BRST Fails]{Where Basic BRST Becomes Insufficient}
+\subtitle{Reducibility, open algebras, and the BV master equation}
+\author[Group Presentation]{Group Presentation}
+\institute{Gauge Field Theory by Ying Chen \\ Spring 2026}
+\date{\today}
+
+% ---------- Visual system ----------
+\definecolor{CourseInk}{HTML}{1D2433}
+\definecolor{CourseBlue}{HTML}{2454A6}
+\definecolor{CourseTeal}{HTML}{16827A}
+\definecolor{CourseGold}{HTML}{B78628}
+\definecolor{CourseRed}{HTML}{B54750}
+\definecolor{CourseMist}{HTML}{F3F5F7}
+\definecolor{CourseLine}{HTML}{CED4DA}
+
+\mode<presentation>{
+  \useinnertheme{rectangles}
+  \useoutertheme{default}
+  \usefonttheme{professionalfonts}
+}
+
+\setbeamercolor{normal text}{fg=CourseInk,bg=white}
+\setbeamercolor{structure}{fg=CourseBlue}
+\setbeamercolor{frametitle}{fg=CourseInk,bg=white}
+\setbeamercolor{framesubtitle}{fg=CourseTeal,bg=white}
+\setbeamercolor{block title}{fg=white,bg=CourseBlue}
+\setbeamercolor{block body}{fg=CourseInk,bg=CourseMist}
+\setbeamercolor{block title alerted}{fg=white,bg=CourseRed}
+\setbeamercolor{block body alerted}{fg=CourseInk,bg=CourseMist}
+\setbeamercolor{block title example}{fg=white,bg=CourseTeal}
+\setbeamercolor{block body example}{fg=CourseInk,bg=CourseMist}
+\setbeamercolor{foot left}{fg=CourseInk,bg=CourseMist}
+\setbeamercolor{foot right}{fg=white,bg=CourseBlue}
+\setbeamercolor{course band}{fg=CourseInk,bg=CourseMist}
+
+\setbeamerfont{title}{series=\bfseries,size=\LARGE}
+\setbeamerfont{subtitle}{size=\large}
+\setbeamerfont{frametitle}{series=\bfseries,size=\large}
+\setbeamerfont{framesubtitle}{size=\small}
+\setbeamerfont{block title}{series=\bfseries}
+\setbeamerfont{footline}{size=\scriptsize}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\color{CourseTeal}\small$\blacktriangleright$}
+\setbeamertemplate{itemize subitem}{\color{CourseGold}\scriptsize$\bullet$}
+\setbeamertemplate{enumerate item}{\color{CourseBlue}\insertenumlabel.}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+\setbeamertemplate{frametitle}{%
+  \vspace{0.28cm}%
+  \hspace*{0.45cm}\begin{minipage}{0.84\paperwidth}
+    \usebeamerfont{frametitle}\insertframetitle\par
+    \ifx\insertframesubtitle\empty
+    \else
+      \vspace{0.05cm}{\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle\par}
+    \fi
+    \vspace{0.10cm}{\color{CourseLine}\rule{\linewidth}{0.6pt}}
+  \end{minipage}
+  \vspace{-0.05cm}
+}
+
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.74\paperwidth,ht=2.6ex,dp=1.1ex,leftskip=0.45cm]{foot left}%
+      \usebeamerfont{footline}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.26\paperwidth,ht=2.6ex,dp=1.1ex,rightskip=0.45cm plus1fil]{foot right}%
+      \usebeamerfont{footline}\hfill\insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}%
+  }%
+}
+
+\setbeamertemplate{title page}{%
+  \vspace*{0.75cm}
+  {\color{CourseBlue}\rule{0.18\paperwidth}{2.2pt}\par}
+  \vspace{0.45cm}
+  {\usebeamerfont{title}\usebeamercolor[fg]{normal text}\inserttitle\par}
+  \vspace{0.18cm}
+  {\usebeamerfont{subtitle}\color{CourseTeal}\insertsubtitle\par}
+  \vspace{0.70cm}
+  {\usebeamerfont{author}\insertauthor\par}
+  \vspace{0.12cm}
+  {\usebeamerfont{institute}\insertinstitute\par}
+  \vfill
+  \begin{beamercolorbox}[wd=\linewidth,sep=0.28cm,rounded=true]{course band}
+    \small Gauge consistency as one equation on the extended field space.
+    \hfill \insertdate
+  \end{beamercolorbox}
+}
+
+\AtBeginSection[]{
+  \begin{frame}[plain,noframenumbering]
+    \vfill
+    {\color{CourseBlue}\rule{0.16\paperwidth}{2pt}\par}
+    \vspace{0.35cm}
+    {\LARGE\bfseries\insertsection\par}
+    \vspace{0.12cm}
+    {\color{CourseTeal}Gauge field theory group discussion}
+    \vfill
+  \end{frame}
+}
+
+% ---------- Small helper commands ----------
+\newcommand{\keyterm}[1]{\textcolor{CourseBlue}{\textbf{#1}}}
+\newcommand{\sidehead}[1]{\textcolor{CourseTeal}{\textbf{#1}}}
+\newcommand{\slidecite}[1]{{\scriptsize\color{CourseGold}#1}}
+\newcommand{\gh}{\ensuremath{\operatorname{gh}}}
+\newcommand{\EOM}{\ensuremath{\operatorname{EOM}}}
+\newcommand{\BV}{\ensuremath{S_{\mathrm{BV}}}}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}{Talk Map}
+  \tableofcontents
+\end{frame}
+
+\section{Motivation}
+
+\begin{frame}{Thesis}
+  \begin{alertblock}{Main claim}
+    Basic BRST is cleanest when the gauge algebra is closed and irreducible.
+    BV is the systematic extension that also handles reducible symmetries and
+    gauge algebras that close only modulo equations of motion.
+  \end{alertblock}
+
+  \vspace{0.25cm}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.31\textwidth}
+    \begin{block}{Reducibility}
+      Gauge parameters can have their own gauge redundancy.
+    \end{block}
+
+    \column{0.31\textwidth}
+    \begin{block}{Open algebra}
+      Commutators can close only up to \EOM{} terms.
+    \end{block}
+
+    \column{0.31\textwidth}
+    \begin{block}{BV answer}
+      Add ghosts, antifields, and solve one master equation.
+    \end{block}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{The Two Obstructions}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.47\textwidth}
+    \begin{exampleblock}{2-form gauge theory}
+      \[
+        \Lambda_\mu \sim \Lambda_\mu+\partial_\mu\alpha
+      \]
+      The gauge parameter is itself redundant, so a single vector ghost leaves
+      a zero mode in the Faddeev-Popov operator.
+    \end{exampleblock}
+
+    \column{0.47\textwidth}
+    \begin{exampleblock}{Poisson sigma model}
+      \[
+        [\delta_{\epsilon_1},\delta_{\epsilon_2}]
+        =\delta_{\epsilon_3}+\EOM
+      \]
+      The algebra knows about equations of motion, so off-shell nilpotency
+      cannot be imposed on the original fields alone.
+    \end{exampleblock}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{2-Form: Reducible Gauge Parameter}
+  \sidehead{Free Abelian 2-form}
+  \[
+    S_0[B]=-\frac{1}{12}\int d^Dx\,H_{\mu\nu\rho}H^{\mu\nu\rho},
+    \qquad
+    H_{\mu\nu\rho}=3\partial_{[\mu}B_{\nu\rho]} .
+  \]
+
+  \sidehead{Gauge symmetry}
+  \[
+    \delta_\Lambda B_{\mu\nu}
+    =\partial_\mu\Lambda_\nu-\partial_\nu\Lambda_\mu .
+  \]
+
+  \begin{block}{Parameter redundancy}
+    \[
+      \Lambda_\mu\sim\Lambda_\mu+\partial_\mu\alpha,
+      \qquad
+      \delta_{\Lambda=d\alpha}B_{\mu\nu}=0 .
+    \]
+  \end{block}
+\end{frame}
+
+\begin{frame}{2-Form: Naive Faddeev-Popov Operator}
+  Choose the Lorenz-type gauge condition
+  \[
+    G_\nu(B)=\partial^\mu B_{\mu\nu}=0 .
+  \]
+
+  Its variation is
+  \[
+    \delta_\Lambda G_\nu=M_\nu{}^\rho\Lambda_\rho,
+    \qquad
+    M_\nu{}^\rho=\Box\delta_\nu{}^\rho-\partial_\nu\partial^\rho .
+  \]
+
+  The naive gauge-fixed expression would contain
+  \[
+    Z_{\mathrm{naive}}
+    =\int DB\,\delta[G(B)]\det M\,e^{iS_0[B]} .
+  \]
+\end{frame}
+
+\begin{frame}{2-Form: One Vector Ghost Is Not Enough}
+  The vector ghost action would be
+  \[
+    S_{\mathrm{gh}}
+    =\int d^Dx\,\bar c^\nu M_\nu{}^\rho c_\rho .
+  \]
+
+  But exact gauge parameters lie in the kernel:
+  \[
+    M_\nu{}^\rho\partial_\rho\alpha
+    =\Box\partial_\nu\alpha-\partial_\nu\Box\alpha=0 .
+  \]
+
+  \begin{alertblock}{Consequence}
+    The determinant is singular because the gauge fixing did not divide by
+    the redundancy of the gauge parameter.
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}{Poisson Sigma Model: Data}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.45\textwidth}
+    \sidehead{Fields}
+    \[
+      \begin{aligned}
+        X^i&:\Sigma\to M,\\
+        A_i&\in\Omega^1(\Sigma,X^*T^*M).
+      \end{aligned}
+    \]
+
+    \sidehead{Action}
+    \[
+      \begin{aligned}
+        S_0[X,A]
+        &=\int_\Sigma A_i\wedge dX^i\\
+        &\quad+\frac12\pi^{ij}(X)A_i\wedge A_j .
+      \end{aligned}
+    \]
+
+    \column{0.49\textwidth}
+    \sidehead{Gauge transformations}
+    \[
+      \delta_\epsilon X^i=\pi^{ij}(X)\epsilon_j ,
+    \]
+    \[
+      \begin{aligned}
+        \delta_\epsilon A_i
+        &=-d\epsilon_i\\
+        &\quad-\partial_i\pi^{jk}(X)A_j\epsilon_k .
+      \end{aligned}
+    \]
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Poisson Sigma Model: On-Shell Closure}
+  For a general Poisson tensor,
+  \[
+    [\delta_{\epsilon_1},\delta_{\epsilon_2}]
+    =\delta_{\epsilon_3}+\EOM,
+    \qquad
+    \epsilon_{3i}
+    =\partial_i\pi^{jk}\epsilon_{1j}\epsilon_{2k}.
+  \]
+
+  The equations of motion are
+  \[
+    dX^i+\pi^{ij}A_j=0,
+    \qquad
+    dA_i+\frac12\partial_i\pi^{jk}A_j\wedge A_k=0 .
+  \]
+
+  \begin{block}{Message}
+    Nilpotency cannot be made off-shell without recording the \EOM{} part of
+    the algebra.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Path Integral Obstruction}
+  Gauge fixing by a BRST-exact deformation would suggest
+  \[
+    Z_\Psi=\int D\Phi\,
+    \exp\left[\frac{i}{\hbar}(S_0+s\Psi)\right].
+  \]
+
+  For an open algebra,
+  \[
+    s(S_0+s\Psi)=s^2\Psi
+    \sim
+    \frac{\delta\Psi}{\delta\Phi^I}
+    N^{IJ}\frac{\delta S_0}{\delta\Phi^J}.
+  \]
+
+  \[
+    \left\langle F\frac{\delta S_0}{\delta\Phi^I}\right\rangle
+    =i\hbar\left\langle\frac{\delta F}{\delta\Phi^I}\right\rangle .
+  \]
+
+  \begin{alertblock}{Interpretation}
+    \EOM{} insertions are not zero as operator insertions in the path integral.
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}{Moral}
+  \begin{itemize}
+    \item Reducible theories need ghosts for the redundancies of gauge
+      parameters.
+    \item Open algebras need a formalism that remembers which terms are
+      proportional to equations of motion.
+    \item BV does both by enlarging the field space and solving one equation.
+  \end{itemize}
+
+  \vspace{0.25cm}
+  \begin{block}{BV slogan}
+    Gauge transformations, their algebra, reducibility, Jacobi identities, and
+    \EOM{} terms are all encoded in the master action.
+  \end{block}
+\end{frame}
+
+\section{BV Construction}
+
+\begin{frame}{General Input}
+  Start from a gauge theory
+  \[
+    S_0[\phi],
+    \qquad
+    \delta_\epsilon\phi^i=R^i_\alpha(\phi)\epsilon^\alpha .
+  \]
+
+  Gauge invariance means
+  \[
+    \frac{\delta S_0}{\delta\phi^i}R^i_\alpha=0 .
+  \]
+
+  Allow both complications:
+  \[
+    R^i_\alpha Z^\alpha_a=0,
+    \qquad
+    [R_\alpha,R_\beta]^i
+    =R^i_\gamma f^\gamma_{\alpha\beta}
+    +\frac{\delta S_0}{\delta\phi^j}M^{ji}_{\alpha\beta}.
+  \]
+\end{frame}
+
+\begin{frame}{Fields, Ghosts, Antifields}
+  Add ghosts for every stage of the gauge complex:
+  \[
+    \Phi^A=(\phi^i,c^\alpha,c^a_{(1)},\ldots).
+  \]
+
+  Add an antifield for every field:
+  \[
+    \Phi_A^*=(\phi_i^*,c_\alpha^*,c^*_{(1)a},\ldots),
+    \qquad
+    \gh(\Phi_A^*)=-1-\gh(\Phi^A).
+  \]
+
+  \begin{exampleblock}{Role of antifields}
+    Antifields are not new propagating particles. They are sources that record
+    transformations, algebra, reducibility, and \EOM{} terms.
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}{BV Antibracket}
+  The BV antibracket pairs each field with its antifield:
+  \[
+    (F,G)
+    =\int
+    \left(
+    \frac{\delta_R F}{\delta\Phi^A}
+    \frac{\delta_L G}{\delta\Phi_A^*}
+    -
+    \frac{\delta_R F}{\delta\Phi_A^*}
+    \frac{\delta_L G}{\delta\Phi^A}
+    \right).
+  \]
+
+  The BV differential is Hamiltonian:
+  \[
+    s_{\mathrm{BV}}F=(F,\BV).
+  \]
+
+  \begin{block}{Useful picture}
+    The antibracket turns the master action into the generator of all BRST/BV
+    transformations on the extended space.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Minimal BV Action: First Layers}
+  The minimal action starts with the classical action and adds the gauge data:
+  \[
+    S_{\min}
+    =S_0+\phi_i^*R^i_\alpha c^\alpha+\cdots .
+  \]
+
+  The next terms record the possible complications:
+  \[
+    S_{\min}\supset
+    c_\alpha^*Z^\alpha_a c^a_{(1)}
+    +c_\gamma^*f^\gamma_{\alpha\beta}c^\alpha c^\beta
+    +\phi_i^*\phi_j^*M^{ji}_{\alpha\beta}c^\alpha c^\beta .
+  \]
+
+  \slidecite{Precise coefficients and signs are fixed by the master equation and by parity conventions.}
+\end{frame}
+
+\begin{frame}{What the Antifield Terms Mean}
+  \small
+  \begin{tabular}{>{\raggedright\arraybackslash}p{0.30\textwidth}
+                  >{\raggedright\arraybackslash}p{0.35\textwidth}
+                  >{\raggedright\arraybackslash}p{0.24\textwidth}}
+    \toprule
+    Term & Encoded datum & Why it matters \\
+    \midrule
+    $\phi_i^*R^i_\alpha c^\alpha$ &
+    Gauge transformations &
+    Generates $s\phi^i$. \\
+    $c_\alpha^*Z^\alpha_a c^a_{(1)}$ &
+    Reducibility &
+    Adds ghost-for-ghosts. \\
+    $c_\gamma^*f^\gamma_{\alpha\beta}c^\alpha c^\beta$ &
+    Gauge algebra &
+    Generates the ghost bracket. \\
+    $\phi_i^*\phi_j^*M^{ji}_{\alpha\beta}c^\alpha c^\beta$ &
+    Open-algebra \EOM{} term &
+    Restores off-shell nilpotency. \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+\begin{frame}{The Master Equation}
+  The central condition is
+  \[
+    (\BV,\BV)=0 .
+  \]
+
+  It simultaneously imposes:
+  \begin{itemize}
+    \item invariance of $S_0$;
+    \item closure of gauge transformations;
+    \item reducibility relations;
+    \item Jacobi and higher identities;
+    \item cancellation of open-algebra \EOM{} terms.
+  \end{itemize}
+
+  \begin{alertblock}{One equation}
+    The master equation is the compact replacement for many separate
+    consistency checks.
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}{Off-Shell Nilpotency}
+  If the master equation holds, the BV differential squares to zero:
+  \[
+    s_{\mathrm{BV}}^2F
+    =\frac12(F,(\BV,\BV))=0 .
+  \]
+
+  \begin{block}{Point of the extension}
+    The nilpotency is off shell on the extended field-antifield space, even
+    when the original gauge algebra closed only modulo \EOM{} terms.
+  \end{block}
+
+  \vspace{0.2cm}
+  Closed irreducible BRST is the special case where there are no
+  ghost-for-ghosts and no antifield-quadratic open-algebra corrections.
+\end{frame}
+
+\begin{frame}{Closed BRST as a Truncation}
+  If the theory is closed and irreducible,
+  \[
+    Z=0,
+    \qquad
+    M=0 .
+  \]
+
+  Then
+  \[
+    S_{\min}
+    =S_0
+    +\phi_i^*R^i_\alpha c^\alpha
+    +\frac12 c_\gamma^*f^\gamma_{\alpha\beta}c^\alpha c^\beta .
+  \]
+
+  \begin{exampleblock}{Interpretation}
+    Familiar BRST is the easiest truncation of BV, not the most general
+    starting point.
+  \end{exampleblock}
+\end{frame}
+
+\section{Gauge Fixing}
+
+\begin{frame}{Why Antifields Are Useful}
+  Before gauge fixing, antifields expose the equations of motion:
+  \[
+    s_{\mathrm{BV}}\phi_i^*
+    =\frac{\delta S_0}{\delta\phi^i}+\cdots .
+  \]
+
+  After gauge fixing, they are eliminated by a choice of Lagrangian submanifold:
+  \[
+    \Phi_A^*=\frac{\delta\Psi}{\delta\Phi^A}.
+  \]
+
+  \begin{block}{Practical meaning}
+    Antifields are sources for consistency before gauge fixing, then become
+    derivatives of the gauge-fixing fermion.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Non-Minimal Pair}
+  Minimal BV knows the gauge symmetry, but it has not chosen a gauge.
+
+  To impose
+  \[
+    G^\alpha(\phi)=0,
+  \]
+  add a contractible pair
+  \[
+    s\bar c_\alpha=b_\alpha,
+    \qquad
+    sb_\alpha=0 .
+  \]
+
+  In the BV action:
+  \[
+    S_{\mathrm{nm}}=S_{\min}+\int \bar c^{*\alpha}b_\alpha .
+  \]
+\end{frame}
+
+\begin{frame}{Gauge-Fixing Fermion}
+  The gauge-fixing fermion has ghost number $-1$.
+
+  For a gauge condition $G^\alpha(\phi)=0$, choose
+  \[
+    \Psi
+    =\int \bar c_\alpha
+    \left(G^\alpha(\phi)+\frac{\xi}{2}b^\alpha\right).
+  \]
+
+  Then set
+  \[
+    \bar c^{*\alpha}=G^\alpha+\frac{\xi}{2}b^\alpha,
+    \qquad
+    \phi_i^*=\bar c_\alpha\frac{\delta G^\alpha}{\delta\phi^i}.
+  \]
+\end{frame}
+
+\begin{frame}{What Gauge Fixing Produces}
+  After substituting $\Phi^*=\delta\Psi/\delta\Phi$,
+  \[
+    S_\Psi
+    =S_0
+    +b_\alpha G^\alpha
+    +\frac{\xi}{2}b_\alpha b^\alpha
+    -\bar c_\alpha M^\alpha{}_\beta c^\beta .
+  \]
+
+  Here
+  \[
+    M^\alpha{}_\beta
+    =\frac{\delta G^\alpha}{\delta\phi^i}R^i_\beta
+  \]
+  is the Faddeev-Popov operator.
+
+  \begin{block}{Roles}
+    $b_\alpha$ imposes the gauge condition, while
+    $\bar c_\alpha,c^\alpha$ produce the FP determinant.
+  \end{block}
+\end{frame}
+
+\begin{frame}{BV Path Integral}
+  The gauge-fixed action is
+  \[
+    S_\Psi(\Phi)
+    =
+    \BV\left(\Phi,\Phi^*=\frac{\delta\Psi}{\delta\Phi}\right).
+  \]
+
+  Then
+  \[
+    Z_\Psi
+    =\int D\Phi\,
+    \exp\left[\frac{i}{\hbar}S_\Psi(\Phi)\right].
+  \]
+
+  At quantum level the classical master equation becomes
+  \[
+    \frac12(\BV,\BV)-i\hbar\Delta\BV=0 .
+  \]
+\end{frame}
+
+\section{Worked Examples}
+
+\begin{frame}{2-Form BV Field Content}
+  Minimal fields:
+  \[
+    B_{\mu\nu},
+    \qquad
+    c_\mu,
+    \qquad
+    \rho .
+  \]
+
+  Meanings:
+  \begin{itemize}
+    \item $c_\mu$ is the ghost for $\Lambda_\mu$;
+    \item $\rho$ is the ghost for $\Lambda_\mu\sim\Lambda_\mu+\partial_\mu\alpha$.
+  \end{itemize}
+
+  Antifields:
+  \[
+    B^{*\mu\nu},
+    \qquad
+    c^{*\mu},
+    \qquad
+    \rho^* .
+  \]
+\end{frame}
+
+\begin{frame}{2-Form Minimal BV Action}
+  \[
+    S_{\min}
+    =S_0[B]
+    +\int d^Dx\,B^{*\mu\nu}
+    (\partial_\mu c_\nu-\partial_\nu c_\mu)
+    +\int d^Dx\,c^{*\mu}\partial_\mu\rho .
+  \]
+
+  This gives
+  \[
+    sB_{\mu\nu}=\partial_\mu c_\nu-\partial_\nu c_\mu,
+    \qquad
+    sc_\mu=\partial_\mu\rho,
+    \qquad
+    s\rho=0 .
+  \]
+\end{frame}
+
+\begin{frame}{2-Form Nilpotency Check}
+  Now the missing ghost direction is included:
+  \[
+    s^2B_{\mu\nu}
+    =\partial_\mu\partial_\nu\rho
+    -\partial_\nu\partial_\mu\rho=0 .
+  \]
+
+  \begin{exampleblock}{Complex}
+    \[
+      \rho
+      \xrightarrow{\ d\ }
+      c_\mu
+      \xrightarrow{\ d\ }
+      B_{\mu\nu}.
+    \]
+  \end{exampleblock}
+
+  The naive zero mode becomes a genuine part of the BV complex.
+\end{frame}
+
+\begin{frame}{2-Form Gauge Fixing}
+  A schematic gauge-fixing fermion is
+  \[
+    \Psi
+    =\int d^Dx\,
+    \bar c^\nu\partial^\mu B_{\mu\nu}
+    +\int d^Dx\,\bar\rho\,\partial^\mu c_\mu+\cdots .
+  \]
+
+  \begin{itemize}
+    \item $\bar c^\nu\partial^\mu B_{\mu\nu}$ fixes the 2-form gauge symmetry.
+    \item $\bar\rho\,\partial^\mu c_\mu$ fixes the exact direction of the vector ghost.
+  \end{itemize}
+
+  \begin{block}{Message}
+    BV fixes the whole complex, not just the original gauge field.
+  \end{block}
+\end{frame}
+
+\begin{frame}{2-Form Determinant Cure}
+  The naive operator has zero modes:
+  \[
+    M_1=d^\dagger d,
+    \qquad
+    \ker M_1\supset \operatorname{im}d .
+  \]
+
+  BV gauge fixing also imposes
+  \[
+    d^\dagger B=0,
+    \qquad
+    d^\dagger c=0 .
+  \]
+
+  \[
+    \det M_1
+    \quad\leadsto\quad
+    \det{}'\!\left(d^\dagger d\big|_{\Omega^1/\operatorname{im}d}\right)
+    \times
+    \text{scalar ghost factor}.
+  \]
+\end{frame}
+
+\begin{frame}{Poisson Sigma Model BV Fields}
+  Minimal fields:
+  \[
+    X^i,
+    \qquad
+    A_i,
+    \qquad
+    c_i .
+  \]
+
+  The ghost $c_i$ replaces the gauge parameter $\epsilon_i$.
+
+  Antifields:
+  \[
+    X_i^*,
+    \qquad
+    A^{*i},
+    \qquad
+    c^{*i}.
+  \]
+
+  \begin{block}{Open-algebra expectation}
+    Because the gauge algebra closes only on shell, the BV action should
+    contain an antifield-quadratic correction.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Poisson Sigma Model BV Action}
+  \small
+  One common component form, up to sign conventions, is
+  \[
+  \begin{aligned}
+    S_{\min}=S_0
+    &+\int_\Sigma X_i^*\pi^{ij}c_j
+    -\int_\Sigma A^{*i}\wedge
+    \left(dc_i+\partial_i\pi^{jk}A_jc_k\right)\\
+    &+\frac12\int_\Sigma c^{*i}\partial_i\pi^{jk}c_jc_k
+    +\frac14\int_\Sigma A^{*i}\wedge A^{*j}
+    \partial_i\partial_j\pi^{kl}c_kc_l .
+  \end{aligned}
+  \]
+
+  \begin{alertblock}{Key term}
+    The $A^*A^*$ term is the BV correction that records the open-algebra
+    \EOM{} contribution.
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}{Reading the Poisson Sigma Terms}
+  At antifields set to zero:
+  \[
+    sX^i=\pi^{ij}c_j .
+  \]
+
+  The one-form transforms as
+  \[
+    sA_i=-dc_i-\partial_i\pi^{jk}A_jc_k+\cdots .
+  \]
+
+  The ghost algebra is encoded by
+  \[
+    sc_i\sim \partial_i\pi^{jk}c_jc_k .
+  \]
+
+  The antifield-quadratic term records the \EOM{} part of the closure.
+\end{frame}
+
+\begin{frame}{Why the Correction Works}
+  The master equation uses the Poisson identity
+  \[
+    \pi^{\ell[i}\partial_\ell\pi^{jk]}=0 .
+  \]
+
+  Without the $A^*A^*$ term, the master equation would leave uncanceled
+  \EOM{} terms. With it,
+  \[
+    (S_{\min},S_{\min})=0 .
+  \]
+
+  \begin{exampleblock}{Conclusion}
+    The BRST differential becomes off-shell nilpotent only on the full BV
+    field-antifield space.
+  \end{exampleblock}
+\end{frame}
+
+\section{String Field Theory}
+
+\begin{frame}{Application: Cubic Open String Field Theory}
+  Witten's cubic open string field theory has schematic action
+  \[
+    S_{\mathrm{OSFT}}
+    =\frac12\langle \Psi,Q_B\Psi\rangle
+    +\frac{g_o}{3}\langle \Psi,\Psi*\Psi\rangle .
+  \]
+
+  \begin{itemize}
+    \item $\Psi$ is the open string field.
+    \item $Q_B$ is the worldsheet BRST operator.
+    \item $*$ is the open-string star product.
+    \item $\langle-,-\rangle$ is the BPZ pairing.
+  \end{itemize}
+
+  \[
+    \delta\Psi
+    =Q_B\Lambda+g_o(\Psi*\Lambda-\Lambda*\Psi).
+  \]
+\end{frame}
+
+\begin{frame}{Open String Field Theory as BV}
+  In the usual classical action, $\Psi$ has ghost number $1$.
+
+  In the BV formulation, $\Psi$ contains components of all ghost numbers.
+  Since the BPZ pairing is nonzero when the total ghost number is $3$,
+  components of ghost number $g$ pair with components of ghost number $3-g$.
+
+  \begin{block}{BV interpretation}
+    The same cubic functional becomes a BV master action after the string
+    field is enlarged to include fields and antifields simultaneously.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Algebra Behind the OSFT Master Equation}
+  The master equation follows from cyclicity of the BPZ pairing and
+  \[
+    Q_B^2=0,
+  \]
+  \[
+    Q_B(A*B)=(Q_BA)*B+(-1)^{|A|}A*(Q_BB),
+  \]
+  \[
+    (A*B)*C=A*(B*C).
+  \]
+
+  Thus consistency of the cubic vertex is encoded as
+  \[
+    (S_{\mathrm{OSFT}},S_{\mathrm{OSFT}})=0 .
+  \]
+\end{frame}
+
+\section{Close}
+
+\begin{frame}{Practical BV Recipe}
+  BV is a construction:
+  \begin{enumerate}
+    \item Write the gauge transformations.
+    \item Add ghosts and antifields.
+    \item Add antifield-linear terms for transformations.
+    \item Add higher ghost terms for reducibility.
+    \item Add antifield-quadratic terms for open algebras.
+    \item Solve $(S,S)=0$.
+    \item Choose $\Psi$ and integrate over gauge-fixed fields.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Closing Point}
+  \begin{alertblock}{One controlling equation}
+    BV turns gauge consistency into the master equation
+    \[
+      (S,S)=0 .
+    \]
+  \end{alertblock}
+
+  \begin{itemize}
+    \item Reducible theories require the ghost-for-ghost complex.
+    \item Open algebras require antifield-dependent correction terms.
+    \item Open string field theory packages the cubic vertex consistency in
+      the same BV language.
+  \end{itemize}
+\end{frame}
+
+\appendix
+
+\section{Backup}
+
+\begin{frame}{Backup: General Open Algebra}
+  \small
+  The general closure relation has the form
+  \[
+    [R_\alpha,R_\beta]^i
+    =
+    R^i_\gamma f^\gamma_{\alpha\beta}
+    +
+    \frac{\delta S_0}{\delta\phi^j}M^{ji}_{\alpha\beta}.
+  \]
+
+  The antifield-quadratic term in $S_{\min}$ is the local bookkeeping device
+  for the second term:
+  \[
+    S_{\min}\supset
+    \phi_i^*\phi_j^*M^{ji}_{\alpha\beta}c^\alpha c^\beta .
+  \]
+
+  This is why open algebras naturally push us beyond the field-only BRST
+  complex.
+\end{frame}
+
+\begin{frame}{Backup: Gauge-Fixing Substitution}
+  \small
+  For
+  \[
+    \Psi
+    =
+    \int \bar c_\alpha
+    \left(G^\alpha(\phi)+\frac{\xi}{2}b^\alpha\right),
+  \]
+  the relevant antifields are
+  \[
+    \bar c^{*\alpha}
+    =G^\alpha+\frac{\xi}{2}b^\alpha,
+    \qquad
+    \phi_i^*
+    =\bar c_\alpha\frac{\delta G^\alpha}{\delta\phi^i}.
+  \]
+
+  Substitution into the non-minimal action gives
+  \[
+    b_\alpha G^\alpha
+    +\frac{\xi}{2}b_\alpha b^\alpha
+    -\bar c_\alpha
+    \frac{\delta G^\alpha}{\delta\phi^i}R^i_\beta c^\beta .
+  \]
+\end{frame}
+
+\begin{frame}{Backup: 2-Form Complex}
+  The reducible gauge structure is the differential complex
+  \[
+    \Omega^0
+    \xrightarrow{\ d\ }
+    \Omega^1
+    \xrightarrow{\ d\ }
+    \Omega^2 .
+  \]
+
+  In components:
+  \[
+    s\rho=0,
+    \qquad
+    sc_\mu=\partial_\mu\rho,
+    \qquad
+    sB_{\mu\nu}=\partial_\mu c_\nu-\partial_\nu c_\mu .
+  \]
+
+  The identity $d^2=0$ gives $s^2=0$ on the minimal complex.
+\end{frame}
+
+\begin{frame}{Backup: Poisson Sigma Conventions}
+  \small
+  The action and gauge transformations used here are
+  \[
+    S_0[X,A]
+    =\int_\Sigma A_i\wedge dX^i
+    +\frac12\pi^{ij}(X)A_i\wedge A_j ,
+  \]
+  \[
+    \delta_\epsilon X^i=\pi^{ij}(X)\epsilon_j,
+    \qquad
+    \delta_\epsilon A_i
+    =-d\epsilon_i-\partial_i\pi^{jk}(X)A_j\epsilon_k .
+  \]
+
+  Different sign conventions move signs between the $A^*$ and $c^*$ terms,
+  but the structural role of the antifield-quadratic term is unchanged.
+\end{frame}
+
+\begin{frame}{Backup: OSFT Ghost Number Pairing}
+  \small
+  The BPZ pairing pairs components whose ghost numbers add to $3$:
+  \[
+    \langle \Psi_g,\Psi_{3-g}\rangle\neq 0 .
+  \]
+
+  Allowing the string field to contain all ghost numbers packages fields and
+  antifields into one object:
+  \[
+    \Psi=\sum_g \Psi_g .
+  \]
+
+  The cubic OSFT functional is therefore naturally suited to the BV language.
+\end{frame}
+
+\end{document}
