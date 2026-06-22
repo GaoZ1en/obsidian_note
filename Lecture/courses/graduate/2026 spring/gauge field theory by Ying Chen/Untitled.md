@@ -12,21 +12,18 @@ Take one Dirac fermion $\psi$ and one real scalar $\phi$ with interaction
 
 $$\begin{align}
 \mathcal L_{\mathrm{int}} = -g\phi\bar\psi\psi - \frac{\lambda}{4!}\phi^4.
-\end{align}
 \end{align}$$
 
 The full Lagrangian used in FeynRules was
 
 $$\begin{align}
 \mathcal L = i\bar\psi\gamma^\mu\partial_\mu\psi -m_\psi\bar\psi\psi + \frac{1}{2}\partial_\mu\phi\,\partial^\mu\phi - \frac{1}{2}m_\phi^2\phi^2 - g\phi\bar\psi\psi - \frac{\lambda}{4!}\phi^4.
-\end{align}
 \end{align}$$
 
 FeynRules returned two nonzero interaction vertices:
 
 $$\begin{align}
-\phi\phi\phi\phi:\ -i\lambda, \qquad
-\bar\psi\psi\phi:\ -ig.
+\phi\phi\phi\phi:\ -i\lambda, \qquad \bar\psi\psi\phi:\ -ig.
 \end{align}$$
 
 ## Package setup
@@ -167,8 +164,7 @@ $$\begin{align}
 is forbidden at every perturbative order:
 
 $$\begin{align}
-\mathcal M(\psi\psi\to3\phi)=0, \qquad
-d\sigma(\psi\psi\to3\phi)=0.
+\mathcal M(\psi\psi\to3\phi)=0, \qquad d\sigma(\psi\psi\to3\phi)=0.
 \end{align}$$
 
 FeynArts confirms this at one loop:
@@ -202,8 +198,7 @@ in total: 0 Classes amplitudes
 The process
 
 $$\begin{align}
-\psi(p_1)+\bar\psi(p_2)
-\to
+\psi(p_1)+\bar\psi(p_2) \to
 \phi(k_1)+\phi(k_2)+\phi(k_3)
 \end{align}$$
 
