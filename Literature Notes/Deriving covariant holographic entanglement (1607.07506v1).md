@@ -32,8 +32,7 @@ where $E_A$ is a codimension-2 bulk extremal surface anchored on $\partial A$. T
 The field theory computation of $\operatorname{Tr}\rho_A^q$ in a time-dependent state is naturally a Schwinger-Keldysh path integral with $2q$ Lorentzian folds. Assuming the boundary replica symmetry extends into the bulk, the quotient geometry has a codimension-2 fixed locus $e_q$. A local analysis near $e_q$ shows that regularity plus the bulk equations of motion force
 
 $$\begin{align}
-\lim_{q \to 1} e_q = E_A, \qquad
-K^a = 0,
+\lim_{q \to 1} e_q = E_A, \qquad K^a = 0,
 \end{align}$$
 
 so the limiting surface is extremal. The variation of the Lorentzian on-shell action with respect to $q$ localizes on this fixed locus and gives the HRT area term.
@@ -84,9 +83,7 @@ so the limiting surface is extremal. The variation of the Lorentzian on-shell ac
 ### Formula (2.1): time-dependent density matrix
 
 $$\begin{align}
-|\Psi(t)\rangle = e^{iHt}|\Psi_0\rangle, \qquad
-\langle\Psi(t)|=\langle\Psi_0|e^{-iHt}, \qquad
-\rho(t)=|\Psi(t)\rangle\langle\Psi(t)| =e^{iHt}\rho_0 e^{-iHt}.
+|\Psi(t)\rangle = e^{iHt}|\Psi_0\rangle, \qquad \langle\Psi(t)|=\langle\Psi_0|e^{-iHt}, \qquad \rho(t)=|\Psi(t)\rangle\langle\Psi(t)| =e^{iHt}\rho_0 e^{-iHt}.
 \end{align}$$
 
 This formula fixes the real-time orientation convention used in the paper. The ket and bra are evolved on opposite branches. With the authors' convention, $e^{iHt}$ evolves the ket from the chosen initial time to $t$, while the conjugate branch carries the opposite sign in the action. The important point is not the sign convention itself but the doubling: a density matrix is not computed by a single time contour.
@@ -220,8 +217,7 @@ The $K$ terms are the continuation of the linear normal expansion in (3.1). The 
 ### Formula (3.5): minimal surface condition in the Euclidean case
 
 $$\begin{align}
-\lim_{q\to 1} e_q \to E_A, \qquad
-E_A\in M,\quad t=0,\quad K^x=0.
+\lim_{q\to 1} e_q \to E_A, \qquad E_A\in M,\quad t=0,\quad K^x=0.
 \end{align}$$
 
 Near $q=1$, the Ricci tensor from (3.4) contains terms of the form $(q-1)K^a/r$. Einstein's equations cannot tolerate these divergences. In the time-reflection symmetric case, $K^t=0$ automatically, so the nontrivial condition is $K^x=0$.
@@ -241,8 +237,7 @@ For ordinary AdS/CFT variations, the boundary term lives at the asymptotic bound
 ### Formula (3.7): localization on the fixed locus
 
 $$\begin{align}
-\partial_q I[\widehat M_q] =\int_{e_q(\epsilon)}
-\Theta(g_q,\partial_q g_q).
+\partial_q I[\widehat M_q] =\int_{e_q(\epsilon)} \Theta(g_q,\partial_q g_q).
 \end{align}$$
 
 The singular locus is regulated by replacing $e_q$ with a small tubular surface $e_q(\epsilon)$ at $r=\epsilon$. This formula says that the entropy computation localizes near the defect.
@@ -252,8 +247,7 @@ This is the gravitational reason the final answer is an area. The $q$-variation 
 ### Formula (3.8): Gibbons-Hawking evaluation
 
 $$\begin{align}
-\partial_q I[\widehat M_q] =-\partial_q I_{\text{bdy}}[\widehat M_q], \qquad
-I_{\text{bdy}}[\widehat M_q] =\frac{1}{8\pi G_N}\int_{e_q(\epsilon)}K_\epsilon.
+\partial_q I[\widehat M_q] =-\partial_q I_{\text{bdy}}[\widehat M_q], \qquad I_{\text{bdy}}[\widehat M_q] =\frac{1}{8\pi G_N}\int_{e_q(\epsilon)}K_\epsilon.
 \end{align}$$
 
 The regulated tube is treated as a temporary boundary. For Einstein gravity, its contribution is the Gibbons-Hawking term.
@@ -283,8 +277,7 @@ This is the Lorentzian analogue of the adapted expansion near a codimension-2 su
 Crossing a Rindler horizon is encoded by
 
 $$\begin{align}
-\tau\to\tau+\frac{\pi i}{2}, \qquad
-r\to i^{-1}r.
+\tau\to\tau+\frac{\pi i}{2}, \qquad r\to i^{-1}r.
 \end{align}$$
 
 Again, the imaginary shift is a labeling device for real Lorentzian wedges. Four crossings give $\tau\sim\tau+2\pi i$.
@@ -311,8 +304,7 @@ This formula is schematic but decisive. For $q$ near $1$, the local curvature co
 No allowed $\mathbb Z_q$-symmetric correction in $\delta g_{\mu\nu}$ can cancel this divergence. Therefore the equations of motion impose
 
 $$\begin{align}
-K^x=0, \qquad
-K^t=0.
+K^x=0, \qquad K^t=0.
 \end{align}$$
 
 This is where the extremal surface condition comes from dynamically. It is not assumed.
@@ -320,14 +312,11 @@ This is where the extremal surface condition comes from dynamically. It is not a
 ### Formula (3.13): null-expansion form of extremality
 
 $$\begin{align}
-K^a=0 \quad\Longrightarrow\quad
-\theta_\pm =\frac{1}{\sqrt 2}(K^0\pm K^1)=0,
+K^a=0 \quad\Longrightarrow\quad \theta_\pm =\frac{1}{\sqrt 2}(K^0\pm K^1)=0,
 \end{align}$$
 
 $$\begin{align}
-\Longrightarrow \qquad
-\lim_{q\to 1}e_q=E_A, \qquad
-E_A\in M\ \text{is extremal}.
+\Longrightarrow \qquad \lim_{q\to 1}e_q=E_A, \qquad E_A\in M\ \text{is extremal}.
 \end{align}$$
 
 Here $K^0$ and $K^1$ are the traces of extrinsic curvature in timelike and spacelike normal directions. The null normals are linear combinations
@@ -343,8 +332,7 @@ The surface must also lie on an admissible bulk Cauchy slice $\widetilde\Sigma_t
 ### Formula (3.14): Lorentzian boundary term
 
 $$\begin{align}
-\partial_q I[\widehat M_q] =-\frac{1}{8\pi G_N}
-\partial_q\int_{e_q(\epsilon)}K_\epsilon.
+\partial_q I[\widehat M_q] =-\frac{1}{8\pi G_N} \partial_q\int_{e_q(\epsilon)}K_\epsilon.
 \end{align}$$
 
 This is the Lorentzian counterpart of (3.8). The regulator surface is now more subtle because the small surface around a spacelike codimension-2 locus includes timelike, spacelike, and near-null pieces.
@@ -419,8 +407,7 @@ I_{\text{bdy}}[\widehat M_q] =\frac{4i}{4q}\, \frac{\operatorname{Area}(e_q)}{4G
 The factor of $4$ counts the four horizon crossings around the local Lorentzian normal plane. The factor $1/q$ comes from comparing normals in locally flat coordinates
 
 $$\begin{align}
-x=r\cosh(\tau/q), \qquad
-t=r\sinh(\tau/q).
+x=r\cosh(\tau/q), \qquad t=r\sinh(\tau/q).
 \end{align}$$
 
 This appendix computation supplies the local boundary-term justification for the main result (3.15).
@@ -472,9 +459,7 @@ f(\rho)=\rho^2+1.
 The coordinate transformation to Poincare variables is
 
 $$\begin{align}
-\rho^2=\frac{x^2-t^2}{z^2}, \qquad
-u^2=x^2-t^2+z^2, \qquad
-\tanh\tau=\frac{t}{x}.
+\rho^2=\frac{x^2-t^2}{z^2}, \qquad u^2=x^2-t^2+z^2, \qquad \tanh\tau=\frac{t}{x}.
 \end{align}$$
 
 For the replicated hyperbolic geometry,
@@ -496,8 +481,7 @@ i\left.\widetilde S_A^{(1)}\right|_{\lambda^2} =\int_M \widetilde T_\phi,
 with
 
 $$\begin{align}
-\widetilde T_\phi
-\equiv \sqrt{-g}\,T^\phi_{\mu\nu}\partial_q g^{\mu\nu}.
+\widetilde T_\phi \equiv \sqrt{-g}\,T^\phi_{\mu\nu}\partial_q g^{\mu\nu}.
 \end{align}$$
 
 In Poincare variables this becomes

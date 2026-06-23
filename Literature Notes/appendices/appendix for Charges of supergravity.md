@@ -414,8 +414,7 @@ $$\begin{align}
 Substitute the solutions for $B^{ab}$ and $B^{a4}$ back into the action. Since
 
 $$\begin{align}
-F^{ab}=R^{ab}+\frac1{\ell^2}e^a\wedge e^b, \qquad
-F^{a4}=\frac1\ell T^a,
+F^{ab}=R^{ab}+\frac1{\ell^2}e^a\wedge e^b, \qquad F^{a4}=\frac1\ell T^a,
 \end{align}$$
 
 with $T^a:=D^\omega e^a$, all terms can be expanded into:
@@ -1251,8 +1250,7 @@ $$\begin{align}
 Thus
 
 $$\begin{align}
-\{H_L[\lambda_1],H_T[\zeta_2]\}=H_T[\zeta_{12}], \qquad
-\zeta_{12}^a=\lambda_1{}^a{}_b \zeta_2^b.
+\{H_L[\lambda_1],H_T[\zeta_2]\}=H_T[\zeta_{12}], \qquad \zeta_{12}^a=\lambda_1{}^a{}_b \zeta_2^b.
 \end{align}$$
 
 #### Lorentz-supersymmetry
@@ -1265,8 +1263,7 @@ $$\begin{align}
 Hence
 
 $$\begin{align}
-\{H_L[\lambda_1],H_S[\epsilon_2]\}=H_S[\epsilon_{12}], \qquad
-\epsilon_{12}=\frac14 \lambda_1^{ab}\gamma_{ab}\epsilon_2.
+\{H_L[\lambda_1],H_S[\epsilon_2]\}=H_S[\epsilon_{12}], \qquad \epsilon_{12}=\frac14 \lambda_1^{ab}\gamma_{ab}\epsilon_2.
 \end{align}$$
 
 #### translation-translation
@@ -1315,8 +1312,7 @@ $$\begin{align}
 with
 
 $$\begin{align}
-\lambda_{12}^{ab}=\bar\epsilon_1 \gamma^{ab}\epsilon_2, \qquad
-\zeta_{12}^a=\bar\epsilon_1 \gamma^a \epsilon_2.
+\lambda_{12}^{ab}=\bar\epsilon_1 \gamma^{ab}\epsilon_2, \qquad \zeta_{12}^a=\bar\epsilon_1 \gamma^a \epsilon_2.
 \end{align}$$
 
 Hence the full boundary gauge-charge algebra is
@@ -1349,8 +1345,7 @@ and the non-trivial gauge-charge algebra reduces to the $\mathrm{Osp}(1|4)$ Lore
 The diffeomorphism charge is
 
 $$\begin{align}
-H_D[\xi]
-\approx \frac{1}{16\pi}\int_{\partial \Sigma}B^{(s)}_{IJ}\iota_\xi A^{IJ} +\frac{\kappa}{4\pi}\int_{\partial \Sigma}\mathscr{\bar B}\iota_\xi \psi.
+H_D[\xi] \approx \frac{1}{16\pi}\int_{\partial \Sigma}B^{(s)}_{IJ}\iota_\xi A^{IJ} +\frac{\kappa}{4\pi}\int_{\partial \Sigma}\mathscr{\bar B}\iota_\xi \psi.
 \end{align}$$
 
 Because diffeomorphisms act by Lie derivatives on all fields and parameters,

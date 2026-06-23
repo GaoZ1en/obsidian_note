@@ -431,8 +431,7 @@ ab=1.
 另一方面
 
 $$\begin{align}
-\psi(z_{1})\psi(z_{2})\sim (z_{1}-z_{2})^{-a^{2}},\qquad
-\bar{\psi}(z_{1})\bar{\psi}(z_{2})\sim (z_{1}-z_{2})^{-b^{2}}.
+\psi(z_{1})\psi(z_{2})\sim (z_{1}-z_{2})^{-a^{2}},\qquad \bar{\psi}(z_{1})\bar{\psi}(z_{2})\sim (z_{1}-z_{2})^{-b^{2}}.
 \end{align}$$
 
 要这两个 OPE 在 $z_{1}\to z_{2}$ 时没有极点、并且首项是正幂的 regular term，需要
@@ -512,8 +511,7 @@ c=11,
 按共形维数写成
 
 $$\begin{align}
-\beta(z)=\sum_{r}\beta_{r}z^{-r-\lambda}, \qquad
-\gamma(z)=\sum_{r}\gamma_{r}z^{-r-(1-\lambda)}.
+\beta(z)=\sum_{r}\beta_{r}z^{-r-\lambda}, \qquad \gamma(z)=\sum_{r}\gamma_{r}z^{-r-(1-\lambda)}.
 \end{align}$$
 
 其中 $r$ 的取值取决于所选 spin structure；在一般抽象讨论中只需记成同一套模指标即可。由 OPE
@@ -577,8 +575,7 @@ $$\begin{align}
 - IIA：
 
 $$\begin{align}
-8_{v}\otimes 8_{c}=8_{s}\oplus 56_{s},\qquad
-8_{s}\otimes 8_{v}=8_{c}\oplus 56_{c}.
+8_{v}\otimes 8_{c}=8_{s}\oplus 56_{s},\qquad 8_{s}\otimes 8_{v}=8_{c}\oplus 56_{c}.
 \end{align}$$
 
 它们给出两套相反手征的 gravitino 与 dilatino。
@@ -586,8 +583,7 @@ $$\begin{align}
 - IIB：
 
 $$\begin{align}
-8_{v}\otimes 8_{s}=8_{c}\oplus 56_{c},\qquad
-8_{s}\otimes 8_{v}=8_{c}\oplus 56_{c},
+8_{v}\otimes 8_{s}=8_{c}\oplus 56_{c},\qquad 8_{s}\otimes 8_{v}=8_{c}\oplus 56_{c},
 \end{align}$$
 
 两套 gravitino 具有相同手征性。
@@ -770,13 +766,11 @@ u=\frac{t+\phi}{2},\qquad v=\frac{t-\phi}{2},
 就得到
 
 $$\begin{align}
-X_{-1}=\cosh\rho\,\cos t,\qquad
-X_{0}=\cosh\rho\,\sin t,
+X_{-1}=\cosh\rho\,\cos t,\qquad X_{0}=\cosh\rho\,\sin t,
 \end{align}$$
 
 $$\begin{align}
-X_{1}=\sinh\rho\,\cos\phi,\qquad
-X_{2}=\sinh\rho\,\sin\phi.
+X_{1}=\sinh\rho\,\cos\phi,\qquad X_{2}=\sinh\rho\,\sin\phi.
 \end{align}$$
 
 #### 4.2 Wess-Zumino-Witten 模型
@@ -784,8 +778,7 @@ X_{2}=\sinh\rho\,\sin\phi.
 下面用
 
 $$\begin{align}
-j_{a}^{L}=\partial_{a}g\,g^{-1},\qquad
-j_{a}^{R}=g^{-1}\partial_{a}g
+j_{a}^{L}=\partial_{a}g\,g^{-1},\qquad j_{a}^{R}=g^{-1}\partial_{a}g
 \end{align}$$
 
 记左右 Maurer-Cartan 流。
@@ -833,16 +826,13 @@ T_{ab}=\frac{k}{8\pi}\operatorname{Tr} \left( g^{-1}\partial_{a}g\,g^{-1}\partia
 在光锥坐标下，
 
 $$\begin{align}
-T_{++}=\frac{k}{8\pi}\operatorname{Tr}\!\left[(g^{-1}\partial_{+}g)^{2}\right], \qquad
-T_{--}=\frac{k}{8\pi}\operatorname{Tr}\!\left[(g^{-1}\partial_{-}g)^{2}\right], \qquad
-T_{+-}=0.
+T_{++}=\frac{k}{8\pi}\operatorname{Tr}\!\left[(g^{-1}\partial_{+}g)^{2}\right], \qquad T_{--}=\frac{k}{8\pi}\operatorname{Tr}\!\left[(g^{-1}\partial_{-}g)^{2}\right], \qquad T_{+-}=0.
 \end{align}$$
 
 用上面的守恒流表示，就是
 
 $$\begin{align}
-T_{++}=\frac{\pi}{2k}\operatorname{Tr}(J_{L,+}^{2}), \qquad
-T_{--}=\frac{\pi}{2k}\operatorname{Tr}(J_{R,-}^{2}).
+T_{++}=\frac{\pi}{2k}\operatorname{Tr}(J_{L,+}^{2}), \qquad T_{--}=\frac{\pi}{2k}\operatorname{Tr}(J_{R,-}^{2}).
 \end{align}$$
 
 ##### 4.2.3 运动方程
@@ -850,8 +840,7 @@ T_{--}=\frac{\pi}{2k}\operatorname{Tr}(J_{R,-}^{2}).
 对 $g$ 做任意变分，记
 
 $$\begin{align}
-\delta g=g\,\epsilon \quad\text{或}\quad
-\delta g=\epsilon g,
+\delta g=g\,\epsilon \quad\text{或}\quad \delta g=\epsilon g,
 \end{align}$$
 
 都可得到等价的 Euler-Lagrange 方程。整理后标准结果是
@@ -1017,8 +1006,7 @@ h=h_{+}(x^{+})h_{-}(x^{-})
 已经满足运动方程，则定义
 
 $$\begin{align}
-g_{+}=e^{i\frac{w_{R}x^{+}\sigma_{2}}{2}}h_{+}(x^{+}), \qquad
-g_{-}=h_{-}(x^{-})e^{i\frac{w_{L}x^{-}\sigma_{2}}{2}},
+g_{+}=e^{i\frac{w_{R}x^{+}\sigma_{2}}{2}}h_{+}(x^{+}), \qquad g_{-}=h_{-}(x^{-})e^{i\frac{w_{L}x^{-}\sigma_{2}}{2}},
 \end{align}$$
 
 仍然分别只依赖于 $x^{+}$ 与 $x^{-}$。于是
@@ -1034,15 +1022,13 @@ g=g_{+}g_{-}
 设
 
 $$\begin{align}
-h=e^{iu\sigma_{2}}e^{\rho\sigma_{3}}e^{iv\sigma_{2}}, \qquad
-u=\frac{t+\phi}{2},\quad v=\frac{t-\phi}{2}.
+h=e^{iu\sigma_{2}}e^{\rho\sigma_{3}}e^{iv\sigma_{2}}, \qquad u=\frac{t+\phi}{2},\quad v=\frac{t-\phi}{2}.
 \end{align}$$
 
 则 spectral flow 后
 
 $$\begin{align}
-u\to u+\frac{w_{R}x^{+}}{2}, \qquad
-v\to v+\frac{w_{L}x^{-}}{2}.
+u\to u+\frac{w_{R}x^{+}}{2}, \qquad v\to v+\frac{w_{L}x^{-}}{2}.
 \end{align}$$
 
 因此
@@ -1068,8 +1054,7 @@ $$\begin{align}
 时，时空时间 $t$ 必须单值，因此
 
 $$\begin{align}
-\Delta t=-\pi(w_{L}-w_{R})=0 \quad\Longrightarrow\quad
-w_{L}=w_{R}.
+\Delta t=-\pi(w_{L}-w_{R})=0 \quad\Longrightarrow\quad w_{L}=w_{R}.
 \end{align}$$
 
 再要求角坐标只允许绕整数圈，
@@ -1143,17 +1128,13 @@ u=\frac{w x^{+}}{2},\qquad v=\frac{w x^{-}}{2},\qquad \rho=\tau.
 于是
 
 $$\begin{align}
-t=u+v=w\tau,\qquad
-\phi=u-v=w\sigma,\qquad
-\rho=\tau.
+t=u+v=w\tau,\qquad \phi=u-v=w\sigma,\qquad \rho=\tau.
 \end{align}$$
 
 所以长弦解可以写成
 
 $$\begin{align}
-t(\tau,\sigma)=w\tau,\qquad
-\phi(\tau,\sigma)=w\sigma,\qquad
-\rho(\tau,\sigma)=\tau.
+t(\tau,\sigma)=w\tau,\qquad \phi(\tau,\sigma)=w\sigma,\qquad \rho(\tau,\sigma)=\tau.
 \end{align}$$
 
 它的物理意义是：弦沿角向绕行 $w$ 圈，同时径向向边界伸展；因此它不是局域在 AdS 中心附近的短弦，而是能够延伸到大 $\rho$ 区域的 long string。
@@ -1161,8 +1142,7 @@ t(\tau,\sigma)=w\tau,\qquad
 对应的守恒流可直接由 4.3.2 的一般公式代入 $h=e^{\tau\sigma_{3}}$ 得到：
 
 $$\begin{align}
-J_{L,+}(h)=\frac{k}{4\pi}\sigma_{3}, \qquad
-J_{R,-}(h)=\frac{k}{4\pi}\sigma_{3},
+J_{L,+}(h)=\frac{k}{4\pi}\sigma_{3}, \qquad J_{R,-}(h)=\frac{k}{4\pi}\sigma_{3},
 \end{align}$$
 
 所以
@@ -1183,8 +1163,7 @@ J_{R,-}(g) =\frac{k}{2\pi} \left( \frac{i w}{2}\sigma_{2} +e^{-i\frac{w x^{-}\si
    玻色弦要记住
 
 $$\begin{align}
-M^{2}_{\text{open}}=\frac{N-1}{\alpha'}, \qquad
-M^{2}_{\text{closed}}=\frac{4(N_{L}-1)}{\alpha'},
+M^{2}_{\text{open}}=\frac{N-1}{\alpha'}, \qquad M^{2}_{\text{closed}}=\frac{4(N_{L}-1)}{\alpha'},
 \end{align}$$
 
    超弦要记住 NS 与 R 的零质量态、以及 Type IIA/IIB 的 chirality 区别。
@@ -1197,8 +1176,7 @@ M^{2}_{\text{closed}}=\frac{4(N_{L}-1)}{\alpha'},
    标准答案始终是
 
 $$\begin{align}
-C_{p}=-(p-1), \qquad
-D_{p}=\frac{T_{p}}{2}
+C_{p}=-(p-1), \qquad D_{p}=\frac{T_{p}}{2}
 \end{align}$$
 
    或其等价归一化版本。

@@ -697,8 +697,7 @@ $$\begin{align}
 sol. The scalar kinetic term and $V(\phi)$ are invariant because the transformation is a global phase rotation and $V$ depends only on $|\phi|^{2}$. The color kinetic term is also invariant because the PQ phase is global and commutes with the color $\mathrm{SU}(3)$ generators. For the Yukawa term,
 
 $$\begin{align}
-\bar{Q}_{L}Q_{R}\phi &\longrightarrow
-e^{-i\alpha/2}\bar{Q}_{L}\,e^{-i\alpha/2}Q_{R}\,e^{i\alpha}\phi =\bar{Q}_{L}Q_{R}\phi,
+\bar{Q}_{L}Q_{R}\phi &\longrightarrow e^{-i\alpha/2}\bar{Q}_{L}\,e^{-i\alpha/2}Q_{R}\,e^{i\alpha}\phi =\bar{Q}_{L}Q_{R}\phi,
 \end{align}$$
 
 and the complex conjugate term is invariant in the same way.
@@ -726,8 +725,7 @@ Q &\to e^{-i\gamma _{5}a/2f_{a}}Q,& Q_{L}&\to e^{ia/2f_{a}}Q_{L},& Q_{R}&\to e^{
 Indeed,
 
 $$\begin{align}
-\bar{Q}_{L}Q_{R}e^{ia/f_{a}} &\longrightarrow
-e^{-ia/2f_{a}}\bar{Q}_{L}\,e^{-ia/2f_{a}}Q_{R}\,e^{ia/f_{a}} =\bar{Q}_{L}Q_{R},
+\bar{Q}_{L}Q_{R}e^{ia/f_{a}} &\longrightarrow e^{-ia/2f_{a}}\bar{Q}_{L}\,e^{-ia/2f_{a}}Q_{R}\,e^{ia/f_{a}} =\bar{Q}_{L}Q_{R},
 \end{align}$$
 
 and similarly for the complex conjugate. Classically this trades the phase in the mass term for a derivative coupling to the axial current; after the heavy quark is integrated out, the relevant low-energy effect is the anomalous Jacobian of the fermion measure.

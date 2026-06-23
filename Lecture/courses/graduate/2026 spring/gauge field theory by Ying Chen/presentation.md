@@ -9,8 +9,7 @@ summary: "Beamer-style notes on why the basic BRST construction is insufficient,
 Free Abelian 2-form:
 
 $$\begin{align}
-S_0[B]=-\frac{1}{12}\int d^Dx\,H_{\mu\nu\rho}H^{\mu\nu\rho}, \qquad
-H_{\mu\nu\rho}=3\partial_{[\mu}B_{\nu\rho]} .
+S_0[B]=-\frac{1}{12}\int d^Dx\,H_{\mu\nu\rho}H^{\mu\nu\rho}, \qquad H_{\mu\nu\rho}=3\partial_{[\mu}B_{\nu\rho]} .
 \end{align}$$
 
 Gauge transformation:
@@ -22,8 +21,7 @@ $$\begin{align}
 Parameter redundancy:
 
 $$\begin{align}
-\Lambda_\mu\sim \Lambda_\mu+\partial_\mu\alpha, \qquad
-\delta_{\Lambda=d\alpha}B=0 .
+\Lambda_\mu\sim \Lambda_\mu+\partial_\mu\alpha, \qquad \delta_{\Lambda=d\alpha}B=0 .
 \end{align}$$
 
 ---
@@ -39,8 +37,7 @@ G_\nu(B)=\partial^\mu B_{\mu\nu}=0 .
 Then
 
 $$\begin{align}
-\delta_\Lambda G_\nu=M_\nu^{\ \rho}\Lambda_\rho, \qquad
-M_\nu^{\ \rho}=\Box\delta_\nu^{\ \rho}-\partial_\nu\partial^\rho .
+\delta_\Lambda G_\nu=M_\nu^{\ \rho}\Lambda_\rho, \qquad M_\nu^{\ \rho}=\Box\delta_\nu^{\ \rho}-\partial_\nu\partial^\rho .
 \end{align}$$
 
 Naively,
@@ -74,8 +71,7 @@ So $\det M=0$: the path integral still contains the redundancy of $\Lambda_\mu$.
 Fields:
 
 $$\begin{align}
-X^i:\Sigma\to M, \qquad
-A_i\in\Omega^1(\Sigma,X^*T^*M).
+X^i:\Sigma\to M, \qquad A_i\in\Omega^1(\Sigma,X^*T^*M).
 \end{align}$$
 
 Action:
@@ -87,8 +83,7 @@ S_0[X,A] =\int_\Sigma A_i\wedge dX^i +\frac12\pi^{ij}(X)A_i\wedge A_j .
 Gauge transformations:
 
 $$\begin{align}
-\delta_\epsilon X^i=\pi^{ij}(X)\epsilon_j, \qquad
-\delta_\epsilon A_i=-d\epsilon_i-\partial_i\pi^{jk}(X)A_j\epsilon_k .
+\delta_\epsilon X^i=\pi^{ij}(X)\epsilon_j, \qquad \delta_\epsilon A_i=-d\epsilon_i-\partial_i\pi^{jk}(X)A_j\epsilon_k .
 \end{align}$$
 
 ---
@@ -98,15 +93,13 @@ $$\begin{align}
 For a general Poisson tensor $\pi^{ij}(X)$,
 
 $$\begin{align}
-[\delta_{\epsilon_1},\delta_{\epsilon_2}] =\delta_{\epsilon_3} +\text{EOM terms}, \qquad
-\epsilon_{3i}=\partial_i\pi^{jk}\epsilon_{1j}\epsilon_{2k}.
+[\delta_{\epsilon_1},\delta_{\epsilon_2}] =\delta_{\epsilon_3} +\text{EOM terms}, \qquad \epsilon_{3i}=\partial_i\pi^{jk}\epsilon_{1j}\epsilon_{2k}.
 \end{align}$$
 
 The equations of motion are
 
 $$\begin{align}
-dX^i+\pi^{ij}A_j=0, \qquad
-dA_i+\frac12\partial_i\pi^{jk}A_j\wedge A_k=0 .
+dX^i+\pi^{ij}A_j=0, \qquad dA_i+\frac12\partial_i\pi^{jk}A_j\wedge A_k=0 .
 \end{align}$$
 
 ---
@@ -149,8 +142,7 @@ BV does this by enlarging the field space and solving one master equation.
 Start from a general gauge theory:
 
 $$\begin{align}
-S_0[\phi], \qquad
-\delta_\epsilon\phi^i=R^i_{\alpha}(\phi)\epsilon^\alpha .
+S_0[\phi], \qquad \delta_\epsilon\phi^i=R^i_{\alpha}(\phi)\epsilon^\alpha .
 \end{align}$$
 
 Gauge invariance:
@@ -162,8 +154,7 @@ $$\begin{align}
 Allow both complications:
 
 $$\begin{align}
-R^i_\alpha Z^\alpha_a=0, \qquad
-[R_\alpha,R_\beta]^i =R^i_\gamma f^\gamma_{\alpha\beta} +\frac{\delta S_0}{\delta\phi^j}M^{ji}_{\alpha\beta}.
+R^i_\alpha Z^\alpha_a=0, \qquad [R_\alpha,R_\beta]^i =R^i_\gamma f^\gamma_{\alpha\beta} +\frac{\delta S_0}{\delta\phi^j}M^{ji}_{\alpha\beta}.
 \end{align}$$
 
 Closed irreducible BRST is the special case $Z=0$ and $M=0$.
@@ -291,8 +282,7 @@ $$\begin{align}
 Concretely,
 
 $$\begin{align}
-\bar c^{*\alpha}=G^\alpha+\frac{\xi}{2}b^\alpha, \qquad
-\phi_i^*=\bar c_\alpha\frac{\delta G^\alpha}{\delta\phi^i}.
+\bar c^{*\alpha}=G^\alpha+\frac{\xi}{2}b^\alpha, \qquad \phi_i^*=\bar c_\alpha\frac{\delta G^\alpha}{\delta\phi^i}.
 \end{align}$$
 
 ---
@@ -330,8 +320,7 @@ So antifields are not extra propagating fields; they are sources that make the a
 If the theory is closed and irreducible,
 
 $$\begin{align}
-Z=0, \qquad
-M=0 .
+Z=0, \qquad M=0 .
 \end{align}$$
 
 Then the minimal BV action reduces to the familiar form
@@ -357,8 +346,7 @@ G^\alpha(\phi)=0,
 add a non-minimal pair:
 
 $$\begin{align}
-s\bar c_\alpha=b_\alpha, \qquad
-sb_\alpha=0 .
+s\bar c_\alpha=b_\alpha, \qquad sb_\alpha=0 .
 \end{align}$$
 
 This pair is contractible, so it adds no physical cohomology.
@@ -416,9 +404,7 @@ $$\begin{align}
 Minimal fields:
 
 $$\begin{align}
-B_{\mu\nu}, \qquad
-c_\mu, \qquad
-\rho .
+B_{\mu\nu}, \qquad c_\mu, \qquad \rho .
 \end{align}$$
 
 Meanings:
@@ -429,9 +415,7 @@ Meanings:
 Antifields:
 
 $$\begin{align}
-B^{*\mu\nu}, \qquad
-c^{*\mu}, \qquad
-\rho^* .
+B^{*\mu\nu}, \qquad c^{*\mu}, \qquad \rho^* .
 \end{align}$$
 
 ---
@@ -507,22 +491,19 @@ B_{\mu\nu}.
 The naive operator has zero modes:
 
 $$\begin{align}
-M_1=d^\dagger d, \qquad
-\ker M_1\supset \operatorname{im}d .
+M_1=d^\dagger d, \qquad \ker M_1\supset \operatorname{im}d .
 \end{align}$$
 
 BV gauge fixing also imposes a condition on the vector ghost:
 
 $$\begin{align}
-d^\dagger B=0, \qquad
-d^\dagger c=0 .
+d^\dagger B=0, \qquad d^\dagger c=0 .
 \end{align}$$
 
 So the determinant is taken on the quotient by the exact ghost direction:
 
 $$\begin{align}
-\det M_1 \quad\leadsto\quad
-\det{}'\!\left(d^\dagger d\big|_{\Omega^1/\operatorname{im}d}\right) \times \text{scalar ghost factor}.
+\det M_1 \quad\leadsto\quad \det{}'\!\left(d^\dagger d\big|_{\Omega^1/\operatorname{im}d}\right) \times \text{scalar ghost factor}.
 \end{align}$$
 
 BV does not make $M_1$ invertible on all one-forms; it replaces the singular determinant by the determinant of the gauge complex.
@@ -534,9 +515,7 @@ BV does not make $M_1$ invertible on all one-forms; it replaces the singular det
 Minimal fields:
 
 $$\begin{align}
-X^i, \qquad
-A_i, \qquad
-c_i .
+X^i, \qquad A_i, \qquad c_i .
 \end{align}$$
 
 The ghost $c_i$ replaces the gauge parameter $\epsilon_i$.
@@ -544,9 +523,7 @@ The ghost $c_i$ replaces the gauge parameter $\epsilon_i$.
 Antifields:
 
 $$\begin{align}
-X_i^*, \qquad
-A^{*i}, \qquad
-c^{*i}.
+X_i^*, \qquad A^{*i}, \qquad c^{*i}.
 \end{align}$$
 
 ---
@@ -655,9 +632,7 @@ In the BV formulation, $\Psi$ is allowed to contain components of all ghost numb
 The same cubic functional becomes a BV master action. The master equation follows from the cyclicity of the BPZ pairing and the algebraic identities
 
 $$\begin{align}
-Q_B^2=0, \qquad
-Q_B(A*B)=(Q_BA)*B+(-1)^{|A|}A*(Q_BB), \qquad
-(A*B)*C=A*(B*C).
+Q_B^2=0, \qquad Q_B(A*B)=(Q_BA)*B+(-1)^{|A|}A*(Q_BB), \qquad (A*B)*C=A*(B*C).
 \end{align}$$
 
 Thus the consistency of the string interaction vertex is encoded as

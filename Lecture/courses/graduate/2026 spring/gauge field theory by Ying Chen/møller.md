@@ -40,16 +40,13 @@ e^-(p_1) + e^-(p_2) \to e^-(p_3) + e^-(p_4).
 Use the massless Mandelstam variables
 
 $$\begin{align}
-s = (p_1+p_2)^2, \qquad
-t = (p_1-p_3)^2, \qquad
-u = (p_1-p_4)^2, \qquad s+t+u=0.
+s = (p_1+p_2)^2, \qquad t = (p_1-p_3)^2, \qquad u = (p_1-p_4)^2, \qquad s+t+u=0.
 \end{align}$$
 
 In the center-of-mass frame,
 
 $$\begin{align}
-t = -\frac{s}{2}(1-\cos\theta), \qquad
-u = -\frac{s}{2}(1+\cos\theta).
+t = -\frac{s}{2}(1-\cos\theta), \qquad u = -\frac{s}{2}(1+\cos\theta).
 \end{align}$$
 
 There are two photon-exchange diagrams. The $t$-channel amplitude is
