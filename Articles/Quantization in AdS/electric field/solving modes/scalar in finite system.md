@@ -1,7 +1,7 @@
 ---
 title: scalar in finite system
 date: 2026-06-13
-summary: "Dirichlet quantization of a massive scalar in a finite-radius AdS3 cavity, with mode-by-mode convergence to the standard-quantization spectrum as r0 goes to infinity."
+summary: "Finite-radius scalar quantization in AdS3, comparing Dirichlet and Robin regulators and their mode-by-mode convergence to standard and alternative quantization."
 ---
 
 in this note we consider a free scalar field in global $\mathrm{AdS}_{3}$ with metric
@@ -16,19 +16,26 @@ $$\begin{align}
 S & =-\frac{1}{2}\int \mathrm{d}^{3}x\sqrt{ -g }(\nabla _{\mu}\phi \nabla ^{\mu}\phi+\mu ^{2}\phi ^{2}).
 \end{align}$$
 
-we assume
-
-$$\begin{align}
-\mu ^{2} & >-1, & \Delta & =1+\sqrt{ 1+\mu ^{2} } >1,
-\end{align}$$
-
-so we stay away from the BF-saturated logarithmic case and keep only standard quantization in the infinite-volume limit. the finite system is the truncated region
+the finite system is the truncated region
 
 $$\begin{align}
 0\leqslant r\leqslant r_{0},
 \end{align}$$
 
-with regularity at $\displaystyle{r=0}$ and homogeneous Dirichlet boundary condition
+with regularity at $\displaystyle{r=0}$. the finite-radius boundary condition determines which infinite-volume quantization is approached as $\displaystyle{r_{0}\to\infty}$.
+
+- Homogeneous Dirichlet boundary condition keeps the standard-quantization limit.
+- Robin boundary condition $\displaystyle{(n^{\mu}\nabla _{\mu}+\Delta_{-})\phi|_{r=r_{0}}=0}$ keeps the alternative-quantization limit for $\displaystyle{0<\Delta_{-}\leq 1}$, with the no-log branch at $\displaystyle{\Delta_{-}=1}$.
+
+# Dirichlet boundary condition
+
+in this section we assume
+
+$$\begin{align}
+\mu ^{2} & >-1, & \Delta & =1+\sqrt{ 1+\mu ^{2} } >1,
+\end{align}$$
+
+so $\displaystyle{\Delta}$ denotes the standard dimension $\displaystyle{\Delta_{+}}$. we impose homogeneous Dirichlet boundary condition
 
 $$\begin{align}
 \phi |_{r=r_{0}} & =0.
@@ -47,9 +54,9 @@ u_{n,m}(t,r,\phi ) & =N_{n,m}e^{-i\omega _{n,m}^{(\infty)}t}e^{im\phi}r^{|m|}(1+
 N_{n,m} & =\sqrt{ \frac{1}{2\pi} \frac{(\Delta +n)_{|m|}}{(n+1)_{|m|}} }.
 \end{align}$$
 
-for finite $\displaystyle{r_{0}}$, the problem is instead a Dirichlet Sturm-Liouville problem. we now construct that spectrum and show how it converges mode by mode to the standard-quantization basis above.
+for finite $\displaystyle{r_{0}}$, the problem is a Dirichlet Sturm-Liouville problem. we now construct that spectrum and show how it converges mode by mode to the standard-quantization basis above.
 
-# finite-radius dirichlet modes
+## finite-radius dirichlet modes
 
 take the separated ansatz
 
@@ -83,7 +90,7 @@ Q_{m}(\omega ;r_{0}) & := {}_2F_1\left(\frac{|m|+\Delta -\omega}{2},\frac{|m|+\D
 
 every positive root of $\displaystyle{Q_{m}(\omega ;r_{0})}$ gives one finite-radius normal mode. we denote by $\displaystyle{\omega _{n,m}(r_{0})}$ the branch that converges to $\displaystyle{\omega _{n,m}^{(\infty)}}$ as $\displaystyle{r_{0}\to \infty}$.
 
-# the standard-quantization limit
+## the standard-quantization limit
 
 for large $\displaystyle{r}$, the regular solution has the two-branch expansion
 
@@ -153,7 +160,7 @@ $$\begin{align}
 
 for every fixed pair $\displaystyle{(n,m)}$. this is the precise sense in which the finite cavity spectrum converges mode by mode to the standard-quantization spectrum.
 
-# covariant phase space and mode-by-mode quantization
+## covariant phase space and mode-by-mode quantization
 
 the radial equation can be written in Sturm-Liouville form,
 
@@ -219,7 +226,7 @@ $$\begin{align}
 
 this is the desired mode-by-mode convergence of the full covariant phase-space quantization.
 
-# numerical check for $\mu ^{2}=0$
+## numerical check for $\mu ^{2}=0$
 
 for the massless scalar we have $\displaystyle{\Delta =2}$, so the infinite-volume targets are
 
@@ -250,3 +257,152 @@ $$\begin{align}
 \end{align}$$
 
 and the same pattern holds for the other low-lying modes in the table. this is exactly the mode-by-mode approach to the standard-quantization spectrum predicted by the asymptotic analysis above.
+
+# Robin boundary condition
+
+in this section $\displaystyle{\Delta}$ denotes the alternative dimension $\displaystyle{\Delta_{-}}$, and
+
+$$\begin{align}
+0<\Delta\leq 1,\qquad \mu ^{2}=\Delta(\Delta-2).
+\end{align}$$
+
+we regulate the alternative quantization at finite radius by adding the boundary term
+
+$$\begin{align}
+S_{\Gamma_{r_{0}}} &=-\frac{\Delta}{2}\int _{\Gamma_{r_{0}}}\mathrm{d}^{2}x\sqrt{-\gamma}\,\phi^{2}.
+\end{align}$$
+
+after integrating by parts, the boundary variation at $\displaystyle{r=r_{0}}$ is proportional to
+
+$$\begin{align}
+-\int _{\Gamma_{r_{0}}}\mathrm{d}^{2}x\sqrt{-\gamma}\, \left(n^{\mu}\nabla _{\mu}\phi+\Delta\phi\right)\delta\phi.
+\end{align}$$
+
+Thus the finite-radius boundary condition is
+
+$$\begin{align}
+\left.(n^{\mu}\nabla _{\mu}+\Delta)\phi\right|_{r=r_{0}}&=0, & n^{r}&=\sqrt{1+r^{2}}.
+\end{align}$$
+
+## finite-radius Robin modes
+
+take the separated ansatz
+
+$$\begin{align}
+\phi(t,r,\phi)&=e^{-i\omega t}e^{im\phi}R_{\omega m}(r), & m&\in \mathbb{Z}.
+\end{align}$$
+
+the Klein-Gordon equation gives
+
+$$\begin{align}
+(1+r^{2})R_{\omega m}''+\frac{1+3r^{2}}{r}R_{\omega m}'+\left(\frac{\omega^{2}}{1+r^{2}}-\frac{m^{2}}{r^{2}}-\Delta(\Delta-2)\right)R_{\omega m}&=0.
+\end{align}$$
+
+the regular branch at the origin is
+
+$$\begin{align}
+R_{\omega m}(r) &=r^{|m|}(1+r^{2})^{-(|m|+\Delta)/2} {}_2F_{1}\left(\frac{|m|+\Delta-\omega}{2},\frac{|m|+\Delta+\omega}{2};1+|m|;\frac{r^{2}}{1+r^{2}}\right).
+\end{align}$$
+
+the finite-radius spectrum is determined by
+
+$$\begin{align}
+Q^{\mathrm{R}}_{m}(\omega;r_{0}) &:=\left.\left(\sqrt{1+r^{2}}\partial _{r}+\Delta\right)R_{\omega m}(r)\right|_{r=r_{0}}=0.
+\end{align}$$
+
+for finite $\displaystyle{r_{0}}$, this is again a regular Sturm-Liouville problem. the endpoint contribution in the Green identity vanishes because the same Robin condition is imposed on both radial wavefunctions, so modes with distinct $\displaystyle{\omega^{2}}$ are orthogonal with respect to the weight $\displaystyle{r/(1+r^{2})}$.
+
+## the alternative-quantization limit
+
+for $\displaystyle{0<\Delta<1}$, the large-$\displaystyle{r}$ expansion of the regular solution is
+
+$$\begin{align}
+R_{\omega m}(r) &=A_{m}(\omega)r^{-\Delta}\left(1+\mathcal{O}(r^{-2})\right) +B_{m}(\omega)r^{\Delta-2}\left(1+\mathcal{O}(r^{-2})\right),
+\end{align}$$
+
+where
+
+$$\begin{align}
+B_{m}(\omega) &=\frac{\Gamma(1+|m|)\Gamma(\Delta-1)} {\Gamma\left(\frac{|m|+\Delta-\omega}{2}\right)\Gamma\left(\frac{|m|+\Delta+\omega}{2}\right)}.
+\end{align}$$
+
+the Robin operator acts on the two asymptotic branches as
+
+$$\begin{align}
+(\sqrt{1+r^{2}}\partial _{r}+\Delta)r^{-\Delta} &=-\frac{\Delta}{2}r^{-\Delta-2}+\mathcal{O}(r^{-\Delta-4}),\\
+(\sqrt{1+r^{2}}\partial _{r}+\Delta)r^{\Delta-2} &=2(\Delta-1)r^{\Delta-2}+\mathcal{O}(r^{\Delta-4}).
+\end{align}$$
+
+therefore the finite-radius Robin equation has the asymptotic form
+
+$$\begin{align}
+B_{m}(\omega)+\mathcal{O}(r_{0}^{-2\Delta})A_{m}(\omega)+\mathcal{O}(r_{0}^{-2})B_{m}(\omega)&=0.
+\end{align}$$
+
+in the infinite-radius limit the condition is
+
+$$\begin{align}
+B_{m}(\omega)&=0.
+\end{align}$$
+
+since $\displaystyle{1/\Gamma(x)}$ has simple zeros at the non-positive integers, this gives
+
+$$\begin{align}
+\frac{|m|+\Delta-\omega}{2}&=-n, & n&=0,1,2,\ldots,
+\end{align}$$
+
+and hence the alternative-quantization spectrum
+
+$$\begin{align}
+\omega_{n,m}^{(\mathrm{alt})}&=\Delta+2n+|m|.
+\end{align}$$
+
+near each such root, $\displaystyle{B_{m}(\omega)}$ has a simple zero, so the implicit-function argument gives a unique finite-radius branch satisfying
+
+$$\begin{align}
+\omega_{n,m}(r_{0}) &=\Delta+2n+|m|+\mathcal{O}(r_{0}^{-2\Delta}).
+\end{align}$$
+
+the corresponding regular profiles converge on every compact radial interval to
+
+$$\begin{align}
+R_{n,m}^{(\mathrm{alt})}(r) &=r^{|m|}(1+r^{2})^{-(|m|+\Delta)/2} {}_2F_{1}\left(-n,\Delta+|m|+n;1+|m|;\frac{r^{2}}{1+r^{2}}\right)\\
+&\propto r^{|m|}(1+r^{2})^{-(|m|+\Delta)/2} P_{n}^{(\Delta-1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right),
+\end{align}$$
+
+up to the overall normalization. the tail of this mode is Klein-Gordon integrable for $\displaystyle{\Delta>0}$, so the finite-radius normalized modes converge mode by mode to the alternative-quantization oscillator basis.
+
+## no-log BF point
+
+at the BF point $\displaystyle{\Delta=1}$ we impose the no-log branch. the asymptotic expansion takes the form
+
+$$\begin{align}
+R_{\omega m}(r) &=A_{m}(\omega)r^{-1} +C_{m}(\omega)r^{-1}\log r+\mathcal{O}(r^{-3}\log r),
+\end{align}$$
+
+and
+
+$$\begin{align}
+(\sqrt{1+r^{2}}\partial _{r}+1)\left(r^{-1}\log r\right) &=r^{-1}+\mathcal{O}(r^{-3}\log r).
+\end{align}$$
+
+therefore the finite-radius Robin equation selects $\displaystyle{C_{m}(\omega)=0}$ as $\displaystyle{r_{0}\to\infty}$. the no-log spectrum is the $\displaystyle{\Delta\to1}$ limit of the formula above:
+
+$$\begin{align}
+\omega_{n,m}^{(\mathrm{BF})} &=1+2n+|m|.
+\end{align}$$
+
+the logarithmic branch is not included in this phase space.
+
+## numerical check for Robin boundary condition
+
+the following numerical roots of $\displaystyle{Q^{\mathrm{R}}_{0}(\omega;r_{0})=0}$ illustrate the convergence for the first few $\displaystyle{m=0}$ modes.
+
+| $\Delta$ | $n$ | target $\Delta+2n$ | $r_{0}=20$ | $r_{0}=80$ | $r_{0}=300$ |
+|---:|---:|---:|---:|---:|---:|
+| $0.6$ | $0$ | $0.600000$ | $0.608357$ | $0.601565$ | $0.600320$ |
+| $0.6$ | $1$ | $2.600000$ | $2.655786$ | $2.610552$ | $2.602160$ |
+| $0.6$ | $2$ | $4.600000$ | $4.709956$ | $4.621052$ | $4.604324$ |
+| $1.0$ | $0$ | $1.000000$ | $1.001245$ | $1.000078$ | $1.000006$ |
+| $1.0$ | $1$ | $3.000000$ | $3.010970$ | $3.000701$ | $3.000050$ |
+| $1.0$ | $2$ | $5.000000$ | $5.029458$ | $5.001941$ | $5.000139$ |
