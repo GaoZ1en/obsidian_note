@@ -72,7 +72,8 @@ S & =\frac{1}{2}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }\left( g^{\mu \nu}\p
 the heat kernel satisfies
 
 $$\begin{align}
-(\nabla _{x}^{2}-\mu ^{2} )K(t,x,x') & =\delta ^{3}(x-x') \\
+(\nabla _{x}^{2}-\mu ^{2} )K(t,x,x') & =\partial _{t}K(t,x,x') \\
+K(0,x,x') & =\delta ^{3}(x-x') \\
 \delta ^{3}(x-x') & = \frac{1}{\sqrt{ g(x) }}\delta(y-y')\delta ^{2}(z-z')
 \end{align}$$
 
@@ -101,13 +102,13 @@ $$\begin{align}
 
 ---
 
-for $\displaystyle{\mathbb{H}^{n}}$, the heat kernel is given by
+for odd $\displaystyle{n=2m+1}$, the heat kernel is given by
 
 $$\begin{align}
-K^{\mathbb{H}_{n}}(t,r) & =e^{-(\mu ^{2}+\rho ^{2})t}\left(-\frac{1}{2\pi \sinh r} \frac{\partial}{\partial r}\right)^{\rho}\left(\frac{e^{-r^{2}/4t}}{(4\pi t)^{1/2}}\right)
+K^{\mathbb{H}_{2m+1}}(t,r) & =e^{-(\mu ^{2}+\rho ^{2})t}\left(-\frac{1}{2\pi \sinh r} \frac{\partial}{\partial r}\right)^{m}\left(\frac{e^{-r^{2}/4t}}{(4\pi t)^{1/2}}\right)
 \end{align}$$
 
-where $\displaystyle{\rho=\frac{n-1}{2}}$. this can be derived as follows. define
+where $\displaystyle{\rho=\frac{n-1}{2}=m}$. this can be derived as follows. define
 
 $$\begin{align}
 R=-\frac{1}{2\pi \sinh r}\partial _{r}
@@ -116,7 +117,7 @@ R=-\frac{1}{2\pi \sinh r}\partial _{r}
 it satisfies the intertwining relation
 
 $$\begin{align}
-R(\Delta _{n}-\rho ^{2}_{n}) & =(\Delta _{n+2}-\rho _{n+2}^{2})R \\
+R(\Delta _{n}+\rho ^{2}_{n}) & =(\Delta _{n+2}+\rho _{n+2}^{2})R \\
 \rho _{n} & =\frac{n-1}{2} \\
 \Delta _{n} & =\partial _{r}^{2}+(n-1)\coth r\partial _{r}
 \end{align}$$
@@ -124,10 +125,10 @@ R(\Delta _{n}-\rho ^{2}_{n}) & =(\Delta _{n+2}-\rho _{n+2}^{2})R \\
 then we have
 
 $$\begin{align}
-R(\partial _{t}-(\Delta _{n}-\rho _{n}^{2})) & =(\partial _{t}-(\Delta _{n+2}-\rho _{n+2}^{2}))R
+R(\partial _{t}-(\Delta _{n}+\rho _{n}^{2})) & =(\partial _{t}-(\Delta _{n+2}+\rho _{n+2}^{2}))R
 \end{align}$$
 
-which implies that if $\displaystyle{\widetilde{K}_{n}}$ satisfies $\displaystyle{\partial _{t}\widetilde{K}_{n}=(\Delta _{n}-\rho _{n}^{2})\widetilde{K}_{n}}$, then $\displaystyle{\widetilde{K}_{n+2}:=R\widetilde{K}_{n}}$ satisfies $\displaystyle{\partial _{t}\widetilde{K}_{n+2}=(\Delta _{n+2}-\rho _{n+2}^{2})\widetilde{K}_{n+2}}$. for $\displaystyle{n}$ odd, starting from $\displaystyle{n=1}$ where $\displaystyle{\rho _{1}=0}$, we have the 1d gaussian kernel
+which implies that if $\displaystyle{\widetilde{K}_{n}}$ satisfies $\displaystyle{\partial _{t}\widetilde{K}_{n}=(\Delta _{n}+\rho _{n}^{2})\widetilde{K}_{n}}$, then $\displaystyle{\widetilde{K}_{n+2}:=R\widetilde{K}_{n}}$ satisfies $\displaystyle{\partial _{t}\widetilde{K}_{n+2}=(\Delta _{n+2}+\rho _{n+2}^{2})\widetilde{K}_{n+2}}$. for $\displaystyle{n}$ odd, starting from $\displaystyle{n=1}$ where $\displaystyle{\rho _{1}=0}$, we have the 1d gaussian kernel
 
 $$\begin{align}
 \widetilde{K}_{1}(t,r) & =\frac{e^{-r^{2}/(4t)}}{(4\pi t)^{1/2}}
@@ -146,7 +147,7 @@ and restoring the spectral shift factor $\displaystyle{K_{n}(t,r)=e^{-\rho ^{2}t
 then the partition function at 1-loop is given by
 
 $$\begin{align}
-Z & =\frac{1}{2}\int ^{\infty}_{0^{+}} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }K(t,x,x) \\
+\ln Z & =\frac{1}{2}\int ^{\infty}_{0^{+}} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }K(t,x,x) \\
  & =\frac{1}{2}\mathrm{Vol}(\mathbb{H}_{3})\int ^{\infty}_{0} \frac{\mathrm{d}t}{t} \frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}} \\
  & =\frac{1}{2}\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{(4\pi)^{3/2}} \Gamma\left(-\frac{3}{2}\right)(\mu ^{2}+1)^{3/2} \\
  & =\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{12\pi}(\mu ^{2}+1)^{3/2}
@@ -184,7 +185,7 @@ $$\begin{align}
 due to the maximal symmetry of the space, the heat kernel can be decomposed as
 
 $$\begin{align}
-K_{\mu \nu'}(t,x,x') & =F\nabla _{\mu}\nabla _{\nu}u+\nabla _{\mu}\nabla _{\nu'}S
+K_{\mu \nu'}(t,x,x') & =F\nabla _{\mu}\nabla _{\nu'}u+\nabla _{\mu}\nabla _{\nu'}S
 \end{align}$$
 
 where $\displaystyle{F}$ and $\displaystyle{S}$ are functions of $\displaystyle{t}$ and $\displaystyle{u}$. then the LHS of heat equation becomes
@@ -242,32 +243,52 @@ C_{\mu \nu'} & =\nabla _{\mu}u\nabla _{\nu'}u=\sinh ^{2}rn_{\mu}n_{\nu'}
 \end{align}$$
 
 on $\displaystyle{\mathbb{H}_{3}}$, the following identities hold:
-1. Hessian decomposition
 
 $$\begin{align}
-B_{\mu \nu'} & =(1+u)(2n_{\mu}n_{\nu'}-g_{\mu \nu'})
-\end{align}$$
-
-1. Laplacian of u
-
-$$\begin{align}
+\nabla ^{\mu}u\nabla _{\mu}u & =u(u+2) \\
+\nabla _{\mu}\nabla _{\nu}u & =g_{\mu \nu}(1+u) \\
 \nabla ^{2}u & =3(1+u)
 \end{align}$$
 
-1. derivatives of $\displaystyle{n}$ along the geodesic
+The mixed identities used below are
 
 $$\begin{align}
-\nabla _{\mu}n_{\nu} & =\coth r(g_{\mu \nu}-n_{\mu}n_{\nu}) \\
-\nabla _{\mu}n_{\nu'} & =-\mathrm{csch}r(g_{\mu \nu'}+n_{\mu}n_{\nu'})
-\end{align}$$
-
-from these, two key contraction identities follow
-
-$$\begin{align}
-\nabla ^{2}B_{\mu \nu'} & =-B_{\mu \nu'}-2C_{\mu \nu'} \\
-\nabla ^{\alpha}u\nabla _{\alpha}B_{\mu \nu'} & =-C_{\mu \nu'} \\
+\nabla ^{\mu}uB_{\mu \nu'} & =(1+u)\nabla _{\nu'}u \\
+B^{\mu}_{~\mu'}B_{\mu \nu'} & =g_{\mu'\nu'}+\nabla _{\mu'}u\nabla _{\nu'}u \\
+\nabla ^{2}B_{\mu \nu'} & =B_{\mu \nu'} \\
+\nabla ^{\alpha}u\nabla _{\alpha}B_{\mu \nu'} & =C_{\mu \nu'} \\
 \nabla _{\mu}\nabla _{\nu'}G(u) & =G'(u)B_{\mu \nu'}+G''(u)C_{\mu \nu'}
 \end{align}$$
+
+Here is a coordinate proof of these identities. Work in Poincare coordinates $\displaystyle{(y,x_{1},x_{2})}$ with $\displaystyle{\mathrm{d}s^{2}=y^{-2}(\mathrm{d}y^{2}+\mathrm{d}x_{1}^{2}+\mathrm{d}x_{2}^{2})}$. By homogeneity, fix $\displaystyle{x'=(1,0,0)}$ after differentiating. Then
+
+$$\begin{align}
+u & =\frac{(y-1)^{2}+x_{1}^{2}+x_{2}^{2}}{2y}.
+\end{align}$$
+
+The only nonzero Christoffel symbols are
+
+$$\begin{align}
+\Gamma ^{y}_{yy} & =-\frac{1}{y}, & \Gamma ^{y}_{ij} & =\frac{1}{y}\delta _{ij}, & \Gamma ^{i}_{yj} & =-\frac{1}{y}\delta ^{i}_{j},
+\end{align}$$
+
+where $\displaystyle{i,j=1,2}$. Direct substitution gives
+
+$$\begin{align}
+g^{\mu \nu}\partial _{\mu}u\partial _{\nu}u-u(u+2) & =0, \\
+\nabla _{\mu}\nabla _{\nu}u-(1+u)g_{\mu \nu} & =0, \\
+\nabla ^{2}u-3(1+u) & =0, \\
+\nabla _{\mu}B_{\nu\nu'}-g_{\mu\nu}\nabla _{\nu'}u & =0, \\
+\nabla ^{\mu}u\nabla _{\mu}B_{\nu\nu'}-\nabla _{\nu}u\nabla _{\nu'}u & =0, \\
+\nabla ^{\mu}uB_{\mu \nu'}-(1+u)\nabla _{\nu'}u & =0, \\
+B^{\mu}_{~\mu'}B_{\mu \nu'}-g_{\mu'\nu'}-\nabla _{\mu'}u\nabla _{\nu'}u & =0, \\
+\nabla ^{2}B_{\mu \nu'}-B_{\mu \nu'} & =0, \\
+\nabla ^{\alpha}u\nabla _{\alpha}B_{\mu \nu'}-C_{\mu \nu'} & =0.
+\end{align}$$
+
+Since both sides are invariant bitensors, this coordinate check proves the identities for arbitrary $\displaystyle{x}$ and $\displaystyle{x'}$.
+
+---
 
 now we compute $(\nabla^{2}+2-\mu^{2})K_{\mu\nu'}$ piece by piece. we first consider $\displaystyle{S}$ terms. notice that
 
@@ -282,18 +303,18 @@ $$\begin{align}
 \implies(\nabla ^{2}+2-\mu ^{2})(\nabla _{\mu}\nabla _{\nu'}S) & =\nabla _{\mu}\nabla _{\nu'}(\nabla ^{2}S-\mu ^{2}S)
 \end{align}$$
 
-then consider $\displaystyle{FB_{\mu \nu}}$.
+then consider $\displaystyle{FB_{\mu \nu'}}$.
 
 $$\begin{align}
 \nabla ^{2}(FB_{\mu \nu'}) & =\nabla ^{2}FB_{\mu \nu'}+2\nabla ^{\alpha}F\nabla _{\alpha}B_{\mu \nu'}+F\nabla ^{2}B_{\mu \nu'} \\
- & =\nabla ^{2}FB_{\mu \nu'}+2F'\nabla ^{\alpha}u\nabla _{\alpha}B_{\mu \nu'}+F(-B_{\mu \nu'}-2C_{\mu \nu'}) \\
- & =(\nabla ^{2}F-F)B_{\mu \nu'}-2(F'+F)C_{\mu \nu'}
+ & =\nabla ^{2}FB_{\mu \nu'}+2F'\nabla ^{\alpha}u\nabla _{\alpha}B_{\mu \nu'}+FB_{\mu \nu'} \\
+ & =(\nabla ^{2}F+F)B_{\mu \nu'}+2F'C_{\mu \nu'}
 \end{align}$$
 
 hence
 
 $$\begin{align}
-(\nabla ^{2}+2-\mu ^{2})(FB_{\mu \nu'}) & =(\nabla ^{2}F+F-\mu ^{2}F)B_{\mu \nu'}-2(F'+F)C_{\mu \nu'}
+(\nabla ^{2}+2-\mu ^{2})(FB_{\mu \nu'}) & =(\nabla ^{2}F+3F-\mu ^{2}F)B_{\mu \nu'}+2F'C_{\mu \nu'}
 \end{align}$$
 
 introduce
@@ -323,8 +344,8 @@ $$\begin{align}
 the general solution to these equations with the given boundary conditions is
 
 $$\begin{align}
-F(t,u) & =-\frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}} \frac{r}{\sinh r} \\
-S(t,u) & =\frac{4e^{-\mu ^{2}t}}{(4\pi)^{3/2}} \frac{e^{-r^{2}/4t}}{\sinh r}\sqrt{ t }\int ^{1}_{0}\mathrm{d}\xi e^{-t(1-\xi)^{2}}\sinh r\xi
+F(t,u) & =-\frac{e^{-\mu ^{2}t-r^{2}/4t}}{(4\pi t)^{3/2}} \frac{r}{\sinh r} \\
+S(t,u) & =\frac{4e^{-\mu ^{2}t}}{(4\pi)^{3/2}} \frac{e^{-r^{2}/4t}}{\sinh r}\sqrt{ t }\int ^{1}_{0}\mathrm{d}\xi e^{-t(1-\xi)^{2}}\sinh(r\xi)
 \end{align}$$
 
 then the trace of the heat kernel is given by
@@ -339,13 +360,13 @@ thus the partition function at 1-loop is
 $$\begin{align}
 \ln Z & =\frac{1}{2}\int ^{\infty}_{0^{+}} \frac{\mathrm{d}t}{t}\int _{\mathcal{M}}\mathrm{d}^{3}x\sqrt{ g }g^{\mu \nu'}K_{\mu \nu'}(t,x,x) \\
  & =\frac{1}{2}\mathrm{Vol}(\mathbb{H}_{3})\int ^{\infty}_{0} \frac{\mathrm{d}t}{t} e^{-\mu ^{2}t} \frac{e^{-t}+2+4t}{(4\pi t)^{3/2}} \\
- & =\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{6\pi}\left((\mu ^{2}+1)^{3/2}+2\mu ^{3}-6\mu\right)
+ & =\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{12\pi}\left((\mu ^{2}+1)^{3/2}+2\mu ^{3}-6\mu\right)
 \end{align}$$
 
-we should substract the non-physical longitudinal mode contribution, which gives
+we should subtract the non-physical longitudinal mode contribution, which gives
 
 $$\begin{align}
-\ln Z_{\perp} & =\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{3\pi}(\mu ^{3}-3\mu)
+\ln Z_{\perp} & =\mathrm{Vol}(\mathbb{H}_{3}) \frac{1}{6\pi}(\mu ^{3}-3\mu)
 \end{align}$$
 
 # general discussion of $\displaystyle{\mathbb{H}_{3}/\mathbb{Z}}$
@@ -396,7 +417,7 @@ we have
 
 $$\begin{align}
 r & \equiv r(x,\gamma ^{n}x) \\
- & =\mathrm{arccosh}(1+2\sinh ^{2}\pi n\tau _{2}+2|\sinh \pi n\tau|^{2}\cot ^{2}\theta)
+ & =\mathrm{arccosh}(1+2\sinh ^{2}\pi n\tau _{2}+2|\sin \pi n\tau|^{2}\cot ^{2}\theta)
 \end{align}$$
 
 which lives in the interval $\displaystyle{[2\pi n\tau _{2},+\infty)}$. the measure
@@ -422,9 +443,11 @@ $$\begin{align}
 here we substracted the divergent $\displaystyle{n=0}$ term corresponding to the infinite volume of thermal AdS3 (vacuum fluctuations). evaluating the integral we get
 
 $$\begin{align}
--\ln \det \Delta & =\sum ^{\infty}_{n=1} \frac{e^{2\pi n\tau _{2}\sqrt{ \mu ^{2}+1 }}}{2n|\sin \pi n\tau|^{2}} \\
- & =2\sum ^{\infty}_{n=1} \frac{|q|^{2nh}}{n|1-q^{n}|}
+-\ln \det \Delta & =\sum ^{\infty}_{n=1} \frac{e^{-2\pi n\tau _{2}\sqrt{ \mu ^{2}+1 }}}{2n|\sin \pi n\tau|^{2}} \\
+ & =2\sum ^{\infty}_{n=1} \frac{|q|^{2nh}}{n|1-q^{n}|^{2}}
 \end{align}$$
+
+where $\displaystyle{h=\frac{1}{2}\left(1+\sqrt{ \mu ^{2}+1 }\right)}$.
 
 here we use the integral and series formula
 
@@ -438,7 +461,7 @@ and then
 $$\begin{align}
 Z^{\text{1-loop}}_{\text{scalar}}(\tau,\bar{\tau}) & =(\det \Delta)^{-1/2} \\
  & =\exp\left( \sum ^{\infty}_{n=1} \frac{|q|^{2nh}}{n|1-q^{n}|^{2}} \right) \\
- & =\exp\left(\sum ^{\infty}_{n=1}\sum ^{\infty}_{\ell,\bar{\ell}=1} \frac{1}{n}q^{n(\ell+h)} \bar{q}^{n(\ell+h)}\right) \\
+ & =\exp\left(\sum ^{\infty}_{n=1}\sum ^{\infty}_{\ell,\bar{\ell}=0} \frac{1}{n}q^{n(\ell+h)} \bar{q}^{n(\bar{\ell}+h)}\right) \\
  & =\prod ^{\infty}_{\ell,\bar{\ell}=0} \frac{1}{1-q^{\ell+h}\bar{q}^{\bar{\ell}+h}}
 \end{align}$$
 
@@ -468,15 +491,15 @@ K_{\mu \nu'}^{\mathbb{H}_{3}/\mathbb{Z}}(t,x,x') & =\sum _{n\in \mathbb{Z}} \fra
 then
 
 $$\begin{align}
--\ln \det \Delta _{\mu}^{~\nu} & =\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\sum _{n\in \mathbb{Z}}\int \mathrm{d}^{3}x\sqrt{ g }\hat{g}^{\mu \nu'}K_{\mu \nu'}^{\mathbb{H_{3}}}(t,r(x,\gamma ^{n}x))
+-\ln \det \Delta _{\mu}^{~\nu} & =\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\sum _{n\in \mathbb{Z}}\int \mathrm{d}^{3}x\sqrt{ g }\hat{g}^{\mu \nu'}K_{\mu \nu'}^{\mathbb{H}_{3}}(t,r(x,\gamma ^{n}x))
 \end{align}$$
 
 where $\displaystyle{\hat{g}^{\mu \nu'}=g^{\mu \rho'}(x) \frac{\partial(\gamma ^{n}x)^{\nu'}}{\partial x^{\rho'}}}$. notice that
 
 $$\begin{align}
 K_{\mu \nu'}^{\mathbb{H}_{3}}(t,x,x') & =F(t,r)\nabla _{\mu}\nabla _{\nu'}u+\nabla _{\mu}\nabla _{\nu'}S \\
-F(t,r) & =-\frac{e^{(\mu ^{2}+1)t}}{(4\pi t)^{3/2}} \frac{r}{\sinh r} \\
-S(t,r) & =\frac{4e^{-\mu ^{2}t}}{(4\pi)^{3/2}} \frac{e^{-r^{2}/4t}}{\sinh r}\sqrt{ t }\int ^{1}_{0}\mathrm{d}\xi e^{-t(1-\xi)^{2}}\sinh r\xi
+F(t,r) & =-\frac{e^{-\mu ^{2}t-r^{2}/4t}}{(4\pi t)^{3/2}} \frac{r}{\sinh r} \\
+S(t,r) & =\frac{4e^{-\mu ^{2}t}}{(4\pi)^{3/2}} \frac{e^{-r^{2}/4t}}{\sinh r}\sqrt{ t }\int ^{1}_{0}\mathrm{d}\xi e^{-t(1-\xi)^{2}}\sinh(r\xi)
 \end{align}$$
 
 define
@@ -491,9 +514,9 @@ B_{\gamma ^{n}}(r) & =\hat{g}^{\mu \nu'}\nabla _{\mu}u\nabla _{\nu'}u \\
 then we have
 
 $$\begin{align}
--\ln \det \Delta _{\mu}^{~\nu} & =-3\mathrm{Vol}(\mathbb{H}_{3}/\mathbb{Z})\int ^{\infty}_{0}\frac{\mathrm{d}t}{t}(F+\partial _{u}S)|_{u=0} \\
- & +2\sum ^{\infty}_{n=1} \frac{(2\pi \tau _{2})(2\pi)}{4|\sin \pi n\tau|^{2}}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\int ^{\infty}_{2\pi \tau _{2}}\mathrm{d}r\sinh r((F+\partial _{u}S)A_{\gamma ^{n}}+\partial _{u}^{2}SB_{\gamma ^{n}}) \\
- & =(\text{vacuum fluctuation})+2\sum ^{\infty}_{n=1} \frac{(2\pi \tau _{2})(2\pi)}{4|\sin \pi n\tau|^{2}}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}e^{-\mu ^{2}t} \frac{e^{-\frac{(2\pi n\tau _{2})^{2}}{4t}}}{4\pi ^{3/2}t^{1/2}} (2\cos(2\pi n\tau _{1})+e^{-t}) \\
+-\frac{1}{2}\ln \det \Delta _{\mu}^{~\nu} & =-\frac{3}{2}\mathrm{Vol}(\mathbb{H}_{3}/\mathbb{Z})\int ^{\infty}_{0}\frac{\mathrm{d}t}{t}(F+\partial _{u}S)|_{u=0} \\
+ & +\sum ^{\infty}_{n=1} \frac{(2\pi \tau _{2})(2\pi)}{4|\sin \pi n\tau|^{2}}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\int ^{\infty}_{2\pi n\tau _{2}}\mathrm{d}r\sinh r((F+\partial _{u}S)A_{\gamma ^{n}}+\partial _{u}^{2}SB_{\gamma ^{n}}) \\
+ & =(\text{vacuum fluctuation})+\sum ^{\infty}_{n=1} \frac{(2\pi \tau _{2})(2\pi)}{4|\sin \pi n\tau|^{2}}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}e^{-\mu ^{2}t} \frac{e^{-\frac{(2\pi n\tau _{2})^{2}}{4t}}}{4\pi ^{3/2}t^{1/2}} (2\cos(2\pi n\tau _{1})+e^{-t}) \\
  & =\sum ^{\infty}_{n=1} \frac{1}{4n|\sin \pi n\tau|^{2}}(e^{-2\pi n\tau _{2}\sqrt{ \mu ^{2}+1 }}+2\cos(2\pi n\tau _{1})e^{-2\pi n\tau _{2}\mu}) \\
  & =\sum ^{\infty}_{n=1} \frac{1}{n|1-q^{n}|^{2}}(|q|^{2nh}+(q^{n}+\bar{q}^{n})|q|^{n\mu})
 \end{align}$$
@@ -503,13 +526,13 @@ thus the 1-loop partition function is
 $$\begin{align}
 Z^{\text{1-loop}}_{\text{Proca}}(\tau,\bar{\tau}) & =(\det \Delta _{\mu}^{~\nu})^{-1/2} \\
  & =\exp\left( \sum ^{\infty}_{n=1} \frac{1}{n|1-q^{n}|^{2}}(|q|^{2nh}+(q^{n}+\bar{q}^{n})|q|^{n\mu}) \right) \\
- & =\prod ^{\infty}_{\ell,\bar{\ell}=0} \frac{1}{(1-q^{\ell+h}\bar{q}^{\bar{\ell}+h})(1-q^{\ell+\mu +1}\bar{q}^{\bar{\ell}+\mu})(1-q^{\ell+\mu}\bar{q}^{\bar{\ell}+\mu +1})}
+ & =\prod ^{\infty}_{\ell,\bar{\ell}=0} \frac{1}{(1-q^{\ell+h}\bar{q}^{\bar{\ell}+h})(1-q^{\ell+\mu/2+1}\bar{q}^{\bar{\ell}+\mu/2})(1-q^{\ell+\mu/2}\bar{q}^{\bar{\ell}+\mu/2+1})}
 \end{align}$$
 
-here we should substract the non-physical longitudinal mode contribution, which gives
+here we should subtract the non-physical longitudinal mode contribution, which gives
 
 $$\begin{align}
-Z^{\text{1-loop}}_{\text{Proca},\perp}(\tau,\bar{\tau}) & =\prod ^{\infty}_{\ell,\bar{\ell}=0} \frac{1}{(1-q^{\ell+\mu +1}\bar{q}^{\bar{\ell}+\mu})(1-q^{\ell+\mu}\bar{q}^{\bar{\ell}+\mu +1})}
+Z^{\text{1-loop}}_{\text{Proca},\perp}(\tau,\bar{\tau}) & =\prod ^{\infty}_{\ell,\bar{\ell}=0} \frac{1}{(1-q^{\ell+\mu/2+1}\bar{q}^{\bar{\ell}+\mu/2})(1-q^{\ell+\mu/2}\bar{q}^{\bar{\ell}+\mu/2+1})}
 \end{align}$$
 
 I think this method can be simply generalized to thermal AdS/dS/flat space in higher dimensions, and also to higher spin fields...?
@@ -619,8 +642,8 @@ the solution to these equations with the given boundary conditions is
 
 $$\begin{align}
 K_{\mu \nu'}(t,x,x') & =F(t,u)\nabla _{\mu}\nabla _{\nu'}u+\nabla _{\mu}\nabla _{\nu'}S(t,u) \\
-F & = -\frac{e^{-(\mu ^{2}+1)t}}{(4\pi t)^{3/2}} \frac{r}{\sinh r} \\
-S & =-\frac{2}{(4\pi)^{3/2}\sqrt{ t }} \frac{\cosh r}{\sinh r} \int ^{r}_{0} e^{-\frac{x^{2}}{4t}}
+F & = -\frac{e^{-\mu ^{2}t-r^{2}/4t}}{(4\pi t)^{3/2}} \frac{r}{\sinh r} \\
+S & =-\frac{2e^{-\mu ^{2}t}}{(4\pi)^{3/2}\sqrt{ t }} \frac{\cosh r}{\sinh r} \int ^{r}_{0}\mathrm{d}x\, e^{-\frac{x^{2}}{4t}}
 \end{align}$$
 
 the trace of the heat kernel is given by
@@ -644,8 +667,8 @@ and then the 1-loop partition function in thermal AdS3 is
 $$\begin{align}
 \ln Z & =-\frac{1}{2}\ln \det \Delta _{\mu}^{~\nu} \\
  & =-\frac{3}{2}\mathrm{Vol}(\mathbb{H}_{3}/\mathbb{Z})\int ^{\infty}_{0}\frac{\mathrm{d}t}{t}(F+\partial _{u}S)|_{u=0} \\
- & +\sum ^{\infty}_{n=1} \frac{(2\pi \tau _{2})(2\pi)}{4|\sin \pi n\tau|^{2}}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\int ^{\infty}_{2\pi \tau _{2}}\mathrm{d}r\sinh r((F+\partial _{u}S)A_{\gamma ^{n}}+\partial _{u}^{2}SB_{\gamma ^{n}}) \\
- & =\sum ^{\infty}_{n=1} \frac{q^{n}+\bar{q}^{n}}{n|1-q^{n}|}|q|^{n\mu} \\
+ & +\sum ^{\infty}_{n=1} \frac{(2\pi \tau _{2})(2\pi)}{4|\sin \pi n\tau|^{2}}\int ^{\infty}_{0} \frac{\mathrm{d}t}{t}\int ^{\infty}_{2\pi n\tau _{2}}\mathrm{d}r\sinh r((F+\partial _{u}S)A_{\gamma ^{n}}+\partial _{u}^{2}SB_{\gamma ^{n}}) \\
+ & =\sum ^{\infty}_{n=1} \frac{q^{n}+\bar{q}^{n}}{n|1-q^{n}|^{2}}|q|^{n\mu} \\
 \implies Z & =\prod ^{\infty}_{\ell,\ell'=0} \frac{1}{(1-q^{\ell+\mu/2+1}\bar{q}^{\ell'+\mu/2})(1-q^{\ell+\mu/2}\bar{q}^{\ell'+\mu/2+1})}
 \end{align}$$
 
@@ -880,7 +903,7 @@ I_{\ell}(\Omega) & =\int _{-\infty}^{\infty}\frac{\mathrm{d}p}{2\pi}e^{-ip\ell\b
 therefore
 
 $$\begin{align}
-\ln Z_{\mathrm{mixed}} & =\frac{\beta}{2}\sum _{\ell\neq 0}I_{\ell}(\Omega) \\
+\ln Z_{\mathrm{mixed}} & =-\frac{\beta}{2}\sum _{\ell\neq 0}I_{\ell}(\Omega) \\
  & =-\frac{1}{2}\beta\Omega+\sum _{\ell=1}^{\infty}\frac{e^{-\ell\beta\Omega}}{\ell} \\
  & =-\frac{1}{2}\beta\Omega-\ln(1-e^{-\beta\Omega}), \\
 Z_{\mathrm{mixed}} & =\frac{e^{-\beta\Omega/2}}{1-e^{-\beta\Omega}}.
