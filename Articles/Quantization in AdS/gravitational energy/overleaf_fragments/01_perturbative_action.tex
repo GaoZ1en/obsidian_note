@@ -1,0 +1,144 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\title{Perturbative action around AdS$_3$}
+\author{}
+\date{}
+
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\Lg}{\mathcal{L}_{\mathrm g}}
+
+\begin{document}
+\maketitle
+
+This fragment fixes the perturbative action used in the Noether-charge
+calculation. We use the normalization
+\begin{align}
+  \lambda^2=8\pi G,
+\end{align}
+so that the gravitational part of the action is
+\begin{align}
+  I_{\mathrm{grav}}[g]
+  =\frac{1}{2\lambda^2}\int_M \dd^3x\,\sqrt{-g}\,(R+2).
+\end{align}
+For the scalar example,
+\begin{align}
+  I[g,\phi]
+  =\frac{1}{2\lambda^2}\int_M \dd^3x\,\sqrt{-g}\,(R+2)
+  -\frac12\int_M \dd^3x\,\sqrt{-g}\,
+  \left(\nabla_\mu\phi\nabla^\mu\phi+m^2\phi^2\right).
+\end{align}
+The AdS radius is set to one. The background metric $g^{(0)}_{\mu\nu}$
+satisfies
+\begin{align}
+  R^{(0)}_{\mu\nu}=-2g^{(0)}_{\mu\nu},
+  \qquad
+  R^{(0)}=-6.
+\end{align}
+All indices below are raised and lowered with $g^{(0)}_{\mu\nu}$, and
+$\nabla^{(0)}_\mu$ denotes the corresponding background covariant derivative.
+
+We expand
+\begin{align}
+  g_{\mu\nu}
+  &=g^{(0)}_{\mu\nu}+\lambda h_{\mu\nu}
+    +\lambda^2 k_{\mu\nu}+\cO(\lambda^3),\\
+  \phi&=\varphi+\cO(\lambda).
+\end{align}
+The traces are
+\begin{align}
+  h=g^{(0)\mu\nu}h_{\mu\nu},
+  \qquad
+  k=g^{(0)\mu\nu}k_{\mu\nu}.
+\end{align}
+For any symmetric tensor $X_{\mu\nu}$, write
+$X=g^{(0)\mu\nu}X_{\mu\nu}$. The inverse metric and volume density are
+\begin{align}
+  g^{\mu\nu}
+  &=g^{(0)\mu\nu}
+    -\lambda h^{\mu\nu}
+    +\lambda^2\left(h^\mu{}_\rho h^{\rho\nu}-k^{\mu\nu}\right)
+    +\cO(\lambda^3),\\
+  \sqrt{-g}
+  &=\sqrt{-g^{(0)}}\left[
+      1+\frac{\lambda}{2}h
+      +\lambda^2\left(
+        \frac12 k-\frac14 h_{\mu\nu}h^{\mu\nu}+\frac18 h^2
+      \right)
+    \right]+\cO(\lambda^3).
+\end{align}
+
+The gravitational density expands as
+\begin{align}
+  \sqrt{-g}(R+2)
+  =\sqrt{-g^{(0)}}\left[
+    \Lg^{(0)}
+    +\lambda \Lg^{(1)}[h]
+    +\lambda^2\left(\Lg^{(1)}[k]+\Lg^{(2)}[h]\right)
+  \right]+\cO(\lambda^3),
+\end{align}
+where
+\begin{align}
+  \Lg^{(0)}&=-4,\\
+  \Lg^{(1)}[X]
+  &=\nabla^{(0)}_\mu\nabla^{(0)}_\nu X^{\mu\nu}
+    -\nabla^{(0)2}X,
+\end{align}
+and
+\begin{align}
+  \Lg^{(2)}[X]
+  &=\frac12 X^2-X_{\mu\nu}X^{\mu\nu}
+    +X^{\mu\nu}\nabla^{(0)}_\mu\nabla^{(0)}_\nu X
+    -\frac14\nabla^{(0)}_\mu X\nabla^{(0)\mu}X \notag\\
+  &\quad
+    -\nabla^{(0)}_\mu X^{\mu\nu}
+      \nabla^{(0)}_\rho X_\nu{}^\rho
+    +\nabla^{(0)\mu}X
+      \nabla^{(0)}_\nu X_\mu{}^\nu
+    -X^{\mu\nu}
+      \nabla^{(0)}_\nu\nabla^{(0)}_\rho X_\mu{}^\rho \notag\\
+  &\quad
+    -X^{\mu\nu}
+      \nabla^{(0)}_\rho\nabla^{(0)}_\nu X_\mu{}^\rho
+    +\frac12 X
+      \nabla^{(0)}_\mu\nabla^{(0)}_\nu X^{\mu\nu}
+    +X^{\mu\nu}\nabla^{(0)2}X_{\mu\nu} \notag\\
+  &\quad
+    -\frac12 X\nabla^{(0)2}X
+    -\frac12\nabla^{(0)}_\mu X_{\nu\rho}
+      \nabla^{(0)\rho}X^{\mu\nu}
+    +\frac34\nabla^{(0)}_\rho X_{\mu\nu}
+      \nabla^{(0)\rho}X^{\mu\nu}.
+\end{align}
+
+Therefore the full action has the expansion
+\begin{align}
+  I[g,\phi]
+  &=\frac{1}{2\lambda^2}
+    \int_M\dd^3x\,\sqrt{-g^{(0)}}\,\Lg^{(0)}
+    +\frac{1}{2\lambda}
+    \int_M\dd^3x\,\sqrt{-g^{(0)}}\,\Lg^{(1)}[h]
+    \notag\\
+  &\quad
+    +I^{(0)}[h,k,\varphi]+\cO(\lambda),
+\end{align}
+with finite part
+\begin{align}
+  I^{(0)}[h,k,\varphi]
+  &=\frac12\int_M\dd^3x\,\sqrt{-g^{(0)}}
+    \left(\Lg^{(1)}[k]+\Lg^{(2)}[h]\right)
+    \notag\\
+  &\quad
+    -\frac12\int_M\dd^3x\,\sqrt{-g^{(0)}}
+    \left(\nabla_\mu\varphi\nabla^\mu\varphi+m^2\varphi^2\right).
+\end{align}
+
+The Noether-charge calculation in the next fragment uses only the finite
+action $I^{(0)}[h,k,\varphi]$. The divergent and order-$\lambda^{-1}$ pieces
+are background and boundary contributions in this perturbative expansion.
+
+\end{document}
