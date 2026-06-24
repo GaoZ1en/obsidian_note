@@ -10,6 +10,8 @@ Detailed calculations on Proca field quantization in AdS3, organized by topic.
 |---|---|
 | `quantization of gauge systems.md` | First/second class constraints, constraint surface geometry |
 | `off-shell canonical quantization.md` | Off-shell quantization formalism |
+| `modes/finite system.md` | Finite-radius Proca wall conditions, helicity spectrum equation, and off-shell mode-expansion criterion |
+| `modes/Killing base.md` | Killing-vector coefficient basis for first-order Proca branches and descendant mode solutions |
 | `symplectic form.md` | Symplectic structure derivation |
 | `symplectic structure on the reduced phase space.md` | Reduced phase space symplectic form |
 | `path integral formalism.md` | Path integral approach |
