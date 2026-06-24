@@ -3,7 +3,6 @@ we adopt the following asymptotic boundary conditions
 $$\begin{align}
 \Phi & =r^{-\Delta}\Psi(t,\phi)+o(r^{\Delta-2}),\quad 0<\Delta<1
 \end{align}$$
-
 and we represent the action as
 
 $$\begin{align}
@@ -159,6 +158,29 @@ here $\displaystyle{h}$ is the induced metric on $\displaystyle{\partial \Sigma}
 $$\begin{align}
 \mathrm{d}s^{2}_{\partial \Sigma} & =h_{ij}\mathrm{d}x^{i}\mathrm{d}x^{j} \\
  & =r^{2}\mathrm{d}\phi ^{2},\quad r\to \infty
+\end{align}$$
+
+denote
+
+$$\begin{align}
+I_{\mu \nu}[\Phi] & =(\nabla _{\mu}\nabla _{\nu}-g_{\mu \nu}\nabla ^{2}+2g_{\mu \nu})\Phi ^{2}
+\end{align}$$
+
+then
+
+$$\begin{align}
+\nabla ^{\mu}I_{\mu \nu}[\Phi] & =0 \\
+\xi ^{\nu}I_{\mu \nu}[\Phi] & =\nabla _{\rho}\left(\xi ^{\rho}\nabla _{\mu}\Phi ^{2}-\xi _{\mu}\nabla ^{\rho}\Phi ^{2}+\Phi ^{2}\nabla ^{\rho}\xi _{\mu}\right) \\
+\implies \int _{\Sigma} \mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}I_{\mu \nu}[\Phi] & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\nabla _{\rho}\left(\xi ^{\rho}\nabla ^{\mu}\Phi ^{2}-\xi ^{\mu}\nabla ^{\rho}\Phi ^{2}+\Phi ^{2}\nabla ^{\rho}\xi ^{\mu}\right) \\
+ & =\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h }\tau _{\mu}n_{\rho}\left(\xi ^{\rho}\nabla ^{\mu}\Phi ^{2}-\xi ^{\mu}\nabla ^{\rho}\Phi ^{2}+\Phi ^{2}\nabla ^{\rho}\xi ^{\mu}\right) \\
+ & =(2\Delta+1)\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h }\tau _{\mu}\xi ^{\mu} \Phi ^{2}+o(r^{0})
+\end{align}$$
+
+thus we have
+
+$$\begin{align}
+H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\widehat{T}_{\mu \nu} \\
+\widehat{T}_{\mu \nu} & =T_{\mu \nu}-\dfrac{\Delta}{2(2\Delta+1)}(\nabla _{\mu}\nabla _{\nu}-g_{\mu \nu}\nabla ^{2}+2g_{\mu \nu})\Phi ^{2}
 \end{align}$$
 
 ## constrain the angular momentum

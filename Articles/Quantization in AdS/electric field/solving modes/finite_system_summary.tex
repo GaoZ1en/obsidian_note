@@ -1,0 +1,374 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{bm}
+
+\newcommand{\AdS}{\mathrm{AdS}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\pd}{\partial}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cD}{\mathcal{D}}
+
+\title{Finite-Radius Scalar and Vector Systems in Global \(\AdS_3\)}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Setup}
+
+Use global \(\AdS_3\)
+\begin{align}
+\dd s^2=-(1+r^2)\dd t^2+\frac{\dd r^2}{1+r^2}+r^2\dd\phi^2,
+\qquad 0\le r\le r_0 .
+\end{align}
+The finite wall is placed at \(r=r_0\).  For the Maxwell system we impose
+\begin{align}
+A^t\big|_{r_0}=0,\qquad A^\phi\big|_{r_0}=0 ,
+\end{align}
+and work in temporal gauge \(A^t=0\).  Regularity at \(r=0\) fixes the
+regular radial branch.
+
+\section{Scalar Field}
+
+For a free scalar
+\begin{align}
+S=-\frac12\int\dd^3x\sqrt{-g}\left(\nabla_\mu\phi\nabla^\mu\phi
++M^2\phi^2\right),
+\end{align}
+write the separated modes as
+\begin{align}
+\phi(t,r,\phi)=e^{-\ii\omega t+\ii m\phi}R_{\omega m}(r).
+\end{align}
+The radial equation is
+\begin{align}
+(1+r^2)R_{\omega m}''+\frac{1+3r^2}{r}R_{\omega m}'
++\left(\frac{\omega^2}{1+r^2}-\frac{m^2}{r^2}-M^2\right)R_{\omega m}=0.
+\end{align}
+When \(M^2=\Delta(\Delta-2)\), the branch regular at the origin is
+\begin{align}
+R_{\omega m}^{(\Delta)}(r)=
+r^{|m|}(1+r^2)^{-(|m|+\Delta)/2}
+{}_2F_1\!\left(
+\frac{|m|+\Delta-\omega}{2},
+\frac{|m|+\Delta+\omega}{2};
+1+|m|;
+\frac{r^2}{1+r^2}
+\right).
+\end{align}
+
+\subsection{Dirichlet Wall and Standard Quantization}
+
+For standard quantization take
+\begin{align}
+\Delta=\Delta_+=1+\sqrt{1+M^2}>1 .
+\end{align}
+The finite-radius Dirichlet condition is
+\begin{align}
+R_{\omega m}^{(\Delta)}(r_0)=0,
+\end{align}
+or equivalently
+\begin{align}
+{}_2F_1\!\left(
+\frac{|m|+\Delta-\omega}{2},
+\frac{|m|+\Delta+\omega}{2};
+1+|m|;
+\frac{r_0^2}{1+r_0^2}
+\right)=0 .
+\end{align}
+For each fixed \((n,m)\), the corresponding branch satisfies
+\begin{align}
+\omega_{n,m}(r_0)
+=\Delta+2n+|m|+\mathcal{O}(r_0^{2-2\Delta}),
+\qquad r_0\to\infty .
+\end{align}
+Thus the finite cavity approaches the standard-quantization spectrum
+\begin{align}
+\omega_{n,m}^{(\mathrm{std})}=\Delta+2n+|m|.
+\end{align}
+
+\subsection{Robin Wall and Alternative Quantization}
+
+For alternative quantization write \(\Delta=\Delta_-\) with
+\begin{align}
+0<\Delta\le1,\qquad M^2=\Delta(\Delta-2).
+\end{align}
+Adding the wall term
+\begin{align}
+S_{\Gamma_{r_0}}=-\frac{\Delta}{2}\int_{\Gamma_{r_0}}\dd^2x
+\sqrt{-\gamma}\,\phi^2
+\end{align}
+gives the finite-radius Robin condition
+\begin{align}
+\left.(n^\mu\nabla_\mu+\Delta)\phi\right|_{r_0}=0,
+\qquad n^r=\sqrt{1+r_0^2}.
+\end{align}
+For the regular radial branch this is
+\begin{align}
+Q_m^{\mathrm R}(\omega;r_0)
+:=\left.\left(\sqrt{1+r^2}\,\pd_r+\Delta\right)
+R_{\omega m}^{(\Delta)}(r)\right|_{r=r_0}=0 .
+\end{align}
+For \(0<\Delta<1\), the finite-radius branches obey
+\begin{align}
+\omega_{n,m}(r_0)
+=\Delta+2n+|m|+\mathcal{O}(r_0^{-2\Delta}),
+\qquad r_0\to\infty ,
+\end{align}
+and converge mode by mode to the alternative-quantization spectrum
+\begin{align}
+\omega_{n,m}^{(\mathrm{alt})}=\Delta+2n+|m|.
+\end{align}
+At the BF point \(\Delta=1\), the same Robin regulator selects the no-log
+branch and gives
+\begin{align}
+\omega_{n,m}^{(\mathrm{BF})}=1+2n+|m|.
+\end{align}
+
+\section{Maxwell Field}
+
+In temporal gauge the Gauss-law equation gives
+\begin{align}
+\pd_r f^r+\frac{1-r^2}{r(1+r^2)}f^r+\ii m f^\phi=0
+\end{align}
+for a mode \(A^\mu=e^{-\ii\omega t+\ii m\phi}f^\mu(r)\).  With
+\[
+f_r=\frac{f^r}{1+r^2},\qquad f_\phi=r^2 f^\phi ,
+\]
+the finite-wall boundary condition \(f^\phi(r_0)=0\) implies
+\begin{align}
+\pd_r(r f_r)\big|_{r_0}=0 .
+\end{align}
+Equivalently, write the physical temporal-gauge modes in terms of a scalar
+potential \(\Psi\),
+\begin{align}
+A^t=0,\qquad
+A^r=\frac{1+r^2}{r}\pd_\phi\Psi,\qquad
+A^\phi=-\frac{1+r^2}{r}\pd_r\Psi .
+\end{align}
+Then \(A^\phi(r_0)=0\) is simply
+\begin{align}
+\pd_r\Psi\big|_{r_0}=0 .
+\end{align}
+For
+\(\Psi=e^{-\ii\omega t+\ii m\phi}R_{\omega m}(r)\), the regular radial
+branch is
+\begin{align}
+R_{\omega m}(r)=
+r^{|m|}(1+r^2)^{-(|m|+2)/2}
+{}_2F_1\!\left(
+\frac{|m|+2-\omega}{2},
+\frac{|m|+2+\omega}{2};
+1+|m|;
+\frac{r^2}{1+r^2}
+\right).
+\end{align}
+The finite-radius Maxwell frequencies are therefore the positive roots of
+\begin{align}
+\pd_rR_{\omega m}(r)\big|_{r_0}=0 .
+\end{align}
+For \(m\ne0\), this is the same as the condition
+\(\pd_r(r f_r)|_{r_0}=0\), since \(r f_r=\ii m\Psi\).  For \(m=0\), \(A^r=0\)
+and \(A^\phi(r_0)=0\) again gives \(\pd_r\Psi|_{r_0}=0\).  For each fixed
+\((n,m)\), the roots approach the infinite-radius temporal-gauge Maxwell
+spectrum
+\begin{align}
+\omega_{n,m}^{(\infty)}=2+2n+|m| .
+\end{align}
+
+\section{Massive Proca Field}
+
+The Proca action is
+\begin{align}
+S=\int\dd^3x\sqrt{-g}\left(
+-\frac14 F_{\mu\nu}F^{\mu\nu}-\frac12\mu^2A_\mu A^\mu
+\right),\qquad \mu^2>0 .
+\end{align}
+The equation of motion is
+\begin{align}
+\nabla_\nu F^{\nu\mu}-\mu^2 A^\mu=0 .
+\end{align}
+Taking the divergence gives the kinematic Proca constraint
+\begin{align}
+\nabla_\mu A^\mu=0 .
+\end{align}
+Since \(\sqrt{-g}=r\),
+\begin{align}
+\nabla_\mu A^\mu=
+\pd_tA^t+\frac1r\pd_r(rA^r)+\pd_\phi A^\phi .
+\end{align}
+If the finite wall fixes \(A^t=A^\phi=0\) as functions of \((t,\phi)\), then
+their tangential derivatives vanish on the wall.  The Proca constraint
+therefore imposes the radial Robin condition
+\begin{align}
+\boxed{\;\pd_r(rA^r)\big|_{r_0}=0\;}
+\end{align}
+on every on-shell mode.  In terms of the covariant radial component
+\(A_r=A^r/(1+r^2)\), this is
+\begin{align}
+\pd_r\!\left(r(1+r^2)A_r\right)\big|_{r_0}=0 .
+\end{align}
+
+\subsection{Decoupled Bulk Equations}
+
+After eliminating \(A^t\) with the Proca constraint, define
+\begin{align}
+\psi=A^r,\qquad \varphi=rA^\phi,\qquad
+\Phi_\pm=\frac12(\varphi\pm \ii\psi).
+\end{align}
+Then the two helicity variables satisfy
+\begin{align}
+\left[
+(1+r^2)\pd_r^2+\frac{1+3r^2}{r}\pd_r
+-\frac{1}{1+r^2}\pd_t^2
++1-\mu^2
++\frac{1}{r^2}\left(\pd_\phi^2\mp2\ii\pd_\phi-1\right)
+\right]\Phi_\pm=0 .
+\end{align}
+For a mode \(e^{-\ii\omega t+\ii m\phi}\), the radial equations are scalar
+equations with effective angular momenta
+\begin{align}
+\ell_+=|m-1|,\qquad \ell_-=|m+1|,
+\end{align}
+and effective scalar dimension
+\begin{align}
+\Delta=1+\mu .
+\end{align}
+The regular radial branch is
+\begin{align}
+R_\ell(\omega;r)=
+r^\ell(1+r^2)^{-(\ell+\Delta)/2}
+{}_2F_1\!\left(
+\frac{\ell+\Delta-\omega}{2},
+\frac{\ell+\Delta+\omega}{2};
+1+\ell;
+\frac{r^2}{1+r^2}
+\right).
+\end{align}
+
+\subsection{Finite-Wall Spectrum}
+
+For each fixed \(m\), the general regular solution is
+\begin{align}
+\Phi_+(r)=c_+R_{\ell_+}(\omega;r),\qquad
+\Phi_-(r)=c_-R_{\ell_-}(\omega;r).
+\end{align}
+The wall conditions are
+\begin{align}
+\varphi(r_0)=0,\qquad \pd_r(r\psi)\big|_{r_0}=0 .
+\end{align}
+Equivalently,
+\begin{align}
+c_+R_{\ell_+}(r_0)+c_-R_{\ell_-}(r_0)&=0,\\
+c_+\pd_r\!\left(rR_{\ell_+}\right)\big|_{r_0}
+-c_-\pd_r\!\left(rR_{\ell_-}\right)\big|_{r_0}&=0 .
+\end{align}
+It is useful to package the finite-wall condition as the spectral function
+\begin{align}
+D_{r_0}(\omega)
+&=R_{\ell_+}(r_0)\,\pd_r\!\left(rR_{\ell_-}\right)\big|_{r_0}
++R_{\ell_-}(r_0)\,\pd_r\!\left(rR_{\ell_+}\right)\big|_{r_0}.
+\end{align}
+Non-trivial finite-radius Proca modes are precisely the zeros of
+\(D_{r_0}\).  The two terms in \(D_{r_0}\) show that the wall mixes the two
+helicity variables.  A single helicity branch is not enough to satisfy both
+\(A^\phi|_{r_0}=0\) and \(\pd_r(rA^r)|_{r_0}=0\), unless the complementary
+boundary equation becomes redundant at a special frequency.
+
+The infinite-volume limit is obtained from the large-\(r\) continuation of the
+same regular branch.  For generic non-integer \(\mu\),
+\begin{align}
+R_\ell(\omega;r)
+&=S_\ell(\omega)r^{\mu-1}+N_\ell(\omega)r^{-\mu-1}+\cdots,\\
+S_\ell(\omega)
+&=\frac{\Gamma(1+\ell)\Gamma(\mu)}
+{\Gamma\!\left(\frac{\ell+\Delta-\omega}{2}\right)
+\Gamma\!\left(\frac{\ell+\Delta+\omega}{2}\right)} .
+\end{align}
+Here \(S_\ell\) multiplies the non-normalizable asymptotic branch.  Substituting
+this expansion into \(D_{r_0}\) gives the normalized spectral function
+\begin{align}
+F_{r_0}(\omega)
+&\equiv r_0^{2-2\mu}D_{r_0}(\omega)\\
+&=2\mu S_{\ell_+}(\omega)S_{\ell_-}(\omega)+o(1),
+\end{align}
+so that
+\begin{align}
+F_\infty(\omega)=2\mu S_{\ell_+}(\omega)S_{\ell_-}(\omega).
+\end{align}
+The large-\(r\) expansion, or its logarithmic limiting form for integer
+\(\mu\), is uniform for \(\omega\) in every compact subset of the complex
+plane.  Hence \(F_{r_0}\to F_\infty\) uniformly on compact \(\omega\)-sets.
+
+For positive frequency, the zeros of \(F_\infty\) occur when one of the
+non-normalizable coefficients vanishes,
+\begin{align}
+\frac{\ell_\pm+\Delta-\omega}{2}=-n,\qquad n=0,1,2,\ldots .
+\end{align}
+This gives the two infinite-volume Proca families
+\begin{align}
+\omega_{n,m,+}^{(\infty)}=\mu+1+2n+|m-1|,\qquad
+\omega_{n,m,-}^{(\infty)}=\mu+1+2n+|m+1|.
+\end{align}
+The compact convergence gives the precise spectral statement: if \(K\) is a
+compact domain whose boundary contains no zero of \(F_\infty\), then for
+sufficiently large \(r_0\) the number of zeros of \(D_{r_0}\) in \(K\) equals
+the number of zeros of \(F_\infty\) in \(K\), counted with multiplicity.  Thus
+the fixed low-lying roots, counted in any finite frequency window, converge as
+a multiset to the infinite-volume Proca spectrum.  There is no uniform
+statement that all roots over the whole positive real axis stay bounded as
+\(r_0\to\infty\), since the infinite-volume spectrum itself is unbounded as
+\(n\to\infty\).
+
+For example, for \(\mu=2\) and \(m=1\), the root near the first \(+\)-branch
+value \(\omega=3\) is
+\begin{align}
+\omega(r_0=10)&=3.0003843828,\\
+\omega(r_0=20)&=3.0000247511,\\
+\omega(r_0=40)&=3.0000015586 .
+\end{align}
+
+\section{Mode Expansion Without Solving the Constraint}
+
+At the action level one can avoid solving the Proca constraint first.  The
+unreduced component action can be written as
+\begin{align}
+S=\frac12\int\dd t\,\dd r\,\dd\phi\Bigg[
+&r\left(\frac{\dot A^r}{f}+\pd_r(fA^t)\right)^2
++\frac{1}{fr}\left(r^2\dot A^\phi+f\pd_\phi A^t\right)^2 \notag\\
+&-\frac{f}{r}\left(\pd_r(r^2A^\phi)-\frac1f\pd_\phi A^r\right)^2
++\mu^2rf(A^t)^2-\frac{\mu^2r}{f}(A^r)^2-\mu^2r^3(A^\phi)^2
+\Bigg],
+\end{align}
+where \(f=1+r^2\).  Choose componentwise regular spatial bases on
+\([0,r_0]\), with \(A^t\) and \(A^\phi\) basis functions satisfying
+Dirichlet boundary conditions at \(r_0\).  Expand at each time as
+\begin{align}
+A^t(t,r,\phi)&=\sum_I a_I(t)T_I(r,\phi),&
+A^r(t,r,\phi)&=\sum_I b_I(t)R_I(r,\phi),&
+A^\phi(t,r,\phi)&=\sum_I c_I(t)P_I(r,\phi).
+\end{align}
+Substitution gives a mechanical system
+\begin{align}
+S=\frac12\int\dd t\,
+\left(K^{AB}_{IJ}\dot q_{I,A}\dot q_{J,B}
++2B^{AB}_{IJ}q_{I,A}\dot q_{J,B}
+-V^{AB}_{IJ}q_{I,A}q_{J,B}\right),
+\end{align}
+with \(q_{I,A}=(a_I,b_I,c_I)\).  The \(a_I\) variables have no independent
+kinetic term; their equations are the discretized Proca constraint.  Solving
+or integrating out these auxiliary variables after the spatial expansion is
+therefore equivalent to imposing the constraint after mode expansion.
+
+The useful caution is that the spatial basis must be regular component by
+component.  Splitting an on-shell highest-weight vector mode into independent
+\(A^t,A^r,A^\phi\) coefficients is not a good off-shell basis: the separate
+\(A^r\) and \(A^\phi\) pieces can be singular at the origin even though the full
+on-shell vector is regular.  A finite-cavity off-shell calculation should
+therefore use a componentwise regular Sturm--Liouville basis, not the separated
+components of a highest-weight solution as independent off-shell variables.
+
+\end{document}

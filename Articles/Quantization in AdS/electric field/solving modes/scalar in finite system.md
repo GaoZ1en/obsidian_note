@@ -27,6 +27,47 @@ with regularity at $\displaystyle{r=0}$. the finite-radius boundary condition de
 - Homogeneous Dirichlet boundary condition keeps the standard-quantization limit.
 - Robin boundary condition $\displaystyle{(n^{\mu}\nabla _{\mu}+\Delta_{-})\phi|_{r=r_{0}}=0}$ keeps the alternative-quantization limit for $\displaystyle{0<\Delta_{-}\leq 1}$, with the no-log branch at $\displaystyle{\Delta_{-}=1}$.
 
+# compact finite-radius formulas
+
+The standalone finite-system summary uses the following compact form of the result. For a scalar mass written as
+
+$$\begin{align}
+M^{2} &= \Delta(\Delta-2),
+\end{align}$$
+
+the regular radial branch is
+
+$$\begin{align}
+R_{\omega m}^{(\Delta)}(r) &= r^{|m|}(1+r^{2})^{-(|m|+\Delta)/2} {}_2F_1\left( \frac{|m|+\Delta-\omega}{2}, \frac{|m|+\Delta+\omega}{2}; 1+|m|; \frac{r^{2}}{1+r^{2}} \right).
+\end{align}$$
+
+For standard quantization, $\displaystyle{\Delta=\Delta_{+}=1+\sqrt{1+M^{2}}>1}$ and the finite-radius Dirichlet spectrum is determined by
+
+$$\begin{align}
+R_{\omega m}^{(\Delta)}(r_{0}) &=0,
+\end{align}$$
+
+with
+
+$$\begin{align}
+\omega_{n,m}(r_{0})&=\Delta+2n+|m|+\mathcal{O}(r_{0}^{2-2\Delta}).
+\end{align}$$
+
+For alternative quantization, $\displaystyle{\Delta=\Delta_{-}}$ with $\displaystyle{0<\Delta\leq1}$ and the finite-radius Robin spectrum is determined by
+
+$$\begin{align}
+Q_{m}^{\mathrm{R}}(\omega;r_{0}) &:=\left.\left(\sqrt{1+r^{2}}\partial_{r}+\Delta\right)
+R_{\omega m}^{(\Delta)}(r)\right|_{r=r_{0}}=0.
+\end{align}$$
+
+For $\displaystyle{0<\Delta<1}$ the finite-radius branches satisfy
+
+$$\begin{align}
+\omega_{n,m}(r_{0})&=\Delta+2n+|m|+\mathcal{O}(r_{0}^{-2\Delta}),
+\end{align}$$
+
+while at $\displaystyle{\Delta=1}$ the same Robin regulator selects the no-log branch with $\displaystyle{\omega_{n,m}=1+2n+|m|}$ in the infinite-radius limit.
+
 # Dirichlet boundary condition
 
 in this section we assume
