@@ -112,22 +112,19 @@ sol. Let $F=R+r\cos\theta$. The nonzero Levi-Civita connection coefficients are
 
 $$\begin{align}
 \Gamma^\theta{}_{\phi\phi} &= \frac{F\sin\theta}{r}, \\
-\Gamma^\phi{}_{\theta\phi} &= \Gamma^\phi{}_{\phi\theta}
-= -\frac{r\sin\theta}{F}.
+\Gamma^\phi{}_{\theta\phi} &= \Gamma^\phi{}_{\phi\theta} = -\frac{r\sin\theta}{F}.
 \end{align}$$
 
 With the convention in the question, the independent nonzero Riemann components are
 
 $$\begin{align}
-R^\theta{}_{\phi\theta\phi} &= \frac{F\cos\theta}{r}, &
-R^\phi{}_{\theta\theta\phi} &= -\frac{r\cos\theta}{F},
+R^\theta{}_{\phi\theta\phi} &= \frac{F\cos\theta}{r}, & R^\phi{}_{\theta\theta\phi} &= -\frac{r\cos\theta}{F},
 \end{align}$$
 
 with the remaining nonzero components obtained by antisymmetry in the last two indices. Hence the scalar curvature is
 
 $$\begin{align}
-\mathcal{R}=g^{\nu\rho}R^\mu{}_{\nu\mu\rho}
-=\frac{2\cos\theta}{rF}.
+\mathcal{R}=g^{\nu\rho}R^\mu{}_{\nu\mu\rho} =\frac{2\cos\theta}{rF}.
 \end{align}$$
 
 For $R>r>0$, $\sqrt{\det g}=rF$, so
@@ -198,16 +195,13 @@ $$\begin{align}
 For $n\ge 1$, $S^{2n+1}$ is simply connected. The low-degree part is
 
 $$\begin{align}
-\pi_2(S^{2n+1}) \to \pi_2(\mathbb{CP}^n)
-\to \pi_1(U(1)) \to \pi_1(S^{2n+1})
-\to \pi_1(\mathbb{CP}^n)\to \pi_0(U(1)).
+\pi_2(S^{2n+1}) \to \pi_2(\mathbb{CP}^n) \to \pi_1(U(1)) \to \pi_1(S^{2n+1}) \to \pi_1(\mathbb{CP}^n)\to \pi_0(U(1)).
 \end{align}$$
 
 Since $\pi_2(S^{2n+1})=0$, $\pi_1(U(1))=\mathbb{Z}$, $\pi_1(S^{2n+1})=0$, and $\pi_0(U(1))=0$, exactness gives
 
 $$\begin{align}
-\pi_1(\mathbb{CP}^n)=0,\qquad
-\pi_2(\mathbb{CP}^n)\cong \mathbb{Z}.
+\pi_1(\mathbb{CP}^n)=0,\qquad \pi_2(\mathbb{CP}^n)\cong \mathbb{Z}.
 \end{align}$$
 
 For $k\ge 3$, $\pi_k(U(1))=\pi_{k-1}(U(1))=0$, hence exactness gives $\pi_k(\mathbb{CP}^n)\cong \pi_k(S^{2n+1})$.
@@ -228,8 +222,7 @@ $$\begin{align}
 sol. Consider the vector $v=z^\alpha\partial_\alpha$. Then
 
 $$\begin{align}
-h_z(v,\cdot)
-=\frac{|z|^2(z\cdot d\bar z)-(\bar z\cdot z)(z\cdot d\bar z)}{|z|^4}=0.
+h_z(v,\cdot) =\frac{|z|^2(z\cdot d\bar z)-(\bar z\cdot z)(z\cdot d\bar z)}{|z|^4}=0.
 \end{align}$$
 
 Thus $h_z$ is degenerate on $(\mathbb{C}^{n+1})^\ast$, with kernel the complex line $\mathbb{C}z$, i.e. the tangent direction to the $\mathbb{C}^\times$-orbit. On the unit sphere this restricts to the $U(1)$ vertical direction. The form is invariant along the quotient directions and therefore descends to a nondegenerate Hermitian metric on $\mathbb{CP}^n$, namely the Fubini-Study metric.
@@ -258,18 +251,13 @@ z\cdot d\bar z &= \zeta\cdot d\bar\zeta.
 Substitution into $h_z$ gives
 
 $$\begin{align}
-ds^2_{\mathrm{FS}}
-=\frac{(1+|\zeta|^2)d\zeta\cdot d\bar\zeta
--(\bar\zeta\cdot d\zeta)(\zeta\cdot d\bar\zeta)}
-{(1+|\zeta|^2)^2}.
+ds^2_{\mathrm{FS}} =\frac{(1+|\zeta|^2)d\zeta\cdot d\bar\zeta -(\bar\zeta\cdot d\zeta)(\zeta\cdot d\bar\zeta)} {(1+|\zeta|^2)^2}.
 \end{align}$$
 
 It is Hermitian because it has only $(1,1)$ components,
 
 $$\begin{align}
-g_{a\bar b}
-=\frac{(1+|\zeta|^2)\delta_{a\bar b}-\bar\zeta^{\bar a}\zeta^b}
-{(1+|\zeta|^2)^2},
+g_{a\bar b} =\frac{(1+|\zeta|^2)\delta_{a\bar b}-\bar\zeta^{\bar a}\zeta^b} {(1+|\zeta|^2)^2},
 \end{align}$$
 
 and is positive definite on nonzero tangent vectors by the Cauchy-Schwarz inequality.
@@ -289,10 +277,8 @@ $$\begin{align}
 sol. we have
 
 $$\begin{align}
-\frac{\partial K}{\partial \bar\zeta^{\bar b}}
-&=\frac{\zeta^b}{1+|\zeta|^2},\\
-\dfrac{\partial ^{2}K}{\partial \zeta ^{a}\partial \bar{\zeta}^{\bar{b}}}
-& =\partial _{\zeta ^{a}}\left( \dfrac{\zeta ^{b}}{1+|\zeta|^{2}} \right) \\
+\frac{\partial K}{\partial \bar\zeta^{\bar b}} &=\frac{\zeta^b}{1+|\zeta|^2},\\
+\dfrac{\partial ^{2}K}{\partial \zeta ^{a}\partial \bar{\zeta}^{\bar{b}}} & =\partial _{\zeta ^{a}}\left( \dfrac{\zeta ^{b}}{1+|\zeta|^{2}} \right) \\
  & =\dfrac{1}{1+|\zeta|^{2}}\delta _{a \bar{b}}-\dfrac{1}{(1+|\zeta|^{2})^2}\bar{\zeta}^{\bar{a}}\zeta ^{b} \\
  & =\dfrac{(1+|\zeta|^{2})\delta _{a \bar{b}}-\bar{\zeta}^{\bar{a}}\zeta ^{b}}{(1+|\zeta|^{2})^{2}}
 \end{align}$$
@@ -301,7 +287,7 @@ $$\begin{align}
 
 - 曲面乘积的整数同调可由 Künneth 公式直接得到。对闭定向曲面 $\Sigma_g,\Sigma_h$，
 
-  $$\begin{align}
+$$\begin{align}
   H_k(\Sigma_g\times\Sigma_h;\mathbb Z)
   \cong
   \begin{cases}
@@ -310,16 +296,15 @@ $$\begin{align}
   \mathbb Z^{4gh+2}, & k=2,\\
   0, & \text{otherwise}.
   \end{cases}
-  \end{align}$$
+\end{align}$$
 
   因此 $\chi(\Sigma_g\times\Sigma_h)=\chi(\Sigma_g)\chi(\Sigma_h)=(2-2g)(2-2h)$。
 
 - 对环面度量 $ds^2=r^2d\theta^2+(R+r\cos\theta)^2d\phi^2$，若记 $F=R+r\cos\theta$，则
 
-  $$\begin{align}
-  \Gamma^\theta{}_{\phi\phi}=\frac{F\sin\theta}{r},\qquad
-  \Gamma^\phi{}_{\theta\phi}=\Gamma^\phi{}_{\phi\theta}=-\frac{r\sin\theta}{F}.
-  \end{align}$$
+$$\begin{align}
+  \Gamma^\theta{}_{\phi\phi}=\frac{F\sin\theta}{r},\qquad \Gamma^\phi{}_{\theta\phi}=\Gamma^\phi{}_{\phi\theta}=-\frac{r\sin\theta}{F}.
+\end{align}$$
 
   标曲率为 $\mathcal R=2\cos\theta/(rF)$，所以 $\int_{T^2}\sqrt{\det g}\,\mathcal R\,d^2x=0$。
 
@@ -329,17 +314,12 @@ $$\begin{align}
 
 - 齐次坐标中的 Fubini-Study 表达式在 $(\mathbb C^{n+1})^\ast$ 上不是非退化度量；它沿 $\mathbb C^\times$ 标度方向退化。选择局部截面 $z=(1,\zeta)$ 后，它下降为
 
-  $$\begin{align}
-  ds^2_{\mathrm{FS}}
-  =\frac{(1+|\zeta|^2)d\zeta\cdot d\bar\zeta
-  -(\bar\zeta\cdot d\zeta)(\zeta\cdot d\bar\zeta)}
-  {(1+|\zeta|^2)^2}.
-  \end{align}$$
+$$\begin{align}
+  ds^2_{\mathrm{FS}} =\frac{(1+|\zeta|^2)d\zeta\cdot d\bar\zeta -(\bar\zeta\cdot d\zeta)(\zeta\cdot d\bar\zeta)} {(1+|\zeta|^2)^2}.
+\end{align}$$
 
 - Fubini-Study 度量的 Kähler 势为 $K=\log(1+|\zeta|^2)$，并且
 
-  $$\begin{align}
-  g_{a\bar b}
-  =\partial_a\partial_{\bar b}K
-  =\frac{(1+|\zeta|^2)\delta_{a\bar b}-\bar\zeta^{\bar a}\zeta^b}{(1+|\zeta|^2)^2}.
-  \end{align}$$
+$$\begin{align}
+  g_{a\bar b} =\partial_a\partial_{\bar b}K =\frac{(1+|\zeta|^2)\delta_{a\bar b}-\bar\zeta^{\bar a}\zeta^b}{(1+|\zeta|^2)^2}.
+\end{align}$$
