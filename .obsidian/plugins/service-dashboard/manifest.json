@@ -1,0 +1,9 @@
+{
+  "id": "service-dashboard",
+  "name": "Service Dashboard",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Card dashboard for remote self-hosted services.",
+  "author": "Koishi",
+  "isDesktopOnly": true
+}

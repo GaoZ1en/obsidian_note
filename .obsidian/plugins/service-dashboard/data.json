@@ -1,0 +1,42 @@
+{
+  "refreshIntervalSeconds": 45,
+  "timeoutMs": 6000,
+  "services": [
+    {
+      "id": "gitea",
+      "name": "Gitea",
+      "description": "Git hosting",
+      "url": "http://koishiminipc:3000/",
+      "healthUrl": "http://koishiminipc:3000/",
+      "method": "GET",
+      "icon": "git-branch"
+    },
+    {
+      "id": "overleaf",
+      "name": "Overleaf",
+      "description": "LaTeX editor",
+      "url": "http://koishiminipc:8080/project",
+      "healthUrl": "http://koishiminipc:8080/",
+      "method": "GET",
+      "icon": "file-text"
+    },
+    {
+      "id": "picsur",
+      "name": "Picsur",
+      "description": "Image hosting",
+      "url": "http://koishiminipc:8081/upload",
+      "healthUrl": "http://koishiminipc:8081/",
+      "method": "GET",
+      "icon": "image"
+    },
+    {
+      "id": "convertx",
+      "name": "ConvertX",
+      "description": "File conversion",
+      "url": "http://koishiminipc:8082/",
+      "healthUrl": "http://koishiminipc:8082/",
+      "method": "GET",
+      "icon": "refresh-cw"
+    }
+  ]
+}
