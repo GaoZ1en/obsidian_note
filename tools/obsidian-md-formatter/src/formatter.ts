@@ -90,9 +90,9 @@ function formatMarkdownLine(line: string, options: FormatterOptions): string {
     return `${unordered[1]}-${withoutTrailingWhitespace.slice(unordered[1].length + 1)}`;
   }
 
-  const ordered = withoutTrailingWhitespace.match(/^(\s*)\d+[.)](\s+)/);
+  const ordered = withoutTrailingWhitespace.match(/^(\s*)(\d+)[.)](\s+)/);
   if (ordered !== null) {
-    return `${ordered[1]}1.${withoutTrailingWhitespace.slice(ordered[0].length - ordered[2].length)}`;
+    return `${ordered[1]}${ordered[2]}.${withoutTrailingWhitespace.slice(ordered[0].length - ordered[3].length)}`;
   }
 
   return withoutTrailingWhitespace;

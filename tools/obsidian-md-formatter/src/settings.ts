@@ -73,7 +73,7 @@ export class FormatterSettingTab extends PluginSettingTab {
 
     new Setting(containerEl)
       .setName("Normalize list markers")
-      .setDesc("Use '-' for unordered lists and '1.' for ordered lists.")
+      .setDesc("Use '-' for unordered lists and preserve ordered list numbers while normalizing ')' to '.'.")
       .addToggle((toggle) => {
         toggle.setValue(this.plugin.settings.normalizeListMarkers).onChange(async (value) => {
           this.plugin.settings.normalizeListMarkers = value;

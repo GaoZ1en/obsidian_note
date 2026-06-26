@@ -199,6 +199,10 @@ function shouldMergeWithPrevious(line: string, previous: string): boolean {
     return false;
   }
 
+  if (previousHasRelation && !currentHasRelation && startsWithMathAtom(trimmed)) {
+    return true;
+  }
+
   if (!previousHasRelation && currentHasRelation && startsWithMathAtom(trimmed)) {
     return true;
   }
@@ -223,7 +227,7 @@ function looksLikeNewAlignRow(trimmed: string): boolean {
 }
 
 function isSourceOnlyContinuation(trimmed: string): boolean {
-  return /^(?:[&=+*/,:;]|[-−](?=\s|\\|[A-Za-z0-9({])|\\(?:quad|qquad|left|right|frac|dfrac|tfrac|sqrt|cdot|times|wedge|otimes|oplus|le|ge|sim|simeq|propto|partial|nabla|mathrm|mathcal|operatorname)\b)/.test(trimmed);
+  return /^(?:[&=+*/,:;]|[-−](?=\s|\\|[A-Za-z0-9({])|\\(?:quad|qquad|left|right|frac|dfrac|tfrac|sqrt|cdot|times|wedge|otimes|oplus|le|ge|sim|simeq|propto|to|mapsto|rightarrow|leftarrow|leftrightarrow|longrightarrow|longleftarrow|longleftrightarrow|hookrightarrow|twoheadrightarrow|xrightarrow|partial|nabla|mathrm|mathcal|operatorname)\b)/.test(trimmed);
 }
 
 function containsEnvironmentBoundary(line: string): boolean {

@@ -31,6 +31,13 @@ describe("formatMarkdown", () => {
     expect(formatMarkdown("Paragraph with trailing spaces.   \n").text).toBe("Paragraph with trailing spaces.\n");
   });
 
+  it("preserves ordered list numbers while normalizing the delimiter", () => {
+    const input = "1. first\n2) second\n10. tenth\n";
+    const expected = "1. first\n2. second\n10. tenth\n";
+
+    expect(formatMarkdown(input).text).toBe(expected);
+  });
+
   it("can format a selection without changing text outside the selection", () => {
     const prefix = "before\n\n";
     const selection = "\\[\nx=y\n\\]";
@@ -135,6 +142,40 @@ a=b +c=d
 \end{align}$$` + "\n";
 
     expect(formatMarkdown(input).text).toBe(expected);
+  });
+
+  it("merges relation RHS factors split across source lines", () => {
+    const input =
+      String.raw`$$\begin{align}
+R_{n,m}^{(\mathrm{alt})}(r) &=r^{|m|}(1+r^{2})^{-(|m|+\Delta)/2}
+{}_2F_{1}\left(-n,\Delta+|m|+n;1+|m|;\frac{r^{2}}{1+r^{2}}\right)\\
+&\propto r^{|m|}(1+r^{2})^{-(|m|+\Delta)/2}
+P_{n}^{(\Delta-1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right),
+\end{align}$$` + "\n";
+    const expected =
+      String.raw`$$\begin{align}
+R_{n,m}^{(\mathrm{alt})}(r) &=r^{|m|}(1+r^{2})^{-(|m|+\Delta)/2} {}_2F_{1}\left(-n,\Delta+|m|+n;1+|m|;\frac{r^{2}}{1+r^{2}}\right)\\
+&\propto r^{|m|}(1+r^{2})^{-(|m|+\Delta)/2} P_{n}^{(\Delta-1,|m|)}\left(\frac{r^{2}-1}{r^{2}+1}\right),
+\end{align}$$` + "\n";
+
+    expect(formatMarkdown(input).text).toBe(expected);
+    expect(formatMarkdown(expected).text).toBe(expected);
+  });
+
+  it("merges arrow chains split across source lines", () => {
+    const input =
+      String.raw`$$\begin{align}
+\pi_2(S^{2n+1}) \to \pi_2(\mathbb{CP}^n)
+\to \pi_1(U(1)) \to \pi_1(S^{2n+1})
+\to \pi_1(\mathbb{CP}^n)\to \pi_0(U(1)).
+\end{align}$$` + "\n";
+    const expected =
+      String.raw`$$\begin{align}
+\pi_2(S^{2n+1}) \to \pi_2(\mathbb{CP}^n) \to \pi_1(U(1)) \to \pi_1(S^{2n+1}) \to \pi_1(\mathbb{CP}^n)\to \pi_0(U(1)).
+\end{align}$$` + "\n";
+
+    expect(formatMarkdown(input).text).toBe(expected);
+    expect(formatMarkdown(expected).text).toBe(expected);
   });
 
   it("keeps distinct relation rows separate when the row break is missing", () => {
