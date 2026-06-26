@@ -1,0 +1,292 @@
+.miniterm-content {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.miniterm-view,
+.miniterm-view * {
+  box-sizing: border-box;
+}
+
+.miniterm-view {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  background: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.miniterm-quick-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 48px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(8px) scale(0.99);
+  transition: opacity 120ms ease, transform 120ms ease;
+}
+
+.miniterm-quick-overlay.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.miniterm-quick-panel {
+  width: min(1120px, 100%);
+  height: var(--miniterm-quick-height, 45vh);
+  overflow: hidden;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.26);
+  pointer-events: none;
+}
+
+.miniterm-quick-overlay.is-visible .miniterm-quick-panel {
+  pointer-events: auto;
+}
+
+.miniterm-quick .miniterm-tabbar {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .miniterm-quick-overlay {
+    padding: 0 12px;
+  }
+}
+
+.miniterm-tabbar {
+  display: flex;
+  align-items: center;
+  flex: 0 0 36px;
+  min-width: 0;
+  height: 36px;
+  padding: 0 8px;
+  gap: 8px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+}
+
+.miniterm-tabs {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 100%;
+  gap: 4px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.miniterm-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.miniterm-tab {
+  display: flex;
+  align-items: center;
+  flex: 0 1 180px;
+  min-width: 84px;
+  max-width: 220px;
+  height: 28px;
+  color: var(--text-muted);
+  border-bottom: 2px solid transparent;
+}
+
+.miniterm-tab.is-active {
+  color: var(--text-normal);
+  border-bottom-color: var(--interactive-accent);
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.miniterm-tab.is-exited .miniterm-tab-select {
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+.miniterm-tab-select {
+  appearance: none;
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 100%;
+  padding: 0 8px 0 10px;
+  overflow: hidden;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  color: inherit;
+  font-size: var(--font-ui-smaller);
+  line-height: 26px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.miniterm-tab-close {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  margin-right: 2px;
+  opacity: 0;
+}
+
+.miniterm-tab:hover .miniterm-tab-close,
+.miniterm-tab.is-active .miniterm-tab-close {
+  opacity: 0.86;
+}
+
+.miniterm-controls {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  height: 100%;
+  gap: 2px;
+}
+
+.miniterm-icon-button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: var(--text-faint);
+  background: transparent !important;
+  background-color: transparent !important;
+  cursor: pointer;
+  opacity: 0.72;
+}
+
+.miniterm-tab-select:hover,
+.miniterm-icon-button:hover {
+  color: var(--text-muted);
+  box-shadow: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  opacity: 1;
+}
+
+.miniterm-icon-button svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 2;
+}
+
+.miniterm-terminal-stack {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: transparent;
+}
+
+.miniterm-tab-content {
+  position: absolute;
+  inset: 0;
+  display: none;
+  min-width: 0;
+  min-height: 0;
+}
+
+.miniterm-tab-content.is-active {
+  display: block;
+}
+
+.miniterm-tab-content > .miniterm-split-pane {
+  width: 100%;
+  height: 100%;
+}
+
+.miniterm-split {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.miniterm-split-row {
+  flex-direction: row;
+}
+
+.miniterm-split-column {
+  flex-direction: column;
+}
+
+.miniterm-split-pane {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+.miniterm-split-row > .miniterm-split-pane,
+.miniterm-split-row > .miniterm-split {
+  border-left: 1px solid var(--background-modifier-border);
+}
+
+.miniterm-split-column > .miniterm-split-pane,
+.miniterm-split-column > .miniterm-split {
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.miniterm-split-row > :first-child,
+.miniterm-split-column > :first-child {
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+.miniterm-split-pane.is-active {
+  border-color: var(--interactive-accent);
+}
+
+.miniterm-terminal {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.miniterm-terminal .xterm {
+  width: 100%;
+  height: 100%;
+  padding: 10px 12px;
+}
+
+.miniterm-terminal .xterm-viewport,
+.miniterm-terminal .xterm-screen {
+  background: var(--background-primary) !important;
+}
+
+.miniterm-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-faint);
+  font-size: var(--font-ui-small);
+}
+
+.miniterm-empty[hidden] {
+  display: none !important;
+}

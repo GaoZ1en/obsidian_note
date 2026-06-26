@@ -1,0 +1,39 @@
+{
+  "name": "miniterm",
+  "version": "0.1.0",
+  "description": "A minimal embedded terminal for Obsidian.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs --watch",
+    "build": "node esbuild.config.mjs production",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts",
+    "rebuild:obsidian": "electron-rebuild -f -w node-pty",
+    "install-vault": "node scripts/install-vault.mjs"
+  },
+  "keywords": [
+    "obsidian",
+    "terminal",
+    "xterm",
+    "pty"
+  ],
+  "author": "Local Developer",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@xterm/addon-fit": "^0.11.0",
+    "@xterm/addon-image": "^0.9.0",
+    "@xterm/addon-web-links": "^0.12.0",
+    "@xterm/xterm": "^6.0.0",
+    "node-pty": "^1.1.0"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^4.0.4",
+    "@types/node": "^25.9.1",
+    "builtin-modules": "^5.2.0",
+    "esbuild": "^0.28.0",
+    "obsidian": "^1.13.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}

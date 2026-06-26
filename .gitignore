@@ -12,6 +12,10 @@
 !/tools/obsidian-md-formatter/manifest.json
 !/tools/obsidian-md-formatter/tsconfig.json
 !/tools/obsidian-md-formatter/versions.json
+!/tools/miniterm/package.json
+!/tools/miniterm/package-lock.json
+!/tools/miniterm/manifest.json
+!/tools/miniterm/tsconfig.json
 /.keep-the-rhythm/
 /.vscode/
 /.github/

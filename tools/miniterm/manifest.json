@@ -1,0 +1,9 @@
+{
+  "id": "miniterm",
+  "name": "MiniTerm",
+  "version": "0.1.0",
+  "minAppVersion": "1.13.0",
+  "description": "Minimal embedded terminal tabs in the Obsidian workspace.",
+  "author": "Local Developer",
+  "isDesktopOnly": true
+}
