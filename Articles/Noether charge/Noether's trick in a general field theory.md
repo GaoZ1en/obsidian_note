@@ -65,8 +65,8 @@ $$
 \tag{1.7}
 \begin{align}
 X_{\xi}\cdot \delta S & =\int _{M}\mathbf{E}_{\phi}(X_{\xi}\cdot \delta \phi)-\frac{1}{2}\int _{M}\mathbf{E}^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})+X_{\xi}\cdot \theta|_{\Sigma _{f}-\Sigma _{i}} \\
- & =\int _{M}\mathbf{E}_{\phi}(X_{\xi}\cdot \delta \phi)-\int _{M}\varepsilon T^{\mu \nu}(\nabla _{\mu}\xi _{\nu}-\sigma _{\xi}g_{\mu \nu}) \frac{\delta}{\delta g_{\mu \nu}}+X_{\xi}\cdot \theta|_{\Sigma _{f}-\Sigma _{i}} \\
- & =\int _{M}\mathbf{E}_{\phi}(X_{\xi}\cdot \delta \phi)+\left( X_{\xi}\cdot \theta+\int _{\Sigma}\varepsilon _{\Sigma}\tau _{\mu}\xi _{\nu}T^{\mu \nu} \right){\Big|}_{\Sigma _{f}-\Sigma _{i}}+\int _{M}\varepsilon \xi _{\nu}\nabla _{\mu}T^{\mu \nu}+\int _{M}\varepsilon \sigma _{\xi}g_{\mu \nu}T^{\mu \nu}
+ & =\int _{M}\mathbf{E}_{\phi}(X_{\xi}\cdot \delta \phi)-\int _{M}\varepsilon T^{\mu \nu}(\nabla _{\mu}\xi _{\nu}-\sigma _{\xi}g_{\mu \nu})+X_{\xi}\cdot \theta|_{\Sigma _{f}-\Sigma _{i}} \\
+ & =\int _{M}\mathbf{E}_{\phi}(X_{\xi}\cdot \delta \phi)+\left( X_{\xi}\cdot \theta-\int _{\Sigma}\varepsilon _{\Sigma}\tau _{\mu}\xi _{\nu}T^{\mu \nu} \right){\Big|}_{\Sigma _{f}-\Sigma _{i}}+\int _{M}\varepsilon \xi _{\nu}\nabla _{\mu}T^{\mu \nu}+\int _{M}\varepsilon \sigma _{\xi}g_{\mu \nu}T^{\mu \nu}
 \end{align}
 $$
 
@@ -76,7 +76,7 @@ $$
 \tag{.}
 \begin{align}
 (X_{\xi}\cdot \theta-\alpha _{\xi})|_{} & =\int _{\Sigma}\varepsilon _{\Sigma}\tau _{\mu}\xi _{\nu}T^{\mu \nu} \\
-\beta _{\xi} & =\int _{M}\varepsilon \xi _{\nu}\nabla _{\mu}T^{\mu \nu}
+\beta _{\xi} & =\int _{M}\varepsilon \xi _{\nu}\nabla _{\mu}T^{\mu \nu}+\int _{M}\varepsilon \sigma _{\xi}g_{\mu \nu}T^{\mu \nu}
 \end{align}
 $$
 
@@ -163,7 +163,7 @@ what can be derived?
 $$
 \tag{.}
 \begin{align}
-X_{\xi}\cdot \delta\varepsilon & =\frac{1}{2}\varepsilon g^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})T^{\mu \nu}\delta g_{\mu \nu}
+X_{\xi}\cdot \delta\varepsilon & =\frac{1}{2}\varepsilon g^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})
 \end{align}
 $$
 

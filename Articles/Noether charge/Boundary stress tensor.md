@@ -17,7 +17,7 @@ $$
 $$
 \tag{1.3}
 \begin{align}
-\Theta|_{\Gamma_{\varepsilon}}+\delta \ell=\mathrm{d}\mathbf{C}-\frac{1}{4\pi}T^{\mu \nu}\delta g_{\mu \nu}\varepsilon_{\Sigma}
+\Theta|_{\Gamma_{\varepsilon}}+\delta \ell=\mathrm{d}\mathbf{C}-\frac{1}{4\pi}T^{\mu \nu}\delta g_{\mu \nu}\varepsilon_{\Gamma}
 \end{align}
 $$
 
@@ -65,8 +65,8 @@ X_{\xi}\cdot \delta \tilde{S} & =\int_{M+ -}X_{\xi}\cdot \delta L+\int_{\Gamma+ 
  & =\int_{M+ -}X_{\xi}\cdot (E^{\mu \nu}\delta g_{\mu \nu}+\mathrm{d}\Theta)+\int_{\Gamma+ -}X_{\xi}\cdot \delta \ell \\
  & \cong\int_{M+ -}\mathrm{d}(X_{\xi}\cdot \delta \Theta)+\int_{\Gamma+ -}X_{\xi}\cdot \delta \ell \\
  & =\int_{\Sigma_{+}-\Sigma_{-}}X_{\xi}\cdot \Theta+\int_{\Gamma+ -}X_{\xi}\cdot (\Theta+\delta \ell) \\
- & =\int_{\Sigma_{+}-\Sigma_{-}}X_{\xi}\cdot \Theta+\int_{\Gamma+ -}\mathrm{d}(X_{\xi}\cdot C)-\frac{1}{4\pi}\int_{\Gamma+ -}X_{\xi}\cdot(T^{\mu \nu}\delta g_{\mu \nu}\varepsilon_{\Sigma})\\
- & =\int_{\Sigma_{+}-\Sigma_{-}}X_{\xi}\cdot \Theta-\int_{\partial \Sigma_{+}-\partial \Sigma_{-}}X_{\xi}\cdot C-\frac{1}{2\pi}\int_{\Gamma+ -}T^{\alpha \beta}D_{\alpha}\xi_{\beta}\varepsilon_{\Sigma}
+ & =\int_{\Sigma_{+}-\Sigma_{-}}X_{\xi}\cdot \Theta+\int_{\Gamma+ -}\mathrm{d}(X_{\xi}\cdot C)-\frac{1}{4\pi}\int_{\Gamma+ -}X_{\xi}\cdot(T^{\mu \nu}\delta g_{\mu \nu}\varepsilon_{\Gamma})\\
+ & =\int_{\Sigma_{+}-\Sigma_{-}}X_{\xi}\cdot \Theta-\int_{\partial \Sigma_{+}-\partial \Sigma_{-}}X_{\xi}\cdot C-\frac{1}{2\pi}\int_{\Gamma+ -}T^{\alpha \beta}D_{\alpha}\xi_{\beta}\varepsilon_{\Gamma}
 \end{align}
 $$
 
@@ -75,11 +75,13 @@ then we have
 $$
 \tag{1.8}
 \begin{align}
-Q_{\xi}|_{\Sigma_{+}-\Sigma_{-}} & =\int_{M}\nu_{\xi}+\frac{1}{2\pi}\int_{\Gamma+ -}T^{\alpha \beta}D_{\alpha}\xi_{\beta}\varepsilon_{\Sigma} -\int_{\Sigma_{+}-\Sigma_{-}}X_{\xi}\cdot \delta \ell\\
+Q_{\xi}|_{\Sigma_{+}-\Sigma_{-}} & =\int_{M}\nu_{\xi}+\frac{1}{2\pi}\int_{\Gamma+ -}T^{\alpha \beta}D_{\alpha}\xi_{\beta}\varepsilon_{\Gamma} -\int_{\Sigma_{+}-\Sigma_{-}}X_{\xi}\cdot \delta \ell\\
  & =\beta_{\xi}+\frac{1}{2\pi}\int_{\partial \Sigma_{+}}\tau_{\alpha}\xi_{\beta}T^{\alpha \beta}\varepsilon_{\partial \Sigma_{+}}-\frac{1}{2\pi}\int_{\partial \Sigma_{-}}\tau_{\alpha}\xi_{\beta}T^{\alpha \beta}\varepsilon_{\partial \Sigma_{-}}-\frac{1}{2\pi}\int_{\Gamma+ -}\xi_{\beta}D_{\alpha}T^{\alpha \beta}\varepsilon_{\Gamma} \\
  & -\int_{\Sigma_{+}-\Sigma_{-}}X_{\xi}\cdot \delta \ell
 \end{align}
 $$
+
+For the Brown-York charge below we take no independent Cauchy-slice boundary counterterm, so $X_{\xi}\cdot\delta\ell|_{\Sigma_{\pm}}=0$.
 
 we use
 
@@ -109,6 +111,6 @@ to derive 1.8. by a similar argue we have
 $$
 \tag{1.11}
 \begin{align}
-Q_{\xi}|_{\Sigma_{+}} & =\frac{1}{2\pi}\int_{\partial \Sigma_{+}}\tau_{\alpha}\xi_{\beta}T^{\alpha \beta}\varepsilon_{\partial \Sigma_{+}}
+Q_{\xi}|_{\Sigma_{+}} & =-\frac{1}{2\pi}\int_{\partial \Sigma_{+}}\tau_{\alpha}\xi_{\beta}T^{\alpha \beta}\varepsilon_{\partial \Sigma_{+}}
 \end{align}
 $$

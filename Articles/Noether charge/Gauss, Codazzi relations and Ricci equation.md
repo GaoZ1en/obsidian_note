@@ -50,7 +50,7 @@ $$\begin{align}
 Again, contracting indices $\alpha$ and $\gamma$, we have
 
 $$\begin{align}
-\gamma^\mu_\beta n^\nu R_{\mu\nu}=D_\beta K^\beta_\alpha-D_\alpha K
+\gamma^\mu_\alpha n^\nu R_{\mu\nu}=D_\beta K^\beta_\alpha-D_\alpha K
 \end{align}$$
 
 Finally project $R^\mu_{\nu\rho\sigma}n^\nu n^\sigma=n^\sigma[\nabla_\rho,\nabla_\sigma]n^\mu$ on $\Gamma$, we have
@@ -98,7 +98,7 @@ Then the variation of the induced metric and its projection onto $\Gamma$ are
 
 $$\begin{aligned}
 \delta\gamma_{\mu\nu}&=\delta g_{\mu\nu}-\delta n_\mu n_\nu-n_\mu\delta n_\nu\\
-&=\delta g_{\mu\nu}-n_\mu n_\mu n^\rho n^\sigma\delta g_{\rho\sigma}\\
+&=\delta g_{\mu\nu}-n_\mu n_\nu n^\rho n^\sigma\delta g_{\rho\sigma}\\
 \gamma^\mu_\alpha\gamma^\nu_\beta\delta\gamma_{\mu\nu}&=\gamma^\mu_\alpha\gamma^\nu_\beta\delta g_{\mu\nu}
 \end{aligned}$$
 
@@ -114,10 +114,10 @@ $$\begin{aligned}
 The projection of the variation of the extrinsic curvature onto $\Gamma$ and the infinitesimal transformation of it are
 
 $$\begin{aligned}
-\gamma^\mu_\alpha\gamma^\nu_\beta\delta K_{\mu\nu}&=\frac{1}{2}\gamma^\mu_\alpha\gamma^\nu_\beta n^\rho\nabla_\rho(\gamma^\sigma_\nu\gamma^\lambda_\nu\delta g_{\sigma\lambda})+\frac{1}{2}K_\alpha^\mu\gamma^\nu_\beta\delta g_{\mu\nu}+\frac{1}{2}K_\beta^\mu\gamma^\nu_\alpha\delta g_{\mu\nu}-\frac{1}{2}K_{\alpha\beta}n^\mu n^\nu\delta g_{\mu\nu}\\
-&-\frac{1}{2}D_\alpha(\gamma^\mu_\beta n^\nu\delta g_{\mu\nu})-\frac{1}{2}D_\beta(\gamma^\mu_\alpha n^\nu\delta g_{\mu\nu})+\frac{1}{2N}D_\alpha N\gamma^\mu_\beta n^\nu\delta g_{\mu\nu}+\frac{1}{2N}D_\beta N\gamma^\mu_\alpha n^\mu\delta g_{\mu\nu}\\
+\gamma^\mu_\alpha\gamma^\nu_\beta\delta K_{\mu\nu}&=\frac{1}{2}\gamma^\mu_\alpha\gamma^\nu_\beta n^\rho\nabla_\rho(\gamma^\sigma_\mu\gamma^\lambda_\nu\delta g_{\sigma\lambda})+\frac{1}{2}K_\alpha^\mu\gamma^\nu_\beta\delta g_{\mu\nu}+\frac{1}{2}K_\beta^\mu\gamma^\nu_\alpha\delta g_{\mu\nu}-\frac{1}{2}K_{\alpha\beta}n^\mu n^\nu\delta g_{\mu\nu}\\
+&-\frac{1}{2}D_\alpha(\gamma^\mu_\beta n^\nu\delta g_{\mu\nu})-\frac{1}{2}D_\beta(\gamma^\mu_\alpha n^\nu\delta g_{\mu\nu})+\frac{1}{2N}D_\alpha N\gamma^\mu_\beta n^\nu\delta g_{\mu\nu}+\frac{1}{2N}D_\beta N\gamma^\mu_\alpha n^\nu\delta g_{\mu\nu}\\
 \gamma^\mu_\alpha\gamma^\nu_\beta(X_\xi\cdot\delta K_{\mu\nu})&=K_{\alpha\mu}D_\beta(\gamma^\mu_\nu\xi^\nu)+K_{\beta\mu}D_\alpha(\gamma^\mu_\nu\xi^\nu)+D_\mu K_{\alpha\beta}\gamma^\mu_\nu\xi^\nu-D_\alpha D_\beta(n_\mu\xi^\mu)\\
 &+(\gamma^\mu_\alpha\gamma^\nu_\beta n^\rho\nabla_\rho K_{\mu\nu}+2K_{\alpha\mu}K_\beta^\mu+\frac{1}{N}D_\alpha D_\beta N)n_\sigma\xi^\sigma
 \end{aligned}$$
 
-The proof left unknown to me.
+The projected variation follows from $\delta\Gamma^\rho_{\mu\nu}=\frac{1}{2}g^{\rho\sigma}(\nabla_\mu\delta g_{\sigma\nu}+\nabla_\nu\delta g_{\mu\sigma}-\nabla_\sigma\delta g_{\mu\nu})$, $\delta n_\mu=\frac{1}{2}n_\mu n^\rho n^\sigma\delta g_{\rho\sigma}$, and the hypersurface-adapted acceleration convention $a_\alpha=D_\alpha\log N$.

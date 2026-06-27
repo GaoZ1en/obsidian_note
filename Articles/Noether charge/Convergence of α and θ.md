@@ -87,7 +87,7 @@ $$\begin{aligned}
 &-\xi^{(0)a}g^{(0)bc}\partial^2_z[z(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})]-2\xi^{(0)a}\partial_z(g_{zz}-\frac{1}{z^2})+2\xi^{(0)a}g^{(0)bc}\partial_z(z^2g_{zb}g_{zc})\\
 &\left.+2\xi^{(0)a}g^{(0)bc}\partial_z D_b^{(0)}(zg_{zc})-2\xi^{(0)a}g^{(0)bc}D_b^{(0)}g_{zc}+{\cal O}(z)\right)\\
 &=C'+\frac{1}{16\pi G}\int_{\partial\Sigma_{\varepsilon\pm}}\varepsilon_{aa_1}^{(0)}{\rm d}x^{a_1}\left(2z^{-2}\xi^{(0)a}+\log z\xi^{(0)a}R^{(0)}-2z\log z\xi^{(0)a}g^{(0)bc}D^{(0)}_{b}g_{zc}-4z^{-2}\log z(\xi^a-\xi^{(0)a})\right.\\
-&-\xi^{(0)a}g^{(0)bc}\partial_z(z(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)}))-2\xi^{(0)a}(g_{zz}-\frac{1}{z^2})+2z^2\xi^{(0)a}g^{(0)bc}g_{zb}g_{zc}+2z\xi^{(0)}g^{(0)bc}D_b^{(0)}g_{zc}\\
+&-\xi^{(0)a}g^{(0)bc}\partial_z(z(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)}))-2\xi^{(0)a}(g_{zz}-\frac{1}{z^2})+2z^2\xi^{(0)a}g^{(0)bc}g_{zb}g_{zc}+2z\xi^{(0)a}g^{(0)bc}D_b^{(0)}g_{zc}\\
 &+\frac{1}{16\pi G}\int_{\partial\Sigma_{\varepsilon\pm}}\varepsilon_{aa_1}^{(0)}{\rm d}x^{a_1}\int^{z_0}_{\varepsilon}\left(-2\log z\xi^{(0)a}g^{(0)bc}D^{(0)}_b\partial_z(zg_{zc})-4\log z\partial_z(z^{-2}(\xi^{a}-\xi^{(0)a}))+{\cal O}(z)\right){\rm d}z
 \end{aligned}$$
 
@@ -124,7 +124,7 @@ Summing over, we have
 $$\begin{aligned}
 \alpha_\pm&=C'+\frac{1}{16\pi G}\int_{\partial\Sigma_{\varepsilon\pm}}\varepsilon_{aa_1}^{(0)}{\rm d}x^{a_1}\int^{z_0}_{\varepsilon}\left(-2\log z\xi^{(0)a}g^{(0)bc}D^{(0)}_b\partial_z(zg_{zc})-4\log z\partial_z(z^{-2}(\xi^{a}-\xi^{(0)a}))+{\cal O}(z)\right){\rm d}z\\
 &-\frac{1}{8\pi G}\int_{\partial\Sigma_{\varepsilon\pm}}\varepsilon_{aa_1}^{(0)}{\rm d}x^{a_1}\left(z^{-2}(\xi^a-\xi^{(0)a})+g^{(0)ab}D_b^{(0)}\xi^{(1)z}+zg^{(0)ab}g_{zb}\xi^{(1)z}+{\cal O}(z^2)\right)\\
-&\frac{1}{8\pi G}\int_{\partial\Sigma_{\varepsilon\pm}}\log z\varepsilon_{aa_1}{\rm d}x^{a_1}(zg^{(0)ab}\xi^{(1)z}\partial_z(zg_{zb})+z\partial_z(z^{-2}(\xi^a-\xi^{(0)a}))+{\cal O}(\varepsilon^2\log\varepsilon)
+&+\frac{1}{8\pi G}\int_{\partial\Sigma_{\varepsilon\pm}}\log z\varepsilon_{aa_1}{\rm d}x^{a_1}(zg^{(0)ab}\xi^{(1)z}\partial_z(zg_{zb})+z\partial_z(z^{-2}(\xi^a-\xi^{(0)a}))+{\cal O}(\varepsilon^2\log\varepsilon)
 \end{aligned}$$
 
 Here we use the following formula for many times.
@@ -137,7 +137,7 @@ remember that
 
 $$\begin{align}
 \xi^a=\xi^{(0)a}+z^2\xi^{(2)a}(x)+{\cal O}(z^{2+r}),r>0\\
-g_{za}(z,x)=z^{-1}g^{-1}_{za}(z)+{\cal O}(-1+s),s>0
+g_{za}(z,x)=z^{-1}g^{-1}_{za}(z)+{\cal O}(z^{-1+s}),s>0
 \end{align}$$
 
 $$\begin{aligned}
@@ -146,5 +146,5 @@ $$\begin{aligned}
 &+\frac{1}{8\pi G}\int_{\partial\Sigma_{\varepsilon\pm}}\varepsilon_{aa_1}^{(0)}{\rm d}x^{a_1}\left(z^{-2}(\xi^a-\xi^{(0)a})+g^{(0)ab}D_b^{(0)}\xi^{(1)z}+zg^{(0)ab}g_{zb}\xi^{(1)z}+{\cal O}(z^2)\right)\\
 &+\frac{1}{8\pi G}\lim_{\varepsilon\to 0}\int_{\partial\Sigma_{\varepsilon\pm}}\log z\varepsilon_{aa_1}{\rm d}x^{a_1}(zg^{(0)ab}\xi^{(1)z}\partial_z(zg_{zb})+z\partial_z(z^{-2}(\xi^a-\xi^{(0)a}))+{\cal O}(\varepsilon^2\log\varepsilon)\\
 &-\frac{1}{8\pi G}\int_{\partial\Sigma_{\varepsilon\pm}}\log z\varepsilon_{aa_1}{\rm d}x^{a_1}(zg^{(0)ab}\xi^{(1)z}\partial_z(zg_{zb})+z\partial_z(z^{-2}(\xi^a-\xi^{(0)a}))+{\cal O}(\varepsilon^2\log\varepsilon)\\
-&=\lim_{\varepsilon\to 0}({\cal O}(\varepsilon^r\log z)+{\cal O}(\varepsilon^s\log z)+{\cal O}(\varepsilon^r)+{\cal O}(\varepsilon^s))=0
+&=\lim_{\varepsilon\to 0}({\cal O}(\varepsilon^r\log \varepsilon)+{\cal O}(\varepsilon^s\log \varepsilon)+{\cal O}(\varepsilon^r)+{\cal O}(\varepsilon^s))=0
 \end{aligned}$$

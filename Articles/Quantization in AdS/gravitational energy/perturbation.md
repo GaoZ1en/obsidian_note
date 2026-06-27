@@ -35,8 +35,7 @@ g_{\mu\nu}=g^{(0)}_{\mu\nu} +\kappa h^{(1)}_{\mu\nu} +\kappa^2 h^{(2)}_{\mu\nu} 
 We write
 
 $$\begin{align}
-h_i=g^{(0)\mu\nu}h^{(i)}_{\mu\nu},\qquad
-h_i{}^\mu{}_\nu=g^{(0)\mu\rho}h^{(i)}_{\rho\nu}.
+h_i=g^{(0)\mu\nu}h^{(i)}_{\mu\nu},\qquad h_i{}^\mu{}_\nu=g^{(0)\mu\rho}h^{(i)}_{\rho\nu}.
 \end{align}$$
 
 ## xPert convention
@@ -50,8 +49,7 @@ g_{\mu\nu}(\epsilon) =g^{(0)}_{\mu\nu} +\epsilon\,\delta g_{\mu\nu} +\frac{\epsi
 Therefore the conversion to the present perturbation variables is
 
 $$\begin{align}
-\delta g_{\mu\nu}=h^{(1)}_{\mu\nu},\qquad
-\delta^2g_{\mu\nu}=2h^{(2)}_{\mu\nu}.
+\delta g_{\mu\nu}=h^{(1)}_{\mu\nu},\qquad \delta^2g_{\mu\nu}=2h^{(2)}_{\mu\nu}.
 \end{align}$$
 
 A minimal xPert workflow is

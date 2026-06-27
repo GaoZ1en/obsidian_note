@@ -9,7 +9,7 @@ $$
  & =\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}X_{\xi}\cdot \delta K_{\mu \nu}-\gamma^{\mu \nu}\gamma_{\alpha \beta}X_{\xi}\cdot \delta K_{\mu \nu}+K^{\mu \nu}\gamma_{\alpha \beta}X_{\xi}\cdot \delta \gamma_{\mu \nu}-K\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}X_{\xi}\cdot \delta \gamma_{\mu \nu}+\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}X_{\xi}\cdot \delta \gamma_{\mu \nu}\\
  & =K_{\alpha \mu}D_{\beta}(\gamma^{\mu}_{\nu}\xi^{\nu})+K_{\mu \beta}D_{\alpha}(\gamma^{\mu}_{\nu}\xi^{\nu})+D_{\mu}K_{\alpha \beta}\gamma^{\mu}_{\nu}\xi^{\nu}-D_{\alpha}D_{\beta}(n_{\mu}\xi^{\mu})+\left( \gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}n^{\rho}\nabla_{\rho}K_{\mu \nu}+2K_{\alpha \mu}K^{\mu}_{\beta}+\frac{1}{N}D_{\alpha}D_{\beta}N \right)n_{\sigma}\xi^{\sigma} \\
  & -2\gamma_{\alpha \beta}K^{\mu \nu}D_{\mu}(\gamma_{\nu \rho}\xi^{\rho})-\gamma_{\alpha \beta}D_{\mu}K\gamma^{\mu}_{\nu}\xi^{\nu}+\gamma_{\alpha \beta}D^{2}(n_{\mu}\xi^{\mu})-\gamma_{\alpha \beta}\left( n^{\rho}\nabla_{\rho}K+2K_{\mu \nu}K^{\mu \nu}+\frac{1}{N}D^{2}N \right)n_{\sigma}\xi^{\sigma} \\
- & +2\gamma_{\alpha \beta}K^{\mu \nu}D_{\mu}(\gamma_{\nu \rho}\xi^{\rho})+2\gamma_{\alpha \beta}K_{\mu \nu}K^{\mu \nu}n_{\rho}\xi^{\rho}-(K-1)\left(D_{\alpha}(\gamma_{\beta \gamma}\xi^{\gamma})+D_{\beta}(\gamma_{\beta \gamma}\xi^{\gamma})+2K_{\alpha \beta}n_{\rho}\xi^{\rho}\right) \\
+ & +2\gamma_{\alpha \beta}K^{\mu \nu}D_{\mu}(\gamma_{\nu \rho}\xi^{\rho})+2\gamma_{\alpha \beta}K_{\mu \nu}K^{\mu \nu}n_{\rho}\xi^{\rho}-(K-1)\left(D_{\alpha}(\gamma_{\beta \gamma}\xi^{\gamma})+D_{\beta}(\gamma_{\alpha \gamma}\xi^{\gamma})+2K_{\alpha \beta}n_{\rho}\xi^{\rho}\right) \\
  & =4G(T_{\alpha \mu}D_{\beta}(\gamma^{\mu}_{\nu}\xi^{\nu})+T_{\mu \beta}D_{\alpha}(\gamma^{\mu}_{\nu}\xi^{\nu})+D_{\mu}T_{\alpha \beta}\gamma^{\mu}_{\nu}\xi^{\nu})-D_{\alpha}D_{\beta}(n_{\mu}\xi^{\mu})+\gamma_{\alpha \beta}D^{2}(n_{\mu}\xi^{\mu}) \\
  & +16\pi G\gamma^{\mu}_{\alpha}\gamma^{\nu}_{\beta}\left( R_{\mu \nu}-\frac{1}{2}Rg_{\mu \nu} +g_{\mu \nu}\right)n_{\rho}\xi^{\rho}+\left( 2K_{\alpha \mu}K^{\mu}_{\beta}-3KK_{\alpha \beta}+2K_{\alpha \beta}+\left( \frac{1}{2}K^{2}+\frac{1}{2}K_{\mu \nu}K^{\mu \nu}-1 \right)\gamma_{\alpha \beta} \right)n_{\rho}\xi^{\rho}
 \end{align}
@@ -76,7 +76,7 @@ $$
 \tag{2.4}
 \begin{align}
 \delta(X_{\xi}\cdot \delta S_{\varepsilon}) & =\delta\left(\int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})+\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}(X_{\xi}\cdot \delta\gamma_{\mu \nu})+\int_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}X_{\xi}\cdot \Theta-\int_{\partial \Sigma_{f,\varepsilon}-\partial \Sigma_{i,\varepsilon}}X_{\xi}\cdot \mathbf{C}_{\varepsilon}\right) \\
- & =\int_{M_{\varepsilon}}(\delta \mathbf{E}^{u\nu}(X_{\xi}\cdot \delta g_{\mu \nu})+\mathbf{E}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu}))+\int_{\Gamma_{\varepsilon}}(\delta \mathbf{F}^{\mu \nu}(X_{\xi}\cdot \delta \gamma_{\mu \nu})+\mathbf{F}^{\mu \nu}\delta(X_{\xi}\cdot \delta \gamma_{\mu \nu})) \\
+ & =\int_{M_{\varepsilon}}(\delta \mathbf{E}^{\mu\nu}(X_{\xi}\cdot \delta g_{\mu \nu})+\mathbf{E}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu}))+\int_{\Gamma_{\varepsilon}}(\delta \mathbf{F}^{\mu \nu}(X_{\xi}\cdot \delta \gamma_{\mu \nu})+\mathbf{F}^{\mu \nu}\delta(X_{\xi}\cdot \delta \gamma_{\mu \nu})) \\
  & +\int_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}\delta(X_{\xi}\cdot \Theta)-\int_{\partial \Sigma_{f,\varepsilon}-\partial \Sigma_{i,\varepsilon}}(X_{\xi}\cdot \delta \mathbf{C}_{\varepsilon})
 \end{align}
 $$
@@ -88,7 +88,7 @@ $$
 \begin{align}
 \mathcal{L}_{X_{\xi}}\delta S_{\varepsilon} & =X_{\xi}\cdot \delta^{2}S_{\varepsilon}+\delta(X_{\xi}\cdot \delta S_{\varepsilon}) \\
  & =\int_{M_{\varepsilon}}((X_{\xi}\cdot \delta \mathbf{E}^{\mu \nu})\delta g_{\mu \nu}+\mathbf{E}^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu}))+\int_{\Gamma_{\varepsilon}}((X_{\xi}\cdot \delta \mathbf{F}^{\mu \nu})\delta \gamma_{\mu \nu}+\mathbf{F}^{\mu \nu}(X_{\xi}\cdot \delta \gamma_{\mu \nu})) \\
- & +\int_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}(X_{\xi}\cdot \delta \Theta+\delta(X_{\xi}\cdot \Theta))+\int_{\partial \Sigma_{f,\varepsilon}-\partial \Sigma_{i,\varepsilon}}(X_{\xi}\cdot \mathbf{C}_{\varepsilon}+\delta(X_{\xi}\cdot \mathbf{C}_{\xi}))
+ & +\int_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}(X_{\xi}\cdot \delta \Theta+\delta(X_{\xi}\cdot \Theta))-\int_{\partial \Sigma_{f,\varepsilon}-\partial \Sigma_{i,\varepsilon}}(X_{\xi}\cdot \delta\mathbf{C}_{\varepsilon}+\delta(X_{\xi}\cdot \mathbf{C}_{\varepsilon}))
 \end{align}
 $$
 
@@ -299,7 +299,7 @@ $$
  & +\delta\left(X_{\xi}\cdot\left(\int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}\delta g_{\mu \nu}+\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta g_{\mu \nu}+\theta|_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}\right)\right) \\
  & =\lim_{ \varepsilon \to 0 } \left( \int_{M_{\varepsilon}}(X_{\xi}\cdot\delta \mathbf{E}^{\mu \nu} )\delta g_{\mu \nu}-\int_{M_{\varepsilon}}\delta\mathbf{E}^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})+\int_{\Gamma_{\varepsilon}}(X_{\xi}\cdot\delta\mathbf{F}^{\mu \nu}) \delta g_{\mu \nu}-\int_{\Gamma_{\varepsilon}}\delta \mathbf{F}^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})+X_{\xi}\cdot \delta \theta|_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}} \right. \\
  & \left.+\int_{M_{\varepsilon}}\delta \mathbf{E}^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})+\int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu})+\int_{\Gamma_{\varepsilon}}\delta \mathbf{F}^{\mu \nu}(X_{\xi}\cdot \delta g_{\mu \nu})+\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu})+\delta(X_{\xi}\cdot \theta)|_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}\right) \\
- & =\lim_{ \varepsilon \to 0 } \left(\int_{M_{\varepsilon}}(X_{\xi}\cdot \delta \mathbf{E}^{\mu \nu})\delta g_{\mu \nu}+\int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu})+\int_{\Gamma_{\varepsilon}}(X_{\xi}\cdot \delta \mathbf{F}^{\mu \nu})\delta g_{\mu \nu}+\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu})+(X_{\xi}\cdot \delta \theta+\delta(X_{\xi}\cdot \delta))_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}\right)
+ & =\lim_{ \varepsilon \to 0 } \left(\int_{M_{\varepsilon}}(X_{\xi}\cdot \delta \mathbf{E}^{\mu \nu})\delta g_{\mu \nu}+\int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu})+\int_{\Gamma_{\varepsilon}}(X_{\xi}\cdot \delta \mathbf{F}^{\mu \nu})\delta g_{\mu \nu}+\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu})+(X_{\xi}\cdot \delta \theta+\delta(X_{\xi}\cdot \theta))_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}\right)
 \end{align}
 $$
 
@@ -308,7 +308,7 @@ on the other hand, we have
 $$
 \tag{4.3}
 \begin{align}
-\mathcal{L}_{\xi}\delta S & =\delta(X_{\xi}\cdot \delta S)=\lim_{ \varepsilon \to 0 } (\delta \alpha_{\xi}|_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}+\delta )\beta|_{\Gamma_{\varepsilon}}
+\mathcal{L}_{\xi}\delta S & =\delta(X_{\xi}\cdot \delta S)=\lim_{ \varepsilon \to 0 } (\delta \alpha_{\xi}|_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}+\delta\beta_{\xi}|_{\Gamma_{\varepsilon}})
 \end{align}
 $$
 
@@ -318,7 +318,7 @@ $$
 \tag{4.4}
 \begin{align}
 0 & =\lim_{ \varepsilon \to 0 } \left(\int_{M_{\varepsilon}}\mathbf{E}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu})+\int_{M_{\varepsilon}}(X_{\xi}\cdot \delta \mathbf{E}^{\mu \nu})\delta g_{\mu \nu}+\int_{\Gamma_{\varepsilon}}\mathbf{F}^{\mu \nu}\delta(X_{\xi}\cdot \delta g_{\mu \nu})+\int_{\Gamma_{\varepsilon}}(X_{\xi}\cdot \delta \mathbf{F}^{\mu \nu})\delta g_{\mu \nu}\right. \\
- & \left(\left.X_{\xi}\cdot \delta \theta+\delta(X_{\xi}\cdot \theta-\alpha_{\xi})\right)|_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}-\delta \beta_{\xi}|_{\Gamma_{\varepsilon}}\right)
+ & \left.+\left(X_{\xi}\cdot \delta \theta+\delta(X_{\xi}\cdot \theta-\alpha_{\xi})\right)|_{\Sigma_{f,\varepsilon}-\Sigma_{i,\varepsilon}}-\delta \beta_{\xi}|_{\Gamma_{\varepsilon}}\right)
 \end{align}
 $$
 
@@ -421,10 +421,10 @@ $$
 \tag{5.8}
 \begin{align}
 \int_{\partial \Sigma}g^{(0)ab}\mathcal{L}_{\xi^{(0)}}j^{(0)}_{b}\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =\int_{\partial \Sigma}g^{(0)ab}(\xi^{(0)c}D_{c}^{(0)}j^{(0)}_{b}+j_{c}^{(0)}D_{b}^{(0)}\xi^{(0)c})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} \\
- & =\int_{\partial \Sigma}D_{c}^{(0)}(g^{(0)ab}\xi^{(0)c}j^{(0)}_{b})-g^{(0)av}D_{c}^{(0)}\xi^{(0)c}j^{(0)}_{b} \\
+ & =\int_{\partial \Sigma}D_{c}^{(0)}(g^{(0)ab}\xi^{(0)c}j^{(0)}_{b})-g^{(0)ab}D_{c}^{(0)}\xi^{(0)c}j^{(0)}_{b} \\
  & +g^{(0)ab}j_{c}^{(0)}(D_{b}^{(0)}\xi^{(0)c}+D^{(0)c}\xi^{(0)b})-g^{(0)ab}j_{c}^{(0)}D^{(0)c}\xi^{(0)}_{b} )\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}}\\
  & =\int_{\partial \Sigma}D_{c}^{(0)}(g^{(0)ab}\xi^{(0)c}j_{b}^{(0)}-g^{(0)ab}j^{(0)c}\xi_{b}^{(0)}) \\
- & +g^{(0)ab}j_{c}^{(0)}(D_{b}^{(0)}j^{(0)c}+D^{(0)c}j^{(0)}_{b})-g^{(0)ab}D_{c}^{(0)}\xi^{(0)c}j_{b}^{(0)}+g^{(0)ab}D_{c}^{(0)}j^{(0)c}\xi_{b}^{(0)})\varepsilon_{aa_{1}}\mathrm{d}x^{a_{1}}
+ & +g^{(0)ab}j_{c}^{(0)}(D_{b}^{(0)}\xi^{(0)c}+D^{(0)c}\xi^{(0)}_{b})-g^{(0)ab}D_{c}^{(0)}\xi^{(0)c}j_{b}^{(0)}+g^{(0)ab}D_{c}^{(0)}j^{(0)c}\xi_{b}^{(0)})\varepsilon_{aa_{1}}\mathrm{d}x^{a_{1}}
 \end{align}
 $$
 
@@ -500,10 +500,10 @@ since $\displaystyle{\omega|_{\Sigma_{f}-\Sigma_{i},\tilde{\mathcal{P}}}=0}$. we
 $$
 \tag{5.?}
 \begin{align}
-\left\{Q_{\xi},Q_{\zeta}\right\}|_{\Sigma_{f}-\Sigma_{i}} & =-\frac{1}{32\pi G}\int_{\Gamma}R^{(0)}D^{(0)}_{a}\left\{\xi,\zeta\right\}^{(0)a}\varepsilon^{(\Gamma)}-\frac{1}{32\pi G}\int_{\Gamma}D_{a}^{(0)}\left[-R^{(0)}(\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}-\zeta^{(0)a}D_{b}^{(0)}\zeta^{(0)b})\right. \\
+\left\{Q_{\xi},Q_{\zeta}\right\}|_{\Sigma_{f}-\Sigma_{i}} & =-\frac{1}{32\pi G}\int_{\Gamma}R^{(0)}D^{(0)}_{a}\left\{\xi,\zeta\right\}^{(0)a}\varepsilon^{(\Gamma)}-\frac{1}{32\pi G}\int_{\Gamma}D_{a}^{(0)}\left[-R^{(0)}(\xi^{(0)a}D_{b}^{(0)}\zeta^{(0)b}-\zeta^{(0)a}D_{b}^{(0)}\xi^{(0)b})\right. \\
  & \left.-g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}\xi^{(0)c}D_{d}^{(0)}\zeta^{(0)d}+g^{(0)ab}D_{b}^{(0)}D_{c}^{(0)}\zeta^{(0)c}D_{d}^{(0)}\xi^{(0)d}\right]\varepsilon^{(\Gamma)} \\
  & =\frac{1}{32\pi G}\int_{\Gamma}\left(-R^{(0)}\xi^{(0)a}(D_{b}^{(0)}D_{a}^{(0)}\zeta^{(0)b}-D_{a}^{(0)}D_{b}^{(0)}\zeta^{(0)b})+R^{(0)}\zeta^{(0)a}(D_{b}^{(0)}D_{a}^{(0)}\xi^{(0)b}-D_{a}^{(0)}D_{b}^{(0)}\xi^{(0)b})\right. \\
- & \left.+(g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{a}^{(0)}\xi^{(0)a}+\xi^{(0)a}D_{a}^{(0)}R^{(0)})D_{d}^{(0)}\zeta^{(0)d}-(g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{a}^{(0)}\xi^{(0)a}+\xi^{(0)a}D_{a}^{(0)}R^{(0)})D_{d}^{(0)}\xi^{(0)d}\right)\varepsilon^{(\Gamma)} \\
+ & \left.+(g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{a}^{(0)}\xi^{(0)a}+\xi^{(0)a}D_{a}^{(0)}R^{(0)})D_{d}^{(0)}\zeta^{(0)d}-(g^{(0)bc}D_{b}^{(0)}D_{c}^{(0)}D_{a}^{(0)}\zeta^{(0)a}+\zeta^{(0)a}D_{a}^{(0)}R^{(0)})D_{d}^{(0)}\xi^{(0)d}\right)\varepsilon^{(\Gamma)} \\
  & =0
 \end{align}
 $$

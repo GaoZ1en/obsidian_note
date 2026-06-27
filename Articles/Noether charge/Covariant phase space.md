@@ -52,8 +52,10 @@ $$\begin{align}
 On the one hand, $\omega$ is closed as a two-form on the (pre)phase space. On the other hand, $\omega$ is also closed as a $(d-1)$-form on spacetime
 
 $$\begin{align}
-{\rm d}\omega={\rm d}\delta(\Theta-{\rm d}C)=\delta{\rm d}\Theta=\delta(\delta L-E^a\delta\phi_a)=-\delta E^a\wedge\delta\phi_a=0
+{\rm d}\omega={\rm d}\delta(\Theta-{\rm d}C)=\delta{\rm d}\Theta=\delta(\delta L-E^a\delta\phi_a)=-\delta E^a\wedge\delta\phi_a\approx0
 \end{align}$$
+
+The last equality holds on the solution space, with tangent variations satisfying $\delta E^a=0$.
 
 Finally we define the (pre)symplectic form $\tilde\Omega$ on $\tilde{\cal P}$ as
 
@@ -123,20 +125,21 @@ $$
 \end{align}
 $$
 
-the first term is
+For the three-dimensional Einstein-Hilbert Lagrangian with cosmological constant, the Noether charge form is the same Komar form as in the zero-cosmological-constant case:
 
 $$
 \tag{2.4}
 \begin{align}
-\delta \int_{\Sigma}(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L}) & =\delta \int_{\Sigma}(X_{\xi}\cdot \Theta)
+X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L} & =\mathrm{d}Q_{\xi}-2\mathbf{E}^{\mu\nu}\xi_{\nu}\cdot\frac{1}{2!}\varepsilon_{\mu\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
+Q_{\xi} & =\frac{1}{16\pi G}(\nabla^{\nu}\xi^{\mu}-\nabla^{\mu}\xi^{\nu})\varepsilon_{\mu\nu\rho}\mathrm{d}x^{\rho}.
 \end{align}
 $$
+
+On shell this gives
 
 $$
 \tag{2.5}
 \begin{align}
-\mathbf{L} & =\frac{1}{16\pi G}(R+2)\cdot \frac{1}{3!}\varepsilon_{\mu_{0}\mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{0}}\wedge \mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
-\Theta & =\frac{1}{16\pi G}(g^{\rho \mu}\nabla^{\nu}\delta g_{\mu \nu}-g^{\mu \nu}\nabla^{\rho}\delta g_{\mu \nu})\cdot \frac{1}{2!}\varepsilon_{\rho \mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
- & =
+-X_{\xi}\cdot \Omega & \approx \delta\int_{\partial\Sigma}Q_{\xi}+\int_{\Sigma}(\delta \xi \cdot \mathbf{L}-X_{\delta \xi}\cdot \Theta)-\int_{\partial\Sigma}\xi\cdot\Theta .
 \end{align}
 $$

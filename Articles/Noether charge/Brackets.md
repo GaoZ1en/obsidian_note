@@ -94,7 +94,7 @@ $$
 \left\{B_{m},B_{n}\right\} & =+\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m-n} \\
 \left\{B_{m},C_{n}\right\} & =-\frac{1}{2}(m-n)B_{m+n}+\frac{1}{2}(m+n)B_{m-n} \\
 \left\{B_{m},D_{n}\right\} & =+\frac{1}{2}(m-n)A_{m+n}-\frac{1}{2}(m+n)A_{m-n} \\
-\left\{C_{m},C_{n}\right\} & =-\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m+n} \\
+\left\{C_{m},C_{n}\right\} & =-\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m-n} \\
 \left\{C_{m},D_{n}\right\} & =-\frac{1}{2}(m-n)D_{m+n}+\frac{1}{2}(m+n)D_{m-n} \\
 \left\{D_{m},D_{n}\right\} & =-\frac{1}{2}(m-n)C_{m+n}+\frac{1}{2}(m+n)C_{m-n}
 \end{align}
@@ -110,7 +110,7 @@ D_{a}^{(0)}B_{n}^{a} & =D_{t}^{(0)}B_{n}^{t}+D_{\phi}^{(0)}B_{n}^{\phi}=2n\cos n
 D_{a}^{(0)}C_{n}^{a} & =D_{t}^{(0)}C_{n}^{t}+D_{\phi}^{(0)}C_{n}^{\phi}=2n\cos nt\cos n\phi\\
 D_{a}^{(0)}D_{n}^{a} & =D_{t}^{(0)}D_{n}^{t}+D_{\phi}^{(0)}D_{n}^{\phi}=-2n\sin nt\sin n\phi\\
 D^{(0)}_{a}D_{b}^{(0)}A^{b}_{n} & =-2n^{2}\cos nt\cos n\phi \partial_{t}+2n^{2}\sin nt\sin n\phi \partial_{\phi}\\
-D_{a}^{(0)}D_{b}^{(0)}B^{b}_{n} & =-2n^{2}\sin nt\sin n\phi \partial_{t}+2n^{2}\cos nt\sin n\phi \partial_{\phi}\\
+D_{a}^{(0)}D_{b}^{(0)}B^{b}_{n} & =-2n^{2}\sin nt\sin n\phi \partial_{t}+2n^{2}\cos nt\cos n\phi \partial_{\phi}\\
 D_{a}^{(0)}D_{b}^{(0)}C^{b}_{n} & =-2n^{2}\sin nt\cos n\phi \partial_{t}-2n^{2}\cos nt\sin n\phi \partial_{\phi}\\
 D_{a}^{(0)}D_{b}^{(0)}D^{b}_{n} & =-2n^{2}\cos nt\sin n\phi \partial_{t}-2n^{2}\sin nt\cos n\phi \partial_{\phi}
 \end{align}
@@ -137,8 +137,8 @@ rules={
 A(Amt*D[Ant,t]-Ant*D[Amt,t]+Am\phi*D[Ant,\phi]-An\phi*D[Amt,\phi])+BA(Amt*D[An\phi,t]-Ant*D[Am\phi,t]+Am\phi*D[An\phi,\phi]-An\phi*D[Am\phi,\phi])//.rules//FullSimplify
 (*codes for other brackets are emmited*)
 
-{DAn,DBn,DCn,DDn}={D[Ant,t]+D[An\phi,\phi],D[Bnt,t]+D[Bn\phi,\phi],D[Cnt,t]+D[Cn\phi,\phi],D[Cnt,t]+D[Cn\phi,\phi]}
-{DAm,DBm,DCm,DDm}={D[Amt,t]+D[Am\phi,\phi],D[Bmt,t]+D[Bm\phi,\phi],D[Cmt,t]+D[Cm\phi,\phi],D[Cmt,t]+D[Cm\phi,\phi]}
+{DAn,DBn,DCn,DDn}={D[Ant,t]+D[An\phi,\phi],D[Bnt,t]+D[Bn\phi,\phi],D[Cnt,t]+D[Cn\phi,\phi],D[Dnt,t]+D[Dn\phi,\phi]}
+{DAm,DBm,DCm,DDm}={D[Amt,t]+D[Am\phi,\phi],D[Bmt,t]+D[Bm\phi,\phi],D[Cmt,t]+D[Cm\phi,\phi],D[Dmt,t]+D[Dm\phi,\phi]}
 
 ```
 
@@ -336,8 +336,8 @@ $$
  & =\frac{1}{8G}m\sec^{2}t(\delta_{m,n}-\delta_{m,-n})\\
 -\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}C^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}C_{n}^{c}D_{d}^{(0)}A^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{32\pi G}\int^{2\pi}_{0} (D_{t}^{(0)}D_{c}^{(0)}A_{m}^{c}D_{d}^{(0)}C_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}C^{c}_{n}D_{d}^{(0)}A^{d}_{m})\mathrm{d}\phi \\
  & =\frac{1}{8G}m(m^{2}-1)(\delta_{m,n}-\delta_{m,-n})\\
-\left\{Q_{A_{m}},Q_{C_{n}}\right\} & =Q_{\left\{A_{m},C_{n}\right\}}-\frac{1}{8G}m\sec^{2}t(\delta_{m,n}-\delta_{m,-n})+\frac{1}{8G}(1-m^{2})(\delta_{m,n}-\delta_{m,-n})\\
- & =-\frac{1}{2}(m-n)Q_{A_{m+n}}+\frac{1}{2}(m+n)Q_{A_{m-n}}-\frac{1}{8G}m\sec^{2}t(\delta_{m,n}-\delta_{m,-n})+\frac{1}{8G}m(1-m^{2})(\delta_{m,n}-\delta_{m,-n})
+\left\{Q_{A_{m}},Q_{C_{n}}\right\} & =Q_{\left\{A_{m},C_{n}\right\}}+\frac{1}{8G}m\sec^{2}t(\delta_{m,n}-\delta_{m,-n})+\frac{1}{8G}m(m^{2}-1)(\delta_{m,n}-\delta_{m,-n})\\
+ & =-\frac{1}{2}(m-n)Q_{A_{m+n}}+\frac{1}{2}(m+n)Q_{A_{m-n}}+\frac{1}{8G}m\sec^{2}t(\delta_{m,n}-\delta_{m,-n})+\frac{1}{8G}m(m^{2}-1)(\delta_{m,n}-\delta_{m,-n})
 \end{align}
 $$
 
@@ -386,8 +386,8 @@ $$
  & =-\frac{1}{8 G}m\sec^{2}t(\delta_{m,n}-\delta_{m,-n})\\
 -\frac{1}{32\pi G}\int_{\partial \Sigma}g^{(0)ab}(D_{b}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}D^{d}_{n}-D_{b}^{(0)}D_{c}^{(0)}D_{n}^{c}D_{d}^{(0)}B^{d}_{m})\varepsilon_{aa_{1}}^{(0)}\mathrm{d}x^{a_{1}} & =-\frac{1}{32\pi G}\int^{2\pi}_{0} (D_{t}^{(0)}D_{c}^{(0)}B_{m}^{c}D_{d}^{(0)}D_{n}^{d}-D_{t}^{(0)}D_{c}^{(0)}D^{c}_{n}D_{d}^{(0)}B^{d}_{m})\mathrm{d}\phi \\
  & =-\frac{1}{8G}m(m^{2}-1)(\delta_{m,n}-\delta_{m,-n})\\
-\left\{Q_{B_{m}},Q_{D_{n}}\right\} & =Q_{\left\{B_{m},D_{n}\right\}}+\frac{1}{8G}m^{3}\sec^{2}t(\delta_{m,n}-\delta_{m,-n})+\frac{1}{8G}m(m^{2}-1)(\delta_{m,n}-\delta_{m,-n})\\
- & =\frac{1}{2}(m-n)Q_{A_{m+n}}-\frac{1}{2}(m+n)Q_{A_{m-n}}+\frac{1}{8G}m^{3}\sec^{2}t(\delta_{m,n}-\delta_{m,-n})+\frac{1}{8G}m(m^{2}-1)(\delta_{m,n}-\delta_{m,-n})
+\left\{Q_{B_{m}},Q_{D_{n}}\right\} & =Q_{\left\{B_{m},D_{n}\right\}}-\frac{1}{8G}m\sec^{2}t(\delta_{m,n}-\delta_{m,-n})-\frac{1}{8G}m(m^{2}-1)(\delta_{m,n}-\delta_{m,-n})\\
+ & =\frac{1}{2}(m-n)Q_{A_{m+n}}-\frac{1}{2}(m+n)Q_{A_{m-n}}-\frac{1}{8G}m\sec^{2}t(\delta_{m,n}-\delta_{m,-n})-\frac{1}{8G}m(m^{2}-1)(\delta_{m,n}-\delta_{m,-n})
 \end{align}
 $$
 

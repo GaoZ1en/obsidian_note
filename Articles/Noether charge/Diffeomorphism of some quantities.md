@@ -8,7 +8,7 @@ $$
 X_{\xi}\cdot \delta R^{\rho}_{~\sigma \mu \nu} & =\mathcal{L}_{\xi}R^{\rho}_{~\sigma \mu \nu}=\xi^{\lambda}\nabla_{\lambda}R^{\rho}_{~\sigma \mu \nu}-R^{\lambda}_{~\sigma \mu \nu}\nabla^{\rho}\xi_{\lambda}+R^{\rho}_{~\lambda \mu \nu}\nabla_{\sigma}\xi^{\lambda}+R^{\rho}_{~\sigma \lambda \nu}\nabla_{\mu}\xi^{\lambda}+R^{\rho}_{~\sigma \mu \lambda}\nabla_{\nu}\xi^{\lambda} \\
 X_{\xi}\cdot \delta R_{\mu \nu} & =\mathcal{L}_{\xi}R_{\mu \nu}=\xi^{\lambda}\nabla_{\lambda}R_{\mu \nu}+R_{\lambda \nu}\nabla_{\mu}\xi^{\lambda}+R_{\mu \lambda}\nabla_{\nu}\xi^{\lambda} \\
 X_{\xi}\cdot \delta R & =\mathcal{L}_{\xi}R=\xi^{\lambda}\nabla_{\lambda}R \\
-X_{\xi}\cdot \delta \varepsilon_{\mu_{0}\mu_{1}\dots \mu_{d-1}} & =\mathcal{L}_{\xi}\varepsilon_{\mu_{0}\mu_{1}\dots \mu_{d-1}}=\xi^{\lambda}\nabla_{\lambda}\varepsilon_{\mu_{0}\mu_{1}\dots \mu_{d-1}}
+X_{\xi}\cdot \delta \varepsilon_{\mu_{0}\mu_{1}\dots \mu_{d-1}} & =\mathcal{L}_{\xi}\varepsilon_{\mu_{0}\mu_{1}\dots \mu_{d-1}}=(\nabla_{\lambda}\xi^{\lambda})\varepsilon_{\mu_{0}\mu_{1}\dots \mu_{d-1}}
 \end{align}
 $$
 
@@ -85,7 +85,7 @@ $$
 \nabla_{\nu}\nabla_{\mu}\nabla_{\sigma}\xi^{\rho} & =\nabla_{\mu}\nabla_{\nu}\nabla_{\sigma}\xi^{\rho}+[\nabla_{\nu},\nabla_{\mu}]\nabla_{\sigma}\xi^{\rho} \\
  & =\nabla_{\mu}\nabla_{\nu}\nabla_{\sigma}\xi^{\rho}-R^{\rho}_{~\lambda \mu \nu}\nabla_{\sigma}\xi^{\lambda}+R^{\lambda}_{~\sigma \mu \nu }\nabla_{\lambda}\xi^{\rho}\\
 \nabla_{\nu}\nabla_{\sigma}\nabla_{\mu}\xi^{\rho} & =\nabla_{\nu}\nabla_{\mu}\nabla_{\sigma}\xi^{\rho}+\nabla_{\nu}[\nabla_{\sigma},\nabla_{\mu}]\xi^{\rho} \\
- & =\nabla_{\mu}\nabla_{\nu}\nabla_{\sigma}\xi^{\rho}-R^{\rho}_{~\lambda \mu \nu}\nabla_{\sigma}\xi^{\lambda}+R^{\lambda}_{~\sigma \mu \nu}\nabla_{\lambda}\xi^{\rho}+\nabla_{\nu}R^{\rho}_{~\lambda \sigma \mu}xo^{\rho}+R^{\rho}_{~\lambda \sigma \mu}\nabla_{\nu}\xi^{\rho}
+ & =\nabla_{\mu}\nabla_{\nu}\nabla_{\sigma}\xi^{\rho}-R^{\rho}_{~\lambda \mu \nu}\nabla_{\sigma}\xi^{\lambda}+R^{\lambda}_{~\sigma \mu \nu}\nabla_{\lambda}\xi^{\rho}+\nabla_{\nu}R^{\rho}_{~\lambda \sigma \mu}\xi^{\lambda}+R^{\rho}_{~\lambda \sigma \mu}\nabla_{\nu}\xi^{\lambda}
 \end{align}
 $$
 
@@ -169,7 +169,7 @@ and remembering that all the total-antisymmetric tensors are always proportional
 $$
 \tag{1.16}
 \begin{align}
-X_{\xi}\cdot \delta \varepsilon_{\mu_{1}\dots \mu_{d-1}} & =\mathcal{L}_{\xi}\varepsilon_{\mu_{0}\dots \mu_{d-1}}
+X_{\xi}\cdot \delta \varepsilon_{\mu_{0}\dots \mu_{d-1}} & =\mathcal{L}_{\xi}\varepsilon_{\mu_{0}\dots \mu_{d-1}}
 \end{align}
 $$
 
@@ -224,7 +224,7 @@ $$
 \begin{align}
 \mathrm{d}i_{\xi}\omega_{\mu_{1}\dots \mu_{k}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{k}} & =\mathrm{d}\left(\sum^{k}_{m=1}(-1)^{m-1}\omega_{\mu_{1}\dots \rho\dots \mu_{k}}\xi^{\rho}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{m-1}}\wedge \mathrm{d}x^{\mu_{m+1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{k}}\right) \\
  & =\sum^{k}_{m=1}(-1)^{m-1}\nabla_{\lambda}\omega_{\mu_{1}\dots \rho\dots \mu_{k}}\xi^{\rho}\mathrm{d}x^{\lambda}\wedge \mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{m-1}}\wedge \mathrm{d}x^{\mu_{m+1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{k}} \\
- & +\sum^{k}_{m=1}(-1)^{m-1}\omega_{\mu_{1}\dots \rho\dots \mu_{k}}\nabla_{\lambda}\xi^{\rho}\mathrm{d}x^{\lambda}\wedge \mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{m-1}}\wedge \mathrm{d}x^{\mu_{m+1}}\wedge\dots \wedge \mathrm{d}x^{\mu)k} \\
+ & +\sum^{k}_{m=1}(-1)^{m-1}\omega_{\mu_{1}\dots \rho\dots \mu_{k}}\nabla_{\lambda}\xi^{\rho}\mathrm{d}x^{\lambda}\wedge \mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{m-1}}\wedge \mathrm{d}x^{\mu_{m+1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{k}} \\
  & =\sum^{k}_{m=1}(-1)^{m-1}\nabla_{\lambda}\omega_{\mu_{1}\dots \rho\dots \mu_{k}}\xi^{\rho}\mathrm{d}x^{\lambda}\wedge \mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{m-1}}\wedge \mathrm{d}x^{\mu_{m+1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{k}} \\
  & +\sum^{k}_{m=1}\omega_{\mu_{1}\dots \lambda\dots \mu_{k}}\nabla_{\mu_{m}}\xi^{\lambda}\mathrm{d}x^{\mu_{1}}\wedge \dots \wedge \mathrm{d}x^{\mu_{k}}
 \end{align}
@@ -235,7 +235,7 @@ summing over, we have
 $$
 \tag{2.4}
 \begin{align}
-(\mathrm{d}i_{\xi}+i_{\xi}\mathrm{d})\omega_{\mu_{1}\dots \mu_{k}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge\mathrm{d}x^{\mu_{k}} & =\xi^{\lambda}\nabla_{\lambda}\omega_{\mu_{1}\dots \mu_{k}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{k}}+\sum^{k}_{m=1}\omega_{\mu_{1}\dots \lambda\dots \mu_{k}}\nabla_{\mu_{m}}\xi^{\lambda}\mathrm{d}x^{\mu_{1}}\wedge \dots \wedge\mathrm{d}x^{\mu_{k}} \\
+(\mathrm{d}i_{\xi}+i_{\xi}\mathrm{d})\omega_{\mu_{1}\dots \mu_{k}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge\mathrm{d}x^{\mu_{k}} & =\xi^{\lambda}\nabla_{\lambda}\omega_{\mu_{1}\dots \mu_{k}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{k}}+\sum^{k}_{m=1}\omega_{\mu_{1}\dots \lambda\dots \mu_{k}}\nabla_{\mu_{m}}\xi^{\lambda}\mathrm{d}x^{\mu_{1}}\wedge \dots \wedge\mathrm{d}x^{\mu_{k}} \\
  & =\mathcal{L}_{\xi}\omega_{\mu_{1}\dots \mu_{k}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge \mathrm{d}x^{\mu_{k}}
 \end{align}
 $$

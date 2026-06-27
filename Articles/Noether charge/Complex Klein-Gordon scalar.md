@@ -16,6 +16,8 @@ $$\begin{aligned}
 
 The (pre)symplectic form is
 
+Here $\tau^\mu$ is the future-directed unit normal to the Cauchy slice.
+
 $$\begin{align}
 \theta=\int_{\Sigma}{\rm d}^dx\sqrt{\sigma}\tau^\mu(\partial_\mu\phi\delta\phi^*+\partial_\mu\phi^*\delta\phi)
 \end{align}$$

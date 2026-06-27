@@ -9,7 +9,7 @@ g_{ab} & =\frac{1}{z^{2}}g^{(0)}_{ab}+\mathcal{O}(z^{0})
 \end{align}
 $$
 
-and asymptotic symmetry is a symmetry that preserve the asymptotic behavior $\displaystyle{(1.2)}$, that is
+and asymptotic symmetry is a symmetry that preserve the asymptotic behavior $\displaystyle{(1.1)}$, that is
 
 $$
 \tag{1.2}

@@ -111,7 +111,7 @@ $$\begin{align}
 H_{\xi,h} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\mathcal{H}_{\xi,h}^{\mu} \\
 \mathcal{H}_{\xi,h}^{\mu} & =-\dfrac{1}{2}\left(h^{\mu \nu}\nabla ^{(0)}_{\nu}\mathcal{L}_{\xi}h-\dfrac{1}{2}h\nabla ^{(0)\mu}\mathcal{L}_{\xi}h+h^{\nu \rho}\nabla ^{(0)\mu}\mathcal{L}_{\xi}h_{\nu \rho}-h^{\nu \rho}\nabla ^{(0)}_{\rho}\mathcal{L}_{\xi}h^{\mu}_{~\nu}-h^{\mu \nu}\nabla ^{(0)}_{\rho}\mathcal{L}_{\xi}h_{\nu}^{~\rho}\right. \\
  & \left.+\dfrac{1}{2}h\nabla ^{(0)}_{\nu}\mathcal{L}_{\xi}h^{\mu \nu}+\dfrac{1}{2}\nabla ^{(0)\mu}h_{\nu \rho}\mathcal{L}_{\xi}h^{\nu \rho}+\dfrac{1}{2}\nabla ^{(0)}_{\nu}h\mathcal{L}_{\xi}h^{\mu \nu}-\nabla ^{(0)}_{\rho}h^{\nu \rho}\mathcal{L}_{\xi}h^{\mu}_{~\nu}\right)+\dfrac{1}{2}\xi ^{\mu}\mathcal{L}^{(2)}_{g}[h] \\
- &=\xi_{\nu}T_{(h)}^{\mu\nu}+\nabla^{(0)}_{\nu}S_{\xi}^{\mu\nu}+\mathcal{R}_{\xi,h}^{\mu}
+ &=\xi_{\nu}T_{(h)}^{\mu\nu}+\nabla^{(0)}_{\nu}S_{\xi,h}^{\mu\nu}+\mathcal{R}_{\xi,h}^{\mu}
 \end{align}$$
 
 $$\begin{align}
@@ -137,7 +137,7 @@ R^{(1)}[X] & =\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}X^{\mu \nu}-\nabla ^{(0)2}X+
 and
 
 $$\begin{align}
-S_{\xi}^{\mu \nu} & =s_{2}\nabla ^{(0)[\mu}\xi ^{\nu]}+\dfrac{1}{2}hD_{1,\xi}^{[\mu \nu]}+D_{2,\xi}^{[\mu \nu]} \\
+S_{\xi,h}^{\mu\nu} & =s_{2}\nabla ^{(0)[\mu}\xi ^{\nu]}+\dfrac{1}{2}hD_{1,\xi}^{[\mu \nu]}+D_{2,\xi}^{[\mu \nu]} \\
 s_{2} & =-\dfrac{1}{4}h_{\rho \sigma}h^{\rho \sigma}+\dfrac{1}{8}h^{2} \\
 D_{1,\xi}^{\mu \nu} & =-h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}+\Gamma ^{(1)}[h]^{\nu \mu}_{~~~\rho}\xi ^{\rho} \\
 D_{2,\xi}^{\mu \nu} & =h^{\mu}_{~\lambda}h^{\lambda \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}-h^{\mu \rho}\Gamma ^{(1)}[h]^{\nu}_{~\rho \sigma}\xi ^{\sigma}+\Gamma ^{(2)}[h,h]^{\nu \mu}_{~~~\rho}\xi ^{\rho}
@@ -156,8 +156,8 @@ The $k$ contribution is
 $$\begin{align}
 H_{\xi,k}&=\int_{\Sigma}\mathrm{d}^{2}x\sqrt{\sigma^{(0)}}\tau_{\mu}\mathcal{H}^{\mu}_{\xi,k}, \\
 \mathcal{H}^{\mu}_{\xi,k}&=-\frac{1}{2}\left(\nabla^{(0)}_{\nu}\Delta_{\xi}k^{\mu\nu}-\nabla^{(0)\mu}\Delta_{\xi}k\right)+\frac{1}{2}\xi^{\mu}\mathcal{L}_{\mathrm{g}}^{(1)}[k]. \\
- & =\nabla _{\nu}^{(0)}S_{\xi,k}^{\mu \nu} \\
-S_{\xi,k}^{\mu \nu} & =\xi ^{[\mu}(\nabla ^{(0)}_{\rho}k^{\nu]\rho}-\nabla ^{(0)\nu]}k)
+ & =\nabla _{\nu}^{(0)}S_{\xi,k,0}^{\mu \nu} \\
+S_{\xi,k,0}^{\mu \nu} & =\xi ^{[\mu}(\nabla ^{(0)}_{\rho}k^{\nu]\rho}-\nabla ^{(0)\nu]}k)
 \end{align}$$
 
 The scalar contribution is
@@ -166,4 +166,66 @@ $$\begin{align}
 H_{\xi,\varphi}&=\int_{\Sigma}\mathrm{d}^{2}x\sqrt{\sigma^{(0)}}\tau_{\mu}\mathcal{H}^{\mu}_{\xi,\varphi}, \\
 \mathcal{H}^{\mu}_{\xi,\varphi}&=\xi_{\nu}T^{\mu\nu}_{(\varphi)} \\
 T^{\mu \nu}_{(\varphi)} & =\nabla ^{(0)\mu}\varphi \nabla ^{(0)\nu}\varphi-\dfrac{1}{2}g^{(0)\mu \nu}\left(\nabla ^{(0)}_{\rho}\varphi \nabla ^{(0)\rho}\varphi+m^{2}\varphi ^{2}\right)
+\end{align}$$
+
+add three parts together, we have
+
+$$\begin{align}
+H_{\xi}&=\int_{\Sigma}\mathrm{d}^{2}x\sqrt{\sigma^{(0)}}\tau_{\mu}\mathcal{H}^{\mu}_{\xi},\\
+\mathcal{H}^{\mu}_{\xi} &=\xi_{\nu}T_{(h)}^{\mu\nu}+\xi_{\nu}T_{(\varphi)}^{\mu\nu} +\nabla^{(0)}_{\nu}\left(S_{\xi,h}^{\mu\nu}+S_{\xi,k,0}^{\mu\nu}\right) +\mathcal{R}^{\mu}_{\xi,h}.
+\end{align}$$
+
+On the linearized equation of motion for the first-order graviton,
+
+$$\begin{align}
+\mathcal{E}^{(1)}_{\mu\nu}[h]=0,
+\end{align}$$
+
+the remainder term vanishes:
+
+$$\begin{align}
+\mathcal{R}^{\mu}_{\xi,h}=0.
+\end{align}$$
+
+The second-order Einstein equation is
+
+$$\begin{align}
+\mathcal{E}^{(1)}_{\mu\nu}[k]+\mathcal{E}^{(2)}_{\mu\nu}[h,h] =T_{(\varphi)\mu\nu}.
+\end{align}$$
+
+Since $T_{(h)}^{\mu\nu}=-\mathcal{E}^{(2)\mu\nu}[h,h]$, this constraint is equivalently
+
+$$\begin{align}
+\mathcal{E}^{(1)\mu\nu}[k]=T_{(h)}^{\mu\nu}+T_{(\varphi)}^{\mu\nu}.
+\end{align}$$
+
+Therefore, on the first-order graviton equation and the second-order constraint,
+
+$$\begin{align}
+H_{\xi} &=\int_{\Sigma}\mathrm{d}^{2}x\sqrt{\sigma^{(0)}}\tau_{\mu} \left[ \xi_{\nu}\mathcal{E}^{(1)\mu\nu}[k] +\nabla^{(0)}_{\nu}\left(S_{\xi,h}^{\mu\nu}+S_{\xi,k,0}^{\mu\nu}\right) \right].
+\end{align}$$
+
+For a background Killing vector in unit AdS$_3$, the contracted linearized Einstein tensor is also a total divergence:
+
+$$\begin{align}
+\xi_{\nu}\mathcal{E}^{(1)\mu\nu}[k]=\nabla^{(0)}_{\nu}\widehat{S}_{\xi,k}^{\mu\nu},
+\end{align}$$
+
+where antisymmetrization brackets have unit weight and
+
+$$\begin{align}
+\widehat{S}_{\xi,k}^{\mu\nu} &=\xi^{[\mu}\nabla^{(0)\nu]}k-\xi^{[\mu}\nabla^{(0)}_{\rho}k^{\nu]\rho} +\xi_{\rho}\nabla^{(0)[\mu}k^{\nu]\rho} +\frac{1}{2}k\nabla^{(0)[\mu}\xi^{\nu]} -k^{\rho[\mu}\nabla^{(0)}_{\rho}\xi^{\nu]}.
+\end{align}$$
+
+Define the total $k$-sector surface current by
+
+$$\begin{align}
+S_{\xi,k}^{\mu\nu}&:=S_{\xi,k,0}^{\mu\nu}+\widehat{S}_{\xi,k}^{\mu\nu} \\
+&=\xi_{\rho}\nabla^{(0)[\mu}k^{\nu]\rho} +\frac{1}{2}k\nabla^{(0)[\mu}\xi^{\nu]} -k^{\rho[\mu}\nabla^{(0)}_{\rho}\xi^{\nu]}.
+\end{align}$$
+
+Then the total charge is purely a surface term:
+
+$$\begin{align}
+H_{\xi} &=\int_{\Sigma}\mathrm{d}^{2}x\sqrt{\sigma^{(0)}}\tau_{\mu}\nabla^{(0)}_{\nu}\left(S_{\xi,h}^{\mu\nu}+S_{\xi,k}^{\mu\nu}\right).
 \end{align}$$

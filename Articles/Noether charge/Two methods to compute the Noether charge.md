@@ -117,7 +117,7 @@ $$
 \begin{align}
 S & =-\frac{1}{2}\int_{M} g^{\mu \nu}\nabla_{\mu}\phi \nabla_{\nu}\phi \cdot \frac{1}{d!}\varepsilon_{\mu_{0}\mu_{1}\dots \mu_{d-1}}\mathrm{d}x^{\mu_{0}}\wedge\dots \wedge \mathrm{d}x^{\mu_{d-1}} \\
 \delta S & =-\int_{M} g^{\mu \nu}\nabla_{\mu}\phi \nabla_{\nu}\delta \phi \cdot \frac{1}{d!}\varepsilon_{\mu_{0}\dots \mu_{d-1}}\mathrm{d}x^{\mu_{0}}\wedge\dots \mathrm{d}x^{\mu_{d-1}} \\
- & =\int_{M}E_{\phi}\mathrm{d}\phi+\theta|_{\Sigma_{f}-\Sigma_{i}} \\
+ & =\int_{M}E_{\phi}\delta \phi+\theta|_{\Sigma_{f}-\Sigma_{i}} \\
 \int_{M}E_{\phi}\delta \phi & =\int_{M}\nabla^{2}\phi \delta \phi \cdot \frac{1}{d!}\varepsilon_{\mu_{0}\dots \mu_{d-1}}\mathrm{d}x^{\mu_{0}}\wedge\dots \wedge\mathrm{d}x^{\mu_{d-1}} \\
 \theta & =-\int_{\Sigma}\nabla^{\mu}\phi \delta \phi \cdot \frac{1}{(d-1)!}\varepsilon_{\mu \mu_{1}\dots \mu_{d-1}}\mathrm{d}x^{\mu_{1}}\wedge\dots \wedge\mathrm{d}x^{\mu_{d-1}}
 \end{align}

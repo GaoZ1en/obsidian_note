@@ -26,7 +26,7 @@ $$
 \begin{align}
 -\delta Q_{\xi} & =X_{\xi}\cdot \Omega \\
 -X_{\xi}\cdot \omega & =\delta(X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L})-(X_{\delta \xi}\cdot \Theta-\delta \xi \cdot \mathbf{L})-\mathrm{d}(\xi \cdot \Theta) \\
-X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L} & =\mathrm{d}Q_{\xi}-2 \tilde{E}^{\mu \nu}\xi_{\nu}d\cot \frac{1}{3!}\varepsilon_{\mu \mu_{1}\mu_{2}\mu_{3}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}}\wedge \mathrm{d}x^{\mu_{3}} \\
+X_{\xi}\cdot \Theta-\xi \cdot \mathbf{L} & =\mathrm{d}Q_{\xi}-2 \tilde{E}^{\mu \nu}\xi_{\nu}\cdot \frac{1}{3!}\varepsilon_{\mu \mu_{1}\mu_{2}\mu_{3}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}}\wedge \mathrm{d}x^{\mu_{3}} \\
 Q_{\xi} & =\frac{1}{16\pi G}(\nabla^{\nu}\xi^{\mu}-\nabla^{\mu}\xi^{\nu})\cdot \frac{1}{2!}\varepsilon_{\mu \nu \mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
 \tilde{E}^{\mu \nu} & =\frac{1}{16\pi G}\left( -R^{\mu \nu}+\frac{1}{2}Rg^{\mu \nu} \right)
 \end{align}
@@ -47,7 +47,7 @@ $$
 $$
 \tag{1.5}
 \begin{align}
-\int_{\Sigma}\delta(X_{\xi}\cdot \theta-\xi \cdot \mathbf{L}) & =\delta \int_{\partial\Sigma} \frac{1}{16\pi}\varepsilon_{\mu \nu \mu_{1}}(\nabla^{\nu}\xi^{\mu}-\nabla^{\mu}\xi^{\nu})\mathrm{d}x^{\mu_{1}} \\
+\int_{\Sigma}\delta(X_{\xi}\cdot \theta-\xi \cdot \mathbf{L}) & =\delta \int_{\partial\Sigma} \frac{1}{16\pi G}\varepsilon_{\mu \nu \mu_{1}}(\nabla^{\nu}\xi^{\mu}-\nabla^{\mu}\xi^{\nu})\mathrm{d}x^{\mu_{1}} \\
  & =\int_{\Sigma}(X_{\delta \xi}\cdot \theta-\delta \xi \cdot \mathbf{L})+\delta'\int_{\partial \Sigma} \frac{1}{16\pi G}(\nabla^{\nu}\xi^{\mu}-\nabla^{\mu}\xi^{\nu})\cdot \frac{1}{2!}\varepsilon_{\mu \nu \mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
 -\int_{\Sigma}\mathrm{d}(\xi\cdot \Theta) & =-\int_{\partial \Sigma}\xi \cdot \Theta \\
  & =-\int_{\partial \Sigma} \frac{1}{16\pi G}(g^{\mu \rho}g^{\nu \sigma}-g^{\mu \nu}g^{\rho \sigma})\nabla_{\nu}\delta g_{\rho \sigma}\xi^{\lambda}\cdot \frac{1}{2!}\varepsilon_{\mu \lambda \mu_{1}\mu_{2}}\mathrm{d}x^{\mu_{1}}\wedge \mathrm{d}x^{\mu_{2}} \\
@@ -148,7 +148,7 @@ g_{ij} & =(1-\Phi)^{2}\delta_{ij}+\frac{\Phi^{2}(1-\Phi)}{r^{2}(1+\Phi)}\left[ X
 \end{align}
 $$
 
-where $\displaystyle{\Phi=-\frac{GM}{r}}$. choose $\displaystyle{v=ve_{x}}$ and at far region we have the following approximation
+where $\displaystyle{\Phi=-\frac{GM}{R}}$ and $\displaystyle{R^{2}=\gamma^{2}(x-vt)^{2}+y^{2}+z^{2}}$. choose $\displaystyle{v=ve_{x}}$ and at far region we have the following approximation
 
 $$
 \tag{2.8}
@@ -159,23 +159,32 @@ g_{ij}\approx (1-2\Phi)\delta_{ij}-4v^{2}\gamma^{2}\Phi \delta_{i1}\delta_{j1}
 \end{align}
 $$
 
-then we have
+On the slice $\displaystyle{t=0}$, write $\displaystyle{R=rs}$ with $\displaystyle{s^{2}=\gamma^{2}n_{x}^{2}+n_{y}^{2}+n_{z}^{2}}$ and $\displaystyle{n_{i}=x_{i}/r}$. The leading spatial perturbation is
 
 $$
 \tag{2.9}
 \begin{align}
-M_{ADM} & =\frac{1}{16\pi G}\lim_{ r \to \infty } \int_{S_{2,r}}\mathrm{d}Sr^{k}h^{ij}(\partial_{i}h_{kj}-\partial_{k}h_{ij}) \\
- & =\frac{1}{16\pi G}\lim_{ r \to \infty } \int_{S_{2,r}}???
+h_{ij}-\delta_{ij} & =\frac{2GM}{rs}\delta_{ij}+\frac{4GM\gamma^{2}v^{2}}{rs}\delta_{i1}\delta_{j1}+\mathcal{O}(r^{-2}) .
 \end{align}
 $$
 
+Then the ADM mass integrand becomes
+
 $$
-\tag{2.5}
+\tag{2.10}
 \begin{align}
-P & =\frac{1}{16\pi G}\lim_{ r \to \infty } \int_{S_{2,r}}g^{tm}(\partial_{m}g_{tt}-\partial_{t}g_{tm})\mathrm{d}y\mathrm{d}z \\
- & =\frac{1}{16\pi G}\lim_{ r \to \infty } \int_{S_{2,r}}g^{tx}(\partial_{x}g_{tt}-\partial_{t}g_{tx})\mathrm{d}y\mathrm{d}z \\
-
+M_{ADM} & =\frac{1}{16\pi G}\lim_{ r \to \infty } \int_{S_{2,r}}\mathrm{d}Sr^{k}h^{ij}(\partial_{i}h_{kj}-\partial_{k}h_{ij}) \\
+ & =\frac{1}{16\pi G}\int_{S^{2}}\frac{4GM\gamma^{2}}{s^{3}}\mathrm{d}\Omega \\
+ & =\gamma M .
 \end{align}
 $$
 
-hard to calculate
+Here we used $\displaystyle{\int_{S^{2}}(n^{i}B_{ij}n^{j})^{-3/2}\mathrm{d}\Omega=4\pi/\sqrt{\det B}}$ for $\displaystyle{B=\mathrm{diag}(\gamma^{2},1,1)}$.
+
+$$
+\tag{2.11}
+\begin{align}
+P_{i} & =\frac{1}{8\pi G}\lim_{ r \to \infty }\int_{S_{2,r}}(K_{ij}-Kh_{ij})n^{j}\mathrm{d}S,\qquad K_{ij}=\frac{1}{2}(\partial_{t}h_{ij}-\partial_{i}g_{0j}-\partial_{j}g_{0i}) \\
+P_{x} & =-\gamma v M,\qquad P_{y}=P_{z}=0 .
+\end{align}
+$$

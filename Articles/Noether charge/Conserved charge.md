@@ -64,7 +64,7 @@ Q_\xi&=\lim_{\varepsilon\to 0}\int_{\Sigma_\varepsilon}(X_\xi\cdot\Theta-\xi\cdo
 &-\frac{1}{16\pi G}\int_{\partial\Sigma_\varepsilon}(K^{\mu\nu}\gamma_{\nu\rho}\xi^\rho-\gamma^{\mu\nu}D_\nu(n^\rho\xi_\rho)-\gamma^{\mu\nu}n^\rho\nabla_\rho\xi_\nu)\varepsilon_{\mu\mu_1}^{\Gamma_\varepsilon}{\rm d}x^{\mu_1}\\
 &-\left.\int_{\Sigma_{\varepsilon}}\xi\cdot{\rm L}+\int_{\partial\Sigma_\varepsilon}\frac{1}{8\pi G}((K-1)\gamma^\mu_\nu\xi^\nu-D^\mu(n_\nu\xi^\nu))\varepsilon_{\mu\mu_1}{\rm d}x^{\mu_1}\right]\\
 &=\lim_{\varepsilon\to 0}\left[\frac{1}{16\pi G}\int_{\Sigma_\varepsilon}(R^{\mu\nu}-\frac{1}{2}Rg^{\mu\nu}-g^{\mu\nu})\xi_\nu\varepsilon_{\mu\mu_1\mu_2}{\rm d}x^{\mu_1}\wedge{\rm d}x^{\mu_2}\right.\\
-&\left.\frac{1}{8\pi G}\int_{\partial\Sigma_\varepsilon}(-K^{\mu\nu}+K\gamma^{\mu\nu}-\gamma^{\mu\nu})\gamma_{\nu\rho}\xi^\rho\varepsilon_{\mu\mu_1}^{\Gamma_\varepsilon}{\rm d}x^{\mu_1}\right]
+&\left.+\frac{1}{8\pi G}\int_{\partial\Sigma_\varepsilon}(-K^{\mu\nu}+K\gamma^{\mu\nu}-\gamma^{\mu\nu})\gamma_{\nu\rho}\xi^\rho\varepsilon_{\mu\mu_1}^{\Gamma_\varepsilon}{\rm d}x^{\mu_1}\right]
 \end{aligned}$$
 
 ## Convergence of Conserved Charge
@@ -73,7 +73,7 @@ Now we will determine whether the conserved charge $Q_\zeta$ is converge.
 
 $$\begin{aligned}
 Q_\xi&=\lim_{\varepsilon\to 0}\left[\frac{1}{16\pi G}\int_{\Sigma_\varepsilon}(R^{\mu\nu}-\frac{1}{2}Rg^{\mu\nu}-g^{\mu\nu})\xi_\nu\varepsilon_{\mu\mu_1\mu_2}{\rm d}x^{\mu_1}\wedge{\rm d}x^{\mu_2}\right.\\
-&\left.\frac{1}{8\pi G}\int_{\partial\Sigma_\varepsilon}(-K^{\mu\nu}+K\gamma^{\mu\nu}-\gamma^{\mu\nu})\gamma_{\nu\rho}\xi^\rho\varepsilon_{\mu\mu_1}^{\Gamma_\varepsilon}{\rm d}x^{\mu_1}\right]
+&\left.+\frac{1}{8\pi G}\int_{\partial\Sigma_\varepsilon}(-K^{\mu\nu}+K\gamma^{\mu\nu}-\gamma^{\mu\nu})\gamma_{\nu\rho}\xi^\rho\varepsilon_{\mu\mu_1}^{\Gamma_\varepsilon}{\rm d}x^{\mu_1}\right]
 \end{aligned}$$
 
 $$\begin{aligned}
@@ -89,14 +89,14 @@ $$\begin{aligned}
 &+\frac{1}{2}\xi^{(0)a}\partial_z(g_{zz}-\frac{1}{z^2})-\xi^{(0)a}g^{(0)bc}\partial_zD_b^{(0)}(zg_{zc})-\frac{1}{2}g^{(0)ab}\xi^{(0)c}\partial_z(z\partial_z(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)}))\\
 &\left.+\frac{1}{2}\xi^{(0)a}g^{(0)bc}\partial_z(z\partial_z(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)}))\right){\rm d}z+{\cal O}(\varepsilon^2)\\
 =&C+\frac{1}{8\pi G}\lim_{\varepsilon\to 0}\int_{\partial\Sigma_\varepsilon}\varepsilon_{aa_1}^{(0)}{\rm d}x^{a_1}\left(\frac{1}{2}zg^{(0)ab}(D_b^{(0)}g_{zc}+D_c^{(0)}g_{zb})\xi^{(0)c})+(\xi^{(0)a}g^{(0)bc}-\xi^{(0)c}g^{(0)ab})(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})\right.\\
-&+\frac{1}{2}\xi^{(0)a}(g_{zz}-\frac{1}{z^2})-\frac{1}{2}\xi^{(0)a}g^{(0)bc}(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)}))-\xi^{(0)a}g^{(0)bc}D_b^{(0)}(zg_{zc})-\frac{1}{2}\xi^{(0)a}g^{(0)bc}z^2g_{zb}g_{zc}\\
+&+\frac{1}{2}\xi^{(0)a}(g_{zz}-\frac{1}{z^2})-\xi^{(0)a}g^{(0)bc}D_b^{(0)}(zg_{zc})-\frac{1}{2}\xi^{(0)a}g^{(0)bc}z^2g_{zb}g_{zc}\\
 &+\left.\frac{1}{2}z(\xi^{(0)a}g^{(0)bc}-\xi^{(0)c}g^{(0)ab})\partial_z(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})\right)_{z=\varepsilon}+{\cal O}(\varepsilon^2)
 \end{aligned}$$
 
 $$\begin{aligned}
 &\lim_{\varepsilon\to 0}\frac{1}{8\pi G}\int_{\partial\Sigma_\varepsilon}(-K^{\mu\nu}+K\gamma^{\mu\nu}-\gamma^{\mu\nu})\gamma_{\nu\rho}\xi^\rho\varepsilon_{\mu\mu_1}^{\Gamma_{\varepsilon}}{\rm d}x^{\mu_1}\\
 =&\frac{1}{8\pi G}\lim_{\varepsilon\to 0}\int_{\partial\Sigma_\varepsilon}(-K^{ac}+K\gamma^{ac}-\gamma^{ac})\gamma_{cd}\xi^d\varepsilon_{aa_1}^{\Gamma_\varepsilon}{\rm d}x^{a_1}\\
-=&\frac{1}{8\pi G}\lim_{\varepsilon\to 0}\int_{\partial\Sigma_\varepsilon}\varepsilon_{aa_1}^{(0)}{\rm d}x^{a_1}\left(-\xi^{(0)a}g^{(0)bc}(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})+\frac{1}{2}z^2\xi^{(0)a}g^{(0)bc}g_{zb}g_{zc}-\frac{1}{2}\xi^{(0)a}(g_{zz}-\frac{1}{z^2})+\xi^{(0)ab}\xi^{(0)c}(g_{bc}\right.\\
+=&\frac{1}{8\pi G}\lim_{\varepsilon\to 0}\int_{\partial\Sigma_\varepsilon}\varepsilon_{aa_1}^{(0)}{\rm d}x^{a_1}\left(-\xi^{(0)a}g^{(0)bc}(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})+\frac{1}{2}z^2\xi^{(0)a}g^{(0)bc}g_{zb}g_{zc}-\frac{1}{2}\xi^{(0)a}(g_{zz}-\frac{1}{z^2})+g^{(0)ab}\xi^{(0)c}(g_{bc}\right.\\
 &-\frac{1}{z^2}g_{bc}^{(0)})-\frac{1}{2}zg^{(0)ab}\xi^{(0)c}D^{(0)}_bg_{zc}-\frac{1}{2}zg^{(0)ab}\xi^{(0)c}D^{(0)}_cg_{zb}+z\xi^{(0)a}g^{(0)bc}D^{(0)}_bg_{zc}+\frac{1}{2}zg^{(0)ab}\xi^{(0)c}\partial_z(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})\\
 &\left.-\frac{1}{2}z\xi^{(0)a}g^{(0)bc}\partial_z(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})\right)+{\cal O}(\varepsilon^2)
 \end{aligned}$$
@@ -105,9 +105,9 @@ Summing over, we have
 
 $$\begin{aligned}
 Q_\xi&=C+\frac{1}{8\pi G}\lim_{\varepsilon\to 0}\int_{\partial\Sigma_\varepsilon}\varepsilon_{aa_1}^{(0)}{\rm d}x^{a_1}\left(\frac{1}{2}zg^{(0)ab}(D_b^{(0)}g_{zc}+D_c^{(0)}g_{zb})\xi^{(0)c})+(\xi^{(0)a}g^{(0)bc}-\xi^{(0)c}g^{(0)ab})(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})\right.\\
-&+\frac{1}{2}\xi^{(0)a}(g_{zz}-\frac{1}{z^2})-\frac{1}{2}\xi^{(0)a}g^{(0)bc}(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)}))-\xi^{(0)a}g^{(0)bc}D_b^{(0)}(zg_{zc})-\frac{1}{2}z^2\xi^{(0)a}g^{(0)bc}g_{zb}g_{zc}\\
+&+\frac{1}{2}\xi^{(0)a}(g_{zz}-\frac{1}{z^2})-\xi^{(0)a}g^{(0)bc}D_b^{(0)}(zg_{zc})-\frac{1}{2}z^2\xi^{(0)a}g^{(0)bc}g_{zb}g_{zc}\\
 &+\left.\frac{1}{2}z(\xi^{(0)a}g^{(0)bc}-\xi^{(0)c}g^{(0)ab})\partial_z(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})\right)_{z=\varepsilon}+{\cal O}(\varepsilon^2)\\
-&+\frac{1}{8\pi G}\lim_{\varepsilon\to 0}\int_{\partial\Sigma_\varepsilon}\varepsilon_{aa_1}^{(0)}{\rm d}x^{a_1}\left(-\xi^{(0)a}g^{(0)bc}(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})+\frac{1}{2}z^2\xi^{(0)a}g^{(0)bc}g_{zb}g_{zc}-\frac{1}{2}\xi^{(0)a}(g_{zz}-\frac{1}{z^2})+\xi^{(0)ab}\xi^{(0)c}(g_{bc}\right.\\
+&+\frac{1}{8\pi G}\lim_{\varepsilon\to 0}\int_{\partial\Sigma_\varepsilon}\varepsilon_{aa_1}^{(0)}{\rm d}x^{a_1}\left(-\xi^{(0)a}g^{(0)bc}(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})+\frac{1}{2}z^2\xi^{(0)a}g^{(0)bc}g_{zb}g_{zc}-\frac{1}{2}\xi^{(0)a}(g_{zz}-\frac{1}{z^2})+g^{(0)ab}\xi^{(0)c}(g_{bc}\right.\\
 &-\frac{1}{z^2}g_{bc}^{(0)})-\frac{1}{2}zg^{(0)ab}\xi^{(0)c}D^{(0)}_bg_{zc}-\frac{1}{2}zg^{(0)ab}\xi^{(0)c}D^{(0)}_cg_{zb}+z\xi^{(0)a}g^{(0)bc}D^{(0)}_bg_{zc}+\frac{1}{2}zg^{(0)ab}\xi^{(0)c}\partial_z(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})\\
 &\left.-\frac{1}{2}z\xi^{(0)a}g^{(0)bc}\partial_z(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})\right)+{\cal O}(\varepsilon^2)\\
 &=C+{\cal O}(\varepsilon^2)
@@ -144,14 +144,14 @@ $$\begin{align}
 I want to prove this equation. We first introduce some relevant quantities.
 
 $$\begin{aligned}
-{\cal L}_\xi g_{zz}&=-2z^{-3}(\xi^z-\xi^{(1)z})+2(g_{zz}-\frac{1}{z^2})\xi^{(1)z}+\xi^{(0)a}D^{(0)}_a(g_{zz}-\frac{1}{z^2})+z\xi^{(1)z}\partial_z(g_{zz}-\frac{1}{z^2})\\
-&+2g^{(0)ab}g_{zb}\partial_z(g_{zz}-\frac{1}{z^2})+2z^{-2}\partial_z(\xi^z-\xi^{(1)z})+{\cal O}(z^2)\\
+{\cal L}_\xi g_{zz}&=-2z^{-3}(\xi^z-z\xi^{(1)z})+2(g_{zz}-\frac{1}{z^2})\xi^{(1)z}+\xi^{(0)a}D^{(0)}_a(g_{zz}-\frac{1}{z^2})+z\xi^{(1)z}\partial_z(g_{zz}-\frac{1}{z^2})\\
+&+2g^{(0)ab}g_{zb}\partial_z(g_{zz}-\frac{1}{z^2})+2z^{-2}\partial_z(\xi^z-z\xi^{(1)z})+{\cal O}(z^2)\\
 {\cal L}_\xi g_{za}&=g_{za}\xi^{(1)z}+g_{zb}D^{(0)}_a\xi^{(0)b}+z^{-1}D^{(0)}_a\xi^{(1)z}+\xi^{(0)b}D_b^{(0)}g_{za}+z\xi^{(1)z}\partial_zg_{za}+z^{-2}g^{(0)}_{ab}\partial_z(\xi^b-\xi^{(0)b})\\
-{\cal L}_\xi g_{ab}&=-2z^{-3}g^{(0)}_{ab}(\xi^{z}-\xi^{(1)z})+D_a^{(0)}\xi^{(0)c}(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})+z^{-2}\left(D_a^{(0)}(\xi_b-\xi^{(0)}_b)+D_b^{(0)}(\xi_a-\xi_a^{(0)})\right.\\
+{\cal L}_\xi g_{ab}&=-2z^{-3}g^{(0)}_{ab}(\xi^{z}-z\xi^{(1)z})+D_a^{(0)}\xi^{(0)c}(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})+z^{-2}\left(D_a^{(0)}(\xi_b-\xi^{(0)}_b)+D_b^{(0)}(\xi_a-\xi_a^{(0)})\right.\\
 &\left.-2g^{(0)}_{ab}\xi^{(1)z}+D_a^{(0)}\xi^{(0)}_b+D_b^{(0)}\xi_a^{(0)}\right)+(g_{ac}-\frac{1}{z^2}g_{ac}^{(0)})D^{(0)}_b\xi^{(0)c}+\xi^{(0)c}D_c^{(0)}(g_{ab}-\frac{1}{z^2}g_{ab}^{(0)})\\
 &+z\left(g_{zb}D_a^{(0)}\xi^{(1)z}+g_{za}D_b^{(0)}\xi^{(1)z}+\xi^{(1)z}\partial_z(g_{ab}-\frac{1}{z^2}g_{ab}^{(0)})\right)+{\cal O}(z^2)\\
 {\cal L}_{\xi^{(0)}}g_{ab}^{(0)}&=D^{(0)}_a\xi^{(0)}_b+D_b^{(0)}\xi_a^{(0)}\\
-{\cal L}_\xi g_{ab}-{\cal L}_{\xi^{(0)}}g_{ab}^{(0)}&=-2z^{-3}g^{(0)}_{ab}(\xi^{z}-\xi^{(1)z})+D_a^{(0)}\xi^{(0)c}(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})+z^{-2}\left(D_a^{(0)}(\xi_b-\xi^{(0)}_b)+D_b^{(0)}(\xi_a-\xi_a^{(0)})\right.\\
+{\cal L}_\xi g_{ab}-{\cal L}_{\xi^{(0)}}g_{ab}^{(0)}&=-2z^{-3}g^{(0)}_{ab}(\xi^{z}-z\xi^{(1)z})+D_a^{(0)}\xi^{(0)c}(g_{bc}-\frac{1}{z^2}g_{bc}^{(0)})+z^{-2}\left(D_a^{(0)}(\xi_b-\xi^{(0)}_b)+D_b^{(0)}(\xi_a-\xi_a^{(0)})\right.\\
 &\left.-2g^{(0)}_{ab}\xi^{(1)z}\right)+(g_{ac}-\frac{1}{z^2}g_{ac}^{(0)})D^{(0)}_b\xi^{(0)c}+\xi^{(0)c}D_c^{(0)}(g_{ab}-\frac{1}{z^2}g_{ab}^{(0)})\\
 &+z\left(g_{zb}D_a^{(0)}\xi^{(1)z}+g_{za}D_b^{(0)}\xi^{(1)z}+\xi^{(1)z}\partial_z(g_{ab}-\frac{1}{z^2}g_{ab}^{(0)})\right)+{\cal O}(z^2)\\
 {\cal L}_{\xi^{(0)}}\delta\Gamma^c_{ab}&=\frac{1}{2}g^{(0)cd}R^{(0)}_{abed}\xi^{(0)e}+\frac{1}{2}g^{(0)cd}R^{(0)}_{aebd}\xi^{(0)e}+\frac{1}{2}g^{(0)cd}R^{(0)}_{bead}\xi^{(0)e}+D_b^{(0)}D_a^{(0)}\xi^{(0)c}

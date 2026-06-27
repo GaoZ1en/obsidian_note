@@ -13,8 +13,8 @@ we will verify that $\displaystyle{L_{n}}$ and $\displaystyle{\bar{L}_{n}}$ sati
 $$
 \tag{1.2}
 \begin{align}
-\left\{L_{m},L_{n}\right\} & =-i(m-n)L_{m+n}+\frac{1}{8G}m(m^{2}-1)\delta_{m,-n} \\
-\left\{\bar{L}_{m},\bar{L}_{n}\right\} & =-i(m-n)\bar{L}_{m+n}+\frac{1}{8G}m(m^{2}-1)\delta_{m,-n} \\
+\left\{L_{m},L_{n}\right\} & =-i(m-n)L_{m+n}-\frac{i}{8G}m(m^{2}-1)\delta_{m,-n} \\
+\left\{\bar{L}_{m},\bar{L}_{n}\right\} & =-i(m-n)\bar{L}_{m+n}-\frac{i}{8G}m(m^{2}-1)\delta_{m,-n} \\
 \left\{L_{m},\bar{L}_{n}\right\} & =0
 \end{align}
 $$
@@ -23,7 +23,7 @@ $$
 \tag{1.4}
 \begin{align}
 \left\{\frac{1}{2}Q_{A_{m}}+\frac{1}{2}Q_{B_{m}}, \frac{1}{2}Q_{A_{n}}-\frac{1}{2}Q_{B_{n}}\right\} & =0 \\
-\left\{\frac{1}{2}Q_{C_{m}}-\frac{1}{2}Q_{D_{n}}, \frac{1}{2}Q_{C_{n}}+\frac{1}{2}Q_{D_{n}}\right\} & =0 \\
+\left\{\frac{1}{2}Q_{C_{m}}-\frac{1}{2}Q_{D_{m}}, \frac{1}{2}Q_{C_{n}}+\frac{1}{2}Q_{D_{n}}\right\} & =0 \\
 \left\{\frac{1}{2}Q_{A_{m}}+\frac{1}{2}Q_{B_{m}}, \frac{1}{2}Q_{A_{n}}+\frac{1}{2}Q_{B_{n}}\right\} & =\frac{1}{4}(m-n)Q_{C_{m+n}}+\frac{1}{4}(m+n)Q_{C_{m-n}}-\frac{1}{4}(m-n)Q_{D_{m+n}}-\frac{1}{4}(m+n)Q_{D_{m-n}} \\
 \left\{\frac{1}{2}Q_{A_{m}}-\frac{1}{2}Q_{B_{m}}, \frac{1}{2}Q_{A_{n}}-\frac{1}{2}Q_{B_{n}}\right\} & =\frac{1}{4}(m-n)Q_{C_{m+n}}+\frac{1}{4}(m+n)Q_{C_{m-n}}+\frac{1}{4}(m-n)Q_{D_{m+n}}+\frac{1}{4}(m+n)Q_{D_{m-n}} \\
 \left\{\frac{1}{2}Q_{C_{m}}-\frac{1}{2}Q_{D_{m}}, \frac{1}{2}Q_{C_{n}}-\frac{1}{2}Q_{D_{n}}\right\} & =-\frac{1}{4}(m-n)Q_{C_{m+n}}+\frac{1}{4}(m+n)Q_{C_{m-n}}+\frac{1}{4}(m-n)Q_{D_{m+n}}-\frac{1}{4}(m+n)Q_{D_{m-n}} \\
@@ -68,7 +68,7 @@ where $\displaystyle{T_{z \bar{z}}=0}$, and the only non-zero components of the 
 $$
 \tag{2.2}
 \begin{align}
-O^{(1)}(w,\bar{w}) & =O(z,\bar{z})|_{z=z(w),\bar{z}=\bar{z})\bar{w}} \\
+O^{(1)}(w,\bar{w}) & =O(z,\bar{z})|_{z=z(w),\bar{z}=\bar{z}(\bar{w})} \\
 T^{(1)}_{ww}(w) & =T_{zz}(z) \left(\frac{\partial z}{\partial w}\right)^{2} \\
 T^{(1)}_{w\bar{w}} & =0 \\
 T^{(1)}_{\bar{w}\bar{w}}(\bar{w}) & =T_{\bar{z}\bar{z}}(\bar{z}) \left(\frac{\partial \bar{z}}{\partial \bar{w}}\right)^{2} \\
@@ -170,7 +170,7 @@ Q_{A_{m}} & =-\frac{1}{2\pi}\int^{2\pi}_{0}(\cos nt\cos n\phi T_{tt}-\sin nt\sin
  & +\sin mt\left(\frac{i}{2}\sum_{n}e^{-int}L_{n}(\delta_{m,n}-\delta_{m,-n})+\frac{i}{2}\sum_{n}e^{-int}\bar{L}_{n}(\delta_{m,n}-\delta_{m,-n})\right) \\
  & =\frac{1}{4}(e^{imt}+e^{-imt})(e^{-imt}L_{m}+e^{imt}L_{-m}+e^{-imt}\bar{L}_{m}+e^{imt}\bar{L}_{-m})-\frac{c}{12}\delta_{m,0}\sec^{2}t \\
  & +\frac{1}{4}(e^{imt}-e^{-imt})(e^{-imt}L_{m}-e^{imt}L_{-m}+e^{-imt}\bar{L}_{m}-e^{imt}\bar{L}_{-m}) \\
- & =\frac{1}{2}L_{m}+\frac{1}{2}L_{-m}+\frac{1}{2}\bar{L}_{m}+\frac{1}{2}\bar{L}_{m}-\frac{c}{12}\sec^{2}t\delta_{m,0}
+ & =\frac{1}{2}L_{m}+\frac{1}{2}L_{-m}+\frac{1}{2}\bar{L}_{m}+\frac{1}{2}\bar{L}_{-m}-\frac{c}{12}\sec^{2}t\delta_{m,0}
 \end{align}
 $$
 
@@ -178,12 +178,12 @@ $$
 \tag{3.5b}
 \begin{align}
 Q_{B_{m}} & =-\frac{1}{2\pi}\int^{2\pi}_{0}(\sin mt\sin m\phi T_{tt}-\cos mt\cos m\phi T_{t\phi}) \\
- & =-\frac{1}{2\pi}\int^{2\pi}_{0}\left(\sin mt\sin m\phi\left(-\sum_{n}e^{in\phi-in t}L_{n}-\sum_{n}e^{-in\phi-in t}\bar{L}_{n}+\frac{c}{12}\right)\right. \\
+ & =-\frac{1}{2\pi}\int^{2\pi}_{0}\left(\sin mt\sin m\phi\left(-\sum_{n}e^{in\phi-in t}L_{n}-\sum_{n}e^{-in\phi-in t}\bar{L}_{n}+\frac{c}{12}\sec^{2}t\right)\right. \\
  & \left.-\cos mt\cos m\phi\left( \sum_{n}e^{in\phi-in t}L_{n}-\sum_{n}e^{-in\phi-int}\bar{L}_{n} \right)\right)\mathrm{d}\phi \\
  & =-\sin mt\left(-\frac{i}{2}\sum_{n}e^{-in t}L_{n}\left(\delta_{m,n}-\delta_{m,-n}\right)+\frac{i}{2}\sum_{n}e^{-int}\bar{L}_{n}(\delta_{m,n}-\delta_{m,-n})\right) \\
  & +\cos mt\left(\frac{1}{2}\sum_{n}e^{-in t}L_{n}(\delta_{m,n}+\delta_{m,-n})-\frac{1}{2}\sum_{n}e^{-int}\bar{L}_{n}(\delta_{m,n}+\delta_{m,-n})\right) \\
  & =\frac{1}{4}(e^{imt}-e^{-imt})(e^{-imt}L_{m}-e^{imt}L_{-m}-e^{-imt}\bar{L}_{m}+e^{imt}\bar{L}_{-m}) \\
- & +\frac{1}{4}(e^{imt}+e^{-imt})(e^{-imt}L_{m}+e^{imt}L_{-m}-e^{-imt}L_{m}-e^{imt}L_{-m}) \\
+ & +\frac{1}{4}(e^{imt}+e^{-imt})(e^{-imt}L_{m}+e^{imt}L_{-m}-e^{-imt}\bar{L}_{m}-e^{imt}\bar{L}_{-m}) \\
  & =\frac{1}{2}L_{m}+\frac{1}{2}L_{-m}-\frac{1}{2}\bar{L}_{m}-\frac{1}{2}\bar{L}_{-m}
 \end{align}
 $$
@@ -192,7 +192,7 @@ $$
 \tag{3.5c\&d}
 \begin{align}
 Q_{C_{m}} & =-\frac{i}{2}L_{m}+\frac{i}{2}L_{-m}-\frac{i}{2}\bar{L}_{m}+\frac{i}{2}\bar{L}_{-m} \\
-Q_{D_{m}} & =\frac{i}{2}L_{m}-\frac{i}{2}L_{-n}-\frac{i}{2}\bar{L}_{n}+\frac{i}{2}\bar{L}_{-n}
+Q_{D_{m}} & =\frac{i}{2}L_{m}-\frac{i}{2}L_{-m}-\frac{i}{2}\bar{L}_{m}+\frac{i}{2}\bar{L}_{-m}
 \end{align}
 $$
 
@@ -280,10 +280,10 @@ then
 $$
 \tag{3.11}
 \begin{align}
-\left\{L_{m},L_{n}\right\} & =\frac{1}{2}(m-n)Q_{C_{m+n}}-\frac{1}{2}(m-n)Q_{D_{m+n}}-\frac{i}{2}(m-n)Q_{A_{m+n}}-\frac{i}{2}(m-n)Q_{B_{m+n}}-\frac{i}{8G}m(m^{2}-1)\delta_{m,-n}-\frac{i}{8G}\left( 1-\frac{2}{3}c \right)m\sec^{2}t\delta_{m,-n} \\
-  & \overset{(c=3/2)}{=}-i(m-n)L_{m+n}-\frac{i}{8G}m(m^{2}-1)\delta_{m,-n} \\
+\left\{L_{m},L_{n}\right\} & =\frac{1}{2}(m-n)Q_{C_{m+n}}-\frac{1}{2}(m-n)Q_{D_{m+n}}-\frac{i}{2}(m-n)Q_{A_{m+n}}-\frac{i}{2}(m-n)Q_{B_{m+n}}-\frac{i}{8G}m(m^{2}-1)\delta_{m,-n}-\frac{i}{8G}\left( 1-\frac{2G}{3}c \right)m\sec^{2}t\delta_{m,-n} \\
+  & \overset{(c=3/(2G))}{=}-i(m-n)L_{m+n}-\frac{i}{8G}m(m^{2}-1)\delta_{m,-n} \\
 \left\{L_{m},\bar{L}_{n}\right\} & =0+0+0+0+0=0 \\
-\left\{\bar{L}_{m},\bar{L}_{n}\right\} & =\frac{1}{2}(m-n)Q_{C_{m+n}}+\frac{1}{2}(m-n)Q_{D_{m+n}}-\frac{i}{2}(m-n)Q_{A_{m+n}}+\frac{i}{2}(m-n)Q_{B_{m+n}}-\frac{i}{8G}m(m^{2}-1)\delta_{m,-n}-\frac{i}{8G}\left( 1-\frac{2}{3}c \right)m\sec^{2}t\delta_{m,-n} \\
- & \overset{c=3/2}{=}-i(m-n)\bar{L}_{m+n}-\frac{i}{8G}m(m^{2}-1)\delta_{m,-n}
+\left\{\bar{L}_{m},\bar{L}_{n}\right\} & =\frac{1}{2}(m-n)Q_{C_{m+n}}+\frac{1}{2}(m-n)Q_{D_{m+n}}-\frac{i}{2}(m-n)Q_{A_{m+n}}+\frac{i}{2}(m-n)Q_{B_{m+n}}-\frac{i}{8G}m(m^{2}-1)\delta_{m,-n}-\frac{i}{8G}\left( 1-\frac{2G}{3}c \right)m\sec^{2}t\delta_{m,-n} \\
+ & \overset{c=3/(2G)}{=}-i(m-n)\bar{L}_{m+n}-\frac{i}{8G}m(m^{2}-1)\delta_{m,-n}
 \end{align}
 $$
