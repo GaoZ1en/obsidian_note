@@ -53,8 +53,7 @@ Here $\Sigma$ is a constant-time Cauchy surface in global AdS$_3$, $\tau^{(0)\mu
 In the present perturbative expansion the matter stress tensor appears in the second-order equation. Therefore define the effective second-order source
 
 $$\begin{align}
-\mathcal{T}^{(2)}_{\mu\nu} :=T_{\mu\nu}+T^{\mathrm{grav}}_{\mu\nu}[h^{(1)}], \qquad
-T^{\mathrm{grav}}_{\mu\nu}[h^{(1)}] :=-\mathcal{E}^{(2)}_{\mu\nu}[h^{(1)},h^{(1)}].
+\mathcal{T}^{(2)}_{\mu\nu} :=T_{\mu\nu}+T^{\mathrm{grav}}_{\mu\nu}[h^{(1)}], \qquad T^{\mathrm{grav}}_{\mu\nu}[h^{(1)}] :=-\mathcal{E}^{(2)}_{\mu\nu}[h^{(1)},h^{(1)}].
 \end{align}$$
 
 The $h^{(2)}$ equation becomes

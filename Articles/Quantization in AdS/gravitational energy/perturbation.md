@@ -185,7 +185,7 @@ R^{(2)}[h^{(1)},h^{(1)}] &=g^{(0)\mu\nu}R^{(2)}_{\mu\nu}[h^{(1)},h^{(1)}] -h_1^{
 
 ## Bulk action
 
-Expanding the bulk Lagrangian gives
+At the level of the action, after discarding total-derivative terms in the quadratic coefficient, write
 
 $$\begin{align}
 \sqrt{-g}(R+2) =\sqrt{-g^{(0)}}\left[ \mathcal{L}^{(0)} +\kappa\mathcal{L}^{(1)}[h^{(1)}] +\kappa^2\left( \mathcal{L}^{(1)}[h^{(2)}] +\mathcal{L}^{(2)}[h^{(1)}] \right) \right]+O(\kappa^3),
@@ -203,7 +203,7 @@ $$\begin{align}
 \mathcal{L}^{(1)}[X] =\nabla_\mu\nabla_\nu X^{\mu\nu}-\nabla^2X.
 \end{align}$$
 
-Thus $\mathcal{L}^{(1)}$ is a total derivative on the AdS$_3$ background. The quadratic bulk Lagrangian for $h^{(1)}_{\mu\nu}$ is
+Thus $\mathcal{L}^{(1)}$ is a total derivative on the AdS$_3$ background. The quadratic bulk representative for $h^{(1)}_{\mu\nu}$ is
 
 $$\begin{align}
 \mathcal{L}^{(2)}[h^{(1)}] &=\frac{1}{2}h_1^2-h^{(1)}_{\mu\nu}h_1^{\mu\nu} +h_1^{\mu\nu}\nabla_\mu\nabla_\nu h_1 -\frac{1}{4}\nabla_\mu h_1\nabla^\mu h_1\\
@@ -219,7 +219,7 @@ S_{\mathrm{bulk}} &=\frac{1}{2\kappa^2}\int_M\mathrm{d}^3x\sqrt{-g^{(0)}} \left[
 &\quad\left. +\kappa^2\left( \mathcal{L}^{(1)}[h^{(2)}] +\mathcal{L}^{(2)}[h^{(1)}] \right) \right] +O(\kappa).
 \end{align}$$
 
-The terms involving $\mathcal{L}^{(1)}$ are boundary terms. The non-trivial bulk quadratic action for the first-order graviton is the $\mathcal{L}^{(2)}[h^{(1)}]$ term.
+The terms involving $\mathcal{L}^{(1)}$ and the discarded total derivative are boundary terms. The non-trivial bulk quadratic action for the first-order graviton is represented by the $\mathcal{L}^{(2)}[h^{(1)}]$ term.
 
 ## Equations of motion with a bulk source
 

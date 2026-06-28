@@ -36,7 +36,7 @@ g^{\mu\nu} & =g^{(0)\mu\nu}-\kappa h^{\mu\nu}+\kappa ^{2}\left(h^{\mu}{}_{\rho}h
 \sqrt{ -g } & =\sqrt{ -g^{(0)} }\left[1+\frac{\kappa}{2}h+\kappa ^{2}\left(\frac{1}{2}k-\frac{1}{4}h_{\mu\nu}h^{\mu\nu}+\frac{1}{8}h^{2}\right)\right]+\mathcal{O}(\kappa ^{3}).
 \end{align}$$
 
-For the bulk gravitational density write
+At the level of the action, after discarding total-derivative terms in the quadratic coefficient, write
 
 $$\begin{align}
 \sqrt{ -g }(R+2) & =\sqrt{ -g^{(0)} }\left[\mathcal{L}_{\mathrm{g}}^{(0)}+\kappa \mathcal{L}_{\mathrm{g}}^{(1)}[h]+\kappa ^{2}\left(\mathcal{L}_{\mathrm{g}}^{(1)}[k]+\mathcal{L}_{\mathrm{g}}^{(2)}[h]\right)\right]+\mathcal{O}(\kappa ^{3}), \\

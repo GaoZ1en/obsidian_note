@@ -262,11 +262,11 @@ where
       -\nabla^{(0)\mu}\Delta_\xi k
     \right)
     +\frac12\xi^\mu\Lg^{(1)}[k] \notag\\
-  &=\nabla^{(0)}_\nu S_{\xi,k}^{\mu\nu},
+  &=\nabla^{(0)}_\nu S_{\xi,k,0}^{\mu\nu},
 \end{align}
 with
 \begin{align}
-  S_{\xi,k}^{\mu\nu}
+  S_{\xi,k,0}^{\mu\nu}
   =\xi^{[\mu}
     \left(
       \nabla^{(0)}_\rho k^{\nu]\rho}
@@ -296,7 +296,7 @@ where
     \right).
 \end{align}
 
-Combining the three pieces,
+Combining the three pieces gives
 \begin{align}
   H_\xi
   &=\int_\Sigma\dd^2x\,\sqrt{\sigma^{(0)}}\,\tau_\mu
@@ -304,12 +304,73 @@ Combining the three pieces,
       \xi_\nu T_{(h)}^{\mu\nu}
       +\xi_\nu T_{(\varphi)}^{\mu\nu}
       +\nabla^{(0)}_\nu
-       \left(S_\xi^{\mu\nu}+S_{\xi,k}^{\mu\nu}\right)
+       \left(S_\xi^{\mu\nu}+S_{\xi,k,0}^{\mu\nu}\right)
       +\cR^\mu_{\xi,h}
     \right].
 \end{align}
-On solutions of the linearized equation for $h_{\mu\nu}$, the remainder
-$\cR^\mu_{\xi,h}$ vanishes. The comparison with the boundary stress tensor
-expression is not included in this fragment.
+On solutions of the first-order graviton equation,
+\begin{align}
+  \cE^{(1)}_{\mu\nu}[h]=0,
+\end{align}
+the remainder $\cR^\mu_{\xi,h}$ vanishes. The second-order Einstein equation
+is
+\begin{align}
+  \cE^{(1)}_{\mu\nu}[k]
+  +\cE^{(2)}_{\mu\nu}[h,h]
+  =T_{(\varphi)\mu\nu}.
+\end{align}
+Since $T_{(h)}^{\mu\nu}=-\cE^{(2)\mu\nu}[h,h]$, this constraint is equivalently
+\begin{align}
+  \cE^{(1)\mu\nu}[k]
+  =T_{(h)}^{\mu\nu}+T_{(\varphi)}^{\mu\nu}.
+\end{align}
+Therefore, on the first-order equation and the second-order constraint,
+\begin{align}
+  H_\xi
+  =\int_\Sigma\dd^2x\,\sqrt{\sigma^{(0)}}\,\tau_\mu
+    \left[
+      \xi_\nu\cE^{(1)\mu\nu}[k]
+      +\nabla^{(0)}_\nu
+       \left(S_\xi^{\mu\nu}+S_{\xi,k,0}^{\mu\nu}\right)
+    \right].
+\end{align}
+For a background Killing vector in unit AdS$_3$,
+\begin{align}
+  \xi_\nu\cE^{(1)\mu\nu}[k]
+  =\nabla^{(0)}_\nu\widehat S_{\xi,k}^{\mu\nu},
+\end{align}
+where antisymmetrization brackets have unit weight and
+\begin{align}
+  \widehat S_{\xi,k}^{\mu\nu}
+  &=\xi^{[\mu}\nabla^{(0)\nu]}k
+    -\xi^{[\mu}\nabla^{(0)}_\rho k^{\nu]\rho}
+    +\xi_\rho\nabla^{(0)[\mu}k^{\nu]\rho}
+    +\frac12 k\nabla^{(0)[\mu}\xi^{\nu]}
+    -k^{\rho[\mu}\nabla^{(0)}_\rho\xi^{\nu]}.
+\end{align}
+Defining the total $k$-sector surface current by
+\begin{align}
+  S_{\xi,k}^{\mu\nu}
+  &:=S_{\xi,k,0}^{\mu\nu}+\widehat S_{\xi,k}^{\mu\nu} \notag\\
+  &=\xi_\rho\nabla^{(0)[\mu}k^{\nu]\rho}
+    +\frac12 k\nabla^{(0)[\mu}\xi^{\nu]}
+    -k^{\rho[\mu}\nabla^{(0)}_\rho\xi^{\nu]},
+\end{align}
+the total charge is represented purely by a boundary surface current:
+\begin{align}
+  H_\xi
+  =\int_\Sigma\dd^2x\,\sqrt{\sigma^{(0)}}\,\tau_\mu
+    \nabla^{(0)}_\nu
+    \left(S_\xi^{\mu\nu}+S_{\xi,k}^{\mu\nu}\right).
+\end{align}
+Equivalently, with $n_\mu$ the outward unit normal to $\partial\Sigma$ inside
+$\Sigma$ and
+$\dd\Sigma^{(0)}_{\mu\nu}
+  :=\dd x\,\sqrt{\gamma^{(0)}}\,\tau_{[\mu}n_{\nu]}$,
+\begin{align}
+  H_\xi
+  =\int_{\partial\Sigma}\dd\Sigma^{(0)}_{\mu\nu}
+    \left(S_\xi^{\mu\nu}+S_{\xi,k}^{\mu\nu}\right).
+\end{align}
 
 \end{document}

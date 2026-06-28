@@ -27,8 +27,7 @@ This object should not be treated as a gauge-invariant local stress tensor. It i
 For a global AdS$_3$ Killing field or an allowed Brown-Henneaux asymptotic Killing field $\xi^\mu$, define the quadratic gravitational charge by
 
 $$\begin{align}
-H^{\mathrm{grav}}_\xi[h^{(1)}] = \int_\Sigma \mathrm{d}^2x\sqrt{\sigma^{(0)}}\, \tau^{(0)\mu}\xi^\nu
-T^{\mathrm{grav}}_{\mu\nu}[h^{(1)}].
+H^{\mathrm{grav}}_\xi[h^{(1)}] = \int_\Sigma \mathrm{d}^2x\sqrt{\sigma^{(0)}}\, \tau^{(0)\mu}\xi^\nu T^{\mathrm{grav}}_{\mu\nu}[h^{(1)}].
 \end{align}$$
 
 Equivalently,
@@ -56,9 +55,7 @@ h^{(1)}_{\mu\nu} = \sum_n \left( a_{L,n}h_{L,n,\mu\nu} +a_{R,n}h_{R,n,\mu\nu} +a
 After quantization, $H^{\mathrm{grav}}_\xi$ becomes a quadratic operator in the oscillator modes,
 
 $$\begin{align}
-H^{\mathrm{grav}}_\xi \sim
-\sum_{m,n}
-a^\dagger_m\mathcal{K}^{(\xi)}_{mn}a_n,
+H^{\mathrm{grav}}_\xi \sim \sum_{m,n} a^\dagger_m\mathcal{K}^{(\xi)}_{mn}a_n,
 \end{align}$$
 
 with the kernel determined by the Killing field or asymptotic symmetry generator $\xi^\mu$. For $\xi=\partial_t$ and $\xi=\partial_\phi$, this should reproduce the energy and angular momentum operators of the boundary graviton sector. For asymptotic conformal generators, the same construction should connect to the Virasoro charges.
@@ -70,16 +67,13 @@ This gives a practical meaning to the local representative $T^{\mathrm{grav}}_{\
 For a boundary interval $A$, the vacuum modular flow is generated in the bulk by an AdS-Rindler Killing field $\xi_A^\mu$ preserving the corresponding entanglement wedge. The gravitational contribution to the modular Hamiltonian should then be represented semiclassically by
 
 $$\begin{align}
-K^{\mathrm{grav}}_A \sim
-H^{\mathrm{grav}}_{\xi_A}[h^{(1)}].
+K^{\mathrm{grav}}_A \sim H^{\mathrm{grav}}_{\xi_A}[h^{(1)}].
 \end{align}$$
 
 In covariant phase-space language, the more invariant object is the canonical energy
 
 $$\begin{align}
-\mathcal{W}_{\Sigma_A}[h^{(1)};\xi_A] = \int_{\Sigma_A}
-\omega\left( g^{(0)};
-h^{(1)},\mathcal{L}_{\xi_A}h^{(1)} \right).
+\mathcal{W}_{\Sigma_A}[h^{(1)};\xi_A] = \int_{\Sigma_A} \omega\left( g^{(0)}; h^{(1)},\mathcal{L}_{\xi_A}h^{(1)} \right).
 \end{align}$$
 
 Thus the local expression
@@ -112,9 +106,7 @@ The proposed interpretation is:
 The useful slogan is:
 
 $$\begin{align}
-\text{local representative} \quad\longrightarrow\quad
-\text{canonical energy} \quad\longrightarrow\quad
-\text{modular Hamiltonian}.
+\text{local representative} \quad\longrightarrow\quad \text{canonical energy} \quad\longrightarrow\quad \text{modular Hamiltonian}.
 \end{align}$$
 
 This keeps the local description as a calculational device while preserving the gauge-invariant meaning of the final charges.
