@@ -38,10 +38,7 @@ $$\begin{align}
 for $SU(3)$, a full column of height $3$ is trivial, so Young diagrams that differ by one such column describe the same irreducible representation. hence
 
 $$\begin{align}
-[5,1,1]\sim[4],\qquad
-[4,2,1]\sim[3,1],\qquad
-[3,3,1]\sim[2,2],\qquad
-[3,2,2]\sim[1].
+[5,1,1]\sim[4],\qquad [4,2,1]\sim[3,1],\qquad [3,3,1]\sim[2,2],\qquad [3,2,2]\sim[1].
 \end{align}$$
 
 thus the $SU(3)$ decomposition is
