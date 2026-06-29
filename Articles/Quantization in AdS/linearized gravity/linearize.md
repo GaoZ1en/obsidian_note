@@ -198,7 +198,7 @@ $$\begin{align}
 The unit normal covectors used in the surface decomposition are
 
 $$\begin{align}
-\tau _{\mu} & =\left(\sqrt{ 1+r^{2} },0,0\right) \\
+\tau _{\mu} & =\left(-\sqrt{ 1+r^{2} },0,0\right) \\
 n_{\mu} & =\left(0,\frac{1}{\sqrt{ 1+r^{2} }},0\right)
 \end{align}$$
 

@@ -222,8 +222,7 @@ h^{\mathrm{prim}}_{\mu\nu} &=A\xi _{1,\mu}\xi _{1,\nu}.
 The descendant module is
 
 $$\begin{align}
-h^{(+)}_{\mu\nu} &= \sum _{m,n\geq 0}c_{mn} \mathcal{L}_{\xi _{-1}}^{m} \mathcal{L}_{\bar{\xi}_{-1}}^{n}
-h^{\mathrm{prim}}_{\mu\nu}.
+h^{(+)}_{\mu\nu} &= \sum _{m,n\geq 0}c_{mn} \mathcal{L}_{\xi _{-1}}^{m} \mathcal{L}_{\bar{\xi}_{-1}}^{n} h^{\mathrm{prim}}_{\mu\nu}.
 \end{align}$$
 
 similarly for
@@ -297,13 +296,11 @@ F(z) & =\sum _{n=0}^{\infty}c_{n}z^{n}, \\
 The primary generator is obtained from $\displaystyle{F(z)=1}$,
 
 $$\begin{align}
-\bar{h}^{\mathrm{prim}}_{\mu\nu} &= \frac{e^{-4it}}{(1+r^{2})^{2}}
-\bar{\xi}_{1,\mu}\bar{\xi}_{1,\nu}.
+\bar{h}^{\mathrm{prim}}_{\mu\nu} &= \frac{e^{-4it}}{(1+r^{2})^{2}} \bar{\xi}_{1,\mu}\bar{\xi}_{1,\nu}.
 \end{align}$$
 
 The corresponding descendant module is
 
 $$\begin{align}
-h^{(-)}_{\mu\nu} &= \sum _{m,n\geq 0}\bar{c}_{mn} \mathcal{L}_{\bar{\xi}_{-1}}^{m} \mathcal{L}_{\xi _{-1}}^{n}
-\bar{h}^{\mathrm{prim}}_{\mu\nu}.
+h^{(-)}_{\mu\nu} &= \sum _{m,n\geq 0}\bar{c}_{mn} \mathcal{L}_{\bar{\xi}_{-1}}^{m} \mathcal{L}_{\xi _{-1}}^{n} \bar{h}^{\mathrm{prim}}_{\mu\nu}.
 \end{align}$$
