@@ -872,7 +872,7 @@ K_{S^{1}}(s) & =\int ^{\beta}_{0}\mathrm{d}\tau\,\mathrm{tr}\,K^{S^{1}}(s;\tau,\
  & =\beta\sum _{\ell\in\mathbb{Z}}\int _{-\infty}^{\infty}\frac{\mathrm{d}p}{2\pi}e^{-ip\ell\beta}\left(e^{-s\Lambda _{+}(p)}+e^{-s\Lambda _{-}(p)}\right).
 \end{align}$$
 
-the partition function of the mixed system is formally
+the partition function is formally
 
 $$\begin{align}
 \ln Z_{\mathrm{mixed}} & =\frac{1}{2}\int ^{\infty}_{0}\frac{\mathrm{d}s}{s}K_{S^{1}}(s) \\

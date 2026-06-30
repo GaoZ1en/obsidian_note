@@ -26,8 +26,7 @@ here $\displaystyle{a,b}$ denote gauge indices, $\displaystyle{i,j}$ denote flav
 write
 
 $$\begin{align}
-T^{a}T^{a}=C_{2}(R)\mathbb{I}, \qquad
-I_{\Lambda}:=\int ^{\Lambda}\frac{\mathrm{d}^{4}p_{E}}{(2\pi)^{4}}\frac{1}{p_{E}^{2}}=\frac{\Lambda ^{2}}{16\pi ^{2}}.
+T^{a}T^{a}=C_{2}(R)\mathbb{I}, \qquad I_{\Lambda}:=\int ^{\Lambda}\frac{\mathrm{d}^{4}p_{E}}{(2\pi)^{4}}\frac{1}{p_{E}^{2}}=\frac{\Lambda ^{2}}{16\pi ^{2}}.
 \end{align}$$
 
 For a squark in the fundamental representation, $C_{2}(R)=C_{F}$, and with the standard normalization $\operatorname{tr}(T^{a}T^{b})=\frac{1}{2}\delta ^{ab}$,
@@ -39,9 +38,7 @@ C_{F}=\frac{N_{c}^{2}-1}{2N_{c}}.
 we only keep the quadratically divergent part. the external momentum and all masses are set to zero, so logarithmically divergent and finite terms are not tracked. the common factor $I_{\Lambda}$ is written after the Wick rotation,
 
 $$\begin{align}
-\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{i}{p^{2}}
-\longrightarrow
-\int ^{\Lambda}\frac{\mathrm{d}^{4}p_{E}}{(2\pi)^{4}}\frac{1}{p_{E}^{2}} =I_{\Lambda}.
+\int ^{\Lambda}\frac{\mathrm{d}^{4}p}{(2\pi)^{4}}\frac{i}{p^{2}} \longrightarrow \int ^{\Lambda}\frac{\mathrm{d}^{4}p_{E}}{(2\pi)^{4}}\frac{1}{p_{E}^{2}} =I_{\Lambda}.
 \end{align}$$
 
 ### squark loop
@@ -111,8 +108,7 @@ $$\begin{align}
 For the seagull diagram, the two internal gauge fields are contracted at the same vertex, so there is a symmetry factor $\frac{1}{2}$. Using
 
 $$\begin{align}
-\delta ^{ab}\{T^{a},T^{b}\}=2T^{a}T^{a}=2C_{2}(R)\mathbb{I}, \qquad
-\eta _{\mu \nu}\eta ^{\mu \nu}=4,
+\delta ^{ab}\{T^{a},T^{b}\}=2T^{a}T^{a}=2C_{2}(R)\mathbb{I}, \qquad \eta _{\mu \nu}\eta ^{\mu \nu}=4,
 \end{align}$$
 
 we get
