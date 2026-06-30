@@ -1,5 +1,5 @@
 {
-  "refreshIntervalSeconds": 45,
+  "refreshIntervalSeconds": 600,
   "timeoutMs": 6000,
   "services": [
     {

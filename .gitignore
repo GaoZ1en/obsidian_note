@@ -4,6 +4,10 @@
 # Ignore attachments and media files
 /Attachments/
 /Literature Notes/articles/
+/**/*.jpg
+/**/*.jpeg
+/**/*.JPG
+/**/*.JPEG
 
 # Ignore json data files
 /**/*.json
