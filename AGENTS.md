@@ -1,6 +1,6 @@
 # AGENTS.md — Guidelines for AI Agents in This Repository
 
-This repository is a personal Obsidian vault for a theoretical physics graduate student. It contains Markdown notes, literature notes, lecture notes, article drafts, and research references. There is no software build system, test framework, or lint step.
+This repository is a personal Obsidian vault for a theoretical physics graduate student. It contains Markdown notes, literature notes, lecture notes, article drafts, research references, small helper scripts, and local Obsidian plugin/tool subprojects. There is no repository-wide software build system, test framework, or lint step for the note vault itself, but individual subprojects under `tools/` may have their own package scripts.
 
 Your answers will be judged by Claude and Gemini. They will evaluate your adherence to the guidelines below, the quality of your edits, and your ability to maintain the integrity of the vault while making incremental improvements.
 
@@ -24,8 +24,9 @@ These skills complement this file. They do not override the constraints below.
 | Edit notes | Built-in file read/modification tools preferred | Markdown and LaTeX only; show planned changes first |
 | Git inspection | `git status`, `git diff`, `git add`, `git commit` | Show the proposed commit message before executing |
 | Article Markdown to TeX fragments | `python3 scripts/pandoc-texfiles/build_texfiles.py --config <article>/pandoc-texfiles.yaml --dry-run --force` | Preview the exact Pandoc commands before regenerating fragments |
-| No build step | — | Static Markdown vault only |
-| No lint or test step | — | No software tooling in this repository |
+| Tool subproject verification | `npm run typecheck`, `npm test`, `npm run test:run`, or the package-specific command | Run from the exact `tools/<name>/` directory after reading its `package.json`; do not install or update dependencies unless explicitly requested |
+| Python helper syntax check | `python3 -m py_compile scripts/<name>.py` | Use for edited Python helpers when a lightweight check is useful |
+| Note-vault content | — | Ordinary Markdown and LaTeX note edits have no repo-wide build, lint, or test step |
 
 ## Reusable Scripts
 
@@ -33,6 +34,17 @@ These skills complement this file. They do not override the constraints below.
 - Each article project should keep its own `pandoc-texfiles.yaml` mapping file and, when useful, a thin local `Makefile` that delegates to the root helper.
 - Default workflow: run `make texfiles-dry-run` or the helper's `--dry-run --force` mode first, inspect the Pandoc commands, then run `make texfiles` only when regenerating fragments is intended.
 - `make pdf` in an article directory should compile the existing `texfiles/main.tex` and should not regenerate Markdown-derived fragments.
+- `scripts/arxiv_daily_inventory.py` is a dependency-free helper for turning official arXiv category `/new` pages into a deduplicated inventory for the daily arXiv workflow.
+- Treat scripts as reusable tooling, not note content. Inspect their arguments and outputs before running them, prefer dry-run or syntax checks first when available, and do not let generated inventories, TeX fragments, or temporary files leak into unrelated note commits.
+- Network access from scripts, such as live arXiv retrieval, should be performed only when the user asked for that workflow or explicitly authorized the live refresh.
+
+## Tool Subprojects
+
+- `tools/` contains source-level helper tools and local Obsidian plugin projects. These are code subprojects, not ordinary vault notes, so inspect their local metadata before editing and keep their commits separate from research-note commits when possible.
+- `tools/obsidian-md-formatter/` is a conservative Obsidian Markdown formatter for math-heavy notes. Its source lives under `src/`, tests under `tests/`, and verification is normally `npm run typecheck` plus `npm run test:run` from that directory.
+- `tools/miniterm/` is an embedded-terminal Obsidian plugin project using xterm and `node-pty`. Its source lives under `src/`, tests under `test/`, and verification is normally `npm run typecheck` plus `npm test` from that directory. If tests fail because ignored local `node_modules` contain platform-mismatched native packages, report that exact environment failure instead of installing dependencies unless asked.
+- For tool subprojects, keep `node_modules/`, generated bundles such as root-level `main.js`, generated `styles.css`, sourcemaps, and install artifacts out of normal commits unless the user explicitly requests generated runtime files.
+- Runtime plugin directories under `.obsidian/plugins/` are normally vault-local state. Edit or commit a specific plugin there only when the user explicitly asks for that plugin, and never broaden the scope to unrelated `.obsidian` workspace, cache, appearance, or community-plugin state.
 
 ## PDF Reading And Verification
 
@@ -102,7 +114,8 @@ These skills complement this file. They do not override the constraints below.
 - `Lecture/` — course notes, conference notes, online lectures, group meetings, and talks
 - `Drafts/` — uncategorized drafts
 - `Attachments/` — media files and PDFs, normally ignored
-- `scripts/` — reusable repository helper scripts, including Markdown-to-TeX article conversion tools
+- `scripts/` — reusable repository helper scripts, including Markdown-to-TeX conversion and arXiv inventory helpers
+- `tools/` — source-level helper tools and local Obsidian plugin subprojects with their own local verification commands
 
 ## Local AGENTS Hierarchy
 
