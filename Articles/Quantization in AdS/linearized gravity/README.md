@@ -21,6 +21,7 @@ Linearized-gravity notes for the AdS3 quantization project. The directory contai
 |---|---|
 | `Noether charge.md` | Perturbative Noether charge formulas for linearized gravity and their variations. |
 | `reconsider the Noether charge.md` | Refined charge-variation analysis for Virasoro brackets in the TT sector. |
+| `Euclidean correlation function of boundary stress tensor.md` | Mode-sum calculation of the Euclidean boundary stress-tensor two-point function from Brown-York images of the normalized Brown-Henneaux modes. |
 | `Virasoro algebra.md` | Asymptotic Killing vectors, charge brackets, and the Virasoro algebra. |
 | `Kac-Moody algebra.md` | Large-gauge mode charges and their Kac-Moody-type brackets. |
 
