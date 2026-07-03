@@ -332,7 +332,120 @@ S_{\xi,k,0}^{\mu\nu}
 -\nabla^{(0)\nu]}k\right).
 \end{align}$$
 
-The notation \(\mathcal{H}_{\xi,\mathrm{tr}}^{[0]\mu}\) records the truncation. Since \(X_{\xi}^{[-1]}\) lowers the \(\kappa\)-order by one, the full finite charge can also receive \(X_{\xi}^{[-1]}\)-contributions from the \(O(\kappa)\) action. Those terms are outside the present \(S^{[-2]}+S^{[-1]}+S^{[0]}\) truncation.
+The notation \(\mathcal{H}_{\xi,\mathrm{tr}}^{[0]\mu}\) records the truncation. Since \(X_{\xi}^{[-1]}\) lowers the \(\kappa\)-order by one, the full finite charge can also receive \(X_{\xi}^{[-1]}\)-contributions from the \(O(\kappa)\) action. The selected contribution of this type is computed next.
+
+## The selected \(S^{[1]}\) contribution
+
+To isolate the contribution lowered by \(X_{\xi}^{[-1]}\), extend the metric expansion by one order,
+
+$$\begin{align}
+g_{\mu\nu}
+&=g^{(0)}_{\mu\nu}+\kappa h_{\mu\nu}
++\kappa^2 k_{\mu\nu}+\kappa^3\ell_{\mu\nu}
++O(\kappa^4),
+\end{align}$$
+
+and write
+
+$$\begin{align}
+S[g,\phi]
+&=\frac{1}{\kappa^2}S^{[-2]}
++\frac{1}{\kappa}S^{[-1]}
++S^{[0]}
++\kappa S^{[1]}
++O(\kappa^2).
+\end{align}$$
+
+The \(S^{[1]}\) coefficient contains the gravitational terms cubic in \(h\), bilinear in \(h\) and \(k\), linear in \(\ell\), and the metric coupling \(\frac{1}{2}\int\sqrt{-g^{(0)}}\,h_{\mu\nu}T_{(\varphi)}^{\mu\nu}\). For the finite charge only the following selected contraction is needed:
+
+$$\begin{align}
+X_{\xi}^{[-1]}\cdot\delta S^{[1]}
+&=\int_M\mathrm{d}^3x\sqrt{-g^{(0)}}\,
+E^{[1,h]\mu\nu}\mathcal{L}_{\xi}g^{(0)}_{\mu\nu}\\
+&\quad+\int_{\Sigma_f-\Sigma_i}
+\mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu
+\Theta_{h}^{[1]\mu}\!\left[\mathcal{L}_{\xi}g^{(0)}\right].
+\end{align}$$
+
+No equation of motion or gauge condition is used here. Diffeomorphism covariance of the full action fixes this term together with the homogeneous variation of \(S^{[0]}\):
+
+$$\begin{align}
+X_{\xi}^{[-1]}\cdot\delta S^{[1]}
++X_{\xi}^{[0]}\cdot\delta S^{[0]}
+&=\alpha_{\xi}^{[0]}\big|_{\Sigma_f}
+-\alpha_{\xi}^{[0]}\big|_{\Sigma_i}.
+\end{align}$$
+
+Thus the finite charge receives the additional local current
+
+$$\begin{align}
+\Delta\mathcal{H}_{\xi,\mathrm{inh}}^{[0]\mu}
+&=\Theta_{h}^{[1]\mu}\!\left[\mathcal{L}_{\xi}g^{(0)}\right].
+\end{align}$$
+
+The corresponding surface tensor is most compactly obtained by comparing with the \(\kappa^0\) coefficient of the full Iyer-Wald potential. With the same orientation convention as \(S_{\xi}^{[-1]}\),
+
+$$\begin{align}
+S_{\xi,\mathrm{IW}}^{[0]\mu\nu}
+&=\frac{1}{2}\left(
+A_{\xi}^{(1)\mu\nu}[k]
++A_{\xi}^{(2)\mu\nu}[h,h]
++\frac{1}{2}hA_{\xi}^{(1)\mu\nu}[h]
++\left(\frac{1}{2}k+s_2\right)A_{\xi}^{(0)\mu\nu}
+\right),
+\end{align}$$
+
+where
+
+$$\begin{align}
+A_{\xi}^{(2)\mu\nu}[h,h]
+&=h^{\mu}{}_{\rho}h^{\rho\sigma}
+\nabla^{(0)}_{\sigma}\xi^{\nu}
+-h^{\nu}{}_{\rho}h^{\rho\sigma}
+\nabla^{(0)}_{\sigma}\xi^{\mu}\\
+&\quad+\xi^{\lambda}\left[
+h^{\mu\rho}\left(
+\nabla^{(0)\nu}h_{\rho\lambda}
+-\nabla^{(0)}_{\rho}h^{\nu}{}_{\lambda}
+\right)\right.\\
+&\qquad\left.
+-h^{\nu\rho}\left(
+\nabla^{(0)\mu}h_{\rho\lambda}
+-\nabla^{(0)}_{\rho}h^{\mu}{}_{\lambda}
+\right)\right],\\
+s_2&=-\frac{1}{4}h_{\rho\sigma}h^{\rho\sigma}
++\frac{1}{8}h^2.
+\end{align}$$
+
+The identities
+
+$$\begin{align}
+D_{1,\xi}^{[\mu\nu]}&=\frac{1}{2}A_{\xi}^{(1)\mu\nu}[h],\\
+D_{2,\xi}^{[\mu\nu]}&=\frac{1}{2}A_{\xi}^{(2)\mu\nu}[h,h],\\
+S_{\xi,k}^{\mu\nu}
+&=\frac{1}{2}A_{\xi}^{(1)\mu\nu}[k]
++\frac{1}{4}kA_{\xi}^{(0)\mu\nu}
+\end{align}$$
+
+give the selected \(S^{[1]}\) surface correction
+
+$$\begin{align}
+S_{\xi,\mathrm{inh}}^{[0]\mu\nu}
+&:=S_{\xi,\mathrm{IW}}^{[0]\mu\nu}
+-\left(S_{\xi,h}^{\mu\nu}+S_{\xi,k}^{\mu\nu}\right)\\
+&=\frac{1}{2}A_{\xi}^{(2)\mu\nu}[h,h]
+-D_{2,\xi}^{[\mu\nu]}
+=0.
+\end{align}$$
+
+Thus this selected inhomogeneous contraction changes the local finite current but adds no antisymmetric surface tensor. The finite surface charge remains
+
+$$\begin{align}
+H_{\xi}^{[0]}
+&=H_{\xi,\mathrm{tr}}^{[0]}.
+\end{align}$$
+
+The scalar coupling in \(S^{[1]}\) contributes to the bulk \(E^{[1,h]\mu\nu}\mathcal{L}_{\xi}g^{(0)}_{\mu\nu}\) term but adds no antisymmetric surface tensor, because it contains no derivative of \(h_{\mu\nu}\).
 
 ## Using the constraints
 
@@ -365,7 +478,7 @@ H_{\xi}
 +\nabla^{(0)}_{\nu}
 \left(S_{\xi,h}^{\mu\nu}+S_{\xi,k,0}^{\mu\nu}\right)
 \right]
-+O(\kappa)_{\mathrm{tr}}.
++O(\kappa).
 \end{align}$$
 
 For a background Killing vector, the contracted linearized Einstein tensor is a divergence,
@@ -396,17 +509,17 @@ S_{\xi,k}^{\mu\nu}
 -k^{\rho[\mu}\nabla^{(0)}_{\rho}\xi^{\nu]},
 \end{align}$$
 
-the truncated on-constraint bulk charge is
+the on-constraint bulk charge with the selected inhomogeneous contribution is
 
 $$\begin{align}
 H_{\xi}
 &=\frac{1}{\kappa}H_{\xi}^{[-1]}
-+H_{\xi,\mathrm{tr}}^{[0]}
-+O(\kappa)_{\mathrm{tr}},\\
++H_{\xi}^{[0]}
++O(\kappa),\\
 H_{\xi}^{[-1]}
 &=\int_{\partial\Sigma}\mathrm{d}x\sqrt{h^{(0)}}\,
 \tau_{\mu}^{(0)}n_{\nu}^{(0)}S_{\xi}^{[-1]\nu\mu},\\
-H_{\xi,\mathrm{tr}}^{[0]}
+H_{\xi}^{[0]}
 &=\int_{\partial\Sigma}\mathrm{d}x\sqrt{h^{(0)}}\,
 \tau_{\mu}^{(0)}n_{\nu}^{(0)}
 \left(S_{\xi,h}^{\nu\mu}+S_{\xi,k}^{\nu\mu}\right).
@@ -430,10 +543,10 @@ H_{\xi,T}^{[0]}
 
 The leading term \(H_{\xi}^{[-1]}\) is the bulk counterpart of the Brown-York linear charge \(H_{\xi,T}^{[-1]}\). It is absent if one starts directly from the finite action \(S^{[0]}\) and uses only the homogeneous transformation \(X_\xi h=\mathcal{L}_{\xi}h\).
 
-At finite order, the comparison performed in `boundary charge.md` is the comparison of \(H_{\xi,\mathrm{tr}}^{[0]}\) with \(H_{\xi,T}^{[0]}\). In the near-FG notation of that file,
+At finite order, the selected inhomogeneous \(S^{[1]}\) contraction gives no additional surface tensor. The comparison remains the finite-part comparison in `boundary charge.md`:
 
 $$\begin{align}
-H_{\xi,\mathrm{tr}}^{[0]}-H_{\xi,T}^{[0]}
+H_{\xi}^{[0]}-H_{\xi,T}^{[0]}
 &=-\int_{\partial\Sigma}\mathrm{d}x\sqrt{q^{(0)}}\,
 \tau^{(0)a}\Delta_{\xi,a},\\
 \Delta_{\xi,a}
@@ -446,15 +559,16 @@ Therefore the comparison should be organized as two separate statements:
 
 $$\begin{align}
 H_{\xi}^{[-1]}&\leftrightarrow H_{\xi,T}^{[-1]},\\
-H_{\xi,\mathrm{tr}}^{[0]}&\leftrightarrow H_{\xi,T}^{[0]}.
+H_{\xi}^{[0]}&\leftrightarrow H_{\xi,T}^{[0]}.
 \end{align}$$
 
-The inhomogeneous term in \(X_\xi h\) supplies the first line. The second line is a finite-part statement involving the radial boundary data and possible boundary improvements. Within the action truncated at \(O(\kappa^0)\), this is the remaining comparison captured by \(\Delta_{\xi,a}\).
+The inhomogeneous term in \(X_\xi h\) supplies the first line. The selected \(S^{[1]}\) contraction does not shift the finite surface tensor. The second line is a finite-part statement involving the radial boundary data and possible boundary improvements, captured by \(\Delta_{\xi,a}\).
 
 ## Status
 
 - The action expansion, equations of motion, and symplectic potentials are taken from `scalar charge matching.md` with the additional \(S^{[-1]}\) potential made explicit.
 - The leading surface tensor \(S_{\xi}^{[-1]}\) is the \(\kappa\)-rescaled \(Q_{\xi}^{(1)}\) from `../linearized gravity/reconsider the Noether charge.md`.
 - No equation of motion or gauge condition is used in the off-shell computation of \(X_\xi\cdot\delta S\).
+- The selected \(S^{[1]}\) contribution from \(X_{\xi}^{[-1]}h=\mathcal{L}_{\xi}g^{(0)}\) has \(S_{\xi,\mathrm{inh}}^{[0]\mu\nu}=\frac{1}{2}A_{\xi}^{(2)\mu\nu}[h,h]-D_{2,\xi}^{[\mu\nu]}=0\), so it adds no finite antisymmetric surface tensor.
 - The constraints from `perturbation.md` are used only after the off-shell charge density has been organized by \(\kappa\)-order.
-- The full finite \(O(\kappa^0)\) charge may receive contributions from the \(O(\kappa)\) action through \(X_\xi^{[-1]}\). Those terms are outside the truncation specified here.
+- The scalar part of this selected \(S^{[1]}\) contraction has no antisymmetric surface tensor; it contributes only to the bulk term before the constraint/improvement rearrangement.
