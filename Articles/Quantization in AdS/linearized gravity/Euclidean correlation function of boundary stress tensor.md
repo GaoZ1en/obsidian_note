@@ -128,7 +128,7 @@ Thus the annihilation-creation contractions selected by Euclidean time ordering 
 Define the Euclidean two-point function by analytic continuation of the Lorentzian vacuum correlator:
 
 $$\begin{align}
-G_{TT}^{E}(w_1,w_2) &=\langle 0|\mathcal{T}_{\tau}T(w_1)T(w_2)|0\rangle.
+G_{TT}^{E}(w_1,w_2) &=\langle 0|\mathcal{T}T(w_1)T(w_2)|0\rangle.
 \end{align}$$
 
 For $\tau_1>\tau_2$,
@@ -166,7 +166,9 @@ G_{T\bar T}^{E}(w_1,\bar w_2)&=0.
 Equivalently, with $c=3/(2G)$,
 
 $$\begin{align}
-G_{TT}^{E}(w_1,w_2) &=\frac{c}{32}\frac{1}{\sin^4\left(\frac{w_1-w_2}{2}\right)}.
+G_{TT}^{E}(w_1,w_2) &=\langle 0|\mathcal{T}T(w_1)T(w_2)|0\rangle \\
+ &=\frac{c}{32}\frac{1}{\sin^4\left(\frac{w_1-w_2}{2}\right)} \\
+w & =i\tau+\phi
 \end{align}$$
 
 The formula gives the non-coincident Euclidean two-point function in the tensorial Brown-York continuation convention used above. Local contact terms are fixed by the chosen renormalized Euclidean action and stress-tensor convention.

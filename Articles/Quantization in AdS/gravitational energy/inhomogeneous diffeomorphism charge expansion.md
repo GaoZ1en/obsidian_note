@@ -342,10 +342,115 @@ $$\begin{align}
 g_{\mu\nu}
 &=g^{(0)}_{\mu\nu}+\kappa h_{\mu\nu}
 +\kappa^2 k_{\mu\nu}+\kappa^3\ell_{\mu\nu}
-+O(\kappa^4),
++O(\kappa^4),\\
+\phi&=\varphi+\kappa\psi+O(\kappa^2).
 \end{align}$$
 
-and write
+The gravitational density has the ordered form
+
+$$\begin{align}
+\sqrt{-g}(R+2)
+&=\sqrt{-g^{(0)}}\left[
+\mathcal L_g^{(0)}
++\kappa\mathcal L_g^{(1)}[h]\right.\\
+&\quad+\kappa^2\left(
+\mathcal L_g^{(1)}[k]+\mathcal L_g^{(2)}[h]
+\right)\\
+&\quad\left.
++\kappa^3\left(
+\mathcal L_g^{(1)}[\ell]
++2\mathcal L_g^{(2)}[h,k]
++\mathcal L_g^{(3)}[h]
+\right)\right]+O(\kappa^4),
+\end{align}$$
+
+where the bilinear term is the polarization of the quadratic density,
+
+$$\begin{align}
+\mathcal L_g^{(2)}[h,k]
+&:=\frac{1}{2}\left(
+\mathcal L_g^{(2)}[h+k]
+-\mathcal L_g^{(2)}[h]
+-\mathcal L_g^{(2)}[k]\right),
+\end{align}$$
+
+The cubic density is written compactly as follows. Define
+
+$$\begin{align}
+v_1[h]&=\frac{1}{2}h,\\
+v_2[h]&=\frac{1}{8}h^2-\frac{1}{4}h_{\rho\sigma}h^{\rho\sigma},\\
+v_3[h]&=\frac{1}{48}h^3-\frac{1}{8}h\,h_{\rho\sigma}h^{\rho\sigma}
++\frac{1}{6}h_{\mu}{}^{\nu}h_{\nu}{}^{\rho}h_{\rho}{}^{\mu}.
+\end{align}$$
+
+For the pure \(h\)-expansion, write the connection perturbations
+
+$$\begin{align}
+C_1[h]^{\rho}{}_{\mu\nu}
+&=\frac{1}{2}\left(
+\nabla^{(0)}_{\mu}h^{\rho}{}_{\nu}
++\nabla^{(0)}_{\nu}h^{\rho}{}_{\mu}
+-\nabla^{(0)\rho}h_{\mu\nu}\right),\\
+C_2[h]^{\rho}{}_{\mu\nu}
+&=-\frac{1}{2}h^{\rho\sigma}\left(
+\nabla^{(0)}_{\mu}h_{\sigma\nu}
++\nabla^{(0)}_{\nu}h_{\mu\sigma}
+-\nabla^{(0)}_{\sigma}h_{\mu\nu}\right),\\
+C_3[h]^{\rho}{}_{\mu\nu}
+&=\frac{1}{2}h^{\rho}{}_{\lambda}h^{\lambda\sigma}\left(
+\nabla^{(0)}_{\mu}h_{\sigma\nu}
++\nabla^{(0)}_{\nu}h_{\mu\sigma}
+-\nabla^{(0)}_{\sigma}h_{\mu\nu}\right).
+\end{align}$$
+
+The corresponding Ricci perturbations are
+
+$$\begin{align}
+R^{(1)}_{\mu\nu}[h]
+&=\nabla^{(0)}_{\rho}C_1[h]^{\rho}{}_{\mu\nu}
+-\nabla^{(0)}_{\nu}C_1[h]^{\rho}{}_{\mu\rho},\\
+R^{(2)}_{\mu\nu}[h,h]
+&=\nabla^{(0)}_{\rho}C_2[h]^{\rho}{}_{\mu\nu}
+-\nabla^{(0)}_{\nu}C_2[h]^{\rho}{}_{\mu\rho}\\
+&\quad+C_1[h]^{\rho}{}_{\rho\lambda}C_1[h]^{\lambda}{}_{\mu\nu}
+-C_1[h]^{\rho}{}_{\nu\lambda}C_1[h]^{\lambda}{}_{\mu\rho},\\
+R^{(3)}_{\mu\nu}[h,h,h]
+&=\nabla^{(0)}_{\rho}C_3[h]^{\rho}{}_{\mu\nu}
+-\nabla^{(0)}_{\nu}C_3[h]^{\rho}{}_{\mu\rho}\\
+&\quad+C_1[h]^{\rho}{}_{\rho\lambda}C_2[h]^{\lambda}{}_{\mu\nu}
++C_2[h]^{\rho}{}_{\rho\lambda}C_1[h]^{\lambda}{}_{\mu\nu}\\
+&\quad-C_1[h]^{\rho}{}_{\nu\lambda}C_2[h]^{\lambda}{}_{\mu\rho}
+-C_2[h]^{\rho}{}_{\nu\lambda}C_1[h]^{\lambda}{}_{\mu\rho}.
+\end{align}$$
+
+Their scalar contractions are
+
+$$\begin{align}
+\mathcal R^{(1)}[h]
+&=g^{(0)\mu\nu}R^{(1)}_{\mu\nu}[h]
+-h^{\mu\nu}R^{(0)}_{\mu\nu},\\
+\mathcal R^{(2)}[h,h]
+&=g^{(0)\mu\nu}R^{(2)}_{\mu\nu}[h,h]
+-h^{\mu\nu}R^{(1)}_{\mu\nu}[h]
++h^{\mu}{}_{\rho}h^{\rho\nu}R^{(0)}_{\mu\nu},\\
+\mathcal R^{(3)}[h,h,h]
+&=g^{(0)\mu\nu}R^{(3)}_{\mu\nu}[h,h,h]
+-h^{\mu\nu}R^{(2)}_{\mu\nu}[h,h]\\
+&\quad+h^{\mu}{}_{\rho}h^{\rho\nu}R^{(1)}_{\mu\nu}[h]
+-h^{\mu}{}_{\rho}h^{\rho}{}_{\sigma}h^{\sigma\nu}R^{(0)}_{\mu\nu}.
+\end{align}$$
+
+Then
+
+$$\begin{align}
+\mathcal L_g^{(3)}[h]
+&=\mathcal R^{(3)}[h,h,h]
++v_1[h]\mathcal R^{(2)}[h,h]
++v_2[h]\mathcal R^{(1)}[h]
+-4v_3[h].
+\end{align}$$
+
+Thus
 
 $$\begin{align}
 S[g,\phi]
@@ -353,21 +458,109 @@ S[g,\phi]
 +\frac{1}{\kappa}S^{[-1]}
 +S^{[0]}
 +\kappa S^{[1]}
-+O(\kappa^2).
++O(\kappa^2),\\
+S^{[1]}
+&=\frac{1}{2}\int_M\mathrm{d}^3x\sqrt{-g^{(0)}}\,
+\left(
+\mathcal L_g^{(1)}[\ell]
++2\mathcal L_g^{(2)}[h,k]
++\mathcal L_g^{(3)}[h]\right)\\
+&\quad-\int_M\mathrm{d}^3x\sqrt{-g^{(0)}}\,
+\left(\nabla^{(0)}_{\mu}\varphi\nabla^{(0)\mu}\psi
++m^2\varphi\psi\right)\\
+&\quad+\frac{1}{2}\int_M\mathrm{d}^3x\sqrt{-g^{(0)}}\,
+h_{\mu\nu}T_{(\varphi)}^{\mu\nu},
 \end{align}$$
 
-The \(S^{[1]}\) coefficient contains the gravitational terms cubic in \(h\), bilinear in \(h\) and \(k\), linear in \(\ell\), and the metric coupling \(\frac{1}{2}\int\sqrt{-g^{(0)}}\,h_{\mu\nu}T_{(\varphi)}^{\mu\nu}\). For the finite charge only the following selected contraction is needed:
+with \(T_{(\varphi)}^{\mu\nu}\) defined above. The \(\psi\)-dependent term contributes to the scalar equations and symplectic potential, but it is not hit by \(X_{\xi}^{[-1]}\). For the selected contribution,
+
+$$\begin{align}
+X_{\xi}^{[-1]}\cdot\delta h_{\mu\nu}
+&=\mathcal L_{\xi}g^{(0)}_{\mu\nu},&
+X_{\xi}^{[-1]}\cdot\delta k_{\mu\nu}
+&=0,&
+X_{\xi}^{[-1]}\cdot\delta\ell_{\mu\nu}&=0,\\
+X_{\xi}^{[-1]}\cdot\delta\varphi&=0,&
+X_{\xi}^{[-1]}\cdot\delta\psi&=0.
+\end{align}$$
+
+Write the \(S^{[1]}\) variation as
+
+$$\begin{align}
+\delta S^{[1]}
+&=\int_M\mathrm{d}^3x\sqrt{-g^{(0)}}\,
+\left(
+E_{h}^{[1]\mu\nu}\delta h_{\mu\nu}
++E_{k}^{[1]\mu\nu}\delta k_{\mu\nu}
++E_{\ell}^{[1]\mu\nu}\delta\ell_{\mu\nu}\right.\\
+&\qquad\left.
++E_{\varphi}^{[1]}\delta\varphi
++E_{\psi}^{[1]}\delta\psi\right)
++\int_{\Sigma_f-\Sigma_i}
+\mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu
+\Theta^{[1]\mu}.
+\end{align}$$
+
+The gravitational part of \(\Theta^{[1]\mu}\) is the \(\kappa\)-coefficient of the full Einstein-Hilbert presymplectic potential, written with the background measure:
+
+$$\begin{align}
+\Theta_{\mathrm{EH}}^{\mu}[g;\delta g]
+&=-\frac{1}{2\kappa^2}
+\frac{\sqrt{-g}}{\sqrt{-g^{(0)}}}
+\left(g^{\alpha\beta}\delta\Gamma[g]^{\mu}{}_{\alpha\beta}
+-g^{\mu\alpha}\delta\Gamma[g]^{\beta}{}_{\alpha\beta}\right).
+\end{align}$$
+
+For the selected \(h\)-variation,
+
+$$\begin{align}
+\Theta_{h}^{[1]\mu}[\delta h]
+&:=\left[\kappa^1\right]\,
+\Theta_{\mathrm{EH}}^{\mu}
+\left[g;\delta g_{\mu\nu}=\kappa\,\delta h_{\mu\nu}\right],
+\end{align}$$
+
+where \([\kappa^1]\) means the coefficient of \(\kappa\) after inserting \(g=g^{(0)}+\kappa h+\kappa^2 k+\kappa^3\ell\). The scalar part of \(S^{[1]}\) contains no derivative of \(h_{\mu\nu}\), so it does not contribute to \(\Theta_h^{[1]\mu}[\delta h]\).
+
+The selected contraction is
 
 $$\begin{align}
 X_{\xi}^{[-1]}\cdot\delta S^{[1]}
 &=\int_M\mathrm{d}^3x\sqrt{-g^{(0)}}\,
-E^{[1,h]\mu\nu}\mathcal{L}_{\xi}g^{(0)}_{\mu\nu}\\
+E_{h}^{[1]\mu\nu}\mathcal{L}_{\xi}g^{(0)}_{\mu\nu}\\
 &\quad+\int_{\Sigma_f-\Sigma_i}
 \mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu
 \Theta_{h}^{[1]\mu}\!\left[\mathcal{L}_{\xi}g^{(0)}\right].
 \end{align}$$
 
-No equation of motion or gauge condition is used here. Diffeomorphism covariance of the full action fixes this term together with the homogeneous variation of \(S^{[0]}\):
+Here the matter part of the selected bulk coefficient is
+
+$$\begin{align}
+E_{h,\mathrm{matter}}^{[1]\mu\nu}
+&=\frac{1}{2}T_{(\varphi)}^{\mu\nu}.
+\end{align}$$
+
+With the sign convention \(E_h^{[0]\mu\nu}=-\frac{1}{2}\mathcal E^{(1)\mu\nu}[h]\), the selected bulk coefficient is
+
+$$\begin{align}
+E_h^{[1]\mu\nu}
+&=-\frac{1}{2}\left(
+\mathcal E^{(1)\mu\nu}[k]
++\mathcal E^{(2)\mu\nu}[h,h]
+-T_{(\varphi)}^{\mu\nu}\right).
+\end{align}$$
+
+This is the off-shell form of the second-order Einstein constraint; the constraint is not imposed in the selected contraction.
+
+The selected presymplectic form at this order is
+
+$$\begin{align}
+\Omega_{\xi,\mathrm{sel}}^{[1]}
+&=\int_{\Sigma}\mathrm{d}^2x\sqrt{\sigma^{(0)}}\,\tau_\mu\,
+\delta\Theta_{h}^{[1]\mu}\!\left[\mathcal L_{\xi}g^{(0)}\right],
+\end{align}$$
+
+where \(g^{(0)}\) and \(\xi\) are kept fixed in the field-space variation. No equation of motion or gauge condition is used here. Diffeomorphism covariance of the full action fixes this term together with the homogeneous variation of \(S^{[0]}\):
 
 $$\begin{align}
 X_{\xi}^{[-1]}\cdot\delta S^{[1]}
@@ -445,7 +638,7 @@ H_{\xi}^{[0]}
 &=H_{\xi,\mathrm{tr}}^{[0]}.
 \end{align}$$
 
-The scalar coupling in \(S^{[1]}\) contributes to the bulk \(E^{[1,h]\mu\nu}\mathcal{L}_{\xi}g^{(0)}_{\mu\nu}\) term but adds no antisymmetric surface tensor, because it contains no derivative of \(h_{\mu\nu}\).
+The scalar coupling in \(S^{[1]}\) contributes to the bulk \(E_h^{[1]\mu\nu}\mathcal{L}_{\xi}g^{(0)}_{\mu\nu}\) term but adds no antisymmetric surface tensor, because it contains no derivative of \(h_{\mu\nu}\).
 
 ## Using the constraints
 
@@ -568,6 +761,8 @@ The inhomogeneous term in \(X_\xi h\) supplies the first line. The selected \(S^
 
 - The action expansion, equations of motion, and symplectic potentials are taken from `scalar charge matching.md` with the additional \(S^{[-1]}\) potential made explicit.
 - The leading surface tensor \(S_{\xi}^{[-1]}\) is the \(\kappa\)-rescaled \(Q_{\xi}^{(1)}\) from `../linearized gravity/reconsider the Noether charge.md`.
+- The \(S^{[1]}\) action includes the explicit matter expansion with \(\phi=\varphi+\kappa\psi\), and \(\mathcal L_g^{(3)}[h]\) is defined by the connection and Ricci perturbations \(C_i[h]\), \(R^{(i)}_{\mu\nu}[h]\).
+- The selected \(S^{[1]}\) presymplectic potential \(\Theta_h^{[1]\mu}\) is the \(\kappa^1\) coefficient of the full Einstein-Hilbert Iyer-Wald potential evaluated on \(\delta g_{\mu\nu}=\kappa\delta h_{\mu\nu}\).
 - No equation of motion or gauge condition is used in the off-shell computation of \(X_\xi\cdot\delta S\).
 - The selected \(S^{[1]}\) contribution from \(X_{\xi}^{[-1]}h=\mathcal{L}_{\xi}g^{(0)}\) has \(S_{\xi,\mathrm{inh}}^{[0]\mu\nu}=\frac{1}{2}A_{\xi}^{(2)\mu\nu}[h,h]-D_{2,\xi}^{[\mu\nu]}=0\), so it adds no finite antisymmetric surface tensor.
 - The constraints from `perturbation.md` are used only after the off-shell charge density has been organized by \(\kappa\)-order.
