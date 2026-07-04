@@ -67,8 +67,7 @@ $$\begin{align}
 In Euclidean space $\mathbb{R}^n$, a norm is defined by
 
 $$\begin{align}
-\|x\| := \sqrt{(x^1)^2 + \cdots + (x^n)^2}, \qquad
-\forall x = (x^1, \dots, x^n) \in \mathbb{R}^n.
+\|x\| := \sqrt{(x^1)^2 + \cdots + (x^n)^2}, \qquad \forall x = (x^1, \dots, x^n) \in \mathbb{R}^n.
 \end{align}$$
 
 For any two points $x, y \in \mathbb{R}^n$, prove the Cauchy inequality
@@ -237,8 +236,7 @@ f_* [X, Y] = [f_* X, f_* Y].
 Let $M, N$ be differentiable manifolds and $f: M \to N$ a smooth map. For any differential forms $\omega, \xi \in \Omega^*(N)$ on $N$, prove the identities
 
 $$\begin{align}
-f^*(\omega \wedge \xi) = (f^* \omega) \wedge (f^* \xi), \qquad
-d(f^* \omega) = f^*(d\omega).
+f^*(\omega \wedge \xi) = (f^* \omega) \wedge (f^* \xi), \qquad d(f^* \omega) = f^*(d\omega).
 \end{align}$$
 
 ### 2.11

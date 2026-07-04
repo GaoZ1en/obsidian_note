@@ -343,8 +343,7 @@ u^i = 0 + t(x^i - 0) = \frac{x^i}{1 - x^n}, \qquad i = 1, \dots, n-1.
 The inverse map: given $u = (u^1, \dots, u^{n-1}) \in \mathbb{R}^{n-1}$, the corresponding point on $S^{n-1}$ is
 
 $$\begin{align}
-x^i = \frac{2u^i}{1 + \|u\|^2} \quad (i = 1, \dots, n-1), \qquad
-x^n = \frac{\|u\|^2 - 1}{\|u\|^2 + 1}.
+x^i = \frac{2u^i}{1 + \|u\|^2} \quad (i = 1, \dots, n-1), \qquad x^n = \frac{\|u\|^2 - 1}{\|u\|^2 + 1}.
 \end{align}$$
 
 **From the south pole** $S = (0, \dots, 0, -1)$:
@@ -358,8 +357,7 @@ v^i = \frac{x^i}{1 + x^n}, \qquad i = 1, \dots, n-1.
 Inverse:
 
 $$\begin{align}
-x^i = \frac{2v^i}{1 + \|v\|^2} \quad (i = 1, \dots, n-1), \qquad
-x^n = \frac{1 - \|v\|^2}{1 + \|v\|^2}.
+x^i = \frac{2v^i}{1 + \|v\|^2} \quad (i = 1, \dots, n-1), \qquad x^n = \frac{1 - \|v\|^2}{1 + \|v\|^2}.
 \end{align}$$
 
 Together, the two charts $(S^{n-1} \setminus \{N\}, \varphi_N)$ and $(S^{n-1} \setminus \{S\}, \varphi_S)$ form an atlas for $S^{n-1}$.
@@ -558,8 +556,7 @@ We need to verify the vector bundle structure:
 1. **Local trivialization**: For a coordinate chart $(U, \varphi = (x^1, \dots, x^n))$ on $M$, the tangent vectors on $U$ can be expressed in the coordinate basis: every $v \in T_p M$ ($p \in U$) is uniquely $v = \sum_{\mu=1}^n v^\mu \frac{\partial}{\partial x^\mu}\big|_p$. The map:
 
 $$\begin{align}
-\psi_U: \pi^{-1}(U) \to U \times \mathbb{R}^n, \qquad
-   \Bigl(p, v^\mu \frac{\partial}{\partial x^\mu}\Big|_p\Bigr) \mapsto (p, (v^1, \dots, v^n))
+\psi_U: \pi^{-1}(U) \to U \times \mathbb{R}^n, \qquad \Bigl(p, v^\mu \frac{\partial}{\partial x^\mu}\Big|_p\Bigr) \mapsto (p, (v^1, \dots, v^n))
 \end{align}$$
 
    is a bijection, and $\psi_U$ composed with projection to $U$ equals $\pi$.
@@ -813,8 +810,7 @@ Thus $|\det U|^2 = 1$, and the transformation preserves the integration measure.
 In the $\widetilde{\delta H}$ basis, the formulas simplify because $U$ becomes the identity. To first order:
 
 $$\begin{align}
-\delta\lambda_i = \widetilde{\delta H}^i_i, \qquad
-\delta\Omega^j_k = \frac{\widetilde{\delta H}^j_k}{\lambda_k - \lambda_j} \;\; (j \neq k).
+\delta\lambda_i = \widetilde{\delta H}^i_i, \qquad \delta\Omega^j_k = \frac{\widetilde{\delta H}^j_k}{\lambda_k - \lambda_j} \;\; (j \neq k).
 \end{align}$$
 
 The Jacobian between $(\delta\lambda_i, \delta\Omega^j_k)_{j \neq k}$ and $\widetilde{\delta H}$ is diagonal: each $\delta\lambda_i$ picks up $\widetilde{\delta H}^i_i$ with coefficient 1, and each $\delta\Omega^j_k$ ($j \neq k$) picks up $\widetilde{\delta H}^j_k$ with coefficient $1/(\lambda_k - \lambda_j)$. The determinant of this linear transformation is:
@@ -871,8 +867,7 @@ $$\begin{align}
 The product $\delta^{\sigma(i)}_{\mu_i} \delta^{\nu_i}_{\tau(i)}$ summed over all indices gives $\delta^{\nu_i}_{\mu_{\sigma^{-1}(i)}}$ after contracting $\sigma$ and $\tau$. More directly, using the determinant representation:
 
 $$\begin{align}
-\epsilon_{\mu_1 \cdots \mu_m} = \det(\delta^i_{\mu_j}), \qquad
-\epsilon^{\nu_1 \cdots \nu_m} = \det(\delta^{\nu_i}_j).
+\epsilon_{\mu_1 \cdots \mu_m} = \det(\delta^i_{\mu_j}), \qquad \epsilon^{\nu_1 \cdots \nu_m} = \det(\delta^{\nu_i}_j).
 \end{align}$$
 
 Their product is $\det(\delta^i_{\mu_j}) \cdot \det(\delta^{\nu_i}_j) = \det\bigl(\sum_{k} \delta^i_{\mu_k} \delta^{\nu_k}_j\bigr) = \det(\delta^{\nu_j}_{\mu_i}) = \delta^{\nu_1 \cdots \nu_m}_{\mu_1 \cdots \mu_m}$, where we used $\det(AB) = \det A \cdot \det B$ and the fact that $\sum_{k} \delta^i_{\mu_k} \delta^{\nu_k}_j = \delta^{\nu_j}_{\mu_i}$ (treating $\mu_k$ and $\nu_k$ as dummy summed indices — this is the statement that the matrix product of the two matrices equals the matrix with entries $\delta^{\nu_j}_{\mu_i}$). $\square$
@@ -904,9 +899,7 @@ The wedge product $\alpha \wedge {*}\beta$ is an $m$-form. In local coordinates:
 
 $$\begin{aligned}
 \alpha \wedge {*}\beta &= \frac{1}{q!} \alpha_{\mu_1 \cdots \mu_q} dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q} \wedge \frac{\sqrt{|g|}}{q!\, (m-q)!} \beta^{\nu_1 \cdots \nu_q} \epsilon_{\nu_1 \cdots \nu_q \rho_1 \cdots \rho_{m-q}} dx^{\rho_1} \wedge \cdots \wedge dx^{\rho_{m-q}} \\
-&= \frac{\sqrt{|g|}}{(q!)^2 (m-q)!} \alpha_{\mu_1 \cdots \mu_q} \beta^{\nu_1 \cdots \nu_q}
-\epsilon_{\nu_1 \cdots \nu_q \rho_1 \cdots \rho_{m-q}}
-dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q} \wedge dx^{\rho_1} \wedge \cdots \wedge dx^{\rho_{m-q}}.
+&= \frac{\sqrt{|g|}}{(q!)^2 (m-q)!} \alpha_{\mu_1 \cdots \mu_q} \beta^{\nu_1 \cdots \nu_q} \epsilon_{\nu_1 \cdots \nu_q \rho_1 \cdots \rho_{m-q}} dx^{\mu_1} \wedge \cdots \wedge dx^{\mu_q} \wedge dx^{\rho_1} \wedge \cdots \wedge dx^{\rho_{m-q}}.
 \end{aligned}$$
 
 The $m$-form $dx^{\mu_1} \wedge \cdots \wedge dx^{\rho_{m-q}}$ is non-zero only when all indices are distinct, proportional to $\epsilon^{\mu_1 \cdots \mu_q \rho_1 \cdots \rho_{m-q}} d^m x$. Contracting the two Levi-Civita symbols gives:
