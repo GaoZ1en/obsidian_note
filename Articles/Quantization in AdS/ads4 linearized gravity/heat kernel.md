@@ -90,8 +90,7 @@ The terms with $m$ and $-m$ are equal for real symmetric traceless characters.  
 
 $$\begin{align}
 \boxed{ K_s^{(d)}(t;\beta,\mathbf\alpha) =\frac{\beta}{\sqrt{\pi t}}
-\sum_{m=1}^{\infty} \frac{q^{m\rho}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}
-\exp\!\left[-\frac{m^2\beta^2}{4t}-t(\rho^2+s)\right].
+\sum_{m=1}^{\infty} \frac{q^{m\rho}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)} \exp\!\left[-\frac{m^2\beta^2}{4t}-t(\rho^2+s)\right].
 }
 \end{align}$$
 
@@ -120,16 +119,14 @@ The shifted heat trace entering the determinant is
 
 $$\begin{align}
 \boxed{ \mathbb K_{s,\Delta}^{(d)}(t;\beta,\mathbf\alpha) =K_s^{(d)}(t;\beta,\mathbf\alpha)e^{-tM_s^2(\Delta)} =\frac{\beta}{\sqrt{\pi t}}
-\sum_{m=1}^{\infty} \frac{q^{m\rho}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}
-\exp\!\left[-\frac{m^2\beta^2}{4t}-t(\Delta-\rho)^2\right].
+\sum_{m=1}^{\infty} \frac{q^{m\rho}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)} \exp\!\left[-\frac{m^2\beta^2}{4t}-t(\Delta-\rho)^2\right].
 }
 \end{align}$$
 
 For the standard branch $\Delta=\rho+\nu$ with $\nu\geq0$,
 
 $$\begin{align}
-Z_{s,\Delta}^{\rm long} =\left[\det{}_{s}^{\rm TT}\mathcal O_{s,\Delta}\right]^{-1/2}, \qquad
-\log Z_{s,\Delta}^{\rm long} =\frac12\int_0^\infty\frac{dt}{t}\,\mathbb K_{s,\Delta}^{(d)}(t;\beta,\mathbf\alpha).
+Z_{s,\Delta}^{\rm long} =\left[\det{}_{s}^{\rm TT}\mathcal O_{s,\Delta}\right]^{-1/2}, \qquad \log Z_{s,\Delta}^{\rm long} =\frac12\int_0^\infty\frac{dt}{t}\,\mathbb K_{s,\Delta}^{(d)}(t;\beta,\mathbf\alpha).
 \end{align}$$
 
 The proper-time integral
@@ -141,9 +138,7 @@ $$\begin{align}
 with $a=m\beta$ and $b=\Delta-\rho$ gives
 
 $$\begin{aligned}
-\log Z_{s,\Delta}^{\rm long} &=\frac12\sum_{m=1}^{\infty} \frac{\beta q^{m\rho}\chi_s^{(n)}(\mathbf y^m)}{\sqrt\pi\,D_d(q^m,\mathbf y^m)}
-\int_0^\infty dt\,t^{-3/2}
-\exp\!\left[-\frac{m^2\beta^2}{4t}-t(\Delta-\rho)^2\right]\\
+\log Z_{s,\Delta}^{\rm long} &=\frac12\sum_{m=1}^{\infty} \frac{\beta q^{m\rho}\chi_s^{(n)}(\mathbf y^m)}{\sqrt\pi\,D_d(q^m,\mathbf y^m)} \int_0^\infty dt\,t^{-3/2} \exp\!\left[-\frac{m^2\beta^2}{4t}-t(\Delta-\rho)^2\right]\\
 &=\sum_{m=1}^{\infty}\frac1m\, \frac{q^{m\rho}e^{-m\beta(\Delta-\rho)}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}\\
 &=\boxed{\sum_{m=1}^{\infty}\frac1m\, \frac{q^{m\Delta}\chi_s^{(n)}(\mathbf y^m)}{D_d(q^m,\mathbf y^m)}}.
 \end{aligned}$$
@@ -174,8 +169,7 @@ $$\begin{align}
 The determinant ratio is
 
 $$\begin{align}
-\boxed{ Z_s^{\rm massless} =\left[ \frac{\det_{s-1}^{\rm TT}\left(-\nabla_{s-1}^2+M_{s-1}^2(s+d-2)\right)}
-{\det_s^{\rm TT}\left(-\nabla_s^2+M_s^2(s+d-3)\right)} \right]^{1/2}.
+\boxed{ Z_s^{\rm massless} =\left[ \frac{\det_{s-1}^{\rm TT}\left(-\nabla_{s-1}^2+M_{s-1}^2(s+d-2)\right)} {\det_s^{\rm TT}\left(-\nabla_s^2+M_s^2(s+d-3)\right)} \right]^{1/2}.
 }
 \end{align}$$
 
@@ -196,8 +190,7 @@ this becomes
 
 $$\begin{align}
 \boxed{ \mathbb K_{s,\rm massless}^{(d)}(t) =\frac{\beta}{\sqrt{\pi t}}
-\sum_{m=1}^{\infty} \frac{q^{m\rho}}{D_d(q^m,\mathbf y^m)}
-\exp\!\left[-\frac{m^2\beta^2}{4t}\right] \left[ \chi_s^{(n)}(\mathbf y^m)e^{-t(s+\rho-2)^2} - \chi_{s-1}^{(n)}(\mathbf y^m)e^{-t(s+\rho-1)^2} \right].
+\sum_{m=1}^{\infty} \frac{q^{m\rho}}{D_d(q^m,\mathbf y^m)} \exp\!\left[-\frac{m^2\beta^2}{4t}\right] \left[ \chi_s^{(n)}(\mathbf y^m)e^{-t(s+\rho-2)^2} - \chi_{s-1}^{(n)}(\mathbf y^m)e^{-t(s+\rho-1)^2} \right].
 }
 \end{align}
 \end{align}$$
