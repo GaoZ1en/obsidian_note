@@ -38,7 +38,8 @@ Usually secondary unless directly coupled to Tier 1 or Tier 2:
 
 - Track field-defining big-name authors for broader cultivation. Edward Witten is the explicit anchor example; comparable authors should also be noticed when they post in `hep-th`, `gr-qc`, or `math-ph`.
 - Since big-name authors do not post frequently, it is acceptable to log their nearby papers even when the topic is not directly in Tier 1 or Tier 2. Put such papers in `Author-signal watchlist` or `Skipped nearby papers`, not automatically in high-priority recommendations.
-- Track rising-star or highly relevant younger researchers in this area: Chandrasekaran, Freidel, Geiller, Pranzetti, and Speranza.
+- Track rising-star or highly relevant younger researchers in this area: Chandrasekaran, Freidel, Geiller, Pranzetti, Ruzziconi, and Speranza.
+- Treat Romain Ruzziconi as a strong author signal for Carrollian holography, celestial/flat-space holography, asymptotic or null-boundary symmetries, and charge/CPS-adjacent work.
 - If one of these rising-star authors appears on a paper touching Tier 1 or Tier 2 themes, treat it as a strong candidate for high-priority or medium-priority coverage.
 - In every overview, separate technical relevance from author-signal relevance.
 
