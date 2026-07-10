@@ -292,4 +292,53 @@ S_{\text{bdy}} & =\frac{1}{8\pi G}\int _{\Gamma} \mathrm{d}^{2}x\sqrt{ -\gamma }
  & =\frac{1}{8\pi G}\int _{\Gamma}\mathrm{d}^{2}x\left(r^{2}+\frac{1}{2}-\frac{1}{2}\gamma ^{(0)ab}h_{ab}+\frac{r}{2}\gamma ^{(0)ab}\partial _{r}h_{ab}-r^{4}h_{rr}+r^{2}\gamma ^{(0)ab}h_{ra}h_{rb}-rD^{(0)a}h_{ra}+\mathcal{O}\left(r^{-2} \right)\right)
 \end{align}$$
 
-This boundary action does not contribute to the symplectic form.
+This boundary action does not change the presymplectic current in the interior of the Cauchy slice. Its variation does, however, produce a corner one-form on $\partial\Sigma$, so it contributes to the renormalized symplectic potential and to the Noether charge.
+
+### Corner contribution to the Noether charge
+
+Write the boundary Lagrangian two-form as
+
+$$\begin{align}
+\ell_{\Gamma} &=\frac{1}{8\pi G}(K-1)\,\varepsilon_{\Gamma}.
+\end{align}$$
+
+The boundary part of the full variation is
+
+$$\begin{align}
+\left.(\Theta_{\mathrm{EH}}+\delta\ell_{\Gamma})\right|_{\Gamma} &=\frac{1}{16\pi G}\left(-K^{\mu\nu}+K\gamma^{\mu\nu}-\gamma^{\mu\nu}\right) \delta g_{\mu\nu}\,\varepsilon_{\Gamma}+\mathrm d C_{\Gamma},\\
+C_{\Gamma} &=-\frac{1}{16\pi G}\gamma^{\mu\nu}n^{\rho}\delta g_{\nu\rho}\, \varepsilon^{\Gamma}_{\mu\mu_{1}}\mathrm d x^{\mu_{1}}.
+\end{align}$$
+
+For the diffeomorphism field-space vector $X_{\xi}\cdot\delta g_{\mu\nu}=\mathcal L_{\xi}g_{\mu\nu}$, the corresponding term in $\alpha_{\xi}$ is determined by
+
+$$\begin{align}
+\left.\left(\xi\cdot\mathbf L+X_{\xi}\cdot\delta\ell_{\Gamma}\right)\right|_{\Gamma} &=\mathrm d\mu_{\xi}+\nu_{\xi},\\
+\mu_{\xi} &=\frac{1}{8\pi G}\left[(K-1)\gamma^{\mu}{}_{\nu}\xi^{\nu} -D^{\mu}(n_{\nu}\xi^{\nu})\right] \varepsilon^{\Gamma}_{\mu\mu_{1}}\mathrm d x^{\mu_{1}}.
+\end{align}$$
+
+Hence the contribution of the cutoff boundary action to the same Noether charge $H_{\xi}=X_{\xi}\cdot\theta-\alpha_{\xi}$ is
+
+$$\begin{align}
+H_{\xi,\Gamma} &=\int_{\partial\Sigma}\left(\mu_{\xi}-X_{\xi}\cdot C_{\Gamma}\right) =\int_{\partial\Sigma}\mathcal J_{\xi,\Gamma}^{\mu} \varepsilon^{\Gamma}_{\mu\mu_{1}}\mathrm d x^{\mu_{1}},\\
+\mathcal J_{\xi,\Gamma}^{\mu} &=\frac{1}{16\pi G}\left[-K^{\mu}{}_{\nu}\xi^{\nu} +2(K-1)\gamma^{\mu}{}_{\nu}\xi^{\nu} -D^{\mu}(n_{\nu}\xi^{\nu}) +\gamma^{\mu\nu}n^{\rho}\nabla_{\rho}\xi_{\nu}\right].
+\end{align}$$
+
+In the last line one uses only the projected product rule
+
+$$\begin{align}
+\gamma^{\mu\nu}n^{\rho}\nabla_{\nu}\xi_{\rho} &=D^{\mu}(n_{\rho}\xi^{\rho})-K^{\mu}{}_{\nu}\xi^{\nu}.
+\end{align}$$
+
+The Einstein-Hilbert bulk current gives the surface contribution
+
+$$\begin{align}
+\mathcal J_{\xi,\mathrm{EH}}^{\mu} &=\frac{1}{16\pi G}\left[-K^{\mu}{}_{\nu}\xi^{\nu} +D^{\mu}(n_{\nu}\xi^{\nu}) -\gamma^{\mu\nu}n^{\rho}\nabla_{\rho}\xi_{\nu}\right].
+\end{align}$$
+
+Their sum is the Brown-York current,
+
+$$\begin{align}
+\mathcal J_{\xi,\mathrm{EH}}^{\mu}+\mathcal J_{\xi,\Gamma}^{\mu} &=\frac{1}{8\pi G}\left(-K^{\mu}{}_{\nu}+(K-1)\gamma^{\mu}{}_{\nu}\right)\xi^{\nu} =:\mathcal J_{\xi,T}^{\mu}.
+\end{align}$$
+
+This identity is off shell and uses no gauge condition. The gravitational constraint and the matter contribution are imposed only when the bulk integral is reduced to its asymptotic surface term.
