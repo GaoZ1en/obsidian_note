@@ -65,6 +65,7 @@ describe("settings helpers", () => {
     );
 
     assert.equal(defaultEnv.TERM, "mlterm-256color");
+    assert.equal(defaultEnv.COLORTERM, "truecolor");
     assert.equal(env.TERM, "screen-256color");
     assert.equal(env.MINI, "1");
     assert.match(env.PATH, /^\/Users\/koishi\/\.local\/bin:/);

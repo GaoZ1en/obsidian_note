@@ -1,0 +1,3 @@
+topological defects - generalized symmetry
+conformal defects - fixed point of defect RG
+monodromy defects - entanglement ...

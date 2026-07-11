@@ -1,0 +1,3 @@
+Harlow argued if entanglement wedge is exact, then "there is no gravitational backreaction".
+
+see https://arxiv.org/pdf/2606.18639 for more details...

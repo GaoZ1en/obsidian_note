@@ -157,6 +157,7 @@ export function buildPtyEnv(
     ...env,
     PATH: buildAugmentedPath(env.PATH, env.HOME),
     TERM: env.TERM ?? DEFAULT_TERMINAL_TYPE,
+    COLORTERM: env.COLORTERM ?? "truecolor",
     LANG: env.LANG ?? "en_US.UTF-8",
     LC_CTYPE: env.LC_CTYPE ?? env.LANG ?? "en_US.UTF-8",
     ...overrides

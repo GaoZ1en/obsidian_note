@@ -227,6 +227,8 @@ def fetch_text(
             headers={
                 "User-Agent": "CodexArxivInventory/0.1 (+https://arxiv.org)",
                 "Accept": "text/html,application/xhtml+xml",
+                "Cache-Control": "no-cache",
+                "Pragma": "no-cache",
             },
         )
         try:
