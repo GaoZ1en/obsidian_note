@@ -90,6 +90,18 @@ s\lambda _{\alpha}&=c_{\alpha},
 \end{align}
 $$
 
+With the canonical convention of the main formalism, the modewise BRST charge is
+
+$$
+\begin{align}
+Q_{\alpha}=b_{\alpha}c_{\alpha},
+\qquad
+\iota _s\Omega _{\mathrm{unphys},\alpha}=-\delta Q_{\alpha},
+\qquad
+\mathcal{L}_s\Omega _{\mathrm{unphys},\alpha}=0.
+\end{align}
+$$
+
 The pure-gauge vector is not required to pair with itself. It pairs with the scalar polarization, while the ghost pairs with the antighost. The quartet is non-degenerate as a graded symplectic system, while every non-zero quartet excitation is BRST exact.
 
 ## 3. Plane-wave normal form
@@ -166,7 +178,7 @@ concentrated at ghost number zero. Equivalently, the subcomplex with positive qu
 
 The constant U(1) ghost satisfies $dc=0$ and is a reducibility zero mode. It is removed from the determinant and treated through the residual global gauge volume rather than as a physical ghost excitation.
 
-Consequently,
+Provided the global scalar-polarization modes complete the same canonically normalized quartet blocks, one obtains
 
 $$
 \begin{align}
@@ -176,13 +188,14 @@ H^{0}(Q_{\mathrm{BRST}},\mathcal{H}_{\mathrm{ext}})
 \end{align}
 $$
 
-This is the same oscillator Hilbert space and symplectic normalization obtained by direct presymplectic reduction.
+Under this stated completeness condition, this is the same oscillator Hilbert space and symplectic normalization obtained by direct presymplectic reduction.
 
 ## Benchmark verdict
 
 | Gate | Result |
 |---|---|
 | Off-shell nilpotency | Pass with $B$ retained. |
+| Symplectic compatibility | Pass modewise; the selected AdS$_3$ domain has vanishing proper-gauge boundary term. |
 | Complete unphysical sector | Structural pass after including the scalar-polarization branch; its explicit global-AdS$_3$ radial basis remains to be constructed. |
 | Quartet acyclicity | Pass for every non-zero Faddeev-Popov mode. |
 | Reduced degrees of freedom | Pass: one bulk polarization in AdS$_3$. |

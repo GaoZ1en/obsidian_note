@@ -142,6 +142,7 @@ The boundary BFV symplectic structure has ghost number zero and contains both th
 | Gate | Result |
 |---|---|
 | Bulk nilpotency | Pass: $sA=dc$, $sc=0$. |
+| BRST generator and boundary term | Pass: the flatness generator removes proper exact modes, while its non-zero surface term is retained as $J[\lambda]$. |
 | Bulk local cohomology | Pass: no local oscillator on a contractible slice. |
 | Proper exact modes | Pass: contractible when the boundary term vanishes. |
 | Boundary large gauge modes | Pass: survive and generate level-$k$ U(1) current algebra. |

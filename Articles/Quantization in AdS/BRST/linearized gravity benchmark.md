@@ -144,6 +144,7 @@ where the second line denotes the two Brown-Henneaux descendant towers with the 
 |---|---|
 | Linearized nilpotency | Pass off shell. |
 | Faddeev-Popov operator | Pass: $(\nabla^{2}-2)\delta_{\mu}^{\nu}$ on AdS$_3$. |
+| Symplectic compatibility | Structural pass with $\Omega_{\mathrm{ren}}$: the proper boundary term vanishes and the Brown-Henneaux term is retained as a charge. |
 | Proper diffeomorphism quartet | Structural pass modewise for non-zero FP modes; a global mode-by-mode normalization integral was not repeated here. |
 | Local bulk cohomology | Pass: no propagating Einstein graviton in three dimensions. |
 | Brown-Henneaux modes | Pass: $(2,0)$ and $(0,2)$ survive as boundary cohomology. |
