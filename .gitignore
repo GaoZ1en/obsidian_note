@@ -20,6 +20,11 @@
 !/tools/miniterm/package-lock.json
 !/tools/miniterm/manifest.json
 !/tools/miniterm/tsconfig.json
+!/tools/mcp-servers/*/package.json
+!/tools/mcp-servers/*/package-lock.json
+!/tools/mcp-servers/*/tsconfig.json
+/tools/mcp-servers/*/node_modules/
+/tools/mcp-servers/*/build/
 /.keep-the-rhythm/
 /.vscode/
 /.github/

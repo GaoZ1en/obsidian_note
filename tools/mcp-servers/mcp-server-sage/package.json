@@ -1,0 +1,24 @@
+{
+  "name": "mcp-server-sage",
+  "version": "0.1.0",
+  "description": "A Model Context Protocol server for SageMath computations",
+  "type": "module",
+  "bin": {
+    "mcp-server-sage": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "typescript": "^5.6.2"
+  }
+}
