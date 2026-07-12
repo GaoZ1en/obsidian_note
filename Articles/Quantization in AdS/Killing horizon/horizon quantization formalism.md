@@ -8,25 +8,20 @@ A Killing horizon does not replace the AdS quantization formalism. It adds a geo
 
 For a fixed-background matter theory, the tested object chain is
 
-$$
-\boxed{
-(M,g,\mathcal B_\infty)
-\longrightarrow
-(\mathrm{Sol}_{\mathcal B},\Omega,E,\mathfrak A)
-\xrightarrow[\text{Hadamard}]{\text{state }W}
-(G_F,G_E,[\phi^2]_{\rm ren})
-\xrightarrow{\text{interaction}}
+$$\begin{align}
+\boxed{ (M,g,\mathcal B_\infty) \longrightarrow
+(\mathrm{Sol}_{\mathcal B},\Omega,E,\mathfrak A) \xrightarrow[\text{Hadamard}]{\text{state }W}
+(G_F,G_E,[\phi^2]_{\rm ren}) \xrightarrow{\text{interaction}}
 T_n^{\rm ren},\,R_V
 }.
-$$
+\end{align}$$
 
 The Killing horizon supplies
 
-$$
-(\chi,\mathcal H,\kappa)
-\longrightarrow
+$$\begin{align}
+(\chi,\mathcal H,\kappa) \longrightarrow
 (\alpha_s,H_\chi,\beta_H,\text{horizon regularity},\text{flux balance}),
-$$
+\end{align}$$
 
 but it does not change the free commutator kernel after the theory-defining boundary condition has been fixed.
 
@@ -34,11 +29,9 @@ but it does not change the free commutator kernel after the theory-defining boun
 
 The input for a scalar benchmark is
 
-$$
-\mathfrak D
-=
-(M,g,P,\mathcal B_\infty,\chi,\mathcal H).
-$$
+$$\begin{align}
+\mathfrak D = (M,g,P,\mathcal B_\infty,\chi,\mathcal H).
+\end{align}$$
 
 These entries have different jobs:
 
@@ -63,9 +56,9 @@ The global HHI state is pure and regular across the horizon.
 
 The right exterior admits a self-adjoint spatial problem on
 
-$$
+$$\begin{align}
 r_*\in(-\infty,0).
-$$
+\end{align}$$
 
 The horizon endpoint is a limit point, and the real-frequency spectrum is continuous. No reflecting wall is inserted at $r_*=-\infty$.
 
@@ -77,35 +70,28 @@ These formulations are compatible but answer different questions.
 
 For a static AdS spacetime without a horizon, the positive-frequency resolution may be a discrete sum. With a non-extremal horizon, the exterior resolution is generally
 
-$$
-\sum_{\lambda}
-\quad\longrightarrow\quad
-\sum_{\text{discrete labels}}
+$$\begin{align}
+\sum_{\lambda} \quad\longrightarrow\quad \sum_{\text{discrete labels}}
 \int_{\text{continuous spectrum}}d\omega.
-$$
+\end{align}$$
 
 For BTZ,
 
-$$
-\sum_N
-\quad\longrightarrow\quad
-\sum_{m\in\mathbb Z}\int_0^\infty d\omega.
-$$
+$$\begin{align}
+\sum_N \quad\longrightarrow\quad \sum_{m\in\mathbb Z}\int_0^\infty d\omega.
+\end{align}$$
 
 The criterion is not whether the modes are “normal modes” in terminology. The criterion is whether they form the self-adjoint spectral resolution that reproduces:
 
-$$
-(u_{\omega m},u_{\omega'm'})_{\rm KG}
-=\delta_{mm'}\delta(\omega-\omega')
-$$
+$$\begin{align}
+(u_{\omega m},u_{\omega'm'})_{\rm KG} =\delta_{mm'}\delta(\omega-\omega')
+\end{align}$$
 
 and
 
-$$
-iE
-=\sum_m\int d\omega\,
-(u\bar u-\bar u u).
-$$
+$$\begin{align}
+iE =\sum_m\int d\omega\, (u\bar u-\bar u u).
+\end{align}$$
 
 Quasinormal modes fail this canonical criterion and instead encode poles and late-time response.
 
@@ -125,27 +111,23 @@ $$
 
 followed by an independent state choice:
 
-$$
+$$\begin{align}
 W-W^{\rm T}=iE.
-$$
+\end{align}$$
 
 For HHI,
 
-$$
-W_{\rm HHI}|_R
-\quad\text{is KMS at}\quad
-\beta_H=\frac{2\pi}{\kappa}.
-$$
+$$\begin{align}
+W_{\rm HHI}|_R \quad\text{is KMS at}\quad \beta_H=\frac{2\pi}{\kappa}.
+\end{align}$$
 
 The CPS-normalized thermal mode kernel and the quotient image kernel solve the same Euclidean boundary-value problem. Positivity and standard boundary falloff make that problem unique. Three Euclidean comparisons agree at relative error below $1.4\times10^{-5}$, and a regulated Lorentzian comparison agrees below $2.0\times10^{-4}$.
 
 The Killing Hamiltonian must satisfy
 
-$$
-\delta H_\chi=\Omega(\delta,X_\chi),
-\qquad
-i[H_\chi,\Phi]=\mathcal L_\chi\Phi.
-$$
+$$\begin{align}
+\delta H_\chi=\Omega(\delta,X_\chi), \qquad i[H_\chi,\Phi]=\mathcal L_\chi\Phi.
+\end{align}$$
 
 None of these equations identifies $H_\chi$ with entropy.
 
@@ -155,19 +137,15 @@ For a Hadamard state, ultraviolet subtraction is local. A smooth Killing horizon
 
 For the BTZ tadpole,
 
-$$
-\langle\phi^2(r)\rangle_{\rm ren}
-=
-\langle\phi^2\rangle_{\rm ren}^{\rm AdS}
-+\mathcal I_\Delta(r).
-$$
+$$\begin{align}
+\langle\phi^2(r)\rangle_{\rm ren} = \langle\phi^2\rangle_{\rm ren}^{\rm AdS} +\mathcal I_\Delta(r).
+\end{align}$$
 
 The AdS term can be absorbed into a constant mass renormalization. The image term cannot:
 
-$$
-\Sigma_{\rm BTZ}(r)
-=\frac{\lambda}{2}\mathcal I_\Delta(r).
-$$
+$$\begin{align}
+\Sigma_{\rm BTZ}(r) =\frac{\lambda}{2}\mathcal I_\Delta(r).
+\end{align}$$
 
 Therefore “a tadpole is only a mass shift” must be replaced by:
 
@@ -175,18 +153,16 @@ Therefore “a tadpole is only a mass shift” must be replaced by:
 
 The next perturbative map is now explicit:
 
-$$
-\Sigma_{\rm BTZ}(r)
-\longrightarrow
-\delta g_{km}
-=-g_{km}\Sigma_{\rm BTZ}g_{km}.
-$$
+$$\begin{align}
+\Sigma_{\rm BTZ}(r) \longrightarrow
+\delta g_{km} =-g_{km}\Sigma_{\rm BTZ}g_{km}.
+\end{align}$$
 
 The free renormalized stress tensor gives an independent local test. For the minimally coupled $\Delta=2$ field, its image-dependent part is conserved, finite at $r=r_+$, and satisfies
 
-$$
+$$\begin{align}
 T^r{}_r-T^t{}_t=O(f),
-$$
+\end{align}$$
 
 which is the condition that removes the apparent static-coordinate divergence in $T_{UU}$ and $T_{VV}$.
 
@@ -214,19 +190,15 @@ For a new static bifurcate horizon, use this order:
 5. Reconstruct $E$ and check the equal-time delta distribution.
 6. Compute $H_\chi$ and verify
 
-$$
+$$\begin{align}
 \delta H_\chi=\Omega(\delta,X_\chi).
-$$
+\end{align}$$
 
 7. Construct the candidate state and separately check:
 
-$$
-PW=0,\qquad
-W-W^{\rm T}=iE,\qquad
-\text{Hadamard},\qquad
-\text{KMS},\qquad
-\text{horizon regularity}.
-$$
+$$\begin{align}
+PW=0,\qquad W-W^{\rm T}=iE,\qquad \text{Hadamard},\qquad \text{KMS},\qquad \text{horizon regularity}.
+\end{align}$$
 
 8. Compute at least one renormalized local observable such as $[\phi^2]_{\rm ren}$.
 9. Point-split $T_{\mu\nu}$, check conservation, and transform to horizon-regular coordinates.

@@ -12,34 +12,20 @@ The equality follows analytically from uniqueness of the Euclidean Dirichlet pro
 
 For $0\le\Delta\tau\le\beta_H$, the right-exterior HHI two-point function continues to
 
-$$
-G_E^{\rm mode}
-=\frac1{2\pi}
-\sum_{m\in\mathbb Z}
-e^{im\Delta\varphi}
-\int_0^\infty d\omega\,
-R_{\omega m}(r)R_{\omega m}(r')
-\frac{
-\cosh\!\left[
-\omega\left(\frac{\beta_H}{2}-\Delta\tau\right)
-\right]
-}{
-\sinh(\beta_H\omega/2)
+$$\begin{align}
+G_E^{\rm mode} =\frac1{2\pi}
+\sum_{m\in\mathbb Z} e^{im\Delta\varphi} \int_0^\infty d\omega\, R_{\omega m}(r)R_{\omega m}(r') \frac{ \cosh\!\left[ \omega\left(\frac{\beta_H}{2}-\Delta\tau\right) \right]
+}{ \sinh(\beta_H\omega/2)
 }.
-$$
+\end{align}$$
 
 This follows from
 
-$$
-(1+n_\beta)e^{-\omega\Delta\tau}
-+n_\beta e^{+\omega\Delta\tau}
-=
-\frac{
-\cosh[\omega(\beta_H/2-\Delta\tau)]
-}{
-\sinh(\beta_H\omega/2)
+$$\begin{align}
+(1+n_\beta)e^{-\omega\Delta\tau} +n_\beta e^{+\omega\Delta\tau} = \frac{ \cosh[\omega(\beta_H/2-\Delta\tau)]
+}{ \sinh(\beta_H\omega/2)
 }.
-$$
+\end{align}$$
 
 The equal-time singular normalization is fixed by the continuous completeness relation, so this kernel has the correct Euclidean delta source.
 
@@ -47,40 +33,24 @@ The equal-time singular normalization is fixed by the continuous completeness re
 
 For the non-rotating BTZ quotient, define
 
-$$
-Z_n
-=
-\frac{rr'}{r_+^2}
-\cosh\left[
-\frac{r_+}{\ell}
-(\Delta\varphi+2\pi n)
-\right]
--
-\frac{
-\sqrt{r^2-r_+^2}\sqrt{r'^2-r_+^2}
+$$\begin{align}
+Z_n = \frac{rr'}{r_+^2} \cosh\left[ \frac{r_+}{\ell} (\Delta\varphi+2\pi n) \right]
+- \frac{ \sqrt{r^2-r_+^2}\sqrt{r'^2-r_+^2}
 }{r_+^2}
-\cos\left(
-\frac{r_+}{\ell^2}\Delta\tau
-\right).
-$$
+\cos\left( \frac{r_+}{\ell^2}\Delta\tau \right).
+\end{align}$$
 
 For $\Delta=2$,
 
-$$
-G_2^{\mathbb H^3}(Z)
-=\frac1{4\pi\ell}
-\left(
-\frac{Z}{\sqrt{Z^2-1}}-1
-\right),
-$$
+$$\begin{align}
+G_2^{\mathbb H^3}(Z) =\frac1{4\pi\ell} \left( \frac{Z}{\sqrt{Z^2-1}}-1 \right),
+\end{align}$$
 
 and
 
-$$
-G_E^{\rm image}(X,X')
-=\sum_{n\in\mathbb Z}
-G_2^{\mathbb H^3}(Z_n).
-$$
+$$\begin{align}
+G_E^{\rm image}(X,X') =\sum_{n\in\mathbb Z} G_2^{\mathbb H^3}(Z_n).
+\end{align}$$
 
 The identity image supplies the local singularity. The nonzero images are smooth at coincidence for $r>0$.
 
@@ -88,10 +58,9 @@ The identity image supplies the local singularity. The nonzero images are smooth
 
 Both kernels satisfy
 
-$$
-(-\nabla_E^2+\mu^2)G_E
-=\frac{\delta^{(3)}(X-X')}{\sqrt g}
-$$
+$$\begin{align}
+(-\nabla_E^2+\mu^2)G_E =\frac{\delta^{(3)}(X-X')}{\sqrt g}
+\end{align}$$
 
 with:
 
@@ -102,27 +71,22 @@ with:
 
 For the primary model $\mu^2=0$. Let
 
-$$
-D(X,X')
-=G_E^{\rm mode}(X,X')-G_E^{\rm image}(X,X').
-$$
+$$\begin{align}
+D(X,X') =G_E^{\rm mode}(X,X')-G_E^{\rm image}(X,X').
+\end{align}$$
 
 For fixed $X'$, $D$ is smooth and homogeneous. Integration by parts gives
 
-$$
-0
-=\int d^3X\sqrt g\,
-D(-\nabla_E^2)D
-=\int d^3X\sqrt g\,|\nabla D|^2.
-$$
+$$\begin{align}
+0 =\int d^3X\sqrt g\, D(-\nabla_E^2)D =\int d^3X\sqrt g\,|\nabla D|^2.
+\end{align}$$
 
 The boundary and tip terms vanish by standard falloff and regularity. Hence $D$ is constant. The source-free AdS condition excludes a nonzero constant, so
 
-$$
-\boxed{
-G_E^{\rm mode}=G_E^{\rm image}
+$$\begin{align}
+\boxed{ G_E^{\rm mode}=G_E^{\rm image}
 }.
-$$
+\end{align}$$
 
 This argument upgrades the comparison from numerical evidence to equality of the two representations.
 
@@ -130,35 +94,27 @@ This argument upgrades the comparison from numerical evidence to equality of the
 
 Set
 
-$$
-\ell=r_+=1,
-\qquad
-\beta_H=2\pi,
-\qquad
-x=-r_*,
-\qquad
-r=\coth x.
-$$
+$$\begin{align}
+\ell=r_+=1, \qquad \beta_H=2\pi, \qquad x=-r_*, \qquad r=\coth x.
+\end{align}$$
 
 At the half-period separation
 
-$$
+$$\begin{align}
 \Delta\tau=\pi,
-$$
+\end{align}$$
 
 the thermal factor reduces to
 
-$$
+$$\begin{align}
 \frac1{\sinh(\pi\omega)}.
-$$
+\end{align}$$
 
 The numerical mode representation used
 
-$$
-|m|\le12,
-\qquad
-10^{-5}\le\omega\le12.
-$$
+$$\begin{align}
+|m|\le12, \qquad 10^{-5}\le\omega\le12.
+\end{align}$$
 
 The image representation used $|n|\le8$; increasing this cutoff did not change the displayed digits.
 
@@ -185,50 +141,35 @@ The remaining discrepancy is consistent with the omitted angular tail.
 
 For the Wightman boundary value, use
 
-$$
-\Delta\tau=\epsilon+i\Delta t,
-\qquad
-0<\epsilon<\beta_H.
-$$
+$$\begin{align}
+\Delta\tau=\epsilon+i\Delta t, \qquad 0<\epsilon<\beta_H.
+\end{align}$$
 
 The mode integral becomes
 
-$$
-W_{\epsilon}^{\rm mode}
-=\frac1{2\pi}
-\sum_m e^{im\Delta\varphi}
-\int_0^\infty d\omega\,
-R_{\omega m}(r)R_{\omega m}(r')
-\left[
-(1+n_\beta)e^{-i\omega\Delta t-\epsilon\omega}
-+n_\beta e^{+i\omega\Delta t+\epsilon\omega}
-\right].
-$$
+$$\begin{align}
+W_{\epsilon}^{\rm mode} =\frac1{2\pi} \sum_m e^{im\Delta\varphi} \int_0^\infty d\omega\, R_{\omega m}(r)R_{\omega m}(r') \left[ (1+n_\beta)e^{-i\omega\Delta t-\epsilon\omega} +n_\beta e^{+i\omega\Delta t+\epsilon\omega} \right].
+\end{align}$$
 
 The corresponding image invariant is
 
-$$
-Z_n^\epsilon
-=rr'\cosh(\Delta\varphi+2\pi n)
--\sqrt{r^2-1}\sqrt{r'^2-1}
-\cosh(\Delta t-i\epsilon)
-$$
+$$\begin{align}
+Z_n^\epsilon =rr'\cosh(\Delta\varphi+2\pi n) -\sqrt{r^2-1}\sqrt{r'^2-1} \cosh(\Delta t-i\epsilon)
+\end{align}$$
 
 in the benchmark units.
 
 At
 
-$$
-(x,x',\Delta\varphi,\Delta t,\epsilon)
-=(1,1.5,0.35,0.4,0.2),
-$$
+$$\begin{align}
+(x,x',\Delta\varphi,\Delta t,\epsilon) =(1,1.5,0.35,0.4,0.2),
+\end{align}$$
 
 the image result is
 
-$$
-W_\epsilon^{\rm image}
-=0.094646858912-0.020027955507\,i.
-$$
+$$\begin{align}
+W_\epsilon^{\rm image} =0.094646858912-0.020027955507\,i.
+\end{align}$$
 
 With $\omega\le45$, the angular partial sums give
 
@@ -245,17 +186,13 @@ The nonmonotone intermediate error is the expected oscillatory angular truncatio
 
 The matching checks all normalization-sensitive links:
 
-$$
-\Omega
-\longrightarrow
-R_{\omega m}
-\longrightarrow
-[a_{\omega m},a_{\omega'm'}^\dagger]
-\longrightarrow
-W_{\rm HHI}
-\longrightarrow
+$$\begin{align}
+\Omega \longrightarrow
+R_{\omega m} \longrightarrow
+[a_{\omega m},a_{\omega'm'}^\dagger] \longrightarrow
+W_{\rm HHI} \longrightarrow
 G_E^{\rm BTZ}.
-$$
+\end{align}$$
 
 It also establishes that the quotient image kernel is not an independent normalization convention. It is the closed-form representation of the same state constructed from CPS-normalized modes.
 

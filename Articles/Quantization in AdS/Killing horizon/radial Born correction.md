@@ -8,16 +8,15 @@ The first $\lambda\phi^4$ correction has been reduced to and evaluated as a conv
 
 For the fixed-physical-$\Delta$ scheme,
 
-$$
-\Sigma_{\rm BTZ}(r)
-=\frac{\lambda}{2}\mathcal I_2(r).
-$$
+$$\begin{align}
+\Sigma_{\rm BTZ}(r) =\frac{\lambda}{2}\mathcal I_2(r).
+\end{align}$$
 
 The correction is negative in the Euclidean Green function,
 
-$$
+$$\begin{align}
 \delta g_{km}=-g_{km}\Sigma_{\rm BTZ}g_{km},
-$$
+\end{align}$$
 
 and is finite for all exterior points, including the horizon limit.
 
@@ -25,42 +24,28 @@ and is finite for all exterior points, including the horizon limit.
 
 Use
 
-$$
-\ell=r_+=1,
-\qquad
-\beta_H=2\pi,
-\qquad
-z=1-\frac1{r^2}.
-$$
+$$\begin{align}
+\ell=r_+=1, \qquad \beta_H=2\pi, \qquad z=1-\frac1{r^2}.
+\end{align}$$
 
 Expand
 
-$$
-G_E(X,X')
-=\frac1{\beta_H\,2\pi}
-\sum_{k,m\in\mathbb Z}
-e^{ik(\tau-\tau')+im(\varphi-\varphi')}
-g_{km}(r,r').
-$$
+$$\begin{align}
+G_E(X,X') =\frac1{\beta_H\,2\pi}
+\sum_{k,m\in\mathbb Z} e^{ik(\tau-\tau')+im(\varphi-\varphi')} g_{km}(r,r').
+\end{align}$$
 
 The radial operator is
 
-$$
-K_{km}
-=-\frac1r\frac{d}{dr}
-\left(
-r(r^2-1)\frac d{dr}
-\right)
-+\frac{k^2}{r^2-1}
-+\frac{m^2}{r^2}.
-$$
+$$\begin{align}
+K_{km} =-\frac1r\frac{d}{dr} \left( r(r^2-1)\frac d{dr} \right) +\frac{k^2}{r^2-1} +\frac{m^2}{r^2}.
+\end{align}$$
 
 It is normalized by
 
-$$
-K_{km}g_{km}(r,r')
-=\frac{\delta(r-r')}{r}.
-$$
+$$\begin{align}
+K_{km}g_{km}(r,r') =\frac{\delta(r-r')}{r}.
+\end{align}$$
 
 Only $|k|$ enters, so take $k\ge0$ below.
 
@@ -68,106 +53,73 @@ Only $|k|$ enters, so take $k\ge0$ below.
 
 For $\Delta=2$, define
 
-$$
-a_{km}
-=\frac{2+k-im}{2},
-\qquad
-b_{km}
-=\frac{2+k+im}{2}.
-$$
+$$\begin{align}
+a_{km} =\frac{2+k-im}{2}, \qquad b_{km} =\frac{2+k+im}{2}.
+\end{align}$$
 
 The solution regular at the Euclidean horizon is
 
-$$
-p_{km}(z)
-=z^{k/2}(1-z)\,
-{}_2F_1(a_{km},b_{km};1+k;z).
-$$
+$$\begin{align}
+p_{km}(z) =z^{k/2}(1-z)\, {}_2F_1(a_{km},b_{km};1+k;z).
+\end{align}$$
 
 The solution with standard AdS falloff is
 
-$$
-q_{km}(z)
-=z^{k/2}(1-z)\,
-{}_2F_1(a_{km},b_{km};2;1-z).
-$$
+$$\begin{align}
+q_{km}(z) =z^{k/2}(1-z)\, {}_2F_1(a_{km},b_{km};2;1-z).
+\end{align}$$
 
 Their radial Wronskian satisfies
 
-$$
-2z
-\left(
-p_{km}q_{km}'-p_{km}'q_{km}
-\right)
-=-\frac1{C_{km}},
-$$
+$$\begin{align}
+2z \left( p_{km}q_{km}'-p_{km}'q_{km} \right) =-\frac1{C_{km}},
+\end{align}$$
 
 where
 
-$$
-\boxed{
-C_{km}
-=\frac{
-\Gamma(a_{km})\Gamma(b_{km})
-}{
-2\Gamma(2)\Gamma(k+1)
+$$\begin{align}
+\boxed{ C_{km} =\frac{ \Gamma(a_{km})\Gamma(b_{km})
+}{ 2\Gamma(2)\Gamma(k+1)
 }
 }.
-$$
+\end{align}$$
 
 The formula includes the Matsubara zero sector. For example,
 
-$$
-C_{00}=\frac12,
-\qquad
-C_{10}=\frac{\pi}{8},
-\qquad
-C_{20}=\frac14.
-$$
+$$\begin{align}
+C_{00}=\frac12, \qquad C_{10}=\frac{\pi}{8}, \qquad C_{20}=\frac14.
+\end{align}$$
 
 ## 3. Exact sector Green function
 
 Let
 
-$$
-z_<:=\min(z,z'),
-\qquad
-z_>:=\max(z,z').
-$$
+$$\begin{align}
+z_<:=\min(z,z'), \qquad z_>:=\max(z,z').
+\end{align}$$
 
 Then
 
-$$
-\boxed{
-g_{km}(z,z')
-=C_{km}\,
-p_{km}(z_<)q_{km}(z_>)
+$$\begin{align}
+\boxed{ g_{km}(z,z') =C_{km}\, p_{km}(z_<)q_{km}(z_>)
 }.
-$$
+\end{align}$$
 
 The derivative jump is
 
-$$
--r(r^2-1)
-\left[
-\partial_rg_{km}
-\right]_{r=r'-0}^{r=r'+0}
-=1,
-$$
+$$\begin{align}
+-r(r^2-1) \left[ \partial_rg_{km} \right]_{r=r'-0}^{r=r'+0} =1,
+\end{align}$$
 
 which gives the required delta source.
 
 The same kernel has the spectral representation
 
-$$
-g_{km}(r,r')
-=2\int_0^\infty d\omega\,
-\frac{
-\omega R_{\omega m}(r)R_{\omega m}(r')
-}{
-\omega^2+k^2
+$$\begin{align}
+g_{km}(r,r') =2\int_0^\infty d\omega\, \frac{ \omega R_{\omega m}(r)R_{\omega m}(r')
+}{ \omega^2+k^2
 }.
-$$
+\end{align}$$
 
 Thus the Euclidean radial resolvent and the Lorentzian real-frequency normalization use the same spectral measure.
 
@@ -175,42 +127,29 @@ Thus the Euclidean radial resolvent and the Lorentzian real-frequency normalizat
 
 For $\Delta=2$,
 
-$$
-\mathcal I_2(z)
-=\frac1{2\pi}
-\sum_{n=1}^\infty
-\frac{e^{-s_n(z)}}{\sinh s_n(z)},
-$$
+$$\begin{align}
+\mathcal I_2(z) =\frac1{2\pi}
+\sum_{n=1}^\infty \frac{e^{-s_n(z)}}{\sinh s_n(z)},
+\end{align}$$
 
 where
 
-$$
-s_n(z)
-=\operatorname{arccosh}
-\left[
-1+\frac{2}{1-z}\sinh^2(\pi n)
-\right].
-$$
+$$\begin{align}
+s_n(z) =\operatorname{arccosh} \left[ 1+\frac{2}{1-z}\sinh^2(\pi n) \right].
+\end{align}$$
 
 Since
 
-$$
+$$\begin{align}
 r\,dr=\frac{dz}{2(1-z)^2},
-$$
+\end{align}$$
 
 the complete first-order sector correction is
 
-$$
-\boxed{
-\delta g_{km}(z,z')
-=-\frac{\lambda}{4}
-\int_0^1
-\frac{dy}{(1-y)^2}\,
-g_{km}(z,y)
-\mathcal I_2(y)
-g_{km}(y,z')
+$$\begin{align}
+\boxed{ \delta g_{km}(z,z') =-\frac{\lambda}{4} \int_0^1 \frac{dy}{(1-y)^2}\, g_{km}(z,y) \mathcal I_2(y) g_{km}(y,z')
 }.
-$$
+\end{align}$$
 
 The integrand is regular at both endpoints:
 
@@ -221,42 +160,34 @@ The integrand is regular at both endpoints:
 
 Applying $K_{km}$ to the first argument gives
 
-$$
-\boxed{
-K_{km}^{(z)}\delta g_{km}(z,z')
-=-\Sigma_{\rm BTZ}(z)g_{km}(z,z')
+$$\begin{align}
+\boxed{ K_{km}^{(z)}\delta g_{km}(z,z') =-\Sigma_{\rm BTZ}(z)g_{km}(z,z')
 }.
-$$
+\end{align}$$
 
 For $z>z'$, split the integral into the intervals
 
-$$
-(0,z'),
-\qquad
-(z',z),
-\qquad
-(z,1).
-$$
+$$\begin{align}
+(0,z'), \qquad (z',z), \qquad (z,1).
+\end{align}$$
 
 The nonhomogeneous part is controlled by
 
-$$
-M(z)
-=\frac{\Sigma_{\rm BTZ}(z)}{2(1-z)^2}
-$$
+$$\begin{align}
+M(z) =\frac{\Sigma_{\rm BTZ}(z)}{2(1-z)^2}
+\end{align}$$
 
 and the Wronskian identity
 
-$$
+$$\begin{align}
 2z(pq'-p'q)=-C_{km}^{-1}.
-$$
+\end{align}$$
 
 Substitution gives
 
-$$
-K_{km}\delta g_{km}
-+\Sigma_{\rm BTZ}g_{km}=0
-$$
+$$\begin{align}
+K_{km}\delta g_{km} +\Sigma_{\rm BTZ}g_{km}=0
+\end{align}$$
 
 away from $z=z'$. Mathematica reduced the resulting algebraic residual to zero.
 
@@ -264,23 +195,15 @@ away from $z=z'$. Mathematica reduced the resulting algebraic residual to zero.
 
 Take
 
-$$
-\lambda=1,
-\qquad
-x=-r_*,
-\qquad
-x=1,
-\qquad
-x'=1.5.
-$$
+$$\begin{align}
+\lambda=1, \qquad x=-r_*, \qquad x=1, \qquad x'=1.5.
+\end{align}$$
 
 Thus
 
-$$
-z=\operatorname{sech}^2(1),
-\qquad
-z'=\operatorname{sech}^2(1.5).
-$$
+$$\begin{align}
+z=\operatorname{sech}^2(1), \qquad z'=\operatorname{sech}^2(1.5).
+\end{align}$$
 
 The image sum was truncated at $n_{\max}=6$. The result had already stabilized by $n_{\max}=3$.
 
@@ -295,10 +218,9 @@ The image sum was truncated at $n_{\max}=6$. The result had already stabilized b
 
 For $(k,m)=(1,0)$,
 
-$$
-\delta g_{10}
-=-6.8627362200808014\times10^{-9}
-$$
+$$\begin{align}
+\delta g_{10} =-6.8627362200808014\times10^{-9}
+\end{align}$$
 
 for $n_{\max}=3,6,10$ to the displayed precision. Changing the numerical accuracy goal from $8$ to $10$ also left the result unchanged.
 
@@ -308,36 +230,27 @@ The small magnitude is physical for $r_+=\ell$: the first quotient image is supp
 
 The Euclidean correction is the analytic input for HHI time-ordered correlators. In the retarded Lorentzian problem,
 
-$$
-P_{\rm eff}
-=P-\Sigma_{\rm BTZ},
-$$
+$$\begin{align}
+P_{\rm eff} =P-\Sigma_{\rm BTZ},
+\end{align}$$
 
 so
 
-$$
-G_{\rm ret}
-=G_{\rm ret}^{(0)}
-+\delta G_{\rm ret}
-+O(\lambda^2),
-$$
+$$\begin{align}
+G_{\rm ret} =G_{\rm ret}^{(0)} +\delta G_{\rm ret} +O(\lambda^2),
+\end{align}$$
 
 where, with operator composition displayed explicitly,
 
-$$
-\delta G_{\rm ret}
-=G_{\rm ret}^{(0)}
-\circ\Sigma_{\rm BTZ}
-\circ G_{\rm ret}^{(0)}.
-$$
+$$\begin{align}
+\delta G_{\rm ret} =G_{\rm ret}^{(0)} \circ\Sigma_{\rm BTZ} \circ G_{\rm ret}^{(0)}.
+\end{align}$$
 
 The apparent sign change relative to the Euclidean formula follows from
 
-$$
-K_{\rm eff}=K+\Sigma_{\rm BTZ},
-\qquad
-P_{\rm eff}=P-\Sigma_{\rm BTZ}.
-$$
+$$\begin{align}
+K_{\rm eff}=K+\Sigma_{\rm BTZ}, \qquad P_{\rm eff}=P-\Sigma_{\rm BTZ}.
+\end{align}$$
 
 ## 8. Verification status
 

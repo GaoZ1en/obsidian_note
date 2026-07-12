@@ -10,9 +10,9 @@ The free CCR algebra is fixed before a state is chosen. The Hartle-Hawking-Israe
 2. invariant under the Killing flow;
 3. KMS at
 
-$$
+$$\begin{align}
 \beta_H=\frac{2\pi}{\kappa}
-$$
+\end{align}$$
 
    when restricted to one exterior.
 
@@ -22,24 +22,21 @@ Globally it is a pure entangled state. Its restriction to the right exterior is 
 
 The Euclidean BTZ metric is
 
-$$
-ds_E^2
-=f(r)d\tau^2+\frac{dr^2}{f(r)}+r^2d\varphi^2.
-$$
+$$\begin{align}
+ds_E^2 =f(r)d\tau^2+\frac{dr^2}{f(r)}+r^2d\varphi^2.
+\end{align}$$
 
 Smoothness at the tip of the Euclidean cigar requires
 
-$$
-\tau\sim\tau+\beta_H,
-\qquad
-\beta_H=\frac{2\pi\ell^2}{r_+}.
-$$
+$$\begin{align}
+\tau\sim\tau+\beta_H, \qquad \beta_H=\frac{2\pi\ell^2}{r_+}.
+\end{align}$$
 
 Let
 
-$$
+$$\begin{align}
 K_E=-\nabla_E^2+\mu^2.
-$$
+\end{align}$$
 
 The Euclidean Green function with this periodicity and standard AdS falloff analytically continues to the HHI two-point function. The Euclidean regularity condition fixes the state; it does not add a Lorentzian condition at the horizon.
 
@@ -49,97 +46,69 @@ Let $u^R_{\omega m}$ be the normalized positive-$\chi$-frequency modes supported
 
 The horizon-analytic combinations have the schematic form
 
-$$
-p^{(1)}_{\omega m}
-=\frac{
-u^R_{\omega m}
-+e^{-\beta_H\omega/2}\,
-\overline{u^L_{\omega,-m}}
-}{
-\sqrt{1-e^{-\beta_H\omega}}
+$$\begin{align}
+p^{(1)}_{\omega m} =\frac{ u^R_{\omega m} +e^{-\beta_H\omega/2}\, \overline{u^L_{\omega,-m}}
+}{ \sqrt{1-e^{-\beta_H\omega}}
 },
-$$
+\end{align}$$
 
-$$
-p^{(2)}_{\omega m}
-=\frac{
-u^L_{\omega m}
-+e^{-\beta_H\omega/2}\,
-\overline{u^R_{\omega,-m}}
-}{
-\sqrt{1-e^{-\beta_H\omega}}
+$$\begin{align}
+p^{(2)}_{\omega m} =\frac{ u^L_{\omega m} +e^{-\beta_H\omega/2}\, \overline{u^R_{\omega,-m}}
+}{ \sqrt{1-e^{-\beta_H\omega}}
 }.
-$$
+\end{align}$$
 
 The HHI state is annihilated by the operators multiplying these global positive-frequency modes.
 
 With infrared and ultraviolet regulators in place, the oscillator representation is formally
 
-$$
-|{\rm HHI}\rangle
-\propto
-\prod_{\omega,m}
-\sum_{n=0}^{\infty}
-e^{-\beta_H\omega n/2}
+$$\begin{align}
+|{\rm HHI}\rangle \propto \prod_{\omega,m}
+\sum_{n=0}^{\infty} e^{-\beta_H\omega n/2}
 |n_{\omega m}\rangle_R
 |n_{\omega m}\rangle_L.
-$$
+\end{align}$$
 
 and its right reduced density matrix is
 
-$$
-\rho_R
-=\operatorname{Tr}_L|{\rm HHI}\rangle\langle{\rm HHI}|
-=Z_R^{-1}e^{-\beta_H H_R}.
-$$
+$$\begin{align}
+\rho_R =\operatorname{Tr}_L|{\rm HHI}\rangle\langle{\rm HHI}| =Z_R^{-1}e^{-\beta_H H_R}.
+\end{align}$$
 
 In the continuum algebraic theory, the regulator-independent statement is that the restriction to the right-wedge algebra is KMS. A trace-class density matrix and the infinite tensor product written above are not literal continuum objects.
 
 The global Killing generator obeys
 
-$$
-H_\chi=H_R-H_L,
-\qquad
-H_\chi|{\rm HHI}\rangle=0.
-$$
+$$\begin{align}
+H_\chi=H_R-H_L, \qquad H_\chi|{\rm HHI}\rangle=0.
+\end{align}$$
 
 ## 3. Exterior two-point function
 
 Define the Bose factor
 
-$$
-n_\beta(\omega)
-=\frac1{e^{\beta_H\omega}-1}.
-$$
+$$\begin{align}
+n_\beta(\omega) =\frac1{e^{\beta_H\omega}-1}.
+\end{align}$$
 
 The right-exterior restriction of the HHI Wightman function is
 
-$$
-\boxed{
-W_{\rm HHI}^R(x,x')
-=\sum_{m\in\mathbb Z}\int_0^\infty d\omega
-\left[
-(1+n_\beta)
-u_{\omega m}(x)\bar u_{\omega m}(x')
-+n_\beta
-\bar u_{\omega m}(x)u_{\omega m}(x')
-\right]
+$$\begin{align}
+\boxed{ W_{\rm HHI}^R(x,x') =\sum_{m\in\mathbb Z}\int_0^\infty d\omega \left[ (1+n_\beta) u_{\omega m}(x)\bar u_{\omega m}(x') +n_\beta \bar u_{\omega m}(x)u_{\omega m}(x') \right]
 }.
-$$
+\end{align}$$
 
 Its antisymmetric part is
 
-$$
-W_{\rm HHI}^R(x,x')
--W_{\rm HHI}^R(x',x)
-=iE_{\mathcal R}(x,x'),
-$$
+$$\begin{align}
+W_{\rm HHI}^R(x,x') -W_{\rm HHI}^R(x',x) =iE_{\mathcal R}(x,x'),
+\end{align}$$
 
 because
 
-$$
+$$\begin{align}
 (1+n_\beta)-n_\beta=1.
-$$
+\end{align}$$
 
 Thus the temperature changes only the symmetric, state-dependent part of the two-point function. It does not change the causal propagator or the CCR.
 
@@ -147,28 +116,24 @@ Thus the temperature changes only the symmetric, state-dependent part of the two
 
 The Bose factor obeys
 
-$$
+$$\begin{align}
 (1+n_\beta)e^{-\beta_H\omega}=n_\beta.
-$$
+\end{align}$$
 
 Term by term in the spectral integral, this implies the KMS boundary relation
 
-$$
-W_{\rm HHI}^R(t-i\beta_H,\mathbf x;t',\mathbf x')
-=W_{\rm HHI}^R(t',\mathbf x';t,\mathbf x)
-$$
+$$\begin{align}
+W_{\rm HHI}^R(t-i\beta_H,\mathbf x;t',\mathbf x') =W_{\rm HHI}^R(t',\mathbf x';t,\mathbf x)
+\end{align}$$
 
 as the boundary values of functions analytic in the KMS strip.
 
 The Tolman temperature measured by a static observer is
 
-$$
-T_{\rm loc}(r)
-=\frac{1}{\beta_H\sqrt{-\chi^2}}
-=\frac{r_+}{
-2\pi\ell\sqrt{r^2-r_+^2}
+$$\begin{align}
+T_{\rm loc}(r) =\frac{1}{\beta_H\sqrt{-\chi^2}} =\frac{r_+}{ 2\pi\ell\sqrt{r^2-r_+^2}
 }.
-$$
+\end{align}$$
 
 Its divergence as $r\to r_+$ is the infinite acceleration of static observers, not a singularity of the HHI state in freely falling coordinates.
 
@@ -176,25 +141,21 @@ Its divergence as $r\to r_+$ is the infinite acceleration of static observers, n
 
 Euclidean BTZ is a quotient of $\mathbb H^3$. Let $\gamma$ generate the quotient. For the standard scalar,
 
-$$
-G_E^{\rm BTZ}(X,X')
-=\sum_{n\in\mathbb Z}
-G_\Delta^{\mathbb H^3}(X,\gamma^nX').
-$$
+$$\begin{align}
+G_E^{\rm BTZ}(X,X') =\sum_{n\in\mathbb Z} G_\Delta^{\mathbb H^3}(X,\gamma^nX').
+\end{align}$$
 
 For dimensionless geodesic separation
 
-$$
+$$\begin{align}
 s=\frac{d(X,X')}{\ell},
-$$
+\end{align}$$
 
 the covering-space Green kernel is
 
-$$
-G_\Delta^{\mathbb H^3}(s)
-=\frac1{4\pi\ell}
-\frac{e^{-(\Delta-1)s}}{\sinh s}.
-$$
+$$\begin{align}
+G_\Delta^{\mathbb H^3}(s) =\frac1{4\pi\ell} \frac{e^{-(\Delta-1)s}}{\sinh s}.
+\end{align}$$
 
 The $n=0$ term contains the universal local Hadamard singularity. Every $n\ne0$ term is smooth at coincidence away from the quotient singularity. Therefore:
 
@@ -223,9 +184,9 @@ Verified:
 1. Mathematica checked the Euclidean near-tip metric and $\beta_H=2\pi/\kappa$.
 2. The spectral formula algebraically satisfies
 
-$$
+$$\begin{align}
 W-W^{\rm T}=iE
-$$
+\end{align}$$
 
    and the Bose-factor KMS identity.
 3. Mathematica checked that $G_\Delta^{\mathbb H^3}$ solves $K_EG=0$ away from coincidence.

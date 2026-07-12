@@ -14,94 +14,65 @@ The test is a numerical check of distributional completeness. It is not a claim 
 
 Set
 
-$$
-\ell=r_+=1,
-\qquad
-x=-r_*.
-$$
+$$\begin{align}
+\ell=r_+=1, \qquad x=-r_*.
+\end{align}$$
 
 Then
 
-$$
-r=\coth x,
-\qquad
-z=1-\frac1{r^2}=\operatorname{sech}^2x,
-\qquad
-x\in(0,\infty).
-$$
+$$\begin{align}
+r=\coth x, \qquad z=1-\frac1{r^2}=\operatorname{sech}^2x, \qquad x\in(0,\infty).
+\end{align}$$
 
 The AdS boundary is $x=0$ and the horizon is $x=\infty$. The radial Klein-Gordon measure becomes
 
-$$
+$$\begin{align}
 \frac r f\,dr=\coth x\,dx
-$$
+\end{align}$$
 
 after reversing the radial orientation.
 
 For fixed $m$, the normalized modes obey
 
-$$
-2\int_0^\infty d\omega\,
-\omega R_{\omega m}(x)R_{\omega m}(x')
-=\frac{\delta(x-x')}{\coth x'}.
-$$
+$$\begin{align}
+2\int_0^\infty d\omega\, \omega R_{\omega m}(x)R_{\omega m}(x') =\frac{\delta(x-x')}{\coth x'}.
+\end{align}$$
 
 Therefore a test function $h$ should be reconstructed by
 
-$$
-h(x)
-=2\int_0^\infty d\omega\,
-\omega R_{\omega m}(x)
-\int_0^\infty dx'\,
-\coth x'\,R_{\omega m}(x')h(x').
-$$
+$$\begin{align}
+h(x) =2\int_0^\infty d\omega\, \omega R_{\omega m}(x) \int_0^\infty dx'\, \coth x'\,R_{\omega m}(x')h(x').
+\end{align}$$
 
 ## 2. Truncated reconstruction
 
 Define
 
-$$
-c_m(\omega)
-=\int_0^\infty dx'\,
-\coth x'\,R_{\omega m}(x')h(x')
-$$
+$$\begin{align}
+c_m(\omega) =\int_0^\infty dx'\, \coth x'\,R_{\omega m}(x')h(x')
+\end{align}$$
 
 and
 
-$$
-h_{\Lambda,m}(x)
-=2\int_0^\Lambda d\omega\,
-\omega R_{\omega m}(x)c_m(\omega).
-$$
+$$\begin{align}
+h_{\Lambda,m}(x) =2\int_0^\Lambda d\omega\, \omega R_{\omega m}(x)c_m(\omega).
+\end{align}$$
 
 The exact $\Delta=2$ radial mode used in the integration is
 
-$$
-R_{\omega m}(x)
-=N_{\omega m}\,
-z^{-i\omega/2}(1-z)\,
-{}_2F_1
-\left(
-1-\frac{i(\omega+m)}2,
-1-\frac{i(\omega-m)}2;
-2;
-1-z
-\right),
-$$
+$$\begin{align}
+R_{\omega m}(x) =N_{\omega m}\, z^{-i\omega/2}(1-z)\, {}_2F_1 \left( 1-\frac{i(\omega+m)}2, 1-\frac{i(\omega-m)}2; 2; 1-z \right),
+\end{align}$$
 
 where $z=\operatorname{sech}^2x$ and
 
-$$
-N_{\omega m}
-=\frac1{\sqrt{4\pi\omega}\,|A_{\omega m}|},
-$$
+$$\begin{align}
+N_{\omega m} =\frac1{\sqrt{4\pi\omega}\,|A_{\omega m}|},
+\end{align}$$
 
-$$
-A_{\omega m}
-=\frac{\Gamma(i\omega)}
-{\Gamma\!\left(1+\frac{i(\omega-m)}2\right)
- \Gamma\!\left(1+\frac{i(\omega+m)}2\right)}.
-$$
+$$\begin{align}
+A_{\omega m} =\frac{\Gamma(i\omega)} {\Gamma\!\left(1+\frac{i(\omega-m)}2\right) \Gamma\!\left(1+\frac{i(\omega+m)}2\right)}.
+\end{align}$$
 
 The numerical imaginary part of $R_{\omega m}$ stayed below roundoff at the sampled points, as required by the real standard-boundary solution.
 
@@ -128,11 +99,9 @@ $$
 
 Two supports were tested:
 
-$$
-(x_c,a)=(1.5,0.8),
-\qquad
-(x_c,a)=(2.3,0.7).
-$$
+$$\begin{align}
+(x_c,a)=(1.5,0.8), \qquad (x_c,a)=(2.3,0.7).
+\end{align}$$
 
 The first probes the middle exterior. The second is shifted toward the horizon.
 
@@ -170,17 +139,15 @@ For $(x_c,a)=(2.3,0.7)$, the maximum errors were
 
 At the center,
 
-$$
+$$\begin{align}
 h(2.3)=1,
-$$
+\end{align}$$
 
 while
 
-$$
-h_{12,0}(2.3)=0.979860,
-\qquad
-h_{12,1}(2.3)=0.979988.
-$$
+$$\begin{align}
+h_{12,0}(2.3)=0.979860, \qquad h_{12,1}(2.3)=0.979988.
+\end{align}$$
 
 The agreement between $m=0$ and $m=1$ shows that the reconstruction is not relying on an accidental simplification of the zero-angular-momentum sector.
 
@@ -188,24 +155,18 @@ The agreement between $m=0$ and $m=1$ shows that the reconstruction is not relyi
 
 The numerical test checks the combined statement
 
-$$
-\text{radial solution}
-+\text{horizon coefficient}
-+\text{KG normalization}
-+\text{Sturm--Liouville measure}
-\longrightarrow
+$$\begin{align}
+\text{radial solution} +\text{horizon coefficient} +\text{KG normalization} +\text{Sturm--Liouville measure} \longrightarrow
 \text{weak identity operator}.
-$$
+\end{align}$$
 
 The approximately factor-of-two decrease in the largest error when the cutoff is doubled is consistent with a finite-cutoff oscillatory approximation to a compactly supported smooth function.
 
 Together with self-adjointness of the radial operator, this supplies the missing benchmark evidence for the continuous spectral resolution used in
 
-$$
-iE_{\mathcal R}
-=\sum_m\int_0^\infty d\omega\,
-(u_{\omega m}\bar u_{\omega m}-\bar u_{\omega m}u_{\omega m}).
-$$
+$$\begin{align}
+iE_{\mathcal R} =\sum_m\int_0^\infty d\omega\, (u_{\omega m}\bar u_{\omega m}-\bar u_{\omega m}u_{\omega m}).
+\end{align}$$
 
 ## 7. Verification status
 

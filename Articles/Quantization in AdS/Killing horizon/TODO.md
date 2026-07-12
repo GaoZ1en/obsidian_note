@@ -21,19 +21,18 @@ Date: 2026-07-12
 
 - [x] Numerically truncate
 
-$$
-\sum_m\int_0^\infty d\omega\,
-(u_{\omega m}\bar u_{\omega m}-{\rm c.c.})
-$$
+$$\begin{align}
+\sum_m\int_0^\infty d\omega\, (u_{\omega m}\bar u_{\omega m}-{\rm c.c.})
+\end{align}$$
 
   and test the equal-time radial delta distribution against smooth compact test functions.
 
 - [x] Evaluate the $\Delta=2$ Euclidean and regulated Lorentzian mode integrals and compare them directly with the quotient image sum.
 - [x] Compute the radial Born correction
 
-$$
+$$\begin{align}
 G^{(1)}=-G_0\left(\frac{\lambda}{2}\mathcal I_\Delta\right)G_0
-$$
+\end{align}$$
 
   in fixed Euclidean $(k,m)$ sectors and record its Lorentzian continuation.
 

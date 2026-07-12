@@ -8,10 +8,9 @@ For the scalar field, the Killing vector $\chi=\partial_t$ defines the matter Ha
 
 The relevant matter charge is codimension one,
 
-$$
-H_\chi[\Sigma]
-=\int_\Sigma d\Sigma_a\,T^a{}_b\chi^b.
-$$
+$$\begin{align}
+H_\chi[\Sigma] =\int_\Sigma d\Sigma_a\,T^a{}_b\chi^b.
+\end{align}$$
 
 The gravitational entropy is instead a codimension-two Iyer-Wald surface charge built from the curvature dependence of the dynamical gravitational Lagrangian.
 
@@ -19,87 +18,69 @@ The gravitational entropy is instead a codimension-two Iyer-Wald surface charge 
 
 For the minimally coupled scalar,
 
-$$
-T_{ab}
-=\nabla_a\phi\nabla_b\phi
--\frac12g_{ab}
-\left[
-(\nabla\phi)^2+\mu^2\phi^2
-\right].
-$$
+$$\begin{align}
+T_{ab} =\nabla_a\phi\nabla_b\phi -\frac12g_{ab} \left[ (\nabla\phi)^2+\mu^2\phi^2 \right].
+\end{align}$$
 
 Define
 
-$$
+$$\begin{align}
 J_\chi^a=T^a{}_b\chi^b.
-$$
+\end{align}$$
 
 Off shell,
 
-$$
-\nabla_aJ_\chi^a
-=(P\phi)\,\mathcal L_\chi\phi
-+T^{ab}\nabla_{(a}\chi_{b)}.
-$$
+$$\begin{align}
+\nabla_aJ_\chi^a =(P\phi)\,\mathcal L_\chi\phi +T^{ab}\nabla_{(a}\chi_{b)}.
+\end{align}$$
 
 For a Killing field and a solution of $P\phi=0$,
 
-$$
+$$\begin{align}
 \nabla_aJ_\chi^a=0.
-$$
+\end{align}$$
 
 ## 2. Explicit exterior Hamiltonian
 
 On a $t={\rm const}$ slice of the right exterior,
 
-$$
-n^a=f^{-1/2}(\partial_t)^a,
-\qquad
-d\Sigma=\frac{r}{\sqrt f}\,dr\,d\varphi.
-$$
+$$\begin{align}
+n^a=f^{-1/2}(\partial_t)^a, \qquad d\Sigma=\frac{r}{\sqrt f}\,dr\,d\varphi.
+\end{align}$$
 
 Therefore
 
-$$
-\boxed{
-H_R
-=\frac12\int_{r_+}^{\infty}dr\int_0^{2\pi}d\varphi
-\left[
-\frac{r}{f}(\partial_t\phi)^2
-+rf(\partial_r\phi)^2
-+\frac1r(\partial_\varphi\phi)^2
-+r\mu^2\phi^2
-\right]
+$$\begin{align}
+\boxed{ H_R =\frac12\int_{r_+}^{\infty}dr\int_0^{2\pi}d\varphi \left[ \frac{r}{f}(\partial_t\phi)^2 +rf(\partial_r\phi)^2 +\frac1r(\partial_\varphi\phi)^2 +r\mu^2\phi^2 \right]
 }.
-$$
+\end{align}$$
 
 For $\mu^2\ge0$, the classical density is nonnegative in the exterior.
 
 With
 
-$$
+$$\begin{align}
 \pi=\frac{r}{f}\partial_t\phi
-$$
+\end{align}$$
 
 and the convention
 
-$$
+$$\begin{align}
 \Omega=\int\delta\pi\wedge\delta\phi,
-$$
+\end{align}$$
 
 the phase-space vector
 
-$$
+$$\begin{align}
 X_\chi\phi=\mathcal L_\chi\phi
-$$
+\end{align}$$
 
 satisfies
 
-$$
-\boxed{
-\delta H_\chi=\Omega(\delta,X_\chi)
+$$\begin{align}
+\boxed{ \delta H_\chi=\Omega(\delta,X_\chi)
 }.
-$$
+\end{align}$$
 
 This equation, with the slot order shown, is the precise Hamiltonian statement.
 
@@ -107,54 +88,47 @@ This equation, with the slot order shown, is the precise Hamiltonian statement.
 
 For the normalized real-frequency modes,
 
-$$
+$$\begin{align}
 \mathcal L_\chi u_{\omega m}=-i\omega u_{\omega m}.
-$$
+\end{align}$$
 
 After normal ordering,
 
-$$
-:H_R:
-=\sum_{m\in\mathbb Z}\int_0^\infty d\omega\,
-\omega\,
-\widehat a_{\omega m}^\dagger\widehat a_{\omega m}.
-$$
+$$\begin{align}
+:H_R: =\sum_{m\in\mathbb Z}\int_0^\infty d\omega\, \omega\, \widehat a_{\omega m}^\dagger\widehat a_{\omega m}.
+\end{align}$$
 
 It generates Killing evolution:
 
-$$
+$$\begin{align}
 i[:H_R:,\widehat\phi]=\mathcal L_\chi\widehat\phi.
-$$
+\end{align}$$
 
 On the full two-sided geometry, $\chi$ is future-directed in the right exterior and past-directed in the left exterior. The global generator is therefore
 
-$$
+$$\begin{align}
 H_\chi=H_R-H_L.
-$$
+\end{align}$$
 
 ## 4. Flux balance
 
 Integrating $\nabla_aJ_\chi^a=0$ over a region bounded by two hypersurfaces, the AdS boundary, and a future-horizon segment gives
 
-$$
-H_\chi[\Sigma_2]-H_\chi[\Sigma_1]
-=-\mathcal F_{\mathcal H^+}
--\mathcal F_{\mathscr I}.
-$$
+$$\begin{align}
+H_\chi[\Sigma_2]-H_\chi[\Sigma_1] =-\mathcal F_{\mathcal H^+} -\mathcal F_{\mathscr I}.
+\end{align}$$
 
 The standard reflecting AdS boundary condition gives
 
-$$
+$$\begin{align}
 \mathcal F_{\mathscr I}=0.
-$$
+\end{align}$$
 
 On the future horizon, $\chi$ is null and tangent to the generators. For the minimally coupled scalar,
 
-$$
-T_{ab}\chi^a\chi^b
-=\left(\mathcal L_\chi\phi\right)^2
-\ge0.
-$$
+$$\begin{align}
+T_{ab}\chi^a\chi^b =\left(\mathcal L_\chi\phi\right)^2 \ge0.
+\end{align}$$
 
 Thus the future-directed Killing-energy flux is nonnegative. This is the correct role of the Killing horizon in the matter charge problem:
 
@@ -168,37 +142,33 @@ There are three different quantities:
 
 1. The matter Killing Hamiltonian
 
-$$
+$$\begin{align}
 H_\chi=\int_\Sigma T^a{}_b\chi^b\,d\Sigma_a
-$$
+\end{align}$$
 
    generates time evolution and measures flux.
 
 2. The matter thermal entropy in the exterior is obtained from the state,
 
-$$
-S_{\rm matter}
-=\left(1-\beta\partial_\beta\right)\log Z_{\rm matter},
-$$
+$$\begin{align}
+S_{\rm matter} =\left(1-\beta\partial_\beta\right)\log Z_{\rm matter},
+\end{align}$$
 
    or from the reduced density matrix. It is not equal to $H_\chi$.
 
 3. The gravitational Wald entropy is
 
-$$
-S_{\rm Wald}
-=-2\pi\int_{\mathcal B}d^{D-2}x\sqrt h\,
-\frac{\partial \mathcal L}{\partial R_{abcd}}
-\epsilon_{ab}\epsilon_{cd},
-$$
+$$\begin{align}
+S_{\rm Wald} =-2\pi\int_{\mathcal B}d^{D-2}x\sqrt h\, \frac{\partial \mathcal L}{\partial R_{abcd}} \epsilon_{ab}\epsilon_{cd},
+\end{align}$$
 
    when $\mathcal L$ depends algebraically on the Riemann tensor; the displayed convention treats $\mathcal L$ as the scalar Lagrangian rather than the density.
 
 For the primary minimally coupled scalar,
 
-$$
+$$\begin{align}
 \frac{\partial \mathcal L_{\rm matter}}{\partial R_{abcd}}=0,
-$$
+\end{align}$$
 
 so it has no direct classical matter Wald term. A nonminimal term such as $-\xi R\phi^2/2$ changes this conclusion because it contributes to the curvature derivative of the Lagrangian.
 
@@ -210,19 +180,17 @@ Verified:
 
 1. Mathematica checked
 
-$$
-\nabla_a(T^a{}_b\chi^b)
-=(P\phi)\partial_t\phi
-$$
+$$\begin{align}
+\nabla_a(T^a{}_b\chi^b) =(P\phi)\partial_t\phi
+\end{align}$$
 
    componentwise on BTZ.
 2. Mathematica checked the displayed Hamiltonian density directly from $T_{ab}n^a\chi^b$.
 3. In ingoing regular coordinates, Mathematica checked
 
-$$
-T_{ab}\chi^a\chi^b|_{\mathcal H^+}
-=(\mathcal L_\chi\phi)^2.
-$$
+$$\begin{align}
+T_{ab}\chi^a\chi^b|_{\mathcal H^+} =(\mathcal L_\chi\phi)^2.
+\end{align}$$
 
 4. The oscillator commutator gives $i[H_R,\phi]=\mathcal L_\chi\phi$.
 
