@@ -380,8 +380,7 @@ s\Psi & =\int \mathrm{d}\tau\left[ B(N-1)+\frac{\xi}{2}B^{2}-\bar{c}\dot{c} \rig
 therefore the gauge-fixed action is
 
 $$\begin{align}
-S_{\mathrm{BRST}} & =\int \mathrm{d}\tau\left[ p\dot{q}+p_{t}\dot{t}-NC
-{}+B(N-1)+\frac{\xi}{2}B^{2}-\bar{c}\dot{c} \right].
+S_{\mathrm{BRST}} & =\int \mathrm{d}\tau\left[ p\dot{q}+p_{t}\dot{t}-NC {}+B(N-1)+\frac{\xi}{2}B^{2}-\bar{c}\dot{c} \right].
 \end{align}$$
 
 now the ghost is dynamical:
@@ -413,8 +412,7 @@ $$\begin{align}
 with
 
 $$\begin{align}
-\operatorname{Tr}'e^{s\partial_{\tau}^{2}} & = \sum _{n\in \mathbb{Z},\,n\neq 0}
-\exp\left[-s\left(\frac{2\pi n}{\beta}\right)^{2}\right].
+\operatorname{Tr}'e^{s\partial_{\tau}^{2}} & = \sum _{n\in \mathbb{Z},\,n\neq 0} \exp\left[-s\left(\frac{2\pi n}{\beta}\right)^{2}\right].
 \end{align}$$
 
 zeta regularization gives the standard circle result
