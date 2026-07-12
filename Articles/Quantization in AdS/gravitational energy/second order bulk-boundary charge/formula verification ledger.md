@@ -6,7 +6,7 @@ summary: "Tracks assumptions, sources, analytic derivations, and Mathematica/xAc
 
 # Formula verification ledger
 
-This ledger refers to “draft.md” in the same directory. It distinguishes definitions and quoted covariant identities from derived perturbative claims. The machine checks in this audit used Wolfram Language 14.3 with xAct packages xTensor, xPert, and xTras. The earlier BTZ xCoba component check remains recorded in “../inhomogeneous diffeomorphism charge expansion.md”; the proof below does not depend on that special geometry.
+This ledger refers to “draft.md” and “explicit perturbative formulas.md” in the same directory. It distinguishes definitions and quoted covariant identities from derived perturbative claims. The machine checks in this audit used Wolfram Language 14.3 with xAct packages xTensor, xPert, and xTras. The earlier BTZ xCoba component check remains recorded in “../inhomogeneous diffeomorphism charge expansion.md”; the proof below does not depend on that special geometry.
 
 ## V01. Background geometry and boundary notation
 
@@ -325,6 +325,68 @@ $$\begin{align}
 - Mathematica/xAct/xCoba check: Mathematica expansion of the cutoff boundary action reproduced the $\kappa^{-1}$ and $\kappa^0$ densities in (B.5a), including the quadratic radial term. The exponent arithmetic is analytic. The exact current identity is checked in V15.
 - Verification result: the action variation, symplectic form, and charge coefficients used in the draft are finite in the stated sector.
 - Draft status: included.
+
+## V25. Algebraic coefficient dictionary through cubic order
+
+- Formula/claim: Secs. 2--4 of “explicit perturbative formulas.md”: the inverse metric, volume density, density-weighted inverse metric, scalar-curvature contractions, cosmological Einstein coefficients, and gravitational density through $O(\kappa^3)$.
+- Assumptions: $g^{(0)}$ is nondegenerate; perturbative indices are moved only with $g^{(0)}$; the AdS simplifications use $R^{(0)}_{\mu\nu}=-2g^{(0)}_{\mu\nu}$ and $R^{(0)}=-6$.
+- Source/derivation: coefficient extraction from $g^{-1}g=1$, $\sqrt{\det(1+g_{(0)}^{-1}\delta g)}$, $P^{\mu\nu}=(\sqrt{-g}/\sqrt{-g^{(0)}})g^{\mu\nu}$, $R=g^{\mu\nu}R_{\mu\nu}$, and $\mathcal E_{\mu\nu}=R_{\mu\nu}-\frac12g_{\mu\nu}R-g_{\mu\nu}$.
+- Mathematica/xAct/xCoba check: Mathematica formed generic matrix series through cubic order and compared their derivatives at $\kappa=0$ with every displayed coefficient. The residual matrices for the inverse, determinant, and density-weighted inverse vanished through $O(\kappa^3)$. Independent contractions for $R$ vanished through $O(\kappa^3)$, and those for $\mathcal E$ vanished through $O(\kappa^2)$.
+- Verification result: all displayed algebraic coefficients have zero residual at the stated orders. The $O(\kappa^3)$ Einstein line is direct coefficient multiplication from the already checked Ricci and scalar dictionaries.
+- Companion-note status: included.
+
+## V26. Full connection variation and symplectic-potential coefficients
+
+- Formula/claim: Secs. 3.1 and 5.1--5.2 of “explicit perturbative formulas.md”: $C_{(1)}$, $C_{(2)}$, $C_{(3)}$, their field-space variations, and $\Theta^{[-1]}$, $\Theta^{[0]}$, and $\Theta^{[1]}$.
+- Assumptions: the background connection is fixed; $h$, $k$, $p$ and their variations are arbitrary symmetric covariant tensors; no gauge or equation of motion is used.
+- Source/derivation: expand the exact difference
+
+$$\begin{align}
+C^\rho{}_{\mu\nu}=\frac12g^{\rho\lambda}
+\left(\nabla^{(0)}_\mu g_{\lambda\nu}
++\nabla^{(0)}_\nu g_{\lambda\mu}
+-\nabla^{(0)}_\lambda g_{\mu\nu}\right)
+\end{align}$$
+
+  and then vary each coefficient. Insert the result and the $P_{(n)}$ coefficients into the exact Einstein--Hilbert potential (3.2).
+- Mathematica/xAct/xCoba check: Mathematica expanded the exact matrix-index connection through $O(\kappa^3)$ and differentiated it in an independent variation parameter; the residuals for $C_{(1)}$, $C_{(2)}$, $C_{(3)}$ and their displayed variations were zero. An xAct check substituted $P_{(1)}$ and $\delta C_{(1,2)}$ into the compact $\Theta^{[0]}$ formula, canonicalized the result, and returned zero against the fully expanded background-covariant expression.
+- Verification result: zero residual through the order needed for $\Theta_h^{[1]}$. The selected $\delta k=\delta p=0$ formulas are literal restrictions of the checked general result.
+- Companion-note status: included.
+
+## V27. Gauge-free radial boundary coefficients
+
+- Formula/claim: Sec. 7 of “explicit perturbative formulas.md”: $N$, $n^\mu$, $\gamma^{ab}$, $\sqrt{-\gamma}$, $K_{ab}$, $K$, $B_{ab}$, $\tau^a$, $\sqrt\sigma$, and the Brown--York charge densities $\mathcal Q_1$ and $\mathcal Q_2$.
+- Assumptions: constant-$r$ timelike boundary in global AdS$_3$; $f=1+r^2>0$; $r>0$; no radial gauge, so radial-tangential perturbations are allowed.
+- Source/derivation: $n_\mu=(g^{rr})^{-1/2}\delta^r_\mu$, $K_{ab}=-N\Gamma^r{}_{ab}$, $B_{ab}=K_{ab}-K\gamma_{ab}+\gamma_{ab}$, $\tau_a=-(-\gamma^{tt})^{-1/2}\delta_a^t$, and direct coefficient convolution of $\sqrt\sigma\,\tau^a\xi^bB_{ab}$.
+- Mathematica/xAct/xCoba check:
+  1. Mathematica expanded the exact radial normal and returned zero for its covariant, radial-contravariant, and tangential-contravariant residuals through $O(\kappa^2)$; $n^2-1$ also vanishes.
+  2. A generic symmetric $2\times2$ boundary metric and generic symmetric $K^{(0,1,2)}_{ab}$ gave zero residual for $\gamma^{-1}$, the trace coefficients, and every component of $B^{(0,1,2)}_{ab}$.
+  3. For $\gamma^{(0)}=\operatorname{diag}(-f,r^2)$ with general $h_{ab}$ and $k_{ab}$, the exact future normal and corner measure agreed with the displayed $M_n$, $\tau_{(n)}^a$, and $s_n$ coefficients. The normalization coefficients were $\{-1,0,0\}$.
+  4. A separate generic tensor convolution returned $\{0,0,0\}$ for $\mathcal Q_{0,1,2}$.
+- Verification result: all listed boundary series have zero algebraic residual. The formula $K_{ab}=-N\Gamma^r{}_{ab}$ is an exact coordinate identity following from $n_a=0$ and therefore keeps the $h_{ra}$ and $k_{ra}$ terms through $C_{(1,2)}$.
+- Companion-note status: included.
+
+## V28. Boundary-current coefficient identity
+
+- Formula/claim: Sec. 8.3 of “explicit perturbative formulas.md”:
+
+$$\begin{align}
+j_{\mathrm{EH},(n)}^\mu+j_{\Gamma,(n)}^\mu=j_{T,(n)}^\mu
+\end{align}$$
+
+  for every perturbative order $n$.
+- Assumptions: same renormalized action, orientation, and boundary projector as V12 and V15; $\xi^\mu$ is held fixed while the metric is expanded.
+- Source/derivation: coefficient extraction from the exact full-field currents (3.20)--(3.22), using the convolution definitions $b_{(n)}$, $d_{(n)}$, and $z_{(n)}$.
+- Mathematica/xAct/xCoba check: at fixed $n$, direct algebra gives
+
+$$\begin{align}
+\frac12(-K_n+2b_n-d_n+z_n)
++\frac12(-K_n+d_n-z_n)=-K_n+b_n.
+\end{align}$$
+
+  The underlying covariant full-field identity has zero residual in V15.
+- Verification result: the equality is coefficientwise and does not use the metric equations. Boundary-volume and corner-measure factors are separate convolutions, explicitly included in Sec. 7.6.
+- Companion-note status: included.
 
 ## Open verification boundary
 
