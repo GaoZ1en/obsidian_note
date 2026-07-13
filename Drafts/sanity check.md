@@ -11,58 +11,109 @@ This note records the sanity check of Appendix E.1 in `canonical3(3).pdf`, espec
 ## Verdict
 
 Equations (E.18) and (E.19) are missing an overall factor of $1/2$ if their left-hand sides are kept as
-$$-\tilde\Omega[\mathcal L_{\xi_0}\Phi;\Phi^*],\qquad -\tilde\Omega[\mathcal L_{\bar\xi_0}\Phi;\Phi^*].$$
+
+$$\begin{align}
+-\tilde\Omega[\mathcal L_{\xi_0}\Phi;\Phi^*],\qquad -\tilde\Omega[\mathcal L_{\bar\xi_0}\Phi;\Phi^*].
+\end{align}$$
 
 With the Killing-vector normalization used in the paper,
-$$\xi_0=\frac12(\partial_t-\partial_\phi),\qquad \bar\xi_0=\frac12(\partial_t+\partial_\phi),$$
+
+$$\begin{align}
+\xi_0=\frac12(\partial_t-\partial_\phi),\qquad \bar\xi_0=\frac12(\partial_t+\partial_\phi),
+\end{align}$$
+
 the right-hand sides currently printed in (E.18) and (E.19) match the generators for $\partial_t-\partial_\phi$ and $\partial_t+\partial_\phi$, respectively. Therefore either
-$$-\tilde\Omega[\mathcal L_{\xi_0}\Phi;\Phi^*]=\frac12(\text{right-hand side of E.18}),$$
+
+$$\begin{align}
+-\tilde\Omega[\mathcal L_{\xi_0}\Phi;\Phi^*]=\frac12(\text{right-hand side of E.18}),
+\end{align}$$
+
 and similarly for (E.19), or the left-hand sides should be rewritten with $\partial_t-\partial_\phi$ and $\partial_t+\partial_\phi$ in place of $\xi_0$ and $\bar\xi_0$.
 
 ## Conventions Used
 
 The check uses the global AdS$_3$ metric appearing in the paper,
-$$ds^2=-(r^2+1)dt^2+\frac{dr^2}{r^2+1}+r^2d\phi^2.$$
+
+$$\begin{align}
+ds^2=-(r^2+1)dt^2+\frac{dr^2}{r^2+1}+r^2d\phi^2.
+\end{align}$$
 
 On a $t=\mathrm{constant}$ slice,
-$$\sqrt{\sigma}\,\tau^t=\frac{r}{r^2+1}.$$
+
+$$\begin{align}
+\sqrt{\sigma}\,\tau^t=\frac{r}{r^2+1}.
+\end{align}$$
 
 The bilinear Noether charge density is read from (E.17):
-$$Q_{\xi}^{(2)}[\Phi_1;\Phi_2]=\int_{\Sigma}d^2x\,\sqrt{\sigma}\,\tau^\mu\xi^\nu\left(\nabla_\mu\Phi_1\nabla_\nu\Phi_2+\nabla_\nu\Phi_1\nabla_\mu\Phi_2-g_{\mu\nu}\nabla_\rho\Phi_1\nabla^\rho\Phi_2-\Delta(\Delta-2)g_{\mu\nu}\Phi_1\Phi_2\right).$$
+
+$$\begin{align}
+Q_{\xi}^{(2)}[\Phi_1;\Phi_2]=\int_{\Sigma}d^2x\,\sqrt{\sigma}\,\tau^\mu\xi^\nu\left(\nabla_\mu\Phi_1\nabla_\nu\Phi_2+\nabla_\nu\Phi_1\nabla_\mu\Phi_2-g_{\mu\nu}\nabla_\rho\Phi_1\nabla^\rho\Phi_2-\Delta(\Delta-2)g_{\mu\nu}\Phi_1\Phi_2\right).
+\end{align}$$
 
 For the check of (E.18), set $\Phi_1=\Phi$, $\Phi_2=\Phi^*$ and use the vector
-$$\partial_t-\partial_\phi.$$
+
+$$\begin{align}
+\partial_t-\partial_\phi.
+\end{align}$$
+
 For (E.19), use
-$$\partial_t+\partial_\phi.$$
+
+$$\begin{align}
+\partial_t+\partial_\phi.
+\end{align}$$
+
 The paper's actual Killing vectors are one half of these two vectors:
-$$\xi_0=\frac12(\partial_t-\partial_\phi),\qquad \bar\xi_0=\frac12(\partial_t+\partial_\phi).$$
+
+$$\begin{align}
+\xi_0=\frac12(\partial_t-\partial_\phi),\qquad \bar\xi_0=\frac12(\partial_t+\partial_\phi).
+\end{align}$$
 
 ## Algebraic Sanity Check
 
 Write
-$$T=\partial_t\Phi,\qquad P=\partial_\phi\Phi,\qquad R=\partial_r\Phi,\qquad F=\Phi.$$
+
+$$\begin{align}
+T=\partial_t\Phi,\qquad P=\partial_\phi\Phi,\qquad R=\partial_r\Phi,\qquad F=\Phi.
+\end{align}$$
 
 For $\partial_t-\partial_\phi$, the density from (E.17), before the final radial completion of the square, is
-$$\frac{r}{r^2+1}\left(2|T|^2-2\operatorname{Re}(TP^*)+(r^2+1)\left[-\frac{|T|^2}{r^2+1}+(r^2+1)|R|^2+\frac{|P|^2}{r^2}+\Delta(\Delta-2)|F|^2\right]\right).$$
+
+$$\begin{align}
+\frac{r}{r^2+1}\left(2|T|^2-2\operatorname{Re}(TP^*)+(r^2+1)\left[-\frac{|T|^2}{r^2+1}+(r^2+1)|R|^2+\frac{|P|^2}{r^2}+\Delta(\Delta-2)|F|^2\right]\right).
+\end{align}$$
 
 This is equivalent, up to the total radial derivative
-$$\partial_r(r^2|F|^2)=2r|F|^2+2r^2\operatorname{Re}(RF^*),$$
+
+$$\begin{align}
+\partial_r(r^2|F|^2)=2r|F|^2+2r^2\operatorname{Re}(RF^*),
+\end{align}$$
+
 to
-$$\frac{r}{r^2+1}|T-P|^2+\frac{1}{r(r^2+1)}|P|^2+r|R|^2+(\Delta-1)^2r|F|^2+r^3\left|R+\frac{1}{r}F\right|^2.$$
+
+$$\begin{align}
+\frac{r}{r^2+1}|T-P|^2+\frac{1}{r(r^2+1)}|P|^2+r|R|^2+(\Delta-1)^2r|F|^2+r^3\left|R+\frac{1}{r}F\right|^2.
+\end{align}$$
 
 This matches the printed right-hand side of (E.18). Hence the printed right-hand side is the expression for $\partial_t-\partial_\phi$, not for $\xi_0=\frac12(\partial_t-\partial_\phi)$.
 
 The same computation with $\partial_t+\partial_\phi$ gives the printed right-hand side of (E.19), so the same factor of $1/2$ is missing there if the left-hand side is kept as $\bar\xi_0$.
 
 The total derivative integrates to a boundary term
-$$\int_0^\infty dr\,\partial_r(r^2|\Phi|^2)=[r^2|\Phi|^2]_{0}^{\infty},$$
+
+$$\begin{align}
+\int_0^\infty dr\,\partial_r(r^2|\Phi|^2)=[r^2|\Phi|^2]_{0}^{\infty},
+\end{align}$$
+
 which vanishes for regular fields at $r=0$ and the $\Delta>1$ falloff used in Case I.
 
 ## Wolfram Language Code
 
 The following code is the Mathematica sanity check. It treats the independent quadratic quantities
 `t2`, `p2`, `r2v`, `f2`, `tp`, and `rf` as algebraic symbols standing for
-$$|T|^2,\quad |P|^2,\quad |R|^2,\quad |F|^2,\quad \operatorname{Re}(TP^*),\quad \operatorname{Re}(RF^*).$$
+
+$$\begin{align}
+|T|^2,\quad |P|^2,\quad |R|^2,\quad |F|^2,\quad \operatorname{Re}(TP^*),\quad \operatorname{Re}(RF^*).
+\end{align}$$
 
 ```wl
 Clear[rr, dd, t2, p2, r2v, f2, tp, rf, s];

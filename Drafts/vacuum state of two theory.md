@@ -104,5 +104,3 @@ $$\begin{align}
  & =\left( \frac{1}{2}\left( \sqrt{ \frac{\tilde{\mu}}{\mu} }+\sqrt{ \frac{\mu}{\tilde{\mu}} } \right) \right)^{-1/2} \prod ^{\infty}_{n=1} \left( \frac{1}{2}\left( \sqrt{\frac{\sqrt{\left( \frac{2\pi n}{L} \right)^{2}+\tilde{\mu} ^{2}}}{\sqrt{\left( \frac{2\pi n}{L} \right)^{2}+\mu ^{2}}}}+\sqrt{\frac{\sqrt{\left( \frac{2\pi n}{L} \right)^{2}+\mu ^{2}}}{\sqrt{\left( \frac{2\pi n}{L} \right)^{2}+\tilde{\mu} ^{2}}}} \right) \right)^{-1} \\
  & =\left( \frac{1}{2}\left( \sqrt{ \frac{\tilde{\mu}}{\mu} }+\sqrt{ \frac{\mu}{\tilde{\mu}} } \right) \right)^{-1/2}\prod ^{\infty}_{n=1} \left( \frac{1}{2}\left( \left( \frac{1+\left( \frac{\tilde{\mu}L}{2\pi n} \right)^{2}}{1+\left( \frac{\mu L}{2\pi n} \right)^{2}} \right)^{1/4}+ \left( \frac{1+\left( \frac{L\mu}{2\pi n} \right)^{2}}{1+\left( \frac{L\tilde{\mu}}{2\pi n} \right)^{2}} \right)^{1/4} \right) \right)^{-1} \\
 \end{align}$$
-
-
