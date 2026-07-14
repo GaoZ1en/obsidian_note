@@ -51,8 +51,7 @@ whose gradient does not preserve the falloff imposed on $A^\mu$. This does not m
 The gauge-fixed off-shell space is instead organized as
 
 $$\begin{align}
-A^\mu=A_{\mathrm{cov}}^\mu+\nabla^\mu\Lambda, \qquad
-\nabla_\mu A_{\mathrm{cov}}^\mu=0,
+A^\mu=A_{\mathrm{cov}}^\mu+\nabla^\mu\Lambda, \qquad \nabla_\mu A_{\mathrm{cov}}^\mu=0,
 \end{align}$$
 
 with boundary conditions imposed on the transverse and longitudinal sectors separately. Proper gauge parameters vanish at the boundary. In the normalizable mode sector considered below, this statement can be checked mode by mode by comparing with temporal gauge: the temporal-gauge physical modes and the covariant-gauge physical representatives differ by a gauge parameter with no logarithmic branch, and the proper null directions have
@@ -244,8 +243,7 @@ f_{m=0,n}^{\phi} & =0
 and the asymptotic behavior of the corresponding gauge parameter is
 
 $$\begin{align}
-\Lambda _{m=0,n} & \sim C_{0,n}e^{-i(2n+2)t} \frac{1}{1+r^{2}}
-{}_{2}F_{1}\left(-n,n+2;2;\frac{1}{1+r^{2}}\right) \\
+\Lambda _{m=0,n} & \sim C_{0,n}e^{-i(2n+2)t} \frac{1}{1+r^{2}} {}_{2}F_{1}\left(-n,n+2;2;\frac{1}{1+r^{2}}\right) \\
  & =\mathcal{O}(r^{-2})
 \end{align}$$
 
@@ -293,8 +291,7 @@ p&=|m|, & N&\geq 1, & \omega&=p+2N .
 For the $\displaystyle{m\geq 1}$ pair above, $\displaystyle{N=n+1}$. Up to an overall normalization,
 
 $$\begin{align}
-\Lambda _{m,N} &=C_{m,N}e^{-i(p+2N)t+im\phi} \frac{r^{p}}{(1+r^{2})^{p/2+1}}
-{}_{2}F_{1}\left(1-N,N+p+1;2;\frac{1}{1+r^{2}}\right),
+\Lambda _{m,N} &=C_{m,N}e^{-i(p+2N)t+im\phi} \frac{r^{p}}{(1+r^{2})^{p/2+1}} {}_{2}F_{1}\left(1-N,N+p+1;2;\frac{1}{1+r^{2}}\right),
 \end{align}$$
 
 and
