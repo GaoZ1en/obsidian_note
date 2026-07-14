@@ -1,423 +1,423 @@
-## perturbative quantities
+\section{perturbative quantities}\label{app:perturbative-quantities}
 
 all coefficients in this appendix are defined before imposing the metric equations. perturbative indices are raised and lowered with $\displaystyle{g^{(0)}}$, and antisymmetrization has weight one half. the exact background Killing vector $\displaystyle{\xi ^\mu}$ is held fixed when coefficients are extracted. the notation $\displaystyle{[\kappa ^n]F}$ denotes the coefficient of $\displaystyle{\kappa ^n}$ in $\displaystyle{F}$.
 
-### coefficient conventions and perturbative action
+\subsection{coefficient conventions and perturbative action}\label{subsec:coefficient-conventions}
 
 for later use, define
 
-$$
+\begin{align}
 \begin{gathered}
 h:=g^{(0)\mu \nu}h_{\mu \nu},\qquad k:=g^{(0)\mu \nu}k_{\mu \nu},\qquad p:=g^{(0)\mu \nu}p_{\mu \nu}, \\
 h_{2}:=h_{\mu \nu}h^{\mu \nu},\qquad hk:=h_{\mu \nu}k^{\mu \nu},\qquad h_{3}:=h_{\mu}{}^{\nu}h_{\nu}{}^{\rho}h_{\rho}{}^{\mu}.
 \end{gathered}
-$$
+\end{align}
 
 the inverse metric is written as
 
-$$\begin{align}
+\begin{align}
 g^{\mu \nu} & =\sum _{n=0}^{3}\kappa ^n q_{(n)}^{\mu \nu}+\mathcal{O}(\kappa ^4),
-\end{align}$$
+\end{align}
 
 with
 
-$$\begin{aligned}
+\[\begin{aligned}
 q_{(0)}^{\mu \nu} & =g^{(0)\mu \nu}, \\
 q_{(1)}^{\mu \nu} & =-h^{\mu \nu}, \\
 q_{(2)}^{\mu \nu} & =h^{\mu}{}_{\rho}h^{\rho \nu}-k^{\mu \nu}, \\
 q_{(3)}^{\mu \nu} & =-p^{\mu \nu}+h^{\mu}{}_{\rho}k^{\rho \nu}+k^{\mu}{}_{\rho}h^{\rho \nu}-h^{\mu}{}_{\rho}h^{\rho}{}_{\sigma}h^{\sigma \nu}.
-\end{aligned}$$
+\end{aligned}\]
 
 the volume density has the expansion
 
-$$\begin{align}
+\begin{align}
 \dfrac{\sqrt{-g}}{\sqrt{-g^{(0)}}} & =1+\kappa v_{1}+\kappa ^2v_{2}+\kappa ^3v_{3}+\mathcal{O}(\kappa ^4),
-\end{align}$$
+\end{align}
 
 where
 
-$$\begin{aligned}
+\[\begin{aligned}
 v_{1} & =\dfrac{1}{2}h, \\
 v_{2} & =\dfrac{1}{2}k+\dfrac{1}{8}h^{2}-\dfrac{1}{4}h_{2}, \\
 v_{3} & =\dfrac{1}{2}p+\dfrac{1}{4}h\,k-\dfrac{1}{2}hk+\dfrac{1}{48}h^{3}-\dfrac{1}{8}hh_{2}+\dfrac{1}{6}h_{3}.
-\end{aligned}$$
+\end{aligned}\]
 
 the connection difference is
 
-$$\begin{align}
+\begin{align}
 C^{\rho}{}_{\mu \nu} & :=\Gamma ^{\rho}{}_{\mu \nu}[g]-\Gamma ^{(0)\rho}{}_{\mu \nu}=\sum _{n=1}^{3}\kappa ^nC_{(n)}^{\rho}{}_{\mu \nu}+\mathcal{O}(\kappa ^4), \\
 \mathscr{C}[u]^{\rho}{}_{\mu \nu} & :=\dfrac{1}{2}g^{(0)\rho \lambda}\left(\nabla ^{(0)}_{\mu}u_{\lambda \nu}+\nabla ^{(0)}_{\nu}u_{\lambda \mu}-\nabla ^{(0)}_{\lambda}u_{\mu \nu}\right),
-\end{align}$$
+\end{align}
 
 and its first three coefficients are
 
-$$\begin{aligned}
+\[\begin{aligned}
 C_{(1)}^{\rho}{}_{\mu \nu} & =\mathscr{C}[h]^{\rho}{}_{\mu \nu}, \\
 C_{(2)}^{\rho}{}_{\mu \nu} & =\mathscr{C}[k]^{\rho}{}_{\mu \nu}-h^{\rho}{}_{\lambda}\mathscr{C}[h]^{\lambda}{}_{\mu \nu}, \\
 C_{(3)}^{\rho}{}_{\mu \nu} & =\mathscr{C}[p]^{\rho}{}_{\mu \nu}-h^{\rho}{}_{\lambda}\mathscr{C}[k]^{\lambda}{}_{\mu \nu} \\
 &\quad+\left(h^{\rho}{}_{\alpha}h^{\alpha}{}_{\lambda}-k^{\rho}{}_{\lambda}\right)\mathscr{C}[h]^{\lambda}{}_{\mu \nu}.
-\end{aligned}$$
+\end{aligned}\]
 
 the Ricci coefficients are determined by
 
-$$\begin{align}
+\begin{align}
 R_{\mu \nu}^{(n)} & =\nabla ^{(0)}_{\rho}C_{(n)}^{\rho}{}_{\mu \nu}-\nabla ^{(0)}_{\nu}C_{(n)}^{\rho}{}_{\mu \rho} \\
 &\quad+\sum _{r=1}^{n-1}\left(C_{(r)}^{\rho}{}_{\rho \lambda}C_{(n-r)}^{\lambda}{}_{\mu \nu}-C_{(r)}^{\rho}{}_{\nu \lambda}C_{(n-r)}^{\lambda}{}_{\mu \rho}\right), & n&=1,2,3,
-\end{align}$$
+\end{align}
 
 and the scalar-curvature coefficients are
 
-$$\begin{align}
+\begin{align}
 \mathcal{R}^{(n)} & :=\sum _{r=0}^{n}q_{(r)}^{\mu \nu}R_{\mu \nu}^{(n-r)}, & R_{\mu \nu}^{(0)}&=-2g_{\mu \nu}^{(0)}.
-\end{align}$$
+\end{align}
 
 expanding the gravitational density gives
 
-$$\begin{align}
+\begin{align}
 \dfrac{\sqrt{-g}}{\sqrt{-g^{(0)}}}(R+2) & =\ell _{0}+\kappa \ell _{1}+\kappa ^2\ell _{2}+\kappa ^3\ell _{3}+\mathcal{O}(\kappa ^4),
-\end{align}$$
+\end{align}
 
 with
 
-$$\begin{aligned}
+\[\begin{aligned}
 \ell _{0} & =-4, \\
 \ell _{1} & =\mathcal{R}^{(1)}-4v_{1}, \\
 \ell _{2} & =\mathcal{R}^{(2)}+v_{1}\mathcal{R}^{(1)}-4v_{2}, \\
 \ell _{3} & =\mathcal{R}^{(3)}+v_{1}\mathcal{R}^{(2)}+v_{2}\mathcal{R}^{(1)}-4v_{3}.
-\end{aligned}$$
+\end{aligned}\]
 
-these coefficients reproduce the notation of Sec. 1 through
+these coefficients reproduce the notation of Sec.~\ref{sec:theory-setup} through
 
-$$\begin{aligned}
+\[\begin{aligned}
 \ell _{0} & =\mathcal{L}_{g}^{(0)}, \\
 \ell _{1} & =\mathcal{L}_{g}^{(1)}[h], \\
 \ell _{2} & =\mathcal{L}_{g}^{(1)}[k]+\mathcal{L}_{g}^{(2)}[h,h], \\
 \ell _{3} & =\mathcal{L}_{g}^{(1)}[p]+2\mathcal{L}_{g}^{(2)}[h,k]+\mathcal{L}_{g}^{(3)}[h,h,h].
-\end{aligned}$$
+\end{aligned}\]
 
 the pure quadratic and cubic densities are obtained by setting the remaining perturbative fields to zero in $\displaystyle{\ell _2}$ and $\displaystyle{\ell _3}$. the mixed quadratic density is their polarization,
 
-$$\begin{align}
+\begin{align}
 \mathcal{L}_{g}^{(2)}[h,k] & :=\dfrac{1}{2}\left(\mathcal{L}_{g}^{(2)}[h+k,h+k]-\mathcal{L}_{g}^{(2)}[h,h]-\mathcal{L}_{g}^{(2)}[k,k]\right).
-\end{align}$$
+\end{align}
 
 in particular,
 
-$$\begin{align}
+\begin{align}
 \mathcal{L}_{g}^{(1)}[u] & =\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}u^{\mu \nu}-\nabla ^{(0)2}u.
-\end{align}$$
+\end{align}
 
 the timelike-boundary coefficients follow from the same expansion. tangential indices are raised with $\displaystyle{\gamma ^{(0)}}$, and we define
 
-$$
+\begin{align}
 \begin{gathered}
 h_{\partial}:=\gamma ^{(0)ab}h_{ab},\qquad k_{\partial}:=\gamma ^{(0)ab}k_{ab},\qquad p_{\partial}:=\gamma ^{(0)ab}p_{ab}, \\
 h_{\partial,2}:=h_{ab}h_{cd}\gamma ^{(0)ac}\gamma ^{(0)bd},\qquad (hk)_{\partial}:=h_{ab}k_{cd}\gamma ^{(0)ac}\gamma ^{(0)bd},\qquad h_{\partial,3}:=h_{a}{}^{b}h_{b}{}^{c}h_{c}{}^{a}.
 \end{gathered}
-$$
+\end{align}
 
 then
 
-$$\begin{align}
+\begin{align}
 \dfrac{\sqrt{-\gamma}}{\sqrt{-\gamma ^{(0)}}} & =1+\kappa w_{1}+\kappa ^2w_{2}+\kappa ^3w_{3}+\mathcal{O}(\kappa ^4),
-\end{align}$$
+\end{align}
 
 where
 
-$$\begin{aligned}
+\[\begin{aligned}
 w_{1} & =\dfrac{1}{2}h_{\partial}, \\
 w_{2} & =\dfrac{1}{2}k_{\partial}+\dfrac{1}{8}h_{\partial}^{2}-\dfrac{1}{4}h_{\partial,2}, \\
 w_{3} & =\dfrac{1}{2}p_{\partial}+\dfrac{1}{4}h_{\partial}k_{\partial}-\dfrac{1}{2}(hk)_{\partial}+\dfrac{1}{48}h_{\partial}^{3}-\dfrac{1}{8}h_{\partial}h_{\partial,2}+\dfrac{1}{6}h_{\partial,3}.
-\end{aligned}$$
+\end{aligned}\]
 
 for a constant-$\displaystyle{r}$ cylinder, set $\displaystyle{f=1+r^{2}}$ and write
 
-$$\begin{align}
+\begin{align}
 g^{rr} & =f+\kappa a_{1}+\kappa ^2a_{2}+\kappa ^3a_{3}+\mathcal{O}(\kappa ^4), & N&:=(g^{rr})^{-1/2}=\sum _{n=0}^{3}\kappa ^nN_{n}+\mathcal{O}(\kappa ^4),
-\end{align}$$
+\end{align}
 
 where $\displaystyle{a_{n}=q_{(n)}^{rr}}$ for $\displaystyle{n=1,2,3}$ and
 
-$$\begin{aligned}
+\[\begin{aligned}
 N_{0} & =f^{-1/2}, \\
 N_{1} & =-\dfrac{a_{1}}{2f^{3/2}}, \\
 N_{2} & =-\dfrac{a_{2}}{2f^{3/2}}+\dfrac{3a_{1}^{2}}{8f^{5/2}}, \\
 N_{3} & =-\dfrac{a_{3}}{2f^{3/2}}+\dfrac{3a_{1}a_{2}}{4f^{5/2}}-\dfrac{5a_{1}^{3}}{16f^{7/2}}.
-\end{aligned}$$
+\end{aligned}\]
 
 the outward normal is $\displaystyle{n_{\mu}=N\delta ^r_{\mu}}$. since $\displaystyle{n_{a}=0}$, the extrinsic curvature satisfies
 
-$$\begin{align}
+\begin{align}
 K_{ab} & =-N\Gamma ^r{}_{ab}[g]=\sum _{n=0}^{3}\kappa ^nK_{ab}^{(n)}+\mathcal{O}(\kappa ^4),
-\end{align}$$
+\end{align}
 
 with
 
-$$\begin{aligned}
+\[\begin{aligned}
 K_{ab}^{(0)} & =-N_{0}\Gamma ^{(0)r}{}_{ab}, \\
 K_{ab}^{(1)} & =-N_{1}\Gamma ^{(0)r}{}_{ab}-N_{0}C_{(1)}^{r}{}_{ab}, \\
 K_{ab}^{(2)} & =-N_{2}\Gamma ^{(0)r}{}_{ab}-N_{1}C_{(1)}^{r}{}_{ab}-N_{0}C_{(2)}^{r}{}_{ab}, \\
 K_{ab}^{(3)} & =-N_{3}\Gamma ^{(0)r}{}_{ab}-N_{2}C_{(1)}^{r}{}_{ab}-N_{1}C_{(2)}^{r}{}_{ab}-N_{0}C_{(3)}^{r}{}_{ab}.
-\end{aligned}$$
+\end{aligned}\]
 
 the contravariant normal coefficients are
 
-$$\begin{align}
+\begin{align}
 n_{(n)}^{\mu} & =\sum _{s=0}^{n}N_{s}q_{(n-s)}^{\mu r}, & n&=0,1,2,3.
-\end{align}$$
+\end{align}
 
 if $\displaystyle{\gamma ^{ab}=\sum _{n=0}^{3}\kappa ^n\bar q_{(n)}^{ab}}$, the intrinsic inverse coefficients are obtained by applying the inverse-metric formulas to the tangential matrices $\displaystyle{\gamma _{ab}^{(0)},h_{ab},k_{ab}}$, and $\displaystyle{p_{ab}}$:
 
-$$\begin{aligned}
+\[\begin{aligned}
 \bar q_{(0)}^{ab} & =\gamma ^{(0)ab}, \\
 \bar q_{(1)}^{ab} & =-h_{\parallel}^{ab}, \\
 \bar q_{(2)}^{ab} & =h_{\parallel}^{a}{}_{c}h_{\parallel}^{cb}-k_{\parallel}^{ab}, \\
 \bar q_{(3)}^{ab} & =-p_{\parallel}^{ab}+h_{\parallel}^{a}{}_{c}k_{\parallel}^{cb}+k_{\parallel}^{a}{}_{c}h_{\parallel}^{cb}-h_{\parallel}^{a}{}_{c}h_{\parallel}^{c}{}_{d}h_{\parallel}^{db}.
-\end{aligned}$$
+\end{aligned}\]
 
 the trace coefficients are therefore
 
-$$\begin{align}
+\begin{align}
 K^{(n)} & =\sum _{r=0}^{n}\bar q_{(r)}^{ab}K_{ab}^{(n-r)}, & n&=0,1,2,3.
-\end{align}$$
+\end{align}
 
-the four boundary-action coefficients appearing in Sec. 1 are
+the four boundary-action coefficients appearing in Sec.~\ref{sec:theory-setup} are
 
-$$\begin{aligned}
+\[\begin{aligned}
 S_{\Gamma}^{[-2]} & =\int _{\Gamma}\mathrm{d}^{2}x\sqrt{-\gamma ^{(0)}}\left(K^{(0)}-1\right), \\
 S_{\Gamma}^{[-1]}[h] & =\int _{\Gamma}\mathrm{d}^{2}x\sqrt{-\gamma ^{(0)}}\left[K^{(1)}+w_{1}\left(K^{(0)}-1\right)\right], \\
 S_{\Gamma}^{[0]}[h,k] & =\int _{\Gamma}\mathrm{d}^{2}x\sqrt{-\gamma ^{(0)}}\left[K^{(2)}+w_{1}K^{(1)}+w_{2}\left(K^{(0)}-1\right)\right], \\
 S_{\Gamma}^{[1]}[h,k,p] & =\int _{\Gamma}\mathrm{d}^{2}x\sqrt{-\gamma ^{(0)}}\left[K^{(3)}+w_{1}K^{(2)}+w_{2}K^{(1)}+w_{3}\left(K^{(0)}-1\right)\right].
-\end{aligned}$$
+\end{aligned}\]
 
-### second-order bulk quantities
+\subsection{second-order bulk quantities}\label{subsec:second-order-bulk-quantities}
 
 the pure-$\displaystyle{h}$ Ricci coefficients needed in the finite current are
 
-$$\begin{aligned}
+\[\begin{aligned}
 R_{\mu \nu}^{(1)}[h] & =\nabla ^{(0)}_{\rho}\mathscr{C}[h]^{\rho}{}_{\mu \nu}-\nabla ^{(0)}_{\nu}\mathscr{C}[h]^{\rho}{}_{\mu \rho}, \\
 R_{\mu \nu}^{(2)}[h,h] & =-\nabla ^{(0)}_{\rho}\left(h^{\rho}{}_{\lambda}\mathscr{C}[h]^{\lambda}{}_{\mu \nu}\right)+\nabla ^{(0)}_{\nu}\left(h^{\rho}{}_{\lambda}\mathscr{C}[h]^{\lambda}{}_{\mu \rho}\right) \\
 &\quad+\mathscr{C}[h]^{\rho}{}_{\rho \lambda}\mathscr{C}[h]^{\lambda}{}_{\mu \nu}-\mathscr{C}[h]^{\rho}{}_{\nu \lambda}\mathscr{C}[h]^{\lambda}{}_{\mu \rho}.
-\end{aligned}$$
+\end{aligned}\]
 
 on the unit-radius AdS$\displaystyle{_{3}}$ background, the corresponding scalar coefficients are
 
-$$\begin{aligned}
+\[\begin{aligned}
 \mathcal{R}^{(1)}[h] & =g^{(0)\mu \nu}R_{\mu \nu}^{(1)}[h]+2h, \\
 \mathcal{R}^{(2)}[h,h] & =g^{(0)\mu \nu}R_{\mu \nu}^{(2)}[h,h]-h^{\mu \nu}R_{\mu \nu}^{(1)}[h]-2h_{2}.
-\end{aligned}$$
+\end{aligned}\]
 
 the second-order cosmological Einstein coefficient is
 
-$$\begin{align}
+\begin{align}
 \mathcal{E}_{\mu \nu}^{[2]}[h,h] & =R_{\mu \nu}^{(2)}[h,h]-\dfrac{1}{2}g_{\mu \nu}^{(0)}\mathcal{R}^{(2)}[h,h]-\dfrac{1}{2}h_{\mu \nu}\mathcal{R}^{(1)}[h], \\
 T_{h}^{\mu \nu} & :=-\mathcal{E}^{[2],\mu \nu}[h,h].
-\end{align}$$
+\end{align}
 
 the equation-of-motion remainder in the quadratic-$\displaystyle{h}$ current is
 
-$$\begin{align}
+\begin{align}
 \mathcal{R}_{\xi,h}^{[0],\mu} & =\xi ^{\rho}h^{\mu \sigma}\mathcal{E}_{\sigma \rho}^{[1]}[h]-\dfrac{1}{2}h\xi _{\nu}\mathcal{E}^{[1],\mu \nu}[h].
-\end{align}$$
+\end{align}
 
 to display the quadratic surface tensor, define
 
-$$\begin{align}
+\begin{align}
 C_{(2)}[h,h]^{\rho}{}_{\mu \nu} & :=-h^{\rho}{}_{\lambda}\mathscr{C}[h]^{\lambda}{}_{\mu \nu},
-\end{align}$$
+\end{align}
 
 indices on the connection coefficients are moved with $\displaystyle{g^{(0)}}$; in particular, $\displaystyle{\mathscr{C}[h]^{\nu\mu}{}_{\rho}:=g^{(0)\mu\sigma}\mathscr{C}[h]^{\nu}{}_{\sigma\rho}}$, and similarly for $\displaystyle{C_{(2)}[h,h]^{\nu\mu}{}_{\rho}}$.
 
 then
 
-$$\begin{aligned}
+\[\begin{aligned}
 D_{1,\xi}^{\mu \nu} & :=-h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}+\mathscr{C}[h]^{\nu \mu}{}_{\rho}\xi ^{\rho}, \\
 D_{2,\xi}^{\mu \nu} & :=h^{\mu}{}_{\lambda}h^{\lambda \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}-h^{\mu \rho}\mathscr{C}[h]^{\nu}{}_{\rho \sigma}\xi ^{\sigma}+C_{(2)}[h,h]^{\nu \mu}{}_{\rho}\xi ^{\rho}.
-\end{aligned}$$
+\end{aligned}\]
 
 the required coefficient is
 
-$$\begin{align}
+\begin{align}
 S_{\xi,h}^{[0],\mu \nu}[h] & =\left(\dfrac{1}{8}h^{2}-\dfrac{1}{4}h_{2}\right)\nabla ^{(0)[\mu}\xi ^{\nu]}+\dfrac{1}{2}hD_{1,\xi}^{[\mu \nu]}+D_{2,\xi}^{[\mu \nu]}.
-\end{align}$$
+\end{align}
 
 equivalently, the background-subtracted Einstein-Hilbert surface density has the expansion
 
-$$\begin{align}
+\begin{align}
 \dfrac{1}{2\kappa ^2}\dfrac{\sqrt{-g}}{\sqrt{-g^{(0)}}}\left(\nabla ^{\mu}\xi ^{\nu}-\nabla ^{\nu}\xi ^{\mu}\right)\bigg|_{\mathrm{sub}} & =\dfrac{1}{\kappa}S_{\xi}^{\mu \nu}[h]+S_{\xi,h}^{[0],\mu \nu}[h]+S_{\xi}^{\mu \nu}[k]+\mathcal{O}(\kappa),
-\end{align}$$
+\end{align}
 
-where $\displaystyle{S_{\xi}^{\mu \nu}[u]}$ is the tensor defined in Sec. 2. this relation fixes the normalization of $\displaystyle{S_{\xi,h}^{[0],\mu \nu}}$ used below.
+where $\displaystyle{S_{\xi}^{\mu \nu}[u]}$ is the tensor defined in Sec.~\ref{sec:covariant-phase-space-charge-matching}. this relation fixes the normalization of $\displaystyle{S_{\xi,h}^{[0],\mu \nu}}$ used below.
 
 here $\displaystyle{|_{\mathrm{sub}}}$ denotes subtraction of the field-independent coefficient evaluated on $\displaystyle{g^{(0)}}$.
 
-### boundary and corner coefficients
+\subsection{boundary and corner coefficients}\label{subsec:boundary-corner-coefficients}
 
 write the boundary projector as
 
-$$\begin{align}
+\begin{align}
 \Pi ^{\mu \nu} & :=g^{\mu \nu}-n^{\mu}n^{\nu}=\sum _{n\geq 0}\kappa ^n\Pi _{(n)}^{\mu \nu}, & \Pi ^{\mu}{}_{\nu}&:=\delta ^{\mu}{}_{\nu}-n^{\mu}n_{\nu}=\sum _{n\geq 0}\kappa ^n\Pi _{(n)}^{\mu}{}_{\nu}.
-\end{align}$$
+\end{align}
 
 if $\displaystyle{n^{\mu}=\sum _{n\geq0}\kappa ^nn_{(n)}^{\mu}}$ and $\displaystyle{n_{(n)\mu}=N_{n}\delta ^r_{\mu}}$, then
 
-$$\begin{aligned}
+\[\begin{aligned}
 \Pi _{(n)}^{\mu \nu} & =q_{(n)}^{\mu \nu}-\sum _{r=0}^{n}n_{(r)}^{\mu}n_{(n-r)}^{\nu}, \\
 \Pi _{(n)}^{\mu}{}_{\nu} & =\delta _{n0}\delta ^{\mu}{}_{\nu}-\sum _{r=0}^{n}n_{(r)}^{\mu}n_{(n-r)\nu}.
-\end{aligned}$$
+\end{aligned}\]
 
 for tangential components, $\displaystyle{\Pi _{(n)}^{ab}=\bar q_{(n)}^{ab}}$.
 
 on the $\displaystyle{t=\text{constant}}$ corner inside $\displaystyle{\Gamma}$, set
 
-$$\begin{align}
+\begin{align}
 \tau _{a} & =-M\delta _{a}^{t}, & M&:=(-\gamma ^{tt})^{-1/2}, & \tau ^a&=-M\gamma ^{at}.
-\end{align}$$
+\end{align}
 
 writing $\displaystyle{-\gamma ^{tt}=F_{0}+\kappa F_{1}+\kappa ^2F_{2}+\mathcal{O}(\kappa ^3)}$ with $\displaystyle{F_{n}=-\bar q_{(n)}^{tt}}$ gives
 
-$$\begin{aligned}
+\[\begin{aligned}
 M_{0} & =F_{0}^{-1/2}, \\
 M_{1} & =-\dfrac{M_{0}F_{1}}{2F_{0}}, \\
 M_{2} & =M_{0}\left(-\dfrac{F_{2}}{2F_{0}}+\dfrac{3F_{1}^{2}}{8F_{0}^{2}}\right), \\
 \tau _{(n)}^{a} & =-\sum _{r=0}^{n}M_{r}\bar q_{(n-r)}^{at}, & \tau _{(n)a}&=-M_{n}\delta _a^t, & n&=0,1,2.
-\end{aligned}$$
+\end{aligned}\]
 
 the corner measure is
 
-$$\begin{align}
+\begin{align}
 \sqrt{q} & =r\left(1+\kappa s_{1}+\kappa ^2s_{2}\right)+\mathcal{O}(\kappa ^3), & s_{1}&=\dfrac{h_{\phi \phi}}{2r^{2}}, & s_{2}&=\dfrac{k_{\phi \phi}}{2r^{2}}-\dfrac{h_{\phi \phi}^{2}}{8r^{4}}.
-\end{align}$$
+\end{align}
 
 it is convenient to collect the measure and normal coefficients as
 
-$$\begin{align}
+\begin{align}
 \lambda _{(n)\mu} & :=[\kappa ^n]\left(\sqrt{q}\,\tau _{\mu}\right), & \lambda _{(n)}^{a}&:=[\kappa ^n]\left(\sqrt{q}\,\tau ^a\right), & n&=0,1,2.
-\end{align}$$
+\end{align}
 
 explicitly, for either index position,
 
-$$\begin{aligned}
+\[\begin{aligned}
 \lambda _{(0)} & =r\tau _{(0)}, \\
 \lambda _{(1)} & =r\left(\tau _{(1)}+s_{1}\tau _{(0)}\right), \\
 \lambda _{(2)} & =r\left(\tau _{(2)}+s_{1}\tau _{(1)}+s_{2}\tau _{(0)}\right).
-\end{aligned}$$
+\end{aligned}\]
 
 combining the descent current with the corner contraction evaluated at $\displaystyle{\delta g_{\mu \nu}=\mathcal{L}_{\xi}g_{\mu \nu}}$ gives the exact boundary current
 
-$$\begin{align}
+\begin{align}
 \mu _{\xi}^{\mu}-C_{\Gamma}^{\mu}[\mathcal{L}_{\xi}g] & =\dfrac{1}{2\kappa ^2}\left[-K^{\mu}{}_{\nu}\xi ^{\nu}+2(K-1)\Pi ^{\mu}{}_{\nu}\xi ^{\nu}-D^{\mu}(n\mathbin{\cdot}\xi)+\Pi ^{\mu \nu}n^{\rho}\nabla _{\rho}\xi _{\nu}\right].
-\end{align}$$
+\end{align}
 
 to expand it, define
 
-$$\begin{align}
+\begin{align}
 \chi _{n} & :=n_{(n)\mu}\xi ^{\mu}, & Z_{\rho \nu}:=\nabla _{\rho}\xi _{\nu}&=\sum _{n\geq0}\kappa ^nZ_{(n)\rho \nu},
-\end{align}$$
+\end{align}
 
 where
 
-$$\begin{aligned}
+\[\begin{aligned}
 Z_{(0)\rho \nu} & =g_{\nu \lambda}^{(0)}\nabla ^{(0)}_{\rho}\xi ^{\lambda}, \\
 Z_{(1)\rho \nu} & =h_{\nu \lambda}\nabla ^{(0)}_{\rho}\xi ^{\lambda}+g_{\nu \lambda}^{(0)}C_{(1)}^{\lambda}{}_{\rho \sigma}\xi ^{\sigma}, \\
 Z_{(2)\rho \nu} & =k_{\nu \lambda}\nabla ^{(0)}_{\rho}\xi ^{\lambda}+h_{\nu \lambda}C_{(1)}^{\lambda}{}_{\rho \sigma}\xi ^{\sigma}+g_{\nu \lambda}^{(0)}C_{(2)}^{\lambda}{}_{\rho \sigma}\xi ^{\sigma}.
-\end{aligned}$$
+\end{aligned}\]
 
 let $\displaystyle{\mathsf{K}_{(n)}^{\mu}{}_{\nu}:=[\kappa ^n]K^{\mu}{}_{\nu}}$ and define
 
-$$\begin{aligned}
+\[\begin{aligned}
 d_{(n)}^{\mu} & :=\sum _{r=0}^{n}\Pi _{(r)}^{\mu \nu}\partial _{\nu}\chi _{n-r}, \\
 z_{(n)}^{\mu} & :=\sum _{r+s+t=n}\Pi _{(r)}^{\mu \nu}n_{(s)}^{\rho}Z_{(t)\rho \nu}, \\
 b_{(n)}^{\mu} & :=\sum _{r+s=n}\left(K^{(r)}-\delta _{r0}\right)\Pi _{(s)}^{\mu}{}_{\nu}\xi ^{\nu}.
-\end{aligned}$$
+\end{aligned}\]
 
 the vector coefficients of the boundary contribution are
 
-$$\begin{align}
+\begin{align}
 j_{\Gamma,(n)}^{\mu} & :=\dfrac{1}{2}\left[-\mathsf{K}_{(n)}^{\mu}{}_{\nu}\xi ^{\nu}+2b_{(n)}^{\mu}-d_{(n)}^{\mu}+z_{(n)}^{\mu}\right], \\
 \mu _{\xi}^{\mu}-C_{\Gamma}^{\mu}[\mathcal{L}_{\xi}g] & =\dfrac{1}{\kappa ^2}\sum _{n\geq0}\kappa ^nj_{\Gamma,(n)}^{\mu}.
-\end{align}$$
+\end{align}
 
-choosing the charge integration constant by subtracting its value on $\displaystyle{g^{(0)}}$, the two boundary coefficients in Sec. 2 are
+choosing the charge integration constant by subtracting its value on $\displaystyle{g^{(0)}}$, the two boundary coefficients in Sec.~\ref{sec:covariant-phase-space-charge-matching} are
 
-$$\begin{aligned}
+\[\begin{aligned}
 \mathscr{H}_{\xi}^{[-1]} & =\lim _{r_{\infty}\to\infty}\int _{\partial\Sigma}\mathrm{d}\phi\left(\lambda _{(0)\mu}j_{\Gamma,(1)}^{\mu}+\lambda _{(1)\mu}j_{\Gamma,(0)}^{\mu}\right), \\
 \mathscr{H}_{\xi}^{[0]} & =\lim _{r_{\infty}\to\infty}\int _{\partial\Sigma}\mathrm{d}\phi\left(\lambda _{(0)\mu}j_{\Gamma,(2)}^{\mu}+\lambda _{(1)\mu}j_{\Gamma,(1)}^{\mu}+\lambda _{(2)\mu}j_{\Gamma,(0)}^{\mu}\right).
-\end{aligned}$$
+\end{aligned}\]
 
 the Brown-York coefficients are obtained from
 
-$$\begin{align}
+\begin{align}
 B_{ab} & :=K_{ab}-K\gamma _{ab}+\gamma _{ab}=B_{ab}^{(0)}+\kappa B_{ab}^{(1)}+\kappa ^2B_{ab}^{(2)}+\mathcal{O}(\kappa ^3),
-\end{align}$$
+\end{align}
 
 where
 
-$$\begin{aligned}
+\[\begin{aligned}
 B_{ab}^{(0)} & =K_{ab}^{(0)}-K^{(0)}\gamma _{ab}^{(0)}+\gamma _{ab}^{(0)}, \\
 B_{ab}^{(1)} & =K_{ab}^{(1)}-K^{(1)}\gamma _{ab}^{(0)}-K^{(0)}h_{ab}+h_{ab}, \\
 B_{ab}^{(2)} & =K_{ab}^{(2)}-K^{(2)}\gamma _{ab}^{(0)}-K^{(1)}h_{ab}-K^{(0)}k_{ab}+k_{ab}.
-\end{aligned}$$
+\end{aligned}\]
 
 write
 
-$$\begin{align}
+\begin{align}
 \sqrt{q}\,\tau ^a\xi ^bB_{ab} & =\mathcal{Q}_{0}+\kappa \mathcal{Q}_{1}+\kappa ^2\mathcal{Q}_{2}+\mathcal{O}(\kappa ^3).
-\end{align}$$
+\end{align}
 
 the three coefficients are
 
-$$\begin{aligned}
+\[\begin{aligned}
 \mathcal{Q}_{0} & =\lambda _{(0)}^{a}\xi ^bB_{ab}^{(0)}, \\
 \mathcal{Q}_{1} & =\lambda _{(0)}^{a}\xi ^bB_{ab}^{(1)}+\lambda _{(1)}^{a}\xi ^bB_{ab}^{(0)}, \\
 \mathcal{Q}_{2} & =\lambda _{(0)}^{a}\xi ^bB_{ab}^{(2)}+\lambda _{(1)}^{a}\xi ^bB_{ab}^{(1)}+\lambda _{(2)}^{a}\xi ^bB_{ab}^{(0)}.
-\end{aligned}$$
+\end{aligned}\]
 
 the global AdS$\displaystyle{_{3}}$ subtraction removes the field-independent coefficient
 
-$$\begin{align}
+\begin{align}
 H_{\xi,T}^{[-2]} & =-\lim _{r_{\infty}\to\infty}\int _{\partial\Sigma}\mathrm{d}\phi\,\mathcal{Q}_{0}.
-\end{align}$$
+\end{align}
 
 the remaining Brown-York coefficients are
 
-$$\begin{align}
+\begin{align}
 H_{\xi,T}^{[-1]} & =-\lim _{r_{\infty}\to\infty}\int _{\partial\Sigma}\mathrm{d}\phi\,\mathcal{Q}_{1}, & H_{\xi,T}^{[0]}&=-\lim _{r_{\infty}\to\infty}\int _{\partial\Sigma}\mathrm{d}\phi\,\mathcal{Q}_{2}.
-\end{align}$$
+\end{align}
 
-### coefficientwise matching
+\subsection{coefficientwise matching}\label{subsec:coefficientwise-matching}
 
 the Einstein-Hilbert surface current and the Brown-York current use the same coefficient dictionary:
 
-$$\begin{aligned}
+\[\begin{aligned}
 j_{\mathrm{EH},(n)}^{\mu} & :=\dfrac{1}{2}\left[-\mathsf{K}_{(n)}^{\mu}{}_{\nu}\xi ^{\nu}+d_{(n)}^{\mu}-z_{(n)}^{\mu}\right], \\
 j_{T,(n)}^{\mu} & :=-\mathsf{K}_{(n)}^{\mu}{}_{\nu}\xi ^{\nu}+b_{(n)}^{\mu}.
-\end{aligned}$$
+\end{aligned}\]
 
 the exact identity
 
-$$\begin{align}
+\begin{align}
 j_{\mathrm{EH},(n)}^{\mu}+j_{\Gamma,(n)}^{\mu} & =j_{T,(n)}^{\mu}
-\end{align}$$
+\end{align}
 
 holds at every order without imposing the metric equations. the first two Einstein-Hilbert coefficients are equivalently
 
-$$\begin{aligned}
+\[\begin{aligned}
 \lambda _{(0)\mu}j_{\mathrm{EH},(1)}^{\mu}+\lambda _{(1)\mu}j_{\mathrm{EH},(0)}^{\mu} & =\sqrt{q^{(0)}}\,\tau _{\mu}^{(0)}n_{\nu}^{(0)}S_{\xi}^{\mu \nu}[h], \\
 \lambda _{(0)\mu}j_{\mathrm{EH},(2)}^{\mu}+\lambda _{(1)\mu}j_{\mathrm{EH},(1)}^{\mu}+\lambda _{(2)\mu}j_{\mathrm{EH},(0)}^{\mu} & =\sqrt{q^{(0)}}\,\tau _{\mu}^{(0)}n_{\nu}^{(0)}\left(S_{\xi,h}^{[0],\mu \nu}[h]+S_{\xi}^{\mu \nu}[k]\right).
-\end{aligned}$$
+\end{aligned}\]
 
 contracting the coefficient identity with the corner measure therefore gives
 
-$$\begin{aligned}
+\[\begin{aligned}
 -\mathcal{Q}_{1} & =\sqrt{q^{(0)}}\,\tau _{\mu}^{(0)}n_{\nu}^{(0)}S_{\xi}^{\mu \nu}[h]+\lambda _{(0)\mu}j_{\Gamma,(1)}^{\mu}+\lambda _{(1)\mu}j_{\Gamma,(0)}^{\mu}, \\
 -\mathcal{Q}_{2} & =\sqrt{q^{(0)}}\,\tau _{\mu}^{(0)}n_{\nu}^{(0)}\left(S_{\xi,h}^{[0],\mu \nu}[h]+S_{\xi}^{\mu \nu}[k]\right) \\
 &\quad+\lambda _{(0)\mu}j_{\Gamma,(2)}^{\mu}+\lambda _{(1)\mu}j_{\Gamma,(1)}^{\mu}+\lambda _{(2)\mu}j_{\Gamma,(0)}^{\mu}.
-\end{aligned}$$
+\end{aligned}\]
 
-these are the two integrand identities used in Sec. 2. after imposing the leading and second-order metric equations at the point stated there, their integrals give
+these are the two integrand identities used in Sec.~\ref{sec:covariant-phase-space-charge-matching}. after imposing the leading and second-order metric equations at the point stated there, their integrals give
 
-$$\begin{align}
+\begin{align}
 H_{\xi}^{[-1]} & =\mathcal{H}_{\xi}^{[-1]}+\mathscr{H}_{\xi}^{[-1]}=H_{\xi,T}^{[-1]}, \\
 H_{\xi}^{[0]} & =\mathcal{H}_{\xi}^{[0]}+\mathscr{H}_{\xi}^{[0]}=H_{\xi,T}^{[0]}.
-\end{align}$$
+\end{align}

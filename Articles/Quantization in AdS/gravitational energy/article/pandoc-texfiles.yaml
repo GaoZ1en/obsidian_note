@@ -1,0 +1,56 @@
+pandoc:
+  from: markdown-auto_identifiers+wikilinks_title_after_pipe
+  to: latex
+  wrap: none
+  extra_args:
+    - "--shift-heading-level-by=-1"
+
+postprocess:
+  strip_heading_numbers: true
+  strip_appendix_prefix: true
+  inline_math: dollar
+  display_math: align
+  compact_blank_lines: true
+  heading_labels:
+    "Introduction": "sec:introduction"
+    "theory setup": "sec:theory-setup"
+    "spacetime and boundary geometry": "subsec:spacetime-boundary-geometry"
+    "full theory and asymptotic conditions": "subsec:full-theory-asymptotic-conditions"
+    "perturbative action": "subsec:perturbative-action"
+    "goal": "subsec:goal"
+    "covariant phase space and charge matching": "sec:covariant-phase-space-charge-matching"
+    "perturbative diffeomorphisms and the Noether charge": "subsec:perturbative-diffeomorphisms"
+    "bulk part of the Noether charge": "subsubsec:bulk-noether-charge"
+    "boundary part of the Noether charge": "subsubsec:boundary-noether-charge"
+    "charge matching": "subsec:charge-matching"
+    "perturbative quantities": "app:perturbative-quantities"
+    "coefficient conventions and perturbative action": "subsec:coefficient-conventions"
+    "second-order bulk quantities": "subsec:second-order-bulk-quantities"
+    "boundary and corner coefficients": "subsec:boundary-corner-coefficients"
+    "coefficientwise matching": "subsec:coefficientwise-matching"
+    "background-covariant tensor current and the Hilbert stress tensor": "app:matter-diffeomorphism-current"
+    "derivation from the full theory": "app:full-theory-derivation"
+    "Noether charge associated with diffeomorphisms": "subsec:full-theory-noether-charge"
+    "Conclusion and discussion": "sec:conclusion"
+  reference_replacements:
+    "Appendix A": 'Appendix~\ref{app:perturbative-quantities}'
+    "Appendix B": 'Appendix~\ref{app:matter-diffeomorphism-current}'
+    "Appendix C": 'Appendix~\ref{app:full-theory-derivation}'
+    "Sec. 1": 'Sec.~\ref{sec:theory-setup}'
+    "Sec. 2": 'Sec.~\ref{sec:covariant-phase-space-charge-matching}'
+
+fragments:
+  - source: "0_introduction.md"
+    target: "texfiles/data/introduction.tex"
+  - source: "1_model.md"
+    target: "texfiles/data/section_1.tex"
+  - source: "2_formalism.md"
+    target: "texfiles/data/section_2.tex"
+  - source: "a_perturbative quantities.md"
+    target: "texfiles/data/appendix_a.tex"
+  - source: "b_matter diffeomorphism current.md"
+    target: "texfiles/data/appendix_b.tex"
+  - source: "c_full theory derivation.md"
+    target: "texfiles/data/appendix_c.tex"
+  - source: "3_conclusion.md"
+    target: "texfiles/data/conclusion.tex"

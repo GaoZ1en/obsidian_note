@@ -1,0 +1,9 @@
+## Conclusion and discussion
+
+We have extended the perturbative identification between bulk and boundary conserved quantities to include the contribution of gravitational fluctuations. For Einstein gravity about global AdS$_3$, with Brown--Henneaux boundary conditions and an exact background Killing vector, the covariant phase-space charge obtained from the renormalized perturbative action agrees with the background-subtracted Brown--York charge through order $\kappa ^0$.
+
+The two perturbative orders have distinct bulk interpretations. The $\mathcal{O}(\kappa^{-1})$ term is the linear gravitational charge associated with $h_{\mu\nu}$. At $\mathcal{O}(\kappa^0)$, the bulk current contains both the leading classical matter stress tensor, $T_{\mu\nu}=\mathcal{O}(G^0)$, and the effective stress tensor quadratic in the first-order graviton. Imposing the second-order Einstein equation combines these contributions with the superpotential terms into the surface expression that appears in the Brown--York charge. The timelike-boundary and corner terms required for this equality are fixed by the variational principle for the renormalized action.
+
+The matter sector enters only through its Hilbert stress tensor under the assumptions used here: its non-normalizable sources are fixed, its pre-symplectic boundary term vanishes for allowed variations, and it carries no independent asymptotic surface charge. The result therefore applies to a broad class of diffeomorphism-covariant matter theories without specifying their detailed field content.
+
+Our analysis is restricted to Einstein gravity in three dimensions, exact Killing symmetries of the background, and the first two nontrivial coefficients of the perturbative charge. It would be useful to extend the construction to general asymptotic symmetries, matter sectors with independent boundary charges, higher-dimensional or higher-derivative theories, and higher orders in the gravitational expansion.
