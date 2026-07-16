@@ -19,48 +19,33 @@ Back to [[2026_07_13_overview]].
 
 The paper works on the expanding Poincaré patch,
 
-$$
-ds^2=dt^2-e^{2Ht}d\mathbf x^2
-=\Omega^2(\tau)(d\tau^2-d\mathbf x^2),
-\qquad
-\Omega(\tau)=-\frac{1}{H\tau},
-\qquad
-\tau<0.
-$$
+$$\begin{align}
+ds^2=dt^2-e^{2Ht}d\mathbf x^2 =\Omega^2(\tau)(d\tau^2-d\mathbf x^2), \qquad \Omega(\tau)=-\frac{1}{H\tau}, \qquad \tau<0.
+\end{align}$$
 
 The tetrad and flat gamma matrices are chosen as
 
-$$
-e^a{}_{\mu}=\Omega\delta^a_\mu,
-\qquad
-\gamma^0=\sigma_1,
-\qquad
-\gamma^1=i\sigma_2,
-\qquad
-\gamma^2=i\sigma_3.
-$$
+$$\begin{align}
+e^a{}_{\mu}=\Omega\delta^a_\mu, \qquad \gamma^0=\sigma_1, \qquad \gamma^1=i\sigma_2, \qquad \gamma^2=i\sigma_3.
+\end{align}$$
 
 A constant physical electric field in the $x$ direction is represented by
 
-$$
-A_1=-\frac{E}{H^2\tau},
-\qquad
-F_{01}=E\Omega^2.
-$$
+$$\begin{align}
+A_1=-\frac{E}{H^2\tau}, \qquad F_{01}=E\Omega^2.
+\end{align}$$
 
 The dimensionless field strength and momentum direction are
 
-$$
-\lambda=\frac{eE}{H^2},
-\qquad
-r=\frac{k_x}{k}.
-$$
+$$\begin{align}
+\lambda=\frac{eE}{H^2}, \qquad r=\frac{k_x}{k}.
+\end{align}$$
 
 The coordinate current computed in the paper is $J=J^1$. The locally measured orthonormal-frame component is
 
-$$
+$$\begin{align}
 j^{\hat x}=\Omega J.
-$$
+\end{align}$$
 
 This distinction is essential for interpreting the plots and strong-field limit.
 
@@ -68,15 +53,9 @@ This distinction is essential for interpreting the plots and strong-field limit.
 
 After the rescaling $\widetilde\psi=\Omega\psi$, the massless Dirac equation is squared into Whittaker equations for the two spinor components. The Whittaker parameters are
 
-$$
-z_\pm=\pm2ik\tau,
-\qquad
-\kappa=i\lambda r,
-\qquad
-\gamma=i\lambda,
-\qquad
-\gamma_s=\gamma-\frac{(-1)^s}{2}.
-$$
+$$\begin{align}
+z_\pm=\pm2ik\tau, \qquad \kappa=i\lambda r, \qquad \gamma=i\lambda, \qquad \gamma_s=\gamma-\frac{(-1)^s}{2}.
+\end{align}$$
 
 The early-time limit $\tau\to-\infty$ selects $W_{\kappa,\gamma_s}$ modes with positive or negative Minkowski-like frequency and defines the in-vacuum. The late-time limit $\tau\to0^-$ uses $M_{\kappa,\gamma_s}$ modes to define an out basis, although the current calculation itself uses the in-state.
 
@@ -86,10 +65,9 @@ The source calls this state Bunch-Davies and Hadamard. Because the external elec
 
 The field operator is expanded in normalized in-modes and substituted into
 
-$$
-J^\mu=e\bar\psi\gamma^\mu\psi.
-\tag{3.1}
-$$
+$$\begin{align}
+J^\mu=e\bar\psi\gamma^\mu\psi. \tag{3.1}
+\end{align}$$
 
 After angular variables and a momentum cutoff $\Lambda$ are introduced, the mode integral becomes Eq. (3.3). Appendix B evaluates it by Mellin-Barnes representations and residue sums, producing the bare current in Eq. (3.5). The result contains a linear ultraviolet divergence and a finite combination of modified Bessel functions and digamma functions.
 
@@ -99,52 +77,37 @@ The complete Appendix B residue chain was inspected but not independently reprod
 
 The two spinor components obey
 
-$$
-\left[
-\partial_\tau^2+\omega^2(\tau)
-+i(-1)^s\sigma(\tau)
-\right]U_s(\tau)=0,
-\tag{4.1}
-$$
+$$\begin{align}
+\left[ \partial_\tau^2+\omega^2(\tau) +i(-1)^s\sigma(\tau) \right]U_s(\tau)=0, \tag{4.1}
+\end{align}$$
 
 with
 
-$$
-\omega^2=k^2+2\lambda H\Omega kr
-+\lambda^2H^2\Omega^2,
-\qquad
-\sigma=\lambda\Omega^2H^2.
-\tag{4.2}
-$$
+$$\begin{align}
+\omega^2=k^2+2\lambda H\Omega kr +\lambda^2H^2\Omega^2, \qquad \sigma=\lambda\Omega^2H^2. \tag{4.2}
+\end{align}$$
 
 The WKB ansatz is
 
-$$
-U_s(\tau)=N_s\exp\left[
--i\int^\tau d\tau'
-\bigl(X_s(\tau')+iY_s(\tau')\bigr)
-\right].
-\tag{4.3}
-$$
+$$\begin{align}
+U_s(\tau)=N_s\exp\left[ -i\int^\tau d\tau' \bigl(X_s(\tau')+iY_s(\tau')\bigr) \right]. \tag{4.3}
+\end{align}$$
 
 Substitution gives
 
-$$
+$$\begin{align}
 X_s^2-Y_s^2-\dot Y_s-\omega^2=0,
-$$
+\end{align}$$
 
-$$
-\dot X_s+2X_sY_s-(-1)^s\sigma=0.
-\tag{4.4-4.5}
-$$
+$$\begin{align}
+\dot X_s+2X_sY_s-(-1)^s\sigma=0. \tag{4.4-4.5}
+\end{align}$$
 
 At the stated adiabatic order,
 
-$$
-Y_s=\frac{(-1)^s\sigma}{2X_s},
-\qquad
-X_s=\omega\bigl[1+O(\omega^{-2})\bigr].
-$$
+$$\begin{align}
+Y_s=\frac{(-1)^s\sigma}{2X_s}, \qquad X_s=\omega\bigl[1+O(\omega^{-2})\bigr].
+\end{align}$$
 
 The source then derives a component ratio from the first-order Dirac equation, normalizes $|U_1|^2+|U_2|^2=1$, inserts these adiabatic modes into the current, extracts the linear counterterm, and subtracts it from Eq. (3.5).
 
@@ -180,27 +143,21 @@ Here $I_0$ and $I_1$ are modified Bessel functions and $\Psi$ is the digamma fun
 
 In the weak-field limit, Eq. (5.5) gives
 
-$$
-J=-\frac{eH^2}{16}\Omega^{-1}\lambda
-+O(\lambda^3),
-$$
+$$\begin{align}
+J=-\frac{eH^2}{16}\Omega^{-1}\lambda +O(\lambda^3),
+\end{align}$$
 
 or, for the orthonormal-frame current,
 
-$$
-\frac{j^{\hat x}}{eH^2}
-=-\frac{\lambda}{16}+O(\lambda^3).
-$$
+$$\begin{align}
+\frac{j^{\hat x}}{eH^2} =-\frac{\lambda}{16}+O(\lambda^3).
+\end{align}$$
 
 The printed strong-field equation omits the tetrad factor. Consistency with Eq. (4.16) and the plot normalization requires
 
-$$
-\frac{|j^{\hat x}|}{eH^2}
-=\frac{|\Omega J|}{eH^2}
-\simeq\frac{\lambda^{3/2}}{4\pi^2},
-\qquad
-\lambda\gg1.
-$$
+$$\begin{align}
+\frac{|j^{\hat x}|}{eH^2} =\frac{|\Omega J|}{eH^2} \simeq\frac{\lambda^{3/2}}{4\pi^2}, \qquad \lambda\gg1.
+\end{align}$$
 
 This is the $E^{3/2}$ Schwinger scaling of a $2+1$-dimensional theory. At fixed physical electric field, the result still contains a secular $1/H$ timescale. It should not be read as a finite stationary-current limit obtained merely by setting $H\to0$.
 
@@ -208,29 +165,22 @@ This is the $E^{3/2}$ Schwinger scaling of a $2+1$-dimensional theory. At fixed 
 
 The printed Eqs. (4.10) and (4.12) imply
 
-$$
-\frac{U_2}{U_1}
-=\frac{i(\omega+kr+\lambda H\Omega)}
-{k\sqrt{1-r^2}},
-\qquad
-J_A\propto|U_1|^2-|U_2|^2.
-$$
+$$\begin{align}
+\frac{U_2}{U_1} =\frac{i(\omega+kr+\lambda H\Omega)} {k\sqrt{1-r^2}}, \qquad J_A\propto|U_1|^2-|U_2|^2.
+\end{align}$$
 
 Using the stated normalization gives
 
-$$
+$$\begin{align}
 \frac{|U_1|^2-|U_2|^2}
-{|U_1|^2+|U_2|^2}
-=-
-\frac{\lambda+pr}
-{\sqrt{p^2+2\lambda pr+\lambda^2}}.
-$$
+{|U_1|^2+|U_2|^2} =- \frac{\lambda+pr} {\sqrt{p^2+2\lambda pr+\lambda^2}}.
+\end{align}$$
 
 Its ultraviolet angular integral is $-\pi\lambda/2$. These printed inputs therefore produce the counterterm
 
-$$
+$$\begin{align}
 -\frac{eH^2\Omega^{-1}}{4\pi}\lambda\Lambda,
-$$
+\end{align}$$
 
 whereas Eq. (4.14) prints the positive sign. The bare divergence in Eq. (3.5) is positive, so cancellation requires the positive Eq. (4.14). At least one of Eqs. (4.10), (4.12), and (4.14) has a sign error. Downstream claims that depend on the printed derivation cannot be treated as independently established until the convention chain is repaired.
 
@@ -250,20 +200,16 @@ For AdS$_3$ applications, the spectral equation and special-function techniques 
 - Direct symbolic simplification of the printed Eqs. (4.10) and (4.12) gives the negative counterterm sign above, establishing the internal sign failure.
 - Independent numerical evaluation of Eq. (4.16) gives
 
-  $$
-  \lambda=(0.01,0.03,0.1)
-  \quad\Rightarrow\quad
-  \frac{\Omega J}{eH^2}
-  =(-0.0006250020,-0.0018750550,-0.006252034),
-  $$
+$$\begin{align}
+\lambda=(0.01,0.03,0.1) \quad\Rightarrow\quad \frac{\Omega J}{eH^2} =(-0.0006250020,-0.0018750550,-0.006252034),
+\end{align}$$
 
   which approaches slope $-1/16$.
 - For $\lambda=(30,50,100)$,
 
-  $$
-  \frac{|\Omega J|}{eH^2\lambda^{3/2}}
-  =(0.027507,0.026701,0.026059),
-  $$
+$$\begin{align}
+\frac{|\Omega J|}{eH^2\lambda^{3/2}} =(0.027507,0.026701,0.026059),
+\end{align}$$
 
   approaching $1/(4\pi^2)=0.0253303$.
 

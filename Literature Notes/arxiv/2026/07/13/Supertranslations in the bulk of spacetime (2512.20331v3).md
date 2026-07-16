@@ -24,32 +24,21 @@ The End Matter is essential rather than optional. It records the Newman-Unti inv
 
 In Newman-Unti coordinates $(u,r,x^a)$, the hypersurfaces $u=\mathrm{const}$ are null and $r$ is an affine parameter along their generators. The inverse metric obeys
 
-$$
-g^{uu}=0,
-\qquad
-g^{ur}=-1,
-\qquad
-g^{ua}=0.
-\tag{19}
-$$
+$$\begin{align}
+g^{uu}=0, \qquad g^{ur}=-1, \qquad g^{ua}=0. \tag{19}
+\end{align}$$
 
 The normal $\ell=du$ is first a null covector; after raising its index it is tangent to the null generators. A second foliation is described by
 
-$$
-\bar u=u+f(r,x^a),
-\qquad
-\bar\ell=d\bar u.
-$$
+$$\begin{align}
+\bar u=u+f(r,x^a), \qquad \bar\ell=d\bar u.
+\end{align}$$
 
 Imposing $g^{-1}(d\bar u,d\bar u)=0$ gives
 
-$$
-g^{rr}(\partial_r f)^2
--2\partial_r f
-+2g^{ra}\partial_r f\,\partial_a f
-+g^{ab}\partial_a f\,\partial_b f=0.
-\tag{1}
-$$
+$$\begin{align}
+g^{rr}(\partial_r f)^2 -2\partial_r f +2g^{ra}\partial_r f\,\partial_a f +g^{ab}\partial_a f\,\partial_b f=0. \tag{1}
+\end{align}$$
 
 The paper defines a residual transformation by a scalar $H$ for which $dH$ is null, and a supertranslation by such a transformation modulo rescaling of the null normal. Boundary data $f_0$ at null infinity or at a finite null surface are extended into the bulk by solving the nonlinear first-order equation for $f$.
 
@@ -59,66 +48,45 @@ This is a geometric definition of a change of foliation. It does not by itself p
 
 For
 
-$$
-ds^2=-2,du,dr+2r^2dz,d\bar z,
-\tag{2}
-$$
+$$\begin{align}
+ds^2=-2,du,dr+2r^2dz,d\bar z, \tag{2}
+\end{align}$$
 
 Eq. (1) reduces to
 
-$$
-\partial_r f
-=\frac{1}{r^2}\partial_z f\,\partial_{\bar z}f.
-\tag{3}
-$$
+$$\begin{align}
+\partial_r f =\frac{1}{r^2}\partial_z f\,\partial_{\bar z}f. \tag{3}
+\end{align}$$
 
 With $p_r=\partial_r f$, $p=\partial_z f$, and $\bar p=\partial_{\bar z}f$, the Hamilton-Jacobi function is
 
-$$
-F=p_r-\frac{p\bar p}{r^2}=0.
-\tag{4}
-$$
+$$\begin{align}
+F=p_r-\frac{p\bar p}{r^2}=0. \tag{4}
+\end{align}$$
 
 The characteristic equations are
 
-$$
-\frac{dr}{ds}=1,
-\qquad
-\frac{dz}{ds}=-\frac{\bar p}{r^2},
-\qquad
-\frac{d\bar z}{ds}=-\frac{p}{r^2},
-\qquad
-\frac{dp}{ds}=\frac{d\bar p}{ds}=0.
-\tag{5}
-$$
+$$\begin{align}
+\frac{dr}{ds}=1, \qquad \frac{dz}{ds}=-\frac{\bar p}{r^2}, \qquad \frac{d\bar z}{ds}=-\frac{p}{r^2}, \qquad \frac{dp}{ds}=\frac{d\bar p}{ds}=0. \tag{5}
+\end{align}$$
 
 Their angular integrals define characteristic labels $(\zeta,\bar\zeta)$,
 
-$$
-z=\zeta+\frac{\bar p}{r},
-\qquad
-\bar z=\bar\zeta+\frac{p}{r}.
-\tag{6}
-$$
+$$\begin{align}
+z=\zeta+\frac{\bar p}{r}, \qquad \bar z=\bar\zeta+\frac{p}{r}. \tag{6}
+\end{align}$$
 
 Along the characteristic,
 
-$$
-\frac{df}{ds}=-\frac{p\bar p}{r^2},
-\qquad
-f=f_0(\zeta,\bar\zeta)+\frac{p\bar p}{r},
-\tag{7}
-$$
+$$\begin{align}
+\frac{df}{ds}=-\frac{p\bar p}{r^2}, \qquad f=f_0(\zeta,\bar\zeta)+\frac{p\bar p}{r}, \tag{7}
+\end{align}$$
 
 and the data at $r\to\infty$ fix $p=\partial_\zeta f_0$ and $\bar p=\partial_{\bar\zeta}f_0$. The resulting finite coordinate relation includes
 
-$$
-u=\bar u-f_0
--\frac{\partial_\zeta f_0\partial_{\bar\zeta}f_0}{r},
-\qquad
-z=\zeta+\frac{\partial_{\bar\zeta}f_0}{r},
-\tag{8}
-$$
+$$\begin{align}
+u=\bar u-f_0 -\frac{\partial_\zeta f_0\partial_{\bar\zeta}f_0}{r}, \qquad z=\zeta+\frac{\partial_{\bar\zeta}f_0}{r}, \tag{8}
+\end{align}$$
 
 with the complex-conjugate equation for $\bar z$. The boundary datum $f_0$ labels a cross-section at null infinity; the characteristic flow propagates it to a bulk null hypersurface.
 
@@ -126,31 +94,21 @@ with the complex-conjugate equation for $\bar z$. The boundary datum $f_0$ label
 
 The memory effect concerns the congruence and its light front, not the curvature of each individual Minkowski null ray. Define
 
-$$
-R=\bar r+\partial_\zeta\partial_{\bar\zeta}f_0,
-\qquad
-B=(\partial_\zeta^2f_0)(\partial_{\bar\zeta}^2f_0),
-\qquad
-\Delta=R^2-B.
-$$
+$$\begin{align}
+R=\bar r+\partial_\zeta\partial_{\bar\zeta}f_0, \qquad B=(\partial_\zeta^2f_0)(\partial_{\bar\zeta}^2f_0), \qquad \Delta=R^2-B.
+\end{align}$$
 
 The transformed congruence has
 
-$$
-\widehat\sigma_{\zeta\zeta}
-=\frac{\partial_\zeta^2f_0(R^2+B)}{\Delta},
-\qquad
-\widehat\sigma_{\zeta\bar\zeta}
-=\frac{2RB}{\Delta},
-\tag{9}
-$$
+$$\begin{align}
+\widehat\sigma_{\zeta\zeta} =\frac{\partial_\zeta^2f_0(R^2+B)}{\Delta}, \qquad \widehat\sigma_{\zeta\bar\zeta} =\frac{2RB}{\Delta}, \tag{9}
+\end{align}$$
 
 and expansion
 
-$$
-\theta=-\frac{2R}{\Delta}.
-\tag{10}
-$$
+$$\begin{align}
+\theta=-\frac{2R}{\Delta}. \tag{10}
+\end{align}$$
 
 At large radius, $\theta\sim-2/r$. The paper identifies the asymptotic Newman-Penrose shear with $\sigma^0=\partial_{\bar\zeta}^2f_0$. A complete comparison requires the complex-tetrad and index-conjugation dictionary because Eq. (9) displays the conjugate derivative in a different component.
 
@@ -158,77 +116,57 @@ At large radius, $\theta\sim-2/r$. The paper identifies the asymptotic Newman-Pe
 
 In retarded Eddington-Finkelstein coordinates,
 
-$$
-ds^2=-A(r)du^2-2,du,dr+r^2\gamma_{ab}dx^a dx^b,
-\qquad
-A(r)=1-\frac{2M}{r}.
-\tag{11}
-$$
+$$\begin{align}
+ds^2=-A(r)du^2-2,du,dr+r^2\gamma_{ab}dx^a dx^b, \qquad A(r)=1-\frac{2M}{r}. \tag{11}
+\end{align}$$
 
 The eikonal equation becomes
 
-$$
-2\partial_r f
-=A(r)(\partial_r f)^2
-+\frac{1}{r^2}\gamma^{ab}\partial_a f\,\partial_b f.
-\tag{12}
-$$
+$$\begin{align}
+2\partial_r f =A(r)(\partial_r f)^2 +\frac{1}{r^2}\gamma^{ab}\partial_a f\,\partial_b f. \tag{12}
+\end{align}$$
 
 Let
 
-$$
-L^2=\bar\gamma^{ab}
-\partial_{\bar x^a}f_0
-\partial_{\bar x^b}f_0,
-\qquad
-D(r)=1-\frac{L^2}{r^2}A(r).
-$$
+$$\begin{align}
+L^2=\bar\gamma^{ab} \partial_{\bar x^a}f_0 \partial_{\bar x^b}f_0, \qquad D(r)=1-\frac{L^2}{r^2}A(r).
+\end{align}$$
 
 The Hamilton-Jacobi momentum on the branch that vanishes at infinity is
 
-$$
+$$\begin{align}
 p_r=\frac{1-\sqrt{D(r)}}{A(r)}.
-$$
+\end{align}$$
 
 Equation (13) integrates the total derivative of $f$ along the characteristic, not the partial derivative $p_r$ at fixed original angle:
 
-$$
-f=f_0(\bar x^a)
-+\int_{+\infty}^{r}\frac{dr'}{A(r')}
-\left[
-1-\frac{1}{\sqrt{1-\frac{L^2}{r'^2}A(r')}}
-\right].
-\tag{13}
-$$
+$$\begin{align}
+f=f_0(\bar x^a) +\int_{+\infty}^{r}\frac{dr'}{A(r')} \left[ 1-\frac{1}{\sqrt{1-\frac{L^2}{r'^2}A(r')}} \right]. \tag{13}
+\end{align}$$
 
 The radial and angular characteristic equations are
 
-$$
-\frac{dr}{ds}=-2\sqrt{D(r)},
-\tag{14}
-$$
+$$\begin{align}
+\frac{dr}{ds}=-2\sqrt{D(r)}, \tag{14}
+\end{align}$$
 
-$$
-\frac{d\theta}{dr}
-=-\frac{L}{r^2\sqrt{D(r)}}
-\tag{15}
-$$
+$$\begin{align}
+\frac{d\theta}{dr} =-\frac{L}{r^2\sqrt{D(r)}} \tag{15}
+\end{align}$$
 
 in the axisymmetric case $L=\partial_\theta f_0$.
 
 A turning point satisfies
 
-$$
-D(r)=0
-\quad\Longleftrightarrow\quad
-r^3-L^2r+2ML^2=0.
-$$
+$$\begin{align}
+D(r)=0 \quad\Longleftrightarrow\quad r^3-L^2r+2ML^2=0.
+\end{align}$$
 
 The existence of an exterior turning point is not automatic for every nonzero $L$. The cubic requires
 
-$$
+$$\begin{align}
 L^2\geq27M^2,
-$$
+\end{align}$$
 
 with the critical orbit at $r=3M$. The invariant memory statement is conditional: a change from $L=0$ data to sufficiently large $L$ data can move the congruence between geodesic classes without and with a turning point. The supertranslation does not create a turning point absent from the Schwarzschild null-geodesic potential.
 
@@ -236,59 +174,45 @@ with the critical orbit at $r=3M$. The invariant memory statement is conditional
 
 The End Matter considers
 
-$$
-ds^2=-du^2-2,du,dr+r^2\gamma_{ab}dx^a dx^b
-\tag{20}
-$$
+$$\begin{align}
+ds^2=-du^2-2,du,dr+r^2\gamma_{ab}dx^a dx^b \tag{20}
+\end{align}$$
 
 and obtains
 
-$$
-2\partial_r f
-=(\partial_r f)^2
-+\frac{1}{r^2}\gamma^{ab}\partial_a f\,\partial_b f.
-\tag{21}
-$$
+$$\begin{align}
+2\partial_r f =(\partial_r f)^2 +\frac{1}{r^2}\gamma^{ab}\partial_a f\,\partial_b f. \tag{21}
+\end{align}$$
 
 The Hamilton-Jacobi function is
 
-$$
-F=p_r^2-2p_r+\frac{1}{r^2}\gamma^{ab}p_ap_b=0.
-\tag{22}
-$$
+$$\begin{align}
+F=p_r^2-2p_r+\frac{1}{r^2}\gamma^{ab}p_ap_b=0. \tag{22}
+\end{align}$$
 
 The correct characteristic equations include
 
-$$
-\frac{dr}{ds}=2(p_r-1),
-\qquad
-\frac{dx^a}{ds}=\frac{2}{r^2}p^a,
-\qquad
-\frac{dp_r}{ds}=\frac{2}{r^3}(p_a)^2,
-$$
+$$\begin{align}
+\frac{dr}{ds}=2(p_r-1), \qquad \frac{dx^a}{ds}=\frac{2}{r^2}p^a, \qquad \frac{dp_r}{ds}=\frac{2}{r^3}(p_a)^2,
+\end{align}$$
 
-$$
-\boxed{
-\frac{dp_a}{ds}
-=-\frac{1}{r^2}\partial_a\gamma^{cd}p_cp_d
+$$\begin{align}
+\boxed{ \frac{dp_a}{ds} =-\frac{1}{r^2}\partial_a\gamma^{cd}p_cp_d
 }.
 \tag{23 corrected}
-$$
+\end{align}$$
 
 The printed Eq. (23) omits $r^{-2}$ in $dp_a/ds$. With the printed equation, the next claim $d(p_a)^2/ds=0$ does not follow. Restoring $r^{-2}$ makes the metric-derivative and momentum-derivative terms cancel. One may then set $(p_a)^2=L^2$, solve
 
-$$
-p_r=1\pm\sqrt{1-\frac{L^2}{r^2}},
-\tag{24}
-$$
+$$\begin{align}
+p_r=1\pm\sqrt{1-\frac{L^2}{r^2}}, \tag{24}
+\end{align}$$
 
 and obtain the outgoing branch
 
-$$
-f=f_0(\bar x^a)
-+r\left(1-\sqrt{1-\frac{L^2}{r^2}}\right).
-\tag{25}
-$$
+$$\begin{align}
+f=f_0(\bar x^a) +r\left(1-\sqrt{1-\frac{L^2}{r^2}}\right). \tag{25}
+\end{align}$$
 
 This remains an implicit solution because the general angular characteristic map $x^a(r,\bar x)$ is not printed.
 
@@ -296,24 +220,19 @@ This remains an implicit solution because the general angular characteristic map
 
 For real light-cone coordinates,
 
-$$
-ds^2=-2dx^+dx^-+dx_i dx_i,
-\tag{26}
-$$
+$$\begin{align}
+ds^2=-2dx^+dx^-+dx_i dx_i, \tag{26}
+\end{align}$$
 
 the characteristic coordinate map is
 
-$$
-x^+=\bar x^+-f(\bar x^\perp)
-+\frac12\bar x^-(\bar\partial_i f)^2,
-$$
+$$\begin{align}
+x^+=\bar x^+-f(\bar x^\perp) +\frac12\bar x^-(\bar\partial_i f)^2,
+\end{align}$$
 
-$$
-x^-=\bar x^-,
-\qquad
-x_i=\bar x_i-\bar x^-\bar\partial_i f.
-\tag{27}
-$$
+$$\begin{align}
+x^-=\bar x^-, \qquad x_i=\bar x_i-\bar x^-\bar\partial_i f. \tag{27}
+\end{align}$$
 
 Substitution yields
 
@@ -332,48 +251,37 @@ $$
 
 The mixed $d\bar x^-d\bar x^i$ and $(d\bar x^-)^2$ terms cancel exactly. The transverse induced metric is
 
-$$
-\bar q=(I-\bar x^-\operatorname{Hess}f)^T
-(I-\bar x^-\operatorname{Hess}f).
-$$
+$$\begin{align}
+\bar q=(I-\bar x^-\operatorname{Hess}f)^T (I-\bar x^-\operatorname{Hess}f).
+\end{align}$$
 
 ## Light-ray operator and its exact scope
 
 On $\Sigma:x^+=\mathrm{const}$,
 
-$$
-P_+=\int_\Sigma dx^-d^2x^\perp,T^{+-},
-\qquad
-P_-=\int_\Sigma dx^-d^2x^\perp,T^{++}.
-\tag{16}
-$$
+$$\begin{align}
+P_+=\int_\Sigma dx^-d^2x^\perp,T^{+-}, \qquad P_-=\int_\Sigma dx^-d^2x^\perp,T^{++}. \tag{16}
+\end{align}$$
 
 The shifted-surface generator is
 
-$$
-\bar P
-=\int_{\bar\Sigma}
-\sqrt{\bar q_{ij}},d\bar x^-d^2\bar x^\perp
-,\bar T^{++}.
-\tag{17}
-$$
+$$\begin{align}
+\bar P =\int_{\bar\Sigma} \sqrt{\bar q_{ij}},d\bar x^-d^2\bar x^\perp ,\bar T^{++}. \tag{17}
+\end{align}$$
 
 Pulling it back to $\Sigma$ under $f\to\epsilon f$ gives
 
-$$
-\bar P=P_-
-+2\epsilon\int_\Sigma dx^-d^2x^\perp
-\,partial_i f(x^\perp)T^{+i}
-+O(\epsilon^2).
+$$\begin{align}
+\bar P=P_- +2\epsilon\int_\Sigma dx^-d^2x^\perp
+\,partial_i f(x^\perp)T^{+i} +O(\epsilon^2).
 \tag{18}
-$$
+\end{align}$$
 
 The End Matter also invokes
 
-$$
-Q_\xi=\int_\Sigma d\Sigma_\mu T^{\mu\nu}\xi_\nu.
-\tag{29}
-$$
+$$\begin{align}
+Q_\xi=\int_\Sigma d\Sigma_\mu T^{\mu\nu}\xi_\nu. \tag{29}
+\end{align}$$
 
 The coefficient $2$ in Eq. (18) comes from transforming both $+$ indices of $T^{++}$. The hypersurface measure has no net first-order correction after the inverse-coordinate Jacobian is included.
 
