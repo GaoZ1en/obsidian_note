@@ -193,6 +193,23 @@ $$\begin{align}
 \mathcal{E}^{(1)}_{\mu\nu}[k]+\mathcal{E}^{(2)}_{\mu\nu}[h,h] =T_{(\varphi)\mu\nu}.
 \end{align}$$
 
+---
+
+we should notice that $\displaystyle{\mathcal{E}_{\mu \nu}^{(2)}[h,h]}$ itself is not gauge invariant. actually, consider a pure gauge configuration
+
+$$\begin{align}
+h_{\mu \nu} & =\mathcal{L}_{\xi}g^{(0)}_{\mu \nu} \\
+k _{\mu \nu} & =\dfrac{1}{2}\mathcal{L}_{\xi}^{2}g^{(0)}_{\mu \nu}
+\end{align}$$
+
+we have
+
+$$\begin{align}
+\mathcal{E}^{(1)}_{\mu \nu}[k]+\mathcal{E}^{(2)}_{\mu \nu}[h,h] & =0
+\end{align}$$
+
+---
+
 Since $T_{(h)}^{\mu\nu}=-\mathcal{E}^{(2)\mu\nu}[h,h]$, this constraint is equivalently
 
 $$\begin{align}
