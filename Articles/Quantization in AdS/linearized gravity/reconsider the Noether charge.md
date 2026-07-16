@@ -87,3 +87,26 @@ $$\begin{align}
 \left\{\bar{H}_{n},\bar{H}_{m}\right\} & =-i(n-m)\bar{H}_{n+m}-\frac{i}{8G}n(n^{2}-1)\delta _{n+m,0} \\
 \left\{H_{n},\bar{H}_{m}\right\} & =0
 \end{align}$$
+
+---
+
+[[Articles/Quantization in AdS/gravitational energy/article/2_formalism|2_formalism]] derived the Noether charge correspond to the quadratic action (up to a $\displaystyle{\kappa ^{2}}$ factor)
+
+$$\begin{align}
+H_{\xi}^{[0]} & \approx \int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}^{(0)}(\xi _{\nu}T_{h}^{\mu \nu}+\nabla _{\nu}^{(0)}S_{\xi,h}^{[0],\mu \nu})
+\end{align}$$
+
+expand it using normal modes derived in [[Articles/Quantization in AdS/linearized gravity/solving modes|solving modes]], we have
+
+$$\begin{align}
+H_{\xi_{0}}^{[0]} & =\sum ^{\infty}_{\bar{n}=0} (\bar{n}+2)a^{\dagger}_{-,\bar{n}}a_{-,\bar{n}} \\
+H_{\bar{\xi}_{0}}^{[0]} & =\sum ^{\infty}_{n=0}(n+2)a^{\dagger}_{+,n}a_{+,n}
+\end{align}$$
+
+which is consistent with the partition function
+
+$$\begin{align}
+Z_{1\text{-loop}} & =\prod ^{\infty}_{n=0} \dfrac{1}{|1-q^{n}|^{2}}
+\end{align}$$
+
+where $\displaystyle{q=e^{-\beta+i\alpha}}$.

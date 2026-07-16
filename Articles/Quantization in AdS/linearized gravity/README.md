@@ -13,6 +13,7 @@ Linearized-gravity notes for the AdS3 quantization project. The directory contai
 | `gauge fixing.md` | Discussion of whether TT gauge can be imposed while preserving the chosen asymptotic behavior. |
 | `asymptotic behavior.md` | Brown-Henneaux falloffs and related asymptotic estimates for metric perturbations. |
 | `bulk reconstruction.md` | Research note comparing scalar HKLL reconstruction with Brown-Henneaux boundary-graviton reconstruction. |
+| `cubic perturbation of Brown-Henneaux modes.md` | Cubic Einstein interaction, first nonlinear continuation of the normalized chiral modes, zero first-order frequency shift, and the distinction between exact Virasoro and nonlinear oscillator brackets. |
 | `point particle.md` | Massive point-particle mechanics in AdS3, including the symplectic form and quantization observables. |
 
 ## Charges and algebras
