@@ -15,7 +15,7 @@ Research notes on quantization and perturbative field theory in AdS, including A
 | `gravitational energy/` | Perturbative bulk-boundary charge matching and gravitational energy in AdS |
 | `Killing horizon/` | Scalar quantization on non-rotating BTZ: CPS, continuous modes, HHI states, horizon charges, and tadpoles |
 | `linearized gravity/` | AdS3 linearized gravity: modes, asymptotic Killing vectors, CPS formalism, charges, and massive-gravity extensions |
-| `perturbation/` | Perturbative CPS and pAQFT formalism notes, including flat-space scalar checks and AdS stress tests |
+| `perturbation/` | Perturbative CPS, pAQFT, and old-fashioned perturbation theory, including flat-space scalar checks and global-AdS spectral tests |
 | `preliminary analysis/` | Foundational calculations: constrained systems, path integrals, Dirac formalism |
 | `thermodynamics of scalar in ads/` | Scalar field thermodynamics: heat kernel method in various spacetimes |
 

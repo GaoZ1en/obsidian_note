@@ -71,8 +71,7 @@ $$\begin{align}
 The presymplectic current is
 
 $$\begin{align}
-\omega(\phi;\delta_1\phi,\delta_2\phi) = \delta_1\theta(\phi;\delta_2\phi)
-- \delta_2\theta(\phi;\delta_1\phi).
+\omega(\phi;\delta_1\phi,\delta_2\phi) = \delta_1\theta(\phi;\delta_2\phi) - \delta_2\theta(\phi;\delta_1\phi).
 \end{align}$$
 
 For a Cauchy surface or admissible hypersurface \(\Sigma\),
@@ -276,8 +275,7 @@ This formula has three simultaneous meanings:
 The interacting field equation is not an equation for bare pointwise products. On the off-shell algebra, the field-equation property is the renormalized identity
 
 $$\begin{align}
-R_V\left( \left\langle\frac{\delta S_0}{\delta\phi},f\right\rangle + \left\langle\frac{\delta V}{\delta\phi},f\right\rangle \right)
-=\left\langle\frac{\delta S_0}{\delta\phi},f\right\rangle.
+R_V\left( \left\langle\frac{\delta S_0}{\delta\phi},f\right\rangle + \left\langle\frac{\delta V}{\delta\phi},f\right\rangle \right) =\left\langle\frac{\delta S_0}{\delta\phi},f\right\rangle.
 \end{align}$$
 
 Only after passing to $\mathfrak A_0^{\rm on}$ does the right-hand side vanish. Thus the commonly written equation with zero on the right is an on-shell quotient statement, not an identity on the off-shell algebra. Composite-field normalization, switching-function derivatives, and boundary terms must still be included when present.
@@ -412,9 +410,7 @@ Here $a_{\lambda,V}$ is a genuine local anomaly density, while $b_{\lambda,V}$ i
 For a spacetime region $\mathcal R$ bounded by $\Sigma_1$, $\Sigma_2$, and a timelike or asymptotic boundary $\mathcal T$, the corresponding balance law is
 
 $$\begin{align}
-Q_{\lambda,V}^{\rm ren}[\Sigma_2]-Q_{\lambda,V}^{\rm ren}[\Sigma_1]
-+\int_{\mathcal T}d\Sigma_\mu\,j^\mu_{\lambda,V,{\rm ren}}
-=\int_{\mathcal R}d^dx\,(a_{\lambda,V}+b_{\lambda,V}),
+Q_{\lambda,V}^{\rm ren}[\Sigma_2]-Q_{\lambda,V}^{\rm ren}[\Sigma_1] +\int_{\mathcal T}d\Sigma_\mu\,j^\mu_{\lambda,V,{\rm ren}} =\int_{\mathcal R}d^dx\,(a_{\lambda,V}+b_{\lambda,V}),
 \end{align}$$
 
 where, when it exists,
@@ -672,7 +668,7 @@ The scalar/global-symmetry backend is formulated and benchmarked at the followin
 5. ABJ supplies a separate background-field illustration of a genuine anomaly and is not part of the scalar completion claim.
 6. Global AdS3 exposes the correct finite-time versus long-time distinction.
 
-For the current goal this is a consistency backend, not the advertised calculation method. The usable computational object is the canonical/Wick pipeline; the present note checks that its causal kernel, off-shell equations, renormalization freedom, and Ward statements are formulated consistently.
+For the current goal this is a consistency backend, not the advertised calculation method. The usable computational frontends are the canonical/Wick pipeline and, on a stationary background with a self-adjoint free Hamiltonian, the spectral OFPT pipeline in `cps_old_fashioned_perturbation_theory.md`. The present note checks that their causal kernel, off-shell equations, renormalization freedom, and Ward statements are formulated consistently.
 
 The remaining in-scope consistency tasks are:
 
@@ -692,6 +688,7 @@ When applying the formalism to a new example, every claim should be labeled as o
 3. **Renormalized quantum layer:** statement about \(T_n^{\rm ren}\), composite fields, loops, or counterterms.
 4. **Ward/charge layer:** statement about \(Q_{\lambda,V}^{\rm ren}\), current conservation, anomaly, or boundary flux.
 5. **Limit/extraction:** statement about LSZ, adiabatic limit, AdS boundary limit, or long-time normal form.
+6. **Hamiltonian spectral layer:** statement about $V_{\rm R}$ matrix elements, free-energy projectors, OFPT denominators, effective Hamiltonians, or anomalous dimensions.
 
 This labeling is not cosmetic. It prevents category errors such as:
 
@@ -717,6 +714,7 @@ Companion notes in this output directory:
 10. `global_ads3_phi3_bubble_embedding_check.md`
 11. `tree_cps_pipeline_note.md`
 12. `2606_24442_higher_order_cps_check.md`
+13. `cps_old_fashioned_perturbation_theory.md`
 
 External references:
 

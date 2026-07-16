@@ -213,8 +213,7 @@ R_V(F) =\sum_{n\ge0}\frac{1}{n!} R_{n,1}(V^{\otimes n};F).
 Bogoliubov map 首先定义在 off-shell functionals 上。若 time-ordered products 满足 field-equation normalization 和 Action Ward Identity，则
 
 $$\begin{align}
-R_V\!\left(\left\langle\frac{\delta S_0}{\delta\phi},f\right\rangle+\left\langle\frac{\delta V}{\delta\phi},f\right\rangle\right)
-=\left\langle\frac{\delta S_0}{\delta\phi},f\right\rangle.
+R_V\!\left(\left\langle\frac{\delta S_0}{\delta\phi},f\right\rangle+\left\langle\frac{\delta V}{\delta\phi},f\right\rangle\right) =\left\langle\frac{\delta S_0}{\delta\phi},f\right\rangle.
 \end{align}$$
 
 只有在商掉 free EOM ideal 之后，右端才等于零。因此 $R_V(\delta(S_0+V)/\delta\phi)=0$ 是 on-shell quotient statement，不是 off-shell identity；composite-field normalization、cutoff derivatives 和 boundary terms 仍须按具体例子加入。
@@ -346,9 +345,7 @@ $$\begin{align}
 对边界为 $\Sigma_2-\Sigma_1+\mathcal T$ 的区域 $\mathcal R$，真正的 integrated statement 是 balance law
 
 $$\begin{align}
-Q_{\lambda,V}^{\rm ren}[\Sigma_2]-Q_{\lambda,V}^{\rm ren}[\Sigma_1]
-+\int_{\mathcal T}d\Sigma_\mu\,J_{\lambda,V}^{\mu}
-=\int_{\mathcal R}d^dx\,(a_{\lambda,V}+b_{\lambda,V}).
+Q_{\lambda,V}^{\rm ren}[\Sigma_2]-Q_{\lambda,V}^{\rm ren}[\Sigma_1] +\int_{\mathcal T}d\Sigma_\mu\,J_{\lambda,V}^{\mu} =\int_{\mathcal R}d^dx\,(a_{\lambda,V}+b_{\lambda,V}).
 \end{align}$$
 
 只有当 surface integral finite 或存在 controlled smeared limit、adiabatic/IR limit 存在、operator domain 已指定，并且 $a=b=0$ 与 $\mathcal T$ flux vanishes 时，integrated charge 才与 $\Sigma$ 无关并可作为 global generator：
@@ -602,8 +599,7 @@ K R_V(\phi) = R_V\!\left( \frac{g_3}{2}\phi^2+\frac{g_4}{3!}\phi^3 \right) +\tex
 Off shell, the equivalent smeared identity is
 
 $$\begin{align}
-R_V\!\left( \left\langle \frac{\delta S_0}{\delta\phi},f\right\rangle +\left\langle \frac{\delta V}{\delta\phi},f\right\rangle \right)
-=\left\langle \frac{\delta S_0}{\delta\phi},f\right\rangle
+R_V\!\left( \left\langle \frac{\delta S_0}{\delta\phi},f\right\rangle +\left\langle \frac{\delta V}{\delta\phi},f\right\rangle \right) =\left\langle \frac{\delta S_0}{\delta\phi},f\right\rangle
 \end{align}$$
 
 after imposing the Action Ward Identity and choosing renormalized composite fields. Its right-hand side vanishes only in the free-EOM quotient. The check confirms:

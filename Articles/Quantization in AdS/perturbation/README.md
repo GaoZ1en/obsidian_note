@@ -6,13 +6,14 @@ This directory develops a CPS-normalized perturbative framework for scalar field
 
 - Concrete calculations use $\hbar=1$.
 - The boundary condition $\mathcal B$, boundary action, and allowed field space are part of the definition of the theory.
-- The operational method is canonical quantization plus Wick contractions.
+- The operational methods are CPS-normalized canonical/Wick calculations and, on stationary backgrounds, old-fashioned perturbation theory in the free-energy basis.
 - pAQFT is used as a consistency backend for causality, off-shell identities, local counterterms, split independence, and Ward identities.
 - Gauge theory, BV-BRST, and dynamical gravity are outside the present scope.
 
 ## Start here
 
 - [Practical pipeline: CPS canonical quantization to loop corrections](<cps canonical quantization to loop corrections.md>) — the default workflow for modes, propagators, Wick diagrams, loop integrals, counterterms, and renormalized bulk or boundary observables.
+- [CPS-normalized old-fashioned perturbation theory](cps-paqft-formalism/cps_old_fashioned_perturbation_theory.md) — the stationary-background spectral workflow for interaction-Hamiltonian matrix elements, energy denominators, effective Hamiltonians, and anomalous dimensions.
 
 ## Classical companions
 
@@ -38,6 +39,7 @@ This directory develops a CPS-normalized perturbative framework for scalar field
 
 ## Global-AdS3 loop and boundary examples
 
+- [Scalar three-point function from OFPT](<global AdS3 scalar three-point function from OFPT.md>) — the exact $\phi^2\chi$ Hamiltonian three-state coefficient in AdS$_3$, its finite-time transition amplitude, and comparison with arXiv:1007.2412.
 - [$\phi^4$ tadpole](cps-paqft-formalism/global_ads3_phi4_tadpole_embedding_check.md) — local mass renormalization and fixed-$\Delta$ versus shifted-$\Delta_R$ schemes.
 - [$\phi^3$ bubble](cps-paqft-formalism/global_ads3_phi3_bubble_embedding_check.md) — nonlocal spectral self-energy.
 - [Boundary source and response](cps-paqft-formalism/global_ads3_scalar_boundary_source_setup.md) — normalizable CPS data, independent asymptotic radial data, the regular Euclidean solution graph, and boundary extraction.
@@ -48,3 +50,4 @@ This directory develops a CPS-normalized perturbative framework for scalar field
 2. A nonzero asymptotic radial symplectic form lives on independent $(\phi_{(0)},\phi_{(\Delta)})$ data; its pullback to the regular Euclidean Dirichlet graph vanishes.
 3. A local Ward identity and an integrated balance law do not prove that a global interacting charge exists.
 4. Fixed physical $\Delta$ and retained finite mass shift are alternative renormalization schemes.
+5. A boundary position-space three-point coefficient and a global-Hamiltonian three-state matrix element are related only after the boundary extrapolate normalization has been fixed.

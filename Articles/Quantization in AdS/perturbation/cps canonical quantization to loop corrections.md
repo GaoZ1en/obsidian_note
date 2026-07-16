@@ -1,7 +1,5 @@
 # Practical pipeline: CPS canonical quantization to loop corrections
 
-Date: 2026-07-09
-
 ## 0. Direct verdict
 
 This note is the operational pipeline for the fixed-background scalar examples in this directory. It is correct under the following precise conditions:
