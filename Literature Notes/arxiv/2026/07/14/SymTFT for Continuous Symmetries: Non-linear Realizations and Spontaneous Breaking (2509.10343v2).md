@@ -22,49 +22,35 @@ The reusable mechanism is a “sandwich” construction: a topological bulk tran
 
 For a compact Lie group $G$ with an invariant positive pairing, the basic $(d+1)$-dimensional SymTFT is
 
-$$
-S_{\mathrm{BF}}
-=\frac1{2\pi}\int_{X^{d+1}}
-\operatorname{Tr}(B\wedge F_A),
-\tag{2.1}
-$$
+$$\begin{align}
+S_{\mathrm{BF}} =\frac1{2\pi}\int_{X^{d+1}} \operatorname{Tr}(B\wedge F_A), \tag{2.1}
+\end{align}$$
 
 where $A$ is a $G$ connection and $B$ a $\mathfrak g$-valued $(d-1)$-form. The transformations are
 
-$$
-A\mapsto g(d+A)g^{-1},
-\qquad
-B\mapsto g(B-d_A\tau)g^{-1},
-\tag{2.3}
-$$
+$$\begin{align}
+A\mapsto g(d+A)g^{-1}, \qquad B\mapsto g(B-d_A\tau)g^{-1}, \tag{2.3}
+\end{align}$$
 
 and the equations are
 
-$$
-F_A=0,
-\qquad
-d_AB=0.
-$$
+$$\begin{align}
+F_A=0, \qquad d_AB=0.
+\end{align}$$
 
 Wilson loops label representations of $G$. A codimension-two $B$ defect associated with an adjoint-orbit representative $X_0$ is
 
-$$
-\mathbf Q_{X_0}(\Sigma^{d-1})
-=\int[\mathcal DU][\mathcal D\beta]
-\exp\left[
-i\int_{\Sigma^{d-1}}
-\operatorname{Tr}\left((B+d_A\beta)UX_0U^{-1}\right)
-\right].
-\tag{2.19}
-$$
+$$\begin{align}
+\mathbf Q_{X_0}(\Sigma^{d-1}) =\int[\mathcal DU][\mathcal D\beta] \exp\left[ i\int_{\Sigma^{d-1}} \operatorname{Tr}\left((B+d_A\beta)UX_0U^{-1}\right) \right]. \tag{2.19}
+\end{align}$$
 
 Its linking with a Wilson loop in representation $\mathbf R$ gives
 
-$$
+$$\begin{align}
 \frac{\chi_{\mathbf R}(e^{2\pi X_0})}
 {\chi_{\mathbf R}(1)}.
 \tag{2.50}
-$$
+\end{align}$$
 
 This character-valued factor becomes the non-Abelian Ward-identity factor in the SSB analysis.
 
@@ -74,36 +60,25 @@ The long source contains additional higher-linking, fusion, mixed Chern--Simons,
 
 For a $U(1)$ $p$-form symmetry, the bulk fields are $C_{p+1}$ and $B_{d-p-1}$ with
 
-$$
-S_{\mathrm{bulk}}
-=\frac1{2\pi}\int_{X^{d+1}}
-B_{d-p-1}\wedge dC_{p+1}.
-\tag{3.8}
-$$
+$$\begin{align}
+S_{\mathrm{bulk}} =\frac1{2\pi}\int_{X^{d+1}} B_{d-p-1}\wedge dC_{p+1}. \tag{3.8}
+\end{align}$$
 
 The symmetry boundary contains dynamical potentials and background sources. Its boundary equations impose
 
-$$
-B_{d-p-1}
-=R^{-1}\left(d\widetilde\varphi_{d-p-2}
-+\widetilde{\mathcal A}_{d-p-1}\right),
-$$
+$$\begin{align}
+B_{d-p-1} =R^{-1}\left(d\widetilde\varphi_{d-p-2} +\widetilde{\mathcal A}_{d-p-1}\right),
+\end{align}$$
 
-$$
-C_{p+1}
-=R\left(d\varphi_p+\mathcal A_{p+1}\right).
-\tag{3.16}
-$$
+$$\begin{align}
+C_{p+1} =R\left(d\varphi_p+\mathcal A_{p+1}\right). \tag{3.16}
+\end{align}$$
 
 The physical boundary carries the quadratic action
 
-$$
-S_{\mathrm{phys}}
-=-\frac1{4\pi}
-\int_{B^d_{\mathrm{phys}}}
-C_{p+1}\wedge *_dC_{p+1}.
-\tag{3.22}
-$$
+$$\begin{align}
+S_{\mathrm{phys}} =-\frac1{4\pi} \int_{B^d_{\mathrm{phys}}} C_{p+1}\wedge *_dC_{p+1}. \tag{3.22}
+\end{align}$$
 
 Closing the sandwich gives
 
@@ -125,58 +100,33 @@ This is the higher-form Goldstone action including the mixed background term. Wh
 
 For fully broken $G$, the symmetry boundary uses a $G$-valued field $\mathcal V$. Its action enforces
 
-$$
-A
-=\mathcal V^{-1}d\mathcal V
-+\mathcal V^{-1}\mathcal A\mathcal V.
-\tag{3.47}
-$$
+$$\begin{align}
+A =\mathcal V^{-1}d\mathcal V +\mathcal V^{-1}\mathcal A\mathcal V. \tag{3.47}
+\end{align}$$
 
 After closing the sandwich with the physical kinetic boundary condition, one obtains
 
-$$
-S
-=-\frac{f^2}{4\pi}\int_{M^d}
-\operatorname{Tr}\left[
-(\mathcal V^{-1}d\mathcal V
-+\mathcal V^{-1}\mathcal A\mathcal V)
-\wedge *
-(\mathcal V^{-1}d\mathcal V
-+\mathcal V^{-1}\mathcal A\mathcal V)
-\right].
-\tag{3.54}
-$$
+$$\begin{align}
+S =-\frac{f^2}{4\pi}\int_{M^d} \operatorname{Tr}\left[ (\mathcal V^{-1}d\mathcal V +\mathcal V^{-1}\mathcal A\mathcal V) \wedge * (\mathcal V^{-1}d\mathcal V +\mathcal V^{-1}\mathcal A\mathcal V) \right]. \tag{3.54}
+\end{align}$$
 
 For a nontrivial unbroken subgroup $H\subset G$, decompose
 
-$$
-\mathfrak g=\mathfrak h\oplus\mathfrak h^\perp,
-\qquad
-A=a+\mathscr A.
-\tag{3.56}
-$$
+$$\begin{align}
+\mathfrak g=\mathfrak h\oplus\mathfrak h^\perp, \qquad A=a+\mathscr A. \tag{3.56}
+\end{align}$$
 
 The Maurer--Cartan form with background connection splits as
 
-$$
-\mathcal V^{-1}(d+\mathcal A)\mathcal V=P+Q,
-\qquad
-P\in\mathfrak h^\perp,
-\quad
-Q\in\mathfrak h.
-\tag{3.67}
-$$
+$$\begin{align}
+\mathcal V^{-1}(d+\mathcal A)\mathcal V=P+Q, \qquad P\in\mathfrak h^\perp, \quad Q\in\mathfrak h. \tag{3.67}
+\end{align}$$
 
 Closing the sandwich produces the general CCWZ structure
 
-$$
-S=\frac1{2\pi}\int_{M^d}
-\left[
-\mathcal L_{\mathrm{univ}}(P,d_QP,F_Q)
-+\mathcal L_{\mathrm{non-univ}}(\Psi;P,d_QP,F_Q)
-\right].
-\tag{3.69}
-$$
+$$\begin{align}
+S=\frac1{2\pi}\int_{M^d} \left[ \mathcal L_{\mathrm{univ}}(P,d_QP,F_Q) +\mathcal L_{\mathrm{non-univ}}(\Psi;P,d_QP,F_Q) \right]. \tag{3.69}
+\end{align}$$
 
 The topological bulk does not determine all EFT coefficients. It determines which covariant objects are allowed and how the non-linear realization is assembled from boundary data.
 
@@ -184,51 +134,35 @@ The topological bulk does not determine all EFT coefficients. It determines whic
 
 For noncompact physical spacetime,
 
-$$
+$$\begin{align}
 X^{d+1}=M^d\times[z_0,z_1]
-$$
+\end{align}$$
 
 has a symmetry boundary $B_{\mathrm{sym}}$, physical boundary $B_{\mathrm{phys}}$, lateral boundary $B_{\mathrm{lat}}$, and corners where these meet. Two topological boundary conditions are central.
 
 The $\mathcal D_A$ boundary condition is generated by
 
-$$
-S_{\mathrm{bdy}}^{\mathcal D_A}
-=\frac1{2\pi}\int_{Y^d}
-(-1)^{d-p}B_{d-p-1}
-\wedge(A_{p+1}-\mathcal A_{p+1}-d\varphi_p).
-\tag{4.5}
-$$
+$$\begin{align}
+S_{\mathrm{bdy}}^{\mathcal D_A} =\frac1{2\pi}\int_{Y^d} (-1)^{d-p}B_{d-p-1} \wedge(A_{p+1}-\mathcal A_{p+1}-d\varphi_p). \tag{4.5}
+\end{align}$$
 
 The dual $\mathcal D_B$ condition is
 
-$$
-S_{\mathrm{bdy}}^{\mathcal D_B}
-=\frac1{2\pi}\int_{Y^d}
-(-1)^{d-p}
-(d\Phi_{d-p-2}+\mathcal B_{d-p-1})
-\wedge A_{p+1}.
-\tag{4.10}
-$$
+$$\begin{align}
+S_{\mathrm{bdy}}^{\mathcal D_B} =\frac1{2\pi}\int_{Y^d} (-1)^{d-p} (d\Phi_{d-p-2}+\mathcal B_{d-p-1}) \wedge A_{p+1}. \tag{4.10}
+\end{align}$$
 
 An $\mathcal D_A$--$\mathcal D_A$ corner carries
 
-$$
-S_{\mathrm{int}}^{\mathcal D_A\mathcal D_A}
-=\frac1{2\pi}\int_{Z^{d-1}}
-B_{d-p-1}\wedge
-(\varphi_p^{(2)}-\varphi_p^{(1)}-d\nu_{p-1}-\xi_p).
-\tag{4.15}
-$$
+$$\begin{align}
+S_{\mathrm{int}}^{\mathcal D_A\mathcal D_A} =\frac1{2\pi}\int_{Z^{d-1}} B_{d-p-1}\wedge (\varphi_p^{(2)}-\varphi_p^{(1)}-d\nu_{p-1}-\xi_p). \tag{4.15}
+\end{align}$$
 
 Absorbing a symmetry defect shifts the interface datum,
 
-$$
-\xi_p\mapsto\xi_p
-+2\pi\alpha\,
-\delta_p(\Sigma^{d-p-1}\subset Z^{d-1}).
-\tag{4.18}
-$$
+$$\begin{align}
+\xi_p\mapsto\xi_p +2\pi\alpha\, \delta_p(\Sigma^{d-p-1}\subset Z^{d-1}). \tag{4.18}
+\end{align}$$
 
 The source summarizes the phases by the boundary-condition table:
 
@@ -241,37 +175,27 @@ The source summarizes the phases by the boundary-condition table:
 
 For an Abelian operator of charge $n$, a symmetry defect can be swept away in the unbroken configuration, giving
 
-$$
-\langle\mathcal O\rangle
-=e^{2\pi in\alpha}\langle\mathcal O\rangle.
-\tag{4.21}
-$$
+$$\begin{align}
+\langle\mathcal O\rangle =e^{2\pi in\alpha}\langle\mathcal O\rangle. \tag{4.21}
+\end{align}$$
 
 Unless the phase is trivial,
 
-$$
-\langle\mathcal O\rangle=0.
-\tag{4.22}
-$$
+$$\begin{align}
+\langle\mathcal O\rangle=0. \tag{4.22}
+\end{align}$$
 
 In the broken configuration, sweeping changes the lateral boundary condition from a vacuum label $v$ to $v'$:
 
-$$
-\langle\mathcal O\rangle_v
-=e^{2\pi in\alpha}
-\langle\mathcal O\rangle_{v'}.
-\tag{4.23}
-$$
+$$\begin{align}
+\langle\mathcal O\rangle_v =e^{2\pi in\alpha} \langle\mathcal O\rangle_{v'}. \tag{4.23}
+\end{align}$$
 
 The equation relates different vacua rather than forcing a one-point function in a fixed vacuum to vanish. For non-Abelian symmetry, the phase is replaced by the linked character ratio,
 
-$$
-\langle\mathcal O\rangle
-=\frac{\chi_{\mathbf R}(e^{2\pi X_0})}
-{\chi_{\mathbf R}(1)}
-\langle\mathcal O\rangle.
-\tag{4.33}
-$$
+$$\begin{align}
+\langle\mathcal O\rangle =\frac{\chi_{\mathbf R}(e^{2\pi X_0})} {\chi_{\mathbf R}(1)} \langle\mathcal O\rangle. \tag{4.33}
+\end{align}$$
 
 In the fully broken zero-form case, the family of lateral boundary conditions is parametrized by $G$; for Abelian higher-form symmetry, $\xi_p$ modulo integral periods supplies the Goldstone gauge-field family.
 
