@@ -12,7 +12,7 @@ $$\begin{align}
 \mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\dfrac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2}
 \end{align}$$
 
-# Maxwell BRST complex
+# Maxwell theory
 
 Consider the gauge-fixed action
 
@@ -114,26 +114,19 @@ $$\begin{align}
 To complete the bosonic non-physical sector, let $(A^s_{\alpha,\mu},B_\alpha)$ be a regular scalar-polarization solution associated with a non-zero scalar harmonic $\phi_\alpha$, where $\alpha=(n,\bar n)$, such that
 
 $$\begin{align}
-B_\alpha&=\phi_\alpha, &
-\nabla_\nu F^{\nu\mu}[A^s_\alpha]-\nabla^\mu B_\alpha&=0, &
-\nabla_\mu A^{s\mu}_\alpha+B_\alpha&=0.
+B_\alpha&=\phi_\alpha, & \nabla_\nu F^{\nu\mu}[A^s_\alpha]-\nabla^\mu B_\alpha&=0, & \nabla_\mu A^{s\mu}_\alpha+B_\alpha&=0.
 \end{align}$$
 
 It pairs with the pure-gauge solution $(\nabla_\mu\Lambda_\alpha,0)$. On shell,
 
 $$\begin{align}
-\delta F^{\mu\nu}\wedge\nabla_\nu\delta\Lambda
-&=\nabla_\nu\left(\delta F^{\mu\nu}\wedge\delta\Lambda\right)
-+\nabla^\mu\delta B\wedge\delta\Lambda.
+\delta F^{\mu\nu}\wedge\nabla_\nu\delta\Lambda &=\nabla_\nu\left(\delta F^{\mu\nu}\wedge\delta\Lambda\right) +\nabla^\mu\delta B\wedge\delta\Lambda.
 \end{align}$$
 
 After discarding the boundary term on $\partial\Sigma$, the mixed scalar-polarization/pure-gauge block becomes
 
 $$\begin{align}
-\omega _{B\Lambda}
-&=\int _{\Sigma}\mathrm{d}^{2}x\sqrt{\sigma}\,\tau_\mu
-\left(\nabla^\mu\delta B\wedge\delta\Lambda
-+\nabla^\mu\delta\Lambda\wedge\delta B\right).
+\omega _{B\Lambda} &=\int _{\Sigma}\mathrm{d}^{2}x\sqrt{\sigma}\,\tau_\mu \left(\nabla^\mu\delta B\wedge\delta\Lambda +\nabla^\mu\delta\Lambda\wedge\delta B\right).
 \end{align}$$
 
 Expand
@@ -158,8 +151,7 @@ $$\begin{align}
 Writing the normalized transverse modes as $\psi^T_{n,\bar n,\mu}$, the full vector field is
 
 $$\begin{align}
-A_{\mu} & =\sum _{n,\bar{n}=0}^{\infty}\left(a_{n,\bar{n}}\psi ^T_{n,\bar{n},\mu}+a^{\dagger}_{n,\bar{n}}\psi ^{T*}_{n,\bar{n},\mu}\right)
-+\nabla_\mu\Lambda \\
+A_{\mu} & =\sum _{n,\bar{n}=0}^{\infty}\left(a_{n,\bar{n}}\psi ^T_{n,\bar{n},\mu}+a^{\dagger}_{n,\bar{n}}\psi ^{T*}_{n,\bar{n},\mu}\right) +\nabla_\mu\Lambda \\
 &\quad+\sum _{n,\bar{n}=0}^{\infty}\left(b_{n,\bar{n}}A^s_{n,\bar{n},\mu}+b^{\dagger}_{n,\bar{n}}A^{s*}_{n,\bar{n},\mu}\right).
 \end{align}$$
 
@@ -168,12 +160,8 @@ The explicit regular radial formula for $A^s_{n,\bar n,\mu}$ is the remaining gl
 The total graded symplectic form is
 
 $$\begin{align}
-\omega & =i\sum ^{\infty}_{n,\bar{n}=0}\Big(
-\delta a^{\dagger}_{n,\bar{n}}\wedge \delta a_{n,\bar{n}}
-+\delta \lambda ^{\dagger}_{n,\bar{n}}\wedge \delta b_{n,\bar{n}}
-+\delta b^{\dagger}_{n,\bar{n}}\wedge \delta \lambda _{n,\bar{n}} \\
-&\hspace{7em}+\delta c^{\dagger}_{n,\bar{n}}\wedge \delta \bar{c}_{n,\bar{n}}
--\delta \bar{c}^{\dagger}_{n,\bar{n}}\wedge \delta c_{n,\bar{n}}
+\omega & =i\sum ^{\infty}_{n,\bar{n}=0}\Big( \delta a^{\dagger}_{n,\bar{n}}\wedge \delta a_{n,\bar{n}} +\delta \lambda ^{\dagger}_{n,\bar{n}}\wedge \delta b_{n,\bar{n}} +\delta b^{\dagger}_{n,\bar{n}}\wedge \delta \lambda _{n,\bar{n}} \\
+&\hspace{7em}+\delta c^{\dagger}_{n,\bar{n}}\wedge \delta \bar{c}_{n,\bar{n}} -\delta \bar{c}^{\dagger}_{n,\bar{n}}\wedge \delta c_{n,\bar{n}}
 \Big).
 \end{align}$$
 
@@ -194,168 +182,338 @@ $$\begin{align}
 sA_{\mu} & =\nabla _{\mu}c, & sc & =0, & s\bar{c} & =B,  & sB=0.
 \end{align}$$
 
-Indeed, $sF_{\mu\nu}=0$, while the two remaining non-trivial variations cancel:
-
-$$\begin{align}
-s\left(B\nabla_\mu A^\mu\right)&=B\nabla^2c, &
-s\left(-\bar c\nabla^2c\right)&=-B\nabla^2c.
-\end{align}$$
-
 The corresponding vector field on the extended configuration space is
 
 $$\begin{align}
-\mathcal{X}_{s} & =\int \mathrm{d}^{3}x \left( \nabla _{\mu}c \dfrac{\delta}{\delta A_{\mu}}+B \dfrac{\delta}{\delta \bar{c}} \right).
+\mathcal{X} & =\int \mathrm{d}^{3}x \left( \nabla _{\mu}c \dfrac{\delta}{\delta A_{\mu}}+B \dfrac{\delta}{\delta \bar{c}} \right).
 \end{align}$$
 
-Since $sL_\Psi=0$, the BRST charge is obtained directly from the symplectic potential:
+Act this vector on the action, we have
 
 $$\begin{align}
-Q_{\mathrm{BRST}} & =\mathcal{X}_{s}\cdot \theta \\
- & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left(F^{\mu \nu}\nabla _{\nu}c-B\nabla ^{\mu}c\right) \\
- & =i\sum_{n,\bar{n}=0}^{\infty}\left( b^\dagger_{n,\bar n}c_{n,\bar n} -b_{n,\bar n}c^\dagger_{n,\bar n} \right).
+\mathcal{X}\cdot \delta S_{\Psi} & =0
 \end{align}$$
 
-When the boundary term on $\partial\Sigma$ vanishes, it obeys the Hamiltonian relation
+Therefore the corresponding BRST charge is given by
 
 $$\begin{align}
-\iota_s\omega=-\delta Q_{\mathrm{BRST}}, &\qquad \mathcal{L}_s\omega=0.
+Q_{\mathrm{BRST}} & =\mathcal{X}\cdot \theta \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}(F^{\mu \nu}\nabla _{\nu}c-B\nabla ^{\mu}c) \\
+ & =i\sum ^{\infty}_{n,\bar{n}=0}(b^{\dagger}_{n,\bar{n}}c_{n,\bar{n}}-b_{n,\bar{n}}c^{\dagger}_{n,\bar{n}})
 \end{align}$$
 
-The mode coefficients therefore transform as
+by Noether theorem, we have
 
 $$\begin{align}
-sa_{n,\bar n}&=sa^\dagger_{n,\bar n}=0, \\
-s\lambda _{n,\bar{n}}&=c_{n,\bar{n}}, &
-s\lambda _{n,\bar{n}}^{\dagger}&=c^{\dagger}_{n,\bar{n}}, \\
-s\bar{c}_{n,\bar{n}}&=b_{n,\bar{n}}, &
-s\bar{c}^{\dagger}_{n,\bar{n}}&=b^{\dagger}_{n,\bar{n}}, \\
-sc_{n,\bar n}&=sb_{n,\bar n}=sc^\dagger_{n,\bar n}=sb^\dagger_{n,\bar n}=0.
+\mathcal{X}\cdot \omega & =-\delta Q_{\mathrm{BRST}}
 \end{align}$$
 
-Equivalently, these transformations are generated by the right graded bracket $sF=\{F,Q_{\mathrm{BRST}}\}_{\mathrm{gr}}$. In particular,
+act on each mode coefficients, we have the following standard Poisson brackets
 
 $$\begin{align}
-\left\{Q_{\mathrm{BRST}},Q_{\mathrm{BRST}}\right\}_{\mathrm{gr}}=0.
+\left\{\lambda _{n,\bar{n}},Q_{\mathrm{BRST}}\right\} & =c_{n,\bar{n}}, & \left\{\lambda ^{\dagger}_{n,\bar{n}},Q_{\mathrm{BRST}}\right\} & =c^{\dagger}_{n,\bar{n}} \\
+\left\{\bar{c}_{n,\bar{n}},Q_{\mathrm{BRST}}\right\} & =b_{n,\bar{n}}, & \left\{\bar{c}^{\dagger}_{n,\bar{n}},Q_{\mathrm{BRST}}\right\} & =b^{\dagger}_{n,\bar{n}}
+\end{align}$$
+
+and all other brackets vanishes. it follows
+
+$$\begin{align}
+\left\{Q_{\mathrm{BRST}},Q_{\mathrm{BRST}}\right\} & =0
 \end{align}$$
 
 ### Classical quartet cohomology
 
-For each non-zero scalar label $\alpha=(n,\bar n)$, the variables $(\lambda_\alpha,b_\alpha;c_\alpha,\bar c_\alpha)$ and their negative-frequency partners form a contractible quartet. On functions of these variables, define the contracting homotopy using left derivatives for the odd coordinates:
+For each non-zero scalar label $\alpha=(n,\bar n)$, the variables $(\lambda_\alpha,b_\alpha;c_\alpha,\bar c_\alpha)$ and their negative-frequency partners $\displaystyle{(\lambda _{\alpha}^{\dagger},b^{\dagger}_{\alpha};c^{\dagger}_{\alpha},\bar{c}^{\dagger}_{\alpha})}$ form a contractible quartet. On functions of these variables, define the contracting homotopy $\displaystyle{\kappa _{\alpha}}$ using left derivatives for the odd coordinates:
 
 $$\begin{align}
-\kappa_\alpha
-&=\lambda_\alpha\frac{\partial}{\partial c_\alpha}
-+\bar c_\alpha\frac{\partial}{\partial b_\alpha}
-+\lambda^\dagger_\alpha\frac{\partial}{\partial c^\dagger_\alpha}
-+\bar c^\dagger_\alpha\frac{\partial}{\partial b^\dagger_\alpha}.
+\kappa _{\alpha} & =\lambda _{\alpha} \overleftarrow{\dfrac{\delta}{\delta c_{\alpha}}}+\bar{c}_{\alpha} \dfrac{\delta}{\delta b_{\alpha}}+\lambda ^{\dagger}_{\alpha} \overleftarrow{\dfrac{\delta}{\delta c^{\dagger}_{\alpha}}}+\bar{c}^{\dagger}_{\alpha} \dfrac{\delta}{\delta b^{\dagger}_{\alpha}}
 \end{align}$$
 
-It satisfies
+together with the modewise BRST generator
 
 $$\begin{align}
-\{s,\kappa_\alpha\}=N_{\mathrm{quartet},\alpha},
+s_{\alpha} & = c_{\alpha} \dfrac{\delta}{\delta \lambda _{\alpha}}+b_{\alpha} \overleftarrow{\dfrac{\delta}{\delta \bar{c}_{\alpha}}}+c^{\dagger}_{\alpha} \dfrac{\delta}{\delta \lambda ^{\dagger}_{\alpha}}+b^{\dagger}_{\alpha} \overleftarrow{\dfrac{\delta}{\delta \bar{c}^{\dagger}_{\alpha}}}
 \end{align}$$
 
-where $N_{\mathrm{quartet},\alpha}$ counts the total polynomial degree in the quartet coordinates. If $s\mathcal{O}=0$ and $N_{\mathrm{quartet},\alpha}\mathcal{O}=k\mathcal{O}$ with $k>0$, then
+we have
 
 $$\begin{align}
-\mathcal{O}=s\left(\frac{1}{k}\kappa_\alpha\mathcal{O}\right).
+\Delta _{\alpha} & :=\left\{s_{\alpha},\kappa _{\alpha}\right\} \\
+ &  :=\iota _{s_{\alpha}}\cdot \iota _{\kappa _{\alpha}}+\iota _{\kappa _{\alpha}}\cdot \iota _{s_{\alpha}} \\
+ & =\lambda _{\alpha} \dfrac{\delta}{\delta \lambda _{\alpha}}+b_{\alpha} \dfrac{\delta}{\delta b_{\alpha}}+c_{\alpha} \dfrac{\delta}{\delta c_{\alpha}}+ \bar{c}_{\alpha} \dfrac{\delta}{\delta \bar{c}_{\alpha}}+ \lambda ^{\dagger}_{\alpha} \dfrac{\delta}{\delta \lambda ^{\dagger}_{\alpha}}+b^{\dagger}_{\alpha} \dfrac{\delta}{\delta b^{\dagger}_{\alpha}}+c^{\dagger}_{\alpha} \dfrac{\delta}{\delta c^{\dagger}_{\alpha}}+\bar{c}^{\dagger}_{\alpha} \dfrac{\delta}{\delta \bar{c}^{\dagger}_{\alpha}}
 \end{align}$$
 
-Thus the positive-degree quartet complex is acyclic. Constants remain, while the non-trivial ghost-number-zero classical observables are generated by the transverse Maxwell variables. Subject to completeness of the scalar-polarization lifts,
+where $\displaystyle{\Delta _{\alpha}}$ counts the total polynomial degree in the quartet coordinates. if $\displaystyle{\iota _{\mathcal{X}}\mathcal{O}=0}$ and $\displaystyle{\iota _{\Delta _{\alpha}}\mathcal{O}=k\mathcal{O}}$ with $\displaystyle{k> 0}$, then
 
 $$\begin{align}
-H^0\left(s,\mathcal{O}_{\mathrm{ext}}\right)&\simeq\mathcal{O}\left(\mathcal{P}_{\mathrm{red}}\right), \\
-\omega_{H^0}&=i\sum_{n,\bar n=0}^{\infty}\delta a^\dagger_{n,\bar n}\wedge\delta a_{n,\bar n}.
+\mathcal{O} & =\iota _{\mathcal{X}}\left(\dfrac{1}{k}\iota _{\kappa _{\alpha}}\mathcal{O}\right)
+\end{align}$$
+
+thus the positive-degree quartet complex is acyclic. constants remain, while the non-trivial ghost-number-zero classical observables are generated by the transverse Maxwell variables $\displaystyle{(a_{n,\bar{n}},a^{\dagger}_{n,\bar{n}})}$. subject to completeness of the scalar-polarization lifts,
+
+$$\begin{align}
+H^{0}(\iota _{\mathcal{X}},\mathcal{O}_{\mathrm{ext}}) & \simeq \mathcal{O}(\mathcal{P}_{\mathrm{red}}) \\
+\omega _{H^{0}} & =i\sum ^{\infty}_{n,\bar{n}=0} \delta a^{\dagger}_{n,\bar{n}}\wedge \delta a_{n,\bar{n}}
 \end{align}$$
 
 The induced form agrees with the independently reduced Maxwell covariant phase space.
 
-### Boundary transformations and zero modes
-
-Only proper gauge transformations belong to the bulk ghost domain. For the selected normalizable sector, $\Lambda^g_{n,\bar n}=O(r^{-2})$ and its symplectic pairing with every allowed physical solution vanishes. These modes belong to the bulk quartet.
-
-A constant U(1) parameter satisfies $\mathrm{d}\Lambda=0$. It is a reducibility zero mode of the Faddeev--Popov operator and must be removed from the non-zero-mode quartet and treated through the residual global gauge volume.
-
-An allowed gauge parameter with a non-zero renormalized boundary charge is not a bulk BRST redundancy. It survives as an asymptotic-symmetry or edge degree of freedom, or must be incorporated in a boundary BFV complex. This classification must be repeated if the boundary action or Maxwell falloffs are changed.
-
 ## Canonical quantization
 
-The transition to the quantum theory is performed before taking cohomology. Promote the complete extended graded Poisson algebra to operators using $\hbar=1$ and
+the transition to the quantum theory is performed before taking cohomology. promote the (graded) Poisson algebra to operators
 
 $$\begin{align}
-[\widehat F,\widehat G]_{\mathrm{gr}}
-=i\widehat{\{F,G\}_{\mathrm{gr}}}.
+[F,G]_{\mathrm{gr}} & =i\left\{F,G\right\}
 \end{align}$$
 
-The non-zero oscillator relations are
+then
 
 $$\begin{align}
-[\widehat a_{\alpha},\widehat a^\dagger_{\beta}]&=\delta_{\alpha\beta}, \\
-[\widehat\lambda _\alpha,\widehat b^\dagger_\beta]
-&=[\widehat b_\alpha,\widehat\lambda ^\dagger_\beta]=\delta_{\alpha\beta}, \\
-\{\widehat c_\alpha,\widehat{\bar c}^{\dagger}_\beta\}_{+}&=\delta_{\alpha\beta}, &
-\{\widehat{\bar c}_\alpha,\widehat c^{\dagger}_\beta\}_{+}&=-\delta_{\alpha\beta}.
+[a_{\alpha},a^{\dagger}_{\beta}] & =\delta _{\alpha \beta} \\
+[\lambda _{\alpha},b^{\dagger}_{\beta}] & =[b_{\alpha},\lambda ^{\dagger}_{\beta}]=\delta _{\alpha \beta} \\
+\left\{c_{\alpha},\bar{c}_{\beta}^{\dagger}\right\} & =-\left\{\bar{c}_{\alpha},c^{\dagger}_{\beta}\right\}=\delta _{\alpha \beta}
 \end{align}$$
 
-At this stage the dagger on a ghost coefficient labels its negative-frequency partner. The extended ghost space is a Krein space rather than a positive-definite Hilbert space. Equivalently, defining $\widetilde c^\dagger_\alpha=-c^\dagger_\alpha$ puts both ghost cross-pairings into the same canonical sign; the compatible adjoint operation is fixed on that canonical basis.
-
-The quantum BRST operator is the normally ordered free bilinear
+the BRST operator is given by
 
 $$\begin{align}
-\widehat Q_{\mathrm{BRST}}
-&=i\sum_\alpha\left(\widehat b^\dagger_\alpha\widehat c_\alpha
--\widehat b_\alpha\widehat c^\dagger_\alpha\right) \\
-&=i\sum_\alpha\left(\widehat b^\dagger_\alpha\widehat c_\alpha
-+\widehat b_\alpha\widehat{\widetilde c}^{\dagger}_\alpha\right), \\
-\widehat Q_{\mathrm{BRST}}^2&=0, &
-\widehat{s\mathcal{O}}&=\frac{1}{i}[\widehat{\mathcal{O}},\widehat Q_{\mathrm{BRST}}]_{\mathrm{gr}}.
+Q_{\mathrm{BRST}} & =i\sum _{\alpha}\left(b_{\alpha}^{\dagger}c_{\alpha}-b_{\alpha}\bar{c}^{\dagger}_{\alpha}\right)
 \end{align}$$
 
-Choose the extended vacuum so that
+choose the vacuum as
 
 $$\begin{align}
-\widehat a_\alpha\lvert0\rangle
-=\widehat\lambda_\alpha\lvert0\rangle
-=\widehat b_\alpha\lvert0\rangle
-=\widehat c_\alpha\lvert0\rangle
-=\widehat{\bar c}_\alpha\lvert0\rangle=0.
+a_{\alpha}\ket{0}=\lambda _{\alpha}\ket{0}=b_{\alpha}\ket{0}=c_{\alpha}\ket{0}=\bar{c}_{\alpha}\ket{0}=0
 \end{align}$$
 
-The quartet homotopy lifts to the Fock representation. For every non-zero Faddeev--Popov mode,
+the quartet homotopy lifts to the Fock representation. for every non-zero Faddeev-Popov mode
 
 $$\begin{align}
-H^\bullet\left(\widehat Q_{\mathrm{BRST}},\mathcal{H}_{\mathrm{quartet},\alpha}\right)
-\simeq\mathbb{C}\lvert0\rangle_{\mathrm{quartet},\alpha},
+H^{\bullet}(Q_{\mathrm{BRST}},\mathcal{H}_{\mathrm{quartet},\alpha})\simeq \mathbb{C}\ket{0}_{\mathrm{quartet},\alpha}
 \end{align}$$
 
 concentrated at ghost number zero. The positive-excitation quartet subcomplex has vanishing cohomology; the full quartet factor retains its vacuum class. The physical state space is therefore
 
 $$\begin{align}
-\mathcal{H}_{\mathrm{phys}}
-&=H^0\left(\widehat Q_{\mathrm{BRST}},\mathcal{H}_{\mathrm{ext}}\right) \\
-&\simeq\mathcal{F}\left(\left\{\widehat a^\dagger_{n,\bar n}\right\}\right),
+\mathcal{H}_{\mathrm{phys}} & =H^{0}(Q_{\mathrm{BRST}},\mathcal{H}_{\mathrm{ext}}) \\
+ & \simeq \mathcal{F}\left(\left\{a^{\dagger}_{\alpha}\right\}\right)
 \end{align}$$
 
-again conditional on the completeness of the global scalar-polarization quartet. This is the same one-polarization Maxwell Fock space obtained by direct presymplectic reduction in three dimensions.
-
-The physical descendants carry
+This is the same one-polarization Maxwell Fock space obtained by direct presymplectic reduction in three dimensions. The physical descendants carry
 
 $$\begin{align}
-\omega_{n,\bar n}&=2+n+\bar n, & m_{n,\bar n}&=n-\bar n.
+\omega _{n,\bar{n}} & =2+n+\bar{n}, & m_{n,\bar{n}} & =n-\bar{n}
 \end{align}$$
-
-After normal ordering, the Hamiltonian and angular momentum induced on BRST cohomology are
 
 $$\begin{align}
-\widehat H_{\mathrm{phys}}
-&=\sum_{n,\bar n=0}^{\infty}(2+n+\bar n)\widehat a^\dagger_{n,\bar n}\widehat a_{n,\bar n}, \\
-\widehat J_{\mathrm{phys}}
-&=\sum_{n,\bar n=0}^{\infty}(n-\bar n)\widehat a^\dagger_{n,\bar n}\widehat a_{n,\bar n}.
+H_{\mathrm{phys}} & =\sum ^{\infty}_{n,\bar{n}=0}(2+n+\bar{n})a^{\dagger}_{n,\bar{n}}a_{n,\bar{n}} \\
+J_{\mathrm{phys}} & =\sum ^{\infty}_{n,\bar{n}=0}(n-\bar{n})a^{\dagger}_{n,\bar{n}}a_{n,\bar{n}}
 \end{align}$$
 
-Modewise quartet cancellation also supplies the canonical starting point for a one-loop determinant or a free causal-propagator construction. Faddeev--Popov zero modes and charge-carrying boundary modes must be separated before taking determinants or defining the physical algebra.
+Modewise quartet cancellation also supplies the canonical starting point for a one-loop determinant or a free causal-propagator construction. Faddeev-Popov zero modes and charge-carrying boundary modes must be separated before taking determinants or defining the physical algebra.
 
-## Remaining global AdS$_3$ check
+# linearized gravity
 
-The local symplectic and cohomological structure is complete. The remaining global calculation is to construct a regular scalar-polarization lift $A^s_{n,\bar n,\mu}$ for every non-zero $\phi_{n,\bar n}$, verify its AdS boundary conditions, and evaluate its pairing with $\nabla_\mu\Lambda^g_{n,\bar n}$ directly. Once this basis is established, the conditional identifications of $\omega_{H^0}$ and $\mathcal{H}_{\mathrm{phys}}$ become unconditional mode-by-mode statements.
+we then consider the linearized gravity case as a stress test. for simplicity, we will drop the $\displaystyle{^{(0)}}$ superscripts in background metric $\displaystyle{g^{(0)}}$, covariant derivatives $\displaystyle{\nabla ^{(0)}}$ and other relevant geometric quantities. for simplicity, we consider only the bulk quadratic action ([[Articles/Quantization in AdS/linearized gravity/linearize|linearize]]) (we now impose $\displaystyle{\kappa ^{2}=16\pi G}$)
+
+$$\begin{align}
+S_{h} & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\mathcal{L}_{h} \\
+\mathcal{L}_{h} & =\dfrac{1}{2}h^{2}-h_{\mu \nu}h^{\mu \nu}+h^{\mu \nu}\nabla _{\mu}\nabla _{\nu}h-\dfrac{1}{4}\nabla _{\mu}h\nabla ^{\mu}h-\nabla _{\mu}h^{\mu \nu}\nabla _{\rho}h_{\nu}^{~\rho} \\
+ & +\nabla ^{\mu}h\nabla _{\nu}h_{\mu}^{~\nu}-h^{\mu \nu}\nabla _{\nu}\nabla _{\rho}h_{\mu}^{~\rho}-h^{\mu \nu}\nabla _{\rho}\nabla _{\nu}h_{\mu}^{~\rho}+\dfrac{1}{2}h\nabla _{\mu}\nabla _{\nu}h^{\mu \nu} \\
+ & +h^{\mu \nu}\nabla ^{2}h_{\mu \nu}-\dfrac{1}{2}h\nabla ^{2}h-\dfrac{1}{2}\nabla _{\mu}h_{\nu \rho}\nabla ^{\rho}h^{\mu \nu}+\dfrac{3}{4}\nabla _{\rho}h_{\mu \nu}\nabla ^{\rho}h^{\mu \nu}
+\end{align}$$
+
+this action is invariant under the following gauge transformation
+
+$$\begin{align}
+h_{\mu \nu}\to h_{\mu \nu}+\nabla _{\mu}\xi _{\nu}+\nabla _{\nu}\xi _{\mu}
+\end{align}$$
+
+introduce a vector ghost $\displaystyle{c_{\mu}}$, antighost $\displaystyle{\bar{c}_{\mu}}$, and Nakanishi-Lautrup field $\displaystyle{B_{\mu}}$, and the gauge-fixing fermion
+
+$$\begin{align}
+\Psi & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\bar{c}^{\mu}\left(F_{\mu}[h]+\dfrac{\xi}{2}B_{\mu}\right)
+\end{align}$$
+
+with the de Donder gauge
+
+$$\begin{align}
+F_{\mu}[h] & =\nabla ^{\nu}h_{\mu \nu}-\dfrac{1}{2}\nabla _{\mu}h
+\end{align}$$
+
+the gauge-fixed action is
+
+$$\begin{align}
+S_{\Psi} & =S_{h}+s\Psi \\
+ & =S_{h}+\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\left(B_{\mu}\left( \nabla _{\nu}h^{\mu \nu}-\dfrac{1}{2}\nabla ^{\mu}h \right)+\dfrac{\xi}{2}B_{\mu}B^{\mu}-\bar{c}^{\mu}(\nabla ^{2}-2)c_{\mu}\right)
+\end{align}$$
+
+take a variation of the action, we have
+
+$$\begin{align}
+\delta S_{\Psi} & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\left(\left( -\mathcal{E}_{\mu \nu}[h]-\nabla _{(\mu}B_{\nu)}+\dfrac{1}{2}g_{\mu \nu}\nabla _{\rho}B^{\rho} \right)\delta h^{\mu \nu}+(F_{\mu}[h]+\xi B_{\mu})\delta B^{\mu}-\delta \bar{c}^{\mu}(\nabla ^{2}-2)c_{\mu}-(\nabla ^{2}-2)\bar{c}^{\mu}\delta c_{\mu}\right) \\
+ & +\int _{\Sigma _{f}-\Sigma _{i}}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left(\theta _{h}^{\mu}-\left( B_{\nu}\delta h^{\mu \nu}-\dfrac{1}{2}B^{\mu}\delta h \right)+(\bar{c}^{\nu}\nabla ^{\mu}\delta c_{\nu}-\nabla ^{\mu}\bar{c}^{\nu}\delta c_{\nu})\right)
+\end{align}$$
+
+where
+
+$$\begin{align}
+\mathcal{E}_{\mu \nu} & =-h_{\mu \nu}-\dfrac{1}{2}\nabla ^{2}h_{\mu \nu}-\dfrac{1}{2}g_{\mu \nu}\nabla _{\rho}\nabla _{\sigma}h^{\rho \sigma}+\dfrac{1}{2}g_{\mu \nu}\nabla ^{2}h \\
+ & +\dfrac{1}{2}\nabla _{\mu}\nabla _{\rho}h_{\nu}^{~\rho}+\dfrac{1}{2}\nabla _{\nu}\nabla _{\rho}h_{\mu}^{~\rho}-\dfrac{1}{2}\nabla _{\mu}\nabla _{\nu}h \\
+\theta ^{\mu}_{h} & =-h^{\mu \nu}\nabla _{\nu}\delta h+\dfrac{1}{2}h\nabla ^{\mu}\delta h-h^{\nu \rho}\nabla ^{\mu}\delta h_{\nu \rho}+h^{\nu \rho}\nabla _{\rho}\delta h^{\mu}_{~\nu}+h^{\mu \nu}\nabla _{\rho}\delta h_{\nu}^{~\rho} \\
+ & -\dfrac{1}{2}h\nabla _{\nu}\delta h^{\mu \nu}-\dfrac{1}{2}\nabla ^{\mu}h_{\nu \rho}\delta h^{\nu \rho}-\dfrac{1}{2}\nabla _{\nu}h\delta h^{\mu \nu}+\nabla _{\rho}h^{\nu \rho}\delta h^{\mu}_{~\nu}
+\end{align}$$
+
+take a variation of the symplectic potential, we get the symplectic form
+
+$$\begin{align}
+\omega & =\omega _{h}+\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left(-\left( \delta B_{\nu}\wedge \delta h^{\mu \nu}-\dfrac{1}{2}\delta B^{\mu}\wedge \delta h \right)+(\delta \bar{c}^{\nu}\wedge \nabla ^{\mu}\delta c_{\nu}-\nabla ^{\mu}\delta \bar{c}^{\nu}\wedge \delta c_{\nu})\right) \\
+\omega _{h}^{\mu} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\left(\dfrac{3}{2}\delta h^{\mu \nu}\wedge \nabla _{\nu}\delta h+\dfrac{1}{2}\delta h\wedge \nabla ^{\mu}\delta h-\dfrac{1}{2}\delta h\wedge \nabla _{\nu}\delta h^{\mu \nu}-\dfrac{1}{2}\delta h^{\nu \rho}\nabla ^{\mu}\delta h_{\nu \rho}+\delta h^{\nu \rho}\wedge \nabla _{\rho}\delta h^{\mu}_{~\nu}\right)
+\end{align}$$
+
+## extended solution space
+
+we have the following eoms
+
+$$\begin{align}
+-\mathcal{E}_{\mu \nu}[h]-\nabla _{(\mu}B_{\nu)}+\dfrac{1}{2}g_{\mu \nu}\nabla _{\rho}B^{\rho} & =0 \\
+F_{\mu}[h]+\xi B_{\mu} & =0 \\
+(\nabla ^{2}-2)c_{\mu}=0,(\nabla ^{2}-2)\bar{c}_{\mu} & =0
+\end{align}$$
+
+the linearized Bianchi identity gives
+
+$$\begin{align}
+\nabla ^{\mu}\left( \nabla _{(\mu}B_{\nu)}+\dfrac{1}{2}g_{\mu \nu}\nabla _{\rho}B^{\rho} \right) & =-\dfrac{1}{2}(\nabla ^{2}-2)B_{\nu}
+\end{align}$$
+
+thus $\displaystyle{B_{\mu}}$, the proper ghost, and the (anti-)ghost $\displaystyle{c_{\mu},\bar{c}_{\mu}}$ are expanded in the same vector solution space, which can be summarized as $\displaystyle{(2,1)}$ and $\displaystyle{(1,2)}$ modules (we denote the former module as $\displaystyle{+}$ and the latter module as $\displaystyle{-}$ in the subscription of relevant solutions) of the isometry group $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$,
+
+$$\begin{align}
+f^{\mu}_{+,0,0} & =\sqrt{ \dfrac{3}{2\pi} } \dfrac{e^{-4it}}{(1+r^{2})^{2}}\bar{\xi}_{1}^{\mu} \\
+f^{\mu}_{+,n,\bar{n}} & =\sqrt{ \dfrac{1}{n!\bar{n}!(4)_{n}(2)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}} f_{+,0,0}^{\mu} \\
+f^{\mu}_{-,0,0} & =\sqrt{ \dfrac{3}{2\pi} } \dfrac{e^{-4it}}{(1+r^{2})^{2}}\xi _{1}^{\mu} \\
+f^{\mu}_{-,n,\bar{n}} & =\sqrt{ \dfrac{1}{n!\bar{n}!(2)_{n}(4)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}f_{-,0,0}^{\mu}
+\end{align}$$
+
+for the physical modes, we choose the representative that satisfies the TT gauge [[Articles/Quantization in AdS/linearized gravity/solving modes|solving modes]]
+
+$$\begin{align}
+h & =0, & \nabla ^{\mu}h_{\mu \nu} & =0 & \implies &  & (\nabla ^{2}+2)h_{\mu \nu}=0
+\end{align}$$
+
+which can be summarized as $\displaystyle{(2,0)}$ and $\displaystyle{(0,2)}$ modules
+
+$$\begin{align}
+h_{+,0}^{\mu \nu} & = \sqrt{ \dfrac{12}{\pi} }\dfrac{e^{-4it}}{(1+r^{2})^{2}} \bar{\xi}_{1}^{\mu}\bar{\xi}_{1}^{\nu} \\
+h_{+,n}^{\mu \nu} & =\sqrt{ \dfrac{6}{n!(n+3)!} }\mathcal{L}_{\xi _{-1}}^{n}h_{+,0}^{\mu \nu} \\
+h_{-,0}^{\mu \nu} & =\sqrt{ \dfrac{12}{\pi} } \dfrac{e^{-4it}}{(1+r^{2})}\xi _{1}^{\mu}\xi _{1}^{\nu} \\
+h_{-,\bar{n}}^{\mu \nu} & =\sqrt{ \dfrac{6}{\bar{n}!(\bar{n}+3)!} }\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}h_{-,0}^{\mu \nu}
+\end{align}$$
+
+in addition, proper gauge modes of $\displaystyle{h_{\mu \nu}}$ can be summarized as $\displaystyle{(2,1)}$ and $\displaystyle{(1,2)}$ modules. actually we can use $\displaystyle{V_{\mu}}$ to record these proper gauge modes and write
+
+$$\begin{align}
+h^{g}_{\mu \nu} & =\mathcal{L}_{V}g_{\mu \nu}
+\end{align}$$
+
+expand (after suitable normalization)
+
+$$\begin{align}
+V_{\mu} & =\sum _{\alpha \in \mathcal{I}_{\text{prop}}}(\lambda _{\alpha}f_{\alpha,\mu}+\lambda ^{\dagger}_{\alpha}f^{*}_{\alpha,\mu}) \\
+B_{\mu} & =\sum _{\alpha \in \mathcal{I}_{\text{prop}}}(b_{\alpha}f_{\alpha,\mu}+b^{\dagger}_{\alpha}f^{*}_{\alpha,\mu}) \\
+c_{\mu} & =\sum _{\alpha \in \mathcal{I}_{\text{prop}}}(c_{\alpha}f_{\alpha,\mu}+c^{\dagger}_{\alpha}f^{*}_{\alpha,\mu}) \\
+\bar{c}_{\mu} & =\sum _{\alpha \in \mathcal{I}_{\text{prop}}}(\bar{c}_{\alpha}f_{\alpha,\mu}+\bar{c}^{\dagger}_{\alpha}f^{*}_{\alpha,\mu}) \\
+h_{\mu \nu} & =\sum _{\alpha \in \mathcal{I}_{\text{phys}}}(a_{\alpha}h_{\alpha,\mu \nu}+a^{\dagger}_{\alpha}h_{\alpha,\mu \nu})
+\end{align}$$
+
+here $\displaystyle{\mathcal{I}_{\text{prop}}=\left\{+,-;n,\bar{n}\in \mathbb{N}\right\}}$ and $\displaystyle{\mathcal{I}_{\text{phys}}=\left\{+,-|n\in \mathbb{N}\right\}}$. consequently, we have the graded symplectic form
+
+$$\begin{align}
+\omega & =i\sum _{\alpha \in \mathcal{I}_{\text{phys}}}\delta a^{\dagger}_{\alpha}\wedge \delta a_{\alpha} \\
+ & +i\sum _{\alpha \in \mathcal{I}_{\text{prop}}}\delta \lambda ^{\dagger}_{\alpha}\wedge \delta b_{\alpha}+\delta b^{\dagger}_{\alpha}\wedge \delta \lambda _{\alpha}+\delta c^{\dagger}_{\alpha}\wedge \delta \bar{c}_{\alpha}-\delta \bar{c}_{\alpha}^{\dagger}\wedge \delta c_{\alpha}
+\end{align}$$
+
+which leads to the standard brackets
+
+$$\begin{align}
+\left\{a_{\alpha}^{\dagger},a_{\beta}\right\} & =i\delta _{\alpha \beta} \\
+\left\{\lambda ^{\dagger}_{\alpha},b_{\beta}\right\}=\left\{b^{\dagger}_{\alpha},\lambda _{\beta}\right\} & =i\delta _{\alpha \beta} \\
+\left\{c^{\dagger}_{\alpha},\bar{c}_{\beta}\right\}=-\left\{\bar{c}^{\dagger}_{\alpha},c_{\beta}\right\} & =i\delta _{\alpha \beta}
+\end{align}$$
+
+## classical BRST reduction
+
+the gauge-fixed action is invariant under the off-shell BRST transformation
+
+$$\begin{align}
+sh_{\mu \nu} & =\nabla _{\mu}c_{\nu}+\nabla _{\nu}c_{\mu} & sc_{\mu} & =0 \\
+s\bar{c}_{\mu} & =B_{\mu} & sB_{\mu} & =0
+\end{align}$$
+
+we summarize the transformation on the extended configuration space as
+
+$$\begin{align}
+\mathcal{X} & =\int \mathrm{d}^{3}x\left((\nabla _{\mu}c_{\nu}+\nabla _{\nu}c_{\mu}) \dfrac{\delta}{\delta h_{\mu \nu}}+B_{\mu} \dfrac{\delta}{\delta \bar{c}_{\mu}}\right)
+\end{align}$$
+
+the corresponding Noether charge can be obtained by standard CPS formalism
+
+$$\begin{align}
+Q_{\mathrm{BRST}} & =\mathcal{X}\cdot \theta-\alpha \\
+ & =i \sum _{\alpha \in \mathcal{I}_{\text{prop}}}(b^{\dagger}_{\alpha}c_{\alpha}-b_{\alpha}c^{\dagger}_{\alpha})
+\end{align}$$
+
+which gives the following non-vanishing brackets
+
+$$\begin{align}
+\left\{\lambda _{\alpha},Q_{\mathrm{BRST}}\right\} & =c_{\alpha}, & \left\{\lambda ^{\dagger}_{\alpha},Q_{\mathrm{BRST}}\right\} & =c^{\dagger}_{\alpha} \\
+\left\{\bar{c}_{\alpha},Q_{\mathrm{BRST}}\right\} & =b_{\alpha}, & \left\{\bar{c}^{\dagger}_{\alpha},Q_{\mathrm{BRST}}\right\} & =b^{\dagger}_{\alpha}
+\end{align}$$
+
+it follows that
+
+$$\begin{align}
+\left\{Q_{\mathrm{BRST}},Q_{\mathrm{BRST}}\right\} & =0
+\end{align}$$
+
+### classical quartet cohomology
+
+for evert $\displaystyle{\alpha \in \mathcal{I}_{\text{prop}}}$, the variables $\displaystyle{(\lambda _{\alpha},b_{\alpha};c_{\alpha},\bar{c}_{\alpha})}$ and their negative-frequency partners form a contractible quartet. define the modewise contracting homotopy vector and BRST vector
+
+$$\begin{align}
+\kappa _{\alpha} & =\lambda _{\alpha} \overleftarrow{\dfrac{\delta}{\delta c_{\alpha}}}+\bar{c}_{\alpha} \dfrac{\delta}{\delta b_{\alpha}}+\lambda ^{\dagger}_{\alpha} \overleftarrow{\dfrac{\delta}{\delta c^{\dagger}_{\alpha}}}+\bar{c}^{\dagger}_{\alpha} \dfrac{\delta}{\delta b^{\dagger}_{\alpha}} \\
+s_{\alpha} & = c_{\alpha} \dfrac{\delta}{\delta \lambda _{\alpha}}+b_{\alpha} \overleftarrow{\dfrac{\delta}{\delta \bar{c}_{\alpha}}}+c^{\dagger}_{\alpha} \dfrac{\delta}{\delta \lambda ^{\dagger}_{\alpha}}+b^{\dagger}_{\alpha} \overleftarrow{\dfrac{\delta}{\delta \bar{c}^{\dagger}_{\alpha}}}
+\end{align}$$
+
+the following logic is the same as the Maxwell case. we omit them for simplicity.
+
+# finite dofs system
+
+finally we consider a finite dofs system
+
+$$\begin{align}
+S & =\int _{t_{i}}^{t_{f}} \dfrac{1}{2}(q_{1}-\dot{q}_{2})^{2}
+\end{align}$$
+
+this action allows a gauge transformation
+
+$$\begin{align}
+q_{1} & \to q_{1}+\dot{\varepsilon} \\
+q_{2} & \to q_{2}+\varepsilon
+\end{align}$$
+
+we introduce (anti-)ghost $\displaystyle{c,\bar{c}}$ and Nakanishi-Lautrup field $\displaystyle{B}$, and choose the gauge fixing fermion
+
+$$\begin{align}
+\Psi & =\int _{t_{i}}^{t_{f}}\mathrm{d}t\bar{c}\left( q_{2}+\dfrac{\xi}{2}B \right)
+\end{align}$$
+
+then the gauge-fixed action is given by
+
+$$\begin{align}
+S_{\Psi} & =S+s\Psi \\
+ & =\int _{t_{i}}^{t_{f}} \mathrm{d}t\left(\dfrac{1}{2}(q_{1}-\dot{q}_{2})^{2}+Bq_{2}+\dfrac{\xi}{2}B^{2}-\bar{c}c\right)
+\end{align}$$
+
+trivial ghost, boring.

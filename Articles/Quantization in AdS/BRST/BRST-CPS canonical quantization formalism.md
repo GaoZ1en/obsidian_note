@@ -1,8 +1,10 @@
 ---
 title: BRST-CPS Canonical Quantization Formalism
 date: 2026-07-12
-summary: "Defines a graded covariant-phase-space and canonical BRST quantization workflow for free gauge theories, including quartet reduction, boundary cohomology, and model-level validation criteria."
+summary: implement BRST quantization in the CPS formalism
 ---
+
+***tired of refactor, see [[Articles/Quantization in AdS/BRST/examples|examples]] to find the pipeline instead.***
 
 # BRST-CPS Canonical Quantization Formalism
 

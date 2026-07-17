@@ -1,35 +1,22 @@
 # BRST-CPS canonical quantization
 
-This directory develops a graded covariant-phase-space and canonical BRST framework for free gauge theories, with explicit checks in Maxwell theory, U(1) Chern-Simons theory, and linearized Einstein gravity.
+This directory develops a graded covariant-phase-space and canonical BRST framework for free or linear gauge theories. The maintained presentation is now consolidated into one formalism note and one worked-examples note; earlier benchmark, ledger, and exploratory files have been retired.
 
-## Core formalism
-
-| File | Role |
-|---|---|
-| `BRST-CPS canonical quantization formalism.md` | Authoritative graded symplectic, BRST-charge, cohomology, quartet, and boundary prescription. |
-| `remove gauge redundancy in BRST CPS.md` | Earlier exploratory formulation of the relation between presymplectic reduction and BRST cohomology. |
-| `finite dofs system.md` | Finite-dimensional constraint and determinant examples. |
-
-## Benchmarks
+## Maintained notes
 
 | File | Role |
 |---|---|
-| `maxwell benchmark.md` | Complete free-field quartet benchmark and comparison with reduced Maxwell CPS. |
-| `u1 chern-simons benchmark.md` | Topological bulk and boundary-current benchmark. |
-| `linearized gravity benchmark.md` | Diffeomorphism BRST benchmark with Brown-Henneaux boundary gravitons. |
-| `maxwell.md` | Earlier global-AdS3 mode attempt retained as exploratory material. |
-| `stückelberg.md` | Short Stückelberg extension sketch. |
-
-## Verification and next actions
-
-| File | Role |
-|---|---|
-| `verification ledger.md` | Checked identities, source-backed claims, assumptions, and scope limits. |
-| `TODO.md` | Concrete extensions beyond the validated free/linear theory. |
+| `BRST-CPS canonical quantization formalism.md` | General graded symplectic, BRST-charge, cohomology, quartet, boundary, and CPS-pAQFT interface formalism. |
+| `examples.md` | Concrete Maxwell, linearized-gravity, and finite-dimensional mode-level examples, including classical and quantum quartet reduction. |
 
 ## Reading order
 
-1. Read `BRST-CPS canonical quantization formalism.md`.
-2. Use `maxwell benchmark.md` for the local quartet and reduced-CPS equivalence.
-3. Compare `u1 chern-simons benchmark.md` and `linearized gravity benchmark.md` for boundary cohomology.
-4. Consult `verification ledger.md` before reusing a claim.
+1. Read `BRST-CPS canonical quantization formalism.md` for the definitions, consistency conditions, and boundary prescription.
+2. Read `examples.md` for the global-AdS$_3$ Maxwell pipeline, the linearized-gravity stress test, and the finite-dimensional check.
+
+## Current scope
+
+- Free or linear irreducible gauge theories around a fixed background.
+- Off-shell BRST differentials, graded CPS forms, canonical BRST charges, quartet cohomology, and charge-carrying boundary modes.
+- Explicit mode-level checks for Maxwell theory and linearized Einstein gravity in AdS$_3$, together with a finite-dimensional gauge system.
+- Non-linear gauge algebras, reducible theories, Gribov problems, interacting BRST anomalies, and the full renormalized BV-pAQFT construction remain outside the validated scope.
