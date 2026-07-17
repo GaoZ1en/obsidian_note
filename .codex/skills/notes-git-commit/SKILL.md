@@ -7,14 +7,17 @@ description: Inspect vault changes and prepare English repository-style git comm
 
 ## Workflow
 
-1. Run `git status`.
-2. Run `git diff --stat`.
-3. Read changed Markdown files before describing them.
-4. Draft the commit message in English.
-5. Show the proposed message before executing `git commit`.
-6. After confirmation, run `git add -A` and `git commit -m "..."`.
+1. Run `git status --short --untracked-files=all`.
+2. Run `git diff --stat` and inspect the changed path names.
+3. Identify one coherent requested scope and its explicit exclusions.
+4. Read every changed Markdown file in that scope before describing it.
+5. Draft the commit message in English and show it before executing `git commit`.
+6. After confirmation, stage only the approved paths with explicit `git add -- <paths>` commands. Never use `git add -A` in a mixed worktree.
+7. Run `git diff --cached --check` and inspect the staged path list before committing.
+8. Commit with the approved message.
+9. Run a fresh status after the commit and report any remaining changes without implying that they belong to the commit.
 
-Do not commit `.obsidian/` or `Attachments/`. If unrelated changes are present, identify them and avoid implying they were made for the current task.
+Do not commit `.obsidian/`, `Attachments/`, `.keep-the-rhythm/`, generated caches, PDFs, editor state, or unrelated notes, scripts, and tools unless the user explicitly places those exact paths in scope. If unrelated changes are present, leave them unstaged and avoid implying they were made for the current task.
 
 ## Commit Message Format
 

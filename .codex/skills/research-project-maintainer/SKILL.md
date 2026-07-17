@@ -1,6 +1,6 @@
 ---
 name: research-project-maintainer
-description: "Maintain active research project workspaces in this theoretical physics Obsidian vault. Use when Codex needs to advance the user's own research projects rather than general literature management: summarize project state, update project README/TODO/Drafts files, turn conversations or advisor requests into concrete next actions, coordinate manuscript and topic notes, preserve local AGENTS rules, and trigger Mathematica/xAct/Sage verification before formula or derivation edits."
+description: "Coordinate active research project workspaces in this theoretical physics Obsidian vault. Use when Codex needs to advance the user's own research projects rather than general literature management: summarize project state, update project README/TODO/Drafts files, turn conversations or advisor requests into concrete next actions, coordinate manuscript and topic notes, preserve local AGENTS rules, and route paper reading, formula verification, note maintenance, and commits to the narrower available skills."
 ---
 
 # Research Project Maintainer
@@ -17,6 +17,8 @@ not a transcript of the conversation.
    - Use `obsidian-literature-note` for files under `Literature Notes/`.
    - Use `obsidian-directory-readme` when the main task is creating or replacing a directory `README.md`.
    - Use `obsidian-note-maintainer` for ordinary non-project note cleanup.
+   - Use `paper-deep-read` for serious technical source reading when that global skill is available.
+   - Use `note-math-verify-commit` for formula or derivation verification when that global skill is available.
    - Use `notes-git-commit` when staging or committing changes.
 4. Before editing, state the intended files and the kind of change for each file.
 5. Do not edit `.keep-the-rhythm/`, `.obsidian/`, or `Attachments/` unless the user explicitly requests it.
@@ -24,16 +26,16 @@ not a transcript of the conversation.
 ## Workflow
 
 1. Read the target project's `README.md`, `TODO.md`, `Drafts.md`, and directly relevant notes when they exist.
-3. Identify the current research state:
+2. Identify the current research state:
    - active question
    - known result or partial result
    - next calculation, writing task, or advisor question
    - blocked point or missing verification
-4. Make incremental edits only. Preserve existing language, notation, file boundaries, and project structure.
-5. Put durable exposition in topic notes or manuscript files. Put provisional ideas, calculations, and unresolved options in `Drafts.md`.
-6. Put concrete next actions in `TODO.md`. Avoid broad aspirations that do not specify an immediate research action.
-7. Update `README.md` only when the project structure, core note set, or current project orientation changes.
-8. Preserve the existing language of each note. Use English for file edits only when the target file is already in English or the user asks for English.
+3. Make incremental edits only. Preserve existing language, notation, file boundaries, and project structure.
+4. Put durable exposition in topic notes or manuscript files. Put provisional ideas, calculations, and unresolved options in `Drafts.md`.
+5. Put concrete next actions in `TODO.md`. Avoid broad aspirations that do not specify an immediate research action.
+6. Update `README.md` only when the project structure, core note set, or current project orientation changes.
+7. Preserve the existing language of each note. Use English for file edits only when the target file is already in English or the user asks for English.
 
 ## Conversation Distillation
 
@@ -67,6 +69,8 @@ Use `obsidian-literature-note` only when editing a file under `Literature Notes/
 ## Formula and Derivation Changes
 
 Before modifying formulas, derivations, tensor identities, or equation-heavy sections, follow the root `AGENTS.md` verification rules.
+
+Use `note-math-verify-commit` when it is available; that skill owns the detailed verifier workflow. The fallback routing is:
 
 - Use Mathematica for algebraic checks when computationally checkable.
 - Use xAct or Mathematica+xAct for tensor, variational, covariant-derivative, curvature, and differential-geometry checks.

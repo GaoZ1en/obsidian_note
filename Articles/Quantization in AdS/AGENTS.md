@@ -1,8 +1,8 @@
-# AGENTS.md — Quantization in AdS3
+# AGENTS.md — Quantization in AdS
 
 ## Scope
 
-Research workspace for AdS3 quantization projects and linked subtopics.
+Research workspace for AdS quantization projects, including AdS3 gauge and gravity systems, AdS4 linearized gravity, perturbation theory, and linked subtopics.
 
 ## Rules
 
@@ -10,7 +10,7 @@ Research workspace for AdS3 quantization projects and linked subtopics.
 - Preserve established notation across related notes unless correcting a clear mistake.
 - When adding or removing major notes, update the local `README.md`.
 - Keep exploratory calculations in topic folders; manuscript-specific workflow rules belong to child folders with their own `AGENTS.md`.
-- Do not rename established topic folders such as `Proca in AdS3/` or `electric field in AdS3/` without explicit instruction.
+- Do not rename established topic folders such as `Proca/`, `electric field/`, or `ads4 linearized gravity/` without explicit instruction.
 
 ## Mathematica / xAct / Sage
 
@@ -19,7 +19,7 @@ Research workspace for AdS3 quantization projects and linked subtopics.
   - In the AdS$_d$ and AdS$_4$ module notes, use Sage for checks of $SO(d-1)$ / $\mathfrak{so}(d-1)$ characters, $B_r/D_r$ WeylCharacterRing computations, symmetric traceless representations, Young-diagram tensor products, symmetric-power decompositions, and finite-order character or partition-function expansions.
   - Keep Mathematica/xAct as the tool for differential-geometry, tensor, variational, covariant-phase-space, curvature, and component-field-equation checks.
   - Report which checks were Sage-backed, which were Mathematica/xAct-backed, and which remain representation-theoretic assumptions or literature-derived statements.
-- ignore `xPerm` and other loading errors.
+- Ignore known xPerm or MathLink banner noise only when the required xAct packages load successfully and the target computation completes. Treat actual package-loading failures, Wolfram messages, timeouts, and nonzero residuals as verification failures that must be reported.
 - Avoid Mathematica protected built-in symbols as temporary variable names in checks. In particular, do not assign to `C`, `Gamma` or `D`; use descriptive names such as `cotton`, `gammaConn`, or `christoffel` instead.
 - Use the Obsidian formatter plugin for mechanical Markdown and formula-source cleanup: display delimiters, `align` wrappers, blank lines, list markers, and source-only linebreak linting. Keep prompt attention on mathematical meaning, notation, and verification; only hand-tune source layout when it affects readability or the user asks.
 - Formatter cleanup is not formula verification. Rerun the relevant Mathematica/xAct/Sage checks whenever a formula, derivation, or equation-heavy claim changes.

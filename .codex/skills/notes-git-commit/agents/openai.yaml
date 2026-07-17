@@ -1,0 +1,7 @@
+interface:
+  display_name: "Notes Git Commit"
+  short_description: "Prepare scoped Note-vault commits"
+  default_prompt: "Use $notes-git-commit to inspect the live Note-vault worktree, propose an English commit message, and stage only explicitly approved paths after confirmation."
+
+policy:
+  allow_implicit_invocation: true
