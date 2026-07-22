@@ -1,25 +1,3 @@
-# Two different approaches to the heat kernel
-
-## Verdict
-
-the two constructions give the same physical quantities if all subtleties are handled carefully (Hilbert-space measure, functional measure, boundary conditions, locla counterterms, etc.)
-
-The standard covariant heat kernel is the heat kernel of
-
-$$\begin{align}
-\mathcal{O}=-\nabla ^{2}+\mu ^{2}
-\end{align}$$
-
-with respect to the covariant measure $\sqrt{g}\,\mathrm{d}^{d}X$. The canonical mode expansion naturally produces instead the heat kernel of
-
-$$\begin{align}
-\mathcal{D}=N^{2}\mathcal{O}=-\partial _{\tau}^{2}+H
-\end{align}$$
-
-with respect to the static-slice measure $\sqrt{\sigma}\,\mathrm{d}^{d-1}x/N$.
-
-Throughout this note, the shift is set to zero.
-
 ## Covariant heat kernel
 
 Consider a real Euclidean scalar with
@@ -44,7 +22,7 @@ K_{\mathcal O}(s;X,Y) & =\sum _A e^{-s\lambda _A}\psi _A(X)\psi _A^{*}(Y), \\
 
 ## Static slicing and the canonical spatial operator
 
-Take a static Euclidean metric
+Take a static Euclidean metric (shifts are set to 0)
 
 $$\begin{align}
 \mathrm{d}s^{2}=N^{2}(x)\mathrm{d}\tau ^{2}+\sigma _{ab}(x)\mathrm{d}x^{a}\mathrm{d}x^{b}, \qquad \sqrt g=N\sqrt\sigma .
@@ -135,7 +113,7 @@ Z_{\mathrm{cov}} & =\left[\det _g\mathcal O\right]^{-1/2} =J_N\left[\det _w\math
 
 $J_N$ is the determinant of a multiplication operator. In the continuum it is regulator dependent and local; possible multiplicative-anomaly terms are local as well. They belong to the normalization of the functional measure and to local counterterms. Thus a canonical calculation that retains the induced Jacobian gives the same partition function as the covariant calculation. If $J_N$ is omitted, the two answers can differ in their local vacuum term, but not in the finite nonlocal thermal contribution.
 
-## Check with a scalar on thermal AdS$_3$
+## Check on thermal AdS$_3$
 
 Set the AdS radius to one and use global Euclidean AdS$_3$,
 
@@ -143,7 +121,7 @@ $$\begin{align}
 \mathrm ds^{2}=(1+r^{2})\mathrm d\tau^{2} +\frac{\mathrm dr^{2}}{1+r^{2}}+r^{2}\mathrm d\phi^{2}, \qquad \phi\sim\phi+2\pi.
 \end{align}$$
 
-The nonrotating thermal quotient has $\tau\sim\tau+\beta$. More generally, the angular potential used below is implemented by the identification
+The thermal quotient is implemented by the identification
 
 $$\begin{align}
 (\tau,\phi)\sim(\tau+\beta,\phi+\vartheta).
@@ -173,20 +151,93 @@ $$\begin{align}
 u_{n\ell}(r,\phi) =C_{n\ell}e^{i\ell\phi}r^{|\ell|} (1+r^{2})^{-(\Delta+|\ell|)/2} P_n^{(\Delta-1,|\ell|)}\!\left(\frac{r^{2}-1}{r^{2}+1}\right),
 \end{align}$$
 
-with $C_{n\ell}$ chosen to make the modes orthonormal in the measure $r\,\mathrm dr\,\mathrm d\phi/(1+r^{2})$. They obey
+where Jacobi orthogonality fixes the normalization in the measure $r\,\mathrm dr\,\mathrm d\phi/(1+r^{2})$ to be
+
+$$\begin{align}
+|C_{n\ell}|^{2} & =\frac{(\Delta+2n+|\ell|)n!\,\Gamma(n+\Delta+|\ell|)} {\pi\,\Gamma(n+\Delta)\Gamma(n+|\ell|+1)}.
+\end{align}$$
+
+These modes obey
 
 $$\begin{align}
 Hu_{n\ell}=\omega _{n\ell}^{2}u_{n\ell}, \qquad \omega _{n\ell}=\Delta+2n+|\ell|, \qquad n\in\mathbb N_0,\qquad \ell\in\mathbb Z.
 \end{align}$$
 
-Consequently,
+### Explicit canonical heat kernel
+
+On the rotating thermal quotient, a separated mode must be invariant under $(\tau,\phi)\mapsto(\tau+\beta,\phi+\vartheta)$. Hence
+
+$$\begin{align}
+\Psi _{kn\ell}(\tau,r,\phi) & =\frac{1}{\sqrt\beta}e^{i\nu _{k\ell}\tau}u_{n\ell}(r,\phi), & \nu _{k\ell}&=\frac{2\pi k-\ell\vartheta}{\beta},
+\end{align}$$
+
+with $k,\ell\in\mathbb Z$ and $n\in\mathbb N_0$. Define
+
+$$\begin{align}
+z(r):=\frac{r^{2}-1}{r^{2}+1}.
+\end{align}$$
+
+The scalar canonical heat kernel is therefore the following explicit convergent spectral sum for $s>0$:
+
+$$\begin{aligned}
+\mathcal K_{\mathcal D}^{(\beta,\vartheta)} &(s;\tau,r,\phi;\tau',r',\phi') \\
+&=\frac{1}{\beta}\sum_{k\in\mathbb Z}\sum_{n=0}^{\infty}\sum_{\ell\in\mathbb Z}
+|C_{n\ell}|^{2}
+\exp\!\left[-s\left(\nu _{k\ell}^{2}+\omega _{n\ell}^{2}\right) +i\nu _{k\ell}(\tau-\tau')+i\ell(\phi-\phi')\right] \\
+&\quad\times (rr')^{|\ell|}
+\big[(1+r^{2})(1+r'^{2})\big]^{-(\Delta+|\ell|)/2}
+P_n^{(\Delta-1,|\ell|)}\!\big(z(r)\big)
+P_n^{(\Delta-1,|\ell|)}\!\big(z(r')\big).
+\end{aligned}$$
+
+It obeys $(\partial_s+\mathcal D)\mathcal K_{\mathcal D}^{(\beta,\vartheta)}=0$ and tends to the delta distribution appropriate to the thermal quotient as $s\to0^+$. To display the quotient geometrically, define the unquotiented spatial kernel
+
+$$\begin{align}
+K_H(s;r,\phi;r',\phi') &:=\sum_{n=0}^{\infty}\sum_{\ell\in\mathbb Z} e^{-s\omega _{n\ell}^{2}}u_{n\ell}(r,\phi)u_{n\ell}^{*}(r',\phi').
+\end{align}$$
+
+Poisson resummation of $k$ gives the equivalent image form
+
+$$\begin{align}
+\mathcal K_{\mathcal D}^{(\beta,\vartheta)} &=\frac{1}{\sqrt{4\pi s}}\sum_{m\in\mathbb Z} e^{-(\tau-\tau'+m\beta)^{2}/(4s)} K_H\!\left(s;r,\phi;r',\phi'-m\vartheta\right).
+\end{align}$$
+
+Unlike the covariant $\mathbb H_3$ kernel, this pointwise spatial kernel is not determined only by the three-dimensional geodesic distance: $H=N^{2}\mathcal O+\partial_\tau^{2}$ depends on the chosen static slicing. Its integrated trace does simplify. Using
+
+$$\begin{align}
+N=p+\bar p=2n+|\ell|,\qquad \ell=p-\bar p,
+\end{align}$$
+
+one obtains
+
+$$\begin{aligned}
+\operatorname{Tr}_{w}e^{-s\mathcal D} &=\frac{\beta}{\sqrt{4\pi s}}\sum_{m\in\mathbb Z} e^{-m^{2}\beta^{2}/(4s)}
+\sum_{N=0}^{\infty}e^{-s(\Delta+N)^{2}}\Xi _N(m\vartheta), \\
+\Xi _N(\alpha) &:=\sum_{p=0}^{N}e^{i\alpha(2p-N)} =\frac{\sin((N+1)\alpha)}{\sin\alpha}, \qquad \Xi _N(0)=N+1.
+\end{aligned}$$
+
+The ratio of sines is understood by continuity at its removable singularities. The $m=0$ term is the canonical vacuum contribution. Removing it and using
+
+$$\begin{align}
+\int_0^\infty \mathrm ds\,s^{-3/2} e^{-a^{2}/(4s)-b^{2}s}=\frac{2\sqrt\pi}{a}e^{-ab}, \qquad a,b>0,
+\end{align}$$
+
+gives
+
+$$\begin{align}
+\frac{1}{2}\int_0^\infty\frac{\mathrm ds}{s} \left.\operatorname{Tr}_{w}e^{-s\mathcal D}\right|_{m\ne0} &=\sum_{m=1}^{\infty}\frac{e^{-m\beta\Delta}}{m}
+\sum_{N=0}^{\infty}e^{-m\beta N}\Xi _N(m\vartheta) \\
+&=\sum_{m=1}^{\infty} \frac{e^{-m\beta\Delta}} {m(1-e^{-m\beta+im\vartheta})(1-e^{-m\beta-im\vartheta})}.
+\end{align}$$
+
+Equivalently, the determinant is
 
 $$\begin{align}
 Z_{\mathrm{can}} \propto\prod _{n=0}^{\infty}\prod _{\ell\in\mathbb Z}
-\prod _{k\in\mathbb Z} \left(\nu_k^{2}+\omega _{n\ell}^{2}\right)^{-1/2}.
+\prod _{k\in\mathbb Z} \left(\nu_{k\ell}^{2}+\omega _{n\ell}^{2}\right)^{-1/2}.
 \end{align}$$
 
-For each oscillator,
+For $\vartheta=0$, each oscillator gives
 
 $$\begin{align}
 \left[\det(-\partial _\tau^{2}+\omega^{2})\right]^{-1/2} =\frac{e^{-\beta\omega/2}}{1-e^{-\beta\omega}}.
