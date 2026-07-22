@@ -166,7 +166,7 @@ the physical interpretation of this expansion depends on the asymptotic structur
 
 ## asymptotically flat spacetime
 
-for an asymptotically flat spacetime, assume that the interacting theory approaches the chosen free theory in the far past and future, and that the corresponding Moller operators exist. following the notation of `from free QFT to interacting QFT.md`, define
+for an asymptotically flat spacetime, assume that the interacting theory approaches the chosen free theory in the far past and future, and that the corresponding Moller operators exist. define
 
 $$\begin{align}
 \Lambda _{\mathrm{in}} & =\underset{t\to-\infty}{\operatorname{s-lim}}\ e^{iHt}e^{-iH_{0}t} \\
