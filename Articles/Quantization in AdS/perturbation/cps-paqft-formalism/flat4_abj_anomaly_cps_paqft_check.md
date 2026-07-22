@@ -6,7 +6,7 @@
 
 This note is a separate background-field illustration of a genuine local anomaly. It is not part of the fixed-background scalar completion claim and does not introduce dynamical gauge fields. The anomaly coefficient uses $\hbar=1$; explicit $\hbar$ in the algebraic normalization formulas is retained only as formal bookkeeping and is set to one in the concrete result.
 
-For a Dirac fermion in a background \(U(1)\) gauge field, the classical massless axial symmetry has current
+For a Dirac fermion in a background $U(1)$ gauge field, the classical massless axial symmetry has current
 
 $$\begin{align}
 j_5^\mu=\bar\psi\gamma^\mu\gamma_5\psi.
@@ -18,7 +18,7 @@ $$\begin{align}
 \partial_\mu j_5^\mu=0
 \end{align}$$
 
-for \(m=0\). Quantum mechanically, after choosing a renormalization prescription preserving the vector gauge Ward identity, the axial Ward identity becomes
+for $m=0$. Quantum mechanically, after choosing a renormalization prescription preserving the vector gauge Ward identity, the axial Ward identity becomes
 
 $$\begin{align}
 \partial_\mu j_{5,\rm ren}^\mu = \frac{q^2}{16\pi^2} F_{\mu\nu}\widetilde F^{\mu\nu}
@@ -30,7 +30,7 @@ $$\begin{align}
 \widetilde F^{\mu\nu} =\frac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}.
 \end{align}$$
 
-For \(m\ne0\), add the explicit breaking term:
+For $m\ne0$, add the explicit breaking term:
 
 $$\begin{align}
 \partial_\mu j_{5,\rm ren}^\mu = 2im\,\bar\psi\gamma_5\psi +\frac{q^2}{16\pi^2}F_{\mu\nu}\widetilde F^{\mu\nu}.
@@ -52,7 +52,7 @@ was meant to allow.
 
 ## 1. Setup
 
-Take 4d Minkowski spacetime and a background gauge field \(A_\mu\). The Dirac action is
+Take 4d Minkowski spacetime and a background gauge field $A_\mu$. The Dirac action is
 
 $$\begin{align}
 S[\psi,\bar\psi;A] =\int d^4x\, \bar\psi \left(i\gamma^\mu D_\mu-m\right)\psi,
@@ -76,7 +76,7 @@ $$\begin{align}
 \psi\mapsto e^{i\beta\gamma_5}\psi, \qquad \bar\psi\mapsto \bar\psi e^{i\beta\gamma_5}.
 \end{align}$$
 
-For \(m=0\), this is a classical symmetry of the fermion action in a fixed background \(A\).
+For $m=0$, this is a classical symmetry of the fermion action in a fixed background $A$.
 
 ## 2. Graded CPS input
 
@@ -86,7 +86,7 @@ $$\begin{align}
 D\!\!\!\!/\,_A-m
 \end{align}$$
 
-or, perturbatively around \(A=0\),
+or, perturbatively around $A=0$,
 
 $$\begin{align}
 D_0=i\gamma^\mu\partial_\mu-m.
@@ -140,7 +140,7 @@ $$\begin{align}
 \partial_\mu j_5^\mu=2im\,\bar\psi\gamma_5\psi.
 \end{align}$$
 
-For \(m=0\), the axial current is classically conserved.
+For $m=0$, the axial current is classically conserved.
 
 In CPS language, the vector and axial charges are defined by
 
@@ -148,7 +148,7 @@ $$\begin{align}
 \delta Q=\iota_X\Omega
 \end{align}$$
 
-with \(X\) the corresponding field-space symmetry vector. Quantization would naively suggest both charges should generate their transformations through \(\star\)-commutators. The ABJ anomaly says this cannot be achieved for the axial symmetry while also preserving vector gauge invariance and locality.
+with $X$ the corresponding field-space symmetry vector. Quantization would naively suggest both charges should generate their transformations through $\star$-commutators. The ABJ anomaly says this cannot be achieved for the axial symmetry while also preserving vector gauge invariance and locality.
 
 ## 4. pAQFT Ward identity and anomaly
 
@@ -164,7 +164,7 @@ $$\begin{align}
 \partial_\mu j_{5,\rm ren}^\mu = 2im\,(\bar\psi\gamma_5\psi)_{\rm ren} +\mathcal A_5.
 \end{align}$$
 
-For a Dirac fermion coupled to a background \(U(1)\) gauge field,
+For a Dirac fermion coupled to a background $U(1)$ gauge field,
 
 $$\begin{align}
 \mathcal A_5 = \frac{q^2}{16\pi^2} F_{\mu\nu}\widetilde F^{\mu\nu}.
@@ -176,7 +176,7 @@ $$\begin{align}
 \mathcal A_5\,d^4x = \frac{q^2}{8\pi^2}F\wedge F
 \end{align}$$
 
-depending on the normalization of \(F\wedge F\) and \(\epsilon^{\mu\nu\rho\sigma}\). The component formula above is the convention used in this note.
+depending on the normalization of $F\wedge F$ and $\epsilon^{\mu\nu\rho\sigma}$. The component formula above is the convention used in this note.
 
 The vector Ward identity can be preserved:
 
@@ -208,7 +208,7 @@ This is a genuine quantum effect:
 
 ## 6. Relation to the main CPS-pAQFT formalism
 
-The previous scalar checks had \(\mathcal A=0\). This note provides a case with
+The previous scalar checks had $\mathcal A=0$. This note provides a case with
 
 $$\begin{align}
 \mathcal A_5\ne0.
@@ -220,7 +220,7 @@ $$\begin{align}
 \delta_5 R_V(F) = \frac{i}{\hbar} [Q_{5,V}^{\rm ren},R_V(F)]_\star +\mathcal A_5(F).
 \end{align}$$
 
-More precisely, local Ward identities with an insertion of \(\partial_\mu j_5^\mu\) contain the local anomaly density \(F\widetilde F\) and contact terms acting on charged insertions. The integrated axial charge fails to be conserved in backgrounds with nonzero
+More precisely, local Ward identities with an insertion of $\partial_\mu j_5^\mu$ contain the local anomaly density $F\widetilde F$ and contact terms acting on charged insertions. The integrated axial charge fails to be conserved in backgrounds with nonzero
 
 $$\begin{align}
 \int F\wedge F.
@@ -233,7 +233,7 @@ CPS contributes the canonical structure:
 1. graded symplectic/Peierls structure;
 2. causal Dirac propagator;
 3. CAR algebra;
-4. classical current normalization through \(\delta Q=\iota_X\Omega\).
+4. classical current normalization through $\delta Q=\iota_X\Omega$.
 
 pAQFT contributes the quantum layer:
 
@@ -274,6 +274,6 @@ This note deliberately avoids dynamical gauge fields. The following topics are o
 ## 10. References
 
 - S. L. Adler, *Axial-Vector Vertex in Spinor Electrodynamics*, Phys. Rev. 177, 2426 (1969), https://doi.org/10.1103/PhysRev.177.2426
-- J. S. Bell and R. Jackiw, *A PCAC puzzle: \(\pi^0\to\gamma\gamma\) in the sigma model*, Nuovo Cim. A 60, 47 (1969), https://doi.org/10.1007/BF02823296
+- J. S. Bell and R. Jackiw, *A PCAC puzzle: $\pi^0\to\gamma\gamma$ in the sigma model*, Nuovo Cim. A 60, 47 (1969), https://doi.org/10.1007/BF02823296
 - K. Fujikawa, *Path-integral measure for gauge-invariant fermion theories*, Phys. Rev. Lett. 42, 1195 (1979), https://doi.org/10.1103/PhysRevLett.42.1195
 - K. Fredenhagen and K. Rejzner, *Perturbative algebraic quantum field theory*, arXiv:1208.1428, https://arxiv.org/abs/1208.1428
