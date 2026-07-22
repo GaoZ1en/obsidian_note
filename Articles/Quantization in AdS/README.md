@@ -13,6 +13,7 @@ Research notes on quantization and perturbative field theory in AdS, including A
 | `ads4 linearized gravity/` | AdS4 linearized gravity, positive-energy modules, symplectic norms, characters, and thermal partition functions |
 | `electric field/` | Maxwell field quantization in AdS3: modes, asymptotic behavior, large gauge transformations, and article drafts |
 | `gravitational energy/` | Perturbative bulk-boundary charge matching and gravitational energy in AdS |
+| `gluing/` | CPS and Hamiltonian gluing of Dirichlet pieces into periodic theories, including lattice and Dirichlet-to-Neumann constructions |
 | `Killing horizon/` | Scalar quantization on non-rotating BTZ: CPS, continuous modes, HHI states, horizon charges, and tadpoles |
 | `linearized gravity/` | AdS3 linearized gravity: modes, asymptotic Killing vectors, CPS formalism, charges, and massive-gravity extensions |
 | `perturbation/` | Perturbative CPS, pAQFT, and old-fashioned perturbation theory, including flat-space scalar checks and global-AdS spectral tests |

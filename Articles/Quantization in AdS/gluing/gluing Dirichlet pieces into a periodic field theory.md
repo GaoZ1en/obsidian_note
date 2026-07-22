@@ -493,29 +493,20 @@ $$\begin{align}
 取 AdS radius 为一，
 
 $$\begin{align}
-ds^2
-=-(1+r^2)dt^2+\frac{dr^2}{1+r^2}+r^2d\varphi^2,
-\qquad
-\varphi\sim\varphi+2\pi,
+ds^2 =-(1+r^2)dt^2+\frac{dr^2}{1+r^2}+r^2d\varphi^2, \qquad \varphi\sim\varphi+2\pi,
 \end{align}$$
 
 并取 standard normalizable scalar
 
 $$\begin{align}
-m^2=\Delta(\Delta-2),
-\qquad
-\Delta>1,
-\qquad
-\phi\underset{r\to\infty}{\sim}r^{-\Delta}.
+m^2=\Delta(\Delta-2), \qquad \Delta>1, \qquad \phi\underset{r\to\infty}{\sim}r^{-\Delta}.
 \end{align}$$
 
 现在沿 angular circle 在 $A,B$ 两条 radial half-lines 处切开：
 
 $$\begin{align}
-W_1&:\quad 0\leq\varphi_1\leq\alpha_1,
-&&A\longrightarrow B,\\
-W_2&:\quad 0\leq\varphi_2\leq\alpha_2,
-&&B\longrightarrow A,\\
+W_1&:\quad 0\leq\varphi_1\leq\alpha_1, &&A\longrightarrow B,\\
+W_2&:\quad 0\leq\varphi_2\leq\alpha_2, &&B\longrightarrow A,\\
 \alpha_1+\alpha_2&=2\pi.
 \end{align}$$
 
@@ -524,47 +515,27 @@ W_2&:\quad 0\leq\varphi_2\leq\alpha_2,
 固定 $r>0$ 时，constant-$\varphi_i$ surface 的 unit outward normal 给出
 
 $$\begin{align}
-\rho_{i,L}
-&=-\frac1r\partial_{\varphi_i}\phi_i,
-&
-\rho_{i,R}
-&=+\frac1r\partial_{\varphi_i}\phi_i.
+\rho_{i,L} &=-\frac1r\partial_{\varphi_i}\phi_i, & \rho_{i,R} &=+\frac1r\partial_{\varphi_i}\phi_i.
 \end{align}$$
 
 $W_1$ 的 left/right endpoints 是 $A/B$，$W_2$ 的 left/right endpoints 是 $B/A$。因此 CPS gluing conditions 仍是
 
 $$\begin{align}
-q_{1A}&=q_{2A},
-&
-q_{1B}&=q_{2B},\\
-\rho_{1A}+\rho_{2A}&=0,
-&
-\rho_{1B}+\rho_{2B}&=0.
+q_{1A}&=q_{2A}, & q_{1B}&=q_{2B},\\
+\rho_{1A}+\rho_{2A}&=0, & \rho_{1B}+\rho_{2B}&=0.
 \end{align}$$
 
 equal-time CPS form 分成
 
 $$\begin{align}
-\Omega_i(\delta_1,\delta_2)
-=\int_0^\infty dr\int_0^{\alpha_i}d\varphi_i\,
-\frac{r}{1+r^2}
-\left(
-\delta_1\phi_i\,\partial_t\delta_2\phi_i
--\delta_2\phi_i\,\partial_t\delta_1\phi_i
-\right).
+\Omega_i(\delta_1,\delta_2) =\int_0^\infty dr\int_0^{\alpha_i}d\varphi_i\, \frac{r}{1+r^2} \left( \delta_1\phi_i\,\partial_t\delta_2\phi_i -\delta_2\phi_i\,\partial_t\delta_1\phi_i \right).
 \end{align}$$
 
 把 matching conditions 代入，两个 interfaces 上的 symplectic flux 逐点相消。因此 classical statement 与 flat cylinder 相同：
 
 $$\begin{align}
-\mathcal S_{\mathrm{AdS}_3}^{\rm global}
-\simeq
-\left\{
-(\phi_1,\phi_2)\in
-\widetilde{\mathcal S}_{W_1}\times
-\widetilde{\mathcal S}_{W_2}:
-q_1=q_2,\ \rho_1+\rho_2=0
-\right\},
+\mathcal S_{\mathrm{AdS}_3}^{\rm global} \simeq \left\{ (\phi_1,\phi_2)\in \widetilde{\mathcal S}_{W_1}\times \widetilde{\mathcal S}_{W_2}:
+q_1=q_2,\ \rho_1+\rho_2=0 \right\},
 \end{align}$$
 
 但还要同时施加 $r=0$ 的 global regularity 与 $r=\infty$ 的 theory-defining AdS boundary condition。角坐标在 $r=0$ 退化，因此原点不能被当成一条额外的 physical edge。
@@ -574,71 +545,37 @@ q_1=q_2,\ \rho_1+\rho_2=0
 xAct/xCoba 给出的 scalar wave operator 是
 
 $$\begin{align}
-(\Box-m^2)\phi
-=\left[
--\frac1{1+r^2}\partial_t^2
-+\frac1r\partial_r\!\left(r(1+r^2)\partial_r\right)
-+\frac1{r^2}\partial_\varphi^2
--m^2
-\right]\phi.
+(\Box-m^2)\phi =\left[ -\frac1{1+r^2}\partial_t^2 +\frac1r\partial_r\!\left(r(1+r^2)\partial_r\right) +\frac1{r^2}\partial_\varphi^2 -m^2 \right]\phi.
 \end{align}$$
 
 在第 $i$ 个 wedge 上施加 homogeneous angular Dirichlet condition。normalized angular modes 与 separation constants 是
 
 $$\begin{align}
-\Theta_{i,p}(\varphi_i)
-&=\sqrt{\frac2{\alpha_i}}
-\sin(\kappa_{i,p}\varphi_i),
-&
-\kappa_{i,p}
-&=\frac{\pi p}{\alpha_i},
-&
-p&=1,2,\ldots.
+\Theta_{i,p}(\varphi_i) &=\sqrt{\frac2{\alpha_i}} \sin(\kappa_{i,p}\varphi_i), & \kappa_{i,p} &=\frac{\pi p}{\alpha_i}, & p&=1,2,\ldots.
 \end{align}$$
 
 对任意 real $\kappa\geq0$，regular、normalizable radial modes 可写成
 
 $$\begin{align}
-R_{n,\kappa}(r)
-=\mathcal N_{n,\kappa}\,
-r^\kappa(1+r^2)^{-\frac{\Delta+\kappa}{2}}
-P_n^{(\kappa,\Delta-1)}
-\left(\frac{1-r^2}{1+r^2}\right),
-\qquad
-n=0,1,\ldots,
+R_{n,\kappa}(r) =\mathcal N_{n,\kappa}\, r^\kappa(1+r^2)^{-\frac{\Delta+\kappa}{2}} P_n^{(\kappa,\Delta-1)} \left(\frac{1-r^2}{1+r^2}\right), \qquad n=0,1,\ldots,
 \end{align}$$
 
 并满足
 
 $$\begin{align}
-\left[
-\frac1r\partial_r\!\left(r(1+r^2)\partial_r\right)
-+\frac{\omega^2}{1+r^2}
--\frac{\kappa^2}{r^2}
--m^2
-\right]R_{n,\kappa}=0,
-\qquad
-\omega=\Delta+2n+\kappa.
+\left[ \frac1r\partial_r\!\left(r(1+r^2)\partial_r\right) +\frac{\omega^2}{1+r^2} -\frac{\kappa^2}{r^2} -m^2 \right]R_{n,\kappa}=0, \qquad \omega=\Delta+2n+\kappa.
 \end{align}$$
 
 所以两组 decoupled wedge-Dirichlet frequencies 是
 
 $$\begin{align}
-\omega_{i,n,p}^{D}
-=\Delta+2n+\frac{\pi p}{\alpha_i}.
+\omega_{i,n,p}^{D} =\Delta+2n+\frac{\pi p}{\alpha_i}.
 \end{align}$$
 
 完整 global AdS3 modes 则是
 
 $$\begin{align}
-u_{n,\ell}^{(P)}
-&=e^{-i\omega_{n,\ell}t}
-e^{i\ell\varphi}R_{n,|\ell|}(r),
-&
-\omega_{n,\ell}
-&=\Delta+2n+|\ell|,
-&
-\ell&\in\mathbb Z.
+u_{n,\ell}^{(P)} &=e^{-i\omega_{n,\ell}t} e^{i\ell\varphi}R_{n,|\ell|}(r), & \omega_{n,\ell} &=\Delta+2n+|\ell|, & \ell&\in\mathbb Z.
 \end{align}$$
 
 因此 strict wedge spectra 的 union 既缺少 $\ell=0$ sector，也一般包含 noninteger $\kappa_{i,p}$；它不等于 global spectrum。
@@ -648,8 +585,7 @@ e^{i\ell\varphi}R_{n,|\ell|}(r),
 固定 radial separation constant $\ell$ 后，angular equation 是 $\Theta''+\ell^2\Theta=0$。长度为 $\alpha$ 的 angular interval 有 DtN matrix
 
 $$\begin{align}
-M_\alpha(\ell)
-=\frac{\ell}{\sin(\ell\alpha)}
+M_\alpha(\ell) =\frac{\ell}{\sin(\ell\alpha)}
 \begin{pmatrix}
 \cos(\ell\alpha)&-1\\
 -1&\cos(\ell\alpha)
@@ -661,17 +597,13 @@ M_\alpha(\ell)
 对 separated mode，physical normal flux 等于 $e^{-i\omega t}R_{n,|\ell|}(r)/r$ 乘以这个 angular DtN output；两片具有同一个 common radial factor，所以 flux-matching equation 中它被约去。于是
 
 $$\begin{align}
-\det\left[M_{\alpha_1}(\ell)+M_{\alpha_2}(\ell)\right]
-=-\frac{4\ell^2\sin^2(\pi\ell)}
-{\sin(\ell\alpha_1)\sin(\ell\alpha_2)}.
+\det\left[M_{\alpha_1}(\ell)+M_{\alpha_2}(\ell)\right] =-\frac{4\ell^2\sin^2(\pi\ell)} {\sin(\ell\alpha_1)\sin(\ell\alpha_2)}.
 \end{align}$$
 
 away from wedge Dirichlet poles，kernel condition 精确给出
 
 $$\begin{align}
-\ell\in\mathbb Z,
-\qquad
-\omega_{n,\ell}=\Delta+2n+|\ell|,
+\ell\in\mathbb Z, \qquad \omega_{n,\ell}=\Delta+2n+|\ell|,
 \end{align}$$
 
 也就是完整 global AdS3 normal-mode spectrum。
@@ -679,45 +611,35 @@ $$\begin{align}
 取第一对 modes $\ell=\pm1$。此时
 
 $$\begin{align}
-M_{2\pi/3}(1)
-&=\frac1{\sqrt3}
+M_{2\pi/3}(1) &=\frac1{\sqrt3}
 \begin{pmatrix}
 -1&-2\\
 -2&-1
 \end{pmatrix},\\
-M_{4\pi/3}(1)
-&=\frac1{\sqrt3}
+M_{4\pi/3}(1) &=\frac1{\sqrt3}
 \begin{pmatrix}
 1&2\\
 2&1
 \end{pmatrix},
-\qquad
-M_{2\pi/3}(1)+M_{4\pi/3}(1)=0.
+\qquad M_{2\pi/3}(1)+M_{4\pi/3}(1)=0.
 \end{align}$$
 
 取共同 interface vector $q=(q_A,q_B)^T$。cosine 与 sine modes 的 data 分别是
 
 $$\begin{align}
 q^{(c)}
-&=\begin{pmatrix}1\\-1/2\end{pmatrix},
-&
-q^{(s)}
-&=\begin{pmatrix}0\\\sqrt3/2\end{pmatrix}.
+&=\begin{pmatrix}1\\
+-1/2\end{pmatrix},
+& q^{(s)}
+&=\begin{pmatrix}0\\
+\sqrt3/2\end{pmatrix}.
 \end{align}$$
 
 Poisson extensions 为
 
 $$\begin{align}
-\Theta_1^{(c)}(\varphi_1)
-&=\cos\varphi_1,
-&
-\Theta_2^{(c)}(\varphi_2)
-&=\cos(2\pi/3+\varphi_2),\\
-\Theta_1^{(s)}(\varphi_1)
-&=\sin\varphi_1,
-&
-\Theta_2^{(s)}(\varphi_2)
-&=\sin(2\pi/3+\varphi_2).
+\Theta_1^{(c)}(\varphi_1) &=\cos\varphi_1, & \Theta_2^{(c)}(\varphi_2) &=\cos(2\pi/3+\varphi_2),\\
+\Theta_1^{(s)}(\varphi_1) &=\sin\varphi_1, & \Theta_2^{(s)}(\varphi_2) &=\sin(2\pi/3+\varphi_2).
 \end{align}$$
 
 乘上任意 $e^{-i(\Delta+2n+1)t}R_{n,1}(r)$ 后，它们就是 global $\cos\varphi$ 与 $\sin\varphi$ modes。对 $\ell\in3\mathbb Z$，两个 wedge DtN matrices 同时在 Dirichlet poles 上；必须回到原始 continuity/flux equations。$\ell=0$ 则由 $M_\alpha(0)$ 的 constant-vector kernel 恢复。这两个 sectors 都不会缺谱。
@@ -735,46 +657,26 @@ $$\begin{align}
 global free Hamiltonian 是
 
 $$\begin{align}
-H
-=\frac12\int_0^\infty dr\int_0^{2\pi}d\varphi
-\left[
-\frac{1+r^2}{r}\Pi^2
-+r(1+r^2)(\partial_r\phi)^2
-+\frac1r(\partial_\varphi\phi)^2
-+rm^2\phi^2
-\right].
+H =\frac12\int_0^\infty dr\int_0^{2\pi}d\varphi \left[ \frac{1+r^2}{r}\Pi^2 +r(1+r^2)(\partial_r\phi)^2 +\frac1r(\partial_\varphi\phi)^2 +rm^2\phi^2 \right].
 \end{align}$$
 
 只把 angular direction lattice-regulate，令共同 spacing 为 $\varepsilon$。与第 3 节完全相同，两个 angular Dirichlet chains 缺少的仍是两条 bonds，但 curved metric 给它们一个 radial weight：
 
 $$\begin{align}
-V_{\rm glue}^{(\varepsilon)}
-=-\int_0^\infty\frac{dr}{r\varepsilon}
-\left[
-q_{1,N_1}(r)q_{2,1}(r)
-+q_{2,N_2}(r)q_{1,1}(r)
-\right].
+V_{\rm glue}^{(\varepsilon)} =-\int_0^\infty\frac{dr}{r\varepsilon} \left[ q_{1,N_1}(r)q_{2,1}(r) +q_{2,N_2}(r)q_{1,1}(r) \right].
 \end{align}$$
 
 所以作为 quadratic-form identity，
 
 $$\begin{align}
-H_{\mathrm{AdS}_3,P}^{(\varepsilon)}
-=H_{W_1,D}^{(\varepsilon)}
-+H_{W_2,D}^{(\varepsilon)}
-+V_{\rm glue}^{(\varepsilon)}
+H_{\mathrm{AdS}_3,P}^{(\varepsilon)} =H_{W_1,D}^{(\varepsilon)} +H_{W_2,D}^{(\varepsilon)} +V_{\rm glue}^{(\varepsilon)}
 \end{align}$$
 
 精确恢复 periodic angular lattice。若总 angular sites 为 $N$、$N\varepsilon=2\pi$，用 $\ell\in\mathbb Z_N$ 表示 symmetric lattice-momentum representatives，则 eigenvalues 与 semidiscrete AdS frequencies 是
 
 $$\begin{align}
-\lambda_\ell^{(\varepsilon)}
-&=\frac4{\varepsilon^2}
-\sin^2\left(\frac{\ell\varepsilon}{2}\right),\\
-\omega_{n,\ell}^{(\varepsilon)}
-&=\Delta+2n+\sqrt{\lambda_\ell^{(\varepsilon)}},
-\qquad
-\ell\in\mathbb Z_N.
+\lambda_\ell^{(\varepsilon)} &=\frac4{\varepsilon^2} \sin^2\left(\frac{\ell\varepsilon}{2}\right),\\
+\omega_{n,\ell}^{(\varepsilon)} &=\Delta+2n+\sqrt{\lambda_\ell^{(\varepsilon)}}, \qquad \ell\in\mathbb Z_N.
 \end{align}$$
 
 在 fixed integer $\ell$ limit 中，$\sqrt{\lambda_\ell^{(\varepsilon)}}\to|\ell|$。若要把 tensor-product Fock statement 变成真正的 finite-dimensional Stone--von Neumann statement，还必须同时给 radial direction 加 cutoff/discretization；只 lattice-regulate angle 仍留下无限多个 radial modes。
@@ -784,10 +686,7 @@ $$\begin{align}
 global time slicing 的 one-particle configuration space 是
 
 $$\begin{align}
-\mathcal K
-=L^2\left(
-\Sigma_t,\frac{r}{1+r^2}\,dr\,d\varphi
-\right).
+\mathcal K =L^2\left( \Sigma_t,\frac{r}{1+r^2}\,dr\,d\varphi \right).
 \end{align}$$
 
 令 $A_P$ 与 $A_D$ 分别是 global-periodic 与 two-wedge Dirichlet positive spatial operators。取 normalized global eigenfunction $f$，
@@ -799,19 +698,14 @@ A_Pf=\omega^2f,
 并在 wedge-Dirichlet eigenbasis $A_De_j=\nu_j^2e_j$ 中展开，$O_j=\langle e_j,f\rangle_{\mathcal K}$。相应 Bogoliubov row 是
 
 $$\begin{align}
-\beta_j
-=\frac{\omega-\nu_j}{2\sqrt{\omega\nu_j}}O_j,
-\qquad
-|\beta_j|^2
-\underset{\nu_j\to\infty}{\sim}
-\frac{\nu_j}{4\omega}|O_j|^2.
+\beta_j =\frac{\omega-\nu_j}{2\sqrt{\omega\nu_j}}O_j, \qquad |\beta_j|^2
+\underset{\nu_j\to\infty}{\sim} \frac{\nu_j}{4\omega}|O_j|^2.
 \end{align}$$
 
 因此其 high-frequency norm 由
 
 $$\begin{align}
-\sum_j\nu_j|O_j|^2
-=\left\|A_D^{1/4}f\right\|_{\mathcal K}^2
+\sum_j\nu_j|O_j|^2 =\left\|A_D^{1/4}f\right\|_{\mathcal K}^2
 \end{align}$$
 
 控制。对 second-order Dirichlet elliptic realization，critical fractional domain 在任何远离 $r=0,\infty$ 的 smooth interface collar 上都是 $H_{00}^{1/2}$。局部地，它要求
@@ -823,9 +717,7 @@ $$\begin{align}
 任何在 artificial cut 上具有 nonzero trace 的 smooth global mode 都使这个积分含有 $\int_0 ds/s$，所以
 
 $$\begin{align}
-f\notin\mathcal D(A_D^{1/4}),
-\qquad
-\sum_j|\beta_j|^2=\infty.
+f\notin\mathcal D(A_D^{1/4}), \qquad \sum_j|\beta_j|^2=\infty.
 \end{align}$$
 
 特别地，global $\ell=0$ ground mode 在两条 radial cuts 上都不为零，已经足以证明 divergence。于是对任意 nondegenerate angular split，standard-quantized global AdS3 Fock representation 也不能由 continuum strict-wedge Dirichlet product Fock space 上的 unitary 实现。有限 fully regulated Hamiltonian 仍然 exact；失败的是 cutoff-removal 后的 Hilbert-space identity。
@@ -847,11 +739,7 @@ f\notin\mathcal D(A_D^{1/4}),
 设 $\beta$ 是两个 quasifree representations 之间 Bogoliubov map 的 antilinear part。Shale--Stinespring condition 是
 
 $$\begin{align}
-\beta\in\mathfrak S_2,
-\qquad
-\|\beta\|_{\mathfrak S_2}^2
-=\operatorname{Tr}(\beta^\dagger\beta)
-=\sum_j\|\beta e_j\|^2<\infty,
+\beta\in\mathfrak S_2, \qquad \|\beta\|_{\mathfrak S_2}^2 =\operatorname{Tr}(\beta^\dagger\beta) =\sum_j\|\beta e_j\|^2<\infty,
 \end{align}$$
 
 其中 $\{e_j\}$ 是任意 one-particle orthonormal basis；若 $\beta$ 有 discrete singular decomposition，也等于 $\sum_j s_j(\beta)^2$。这个 quantity 是 extended positive norm，取值在 $[0,\infty]$；它是否有限是 operator 本身的性质。把某个 regulator-dependent spectral series analytically continue 到一个 finite number，并不改变 $\beta\notin\mathfrak S_2$，也不改变 Shale theorem 的 no-unitary conclusion。
@@ -863,10 +751,7 @@ $$\begin{align}
 在任意 finite cutoff 下做 Bloch--Messiah reduction，可把 bosonic transformation 写成 independent squeezed modes，
 
 $$\begin{align}
-\alpha_j=\cosh r_j,
-\qquad
-s_j(\beta_\Lambda)=:\beta_j^{(\Lambda)}
-=\sinh r_j\geq0.
+\alpha_j=\cosh r_j, \qquad s_j(\beta_\Lambda)=:\beta_j^{(\Lambda)} =\sinh r_j\geq0.
 \end{align}$$
 
 下文在 cutoff 固定时省略 $\beta_j^{(\Lambda)}$ 的 superscript。
@@ -874,21 +759,15 @@ s_j(\beta_\Lambda)=:\beta_j^{(\Lambda)}
 相应的 normalized cutoff vacuum 是
 
 $$\begin{align}
-|\Omega_P\rangle_\Lambda
-=\prod_{j\leq\Lambda}(\cosh r_j)^{-1/2}
-\exp\!\left[-\frac12\tanh r_j\,(a_j^\dagger)^2\right]
+|\Omega_P\rangle_\Lambda =\prod_{j\leq\Lambda}(\cosh r_j)^{-1/2} \exp\!\left[-\frac12\tanh r_j\,(a_j^\dagger)^2\right]
 |\Omega_D\rangle.
 \end{align}$$
 
 于是
 
 $$\begin{align}
-|\langle\Omega_D|\Omega_P\rangle_\Lambda|^2
-&=\prod_{j\leq\Lambda}\frac1{\cosh r_j}
-=\det(1+\beta_\Lambda^\dagger\beta_\Lambda)^{-1/2},\\
--\log|\langle\Omega_D|\Omega_P\rangle_\Lambda|
-&=\frac14\sum_{j\leq\Lambda}
-\log(1+|\beta_j|^2)
+|\langle\Omega_D|\Omega_P\rangle_\Lambda|^2 &=\prod_{j\leq\Lambda}\frac1{\cosh r_j} =\det(1+\beta_\Lambda^\dagger\beta_\Lambda)^{-1/2},\\
+-\log|\langle\Omega_D|\Omega_P\rangle_\Lambda| &=\frac14\sum_{j\leq\Lambda} \log(1+|\beta_j|^2)
 \underset{|\beta_j|\to0}{\sim}
 \frac14\sum_{j\leq\Lambda}|\beta_j|^2.
 \end{align}$$
@@ -896,8 +775,7 @@ $$\begin{align}
 若 cutoff 以 compatible modewise 方式依次加入同一组 squeezing factors，更强的 statement 不是“vacuum overlap 变成零”，而是 cutoff vacua 在原 Fock norm 中不形成 Cauchy sequence。对 $N>M$，其 tail overlap 为
 
 $$\begin{align}
-|\langle\Omega_M|\Omega_N\rangle|
-=\prod_{M<j\leq N}(1+|\beta_j|^2)^{-1/4}.
+|\langle\Omega_M|\Omega_N\rangle| =\prod_{M<j\leq N}(1+|\beta_j|^2)^{-1/4}.
 \end{align}$$
 
 若 $\sum_j|\beta_j|^2=\infty$，总能在任意 $M$ 后选到足够大的 $N$，使这个 overlap 与 $1$ 保持有限距离；所以不存在原 Dirichlet Fock space 中的 limiting squeezed vacuum。对没有 compatible discrete singular basis 的一般 transformation，结论由 Shale--Stinespring theorem 本身给出，不依赖这张 diagonal picture。
@@ -905,12 +783,10 @@ $$\begin{align}
 第 2.1 节的 explicit odd-mode lower bound 还给出
 
 $$\begin{align}
-\sum_{p=0}^{M-1}\frac1{2p+1}
-&=H_{2M}-\frac12H_M\\
+\sum_{p=0}^{M-1}\frac1{2p+1} &=H_{2M}-\frac12H_M\\
 &=\frac12\log M+\log2+\frac{\gamma}{2}+o(1),\\
 \sum_{i=1}^2\sum_{p=0}^{M-1}
-|\beta_{0,i,2p+1}|^2
-&=\frac{2}{m\pi C}\log M+O(1).
+|\beta_{0,i,2p+1}|^2 &=\frac{2}{m\pi C}\log M+O(1).
 \end{align}$$
 
 这只是完整 $\|\beta\|_{\mathfrak S_2}^2$ 的一个 positive lower bound，已经足以排除 continuum Fock implementer。
@@ -920,20 +796,15 @@ $$\begin{align}
 对这个 odd harmonic divergence，可引入 dimensionless positive scale $\mu$ 与 analytic regulator
 
 $$\begin{align}
-F_\mu(s)
-&=\mu^s\sum_{p=0}^{\infty}(2p+1)^{-1-s}\\
+F_\mu(s) &=\mu^s\sum_{p=0}^{\infty}(2p+1)^{-1-s}\\
 &=\mu^s\left(1-2^{-1-s}\right)\zeta(1+s)\\
-&=\frac1{2s}
-+\frac{\gamma+\log2+\log\mu}{2}
-+O(s).
+&=\frac1{2s} +\frac{\gamma+\log2+\log\mu}{2} +O(s).
 \end{align}$$
 
 所以 $s=0$ 处仍有 pole。若规定 minimal subtraction，再把 finite part 叫作“regularized particle number”，它仍随 scale 改变：
 
 $$\begin{align}
-\operatorname{FP}F_{\mu_2}
--\operatorname{FP}F_{\mu_1}
-=\frac12\log\frac{\mu_2}{\mu_1}.
+\operatorname{FP}F_{\mu_2} -\operatorname{FP}F_{\mu_1} =\frac12\log\frac{\mu_2}{\mu_1}.
 \end{align}$$
 
 这个 finite part 不是 positive Hilbert norm，也不会把 periodic pure quasifree state 变成 Dirichlet Fock representation 中的 normal state；尤其不能替代 $\beta\in\mathfrak S_2$。同理，可以给 formal vacuum-overlap product 指定一个 zeta determinant，但该 scalar 不会把上面的 non-Cauchy sequence 变成一个 vector。
@@ -941,12 +812,7 @@ $$\begin{align}
 zeta regularization 的合法用途在另一层：对 suitable elliptic operators，它可以定义 vacuum energy、one-loop determinant，以及 BFK/DtN gluing formula 中的 determinant factors。schematically，
 
 $$\begin{align}
-\det_\zeta K_P
-\sim
-\det_\zeta K_{D,1}\,
-\det_\zeta K_{D,2}\,
-\det_\zeta(M_1+M_2),
-e^{\mathcal A_{\rm local}},
+\det_\zeta K_P \sim \det_\zeta K_{D,1}\, \det_\zeta K_{D,2}\, \det_\zeta(M_1+M_2), e^{\mathcal A_{\rm local}},
 \end{align}$$
 
 其中 $\mathcal A_{\rm local}$ 收集 normalization/local anomaly。它是 partition function 或 Gaussian amplitude 的 composition law，不是 Hilbert-space tensor-product theorem。
@@ -965,12 +831,7 @@ e^{\mathcal A_{\rm local}},
 对 boundary direct integral，最朴素的 regulated picture 是
 
 $$\begin{align}
-\mathcal H_{\rm ext}^{(\Lambda)}
-\simeq
-\int_{Q_\Gamma^{(\Lambda)}}^{\oplus}d\mu_\Gamma(q)\,
-\mathcal H_{1;q}^{(\Lambda)}
-\widehat\otimes
-\mathcal H_{2;q}^{(\Lambda)}.
+\mathcal H_{\rm ext}^{(\Lambda)} \simeq \int_{Q_\Gamma^{(\Lambda)}}^{\oplus}d\mu_\Gamma(q)\, \mathcal H_{1;q}^{(\Lambda)} \widehat\otimes \mathcal H_{2;q}^{(\Lambda)}.
 \end{align}$$
 
 这里 $q$ 是共同 interface configuration，随后还要实施 flux matching/symplectic reduction。strict homogeneous Dirichlet product 只对应 $q=0$ fiber；当 $d\mu_\Gamma$ 是 continuous measure 时，单一 fiber 甚至不是一个 normalizable subspace。这个表达式正好解释为什么只保留两个 $q=0$ Fock spaces 太小。
@@ -982,9 +843,7 @@ AQFT split property 提供另一种受控近似：在两个 local regions 之间
 Chandrasekaran 与 Flanagan 的 horizon construction 给出了本题最相关的 algebraic template。他们先扩充 gravitational subregion phase space，加入 corner relative-boost 与 null-translation edge modes；量子化后形成 crossed product，并在
 
 $$\begin{align}
-\widehat{\mathcal H}
-=L^2(G,d\mu_G;\mathcal H)
-=\int_G^{\oplus}d\mu_G(g)\,\mathcal H_g
+\widehat{\mathcal H} =L^2(G,d\mu_G;\mathcal H) =\int_G^{\oplus}d\mu_G(g)\,\mathcal H_g
 \end{align}$$
 
 上作 GNS representation。选择 fiber trivialization 后才可写成 $\widehat{\mathcal H}\cong\mathcal H\widehat\otimes L^2(G)$；这个 tensor split 不是 algebraically canonical。论文也明确指出 sharp-cut Type-III QFT Hilbert space 本来不 factorize，并用 finite collar/brick-wall regularization 与 edge modes 解释 regulated factorization。
@@ -992,20 +851,15 @@ $$\begin{align}
 一般地，若 $G_\Gamma$ locally compact（或已经 finite-mode regulate），且 boundary-extended piece algebra $\widetilde{\mathcal A}_{\rm pieces}$ 上存在 strongly continuous automorphism action $\alpha:G_\Gamma\to\operatorname{Aut}(\widetilde{\mathcal A}_{\rm pieces})$，则可定义
 
 $$\begin{align}
-\mathcal A_\rtimes
-=\widetilde{\mathcal A}_{\rm pieces}
-\rtimes_\alpha G_\Gamma.
+\mathcal A_\rtimes =\widetilde{\mathcal A}_{\rm pieces} \rtimes_\alpha G_\Gamma.
 \end{align}$$
 
 其 regular covariant representation 是
 
 $$\begin{align}
-(\widehat\pi(a)\Psi)(g)
-&=\pi_D\!\left(\alpha_{g^{-1}}(a)\right)\Psi(g),\\
-(\lambda(h)\Psi)(g)
-&=\Psi(h^{-1}g),\\
-\lambda(h)\widehat\pi(a)\lambda(h)^{-1}
-&=\widehat\pi(\alpha_h(a)).
+(\widehat\pi(a)\Psi)(g) &=\pi_D\!\left(\alpha_{g^{-1}}(a)\right)\Psi(g),\\
+(\lambda(h)\Psi)(g) &=\Psi(h^{-1}g),\\
+\lambda(h)\widehat\pi(a)\lambda(h)^{-1} &=\widehat\pi(\alpha_h(a)).
 \end{align}$$
 
 因此一个在原 representation 中是 outer 或 non-spatial 的 automorphism，在 crossed product 中会由新增的 $\lambda(h)$ spatially implement。**这正是 crossed product 能绕开原 Fock implementability obstruction 的意义：它扩大 algebra 与 Hilbert representation；它没有证明原 automorphism 在 $\mathcal F_{D,1}\widehat\otimes\mathcal F_{D,2}$ 内突然变得 unitary。** crossed-product trace 若存在，也是 operator-algebraic semifinite trace/weight，不是由 zeta 给 $\|\beta\|_{\mathfrak S_2}^2$ 指派有限值。
@@ -1013,21 +867,10 @@ $$\begin{align}
 对当前 scalar gluing，不能直接取 strict homogeneous-Dirichlet algebra 做 crossed product，因为 boundary shifts 会把 $q=0$ 移出它的 self-adjoint domain。应先使用第 1 节的 boundary-parametrized CPS/algebra，把 interface $q,\rho$ 或其 Weyl variables 加回，再选 $G_\Gamma$ 为相应 boundary canonical transformations，最后实施 diagonal continuity/flux reduction。固定 full UV cutoff 时 $G_\Gamma^{(\Lambda)}$ 是 finite-dimensional，这个 construction 可以严格执行，并可选择 trivialization 写成
 
 $$\begin{align}
-\widehat{\mathcal H}_\rtimes^{(\Lambda)}
-&=L^2\!\left(
-G_\Gamma^{(\Lambda)};
-\mathcal F_{D,1}^{(\Lambda)}
-\widehat\otimes
-\mathcal F_{D,2}^{(\Lambda)}
-\right)\\
-&\cong
-\left(
-\mathcal F_{D,1}^{(\Lambda)}
-\widehat\otimes
-\mathcal F_{D,2}^{(\Lambda)}
-\right)
-\widehat\otimes
-L^2(G_\Gamma^{(\Lambda)}).
+\widehat{\mathcal H}_\rtimes^{(\Lambda)} &=L^2\!\left( G_\Gamma^{(\Lambda)}; \mathcal F_{D,1}^{(\Lambda)} \widehat\otimes \mathcal F_{D,2}^{(\Lambda)} \right)\\
+&\cong \left( \mathcal F_{D,1}^{(\Lambda)}
+\widehat\otimes \mathcal F_{D,2}^{(\Lambda)} \right)
+\widehat\otimes L^2(G_\Gamma^{(\Lambda)}).
 \end{align}$$
 
 这正是“strict-wedge product 加 interface sector”的 regulated version；continuity/flux reduction 后必须与第 3 节的 periodic matrix Hamiltonian 给出同一个 reduced spectrum。多出的 $L^2(G_\Gamma)$ 不是 decoration，而是让 boundary automorphisms 可被实现所必需的 edge/interface sector。若目的只是在 finite lattice 上求谱，第 3 节的 ordinary product 已经足够；crossed product 的价值在于保留 interface algebra，并组织可能的 continuum algebraic limit。
@@ -1054,13 +897,8 @@ Lill 的 construction 表明，一些违反 Shale--Stinespring condition 的 bos
 因此 continuum 层面的最终关系应写成
 
 $$\begin{align}
-\mathcal H_P
-&\not\simeq_{\rm CCR}
-\mathcal F_{D,1}\widehat\otimes\mathcal F_{D,2},\\
-\mathcal H_{\rm enlarged}
-&\simeq
-\int^{\oplus}d\mu(g)\,\mathcal H_g
-\quad\text{or an appropriate ITP/extended sector},
+\mathcal H_P &\not\simeq_{\rm CCR} \mathcal F_{D,1}\widehat\otimes\mathcal F_{D,2},\\
+\mathcal H_{\rm enlarged} &\simeq \int^{\oplus}d\mu(g)\,\mathcal H_g \quad\text{or an appropriate ITP/extended sector},
 \end{align}$$
 
 其中第二行必须连同 enlarged algebra、state、Hamiltonian 与 gluing reduction 一起指定。只写 Hilbert-space symbol 而不写这些 data，仍然没有定义一个场论。
