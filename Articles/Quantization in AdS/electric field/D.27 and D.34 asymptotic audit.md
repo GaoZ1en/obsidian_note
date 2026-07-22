@@ -436,3 +436,48 @@ Therefore:
 
 - D.34 is required for the D.52 identity from which D.54-D.55 start.
 - The replacement (47), the square identity (48), and the convergence estimate (50) use only D.27 with the pure-power derivative convention. They do not use D.33 or D.34.
+
+$$\begin{align}
+ & \int _{H_{r_{\infty}}}\mathrm{d}x\sqrt{ h } \dfrac{\Delta}{2(2\Delta+1)} \hat{n}_{\rho}\sigma ^{\rho}_{~\mu}\tau _{\nu}\left((\xi ^{\mu}\nabla ^{\nu}\Phi ^{2}-\xi ^{\nu}\nabla ^{\mu}\Phi ^{2})+\dfrac{1}{2}(\nabla ^{\mu}\xi ^{\nu}-\nabla ^{\nu}\xi ^{\mu})\Phi ^{2}\right) \\
+= & \int _{H_{r_{\infty}}}\mathrm{d}x\sqrt{ h } \left( \dfrac{\Delta}{2}\tilde{\tau}_{\mu}\gamma ^{\mu}_{~\nu}\xi ^{\nu}\Phi ^{2} -\dfrac{\Delta}{2\Delta+1} \tilde{\tau}_{\mu}\gamma ^{\mu}_{~\nu}\xi ^{\nu} \Phi (n^{\mu}\nabla _{\mu}+\Delta)\Phi+(\text{terms vanishing under D.27}) \right)
+\end{align}$$
+
+---
+
+we only consider the extra terms
+
+$$\begin{align}
+\Delta Q_{\xi}^{(\mathrm{D.53})} & =-\left.\lim_{ r_{\infty} \to \infty } \int _{H_{r_{\infty}}}\mathrm{d}x\sqrt{ h } \dfrac{\Delta}{2} \tilde{\tau}_{\mu}\gamma ^{\mu}_{~\nu}\xi ^{\nu}\Phi ^{2}\right|_{\tilde{\mathcal{P}}} \\
+\Delta Q_{\xi}^{(\mathrm{D.54})} & =-\left.\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu} \dfrac{\Delta}{2(2\Delta+1)}(\nabla _{\mu}\nabla _{\nu}\Phi ^{2}-g_{\mu \nu}\nabla ^{2}\Phi ^{2}+2g_{\mu \nu}\Phi ^{2})\right|_{\tilde{\mathcal{P}}}
+\end{align}$$
+
+for $\displaystyle{\xi _{0}}$ and $\displaystyle{\bar{\xi}_{0}}$, the $\displaystyle{\Delta Q_{\xi}^{(\mathrm{D.53})}}$ gives the same expression
+
+$$\begin{align}
+\Delta Q_{\xi_{0}/\bar{\xi}_{0}}^{(\mathrm{D.53})} & =\lim_{ r_{\infty} \to \infty } \left.\dfrac{\Delta}{4}\int _{0}^{2\pi}\mathrm{d}\phi r_{\infty}\sqrt{ 1+r_{\infty}^{2} }\Phi ^{2}\right|_{\tilde{\mathcal{P}}}
+\end{align}$$
+
+$\displaystyle{\Delta Q_{\xi}^{(\mathrm{D.54})}}$ also gives the same expression
+
+$$\begin{align}
+\Delta Q_{\xi _{0}/\bar{\xi}_{0}}^{(\mathrm{D.54})} & =\lim_{ r_{\infty} \to \infty } -\dfrac{\Delta}{4(2\Delta+1)} \left.\int _{0}^{2\pi} \mathrm{d}\phi \left(r_{\infty}(1+r_{\infty}^{2})\partial _{r_{\infty}}\Phi ^{2}-r_{\infty}^{2}\Phi ^{2}\right)\right|_{\tilde{\mathcal{P}}}
+\end{align}$$
+
+suppose
+
+$$\begin{align}
+\Phi & =\alpha r^{-\Delta}+\beta r^{\Delta-2}+\dots
+\end{align}$$
+
+when impose the stronger boundary condition, we have $\displaystyle{\beta=0}$. insert into the $\displaystyle{\Delta Q_{\xi_{0}/\bar{\xi}_{0}}}$, we read
+
+$$\begin{align}
+\Delta Q_{\xi _{0}/\bar{\xi}_{0}}^{(\mathrm{D.53})} & =\lim_{ r_{\infty} \to \infty } \int _{0}^{2\pi} \mathrm{d}\phi\left(\dfrac{\Delta}{4}\alpha ^{2}r_{\infty}^{2-2\Delta}+\dfrac{\Delta}{2}\alpha \beta\right)+o(1) \\
+\Delta Q_{\xi _{0}/\bar{\xi}_{0}}^{(\mathrm{D.54})} & =\lim_{ r_{\infty} \to \infty } \int _{0}^{2\pi}\mathrm{d}\phi\left(\dfrac{\Delta}{4}\alpha ^{2}r_{\infty}^{2-2\Delta}+\dfrac{3\Delta}{2(2\Delta+1)}\alpha \beta\right)+o(1)
+\end{align}$$
+
+then
+
+$$\begin{align}
+\Delta Q_{\xi _{0}/\bar{\xi}_{0}}^{(\mathrm{D.53})}-\Delta Q_{\xi _{0}/\bar{\xi}_{0}}^{(\mathrm{D.54})} & =\lim_{ r_{\infty} \to \infty } \dfrac{\Delta(1-\Delta)}{2\Delta+1}\int _{0}^{2\pi}\mathrm{d}\phi \alpha \beta+o(1)
+\end{align}$$
