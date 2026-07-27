@@ -58,14 +58,12 @@ $$\begin{align}
 
 Thus the first two arrows—the user's main priority—are positive theorems only in a broad fixed-frame finite-order radial class。Strict intrinsic/conformal-covariant completeness、uniform $N\to\infty$ control 和 global timelike corners remain open。The earliest unresolved global action arrow is
 
-$$
-\boxed{
-\text{generic joint null--spatial--timelike histories}
-\longrightarrow
+$$\begin{align}
+\boxed{ \text{generic joint null--spatial--timelike histories} \longrightarrow
 S_{\rm ren}^{\mathscr I^\pm\cup i^0\cup i^\pm}
 \text{ off shell and }C^2.
 }
-$$
+\end{align}$$
 
 ---
 
@@ -99,7 +97,7 @@ $$\begin{align}
 
 这一步只研究 $r\to\infty$ 的局域重整化。完成以后再打开 $u=u_\pm$ 的 cuts 和 corner variations。否则 radial divergence、soft $u$-moment divergence 和 $i^0$ divergence 会混在一起。
 
-## 3. counterterm 的“完备性”必须相对于一个 category
+## 3. Counterterm 的“完备性”必须相对于一个 category
 
 至少要固定：
 
@@ -306,10 +304,7 @@ A_i = \sum_{(p,k)\in\mathcal E_{\rm M}} r^{-p}(\log r)^k A_{i}^{(p,k)}(u,\phi),
 4. 不使用 Maxwell EOM 检查这些 divergence 是否可以写成
 
 $$\begin{align}
-\theta_{\rm div}
-+\delta\ell_{\rm ct}^{\rm add}
--d_{\partial}\vartheta_{\rm ct}^{\rm add}
-=\mathcal O(R^0).
+\theta_{\rm div} +\delta\ell_{\rm ct}^{\rm add} -d_{\partial}\vartheta_{\rm ct}^{\rm add} =\mathcal O(R^0).
 \end{align}$$
 
 这里 $\vartheta_{\rm ct}$ 是 corner symplectic potential，不能只找 $\ell_{\rm ct}$。
@@ -371,11 +366,9 @@ Large $U(1)$ charges 只作为最后的 consistency check。
 
 本阶段还必须至少对一个明确 data class 区分：
 
-$$
-\text{formal radial solution}
-\qquad\text{与}\qquad
-\text{actual PDE solution}.
-$$
+$$\begin{align}
+\text{formal radial solution} \qquad\text{与}\qquad \text{actual PDE solution}.
+\end{align}$$
 
 `3d Maxwell.md` Proposition 11.1 已对 compact positive-frequency support、finite angular support 的 Fourier--Bessel data 完成 existence、future-radiation uniqueness 和 continuous dependence。任意 higher-log formal tower 的 realization 不是 Stage 1 theorem 的隐藏假设；它被单列为 zero-frequency threshold/inverse-transform problem。
 
@@ -451,7 +444,7 @@ h_{rr}=0,\qquad h_{rA}=0,
 
 但 determinant condition 是否加入必须单独说明。
 
-off-shell expansion 写成
+Off-shell expansion 写成
 
 $$\begin{align}
 h_{\mu\nu} = \sum_{(p,k)\in\mathcal E_{\rm spin2}} r^{-p}(\log r)^k h_{\mu\nu}^{(p,k)}.
@@ -479,7 +472,7 @@ $\mathcal E_{\rm spin2}$ 至少覆盖：
 
 ## 成功标准
 
-counterterms 的推导不得使用 linearized Einstein equations；on-shell paper 的结果必须作为 restriction 被恢复，而不是作为输入。
+Counterterms 的推导不得使用 linearized Einstein equations；on-shell paper 的结果必须作为 restriction 被恢复，而不是作为输入。
 
 ---
 
@@ -589,7 +582,6 @@ $$\begin{align}
 
 $$\begin{align}
 \mathcal F_0 = \{\text{minimal Bondi gauge + closed polyhom index set}\},
-
 \end{align}$$
 
 $$\begin{align}
@@ -690,7 +682,7 @@ $$\begin{align}
 3. 真正带 conjugate momentum 的 dynamical boundary field；
 4. 扩展 phase space 中的 edge mode。
 
-“external source”指：生成泛函允许对它求变分来定义响应，但在给定 variational problem 中不对它积分，也不要求其 Euler–Lagrange equation。它可以变分，却不等于 dynamical。
+“External source”指：生成泛函允许对它求变分来定义响应，但在给定 variational problem 中不对它积分，也不要求其 Euler–Lagrange equation。它可以变分，却不等于 dynamical。
 
 ## 需要论证
 
@@ -721,11 +713,11 @@ $$\begin{align}
 \text{massless scalar} \to \text{Maxwell} \to \text{massive matter}.
 \end{align}$$
 
-massive matter 会把 $i^\pm$ 同时带进来，不适合一开始就做。
+Massive matter 会把 $i^\pm$ 同时带进来，不适合一开始就做。
 
 ## 模型假设
 
-matter fields 的 falloffs 必须作为独立 off-shell assumptions 给出，不能由 matter EOM 预先解出。
+Matter fields 的 falloffs 必须作为独立 off-shell assumptions 给出，不能由 matter EOM 预先解出。
 
 需要构造 coupled index family：
 
