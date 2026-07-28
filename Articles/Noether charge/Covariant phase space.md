@@ -1,4 +1,4 @@
-arae# Covariant Phase Space Formalism and Noëther theorem
+# Covariant Phase Space Formalism and Noëther theorem
 
 ## Ordinary Approach
 
@@ -89,7 +89,7 @@ $$\begin{align}
 
 Noether theorem approach...
 
-ordinary approach.
+Ordinary approach.
 
 $$
 \tag{2.1}
