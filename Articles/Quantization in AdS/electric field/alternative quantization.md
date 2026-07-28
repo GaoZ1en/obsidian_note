@@ -270,6 +270,13 @@ S & =-\dfrac{1}{2}\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\left(\nabla _{\mu}\Phi \na
  & +\lambda \int _{M}\mathrm{d}^{3}x\sqrt{ -g }(R+6)\Phi ^{2}+2\lambda \int _{\Gamma}\mathrm{d}^{2}x\sqrt{ -\gamma }(K-2)\Phi ^{2}
 \end{align}$$
 
+with $\displaystyle{\lambda=-\dfrac{\Delta}{4(2\Delta+1)}}$. We will use the following asymptotic behavior of $\displaystyle{\Phi}$
+
+$$\begin{align}
+\Phi & =r^{-\Delta}\Psi(t,\phi)+o(r^{-1}) \\
+\Phi & =r^{-\Delta}\Psi(t,\phi)+o(r^{\Delta-2}) \quad(\text{if not enough})
+\end{align}$$
+
 considering
 
 $$\begin{align}
@@ -279,101 +286,59 @@ $$\begin{align}
 \delta K & =-\dfrac{1}{2}K^{\mu \nu}\delta g_{\mu \nu}+\dfrac{1}{2}g^{\mu \nu}n^{\lambda}\nabla _{\lambda}\delta g_{\mu \nu}-\dfrac{1}{2}n^{\alpha}\nabla ^{\beta}\delta g_{\alpha \beta}-\dfrac{1}{2}D_{\mu}(\gamma ^{\mu \nu}n^{\alpha}\delta g_{\nu \alpha})
 \end{align}$$
 
-take a variation of the action with respect to $\displaystyle{\Phi,g_{\mu \nu}}$, we have
-
-Denote $\displaystyle{h_{\mu \nu}=\delta g_{\mu \nu}}$, $\displaystyle{h^{\mu \nu}=g^{\mu \rho}g^{\nu \sigma}h_{\rho \sigma}}$, and $\displaystyle{h_{\mathrm{tr}}=g^{\mu \nu}h_{\mu \nu}}$. After integrating the two derivatives in $\displaystyle{\delta R}$ and combining its boundary terms with $\displaystyle{\delta K}$, the variation can be written as
+take a variation of the action, we have
 
 $$\begin{align}
-\delta S & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\left(E_{\Phi}^{(\lambda)}\delta \Phi+\dfrac{1}{2}T_{(\lambda)}^{\mu \nu}h_{\mu \nu}\right)+\int _{\Sigma _{f}\cup\Sigma _{i}}\mathrm{d}\Sigma _{\mu}\Theta _{(\lambda)}^{\mu}(\delta) \\
- & +\int _{\Gamma}\mathrm{d}^{2}x\sqrt{ -\gamma }\left(\mathcal{E}_{\Gamma}^{(\lambda)}\delta \Phi+\Pi _{(\lambda)}^{ab}\delta \gamma _{ab}\right)+\mathcal{C}_{\partial \Gamma}(\delta g), \\
-E_{\Phi}^{(\lambda)} & =\nabla ^{2}\Phi-\Delta(\Delta-2)\Phi+2\lambda(R+6)\Phi, \\
-T_{(\lambda)}^{\mu \nu} & =T^{\mu \nu}+2\lambda\left[\nabla ^{\mu}\nabla ^{\nu}\Phi ^{2}-g^{\mu \nu}\nabla ^{2}\Phi ^{2}-R^{\mu \nu}\Phi ^{2}+\dfrac{1}{2}(R+6)g^{\mu \nu}\Phi ^{2}\right], \\
-\mathcal{E}_{\Gamma}^{(\lambda)} & =-n^{\mu}\nabla _{\mu}\Phi-\Delta\Phi+4\lambda(K-2)\Phi, \\
-\Pi _{(\lambda)}^{ab} & =-\dfrac{\Delta}{4}\Phi ^{2}\gamma ^{ab}+\lambda\left[\left((K-2)\gamma ^{ab}-K^{ab}\right)\Phi ^{2}+\gamma ^{ab}n^{\mu}\nabla _{\mu}\Phi ^{2}\right].
+\delta S & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\left(E_{\Phi}\Delta \Phi+\dfrac{1}{2}T^{\mu \nu}\delta g_{\mu \nu}\right)+\int _{\Gamma}\mathrm{d}^{2}x\sqrt{ -\gamma }\left(F_{\Phi}\delta \Phi+\dfrac{1}{2}F^{\mu \nu}\delta g_{\mu \nu}\right) \\
+ & +\int _{\Sigma _{i}}^{\Sigma _{f}}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\theta _{\mu}-\int _{\partial \Sigma _{i}}^{\partial \Sigma _{f}}\mathrm{d}x\sqrt{ h }\tau ^{\mu}n^{\nu}C_{\mu \nu} \\
+E_{\Phi} & =\nabla ^{2}\Phi-\Delta(\Delta-2)\Phi+2\lambda(R+6)\Phi \\
+T^{\mu \nu} & =\nabla ^{\mu}\Phi \nabla ^{\nu}\Phi-\dfrac{1}{2}g^{\mu \nu}(\nabla _{\rho}\Phi \nabla ^{\rho}\Phi+\Delta(\Delta-2)\Phi ^{2}) \\
+ & +2\lambda\left( \left( -R^{\mu \nu}+\dfrac{1}{2}Rg^{\mu \nu}+3g^{\mu \nu} \right)\Phi ^{2}+\nabla ^{\mu}\nabla ^{\nu}\Phi ^{2}-g^{\mu \nu}\nabla ^{2}\Phi ^{2} \right) \\
+F_{\Phi} & =-(n^{\mu}\nabla _{\mu}\Phi+\Delta \Phi)+4\lambda(K-2)\Phi \\
+F^{\mu \nu} & =-\dfrac{\Delta}{2}\gamma ^{\mu \nu}\Phi ^{2}+2\lambda((-K^{\mu \nu}+K\gamma ^{\mu \nu}-2\gamma ^{\mu \nu})\Phi ^{2}+\gamma ^{\mu \nu}n^{\rho}\nabla _{\rho}\Phi ^{2}) \\
+\theta _{\mu} & =\nabla _{\mu}\Phi \delta \Phi-\lambda(\Phi ^{2}\nabla ^{\nu}\delta g_{\mu \nu}-\Phi ^{2}g^{\rho \sigma}\nabla _{\mu}\delta g_{\rho \sigma}-\nabla ^{\nu}\Phi ^{2}\delta g_{\mu \nu}+\nabla _{\mu}\Phi ^{2}g^{\rho \sigma}\delta g_{\rho \sigma}) \\
+C_{\mu \nu} & =-\lambda \Phi ^{2}\delta g_{\mu \nu}
 \end{align}$$
 
-The bulk symplectic-potential current which contains the metric variation is
+to set $\displaystyle{F_{\Phi}}$ term vanish, we have to impose $\displaystyle{\Phi=r^{-\Delta}\Psi+o(r^{\Delta-2})}$ instead of $\displaystyle{o(r^{-1})}$. Other boundary terms vanish under $\displaystyle{\Phi=r^{-\Delta}\Psi+o(r^{-1})}$.
+
+We record leading falloffs of $\displaystyle{T^{\mu \nu}}$ and $\displaystyle{F^{\mu \nu}}$ as follows
 
 $$\begin{align}
-\Theta _{(\lambda)}^{\mu}(\delta) & =-\nabla ^{\mu}\Phi\delta \Phi+\lambda\left[\Phi ^{2}\left(\nabla _{\nu}h^{\mu \nu}-\nabla ^{\mu}h_{\mathrm{tr}}\right)-\nabla _{\nu}\Phi ^{2}h^{\mu \nu}+\nabla ^{\mu}\Phi ^{2}h_{\mathrm{tr}}\right],
+T^{\mu \nu} & \sim \begin{pmatrix}
+\mathcal{O}(r^{-2\Delta-4}) & \mathcal{O}(r^{-2\Delta-3}) & \mathcal{O}(r^{-2\Delta-4}) \\
+ & \mathcal{O}(r^{-2\Delta}) & 0 \\
+ &  & \mathcal{O}(r^{-2\Delta-4})
+\end{pmatrix} \\
+F^{\mu \nu} & \sim \begin{pmatrix}
+\mathcal{O}(r^{-2\Delta-4}) & 0 \\
+ & \mathcal{O}(r^{-2\Delta-4})
+\end{pmatrix}
 \end{align}$$
 
-where the sign of its integral on each Cauchy surface is fixed by the oriented surface element $\displaystyle{\mathrm{d}\Sigma _{\mu}}$. The last total derivative in $\displaystyle{\delta K}$ also gives the corner variation
+consider a diffeomorphism generated by a Killing vector $\displaystyle{\xi}$
 
 $$\begin{align}
-\mathcal{C}_{\partial \Gamma}(\delta g) & =-\lambda\int _{\partial \Gamma}\mathrm{d}x\sqrt{ h }\Phi ^{2}\tilde{\tau}_{a}\gamma ^{a\nu}n^{\mu}h_{\mu \nu}.
+X_{\xi} & =\int \mathrm{d}^{3}x\left(\mathcal{L}_{\xi}\Phi \dfrac{\delta}{\delta \Phi}+\mathcal{L}_{\xi}g_{\mu \nu} \dfrac{\delta}{\delta g_{\mu \nu}}\right)
 \end{align}$$
 
-In particular, the parentheses in the last term of $\displaystyle{\delta R}$ are essential: metric compatibility gives $\displaystyle{\nabla _{\rho}g^{\mu \nu}=0}$, but it does not make $\displaystyle{\nabla ^{2}(g^{\mu \nu}\delta g_{\mu \nu})}$ vanish.
-
-Consider a diffeomorphism generated by $\displaystyle{\xi}$. The bulk terms give the off-shell Noether identity
+act on the $\displaystyle{\delta S}$, we have
 
 $$\begin{align}
-E_{\Phi}^{(\lambda)}\nabla ^{\nu}\Phi-\nabla _{\mu}T_{(\lambda)}^{\mu \nu} & =0.
+X_{\xi}\cdot \delta S & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g }\xi ^{\mu}\left(E_{\Phi}\nabla _{\mu}\Phi-\nabla ^{\nu}T_{(\mu \nu)}\right)+\int _{\Sigma _{i}}^{\Sigma _{f}}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}(X_{\xi}\cdot \theta _{\mu}-\xi ^{\nu}T_{\mu \nu}) \\
+ & -\int _{\partial \Sigma _{i}}^{\partial \Sigma _{f}}\mathrm{d}x\sqrt{ h }\tau ^{\mu}(n^{\nu}X_{\xi}\cdot C_{\mu \nu}+F_{\mu \nu}\gamma ^{\nu}_{~\rho}\xi ^{\rho}) \\
+ & +\int _{\Gamma}\mathrm{d}^{2}x\sqrt{ -\gamma }\nu _{\xi} \\
+\nu _{\xi} & =\gamma ^{\mu}_{~\nu}\xi ^{\nu}(\gamma _{\mu}^{~\sigma}n_{\rho}T^{\rho}_{~\sigma}+F_{\Phi}D_{\mu}\Phi-D^{\rho}F_{\rho \mu})+n_{\rho}\xi ^{\rho}(n_{\mu}n_{\nu}T^{\mu \nu}+F_{\Phi}n^{\mu}\nabla _{\mu}\Phi+F^{\mu \nu}K_{\mu \nu}) \\
+ & =-n_{\rho}\xi ^{\rho}\left( \dfrac{1}{2}g^{\mu \nu}\nabla _{\mu}\Phi \nabla _{\nu}\Phi+\dfrac{1}{2}\Delta(\Delta-2)\Phi ^{2}+\dfrac{\Delta}{2}(n^{\mu}\nabla _{\mu}\Phi ^{2}+K\Phi ^{2}) \right) \\
+ & +\lambda n_{\rho}\xi ^{\rho}(\Phi ^{2}(\tilde{R}-K_{\mu \nu}K^{\mu \nu}+K^{2}-4K+6)+2(K-2)n^{\mu}\nabla _{\mu}\Phi ^{2}-2D_{\mu}D^{\mu}\Phi ^{2})
 \end{align}$$
 
-On $\displaystyle{\Gamma}$ decompose
+again, terms supports on $\displaystyle{\Gamma}$ vanish only $\displaystyle{\Phi=r^{-\Delta}\Psi+o(r^{\Delta-2})}$. Therefore the corresponding Noether charge is given by
 
 $$\begin{align}
-\xi ^{\mu} & =\xi _{\parallel}^{\mu}+\xi ^{\perp}n^{\mu}, \\
-\mathcal{L}_{\xi}\gamma _{ab} & =2D_{(a}\xi _{\parallel b)}+2\xi ^{\perp}K_{ab}.
+H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}X_{\xi}\cdot \theta _{\mu}-\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}n^{\nu}X_{\xi}\cdot C_{\mu \nu}-\alpha _{\xi} \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}+\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\mu}\gamma ^{\nu}_{~\rho}\xi ^{\rho}F_{\mu \nu} \\
+ & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}
 \end{align}$$
 
-The tangential divergence gives the corner term which enters the same Noether trick as before. Provided that the boundary equation, the normal-displacement term, and $\displaystyle{\mathcal{C}_{\partial\Gamma}(\mathcal{L}_{\xi}g)}$ vanish in the cutoff limit, the corresponding charge is
-
-$$\begin{align}
-H_{\xi}^{(\lambda)} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}T_{(\lambda)}^{\mu \nu}+2\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h }\tilde{\tau}_{a}\xi _{b}\Pi _{(\lambda)}^{ab} \\
- & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}T_{(\lambda)}^{\mu \nu}+\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h }\tilde{\tau}_{a}\xi _{b}\left\{-\dfrac{\Delta}{2}\Phi ^{2}\gamma ^{ab}\right. \\
- & \left.\qquad\qquad+2\lambda\left[\left((K-2)\gamma ^{ab}-K^{ab}\right)\Phi ^{2}+\gamma ^{ab}n^{\mu}\nabla _{\mu}\Phi ^{2}\right]\right\}.
-\end{align}$$
-
-The condition on the normal displacement is not automatic from covariance. Up to the tangential divergence and the explicit corner variation, its coefficient is
-
-$$\begin{align}
-\mathcal{N}_{\Gamma}^{(\lambda)} & =n_{\mu}n_{\nu}T_{(\lambda)}^{\mu \nu}+\mathcal{E}_{\Gamma}^{(\lambda)}n^{\mu}\nabla _{\mu}\Phi+2\Pi _{(\lambda)}^{ab}K_{ab}.
-\end{align}$$
-
-Now specialize only at the last step to global $\displaystyle{\mathrm{AdS}_{3}}$. Since $\displaystyle{R_{\mu \nu}=-2g_{\mu \nu}}$ and $\displaystyle{R=-6}$,
-
-$$\begin{align}
-T_{(\lambda)\mu \nu} & =T_{\mu \nu}+2\lambda I_{\mu \nu}[\Phi], \\
-I_{\mu \nu}[\Phi] & =(\nabla _{\mu}\nabla _{\nu}-g_{\mu \nu}\nabla ^{2}+2g_{\mu \nu})\Phi ^{2}.
-\end{align}$$
-
-Using $\displaystyle{\Phi=r^{-\Delta}\Psi+o(r^{\Delta-2})}$, one has
-
-$$\begin{align}
-K & =2+\mathcal{O}(r^{-4}), \\
-K^{a}_{~b} & =\delta ^{a}_{~b}+\mathcal{O}(r^{-2}), \\
-n^{\mu}\nabla _{\mu}\Phi ^{2} & =-2\Delta\Phi ^{2}+\mathcal{O}(r^{-2}\Phi ^{2}), \\
-\Pi _{(\lambda)}^{ab}\big|_{\lambda\text{-part}} & =-\lambda(2\Delta+1)\Phi ^{2}\gamma ^{ab}+\mathcal{O}(r^{-2}\Phi ^{2}).
-\end{align}$$
-
-The identity derived above for $\displaystyle{I_{\mu \nu}}$ therefore gives
-
-$$\begin{align}
-2\lambda\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}I_{\mu \nu}[\Phi] & =2\lambda(2\Delta+1)\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h }\tau _{\mu}\xi ^{\mu}\Phi ^{2}+o(r^{0}), \\
-2\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h }\tilde{\tau}_{a}\xi _{b}\Pi _{(\lambda)}^{ab}\big|_{\lambda\text{-part}} & =-2\lambda(2\Delta+1)\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h }\tau _{\mu}\xi ^{\mu}\Phi ^{2}+o(r^{0}).
-\end{align}$$
-
-Hence the bulk improvement supplied by $\displaystyle{(R+6)\Phi ^{2}}$ is canceled by the corner contribution supplied by $\displaystyle{(K-2)\Phi ^{2}}$:
-
-$$\begin{align}
-H_{\xi}^{(\lambda)}\big|_{\lambda\text{-part}} & =0.
-\end{align}$$
-
-With the derivative-controlled asymptotic condition used above,
-
-$$\begin{align}
-\mathcal{E}_{\Gamma}^{(\lambda)} & =\mathcal{O}(r^{-2}\Phi)+o(\Phi), \\
-\mathcal{N}_{\Gamma}^{(\lambda)} & =\mathcal{O}(r^{-4}\Phi ^{2})+o(\Phi ^{2}).
-\end{align}$$
-
-Therefore the boundary equation and the normal-displacement term vanish in the cutoff limit, and the valid finite charge is unchanged:
-
-$$\begin{align}
-H_{\xi}^{(\lambda)} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}T_{\mu \nu}-\dfrac{\Delta}{2}\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h }\tau _{\mu}\xi ^{\mu}\Phi ^{2} \\
- & =H_{\xi}.
-\end{align}$$
-
-Choosing $\displaystyle{\lambda=-\Delta/[4(2\Delta+1)]}$ makes the bulk tensor $\displaystyle{T_{(\lambda)\mu \nu}}$ equal to the previously defined $\displaystyle{\widehat{T}_{\mu \nu}}$, but it does not change the total charge: the new bulk term and the new corner term cancel each other. Moreover, on fixed $\displaystyle{\mathrm{AdS}_{3}}$ one has $\displaystyle{R+6=0}$, while $\displaystyle{K-2=\mathcal{O}(r^{-4})}$ at the cutoff boundary. Therefore, in the present fixed-background $\displaystyle{r_{\infty}\to\infty}$ problem, the added covariant completion brings no new scalar equation, boundary condition, or conserved charge; it only rewrites the same charge in a bulk-improved-plus-corner form and does not independently fix the improvement coefficient.
+the last term vanishes due to its falloff.
