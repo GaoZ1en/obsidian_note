@@ -4,7 +4,7 @@
 
 在 fixed 3D Minkowski background、finite $u$-slab、fixed defining function 和 radial gauge sector 中，Stage 1 可以完整做到以下程度：
 
-1. Bosma--Geiller--Majumdar--Oblak 的 powers/log positions 可作为 on-shell support，但其
+1. dd 的 powers/log positions 可作为 on-shell support，但其
 
 $$\begin{align}
 n\leq\lceil m\rceil
@@ -94,13 +94,11 @@ $$\begin{align}
 因此
 
 $$\begin{align}
-\delta S_R = \int_{M_{R,I}}d^3x\, r(\nabla_\mu F^{\mu\nu})\delta A_\nu + \int_{r=R}du\,d\phi\,\theta^r
-- \int_{r=R_0}du\,d\phi\,\theta^r
+\delta S_R = \int_{M_{R,I}}d^3x\, r(\nabla_\mu F^{\mu\nu})\delta A_\nu + \int_{r=R}du\,d\phi\,\theta^r - \int_{r=R_0}du\,d\phi\,\theta^r
 \end{align}$$
 
 $$\begin{align}
-\qquad + \int_{u=u_+}dr\,d\phi\,\theta^u
-- \int_{u=u_-}dr\,d\phi\,\theta^u.
+\qquad + \int_{u=u_+}dr\,d\phi\,\theta^u - \int_{u=u_-}dr\,d\phi\,\theta^u.
 \end{align}$$
 
 $\phi$ 是 periodic，因此没有 angular boundary。
@@ -320,8 +318,7 @@ F_{\mu\nu}F^{\mu\nu} = 2\left[ -F_{ur}^2 -\frac{2}{r^2}F_{u\phi}F_{r\phi} +\frac
 因此 coordinate Lagrangian density 为
 
 $$\begin{align}
-\mathscr L = \frac r2F_{ur}^2 + \frac1rF_{u\phi}F_{r\phi}
-- \frac1{2r}F_{r\phi}^2.
+\mathscr L = \frac r2F_{ur}^2 + \frac1rF_{u\phi}F_{r\phi} - \frac1{2r}F_{r\phi}^2.
 \end{align}$$
 
 在 $A_r=0$ 上，
@@ -333,8 +330,7 @@ F_{ur}=-\partial_rA_u, \qquad F_{r\phi}=\partial_rA_\phi, \qquad F_{u\phi}=\part
 所以
 
 $$\begin{align}
-\mathscr L_{\mathrm{RG}} = \frac r2(\partial_rA_u)^2 + \frac1r \left( \partial_uA_\phi-\partial_\phi A_u \right) \partial_rA_\phi
-- \frac1{2r}(\partial_rA_\phi)^2.
+\mathscr L_{\mathrm{RG}} = \frac r2(\partial_rA_u)^2 + \frac1r \left( \partial_uA_\phi-\partial_\phi A_u \right) \partial_rA_\phi - \frac1{2r}(\partial_rA_\phi)^2.
 \end{align}$$
 
 Outer-boundary potential 是
@@ -525,8 +521,7 @@ S_{\mathrm{ct},R}^{\mathrm{Coul}} = -\frac{\Lambda_R}{2} \int_{u_-}^{u_+}du\int_
 以及
 
 $$\begin{align}
-S_{\mathrm{ct},R}^{\mathrm{rad}} = -\frac{\Lambda_R}{4} \int_0^{2\pi}d\phi\, \left[ \mathcal C_R^2\big|_{u_+}
-- \mathcal C_R^2\big|_{u_-} \right].
+S_{\mathrm{ct},R}^{\mathrm{rad}} = -\frac{\Lambda_R}{4} \int_0^{2\pi}d\phi\, \left[ \mathcal C_R^2\big|_{u_+} - \mathcal C_R^2\big|_{u_-} \right].
 \end{align}$$
 
 则
@@ -634,9 +629,7 @@ $$\begin{align}
 Radiative corner counterterm 的 variation 正好给出相反项。因此定义
 
 $$\begin{align}
-\Theta_{\Sigma_u}^{\mathrm{ren}} := \lim_{R\to\infty} \left[ \int_{R_0}^{R}dr\int_0^{2\pi}d\phi\, \frac{F_{r\phi}}r\,\delta A_\phi
-- \frac{\Lambda_R}{2}
-\int_0^{2\pi}d\phi\, \mathcal C_R\,\delta\mathcal C_R \right].
+\Theta_{\Sigma_u}^{\mathrm{ren}} := \lim_{R\to\infty} \left[ \int_{R_0}^{R}dr\int_0^{2\pi}d\phi\, \frac{F_{r\phi}}r\,\delta A_\phi - \frac{\Lambda_R}{2} \int_0^{2\pi}d\phi\, \mathcal C_R\,\delta\mathcal C_R \right].
 \end{align}$$
 
 ### Proposition 10.1
@@ -678,8 +671,7 @@ Corner subtraction 是 field-space exact，因此不改变 $\Omega_{\Sigma_u}^{\
 固定内侧 $r=R_0$ 的数据后，
 
 $$\begin{align}
-\delta S_{\mathrm{ren}} = \int_M d^3x\,r(\nabla_\mu F^{\mu\nu})\delta A_\nu + \Theta_{\Sigma_+}^{\mathrm{ren}}
-- \Theta_{\Sigma_-}^{\mathrm{ren}}
+\delta S_{\mathrm{ren}} = \int_M d^3x\,r(\nabla_\mu F^{\mu\nu})\delta A_\nu + \Theta_{\Sigma_+}^{\mathrm{ren}} - \Theta_{\Sigma_-}^{\mathrm{ren}}
 \end{align}$$
 
 $$\begin{align}
@@ -815,8 +807,7 @@ $$\begin{align}
 令不存在的 coefficients，例如 $V_{-1}$ 和 $U_{-1/2}$，等于零。$\mathcal M_\phi=0$ 在每个 weight 给出
 
 $$\begin{align}
-\boxed{ \left( \mathsf D_m+\mathsf D_{m+1} \right)
-\dot V_m = \mathsf D_{m+1} \left( \mathsf D_{m-1}V_{m-1} + \partial_\phi U_m \right)
+\boxed{ \left( \mathsf D_m+\mathsf D_{m+1} \right) \dot V_m = \mathsf D_{m+1} \left( \mathsf D_{m-1}V_{m-1} + \partial_\phi U_m \right)
 }.
 \end{align}$$
 
@@ -927,8 +918,7 @@ $$\begin{align}
 并在下一阶唯一给出
 
 $$\begin{align}
-\dot V_{3/2} = a \left( \frac3{32} + \frac{19}{16}L
-- \frac5{16}L^2 \right).
+\dot V_{3/2} = a \left( \frac3{32} + \frac{19}{16}L - \frac5{16}L^2 \right).
 \end{align}$$
 
 之后各阶继续由可逆 polynomial operators 递归决定。也就是说，$m=1/2$ 上的 $L^2$ initial datum 不被 EOM 置零，而是向更 subleading orders 传播。
@@ -1019,8 +1009,7 @@ $$\begin{align}
 Bessel equation 直接给出
 
 $$\begin{align}
-\Box \left[ J_{|\ell|}(\varpi r)
-e^{-i\varpi t+i\ell\phi} \right] =0.
+\Box \left[ J_{|\ell|}(\varpi r) e^{-i\varpi t+i\ell\phi} \right] =0.
 \end{align}$$
 
 由于 $\Lambda$ finite 且 amplitudes smooth、compactly supported away from $\varpi=0$，可以在 integral 下任意求导。又因为
@@ -1172,10 +1161,9 @@ r\geq R_1\\
 }}
 r^{N+\frac12} \left|
 \partial_u^p
-\partial_\phi^q
-(r\partial_r)^s \left[ \varphi_a
-- \sum_{j=0}^{N-1} r^{-j-\frac12}C_j \right] \right|
+\partial_\phi^q (r\partial_r)^s \left[ \varphi_a - \sum_{j=0}^{N-1} r^{-j-\frac12}C_j \right] \right|
 \leq c\,p_M(a).
+\end{align}
 \end{align}$$
 
 对 $F_a$ 和 radial-gauge $A_a$ 的 estimates 由 differentiation 和 coefficientwise radial integration 得到。这证明 continuous dependence in the declared topology。
@@ -1257,8 +1245,7 @@ a_\ell(\varpi) \sim
 这不是只写一个 formal series。对任意非 index weight $B$，截断 remainder
 
 $$\begin{align}
-R_{\ell,B} := a_\ell
-- \sum_{\substack{ (\alpha,k)\in\mathcal E_\ell\\
+R_{\ell,B} := a_\ell - \sum_{\substack{ (\alpha,k)\in\mathcal E_\ell\\
 \operatorname{Re}\alpha<B
 }}
 a_{\ell,\alpha,k}\, \chi(\varpi)\, \varpi^\alpha \left( \log\frac{\varpi}{\mu} \right)^k
@@ -1443,8 +1430,7 @@ k=0 \Longrightarrow \text{无 threshold face},
 \end{align}$$
 
 $$\begin{align}
-k\geq1
-\Longrightarrow \deg_{\log r}=k-1,
+k\geq1 \Longrightarrow \deg_{\log r}=k-1,
 \end{align}$$
 
 且 leading coefficient proportional to
@@ -1474,15 +1460,13 @@ A[a]
 在任意 finite $u$-slab 上 well defined 且 continuous，并有 full conormal polyhomogeneous expansion。其 index set 是以下集合的 extended union：
 
 $$\begin{align}
-\left\{ j+\frac12
-\mid j\in\mathbb N_0 \right\}
+\left\{ j+\frac12 \mid j\in\mathbb N_0 \right\}
 \end{align}$$
 
 的 radiation face，以及
 
 $$\begin{align}
-\left\{ \alpha+1+n
-\mid (\alpha,k)\in\mathcal E_\ell,\ n\in\mathbb N_0 \right\}
+\left\{ \alpha+1+n \mid (\alpha,k)\in\mathcal E_\ell,\ n\in\mathbb N_0 \right\}
 \end{align}$$
 
 的 threshold face；相等 weights 按上面的 collision rule 增加 log multiplicity。Coefficientwise differentiation 和 radial integration 把它变为 section 11.2 的 Maxwell index set。
@@ -1704,8 +1688,7 @@ d\omega=0.
 对 regulated slab 使用 Stokes theorem，再取 $R\to\infty$，并固定 inner-boundary data，得到
 
 $$\begin{align}
-\boxed{ \Omega_{\Sigma_+}^{\mathrm{ren}}
-- \Omega_{\Sigma_-}^{\mathrm{ren}} + \int_{u_-}^{u_+}du\int_0^{2\pi}d\phi\, \left( \delta E\wedge\delta G + \delta N\wedge\delta C \right) = 0
+\boxed{ \Omega_{\Sigma_+}^{\mathrm{ren}} - \Omega_{\Sigma_-}^{\mathrm{ren}} + \int_{u_-}^{u_+}du\int_0^{2\pi}d\phi\, \left( \delta E\wedge\delta G + \delta N\wedge\delta C \right) = 0
 }.
 \end{align}$$
 
@@ -1808,8 +1791,7 @@ $$\begin{align}
 相应的 variation 满足
 
 $$\begin{align}
-\delta H_\alpha(u_+)
-- \delta H_\alpha(u_-) = -\int_{u_-}^{u_+}du\int_0^{2\pi}d\phi\, \dot\alpha\,\delta E.
+\delta H_\alpha(u_+) - \delta H_\alpha(u_-) = -\int_{u_-}^{u_+}du\int_0^{2\pi}d\phi\, \dot\alpha\,\delta E.
 \end{align}$$
 
 另一方面 residual gauge transformation 作用为
@@ -1821,8 +1803,7 @@ $$\begin{align}
 所以 null-boundary symplectic flux 是
 
 $$\begin{align}
-\int_{\mathscr I_I}
-\omega_{\mathscr I}(\delta,\delta_\alpha) = \int_{u_-}^{u_+}du\int_0^{2\pi}d\phi\, \dot\alpha\,\delta E.
+\int_{\mathscr I_I} \omega_{\mathscr I}(\delta,\delta_\alpha) = \int_{u_-}^{u_+}du\int_0^{2\pi}d\phi\, \dot\alpha\,\delta E.
 \end{align}$$
 
 这与 section 12 的 flux-balance law 精确相消。
@@ -1886,8 +1867,7 @@ Gauge-saturated parent space 先 quotient 掉所有在 relevant boundaries 消�
 On shell 的 relative identity 是
 
 $$\begin{align}
-\Omega_{\Sigma_+}^{\mathrm{ren}}
-- \Omega_{\Sigma_-}^{\mathrm{ren}} + \Omega_{\mathscr I_I}^{\mathrm{ren}} =0.
+\Omega_{\Sigma_+}^{\mathrm{ren}} - \Omega_{\Sigma_-}^{\mathrm{ren}} + \Omega_{\mathscr I_I}^{\mathrm{ren}} =0.
 \end{align}$$
 
 因此
@@ -1939,8 +1919,7 @@ $$\begin{align}
 若 $v$ 与每个这样的 $w$ 配对为零，则 integration by parts 给出
 
 $$\begin{align}
-\frac{2\partial_rv}{r}
-- \frac{v}{r^2} =0,
+\frac{2\partial_rv}{r} - \frac{v}{r^2} =0,
 \end{align}$$
 
 所以
@@ -2005,8 +1984,7 @@ $$\begin{align}
 有
 
 $$\begin{align}
-\Omega_{\Sigma_u}^{\mathrm{ren}}
-(\delta,\delta_\alpha) = -\int_{S^1}d\phi\, \alpha\, \delta(E-E_{\mathrm{in}}).
+\Omega_{\Sigma_u}^{\mathrm{ren}} (\delta,\delta_\alpha) = -\int_{S^1}d\phi\, \alpha\, \delta(E-E_{\mathrm{in}}).
 \end{align}$$
 
 这正是 section 13 的 cut moment map；若 inner data fixed，便恢复
@@ -2078,13 +2056,11 @@ w=(\widetilde e,\widetilde g,\widetilde c),
 有
 
 $$\begin{align}
-\Omega_{\mathscr I_I}(v,w) = \int d\phi \left[ e\int_Idu\,\widetilde g
-- \widetilde e\int_Idu\,g \right]
+\Omega_{\mathscr I_I}(v,w) = \int d\phi \left[ e\int_Idu\,\widetilde g - \widetilde e\int_Idu\,g \right]
 \end{align}$$
 
 $$\begin{align}
-\qquad + \int_Idu\int d\phi\, \left( \dot c\,\widetilde c
-- \dot{\widetilde c}\,c \right).
+\qquad + \int_Idu\int d\phi\, \left( \dot c\,\widetilde c - \dot{\widetilde c}\,c \right).
 \end{align}$$
 
 先取 arbitrary $\widetilde g$ 和 $\widetilde e$，得到
@@ -2195,8 +2171,7 @@ as a Hausdorff Fréchet manifold。Section 14.2 证明其 $\Omega_{\Sigma}^{\mat
 Flux side 上，continuous map
 
 $$\begin{align}
-\mathcal I_u:
-G\longmapsto \Gamma=\int_Idu\,G
+\mathcal I_u: G\longmapsto \Gamma=\int_Idu\,G
 \end{align}$$
 
 有 closed kernel，并有 continuous splitting
@@ -2300,8 +2275,7 @@ $$\begin{align}
 - Mathematica constructed the $V_{1/2}=aL^2$ higher-log recursion check and returned
 
 $$\begin{align}
-\dot V_{3/2} = a \left( \frac3{32} + \frac{19}{16}L
-  - \frac5{16}L^2 \right).
+\dot V_{3/2} = a \left( \frac3{32} + \frac{19}{16}L - \frac5{16}L^2 \right).
 \end{align}$$
 
 - Mathematica verified symbolically that
