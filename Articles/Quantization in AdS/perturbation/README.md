@@ -41,8 +41,7 @@ This directory develops a CPS-normalized perturbative framework for scalar field
 
 ## Global-AdS3 loop and boundary examples
 
-- [Two-particle primary states](<global AdS3 two-particle primary states.md>) — the complete $L_{-1,0,+1}\times\bar L_{-1,0,+1}$ lowest-weight construction in the CPS-normalized scalar Fock space.
-- [Multiparticle conformal primaries and descendants](<2-particle primaries.md>) — the $\operatorname{Sym}^{N}\mathcal H_{1}$ character decomposition, finite common-kernel construction, normalized descendants, and low-level three- and four-particle examples.
+- [Multiparticle conformal primaries and descendants](<multi-particle primaries.md>) — the $\operatorname{Sym}^{N}\mathcal H_{1}$ character decomposition, finite common-kernel construction, normalized descendants, and the explicit two-particle primary sector.
 - [Scalar three-point function from OFPT](<global AdS3 scalar three-point function from OFPT.md>) — the exact $\phi^2\chi$ Hamiltonian three-state coefficient in AdS$_3$, its finite-time transition amplitude, and comparison with arXiv:1007.2412.
 - [$\phi^4$ tadpole](cps-paqft-formalism/global_ads3_phi4_tadpole_embedding_check.md) — local mass renormalization and fixed-$\Delta$ versus shifted-$\Delta_R$ schemes.
 - [$\phi^3$ bubble](cps-paqft-formalism/global_ads3_phi3_bubble_embedding_check.md) — nonlocal spectral self-energy.

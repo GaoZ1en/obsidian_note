@@ -1,4 +1,4 @@
-we first specify the background metric
+We first specify the background metric
 
 $$\begin{align}
 \mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\dfrac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\Omega _{2}^{2} \\
@@ -7,7 +7,7 @@ $$\begin{align}
 
 ## Killing algebra
 
-The global AdS$_{4}$ Killing algebra is $\mathfrak{so}(2,3)$. it is convenient to introduce the following two Cartan generators
+The global AdS$_{4}$ Killing algebra is $\mathfrak{so}(2,3)$. It is convenient to introduce the following two Cartan generators
 
 $$\begin{align}
 L_{0} & =\dfrac{1}{2}(\partial _{t}+\partial _{\phi}) \\
@@ -58,7 +58,7 @@ H=\partial _{t}=L_{0}+\bar L_{0},\qquad J_{3}=\partial _{\phi }=L_{0}-\bar L_{0}
 
 The real Killing algebra is recovered by taking the corresponding real form.
 
-we can expand the inverse metric as
+We can expand the inverse metric as
 
 $$\begin{align}
 g^{\mu \nu} & =-2L_{0}^{\mu}L_{0}^{\nu}-2\bar{L}_{0}^{\mu}\bar{L}_{0}^{\nu}-(J_{+}^{\mu}J_{-}^{\nu}+J_{-}^{\mu}J_{+}^{\nu}) \\
@@ -67,34 +67,34 @@ g^{\mu \nu} & =-2L_{0}^{\mu}L_{0}^{\nu}-2\bar{L}_{0}^{\mu}\bar{L}_{0}^{\nu}-(J_{
 
 this will be useful in the following discussion.
 
-the quadratic Casimir associated with the above Killing basis is
+The quadratic Casimir associated with the above Killing basis is
 
 $$\begin{align}
 \mathcal{C}_{2} & =-2\mathcal{L}_{L_{0}}\mathcal{L}_{L_{0}}-2\mathcal{L}_{\bar{L}_{0}}\mathcal{L}_{\bar{L}_{0}}-\mathcal{L}_{J_{+}}\mathcal{L}_{J_{-}}-\mathcal{L}_{J_{-}}\mathcal{L}_{J_{+}} \\
  & \quad+\sum_{m=-1}^{1}\left(\mathcal{L}_{E^{+}_{m}}\mathcal{L}_{E^{-}_{-m}}+\mathcal{L}_{E^{-}_{-m}}\mathcal{L}_{E^{+}_{m}}\right).
 \end{align}$$
 
-## massive scalar
+## Massive scalar
 
-acting the Casimir on scalar fields, this operator is exactly the scalar Laplacian:
+Acting the Casimir on scalar fields, this operator is exactly the scalar Laplacian:
 
 $$\begin{align}
 \mathcal{C}_{2}\phi=\nabla^{2}\phi.
 \end{align}$$
 
-therefore for a scalar with mass $\displaystyle{\mu}$, we have
+Therefore for a scalar with mass $\displaystyle{\mu}$, we have
 
 $$\begin{align}
 \mathcal{C}_{2}\phi=\mu^{2}\phi.
 \end{align}$$
 
-the scalar highest-weight primary is annihilated by the energy-lowering generators and is a rotational singlet:
+The scalar highest-weight primary is annihilated by the energy-lowering generators and is a rotational singlet:
 
 $$\begin{align}
 \mathcal{L}_{E^{+}_{m}}\phi_{0}=0,\qquad \mathcal{L}_{J_{\pm}}\phi_{0}=0,\qquad m=-1,0,+1.
 \end{align}$$
 
-we take its Cartan weights to be $\displaystyle{(h,\bar{h})}$, i.e., we have
+We take its Cartan weights to be $\displaystyle{(h,\bar{h})}$, i.e., we have
 
 $$\begin{align}
 \mathcal{L}_{L_{0}}\phi _{0} & =-ih\phi _{0} \\
@@ -120,7 +120,7 @@ $$\begin{align}
 \mathcal{C}_{2}\phi _{0}=\Delta(\Delta-3)\phi _{0}.
 \end{align}$$
 
-the regular scalar primary is
+The regular scalar primary is
 
 $$\begin{align}
 \phi_{0}=N\dfrac{e^{-i\Delta t}}{(1+r^{2})^{\Delta/2}},
@@ -128,31 +128,31 @@ $$\begin{align}
 
 where $N$ is fixed later by the Klein-Gordon norm.
 
-so the mass and highest weight are related by
+So the mass and highest weight are related by
 
 $$\begin{align}
 \mu^{2}=\Delta(\Delta-3).
 \end{align}$$
 
-for standard quantization,
+For standard quantization,
 
 $$\begin{align}
 \Delta=\dfrac{3}{2}+\sqrt{\dfrac{9}{4}+\mu^{2}}.
 \end{align}$$
 
-the descendants are obtained by repeated action of the energy-raising generators:
+The descendants are obtained by repeated action of the energy-raising generators:
 
 $$\begin{align}
 \phi_{m_{1}\cdots m_{N}}=\mathcal{L}_{E^{-}_{m_{1}}}\cdots \mathcal{L}_{E^{-}_{m_{N}}}\phi_{0},\qquad m_{j}\in\{-1,0,+1\}.
 \end{align}$$
 
-since $[E^{-}_{m},E^{-}_{n}]=0$, the level-$N$ descendants form symmetric products of the spin-one $SO(3)$ representation. they decompose into angular momenta $\ell=N,N-2,\ldots$, matching the global scalar spectrum
+Since $[E^{-}_{m},E^{-}_{n}]=0$, the level-$N$ descendants form symmetric products of the spin-one $SO(3)$ representation. They decompose into angular momenta $\ell=N,N-2,\ldots$, matching the global scalar spectrum
 
 $$\begin{align}
 \omega=\Delta+\ell+2p,\qquad p=0,1,2,\ldots.
 \end{align}$$
 
-## massive vector
+## Massive vector
 
 For a vector field, the Lie derivative contains the spin term:
 
@@ -233,7 +233,7 @@ $$\begin{align}
 \Delta=\dfrac{3}{2}+\sqrt{\dfrac{1}{4}+\mu^{2}}.
 \end{align}$$
 
-we introduce the spin-1 polarization (co)vectors as
+We introduce the spin-1 polarization (co)vectors as
 
 $$\begin{align}
 u_{+,\mu} & =e^{i\phi}\left(-r\sin\theta,-\dfrac{i\sin\theta}{1+r^{2}},-ir\cos\theta,r\sin\theta\right), \\
@@ -271,7 +271,7 @@ $$\begin{align}
 A^{\mu}_{s;m_{1}\cdots m_{N}}=\mathcal{L}_{E^{-}_{m_{1}}}\cdots \mathcal{L}_{E^{-}_{m_{N}}}A_{s}^{\mu},\qquad s=+1,0,-1,\qquad m_{j}\in\{-1,0,+1\}.
 \end{align}$$
 
-## massless vector
+## Massless vector
 
 For Maxwell theory the equation of motion is
 
@@ -339,7 +339,7 @@ $$\begin{align}
 
 Thus the covariant potential retains the full $SO(3)$ primary triplet, while the residual-gauge branch and the longitudinal photon polarization are removed at the level of the gauge quotient. In the flat-space limit this quotient leaves the two helicity polarizations.
 
-## massive TT tensor
+## Massive TT tensor
 
 For a symmetric two-tensor, the Lie derivative is
 
@@ -443,7 +443,7 @@ $$\begin{align}
 h_{s;m_{1}\cdots m_{N},\mu\nu}=\mathcal{L}_{E^{-}_{m_{1}}}\cdots \mathcal{L}_{E^{-}_{m_{N}}}h_{s,\mu\nu},\qquad s=+2,+1,0,-1,-2,\qquad m_{j}\in\{-1,0,+1\}.
 \end{align}$$
 
-## massless TT tensor
+## Massless TT tensor
 
 For the massless Einstein equation in TT gauge, the field equation is
 

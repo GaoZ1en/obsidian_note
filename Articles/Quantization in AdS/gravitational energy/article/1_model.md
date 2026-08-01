@@ -1,41 +1,41 @@
-## theory setup
+## Theory Setup
 
-### spacetime and boundary geometry
+### Spacetime and Boundary Geometry
 
-we parameterize global AdS$\displaystyle{_{3}}$ by the standard coordinates $\displaystyle{(t,r,\phi)}$, with ranges $\displaystyle{t\in(-\infty,+\infty)}$ and $\displaystyle{r\in[0,\infty)}$, and angular periodicity $\displaystyle{\phi \sim \phi+2\pi}$. the background metric is
+We parameterize global AdS$\displaystyle{_{3}}$ by the standard coordinates $\displaystyle{(t,r,\phi)}$, with ranges $\displaystyle{t\in(-\infty,+\infty)}$ and $\displaystyle{r\in[0,\infty)}$, and angular periodicity $\displaystyle{\phi \sim \phi+2\pi}$. The background metric is
 
 $$\begin{align}
 \mathrm{d}s^{2} & =g^{(0)}_{\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} \\
  & =-(1+r^{2})\mathrm{d}t^{2}+\dfrac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2}
 \end{align}$$
 
-we set the AdS radius to unity, $\displaystyle{\ell_{\text{AdS}}=1}$. the regulated spacetime $\displaystyle{M}$ is bounded by two Cauchy surfaces $\displaystyle{\Sigma_{i}}$ and $\displaystyle{\Sigma _{f}}$ and by the timelike cylinder $\displaystyle{\Gamma _{r_{\infty}}}$ at $\displaystyle{r=r_{\infty}}$. the future-pointing unit normal to $\displaystyle{\Sigma}$ is $\displaystyle{\tau ^{\mu}}$, and the outward unit normal to $\displaystyle{\Gamma _{r_{\infty}}}$ is $\displaystyle{n^{\mu}}$. we write
+we set the AdS radius to unity, $\displaystyle{\ell_{\text{AdS}}=1}$. The regulated spacetime $\displaystyle{M}$ is bounded by two Cauchy surfaces $\displaystyle{\Sigma_{i}}$ and $\displaystyle{\Sigma _{f}}$ and by the timelike cylinder $\displaystyle{\Gamma _{r_{\infty}}}$ at $\displaystyle{r=r_{\infty}}$. The future-pointing unit normal to $\displaystyle{\Sigma}$ is $\displaystyle{\tau ^{\mu}}$, and the outward unit normal to $\displaystyle{\Gamma _{r_{\infty}}}$ is $\displaystyle{n^{\mu}}$. We write
 
 $$\begin{align}
 \sigma _{\mu \nu} & =g_{\mu \nu}+\tau _{\mu}\tau _{\nu}, & \gamma _{\mu \nu} & =g_{\mu \nu}-n_{\mu}n_{\nu}, & q_{\mu \nu} & =g_{\mu \nu}+\tau _{\mu}\tau _{\nu}-n_{\mu}n_{\nu}
 \end{align}$$
 
-for the induced metrics on $\displaystyle{\Sigma,\Gamma _{r_{\infty}}}$ and the corner $\displaystyle{\partial \Sigma}$, respectively. the extrinsic curvature of $\displaystyle{\Gamma _{r_{\infty}}}$ is
+for the induced metrics on $\displaystyle{\Sigma,\Gamma _{r_{\infty}}}$ and the corner $\displaystyle{\partial \Sigma}$, respectively. The extrinsic curvature of $\displaystyle{\Gamma _{r_{\infty}}}$ is
 
 $$\begin{align}
 K_{\mu \nu} & =\gamma _{\mu}^{~\rho}\gamma _{\nu}^{~\sigma}\nabla _{\rho}n_{\sigma}, & K=\gamma ^{\mu \nu}K_{\mu \nu}
 \end{align}$$
 
-we restrict $\xi ^{\mu}$ to be an exact Killing vector of the background metric $\displaystyle{g^{(0)}}$. every such vector belongs to the allowed Brown-Henneaux asymptotic-symmetry class. in the coordinates above, its components behave as
+we restrict $\xi ^{\mu}$ to be an exact Killing vector of the background metric $\displaystyle{g^{(0)}}$. Every such vector belongs to the allowed Brown-Henneaux asymptotic-symmetry class. In the coordinates above, its components behave as
 
 $$\begin{align}
 \xi ^{t} & =\mathcal{O}(1), & \xi ^{r} & =\mathcal{O}(r), & \xi ^{\phi} & =\mathcal{O}(1)
 \end{align}$$
 
-### full theory and asymptotic conditions
+### Full Theory and Asymptotic Conditions
 
-the renormalized action is
+The renormalized action is
 
 $$\begin{align}
 S[g,\Psi] & =\dfrac{1}{2\kappa ^{2}} \int _{M}\mathrm{d}^{3}x\sqrt{ -g }(R+2) +\dfrac{1}{\kappa ^{2}}\int _{\Gamma} \mathrm{d}^{2}x\sqrt{ -\gamma }(K-1) +S_{\mathrm{m}}[g,\Psi]
 \end{align}$$
 
-we use the normalization $\displaystyle{\kappa ^{2}=8\pi G}$. the metric obeys the usual Brown-Henneaux boundary conditions. writing $\displaystyle{\Delta g=g-g^{(0)}}$, these conditions are
+we use the normalization $\displaystyle{\kappa ^{2}=8\pi G}$. The metric obeys the usual Brown-Henneaux boundary conditions. Writing $\displaystyle{\Delta g=g-g^{(0)}}$, these conditions are
 
 $$\begin{align}
 \Delta g_{tt} & =\mathcal{O}(r^{0}), & \Delta g_{t\phi} & =\mathcal{O}(r^{0}), & \Delta g_{\phi \phi} & =\mathcal{O}(r^{0}) \\
@@ -44,7 +44,7 @@ $$\begin{align}
 
 allowed variations obey the same falloffs.
 
-we define the Hilbert stress tensor and the matter pre-symplectic potential current by the off-shell variation
+We define the Hilbert stress tensor and the matter pre-symplectic potential current by the off-shell variation
 
 $$\begin{align}
 \delta S_{\mathrm{m}} & =\dfrac{1}{2}\int _{M}\mathrm{d}^{3}x\sqrt{ -g }T^{\mu \nu}\delta g_{\mu \nu}+\int _{M}\mathrm{d}^{3}x\sqrt{ -g }E_{A}\delta \Psi^{A} \\
@@ -56,13 +56,13 @@ the matter sector is assumed to satisfy the following conditions:
 1. it is diffeomorphism covariant and has a well-defined Hilbert stress tensor.
 2. the matter sector carries no negative powers of $\displaystyle{\kappa}$, so its leading Hilbert stress tensor satisfies$$\begin{align}T_{\mu \nu} & =\mathcal{O}(\kappa^{0})\end{align}$$its conservation on the leading matter equation follows from diffeomorphism covariance, as shown in Appendix B.
 3. the non-normalizable matter sources are fixed, and every allowed variation satisfies$$\begin{align}\left.\delta S_{\mathrm{m}}\right|_{\Gamma} &:=-\int _{\Gamma}\mathrm{d}^{2}x\sqrt{-\gamma} n_{\mu}\theta _{\mathrm{m}}^{\mu}[\delta\Psi,\delta g]=0.\end{align}$$
-4. the matter fields have compact support or sufficient normalizable decay, and their diffeomorphism current has no independent asymptotic surface charge. in particular, there is no unscreened gauge charge at infinity.
+4. the matter fields have compact support or sufficient normalizable decay, and their diffeomorphism current has no independent asymptotic surface charge. In particular, there is no unscreened gauge charge at infinity.
 
-Appendix B shows explicitly that diffeomorphism covariance decomposes the matter Noether current into the stress current $\displaystyle{\xi _{\nu}T^{\mu \nu}}$, terms proportional to $\displaystyle{E_{A}}$, and the divergence of the superpotential $\displaystyle{\nabla _{\nu}^{(0)}U^{\mu \nu}_{\xi}}$, where $\displaystyle{U_{\xi}^{\mu \nu}}$ is antisymmetric. imposing the leading matter equation and the asymptotic conditions above then removes the last two contributions: the $\displaystyle{E_{A}}$ terms vanish, and the superpotential has zero integral over $\displaystyle{\partial\Sigma}$.
+Appendix B shows explicitly that diffeomorphism covariance decomposes the matter Noether current into the stress current $\displaystyle{\xi _{\nu}T^{\mu \nu}}$, terms proportional to $\displaystyle{E_{A}}$, and the divergence of the superpotential $\displaystyle{\nabla _{\nu}^{(0)}U^{\mu \nu}_{\xi}}$, where $\displaystyle{U_{\xi}^{\mu \nu}}$ is antisymmetric. Imposing the leading matter equation and the asymptotic conditions above then removes the last two contributions: the $\displaystyle{E_{A}}$ terms vanish, and the superpotential has zero integral over $\displaystyle{\partial\Sigma}$.
 
-### perturbative action
+### Perturbative Action
 
-we expand the metric and matter fields as
+We expand the metric and matter fields as
 
 $$\begin{align}
 g_{\mu \nu} & =g^{(0)}_{\mu \nu}+\kappa h_{\mu \nu}+\kappa ^{2}k _{\mu \nu}+\kappa ^{3}p_{\mu \nu}+\mathcal{O}(\kappa ^{4}) \\
@@ -71,7 +71,7 @@ g_{\mu \nu} & =g^{(0)}_{\mu \nu}+\kappa h_{\mu \nu}+\kappa ^{2}k _{\mu \nu}+\kap
 
 we impose the metric falloffs order by order in $\displaystyle{\kappa}$, so each of $\displaystyle{h_{\mu \nu}}$, $\displaystyle{k_{\mu \nu}}$, and $\displaystyle{p_{\mu \nu}}$, together with their allowed variations, obeys the same componentwise Brown-Henneaux bounds as $\displaystyle{\Delta g_{\mu \nu}}$.
 
-the bulk action therefore has the ordered form
+The bulk action therefore has the ordered form
 
 $$\begin{align}
 S_{\text{bulk}} & =\dfrac{1}{\kappa ^{2}}S^{[-2]}+\dfrac{1}{\kappa}S^{[-1]}+S^{[0]}+\kappa S^{[1]}+\mathcal{O}(\kappa ^{2})
@@ -89,18 +89,18 @@ S^{[1]} & =\dfrac{1}{2}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }(\mathcal{L}_{g}
 
 for our purposes, only $\displaystyle{S^{[-2]},S^{[-1]},S^{[0]}}$, and terms $\displaystyle{\mathcal{L}_{g}^{(2)}[h,k]}$, $\displaystyle{\mathcal{L}_{g}^{(3)}[h,h,h]}$, $\displaystyle{h_{\mu \nu}T^{\mu \nu}}$ in the $\displaystyle{S^{[1]}}$ level are needed.
 
-the timelike-boundary action is expanded in parallel,
+The timelike-boundary action is expanded in parallel,
 
 $$\begin{align}
 S_{\Gamma}[g] & :=\dfrac{1}{\kappa ^{2}}\int _{\Gamma}\mathrm{d}^{2}x\sqrt{ -\gamma }(K-1) \\
  & =\dfrac{1}{\kappa ^{2}}S_{\Gamma}^{[-2]} +\dfrac{1}{\kappa}S_{\Gamma}^{[-1]}[h] +S_{\Gamma}^{[0]}[h,k] +\kappa S_{\Gamma}^{[1]}[h,k,p] +\mathcal{O}(\kappa ^{2})
 \end{align}$$
 
-Appendix A gives the explicit expressions. the perturbative action $\displaystyle{S=S_{\text{bulk}}+S_{\Gamma}}$ is therefore organized order by order in $\displaystyle{\kappa}$. terms beyond $\displaystyle{\mathcal{O}(\kappa ^{1})}$ are not needed to derive the second-order metric equation used later.
+Appendix A gives the explicit expressions. The perturbative action $\displaystyle{S=S_{\text{bulk}}+S_{\Gamma}}$ is therefore organized order by order in $\displaystyle{\kappa}$. Terms beyond $\displaystyle{\mathcal{O}(\kappa ^{1})}$ are not needed to derive the second-order metric equation used later.
 
-### goal
+### Goal
 
-the standard Brown-York construction, supplemented by holographic renormalization, defines the renormalized boundary stress tensor by varying the renormalized action with respect to the induced boundary metric. in our normalization it is
+The standard Brown-York construction, supplemented by holographic renormalization, defines the renormalized boundary stress tensor by varying the renormalized action with respect to the induced boundary metric. In our normalization it is
 
 $$\begin{align}
 \mathcal{T}_{ab} & =\dfrac{1}{\kappa ^{2}}\left(K_{ab}-K\gamma _{ab}+\gamma _{ab}\right)
@@ -112,4 +112,4 @@ $$\begin{align}
 H_{\xi,T}[g] & =-\lim _{r_{\infty}\to\infty}\int _{\partial\Sigma}\mathrm{d}\phi\sqrt{q}\,\tau ^{a}\xi ^{b}\mathcal{T}_{ab}.
 \end{align}$$
 
-we use the [Harlow-Wu covariant phase-space formalism](https://arxiv.org/abs/1906.08616) to construct the bulk Noether charge associated with the diffeomorphism generated by the exact background Killing vector $\displaystyle{\xi}$. our goal is to show that this bulk Noether charge, together with the timelike-boundary and corner contributions fixed by the variational principle, agrees with the Brown-York charge order by order in $\displaystyle{\kappa}$.
+We use the [Harlow-Wu covariant phase-space formalism](https://arxiv.org/abs/1906.08616) to construct the bulk Noether charge associated with the diffeomorphism generated by the exact background Killing vector $\displaystyle{\xi}$. Our goal is to show that this bulk Noether charge, together with the timelike-boundary and corner contributions fixed by the variational principle, agrees with the Brown-York charge order by order in $\displaystyle{\kappa}$.

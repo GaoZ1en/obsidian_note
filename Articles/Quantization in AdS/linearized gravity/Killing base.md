@@ -1,4 +1,4 @@
-we follow the procedure in the second part in [[Articles/Quantization in AdS/linearized gravity/solving modes|solving modes]]. for the first order equation
+We follow the procedure in the second part in [[Articles/Quantization in AdS/linearized gravity/solving modes|solving modes]]. For the first order equation
 
 $$\begin{align}
 \varepsilon _{\mu}^{~\nu \rho}\nabla ^{(0)}_{\rho}h_{\nu \sigma} & =h_{\mu \sigma}

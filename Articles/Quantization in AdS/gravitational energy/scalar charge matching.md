@@ -1,4 +1,4 @@
-consider the action
+Consider the action
 
 $$\begin{align}
 S[g,\phi] & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{3}x\sqrt{ -g }(R+2)-\frac{1}{2}\int _{M}\mathrm{d}^{3}x\sqrt{ -g }(\nabla _{\mu}\phi \nabla ^{\mu}\phi+m^{2}\phi ^{2})
@@ -10,7 +10,7 @@ $$\begin{align}
 S_{\mathrm{grav}}[g] & =\frac{1}{2\kappa ^{2}}\int _{M}\mathrm{d}^{3}x\sqrt{ -g }(R+2).
 \end{align}$$
 
-expand around a unit AdS$_3$ background $g^{(0)}_{\mu\nu}$,
+Expand around a unit AdS$_3$ background $g^{(0)}_{\mu\nu}$,
 
 $$\begin{align}
 R^{(0)}_{\mu\nu} & =-2g^{(0)}_{\mu\nu},& R^{(0)} & =-6,
@@ -105,7 +105,7 @@ H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}(X_{\xi
 &=H_{\xi,h}+H_{\xi,k}+H_{\xi,\varphi}.
 \end{align}$$
 
-where
+Where
 
 $$\begin{align}
 H_{\xi,h} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}\mathcal{H}_{\xi,h}^{\mu} \\
@@ -120,7 +120,7 @@ $$\begin{align}
 &\quad+\dfrac{1}{2}h\nabla^{(0)}_{\nu}\mathcal{L}_{\xi}h^{\mu\nu}+\dfrac{1}{2}\nabla^{(0)\mu}h_{\nu\rho}\mathcal{L}_{\xi}h^{\nu\rho}+\dfrac{1}{2}\nabla^{(0)}_{\nu}h\mathcal{L}_{\xi}h^{\mu\nu}-\nabla^{(0)}_{\rho}h^{\nu\rho}\mathcal{L}_{\xi}h^{\mu}{}_{\nu}.
 \end{align}$$
 
-here
+Here
 
 $$\begin{align}
 T_{(h)}^{\mu \nu} & =-\mathcal{E}^{(2)\mu \nu}[h,h] \\
@@ -195,7 +195,7 @@ $$\begin{align}
 
 ---
 
-we should notice that $\displaystyle{\mathcal{E}_{\mu \nu}^{(2)}[h,h]}$ itself is not gauge invariant. actually, consider a pure gauge configuration
+We should notice that $\displaystyle{\mathcal{E}_{\mu \nu}^{(2)}[h,h]}$ itself is not gauge invariant. Actually, consider a pure gauge configuration
 
 $$\begin{align}
 h_{\mu \nu} & =\mathcal{L}_{\xi}g^{(0)}_{\mu \nu} \\

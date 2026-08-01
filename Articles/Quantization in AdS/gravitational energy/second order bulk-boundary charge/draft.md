@@ -4,7 +4,7 @@ date: 2026-07-11
 summary: "A classical perturbative derivation of bulk-boundary charge matching through finite order in kappa, including gravitational self-stress, a general matter stress tensor, and the boundary corner term fixed by the renormalized action."
 ---
 
-# Second-order bulk-boundary charge matching in AdS$_3$
+# Second-Order Bulk-Boundary Charge Matching in AdS$_3$
 
 ## Abstract
 
@@ -60,7 +60,7 @@ The analysis is classical. Section 2 fixes the geometry, action, boundary condit
 
 ## 2. Setup
 
-### 2.1 Spacetime and boundary geometry
+### 2.1 Spacetime and Boundary Geometry
 
 We use unit-radius global AdS$_3$,
 
@@ -88,7 +88,7 @@ K_{\mu\nu}=\gamma_\mu{}^\rho\gamma_\nu{}^\sigma\nabla_\rho n_\sigma, \qquad K=\g
 
 The vector $\xi$ is an allowed Brown--Henneaux asymptotic symmetry. It need not be an exact Killing vector in the off-shell construction of Secs. 3.1--3.3. In Sec. 3.4 we restrict to the background-Killing subalgebra when converting the effective stress current into a conserved surface charge. The formulas below keep $n\mathbin{\cdot}\xi$ explicit, which is useful at a finite cutoff.
 
-### 2.2 Full theory and asymptotic conditions
+### 2.2 Full Theory and Asymptotic Conditions
 
 The renormalized action is
 
@@ -152,7 +152,7 @@ H_\xi^{\mathrm{rel}}[g;g^{(0)}] :=H_\xi[g]-H_\xi[g^{(0)}], \qquad H_{\xi,T}^{\ma
 
 We suppress the superscript ``rel'' below. This prescription removes the $\kappa^{-2}$ vacuum coefficient on both sides.
 
-### 2.3 Perturbative action and equations
+### 2.3 Perturbative Action and Equations
 
 We expand the metric as
 
@@ -234,9 +234,9 @@ $$\begin{align}
 
 Equations (2.21) and the matter equations will be listed as constraints until Sec. 3.4. They are not used in the construction of the symmetry charge.
 
-## 3. Covariant phase space and charge matching
+## 3. Covariant Phase Space and Charge Matching
 
-### 3.1 First variation and symplectic form
+### 3.1 First Variation and Symplectic Form
 
 The bulk first variation is written as
 
@@ -319,7 +319,7 @@ $$
 
 The coefficient $\Theta^{[-1]}$ is independent of the perturbative fields, so its field-space exterior derivative vanishes. The leading nonzero gravitational symplectic form is the finite coefficient built from the $h\,\delta h$ part of $\Theta^{[0]}$. Appendix B shows that (3.9) is finite and independent of the Cauchy surface under the boundary conditions of Sec. 2.2.
 
-### 3.2 Diffeomorphisms and the Noether charge
+### 3.2 Diffeomorphisms and the Noether Charge
 
 The diffeomorphism vector on perturbative field space is
 
@@ -456,7 +456,7 @@ This is an exact off-shell identity of the full fields. In particular, every coe
 
 The finite coefficient $H_{\xi,\Gamma}^{[0]}$ is obtained by expanding the exact form (3.19). This coefficient extraction automatically includes boundary-action terms of order $O(\kappa)$ that are lowered by $X_\xi^{[-1]}$.
 
-### 3.3 Off-shell perturbative bulk current
+### 3.3 Off-Shell Perturbative Bulk Current
 
 After the background coefficient is removed by (2.11), the bulk current has the expansion
 
@@ -544,7 +544,7 @@ Thus the $O(\kappa)$ Lagrangian is required for the local finite Noether current
 
 For the background-Killing specialization used next, $\mathcal L_\xi g^{(0)}=0$, so the local term (3.27) also vanishes. Equations (3.26b)--(3.30) retain the complete off-shell result for the larger Brown--Henneaux asymptotic-symmetry space.
 
-### 3.4 Identification of the bulk and boundary charges
+### 3.4 Identification of the Bulk and Boundary Charges
 
 We now specialize $\xi$ to a background Killing field and impose the leading matter equations and the metric constraints (2.21). The first constraint removes the equation term in (3.24) and sets $\mathcal R_{\xi,h}^\mu=0$. The matter equation sets $\mathcal R_{\xi,\mathrm m}^\mu=0$. The second constraint gives
 
@@ -663,9 +663,9 @@ H_\xi^{[-1]}=H_{\xi,T}^{[-1]}, \qquad H_\xi^{[0]}=H_{\xi,T}^{[0]}.
 
 Matter sources, boundary flux, and long-range gauge charges enlarge the boundary phase space and require their own boundary terms. The fixed-source, zero-flux sector considered here isolates the second-order gravitational backreaction and its matching to the asymptotic energy.
 
-## Appendix A. Perturbative formulas
+## Appendix A. Perturbative Formulas
 
-### A.1 Inverse metric and volume density
+### A.1 Inverse Metric and Volume Density
 
 For (2.12), the inverse metric is
 
@@ -701,7 +701,7 @@ v_3={}&\frac12p+\frac14hk-\frac12h_{\mu\nu}k^{\mu\nu}
 \tag{A.3}
 $$
 
-### A.2 Gravitational density through cubic order
+### A.2 Gravitational Density Through Cubic Order
 
 On the AdS$_3$ background,
 
@@ -777,7 +777,7 @@ $$\begin{align}
 
 Together with the polarization (2.16), equations (A.1)--(A.8) reproduce every coefficient in (2.15).
 
-### A.3 Linearized Einstein operator
+### A.3 Linearized Einstein Operator
 
 The derivative ordering produced directly by xPert gives
 
@@ -797,7 +797,7 @@ $$
 
 Commuting the first two double derivatives with the AdS curvature gives the equivalent divergence-first form used in the surface-charge calculation.
 
-### A.4 Surface tensors
+### A.4 Surface Tensors
 
 Define
 
@@ -852,9 +852,9 @@ S_{\xi,k}^{\mu\nu} =\frac12A_\xi^{(1)\mu\nu}[k] +\frac14kA_\xi^{(0)\mu\nu}, \tag
 
 which is equivalent to (3.34).
 
-## Appendix B. Finiteness and boundary flux
+## Appendix B. Finiteness and Boundary Flux
 
-### B.1 Vacuum subtraction and the cutoff action
+### B.1 Vacuum Subtraction and the Cutoff Action
 
 For the background (2.1),
 
@@ -876,7 +876,7 @@ S_{\mathrm{bulk}}^{(0)}(R)+S_\Gamma^{(0)}(R) =\frac{1}{2\kappa^2}+O(R^{-2}). \ta
 
 The finite vacuum value is removed from charges by (2.11).
 
-### B.2 Perturbative falloff check
+### B.2 Perturbative Falloff Check
 
 Under (2.8), the raised radial components obey
 
@@ -916,7 +916,7 @@ $$\begin{align}
 
 has a finite limit. The remaining term is the finite corner variation $\int_{C_R}\boldsymbol C_\Gamma$. Starting from the finite background value (B.3), integration of this finite variation along an allowed path in field space proves finiteness of the renormalized action in the sector considered here.
 
-### B.3 Symplectic flux
+### B.3 Symplectic Flux
 
 Taking an antisymmetrized second variation of (3.3) gives the flux of the renormalized symplectic current through $\Gamma$. The fixed leading boundary metric and the matter condition in Sec. 2.2 imply
 
@@ -932,7 +932,7 @@ $$\begin{align}
 
 The matter contribution is finite because the sources are fixed and the normalizable data have zero flux. The same assumptions set the asymptotic integral of a matter superpotential to zero.
 
-### B.4 Charge finiteness
+### B.4 Charge Finiteness
 
 Equation (3.22) writes the complete gravitational surface current as the Brown--York current before any perturbative expansion. The Brown--Henneaux falloffs make $\mathcal T_{ab}$ finite after the common background subtraction. Therefore
 

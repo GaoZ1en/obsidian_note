@@ -28,7 +28,6 @@ Quantization of Maxwell electric-field modes in global AdS3.
 | `Euclidean correlation function.md` | Scratch derivation of Euclidean correlators and gauge comparisons |
 | `lgt charges.md` | Scratch note for the vanishing large-gauge charge and null symplectic pairing |
 | `large gauge transformation.md` | Gauge charges and large-gauge sector notes |
-| `alternative quantization.md` | Scalar alternative-quantization comparison |
 | `Maxwell-Chern-Simons.md` | Maxwell-Chern-Simons comparison notes |
 | `partition function.md` | Thermal oscillator partition function, kept outside the current article draft |
 | `solving modes/` | Detailed mode-solving scratch notes in several gauges and bases |

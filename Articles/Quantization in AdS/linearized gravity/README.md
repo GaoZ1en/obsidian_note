@@ -21,6 +21,7 @@ Linearized-gravity notes for the AdS3 quantization project. The directory contai
 | File | Description |
 |---|---|
 | `Noether charge.md` | Perturbative Noether charge formulas for linearized gravity and their variations. |
+| `quadratic gravitational current improvement.md` | Killing-jet decomposition of the quadratic finite-action surface current, the obstruction to a universal local stress-tensor improvement, and its relation to second-order backreaction and corner terms. |
 | `reconsider the Noether charge.md` | Refined charge-variation analysis for Virasoro brackets in the TT sector. |
 | `Euclidean correlation function of boundary stress tensor.md` | Mode-sum calculation of the Euclidean boundary stress-tensor two-point function from Brown-York images of the normalized Brown-Henneaux modes. |
 | `Virasoro algebra.md` | Asymptotic Killing vectors, charge brackets, and the Virasoro algebra. |
