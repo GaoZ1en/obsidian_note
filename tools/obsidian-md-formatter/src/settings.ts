@@ -52,8 +52,8 @@ export class FormatterSettingTab extends PluginSettingTab {
       });
 
     new Setting(containerEl)
-      .setName("Normalize display math delimiters")
-      .setDesc("Convert display math to $$...$$ blocks.")
+      .setName("Normalize math delimiters")
+      .setDesc("Convert inline \\(...\\) to $...$ and display math to $$...$$ blocks.")
       .addToggle((toggle) => {
         toggle.setValue(this.plugin.settings.normalizeMathDelimiters).onChange(async (value) => {
           this.plugin.settings.normalizeMathDelimiters = value;
@@ -77,6 +77,36 @@ export class FormatterSettingTab extends PluginSettingTab {
       .addToggle((toggle) => {
         toggle.setValue(this.plugin.settings.normalizeListMarkers).onChange(async (value) => {
           this.plugin.settings.normalizeListMarkers = value;
+          await this.plugin.saveSettings();
+        });
+      });
+
+    new Setting(containerEl)
+      .setName("Capitalize sentence starts")
+      .setDesc("Capitalize lowercase English sentence starts in prose while leaving list-item starts unchanged.")
+      .addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.capitalizeSentenceStarts).onChange(async (value) => {
+          this.plugin.settings.capitalizeSentenceStarts = value;
+          await this.plugin.saveSettings();
+        });
+      });
+
+    new Setting(containerEl)
+      .setName("Capitalize title words")
+      .setDesc("Capitalize English major words in Markdown headings while preserving math and technical notation.")
+      .addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.capitalizeTitleWords).onChange(async (value) => {
+          this.plugin.settings.capitalizeTitleWords = value;
+          await this.plugin.saveSettings();
+        });
+      });
+
+    new Setting(containerEl)
+      .setName("Join prose paragraph lines")
+      .setDesc("Join soft-wrapped prose into one source line while preserving blank-line paragraph breaks.")
+      .addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.joinProseLines).onChange(async (value) => {
+          this.plugin.settings.joinProseLines = value;
           await this.plugin.saveSettings();
         });
       });

@@ -14,6 +14,9 @@ export interface FormatterOptions {
   normalizeMathDelimiters: boolean;
   wrapSimpleDisplayMathInAlign: boolean;
   normalizeListMarkers: boolean;
+  capitalizeSentenceStarts: boolean;
+  capitalizeTitleWords: boolean;
+  joinProseLines: boolean;
   maxConsecutiveBlankLines: number;
   showDiffBeforeApply: boolean;
 }
@@ -31,6 +34,9 @@ export const DEFAULT_FORMATTER_OPTIONS: FormatterOptions = {
   normalizeMathDelimiters: true,
   wrapSimpleDisplayMathInAlign: true,
   normalizeListMarkers: true,
+  capitalizeSentenceStarts: true,
+  capitalizeTitleWords: true,
+  joinProseLines: true,
   maxConsecutiveBlankLines: 1,
   showDiffBeforeApply: false
 };

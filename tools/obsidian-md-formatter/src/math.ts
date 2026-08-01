@@ -15,6 +15,38 @@ export interface TopEnvironment {
 
 const ALIGN_ENVIRONMENTS = new Set(["align", "align*", "aligned"]);
 
+export function normalizeInlineMathDelimiters(line: string): string {
+  if (!line.includes("\\(") || !line.includes("\\)")) {
+    return line;
+  }
+
+  const output: string[] = [];
+  let textStart = 0;
+  let cursor = 0;
+
+  while (cursor < line.length) {
+    if (line[cursor] !== "`") {
+      cursor += 1;
+      continue;
+    }
+
+    const delimiterLength = countRun(line, cursor, "`");
+    const closing = findMatchingBacktickRun(line, cursor + delimiterLength, delimiterLength);
+    if (closing === -1) {
+      cursor += delimiterLength;
+      continue;
+    }
+
+    output.push(normalizeInlineMathInText(line.slice(textStart, cursor)));
+    output.push(line.slice(cursor, closing + delimiterLength));
+    cursor = closing + delimiterLength;
+    textStart = cursor;
+  }
+
+  output.push(normalizeInlineMathInText(line.slice(textStart)));
+  return output.join("");
+}
+
 export function extractMathContent(segment: Segment): MathContent {
   const raw = segment.lines.join("\n").trim();
   const withoutOpening = segment.fence === "bracket" ? raw.replace(/^\\\[\s*/, "") : raw.replace(/^\$\$\s*/, "");
@@ -299,4 +331,84 @@ function trimOuterBlankLines(lines: string[]): string[] {
   }
 
   return lines.slice(start, end);
+}
+
+function normalizeInlineMathInText(text: string): string {
+  const output: string[] = [];
+  let textStart = 0;
+  let cursor = 0;
+
+  while (cursor < text.length - 1) {
+    if (!isUnescapedDelimiter(text, cursor, "\\(")) {
+      cursor += 1;
+      continue;
+    }
+
+    const closing = findInlineMathEnd(text, cursor + 2);
+    if (closing === -1) {
+      cursor += 2;
+      continue;
+    }
+
+    output.push(text.slice(textStart, cursor), "$", text.slice(cursor + 2, closing), "$");
+    cursor = closing + 2;
+    textStart = cursor;
+  }
+
+  output.push(text.slice(textStart));
+  return output.join("");
+}
+
+function findInlineMathEnd(text: string, start: number): number {
+  for (let index = start; index < text.length - 1; index += 1) {
+    if (isUnescapedDelimiter(text, index, "\\(")) {
+      return -1;
+    }
+
+    if (isUnescapedDelimiter(text, index, "\\)")) {
+      return index;
+    }
+  }
+
+  return -1;
+}
+
+function isUnescapedDelimiter(text: string, index: number, delimiter: "\\(" | "\\)"): boolean {
+  if (!text.startsWith(delimiter, index)) {
+    return false;
+  }
+
+  let precedingBackslashes = 0;
+  for (let cursor = index - 1; cursor >= 0 && text[cursor] === "\\"; cursor -= 1) {
+    precedingBackslashes += 1;
+  }
+
+  return precedingBackslashes % 2 === 0;
+}
+
+function findMatchingBacktickRun(text: string, start: number, delimiterLength: number): number {
+  let cursor = start;
+
+  while (cursor < text.length) {
+    if (text[cursor] !== "`") {
+      cursor += 1;
+      continue;
+    }
+
+    const runLength = countRun(text, cursor, "`");
+    if (runLength === delimiterLength) {
+      return cursor;
+    }
+    cursor += runLength;
+  }
+
+  return -1;
+}
+
+function countRun(text: string, start: number, character: string): number {
+  let end = start;
+  while (end < text.length && text[end] === character) {
+    end += 1;
+  }
+  return end - start;
 }
