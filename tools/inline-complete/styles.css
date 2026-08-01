@@ -1,0 +1,27 @@
+.cm-inline-complete-ghost-text {
+  color: var(--text-muted);
+  opacity: 0.72;
+  pointer-events: none;
+  white-space: pre-wrap;
+}
+
+.inline-complete-setting-warning {
+  color: var(--text-warning);
+}
+
+.inline-complete-status-hidden {
+  display: none;
+}
+
+.status-bar-item[data-inline-complete-status="generating"],
+.status-bar-item[data-inline-complete-status="waiting"] {
+  color: var(--text-accent);
+}
+
+.status-bar-item[data-inline-complete-status="error"] {
+  color: var(--text-error);
+}
+
+.status-bar-item[data-inline-complete-status="ready"] {
+  color: var(--text-success);
+}
