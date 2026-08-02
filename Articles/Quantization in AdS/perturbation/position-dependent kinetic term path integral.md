@@ -1,16 +1,6 @@
-# Position-Dependent Kinetic Term: Lattice Path Integral and Continuum Limit
-
-考虑
-
-$$\begin{align}
-L=\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}m\omega ^{2}x^{2} +\frac{1}{4}\lambda x^{2}\dot{x}^{2} =\frac{1}{2}G(x)\dot{x}^{2}-V(x),
-\end{align}$$
-
-其中
-
-$$\begin{align}
-G(x)=m+\frac{\lambda}{2}x^{2}, \qquad V(x)=\frac{1}{2}m\omega ^{2}x^{2}.
-\end{align}$$
+---
+references: https://arxiv.org/pdf/hep-th/9801105, https://arxiv.org/pdf/hep-th/9810119, https://arxiv.org/pdf/hep-th/0008045
+---
 
 直接结论是：
 
@@ -20,6 +10,14 @@ G(x)=m+\frac{\lambda}{2}x^{2}, \qquad V(x)=\frac{1}{2}m\omega ^{2}x^{2}.
 4. 从低激发推到高激发的困难不是出现了一个新的物理 cutoff，而是固定阶 $\lambda$ 展开对激发数 $n$ 不一致收敛。时间格距、数值基底 cutoff 和物理激发数是三个不同的量。
 
 以下暂时不使用 CPS formalism。
+
+Consider the action
+
+$$\begin{align}
+L & =\dfrac{1}{2}G(x)\dot{x}^{2}-V(x) \\
+G(x) & =m+\dfrac{\lambda}{2}x^{2} \\
+V(x) & =\dfrac{1}{2}m\omega ^{2}x^{2}
+\end{align}$$
 
 ## 1. 先固定一种正则量子化
 

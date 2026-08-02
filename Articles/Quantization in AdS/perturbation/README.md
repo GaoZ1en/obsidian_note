@@ -14,8 +14,9 @@ This directory develops a CPS-normalized perturbative framework for scalar field
 
 - [Practical pipeline: CPS canonical quantization to loop corrections](<cps canonical quantization to loop corrections.md>) — the default workflow for modes, propagators, Wick diagrams, loop integrals, counterterms, and renormalized bulk or boundary observables.
 - [CPS-normalized old-fashioned perturbation theory](cps-paqft-formalism/cps_old_fashioned_perturbation_theory.md) — the stationary-background spectral workflow for interaction-Hamiltonian matrix elements, energy denominators, effective Hamiltonians, and anomalous dimensions.
+- [Worldline nonlinear sigma-model path integral](<path-integral of worldline non-linear sigma model.md>) — a self-contained derivation of time slicing, mode regularization, finite-interval dimensional regularization, measure ghosts, and the associated finite counterterms.
 - [Position-dependent kinetic term: lattice path integral and continuum limit](<position-dependent kinetic term path integral.md>) — a one-dimensional benchmark for Hamiltonian ordering, midpoint time slicing, measure counterterms, direct lattice correlators, and the high-excitation limit, without using CPS.
-- [Position-dependent kinetic term: CPS perturbation theory](<position-dependent kinetic term CPS perturbation.md>) — the same benchmark treated through its nonlinear mode solution map, pulled-back symplectic form, canonical Hamiltonian, Weyl quantization, and two-point function.
+- [Position-dependent kinetic term: CPS perturbation theory](<CPS perturbation of harmonic oscillator.md>) — the same benchmark treated through its nonlinear mode solution map, pulled-back symplectic form, canonical Hamiltonian, Weyl quantization, and two-point function.
 - [Gluing Dirichlet pieces into a periodic field theory](<Articles/Quantization in AdS/gluing/gluing Dirichlet pieces into a periodic field theory.md>) — CPS interface constraints, an exact product-Fock lattice Hamiltonian, and the continuum Dirichlet-to-Neumann spectral limit.
 
 ## Classical companions
