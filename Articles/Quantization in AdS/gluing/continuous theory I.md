@@ -370,32 +370,33 @@ with all other commutators vanishing. The vacuum $\displaystyle{\ket{\Omega}}$ i
 
 ## Gluing Theories
 
-The total action is
+The same quadratic interaction couples the two field theories at the cut, while the total theory remains Gaussian. The total action is
 
 $$\begin{align}
-S_{\text{tot}} & =\sum _{i}\int \mathrm{d}t\int _{I_{i}}\mathrm{d}x \dfrac{1}{2}(\dot{\phi}_{i}^{2}-\phi'^{2}_{i}-m^{2}\phi _{i}^{2})-\int \mathrm{d}t \dfrac{\kappa}{2}\left(\phi_{1}-\phi_{2}\right)^{2}|_{x=0}
+S_{\kappa}^{\mathrm{N}} & =\sum _{i}\int \mathrm{d}t\int _{I_{i}}\mathrm{d}x \dfrac{1}{2}(\dot{\phi}_{i}^{2}-\phi'^{2}_{i}-m^{2}\phi _{i}^{2})-\int \mathrm{d}t \dfrac{\mu\kappa}{2}\left(\phi_{1}-\phi_{2}\right)^{2}|_{x=0}.
 \end{align}$$
 
-take a variation of the total action. Integrating by parts with
+Take a variation of the total action. Integrating by parts with
 $\displaystyle{\int_{-L}^{0}\mathrm{d}x\frac{d}{dx}(\phi_{1}'\delta\phi_{1})=\phi_{1}'\delta\phi_{1}|_{0}-\phi_{1}'\delta\phi_{1}|_{-L}}$
-And
+and
 $\displaystyle{\int_{0}^{L}\mathrm{d}x\frac{d}{dx}(\phi_{2}'\delta\phi_{2})=\phi_{2}'\delta\phi_{2}|_{L}-\phi_{2}'\delta\phi_{2}|_{0}}$,
-We have
+we have
 
 $$\begin{align}
-\delta S_{\text{tot}} & =\sum _{i}\int \mathrm{d}t\int _{I_{i}}\mathrm{d}x\left(-\ddot{\phi}_{i}+\phi _{i}''-m^{2}\phi _{i}\right)\delta \phi _{i} \\
+\delta S_{\kappa}^{\mathrm{N}} & =\sum _{i}\int \mathrm{d}t\int _{I_{i}}\mathrm{d}x\left(-\ddot{\phi}_{i}+\phi _{i}''-m^{2}\phi _{i}\right)\delta \phi _{i} \\
  & +\int \mathrm{d}t\,\phi'_{1}\delta\phi_{1}|_{x=-L}-\int \mathrm{d}t\,\phi'_{2}\delta\phi_{2}|_{x=L}+\sum _{i}\int _{I_{i}}\mathrm{d}x(\dot{\phi}_{i}\delta \phi _{i})|^{t_{f}}_{t_{i}} \\
- & +\int \mathrm{d}t\left((-\phi_{1}'-\kappa(\phi_{1}-\phi_{2}))\delta \phi_{1}+(\phi_{2}'+\kappa(\phi_{1}-\phi_{2}))\delta \phi_{2}\right)|_{x=0}
+ & +\int \mathrm{d}t\left((-\phi_{1}'-\mu\kappa(\phi_{1}-\phi_{2}))\delta \phi_{1}+(\phi_{2}'+\mu\kappa(\phi_{1}-\phi_{2}))\delta \phi_{2}\right)|_{x=0}.
 \end{align}$$
 
-we read out the boundary conditions
+We read out the boundary conditions
 
 $$\begin{align}
 \phi'_{1}|_{x=-L} & =0, & \phi' _{2}|_{x=L} & =0 \\
-\phi_{1}'+\kappa(\phi_{1}-\phi_{2})|_{x=0} & =0, & \phi_{2}'+\kappa(\phi_{1}-\phi_{2})|_{x=0} & =0
+\phi_{1}'+\mu\kappa(\phi_{1}-\phi_{2})\bigg|_{x=0} & =0, &
+\phi_{2}'+\mu\kappa(\phi_{1}-\phi_{2})\bigg|_{x=0} & =0.
 \end{align}$$
 
-i.e. $\displaystyle{\phi_{1}'|_{x=0}=\phi_{2}'|_{x=0}=-\kappa(\phi_{1}-\phi_{2})|_{x=0}}$.
+i.e. $\displaystyle{\phi_{1}'|_{x=0}=\phi_{2}'|_{x=0}=-\mu\kappa(\phi_{1}-\phi_{2})|_{x=0}}$.
 
 The eoms
 
@@ -410,22 +411,31 @@ $$\begin{align}
 \omega=\delta \theta & =\sum _{i}\int _{I_{i}}\mathrm{d}x\delta \dot{\phi}_{i}\wedge \delta \phi _{i}
 \end{align}$$
 
-take the $\displaystyle{\kappa\to \infty}$ limit: the diverging interface term $\displaystyle{\dfrac{\kappa}{2}(\phi_{1}-\phi_{2})^{2}|_{x=0}}$ forces $\displaystyle{\phi_{1}|_{x=0}=\phi _{2}|_{x=0}}$, and since the two interface conditions coincide, also $\displaystyle{\phi_{1}'|_{x=0}=\phi_{2}'|_{x=0}}$, so the two components join into a single field on $\displaystyle{[-L,L]}$ with Neumann conditions at both outer endpoints. take the $\displaystyle{\kappa\to0}$ limit gives the two Neumann boundary conditions $\phi_1'(0)=\phi_2'(0)=0$, decoupling the two intervals.
+The corresponding positive spatial quadratic form is
 
-For finite $\displaystyle{\kappa}$, solutions of the eom with boundary conditions above split into $\displaystyle{\sigma=\pm 1}$ sectors that satisfying
+$$\begin{align}
+Q_{\kappa}^{\mathrm{N}}[\phi_1,\phi_2]
+&=\sum _{i=1}^{2}\int_{I_i}\mathrm{d}x
+\left(|\phi_i'|^2+m^2|\phi_i|^2\right)
++\mu\kappa|q_1-q_2|^2.
+\end{align}$$
+
+For $\displaystyle{\kappa\to0}$, the interaction disappears and the two cut traces vary independently, giving $\displaystyle{\phi_1'(0)=\phi_2'(0)=0}$. For families with bounded $\displaystyle{Q_{\kappa}^{\mathrm{N}}}$, the $\displaystyle{\kappa\to\infty}$ limit forces $\displaystyle{q_1=q_2}$; the two interface conditions already give $\displaystyle{\phi_1'(0)=\phi_2'(0)}$. Thus the two components join into a single field on $\displaystyle{[-L,L]}$ with Neumann conditions at both outer endpoints.
+
+For finite $\displaystyle{\kappa}$, solutions of the eom with the boundary conditions above split into $\displaystyle{\sigma=\pm 1}$ sectors satisfying
 
 $$\begin{align}
 \phi _{\sigma,2}(x) & =\sigma \phi _{\sigma,1}(-x)
 \end{align}$$
 
-take
+Take
 
 $$\begin{align}
 \Phi _{+,n,1}(x) & =\mathcal{N}_{+,n}e^{-i\omega _{+,n}t}\cos(k _{+,n}(x+L)), & -L\leqslant x\leqslant 0 \\
 \Phi _{+,n,2}(x) & =\mathcal{N}_{+,n}e^{-i\omega _{+,n}t}\cos(k _{+,n}(L-x)), & 0\leqslant x\leqslant L
 \end{align}$$
 
-for the even sector, where the interface conditions $\displaystyle{\phi_{1}'|_{0}=\phi_{2}'|_{0}=-\kappa(\phi_{1}-\phi_{2})|_{0}}$ hold for every $\displaystyle{\kappa}$, since $\displaystyle{\phi_{1}(0)=\phi_{2}(0)}$ and both derivatives vanish. Hence
+for the even sector, where the interface conditions $\displaystyle{\phi_{1}'|_{0}=\phi_{2}'|_{0}=-\mu\kappa(\phi_{1}-\phi_{2})|_{0}}$ hold for every $\displaystyle{\kappa}$, since $\displaystyle{\phi_{1}(0)=\phi_{2}(0)}$ and both derivatives vanish. Hence
 
 $$\begin{align}
 k_{+,n} & =\dfrac{n\pi}{L}, & \omega _{+,n} & =\sqrt{ m^{2}+k_{+,n}^{2} }, & n & =0,1,2,\dots
@@ -438,10 +448,10 @@ $$\begin{align}
 \Phi _{-,n,2}(x) & =-\mathcal{N}_{-,n}e^{-i\omega _{-,n}t}\cos(k _{-,n}(L-x)), & 0\leqslant x\leqslant L
 \end{align}$$
 
-where $\displaystyle{\omega _{-,n}^{2}=m^{2}+k _{-,n}^{2}}$. Boundary conditions at $\displaystyle{x=0}$ gives
+where $\displaystyle{\omega _{-,n}^{2}=m^{2}+k _{-,n}^{2}}$. The boundary conditions at $\displaystyle{x=0}$ give
 
 $$\begin{align}
-k_{-,n}\cot(k_{-,n}L) & =2\kappa, & \tan(k_{-,n}L) & =\dfrac{2\kappa}{k_{-,n}},
+k_{-,n}\tan(k_{-,n}L) & =2\mu\kappa, & \tan(k_{-,n}L) & =\dfrac{2\mu\kappa}{k_{-,n}},
 \end{align}$$
 
 where $\displaystyle{n=1,2,\dots}$ and each root is the unique root in
@@ -450,7 +460,7 @@ $$\begin{align}
 \dfrac{(n-1)\pi}{L}<k_{-,n}<\dfrac{(n-\frac{1}{2})\pi}{L},
 \end{align}$$
 
-since $\displaystyle{\tan}$ is positive and strictly increasing while $\displaystyle{2\kappa/k}$ is positive and strictly decreasing on each such interval. In particular the lowest odd root satisfies $\displaystyle{0<k_{-,1}<\frac{\pi}{2L}}$, so that $\displaystyle{\omega_{-,1}\to m}$ as $\displaystyle{\kappa\to0}$ and the antisymmetric constant combination is smoothly recovered.
+since $\displaystyle{\tan}$ is positive and strictly increasing while $\displaystyle{2\mu\kappa/k}$ is positive and strictly decreasing on each such interval. In particular the lowest odd root satisfies $\displaystyle{0<k_{-,1}<\frac{\pi}{2L}}$, so that $\displaystyle{\omega_{-,1}\to m}$ as $\displaystyle{\kappa\to0}$ and the antisymmetric constant combination is smoothly recovered.
 
 The normalization constant $\displaystyle{\mathcal{N}_{\sigma,n}}$ is given by
 
@@ -487,12 +497,12 @@ $\displaystyle{X_{t}\cdot\theta=\sum_{i}\int_{I_{i}}\mathrm{d}x\,\dot{\phi}_{i}^
 and since $\displaystyle{X_{t}\cdot\delta S=[L]^{t_{f}}_{t_{i}}}$ holds as an identity (no eom used), the surface term is $\displaystyle{\alpha_{t}=L}$. Hence
 
 $$\begin{align}
-H_{\kappa}=X_{t}\cdot\theta-\alpha_{t} & =\dfrac{1}{2}\sum _{i=1}^{2}\int _{I_{i}}\mathrm{d}x \left(\dot{\phi}_{i}^{2}+\phi_{i}'^{2}+m^{2}\phi_{i}^{2}\right)+\dfrac{\kappa}{2}\left(\phi _1(0)-\phi _2(0)\right)^{2} \\
+H_{\kappa}=X_{t}\cdot\theta-\alpha_{t} & =\dfrac{1}{2}\sum _{i=1}^{2}\int _{I_{i}}\mathrm{d}x \left(\dot{\phi}_{i}^{2}+\phi_{i}'^{2}+m^{2}\phi_{i}^{2}\right)+\dfrac{\mu\kappa}{2}\left(\phi _1(0)-\phi _2(0)\right)^{2} \\
  & =\sum_{\sigma=\pm1}\sum_{n}\omega _{\sigma,n} \left(b_{\sigma,n}^{\dagger}b_{\sigma,n}+\dfrac{1}{2}\right),
 \end{align}$$
 
 which is positive definite: the interface term enters with the plus sign, and the odd-sector frequencies are raised relative to the decoupled ones, $\displaystyle{\omega_{-,n}>\omega_{n-1}}$ (with the lowest odd mode just above $\displaystyle{m}$). The alternative expression
-$\displaystyle{E_{\text{bulk}}-\frac{\kappa}{2}(\phi_{1}-\phi_{2})^{2}|_{0}}$,
+$\displaystyle{E_{\text{bulk}}-\frac{\mu\kappa}{2}(\phi_{1}-\phi_{2})^{2}|_{0}}$,
 which would be indefinite, is not the covariant phase space charge and is not conserved on the solution space; it would correspond to the opposite sign of the interface term in the action.
 
 The vacuum $\displaystyle{\ket{\Omega _{\kappa}}}$ is annihilated by every $\displaystyle{b_{\sigma,n}}$, and the Hilbert space is the bosonic Fock space generated by the even tower (including its constant mode) and the odd tower.
@@ -505,17 +515,17 @@ $$\begin{align}
 k_{-,n} & \longrightarrow \dfrac{(n-1)\pi}{L}, & \mathcal{N}_{-,n} & \longrightarrow\dfrac{1}{\sqrt{ 2\omega _{n-1}L }}, & \omega _{-,n} & \longrightarrow\omega _{n-1},
 \end{align}$$
 
-with $\displaystyle{k_{-,1}\to0}$, $\displaystyle{\mathcal{N}_{-,1}\to\dfrac{1}{\sqrt{ 2m }}\dfrac{1}{\sqrt{ 2L }}}$ and $\displaystyle{\omega_{-,1}\to m}$. Equivalently, the vanishing interaction term $\displaystyle{\dfrac{\kappa}{2}(\phi_{1}-\phi_{2})^{2}|_{x=0}\to0}$ leaves the two free Neumann conditions
+with $\displaystyle{k_{-,1}\to0}$, $\displaystyle{\mathcal{N}_{-,1}\to\dfrac{1}{\sqrt{ 2m }}\dfrac{1}{\sqrt{ 2L }}}$ and $\displaystyle{\omega_{-,1}\to m}$. Equivalently, the vanishing interaction term $\displaystyle{\dfrac{\mu\kappa}{2}(\phi_{1}-\phi_{2})^{2}|_{x=0}\to0}$ leaves the two free Neumann conditions
 
 $$\begin{align}
 \phi_{1}'|_{x=0} & =\phi _{2}'|_{x=0}=0
 \end{align}$$
 
-decoupling the two intervals. The two parity towers become degenerate: for each $\displaystyle{m\geqslant0}$ the pair $\displaystyle{\{b_{+,m},\,b_{-,m+1}\}}$ sits at frequency $\displaystyle{\omega_m}$. In terms of the annihilation operators $\displaystyle{a_{i,m}}$ used for the two Neumann pieces above, the limiting basis is
+decoupling the two intervals. The two parity towers become degenerate: for each $\displaystyle{r\geqslant0}$ the pair $\displaystyle{\{b_{+,r},\,b_{-,r+1}\}}$ sits at frequency $\displaystyle{\omega_r}$. In terms of the annihilation operators $\displaystyle{a_{i,r}}$ used for the two Neumann pieces above, the fixed-mode limiting basis is
 
 $$\begin{align}
-b_{+,m} & =\dfrac{a_{1,m}+(-1)^{m}a_{2,m}}{\sqrt{2}}, \\
-b_{-,m+1} & \longrightarrow\dfrac{a_{1,m}-(-1)^{m}a_{2,m}}{\sqrt{2}},
+b_{+,r} & =\dfrac{a_{1,r}+(-1)^{r}a_{2,r}}{\sqrt{2}}, \\
+b_{-,r+1} & \longrightarrow\dfrac{a_{1,r}-(-1)^{r}a_{2,r}}{\sqrt{2}},
 \end{align}$$
 
 the even combination being exact for every $\displaystyle{\kappa}$ since the even tower never moves, and the odd combination being the $\displaystyle{\kappa\to0}$ limit. In particular both constant modes are recovered: $\displaystyle{b_{+,0}\to\dfrac{a_{1,0}+a_{2,0}}{\sqrt{2}}}$ and $\displaystyle{b_{-,1}\to\dfrac{a_{1,0}-a_{2,0}}{\sqrt{2}}}$. This is a unitary rotation inside each degenerate two-dimensional eigenspace, and
@@ -525,11 +535,11 @@ H_{\kappa\to0} & =\sum _{i=1}^{2}\sum_{m=0}^{\infty}\omega _m \left(a_{i,m}^{\da
 \mathcal{H}_{\kappa\to0} & =\mathcal{F}_{1,\mathrm{N}}\otimes\mathcal{F}_{2,\mathrm{N}}.
 \end{align}$$
 
-Thus the limit is precisely the two decoupled Neumann theories.
+Thus the endpoint spatial operator and its fixed modes are those of the two decoupled Neumann theories.
 
 ## The $\displaystyle{\kappa\to\infty}$ Limit
 
-The diverging interface term forces $\displaystyle{\phi_{1}|_{x=0}=\phi _{2}|_{x=0}}$, and the two interface conditions then give $\displaystyle{\phi_{1}'|_{x=0}=\phi'_{2}|_{x=0}}$. Hence the two components define one field
+For a family with bounded $\displaystyle{Q_{\kappa}^{\mathrm{N}}}$, the diverging interface term forces $\displaystyle{\phi_{1}|_{x=0}=\phi _{2}|_{x=0}}$, and the two interface conditions give $\displaystyle{\phi_{1}'|_{x=0}=\phi'_{2}|_{x=0}}$. Hence the two components define one field
 
 $$\begin{align}
 \phi(t,x) & =\begin{cases}
@@ -572,4 +582,4 @@ $$\begin{align}
 H_{\kappa\to \infty} & =\sum ^{\infty}_{r=0}\Omega _{r}\left( c^{\dagger}_{r}c_{r}+\dfrac{1}{2} \right)
 \end{align}$$
 
-This is the standard quantization of a single massive scalar on $\displaystyle{[-L,L]}$ with Neumann (natural) boundary conditions at both outer endpoints.
+This is the endpoint quantization of a single massive scalar on $\displaystyle{[-L,L]}$ with Neumann (natural) boundary conditions at both outer endpoints. The statements in the two limits above establish the endpoint operators and convergence of each fixed mode. They do not by themselves prove convergence of the finite-$\displaystyle{\kappa}$ vacua or a unitary identification of the full Fock representations.
