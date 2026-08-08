@@ -4,7 +4,7 @@ date: 2026-07-19
 summary: "An action-level Galerkin check that one slow radial seed together with the fast scalar modes reproduces the alternative-quantization spectrum in global AdS3."
 ---
 
-# scope and result
+# Scope and Result
 
 Consider a scalar field on global $\mathrm{AdS}_{3}$,
 
@@ -27,7 +27,7 @@ $$\begin{align}
 
 Only the polynomial branches with $0<\Delta<1$ are considered. The endpoint $\Delta=1$ is excluded.
 
-# off-shell radial truncation
+# Off-Shell Radial Truncation
 
 Fix one angular harmonic $Y_m(\phi)$ satisfying $-\partial_\phi^2Y_m=\ell^2Y_m$ and write $\ell=|m|$. Its angular norm is suppressed below; choosing $Y_m=e^{im\phi}$ would give the common factor $2\pi$. Define
 
@@ -84,7 +84,7 @@ a_{p\ell}-\frac{(\Delta)_p}{p!}s_{\ell} &=\mathcal{O}(r^{-\Delta-2}),
 
 which has no slow coefficient and belongs to the fast form domain. This is the explicit reason that one slow representative, rather than one slow function for every radial level, is enough.
 
-# reduction of the action
+# Reduction of the Action
 
 For radial profiles $u_i\in\{s_{\ell},f_{0\ell},\ldots,f_{N-1,\ell}\}$, define
 
@@ -106,7 +106,7 @@ $$\begin{align}
 Kv&=\omega^{2}Gv.
 \end{align}$$
 
-## kinetic matrix
+## Kinetic Matrix
 
 Introduce
 
@@ -146,7 +146,7 @@ G_{f_nf_k} &=\frac{1}{2}\int_{0}^{1}\mathrm{d}y\, y^{\ell}(1-y)^{\Delta_+-1} P_n
 &=\delta_{nk} \frac{(n+1)_{\ell}} {2(\Delta_++n)_{\ell}(\Delta_++\ell+2n)}.
 \end{align}$$
 
-## stiffness matrix
+## Stiffness Matrix
 
 The radial Sturm--Liouville equation is
 
@@ -176,7 +176,7 @@ K_{f_nf_k} &=\delta_{nk}(\Delta_++\ell+2n)^2G_{f_nf_n}.
 
 These equations are obtained from the renormalized action; D.34 has not been inserted into the matrix elements.
 
-# non-eigen slow seed and numerical convergence
+# Non-Eigen Slow Seed and Numerical Convergence
 
 The profile $s_{\ell}$ is itself the lowest alternative-quantization radial eigenfunction. It therefore places the exact lowest frequency $\omega=\ell+\Delta$ in every truncation. To avoid using that fact as the numerical test, replace it by
 
@@ -212,7 +212,7 @@ As a check of the angular shift, the same non-eigen seed at $N=16$ gives
 
 Thus the fixed low eigenvalues converge to the alternative-quantization spectrum even when the slow representative is not an eigenfunction. The largest eigenvalues at a given $N$ are cutoff-dependent and should not be compared before taking $N\to\infty$.
 
-# Mathematica reproduction
+# Mathematica Reproduction
 
 ```wl
 ClearAll["Global`*"];
@@ -273,7 +273,7 @@ make[Nf_] := Module[{gg, kk, vals, gsf, ksf},
 Table[make[Nf], {Nf, {4, 8, 16, 24}}]
 ```
 
-# conclusion and limitation
+# Conclusion and Limitation
 
 The action-level truncation check succeeds: one slow representative per angular-momentum sector, together with an increasing number of fast modes, reproduces the fixed low-lying field-theory frequencies. At finite $N$, the trial space obeys D.27 but not D.34; the latter is therefore not being assumed in the diagonalization.
 
