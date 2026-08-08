@@ -1,25 +1,25 @@
-# Nonuniform periodic scalar lattice
+# Nonuniform Periodic Scalar Lattice
 
 Date: 2026-07-31
 
-## 0. Direct verdict
+## 0. Direct Verdict
 
 老板的设想是可行的，但 statement 必须写成一族 regulator，而不是一个固定的有限格点系统：取一列周期非均匀网格，使最大格距趋于零，并用每个格点的 dual-cell width 归一化正则坐标和动量。这样可以同时做到
 
 1. 每个格点只有一对标准正则算符 $q_j,p_j$，满足 $[q_j,p_k]=i\delta_{jk}$；
 2. 由这些算符构造的场满足
 
-   $$\begin{align}
+$$\begin{align}
    [\phi_N(t,x),\pi_N(t,y)]&=i\delta_N(x,y),
-   \end{align}$$
+\end{align}$$
 
    其中 $\delta_N$ 是一个 finite-rank projector kernel；它不 pointwise 等于 Dirac $\delta$，但与任意固定光滑测试函数卷积后趋于 continuum canonical commutator；
 3. 离散 Hamiltonian 是一个显式的正定 coupled-oscillator quadratic form，可以在每个有限 $N$ 上 exact diagonalize；
 4. 对固定的低能 mode，在 $h_{\max}\to0$ 且网格退化受控时，频率趋于
 
-   $$\begin{align}
+$$\begin{align}
    \omega_r&=\sqrt{m^2+\left(\frac{2\pi r}{L}\right)^2}, &r&\in\mathbb Z,
-   \end{align}$$
+\end{align}$$
 
    即长度为 $L$ 的平直空间圆周上的 massive periodic scalar spectrum。
 
@@ -27,7 +27,7 @@ Date: 2026-07-31
 
 下面先给出最直接的 mass-lumped finite-volume construction，再给出 consistent piecewise-linear finite-element construction 作为独立检查。数值实现位于 `nonuniform_periodic_scalar.py`，exact symbolic residuals 位于 `nonuniform_periodic_scalar_checks.wl`。
 
-## 1. Continuum target and the periodic mesh
+## 1. Continuum Target and the Periodic Mesh
 
 目标 theory 是长度为 $L$ 的 spatial circle 上的 real massive scalar：
 
@@ -66,16 +66,12 @@ w_j&:=|C_j|=\frac{h_{j-1}+h_j}{2}, &\sum_{j=1}^Nw_j&=L,
 也可以用 uniform computational coordinate $\xi\sim\xi+1$ 与一个单调 periodic lift $x=X(\xi)$ 来生成 mesh。此时 flat-space action 写成
 
 $$\begin{align}
-S=\frac12\int\mathrm dt\int_0^1\mathrm d\xi\left[
-X'(\xi)\dot\phi^2
--\frac1{X'(\xi)}(\partial_\xi\phi)^2
--m^2X'(\xi)\phi^2
-\right].
+S=\frac12\int\mathrm dt\int_0^1\mathrm d\xi\left[ X'(\xi)\dot\phi^2 -\frac1{X'(\xi)}(\partial_\xi\phi)^2 -m^2X'(\xi)\phi^2 \right].
 \end{align}$$
 
 $X'$ 的 position dependence 只是 physical measure 与 inverse metric 在 computational coordinate 中的 Jacobian factors，不代表一个 position-dependent physical coupling。第 3 节中的 $w_j$ 与 $h_j^{-1}$ 正是它们的离散版本。若在 uniform $\xi$ lattice 上把这些 factors 丢掉，就会模拟另一套 inhomogeneous medium，而不是用不均匀采样逼近同一个 flat theory。
 
-## 2. From site operators to operator-valued distributions
+## 2. From Site Operators to Operator-Valued Distributions
 
 在每个 site 引入一对 canonical operators。按本项目约定省略 operator hats：
 
@@ -86,8 +82,7 @@ $$\begin{align}
 定义 dual-cell orthonormal functions
 
 $$\begin{align}
-e_j(x)&:=\frac{\mathbf 1_{C_j}(x)}{\sqrt{w_j}}, &
-\int_0^L\mathrm dx\,e_j(x)e_k(x)&=\delta_{jk}.
+e_j(x)&:=\frac{\mathbf 1_{C_j}(x)}{\sqrt{w_j}}, & \int_0^L\mathrm dx\,e_j(x)e_k(x)&=\delta_{jk}.
 \end{align}$$
 
 格点场算符取为
@@ -100,8 +95,7 @@ $$\begin{align}
 因此在 $C_j$ 内，场和 momentum-density samples 分别是
 
 $$\begin{align}
-\phi_j&=\frac{q_j}{\sqrt{w_j}}, &
-\pi_j&=\frac{p_j}{\sqrt{w_j}}.
+\phi_j&=\frac{q_j}{\sqrt{w_j}}, & \pi_j&=\frac{p_j}{\sqrt{w_j}}.
 \end{align}$$
 
 这一步中的 $\sqrt{w_j}$ 是关键。若直接把 $q_j$ 当作 $\phi(x_j)$，同时仍要求 $[q_j,p_k]=i\delta_{jk}$，则 continuum measure 与 canonical delta normalization 都会错误。
@@ -109,11 +103,8 @@ $$\begin{align}
 有限格点 equal-time commutator 是
 
 $$\begin{align}
-[\phi_N(t,x),\pi_N(t,y)]
-&=i\delta_N(x,y),\\
-\delta_N(x,y)
-&:=\sum_{j=1}^Ne_j(x)e_j(y)
-=\sum_{j=1}^N\frac{\mathbf 1_{C_j}(x)\mathbf 1_{C_j}(y)}{w_j}.
+[\phi_N(t,x),\pi_N(t,y)] &=i\delta_N(x,y),\\
+\delta_N(x,y) &:=\sum_{j=1}^Ne_j(x)e_j(y) =\sum_{j=1}^N\frac{\mathbf 1_{C_j}(x)\mathbf 1_{C_j}(y)}{w_j}.
 \end{align}$$
 
 $\delta_N$ 是从 $L^2(S_L^1)$ 到 dual-cell piecewise-constant functions 的 orthogonal-projector kernel。它没有有意义的 pointwise Dirac-delta limit；正确的 statement 必须 smeared。
@@ -121,35 +112,27 @@ $\delta_N$ 是从 $L^2(S_L^1)$ 到 dual-cell piecewise-constant functions 的 or
 对 $f,g\in C^1(S_L^1)$，定义
 
 $$\begin{align}
-\phi_N[f]&:=\int_0^L\mathrm dx\,f(x)\phi_N(x), &
-\pi_N[g]&:=\int_0^L\mathrm dx\,g(x)\pi_N(x),\\
-\overline f_j&:=\frac1{w_j}\int_{C_j}\mathrm dx\,f(x), &
-\overline g_j&:=\frac1{w_j}\int_{C_j}\mathrm dx\,g(x).
+\phi_N[f]&:=\int_0^L\mathrm dx\,f(x)\phi_N(x), & \pi_N[g]&:=\int_0^L\mathrm dx\,g(x)\pi_N(x),\\
+\overline f_j&:=\frac1{w_j}\int_{C_j}\mathrm dx\,f(x), & \overline g_j&:=\frac1{w_j}\int_{C_j}\mathrm dx\,g(x).
 \end{align}$$
 
 则 exact finite-$N$ commutator 是
 
 $$\begin{align}
-[\phi_N[f],\pi_N[g]]
-&=i\sum_{j=1}^Nw_j\overline f_j\overline g_j.
+[\phi_N[f],\pi_N[g]] &=i\sum_{j=1}^Nw_j\overline f_j\overline g_j.
 \end{align}$$
 
 它与 continuum answer 的误差可以直接控制。每个 cell 上有 identity
 
 $$\begin{align}
-\int_{C_j}\mathrm dx\,f(x)g(x)-w_j\overline f_j\overline g_j
-=\frac1{2w_j}\int_{C_j}\mathrm dx\int_{C_j}\mathrm dy\,
-[f(x)-f(y)][g(x)-g(y)].
+\int_{C_j}\mathrm dx\,f(x)g(x)-w_j\overline f_j\overline g_j =\frac1{2w_j}\int_{C_j}\mathrm dx\int_{C_j}\mathrm dy\, [f(x)-f(y)][g(x)-g(y)].
 \end{align}$$
 
 因此若 $w_{\max}:=\max_jw_j$，则
 
 $$\begin{align}
-\left|
-\frac1i[\phi_N[f],\pi_N[g]]-\int_0^L\mathrm dx\,f(x)g(x)
-\right|
-&\leq \frac{Lw_{\max}^2}{12}
-\lVert f'\rVert_{\infty}\lVert g'\rVert_{\infty}.
+\left| \frac1i[\phi_N[f],\pi_N[g]]-\int_0^L\mathrm dx\,f(x)g(x) \right| &\leq \frac{Lw_{\max}^2}{12} \lVert f'\rVert_{\infty}\lVert g'\rVert_{\infty}.
+\end{align}
 \end{align}$$
 
 所以 $w_{\max}\to0$ 时，
@@ -161,21 +144,15 @@ $$\begin{align}
 
 这正是所要求的 operator-valued-distribution 意义下的 canonical commutator。对一般 two-variable test function，可先对 finite sums $F(x,y)=\sum_a f_a(x)g_a(y)$ 使用上式，再由 test-function topology 的稠密性延拓。
 
-## 3. Nonuniform lattice action and Hamiltonian
+## 3. Nonuniform Lattice Action and Hamiltonian
 
 先把 $\phi_j$ 当作 $x_j$ 附近 cell 的 field sample。continuum action 的 mass-lumped discretization 是
 
 $$\begin{align}
-S_N=\frac12\int\mathrm dt\left\{
-\sum_{j=1}^Nw_j\dot\phi_j^2
--\sum_{j=1}^N\left[
-\frac{(\phi_{j+1}-\phi_j)^2}{h_j}
-+m^2w_j\phi_j^2
-\right]\right\},
-\qquad \phi_{N+1}=\phi_1.
+S_N=\frac12\int\mathrm dt\left\{ \sum_{j=1}^Nw_j\dot\phi_j^2 -\sum_{j=1}^N\left[ \frac{(\phi_{j+1}-\phi_j)^2}{h_j} +m^2w_j\phi_j^2 \right]\right\}, \qquad \phi_{N+1}=\phi_1.
 \end{align}$$
 
-site coordinate $\phi_j$ 的 integrated canonical momentum 是
+Site coordinate $\phi_j$ 的 integrated canonical momentum 是
 
 $$\begin{align}
 P_j&:=\frac{\partial L_N}{\partial\dot\phi_j}=w_j\dot\phi_j.
@@ -184,55 +161,45 @@ P_j&:=\frac{\partial L_N}{\partial\dot\phi_j}=w_j\dot\phi_j.
 从 $[\phi_j,P_k]=i\delta_{jk}$ 出发，定义 unit-normalized canonical variables
 
 $$\begin{align}
-q_j&:=\sqrt{w_j}\phi_j, &
-p_j&:=\frac{P_j}{\sqrt{w_j}}=\sqrt{w_j}\dot\phi_j.
+q_j&:=\sqrt{w_j}\phi_j, & p_j&:=\frac{P_j}{\sqrt{w_j}}=\sqrt{w_j}\dot\phi_j.
 \end{align}$$
 
 这与第 2 节的 field reconstruction 完全一致。finite-dimensional CPS form 也保持标准形式：
 
 $$\begin{align}
-\Omega_N&=\sum_{j=1}^N\delta P_j\wedge\delta\phi_j
-=\sum_{j=1}^N\delta p_j\wedge\delta q_j.
+\Omega_N&=\sum_{j=1}^N\delta P_j\wedge\delta\phi_j =\sum_{j=1}^N\delta p_j\wedge\delta q_j.
 \end{align}$$
 
 Hamiltonian 是
 
 $$\begin{align}
-H_N
-&=\frac12\sum_{j=1}^N\left(p_j^2+m^2q_j^2\right)
-+\frac12\sum_{j=1}^N\frac1{h_j}
-\left(\frac{q_{j+1}}{\sqrt{w_{j+1}}}
--\frac{q_j}{\sqrt{w_j}}\right)^2.
+H_N &=\frac12\sum_{j=1}^N\left(p_j^2+m^2q_j^2\right) +\frac12\sum_{j=1}^N\frac1{h_j} \left(\frac{q_{j+1}}{\sqrt{w_{j+1}}} -\frac{q_j}{\sqrt{w_j}}\right)^2.
 \end{align}$$
 
 令 $W=\operatorname{diag}(w_1,\ldots,w_N)$，并定义 periodic stiffness matrix
 
 $$\begin{align}
 S_{jj}&=\frac1{h_{j-1}}+\frac1{h_j},\\
-S_{j,j+1}&=-\frac1{h_j}, &
-S_{j,j-1}&=-\frac1{h_{j-1}},
+S_{j,j+1}&=-\frac1{h_j}, & S_{j,j-1}&=-\frac1{h_{j-1}},
 \end{align}$$
 
 其余 entries 为零，indices cyclic。则
 
 $$\begin{align}
-H_N&=\frac12\left(\boldsymbol p^T\boldsymbol p
-+\boldsymbol q^TA_N\boldsymbol q\right),\\
+H_N&=\frac12\left(\boldsymbol p^T\boldsymbol p +\boldsymbol q^TA_N\boldsymbol q\right),\\
 A_N&=m^2\boldsymbol 1+W^{-1/2}SW^{-1/2}.
 \end{align}$$
 
-positivity 是 manifest 的：
+Positivity 是 manifest 的：
 
 $$\begin{align}
-\boldsymbol q^T(A_N-m^2\boldsymbol 1)\boldsymbol q
-&=\sum_{j=1}^N\frac{(\phi_{j+1}-\phi_j)^2}{h_j}\geq0.
+\boldsymbol q^T(A_N-m^2\boldsymbol 1)\boldsymbol q &=\sum_{j=1}^N\frac{(\phi_{j+1}-\phi_j)^2}{h_j}\geq0.
 \end{align}$$
 
 所以 $m>0$ 时 $A_N$ positive definite，所有 frequencies 都满足 $\omega_r\geq m$。此外任意非均匀网格都有 exact constant-field eigenvector
 
 $$\begin{align}
-q_j^{(0)}&=\sqrt{\frac{w_j}{L}}, &
-A_N\boldsymbol q^{(0)}&=m^2\boldsymbol q^{(0)}.
+q_j^{(0)}&=\sqrt{\frac{w_j}{L}}, & A_N\boldsymbol q^{(0)}&=m^2\boldsymbol q^{(0)}.
 \end{align}$$
 
 因此 spatial constant mode 的 frequency 在任意 cutoff 上都恰好是 $m$，不是只在 continuum limit 才恢复。
@@ -246,13 +213,12 @@ F_{j+1/2}&:=\frac{\phi_{j+1}-\phi_j}{h_j},
 则
 
 $$\begin{align}
-w_j\left(\ddot\phi_j+m^2\phi_j\right)
-&=F_{j+1/2}-F_{j-1/2}.
+w_j\left(\ddot\phi_j+m^2\phi_j\right) &=F_{j+1/2}-F_{j-1/2}.
 \end{align}$$
 
 因此 dense 与 sparse regions 的交界处不需要额外 defect condition：相邻 edge lengths 已经进入同一个 discrete divergence。若人为在交界处另外乘一个未由 action 导出的 coupling，就会改变 continuum interface physics。
 
-### 3.1 Relation to the previous Dirichlet/Neumann gluing problem
+### 3.1 Relation to the Previous Dirichlet/Neumann Gluing Problem
 
 这个 construction 可以直接重写成两个 nonuniform chains 的 gluing。考虑被 cut 的一条 periodic edge，左右 endpoint sites 记为 $\ell,r$，其 physical edge length 为 $h_X$。完整 periodic Hamiltonian 在这条 edge 上的能量是
 
@@ -270,8 +236,7 @@ H_X^D&=\frac1{2h_X}(\phi_\ell^2+\phi_r^2).
 
 $$\begin{align}
 H_X^P&=H_X^D+V_{D,X},\\
-V_{D,X}&=-\frac{\phi_\ell\phi_r}{h_X}
-=-\frac{q_\ell q_r}{h_X\sqrt{w_\ell w_r}}.
+V_{D,X}&=-\frac{\phi_\ell\phi_r}{h_X} =-\frac{q_\ell q_r}{h_X\sqrt{w_\ell w_r}}.
 \end{align}$$
 
 圆周有两个 cuts，所以对两个 $X$ 求和。均匀情形 $h_X=w_\ell=w_r=\varepsilon$ 立即恢复旧笔记中的
@@ -284,8 +249,7 @@ V_{D,X}&=-\frac{q_\ell q_r}{\varepsilon^2}.
 
 $$\begin{align}
 H_X^P&=H_X^N+V_{N,X},\\
-V_{N,X}&=\frac1{2h_X}
-\left(\frac{q_r}{\sqrt{w_r}}-\frac{q_\ell}{\sqrt{w_\ell}}\right)^2.
+V_{N,X}&=\frac1{2h_X} \left(\frac{q_r}{\sqrt{w_r}}-\frac{q_\ell}{\sqrt{w_\ell}}\right)^2.
 \end{align}$$
 
 所以 Dirichlet 与 Neumann reference descriptions 都能在任意有限非均匀 lattice 上 exact reconstruct 同一个 periodic Hamiltonian；它们只是不同的 reference quadratic forms。Dirichlet interaction 取消两项 pinning 后留下 cross coupling，Neumann interaction 则添加完整 cross-edge spring。
@@ -294,20 +258,18 @@ V_{N,X}&=\frac1{2h_X}
 
 上面两个 exact reference decompositions 都保留完整 periodic mesh 的 $w_j$，只替换 cut-edge gradient term。若两条 chains 是先彼此独立离散、并各自赋予了不同的 endpoint cell volumes，就必须先把它们映射到同一组 $q_j,p_j$ 与同一个 global quadrature measure；否则还会出现 kinetic/mass normalization mismatch，不能只补一个 cross spring。
 
-## 4. Exact finite-dimensional diagonalization
+## 4. Exact Finite-Dimensional Diagonalization
 
 因为 $A_N$ 是 real symmetric positive definite，存在 orthogonal matrix $O$ 使
 
 $$\begin{align}
-O^TO&=\boldsymbol 1, &
-O^TA_NO&=\operatorname{diag}(\omega_0^2,\ldots,\omega_{N-1}^2).
+O^TO&=\boldsymbol 1, & O^TA_NO&=\operatorname{diag}(\omega_0^2,\ldots,\omega_{N-1}^2).
 \end{align}$$
 
 定义 normal coordinates
 
 $$\begin{align}
-\boldsymbol Q&=O^T\boldsymbol q, &
-\boldsymbol\Pi&=O^T\boldsymbol p,
+\boldsymbol Q&=O^T\boldsymbol q, & \boldsymbol\Pi&=O^T\boldsymbol p,
 \end{align}$$
 
 则 transformation 是 canonical，并且
@@ -319,37 +281,30 @@ H_N&=\frac12\sum_{r=0}^{N-1}\left(\Pi_r^2+\omega_r^2Q_r^2\right).
 引入
 
 $$\begin{align}
-b_r&=\frac1{\sqrt2}\left(\sqrt{\omega_r}Q_r
-+\frac{i}{\sqrt{\omega_r}}\Pi_r\right),\\
+b_r&=\frac1{\sqrt2}\left(\sqrt{\omega_r}Q_r +\frac{i}{\sqrt{\omega_r}}\Pi_r\right),\\
 [b_r,b_s^\dagger]&=\delta_{rs},
 \end{align}$$
 
 便得到
 
 $$\begin{align}
-H_N&=\sum_{r=0}^{N-1}\omega_r
-\left(b_r^\dagger b_r+\frac12\right).
+H_N&=\sum_{r=0}^{N-1}\omega_r \left(b_r^\dagger b_r+\frac12\right).
 \end{align}$$
 
 定义 normalized lattice mode profiles
 
 $$\begin{align}
-u_{r,N}(x)&:=\sum_{j=1}^Ne_j(x)O_{jr}, &
-\int_0^L\mathrm dx\,u_{r,N}(x)u_{s,N}(x)&=\delta_{rs}.
+u_{r,N}(x)&:=\sum_{j=1}^Ne_j(x)O_{jr}, & \int_0^L\mathrm dx\,u_{r,N}(x)u_{s,N}(x)&=\delta_{rs}.
 \end{align}$$
 
-field operators 可写成
+Field operators 可写成
 
 $$\begin{align}
-\phi_N(t,x)
-&=\sum_{r=0}^{N-1}\frac{u_{r,N}(x)}{\sqrt{2\omega_r}}
-\left(b_re^{-i\omega_rt}+b_r^\dagger e^{i\omega_rt}\right),\\
-\pi_N(t,x)
-&=-i\sum_{r=0}^{N-1}\sqrt{\frac{\omega_r}{2}}u_{r,N}(x)
-\left(b_re^{-i\omega_rt}-b_r^\dagger e^{i\omega_rt}\right).
+\phi_N(t,x) &=\sum_{r=0}^{N-1}\frac{u_{r,N}(x)}{\sqrt{2\omega_r}} \left(b_re^{-i\omega_rt}+b_r^\dagger e^{i\omega_rt}\right),\\
+\pi_N(t,x) &=-i\sum_{r=0}^{N-1}\sqrt{\frac{\omega_r}{2}}u_{r,N}(x) \left(b_re^{-i\omega_rt}-b_r^\dagger e^{i\omega_rt}\right).
 \end{align}$$
 
-mode completeness 给出
+Mode completeness 给出
 
 $$\begin{align}
 \sum_{r=0}^{N-1}u_{r,N}(x)u_{r,N}(y)&=\delta_N(x,y),
@@ -358,30 +313,23 @@ $$\begin{align}
 所以 diagonalized field 与第 2 节的 smeared CCR 完全一致。finite-lattice vacuum two-point function 是
 
 $$\begin{align}
-W_N(t,x;t',y)
-&=\sum_{r=0}^{N-1}\frac{u_{r,N}(x)u_{r,N}(y)}{2\omega_r}
-e^{-i\omega_r(t-t')},
+W_N(t,x;t',y) &=\sum_{r=0}^{N-1}\frac{u_{r,N}(x)u_{r,N}(y)}{2\omega_r} e^{-i\omega_r(t-t')},
 \end{align}$$
 
 而 equal-time canonical covariances 可直接由 $A_N$ 算出：
 
 $$\begin{align}
-\langle0|\boldsymbol q\boldsymbol q^T|0\rangle
-&=\frac12A_N^{-1/2}, &
-\langle0|\boldsymbol p\boldsymbol p^T|0\rangle
-&=\frac12A_N^{1/2}.
+\langle0|\boldsymbol q\boldsymbol q^T|0\rangle &=\frac12A_N^{-1/2}, & \langle0|\boldsymbol p\boldsymbol p^T|0\rangle &=\frac12A_N^{1/2}.
 \end{align}$$
 
 这些量提供比只比较 eigenvalues 更强的后续检验：把 $W_N$ 或 covariance 与固定测试函数 smear 后，应趋于 continuum massive-circle two-point distribution。
 
-### Uniform-grid baseline
+### Uniform-Grid Baseline
 
 若 $h_j=w_j=\varepsilon=L/N$，$A_N$ 恢复 circulant nearest-neighbor matrix，exact frequencies 是
 
 $$\begin{align}
-\omega_r^2
-&=m^2+\frac4{\varepsilon^2}\sin^2\left(\frac{\pi r}{N}\right),
-&r&=0,\ldots,N-1.
+\omega_r^2 &=m^2+\frac4{\varepsilon^2}\sin^2\left(\frac{\pi r}{N}\right), &r&=0,\ldots,N-1.
 \end{align}$$
 
 固定 continuum label $r\in\mathbb Z$ 后取 $N\to\infty$，得到
@@ -392,37 +340,30 @@ $$\begin{align}
 
 非均匀情形不再有 discrete Fourier eigenvectors，但 real-symmetric matrix diagonalization 已经是完整答案。
 
-## 5. Consistent piecewise-linear finite-element control
+## 5. Consistent Piecewise-Linear Finite-Element Control
 
-mass-lumped construction 最直接地实现了“一点一对 $q,p$”与 dual-cell projector kernel。为了检查结果不依赖这个特定 quadrature，可以在同一个 mesh 上使用 periodic hat functions $\psi_j(x)$，令
+Mass-lumped construction 最直接地实现了“一点一对 $q,p$”与 dual-cell projector kernel。为了检查结果不依赖这个特定 quadrature，可以在同一个 mesh 上使用 periodic hat functions $\psi_j(x)$，令
 
 $$\begin{align}
 \phi_N(x)&=\sum_{j=1}^N\psi_j(x)\Phi_j.
 \end{align}$$
 
-consistent mass matrix 与 stiffness matrix 是
+Consistent mass matrix 与 stiffness matrix 是
 
 $$\begin{align}
-M_{jj}&=\frac{h_{j-1}+h_j}{3}, &
-M_{j,j+1}&=\frac{h_j}{6},\\
-S_{jj}&=\frac1{h_{j-1}}+\frac1{h_j}, &
-S_{j,j+1}&=-\frac1{h_j},
+M_{jj}&=\frac{h_{j-1}+h_j}{3}, & M_{j,j+1}&=\frac{h_j}{6},\\
+S_{jj}&=\frac1{h_{j-1}}+\frac1{h_j}, & S_{j,j+1}&=-\frac1{h_j},
 \end{align}$$
 
 加上 cyclic symmetric entries。离散 Lagrangian、canonical momentum 与 Hamiltonian 是
 
 $$\begin{align}
-L_N^{\rm FE}
-&=\frac12\dot{\boldsymbol\Phi}^TM\dot{\boldsymbol\Phi}
--\frac12\boldsymbol\Phi^T(S+m^2M)\boldsymbol\Phi,\\
-\boldsymbol P&=M\dot{\boldsymbol\Phi}, &
-[\Phi_j,P_k]&=i\delta_{jk},\\
-H_N^{\rm FE}
-&=\frac12\boldsymbol P^TM^{-1}\boldsymbol P
-+\frac12\boldsymbol\Phi^T(S+m^2M)\boldsymbol\Phi.
+L_N^{\rm FE} &=\frac12\dot{\boldsymbol\Phi}^TM\dot{\boldsymbol\Phi} -\frac12\boldsymbol\Phi^T(S+m^2M)\boldsymbol\Phi,\\
+\boldsymbol P&=M\dot{\boldsymbol\Phi}, & [\Phi_j,P_k]&=i\delta_{jk},\\
+H_N^{\rm FE} &=\frac12\boldsymbol P^TM^{-1}\boldsymbol P +\frac12\boldsymbol\Phi^T(S+m^2M)\boldsymbol\Phi.
 \end{align}$$
 
-momentum density 的 consistent reconstruction 是
+Momentum density 的 consistent reconstruction 是
 
 $$\begin{align}
 \pi_N(x)&=\boldsymbol\psi(x)^TM^{-1}\boldsymbol P.
@@ -431,8 +372,7 @@ $$\begin{align}
 因此
 
 $$\begin{align}
-[\phi_N(x),\pi_N(y)]
-&=i\boldsymbol\psi(x)^TM^{-1}\boldsymbol\psi(y).
+[\phi_N(x),\pi_N(y)] &=i\boldsymbol\psi(x)^TM^{-1}\boldsymbol\psi(y).
 \end{align}$$
 
 右边是到 periodic piecewise-linear finite-element space 的 $L^2$ orthogonal-projector kernel。若
@@ -444,29 +384,24 @@ $$\begin{align}
 则 exact smeared commutator 是
 
 $$\begin{align}
-[\phi_N[f],\pi_N[g]]
-&=i\boldsymbol b_f^TM^{-1}\boldsymbol b_g
-=i\langle P_Nf,P_Ng\rangle_{L^2},
+[\phi_N[f],\pi_N[g]] &=i\boldsymbol b_f^TM^{-1}\boldsymbol b_g =i\langle P_Nf,P_Ng\rangle_{L^2},
 \end{align}$$
 
 其中 $P_N$ 是该 finite-element space 的 $L^2$ projector。由 orthogonal decomposition，
 
 $$\begin{align}
-\langle P_Nf,P_Ng\rangle-\langle f,g\rangle
-&=-\langle(1-P_N)f,(1-P_N)g\rangle.
+\langle P_Nf,P_Ng\rangle-\langle f,g\rangle &=-\langle(1-P_N)f,(1-P_N)g\rangle.
 \end{align}$$
 
 因此只要这些 spaces 在 $L^2(S_L^1)$ 中变得 dense，smeared CCR 同样收敛。frequencies 来自 generalized eigenvalue problem
 
 $$\begin{align}
-(S+m^2M)\boldsymbol v_r
-&=\omega_r^2M\boldsymbol v_r, &
-\boldsymbol v_r^TM\boldsymbol v_s&=\delta_{rs}.
+(S+m^2M)\boldsymbol v_r &=\omega_r^2M\boldsymbol v_r, & \boldsymbol v_r^TM\boldsymbol v_s&=\delta_{rs}.
 \end{align}$$
 
 把 $M$ mass-lump 为 $W=\operatorname{diag}(w_j)$ 后，matrix Hamiltonian 回到第 3 节的 $A_N$。两种 schemes 的 finite-cutoff UV spectra 不同，但应给出相同的 continuum low-energy spectrum。
 
-## 6. Continuum-limit conditions and numerical benchmark
+## 6. Continuum-Limit Conditions and Numerical Benchmark
 
 要把一族不均匀 lattices 称为 flat-space field-theory regulator，至少固定以下条件：
 
@@ -513,7 +448,7 @@ Python implementation 依赖 NumPy；当前 system `python3` 不含 NumPy，所�
 | 7 | 4.06078810 | 4.00172695 | 4.11534520 |
 | 8 | 4.06078810 | 4.00495174 | 4.11643735 |
 
-constant mode 已经 exact；其余 continuum doublets 在 finite nonuniform mesh 上轻微 split。固定 density ratio $3$，同时 refine 两个 regions，得到
+Constant mode 已经 exact；其余 continuum doublets 在 finite nonuniform mesh 上轻微 split。固定 density ratio $3$，同时 refine 两个 regions，得到
 
 | $N$ | $h_{\max}$ | lumped CCR error | consistent CCR error | lumped low-spectrum error | consistent low-spectrum error |
 |---:|---:|---:|---:|---:|---:|
@@ -524,7 +459,7 @@ constant mode 已经 exact；其余 continuum doublets 在 finite nonuniform mes
 
 这里 CCR error 是一对固定 smooth trigonometric test functions 的 smeared commutator coefficient 与 $\int fg$ 的差；spectrum error 是最低七个 sorted frequencies 的最大绝对误差。该 sequence 中 mass-lumped CCR 与两种 low-spectrum errors 显示二阶收敛。对这组 smooth tests，consistent projector 的 CCR error 数值上显示更高阶收敛；这不是对任意低正则测试函数的统一高阶 claim。
 
-## 7. Verification boundary
+## 7. Verification Boundary
 
 Verified:
 
@@ -548,7 +483,7 @@ Not verified:
 - 没有声称 mesh ratio 随 $N$ 无界增长时仍保持相同的 stability 或 convergence rate。
 - 这个 regulator 不解决旧 Dirichlet/Neumann product Fock spaces 的 continuum unitary-implementability 问题；该问题仍需独立的 domain 与 Shale--Stinespring analysis。
 
-## 8. Immediate next calculations
+## 8. Immediate Next Calculations
 
 1. 对 discrete quadratic forms 证明 Mosco 或 norm-resolvent convergence，并明确 embedding $J_N:\mathbb R^N\to L^2(S_L^1)$ 取 dual-cell basis 还是 piecewise-linear basis。
 2. 对若干固定测试函数计算 smeared $W_N$，与 massive circle 的 exact Fourier-series Wightman function 比较；这会同时检验 vacuum covariance，而不仅是 CCR 与 eigenvalues。
