@@ -17,7 +17,7 @@ Back to [[2026_07_21_overview]].
 
 The paper's value is its order of operations: split the tangent metric and the Einstein--Hilbert action at finite $\epsilon$, then specialize the discrete data $(s,n)$. This makes several limits comparable without hiding their different inverse metrics, torsions, or cosmological-constant scalings.
 
-# The $(s,n,\epsilon)$ tangent split
+# The $(s,n,\epsilon)$ Tangent Split
 
 Split tangent indices into $A,B=1,\ldots,n$ and $a,b=1,\ldots,d-n$, and write
 
@@ -47,7 +47,7 @@ $$\begin{align}
 
 This determinant factor controls all overall powers in the action.
 
-# A compatible torsional connection
+# A Compatible Torsional Connection
 
 Rather than expand the Levi-Civita connection immediately, the paper chooses a representative finite-$\epsilon$ connection satisfying
 
@@ -69,7 +69,7 @@ $$\begin{align}
 
 This identity lets the authors power count curvature before choosing a Newtonian, Carrollian, or higher-rank scaled limit.
 
-# The four Einstein--Hilbert orders
+# The Four Einstein--Hilbert Orders
 
 With
 
@@ -105,7 +105,7 @@ L^{(n+2)} =\Pi^{\rho\beta}V_{\beta\mu\nu}V^{\mu\alpha} \Pi^{\nu\kappa}V_{\kappa\
 
 The symbol $\approx$ matters for boundary work: a total derivative has been dropped. The source notes that it can matter for finite boundaries and nontrivial falloffs. The hierarchy is therefore a bulk action decomposition, not yet a well-posed boundary variational principle.
 
-# Relativistic, Galilean, and Carroll avatars
+# Relativistic, Galilean, and Carroll Avatars
 
 | choice | interpretation | parameter reading |
 |---|---|---|
@@ -122,7 +122,7 @@ K_{\mu\nu}K^{\mu\nu}-K^2
 
 after translation to the paper's PUL variables. Appendix E performs the Galilean reduction to post-Newtonian connection and action variables. The conceptual gain is that $n$ fixes the power hierarchy, $s$ selects which degenerate structure contains time, and $\Delta$ decides at which order the cosmological term survives.
 
-# String Carroll gravity and horizon limits
+# String Carroll Gravity and Horizon Limits
 
 For $(s,n)=(1,2)$, the leading limit with $\Delta=-4$ retains
 
@@ -138,14 +138,14 @@ r=r_h+\varepsilon\rho^2, \qquad \varepsilon=\epsilon^2.
 
 The leading longitudinal two-plane is assigned to $v$, while the transverse horizon metric supplies $h$. The Plebanski--Demiański family and a four-dimensional black brane are stated to solve the string-Carroll equations with $\Lambda^{\{-4\}}=0$. The limiting tensors are displayed, but the complete substitution into all three equations is not.
 
-# Transfer to Carrollian and boundary work
+# Transfer to Carrollian and Boundary Work
 
 1. The finite-$\epsilon$ split is a useful ledger for locating which Carrollian term descends from curvature and which comes from inverse-metric power counting.
 2. Nonuniqueness of the compatible connection is analogous to choosing extra foliation/boundary data. A charge or CPS calculation must state that choice before comparing formulas.
 3. The dropped total divergence must be restored before deriving a presymplectic potential, boundary stress tensor, or finite-boundary charge.
 4. The $(1,2)$ sector is a concrete near-horizon string-Carroll testbed, but its asserted horizon solutions need a tensorial substitution before reuse.
 
-# Verification note
+# Verification Note
 
 **Checked.** Mathematica verified for a general diagonal $n$-dimensional scaled block that $\det g$ carries exactly $\epsilon^{2n}$, hence $\sqrt{-g}$ carries $\epsilon^n$. This independently checks the determinant power entering the action hierarchy.
 
