@@ -1,4 +1,4 @@
-consider a particle whose configuration space is a $\displaystyle{d}$-dimensional Riemannian manifold $\displaystyle{(\mathcal{M},g)}$, with Euclidean action. throughout this note, set $\hbar=1$.
+Consider a particle whose configuration space is a $\displaystyle{d}$-dimensional Riemannian manifold $\displaystyle{(\mathcal{M},g)}$, with Euclidean action. Throughout this note, set $\hbar=1$.
 
 $$\begin{align}
 S_{E}[x] & =\int _{-\beta}^{0}\mathrm{d}t\left(\dfrac{1}{2}g_{ij}(x)\dot{x}^{i}\dot{x}^{j}+V(x)+V_{\mathrm{ct}}(x)\right)
@@ -17,7 +17,7 @@ $$\begin{align}
 H_{0} & =-\dfrac{1}{2}\Delta _{g}+V(x)
 \end{align}$$
 
-here $\displaystyle{\Delta _{g}=\dfrac{1}{\sqrt{ g }}\partial _{i}(\sqrt{ g }g^{ij}\partial _{j})}$ is the Laplace-Beltrami operator. consider the formal covariantly normalized position states $\displaystyle{\ket{x}}$, which satisfy
+here $\displaystyle{\Delta _{g}=\dfrac{1}{\sqrt{ g }}\partial _{i}(\sqrt{ g }g^{ij}\partial _{j})}$ is the Laplace-Beltrami operator. Consider the formal covariantly normalized position states $\displaystyle{\ket{x}}$, which satisfy
 
 $$\begin{align}
 \mathbf{1} & =\int \mathrm{d}^{d}x\sqrt{ g(x) }\ket{x} \bra{x}  \\
@@ -27,11 +27,10 @@ $$\begin{align}
 define the flat-normalized position states and the half-density wave functions by
 
 $$\begin{align}
-\ket{x}_{\mathrm{flat}} & =g(x)^{1/4}\ket{x}, &
-\tilde{\psi}(x) & ={}_{\mathrm{flat}}\!\braket{x|\psi}=g(x)^{1/4}\psi(x).
+\ket{x}_{\mathrm{flat}} & =g(x)^{1/4}\ket{x}, & \tilde{\psi}(x) & ={}_{\mathrm{flat}}\!\braket{x|\psi}=g(x)^{1/4}\psi(x).
 \end{align}$$
 
-then $\displaystyle{{}_{\mathrm{flat}}\!\braket{x|y}_{\mathrm{flat}}=\delta^{(d)}(x-y)}$, and the half-density inner product uses the flat coordinate measure. in this representation,
+Then $\displaystyle{{}_{\mathrm{flat}}\!\braket{x|y}_{\mathrm{flat}}=\delta^{(d)}(x-y)}$, and the half-density inner product uses the flat coordinate measure. In this representation,
 
 $$\begin{align}
 \tilde{H}_{0} & =g^{1/4}H_0g^{-1/4} \\
@@ -51,21 +50,19 @@ $$\begin{align}
 \lim_{ \beta \to 0^{+} } \tilde{K}(x_{f},x_{i};\beta) & =\delta ^{(d)}(x_{f}-x_{i}).
 \end{align}$$
 
-the corresponding scalar kernel is
+The corresponding scalar kernel is
 
 $$\begin{align}
-K(x_f,x_i;\beta)
-&=g(x_f)^{-1/4}\tilde K(x_f,x_i;\beta)g(x_i)^{-1/4}, \\
+K(x_f,x_i;\beta) &=g(x_f)^{-1/4}\tilde K(x_f,x_i;\beta)g(x_i)^{-1/4}, \\
 -\partial_\beta K&=H_{0,x_f}K, \\
-\lim_{\beta\to0^+}K(x_f,x_i;\beta)
-&=\frac{\delta^{(d)}(x_f-x_i)}{\sqrt{g(x_i)}}.
+\lim_{\beta\to0^+}K(x_f,x_i;\beta) &=\frac{\delta^{(d)}(x_f-x_i)}{\sqrt{g(x_i)}}.
 \end{align}$$
 
-the path integral must reproduce these results. These two conditions, rather than a formal continuum Lagrangian, fix the required finite local terms. and there are three equivalent approaches:
+The path integral must reproduce these results. These two conditions, rather than a formal continuum Lagrangian, fix the required finite local terms. And there are three equivalent approaches:
 
-## time slicing method
+## Time Slicing Method
 
-set $\displaystyle{\beta=N\varepsilon}$ and insert $\displaystyle{N-1}$ position resolutions and $\displaystyle{N}$ momentum resolutions into $\displaystyle{e^{-\beta \tilde{H}_{0}}}$. here we choose Weyl-ordered Hamiltonian, then the one-step kernel is
+Set $\displaystyle{\beta=N\varepsilon}$ and insert $\displaystyle{N-1}$ position resolutions and $\displaystyle{N}$ momentum resolutions into $\displaystyle{e^{-\beta \tilde{H}_{0}}}$. Here we choose Weyl-ordered Hamiltonian, then the one-step kernel is
 
 $$\begin{align}
 \tilde{K}_{\varepsilon}(x_{k+1},x_{k}) & =\int \dfrac{\mathrm{d}^{d}p_{k}}{(2\pi)^{d}}\exp\left(ip_{ki}\Delta x_{k}^{i}-\varepsilon H_{W}(p_{k},\bar{x}_{k})\right)+\mathcal{O}(\varepsilon ^{2})
@@ -85,7 +82,7 @@ H_{W}(x,p) & =\dfrac{1}{2}g^{ij}(x)p_{i}p_{j}+V(x)+\dfrac{1}{8}(R+g^{ij}\Gamma ^
 
 and the last term $\displaystyle{V_{\mathrm{TS}}(x)=\dfrac{1}{8}(R+g^{ij}\Gamma ^{l}_{~ik}\Gamma ^{k}_{~jl})}$ is the time-slicing counterterm.
 
-the $\displaystyle{p_{k}}$ integrals are finite-dimensional Gaussians. integrating out momenta gives the half-density kernel
+The $\displaystyle{p_{k}}$ integrals are finite-dimensional Gaussians. Integrating out momenta gives the half-density kernel
 
 $$\begin{align}
 \tilde{K}_{N}(x_{f},x_{i};\beta) & =\int \prod ^{N-1}_{k=1} \mathrm{d}^{d}x_{k} \prod ^{N-1}_{k=0} \sqrt{ \dfrac{g(\bar{x}_{k})}{(2\pi \varepsilon)^{d}} } \\
@@ -100,16 +97,15 @@ K_{N}(x_{f},x_{i};\beta) & =g(x_{f})^{-1/4}\tilde{K}_{N}(x_{f},x_{i};\beta)g(x_{
 
 the continuum limit is defined by $\displaystyle{N\to \infty}$ at fixed $\displaystyle{\beta}$.
 
-### time-slicing contact rules
+### Time-Slicing Contact Rules
 
-the time lattice fixes equal-time products before the continuum limit is taken. to state the rule on the dimensionless interval $\displaystyle{-1\leq\tau\leq0}$, divide it into $\displaystyle{N}$ slices of width $\displaystyle{\epsilon _{\tau}=1/N}$. continuum integrals and delta functions are the shorthand
+The time lattice fixes equal-time products before the continuum limit is taken. To state the rule on the dimensionless interval $\displaystyle{-1\leq\tau\leq0}$, divide it into $\displaystyle{N}$ slices of width $\displaystyle{\epsilon _{\tau}=1/N}$. Continuum integrals and delta functions are the shorthand
 
 $$\begin{align}
-\int_{-1}^{0}\mathrm{d}\tau & \longleftrightarrow \epsilon _{\tau}\sum_{n=1}^{N}, &
-\delta(\tau_{n}-\tau_{m}) & \longleftrightarrow \frac{\delta _{nm}}{\epsilon _{\tau}}.
+\int_{-1}^{0}\mathrm{d}\tau & \longleftrightarrow \epsilon _{\tau}\sum_{n=1}^{N}, & \delta(\tau_{n}-\tau_{m}) & \longleftrightarrow \frac{\delta _{nm}}{\epsilon _{\tau}}.
 \end{align}$$
 
-the midpoint prescription inherited from Weyl ordering gives the lattice step function
+The midpoint prescription inherited from Weyl ordering gives the lattice step function
 
 $$\begin{align}
 \theta _{nm} & =
@@ -120,42 +116,35 @@ $$\begin{align}
 \end{cases}
 \end{align}$$
 
-in particular, $\displaystyle{\theta(0)=1/2}$. therefore the time-slicing prescription assigns
+In particular, $\displaystyle{\theta(0)=1/2}$. Therefore the time-slicing prescription assigns
 
 $$\begin{aligned}
-I_{\mathrm{TS}}
-&=\int_{-1}^{0}\mathrm{d}\tau\,\mathrm{d}\sigma\,
-\delta(\tau-\sigma)\theta(\tau-\sigma)\theta(\sigma-\tau) \\
-&\longleftrightarrow
-\epsilon _{\tau}^{2}\sum_{n,m=1}^{N}
-\frac{\delta _{nm}}{\epsilon _{\tau}}\theta _{nm}\theta _{mn} \\
-&=\epsilon _{\tau}\sum_{n=1}^{N}\left(\frac{1}{2}\right)^{2}
-=\frac{1}{4}.
+I_{\mathrm{TS}} &=\int_{-1}^{0}\mathrm{d}\tau\,\mathrm{d}\sigma\, \delta(\tau-\sigma)\theta(\tau-\sigma)\theta(\sigma-\tau) \\
+&\longleftrightarrow \epsilon _{\tau}^{2}\sum_{n,m=1}^{N} \frac{\delta _{nm}}{\epsilon _{\tau}}\theta _{nm}\theta _{mn} \\
+&=\epsilon _{\tau}\sum_{n=1}^{N}\left(\frac{1}{2}\right)^{2} =\frac{1}{4}.
 \end{aligned}$$
 
-this value cannot be obtained by treating the integrand as a product of ordinary continuum functions. for example, using $\displaystyle{\delta(x)=\mathrm{d}\theta(x)/\mathrm{d}x}$ and $\displaystyle{\theta(-x)=1-\theta(x)}$ before specifying a regulator would instead assign the contact factor
+This value cannot be obtained by treating the integrand as a product of ordinary continuum functions. For example, using $\displaystyle{\delta(x)=\mathrm{d}\theta(x)/\mathrm{d}x}$ and $\displaystyle{\theta(-x)=1-\theta(x)}$ before specifying a regulator would instead assign the contact factor
 
 $$\begin{align}
-\int\mathrm{d}x\,\delta(x)\theta(x)\theta(-x)
-&\longrightarrow\int_{0}^{1}\mathrm{d}u\,u(1-u)=\frac{1}{6}.
+\int\mathrm{d}x\,\delta(x)\theta(x)\theta(-x) &\longrightarrow\int_{0}^{1}\mathrm{d}u\,u(1-u)=\frac{1}{6}.
 \end{align}$$
 
-this manipulation defines a different extension of the singular product, not the time-slicing prescription. in time slicing one first evaluates the finite lattice sums and only then takes $\displaystyle{N\to\infty}$.
+This manipulation defines a different extension of the singular product, not the time-slicing prescription. In time slicing one first evaluates the finite lattice sums and only then takes $\displaystyle{N\to\infty}$.
 
-these contact products appear in perturbation theory because the differentiated coordinate propagator contains a delta function:
+These contact products appear in perturbation theory because the differentiated coordinate propagator contains a delta function:
 
 $$\begin{align}
-\partial _{\tau}\partial _{\sigma}\Delta(\tau,\sigma)
-&=1-\delta(\tau-\sigma).
+\partial _{\tau}\partial _{\sigma}\Delta(\tau,\sigma) &=1-\delta(\tau-\sigma).
 \end{align}$$
 
-when derivative vertices and measure-ghost contractions are combined, products such as $\displaystyle{\delta\theta\theta}$ occur. the rules above are the continuum diagrammatic notation for the original finite lattice definition; they are not an additional physical assumption or a new counterterm.
+When derivative vertices and measure-ghost contractions are combined, products such as $\displaystyle{\delta\theta\theta}$ occur. The rules above are the continuum diagrammatic notation for the original finite lattice definition; they are not an additional physical assumption or a new counterterm.
 
-## configuration-space measure and measure ghosts, background expansion.
+## Configuration-Space Measure and Measure Ghosts, Background Expansion.
 
-to define mode/dimensional regularization or to do continuum Feynman diagrams of time-slicing, we introduce the following contents.
+To define mode/dimensional regularization or to do continuum Feynman diagrams of time-slicing, we introduce the following contents.
 
-the momentum integration produces one factor of $\displaystyle{\sqrt{ g }}$ per time slice. formally, by introducing a commuting field $\displaystyle{a^{i}}$ and anticommuting Lee-Yang ghost fields $\displaystyle{b^{i},c^{i}}$, we have
+The momentum integration produces one factor of $\displaystyle{\sqrt{ g }}$ per time slice. Formally, by introducing a commuting field $\displaystyle{a^{i}}$ and anticommuting Lee-Yang ghost fields $\displaystyle{b^{i},c^{i}}$, we have
 
 $$\begin{align}
 \prod _{t}\sqrt{ g(x(t)) } & =\prod _{t}\mathrm{d}a^{i}\mathrm{d}b^{i}\mathrm{d}c^{i}\exp\left(-S_{\mathrm{gh}}[x,a,b,c]\right) \\
@@ -164,7 +153,7 @@ S_{\mathrm{gh}} & =\dfrac{1}{2}\int \mathrm{d}tg_{ij}(x)(a^{i}a^{j}+b^{i}c^{j})
 
 the local propagators of Lee-Yang ghosts cancel the ultraviolet contact terms that arise when two derivatives in $g_{ij}(x)\dot x^i\dot x^j$ are contracted.
 
-rescale physical Euclidean time as
+Rescale physical Euclidean time as
 
 $$\begin{align}
 t & =\beta \tau, & -1\leqslant\tau\leqslant 0
@@ -211,7 +200,7 @@ $$\begin{align}
 \Delta(\tau,\sigma) & =\tau(\sigma+1)\theta(\tau-\sigma)+\sigma(\tau+1)\theta(\sigma-\tau)
 \end{align}$$
 
-and the meaning of $\displaystyle{\Delta _{\mathrm{gh}}}$ and of derivatives of $\displaystyle{\Delta}$ depends on the regulator. at 2-loop order the relevant expansion is schematically
+and the meaning of $\displaystyle{\Delta _{\mathrm{gh}}}$ and of derivatives of $\displaystyle{\Delta}$ depends on the regulator. At 2-loop order the relevant expansion is schematically
 
 $$\begin{align}
 \braket{ e^{-(S_{3}+S_{4}+\dots)} }_{0} & =1-\braket{ S_{3} } _{0}-\braket{ S_{4} } _{0}+\dfrac{1}{2}\braket{ S^{2}_{3} } _{0}+\dots
@@ -221,7 +210,7 @@ Odd Gaussian contractions set $\langle S_3\rangle_0=0$ when the endpoint displac
 
 ## Mode Regularization
 
-expand every fluctuation field in Dirichlet sine modes
+Expand every fluctuation field in Dirichlet sine modes
 
 $$\begin{align}
 q^{i}(\tau) & =\sum ^{M}_{m=1}q^{i}_{m}\sin(\pi m\tau) \\
@@ -239,10 +228,7 @@ $$\begin{align}
 
 every Wick contraction and integration by parts is performed at finite $\displaystyle{M}$, and only after all terms have been combined is the limit $\displaystyle{M\to \infty}$ taken.
 
-
-
-
-### 5.2 Determining the MR Counterterm
+### Determining the MR Counterterm
 
 Mode regularization is fixed by requiring that its short-time transition kernel generate the chosen Schrödinger equation. Let $K_M$ denote the kernel computed from the naive metric action and measure ghosts. Its action on an arbitrary scalar wave function is
 
@@ -262,49 +248,43 @@ $$\begin{align}
 \Delta V_{\mathrm{eff}}^{\mathrm{MR}} =-\frac{1}{8}R +\frac{1}{24}g^{ij}g^{kl}g_{mn}\Gamma_{ik}{}^m\Gamma_{jl}{}^n.
 \end{align}$$
 
-To recover $\widehat H_0=-\Delta_g/2$, add the negative of this mismatch to the Euclidean action:
+To recover $H_0=-\Delta_g/2$, add the negative of this mismatch to the Euclidean action:
 
 $$\begin{align}
-\boxed{ V_{\mathrm{MR}} =\frac{1}{8}R -\frac{1}{24}g^{ij}g^{kl}g_{mn}\Gamma_{ik}{}^m\Gamma_{jl}{}^n
-}.
+V_{\mathrm{MR}} & =\dfrac{1}{8}R-\dfrac{1}{24}g^{ij}g^{kl}g_{mn}\Gamma ^{m}_{~ik}\Gamma ^{n}_{~jl}
 \end{align}$$
 
-The matching uses the complete order-$\beta$ contribution from $-\langle S_4\rangle_0+\langle S_3^2\rangle_0/2$, including measure-ghost diagrams and endpoint-measure terms. It is not obtained by retaining only the divergent part of one diagram.
+The matching uses the complete order-$\beta$ contribution from $-\langle S_4\rangle_0+\langle S_3^2\rangle_0/2$, including measure-ghost diagrams and endpoint-measure terms.
 
-Worldline power counting makes the distributional ambiguities a one- and two-loop problem. Higher-loop diagrams are convergent, while the finite local term is already fixed by the two-loop Schrödinger matching. A three-loop trace-anomaly calculation provides an independent check of the same MR counterterm.
+## Dimensional Regularization on a Finite Interval
 
-## 6. Dimensional Regularization on a Finite Interval
-
-### 6.1 Definition
-
-Ordinary dimensional regularization assumes translation invariance, whereas the original time coordinate has a finite interval and Dirichlet endpoints. The finite-interval prescription keeps $\tau\in[-1,0]$ and adds $D$ noncompact auxiliary coordinates
+Keep the finite-interval prescription $\displaystyle{\tau \in[-1,0]}$ and adds $\displaystyle{D}$ non-compact auxiliary coordinates
 
 $$\begin{align}
-\mathbf t=(t^1,\ldots,t^D)\in\mathbb R^D.
+\vec{t} & =(t^{1},\dots,t^{D})\in \mathbb{R}^{D}
 \end{align}$$
 
-The total temporary dimension is $D+1$, and the limit is $D\to0$. Let $T^\mu=(\tau,\mathbf t)$. Keeping the same rescaled-time factors as in the common background expansion, the regulated action is
+the total temporary dimension is $\displaystyle{D+1}$. Let $\displaystyle{T^{\mu}=(\tau,\vec{t})}$. Keeping the same rescaled-time factors as in the common background expansion, the regulated action
 
 $$\begin{align}
-S_D[x,a,b,c] =\frac1{2\beta}\int\mathrm{d}\tau\,\mathrm{d}^D\mathbf t\, g_{ij}(x)\left(\partial_\mu x^i\partial^\mu x^j+a^ia^j+b^ic^j\right) +\beta\int\mathrm{d}\tau\,\mathrm{d}^D\mathbf t\,V_{\mathrm{DR}}(x).
+S_{D}[x,a,b,c] & =\dfrac{1}{2\beta}\int \mathrm{d}\tau \mathrm{d}^{d}\vec{t}g_{ij}(x)(\partial _{\mu}x^{i}\partial ^{\mu}x^{j}+a^{i}a^{j}+b^{i}c^{j})+\beta \int \mathrm{d}\tau \mathrm{d}^{D}\vec{t}(V(x)+V_{\mathrm{DR}}(x))
 \end{align}$$
 
-The coordinate propagator is
+the coordinate propagator is
 
 $$\begin{align}
-\Delta_D(T,S) =\int\frac{\mathrm{d}^D\mathbf k}{(2\pi)^D}
-\sum_{n=1}^{\infty} \frac{-2\sin(\pi n\tau)\sin(\pi n\sigma) e^{i\mathbf k\cdot(\mathbf t-\mathbf s)}}{(\pi n)^2+\mathbf k^2}.
+\Delta _{D}(T,S) & =\int \dfrac{\mathrm{d}^{D}\vec{k}}{(2\pi)^{D}}\sum ^{\infty}_{n=1} -\dfrac{2\sin(\pi n\tau)\sin(\pi n\sigma)e^{i\vec{k}\cdot(\vec{t}-\vec{s})}}{\pi ^{2}n^{2}+\vec{k}^{2}}
 \end{align}$$
 
-It satisfies
+which satisfies
 
 $$\begin{align}
-\partial_\mu\partial^\mu\Delta_D(T,S) =\delta(\tau-\sigma)\delta^{(D)}(\mathbf t-\mathbf s).
+\partial ^{2}\Delta _{D}(T,S) & =\delta(\tau-\sigma)\delta ^{(D)}(\vec{t}-\vec{s})
 \end{align}$$
 
 The mode sum is handled as in finite-temperature field theory, while the continuous $\mathbf k$ integrals and index contractions are treated by ordinary dimensional regularization. Integration by parts is performed in $D+1$ dimensions before analytically continuing to $D\to0$.
 
-### 6.2 Representative Two-Loop Integrals
+### Representative Two-Loop Integrals
 
 The different schemes disagree on a small set of integrals containing three differentiated propagators. Write $\partial^T_\mu$ and $\partial^S_\nu$ for derivatives with respect to the first and second propagator arguments. Two representative integrals are
 
@@ -340,7 +320,7 @@ B_4^{\mathrm{DR}} &=\int\mathrm{d}^{D+1}T\,\mathrm{d}^{D+1}S\, (\partial^T_\mu\D
 
 The same formal integration by parts cannot be transplanted into TS or MR after the regulator has been removed; their regulated distribution products have different values.
 
-### 6.3 Determining the DR Counterterm
+### Determining the DR Counterterm
 
 The complete two-loop kernel is obtained by multiplying each regulated integral by its metric tensor structure and including the measure ghosts. Finite-interval DR preserves target-space covariance, so no noncovariant $\Gamma\Gamma$ counterterm is required. Matching the resulting kernel to the same Laplace--Beltrami Hamiltonian fixes the remaining covariant local term:
 
@@ -350,7 +330,7 @@ $$\begin{align}
 
 The fact that DR has no noncovariant counterterm does not mean that its individual diagrams agree with TS or MR. The table above shows that they do not. Only the sum of all diagrams and the scheme-specific counterterm agrees.
 
-## 7. Unified Interpretation of the Counterterms
+## Unified Interpretation of the Counterterms
 
 For a regulator $\mathcal R$, let the naive regulated path integral generate
 
@@ -384,7 +364,7 @@ The noncovariant terms are allowed because TS and MR do not preserve target-spac
 
 In the present $\hbar=1$ convention, these are finite two-loop counterterms. They encode the combined effect of operator ordering and the extension of singular products; they are not merely subtractions of a logarithmic divergence as in an ordinary renormalizable field theory.
 
-## 8. Correlators and the Continuum Limit
+## Correlators and the Continuum Limit
 
 For any of the three schemes, a regulated correlator has the form
 
@@ -409,7 +389,7 @@ $$\begin{align}
 
 with periodic identification for a thermal trace. Thus the lattice correlator can be calculated directly by quadrature, transfer-matrix methods, or Monte Carlo before taking the continuum limit.
 
-## 9. One-Dimensional Target Space
+## One-Dimensional Target Space
 
 Let
 
@@ -462,7 +442,7 @@ V_{\mathrm{DR}}&=0.
 
 Thus no explicit scheme counterterm contributes at $O(\lambda)$. The first explicit difference appears at $O(\lambda^2)$, where it must be combined with the two-loop derivative-interaction and measure-ghost diagrams. The absence of an $O(\lambda)$ counterterm does not permit one to omit the position-dependent measure or its contact contractions at that order.
 
-## 10. What Is and Is Not Regulator Dependence
+## What Is and Is Not Regulator Dependence
 
 The following quantities may depend on the regulator:
 
@@ -485,10 +465,3 @@ Ordering dependence is different. Replacing $\widehat H_0$ by $\widehat H_\xi$ c
 - F. Bastianelli, K. Schalm and P. van Nieuwenhuizen, [Mode regularization, time slicing, Weyl ordering and phase space path integrals for quantum mechanical nonlinear sigma models](https://arxiv.org/abs/hep-th/9801105).
 - F. Bastianelli and O. Corradini, [On Mode Regularization of the Configuration Space Path Integral in Curved Space](https://arxiv.org/abs/hep-th/9810119).
 - F. Bastianelli, O. Corradini and P. van Nieuwenhuizen, [Dimensional regularization of nonlinear sigma models on a finite time interval](https://arxiv.org/abs/hep-th/0008045).
-
-## Verification Status
-
-- **Literature-checked:** the TS Weyl counterterm, the MR Schrödinger matching, the finite-interval DR construction, the representative two-loop integral values, and the three scheme counterterms were checked against rendered formula pages and extracted text from the two cited local PDFs.
-- **Verified:** Mathematica independently reproduces the one-dimensional Weyl symbol $p^2/(2G)+(G')^2/(32G^3)$, the cubic and quartic background-expansion vertices, and the one-dimensional contractions giving $V_{\mathrm{TS}}=(G')^2/(32G^3)$ and $V_{\mathrm{MR}}=-(G')^2/(96G^3)$, with $V_{\mathrm{DR}}=0$ because $R=0$ in one dimension.
-- **Assumptions:** $g_{ij}$ is smooth and positive definite on the region sampled by the paths; the fixed-endpoint kernel uses Dirichlet fluctuations; the displayed counterterms target the scalar Laplace--Beltrami Hamiltonian with $\xi=0$.
-- **Not independently machine-verified:** the complete general-$d$ two-loop tensor contractions leading to the MR and DR counterterms were not rederived from scratch. Their coefficients are taken from the cited calculations and were checked against the visible PDF equations.

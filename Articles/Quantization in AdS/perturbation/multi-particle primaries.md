@@ -31,7 +31,7 @@ $$\begin{align}
 E_{N;p,q} & =N\Delta+p+q, & L_{N;p,q} & =q-p
 \end{align}$$
 
-## Character formula for every multiplicity
+## Character Formula for Every Multiplicity
 
 The 1-particle character is
 
@@ -84,7 +84,7 @@ P_{2}(x,y) & =\dfrac{1+xy}{(1-x^{2})(1-y^{2})}=\sum _{p,q\geqslant 0,p+q|2}x^{p}
 \mathrm{Sym}^{2}\mathcal{H}_{1} & =\bigoplus_{p,q\geqslant 0,p+q|2} \mathcal{V}_{\Delta+p,\Delta+q}
 \end{align}$$
 
-## Construction of multi-particle primaries and descendants
+## Construction of Multi-Particle Primaries and Descendants
 
 The $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ generators can be represented as
 
@@ -132,7 +132,7 @@ E_{N;p,q;r,s} & =N\Delta+p+q+r+s \\
 L_{N;p,q;r,s} & =q-p+s-r
 \end{align}$$
 
-## 2-particle primaries
+## 2-Particle Primaries
 
 For a 2-particle primary $\displaystyle{\ket{n,\ell \in2\mathbb{Z}}_{2}}$, we introduce
 

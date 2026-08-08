@@ -1,8 +1,8 @@
-# CPS-pAQFT quantum perturbation theory: conceptual companion
+# CPS-pAQFT Quantum Perturbation Theory: Conceptual Companion
 
 日期：2026-07-09
 
-## 0. Direct verdict
+## 0. Direct Verdict
 
 本文是概念伴随笔记和一致性后端，不是默认的实际计算 pipeline。固定背景标量的 loop 计算统一使用 `../cps canonical quantization to loop corrections.md` 中的 CPS-normalized modes、propagators 和 Wick contractions；本笔记负责说明这些计算对应的 off-shell algebra、local renormalization 和 Ward constraints。
 
@@ -29,7 +29,7 @@ $$\begin{align}
 具体计算虽取 $\hbar=1$，tree/loop order 仍由图拓扑区分。量子微扰的一致性数据来自：
 
 1. free CPS symplectic form 的 inverse，即 Peierls causal propagator；
-2. 由它定义的 CCR/\(\star\)-product；
+2. 由它定义的 CCR/$\star$-product；
 3. renormalized time-ordered products；
 4. Bogoliubov retarded products；
 5. Ward identities 和 possible anomalies。
@@ -52,15 +52,15 @@ $$\begin{align}
 S(V)=\exp_T\left(\frac{i}{\hbar}V\right).
 \end{align}$$
 
-等价地，对线性插入 \(F\) 可把导数记作
+等价地，对线性插入 $F$ 可把导数记作
 
 $$\begin{align}
 R_V(F) =S(V)^{-1}_{\star}\star\big(S(V)\cdot_T F\big),
 \end{align}$$
 
-但严格定义应使用上面的 relative \(S\)-matrix derivative。
+但严格定义应使用上面的 relative $S$-matrix derivative。
 
-## 1. Classical CPS data
+## 1. Classical CPS Data
 
 给定背景 spacetime $M$、作为理论定义一部分的边界条件 $\mathcal B$、相应边界作用量和 classical action
 
@@ -92,7 +92,7 @@ $$\begin{align}
 \Omega_\Sigma(\delta_1\phi,\delta_2\phi) =\int_\Sigma \omega(\phi;\delta_1\phi,\delta_2\phi).
 \end{align}$$
 
-在线性理论中，\(E\) 是 \(\Omega\) 的 inverse，意义是：
+在线性理论中，$E$ 是 $\Omega$ 的 inverse，意义是：
 
 $$\begin{align}
 \{F,G\}_{\rm P} =\left\langle F^{(1)}, E\,G^{(1)}\right\rangle.
@@ -114,21 +114,21 @@ $$\begin{align}
 
 > CPS 不只是给 mode normalization；它给出 Peierls bracket，也就是量子代数的 commutator kernel。
 
-## 2. Free quantum algebra
+## 2. Free Quantum Algebra
 
-选择一个 Hadamard two-point function 或 Hadamard parametrix \(H\)，满足 antisymmetric part 固定为 causal propagator：
+选择一个 Hadamard two-point function 或 Hadamard parametrix $H$，满足 antisymmetric part 固定为 causal propagator：
 
 $$\begin{align}
 H(x,y)-H(y,x)=iE(x,y).
 \end{align}$$
 
-定义 Wick/\(\star\)-product。对 regular functionals 可写为
+定义 Wick/$\star$-product。对 regular functionals 可写为
 
 $$\begin{align}
 F\star_H G =m\circ \exp\left[ \hbar\left\langle H, \frac{\delta}{\delta\phi}\otimes \frac{\delta}{\delta\phi} \right\rangle \right] (F\otimes G),
 \end{align}$$
 
-其中 \(m\) 是 pointwise multiplication。归一化条件是
+其中 $m$ 是 pointwise multiplication。归一化条件是
 
 $$\begin{align}
 [\Phi(f),\Phi(g)]_{\star_H} =i\hbar E(f,g).
@@ -136,13 +136,13 @@ $$\begin{align}
 
 注意：
 
-- \(\Omega\) 或 \(E\) 固定 commutator；
-- \(H\) 还包含 state/normal-ordering choice；
-- 不同 \(H\) 给同构的 Wick algebras，但 normal ordering 形式不同。
+- $\Omega$ 或 $E$ 固定 commutator；
+- $H$ 还包含 state/normal-ordering choice；
+- 不同 $H$ 给同构的 Wick algebras，但 normal ordering 形式不同。
 
 因此 CPS 给出 canonical algebra 的 symplectic/commutator 部分；Hadamard choice 给出具体 Wick representation。
 
-## 3. Time-ordered products and renormalization
+## 3. Time-Ordered Products and Renormalization
 
 量子微扰还需要 time-ordered product
 
@@ -176,15 +176,15 @@ Time-ordered products 必须满足：
 
 这是 quantum perturbation layer 的真正位置。Classical tree expansion 不包含这些 extension/counterterm choices。
 
-## 4. Interacting observables: Bogoliubov map
+## 4. Interacting Observables: Bogoliubov Map
 
-Interaction \(V\) 先取 compact support，或加 cutoff \(\chi\)：
+Interaction $V$ 先取 compact support，或加 cutoff $\chi$：
 
 $$\begin{align}
 V_\chi[\phi]=\int_M \chi(x)\mathcal L_{\rm int}(x).
 \end{align}$$
 
-定义 relative \(S\)-matrix：
+定义 relative $S$-matrix：
 
 $$\begin{align}
 S_V(F):=S(V)^{-1}_\star\star S(V+F).
@@ -206,7 +206,7 @@ R_V(F) =\sum_{n\ge0}\frac{1}{n!} R_{n,1}(V^{\otimes n};F).
 
 - retarded support；
 - time ordering；
-- \(\star\)-inverse；
+- $\star$-inverse；
 - quantum contractions；
 - renormalization。
 
@@ -218,21 +218,21 @@ R_V\!\left(\left\langle\frac{\delta S_0}{\delta\phi},f\right\rangle+\left\langle
 
 只有在商掉 free EOM ideal 之后，右端才等于零。因此 $R_V(\delta(S_0+V)/\delta\phi)=0$ 是 on-shell quotient statement，不是 off-shell identity；composite-field normalization、cutoff derivatives 和 boundary terms 仍须按具体例子加入。
 
-## 5. Classical limit and tree diagrams
+## 5. Classical Limit and Tree Diagrams
 
-当 \(\hbar\to0\) 时，
+当 $\hbar\to0$ 时，
 
 $$\begin{align}
 R_V(F) =R_V^{\rm cl}(F)+O(\hbar).
 \end{align}$$
 
-这里 \(R_V^{\rm cl}\) 等于 classical retarded Moller map 对 observable 的作用：
+这里 $R_V^{\rm cl}$ 等于 classical retarded Moller map 对 observable 的作用：
 
 $$\begin{align}
 R_V^{\rm cl}(F)=F\circ r_V,
 \end{align}$$
 
-其中 \(r_V\) 是由 interacting EOM 到 free EOM 的 retarded classical map，或其 inverse convention。
+其中 $r_V$ 是由 interacting EOM 到 free EOM 的 retarded classical map，或其 inverse convention。
 
 因此：
 
@@ -248,11 +248,11 @@ R_V(F)\big|_{\hbar^0}.
 
 它不是错的；它只是 quantum interacting observable 的 classical shadow。
 
-## 6. Where CPS enters nontrivially
+## 6. Where CPS Enters Nontrivially
 
 CPS 在这套量子 formalism 中至少有五个明确作用。
 
-### 6.1 It defines the Peierls bracket
+### 6.1 It Defines the Peierls Bracket
 
 $$\begin{align}
 \Omega_\Sigma^{-1}=E.
@@ -264,9 +264,9 @@ $$\begin{align}
 [\Phi(f),\Phi(g)]=i\hbar E(f,g).
 \end{align}$$
 
-没有这一步，\(\star\)-product 的 antisymmetric part 没有 canonical 来源。
+没有这一步，$\star$-product 的 antisymmetric part 没有 canonical 来源。
 
-### 6.2 It fixes mode normalization
+### 6.2 It Fixes Mode Normalization
 
 若
 
@@ -282,29 +282,29 @@ $$\begin{align}
 
 散射振幅中的 external state normalization、LSZ residue、AdS normal mode algebra 都依赖这一点。
 
-### 6.3 It controls boundary conditions
+### 6.3 It Controls Boundary Conditions
 
 Boundary condition 决定：
 
 1. allowed phase space；
 2. symplectic flux 是否消失；
-3. \(E_R,E_A,E\) 是否存在；
+3. $E_R,E_A,E$ 是否存在；
 4. Hadamard two-point functions 的 admissible class；
 5. possible edge modes and boundary charges。
 
 在 AdS 或 finite boundary 问题中，这一步不是装饰，而是量子代数定义的一部分。
 
-### 6.4 It detects degeneracy and constraints
+### 6.4 It Detects Degeneracy and Constraints
 
-若 \(\Omega\) 有 kernel，则必须：
+若 $\Omega$ 有 kernel，则必须：
 
 - quotient proper gauge；
 - or use BV-BRST；
 - or keep edge/large gauge modes。
 
-没有处理 kernel 时，\(\Omega^{-1}\) 不存在，\(\star\)-product 也无定义。
+没有处理 kernel 时，$\Omega^{-1}$ 不存在，$\star$-product 也无定义。
 
-### 6.5 It provides the charge variation
+### 6.5 It Provides the Charge Variation
 
 Classically:
 
@@ -314,7 +314,7 @@ $$\begin{align}
 
 Quantum mechanically, this becomes Ward identity and charge commutator 的 classical input。
 
-## 7. Local Ward identities and conditional quantum charges
+## 7. Local Ward Identities and Conditional Quantum Charges
 
 设 classical symmetry variation 为
 
@@ -356,7 +356,7 @@ $$\begin{align}
 
 这里已经使用 $\hbar=1$。否则 local Ward identity 和 balance law 仍有意义，但不能声称已经构造出 integrated symmetry generator。ABJ 和 boundary anomaly 属于 local Ward layer；它们不可能从 classical tree solution 本身产生。
 
-## 8. Scattering, correlators, and the adiabatic limit
+## 8. Scattering, Correlators, and the Adiabatic Limit
 
 在 flat spacetime 且有合适 mass gap/IR control 时，可尝试移除 cutoff：
 
@@ -364,7 +364,7 @@ $$\begin{align}
 \chi\to1.
 \end{align}$$
 
-散射矩阵由 \(S(V)\) 或相对 \(S\)-matrix 给出。Correlation functions 由 state \(\omega\) 作用于 interacting observables：
+散射矩阵由 $S(V)$ 或相对 $S$-matrix 给出。Correlation functions 由 state $\omega$ 作用于 interacting observables：
 
 $$\begin{align}
 \omega\big(R_V(F_1)\star\cdots\star R_V(F_n)\big).
@@ -372,15 +372,15 @@ $$\begin{align}
 
 普通 Feynman diagrams 的来源：
 
-- vertices 来自 \(V\)；
+- vertices 来自 $V$；
 - propagators 来自 time-ordered contractions；
-- commutators/causal support 来自 \(E\)；
-- loops 来自 \(\star\)- and \(T\)-contractions；
-- counterterms 来自 renormalized \(T_n\)。
+- commutators/causal support 来自 $E$；
+- loops 来自 $\star$- and $T$-contractions；
+- counterterms 来自 renormalized $T_n$。
 
-Tree amplitudes 是 \(\hbar^0\) 或 leading connected contribution；loop amplitudes 是更高 \(\hbar\)。
+Tree amplitudes 是 $\hbar^0$ 或 leading connected contribution；loop amplitudes 是更高 $\hbar$。
 
-## 9. Deferred scope marker: gauge theory and gravity
+## 9. Deferred Scope Marker: Gauge Theory and Gravity
 
 以下内容仅保留为未来扩展的范围提示，不属于当前 formalism 的 object chain、examples 或 completion criteria。
 
@@ -388,7 +388,7 @@ Tree amplitudes 是 \(\hbar^0\) 或 leading connected contribution；loop amplit
 
 原因：
 
-1. classical \(\Omega\) presymplectic，有 gauge kernel；
+1. classical $\Omega$ presymplectic，有 gauge kernel；
 2. linearized operator gauge-degenerate，不可直接取 inverse；
 3. ghost/antifield sector 参与 Ward identities；
 4. physical observables 是 BRST cohomology；
@@ -411,16 +411,16 @@ $$\begin{align}
 - asymptotic symmetry algebra；
 - possible central extensions and anomalies。
 
-## 10. AdS and boundaries
+## 10. AdS and Boundaries
 
 AdS 中必须先解决 classical CPS boundary problem：
 
 1. choose standard/alternative/mixed boundary condition；
 2. add necessary boundary counterterms to make variational principle well-defined；
 3. ensure symplectic flux condition；
-4. define \(E_R,E_A\) respecting boundary condition；
+4. define $E_R,E_A$ respecting boundary condition；
 5. choose admissible Hadamard two-point function；
-6. define renormalized \(T_n\) with boundary-compatible extensions；
+6. define renormalized $T_n$ with boundary-compatible extensions；
 7. treat boundary/local counterterms and edge modes。
 
 然后才能定义
@@ -439,7 +439,7 @@ R_V(F)
 - finite-volume-like perturbation theory；
 - relation to CFT boundary correlators。
 
-## 11. Relation to previous tree/CPS notes
+## 11. Relation to Previous tree/CPS Notes
 
 旧 formalism：
 
@@ -479,43 +479,43 @@ R_V(F)\big|_{\hbar^0} =F\circ r_V.
 - renormalization；
 - Ward identities/anomalies。
 
-## 12. Minimal axioms for the program
+## 12. Minimal Axioms for the Program
 
 一个模型要进入这套 CPS-pAQFT formalism，至少要给出以下数据。
 
-### Classical data
+### Classical Data
 
-1. \(S_0,V\)；
+1. $S_0,V$；
 2. allowed configurations；
 3. boundary conditions；
-4. CPS \(\Omega\)；
+4. CPS $\Omega$；
 5. retarded/advanced Green operators；
-6. Peierls bracket \(E\)。
+6. Peierls bracket $E$。
 
-### Quantum free algebra
+### Quantum Free Algebra
 
-1. Hadamard two-point function \(H\)；
-2. \(\star_H\)-product；
+1. Hadamard two-point function $H$；
+2. $\star_H$-product；
 3. field algebra and commutator；
 4. state or representation, if needed。
 
-### Perturbative interaction
+### Perturbative Interaction
 
-1. compactly supported \(V_\chi\)；
-2. renormalized \(T_n\)；
-3. \(S(V)\)；
-4. \(R_V(F)\)；
+1. compactly supported $V_\chi$；
+2. renormalized $T_n$；
+3. $S(V)$；
+4. $R_V(F)$；
 5. adiabatic limit or finite-region interpretation。
 
-### Symmetry layer
+### Symmetry Layer
 
-1. classical \(X_\lambda\)；
-2. classical current \(J_\lambda^\mu\)；
-3. renormalized current \(J_{\lambda,V}^{\mu}\)；
+1. classical $X_\lambda$；
+2. classical current $J_\lambda^\mu$；
+3. renormalized current $J_{\lambda,V}^{\mu}$；
 4. Ward identity；
-5. anomaly \(\mathcal A_\lambda\)。
+5. anomaly $\mathcal A_\lambda$。
 
-## 13. pAQFT backend audit workflow
+## 13. pAQFT Backend Audit Workflow
 
 实际 diagram calculation 使用 canonical/Wick pipeline。对每个模型，本笔记只做以下 consistency audit：
 
@@ -527,7 +527,7 @@ R_V(F)\big|_{\hbar^0} =F\circ r_V.
 6. If a global charge is claimed, separately check integrability, finiteness, adiabatic/IR limits, and flux.
 7. Only then take scattering, AdS boundary, or long-time limits.
 
-## 14. First check: 4d flat \(\phi^3/\phi^4\)
+## 14. First Check: 4d Flat $\phi^3/\phi^4$
 
 The first check uses the simplest nontrivial setting:
 
@@ -537,15 +537,15 @@ V =-\int d^4x\,\chi(x) \left( \frac{g_3}{3!}\phi^3 +\frac{g_4}{4!}\phi^4 \right)
 
 The check is recorded in `flat4_phi3_phi4_paqft_check.md`. It verifies:
 
-1. \(R_V(\phi(x))|_{\hbar^0}\) reproduces retarded classical \(\phi^3/\phi^4\) tree solution.
-2. \(S(V)\) gives the standard four-point tree amplitude:
+1. $R_V(\phi(x))|_{\hbar^0}$ reproduces retarded classical $\phi^3/\phi^4$ tree solution.
+2. $S(V)$ gives the standard four-point tree amplitude:
 
 $$\begin{align}
 \mathcal M_4^{\rm tree} = -g_4 -g_3^2 \left[ \frac{1}{s-m^2} +\frac{1}{t-m^2} +\frac{1}{u-m^2} \right]
 \end{align}$$
 
-   with the usual \(i\epsilon\) prescription and sign convention tied to \(V\).
-3. One-loop corrections arise from contractions in \(T_n\), not from the classical tree map.
+   with the usual $i\epsilon$ prescription and sign convention tied to $V$.
+3. One-loop corrections arise from contractions in $T_n$, not from the classical tree map.
 4. CPS enters by fixing
 
 $$\begin{align}
@@ -556,7 +556,7 @@ $$\begin{align}
 
 This check makes the following consistency requirements mandatory:
 
-1. The interaction functional \(V\) must carry the action sign. For
+1. The interaction functional $V$ must carry the action sign. For
 
 $$\begin{align}
 S=S_0-\int\left(\frac{g_3}{3!}\phi^3+\frac{g_4}{4!}\phi^4\right),
@@ -568,25 +568,25 @@ $$\begin{align}
 V=-\int\left(\frac{g_3}{3!}\phi^3+\frac{g_4}{4!}\phi^4\right).
 \end{align}$$
 
-   This simultaneously gives the retarded EOM sign and the standard \(-ig\) Feynman vertex.
-2. CPS fixes \(E\), not the full Wick two-point function:
+   This simultaneously gives the retarded EOM sign and the standard $-ig$ Feynman vertex.
+2. CPS fixes $E$, not the full Wick two-point function:
 
 $$\begin{align}
 \Omega\Rightarrow E, \qquad (E,H)\Rightarrow \star_H.
 \end{align}$$
 
-   Treating \(H\) as determined by \(\Omega\) is incorrect.
-3. Classical rooted trees and Feynman tree amplitudes are related but not identical objects. The former are \(\hbar^0\) terms in the Bogoliubov interacting field; the latter arise after time ordering, external contractions, and LSZ/amputation.
-4. A switching function \(\chi\) is part of the local construction. Exact spacetime Ward identities hold either with explicit \(\partial\chi\) breaking terms or after a controlled adiabatic limit.
+   Treating $H$ as determined by $\Omega$ is incorrect.
+3. Classical rooted trees and Feynman tree amplitudes are related but not identical objects. The former are $\hbar^0$ terms in the Bogoliubov interacting field; the latter arise after time ordering, external contractions, and LSZ/amputation.
+4. A switching function $\chi$ is part of the local construction. Exact spacetime Ward identities hold either with explicit $\partial\chi$ breaking terms or after a controlled adiabatic limit.
 
 If future checks fail, the most likely failure points are:
 
-- wrong \(V\) sign relative to EOM convention；
-- using \(\Omega_0\) without proving it defines the correct \(E\) under the chosen boundary conditions；
+- wrong $V$ sign relative to EOM convention；
+- using $\Omega_0$ without proving it defines the correct $E$ under the chosen boundary conditions；
 - ignoring cutoff/adiabatic-limit effects；
 - forgetting that local time-ordered products require renormalized extension at coincident points。
 
-## 15. Second check: quantum EOM and Ward identity
+## 15. Second Check: Quantum EOM and Ward Identity
 
 The second check is recorded in `flat4_phi3_phi4_quantum_eom_ward_check.md`. It tests whether the formalism can express the interacting equation of motion and translation Ward identity, not just scattering amplitudes.
 
@@ -604,14 +604,14 @@ R_V\!\left( \left\langle \frac{\delta S_0}{\delta\phi},f\right\rangle +\left\lan
 
 after imposing the Action Ward Identity and choosing renormalized composite fields. Its right-hand side vanishes only in the free-EOM quotient. The check confirms:
 
-1. At \(\hbar^0\), this reduces to the classical retarded EOM and the previous rooted-tree solution.
-2. Acting with \(K_x\) on the two-point function gives the Schwinger-Dyson equation:
+1. At $\hbar^0$, this reduces to the classical retarded EOM and the previous rooted-tree solution.
+2. Acting with $K_x$ on the two-point function gives the Schwinger-Dyson equation:
 
 $$\begin{align}
 K_xG_2(x,y) = i\delta^{(4)}(x-y) +\left\langle T\,R_V\!\left[ \frac{g_3}{2}\phi(x)^2+\frac{g_4}{3!}\phi(x)^3 \right]R_V(\phi(y)) \right\rangle +\text{ct}.
 \end{align}$$
 
-3. The \(\phi^4\) tadpole and \(\phi^3\) bubble are generated by renormalized time-ordered contractions, not by the classical tree map.
+3. The $\phi^4$ tadpole and $\phi^3$ bubble are generated by renormalized time-ordered contractions, not by the classical tree map.
 4. Translation Ward identities with compact switching satisfy
 
 $$\begin{align}
@@ -622,7 +622,7 @@ $$\begin{align}
 
 This check adds a stricter requirement to the formalism:
 
-> A usable CPS-pAQFT formalism must define renormalized local composite fields, not only \(R_V(F)\) for regular or linear observables.
+> A usable CPS-pAQFT formalism must define renormalized local composite fields, not only $R_V(F)$ for regular or linear observables.
 
 The backend consistency ladder is therefore:
 
@@ -638,7 +638,7 @@ $$\begin{align}
 
 For scalar $\phi^3/\phi^4$ in flat spacetime there is no local translation anomaly; remaining local normalization freedom is absorbed into counterterms or improvements. Gauge theory, BV-BRST, and gravity are outside the present scope. Boundary flux remains a separate condition in bounded scalar theories.
 
-## 16. Third check: stress tensor and translation charge
+## 16. Third Check: Stress Tensor and Translation Charge
 
 The third check is recorded in `flat4_phi3_phi4_stress_tensor_charge_check.md`. It tests whether the CPS charge relation actually becomes the quantum charge commutator.
 
@@ -660,7 +660,7 @@ $$\begin{align}
 i[P_\xi^{(0)},\Phi(f)]_\star =-\Phi(\partial_\mu(\xi^\mu f)).
 \end{align}$$
 
-This is a direct check that the CPS symplectic form is doing real work: its inverse fixes the commutator kernel \(E\), and \(\delta P_\xi=\iota_X\Omega\) fixes the charge normalization and sign.
+This is a direct check that the CPS symplectic form is doing real work: its inverse fixes the commutator kernel $E$, and $\delta P_\xi=\iota_X\Omega$ fixes the charge normalization and sign.
 
 In the interacting theory the stress tensor must be renormalized:
 
@@ -690,7 +690,7 @@ $$\begin{align}
 
 for the flat scalar translation case. The note verifies the free generator and local Ward/balance structure; the interacting global statement is conditional on these existence assumptions.
 
-## 17. Fourth check: internal \(U(1)\) current
+## 17. Fourth Check: Internal $U(1)$ Current
 
 The fourth check is recorded in `flat4_complex_phi4_u1_current_check.md`. It tests a genuine internal continuous symmetry using a complex scalar with
 
@@ -740,7 +740,7 @@ $$\begin{align}
 \delta Q=\iota_X\Omega \quad\Longrightarrow\quad \delta A=i[Q,A]_\star.
 \end{align}$$
 
-## 18. Separate background-field illustration: ABJ anomaly
+## 18. Separate Background-Field Illustration: ABJ Anomaly
 
 This illustration is recorded in `flat4_abj_anomaly_cps_paqft_check.md`. It is not part of the present scalar completion claim; it only shows that the local anomaly slot is nonempty in a Dirac fermion model with a nondynamical background $U(1)$ field.
 
@@ -768,23 +768,23 @@ $$\begin{align}
 \partial_\mu j_{5,\rm ren}^\mu = \frac{q^2}{16\pi^2} F_{\mu\nu}\widetilde F^{\mu\nu}
 \end{align}$$
 
-for \(m=0\), with \(2im\bar\psi\gamma_5\psi\) added when \(m\ne0\). Thus the anomaly term in the general formula is concrete:
+for $m=0$, with $2im\bar\psi\gamma_5\psi$ added when $m\ne0$. Thus the anomaly term in the general formula is concrete:
 
 $$\begin{align}
 \mathcal A_5 = \frac{q^2}{16\pi^2} F_{\mu\nu}\widetilde F^{\mu\nu}.
 \end{align}$$
 
-This check confirms that \(\mathcal A_\lambda\) is not a placeholder. It is the local obstruction to implementing a classical symmetry as a quantum Ward identity. It also clarifies that anomaly examples live in the renormalized current/time-ordered-product layer, not in the classical retarded tree map.
+This check confirms that $\mathcal A_\lambda$ is not a placeholder. It is the local obstruction to implementing a classical symmetry as a quantum Ward identity. It also clarifies that anomaly examples live in the renormalized current/time-ordered-product layer, not in the classical retarded tree map.
 
 This is a background-field illustration of the anomaly slot. It is not part of the present scalar completion claim, and dynamical gauge theory remains outside the current scope.
 
-## 19. Current status and remaining in-scope checks
+## 19. Current Status and Remaining In-Scope Checks
 
 The conceptual backend is formulated and benchmarked at six levels:
 
-1. **Classical limit:** \(R_V(F)|_{\hbar^0}\) reproduces retarded rooted trees.
-2. **Scattering:** \(S(V)\) reproduces standard \(\phi^3/\phi^4\) tree amplitudes.
-3. **Quantum EOM/correlators:** tadpoles, bubbles, self-energy, and Schwinger-Dyson terms arise from \(T_n^{\rm ren}\) and local counterterms.
+1. **Classical limit:** $R_V(F)|_{\hbar^0}$ reproduces retarded rooted trees.
+2. **Scattering:** $S(V)$ reproduces standard $\phi^3/\phi^4$ tree amplitudes.
+3. **Quantum EOM/correlators:** tadpoles, bubbles, self-energy, and Schwinger-Dyson terms arise from $T_n^{\rm ren}$ and local counterterms.
 4. **Translation Ward layer:** the free CPS charge generates translations; the interacting benchmark records the local Ward/balance structure, while the global interacting charge is conditional on adiabatic, infrared, domain, and flux assumptions.
 5. **Internal $U(1)$ layer:** the free CPS charge and perturbative charge-flow rule are checked; a Ward-preserving interacting current has no anomaly obstruction, but its integrated global charge is not explicitly constructed.
 6. **Anomaly layer:** the ABJ example separately illustrates a nonzero local anomaly in a background-field model.
