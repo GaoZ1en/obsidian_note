@@ -4,14 +4,14 @@ date: 2026-04-15
 summary: ""
 ---
 
-in this note we will analysis the $\displaystyle{\mathrm{U}(1)}$ gauge theory defined in a finite $\displaystyle{\mathrm{AdS}_{3}}$ spacetime. the spacetime truncated at $\displaystyle{r=r_{0}}$ and the boundary condition is
+In this note we will analysis the $\displaystyle{\mathrm{U}(1)}$ gauge theory defined in a finite $\displaystyle{\mathrm{AdS}_{3}}$ spacetime. The spacetime truncated at $\displaystyle{r=r_{0}}$ and the boundary condition is
 
 $$\begin{align}
 A^{t}|_{r=r_{0}}=0 \\
 A^{\phi}|_{r=r_{0}}=0
 \end{align}$$
 
-and no requirement for $\displaystyle{A^{r}}$. the metric is chosen as
+and no requirement for $\displaystyle{A^{r}}$. The metric is chosen as
 
 $$\begin{align}
 \mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2}, r\leqslant r_{0}
@@ -28,9 +28,9 @@ $$\begin{align}
 
 since the system is no longer conformally invariant, we cannot impose covariant gauge condition $\displaystyle{\nabla _{\mu}A^{\mu}=0}$.
 
-# radial gauge (wrong)
+# Radial Gauge (Wrong)
 
-however, we can choose the radial gauge to simplify the analysis.
+However, we can choose the radial gauge to simplify the analysis.
 
 $$\begin{align}
 A^{r}=0
@@ -42,7 +42,7 @@ $$\begin{align}
 \Lambda & =-\int _{r_{0}}^{r}A_{r}(t,r',\phi )\mathrm{d}r'
 \end{align}$$
 
-which is well-defined since the spacetime is topologically trivial in our case. after imposing the radial gauge, the eom becomes
+which is well-defined since the spacetime is topologically trivial in our case. After imposing the radial gauge, the eom becomes
 
 $$\begin{align}
 (1+r^{2})\partial _{r}^{2}A^{t}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{1+5r^{2}}{r}\partial _{r}A^{t}+4A^{t}+\frac{1}{1+r^{2}}\partial _{t}\partial _{\phi}A^{\phi} & =0 \\
@@ -66,7 +66,7 @@ $$\begin{align}
 
 ---
 
-for possible zero modes with $\displaystyle{\omega=0}$, we can solve the equations directly
+For possible zero modes with $\displaystyle{\omega=0}$, we can solve the equations directly
 
 $$\begin{align}
 (1+r^{2})\partial _{r}^{2}f^{t}+\frac{1+5r^{2}}{r}\partial _{r}f^{t}+4f^{t}-\frac{m^{2}}{r^{2}}f^{t} & =0 \\
@@ -77,7 +77,7 @@ there is no nontrivial solution for $\displaystyle{f^{\mu}}$ that satisfies the 
 
 ---
 
-the constraint equation is more clear in the subscription form, i.e.,
+The constraint equation is more clear in the subscription form, i.e.,
 
 $$\begin{align}
 -i\omega \partial _{r}f_{t}-im \frac{1+r^{2}}{r^{2}}\partial _{r}f_{\phi} & =0
@@ -97,7 +97,7 @@ f^{t} & =g^{tt}f_{t}=-\frac{1}{1+r^{2}}f_{t} \\
 f^{\phi} & =\frac{1}{r^{2}}f_{\phi}
 \end{align}$$
 
-introduce a new variable $\displaystyle{\xi = f_{\phi}'}$ to decouple the equations. these two equations implies the same equation for $\displaystyle{\xi}$ as
+introduce a new variable $\displaystyle{\xi = f_{\phi}'}$ to decouple the equations. These two equations implies the same equation for $\displaystyle{\xi}$ as
 
 $$\begin{align}
 (1+r^{2})\xi''+\frac{-1+5r^{2}}{r}\xi'+\left(3+\frac{\omega ^{2}-4}{1+r^{2}}-\frac{m^{2}-1}{r^{2}}\right)\xi & =0
@@ -128,22 +128,22 @@ $$\begin{align}
 (1+r^{2}_{0})\xi'|_{r_{0}}+\frac{-1+r_{0}^{2}}{r_{0}}\xi|_{r_{0}} & =0
 \end{align}$$
 
-which determines the quantized spectrum of $\displaystyle{\omega}$ for each $\displaystyle{m}$. by numerically solving the above equation for large $\displaystyle{r_{0}}$, we can find the approximate spectrum of the gauge field in this finite AdS system. results are shown in the following figure for $\displaystyle{r_{0}=100}$ and $\displaystyle{m=0, 1, 2}$:
+which determines the quantized spectrum of $\displaystyle{\omega}$ for each $\displaystyle{m}$. By numerically solving the above equation for large $\displaystyle{r_{0}}$, we can find the approximate spectrum of the gauge field in this finite AdS system. Results are shown in the following figure for $\displaystyle{r_{0}=100}$ and $\displaystyle{m=0, 1, 2}$:
 
 ![[Attachments/Pasted image 20260222224204.png]]
 
-this result highly agrees with the spectrum of the gauge field in the infinite AdS system, which is given by
+This result highly agrees with the spectrum of the gauge field in the infinite AdS system, which is given by
 
 $$\begin{align}
 \omega _{nm} & =1+|m_{\pm}|+2n \\
 n & =0,1,2,...,m_{\pm}= m\pm 1
 \end{align}$$
 
-difference between the spectrum of the finite system and the infinite system can (?) be attributed to the finite size effect, and some other subtle effects such as the choice of boundary conditions and on and on...
+difference between the spectrum of the finite system and the infinite system can (?) Be attributed to the finite size effect, and some other subtle effects such as the choice of boundary conditions and on and on...
 
-# temporal gauge
+# Temporal Gauge
 
-analysis above has a fatal error, that the gauge choice cannot be imposed at $\displaystyle{r=0}$, since the gauge transformation parameter $\displaystyle{\Lambda}$ depends on the integral route from $\displaystyle{r_{0}}$ to $\displaystyle{r}$, which is not well-defined at $\displaystyle{r=0}$. a better choice may be the temporal gauge
+Analysis above has a fatal error, that the gauge choice cannot be imposed at $\displaystyle{r=0}$, since the gauge transformation parameter $\displaystyle{\Lambda}$ depends on the integral route from $\displaystyle{r_{0}}$ to $\displaystyle{r}$, which is not well-defined at $\displaystyle{r=0}$. A better choice may be the temporal gauge
 
 $$\begin{align}
 A^{t} & =0
@@ -188,9 +188,9 @@ $$\begin{align}
 -\frac{im(1+r^{2})}{r^{2}}\partial _{r} \dots
 \end{align}$$
 
-## for $\displaystyle{m=0}$
+## For $\displaystyle{m=0}$
 
-for $\displaystyle{m=0}$. we have
+For $\displaystyle{m=0}$. We have
 
 $$\begin{align}
 f^{r} & =0 \\
@@ -218,9 +218,9 @@ $$\begin{align}
 
 where $\displaystyle{\omega _{n}}$ is the $\displaystyle{n}$th smallest zero point of the above equation.
 
-## for $\displaystyle{m\neq 0}$
+## For $\displaystyle{m\neq 0}$
 
-and insert the first equation into the second and third equations, we obtain the unique equation for $\displaystyle{f_{r}}$ as
+And insert the first equation into the second and third equations, we obtain the unique equation for $\displaystyle{f_{r}}$ as
 
 $$\begin{align}
 (1+r^{2})\partial _{r}^{2}f_{r}+\frac{3+5r^{2}}{r}\partial _{r}f_{r}+\left(3+\frac{\omega ^{2}}{1+r^{2}}-\frac{m^{2}-1}{r^{2}}\right)f_{r}=0
@@ -259,9 +259,9 @@ $$\begin{align}
 
 where $\displaystyle{\omega _{nm}}$ is the $\displaystyle{n}$th smallest zero point of the above equation.
 
-## numerical simulation
+## Numerical Simulation
 
-we can numerically solve the above equations to find the spectrum of the gauge field in this finite AdS system. for $\displaystyle{m=0}$, the spectrum is determined by the zero points of the equation
+We can numerically solve the above equations to find the spectrum of the gauge field in this finite AdS system. For $\displaystyle{m=0}$, the spectrum is determined by the zero points of the equation
 
 $$\begin{align}
 {}_{2}F_{1}\left(\frac{2-\omega _{n}}{2},\frac{2+\omega _{n}}{2};1; \frac{1}{1+r_{0}^{2}}\right)=0
@@ -279,4 +279,4 @@ $$\begin{align}
 \omega _{nm} & =1+|m_{\pm}|+2n
 \end{align}$$
 
-## WKB formalism
+## WKB Formalism
