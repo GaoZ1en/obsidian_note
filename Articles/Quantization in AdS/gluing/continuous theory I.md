@@ -315,25 +315,13 @@ This is the endpoint quantization of a single massive scalar on $\displaystyle{[
 
 ---
 
-For Neumann boundary conditions, we have no need for the extra boundary action
-
-$$\begin{align}
-\Delta S & =-\dfrac{1}{2\kappa}\sum _{i}\int _{\partial I_{i}} \mathrm{d}t\phi _{i}^{2}
-\end{align}$$
-
-since from the variation of the action we can read out the Neumann boundary condition directly. The gluing interaction at $\displaystyle{x=0}$
-
-$$\begin{align}
-S_{\text{int}} & =-\dfrac{\kappa}{2}\int \mathrm{d}t(\phi_{1}-\phi_{2})^{2}|_{x=0}
-\end{align}$$
-
-is needed to enforce the continuity condition $\phi_1|_{x=0}=\phi_2|_{x=0}$ and the matching of derivatives $\phi_1'|_{x=0}=\phi_2'|_{x=0}$ in the $\kappa\to\infty$ limit, while the $\kappa\to0$ limit decouples the two intervals into independent Neumann theories. for decoupled theory, the eoms and boundary conditions are
+Unlike the Dirichlet construction, the decoupled Neumann theory requires no boundary-penalty action. Free variation of all four endpoints of the bulk action gives the natural Neumann conditions. The eoms and boundary conditions are
 
 $$\begin{align}
 -\ddot{\phi}_{i}+\phi _{i}''-m^{2}\phi _{i} & =0, & \phi'_{i}|_{\partial I_{i}} & =0
 \end{align}$$
 
-which is read off directly from the boundary term $\displaystyle{\int \mathrm{d}t[\phi'_{i}\delta\phi_{i}]_{\partial I_{i}}}$ of the variation, with no extra boundary action. The complete set of positive-frequency solutions of the eom with Neumann boundary condition is labelled by $\displaystyle{I=(i,n)}$ with $\displaystyle{n=0,1,2,\dots}$, where
+which are read off directly from the explicit endpoint terms in the variation, with no extra boundary action. The complete set of positive-frequency solutions of the eom with Neumann boundary condition is labelled by $\displaystyle{I=(i,n)}$ with $\displaystyle{n=0,1,2,\dots}$, where
 
 $$\begin{align}
 k_{n} & =\dfrac{n\pi}{L}, & \omega _{n} & =\sqrt{ m^{2}+k_{n}^{2} }, & \omega _{0} & =m \\
@@ -378,7 +366,7 @@ $$\begin{align}
 [a_{i,n},a^{\dagger}_{j,m}] & =\delta _{ij}\delta _{nm}
 \end{align}$$
 
-with all other commutators vanishing. The vacuum $\displaystyle{\ket{\Omega}}$ is annihilated by all $\displaystyle{a_{i,n}}$, and the Hilbert space is the product of the Fock spaces of the two Neumann pieces.
+with all other commutators vanishing. The vacuum $\displaystyle{\ket{\Omega}}$ is annihilated by all $\displaystyle{a_{i,n}}$, and the endpoint Hilbert space is the tensor product of the Fock spaces of the two Neumann pieces.
 
 ## Gluing Theories
 
