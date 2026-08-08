@@ -1,4 +1,6 @@
-## Covariant heat kernel
+see 2310.08522 for a general discussion.
+
+## Covariant Heat Kernel
 
 Consider a real Euclidean scalar with
 
@@ -20,7 +22,7 @@ K_{\mathcal O}(s;X,Y) & =\sum _A e^{-s\lambda _A}\psi _A(X)\psi _A^{*}(Y), \\
 \log Z_{\mathrm{cov}} & =-\frac{1}{2}\log\det _g\mathcal O =\frac{1}{2}\int _{0^{+}}^{\infty}\frac{\mathrm{d}s}{s}\operatorname{Tr}_{g}e^{-s\mathcal O}.
 \end{align}$$
 
-## Static slicing and the canonical spatial operator
+## Static Slicing and the Canonical Spatial Operator
 
 Take a static Euclidean metric (shifts are set to 0)
 
@@ -89,7 +91,7 @@ $$\begin{align}
 & =\frac{N(x)}{\sqrt{\sigma(x)}} \delta(\tau-\tau')\delta ^{(d-1)}(x-y).
 \end{align}$$
 
-## Why the kernels differ but the partition functions agree
+## Why the Kernels Differ but the Partition Functions Agree
 
 $\displaystyle{\mathcal{O}}$ and $\displaystyle{\mathcal{D}}$ represent the same quadratic form:
 
@@ -113,7 +115,7 @@ Z_{\mathrm{cov}} & =\left[\det _g\mathcal O\right]^{-1/2} =J_N\left[\det _w\math
 
 $J_N$ is the determinant of a multiplication operator. In the continuum it is regulator dependent and local; possible multiplicative-anomaly terms are local as well. They belong to the normalization of the functional measure and to local counterterms. Thus a canonical calculation that retains the induced Jacobian gives the same partition function as the covariant calculation. If $J_N$ is omitted, the two answers can differ in their local vacuum term, but not in the finite nonlocal thermal contribution.
 
-## Check on thermal AdS$_3$
+## Check on Thermal AdS$_3$
 
 Set the AdS radius to one and use global Euclidean AdS$_3$,
 
@@ -163,7 +165,7 @@ $$\begin{align}
 Hu_{n\ell}=\omega _{n\ell}^{2}u_{n\ell}, \qquad \omega _{n\ell}=\Delta+2n+|\ell|, \qquad n\in\mathbb N_0,\qquad \ell\in\mathbb Z.
 \end{align}$$
 
-### Explicit canonical heat kernel
+### Explicit Canonical Heat Kernel
 
 On the rotating thermal quotient, a separated mode must be invariant under $(\tau,\phi)\mapsto(\tau+\beta,\phi+\vartheta)$. Hence
 
