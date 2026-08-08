@@ -1,42 +1,62 @@
-Consider an interval $\displaystyle{I=[-L,L]}$ with a cut at the origin $\displaystyle{x=0}$, which separate the interval into two intervals
+Consider an interval $\displaystyle{I=[-L,L]}$ with a cut at the origin $\displaystyle{x=0}$, which separates the interval into two intervals
 
 $$\begin{align}
 I_{1} & =[-L,0] \\
 I_{2} & =[0,L]
 \end{align}$$
 
-in each intervals, the action of a massive scalar is given by
+On each interval, the action of a massive scalar with $\displaystyle{m>0}$ is
 
 $$\begin{align}
 S_{i}[\phi _{i}] & =\dfrac{1}{2}\int \mathrm{d}t\int _{I_{i}}\mathrm{d}x\left(\dot{\phi}_{i}^{2}-\phi ^{'2}_{i}-m^{2}\phi _{i}^{2}\right)
 \end{align}$$
 
-take a variation of the action
+We impose homogeneous Dirichlet conditions at the physical outer endpoints from the beginning,
 
 $$\begin{align}
-\delta S_{i} & = \int \mathrm{d}t\int _{I_{i}}\mathrm{d}x\left(-\ddot{\phi}_{i}+\phi''_{i}-m^{2}\phi_{i}\right)\delta\phi_{i} \\
- & +\int\mathrm{d}t\left[\phi'_{i}\delta\phi_{i}\right]_{\partial I_{i}}+\int _{I_{i}} \mathrm{d}x  [\dot{\phi}_{i}\delta \phi _{i}]^{t_{f}}_{t_{i}}
+\phi _1(t,-L) & =0, & \phi _2(t,L) & =0, &
+\delta\phi _1(t,-L) & =0, & \delta\phi _2(t,L) & =0.
 \end{align}$$
 
-for a Dirichlet theory, we add an extra action at the boundary $\displaystyle{\partial I_{i}}$
+The traces at the artificial cut are denoted by
 
 $$\begin{align}
-S_{\mathrm{bdy}} & =-\sum _{i} \dfrac{1}{2\kappa}\int _{\partial I_{i}}\mathrm{d}t \phi _{i}^{2}
+q_i(t) & =\phi _i(t,0).
 \end{align}$$
 
-and take the limit that $\displaystyle{\kappa\to 0}$. This extra term contributes to the variation of the action
+Taking a variation and integrating the spatial derivative by parts gives
 
 $$\begin{align}
-\delta S_{\text{tot}} & =\dots+\sum _{i}\int \mathrm{d}t\left( \phi _{i}'-\dfrac{1}{\kappa} \phi _{i} \right)\delta \phi _{i}|_{\partial I_{i}}
+\delta\sum _{i=1}^{2}S_i
+&=\sum _{i=1}^{2}\int\mathrm{d}t\int_{I_i}\mathrm{d}x
+\left(-\ddot\phi_i+\phi_i''-m^2\phi_i\right)\delta\phi_i
++\sum _{i=1}^{2}\int_{I_i}\mathrm{d}x\,[\dot\phi_i\delta\phi_i]_{t_i}^{t_f} \\
+&\quad+\int\mathrm{d}t\left(
+\phi_1'\delta\phi_1|_{x=-L}-\phi_1'\delta q_1|_{x=0}
++\phi_2'\delta q_2|_{x=0}-\phi_2'\delta\phi_2|_{x=L}
+\right).
 \end{align}$$
 
-we read out the Dirichlet boundary condition $\displaystyle{\phi _{i}|_{\partial I_{i}}=0}$ as $\displaystyle{\kappa\to 0}$. We readout the eoms
+To realize Dirichlet conditions at the artificial cut as a boundary-penalty limit, introduce a fixed scale $\displaystyle{\mu>0}$ with dimension of inverse length and a dimensionless interpolation parameter $\displaystyle{\kappa>0}$, and add
+
+$$\begin{align}
+S_{\mathrm{D}}^{(\kappa)} & =-\dfrac{\mu}{2\kappa}\int\mathrm{d}t\left(q_1^2+q_2^2\right).
+\end{align}$$
+
+At finite $\displaystyle{\kappa}$, free variation of the cut traces gives the Robin conditions
+
+$$\begin{align}
+\phi_1'+\dfrac{\mu}{\kappa}\phi_1\bigg|_{x=0} & =0, &
+\phi_2'-\dfrac{\mu}{\kappa}\phi_2\bigg|_{x=0} & =0.
+\end{align}$$
+
+For a family of configurations with bounded quadratic energy, the $\displaystyle{\kappa\to0}$ limit forces $\displaystyle{q_1=q_2=0}$. Thus homogeneous Dirichlet conditions at the cut are realized as the strong boundary-penalty limit of this Robin family, rather than as a finite-$\displaystyle{\kappa}$ natural boundary condition. At this endpoint, the bulk eoms are
 
 $$\begin{align}
 - \ddot{\phi}_{i}+\phi _{i}''-m^{2}\phi _{i} & =0
 \end{align}$$
 
-and symplectic potentials and symplectic forms
+and the symplectic potentials and symplectic forms are
 
 $$\begin{align}
 \theta _{i} & =\int _{I_{i}}\mathrm{d}x\dot{\phi}_{i}\delta \phi _{i} \\
@@ -87,36 +107,45 @@ $$\begin{align}
 [a_{i,n},a^{\dagger}_{j,m}] & =\delta _{ij}\delta _{nm}
 \end{align}$$
 
-with all other commutators vanishing. The vacuum $\displaystyle{\ket{\Omega}}$ is annihilated by all $\displaystyle{a_{i,n}}$, and the Hilbert space is the product of the Fock spaces of the two Dirichlet pieces.
+with all other commutators vanishing. The vacuum $\displaystyle{\ket{\Omega}}$ is annihilated by all $\displaystyle{a_{i,n}}$, and the endpoint Hilbert space is the tensor product of the Fock spaces of the two Dirichlet pieces.
 
 ## Gluing Theories
 
-Adding a interaction action at the cut
+To make the field theories on the two sides interact at the cut, add the quadratic interface interaction
 
 $$\begin{align}
-S_{\text{int}} & =-\dfrac{\kappa}{2} \int \mathrm{d}t(\phi_{1}-\phi_{2})^{2}|_{x=0}
+S_{\mathrm{int}}=S_{\mathrm{glue}}^{(\kappa)} & =-\dfrac{\mu\kappa}{2}\int\mathrm{d}t\left(q_1-q_2\right)^2.
 \end{align}$$
 
-then the total action is
+This term couples the two sides, while the total theory remains Gaussian because the interface interaction is quadratic. Together with the boundary-penalty term, the total action is
 
 $$\begin{align}
-S_{\text{tot}} & =\sum _{i}\int \mathrm{d}t\int _{I_{i}}\mathrm{d}x \dfrac{1}{2}(\dot{\phi}_{i}^{2}-\phi'^{2}_{i}-m^{2}\phi _{i}^{2})+\int \mathrm{d}t \dfrac{1}{2\kappa}\left(\phi_{1}^{2}|_{x=-L}+\phi _{2}^{2}|_{x=L}\right) \\
- & -\int \mathrm{d}t \left(\dfrac{1}{2\kappa}(\phi_{1}^{2}+\phi _{2}^{2})+\dfrac{\kappa}{2}(\phi_{1}-\phi_{2})^{2}\right)|_{x=0}
+S_{\kappa} & =\sum _{i=1}^{2}S_i+S_{\mathrm{D}}^{(\kappa)}+S_{\mathrm{glue}}^{(\kappa)} \\
+&=\sum _{i=1}^{2}\int\mathrm{d}t\int_{I_i}\mathrm{d}x\,
+\dfrac12\left(\dot\phi_i^2-\phi_i'^2-m^2\phi_i^2\right)
+-\dfrac12\int\mathrm{d}t\left[
+\dfrac{\mu}{\kappa}(q_1^2+q_2^2)+\mu\kappa(q_1-q_2)^2
+\right].
 \end{align}$$
 
-take a variation of the total action, we have
+The outer Dirichlet variations vanish. The remaining variation is
 
 $$\begin{align}
-\delta S_{\text{tot}} & =\sum _{i}\int \mathrm{d}t\int _{I_{i}}\mathrm{d}x\left(-\ddot{\phi}_{i}+\phi _{i}''-m^{2}\phi _{i}\right)\delta \phi _{i} \\
- & -\int \mathrm{d}t\dots|_{x=-L}+\int \mathrm{d}t\dots|_{x=L}+\sum _{i}\int _{I_{i}}\mathrm{d}x(\dot{\phi}_{i}\delta \phi _{i})|^{t_{f}}_{t_{i}} \\
- & +\int \mathrm{d}t\left((-\phi_{1}'-\dfrac{1}{\kappa}\phi_{1}-\kappa(\phi_{1}-\phi_{2}))\delta \phi_{1}+(\phi_{2}'-\dfrac{1}{\kappa}\phi_{2}+\kappa(\phi_{1}-\phi_{2}))\delta \phi_{2}\right)|_{x=0}
+\delta S_{\kappa} & =\sum _{i=1}^{2}\int\mathrm{d}t\int _{I_{i}}\mathrm{d}x
+\left(-\ddot{\phi}_{i}+\phi _{i}''-m^{2}\phi _{i}\right)\delta \phi _{i}
++\sum _{i=1}^{2}\int _{I_{i}}\mathrm{d}x(\dot{\phi}_{i}\delta \phi _{i})|^{t_{f}}_{t_{i}} \\
+&\quad+\int\mathrm{d}t\Bigg[
+\left(-\phi_{1}'-\dfrac{\mu}{\kappa}\phi_{1}-\mu\kappa(\phi_{1}-\phi_{2})\right)\delta \phi_{1} \\
+&\hspace{33mm}+\left(\phi_{2}'-\dfrac{\mu}{\kappa}\phi_{2}+\mu\kappa(\phi_{1}-\phi_{2})\right)\delta \phi_{2}
+\Bigg]_{x=0}.
 \end{align}$$
 
-we read out the boundary conditions
+We read out the boundary conditions
 
 $$\begin{align}
 \phi_{1}|_{x=-L} & =0, & \phi _{2}|_{x=L} & =0 \\
-\phi_{1}'+\dfrac{1}{\kappa}\phi_{1}+\kappa(\phi_{1}-\phi_{2})|_{x=0} & =0, & \phi_{2}'-\dfrac{1}{\kappa}\phi_{2}+\kappa(\phi_{1}-\phi_{2})|_{x=0} & =0
+\phi_{1}'+\dfrac{\mu}{\kappa}\phi_{1}+\mu\kappa(\phi_{1}-\phi_{2})\bigg|_{x=0} & =0, &
+\phi_{2}'-\dfrac{\mu}{\kappa}\phi_{2}+\mu\kappa(\phi_{1}-\phi_{2})\bigg|_{x=0} & =0.
 \end{align}$$
 
 the eoms
@@ -132,26 +161,42 @@ $$\begin{align}
 \omega=\delta \theta & =\sum _{i}\int _{I_{i}}\mathrm{d}x\delta \dot{\phi}_{i}\wedge \delta \phi _{i}
 \end{align}$$
 
-take the $\displaystyle{\kappa\to \infty}$ limit gives the joint condition $\displaystyle{\phi_{1}=\phi_{2}}$ and $\displaystyle{\phi_{1}'=\phi_{2}'}$, and take the $\displaystyle{\kappa\to0}$ limit gives theDirichlet boundary conditions $\phi_1(0)=\phi_2(0)=0$, decoupling the two intervals.
+The spatial quadratic form associated with the Hamiltonian is
 
-For finite $\displaystyle{\kappa}$, solutions of the eom with boundary conditions above split into $\displaystyle{\sigma=\pm 1}$ sectors that satisfying
+$$\begin{align}
+Q_{\kappa}^{\mathrm{D}}[\phi_1,\phi_2]
+&=\sum _{i=1}^{2}\int_{I_i}\mathrm{d}x
+\left(|\phi_i'|^2+m^2|\phi_i|^2\right)
++\dfrac{\mu}{\kappa}\left(|q_1|^2+|q_2|^2\right)
++\mu\kappa|q_1-q_2|^2.
+\end{align}$$
+
+For $\displaystyle{\mu>0}$ and $\displaystyle{\kappa>0}$, this is positive and defines a self-adjoint spatial operator on the two intervals with the imposed outer Dirichlet conditions. For families with bounded $\displaystyle{Q_{\kappa}^{\mathrm{D}}}$, the $\displaystyle{\kappa\to0}$ limit forces $\displaystyle{q_1=q_2=0}$ and gives two decoupled Dirichlet intervals. The $\displaystyle{\kappa\to\infty}$ limit forces $\displaystyle{q_1=q_2}$. Subtracting the two interface conditions gives
+
+$$\begin{align}
+\phi_1'-\phi_2'+\dfrac{\mu}{\kappa}(\phi_1+\phi_2)\bigg|_{x=0} & =0,
+\end{align}$$
+
+so the same limit also gives $\displaystyle{\phi_1'|_{x=0}=\phi_2'|_{x=0}}$. Hence the two components join into one field on $\displaystyle{[-L,L]}$.
+
+For finite $\displaystyle{\kappa}$, solutions of the eom with the boundary conditions above split into $\displaystyle{\sigma=\pm 1}$ sectors satisfying
 
 $$\begin{align}
 \phi _{\sigma,2}(x) & =\sigma \phi _{\sigma,1}(-x)
 \end{align}$$
 
-take
+Take
 
 $$\begin{align}
-\Phi _{\sigma,n,1}(x) & =\mathcal{N}_{\sigma,n}e^{-i\omega _{\sigma,n,1}t}\sin(k _{\sigma,n}(x+L)), & -L\leqslant x\leqslant 0 \\
-\Phi _{\sigma,n,2}(x) & =\mathcal{N}_{\sigma,n}e^{-i\omega _{\sigma,n,1}t}\sin(k _{\sigma,n}(L-x)), & 0\leqslant x\leqslant L
+\Phi _{\sigma,n,1}(t,x) & =\mathcal{N}_{\sigma,n}e^{-i\omega _{\sigma,n}t}\sin(k _{\sigma,n}(x+L)), & -L\leqslant x\leqslant 0 \\
+\Phi _{\sigma,n,2}(t,x) & =\sigma\mathcal{N}_{\sigma,n}e^{-i\omega _{\sigma,n}t}\sin(k _{\sigma,n}(L-x)), & 0\leqslant x\leqslant L
 \end{align}$$
 
-where $\displaystyle{\omega _{\sigma,n}^{2}=m^{2}+k _{\sigma,n}^{2}}$. Boundary conditions at $\displaystyle{x=0}$ gives
+where $\displaystyle{\omega _{\sigma,n}^{2}=m^{2}+k _{\sigma,n}^{2}}$. The boundary conditions at $\displaystyle{x=0}$ give
 
 $$\begin{align}
-k_{+,n}\cot(k_{+,n}L) & =-\dfrac{1}{\kappa}, & \tan(k_{+,n}L) & =-\kappa k_{+,n}, \\
-k_{-,n}\cot(k_{-,n}L) & =-\left(\dfrac{1}{\kappa}+2\kappa\right), & \tan(k_{-,n}L) & =-\dfrac{\kappa k_{-,n}}{1+2\kappa^{2}},
+k_{+,n}\cot(k_{+,n}L) & =-\dfrac{\mu}{\kappa}, & \tan(k_{+,n}L) & =-\dfrac{\kappa k_{+,n}}{\mu}, \\
+k_{-,n}\cot(k_{-,n}L) & =-\mu\left(\dfrac{1}{\kappa}+2\kappa\right), & \tan(k_{-,n}L) & =-\dfrac{\kappa k_{-,n}}{\mu(1+2\kappa^{2})},
 \end{align}$$
 
 where $\displaystyle{n=1,2,\dots}$ and each root is the unique root in
@@ -189,7 +234,7 @@ $$\begin{align}
 with all other commutators vanishing. The conserved Hamiltonian determined by the bulk eoms and the imposed boundary conditions is
 
 $$\begin{align}
-H_{\kappa} & =\dfrac{1}{2}\sum _{i=1}^{2}\int _{I_{i}}\mathrm{d}x \left(\dot{\phi}_{i}^{2}+\phi_{i}'^{2}+m^{2}\phi_{i}^{2}\right) +\dfrac{1}{2\kappa}\left(\phi _1(0)^{2}+\phi _2(0)^{2}\right) +\dfrac{\kappa}{2}\left(\phi _1(0)-\phi _2(0)\right)^{2} \\
+H_{\kappa} & =\dfrac{1}{2}\sum _{i=1}^{2}\int _{I_{i}}\mathrm{d}x \left(\dot{\phi}_{i}^{2}+\phi_{i}'^{2}+m^{2}\phi_{i}^{2}\right) +\dfrac{\mu}{2\kappa}\left(\phi _1(0)^{2}+\phi _2(0)^{2}\right) +\dfrac{\mu\kappa}{2}\left(\phi _1(0)-\phi _2(0)\right)^{2} \\
 & =\sum _{\sigma=\pm1}\sum _{n=1}^{\infty}\omega _{\sigma,n} \left(b_{\sigma,n}^{\dagger}b_{\sigma,n}+\dfrac{1}{2}\right).
 \end{align}$$
 
@@ -200,40 +245,42 @@ The vacuum $\displaystyle{\ket{\Omega _{\kappa}}}$ is annihilated by every $\dis
 For each fixed $\displaystyle{n}$,
 
 $$\begin{align}
-k_{+,n},k_{-,n} & \longrightarrow \dfrac{n\pi}{L}, & \mathcal{N}_{+,n},\mathcal{N}_{-,n} & \longrightarrow\dfrac{1}{\sqrt{L}}, & \omega _{+,n},\omega _{-,n} & \longrightarrow\omega _n.
+k_{+,n},k_{-,n} & \longrightarrow \dfrac{n\pi}{L}, & \mathcal{N}_{+,n},\mathcal{N}_{-,n} & \longrightarrow\dfrac{1}{\sqrt{2\omega_nL}}, & \omega _{+,n},\omega _{-,n} & \longrightarrow\omega _n.
 \end{align}$$
 
-Equivalently, the diverging term $\displaystyle{\dfrac{1}{2\kappa}(\phi_{1}^{2}+\phi_{2}^{2})|_{x=0}}$ forces
+Equivalently, for a family with bounded $\displaystyle{Q_{\kappa}^{\mathrm{D}}}$, the diverging term $\displaystyle{\dfrac{\mu}{2\kappa}(\phi_{1}^{2}+\phi_{2}^{2})|_{x=0}}$ forces
 
 $$\begin{align}
 \phi_{1}|_{x=0} & =\phi _{2}|_{x=0}=0
 \end{align}$$
 
-while the $\displaystyle{\dfrac{\kappa}{2}(\phi_{1}-\phi_{2})^{2}|_{x=0}}$ term disappears. The two parity towers become degenerate. In terms of the annihilation operators $\displaystyle{a_{i,n}}$ used for the two Dirichlet pieces above, the limiting parity basis is
+while the $\displaystyle{\dfrac{\mu\kappa}{2}(\phi_{1}-\phi_{2})^{2}|_{x=0}}$ term disappears. The two parity towers become degenerate. In terms of the annihilation operators $\displaystyle{a_{i,n}}$ used for the two Dirichlet pieces above, the fixed-mode limiting parity basis is
 
 $$\begin{align}
 b_{+,n} & \longrightarrow\dfrac{a_{1,n}+(-1)^{n+1}a_{2,n}}{\sqrt{2}}, \\
 b_{-,n} & \longrightarrow\dfrac{a_{1,n}-(-1)^{n+1}a_{2,n}}{\sqrt{2}}.
 \end{align}$$
 
-This is only a unitary rotation inside each degenerate two-dimensional eigenspace. Therefore
+This is only a unitary rotation inside each endpoint two-dimensional eigenspace. Therefore the endpoint theory has
 
 $$\begin{align}
 H_{\kappa\to0} & =\sum _{i=1}^{2}\sum _{n=1}^{\infty}\omega _n \left(a_{i,n}^{\dagger}a_{i,n}+\dfrac{1}{2}\right), \\
 \mathcal{H}_{\kappa\to0} & =\mathcal{F}_{1,\mathrm{D}}\otimes\mathcal{F}_{2,\mathrm{D}}.
 \end{align}$$
 
-Thus the limit is precisely the two decoupled Dirichlet theories.
+Thus the endpoint spatial operator and its fixed modes are those of the two decoupled Dirichlet theories.
 
 ## The $\displaystyle{\kappa\to\infty}$ Limit
 
 For each fixed $\displaystyle{n}$,
 
 $$\begin{align}
-k_{+,n} & \longrightarrow\dfrac{(n-\frac{1}{2})\pi}{L}, & k_{-,n} & \longrightarrow\dfrac{n\pi}{L}, & \mathcal{N}_{\sigma,n} & \longrightarrow\dfrac{1}{\sqrt{L}}.
+k_{+,n} & \longrightarrow\dfrac{(n-\frac{1}{2})\pi}{L}, & k_{-,n} & \longrightarrow\dfrac{n\pi}{L}, \\
+\mathcal{N}_{+,n} & \longrightarrow\dfrac{1}{\sqrt{2\Omega_{2n-1}L}}, &
+\mathcal{N}_{-,n} & \longrightarrow\dfrac{1}{\sqrt{2\Omega_{2n}L}}.
 \end{align}$$
 
-The diverging interface term now forces $\displaystyle{\phi_{1}|_{x=0}=\phi _{2}|_{x=0}}$. Using the two interface conditions once more then gives $\displaystyle{\phi_{1}'|_{x=0}=\phi'_{2}|_{x=0}}$. Hence the two components define one field
+For a family with bounded $\displaystyle{Q_{\kappa}^{\mathrm{D}}}$, the diverging interface term now forces $\displaystyle{\phi_{1}|_{x=0}=\phi _{2}|_{x=0}}$. Using the difference of the two interface conditions once more then gives $\displaystyle{\phi_{1}'|_{x=0}=\phi'_{2}|_{x=0}}$. Hence the two components define one field
 
 $$\begin{align}
 \phi(t,x) & =\begin{cases}
@@ -259,12 +306,12 @@ b_{+,n} & \to c_{2n-1}, & b_{-,n} & \to c_{2n}.
 Consequently,
 
 $$\begin{align}
-\phi(t,x) & =\sum ^{\infty}_{r=1}\left(c_{r}\Phi _{r}+c_{r}^{\dagger}\Phi _{r}\right) \\
+\phi(t,x) & =\sum ^{\infty}_{r=1}\left(c_{r}\Phi _{r}+c_{r}^{\dagger}\Phi _{r}^{*}\right) \\
 [c_{r},c^{\dagger}_{s}] & =\delta _{rs} \\
-H_{\kappa\to \infty} & =\sum ^{\infty}_{r=1}\Omega _{r}\left( c^{\dagger}_{r}c+\dfrac{1}{2} \right)
+H_{\kappa\to \infty} & =\sum ^{\infty}_{r=1}\Omega _{r}\left( c^{\dagger}_{r}c_r+\dfrac{1}{2} \right)
 \end{align}$$
 
-This is the standard quantization of a single massive scalar on $\displaystyle{[-L,L]}$ with Dirichlet conditions at both outer endpoints.
+This is the endpoint quantization of a single massive scalar on $\displaystyle{[-L,L]}$ with Dirichlet conditions at both outer endpoints. The statements in the two limits above establish the endpoint operators and convergence of each fixed mode. They do not by themselves prove convergence of the finite-$\displaystyle{\kappa}$ vacua or a unitary identification of the full Fock representations.
 
 ---
 
