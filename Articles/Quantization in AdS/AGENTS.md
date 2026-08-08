@@ -18,11 +18,11 @@ Research workspace for AdS quantization projects, including AdS3 gauge and gravi
   - Report which checks were Sage-backed, which were Mathematica/xAct-backed, and which remain representation-theoretic assumptions or literature-derived statements.
 - Avoid local shorthand symbols that merely rename a single simple expression, term, mode, or already-labelled object. A shorthand should reduce real repetition, name an object or family with independent semantic content, or make a multi-step derivation clearer; otherwise write the expression inline and keep its existing labels or arguments visible.
 
-## Covariant Phase Space alignment
+## Covariant Phase Space Alignment
 
 In this workspace, the covariant phase space formalism (shorthand CPS) follows the conventions of Harlow–Wu 1906.08616 (and a wait-to-be-open article of Wu), which means the following pipeline.
 
-### Formalism and Noether charge
+### Formalism and Noether Charge
 
 Considering the (asymptotically AdS/flat) spacetime $\displaystyle{M}$ (with signature $\displaystyle{(-,+,+,\dots)}$) sandwiched by Cauchy surfaces $\displaystyle{\Sigma _{f}}$ and $\displaystyle{\Sigma _{i}}$ with spatial boundary $\displaystyle{\Gamma}$. The **action** of a field theory on $\displaystyle{M}$ about dynamical field $\displaystyle{\Psi}$ is
 
@@ -125,4 +125,4 @@ To do perturbation theory, refer 128-165 lines of the note [[Articles/Quantizati
 
 ### Summary
 
-you should completely follows the conventions and terms in the above pipeline, and should not introduce any new notation or concepts not already defined.
+You should completely follows the conventions and terms in the above pipeline, and should not introduce any new notation or concepts not already defined.

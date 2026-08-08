@@ -1,18 +1,24 @@
 ## TODO
 
-- GLMS公式
-	- see Guanda Lin, Penington, ...
+- JLMS公式
+	- see Guanda Lin, Penington,
+		- not done
 - linearized gravity的Noether charge完全放到bulk内
 	- impossible in the sense of writing the Noether charge in terms of $$\begin{align}H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\tilde{T}^{\mu \nu}\end{align}$$
 - 一般ads标量慢衰减支
 	- nothing special
+	- read the mathematica code and write an draft
+		- see [[Articles/Quantization in AdS/scalar/scalar off-shell mode truncation|scalar off-shell mode truncation]]?
 - 谐振子+高阶导数耦合做微扰论
-	- $$\begin{align}
-	L & =\dfrac{1}{2}m\dot{x}^{2}-\dfrac{1}{2}m\omega ^{2}x^{2}+\dfrac{1}{4}\lambda x^{2}\dot{x}^{2}
-	\end{align}$$
-- 引力微扰论
-	- rewrite [[Articles/Quantization in AdS/linearized gravity/cubic perturbation of Brown-Henneaux modes|cubic perturbation of Brown-Henneaux modes]]
+	- consider the following action$$\begin{align}L & =\dfrac{1}{2}m\dot{x}^{2}-\dfrac{1}{2}m\omega ^{2}x^{2}+\dfrac{1}{4}\lambda x^{2}\dot{x}^{2}\end{align}$$
+		- see [[Articles/Quantization in AdS/perturbation/path-integral of worldline non-linear sigma model|path-integral of worldline non-linear sigma model]], [[Articles/Quantization in AdS/perturbation/CPS perturbation of harmonic oscillator|CPS perturbation of harmonic oscillator]]
+- 引力微扰论，done
+	- see [[Articles/Quantization in AdS/linearized gravity/higher perturbations of linearized gravity modes|higher perturbations of linearized gravity modes]]
 - gluing system
+	- consider two Newman boundary condition gluing to periodic boundary condition.
+		- see [[Articles/Quantization in AdS/gluing/lattice theory|lattice theory]], easy for lattice theory. No idea for continuum theory.
+- read https://arxiv.org/pdf/2607.27337
+	- not done
 
 ##### Learn from Research, Go to Europe or Canada (CSC)
 
