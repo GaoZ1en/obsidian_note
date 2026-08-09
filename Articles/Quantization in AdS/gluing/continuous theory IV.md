@@ -1,710 +1,334 @@
-Consider Maxwell theory defined on a manifold $\displaystyle{M=\mathbb{R}_{t}\times[-L,L]_{x}\times S_{y}^{1}}$, with the identification $\displaystyle{y\sim y+\ell_{y}}$, $\displaystyle{\ell_{y}=2\pi R}$, and a cut at the origin $\displaystyle{x=0}$, which separates the interval into two intervals
+Consider compact $\displaystyle{U(1)_k}$ Chern--Simons theory on
 
 $$\begin{align}
-I_{1} & =[-L,0] \\
-I_{2} & =[0,L]
+M&=\mathbb R_t\times[-L,L]_x\times S_y^1, & y&\sim y+\ell_y,
 \end{align}$$
 
-with flat metric $\displaystyle{ds^{2}=-dt^{2}+dx^{2}+dy^{2}}$. On each region $\displaystyle{M_{i}=\mathbb{R}_{t}\times I_{i}\times S_{y}^{1}}$ the Maxwell action is taken to be
+with orientation $\displaystyle{\mathrm{d}t\wedge\mathrm{d}x\wedge\mathrm{d}y>0}$. The level is $\displaystyle{k\in\mathbb Z\setminus\{0\}}$; for a noncompact gauge group the same classical discussion applies with any nonzero real $\displaystyle{k}$. We first work on a connected interval $\displaystyle{I=[a,b]}$ and then introduce a cut at $\displaystyle{x=0}$.
 
-$$\begin{align}
-S_{i}[A_{i}] & =-\dfrac{1}{4}\int_{M_{i}}\mathrm{d}t\mathrm{d}x\mathrm{d}y\,F_{i,\mu\nu}F_{i}^{\mu\nu}
-\end{align}$$
-
-Define the field strengths
-
-$$\begin{align}
-E_{x}=F_{tx}, \qquad E_{y}=F_{ty}, \qquad B=F_{xy}
-\end{align}$$
-
-in terms of which
-
-$$\begin{align}
-S_{i} & =\dfrac{1}{2}\int_{M_{i}}\mathrm{d}t\mathrm{d}x\mathrm{d}y\left(E_{x}^{2}+E_{y}^{2}-B^{2}\right)
-\end{align}$$
-
-Taking a variation of the action
-
-$$\begin{align}
-\delta S_{i} & =\int_{M_{i}}\mathrm{d}t\mathrm{d}x\mathrm{d}y\,(\partial_{\mu}F_{i}^{\mu\nu})\delta A_{i,\nu} \\
- & \quad-\int_{\mathbb{R}_{t}\times S_{y}^{1}}\mathrm{d}t\mathrm{d}y\left[E_{x,i}\delta A_{t,i}+B_{i}\delta A_{y,i}\right]_{\partial I_{i}}+\left[\int_{\Sigma_{i}}\mathrm{d}x\mathrm{d}y\,E_{i}^{a}\delta A_{i,a}\right]_{t_{i}}^{t_{f}}
-\end{align}$$
-
-so the symplectic potential and the symplectic form on a slice $\displaystyle{\Sigma_{i}=I_{i}\times S_{y}^{1}}$ are
-
-$$\begin{align}
-\theta_{i} & =\int_{\Sigma_{i}}\mathrm{d}x\mathrm{d}y\left(E_{x,i}\delta A_{x,i}+E_{y,i}\delta A_{y,i}\right) \\
-\omega_{i} & =\int_{\Sigma_{i}}\mathrm{d}x\mathrm{d}y\left(\delta E_{x,i}\wedge\delta A_{x,i}+\delta E_{y,i}\wedge\delta A_{y,i}\right)
-\end{align}$$
-
-which is the same covariant phase space organization as the scalar
-
-$$\begin{align}
-\theta=\int\dot{\phi}\,\delta\phi, \qquad \omega=\int\delta\dot{\phi}\wedge\delta\phi
-\end{align}$$
-
-The equations of motion are
-
-$$\begin{align}
-\partial_{\mu}F^{\mu\nu}=0
-\end{align}$$
-
-of which
-
-$$\begin{align}
-\partial_{x}E_{x}+\partial_{y}E_{y}=0
-\end{align}$$
-
-is the Gauss constraint. The proper gauge transformations
-
-$$\begin{align}
-\delta_{\lambda}A_{a}=\partial_{a}\lambda
-\end{align}$$
-
-act on the constraint surface as
-
-$$\begin{align}
-\iota_{\delta_{\lambda}}\omega\sim\int_{\partial\Sigma}\mathrm{d}y\,\lambda\,\delta E_{n}
-\end{align}$$
-
-a boundary term that will become the source of the cut zero-mode/edge sector.
-
-Two boundary conditions make the variation boundary term vanish. The first fixes the pullback of $\displaystyle{A}$ on $\displaystyle{\partial M}$,
-
-$$\begin{align}
-\mathsf D_{M}: \qquad A_{t}|_{\partial M}=A_{y}|_{\partial M}=0, \qquad \iota^{*}A=0
-\end{align}$$
-
-and the second kills the normal flux
-
-$$\begin{align}
-\mathsf N_{M}: \qquad E_{x}|_{\partial M}=B|_{\partial M}=0, \qquad n_{\mu}F^{\mu\alpha}=0
-\end{align}$$
-
-## Maxwell and the Dual Scalar
-
-Now comes the core simplification of the whole calculation. In the oscillator sector define the dual scalar $\displaystyle{\varphi}$ by
-
-$$\begin{align}
-E_{x}=-\partial_{y}\varphi, \qquad E_{y}=\partial_{x}\varphi, \qquad B=\dot{\varphi}
-\end{align}$$
-
-The Gauss law and the Maxwell dynamical equations are then satisfied automatically, while the Bianchi identity gives
-
-$$\begin{align}
--\ddot{\varphi}+\partial_{x}^{2}\varphi+\partial_{y}^{2}\varphi=0
-\end{align}$$
-
-More importantly, consider the symplectic form. Integrating by parts
-
-$$\begin{align}
-\omega_{M}=\int_{\Sigma}\mathrm{d}x\mathrm{d}y\,\delta\dot{\varphi}\wedge\delta\varphi+\left[\int_{S_{y}^{1}}\mathrm{d}y\,\delta\varphi\wedge\delta A_{y}\right]_{\partial I}
-\end{align}$$
-
-For $\displaystyle{\mathsf D_{M}}$ we have $\displaystyle{\delta A_{y}|_{\partial I}=0}$, so
-
-$$\begin{align}
-\omega_{M}=\omega_{\varphi}
-\end{align}$$
-
-For the non-zero-frequency oscillator sector of $\displaystyle{\mathsf N_{M}}$, the boundary conditions $\displaystyle{E_{x}=B=0}$ imply $\displaystyle{\partial_{y}\varphi=\dot{\varphi}=0}$ on the boundary, hence each $\displaystyle{\omega>0}$ Fourier mode satisfies $\displaystyle{\varphi|_{\partial I}=0}$, and again
-
-$$\begin{align}
-\omega_{M}=\omega_{\varphi}
-\end{align}$$
-
-The boundary conditions map as
-
-$$\begin{align}
-\mathsf D_{M} \quad\Longleftrightarrow\quad \partial_{x}\varphi=0
-\end{align}$$
-
-because $\displaystyle{E_{y}=F_{ty}=\partial_{x}\varphi}$ and $\displaystyle{A_{t}=A_{y}=0}$ implies $\displaystyle{F_{ty}=0}$, and
-
-$$\begin{align}
-\mathsf N_{M} \quad\Longleftrightarrow\quad \varphi=0 \qquad(\omega>0)
-\end{align}$$
-
-because $\displaystyle{E_{x}=-\partial_{y}\varphi}$ and $\displaystyle{B=\dot{\varphi}}$. This is the key exchange
-
-$$\begin{align}
-\mathsf D_{M}\leftrightarrow\mathsf N_{\varphi}, \qquad \mathsf N_{M}\leftrightarrow\mathsf D_{\varphi}
-\end{align}$$
-
-## Fourier Decomposition on $\displaystyle{S_{y}^{1}}$
-
-Define
-
-$$\begin{align}
-Y_{m}(y)=\dfrac{e^{iq_{m}y}}{\sqrt{\ell_{y}}}, \qquad q_{m}=\dfrac{2\pi m}{\ell_{y}}=\dfrac{m}{R}, \qquad m\in\mathbb{Z}
-\end{align}$$
-
-and expand
-
-$$\begin{align}
-\varphi(t,x,y)=\sum_{m}\varphi_{m}(t,x)Y_{m}(y)
-\end{align}$$
-
-Each $\displaystyle{m}$ sector then satisfies
-
-$$\begin{align}
--\ddot{\varphi}_{m}+\varphi_{m}''-q_{m}^{2}\varphi_{m}=0
-\end{align}$$
-
-so it is precisely the $1+1$ massive scalar of the pure-scalar problem, with the replacement
-
-$$\begin{align}
-m^{2}\longrightarrow q_{m}^{2}
-\end{align}$$
-
-## Single-Interval Modes: Dirichlet Maxwell
-
-Since $\displaystyle{\mathsf D_{M}\leftrightarrow\mathsf N_{\varphi}}$, use the scalar Neumann modes on an interval of length $\displaystyle{L}$. Let
-
-$$\begin{align}
-k_{n}=\dfrac{n\pi}{L}, \qquad \omega_{m,n}=\sqrt{q_{m}^{2}+k_{n}^{2}}
-\end{align}$$
-
-On the left interval
-
-$$\begin{align}
-U^{N}_{1,0}(x)=\dfrac{1}{\sqrt L}, \qquad u^{N}_{1,n}(x)=\sqrt{\dfrac{2}{L}}\cos\left(k_{n}(x+L)\right), \qquad n\geq1
-\end{align}$$
-
-and on the right
-
-$$\begin{align}
-U^{N}_{2,0}(x)=\dfrac{1}{\sqrt L}, \qquad u^{N}_{2,n}(x)=\sqrt{\dfrac{2}{L}}\cos\left(k_{n}x\right), \qquad n\geq1
-\end{align}$$
-
-The dual-scalar positive-frequency modes are
-
-$$\begin{align}
-\Phi^{D}_{i,m,n}=\dfrac{e^{-i\omega_{m,n}t}}{\sqrt{2\omega_{m,n}}}Y_{m}(y)u^{N}_{i,n}(x)
-\end{align}$$
-
-where the mode $\displaystyle{(m,n)=(0,0)}$ cannot be treated as a harmonic oscillator because $\displaystyle{\omega=0}$; it is handled separately below.
-
-A convenient Maxwell representative is the temporal–Coulomb gauge
-
-$$\begin{align}
-\mathcal A_{t}=0, \qquad \mathcal A_{x}=\dfrac{q_{m}}{\omega}\Phi, \qquad \mathcal A_{y}=\dfrac{i}{\omega}\partial_{x}\Phi
-\end{align}$$
-
-for which one checks directly that
-
-$$\begin{align}
-\partial_{x}A_{x}+\partial_{y}A_{y}=0
-\end{align}$$
-
-and
-
-$$\begin{align}
-E_{x}=-iq_{m}\Phi, \qquad E_{y}=\partial_{x}\Phi, \qquad B=-i\omega\Phi
-\end{align}$$
-
-The scalar Neumann condition $\displaystyle{\partial_{x}\Phi|_{\partial I}=0}$ then indeed gives $\displaystyle{A_{y}|_{\partial I}=0}$ with $\displaystyle{A_{t}=0}$. Since $\displaystyle{\omega_{M}=\omega_{\varphi}}$, these modes are orthonormal
-
-$$\begin{align}
-(\mathcal A_{i,m,n},\mathcal A_{j,r,s})=\delta_{ij}\delta_{mr}\delta_{ns}
-\end{align}$$
-
-Expand
-
-$$\begin{align}
-A_{i}^{\mathrm{osc}}=\sum_{m,n}{}'\left(a^{D}_{i,m,n}\mathcal A^{D}_{i,m,n}+a^{D\dagger}_{i,m,n}\mathcal A^{D*}_{i,m,n}\right)+\text{proper gauge}
-\end{align}$$
-
-where the prime excludes $\displaystyle{(m,n)=(0,0)}$. The normalization and the Poisson brackets are identical to the scalar ones
-
-$$\begin{align}
-\omega_{D}^{\mathrm{osc}} & =i\sum_{i,m,n}{}'\delta a^{D\dagger}_{i,m,n}\wedge\delta a^{D}_{i,m,n} \\
-[a^{D}_{i,m,n},a^{D\dagger}_{j,r,s}] & =\delta_{ij}\delta_{mr}\delta_{ns}
-\end{align}$$
-
-with the Hamiltonian
-
-$$\begin{align}
-H_{D}^{\mathrm{osc}}=\sum_{i,m,n}{}'\omega_{m,n}\left(a^{D\dagger}_{i,m,n}a^{D}_{i,m,n}+\dfrac{1}{2}\right)
-\end{align}$$
-
-## Single-Interval Modes: Neumann Maxwell
-
-Now $\displaystyle{\mathsf N_{M}\leftrightarrow\mathsf D_{\varphi}}$, so use the scalar Dirichlet basis
-
-$$\begin{align}
-u^{D}_{1,n}(x)=\sqrt{\dfrac{2}{L}}\sin\left(k_{n}(x+L)\right), \qquad u^{D}_{2,n}(x)=\sqrt{\dfrac{2}{L}}\sin\left(k_{n}x\right), \qquad n=1,2,\dots
-\end{align}$$
-
-with the modes
-
-$$\begin{align}
-\Phi^{N}_{i,m,n}=\dfrac{e^{-i\omega_{m,n}t}}{\sqrt{2\omega_{m,n}}}Y_{m}u^{D}_{i,n}
-\end{align}$$
+The point of this model is that there are no local bulk photon modes. Nevertheless, boundary conditions remain essential: the Chern--Simons action is first order, so a boundary condition selects a polarization of the boundary connection. This replaces the Dirichlet--Neumann dichotomy of Maxwell theory.
 
-Because $\displaystyle{\Phi|_{\partial I}=0}$,
+## Action and Covariant Phase Space
 
-$$\begin{align}
-E_{x}=-iq_{m}\Phi=0, \qquad B=-i\omega\Phi=0
-\end{align}$$
-
-so the Maxwell Neumann condition is strictly satisfied. The oscillator sector is therefore
-
-$$\begin{align}
-\omega_{N}^{\mathrm{osc}} & =i\sum_{i,m,n}\delta a^{N\dagger}_{i,m,n}\wedge\delta a^{N}_{i,m,n} \\
-[a^{N}_{i,m,n},a^{N\dagger}_{j,r,s}] & =\delta_{ij}\delta_{mr}\delta_{ns} \\
-H_{N}^{\mathrm{osc}} & =\sum_{i,m,n}\omega_{m,n}\left(a^{N\dagger}_{i,m,n}a^{N}_{i,m,n}+\dfrac{1}{2}\right)
-\end{align}$$
-
-## Gluing Theories: Dirichlet Maxwell
-
-This is the Neumann-scalar analogue missing from the pure-scalar calculation. The finite-$\displaystyle{\kappa}$ gluing is not unique: the two endpoint boundary theories are fixed, but the interface theory that connects them is not. Here we first perform the proper gauge quotient and glue the dual scalars on the reduced phase space following the scalar formalism, which is the choice under which all bulk photon modes can be obtained analytically. Writing the finite-$\displaystyle{\kappa}$ theory itself as a manifestly local, gauge-invariant $\displaystyle{A_{\mu}+}$edge-field action is a separate problem.
-
-For dimensionally correct couplings introduce a dimensionless $\displaystyle{\kappa}$ and a fixed scale
-
-$$\begin{align}
-\mu>0, \qquad [\mu]=L^{-1}
-\end{align}$$
-
-The pure-scalar calculation corresponds to $\displaystyle{\mu=1}$. On the reduced Maxwell phase space take
-
-$$\begin{align}
-S_{\kappa,D}^{\mathrm{red}}=\dfrac{1}{2}\sum_{i}\int_{M_{i}}\mathrm{d}t\mathrm{d}x\mathrm{d}y\left[\dot\varphi_{i}^{2}-\varphi_{i}'^{2}-(\partial_{y}\varphi_{i})^{2}\right]-\dfrac{\mu\kappa}{2}\int_{\Gamma}\mathrm{d}t\mathrm{d}y\,(\varphi_{1}-\varphi_{2})^{2}
-\end{align}$$
-
-The outer endpoints always satisfy exactly
-
-$$\begin{align}
-\varphi_{1}'(-L)=0, \qquad \varphi_{2}'(L)=0
-\end{align}$$
-
-Variation at the cut gives
-
-$$\begin{align}
--\varphi_{1}'-\mu\kappa(\varphi_{1}-\varphi_{2})=0, \qquad +\varphi_{2}'+\mu\kappa(\varphi_{1}-\varphi_{2})=0
-\end{align}$$
-
-i.e.
-
-$$\begin{align}
-\varphi_{1}'=\varphi_{2}'=-\mu\kappa(\varphi_{1}-\varphi_{2})
-\end{align}$$
-
-Therefore
-
-$$\begin{align}
-\kappa\to0: \qquad \varphi_{1}'=\varphi_{2}'=0
-\end{align}$$
-
-which is exactly two decoupled Maxwell Dirichlet theories, while
-
-$$\begin{align}
-\kappa\to\infty
-\end{align}$$
-
-forces $\displaystyle{\varphi_{1}=\varphi_{2}}$ in the finite-energy sector, and the boundary equations then give $\displaystyle{\varphi_{1}'=\varphi_{2}'}$, recovering the smooth global Maxwell gluing.
-
-### Finite-$\displaystyle{\kappa}$ Modes
-
-Using the reflection symmetry
-
-$$\begin{align}
-\varphi_{\sigma,2}(x)=\sigma\varphi_{\sigma,1}(-x), \qquad \sigma=\pm1
-\end{align}$$
-
-take
-
-$$\begin{align}
-\Phi^{D}_{\sigma,m,n,1} & =\mathcal N^{D}_{\sigma,m,n}e^{-i\omega t}Y_{m}\cos\left[k_{\sigma,n}(x+L)\right] \\
-\Phi^{D}_{\sigma,m,n,2} & =\sigma\mathcal N^{D}_{\sigma,m,n}e^{-i\omega t}Y_{m}\cos\left[k_{\sigma,n}(L-x)\right]
-\end{align}$$
-
-with frequencies
-
-$$\begin{align}
-\omega_{\sigma,m,n}^{2}=q_{m}^{2}+k_{\sigma,n}^{2}
-\end{align}$$
-
-For $\displaystyle{\sigma=+1}$ the cut condition is automatically $\displaystyle{\sin(kL)=0}$, so
-
-$$\begin{align}
-k_{+,n}=\dfrac{n\pi}{L}, \qquad n=0,1,2,\dots
-\end{align}$$
-
-independent of $\displaystyle{\kappa}$. For $\displaystyle{\sigma=-1}$ one obtains
-
-$$\begin{align}
-k\sin(kL)=2\mu\kappa\cos(kL)
-\end{align}$$
-
-i.e.
-
-$$\begin{align}
-k_{-,n}\tan(k_{-,n}L)=2\mu\kappa
-\end{align}$$
-
-For $\displaystyle{\kappa>0}$, each $\displaystyle{n=0,1,2,\dots}$ has the unique root
-
-$$\begin{align}
-\dfrac{n\pi}{L}<k_{-,n}<\dfrac{(n+\frac{1}{2})\pi}{L}
-\end{align}$$
-
-Substituting back into the two boundary equations at the cut, both are satisfied identically. The normalization constant is
-
-$$\begin{align}
-\mathcal N^{D}_{\sigma,m,n}=\dfrac{1}{\sqrt{2\omega_{\sigma,m,n}}}\left[L+\dfrac{\sin(2k_{\sigma,n}L)}{2k_{\sigma,n}}\right]^{-1/2}
-\end{align}$$
-
-where the bracket approaches $\displaystyle{2L}$ as $\displaystyle{k\to0}$. Therefore
-
-$$\begin{align}
-\omega_{\kappa,D}^{\mathrm{osc}} & =i\sum_{\sigma,m,n}{}'\delta b^{D\dagger}_{\sigma,m,n}\wedge\delta b^{D}_{\sigma,m,n} \\
-[b^{D}_{\sigma,m,n},b^{D\dagger}_{\tau,r,s}] & =\delta_{\sigma\tau}\delta_{mr}\delta_{ns}
-\end{align}$$
-
-and
-
-$$\begin{align}
-H_{\kappa,D}^{\mathrm{osc}}=\sum_{\sigma,m,n}{}'\omega_{\sigma,m,n}\left(b^{D\dagger}_{\sigma,m,n}b^{D}_{\sigma,m,n}+\dfrac{1}{2}\right)
-\end{align}$$
-
-The prime again excludes the genuine $\displaystyle{\omega=0}$ harmonic sector from the Fock-oscillator treatment.
-
-### The $\displaystyle{\kappa\to0}$ Limit
-
-Both towers degenerate
-
-$$\begin{align}
-k_{+,n}\to\dfrac{n\pi}{L}, \qquad k_{-,n}\to\dfrac{n\pi}{L}
-\end{align}$$
-
-recovering the two half-intervals. Using the right-interval basis above,
-
-$$\begin{align}
-b^{D}_{+,m,n} & \longrightarrow\dfrac{a^{D}_{1,m,n}+(-1)^{n}a^{D}_{2,m,n}}{\sqrt{2}} \\
-b^{D}_{-,m,n} & \longrightarrow\dfrac{a^{D}_{1,m,n}-(-1)^{n}a^{D}_{2,m,n}}{\sqrt{2}}
-\end{align}$$
-
-Therefore
-
-$$\begin{align}
-\mathcal F_{\kappa\to0,D}^{\mathrm{osc}}=\mathcal F^{D}_{1}\otimes\mathcal F^{D}_{2}
-\end{align}$$
-
-### The $\displaystyle{\kappa\to\infty}$ Limit
-
-Now
-
-$$\begin{align}
-k_{+,n}=\dfrac{n\pi}{L}, \qquad k_{-,n}\longrightarrow\dfrac{(n+\frac{1}{2})\pi}{L}
-\end{align}$$
-
-A global Maxwell Dirichlet theory on length $\displaystyle{2L}$ corresponds to scalar Neumann
-
-$$\begin{align}
-K_{r}=\dfrac{r\pi}{2L}, \qquad r=0,1,2,\dots
-\end{align}$$
-
-so the two towers interlace as
-
-$$\begin{align}
-b^{D}_{+,m,n}\to c^{D}_{m,2n}, \qquad b^{D}_{-,m,n}\to c^{D}_{m,2n+1}
-\end{align}$$
-
-The global modes are
-
-$$\begin{align}
-U^{N}_{0}(x)=\dfrac{1}{\sqrt{2L}}, \qquad U^{N}_{r}(x)=\dfrac{1}{\sqrt L}\cos\left[\dfrac{r\pi(x+L)}{2L}\right], \qquad r\geq1
-\end{align}$$
-
-with frequencies
-
-$$\begin{align}
-\Omega^{D}_{m,r}=\sqrt{q_{m}^{2}+\dfrac{r^{2}\pi^{2}}{4L^{2}}}
-\end{align}$$
-
-Only $\displaystyle{(m,r)=(0,0)}$ is not a photon oscillator.
+On $\displaystyle{M_I=\mathbb R_t\times I\times S_y^1}$, use the Lorentzian Levi--Civita convention $\displaystyle{\varepsilon^{txy}=-1}$, consistently with the existing $\displaystyle{U(1)}$ Chern--Simons formalism note, and take
 
-## Gluing Theories: Neumann Maxwell
-
-This part is almost exactly the pure-scalar calculation, sector by sector, with $\displaystyle{m_{\mathrm{scalar}}=|q_{m}|}$. On the reduced phase space take
-
-$$\begin{aligned}
-S_{\kappa,N}^{\mathrm{red}}={} & \dfrac{1}{2}\sum_{i}\int_{M_{i}}\mathrm{d}t\mathrm{d}x\mathrm{d}y\left[\dot\varphi_{i}^{2}-\varphi_{i}'^{2}-(\partial_{y}\varphi_{i})^{2}\right] \\
- & -\dfrac{\mu}{2\kappa}\int_{\Gamma}\mathrm{d}t\mathrm{d}y\,(\varphi_{1}^{2}+\varphi_{2}^{2})-\dfrac{\mu\kappa}{2}\int_{\Gamma}\mathrm{d}t\mathrm{d}y\,(\varphi_{1}-\varphi_{2})^{2}
-\end{aligned}$$
-
-This is the dimensionally corrected version of the scalar construction. The outer endpoints always satisfy exactly
-
-$$\begin{align}
-\varphi_{1}(-L)=0, \qquad \varphi_{2}(L)=0
-\end{align}$$
-
-and the cut equations are
-
-$$\begin{align}
-\varphi_{1}'+\dfrac{\mu}{\kappa}\varphi_{1}+\mu\kappa(\varphi_{1}-\varphi_{2})=0, \qquad \varphi_{2}'-\dfrac{\mu}{\kappa}\varphi_{2}+\mu\kappa(\varphi_{1}-\varphi_{2})=0
-\end{align}$$
-
-### Finite-$\displaystyle{\kappa}$ Modes
-
-Take
-
-$$\begin{align}
-\Phi^{N}_{\sigma,m,n,1} & =\mathcal N^{N}_{\sigma,m,n}e^{-i\omega t}Y_{m}\sin\left[k_{\sigma,n}(x+L)\right] \\
-\Phi^{N}_{\sigma,m,n,2} & =\sigma\mathcal N^{N}_{\sigma,m,n}e^{-i\omega t}Y_{m}\sin\left[k_{\sigma,n}(L-x)\right]
-\end{align}$$
-
-The cut conditions then give
-
-$$\begin{align}
-k_{+,n}\cot(k_{+,n}L)=-\dfrac{\mu}{\kappa}, \qquad k_{-,n}\cot(k_{-,n}L)=-\mu\left(\dfrac{1}{\kappa}+2\kappa\right)
-\end{align}$$
-
-or equivalently
-
-$$\begin{align}
-\tan(k_{+,n}L)=-\dfrac{\kappa k_{+,n}}{\mu}
-\end{align}$$
-
-and the corresponding minus-sector equation. For $\displaystyle{\mu=1}$ these are precisely the scalar transcendental equations. Each $\displaystyle{n=1,2,\dots}$ has the unique root in
-
 $$\begin{align}
-\dfrac{(n-\frac{1}{2})\pi}{L}<k_{\sigma,n}<\dfrac{n\pi}{L}
+S_{\mathrm{CS}}[A]&=\dfrac{k}{4\pi}\int_{M_I}\mathrm{d}^3x\,\varepsilon^{\mu\nu\rho}A_\mu\partial_\nu A_\rho=-\dfrac{k}{4\pi}\int_{M_I}A\wedge\mathrm{d}A.
 \end{align}$$
 
-with frequencies
+Its variation is
 
 $$\begin{align}
-\omega_{\sigma,m,n}=\sqrt{q_{m}^{2}+k_{\sigma,n}^{2}}
+\delta S_{\mathrm{CS}}&=-\dfrac{k}{2\pi}\int_{M_I}\delta A\wedge F+\theta_{\mathrm{CS}}|_{\Sigma_f}-\theta_{\mathrm{CS}}|_{\Sigma_i} \\
+&\quad-\dfrac{k}{4\pi}\sum_{\alpha\in\partial I}n_\alpha\int_{\mathbb R_t\times S_y^1}\mathrm{d}t\mathrm{d}y\left(A_t\delta A_y-A_y\delta A_t\right)|_\alpha,
 \end{align}$$
 
-and normalization
+where $\displaystyle{n_a=-1}$ and $\displaystyle{n_b=+1}$ are the outward $\displaystyle{x}$-normals. The bulk equation and the Cauchy-surface pre-symplectic data are
 
 $$\begin{align}
-\mathcal N^{N}_{\sigma,m,n}=\dfrac{1}{\sqrt{2\omega_{\sigma,m,n}}}\left[L-\dfrac{\sin(2k_{\sigma,n}L)}{2k_{\sigma,n}}\right]^{-1/2}
+F&=0, \\
+\theta_{\mathrm{CS}}&=\dfrac{k}{4\pi}\int_{I\times S_y^1}\mathrm{d}x\mathrm{d}y\left(A_x\delta A_y-A_y\delta A_x\right), \\
+\omega_{\mathrm{CS}}&=\delta\theta_{\mathrm{CS}}=\dfrac{k}{2\pi}\int_{I\times S_y^1}\mathrm{d}x\mathrm{d}y\,\delta A_x\wedge\delta A_y.
 \end{align}$$
 
-Therefore
+The solutions satisfying the selected boundary conditions form the pre-phase space. For a gauge transformation $\displaystyle{X_\lambda\cdot\delta A=\mathrm{d}\lambda}$, contraction with the pre-symplectic form gives
 
 $$\begin{align}
-\omega_{\kappa,N}^{\mathrm{osc}} & =i\sum_{\sigma,m,n}\delta b^{N\dagger}_{\sigma,m,n}\wedge\delta b^{N}_{\sigma,m,n} \\
-[b^{N}_{\sigma,m,n},b^{N\dagger}_{\tau,r,s}] & =\delta_{\sigma\tau}\delta_{mr}\delta_{ns}
+X_\lambda\cdot\omega_{\mathrm{CS}}&=-\dfrac{k}{2\pi}\int_{I\times S_y^1}\mathrm{d}x\mathrm{d}y\,\lambda\,\delta F_{xy}+\dfrac{k}{2\pi}\sum_{\alpha\in\partial I}n_\alpha\int_{S_y^1}\mathrm{d}y\,\lambda\,\delta A_y|_\alpha.
 \end{align}$$
 
-and
+After imposing $\displaystyle{F_{xy}=0}$, a gauge transformation that vanishes at the boundary is a null direction. A transformation with nonvanishing boundary value is not automatically gauge redundancy: it has the charge variation
 
 $$\begin{align}
-H_{\kappa,N}^{\mathrm{osc}}=\sum_{\sigma,m,n}\omega_{\sigma,m,n}\left(b^{N\dagger}_{\sigma,m,n}b^{N}_{\sigma,m,n}+\dfrac{1}{2}\right)
+\delta Q_\lambda&=\dfrac{k}{2\pi}\sum_{\alpha\in\partial I}n_\alpha\int_{S_y^1}\mathrm{d}y\,\lambda\,\delta A_y|_\alpha.
 \end{align}$$
 
-### The $\displaystyle{\kappa\to0}$ Limit
+Whether such a transformation is quotiented or retained as a physical boundary symmetry is part of the boundary-condition choice.
 
-Both towers have
-
-$$\begin{align}
-k_{\sigma,n}\to\dfrac{n\pi}{L}
-\end{align}$$
+## Boundary Conditions as Polarizations
 
-so
+The bare boundary variation is proportional to $\displaystyle{A_t\delta A_y-A_y\delta A_t}$. Thus one may fix both tangential components, but a minimal variational principle fixes only one half of this canonical pair.
 
-$$\begin{align}
-b^{N}_{+,m,n} & \longrightarrow\dfrac{a^{N}_{1,m,n}+(-1)^{n+1}a^{N}_{2,m,n}}{\sqrt{2}} \\
-b^{N}_{-,m,n} & \longrightarrow\dfrac{a^{N}_{1,m,n}-(-1)^{n+1}a^{N}_{2,m,n}}{\sqrt{2}}
-\end{align}$$
+### Fixed Tangential Connection
 
-and
+The hard condition
 
 $$\begin{align}
-\mathcal F_{\kappa\to0,N}^{\mathrm{osc}}=\mathcal F^{N}_{1}\otimes\mathcal F^{N}_{2}
+\delta A_t|_\alpha&=0, & \delta A_y|_\alpha&=0
 \end{align}$$
 
-### The $\displaystyle{\kappa\to\infty}$ Limit
+makes the bare action differentiable without a boundary action. Gauge transformations must preserve the fixed connection. In particular, boundary-dependent gauge transformations are not physical fluctuating solutions, and there is no boundary current family. This condition is consistent but stronger than is required by a first-order theory.
 
-Now
-
-$$\begin{align}
-k_{+,n}\to\dfrac{(n-\frac{1}{2})\pi}{L}, \qquad k_{-,n}\to\dfrac{n\pi}{L}
-\end{align}$$
+### Canonical Polarizations
 
-The global Maxwell Neumann theory on length $\displaystyle{2L}$ corresponds to scalar Dirichlet
+To fix $\displaystyle{A_t}$ while allowing $\displaystyle{A_y}$ to vary, add
 
 $$\begin{align}
-K_{r}=\dfrac{r\pi}{2L}, \qquad r=1,2,\dots
+S_{\partial,\alpha}^{(t)}&=\dfrac{n_\alpha k}{4\pi}\int_\alpha\mathrm{d}t\mathrm{d}y\,A_tA_y.
 \end{align}$$
 
-with modes
+The total boundary variation becomes
 
 $$\begin{align}
-U^{D}_{r}(x)=\dfrac{1}{\sqrt L}\sin\left[\dfrac{r\pi(x+L)}{2L}\right]
+\delta(S_{\mathrm{CS}}+S_{\partial,\alpha}^{(t)})|_\alpha&=\dfrac{n_\alpha k}{2\pi}\int_\alpha\mathrm{d}t\mathrm{d}y\,A_y\delta A_t.
 \end{align}$$
 
-so the interlacing is
+Conversely, adding
 
 $$\begin{align}
-b^{N}_{+,m,n}\to c^{N}_{m,2n-1}, \qquad b^{N}_{-,m,n}\to c^{N}_{m,2n}
+S_{\partial,\alpha}^{(y)}&=-\dfrac{n_\alpha k}{4\pi}\int_\alpha\mathrm{d}t\mathrm{d}y\,A_tA_y
 \end{align}$$
 
-and the global frequencies are
+gives
 
 $$\begin{align}
-\Omega^{N}_{m,r}=\sqrt{q_{m}^{2}+\dfrac{r^{2}\pi^{2}}{4L^{2}}}, \qquad r\geq1
+\delta(S_{\mathrm{CS}}+S_{\partial,\alpha}^{(y)})|_\alpha&=-\dfrac{n_\alpha k}{2\pi}\int_\alpha\mathrm{d}t\mathrm{d}y\,A_t\delta A_y,
 \end{align}$$
 
-## Harmonic and Zero-Mode Sector
+so $\displaystyle{A_y}$ is the fixed boundary datum. These two choices select conjugate polarizations. By themselves they do not choose a positive boundary Hamiltonian.
 
-The description is not yet complete, because the circle $\displaystyle{S_{y}^{1}}$ endows Maxwell with global modes that do not appear in the ordinary massive scalar calculation. This is where the two boundary conditions genuinely differ.
-
-### Dirichlet Zero Mode
-
-On an interval of length $\displaystyle{L}$ take
-
-$$\begin{align}
-A_{x}^{(0)}(t)=\dfrac{w(t)}{L}, \qquad A_{y}=A_{t}=0
-\end{align}$$
+### Positive-Energy Chiral Polarization
 
-Define the open Wilson-line coordinate
+Let $\displaystyle{v_\alpha>0}$ be a chosen boundary velocity and define
 
 $$\begin{align}
-w=\int_{I}A_{x}\,\mathrm{d}x
+\mathcal C_\alpha&=A_t+n_\alpha\operatorname{sgn}(k)v_\alpha A_y.
 \end{align}$$
 
-and the electric flux
+Add
 
 $$\begin{align}
-p=\int_{S_{y}^{1}}E_{x}\,\mathrm{d}y=\ell_{y}E_{x}
+S_{\partial,\alpha}^{\mathrm{ch}}&=\dfrac{n_\alpha k}{4\pi}\int_\alpha\mathrm{d}t\mathrm{d}y\left[A_tA_y+n_\alpha\operatorname{sgn}(k)v_\alpha A_y^2\right] \\
+&=\dfrac{n_\alpha k}{4\pi}\int_\alpha\mathrm{d}t\mathrm{d}y\,A_tA_y+\dfrac{|k|v_\alpha}{4\pi}\int_\alpha\mathrm{d}t\mathrm{d}y\,A_y^2.
 \end{align}$$
 
 Then
 
 $$\begin{align}
-\theta_{0,D}=p\,\delta w, \qquad \omega_{0,D}=\delta p\wedge\delta w, \qquad H_{0,D}^{(L)}=\dfrac{L}{2\ell_{y}}p^{2}
+\delta(S_{\mathrm{CS}}+S_{\partial,\alpha}^{\mathrm{ch}})|_\alpha&=\dfrac{n_\alpha k}{2\pi}\int_\alpha\mathrm{d}t\mathrm{d}y\,A_y\delta\mathcal C_\alpha.
 \end{align}$$
 
-This cannot be written as $\displaystyle{\omega(a^{\dagger}a+\frac{1}{2})}$ because it is a quantum-mechanical zero mode rather than a harmonic oscillator.
-
-The two decoupled theories have
+The no-source chiral condition is
 
 $$\begin{align}
-\omega_{0,D}^{\mathrm{dec}}=\delta p_{1}\wedge\delta w_{1}+\delta p_{2}\wedge\delta w_{2}, \qquad H_{0,D}^{\mathrm{dec}}=\dfrac{L}{2\ell_{y}}(p_{1}^{2}+p_{2}^{2})
+\mathcal C_\alpha|_\alpha&=0.
 \end{align}$$
 
-Strong gluing requires continuity of the normal electric field
+The sign involving $\displaystyle{n_\alpha}$ is required if the Noether charge of time translations is to be positive on both boundary components. Evaluating
 
 $$\begin{align}
-p_{1}=p_{2}=:p
+H_{\partial_t}&=X_{\partial_t}\cdot\theta-\alpha_{\partial_t}
 \end{align}$$
 
-while the relative Wilson line $\displaystyle{w_{1}-w_{2}}$ becomes the interface gauge direction; the genuine global coordinate is
+gives
 
 $$\begin{align}
-w=w_{1}+w_{2}
+H_{\partial_t}^{\mathrm{ch}}&=\dfrac{|k|}{4\pi}\sum_{\alpha\in\partial I}v_\alpha\int_{S_y^1}\mathrm{d}y\,A_y^2|_\alpha.
 \end{align}$$
 
-Pulling back the symplectic form,
+Thus the two ends of an interval carry opposite chiralities but positive contributions to the same time-translation charge.
+
+### Why There Is No Independent Maxwell-Type Neumann Condition
+
+A condition such as $\displaystyle{F_{xa}|_\alpha=0}$ is compatible with the theory, but the bulk equation already imposes $\displaystyle{F=0}$. It is therefore vacuous on the solution space and does not cancel the off-shell boundary term $\displaystyle{A_t\delta A_y-A_y\delta A_t}$. A differentiable Chern--Simons action still requires a polarization such as one of those above. Hence there are distinct boundary conditions, but not an independent Dirichlet--Neumann pair analogous to Maxwell theory.
+
+## Reduced Phase Space on One Interval
+
+### Boundary Current Modes
+
+Every local solution is flat. In a topologically trivial patch it can be written as
 
 $$\begin{align}
-\omega_{0,D}^{\mathrm{glued}}=\delta p\wedge\delta(w_{1}+w_{2})=\delta p\wedge\delta w
+A&=\mathrm{d}\Lambda.
 \end{align}$$
 
-with the global Hamiltonian
+For each endpoint $\displaystyle{\alpha}$, choose any smooth profile $\displaystyle{\chi_\alpha(x)}$ that equals one at $\displaystyle{\alpha}$ and zero at the other endpoint. Different choices differ by a gauge transformation that vanishes at both boundaries and hence define the same reduced solution.
+
+For the chiral polarization, let
 
 $$\begin{align}
-H_{0,D}^{(2L)}=\dfrac{L}{\ell_{y}}p^{2}
+q_m&=\dfrac{2\pi m}{\ell_y}, & m&\in\mathbb Z\setminus\{0\}.
 \end{align}$$
 
-which is also the direct answer computed on a single interval of length $\displaystyle{2L}$. This is the finite-region symplectic reduction
+The positive-frequency boundary modes are
 
 $$\begin{align}
-\{p_{1}=p_{2}\}/(\text{relative interface gauge})
+\Lambda_{\alpha,m}(t,x,y)&=\dfrac{\chi_\alpha(x)}{\sqrt{|km|}}e^{-iv_\alpha|q_m|t+iq_my}, & n_\alpha km&>0, \\
+\mathcal A_{\alpha,m}&=\mathrm{d}\Lambda_{\alpha,m}.
 \end{align}$$
 
-### Neumann Zero Mode
-
-The boundary condition $\displaystyle{E_{x}=B=0}$ permits a flat holonomy around $\displaystyle{S_{y}^{1}}$
+The sign condition $\displaystyle{n_\alpha km>0}$ simultaneously gives positive frequency and positive CPS norm. Let $\displaystyle{X_{\alpha,m}}$ be the tangent vector generated by $\displaystyle{\mathcal A_{\alpha,m}}$. Evaluating the full bulk pre-symplectic form on flat connections gives
 
 $$\begin{align}
-A_{y}^{(0)}(t)=\dfrac{\alpha(t)}{\ell_{y}}
+(\mathcal A_{\alpha,m},\mathcal A_{\beta,n})&=iX_{\beta,n}^*\cdot X_{\alpha,m}\cdot\omega_{\mathrm{CS}}=\delta_{\alpha\beta}\delta_{mn}.
 \end{align}$$
 
-Define
+Equivalently, for a flat connection $\displaystyle{A=\mathrm{d}\lambda}$ the oscillator part of the pre-symplectic form is the endpoint expression
 
 $$\begin{align}
-\alpha=\oint_{S_{y}^{1}}A_{y}\,\mathrm{d}y, \qquad p=\int_{I}E_{y}\,\mathrm{d}x
+\omega_{\mathrm{CS}}^{\mathrm{bdy}}&=\dfrac{k}{4\pi}\sum_{\alpha\in\partial I}n_\alpha\int_{S_y^1}\mathrm{d}y\,\delta\lambda_\alpha\wedge\partial_y\delta\lambda_\alpha.
 \end{align}$$
 
-Then
+The factor $\displaystyle{1/\sqrt{|km|}}$ above is fixed by the CPS contraction, not by a norm assigned directly to $\displaystyle{\Lambda}$. Expanding
 
 $$\begin{align}
-\theta_{0,N}=p\,\delta\alpha, \qquad \omega_{0,N}=\delta p\wedge\delta\alpha, \qquad H_{0,N}^{(L)}=\dfrac{\ell_{y}}{2L}p^{2}
+A^{\mathrm{bdy}}&=\sum_{\alpha\in\partial I}\sum_{m:\,n_\alpha km>0}\left(a_{\alpha,m}\mathcal A_{\alpha,m}+a_{\alpha,m}^\dagger\mathcal A_{\alpha,m}^*\right)
 \end{align}$$
 
-The two decoupled theories have
+gives
 
 $$\begin{align}
-H_{0,N}^{\mathrm{dec}}=\dfrac{\ell_{y}}{2L}(p_{1}^{2}+p_{2}^{2})
+\omega_{\mathrm{CS}}^{\mathrm{bdy}}&=i\sum_{\alpha\in\partial I}\sum_{m:\,n_\alpha km>0}\delta a_{\alpha,m}^\dagger\wedge\delta a_{\alpha,m}, \\
+[a_{\alpha,m},a_{\beta,n}^\dagger]&=\delta_{\alpha\beta}\delta_{mn}, \\
+H_{\partial_t}^{\mathrm{bdy}}&=\sum_{\alpha\in\partial I}\sum_{m:\,n_\alpha km>0}v_\alpha|q_m|\left(a_{\alpha,m}^\dagger a_{\alpha,m}+\dfrac12\right).
 \end{align}$$
 
-Global smoothness requires
+The boundary charge density
 
 $$\begin{align}
-\alpha_{1}=\alpha_{2}=:\alpha
+J_\alpha(y)&=\dfrac{n_\alpha k}{2\pi}A_y|_\alpha
 \end{align}$$
 
-and since $\displaystyle{E_{y}=\dot A_{y}}$,
+has the classical current algebra
 
 $$\begin{align}
-p_{1}=p_{2}=\dfrac{p}{2}, \qquad p=p_{1}+p_{2}
+\{J_\alpha(y),J_\beta(y')\}&=\delta_{\alpha\beta}\dfrac{n_\alpha k}{2\pi}\partial_y\delta(y-y').
 \end{align}$$
 
-Hence
+Thus the two endpoint current algebras have opposite levels.
+
+### Topological Holonomy Pair
+
+The nonzero boundary Fourier modes have vanishing $\displaystyle{y}$ average. The remaining flat-connection data can be represented by
 
 $$\begin{align}
-\omega_{0,N}^{\mathrm{glued}}=\delta(p_{1}+p_{2})\wedge\delta\alpha=\delta p\wedge\delta\alpha, \qquad H_{0,N}^{(2L)}=\dfrac{\ell_{y}}{4L}p^{2}
+\mathcal W_x&=\dfrac1{\ell_y}\int_{S_y^1}\mathrm{d}y\int_a^b\mathrm{d}x\,A_x, & \mathcal W_y&=\oint_{S_y^1}A_y\,\mathrm{d}y.
 \end{align}$$
 
-For compact $\displaystyle{U(1)}$ with unit charge, $\displaystyle{\alpha\sim\alpha+2\pi}$, so this is a quantum rotor with discrete $\displaystyle{p}$; for non-compact $\displaystyle{\mathbb{R}}$ Maxwell it is an ordinary free particle.
+Substitution into the pre-symplectic form gives
+
+$$\begin{align}
+\omega_{\mathrm{CS}}^{\mathrm{top}}&=\dfrac{k}{2\pi}\delta\mathcal W_x\wedge\delta\mathcal W_y.
+\end{align}$$
+
+For chiral boundary conditions at both endpoints, the time-translation Noether charge in this sector is
+
+$$\begin{align}
+H_{\partial_t}^{\mathrm{top}}&=\dfrac{|k|}{4\pi\ell_y}(v_a+v_b)\mathcal W_y^2.
+\end{align}$$
+
+For compact $\displaystyle{U(1)}$, $\displaystyle{\mathcal W_y}$ is angular. The status of the conjugate constant boundary phase depends on whether constant boundary gauge transformations are retained as physical symmetries or included in the quotient. The displayed two-form is the classical result before making that additional global quotient.
+
+## Gluing the Two Regions
+
+Now return to
+
+$$\begin{align}
+I_1&=[-L,0], & I_2&=[0,L].
+\end{align}$$
+
+At the two copies of the cut, the outward normals are
+
+$$\begin{align}
+n_{0_1}&=+1, & n_{0_2}&=-1.
+\end{align}$$
+
+Boundary conditions of any of the types above may be imposed at the physical outer endpoints. At the artificial cut, however, we do not add the positive-energy chiral boundary actions and do not impose two independent chiral conditions. Instead the two regional actions are varied together on matching cut data. Equivalently, one may retain the cut boundary transformations temporarily in an extended product pre-phase space and then perform the reduction below.
+
+The two intermediate cut current algebras have levels $\displaystyle{+k}$ and $\displaystyle{-k}$. This opposite sign is exactly what makes pure Chern--Simons gluing simpler than the Maxwell interpolation. If one first treated both cut faces as independent physical chiral boundaries, their cut Hamiltonians would have to be removed before the matching reduction; otherwise the two opposite chiral conditions would overconstrain the common connection.
+
+### Matching as a Bundle-Patching Condition
+
+Introduce a transition function $\displaystyle{e^{i\varphi(t,y)}}$ and impose
+
+$$\begin{align}
+A_{1,a}|_{0_1}-A_{2,a}|_{0_2}&=\partial_a\varphi, & a&=t,y, \\
+\varphi&\longrightarrow\varphi+\lambda_1|_{0_1}-\lambda_2|_{0_2}.
+\end{align}$$
+
+This $\displaystyle{\varphi}$ specifies how the two local representatives describe one connection. It is not assigned a kinetic action. On the cylinder the transition function extends into either patch, so in the topologically trivial description one may choose $\displaystyle{\varphi=0}$ and write
+
+$$\begin{align}
+A_{1,a}|_{0_1}&=A_{2,a}|_{0_2}, & \delta A_{1,a}|_{0_1}&=\delta A_{2,a}|_{0_2}.
+\end{align}$$
+
+The two bare Chern--Simons boundary variations at the cut then cancel because their outward normals are opposite. Therefore the sum $\displaystyle{S_{\mathrm{CS}}[A_1]+S_{\mathrm{CS}}[A_2]}$ is differentiable on the matching space without a cut Hamiltonian or a metric-dependent penalty term.
+
+### Gluing as CPS Reduction
+
+Before the reduction, a diagonal boundary gauge transformation with common parameter $\displaystyle{\epsilon(t,y)}$ has the cut Noether charge
+
+$$\begin{align}
+Q_{\Gamma,\epsilon}&=\dfrac{k}{2\pi}\int_{S_y^1}\mathrm{d}y\,\epsilon\left(A_{1,y}|_{0_1}-A_{2,y}|_{0_2}\right).
+\end{align}$$
+
+The matching equation is the vanishing of this cut charge for every $\displaystyle{\epsilon}$. The gluing prescription is:
+
+1. restrict the product pre-phase space to $\displaystyle{Q_{\Gamma,\epsilon}=0}$ for every $\displaystyle{\epsilon}$;
+2. pull back $\displaystyle{\omega_1+\omega_2}$ to this constraint surface;
+3. quotient the resulting null directions generated by the diagonal cut gauge transformations.
+
+For the nonzero boundary Fourier components, the cut contribution is
+
+$$\begin{align}
+\omega_\Gamma&=\dfrac{k}{4\pi}\int_{S_y^1}\mathrm{d}y\left(\delta\lambda_{1,\Gamma}\wedge\partial_y\delta\lambda_{1,\Gamma}-\delta\lambda_{2,\Gamma}\wedge\partial_y\delta\lambda_{2,\Gamma}\right).
+\end{align}$$
+
+On $\displaystyle{\lambda_{1,\Gamma}=\lambda_{2,\Gamma}}$ its pullback vanishes. The common cut variation is then a null direction and is quotiented. Thus no independent cut current algebra remains after gluing.
+
+The topological parts reduce just as directly. For the two pieces,
+
+$$\begin{align}
+\omega_1^{\mathrm{top}}+\omega_2^{\mathrm{top}}&=\dfrac{k}{2\pi}\left(\delta\mathcal W_{x,1}\wedge\delta\mathcal W_{y,1}+\delta\mathcal W_{x,2}\wedge\delta\mathcal W_{y,2}\right).
+\end{align}$$
+
+Matching gives $\displaystyle{\mathcal W_{y,1}=\mathcal W_{y,2}=\mathcal W_y}$, and hence
+
+$$\begin{align}
+\left.(\omega_1^{\mathrm{top}}+\omega_2^{\mathrm{top}})\right|_{\mathrm{match}}&=\dfrac{k}{2\pi}\delta(\mathcal W_{x,1}+\mathcal W_{x,2})\wedge\delta\mathcal W_y.
+\end{align}$$
+
+The sum $\displaystyle{\mathcal W_x=\mathcal W_{x,1}+\mathcal W_{x,2}}$ is the Wilson-line coordinate of the uncut interval. The relative coordinate becomes null on the matching surface and is removed by the quotient.
+
+### Direct Comparison with the Uncut Cylinder
+
+Solving $\displaystyle{F=0}$ directly on $\displaystyle{[-L,L]\times S_y^1}$ gives
+
+$$\begin{align}
+\omega_{\mathrm{uncut}}&=\dfrac{k}{4\pi}\int_{S_y^1}\mathrm{d}y\left(\delta\lambda_R\wedge\partial_y\delta\lambda_R-\delta\lambda_L\wedge\partial_y\delta\lambda_L\right) \\
+&\quad+\dfrac{k}{2\pi}\delta\mathcal W_x\wedge\delta\mathcal W_y.
+\end{align}$$
+
+This is exactly the result of the cut reduction: only the physical outer-boundary current modes and the single global holonomy pair remain. With the positive-energy chiral polarizations at $\displaystyle{x=\pm L}$, the Noether charge is likewise the sum of the two outer-boundary chiral Hamiltonians and the global holonomy contribution.
+
+For compact $\displaystyle{U(1)}$, the matching of $\displaystyle{y}$ holonomies is
+
+$$\begin{align}
+\mathcal W_{y,1}-\mathcal W_{y,2}&=2\pi s, & s&\in\mathbb Z
+\end{align}$$
+
+for chosen real lifts. If patch redefinitions, including winding large gauge transformations, are included in the gluing quotient and no outer boundary trivialization is held fixed, $\displaystyle{s}$ only changes the choice of lifts: one may choose equal lifts and use the matching equations above. If winding transformations at the physical outer boundaries are instead retained as physical symmetries, different $\displaystyle{s}$ are related to their charge or spectral-flow sectors and must not be quotiented silently. The local cut reduction is unchanged, but that global boundary-sector choice must be specified separately.
+
+### Why No Finite-$\displaystyle{\kappa}$ Interaction Is Needed
+
+Pure Chern--Simons gluing is the exact symplectic reduction just described. A quadratic term proportional to $\displaystyle{\kappa(A_1-A_2-\mathrm{d}\varphi)^2}$ would require a boundary metric and would give the transition field its own propagating dynamics. Such a family can be studied as Chern--Simons theory coupled to an interface theory, but its finite-$\displaystyle{\kappa}$ members are not pure Chern--Simons theory and are unnecessary for gluing.
+
+If the two physical outer endpoints are also identified, all boundary current contributions are removed and the spatial slice becomes a torus. The remaining compact phase space is the holonomy torus
+
+$$\begin{align}
+\omega_{T^2}&=\dfrac{k}{2\pi}\delta\mathcal W_x\wedge\delta\mathcal W_y, & \mathcal W_x&\sim\mathcal W_x+2\pi, & \mathcal W_y&\sim\mathcal W_y+2\pi.
+\end{align}$$
+
+Its prequantization number is
+
+$$\begin{align}
+\dfrac1{2\pi}\int_{T^2}\omega_{T^2}&=k,
+\end{align}$$
+
+and standard geometric quantization gives the $\displaystyle{|k|}$-dimensional Hilbert space of compact $\displaystyle{U(1)_k}$ Chern--Simons theory on the torus. This provides a closed-spatial-slice check of the gluing prescription.
 
 ## Summary
 
-The full Maxwell Hilbert space is not a single Fock space but
+The Chern--Simons problem has boundary conditions, but they are choices of boundary polarization rather than Maxwell-type Dirichlet or Neumann data. A hard fixed connection removes boundary current fluctuations; fixing one canonical component gives a polarization without a preferred positive Hamiltonian; and the orientation-dependent chiral condition gives two positive-energy, oppositely chiral boundary current algebras.
 
-$$\begin{align}
-\mathcal H=\mathcal H_{0}\otimes\mathcal F_{\mathrm{photon}}
-\end{align}$$
-
-For the two boundary conditions
-
-$$\begin{align}
-\begin{array}{c|c|c}
- & \mathsf D_{M} & \mathsf N_{M} \\
-\hline \text{Maxwell BC} & A_{t}=A_{y}=0 & E_{x}=B=0 \\
-\text{dual scalar BC} & \partial_{x}\varphi=0 & \varphi=0 \\
-x\text{-basis} & \cos(kx) & \sin(kx) \\
-n & 0,1,2,\dots & 1,2,\dots \\
-\text{global zero mode} & (w,p_{E}) & (\alpha,p_{y}) \\
-\kappa\to0 & \mathcal H_{D,1}\otimes\mathcal H_{D,2} & \mathcal H_{N,1}\otimes\mathcal H_{N,2} \\
-\kappa\to\infty & \text{global } \mathsf D_{M} & \text{global } \mathsf N_{M}
-\end{array}
-\end{align}$$
-
-and the oscillator spectra are
-
-$$\begin{align}
-\mathsf D_{M}: \quad k_{+,n}=\dfrac{n\pi}{L}, \qquad k_{-,n}\tan(k_{-,n}L)=2\mu\kappa; \\
-\mathsf N_{M}: \quad k_{+,n}\cot(k_{+,n}L)=-\dfrac{\mu}{\kappa}, \qquad k_{-,n}\cot(k_{-,n}L)=-\mu\left(\dfrac{1}{\kappa}+2\kappa\right)
-\end{align}$$
-
-with the unified dispersion
-
-$$\begin{align}
-\omega_{\sigma,m,n}^{2}=q_{m}^{2}+k_{\sigma,n}^{2}
-\end{align}$$
-
-The second line of spectra is the pure-scalar calculation mode by mode with an added $\displaystyle{q_{m}}$, while the first line is the Neumann-scalar counterpart missing from it. Up to the oscillator sector, this problem is essentially a copy of the scalar gluing, with all Maxwell-specific structure concentrated in the proper-gauge quotient and the harmonic/edge sector, namely
-
-$$\begin{align}
-\text{cut gauge symmetry}+\text{electric flux/holonomy zero modes}
-\end{align}$$
-
-This is the structure that persists in a $3+1$ Maxwell generalization, while the $2+1$ scalar duality merely simplifies the local oscillator calculation.
+At an artificial cut, the two Chern--Simons boundary symplectic forms already occur with opposite signs. Gluing therefore consists of matching the two pullback connections, restricting the product pre-phase space, pulling back the pre-symplectic form, and quotienting the diagonal cut gauge transformations. The cut current modes cancel, the two regional holonomy pairs reduce to one global pair, and the result agrees exactly with the theory constructed directly on the uncut cylinder.
