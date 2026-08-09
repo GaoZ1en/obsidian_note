@@ -20,7 +20,7 @@ we need to do the following calculations to check whether this theory is well-de
 - act the Killing symmetry on the action, verify whether the action has the Killing symmetry. Calculate the corresponding Noether charge
 - use the conserved charge corresponds to $\displaystyle{\xi _{0}}$ and $\displaystyle{\bar{\xi}_{0}}$ to find expressions to constrain angular momentum.
 
-## Finiteness of the action
+## Finiteness of the Action
 
 Take a IbP of the action
 
@@ -69,7 +69,7 @@ $$\begin{align}
 S & =\int _{M} \mathrm{d}^{3}x\sqrt{ -g }\left(-\dfrac{1}{2}g^{\mu \nu}\partial _{\mu}\Phi \partial _{\nu}\Phi-\dfrac{1}{2}\Delta(\Delta-2)\Phi ^{2}\right)+\int _{\Gamma}\mathrm{d}^{2}x\sqrt{ -\gamma } \left(-\dfrac{\Delta}{2}\Phi ^{2}\right)
 \end{align}$$
 
-## CPS formalism
+## CPS Formalism
 
 Take a variation of the action
 
@@ -182,7 +182,7 @@ H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau ^{\mu}\xi ^{\nu}\wid
 \widehat{T}_{\mu \nu} & =T_{\mu \nu}-\dfrac{\Delta}{2(2\Delta+1)}(\nabla _{\mu}\nabla _{\nu}-g_{\mu \nu}\nabla ^{2}+2g_{\mu \nu})\Phi ^{2}
 \end{align}$$
 
-## Constrain the angular momentum
+## Constrain the Angular Momentum
 
 Act $\displaystyle{X_{\xi}}$ on the symplectic form
 
@@ -221,7 +221,7 @@ i(\omega-m)\omega[\varphi;\varphi ^{*}] & =\lim_{ r \to \infty } \left\{\int _{0
   &\left.\left. +(\Delta-1)^{2}r|\varphi|^{2}+r^{3}|\partial _{r}\varphi+\dfrac{1}{r}\varphi|^{2} \right]-(1-\Delta)\int _{0}^{2\pi} \mathrm{d}\phi r^{2}|\varphi|^{2}\right\} \\
 \end{align}$$
 
-## Noether's trick
+## Noether's Trick
 
 Take a variation of the action with respect to $\displaystyle{\Phi,g_{\mu \nu},\gamma _{ab}}$
 
