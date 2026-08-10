@@ -173,7 +173,7 @@ def check_agents_hierarchy(root_text: str, errors: list[str]) -> int:
             errors.append(f"missing AGENTS hierarchy path: {relative}")
 
     actual: set[str] = set()
-    for top_level in ("Articles", "Lecture", "Note"):
+    for top_level in ("Articles", "Lecture", "Literature Notes", "Note"):
         base = VAULT / top_level
         if base.exists():
             actual.update(
