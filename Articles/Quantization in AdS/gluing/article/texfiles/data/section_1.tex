@@ -1,0 +1,116 @@
+\section{Finite-coupling gluing}\label{sec:gluing-formalism}
+
+Consider two field theories on spacetime regions $M_1$ and $M_2$ whose boundaries contain two copies of the same timelike hypersurface $Gamma$. The copies are identified only after the interface interaction is specified. We orient the outward normals independently on the two regions.
+
+\subsection{Interface action and cut equations}\label{subsec:interface-action}
+
+Let $q_i^A$ denote the boundary traces that are to be identified. The index $A$ may contain tensor and tangential spacetime indices. Write the cut-supported part of the bulk variation as
+
+\begin{align}
+\delta S_{\mathrm{bulk}}\big|_{\Gamma}
+=-\int_{\Gamma}\left(\rho_{1A}\,\delta q_1^A+\rho_{2A}\,\delta q_2^A\right),
+\end{align}
+
+where $\rho_{iA}$ is the outward response on the $i$th face. For a scalar cut by a coordinate $s$ increasing from $M_1$ to $M_2$, one has $\rho_1=\partial_s\phi_1$ and $\rho_2=-\partial_s\phi_2$.
+
+For a nongauge field, define the mismatch by
+
+\begin{align}
+\eta^A=q_1^A-q_2^A.
+\end{align}
+
+In a gauge theory this expression is replaced by its gauge-invariant dressed version. The Maxwell example below uses $\eta_a=A_{1,a}-A_{2,a}-\partial_a\varphi$, where $\varphi$ is a transition field on $\Gamma$.
+
+Let $G_{AB}$ be the local interface bilinear appropriate to the fields and induced geometry. The finite-coupling gluing action is
+
+\begin{align}
+S_{\Gamma,g}=-\frac{g}{2}\int_{\Gamma}\eta^A G_{AB}\eta^B,
+\qquad g>0.
+\end{align}
+
+Its variation, together with the two bulk variations, gives
+
+\begin{align}
+\rho_{1A}=-gG_{AB}\eta^B,
+\qquad
+\rho_{2A}=+gG_{AB}\eta^B.
+\end{align}
+
+Thus outward flux is balanced at every finite coupling,
+
+\begin{align}
+\rho_{1A}+\rho_{2A}=0.
+\end{align}
+
+The corresponding time-translation Noether charge contains a positive interface contribution whenever $G_{AB}$ is positive on the spatial interface data. Consequently, for a family with bounded Noether charge,
+
+\begin{align}
+g\longrightarrow\infty
+\qquad\Longrightarrow\qquad
+\eta^A\longrightarrow0.
+\end{align}
+
+The strong-coupling theory therefore identifies the dressed traces and simultaneously balances their outward responses. The limit $g\to0$ removes the interaction and returns the direct sum of the two region theories. These statements concern the limiting classical solution spaces and their quadratic forms. Convergence of individual spectral branches can be studied example by example, while convergence of the full quantum representations is a separate question.
+
+\subsection{Covariant phase space}\label{subsec:formalism-cps}
+
+Suppose the complete action has the variation
+
+\begin{align}
+\delta S_g
+=\int_{M_1\cup M_2}E_a\delta\Psi^a
++\theta_g\big|_{\Sigma_f}-\theta_g\big|_{\Sigma_i},
+\end{align}
+
+after the cut equations have been imposed. The pre-symplectic potential and pre-symplectic form are
+
+\begin{align}
+\theta_g=\theta_1+\theta_2+\theta_{\Gamma,g},
+\qquad
+\omega_g=\delta\theta_g.
+\end{align}
+
+For the scalar interactions used below, the cut action contains no time derivatives and $\theta_{\Gamma,g}=0$. If a transition field occurs with a time derivative, as in Maxwell theory, its time-endpoint term contributes to $\theta_{\Gamma,g}$ and cannot be omitted.
+
+The pre-phase space is the set of bulk solutions satisfying the finite-coupling cut equations. For gauge theories one then quotients the kernel of $\omega_g$. A positive-frequency physical mode $\Psi_I$ is normalized by the CPS contraction
+
+\begin{align}
+(\Psi_I,\Psi_J)_g
+=iX_J^*\mathbin{\cdot}X_I\mathbin{\cdot}\omega_g
+=\delta_{IJ}.
+\end{align}
+
+The field expansion and reduced symplectic form are
+
+\begin{align}
+\Psi=\sum_I\left(a_I\Psi_I+a_I^\dagger\Psi_I^*\right),
+\qquad
+\omega_g=i\sum_I\delta a_I^\dagger\wedge\delta a_I,
+\end{align}
+
+so quantization gives
+
+\begin{align}
+[a_I,a_J^\dagger]=\delta_{IJ}.
+\end{align}
+
+Spatial integrals used later are evaluations of this CPS contraction for particular representatives. They are not independent prescriptions for normalizing the fields.
+
+\subsection{Boundary-polarized representation}\label{subsec:boundary-polarized}
+
+There is an equivalent representation of the same interface relation. After the boundary Legendre transform adapted to the outward response, introduce an independently varied interface field $d_A$ and take
+
+\begin{align}
+\widetilde S_{\Gamma,g}
+=\int_{\Gamma}\left[
+d_A\eta^A+\frac{1}{2g}d_A(G^{-1})^{AB}d_B
+\right].
+\end{align}
+
+Its interface equation is
+
+\begin{align}
+d_A=-gG_{AB}\eta^B.
+\end{align}
+
+Eliminating $d_A$ returns $S_{\Gamma,g}$. For a scalar, $d_A$ is the common oriented derivative at the cut. For Maxwell theory, the analogous representation is quadratic in $n_\mu F^{\mu a}$ with coefficient proportional to $g^{-1}$. The two representations describe the same cut equations and the same CPS reduction; they are different boundary polarizations of one gluing theory.

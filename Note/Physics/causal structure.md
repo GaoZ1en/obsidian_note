@@ -67,12 +67,14 @@ $$
 We have $I^+(p) \subset J^+(p)$ and analogously for past sets.
 
 **Definition 2.3 (Domain of dependence)**. For an achronal set $S$ (i.e. no timelike curve joins two points of $S$, so $S\cap I^+(S)=\varnothing$), the future and past domains of dependence are
+
 $$
 \begin{aligned}
 D^+(S) &= \{ q \in M : \text{every past-inextendible causal curve through } q \text{ meets } S \},\\
 D^-(S) &= \{ q \in M : \text{every future-inextendible causal curve through } q \text{ meets } S \},
 \end{aligned} \tag{2.2}
 $$
+
 and $D(S) = D^+(S) \cup D^-(S)$. The future Cauchy horizon is $H^+(S) = \overline{D^+(S)} \setminus I^-(D^+(S))$; $S$ is a Cauchy surface iff $D(S) = M$.
 
 ### 2.2 Structural Properties
@@ -108,7 +110,7 @@ $$\begin{align}
 
 Each arrow is strict (standard counterexamples omitted here for brevity).
 
-### 3.2 Non‑totally Vicious
+### 3.2 Non‑Totally Vicious
 
 **Definition 3.2**. Non‑totally vicious: $\exists p$ with $p \notin I^+(p)$. Equivalently, closed timelike curves do not pass through every point.
 
@@ -400,10 +402,7 @@ With $\theta_0<0$ the RHS hits zero at $\tau -\tau_0 = -3/\theta_0 = 3/|\theta_0
 
 ### 6.6 Applications
 
-Black hole collapse: trapped 2‑spheres ⇒ Penrose theorem.
-Cosmology (FLRW with SEC): contracting slice ⇒ Hawking theorem.
-Kerr: ring singularity ensured by trapped surfaces + generic condition.
-Schwarzschild interior: trapped $S^2$ at $r<2M$ since $\theta_{(\ell)}=\tfrac{2}{r}(1-2M/r)<0$, $\theta_{(n)}=-2/r<0$.
+Black hole collapse: trapped 2‑spheres ⇒ Penrose theorem. Cosmology (FLRW with SEC): contracting slice ⇒ Hawking theorem. Kerr: ring singularity ensured by trapped surfaces + generic condition. Schwarzschild interior: trapped $S^2$ at $r<2M$ since $\theta_{(\ell)}=\tfrac{2}{r}(1-2M/r)<0$, $\theta_{(n)}=-2/r<0$.
 
 ### 6.7 Alternative Notions of Incompleteness and Singular Behavior
 
