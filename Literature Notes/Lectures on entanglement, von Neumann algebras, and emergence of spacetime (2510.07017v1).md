@@ -13,21 +13,21 @@ url: https://arxiv.org/abs/2510.07017v1
 tags: []
 ---
 
-# Type I and Type II von Neumann algebrs
+# Type I and Type II Von Neumann Algebrs
 
-a von Neumann algebra $\displaystyle{\mathcal{M}}$ defines a subsystem, and vice versa.
+A von Neumann algebra $\displaystyle{\mathcal{M}}$ defines a subsystem, and vice versa.
 
-## density operators for type I and II algebras
+## Density Operators for Type I and II Algebras
 
-suppose the system is in a status $\displaystyle{\ket{\Psi}}$. when a von Neumann algebra $\displaystyle{\mathcal{M}}$ has a trace, it is possible to define a density operator $\displaystyle{\rho _{\mathcal{M}}}$ associated with $\displaystyle{\mathcal{M}}$ for $\displaystyle{\ket{\Psi}}$ as
+Suppose the system is in a status $\displaystyle{\ket{\Psi}}$. When a von Neumann algebra $\displaystyle{\mathcal{M}}$ has a trace, it is possible to define a density operator $\displaystyle{\rho _{\mathcal{M}}}$ associated with $\displaystyle{\mathcal{M}}$ for $\displaystyle{\ket{\Psi}}$ as
 
 $$\begin{align}
 \mathrm{Tr}(A\rho _{\mathcal{M}}) & = \braket{ \Psi|A|\Psi },\quad \forall A\in \mathcal{M}
 \end{align}$$
 
-## type I algebras
+## Type I Algebras
 
-for $\displaystyle{\mathcal{M}}$ being a type I factor, there exists a factorization of the Hilbert space $\displaystyle{\mathcal{H}=\mathcal{H}_{R}\otimes \mathcal{H}_{L}}$ such that
+For $\displaystyle{\mathcal{M}}$ being a type I factor, there exists a factorization of the Hilbert space $\displaystyle{\mathcal{H}=\mathcal{H}_{R}\otimes \mathcal{H}_{L}}$ such that
 
 $$\begin{align}
 \mathcal{M} & =\mathcal{B}(\mathcal{H}_{R})\otimes 1_{L}, & \quad \mathrm{Tr} & =\mathrm{Tr}_{\mathcal{H}_{R}}, & \mathcal{M'}=1_{R}\otimes \mathcal{B}(\mathcal{H}_{L})
@@ -41,9 +41,9 @@ $$\begin{align}
 
 we conclude that $\displaystyle{\rho _{\mathcal{M}}=\rho _{R}=\mathrm{Tr}_{\mathcal{H}_{L}}\ket{\Psi}\bra{\Psi}}$.
 
-### generic type I
+### Generic Type I
 
-consider a generic type I algebra $\displaystyle{\mathcal{M}}$ with non-trivial center. it can be shown that there exists a decomposition
+Consider a generic type I algebra $\displaystyle{\mathcal{M}}$ with non-trivial center. It can be shown that there exists a decomposition
 
 $$\begin{align}
 \mathcal{H} & =\oplus _{\alpha}\mathcal{H}_{\alpha}, & \mathcal{H}_{\alpha} & =\mathcal{H}_{R_{\alpha}}\otimes \mathcal{H}_{L_{\alpha}} \\
@@ -80,53 +80,53 @@ S_{\alpha} & =-\mathrm{Tr}_{\alpha}\rho _{R_{\alpha}}\log \rho _{R_{\alpha}}
 
 where the first term comes from statistics, and the second term comes from entanglement.
 
-## type II algebras
+## Type II Algebras
 
-### trace for $\displaystyle{\theta=\frac{\pi}{4}}$
+### Trace for $\displaystyle{\theta=\frac{\pi}{4}}$
 
-what does $\displaystyle{\theta=\frac{\pi}{4}}$ mean? it means that we have a state
+What does $\displaystyle{\theta=\frac{\pi}{4}}$ mean? It means that we have a state
 
 $$\begin{align}
 \ket{\Psi_{\theta}} =\sum _{i=1}^{\infty}\left(\cos \theta \ket{0} _{L,i}\ket{0} _{R,i}+\sin \theta \ket{1} _{L,i}\ket{1}_{R,i}\right)
 \end{align}$$
 
-and when $\displaystyle{\theta=\frac{\pi}{4}}$, the $\displaystyle{R}$ system and $\displaystyle{L}$ system are maximally entangled. in this case, it is possible to define a trace on $\displaystyle{\mathcal{M}=\mathcal{M}_{R}}$ as
+and when $\displaystyle{\theta=\frac{\pi}{4}}$, the $\displaystyle{R}$ system and $\displaystyle{L}$ system are maximally entangled. In this case, it is possible to define a trace on $\displaystyle{\mathcal{M}=\mathcal{M}_{R}}$ as
 
 $$\begin{align}
 \mathrm{Tr}A & =\braket{\Psi_{\pi /4}|A|\Psi_{\pi /4}},\quad \forall A\in \mathcal{M}
 \end{align}$$
 
-### type II$_{1}$ for $\displaystyle{\theta=\frac{\pi}{4}}$
+### Type II$_{1}$ for $\displaystyle{\theta=\frac{\pi}{4}}$
 
-the maximal projection is the identity operator
+The maximal projection is the identity operator
 
 $$\begin{align}
 1 & =1_{2}\otimes 1_{2}\otimes \dots
 \end{align}$$
 
-and all other projections are subprojections of the identity operator. thus, the algebra $\displaystyle{\mathcal{M}}$ is a type II$_{1}$ factor.
+and all other projections are subprojections of the identity operator. Thus, the algebra $\displaystyle{\mathcal{M}}$ is a type II$_{1}$ factor.
 
 ...
 
-# type III
+# Type III
 
-for type III algebras, there is no trace. and it is not possible to define a density operator (even in the renormalized sense) associated with $\displaystyle{\mathcal{M}}$ for a state.
+For type III algebras, there is no trace. And it is not possible to define a density operator (even in the renormalized sense) associated with $\displaystyle{\mathcal{M}}$ for a state.
 
-## emergent times, modular flows
+## Emergent Times, Modular Flows
 
-we first turn to type I case and reformulate the chracterization of entanglement in terms of modular flows. we consider
+We first turn to type I case and reformulate the chracterization of entanglement in terms of modular flows. We consider
 
 $$\begin{align}
 \rho _{R} & =\mathrm{Tr}_{L}\ket{\Psi} \bra{\Psi} \equiv e^{-K_{R}},  & K_{R}=-\log \rho _{R}
 \end{align}$$
 
-the information contained in $\displaystyle{S_{R}}$ and $\displaystyle{S_{R}^{(n)}}$ is fully captured by the spectrum of $\displaystyle{K_{R}}$ (entanglement spectrum). the flow is generated by $\displaystyle{K_{R}}$:
+the information contained in $\displaystyle{S_{R}}$ and $\displaystyle{S_{R}^{(n)}}$ is fully captured by the spectrum of $\displaystyle{K_{R}}$ (entanglement spectrum). The flow is generated by $\displaystyle{K_{R}}$:
 
 $$\begin{align}
 A(s) & =e^{isK_{R}}Ae^{-isK_{R}},\quad \forall A\in \mathcal{M}=\mathcal{B}(\mathcal{H}_{R})\otimes 1_{L}
 \end{align}$$
 
-the flow acts within the system. Kubo-Martin-Schwinger relation? similarly we introduce $\displaystyle{K_{L}=\log \rho _{L},\rho _{L}=\mathrm{Tr}_{R}\ket{\Psi}\bra{\Psi}}$. we can treat the $\displaystyle{R}$ and $\displaystyle{L}$ systems together by introducing
+the flow acts within the system. Kubo-Martin-Schwinger relation? Similarly we introduce $\displaystyle{K_{L}=\log \rho _{L},\rho _{L}=\mathrm{Tr}_{R}\ket{\Psi}\bra{\Psi}}$. We can treat the $\displaystyle{R}$ and $\displaystyle{L}$ systems together by introducing
 
 $$\begin{align}
 \Delta _{\Psi} & =\rho _{R}\otimes \rho _{L}^{-1}, & -\log \Delta _{\Psi} & =K_{R}-K_{L}
@@ -141,13 +141,13 @@ $$\begin{align}
 
 $\displaystyle{\Delta _{\Psi}}$ is called the modular operator, the action $\displaystyle{\sigma _{s}}$ is called the modular flow, and $\displaystyle{s}$ the modular time.
 
-the fact that in a pure state $\displaystyle{S_{R}=S_{L}}$ implies $\displaystyle{\Delta _{\Psi}}$ leaves $\displaystyle{\ket{\Psi}}$ invariant:
+The fact that in a pure state $\displaystyle{S_{R}=S_{L}}$ implies $\displaystyle{\Delta _{\Psi}}$ leaves $\displaystyle{\ket{\Psi}}$ invariant:
 
 $$\begin{align}
 \Delta _{\Psi}\ket{\Psi} & =\Delta _{\Psi}^{-1}\ket{\Psi} =\ket{\Psi} \implies (K_{R}-K_{L})\ket{\Psi} =0
 \end{align}$$
 
-which means the modular flow generated by $\displaystyle{\Delta _{\Psi}}$ is a symmetry of the state $\displaystyle{\ket{\Psi}}$. since $\displaystyle{\Delta _{\Psi}}$ is well-defined only when $\displaystyle{\rho _{R}}$ and $\displaystyle{\rho _{L}}$ are invertible, the Hilbert spaces $\displaystyle{\mathcal{H}_{R}}$ and $\displaystyle{\mathcal{H}_{L}}$ have the same dimension. so it is possible to define a anti-unitary operator $\displaystyle{J_{\Psi}}$ that swaps the $\displaystyle{R}$ and $\displaystyle{L}$ systems:
+which means the modular flow generated by $\displaystyle{\Delta _{\Psi}}$ is a symmetry of the state $\displaystyle{\ket{\Psi}}$. Since $\displaystyle{\Delta _{\Psi}}$ is well-defined only when $\displaystyle{\rho _{R}}$ and $\displaystyle{\rho _{L}}$ are invertible, the Hilbert spaces $\displaystyle{\mathcal{H}_{R}}$ and $\displaystyle{\mathcal{H}_{L}}$ have the same dimension. So it is possible to define a anti-unitary operator $\displaystyle{J_{\Psi}}$ that swaps the $\displaystyle{R}$ and $\displaystyle{L}$ systems:
 
 $$\begin{align}
 \ket{\phi}  & =\sum _{m,n}\phi _{mn}\ket{m} _{R}\otimes \ket{n} _{L}\in \mathcal{H} \\
@@ -160,7 +160,7 @@ $$\begin{align}
 J_{\Psi}^{2} & =1
 \end{align}$$
 
-$\displaystyle{J_{\Psi}}$ is known as the modular conjugation operator. in order to generalize to the case of type III algebras, we introduce the notion of cyclic and separating vector. a state $\displaystyle{\ket{\Psi}}$ is called to be cyclic with respect to an algebra $\displaystyle{\mathcal{M}}$ if the set $\displaystyle{\left\{A\ket{\Psi},A\in \mathcal{M}\right\}}$ is dense in the Hilbert space $\displaystyle{\mathcal{H}}$. $\displaystyle{\rho _{R}}$ and $\displaystyle{\rho _{L}}$ are full-rank is equivalent to the statement that $\displaystyle{\ket{\Psi}}$ is cyclic with respect to $\displaystyle{\mathcal{M}=\mathcal{B}(\mathcal{H}_{R})\otimes 1_{L}}$ and its commutant $\displaystyle{\mathcal{M}'=1_{R}\otimes \mathcal{B}(\mathcal{H}_{L})}$. a state $\displaystyle{\ket{\Psi}}$ is called to be separating with respect to an algebra $\displaystyle{\mathcal{M}}$ if for any $A\in \mathcal{M}$, $A\ket{\Psi}=0$ implies $A=0$.
+$\displaystyle{J_{\Psi}}$ is known as the modular conjugation operator. In order to generalize to the case of type III algebras, we introduce the notion of cyclic and separating vector. A state $\displaystyle{\ket{\Psi}}$ is called to be cyclic with respect to an algebra $\displaystyle{\mathcal{M}}$ if the set $\displaystyle{\left\{A\ket{\Psi},A\in \mathcal{M}\right\}}$ is dense in the Hilbert space $\displaystyle{\mathcal{H}}$. $\displaystyle{\rho _{R}}$ and $\displaystyle{\rho _{L}}$ are full-rank is equivalent to the statement that $\displaystyle{\ket{\Psi}}$ is cyclic with respect to $\displaystyle{\mathcal{M}=\mathcal{B}(\mathcal{H}_{R})\otimes 1_{L}}$ and its commutant $\displaystyle{\mathcal{M}'=1_{R}\otimes \mathcal{B}(\mathcal{H}_{L})}$. A state $\displaystyle{\ket{\Psi}}$ is called to be separating with respect to an algebra $\displaystyle{\mathcal{M}}$ if for any $A\in \mathcal{M}$, $A\ket{\Psi}=0$ implies $A=0$.
 
 Tomita-Takesaki theory says that for a von Neumann algebra $\displaystyle{\mathcal{M}}$ with a cyclic and separating vector $\displaystyle{\ket{\Psi}}$
 - there exists a positive modular operator $\displaystyle{\Delta _{\Psi}}$ leaving $\displaystyle{\ket{\Psi}}$ invariant
@@ -209,15 +209,15 @@ f_{AB}(s) & =f_{BA}(-s-i)
 
 remark: the KMS condition is a generalization of the detailed balance condition for thermal equilibrium states, and it characterizes the thermal nature/emergent time of the modular flow.
 
-### classification of type III factors
+### Classification of Type III Factors
 
-firstly, modular flows $\displaystyle{\sigma _{s}(\mathcal{M})}$ for all $\displaystyle{s \in \mathbb{R}}$ are inner automorphisms of $\displaystyle{\mathcal{M}}$ iff $\displaystyle{\mathcal{M}}$ is type I or II. we say $\displaystyle{\sigma _{s}}$ is an inner automorphism iff there exists a unitary operator $\displaystyle{U_{s}\in \mathcal{M}}$ such that
+Firstly, modular flows $\displaystyle{\sigma _{s}(\mathcal{M})}$ for all $\displaystyle{s \in \mathbb{R}}$ are inner automorphisms of $\displaystyle{\mathcal{M}}$ iff $\displaystyle{\mathcal{M}}$ is type I or II. We say $\displaystyle{\sigma _{s}}$ is an inner automorphism iff there exists a unitary operator $\displaystyle{U_{s}\in \mathcal{M}}$ such that
 
 $$\begin{align}
 \sigma _{s}(A) & \equiv \Delta _{\Psi}^{-is}A\Delta _{\Psi}^{is}=U^{\dagger}_{s}AU_{s},  & \forall A\in \mathcal{M}, s\in \mathbb{R}
 \end{align}$$
 
-for a different cyclic and separating vector $\displaystyle{\ket{\Omega}}$, we have the corresponding $\displaystyle{\Delta _{\Omega}}$ and $\displaystyle{\sigma _{s}^{\Omega}}$. it can be shown that $\displaystyle{\Delta _{\Psi},\Delta _{\Omega}}$ and $\displaystyle{\sigma _{s}^{\Psi},\sigma _{s}^{\Omega}}$ are related by inner automorphisms of $\displaystyle{\mathcal{M}}$. there exists a one-parameter unitaries $\displaystyle{u_{\Psi\Omega}(s)\in \mathcal{M}}$ that
+for a different cyclic and separating vector $\displaystyle{\ket{\Omega}}$, we have the corresponding $\displaystyle{\Delta _{\Omega}}$ and $\displaystyle{\sigma _{s}^{\Omega}}$. It can be shown that $\displaystyle{\Delta _{\Psi},\Delta _{\Omega}}$ and $\displaystyle{\sigma _{s}^{\Psi},\sigma _{s}^{\Omega}}$ are related by inner automorphisms of $\displaystyle{\mathcal{M}}$. There exists a one-parameter unitaries $\displaystyle{u_{\Psi\Omega}(s)\in \mathcal{M}}$ that
 
 $$\begin{align}
 \sigma ^{\Psi}_{s}(A) & =u_{\Psi\Omega}(s)\sigma ^{\Omega}_{s}(A)u^{\dagger}_{\Psi\Omega}(s), \forall s \in \mathbb{R}, A\in \mathcal{M} \\
