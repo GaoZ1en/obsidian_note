@@ -1,6 +1,6 @@
 {
   "name": "mcp-server-xact",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "A Model Context Protocol server for xAct-backed Wolfram Language checks",
   "type": "module",
   "bin": {
@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "tsc && chmod 755 build/index.js",
+    "test": "npm run build && node --test test/*.test.mjs",
     "prepare": "npm run build"
   },
   "files": [

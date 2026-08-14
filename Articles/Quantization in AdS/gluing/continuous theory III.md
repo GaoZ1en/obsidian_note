@@ -425,6 +425,8 @@ The second line is the cut contribution. It is essential both for normalization 
 
 #### Finite-$\displaystyle{\kappa}$ Modes
 
+The formulas below describe the exact continuum trajectory $\displaystyle{d=\mu/\kappa}$ and $\displaystyle{h=\mu\kappa}$. More generally the gauge-invariant boundary matrix has independent common and relative eigenvalues $\displaystyle{d}$ and $\displaystyle{d+2h}$. This distinction is immaterial for solving a chosen exact continuum theory, but it is essential for a finite-mode cutoff: the two boundary channels must be allowed to run independently.
+
 Use reflection parity
 
 $$\begin{align}
@@ -882,6 +884,24 @@ Consequently, the correct pure-Maxwell gluing prescription is to take $\displays
 
 This establishes equality of the reduced classical phase spaces and a mode-by-mode match of their Noether charges. It does not assert convergence of the unreduced finite-$\displaystyle{\kappa}$ Fock spaces under a fixed unitary identification; the exceptional normalized family is precisely the obstruction to such a statement.
 
+#### Finite-mode cutoff of the Dirichlet interpolation
+
+After diagonalizing the two boundary channels, each local photon sector is a generalized eigenproblem rather than a stiffness update. In an outer-Dirichlet/cut-Neumann basis,
+
+$$\begin{align}
+K_N&=D_N,
+&G_{s,N}&=I+\dfrac1{\alpha_s}bb^{\mathrm T},
+&\alpha_s&\in\{d,d+2h\}.
+\end{align}$$
+
+If $\displaystyle{T_N(k)}$ is the omitted boundary response, exact matching at one selected wave number requires
+
+$$\begin{align}
+\alpha_{s,N}(k)&=\alpha_s-k^2T_N(k).
+\end{align}$$
+
+There are therefore two separate failures of a single bare $\displaystyle{\kappa_N}$. First, the common and relative channels require independent coefficients. Second, even within one channel the correction is energy dependent, so one constant coefficient cannot exactly match a generic finite spectral window. A local accelerated regulator must contain higher tangential-derivative boundary operators or an equivalent auxiliary-mode completion. The direct truncated spectrum, CPS-metric normalization, endpoint spectra, and selected-root matching are checked in `numerics/maxwell_dirichlet_interpolation.wl`.
+
 ## Neumann Boundary Condition
 
 Unlike the Dirichlet theory, the two decoupled Neumann theories require no boundary-penalty action. We allow the tangential potentials to vary freely at both endpoints of each interval. The endpoint part of the bulk variation then gives
@@ -1325,6 +1345,21 @@ $$\begin{align}
 The correct Neumann gluing prescription is therefore to take $\displaystyle{\kappa\to\infty}$ at fixed unscaled gauge-invariant data, restrict to $\displaystyle{\eta_a=0}$ together with continuity of $\displaystyle{E_x}$ and $\displaystyle{B}$, pull back $\displaystyle{\omega_{\mathrm N,\kappa}}$, and quotient its null directions. This gives exactly the directly constructed global Neumann Maxwell phase space: the global photon tower and one $\displaystyle{S_y^1}$-holonomy pair, with no independent cut field and no magnetic-flux direct sum.
 
 The finite-$\displaystyle{\kappa}$ even and odd towers reproduce the global modes one by one, and their time-translation Noether charges have the same strong limit. This establishes equality of the reduced classical phase spaces and a mode-by-mode match of the charges. It does not by itself prove convergence of the finite-$\displaystyle{\kappa}$ Fock representations under a fixed unitary identification.
+
+At finite mode cutoff the affected photon tower is a kinetic defect. Writing $\displaystyle{g=\mu\kappa}$, its reduced pencil is
+
+$$\begin{align}
+K_N&=D_N,
+&G_N&=I+\dfrac1g bb^{\mathrm T}.
+\end{align}$$
+
+If $\displaystyle{T_N(k)}$ denotes the omitted response, exact matching at a selected root requires
+
+$$\begin{align}
+g_N(k)&=g-k^2T_N(k).
+\end{align}$$
+
+This correction is energy dependent and vanishes at $\displaystyle{k=0}$. Hence the scalar zero-energy constant-coupling prescription does not accelerate the Maxwell spectrum, and one constant bare $\displaystyle{g_N}$ cannot exactly match several generic roots. The executable check is `numerics/maxwell_cut_cylinder.wl`.
 
 #### Equivalent Normal-Field-Strength Form
 

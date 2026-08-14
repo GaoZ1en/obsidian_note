@@ -13,11 +13,12 @@ Research notes on quantization and perturbative field theory in AdS, including A
 | `ads4 linearized gravity/` | AdS4 linearized gravity, positive-energy modules, symplectic norms, characters, and thermal partition functions |
 | `electric field/` | Maxwell field quantization in AdS3: modes, asymptotic behavior, large gauge transformations, and article drafts |
 | `gravitational energy/` | Perturbative bulk-boundary charge matching and gravitational energy in AdS |
-| `gluing/` | CPS and Hamiltonian gluing of scalar, Maxwell, and U(1) Chern--Simons regions, including an article draft, nonuniform flat-circle regulators, global-AdS2 and four-quadrant scalar benchmarks, finite-coupling angular-wedge gluing, and AdS-Rindler Cauchy-data reconstruction of a global-AdS3 scalar and its charges |
+| `gluing/` | CPS and Hamiltonian gluing of scalar, Maxwell, and U(1) Chern--Simons regions, including an article draft with finite-mode numerical benchmarks, a uniform flat-circle regulator, global-AdS2 and four-quadrant scalar models, finite-coupling angular-wedge gluing, and AdS-Rindler Cauchy-data reconstruction of a global-AdS3 scalar and its charges |
 | `Killing horizon/` | Scalar quantization on non-rotating BTZ: CPS, continuous modes, HHI states, horizon charges, and tadpoles |
 | `linearized gravity/` | AdS3 linearized gravity: modes, asymptotic Killing vectors, CPS formalism, charges, and massive-gravity extensions |
 | `perturbation/` | Perturbative CPS, pAQFT, and old-fashioned perturbation theory, including flat-space scalar checks and global-AdS spectral tests |
 | `preliminary analysis/` | Foundational calculations: constrained systems, path integrals, Dirac formalism |
+| `scalar/` | Free scalar quantization in global AdS: fast/slow falloffs, boundary-complete Noether charges, boundary-condition classification, BF stability, and unitarity |
 | `thermodynamics of scalar in ads/` | Scalar field thermodynamics: heat kernel method in various spacetimes |
 
 ## Reading Order

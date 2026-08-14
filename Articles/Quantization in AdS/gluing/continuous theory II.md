@@ -29,6 +29,8 @@ The cuts are artificial timelike interfaces, not components of the physical AdS 
 
 We now give the cut-supported actions which implement the finite-$\displaystyle{\kappa}$ interpolation. This fixes the artificial-interface variation. The usual choice of physical AdS boundary terms at $\displaystyle{r=\infty}$ is kept implicit and is not altered by the gluing construction.
 
+The parameter $\displaystyle{\kappa}$ below selects one continuum trajectory through a larger space of local cut quadratic forms. Before imposing that trajectory, the four cut traces admit a positive boundary matrix $\displaystyle{A}$; the displayed action takes $\displaystyle{A=A_\kappa}$ with diagonal penalty coefficient $\displaystyle{d_\kappa=\kappa^{-1}}$ and the two paired mismatch coefficients $\displaystyle{h_{A,\kappa}=h_{B,\kappa}=\kappa}$. These operators must be allowed to run independently in a finite-mode regulator.
+
 ## Cut Actions and Their Variation
 
 After cutting, the bulk action is the sum of the two wedge actions,
@@ -332,6 +334,21 @@ H_{\kappa\to\infty} &=\sum _{n=0}^{\infty}\sum _{\ell\in\mathbb Z} \omega_{n,\el
 This is precisely the standard quantization of the normalizable scalar on global $\displaystyle{\mathrm{AdS}_{3}}$.
 
 ## Scope of the Limits
+
+The exact continuum $\displaystyle{\kappa}$ family and a cutoff-matched Galerkin family should not be conflated. With the boundary traces ordered as
+
+$$\begin{align}
+q&=(q_{1A},q_{1B},q_{2B},q_{2A})^{\mathrm T},
+\end{align}$$
+
+let $\displaystyle{A_\kappa}$ denote the $\displaystyle{4\times4}$ continuum boundary matrix in $\displaystyle{Q_\kappa^{\mathrm{ang}}}$. If $\displaystyle{T_N(0)}$ is the omitted endpoint-response matrix of the two wedges, the low-energy matched matrix is
+
+$$\begin{align}
+A_{\kappa,N}
+&=\left(A_\kappa^{-1}+T_N(0)\right)^{-1}.
+\end{align}$$
+
+For a two-ended wedge, $\displaystyle{T_N(0)}$ contains off-diagonal response between its endpoints. For unequal wedge lengths the two response blocks also differ. Consequently $\displaystyle{A_{\kappa,N}}$ is generally not of the original one-parameter form $\displaystyle{A_{\kappa_N}}$ for any constant $\displaystyle{\kappa_N}$. The regulator generates the full symmetry-allowed endpoint matrix. The exact finite-$\displaystyle{\kappa}$ monodromy problem remains correct; only the claim that one bare cutoff parameter reproduces it is rejected. This matrix statement is checked in `numerics/global_ads3_angular.wl`.
 
 The results above establish the finite-$\displaystyle{\kappa}$ self-adjoint mode problem, its canonical Fock quantization, and the mode-by-mode spectral limits. Three qualifications remain:
 

@@ -11,6 +11,28 @@ url: https://arxiv.org/abs/2501.08308v2
 tags: []
 ---
 
+## Preliminaries
+
+### Generalized Entropy for Ordinary Matter Fields
+
+Consider a minimally-coupled qft defined in an asymptotically $\mathrm{AdS}$ spacetime $\displaystyle{(\mathcal{M},g^{(0)}_{\mu \nu})}$ and a state $\displaystyle{\ket{\psi}}$. Take the spacetime to be determined by classical Eintein gravity and let the quantum field backreact on the spacetime. We can expand the metric in $\displaystyle{G_{N}}$ as
+
+$$\begin{align}
+g_{\mu \nu} & =g^{(0)}_{\mu \nu}+\kappa ^{2}g^{(2)}_{\mu \nu}+\mathcal{O}(\kappa ^{3}), & \kappa ^{2} & =16\pi G_{N}
+\end{align}$$
+
+where $\displaystyle{g^{(0)}_{\mu \nu}}$ solves the vacuum Einstein gravity and $\displaystyle{g^{(2)}_{\mu \nu}}$ is the leading backreaction to the metric,
+
+$$\begin{align}
+E^{(1)}_{\mu \nu}[\kappa ^{2}g^{(0)}_{\mu \nu}] & =8\pi G_{N}\braket{ T_{\mu \nu} } _{\Psi}
+\end{align}$$
+
+where $\displaystyle{E^{(1)}_{\mu \nu}}$ is the linearized Einstein tensor with negative cosmological constant and $\displaystyle{T_{\mu \nu}}$ is the stress-energy tensor of the qft. The area of a codim-2 surface $\displaystyle{\gamma}$ in the geometry corresponding to the state $\displaystyle{\Psi}$ means the area of the same surface in the full metric is
+
+$$\begin{align}
+A[\gamma]_{\Psi} & =A[g^{(0)},\gamma]+\kappa ^{2} \dfrac{\delta A[g^{(0)},\gamma]}{\delta g^{(0)}_{\mu \nu}}g^{(2)}_{\mu \nu}+\mathcal{O}(\kappa ^{4})
+\end{align}$$
+
 # Core Conclusion
 
 The paper is not merely trying to “write down the gravitational modular Hamiltonian.” Its real question is:

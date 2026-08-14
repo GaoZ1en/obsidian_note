@@ -4,7 +4,7 @@ date: 2026-06-02
 summary: "Naively extends a first-order bulk-boundary charge identity to second-order perturbations in global AdS3 by treating the quadratic Einstein tensor as an effective gravitational source."
 ---
 
-# Naive generalization to second-order perturbations
+# Naive Generalization to Second-Order Perturbations
 
 This note uses the conventions of `Articles/Quantization in AdS3/gravitational energy/perturbation.md`. In particular,
 
@@ -32,7 +32,7 @@ $$\begin{align}
 
 The first-order sector is the same as the linearized-gravity discussion in the existing AdS$_3$ notes. The new bookkeeping is the second-order equation for $h^{(2)}_{\mu\nu}$.
 
-## First-order bulk-boundary identity
+## First-Order Bulk-Boundary Identity
 
 The first-order statement in arXiv:2603.24932, https://arxiv.org/abs/2603.24932, is that, on a stationary asymptotically AdS background, the Hamiltonian variation associated with an asymptotic Killing field $\xi^\mu$ can be written as a bulk matter charge. For the pure-gravity AdS$_3$ problem, with no background electromagnetic field, the corresponding linear statement is
 
@@ -48,7 +48,7 @@ $$\begin{align}
 
 Here $\Sigma$ is a constant-time Cauchy surface in global AdS$_3$, $\tau^{(0)\mu}$ is its future-pointing unit normal, and possible inner-boundary terms are absent. This is the form of the bulk-boundary identification that we will reuse in global AdS$_3$.
 
-## Effective second-order source
+## Effective Second-Order Source
 
 In the present perturbative expansion the matter stress tensor appears in the second-order equation. Therefore define the effective second-order source
 
@@ -76,7 +76,7 @@ H^{\mathrm{grav}}_\xi[h^{(1)}] :=-\int_\Sigma \mathrm{d}^2x\sqrt{\sigma^{(0)}}\,
 
 This is the sense in which $h^{(2)}_{\mu\nu}$ can be used as a naive gravitational-wave backreaction in AdS$_3$: the field $h^{(2)}_{\mu\nu}$ is sourced by the matter stress tensor together with the quadratic effective stress tensor of the first-order gravitational perturbation. In three-dimensional Einstein gravity this does not represent a local propagating graviton. It is a local bulk representative of the same quadratic gravitational energy that is captured more invariantly by the covariant phase-space canonical energy.
 
-## Relation to canonical energy
+## Relation to Canonical Energy
 
 The relation with the Sorce-Wald second-order formalism, https://arxiv.org/abs/1707.05862, is as follows. For a Killing field $\xi^\mu$, define the canonical energy of the first-order perturbation by
 

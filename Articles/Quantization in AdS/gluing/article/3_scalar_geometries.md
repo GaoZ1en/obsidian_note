@@ -1,6 +1,6 @@
 # Scalar gluing in curved and higher-dimensional geometries
 
-The construction extends to curved backgrounds and to networks of interfaces. The two examples below separate the universal gluing rule from questions of separability.
+The construction extends to curved backgrounds and to networks of interfaces. The two examples below separate the universal gluing rule from questions of separability; their finite-mode realizations are compared in Section $\ref{subsec:numerics-scalar-geometries}$.
 
 ## Global AdS$_2$
 

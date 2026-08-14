@@ -6,35 +6,31 @@ import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
-import { execFile } from "child_process";
 import { randomUUID } from "crypto";
-import { promisify } from "util";
+import { runProcessTree, terminateAllProcessTrees } from "./process-tree.js";
 
-const execFileAsync = promisify(execFile);
+const DEFAULT_TIMEOUT_MS = 120_000;
+const MAX_TIMEOUT_MS = 10 * 60_000;
+const DEFAULT_MAX_OUTPUT_CHARS = 20_000;
+const MAX_OUTPUT_CHARS = 1_000_000;
+const MAX_BUFFER = 20 * 1024 * 1024;
 
-const DEFAULT_TIMEOUT_MS = 120000;
-const MAX_BUFFER = 1024 * 1024 * 20;
-const DEFAULT_PACKAGES = [
-  "xAct`xTensor`",
-  "xAct`xPert`",
-  "xAct`xTras`",
-  "xAct`xCoba`",
-  "xAct`xCPS`",
-];
+const PACKAGE_PROFILES = {
+  core: ["xAct`xTensor`", "xAct`xPert`", "xAct`xTras`"],
+  cps: ["xAct`xTensor`", "xAct`xPert`", "xAct`xTras`", "xAct`xCPS`"],
+  components: ["xAct`xTensor`", "xAct`xPert`", "xAct`xTras`", "xAct`xCoba`"],
+  all: [
+    "xAct`xTensor`",
+    "xAct`xPert`",
+    "xAct`xTras`",
+    "xAct`xCoba`",
+    "xAct`xCPS`",
+  ],
+} as const;
 
-let resetCount = 0;
-let lastResetAt = new Date().toISOString();
-
-type WolframRun = {
-  code: string;
-  result: string;
-  keptOutput: string[];
-  warnings: string[];
-  suppressedOutputCount: number;
-  stderr: string;
-  loadErrors: string;
-  loadedPackages: string;
-};
+type PackageProfile = keyof typeof PACKAGE_PROFILES;
+type Pipeline = "none" | "canonical" | "canonical_contract" | "full";
+type CheckInput = { label: string; residual: string };
 
 function wlString(value: string): string {
   return JSON.stringify(value);
@@ -44,25 +40,85 @@ function wlList(values: string[]): string {
   return `{${values.map(wlString).join(", ")}}`;
 }
 
-function stringArrayArgument(value: unknown, fallback: string[]): string[] {
-  if (!Array.isArray(value)) {
-    return fallback;
-  }
-
-  const strings = value.filter((item): item is string => typeof item === "string");
-  return strings.length > 0 ? strings : fallback;
-}
-
 function optionalString(value: unknown): string | undefined {
   return typeof value === "string" && value.trim().length > 0 ? value : undefined;
 }
 
 function timeoutArgument(value: unknown): number {
-  if (typeof value !== "number" || !Number.isFinite(value)) {
+  if (value === undefined) {
     return DEFAULT_TIMEOUT_MS;
   }
+  if (typeof value !== "number" || !Number.isFinite(value)) {
+    throw new Error("timeoutMs must be a finite number.");
+  }
+  return Math.max(1_000, Math.min(Math.trunc(value), MAX_TIMEOUT_MS));
+}
 
-  return Math.max(1000, Math.min(Math.trunc(value), 10 * 60 * 1000));
+function maxOutputArgument(value: unknown): number {
+  if (value === undefined) {
+    return DEFAULT_MAX_OUTPUT_CHARS;
+  }
+  if (typeof value !== "number" || !Number.isFinite(value)) {
+    throw new Error("maxOutputChars must be a finite number.");
+  }
+  return Math.max(64, Math.min(Math.trunc(value), MAX_OUTPUT_CHARS));
+}
+
+function profileArgument(value: unknown): PackageProfile {
+  if (value === undefined) {
+    return "core";
+  }
+  if (typeof value !== "string" || !(value in PACKAGE_PROFILES)) {
+    throw new Error("profile must be one of: core, cps, components, all.");
+  }
+  return value as PackageProfile;
+}
+
+function pipelineArgument(value: unknown): Pipeline {
+  if (value === undefined) {
+    return "canonical";
+  }
+  if (
+    value !== "none" &&
+    value !== "canonical" &&
+    value !== "canonical_contract" &&
+    value !== "full"
+  ) {
+    throw new Error("pipeline must be one of: none, canonical, canonical_contract, full.");
+  }
+  return value;
+}
+
+function extraPackagesArgument(value: unknown): string[] {
+  if (value === undefined) {
+    return [];
+  }
+  if (!Array.isArray(value) || value.some((item) => typeof item !== "string" || item.length === 0)) {
+    throw new Error("extraPackages must be an array of non-empty package-context strings.");
+  }
+  return value as string[];
+}
+
+function checksArgument(value: unknown): CheckInput[] {
+  if (!Array.isArray(value) || value.length === 0) {
+    throw new Error("checks must contain at least one labelled residual.");
+  }
+
+  return value.map((item, index) => {
+    if (typeof item !== "object" || item === null) {
+      throw new Error(`checks[${index}] must be an object.`);
+    }
+    const label = optionalString((item as Record<string, unknown>).label);
+    const residual = optionalString((item as Record<string, unknown>).residual);
+    if (!label || !residual) {
+      throw new Error(`checks[${index}] requires non-empty label and residual strings.`);
+    }
+    return { label, residual };
+  });
+}
+
+function packagesFor(profile: PackageProfile, extraPackages: string[]): string[] {
+  return [...new Set([...PACKAGE_PROFILES[profile], ...extraPackages])];
 }
 
 function makePrelude(packages: string[]): string {
@@ -71,443 +127,465 @@ $HistoryLength = 0;
 xActMCPRequestedPackages = ${wlList(packages)};
 xActMCPLoadedPackages = {};
 xActMCPLoadErrors = {};
+xActMCPLoadMessages = {};
+xActMCPToString[value_] := ToString[Unevaluated[value], InputForm, PageWidth -> Infinity];
 Do[
-  Block[{Print = (Null &)}, Quiet[Needs[pkg]]];
+  xActMCPPackageMessages = {};
+  Block[{Print = (Null &), $Messages = {}, $MessageList = {}},
+    Check[Needs[pkg], Null];
+    xActMCPPackageMessages = xActMCPToString /@ $MessageList;
+  ];
   If[MemberQ[$Packages, pkg],
     AppendTo[xActMCPLoadedPackages, pkg],
     AppendTo[xActMCPLoadErrors, pkg]
+  ];
+  If[xActMCPPackageMessages =!= {},
+    AppendTo[xActMCPLoadMessages, <|"package" -> pkg, "messages" -> xActMCPPackageMessages|>]
   ],
   {pkg, xActMCPRequestedPackages}
 ];
 `;
 }
 
-function wrapCode(code: string, packages: string[]): { wrappedCode: string; marker: string } {
+function wrapPayload(body: string, packages: string[]): { code: string; marker: string } {
   const marker = `XACT_MCP_${randomUUID().replaceAll("-", "_")}`;
-  const resultBegin = `${marker}_RESULT_BEGIN`;
-  const resultEnd = `${marker}_RESULT_END`;
-  const loadedBegin = `${marker}_LOADED_BEGIN`;
-  const loadedEnd = `${marker}_LOADED_END`;
-  const errorsBegin = `${marker}_LOAD_ERRORS_BEGIN`;
-  const errorsEnd = `${marker}_LOAD_ERRORS_END`;
-
+  const payloadProgram = `
+${makePrelude(packages)}
+${body}
+xActMCPSerializedPayload = Quiet @ Check[
+  BaseEncode[
+    ExportByteArray[xActMCPPayload, "RawJSON", "Compact" -> True],
+    "Base64"
+  ],
+  $Failed
+];
+Print["${marker}_BEGIN"];
+Print[If[StringQ[xActMCPSerializedPayload], xActMCPSerializedPayload, ""]];
+Print["${marker}_END"];
+`;
+  // Keep both CLI directions ASCII-only, and parse the service scaffold in a
+  // private context so user code can safely clear or redefine Global` symbols.
+  const encodedProgram = Buffer.from(payloadProgram, "utf8").toString("base64");
   return {
     marker,
-    wrappedCode: `
-${makePrelude(packages)}
-xActMCPResult = (${code});
-Print["${resultBegin}"];
-Print[ToString[xActMCPResult, InputForm, PageWidth -> Infinity]];
-Print["${resultEnd}"];
-Print["${loadedBegin}"];
-Print[ToString[xActMCPLoadedPackages, InputForm, PageWidth -> Infinity]];
-Print["${loadedEnd}"];
-Print["${errorsBegin}"];
-Print[ToString[xActMCPLoadErrors, InputForm, PageWidth -> Infinity]];
-Print["${errorsEnd}"];
+    code: `
+Begin["xActMCPPrivate\u0060"];
+ToExpression[
+  FromCharacterCode[Normal[BaseDecode["${encodedProgram}"]], "UTF8"],
+  InputForm
+];
+End[];
 `,
   };
 }
 
-function extractBlock(text: string, begin: string, end: string): { value: string; rest: string } {
-  const beginIndex = text.indexOf(begin);
-  const endIndex = text.indexOf(end);
-
+function extractPayload(stdout: string, marker: string): Record<string, unknown> {
+  const begin = `${marker}_BEGIN`;
+  const end = `${marker}_END`;
+  const beginIndex = stdout.indexOf(begin);
+  const endIndex = stdout.indexOf(end);
   if (beginIndex < 0 || endIndex < 0 || endIndex < beginIndex) {
-    return { value: "", rest: text };
+    throw new Error("Wolfram evaluation ended without a structured payload.");
   }
-
-  const valueStart = beginIndex + begin.length;
-  const value = text.slice(valueStart, endIndex).trim();
-  const rest = `${text.slice(0, beginIndex)}${text.slice(endIndex + end.length)}`;
-  return { value, rest };
-}
-
-function isNoiseLine(line: string): boolean {
-  const trimmed = line.trim();
-
-  if (trimmed.length === 0) {
-    return true;
+  const encoded = stdout.slice(beginIndex + begin.length, endIndex).replace(/\s/g, "");
+  if (encoded.length === 0 || encoded.length % 4 !== 0 || !/^[A-Za-z0-9+/]*={0,2}$/.test(encoded)) {
+    throw new Error("Wolfram evaluation returned an invalid base64 payload.");
   }
-
-  return [
-    /^During evaluation of In\[\d+\]:=/,
-    /^Package xAct`/,
-    /^CopyRight /,
-    /^These packages come with ABSOLUTELY NO WARRANTY/,
-    /^------------------------------------------------------------$/,
-    /^\*+\s+Def[A-Za-z]+:/,
-    /^Connecting to external /,
-    /^Connection established/,
-    /^Please cite xAct as/,
-    /^See http:\/\/www\.xact\.es/,
-    /^Null$/,
-  ].some((pattern) => pattern.test(trimmed));
-}
-
-function isKnownWarning(line: string): boolean {
-  return /LinkOpen::linke|xPerm|MathLink/i.test(line);
-}
-
-function filterOutput(text: string): {
-  keptOutput: string[];
-  warnings: string[];
-  suppressedOutputCount: number;
-} {
-  const keptOutput: string[] = [];
-  const warnings: string[] = [];
-  let suppressedOutputCount = 0;
-
-  for (const line of text.split(/\r?\n/)) {
-    if (isKnownWarning(line)) {
-      warnings.push(line.trim());
-      suppressedOutputCount += 1;
-    } else if (isNoiseLine(line)) {
-      suppressedOutputCount += 1;
-    } else {
-      keptOutput.push(line);
-    }
+  const json = Buffer.from(encoded, "base64").toString("utf8");
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(json);
+  } catch (error) {
+    const detail = error instanceof Error ? error.message : String(error);
+    const excerpt = json.length > 1_000 ? `${json.slice(0, 1_000)}...` : json;
+    throw new Error(`Could not parse the Wolfram JSON payload: ${detail}. Payload: ${excerpt}`);
   }
-
-  return { keptOutput, warnings, suppressedOutputCount };
+  if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) {
+    throw new Error("Wolfram evaluation returned a non-object payload.");
+  }
+  return parsed as Record<string, unknown>;
 }
 
-async function runWolfram(code: string, options?: {
-  packages?: string[];
-  timeoutMs?: number;
-}): Promise<WolframRun> {
-  const packages = options?.packages ?? DEFAULT_PACKAGES;
-  const { marker, wrappedCode } = wrapCode(code, packages);
-
-  const { stdout, stderr } = await execFileAsync("wolframscript", ["-code", wrappedCode], {
-    timeout: options?.timeoutMs ?? DEFAULT_TIMEOUT_MS,
+async function runPayload(
+  body: string,
+  packages: string[],
+  timeoutMs: number,
+  signal?: AbortSignal,
+): Promise<Record<string, unknown>> {
+  const { code, marker } = wrapPayload(body, packages);
+  const startedAt = performance.now();
+  const { stdout, stderr } = await runProcessTree("wolframscript", ["-code", code], {
+    timeoutMs,
     maxBuffer: MAX_BUFFER,
+    signal,
   });
-
-  const resultBegin = `${marker}_RESULT_BEGIN`;
-  const resultEnd = `${marker}_RESULT_END`;
-  const loadedBegin = `${marker}_LOADED_BEGIN`;
-  const loadedEnd = `${marker}_LOADED_END`;
-  const errorsBegin = `${marker}_LOAD_ERRORS_BEGIN`;
-  const errorsEnd = `${marker}_LOAD_ERRORS_END`;
-
-  const resultExtraction = extractBlock(stdout, resultBegin, resultEnd);
-  const loadedExtraction = extractBlock(resultExtraction.rest, loadedBegin, loadedEnd);
-  const errorsExtraction = extractBlock(loadedExtraction.rest, errorsBegin, errorsEnd);
-  const filtered = filterOutput(`${errorsExtraction.rest}\n${stderr}`);
-
-  return {
-    code,
-    result: resultExtraction.value,
-    keptOutput: filtered.keptOutput,
-    warnings: filtered.warnings,
-    suppressedOutputCount: filtered.suppressedOutputCount,
-    stderr,
-    loadErrors: errorsExtraction.value,
-    loadedPackages: loadedExtraction.value,
-  };
+  const payload = extractPayload(stdout, marker);
+  payload.elapsedMs = Math.round(performance.now() - startedAt);
+  payload.transportStderr = stderr.trim() === "" ? [] : stderr.trim().split(/\r?\n/);
+  return payload;
 }
 
-function renderRun(title: string, run: WolframRun): string {
-  const sections = [
-    `Wolfram code:\n\`\`\`wl\n${run.code}\n\`\`\``,
-    `Result:\n\`\`\`wl\n${run.result || "(no result captured)"}\n\`\`\``,
+function clipHelpers(maxOutputChars: number): string {
+  return `
+xActMCPMaxOutputChars = ${maxOutputChars};
+xActMCPClip[text_String] := <|
+  "text" -> If[StringLength[text] > xActMCPMaxOutputChars, StringTake[text, xActMCPMaxOutputChars], text],
+  "truncated" -> StringLength[text] > xActMCPMaxOutputChars,
+  "sha256" -> Hash[text, "SHA256", "HexString"]
+|>;
+`;
+}
+
+async function xactRun(
+  args: Record<string, unknown>,
+  signal?: AbortSignal,
+): Promise<Record<string, unknown>> {
+  const code = optionalString(args.code);
+  if (!code) {
+    throw new Error("xact_run requires a non-empty code string.");
+  }
+  const profile = profileArgument(args.profile);
+  const packages = packagesFor(profile, extraPackagesArgument(args.extraPackages));
+  const timeoutMs = timeoutArgument(args.timeoutMs);
+  const maxOutputChars = maxOutputArgument(args.maxOutputChars);
+
+  const body = `
+${clipHelpers(maxOutputChars)}
+xActMCPMessages = {};
+xActMCPValue = Block[{
+  $Context = "Global\u0060", Print = (Null &), $Messages = {}, $MessageList = {}
+},
+  xActMCPInnerValue = Check[ToExpression[${wlString(code)}, InputForm], $Failed];
+  xActMCPMessages = xActMCPToString /@ $MessageList;
+  xActMCPInnerValue
+];
+xActMCPResultText = xActMCPToString[xActMCPValue];
+xActMCPResultClip = xActMCPClip[xActMCPResultText];
+xActMCPPayload = <|
+  "ok" -> (xActMCPLoadErrors === {} && FreeQ[xActMCPValue, $Failed | $Aborted]),
+  "profile" -> ${wlString(profile)},
+  "result" -> xActMCPResultClip["text"],
+  "resultSha256" -> xActMCPResultClip["sha256"],
+  "truncated" -> xActMCPResultClip["truncated"],
+  "messages" -> xActMCPMessages,
+  "loadedPackages" -> xActMCPLoadedPackages,
+  "loadErrors" -> xActMCPLoadErrors,
+  "loadMessages" -> xActMCPLoadMessages
+|>;
+`;
+  return runPayload(body, packages, timeoutMs, signal);
+}
+
+function pipelineSteps(pipeline: Pipeline): string[] {
+  switch (pipeline) {
+    case "none":
+      return [];
+    case "canonical":
+      return ["ToCanonical"];
+    case "canonical_contract":
+      return ["ToCanonical", "ContractMetric", "ToCanonical"];
+    case "full":
+      return ["ToCanonical", "ContractMetric", "ToCanonical", "FullSimplification[]"];
+  }
+}
+
+function checksToWolfram(checks: CheckInput[]): string {
+  return `{${checks
+    .map(
+      ({ label, residual }) =>
+        `<|"label" -> ${wlString(label)}, "residual" -> ${wlString(residual)}|>`,
+    )
+    .join(", ")}}`;
+}
+
+async function xactVerifyResiduals(
+  args: Record<string, unknown>,
+  signal?: AbortSignal,
+): Promise<Record<string, unknown>> {
+  const checks = checksArgument(args.checks);
+  const setup = typeof args.setup === "string" ? args.setup : "";
+  const assumptions = typeof args.assumptions === "string" ? args.assumptions : "";
+  const profile = profileArgument(args.profile);
+  const pipeline = pipelineArgument(args.pipeline);
+  const packages = packagesFor(profile, extraPackagesArgument(args.extraPackages));
+  const timeoutMs = timeoutArgument(args.timeoutMs);
+  const maxOutputChars = maxOutputArgument(args.maxOutputChars);
+  const steps = pipelineSteps(pipeline);
+
+  const body = `
+${clipHelpers(maxOutputChars)}
+xActMCPSetupMessages = {};
+xActMCPSetupValue = Block[{
+  $Context = "Global\u0060", Print = (Null &), $Messages = {}, $MessageList = {}
+},
+  xActMCPInnerSetupValue = Check[ToExpression[${wlString(setup)}, InputForm], $Failed];
+  xActMCPSetupMessages = xActMCPToString /@ $MessageList;
+  xActMCPInnerSetupValue
+];
+xActMCPAssumptions = If[${wlString(assumptions)} === "", True,
+  Block[{$Context = "Global\u0060"},
+    Check[ToExpression[${wlString(assumptions)}, InputForm], $Failed]
+  ]
+];
+xActMCPPipeline = ${wlString(pipeline)};
+xActMCPPipelineSteps = ${wlList(steps)};
+xActMCPChecks = ${checksToWolfram(checks)};
+
+xActMCPUnknownHeadQ[head_Symbol] :=
+  Context[Unevaluated[head]] === "Global\`" &&
+  OwnValues[head] === {} && DownValues[head] === {} &&
+  UpValues[head] === {} && SubValues[head] === {};
+xActMCPUnknownHeads[expr_] := DeleteDuplicates @ Cases[
+  Unevaluated[expr],
+  HoldPattern[head_Symbol[___]] /; xActMCPUnknownHeadQ[Unevaluated[head]] :>
+    Context[Unevaluated[head]] <> SymbolName[Unevaluated[head]],
+  {0, Infinity}
+];
+
+xActMCPApplyPipeline[value_] := Module[{canonical, final},
+  canonical = Switch[xActMCPPipeline,
+    "none", value,
+    _, ToCanonical[value]
   ];
+  final = Switch[xActMCPPipeline,
+    "none", canonical,
+    "canonical", canonical,
+    "canonical_contract", ToCanonical[ContractMetric[canonical]],
+    "full", FullSimplification[][ToCanonical[ContractMetric[canonical]]]
+  ];
+  {canonical, final}
+];
 
-  if (run.loadErrors !== "{}" && run.loadErrors !== "") {
-    sections.push(`Load errors:\n\`\`\`wl\n${run.loadErrors}\n\`\`\``);
-  }
+xActMCPVerifyOne[check_] := Module[
+  {raw, canonical, final, evaluationMessages = {}, unknownHeads, status,
+   canonicalText, finalText, canonicalClip, finalClip},
+  If[xActMCPLoadErrors =!= {} || xActMCPSetupMessages =!= {} ||
+     xActMCPSetupValue === $Failed || xActMCPAssumptions === $Failed,
+    Return[<|
+      "label" -> check["label"],
+      "status" -> "error",
+      "canonicalResidual" -> "",
+      "canonicalResidualSha256" -> "",
+      "canonicalResidualTruncated" -> False,
+      "finalResidual" -> "",
+      "finalResidualSha256" -> "",
+      "finalResidualTruncated" -> False,
+      "unknownHeads" -> {},
+      "messages" -> xActMCPSetupMessages
+    |>]
+  ];
+  Block[{
+    $Context = "Global\u0060", Print = (Null &), $Messages = {}, $MessageList = {},
+    $Assumptions = xActMCPAssumptions
+  },
+    raw = ToExpression[check["residual"], InputForm];
+    {canonical, final} = If[raw === $Failed, {$Failed, $Failed},
+      xActMCPApplyPipeline[raw]
+    ];
+    evaluationMessages = xActMCPToString /@ $MessageList;
+  ];
+  unknownHeads = If[final === $Failed, {}, xActMCPUnknownHeads[final]];
+  status = Which[
+    final === $Failed || ! FreeQ[final, $Failed | $Aborted], "error",
+    TrueQ[final === 0], "zero",
+    unknownHeads =!= {}, "unevaluated",
+    evaluationMessages =!= {}, "error",
+    True, "nonzero_normal_form"
+  ];
+  canonicalText = If[canonical === $Failed, "", xActMCPToString[canonical]];
+  finalText = If[final === $Failed, "", xActMCPToString[final]];
+  canonicalClip = xActMCPClip[canonicalText];
+  finalClip = xActMCPClip[finalText];
+  <|
+    "label" -> check["label"],
+    "status" -> status,
+    "canonicalResidual" -> canonicalClip["text"],
+    "canonicalResidualSha256" -> canonicalClip["sha256"],
+    "canonicalResidualTruncated" -> canonicalClip["truncated"],
+    "finalResidual" -> finalClip["text"],
+    "finalResidualSha256" -> finalClip["sha256"],
+    "finalResidualTruncated" -> finalClip["truncated"],
+    "unknownHeads" -> unknownHeads,
+    "messages" -> evaluationMessages
+  |>
+];
 
-  if (run.warnings.length > 0) {
-    sections.push(`Warnings:\n\`\`\`text\n${run.warnings.join("\n")}\n\`\`\``);
-  }
-
-  if (run.keptOutput.length > 0) {
-    sections.push(`Messages:\n\`\`\`text\n${run.keptOutput.join("\n")}\n\`\`\``);
-  }
-
-  return sections.join("\n\n");
+xActMCPCheckResults = xActMCPVerifyOne /@ xActMCPChecks;
+xActMCPPayload = <|
+  "ok" -> (xActMCPLoadErrors === {} && xActMCPSetupMessages === {} &&
+    FreeQ[xActMCPCheckResults[[All, "status"]], "error"]),
+  "allZero" -> And @@ (# === "zero" & /@ xActMCPCheckResults[[All, "status"]]),
+  "profile" -> ${wlString(profile)},
+  "pipeline" -> xActMCPPipeline,
+  "pipelineSteps" -> xActMCPPipelineSteps,
+  "assumptions" -> ${wlString(assumptions)},
+  "loadedPackages" -> xActMCPLoadedPackages,
+  "loadErrors" -> xActMCPLoadErrors,
+  "loadMessages" -> xActMCPLoadMessages,
+  "setupMessages" -> xActMCPSetupMessages,
+  "checks" -> xActMCPCheckResults
+|>;
+`;
+  return runPayload(body, packages, timeoutMs, signal);
 }
 
-function renderError(title: string, error: unknown): string {
-  const message = error instanceof Error ? error.message : String(error);
-  return `Error in ${title}:\n\`\`\`text\n${message}\n\`\`\``;
-}
+const commonInputProperties = {
+  profile: {
+    type: "string",
+    enum: ["core", "cps", "components", "all"],
+    description: "xAct package profile. Defaults to core.",
+  },
+  extraPackages: {
+    type: "array",
+    items: { type: "string" },
+    description: "Additional Wolfram package contexts to load after the selected profile.",
+  },
+  timeoutMs: {
+    type: "number",
+    description: "Execution timeout in milliseconds, clamped to 1 second through 10 minutes.",
+  },
+  maxOutputChars: {
+    type: "number",
+    description: "Maximum characters retained for each result expression; defaults to 20000.",
+  },
+};
 
 const server = new Server(
-  {
-    name: "mcp-server-xact",
-    version: "0.1.0",
-  },
-  {
-    capabilities: {
-      tools: {},
-    },
-  },
+  { name: "mcp-server-xact", version: "0.2.1" },
+  { capabilities: { tools: {} } },
 );
 
 server.setRequestHandler(ListToolsRequestSchema, async () => ({
   tools: [
     {
-      name: "xact_eval",
+      name: "xact_run",
       description:
-        "Evaluate Wolfram Language code in a fresh kernel with common xAct packages preloaded and routine xAct banner/definition noise filtered.",
+        "Run self-contained Wolfram Language code in a fresh kernel with an explicit xAct package profile. Returns structured results only; no definitions persist between calls.",
       inputSchema: {
         type: "object",
         properties: {
-          code: {
-            type: "string",
-            description: "Wolfram Language code to evaluate after xAct packages are loaded.",
-          },
-          packages: {
-            type: "array",
-            items: { type: "string" },
-            description: "Optional xAct package contexts to preload.",
-          },
-          timeoutMs: {
-            type: "number",
-            description: "Optional timeout in milliseconds, capped at 10 minutes.",
-          },
+          code: { type: "string", description: "Self-contained Wolfram Language code." },
+          ...commonInputProperties,
         },
         required: ["code"],
       },
-    },
-    {
-      name: "xact_reset",
-      description:
-        "Reset xAct session bookkeeping. This server already runs each tool call in a fresh Wolfram kernel, so reset records a new clean-session boundary.",
-      inputSchema: {
-        type: "object",
-        properties: {},
-      },
-    },
-    {
-      name: "xact_loaded_packages",
-      description: "Return the xAct packages that can be loaded in the fresh Wolfram kernel.",
-      inputSchema: {
+      outputSchema: {
         type: "object",
         properties: {
-          packages: {
-            type: "array",
-            items: { type: "string" },
-            description: "Optional xAct package contexts to probe.",
-          },
-          timeoutMs: {
-            type: "number",
-            description: "Optional timeout in milliseconds, capped at 10 minutes.",
-          },
+          ok: { type: "boolean" },
+          result: { type: "string" },
+          truncated: { type: "boolean" },
         },
+        required: ["ok"],
       },
     },
     {
-      name: "xact_check_residuals",
+      name: "xact_verify_residuals",
       description:
-        "Evaluate residual expressions with xAct loaded, apply ToCanonical and Simplify, and report whether all residuals vanish.",
+        "Evaluate labelled residuals in a fresh xAct kernel and report zero, nonzero_normal_form, unevaluated, or error without interpreting the mathematical claim.",
       inputSchema: {
         type: "object",
         properties: {
           setup: {
             type: "string",
-            description: "Optional Wolfram setup code, such as DefManifold, DefMetric, and DefTensor calls.",
-          },
-          expressions: {
-            type: "array",
-            items: { type: "string" },
-            description: "Residual expressions expected to simplify to zero.",
-          },
-          assumptions: {
-            type: "string",
-            description: "Optional assumptions passed to Simplify.",
-          },
-          timeoutMs: {
-            type: "number",
-            description: "Optional timeout in milliseconds, capped at 10 minutes.",
-          },
-        },
-        required: ["expressions"],
-      },
-    },
-    {
-      name: "xact_variation_check",
-      description:
-        "Run common xCPS/xAct variation checks, including FirstVariation and SymplecticPotential followed by ToCanonical.",
-      inputSchema: {
-        type: "object",
-        properties: {
-          setup: {
-            type: "string",
-            description: "Wolfram setup code defining the manifold, metric, fields, and covariant derivative.",
-          },
-          lagrangian: {
-            type: "string",
-            description: "The Lagrangian expression to vary.",
-          },
-          fields: {
-            type: "array",
-            items: { type: "string" },
-            description: "Raw Wolfram symbols or field expressions used as FirstVariation fields.",
-          },
-          covariantDerivative: {
-            type: "string",
-            description: "Raw Wolfram covariant derivative symbol, default CD.",
+            description: "Self-contained Wolfram setup defining manifolds, metrics, tensors, and rules.",
           },
           checks: {
             type: "array",
             items: {
-              type: "string",
-              enum: ["firstVariation", "symplecticPotential"],
+              type: "object",
+              properties: {
+                label: { type: "string" },
+                residual: { type: "string" },
+              },
+              required: ["label", "residual"],
             },
-            description: "Checks to run. Defaults to both.",
+            description: "Labelled residual expressions expected to vanish.",
           },
-          simplify: {
-            type: "boolean",
-            description: "Whether to run Simplify after ToCanonical.",
+          pipeline: {
+            type: "string",
+            enum: ["none", "canonical", "canonical_contract", "full"],
+            description: "Transparent normalization pipeline. Defaults to canonical.",
           },
-          timeoutMs: {
-            type: "number",
-            description: "Optional timeout in milliseconds, capped at 10 minutes.",
+          assumptions: {
+            type: "string",
+            description: "Optional Wolfram expression assigned to $Assumptions during checks.",
           },
+          ...commonInputProperties,
         },
-        required: ["setup", "lagrangian", "fields"],
+        required: ["checks"],
+      },
+      outputSchema: {
+        type: "object",
+        properties: {
+          ok: { type: "boolean" },
+          allZero: { type: "boolean" },
+          checks: { type: "array" },
+        },
+        required: ["ok"],
       },
     },
   ],
 }));
 
-server.setRequestHandler(CallToolRequestSchema, async (request) => {
+function structuredError(error: unknown): Record<string, unknown> {
+  return {
+    ok: false,
+    error: error instanceof Error ? error.message : String(error),
+  };
+}
+
+server.setRequestHandler(CallToolRequestSchema, async (request, extra) => {
   const args = request.params.arguments ?? {};
-  const timeoutMs = timeoutArgument(args.timeoutMs);
-
   try {
+    let structuredContent: Record<string, unknown>;
     switch (request.params.name) {
-      case "xact_eval": {
-        const code = optionalString(args.code);
-        if (!code) {
-          throw new Error("xact_eval requires a non-empty string 'code' argument.");
-        }
-
-        const packages = stringArrayArgument(args.packages, DEFAULT_PACKAGES);
-        const run = await runWolfram(code, { packages, timeoutMs });
-        return { content: [{ type: "text", text: renderRun("xact_eval", run) }] };
-      }
-
-      case "xact_reset": {
-        resetCount += 1;
-        lastResetAt = new Date().toISOString();
-        return {
-          content: [
-            {
-              type: "text",
-              text: JSON.stringify(
-                {
-                  ok: true,
-                  title: "xact_reset",
-                  message:
-                    "Reset recorded. xAct MCP evaluates each request in a fresh Wolfram kernel, so the next tool call has no manifold/tensor definitions from prior calls.",
-                  diagnostics: { resetCount, lastResetAt },
-                },
-                null,
-                2,
-              ),
-            },
-          ],
-        };
-      }
-
-      case "xact_loaded_packages": {
-        const packages = stringArrayArgument(args.packages, DEFAULT_PACKAGES);
-        const code = `
-<|
-  "WolframVersion" -> System\`$Version,
-  "RequestedPackages" -> xActMCPRequestedPackages,
-  "LoadedPackageContexts" -> Select[$Packages, StringStartsQ[#, "xAct\`"] &],
-  "LoadErrors" -> xActMCPLoadErrors
-|>
-`;
-        const run = await runWolfram(code, { packages, timeoutMs });
-        return { content: [{ type: "text", text: renderRun("xact_loaded_packages", run) }] };
-      }
-
-      case "xact_check_residuals": {
-        const expressions = stringArrayArgument(args.expressions, []);
-        if (expressions.length === 0) {
-          throw new Error("xact_check_residuals requires at least one residual expression.");
-        }
-
-        const setup = optionalString(args.setup) ?? "";
-        const assumptions = optionalString(args.assumptions);
-        const simplifyCall = assumptions
-          ? `Simplify[#, ${assumptions}] &`
-          : "Simplify";
-        const code = `
-${setup}
-xActMCPResidualInputs = ${wlList(expressions)};
-xActMCPResiduals = {${expressions.join(", ")}};
-xActMCPCanonicalResiduals = ToCanonical /@ xActMCPResiduals;
-xActMCPSimplifiedResiduals = (${simplifyCall}) /@ xActMCPCanonicalResiduals;
-xActMCPZeroQ = (TrueQ[Simplify[# == 0${assumptions ? `, ${assumptions}` : ""}]] &) /@ xActMCPSimplifiedResiduals;
-<|
-  "AllZero" -> And @@ xActMCPZeroQ,
-  "ZeroQ" -> xActMCPZeroQ,
-  "Inputs" -> xActMCPResidualInputs,
-  "CanonicalResiduals" -> xActMCPCanonicalResiduals,
-  "SimplifiedResiduals" -> xActMCPSimplifiedResiduals
-|>
-`;
-        const run = await runWolfram(code, { timeoutMs });
-        return { content: [{ type: "text", text: renderRun("xact_check_residuals", run) }] };
-      }
-
-      case "xact_variation_check": {
-        const setup = optionalString(args.setup);
-        const lagrangian = optionalString(args.lagrangian);
-        const fields = stringArrayArgument(args.fields, []);
-
-        if (!setup || !lagrangian || fields.length === 0) {
-          throw new Error(
-            "xact_variation_check requires 'setup', 'lagrangian', and at least one 'fields' entry.",
-          );
-        }
-
-        const covariantDerivative = optionalString(args.covariantDerivative) ?? "CD";
-        const checks = stringArrayArgument(args.checks, [
-          "firstVariation",
-          "symplecticPotential",
-        ]);
-        const simplify = args.simplify === true;
-        const canonicalize = simplify ? "Simplify[ToCanonical[#]] &" : "ToCanonical";
-        const fieldList = `{${fields.join(", ")}}`;
-        const runFirstVariation = checks.includes("firstVariation");
-        const runSymplecticPotential = checks.includes("symplecticPotential");
-        const code = `
-${setup}
-xActMCPLagrangian = ${lagrangian};
-xActMCPVariationResults = <||>;
-${runFirstVariation ? `xActMCPFirstVariation = (${canonicalize})[FirstVariation[${fieldList}, ${covariantDerivative}][xActMCPLagrangian]]; xActMCPVariationResults = Join[xActMCPVariationResults, <|"FirstVariation" -> xActMCPFirstVariation|>];` : ""}
-${runSymplecticPotential ? `xActMCPSymplecticPotential = (${canonicalize})[SymplecticPotential[${covariantDerivative}][xActMCPLagrangian]]; xActMCPVariationResults = Join[xActMCPVariationResults, <|"SymplecticPotential" -> xActMCPSymplecticPotential|>];` : ""}
-xActMCPVariationResults
-`;
-        const run = await runWolfram(code, { timeoutMs });
-        return { content: [{ type: "text", text: renderRun("xact_variation_check", run) }] };
-      }
-
+      case "xact_run":
+        structuredContent = await xactRun(args, extra.signal);
+        break;
+      case "xact_verify_residuals":
+        structuredContent = await xactVerifyResiduals(args, extra.signal);
+        break;
       default:
         throw new Error(`Unknown tool: ${request.params.name}`);
     }
+    return { content: [], structuredContent };
   } catch (error) {
-    return {
-      content: [{ type: "text", text: renderError(request.params.name, error) }],
-      isError: true,
-    };
+    return { content: [], structuredContent: structuredError(error), isError: true };
   }
 });
 
-async function main() {
+async function main(): Promise<void> {
   const transport = new StdioServerTransport();
+  server.onclose = () => {
+    void terminateAllProcessTrees();
+  };
   await server.connect(transport);
 }
 
+let shuttingDown = false;
+
+async function shutdown(exitCode: number): Promise<void> {
+  if (shuttingDown) {
+    return;
+  }
+  shuttingDown = true;
+  await terminateAllProcessTrees();
+  try {
+    await server.close();
+  } finally {
+    process.exit(exitCode);
+  }
+}
+
+process.once("SIGINT", () => {
+  void shutdown(0);
+});
+process.once("SIGTERM", () => {
+  void shutdown(0);
+});
+
 main().catch((error) => {
   console.error("Fatal error in xAct MCP server:", error);
-  process.exit(1);
+  void shutdown(1);
 });

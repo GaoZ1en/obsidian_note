@@ -1,4 +1,4 @@
-# Killing horizons
+# Killing Horizons
 
 This directory develops and tests a CPS-normalized quantization framework for matter fields in spacetimes with Killing horizons. The primary benchmark is a real scalar field on the maximally extended non-rotating BTZ black hole with standard AdS boundary conditions.
 
@@ -22,7 +22,7 @@ Dynamical gravity, rotating horizons, superradiance, and gauge constraints are d
 | `spectral completeness numerical check.md` | Weak numerical reconstruction of compactly supported test functions from the continuous spectrum |
 | `Killing Hamiltonian and horizon flux.md` | Killing energy, Hamiltonian generation, and horizon balance laws |
 
-## HHI state and free observables
+## HHI State and Free Observables
 
 | File | Role |
 |---|---|
@@ -31,7 +31,7 @@ Dynamical gravity, rotating horizons, superradiance, and gauge constraints are d
 | `renormalized stress tensor on BTZ.md` | Minimal-scalar point splitting, conservation, and Kruskal regularity |
 | `free theory validation ledger.md` | Evidence and completion status for the free benchmark |
 
-## Interaction and synthesis
+## Interaction and Synthesis
 
 | File | Role |
 |---|---|
@@ -40,7 +40,7 @@ Dynamical gravity, rotating horizons, superradiance, and gauge constraints are d
 | `horizon quantization formalism.md` | Framework distilled from the tested model |
 | `TODO.md` | Concrete unresolved calculations and verification gates |
 
-## Validation order
+## Validation Order
 
 1. Fix the variational problem and BTZ geometry.
 2. Verify the scalar equation, CPS current, and continuous-mode normalization.

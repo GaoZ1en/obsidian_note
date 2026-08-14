@@ -1,10 +1,41 @@
 # Implementing Dirichlet data
 
-Strict Dirichlet data at an artificial cut cannot be imposed simultaneously with arbitrary field matching: if both cut traces are fixed to zero from the outset, their difference carries no gluing information. The useful construction is therefore an interpolation. A boundary penalty realizes decoupled Dirichlet theories at one endpoint, while a relative-trace penalty glues the regions at the other endpoint.
+Strict Dirichlet data at an artificial cut cannot be imposed simultaneously with arbitrary field matching: if both cut traces are fixed to zero from the outset, their difference carries no gluing information. The useful construction is therefore an interpolation. A boundary penalty realizes decoupled Dirichlet theories at one endpoint, while a relative-trace penalty glues the regions at the other endpoint. The scalar interpolation is diagonalized numerically in Section $\ref{subsec:numerics-interval}$.
 
 ## Scalar boundary penalty
 
-For the scalar interval, keep the physical outer Dirichlet data exact and vary the two traces at the artificial cut. Introduce a fixed inverse-length scale $\mu>0$ and a dimensionless parameter $\kappa>0$. The action is
+For the scalar interval, keep the physical outer Dirichlet data exact and vary the two traces at the artificial cut. The reflection-symmetric local quadratic form contains two independent positive coefficients,
+
+$$
+S_{d,h}^{\mathrm D}
+=\sum_{i=1}^2S_i
+-\frac12\int\mathrm dt\left[
+d(\phi_1^2+\phi_2^2)
++h(\phi_1-\phi_2)^2
+\right]_{x=0},
+\qquad d,h>0.
+$$
+
+The coefficient $d$ is the boundary penalty and $h$ is the gluing interaction. Their endpoint requirements are different:
+
+$$
+\text{Dirichlet endpoint}:\quad d\to\infty,\quad h\to0,
+$$
+
+$$
+\text{smooth-gluing endpoint}:\quad d\to0,\quad h\to\infty.
+$$
+
+Thus two boundary operators are required. A convenient one-parameter trajectory through their two-dimensional coupling space is obtained by introducing a fixed inverse-length scale $\mu>0$ and setting
+
+$$
+d_\kappa=\frac\mu\kappa,
+\qquad
+h_\kappa=\mu\kappa,
+\qquad \kappa>0.
+$$
+
+Along this continuum trajectory the action is
 
 $$
 S_\kappa^{\mathrm D}
@@ -15,7 +46,7 @@ S_\kappa^{\mathrm D}
 \right]_{x=0}.
 $$
 
-The first term is the boundary penalty and the second is the gluing interaction. Free variation of the cut traces gives
+Free variation of the cut traces gives
 
 $$
 \phi_1'
@@ -65,7 +96,42 @@ $$
 
 so the fields join into one scalar on the full interval. Because neither cut term contains a time derivative, the pre-symplectic form remains the sum of the two bulk forms throughout the interpolation.
 
-The two roles of $\kappa$ are essential. The coefficient $\mu/\kappa$ produces the strict Dirichlet endpoint, while $\mu\kappa$ produces the strong-gluing endpoint. A single penalty cannot realize both limits.
+The two operators are essential. The symbol $\kappa$ only parameterizes the selected continuum trajectory $d_\kappa h_\kappa=\mu^2$; it does not mean that one boundary operator realizes both limits.
+
+This distinction becomes unavoidable after a mode cutoff. In the common and relative sectors the continuum stiffnesses are
+
+$$
+\alpha_+=d,
+\qquad
+\alpha_-=d+2h.
+$$
+
+If $T_N(0)$ is the omitted zero-energy boundary response, low-energy matching requires
+
+$$
+\frac1{\alpha_{\sigma,N}}
+=\frac1{\alpha_\sigma}+T_N(0),
+\qquad \sigma=\pm,
+$$
+
+and therefore
+
+$$
+d_N=\alpha_{+,N},
+\qquad
+h_N=\frac{\alpha_{-,N}-\alpha_{+,N}}2.
+$$
+
+On the continuum trajectory $d h=\mu^2$, these matched coefficients obey
+
+$$
+d_Nh_N
+=\frac{\mu^2}{
+\left(1+\alpha_-T_N(0)\right)
+\left(1+\alpha_+T_N(0)\right)^2},
+$$
+
+which differs from $\mu^2$ whenever the omitted response is nonzero. Hence there is generally no single bare $\kappa_N$ satisfying both $d_N=\mu/\kappa_N$ and $h_N=\mu\kappa_N$. The continuum one-parameter path remains a valid family of exact boundary conditions, but it is not closed under finite-cutoff response matching.
 
 ## Gauge-invariant Maxwell boundary penalty
 
@@ -85,7 +151,7 @@ a_{i,a}=A_{i,a}-\partial_a\varphi_i,
 a=t,y.
 $$
 
-The gauge-invariant Dirichlet penalty is
+Along the same convenient continuum trajectory, the gauge-invariant Dirichlet penalty is
 
 $$
 S_{\mathrm D}^{(\kappa)}
@@ -105,7 +171,7 @@ $$
 
 The strict limit $\kappa\to0$ forces $a_{i,a}\to0$ for bounded energy, which is precisely the gauge-invariant Dirichlet condition on each cut face.
 
-To interpolate from these two Dirichlet regions to the uncut theory, add
+To interpolate from these two Dirichlet regions to the uncut theory along this trajectory, add
 
 $$
 S_{\mathrm{glue}}^{(\kappa)}
@@ -113,15 +179,19 @@ S_{\mathrm{glue}}^{(\kappa)}
 \gamma^{ab}(a_{1,a}-a_{2,a})(a_{1,b}-a_{2,b}).
 $$
 
-With
+More generally the two coefficients are independent. With
 
 $$
-\boldsymbol a_a=
-\begin{pmatrix}
-a_{1,a}\\
-a_{2,a}
+B_{d,h}
+=\begin{pmatrix}
+d+h&-h\\
+-h&d+h
 \end{pmatrix},
-\qquad
+$$
+
+the common and relative eigenvalues are $d$ and $d+2h$. The one-parameter continuum choice is $B_{d_\kappa,h_\kappa}=\mu M_\kappa$, with
+
+$$
 M_\kappa=
 \begin{pmatrix}
 \kappa^{-1}+\kappa&-\kappa\\
@@ -129,7 +199,7 @@ M_\kappa=
 \end{pmatrix},
 $$
 
-the complete cut action is
+and the complete cut action along that trajectory is
 
 $$
 S_{\partial,\kappa}
@@ -198,7 +268,27 @@ $$
 a_{1,a}=a_{2,a}.
 $$
 
-The common dressed field becomes unconstrained by the vanishing $\kappa^{-1}$ coefficient, while the relative dressed field is suppressed by the growing $2\kappa$ coefficient. The finite-$\kappa$ cut equations then match the normal field strengths. After pulling back the CPS form and quotienting its null directions, the result is the Maxwell phase space on the uncut spacetime.
+The common dressed field becomes unconstrained by the vanishing $\kappa^{-1}$ coefficient, while the relative dressed field is suppressed by the growing $2\kappa$ coefficient. The finite-$\kappa$ cut equations then match the normal field strengths. After pulling back the CPS form and quotienting its null directions, the bounded-data limit gives the Maxwell phase space on the uncut spacetime.
+
+The last statement assumes that the unscaled gauge-invariant bulk field strengths and dressed cut fields remain uniformly bounded as $\kappa\to\infty$. It is not the only possible scaling limit. A CPS-normalized family can have a common boundary component of order $\kappa^{1/2}$; after rescaling, that component survives as a massless interface scalar. Thus the unscaled bounded-data limit gives pure uncut Maxwell, whereas the normalized-mode scaling gives uncut Maxwell together with an additional interface theory. These are different limiting phase spaces, not two descriptions of the same limit.
+
+At finite mode cutoff, the two boundary eigenchannels again require independent coefficients. After dualization their oscillator pencils have the form
+
+$$
+K_N=D_N,
+\qquad
+G_{s,N}=I+\frac1{\alpha_s}bb^{\mathrm T},
+\qquad
+\alpha_s\in\{d,d+2h\}.
+$$
+
+If $T_N(k)$ is the omitted boundary response, exact matching at a selected wave number requires
+
+$$
+\alpha_{s,N}(k)=\alpha_s-k^2T_N(k).
+$$
+
+The correction depends on both the boundary channel and the selected energy. Consequently, even allowing two independent constants $d_N$ and $h_N$ does not exactly match more than one generic spectral point in each channel. A finite energy window requires energy-dependent boundary operators or an equivalent auxiliary-mode completion.
 
 ### Compact gauge group
 

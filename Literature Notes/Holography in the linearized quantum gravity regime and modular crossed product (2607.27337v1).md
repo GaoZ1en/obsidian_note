@@ -238,7 +238,7 @@ $$\begin{align}
 T^{*}\tilde{\mathfrak{A}}(A,\tilde{\omega} _{0})T & =\mathfrak{A}(\mathcal{H}_{A}^{+},\omega _{0}) \iff P_{\mathrm{code}}\tilde{\mathfrak{A}}(A,\tilde{\omega} _{0})P_{\mathrm{code}}=T\mathfrak{A}(\mathcal{H}_{A}^{+},\omega _{0})T^{*}
 \end{align}$$
 
-now denote the algebra $\displaystyle{\tilde{\mathfrak{A}}_{\mathrm{rest}}(A,\tilde{\omega}_{0})=P_{\mathrm{code}}\tilde{\mathfrak{A}}(A,\tilde{\omega} _{0})P_{\mathrm{code}}\subset \tilde{\mathfrak{A}}(A,\tilde{\omega} _{0})}$ as the restricted CFT algebra consisting CGY operators acting only on code subspace $\displaystyle{\mathscr{H}_{\mathrm{code}}}$. Then
+now denote the algebra $\displaystyle{\tilde{\mathfrak{A}}_{\mathrm{rest}}(A,\tilde{\omega}_{0})=P_{\mathrm{code}}\tilde{\mathfrak{A}}(A,\tilde{\omega} _{0})P_{\mathrm{code}}\subset \tilde{\mathfrak{A}}(A,\tilde{\omega} _{0})}$ as the restricted CFT algebra consisting CFT operators acting only on code subspace $\displaystyle{\mathscr{H}_{\mathrm{code}}}$. Then
 
 $$\begin{align}
 \tilde{\mathfrak{A}}_{\mathrm{rest}}(A,\tilde{\omega}_{0}) & =T\mathfrak{A}(\mathcal{H}_{A}^{+},\omega _{0})T^{*}
@@ -325,3 +325,75 @@ the algebraic coherent state is then given by
 $$\begin{align}
 \omega _{h}(\boldsymbol{a}) & := \omega _{0}(\boldsymbol{U^{*}aU}) & \forall \boldsymbol{a}\in \mathfrak{A}(\mathcal{H}_{A}^{+},\omega _{0})
 \end{align}$$
+
+for simplicity, now we extent the state to entire $\displaystyle{\mathcal{H}^{+}}$ by defining the state $\displaystyle{\ket{\omega _{h}}\in \mathscr{H}_{\mathrm{AdS}}}$ to be the unique state in the natural cone $\displaystyle{P^{\sharp}}$ of $\displaystyle{(\mathfrak{A}(\mathcal{H}_{A}^{+},\omega _{0}),\ket{\omega _{0}})}$ in $\displaystyle{\mathscr{H}_{\mathrm{AdS}}}$ as (the crossed product entropy is purification independent)
+
+$$\begin{align}
+\ket{\omega _{h}}  & =\boldsymbol{U}j_{\omega_{0}}(\boldsymbol{U})\ket{\omega _{0}}
+\end{align}$$
+
+where $\displaystyle{j_{\omega _{0}}:\mathfrak{A}(\mathcal{H}_{A}^{+},\omega _{0})\to \mathfrak{A}(\mathcal{H}^{+}_{A},\omega _{0})'=\mathfrak{A}(\mathcal{H}^{+}_{A_{c}},\omega _{0})}$ defined by $\displaystyle{j_{\omega _{0}}=\boldsymbol{J}_{\omega_{0}}\boldsymbol{a}\boldsymbol{J}_{\omega_{0}}}$. And $\displaystyle{\boldsymbol{J}_{\omega_{0}}}$ is the modular conjugation operator for the state $\displaystyle{\ket{\omega_{0}}}$ in $\displaystyle{\mathfrak{A}(\mathcal{H}_{A}^{+},\omega_{0})}$.
+
+We define a "classical-quantum state" $\displaystyle{\ket{\underline{\omega}_{h}}}$ in the extended Hilbert space $\displaystyle{\mathscr{H}_{\mathrm{AdS}}\otimes L^{2}(\mathbb{R})}$ by
+
+$$\begin{align}
+\ket{\underline{\omega}_{h}}  & =\int _{\mathbb{R}}\mathrm{d}Xf(X)\ket{\omega _{h}} \otimes \ket{X}
+\end{align}$$
+
+where $\displaystyle{f\in L^{2}(\mathbb{R})}$.
+
+Since the extended algebra $\displaystyle{\mathfrak{A}^{ext}(\mathcal{H}_{A}^{+},\omega _{0})}$ is a Type-II factor, $\displaystyle{\exists \boldsymbol{\rho}_{\underline{\omega}_{h}}\in \mathfrak{A}^{\mathrm{ext}}(\mathcal{H}_{A}^{+},\omega_{0})}$ corresponding to the state $\displaystyle{\ket{\underline{\omega}_{h}}}$ such that
+
+$$\begin{align}
+\mathrm{\mathrm{Tr}}(\boldsymbol{\rho}_{\underline{\omega} _{h}}\boldsymbol{a}) & = \braket{ \underline{\omega}_{h}|\boldsymbol{a}|\underline{\omega}_{h} } , & \forall \boldsymbol{a} & \in \mathfrak{A}^{\mathrm{ext}}(\mathcal{H}_{A}^{+},\omega_{0}), & \mathrm{Tr}(\boldsymbol{\rho})_{\underline{\omega}_{h}}=1
+\end{align}$$
+
+consider the von Neumann entropy of the density matrix $\displaystyle{\boldsymbol{\rho}_{\underline{\omega}_{h}}}$ defined by
+
+$$\begin{align}
+S(\boldsymbol{\rho})_{\underline{\omega}_{h}} & =-\mathrm{Tr}(\boldsymbol{\rho})_{\underline{\omega}_{h}\log\boldsymbol{\rho}_{\underline{\omega}_{h}}} \\
+ & =-S(\omega _{h}|\omega_{0})+2\pi\braket{ \boldsymbol{X} } _{\underline{\omega}_{h}}+S(f)
+\end{align}$$
+
+where $\displaystyle{S(f)=-\int _{\mathbb{R}}\mathrm{d}X|f(X)|^{2}\log|f(X)|^{2}}$. the relative entropy is
+
+$$\begin{align}
+S(\omega _{h}|\omega _{0}) & =2\pi F_{\xi}[\mathcal{H}_{A}^{+}] \\
+ & =\dfrac{1}{2}\int _{\mathcal{H}_{A}^{+}}\mathrm{d}V\mathrm{d}\Omega _{2}(\delta \sigma _{h})^{2}
+\end{align}$$
+
+where $\displaystyle{\delta \sigma _{h}=\dfrac{1}{2}\partial _{V}h}$ is the perturbed shear at $\displaystyle{\mathcal{H}^{+}}$ corresponding to $\displaystyle{h_{AB}}$ and hence $\displaystyle{F_{\xi}[\mathcal{H}_{A}^{+}]}$ is the classical ragiation flux of the linearized perturbation falling through $\displaystyle{\mathcal{H}_{A}^{+}}$.
+
+$\displaystyle{f(X)}$ can be assumed to be peaked at the classical value of the boundary charge, which means $\displaystyle{\braket{ \boldsymbol{X} }_{\underline{\omega}_{h}}=X+(\omega _{h}\text{-independent terms})}$, then
+
+$$\begin{align}
+S(\boldsymbol{\rho}_{\underline{\omega}_{h}}) & =2\pi(X-F_{\xi}[\mathcal{H}_{\xi}^{+}])+(\omega _{h}\text{-independent terms}) \\
+ & =2\pi \int _{\Gamma}\delta ^{2}Q_{\xi}+(\omega _{h}\text{-independent terms})
+\end{align}$$
+
+the Noether charge of general relativity at the bifurcation surface of a Kiling horizon evaluates to
+
+$$\begin{align}
+\int _{\Gamma}\mathrm{d}^{2}Q_{\xi} & =\dfrac{1}{8\pi}\delta ^{2}\mathrm{Area}[\Gamma _{0}]
+\end{align}$$
+
+we obatin
+
+$$\begin{align}
+S(\boldsymbol{\rho})_{\underline{\omega}_{h}} & =\dfrac{1}{4}\delta ^{2}\mathrm{Area}[\Gamma _{0}]+(\omega _{h}\text{-independent terms})
+\end{align}$$
+
+the action of $\displaystyle{T\otimes\boldsymbol{1}}$ on $\displaystyle{\ket{\underline{\omega}_{h}}}$ produces a state $\displaystyle{\ket{\underline{\tilde{\omega}}_{h}}\in \mathscr{H}_{\mathrm{code}}\otimes L^{2}(\mathbb{R})}$, which is the corresponding "classical-quantum state" in the dual CFT. We can compute the corresponding reduced density matrix $\displaystyle{\boldsymbol{\rho}_{\underline{\tilde{\omega}}_{h}}\in \mathfrak{A}^{\mathrm{ext}}_{\mathrm{rest}}(A,\tilde{\omega}_{0})}$ by similar procedure. The entropy of the density matrix $\displaystyle{\boldsymbol{\rho}_{\underline{\tilde{\omega}}_{h}}}$ can be evaluated as
+
+$$\begin{align}
+S(\boldsymbol{\rho}_{\underline{\tilde{\omega}}_{h}}) & =-S(\tilde{\omega}_{h}|\tilde{\omega}_{0})+2\pi\braket{ \boldsymbol{X} } _{\underline{\tilde{\omega}}_{h}}+S(f) \\
+ & =-S(\omega _{h}|\omega _{0})+2\pi\braket{ \boldsymbol{X} }_{\underline{\tilde{\omega}}_{h}}+S(f)=S(\boldsymbol{\rho}_{\underline{\omega}_{h}})
+\end{align}$$
+
+here we have used the JLMS condition. Therefore
+
+$$\begin{align}
+S(\boldsymbol{\rho}_{\underline{\tilde{\omega}}_{h}}) & =\dfrac{1}{4}\delta ^{2}\mathrm{Area}[\Gamma _{0}]+(\tilde{\omega}_{h}\text{-independent terms})
+\end{align}$$
+
+which is exactly the HRT formula.

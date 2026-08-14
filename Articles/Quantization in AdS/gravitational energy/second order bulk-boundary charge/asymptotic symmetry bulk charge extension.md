@@ -4,7 +4,7 @@ date: 2026-07-13
 summary: "Extension of the finite second-order bulk charge from background Killing fields to Brown--Henneaux asymptotic symmetries, with the required symplectic improvement made explicit."
 ---
 
-# Asymptotic-symmetry extension of the second-order bulk charge
+# Asymptotic-Symmetry Extension of the Second-Order Bulk Charge
 
 ## Result
 
@@ -13,32 +13,24 @@ The stress-current formula does not extend by itself from a background Killing f
 Let
 
 $$\begin{align}
-s_{\mu\nu}:=\mathcal L_\xi g^{(0)}_{\mu\nu},
-\qquad
-T_{\mathrm{eff}}^{\mu\nu}:=T_{(h)}^{\mu\nu}+T^{\mu\nu}.
+s_{\mu\nu}:=\mathcal L_\xi g^{(0)}_{\mu\nu}, \qquad T_{\mathrm{eff}}^{\mu\nu}:=T_{(h)}^{\mu\nu}+T^{\mu\nu}.
 \end{align}$$
 
 On the first- and second-order constraints,
 
 $$\begin{align}
-\mathcal E^{(1)}_{\mu\nu}[h]=0,
-\qquad
-T_{\mathrm{eff}}^{\mu\nu}=\mathcal E^{(1)\mu\nu}[k].
+\mathcal E^{(1)}_{\mu\nu}[h]=0, \qquad T_{\mathrm{eff}}^{\mu\nu}=\mathcal E^{(1)\mu\nu}[k].
 \end{align}$$
 
 For an arbitrary smooth bulk extension of an allowed asymptotic symmetry, the conserved improved current is
 
 $$\begin{align}
-\widetilde J_\xi^\mu
-:=\xi_\nu T_{\mathrm{eff}}^{\mu\nu}
-+\omega_{\mathrm{EH}}^{[0]\mu}(k,s),
-\qquad
-\nabla^{(0)}_\mu\widetilde J_\xi^\mu=0.
+\widetilde J_\xi^\mu :=\xi_\nu T_{\mathrm{eff}}^{\mu\nu} +\omega_{\mathrm{EH}}^{[0]\mu}(k,s), \qquad \nabla^{(0)}_\mu\widetilde J_\xi^\mu=0.
 \end{align}$$
 
 Here $\omega_{\mathrm{EH}}^{[0]}(k,s)$ is the finite linearized Einstein--Hilbert symplectic current in the conventions of the perturbative action. For a background Killing field, $s_{\mu\nu}=0$, and the improved current reduces to the stress current used in the draft.
 
-## Obstruction to the stress-only current
+## Obstruction to the Stress-Only Current
 
 The linearized Bianchi identity gives
 
@@ -48,150 +40,106 @@ $$\begin{align}
 
 Therefore
 
-$$
-\begin{aligned}
-\nabla^{(0)}_\mu\left(\xi_\nu T_{\mathrm{eff}}^{\mu\nu}\right)
-&=T_{\mathrm{eff}}^{\mu\nu}\nabla^{(0)}_\mu\xi_\nu\\
+$$\begin{aligned}
+\nabla^{(0)}_\mu\left(\xi_\nu T_{\mathrm{eff}}^{\mu\nu}\right) &=T_{\mathrm{eff}}^{\mu\nu}\nabla^{(0)}_\mu\xi_\nu\\
 &=\frac12T_{\mathrm{eff}}^{\mu\nu}s_{\mu\nu}.
-\end{aligned}
-$$
+\end{aligned}$$
 
 Brown--Henneaux conditions control $s_{\mu\nu}$ near infinity but do not set it to zero in the bulk. Consequently,
 
 $$\begin{align}
-Q_{\xi,\mathrm{stress}}[\Sigma]
-:=\int_\Sigma\!\mathrm d^2x\sqrt{\sigma^{(0)}}\,
-\tau_\mu^{(0)}\xi_\nu T_{\mathrm{eff}}^{\mu\nu}
+Q_{\xi,\mathrm{stress}}[\Sigma] :=\int_\Sigma\!\mathrm d^2x\sqrt{\sigma^{(0)}}\, \tau_\mu^{(0)}\xi_\nu T_{\mathrm{eff}}^{\mu\nu}
 \end{align}$$
 
 is not a conserved charge for a general asymptotic Killing field. It also depends on how the asymptotic vector is extended into the interior.
 
-## Symplectic cancellation
+## Symplectic Cancellation
 
 With the argument order $(u,v)$, the finite Einstein--Hilbert symplectic current obeys the Green identity
 
-$$
-\begin{aligned}
-\nabla^{(0)}_\mu\omega_{\mathrm{EH}}^{[0]\mu}(u,v)
-=-\frac12\bigg(
-\mathcal E^{(1)\mu\nu}[u]v_{\mu\nu}
--\mathcal E^{(1)\mu\nu}[v]u_{\mu\nu}
-\bigg).
-\end{aligned}
-$$
+$$\begin{aligned}
+\nabla^{(0)}_\mu\omega_{\mathrm{EH}}^{[0]\mu}(u,v) =-\frac12\bigg( \mathcal E^{(1)\mu\nu}[u]v_{\mu\nu} -\mathcal E^{(1)\mu\nu}[v]u_{\mu\nu} \bigg).
+\end{aligned}$$
 
 Diffeomorphism covariance of the cosmological Einstein tensor on the AdS$_3$ background gives
 
 $$\begin{align}
-\mathcal E^{(1)}_{\mu\nu}[s]
-=\mathcal E^{(1)}_{\mu\nu}[\mathcal L_\xi g^{(0)}]
-=\mathcal L_\xi\mathcal E_{\mu\nu}[g^{(0)}]
-=0.
+\mathcal E^{(1)}_{\mu\nu}[s] =\mathcal E^{(1)}_{\mu\nu}[\mathcal L_\xi g^{(0)}] =\mathcal L_\xi\mathcal E_{\mu\nu}[g^{(0)}] =0.
 \end{align}$$
 
 Taking $(u,v)=(k,s)$ therefore gives
 
 $$\begin{align}
-\nabla^{(0)}_\mu\omega_{\mathrm{EH}}^{[0]\mu}(k,s)
-=-\frac12T_{\mathrm{eff}}^{\mu\nu}s_{\mu\nu}.
+\nabla^{(0)}_\mu\omega_{\mathrm{EH}}^{[0]\mu}(k,s) =-\frac12T_{\mathrm{eff}}^{\mu\nu}s_{\mu\nu}.
 \end{align}$$
 
 This cancels the obstruction in the stress-current divergence and proves conservation of $\widetilde J_\xi^\mu$.
 
-## Generalized Abbott--Deser identity
+## Generalized Abbott--Deser Identity
 
 The same improvement converts the effective source into a surface divergence. For arbitrary $\xi$,
 
 $$\begin{align}
-\xi_\nu\mathcal E^{(1)\mu\nu}[k]
-+\omega_{\mathrm{EH}}^{[0]\mu}
-\left(k,\mathcal L_\xi g^{(0)}\right)
-=\nabla^{(0)}_\nu\widehat S_{\xi,k}^{\mu\nu},
+\xi_\nu\mathcal E^{(1)\mu\nu}[k] +\omega_{\mathrm{EH}}^{[0]\mu} \left(k,\mathcal L_\xi g^{(0)}\right) =\nabla^{(0)}_\nu\widehat S_{\xi,k}^{\mu\nu},
 \end{align}$$
 
 where
 
-$$
-\begin{aligned}
-\widehat S_{\xi,k}^{\mu\nu}
-={}&\xi^{[\mu}\nabla^{(0)\nu]}k
--\xi^{[\mu}\nabla^{(0)}_\rho k^{\nu]\rho}
-+\xi_\rho\nabla^{(0)[\mu}k^{\nu]\rho}\\
-&+\frac12k\nabla^{(0)[\mu}\xi^{\nu]}
--k^{\rho[\mu}\nabla^{(0)}_\rho\xi^{\nu]}.
-\end{aligned}
-$$
+$$\begin{aligned}
+\widehat S_{\xi,k}^{\mu\nu} ={}&\xi^{[\mu}\nabla^{(0)\nu]}k -\xi^{[\mu}\nabla^{(0)}_\rho k^{\nu]\rho} +\xi_\rho\nabla^{(0)[\mu}k^{\nu]\rho}\\
+&+\frac12k\nabla^{(0)[\mu}\xi^{\nu]} -k^{\rho[\mu}\nabla^{(0)}_\rho\xi^{\nu]}.
+\end{aligned}$$
 
 Antisymmetrization has weight one half. This is the same surface tensor used in the background-Killing derivation. The Killing equation is needed only to remove the symplectic term; it is not needed for the improved identity.
 
-## Finite second-order bulk charge
+## Finite Second-Order Bulk Charge
 
 After imposing the leading matter equations and the metric constraints, include the surface improvements already present in the finite bulk current:
 
-$$
-\begin{aligned}
-\widetilde{\mathcal H}_{\xi,\mathrm{bulk}}^{[0]\mu}
-:={}&\xi_\nu T_{\mathrm{eff}}^{\mu\nu}
-+\omega_{\mathrm{EH}}^{[0]\mu}
-\left(k,\mathcal L_\xi g^{(0)}\right)\\
-&+\nabla^{(0)}_\nu
-\left(S_{\xi,h}^{\mu\nu}+S_{\xi,k,0}^{\mu\nu}\right).
-\end{aligned}
-$$
+$$\begin{aligned}
+\widetilde{\mathcal H}_{\xi,\mathrm{bulk}}^{[0]\mu} :={}&\xi_\nu T_{\mathrm{eff}}^{\mu\nu} +\omega_{\mathrm{EH}}^{[0]\mu} \left(k,\mathcal L_\xi g^{(0)}\right)\\
+&+\nabla^{(0)}_\nu \left(S_{\xi,h}^{\mu\nu}+S_{\xi,k,0}^{\mu\nu}\right).
+\end{aligned}$$
 
 The generalized Abbott--Deser identity and the algebraic relation
 
 $$\begin{align}
-S_{\xi,k,0}^{\mu\nu}+\widehat S_{\xi,k}^{\mu\nu}
-=S_{\xi,k}^{\mu\nu}
+S_{\xi,k,0}^{\mu\nu}+\widehat S_{\xi,k}^{\mu\nu} =S_{\xi,k}^{\mu\nu}
 \end{align}$$
 
 give
 
 $$\begin{align}
-\widetilde{\mathcal H}_{\xi,\mathrm{bulk}}^{[0]\mu}
-=\nabla^{(0)}_\nu
-\left(S_{\xi,h}^{\mu\nu}+S_{\xi,k}^{\mu\nu}\right).
+\widetilde{\mathcal H}_{\xi,\mathrm{bulk}}^{[0]\mu} =\nabla^{(0)}_\nu \left(S_{\xi,h}^{\mu\nu}+S_{\xi,k}^{\mu\nu}\right).
 \end{align}$$
 
 Hence
 
-$$
-\begin{aligned}
-\widetilde H_{\xi,\mathrm{bulk}}^{[0]}
-=\lim_{R\to\infty}\int_{C_R}\!\epsilon_C^{(0)}\,
-\tau_\mu^{(0)}n_\nu^{(0)}
-\left(S_{\xi,h}^{\nu\mu}+S_{\xi,k}^{\nu\mu}\right).
-\end{aligned}
-$$
+$$\begin{aligned}
+\widetilde H_{\xi,\mathrm{bulk}}^{[0]} =\lim_{R\to\infty}\int_{C_R}\!\epsilon_C^{(0)}\, \tau_\mu^{(0)}n_\nu^{(0)} \left(S_{\xi,h}^{\nu\mu}+S_{\xi,k}^{\nu\mu}\right).
+\end{aligned}$$
 
 The exact Einstein--Hilbert plus boundary/corner current identity then gives, for an allowed Brown--Henneaux asymptotic symmetry,
 
 $$\begin{align}
-\widetilde H_{\xi,\mathrm{bulk}}^{[0]}
-+H_{\xi,\Gamma}^{[0]}
-=H_{\xi,T}^{[0]}.
+\widetilde H_{\xi,\mathrm{bulk}}^{[0]} +H_{\xi,\Gamma}^{[0]} =H_{\xi,T}^{[0]}.
 \end{align}$$
 
 Thus the finite Brown--York charge admits a conserved bulk representation for the full asymptotic-symmetry class, but that representation is the improved ADT/Noether current rather than the stress current alone.
 
-## Boundary conditions and bulk extension
+## Boundary Conditions and Bulk Extension
 
 The required assumptions are the Brown--Henneaux metric falloffs, fixed matter sources, vanishing renormalized symplectic flux, and no independent matter surface charge. Since both $k_{\mu\nu}$ and $s_{\mu\nu}$ are allowed Brown--Henneaux variations, the symplectic term is finite in the same renormalized phase space used in the draft.
 
 Let two smooth bulk extensions of the same asymptotic generator differ by $\eta^\mu$. If $\eta^\mu$ is a proper diffeomorphism whose surface integral vanishes, then
 
 $$\begin{align}
-\Delta\widetilde H_{\xi,\mathrm{bulk}}^{[0]}
-=\lim_{R\to\infty}\int_{C_R}\!\epsilon_C^{(0)}\,
-\tau_\mu^{(0)}n_\nu^{(0)}
-\left(S_{\eta,h}^{\nu\mu}+S_{\eta,k}^{\nu\mu}\right)
-=0.
+\Delta\widetilde H_{\xi,\mathrm{bulk}}^{[0]} =\lim_{R\to\infty}\int_{C_R}\!\epsilon_C^{(0)}\, \tau_\mu^{(0)}n_\nu^{(0)} \left(S_{\eta,h}^{\nu\mu}+S_{\eta,k}^{\nu\mu}\right) =0.
 \end{align}$$
 
 The stress contribution and the symplectic contribution can each depend on the extension, while their improved sum is fixed by the asymptotic surface data.
 
-## Relation to the off-shell current
+## Relation to the Off-Shell Current
 
 The draft retains the off-shell inhomogeneous term
 
@@ -201,7 +149,7 @@ $$\begin{align}
 
 The symplectic term derived here is the on-constraint correction required to convert $\xi_\nu T_{\mathrm{eff}}^{\mu\nu}$ into the generalized Abbott--Deser divergence. A pointwise off-shell identification between these two local representatives is not used. In particular, $\Theta_h^{[1]}$ also contains the $h^2\mathcal L_\xi g^{(0)}$ terms inherited from the cubic action. The surface coefficient is nevertheless fixed independently by the exact Einstein--Hilbert surface tensor and its equality to $S_{\xi,h}+S_{\xi,k}$.
 
-## Verification status
+## Verification Status
 
 ### Verified
 
@@ -214,20 +162,13 @@ $$\begin{align}
 - For arbitrary symmetric tensors $u_{\mu\nu}$ and $v_{\mu\nu}$, xAct returned zero for the Green-identity residual
 
 $$\begin{align}
-\nabla^{(0)}_\mu\omega_{\mathrm{EH}}^{[0]\mu}(u,v)
-+\frac12\left(
-\mathcal E^{(1)\mu\nu}[u]v_{\mu\nu}
--\mathcal E^{(1)\mu\nu}[v]u_{\mu\nu}
-\right).
+\nabla^{(0)}_\mu\omega_{\mathrm{EH}}^{[0]\mu}(u,v) +\frac12\left( \mathcal E^{(1)\mu\nu}[u]v_{\mu\nu} -\mathcal E^{(1)\mu\nu}[v]u_{\mu\nu} \right).
 \end{align}$$
 
 - For arbitrary symmetric $k_{\mu\nu}$ and arbitrary vector $\xi^\mu$, xAct returned zero for
 
 $$\begin{align}
-\xi_\nu\mathcal E^{(1)\mu\nu}[k]
-+\omega_{\mathrm{EH}}^{[0]\mu}
-\left(k,\mathcal L_\xi g^{(0)}\right)
--\nabla^{(0)}_\nu\widehat S_{\xi,k}^{\mu\nu}.
+\xi_\nu\mathcal E^{(1)\mu\nu}[k] +\omega_{\mathrm{EH}}^{[0]\mu} \left(k,\mathcal L_\xi g^{(0)}\right) -\nabla^{(0)}_\nu\widehat S_{\xi,k}^{\mu\nu}.
 \end{align}$$
 
 - The identities combining $S_{\xi,k,0}$ with $\widehat S_{\xi,k}$ and combining the Einstein--Hilbert surface current with the Brown--York current are the zero-residual identities already recorded in the verification ledger.
@@ -240,7 +181,7 @@ $$\begin{align}
 - Brown--Henneaux metric falloffs, fixed sources, vanishing renormalized symplectic flux, and no independent matter surface charge;
 - proper changes of the bulk extension have vanishing surface charge.
 
-### Not verified here
+### Not Verified Here
 
 - a pointwise off-shell equality between the improved on-constraint current and the local representative containing $\Theta_h^{[1]}[\mathcal L_\xi g^{(0)}]$;
 - field-dependent asymptotic symmetry generators and their adjusted brackets;

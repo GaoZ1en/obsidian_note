@@ -1,8 +1,8 @@
-# Free scalar CPS, real-frequency modes, and the causal kernel
+# Free Scalar CPS, Real-Frequency Modes, and the Causal Kernel
 
 Date: 2026-07-12
 
-## 0. Direct verdict
+## 0. Direct Verdict
 
 The scalar can be quantized by an orthogonal-completeness construction, but the relevant basis in one BTZ exterior is a generalized continuous basis,
 
@@ -14,7 +14,7 @@ not a discrete normal-mode sum. Quasinormal modes are poles of a retarded respon
 
 The theory-defining input is the standard AdS boundary condition. No independent Lorentzian condition is imposed at the horizon.
 
-## 1. Fixed symplectic convention
+## 1. Fixed Symplectic Convention
 
 For
 
@@ -84,7 +84,7 @@ The standard AdS boundary condition makes the symplectic flux at infinity vanish
 
 For a regional foliation whose hypersurfaces meet different horizon cuts, the change of $\Omega_\Sigma$ is instead balanced by symplectic flux through the intervening horizon segment. By contrast, the complete static $t={\rm const}$ exterior problem below is self-adjoint and has conserved Killing evolution.
 
-## 3. Separated equation
+## 3. Separated Equation
 
 Take
 
@@ -124,7 +124,7 @@ R_{\omega m}=O(r^{-\Delta})
 
 at infinity.
 
-## 4. Horizon asymptotics and normalization
+## 4. Horizon Asymptotics and Normalization
 
 The hypergeometric connection formula gives
 
@@ -169,7 +169,7 @@ $$\begin{align}
 
 The endpoint $\omega=0$ is understood by the spectral limit. It is not an additional discrete normalizable mode for the primary $\Delta=2$ problem.
 
-## 5. Generalized completeness and CCR
+## 5. Generalized Completeness and CCR
 
 Expand the field in the right exterior as
 
@@ -216,7 +216,7 @@ $$\begin{align}
 [\widehat\phi(x),\widehat\phi(x')]=iE_{\mathcal R}(x,x').
 \end{align}$$
 
-## 6. Why quasinormal modes do not replace this basis
+## 6. Why Quasinormal Modes Do Not Replace This Basis
 
 A purely ingoing horizon solution together with standard AdS falloff exists only at the complex frequencies
 
@@ -233,7 +233,7 @@ These are quasinormal frequencies. Their boundary-value problem is dissipative a
 
 The canonical algebra uses the real-frequency spectral resolution. Quasinormal-mode expansions are a derived representation of response, not the definition of the CCR.
 
-## 7. Verification status
+## 7. Verification Status
 
 Verified:
 

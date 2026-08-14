@@ -1,0 +1,151 @@
+\section{Moving embeddings and the edge phase space}\label{sec:moving-boundary}
+
+\subsection{Pulling back the complete action}\label{subsec:pullback-action}
+
+A fixed coordinate wall is not a gauge-invariant notion. Introduce an embedding $X:M_0\to M$ of a reference region and the field-space displacement
+
+\begin{align}
+\chi^\mu:=\delta X^\mu\circ X^{-1}.
+\end{align}
+
+For every spacetime tensor, the covariant field-space variation is
+
+\begin{align}
+\Delta_Xg:=\delta g+\mathcal L_\chi g,
+\qquad
+\delta(X^*g)=X^*(\Delta_Xg). \label{eq:delta-x}
+\end{align}
+
+We define the extended theory by pulling back the complete finite action,
+
+\begin{align}
+S_{{\rm p},X}[g,X]
+:=S_{\rm p}[X^*g;M_0],
+\end{align}
+
+and similarly define its potential by
+
+\begin{align}
+\Theta_{{\rm p},X}[g,X;\delta]
+:=\Theta_{\rm p}[X^*g;\delta(X^*g)]. \label{eq:extended-potential}
+\end{align}
+
+Equation (\ref{eq:extended-potential}) includes the shape variation of the GHY surfaces, normals, counterterms, Harlow--Wu endpoint terms, and Hayward joints. It is not a metric-only potential with an embedding term appended afterward.
+
+Let $\widehat w$ act by
+
+\begin{align}
+I_{\widehat w}\delta g=\mathcal L_wg,
+\qquad
+I_{\widehat w}\chi=-w.
+\end{align}
+
+Then $I_{\widehat w}\Delta_Xg=0$. Hence
+
+\begin{align}
+(\mathcal L_wg,-w\circ X)
+\in\ker\Omega_{{\rm p},X}. \label{eq:extended-degeneracy}
+\end{align}
+
+This is the precise extended-space statement of gauge invariance. A metric-only transformation at fixed $X$ and an embedding-only transformation at fixed $g$ carry opposite surface charges; only their diagonal combination is a degeneracy \cite{Donnelly:2016auv,Speranza:2017guc}.
+
+\subsection{Wall embedding momentum}\label{subsec:embedding-momentum}
+
+On a moving timelike wall, the source one-form becomes
+
+\begin{align}
+\mathcal B_X=-\frac12\Pi^{ij}\Delta_X\gamma_{ij}.
+\end{align}
+
+Decompose $\chi=\chi_\perp n+\chi^ie_i$. Variation of the boundary term gives, up to endpoint total derivatives,
+
+\begin{align}
+P_j&=D_i\Pi^i{}_j,\\
+P_\perp&=-\Pi^{ij}K_{ij}.
+\end{align}
+
+These are the Brown--York contributions, not yet the complete embedding momentum. Direct variation of the bulk domain supplies the constraints, giving
+
+\begin{align}
+P_j^{\rm tot}
+&=D_i\Pi^i{}_j
+-\frac{\sqrt{-\gamma}}{\kappa_{\rm p}^{2}}
+n_\mu\mathcal E^{\mu\nu}e_{j\nu}, \label{eq:tangential-momentum}\\
+P_\perp^{\rm tot}
+&=-\Pi^{ij}K_{ij}
+-\frac{\sqrt{-\gamma}}{\kappa_{\rm p}^{2}}
+n_\mu n_\nu\mathcal E^{\mu\nu}. \label{eq:normal-momentum}
+\end{align}
+
+The cosmological Einstein tensor $\mathcal E^{\mu\nu}$ therefore completes the Brown--York work off shell. On shell, (\ref{eq:tangential-momentum}) and (\ref{eq:normal-momentum}) reduce to the familiar boundary momentum and normal work.
+
+For a non-orthogonal moving joint, varying the Hayward term gives the edge two-form
+
+\begin{align}
+\Omega_J
+=\frac{\sigma_J}{\kappa_{\rm p}^{2}}
+\int_J\Delta_X\eta\wedge\Delta_X\sqrt q . \label{eq:hayward-pair}
+\end{align}
+
+Thus the canonical joint pair is area density and finite relative boost angle, not area and surface gravity. Equation (\ref{eq:hayward-pair}) is the action-derived realization of the area--boost edge pair \cite{Takayanagi:2019tvn}.
+
+\subsection{The horizon cocycle as a change of section}\label{subsec:section-change}
+
+Let $s_0$ be the fixed-embedding section. A metric representative change $h\mapsto h+\mathcal L_vG$ at fixed embedding is not the full gauge transformation. In the extended space,
+
+\begin{align}
+(h,0)\sim(h+\mathcal L_vG,-v). \label{eq:section-change}
+\end{align}
+
+By (\ref{eq:extended-degeneracy}), the change of metric canonical energy between the two fixed-embedding descriptions is cancelled by the embedding and joint contribution. Therefore
+
+\begin{align}
+\int_\gamma\Upsilon_{\rm p}[h,v]
+=E_{{\rm can,p}}[h+\mathcal L_vG]
+-E_{{\rm can,p}}[h]
+\end{align}
+
+is naturally the cocycle associated with changing the section of the extended phase space. This interpretation derives the required compensation from the action without asserting that $\Upsilon_{\rm p}$ is a globally integrable scalar functional on a nonlinear edge space.
+
+One can always cancel a closed finite-dimensional two-form $F$ by adjoining an auxiliary cotangent graph. For constant coefficients,
+
+\begin{align}
+\Theta_{\rm aux}=-\frac12F_{IJ}a^I\delta a^J,
+\qquad
+\delta\Theta_{\rm aux}=-F.
+\end{align}
+
+This local symplectic fact is not used as a physical input in our theorem. In particular, adding a scalar boundary functional $w$ cannot change $\Omega$, since $\delta^2w=0$. The actual cancellation in (\ref{eq:section-change}) comes from the pulled-back gravitational action and its embedding variation.
+
+\subsection{Nonuniform compact polarization}\label{subsec:compact-polarization}
+
+The moving construction is nonempty beyond a rigid wall. In an exact BTZ collar consider
+
+\begin{align}
+\mathrm ds^2
+=\mathrm d\rho^2-s_\xi^2\sinh^2\rho\,\mathrm d\lambda^2
++R(\phi)^2\cosh^2\rho\,\mathrm d\phi^2,
+\end{align}
+
+with a stationary inner wall $\rho=E(\phi)>0$. Define
+
+\begin{align}
+\vartheta
+=\arctan\left(\frac{E'}{R\cosh E}\right).
+\end{align}
+
+The complete Brown--York source is exactly
+
+\[\begin{aligned}
+\mathcal B_X
+={}&-\delta\left\{
+\frac{s_\xi}{\kappa_{\rm p}^{2}}
+\left[R\cosh^2E+E'\cosh E\,\vartheta\right]
+\right\}\\
+&+\partial_\phi\left(
+\frac{s_\xi\cosh E}{\kappa_{\rm p}^{2}}
+\vartheta\,\delta E
+\right). \label{eq:nonuniform-polarization}
+\end{aligned}\]
+
+The last term integrates to zero on the circle, so the stationary smooth $(R,E)$ family is a Lagrangian moving-wall polarization with arbitrary nonuniform normal displacement. This is a genuine infinite-dimensional compact family. It does not prove a simultaneous time-dependent wavy-wall and tilted-joint polarization, which lies outside the present theorem.

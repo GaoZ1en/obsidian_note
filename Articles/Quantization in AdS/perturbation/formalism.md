@@ -289,4 +289,44 @@ Therefore, for the horizonless global AdS branch, the operational endpoints are
 4. renormalized bulk time-ordered correlation functions;
 5. boundary correlation functions after the extrapolate normalization is fixed.
 
+### Stationary Wedges, Modular Time, and KMS States
+
+An entanglement wedge bounded by a bifurcate Killing horizon is not covered literally by the opening boundary contract of this note, which excludes null boundaries. There are two controlled free-field routes.
+
+1. Work on the open wedge with compactly supported wave packets and treat the horizon as an asymptotic end of the Killing-time Cauchy slice.
+2. Put a timelike brick wall a proper distance $\displaystyle{\epsilon}$ outside the horizon, impose a reflecting boundary condition that makes the variational problem and symplectic flux well-defined, quantize with the formulas above, and then take $\displaystyle{\epsilon\to0}$ on smeared observables.
+
+At finite $\displaystyle{\epsilon}$ the radial spectrum is discrete. In the limit the tortoise length diverges and the positive-frequency basis becomes a generalized continuum basis $\displaystyle{\Phi_I\to\Phi_{\omega\lambda}}$. The mode normalization and field expansion are then
+
+$$\begin{align}
+(\Phi_{\omega\lambda},\Phi_{\omega'\lambda'}) &=\delta(\omega-\omega')\delta(\lambda-\lambda'),\\
+\Psi &=\int_0^\infty\mathrm d\omega\int\mathrm d\lambda\, \left(a_{\omega\lambda}\Phi_{\omega\lambda} +a_{\omega\lambda}^{\dagger}\Phi_{\omega\lambda}^{*}\right),\\
+\omega_{\mathrm{CPS}} &=i\int_0^\infty\mathrm d\omega\int\mathrm d\lambda\, \delta a_{\omega\lambda}^{\dagger}\wedge\delta a_{\omega\lambda}.
+\end{align}$$
+
+Let $\displaystyle{\zeta}$ be the future-directed wedge Killing field and $\displaystyle{K_\zeta}$ its positive Noether generator. If the modular Killing field is $\displaystyle{\xi=2\pi\zeta}$, then
+
+$$\begin{align}
+K_{\mathrm{mod}}&=H_\xi=2\pi K_\zeta+\text{constant}.
+\end{align}$$
+
+The oscillator basis does not fix the state. The wedge vacuum is annihilated by the $\displaystyle{a_{\omega\lambda}}$, whereas the restriction of a smooth global vacuum to a geometric vacuum wedge is KMS with respect to $\displaystyle{K_\zeta}$ at inverse temperature $\displaystyle{\beta=2\pi}$. Its Wightman function is
+
+$$\begin{align}
+W_\beta(x,x') =\int_0^\infty\mathrm d\omega\int\mathrm d\lambda\, \Big[(1+n_\omega)\Phi_{\omega\lambda}(x)\Phi_{\omega\lambda}^{*}(x') +n_\omega\Phi_{\omega\lambda}^{*}(x)\Phi_{\omega\lambda}(x')\Big],\\
+n_\omega&=\dfrac1{e^{\beta\omega}-1}, &W_\beta(\tau-i\beta,\mathbf x;\tau',\mathbf x') &=W_\beta(\tau',\mathbf x';\tau,\mathbf x),
+\end{align}$$
+
+where the last equality is a relation between the appropriate boundary values of analytic functions. Global smoothness is implemented by analytic Unruh combinations of modes from the two complementary wedges. It is not a pointwise equality of the two horizon field operators.
+
+For perturbation theory in a wedge KMS state, replace the vacuum in/out Dyson matrix element by a Schwinger--Keldysh expectation value in Killing or modular time. For an initial free KMS density operator $\displaystyle{\rho_{\beta,0}=Z_0^{-1}e^{-\beta K_{0}}}$,
+
+$$\begin{align}
+\langle\mathcal O(\tau)\rangle_{\beta} =\operatorname{Tr}\!\left[ \rho_{\beta,0}\, \overline{\mathcal T}\exp\!\left(i\int_{\tau_i}^{\tau}\mathrm d\tau'\,V_I(\tau')\right) \mathcal O_I(\tau) \mathcal T\exp\!\left(-i\int_{\tau_i}^{\tau}\mathrm d\tau'\,V_I(\tau')\right) \right].
+\end{align}$$
+
+This formula evolves a specified initial KMS state. Preparing the interacting thermal state itself requires the usual imaginary-time segment or an equivalent thermal-state prescription. The propagator on the real-time contour is built from the same boundary-compatible KMS Wightman function. Purely ingoing modes instead construct retarded response functions or quasinormal poles; they do not replace the complete CPS-normalized real-frequency basis.
+
+The brick-wall limit, the open-wedge algebra, and a genuine null-boundary CPS construction are distinct claim levels. The formulas above establish the regulated/free spectral pipeline and its KMS correlators; they do not by themselves prove sharp-wedge Hilbert-space factorization or an interacting null-boundary variational principle.
+
 For AdS black holes or nonstationary asymptotically AdS backgrounds, the discrete normal-mode and self-adjoint Hamiltonian assumptions above may fail. In those cases one should use thermal, retarded, or in-in correlation functions and quasinormal poles instead of copying the horizonless global AdS spectral construction.

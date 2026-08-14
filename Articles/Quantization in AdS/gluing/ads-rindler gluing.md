@@ -213,7 +213,7 @@ H_\kappa &=\dfrac12\sum_{A=R,L}\int_0^\infty\mathrm dy_A\int_{-\infty}^\infty\ma
 
 For masses in the negative part of the Breitenlohner--Freedman window, semiboundedness is understood with the standard normalizable AdS boundary condition and its usual renormalized boundary energy; only the displayed defect contribution is manifestly positive by itself.
 
-The static one-particle problem can be stated without finding a separable finite-$\displaystyle{\kappa}$ spectrum. Introduce
+The static one-particle problem can first be stated abstractly. Introduce
 
 $$\begin{align}
 \langle f,g\rangle_\mu &=\sum_{A=R,L}\int_0^\infty\mathrm dy_A\int_{-\infty}^\infty\dfrac{\mathrm d\chi}{\cosh\chi}\, f_A^*g_A.
@@ -247,7 +247,139 @@ $$\begin{align}
 H_\kappa&=\sum_J\Omega_J^{(\kappa)} \left(b_J^\dagger b_J+\dfrac12\right).
 \end{align}$$
 
-This is a complete abstract quantization of the finite-$\displaystyle{\kappa}$ defect theory. Unlike `continuous theory II.md`, the invariant interface coupling does not preserve the angular/radial separation, so no closed finite-$\displaystyle{\kappa}$ spectral equation is asserted here.
+This gives the abstract quantization of the finite-$\displaystyle{\kappa}$ defect theory. The invariant interface coupling does not preserve the angular/radial separation used in `continuous theory II.md`, but the global-time metric has a different exact separation.
+
+### Exact Finite-$\displaystyle{\kappa}$ Spectrum in the $\displaystyle{\mathrm{AdS}_{2}}$ Slicing
+
+The global-time completion is an $\displaystyle{\mathrm{AdS}_{2}}$ slicing of global $\displaystyle{\mathrm{AdS}_{3}}$,
+
+$$\begin{align}
+\mathrm ds^2&=\mathrm dy^2+\cosh^2y\,\mathrm ds_{\mathrm{AdS}_{2}}^2,
+&\mathrm ds_{\mathrm{AdS}_{2}}^2&=-\cosh^2\chi\,\mathrm dt^2+\mathrm d\chi^2.
+\end{align}$$
+
+Diagonalize the two cut traces with
+
+$$\begin{align}
+\Phi_\pm&=\dfrac{\Phi_R\pm\Phi_L}{\sqrt2}.
+\end{align}$$
+
+The common and relative transverse profiles obey independent Robin conditions. If
+
+$$\begin{align}
+\Phi_{\sigma}(t,y,\chi)&=f_{\sigma}(y)\psi_{\delta}(t,\chi),
+&(\Box_{\mathrm{AdS}_{2}}-M^2)\psi_\delta&=0,
+&M^2&=\delta(\delta-1),
+\end{align}$$
+
+then the transverse equation is
+
+$$\begin{align}
+-\partial_y\left(\cosh^2y\,\partial_yf_\sigma\right)
++m^2\cosh^2y\,f_\sigma&=M^2f_\sigma,
+&f_\sigma'(0)&=a_\sigma(\kappa)f_\sigma(0),
+\end{align}$$
+
+where $\displaystyle{a_+=\kappa^{-1}}$ and $\displaystyle{a_-=\kappa^{-1}+2\kappa}$. The sign in the second equation follows from the outward normal $\displaystyle{n=-\partial_y}$ on each half-space.
+
+Write $\displaystyle{\nu=\delta-\Delta}$ and $\displaystyle{\lambda=\Delta-\tfrac12}$. The standard-normalizable transverse solution is
+
+$$\begin{align}
+f_\nu(y)&=\operatorname{sech}^{\Delta}y\,
+C_\nu^{\lambda}(\tanh y),
+&M^2&=(\Delta+\nu)(\Delta+\nu-1).
+\end{align}$$
+
+The Robin condition therefore becomes the closed finite-coupling secular equation
+
+$$\begin{align}
+2\left(\Delta-\dfrac12\right)
+\dfrac{C_{\nu-1}^{\Delta+1/2}(0)}
+{C_\nu^{\Delta-1/2}(0)}&=a_\sigma(\kappa).
+\end{align}$$
+
+For $\displaystyle{a_\sigma>0}$, Sturm--Liouville interlacing places one root $\displaystyle{\nu_{\sigma,j}}$ in every interval
+
+$$\begin{align}
+2j<\nu_{\sigma,j}<2j+1,
+&&j=0,1,2,\ldots.
+\end{align}$$
+
+Each root defines a standard global-$\displaystyle{\mathrm{AdS}_{2}}$ scalar of dimension $\displaystyle{\delta_{\sigma,j}=\Delta+\nu_{\sigma,j}}$. Its exact frequency tower is
+
+$$\begin{align}
+\Omega_{\sigma,j,n}^{(\kappa)}&=\delta_{\sigma,j}+n,
+&n&=0,1,2,\ldots.
+\end{align}$$
+
+Thus the invariant finite-$\displaystyle{\kappa}$ defect theory is exactly separable in the $\displaystyle{\mathrm{AdS}_{2}}$ slicing even though it is not separable into the usual global angular and radial factors.
+
+The two endpoint limits are transparent. As $\displaystyle{\kappa\to0}$, both $\displaystyle{a_\pm\to\infty}$, so both sectors approach the odd integers $\displaystyle{\nu=2j+1}$ and reproduce two Dirichlet half-spacetimes. As $\displaystyle{\kappa\to\infty}$,
+
+$$\begin{align}
+a_+&\longrightarrow0,
+&\nu_{+,j}&\longrightarrow2j,\\
+a_-&\longrightarrow\infty,
+&\nu_{-,j}&\longrightarrow2j+1.
+\end{align}$$
+
+The two sectors therefore unite into $\displaystyle{\delta_j=\Delta+j}$ for every $\displaystyle{j\geq0}$. The full spectrum is
+
+$$\begin{align}
+\Omega_{j,n}&=\Delta+j+n.
+\end{align}$$
+
+At level $\displaystyle{\Delta+N}$ there are exactly $\displaystyle{N+1}$ pairs with $\displaystyle{j+n=N}$. This agrees with the standard global-$\displaystyle{\mathrm{AdS}_{3}}$ spectrum $\displaystyle{\Delta+2r+|\ell|}$, including its degeneracy.
+
+### Finite-Mode Truncation of the Transverse Problem
+
+The half-line Neumann basis is obtained by restricting the even full-line transverse modes. With $\displaystyle{\lambda=\Delta-\tfrac12}$, define
+
+$$\begin{align}
+h_s^{(\lambda)}&=
+\dfrac{\pi 2^{1-2\lambda}\Gamma(s+2\lambda)}
+{s!(s+\lambda)\Gamma(\lambda)^2},\\
+b_r&=\sqrt2\,
+\dfrac{C_{2r}^{\lambda}(0)}{\sqrt{h_{2r}^{(\lambda)}}},
+&M_r^2&=(\Delta+2r)(\Delta+2r-1).
+\end{align}$$
+
+For each $\displaystyle{\sigma=\pm}$, the truncated transverse stiffness matrix is the rank-one update
+
+$$\begin{align}
+(K_{\sigma,N})_{rs}&=M_r^2\delta_{rs}+a_\sigma b_rb_s,
+&0\leq r,s\leq N.
+\end{align}$$
+
+If
+
+$$\begin{align}
+T_N(0)&=\sum_{r=N+1}^{\infty}\dfrac{b_r^2}{M_r^2},
+\end{align}$$
+
+then the zero-energy response-matched coefficient is
+
+$$\begin{align}
+\dfrac1{a_{\sigma,N}}&=\dfrac1{a_\sigma}+T_N(0).
+\end{align}$$
+
+The two sectors must be matched independently. Although their continuum values lie on the one-parameter curve
+
+$$\begin{align}
+a_+&=\kappa^{-1},
+&a_-&=\kappa^{-1}+2\kappa,
+\end{align}$$
+
+the matched coefficients generally do not lie on the same curve. Indeed, if one defines
+
+$$\begin{align}
+d_N&=a_{+,N},
+&h_N&=\dfrac{a_{-,N}-a_{+,N}}2,
+\end{align}$$
+
+then a single bare $\displaystyle{\kappa_N}$ would require $\displaystyle{d_Nh_N=1}$, which fails whenever the omitted response is nonzero. Thus the exact continuum $\displaystyle{\kappa}$ action is a valid interpolation, but its response-matched finite-mode regulator has two independent Robin coefficients.
+
+At $\displaystyle{\Delta=2}$ the complete zero-energy response is exactly $\displaystyle{\sum_{r\geq0}b_r^2/M_r^2=1}$. For $\displaystyle{\kappa=13/10}$ and the first eight effective dimensions, response matching reduces the common-sector maximum error from $\displaystyle{5.76\times10^{-3}}$ to $\displaystyle{3.73\times10^{-4}}$ at $\displaystyle{N=8}$ and to $\displaystyle{5.61\times10^{-7}}$ at $\displaystyle{N=64}$. In the relative sector the matched errors are $\displaystyle{7.26\times10^{-3}}$ and $\displaystyle{1.03\times10^{-5}}$, respectively. These are fixed-window spectral checks, not a norm-resolvent or Fock-space convergence theorem. The executable verification is `numerics/ads_rindler_global_completion.wl`.
 
 The two form limits have distinct meanings:
 
@@ -303,7 +435,24 @@ $$\begin{align}
 \mathrm ds^2 &=-(\rho^2-1)\mathrm d\tau_A^2 +\dfrac{\mathrm d\rho^2}{\rho^2-1} +\rho^2\mathrm d\chi^2,
 \end{align}$$
 
-and the wave equation is
+where $\displaystyle{\partial_{\tau_A}}$ is future-directed in each wedge. The global boost has opposite restrictions, while the positive modular generator of each wedge is future-directed there,
+
+$$\begin{align}
+\zeta|_{W_R}&=\partial_{\tau_R},
+&\zeta|_{W_L}&=-\partial_{\tau_L},
+&\xi_R&=2\pi\zeta|_{W_R}=2\pi\partial_{\tau_R},
+&\xi_L&=-2\pi\zeta|_{W_L}=2\pi\partial_{\tau_L}.
+\end{align}$$
+
+There is no reflecting boundary condition at the RT surface. The bifurcation geodesic is the endpoint $\displaystyle{\rho=1}$ of the $\displaystyle{\tau_A=0}$ slice, while the future and past horizons are null boundaries of the wedge. Since `../perturbation/formalism.md` does not yet include null boundary terms, apply its timelike-boundary construction first on
+
+$$\begin{align}
+\rho\geq1+\epsilon,
+\end{align}$$
+
+with a reflecting Robin brick wall. At finite $\displaystyle{\epsilon}$ the radial frequencies are discrete. Taking $\displaystyle{\epsilon\to0}$ sends the tortoise length to infinity, turns the sum into a continuous spectral integral, and yields the delta-normalized modes below. Equivalently, one may work directly with compactly supported wave packets in the open wedge and use the displayed modes only as generalized eigenfunctions.
+
+The wave equation is
 
 $$\begin{align}
 0=(\Box-m^2)\Phi_A &=\left[-\dfrac1{\rho^2-1}\partial_{\tau_A}^2 +\dfrac1\rho\partial_\rho\left(\rho(\rho^2-1)\partial_\rho\right) +\dfrac1{\rho^2}\partial_\chi^2-m^2\right]\Phi_A.
@@ -316,11 +465,45 @@ u_{A,\omega k} &=\mathcal N_{\omega k}e^{-i\omega\tau_A+ik\chi}f_{\omega k}(\rho
 f_{\omega k}(\rho) &=\rho^{-\Delta}(1-\rho^{-2})^{-i\omega/2} {}_2F_1\left( \dfrac{\Delta-i\omega+ik}{2}, \dfrac{\Delta-i\omega-ik}{2}; \Delta;\rho^{-2}\right).
 \end{align}$$
 
-This is the standard-normalizable solution at $\displaystyle{\rho\to\infty}$. Its continuation to $\displaystyle{\rho\to1}$ contains both horizon wave branches. The constant $\displaystyle{\mathcal N_{\omega k}}$ and a harmless phase are fixed by the generalized CPS normalization
+This is the standard-normalizable solution at $\displaystyle{\rho\to\infty}$. It is a real radial solution up to an overall phase. With $\displaystyle{z=1-\rho^{-2}}$, its horizon expansion is
+
+$$\begin{align}
+f_{\omega k}(\rho)&=A_{\omega k}z^{-i\omega/2}+A_{\omega k}^{*}z^{i\omega/2}+O\!\left(z^{1-i\omega/2},z^{1+i\omega/2}\right),\\
+A_{\omega k}&=\dfrac{\Gamma(\Delta)\Gamma(i\omega)}{
+\Gamma\!\left(\frac{\Delta+i(\omega-k)}2\right)
+\Gamma\!\left(\frac{\Delta+i(\omega+k)}2\right)}.
+\end{align}$$
+
+Both horizon branches are required for the self-adjoint real-frequency spectral basis. A purely ingoing solution instead belongs to a retarded or quasinormal-mode problem and is not a canonical oscillator mode. The generalized CPS normalization is
 
 $$\begin{align}
 (u_{A,\omega k},u_{B,\omega'k'}) &=\delta_{AB}\delta(\omega-\omega')\delta(k-k'),\\
 \omega_A &=\int_1^\infty\mathrm d\rho\int_{-\infty}^\infty\mathrm d\chi\, \dfrac{\rho}{\rho^2-1}\, \delta\partial_{\tau_A}\Phi_A\wedge\delta\Phi_A.
+\end{align}$$
+
+Using $\displaystyle{\int\mathrm d\chi\,e^{i(k-k')\chi}=2\pi\delta(k-k')}$ and the tortoise coordinate
+
+$$\begin{align}
+r_*&=\dfrac12\log\dfrac{\rho-1}{\rho+1},
+\end{align}$$
+
+the horizon standing wave gives
+
+$$\begin{align}
+\int_1^\infty\mathrm d\rho\,\dfrac{\rho}{\rho^2-1}
+f_{\omega k}^{*}f_{\omega' k}
+&\supset2\pi|A_{\omega k}|^2\delta(\omega-\omega').
+\end{align}$$
+
+Thus $\displaystyle{8\pi^2\omega|\mathcal N_{\omega k}A_{\omega k}|^2=1}$ and the positive normalization is
+
+$$\begin{align}
+\mathcal N_{\omega k}
+&=\dfrac{\sqrt{\sinh(\pi\omega)}}{2\sqrt2\,\pi^{3/2}\Gamma(\Delta)}
+\left|
+\Gamma\!\left(\frac{\Delta+i(\omega-k)}2\right)
+\Gamma\!\left(\frac{\Delta+i(\omega+k)}2\right)
+\right|.
 \end{align}$$
 
 The Rindler fields are expanded as
@@ -330,7 +513,7 @@ $$\begin{align}
 [b_{A,\omega k},b_{B,\omega'k'}^\dagger] &=\delta_{AB}\delta(\omega-\omega')\delta(k-k').
 \end{align}$$
 
-After dropping the zero-point term, the two positive Rindler Hamiltonians are
+This quantizes the other wedge in exactly the same way as the first: $\displaystyle{b_R}$ and $\displaystyle{b_L}$ are independent oscillator families before a state is chosen. The two positive wedge Hamiltonians are
 
 $$\begin{align}
 K_A&=\int_0^\infty\mathrm d\omega\int_{-\infty}^\infty\mathrm dk\, \omega\,b_{A,\omega k}^\dagger b_{A,\omega k}.
@@ -344,14 +527,23 @@ H_\zeta&=K_R-K_L.
 
 ## Global Vacuum as the Gluing State
 
-After a compatible phase choice for the left and right modes, define the Unruh annihilators
+After a compatible reflection/CPT phase choice for the left and right modes, define the horizon-analytic Unruh mode functions
+
+$$\begin{align}
+v_{1,\omega k}&=\dfrac{u_{R,\omega k}+e^{-\pi\omega}u_{L,\omega,-k}^{*}}{\sqrt{1-e^{-2\pi\omega}}},\\
+v_{2,\omega k}&=\dfrac{u_{L,\omega k}+e^{-\pi\omega}u_{R,\omega,-k}^{*}}{\sqrt{1-e^{-2\pi\omega}}}.
+\end{align}$$
+
+Here a mode written with an $\displaystyle{R}$ or $\displaystyle{L}$ label is extended by zero only as wedge Cauchy data; the displayed combinations mean their analytic continuation through the Kruskal quadrants. The factor $\displaystyle{e^{-\pi\omega}}$ is fixed by continuing the powers $\displaystyle{z^{\mp i\omega/2}}$ through the lower complex Kruskal half-plane. These combinations, rather than an equality of left and right horizon operators, are the smooth positive-frequency global data.
+
+The corresponding annihilators are
 
 $$\begin{align}
 d_{1,\omega k} &=\dfrac{b_{R,\omega k}-e^{-\pi\omega}b_{L,\omega,-k}^\dagger} {\sqrt{1-e^{-2\pi\omega}}},\\
 d_{2,\omega k} &=\dfrac{b_{L,\omega k}-e^{-\pi\omega}b_{R,\omega,-k}^\dagger} {\sqrt{1-e^{-2\pi\omega}}}.
 \end{align}$$
 
-Their coefficients obey $\displaystyle{(1-e^{-2\pi\omega})^{-1}-e^{-2\pi\omega}(1-e^{-2\pi\omega})^{-1}=1}$, so they have canonical commutators. Their corresponding mode combinations are analytic across the horizons and extend into the future and past regions. The global invariant vacuum is characterized by
+Their coefficients obey $\displaystyle{(1-e^{-2\pi\omega})^{-1}-e^{-2\pi\omega}(1-e^{-2\pi\omega})^{-1}=1}$, so they have canonical commutators. The global invariant vacuum is characterized by
 
 $$\begin{align}
 d_{1,\omega k}|\Omega_G\rangle &=d_{2,\omega k}|\Omega_G\rangle=0.
@@ -365,16 +557,51 @@ $$\begin{align}
 \rho_R&\propto e^{-2\pi K_R}.
 \end{align}$$
 
+In particular, the regulated global-vacuum Wightman function restricted to $\displaystyle{W_R}$ is
+
+$$\begin{align}
+W_G(x,x')|_{W_R}
+=\int_0^\infty\mathrm d\omega\int_{-\infty}^{\infty}\mathrm dk\,
+\Big[(1+n_\omega)u_{R,\omega k}(x)u_{R,\omega k}^{*}(x')
++n_\omega u_{R,\omega k}^{*}(x)u_{R,\omega k}(x')\Big],\\
+n_\omega&=\dfrac1{e^{2\pi\omega}-1}.
+\end{align}$$
+
+It obeys the boost-time KMS relation $\displaystyle{W_G(\tau-i2\pi,\chi;\tau',\chi')=W_G(\tau',\chi';\tau,\chi)}$ with the usual boundary-value prescription. The Rindler vacuum instead keeps only the first term with $\displaystyle{n_\omega=0}$ and is not smooth across the global horizons.
+
 Thus the quantum gluing datum is not equality of two horizon field operators. It is the global analyticity, or equivalently the Unruh/KMS correlation, that pairs the two wedge mode algebras and reconstructs global correlations. The temperature is $\displaystyle{T=1/(2\pi)}$ in the dimensionless boost time.
 
 The tensor-product and density-matrix notation in the preceding display is regulator-dependent. In the continuum, sharp wedge algebras are Type III and there is no literal factorization of the global Hilbert space into two sharp-wedge Hilbert spaces. The invariant content is the KMS property and the two-point-function continuation; the thermofield-double display is a convenient regulated mnemonic.
 
 ## Global Modes and the Other Noether Charges
 
-The standard global positive-frequency modes may be denoted by $\displaystyle{U_I=U_{n\ell}}$, with
+Write $\displaystyle{r=\tan\varrho}$ in global coordinates. A CPS-normalized global basis is
 
 $$\begin{align}
-\Omega_{n\ell}&=\Delta+2n+|\ell|, &n&=0,1,2,\ldots, &\ell&\in\mathbb Z,\\
+U_{n\ell}(t,\varrho,\phi)
+&=\mathcal G_{n\ell}e^{-i\Omega_{n\ell}t+i\ell\phi}
+(\cos\varrho)^\Delta(\sin\varrho)^{|\ell|}
+P_n^{(|\ell|,\Delta-1)}(\cos2\varrho),\\
+\Omega_{n\ell}&=\Delta+2n+|\ell|,
+&\mathcal G_{n\ell}&=
+\sqrt{\dfrac{n!\,\Gamma(n+|\ell|+\Delta)}
+{2\pi\,\Gamma(n+|\ell|+1)\Gamma(n+\Delta)}},\\
+&&n&=0,1,2,\ldots,
+&\ell&\in\mathbb Z,
+\end{align}$$
+
+so that $\displaystyle{(U_{n\ell},U_{ms})=\delta_{nm}\delta_{\ell s}}$. Its normalizable boundary coefficient is real,
+
+$$\begin{align}
+\mathcal C_{n\ell}
+&:=\lim_{r\to\infty}r^\Delta e^{i\Omega_{n\ell}t-i\ell\phi}U_{n\ell}
+=(-1)^n\mathcal G_{n\ell}
+\dfrac{\Gamma(n+\Delta)}{n!\,\Gamma(\Delta)}.
+\end{align}$$
+
+The global field expansion is
+
+$$\begin{align}
 \Phi&=\sum_{n,\ell}\left(c_{n\ell}U_{n\ell}+c_{n\ell}^\dagger U_{n\ell}^*\right), &[c_{n\ell},c_{ms}^\dagger]&=\delta_{nm}\delta_{\ell s}.
 \end{align}$$
 
@@ -386,7 +613,87 @@ U_I|_{\Sigma_A} &=\int_0^\infty\mathrm d\omega\int_{-\infty}^\infty\mathrm dk\, 
 c_I &=\sum_{A=R,L}\int_0^\infty\mathrm d\omega\int_{-\infty}^\infty\mathrm dk\, \left(\alpha^{A*}_{I;\omega k}b_{A,\omega k} -\beta^{A*}_{I;\omega k}b_{A,\omega k}^\dagger\right).
 \end{align}$$
 
-The ordering of the CPS products follows the convention $\displaystyle{(\Phi_1,\Phi_2)=iX_2^*\cdot X_1\cdot\omega}$, which is linear in the first entry. Both the field and momentum components of the Cauchy data are included. The global Hamiltonian is therefore the exact quadratic pullback
+The ordering of the CPS products follows the convention $\displaystyle{(\Phi_1,\Phi_2)=iX_2^*\cdot X_1\cdot\omega}$, which is linear in the first entry. Both the field and momentum components of the Cauchy data are included.
+
+For this half-circle wedge the kernels can be evaluated in closed form from the normalizable boundary data. This identification uses uniqueness of the standard-normalizable bulk solution from its boundary coefficient, together with the common CPS normalizations displayed above; it is not an independent boundary-only quantization. On the right boundary diamond introduce
+
+$$\begin{align}
+x^\pm&=t\pm\phi,
+&w^\pm&=\tau_R\pm\chi,
+&\tan x^\pm&=\sinh w^\pm.
+\end{align}$$
+
+The boundary conformal factor gives
+
+$$\begin{align}
+\lim_{\rho\to\infty}\rho^\Delta U_{n\ell}
+&=\mathcal C_{n\ell}
+\prod_{\sigma=\pm}
+\left[(\operatorname{sech}w^\sigma)^h
+e^{-i(h+N_\sigma)x^\sigma}\right],\\
+h&=\dfrac\Delta2,
+&N_+&=n+\dfrac{|\ell|-\ell}{2},
+&N_-&=n+\dfrac{|\ell|+\ell}{2}.
+\end{align}$$
+
+Define the one-dimensional transform, for $\displaystyle{N\in\mathbb Z_{\geq0}}$,
+
+$$\begin{align}
+\mathcal I_{h,N}(q)
+&:=\int_{-\infty}^{\infty}\mathrm dw\,
+e^{iqw}(\operatorname{sech}w)^h
+e^{-i(h+N)\arctan(\sinh w)}\\
+&=(-i)^N2^he^{\pi q/2}
+\dfrac{\Gamma(h+iq)\Gamma(h-iq)}{\Gamma(2h)}
+{}_2F_1(-N,h-iq;2h;2).
+\end{align}$$
+
+The equality follows by setting $\displaystyle{y=e^w}$ and expanding $\displaystyle{e^{-iN\arctan(\sinh w)}}$ as a finite polynomial. With
+
+$$\begin{align}
+q_+&=\dfrac{\omega-k}{2},
+&q_-&=\dfrac{\omega+k}{2},
+\end{align}$$
+
+the right-wedge kernels are
+
+$$\begin{align}
+\alpha^R_{n\ell;\omega k}
+&=\dfrac{\mathcal C_{n\ell}}{8\pi^2\mathcal N_{\omega k}}
+\mathcal I_{h,N_+}(q_+)\mathcal I_{h,N_-}(q_-),\\
+\beta^R_{n\ell;\omega k}
+&=\dfrac{\mathcal C_{n\ell}}{8\pi^2\mathcal N_{\omega k}}
+\mathcal I_{h,N_+}(-q_+)\mathcal I_{h,N_-}(-q_-).
+\end{align}$$
+
+The factor $\displaystyle{8\pi^2}$ includes the Jacobian $\displaystyle{\mathrm d\tau\,\mathrm d\chi=\frac12\mathrm dw^+\mathrm dw^-}$ and the Fourier convention used above. The finite polynomial obeys
+
+$$\begin{align}
+\mathcal I_{h,N}(-q)&=(-1)^Ne^{-\pi q}\mathcal I_{h,N}(q)^*,
+\end{align}$$
+
+and hence
+
+$$\begin{align}
+\beta^R_{n\ell;\omega k}
+&=(-1)^{\ell}e^{-\pi\omega}
+\alpha^{R*}_{n\ell;\omega k}.
+\end{align}$$
+
+This is the mode-by-mode global analyticity/KMS factor. In the left diamond choose $\displaystyle{\phi=\pi+\widetilde\phi}$ and the reflected phase convention used in the Unruh modes. Then
+
+$$\begin{align}
+\alpha^L_{n\ell;\omega k}
+&=(-1)^\ell\alpha^R_{n,-\ell;\omega k}
+=(-1)^\ell\alpha^R_{n\ell;\omega,-k},\\
+\beta^L_{n\ell;\omega k}
+&=(-1)^\ell\beta^R_{n,-\ell;\omega k}
+=(-1)^\ell\beta^R_{n\ell;\omega,-k}.
+\end{align}$$
+
+Thus the left wedge is not inferred by imposing an operator equality at the RT surface: it has its own positive-frequency modes and oscillators, while the displayed $\displaystyle{\alpha,\beta}$ relations select the global analytic state. The full Bogoliubov identities follow from the CPS completeness of the two wedge spectral resolutions; the executable checks below verify the normalization, Fourier transform, and thermal factor, but do not replace a functional-analytic completeness proof.
+
+The global Hamiltonian is therefore the exact quadratic pullback
 
 $$\begin{align}
 H_{\partial_t} &=\sum_{n,\ell}\Omega_{n\ell} \left(c_{n\ell}^\dagger c_{n\ell}+\dfrac12\right),
@@ -432,14 +739,15 @@ The construction establishes the following statements.
 
 1. The complementary wedge slices form two halves of a global Cauchy slice, although the two Lorentzian wedges themselves do not cover global $\displaystyle{\mathrm{AdS}_{3}}$.
 2. The displayed invariant cut action defines a finite-$\displaystyle{\kappa}$ self-adjoint interface problem on the two global-time completions. It approaches two Dirichlet half-spacetimes as $\displaystyle{\kappa\to0}$ and the global scalar as $\displaystyle{\kappa\to\infty}$.
-3. At $\displaystyle{\kappa\to\infty}$ the matched wedge Cauchy data, CPS forms, global solution, and all scalar Killing charges are recovered exactly at the classical free-field level.
-4. Intrinsic Rindler quantization gives the continuous $\displaystyle{(\omega,k)}$ modes, the KMS/Unruh characterization of the global vacuum, and the explicit boost charge $\displaystyle{K_R-K_L}$.
-5. The global-time Hamiltonian and every other global charge are exactly defined in the Rindler oscillator variables by the CPS Bogoliubov kernels.
+3. The finite-$\displaystyle{\kappa}$ global-time defect is exactly separable in the $\displaystyle{\mathrm{AdS}_{2}}$ slicing. Its transverse dimensions obey the noninteger Gegenbauer Robin equation above, and each transverse root generates an exact global-$\displaystyle{\mathrm{AdS}_{2}}$ frequency tower.
+4. At $\displaystyle{\kappa\to\infty}$ the two transverse parity sectors reproduce the complete global-$\displaystyle{\mathrm{AdS}_{3}}$ scalar spectrum and its level degeneracies. The matched wedge Cauchy data, CPS forms, global solution, and all scalar Killing charges are recovered exactly at the classical free-field level.
+5. Intrinsic Rindler quantization gives the continuous $\displaystyle{(\omega,k)}$ modes, the KMS/Unruh characterization of the global vacuum, and the explicit boost charge $\displaystyle{K_R-K_L}$.
+6. The global-time Hamiltonian and every other global charge are exactly defined in the Rindler oscillator variables by the CPS Bogoliubov kernels.
 
 The following stronger claims have not been proved here.
 
-1. The normalization constant $\displaystyle{\mathcal N_{\omega k}}$ and the overlap kernels $\displaystyle{\alpha^A_{I;\omega k},\beta^A_{I;\omega k}}$ have not been evaluated in closed gamma-function form.
-2. No norm-resolvent convergence rate or convergence theorem for the finite-$\displaystyle{\kappa}$ vacua has been established.
-3. No ordinary unitary equivalence between a sharp continuum Rindler product Fock representation and the global representation is claimed.
+1. The displayed truncation checks fixed spectral windows, but no norm-resolvent convergence rate or convergence theorem for the finite-$\displaystyle{\kappa}$ vacua has been established.
+2. The closed Bogoliubov kernels have not been promoted to a theorem about an ordinary unitary map between sharp continuum wedge and global Fock representations. Sharp wedge algebras remain Type III; the thermofield and oscillator formulas require a common regulator or smearing.
+3. The brick-wall limit has been checked at the generalized-mode and horizon-normalization level, not as a complete null-boundary extension of the Harlow--Wu variational formalism.
 4. Interactions, stress-tensor renormalization beyond normal ordering, and gravitational backreaction are not included.
 5. A direct two-exterior horizon action remains impossible without adding the future and past regions or replacing the problem by a regulated Euclidean/path-integral gluing construction.

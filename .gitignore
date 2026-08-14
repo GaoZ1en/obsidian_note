@@ -44,6 +44,3 @@ tools/eternal-solitaire-solver/
 
 # Ignore RTK.md
 /.RTK.md
-
-# Ignore atomcode configuration files
-/.atomcode/

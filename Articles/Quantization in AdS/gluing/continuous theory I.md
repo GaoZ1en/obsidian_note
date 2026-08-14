@@ -98,7 +98,23 @@ with all other commutators vanishing. The vacuum $\displaystyle{\ket{\Omega}}$ i
 
 ## Gluing Theories
 
-To make the field theories on the two sides interact at the cut, add the quadratic interface interaction
+Before choosing an interpolation parameter, the reflection-symmetric local boundary form contains two independent positive coefficients,
+
+$$\begin{align}
+S_{d,h}^{\mathrm D}
+&=\sum_{i=1}^{2}S_i-\dfrac12\int\mathrm dt\left[d(\phi_1^2+\phi_2^2)+h(\phi_1-\phi_2)^2\right]_{x=0},
+&d,h&>0.
+\end{align}$$
+
+The strict-Dirichlet endpoint requires $\displaystyle{d\to\infty}$ and $\displaystyle{h\to0}$, whereas smooth gluing requires $\displaystyle{d\to0}$ and $\displaystyle{h\to\infty}$. Thus the boundary penalty and the relative-trace interaction are independent operators. The formulas below choose the convenient continuum trajectory
+
+$$\begin{align}
+d_\kappa&=\dfrac\mu\kappa,
+&h_\kappa&=\mu\kappa,
+&d_\kappa h_\kappa&=\mu^2.
+\end{align}$$
+
+To make the field theories on the two sides interact along this trajectory, add the quadratic interface interaction
 
 $$\begin{align}
 S_{\mathrm{glue}}^{(\kappa)} & =-\dfrac{\mu\kappa}{2}\int\mathrm{d}t\left(\phi_{1}-\phi_{2}\right)^2|_{x=0}.
@@ -286,6 +302,41 @@ H_{\kappa\to \infty} & =\sum ^{\infty}_{r=1}\Omega _{r}\left( c^{\dagger}_{r}c_r
 \end{align}$$
 
 This is the endpoint quantization of a single massive scalar on $\displaystyle{[-L,L]}$ with Dirichlet conditions at both outer endpoints. The statements in the two limits above establish the endpoint operators and convergence of each fixed mode. They do not by themselves prove convergence of the finite-$\displaystyle{\kappa}$ vacua or a unitary identification of the full Fock representations.
+
+### Finite-mode cutoff and independent bare coefficients
+
+The continuum one-parameter trajectory is not preserved by mode truncation. In the common and relative sectors the exact boundary stiffnesses are
+
+$$\begin{align}
+\alpha_+&=d,
+&\alpha_-&=d+2h.
+\end{align}$$
+
+Using the outer-Dirichlet/cut-Neumann Galerkin basis, let $\displaystyle{T_N(0)}$ be the omitted zero-energy boundary response. Low-energy matching gives
+
+$$\begin{align}
+\dfrac1{\alpha_{\sigma,N}}
+&=\dfrac1{\alpha_\sigma}+T_N(0),
+&\sigma&=\pm,
+\end{align}$$
+
+and hence
+
+$$\begin{align}
+d_N&=\alpha_{+,N},
+&h_N&=\dfrac{\alpha_{-,N}-\alpha_{+,N}}2.
+\end{align}$$
+
+If the target continuum theory lies on $\displaystyle{dh=\mu^2}$, direct algebra gives
+
+$$\begin{align}
+d_Nh_N
+&=\dfrac{\mu^2}{
+\left(1+\alpha_-T_N(0)\right)
+\left(1+\alpha_+T_N(0)\right)^2}.
+\end{align}$$
+
+For nonzero omitted response this is not $\displaystyle{\mu^2}$. Therefore no single bare $\displaystyle{\kappa_N}$ can in general satisfy both $\displaystyle{d_N=\mu/\kappa_N}$ and $\displaystyle{h_N=\mu\kappa_N}$. The exact continuum family remains a legitimate one-parameter family of boundary conditions, but its cutoff-matched regulator lives in the two-dimensional $\displaystyle{(d_N,h_N)}$ coupling space. The executable check is `numerics/interval_dirichlet_interpolation.wl`.
 
 ---
 

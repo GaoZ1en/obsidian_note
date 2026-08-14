@@ -1,8 +1,8 @@
-# The \(\lambda\phi^4\) tadpole on non-rotating BTZ
+# The $\lambda\phi^4$ Tadpole on Non-Rotating BTZ
 
 Date: 2026-07-12
 
-## 0. Direct verdict
+## 0. Direct Verdict
 
 The first interacting benchmark already changes one conclusion imported from global AdS:
 
@@ -10,7 +10,7 @@ The first interacting benchmark already changes one conclusion imported from glo
 
 The ultraviolet singularity is still local and identical to the covering AdS singularity. The new $r$-dependence comes from finite quotient images. A constant bulk mass counterterm can fix the asymptotic physical $\Delta$, but it cannot remove the finite radial image contribution everywhere.
 
-## 1. Euclidean interaction
+## 1. Euclidean Interaction
 
 Take
 
@@ -33,7 +33,7 @@ $$\begin{align}
 
 The factor $1/2$ follows from the twelve connected contractions divided by $4!$.
 
-## 2. Covering-space Green function
+## 2. Covering-Space Green Function
 
 For
 
@@ -61,7 +61,7 @@ $$\begin{align}
 
 A finite local scheme change can be moved between this number and $\delta\mu^2$.
 
-## 3. Coincident BTZ image sum
+## 3. Coincident BTZ Image Sum
 
 For a point at radius $r$ and its $n$th angular image, define
 
@@ -86,7 +86,7 @@ $$\begin{align}
 
 The local ultraviolet subtraction acts only on the $n=0$ term. The image correction $\mathcal I_\Delta(r)$ is finite and scheme-independent once the covering-space renormalization condition is fixed.
 
-## 4. Horizon value and boundary limit
+## 4. Horizon Value and Boundary Limit
 
 At $r=r_+$,
 
@@ -131,7 +131,7 @@ $$\begin{align}
 \langle\phi^2(r_+)\rangle_{\rm ren} =-0.07957636148265686.
 \end{align}$$
 
-## 5. Fixed-\(\Delta\) renormalization
+## 5. Fixed-$\Delta$ Renormalization
 
 Choose the finite mass counterterm so that the physical asymptotic dimension remains $\Delta$. This cancels the homogeneous covering-space insertion,
 
@@ -156,7 +156,7 @@ $$\begin{align}
 
 turns the tadpole into a constant mass shift. On BTZ, $\mathcal I_\Delta(r)$ breaks that reduction because the quotient preserves stationarity and axisymmetry but not transitivity in $r$.
 
-## 6. Lorentzian interpretation
+## 6. Lorentzian Interpretation
 
 After HHI analytic continuation, the same local insertion modifies the linearized operator as
 
@@ -186,7 +186,7 @@ $$\begin{align}
 
 The horizon-regular and standard-boundary solutions, their Gamma-function Wronskian, the Born-equation residual, and six converged numerical sectors are given in radial Born correction.md.
 
-## 7. What this test validates
+## 7. What This Test Validates
 
 The tadpole test separates three layers that were conflated in the homogeneous example:
 
@@ -204,7 +204,7 @@ W_{\rm HHI} \longrightarrow
 G^{(1)}.
 \end{align}$$
 
-## 8. Verification status
+## 8. Verification Status
 
 Verified:
 

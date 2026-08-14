@@ -1,0 +1,179 @@
+## Finite-action covariant phase space with an inner boundary
+
+### Geometry, action, and orientations
+
+Let $M_{\epsilon,R}$ be a regulated spacetime region bounded by initial and final Cauchy surfaces, an outer timelike cylinder $\Gamma_R$, and an inner timelike brick wall $\mathcal H_\epsilon$:
+
+$$\begin{align}
+\partial M_{\epsilon,R}
+=\Sigma_f-\Sigma_i+\Gamma_R+\mathcal H_\epsilon .
+\end{align}$$
+
+Every timelike normal points out of the retained region.  Thus the outer normal on $\Gamma_R$ points toward increasing radius, while the inner normal on $\mathcal H_\epsilon$ points into the excised collar.  If the two cuts of a partial Cauchy surface are compared using the same reference tangent orientation, Stokes' theorem reads
+
+$$\begin{align}
+\partial\Sigma=C_R\sqcup(-C_\epsilon).
+\end{align}$$
+
+This is the origin of every outer-minus-inner sign below.
+
+The bulk action is
+
+$$\begin{align}
+S_{\rm bulk}[g]
+=\frac1{2\kappa_{\rm p}^{2}}
+\int_{M_{\epsilon,R}}\!\mathrm d^3x\sqrt{-g}\,(R+2).
+\end{align}$$
+
+On a timelike component $\Gamma_a$ with outward unit normal $n_a$ and induced metric $\gamma^{(a)}_{ij}$, we use
+
+$$\begin{align}
+S_a
+=\frac1{\kappa_{\rm p}^{2}}
+\int_{\Gamma_a}\!\mathrm d^2x\sqrt{-\gamma^{(a)}}\,K_a
++S_{{\rm ct},a} .
+\end{align}$$
+
+The AdS counterterm $S_{{\rm ct},R}=-(1/\kappa_{\rm p}^{2})\int_{\Gamma_R}\sqrt{-\gamma}$ belongs to the asymptotic cylinder.  It is not copied to the inner wall.  For a fully Dirichlet piecewise-smooth region, non-orthogonal intersections also carry the Hayward action
+
+$$\begin{align}
+S_J=\frac{\sigma_J}{\kappa_{\rm p}^{2}}
+\int_J\sqrt q\,\eta,
+\end{align}$$
+
+where $\eta$ is the relative boost angle and $\sigma_J$ is fixed by the induced joint orientation \cite{Hayward:1993my,Lehner:2016vdi}.  The baseline CPS time-evolution problem and the fully Dirichlet problem must be kept distinct: in the former, the Cauchy surfaces are endpoints rather than boundary components with their own GHY terms.
+
+### Componentwise first variation
+
+Write the Einstein--Hilbert potential as the two-form dual of
+
+$$\begin{align}
+\vartheta^\mu[g;\delta g]
+=\frac1{2\kappa_{\rm p}^{2}}
+\left(\nabla_\nu\delta g^{\mu\nu}-\nabla^\mu\delta g\right).
+\end{align}$$
+
+On each timelike component, the variation of the GHY term cancels the uncontrolled normal derivative of $\delta g$.  The remaining local identity has the form
+
+$$\begin{align}
+\left.(\Theta_{\rm bulk}+\delta\ell_a)\right|_{\Gamma_a}
+=\mathrm d C_a+\mathcal B_a,
+\qquad
+\mathcal B_a=-\frac12\Pi_a^{ij}\delta\gamma^{(a)}_{ij}, \label{eq:boundary-descent}
+\end{align}$$
+
+where
+
+$$\begin{align}
+\Pi_a^{ij}
+=\frac{\sqrt{-\gamma^{(a)}}}{\kappa_{\rm p}^{2}}
+\left(K_a^{ij}-K_a\gamma_{(a)}^{ij}
++\text{counterterm contribution}\right)
+\end{align}$$
+
+is the Brown--York momentum density.  In the convention inherited from the asymptotic calculation, the endpoint one-form is
+
+$$\begin{align}
+C_a[\delta g]
+=\int_{C_a}\sqrt q\,\tau_\mu C_a^\mu[\delta g],
+\qquad
+C_a^\mu[\delta g]
+=-\frac1{2\kappa_{\rm p}^{2}}
+\gamma_a^{\mu\nu}n_a^\rho\delta g_{\nu\rho}.
+\end{align}$$
+
+Equation (\ref{eq:boundary-descent}) separates three notions that are sometimes conflated.  A Dirichlet boundary condition fixes $\delta\gamma_{ij}$.  Gaussian radial gauge fixes components $n^\rho\delta g_{\rho\mu}$ and can set $C_a$ to zero.  A zero-flux polarization requires the pullback of $\delta\mathcal B_a$ to vanish or be field-space exact.  None of these conditions implies either of the other two.
+
+If the chosen boundary conditions make the action differentiable, the integrated Cauchy-surface potential is
+
+$$\begin{align}
+\theta_\Sigma
+=\int_\Sigma\Theta_{\rm bulk}
+-C_R-C_\epsilon, \label{eq:integrated-potential}
+\end{align}$$
+
+and the pre-symplectic form is
+
+$$\begin{align}
+\Omega_\Sigma
+=\delta\theta_\Sigma
+=\int_\Sigma\omega_{\rm bulk}
+-\delta C_R-\delta C_\epsilon . \label{eq:integrated-symplectic}
+\end{align}$$
+
+The signs in (\ref{eq:integrated-potential}) use the outward normal on each timelike boundary.  If the inner expression is rewritten using a reference normal pointing toward increasing radius, its displayed sign reverses.
+
+The Harlow--Wu one-form $C_a$ is not the Hayward scalar $S_J$.  The former appears in the field-space descent (\ref{eq:boundary-descent}); the latter is part of a fully Dirichlet action and changes the endpoint potential by its variation.  Their relation must be derived for a specified corner geometry rather than imposed by notation.
+
+### Diffeomorphism descent and the Hamiltonian identity
+
+Let $\xi$ be a field-independent exact Killing field of the background that preserves the regulated boundaries and their declared sources.  Acting on the complete action before imposing equations of motion gives
+
+$$\begin{align}
+X_\xi\mathbin{\cdot}\delta
+\left(S_{\rm bulk}+S_R+S_\epsilon\right)
+=\left.\alpha_\xi\right|_{\Sigma_f}
+-\left.\alpha_\xi\right|_{\Sigma_i},
+\end{align}$$
+
+with
+
+$$\begin{align}
+\alpha_\xi
+=\alpha_{\xi,{\rm bulk}}-\mu_{\xi,R}-\mu_{\xi,\epsilon}.
+\end{align}$$
+
+The finite-action generator is therefore
+
+$$\begin{align}
+H_\xi=X_\xi\mathbin{\cdot}\theta_\Sigma-\alpha_\xi,
+\end{align}$$
+
+and field-space Cartan calculus yields
+
+$$\begin{align}
+\delta H_\xi
+=\Omega_\Sigma(\delta g,\mathcal L_\xi g). \label{eq:hamiltonian-identity}
+\end{align}$$
+
+Reducing the bulk current by Stokes' theorem and combining each cut with its own boundary descent gives
+
+$$\begin{align}
+\Omega_\Sigma(\delta g,\mathcal L_\xi g)
+=\delta H_\xi^\infty-\delta H_\xi^\gamma
++\mathcal C_\xi[\delta g]
++\mathcal F_\xi[\delta g], \label{eq:outer-minus-inner}
+\end{align}$$
+
+where $\mathcal C_\xi$ denotes the bulk constraints and $\mathcal F_\xi$ the residual wall, joint, and source flux.  Equation (\ref{eq:outer-minus-inner}) is an off-shell organization: the constraints and flux must not be discarded until their respective equations and boundary conditions have been imposed.
+
+For the asymptotic component, the same calculation as in the parent finite-action construction combines the bulk surface form with $\mu_{\xi,R}-X_\xi\cdot C_R$ into the background-subtracted Brown--York charge \cite{Brown:1992br,Gao:2026graviton}.  For the inner component, the corresponding expression is the finite-cutoff horizon charge, supplemented by any nonvanishing joint or embedding term required by the chosen variational problem.
+
+### Perturbative order
+
+The first-order equation and the second-order equation are kept separate:
+
+$$\begin{align}
+\mathcal E^{(1)}[h]&=0,\\
+\mathcal E^{(1)}[k]+\mathcal E^{(2)}[h,h]&=0.
+\end{align}$$
+
+The finite pure-$h$ current retains all three pieces
+
+$$\begin{align}
+H_{\xi,h}^{\mu}
+=\xi_\nu T_h^{\mu\nu}
++\nabla_\nu S_{\xi,h}^{\mu\nu}
++\mathcal R_{\xi,h}^{\mu},
+\qquad
+T_h^{\mu\nu}=-\mathcal E^{(2),\mu\nu}[h,h].
+\end{align}$$
+
+The $k$-linear surface term and the $h^2$ term are combined only after using the second-order field equation.  This bookkeeping is essential because the second derivative of a Hamiltonian along
+
+$$\begin{align}
+g(\lambda)=G+\lambda\kappa_{\rm p}h
++\lambda^2\kappa_{\rm p}^{2}k+O(\lambda^3)
+\end{align}$$
+
+is twice its $\lambda^2$ Taylor coefficient.

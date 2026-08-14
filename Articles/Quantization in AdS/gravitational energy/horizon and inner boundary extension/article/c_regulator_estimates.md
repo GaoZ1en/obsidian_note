@@ -1,0 +1,99 @@
+## Uniform regulator estimates
+
+### Frequency blocks
+
+Work first on a finite Brown--Henneaux block $m,n\leq M$.  After applying the PSL section, every profile vanishes at both interval anchors.  The finite-action boundary contribution decomposes into
+
+$$\begin{align}
+\mathcal F_{M,L,\epsilon,R}
+=\mathcal F_{\rm trans}
++\mathcal F_{\rm wall}
++\mathcal F_{\rm joint}
++\mathcal F_{\rm outer\,source}
++\mathcal F_{\rm outer\,corner}
++\mathcal F_{\rm outer\,joint}.
+\end{align}$$
+
+The individual estimates are
+
+$$\begin{array}{c|c}
+\text{sector} & \text{uniform block bound}\\ \hline
+\text{transition} & C M^6L^{-2}\\
+\text{complete compensated wall} & C M^7L^{-2}\\
+\text{far wall tail} & C M^7(yL^{-5}+L^{-6})\\
+\text{far Hayward joint} & C M^6yR^{-5}\\
+\text{outer Brown--York source} & 0\\
+\text{outer Cauchy corner} & C(M^6L^2R^{-2}+M^6L^{-2})\\
+\text{outer Hayward mismatch} & C M^6L^2R^{-2}
+\end{array} \label{eq:regulator-table}
+$$
+
+where $y=\tanh(\epsilon/2)$.  The complete wall estimate already contains its endpoint shift; adding a separate anchor-shift term would double count the same variation.
+
+### Explicit diagonal schedule
+
+For
+
+$$\begin{align}
+L=M^{10},
+\qquad
+y=\frac1{2M^{10}},
+\qquad
+R=M^{30},
+\end{align}$$
+
+the entries of (\ref{eq:regulator-table}) scale as
+
+$$\begin{array}{c|c}
+\text{sector} & \text{rate}\\ \hline
+\text{transition} & O(M^{-14})\\
+\text{complete compensated wall} & O(M^{-13})\\
+\text{far wall tail} & O(M^{-53})\\
+\text{far joint} & O(M^{-154})\\
+\text{outer source} & 0\\
+\text{outer corner} & O(M^{-34}+M^{-14})\\
+\text{outer joint} & O(M^{-34}).
+\end{array}
+$$
+
+The total flux is therefore $O(M^{-13})$.  The precise exponents are not canonical; they provide one explicit admissible schedule.  What matters is that the estimates are uniform in the block and that the regulator limits are taken together.
+
+### Why the limits cannot be separated naively
+
+On the RT curve, a convenient proper profile is
+
+$$\begin{align}
+p_L(\phi)
+=\frac{L^2\cos2\phi}{1+L^2\cos2\phi}.
+\end{align}$$
+
+In a frequency-$N$ anchor layer, $\phi=\pi/4-y/N$,
+
+$$\begin{align}
+p_L\left(\frac\pi4-\frac yN\right)
+\longrightarrow
+\frac{2y}{2y+N/L^2}.
+\end{align}$$
+
+Thus the local completion is recovered uniformly only if $M/L^2\to0$.  Sending $M\to\infty$ at fixed $L$ switches off the completion in the high-frequency anchor layer, while a finite limit of $M/L^2$ leaves a schedule-dependent profile.
+
+### Sobolev summation
+
+The separated endpoint chart contains the momentum trace
+
+$$\begin{align}
+p_\pm[f]
+=\frac16\left[-f''(\pm a)-f(\pm a)\pm f'(\pm a)\right].
+\end{align}$$
+
+For a Fourier block its squared operator norm behaves as
+
+$$\begin{align}
+\sum_{m\leq M}m^{4-2\sigma}.
+\end{align}$$
+
+Uniform boundedness therefore holds exactly for $\sigma>5/2$.  This is the sharp point-trace threshold for the separated chart.  The cancellation in the combined form lowers the ordinary continuity threshold to $H^2$, as proved in Section \ref{sec:positivity}.
+
+### Time transport
+
+Boundary time evolution multiplies each chiral frequency by a unit phase.  Hence all polynomial frequency bounds in (\ref{eq:regulator-table}) are unchanged.  Conjugating the endpoint and HW sections as in (\ref{eq:time-sections}) transports the whole finite-action stratum inventory.  Since the total flux vanishes uniformly, the integrated symplectic forms on two transported slices agree.

@@ -8,7 +8,7 @@ I_1=[-L,0],
 I_2=[0,L].
 $$
 
-We take $m>0$ and use homogeneous Neumann data at the physical endpoints. This example gives an elementary realization of the general gluing rule and an exactly solvable finite-coupling spectrum.
+We take $m>0$ and use homogeneous Neumann data at the physical endpoints. This example gives an elementary realization of the general gluing rule and an exactly solvable finite-coupling spectrum. Its truncation-and-diagonalization benchmark is given in Section $\ref{subsec:numerics-interval}$.
 
 ## Action and interface equations
 
@@ -51,7 +51,7 @@ $$
 H_g
 =\frac12\sum_{i=1}^2\int_{I_i}\mathrm dx
 \left(\dot\phi_i^2+\phi_i'^2+m^2\phi_i^2\right)
-+\frac g2(\phi_1-phi_2)^2\big|_{x=0}.
++\frac g2(\phi_1-\phi_2)^2\big|_{x=0}.
 $$
 
 The associated positive spatial quadratic form defines a self-adjoint interface operator.

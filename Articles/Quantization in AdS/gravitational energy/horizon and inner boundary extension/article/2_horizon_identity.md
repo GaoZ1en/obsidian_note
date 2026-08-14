@@ -1,0 +1,160 @@
+## Horizon charge, extremal area, and arbitrary gauge
+
+### The bifurcation-surface charge
+
+Let $\gamma$ be the bifurcation surface of the background Killing field $\xi$.  We normalize
+
+$$\begin{align}
+\xi|_\gamma=0,
+\qquad
+\nabla_\mu\xi_\nu|_\gamma=s_\xi\epsilon_{\mu\nu},
+\end{align}$$
+
+with a fixed binormal orientation.  The inner Noether cut is then
+
+$$\begin{align}
+H_\xi^\gamma
+=\frac{s_\xi}{2\pi}\frac{A_\gamma}{4G}
+\end{align}$$
+
+on the background.  To determine its perturbative extension, keep the surface embedding fixed and write
+
+$$\begin{align}
+g(\lambda)=G+\lambda p+\lambda^2r+O(\lambda^3).
+\end{align}$$
+
+In the project null normal frame $(k,l)$ satisfying $k\cdot l=+1$, the exact local expansion through second order is
+
+$$\begin{align}
+[\lambda]\left(\kappa_{\rm p}^{2}H_\xi^\gamma-s_\xi A_\gamma\right)&=0,\\
+[\lambda^2]\left(\kappa_{\rm p}^{2}H_\xi^\gamma-s_\xi A_\gamma\right)
+&=\frac{s_\xi}{2}
+\int_\gamma\sqrt q\,p_{kk}p_{ll}. \label{eq:fixed-surface-obstruction}
+\end{align}$$
+
+The second-order coefficient $r$ cancels from the difference.  Hence the fixed-surface Noether charge equals the fixed-surface area through second order in a Hollands--Wald normal-plane representative satisfying
+
+$$\begin{align}
+h_{kk}|_\gamma=h_{ll}|_\gamma=0. \label{eq:hw-normal}
+\end{align}$$
+
+Equation (\ref{eq:fixed-surface-obstruction}) is the project-convention version of the local obstruction found in the graviton generalized-entropy analysis of Ref. \cite{ColinEllerin:2025gravitons}.  It also explains why one cannot identify an arbitrary fixed-coordinate Noether cut with the quadratic area without specifying the normal-plane gauge.
+
+### Moving extremal surfaces
+
+For a displaced surface, metric and embedding variations must be varied together.  Let $u$ be arclength along the background geodesic and $V^a$ the first-order normal displacement in a parallel normal frame.  In AdS$_3$ the Jacobi operator is
+
+$$\begin{align}
+(JV)_a=(-D_u^2+1)V_a,
+\end{align}$$
+
+while the metric-induced variation of the geodesic curvature is
+
+$$\begin{align}
+\delta_hK_a
+=\frac12\nabla_a h_{uu}-D_uh_{ua}.
+\end{align}$$
+
+Linearized extremality is the boundary-value problem
+
+$$\begin{align}
+(JV)_a+\delta_hK_a=0. \label{eq:jacobi}
+\end{align}$$
+
+The metric--displacement and displacement--displacement area terms are
+
+$$\begin{align}
+A^{\rm lin}[h,V]
+&=\int_\gamma\mathrm du
+\left(\frac12V^a\nabla_a h_{uu}+h_{ua}D_uV^a\right),\\
+A^{\rm quad}[G,V]
+&=\frac12\int_\gamma\mathrm du
+\left(D_uV_aD_uV^a+V_aV^a\right). \label{eq:area-displacement}
+\end{align}$$
+
+For a closed BTZ bifurcation circle, integration by parts produces no endpoint term.  For an anchored RT geodesic it produces
+
+$$\begin{align}
+b_{\rm end}
+=\left[h_{ua}V^a+\frac12V_aD_uV^a\right]_{\partial\gamma}. \label{eq:area-endpoint}
+\end{align}$$
+
+This term is not discarded; it is included in the joint and anchor regulator analysis of Sections \ref{sec:benchmarks} and \ref{sec:brown-henneaux-theorem}.
+
+Under a metric diffeomorphism $h\mapsto h+\mathcal L_vG$, covariance of the extremality equation gives
+
+$$\begin{align}
+\delta_{\mathcal L_vG}K=Jv_\perp,
+\qquad
+V\mapsto V-v_\perp .
+\end{align}$$
+
+Thus neither a coordinate location nor a metric perturbation by itself defines the gauge-invariant quadratic area; the pair $(g,\gamma)$ does.
+
+### Canonical energy and the horizon cocycle
+
+The project canonical energy is
+
+$$\begin{align}
+E_{{\rm can,p}}[h]
+:=\Omega_{\rm p}[G;h,\mathcal L_\xi h].
+\end{align}$$
+
+Let $h^{\rm ext}=h+\mathcal L_vG$ be a representative satisfying (\ref{eq:hw-normal}) and the linearized extremality condition.  The change of canonical energy is algebraically
+
+$$\begin{aligned}
+E_{{\rm can,p}}[h+\mathcal L_vG]-E_{{\rm can,p}}[h]
+={}&\Omega_{\rm p}
+[h+\mathcal L_vG,\mathcal L_{[\xi,v]}G]\\
+&-\Omega_{\rm p}[\mathcal L_\xi h,\mathcal L_vG].
+\end{aligned}$$
+
+For an arbitrary vector $u$, denote by $\mathbb k^{\rm FA}_{u,\rm p}[\delta g]$ the complete finite-action surface descent of $H_u=X_u\cdot\theta-\alpha_u$.  It contains the bulk Iyer--Wald form \cite{Iyer:1994ys}, the timelike-boundary descent, and any required joint or embedding terms.  The induced inner-cut cocycle is
+
+$$\begin{align}
+\Upsilon_{\rm p}^{\rm FA}[h,v]
+=\mathbb k^{\rm FA}_{[\xi,v],\rm p}
+[h+\mathcal L_vG]
+-\mathbb k^{\rm FA}_{v,\rm p}[\mathcal L_\xi h]. \label{eq:finite-action-upsilon}
+\end{align}$$
+
+If $v$ is proper at infinity, the constraints vanish, and the regulator flux is controlled, then
+
+$$\begin{align}
+E_{{\rm can,p}}[h+\mathcal L_vG]-E_{{\rm can,p}}[h]
+=\int_\gamma\Upsilon_{\rm p}^{\rm FA}[h,v]. \label{eq:cocycle-energy}
+\end{align}$$
+
+The vector $v$ is generally not Killing.  Consequently one must use the unsimplified surface descent in (\ref{eq:finite-action-upsilon}); substituting $\xi\mapsto v$ into a formula simplified with the Killing equation is invalid.
+
+Equation (\ref{eq:cocycle-energy}) gives the completed energy
+
+$$\begin{align}
+E_{{\rm can,p}}^{\rm GI}[h]
+=E_{{\rm can,p}}[h]
++\int_\gamma\Upsilon_{\rm p}[h,V[h]]
+=E_{{\rm can,p}}(P_{\rm HW}h). \label{eq:completed-energy}
+\end{align}$$
+
+It obeys the composition law of a section-change cocycle.  In the finite-action convention of this paper,
+
+$$\begin{align}
+\omega_{\rm p}=-\omega_{\rm CELP},
+\qquad
+\Upsilon_{\rm p}=-\Upsilon_{\rm CELP}.
+\end{align}$$
+
+The sign map changes the separated representatives, not the gauge-invariant combination.
+
+### Conditional finite-cutoff implication
+
+The preceding identities give a useful general statement.  Suppose a differentiable regulator family has: (i) a common topology and fixed orientation convention; (ii) an integrable or source-retaining wall polarization; (iii) two-sided smoothness at the limiting bifurcation surface; (iv) controlled joints and embedding variations; (v) a wall-to-corner transgression; (vi) vacuum Einstein dynamics and Brown--Henneaux asymptotics; and (vii) a proper Hollands--Wald representative.  If the total regulator flux in (\ref{eq:outer-minus-inner}) vanishes, then
+
+$$\begin{align}
+\delta^2H_\xi^\infty
+=\frac{s_\xi}{2\pi}
+\delta^2\!\left(\frac{A[g,\gamma]}{4G}\right)
++E_{{\rm can,p}}^{\rm GI}[h]. \label{eq:conditional-horizon-identity}
+\end{align}$$
+
+This statement is conditional for a generic horizon phase space.  Sections \ref{sec:benchmarks}--\ref{sec:brown-henneaux-theorem} verify its hypotheses for the linear vacuum Brown--Henneaux sector in AdS$_3$.

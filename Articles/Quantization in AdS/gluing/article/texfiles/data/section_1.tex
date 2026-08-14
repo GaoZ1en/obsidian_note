@@ -1,6 +1,6 @@
 \section{Finite-coupling gluing}\label{sec:gluing-formalism}
 
-Consider two field theories on spacetime regions $M_1$ and $M_2$ whose boundaries contain two copies of the same timelike hypersurface $Gamma$. The copies are identified only after the interface interaction is specified. We orient the outward normals independently on the two regions.
+Consider two field theories on spacetime regions $M_1$ and $M_2$ whose boundaries contain two copies of the same timelike hypersurface $\Gamma$. The copies are identified only after the interface interaction is specified. We orient the outward normals independently on the two regions.
 
 \subsection{Interface action and cut equations}\label{subsec:interface-action}
 
@@ -114,3 +114,5 @@ d_A=-gG_{AB}\eta^B.
 \end{align}
 
 Eliminating $d_A$ returns $S_{\Gamma,g}$. For a scalar, $d_A$ is the common oriented derivative at the cut. For Maxwell theory, the analogous representation is quadratic in $n_\mu F^{\mu a}$ with coefficient proportional to $g^{-1}$. The two representations describe the same cut equations and the same CPS reduction; they are different boundary polarizations of one gluing theory.
+
+Section $\ref{sec:numerics}$ turns these continuum constructions into finite matrices. The scalar interactions become finite-rank stiffness updates, whereas the Maxwell transition field changes the CPS kinetic metric and therefore leads to a generalized eigenvalue problem.

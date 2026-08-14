@@ -1,0 +1,178 @@
+\section{Positivity and the closed quadratic form}\label{sec:positivity}
+
+\subsection{Interval variables and the Bañados functional}\label{subsec:banados-functional}
+
+Map $A=(-a,a)$ to the positive half-line and then to the real line by
+
+\begin{align}
+U(\phi)
+=\frac{\sin\frac{\phi+a}{2}}
+{\sin\frac{a-\phi}{2}},
+\qquad
+s=\log U.
+\end{align}
+
+The modular weight is
+
+\begin{align}
+w_A(\phi)=\frac{U}{U'}
+=\frac{\cos\phi-\cos a}{\sin a}>0.
+\end{align}
+
+For $f_0=P_{\rm PSL}f$, define
+
+\begin{align}
+F_f(s)=\frac{f_0(\phi(s))}{w_A(\phi(s))}.
+\end{align}
+
+On the compact-anchor core, a finite chiral reparametrization can be written as $\rho(e^s)=e^{\varphi(s)}$. The vacuum Brown--Henneaux stress and the interval modular charge are
+
+\begin{align}
+\langle T_{UU}\rangle_\rho
+=-\frac{c}{24\pi}\{\rho,U\},
+\qquad
+K_A=2\pi\int_0^\infty U T_{UU}\,\mathrm dU,
+\end{align}
+
+with $c=3/(2G)$. The Schwarzian chain rule gives
+
+\begin{align}
+U^2\{\rho,U\}
+&=\{\varphi,s\}-\frac12\varphi'^2+\frac12,\\
+\{\varphi,s\}
+&=\partial_s\left(\frac{\varphi''}{\varphi'}\right)
+-\frac12\left(\frac{\varphi''}{\varphi'}\right)^2.
+\end{align}
+
+The total derivative vanishes on the core. The charge-minus-geodesic functional is therefore
+
+\begin{align}
+\mathcal R_A[\rho]
+=\frac{c}{24}\int_{\mathbb R}
+\left[
+\varphi'^2+\left(\frac{\varphi''}{\varphi'}\right)^2-1
+\right]\mathrm ds . \label{eq:schwarzian-functional}
+\end{align}
+
+This is a classical Bañados/coadjoint-orbit computation. Its coefficient agrees with the chiral relative-entropy Schwarzian functional of Ref. \cite{Hollands:2019hje}, but no quantum relative-entropy theorem is assumed here.
+
+For
+
+\begin{align}
+\varphi_\lambda(s)=s+\lambda F_f(s)+O(\lambda^2),
+\end{align}
+
+the Hessian of (\ref{eq:schwarzian-functional}) is
+
+\begin{align}
+\boxed{
+E_{{\rm can,p}}[h[f]]
+=\frac1{8G}\int_{\mathbb R}
+\left[(F_f')^2+(F_f'')^2\right]\mathrm ds .
+} \label{eq:positive-energy}
+\end{align}
+
+In interval variables the same form is
+
+\begin{align}
+8G E_{{\rm can,p}}[h[f]]
+=\int_{-a}^{a}w_A
+\left[
+\left(\partial_\phi\frac{f_0}{w_A}\right)^2
++\left(
+\partial_\phi\left[
+w_A\partial_\phi\frac{f_0}{w_A}
+\right]
+\right)^2
+\right]\mathrm d\phi . \label{eq:interval-energy}
+\end{align}
+
+\subsection{Kernel and positivity}\label{subsec:kernel-positivity}
+
+Both terms in (\ref{eq:positive-energy}) are squares. Equality implies $F_f$ is constant, hence $f_0=Cw_A$. Restoring the two global directions removed by $P_{\rm PSL}$ gives
+
+\begin{align}
+\ker E_{{\rm can,p}}
+=\operatorname{span}\{1,\cos\phi,\sin\phi\}
+=\mathfrak{sl}(2,\mathbb R). \label{eq:energy-kernel}
+\end{align}
+
+These directions create no metric perturbation. Therefore the completed canonical energy is strictly positive on
+
+\begin{align}
+H^\sigma(S^1)/\mathfrak{sl}(2,\mathbb R).
+\end{align}
+
+There is no additional degeneracy in the charged $m\geq2$ sector. Positivity belongs to the complete form, not to the local $\Upsilon$ matrix by itself.
+
+\subsection{Form domain and optimal ordinary regularity}\label{subsec:form-domain}
+
+The intrinsic form domain is
+
+\begin{align}
+\mathscr D_A
+=\left\{
+[f]\in H^{1/2+}(S^1)/\mathfrak{sl}(2,\mathbb R):
+F_f',F_f''\in L^2(\mathbb R,\mathrm ds)
+\right\}. \label{eq:form-domain}
+\end{align}
+
+The compact-anchor core is dense in the norm induced by (\ref{eq:positive-energy}). Hence (\ref{eq:positive-energy}) is the unique positive closure of the finite-action/CPS form proved in Section \ref{sec:brown-henneaux-theorem}.
+
+On the ordinary circle Sobolev scale,
+
+\begin{align}
+H^2(S^1)\cap\ker(q_+,q_-)
+\hookrightarrow\mathscr D_A
+\end{align}
+
+continuously. Near an endpoint, use $y=w_A$ and write $f_0=yg$. Up to bounded smooth coefficients, the local energy is
+
+\begin{align}
+\int_0^{y_0}y
+\left[g_y^2+(g_y+yg_{yy})^2\right]\mathrm dy .
+\end{align}
+
+The identity
+
+\begin{align}
+\int_0^{y_0}|2h+yh_y|^2\mathrm dy
+=2\int_0^{y_0}|h|^2\mathrm dy
++\int_0^{y_0}y^2|h_y|^2\mathrm dy
++2y_0|h(y_0)|^2 \label{eq:hardy-identity}
+\end{align}
+
+with $h=g_y$ gives the required endpoint Hardy estimate.
+
+The index $2$ is optimal. For an interior packet
+
+\begin{align}
+f_N(\phi)=N^{-r}\chi(\phi)e^{iN\phi}
+\end{align}
+
+with $\chi$ supported away from the anchors,
+
+\begin{align}
+\|f_N\|_{H^r}=O(1),
+\qquad
+E_{{\rm can,p}}[h[f_N]]\asymp N^{4-2r}.
+\end{align}
+
+Thus the form has no continuous extension to any ordinary $H^r$ with $r<2$.
+
+It is not coercive in the $H^2$ norm. Let $\psi(x)=x^3(1-x)^3$ and place
+
+\begin{align}
+f_\delta(\phi)
+=\delta^{3/2}\psi\left(\frac{\phi+a}{\delta}\right)
+\end{align}
+
+in an anchor layer. Then $\|f_\delta''\|_{L^2}$ approaches a nonzero constant while
+
+\begin{align}
+E_{{\rm can,p}}[h[f_\delta]]=O(\delta).
+\end{align}
+
+The completed energy is therefore positive but has no spectral gap in the ordinary $H^2$ topology.
+
+At $H^2$, only the combined closed form is asserted. The separated pieces $E_{{\rm can,p}}[h]$ and $\int\Upsilon_{\rm p}$ can fail to exist individually because they contain sharper endpoint traces; their sum is the well-defined positive form.

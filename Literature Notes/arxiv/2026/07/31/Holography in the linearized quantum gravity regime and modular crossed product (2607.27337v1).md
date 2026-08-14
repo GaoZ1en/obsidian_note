@@ -21,7 +21,7 @@ Source read: arXiv v1 / local PDF, `https://arxiv.org/abs/2607.27337v1`.
 
 Mondal works in the linearized quantum gravity regime of AdS/CFT: the bulk dynamical field is a quantized linearized metric perturbation over pure AdS (free gravitons). The goal is to give a rigorous, UV-finite meaning to the vacuum-subtracted HRT entropy in this regime using the modular crossed product: the state-dependent part of the entropy of the dressed (Type-II) algebra state of the dual CFT equals a quarter of the vacuum-subtracted area of the HRT surface at leading order in perturbation theory.
 
-# Core problem
+# Core Problem
 
 In the semiclassical limit the holographic entropy of a CFT state in a boundary ball $A$ is proposed to be $S(\psi, A) = \operatorname{Ar}[\Gamma, g_{ab}]/4G_N$ (HRT). With renormalized $G_N = 1$ the area of the surface $\Gamma$ extending to the conformal boundary diverges, because the CFT subregion algebra is a Type-III factor with no finite density matrices. The literature handles this with a radial cutoff; Sorce showed the *difference* of areas of two extremal surfaces homologous to the same region is cutoff-independent. So the vacuum-subtracted entropy
 
@@ -31,22 +31,25 @@ $$\begin{align}
 
 is finite, but the left side is the difference of two individually ill-defined von Neumann entropies. The paper asks: what is the precise object whose entropy *is* this finite vacuum-subtracted quantity?
 
-# Main claim
+# Main Claim
 
 Two claims, both in the linearized regime:
 
 1. **(JLMS, Sec. 5.1)** For any bulk state $\omega$ with dual code-subspace CFT state $\tilde\omega = T\omega$, the bulk relative entropy in the causal-wedge algebra equals the boundary relative entropy in the CFT subregion algebra:
-   $$\begin{align}
+
+$$\begin{align}
    \tilde S(\tilde\omega|\tilde\omega_0) = S(\omega|\omega_0).
-   \end{align}$$
+\end{align}$$
+
    The proof needs only the holographic map properties (vacuum matching and AdS-Rindler wedge reconstruction) — neither geometric modular flow nor crossed products.
 
 2. **(HRT, Sec. 6)** For a coherent state $\omega_h$ of linearized gravity supported in the causal wedge $W(A)$, with classical-quantum extension $|\omega_h\rangle = \int dX\, f(X)|\omega_h\rangle\otimes|X\rangle$, the entropy of the corresponding dressed state in the boundary crossed-product algebra satisfies, at $O(\lambda^2)$,
-   $$\begin{align}
-   S(\rho_{\tilde\omega_h}) = \frac14\, \delta^2 \operatorname{Ar}[\Gamma_0] + \text{state-independent terms} = \frac14\left(\operatorname{Ar}[\Gamma_\lambda, g(\lambda)] - \operatorname{Ar}[\Gamma_0, g^{(0)}]\right).
-   \end{align}$$
 
-# Section map
+$$\begin{align}
+   S(\rho_{\tilde\omega_h}) = \frac14\, \delta^2 \operatorname{Ar}[\Gamma_0] + \text{state-independent terms} = \frac14\left(\operatorname{Ar}[\Gamma_\lambda, g(\lambda)] - \operatorname{Ar}[\Gamma_0, g^{(0)}]\right).
+\end{align}$$
+
+# Section Map
 
 - Section 1 sets the problem: HRT area formula, its UV divergence, Sorce cutoff covariance, and the strategy of reinterpreting the vacuum-subtracted entropy as a Type-II crossed-product entropy.
 - Section 2 constructs the AdS-Rindler wedge geometry: causal wedge $W(A)=J^-(D(A))\cap J^+(D(A))$, the standard wedge $W(A_0)$ ($A_0$ = half of $\partial\Sigma$) and the isometry $\psi$ mapping it to any $W(A)$; the bifurcate Killing horizon structure of the boost $\xi^a$; Gaussian null gauge, $\delta\vartheta^\pm|_{\Gamma_0}=0$, and the area-variation result $\operatorname{Ar}[\Gamma_\lambda,g(\lambda)]-\operatorname{Ar}[\Gamma_0,g^{(0)}]=\delta^2\operatorname{Ar}[\Gamma_0]+O(\lambda^3)$.
@@ -59,7 +62,7 @@ Two claims, both in the linearized regime:
 - Appendix B shows crossed-product von Neumann entropy is purification independent (natural-cone vs. $U|\omega_0\rangle$ give equal entropy).
 - Appendix C reviews amenable groups, weak clustering, and the mean ergodic theorem.
 
-# Key objects and notation
+# Key Objects and Notation
 
 - **Causal wedge**: $W(A) = J^-(D(A)) \cap J^+(D(A))$ with $D(A)=D^+(A)\cup D^-(A)$ the boundary domain of dependence of the ball $A\subset\partial\Sigma$; boundary $\partial W(A) = H_A^+\cup H_A^-$ (past/future AdS-Rindler horizons).
 - **Standard wedge and isometry**: $W(A_0)$ with $A_0$ = half of $\partial\Sigma$; in Rindler coordinates $ds^2 = -(\sigma^2-1)d\tau^2 + d\sigma^2/(\sigma^2-1) + \sigma^2 dH_{d-1}^2$; any ball $A$ maps to $A_0$ by an isometry $\psi$ (conformal symmetry of $\partial\Sigma$), and $\xi^a = \psi_*(\partial_\tau)$.
@@ -72,7 +75,7 @@ Two claims, both in the linearized regime:
 - **Coherent state**: $U = \exp(-i\delta\sigma(h)/16\pi^2)$; $\omega_h(a) = \omega_0(U^*aU)$; natural-cone vector $|\omega_h\rangle = U j_{\omega_0}(U)|\omega_0\rangle$; classical-quantum state $|\omega_h\rangle = \int dX\, f(X)|\omega_h\rangle\otimes|X\rangle$ ($f$ = slowly varying wavefunction of the boundary charge at $\zeta_R^+$).
 - **Key entropy relations**: $S(\rho_{\omega_h}) = -S(\omega_h|\omega_0) + 2\pi\langle X\rangle_{\omega_h} + S(f)$; $S(\omega_h|\omega_0) = 2\pi F_\xi[H_A^+] = \frac12\int_{H_A^+} dV d\Omega\, V(\delta\sigma_h)^2$; Iyer–Wald at the bifurcation surface $\int_\Gamma \delta^2 Q_\xi = \frac{1}{8\pi}\delta^2\operatorname{Ar}[\Gamma_0]$.
 
-# Relation to prior work
+# Relation to Prior Work
 
 - **JLMS [12]** proposed bulk = boundary relative entropy in the entanglement wedge; this paper proves it for the causal wedge in the linearized regime from the two holographic-map assumptions, without needing the crossed product.
 - **HRT via replicas [13]** (Lewkowycz–Maldacena) and **AdS3/CFT2 relative-entropy derivation [14]** (Much–Dorau–Sangaletti–Verch, Banados geometries): this paper's proof is Type-II-entropy based, avoids UV cutoffs, and works for any $d\ge 2$.
@@ -83,14 +86,14 @@ Two claims, both in the linearized regime:
 - **Sorce [10]** cutoff covariance makes the vacuum-subtracted area the right finite object.
 - **Kudler-Flam–Leutheusser–Satishchandran [20]** generalized BH entropy = von Neumann entropy; **Klinger–Kudler-Flam–Satishchandran [21]** edge modes.
 
-# What is genuinely new
+# What Is Genuinely New
 
 - A proof of HRT at leading order in the linearized regime whose "entropy" is the well-defined von Neumann entropy of a Type-II crossed-product state — no radial cutoff needed, valid for $AdS_{d+1}/CFT_d$ with any $d\ge2$.
 - A minimal-assumption proof of JLMS: only vacuum matching + wedge reconstruction of an isometric holographic map; geometric modularity and the crossed product are shown to be unnecessary (Remark 5.2).
 - The identification of the modular Hamiltonian with $2\pi$ times the horizon flux (geometric modular flow) and the interpretation of the constraint equation $F_\xi = X-C$ as the generator of the crossed product.
 - Purification independence of the crossed-product entropy (Appendix B) justifying the natural-cone choice.
 
-# Potential weak points
+# Potential Weak Points
 
 - **Coherent states only**: the HRT proof fails for non-coherent states (e.g. single-graviton states); JLMS itself is general.
 - **Connected ball $A$ only**: excludes disjoint unions where the HRT surface need not be the sum of individual surfaces; uniqueness of the extremal surface is implicitly assumed.
@@ -101,7 +104,7 @@ Two claims, both in the linearized regime:
 - **Assumed holographic map**: properties (1)–(2) — in particular exact code-subspace wedge reconstruction — are assumed rather than derived.
 - **KMS input is assumed**: Appendix A reduces KMS to passivity of the vacuum, itself an assumption.
 
-# Follow-up questions
+# Follow-Up Questions
 
 - Can the construction extend to AdS black holes (TFD states), where the crossed product has a two-sided structure?
 - Can soft modes / memory be included via the Danielson–Satishchandran formalism, and does the entropy then pick up memory-dependent terms?
@@ -110,7 +113,7 @@ Two claims, both in the linearized regime:
 - Is the second-order-in-$\lambda$ correction to $\delta^2\operatorname{Ar}$ controlled, and does a "first law of entanglement" follow from the crossed-product entropy (Faulkner et al. [40] direction)?
 - How does the boundary-charge wavefunction $f(X)$ relate to an explicit observer/clock construction in the boundary CFT?
 
-# Ten-sentence compression
+# Ten-Sentence Compression
 
 1. The paper works with quantized linearized metric perturbations over pure AdS in the semiclassical AdS/CFT regime.
 2. The HRT entropy for a boundary ball is an area, but the area and the entropy are each UV divergent.

@@ -11,7 +11,7 @@ $$
 with a cut at $x=0$. On $M_i=\mathbb R_t\times I_i\times S_y^1$ the bulk action is
 
 $$
-S_i[A_i]=-rac14\int_{M_i}\mathrm d^3x\,
+S_i[A_i]=-\frac14\int_{M_i}\mathrm d^3x\,
 F_{i,\mu\nu}F_i^{\mu\nu}.
 $$
 
@@ -25,7 +25,7 @@ E_{i,y}=F_{i,ty},
 B_i=F_{i,xy}.
 $$
 
-The physical outer endpoints obey vanishing normal field strength. The purpose of the cut action is to join the two gauge theories without fixing either gauge potential at the artificial interface.
+The physical outer endpoints obey vanishing normal field strength. The purpose of the cut action is to join the two gauge theories without fixing either gauge potential at the artificial interface. Section $\ref{subsec:numerics-maxwell}$ gives the corresponding generalized finite-mode problem.
 
 ## Gauge-invariant interface action
 

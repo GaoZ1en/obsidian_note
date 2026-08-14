@@ -1,7 +1,7 @@
 ---
 title: scalar in finite system
 date: 2026-06-13
-summary: "Finite-radius scalar quantization in AdS3, comparing Dirichlet and Robin regulators and their mode-by-mode convergence to standard and alternative quantization."
+summary: "Finite-radius scalar quantization in AdS3, including Dirichlet/Robin limits and a running-wall construction of the BF-bound self-adjoint family."
 ---
 
 In this note we consider a free scalar field in global $\mathrm{AdS}_{3}$ with metric
@@ -433,7 +433,7 @@ $$\begin{align}
 \omega_{n,m}^{(\mathrm{BF})} &=1+2n+|m|.
 \end{align}$$
 
-The logarithmic branch is not included in this phase space.
+The logarithmic branch is not included in this phase space. At the BF point the two power-law roots have merged, so this no-log regulator is not a choice between two distinct endpoint quantizations. The next section retains the logarithmic branch through a cutoff-dependent Robin coupling.
 
 ## Numerical Check for Robin Boundary Condition
 
@@ -447,3 +447,158 @@ The following numerical roots of $\displaystyle{Q^{\mathrm{R}}_{0}(\omega;r_{0})
 | $1.0$ | $0$ | $1.000000$ | $1.001245$ | $1.000078$ | $1.000006$ |
 | $1.0$ | $1$ | $3.000000$ | $3.010970$ | $3.000701$ | $3.000050$ |
 | $1.0$ | $2$ | $5.000000$ | $5.029458$ | $5.001941$ | $5.000139$ |
+
+# BF-Bound Theory as a Finite-System Limit
+
+The previous BF subsection fixed the logarithmic coefficient to zero. We now keep the full BF-bound asymptotic data and ask whether every admissible boundary condition can be obtained as a limit of finite cavities.
+
+Set
+
+$$\begin{align}
+M^{2} &=-1, & \Delta_{+}&=\Delta_{-}=1.
+\end{align}$$
+
+For $\displaystyle{q=|m|}$ define
+
+$$\begin{align}
+a&=\frac{q+1-\omega}{2}, & b&=\frac{q+1+\omega}{2}, & a+b&=q+1.
+\end{align}$$
+
+The solution regular at $\displaystyle{r=0}$ is
+
+$$\begin{align}
+R_{\omega m}(r)&=r^{q}(1+r^{2})^{-(q+1)/2}{}_2F_{1}\left(a,b;a+b;\frac{r^{2}}{1+r^{2}}\right).
+\end{align}$$
+
+Because this hypergeometric function is zero-balanced, its large-$\displaystyle{r}$ expansion is
+
+$$\begin{align}
+R_{\omega m}(r)&=r^{-1}\left(A_{m}(\omega)+C_{m}(\omega)\log r\right)+\mathcal{O}(r^{-3}\log r),\\
+D_{m}(\omega)&:=\frac{\Gamma(q+1)}{\Gamma(a)\Gamma(b)},\\
+C_{m}(\omega)&=2D_{m}(\omega),\\
+A_{m}(\omega)&=D_{m}(\omega)\left(2\psi(1)-\psi(a)-\psi(b)\right).
+\end{align}$$
+
+The radial boundary form of two such solutions is proportional to
+
+$$\begin{align}
+\lim_{r\to\infty}r(1+r^{2})\left(R_{1}^{*}\partial_{r}R_{2}-\partial_{r}R_{1}^{*}R_{2}\right)
+&=A_{1}^{*}C_{2}-C_{1}^{*}A_{2}.
+\end{align}$$
+
+Consequently the real linear self-adjoint family at the BF point can be written as
+
+$$\begin{align}
+A&=\kappa C, & \kappa&\in\mathbb{R}\cup\{\infty\}.
+\end{align}$$
+
+Here $\displaystyle{\kappa=\infty}$ means $\displaystyle{C=0}$, the no-log endpoint. Finite $\displaystyle{\kappa}$ retains the logarithmic branch; it is the BF-point analogue of a mixed asymptotic boundary condition.
+
+We have set the AdS radius to one. Restoring a reference scale replaces $\displaystyle{\log r}$ by $\displaystyle{\log(r/L)}$; changing that scale shifts finite $\displaystyle{\kappa}$. Thus only the no-log endpoint is scale invariant, while the finite-$\displaystyle{\kappa}$ family carries the expected marginal running.
+
+## The Running Robin Wall
+
+At a finite wall impose
+
+$$\begin{align}
+\left.\left(n^{\mu}\nabla_{\mu}+1+\lambda(r_{0})\right)\phi\right|_{r=r_{0}}&=0.
+\end{align}$$
+
+Using the BF asymptotic expansion gives
+
+$$\begin{align}
+r_{0}(n^{\mu}\nabla_{\mu}+1)R&=C+\mathcal{O}(r_{0}^{-2}\log r_{0}),\\
+r_{0}R&=A+C\log r_{0}+\mathcal{O}(r_{0}^{-2}\log r_{0}).
+\end{align}$$
+
+Thus a fixed target $\displaystyle{A=\kappa C}$ is obtained by the running coupling
+
+$$\begin{align}
+\boxed{\lambda_{\kappa}(r_{0})=-\frac{1}{\log r_{0}+\kappa}}.
+\end{align}$$
+
+Equivalently, the finite-wall boundary action is
+
+$$\begin{align}
+S_{\Gamma_{r_{0}}}^{(\kappa)}
+&=-\frac{1}{2}\int_{\Gamma_{r_{0}}}\mathrm{d}^{2}x\sqrt{-\gamma}
+\left(1-\frac{1}{\log r_{0}+\kappa}\right)\phi^{2}.
+\end{align}$$
+
+The no-log construction is the special endpoint $\displaystyle{\lambda=0}$. A nonzero fixed wall coefficient does not directly define a finite $\displaystyle{\kappa}$ limit: the logarithm forces the Robin coefficient to run. Although ordinary bulk roots for some fixed-wall choices can approach no-log roots, that observation alone does not prove operator-level convergence because cutoff-localized modes must also be controlled.
+
+## Limiting Spectrum
+
+For finite $\displaystyle{\kappa}$, the limiting normal frequencies satisfy
+
+$$\begin{align}
+\boxed{\kappa=\psi(1)-\frac{1}{2}\left[
+\psi\left(\frac{q+1-\omega}{2}\right)
++\psi\left(\frac{q+1+\omega}{2}\right)\right]}.
+\end{align}$$
+
+In the endpoint $\displaystyle{\kappa=\infty}$, $\displaystyle{C=0}$ and the gamma-function zeros reproduce
+
+$$\begin{align}
+\omega_{n,m}^{(\mathrm{no\text{-}log})}&=1+|m|+2n.
+\end{align}$$
+
+For example, for $\displaystyle{m=0}$ and $\displaystyle{\kappa=2}$ the first three positive roots converge as follows:
+
+| mode | $r_{0}=20$ | $r_{0}=80$ | $r_{0}=300$ | $r_{0}=\infty$ |
+|---:|---:|---:|---:|---:|
+| $n=0$ | $0.479615$ | $0.477414$ | $0.477195$ | $0.477170$ |
+| $n=1$ | $2.709013$ | $2.685825$ | $2.683536$ | $2.683278$ |
+| $n=2$ | $4.785267$ | $4.733478$ | $4.728227$ | $4.727634$ |
+
+For each fixed mode, the regular radial profiles converge on compact intervals by continuous dependence on $\displaystyle{\omega}$. Their BF tails are Klein-Gordon integrable because
+
+$$\begin{align}
+\frac{r}{1+r^{2}}|R|^{2}&=\mathcal{O}\left(\frac{\log^{2}r}{r^{3}}\right).
+\end{align}$$
+
+This establishes mode-by-mode convergence of the spectrum and normalized one-particle modes. It does not by itself establish norm-resolvent convergence of the full operators, convergence of all Wightman distributions, or unitary equivalence of the completed Fock representations.
+
+## Positivity and the Tachyonic Branch
+
+Self-adjointness is not the same as positivity. Substituting $\displaystyle{\omega=i\gamma}$ with $\displaystyle{\gamma>0}$ into the spectral equation gives
+
+$$\begin{align}
+\kappa&=\psi(1)-\operatorname{Re}\psi\left(\frac{q+1+i\gamma}{2}\right).
+\end{align}$$
+
+The zero-mode threshold in angular sector $\displaystyle{m}$ is therefore
+
+$$\begin{align}
+\kappa_{\mathrm{crit}}(m)&=\psi(1)-\psi\left(\frac{|m|+1}{2}\right).
+\end{align}$$
+
+The strongest constraint comes from $\displaystyle{m=0}$:
+
+$$\begin{align}
+\kappa_{\mathrm{crit}}(0)&=\log 4.
+\end{align}$$
+
+Hence the BF-bound spatial operator is nonnegative in every angular sector exactly when
+
+$$\begin{align}
+\boxed{\kappa\geq\log 4}.
+\end{align}$$
+
+It is strictly positive for $\displaystyle{\kappa>\log4}$ and has an $\displaystyle{m=0}$ zero mode at equality. Whenever $\displaystyle{\kappa<\log4}$, the $\displaystyle{m=0}$ sector contains a unique tachyonic mode; for sufficiently smaller $\displaystyle{\kappa}$, further angular sectors also cross their own thresholds. This is an explicit example in which the boundary form and symplectic structure are finite and the dynamics is self-adjoint, but the chosen extension is not a positive-energy unitary theory.
+
+For $\displaystyle{\kappa=0}$, the $\displaystyle{m=0}$ infinite-volume growth rate and its finite-wall approximants are
+
+| $r_{0}$ | $20$ | $80$ | $300$ | $\infty$ |
+|---:|---:|---:|---:|---:|
+| $\gamma$ in $\omega=i\gamma$ | $1.303899$ | $1.278374$ | $1.275448$ | $1.275074$ |
+
+Thus the finite systems do have a limit, but the limit is unstable unless the running boundary parameter lies in the positive subset $\displaystyle{\kappa\geq\log4}$.
+
+## Achieved Claim
+
+- Established analytically: the full real BF self-adjoint family $\displaystyle{A=\kappa C}$ arises from a finite-radius Robin wall with $\displaystyle{\lambda_{\kappa}(r_{0})=-1/(\log r_{0}+\kappa)}$.
+- Verified symbolically: the BF mass relation, the boundary Wronskian, and the $\displaystyle{m=0,1}$ stability thresholds.
+- Verified numerically: stable real modes for $\displaystyle{\kappa=2}$ and the tachyonic mode for $\displaystyle{\kappa=0}$ converge from $\displaystyle{r_{0}=20,80,300}$ to the digamma spectral equation.
+- Not established here: norm-resolvent convergence, convergence of the full quantum field algebra, or Fock-space equivalence.
+- Reproducibility script: bf_finite_system_limit.wl.

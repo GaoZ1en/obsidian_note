@@ -124,3 +124,74 @@ Do[
   Print["  kappa=", N[kap, 2], ", N=", Nmax, ":  lowest eig = ", N[lam, 6],
         "  (freq = ", N[truncatedFreqs[kap, Nmax, -1][[1]], 6], ")"];
   , {kap, kappaList}, {Nmax, Nlist}];
+
+(* ===================================================================== *)
+(*  Cutoff matching benchmark from quantum_neumann_gluing.pdf            *)
+(*                                                                       *)
+(*  This section uses L1=L2=ell and n=0,...,N on each side.  It compares *)
+(*    1. hard gluing at fixed N: restrict to c.Q=0;                      *)
+(*    2. cutoff matching: kappaTrunc = Pi^2 N/(4 ell).                   *)
+(*                                                                       *)
+(*  The comparison is with the first eight frequencies of one Neumann   *)
+(*  scalar on the joined interval [-ell,ell].                            *)
+(* ===================================================================== *)
+
+pdfC1[n_, ell_] := If[n == 0, 1/Sqrt[ell], (-1)^n Sqrt[2/ell]];
+pdfC2[n_, ell_] := If[n == 0, 1/Sqrt[ell], Sqrt[2/ell]];
+
+pdfBaseMatrix[Nmax_, ell_, mass_] := DiagonalMatrix[Join[
+  Table[mass^2 + (n Pi/ell)^2, {n, 0, Nmax}],
+  Table[mass^2 + (n Pi/ell)^2, {n, 0, Nmax}]
+  ]];
+
+pdfJumpVector[Nmax_, ell_] := Join[
+  Table[pdfC1[n, ell], {n, 0, Nmax}],
+  -Table[pdfC2[n, ell], {n, 0, Nmax}]
+  ];
+
+pdfCutoffMatchedFreqs[Nmax_, ell_, mass_] := Module[{k0, cc, kappaTrunc},
+  k0 = pdfBaseMatrix[Nmax, ell, mass];
+  cc = pdfJumpVector[Nmax, ell];
+  kappaTrunc = Pi^2 Nmax/(4 ell);
+  Sort[Sqrt[Eigenvalues[N[k0 + kappaTrunc Outer[Times, cc, cc], 40]]]]
+  ];
+
+pdfHardConstraintFreqs[Nmax_, ell_, mass_] := Module[{k0, cc, basis},
+  k0 = pdfBaseMatrix[Nmax, ell, mass];
+  cc = pdfJumpVector[Nmax, ell];
+  basis = Orthogonalize[NullSpace[{N[cc, 50]}]];
+  Sort[Sqrt[Eigenvalues[N[basis . k0 . Transpose[basis], 40]]]]
+  ];
+
+pdfJoinedFreqs[count_, ell_, mass_] :=
+  Table[Sqrt[mass^2 + (j Pi/(2 ell))^2], {j, 0, count - 1}];
+
+pdfMaxRelativeError[values_, target_, count_] :=
+  Max[Abs[(Take[values, count] - Take[target, count])/Take[target, count]]];
+
+pdfNList = {8, 16, 32, 64, 128};
+pdfTarget = pdfJoinedFreqs[260, 1, 1];
+pdfErrorTable = Table[
+  {Nmax,
+   pdfMaxRelativeError[pdfHardConstraintFreqs[Nmax, 1, 1], pdfTarget, 8],
+   pdfMaxRelativeError[pdfCutoffMatchedFreqs[Nmax, 1, 1], pdfTarget, 8]},
+  {Nmax, pdfNList}
+  ];
+
+Print["--- PDF cutoff-matching benchmark: L1=L2=1, m=1 ---"];
+Print["  columns: {N, hard-constraint max rel. error, cutoff-matched max rel. error}"];
+Print[TableForm[N[pdfErrorTable, 8]]];
+
+pdfFirstEight = Take[pdfCutoffMatchedFreqs[32, 1, 1], 8];
+pdfExpectedErrors = {1.2113908956594888*^-3, 3.38270954905075*^-4,
+  8.94489490902343*^-5, 2.30047791276575*^-5, 5.87378856897115*^-6};
+pdfObservedErrors = pdfErrorTable[[All, 3]];
+pdfResidual = Max[Abs[pdfObservedErrors - pdfExpectedErrors]];
+
+Print["  N=32 first eight cutoff-matched frequencies = ", N[pdfFirstEight, 12]];
+Print["  maximum residual against the PDF cutoff-matched error column = ", N[pdfResidual, 5]];
+
+If[pdfResidual > 10^-12,
+  Print["ERROR: cutoff-matching benchmark does not reproduce the PDF table."];
+  Exit[1];
+  ];

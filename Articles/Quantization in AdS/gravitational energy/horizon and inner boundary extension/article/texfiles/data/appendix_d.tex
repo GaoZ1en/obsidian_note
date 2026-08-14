@@ -1,0 +1,65 @@
+\section{Convention map and computational checks}\label{app:checks}
+
+\subsection{Normalizations}
+
+This paper uses
+
+\begin{align}
+\kappa_{\rm p}^{2}=8\pi G,
+\qquad
+S_{\rm bulk}
+=\frac1{2\kappa_{\rm p}^{2}}
+\int\sqrt{-g}\,(R+2).
+\end{align}
+
+Every quadratic quantity is a second derivative with respect to the family parameter. If $Q(\lambda)=Q_0+\lambda Q_1+\lambda^2Q_2+\cdots$, then $\delta^2Q=2Q_2$. This accounts for the factor of two between the finite BTZ Taylor coefficient and (\ref{eq:btz-energy}).
+
+The symplectic-current and horizon-cocycle conventions are related to Ref. \cite{ColinEllerin:2025gravitons} by
+
+\begin{align}
+\omega_{\rm p}=-\omega_{\rm CELP},
+\qquad
+\Upsilon_{\rm p}=-\Upsilon_{\rm CELP}.
+\end{align}
+
+The binormal and inner-cut orientation are chosen so that
+
+\begin{align}
+H_\xi^\gamma
+=\frac{s_\xi}{2\pi}\frac{A_\gamma}{4G}.
+\end{align}
+
+Changing both the binormal and cut orientation leaves the physical identity unchanged.
+
+\subsection{Symbolic and component verification}
+
+The following independent checks underlie the formulas used in the paper.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The Einstein--GHY descent, BTZ background curvature, wall extrinsic curvature, and outer charge normalization were evaluated in tensor components.
+\item
+  The fixed-surface Noether/area expansion was checked symbolically through second order with independent $h$ and $k$ coefficients.
+\item
+  The extremal-curve displacement, Jacobi equation, and endpoint term were checked in a parallel Fermi frame.
+\item
+  The compact $m=1$ canonical energy was obtained both from the second-order finite-action charge and from a direct Lee--Wald current integration.
+\item
+  The moving-wall momenta (\ref{eq:tangential-momentum})--(\ref{eq:normal-momentum}) were checked by directly differentiating the complete finite-wall BTZ action.
+\item
+  The exact nonuniform polarization (\ref{eq:nonuniform-polarization}) and the Hayward area--boost pair were checked without a small-wall expansion.
+\item
+  The AdS-Rindler wall, joint, transition, outer-source, and outer-corner kernels were computed as exact rational two-frequency functions before extracting the bounds in Appendix \ref{app:regulator-estimates}.
+\item
+  The PSL section, exact global-Killing complement, Schwarzian chain rule, positive Hessian, kernel, Hardy identity, and noncoercive anchor-layer scaling were checked algebraically.
+\end{enumerate}
+
+These checks verify the displayed finite-dimensional algebra and exact kernels used in the proof. The continuum theorem additionally uses the analytic uniform estimates stated in Appendix \ref{app:regulator-estimates}; finite-mode agreement alone would not establish the limit.
+
+\subsection{Scope of the theorem}
+
+The proved result assumes vacuum linearized Einstein gravity in three dimensions, Brown--Henneaux source boundary conditions, an exact background modular Killing field, and the linked regulator class. One chirality is displayed and the two chiral sectors add orthogonally.
+
+The theorem does not establish a universal nonlinear horizon polarization, a nonlinear Virasoro-orbit chart, a smooth infinite-mode Gaussian-null collar, matter backreaction, a quantum edge Hilbert space, a crossed-product algebra, or quantum JLMS. None of these excluded statements is used in the classical identity.
