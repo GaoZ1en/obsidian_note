@@ -37,6 +37,24 @@
       "healthUrl": "http://koishiminipc:8082/",
       "method": "GET",
       "icon": "refresh-cw"
+    },
+    {
+      "id": "atom2api",
+      "name": "Atom2API",
+      "description": "API service",
+      "url": "http://koishiminipc:8090/",
+      "healthUrl": "http://koishiminipc:8090/",
+      "method": "GET",
+      "icon": "atom"
+    },
+    {
+      "id": "deepseek-harness",
+      "name": "DeepSeek Harness",
+      "description": "DeepSeek harness",
+      "url": "http://koishiminipc:3080/",
+      "healthUrl": "http://koishiminipc:3080/",
+      "method": "GET",
+      "icon": "terminal"
     }
   ]
 }
