@@ -15,11 +15,11 @@ tags: []
 
 This paper studies subregion algebras for gravity on null surfaces such as event horizons and causal diamonds. It extends the phase space by introducing doubled corner edge modes, which allows the construction of half-sided boost and null-translation generators acting on gravitationally dressed observables. After linearizing around a black hole and quantizing, the resulting horizon algebras for each cut become Type II_infinity von Neumann algebras whose entropy agrees with generalized entropy. The algebraic nesting structure is then used to derive a generalized second law for linearized perturbations of Killing horizons and to prove the quantum focusing conjecture in perturbative quantum gravity.
 
-## subregion phase space
+## Subregion Phase Space
 
-we consider null components $\displaystyle{\mathcal{N}}$ of the boundaries $\displaystyle{\partial M}$ of spacetimes $\displaystyle{(M,g_{\mu \nu})}$, focussing on boundaries at finite locations rather than asymptotic boundaries.
+We consider null components $\displaystyle{\mathcal{N}}$ of the boundaries $\displaystyle{\partial M}$ of spacetimes $\displaystyle{(M,g_{\mu \nu})}$, focussing on boundaries at finite locations rather than asymptotic boundaries.
 
-## Derivation details
+## Derivation Details
 
 A useful way to follow the paper is to organize the derivation into a small number of structural steps.
 
@@ -46,8 +46,7 @@ Q_\xi[S] = A^\circ_\beta[S] + P^\circ_\alpha[S],
    with
 
 $$\begin{align}
-A^\circ_\beta[S] = \frac{1}{8\pi}\int_S \beta\,\mu, \qquad
-   P^\circ_\alpha[S] = -\frac{1}{8\pi}\int_S \alpha\,\Theta\,\mu.
+A^\circ_\beta[S] = \frac{1}{8\pi}\int_S \beta\,\mu, \qquad P^\circ_\alpha[S] = -\frac{1}{8\pi}\int_S \alpha\,\Theta\,\mu.
 \end{align}$$
 
    So the boost part is essentially an area functional, while the translation part is conjugate to the null expansion. Section 2 shows that these are only corner charges, not yet true Hamiltonian generators on a genuine subregion phase space.
@@ -89,8 +88,7 @@ P_\alpha = -\int_{u_0^+}^{\infty} du\, d^{d-2}x\, \sqrt{q}\,\alpha(x^A)T_{uu}(u)
    So $A_\beta$ is the half-sided vacuum modular Hamiltonian and $P_\alpha$ is the half-sided ANEC operator. Their action on dressed observables is
 
 $$\begin{align}
-[\hat P_\alpha,\hat O(p)] = -i\alpha\,\partial_u \hat O(p), \qquad
-   [\hat A_\beta,\hat O(p)] = -i(u-u_0)\beta\,\partial_u \hat O(p),
+[\hat P_\alpha,\hat O(p)] = -i\alpha\,\partial_u \hat O(p), \qquad [\hat A_\beta,\hat O(p)] = -i(u-u_0)\beta\,\partial_u \hat O(p),
 \end{align}$$
 
    which makes the half-sided $ax+b$ structure explicit.
