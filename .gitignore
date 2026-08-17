@@ -39,6 +39,9 @@
 # Ignore local solver projects
 tools/eternal-solitaire-solver/
 
+# Ignore third-party WeChat decrypt tool (cloned repo with own .git)
+tools/wechat-decrypt/
+
 # Ignore compressed files
 /**/*.zip
 
