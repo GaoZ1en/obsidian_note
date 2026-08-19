@@ -1,10 +1,10 @@
-Consider a massive real scalar on the interval $\displaystyle{\Sigma=[-L,L]}$, and introduce an artificial cut at $\displaystyle{\Gamma=\left\{x=0\right\}}$ which separate $\displaystyle{[-L,L]}$ to two subintervals $\displaystyle{\Sigma_{1}=[-L,0]}$ and $\displaystyle{\Sigma _{2}=[0,L]}$. For future convenience, introduce
+Consider a massive real scalar on the interval $\displaystyle{\Sigma=[-L,L]}$, and introduce an artificial cut at $\displaystyle{\Gamma=\left\{x=0\right\}}$ which separates $\displaystyle{[-L,L]}$ into two subintervals $\displaystyle{\Sigma_{1}=[-L,0]}$ and $\displaystyle{\Sigma _{2}=[0,L]}$. For future convenience, introduce
 
 $$\begin{align}
 y_{1} & =x+L, & y_{2} & =L-x
 \end{align}$$
 
-so that the interface locates at $\displaystyle{y_{i}=L}$.
+so that the interface is located at $\displaystyle{y_{i}=L}$ and both regional coordinates increase toward the cut.
 
 The action is given by
 
@@ -45,10 +45,10 @@ $$\begin{align}
 \phi _{i}(t,y)|_{\Gamma} & =q_{i}(t)
 \end{align}$$
 
-here $\displaystyle{q_{i}(t)}$ are arbitrary functions. For given $\displaystyle{q_{i}(t)}$, the phase space $\displaystyle{\mathcal{P}_{i}[q_{i}]}$ is defined as the set of solutions of eom that satisfies boundary conditions
+Here $\displaystyle{q_{i}(t)}$ are prescribed boundary histories. For a given $\displaystyle{q_{i}(t)}$, the phase space $\displaystyle{\mathcal{P}_{i}[q_{i}]}$ is the set of solutions of the equation of motion that satisfy the boundary conditions
 
 $$\begin{align}
-\mathcal{P}_{i}[q_{i}] & =\left\{\phi _{i} \in L^{2}(\Sigma _{i})|-\ddot{\phi}_{i}+\phi''_{i}+m^{2}\phi _{i}=0,\phi _{i}|_{\Gamma}=q_{i}(t),\phi _{i}|_{y=0}=0\right\}
+\mathcal{P}_{i}[q_{i}] & =\left\{\phi _{i} \in L^{2}(\Sigma _{i})|-\ddot{\phi}_{i}+\phi''_{i}-m^{2}\phi _{i}=0,\phi _{i}|_{\Gamma}=q_{i}(t),\phi _{i}|_{y=0}=0\right\}
 \end{align}$$
 
 ## Glue First, Then Quantize
@@ -118,7 +118,19 @@ k\cos(kL)&k\cos(kL)&0 \end{pmatrix}\\
 &=2k\sin(kL)\cos(kL) =k\sin(2kL).
 \end{align}$$
 
-For $\displaystyle{k=0}$, we have $\displaystyle{B_{1}=B_{2}=q=0}$, so there is no nonzero $\displaystyle{k=0}$ mode. For $\displaystyle{k> 0}$, the spectrum splits into two branches.
+The $\displaystyle{k=0}$ case must be treated before using the sine ansatz. The outer Dirichlet condition gives the linear spatial solutions
+
+$$\begin{align}
+f_i(y_i)&=B_i y_i.
+\end{align}$$
+
+Continuity and flux matching then require
+
+$$\begin{align}
+B_1L-q&=0, &B_2L-q&=0, &B_1+B_2&=0.
+\end{align}$$
+
+For $\displaystyle{L>0}$ these equations imply $\displaystyle{B_1=B_2=q=0}$, so there is no nonzero $\displaystyle{k=0}$ mode. For $\displaystyle{k> 0}$, the spectrum splits into two branches.
 
 For the first branch
 
@@ -157,9 +169,7 @@ $$\begin{align}
 
 ### Principles
 
-We do not allow $\displaystyle{q_{i}(t)}$ to variation when quantizing subregions, otherwise we would
-- break the variational principle
-- transform between different phase spaces $\displaystyle{\mathcal{P}_{i}[q_{i}]}$ and $\displaystyle{\mathcal{P}_{i}[q_{i}+\delta q_{i}]}$
+For each prescribed regional history $\displaystyle{q_i(t)}$, the allowed variations obey $\displaystyle{\delta q_i(t)=0}$. Varying $\displaystyle{q_i}$ would change the boundary-value problem from $\displaystyle{\mathcal P_i[q_i]}$ to $\displaystyle{\mathcal P_i[q_i+\delta q_i]}$ rather than give a tangent variation within the same regional phase space.
 
 In this case, the symplectic form is conserved:
 
@@ -167,33 +177,21 @@ $$\begin{align}
 \omega _{i}|_{t_{f}}-\omega _{i}|_{t_{i}} & =\int ^{t_{f}}_{t_{i}}\mathrm{d}t\delta \phi _{i}'\wedge\delta q_{i}|_{\Gamma}=0
 \end{align}$$
 
-but the subsystem is not time-translation invariant: define the vector
+If the prescribed history is nonconstant, a time translation changes $\displaystyle{q_i(t)}$ to $\displaystyle{q_i(t+\epsilon)}$. It therefore maps a solution of $\displaystyle{\mathcal P_i[q_i]}$ to a different boundary-value problem and is not a symmetry of the fixed-history regional system. The regional energy is
 
 $$\begin{align}
-X_{i,t} & =\int \mathrm{d}y \dot{\phi}_{i} \dfrac{\delta}{\delta \phi _{i}}
+H_{i} & =\dfrac{1}{2}\int _{0}^{L}\mathrm{d}y\left(\dot{\phi}_{i}^{2}+\phi _{i}'^{2}+m^{2}\phi _{i}^{2}\right)
 \end{align}$$
 
-act on the action
-
-$$\begin{align}
-X_{i,t}\cdot \delta S_{i} & = \alpha _{i}|^{t_{f}}_{i_{i}} \\
-\alpha _{i} & =\dfrac{1}{2}\int _{0}^{L}\mathrm{d}y\left(\dot{\phi}_{i}^{2}-\phi' ^{2}_{i}-m^{2}\phi _{i}^{2}\right)
-\end{align}$$
-
-the naïvely defined Noether charge
-
-$$\begin{align}
-H_{i} & =X_{i,t}\cdot \theta _{i}-\alpha _{i} \\
- & =\dfrac{1}{2}\int _{0}^{L}\mathrm{d}y\left(\dot{\phi}_{i}^{2}+\phi _{i}'^{2}+m^{2}\phi _{i}^{2}\right)
-\end{align}$$
-
-is not conserved onshell. Instead, it satisfies the following balance law
+and its equation of motion gives the boundary-work balance law
 
 $$\begin{align}
 H_{i}|_{t_{f}}-H_{i}|_{t_{i}} & =\dfrac{1}{2}\int _{t_{i}}^{t_{f}} \mathrm{d}t \dfrac{\mathrm{d}}{\mathrm{d}t}\int _{0}^{L}\mathrm{d}y\left(\dot{\phi} _{i}^{2}+\phi _{i}'^{2}+m^{2}\phi _{i}^{2}\right) \\
  & =\int _{t_{i}}^{t_{f}}\mathrm{d}t \int _{0}^{L}\mathrm{d}y \left(\dot{\phi}_{i}(\ddot{\phi}_{i}-\phi _{i}''+m^{2}\phi _{i})+(\phi _{i}'\dot{\phi} _{i})'\right) \\
- & \approx \int _{t_{i}}^{t_{f}}\mathrm{d}t \phi _{i}'\dot{\phi}_{i}|_{\Gamma}\neq 0
+ & \approx \int _{t_{i}}^{t_{f}}\mathrm{d}t \left.\phi _{i}'\dot{q}_{i}\right|_{\Gamma}.
 \end{align}$$
+
+Thus $\displaystyle{H_i}$ is conserved for a time-independent prescribed history, while a time-dependent history injects or removes energy through the interface.
 
 ### Quantizing Subregions
 
@@ -212,7 +210,7 @@ $$\begin{align}
 expand
 
 $$\begin{align}
-\psi _{i}(x) & =\sum ^{\infty}_{n=1} c_{i,n}(t)u_{n}(y) \\
+\psi _{i}(t,y) & =\sum ^{\infty}_{n=1} c_{i,n}(t)u_{n}(y) \\
 u_{n}(y) & =\sqrt{ \dfrac{2}{L} }\sin k _{n}y, & k _{n}=\dfrac{n\pi}{L},\quad n\in \mathbb{N}^{+} \\
 \dfrac{y}{L} & =\sum ^{\infty}_{n=1}A_{n}u_{n}(y) \\
 A_{n} & =(-1)^{n+1} \dfrac{\sqrt{ 2L }}{n\pi}
@@ -264,13 +262,13 @@ d_{i,n} & =\sqrt{ \dfrac{\omega _{n}}{2} }c^{(0)}_{i,n}+\dfrac{i}{\sqrt{ 2\omega
 \implies [d_{i,n},d ^{\dagger}_{j,m}] & =\delta _{ij}\delta _{nm}
 \end{align}$$
 
-the "vacuum" $\displaystyle{\ket{\Omega _{i}}}$ is defined as
+The operators $\displaystyle{d_{i,n}}$ define a reference Gaussian representation. Its reference Gaussian state $\displaystyle{\ket{\Omega _{i}}}$ is defined by
 
 $$\begin{align}
 d_{i,n}\ket{\Omega _{i}} & =0, & i=1,2,\quad n\in \mathbb{N}^{+}
 \end{align}$$
 
-and the Fock space is spanned by usual construction.
+and the corresponding Fock representation is spanned by the usual construction. For a nonconstant prescribed history $\displaystyle{q_i(t)}$, this state is not a stationary regional vacuum because the fixed-history regional system is not time-translation invariant.
 
 The source history changes time-evolution. In the Heisenberg picture, we have
 
@@ -384,27 +382,27 @@ e_r^{(2)}(y) &=(-1)^{r+1}\dfrac{1}{\sqrt L} \sin\left(\dfrac{r\pi y}{2L}\right).
 Define the overlap matrix between the global basis and the direct sum of the two regional sine bases,
 
 $$\begin{align}
-O_{r,in} &=\int_0^L\mathrm{d}y\,e_r^{(i)}(y)u_n(y).
+O_{r;i n} &=\int_0^L\mathrm{d}y\,e_r^{(i)}(y)u_n(y).
 \end{align}$$
 
 Explicitly,
 
 $$\begin{align}
-O_{2p,1n}=-O_{2p,2n} & =\dfrac{1}{\sqrt{ 2 }}\delta _{p,n}, & p \in \mathbb{N}^{+} \\
-O_{2p+1,1n}=O_{2p+1,2n} & =\dfrac{\sqrt{ 2 }(-1)^{p+n}n}{\pi\left[ \left( p+\frac{1}{2} \right)^{2}-n^{2} \right]}, & p \in \mathbb{N},n\in \mathbb{N}^{+}
+O_{2p;1 n}=-O_{2p;2 n} & =\dfrac{1}{\sqrt{ 2 }}\delta _{p,n}, & p \in \mathbb{N}^{+} \\
+O_{2p+1;1 n}=O_{2p+1;2 n} & =\dfrac{\sqrt{ 2 }(-1)^{p+n}n}{\pi\left[ \left( p+\frac{1}{2} \right)^{2}-n^{2} \right]}, & p \in \mathbb{N},n\in \mathbb{N}^{+}
 \end{align}$$
 
 and we have the following orthonormal and completeness conditions
 
 $$\begin{align}
-\sum ^{2}_{i=1}\sum ^{\infty}_{n=1}O_{r,in}O_{s,in} & =\delta _{rs} \\
-\sum ^{\infty}_{r=1}O_{r,in}O_{r,jm} & =\delta _{ij}\delta _{nm}
+\sum ^{2}_{i=1}\sum ^{\infty}_{n=1}O_{r;i n}O_{s;i n} & =\delta _{rs} \\
+\sum ^{\infty}_{r=1}O_{r;i n}O_{r;j m} & =\delta _{ij}\delta _{nm}
 \end{align}$$
 
 performin the Bogoliubov transformation
 
 $$\begin{align}
-a_{r} & =\sum ^{2}_{i=1}\sum ^{\infty}_{n=1} O_{r,in}(A_{rn}b_{i,n}+B_{rn}b^{\dagger}_{i,n})
+a_{r} & =\sum ^{2}_{i=1}\sum ^{\infty}_{n=1} O_{r;i n}(A_{rn}b_{i,n}+B_{rn}b^{\dagger}_{i,n})
 \end{align}$$
 
 where
