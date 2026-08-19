@@ -32,3 +32,48 @@ For a contour $\displaystyle{C}$, we can define the Wilson loop
 $$\begin{align}
 W_{R}(C) & =\mathcal{P}\exp\left(ig\oint _{C} A_{\mu}\mathrm{d}x^{\mu}\right)
 \end{align}$$
+
+---
+
+Part II: BPS Wilson lines/loops in $\displaystyle{\mathcal{N}=4}$ SYM
+
+The $\displaystyle{\mathcal{N}=4}$ SYM in $\displaystyle{\mathbb{R}^{4}}$ can be obtained by dimensional reduction from $\displaystyle{\mathcal{N}=1}$ SYM in $\displaystyle{\mathbb{R}^{10}}$ to $\displaystyle{\mathbb{R}^{4}}$. In $\displaystyle{\mathcal{N}=1}$ SYM in $\displaystyle{\mathbb{R}^{10}}$, the field content is the gauge connection and a single Weyl spinor of $\displaystyle{\mathrm{Spin(10)}}$
+
+$$\begin{align}
+A_{M}(x^{N}), \quad \Psi(x^{N})
+\end{align}$$
+
+under dimensional reduction, the gauge connection $\displaystyle{A_{M}}$ becomes
+
+$$\begin{align}
+A_{M}(x^{N})\to \begin{cases}
+A_{\mu}(x^{\mu}) \\
+\Phi _{i}(x^{\mu})
+\end{cases}
+\end{align}$$
+
+and the spinor $\displaystyle{\Psi}$ becomes
+
+$$\begin{align}
+\Psi(x^{N})\to \psi _{\alpha A}(x^{\mu})
+\end{align}$$
+
+the Gamma matrices becomes...
+
+And finally the action is
+
+$$\begin{align}
+S & = \int \mathrm{d}^{4}x \mathrm{Tr}\left(\dfrac{1}{2}F_{\mu \nu}F^{\mu \nu}+(D_{\mu}\Phi ^{i})^{2}-\dfrac{1}{2}[\Phi ^{i},\Phi ^{j}][\Phi _{i},\Phi _{j}]+\Psi\Gamma ^{\mu}D_{\mu}\Phi+\Psi\Gamma _{i}[\Phi ^{i},\Psi]\right)
+\end{align}$$
+
+this theory is conformal invariance. The $\displaystyle{R}$-symmetry group is $\displaystyle{\mathrm{SU}(4)_{R}\sim \mathrm{Spin}(6)_{R}}$. The scalars $\Phi_i$ transform in the vector representation of $\mathrm{Spin}(6)_R$, and the spinors in the spinor representations.
+
+The supersymmetry transfromation is
+
+$$\begin{align}
+\delta A_{\mu} & =\Psi\Gamma _{\mu}\varepsilon \\
+\delta \Phi ^{i} & =\Psi\Gamma ^{i}\varepsilon \\
+\delta \Psi & =F_{\mu\nu}\Gamma^{\mu\nu}\varepsilon+2[\Phi_i,\Phi_j]\Gamma^{ij}\varepsilon
+\end{align}$$
+
+see [[Lecture/conferences/2026 summer school on theoretical physics in Beijing/Junbao|Junbao]]

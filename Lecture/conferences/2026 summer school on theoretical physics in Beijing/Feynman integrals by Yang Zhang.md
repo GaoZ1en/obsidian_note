@@ -77,3 +77,54 @@ G[\alpha_{1},\dots ,\alpha _{n}] & =\dfrac{(-1)^{|\alpha|}\Gamma\left( |\alpha|-
 \end{align}$$
 
 here $\displaystyle{U=\det A, F=-C\det A+b^{T}A^{\mathrm{adj}}b-i\varepsilon \det A}$.
+
+---
+
+Lee-Pomeransky parameterization
+
+$$\begin{align}
+G[\alpha _{1},\dots,\alpha _{n}] & =\dfrac{(-1)^{|\alpha|}\Gamma\left( \dfrac{D}{2} \right)}{\Gamma\left( \dfrac{L+1}{2}D-|\alpha| \right)\Gamma(\alpha_{1})\dots \Gamma(\alpha _{n})} \int _{0}^{\infty} \prod ^{n}_{i=1} \mathrm{d}z_{i} z_{1}^{\alpha_{1}-1}\dots z_{n}^{\alpha _{n-1}}(U+F)^{-D/2}
+\end{align}$$
+
+when an index $\displaystyle{\alpha _{i}}$ is zero or negative we need to modify the expression as follows
+
+$$\begin{align}
+\int _{0}^{\infty} \dfrac{\mathrm{d}z_{i}}{\Gamma(\alpha _{i})} z_{i}^{\alpha _{i}-1}\left(\dots\right) & \to (-1)^{\alpha _{i}} \dfrac{\mathrm{d}^{-\alpha _{i}}}{\mathrm{d}z_{i}^{-\alpha _{i}}}\left(\dots\right)|_{z_{i}=0}
+\end{align}$$
+
+Baikov parameterization I reads
+
+$$\begin{align}
+G[\alpha _{1},\dots,\alpha _{n}] & = C^{L}_{E}U^{(E-D+1)/2}\int _{\Omega} \mathrm{d}\bar{x}\mathrm{d}\bar{y} P^{(D-L-E-1)/2} \dfrac{1}{D_{1}^{\alpha_{1}}\dots D_{n}^{\alpha _{n}}}
+\end{align}$$
+
+here $\displaystyle{P}$ is the Baikov polynomial, which is defined as
+
+$$\begin{align}
+P & =\det G\begin{pmatrix}
+\ell_{1}, & \dots, & \ell _{L}, & p_{1}, & \dots, & p_{E} \\
+\ell_{1}, & \dots, & \ell _{L}, & p_{1}, & \dots, & p_{E}
+\end{pmatrix}
+\end{align}$$
+
+$\displaystyle{U}$ and $\displaystyle{C_{E}^{L}}$ are the Gram determinant and constant factor, respectively
+
+$$\begin{align}
+U & =\det G\begin{pmatrix}
+p_{1}, & \dots, & p_{E} \\
+p_{1}, & \dots, & p_{E}
+\end{pmatrix} \\
+C_{E}^{L} & =\dfrac{\pi ^{(L-m)/2}}{\Gamma\left( \dfrac{E-E-L+1}{2} \right)\dots \Gamma\left( \dfrac{D-E}{2} \right)}
+\end{align}$$
+
+and Baikov representation II reads
+
+$$\begin{align}
+G[\alpha_{1},\dots,\alpha _{n}] & =JC^{L}_{E} U^{(E-D+1)/2}\int _{\Omega} \mathrm{d}^{n}z P^{(D-L-E-1)/2} \dfrac{1}{z_{1}^{\alpha_{1}}\dots z_{n}^{\alpha _{n}}}
+\end{align}$$
+
+here $\displaystyle{J}$ is the Jacobian from $\displaystyle{(x,y)}$ to $\displaystyle{z}$.
+
+---
+
+IBP reduction...

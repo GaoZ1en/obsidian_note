@@ -289,7 +289,8 @@ Denote the Virasoro algebra as
 
 $$\begin{align}
 P_{pq}[H] &:= \left\{H_{p},H_{q}\right\} \\
- & =-i(p-q)H_{p+q}-\dfrac{i}{\kappa ^{2}}\mathcal{D}_{p}\delta _{p+q,0}, & |p|,|q|\geqslant 2
+ & =-i(p-q)H_{p+q}-\dfrac{i}{\kappa ^{2}}\mathcal{D}_{p}\delta _{p+q,0}, & |p|,|q|\geqslant 2 \\
+\mathcal{D}_{p} &=2\pi p(p^{2}-1)
 \end{align}$$
 
 in principle we can represent the sympelctic form as
@@ -309,7 +310,7 @@ then write $\displaystyle{P^{-1}=\sum ^{\infty}_{r=0}(P^{-1})^{(r)}}$, and we ha
 
 $$\begin{align}
 (P^{-1})_{pq}^{(0)} & =-\dfrac{i\kappa ^{2}}{\mathcal{D}_{p}}\delta _{p+q,0} \\
-(P^{-1})^{(r+1)}_{pq} & =-\dfrac{\kappa ^{2}}{\mathcal{D_{p}}}\sum _{|s| \geqslant 2} (p+s)H_{s-p}(P^{-1})^{(r)}_{sq}
+(P^{-1})^{(r+1)}_{pq} & =-\dfrac{\kappa ^{2}}{\mathcal{D_{p}}}\sum _{|s| \geqslant 2} (p+s)H_{s-p}\times(P^{-1})^{(r)}_{sq}
 \end{align}$$
 
 then the first two entries are
