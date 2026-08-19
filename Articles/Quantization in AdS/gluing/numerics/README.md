@@ -1,6 +1,6 @@
 # Boundary-Driven Feedback Checks
 
-This directory contains the active numerical check for `../a natural method.md`:
+This directory contains the active numerical check for `../formalism.md`:
 
 - `natural_method_feedback_spectrum.wl`: truncated regional Dirichlet-to-Neumann feedback spectrum and a connected Galerkin cross-check.
 

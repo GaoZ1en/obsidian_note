@@ -3,7 +3,7 @@
 (* ===================================================================== *)
 (*  Boundary-driven feedback gluing: truncated port + Dirichlet modes    *)
 (*                                                                       *)
-(*  Model: a natural method.md.                                          *)
+(*  Model: formalism.md.                                                 *)
 (*                                                                       *)
 (*  Each half-interval is expanded off shell as                          *)
 (*      phi_i(t,y) = (y/L) q_i(t) + Sum_{n=1}^N c_{i,n}(t) u_n(y),       *)

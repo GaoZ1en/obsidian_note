@@ -38,7 +38,7 @@ The calculations separate three regulator structures. Stiffness defects are ordi
 |---|---|---|---|---|
 | Neumann scalar on two intervals | `continuous theory I.md`, `article/2_interval_scalar.md`, `finite truncation.md` | Rank-one update of the two decoupled Neumann stiffness matrices | Exact even tower and $k\tan(kL)=2g$ odd tower | Baseline reproduced |
 | Dirichlet-to-glued scalar interpolation | `continuous theory I.md`, `article/appendix_a_dirichlet.md` | Boundary-value penalty with both $\mu/\kappa$ and $\mu\kappa$ blocks | Two parity secular equations and both endpoint spectra | Finite-$\kappa$ benchmark reproduced; two-coefficient matching verified |
-| Boundary-driven feedback scalar | `a natural method.md` | Port $q$ plus strict Dirichlet modes; DtN feedback spectrum $=$ zeros $\cup$ poles | Exact even tower; odd tower $O(1/N)$ matching the hard-constraint endpoint | Feedback spectrum and both towers verified |
+| Boundary-driven feedback scalar | `formalism.md` | Port $q$ plus strict Dirichlet modes; DtN feedback spectrum $=$ zeros $\cup$ poles | Exact even tower; odd tower $O(1/N)$ matching the hard-constraint endpoint | Feedback spectrum and both towers verified |
 | Uniform periodic scalar lattice | `lattice theory.md` | Exact site stiffness matrix and Dirichlet/Neumann mode decompositions | Periodic dispersion, Bogoliubov identities, and fixed-mode continuum limit | Exact finite lattice and convergence scan verified |
 | Global $\mathrm{AdS}_2$ scalar | `continuous theory V.md`, `article/3_scalar_geometries.md` | Half-space Neumann Galerkin basis plus a rank-one trace penalty | $D_\Delta(\omega)=2g$ and $\omega_n=\Delta+n$ at strong gluing | $\Delta=2$ benchmark and response matching verified |
 | Four quadrants of a flat square | `continuous theory V.md`, `article/3_scalar_geometries.md` | Four subdomain bases with four trace-penalty blocks | Tensor-product answer for separable couplings; refinement for four unrelated couplings | Separable identity and nonseparable response matching verified |
@@ -112,7 +112,7 @@ the matched values are $d_N=\alpha_{+,N}$ and $h_N=(\alpha_{-,N}-\alpha_{+,N})/2
 
 ## Boundary-Driven Feedback Interconnection
 
-The former active script `natural_method_feedback_spectrum.wl` tested `../../a natural method.md` in its own variables. The script itself remains active at `../../numerics/natural_method_feedback_spectrum.wl`. Each half-interval is expanded off shell as
+The former active script `natural_method_feedback_spectrum.wl` tests `../../formalism.md` in its own variables. The script itself remains active at `../../numerics/natural_method_feedback_spectrum.wl`. Each half-interval is expanded off shell as
 
 $$\begin{align}
 \phi_i(t,y)=\frac{y}{L}q_i(t)+\sum_{n=1}^{N}c_{i,n}(t)u_n(y), \qquad u_n(y)=\sqrt{\frac2L}\sin\frac{n\pi y}{L},

@@ -9,7 +9,7 @@ Deprecation is a project-level decision. It does not retroactively invalidate ev
 The active entry points are:
 
 - `../README.md`
-- `../a natural method.md`
+- `../formalism.md`
 - `../TODO.md`
 - `../numerics/natural_method_feedback_spectrum.wl`
 

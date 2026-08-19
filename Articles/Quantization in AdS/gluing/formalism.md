@@ -264,7 +264,7 @@ d_{i,n} & =\sqrt{ \dfrac{\omega _{n}}{2} }c^{(0)}_{i,n}+\dfrac{i}{\sqrt{ 2\omega
 \implies [d_{i,n},d ^{\dagger}_{j,m}] & =\delta _{ij}\delta _{nm}
 \end{align}$$
 
-the vacuum $\displaystyle{\ket{\Omega _{i}}}$ is defined as
+the "vacuum" $\displaystyle{\ket{\Omega _{i}}}$ is defined as
 
 $$\begin{align}
 d_{i,n}\ket{\Omega _{i}} & =0, & i=1,2,\quad n\in \mathbb{N}^{+}
@@ -351,10 +351,10 @@ $$\begin{align}
 consequently the nonzero-interface sector (relates to $\displaystyle{d_{+,n}}$ sector) with $\displaystyle{q\neq 0}$ obeys
 
 $$\begin{align}
-k\cot(kL)=0\implies k=0 \text{ or } \dfrac{(2p+1)\pi}{2L}, & p \in \mathbb{N}
+k\cot(kL)=0\implies k=\dfrac{(2p+1)\pi}{2L},\quad p \in \mathbb{N}
 \end{align}$$
 
-the $\displaystyle{k=0}$ corresponds to the trivial solution $\displaystyle{c_{1,n}=c_{2,n}=q=0}$. as for $\displaystyle{d_{-,n}}$ sector with $\displaystyle{q=0}$, they are unaffected with spectrum
+as for $\displaystyle{d_{-,n}}$ sector with $\displaystyle{q=0}$, they are unaffected with spectrum
 
 $$\begin{align}
 k _{n}=\dfrac{n\pi}{L}
@@ -397,8 +397,8 @@ O_{2p+1,1n}=O_{2p+1,2n} & =\dfrac{\sqrt{ 2 }(-1)^{p+n}n}{\pi\left[ \left( p+\fra
 and we have the following orthonormal and completeness conditions
 
 $$\begin{align}
-\sum ^{2}_{i=1}\sum ^{\infty}_{n=1}O_{r,in}O_{s,1n} & =\delta _{rs} \\
-\sum ^{\infty}_{r=1}O_{r,1n}O_{r,jm} & =\delta _{ij}\delta _{nm}
+\sum ^{2}_{i=1}\sum ^{\infty}_{n=1}O_{r,in}O_{s,in} & =\delta _{rs} \\
+\sum ^{\infty}_{r=1}O_{r,in}O_{r,jm} & =\delta _{ij}\delta _{nm}
 \end{align}$$
 
 performin the Bogoliubov transformation

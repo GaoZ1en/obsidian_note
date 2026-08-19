@@ -39,4 +39,5 @@ Use `note-math-verify` when available for formula-heavy notes. Use narrower appl
 Consult the local file in addition to this root file when working below:
 
 - `Articles/Quantization in AdS/AGENTS.md`
+- `Articles/Quantization in AdS/gluing/AGENTS.md`
 - `Literature Notes/arxiv/AGENTS.md`
