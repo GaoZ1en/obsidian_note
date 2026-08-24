@@ -2,6 +2,17 @@
 
 This directory tracks the systematic numerical study of the models in the parent `gluing` workspace. The reference calculation is `../finite_truncation.wl`, now including the cutoff-matched Neumann-interval benchmark from `quantum_neumann_gluing.pdf`.
 
+## Auxiliary Interface-Regulator Archive (2026-08-20)
+
+The following scripts were moved from the active numerical directory after the canonical feedback-to-port bridge made them unnecessary as gates for gluing:
+
+- `smearing_regulator_checks.wl`: centered observable-smearing normalization, CCR, and covariance asymptotics for `../smeared-interface-regulator.md`.
+- `collar_regulator_checks.wl`: positive-collar response channels, exterior probe symplectic map, and covariance limits for `../collar-interface-regulator.md`.
+- `full_collar_galerkin_checks.wl`: same-phase-space collar spectrum and the obstruction for the declared sharply decoupled three-region product state in `../full-collar-galerkin-quantum-test.md`.
+- `smooth_interface_gaussian_checks.wl`: smooth finite-coupling potential, common-regulator Bogoliubov checks, and singular exact-split trend for `../smooth-interface-gaussian-regulator.md`.
+
+Their successful finite checks and negative representation results remain valid at their stated tiers. They do not test, refute, or replace the active intrinsic canonical gluing construction.
+
 ## Numerical Contract
 
 For a truncated set of canonical coordinates, write
