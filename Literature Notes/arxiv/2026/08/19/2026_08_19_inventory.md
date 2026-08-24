@@ -1,0 +1,73 @@
+# arXiv Daily Inventory
+
+Fetched at: 2026-08-20T10:11:32.616053+00:00
+
+Sources:
+- `hep-th`: Showing new listings for Wednesday, 19 August 2026
+- `gr-qc`: Showing new listings for Wednesday, 19 August 2026
+- `math-ph`: Showing new listings for Wednesday, 19 August 2026
+
+Total deduplicated entries: 60
+
+| arXiv | source status | subjects | title | authors | comments |
+|---|---|---|---|---|---|
+| [2608.16920](https://arxiv.org/abs/2608.16920) | gr-qc:new | gr-qc | Detecting Lorentz-violation induced by a tensor field with S-star s motion around Sgr A* | Qi Qi, Yu Sang, Xiao-Mei Kuang | Available online 3 June 2026 |
+| [2608.16935](https://arxiv.org/abs/2608.16935) | gr-qc:new | gr-qc | New results concerning the curvature of the Universe | Maxim Khlopov, Maxim Krasnov, Jan Novák | 10 pages. Comments are welcome! |
+| [2608.16948](https://arxiv.org/abs/2608.16948) | gr-qc:new | gr-qc | Quantum-corrected thermodynamics of Schwarzschild AdS black holes in conformal Killing gravity | Saheb Soroushfar, Sayyed Mehrab Ramezani, Hoda Farahani, Saeed Noori Gashti, Behnam Pourhassan |  |
+| [2608.16952](https://arxiv.org/abs/2608.16952) | gr-qc:new | gr-qc | A Non-Singular Cosmic Bounce in $\mathcal{F}(Q)$ Gravity: A Reconstruction and Phase Space Analysis | Nusrat Fatima, M. Sharif | 31 pages, 10 figures |
+| [2608.16969](https://arxiv.org/abs/2608.16969) | gr-qc:new | gr-qc | Polytropic wormholes | Remo Garattini, Emmanuel N. Saridakis, Athanasios G. Tzikas | 15 pages, 3 figures |
+| [2608.16982](https://arxiv.org/abs/2608.16982) | hep-th:new; math-ph:cross | cond-mat.stat-mech, hep-th, math-ph | A geodesic distance interpretation of Lanczos coefficients | Le-Chen Qu | 21 pages, 4 figures |
+| [2608.16985](https://arxiv.org/abs/2608.16985) | hep-th:new; math-ph:cross | hep-th, math-ph | Pure gravity OPE density for genus-two handlebody in $\text{AdS}_3$ | Saptaswa Ghosh, Sounak Pal | 52 pages, 10 figures, 3 tables |
+| [2608.16992](https://arxiv.org/abs/2608.16992) | hep-th:new | cond-mat.stat-mech, hep-lat, hep-th | Bulk Criticality and Boundary Spectra in AdS from Matrix Product States | Faizan Bhat | 36 pages, 6 figures |
+| [2608.16997](https://arxiv.org/abs/2608.16997) | gr-qc:cross; hep-th:new | gr-qc, hep-th | Who Writes the Gravitational Second Law of Thermodynamics? | V. R. Shajiee, M. M. Sheikh-Jabbari, V. Taghiloo | 5 pages, two-column, two figures |
+| [2608.17012](https://arxiv.org/abs/2608.17012) | hep-th:new | cond-mat.quant-gas, cond-mat.stat-mech, cond-mat.supr-con, hep-th | Statistically Steady Holographic Quantum Turbulence: Hyperuniform Vortex Matter and Crossover | Yu-Ping An, Peng-Bo Ding, Zhen-Han Jin, Li Li | 6 pages, 3 figures, and supplementary information |
+| [2608.17015](https://arxiv.org/abs/2608.17015) | gr-qc:new | gr-qc, hep-ph, quant-ph | Astrophysical Graviton Squeezing Can Be Hidden in the Far-Field | Cheng-Jun Fang, Zong-Kuan Guo, Zhen-Hong Lyu, Jing Shu, Yu-Heng Sun, Zi-Zheng Zhou |  |
+| [2608.17058](https://arxiv.org/abs/2608.17058) | gr-qc:new | gr-qc, hep-th | Wormhole Reconstruction in Non-Conservative Unimodular Gravity: Ricci Scalar as an Independently Prescribed Curvature Profile | Marcelo H. Alvarenga, Rodrigo Santos Bufalo, Júlio C. Fabris | 24 pages and 12 figures |
+| [2608.17064](https://arxiv.org/abs/2608.17064) | hep-th:new | hep-th | Robin boundary conditions in global AdS$_4$: exact double-trace thermodynamics and a soft-mode instability | David A. Lowe, Juanyi Yang | 36 pages, 3 figures |
+| [2608.17098](https://arxiv.org/abs/2608.17098) | gr-qc:new | gr-qc | Exact black hole solutions with semi-symmetric vectorial torsion | Lehel Csillag, Tiberiu Harko | 14 pages, no figures, accepted for publication in EPJC |
+| [2608.17158](https://arxiv.org/abs/2608.17158) | gr-qc:new; hep-th:cross | gr-qc, hep-th | Rational regular black holes in non-polynomial gravity | Aimeric Colléaux | 37 pages |
+| [2608.17198](https://arxiv.org/abs/2608.17198) | math-ph:new | math-ph | A Projected Semiexplicit Integrator for Dissipative Systems with Configuration-Dependent Kinetic Energy: Contact-Herglotz Formulation and Benchmarks | Lorena Loera-Galeana, Santiago Mejía, Espartaco Alvarado, Héctor Medel-Cobaxin | 56 pages, 3 figures |
+| [2608.17211](https://arxiv.org/abs/2608.17211) | hep-th:new; math-ph:cross | hep-th, math-ph | Variable-mass sine-Gordon with point defects: integrability, soliton transmission, and quasi-conservation | A.R. Aguirre, H. Blas, H.F. Callisaya, M.C. de Oliveira | 49 pages, Latex. 7 Figs |
+| [2608.17215](https://arxiv.org/abs/2608.17215) | gr-qc:new; hep-th:cross | gr-qc, hep-th | Removability criterion for radiative corrections to the Starobinsky attractor in weakly nonlocal gravity | Ekapob Kulchoakrungsun, Phongpichit Channuie, Daris Samart | 20 pages, 5 figures, 5 tables |
+| [2608.17221](https://arxiv.org/abs/2608.17221) | math-ph:new | math-ph | Romanovski polynomials, Gegenbauer connections, and $\mathrm{su}(1,1)$ ladder structures | José A. Vallejo, Mariana Kirchbach | 25 pages, using the elsarticle class with 3in margins |
+| [2608.17263](https://arxiv.org/abs/2608.17263) | math-ph:new | math-ph | Cohomology for solutions of polygon equations | Serban Matei Mihalache, Tomoro Mochida | 21 pages, 2 figures |
+| [2608.17364](https://arxiv.org/abs/2608.17364) | gr-qc:new; hep-th:cross | gr-qc, hep-ph, hep-th, physics.hist-ph | Ostrogradsky s Theorem is Incompatible with Background Independence in Quantum Gravity | Ken-ji Hamada | 9 pages |
+| [2608.17670](https://arxiv.org/abs/2608.17670) | gr-qc:new; hep-th:cross | gr-qc, hep-th | Vacuum Polarization in Quantum-Corrected and Effective Black Hole Geometries: a High Performance Approach | Antonino Flachi | 20 pages; 15 figures |
+| [2608.17730](https://arxiv.org/abs/2608.17730) | gr-qc:new | gr-qc | Thermomechanics of Horndeski Scalar Hair with Spacelike Gradients | Marcello Miranda, Marco Sebastianutti, Andrea Giusti | 34 pages, 2 tables |
+| [2608.17837](https://arxiv.org/abs/2608.17837) | hep-th:new; math-ph:cross | hep-th, math-ph | Elliptic spin Ruijsenaars-Schneider integrable models from 5d $\mathcal{N}=1$ gauge theories | Gleb Arutyunov, Lukas Hardi | 9 pages, 2 figures |
+| [2608.17877](https://arxiv.org/abs/2608.17877) | hep-th:new | hep-th | A compact analytic formula for the one-loop triangle cosmological correlator | Johannes Henn, Jiajie Mei, Qinglin Yang | 25 Pages, 5 Figures, 2 Tables |
+| [2608.17898](https://arxiv.org/abs/2608.17898) | hep-th:new | hep-th | Holographic subregion complexity in unbalanced Stückelberg holographic superconductors | Yu Shi, Chikun Ding, Yuebing Zhou, Qiyuan Pan, Jiliang Jing | 19 pages, 16 figures |
+| [2608.17900](https://arxiv.org/abs/2608.17900) | gr-qc:cross; hep-th:new; math-ph:cross | gr-qc, hep-th, math-ph | Gravity and Matter from Soldered Chiral Superconnections | P. D. Alvarez, J. T. Hartwig, A. Sharma | 69pages |
+| [2608.17943](https://arxiv.org/abs/2608.17943) | gr-qc:new | gr-qc | Gravitational Waves from Green s Function Decomposition for a Kerr black hole: I. Equatorial ISCO Plunge | Junquan Su, Neev Khera, Abhishek Chowdhuri, Marc Casals, Huan Yang | 25 pages, 9 figures |
+| [2608.17946](https://arxiv.org/abs/2608.17946) | gr-qc:cross; hep-th:new | gr-qc, hep-th | Gravitational Compton scattering at the fifth post-Minkowskian order | Giacomo Brunello, Mario Meo, Sid Smith | 11 pages plus bibliography, 7 figures, 1 table |
+| [2608.18073](https://arxiv.org/abs/2608.18073) | hep-th:new; math-ph:cross | hep-th, math-ph | Analytic Continuation of Conformal Integrals in Momentum Space | Jonathan Gräfe, Prashanth Raman, Denis Werth | 42 pages, 2 figures |
+| [2608.06465](https://arxiv.org/abs/2608.06465) | gr-qc:cross | gr-qc, hep-th | Holographic RG flows and wormholes from sinusoidal scalars | Pompey Leung | 29+4 pages, 10 figures |
+| [2608.16933](https://arxiv.org/abs/2608.16933) | hep-th:cross | hep-ph, hep-th | Effective propagators of flavor neutrinos | Maxim Dvornikov (IZMIRAN) | 13 pages in LaTeX, 1 pdf and 1 png figues |
+| [2608.16936](https://arxiv.org/abs/2608.16936) | math-ph:cross | math-ph, quant-ph | Unitary-orbit classification and a refinement theorem for context-independent projective probabilities | Michael P. Rubin | 14 pages, no figures. Finite-dimensional projective measurements; unitary-orbit classification, compact homogeneous-space geometry, a rank-profile refinement graph, quantitative stability bounds, and consequences of Gleason s theorem |
+| [2608.16942](https://arxiv.org/abs/2608.16942) | math-ph:cross | math-ph | On the Cauchy-Hamel Continuity of Real Functions | Gabriel Istrate |  |
+| [2608.16945](https://arxiv.org/abs/2608.16945) | gr-qc:cross | gr-qc | Controlling artificial surface heating in neutron star simulations: Application to hybrid equations of state | Georgios Doulis | 10 pages, 8 figures |
+| [2608.16995](https://arxiv.org/abs/2608.16995) | math-ph:cross | math-ph, quant-ph | Non-CSS Quantum Code Embedding | Andrew C. Yuan, Nouédyn Baspin |  |
+| [2608.17003](https://arxiv.org/abs/2608.17003) | gr-qc:cross | gr-qc | Extreme-Mass-Ratio Inspirals in Gaseous Disks | Alexander J. Dittmann, Abhishek Hegade K. R., Callum W. Fairbairn | 18 pages, 14 figures, supplementary mathematica notebook in the source file. Comments welcome! |
+| [2608.17020](https://arxiv.org/abs/2608.17020) | hep-th:cross | cond-mat.mes-hall, hep-th, quant-ph | Multi-purpose quantum laboratories from superconducting circuits | Arpit Arora, Emily M. Been, William Munizzi, Joel Wang, Taylor L. Patti, Aaron Chou, Prineha Narang |  |
+| [2608.17090](https://arxiv.org/abs/2608.17090) | hep-th:cross | hep-ph, hep-th | Probing the Internal Structure of $X(3872)$ via Magnetic Moment: Distinguishing Color-Singlet and Compact Configurations | M. Monemzadeh, N. Tazimi |  |
+| [2608.17094](https://arxiv.org/abs/2608.17094) | math-ph:cross | math-ph, quant-ph | Lie-Algebraic Classical Simulation of Bosonic Systems Beyond Gaussian Dynamics | Adelina Bärligea, Timothy Heightman, Jakob S. Kottmann, Antonio Acín | 20 pages main text, 25 pages appendices, 10 figures |
+| [2608.17155](https://arxiv.org/abs/2608.17155) | math-ph:cross | cond-mat.stat-mech, math-ph | Fixed-particle-number optimizers for the Lieb--Oxford inequality | Matthew Rosenzweig | 27 pages |
+| [2608.17208](https://arxiv.org/abs/2608.17208) | gr-qc:cross | gr-qc | Dark Energy in the $w-c_s^2$ Plane | Oem Trivedi, Robert J. Scherrer, Alfredo Gurrola | 21 pages with 3 figures, comments very welcome |
+| [2608.17230](https://arxiv.org/abs/2608.17230) | hep-th:cross | cond-mat.mes-hall, hep-th, quant-ph | Zero Point Density Fluctuations and Electron Brownian Motion | L. H. Ford, G. O. Heymans, N. F. Svaiter | 8 pages, 1 figure |
+| [2608.17262](https://arxiv.org/abs/2608.17262) | math-ph:cross | math-ph | Nonadaptive Learning in Robust Nonlinear Output Regulation | Shimin Wang, Martin Guay, Richard D. Braatz |  |
+| [2608.17346](https://arxiv.org/abs/2608.17346) | math-ph:cross | math-ph, physics.optics | Spectral design of confining optical structures by supersymmetry techniques | Samantha Cervantes-Neri, Zulema Gress-Mendoza, Daniel O-Campa, Erik Díaz-Bautista, Sara Cruz y Cruz | 18 pages, 14 figures |
+| [2608.17372](https://arxiv.org/abs/2608.17372) | hep-th:cross | hep-ph, hep-th, nucl-th, quant-ph | From the universal Lindblad equation to Boltzmann equations: in-QGP quarkonium dynamics | Aoumeur Daddi Hammou, Pol Bernard Gossiaux | 21 pages, excluding appendices |
+| [2608.17392](https://arxiv.org/abs/2608.17392) | math-ph:cross | math-ph | Left-invariant Rarita-Schwinger fields on 3-dimensional Lie groups | Soma Ohno | 18 pages |
+| [2608.17428](https://arxiv.org/abs/2608.17428) | math-ph:cross | cond-mat.mes-hall, cond-mat.other, math-ph, quant-ph | Flat band and Bulk-Boundary correspondence in a non-Hermitian trimerized lattice model with generic boundary conditions | Supriyo Ghosh, Pijush K. Ghosh, Shreekantha Sil | 24 pages, 11 figures, two columns |
+| [2608.17437](https://arxiv.org/abs/2608.17437) | math-ph:cross | math-ph | Spectral gap for unlabelled Ginibre Interacting Brownian motion | Kohei Suzuki |  |
+| [2608.17449](https://arxiv.org/abs/2608.17449) | math-ph:cross | math-ph | Spectral Simplicity and Joint Eigenvalue Densities for a Non-Gaussian Brownian Time Change | Chunhao Cai |  |
+| [2608.17508](https://arxiv.org/abs/2608.17508) | gr-qc:cross | gr-qc | Modelling mountains on accreting magnetized neutron stars | T. Brusco, B. Haskell, M. Razzano, M. Bejger, J.L. Zdunik |  |
+| [2608.17545](https://arxiv.org/abs/2608.17545) | math-ph:cross | math-ph | Alternating generalizations of Mizuno s product formula via modified gamma functions | Su Hu, Min-Soo Kim | 45 pages |
+| [2608.17548](https://arxiv.org/abs/2608.17548) | math-ph:cross | cond-mat.stat-mech, cond-mat.str-el, math-ph | Absence of nontrivial local conserved quantities in a class of $U(1)$-symmetric spin-1 chains | Shunsuke Sengoku, Haruki Watanabe | 24pages |
+| [2608.17648](https://arxiv.org/abs/2608.17648) | math-ph:cross | math-ph | Semicircular law with a few independent entries in a random matrix | Debapratim Banerjee, Himasish Talukdar |  |
+| [2608.17688](https://arxiv.org/abs/2608.17688) | math-ph:cross | math-ph, quant-ph | Universal quantum theory from dynamical consistency | Chiara Marletto, Vlatko Vedral |  |
+| [2608.17817](https://arxiv.org/abs/2608.17817) | hep-th:cross | cond-mat.dis-nn, cond-mat.other, cond-mat.stat-mech, hep-th, quant-ph | Frustration without Glass in Non-Abelian Simplicial Networks | Xuanhua Wang | 4 pages, 2 figures. Feedback welcome! |
+| [2608.17904](https://arxiv.org/abs/2608.17904) | hep-th:cross | hep-th, physics.bio-ph | A higher-derivative model predicts a smoothness vs duration relationship in head-pointing movements | N. Boulanger, F. Buisseret, J. Burny, F. Dierick, W. Estievenart, A. Teregulov, O. White |  |
+| [2608.17978](https://arxiv.org/abs/2608.17978) | gr-qc:cross | gr-qc | The Spin Angular Momentum and Black Hole Mass Components of Sagittarius A* | Ruth A. Daly | 6 pages, summary of oral report presented at the Galactic Center workshop 2026 (IAU Symposium 405, Traversing the Galactic Center in Space and Time) |
+| [2608.18045](https://arxiv.org/abs/2608.18045) | math-ph:cross | math-ph | Supercritical sharpness for the random cluster representation of real-valued spin models | Trishen S. Gunaratnam, Dmitry Krachun, Christoforos Panagiotis, Romain Panis, Franco Severo | 55 pages, 5 figures |
+| [2608.18053](https://arxiv.org/abs/2608.18053) | math-ph:cross | math-ph, quant-ph | A Complete Classification of Complex Hadamard Matrices of Order Six | Mateo Cárdenes Wuttig, Joseph Tindall |  |
