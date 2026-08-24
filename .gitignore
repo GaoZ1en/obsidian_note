@@ -44,6 +44,7 @@ tools/wechat-decrypt/
 
 # Ignore compressed files
 /**/*.zip
+/**/*.tar.gz
 
 # Ignore RTK.md
 /.RTK.md
