@@ -99,7 +99,7 @@ No confirmed calculation error:
 - The dS2 Christoffel symbols, Ricci tensor, and scalar curvature in lines 282-291 match the component calculation with metric `\sec^2 t(-dt^2+d\phi^2)`.
 - The summary block in lines 435-444 already has the corrected signs and powers for the two dS2 central terms.
 
-### [README.md](README.md)
+### [README.md](Articles/Noether%20charge/README.md)
 
 Status: inspected.
 
