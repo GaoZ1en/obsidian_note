@@ -1,4 +1,4 @@
-the metric in Rindler coordinates is given by
+The metric in Rindler coordinates is given by
 
 $$\begin{align}
 \mathrm{d}s^{2} & =-a^{2}\xi ^{2}\mathrm{d}\eta ^{2}+\mathrm{d}\xi ^{2}+\mathrm{d}\vec{x}_{\bot}^{2} \\
@@ -6,7 +6,7 @@ t & =\xi \sinh(a\eta) \\
 x & =\xi \cosh(a\eta)
 \end{align}$$
 
-where $\displaystyle{a}$ is a constant, $\displaystyle{\eta}$ is the Rindler time coordinate, and $\displaystyle{\xi}$ is the spatial coordinate. consider a massive scalar field $\displaystyle{\phi}$ in the Rindler wedge
+where $\displaystyle{a}$ is a constant, $\displaystyle{\eta}$ is the Rindler time coordinate, and $\displaystyle{\xi}$ is the spatial coordinate. Consider a massive scalar field $\displaystyle{\phi}$ in the Rindler wedge
 
 $$\begin{align}
 S & =-\frac{1}{2}\int _{M} \mathrm{d}^{d}x\sqrt{ -g }(\nabla _{\mu}\phi \nabla ^{\mu}\phi+m^{2}\phi ^{2})
@@ -22,13 +22,13 @@ E & =\nabla ^{2}\phi-m^{2}\phi \\
  & =\int _{\Sigma}\mathrm{d}^{d-1}x\sqrt{ \sigma }\tau ^{\mu}\nabla _{\mu}\delta \phi \wedge \delta \phi
 \end{align}$$
 
-where $\displaystyle{\Sigma}$ is a Cauchy surface, with $\displaystyle{\eta}$ constant, $\displaystyle{\sqrt{ \sigma }=1}$ is the induced metric on $\displaystyle{\Sigma}$, and $\displaystyle{\tau ^{\mu}=\frac{1}{a\xi}\delta ^{\mu \eta}}$ is the unit normal vector to $\displaystyle{\Sigma}$. the symplectic form becomes
+where $\displaystyle{\Sigma}$ is a Cauchy surface, with $\displaystyle{\eta}$ constant, $\displaystyle{\sqrt{ \sigma }=1}$ is the induced metric on $\displaystyle{\Sigma}$, and $\displaystyle{\tau ^{\mu}=\frac{1}{a\xi}\delta ^{\mu \eta}}$ is the unit normal vector to $\displaystyle{\Sigma}$. The symplectic form becomes
 
 $$\begin{align}
 \omega & =\int _{0}^{\infty}\mathrm{d}\xi \mathrm{d}^{d-2}\vec{x}_{\bot} \frac{1}{a\xi}\partial _{\eta}\delta \phi \wedge \delta \phi
 \end{align}$$
 
-we will quantize the field in the Rindler wedge using the symplectic form above. the eom is
+we will quantize the field in the Rindler wedge using the symplectic form above. The eom is
 
 $$\begin{align}
 -\frac{1}{a^{2}\xi ^{2}}\partial _{\eta}^{2}\phi+\partial _{\xi}^{2}\phi+\frac{1}{\xi}\partial _{\xi}\phi+\nabla ^{2}_{\bot}\phi-m^{2}\phi=0
@@ -54,7 +54,7 @@ $$\begin{align}
 
 where $\displaystyle{\nu=\frac{\omega}{a},\kappa=\sqrt{ \vec{k}^{2}_{\bot}+m^{2} }}$
 
-we choose $\displaystyle{C_{1}=0}$ to have a well-defined solution at infinity. the normalized solution is
+We choose $\displaystyle{C_{1}=0}$ to have a well-defined solution at infinity. The normalized solution is
 
 $$\begin{align}
 \phi _{\omega,\vec{k}_{\bot}} & =N_{\omega,\vec{k}_{\bot}}e^{-i\omega \eta}e^{i\vec{k}_{\bot}\cdot \vec{x}_{\bot}}K_{i\nu}\left(\kappa \xi\right) \\
@@ -88,7 +88,7 @@ a_{\omega,\vec{k}_{\bot}} & =i\Omega[\phi,\phi ^{*} _{\omega,\vec{k}_{\bot}}] \\
 \beta _{\omega,\vec{k}_{\bot};\vec{k}} & =e^{-\pi \omega/a}\alpha _{\omega,\vec{k}_{\bot};\vec{k}}
 \end{align}$$
 
-where $\displaystyle{\vec{k}'_{\bot}}$ is the transverse component of $\displaystyle{\vec{k}}$. expectation value of Rindler number operator in the Minkowski vacuum is
+where $\displaystyle{\vec{k}'_{\bot}}$ is the transverse component of $\displaystyle{\vec{k}}$. Expectation value of Rindler number operator in the Minkowski vacuum is
 
 $$\begin{align}
 \braket{ \Omega _{\text{M}}|a^{\dagger}_{\omega,\vec{k}_{\bot}}a_{\omega,\vec{k}_{\bot}}|\Omega _{\text{M}} }  & = \frac{\delta(\omega-\omega')\delta ^{d-2}(\vec{k}_{\bot}-\vec{k}'_{\bot})}{e^{2\pi \omega/a}-1}
