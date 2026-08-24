@@ -1,4 +1,4 @@
-\section{Moving embeddings and the edge phase space}\label{sec:moving-boundary}
+\section{Moving embeddings: presymplectic geometry and selected polarizations}\label{sec:moving-boundary}
 
 \subsection{Pulling back the complete action}\label{subsec:pullback-action}
 
@@ -40,14 +40,22 @@ I_{\widehat w}\delta g=\mathcal L_wg,
 I_{\widehat w}\chi=-w.
 \end{align}
 
-Then $I_{\widehat w}\Delta_Xg=0$. Hence
+Then $I_{\widehat w}\Delta_Xg=0$. Hence, on the fully covariant extended field space in which the boundary data are dragged together,
 
 \begin{align}
 (\mathcal L_wg,-w\circ X)
 \in\ker\Omega_{{\rm p},X}. \label{eq:extended-degeneracy}
 \end{align}
 
-This is the precise extended-space statement of gauge invariance. A metric-only transformation at fixed $X$ and an embedding-only transformation at fixed $g$ carry opposite surface charges; only their diagonal combination is a degeneracy \cite{Donnelly:2016auv,Speranza:2017guc}.
+This is the precise extended-space statement of relabelling invariance. A metric-only transformation at fixed $X$ and an embedding-only transformation at fixed $g$ carry opposite surface charges; only their diagonal combination is a null direction \cite{Donnelly:2016auv,Speranza:2017guc}.
+
+There is an additional restriction when one passes to the source-fixed physical phase space. The vector $w$ must be tangent to the declared boundary conditions, preserve the asymptotic sources and frame, and have vanishing finite-action asymptotic charge and uncontrolled flux. We denote this proper subalgebra by $\mathfrak g_{\rm proper}$. A vector that changes the Brown--Henneaux stress tensor or asymptotic frame is a large transformation and is not quotiented, even though it can be represented kinematically as a simultaneous relabelling on a still larger space. Equation (\ref{eq:extended-degeneracy}) is therefore never used to remove the charged Virasoro modes.
+
+\subsection{Presymplectic pullback versus Hamiltonian polarization}\label{subsec:presymplectic-versus-polarization}
+
+Pulling back the complete action always supplies the extended potential (\ref{eq:extended-potential}) and its presymplectic curvature on the chosen space of fields and embeddings. It does not by itself prove that normal wall translations have integrable Hamiltonians, that the action is differentiable on an arbitrary family of moving walls, or that a common Lagrangian polarization exists. Those questions require boundary conditions on the Brown--York pair, compatible joint data, and the flux criterion (\ref{eq:finite-action-flux-law}).
+
+Accordingly, the construction in this section has two tiers. Equations (\ref{eq:delta-x})--(\ref{eq:extended-degeneracy}) are the general extended presymplectic geometry. Equation (\ref{eq:nonuniform-polarization}) below is a narrower existence result for a stationary compact family. The AdS-Rindler theorem uses a separately proved source-retaining compensated regulator family whose complete flux vanishes only in the linked limit; it does not assert a finite-cutoff Lagrangian polarization for the full Brown--Henneaux block. No simultaneous time-dependent wavy-wall and tilted-joint polarization is inferred from the general pullback.
 
 \subsection{Wall embedding momentum}\label{subsec:embedding-momentum}
 
@@ -105,7 +113,7 @@ By (\ref{eq:extended-degeneracy}), the change of metric canonical energy between
 -E_{{\rm can,p}}[h]
 \end{align}
 
-is naturally the cocycle associated with changing the section of the extended phase space. This interpretation derives the required compensation from the action without asserting that $\Upsilon_{\rm p}$ is a globally integrable scalar functional on a nonlinear edge space.
+is naturally the cocycle associated with changing the section of the extended presymplectic space. This interpretation derives the required compensation from the action without asserting that $\Upsilon_{\rm p}$ is a globally integrable scalar functional on a nonlinear edge space. The cocycle changes when the section or ambient extension changes; only the completed energy is invariant under the admissible proper changes characterized in Appendix \ref{app:area-hw}.
 
 One can always cancel a closed finite-dimensional two-form $F$ by adjoining an auxiliary cotangent graph. For constant coefficients,
 

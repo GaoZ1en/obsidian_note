@@ -140,3 +140,67 @@ The leading wall and joint jets cancel before these bounds are applied. The tran
 \end{align}
 
 The outer Brown--York source curvature vanishes exactly. The remaining Cauchy-corner and outer-joint mismatches have the rates summarized in Appendix \ref{app:regulator-estimates}. These are uniform kernel estimates, not mode-by-mode extrapolations.
+
+\subsection{A propagating higher-dimensional local-Rindler diagnostic}\label{subsec:higher-dimensional-diagnostic}
+
+The Brown--Henneaux modes above are locally diffeomorphisms in three bulk dimensions. To test the radiative issue separately, consider a $D\geq4$ local Rindler collar
+
+\begin{align}
+\mathrm ds^2
+=-\kappa_H^2\rho^2\,\mathrm d\tau^2+\mathrm d\rho^2
++\delta_{AB}\,\mathrm dx^A\mathrm dx^B,
+\qquad
+U=-\rho e^{-\kappa_H\tau},
+\quad
+V=\rho e^{\kappa_H\tau}.
+\label{eq:local-rindler-metric}
+\end{align}
+
+Let $e_{AB}$ be constant, transverse, and trace free, and take the genuine tensor graviton
+
+\begin{align}
+h_{AB}=e_{AB}\psi(U,V),
+\qquad
+\psi=F(U)+G(V),
+\qquad
+h_{\rho\mu}=h_{\tau\mu}=0.
+\label{eq:rindler-tt-mode}
+\end{align}
+
+It is traceless, divergence free, and satisfies the linearized vacuum Einstein equation. It also obeys the fixed-surface HW normal conditions and the linearized extremality conditions at the bifurcation plane: $h_{UU}=h_{VV}=0$ and both null expansions vanish because $e^A{}_A=0$.
+
+For the inner normal $n=-\partial_\rho$, the Einstein--GHY variation gives
+
+\begin{align}
+\delta\Pi^{AB}[h]
+=-\frac{\kappa_H}{\kappa_{\rm p}^2}
+\left(h^{AB}+\frac\rho2\partial_\rho h^{AB}\right),
+\end{align}
+
+and hence the Brown--York source curvature per unit transverse volume is
+
+\begin{align}
+\delta\mathcal B_\rho(h_1,h_2)
+=\frac{\kappa_H\rho}{4\kappa_{\rm p}^2}
+\left(
+\partial_\rho h_1^{AB}h_{2,AB}
+-\partial_\rho h_2^{AB}h_{1,AB}
+\right).
+\label{eq:rindler-radiative-wall-flux}
+\end{align}
+
+The leading algebraic momentum term cancels by antisymmetry, but the derivative term is nonzero at every finite wall for generic pairs. Therefore HW gauge and regularity do not themselves define a finite-$\epsilon$ Lagrangian wall polarization.
+
+On a compact boost-time interval, smoothness of $F$ and $G$ makes the integral of (\ref{eq:rindler-radiative-wall-flux}) $O(\epsilon)$. The Harlow--Wu endpoint one-form vanishes because $h_{\rho\mu}=0$, and constant-$\tau$ cuts remain orthogonal to the wall, so the Hayward boost variation also vanishes. With a declared finite-wall polarization or retained source work, no extra wall Hamiltonian survives this compact boost-time limit.
+
+The conclusion changes if the slab reaches a finite segment of a null horizon. For two future-moving profiles $h_{i,AB}=e_{AB}G_i(V)$ and an upper endpoint $\tau=\kappa_H^{-1}\log(V_*/\epsilon)$,
+
+\begin{align}
+\delta\mathcal B_\epsilon\,\mathrm d\tau
+\longrightarrow
+\frac{e^{AB}e_{AB}}{4\kappa_{\rm p}^2}
+\left(G_1'G_2-G_2'G_1\right)\mathrm dV .
+\label{eq:rindler-null-flux}
+\end{align}
+
+This is the ordinary nonzero null symplectic flux of a radiative graviton. Thus the $D\geq4$ test gives a conditional positive result only for compact boost-time collars; it falsifies any dimension-independent claim that extremality, HW gauge, and smoothness alone remove every horizon flux or boundary Hamiltonian. Appendix \ref{app:higher-dimensional-rindler} gives the action-level derivation and the precise scope.

@@ -76,17 +76,39 @@ Thus every bulk, GHY, counterterm, Harlow--Wu, Hayward, anchor, and embedding te
 
 \subsection{Linked regulators and slice covariance}\label{subsec:slice-covariance}
 
-Let $M$ be a frequency cutoff. Choose the explicit schedule
+Let $M$ be a frequency cutoff and parameterize the regulators by
 
 \begin{align}
-L=M^{10},
+L=M^\alpha,
 \qquad
-\tanh\frac\epsilon2=\frac1{2M^{10}},
+y:=\tanh\frac\epsilon2=\frac12M^{-\beta},
 \qquad
-R=M^{30}. \label{eq:linked-schedule}
+R=M^\gamma . \label{eq:linked-schedule}
 \end{align}
 
-The transition estimate (\ref{eq:transition-bound}) is then $O(M^{-14})$. The complete compensated finite-wall kernel, including the $r\sim L$ layer, is $O(M^{-13})$; the compensated Cauchy-corner mismatch is $O(M^{-34}+M^{-14})$; and the compensated outer-joint mismatch is $O(M^{-34})$. Together with the exact vanishing of the outer Brown--York source curvature, the total relative-action flux tends to zero.
+The complete list of exponents is derived in Appendix \ref{app:regulator-estimates}. Every displayed monomial tends to zero in the open region
+
+\begin{align}
+\alpha>\frac72,
+\qquad
+\beta>0,
+\qquad
+\gamma>2\alpha+3. \label{eq:formal-exponent-region}
+\end{align}
+
+The $L^4/R^2$ Cauchy-corner term is the reason for the last, stronger inequality. The exact complete finite-wall wall kernel has presently been proved uniformly on $y=1/(2L)$, not for arbitrary unrelated $y(L)$. The proved regulator class used in the theorem is therefore
+
+\begin{align}
+\alpha>\frac72,
+\qquad
+\beta=\alpha,
+\qquad
+\gamma>2\alpha+3. \label{eq:proved-exponent-region}
+\end{align}
+
+The earlier numerical choice $(\alpha,\beta,\gamma)=(10,10,30)$ is one member. It gives $O(M^{-14})$ for the transition term, $O(M^{-13})$ for the complete compensated finite wall, $O(M^{-34}+M^{-14})$ for the compensated Cauchy corner, and $O(M^{-34})$ for the compensated outer joint. The outer Brown--York source curvature vanishes exactly.
+
+This also proves schedule independence within (\ref{eq:proved-exponent-region}): the difference between two regulated forms is bounded by the sum of their two vanishing error majorants. The same triangle argument proves taper independence for any two taper families which separately satisfy the uniform transition, wall, and outer-corner estimates of Appendix \ref{app:regulator-estimates} and approach the same local kernel. It is not a claim that every smooth taper satisfies those hypotheses. Extending the complete wall majorant to an independent $\beta$ would promote (\ref{eq:formal-exponent-region}) from a monomial compatibility region to a proved two-parameter theorem.
 
 The construction is covariant under boundary time translation. For left movers, let $U_tf(\phi)=f(\phi-t)$. The endpoint, PSL, and HW sections at time $t$ are obtained by conjugation:
 
@@ -100,7 +122,7 @@ The Brown--Henneaux phases have unit modulus, so the estimates are uniform in $t
 
 \subsection{Main theorem}\label{subsec:main-theorem}
 
-\textbf{Theorem (classical finite-action subregion identity).} Let $(M,G)$ be vacuum AdS$_3$, let $A=(-a,a)$ be a boundary interval whose RT geodesic $\gamma_A$ is the bifurcation surface of the exact modular Killing field $\xi_A$, and impose Brown--Henneaux source boundary conditions. Use the finite-action CPS convention of Section \ref{sec:finite-action-cps}, the moving pullback of Section \ref{sec:moving-boundary}, and the linked regulator class (\ref{eq:linked-schedule}). Then, for each chirality and every
+\textbf{Theorem (classical finite-action subregion identity).} Let $(M,G)$ be vacuum AdS$_3$, let $A=(-a,a)$ be a boundary interval whose RT geodesic $\gamma_A$ is the bifurcation surface of the exact modular Killing field $\xi_A$, and impose Brown--Henneaux source boundary conditions. Use the finite-action CPS convention of Section \ref{sec:finite-action-cps}, the moving pullback of Section \ref{sec:moving-boundary}, and the proved linked regulator class (\ref{eq:proved-exponent-region}). Then, for each chirality and every
 
 \begin{align}
 [f]\in H^\sigma(S^1)/\mathfrak{sl}(2,\mathbb R),
@@ -120,6 +142,6 @@ the second-order charge satisfies
 +\int_{\gamma_A}\Upsilon_{\rm p}[h,V[h]]. \label{eq:main-theorem-separated}
 \end{align}
 
-Both expressions are independent of the global-Killing representative and of the transported Cauchy slice. The real Brown--Henneaux space is the orthogonal direct sum of the two chiral quotients, and the two quadratic forms add.
+Both expressions are independent of the global-Killing representative and of the transported Cauchy slice. They are also independent of an admissible ambient extension map for $V[h]$ when two extensions have the same prescribed cut data and asymptotic support and differ by a vector in $\mathfrak g_{\rm proper}$. A source-changing or charged extension is not covered by this statement. The real Brown--Henneaux space is the orthogonal direct sum of the two chiral quotients, and the two quadratic forms add.
 
 The regularity $\sigma>5/2$ is required for the separated point-anchor chart in (\ref{eq:main-theorem-separated}), where second-derivative endpoint traces occur. It is not the optimal regularity of the combined quadratic form. The theorem does not quotient the charged Virasoro modes $m\geq2$, introduce a negative-Virasoro frame, or assume an auxiliary edge cotangent sector.
