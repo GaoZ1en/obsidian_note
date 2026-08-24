@@ -2,30 +2,92 @@
 
 ## Current Direction
 
-The active programme treats an artificial cut through boundary values rather than through a large interface penalty. For each prescribed regional boundary history $q_i(t)$, the allowed variations obey $\delta\phi_i|_\Gamma=0$, and the regional symplectic form is conserved. Gluing first identifies $q_1=q_2=q$ and then allows the common $q(t)$ to vary. Stationarity of the summed action gives the oriented flux condition $\phi_1'+\phi_2'=0$.
+The active formulation is `formalism.md`. It treats an artificial cut through prescribed regional boundary histories. The regional theories are first quantized with those histories held fixed; gluing then identifies the histories, varies their common value, and derives oriented flux matching from the summed action.
 
-The quantum target is canonical rather than path-integral quantization. The interface equation determines the common boundary history from the regional operator data, while the $q=0$ relative modes must be retained separately. At finite cutoff, reconstruct the glued field, extract reduced canonical coordinates, and verify their symplectic map to the same global regulator before applying the metaplectic/CCR construction. The boundary value $q$ is not to be quantized as an additional independent oscillator. A continuum Fock-space statement requires a separate high-frequency or Shale--Stinespring analysis.
+The quantum construction is canonical. At finite cutoff it uses one common conforming Galerkin regulator, retains every port and Ritz variable, reconstructs the glued field, and defines the glued canonical coordinates by projection onto its normalized modes. The finite port pair is part of this regulator, whereas in the continuum the boundary value is the trace of the connected field rather than an additional point oscillator.
+
+The centered construction, its finite truncation, the feedback equation, and the canonical normal-mode map now belong to `formalism.md`; they are not split among separate active bridge or normal-form notes. The remaining active notes either prove a genuinely separate theorem or isolate a separate optional comparison.
 
 ## Active Files
 
-- `formalism.md`: scalar boundary-driven prototype, connected spectrum, and canonical quantum-gluing ansatz.
-- `numerics/natural_method_feedback_spectrum.wl`: finite-cutoff Dirichlet-to-Neumann feedback and Galerkin checks.
-- `numerics/README.md`: verification scope for the active numerical calculation.
-- `TODO.md`: immediate classical and quantum tasks.
+- `formalism.md`: authoritative scalar construction, from the regional actions and prescribed histories through gluing, spectrum recovery, finite port quantization, and continuum statement.
+- `gluing formalism.md`: final general boundary-polarized manuscript, covering relation-level classical reconstruction, Proca/Dirac model validation, finite duplicate-port reduction, and its declared continuum free-scalar algebra, dynamics, and state limits. It complements rather than replaces the scalar-authoritative `formalism.md`.
+- `lifting operator formalism.md`: companion rewriting of the nonhomogeneous-boundary construction using trace maps and lifting operators, including field-valued interface histories and its interval specialization.
+- `DN boundary condition.md`: one-region Dirichlet-to-Neumann prototype illustrating the same prescribe-first, release-second logic.
+- `functional analysis proof of well-definedness of finite truncation.md`: proof of form density, Mosco and resolvent convergence, energy-space wave and trace convergence, weak flux matching, and intrinsic spatially smeared Gaussian convergence.
+- `non-central cut.md`: quantize-first construction for an arbitrary single cut, including the unequal-length finite port regulator and continuum cut-position independence.
+- `associativity.md`: parenthesization independence for a fixed three-region partition, derived from independent endpoint histories and a common two-port regulator.
+- `Fock failure.md`: optional comparison with a declared sharp tensor product of strict-Dirichlet regional Fock representations. It is not needed for intrinsic canonical gluing.
+- `Maxwell 1+1.md`: exact compact-\(U(1)\) regional quantum mechanics, interface constraint, and connected integer spectrum on a cut interval.
+- `Maxwell 2+1 cylinder.md`: complete angular-momentum decomposition, prescribed-history regional oscillators, gluing equations, and connected vector modes on a flat cylinder.
+- `Maxwell 3+1 slab.md`: complete transverse, longitudinal-normal, and zero-transverse-momentum modes on a flat slab times \(T^2\).
+- `roadmap.md`: long-range scalar, algebraic, gauge-theory, and gravity programme, including the layered specification and kill criteria.
+- `TODO.md`: ordered unfinished work following the roadmap phases.
+- `numerics/README.md`: scope and status of the active regression scripts.
+
+## Logical Structure
+
+The active scalar line is
+
+$$\begin{align}
+\text{regional actions with prescribed histories}
+&\longrightarrow \text{regional quantization}\\
+&\longrightarrow \text{identify histories and vary the common trace}\\
+&\longrightarrow \text{finite conforming port system}\\
+&\longrightarrow \text{reconstructed glued canonical variables}\\
+&\longrightarrow \text{continuum energy-space limit}.
+\end{align}$$
+
+Three statements remain separate:
+
+1. `non-central cut.md` proves independence of the position of one artificial cut.
+2. `associativity.md` proves independence of the order of gluing a fixed finite partition.
+3. `Fock failure.md` diagnoses a separately declared sharp product-Fock representation; it is not a condition for either of the first two statements.
+
+The three Maxwell notes use the same order but solve Gauss law before quantization. The \(1+1\) model reduces to one periodic coordinate and integer momentum. In \(2+1\) and \(3+1\), each transverse Fourier momentum is decomposed into explicit divergence-free regional modes; gluing the prescribed tangential potentials and varying their common values recovers the normalized connected modes.
 
 ## Roadmap
 
-- Near term: close the interval-scalar construction by deriving the reduced canonical variables at finite cutoff, quantizing the resulting symplectic map, and testing its continuum limit.
-- Next solvable scalar model: place the scalar on $[-L,L]\times S^1_R$ and cut at $x=0$. The interface value becomes $q(t,\theta)$, while Fourier decomposition along $S^1_R$ keeps each channel analytically controllable.
-- Medium term: study Maxwell theory first in $1+1$ dimensions as a pure Gauss-law and electric-flux test, and then on the cut cylinder where local photon modes and interface gauge data coexist.
-- Long term: revisit AdS--Rindler wedge quantization and global reconstruction. The left and right Lorentzian exteriors do not by themselves cover the future and past regions, so the construction must use matched global Cauchy data, a suitable timelike cut, or a regulated horizon prescription rather than assuming direct pointwise horizon gluing.
+The long-range plan is in roadmap.md. Its organizing decisions are: keep the scalar benchmark's physical outer Dirichlet condition fixed while parameterizing artificial-cut data only as needed; separate Euclidean elliptic gravity from Lorentzian hyperbolic timelike initial-boundary-value problems; distinguish algebra fusion from sector Connes fusion in a specified collar or defect model; and treat the identification of an operator-valued boundary history with a crossed product as a conditional theorem target.
+
+The phases are a scalar and algebraic core, then gauge theory and corners, then gravity. TODO.md follows that phase structure and carries the immediate tasks and kill criteria.
+
+## Archived Work
+
+`archived/` contains calculations from the current boundary-history/canonical formalism whose conclusions have been absorbed elsewhere:
+
+- `formalism_audit.md`: historical regulator audit;
+- `feedback-port-canonical-bridge.md`: detailed feedback/port equivalence and finite CCR expansion now covered by `formalism.md`;
+- `higher-dimensional-sharp-fock-comparison.md`: nonessential channelwise extension of the optional sharp-Fock diagnostic.
+
+These files are supporting history rather than current claim authorities.
+
+The top-level development snapshots are preserved outside the active subtree in `Attachments/gluing-formalism-mementos-20260823-232342/`. They are mementos, not current claim authorities.
 
 ## Deprecated Work
 
-The previous finite-coupling, penalty-interpolation, lattice, curved-space, Maxwell, Chern--Simons, AdS--Rindler, article, and associated numerical tracks are preserved under `deprecated/`. They remain historical calculations and comparison material, but they are no longer the active formulation of the gluing project. The future Maxwell and AdS--Rindler tasks may reuse verified calculations from this directory without reinstating the deprecated conceptual framework.
+`deprecated/` preserves alternative formalisms, abandoned regulator or representation routes, and displaced standalone derivations. This includes the penalty, lattice, smearing, collar, smooth-interface, earlier Fock-diagnostic, gauge, AdS--Rindler, and stacky/CPS branches. The former standalone `port-canonical-normal-form.md` is also kept there; its active content has been absorbed into `formalism.md`.
+
+Verified calculations in deprecated files may still be used as historical checks, but they do not define the present gluing construction.
 
 ## Claim Boundary
 
-Verified so far: recovery of the connected scalar spectrum, exact finite-cutoff even tower in the feedback regulator, and fixed-window convergence of the affected tower.
+Verified in the active centered scalar line:
 
-Not yet verified: the reduced canonical commutators after solving for the common boundary history, finite-cutoff metaplectic equivalence, the continuum Fock-space limit, the higher-dimensional scalar extension, Maxwell gluing, or AdS--Rindler global reconstruction.
+- recovery of the complete connected spectrum, including the exceptional zero-interface sector;
+- the variational finite port equation and nondegenerate finite canonical system;
+- the reconstructed finite-$N$ canonical normal-mode algebra;
+- form, resolvent, energy-space wave, interface-trace, symplectic, and spatially smeared Gaussian convergence;
+- arbitrary-cut spectrum recovery and continuum cut-position independence;
+- action-level, finite-regulator canonical, and continuum associativity for every fixed finite partition;
+- for the optional declared sharp regional product reference, a fixed-row proof that the continuum creation block is not Hilbert--Schmidt.
+
+Numerical regressions additionally reproduce the centered spectrum, Galerkin ordering and conditioning, residual port inertia, canonical identities, continuum mode restrictions, arbitrary-cut formulas, associativity identities, and the optional fixed-row ultraviolet diagnostic. Numerical rates and covariance asymptotics remain observations unless separately proved.
+
+Verified in the flat free-Maxwell line: the full \(1+1\) constraint reduction and connected integer spectrum; the regional driven oscillators in \(2+1\) and \(3+1\); the transverse and longitudinal-normal interface determinants; and the complete normalized connected vector-mode bases under the stated physical-wall conditions.
+
+Finite-dimensional canonical equivalence does not imply continuum product-Fock equivalence. Conversely, failure of the optional sharp product-Fock comparison does not obstruct the intrinsic connected quantization.
+
+The continuum target is not a unitary limit of sharp regional product-Fock representations. It is the intrinsic connected physical operator and energy dynamics, the Weyl algebra, and the spatially smeared quasifree state; once the limiting positive-frequency structure is fixed, its GNS representation supplies the connected Fock construction. This is the target for the Maxwell regulators as well as the scalar regulator.
+
+Not yet verified: a universal or cut-uniform scalar Galerkin convergence rate, lifting independence at finite cutoff, an unsmeared point-field covariance, cutoff-uniform form, energy-dynamics, and spatially smeared quasifree-state convergence of the Maxwell physical regulators after gauge reduction, Maxwell theory with charged matter or nontrivial bundles, the continuous-spectrum exterior problem, the proposed operator-algebraic or crossed-product interpretation, or AdS--Rindler global reconstruction.

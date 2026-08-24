@@ -24,15 +24,18 @@
 (*  Route B (Galerkin truncation of Sec. 9's recovered global            *)
 (*      variational problem): promote q to a coordinate and diagonalize  *)
 (*      K_N v = omega^2 G_N v.  The 2N low modes converge to the global  *)
-(*      tower (odd tower faster, O(N^-3)); one extra "port" mode grows   *)
-(*      linearly with N and has no continuum counterpart.                *)
+(*      tower (odd tower faster, O(N^-3)); the pencil has 2N+1 Ritz       *)
+(*      values, all upper bounds for the first 2N+1 global squared        *)
+(*      frequencies, and the top one is a band-top overestimate of        *)
+(*      Omega_{2N+1} that grows with the cutoff as in any Galerkin        *)
+(*      scheme.  See ../formalism_audit.md Section 5.                     *)
 (*                                                                       *)
 (*  Checks:                                                              *)
 (*   (1) even tower exact at every N >= n (residual < 10^-30);           *)
 (*   (2) odd tower converges: Route A errors match the hard-constraint   *)
 (*       kappa->Infinity table in deprecated/continuous theory I (O(1/N));*)
 (*   (3) D_N -> k cot(kL) pointwise;                                     *)
-(*   (4) Route B spurious port mode diverges, 2N modes track the tower.  *)
+(*   (4) Route B top Ritz value grows with N, 2N modes track the tower.  *)
 (* ===================================================================== *)
 
 ClearAll["Global`*"];
@@ -180,7 +183,7 @@ Print[" pole/zero count check (N=8): ",
 (* ==================================================================== *)
 Print["--------------------------------------------------------------------"];
 Print[" Route B (Galerkin connected variational problem):"];
-Print[" columns: {N, odd max rel err, even max rel err, max (spurious) freq}"];
+Print[" columns: {N, odd max rel err, even max rel err, max Ritz value}"];
 routeBTable =
   Table[{nn, towerErrors[spectrumGalerkin[nn, 40]],
     Last[spectrumGalerkin[nn, 40]]}, {nn, nList}];
@@ -193,9 +196,9 @@ routeBComputedOdd = routeBTable[[All, 2, 1]];
 routeBEvenMax = Max[routeBTable[[All, 2, 2]]];
 routeBResidual = Max[Abs[routeBComputedOdd - routeBExpectedOdd]];
 
-(* Route B spurious port mode grows linearly with N:                     *)
-(* last frequency has no continuum counterpart.                          *)
-spuriousGrows =
+(* Route B top Ritz value grows with the cutoff, as in any                     *)
+(* Galerkin scheme; it is not a mode without a counterpart.                          *)
+topRitzGrows =
   And @@ Thread[Most[routeBTable[[All, 3]]] < Rest[routeBTable[[All, 3]]]];
 
 (* ==================================================================== *)
@@ -261,12 +264,12 @@ Print[" Route B odd-tower residual vs stored benchmark = ",
   N[routeBResidual, 6]];
 Print[" Route B max even-tower error (should be ~0) = ",
   N[routeBEvenMax, 4]];
-Print[" spurious Route B mode increases with N = ", spuriousGrows];
+Print[" Route B top Ritz value increases with N = ", topRitzGrows];
 
 If[! TrueQ[identityCheck] || routeAResidual > 10^-8 ||
   routeAEvenMax > 10^-8 || routeBResidual > 10^-8 ||
   routeBEvenMax > 10^-8 || ! TrueQ[evenTowerExact] ||
-  ! TrueQ[spuriousGrows],
+  ! TrueQ[topRitzGrows],
   Print["ERROR: boundary-driven feedback benchmark failed."];
   Exit[1];
   ];
