@@ -452,6 +452,35 @@ collar pullback/continuity question by exact sectorwise degeneracy.
   H59--H61 later discharge the regulator/section hypotheses on the declared
   linear Brown--Henneaux quotient. A universal fixed-wall polarization for
   arbitrary smooth nonlinear horizon data is not claimed.
+
+## Review hardening (2026-08-24)
+
+- [x] State the complete-action partial-slice flux law and list source,
+  polarization, joint, and limiting assumptions before claiming slice
+  independence.
+- [x] Restrict every moving-embedding presymplectic degeneracy to proper,
+  source-preserving, zero-charge vectors; retain Brown--Henneaux large
+  diffeomorphisms as physical tangent directions.
+- [x] Separate the general extended presymplectic pullback from the narrower
+  existence of an integrable Hamiltonian wall polarization.
+- [x] Replace standalone invariance claims for $\Upsilon_{\rm p}$ by its
+  section-change law and assert invariance only for
+  $E_{\rm can,p}+\int\Upsilon_{\rm p}$.
+- [x] Derive the monomial exponent region
+  $\alpha>7/2$, $\beta>0$, $\gamma>2\alpha+3$, and prove schedule/taper
+  independence inside the uniform-majorant class.  Retain the actually proved
+  complete-wall slice $\beta=\alpha$.
+- [x] Prove ambient-extension independence for equal cut jets and asymptotic
+  support when the extension difference is proper and zero charge.
+- [x] Add and symbolically check a $d>2$ local-Rindler radiative graviton with
+  Einstein--GHY brick-wall data.  Record the surviving null-horizon flux as a
+  negative result for automatic fluxlessness.
+- [ ] Prove the complete wall majorant uniformly for independent $yL$, which
+  is needed to promote arbitrary $\beta>0$ from a compatibility region to a
+  two-parameter regulator theorem.
+- [ ] Repeat the radiative test in exact AdS-Rindler with a common
+  regulator-dependent polarization and classify the boundary data that make
+  the full null-horizon flux vanish.
 - [ ] Relate the classical finite-action identity to an operator-algebraic
   JLMS or crossed-product statement only after the corresponding algebras and
   reconstruction map have been constructed independently.

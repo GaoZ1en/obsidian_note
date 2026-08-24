@@ -3135,6 +3135,198 @@ normalization.
 **Not verified:** matter, quantum modular operators, crossed products, or
 quantum JLMS; none is part of this classical goal.
 
+### H63 — Uniform regulator exponents and admissible taper class
+
+**Statement:** parameterize the diagonal regulator by
+
+$$
+L=M^\alpha,
+\qquad
+y:=\tanh\frac\epsilon2=\frac12M^{-\beta},
+\qquad
+R=M^\gamma .
+$$
+
+After the mode-block sum, the conservative error exponents are
+
+$$
+\begin{array}{c|c}
+\text{sector} & \text{power of }M\\ \hline
+\text{transition} & 6-2\alpha\\
+\text{complete compensated wall} & 7-2\alpha\\
+\text{far wall }yL^{-5} & 7-\beta-5\alpha\\
+\text{far wall }L^{-6} & 7-6\alpha\\
+\text{raw far joint} & 6-\beta-5\gamma\\
+\text{raw outer corner} & 6-6\gamma\\
+\text{compensated corner }L^2/R^2 & 6+2\alpha-2\gamma\\
+\text{compensated corner }L^4/R^2 & 6+4\alpha-2\gamma\\
+\text{compensated joint} & 6+2\alpha-2\gamma .
+\end{array}
+$$
+
+For positive exponents, all nine powers are negative exactly when
+
+$$
+\alpha>\frac72,
+\qquad
+\beta>0,
+\qquad
+\gamma>2\alpha+3.
+$$
+
+The exact complete-wall kernel has presently been proved on
+$y=1/(2L)$, so the regulator theorem uses the open slice
+
+$$
+\alpha>\frac72,
+\qquad
+\beta=\alpha,
+\qquad
+\gamma>2\alpha+3.
+$$
+
+Within that slice, any two schedules satisfying the same uniform majorants
+converge to the same form by the triangle inequality.  The same argument
+proves taper independence for taper families that separately obey those
+majorants and approach the same local kernel.
+
+**Status:** exact exponent audit and proved schedule/taper independence
+inside the declared analytic-majorant class.  The larger region with
+independent $\beta$ is a monomial compatibility region, not yet a complete
+wall theorem.  The former condition $\gamma>\alpha+3$ is insufficient once
+the exact $L^4/R^2$ corner term is retained.
+
+**Evidence:** ads_rindler_explicit_schedule_check.wl passes $12/12$ exact
+tests.  Mathematica proves both implications between negativity of all nine
+exponents and the displayed open region, verifies the proved
+$\beta=\alpha$ slice, checks $(\alpha,\beta,\gamma)=(10,10,30)$, and gives
+$(\alpha,\beta,\gamma)=(4,4,8)$ as a counterexample to the older outer-scale
+condition.  The updated ads_rindler_transition_uniform_majorant_check.wl
+passes $8/8$ tests with the same independent sector inventory; it no longer
+counts the withdrawn finite-wall anchor shift or the old degree-seven
+outer-joint placeholder.
+
+**Assumptions:** the uniform rational-kernel estimates H49--H50 and
+H59a--H59c; the mode-block convention used in Appendix C; positive regulator
+exponents; and taper families satisfying the stated common majorants.
+
+**Not verified:** a complete wall estimate uniform in an independent $yL$,
+or membership of every smooth taper in the analytic-majorant class.
+
+### H64 — Ambient-extension independence of the completed section
+
+**Statement:** let $R_0,R_1$ extend the same Jacobi normal displacement and
+satisfy $VR_i=-1$.  If they have the same prescribed cut jets and asymptotic
+support and
+
+$$
+w[h]=(R_1-R_0)V[h]\in\mathfrak g_{\rm proper},
+$$
+
+then
+
+$$
+(P_1h,-R_1V[h])-(P_0h,-R_0V[h])
+=(\mathcal L_{w[h]}G,-w[h]),
+$$
+
+and both complete tangents obey
+
+$$
+\Delta_Xg(P_i h,-R_iV[h])=h.
+$$
+
+Thus every sector of the pulled-back finite action is identical.  In the
+metric-only chart the cocycle composition law gives
+
+$$
+E_{{\rm can,p}}[P_0h]
++\int_\gamma\Upsilon_{{\rm p},R_0}[P_0h,-R_0V[h]]
+=
+E_{{\rm can,p}}[P_1h]
++\int_\gamma\Upsilon_{{\rm p},R_1}[P_1h,-R_1V[h]].
+$$
+
+The two cocycles and the two raw canonical energies need not agree
+separately.
+
+**Status:** exact extended-tangent proof plus a finite-dimensional algebraic
+regression.  Independence is conditional on the extension difference being
+proper, source preserving, and zero charge.
+
+**Evidence:** ambient_extension_independence_check.wl passes $9/9$ exact
+tests for two normalized right inverses, their projectors, the common
+pulled-back metric, the residual proper change, and the completed quadratic
+energy.
+
+**Assumptions:** equal cut jets; equal asymptotic support; preservation of the
+declared wall and joint conditions; and vanishing asymptotic and horizon
+Hamiltonians for $w$.
+
+**Not verified:** independence under a source-changing, frame-changing, or
+charged extension.  Such a change is a large boundary transformation and its
+finite-action charge must be retained.
+
+### H65 — Propagating-graviton local-Rindler flux diagnostic
+
+**Statement:** in $D=4$ flat Rindler space, per unit transverse area, take
+
+$$
+h_{xx}=\psi,\qquad h_{yy}=-\psi,
+\qquad
+\psi=F(-\rho e^{-\kappa_H\tau})+G(\rho e^{\kappa_H\tau}).
+$$
+
+This is a transverse-traceless radiative solution already satisfying the
+fixed-surface extremal/HW normal conditions.  Einstein--GHY at the inner wall
+with outward normal $-\partial_\rho$ gives
+
+$$
+\delta\Pi^{AB}
+=-\frac{\kappa_H}{\kappa_{\rm p}^2}
+\left(h^{AB}+\frac\rho2\partial_\rho h^{AB}\right),
+$$
+
+and
+
+$$
+\delta\mathcal B_\rho(h_1,h_2)
+=\frac{\kappa_H\rho}{4\kappa_{\rm p}^2}
+\left(\partial_\rho h_1^{AB}h_{2,AB}
+-\partial_\rho h_2^{AB}h_{1,AB}\right).
+$$
+
+The integrated curvature is $O(\rho)$ on a compact boost-time slab.  On a
+slab reaching a fixed future-null cut $V=\rho e^{\kappa_H\tau}$, however,
+
+$$
+\delta\mathcal B_\rho\,d\tau
+\longrightarrow
+\frac{e^{AB}e_{AB}}{4\kappa_{\rm p}^2}
+(G_1'G_2-G_2'G_1)\,dV,
+$$
+
+which is finite and generically nonzero.
+
+**Status:** exact local radiative counterexample to the claim that
+extremal/HW gauge plus regularity automatically supplies a horizon
+polarization or kills all limiting flux.  It is a diagnostic, not a
+higher-dimensional extension of the AdS$_3$ theorem.
+
+**Evidence:** local_rindler_radiative_graviton_check.wl passes $10/10$
+tests.  xAct/xCoba verifies the Ricci-flat background, wave equation,
+Einstein--GHY momentum, vanishing first wall source, the $O(\rho)$ wall
+Wronskian, radial-gauge/Harlow--Wu zero, transverse trace zero, and the finite
+future-null flux.
+
+**Assumptions:** Einstein gravity with GHY term; a local flat Rindler collar;
+bounded profiles for the compact-boost limit; one constant transverse
+polarization; and no additional horizon boundary dynamics.
+
+**Not verified:** an exact AdS-Rindler propagating mode, a common
+regulator-dependent polarization for all radiative data, nonlinear
+backreaction, or any quantum JLMS/generalized-entropy statement.
+
 ## Current verification summary
 
 Verified: the inherited outer finite-action CPS identities; the componentwise
@@ -3149,7 +3341,9 @@ abstract moving first variation and action-derived embedding momentum; the
 PSL reducibility section and full Brown--Henneaux metric quotient; and the
 positive Bañados canonical-energy form with exact
 $\mathfrak{sl}(2,\mathbb R)$ kernel and optimal ordinary $H^2$ continuity
-threshold.
+threshold; the H63 exponent region and majorant-class schedule independence;
+the H64 admissible ambient-extension theorem; and the H65 local-Rindler
+radiative flux diagnostic.
 
 Assumptions: outward-normal convention on every timelike component; exact background Killing field for $X_\xi$; compatible embeddings and induced joint orientations; vacuum Einstein gravity for the dressed identity; vanishing source terms or an integrable Brown--York polarization in the selected sectors; and H0--H6 for the general conditional fixed-embedding implication.
 
@@ -3162,7 +3356,9 @@ outside the declared goal. H51--H61 construct the adapted spectral domain,
 field-dependent HW cocycle, action-derived moving-edge descent, complete
 regulator limit, total-flux theorem, and the PSL extension to the full metric
 quotient for $\sigma>5/2$. H62 gives the positive combined-form closure to
-$H^2$. The auxiliary endpoint/edge cancellations are not used as physical
+$H^2$. H63--H65 add regulator, extension-map, and propagating-radiation
+diagnostics without enlarging the AdS$_3$ theorem. The auxiliary
+endpoint/edge cancellations are not used as physical
 canonical pairs in that theorem.
 
 Completion audit (2026-08-12): all $16$ standalone Wolfram/xAct scripts in
@@ -3373,3 +3569,19 @@ respectively $15/15$, $10/10$, $20/20$, $8/8$, $7/7$, $8/8$, $6/6$,
 $7/7$, $7/7$, and $4/4$.  The default $P_A$ point/structure checks remained
 $2/2$ and $7/7$ after adding the PSL option.  No failing mathematical
 regression was suppressed or replaced by a numerical sample.
+
+Review hardening recertification (2026-08-24): ten directly relevant
+Wolfram/xAct regressions were run serially and passed $84/84$ tests:
+explicit exponents $12/12$, ambient extension $9/9$, local-Rindler radiation
+$10/10$, bifurcation Noether/area $8/8$, finite-action gauge cocycle $4/4$,
+field-dependent HW cocycle $6/6$, weak HW pullback $7/7$, transition
+majorant $8/8$, complete raw wall point jet $10/10$, and complete
+compensated outer-joint mismatch $10/10$.  The two complete kernel scripts
+were rebuilt from source in fresh serial kernels.  The local-Rindler script
+initially reported $9/10$ only because xAct returned its scalar Zero object
+for the Ricci tensor rather than a $4\times4$ array; accepting both exact-zero
+representations gave the clean $10/10$ rerun without changing a formula.
+This focused $84/84$ count is not a new all-71-script project
+recertification.  Pandoc rebuilt all thirteen article fragments, TeX Live
+compiled a warning-free 37-page PDF, and visual inspection caught and fixed
+the regulator-table labels before the final build.

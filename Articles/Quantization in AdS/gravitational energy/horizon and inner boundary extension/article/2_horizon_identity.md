@@ -32,13 +32,15 @@ $$\begin{align}
 \int_\gamma\sqrt q\,p_{kk}p_{ll}. \label{eq:fixed-surface-obstruction}
 \end{align}$$
 
-The second-order coefficient $r$ cancels from the difference.  Hence the fixed-surface Noether charge equals the fixed-surface area through second order in a Hollands--Wald normal-plane representative satisfying
+The second-order coefficient $r$ cancels from the difference.  Hence, for a smooth two-sided perturbation, a fixed surface, the displayed unit-binormal convention, and an exact background Killing field, the fixed-surface Noether charge equals the fixed-surface area through second order in a Hollands--Wald normal-plane representative satisfying
 
 $$\begin{align}
 h_{kk}|_\gamma=h_{ll}|_\gamma=0. \label{eq:hw-normal}
 \end{align}$$
 
 Equation (\ref{eq:fixed-surface-obstruction}) is the project-convention version of the local obstruction found in the graviton generalized-entropy analysis of Ref. \cite{ColinEllerin:2025gravitons}.  It also explains why one cannot identify an arbitrary fixed-coordinate Noether cut with the quadratic area without specifying the normal-plane gauge.
+
+This is a second-order statement.  Hollands--Wald gauge is not being used as an all-orders theorem equating a Noether charge with area, and neither smooth extremality nor the gauge condition removes an independent boundary flux in a radiative phase space.
 
 ### Moving extremal surfaces
 
@@ -146,6 +148,17 @@ $$\begin{align}
 
 The sign map changes the separated representatives, not the gauge-invariant combination.
 
+More explicitly, under a further proper section change $h\mapsto h+\mathcal L_wG$ and $v\mapsto v-w$, the integrated cocycle changes by
+
+$$\begin{align}
+\int_\gamma\Upsilon_{\rm p}[h+\mathcal L_wG,v-w]
+-\int_\gamma\Upsilon_{\rm p}[h,v]
+=E_{{\rm can,p}}[h]-E_{{\rm can,p}}[h+\mathcal L_wG].
+\label{eq:upsilon-section-law}
+\end{align}$$
+
+Thus $\Upsilon_{\rm p}$ is section dependent; only (\ref{eq:completed-energy}) is invariant.  If $w$ changes the asymptotic sources or frame, or carries a nonzero boundary Hamiltonian, it is not a proper section change and (\ref{eq:upsilon-section-law}) must retain that charge.
+
 ### Conditional finite-cutoff implication
 
 The preceding identities give a useful general statement.  Suppose a differentiable regulator family has: (i) a common topology and fixed orientation convention; (ii) an integrable or source-retaining wall polarization; (iii) two-sided smoothness at the limiting bifurcation surface; (iv) controlled joints and embedding variations; (v) a wall-to-corner transgression; (vi) vacuum Einstein dynamics and Brown--Henneaux asymptotics; and (vii) a proper Hollands--Wald representative.  If the total regulator flux in (\ref{eq:outer-minus-inner}) vanishes, then
@@ -157,4 +170,4 @@ $$\begin{align}
 +E_{{\rm can,p}}^{\rm GI}[h]. \label{eq:conditional-horizon-identity}
 \end{align}$$
 
-This statement is conditional for a generic horizon phase space.  Sections \ref{sec:benchmarks}--\ref{sec:brown-henneaux-theorem} verify its hypotheses for the linear vacuum Brown--Henneaux sector in AdS$_3$.
+This statement is conditional for a generic horizon phase space.  Sections \ref{sec:benchmarks}--\ref{sec:brown-henneaux-theorem} verify its hypotheses for the linear vacuum Brown--Henneaux sector in AdS$_3$.  The higher-dimensional local-Rindler test below shows that smooth extremal gauge alone does not verify hypothesis (ii) or the vanishing-flux premise for a general radiative slab.

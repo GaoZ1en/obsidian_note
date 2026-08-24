@@ -68,7 +68,10 @@ The final draft should derive, with fixed orientations and boundary conditions:
    completion, and extension to the full metric tangent quotient by a global-
    Killing PSL section. The selected-mode raw anchor pole was withdrawn after
    correcting the real phase; the distinct unprojected transition pole is a
-   generator-representative artifact rather than a physical endpoint anomaly.
+   generator-representative artifact rather than a physical endpoint anomaly;
+8. a separate propagating-graviton diagnostic in a $d>2$ local Rindler collar,
+   derived from Einstein--GHY at a brick wall, which states exactly when the
+   wall flux vanishes and when a finite null-horizon flux survives.
 
 ## Claim ladder
 
@@ -81,15 +84,20 @@ The project keeps the following claim levels separate:
 - Level 5: an action-derived, slice-covariant JLMS-type classical identity on
   the full linear Brown--Henneaux metric quotient, with positive combined
   canonical energy and its optimal ordinary $H^2$ continuity threshold.
+- Diagnostic branch, not a new theorem level: a $d>2$ radiative local-Rindler
+  mode with complete Einstein--GHY wall data. It tests, but does not extend,
+  the AdS$_3$ theorem.
 
-No level implies a general crossed-product construction, a nonperturbative subregion algebra, or a theorem for arbitrary dimensions or higher-derivative gravity.
+No level implies a general crossed-product construction, a nonperturbative
+subregion algebra, quantum JLMS/generalized entropy, or a theorem for
+arbitrary dimensions or higher-derivative gravity.
 
 ## Files
 
 - `article/`: publication-style manuscript assembled from the completed
   project.  It follows the same Markdown-to-TeX template as `../article/`,
-  contains the full classical theorem, four technical appendices, a compiled
-  28-page PDF, and leaves only authorship/affiliations and acknowledgments as
+  contains the full classical theorem, five technical appendices, a compiled
+  PDF, and leaves only authorship/affiliations and acknowledgments as
   placeholders;
 - `draft.md`: the clean derivation intended to become the final project draft;
 - `expanded formulas.md`: explicit action, boundary, joint, symplectic, and charge coefficients as they are derived;
@@ -193,8 +201,15 @@ No level implies a general crossed-product construction, a nonperturbative subre
   Brown--Henneaux central-charge normalization, positive Hessian density,
   selected mode energies, and $H^2$ noncoercivity scaling;
 - `ads_rindler_explicit_schedule_check.wl`: exact exponent audit for the
-  explicit $(L,\epsilon,R)=(M^{10},M^{-10},M^{30})$ schedule and the sharp
+  explicit $(L,y,R)=(M^{10},\tfrac12M^{-10},M^{30})$ schedule, the symbolic
+  region $\alpha>7/2$, $\beta>0$, $\gamma>2\alpha+3$, and the sharp
   second-derivative trace threshold;
+- `ambient_extension_independence_check.wl`: exact right-inverse/projector
+  algebra and completed-energy independence for proper, zero-charge changes
+  of the ambient extension of the HW normal displacement;
+- `local_rindler_radiative_graviton_check.wl`: xAct/xCoba check of a $d=4$
+  transverse-traceless Rindler graviton, its Einstein--GHY wall momentum,
+  compact-boost $O(\rho)$ wall curvature, and finite future-null flux;
 - `ads_rindler_time_covariant_anchor_check.wl`: exact time-translation,
   conjugated projection, endpoint trace, and anomaly covariance algebra;
 - `ads_rindler_proper_completion_scaling_check.wl`: exact RT switching
@@ -295,8 +310,19 @@ H^\sigma(S^1)/\mathfrak{sl}(2,\mathbb R),
 $$
 
 per chirality, with the two real chiral quotients combined by an orthogonal
-direct sum. The theorem uses the linked regulator class
-$\tanh(\epsilon/2)=1/(2L)$. The earlier claim that nonzero endpoint values
+direct sum. The theorem uses
+
+$$
+L=M^\alpha,
+\qquad \tanh(\epsilon/2)=\frac12M^{-\alpha},
+\qquad R=M^\gamma,
+\qquad \alpha>\frac72,
+\qquad \gamma>2\alpha+3.
+$$
+
+The larger monomial compatibility region with an independent wall exponent is
+$\alpha>7/2$, $\beta>0$, $\gamma>2\alpha+3$, but the complete wall majorant
+has only been proved on $\beta=\alpha$. The earlier claim that nonzero endpoint values
 require a physical moving-anchor fibration or a negative-Virasoro boundary
 frame is withdrawn. Frequency-zero/one complements are exact global AdS
 Killing vectors. The bounded section $P_{\rm PSL}$ fixes both endpoints
@@ -428,3 +454,26 @@ with the positive Bañados Hessian and proves the optimal ordinary $H^2$
 upper-bound threshold together with noncoercivity.
 Current regression
 counts are recorded in the audit response and formula ledger.
+
+## Review hardening (2026-08-24)
+
+The publication source now begins from the complete finite action and states
+the boundary source/polarization conditions needed to turn the partial-slice
+Stokes identity into slice independence.  Extended presymplectic degeneracy
+is restricted to proper, source-preserving, zero-charge vectors; charged
+Brown--Henneaux asymptotic diffeomorphisms are not quotiented.  The moving-
+embedding pullback is kept separate from the additional existence problem for
+a Hamiltonian wall polarization.
+
+The HW ambient extension is independent only within the admissible class:
+two extensions must have the same cut jets and asymptotic support and differ
+by a proper zero-charge vector.  The cocycle $\Upsilon_{\rm p}$ changes with
+that section; only $E_{\rm can,p}+\int\Upsilon_{\rm p}$ is independent.
+
+Finally, the new $d>2$ local-Rindler appendix is a radiative diagnostic, not a
+higher-dimensional theorem.  A transverse-traceless graviton has wall
+curvature $O(\rho)$ on a fixed compact boost-time slab, but a slab reaching a
+separated future-horizon cut has a finite null Wronskian flux.  Extremal/HW
+gauge and radial regularity therefore do not by themselves remove the
+horizon flux or an associated Hamiltonian term.  An exact AdS-Rindler
+propagating-mode theorem with a common limiting polarization remains open.

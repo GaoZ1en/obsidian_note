@@ -224,3 +224,66 @@ global AdS Killing fields and leaves $h$ unchanged. The point-jet theorem
 then applies to the complete metric tangent quotient; no physical anchor pair
 or negative-Virasoro frame is required. The raw finite-$R$ pole belongs to
 the unfixed generator representative.
+
+## Review branch: higher-dimensional radiative collar
+
+The $d>2$ extension is deliberately split from the AdS$_3$ theorem.  In the
+local Rindler metric
+
+$$
+ds^2=-\kappa^2\rho^2d\tau^2+d\rho^2+dx^2+dy^2,
+$$
+
+take the transverse-traceless plus mode
+
+$$
+h_{xx}=\psi,
+\qquad h_{yy}=-\psi,
+\qquad
+\psi=F(-\rho e^{-\kappa\tau})+G(\rho e^{\kappa\tau}).
+$$
+
+For the inner outward normal $-\partial_\rho$, Einstein--GHY gives the exact
+linear wall momentum and the antisymmetric source curvature recorded in
+Appendix E.  The latter is $O(\rho)$ at fixed compact boost time, yet after
+$V=\rho e^{\kappa\tau}$ is held fixed it approaches
+
+$$
+\frac{G_2(V)G_1'(V)-G_1(V)G_2'(V)}{2\kappa_{\rm p}^2}\,dV.
+$$
+
+Therefore radial/HW gauge plus smoothness at the bifurcation surface is not a
+sufficient polarization statement.  The next serious branch is to formulate
+one common exact AdS-Rindler phase space and decide among three possibilities:
+
+1. impose characteristic data for which this Wronskian vanishes;
+2. retain the nonzero flux and its horizon Hamiltonian;
+3. add genuine boundary dynamics whose symplectic form absorbs the flux.
+
+No option is selected in the current manuscript.  In particular, this local
+calculation is not evidence for quantum JLMS or generalized entropy.
+
+## Review branch: independent wall exponent
+
+Writing
+
+$$
+L=M^\alpha,
+\qquad y=\frac12M^{-\beta},
+\qquad R=M^\gamma
+$$
+
+makes every presently identified regulator monomial decay precisely in the
+compatibility region
+
+$$
+\alpha>\frac72,
+\qquad \beta>0,
+\qquad \gamma>2\alpha+3.
+$$
+
+The finite-wall rational-kernel proof still uses $y=1/(2L)$, hence only the
+slice $\beta=\alpha$ is a theorem.  A useful next calculation is a rational
+majorant uniform in the independent combination $yL$; without it, the larger
+region must remain a bookkeeping result rather than a regulator-independence
+theorem.

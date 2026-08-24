@@ -62,17 +62,14 @@ centreUniformConditions = FullSimplify[
    Assumptions -> lambda >= 1];
 
 (* The exact structure regression gives total unit-boundary frequency degree
-   six.  On an M-block this yields M^6/L^2.  The outer Brown--York source
-   curvature is now exactly zero; the remaining nonzero exponents are the
-   declared conservative finite-action sector bounds. *)
+   six.  On an M-block this yields M^6/L^2.  The remaining list is the current
+   independent sector inventory.  In particular, the complete compensated
+   wall already includes the former finite-wall anchor shift, and the
+   compensated outer joint has degree six rather than the historical
+   degree-seven placeholder. *)
 scheduleRules = {
    properLength -> modeCutoff^10,
    wallHalfRadialCutoff -> 1/(2 modeCutoff^10),
-   (* Use the composed exact value rather than a nested rule: ReplaceAll is
-      simultaneous and therefore would otherwise leave wallHalfRadialCutoff
-      unresolved inside this right-hand side. *)
-   wallSinhCutoff ->
-    4 modeCutoff^10/(4 modeCutoff^20 - 1),
    outerCutoff -> modeCutoff^30
    };
 scheduleErrors = {
@@ -80,10 +77,11 @@ scheduleErrors = {
    modeCutoff^7 (wallHalfRadialCutoff/properLength^5 + 1/properLength^6),
    modeCutoff^6 wallHalfRadialCutoff/outerCutoff^5,
    modeCutoff^7/properLength^2,
-   modeCutoff^8 wallSinhCutoff/properLength,
    0,
    modeCutoff^6/outerCutoff^6,
-   modeCutoff^7 properLength^2/outerCutoff^2
+   modeCutoff^6 (properLength^2/outerCutoff^2 +
+     properLength^4/outerCutoff^2),
+   modeCutoff^6 properLength^2/outerCutoff^2
    } /. scheduleRules;
 scheduleExponents = If[TrueQ[# === 0], -Infinity,
      Exponent[Numerator@Together[#], modeCutoff] -
@@ -98,7 +96,7 @@ testConditions = {
    And @@ endpointUniformConditions,
    And @@ centreUniformConditions,
    scheduleExponents ===
-    {-14, -53, -154, -13, -12, -Infinity, -174, -33}
+    {-14, -53, -154, -13, -Infinity, -174, -14, -34}
    };
 testIDs = {
    "fourth-profile local difference is bounded by four over one plus z",
@@ -108,7 +106,7 @@ testIDs = {
    "logarithmic lambda term is subleading to lambda inverse",
    "all four endpoint-half contributions are uniformly O(lambda inverse)",
    "all four centre-half contributions are uniformly O(lambda inverse)",
-   "explicit schedule makes all eight outer-separated operator errors decay"
+   "explicit schedule makes all eight independent operator errors decay"
    };
 
 Print[<|

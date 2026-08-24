@@ -105,6 +105,29 @@ The signs in (\ref{eq:integrated-potential}) use the outward normal on each time
 
 The Harlow--Wu one-form $C_a$ is not the Hayward scalar $S_J$.  The former appears in the field-space descent (\ref{eq:boundary-descent}); the latter is part of a fully Dirichlet action and changes the endpoint potential by its variation.  Their relation must be derived for a specified corner geometry rather than imposed by notation.
 
+### Boundary polarization and slice flux
+
+The finite action does not make a partial-slice symplectic form slice independent by itself.  On linearized solutions, the difference between two regulated cuts bounding a slab is
+
+$$\begin{align}
+\Omega_{\Sigma_f}-\Omega_{\Sigma_i}
+=-\sum_a\int_{\Gamma_a}\delta\mathcal B_a
+-\sum_J\Omega_J,
+\qquad
+\delta\mathcal B_a
+=-\frac12\delta\Pi_a^{ij}\wedge\delta\gamma^{(a)}_{ij},
+\label{eq:finite-action-flux-law}
+\end{align}$$
+
+with the induced orientations and with any Harlow--Wu endpoint curvature already included in $\Omega_\Sigma$.  For a moving boundary, every quantity in (\ref{eq:finite-action-flux-law}) is replaced by its complete pulled-back counterpart.  A finite-regulator phase space therefore requires four logically separate inputs:
+
+1. the allowed variations make the action differentiable, possibly after retaining a declared source-work term;
+2. the pullback of $\delta\mathcal B_a$ and the joint curvature vanishes on a Lagrangian boundary polarization, is field-space exact with its Hamiltonian retained, or is bounded uniformly and vanishes in the regulator limit;
+3. the variations satisfy the linearized bulk equations, so the bulk constraint current vanishes;
+4. the same topology and orientation are used along the regulator family, so the limiting two-form is well defined.
+
+Gaussian radial gauge can make $C_a=0$ without satisfying item 2.  Two-sided horizon regularity can make the limiting flux small without defining a differentiable finite-wall variational problem.  Conversely, fixing a source at each finite wall can make the action differentiable while excluding the radiative tangent one intended to study.  These distinctions are used explicitly in the compact, anchored, and higher-dimensional benchmarks.
+
 ### Diffeomorphism descent and the Hamiltonian identity
 
 Let $\xi$ be a field-independent exact Killing field of the background that preserves the regulated boundaries and their declared sources.  Acting on the complete action before imposing equations of motion gives

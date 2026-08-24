@@ -43,6 +43,9 @@ The following independent checks underlie the formulas used in the paper.
 6. The exact nonuniform polarization (\ref{eq:nonuniform-polarization}) and the Hayward area--boost pair were checked without a small-wall expansion.
 7. The AdS-Rindler wall, joint, transition, outer-source, and outer-corner kernels were computed as exact rational two-frequency functions before extracting the bounds in Appendix \ref{app:regulator-estimates}.
 8. The PSL section, exact global-Killing complement, Schwarzian chain rule, positive Hessian, kernel, Hardy identity, and noncoercive anchor-layer scaling were checked algebraically.
+9. Substitution of $L=M^\alpha$, $y=\tfrac12M^{-\beta}$, and $R=M^\gamma$ into every uniform majorant was reduced exactly to $\alpha>7/2$, $\beta>0$, and $\gamma>2\alpha+3$; the present complete-wall theorem was then restricted to its proved slice $\beta=\alpha$.
+10. Two ambient HW extension maps were checked algebraically: their complete metric--embedding tangents differ by $(\mathcal L_wG,-w)$ and their completed energies agree when $w$ lies in the declared proper degeneracy.
+11. In the $D=4$ local-Rindler tensor test, xCoba verified the flat background, the TT wave equation, the linearized GHY momentum, the vanishing first source, the $O(\rho)$ wall curvature, and the finite null-horizon flux.  Spectator transverse directions extend the calculation to every $D\geq4$.
 
 These checks verify the displayed finite-dimensional algebra and exact kernels used in the proof.  The continuum theorem additionally uses the analytic uniform estimates stated in Appendix \ref{app:regulator-estimates}; finite-mode agreement alone would not establish the limit.
 
@@ -50,4 +53,4 @@ These checks verify the displayed finite-dimensional algebra and exact kernels u
 
 The proved result assumes vacuum linearized Einstein gravity in three dimensions, Brown--Henneaux source boundary conditions, an exact background modular Killing field, and the linked regulator class.  One chirality is displayed and the two chiral sectors add orthogonally.
 
-The theorem does not establish a universal nonlinear horizon polarization, a nonlinear Virasoro-orbit chart, a smooth infinite-mode Gaussian-null collar, matter backreaction, a quantum edge Hilbert space, a crossed-product algebra, or quantum JLMS.  None of these excluded statements is used in the classical identity.
+The theorem does not establish a universal nonlinear horizon polarization, a nonlinear Virasoro-orbit chart, a smooth infinite-mode Gaussian-null collar, matter backreaction, a $d>2$ propagating-graviton subregion theorem, a quantum edge Hilbert space, a crossed-product algebra, or quantum JLMS.  The local-Rindler tensor calculation is a diagnostic with a stated slab and polarization dependence.  None of these excluded statements is used in the AdS$_3$ classical identity.

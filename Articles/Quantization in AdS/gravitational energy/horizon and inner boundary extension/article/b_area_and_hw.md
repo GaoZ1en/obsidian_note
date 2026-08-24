@@ -116,3 +116,43 @@ $$\begin{align}
 \end{align}$$
 
 Dropping the $RV[\delta h]$ term would incorrectly treat a field-dependent gauge section as a constant projector.  The finite-action cocycle in (\ref{eq:finite-action-upsilon}) is the corresponding correction in the charge language.
+
+### Independence of the ambient extension
+
+The normal solver $V[h]$ fixes cut data; it does not uniquely choose an ambient vector.  Let $R_0$ and $R_1$ be two extension maps satisfying $VR_i=-1$, having the same prescribed cut jets, vanishing in the same asymptotic collar, and preserving every declared source and joint condition.  Write
+
+$$\begin{align}
+P_i h=h+\mathcal L_{R_iV[h]}G,
+\qquad
+w[h]=(R_1-R_0)V[h].
+\end{align}$$
+
+Then
+
+$$\begin{align}
+P_1h-P_0h=\mathcal L_{w[h]}G,
+\qquad
+(P_1h,-R_1V[h])-(P_0h,-R_0V[h])
+=(\mathcal L_{w[h]}G,-w[h]).
+\label{eq:extension-change}
+\end{align}$$
+
+Consequently both extended tangents have the same pulled-back metric variation,
+
+$$\begin{align}
+\Delta_Xg(P_i h,-R_iV[h])=h,
+\end{align}$$
+
+at every finite regulator.  Every bulk, GHY, counterterm, Harlow--Wu, Hayward, and embedding sector of the complete pulled-back action is therefore identical for the two extensions.
+
+For the metric-only description one further requires $w[h]\in\mathfrak g_{\rm proper}$.  Under that condition the proper degeneracy and the cocycle composition law give
+
+$$\begin{align}
+E_{{\rm can,p}}[P_0h]
++\int_\gamma\Upsilon_{{\rm p},R_0}[P_0h,-R_0V[h]]
+=E_{{\rm can,p}}[P_1h]
++\int_\gamma\Upsilon_{{\rm p},R_1}[P_1h,-R_1V[h]].
+\label{eq:extension-independence}
+\end{align}$$
+
+Neither cocycle is separately extension independent.  If $w$ changes the Brown--Henneaux sources or frame, changes the prescribed cut jets, or carries a horizon/asymptotic Hamiltonian, the right-hand side of (\ref{eq:extension-change}) is a large boundary transformation and (\ref{eq:extension-independence}) need not hold; its failure is precisely the corresponding finite-action boundary charge.
