@@ -708,3 +708,152 @@ $$\begin{align}
 Here $\displaystyle{\mathcal{O}_{\mathrm{level}}(N)}$ means terms whose positive-mode factors have total level at least $\displaystyle{N}$; it is not an expansion only in the polynomial degree. The large-$\displaystyle{c_{\mathrm{q}}}$ quadratic coefficient tends to $\displaystyle{12/[c_{\mathrm{q}}(n^{2}-1)]}$, agreeing with the classical symbol after $\displaystyle{c_{\mathrm{q}}\to c_{\mathrm{cl}}}$ at leading order. Starting at level four, mixing with multiparticle descendants forces the displayed cubic and quartic terms.
 
 The recursion has been implemented through level eight for all three $\displaystyle{u=-1,0,1}$ operators in `vacuum_normal_symbol_reconstruction.wl`. It reproduces their exact Virasoro action on every vacuum descendant through that cutoff. This is an exact finite-level statement and a formal all-level recursion; convergence of the resulting infinite normal series in an operator topology is not established.
+
+---
+
+Or we can expand the $\displaystyle{H_{u},u=-1,0,1}$ in $\displaystyle{c_{q}}$. Write
+
+$$\begin{align}
+H_{u} & =\dfrac{1}{c_{\mathrm{q}}}\mathcal{N}_{u}^{(1)} +\dfrac{1}{c_{\mathrm{q}}^{2}}\mathcal{N}_{u}^{(2)}+\mathcal{O}(c_{\mathrm{q}}^{-3}), & u=-1,0,1
+\end{align}$$
+
+### $\displaystyle{u=0}$
+
+For $\displaystyle{u=0}$, we write
+
+$$\begin{align}
+\mathcal{N}_{0}^{(1)} & =\sum _{n\geqslant 2}A_{n}^{(0)}H_{-n}H_{n}
+\end{align}$$
+
+and require it to satisfy
+
+$$\begin{align}
+[H_{0},H_{-p}] & =pH_{-p} \\
+\implies A^{(0)}_{p} & =\dfrac{12}{p^{2}-1}
+\end{align}$$
+
+The superscript in $\displaystyle{\mathcal{N}_{u}^{(r)}}$ denotes the order in $\displaystyle{1/c_{\mathrm q}}$, not the positive-mode level used in the triangular blocks above. Define
+
+$$\begin{align}
+d_{n} & :=\dfrac{n(n^{2}-1)}{12}, & \mathcal{P}_{N} & :=\left\{(a,b):a\geqslant b\geqslant2,\ a+b=N\right\},
+\end{align}$$
+
+and take every sum over an empty range or an empty $\displaystyle{\mathcal{P}_{N}}$ to vanish.
+
+### The $\displaystyle{u=0}$ Kernel
+
+Set
+
+$$\begin{align}
+A_{n}^{(0)} & :=\dfrac{n}{d_{n}}=\dfrac{12}{n^{2}-1}.
+\end{align}$$
+
+The leading term is
+
+$$\begin{align}
+\mathcal{N}_{0}^{(1)} & =\sum_{n=2}^{\infty}A_{n}^{(0)}\widehat{H}_{-n}\widehat{H}_{n}.
+\end{align}$$
+
+For $\displaystyle{a\geqslant b\geqslant2}$, define the cubic kernel
+
+$$\begin{align}
+\Gamma_{ab}^{(0)} & :=-\dfrac{ A_{a}^{(0)}(2a+b)+A_{b}^{(0)}(a+2b)
+}{(1+\delta_{ab})d_{a+b}},
+\end{align}$$
+
+and the subleading quadratic kernel
+
+$$\begin{align}
+B_{n}^{(0)} & :=-\dfrac{1}{d_{n}^{2}}\left[ \sum_{m=2}^{n-2}A_{m}^{(0)}(n+m)^{2}d_{n-m} +2d_{n}\sum_{(a,b)\in\mathcal{P}_{n}} \Gamma_{ab}^{(0)}(2a+b)d_{b} \right].
+\end{align}$$
+
+Then the complete vacuum-normal symbol through $\displaystyle{\mathcal{O}(c_{\mathrm q}^{-2})}$ is determined by
+
+$$\begin{align}
+\mathcal{N}_{0}^{(2)} & =\sum_{n=2}^{\infty}B_{n}^{(0)}\widehat{H}_{-n}\widehat{H}_{n} \\
+&\quad+\sum_{a\geqslant b\geqslant2}\Gamma_{ab}^{(0)}\left( \widehat{H}_{-(a+b)}\widehat{H}_{b}\widehat{H}_{a} +\widehat{H}_{-a}\widehat{H}_{-b}\widehat{H}_{a+b} \right).
+\end{align}$$
+
+For example,
+
+$$\begin{align}
+\Gamma_{22}^{(0)}&=-\dfrac{24}{5}, & \Gamma_{32}^{(0)}&=-4, & B_{4}^{(0)}&=\dfrac{72}{25}, & B_{5}^{(0)}&=-\dfrac{6}{5},
+\end{align}$$
+
+which reproduce the large-$\displaystyle{c_{\mathrm q}}$ expansion of the displayed level-four block and its level-five continuation.
+
+### The $\displaystyle{u=1}$ Kernel
+
+Set
+
+$$\begin{align}
+A_{n}^{(1)}
+& :=\begin{cases}
+\dfrac{n+1}{d_{n}}=\dfrac{12}{n(n-1)}, & n\geqslant3,\\
+0, & n=2.
+\end{cases}
+\end{align}$$
+
+The leading term is
+
+$$\begin{align}
+\mathcal{N}_{1}^{(1)} & =\sum_{n=3}^{\infty}A_{n}^{(1)}\widehat{H}_{1-n}\widehat{H}_{n}.
+\end{align}$$
+
+There are two independent cubic normal-ordering kernels. The one-negative--two-positive kernel is
+
+$$\begin{align}
+\Gamma_{ab}^{(1)} & :=-\dfrac{ A_{b}^{(1)}(a+1-b)+A_{a+b}^{(1)}(2a+b)
+}{(1+\delta_{ab})d_{a}}, & (a,b)&\neq(2,2),\\
+\Gamma_{22}^{(1)}&:=0,
+\end{align}$$
+
+where the exceptional value follows from the vacuum $\displaystyle{SL(2,\mathbb{R})}$ null relation. The two-negative--one-positive kernel is
+
+$$\begin{align}
+\widetilde{\Gamma}_{ab}^{(1)} & :=-\dfrac{ A_{a+1}^{(1)}(2a+b+2)+A_{b+1}^{(1)}(a+2b+2)
+}{(1+\delta_{ab})d_{a+b+1}}.
+\end{align}$$
+
+The subleading quadratic kernel is
+
+$$\begin{align}
+B_{n}^{(1)} & :=-\dfrac{1}{d_{n}d_{n-1}}\left[ \sum_{m=3}^{n-2}A_{m}^{(1)}(n+m)(n+m-2)d_{n-m}\right.\\
+&\qquad\left. +d_{n-1}\sum_{(a,b)\in\mathcal{P}_{n}} \Gamma_{ab}^{(1)}(2a+b)d_{b} +d_{n}\sum_{(a,b)\in\mathcal{P}_{n-1}} \widetilde{\Gamma}_{ab}^{(1)}(2a+b)d_{b} \right].
+\end{align}$$
+
+Therefore
+
+$$\begin{align}
+\mathcal{N}_{1}^{(2)} & =\sum_{n=3}^{\infty}B_{n}^{(1)}\widehat{H}_{1-n}\widehat{H}_{n} \\
+&\quad+\sum_{a\geqslant b\geqslant2}
+\Gamma_{ab}^{(1)}\widehat{H}_{1-a-b}\widehat{H}_{b}\widehat{H}_{a} \\
+&\quad+\sum_{a\geqslant b\geqslant2}
+\widetilde{\Gamma}_{ab}^{(1)}\widehat{H}_{-a}\widehat{H}_{-b}\widehat{H}_{a+b+1}.
+\end{align}$$
+
+The first nonzero subleading coefficients include
+
+$$\begin{align}
+\Gamma_{32}^{(1)}&=-\dfrac{12}{5}, & \widetilde{\Gamma}_{22}^{(1)}&=-\dfrac{8}{5}, & B_{5}^{(1)}&=\dfrac{24}{25}.
+\end{align}$$
+
+### The $\displaystyle{u=-1}$ Kernel and Verification Boundary
+
+The star structure fixes the remaining symbol without an independent calculation:
+
+$$\begin{align}
+\mathcal{N}_{-1}^{(r)}&=\left(\mathcal{N}_{1}^{(r)}\right)^{\dagger}, & r&=1,2.
+\end{align}$$
+
+In particular,
+
+$$\begin{align}
+\mathcal{N}_{-1}^{(2)} & =\sum_{n=3}^{\infty}B_{n}^{(1)}\widehat{H}_{-n}\widehat{H}_{n-1} \\
+&\quad+\sum_{a\geqslant b\geqslant2}
+\Gamma_{ab}^{(1)}\widehat{H}_{-a}\widehat{H}_{-b}\widehat{H}_{a+b-1} \\
+&\quad+\sum_{a\geqslant b\geqslant2}
+\widetilde{\Gamma}_{ab}^{(1)}\widehat{H}_{-(a+b+1)}\widehat{H}_{b}\widehat{H}_{a}.
+\end{align}$$
+
+The leading kernels follow from the central contractions in the Virasoro commutators. Cancelling the remaining quadratic commutator residuals fixes $\displaystyle{\Gamma_{ab}^{(0)}}$, $\displaystyle{\Gamma_{ab}^{(1)}}$, and $\displaystyle{\widetilde{\Gamma}_{ab}^{(1)}}$; matching the one-particle matrix elements then fixes $\displaystyle{B_{n}^{(0)}}$ and $\displaystyle{B_{n}^{(1)}}$. Expanding the exact triangular Gram recursion and comparing every coefficient through $\displaystyle{\mathcal{O}(c_{\mathrm q}^{-2})}$ gives zero residual for $\displaystyle{\widehat{F}_{0}^{\mathrm{normal}}}$ at levels two through eight and for $\displaystyle{\widehat{F}_{1}^{\mathrm{normal}}}$ at levels three through eight. This is a formal all-level large-central-charge construction; convergence of the infinite sums on a common dense operator domain is not established.
