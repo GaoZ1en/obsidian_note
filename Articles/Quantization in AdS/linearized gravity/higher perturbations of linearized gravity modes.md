@@ -38,7 +38,7 @@ $$\begin{align}
 h[a] & = \dfrac{e^{\kappa \mathcal{L}_{\zeta[a]}}-1}{\kappa} g^{(0)}.
 \end{align}$$
 
-This fixed-generator exponential contains every linear Brown-Henneaux mode as a tangent direction and generates the cross terms of the chosen autonomous flow. The time-dependent completion that reaches every smooth point of the global-AdS vacuum orbit.
+This fixed-generator exponential contains every linear Brown--Henneaux mode as a tangent direction and generates the cross terms of the chosen autonomous flow. A time-dependent product of flows is needed to reach a general smooth point of the global-AdS vacuum orbit; the fixed-generator chart below is used locally near the vacuum.
 
 ## A Simple Argument
 
@@ -334,202 +334,185 @@ $$\begin{align}
 (P^{-1})^{(r)}_{pq} & =(-i)^{2r+1}\kappa ^{2r+2}\sum _{|p_{1}|,\dots,|p_{r}| \geqslant 2} \dfrac{\delta _{p_{r}+q,0}}{\prod ^{r}_{j=0}\mathcal{D}_{p_{j}}} \prod ^{r-1}_{j=0}[(p_{j}+p_{j+1})H_{p_{j+1}-p_{j}}], & p_{0}:= p
 \end{align}$$
 
-## Quantization on the Vacuum Orbit
+## Next CPS Order and the Darboux Completion
 
-We quantize the classical Virasoro algebra to quantum algebra with central charge $\displaystyle{c_{q}}$ as
-
-$$\begin{align}
-[H_{m},H_{n}] & =(m-n)H_{m+n}+\dfrac{c_{q}}{12}m(m^{2}-1)\delta _{m+n,0}, & |m|,|n|\geqslant 2 \\
-H^{\dagger}_{n} & =H_{-n}
-\end{align}$$
-
-the central charge $\displaystyle{c_{q}}$ contains classical contribution $\displaystyle{c_{\mathrm{cl}}=\dfrac{24\pi}{\kappa ^{2}}=\dfrac{3}{2G}}$ and quantum correction $\displaystyle{13}$.
-
----
-
-### Chern-Simons Derivation of the Boundary Action
-
-In 3d with unit $\mathrm{AdS}$ radius, introduce the two $\displaystyle{\mathrm{SL}(2,\mathbb{R})}$ connections
+The first nonlinear continuation is sufficient for $\Omega _1$, but the one-loop composite-charge question requires the next classical coefficient. For the same fixed generator $\zeta[a]$,
 
 $$\begin{align}
-A & =\omega+e, & \bar{A}=\omega-e
+h^{[0]}&=\mathcal L_{\zeta}g^{(0)}, &
+h^{[1]}&=\dfrac12\mathcal L_{\zeta}^{2}g^{(0)}, &
+h^{[2]}&=\dfrac16\mathcal L_{\zeta}^{3}g^{(0)}.
 \end{align}$$
 
-where $\displaystyle{e}$ is the dreibein and $\displaystyle{\omega}$ is the spin connection. The Einstein action with the Brown-Henneaux boundary term can be written as
+The ordered multimode sums are retained. This is the selected autonomous-flow chart near the global-AdS vacuum; it is not a claim that a single exponential is a global chart on every smooth Virasoro orbit.
+
+Define the vacuum bilinear from the full renormalized bulk-plus-boundary-plus-corner CPS form by
 
 $$\begin{align}
-S & =S_{\mathrm{CS}}[A]-S_{\mathrm{CS}}[\bar{A}]+S_{\mathrm{bdy}} \\
-S_{\mathrm{CS}}[A] & =\dfrac{k}{4\pi} \int _{M}\mathrm{Tr}\left( A\wedge \mathrm{d}A+\dfrac{2}{3}A\wedge A\wedge A \right) \\
-k & =\dfrac{1}{4G},\quad c_{\mathrm{cl}}=6k=\dfrac{3}{2G} \\
-S_{\mathrm{bdy}} & =-\dfrac{k}{4\pi} \int _{\Gamma}\mathrm{d}^{2}x\left[\mathrm{Tr}(A_{\theta}^{2})+\mathrm{Tr}(\bar{A}_{\theta}^{2})\right]
+B(\xi_m,\xi_n)&:=\kappa^2\Omega_{g^{(0)}}(X_m,X_n)
+=iD_m\delta_{m+n,0}, & D_m&=2\pi m(m^2-1).
 \end{align}$$
 
-separate time from the disk coordinates and write $\displaystyle{A=A_{0}\mathrm{d}t+\tilde{A}}$. The temporal component $\displaystyle{A_{0}}$ is a Lagrange multiplier imposing
+With
 
 $$\begin{align}
-\tilde{F} & := \tilde{\mathrm{d}}\tilde{A}+\tilde{A}\wedge \tilde{A}=0
+\Theta
+&=\dfrac{1-e^{-\kappa\operatorname{ad}_{\zeta}}}
+{\kappa\operatorname{ad}_{\zeta}}\,\delta\zeta,
 \end{align}$$
 
-a flat connection can be written as
+the exact pullback on the selected high-mode section is
 
 $$\begin{align}
-\tilde{A} & =g^{-1}\tilde{\mathrm{d}}g
+\Omega_{\zeta}(u,v)&=B(P_{>}\Theta(u),P_{>}\Theta(v))
+=\dfrac{i}{2}\sum_{|k|\geqslant2}D_k\Theta_k\wedge\Theta_{-k}.
 \end{align}$$
 
-this parameterization has the residual redundancy
+Here $P_{>}$ removes only the final $-1,0,1$ stabilizer components; it is not inserted between nested brackets. Expanding $\Omega=\Omega_0+\kappa\Omega_1+\kappa^2\Omega_2+O(\kappa^3)$ gives
 
 $$\begin{align}
-g(t,\vec{x})\sim h(t)g(t,\vec{x}), h(t)\in \mathrm{PSL}(2,\mathbb{R})
+\Omega_2(u,v)
+={}&\dfrac16B([\zeta,[\zeta,u]],v)
++\dfrac16B(u,[\zeta,[\zeta,v]])
++\dfrac14B([\zeta,u],[\zeta,v]).
 \end{align}$$
 
-because the two representatives give the same spatial connection. Substituting the flat connection into the Chern-Simons action produces a chiral WZW action on the asymptotic boundary
+This formula contains all multimode cross terms, is closed, and supplies the missing Hamiltonian identity
 
 $$\begin{align}
-S_{\pm}[g] & =\dfrac{k}{2\pi}\left[  \int _{\Gamma}\mathrm{d}^{2}x\mathrm{Tr}(\partial _{\theta}(g^{-1})\partial _{\pm}g)\mp \dfrac{1}{6}\int _{M}\mathrm{Tr}(g^{-1}\mathrm{d}g)^{3}  \right]\\
-\partial _{\pm} & =\dfrac{1}{2}(\partial _{\theta}\pm \partial _{t})
+X_{p,1}\mathbin{\lrcorner}\Omega_0
++X_{p,0}\mathbin{\lrcorner}\Omega_1
++X_{p,-1}\mathbin{\lrcorner}\Omega_2
+&=-\delta H_{p,1}.
 \end{align}$$
 
-thus the two gravitational chiralities become two boundary WZW theories before imposing the asymptotically AdS constraints.
+The explicit signed-mode coefficient and the finite-cutoff edge analysis are recorded in [[Articles/Quantization in AdS/linearized gravity/archived/one-loop-central-charge-audits/CPS one-loop central charge from next-order perturbation|CPS one-loop central charge from next-order perturbation]].
 
-For one chiral sector, use the Gauss parameterization
+For the radial Moser construction, let $\mathcal E$ be the mode-space Euler vector field. The first primitive and vector field obey
 
 $$\begin{align}
-g & =\begin{pmatrix}1 & 0 \\
-F & 1\end{pmatrix}
-\begin{pmatrix}\lambda & 0 \\
-0 & \lambda ^{-1}\end{pmatrix}
-\begin{pmatrix}1 & \Psi \\
-0 & 1\end{pmatrix}
+\alpha_1&=\dfrac13\iota_{\mathcal E}\Omega_1, &
+\iota_{Y_1}\Omega_0&=-\alpha_1.
 \end{align}$$
 
-the Brown-Henneaux falloffs, equivalently the Drinfeld-Sokolov constraints on the boundary WZW current, fix two of these three fields near the boundary as
+In the Lie-flow convention the second residual is
 
 $$\begin{align}
-\lambda & =\sqrt{ \dfrac{r}{F'} }, & \Psi & =-\dfrac{F''}{2rF'}
+R_2&=\Omega_2+\dfrac12\mathcal L_{Y_1}\Omega_1, &
+\alpha_2&=\dfrac14\iota_{\mathcal E}R_2, &
+\iota_{Z_2}\Omega_0&=-\alpha_2.
 \end{align}$$
 
-the remaining function is parameterized as
+Thus the direct coordinate map is
 
 $$\begin{align}
-F|_{\Gamma} & =\tan\left( \dfrac{\phi}{2} \right), & \phi' & > 0, & \phi(\theta+2\pi,t)=\phi(\theta,t)+2\pi
+a&=b+\kappa Y_1(b)+\kappa^2Y_2(b)+O(\kappa^3), &
+Y_2&=Z_2+\dfrac12(Y_1\cdot\partial)Y_1,
 \end{align}$$
 
-the positivity and winding conditions follow from smoothness and the fact that the spatial circle is contractible in global $\displaystyle{\mathrm{AdS}_{3}}$. The residual bulk redundancy acts by
+and
 
 $$\begin{align}
-F  & \mapsto \dfrac{a(t)F+b(t)}{c(t)F+d(t)}, & \begin{pmatrix}a & b \\
-c & d\end{pmatrix}\in \mathrm{PSL}(2,\mathbb{R})
+H^D_{p,1}
+&=H_{p,1}+\mathrm dH_{p,0}[Y_1]+\mathrm dH_{p,-1}[Y_2].
 \end{align}$$
 
-in the Gauss variables, the constrained WZW action reduces to
+The distinction between $Z_2$ and the direct-coordinate coefficient $Y_2$ is essential. Exact finite-cutoff checks verify the Darboux residual through $O(\kappa^2)$ and the interior Hamiltonian identity; hard cutoffs retain the expected upper-edge obstruction because a finite mode window is not invariant under the Witt action.
+
+## Exact Reduced Hamiltonian
+
+The global generator acts exactly linearly on the exponential chart,
 
 $$\begin{align}
-S_{\pm}[g] & =-\dfrac{k}{\pi} \int _{\Gamma}\mathrm{d}^{2}x\left[\dfrac{\lambda'\partial _{\pm}\lambda}{\lambda ^{2}}+\lambda ^{2}F'\partial _{\pm}\Psi\right] \\
- & =-\dfrac{c_{\mathrm{cl}}}{24\pi} \int _{\Gamma}\mathrm{d}^{2}x\left[\dfrac{\phi''\partial _{\pm}\phi'}{\phi'^{2}}-\phi'\partial _{\pm}\phi\right]
+X_0z_k&=ikz_k,
 \end{align}$$
 
-for the left-moving sector, Wick rotate $\displaystyle{t=-i\tau}$ and define
+because left multiplication by the vacuum stabilizer is equivalent to its adjoint action on $\zeta$. The exact CPS form is $U(1)$ invariant, and the radial Moser construction can be chosen equivariantly. Therefore, in a local $U(1)$-equivariant Darboux chart,
 
 $$\begin{align}
-\bar{\partial} & =\dfrac{1}{2}(\partial _{\theta}+i\partial _{\tau})
+\boxed{H_0^D=\sum_{N\geqslant2}N b_N^{\dagger}b_N.}
 \end{align}$$
 
-then the Euclidean action becomes
+The additive constant vanishes by the same global-AdS vacuum subtraction used in the classical charge. Explicitly,
 
 $$\begin{align}
-S_{E}[\phi] & =\dfrac{c_{\mathrm{cl}}}{24\pi} \int \mathrm{d}^{2}x\left[\dfrac{\bar{\partial}\phi'\phi''}{\phi'^{2}}-\bar{\partial}\phi \phi'\right]
+H_{0,1}^D&=0, & H_{0,2}^D&=0.
 \end{align}$$
 
----
+At every finite mode cutoff this follows from the finite-dimensional equivariant Darboux theorem near the vacuum fixed point and has been checked through the displayed $Y_2$ order. With infinitely many modes, it is a local formal-power-series statement on finite-support configurations; convergence of an all-order Darboux map in a specified infinite-dimensional topology is not established. The full argument and checks are archived in [[Articles/Quantization in AdS/linearized gravity/archived/one-loop-central-charge-audits/CPS canonical quantum perturbation test of Brown-Henneaux one-loop central charge|CPS canonical quantum perturbation test of Brown-Henneaux one-loop central charge]].
 
-Put the chiral boundary theory on a Euclidean torus with complex structure $\displaystyle{\tau}$ and $\displaystyle{q=e^{2\pi i\tau}}$. Its Euclidean action is the one derived above,
+Thus the reduced Brown--Henneaux dynamics on the selected smooth global-AdS vacuum orbit is exactly free in these coordinates. Quantum corrections within this reduced description arise from defining the nonlinear charges as composite observables, not from interaction vertices in $H_0^D$.
+
+## CPS/Wick Quantization of the Nonlinear Charges
+
+Quantize the Darboux modes with
 
 $$\begin{align}
-S_{E}[\phi] & =\dfrac{c_{\mathrm{cl}}}{24\pi} \int \mathrm{d}^{2}x\left[\dfrac{(\bar{\partial}\phi')\phi''}{\phi'^{2}}-(\bar{\partial}\phi)\phi'\right]
+[b_N,b_M^{\dagger}]&=\delta_{NM}, & b_N|0\rangle&=0.
 \end{align}$$
 
-modulo the local $\displaystyle{\mathrm{PSL}(2,\mathbb{R})}$ redundancy. The relevant saddle is
+The practical reference prescription is to define every nonlinear charge insertion by Wick subtraction with respect to this free CPS vacuum, while retaining a regulator until the mode sums are meaningful. For the low tests $p=2,3$, the quadratic charges contain only number-conserving bilinears. Their hard-cutoff and energy-damped commutators contain no identity term, and the Wick cubic cross-contractions have zero vacuum expectation. Hence the natural reference prescription gives
 
 $$\begin{align}
-\phi_{0}(\theta,y) & =\theta-\dfrac{\mathrm{Re}\tau}{\mathrm{Im}\tau}y, & S_{0} & =\dfrac{i\pi c_{\mathrm{cl}}\tau}{12}
+\Delta c_{\mathrm{CPS/Wick}}^{\mathrm{bare}}&=0.
 \end{align}$$
 
-so its classical contribution is $\displaystyle{e^{-S_{0}}=q^{-c_{\mathrm{cl}}/24}}$. Expand around it as
+This zero is the value of the chosen reference composite prescription, not a separately scheme-independent observable. Wick subtraction does not exclude a finite Hermitian linear renormalization of the composite moment map. In the signed variables it is
 
 $$\begin{align}
-\phi & =\phi_{0}+\sum _{m,n}\dfrac{\varepsilon _{m,n}}{(2\pi)^{2}}\exp\left[\dfrac{imy}{\mathrm{Im}\tau}+in\left( \theta-\dfrac{\mathrm{Re}\tau}{\mathrm{Im}\tau}y \right)\right]
+\delta H_{p,1}^{\mathrm{fin}}
+&=-i\gamma_p z_{-p}, &
+\gamma_p&=\dfrac{\Delta c}{24}p(p^2-1),
 \end{align}$$
 
-the local $\displaystyle{\mathrm{PSL}(2,\mathbb{R})}$ quotient removes the three spatial modes
+or, after the oscillator rephasing used in the archived checks,
 
 $$\begin{align}
-\varepsilon _{m,-1}=\varepsilon _{m,0}=\varepsilon _{m,1}=0
+r_p^{\mathrm{fin}}&=\dfrac{\Delta c}{48\pi}\sqrt{D_p}.
 \end{align}$$
 
-for every temporal Fourier index $\displaystyle{m}$. The quadratic action is
+Hermiticity, vacuum subtraction, the $p=2$/$p=3$ comparison, mixed commutators, and Jacobi constrain the $p(p^2-1)$ dependence but do not fix the one real coefficient $\Delta c$. The reduced Liouville/Pfaffian-Darboux Jacobian and symmetric Fujikawa-style tests likewise give no nonzero cocycle in the reference prescription; their precise finite-cutoff and regulator boundaries are recorded in [[Articles/Quantization in AdS/linearized gravity/archived/one-loop-central-charge-audits/CPS reduced measure and Virasoro anomaly test|CPS reduced measure and Virasoro anomaly test]].
+
+Therefore no principle internal to the present pure-gravity CPS/Wick construction forces a nonzero $\Delta c$. The convention used in this note is
 
 $$\begin{align}
-S_{E} & =S_{0}+\dfrac{ic_{\mathrm{cl}}}{96\pi ^{3}}\sum _{m \in \mathbb{Z}}\sum _{n\neq -1,0,1} n(n^{2}-1)(m-n\tau)|\varepsilon _{m,n}|^{2}+\mathcal{O}(\varepsilon ^{3})
+\Delta c_{\mathrm{ref}}&=0,
 \end{align}$$
 
-the Gaussian integral therefore gives, up to a $\displaystyle{\tau}$-independent normalization
+while the invariant quantum central charge is written
 
 $$\begin{align}
-Z_{\text{1-loop}} & =\mathcal{N}q^{-c_{\mathrm{cl}}/24}\prod _{\substack{m\in \mathbb{Z}\\
-n\neq -1,0,1}}(m-n\tau)^{-1/2}
+\boxed{
+c_{\mathrm{phys}}
+=\dfrac{3\ell}{2G_R(\mathsf S)}+\Delta c(\mathsf S),
+}
 \end{align}$$
 
-after differentiating with respect to $\displaystyle{\tau}$ and summing over the temporal modes $\displaystyle{m}$, the real-field determinant becomes
+with only $c_{\mathrm{phys}}$ invariant under a finite change of renormalization scheme $\mathsf S$. External $+13$ representatives, their Chern--Simons/WZW/orbit derivation, and the corresponding finite Einstein-coupling redefinition are separated in [[Articles/Quantization in AdS/linearized gravity/one-loop central charge normalization and scheme dependence|one-loop central charge normalization and scheme dependence]].
+
+## Algebraic Consequences at Fixed Central Charge
+
+Once a central parameter $c$ is fixed, the quantum algebra is
 
 $$\begin{align}
-\partial _{\tau}\log Z_{\text{1-loop}} & =-\dfrac{i\pi c_{\mathrm{cl}}}{12}-\pi \sum ^{\infty}_{n=2}n\cot(\pi n\tau)
+[H_m,H_n]&=(m-n)H_{m+n}+\dfrac{c}{12}m(m^2-1)\delta_{m+n,0}, &
+H_n^{\dagger}&=H_{-n}.
 \end{align}$$
 
-where
-
-$$\begin{align}
-\sum ^{\infty}_{n=2}n\cot(\pi n\tau) & =\sum ^{\infty}_{n=2}n[\cot(\pi n\tau)+i]-i\sum ^{\infty}_{n=2}n \\
- & =-2i\sum ^{\infty}_{n=2} \dfrac{nq^{n}}{1-q^{n}}-i(\zeta(-1)-1)
-\end{align}$$
-
-consequently
-
-$$\begin{align}
-\partial _{\tau}\log Z_{\text{1-loop}} & =-\dfrac{\pi i(c_{\mathrm{cl}}+13)}{12}+2\pi i\sum ^{\infty}_{n=2} \dfrac{nq^{n}}{1-q^{n}}
-\end{align}$$
-
-integrating with respect to $\displaystyle{\tau}$ gives
-
-$$\begin{align}
-Z_{\text{1-loop}} & =\mathcal{N}q^{-(c_{\mathrm{cl}}+13)/24}\prod ^{\infty}_{n=2} \dfrac{1}{1-q^{n}}
-\end{align}$$
-
-Comparing with the vacuum Virasoro character
-
-$$\begin{align}
-\chi _{\mathrm{vac}}(q) & =q^{-c_{q}/24}\prod ^{\infty}_{n=2} \dfrac{1}{1-q^{n}}
-\end{align}$$
-
-gives the one-loop result
-
-$$\begin{align}
-c_{q} & =c_{\mathrm{cl}}+13
-\end{align}$$
-
-This derivation follows Section 5.1 and the localization argument of Section 5.3 of [Cotler-Jensen](https://arxiv.org/abs/1808.03263).
+The presentation, low-mode reconstruction, and vacuum-module consequences below are conditional on this chosen $c$; algebraic closure does not determine the finite split between $3\ell/(2G_R)$ and $\Delta c$.
 
 ---
 
 For $\displaystyle{n=-1,0,1}$, we require the quantum Virasoro algebra is also valid
 
 $$\begin{align}
-[H_{m},H_{n}] & =(m-n)H_{m+n}+\dfrac{c_{q}}{12}m(m^{2}-1)\delta _{m+n,0}, & \forall m,n\in \mathbb{Z}
+[H_{m},H_{n}] & =(m-n)H_{m+n}+\dfrac{c}{12}m(m^{2}-1)\delta _{m+n,0}, & \forall m,n\in \mathbb{Z}
 \end{align}$$
 
 and therefore
 
 $$\begin{align}
-H_{0} & =\dfrac{1}{2n}[H_{n},H_{-n}]-\dfrac{c_{q}}{24}(n^{2}-1) \\
+H_{0} & =\dfrac{1}{2n}[H_{n},H_{-n}]-\dfrac{c}{24}(n^{2}-1) \\
 H_{1} & =\dfrac{1}{2n+1}[H_{n+1},H_{-n}] \\
 H_{-1} & =\dfrac{1}{2n+1}[H_{n},H_{-(n+1)}]
 \end{align}$$
@@ -562,7 +545,7 @@ H_{0}H_{-n_{1}}\dots H_{-n_{k}}\ket{0}  & =\left(\sum ^{k}_{j=1}n_{j}\right)H_{-
 then the chiral character is
 
 $$\begin{align}
-\chi _{\mathrm{vac}}(q) & =\mathrm{Tr}q^{H_{0}-c_{q}/24}=q^{-c_{q}/24}\prod ^{\infty}_{n=2} \dfrac{1}{1-q^{n}}
+\chi _{\mathrm{vac}}(q) & =\mathrm{Tr}q^{H_{0}-c/24}=q^{-c/24}\prod ^{\infty}_{n=2} \dfrac{1}{1-q^{n}}
 \end{align}$$
 
 the right-moving construction is identical and the vacuum-orbit Hilbert space is
@@ -575,7 +558,7 @@ $$\begin{align}
 
 *Tldr: this part provides the isomorphism between the commutator definition and the composition definition of $\displaystyle{H_{-1,0,1}}$, and the composition constructiono f $\displaystyle{H_{-1,0,1}}$ in some recursion algorithm.*
 
-The finite commutator reconstruction can be promoted from an operator identity to a presentation of the complete quantum algebra. Fix the scalar $\displaystyle{c_{\mathrm q}}$ and let $\displaystyle{\mathfrak A_{>}(c_{\mathrm q})}$ be the unital star algebra generated by
+The finite commutator reconstruction can be promoted from an operator identity to a presentation of the complete quantum algebra. Fix the scalar $\displaystyle{c}$ and let $\displaystyle{\mathfrak A_{>}(c)}$ be the unital star algebra generated by
 
 $$\begin{align}
 \mathsf h_p, & & p&\in I_{>}, & \mathsf h_p^{\dagger}&=\mathsf h_{-p}.
@@ -584,7 +567,7 @@ $$\begin{align}
 Inside the free associative algebra define
 
 $$\begin{align}
-\mathsf f_0 &:=\dfrac14[\mathsf h_2,\mathsf h_{-2}] -\dfrac{c_{\mathrm q}}8\mathbf1, \\
+\mathsf f_0 &:=\dfrac14[\mathsf h_2,\mathsf h_{-2}] -\dfrac{c}8\mathbf1, \\
 \mathsf f_1 &:=\dfrac15[\mathsf h_3,\mathsf h_{-2}], & \mathsf f_{-1} &:=\dfrac15[\mathsf h_2,\mathsf h_{-3}], \\
 \mathsf x_r
 &:=\begin{cases}
@@ -596,13 +579,13 @@ $$\begin{align}
 The defining higher-generator relations are
 
 $$\begin{align}
-\boxed{ [\mathsf h_p,\mathsf h_q] =(p-q)\mathsf x_{p+q} +\dfrac{c_{\mathrm q}}{12}p(p^2-1) \delta _{p+q,0}\mathbf1}, & &p,q&\in I_{>}.
+\boxed{ [\mathsf h_p,\mathsf h_q] =(p-q)\mathsf x_{p+q} +\dfrac{c}{12}p(p^2-1) \delta _{p+q,0}\mathbf1}, & &p,q&\in I_{>}.
 \end{align}$$
 
 For sums $\displaystyle{p+q=0,\pm1}$, these relations both define the missing mode and require that every possible high-mode representative agree. Explicitly, for every $\displaystyle{n\geqslant2}$ they imply
 
 $$\begin{align}
-\mathsf f_0 &=\dfrac{1}{2n}[\mathsf h_n,\mathsf h_{-n}] -\dfrac{c_{\mathrm q}}{24}(n^2-1)\mathbf1, \\
+\mathsf f_0 &=\dfrac{1}{2n}[\mathsf h_n,\mathsf h_{-n}] -\dfrac{c}{24}(n^2-1)\mathbf1, \\
 \mathsf f_1 &=\dfrac{1}{2n+1}[\mathsf h_{n+1},\mathsf h_{-n}], \\
 \mathsf f_{-1} &=\dfrac{1}{2n+1}[\mathsf h_n,\mathsf h_{-(n+1)}].
 \end{align}$$
@@ -617,7 +600,7 @@ $$\begin{align}
 where the second line is understood only for the automatically allowed $\displaystyle{u+v\in\{-1,0,1\}}$; the antisymmetric cases with $\displaystyle{u=v}$ vanish. These equations may be added as rewriting relations in a computational presentation. Algebraically, they follow by inserting the commutator definitions into the associative Jacobi identity and using the high-high relations. Once they hold, every $\displaystyle{\mathsf x_r}$ satisfies
 
 $$\begin{align}
-[\mathsf x_m,\mathsf x_n] &=(m-n)\mathsf x_{m+n} +\dfrac{c_{\mathrm q}}{12}m(m^2-1) \delta _{m+n,0}\mathbf1
+[\mathsf x_m,\mathsf x_n] &=(m-n)\mathsf x_{m+n} +\dfrac{c}{12}m(m^2-1) \delta _{m+n,0}\mathbf1
 \end{align}$$
 
 for arbitrary integers $\displaystyle{m,n}$.
@@ -625,19 +608,19 @@ for arbitrary integers $\displaystyle{m,n}$.
 This proves that the presentation is exactly Virasoro rather than merely a quotient resembling it. Indeed, there is a homomorphism
 
 $$\begin{align}
-\Phi:\mathfrak A_{>}(c_{\mathrm q})&\longrightarrow U(\operatorname{Vir}_{c_{\mathrm q}}), & \Phi(\mathsf h_p)&=\widehat H_p.
+\Phi:\mathfrak A_{>}(c)&\longrightarrow U(\operatorname{Vir}_{c}), & \Phi(\mathsf h_p)&=\widehat H_p.
 \end{align}$$
 
 It is surjective because $\displaystyle{\widehat H_{0,\pm1}}$ are the displayed composites. Conversely, the full Virasoro relations for the $\displaystyle{\mathsf x_r}$ define
 
 $$\begin{align}
-\Psi:U(\operatorname{Vir}_{c_{\mathrm q}})&\longrightarrow\mathfrak A_{>}(c_{\mathrm q}), & \Psi(\widehat H_r)&=\mathsf x_r.
+\Psi:U(\operatorname{Vir}_{c})&\longrightarrow\mathfrak A_{>}(c), & \Psi(\widehat H_r)&=\mathsf x_r.
 \end{align}$$
 
 Both compositions are the identity on their respective generating sets. Hence
 
 $$\begin{align}
-\boxed{\mathfrak A_{>}(c_{\mathrm q})\simeq U(\operatorname{Vir}_{c_{\mathrm q}})}.
+\boxed{\mathfrak A_{>}(c)\simeq U(\operatorname{Vir}_{c})}.
 \end{align}$$
 
 The corresponding vacuum representation can be defined without taking any low mode as primitive. Let $\displaystyle{|0\rangle_{>}}$ obey
@@ -659,7 +642,7 @@ $$\begin{align}
 \prod_{n=2}^{\infty}\dfrac{1}{1-q^n}.
 \end{align}$$
 
-Thus using the higher modes as primitive quantum observables loses neither the global generators nor any vacuum descendant. The representative independence, translated high-high relations, covariance, $\displaystyle{\mathfrak{sl}(2)}$ closure, star structure, thousands of high-mode Jacobi overlaps and the character through level fourteen are checked in `higher_mode_virasoro_presentation.wl`.
+Thus using the higher modes as primitive quantum observables loses neither the global generators nor any vacuum descendant. The representative independence, translated high-high relations, covariance, $\displaystyle{\mathfrak{sl}(2)}$ closure, star structure, thousands of high-mode Jacobi overlaps and the character through level fourteen are checked in `Articles/Quantization in AdS/linearized gravity/archived/verification-scripts/higher_mode_virasoro_presentation.wl`.
 
 The finite commutator formulas determine the operators without choosing a symbol map. One can nevertheless construct a unique vacuum-normal symbol level by level after fixing the following triangular prescription. Let $\displaystyle{\mathcal{P}_{\geqslant2}(N)}$ be the partitions $\displaystyle{I=(i_{1}\geqslant\cdots\geqslant i_{r}\geqslant2)}$ of $\displaystyle{N}$ and define
 
@@ -690,31 +673,31 @@ $$\begin{align}
 \boxed{C_{u}^{(N)} =G_{N-u}^{-1}R_{u}^{(N)}G_{N}^{-1}}.
 \end{align}$$
 
-Thus the normal-symbol ambiguity is removed by the triangular prescription whenever the two Gram matrices are nonsingular. For the unitary vacuum module with $\displaystyle{c_{\mathrm{q}}>1}$ this holds after removing the $\displaystyle{SL(2,\mathbb{R})}$ null module. At a Kac zero the recursion correctly becomes singular and the symbol must instead be defined on the corresponding quotient.
+Thus the normal-symbol ambiguity is removed by the triangular prescription whenever the two Gram matrices are nonsingular. For the unitary vacuum module with $\displaystyle{c>1}$ this holds after removing the $\displaystyle{SL(2,\mathbb{R})}$ null module. At a Kac zero the recursion correctly becomes singular and the symbol must instead be defined on the corresponding quotient.
 
 The first nontrivial blocks are
 
 $$\begin{align}
-\widehat{F}_{0}^{\mathrm{normal}} &=\dfrac{4}{c_{\mathrm{q}}}\widehat{H}_{-2}\widehat{H}_{2} +\dfrac{3}{2c_{\mathrm{q}}}\widehat{H}_{-3}\widehat{H}_{3} \\
-&\quad+\dfrac{4(c_{\mathrm{q}}+8)}{c_{\mathrm{q}}(5c_{\mathrm{q}}+22)}
+\widehat{F}_{0}^{\mathrm{normal}} &=\dfrac{4}{c}\widehat{H}_{-2}\widehat{H}_{2} +\dfrac{3}{2c}\widehat{H}_{-3}\widehat{H}_{3} \\
+&\quad+\dfrac{4(c+8)}{c(5c+22)}
 \widehat{H}_{-4}\widehat{H}_{4} \\
-&\quad-\dfrac{24}{c_{\mathrm{q}}(5c_{\mathrm{q}}+22)} \left(\widehat{H}_{-4}\widehat{H}_{2}^{2} +\widehat{H}_{-2}^{2}\widehat{H}_{4}\right) \\
-&\quad-\dfrac{176}{c_{\mathrm{q}}^{2}(5c_{\mathrm{q}}+22)}
+&\quad-\dfrac{24}{c(5c+22)} \left(\widehat{H}_{-4}\widehat{H}_{2}^{2} +\widehat{H}_{-2}^{2}\widehat{H}_{4}\right) \\
+&\quad-\dfrac{176}{c^{2}(5c+22)}
 \widehat{H}_{-2}^{2}\widehat{H}_{2}^{2} +\mathcal{O}_{\mathrm{level}}(5), \\
-\widehat{F}_{1}^{\mathrm{normal}} &=\dfrac{2}{c_{\mathrm{q}}}\widehat{H}_{-2}\widehat{H}_{3} +\dfrac{1}{c_{\mathrm{q}}}\widehat{H}_{-3}\widehat{H}_{4} +\mathcal{O}_{\mathrm{level}}(5), \\
-\widehat{F}_{-1}^{\mathrm{normal}} &=\dfrac{2}{c_{\mathrm{q}}}\widehat{H}_{-3}\widehat{H}_{2} +\dfrac{1}{c_{\mathrm{q}}}\widehat{H}_{-4}\widehat{H}_{3} +\mathcal{O}_{\mathrm{level}}(4).
+\widehat{F}_{1}^{\mathrm{normal}} &=\dfrac{2}{c}\widehat{H}_{-2}\widehat{H}_{3} +\dfrac{1}{c}\widehat{H}_{-3}\widehat{H}_{4} +\mathcal{O}_{\mathrm{level}}(5), \\
+\widehat{F}_{-1}^{\mathrm{normal}} &=\dfrac{2}{c}\widehat{H}_{-3}\widehat{H}_{2} +\dfrac{1}{c}\widehat{H}_{-4}\widehat{H}_{3} +\mathcal{O}_{\mathrm{level}}(4).
 \end{align}$$
 
-Here $\displaystyle{\mathcal{O}_{\mathrm{level}}(N)}$ means terms whose positive-mode factors have total level at least $\displaystyle{N}$; it is not an expansion only in the polynomial degree. The large-$\displaystyle{c_{\mathrm{q}}}$ quadratic coefficient tends to $\displaystyle{12/[c_{\mathrm{q}}(n^{2}-1)]}$, agreeing with the classical symbol after $\displaystyle{c_{\mathrm{q}}\to c_{\mathrm{cl}}}$ at leading order. Starting at level four, mixing with multiparticle descendants forces the displayed cubic and quartic terms.
+Here $\displaystyle{\mathcal{O}_{\mathrm{level}}(N)}$ means terms whose positive-mode factors have total level at least $\displaystyle{N}$; it is not an expansion only in the polynomial degree. The large-$\displaystyle{c}$ quadratic coefficient tends to $\displaystyle{12/[c(n^{2}-1)]}$, agreeing with the classical symbol after $\displaystyle{c\to c_{\mathrm{cl}}}$ at leading order. Starting at level four, mixing with multiparticle descendants forces the displayed cubic and quartic terms.
 
-The recursion has been implemented through level eight for all three $\displaystyle{u=-1,0,1}$ operators in `vacuum_normal_symbol_reconstruction.wl`. It reproduces their exact Virasoro action on every vacuum descendant through that cutoff. This is an exact finite-level statement and a formal all-level recursion; convergence of the resulting infinite normal series in an operator topology is not established.
+The recursion has been implemented through level eight for all three $\displaystyle{u=-1,0,1}$ operators in `Articles/Quantization in AdS/linearized gravity/archived/verification-scripts/vacuum_normal_symbol_reconstruction.wl`. It reproduces their exact Virasoro action on every vacuum descendant through that cutoff. This is an exact finite-level statement and a formal all-level recursion; convergence of the resulting infinite normal series in an operator topology is not established.
 
 ---
 
-Or we can expand the $\displaystyle{H_{u},u=-1,0,1}$ in $\displaystyle{c_{q}}$. Write
+Or we can expand the $\displaystyle{H_{u},u=-1,0,1}$ in $\displaystyle{c}$. Write
 
 $$\begin{align}
-H_{u} & =\dfrac{1}{c_{\mathrm{q}}}\mathcal{N}_{u}^{(1)} +\dfrac{1}{c_{\mathrm{q}}^{2}}\mathcal{N}_{u}^{(2)}+\mathcal{O}(c_{\mathrm{q}}^{-3}), & u=-1,0,1
+H_{u} & =\dfrac{1}{c}\mathcal{N}_{u}^{(1)} +\dfrac{1}{c^{2}}\mathcal{N}_{u}^{(2)}+\mathcal{O}(c^{-3}), & u=-1,0,1
 \end{align}$$
 
 ### $\displaystyle{u=0}$
@@ -732,7 +715,7 @@ $$\begin{align}
 \implies A^{(0)}_{p} & =\dfrac{12}{p^{2}-1}
 \end{align}$$
 
-The superscript in $\displaystyle{\mathcal{N}_{u}^{(r)}}$ denotes the order in $\displaystyle{1/c_{\mathrm q}}$, not the positive-mode level used in the triangular blocks above. Define
+The superscript in $\displaystyle{\mathcal{N}_{u}^{(r)}}$ denotes the order in $\displaystyle{1/c}$, not the positive-mode level used in the triangular blocks above. Define
 
 $$\begin{align}
 d_{n} & :=\dfrac{n(n^{2}-1)}{12}, & \mathcal{P}_{N} & :=\left\{(a,b):a\geqslant b\geqslant2,\ a+b=N\right\},
@@ -767,7 +750,7 @@ $$\begin{align}
 B_{n}^{(0)} & :=-\dfrac{1}{d_{n}^{2}}\left[ \sum_{m=2}^{n-2}A_{m}^{(0)}(n+m)^{2}d_{n-m} +2d_{n}\sum_{(a,b)\in\mathcal{P}_{n}} \Gamma_{ab}^{(0)}(2a+b)d_{b} \right].
 \end{align}$$
 
-Then the complete vacuum-normal symbol through $\displaystyle{\mathcal{O}(c_{\mathrm q}^{-2})}$ is determined by
+Then the complete vacuum-normal symbol through $\displaystyle{\mathcal{O}(c^{-2})}$ is determined by
 
 $$\begin{align}
 \mathcal{N}_{0}^{(2)} & =\sum_{n=2}^{\infty}B_{n}^{(0)}\widehat{H}_{-n}\widehat{H}_{n} \\
@@ -780,7 +763,7 @@ $$\begin{align}
 \Gamma_{22}^{(0)}&=-\dfrac{24}{5}, & \Gamma_{32}^{(0)}&=-4, & B_{4}^{(0)}&=\dfrac{72}{25}, & B_{5}^{(0)}&=-\dfrac{6}{5},
 \end{align}$$
 
-which reproduce the large-$\displaystyle{c_{\mathrm q}}$ expansion of the displayed level-four block and its level-five continuation.
+which reproduce the large-$\displaystyle{c}$ expansion of the displayed level-four block and its level-five continuation.
 
 ### The $\displaystyle{u=1}$ Kernel
 
@@ -856,4 +839,4 @@ $$\begin{align}
 \widetilde{\Gamma}_{ab}^{(1)}\widehat{H}_{-(a+b+1)}\widehat{H}_{b}\widehat{H}_{a}.
 \end{align}$$
 
-The leading kernels follow from the central contractions in the Virasoro commutators. Cancelling the remaining quadratic commutator residuals fixes $\displaystyle{\Gamma_{ab}^{(0)}}$, $\displaystyle{\Gamma_{ab}^{(1)}}$, and $\displaystyle{\widetilde{\Gamma}_{ab}^{(1)}}$; matching the one-particle matrix elements then fixes $\displaystyle{B_{n}^{(0)}}$ and $\displaystyle{B_{n}^{(1)}}$. Expanding the exact triangular Gram recursion and comparing every coefficient through $\displaystyle{\mathcal{O}(c_{\mathrm q}^{-2})}$ gives zero residual for $\displaystyle{\widehat{F}_{0}^{\mathrm{normal}}}$ at levels two through eight and for $\displaystyle{\widehat{F}_{1}^{\mathrm{normal}}}$ at levels three through eight. This is a formal all-level large-central-charge construction; convergence of the infinite sums on a common dense operator domain is not established.
+The leading kernels follow from the central contractions in the Virasoro commutators. Cancelling the remaining quadratic commutator residuals fixes $\displaystyle{\Gamma_{ab}^{(0)}}$, $\displaystyle{\Gamma_{ab}^{(1)}}$, and $\displaystyle{\widetilde{\Gamma}_{ab}^{(1)}}$; matching the one-particle matrix elements then fixes $\displaystyle{B_{n}^{(0)}}$ and $\displaystyle{B_{n}^{(1)}}$. Expanding the exact triangular Gram recursion and comparing every coefficient through $\displaystyle{\mathcal{O}(c^{-2})}$ gives zero residual for $\displaystyle{\widehat{F}_{0}^{\mathrm{normal}}}$ at levels two through eight and for $\displaystyle{\widehat{F}_{1}^{\mathrm{normal}}}$ at levels three through eight. This is a formal all-level large-central-charge construction; convergence of the infinite sums on a common dense operator domain is not established.

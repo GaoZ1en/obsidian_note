@@ -1,5 +1,9 @@
 (* ::Package:: *)
 
+(* ARCHIVED REPRESENTATIVE CHECK: this script sets cQ=C+13 and verifies
+   consequences of the Cotler--Jensen/reference zeta representative.  It does
+   not derive a scheme-independent residual central-charge shift. *)
+
 (*
   Algebraic checks for the local one-loop renormalization C -> C+13 of the
   vacuum-orbit Kirillov--Kostant form.  In orbit coordinates the two-form

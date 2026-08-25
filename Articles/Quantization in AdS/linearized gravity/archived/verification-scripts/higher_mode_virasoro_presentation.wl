@@ -1,5 +1,8 @@
 (* ::Package:: *)
 
+(* ARCHIVED VERIFICATION: the presentation is checked conditional on the
+   generic input cQ and does not fix a finite central-charge normalization. *)
+
 (*
   Consistency checks for a presentation of Virasoro using only generators
   h[p] with |p| >= 2 and the central scalar.  The three missing modes are

@@ -1,5 +1,9 @@
 (* ::Package:: *)
 
+(* ARCHIVED CONDITIONAL CHECK: the Virasoro central parameter is an input.
+   The zeta-derived 13 records the Cotler--Jensen/reference representative and
+   is not fixed by the algebraic reconstruction below. *)
+
 (*
   Exact reconstruction of H[0], H[1], and H[-1] from Virasoro modes
   with |p| >= 2, together with the vacuum-orbit central-charge shift.

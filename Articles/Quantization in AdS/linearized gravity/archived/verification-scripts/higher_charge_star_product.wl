@@ -1,5 +1,8 @@
 (* ::Package:: *)
 
+(* ARCHIVED VERIFICATION: cQ is a generic chosen Virasoro central parameter;
+   this associativity/cutoff diagnostic does not determine its value. *)
+
 (*
   Second-order Kontsevich star product for the higher-charge Poisson tensor.
   The script also demonstrates why a hard Virasoro mode cutoff is not a

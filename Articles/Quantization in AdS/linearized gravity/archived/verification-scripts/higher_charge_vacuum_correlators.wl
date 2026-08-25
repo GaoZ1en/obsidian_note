@@ -1,5 +1,8 @@
 (* ::Package:: *)
 
+(* ARCHIVED VERIFICATION: the correlators are algebraic consequences of a
+   chosen generic Virasoro central parameter cQ; they do not fix cQ. *)
+
 (*
   Ordered vacuum correlators of higher Virasoro charges, exact Ward checks,
   chiral factorization, and the leading Wick--Kontsevich equivalence map.

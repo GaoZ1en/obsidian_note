@@ -1,5 +1,9 @@
 (* ::Package:: *)
 
+(* ARCHIVED REPRESENTATIVE CHECK: the zeta sum implements the external
+   Cotler--Jensen/reference +13 prescription.  It does not establish that the
+   residual shift is invariant under finite Einstein-coupling redefinition. *)
+
 (*
   Liouville measure in higher-charge coordinates and the projected
   determinant of the Virasoro Poisson operator.  The thermal zero-point

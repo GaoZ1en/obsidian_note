@@ -1,5 +1,9 @@
 (* ::Package:: *)
 
+(* ARCHIVED VERIFICATION: the Gram recursion is conditional on the generic
+   input cQ and does not determine the split between classical coupling and a
+   residual quantum shift. *)
+
 (*
   Triangular vacuum-normal-symbol reconstruction on the Virasoro vacuum
   module.  The convention is
