@@ -1,7 +1,7 @@
 PYTHON := python3
 LATEXMK := latexmk
 
-VAULT_ROOT := ../../../..
+VAULT_ROOT := ../../../../..
 BUILDER := $(VAULT_ROOT)/scripts/pandoc-texfiles/build_texfiles.py
 CONFIG := pandoc-texfiles.yaml
 

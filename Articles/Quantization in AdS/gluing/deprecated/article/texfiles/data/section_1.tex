@@ -1,118 +1,235 @@
-\section{Finite-coupling gluing}\label{sec:gluing-formalism}
+\section{Regional scalar theory, CPS, quantization and interface gluing}\label{sec:regional-quantum-gluing}
 
-Consider two field theories on spacetime regions $M_1$ and $M_2$ whose boundaries contain two copies of the same timelike hypersurface $\Gamma$. The copies are identified only after the interface interaction is specified. We orient the outward normals independently on the two regions.
+This section fixes the order of construction used throughout the paper. We first quantize each scalar region with a Neumann condition at its artificial boundary. Only after the regional oscillator algebras and Hilbert spaces have been defined do we add the interface interaction.
 
-\subsection{Interface action and cut equations}\label{subsec:interface-action}
+\subsection{Regional scalar theory}\label{subsec:regional-scalar}
 
-Let $q_i^A$ denote the boundary traces that are to be identified. The index $A$ may contain tensor and tangential spacetime indices. Write the cut-supported part of the bulk variation as
+Let
 
 \begin{align}
-\delta S_{\mathrm{bulk}}\big|_{\Gamma}
-=-\int_{\Gamma}\left(\rho_{1A}\,\delta q_1^A+\rho_{2A}\,\delta q_2^A\right),
+M_i=\mathbb R_t\times\Sigma_i
 \end{align}
 
-where $\rho_{iA}$ is the outward response on the $i$th face. For a scalar cut by a coordinate $s$ increasing from $M_1$ to $M_2$, one has $\rho_1=\partial_s\phi_1$ and $\rho_2=-\partial_s\phi_2$.
-
-For a nongauge field, define the mismatch by
+be a static spacetime region with spatial metric $h_i$, lapse equal to one, physical outer boundary $\partial_{\rm phys}\Sigma_i$, and artificial interface $\Gamma_i$. For a real scalar of mass $m>0$, take
 
 \begin{align}
-\eta^A=q_1^A-q_2^A.
-\end{align}
-
-In a gauge theory this expression is replaced by its gauge-invariant dressed version. The Maxwell example below uses $\eta_a=A_{1,a}-A_{2,a}-\partial_a\varphi$, where $\varphi$ is a transition field on $\Gamma$.
-
-Let $G_{AB}$ be the local interface bilinear appropriate to the fields and induced geometry. The finite-coupling gluing action is
-
-\begin{align}
-S_{\Gamma,g}=-\frac{g}{2}\int_{\Gamma}\eta^A G_{AB}\eta^B,
-\qquad g>0.
-\end{align}
-
-Its variation, together with the two bulk variations, gives
-
-\begin{align}
-\rho_{1A}=-gG_{AB}\eta^B,
-\qquad
-\rho_{2A}=+gG_{AB}\eta^B.
-\end{align}
-
-Thus outward flux is balanced at every finite coupling,
-
-\begin{align}
-\rho_{1A}+\rho_{2A}=0.
-\end{align}
-
-The corresponding time-translation Noether charge contains a positive interface contribution whenever $G_{AB}$ is positive on the spatial interface data. Consequently, for a family with bounded Noether charge,
-
-\begin{align}
-g\longrightarrow\infty
-\qquad\Longrightarrow\qquad
-\eta^A\longrightarrow0.
-\end{align}
-
-The strong-coupling theory therefore identifies the dressed traces and simultaneously balances their outward responses. The limit $g\to0$ removes the interaction and returns the direct sum of the two region theories. These statements concern the limiting classical solution spaces and their quadratic forms. Convergence of individual spectral branches can be studied example by example, while convergence of the full quantum representations is a separate question.
-
-\subsection{Covariant phase space}\label{subsec:formalism-cps}
-
-Suppose the complete action has the variation
-
-\begin{align}
-\delta S_g
-=\int_{M_1\cup M_2}E_a\delta\Psi^a
-+\theta_g\big|_{\Sigma_f}-\theta_g\big|_{\Sigma_i},
-\end{align}
-
-after the cut equations have been imposed. The pre-symplectic potential and pre-symplectic form are
-
-\begin{align}
-\theta_g=\theta_1+\theta_2+\theta_{\Gamma,g},
-\qquad
-\omega_g=\delta\theta_g.
-\end{align}
-
-For the scalar interactions used below, the cut action contains no time derivatives and $\theta_{\Gamma,g}=0$. If a transition field occurs with a time derivative, as in Maxwell theory, its time-endpoint term contributes to $\theta_{\Gamma,g}$ and cannot be omitted.
-
-The pre-phase space is the set of bulk solutions satisfying the finite-coupling cut equations. For gauge theories one then quotients the kernel of $\omega_g$. A positive-frequency physical mode $\Psi_I$ is normalized by the CPS contraction
-
-\begin{align}
-(\Psi_I,\Psi_J)_g
-=iX_J^*\mathbin{\cdot}X_I\mathbin{\cdot}\omega_g
-=\delta_{IJ}.
-\end{align}
-
-The field expansion and reduced symplectic form are
-
-\begin{align}
-\Psi=\sum_I\left(a_I\Psi_I+a_I^\dagger\Psi_I^*\right),
-\qquad
-\omega_g=i\sum_I\delta a_I^\dagger\wedge\delta a_I,
-\end{align}
-
-so quantization gives
-
-\begin{align}
-[a_I,a_J^\dagger]=\delta_{IJ}.
-\end{align}
-
-Spatial integrals used later are evaluations of this CPS contraction for particular representatives. They are not independent prescriptions for normalizing the fields.
-
-\subsection{Boundary-polarized representation}\label{subsec:boundary-polarized}
-
-There is an equivalent representation of the same interface relation. After the boundary Legendre transform adapted to the outward response, introduce an independently varied interface field $d_A$ and take
-
-\begin{align}
-\widetilde S_{\Gamma,g}
-=\int_{\Gamma}\left[
-d_A\eta^A+\frac{1}{2g}d_A(G^{-1})^{AB}d_B
+S_i[\phi_i]
+=\frac12\int\mathrm dt\int_{\Sigma_i}\mathrm d^{d}x\,\sqrt{h_i}
+\left[
+\dot\phi_i^2-h_i^{ab}\partial_a\phi_i\partial_b\phi_i-m^2\phi_i^2
 \right].
 \end{align}
 
-Its interface equation is
+The physical outer boundary condition is held fixed by the model. At the artificial boundary we use Neumann boundary conditions before the regions are coupled,
 
 \begin{align}
-d_A=-gG_{AB}\eta^B.
+n_i^a\partial_a\phi_i\big|_{\Gamma_i}=0.
 \end{align}
 
-Eliminating $d_A$ returns $S_{\Gamma,g}$. For a scalar, $d_A$ is the common oriented derivative at the cut. For Maxwell theory, the analogous representation is quadratic in $n_\mu F^{\mu a}$ with coefficient proportional to $g^{-1}$. The two representations describe the same cut equations and the same CPS reduction; they are different boundary polarizations of one gluing theory.
+Varying the action gives
 
-Section $\ref{sec:numerics}$ turns these continuum constructions into finite matrices. The scalar interactions become finite-rank stiffness updates, whereas the Maxwell transition field changes the CPS kinetic metric and therefore leads to a generalized eigenvalue problem.
+\begin{align}
+  \delta S_{i} & = \int _{t_{i}}^{t_{f}} \mathrm{d}t\int _{\Sigma _{i}}\mathrm{d}^{d}x\sqrt{ h_{i} }(-\partial _{t}^{2}+\nabla ^{2}_{h_{i}}-m^{2})\phi _{i}\delta \phi _{i} \\
+ & +\int _{\Sigma _{i}}\mathrm{d}^{d}x \sqrt{ h_{i} } \dot{\phi}_{i}\delta \phi _{i}|^{t_{f}}_{t_{i}}
+\end{align}
+
+The regional solution space $\mathcal P_i$ consists of real solutions satisfying these boundary conditions. We assume that the spatial operator $\mathcal{D}_i=-\nabla ^{2}_{h_{i}}+m^{2}$ is positive and self-adjoint, with a complete orthonormal basis of real modes
+
+\begin{align}
+\mathcal D_i u_{i,n}=\omega_{i,n}^2u_{i,n},
+\qquad
+\int_{\Sigma_i}\mathrm d^d x\,\sqrt{h_i}\,
+u_{i,n}u_{i,r}=\delta_{nr}.
+\end{align}
+
+These hypotheses hold for the compact interval and square used below. The global $\mathrm{AdS}_2$ appendix instead uses the standard normalizable boundary condition at conformal infinity.
+
+\subsection{CPS and canonical quantization}\label{subsec:regional-cps-quantization}
+
+The variation defines the pre-sympletic potential and pre-symplectic form
+
+\begin{align}
+\Theta_i
+=\int_{\Sigma_i}\mathrm d^d x\,\sqrt{h_i}\,
+\dot\phi_i\,\delta\phi_i,
+\qquad
+\Omega_i=\delta\Theta_i
+=\int_{\Sigma_i}\mathrm d^d x\,\sqrt{h_i}\,
+\delta\dot\phi_i\wedge\delta\phi_i.
+\end{align}
+
+The pre-symplectic form $\Omega_i$ is independent of the Cauchy slice. Introduce positive-frequency solutions
+
+\begin{align}
+U_{i,n}(t,x)
+=\frac{e^{-i\omega_{i,n}t}}{\sqrt{2\omega_{i,n}}}
+u_{i,n}(x).
+\end{align}
+
+We introduce a vector field of the configuration space $X_{i,n}$ associated with $U_{i,n}(t,x)$ as
+
+\begin{align}
+X_{i,n}=\int \mathrm{d}t\mathrm{d}^{d}x U_{i,n}(t,x) \frac{\delta}{\delta \phi(t,x)}
+\end{align}
+
+The normalization of $U_{i,n}$ is fixed by the CPS contraction,
+
+\begin{align}
+iX_{i,r}^*\mathbin{\cdot}X_{i,n}\mathbin{\cdot}\omega_i
+=\delta_{nr}.
+\end{align}
+
+Expanding a real solution as
+
+\begin{align}
+\phi_i
+=\sum_n\left(a_{i,n}U_{i,n}+a_{i,n}^\dagger U_{i,n}^*\right)
+\end{align}
+
+gives
+
+\begin{align}
+\Omega_i
+=i\sum_n\delta a_{i,n}^\dagger\wedge\delta a_{i,n},
+\qquad
+[a_{i,n},a_{j,r}^\dagger]
+=\delta_{ij}\delta_{nr}.
+\end{align}
+
+Equivalently, at a fixed time write
+
+\begin{align}
+\phi_i(x)=\sum_n Q_{i,n}u_{i,n}(x),
+\qquad
+\dot{\phi}_i(x)=\sum_n P_{i,n}u_{i,n}(x),
+\end{align}
+
+so that
+
+\begin{align}
+[Q_{i,n},P_{j,r}]=i\delta_{ij}\delta_{nr},
+\qquad
+H_i=\frac12\sum_n\left(P_{i,n}^2+\omega_{i,n}^2Q_{i,n}^2\right).
+\end{align}
+
+The uncoupled quantum theory is therefore
+
+\begin{align}
+\mathcal H_{\rm reg}
+=\mathcal H_L\otimes\mathcal H_R,
+\qquad
+H_{\rm reg}=H_L\otimes\mathbf 1+\mathbf 1\otimes H_R.
+\end{align}
+
+This product theory is the starting point for the interface interaction.
+
+\subsection{Interface coupling for quantized regions}\label{subsec:quantum-interface-coupling}
+
+Identify the two copies of the interface geometrically and let
+
+\begin{align}
+q_i(\mathbf y)=\phi_i\big|_{\Gamma_i}(\mathbf y)
+\end{align}
+
+denote their trace operators. We couple the already quantized regional theories through the quadratic interface interaction
+
+\begin{align}
+S_\Gamma =-\frac{g}{2} \int_\Gamma \mathrm{d}^{d-1}y \sqrt{ \gamma }(q_L-q_R)^{2}, \qquad g>0
+\end{align}
+
+the corresponding contribution to the Hamiltonian is
+
+\begin{align}
+H_\Gamma
+=\frac g2\int_\Gamma\mathrm d^{d-1}y\,\sqrt\gamma\,
+\bigl(q_L-q_R\bigr)^2,
+\qquad g>0.
+\end{align}
+
+The total Hamiltonian is therefore
+
+\begin{align}
+H(g)=H_{\rm reg}+H_\Gamma .
+\end{align}
+
+This construction should be understood as a interface interaction realization for the chosen regional theories. At finite coupling the two regional fields remain independent degrees of freedom, while increasing $g$ suppresses their trace mismatch. In the strong-coupling limit the target is the theory in which the two boundary field traces are identified.
+
+For the scalar interaction considered here, $H_\Gamma$ contains no time derivatives and introduces no additional canonical variable at the interface. The canonical symplectic structure therefore remains the direct sum of the two regional structures obtained in Section~\ref{subsec:regional-cps-quantization}; the interaction modifies only the Hamiltonian.
+
+\subsection{Mode truncation and boundary-response matching}\label{subsec:response-matching-general}
+
+To obtain a finite regulated quantum system, truncate the regional mode expansions to a finite set of oscillators. Let $Q$ and $P$ collect all retained regional canonical coordinates and momenta. The restriction of the interface trace mismatch to the retained modes is a linear map
+
+\begin{align}
+C_N Q .
+\end{align}
+
+More generally, several interfaces or trace components may be described by a positive interface matrix $A_N$. The regulated Hamiltonian then takes the form
+
+\begin{align}
+H_N
+=\frac12P^{\mathrm T}P+\frac12Q^{\mathrm T}K_NQ,
+\qquad
+K_N=D_N+C_N^{\mathrm T}A_NC_N,
+\end{align}
+
+where $D_N$ is the diagonal stiffness matrix of the uncoupled regional oscillators. For a single scalar interface, $A_N$ reduces to the cutoff-dependent coupling $g_N$. Since $C_N^{\mathrm T}A_NC_N$ is positive semidefinite, $K_N$ is positive whenever the regional stiffness is positive. Orthogonally diagonalizing $K_N$ gives a finite collection of coupled harmonic oscillators and hence a well-defined vacuum state.
+
+The cutoff dependence of $A_N$ is fixed by the boundary response. Eliminating the retained regional coordinates from the finite eigenvalue equation shows that the interface sees
+
+\begin{align}
+R_N(z)
+=C_N(D_N-zI)^{-1}C_N^{\mathrm T},
+\end{align}
+
+away from poles of the uncoupled problem. For invertible $A_N$, the matrix determinant lemma gives
+
+\begin{align}
+\frac{\det(K_N-zI)}{\det(D_N-zI)}
+=\det(A_N)\det\left(A_N^{-1}+R_N(z)\right).
+\end{align}
+
+This divided expression is a convenient secular equation only away from free poles; eigenvalues at a pole must be checked in the original matrix problem.
+
+Let $R(z)$ denote the corresponding continuum boundary response in the same spectral convention, and define the contribution of the omitted modes by
+
+\begin{align}
+T_N(z)=R(z)-R_N(z).
+\end{align}
+
+If the continuum interface matrix is $A$, its secular matrix is
+
+\begin{align}
+A^{-1}+R(z).
+\end{align}
+
+Matching the truncated and continuum responses at a chosen spectral parameter $z_*$ therefore requires
+
+\begin{align}
+A_N
+=\left(A^{-1}+T_N(z_*)\right)^{-1},
+\end{align}
+
+because then
+
+\begin{align}
+A_N^{-1}+R_N(z_*)
+=A^{-1}+R(z_*).
+\end{align}
+
+We choose $z_*=0$ after subtracting any common mass shift, so that $z$ is the spatial spectral parameter. The remaining difference between the regulated and continuum secular matrices is then
+
+\begin{align}
+T_N(z)-T_N(0).
+\end{align}
+
+For an isolated nondegenerate root in a fixed spectral window, this subtraction removes the leading static response error. It does not give a convergence rate uniform up to the cutoff, and by itself it does not imply convergence of eigenvectors, states, or arbitrary observables.
+
+At the perfectly joined endpoint the continuum coupling is formally infinite. In a single interface channel, $A^{-1}=0$, and the matching rule reduces to
+
+\begin{align}
+A_N^{(\infty)}=T_N(0)^{-1}.
+\end{align}
+
+Thus the joined theory is approached by a cutoff-dependent penalty whose divergence is fixed by the response of the omitted regional modes. This differs from imposing trace equality as a hard constraint inside the retained finite-dimensional space. Section~\ref{sec:two-intervals} makes each element of this construction explicit and tests both the resulting spectrum and the vacuum covariance.
+```

@@ -1,4 +1,4 @@
-\section{Conclusion}\label{sec:conclusion}
+# Conclusion
 
 We constructed the regional free-scalar theories from their covariant phase spaces, normalized their Neumann modes, and canonically quantized them before introducing any gluing interaction. A quadratic coupling of the two trace operators then turns the product of regional theories into a finite-dimensional Gaussian system after mode truncation.
 
