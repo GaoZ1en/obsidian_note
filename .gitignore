@@ -48,3 +48,6 @@ tools/wechat-decrypt/
 
 # Ignore RTK.md
 /.RTK.md
+
+# Ignore commandcode configurations
+/.commandcode/**

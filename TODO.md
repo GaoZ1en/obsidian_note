@@ -18,6 +18,10 @@
 	- read [[Literature Notes/Chandrasekaran/Subregion algebras in classical and quantum gravity (2601.07915v1)|Subregion algebras in classical and quantum gravity (2601.07915v1)]]
 	-
 
+#### 常用prompts
+
+- 你需要同时看 https://research-radar.gao-zien.chatgpt.site/problems 和我的库 https://github.com/GaoZ1en/obsidian\_note ，从而针对我最近的研究方向来进行讨论。
+
 ##### Learn from Research, Go to Europe or Canada (CSC)
 
 1. 多看点儿网课...这边的课太垃圾了
