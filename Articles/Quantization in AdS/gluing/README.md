@@ -15,6 +15,7 @@ The centered construction, its finite truncation, the feedback equation, and the
 - `lifting operator formalism.md`: companion rewriting of the nonhomogeneous-boundary construction using trace maps and lifting operators, including field-valued interface histories and its interval specialization.
 - `DN boundary condition.md`: one-region Dirichlet-to-Neumann prototype illustrating the same prescribe-first, release-second logic.
 - `functional analysis proof of well-definedness of finite truncation.md`: proof of form density, Mosco and resolvent convergence, energy-space wave and trace convergence, weak flux matching, and intrinsic spatially smeared Gaussian convergence.
+- `reduced-state-open-system-scalar.md`: exact finite glued Gaussian state, distinct regional reductions, Williamson density matrices and entropy, region-2 memory/noise elimination, the precise KMS/FDR boundary, and the finite-partial-trace to continuum-state-restriction theorem.
 - `non-central cut.md`: quantize-first construction for an arbitrary single cut, including the unequal-length finite port regulator and continuum cut-position independence.
 - `associativity.md`: parenthesization independence for a fixed three-region partition, derived from independent endpoint histories and a common two-port regulator.
 - `Fock failure.md`: optional comparison with a declared sharp tensor product of strict-Dirichlet regional Fock representations. It is not needed for intrinsic canonical gluing.
@@ -77,7 +78,10 @@ Verified in the active centered scalar line:
 - recovery of the complete connected spectrum, including the exceptional zero-interface sector;
 - the variational finite port equation and nondegenerate finite canonical system;
 - the reconstructed finite-$N$ canonical normal-mode algebra;
+- the finite glued Gaussian covariance, the interior and port-complete regional partial traces, their Williamson spectra, and the exact operator-level region-2 memory/noise equation;
+- the isolated-region KMS fluctuation--dissipation relation together with the proof that the correlated glued vacuum does not by itself define a product-environment channel;
 - form, resolvent, energy-space wave, interface-trace, symplectic, and spatially smeared Gaussian convergence;
+- convergence of finite regional state restrictions on fixed bulk-smeared observables to the connected vacuum restricted to the region-1 algebra, without a trace-class continuum density-matrix claim;
 - arbitrary-cut spectrum recovery and continuum cut-position independence;
 - action-level, finite-regulator canonical, and continuum associativity for every fixed finite partition;
 - for the optional declared sharp regional product reference, a fixed-row proof that the continuum creation block is not Hilbert--Schmidt.

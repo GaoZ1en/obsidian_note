@@ -102,8 +102,7 @@ These are null characteristic arrows, not feedback forces obtained by varying a 
 **Cross-note convention bridge.** This note uses
 
 $$\begin{align}
-\Omega_{\rm here}=\int\delta q\wedge\delta\pi
-=-\int\delta\pi\wedge\delta q=-\Omega_{\rm formalism}, \tag{1.7}
+\Omega_{\rm here}=\int\delta q\wedge\delta\pi =-\int\delta\pi\wedge\delta q=-\Omega_{\rm formalism}, \tag{1.7}
 \end{align}$$
 
 where `formalism.md` and `gluing formalism.md` use the opposite ordering. Here the Hamiltonian-vector convention (2.4a) gives $P_{\rm here}=-\Omega_{\rm here}^{-1}$; converting the two-form and inverse convention together leaves $\{q,\pi\}_{\mathrm P}=+\delta$ unchanged. No sign below should therefore be flipped merely when comparing the files. Functional-analytically, “strong symplectic” is reserved for a Hilbert/Banach space on which $\Omega^\flat:x\mapsto\Omega(x,\cdot)$ is a bounded isomorphism onto the full continuous dual; a bounded nondegenerate form whose flat map is only injective is called weak symplectic.
@@ -717,30 +716,23 @@ $$\begin{align}
 Then $ck\in\dot{\mathcal Q}_A$ for every $c\in\mathbb R$, although $ck\notin L^2(dr)$ when $c\neq0$. The KL transform extends uniquely and isometrically to
 
 $$\begin{align}
-\dot{\mathcal U}:\dot{\mathcal Q}_A\xrightarrow{\ \cong\ }L^2((0,\infty),\omega^2d\omega),\qquad
-\mathfrak a[q]=\int_0^\infty\omega^2|\dot{\mathcal U}q(\omega)|^2d\omega.
+\dot{\mathcal U}:\dot{\mathcal Q}_A\xrightarrow{\ \cong\ }L^2((0,\infty),\omega^2d\omega),\qquad \mathfrak a[q]=\int_0^\infty\omega^2|\dot{\mathcal U}q(\omega)|^2d\omega.
 \end{align}$$
 
 Together with the ordinary unitary transform of $p\in L^2(dr)$, this extension intertwines the homogeneous energy evolution with boost time. Explicitly, if $\widetilde q=\dot{\mathcal U}q$ and $\widetilde p=\mathcal Up$, then
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 \widetilde q_\eta&=\cos(\omega\eta)\widetilde q+\frac{\sin(\omega\eta)}{\omega}\widetilde p,\\
 \widetilde p_\eta&=-\omega\sin(\omega\eta)\widetilde q+\cos(\omega\eta)\widetilde p,
-\end{aligned}
-$$
+\end{aligned}$$
 
 and the corresponding coefficient (4.9) obeys $b_\eta(\omega)=e^{-i\omega\eta}b_0(\omega)$. Hence KL/spectral evolution extends continuously to $\dot{\mathcal Q}_A\oplus L^2$ and commutes with boost evolution.
 
 **Proof.** Choose $\chi\in C^\infty(\mathbb R)$ with $0\leq\chi\leq1$, $\chi=0$ on $(-\infty,-2]$, and $\chi=1$ on $[-1,\infty)$. For $R>1$ set $\chi_R(r)=\chi(r/R)$ and $k_R=\chi_Rk\in C_c^\infty(\mathbb R)$. Since $k(r)\to1$, $k'(r)=O(e^r)$ as $r\to-\infty$, and $k$ is right-compact,
 
 $$\begin{aligned}
-\mathfrak a[k-k_R]
-&\leq2\int_{-\infty}^{-R}|k'|^2dr
-+2\|k\|_{L^\infty(-\infty,-R)}^2\|\chi_R'\|_2^2
-+\int_{-\infty}^{-R}e^{2r}|k|^2dr\\
-&\longrightarrow0,
-\qquad \|\chi_R'\|_2^2=R^{-1}\|\chi'\|_2^2,
+\mathfrak a[k-k_R] &\leq2\int_{-\infty}^{-R}|k'|^2dr +2\|k\|_{L^\infty(-\infty,-R)}^2\|\chi_R'\|_2^2 +\int_{-\infty}^{-R}e^{2r}|k|^2dr\\
+&\longrightarrow0, \qquad \|\chi_R'\|_2^2=R^{-1}\|\chi'\|_2^2,
 \end{aligned}$$
 
 where the last potential tail is $O(e^{-2R})$. Thus $k\in\dot{\mathcal Q}_A$. On the compact form core, the spectral theorem gives $\mathfrak a[h]=\int\omega^2|\mathcal Uh|^2d\omega$. Since this core is a form core for $A$, completion gives the displayed isometry onto $L^2(\omega^2d\omega)$. The two spectral evolution formulas preserve $\omega^2|\widetilde q|^2+|\widetilde p|^2$ pointwise and therefore extend by density; substitution into (4.9) gives $b_\eta=e^{-i\omega\eta}b_0$. $\square$
@@ -1019,12 +1011,12 @@ $$\begin{align}
 
 With the Hamiltonian-vector convention (2.4a), this says exactly that $X_{G^*\chi}=\gamma_{\partial D}E_m\chi$. Therefore
 
-$$\begin{aligned}
+$$\begin{align}
 P_{\partial D}(G^*\chi,G^*\psi) &=\Omega_{\partial D}^{\rm in} (\gamma E_m\chi,\gamma E_m\psi)\\
 &=\Omega_\Sigma(E_m\chi,E_m\psi)\\
 &=\int_D\chi(X)(E_m\psi)(X)d^2X\\
-&=\int_{D\times D}\chi(X)\Delta_m(X-Y)\psi(Y)d^2X\,d^2Y =\Delta_m(\chi,\psi). \tag{6.11b}
-\end{aligned}$$
+&=\int_{D\times D}\chi(X)\Delta_m(X-Y)\psi(Y)d^2X^{2}Y =\Delta_m(\chi,\psi). \tag{6.11b}
+\end{align}$$
 
 The second line is Stokes' identity and the third is Lemma 6.1a with $\varphi=E_m\psi$. Substitution into the explicit corner-complete formula (6.9) gives (6.11). The proof is entirely smeared; it uses only the smooth traces of $E_m\chi$ and $E_m\psi$, never a characteristic pullback of $\Delta_m$ itself. $\square$
 
@@ -1139,8 +1131,7 @@ $$\begin{align}
 induces the canonical Weyl $*$-isomorphism
 
 $$\begin{align}
-\alpha_{\rm glue}:\mathfrak W(S_{\mathbb M},\sigma_{\mathbb M}) \xrightarrow{\ \cong\ }
-\mathfrak W(S_{\rm glue},\sigma_{\rm glue}), \qquad \alpha_{\rm glue}\!\left(W_{\mathbb M}(f)\right) =W_{\rm glue}(\operatorname{Res}_{\rm glue}f).
+\alpha_{\rm glue}:\mathfrak W(S_{\mathbb M},\sigma_{\mathbb M}) \xrightarrow{\ \cong\ } \mathfrak W(S_{\rm glue},\sigma_{\rm glue}), \qquad \alpha_{\rm glue}\!\left(W_{\mathbb M}(f)\right) =W_{\rm glue}(\operatorname{Res}_{\rm glue}f).
 \end{align}$$
 
 On $S_{\mathbb M}^{\rm rad}:=\mathsf A_{\rm bif}(\mathcal C_{\rm bif}^{\rm boost})$, the radiation presentation $(\iota_L,\iota_R)$ identifies the target with $\mathcal D_{\rm glue}^-$ and gives the corresponding restricted isomorphism.

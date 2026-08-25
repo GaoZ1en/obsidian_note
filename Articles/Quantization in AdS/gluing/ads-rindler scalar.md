@@ -27,8 +27,7 @@ The reflecting AdS boundary removes an independent outer radial channel. It does
 **Cross-note convention bridge.** This note uses
 
 $$\begin{align}
-\Omega_{\rm here}=\int\delta q\wedge\delta\pi
-=-\int\delta\pi\wedge\delta q=-\Omega_{\rm formalism}, \tag{0.3}
+\Omega_{\rm here}=\int\delta q\wedge\delta\pi =-\int\delta\pi\wedge\delta q=-\Omega_{\rm formalism}, \tag{0.3}
 \end{align}$$
 
 where `formalism.md` and `gluing formalism.md` use the opposite ordering. Here $\Omega(X_A,\delta)=\delta A$ and $P_{\rm here}=-\Omega_{\rm here}^{-1}$; converting the two-form and inverse convention together leaves $\{q,\pi\}_{\mathrm P}=+\delta$ unchanged. No sign below should therefore be flipped merely when comparing the files. Functional-analytically, “strong symplectic” is reserved for a Hilbert/Banach space on which $\Omega^\flat:x\mapsto\Omega(x,\cdot)$ is a bounded isomorphism onto the full continuous dual; a bounded nondegenerate form whose flat map is only injective is called weak symplectic.
@@ -1293,7 +1292,7 @@ The following checks were run for this iteration.
 7. The Jost density identity
 $\omega/[\pi(4\omega^2|\Gamma(i\omega)|^2/|D_+|^2)]
 =|D_+|^2/[4\pi\omega|\Gamma(i\omega)|^2]$
-was simplified exactly to zero after subtraction, verifying (3.8e).
+Was simplified exactly to zero after subtraction, verifying (3.8e).
 8. Mathematica simplified $r^2-1-(\sin^2\chi\,\Omega_1^2-\sin^2t)/\cos^2\chi$ exactly to zero, verifying the global/Rindler coordinate relation (7.5).
 9. For $(\omega,\nu)=(1.3,1.7)$, the ratio of the exact $N_{\omega\lambda}$ to the asymptotic expression (4.10) at $\lambda=10,20,40,80$ was respectively $0.9911753$, $0.9977589$, $0.9994376$, and $0.9998593$.
 10. The global embedding constraint evaluated exactly to $-1$; the divergence-form radial coefficient reduced exactly to $(d-1)(\cot\chi+\tan\chi)$; and both the horizon and caustic identities in (7.3)--(7.5) simplified exactly to zero residual.
