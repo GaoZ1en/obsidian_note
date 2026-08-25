@@ -4,7 +4,7 @@ date: 2026-07-03
 summary: "Derives the Euclidean boundary stress-tensor two-point function from the Brown-York images of the normalized Brown-Henneaux modes."
 ---
 
-# Euclidean correlation function of boundary stress tensor
+# Euclidean Correlation Function of Boundary Stress Tensor
 
 Start with the Lorentzian Brown-Henneaux oscillator expansion, map each metric mode to the boundary Brown-York stress tensor, analytically continue to Euclidean signature, and form the Euclidean time-ordered vacuum correlator.
 
@@ -16,7 +16,7 @@ h_{\mu\nu}\longmapsto T_{ab}^{\mathrm{BY},\mathrm{lin}}[h],
 
 evaluated on the normalized modes $h_{-,n}$ and $h_{+,\bar n}$ from [[Articles/Quantization in AdS/linearized gravity/article/2_quantization|2_quantization]].
 
-## Lorentzian Brown-York image
+## Lorentzian Brown-York Image
 
 The normalized Brown-Henneaux modes are
 
@@ -74,7 +74,7 @@ T_{uu}^{L}(u) &=\sum_{n\ge0}\left(\alpha_n e^{-i(n+2)u}a_{-,n} +\alpha_n^*e^{i(n
 T_{vv}^{L}(v) &=\sum_{\bar n\ge0}\left(\alpha_{\bar n}e^{-i(\bar n+2)v}a_{+,\bar n} +\alpha_{\bar n}^*e^{i(\bar n+2)v}a_{+,\bar n}^{\dagger}\right).
 \end{align}$$
 
-## Euclidean continuation
+## Euclidean Continuation
 
 Define the Euclidean chiral stress-tensor components by tensorial analytic continuation of the linear Brown-York tensor:
 
@@ -123,7 +123,7 @@ e^{-im(\bar w_1-\bar w_2)}&=e^{-im(\phi_1-\phi_2)}e^{-m(\tau_1-\tau_2)}.
 
 Thus the annihilation-creation contractions selected by Euclidean time ordering are the decaying branches.
 
-## Euclidean time-ordered correlator
+## Euclidean Time-Ordered Correlator
 
 Define the Euclidean two-point function by analytic continuation of the Lorentzian vacuum correlator:
 

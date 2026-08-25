@@ -4,13 +4,13 @@ date: 2026-05-20
 summary: "Research note comparing standard scalar bulk reconstruction with a possible Brown-Henneaux boundary-graviton reconstruction from the linearized-gravity mode basis."
 ---
 
-# Bulk reconstruction
+# Bulk Reconstruction
 
 This note records a possible extension of the linearized-gravity project. The goal is not to polish the current draft, but to ask whether the normalized Brown-Henneaux mode basis can be used as input for a bulk-reconstruction formula.
 
 The scalar case should be treated as the benchmark. For spin one and spin two the main new issue is gauge redundancy: a bulk field at a point is not itself a gauge-invariant observable unless a gauge choice, dressing, or relational prescription has been fixed. In pure AdS$_3$ Einstein gravity this issue is especially sharp, because there are no local propagating gravitons. The Brown-Henneaux modes are locally pure gauge but survive as boundary degrees of freedom.
 
-## Scalar benchmark
+## Scalar Benchmark
 
 Consider a scalar field in global AdS$_3$ with mass $\mu$ and standard quantization. In the notation of `canonical quantization with covariant phase formalism.md`, the metric is
 
@@ -87,7 +87,7 @@ h_{n,m}=\frac{\Delta}{2}+n+m, \qquad \bar h_{n,m}=\frac{\Delta}{2}+n,
 
 and for $m<0$ the two descendants are exchanged. This is the same spectrum as the representation-theoretic construction, but the reconstruction formula above uses the modes obtained directly from the EOM.
 
-## What changes for spin one and spin two
+## What Changes for Spin One and Spin Two
 
 For gauge fields and gravity, the bulk field is not gauge invariant. A reconstruction formula for $A_\mu$ or $h_{\mu\nu}$ therefore reconstructs a representative after a gauge choice, not an invariant local observable. The CFT data determine gauge-invariant boundary charges and correlators; the bulk representative is obtained only after choosing a dressing or fixing a convention such as radial gauge, TT gauge, or another boundary-anchored gauge.
 
@@ -106,7 +106,7 @@ For spin two, the dual CFT data are stress-tensor modes. In higher-dimensional A
 - keep track of proper versus improper diffeomorphisms;
 - avoid interpreting the resulting $h_{\mu\nu}(X)$ as a gauge-invariant local bulk observable.
 
-## Using the linearized-gravity mode basis
+## Using the Linearized-Gravity Mode Basis
 
 The scalar discussion above suggests the cleanest way to formulate the gravity problem: start from the explicit normal modes in global coordinates, take their Brown-Henneaux boundary limit, identify the corresponding CFT modes, and invert the mode expansion. The current linearized-gravity draft already gives the analogue of the scalar bulk mode expansion:
 
@@ -167,7 +167,7 @@ $$\begin{align}
 
 where $u=t-\phi$ and $v=t+\phi$. The kernels are determined by summing the normalized Brown-Henneaux modes against the Fourier modes of $T$ and $\bar T$. This is the closest analogue of HKLL in the present pure-gravity setup.
 
-## What should be checked next
+## What Should Be Checked Next
 
 1. Fix the exact phase convention relating $a_{-,n}$ to $L_{\pm(n+2)}$ and $a_{+,\bar n}$ to $\bar L_{\pm(\bar n+2)}$.
 

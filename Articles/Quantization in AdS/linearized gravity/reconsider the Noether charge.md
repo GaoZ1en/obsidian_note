@@ -1,4 +1,4 @@
-we have known that the action is given by
+We have known that the action is given by
 
 $$\begin{align}
 S & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\mathcal{L} \\
@@ -25,7 +25,7 @@ $$\begin{align}
 X_{\xi} & =\int \mathrm{d}^{3}x\left(\mathcal{L}_{\xi}g^{(0)}_{\mu \nu} +\mathcal{L}_{\xi}h_{\mu \nu}\right) \frac{\delta}{\delta h_{\mu \nu}}
 \end{align}$$
 
-instead of $\displaystyle{\mathcal{L}_{\xi}g^{(0)}_{\mu \nu}}$ or $\displaystyle{\mathcal{L}_{\xi}h_{\mu \nu}}$ itself. act $\displaystyle{X_{\xi}}$ on the action, we have
+instead of $\displaystyle{\mathcal{L}_{\xi}g^{(0)}_{\mu \nu}}$ or $\displaystyle{\mathcal{L}_{\xi}h_{\mu \nu}}$ itself. Act $\displaystyle{X_{\xi}}$ on the action, we have
 
 $$\begin{align}
 X_{\xi}\cdot \delta S & =\alpha _{\xi}|_{\Sigma _{f}}-\alpha _{\xi}|_{\Sigma _{i}} \\
@@ -56,7 +56,7 @@ A_{\xi}^{(0)\mu \nu} & =\nabla ^{(0)\mu}\xi ^{\nu}-\nabla ^{(0)\nu}\xi ^{\mu} \\
 A_{\xi}^{(1)\mu \nu} & =-h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}+h^{\nu \rho}\nabla ^{(0)}_{\rho}\xi ^{\mu}+\xi ^{\rho}\left( \nabla ^{(0)\mu}h^{\nu}{}_{\rho}-\nabla ^{(0)\nu}h^{\mu}{}_{\rho} \right).
 \end{align}$$
 
-to compute the Poisson brackets between Noether charges, we consider the variation of the Noether charge
+To compute the Poisson brackets between Noether charges, we consider the variation of the Noether charge
 
 $$\begin{align}
 \delta H_{\xi} & \approx \int _{\partial\Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu}(\delta Q_{\xi}^{\mu \nu}-2\xi ^{[\mu}\theta ^{\nu]}) \\

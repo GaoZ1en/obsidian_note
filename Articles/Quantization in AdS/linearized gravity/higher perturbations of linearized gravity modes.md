@@ -339,9 +339,7 @@ $$\begin{align}
 The first nonlinear continuation is sufficient for $\Omega _1$, but the one-loop composite-charge question requires the next classical coefficient. For the same fixed generator $\zeta[a]$,
 
 $$\begin{align}
-h^{[0]}&=\mathcal L_{\zeta}g^{(0)}, &
-h^{[1]}&=\dfrac12\mathcal L_{\zeta}^{2}g^{(0)}, &
-h^{[2]}&=\dfrac16\mathcal L_{\zeta}^{3}g^{(0)}.
+h^{[0]}&=\mathcal L_{\zeta}g^{(0)}, & h^{[1]}&=\dfrac12\mathcal L_{\zeta}^{2}g^{(0)}, & h^{[2]}&=\dfrac16\mathcal L_{\zeta}^{3}g^{(0)}.
 \end{align}$$
 
 The ordered multimode sums are retained. This is the selected autonomous-flow chart near the global-AdS vacuum; it is not a claim that a single exponential is a global chart on every smooth Virasoro orbit.
@@ -349,41 +347,31 @@ The ordered multimode sums are retained. This is the selected autonomous-flow ch
 Define the vacuum bilinear from the full renormalized bulk-plus-boundary-plus-corner CPS form by
 
 $$\begin{align}
-B(\xi_m,\xi_n)&:=\kappa^2\Omega_{g^{(0)}}(X_m,X_n)
-=iD_m\delta_{m+n,0}, & D_m&=2\pi m(m^2-1).
+B(\xi_m,\xi_n)&:=\kappa^2\Omega_{g^{(0)}}(X_m,X_n) =iD_m\delta_{m+n,0}, & D_m&=2\pi m(m^2-1).
 \end{align}$$
 
 With
 
 $$\begin{align}
-\Theta
-&=\dfrac{1-e^{-\kappa\operatorname{ad}_{\zeta}}}
-{\kappa\operatorname{ad}_{\zeta}}\,\delta\zeta,
+\Theta &=\dfrac{1-e^{-\kappa\operatorname{ad}_{\zeta}}} {\kappa\operatorname{ad}_{\zeta}}\,\delta\zeta,
 \end{align}$$
 
 the exact pullback on the selected high-mode section is
 
 $$\begin{align}
-\Omega_{\zeta}(u,v)&=B(P_{>}\Theta(u),P_{>}\Theta(v))
-=\dfrac{i}{2}\sum_{|k|\geqslant2}D_k\Theta_k\wedge\Theta_{-k}.
+\Omega_{\zeta}(u,v)&=B(P_{>}\Theta(u),P_{>}\Theta(v)) =\dfrac{i}{2}\sum_{|k|\geqslant2}D_k\Theta_k\wedge\Theta_{-k}.
 \end{align}$$
 
 Here $P_{>}$ removes only the final $-1,0,1$ stabilizer components; it is not inserted between nested brackets. Expanding $\Omega=\Omega_0+\kappa\Omega_1+\kappa^2\Omega_2+O(\kappa^3)$ gives
 
 $$\begin{align}
-\Omega_2(u,v)
-={}&\dfrac16B([\zeta,[\zeta,u]],v)
-+\dfrac16B(u,[\zeta,[\zeta,v]])
-+\dfrac14B([\zeta,u],[\zeta,v]).
+\Omega_2(u,v) ={}&\dfrac16B([\zeta,[\zeta,u]],v) +\dfrac16B(u,[\zeta,[\zeta,v]]) +\dfrac14B([\zeta,u],[\zeta,v]).
 \end{align}$$
 
 This formula contains all multimode cross terms, is closed, and supplies the missing Hamiltonian identity
 
 $$\begin{align}
-X_{p,1}\mathbin{\lrcorner}\Omega_0
-+X_{p,0}\mathbin{\lrcorner}\Omega_1
-+X_{p,-1}\mathbin{\lrcorner}\Omega_2
-&=-\delta H_{p,1}.
+X_{p,1}\mathbin{\lrcorner}\Omega_0 +X_{p,0}\mathbin{\lrcorner}\Omega_1 +X_{p,-1}\mathbin{\lrcorner}\Omega_2 &=-\delta H_{p,1}.
 \end{align}$$
 
 The explicit signed-mode coefficient and the finite-cutoff edge analysis are recorded in [[Articles/Quantization in AdS/linearized gravity/archived/one-loop-central-charge-audits/CPS one-loop central charge from next-order perturbation|CPS one-loop central charge from next-order perturbation]].
@@ -391,30 +379,25 @@ The explicit signed-mode coefficient and the finite-cutoff edge analysis are rec
 For the radial Moser construction, let $\mathcal E$ be the mode-space Euler vector field. The first primitive and vector field obey
 
 $$\begin{align}
-\alpha_1&=\dfrac13\iota_{\mathcal E}\Omega_1, &
-\iota_{Y_1}\Omega_0&=-\alpha_1.
+\alpha_1&=\dfrac13\iota_{\mathcal E}\Omega_1, & \iota_{Y_1}\Omega_0&=-\alpha_1.
 \end{align}$$
 
 In the Lie-flow convention the second residual is
 
 $$\begin{align}
-R_2&=\Omega_2+\dfrac12\mathcal L_{Y_1}\Omega_1, &
-\alpha_2&=\dfrac14\iota_{\mathcal E}R_2, &
-\iota_{Z_2}\Omega_0&=-\alpha_2.
+R_2&=\Omega_2+\dfrac12\mathcal L_{Y_1}\Omega_1, & \alpha_2&=\dfrac14\iota_{\mathcal E}R_2, & \iota_{Z_2}\Omega_0&=-\alpha_2.
 \end{align}$$
 
 Thus the direct coordinate map is
 
 $$\begin{align}
-a&=b+\kappa Y_1(b)+\kappa^2Y_2(b)+O(\kappa^3), &
-Y_2&=Z_2+\dfrac12(Y_1\cdot\partial)Y_1,
+a&=b+\kappa Y_1(b)+\kappa^2Y_2(b)+O(\kappa^3), & Y_2&=Z_2+\dfrac12(Y_1\cdot\partial)Y_1,
 \end{align}$$
 
 and
 
 $$\begin{align}
-H^D_{p,1}
-&=H_{p,1}+\mathrm dH_{p,0}[Y_1]+\mathrm dH_{p,-1}[Y_2].
+H^D_{p,1} &=H_{p,1}+\mathrm dH_{p,0}[Y_1]+\mathrm dH_{p,-1}[Y_2].
 \end{align}$$
 
 The distinction between $Z_2$ and the direct-coordinate coefficient $Y_2$ is essential. Exact finite-cutoff checks verify the Darboux residual through $O(\kappa^2)$ and the interior Hamiltonian identity; hard cutoffs retain the expected upper-edge obstruction because a finite mode window is not invariant under the Witt action.
@@ -460,9 +443,7 @@ $$\begin{align}
 This zero is the value of the chosen reference composite prescription, not a separately scheme-independent observable. Wick subtraction does not exclude a finite Hermitian linear renormalization of the composite moment map. In the signed variables it is
 
 $$\begin{align}
-\delta H_{p,1}^{\mathrm{fin}}
-&=-i\gamma_p z_{-p}, &
-\gamma_p&=\dfrac{\Delta c}{24}p(p^2-1),
+\delta H_{p,1}^{\mathrm{fin}} &=-i\gamma_p z_{-p}, & \gamma_p&=\dfrac{\Delta c}{24}p(p^2-1),
 \end{align}$$
 
 or, after the oscillator rephasing used in the archived checks,
@@ -482,10 +463,7 @@ $$\begin{align}
 while the invariant quantum central charge is written
 
 $$\begin{align}
-\boxed{
-c_{\mathrm{phys}}
-=\dfrac{3\ell}{2G_R(\mathsf S)}+\Delta c(\mathsf S),
-}
+\boxed{ c_{\mathrm{phys}} =\dfrac{3\ell}{2G_R(\mathsf S)}+\Delta c(\mathsf S), }
 \end{align}$$
 
 with only $c_{\mathrm{phys}}$ invariant under a finite change of renormalization scheme $\mathsf S$. External $+13$ representatives, their Chern--Simons/WZW/orbit derivation, and the corresponding finite Einstein-coupling redefinition are separated in [[Articles/Quantization in AdS/linearized gravity/one-loop central charge normalization and scheme dependence|one-loop central charge normalization and scheme dependence]].
@@ -495,8 +473,7 @@ with only $c_{\mathrm{phys}}$ invariant under a finite change of renormalization
 Once a central parameter $c$ is fixed, the quantum algebra is
 
 $$\begin{align}
-[H_m,H_n]&=(m-n)H_{m+n}+\dfrac{c}{12}m(m^2-1)\delta_{m+n,0}, &
-H_n^{\dagger}&=H_{-n}.
+[H_m,H_n]&=(m-n)H_{m+n}+\dfrac{c}{12}m(m^2-1)\delta_{m+n,0}, & H_n^{\dagger}&=H_{-n}.
 \end{align}$$
 
 The presentation, low-mode reconstruction, and vacuum-module consequences below are conditional on this chosen $c$; algebraic closure does not determine the finite split between $3\ell/(2G_R)$ and $\Delta c$.

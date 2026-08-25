@@ -9,54 +9,42 @@ This note separates external one-loop quantization prescriptions from the metric
 The central distinction is
 
 $$\begin{align}
-\boxed{
-c_{\mathrm{phys}}
-=\dfrac{3\ell}{2G_R(\mathsf S)}+\Delta c(\mathsf S),
-}
+\boxed{ c_{\mathrm{phys}} =\dfrac{3\ell}{2G_R(\mathsf S)}+\Delta c(\mathsf S), }
 \end{align}$$
 
 where $c_{\mathrm{phys}}$ is invariant but the displayed split need not be.
 
 ## Giombi--Maloney--Yin: Descendants and the Identity Image
 
-### Source-derived determinant
+### Source-Derived Determinant
 
 For thermal AdS$_3$, written as $X=\mathbb H^3/\mathbb Z$, the method-of-images trace separates as
 
 $$\begin{align}
-\operatorname{Tr}K_X
-={}&\operatorname{vol}(X)K_{\mathbb H^3}(t;x,x)
-+\sum_{n\neq0}\int_XK_{\mathbb H^3}(t;x,\gamma^nx).
+\operatorname{Tr}K_X ={}&\operatorname{vol}(X)K_{\mathbb H^3}(t;x,x) +\sum_{n\neq0}\int_XK_{\mathbb H^3}(t;x,\gamma^nx).
 \end{align}$$
 
 The first term is the identity image. It is local, divergent, and proportional to the volume. Giombi--Maloney--Yin omit it after identifying it with a local coupling renormalization. The nonzero images give the nonlocal graviton/ghost determinant
 
 $$\begin{align}
-\log Z_{mathrm{desc}}
-&=-\sum_{m=2}^{\infty}\log|1-q^m|^2, \\
-\boxed{
-Z_{mathrm{desc}}(q,\bar q)
-&=\prod_{m=2}^{\infty}\dfrac1{|1-q^m|^2}.}
+\log Z_{mathrm{desc}} =-\sum_{m=2}^{\infty}\log|1-q^m|^2, \\
+\boxed{ Z_{mathrm{desc}}(q,\bar q) =\prod_{m=2}^{\infty}\dfrac1{|1-q^m|^2}.}
 \end{align}$$
 
 This descendant factor is insensitive to local finite counterterms. It is the scheme-independent one-loop spectral statement relevant here.
 
-### Local identity-image finite part
+### Local Identity-Image Finite Part
 
 For the traceless tensor, vector ghost, and trace mode, the identity-image contribution used by GYM is
 
 $$\begin{align}
-S^{(1)}_{\mathrm{id}}
-=\dfrac12\operatorname{vol}(\mathbb H^3)
-\int_0^{\infty}\dfrac{\mathrm dt}{t}\dfrac1{(4\pi t)^{3/2}}
-\left[2e^{-t}(1+8t)-2e^{-4t}(1+2t)\right].
+S^{(1)}_{\mathrm{id}} =\dfrac12\operatorname{vol}(\mathbb H^3) \int_0^{\infty}\dfrac{\mathrm dt}{t}\dfrac1{(4\pi t)^{3/2}} \left[2e^{-t}(1+8t)-2e^{-4t}(1+2t)\right].
 \end{align}$$
 
 Gamma-function analytic continuation gives
 
 $$\begin{align}
-\dfrac{S^{(1)}_{\mathrm{id}}}{\operatorname{vol}(\mathbb H^3)}
-&=\dfrac{\Gamma(-3/2)(1-8)+\Gamma(-1/2)(8-4)}{(4\pi)^{3/2}} \\
+\dfrac{S^{(1)}_{\mathrm{id}}}{\operatorname{vol}(\mathbb H^3)} &=\dfrac{\Gamma(-3/2)(1-8)+\Gamma(-1/2)(8-4)}{(4\pi)^{3/2}} \\
 &=-\dfrac{13}{6\pi}.
 \end{align}$$
 
@@ -64,23 +52,18 @@ This is an exact result in that analytic-continuation prescription. It is a loca
 
 ## Cotler--Jensen Orbit Quantization
 
-### Source-derived reduction
+### Source-Derived Reduction
 
 In the Chern--Simons description,
 
 $$\begin{align}
-S&=S_{\mathrm{CS}}[A]-S_{\mathrm{CS}}[\bar A]+S_{\mathrm{bdy}}, &
-A&=\omega+\dfrac e\ell, &
-\bar A&=\omega-\dfrac e\ell.
+S&=S_{\mathrm{CS}}[A]-S_{\mathrm{CS}}[\bar A]+S_{\mathrm{bdy}}, & A&=\omega+\dfrac e\ell, & \bar A&=\omega-\dfrac e\ell.
 \end{align}$$
 
 The temporal connection imposes flatness. Writing the spatial connection as $\widetilde A=g^{-1}\widetilde{\mathrm d}g$ produces a chiral WZW theory, and the Brown--Henneaux/Drinfeld--Sokolov constraints reduce it to a reparameterization field. For one chirality, with $F=\tan(\phi/2)$ and the local $PSL(2,\mathbb R)$ redundancy retained, the Euclidean action is
 
 $$\begin{align}
-S_E[\phi]
-&=\dfrac{C}{24\pi}\int\mathrm d^2x
-\left[\dfrac{(\bar\partial\phi')\phi''}{\phi'^2}
--(\bar\partial\phi)\phi'\right].
+S_E[\phi] &=\dfrac{C}{24\pi}\int\mathrm d^2x \left[\dfrac{(\bar\partial\phi')\phi''}{\phi'^2} -(\bar\partial\phi)\phi'\right].
 \end{align}$$
 
 Cotler--Jensen call $C$ the bare central charge of this orbit action. Classically, in the corresponding convention,
@@ -92,24 +75,19 @@ C&=6k=\dfrac{3\ell}{2G}.
 The exceptional orbit is $\operatorname{Diff}(S^1)/PSL(2,\mathbb R)$, so the spatial modes $n=-1,0,1$ are removed. The one-loop torus calculation gives
 
 $$\begin{align}
-\partial_\tau\log Z_{1\text{-loop}}
-&=-\dfrac{\pi iC}{12}
--\pi\sum_{n=2}^{\infty}n\cot(\pi n\tau).
+\partial_\tau\log Z_{1\text{-loop}} &=-\dfrac{\pi iC}{12} -\pi\sum_{n=2}^{\infty}n\cot(\pi n\tau).
 \end{align}$$
 
 In their zeta prescription,
 
 $$\begin{align}
-\sum_{n=2}^{\infty}n
-&=\zeta(-1)-1=-\dfrac{13}{12},
+\sum_{n=2}^{\infty}n &=\zeta(-1)-1=-\dfrac{13}{12},
 \end{align}$$
 
 and therefore
 
 $$\begin{align}
-\boxed{
-Z_{\mathrm{CJ,chiral}}
-=q^{-(C+13)/24}\prod_{n=2}^{\infty}\dfrac1{1-q^n}.}
+\boxed{ Z_{\mathrm{CJ,chiral}} =q^{-(C+13)/24}\prod_{n=2}^{\infty}\dfrac1{1-q^n}.}
 \end{align}$$
 
 The localization argument makes this exact for the specified orbit path integral, symplectic measure, and zeta prescription. Thus
@@ -122,28 +100,18 @@ is not an invalid calculation. It is a precise result for that representative. T
 
 ## Finite Einstein Coupling Redefinition
 
-### Project inference from the variational problem
+### Project Inference from the Variational Problem
 
 Restore the AdS radius and write the renormalized action used by the metric/CPS project as
 
 $$\begin{align}
-I_{\mathrm{ren}}[g]
-=\dfrac1{16\pi G_R}
-\left[
-\int_M\sqrt{|g|}\left(R+\dfrac2{\ell^2}\right)
-+2\int_{\Gamma}\sqrt{|\gamma|}\left(K-\dfrac1\ell\right)
-\right].
+I_{\mathrm{ren}}[g] =\dfrac1{16\pi G_R} \left[ \int_M\sqrt{|g|}\left(R+\dfrac2{\ell^2}\right) +2\int_{\Gamma}\sqrt{|\gamma|}\left(K-\dfrac1\ell\right) \right].
 \end{align}$$
 
 A finite shift of $A_R=1/G_R$ must rescale the full bulk action together with its Gibbons--Hawking and AdS boundary completion:
 
 $$\begin{align}
-\delta I_{\mathrm{fin}}
-=\dfrac{\delta A_R}{16\pi}
-\left[
-\int_M\sqrt{|g|}\left(R+\dfrac2{\ell^2}\right)
-+2\int_{\Gamma}\sqrt{|\gamma|}\left(K-\dfrac1\ell\right)
-\right].
+\delta I_{\mathrm{fin}} =\dfrac{\delta A_R}{16\pi} \left[ \int_M\sqrt{|g|}\left(R+\dfrac2{\ell^2}\right) +2\int_{\Gamma}\sqrt{|\gamma|}\left(K-\dfrac1\ell\right) \right].
 \end{align}$$
 
 At fixed physical radius, this is the correlated two-derivative coupling shift required by the Einstein equation. The boundary completion preserves the same Dirichlet/Brown--Henneaux allowed variations, symplectic corner prescription, and vacuum subtraction. Interpreted as a change of renormalized parameter with a compensating local counterterm at fixed bare theory, it is a scheme change; adding the same term while refusing to redefine the coupling would instead change the theory.
@@ -151,39 +119,31 @@ At fixed physical radius, this is the correlated two-derivative coupling shift r
 Because the Brown--Henneaux charges and their classical central term are linear in $A_R$,
 
 $$\begin{align}
-\delta c_{\mathrm{BH}}
-&=\dfrac{3\ell}{2}\delta A_R.
+\delta c_{\mathrm{BH}} &=\dfrac{3\ell}{2}\delta A_R.
 \end{align}$$
 
 Define a finite scheme transformation by
 
 $$\begin{align}
-\boxed{
-\dfrac1{G_R'}&=\dfrac1{G_R}+\dfrac{2\sigma}{3\ell}, &
-\Delta c'&=\Delta c-\sigma.}
+\boxed{ \dfrac1{G_R'}=\dfrac1{G_R}+\dfrac{2\sigma}{3\ell}, \quad \Delta c'=\Delta c-\sigma.}
 \end{align}$$
 
 Then
 
 $$\begin{align}
-\boxed{
-c_{\mathrm{phys}}
-=\dfrac{3\ell}{2G_R}+\Delta c
-=\dfrac{3\ell}{2G_R'}+\Delta c'.}
+\boxed{ c_{\mathrm{phys}} =\dfrac{3\ell}{2G_R}+\Delta c =\dfrac{3\ell}{2G_R'}+\Delta c'.}
 \end{align}$$
 
 The special choice $\sigma=13$ sends the CJ representative to a zero-residual-shift representative:
 
 $$\begin{align}
-\dfrac1{G_R'}&=\dfrac1{G_R}+\dfrac{26}{3\ell}, &
-\Delta c'&=0.
+\dfrac1{G_R'}&=\dfrac1{G_R}+\dfrac{26}{3\ell}, & \Delta c'&=0.
 \end{align}$$
 
 The torus answer is unchanged:
 
 $$\begin{align}
-Z(\tau,\bar\tau)
-&=\left|q^{-c_{\mathrm{phys}}/24}
+Z(\tau,\bar\tau) &=\left|q^{-c_{\mathrm{phys}}/24}
 \prod_{n=2}^{\infty}(1-q^n)^{-1}\right|^2.
 \end{align}$$
 
@@ -194,24 +154,19 @@ Thus a scheme transformation moves only the allocation of the local vacuum facto
 The metric/CPS calculation permits the finite linear composite-charge term
 
 $$\begin{align}
-\delta H_{p,1}^{\mathrm{fin}}
-&=-i\gamma_pz_{-p}, &
-\gamma_p&=\dfrac{\Delta c}{24}p(p^2-1).
+\delta H_{p,1}^{\mathrm{fin}} &=-i\gamma_pz_{-p}, & \gamma_p&=\dfrac{\Delta c}{24}p(p^2-1).
 \end{align}$$
 
 Under the action redefinition with parameter $\sigma$,
 
 $$\begin{align}
-\gamma_p^{(\delta G)}
-&=\dfrac{\sigma}{24}p(p^2-1).
+\gamma_p^{(\delta G)} &=\dfrac{\sigma}{24}p(p^2-1).
 \end{align}$$
 
 Therefore, at the one-loop central-cocycle order audited here,
 
 $$\begin{align}
-\boxed{
-\text{finite Einstein/charge normalization}
-\longleftrightarrow
+\boxed{ \text{finite Einstein/charge normalization} \longleftrightarrow
 \text{finite reduced quantum-moment-map normalization}.}
 \end{align}$$
 
