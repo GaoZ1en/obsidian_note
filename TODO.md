@@ -14,7 +14,9 @@
 - 引力微扰论
 	- see [[Articles/Quantization in AdS/linearized gravity/higher perturbations of linearized gravity modes|higher perturbations of linearized gravity modes]]
 - gluing system
-	- ads-rindler not done
+	- AdS$_2$--Rindler scalar benchmark complete on the stated characteristic/cyclic and fixed-label state-restriction scopes
+	- general null CPS extraction active
+	- Maxwell two-intersecting-null-surface characteristic composition next
 	- read [[Literature Notes/Chandrasekaran/Subregion algebras in classical and quantum gravity (2601.07915v1)|Subregion algebras in classical and quantum gravity (2601.07915v1)]]
 	-
 

@@ -1,6 +1,6 @@
-# Roadmap — Open Subsystem Quantization at a Timelike Interface
+# Roadmap — Causal-Type Composition and Open Subsystem Quantization
 
-> Status: long-range research direction for the gluing project. This file replaces the short-horizon roadmap that was in `README.md` and is the reference for the phase structure of `TODO.md`. The historical audit that forced the change of direction is `archived/formalism_audit.md`. The active technical formulation remains `formalism.md`.
+> Status: long-range research direction for the gluing project. This file replaces the short-horizon roadmap that was in `README.md` and is the reference for the phase structure of `TODO.md`. The historical audit that forced the timelike-regulator change is `archived/formalism_audit.md`. `formalism.md` remains authoritative for the timelike prescribed-history branch; the active Rindler files listed in `README.md` define the separate null-characteristic branch.
 
 ## 1. Problem Statement
 
@@ -9,6 +9,8 @@ The subject of this project is not "how to glue two subregions". It is:
 > When the boundary data of an open subsystem changes from a prescribed classical background to a quantity determined by the dynamics, what happens to the subsystem's algebra, its states, and its entropy, and in what sense is that process invertible.
 
 Stating it this way separates three questions. The declared sharp-cut Dirichlet--Dirichlet comparison fails to define a Fock-unitary map, while the operator-algebraic setting warns against assuming a tensor factorization for touching regions. Promoting the interface history $q(t)$ from a parameter to an operator is the central canonical step. Whether that promotion is a crossed product is a further theorem to be formulated and proved, not part of the definition.
+
+That problem statement describes the timelike branch. The project now has three distinct causal-type operations: timelike composition uses prescribed histories and feedback; null composition uses characteristic data, direct null CPS flux and Goursat evolution; spacelike composition uses compatible regional Cauchy data and spatial reconstruction. They are not one formalism written in different coordinates.
 
 ## 2. Thesis
 
@@ -92,11 +94,11 @@ The concrete form of "complete" is this table, filled with `proved`, `counterexa
 
 | Layer | scalar | gauge | gravity |
 |---|---|---|---|
-| L0 | proved for the fixed outer-Dirichlet, prescribed-cut-Dirichlet scalar benchmark; other cut conditions open | open | Euclidean Dirichlet generally non-elliptic; Lorentzian Dirichlet conditional; conformal--mean-curvature partial/open |
-| L1 | proved for the bounded massive interval scalar with prescribed cut histories and every fixed finite partition | partial ($1+1$ abelian) | open |
+| L0 | proved for the fixed outer-Dirichlet timelike scalar benchmark and the declared flat/AdS null-characteristic scalar domains; other cut conditions and a general null data theorem open | open | Euclidean Dirichlet generally non-elliptic; Lorentzian Dirichlet conditional; conformal--mean-curvature partial/open |
+| L1 | proved for the bounded massive interval scalar with prescribed cut histories and every fixed finite partition; null characteristic composition proved on the stated scalar matched/cyclic domains | partial ($1+1$ abelian; single-null-boundary Maxwell data only) | open |
 | L2 | proved for every fixed finite partition of the bounded massive interval scalar | open | open |
 | L3 | open | open | open |
-| L4 | partial: intrinsic smeared connected-vacuum state converges; the optional port-complete sharp regional-product map is a counterexample | open | open |
+| L4 | partial: intrinsic smeared connected-vacuum state converges; the optional port-complete sharp regional-product map is a counterexample; AdS$_2$ fixed-label wedge restriction and smeared KMS are proved, while full modular-group convergence and type classification are open | open | open |
 | L5 | n/a | open | open |
 | L6 | n/a | n/a | open |
 | L7 | n/a | n/a | open |
@@ -117,7 +119,10 @@ Ordered by which obstruction each rung isolates, not by difficulty. The last col
 | 7 | $2+1$ scalar, cut surface with nonempty boundary | genuine corner divergences, codimension-2 data | higher-dimensional extension |
 | 8 | bosonic JT gravity coupled to matter | boundary mode as an operator-valued port; crossed-product comparison; type II$_\infty$ target | the gravity layer |
 | 9 | de Sitter static patch | observer crossed product, finite maximum entropy — known answer | — this rung is a benchmark |
-| 10 | AdS--Rindler, subregion duality | holographic payoff | — |
+| 10 | AdS--Rindler scalar benchmark (done in the stated domains) | exact null characteristic composition, global reconstruction and B2 wedge restriction | — |
+| 11 | general null CPS (active immediate direction) | abstract characteristic data, role conversion, corners, direct null flux, moving crosses, and B1/B2 separation | Maxwell/gauge characteristic composition |
+| 12 | Maxwell on two intersecting null surfaces (next stress test) | radiative data plus Gauss law, cut charges/edge data, gauge reduction and corner compatibility | the gauge-to-gravity step |
+| 13 | gravity null phase space and holography | diffeomorphism constraints, corner charges, global completion and subregion duality | — |
 
 Three reorderings relative to the previous plan deserve emphasis.
 
@@ -127,19 +132,21 @@ Three reorderings relative to the previous plan deserve emphasis.
 
 **JT gravity is the gravitational entry point.** At a finite cutoff boundary the reparametrization of the boundary curve is the Schwarzian mode, and known crossed-product constructions adjoin a boundary Hamiltonian to the algebra. This is an instructive analogue of promoting $q(t)$ from prescribed to operator-valued, not yet an identification. For ordinary bosonic JT coupled to matter, the expected comparison algebra is type II$_\infty$; type II$_1$ requires a separate finite-trace mechanism such as the de Sitter observer construction.
 
+**The null branch is no longer a future unresolved AdS--Rindler rung.** The flat and AdS scalar examples now supply the evidence base. The immediate obstruction is to extract their common null-CPS structure without assuming an unrestricted horizon completion, then test that structure in Maxwell variables on two intersecting null surfaces. Gravity and holography remain downstream of that gauge reduction.
+
 ## 6. Interface Type and Background
 
 | Interface | Data type | Well-posedness | Correct tool |
 |---|---|---|---|
-| timelike: artificial wall, stretched horizon | boundary history for a hyperbolic spacetime IBVP; its spatial operator uses elliptic trace data | scalar benchmark well posed; gravity is model- and hypothesis-dependent | hyperbolic IBVP plus the spatial operator's boundary triple or interface response |
-| null: Killing horizon | characteristic initial data; interface response degenerates | scalar tractable as a characteristic problem | null-surface symplectic structure, not an interface response |
-| spacelike: cut in a Cauchy slice | regional Cauchy data with trace compatibility; no timelike boundary history | global finite-energy data are not an unrestricted direct sum across the cut | elliptic trace matching, then algebraic split and modular theory |
+| timelike: artificial wall, optional stretched horizon | prescribed boundary histories and oriented output flux for a hyperbolic spacetime IBVP; its spatial operator uses elliptic trace data | scalar benchmark well posed; gravity is model- and hypothesis-dependent | hyperbolic IBVP plus feedback/oriented flux matching and, where useful, the spatial operator's boundary triple or interface response |
+| null: Killing horizon or intersecting characteristic surfaces | characteristic profiles/data with shared-cut compatibility; an outgoing/flux surface may become a characteristic input for the next region | flat and AdS scalar benchmarks closed on their stated domains; general/gauge theorem open | direct action/CPS null symplectic flux plus Goursat composition, including transverse reconstruction or moving-cross treatment when needed |
+| spacelike: cut in a Cauchy slice | regional Cauchy data with Sobolev trace/flux compatibility; no timelike boundary history | global finite-energy data are not an unrestricted direct sum across the cut | Cauchy-data compatibility and spatial/global reconstruction; algebraic split and modular theory are separate questions |
 
 Three conclusions.
 
-1. Do not attempt gluing directly at a null interface. Use a stretched horizon to keep the interface timelike and make $\epsilon\to0$ the controlled limit. This is the only route that reuses the timelike machinery.
-2. On a spacelike cut there is no timelike boundary history, but finite-energy regional Cauchy data must still satisfy the appropriate trace and flux compatibility before reconstructing global data. The nonfactorization of the vacuum is a separate algebraic question. This identifies the boundary-history formulation as a language for composing *dynamics*, while entropy and algebra factorization require their own layer.
-3. Keep a finite cavity wall distinct from an asymptotic boundary. Euclidean elliptic boundary data, Lorentzian timelike IBVP data, and conformal infinity are three different analytic settings.
+1. Direct null composition is defined by characteristic data, corner compatibility, Goursat evolution, and the null symplectic flux. A stretched horizon is only an auxiliary timelike-regulator route when one specifically wants to reuse the timelike machinery; it is neither the definition of null gluing nor the unique correct route.
+2. On a spacelike cut there is no timelike boundary history, but finite-energy regional Cauchy data must still satisfy the appropriate trace and flux compatibility before reconstructing global data. The nonfactorization of the vacuum is a separate algebraic question. Thus prescribed-history feedback, characteristic composition, and Cauchy reconstruction compose different kinds of dynamics/data.
+3. Keep a finite cavity wall distinct from an asymptotic boundary. Euclidean elliptic boundary data, Lorentzian timelike IBVP data, null characteristic data, and conformal infinity are different analytic settings.
 
 ## 7. What Completeness Means
 
@@ -154,12 +161,14 @@ Completeness is the scope table of Section 4, not a global theorem. This standar
 ### Phase 1, Years 1--3: Scalar and Algebraic Core
 
 - **A. Completed for every fixed finite partition of the bounded massive interval scalar.** `continuum-closure-theorem.md`, `non-central cut.md`, and `non-central cut and associativity.md` establish the centered limit, arbitrary-cut extension, and parenthesization-independent multi-port composition.
+- **A-null. Scalar evidence completed; general extraction active now.** `rindler scalar.md`, `ads-rindler scalar.md`, `ads2-rindler global reconstruction.md`, and `ads2-rindler regulated partial trace.md` close the scalar null-characteristic and fixed-label state-restriction benchmarks in their stated domains. Extract the general null CPS next, including characteristic profiles, output-to-input role conversion, shared cuts, direct flux, moving-cross reconstruction, and B1/B2 separation.
 - **B. Archived.** Collar-regulated Fock factorization is not a gate for intrinsic canonical gluing; revive it only for a separately specified split-property problem.
 - **C.** In a precisely specified chiral-CFT collar/defect model, prove the relevant algebra fusion $\mathcal A_L\circledast_{\mathcal B}\mathcal A_R$ and, separately, the sector fusion $H_L\boxtimes_{\mathcal B}H_R$; then test whether oriented flux matching has a module-theoretic shadow.
 - *Kill criterion.* If the half-line rung has no natural conservative replacement, restrict the boundary-history canonical formalism to finite cavities and use an open-system or algebraic formulation for radiating exteriors. This test is cheap and should be completed inside year one.
 
 ### Phase 2, Years 4--6: Gauge Theory and Corners
 
+- **D-null. Maxwell is the next null stress test.** Upgrade `../../null hypersurface/finite boundary/Maxwell.md` from one finite null boundary to two intersecting characteristic surfaces. Work directly in Maxwell variables and retain radiative data, Gauss law, proper/charged cut gauge transformations, edge/charge data and corner compatibility; the (2+1) dual scalar is only a check. [[Literature Notes/arxiv/2026/08/17/The Phase Space of Gravity on Null Hypersurfaces (2608.14449v1)|2608.14449]] and [[Literature Notes/arxiv/2026/08/25/Perturbative Reconstruction of Self-Adjoint Generators from Bosonic Canonical Commutation Relations - Application to the Null-Surface Formulation (2608.21947v1)|2608.21947]] are external comparisons, not project results.
 - **D.** Chern--Simons: choose a boundary polarization and determine whether the cut is represented by finite-dimensional conformal blocks, a WZW/current-algebra edge sector, a category, or a combination of these.
 - **E.** Cylinder: construct a local field-valued port and control transverse locality and the double UV limit.
 - **F.** In a concrete gauge model, determine which proposed observables depend on the center choice and which do not.
@@ -169,17 +178,19 @@ Completeness is the scope table of Section 4, not a global theorem. This standar
 
 - **G.** Bosonic JT coupled to matter: compare the operator-valued boundary mode with the known crossed-product construction, derive the covariance data, and recover type II$_\infty$ if the identification succeeds.
 - **H.** de Sitter static patch: reproduce the known type II$_1$ result as a benchmark.
-- **I.** AdS--Rindler and subregion duality.
+- **I.** Use the completed scalar AdS--Rindler benchmark and the intervening Maxwell/general-null-CPS results as inputs to gravity null phase space and subregion duality; do not treat the scalar reconstruction itself as unfinished.
 
 ### Output Sequence
 
-Four forward results remain after completion of the bounded-scalar extension and associativity theorem: algebra and sector fusion in a specified chiral-CFT model; center choice and corners in Chern--Simons and Maxwell; the JT test of the operator-valued-port/crossed-product hypothesis; and the scope table.
+The immediate forward sequence is: extract the general null CPS from the completed scalar examples; perform the two-intersecting-null-surfaces Maxwell/gauge stress test; then carry the reduced characteristic structure to gravity/holography. The independent timelike/algebraic programme remains: algebra and sector fusion in a specified chiral-CFT model; center choice and corners in Chern--Simons and the timelike Maxwell regulators; the JT test of the operator-valued-port/crossed-product hypothesis; and the scope table.
 
 ## 9. Where the Novelty Is
 
 Everything else in the plan is assembly of existing theory. These three are worth the decade.
 
 **Established Result A.** The bounded massive interval scalar has a Lorentzian timelike-interface canonical construction, a variational multi-port regulator, arbitrary-cut independence in the continuum limit, finite-partition associativity, and a proved energy-space limit. Field-valued interfaces, radiating exteriors, and gauge constraints remain open.
+
+**Established Result A-null.** The scalar null branch closes flat and AdS matched-domain characteristic composition and, in AdS$_2$, derives the direct null CPS, global-time Hamiltonian, lowest-weight spectrum, Goursat modes, CCR/correlators, smeared wedge KMS, and finite-partial-trace to fixed-label algebraic restriction. Unrestricted horizon onto, sharp tensor factorization, Type III classification, full modular-group convergence, and entropy-coefficient theorems are not included.
 
 **Gap B.** The conditional statement that promoting prescribed boundary data to an operator gives a crossed product once a specific automorphism group, implementing unitaries, and their covariance relation have been constructed. The gravitational literature establishes crossed products for modular flow; a corresponding result for the boundary history at a timelike interface is, as far as this project's survey shows, not established. This is the highest-value theorem target.
 
@@ -209,6 +220,7 @@ One-time investment, decade-long return.
 - The collar requirement for the split property is the standard formulation of Buchholz (1974) and Doplicher--Longo.
 - Witten's modular crossed product is type II$_\infty$ (arXiv:2112.12828), ordinary bosonic JT coupled to matter likewise gives type II$_\infty$ boundary algebras (arXiv:2301.07257, arXiv:2303.04701), and the de Sitter observer algebra is type II$_1$ (arXiv:2206.10780).
 - For the declared sharp-cut scalar comparison, a fixed odd Bogoliubov row is analytically not in $\ell^2$, so that map is not Fock-unitarily implementable.
+- In the scalar null branch, direct action/CPS characteristic composition is proved on the stated matched/cyclic domains; the AdS$_2$ construction derives (\omega_n=\Delta+n), the global state/correlators and smeared (\beta=2\pi) wedge KMS, while the factorizing regulator converges on fixed smooth/Weyl label families to the algebraic wedge restriction.
 
 ## Assumptions
 
@@ -221,5 +233,6 @@ One-time investment, decade-long return.
 - The thesis of Section 2 as a theorem. That the promotion of a prescribed boundary history to an operator *is* a crossed product is the target of Gap B, not an established result.
 - The candidate answer in Gap C. The identification of oriented flux matching with mutually opposite interface module structures is a conjecture with a stated reason, and is labelled as such.
 - The uniform two-index estimate needed to prove the displayed $(\log N)^2/(2\pi^2)$ square-cutoff asymptotic; the present evidence for that coefficient is numerical.
-- Every model-ladder rung beyond the bounded interval scalar, every complete layer from L3 onward, and every later milestone.
+- The general null-CPS abstraction, Maxwell two-null-surface gauge reduction, and every gravity/holography milestone; the completed scalar examples do not prove these extensions.
+- Unrestricted horizon completion onto, sharp wedge tensor factorization, Type III classification, full modular-kernel/group convergence, or an entropy-coefficient theorem.
 - That the JT comparison closes or that a chiral CFT admits either fusion statement in the precise realization still to be chosen.

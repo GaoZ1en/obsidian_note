@@ -8,6 +8,8 @@ The quantum construction is canonical. At finite cutoff it uses one common confo
 
 The centered construction, its finite truncation, the feedback equation, and the canonical normal-mode map now belong to `formalism.md`; they are not split among separate active bridge or normal-form notes. The remaining active notes either prove a genuinely separate theorem or isolate a separate optional comparison.
 
+The Rindler/null-characteristic branch is a different causal-type composition, not an extension of prescribed-history feedback. It uses characteristic profiles on intersecting null surfaces, corner compatibility at their shared cut, the direct null CPS flux, and Goursat evolution. The AdS$_2$ scalar benchmark and its B2 state-restriction layer are complete in the stated cyclic/fixed-label scopes; extracting the general null CPS is now the immediate active direction, followed by Maxwell characteristic composition with gauge reduction.
+
 ## Active Files
 
 - `formalism.md`: authoritative scalar construction, from the regional actions and prescribed histories through gluing, spectrum recovery, finite port quantization, and continuum statement.
@@ -16,6 +18,10 @@ The centered construction, its finite truncation, the feedback equation, and the
 - `DN boundary condition.md`: one-region Dirichlet-to-Neumann prototype illustrating the same prescribe-first, release-second logic.
 - `functional analysis proof of well-definedness of finite truncation.md`: proof of form density, Mosco and resolvent convergence, energy-space wave and trace convergence, weak flux matching, and intrinsic spatially smeared Gaussian convergence.
 - `reduced-state-open-system-scalar.md`: exact finite glued Gaussian state, distinct regional reductions, Williamson density matrices and entropy, region-2 memory/noise elimination, the precise KMS/FDR boundary, and the finite-partial-trace to continuum-state-restriction theorem.
+- `rindler scalar.md`: flat $1+1$-dimensional causal-complement benchmark, with two-profile Goursat composition, null CPS, corner-completed matched-domain B1, and explicit separation of B1 from B2.
+- `ads-rindler scalar.md`: $d\geq2$ AdS--Rindler characteristic composition on the canonical matched image; the stronger arbitrary-horizon onto theorem remains conditional and B2 remains extra state data.
+- `ads2-rindler global reconstruction.md`: exact AdS$_2$ characteristic reconstruction from action/CPS through $\Omega_{\rm null}$, the null global-time Hamiltonian, $\mathfrak{sl}(2,\mathbb R)$ lowest-weight spectrum $\omega_n=\Delta+n$, Goursat modes, CCR/Pauli--Jordan, $RR/RL/RF$ correlators, and smeared right-wedge $\beta=2\pi$ KMS.
+- `ads2-rindler regulated partial trace.md`: factorizing global-Cauchy regulator, exact finite wedge partial trace and modular data, and convergence on every fixed smooth/Weyl label family to the continuum algebraic right-wedge restriction. It is not a sharp continuum tensor factorization or a full modular-kernel convergence theorem.
 - `non-central cut.md`: quantize-first construction for an arbitrary single cut, including the unequal-length finite port regulator and continuum cut-position independence.
 - `associativity.md`: parenthesization independence for a fixed three-region partition, derived from independent endpoint histories and a common two-port regulator.
 - `Fock failure.md`: optional comparison with a declared sharp tensor product of strict-Dirichlet regional Fock representations. It is not needed for intrinsic canonical gluing.
@@ -25,8 +31,6 @@ The centered construction, its finite truncation, the feedback equation, and the
 - `roadmap.md`: long-range scalar, algebraic, gauge-theory, and gravity programme, including the layered specification and kill criteria.
 - `TODO.md`: ordered unfinished work following the roadmap phases.
 - `numerics/README.md`: scope and status of the active regression scripts.
-
-- ads2-rindler regulated partial trace.md: factorizing global-Cauchy regulator for the null-derived AdS$_2$ vacuum, exact finite left-wedge partial trace and modular data, fixed-smeared/Weyl convergence to the right-wedge restriction, boost-charge normalization, KMS connection, and explicit loss of the $LR$ B2 covariance.
 
 ## Logical Structure
 
@@ -41,6 +45,18 @@ $$\begin{align}
 &\longrightarrow \text{continuum energy-space limit}.
 \end{align}$$
 
+The separate Rindler/null-characteristic line is
+
+$$\begin{align}
+\text{action and allowed characteristic data}
+&\longrightarrow \text{direct null symplectic flux and corner compatibility}\\
+&\longrightarrow \text{Goursat composition across intersecting null surfaces}\\
+&\longrightarrow \text{B1 dynamics/algebra reconstruction}\\
+&\longrightarrow \text{separately supplied B2 state and cross covariance}.
+\end{align}$$
+
+Neither line is a coordinate rewriting of the other. Spacelike cuts instead use Cauchy-data compatibility and spatial reconstruction.
+
 Three statements remain separate:
 
 1. `non-central cut.md` proves independence of the position of one artificial cut.
@@ -51,7 +67,7 @@ The three Maxwell notes use the same order but solve Gauss law before quantizati
 
 ## Roadmap
 
-The long-range plan is in roadmap.md. Its organizing decisions are: keep the scalar benchmark's physical outer Dirichlet condition fixed while parameterizing artificial-cut data only as needed; separate Euclidean elliptic gravity from Lorentzian hyperbolic timelike initial-boundary-value problems; distinguish algebra fusion from sector Connes fusion in a specified collar or defect model; and treat the identification of an operator-valued boundary history with a crossed product as a conditional theorem target.
+The long-range plan is in roadmap.md. Its organizing decisions are: keep the scalar benchmark's physical outer Dirichlet condition fixed while parameterizing artificial-cut data only as needed; treat timelike, null, and spacelike composition by their own data and evolution problems; make general null-CPS extraction and Maxwell two-null-surface gauge composition the immediate branch; separate Euclidean elliptic gravity from Lorentzian hyperbolic timelike initial-boundary-value problems; distinguish algebra fusion from sector Connes fusion in a specified collar or defect model; and treat the identification of an operator-valued boundary history with a crossed product as a conditional theorem target.
 
 The phases are a scalar and algebraic core, then gauge theory and corners, then gravity. TODO.md follows that phase structure and carries the immediate tasks and kill criteria.
 
@@ -69,7 +85,7 @@ The top-level development snapshots are preserved outside the active subtree in 
 
 ## Deprecated Work
 
-`deprecated/` preserves alternative formalisms, abandoned regulator or representation routes, and displaced standalone derivations. This includes the penalty, lattice, smearing, collar, smooth-interface, earlier Fock-diagnostic, gauge, AdS--Rindler, and stacky/CPS branches. The former standalone `port-canonical-normal-form.md` is also kept there; its active content has been absorbed into `formalism.md`.
+`deprecated/` preserves alternative formalisms, abandoned regulator or representation routes, and displaced standalone derivations. This includes the penalty, lattice, smearing, collar, smooth-interface, earlier Fock-diagnostic, gauge, earlier AdS--Rindler comparison, and stacky/CPS branches. The active Rindler/null-characteristic files listed above are not deprecated. The former standalone `port-canonical-normal-form.md` is also kept there; its active content has been absorbed into `formalism.md`.
 
 Verified calculations in deprecated files may still be used as historical checks, but they do not define the present gluing construction.
 
@@ -92,8 +108,16 @@ Numerical regressions additionally reproduce the centered spectrum, Galerkin ord
 
 Verified in the flat free-Maxwell line: the full \(1+1\) constraint reduction and connected integer spectrum; the regional driven oscillators in \(2+1\) and \(3+1\); the transverse and longitudinal-normal interface determinants; and the complete normalized connected vector-mode bases under the stated physical-wall conditions.
 
+Verified in the Rindler/null-characteristic scalar line, within each note's declared domains:
+
+- flat $1+1$ and $d\geq2$ AdS--Rindler matched-image characteristic composition, null symplectic reconstruction, smeared CCR, and abstract Weyl B1;
+- AdS$_2$ direct action/CPS construction of $\Omega_{\rm null}$, the global-time Hamiltonian on null data, the $\mathfrak{sl}(2,\mathbb R)$ lowest-weight tower $\omega_n=\Delta+n$, Goursat-reconstructed modes, Pauli--Jordan/CCR, the global vacuum and $RR/RL/RF$ correlators, and the smeared right-wedge $\beta=2\pi$ KMS theorem;
+- an exact finite Gaussian wedge partial trace and convergence, for every fixed finite family of smooth Cauchy/Weyl labels, to the global vacuum restricted to the right-wedge algebra. The $LR$ cross covariance is B2 data lost by the marginal.
+
+Comparison only: the finite-$(Z,N)$ senior/collaborator construction is a `global-Noether-energy Galerkin approximation in a timelike-wall Rindler basis`. Here $Z$ is the near-horizon tortoise-wall position and $N$ is the retained wedge-mode count; the Neumann wall basis, projected known global-time Noether energy, and rank-one wall-value link reproduce a spectrally accurate fixed window. No exact-null canonical projection/intertwiner, state/correlator convergence, or Rindler-gluing theorem is proved.
+
 Finite-dimensional canonical equivalence does not imply continuum product-Fock equivalence. Conversely, failure of the optional sharp product-Fock comparison does not obstruct the intrinsic connected quantization.
 
 The continuum target is not a unitary limit of sharp regional product-Fock representations. It is the intrinsic connected physical operator and energy dynamics, the Weyl algebra, and the spatially smeared quasifree state; once the limiting positive-frequency structure is fixed, its GNS representation supplies the connected Fock construction. This is the target for the Maxwell regulators as well as the scalar regulator.
 
-Not yet verified: a universal or cut-uniform scalar Galerkin convergence rate, lifting independence at finite cutoff, an unsmeared point-field covariance, cutoff-uniform form, energy-dynamics, and spatially smeared quasifree-state convergence of the Maxwell physical regulators after gauge reduction, Maxwell theory with charged matter or nontrivial bundles, the continuous-spectrum exterior problem, the proposed operator-algebraic or crossed-product interpretation, or AdS--Rindler global reconstruction.
+Not yet verified: a universal or cut-uniform scalar Galerkin convergence rate, lifting independence at finite cutoff, an unsmeared point-field covariance, an unrestricted horizon-completion onto theorem, common-domain exponentiation on an arbitrary completed horizon space, a sharp left/right Hilbert tensor factorization, Type III classification, full finite-modular-kernel or modular-group convergence, an entropy-coefficient theorem, Maxwell composition on two intersecting null surfaces after direct gauge reduction, cutoff-uniform closure of the separate timelike Maxwell regulators, Maxwell theory with charged matter or nontrivial bundles, the independent half-line continuous-spectrum exterior problem, or the proposed operator-algebraic/crossed-product interpretation.

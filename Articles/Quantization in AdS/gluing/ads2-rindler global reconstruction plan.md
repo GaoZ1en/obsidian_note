@@ -1,6 +1,6 @@
 # AdS$_2$--Rindler Global Reconstruction Plan
 
-> **Status.** Executable research specification, not a proved reconstruction theorem. The project starts from the exact AdS$_2$--Rindler/null CPS and characteristic-composition presentation and must reconstruct the global free scalar theory without using a finite-$Z$ Neumann regulator, a known global mode expansion, or a known global Hamiltonian matrix as derivation input.
+> **Status.** Completed and superseded by [[Articles/Quantization in AdS/gluing/ads2-rindler global reconstruction|ads2-rindler global reconstruction]]. This file is retained as development/specification history; its task and claim ledgers record the pre-completion state and are not current status authorities.
 >
 > **Baseline scope.** One real free scalar on the universal cover of unit-radius AdS$_2$, signature $(-,+)$, standard reflecting/normalizable boundary condition, and initially $m^2L^2\geq0$ so that no alternate-quantization domain enters the first closure. Restore $L$ when comparing dimensionful frequencies. Extension into the Breitenlohner--Freedman window is a separate task after the standard domain closes.
 
