@@ -26,6 +26,8 @@ The centered construction, its finite truncation, the feedback equation, and the
 - `TODO.md`: ordered unfinished work following the roadmap phases.
 - `numerics/README.md`: scope and status of the active regression scripts.
 
+- ads2-rindler regulated partial trace.md: factorizing global-Cauchy regulator for the null-derived AdS$_2$ vacuum, exact finite left-wedge partial trace and modular data, fixed-smeared/Weyl convergence to the right-wedge restriction, boost-charge normalization, KMS connection, and explicit loss of the $LR$ B2 covariance.
+
 ## Logical Structure
 
 The active scalar line is
