@@ -4,64 +4,49 @@
 
 The raw current already satisfies
 
-$$
+$$\begin{align}
 G^*\Omega_\Sigma=\Omega_{N_+}+\Omega_{N_-}.
-$$
+\end{align}$$
 
 Therefore an expression such as
 
-$$
+$$\begin{align}
 \int_{S_0}\delta E_0\wedge\delta\lambda_{\mathrm{rel}}
-$$
+\end{align}$$
 
-cannot be appended by hand. It must arise from an explicit change of variables, boundary polarization or phase-space extension. This note derives the precise circumstance in which it appears.
+cannot be appended by hand. In this project it is retained only as a derived pair in a split-sheet extended polarization, after four explicit operations: introduce independent sheet frames, dress along the generators, integrate the transport terms by parts with all endpoints accounted for, and reduce the diagonal corner gauge action. It is not a universal extra term in the raw Lee--Wald current.
 
 ## 2. Generator Dressings
 
 On $N_+$, write
 
-$$
-A_v=\partial_v\alpha_+,
-\qquad
-a=\bar a_+ +d_S\alpha_+.
-\tag{2.1}
-$$
+$$\begin{align}
+A_v=\partial_v\alpha_+, \qquad a=\bar a_+ +d_S\alpha_+. \tag{2.1}
+\end{align}$$
 
 Then
 
-$$
-r=F_{vA}dx^A=\partial_v\bar a_+.
-\tag{2.2}
-$$
+$$\begin{align}
+r=F_{vA}dx^A=\partial_v\bar a_+. \tag{2.2}
+\end{align}$$
 
 Using $\partial_vE+D^Ar_A=0$ and integrating by parts on the cut,
 
-$$
-\int_{N_+}\left(E\,\delta A_v+r^A\delta A_A\right)
-=\int_{N_+}r^A\delta\bar a_{+A}
-+\left[\int_S E\,\delta\alpha_+\right]_{v=0}^{v=V}.
-\tag{2.3}
-$$
+$$\begin{align}
+\int_{N_+}\left(E\,\delta A_v+r^A\delta A_A\right) =\int_{N_+}r^A\delta\bar a_{+A} +\left[\int_S E\,\delta\alpha_+\right]_{v=0}^{v=V}. \tag{2.3}
+\end{align}$$
 
 On $N_-$, write
 
-$$
-A_u=\partial_u\alpha_-,
-\qquad
-a=\bar a_-+d_S\alpha_-,
-\qquad
-p=\partial_u\bar a_-.
-\tag{2.4}
-$$
+$$\begin{align}
+A_u=\partial_u\alpha_-, \qquad a=\bar a_-+d_S\alpha_-, \qquad p=\partial_u\bar a_-. \tag{2.4}
+\end{align}$$
 
 The raw pullback obeys
 
-$$
-\int_{N_-}\left(E\,\delta A_u-p^A\delta A_A\right)
-=-\int_{N_-}p^A\delta\bar a_{-A}
-+\left[\int_SE\,\delta\alpha_-\right]_{u=0}^{u=U}.
-\tag{2.5}
-$$
+$$\begin{align}
+\int_{N_-}\left(E\,\delta A_u-p^A\delta A_A\right) =-\int_{N_-}p^A\delta\bar a_{-A} +\left[\int_SE\,\delta\alpha_-\right]_{u=0}^{u=U}. \tag{2.5}
+\end{align}$$
 
 After converting it to the incoming initial-data orientation, the radiative and endpoint signs are reversed. Equations (2.3)--(2.5) are identities, not gauge fixing: $\alpha_\pm$ record the longitudinal frame and $\bar a_\pm$ are invariant under gauge transformations accompanied by frame shifts.
 
@@ -69,77 +54,57 @@ After converting it to the incoming initial-data orientation, the radiative and 
 
 Let
 
-$$
-\chi_+:=\alpha_+(0,x),
-\qquad
-\chi_-:=\alpha_-(0,x).
-$$
+$$\begin{align}
+\chi_+:=\alpha_+(0,x), \qquad \chi_-:=\alpha_-(0,x).
+\end{align}$$
 
 The shared initial corner contribution to the incoming potential is
 
-$$
-\boxed{
-\Theta_{S_0}
-=-\int_{S_0}E_+\,\delta\chi_+
-+\int_{S_0}E_-\,\delta\chi_- .}
-\tag{3.1}
-$$
+$$\begin{align}
+\boxed{ \Theta_{S_0} =-\int_{S_0}E_+\,\delta\chi_+ +\int_{S_0}E_-\,\delta\chi_- .} \tag{3.1}
+\end{align}$$
 
 The future endpoint terms are
 
-$$
-\Theta_{\mathrm{future}}
-=\int_{S_+}E_+\,\delta\alpha_+(V)
--\int_{S_-}E_-\,\delta\alpha_-(U).
-\tag{3.2}
-$$
+$$\begin{align}
+\Theta_{\mathrm{future}} =\int_{S_+}E_+\,\delta\alpha_+(V) -\int_{S_-}E_-\,\delta\alpha_-(U). \tag{3.2}
+\end{align}$$
 
 They cannot be dropped without an endpoint condition. The simplest finite theorem fixes the future frames, fixes the future fluxes, or includes (3.2) as part of the boundary phase space.
 
 ## 4. Diagonal Cut Gauge and Moment Map
 
-Before matching, the two sheets carry independent corner pairs. The diagonal cut gauge group acts by
+In the split-sheet extended description, the two sheets carry independent corner frames and their electric endpoint variables. The diagonal cut gauge group acts by
 
-$$
-\chi_+\mapsto\chi_++\eta,
-\qquad
-\chi_-\mapsto\chi_-+\eta.
-\tag{4.1}
-$$
+$$\begin{align}
+\chi_+\mapsto\chi_++\eta, \qquad \chi_-\mapsto\chi_-+\eta. \tag{4.1}
+\end{align}$$
 
 Taking a field-space derivative of (3.1), its contraction with the generator of (4.1) is
 
-$$
-\iota_{X_\eta}\Omega_{S_0}
-=\delta\int_{S_0}\eta(E_+-E_-).
-\tag{4.2}
-$$
+$$\begin{align}
+\iota_{X_\eta}\Omega_{S_0} =\delta\int_{S_0}\eta(E_+-E_-). \tag{4.2}
+\end{align}$$
 
 Thus the moment map is
 
-$$
-\boxed{\mu(\eta)=\int_{S_0}\eta(E_+-E_-),}
-\tag{4.3}
-$$
+$$\begin{align}
+\boxed{\mu(\eta)=\int_{S_0}\eta(E_+-E_-),} \tag{4.3}
+\end{align}$$
 
 and the zero level is oriented electric-flux matching.
 
 On $E_+=E_-=E_0$, quotient the common frame and define
 
-$$
-\lambda_{\mathrm{rel}}:=\chi_- -\chi_+.
-\tag{4.4}
-$$
+$$\begin{align}
+\lambda_{\mathrm{rel}}:=\chi_- -\chi_+. \tag{4.4}
+\end{align}$$
 
 Then
 
-$$
-\Theta_{S_0}^{\mathrm{red}}=\int_{S_0}E_0\,\delta\lambda_{\mathrm{rel}},
-\qquad
-\boxed{
-\Omega_{S_0}^{\mathrm{red}}=\int_{S_0}\delta E_0\wedge\delta\lambda_{\mathrm{rel}}.}
-\tag{4.5}
-$$
+$$\begin{align}
+\Theta_{S_0}^{\mathrm{red}}=\int_{S_0}E_0\,\delta\lambda_{\mathrm{rel}}, \qquad \boxed{ \Omega_{S_0}^{\mathrm{red}}=\int_{S_0}\delta E_0\wedge\delta\lambda_{\mathrm{rel}}.} \tag{4.5}
+\end{align}$$
 
 The sign in (4.5) follows the incoming orientation and $\lambda_{\mathrm{rel}}=\chi_- -\chi_+$. Reversing either convention reverses the displayed sign but not the canonical pairing.
 
@@ -147,19 +112,17 @@ The sign in (4.5) follows the incoming orientation and $\lambda_{\mathrm{rel}}=\
 
 The dressed corner potentials obey
 
-$$
-\bar a_-^0-\bar a_+^0+d_S\lambda_{\mathrm{rel}}=0
-\tag{5.1}
-$$
+$$\begin{align}
+\bar a_-^0-\bar a_+^0+d_S\lambda_{\mathrm{rel}}=0 \tag{5.1}
+\end{align}$$
 
 when both arise from one smooth bulk connection. Taking $d_S$ yields magnetic matching,
 
-$$
-d_S\bar a_-^0=d_S\bar a_+^0=b^0.
-\tag{5.2}
-$$
+$$\begin{align}
+d_S\bar a_-^0=d_S\bar a_+^0=b^0. \tag{5.2}
+\end{align}$$
 
-Equation (5.1) shows why $\lambda_{\mathrm{rel}}$ is relational rather than an extra oscillator. It records how two sheet trivializations reconstruct one corner connection. If one starts with a single smooth trivialization, $\chi_+=\chi_-$ and $\lambda_{\mathrm{rel}}=0$; the information is then carried directly by the shared $a_0$.
+Equation (5.1) shows why $\lambda_{\mathrm{rel}}$ is relational rather than an extra oscillator. It records how two sheet trivializations reconstruct one corner connection. If one starts with a single smooth bulk trivialization, $\chi_+=\chi_-$ and $\lambda_{\mathrm{rel}}=0$; the information is then carried directly by the shared $a_0$. If one also restricts to a fixed-electric-flux sector, $\delta E_0=0$, so the derived two-form (4.5) vanishes even if a relative label is retained.
 
 For $H^1(S)\neq0$, equality of curvatures implies only that $\bar a_-^0-\bar a_+^0$ is closed. Its harmonic part is not $d_S\lambda_{\mathrm{rel}}$ and must be included as a separate holonomy sector.
 
@@ -184,6 +147,20 @@ Calling all three “edge symmetry” hides their different status. The third is
 - the cut has no omitted harmonic frame sector.
 
 **Incorrect as a universal statement:** there is no extra $S_0$ term to append to the raw Lee--Wald flux, and a single smooth bulk trivialization does not contain an independent relative gauge oscillator.
+
+The logical order is therefore
+
+$$
+\text{raw Lee--Wald sheet flux}
+\longrightarrow
+\text{generator dressing and integration by parts}
+\longrightarrow
+\text{split endpoint polarization}
+\longrightarrow
+\mu=0\ \text{and diagonal reduction}
+\longrightarrow
+\int_{S_0}\delta E_0\wedge\delta\lambda_{\mathrm{rel}}.
+$$
 
 ## Verified
 

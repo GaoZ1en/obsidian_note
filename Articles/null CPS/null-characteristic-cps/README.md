@@ -2,7 +2,7 @@
 
 ## Direct Verdict
 
-The first classical Maxwell layer closes at the formal smooth level, with one analytic boundary left explicit.
+The sheet-constraint layer of the classical Maxwell calculation closes at the formal smooth level. Bulk reconstruction remains conditional on an explicit analytic Goursat theorem.
 
 For source-free \(3+1\)-dimensional $U(1)$ Maxwell theory on the flat double-null diamond
 
@@ -12,13 +12,23 @@ D=[0,U]_u\times[0,V]_v\times S,
 ds^2=-2\,du\,dv+q_{AB}dx^A dx^B,
 $$
 
-the action and Lee--Wald current determine the characteristic flux without adding a corner oscillator. The free field-strength profiles are
+the action and Lee--Wald current determine the characteristic flux without adding a corner oscillator. The principal sheetwise radiative profiles are
 
 $$
 F_{vA}|_{N_+},\qquad F_{uA}|_{N_-},
 $$
 
-while $F_{uv}$ and $F_{AB}$ are transported from shared data at $S_0=N_+\cap N_-$. Proper gauge transformations are exactly the gauge directions whose cut charge variation vanishes under the declared endpoint policy.
+but this pair is not complete double-null characteristic data. The constraint-complete gauge-invariant field-strength data are
+
+$$
+\mathcal X_F=(r_A,p_A;E_0,b^0_{AB}),
+\qquad
+r_A=F_{vA}|_{N_+},\quad p_A=F_{uA}|_{N_-},
+$$
+
+where $E_0=F_{uv}|_{S_0}$ and $b^0_{AB}=F_{AB}|_{S_0}$ are shared corner integration data. Indeed, the nonzero source-free fields $F=E_c\,du\wedge dv$ and $F=B_c\,\operatorname{vol}_S$, for nonzero constants $E_c,B_c$, both have $r=p=0$. Thus restriction to $(r,p)$ is not injective. Proper gauge transformations are exactly the gauge directions whose cut charge variation vanishes under the declared endpoint policy.
+
+The proved statement is only that $\mathcal X_F$ parameterizes the sheet data satisfying the Maxwell/Bianchi transport constraints. A bijection with bulk Maxwell solutions requires a Goursat existence-and-uniqueness theorem with the displayed regularity, bundle, corner and endpoint hypotheses; that step is currently conditional.
 
 The candidate corner pair has a qualified positive verdict:
 
@@ -34,7 +44,13 @@ $$
 P_X\stackrel{?}{\simeq}(P_{N_+}\times P_{N_-})//G(S_0)
 $$
 
-is incomplete. Electric-flux matching is the moment map, but magnetic and connection compatibility at the corner are additional restriction equations. The correct first-pass object is a compatibility locus followed by diagonal gauge reduction; it is naturally a symplectic relation, not a map on the unrestricted product.
+is false as a bulk-composition statement on the unrestricted product. Electric-flux matching is the moment map, but magnetic-curvature and connection/transition compatibility are additional restriction equations, with harmonic and bundle data added when topology requires them. The correct first-pass object is
+
+$$
+P_X\simeq \mathcal C_{S_0}/G_{\mathrm{diag}}(S_0),
+$$
+
+conditional on bulk Goursat reconstruction and regular reduction. Before that analytic identification, $\mathcal C_{S_0}/G_{\mathrm{diag}}(S_0)$ is the formally derived compatible characteristic relation, not a map on the unrestricted product.
 
 ## Scope
 
@@ -55,9 +71,9 @@ $$
 \text{null pullbacks}
 \longrightarrow
 \begin{matrix}
-\text{radiative profiles}\\
-\text{Gauss/Bianchi transport}\\
-\text{shared corner data}
+\text{sheetwise radiative profiles}\\
++\ \text{shared corner integration data}\\
++\ \text{transport and corner compatibility}
 \end{matrix}
 \longrightarrow
 \text{compatible characteristic relation}
@@ -79,8 +95,17 @@ $$
 
 ## Current Phase
 
-The finite smooth classical calculation and its symbolic convention checks are the current closed core. The remaining mathematical gap is a fully cited function-space theorem that proves surjectivity of the restriction map for precisely the displayed gauge-invariant data on a compact cut, including global bundle sectors. The project therefore claims a formal smooth symplectic reconstruction theorem conditional on standard Maxwell Goursat well-posedness, not a new Sobolev theorem.
+The finite sheet-constraint calculation, the raw CPS identities and their symbolic convention checks are the current closed core. The remaining mathematical gap is a fully cited function-space theorem proving existence, uniqueness and continuous dependence for precisely the displayed compatible Maxwell data on the chosen finite diamond. Global bundle/harmonic sectors and the Peierls comparison remain separate blockers. The project therefore does not claim that integrated transport equations prove bulk surjectivity.
 
 ## Claim Boundary
 
-No claim is made for unrestricted completed null data, caustics, non-Abelian reduction, gravity dynamics, sharp Hilbert-space factorization, a continuum partial trace, or recovery of B2 cross covariance from regional states.
+The general lesson is
+
+$$
+\text{characteristic null data}
+=\text{sheetwise radiative data}
++\text{lower-dimensional corner integration/constraint data}
++\text{compatibility}.
+$$
+
+A null surface used only to measure symplectic flux may be described by its flux-carrying variables. A null cross used as characteristic input for bulk reconstruction must retain the corner/Coulomb data and compatibility conditions. No claim is made for unrestricted completed null data, caustics, non-Abelian reduction, gravity dynamics, sharp Hilbert-space factorization, a continuum partial trace, or recovery of B2 cross covariance from regional states.

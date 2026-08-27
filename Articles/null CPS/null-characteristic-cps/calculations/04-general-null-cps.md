@@ -4,31 +4,34 @@
 
 The general formalism is not defined by copying the Maxwell variables. It is defined by the sequence of operations that the Maxwell calculation forced:
 
-$$
-\boxed{
-\text{action}
-\to\text{raw null pullback}
-\to\text{null constraints}
-\to\text{corner completion}
-\to\text{proper-gauge quotient}
-\to\text{characteristic relation}.}
-\tag{1.1}
-$$
+$$\begin{align}
+\boxed{ \text{action} \to\text{raw null pullback} \to\text{null constraints} \to\text{corner completion} \to\text{proper-gauge quotient} \to\text{characteristic relation}.} \tag{1.1}
+\end{align}$$
 
 Every arrow requires a declared endpoint and function-space policy.
 
-## 2. Raw Characteristic Data
+The data lesson extracted from Maxwell is
+
+$$
+\boxed{
+\text{characteristic null data}
+=\text{sheetwise radiative data}
++\text{lower-dimensional corner integration/constraint data}
++\text{compatibility}.}
+\tag{1.2}
+$$
+
+This is a structural template, not a claim that every theory has the same Maxwell variables.
+
+## 2. Raw Null CPS Pullback
 
 For a Lagrangian field theory with fields (Phi), begin with
 
-$$
-\delta L=E(\Phi)\delta\Phi+d\theta(\Phi;\delta\Phi),
-\qquad
-\omega=\delta\theta.
-\tag{2.1}
-$$
+$$\begin{align}
+\delta L=E(\Phi)\delta\Phi+d\theta(\Phi;\delta\Phi), \qquad \omega=\delta\theta. \tag{2.1}
+\end{align}$$
 
-Pull back $(\theta,\omega)$ to the null hypersurface before solving constraints or choosing a gauge. Degeneracy of the induced metric means that normal derivatives can become generator-tangent derivatives; the independent null data therefore cannot be inferred by analogy with a spacelike $(q,p)$ pair.
+Pull back $(\theta,\omega)$ to the null hypersurface before solving constraints or choosing a gauge. This determines flux-carrying variables, not automatically a complete characteristic input set. Degeneracy of the induced metric means that normal derivatives can become generator-tangent derivatives; the independent characteristic data therefore cannot be inferred by analogy with a spacelike $(q,p)$ pair.
 
 ## 3. Constraint Split
 
@@ -44,15 +47,15 @@ This list is theory dependent. “Null phase space” before this split is only 
 
 ## 4. Two Roles of a Null Surface
 
-### Flux-null-surface
+### Flux-Null-Surface
 
-A null component of the boundary of a spacetime region carries the pullback of (omega). It measures symplectic flux and participates in Stokes identities. Boundary conditions may set that flux to zero or convert it into corner charges.
+A null component of the boundary of a spacetime region carries the pullback of $\omega$. It measures symplectic flux and participates in Stokes identities. A flux discussion may consistently focus only on radiative/flux-carrying variables; it need not claim that those variables reconstruct the bulk.
 
-### Characteristic-input-null-surface
+### Characteristic-Input-Null-Surface
 
-Two intersecting null surfaces supply initial data for a Goursat problem. Their profiles are constrained at and along the shared corner. Their union represents one initial surface, not two independent systems.
+Two intersecting null surfaces supply initial data for a Goursat problem. If they are intended to reconstruct the bulk phase space, radiative profiles alone are insufficient: the lower-dimensional integration/constraint data and all corner compatibility conditions must be retained. Their union represents one initial surface, not two independent systems.
 
-The same geometric hypersurface can play either role in different comparisons. Confusing the roles leads to double counting of orientations and corners.
+The same geometric hypersurface can play either role in different comparisons. Confusing the roles leads either to double counting or to deleting Coulomb/corner sectors that carry no radiative flux but remain part of the characteristic input.
 
 ## 5. Gauge and Corner Taxonomy
 
@@ -70,31 +73,28 @@ A frame variable becomes a canonical partner of a charge only after an explicit 
 
 For two null inputs $N_1,N_2$, define
 
-$$
-\mathcal C_{12}
-=\{\text{constraint-complete data with corner compatibility}\}.
-\tag{6.1}
-$$
+$$\begin{align}
+\mathcal C_{12} =\{\text{constraint-complete data with corner compatibility}\}. \tag{6.1}
+\end{align}$$
 
 Then the general composition target is
 
-$$
-P_{12}=\mathcal C_{12}/\mathcal G_{\mathrm{proper},diag},
-\tag{6.2}
-$$
+$$\begin{align}
+P_{12}=\mathcal C_{12}/\mathcal G_{\mathrm{proper},diag}, \tag{6.2}
+\end{align}$$
 
 or, if charged frame variables are retained, a symplectic reduction at the appropriate matching moment map followed by the remaining configuration restrictions. Whether (6.2) is a smooth symplectic manifold, a stratified quotient, or a derived relation is a separate theorem.
 
 ## 7. B1 Versus B2
 
-### B1 — classical/algebraic reconstruction
+### B1 — classical/algebraic Reconstruction
 
 This consists of the restriction/reconstruction relation, symplectic or Peierls bracket, and induced map of gauge-invariant CCR/Weyl algebras. It does not require factorization of Hilbert spaces.
 
-### B2 — states and cross covariance
+### B2 — States and Cross Covariance
 
 Regional state restrictions do not determine correlations between causally separated or separately represented pieces. A global state requires cross covariance or equivalent positive-frequency data. Partial trace, when a finite regulator supplies one, discards rather than reconstructs that information.
 
 ## 8. General Claim Boundary
 
-Maxwell proves that the sequence (1.1) is necessary and workable in a linear Abelian model. It does not prove that every null theory has a relative frame--charge pair, that all constraint reductions are regular, or that gravity follows by replacing electric flux with area. Those are comparison hypotheses to be tested from the relevant action.
+Maxwell proves the sheet-constraint part of the sequence (1.1) and shows why (1.2) is necessary in a linear Abelian model. Its bulk reconstruction step is conditional on the exact Goursat theorem. It does not prove that every null theory has a relative frame--charge pair, that all constraint reductions are regular, or that gravity follows by replacing electric flux with area. Those are comparison hypotheses to be tested from the relevant action.

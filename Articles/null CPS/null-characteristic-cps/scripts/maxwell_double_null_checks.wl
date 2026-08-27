@@ -69,6 +69,38 @@ bianchiExpected = {
   D[bb, v] - D[pv2, x] + D[pv1, y]
 };
 
+maxwellResidualFor[m_] := Module[{mup = Simplify[ginv . m . ginv]},
+  Table[
+    Simplify[Sum[D[mup[[mu, nu]], coords[[mu]]], {mu, 4}]],
+    {nu, 4}
+  ]
+];
+
+bianchiResidualFor[m_] := {
+  Simplify[D[m[[2, 3]], u] + D[m[[3, 1]], v] + D[m[[1, 2]], x]],
+  Simplify[D[m[[2, 4]], u] + D[m[[4, 1]], v] + D[m[[1, 2]], y]],
+  Simplify[D[m[[3, 4]], u] + D[m[[4, 1]], x] + D[m[[1, 3]], y]],
+  Simplify[D[m[[3, 4]], v] + D[m[[4, 2]], x] + D[m[[2, 3]], y]]
+};
+
+pureCoulomb = {
+  {0, ec, 0, 0},
+  {-ec, 0, 0, 0},
+  {0, 0, 0, 0},
+  {0, 0, 0, 0}
+};
+
+pureMagnetic = {
+  {0, 0, 0, 0},
+  {0, 0, 0, 0},
+  {0, 0, 0, bc},
+  {0, 0, -bc, 0}
+};
+
+radiativeRestriction[m_] := {
+  m[[1, 3]], m[[1, 4]], m[[2, 3]], m[[2, 4]]
+};
+
 da = {dau, dav, dax, day};
 theta3[a_, c_, d_] := Simplify[-(
   da[[a]] sf[[c, d]] +
@@ -167,6 +199,22 @@ checks = {
   "Hodge squared" -> zeroArrayQ[hodge[sf] + f],
   "Maxwell components" -> zeroArrayQ[maxeq - maxExpected],
   "Bianchi components" -> zeroArrayQ[bianchiList - bianchiExpected],
+  "pure Coulomb solves Maxwell-Bianchi" -> And[
+    zeroArrayQ[maxwellResidualFor[pureCoulomb]],
+    zeroArrayQ[bianchiResidualFor[pureCoulomb]]
+  ],
+  "pure Coulomb has zero radiative restriction but is nonzero" -> And[
+    zeroArrayQ[radiativeRestriction[pureCoulomb]],
+    TrueQ[Simplify[ec != 0, Assumptions -> ec != 0]]
+  ],
+  "pure magnetic solves Maxwell-Bianchi" -> And[
+    zeroArrayQ[maxwellResidualFor[pureMagnetic]],
+    zeroArrayQ[bianchiResidualFor[pureMagnetic]]
+  ],
+  "pure magnetic has zero radiative restriction but is nonzero" -> And[
+    zeroArrayQ[radiativeRestriction[pureMagnetic]],
+    TrueQ[Simplify[bc != 0, Assumptions -> bc != 0]]
+  ],
   "Nplus theta pullback" -> TrueQ[
     Simplify[thetaPlus == ee dav + pv1 dax + pv2 day]
   ],

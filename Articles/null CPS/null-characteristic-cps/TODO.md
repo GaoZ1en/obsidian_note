@@ -2,8 +2,8 @@
 
 ## Immediate
 
-- [ ] Action: replace the conditional Goursat-surjectivity paragraph by a precise theorem with a cited function space.
-  Context: uniqueness and constraint transport are formal/proved on the smooth core; existence is imported.
+- [ ] Action: replace the conditional Goursat reconstruction theorem by a precise existence, uniqueness and continuous-dependence theorem in one cited function space.
+  Context: only restriction and sheet constraint transport are proved on the smooth core; neither bulk existence nor bulk uniqueness follows from the transport integrals.
   Check: an explicit bounded inverse estimate for restriction/reconstruction.
 - [ ] Action: choose the paper's compact cut: $S^2$ in a fixed bundle sector or $T^2$ with harmonic modes displayed.
   Context: the local planar model is cleanest for signs; $S^2$ is cleaner topologically for $H^1$ but has magnetic bundle sectors.
@@ -21,6 +21,12 @@
 - Should the first theorem fix electric flux sectors, or retain the relative frame and unite the sectors?
 - Is the relative frame allowed as a transition function between sheet trivializations, or is the phase space restricted to a single smooth bulk trivialization?
 - Which global $U(1)$ bundle sectors over $S^2$ are included?
+
+## Current True Blockers
+
+- Exact fixed-background Maxwell Goursat function spaces and bounded restriction/reconstruction maps for $(r,p;E_0,b^0)$ plus potential compatibility.
+- Global bundle, Chern-class, harmonic and flat-holonomy sectors in the composition locus.
+- Maxwell Peierls comparison on the reduced characteristic space.
 
 ## Explicit Non-Blockers
 

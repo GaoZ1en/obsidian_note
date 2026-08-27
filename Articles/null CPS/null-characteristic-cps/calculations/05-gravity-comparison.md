@@ -4,11 +4,9 @@
 
 The structural analogy is useful but not an identification:
 
-$$
-(E_\perp,\lambda_{\mathrm{rel}})_{\mathrm{Max}well}
-\quad\leftrightarrow\quad
-(\text{area density},\text{relative boost})_{\mathrm{gravity}}
-$$
+$$\begin{align}
+(E_\perp,\lambda_{\mathrm{rel}})_{\mathrm{Max}well} \quad\leftrightarrow\quad (\text{area density},\text{relative boost})_{\mathrm{gravity}}
+\end{align}$$
 
 only at the level “matching charge paired with a relative frame.” The actions, gauge groups, constraints and physical extensions are different.
 

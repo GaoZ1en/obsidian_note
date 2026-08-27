@@ -1,21 +1,24 @@
 # Roadmap
 
-## Phase I — Closed Classical Core
+## Phase I — Closed Sheet-Constraint and Formal CPS Core
 
 - [x] Fix the flat (3+1) double-null convention and orientations.
 - [x] Derive $\theta=-\delta A\wedge *F$ and the Lee--Wald current before gauge fixing.
 - [x] Decompose Maxwell and Bianchi equations into radiative and transport sectors.
-- [x] Identify the shared electric and magnetic corner data.
+- [x] Prove that $(r,p)$ are radiative profiles but not complete characteristic data.
+- [x] Identify the shared electric and magnetic corner integration data and add Coulomb/magnetic regression examples.
 - [x] Derive cut charges and the proper/charged gauge distinction.
 - [x] Derive the relative-frame corner polarization and state when it is absent.
 - [x] Correct the naive product reduction by adding the compatibility locus.
 - [x] Prove formal associativity of Abelian frame/flux composition.
 - [x] Check the component, Hodge, pullback, orientation and reduction identities symbolically.
 
+This phase does not include bulk Goursat surjectivity or uniqueness.
+
 ## Phase II — Analytic Closure
 
-- [ ] Action: state and prove the characteristic existence theorem on $S^2$ in one declared Sobolev scale.
-  Context: the present note uses the standard smooth local Maxwell Goursat theorem as an input.
+- [ ] Action: state and prove the characteristic existence/uniqueness theorem on $S^2$ in one declared Sobolev scale.
+  Context: the present note uses the Rácz/Rendall smooth local route only as structural support; it does not yet import an exact fixed-background theorem on the displayed data.
   Check: restriction and reconstruction are inverse modulo the declared proper gauge group, with continuous dependence.
 - [ ] Action: separate trivial-bundle, fixed-Chern-class and harmonic-one-form sectors for general compact $S$.
   Context: the local calculation suppresses topological zero modes.
