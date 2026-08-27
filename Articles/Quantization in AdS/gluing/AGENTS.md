@@ -39,7 +39,11 @@
 8. Quantize the regional initial data only while $q_i$ is prescribed. The operators $d_{i,n}$ define a reference Gaussian representation; for nonconstant $q_i(t)$, do not call its annihilated state a stationary regional vacuum.
 9. After gluing, solve the interface equation for the operator-valued common history $q[d_+]$ and retain the decoupled $d_-$ modes. Reconstruct the full field from $q(t)$ and $c_{i,n}(t;q)$ before defining global canonical variables.
 10. Obtain the glued operators through the sequence
-    $$(q,c_i)\longrightarrow\phi_{\mathrm{glued}}\longrightarrow(Q_r,P_r)\longrightarrow(a_r,a_r^\dagger).$$
+
+$$\begin{align}
+(q,c_i)\longrightarrow\phi_{\mathrm{glued}}\longrightarrow(Q_r,P_r)\longrightarrow(a_r,a_r^\dagger).
+\end{align}$$
+
     Define $Q_r,P_r$ by projection onto normalized glued eigenmodes and verify their reduced canonical commutators. Do not infer them from the spectrum alone.
 11. Use a common finite Galerkin regulator on the regional and global descriptions before making an equivalence claim. Isolate every direction that degenerates with the cutoff and state the quotient, energy, or graph topology in which convergence is claimed; a raw coefficient-norm condition number need not be uniformly bounded. Construct the reduced symplectic map first, supply a compatible complex structure or controlled reduction second, quantize third, and study the continuum limit last. Require exact Hamiltonian intertwining only inside the same finite regulator; comparison with exact continuum frequencies is a convergence statement.
 

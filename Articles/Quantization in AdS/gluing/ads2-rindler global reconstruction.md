@@ -12,9 +12,7 @@ $$\begin{align}
 \text{compatible data on two intersecting horizons} \xrightarrow{\ \text{action/CPS}\ }
 \Omega_{\rm null} \xrightarrow{\ \text{Goursat}+\xi_0\ }
 X_0^{\rm null},\ H_0^{\rm null} \xrightarrow{\ \mathfrak{sl}(2,\mathbb R)\ \text{on the horizons}\ }
-\{\Delta+n,z_n,\Phi_n\} \xrightarrow{\ \Omega^{-1}\ }
-E_D \xrightarrow{\ J_{\rm global}\ }
-G^+ \xrightarrow{\ \mathrm{Res}_R\ } \text{smeared boost KMS at }\beta=2\pi .
+\{\Delta+n,z_n,\Phi_n\} \xrightarrow{\ \Omega^{-1}\ } E_D \xrightarrow{\ J_{\rm global}\ } G^+ \xrightarrow{\ \mathrm{Res}_R\ } \text{smeared boost KMS at }\beta=2\pi .
 \end{align}$$
 
 The proof is divided into three noninterchangeable tiers.
@@ -168,8 +166,7 @@ h_f(V):=\partial_U\phi(0,V),\qquad k_g(U):=\partial_V\phi(U,0),
 \end{align}$$
 
 $$\begin{align}
-h_f'(V)=-af(V),\quad h_f(0)=g'(0),qquad
-k_g'(U)=-ag(U),\quad k_g(0)=f'(0). \tag{2.12}
+h_f'(V)=-af(V),\quad h_f(0)=g'(0), \qquad k_g'(U)=-ag(U),\quad k_g(0)=f'(0). \tag{2.12}
 \end{align}$$
 
 Higher mixed corner jets are obtained by differentiating (2.8). Finally, the local solutions obtained below must continue through successive regular Kruskal charts with the standard $O((\cos\rho)^\Delta)$ conformal falloff. This is a condition on the characteristic solution relation, not a transported norm or a reference to global modes. It defines a compatible domain but does not claim that an unrestricted product of completed half-ray spaces is admissible or onto.
@@ -604,8 +601,7 @@ $$\begin{align}
 turns (5.18) into the lowest global-coordinate expression. Acting with the already derived $L_+$ gives
 
 $$\begin{align}
-L_+\left[e^{-i(\Delta+n)t}(\cos\rho)^\Delta
-C_n^\Delta(\sin\rho)\right] =-i(n+1)e^{-i(\Delta+n+1)t}(\cos\rho)^\Delta C_{n+1}^\Delta(\sin\rho). \tag{5.23}
+L_+\left[e^{-i(\Delta+n)t}(\cos\rho)^\Delta C_n^\Delta(\sin\rho)\right] =-i(n+1)e^{-i(\Delta+n+1)t}(\cos\rho)^\Delta C_{n+1}^\Delta(\sin\rho). \tag{5.23}
 \end{align}$$
 
 Thus the closed-form identification, as an output of (5.20), is
