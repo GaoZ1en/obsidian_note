@@ -199,7 +199,7 @@ The theorem does not say that every such compatible datum has a bulk extension. 
 
 ## 6. Reconstruction Theorem with Explicit Analytic Hypothesis
 
-**Conditional.** Fix:
+**Conditional in general; explicit in the product benchmark.** Fix:
 
 1. a smooth or Sobolev data/solution class in which the Maxwell first-order system, or a Lorenz-gauge potential wave system with propagated subsidiary constraints, has a Goursat existence, uniqueness and continuous-dependence theorem on the chosen double-null domain;
 2. a $U(1)$ bundle, magnetic Chern class and, when $H^1(S)\neq0$, a holonomy sector;
@@ -208,7 +208,9 @@ The theorem does not say that every such compatible datum has a bulk extension. 
 
 Under these hypotheses, compatible potential-level characteristic data reconstruct a unique bulk Maxwell potential modulo the declared proper gauge group. Equivalently, after forgetting charged boundary frames, (4.6) reconstructs a unique bulk field strength in the fixed topological sector.
 
-The current project proves the transport parameterization and the necessity of the compatibility equations. It does not supply item 1 in the exact displayed function spaces. In particular, integrating (4.2)--(4.5) proves only the sheet-constraint theorem; it is not a proof of bulk surjectivity or bulk uniqueness. [Rácz's smooth Newman--Penrose Einstein--Maxwell theorem](https://arxiv.org/abs/1307.1683) provides a structural local existence/uniqueness cross-check near the intersection, while [Rendall's reduction theorem](https://doi.org/10.1098/rspa.1990.0009) supports the wave-equation route. Neither source, as currently imported here, is yet the exact fixed-background Maxwell Sobolev isomorphism required to remove the conditional status.
+The original sheet-constraint layer proves the transport parameterization and necessity of the compatibility equations but does not by itself supply item 1. In particular, integrating (4.2)--(4.5) proves only the sheet-constraint theorem; it is not a proof of bulk surjectivity or bulk uniqueness. [Rácz's smooth Newman--Penrose Einstein--Maxwell theorem](https://arxiv.org/abs/1307.1683) provides a structural local existence/uniqueness cross-check near the intersection, while [Rendall's reduction theorem](https://doi.org/10.1098/rspa.1990.0009) supports the wave-equation route. Neither source, as imported here, is the exact general Maxwell Sobolev isomorphism.
+
+The preceding paragraph is the boundary for a general product cut and for curved extensions. On the selected $\mathbb R^{1,1}\times S^2_R$ benchmark, calculations 06--07 derive two massive scalar masters for every $\ell\geq1$ and prove an explicit matched-$H^1$ Bessel/Riemann Goursat isomorphism. Thus item 1 is supplied directly for the radiative benchmark sectors. The $\ell=0$ electric flux and magnetic Chern class are handled separately and are not reconstructed as radiative masters.
 
 ## 7. Null Pullback of the Potential
 
@@ -317,6 +319,6 @@ where $b^0_{AB}=B_0\epsilon_{AB}$ locally. Thus the standard NP hierarchy has th
 
 ## Not Verified
 
-- A specific Sobolev completion and continuous inverse for the Maxwell Goursat map.
+- A same-order Sobolev completion and continuous inverse for arbitrary curved backgrounds or for the full harmonic tower without angular derivative weights; the benchmark per-sector matched-$H^1$ inverse is proved.
 - Harmonic cut sectors for $H^1(S)\neq0$.
 - Non-Abelian constraint propagation and singular symplectic quotients.

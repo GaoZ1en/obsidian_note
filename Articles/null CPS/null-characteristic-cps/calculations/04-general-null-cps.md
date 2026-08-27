@@ -97,4 +97,4 @@ Regional state restrictions do not determine correlations between causally separ
 
 ## 8. General Claim Boundary
 
-Maxwell proves the sheet-constraint part of the sequence (1.1) and shows why (1.2) is necessary in a linear Abelian model. Its bulk reconstruction step is conditional on the exact Goursat theorem. It does not prove that every null theory has a relative frame--charge pair, that all constraint reductions are regular, or that gravity follows by replacing electric flux with area. Those are comparison hypotheses to be tested from the relevant action.
+The general Maxwell statement proves the sheet-constraint part of (1.1) and shows why (1.2) is necessary in a linear Abelian model. The $\mathbb R^{1,1}\times S^2_R$ benchmark additionally closes radiative reconstruction, Fock/Peierls quantization and weak-symplectic composition by an explicit master reduction. That model-specific closure does not prove that every null theory has a relative frame--charge pair, that all constraint reductions are regular, or that gravity follows by replacing electric flux with area. Those remain comparison hypotheses to be tested from the relevant action.

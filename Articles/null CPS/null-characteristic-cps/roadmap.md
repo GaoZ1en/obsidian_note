@@ -15,33 +15,36 @@
 
 This phase does not include bulk Goursat surjectivity or uniqueness.
 
-## Phase II — Analytic Closure
+## Phase II — Product-Benchmark Analytic and Modal Closure
 
-- [ ] Action: state and prove the characteristic existence/uniqueness theorem on $S^2$ in one declared Sobolev scale.
-  Context: the present note uses the Rácz/Rendall smooth local route only as structural support; it does not yet import an exact fixed-background theorem on the displayed data.
-  Check: restriction and reconstruction are inverse modulo the declared proper gauge group, with continuous dependence.
-- [ ] Action: separate trivial-bundle, fixed-Chern-class and harmonic-one-form sectors for general compact $S$.
-  Context: the local calculation suppresses topological zero modes.
-  Check: list every finite-dimensional pair and verify that no mode is counted twice.
-- [ ] Action: prove weak nondegeneracy after quotient and endpoint conditions.
-  Context: generator zero modes depend on whether endpoint values or fluxes are fixed.
-  Check: compute the kernel of the completed two-form.
+- [x] Fix the stationary ultrastatic benchmark $\mathbb R^{1,1}\times S^2_R$ and one Chern sector.
+- [x] Reduce the Maxwell action to exact/coexact electric and magnetic master fields.
+- [x] Prove the finite-rectangle matched-$H^1$ Goursat isomorphism with a Bessel/Riemann kernel.
+- [x] Give the complete $(r,p;E_0,b^0)\leftrightarrow(f,g;c)\leftrightarrow\Phi\leftrightarrow F$ dictionary.
+- [x] Separate the $\ell=0$ electric-flux and magnetic-Chern sectors.
+- [x] Prove weak nondegeneracy after the proper gauge quotient.
+- [x] Construct finite Goursat coordinates and complete global stationary modes.
+- [x] Normalize the modes on the complete two-sheet cross and prove the principal-value cancellations.
 
-## Phase III — Algebraic Check
+## Phase III — Algebraic, Fock and Peierls Closure
 
-- [ ] Action: compare the inverse characteristic symplectic form with the Maxwell Peierls bracket.
-  Context: this is B1 and does not require a Hilbert tensor product.
-  Check: equality on compactly supported gauge-invariant smearings.
-- [ ] Action: construct the Weyl CCR algebra of the reduced smooth characteristic space.
-  Context: retain electric-flux superselection sectors explicitly.
-  Check: functoriality under the composition relation.
+- [x] Construct the reduced Weyl CCR algebra.
+- [x] Pull the global stationary complex structure back to the characteristic data.
+- [x] Construct the oscillator/Fock representation and diagonal Noether Hamiltonian.
+- [x] Compute the stationary Wightman and Pauli--Jordan kernels.
+- [x] Prove equality of the characteristic inverse and Peierls bracket on compact gauge-invariant smearings.
+- [x] Prove modewise weak-symplectic composition and associativity.
 
-## Phase IV — Generalization
+## Phase IV — Manuscript and Generalization
 
+- [ ] Convert the benchmark chain into a theorem-led first-paper draft.
+- [ ] Harden the infinite-endpoint completion with a precise massive scattering/function-space citation.
+- [ ] Complete the pre-1990 null-Maxwell novelty audit.
+- [ ] Decide whether the optional extended $\ell=0$ frame representation belongs in an appendix or a follow-up.
 - [ ] Yang--Mills: replace $d$ by $D_A$, keep flux matching on a coadjoint orbit, and test the non-Abelian corner group law.
-- [ ] Curved fixed background: allow (q_{AB}(u,v,x)), expansion and null lapse, then rederive all transport weights.
+- [ ] Curved fixed background: allow $q_{AB}(u,v,x)$, expansion and null lapse, then rederive all transport weights.
 - [ ] Gravity: use the Maxwell result only as a structural comparator for relative boost--area data.
 
 ## Stopping Rule for a First Paper
 
-Stop expansion and write the paper once Phase II closes for a compact cut and the Peierls check is completed on a dense gauge-invariant test algebra. Yang--Mills, gravity and B2 are follow-up projects, not prerequisites.
+The stopping rule has been met for the declared product benchmark: Phase II closes for $S^2_R$, and the Peierls check is complete on compact master/field-strength smearings. The next main action is manuscript distillation, not adding Yang--Mills, gravity or regional-factorization claims.

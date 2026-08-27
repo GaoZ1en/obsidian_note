@@ -13,13 +13,20 @@ The ingredients of the project are individually established in nearby literature
 3. electric-flux superselection and extended boundary frames for bounded Yang--Mills;
 4. relative boost--area data on intersecting gravitational horizons.
 
-What was not located is a (3+1) fixed-background Maxwell treatment that begins from the action without gauge fixing and establishes, with one exact function-space theorem, the complete chain
+The new product benchmark does not make Maxwell harmonic reduction, massive scalar quantization, light-front brackets, causal propagators or characteristic PDE theory individually novel. All of those ingredients have established antecedents.
+
+What was not located in this audit is one fixed-background Maxwell treatment that begins from the unfixed action and establishes, in the same convention-complete construction, the chain
 
 $$\begin{align}
-\text{double-null restriction/reconstruction} +\text{Gauss/Bianchi corner compatibility} +\text{CPS intertwining} +\text{relative-frame reduction} +\text{associative composition}.
+\text{double-null constraint/corner data}
++\text{ action-derived }S^2\text{ masters}
++\text{ explicit Goursat inverse}
++\text{ complete-cross mode normalization}
++\text{ Fock/Peierls equality}
++\text{ symplectic composition}.
 \end{align}$$
 
-The current project derives the sheet-constraint/CPS/composition parts of this chain and keeps bulk reconstruction conditional. The integration of these layers, rather than single-null Maxwell reduction, is the candidate paper contribution.
+The benchmark now derives that integrated radiative chain on $\mathbb R^{1,1}\times S^2_R$. The candidate contribution is the integration and the explicit data/mode/composition dictionary, not any component technique. Absence from the present search remains a conditional novelty claim, not proof that no equivalent older formulation exists.
 
 ## Source Matrix
 
@@ -36,6 +43,14 @@ The current project derives the sheet-constraint/CPS/composition parts of this c
 | [Chandrasekaran--Flanagan--Prabhu, *Symmetries and charges of general relativity at null boundaries*](https://arxiv.org/abs/1807.11499) | null-boundary symmetries, charges and fluxes in gravity | finite-null-boundary CPS comparison | Maxwell double-null Goursat theorem |
 | [Chandrasekaran--Flanagan--Shehzad--Speranza, *Brown--York charges at null boundaries*](https://arxiv.org/abs/2109.11567) | action/boundary potential analysis for null gravitational charges | reminder that boundary polarization and corner terms must be derived | Maxwell composition formula |
 | [Asymptotic structure of scalar--Maxwell theory at the null boundary](https://arxiv.org/abs/2407.13866) | asymptotic null-boundary constraint/symplectic analysis in scalar--Maxwell theory | single-null/asymptotic comparison | finite double-null diamond and shared-corner reconstruction |
+| [Wódkiewicz, *Null Canonical Formalism I, Maxwell Field*](https://www.actaphys.uj.edu.pl/R/6/7/509/pdf) | null-hypersurface Maxwell canonical variables, Poisson brackets, asymptotic news functions and Hamiltonian equations | decisive prior art for null Maxwell brackets and news quantization | the present finite two-sheet corner-complete $S^2$ benchmark, global stationary pullback and modewise composition |
+| [Chang, Root and Yan, *Quantum Field Theories in the Infinite-Momentum Frame I*](https://doi.org/10.1103/PhysRevD.7.1133) | action-principle derivation of light-front scalar/Dirac commutators and Lorentz-invariant quantization | prior art for characteristic canonical quantization | Maxwell corner constraints or the two-sheet Goursat dictionary |
+| [Kalloniatis and Robertson, *Discretized light-cone quantization of electrodynamics*](https://doi.org/10.1103/PhysRevD.50.5262) | gauge/boundary-condition interplay and electromagnetic zero modes in DLCQ | warning that gauge zero modes depend on regulator and endpoint policy | the noncompact product benchmark or its fixed-Chern double-null composition |
+| [McCartor, Robertson and Pinsky, *Vacuum structure of two-dimensional gauge theories on the light front*](https://doi.org/10.1103/PhysRevD.56.1035) | two-null-plane initialization and gauge zero-mode treatment in $1+1$ gauge models | direct precedent for not treating one null profile as automatically complete | the $S^2$ Maxwell master/action/Peierls chain |
+| [Reisenberger, *The symplectic 2-form and Poisson bracket of null canonical gravity*](https://arxiv.org/abs/gr-qc/0703134) | null initial-data brackets constructed to reproduce Peierls brackets in gravity | strong prior art for the null-symplectic/Peierls comparison strategy | Maxwell harmonic masters, fixed-flux policy or the present explicit Bessel theorem |
+| [Khavkine, *Covariant phase space, constraints, gauge and the Peierls formula*](https://arxiv.org/abs/1402.1282) | precise hypotheses for equivalence of reduced CPS and Peierls structures, including gauge theories | general theorem boundary and terminology | the explicit characteristic inverse and mode normalization in this benchmark |
+| [Iliesiu--Turiaci, *The statistical mechanics of near-extremal black holes*](https://arxiv.org/abs/2003.02860) | Maxwell decomposition on $S^2$ and identification of the two-dimensional $s$-wave gauge sector in a black-hole reduction | prior art for the scalar/vector-harmonic split and special $\ell=0$ gauge field | the flat-product massive radiative action and double-null quantization |
+| [Ciambelli--Klinger, *Quantization of Gravity on Null Hypersurfaces*](https://arxiv.org/abs/2607.07785) | operator-algebraic quantization and gluing of gravitational data on intersecting null hypersurfaces | contemporary comparison for B1 algebra and corner gluing | Maxwell Fock modes, Peierls mode sum or the fixed-background theorem here |
 
 ## Maxwell Characteristic-Data Cross-Check
 
@@ -61,7 +76,7 @@ $$
 
 up to tetrad normalization, orientation and complex-conjugation conventions. This precisely supports the statement that the two radiative scalars do not exhaust the reduced characteristic data: the middle/Coulomb scalar is supplied on the shared corner.
 
-Two limitations are essential. First, Rácz treats the coupled gauge-fixed smooth Einstein--Maxwell system, not the present fixed-background CPS quotient. Second, the existence result used there is local in the characteristic domain near the intersection; the paper itself distinguishes this from control on an arbitrary full finite pair of null segments. It therefore supports the structure and a conditional local existence route, not the exact A5b theorem still sought here.
+Two limitations are essential. First, Rácz treats the coupled gauge-fixed smooth Einstein--Maxwell system, not the present fixed-background CPS quotient. Second, the existence result used there is local in the characteristic domain near the intersection; the paper itself distinguishes this from control on an arbitrary full finite pair of null segments. It therefore supports the general data structure and a conditional local curved-background route. The product-benchmark A5b theorem is instead supplied directly here by the per-mode Bessel/Volterra inverse; the arbitrary curved-background A5b theorem remains open.
 
 ## Relation to the User's Existing Notes
 
@@ -82,22 +97,34 @@ The deprecated finite-boundary Maxwell note establishes a single-null collar pul
 - Electric flux as boundary/superselection data.
 - Boundary frames conjugate to flux in extended gauge-theory phase spaces.
 - Relative boost--area structure for intersecting gravitational horizons.
+- Null Maxwell canonical brackets and asymptotic news quantization.
+- Light-front oscillator quantization and its zero-mode/boundary-condition subtleties.
+- Scalar/vector harmonic reduction of Maxwell fields on a round sphere.
+- General CPS--Peierls equivalence under hyperbolizability and global hypotheses.
 
 ### Project-Specific Derivation Completed Here
 
-- one convention-complete (3+1) Maxwell sheet-constraint data ledger, with bulk reconstruction kept conditional;
+- one convention-complete (3+1) Maxwell sheet-constraint data ledger, with generic bulk reconstruction kept conditional and the stated product benchmark closed separately;
 - raw null pullback on both sheets with orientations;
 - derivation of the relative $U(1)$ frame--electric flux pair from generator dressing;
 - proof that electric matching is the moment map but not the whole compatibility locus;
 - Abelian relative-frame composition law and formal associativity;
 - a Maxwell-derived general null-CPS workflow that keeps B1/B2 separate.
+- the action-derived reduction on $\mathbb R^{1,1}\times S^2_R$ to two normalized massive masters for every $\ell\geq1$;
+- an explicit Bessel/Riemann Goursat isomorphism on matched finite-rectangle $H^1$ data;
+- the full-cross cancellation showing why the two sheet frequencies are one on-shell mode rather than two oscillators;
+- the stationary characteristic complex structure, Fock Hamiltonian and correlators with fixed-flux/Chern zero-mode separation;
+- a gauge-invariant field-strength Peierls equality and weak-symplectic modewise associativity.
 
 ### Still Requiring a Novelty-Proof-Quality Audit
 
 - whether an older characteristic Hamiltonian treatment already states the same reduced corner pair in equivalent variables;
 - whether an exact smooth/Sobolev fixed-background Maxwell reconstruction quotient exists in the literature with precisely $(r,p;E_0,b^0)$, potential transition data and the declared proper gauge policy;
 - whether the associativity statement is a special case of an explicitly cited BV--BFV composition theorem with identical endpoint data.
+- whether Wódkiewicz's cited predecessors or other pre-1990 null-Maxwell papers already contain an equivalent two-sheet mode transform;
+- whether an older Kaluza--Klein treatment gives exactly the same electric parent action and characteristic symplectic map, rather than only the spectrum;
+- whether the complete integrated benchmark is best presented as one theorem or as a worked model validating a broader formalism.
 
 ## Citation Policy for a Paper
 
-Do not advertise single-null reduction or electric-flux edge modes as new. Until A5b closes, phrase the contribution as the integration of a proved sheet-constraint dictionary and two-sheet CPS with a conditional characteristic-reconstruction target and corner-compatible symplectic composition.
+Do not advertise single-null reduction, light-front quantization, electric-flux edge modes, spherical harmonic reduction, ordinary Fock quantization, or CPS--Peierls equivalence as new. For the benchmark, A5b now closes only in the stated $\ell\geq1$ product-background function spaces. Phrase the candidate contribution as the convention-complete integration of the double-null constraint/corner dictionary with explicit master reconstruction, complete-cross normalization, gauge-invariant Peierls equality and symplectic composition. Keep the general curved-background A5b claim conditional.

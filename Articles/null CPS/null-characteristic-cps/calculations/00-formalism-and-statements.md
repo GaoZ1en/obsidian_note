@@ -111,7 +111,7 @@ A gauge transformation is proper only relative to a declared endpoint phase spac
 
 ### Theorem D — Bulk Reconstruction/Restriction Equivalence
 
-**Status: conditional analytic theorem.** Fix a function space in which the Maxwell or Lorenz-potential Goursat problem on the chosen double-null domain has existence, uniqueness and continuous dependence. Also fix a $U(1)$ bundle/holonomy sector, impose the transport and full corner compatibility conditions, and use one endpoint charge policy on the bulk and characteristic sides. Under precisely those hypotheses, restriction induces a bijection
+**Status: conditional in general; proved for the product-benchmark radiative sectors.** Fix a function space in which the Maxwell or Lorenz-potential Goursat problem on the chosen double-null domain has existence, uniqueness and continuous dependence. Also fix a $U(1)$ bundle/holonomy sector, impose the transport and full corner compatibility conditions, and use one endpoint charge policy on the bulk and characteristic sides. Under precisely those hypotheses, restriction induces a bijection
 
 $$\begin{align}
 \frac{\operatorname{Sol}_{\mathrm{Max}}(D)}{\mathcal G_D^0} \longrightarrow \frac{\mathcal X_A^{\mathrm{comp}}}{\mathcal G_X^0},
@@ -120,6 +120,8 @@ $$\begin{align}
 where $\mathcal X_A^{\mathrm{comp}}$ is the potential-level lift of $\mathcal X_F$, including its corner transition function, and the proper gauge groups use the same endpoint charge policy.
 
 Here $\mathcal X_A^{\mathrm{comp}}$ retains the potential-level connection/frame data needed when quotienting only by proper gauge; $\mathcal X_F$ alone describes the gauge-invariant field-strength sector but forgets charged boundary frames. The proved direction is that every bulk solution restricts to compatible data. Existence and uniqueness of a bulk solution are imported together from the Goursat theorem; integrated transport equations prove neither. Rácz's Newman--Penrose treatment supplies a useful smooth local structural cross-check, but not the exact fixed-background Sobolev quotient asserted here.
+
+For $M=\mathbb R^{1,1}\times S^2_R$ and every $\ell\geq1$ electric/magnetic master sector, `07-characteristic-mode-reconstruction.md` supplies the missing theorem directly: matched $H^1$ profiles reconstruct through a Bessel/Riemann kernel with a bounded inverse, and the smooth weighted harmonic sum is continuous. The $\ell=0$ flux/Chern data remain separate, and no generic curved-background conclusion follows from this benchmark.
 
 ### Theorem E — Symplectic Comparison
 
@@ -176,7 +178,7 @@ and electric matching is transitive. Reduction by the commuting internal $U(1)$ 
 
 ## 4. B1 and B2 Boundary
 
-Classical restriction/reconstruction and the future Peierls/CCR comparison are B1. They concern observables and symplectic structure. A state on two regional algebras also requires cross covariance; regional marginals do not determine it. That is B2 and is not part of the current theorem.
+Classical restriction/reconstruction and the Peierls/CCR comparison are B1. They concern observables and symplectic structure. The benchmark Peierls equality is proved in `10-peierls-and-propagator-check.md`. A state on two regional algebras also requires cross covariance; regional marginals do not determine it. That is B2; the stationary Fock state is an explicit global input, not something reconstructed from regional marginals.
 
 The reusable characteristic-data lesson is
 
