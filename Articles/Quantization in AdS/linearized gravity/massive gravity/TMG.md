@@ -4,7 +4,7 @@ date: 2026-06-06
 summary: "Takes the topologically massive gravity limit of the GMG linearized TT equation and records the admissible massive modes, logarithmic mode, symplectic form, and normalization on unit AdS3."
 ---
 
-# Topologically massive gravity
+# Topologically Massive Gravity
 
 This note takes the $m^2\to\infty$ limit of the GMG discussion, with the same unit-radius AdS$_3$ background, lower-index tensor convention, and $\mu>0$ assumption. All indices are moved with $g^{(0)}_{\mu\nu}$, and all covariant derivatives are $\nabla^{(0)}$.
 
@@ -23,7 +23,7 @@ $$\begin{align}
 L_{\rm CS}&=\frac{1}{2}\varepsilon^{\lambda\mu\nu}\Gamma^\rho{}_{\lambda\sigma}\left(\partial_\mu\Gamma^\sigma{}_{\rho\nu}+\frac{2}{3}\Gamma^\sigma{}_{\mu\tau}\Gamma^\tau{}_{\nu\rho}\right),\qquad \sqrt{-g}\,\varepsilon^{\lambda\mu\nu}=\tilde\varepsilon^{\lambda\mu\nu}.
 \end{align}$$
 
-## Linearized eom
+## Linearized Eom
 
 Define
 
@@ -55,7 +55,7 @@ $$\begin{align}
 E^2h_{\mu\nu}=(\nabla^{(0)2}+3)h_{\mu\nu}.
 \end{align}$$
 
-## First-order factorization
+## First-Order Factorization
 
 Define
 
@@ -91,7 +91,7 @@ D^L D^R D^\mu h=-(\nabla^{(0)2}+2)\left[h+\frac{1}{\mu}Eh\right],
 
 where the last line suppresses tensor indices.
 
-## Highest-weight modes
+## Highest-Weight Modes
 
 The finite massive root is $m_+=\mu$. The highest-weight solution of $D^\mu h=0$ in the $\mu>0$ branch is
 
@@ -113,7 +113,7 @@ $$\begin{align}
 
 For $\mu>1$, the TT solution is the sum of the $D^L$, $D^R$, and $D^\mu$ sectors. The $D^L$ and $D^R$ sectors are the usual massless boundary-graviton sectors, while the finite massive primary above and its descendants give the propagating TMG branch.
 
-## Critical point
+## Critical Point
 
 At
 
@@ -153,7 +153,7 @@ g^{(0)\mu\nu}h^{\log}_{\mu\nu}=0,\qquad \nabla^{(0)\mu}h^{\log}_{\mu\nu}=0.
 
 There is no logarithm-squared primary in this TMG limit, because only one massive first-order factor remains finite and the critical factorization has only two coincident $D^L$ factors.
 
-## TT gauge fixed action, symplectic form
+## TT Gauge Fixed Action, Symplectic Form
 
 The TMG quadratic action and symplectic form are the $m^2\to\infty$ limit of the GMG result. The curvature-squared NMG density is absent, while the CS contribution remains the connection-space contribution inherited from the non-perturbative gravitational Chern-Simons term.
 
@@ -196,7 +196,7 @@ $$\begin{align}
 \omega_{\rm CS}^{\mu}=\frac{1}{2}\varepsilon^{(0)\mu\nu\rho}\delta\Gamma^{(1)\alpha}{}_{\nu\beta}\wedge\delta\Gamma^{(1)\beta}{}_{\rho\alpha}.
 \end{align}$$
 
-## Symplectic inner product
+## Symplectic Inner Product
 
 Use the same normalization convention
 
