@@ -68,9 +68,10 @@ principal-value part of the half-line Fourier transform and does not extract a
 global on-shell coefficient.
 
 For \(H^1\) profiles, (2.1) is read as the half-line Fourier transform of the
-zero extensions of \(f,f',g,g'\); the operator used below is the closure of the
-Schwartz-core transform.  This specifies the distributional meaning without
-adding an endpoint prescription.
+zero extensions of \(f,f',g,g'\).  The precise minimal closure, graph domain,
+and density proof are Theorem 2.1 of calculation 15.  This specifies the
+distributional meaning without replacing the closed domain by an unproved
+maximal domain.
 
 ## 3. Synthesis and the Intrinsic Range
 
@@ -93,34 +94,31 @@ $$
 The same \(a(k)\) occurs on the two sheets.  In particular the common corner
 value is not duplicated.
 
-Let \(T_\mu(f,g):=a[f,g]\) and define
+Let \(T_\mu\) be the closed analysis operator of calculation 15 and define on
+its graph domain
 
 $$
 P_\mu:=S_\mu T_\mu.
 \tag{3.3}
 $$
 
-The intrinsic finite-energy characteristic profile space is
+The intrinsic finite-energy characteristic profile space is the graph-closed
+fixed-point space
 
 $$
 \boxed{
-\begin{aligned}
-\mathfrak X_{E,\mu}:=\bigg\{(f,g)\in
-H^1(\mathbb R_+)\oplus H^1(\mathbb R_+):\;&
-f(0)=g(0),\\
-&P_\mu(f,g)=(f,g),\\
-&\int_{\mathbb R}\omega_k|a_k[f,g]|^2dk<\infty
-\bigg\}.
-\end{aligned}}
+\mathfrak X_{E,\mu}
+:=\ker_{\mathcal D_E(T_\mu)}(1-P_\mu)
+=\{h\in\mathcal D_E(T_\mu):P_\mu h=h\}.}
 \tag{3.4}
 $$
 
-Equality in the second line is in \(H^1_{\mathrm{loc}}\), equivalently as a
-pair of distributions.  Formula (3.4) is not the circular definition
+Equality is in the graph Hilbert space.  Formula (3.4) is not the circular definition
 \(\operatorname{Ran}R_X\): every condition is expressed through the explicit
 half-line transforms (2.1), (3.1), and (3.2).  Equivalently,
-\(\mathfrak X_{E,\mu}\) is the graph-norm completion of the fixed points of
-\(P_\mu\) on the Schwartz profile core.
+\(\mathfrak X_{E,\mu}=S_\mu L^2(\omega dk)\).  The operator \(P_\mu\) is a
+bounded idempotent in the graph topology.  No ambient
+\(H^1\oplus H^1\)-bounded projector is claimed.
 
 The fixed-point condition is the nonlocal compatibility missing from the
 finite Goursat condition \(f(0)=g(0)\).  A generic matched pair on two
@@ -129,7 +127,7 @@ of a global finite-energy solution.
 
 ## 4. Analysis--Synthesis and Plancherel Theorem
 
-### Proposition 4.1
+### Proposition 4.1 — core calculation and closed extension
 
 On the Schwartz spectral/profile cores,
 
@@ -185,8 +183,10 @@ and \(N_k^2=(4\pi\omega_k)^{-1}\) to give exactly one
 \(\delta(k-k')\).  The positive--positive principal values cancel by the
 analogous identity with \((\alpha-\alpha')/(\alpha+\alpha')\).  Hence
 \(T_\mu S_\mu=1\).  Equation (4.2) follows by expanding the two real profiles
-and using \(\Omega_X(U_k,U_{k'}^*)=-i\delta(k-k')\).  The identities extend by
-continuity to (3.4).  \(\square\)
+and using \(\Omega_X(U_k,U_{k'}^*)=-i\delta(k-k')\).  The identities extend to
+the energy domain by the closed-operator argument in calculation 15:
+\(S_\mu:L^2(\omega dk)\to H_{\rm match}\) is bounded,
+\(T_\mu S_\mu=1\), and \(P_\mu\) is graph-bounded.  \(\square\)
 
 This proves both injectivity of the two-sheet transform and an explicit
 inverse.  It also proves mode completeness without defining the range to be
@@ -230,7 +230,8 @@ corner value are well defined.
 
 ## 6. Explicit Characteristic Complex Structure
 
-The stationary complex structure is multiplication by \(-i\) on \(a(k)\):
+On the classical energy fixed-point space, the stationary complex structure
+is multiplication by \(-i\) on \(a(k)\):
 
 $$
 \boxed{
@@ -267,9 +268,11 @@ $$
 $$
 
 The \(k\)-integral is an oscillatory distribution on the Schwartz core and is
-extended by (5.1).  Formula (6.3) deliberately leaves the derivative on the
-profile; integrating it by parts would generate corner terms that must not be
-silently discarded.  The off-diagonal terms \(q\neq r\) are nonzero and show
+extended by (5.1) to the one-particle completion.  Formula (6.3) deliberately
+leaves the derivative on the profile.  If it is integrated by parts on the
+decaying core, the retained boundary term is
+\(-\cos(\gamma_r(k)s)h_q(0)\) for each sheet \(q\), as displayed explicitly in
+equation (7.1) of calculation 15.  The off-diagonal terms \(q\neq r\) are nonzero and show
 explicitly that \(J_X\) mixes the two sheets.  From (4.1),
 
 $$
@@ -303,14 +306,17 @@ energy is subtracted and the sector is named separately.
 
 ## 8. Verification Status
 
-**Proved analytically:** the two-sheet transform, inverse/projector
+**Proved analytically:** the closable two-sheet transform and its closed
+energy-domain realization, bounded synthesis, graph projector/fixed-point
 characterization, Plancherel form, exact one-particle and energy isometries,
-and the profile kernel for \(J_X\).
+and the profile kernel for \(J_X\).  The closed-domain proof is calculation
+15.
 
 **Checked symbolically:** the mass-shell Jacobians, both principal-value
 cancellations, the delta normalization, the sign in (2.1), and the algebraic
 substitution leading to (6.3).
 
 **Not claimed:** that an arbitrary matched pair of half-ray profiles belongs
-to (3.4), that a finite rectangle determines (2.1), or that \(J_X\) is local
-on either sheet.
+to (3.4), that \(P_\mu\) is bounded on ambient \(H^1\oplus H^1\), that a
+finite rectangle determines (2.1), that one-particle distributions have
+pointwise corner traces, or that \(J_X\) is local on either sheet.

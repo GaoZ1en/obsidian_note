@@ -1,8 +1,13 @@
-# Modewise Symplectic Composition and Associativity
+# Sequential Radiative Master-Cell Composition
 
 ## 1. Direct Verdict
 
-For every radiative \((\ell,m,P)\) sector on the product benchmark, composition is weak-symplectic, not merely formal frame bookkeeping. Explicit Goursat reconstruction identifies the matched characteristic locus with one master solution space; the pullback two-form has zero kernel; and either parenthesization of a multi-cell gluing is canonically symplectomorphic to the same solution space.
+For every radiative \((\ell,m,P)\) sector on the product benchmark,
+**sequential radiative master-cell composition is weak-symplectically
+associative**.  Explicit Goursat reconstruction identifies the matched
+characteristic locus with one master solution space; the pullback two-form has
+zero kernel; and either parenthesization of a multi-cell gluing is canonically
+symplectomorphic to the same solution space.
 
 This statement is proved only for \(\ell\geq1\) radiative sectors and for the declared endpoint policy. The \(\ell=0\) fixed-flux sector has zero tangent two-form; the optional extended frame--flux pair retains only the finite-dimensional Abelian associativity proved earlier.
 
@@ -102,7 +107,7 @@ $$
 
 Since the right-hand side pulls back from the weakly nondegenerate form on the unique glued solution space, its kernel on the compatible quotient is zero.
 
-## 5. Three-Cell Associativity
+## 5. Three-Cell Weak-Symplectic Associativity Theorem
 
 For three adjacent cells, define the simultaneous compatibility locus
 
@@ -138,7 +143,10 @@ G_{(12)3}^*\Omega
 \tag{5.3}
 $$
 
-Thus the identity map on the unique glued solution defines the canonical weak symplectic isomorphism
+Thus the identity map on the unique glued solution defines the canonical weak
+symplectic isomorphism.  This is the theorem called “sequential radiative
+master-cell composition is weak-symplectically associative”; broader
+unqualified associativity claims are excluded.
 
 $$
 \boxed{(P_1\circ P_2)\circ P_3
@@ -168,7 +176,17 @@ independently of how the cells are parenthesized.
 
 The former script line checking only \((\omega_1+\omega_2)+\omega_3=\omega_1+(\omega_2+\omega_3)\) has been removed; it was ordinary addition associativity and supplied no evidence for this claim.
 
-The replacement `scripts/three_cell_symplectic_checks.wl` uses three adjacent finite Goursat cells and a six-dimensional finite profile basis. It explicitly constructs the two Bessel reconstruction evaluation matrices \(G_{(12)3}\) and \(G_{1(23)}\), the direct outer reconstruction, every horizontal/vertical edge symplectic matrix, and the reduced pullback identity \(S^T\Omega_{\mathrm{outer}}S=S^T\Omega_{\mathrm{cells}}^{\mathrm{red}}S\). The two internal edge matrices both have rank six and cancel only after the opposite induced orientations are applied. Both parenthesizations agree with each other and with direct reconstruction to approximately 29 decimal digits; all orientation and symplectic matrix residuals simplify exactly to zero. The exact setup and result are recorded in `14-three-cell-symplectic-composition-check.md`.
+The replacement `scripts/three_cell_symplectic_checks.wl` starts from three independent six-dimensional
+cell coefficient spaces, constructs the simultaneous \(12\times18\)
+compatibility matrix and an \(18\times6\) rectangular kernel embedding, and
+evaluates \(T_{12}=\operatorname{Tr}_{\rm right}G_1\) and
+\(T_{23}=\operatorname{Tr}_{\rm right}G_2\) from reconstructed traces.  It
+feeds those traces through two actual parenthesizations, compares both with
+direct width-three reconstruction, constructs every edge matrix, verifies the
+nonzero block-cut pullback, and cancels the two full-rank internal matrices
+only after matched pullback.  Trace-operator residuals vanish to about 32
+digits and the sequential/direct maps agree to about 30 digits.  The exact
+setup is recorded in `14-three-cell-symplectic-composition-check.md`.
 
 ## 7. Relation to Maxwell Frame Reduction
 
@@ -194,9 +212,15 @@ as a canonical \(*\)-isomorphism between the Weyl algebra of the reduced matched
 
 ## 9. Status
 
-**Proved:** exact compatibility locus, pullback two-form, zero kernel after proper gauge reduction, canonical weak-symplectic associativity for every radiative harmonic sector, and the induced Weyl-algebra composition isomorphism.
+**Proved:** exact compatibility locus, pullback two-form, zero kernel after
+proper gauge reduction, weak-symplectic associativity of sequential radiative
+master-cell composition for every radiative harmonic sector, and the induced
+Weyl-algebra composition isomorphism.
 
-**Checked independently:** two nontrivial parenthesized Bessel reconstruction maps, nonzero internal edge orientation cancellation, and the finite symplectic pullback matrix identity on a six-dimensional matched basis.
+**Checked independently:** three independent cell spaces, a rectangular
+compatibility embedding, reconstructed internal trace operators, two
+trace-fed Bessel parenthesizations, nonzero internal-edge orientation
+cancellation, and the finite block-cut symplectic pullback.
 
 **Clarified:** the naked endpoint trace constraint is not assigned an unjustified finite-dimensional coisotropic label in the weak \(H^1\) space; an endpoint extension is required before that vocabulary applies.
 

@@ -16,9 +16,26 @@ $$
 
 for the main global finite-energy Fock theorem. This is a stationary ultrastatic product background, not $3+1$ Minkowski spacetime.
 
-For every $\ell\geq1$, the Maxwell action reduces to two gauge-invariant massive scalar masters. **Theorem I** is the bounded local Bessel/Riemann Goursat isomorphism on $D_{U,V}$; the finite rectangle is only a local characteristic chart for the restriction/germ of the boundaryless global solution, not an autonomous finite-region gauge phase space. **Theorem II** is the injective symplectic restriction of the global finite-energy solution space to the complete half-cross. Its target has an intrinsic analysis--synthesis projector characterization, an explicit two-sheet coefficient $a_k[f,g]$, exact one-particle/energy norms, and an explicit nonlocal $J_X$ kernel.
+For every $\ell\geq1$, the Maxwell action reduces to two gauge-invariant
+massive scalar masters. **Theorem I** is the bounded local Bessel/Riemann
+Goursat isomorphism on $D_{U,V}$; its profiles coordinatize the local solution
+germ/restriction space on that patch, not the global solution space or an
+autonomous finite-region gauge phase space. **Theorem II** is the injective
+symplectic restriction of the global finite-energy master/field-strength
+solution space to the complete half-cross. Its target has a graph-closed
+analysis--synthesis fixed-point characterization, an explicit two-sheet
+coefficient $a_k[f,g]$, exact one-particle/energy norms, and an explicit
+nonlocal $J_X$ kernel.
 
 The half-cross endpoint step is proved: the mass gap gives $H^1$ null traces, vanishing symplectic tails, rapid Schwartz-core decay at null infinity, and a density extension to the full energy space. The resulting CCR/Fock, Hamiltonian, Wightman, Peierls, radiative weak-symplectic composition and Weyl-algebra composition statements are explicit.
+
+The primary global theorem is formulated on the gauge-invariant
+master/field-strength space.  A proper-gauge potential quotient is retained
+only as a secondary corollary on the smooth Schwartz core, with both
+asymptotic frames fixed and proper gauge parameters vanishing at
+$z\to\pm\infty$.  An energy-completed potential quotient remains conditional
+until a potential Sobolev topology is selected; it is not needed by the Fock
+theorem.
 
 The general curved-background bulk reconstruction claim remains conditional. The benchmark theorem does not turn sheet transport integration into a generic Maxwell Goursat theorem.
 
@@ -44,7 +61,18 @@ $$
 r_A=F_{vA}|_{N_+},\quad p_A=F_{uA}|_{N_-},
 $$
 
-where $E_0=F_{uv}|_{S_0}$ and $b^0_{AB}=F_{AB}|_{S_0}$ are shared corner integration data. The nonzero source-free fields $F=E_c\,du\wedge dv$ and $F=B_c\,\operatorname{vol}_S$ both have $r=p=0$. The electric example already proves incompleteness within a fixed magnetic Chern sector whenever electric flux has not also been fixed. On $S^2$, the constant magnetic example is primarily a cross-Chern-sector/topological check; it is not a tangent variation inside one fixed Chern sector. Proper gauge transformations are exactly the gauge directions whose cut charge variation vanishes under the declared endpoint policy.
+where $E_0=F_{uv}|_{S_0}$ and $b^0_{AB}=F_{AB}|_{S_0}$ are shared corner
+integration data.  The nonzero source-free fields
+$F=E_c\,du\wedge dv$ and $F=B_c\,\operatorname{vol}_S$ both have $r=p=0$.
+More strongly, for every fixed $\ell\geq1$ master sector the local
+shared-corner solution $\Phi=cJ_0(\sqrt{2\lambda_\ell uv})$ has $r=p=0$ but
+nonzero $E_{0,\ell m}$ or $B_{0,\ell m}$.  Since an $\ell\geq1$ harmonic has
+zero spherical integral, this counterexample lies inside $Q_E=n=0$; it is a
+finite-patch mode, not a normalizable global half-cross vector.  Thus local
+derivative-pair incompleteness no longer depends on an $\ell=0$ flux or
+cross-Chern example.  Proper gauge transformations are exactly the gauge
+directions whose cut charge variation vanishes under the declared endpoint
+policy.
 
 In the original general product formalism, the proved statement is only that $\mathcal X_F$ parameterizes the sheet data satisfying the Maxwell/Bianchi transport constraints. A bijection with bulk Maxwell solutions requires a Goursat existence-and-uniqueness theorem with the displayed regularity, bundle, corner and endpoint hypotheses. That general step remains conditional. In the declared $\mathbb R^{1,1}\times S^2_R$, fixed-sector, $\ell\geq1$ benchmark, calculations 06--07 supply the missing theorem explicitly in matched per-mode $H^1$ spaces and on the smooth weighted harmonic core.
 
@@ -124,10 +152,12 @@ $$
 - `calculations/08-symplectic-mode-normalization.md`: weak nondegeneracy, complete-cross normalization and symplectic transform.
 - `calculations/09-canonical-and-fock-quantization.md`: Weyl algebra, stationary $J_X$, Fock space, Hamiltonian and correlators.
 - `calculations/10-peierls-and-propagator-check.md`: causal kernel and gauge-invariant Maxwell Peierls equality.
-- `calculations/11-modewise-composition.md`: radiative weak-symplectic composition and associativity.
+- `calculations/11-modewise-composition.md`: weak-symplectic associativity of sequential radiative master-cell composition.
 - `calculations/12-global-characteristic-completion.md`: global finite-energy space, massive half-cross tails, null-infinity flux lemma and Theorem II.
 - `calculations/13-characteristic-complex-structure.md`: intrinsic profile space, boxed two-sheet transform, Plancherel norms and explicit $J_X$ kernel.
-- `calculations/14-three-cell-symplectic-composition-check.md`: nontrivial three-cell reconstruction/matrix check and Weyl-algebra corollary.
+- `calculations/14-three-cell-symplectic-composition-check.md`: genuine trace-fed three-cell reconstruction and rectangular pullback regression.
+- `calculations/15-closed-characteristic-transform.md`: closed $T_\mu$ graph domain, graph projector, energy fixed-point space and one-particle extension boundary.
+- `calculations/16-global-gauge-policy.md`: gauge-invariant main theorem and fixed-asymptotic-frame potential-quotient corollary.
 - `zero-modes-and-superselection.md`: electric flux, magnetic Chern class and optional frame representation.
 - `literature/literature-comparison.md`: novelty and source map.
 - `verification/CLAIM_LEDGER.md`: `proved / checked symbolically / conditional / conjectural / false` ledger.
@@ -135,13 +165,22 @@ $$
 
 ## Current Phase
 
-The theorem chain is proved for the radiative $\ell\geq1$ sectors of $\mathbb R^{1,1}\times S^2_R$ under the displayed function spaces. The finite-rectangle Goursat inverse is proved in a matched $H^1$ graph space; the global range is characterized intrinsically by the fixed points of an explicit profile projector; half-cross completion is proved in the energy norm; and the characteristic inverse equals the Peierls bracket on compact gauge-invariant smearings. The three-cell regression now checks two actual reconstruction parenthesizations and nonzero internal-edge orientation cancellation rather than ordinary addition associativity.
+The theorem chain is proved for the radiative $\ell\geq1$ sectors of
+$\mathbb R^{1,1}\times S^2_R$ under the displayed function spaces. The
+finite-rectangle Goursat inverse is proved in a matched $H^1$ graph space; the
+global range is characterized intrinsically by the fixed points of the closed
+analysis transform's graph-bounded projector; half-cross completion is proved
+in the energy norm; and the characteristic inverse equals the Peierls bracket
+on compact gauge-invariant smearings. The three-cell regression now starts
+from independent cell coefficient spaces and feeds reconstructed internal
+traces through both parenthesizations.
 
 The exact remaining boundaries are:
 
 - a uniform same-order Sobolev theorem for the full angular tower without derivative weights;
 - a finite cross has only stationary overlap kernels, not unique global coefficients or a vacuum without outer-extension/global-state input;
 - the one-particle completion is larger than the classical energy profile space and may have only distributional corner traces;
+- an energy-completed potential quotient before a potential Sobolev topology is selected; the smooth fixed-frame quotient is proved;
 - arbitrary curved double-null backgrounds, caustics and non-product cuts;
 - large-gauge periodicity of the optional $\ell=0$ relative frame, background-energy subtraction for nonzero $(Q_E,n)$, and sums over Chern sectors;
 - nonlinear/non-Abelian or gravitational symplectic composition.
@@ -166,8 +205,8 @@ A null surface used only to measure symplectic flux may be described by its flux
 1. **Action, conventions and sector:** unfixed Maxwell action on $\mathbb R^{1,1}\times S^2_R$; proper versus charged gauge; main quantum sector $Q_E=n=0$.
 2. **Characteristic constraint/corner dictionary:** $(r,p;E_0,b^0)$, potential lift, endpoint bookkeeping and the precise role of the relative frame.
 3. **Action-derived master reduction:** exact/coexact harmonics and the two massive masters for every $\ell\geq1$.
-4. **Theorem I:** matched-$H^1$ local Goursat reconstruction on $D_{U,V}$, explicitly interpreted as a local chart rather than a regional subsystem.
+4. **Theorem I:** matched-$H^1$ local Goursat reconstruction on $D_{U,V}$, explicitly interpreted as coordinates on the local solution germ/restriction space rather than a regional subsystem or global solution space.
 5. **Theorem II:** global finite-energy half-cross restriction, massive flux-tail lemma and intrinsic profile-space characterization.
-6. **Characteristic quantization:** boxed $a_k[f,g]$, inverse/Plancherel theorem, explicit $J_X$, Weyl algebra, zero-sector Fock representation and Hamiltonian/Wightman functions.
-7. **Peierls and composition:** gauge-invariant field-strength Peierls equality, weak-symplectic three-cell associativity and the B1 Weyl-composition corollary.
+6. **Characteristic quantization:** boxed $a_k[f,g]$, closed-domain inverse/Plancherel theorem, explicit $J_X$, Weyl algebra, radiative Fock representation in the zero-flux/zero-Chern sector, and Hamiltonian/Wightman functions.
+7. **Peierls and composition:** gauge-invariant field-strength Peierls equality, weak-symplectic associativity of sequential radiative master-cell composition, and the B1 Weyl-composition corollary.
 8. **Boundaries and novelty:** nonzero background sectors, conditional general Maxwell reconstruction, early null/light-front prior art and the integrated-chain novelty claim.

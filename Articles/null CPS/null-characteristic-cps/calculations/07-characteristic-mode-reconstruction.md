@@ -4,7 +4,12 @@
 
 For every \((\ell,m,P)\) with \(\ell\geq1\), the Maxwell Goursat problem on a finite product rectangle is explicitly solvable. In the declared matched \(H^1\) data space, restriction and reconstruction are bounded inverse maps. On the smooth Maxwell core the harmonic sum is continuous in its natural Fréchet topology. This is **Theorem I**, a local classical PDE/characteristic-coordinate theorem.
 
-The finite rectangle is not declared to be an autonomous regional gauge phase space. It is a local Goursat patch for the restriction of the boundaryless global proper-gauge Maxwell solution space. Theorem I chooses no vacuum, no complex structure, and no global annihilation coefficient. The complete-half-cross restriction theorem is the separate **Theorem II** in `12-global-characteristic-completion.md`.
+The finite rectangle is not declared to be an autonomous regional gauge phase
+space.  Its profiles coordinatize the local master solution
+germ/restriction space on \(D_{U,V}\), not the global solution space on
+\(M\).  Theorem I chooses no vacuum, no complex structure, and no global
+annihilation coefficient.  The complete-half-cross restriction theorem is
+the separate **Theorem II** in calculation 12.
 
 The theorem is not imported from a general nonlinear characteristic theorem. It follows directly from the exact master equation
 
@@ -239,11 +244,16 @@ For \(C^k\) data, differentiating (2.5) gives a \(C^k\) solution with continuous
 
 This proves the benchmark Goursat theorem sectorwise and on the smooth radiative Maxwell core. It does **not** assert a uniform same-order Sobolev bound over the full \(\ell\)-tower without angular derivative weights.
 
-### 3.1 Interpretation as a local chart
+### 3.1 Interpretation as local solution-germ coordinates
 
 Every global boundaryless finite-energy solution restricts to an element of \(\mathcal E^1_{U,V}(a_\ell)\), and Theorem I reconstructs its field on \(D_{U,V}\) from the two finite profiles. Conversely, a local solution can be extended by extending Cauchy data from a spacelike interval, but that outer extension is not unique. Therefore the finite profiles are coordinates on the local solution germ/restriction, not coordinates on a self-contained finite-region gauge subsystem and not enough to determine a global stationary coefficient.
 
-At Maxwell level the same statement is applied after the global proper-gauge quotient and the action-derived master map. Endpoint terms remain in the bookkeeping, but no claim is made that all charged frame directions on the finite outer cuts have been regionally reduced.
+At Maxwell level the primary statement is made on the gauge-invariant master,
+equivalently field-strength, restriction space.  The fixed-asymptotic-frame
+proper-gauge potential quotient is only the secondary corollary of
+calculation 16.  Endpoint terms remain in the bookkeeping, but no claim is
+made that all charged frame directions on the finite outer cuts have been
+regionally reduced.
 
 ## 4. Maxwell Characteristic Data Dictionary
 
@@ -324,7 +334,12 @@ $$
 
 The shared corner variables are the values of the same master solution. They are not added again as oscillators.
 
-At potential level, (5.5) of the previous note lifts each electric master to a gauge orbit of potentials; the magnetic master has the displayed coexact representative. Since \(H^1(S^2)=0\), two such representatives with the same \(F\) differ by a scalar gauge transformation in the fixed bundle sector. This closes the proper potential quotient once the same outer-endpoint gauge policy is imposed.
+At potential level, (5.5) of the previous note lifts each electric master to a
+gauge orbit of potentials; the magnetic master has the displayed coexact
+representative.  The main theorem stops at the gauge-invariant master/field-
+strength space.  The potential-quotient corollary additionally assumes the
+fixed bundle, falloff, allowed-gauge-parameter, and fixed-asymptotic-frame
+policy of calculation 16.
 
 ## 5. A Goursat-Adapted Basis on a Finite Cross
 
@@ -370,6 +385,55 @@ Thus the local Goursat basis has three logical classes:
 - one shared-corner coordinate per master sector.
 
 These are coordinates on one solution space. They are not two independent oscillator Hilbert spaces. The pure shared-corner solution (5.3) is a valid finite-rectangle mode, but by itself it is not a normalizable global stationary mode on the half-infinite cross.
+
+### 5.1 Fixed-main-sector incompleteness of derivative-only data
+
+The shared-corner mode is also a counterexample that stays entirely inside a
+fixed \(\ell\geq1\) radiative sector.  Take
+
+$$
+f(u)=c,\qquad g(v)=c,\qquad
+\Phi_c(u,v)=cJ_0\!\left(\sqrt{2\lambda_\ell uv}\right),
+\qquad c\neq0.
+\tag{5.4}
+$$
+
+Then
+
+$$
+f'(u)=g'(v)=0.
+\tag{5.5}
+$$
+
+For the electric master, the dictionary (4.3) gives
+
+$$
+p^E_{\ell m}=r^E_{\ell m}=0,
+\qquad
+E_{0,\ell m}=-\sqrt{\lambda_\ell}\,c\neq0.
+\tag{5.6}
+$$
+
+For the magnetic master, (4.4) gives
+
+$$
+p^B_{\ell m}=r^B_{\ell m}=0,
+\qquad
+B_{0,\ell m}=-\sqrt{\lambda_\ell}\,c\neq0.
+\tag{5.7}
+$$
+
+Because \(\ell\geq1\), the spherical integral of \(Y_{\ell m}\) vanishes.
+Thus (5.6) has \(Q_E=0\), while (5.7) has zero Chern variation and lies in the
+fixed \(n=0\) bundle sector.  This proves, without using an \(\ell=0\) flux or
+cross-Chern example, that the derivative pair \((r,p)\) alone omits the shared
+master corner value.
+
+The limitation is equally precise: \(\Phi_c\) is a smooth finite-rectangle
+Goursat solution, not by itself a normalizable global half-cross energy mode.
+It proves local characteristic incompleteness of derivative-only data.  It
+does not contradict the global Theorem II, whose intrinsic profile contains
+the full functions \((f,g)\) and the nonlocal finite-energy condition.
 
 ## 6. Global Stationary Modes
 

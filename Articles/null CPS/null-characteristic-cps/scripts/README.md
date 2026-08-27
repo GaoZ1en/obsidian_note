@@ -8,7 +8,18 @@ Output: one Boolean per identity and `ALL CHECKS PASSED` on success.
 
 Claim scope: A1--A7, A5c--A5d, B3, C2--C4 and the original formal Abelian frame associativity entries in `verification/CLAIM_LEDGER.md`. It does not test analytic existence, boundary regularity, novelty or quantum claims.
 
-`s2_master_quantization_checks.wl` is the exact benchmark regression for $M=\mathbb R^{1,1}\times S^2_R$. It verifies representative scalar/exact/coexact spherical-harmonic identities, electric parent-action elimination including the retained divergence, electric and magnetic master maps, the Bessel Riemann kernel, null dispersion and null-frequency Jacobians, the massive null-trace weights, both full-cross principal-value cancellations, Dirac-delta normalization, the corrected oscillator-projection signs, the explicit $J_X$ kernel coefficients, the closed finite-Goursat overlap kernel, Hamiltonian diagonalization, the interior causal Bessel equation and a full-rank matched-profile Galerkin symplectic matrix.
+`s2_master_quantization_checks.wl` is the exact benchmark regression for
+$M=\mathbb R^{1,1}\times S^2_R$. It verifies representative
+scalar/exact/coexact spherical-harmonic identities, electric parent-action
+elimination including the retained divergence, electric and magnetic master
+maps, the Bessel Riemann kernel, the fixed-$\ell\geq1$ shared-corner mode's
+vanishing sheet derivatives and nonzero corner curvature coefficient, null
+dispersion and null-frequency Jacobians, the massive null-trace weights, both
+full-cross principal-value cancellations, Dirac-delta normalization, the
+corrected oscillator-projection signs, the explicit $J_X$ kernel
+coefficients, the closed finite-Goursat overlap kernel, Hamiltonian
+diagonalization, the interior causal Bessel equation and a full-rank
+matched-profile Galerkin symplectic matrix.
 
 Input: no external files; symbolic parameters obey the assumptions printed in the script. The vector-harmonic component check samples $(\ell,m)=(1,0),(1,1),(2,0),(2,1),(3,2)$, while the general identities used in the notes follow analytically from Hodge theory and the scalar eigenvalue equation.
 
@@ -16,11 +27,26 @@ Output: one Boolean per identity and `ALL S2 MASTER/QUANTIZATION CHECKS PASSED` 
 
 Claim scope: Q1--Q8 and Q12 in the claim ledger, plus the algebraic weights used in the half-cross/profile-space lemmas. The finite Galerkin rank check is a regression, not by itself a proof of continuum weak nondegeneracy or null-infinity decay.
 
-`three_cell_symplectic_checks.wl` is the nontrivial composition regression. It uses three adjacent finite Goursat cells and six real stationary profile directions. It constructs $G_{(12)3}$, $G_{1(23)}$ and direct width-three Bessel reconstruction as distinct evaluation matrices; constructs every horizontal and vertical edge symplectic matrix; removes the duplicated interface copies in the reduced cell sum; verifies $S^T\Omega_{\rm outer}S=S^T\Omega_{\rm cells}^{\rm red}S$; and checks the two internal edge cancellations with opposite orientations.
+`three_cell_symplectic_checks.wl` is the genuine trace-map composition
+regression.  It starts from three independent six-dimensional coefficient
+spaces, builds the simultaneous (12\times18) compatibility matrix and an
+(18\times6) rectangular kernel embedding, and reconstructs every internal
+trace before feeding it to the next cell.  It constructs
+(G_{(12)3}), (G_{1(23)}), and direct width-three Bessel reconstruction
+without an exact bulk-mode oracle at the interfaces.  It also constructs every
+edge symplectic matrix, verifies the block-cut pullback
+(S^T\Omega_{\rm cells}^{\rm cut}S=B^T\Omega_{\rm outer,in}B), and checks
+that two nonzero full-rank internal edge matrices cancel only after the
+matched pullback.  No interface form is pre-deleted or manually subtracted.
 
 Input: $a=1$, cells $[j-1,j]\times[0,1]$, and three on-shell frequency pairs $(\alpha,\beta)=(1/2,2),(1,1),(2,1/2)$ with their real sine/cosine quadratures.
 
-Output: exact Boolean matrix identities, internal-edge ranks, parenthesization errors, and `ALL THREE-CELL SYMPLECTIC CHECKS PASSED`. In the current Wolfram 14.3 run the two internal matrices both have rank six and the reconstruction residuals vanish to approximately 29 decimal digits.
+Output: exact Boolean matrix identities, compatibility/kernel dimensions,
+reconstructed trace-operator errors, internal-edge ranks, parenthesization
+errors, and `ALL THREE-CELL SYMPLECTIC CHECKS PASSED`.  In the current Wolfram
+14.3 run the trace residuals vanish to about 32 digits, both internal matrices
+have rank six, and the sequential/direct reconstruction residuals vanish to
+about 30 digits.
 
 Claim scope: the finite regression evidence for Q10 and the B1 Weyl-composition corollary. The continuum proof remains Goursat uniqueness plus conservation/orientation of the symplectic current in calculations 11 and 14. This script does not prove full charged-frame Maxwell composition, Fock implementability or a tensor-product factorization.
 

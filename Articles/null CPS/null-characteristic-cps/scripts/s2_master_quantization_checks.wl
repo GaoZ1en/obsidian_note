@@ -110,6 +110,17 @@ riemannBoundaryResiduals = FullSimplify[{
   riemann[0, v] - 1
 }, Assumptions -> lam > 0 && u >= 0 && v >= 0];
 
+sharedCornerMode = cornerC riemann[u, v];
+sharedCornerDerivativeResiduals = FullSimplify[{
+  D[sharedCornerMode /. v -> 0, u],
+  D[sharedCornerMode /. u -> 0, v]
+}, Assumptions -> lam > 0 && u >= 0 && v >= 0];
+sharedCornerValueResiduals = FullSimplify[{
+  (sharedCornerMode /. {u -> 0, v -> 0}) - cornerC,
+  (-Sqrt[lam] sharedCornerMode /. {u -> 0, v -> 0}) +
+    Sqrt[lam] cornerC
+}, Assumptions -> lam > 0];
+
 (* Stationary/null dispersion and full-cross distribution coefficients. *)
 omega = Sqrt[k^2 + lam];
 alpha = (omega + k)/Sqrt[2];
@@ -255,6 +266,10 @@ checks = {
   "magnetic Nminus transport" -> TrueQ[magneticNminusResidual == 0],
   "Riemann kernel PDE" -> TrueQ[riemannPDEResidual == 0],
   "Riemann kernel boundaries" -> zeroArrayQ[riemannBoundaryResiduals],
+  "fixed-sector shared-corner sheet derivatives vanish" ->
+    zeroArrayQ[sharedCornerDerivativeResiduals],
+  "fixed-sector shared-corner master/curvature values" ->
+    zeroArrayQ[sharedCornerValueResiduals],
   "null dispersion" -> TrueQ[dispersionResidual == 0],
   "alpha null-frequency Jacobian" -> TrueQ[alphaJacobianResidual == 0],
   "beta null-frequency Jacobian" -> TrueQ[betaJacobianResidual == 0],

@@ -9,7 +9,7 @@
   Result: each $(\ell,m,E/B)$ sector has $(2\partial_u\partial_v+\lambda_\ell)\Phi=0$ and the exact field-strength/potential quotient map.
   Check: parent-action, divergence and transport residuals vanish.
 - [x] Action: close the finite-rectangle Goursat theorem.
-  Result: Theorem I gives the Bessel/Riemann bounded inverse on matched $H^1$ profiles; the finite rectangle is explicitly only a local chart for the restriction/germ of a boundaryless global solution.
+  Result: Theorem I gives the Bessel/Riemann bounded inverse on matched $H^1$ profiles; those profiles coordinatize the local solution germ/restriction space on the patch, not the global solution space.
   Check: analytic Volterra estimates and $10^{-15}$ mode-reconstruction regression.
 - [x] Action: normalize characteristic/global modes on the complete two-sheet cross.
   Result: the two principal-value pieces cancel and $\Omega_X(U_I,U_J^*)=-i\delta(I,J)$ without sheet doubling.
@@ -18,17 +18,26 @@
   Result: massive null-trace Plancherel bounds put both profiles in $H^1(\mathbb R_+)$, symplectic tails vanish, Schwartz packets decay rapidly at null infinity, and energy density extends the result to all finite-energy solutions.
   Check: exact null-frequency/Jacobian weights plus the analytic tail/density proof in calculation 12.
 - [x] Action: characterize $\operatorname{Ran}R_X$ intrinsically.
-  Result: the range is the fixed-point space of the explicit analysis--synthesis projector $P_X=S_XT_X$, with boxed two-sheet $a_k[f,g]$, inverse, exact one-particle/energy norms and an explicit nonlocal $J_X$ kernel.
-  Check: principal-value cancellations, delta Jacobians and kernel coefficients pass in Wolfram 14.3.
+  Result: the range is the graph-closed fixed-point space of the closed analysis operator and graph-bounded idempotent $P_X=S_XT_X$, with boxed two-sheet $a_k[f,g]$, inverse, exact one-particle/energy norms and an explicit nonlocal $J_X$ kernel.
+  Check: calculation 15 proves density, closability, bounded synthesis, $T_\mu S_\mu=1$ and graph closedness; principal-value cancellations, delta Jacobians and kernel coefficients pass in Wolfram 14.3.
+- [x] Action: separate classical energy profiles from the one-particle completion.
+  Result: $J_{X,E}=S_\mu(-i)T_\mu$ acts on the graph-closed classical energy fixed-point space, while the one-particle completion is transported from $L^2(dk)$ and may have distributional profiles without a pointwise corner trace.
+  Check: the kernel acts first on the Schwartz core; its integration-by-parts corner term is displayed explicitly.
+- [x] Action: fix the global gauge policy.
+  Result: the main theorem is on gauge-invariant master/field-strength solutions; the potential-quotient statement is only a fixed-asymptotic-frame corollary with explicit falloff and proper-gauge parameters.
+  Check: calculation 16; finite-cut proper/charged bookkeeping is not imported into the boundaryless Fock theorem.
+- [x] Action: replace flux-sector-dependent incompleteness evidence.
+  Result: $\Phi=cJ_0(\sqrt{2\lambda_\ell uv})$ gives $r=p=0$ but a nonzero shared corner value for every fixed $\ell\geq1$, entirely within $Q_E=n=0$ on a finite patch.
+  Check: calculation 07, equations (5.4)--(5.7); the mode is not mislabeled as a normalizable global half-cross vector.
 - [x] Action: complete Weyl/CCR, stationary Fock, Hamiltonian and correlator layers.
   Result: global $J$ pulls back nonlocally to $J_X$; $[a_I,a_J^\dagger]=\delta(I,J)$ and $H_{\partial_t}$ generates the CPS time translation.
   Check: anomalous Hamiltonian coefficients vanish on shell.
 - [x] Action: perform the Peierls comparison on gauge-invariant smearings.
   Result: the characteristic inverse, master causal propagator and projected Maxwell field-strength Peierls bracket agree.
   Check: analytic Fourier--Bessel identity plus timelike/spacelike truncation regressions.
-- [x] Action: upgrade radiative composition from formal to weak-symplectic associativity.
+- [x] Action: prove weak-symplectic associativity of sequential radiative master-cell composition.
   Result: explicit Goursat uniqueness identifies both parenthesizations with the same solution space and the pullback kernel is zero.
-  Check: the replacement three-cell regression constructs $G_{(12)3}$ and $G_{1(23)}$, verifies $S^T\Omega_{\rm outer}S=S^T\Omega_{\rm cells}^{\rm red}S$, and cancels two nonzero full-rank internal-edge matrices by orientation.
+  Check: the replacement regression starts from independent $P_1\oplus P_2\oplus P_3$, uses an $18\times6$ compatibility embedding, feeds reconstructed traces through both parenthesizations, verifies the block-cut pullback, and cancels two nonzero full-rank internal-edge matrices only after matched pullback.
 - [x] Action: add the Weyl-algebra composition corollary.
   Result: the symplectic reconstruction induces the canonical B1 $*$-isomorphism $W(c)\mapsto W(Gc)$.
   Check: no Hilbert tensor-product or Fock-implementability claim is made.

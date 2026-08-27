@@ -10,8 +10,8 @@ $$
 
 and only the radiative Maxwell sectors \(\ell\geq1\).  The finite rectangle
 \(D_{U,V}\) of `07-characteristic-mode-reconstruction.md` is a local Goursat
-patch: its profiles coordinatize the restriction of a global solution to that
-patch, but they do not select a global extension, a vacuum, or global
+patch: its profiles coordinatize the local solution germ/restriction space on
+that patch, but they do not select a global extension, a vacuum, or global
 annihilation coefficients.  The global result instead uses the complete
 characteristic cross
 
@@ -85,7 +85,8 @@ $$
 Thus \(a\in L^2(\mathbb R,\omega_kdk)\).  The Schwartz spectral core
 \(a\in\mathcal S(\mathbb R)\) is dense in this norm.
 
-The full radiative Maxwell energy space in the zero sector is the real Hilbert
+The full gauge-invariant radiative Maxwell master/field-strength energy space
+in the zero-flux/zero-Chern sector is the real Hilbert
 direct sum
 
 $$
@@ -97,9 +98,11 @@ $$
 \tag{2.5}
 $$
 
-The harmonic reconstruction of `06-s2-harmonic-master-reduction.md` turns
-(2.5) into the global proper-gauge Maxwell quotient.  No gauge fixing is used
-to define this quotient.
+The harmonic reconstruction of calculation 06 turns (2.5) into the
+gauge-invariant radiative Maxwell field-strength space.  This is the primary
+space of the theorem.  Identifying it with a global potential quotient is the
+secondary corollary of calculation 16 and requires the declared potential
+falloff, proper-gauge parameters, and fixed asymptotic frames.
 
 ## 3. Massive Null-Trace Estimate
 
@@ -376,9 +379,11 @@ claims follow from (5.2) and the explicit Plancherel theorem in the next note.
 \(\square\)
 
 Taking the Hilbert direct sum in (2.5) proves the same theorem for the full
-zero-sector radiative Maxwell quotient.  This is a global theorem on the
-boundaryless ultrastatic background.  It is not a theorem that a finite
-rectangle is an autonomous gauge subsystem.
+gauge-invariant radiative Maxwell field-strength space in the
+zero-flux/zero-Chern sector.  This is a global theorem on the boundaryless
+ultrastatic background.  Under the fixed-frame policy of calculation 16 it
+has the stated proper-gauge potential-quotient corollary.  It is not a theorem
+that a finite rectangle is an autonomous gauge subsystem.
 
 ## 7. Verified and Conditional Boundaries
 

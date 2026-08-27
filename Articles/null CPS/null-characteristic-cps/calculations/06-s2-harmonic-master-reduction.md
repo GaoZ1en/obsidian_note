@@ -383,7 +383,15 @@ The main quantization policy is:
 4. on a finite characteristic cross retain the two outer endpoint terms;
 5. compare with the global stationary theory only after the proven massive half-cross completion of `12-global-characteristic-completion.md`.
 
-At finite cutoff the characteristic form is a local restriction form and global plane waves have sinc, not Dirac-delta, normalization. The finite rectangle is a Goursat coordinate patch for the boundaryless global solution, not an autonomous finite-region gauge phase space. In the infinite endpoint limit, each \(\ell\geq1\) master is massive, the symplectic tails vanish in the finite-energy norm, and the two sheet contributions combine to the global stationary normalization. No finite diamond is assigned an independent vacuum.
+At finite cutoff the characteristic form is a local restriction form and
+global plane waves have sinc, not Dirac-delta, normalization.  Finite
+Goursat profiles coordinatize the local solution germ/restriction space on the
+rectangle, not the boundaryless global solution space or an autonomous
+finite-region gauge phase space. In the infinite endpoint limit, each
+\(\ell\geq1\) master is massive, the symplectic tails vanish in the
+finite-energy norm, and the two sheet contributions combine to the global
+stationary normalization. No finite diamond is assigned an independent
+vacuum.
 
 Alternative policies are not silently identified with this one:
 

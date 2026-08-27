@@ -126,11 +126,18 @@ $$
 \overset{\sim}{\longrightarrow}\mathcal G^1_{U,V}}
 $$
 
-is a bounded isomorphism. Its inverse is the exact Bessel/Riemann formula (2.5) of calculation 07, with explicit reconstruction and trace estimates (3.4), (3.11). This is a pure local PDE/characteristic-coordinate theorem. The finite rectangle is a local chart for a restriction/germ of the boundaryless global solution; it is not an autonomous finite-region gauge phase space, does not select a vacuum, and does not determine global annihilation coefficients.
+is a bounded isomorphism. Its inverse is the exact Bessel/Riemann formula
+(2.5) of calculation 07, with explicit reconstruction and trace estimates
+(3.4), (3.11). This is a pure local PDE/characteristic-coordinate theorem.
+The finite profiles coordinatize the local solution germ/restriction space on
+\(D_{U,V}\); they do not coordinatize the global solution space.  The patch is
+not an autonomous finite-region gauge phase space, does not select a vacuum,
+and does not determine global annihilation coefficients.
 
 ### Theorem II — Global Characteristic Representation
 
-**Status: proved for the zero-sector radiative benchmark.** On
+**Status: proved for the radiative benchmark in the zero-flux/zero-Chern
+sector.** On
 $M=\mathbb R_t\times\mathbb R_z\times S^2_R$, take $Q_E=n=0$ and let
 $\mathcal S_E^{\mathrm{rad}}$ be the direct sum of the two $\ell\geq1$ master
 energy spaces $H^1(\mathbb R_z)\oplus L^2(\mathbb R_z)$. For the complete
@@ -152,11 +159,13 @@ R_X:\mathcal S_E^{\mathrm{rad}}
 $$
 
 The intrinsic target is not defined as $R_X\mathcal S_E$.  Sectorwise it is
-the matched $H^1$ fixed-point space $P_\ell(f,g)=(f,g)$ of the explicit
-analysis--synthesis projector, with
-$\int\omega_{k\ell}|a_{k\ell}[f,g]|^2dk<\infty$.  The two-sheet formula for
-$a_k[f,g]$, its inverse, the exact one-particle/energy norms, and the explicit
-nonlocal $J_X$ kernel are in calculations 12--13.
+the graph-closed fixed-point space
+\(\ker_{\mathcal D_E(T_\ell)}(1-S_\ell T_\ell)\) of the closed two-sheet
+analysis operator, with
+$\int\omega_{k\ell}|a_{k\ell}[f,g]|^2dk<\infty$.  The two-sheet formula,
+closed domain, inverse, exact one-particle/energy norms, and explicit nonlocal
+$J_X$ kernel are in calculations 12--15.  The one-particle completion is
+stated separately and need not have pointwise corner traces.
 
 The analytic bridge is the massive half-cross lemma: the null trace estimate
 puts both profiles and tangential derivatives in $L^2(\mathbb R_+)$, their
@@ -168,7 +177,10 @@ nondegeneracy.
 
 ### General Reconstruction Boundary
 
-For an arbitrary product/curved double-null background, potential-level
+The primary global theorem is on the gauge-invariant master/field-strength
+space.  Its proper-gauge potential-quotient corollary uses the explicit
+fixed-asymptotic-frame policy of calculation 16.  For an arbitrary
+product/curved double-null background, potential-level
 compatible data give a bulk proper-gauge quotient only after a separate
 Goursat existence, uniqueness, continuous-dependence, bundle/holonomy, and
 endpoint theorem.  That general theorem remains conditional.  Theorems I--II

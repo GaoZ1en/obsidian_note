@@ -107,7 +107,7 @@ $$
 
 It is constant. Thus every \(n\neq0\) background has infinite total energy on \(\mathbb R_z\), just as every \(Q_E\neq0\) background does.
 
-## 4. Main Zero-Sector Quantization
+## 4. Main Radiative Quantization in the Zero-Flux/Zero-Chern Sector
 
 The main radiative Fock construction is not stated for an arbitrary fixed pair. It is restricted to
 
@@ -137,7 +137,7 @@ This is the clean policy for the first Fock theorem. It avoids treating a consta
 A fixed nonzero \((Q_E,n)\) can still be used as a classical background label. Since Maxwell theory is linear, the \(\ell\geq1\) fluctuation equations and symplectic form are unchanged. However, such a statement requires all three qualifications:
 
 1. subtract the infinite constant background energy before defining the fluctuation Hamiltonian;
-2. name the Hilbert space as a representation around that background rather than as the zero-sector Fock vacuum;
+2. name the Hilbert space as a representation around that background rather than as the radiative Fock vacuum in the zero-flux/zero-Chern sector;
 3. do not claim that the background itself is a normalizable vector created by radiative oscillators.
 
 This optional background-sector language belongs in an appendix, not in the main Fock theorem.

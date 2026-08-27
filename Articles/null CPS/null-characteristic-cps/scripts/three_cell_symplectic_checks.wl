@@ -1,14 +1,15 @@
 ClearAll["Global`*"];
 
-(* Three adjacent Goursat cells
+(* Three adjacent cells for (partial_u partial_v + aa) phi = 0:
 
        D1 = [0,1] x [0,1],
        D2 = [1,2] x [0,1],
-       D3 = [2,3] x [0,1]
+       D3 = [2,3] x [0,1].
 
-   for (partial_u partial_v + aa) phi = 0.  The finite profile basis is the
-   restriction of three distinct real stationary modes and their quadratures.
-   It spans six matched profile directions on every cell. *)
+   P1, P2 and P3 are independent six-dimensional coefficient spaces.  The
+   simultaneous compatibility matrix is imposed only afterwards.  Every
+   sequential map below reconstructs a cell, takes the reconstructed right
+   trace, and feeds that function to the next reconstruction. *)
 
 aa = 1;
 alphaValues = {1/2, 1, 2};
@@ -16,93 +17,48 @@ betaValues = aa/alphaValues;
 
 profileBasis = Flatten[
   Table[
-    {
-      Cos[alphaValues[[j]] u + betaValues[[j]] v],
-      Sin[alphaValues[[j]] u + betaValues[[j]] v]
-    },
-    {j, Length[alphaValues]}
-  ]
+    {Cos[alphaValues[[j]] u + betaValues[[j]] v],
+      Sin[alphaValues[[j]] u + betaValues[[j]] v]},
+    {j, Length[alphaValues]}]
 ];
 
-dim = Length[profileBasis];
-zeroMatrix = ConstantArray[0, {dim, dim}];
+dimCell = Length[profileBasis];
+dimProduct = 3 dimCell;
+zeroCell = ConstantArray[0, {dimCell, dimCell}];
 
 omegaUEdge[u0_, u1_, v0_] := Table[
-  FullSimplify[
-    Integrate[
-      (D[profileBasis[[i]], u] profileBasis[[j]] -
-        D[profileBasis[[j]], u] profileBasis[[i]]) /. v -> v0,
-      {u, u0, u1}
-    ]
-  ],
-  {i, dim}, {j, dim}
-];
+  FullSimplify[Integrate[
+    (D[profileBasis[[i]], u] profileBasis[[j]] -
+      D[profileBasis[[j]], u] profileBasis[[i]]) /. v -> v0,
+    {u, u0, u1}]],
+  {i, dimCell}, {j, dimCell}];
 
 omegaVEdge[u0_, v0_, v1_] := Table[
-  FullSimplify[
-    Integrate[
-      (D[profileBasis[[i]], v] profileBasis[[j]] -
-        D[profileBasis[[j]], v] profileBasis[[i]]) /. u -> u0,
-      {v, v0, v1}
-    ]
-  ],
-  {i, dim}, {j, dim}
-];
+  FullSimplify[Integrate[
+    (D[profileBasis[[i]], v] profileBasis[[j]] -
+      D[profileBasis[[j]], v] profileBasis[[i]]) /. u -> u0,
+    {v, v0, v1}]],
+  {i, dimCell}, {j, dimCell}];
 
-cellIncoming[j_] :=
-  omegaUEdge[j - 1, j, 0] + omegaVEdge[j - 1, 0, 1];
+bottomForm[j_] := omegaUEdge[j - 1, j, 0];
+topForm[j_] := omegaUEdge[j - 1, j, 1];
+leftForm[j_] := omegaVEdge[j - 1, 0, 1];
+rightForm[j_] := omegaVEdge[j, 0, 1];
+cellIncoming[j_] := bottomForm[j] + leftForm[j];
+cellOutgoing[j_] := topForm[j] + rightForm[j];
+cellBoundary[j_] := cellIncoming[j] - cellOutgoing[j];
+cellConservationResiduals = Table[FullSimplify[cellBoundary[j]], {j, 3}];
 
-cellOutgoing[j_] :=
-  omegaUEdge[j - 1, j, 1] + omegaVEdge[j, 0, 1];
+(* Independent coefficient spaces and simultaneous compatibility.  Trace
+   matching is coefficient matching because evaluation of this local
+   on-shell basis on six generic vertical points is injective. *)
 
-cellConservationResiduals =
-  Table[FullSimplify[cellIncoming[j] - cellOutgoing[j]], {j, 3}];
+compatibilityMatrix = ArrayFlatten[{
+  {IdentityMatrix[dimCell], -IdentityMatrix[dimCell], zeroCell},
+  {zeroCell, IdentityMatrix[dimCell], -IdentityMatrix[dimCell]}
+}];
 
-(* Oriented cell boundaries are incoming minus outgoing.  The right edge of
-   Di and left edge of D(i+1) are computed independently and must cancel. *)
-internal12FromD1 = -omegaVEdge[1, 0, 1];
-internal12FromD2 = omegaVEdge[1, 0, 1];
-internal23FromD2 = -omegaVEdge[2, 0, 1];
-internal23FromD3 = omegaVEdge[2, 0, 1];
-
-internal12Residual =
-  FullSimplify[internal12FromD1 + internal12FromD2];
-internal23Residual =
-  FullSimplify[internal23FromD2 + internal23FromD3];
-
-outerIncoming = omegaUEdge[0, 3, 0] + omegaVEdge[0, 0, 1];
-outerOutgoing = omegaUEdge[0, 3, 1] + omegaVEdge[3, 0, 1];
-outerSymplecticResidual = FullSimplify[outerIncoming - outerOutgoing];
-
-(* Restricting the sum of the three cell forms to matched data still counts
-   each internal trace once.  Symplectic reduction removes that duplicated
-   interface copy.  These matrices implement the resulting reduced sum. *)
-reducedCellIncoming = FullSimplify[
-  Sum[cellIncoming[j], {j, 3}] -
-    omegaVEdge[1, 0, 1] - omegaVEdge[2, 0, 1]
-];
-reducedCellOutgoing = FullSimplify[
-  Sum[cellOutgoing[j], {j, 3}] -
-    omegaVEdge[1, 0, 1] - omegaVEdge[2, 0, 1]
-];
-reducedIncomingResidual = FullSimplify[
-  reducedCellIncoming - outerIncoming
-];
-reducedOutgoingResidual = FullSimplify[
-  reducedCellOutgoing - outerOutgoing
-];
-
-sumCellBoundaries = FullSimplify[
-  Sum[cellIncoming[j] - cellOutgoing[j], {j, 3}]
-];
-outerBoundary = FullSimplify[outerIncoming - outerOutgoing];
-orientedBoundaryResidual = FullSimplify[
-  sumCellBoundaries - outerBoundary
-];
-
-(* A nontrivial coefficient change makes the pullback form S^T Omega S
-   explicit instead of identifying the coefficient and profile bases. *)
-coefficientMap = {
+outerCoefficientMap = {
   {1, 1, 0, 0, 0, 0},
   {0, 1, 1, 0, 0, 0},
   {0, 0, 1, 1, 0, 0},
@@ -110,165 +66,232 @@ coefficientMap = {
   {0, 0, 0, 0, 1, 1},
   {0, 0, 0, 0, 0, 1}
 };
+compatibilityEmbedding = Join[
+  outerCoefficientMap, outerCoefficientMap, outerCoefficientMap];
 
-pullbackSymplecticResidual = FullSimplify[
-  Transpose[coefficientMap] . outerOutgoing . coefficientMap -
-  Transpose[coefficientMap] . outerIncoming . coefficientMap
-];
-pullbackReducedCellResidual = FullSimplify[
-  Transpose[coefficientMap] . outerOutgoing . coefficientMap -
-  Transpose[coefficientMap] . reducedCellIncoming . coefficientMap
-];
+(* Decomposition of the chosen outer incoming cross into three bottom
+   pieces and the one genuine outer left edge.  No interface form is inserted
+   or subtracted. *)
 
-(* Explicit Bessel reconstruction maps.  G_(12)3 first reconstructs the
-   width-two cell D1 union D2 and then D3.  G_1(23) first reconstructs D1 and
-   the width-two cell D2 union D3.  The internal profiles are distinct trace
-   maps on the simultaneous compatibility locus. *)
+omegaCellsCut = ArrayFlatten[{
+  {bottomForm[1] + leftForm[1], zeroCell, zeroCell},
+  {zeroCell, bottomForm[2], zeroCell},
+  {zeroCell, zeroCell, bottomForm[3]}
+}];
+omegaOuterIncoming = omegaUEdge[0, 3, 0] + omegaVEdge[0, 0, 1];
+omegaOuterOutgoing = omegaUEdge[0, 3, 1] + omegaVEdge[3, 0, 1];
 
-wp = 45;
+cutPullbackResidual = FullSimplify[
+  Transpose[compatibilityEmbedding] . omegaCellsCut .
+      compatibilityEmbedding -
+    Transpose[outerCoefficientMap] . omegaOuterIncoming .
+      outerCoefficientMap];
+outerConservationResidual = FullSimplify[
+  omegaOuterIncoming - omegaOuterOutgoing];
+
+(* Full oriented cell boundaries retain every internal edge until the
+   compatibility embedding is pulled back. *)
+
+omegaCellsBoundary = ArrayFlatten[{
+  {cellBoundary[1], zeroCell, zeroCell},
+  {zeroCell, cellBoundary[2], zeroCell},
+  {zeroCell, zeroCell, cellBoundary[3]}
+}];
+omegaOuterBoundary = omegaOuterIncoming - omegaOuterOutgoing;
+boundaryPullbackResidual = FullSimplify[
+  Transpose[compatibilityEmbedding] . omegaCellsBoundary .
+      compatibilityEmbedding -
+    Transpose[outerCoefficientMap] . omegaOuterBoundary .
+      outerCoefficientMap];
+
+embedBlock[m_, block_] := Module[{out},
+  out = ConstantArray[0, {dimProduct, dimProduct}];
+  out[[1 + (block - 1) dimCell ;; block dimCell,
+      1 + (block - 1) dimCell ;; block dimCell]] = m;
+  out];
+
+internal12Oriented = embedBlock[-rightForm[1], 1] +
+  embedBlock[leftForm[2], 2];
+internal23Oriented = embedBlock[-rightForm[2], 2] +
+  embedBlock[leftForm[3], 3];
+internal12MatchedResidual = FullSimplify[
+  Transpose[compatibilityEmbedding] . internal12Oriented .
+    compatibilityEmbedding];
+internal23MatchedResidual = FullSimplify[
+  Transpose[compatibilityEmbedding] . internal23Oriented .
+    compatibilityEmbedding];
+
+(* Derivative-free Bessel reconstruction, obtained from the standard Riemann
+   formula by integration by parts.  A reconstructed trace can therefore be
+   passed as an actual function into the next cell. *)
+
+wp = 50;
 riemann[x_?NumericQ, y_?NumericQ] :=
   BesselJ[0, 2 Sqrt[N[aa, wp] x y]];
+riemannDx[x_?NumericQ, y_?NumericQ] := If[x == 0,
+  -N[aa, wp] y,
+  -Sqrt[N[aa, wp] y/x] BesselJ[1, 2 Sqrt[N[aa, wp] x y]]];
+riemannDy[x_?NumericQ, y_?NumericQ] := If[y == 0,
+  -N[aa, wp] x,
+  -Sqrt[N[aa, wp] x/y] BesselJ[1, 2 Sqrt[N[aa, wp] x y]]];
 
-reconstruct[b_, bp_, l_, lp_, c_, x_?NumericQ, y_?NumericQ] :=
-  N[c riemann[x, y]
-    + If[x == 0, 0,
-      NIntegrate[
-        bp[s] riemann[x - s, y], {s, 0, x},
-        WorkingPrecision -> wp, AccuracyGoal -> 25, PrecisionGoal -> 25,
-        Method -> {"GlobalAdaptive", "SymbolicProcessing" -> 0}
-      ]
-    ]
-    + If[y == 0, 0,
-      NIntegrate[
-        lp[r] riemann[x, y - r], {r, 0, y},
-        WorkingPrecision -> wp, AccuracyGoal -> 25, PrecisionGoal -> 25,
-        Method -> {"GlobalAdaptive", "SymbolicProcessing" -> 0}
-      ]
-    ],
-    30
-  ];
+reconstruct[bottom_, left_, x_?NumericQ, y_?NumericQ] := Module[{corner},
+  corner = N[(bottom[0] + left[0])/2, wp];
+  N[bottom[x] + left[y] - corner riemann[x, y]
+    + If[x == 0, 0, NIntegrate[
+      bottom[s] riemannDx[x - s, y], {s, 0, x},
+      WorkingPrecision -> wp, AccuracyGoal -> 28, PrecisionGoal -> 28,
+      Method -> {"GlobalAdaptive", "SymbolicProcessing" -> 0}]]
+    + If[y == 0, 0, NIntegrate[
+      left[r] riemannDy[x, y - r], {r, 0, y},
+      WorkingPrecision -> wp, AccuracyGoal -> 28, PrecisionGoal -> 28,
+      Method -> {"GlobalAdaptive", "SymbolicProcessing" -> 0}]], 32]];
 
-modeFunctions = Function[{uu, vv}, Evaluate[# /. {u -> uu, v -> vv}]] & /@
-  profileBasis;
-modeUFunctions = Function[{uu, vv}, Evaluate[# /. {u -> uu, v -> vv}]] & /@
-  (D[#, u] & /@ profileBasis);
-modeVFunctions = Function[{uu, vv}, Evaluate[# /. {u -> uu, v -> vv}]] & /@
-  (D[#, v] & /@ profileBasis);
+cellBottom[j_, coefficients_][x_?NumericQ] := N[
+  Sum[coefficients[[p]] (profileBasis[[p]] /.
+    {u -> (j - 1) + x, v -> 0}), {p, dimCell}], wp];
 
-directReconstruction[j_, width_][x_?NumericQ, y_?NumericQ] := Module[
-  {phi, phiu, phiv, bottom, bottomPrime, left, leftPrime, corner},
-  phi = modeFunctions[[j]];
-  phiu = modeUFunctions[[j]];
-  phiv = modeVFunctions[[j]];
-  bottom = Function[s, N[phi[s, 0], wp]];
-  bottomPrime = Function[s, N[phiu[s, 0], wp]];
-  left = Function[r, N[phi[0, r], wp]];
-  leftPrime = Function[r, N[phiv[0, r], wp]];
-  corner = N[phi[0, 0], wp];
-  reconstruct[bottom, bottomPrime, left, leftPrime, corner, x, y]
-];
+cellLeft[j_, coefficients_][y_?NumericQ] := N[
+  Sum[coefficients[[p]] (profileBasis[[p]] /.
+    {u -> j - 1, v -> y}), {p, dimCell}], wp];
 
-shiftedReconstruction[j_, u0_][x_?NumericQ, y_?NumericQ] := Module[
-  {phi, phiu, phiv, bottom, bottomPrime, left, leftPrime, corner},
-  phi = modeFunctions[[j]];
-  phiu = modeUFunctions[[j]];
-  phiv = modeVFunctions[[j]];
-  bottom = Function[s, N[phi[u0 + s, 0], wp]];
-  bottomPrime = Function[s, N[phiu[u0 + s, 0], wp]];
-  left = Function[r, N[phi[u0, r], wp]];
-  leftPrime = Function[r, N[phiv[u0, r], wp]];
-  corner = N[phi[u0, 0], wp];
-  reconstruct[bottom, bottomPrime, left, leftPrime, corner, x, y]
-];
+cellSolve[j_, coefficients_, leftOverride_: Automatic][x_?NumericQ,
+    y_?NumericQ] := Module[{leftProfile},
+  leftProfile = If[leftOverride === Automatic,
+    Function[yy, cellLeft[j, coefficients][yy]], leftOverride];
+  reconstruct[Function[xx, cellBottom[j, coefficients][xx]],
+    leftProfile, x, y]];
 
-gLeft[j_, uu_?NumericQ, vv_?NumericQ] :=
-  If[uu <= 2,
-    directReconstruction[j, 2][uu, vv],
-    shiftedReconstruction[j, 2][uu - 2, vv]
-  ];
+splitProductCoefficients[c_] := {
+  c[[1 ;; dimCell]], c[[dimCell + 1 ;; 2 dimCell]],
+  c[[2 dimCell + 1 ;; 3 dimCell]]};
 
-gRight[j_, uu_?NumericQ, vv_?NumericQ] :=
-  If[uu <= 1,
-    directReconstruction[j, 1][uu, vv],
-    shiftedReconstruction[j, 1][uu - 1, vv]
-  ];
+(* (12)3: G1 -> Tr_right -> G2 -> Tr_right -> G3. *)
 
-gDirect[j_, uu_?NumericQ, vv_?NumericQ] :=
-  directReconstruction[j, 3][uu, vv];
+g12Then3[c_, uu_?NumericQ, vv_?NumericQ] := Module[
+  {c1, c2, c3, phi1, trace12, phi2, trace23, phi3},
+  {c1, c2, c3} = splitProductCoefficients[c];
+  phi1 = Function[{xx, yy}, cellSolve[1, c1][xx, yy]];
+  trace12 = Function[yy, phi1[1, yy]];
+  phi2 = Function[{xx, yy}, cellSolve[2, c2, trace12][xx, yy]];
+  trace23 = Function[yy, phi2[1, yy]];
+  phi3 = Function[{xx, yy}, cellSolve[3, c3, trace23][xx, yy]];
+  Which[uu <= 1, phi1[uu, vv], uu <= 2, phi2[uu - 1, vv],
+    True, phi3[uu - 2, vv]]];
 
-samplePoints = {
-  {0.31`30, 0.27`30},
-  {1.43`30, 0.62`30},
-  {2.57`30, 0.41`30}
-};
+(* 1(23): first reconstruct D2 from its own independent compatible profile,
+   pass Tr_right G2 into D3, and only then match the already composed D23
+   solution to the reconstructed right trace of D1. *)
 
-mapLeft = Table[
-  gLeft[j, samplePoints[[p, 1]], samplePoints[[p, 2]]],
-  {p, Length[samplePoints]}, {j, dim}
-];
+solve23[c2_, c3_][localU_?NumericQ,
+    vv_?NumericQ] := Module[{phi2, trace23, phi3},
+  phi2 = Function[{xx, yy}, cellSolve[2, c2][xx, yy]];
+  trace23 = Function[yy, phi2[1, yy]];
+  phi3 = Function[{xx, yy}, cellSolve[3, c3, trace23][xx, yy]];
+  If[localU <= 1, phi2[localU, vv], phi3[localU - 1, vv]]];
 
-mapRight = Table[
-  gRight[j, samplePoints[[p, 1]], samplePoints[[p, 2]]],
-  {p, Length[samplePoints]}, {j, dim}
-];
+g1Then23[c_, uu_?NumericQ, vv_?NumericQ] := Module[
+  {c1, c2, c3, phi1, trace12},
+  {c1, c2, c3} = splitProductCoefficients[c];
+  phi1 = Function[{xx, yy}, cellSolve[1, c1][xx, yy]];
+  trace12 = Function[yy, phi1[1, yy]];
+  If[uu <= 1, phi1[uu, vv],
+    If[Abs[trace12[vv] - cellLeft[2, c2][vv]] < 10^-20,
+      solve23[c2, c3][uu - 1, vv], Indeterminate]]];
 
-mapDirect = Table[
-  gDirect[j, samplePoints[[p, 1]], samplePoints[[p, 2]]],
-  {p, Length[samplePoints]}, {j, dim}
-];
+(* Direct width-three reconstruction uses only the outer bottom and outer
+   left profiles.  It never calls an exact bulk-mode oracle. *)
+
+outerBottom[c_][x_?NumericQ] := Module[{c1, c2, c3},
+  {c1, c2, c3} = splitProductCoefficients[c];
+  Which[x <= 1, cellBottom[1, c1][x],
+    x <= 2, cellBottom[2, c2][x - 1],
+    True, cellBottom[3, c3][x - 2]]];
+
+directWidthThree[c_, x_?NumericQ, y_?NumericQ] := Module[{c1},
+  c1 = splitProductCoefficients[c][[1]];
+  reconstruct[Function[xx, outerBottom[c][xx]],
+    Function[yy, cellLeft[1, c1][yy]], x, y]];
+
+traceNodes = N[{1/13, 2/11, 3/10, 5/12, 7/11, 9/10}, 35];
+rightTraceEvaluation[j_] := Table[
+  cellSolve[j, UnitVector[dimCell, p]][1, traceNodes[[q]]],
+  {q, dimCell}, {p, dimCell}];
+leftTraceEvaluation[j_] := Table[
+  cellLeft[j, UnitVector[dimCell, p]][traceNodes[[q]]],
+  {q, dimCell}, {p, dimCell}];
+trace12OperatorError = Max[Abs[Flatten[
+  rightTraceEvaluation[1] - leftTraceEvaluation[2]]]];
+trace23OperatorError = Max[Abs[Flatten[
+  rightTraceEvaluation[2] - leftTraceEvaluation[3]]]];
+
+samplePoints = {{0.31`32, 0.27`32}, {1.43`32, 0.62`32},
+  {2.57`32, 0.41`32}};
+outerBasisVectors = Table[
+  compatibilityEmbedding . UnitVector[dimCell, p], {p, dimCell}];
+
+mapLeft = Table[g12Then3[outerBasisVectors[[p]],
+  samplePoints[[q, 1]], samplePoints[[q, 2]]],
+  {q, Length[samplePoints]}, {p, dimCell}];
+mapRight = Table[g1Then23[outerBasisVectors[[p]],
+  samplePoints[[q, 1]], samplePoints[[q, 2]]],
+  {q, Length[samplePoints]}, {p, dimCell}];
+mapDirect = Table[directWidthThree[outerBasisVectors[[p]],
+  samplePoints[[q, 1]], samplePoints[[q, 2]]],
+  {q, Length[samplePoints]}, {p, dimCell}];
 
 parenthesizationError = Max[Abs[Flatten[mapLeft - mapRight]]];
-directMapError = Max[
-  Abs[Flatten[Join[mapLeft - mapDirect, mapRight - mapDirect]]]
-];
+directMapError = Max[Abs[Flatten[
+  Join[mapLeft - mapDirect, mapRight - mapDirect]]]];
 
 zeroArrayQ[z_] := And @@ (TrueQ[FullSimplify[# == 0]] & /@ Flatten[z]);
 
 checks = {
-  "each cell conserves the profile symplectic form" ->
+  "P1, P2, P3 are independent before compatibility" ->
+    TrueQ[Dimensions[compatibilityMatrix] == {12, 18}],
+  "S is a rectangular kernel embedding" -> And[
+    TrueQ[Dimensions[compatibilityEmbedding] == {18, 6}],
+    MatrixRank[compatibilityEmbedding] == 6,
+    MatrixRank[compatibilityMatrix] == 12,
+    zeroArrayQ[compatibilityMatrix . compatibilityEmbedding]],
+  "each cell conserves the profile symplectic current" ->
     zeroArrayQ[cellConservationResiduals],
-  "first internal edge cancels with opposite orientation" ->
-    zeroArrayQ[internal12Residual],
-  "second internal edge cancels with opposite orientation" ->
-    zeroArrayQ[internal23Residual],
-  "internal edge matrices are nonzero" -> And[
-    MatrixRank[internal12FromD1] > 0,
-    MatrixRank[internal23FromD2] > 0
-  ],
-  "outer incoming and outgoing symplectic matrices agree" ->
-    zeroArrayQ[outerSymplecticResidual],
-  "sum of oriented cell boundaries equals outer boundary" ->
-    zeroArrayQ[orientedBoundaryResidual],
-  "reduced incoming cell sum equals outer form" ->
-    zeroArrayQ[reducedIncomingResidual],
-  "reduced outgoing cell sum equals outer form" ->
-    zeroArrayQ[reducedOutgoingResidual],
-  "nontrivial pullback matrix identity" ->
-    And[
-      Det[coefficientMap] != 0,
-      coefficientMap != IdentityMatrix[dim],
-      zeroArrayQ[pullbackSymplecticResidual]
-    ],
-  "S^T Omega_outer S equals reduced three-cell sum" ->
-    zeroArrayQ[pullbackReducedCellResidual],
-  "G_(12)3 equals G_1(23) on the finite basis" ->
+  "T12 is Tr_right composed with reconstructed G1" ->
+    TrueQ[trace12OperatorError < 10^-22],
+  "T23 is Tr_right composed with reconstructed G2" ->
+    TrueQ[trace23OperatorError < 10^-22],
+  "internal edge matrices are nonzero and full rank" -> And[
+    MatrixRank[rightForm[1]] == dimCell,
+    MatrixRank[rightForm[2]] == dimCell],
+  "first reconstructed internal edge cancels only after matched pullback" ->
+    zeroArrayQ[internal12MatchedResidual],
+  "second reconstructed internal edge cancels only after matched pullback" ->
+    zeroArrayQ[internal23MatchedResidual],
+  "outer incoming and outgoing forms agree" ->
+    zeroArrayQ[outerConservationResidual],
+  "rectangular pullback of decomposed outer cut is exact" ->
+    zeroArrayQ[cutPullbackResidual],
+  "rectangular pullback of oriented cell boundaries is exact" ->
+    zeroArrayQ[boundaryPullbackResidual],
+  "G_(12)3 S equals G_1(23) S" ->
     TrueQ[parenthesizationError < 10^-20],
-  "both parenthesizations equal direct reconstruction" ->
+  "both sequential maps equal direct width-three reconstruction" ->
     TrueQ[directMapError < 10^-20]
 };
 
 Print["Wolfram version: ", $Version];
-Print["finite profile basis dimension: ", dim];
+Print["independent/product dimensions: ", {dimCell, dimProduct}];
+Print["compatibility/kernel dimensions: ", {
+  Dimensions[compatibilityMatrix], Dimensions[compatibilityEmbedding]}];
 Print["internal edge ranks: ", {
-  MatrixRank[internal12FromD1], MatrixRank[internal23FromD2]
-}];
+  MatrixRank[rightForm[1]], MatrixRank[rightForm[2]]}];
+Print["reconstructed trace-operator errors: ", {
+  trace12OperatorError, trace23OperatorError}];
 Print["parenthesization/direct errors: ", {
-  parenthesizationError, directMapError
-}];
+  parenthesizationError, directMapError}];
 Scan[Print[First[#], ": ", Last[#]] &, checks];
 
 If[And @@ (Last /@ checks),
   Print["ALL THREE-CELL SYMPLECTIC CHECKS PASSED"],
   Print["THREE-CELL SYMPLECTIC CHECKS FAILED"];
-  Quit[1]
-];
+  Quit[1]];
