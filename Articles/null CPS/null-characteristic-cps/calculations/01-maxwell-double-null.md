@@ -136,13 +136,13 @@ F_{\mathrm M}=B_c\,\operatorname{vol}_S,
 \tag{4.7}
 $$
 
-with nonzero constants $E_c,B_c$. Both obey $dF=d*F=0$ and have $r=p=0$, while $F_{\mathrm C}$ carries $E_0=E_c$ and $F_{\mathrm M}$ carries $b^0=B_c\operatorname{vol}_S$. The magnetic example is understood on a contractible cut patch or with $B_c$ chosen in an admissible fixed flux sector. Hence
+with nonzero constants $E_c,B_c$. Both obey $dF=d*F=0$ and have $r=p=0$, while $F_{\mathrm C}$ carries $E_0=E_c$ and $F_{\mathrm M}$ carries $b^0=B_c\operatorname{vol}_S$. Their logical roles differ. The electric example stays within any fixed magnetic Chern sector and already proves that $(r,p)$ omit a shared Coulomb integration datum whenever the electric-flux sector has not also been fixed. On $S^2$, comparing the constant magnetic solution with the zero field changes the Chern class; it is therefore primarily a cross-sector/topological noninjectivity check. It is a same-sector local check only on a contractible cut patch where no global Chern number has yet been imposed. Hence, on the union of admissible sectors,
 
 $$
 [F]\longmapsto (r,p)
 $$
 
-is not injective even before global bundle or harmonic complications are considered.
+is not injective. Within one fixed Chern sector the pure electric example suffices; within the main $Q_E=n=0$ radiative energy tangent space, completeness is instead supplied by the $\ell\geq1$ master and global profile theorems.
 
 ### 4.4 Potential-Level Lift and Corner Transition
 

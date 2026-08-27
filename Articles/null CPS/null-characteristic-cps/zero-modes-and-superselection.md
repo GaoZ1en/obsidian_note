@@ -10,6 +10,14 @@ On \(\mathbb R^{1,1}\times S^2_R\), the \(\ell=0\) Maxwell sector has no local r
 
 Neither \(Q_E\) nor \(n\) belongs in the \(\ell\geq1\) Fock tower.
 
+The main global finite-energy Fock theorem takes
+
+$$
+\boxed{Q_E=0,\qquad n=0.}
+$$
+
+Fixed nonzero values label non-finite-energy backgrounds on the noncompact \(z\)-line, not normalizable states in that theorem.
+
 ## 2. Normalized \(\ell=0\) Harmonic
 
 Let
@@ -87,12 +95,24 @@ $$
 
 The Chern class is a discrete superselection label, not a continuous phase-space tangent or a creation operator. Summing over bundles is a different theory/prescription and is not performed in the benchmark.
 
-## 4. Main Fixed-Flux Quantization
-
-The main radiative Fock construction fixes
+The magnetic energy per unit \(z\)-length is
 
 $$
-(Q_E,n).
+\mathcal H_B^{(0)}
+=\frac12\mathcal A_S
+\left(\frac{2\pi n}{\mathcal A_S}\right)^2
+=\frac{2\pi^2n^2}{\mathcal A_S}.
+\tag{3.4}
+$$
+
+It is constant. Thus every \(n\neq0\) background has infinite total energy on \(\mathbb R_z\), just as every \(Q_E\neq0\) background does.
+
+## 4. Main Zero-Sector Quantization
+
+The main radiative Fock construction is not stated for an arbitrary fixed pair. It is restricted to
+
+$$
+\boxed{Q_E=0,\qquad n=0.}
 $$
 
 Therefore
@@ -106,11 +126,21 @@ $$
 and the \(\ell=0\) tangent two-form vanishes. The quantum space in that sector is one superselection fiber,
 
 $$
-\mathcal H_{Q_E,n}=\mathcal H_{\mathrm{rad}}.
+\mathcal H_{0,0}=\mathcal H_{\mathrm{rad}}.
 \tag{4.1}
 $$
 
-This is the clean policy for the first Fock theorem. It avoids double counting the pointwise \(\ell\geq1\) corner electric density, which already belongs to \(\Phi^E_{\ell m}(0,0)\).
+This is the clean policy for the first Fock theorem. It avoids treating a constant nonzero background as a vector of finite energy and avoids double counting the pointwise \(\ell\geq1\) corner electric density, which already belongs to \(\Phi^E_{\ell m}(0,0)\).
+
+### Fixed nonzero backgrounds as fluctuation theories
+
+A fixed nonzero \((Q_E,n)\) can still be used as a classical background label. Since Maxwell theory is linear, the \(\ell\geq1\) fluctuation equations and symplectic form are unchanged. However, such a statement requires all three qualifications:
+
+1. subtract the infinite constant background energy before defining the fluctuation Hamiltonian;
+2. name the Hilbert space as a representation around that background rather than as the zero-sector Fock vacuum;
+3. do not claim that the background itself is a normalizable vector created by radiative oscillators.
+
+This optional background-sector language belongs in an appendix, not in the main Fock theorem.
 
 ## 5. Direct Integral Without a Frame Operator
 
@@ -198,7 +228,7 @@ The first paper therefore uses:
 
 $$
 \boxed{
-\text{fixed }(Q_E,n)
+Q_E=n=0
 +\text{ radiative Fock space for }\ell\geq1.}
 $$
 
@@ -206,8 +236,8 @@ The optional (6.1) representation is reported separately and is not included in 
 
 ## 8. Status
 
-**Proved:** absence of local \(\ell=0\) Maxwell oscillators, constancy of electric flux, discreteness of magnetic Chern class, and decoupling from the radiative action.
+**Proved:** absence of local \(\ell=0\) Maxwell oscillators, constancy of electric flux, discreteness of magnetic Chern class, constant nonzero electric/magnetic background energy density, and decoupling of the radiative fluctuation action.
 
 **Conditional on endpoint/large-gauge policy:** whether \(\lambda_0\) is retained and whether its configuration space is \(\mathbb R\) or \(U(1)\).
 
-**False:** treating magnetic Chern labels as tangent modes, or adding \(E_{0,\ell m}\) as independent oscillators for \(\ell\geq1\).
+**False:** treating magnetic Chern labels as tangent modes, treating a nonzero constant background as a normalizable radiative Fock state, or adding \(E_{0,\ell m}\) as independent oscillators for \(\ell\geq1\).

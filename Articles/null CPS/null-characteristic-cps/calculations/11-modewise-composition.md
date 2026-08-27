@@ -2,7 +2,7 @@
 
 ## 1. Direct Verdict
 
-For every radiative \((\ell,m,P)\) sector on the product benchmark, composition is now symplectic, not merely formal frame bookkeeping. Explicit Goursat reconstruction identifies the matched characteristic locus with one master solution space; the pullback two-form has zero kernel; and either parenthesization of a multi-cell gluing is canonically symplectomorphic to the same solution space.
+For every radiative \((\ell,m,P)\) sector on the product benchmark, composition is weak-symplectic, not merely formal frame bookkeeping. Explicit Goursat reconstruction identifies the matched characteristic locus with one master solution space; the pullback two-form has zero kernel; and either parenthesization of a multi-cell gluing is canonically symplectomorphic to the same solution space.
 
 This statement is proved only for \(\ell\geq1\) radiative sectors and for the declared endpoint policy. The \(\ell=0\) fixed-flux sector has zero tangent two-form; the optional extended frame--flux pair retains only the finite-dimensional Abelian associativity proved earlier.
 
@@ -36,6 +36,8 @@ f^B(0)=g^B(0)=-B_{0,\ell m}/\sqrt{\lambda_\ell}.
 $$
 
 No quotient acts on the master variables: the proper gauge quotient was already taken in passing from the potential to \(\Phi^E,\Phi^B\).
+
+The cells in this note are local solution/Goursat charts used to test the master-field composition relation. They are not promoted to autonomous finite-region Maxwell phase spaces with separately completed charged frame sectors.
 
 The reconstruction theorem gives a bounded bijection
 
@@ -162,7 +164,11 @@ $$
 \Omega(U_k,U_{k'}^*)=-i\delta(k-k'),
 $$
 
-independently of how the cells are parenthesized. The script regression represents each cell restriction by a linear trace map and verifies that the two composed pullbacks give the same finite-dimensional symplectic matrix before taking the continuum interpretation.
+independently of how the cells are parenthesized.
+
+The former script line checking only \((\omega_1+\omega_2)+\omega_3=\omega_1+(\omega_2+\omega_3)\) has been removed; it was ordinary addition associativity and supplied no evidence for this claim.
+
+The replacement `scripts/three_cell_symplectic_checks.wl` uses three adjacent finite Goursat cells and a six-dimensional finite profile basis. It explicitly constructs the two Bessel reconstruction evaluation matrices \(G_{(12)3}\) and \(G_{1(23)}\), the direct outer reconstruction, every horizontal/vertical edge symplectic matrix, and the reduced pullback identity \(S^T\Omega_{\mathrm{outer}}S=S^T\Omega_{\mathrm{cells}}^{\mathrm{red}}S\). The two internal edge matrices both have rank six and cancel only after the opposite induced orientations are applied. Both parenthesizations agree with each other and with direct reconstruction to approximately 29 decimal digits; all orientation and symplectic matrix residuals simplify exactly to zero. The exact setup and result are recorded in `14-three-cell-symplectic-composition-check.md`.
 
 ## 7. Relation to Maxwell Frame Reduction
 
@@ -176,9 +182,21 @@ For \(\ell=0\):
 
 Therefore modewise radiative associativity does not promote a fixed-flux frame label into an oscillator.
 
-## 8. Status
+## 8. Weyl-Algebra Corollary
 
-**Proved:** exact compatibility locus, pullback two-form, zero kernel after proper gauge reduction, and canonical weak symplectic associativity for every radiative harmonic sector.
+The symplectic reconstruction map induces
+
+$$
+\mathfrak W(G):W(c)\longmapsto W(Gc)
+$$
+
+as a canonical \(*\)-isomorphism between the Weyl algebra of the reduced matched profile space and that of the glued master solution space. The two parenthesizations induce the same algebra map by (5.2). This is a B1 statement. It is not a Hilbert tensor-product factorization and makes no claim of Fock implementability or a Shale--Stinespring property.
+
+## 9. Status
+
+**Proved:** exact compatibility locus, pullback two-form, zero kernel after proper gauge reduction, canonical weak-symplectic associativity for every radiative harmonic sector, and the induced Weyl-algebra composition isomorphism.
+
+**Checked independently:** two nontrivial parenthesized Bessel reconstruction maps, nonzero internal edge orientation cancellation, and the finite symplectic pullback matrix identity on a six-dimensional matched basis.
 
 **Clarified:** the naked endpoint trace constraint is not assigned an unjustified finite-dimensional coisotropic label in the weak \(H^1\) space; an endpoint extension is required before that vocabulary applies.
 

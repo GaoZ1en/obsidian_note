@@ -91,7 +91,7 @@ defined by the four transport integrals is a bijection onto the smooth sheet fie
 
 ### Claim B2 — Radiative Pair Alone
 
-**Status: false.** The pair $(F_{vA}|_{N_+},F_{uA}|_{N_-})$ alone does not form complete double-null characteristic data. The electric and magnetic examples in Section 2 lie in its kernel.
+**Status: false.** The pair $(F_{vA}|_{N_+},F_{uA}|_{N_-})$ alone does not form complete double-null characteristic data. The pure electric example proves this within a fixed magnetic Chern sector whenever the electric-flux sector is not fixed. On $S^2$, the pure constant magnetic example is primarily a cross-Chern-sector/topological check; it is not a tangent variation inside one fixed Chern sector.
 
 ### Proposition C — Gauge Contraction
 
@@ -109,29 +109,71 @@ $$\begin{align}
 
 A gauge transformation is proper only relative to a declared endpoint phase space: it is a degeneracy if the last integral vanishes for every allowed variation. Nonzero cut values of $\epsilon$ are charged when the electric flux varies.
 
-### Theorem D — Bulk Reconstruction/Restriction Equivalence
+### Theorem I — Local Goursat Reconstruction
 
-**Status: conditional in general; proved for the product-benchmark radiative sectors.** Fix a function space in which the Maxwell or Lorenz-potential Goursat problem on the chosen double-null domain has existence, uniqueness and continuous dependence. Also fix a $U(1)$ bundle/holonomy sector, impose the transport and full corner compatibility conditions, and use one endpoint charge policy on the bulk and characteristic sides. Under precisely those hypotheses, restriction induces a bijection
+**Status: proved for every fixed benchmark master sector.** For $a_\ell=\lambda_\ell/2>0$, let
 
-$$\begin{align}
-\frac{\operatorname{Sol}_{\mathrm{Max}}(D)}{\mathcal G_D^0} \longrightarrow \frac{\mathcal X_A^{\mathrm{comp}}}{\mathcal G_X^0},
-\end{align}$$
+$$
+\mathcal G^1_{U,V}
+=\{(f,g)\in H^1(0,U)\oplus H^1(0,V):f(0)=g(0)\}
+$$
 
-where $\mathcal X_A^{\mathrm{comp}}$ is the potential-level lift of $\mathcal X_F$, including its corner transition function, and the proper gauge groups use the same endpoint charge policy.
+with the sum $H^1$ norm, and let $\mathcal E^1_{U,V}(a_\ell)$ be the distributional solution graph space with the $C^0+L^\infty L^2+L^2$ mixed-derivative norm of calculation 07. Then
 
-Here $\mathcal X_A^{\mathrm{comp}}$ retains the potential-level connection/frame data needed when quotienting only by proper gauge; $\mathcal X_F$ alone describes the gauge-invariant field-strength sector but forgets charged boundary frames. The proved direction is that every bulk solution restricts to compatible data. Existence and uniqueness of a bulk solution are imported together from the Goursat theorem; integrated transport equations prove neither. Rácz's Newman--Penrose treatment supplies a useful smooth local structural cross-check, but not the exact fixed-background Sobolev quotient asserted here.
+$$
+\boxed{
+\operatorname{Res}_{U,V}:\mathcal E^1_{U,V}(a_\ell)
+\overset{\sim}{\longrightarrow}\mathcal G^1_{U,V}}
+$$
 
-For $M=\mathbb R^{1,1}\times S^2_R$ and every $\ell\geq1$ electric/magnetic master sector, `07-characteristic-mode-reconstruction.md` supplies the missing theorem directly: matched $H^1$ profiles reconstruct through a Bessel/Riemann kernel with a bounded inverse, and the smooth weighted harmonic sum is continuous. The $\ell=0$ flux/Chern data remain separate, and no generic curved-background conclusion follows from this benchmark.
+is a bounded isomorphism. Its inverse is the exact Bessel/Riemann formula (2.5) of calculation 07, with explicit reconstruction and trace estimates (3.4), (3.11). This is a pure local PDE/characteristic-coordinate theorem. The finite rectangle is a local chart for a restriction/germ of the boundaryless global solution; it is not an autonomous finite-region gauge phase space, does not select a vacuum, and does not determine global annihilation coefficients.
 
-### Theorem E — Symplectic Comparison
+### Theorem II — Global Characteristic Representation
 
-**Status: proved conditional only on Theorem D's existence map.** On a compact slab bounded by the initial null cross, a spacelike Cauchy surface (Sigma), and side pieces with vanishing allowed symplectic flux,
+**Status: proved for the zero-sector radiative benchmark.** On
+$M=\mathbb R_t\times\mathbb R_z\times S^2_R$, take $Q_E=n=0$ and let
+$\mathcal S_E^{\mathrm{rad}}$ be the direct sum of the two $\ell\geq1$ master
+energy spaces $H^1(\mathbb R_z)\oplus L^2(\mathbb R_z)$. For the complete
+half-cross
 
-$$\begin{align}
-G^*\Omega_\Sigma=\Omega_{N_+}+\Omega_{N_-}.
-\end{align}$$
+$$
+X=\{v=0,u\geq0\}\cup_{S_0}\{u=0,v\geq0\},
+$$
 
-This is Stokes' theorem for $d\omega=0$. There is no missing universal $S_0$ term in the raw covariant current.
+restriction is an injective symplectic isomorphism
+
+$$
+\boxed{
+R_X:\mathcal S_E^{\mathrm{rad}}
+\overset{\sim}{\longrightarrow}
+\widehat\bigoplus_{P,\ell,m}\mathfrak X_{E,\sqrt{\lambda_\ell}},
+\qquad
+\Omega_\Sigma=\Omega_X\circ(R_X\times R_X).}
+$$
+
+The intrinsic target is not defined as $R_X\mathcal S_E$.  Sectorwise it is
+the matched $H^1$ fixed-point space $P_\ell(f,g)=(f,g)$ of the explicit
+analysis--synthesis projector, with
+$\int\omega_{k\ell}|a_{k\ell}[f,g]|^2dk<\infty$.  The two-sheet formula for
+$a_k[f,g]$, its inverse, the exact one-particle/energy norms, and the explicit
+nonlocal $J_X$ kernel are in calculations 12--13.
+
+The analytic bridge is the massive half-cross lemma: the null trace estimate
+puts both profiles and tangential derivatives in $L^2(\mathbb R_+)$, their
+symplectic tails vanish, Schwartz wave packets decay rapidly at null infinity,
+and density extends the vanishing exterior Cauchy flux to the full energy
+space. Hence the finite-cross Stokes identity converges to
+$\Omega_X=\Omega_\Sigma$ and injectivity follows from Cauchy
+nondegeneracy.
+
+### General Reconstruction Boundary
+
+For an arbitrary product/curved double-null background, potential-level
+compatible data give a bulk proper-gauge quotient only after a separate
+Goursat existence, uniqueness, continuous-dependence, bundle/holonomy, and
+endpoint theorem.  That general theorem remains conditional.  Theorems I--II
+close only the stated $\mathbb R^{1,1}\times S^2_R$ radiative benchmark and do
+not turn integrated sheet transport into generic Maxwell surjectivity.
 
 ### Proposition F — Relative-Frame Polarization
 

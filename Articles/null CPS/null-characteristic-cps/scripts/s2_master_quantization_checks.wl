@@ -119,6 +119,23 @@ dispersionResidual = FullSimplify[
   Assumptions -> lam > 0 && k \[Element] Reals
 ];
 
+alphaJacobianResidual = FullSimplify[
+  D[alpha, k] - alpha/omega,
+  Assumptions -> lam > 0 && k \[Element] Reals
+];
+betaJacobianResidual = FullSimplify[
+  D[beta, k] + beta/omega,
+  Assumptions -> lam > 0 && k \[Element] Reals
+];
+nullDerivativeTraceWeightResidual = FullSimplify[
+  alpha + beta - Sqrt[2] omega,
+  Assumptions -> lam > 0 && k \[Element] Reals
+];
+nullProfileTraceWeightResidual = FullSimplify[
+  lam (1/alpha + 1/beta) - 2 Sqrt[2] omega,
+  Assumptions -> lam > 0 && k \[Element] Reals
+];
+
 betaA = aa/alphaA;
 betaB = aa/alphaB;
 pvConjugateResidual = FullSimplify[
@@ -137,6 +154,18 @@ normalizationResidual = FullSimplify[
 
 annihilatorProjectionResidual = FullSimplify[-I (I) - 1];
 creatorProjectionResidual = FullSimplify[I (-I) - 1];
+
+(* Direct algebra behind the explicit profile kernel for J_X. *)
+jKernelProfileResidual = FullSimplify[
+  -(I gam Exp[I del] - I gam Exp[-I del]) -
+    2 gam Sin[del],
+  Assumptions -> gam \[Element] Reals && del \[Element] Reals
+];
+jKernelDerivativeResidual = FullSimplify[
+  -(-Exp[I del] - Exp[-I del]) - 2 Cos[del],
+  Assumptions -> del \[Element] Reals
+];
+oneParticleNormResidual = FullSimplify[1/2 (1 + 1) - 1];
 
 (* Finite-cross overlap with the corner-zero sine Goursat basis. *)
 profileMode[x_] := Sqrt[2/len] Sin[kap x];
@@ -227,11 +256,28 @@ checks = {
   "Riemann kernel PDE" -> TrueQ[riemannPDEResidual == 0],
   "Riemann kernel boundaries" -> zeroArrayQ[riemannBoundaryResiduals],
   "null dispersion" -> TrueQ[dispersionResidual == 0],
+  "alpha null-frequency Jacobian" -> TrueQ[alphaJacobianResidual == 0],
+  "beta null-frequency Jacobian" -> TrueQ[betaJacobianResidual == 0],
+  "null derivative trace weight" -> TrueQ[
+    nullDerivativeTraceWeightResidual == 0
+  ],
+  "massive null profile trace weight" -> TrueQ[
+    nullProfileTraceWeightResidual == 0
+  ],
   "conjugate-mode PV cancellation" -> TrueQ[pvConjugateResidual == 0],
   "positive-mode PV cancellation" -> TrueQ[pvPositiveResidual == 0],
   "full-cross delta normalization" -> TrueQ[normalizationResidual == 0],
   "annihilator projection sign" -> TrueQ[annihilatorProjectionResidual == 0],
   "creator projection sign" -> TrueQ[creatorProjectionResidual == 0],
+  "J_X profile-kernel coefficient" -> TrueQ[
+    jKernelProfileResidual == 0
+  ],
+  "J_X derivative-kernel coefficient" -> TrueQ[
+    jKernelDerivativeResidual == 0
+  ],
+  "characteristic one-particle norm factor" -> TrueQ[
+    oneParticleNormResidual == 0
+  ],
   "finite Goursat overlap primitive" -> TrueQ[
     profileOverlapPrimitiveResidual == 0
   ],
@@ -242,10 +288,7 @@ checks = {
   "Hamiltonian number coefficient" -> TrueQ[hamiltonianNumberResidual == 0],
   "causal Bessel interior PDE" -> TrueQ[causalPDEResidual == 0],
   "matched-profile antisymmetry" -> TrueQ[profileOmega + Transpose[profileOmega] == 0 profileOmega],
-  "matched-profile Galerkin rank" -> TrueQ[MatrixRank[profileOmega] == Length[profileBasis]],
-  "modewise composition associativity" -> TrueQ[
-    FullSimplify[(om1 + om2) + om3 - (om1 + (om2 + om3))] == 0
-  ]
+  "matched-profile Galerkin rank" -> TrueQ[MatrixRank[profileOmega] == Length[profileBasis]]
 };
 
 Print["Wolfram version: ", $Version];

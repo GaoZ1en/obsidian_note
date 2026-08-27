@@ -377,19 +377,20 @@ This proves harmonic-sector completeness on the smooth core. Hilbert completion 
 
 The main quantization policy is:
 
-1. fix the magnetic Chern class \(n\);
-2. fix the \(\ell=0\) electric flux \(Q_E\) when constructing the radiative Fock representation;
+1. take \(n=0\) in the main global Fock theorem;
+2. take \(Q_E=0\) in that theorem, because a nonzero constant electric field has infinite total energy on \(\mathbb R_z\);
 3. use one smooth bulk connection/trivialization for the \(\ell\geq1\) radiative sector, so \(\lambda_{\mathrm{rel}}\) is not added as an independent oscillator;
 4. on a finite characteristic cross retain the two outer endpoint terms;
-5. compare with the global stationary theory only after taking the two half-rays to infinity in the finite-energy/no-null-infinity-flux completion.
+5. compare with the global stationary theory only after the proven massive half-cross completion of `12-global-characteristic-completion.md`.
 
-At finite cutoff the characteristic form is a regional symplectic form and global plane waves have sinc, not Dirac-delta, normalization. In the infinite endpoint limit, each \(\ell\geq1\) master is massive and the two sheet contributions combine to the global stationary normalization. No finite diamond is assigned an independent vacuum.
+At finite cutoff the characteristic form is a local restriction form and global plane waves have sinc, not Dirac-delta, normalization. The finite rectangle is a Goursat coordinate patch for the boundaryless global solution, not an autonomous finite-region gauge phase space. In the infinite endpoint limit, each \(\ell\geq1\) master is massive, the symplectic tails vanish in the finite-energy norm, and the two sheet contributions combine to the global stationary normalization. No finite diamond is assigned an independent vacuum.
 
 Alternative policies are not silently identified with this one:
 
 - fixing all pointwise corner electric density would remove legitimate \(\ell\geq1\) master corner values and is not the radiative Fock policy;
 - retaining independent sheet frames gives the extended pair discussed in `02-corner-gauge-reduction.md`, but only its genuine zero-mode part may be quantized separately without double counting the masters;
 - imposing reflecting data at finite outer cuts produces a different discrete spectrum and breaks the unrestricted \(\partial_t\) plane-wave comparison.
+- fixing nonzero \((Q_E,n)\) gives a fluctuation theory around an infinite-energy background and requires background subtraction/sector language; it is not the main radiative vacuum theorem.
 
 ## 8. Direct Characteristic Symplectic Cross-Check
 

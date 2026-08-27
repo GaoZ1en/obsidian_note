@@ -2,18 +2,24 @@
 
 ## Closed in the Product Benchmark
 
-- [x] Action: choose $M=\mathbb R^{1,1}\times S^2_R$ and one fixed $U(1)$ Chern sector.
-  Result: $H^1(S^2)=0$ removes harmonic one-form modes; $\ell=0$ flux/Chern data are separated from the two $\ell\geq1$ radiative polarizations.
+- [x] Action: choose $M=\mathbb R^{1,1}\times S^2_R$ and use $Q_E=n=0$ for the main global Fock theorem.
+  Result: $H^1(S^2)=0$ removes harmonic one-form modes; $\ell=0$ flux/Chern data are separated from the two $\ell\geq1$ radiative polarizations, while fixed nonzero sectors are named only as infinite-background fluctuation theories.
   Check: exact vector-harmonic regression.
 - [x] Action: derive both master fields from the Maxwell action before gauge fixing.
   Result: each $(\ell,m,E/B)$ sector has $(2\partial_u\partial_v+\lambda_\ell)\Phi=0$ and the exact field-strength/potential quotient map.
   Check: parent-action, divergence and transport residuals vanish.
 - [x] Action: close the finite-rectangle Goursat theorem.
-  Result: the Bessel/Riemann formula is a bounded inverse on matched $H^1$ profiles; the smooth angular tower is continuous in its weighted Fréchet core.
+  Result: Theorem I gives the Bessel/Riemann bounded inverse on matched $H^1$ profiles; the finite rectangle is explicitly only a local chart for the restriction/germ of a boundaryless global solution.
   Check: analytic Volterra estimates and $10^{-15}$ mode-reconstruction regression.
 - [x] Action: normalize characteristic/global modes on the complete two-sheet cross.
   Result: the two principal-value pieces cancel and $\Omega_X(U_I,U_J^*)=-i\delta(I,J)$ without sheet doubling.
   Check: exact Wolfram normalization and sign regression.
+- [x] Action: prove half-cross completion rather than assume a no-flux policy.
+  Result: massive null-trace Plancherel bounds put both profiles in $H^1(\mathbb R_+)$, symplectic tails vanish, Schwartz packets decay rapidly at null infinity, and energy density extends the result to all finite-energy solutions.
+  Check: exact null-frequency/Jacobian weights plus the analytic tail/density proof in calculation 12.
+- [x] Action: characterize $\operatorname{Ran}R_X$ intrinsically.
+  Result: the range is the fixed-point space of the explicit analysis--synthesis projector $P_X=S_XT_X$, with boxed two-sheet $a_k[f,g]$, inverse, exact one-particle/energy norms and an explicit nonlocal $J_X$ kernel.
+  Check: principal-value cancellations, delta Jacobians and kernel coefficients pass in Wolfram 14.3.
 - [x] Action: complete Weyl/CCR, stationary Fock, Hamiltonian and correlator layers.
   Result: global $J$ pulls back nonlocally to $J_X$; $[a_I,a_J^\dagger]=\delta(I,J)$ and $H_{\partial_t}$ generates the CPS time translation.
   Check: anomalous Hamiltonian coefficients vanish on shell.
@@ -22,30 +28,34 @@
   Check: analytic Fourier--Bessel identity plus timelike/spacelike truncation regressions.
 - [x] Action: upgrade radiative composition from formal to weak-symplectic associativity.
   Result: explicit Goursat uniqueness identifies both parenthesizations with the same solution space and the pullback kernel is zero.
-  Check: sectorwise additivity and matched-profile matrix regression.
+  Check: the replacement three-cell regression constructs $G_{(12)3}$ and $G_{1(23)}$, verifies $S^T\Omega_{\rm outer}S=S^T\Omega_{\rm cells}^{\rm red}S$, and cancels two nonzero full-rank internal-edge matrices by orientation.
+- [x] Action: add the Weyl-algebra composition corollary.
+  Result: the symplectic reconstruction induces the canonical B1 $*$-isomorphism $W(c)\mapsto W(Gc)$.
+  Check: no Hilbert tensor-product or Fock-implementability claim is made.
 
 ## Immediate Manuscript-Hardening Tasks
 
 - [ ] Action: turn calculations 06--11 into a compact theorem/proof manuscript draft.
   Context: the project notes deliberately retain repair boundaries and script details that should not all appear in the paper.
   Check: every manuscript theorem points to one claim-ledger row and one proof location.
-- [ ] Action: audit the infinite-endpoint no-null-infinity-flux completion against a precise massive Klein--Gordon scattering reference.
-  Context: the dense Schwartz-mode proof is sufficient for the benchmark Fock construction, but a published functional-analytic citation would harden the completion statement.
-  Check: state the exact norm in which the finite-cross forms converge.
+- [x] Action: audit the infinite-endpoint completion against precise massive Klein--Gordon references.
+  Result: calculations 12 and the literature matrix cite Adler--Jacob, Nicolas and Sussman while retaining a self-contained $L^2(\omega dk)$ proof.
+  Check: the exact convergence norm and trace constants are displayed.
 - [ ] Action: decide whether the first paper omits the optional extended $\ell=0$ representation or puts it in an appendix.
-  Context: the main theorem fixes $(Q_E,n)$; $L^2(\mathbb R)$ versus $L^2(U(1))$ requires extra large-gauge input.
+  Context: the main theorem takes $Q_E=n=0$; $L^2(\mathbb R)$ versus $L^2(U(1))$ requires extra large-gauge input.
   Check: no extended-frame sentence leaks into the radiative completeness theorem.
-- [ ] Action: perform a deeper pre-1990 null-Maxwell bibliography pass around Wódkiewicz and cited predecessors.
-  Context: ordinary null canonical brackets and news quantization are known and must not be advertised as new.
-  Check: novelty paragraph names the exact non-overlap rather than relying on a negative search.
+- [ ] Action: finish a bibliography-quality pre-1990 reference chase through Wódkiewicz, Yan and Casher.
+  Context: this round added Leutwyler--Klauder--Streit, Yan's coupled spin-one paper and Casher and narrowed novelty to the integrated action/CPS chain; an exhaustive predecessor-by-predecessor audit is still open.
+  Check: inspect every cited predecessor rather than infer absence from title/abstract metadata.
 
-## Exact Remaining Generalization Blockers
+## Parked Generalizations (Not Active This Round)
 
 - A same-order Sobolev restriction/reconstruction theorem for the full angular tower without moving angular weights between seminorms.
 - Curved double-null backgrounds, caustics and non-product cuts.
 - Cuts with $H^1(S)\neq0$, including harmonic connection differences and flat holonomies.
 - Large-gauge periodicity and charge normalization for the optional zero-mode frame.
 - Non-Abelian singular reduction and gravitational symplectic composition.
+- BRST, Schwarzschild/Kruskal, curved spherically symmetric Maxwell and B2 regional state reconstruction.
 
 ## Explicit Non-Blockers for the First Benchmark Paper
 

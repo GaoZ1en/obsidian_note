@@ -111,7 +111,7 @@ $$\begin{align}
 
 This is a formal smooth associativity theorem. It does not establish that infinite-dimensional quotients are Hausdorff, that constraint ranges are closed in a chosen Sobolev completion, or that non-Abelian stabilizer strata associate without derived corrections.
 
-For the $\mathbb R^{1,1}\times S^2_R$ radiative sectors, `11-modewise-composition.md` upgrades this statement. The explicit master Goursat theorem identifies the compatibility locus with the bulk solution space, the pulled-back $H^1$ two-form has zero kernel, and the two parenthesizations are canonically weak-symplectically isomorphic in every $(\ell,m,P)$ sector. This upgrade does not apply to non-Abelian singular quotients or promote the fixed-flux relative frame into an oscillator.
+For the $\mathbb R^{1,1}\times S^2_R$ radiative sectors, `11-modewise-composition.md` upgrades this statement. The explicit master Goursat theorem identifies the compatibility locus with the bulk solution space, the pulled-back $H^1$ two-form has zero kernel, and the two parenthesizations are canonically weak-symplectically isomorphic in every $(\ell,m,P)$ sector. `14-three-cell-symplectic-composition-check.md` supplies a nontrivial finite regression with two explicit Bessel reconstruction maps, full-rank internal-edge matrices and an exact pullback identity; the old ordinary-addition test is no longer cited as evidence. The induced Weyl-algebra map is B1 only. This upgrade does not apply to full charged-frame Maxwell composition, non-Abelian singular quotients, Hilbert tensor-product factorization or Fock implementability, and it does not promote the fixed-flux relative frame into an oscillator.
 
 ## 6. Orientation Check
 

@@ -2,7 +2,9 @@
 
 ## 1. Direct Verdict
 
-For every \((\ell,m,P)\) with \(\ell\geq1\), the Maxwell Goursat problem on a finite product rectangle is explicitly solvable. In the declared matched \(H^1\) data space, restriction and reconstruction are bounded inverse maps. On the smooth Maxwell core the harmonic sum is continuous in its natural Fréchet topology. Thus the former generic Goursat blocker is removed for the radiative sectors of the benchmark background.
+For every \((\ell,m,P)\) with \(\ell\geq1\), the Maxwell Goursat problem on a finite product rectangle is explicitly solvable. In the declared matched \(H^1\) data space, restriction and reconstruction are bounded inverse maps. On the smooth Maxwell core the harmonic sum is continuous in its natural Fréchet topology. This is **Theorem I**, a local classical PDE/characteristic-coordinate theorem.
+
+The finite rectangle is not declared to be an autonomous regional gauge phase space. It is a local Goursat patch for the restriction of the boundaryless global proper-gauge Maxwell solution space. Theorem I chooses no vacuum, no complex structure, and no global annihilation coefficient. The complete-half-cross restriction theorem is the separate **Theorem II** in `12-global-characteristic-completion.md`.
 
 The theorem is not imported from a general nonlinear characteristic theorem. It follows directly from the exact master equation
 
@@ -90,21 +92,22 @@ $$
 \|(f,g)\|_{\mathcal G^1}:=\|f\|_{H^1(0,U)}+\|g\|_{H^1(0,V)}.
 $$
 
-The common trace exists because \(H^1\) on an interval embeds continuously into \(C^0\). Define the solution graph space by
+The common trace exists because \(H^1\) on an interval embeds continuously into \(C^0\). Define the closed solution graph space by
 
 $$
-\mathcal E^1_{U,V}:=\left\{
+\mathcal E^1_{U,V}(a_\ell):=\left\{
 \begin{array}{l|l}
 \Phi&\Phi\in C^0(\overline D_{U,V}),\\
 &\partial_u\Phi\in L^\infty_vL^2_u,\\
 &\partial_v\Phi\in L^\infty_uL^2_v,\\
-&\partial_u\partial_v\Phi\in L^2(D_{U,V})
+&\partial_u\partial_v\Phi\in L^2(D_{U,V}),\\
+&(\partial_u\partial_v+a_\ell)\Phi=0\ \text{in }\mathcal D'(D_{U,V})
 \end{array}
 \right\},
 \tag{3.2}
 $$
 
-with the equation imposed distributionally and with graph norm
+with graph norm
 
 $$
 \|\Phi\|_{\mathcal E^1}
@@ -115,17 +118,29 @@ $$
 \tag{3.3}
 $$
 
-### Theorem 3.1 — finite-sector Goursat isomorphism
+### Theorem I — local finite-sector Goursat reconstruction
 
 For every \(\lambda_\ell>0\), restriction
 
 $$
-\operatorname{Res}:\mathcal E^1_{U,V}\longrightarrow\mathcal G^1_{U,V},
+\operatorname{Res}_{U,V}:\mathcal E^1_{U,V}(a_\ell)\longrightarrow\mathcal G^1_{U,V},
 \qquad
 \Phi\longmapsto(\Phi(\cdot,0),\Phi(0,\cdot)),
 $$
 
-is a bounded bijection whose inverse is (2.5).
+is a bounded bijection whose inverse \(\mathcal R_{\ell;U,V}\) is (2.5). More explicitly, there are finite constants depending only on \((a_\ell,U,V)\) such that
+
+$$
+\boxed{
+\|\mathcal R_{\ell;U,V}(f,g)\|_{\mathcal E^1}
+\leq C_{\mathrm{rec}}(a_\ell,U,V)
+\|(f,g)\|_{\mathcal G^1},
+\qquad
+\|\operatorname{Res}_{U,V}\Phi\|_{\mathcal G^1}
+\leq C_{\mathrm{tr}}(a_\ell,U,V)
+\|\Phi\|_{\mathcal E^1}.}
+\tag{3.4}
+$$
 
 ### Proof
 
@@ -153,7 +168,7 @@ Hence the Neumann series for \((1+a_\ell T)^{-1}\) converges absolutely in \(C^0
 $$
 \|\Phi\|_\infty
 \leq I_0(2\sqrt{a_\ell UV})F_0.
-\tag{3.4}
+\tag{3.5}
 $$
 
 The sharper Bessel formula and \(|J_0(x)|\leq1\) for real \(x\) give
@@ -162,7 +177,7 @@ $$
 \|\Phi\|_\infty
 \leq |c|+\sqrt U\,\|f'\|_{L^2}
 +\sqrt V\,\|g'\|_{L^2}.
-\tag{3.5}
+\tag{3.6}
 $$
 
 Differentiating (2.2),
@@ -173,7 +188,7 @@ $$
 
 $$
 \partial_v\Phi(u,v)=g'(v)-a_\ell\int_0^u\Phi(s,v)ds.
-\tag{3.6}
+\tag{3.7}
 $$
 
 Therefore
@@ -181,13 +196,13 @@ Therefore
 $$
 \sup_v\|\partial_u\Phi(\cdot,v)\|_{L^2_u}
 \leq\|f'\|_{L^2}+a_\ell V\sqrt U\,\|\Phi\|_\infty,
-\tag{3.7}
+\tag{3.8}
 $$
 
 $$
 \sup_u\|\partial_v\Phi(u,\cdot)\|_{L^2_v}
 \leq\|g'\|_{L^2}+a_\ell U\sqrt V\,\|\Phi\|_\infty,
-\tag{3.8}
+\tag{3.9}
 $$
 
 and
@@ -196,16 +211,39 @@ $$
 \|\partial_u\partial_v\Phi\|_{L^2}
 =a_\ell\|\Phi\|_{L^2}
 \leq a_\ell\sqrt{UV}\,\|\Phi\|_\infty.
-\tag{3.9}
+\tag{3.10}
 $$
 
-These estimates prove bounded reconstruction. Conversely,
-\(\partial_u\Phi\in H^1(0,V;L^2(0,U))\) and
-\(\partial_v\Phi\in H^1(0,U;L^2(0,V))\), because the graph norm controls each first derivative and its transverse derivative. The Bochner trace theorem therefore controls \(f'\) and \(g'\), while the \(C^0\) term controls \(f\), \(g\), and their common corner value. Hence restriction is bounded into \(\mathcal G^1_{U,V}\). Integrating the distributional equation twice recovers (2.2). If the data vanish, the convergent Volterra resolvent gives \(\Phi=0\), proving uniqueness. \(\square\)
+If
 
-For \(C^k\) data, differentiating (2.5) gives a \(C^k\) solution with continuous dependence. For smooth Maxwell data on \(S^2\), harmonic coefficients decrease faster than every power of \(1+\lambda_\ell\). The polynomial \(\lambda_\ell\) losses in (3.7)--(3.9) are absorbed by the neighboring Fréchet seminorms, so the direct harmonic sum is a continuous smooth reconstruction map.
+$$
+B(f,g):=|c|+\sqrt U\,\|f'\|_{L^2}+\sqrt V\,\|g'\|_{L^2},
+$$
+
+then (3.6)--(3.10) give the explicit usable estimate
+
+$$
+\begin{aligned}
+\|\mathcal R_{\ell;U,V}(f,g)\|_{\mathcal E^1}
+\leq{}&\|f'\|_{L^2}+\|g'\|_{L^2}\\
+&+\left[1+a_\ell(V\sqrt U+U\sqrt V+\sqrt{UV})\right]B(f,g).
+\end{aligned}
+\tag{3.11}
+$$
+
+The one-dimensional trace inequality bounds \(|c|\), hence the right-hand side, by \(C_{\mathrm{rec}}\|(f,g)\|_{\mathcal G^1}\). Conversely,
+\(\partial_u\Phi\in H^1(0,V;L^2(0,U))\) and
+\(\partial_v\Phi\in H^1(0,U;L^2(0,V))\), because the graph norm controls each first derivative and its transverse derivative. The Bochner trace theorem therefore controls \(f'\) and \(g'\), while the \(C^0\) term controls \(f\), \(g\), and their common corner value. Hence restriction is bounded into \(\mathcal G^1_{U,V}\), with the second estimate in (3.4). Integrating the distributional equation twice recovers (2.2). If the data vanish, the convergent Volterra resolvent gives \(\Phi=0\), proving uniqueness. \(\square\)
+
+For \(C^k\) data, differentiating (2.5) gives a \(C^k\) solution with continuous dependence. For smooth Maxwell data on \(S^2\), harmonic coefficients decrease faster than every power of \(1+\lambda_\ell\). The polynomial \(\lambda_\ell\) losses in (3.8)--(3.10) are absorbed by the neighboring Fréchet seminorms, so the direct harmonic sum is a continuous smooth reconstruction map.
 
 This proves the benchmark Goursat theorem sectorwise and on the smooth radiative Maxwell core. It does **not** assert a uniform same-order Sobolev bound over the full \(\ell\)-tower without angular derivative weights.
+
+### 3.1 Interpretation as a local chart
+
+Every global boundaryless finite-energy solution restricts to an element of \(\mathcal E^1_{U,V}(a_\ell)\), and Theorem I reconstructs its field on \(D_{U,V}\) from the two finite profiles. Conversely, a local solution can be extended by extending Cauchy data from a spacelike interval, but that outer extension is not unique. Therefore the finite profiles are coordinates on the local solution germ/restriction, not coordinates on a self-contained finite-region gauge subsystem and not enough to determine a global stationary coefficient.
+
+At Maxwell level the same statement is applied after the global proper-gauge quotient and the action-derived master map. Endpoint terms remain in the bookkeeping, but no claim is made that all charged frame directions on the finite outer cuts have been regionally reduced.
 
 ## 4. Maxwell Characteristic Data Dictionary
 
@@ -393,7 +431,7 @@ with electric or magnetic corner curvature fixed by the common value \(U(0,0)\).
 
 ## 7. Local-to-Stationary Transform and Completeness
 
-Let \(X_\infty\) denote the two half-rays \(u\geq0,v=0\) and \(v\geq0,u=0\) with the finite-energy/no-null-infinity-flux endpoint completion defined in `08-symplectic-mode-normalization.md`. If \(f,g\) are the two harmonic master profiles, the stationary coefficient is
+Let \(X_\infty\) denote the two half-rays \(u\geq0,v=0\) and \(v\geq0,u=0\). The finite-energy completion and the proof of vanishing massive tails are given in `12-global-characteristic-completion.md`; the intrinsic profile space is defined in `13-characteristic-complex-structure.md`. If \(f,g\) are an intrinsic pair in that space, the stationary coefficient is
 
 $$
 \boxed{
@@ -408,7 +446,7 @@ a^P_{k\ell m}=-iN_{k\ell}\bigg[&
 \tag{7.1}
 $$
 
-where \(N_{k\ell}=(4\pi\omega_{k\ell})^{-1/2}\). The integrals are ordinary for a dense Schwartz class and distributional in the energy completion. Equation (7.1) is the genuine symplectic transform on the complete characteristic energy image.
+where \(N_{k\ell}=(4\pi\omega_{k\ell})^{-1/2}\). The integrals are ordinary for a dense Schwartz class and are the closed half-line Fourier transforms in the energy completion. Equation (7.1) uses both sheets and is the explicit analysis map \(T_{\sqrt{\lambda_\ell}}\).
 
 For the finite Goursat profile modes (5.2), one can instead compute exact overlaps with restricted stationary modes. Put
 
@@ -458,7 +496,7 @@ $$
 
 Equations (7.2)--(7.4) are finite-cross overlap/Gram kernels, not global annihilation coefficients: data on \(X_{U,V}\) do not determine the continuation beyond the two outer endpoints. A chosen extension into \(X_\infty\) turns finite data into global coefficients through (7.1), but different extensions can differ outside the finite diamond. No such extension is part of the regional B1 data.
 
-On the complete characteristic energy image, the inverse of (7.1) is
+On the intrinsic fixed-point profile space of calculation 13, the inverse of (7.1) is
 
 $$
 f^P_{\ell m}(u)=\int_{-\infty}^{\infty}dk
@@ -478,13 +516,25 @@ The same coefficient appears on both sheets, so (7.5)--(7.6) automatically share
 
 The complete-cross map (7.1), (7.5)--(7.6) is a real symplectic coordinate transform. It is not a Bogoliubov transformation from the finite Goursat basis because that basis has neither a chosen complex structure nor a canonical global extension. Independent positive-frequency splittings on the two sheets would violate (6.2) and overcount. The stationary complex structure is instead pulled back through (7.1) in the quantization note.
 
-Fourier completeness on \(H^1(\mathbb R_z)\oplus L^2(\mathbb R_z)\) proves completeness of (6.1) for each massive master. Equations (7.1), (7.5)--(7.6) pull that complete basis to the image characteristic energy space. This proves global mode completeness for the declared stationary finite-energy sector, not for every arbitrary nondecaying pair of half-line profiles and not a unique stationary expansion of finite-cross data without extension input.
+The analysis--synthesis theorem of calculation 13 proves
+
+$$
+T_\ell S_\ell=1,
+\qquad
+P_\ell:=S_\ell T_\ell,
+\qquad
+\operatorname{Ran}R_X
+=\left\{(f,g):P_\ell(f,g)=(f,g),\quad
+\int\omega|a_k[f,g]|^2dk<\infty\right\}.
+$$
+
+This is an intrinsic characterization and a Plancherel theorem, not the tautology “complete on the image.” It proves global mode completeness for the declared stationary finite-energy sector, not for every arbitrary nondecaying pair of half-line profiles and not a unique stationary expansion of finite-cross data without extension input.
 
 ## 8. Status and Remaining Boundary
 
 **Proved:** exact finite-rectangle reconstruction; uniqueness; continuous dependence in the stated \(H^1\) graph norm; smooth full-tower reconstruction; the complete master/Maxwell data dictionary; stationary dispersion and restriction relations.
 
-**Proved on the declared global energy image:** stationary mode completeness and the characteristic/stationary symplectic transform.
+**Proved by the separate Theorem II and intrinsic projector theorem:** global restriction injectivity, stationary mode completeness, the characteristic/stationary symplectic transform, and the exact profile-space norms.
 
 **Not a blocker for this benchmark:** the generic Rácz/Rendall theorem. Those sources remain structural comparisons for nonlinear or curved systems, while the product-background theorem is now direct.
 

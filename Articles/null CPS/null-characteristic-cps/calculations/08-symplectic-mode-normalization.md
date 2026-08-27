@@ -2,7 +2,7 @@
 
 ## 1. Direct Verdict
 
-For every \((\ell,m,P)\), \(\ell\geq1\), the proper Maxwell gauge quotient is symplectomorphic to one real massive master field. On a complete two-sheet characteristic cross its action-derived two-form is weakly nondegenerate, and the global stationary modes satisfy
+For every \((\ell,m,P)\), \(\ell\geq1\), the proper Maxwell gauge quotient is symplectomorphic to one real massive master field. On the intrinsic complete two-sheet profile space of calculations 12--13 its action-derived two-form is weakly nondegenerate, and the global stationary modes satisfy
 
 $$
 \Omega_X(U_I,U_J)=0,
@@ -36,6 +36,8 @@ $$
 \end{aligned}}
 \tag{2.1}
 $$
+
+Here “finite characteristic form” means the pullback of the master solution form to the local Goursat coordinates of Theorem I, with outer endpoint variations retained. It is not a declaration that the finite rectangle is an autonomous Maxwell gauge subsystem or that all charged frame directions at its outer cuts have undergone regional reduction.
 
 Equation (2.1) follows independently from the reduced scalar action in `06-s2-harmonic-master-reduction.md` and by direct substitution of both field-strength maps into the raw Maxwell form (7.3) of `01-maxwell-double-null.md`. The latter includes the electric \(\delta E\wedge\delta A_{u,v}\) term and checks that electric dualization lost no boundary contribution.
 
@@ -72,7 +74,7 @@ $$
 \Sigma_T=\{t=T,\ -T\leq z\leq T\}.
 $$
 
-Stokes' theorem gives
+Together with the spacelike segment, it bounds the compact triangle \(u,v\geq0\), \(u+v\leq\sqrt2T\). Stokes' theorem gives the exact finite identity
 
 $$
 \Omega_{X_L}=\Omega_{\Sigma_T}.
@@ -81,9 +83,34 @@ $$
 
 At finite \(T\), plane waves have finite-interval sinc kernels. A finite diamond is therefore not an autonomous stationary Fock system and does not itself produce \(\delta(k-k')\).
 
-The preferred endpoint policy is the controlled \(L\to\infty\) limit on the dense class of stationary Schwartz wave packets for which the massive \(\ell\geq1\) sectors carry no residual symplectic flux to null infinity. Equation (4.1) then tends to the global \(t=\mathrm{const}\) form. The completion of this dense class defines the characteristic energy space below.
+The endpoint limit is now a theorem, not a policy. For \(\mu^2=\lambda_\ell>0\), the null-frequency Plancherel identities imply
 
-This is weaker and more precise than calling the future null cone a geometric Cauchy surface for all smooth solutions. It is an asymptotically complete symplectic cross only in the declared massive finite-energy completion.
+$$
+\|f\|_{H^1(\mathbb R_+)}^2+\|g\|_{H^1(\mathbb R_+)}^2
+\leq
+\sqrt2\left(1+\frac2{\mu^2}\right)
+\int_{\mathbb R}\omega_k|a(k)|^2dk.
+\tag{4.2}
+$$
+
+Hence both symplectic tails vanish by Cauchy--Schwarz. On the Schwartz spectral core, the mass shell has no finite stationary point in \(|z|\geq t\), and a bounded/high-momentum split gives rapid decay up to the null directions. Density in \(L^2(\omega dk)\), together with the uniform energy bound on exterior Cauchy flux, then gives
+
+$$
+\lim_{T\to\infty}\Omega_{|z|>T}(\Phi_1,\Phi_2)=0.
+\tag{4.3}
+$$
+
+Therefore
+
+$$
+\boxed{
+\lim_{L\to\infty}\Omega_{X_L}
+=\Omega_X
+=\Omega_\Sigma.}
+\tag{4.4}
+$$
+
+The full proof, including the exact trace weights and the density argument, is Lemma 4.1 and Theorem II of `12-global-characteristic-completion.md`. The mass gap is essential; no uniform \(\mu\to0\) conclusion is made.
 
 ## 5. Distributional Normalization on the Complete Cross
 
@@ -184,7 +211,7 @@ The cancellation (5.4) is the precise reason the two sheets are one normalizatio
 
 ## 6. Characteristic Projection and Inverse Expansion
 
-For a real master solution \(\Phi\), define
+For a real master solution \(\Phi\) in the intrinsic profile space of calculation 13, define
 
 $$
 \boxed{a_I=-i\Omega_X(U_I^*,\Phi),\qquad a_I^*=i\Omega_X(U_I,\Phi).}
@@ -202,11 +229,11 @@ $$
 
 The sign in (6.1) is forced by (5.8). The simultaneous pair \(\Omega(U,U^*)=-i\) and \(a=+i\Omega(U^*,\Phi)\) would extract \(-a\) from (6.2), so it is inconsistent. The action-derived convention is (5.8) together with (6.1).
 
-In profile variables, (6.1) is formula (7.1) of `07-characteristic-mode-reconstruction.md`. It uses both sheets. Applying it to only one sheet leaves a principal-value term and does not define the global annihilation coefficient.
+In profile variables, (6.1) is formula (7.1) of `07-characteristic-mode-reconstruction.md`, equivalently (2.1) of calculation 13. It uses both sheets. Applying it to only one sheet leaves a principal-value term and does not define the global annihilation coefficient. The inverse and Plancherel identities are explicit there, so completeness is no longer phrased circularly as completeness “on the image.”
 
 ## 7. Symplectic Transform Versus Bogoliubov Transform
 
-On the complete characteristic energy image, any real Goursat wave packet \(G_A\) and the stationary complex basis \(\{U_k,U_k^*\}\) are related by
+On the intrinsic complete profile space defined by the fixed-point projector of calculation 13, any real Goursat wave packet \(G_A\) and the stationary complex basis \(\{U_k,U_k^*\}\) are related by
 
 $$
 A_{kA}=-i\Omega_X(U_k^*,G_A),
@@ -245,4 +272,6 @@ These are evaluation functionals of (6.2), not extra canonical coordinates. Addi
 
 **Checked symbolically:** both principal-value cancellations, all Jacobian relations, and the normalization coefficient.
 
-**Conditional only at the endpoint boundary:** extension from the dense Schwartz spectral class to a larger characteristic completion with nonzero massive flux at null infinity. The Fock construction uses the completed no-flux energy image and does not require that larger space.
+**Proved at the endpoint boundary:** the Schwartz-core null decay, the finite-energy trace bound, density extension, and equality of the complete-half-cross and global Cauchy forms.
+
+**Not included:** a larger non-energy characteristic class with prescribed nonzero massive flux at null infinity, or a uniform massless limit.

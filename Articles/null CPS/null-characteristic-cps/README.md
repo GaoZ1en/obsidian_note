@@ -8,9 +8,17 @@ $$
 M=\mathbb R^{1,1}_{t,z}\times S^2_R,
 $$
 
-with a fixed $U(1)$ Chern sector, fixed $\ell=0$ electric flux for the main Fock representation, matched finite-rectangle $H^1$ characteristic data, and the declared finite-endpoint/no-null-infinity-flux policy. This is a stationary ultrastatic product background, not $3+1$ Minkowski spacetime.
+with matched finite-rectangle $H^1$ characteristic data for the local theorem and the zero-flux/zero-Chern sector
 
-For every $\ell\geq1$, the Maxwell action reduces to two gauge-invariant massive scalar masters, the Bessel/Riemann formula gives a bounded Goursat inverse, the reduced characteristic form is weakly nondegenerate, global stationary modes are normalized on the complete two-sheet cross, and the resulting CCR/Fock, Hamiltonian, Wightman, Peierls and modewise symplectic-composition statements are explicit.
+$$
+\boxed{Q_E=0,\qquad n=0}
+$$
+
+for the main global finite-energy Fock theorem. This is a stationary ultrastatic product background, not $3+1$ Minkowski spacetime.
+
+For every $\ell\geq1$, the Maxwell action reduces to two gauge-invariant massive scalar masters. **Theorem I** is the bounded local Bessel/Riemann Goursat isomorphism on $D_{U,V}$; the finite rectangle is only a local characteristic chart for the restriction/germ of the boundaryless global solution, not an autonomous finite-region gauge phase space. **Theorem II** is the injective symplectic restriction of the global finite-energy solution space to the complete half-cross. Its target has an intrinsic analysis--synthesis projector characterization, an explicit two-sheet coefficient $a_k[f,g]$, exact one-particle/energy norms, and an explicit nonlocal $J_X$ kernel.
+
+The half-cross endpoint step is proved: the mass gap gives $H^1$ null traces, vanishing symplectic tails, rapid Schwartz-core decay at null infinity, and a density extension to the full energy space. The resulting CCR/Fock, Hamiltonian, Wightman, Peierls, radiative weak-symplectic composition and Weyl-algebra composition statements are explicit.
 
 The general curved-background bulk reconstruction claim remains conditional. The benchmark theorem does not turn sheet transport integration into a generic Maxwell Goursat theorem.
 
@@ -36,7 +44,7 @@ $$
 r_A=F_{vA}|_{N_+},\quad p_A=F_{uA}|_{N_-},
 $$
 
-where $E_0=F_{uv}|_{S_0}$ and $b^0_{AB}=F_{AB}|_{S_0}$ are shared corner integration data. Indeed, the nonzero source-free fields $F=E_c\,du\wedge dv$ and $F=B_c\,\operatorname{vol}_S$, for nonzero constants $E_c,B_c$, both have $r=p=0$. Thus restriction to $(r,p)$ is not injective. Proper gauge transformations are exactly the gauge directions whose cut charge variation vanishes under the declared endpoint policy.
+where $E_0=F_{uv}|_{S_0}$ and $b^0_{AB}=F_{AB}|_{S_0}$ are shared corner integration data. The nonzero source-free fields $F=E_c\,du\wedge dv$ and $F=B_c\,\operatorname{vol}_S$ both have $r=p=0$. The electric example already proves incompleteness within a fixed magnetic Chern sector whenever electric flux has not also been fixed. On $S^2$, the constant magnetic example is primarily a cross-Chern-sector/topological check; it is not a tangent variation inside one fixed Chern sector. Proper gauge transformations are exactly the gauge directions whose cut charge variation vanishes under the declared endpoint policy.
 
 In the original general product formalism, the proved statement is only that $\mathcal X_F$ parameterizes the sheet data satisfying the Maxwell/Bianchi transport constraints. A bijection with bulk Maxwell solutions requires a Goursat existence-and-uniqueness theorem with the displayed regularity, bundle, corner and endpoint hypotheses. That general step remains conditional. In the declared $\mathbb R^{1,1}\times S^2_R$, fixed-sector, $\ell\geq1$ benchmark, calculations 06--07 supply the missing theorem explicitly in matched per-mode $H^1$ spaces and on the smooth weighted harmonic core.
 
@@ -65,11 +73,11 @@ conditional on bulk Goursat reconstruction and regular reduction. Before that an
 ## Scope
 
 - original formal layer: fixed product double-null metric with $q_{AB}$ independent of $(u,v)$ and a local contractible cut;
-- closed benchmark: $\mathbb R^{1,1}\times S^2_R$ in one fixed $U(1)$ bundle/Chern sector;
+- proved radiative benchmark: $\mathbb R^{1,1}\times S^2_R$, with the main global Fock theorem in $Q_E=n=0$;
 - smooth data on finite null segments;
 - matched $H^1$ master profiles for the explicit finite-rectangle Goursat theorem;
 - no gauge fixing in the action/CPS derivation; Lorenz or generator gauge is used only as an optional reconstruction proof device;
-- fixed $\ell=0$ electric flux for the radiative Fock theorem; the optional extended frame--flux representation is separate;
+- zero $\ell=0$ electric flux and zero Chern class for the main radiative Fock theorem; nonzero fixed backgrounds require separate fluctuation/background-subtraction language;
 - B1 Weyl/Peierls first, then a global stationary B2 quasifree state pulled back to characteristic data;
 - gravity appears only as a comparison.
 
@@ -117,6 +125,9 @@ $$
 - `calculations/09-canonical-and-fock-quantization.md`: Weyl algebra, stationary $J_X$, Fock space, Hamiltonian and correlators.
 - `calculations/10-peierls-and-propagator-check.md`: causal kernel and gauge-invariant Maxwell Peierls equality.
 - `calculations/11-modewise-composition.md`: radiative weak-symplectic composition and associativity.
+- `calculations/12-global-characteristic-completion.md`: global finite-energy space, massive half-cross tails, null-infinity flux lemma and Theorem II.
+- `calculations/13-characteristic-complex-structure.md`: intrinsic profile space, boxed two-sheet transform, Plancherel norms and explicit $J_X$ kernel.
+- `calculations/14-three-cell-symplectic-composition-check.md`: nontrivial three-cell reconstruction/matrix check and Weyl-algebra corollary.
 - `zero-modes-and-superselection.md`: electric flux, magnetic Chern class and optional frame representation.
 - `literature/literature-comparison.md`: novelty and source map.
 - `verification/CLAIM_LEDGER.md`: `proved / checked symbolically / conditional / conjectural / false` ledger.
@@ -124,14 +135,15 @@ $$
 
 ## Current Phase
 
-The first-paper benchmark chain is closed for the radiative $\ell\geq1$ sectors of $\mathbb R^{1,1}\times S^2_R$. The finite-rectangle Goursat inverse is proved in a matched $H^1$ graph space, stationary mode completeness is proved on the no-null-infinity-flux energy image, and the characteristic inverse equals the Peierls bracket on compact gauge-invariant smearings.
+The theorem chain is proved for the radiative $\ell\geq1$ sectors of $\mathbb R^{1,1}\times S^2_R$ under the displayed function spaces. The finite-rectangle Goursat inverse is proved in a matched $H^1$ graph space; the global range is characterized intrinsically by the fixed points of an explicit profile projector; half-cross completion is proved in the energy norm; and the characteristic inverse equals the Peierls bracket on compact gauge-invariant smearings. The three-cell regression now checks two actual reconstruction parenthesizations and nonzero internal-edge orientation cancellation rather than ordinary addition associativity.
 
 The exact remaining boundaries are:
 
 - a uniform same-order Sobolev theorem for the full angular tower without derivative weights;
 - a finite cross has only stationary overlap kernels, not unique global coefficients or a vacuum without outer-extension/global-state input;
+- the one-particle completion is larger than the classical energy profile space and may have only distributional corner traces;
 - arbitrary curved double-null backgrounds, caustics and non-product cuts;
-- large-gauge periodicity of the optional $\ell=0$ relative frame and sums over Chern sectors;
+- large-gauge periodicity of the optional $\ell=0$ relative frame, background-energy subtraction for nonzero $(Q_E,n)$, and sums over Chern sectors;
 - nonlinear/non-Abelian or gravitational symplectic composition.
 
 None of these boundaries reopens the proved product-background radiative theorem, and none permits integrated sheet transport alone to be advertised as generic bulk surjectivity.
@@ -148,3 +160,14 @@ $$
 $$
 
 A null surface used only to measure symplectic flux may be described by its flux-carrying variables. A null cross used as characteristic input for bulk reconstruction must retain the corner/Coulomb data and compatibility conditions. On the benchmark, the $\ell\geq1$ corner coefficients are values of the same master solutions and are not extra oscillators; the $\ell=0$ electric flux and magnetic Chern integer are separate sectors. No claim is made for unrestricted completed null data, caustics, non-Abelian reduction, gravity dynamics, sharp sheetwise Hilbert-space factorization, a continuum partial trace, or recovery of B2 cross covariance from regional states.
+
+## Manuscript-Ready Minimal Outline
+
+1. **Action, conventions and sector:** unfixed Maxwell action on $\mathbb R^{1,1}\times S^2_R$; proper versus charged gauge; main quantum sector $Q_E=n=0$.
+2. **Characteristic constraint/corner dictionary:** $(r,p;E_0,b^0)$, potential lift, endpoint bookkeeping and the precise role of the relative frame.
+3. **Action-derived master reduction:** exact/coexact harmonics and the two massive masters for every $\ell\geq1$.
+4. **Theorem I:** matched-$H^1$ local Goursat reconstruction on $D_{U,V}$, explicitly interpreted as a local chart rather than a regional subsystem.
+5. **Theorem II:** global finite-energy half-cross restriction, massive flux-tail lemma and intrinsic profile-space characterization.
+6. **Characteristic quantization:** boxed $a_k[f,g]$, inverse/Plancherel theorem, explicit $J_X$, Weyl algebra, zero-sector Fock representation and Hamiltonian/Wightman functions.
+7. **Peierls and composition:** gauge-invariant field-strength Peierls equality, weak-symplectic three-cell associativity and the B1 Weyl-composition corollary.
+8. **Boundaries and novelty:** nonzero background sectors, conditional general Maxwell reconstruction, early null/light-front prior art and the integrated-chain novelty claim.

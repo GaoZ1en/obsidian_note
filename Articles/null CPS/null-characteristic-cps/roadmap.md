@@ -25,6 +25,9 @@ This phase does not include bulk Goursat surjectivity or uniqueness.
 - [x] Prove weak nondegeneracy after the proper gauge quotient.
 - [x] Construct finite Goursat coordinates and complete global stationary modes.
 - [x] Normalize the modes on the complete two-sheet cross and prove the principal-value cancellations.
+- [x] Split the local finite-rectangle theorem from the global half-cross representation theorem.
+- [x] Prove massive half-cross symplectic-tail and exterior Cauchy-flux vanishing in the finite-energy norm.
+- [x] Characterize the global profile range intrinsically by the explicit analysis--synthesis projector and prove the exact profile Plancherel norms.
 
 ## Phase III — Algebraic, Fock and Peierls Closure
 
@@ -34,17 +37,27 @@ This phase does not include bulk Goursat surjectivity or uniqueness.
 - [x] Compute the stationary Wightman and Pauli--Jordan kernels.
 - [x] Prove equality of the characteristic inverse and Peierls bracket on compact gauge-invariant smearings.
 - [x] Prove modewise weak-symplectic composition and associativity.
+- [x] Replace the tautological addition test by explicit three-cell parenthesized reconstruction, orientation and symplectic-matrix regressions.
+- [x] Add the B1 Weyl-algebra composition corollary without tensor-product or Fock-implementability claims.
+- [x] Restrict the main global Fock theorem to $Q_E=n=0$ and move nonzero sectors to background/fluctuation language.
 
-## Phase IV — Manuscript and Generalization
+## Phase IV — Manuscript Hardening
 
 - [ ] Convert the benchmark chain into a theorem-led first-paper draft.
-- [ ] Harden the infinite-endpoint completion with a precise massive scattering/function-space citation.
-- [ ] Complete the pre-1990 null-Maxwell novelty audit.
+- [x] Harden the infinite-endpoint completion with a self-contained norm proof and precise massive characteristic/null-infinity citations.
+- [x] Add early lightlike-slab, spin-one and gauge-field references and narrow the novelty claim to the integrated chain.
+- [ ] Complete a bibliography-quality reference chase through all pre-1990 predecessors cited by Wódkiewicz, Yan and Casher.
 - [ ] Decide whether the optional extended $\ell=0$ frame representation belongs in an appendix or a follow-up.
-- [ ] Yang--Mills: replace $d$ by $D_A$, keep flux matching on a coadjoint orbit, and test the non-Abelian corner group law.
-- [ ] Curved fixed background: allow $q_{AB}(u,v,x)$, expansion and null lapse, then rederive all transport weights.
-- [ ] Gravity: use the Maxwell result only as a structural comparator for relative boost--area data.
+
+## Explicitly Parked Beyond This Round
+
+- curved spherically symmetric Maxwell, Schwarzschild/Kruskal and non-product cuts;
+- BRST and B2 regional state reconstruction;
+- Yang--Mills/non-Abelian reduction;
+- gravity and gravitational composition.
+
+These are not active roadmap items for the first benchmark paper.
 
 ## Stopping Rule for a First Paper
 
-The stopping rule has been met for the declared product benchmark: Phase II closes for $S^2_R$, and the Peierls check is complete on compact master/field-strength smearings. The next main action is manuscript distillation, not adding Yang--Mills, gravity or regional-factorization claims.
+The stopping rule has been met for the declared zero-sector product benchmark: Phase II closes for $S^2_R$, the half-cross and intrinsic profile theorems are explicit, and the Peierls/composition checks are complete in their stated domains. The next main action is manuscript distillation and bibliography polishing, not adding curved backgrounds, BRST, Yang--Mills, gravity or regional-factorization claims.
