@@ -24,8 +24,9 @@ autonomous finite-region gauge phase space. **Theorem II** is the injective
 symplectic restriction of the global finite-energy master/field-strength
 solution space to the complete half-cross. Its target has a graph-closed
 analysis--synthesis fixed-point characterization, an explicit two-sheet
-coefficient $a_k[f,g]$, exact one-particle/energy norms, and an explicit
-nonlocal $J_X$ kernel.
+coefficient $a_k[f,g]$, exact core one-particle/energy norms, an explicit
+nonlocal classical-energy $J_{X,E}$ kernel, and an abstract bounded
+one-particle extension $J_{X,1}$ transported from $L^2(dk)$.
 
 The half-cross endpoint step is proved: the mass gap gives $H^1$ null traces, vanishing symplectic tails, rapid Schwartz-core decay at null infinity, and a density extension to the full energy space. The resulting CCR/Fock, Hamiltonian, Wightman, Peierls, radiative weak-symplectic composition and Weyl-algebra composition statements are explicit.
 
@@ -150,11 +151,11 @@ $$
 - `calculations/06-s2-harmonic-master-reduction.md`: action-derived exact/coexact reduction and the two radiative masters.
 - `calculations/07-characteristic-mode-reconstruction.md`: Bessel Goursat theorem, data dictionary and local/global modes.
 - `calculations/08-symplectic-mode-normalization.md`: weak nondegeneracy, complete-cross normalization and symplectic transform.
-- `calculations/09-canonical-and-fock-quantization.md`: Weyl algebra, stationary $J_X$, Fock space, Hamiltonian and correlators.
+- `calculations/09-canonical-and-fock-quantization.md`: Weyl algebra, classical-energy $J_{X,E}$, abstract one-particle $J_{X,1}$, Fock space, Hamiltonian and correlators.
 - `calculations/10-peierls-and-propagator-check.md`: causal kernel and gauge-invariant Maxwell Peierls equality.
 - `calculations/11-modewise-composition.md`: weak-symplectic associativity of sequential radiative master-cell composition.
 - `calculations/12-global-characteristic-completion.md`: global finite-energy space, massive half-cross tails, null-infinity flux lemma and Theorem II.
-- `calculations/13-characteristic-complex-structure.md`: intrinsic profile space, boxed two-sheet transform, Plancherel norms and explicit $J_X$ kernel.
+- `calculations/13-characteristic-complex-structure.md`: intrinsic energy profile space, boxed two-sheet transform, Plancherel norms, explicit $J_{X,E}$ kernel and abstract $J_{X,1}$ completion.
 - `calculations/14-three-cell-symplectic-composition-check.md`: genuine trace-fed three-cell reconstruction and rectangular pullback regression.
 - `calculations/15-closed-characteristic-transform.md`: closed $T_\mu$ graph domain, graph projector, energy fixed-point space and one-particle extension boundary.
 - `calculations/16-global-gauge-policy.md`: gauge-invariant main theorem and fixed-asymptotic-frame potential-quotient corollary.
@@ -179,7 +180,7 @@ The exact remaining boundaries are:
 
 - a uniform same-order Sobolev theorem for the full angular tower without derivative weights;
 - a finite cross has only stationary overlap kernels, not unique global coefficients or a vacuum without outer-extension/global-state input;
-- the one-particle completion is larger than the classical energy profile space and may have only distributional corner traces;
+- the one-particle Hilbert space is the abstract completion transported from $L^2(dk)$; generic vectors need not have ordinary distribution-valued individual sheet profiles, and pointwise corner traces belong only to the classical energy/smooth domain;
 - an energy-completed potential quotient before a potential Sobolev topology is selected; the smooth fixed-frame quotient is proved;
 - arbitrary curved double-null backgrounds, caustics and non-product cuts;
 - large-gauge periodicity of the optional $\ell=0$ relative frame, background-energy subtraction for nonzero $(Q_E,n)$, and sums over Chern sectors;
@@ -207,6 +208,6 @@ A null surface used only to measure symplectic flux may be described by its flux
 3. **Action-derived master reduction:** exact/coexact harmonics and the two massive masters for every $\ell\geq1$.
 4. **Theorem I:** matched-$H^1$ local Goursat reconstruction on $D_{U,V}$, explicitly interpreted as coordinates on the local solution germ/restriction space rather than a regional subsystem or global solution space.
 5. **Theorem II:** global finite-energy half-cross restriction, massive flux-tail lemma and intrinsic profile-space characterization.
-6. **Characteristic quantization:** boxed $a_k[f,g]$, closed-domain inverse/Plancherel theorem, explicit $J_X$, Weyl algebra, radiative Fock representation in the zero-flux/zero-Chern sector, and Hamiltonian/Wightman functions.
+6. **Characteristic quantization:** boxed $a_k[f,g]$, closed-domain inverse/Plancherel theorem, explicit classical-energy $J_{X,E}$, abstract transported one-particle $J_{X,1}$, Weyl algebra, radiative Fock representation in the zero-flux/zero-Chern sector, and Hamiltonian/Wightman functions.
 7. **Peierls and composition:** gauge-invariant field-strength Peierls equality, weak-symplectic associativity of sequential radiative master-cell composition, and the B1 Weyl-composition corollary.
 8. **Boundaries and novelty:** nonzero background sectors, conditional general Maxwell reconstruction, early null/light-front prior art and the integrated-chain novelty claim.

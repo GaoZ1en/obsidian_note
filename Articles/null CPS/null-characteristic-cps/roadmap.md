@@ -29,7 +29,7 @@ This phase does not include bulk Goursat surjectivity or uniqueness.
 - [x] Prove massive half-cross symplectic-tail and exterior Cauchy-flux vanishing in the finite-energy norm.
 - [x] Characterize the global profile range intrinsically by the explicit analysis--synthesis projector and prove the exact profile Plancherel norms.
 - [x] Close the two-sheet analysis operator on its graph domain; prove bounded energy synthesis, graph-bounded idempotence and a graph-closed fixed-point space.
-- [x] Separate the classical energy-domain complex structure from its bounded one-particle completion, where profiles may be distributions.
+- [x] Separate the literal classical energy-domain complex structure from the abstract bounded one-particle completion transported from $L^2(dk)$; generic completed vectors need not have ordinary distribution-valued individual sheet profiles or pointwise corner traces.
 - [x] Prove derivative-pair incompleteness inside a fixed $\ell\geq1$, $Q_E=n=0$ local master sector using the shared-corner Bessel solution.
 - [x] State the global theorem on gauge-invariant master/field-strength solutions and isolate the fixed-frame potential quotient as a policy-dependent corollary.
 

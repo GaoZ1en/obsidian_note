@@ -18,11 +18,11 @@
   Result: massive null-trace Plancherel bounds put both profiles in $H^1(\mathbb R_+)$, symplectic tails vanish, Schwartz packets decay rapidly at null infinity, and energy density extends the result to all finite-energy solutions.
   Check: exact null-frequency/Jacobian weights plus the analytic tail/density proof in calculation 12.
 - [x] Action: characterize $\operatorname{Ran}R_X$ intrinsically.
-  Result: the range is the graph-closed fixed-point space of the closed analysis operator and graph-bounded idempotent $P_X=S_XT_X$, with boxed two-sheet $a_k[f,g]$, inverse, exact one-particle/energy norms and an explicit nonlocal $J_X$ kernel.
+  Result: the range is the graph-closed fixed-point space of the closed analysis operator and graph-bounded idempotent $P_X=S_XT_X$, with boxed two-sheet $a_k[f,g]$, inverse, exact core one-particle/energy norms and an explicit nonlocal classical-energy $J_{X,E}$ kernel.
   Check: calculation 15 proves density, closability, bounded synthesis, $T_\mu S_\mu=1$ and graph closedness; principal-value cancellations, delta Jacobians and kernel coefficients pass in Wolfram 14.3.
 - [x] Action: separate classical energy profiles from the one-particle completion.
-  Result: $J_{X,E}=S_\mu(-i)T_\mu$ acts on the graph-closed classical energy fixed-point space, while the one-particle completion is transported from $L^2(dk)$ and may have distributional profiles without a pointwise corner trace.
-  Check: the kernel acts first on the Schwartz core; its integration-by-parts corner term is displayed explicitly.
+  Result: $J_{X,E}=S_\mu(-i)T_\mu$ is a literal operator on the graph-closed classical energy fixed-point space, while $J_{X,1}=U_{\mu,1}(-i)U_{\mu,1}^{-1}$ is bounded on the abstract completion transported from $L^2(dk)$. Generic one-particle vectors need not have ordinary distribution-valued individual sheet profiles, and the pointwise corner condition belongs only to the smooth/classical energy domain.
+  Check: the kernel acts first on the Schwartz/classical energy core and extends only in the one-particle norm; the $a(k)=\mathbf 1_{\{k<-e\}}/(\sqrt{|k|}\log|k|)$ counterexample gives the divergent sheet pairing $\int_e^\infty dx/(x\log x)$.
 - [x] Action: fix the global gauge policy.
   Result: the main theorem is on gauge-invariant master/field-strength solutions; the potential-quotient statement is only a fixed-asymptotic-frame corollary with explicit falloff and proper-gauge parameters.
   Check: calculation 16; finite-cut proper/charged bookkeeping is not imported into the boundaryless Fock theorem.
@@ -30,7 +30,7 @@
   Result: $\Phi=cJ_0(\sqrt{2\lambda_\ell uv})$ gives $r=p=0$ but a nonzero shared corner value for every fixed $\ell\geq1$, entirely within $Q_E=n=0$ on a finite patch.
   Check: calculation 07, equations (5.4)--(5.7); the mode is not mislabeled as a normalizable global half-cross vector.
 - [x] Action: complete Weyl/CCR, stationary Fock, Hamiltonian and correlator layers.
-  Result: global $J$ pulls back nonlocally to $J_X$; $[a_I,a_J^\dagger]=\delta(I,J)$ and $H_{\partial_t}$ generates the CPS time translation.
+  Result: global $J$ pulls back nonlocally to the literal classical-energy $J_{X,E}$ and the abstract transported one-particle $J_{X,1}$; $[a_I,a_J^\dagger]=\delta(I,J)$ and $H_{\partial_t}$ generates the CPS time translation.
   Check: anomalous Hamiltonian coefficients vanish on shell.
 - [x] Action: perform the Peierls comparison on gauge-invariant smearings.
   Result: the characteristic inverse, master causal propagator and projected Maxwell field-strength Peierls bracket agree.

@@ -70,10 +70,13 @@ $$
 
 is positive on real nonzero radiative solutions.
 
-Let \(T_X\) and \(S_X\) be the direct sums of the explicit two-sheet analysis and synthesis maps (2.1), (3.1)--(3.2) of `13-characteristic-complex-structure.md`. The characteristic complex structure is
+Let \(T_X\) and \(S_X\) be the direct sums of the explicit two-sheet analysis
+and synthesis maps (2.1), (3.1)--(3.2) of
+`13-characteristic-complex-structure.md`.  On the classical energy profile
+space the characteristic complex structure is the literal operator
 
 $$
-\boxed{J_X=S_X(-i)T_X=R_XJR_X^{-1}.}
+\boxed{J_{X,E}=S_X(-i)T_X=R_XJR_X^{-1}.}
 \tag{3.3}
 $$
 
@@ -86,7 +89,7 @@ $$
 then its mode action is
 
 $$
-(J_X\Phi)|_X
+(J_{X,E}\Phi)|_X
 =\sum_{P,\ell,m}\int dk\left[
 -ia_I(U_I|_X)+ia_I^*(U_I^*|_X)
 \right].
@@ -96,7 +99,7 @@ $$
 The explicit profile action is
 
 $$
-T_X(J_X\Phi)=-iT_X\Phi,
+T_X(J_{X,E}\Phi)=-iT_X\Phi,
 \tag{3.5}
 $$
 
@@ -104,7 +107,7 @@ and, sector by sector,
 
 $$
 \begin{aligned}
-(J_Xh)_r(s)
+(J_{X,E}h)_r(s)
 =\sum_{q=\pm}\int_0^\infty dy\int_{\mathbb R}
 \frac{dk}{2\pi\omega_k}\big[&
 \gamma_q\sin(\gamma_qy-\gamma_rs)h_q(y)\\
@@ -114,7 +117,29 @@ $$
 \tag{3.6}
 $$
 
-Here \(h_- = f\), \(h_+=g\), \(\gamma_-=\alpha\), and \(\gamma_+=\beta\). The oscillatory kernel and its endpoint interpretation are derived in calculation 13. In particular, the off-diagonal \(q\neq r\) terms mix the two sheets; (3.3) is no longer only an abstract conjugation notation.
+Here \(h_- = f\), \(h_+=g\), \(\gamma_-=\alpha\), and \(\gamma_+=\beta\).
+The oscillatory kernel and its endpoint interpretation are derived on the
+Schwartz/classical energy core in calculation 13.  In particular, the
+off-diagonal \(q\neq r\) terms mix the two sheets; (3.3) is a literal
+profile-space formula on that domain.
+
+The quantum one-particle space is instead the abstract completion transported
+from \(L^2(dk)\).  If \(U_{X,1}\) denotes the completed core synthesis
+isometry, then
+
+$$
+\boxed{J_{X,1}=U_{X,1}(-i)U_{X,1}^{-1}.}
+\tag{3.7}
+$$
+
+Formula (3.6) determines this bounded operator by one-particle-norm
+continuity; it is not interpreted as an ordinary distributional
+sheet-by-sheet kernel action on every one-particle vector.  Generic vectors
+need not possess ordinary distribution-valued individual sheet profiles, and
+the corner condition \(f(0)=g(0)\) belongs only to the smooth/classical energy
+domain.  Tangential derivative and gauge-invariant radiative/field-strength
+profiles have improved low-null-frequency behavior, consistently with the
+observable choice in this quantization; no additional Sobolev claim is made.
 
 ## 4. Creation and Annihilation Operators
 
@@ -179,6 +204,9 @@ $$
 $$
 
 This direct sum is over angular momentum and polarization, not over the two null sheets. Both sheets are already present in each normalized mode.
+Equation (5.1) is the spectral realization of the one-particle space; it does
+not assert that every vector has two ordinary distribution-valued sheet
+profiles.
 
 ## 6. Hamiltonian and CPS Generator Check
 

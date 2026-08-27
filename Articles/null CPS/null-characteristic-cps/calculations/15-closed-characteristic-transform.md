@@ -239,34 +239,57 @@ Multiplication by \(-i\) preserves \(Y_E\), so \(J_{X,E}\) preserves
 \(X_{E,\mu}\), obeys \(J_{X,E}^2=-1\), and is bounded in the energy and graph
 norms.
 
-The one-particle completion is different:
+The one-particle completion is different.  Let
 
 $$
 Y_1:=L^2(\mathbb R,dk),
 \qquad
-X_{1,\mu}:=\text{the completion transported from }Y_1
-\text{ by the synthesis distributions}.
+X_{1,\mu}:=\text{the abstract completion transported from }Y_1
+\text{ by completing the core synthesis map}.
 \tag{6.2}
 $$
 
-Its norm is \(\|h\|_{1,X}=\|a\|_{L^2(dk)}\), and
+Write \(U_{\mu,1}:Y_1\to X_{1,\mu}\) for the resulting unitary
+identification.  Its norm is \(\|U_{\mu,1}a\|_{1,X}=\|a\|_{L^2(dk)}\), and
 
 $$
-\boxed{J_{X,1}=S_\mu(-i)S_\mu^{-1}}
+\boxed{J_{X,1}=U_{\mu,1}(-i)U_{\mu,1}^{-1}}
 \tag{6.3}
 $$
 
 is bounded.  A general element of \(X_{1,\mu}\) need not lie in
-\(H_{\mathrm{match}}\); its profiles and corner trace can be distributional.
-The pointwise condition \(f(0)=g(0)\) is not imposed on the full one-particle
-completion.
+\(H_{\mathrm{match}}\), and need not admit individual sheet representatives
+as ordinary distributions.  Consequently the pointwise condition
+\(f(0)=g(0)\) belongs only to the smooth/classical energy profile domain and
+is not imposed on the full one-particle completion.
+
+Indeed, the coefficient
+
+$$
+a(k)=\frac{\mathbf 1_{\{k<-e\}}}{\sqrt{|k|}\log|k|}
+\tag{6.4}
+$$
+
+lies in \(L^2(dk)\).  Setting \(k=-x\) and using
+\(\alpha_{-x}\sim\mu^2/(2\sqrt2x)\) and
+\(N_{-x}\sim(4\pi x)^{-1/2}\), the full real first-sheet synthesis paired
+with a real test function satisfying \(\widehat\varphi(0)\ne0\) has a tail
+proportional to \(\int_e^\infty dx/(x\log x)\), which diverges.  This rules out a general
+ordinary-distribution realization of the individual sheet profiles.  An
+extra sheetwise \(\alpha_k\) or \(\beta_k\) factor in tangential derivatives
+and radiative/field-strength profiles improves the offending
+low-null-frequency tail; this observation is compatible with the
+gauge-invariant quantum observables used here but is not promoted to a new
+Sobolev theorem.
 
 ## 7. Kernel and Corner-Term Convention
 
 The explicit kernel (6.3) of calculation 13 first acts on
-\(\mathscr C_{\mathrm{match}}\).  Its \(k\)-integral is an oscillatory
-distribution and extends to \(X_{1,\mu}\) only in the one-particle norm.  The
-derivative stays on the profile in the primary formula.
+\(\mathscr C_{\mathrm{match}}\), and more generally on its classical energy
+domain.  It determines \(J_{X,1}\) only by completion in the one-particle
+norm.  It is not an ordinary distributional sheet-by-sheet kernel action on
+an arbitrary vector of \(X_{1,\mu}\).  The derivative stays on the profile in
+the primary formula.
 
 If it is integrated by parts on the decaying core, then
 
@@ -287,11 +310,14 @@ element of \(X_{1,\mu}\).
 **Proved:** dense closability, the closed energy-domain analysis operator,
 bounded energy synthesis, \(T_\mu S_\mu=1\), graph-bounded idempotence,
 graph-closed fixed-point space, and the isometric/symplectic restriction
-isomorphism.
+isomorphism; the literal classical operator
+\(J_{X,E}=S_\mu(-i)T_\mu\); and the abstract bounded one-particle operator
+\(J_{X,1}=U_{\mu,1}(-i)U_{\mu,1}^{-1}\).
 
 **Checked symbolically:** the Jacobians, principal-value cancellations, delta
 normalization, and kernel coefficients used by the proof.
 
 **Not claimed:** equality with a maximal distributional domain, ambient
-\(H^1\)-boundedness of \(P_\mu\), pointwise corner traces in the full
-one-particle completion, or any massless/curved-background extension.
+\(H^1\)-boundedness of \(P_\mu\), ordinary distribution-valued individual
+sheet representatives or pointwise corner traces in the full one-particle
+completion, or any massless/curved-background extension.

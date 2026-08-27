@@ -163,9 +163,11 @@ the graph-closed fixed-point space
 \(\ker_{\mathcal D_E(T_\ell)}(1-S_\ell T_\ell)\) of the closed two-sheet
 analysis operator, with
 $\int\omega_{k\ell}|a_{k\ell}[f,g]|^2dk<\infty$.  The two-sheet formula,
-closed domain, inverse, exact one-particle/energy norms, and explicit nonlocal
-$J_X$ kernel are in calculations 12--15.  The one-particle completion is
-stated separately and need not have pointwise corner traces.
+closed domain, inverse, exact core one-particle/energy norms, and explicit
+classical-energy $J_{X,E}$ kernel are in calculations 12--15.  The abstract
+one-particle completion and its bounded transported $J_{X,1}$ are stated
+separately: generic completed vectors need not have ordinary
+distribution-valued individual sheet profiles or pointwise corner traces.
 
 The analytic bridge is the massive half-cross lemma: the null trace estimate
 puts both profiles and tangential derivatives in $L^2(\mathbb R_+)$, their

@@ -212,39 +212,84 @@ $$
 \tag{5.2}
 $$
 
-If \(J_X\) is defined below, then
+On the classical energy profile space, with \(J_{X,E}\) defined below,
 
 $$
-\frac12\Omega_X(h,J_Xh)=\|h\|_{1,X}^2.
+\frac12\Omega_X(h,J_{X,E}h)=\|h\|_{1,X}^2.
 \tag{5.3}
 $$
 
 Equations (5.1)--(5.2) are exact isometries with the global stationary
 one-particle norm and the conserved global energy of
 `12-global-characteristic-completion.md`; they are not merely equivalent
-norms.  The one-particle completion only requires \(a\in L^2(dk)\) and can
-contain distributional profiles without a pointwise corner trace.  The
-classical finite-energy theorem uses the stronger
-\(a\in L^2(\omega dk)\), for which the \(H^1\) half-ray traces and common
-corner value are well defined.
+norms.  Here (5.1) is first defined on the Schwartz/classical energy core and
+then completed in the norm transported from \(L^2(dk)\).  This transported
+one-particle Hilbert space is an abstract completion: a generic vector need
+not admit its two individual sheet representatives even as ordinary
+distributions.  In particular, a pointwise condition such as \(f(0)=g(0)\)
+is not a statement on the full one-particle completion.  The classical
+finite-energy theorem instead uses \(a\in L^2(\omega dk)\), for which both
+half-ray profiles lie in \(H^1(\mathbb R_+)\) and have a well-defined common
+corner trace.
 
-## 6. Explicit Characteristic Complex Structure
+### Remark 5.1 — why ordinary sheet distributions need not exist
+
+For a concrete warning, take
+
+$$
+a(k)=\frac{\mathbf 1_{\{k<-e\}}}{\sqrt{|k|}\log|k|}.
+\tag{5.4}
+$$
+
+Then \(a\in L^2(dk)\), since
+\(\int_e^\infty dx/(x\log^2x)<\infty\).  On the first sheet, as
+\(k=-x\to-\infty\),
+
+$$
+\alpha_k\sim\frac{\mu^2}{2\sqrt2\,x},
+\qquad
+N_k\sim(4\pi x)^{-1/2}.
+\tag{5.5}
+$$
+
+For real \(a\) and a real half-ray test function \(\varphi\) with
+\(\widehat\varphi(0)\ne0\), pairing the full real synthesis (3.1) gives twice
+the real part of the positive-frequency pairing and therefore has the tail
+
+$$
+2\operatorname{Re}\int_e^\infty
+dx\,N_{-x}a(-x)\widehat\varphi(\alpha_{-x})
+\sim C\widehat\varphi(0)\int_e^\infty\frac{dx}{x\log x},
+\tag{5.6}
+$$
+
+which diverges.  Thus \(L^2(dk)\) synthesis cannot in general be interpreted
+sheet by sheet as an ordinary distribution.  By contrast,
+tangential derivatives and the gauge-invariant radiative/field-strength
+profiles carry an additional \(\alpha_k\) or \(\beta_k\) on the sheet where
+the corresponding null frequency tends to zero.  This improves precisely
+the bad low-null-frequency tail and is consistent with using \(p_A,r_A\) or
+field-strength observables in the quantum theory.  No new one-particle
+Sobolev theorem is asserted here.
+
+## 6. Classical Explicit and One-Particle Abstract Complex Structures
 
 On the classical energy fixed-point space, the stationary complex structure
-is multiplication by \(-i\) on \(a(k)\):
+is the literal profile-space operator obtained from multiplication by \(-i\)
+on \(a(k)\):
 
 $$
 \boxed{
-T_\mu(J_Xh)(k)=-i\,T_\mu h(k),
+T_\mu(J_{X,E}h)(k)=-i\,T_\mu h(k),
 \qquad
-J_X=S_\mu(-i)T_\mu.}
+J_{X,E}=S_\mu(-i)T_\mu.}
 \tag{6.1}
 $$
 
 Thus
 
 $$
-(J_Xh)_r(s)
+(J_{X,E}h)_r(s)
 =\int_{\mathbb R}dk\,N_k
 \left[-ia(k)e^{-i\gamma_r(k)s}
 +i\overline{a(k)}e^{i\gamma_r(k)s}\right],
@@ -257,7 +302,7 @@ Substituting (2.1) gives the explicit profile-space kernel
 $$
 \boxed{
 \begin{aligned}
-(J_Xh)_r(s)
+(J_{X,E}h)_r(s)
 =\sum_{q=\pm}\int_0^\infty dy\int_{\mathbb R}
 \frac{dk}{2\pi\omega_k}\big[&
 \gamma_q(k)\sin\!\big(\gamma_q(k)y-\gamma_r(k)s\big)h_q(y)\\
@@ -267,36 +312,51 @@ $$
 \tag{6.3}
 $$
 
-The \(k\)-integral is an oscillatory distribution on the Schwartz core and is
-extended by (5.1) to the one-particle completion.  Formula (6.3) deliberately
-leaves the derivative on the profile.  If it is integrated by parts on the
-decaying core, the retained boundary term is
+The \(k\)-integral is an oscillatory kernel acting first on the Schwartz or
+classical energy core.  Formula (6.3) deliberately leaves the derivative on
+the profile.  If it is integrated by parts on the decaying core, the retained boundary term is
 \(-\cos(\gamma_r(k)s)h_q(0)\) for each sheet \(q\), as displayed explicitly in
 equation (7.1) of calculation 15.  The off-diagonal terms \(q\neq r\) are nonzero and show
-explicitly that \(J_X\) mixes the two sheets.  From (4.1),
+explicitly that \(J_{X,E}\) mixes the two sheets.  From (4.1),
 
 $$
-J_X^2=-1,
+J_{X,E}^2=-1,
 \qquad
-\Omega_X(J_Xh_1,J_Xh_2)=\Omega_X(h_1,h_2),
+\Omega_X(J_{X,E}h_1,J_{X,E}h_2)=\Omega_X(h_1,h_2),
 \qquad
-\Omega_X(h,J_Xh)>0
+\Omega_X(h,J_{X,E}h)>0
 $$
 
-for nonzero real one-particle data.
+for nonzero real classical energy data.
+
+Let \(U_{\mu,1}:L^2(dk)\to X_{1,\mu}\) denote the unitary identification
+defined by completing the core synthesis map in the one-particle norm.  The
+one-particle complex structure is the abstract bounded operator
+
+$$
+\boxed{J_{X,1}:=U_{\mu,1}(-i)U_{\mu,1}^{-1}.}
+\tag{6.4}
+$$
+
+Equation (6.3) determines (6.4) by one-particle-norm continuity from the core;
+it is not asserted to act pointwise, or distributionally sheet by sheet, on
+an arbitrary element of \(X_{1,\mu}\).
 
 ## 7. Consequences for Completeness, CCR and Wightman Functions
 
 For the full Maxwell radiative tower, take the orthogonal direct sum of
-\(T_{\sqrt{\lambda_\ell}}\), \(S_{\sqrt{\lambda_\ell}}\), and \(J_X\) over
+\(T_{\sqrt{\lambda_\ell}}\), \(S_{\sqrt{\lambda_\ell}}\), and the appropriate
+\(J_{X,E}\) or \(J_{X,1}\) over
 \((P,\ell,m)\).  Proposition 4.1 then gives, without circular image language:
 
-1. the restricted stationary modes form a complete generalized basis of the
-   one-particle completion of (3.4);
+1. the restricted stationary modes define the spectral core whose abstract
+   one-particle-norm completion is unitarily identified with the direct sum
+   of the stationary \(L^2(dk)\) coefficient spaces;
 2. \(\Omega_X(U_I,U_J^*)=-i\delta(I,J)\) gives
    \([a_I,a_J^\dagger]=\delta(I,J)\);
 3. the quasifree two-point function is the pullback of the global stationary
-   kernel because \(J_X\) is (6.1), not because a finite cross chose a vacuum;
+   kernel because the complex structure is transported from stationary
+   multiplication by \(-i\), not because a finite cross chose a vacuum;
 4. both sheet profiles are restrictions of one oscillator coefficient, so no
    sheetwise Hilbert tensor factorization is introduced.
 
@@ -309,7 +369,8 @@ energy is subtracted and the sector is named separately.
 **Proved analytically:** the closable two-sheet transform and its closed
 energy-domain realization, bounded synthesis, graph projector/fixed-point
 characterization, Plancherel form, exact one-particle and energy isometries,
-and the profile kernel for \(J_X\).  The closed-domain proof is calculation
+the classical profile kernel for \(J_{X,E}\), and its abstract bounded
+one-particle extension.  The closed-domain proof is calculation
 15.
 
 **Checked symbolically:** the mass-shell Jacobians, both principal-value
@@ -318,5 +379,7 @@ substitution leading to (6.3).
 
 **Not claimed:** that an arbitrary matched pair of half-ray profiles belongs
 to (3.4), that \(P_\mu\) is bounded on ambient \(H^1\oplus H^1\), that a
-finite rectangle determines (2.1), that one-particle distributions have
-pointwise corner traces, or that \(J_X\) is local on either sheet.
+finite rectangle determines (2.1), that generic one-particle vectors have
+ordinary distribution-valued individual sheet representatives or corner
+traces, or that \(J_{X,E}\) is local on either sheet.  Formula (6.3) is not an
+unconditional sheetwise kernel formula on all of \(X_{1,\mu}\).

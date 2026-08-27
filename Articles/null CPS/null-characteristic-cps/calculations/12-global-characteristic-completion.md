@@ -362,7 +362,12 @@ space of the explicit analysis--synthesis projector defined in
    \(\|(f,g)\|_{E,X}^2=\int\omega_k|a_k[f,g]|^2dk=E_\mu[\Phi]\);
 5. the characteristic one-particle norm is
    \(\|(f,g)\|_{1,X}^2=\int|a_k[f,g]|^2dk\), exactly the stationary
-   one-particle norm.
+   one-particle norm on the classical energy space.
+
+Item 5 is a norm statement on the classical energy profiles in the theorem.
+Completing that norm gives the abstract Hilbert space transported from
+\(L^2(dk)\); it does not assert that every completed vector has ordinary
+distribution-valued individual sheet profiles or a pointwise corner trace.
 
 ### Proof of injectivity
 
