@@ -2,21 +2,23 @@
 
 ## 1. Verdict
 
-For the default direct-null CPS of `03`--`07`, the two constructions are
-**not equal**.  The finite-radius dynamical-edge-mode (DEM) reduction retains
-one canonical electric frame/normal-flux pair for every $j\geq1,m$; its
-Hamiltonian tends to zero at the horizon, but its symplectic form remains
-finite.  The default zero-endpoint direct-null CPS contains no such independent
-pair.
+The exact finite-$R$ DEM edge DtN kernel, its Hamiltonian scaling, the
+modewise cut-form identity, and the strong-resolvent radiative limit are
+retained.  A full phase-space null-limit theorem is **not proved**.
 
-There are two precise equality statements:
+At finite harmonic order, the DEM reduction has one linear electric
+frame/normal-flux pair for every $j\geq1,m$; its Hamiltonian tends to zero at
+the horizon, while its coefficient-level symplectic pairing remains finite.
+The default zero-endpoint direct-null CPS contains no such independent pair.
+This shows a mismatch of the two declared finite-harmonic coefficient models,
+but it does not by itself construct a common ambient topology or prove that
+reduction and the null limit commute or fail to commute as completed
+phase-space operations.
 
-1. equality holds after enlarging the direct-null theory to the split
-   bifurcation-frame polarization of `08`, fixing the past endpoint, and using
-   the coefficient map (8.4) below;
-2. equality also holds if one instead performs full boundary-gauge reduction
-   at zero normal flux at every finite $R$, which removes the DEM pair and
-   changes the finite-radius theory to the PMC reduction.
+The former boxed isomorphisms are therefore downgraded to a conditional
+comparison.  To restore them one must define and prove a common direct system,
+symplectic convergence, reduction convergence, and the bulk-compatible
+`T1-aff/T2-aff` endpoint range.
 
 The radiative bulk sector converges only in the strong-resolvent/local-energy
 sense.  Its real-frequency Dirichlet-to-Neumann function has no pointwise
@@ -368,7 +370,7 @@ There is no edge oscillator for each $\omega$: the radiative $P,j,m,\omega$
 sector and the time-independent longitudinal DEM edge sector are different
 parts of the action-derived phase space.
 
-## 8. Exact map to the direct-null bifurcation cut
+## 8. Exact finite-mode map to the direct-null bifurcation cut
 
 For the electric master at $r=R$,
 
@@ -398,10 +400,12 @@ $$
 \tag{8.3}
 $$
 
-This is exactly the electric final-cut term derived from the unfixed action in
-`04`.  Taking $R\to L$ identifies the DEM pair with the $B$-cut pair, provided
-the past endpoint frame and normal field are fixed.  The edge Hamiltonian in
-these variables is
+This is exactly the electric final-cut coefficient identity derived from the
+unfixed action in `04`.  At every fixed finite harmonic cutoff, its
+$R\to L$ coefficients match the $B$-cut pair if the past endpoint frame and
+normal field are fixed.  No topology on the full tower or proof that the cut
+pair belongs to the smooth bulk affine range is supplied by (8.3).  The edge
+Hamiltonian in these variables is
 
 $$
 \boxed{
@@ -409,7 +413,7 @@ H_{R,jm}^{\rm edge}
 =\frac{\lambda_j}{2R^2K_{j,R}^{\rm edge}}
 |\Psi^E_{jm}|^2
 =\frac{|\Psi^E_{jm}|^2}
-{2L(\rho_R-H_j^{\rm harm})},[1+o(1)].}
+{2L(\rho_R-H_j^{\rm harm})}[1+o(1)].}
 \tag{8.4}
 $$
 
@@ -420,73 +424,89 @@ Coulomb mode.
 ## 9. Reduction versus null limit
 
 Let $\mathcal G_0(R)$ be gauge transformations vanishing at $S_R^2$, and let
-$\mathcal G_B'$ be zero-mean boundary gauge functions.  Finite-radius DEM
-reduction means quotient by $\mathcal G_0(R)$ only.  Equations (3.5) and (5.3)
-give
+$\mathfrak g_B'$ be the **Lie algebra** of zero-mean real boundary gauge
+functions.  Finite-radius DEM reduction means quotient by
+$\mathcal G_0(R)$ only.  For every fixed harmonic cutoff $J<\infty$,
+equations (3.5) and (5.3) give the finite-$R$ linearized coefficient
+decomposition
 
 $$
-\boxed{
+\operatorname{Coeff}_{\leq J}
 \operatorname{Red}_{\mathcal G_0}\mathcal P_R^{\rm DEM}
-\cong\mathcal P_R^{\rm PMC}\oplus T^*\mathcal G_B'.}
+\cong
+\operatorname{Coeff}_{\leq J}\mathcal P_R^{\rm PMC}
+\oplus T^*\mathfrak g_{B,\leq J}'.
 \tag{9.1}
 $$
 
-After the strong-resolvent radiative limit and the coefficient identification
-(8.2),
+This finite-radius coefficient statement is `proved`.  It is not a boxed
+isomorphism of completed phase spaces.  The notation
+$T^*\mathfrak g_{B,\leq J}'$ is only the linearized identity-component
+description.
+If the boundary frame is a global $U(1)$-valued map, its periodicity and any
+large components must be handled on
+$\operatorname{Map}(S^2,U(1))/U(1)$; they are not proved by (9.1).
+
+After the strong-resolvent radiative limit and the coefficient identity
+(8.2), finite harmonic truncations have the schematic coefficient behavior
 
 $$
-\boxed{
-\lim_{R\to L}\operatorname{Red}_{\mathcal G_0}\mathcal P_R^{\rm DEM}
-\cong\mathcal P_{\rm null}^{\rm CPS}\oplus T^*\mathcal G_B',
-\qquad H_{\rm edge}\to0.}
+\operatorname{Red}_{\mathcal G_0}\mathcal P_R^{\rm DEM}
+\xrightarrow[R\to L]{\rm coeff}
+\mathcal P_{\rm null}^{\log}\oplus T^*\mathfrak g_B',
+\qquad H_{\rm edge}\to0.
 \tag{9.2}
 $$
 
-The default direct-null reduction has zero endpoint traces and quotients the
-now-degenerate frame direction, so
+The default direct-null logarithmic model has zero endpoint traces and no
+independent frame coefficient,
 
 $$
-\boxed{
-\operatorname{Red}_{\rm proper}
-\left(\lim_{R\to L}\mathcal P_R\right)_{\rm default}
-=\mathcal P_{\rm null}^{\rm CPS}.}
+\mathcal P_{\rm null,default}^{\log}
+=\mathcal P_{\rm null}^{\log}.
 \tag{9.3}
 $$
 
-Equations (9.2)--(9.3) are unequal; the explicit surviving/lost sector is
-$T^*\mathcal G_B'$.  This is the answer for the project's default null CPS.
+At coefficient level, (9.2)--(9.3) differ by
+$T^*\mathfrak g_B'$.  This is evidence for a mismatch between the two
+declared endpoint policies, not a theorem comparing two completed
+phase-space limits.
 
 If instead the null limit is taken in the split trace polarization of `08`,
-with the past endpoint fixed and the $B$ frame retained, then (8.3) gives
+with the past endpoint fixed and the $B$ frame retained, then (8.3) gives only
+the finite-mode cut-form identity
 
 $$
-\boxed{
-\lim_{R\to L}\operatorname{Red}_{\mathcal G_0}
-\mathcal P_R^{\rm DEM}
-\cong
-\operatorname{Red}_{\rm proper}
-\left(\lim_{R\to L}\mathcal P_R^{\rm ext}\right)_{\rm split,B}.}
+\left.\Omega_R^{\rm edge}\right|_{j\leq J}
+\longrightarrow
+\left.\Omega_{B}^{\rm cut}\right|_{j\leq J}
+\qquad(J<\infty).
 \tag{9.4}
 $$
 
-Finally, reducing the full boundary group at fixed moment map
-$E_\perp=0$ removes $T^*\mathcal G_B'$ at every $R$ and also yields equality
-with (9.3).  That is PMC reduction, not the DEM theory with physical boundary
-large transformations.
+Reducing the full boundary group at fixed moment map $E_\perp=0$ removes the
+linear edge pair at every finite $R$.  That is the PMC theory, not DEM with
+physical boundary transformations; equality of its completed null limit with
+(9.3) still requires a common ambient construction.
 
-### Theorem 9.1 — comparison theorem
+### Theorem 9.1 — proved coefficient statements and conditional `E-limit`
 
 The radiative DEM/PMC wall theories converge to the direct-null radiative
 theory only after spectral smearing or limiting absorption.  The DEM edge
-symplectic sector has the finite limit (8.3), while its Hamiltonian vanishes as
-$1/\log(2L/\varepsilon_R)$.  Therefore reduction and the null limit fail to
-commute for the default zero-endpoint direct-null policy by the explicit
-sector $T^*\mathcal G_B'$.  They commute under either of the two matching
-policies stated in (9.4) and below it. $\square$
+Hamiltonian vanishes as $1/\log(2L/\varepsilon_R)$, and (8.3) gives the exact
+finite-mode cut-form identity.  These statements are `proved`.
 
-Status: `proved` for the smooth finite-harmonic edge core and the
-strong-resolvent radiative comparison.  No Hilbert tensor factorization claim
-is made.
+The completed claim `E-limit`---that reduction and the null limit differ
+exactly by $T^*\mathfrak g_B'$ for the default policy, or commute for the
+split-$B$ policy---is `conditional`.  It requires:
+
+1. a common ambient topology or direct system for $\mathcal P_R$;
+2. convergence of the full symplectic forms, not just their coefficients;
+3. convergence of the gauge actions, moment maps, and reduced spaces;
+4. the bulk-compatible affine endpoint range `T1-aff/T2-aff`;
+5. a decision whether the frame is linearized or genuinely periodic $U(1)$.
+
+No Hilbert tensor factorization claim is made.
 
 ## 10. Regression
 
@@ -501,8 +521,8 @@ is made.
 - the exact coefficient map (8.2)--(8.3).
 
 The finite samples are numerical regression only.  Strong-resolvent
-convergence and the phase-space comparison use the written operator and
-symplectic arguments.
+convergence uses the written operator argument; no script or coefficient map
+proves `E-limit`.
 
 ## 11. Literature and claim boundary
 
@@ -521,6 +541,8 @@ endpoint policy.
 | finite-wall radiative operators converge after spectral smearing | `proved` | section 7 |
 | DEM edge Hamiltonian remains finite and nonzero at the horizon | `false` | sections 4--5 |
 | DEM edge symplectic pair disappears when its energy vanishes | `false` | section 5 |
-| default direct-null reduction equals the DEM null limit | `false` | (9.2)--(9.3) |
-| equality after retaining the split $B$ frame | `proved` | (8.3), (9.4) |
-| equality after full boundary reduction at $E_\perp=0$ | `proved` | section 9 |
+| finite-harmonic DEM/cut coefficient form agrees | `proved` | (8.3), (9.4) |
+| default coefficient models differ by linear $T^*\mathfrak g_B'$ | `proved` | (9.1)--(9.3) |
+| completed phase-space limit differs exactly by $T^*\mathfrak g_B'$ | `conditional` | missing items 1--5 after Theorem 9.1 |
+| completed split-$B$ or full-reduction limit commutes | `conditional` | section 9 |
+| $T^*\mathfrak g_B'$ is the global periodic $U(1)$ frame phase space | `false` | it is only the linearized identity-component model |

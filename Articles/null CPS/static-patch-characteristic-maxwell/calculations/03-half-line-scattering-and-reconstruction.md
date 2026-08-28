@@ -21,7 +21,14 @@ S_j(\omega)
 \tag{1.2}
 $$
 
-For real $\omega$, $|S_j(\omega)|=1$. Past-horizon data in the independently defined spectral class reconstruct a unique center-regular bulk solution, and future-horizon restriction multiplies every $(P,j,m,\omega)$ coefficient by $S_j(\omega)$. This proves T1 on the smooth spectral core and on the infrared-controlled CPS completion of `00`.
+For real $\omega$, $|S_j(\omega)|=1$.  Past-horizon logarithmic radiation
+data in the independently defined spectral class reconstruct a unique
+center-regular bulk solution, and future-horizon restriction multiplies every
+$(P,j,m,\omega)$ coefficient by $S_j(\omega)$.  This proves `T1-log` on the
+smooth spectral core and on the infrared-controlled CPS completion of `00`.
+It does not prove affine regularity of
+$r_A^{\rm aff}:=F_{VA}=e^v\mathfrak r_A$ at $V=0$; the latter requires the
+weighted derivative and opposite-end scattering conditions of `10`.
 
 The result is a restriction/reconstruction theorem derived after the action and constraint analysis. Stationary modes are used as the spectral resolution of the proved half-line operator, not as a substitute for the CPS construction.
 
@@ -104,7 +111,7 @@ $$
 
 and is not $L^2$ or finite energy. The second zero-energy solution is bounded at infinity but has the singular $\rho^{-j}$ center branch. There is therefore no regular bounded zero resonance.
 
-This does not remove $\omega\to0$ radiative sequences. It removes an actual zero-frequency eigenvector. Their distinction is part of T4/`08`.
+This does not remove $\omega\to0$ radiative sequences. It removes an actual zero-frequency eigenvector. Their distinction is part of `T4-kin`/`08`.
 
 ## 4. Darboux/shape-invariance ladder
 
@@ -322,10 +329,12 @@ The limits are wave-packet/distributional limits; an individual stationary gener
 
 ### 7.3 Independent horizon data space
 
-Define $\mathcal X_{\mathcal H^-}^{\mathrm{comp,core}}$ independently as follows. Expand a real horizon one-form in exact/coexact harmonics,
+Define the logarithmic radiation space
+$\mathcal X_{\mathcal H^-}^{\log,\mathrm{core}}$ independently as follows.
+Expand $\mathfrak r_A(v,x):=F_{vA}$ in exact/coexact harmonics,
 
 $$
-r_A(v,x)=\sum_{j\geq1,m}
+\mathfrak r_A(v,x)=\sum_{j\geq1,m}
 \left(r^E_{jm}(v)\mathbb E_A^{jm}
 +r^B_{jm}(v)\mathbb B_A^{jm}\right),
 \tag{7.4}
@@ -353,14 +362,14 @@ $$
 
 Thus (7.4)--(7.6) characterize the target without referring to $\operatorname{Ran}(R_-)$.
 
-### Theorem 7.1 — T1 on the scattering core
+### Theorem 7.1 — `T1-log` on the scattering core
 
 For every angular weight and both polarizations, past-horizon restriction
 
 $$
 R_-:\mathcal P_{\mathrm{bulk}}^{\rm core}
 \longrightarrow
-\mathcal X_{\mathcal H^-}^{\mathrm{comp,core}}
+\mathcal X_{\mathcal H^-}^{\log,\mathrm{core}}
 \tag{7.7}
 $$
 
@@ -368,9 +377,25 @@ is a bijection. Its inverse is (7.6), followed by (7.1) and the Maxwell dictiona
 
 #### Proof
 
-Project $F_{vA}$ onto the exact/coexact vector harmonics. Equation (9.1) of `02` gives (7.5), so restriction maps into the declared target. Since $\omega>0$ on the support, (7.6) reconstructs a unique coefficient family. Equations (5.1) and (7.1) then give a unique Friedrichs-domain, center-regular bulk master solution, and `02` reconstructs a unique Maxwell field strength. This proves surjectivity.
+Project $\mathfrak r_A=F_{vA}$ onto the exact/coexact vector harmonics.
+Equation (9.1) of `02` gives (7.5), so restriction maps into the declared
+logarithmic target. Since $\omega>0$ on the support, (7.6) reconstructs a
+unique coefficient family. Equations (5.1) and (7.1) then give a unique
+Friedrichs-domain, center-regular bulk master solution, and `02` reconstructs
+a unique Maxwell field strength. This proves surjectivity.
 
-If the past radiative field vanishes, (7.5) gives $c^E=c^B=0$. There is no $j=0$ sector by `02`, and section 3 excludes a finite-energy zero mode. Hence $F=0$. At potential level, two representatives with the same $F$ differ by an exact one-form on $B^3$; on the zero-endpoint core that direction is proper gauge. This proves injectivity. Continuity in every core seminorm follows because multiplication/division by $\omega$ is bounded on each compact $K\Subset(0,\infty)$, the generalized transform is unitary, and the angular multiplier losses are polynomial and absorbed by neighboring weights. $\square$
+If the past radiative field vanishes, (7.5) gives $c^E=c^B=0$. There is no
+$j=0$ sector by `02`, and section 3 excludes a finite-energy zero mode. Hence
+$F=0$. At potential level, two representatives with the same $F$ differ by
+an exact one-form on $B^3$; on the zero-endpoint core that direction is proper
+gauge. This proves injectivity. Continuity in every core seminorm follows
+because multiplication/division by $\omega$ is bounded on each compact
+$K\Subset(0,\infty)$ and the generalized transform is unitary.  At fixed
+angular order, the normalized radiative one-form has the same $H^s$ order as
+the master, while the normal scalars carry $\sqrt{\lambda_j}$ and lie in
+$H^{s-1}$.  These are the explicit product spaces of `10`, section 8.
+Polynomial losses may be shifted only in the Fréchet intersection, not in a
+fixed-$s$ same-order theorem. $\square$
 
 ### 7.4 CPS completion
 
@@ -393,11 +418,23 @@ $$
 \tag{7.9}
 $$
 
-Equations (7.5)--(7.6) are isometries between (7.8) and (7.9), up to the displayed convention-dependent factor (2). Therefore T1 is also `proved` on this infrared-controlled completion.
+Equations (7.5)--(7.6) are isometries between (7.8) and (7.9), up to the
+displayed convention-dependent factor (2). Therefore `T1-log` is also
+`proved` on this infrared-controlled completion.
 
-In this Hilbert completion, the transported $\mathcal E$ and $F_{AB}$ are the weak antiderivatives fixed by the same spectral coefficients. A pointwise value at $B$ is not part of the completed datum unless a separate trace hypothesis is imposed. Thus the completed T1 statement does not silently reintroduce corner values that are discontinuous in (7.9).
+In this Hilbert completion, the transported $\mathcal E$ and $F_{AB}$ are
+weak antiderivatives fixed by the same spectral coefficients. A pointwise
+value at $B$ is not part of the completed datum unless a separate trace
+hypothesis is imposed. Thus `T1-log` does not silently reintroduce corner
+values that are discontinuous in (7.9).
 
-The larger norm containing only $\omega^2|c|^2$ is the static finite-energy space. T1 as a set-theoretic energy transform still has a spectral meaning there, but the characteristic symplectic form and endpoint traces are not continuous in that norm. Calculation `08` therefore classifies the universal energy-only point-trace statement `T1-max` as `false`, not merely unproved. After adjoining the independent trace topology of `08`, the identification of its maximal smooth-center bulk range (`T1-trace`) remains `conditional`.
+The larger norm containing only $\omega^2|c|^2$ is the static finite-energy
+space. `T1-log` as a set-theoretic spectral transform still has a meaning
+there, but the characteristic symplectic form and endpoint traces are not
+continuous in that norm. The universal energy-only point-trace statement is
+therefore `false`. After adjoining the independent trace topology of `08`,
+`10` proves finite-order modewise conditions but leaves the maximal completed
+affine range `T1-aff` `conditional`.
 
 ## 8. Energy and reduced symplectic scattering
 
@@ -448,7 +485,14 @@ independently in `04`, Theorem 9.1.
 
 ## 9. Endpoint and memory boundary
 
-For core coefficients, $f_\pm$ are Schwartz functions of static null time. Their limits vanish as $u,v\to\pm\infty$, so no core memory or independent cut constant is present. This is a policy of the first theorem, not a theorem that every finite-energy source-free static-patch solution has zero half-horizon endpoint difference.
+For core coefficients, $f_\pm$ are Schwartz functions of static null time.
+Their logarithmic limits vanish as $u,v\to\pm\infty$, so no core memory or
+independent cut constant is present.  This does **not** imply that
+$r_A^{\rm aff}=e^v\mathfrak r_A$ is affine smooth: `10`, equation (4.1),
+gives a Schwartz profile for which it is unbounded.  The zero-endpoint statement is therefore
+a policy of `T1-log`, not an affine theorem and not a theorem that every
+finite-energy source-free static-patch solution has zero half-horizon endpoint
+difference.
 
 A profile with nonzero endpoint difference typically has $c(\omega)\sim\omega^{-1}$ near zero. It can have finite energy because $\omega^2|c|^2$ is integrable, while failing the CPS condition $\omega|c|^2\in L^1$. Such configurations are precisely why finite energy, finite symplectic norm, pointwise corner data, large gauge, and memory must not be conflated.
 
@@ -481,4 +525,9 @@ The existence of a free massless all-spin de Sitter horizon S-matrix, a radiativ
 - “this is the first horizon symplectic quantization of the photon in de Sitter”;
 - “the finite product (1.2) alone is a publishable novelty.”
 
-The only viable article-level contribution would be the combined action-first constraint/corner completion, precise half-horizon function spaces and proper-gauge quotient, full Lee--Wald isomorphism, Peierls equality, and endpoint/topology classification. Calculations `04`, `06`, and `08` now close those links on scoped CPS/trace spaces. The publication novelty gate is `false`; the maximal bulk-compatible range inside the separately topologized trace space remains `conditional`.
+The only viable article-level contribution would be a genuine affine
+bulk-range theorem rather than the already-known hard-frequency scattering
+chain.  `10` finds a nontrivial two-ended Mellin/Hardy compatibility involving
+$S_j$, but only at finite differentiability and on the finite-harmonic or
+rapid-angular smooth core.  The maximal `T1-aff/T4-bulk` gate remains
+`conditional`; all other expansion is frozen until that gate is decided.

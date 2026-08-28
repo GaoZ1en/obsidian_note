@@ -24,6 +24,7 @@ python3 scripts/peierls_kernel_checks.py
 wolframscript -file scripts/kms_mellin_checks.wl
 python3 scripts/memory_sector_checks.py
 python3 scripts/stretched_horizon_checks.py
+python3 scripts/affine_horizon_checks.py
 ```
 
 Every script exits nonzero if a declared check fails.
@@ -198,13 +199,33 @@ Success marker:
 ALL STRETCHED-HORIZON CHECKS PASSED
 ```
 
+## `affine_horizon_checks.py`
+
+Coverage:
+
+- finite polynomial instances of the weighted affine-derivative criterion;
+- explicit growth of the Schwartz profile
+  $e^{-(1+v^2)^{1/4}}$ after multiplication by $e^v\partial_v$;
+- residues of the Mellin poles associated with affine Taylor coefficients;
+- the fixed-$s$ $\sqrt{\lambda_j}$ angular derivative loss and the failure of
+  a same-order bound;
+- a finite switch-function canonical shear for the
+  $(x,\widehat a,m)$ trace splitting.
+
+Success marker:
+
+```text
+ALL AFFINE-HORIZON CHECKS PASSED
+```
+
 ## Claim boundary
 
 These scripts check only their listed algebraic identities and finite numerical
 samples. In particular, the symplectic script does not prove Stokes limits,
 density, or the proper-gauge kernel; those are the written arguments in `04`.
-The suite does not by itself prove a maximal Goursat theorem, operator
-self-adjointness, Peierls equality, KMS, or novelty.
+The suite does not by itself prove a maximal Goursat/affine range theorem,
+operator self-adjointness, Maxwell test-complex exactness, Peierls equality,
+KMS, the DEM phase-space limit, or novelty.
 
 ## Deferred script names
 

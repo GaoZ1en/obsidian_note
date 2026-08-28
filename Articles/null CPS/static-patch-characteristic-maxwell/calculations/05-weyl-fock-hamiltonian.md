@@ -35,7 +35,7 @@ $$
 \tag{2.1}
 $$
 
-where the isomorphism is T1--T2, proper gauge has been divided out, and the
+where the isomorphism is `T1-log`--`T2-log`, proper gauge has been divided out, and the
 CPS norm is
 
 $$
@@ -252,6 +252,12 @@ $$
 \alpha_s(W(c)):=W(T_sc).
 \tag{6.2}
 $$
+
+This is an algebraic automorphism group, not a point-norm continuous
+$C^*$-dynamics on the full abstract Weyl algebra: for generic nonzero
+$T_sc-c$, $\|W(T_sc)-W(c)\|=2$.  Strong continuity holds after passing to the
+regular static or BD GNS representations.  The distinction is used in the
+split `T5-W*`/`T5-C*` statement of `07`.
 
 On the one-particle space,
 

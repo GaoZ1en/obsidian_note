@@ -24,10 +24,15 @@ $$
 \tag{1.2}
 $$
 
-Thus T5 is `proved` on the local-observable/BD-continuity characteristic
-algebra defined below. The state is obtained by algebraic restriction of the
-global state, equivalently by affine-horizon positive frequency. It is not
-defined by a partial trace or a static inside/outside Hilbert tensor product.
+The precise theorem is `T5-W*`: in the BD GNS representation, the state is a
+normal KMS state for a weak-* continuous von Neumann-algebra dynamics.  On the
+abstract Weyl $C^*$-algebra, individual nontrivial Weyl orbits are not
+point-norm continuous; therefore this note proves only the KMS boundary
+relation on a dense analytic *-algebra, denoted `T5-C*`, and does not claim a
+norm-continuous $C^*$-dynamical system.  The state is obtained by algebraic
+restriction of the global state, equivalently by affine-horizon positive
+frequency. It is not defined by a partial trace or a static inside/outside
+Hilbert tensor product.
 
 There is a genuine infrared boundary: (1.2) is not finite on every vector in
 the larger $(\omega+\omega^2)$ CPS completion. A regular BD state on that
@@ -79,7 +84,8 @@ field-strength smearings. No pointwise endpoint observable is added.
 
 Define $\varpi_{\rm BD}$ first as the global Euclidean/Hadamard Maxwell state,
 restricted algebraically to the local static-patch field-strength algebra and
-then carried to (2.4) by T1--T3. This definition is gauge invariant.
+then carried to (2.4) by `T1-log`--`T3-local`. This definition is gauge
+invariant.
 
 For computation, use its equivalent horizon characterization. Extend the
 affine coordinate $V$ across the complete global cosmological horizon and
@@ -113,7 +119,7 @@ In four-dimensional Maxwell theory the Hodge star on two-forms is conformally
 invariant. Euclidean regularity therefore selects the same affine
 positive-frequency horizon distribution for the two gauge-invariant
 radiative polarizations. Conversely, the characteristic uniqueness theorem
-T1 reconstructs a unique static-patch bulk two-point distribution from this
+`T1-log` reconstructs a unique static-patch bulk two-point distribution from this
 horizon restriction. Hence the affine prescription is equivalent here to the
 global Euclidean definition, rather than an independent state postulate.
 
@@ -301,11 +307,32 @@ $$
 
 Wick's rule extends the two-point boundary relation to the polynomial
 analytic algebra; the Weyl Gaussian formula extends it directly to Weyl
-products. Since $\mathcal X_{\rm an}$ is dense in (2.3), regular GNS
-continuity extends the boundary relation to the von Neumann algebra generated
-by $\mathfrak A_{\rm char}^{\rm loc}$. Individual Weyl orbits need not be
-point-norm continuous in the abstract CCR norm; no such false continuity
-claim is used.
+products. Since $\mathcal X_{\rm an}$ is dense in (2.3), the one-particle
+translations are strongly continuous in the BD covariance norm.  Their GNS
+implementers $U(t)$ are therefore strongly continuous, and
+
+$$
+\bar\alpha_t(X)=U(t)XU(t)^*
+\tag{6.5}
+$$
+
+is a normal weak-* continuous dynamics on
+$\mathfrak M_{\rm BD}:=\pi_{\rm BD}(\mathfrak A_{\rm char}^{\rm loc})''$.
+The boundary relation extends to this von Neumann algebra, proving
+`T5-W*`.
+
+By contrast, for nonzero $c$ and generic $t\ne0$ the abstract Weyl norm obeys
+
+$$
+\|W(T_tc)-W(c)\|=2.
+\tag{6.6}
+$$
+
+Thus $t\mapsto\alpha_t$ is not point-norm strongly continuous on the full
+abstract Weyl algebra.  The calculation before (6.5) proves `T5-C*` only as a
+dense analytic *-algebra KMS boundary relation; it is not a claim that
+$(\mathfrak A_{\rm char}^{\rm loc},\alpha_t)$ is a norm-continuous
+$C^*$-dynamical system.
 
 Equation (5.4) gives the same proof in position space: the meromorphic
 function is periodic under $v-v'\mapsto v-v'+2\pi i$, while the opposite
@@ -322,7 +349,7 @@ $$
 \tag{7.1}
 $$
 
-Thus BD continuity requires $c\in L^2(d\omega)$ at zero, whereas the T2 CPS
+Thus BD continuity requires $c\in L^2(d\omega)$ at zero, whereas the `T2-log` CPS
 norm requires only $\sqrt\omega c\in L^2$. For example,
 
 $$
@@ -337,7 +364,7 @@ infinite BD covariance. Therefore the statement
 > CPS Hilbert completion
 
 is `false`. It is regular on (2.4), which contains all compact local Maxwell
-observables used in T3.
+observables used in `T3-local`.
 
 The static ground state of `05` has covariance weight $\omega$ rather than
 $\omega\coth(\pi\omega)$. It is a different quasifree state. The KMS result is
@@ -345,21 +372,28 @@ an algebraic comparison of two states under the same static automorphisms, not
 a claim that a formal density matrix has been obtained by tracing the global
 vacuum.
 
-## 8. Theorem T5
+## 8. Theorems `T5-W*` and `T5-C*`
 
-**Theorem 8.1.** The global Euclidean/Bunch--Davies Maxwell state restricts,
-through the gauge-invariant Maxwell/master map and T1--T3, to the quasifree
-state (5.3) on $\mathfrak A_{\rm char}^{\rm loc}$. This state is KMS at
-$\beta_t=2\pi L$ for the static automorphisms (6.1).
+**Theorem 8.1 (`T5-W*`).** The global Euclidean/Bunch--Davies Maxwell state
+restricts, through the gauge-invariant Maxwell/master map and
+`T1-log`--`T3-local`, to the quasifree state (5.3).  In its GNS von Neumann
+algebra $\mathfrak M_{\rm BD}$, it is a normal KMS state at
+$\beta_t=2\pi L$ for the normal dynamics (6.5).
 
 **Proof.** Euclidean regularity is equivalent to affine positive frequency on
 the complete cosmological horizon for the conformally invariant Maxwell field.
 The Mellin transform (4.3)--(4.10) gives the normalized static occupation
 number and covariance (1.2). Compact local source vectors lie in the BD norm
 by `06`, section 3. Detailed balance proves strip analyticity and the boundary
-condition on the dense analytic algebra, and continuity gives the extension.
-The T1--T3 maps make the construction gauge invariant and identify its
+condition on the dense analytic algebra.  Strong continuity in the BD
+one-particle norm gives the normal GNS extension.  The `T1-log`, `T2-log`, and
+`T3-local` maps make the construction gauge invariant and identify its
 commutator with the bulk Maxwell Peierls bracket. $\square$
+
+**`T5-C*`.** The same covariance satisfies the KMS boundary relation on the
+dense analytic Weyl *-algebra generated by $\mathcal X_{\rm an}$.  Status:
+`proved`.  The stronger claim of a point-norm continuous abstract Weyl
+$C^*$-dynamics is `false` by (6.6).
 
 ## 9. Regression
 

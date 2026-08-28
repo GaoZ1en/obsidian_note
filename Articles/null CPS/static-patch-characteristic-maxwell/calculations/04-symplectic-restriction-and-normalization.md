@@ -13,16 +13,17 @@ R_-^*\Omega_-=\Omega_{\rm bulk},
 \tag{1.1}
 $$
 
-Thus T2 is `proved` in exactly the same function-space scope as the completed
-version of T1. The proof starts from the Maxwell action and its raw potential
-pullback. It does not infer (1.1) merely from $|S_j|=1$.
+Thus `T2-log` is `proved` in exactly the same logarithmic function-space scope
+as `T1-log`. The proof starts from the Maxwell action and its raw potential
+pullback. It does not infer (1.1) merely from $|S_j|=1$, and it does not assert
+that $r_A^{\rm aff}:=F_{VA}=e^v\mathfrak r_A$ has an affine trace.
 
 The finite-energy norm alone does not control independent nonzero endpoint
-traces, so the universal energy-only statement `T2-max` is `false`. In the
+traces, so the universal energy-only affine-endpoint statement is `false`. In the
 separate raw trace enlargement of `08`, the electric cut term and any charged
 relative frame must be retained. Their finite symplectic pairing is proved in
 `08` and matched to the DEM edge pair in `09`; extension to the maximal
-smooth-center bulk-compatible trace range (`T2-trace`) remains `conditional`.
+smooth-center bulk-compatible affine range (`T2-aff`) remains `conditional`.
 
 ## 2. One Lee--Wald and orientation convention
 
@@ -419,12 +420,14 @@ deduced from the core theorem.
 ### 6.3 Completed space
 
 Point evaluation is not continuous in the CPS norm of `00`. Therefore the
-completed theory is defined by density from the gauge-invariant master/core
-form, not by assigning fictitious values to $b_{12}$ at $B$. Calculation `08`
-constructs a different raw trace topology with genuine traces, nonzero memory,
-and charged relative frames, and proves its finite canonical endpoint pairing.
-That construction does not prove that every trace-core vector lies in the
-smooth-center bulk range; this remaining range question is `T1-trace`/`T2-trace`.
+completed logarithmic theory is defined by density from the gauge-invariant
+master/core form, not by assigning fictitious values to $b_{12}$ at $B$.
+Calculation `08` constructs a different raw trace topology with genuine
+traces, nonzero memory, and charged relative frames, and proves its finite
+canonical endpoint pairing.  `10` further shows that an arbitrary Schwartz
+trace remainder need not be affine regular and gives finite-order two-ended
+range conditions.  These results do not close the maximal `T1-aff/T2-aff`
+range.
 
 ## 7. Spectral factor, angular sum, and scattering
 
@@ -492,7 +495,7 @@ $$
 $$
 
 Thus the core form has a unique continuous extension to every angularly
-weighted CPS completion. T1 says that $R_-$ and its inverse extend
+weighted CPS completion. `T1-log` says that $R_-$ and its inverse extend
 continuously there, so the core equality extends by density. Multiplication by
 $S_j$ is unitary for both the $\omega$ and $\omega^2$ weights, hence (7.4)
 extends by the same argument.
@@ -502,12 +505,12 @@ core test family $d$, localization in $(P,j,m,\omega)$ gives $c=0$ almost
 everywhere. At potential level this is precisely the quotient statement
 (6.4).
 
-## 9. Theorem T2
+## 9. Theorem `T2-log`
 
-**Theorem 9.1.** Let $\mathcal P_{\rm bulk}^{(s)}$ and
-$\mathcal X_{\mathcal H^-}^{\mathrm{comp},(s)}$ be the spaces of `00` and
-`03`, with proper gauge divided out and with endpoint values understood only
-where traces exist. Then $R_-$ is a continuous symplectic bijection,
+**Theorem 9.1 (`T2-log`).** Let $\mathcal P_{\rm bulk}^{(s)}$ and
+$\mathcal X_{\mathcal H^-}^{\log,(s)}$ be the logarithmic spaces of `00` and
+`03`, with proper gauge divided out and no endpoint values assigned in the
+completion. Then $R_-$ is a continuous symplectic bijection,
 
 $$
 R_-^*\Omega_-=\Omega_{\rm bulk}.
@@ -529,6 +532,45 @@ identifies exactly the gauge kernel. Equation (7.3) fixes all angular,
 $L$, $\lambda$, and Fourier factors. Equation (8.1) extends the equality by
 density. Equations (3.8), (5.8)--(5.9), and $|S_j|=1$ prove (9.2). $\square$
 
+### 9.1 Symplectic-potential representative and `T2-aff`
+
+The endpoint-extended statement is not representative independent term by
+term.  Under
+
+$$
+\theta\longmapsto\theta+dY+\delta B,
+\tag{9.3}
+$$
+
+the current changes by
+
+$$
+\boldsymbol\omega\longmapsto\boldsymbol\omega
++d\!\left(\delta_2Y[\delta_1]-\delta_1Y[\delta_2]\right).
+\tag{9.4}
+$$
+
+The $\delta B$ term has zero field-space curl for fixed boundary fields, but
+it changes the variational principle and may change the admissible boundary
+conditions or polarization.  The $dY$ term shifts the integrated symplectic
+form by a cut contribution.  Therefore the split between a radiative
+integral, an endpoint pair, and a relative frame depends on the chosen action,
+representative, boundary conditions, and polarization even though the total
+form of a fully specified theory is unambiguous.
+
+Define `T2-aff` to be Lee--Wald equality on the bulk-compatible affine range,
+with genuine $V/U$ traces, memory and any retained relative frame, for one
+declared representative and boundary action.  Its status is `conditional`:
+
+1. the maximal `T1-aff` range is not closed;
+2. continuity of the cut form in a completed affine topology is not proved;
+3. changing (9.3) produces a canonical boundary re-polarization, so no
+   displayed endpoint pair is a universal invariant oscillator.
+
+The finite characteristic-triangle/Stokes identity and the explicit cut
+formulae (4.7), (5.4), and (5.8) remain `proved`; only their promotion to an
+endpoint-completed bulk symplectomorphism is withheld.
+
 ## 10. Regression
 
 `../scripts/symplectic_normalization.wl` checks, for $j=1,2,3$:
@@ -546,7 +588,7 @@ finite-region, density, and kernel arguments above carry the `proved` status.
 
 ## 11. Boundary of the result
 
-The following are not consequences of T2:
+The following are not consequences of `T2-log`:
 
 - continuity of pointwise endpoint traces on the energy-only space;
 - vanishing of every possible half-horizon memory configuration;

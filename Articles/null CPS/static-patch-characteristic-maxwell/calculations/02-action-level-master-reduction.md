@@ -327,6 +327,14 @@ $$
 
 Thus the $j\geq1$ corner curvatures are cut values of the two masters. They are independent integration data on a raw sheet but not independent after the regular bulk range is imposed.
 
+At fixed angular Sobolev order this dictionary loses one derivative in the
+normal fields.  With normalized vector harmonics, $F_{vA}$ has the same
+$H^s$ angular weight as $\partial_v\Psi$, whereas
+$\mathcal E,\mathcal B$ contain $\sqrt{\lambda_j}\Psi$ and lie naturally in
+$H^{s-1}$ when $\Psi\in H^s$.  Requiring all Maxwell components in $H^s$
+requires an $H^{s+1}$ master domain.  The exact estimate is `10`, section 8;
+only the rapid-angular Fréchet intersection absorbs this shift.
+
 ## 10. Potential quotient and optional reconstruction gauge
 
 The gauge-invariant quotient is already represented by (8.2)--(8.3). To exhibit one potential for the electric field, one may choose only at this stage
@@ -371,7 +379,7 @@ electric parent action gives the same bulk current; (7.3) records the exact
 endpoint shift in the symplectic potential. Calculation `04`, equations
 (4.6)--(5.9), retains the potential-frame cut term and proves that the complete
 raw horizon restriction equals (11.1) on the declared core/CPS completion.
-Thus both the modewise bulk dictionary and its T2 horizon restriction are
+Thus both the modewise bulk dictionary and its `T2-log` horizon restriction are
 `proved` in that scope; the endpoint-enlarged finite-energy space remains a
 separate problem.
 
@@ -462,7 +470,11 @@ n=\frac1{2\pi}\int_{S^2}F.
 \tag{14.4}
 $$
 
-But the static spatial slice is $B^3$, with
+The main action uses one global potential $F=dA$, so its tangent space is
+already the trivial Chern sector.  A nonzero integer in (14.4) requires
+patchwise potentials and transition functions and cannot be varied as a
+linear tangent direction of the present project.  In addition, the static
+spatial slice is $B^3$, with
 
 $$
 H^2(B^3;\mathbb Z)=0.
@@ -478,7 +490,7 @@ $$
 
 on the smooth source-free static-patch phase space. Since $H^1(B^3)=0$, there is also no flat holonomy mode. Any remaining smooth $j=0$ potential is proper gauge under the declared zero-endpoint core policy.
 
-Status of (14.6): `proved` for smooth finite-energy source-free fields on the trivial bundle over $B^3$. This is not yet the full endpoint-memory theorem T4.
+Status of (14.6): `proved` for smooth finite-energy source-free fields on the trivial bundle over $B^3$. This is not yet the full endpoint-memory range theorem `T4-bulk`.
 
 ## 15. Regression statement
 

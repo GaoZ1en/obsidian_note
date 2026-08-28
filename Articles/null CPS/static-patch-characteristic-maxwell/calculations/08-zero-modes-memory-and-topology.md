@@ -2,8 +2,8 @@
 
 ## 1. Verdict and scope
 
-The classification theorem T4 is **proved** below, but only after separating
-three different spaces which must not be identified:
+The former theorem T4 must be split.  `T4-kin` is **proved** below after
+separating three different spaces which must not be identified:
 
 1. the smooth source-free bulk phase space on the static spatial ball;
 2. the infrared-controlled CPS completion used in `03`--`07`;
@@ -11,13 +11,16 @@ three different spaces which must not be identified:
 
 On the first space the electric and magnetic $j=0$ fluxes vanish.  On the
 second space there is no zero-frequency vector and generic pointwise endpoint
-traces do not exist.  On the third space a cut constant and a half-horizon
-memory form a finite canonical pair after a fixed trace splitting.  The trace
-extension is a classification of raw characteristic data; it is **not** being
-asserted to be the image of every center-regular finite-energy bulk solution.
-Consequently T4 is proved.  The energy-only statements `T1-max` and `T2-max`
-are `false` without extra topology; the trace-range versions `T1-trace` and
-`T2-trace`, and the sharp-observable claim `T3-max`, remain `conditional`.
+traces do not exist.  On the third space a shifted cut coordinate and a
+half-horizon memory form a finite canonical pair after a fixed trace
+splitting.  This kinematic trace classification is `T4-kin`.
+
+`T4-bulk` asks which of those trace/memory data arise from Maxwell solutions
+smooth across $B$.  It remains `conditional`.  `10` proves exact finite-order
+modewise conditions and shows explicitly that an arbitrary Schwartz remainder
+need not be affine smooth; it does not construct the maximal completed
+full-angular range.  The energy-only point-trace statements are `false`,
+`T2-aff` and `T4-bulk` are conditional, and `T3-sharp` remains conditional.
 
 This distinction is the main result of this calculation.  In particular,
 there is no universal extra edge oscillator hidden in the CPS space.
@@ -31,14 +34,21 @@ V=-e^{-v},\qquad V\in(-\infty,0),\qquad v\in\mathbb R,
 \tag{2.1}
 $$
 
-and $B$ is $V=0$, or $v=+\infty$.  In the optional generator polarization of
-`01`,
+and $B$ is $V=0$, or $v=+\infty$.  Use the distinct radiative variables
+
+$$
+r_A^{\rm aff}:=F_{VA},\qquad
+\mathfrak r_A:=F_{vA}=(-V)r_A^{\rm aff}.
+\tag{2.2}
+$$
+
+In the optional generator polarization of `01`,
 
 $$
 \overline A_A=A_A-D_A\alpha,
 \qquad
-\partial_V\overline A_A=F_{VA}.
-\tag{2.2}
+\partial_V\overline A_A=r_A^{\rm aff}.
+\tag{2.3}
 $$
 
 The past-half memory is therefore
@@ -47,12 +57,12 @@ $$
 \boxed{
 \Delta_A^-
 :=\overline A_A(0,x)-\overline A_A(-\infty,x)
-=\int_{-\infty}^{0}dV\,F_{VA}
-=\int_{-\infty}^{\infty}dv\,F_{vA}.}
-\tag{2.3}
+=\int_{-\infty}^{0}dV\,r_A^{\rm aff}
+=\int_{-\infty}^{\infty}dv\,\mathfrak r_A.}
+\tag{2.4}
 $$
 
-Equation (2.3) is defined only on a space with the indicated traces or with an
+Equation (2.4) is defined only on a space with the indicated traces or with an
 equivalent absolutely integrable radiative field.  A generic vector in the
 CPS Hilbert completion has neither property.  We use:
 
@@ -66,11 +76,21 @@ $$
 \overline A_A(V,x)=A_A^B(x)+O(V)
 \quad\Longrightarrow\quad
 \overline A_A(v,x)=A_A^B(x)+O(e^{-v}),
-\tag{2.4}
+\tag{2.5}
 $$
 
 but the converse is not automatic.  In particular, finite static energy is
-not a trace theorem.
+not a trace theorem, and $v$-Schwartz regularity is not an affine theorem.
+The exact criterion is
+
+$$
+\partial_V^nr_A^{\rm aff}
+=e^{(n+1)v}\prod_{q=1}^{n}(\partial_v+q)\mathfrak r_A,
+\tag{2.6}
+$$
+
+with finite limits through the desired order.  `10`, section 4 gives a
+Schwartz profile for which the $n=0$ expression diverges.
 
 ## 3. The $j=0$ sectors on the static ball
 
@@ -120,9 +140,13 @@ Thus the following objects are different:
 - a flat holonomy requires nontrivial first cohomology;
 - none is a radiative $\omega\to0$ limit on the smooth ball.
 
-If punctures, charged matter, or nontrivial bundles are admitted, $Q_E$ and
-$Q_B$ become superselection/topological labels of a different theory.  They
-are not added to the phase space studied here.
+The action in this project uses one global potential $F=dA$, so the main
+tangent phase space is the trivial $n=0$ bundle sector.  If punctures, charged
+matter, or nontrivial bundles are admitted, $Q_E$ and $Q_B$ become
+superselection/topological labels of a different theory.  A nonzero Chern
+sector requires patchwise connections and transition functions; its integer
+label is not a linear tangent direction and is not added to the phase space
+studied here.
 
 ## 4. A finite endpoint-trace symplectic space
 
@@ -200,16 +224,44 @@ $$
 \tag{4.8}
 $$
 
-The dependence on the chosen switch $h$ is only a linear canonical change of
-splitting.  The underlying function $f$ and form (4.4) do not depend on it.
+Thus the coordinate canonically conjugate to memory $m$ is
+$\widehat a=a+2\ell_h(x)$, not the unexplained raw endpoint constant $a$.
+
+The switch dependence is an explicit canonical shear.  If
+$\widetilde h=h+k$ with $k(\pm\infty)=0$, then the same function has
+
+$$
+\widetilde a=a,
+\qquad
+\widetilde m=m,
+\qquad
+\widetilde x=x-mk,
+\tag{4.8a}
+$$
+
+and
+
+$$
+\boxed{
+\widehat a_{\widetilde h}
+=\widehat a_h+2\int xk'\,dv-2m\int kh'\,dv.}
+\tag{4.8b}
+$$
+
+Using $\int kk'=0$ and integration by parts, substitution of
+(4.8a)--(4.8b) into (4.8) leaves $\Omega_{\rm tr}$ unchanged.  Hence the
+splitting variables $(x,\widehat a,m)$ depend on $h$, while the underlying
+function $f$, its endpoint difference $m$, and the total form (4.4) are
+invariant.  `affine_horizon_checks.py` includes a finite regression of this
+shear.
 
 The form is weakly nondegenerate.  If $\Omega_{\rm tr}(f,g)=0$ for every
 compactly supported $g$, then integration by parts gives $f'=0$ as a
 distribution.  Pairing the remaining constant $f=a$ with $g=h$ then gives
 $a=0$.
 
-For both polarizations and all $j\geq1$, the trace core is consequently the
-unique symplectic direct sum
+For a fixed switch $h$, both polarizations and all $j\geq1$ have the
+splitting-dependent symplectic direct sum
 
 $$
 \boxed{
@@ -222,21 +274,23 @@ $$
 $$
 
 where $\mathscr S_0=\mathscr S(\mathbb R)$ has zero endpoint limits and the
-sum is first understood on the rapid angular core.  Equation (4.9), not a
-postulated oscillator for every cut, is the declared endpoint completion.
+sum is first understood on the rapid angular core.  The decomposition of a
+given $f$ is unique once $h$ is fixed; different $h$ are related by the shear
+(4.8a)--(4.8b).  Equation (4.9), not a postulated oscillator for every cut,
+is the declared kinematic endpoint completion.
 
 ## 5. Electric and magnetic parity memory
 
 On the regular-bulk harmonic range, `01` gives
 
 $$
-F_{vA}^{E,jm}=-\partial_v f^E_{jm}\,\mathbb E_A^{jm},
+\mathfrak r_A^{E,jm}=-\partial_v f^E_{jm}\,\mathbb E_A^{jm},
 \qquad
-F_{vA}^{B,jm}=+\partial_v f^B_{jm}\,\mathbb B_A^{jm}.
+\mathfrak r_A^{B,jm}=+\partial_v f^B_{jm}\,\mathbb B_A^{jm}.
 \tag{5.1}
 $$
 
-Thus (2.3) has the Hodge decomposition
+Thus (2.4) has the Hodge decomposition
 
 $$
 \boxed{
@@ -523,9 +577,9 @@ distinction between:
 - a static half-horizon cut difference at the bifurcation sphere;
 - a weak logarithmic CPS vector without a cut trace.
 
-## 11. Theorem T4
+## 11. Theorem `T4-kin`
 
-### Theorem 11.1 — stratified zero-mode/topology/memory classification
+### Theorem 11.1 — `T4-kin`, stratified trace classification
 
 For source-free $U(1)$ Maxwell on the smooth static spatial ball $B^3$:
 
@@ -559,20 +613,28 @@ The spectral theorem and zero-energy asymptotics of `03`, together with
 (7.3)--(8.2), prove item 7.  Finally, the affine-coordinate identification
 (10.1) and elementary endpoint splitting (10.2) prove item 8. $\square$
 
-Status of T4: `proved` on the stratified spaces stated above.
+Status of `T4-kin`: `proved` on the stratified spaces stated above.  The
+direct-sum coordinates are switch-dependent, the canonical conjugate of $m$
+is $\widehat a$, and the invariant object is the function-space form (4.4).
 
-## 12. What T4 does not prove
+## 12. `T4-bulk` and what `T4-kin` does not prove
 
-The following stronger trace-range statements remain `conditional`:
+`T4-bulk` is the statement that the endpoint trace/memory data have been
+identified with the range of bulk Maxwell solutions smooth across $B$.  The
+following stronger trace-range statements remain `conditional`:
 
-- every vector of the raw trace space reconstructs a smooth-center bulk
-  solution;
+- the maximal completed subspace of the raw trace space reconstructing a
+  smooth-across-$B$, center-regular bulk solution;
 - sharp memory/cut observables lie in the Peierls test algebra of `06`;
 - an endpoint frame survives the stretched-horizon null limit.
 
 The omitted energy-only trace and continuity statements are `false` without
-extra hypotheses.  The first displayed item is `T1-trace`; the second is
-`T3-max`; the last is resolved conditionally on endpoint polarization in `09`.
+extra hypotheses.  `10`, Theorem 6.1 proves the finite-order, finite-harmonic
+or rapid-angular smooth subrange by testing both the incoming affine end and
+the opposite end of $S_jc$.  The arbitrary Schwartz trace core is larger, so
+the maximal `T4-bulk` theorem remains `conditional`.  The second item is
+`T3-sharp`; the last also depends on the conditional phase-space limit in
+`09`.
 
 ## 13. Regression
 
@@ -584,6 +646,10 @@ extra hypotheses.  The first displayed item is `T1-trace`; the second is
 - logarithmic CPS divergence but finite energy for the regulated $1/\omega$
   memory profile;
 - the $j=1,2,3$ harmonic coefficient form of the transport identities.
+
+`../scripts/affine_horizon_checks.py` additionally checks a finite
+switch-function shear and the failure of a Schwartz profile to be affine
+regular.
 
 These finite tests have status `checked symbolically` or numerical regression
 only.  They do not prove the topological, trace-space, or spectral theorems.
@@ -601,6 +667,9 @@ only.  They do not prove the topological, trace-space, or spectral theorems.
 | finite energy implies the CPS infrared condition | `false` | section 7 |
 | a generic CPS vector has an affine endpoint trace | `false` | sections 2 and 9 |
 | complete-horizon zero memory forces each static-half memory to vanish | `false` | section 10 |
-| T4 on the declared stratified spaces | `proved` | Theorem 11.1 |
+| `T4-kin` on the declared stratified trace spaces | `proved` | Theorem 11.1 |
+| the coordinate conjugate to memory is the raw $a$ independent of $h$ | `false` | (4.7)--(4.8b) |
+| finite-order smooth-bulk subrange | `proved` | `10`, Theorem 6.1 |
+| maximal completed `T4-bulk` range | `conditional` | section 12; `10` |
 | universal energy-only point-trace reconstruction/symplectic equivalence | `false` | sections 2, 7, 9, and 12 |
-| maximal smooth-center bulk range inside the declared trace topology | `conditional` | section 12 |
+| maximal smooth-across-$B$ bulk range inside the declared trace topology | `conditional` | section 12 |

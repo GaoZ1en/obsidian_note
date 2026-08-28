@@ -17,14 +17,18 @@ E_j s_{\eta_2}^{P,jm}.}
 $$
 
 Here $E_j=G_j^{\rm A}-G_j^{\rm R}$, the advanced-minus-retarded convention
-declared in T3, and $s_\eta=D^\dagger\eta$ is the explicit action-derived
-master source defined in section 4. Thus T3 is `proved` on the stated local
-observable class.
+declared in `T3-local`, and $s_\eta=D^\dagger\eta$ is the explicit
+action-derived master source defined in section 4.  The argument in the first
+version of this note moved too quickly from that adjoint formula to test-space
+exactness.  Calculation `11` now supplies the missing compact-source lift,
+causal exact sequence, compact-support cohomology audit, commuting Lorenz
+diagram, and gauge-independence lemma.  With `11` included, `T3-local` is
+`proved` on the stated observable class.
 
 This theorem does not assign a Peierls inverse to arbitrary endpoint-memory
 functionals outside the CPS topology. Calculation `08` classifies those
 functionals on a raw trace space, but the sharp-memory Peierls equality
-`T3-max` remains `conditional` because they are not continuous observables of
+`T3-sharp` remains `conditional` because they are not continuous observables of
 the compact local test algebra used here.
 
 ## 2. Master retarded, advanced, and causal kernels
@@ -162,7 +166,7 @@ $$
 \tag{3.5}
 $$
 
-so $E_js$ lies in the T1--T2 CPS space. This is the function-space reason that
+so $E_js$ lies in the `T1-log/T2-log` CPS space. This is the function-space reason that
 the local-observable Peierls vector has a valid complete horizon restriction;
 division by $\omega$ in (3.3) is not performed on an arbitrary finite-energy
 endpoint datum.
@@ -255,8 +259,11 @@ D^\dagger\eta:=\{s_\eta^{E,jm},s_\eta^{B,jm}\}.
 $$
 
 Every compact smooth reduced $j\geq1$ source can be represented by such a
-field-strength smearing: one may use $J_{\tau\rho}$ for the electric source
-and $J_{(2),B}$ for the magnetic source.
+field-strength smearing, but this requires the center jets and angular
+estimates stated in `11`, Lemma 3.1.  A convenient electric representative
+uses $J_{\tau\rho}$; the magnetic representative is its Hodge-dual lift.  The
+$1/\sqrt{\lambda_j}$ lift preserves the rapid-angular core but does not give a
+fixed-$s$ same-order theorem.
 
 The on-shell annihilator is larger than the pointwise kernel of $D^\dagger$.
 If $D^\dagger\eta=P h$ for compact $h$, then (4.6) also vanishes on every
@@ -271,7 +278,11 @@ $$
 $$
 
 The equality is the Green-hyperbolic exactness statement for the master
-operators and includes the absent $j=0$ sector. Therefore the quotient
+operators.  It is proved, rather than assumed, in `11`, equations
+(4.2)--(4.5).  That calculation also verifies that the relevant
+$H_c^1,H_c^2,H_c^3$ groups vanish on $M\simeq\mathbb R^4$ and explains why
+the absent $j=0$ sector is a fixed-sector annihilator rather than a hidden
+topological kernel. Therefore the quotient
 
 $$
 \boxed{
@@ -319,9 +330,10 @@ sources (4.7)--(4.8), have the same causal support, and obey the same regular
 center condition. Uniqueness of the retarded/advanced master problems gives
 exactly (5.1).
 
-A change of covariant gauge changes the potential response by an exact
-one-form on $\mathbb R\times B^3$; applying $d$ removes it. Hence (5.1) is the
-covariant Maxwell advanced-minus-retarded propagator on $\mathscr T_F$, not a
+The full commuting diagram is proved in `11`, section 6.  A change of
+covariant gauge changes the potential response by an exact one-form on
+$\mathbb R\times B^3$; applying $d$ removes it. Hence (5.1) is the covariant
+Maxwell advanced-minus-retarded propagator on $\mathscr T_F$, not a
 gauge-fixed potential bracket presented as an observable.
 
 The Peierls convention used here is
@@ -385,7 +397,7 @@ x_s:=R_-Es.
 \tag{6.4}
 $$
 
-Its positive-frequency horizon coefficient is precisely (3.3). T2 gives, for
+Its positive-frequency horizon coefficient is precisely (3.3). `T2-log` gives, for
 every homogeneous variation $\delta\Psi$,
 
 $$
@@ -450,9 +462,9 @@ separation can only enlarge the spacelike region. This is a distributional
 finite-propagation theorem. The numerical samples in section 9 are regression
 checks, not its proof.
 
-## 8. Theorem T3
+## 8. Theorem `T3-local`
 
-**Theorem 8.1.** On the real compact field-strength test quotient
+**Theorem 8.1 (`T3-local`).** On the real compact field-strength test quotient
 $\mathscr T_F$ of (4.11), the Maxwell Peierls bracket defined by the covariant
 advanced-minus-retarded response is equal to the inverse of the
 constraint/corner-complete past-horizon symplectic form. The common bracket is
@@ -460,12 +472,14 @@ constraint/corner-complete past-horizon symplectic form. The common bracket is
 disjoint supports.
 
 **Proof.** Sections 2--3 construct the unique master causal propagators and
-show that source-induced solutions lie in the T1--T2 space. Section 4 derives
-the Maxwell/master adjoint map from the field-strength observable. Section 5
-proves equality with the covariant Maxwell response by retarded/advanced
-uniqueness and gauge independence. T2 then gives (6.5); the explicit spectral
-normalization in (6.6) proves equality of both inverses as distributions on
-the same test quotient. Finite propagation proves (7.1). $\square$
+show that source-induced solutions lie in the `T1-log/T2-log` space. Section
+4 derives the Maxwell/master adjoint map from the field-strength observable.
+Calculation `11` proves surjectivity onto compact reduced sources, causal
+exactness, absence of the relevant topological kernel, equality with the
+covariant Maxwell response, and gauge independence. `T2-log` then gives
+(6.5); the explicit spectral normalization in (6.6) proves equality of both
+inverses as distributions on the same test quotient. Finite propagation
+proves (7.1). $\square$
 
 ## 9. Regression
 
@@ -502,7 +516,7 @@ rests on the analytic support and uniqueness arguments above.
 
 ## 10. Boundary of the result
 
-T3 does not cover:
+`T3-local` does not cover:
 
 - noncompact or sharp endpoint observables;
 - a nonzero-integral profile smearing that creates memory/frame data outside

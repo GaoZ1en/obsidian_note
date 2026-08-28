@@ -2,15 +2,33 @@
 
 ## 1. Direct verdict and scope
 
-The full scoped technical chain is closed under the following precise reading:
+The zero-trace logarithmic radiation-field chain is closed; the affine
+horizon/corner range is not.  More precisely:
 
-- the background, orientations, endpoint policy, and gauge policy are fixed below;
+- the background, orientations, bundle sector, and gauge policy are fixed below;
 - the action-derived Maxwell system reduces to two regular half-line master fields for every $j\geq1$;
-- past-horizon restriction is a bijection on the declared smooth spectral/weighted-angular core and on its explicitly stated infrared-controlled completion;
-- a universal point-trace/endpoint theorem on the energy norm alone is `false`; the separately declared raw trace completion is classified, while its maximal smooth-center bulk range remains `conditional`;
-- the Maxwell Lee--Wald equality, compact-observable Peierls equality, Bunch--Davies KMS restriction, and stretched-horizon comparison are closed on the explicit spaces declared in `04`, `06`, `07`, and `09`.
+- `T1-log` is a restriction/reconstruction bijection on the declared
+  logarithmic spectral core and its infrared-controlled CPS completion;
+- `T2-log` is the corresponding Lee--Wald theorem with zero endpoint traces;
+- `10` proves a finite-order, modewise/rapid-angular affine criterion
+  `T1-aff(k)`, including a two-ended scattering compatibility condition, but
+  the maximal fixed-Sobolev affine Maxwell range `T1-aff` remains
+  `conditional`;
+- `T2-aff` and `T4-bulk` remain `conditional` because endpoint traces,
+  memory, relative frames, and the Lee--Wald representative must be matched
+  on that still-incomplete range;
+- `T3-local` is proved only after the Maxwell test-complex lemma in `11`;
+  `T3-sharp` remains conditional;
+- `T5-W*` is the normal KMS theorem in the BD GNS representation; the
+  abstract Weyl algebra has only a dense analytic boundary relation, not a
+  point-norm continuous $C^*$-dynamics;
+- the DEM DtN and modewise cut identities are proved, while a full
+  phase-space null-limit is conditional.
 
-Thus `03` proves the core and CPS-completed versions of T1. Calculations `04`, `06`, `08`, and `07` prove T2, T3, stratified T4, and local-algebra T5, respectively, on the explicit spaces stated there; `09` proves the scoped direct-null/DEM comparison. The energy-only point-trace claims `T1-max` and `T2-max` are `false`, whereas the trace-topology range claims `T1-trace` and `T2-trace` remain `conditional`. This project is not a new static-coordinate mode expansion: the logical order is
+Therefore calculations `00`--`09` are not all closed.  The former names T1,
+T2, T4, T5, and the boxed phase-space statement in `09` are split below and
+in the claim ledger.  This project is not a new static-coordinate mode
+expansion: the logical order is
 
 $$
 S[A]\longrightarrow \theta,\omega
@@ -251,6 +269,23 @@ such that, for each element:
 
 This is a smooth spectral core with rapid angular decay. It excludes $\omega=0$ by construction and is dense in each completion below.
 
+The normalized vector harmonics preserve angular Sobolev order for the
+radiative one-form $F_{vA}$, but the normal scalars and the angular two-form
+carry an additional factor $\sqrt{\lambda_j}$.  At fixed $s$ the master
+weight in (5.3) therefore maps to
+
+$$
+F_{vA}\in H^s(S^2;T^*S^2),
+\qquad
+\mathcal E,\mathcal B\in H^{s-1}(S^2).
+\tag{5.3a}
+$$
+
+All field-strength components lie in $H^s$ only if the master domain is
+raised to angular order $s+1$.  Polynomial losses are harmless in the
+Fréchet intersection over all $s$, but not in a fixed-$s$ isomorphism.  The
+exact estimate is recorded in `10`, section 8.
+
 ### 5.3 Energy and CPS completions
 
 The static energy is
@@ -286,7 +321,7 @@ $$
 \tag{5.6}
 $$
 
-On the zero-endpoint spectral core, the relevant boundary flux variations vanish and the potential quotient agrees with the field-strength description. On an endpoint-enlarged phase space, transformations failing (5.6) are charged directions and must be retained or represented by an explicitly chosen boundary frame. That enlarged statement is not silently included in T1.
+On the zero-endpoint spectral core, the relevant boundary flux variations vanish and the potential quotient agrees with the field-strength description. On an endpoint-enlarged phase space, transformations failing (5.6) are charged directions and must be retained or represented by an explicitly chosen boundary frame. That enlarged statement is not silently included in `T1-log`.
 
 ## 6. Horizon coordinates and endpoint policy
 
@@ -294,7 +329,8 @@ On $\mathcal H^-$,
 
 $$
 V=-e^{-v},\qquad dV=(-V)dv,\qquad
-F_{vA}=(-V)F_{VA}.
+r_A^{\rm aff}(V,x):=F_{VA},\qquad
+\mathfrak r_A(v,x):=F_{vA}=(-V)F_{VA}.
 \tag{6.1}
 $$
 
@@ -308,16 +344,31 @@ $$
 
 The past endpoint $V\to-\infty$ and the bifurcation endpoint $V\to0^-$ are treated as follows:
 
-- on an affine-smooth core, pointwise corner fields at $B$ exist and are retained in the raw data;
-- on $\mathfrak C_{\mathrm{sp}}$, logarithmic profiles are Schwartz in $v$ and have zero limits, although $F_{VA}$ need not be affine-smooth at $V=0$;
+- on an affine-smooth core, $r_A^{\rm aff}$ and the transported corner fields
+  have genuine $V$-traces at $B$;
+- on $\mathfrak C_{\mathrm{sp}}$, $\mathfrak r_A$ and the master profiles are
+  Schwartz in $v$ and have zero logarithmic limits, but
+  $r_A^{\rm aff}=e^v\mathfrak r_A$ need not be bounded at $V=0$;
 - in the completion (5.5), point evaluation at $B$ is not continuous and is not used;
 - nonzero endpoint limits, half-horizon memory, and charged relative frames require an enlarged space and are deferred to `08`.
+
+The exact finite-order criterion is
+
+$$
+\partial_V^nr_A^{\rm aff}
+=e^{(n+1)v}\prod_{q=1}^{n}(\partial_v+q)\mathfrak r_A,
+\tag{6.3}
+$$
+
+so affine $C^k$ regularity is equivalent to the existence of the limits of
+(6.3) for $0\leq n\leq k$.  `10` proves this statement and gives an explicit
+Schwartz counterexample.
 
 Thus “corner datum” means an actual trace only on a space where that trace has been declared. No point value is assigned to a generic Hilbert-space equivalence class.
 
 ## 7. Precise theorem targets
 
-### T1 — characteristic restriction/reconstruction
+### T1-log — spectral radiation-field restriction/reconstruction
 
 Let $\mathcal X_{\mathcal H^-}^{\mathrm{comp},(s)}$ be the constraint-complete past-horizon space defined in `01` and coordinatized spectrally in `03`. The target theorem is
 
@@ -327,35 +378,58 @@ R_-:\mathcal P_{\mathrm{bulk}}^{(s)}
 \longrightarrow
 \mathcal X_{\mathcal H^-}^{\mathrm{comp},(s)}
 \text{ is a continuous bijection with continuous inverse}.}
-\tag{T1}
+\tag{T1-log}
 $$
 
-Status: `proved` on $\mathfrak C_{\mathrm{sp}}$ and the infrared-controlled completion (5.5), at `03`, Theorem 7.1. The maximal finite-energy/endpoint extension is `conditional`.
+Status: `proved` on $\mathfrak C_{\mathrm{sp}}$ and the infrared-controlled
+completion (5.5), at `03`, Theorem 7.1.  This is a theorem for
+$\mathfrak r_A=F_{vA}$ in static/logarithmic time, not for affine-smooth
+$r_A^{\rm aff}=F_{VA}$.
 
-### T2 — Lee--Wald restriction and symplectic scattering
+### T1-aff — affine horizon/corner range
+
+For fixed differentiability order $k$, `10`, Theorem 6.1 proves the exact
+modewise and rapid-angular condition: the incoming master trace must satisfy
+the $v\to+\infty$ affine limits, the scattered trace $S_jc$ must satisfy the
+$u\to-\infty$ affine limits, and the two corner values must agree.
+
+Status: `proved` as `T1-aff(k)` on that finite-order smooth core;
+`conditional` for the maximal fixed-Sobolev affine Maxwell range and its
+completed endpoint topology.
+
+### T2-log — logarithmic Lee--Wald restriction and scattering
 
 $$
 \boxed{R_-^*\Omega_-=\Omega_{\mathrm{bulk}},
 \qquad
 \mathscr S^*\Omega_+=\Omega_-.}
-\tag{T2}
+\tag{T2-log}
 $$
 
 Status: `proved` on $\mathfrak C_{\mathrm{sp}}$ and the infrared-controlled
 completion (5.5), at `04`, Theorem 9.1. The maximal finite-energy extension
-with independent endpoint traces remains `conditional` and is not silently
-included in T2.
+with independent endpoint traces is not included.
 
-### T3 — characteristic inverse equals the Peierls bracket
+### T2-aff — endpoint-extended Lee--Wald equality
+
+This statement allows genuine affine traces, memory, and optional relative
+frames.  It must specify the representative
+$\theta\mapsto\theta+dY+\delta B$, the boundary action, boundary conditions,
+and polarization because $dY$ shifts the cut symplectic potential by a corner
+term.  It also depends on the maximal `T1-aff` range.
+
+Status: `conditional`.
+
+### T3-local / T3-sharp — characteristic inverse equals the Peierls bracket
 
 The inverse of the complete horizon two-form, lifted through the field-strength dictionary, must equal the bulk advanced-minus-retarded Maxwell propagator on gauge-invariant smearings.
 
-Status: `proved` on the compact gauge-invariant field-strength test quotient
-$\Omega_c^2/\mathcal N_F$, at `06`, Theorem 8.1. Sharp endpoint-memory
-functionals outside the CPS topology remain `conditional` and are not included
-in T3.
+Status: `proved` as `T3-local` on the compact gauge-invariant field-strength
+test quotient $\Omega_c^2/\mathcal N_F$, by `06`, Theorem 8.1 together with
+the test-complex lemma `11`.  `T3-sharp` for endpoint-memory functionals
+outside the CPS topology remains `conditional`.
 
-### T4 — Coulomb, corner, topology, zero frequency, and memory
+### T4-kin / T4-bulk — trace decomposition versus bulk range
 
 The target is a disjoint classification of:
 
@@ -366,16 +440,23 @@ The target is a disjoint classification of:
 5. the $\omega\to0$ limit of radiative states;
 6. discrete bundle topology.
 
-Status: `conditional` as a complete theorem. `02` proves the absence of smooth finite-energy $j=0$ electric/magnetic flux on $B^3$, while `01` and `03` prove the core $j\geq1$ corner dictionary. The endpoint/memory completion is reserved for `08`.
+Status: `T4-kin` is `proved` in `08`: the chosen trace core has a unique
+splitting and canonical form, with memory conjugate to the shifted coordinate
+$\widehat a=a+2\ell_h(x)$.  `T4-bulk` is `conditional`: `10` gives necessary
+and sufficient finite-mode $C^k$ conditions, but not the maximal completed
+full-tower range.  `02` proves $Q_E=Q_B=0$ and no flat holonomy in the fixed
+smooth trivial-bundle sector.
 
-### T5 — Bunch--Davies KMS restriction
+### T5-W* / T5-C* — Bunch--Davies KMS restriction
 
 The Bunch--Davies state, defined globally by Euclidean analyticity or equivalently by affine-horizon positive frequency on the gauge-invariant algebra, restricts to a $\beta=2\pi L$ KMS state for static time translations.
 
-Status: `proved` on the local-observable/BD-continuity characteristic algebra,
-at `07`, Theorem 8.1. A regular extension to every vector of the larger CPS
-completion is `false` without additional infrared control. No formal partial
-trace or sharp Hilbert-space tensor factorization is used.
+Status: `T5-W*` is `proved` on the BD GNS von Neumann algebra, where static
+time is a normal, weak-* continuous dynamics.  `T5-C*` denotes only the KMS
+boundary relation on a dense analytic *-algebra of the abstract Weyl algebra;
+the claim that the Weyl automorphisms are point-norm strongly continuous is
+`false`.  A regular BD extension to every vector of the larger CPS completion
+is also `false` without additional infrared control.
 
 ## 8. Status discipline
 

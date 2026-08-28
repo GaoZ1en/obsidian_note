@@ -4,20 +4,25 @@
 
 The broad novelty claims are already unavailable. Free massless all-spin de Sitter horizon scattering, radiative horizon symplectic forms, horizon photon quantization, source-free electromagnetic horizon-memory decay, standard static-patch thermality, and stretched-horizon Maxwell edge modes all have direct prior art.
 
-The completed technical conjunction is:
+The repaired technical conjunction is split:
 
 1. an action-first raw half-horizon CPS with constraints and bifurcation-corner data retained before gauge reduction;
 2. a precise proper-gauge/charged-endpoint policy;
-3. a noncircular half-horizon restriction/reconstruction theorem on explicit spaces;
-4. full Maxwell Lee--Wald and Peierls equivalence;
-5. a classification of the static-patch half-horizon corner, topology, memory, and $\omega\to0$ sectors;
-6. a computed comparison with stretched-horizon reduction.
+3. a proved logarithmic radiation-field restriction/reconstruction theorem
+   `T1-log` and its `T2-log` Lee--Wald equality;
+4. a proved compact-observable Maxwell Peierls theorem `T3-local`, including
+   the explicit static-patch test-complex hypotheses;
+5. a proved kinematic trace classification `T4-kin`;
+6. a finite-order affine criterion `T1-aff(k)` whose range includes a
+   two-ended $S_j$-dependent Mellin/Hardy compatibility;
+7. exact stretched-horizon DtN/cut coefficient results without a completed
+   phase-space limit theorem.
 
-Items 1--6 are now implemented on the scoped spaces of `01`--`09`.  The
-novelty verdict is nevertheless negative for the present article: every
-conceptual component has close prior art, the exact endpoint completion is a
-chosen raw trace space rather than a proved maximal bulk range, and the new
-exact formulas are calibration-strength refinements.  No exact single-paper
+The maximal affine range `T1-aff/T4-bulk`, endpoint-extended `T2-aff`, sharp
+Peierls theorem, and completed DEM limit remain conditional.  The novelty
+verdict is therefore negative for the present article: every closed
+conceptual component has close prior art, and the potentially new affine
+condition is not yet a maximal completed theorem.  No exact single-paper
 match was located, but search absence is not evidence of novelty.
 
 ## 2. Audit method and limits
@@ -162,7 +167,8 @@ What this project may add:
 Cannot say:
 
 - that comparing an inverse characteristic form with the Peierls bracket is a new strategy in general;
-- that this gravity result proves the Maxwell field-strength equality T3.
+- that this gravity result proves the Maxwell field-strength equality
+  `T3-local`.
 
 ### 3.6 Khavkine (2014) and Harlow--Wu (2019)
 
@@ -189,12 +195,17 @@ Boundary:
 What this project adds:
 
 - an explicit master causal kernel, Maxwell field-strength lift, and
-  characteristic inverse on the same compact test quotient.
+  characteristic inverse on the same compact test quotient;
+- a direct verification in `11` of compact reduced-source surjectivity,
+  causal exactness, the relevant compact-support cohomology, the Lorenz/master
+  Green diagram, regular-center hypotheses, and gauge independence.
 
 Cannot say:
 
 - that equality of Lee--Wald/CPS and Peierls structures is conceptually new;
-- that T3 alone supplies an article novelty pillar.
+- that `T3-local` alone supplies an article novelty pillar;
+- that the general theorems remove the need to check this static-patch test
+  complex.
 
 ## 4. de Sitter photon quantization and memory
 
@@ -221,7 +232,8 @@ Project-specific result:
 - derivation from the unfixed Maxwell action with raw $\mathcal E$ and $F_{AB}$ transport/corner data exposed;
 - a theorem for one static-patch horizon half ending at $B$, rather than only the complete cosmological-horizon/global-local-observable formulation;
 - the exact relation between hard-frequency data, finite-energy half-memory profiles, proper endpoint transformations, and the bifurcation corner on the declared trace core;
-- full Lee--Wald/Peierls equivalence in the static half-line representation.
+- the scoped `T2-log/T3-local` Lee--Wald/Peierls equality on the compact local
+  field-strength quotient in the static half-line representation.
 
 Coordinate translation completed in `08`:
 
@@ -392,7 +404,7 @@ What this project may add:
 
 Cannot say:
 
-- that T5 is new thermodynamics;
+- that `T5-W*` is new thermodynamics;
 - that Bunch--Davies should be defined by a formal reduced density matrix.
 
 ## 7. Stretched horizons and edge modes
@@ -417,15 +429,21 @@ Project-specific result in `09`:
   $K_{j,R}=\lambda_jx_R^2Q_j(x_R)/(LB_j)$ and its finite
   $-H_j^{\rm harm}$ term;
 - the exact coefficient map from the DEM pair to the electric $B$-cut term;
-- the verdict that the default direct-null CPS differs by
-  $T^*\mathcal G_B'$, while the split-$B$ polarization matches;
+- the finite-harmonic linear coefficient mismatch
+  $T^*\mathfrak g_B'$ and the split-$B$ cut-form identity;
 - the distinction between a nonconvergent real-frequency radiative DtN and
   its limiting-absorption/strong-resolvent limit.
+
+The completed claim that reduction and the null limit differ exactly by that
+cotangent sector is now `conditional`; a common ambient topology,
+symplectic/reduction convergence, affine bulk range, and global $U(1)$ frame
+periodicity are not supplied by the coefficient calculation.
 
 Cannot say:
 
 - that stretched-horizon Maxwell dynamical edge modes are new;
-- that their oscillator survives unchanged at a direct null horizon;
+- that their oscillator survives unchanged in a completed direct-null phase
+  space;
 - that direct-null CPS must contain a universal edge oscillator;
 - that the exact $Q_j$ refinement alone is an article-level novelty.
 
@@ -460,7 +478,8 @@ Known:
 
 What this project may add:
 
-- the corresponding direct-null reduced-phase-space comparison, if it exists after T1--T4.
+- the corresponding direct-null reduced-phase-space comparison, if it survives
+  the `T1-aff/T4-bulk` range gate.
 
 Cannot say:
 
@@ -497,30 +516,31 @@ Related but distinct: Hackl--Neiman, [Horizon complementarity in elliptic de Sit
 | free de Sitter Maxwell horizon scattering | yes, in all-spin form | action/corner/half-line translation | “first S-matrix” |
 | static-coordinate Maxwell separation | yes, in Lorenz-gauge hypergeometric form | action-first invariant masters and characteristic range | “first exact static Maxwell modes” |
 | radiative horizon symplectic form | yes | raw constraint/corner completion and Lee--Wald proof | “first horizon photon CPS” |
-| $A_A$ or $F_{VA}$ as hard data | yes in gauge/helicity formulations | precise range and endpoint policy | unconditional single-profile completeness |
+| $A_A$ or $F_{VA}$ as hard data | yes in gauge/helicity formulations | affine/log split and the two-ended $S_j$ range | unconditional single-profile completeness |
 | exact $S_j(\omega)$ | scalar phase methods and all-spin scattering known | clean finite-product calibration | standalone novelty |
 | source-free Maxwell memory | zero-memory result known for global local-observable class | half-horizon $B$-corner reconciliation | “memory unstudied” |
 | Bunch--Davies KMS | standard | compatibility with this exact Weyl map | novelty pillar |
-| stretched-horizon edge modes | yes | exact endpoint-policy-dependent comparison in `09` | assumed equality with direct-null CPS |
-| Peierls equals characteristic inverse | general gauge/boundary equivalence is known; exact de Sitter half-horizon formula not located | explicit test quotient and lift in `06` | conceptual novelty for T3 |
+| stretched-horizon edge modes | yes | exact DtN and finite-mode cut coefficient comparison in `09` | completed direct-null phase-space isomorphism |
+| Peierls equals characteristic inverse | general gauge/boundary equivalence is known; exact de Sitter half-horizon formula not located | explicit test quotient/lift in `06` and exactness audit in `11` | conceptual novelty for `T3-local` |
 | null characteristic/Peierls comparison as a method | yes for vacuum gravity | Maxwell field-strength theorem on the stated half-horizon space | “first such strategy” |
-| action-first complete-data theorem with proper gauge/corners | no exact single-paper match located | scoped chain `01`--`08`; maximal trace range still conditional | novelty based on search absence |
+| action-first affine complete-data theorem with proper gauge/corners | no exact single-paper match located | finite-order two-ended theorem in `10`; maximal affine range still conditional | novelty based on search absence |
 
 ## 10. Positioning decision
 
-The technically correct positioning is a structural equivalence and
-calibration theorem, not a new mode spectrum or thermal effect.  The completed
-chain is
+The technically correct positioning is a closed logarithmic structural chain
+plus an open affine-range problem, not a new mode spectrum or thermal effect.
+The proved chain is
 
 $$
 \text{bulk Lee--Wald/Peierls}
 \longleftrightarrow
-\text{constraint-complete half-horizon CPS}
+\text{constraint-complete logarithmic half-horizon CPS}
 \longleftrightarrow
 \text{Weyl algebra},
 $$
 
 with all corner, proper-gauge, topology, and infrared qualifications explicit.
+It does not include the maximal smooth-across-$B$ endpoint range.
 
 The publication verdict is `false`: the current $dS_4$ project does not clear
 the novelty gate.  The decisive reasons are:
@@ -533,37 +553,44 @@ the novelty gate.  The decisive reasons are:
 4. the DEM edge pair and leading inverse-log Hamiltonian scaling are prior
    art;
 5. the new half-horizon trace completion is deliberately chosen and finite,
-   but its maximal smooth-center bulk range (`T1-trace`/`T2-trace`) is not
-   proved;
+   while its maximal smooth-across-$B$ bulk range
+   (`T1-aff/T2-aff/T4-bulk`) is not proved;
 6. the exact $S_j$, Legendre-$Q_j$ kernel, and endpoint coefficient maps are
    useful regressions/refinements but not a sufficient standalone novelty.
 
-Retain this directory as an internal calibration note.  The pivot order is
-Schwarzschild--de Sitter Maxwell, then Nariai $dS_2\times S^2$.
+Do not pivot yet.  `10` identifies a nontrivial two-ended affine compatibility
+involving the exact $S_j$ multiplier, so one narrow kill test remains open.
+Freeze every other static-patch extension.  If that condition cannot be
+upgraded to a maximal completed Mellin--Hardy range theorem, retain this
+directory as calibration and pivot to Schwarzschild--de Sitter Maxwell, then
+Nariai $dS_2\times S^2$.
 
 ## 11. Current claim, blockers, and reopening condition
 
 ### Current defensible technical claim
 
-On the declared CPS and smooth trace cores, source-free $dS_4$ Maxwell admits
-an action-first bulk/half-horizon reconstruction whose Lee--Wald form and
-compact-observable Peierls bracket agree, with exact scattering, algebraic
-quantization/KMS compatibility, a stratified endpoint classification, and an
-explicit DEM comparison.  This is `proved` in the project sense, not claimed
-as first in the literature.
+On the declared logarithmic CPS, source-free $dS_4$ Maxwell admits an
+action-first bulk/radiation reconstruction whose Lee--Wald form and
+compact-observable Peierls bracket agree, with exact scattering and normal
+BD-GNS KMS compatibility.  Separately, the project proves `T4-kin`, the
+finite-order `T1-aff(k)` criterion, and exact DEM DtN/finite-mode cut
+identities.  It does not prove a maximal affine endpoint phase space or DEM
+phase-space limit.
 
 ### Remaining blockers
 
-- `T1-trace`/`T2-trace`: characterize the maximal bulk-compatible subspace of
-  the raw trace completion;
-- `T3-max`: decide whether sharp memory/cut functionals admit a controlled
+- `T1-aff/T2-aff/T4-bulk`: characterize the maximal bulk-compatible affine
+  subspace of the raw trace completion;
+- `T3-sharp`: decide whether sharp memory/cut functionals admit a controlled
   Peierls extension;
+- `E-limit`: build a common topology and prove symplectic reduction
+  convergence;
 - novelty: locate a phenomenon absent from the conformally trivial $dS_4$
   calibration.
 
 ### Reopening/submission condition
 
-Reconsider a $dS_4$ paper only if one of those three blockers is closed with a
-theorem not already implied by the cited horizon-algebra, general
-CPS/Peierls, or DEM results.  Otherwise start the separate
-Schwarzschild--de Sitter project rather than expanding this calibration note.
+Reconsider a $dS_4$ paper only if the two-ended affine condition becomes a
+maximal completed range theorem not already implied by the cited global
+horizon results.  If it reduces to a direct restatement, freeze the static
+patch and only then start the separate Schwarzschild--de Sitter project.

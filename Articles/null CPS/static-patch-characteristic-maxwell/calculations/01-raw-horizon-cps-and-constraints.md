@@ -2,15 +2,43 @@
 
 ## 1. Direct verdict
 
-The unconstrained pullback of Maxwell theory to one cosmological-horizon sheet is not specified by $F_{VA}$ or $A_A$ alone. Before imposing the regular-bulk range, the constraint-complete raw data on $\mathcal H^-$ are
+The unconstrained pullback of Maxwell theory to one cosmological-horizon
+sheet is not specified by $F_{VA}$ or $A_A$ alone.  Use distinct names for
+the affine and logarithmic radiative fields,
 
 $$
-\boxed{\left(r_A(V,x);\ \mathcal E_B(x),\ b^B_{AB}(x)\right),
-\qquad r_A:=F_{VA}|_{\mathcal H^-},}
+r_A^{\rm aff}(V,x):=F_{VA},
+\qquad
+\mathfrak r_A(v,x):=F_{vA}=(-V)F_{VA}.
+\tag{1.0}
+$$
+
+Before imposing the regular-bulk range, the constraint-complete affine data
+on $\mathcal H^-$ are
+
+$$
+\boxed{\left(r_A^{\rm aff}(V,x);\ \mathcal E_B(x),\ b^B_{AB}(x)\right),}
 \tag{1.1}
 $$
 
-together with an endpoint policy and, in a potential polarization, the declared gauge-frame data. The generator constraints transport $\mathcal E$ and $F_{AB}$ from the corner. Only after imposing smooth-center regularity, trivial $B^3$ topology, the no-$\omega=0$ spectral policy, and the bulk master equations does $F_{VA}$ become complete on the core of T1.
+together with an endpoint policy and, in a potential polarization, the
+declared gauge-frame data.  The generator constraints transport $\mathcal E$
+and $F_{AB}$ from the corner.  `03` proves completeness of the logarithmic
+field $\mathfrak r_A$ on `T1-log`; it does not prove that
+$r_A^{\rm aff}=e^v\mathfrak r_A$ is affine smooth.  The latter range is
+governed by `10` and remains conditional at maximal fixed-Sobolev level.
+
+The main project starts from one global potential on the trivial bundle.
+Therefore
+
+$$
+\boxed{\int_{S^2}b^B=0}
+\tag{1.2}
+$$
+
+already in the raw tangent space.  A nonzero magnetic Chern integer requires
+patchwise connections and transition functions and is an external discrete
+superselection sector, not a tangent vector of (1.1).
 
 There is no universal independent edge oscillator. A relative frame becomes canonical only in an endpoint-enlarged or split-frame polarization where its conjugate flux is allowed to vary.
 
@@ -82,7 +110,7 @@ $$
 \qquad
 p_A:=F_{UA},
 \qquad
-r_A:=F_{VA}.
+r_A^{\rm aff}:=F_{VA}.
 \tag{3.2}
 $$
 
@@ -92,7 +120,7 @@ $$
 \boxed{
 \theta\big|_{\mathcal H^-}
 =dV\wedge\operatorname{vol}_{q}
-\left(\mathcal E\,\delta A_V+r^A\delta A_A\right),}
+\left(\mathcal E\,\delta A_V+r_{\rm aff}^A\delta A_A\right),}
 \tag{3.3}
 $$
 
@@ -112,8 +140,8 @@ $$
 =\int_{\mathcal H^-}dV\,dS_q\big[&
 \delta_1A_V\,\delta_2\mathcal E-
 \delta_2A_V\,\delta_1\mathcal E\\
-&+\delta_1A_A\,\delta_2r^A-
-\delta_2A_A\,\delta_1r^A\big].
+&+\delta_1A_A\,\delta_2r_{\rm aff}^A-
+\delta_2A_A\,\delta_1r_{\rm aff}^A\big].
 \end{aligned}
 \tag{3.5}
 $$
@@ -148,12 +176,12 @@ Status of (3.3)--(3.6): `checked symbolically`.
 Because $q_{AB}=L^2\gamma_{AB}$ is constant along the generators of $\mathcal H^-$, the $U$-component of Maxwell's equation and the tangential Bianchi identity give
 
 $$
-\boxed{\partial_V\mathcal E+D^Ar_A=0,}
+\boxed{\partial_V\mathcal E+D^Ar_A^{\rm aff}=0,}
 \tag{4.1}
 $$
 
 $$
-\boxed{\partial_VF_{AB}-2D_{[A}r_{B]}=0.}
+\boxed{\partial_VF_{AB}-2D_{[A}r^{\rm aff}_{B]}=0.}
 \tag{4.2}
 $$
 
@@ -178,7 +206,7 @@ $$
 The remaining angular Maxwell equation can be written before restriction as
 
 $$
-\frac1{\sqrt q}\partial_U(\sqrt q\,r^A)
+\frac1{\sqrt q}\partial_U(\sqrt q\,r_{\rm aff}^A)
 +\frac1{\sqrt q}\partial_V(\sqrt q\,p^A)
 -D_B\!\left(\mathcal A F_q^{BA}\right)=0,
 \tag{4.5}
@@ -187,7 +215,7 @@ $$
 where $F_q^{BA}=q^{BC}q^{AD}F_{CD}$. The $UVA$ Bianchi identity is
 
 $$
-\partial_Ur_A-\partial_Vp_A+D_A(\mathcal A\mathcal E)=0.
+\partial_Ur_A^{\rm aff}-\partial_Vp_A+D_A(\mathcal A\mathcal E)=0.
 \tag{4.6}
 $$
 
@@ -197,7 +225,8 @@ The classification is therefore:
 
 | role | past-horizon quantity | status before bulk range |
 |---|---|---|
-| radiative profile | $r_A(V,x)$ | freely specifiable within the declared regularity class |
+| affine radiative profile | $r_A^{\rm aff}(V,x)$ | freely specifiable within the declared affine regularity class |
+| logarithmic radiation field | $\mathfrak r_A(v,x)=(-V)r_A^{\rm aff}$ | variable used by `T1-log`; not automatically affine smooth |
 | generator transport | (4.1), (4.2) | intrinsic constraints |
 | corner integration data | $\mathcal E_B, b^B_{AB}$ | independent raw data |
 | endpoint data | limits/frames at $V=-\infty,0$ | require a separate endpoint policy |
@@ -210,18 +239,22 @@ On an affine-smooth horizon core, integrating from $B$, located at $V=0$, gives
 $$
 \boxed{
 \mathcal E(V,x)=\mathcal E_B(x)
--\int_0^VdV'\,D^Ar_A(V',x),}
+-\int_0^VdV'\,D^Ar_A^{\rm aff}(V',x),}
 \tag{5.1}
 $$
 
 $$
 \boxed{
 F_{AB}(V,x)=b^B_{AB}(x)
-+2\int_0^VdV'\,D_{[A}r_{B]}(V',x).}
++2\int_0^VdV'\,D_{[A}r^{\rm aff}_{B]}(V',x).}
 \tag{5.2}
 $$
 
-Thus $r_A$ alone is not constraint-complete on a generic null sheet. In the CPS completion, (5.1)--(5.2) are interpreted weakly and pointwise $\mathcal E_B,b^B_{AB}$ are used only when the endpoint trace exists.
+Thus $r_A^{\rm aff}$ alone is not constraint-complete on a generic null
+sheet.  In the logarithmic CPS completion, the corresponding equations are
+interpreted weakly through $\mathfrak r_A$ and pointwise
+$\mathcal E_B,b^B_{AB}$ are not assigned unless a separate affine trace
+hypothesis is imposed.
 
 The spherical means obey
 
@@ -232,7 +265,12 @@ $$
 \tag{5.3}
 $$
 
-They are the electric-flux and magnetic-Chern $j=0$ sectors. The raw sheet equations preserve them; only smooth extension through the center and the topology of $B^3$ eliminate them in the source-free static-patch bulk space.
+They are the electric-flux and magnetic-Chern $j=0$ sectors.  The raw sheet
+equations preserve both means, but the present global-potential/trivial-bundle
+tangent space already fixes the magnetic mean to zero by (1.2).  Smooth
+source-free extension through the center additionally removes the electric
+mean.  A sum over discrete Chern sectors would require a separate patchwise
+bundle formulation.
 
 ## 6. Harmonic content and the regular-bulk range
 
@@ -292,7 +330,7 @@ $$
 Then
 
 $$
-\boxed{\partial_V\overline A_A=r_A.}
+\boxed{\partial_V\overline A_A=r_A^{\rm aff}.}
 \tag{7.2}
 $$
 
@@ -302,8 +340,11 @@ Consequently:
 
 - arbitrary $A_A(V,x)$ is gauge dependent and is not intrinsically complete;
 - $A_A$ in generator gauge is complete on the zero-frequency-free bulk range only after fixing its integration frame;
-- arbitrary $F_{VA}$ is not raw-sheet complete;
-- $F_{VA}$ is bulk complete on the T1 core because the master derivative is invertible there and $j=0$ is absent;
+- arbitrary $r_A^{\rm aff}=F_{VA}$ is not raw-sheet complete;
+- $\mathfrak r_A=F_{vA}$ is bulk complete on the `T1-log` core because the
+  master derivative is invertible there and $j=0$ is absent;
+- that statement does not make $r_A^{\rm aff}=e^v\mathfrak r_A$ affine
+  regular; `10` gives the extra condition;
 - in an endpoint/memory extension, an integration constant or frame may have to be restored.
 
 ## 8. Proper gauge and charged endpoint transformations
@@ -359,27 +400,37 @@ On the smooth affine core, define
 
 $$
 \mathcal X_{\mathcal H^-}^{\rm raw}
-=\left\{(r_A;\mathcal E_B,b^B_{AB};\text{endpoint frame policy})
+=\left\{(r_A^{\rm aff};\mathcal E_B,b^B_{AB};\text{endpoint frame policy})
 \text{ satisfying (5.1)--(5.2)}\right\}.
 \tag{9.1}
 $$
 
-The T1 target is the regular-bulk subspace
+This is an affine raw space and includes the zero magnetic-mean condition
+(1.2).  The `T1-log` target is instead the independently defined spectral
+space of $\mathfrak r_A$ in `03`.  The affine bulk-compatible subspace
 
 $$
-\mathcal X_{\mathcal H^-}^{\mathrm{comp}}
+\mathcal X_{\mathcal H^-}^{\rm aff,bulk}
 :=\mathcal X_{\mathcal H^-}^{\rm raw}
 \cap\operatorname{Ran}(R_-),
 \tag{9.2}
 $$
 
-but `03` gives an independent spectral description of (9.2), so T1 is not a circular “bijection onto the image.” On the core, $\mathcal X^{\rm comp}$ is equivalently the set of exact/coexact radiative coefficients whose positive-frequency transforms lie in $C_c^\infty(0,\infty)$ with the angular weights (5.3), with corner fields reconstructed by (6.3) and no $j=0$ sector.
+is not identified merely by declaring it to be an image.  `10` gives an
+independent finite-order description using weighted affine limits of the
+incoming trace and the opposite-end limits of $S_jc$.  That description is
+proved for finite harmonics/rapid-angular smooth data; the maximal completed
+space remains `T1-aff`, status `conditional`.
 
 ## 10. What has and has not been established
 
 - Raw action, pullback, relative signs, and Hodge map: `checked symbolically`.
 - Intrinsic constraint hierarchy and corner integrations: `proved`.
-- $F_{VA}$-only completeness on the T1 core: `proved` in `03`.
+- $\mathfrak r_A=F_{vA}$-only completeness on `T1-log`: `proved` in `03`.
+- affine $r_A^{\rm aff}=F_{VA}$ range: `T1-aff(k)` proved in `10` on the
+  finite-order smooth core; maximal completion `conditional`.
+- arbitrary nonzero magnetic Chern mean within the global-potential tangent
+  space: `false`.
 - $A_A$-only completeness without a generator frame: `false`.
 - A universal independent edge oscillator on every null sheet: `false`.
 - Complete endpoint/memory/large-gauge classification on the maximal finite-energy space: `conditional`, deferred to `08`.
