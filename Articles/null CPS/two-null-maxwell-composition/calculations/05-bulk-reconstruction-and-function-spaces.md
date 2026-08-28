@@ -1,5 +1,9 @@
 # Bulk Reconstruction and Function Spaces
 
+This is the Layer-L local Goursat theorem. Its bulk space consists of
+solutions on the finite triangle/rectangle determined by the cross, not the
+global finite-energy solution space of calculation 12.
+
 ## 1. Direct verdict
 
 **Status: proved** on the rapid-angular matched-$H^1$ Fréchet core, and hence
@@ -293,7 +297,7 @@ range of (4.1) has been supplied here.  Therefore the Hilbert-level
 reconstruction and quotient remain `conditional`; the rapid theorem above is
 not promoted by defining a graph norm from the desired inverse.
 
-## 10. Theorem T-D
+## 10. Theorem L-D
 
 Under the assumptions of Section 1, the composition
 
@@ -308,7 +312,7 @@ $$
 \tag{10.1}
 $$
 
-is the continuous inverse of $R_X$.  Thus T-D is `proved` on the
+is the continuous inverse of $R_X$. Thus L-D is `proved` on the
 rapid-angular matched-$H^1$ core and remains `conditional` only for stronger
 same-order or shifted Hilbert completions beyond this declared graph.
 

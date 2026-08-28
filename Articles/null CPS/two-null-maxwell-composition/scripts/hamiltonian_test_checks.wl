@@ -55,11 +55,11 @@ rotationResidual = FullSimplify[
 
 zeroArrayQ[array_] := And @@ (TrueQ[FullSimplify[# == 0]] & /@ Flatten[array]);
 
-(* If A is symplectic, H=-Omega.A is symmetric for the convention
-   i_A Omega=-dH. *)
-timeHamiltonianCandidate = FullSimplify[-omegaX . timeGenerator];
-spaceHamiltonianCandidate = FullSimplify[-omegaX . spaceGenerator];
-rotationHamiltonianCandidate = FullSimplify[-omegaTwoM . rotationGenerator];
+(* With Omega(x,y)=x^T.Omega.y and i_A Omega=-dH, the quadratic
+   Hamiltonian matrix is Omega.A.  Its symmetry is the finite test. *)
+timeHamiltonianCandidate = FullSimplify[omegaX . timeGenerator];
+spaceHamiltonianCandidate = FullSimplify[omegaX . spaceGenerator];
+rotationHamiltonianCandidate = FullSimplify[omegaTwoM . rotationGenerator];
 
 checks = {
   "finite characteristic form is nondegenerate on the test basis" ->

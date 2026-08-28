@@ -1,5 +1,8 @@
 # Corner Compatibility and Diagonal Reduction
 
+This is theorem L-B. “Anchored” below means a finite-endpoint section of the
+split-frame polarization, not a bulk gauge condition.
+
 ## 1. Direct verdict
 
 **Correct under the following precise conditions:** finite harmonic/generator

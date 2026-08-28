@@ -1,5 +1,9 @@
 # Oriented Null Segments and Endpoints
 
+This is a Layer-L finite-cross calculation. Its fixed outer exact
+dressed-connection coefficient is an endpoint section / boundary-polarization
+choice, not ordinary bulk gauge fixing and not a claim about infinity.
+
 ## 1. Raw pullbacks
 
 Decompose
@@ -175,4 +179,4 @@ the displayed constraints.
 
 **Boundary:** a change
 $\theta\mapsto\theta+dY+\delta B$ or a different outer polarization changes
-the endpoint ledger and must be re-audited before T-E.
+the endpoint ledger and must be re-audited before L-E.

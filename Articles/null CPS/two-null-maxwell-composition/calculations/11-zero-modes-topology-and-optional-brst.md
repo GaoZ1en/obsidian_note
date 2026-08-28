@@ -3,7 +3,8 @@
 ## Status
 
 **Status: conditional.** None of the following is a blocker for the main
-$\ell\geq1$, $Q_E=n=0$, trivial-bundle theorem.
+$\ell\geq1$, $Q_E=n=0$, trivial-bundle Layer-L or Layer-G theorem. They are
+not included in the global energy, Hamiltonian, Peierls, or Weyl sums.
 
 ## Separated sectors
 

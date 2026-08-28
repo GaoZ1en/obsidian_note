@@ -8,6 +8,7 @@ wolframscript -file scripts/maxwell_master_commuting_checks.wl
 wolframscript -file scripts/phase_ii_goursat_lee_wald_checks.wl
 python3 scripts/full_maxwell_composition_checks.py
 wolframscript -file scripts/hamiltonian_test_checks.wl
+python3 scripts/global_horizon_exhaustion_checks.py
 ```
 
 ## `finite_harmonic_reduction.py`
@@ -75,7 +76,8 @@ ALL FULL-MAXWELL COMPOSITION CHECKS PASSED
 
 ## `hamiltonian_test_checks.wl`
 
-This is a kill test, so a passing script confirms the diagnosed obstruction:
+This is an obstruction test, so a passing script confirms the diagnosed
+moving-boundary statement:
 finite-cross time and space translations have nonzero symplecticity residuals,
 whereas the $SO(3)$ rotation block has zero residual.
 
@@ -84,3 +86,25 @@ Expected final line:
 ```text
 ALL HAMILTONIAN KILL TESTS PASSED
 ```
+
+## `global_horizon_exhaustion_checks.py`
+
+Uses sampled Schwartz massive spectral packets and deterministic finite spectral
+matrices to check:
+
+- $\Omega_{X_T}\to\Omega_{X_\infty}$ on two nontrivial packets;
+- finite-cut time and space translation residuals decay as $T$ grows;
+- characteristic Hamiltonian matrices and the active-$\partial_z$ sign;
+- translation commutation and a rotational symplectic block;
+- the full Maxwell/master dictionary with shared corner data;
+- algebraic Weyl composition depends on symplectic gluing, not L-H-trans.
+
+Expected final line:
+
+```text
+ALL GLOBAL HORIZON EXHAUSTION CHECKS PASSED
+```
+
+The packet calculation is a regression only. It does not prove the massive
+$L^2$ tail theorem, the graph-fixed-point range, direct-sum dominated
+convergence, or the potential quotient.

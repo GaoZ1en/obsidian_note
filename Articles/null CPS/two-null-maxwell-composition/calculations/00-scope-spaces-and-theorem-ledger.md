@@ -1,4 +1,21 @@
-# Scope, Spaces, and Theorem Ledger
+# Scope, Spaces, and Two-Layer Theorem Ledger
+
+## 0. Local/global separation
+
+This calculation fixes the finite-cross conventions used by Layer L. The
+finite cross is a local Goursat chart and an open-region composition object;
+it is not required to carry the global translation representation of the
+boundaryless product spacetime. Layer-G geometry and function spaces begin in
+calculation 12 with
+
+$$
+X_\infty=H_L^+\cup_{S_0}H_R^+,
+\qquad H_L^+=\{v=0,u\geq0\},\quad H_R^+=\{u=0,v\geq0\}.
+$$
+
+Legacy $N_\pm$ notation below is retained only for compatibility with the
+finite orientation ledger. It carries no past/future implication in the
+global theorems.
 
 ## 1. Convention manifest
 
@@ -129,8 +146,9 @@ endpoint condition.
 
 ## 5. Endpoint policy
 
-Let $S_+=\{u=0,v=V\}$ and $S_-=\{v=0,u=U\}$.  The main first-round theorem
-uses:
+Let $S_+=\{u=0,v=V\}$ and $S_-=\{v=0,u=U\}$. The main finite theorem uses the
+following endpoint section / boundary polarization. It is not ordinary bulk
+gauge fixing:
 
 - fixed exact parts of $\bar a_+(V)$ and $\bar a_-(U)$, chosen to vanish;
 - fixed outer generator frames, or equivalently gauge parameters that vanish at
@@ -236,16 +254,16 @@ $s_\ell=\sqrt{\lambda_\ell}$ restores one order for master corner values.
 Closedness of compatibility, Hausdorffness of the quotient, and bounded bulk
 reconstruction in this completion remain `conditional`.
 
-## 7. Theorem ledger
+## 7. Layer-L theorem ledger
 
-### T-A — sheet constraint theorem
+### L-A — finite sheet constraint theorem
 
 **Status: proved.** Equations (3.2)--(3.3) define a continuous bijection between
 $\mathcal X_F$ and completed sheet fields satisfying the four transport
 constraints, on finite harmonic spaces, the rapid matched-$H^1$ core, and its
 smooth subcore.  This is not bulk reconstruction.
 
-### T-Ba — anchored corner gauge reduction
+### L-Ba — anchored corner gauge reduction
 
 **Status: proved.** At finite harmonic/generator cutoff and with (5.1), the
 compatible split-frame locus modulo sheet-proper and diagonal gauge is
@@ -254,13 +272,13 @@ The kernel is exactly the declared proper plus diagonal algebra.  Calculation
 05 supplies the closed compatibility map, continuous canonical slice, closed
 gauge image, and Hausdorff quotient on the rapid matched-$H^1$ core.
 
-### T-Bb — unanchored equivalence
+### L-Bb — unanchored equivalence
 
 **Status: false.** If outer exact dressed-connection anchors vary independently,
 diagonal reduction leaves relative/outer charged data.  Forgetting them is not
 injective and not a symplectic quotient on variable-flux sectors.
 
-### T-C — Maxwell/master commuting diagram
+### L-C — Maxwell/master commuting diagram
 
 **Status: proved.** For every finite $\ell\geq1$ sector, the exact (E/B)
 dictionary identifies Maxwell corner compatibility with matched master corner
@@ -269,41 +287,47 @@ subcore, continuity follows from the harmonic formulas and neighboring
 seminorms.  Bulk Goursat reconstruction is imported only as a read-only lemma
 for the next theorem.
 
-### T-D — bulk Maxwell Goursat reconstruction
+### L-D — local bulk Maxwell Goursat reconstruction
 
 **Status: proved.** Calculation 05 constructs both inverse composites and a
 continuous canonical potential lift on the anchored rapid matched-$H^1$ core.
 The shifted Sobolev/graph completion remains `conditional`.
 
-### T-E — Lee--Wald symplectomorphism
+### L-E — finite Lee--Wald symplectomorphism
 
 **Status: proved.** Calculation 06 proves the finite Stokes identity, direct
 Maxwell/master pullback, endpoint ledger, and ambiguity audit on the anchored
 rapid matched-$H^1$ core.  The shifted completion remains `conditional`.
 
-### T-F — two-cell full Maxwell composition
+### L-F — two-cell full Maxwell composition
 
 **Status: proved.** Calculation 07 defines the complete $F,*F$, endpoint,
 connection, and frame trace; proves the distributional gluing criterion;
 performs diagonal reduction; and proves internal Lee--Wald cancellation on the
 anchored rapid matched-$H^1$ core.
 
-### T-G — three-cell full Maxwell associativity
+### L-G — three-cell full Maxwell associativity
 
 **Status: proved.** Calculation 08 combines Goursat uniqueness, reduction by
 stages, two internal cancellations, and compatibility transitivity.  The new
 full-Maxwell regression retains independent E/B and frame/connection variables
 on both interfaces.
 
-### T-H — Hamiltonian test algebra
+### L-H-trans — fixed-cross translation obstruction
 
-**Status: false.** On the finite anchored cross with variable physical outer
-data, $\partial_t$ and $\partial_z$ have nonzero endpoint symplectic anomalies.
-$SO(3)$ and cut-gauge subtests pass, but the complete requested algebra does
-not.  Calculation 09 records the required endpoint-policy repairs.
+**Status: proved.** On a fixed finite cross with variable physical outer data,
+$\partial_t$ and $\partial_z$ are not tangent to the family of regions and
+have nonzero moving-boundary symplectic flux. They are therefore not internal
+Hamiltonian symmetries of that fixed open region. This is an obstruction
+statement, not a failed completeness theorem. $SO(3)$ and proper/diagonal cut
+gauge subtests remain `proved`.
 
-### T-I — Peierls/Weyl composition
+### L-Weyl — algebraic Weyl composition
 
-**Status: conditional.** T-F supplies the symplectic relation, but the declared
-gate order stops after the failed finite-cross T-H translation tests.  B1 only;
-no Hilbert factorization claim.
+**Status: proved.** L-F is a symplectic isomorphism after interface reduction,
+so functoriality gives the B1 Weyl $*$-isomorphism directly. It is independent
+of whether global translations act internally on a fixed finite region. No
+Hilbert factorization, Fock implementability, or B2 covariance is claimed.
+
+The global G-A--G-G ledger is stated in calculations 12--16 and in the
+authoritative claim ledger.

@@ -1,10 +1,13 @@
 # Lee--Wald Symplectic Equivalence
 
+This note proves the finite-region theorem L-E. Calculation 14 takes its exact
+finite Stokes identity to the complete cross by a proved tail limit.
+
 ## 1. Direct verdict
 
 **Status: proved** on the anchored rapid-angular matched-$H^1$ core, and hence
 on its smooth-generator subcore, with the Maxwell Lee--Wald representative
-fixed in calculation 00.  For the restriction map of T-D,
+fixed in calculation 00. For the restriction map of L-D,
 
 $$
 \boxed{R_X^*\Omega_X=\Omega_{\mathrm{bulk}}.}
@@ -256,9 +259,9 @@ form forces that coefficient to vanish.  Hence the only kernel before the
 anchored quotient is the proper-plus-diagonal gauge algebra found in
 calculation 05.
 
-## 8. Theorem T-E
+## 8. Theorem L-E
 
-Under the T-D assumptions, $R_X$ is a Fréchet symplectomorphism between the
+Under the L-D assumptions, $R_X$ is a Fréchet symplectomorphism between the
 anchored Maxwell proper-gauge quotient and the intrinsic corner-complete
 characteristic space.  The theorem is `proved` on the rapid-angular
 matched-$H^1$ core.

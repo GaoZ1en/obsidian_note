@@ -1,42 +1,31 @@
-# Hamiltonian Test Algebra
+# Finite-Cross Hamiltonian Obstruction
 
 ## 1. Direct verdict
 
-**T-H is false for the current finite anchored phase space.**  The induced
-actions of
+**Correct obstruction statement:** on a fixed finite cross with freely varying
+physical outer data, $\partial_t$ and $\partial_z$ are not internal symmetries
+and are not Hamiltonian vector fields. This is theorem L-H-trans with status
+`proved`.
+
+**Incorrect former interpretation:** the nonzero endpoint term is not, by
+itself, evidence that the finite local characteristic data are incomplete.
+The finite cross is a local Goursat chart/open region, and neither translation
+preserves its two fixed physical outer cuts.
+
+The $SO(3)$ rotations and proper/diagonal cut-gauge statements remain
+Hamiltonian on the declared smooth domain. Global translations are treated on
+the complete cross in calculation 15.
+
+## 2. Domain of the induced local actions
+
+For one master, write
 
 $$
-K=\partial_t,
-\qquad Z=\partial_z
-\tag{1.1}
+f(u)=\Phi(u,0),\qquad g(v)=\Phi(0,v),\qquad
+a=\frac{\lambda_\ell}{2}.
 $$
 
-are well defined on the smooth-generator domain through
-
-$$
-\delta_K^X=R_X\circ\mathcal L_K\circ R_X^{-1},
-\tag{1.2}
-$$
-
-but they do not preserve the finite characteristic two-form when outer cut
-data vary.  Consequently $\iota_{\delta_K^X}\Omega_X$ and
-$\iota_{\delta_Z^X}\Omega_X$ are not closed one-forms and no Hamiltonians with
-the requested variations exist on this phase space.
-
-The $SO(3)$ rotations pass, and proper/diagonal cut gauge behaves as expected.
-Failure of the complete test set is nevertheless a phase-space incompleteness
-kill signal.
-
-## 2. Domain of the induced translations
-
-For one master, the finite traces are
-
-$$
-f(u)=\Phi(u,0),
-\qquad g(v)=\Phi(0,v).
-$$
-
-Writing $a=\lambda_\ell/2$, the field equation gives
+The equation $(2\partial_u\partial_v+\lambda_\ell)\Phi=0$ gives
 
 $$
 \partial_v\Phi(u,0)=g'(0)-a\int_0^u f(s)ds,
@@ -48,154 +37,106 @@ $$
 \tag{2.2}
 $$
 
-Hence $\delta_K^X$ and $\delta_Z^X$ involve $f'(0),g'(0)$.  They are
-unbounded operators and are not defined on every matched-$H^1$ profile.  The
-natural common domain is the dense smooth-generator subcore, or an appropriate
-matched $H^2$ domain.  This domain issue alone forbids calling them bounded
-Hamiltonian actions on the full matched-$H^1$ graph.
+Thus the formal restricted translation actions require $f'(0),g'(0)$ and are
+defined on the dense smooth-generator subcore (or a matched $H^2$ domain), not
+as bounded operators on all matched $H^1$ data. More importantly, their flows
+move the outer cuts, so the action is not an automorphism of a fixed finite
+regional phase space.
 
-## 3. Exact endpoint anomaly
+## 3. Moving-boundary identity
 
-Let $\Sigma$ be the finite spacelike diagonal of calculation 06 and let
-$\omega(1,2)$ be the Lee--Wald current.  For a background Killing field $X$,
+Let $\Sigma$ be the finite spacelike diagonal used in calculation 06. For a
+bulk Killing field $X$ and on-shell variations,
 
 $$
 \begin{aligned}
-&(\mathcal L_{\delta_X}\Omega_\Sigma)(\delta_1,\delta_2)\\
-&\quad=
-\Omega_\Sigma(\mathcal L_X\delta_1,\delta_2)
-+\Omega_\Sigma(\delta_1,\mathcal L_X\delta_2)\\
-&\quad=\int_\Sigma\mathcal L_X\omega(\delta_1,\delta_2)
-=\int_{\partial\Sigma}i_X\omega(\delta_1,\delta_2).
+(\mathcal L_{\delta_X}\Omega_\Sigma)(\delta_1,\delta_2)
+&=\int_\Sigma\mathcal L_X\omega(\delta_1,\delta_2)\\
+&=\int_{\partial\Sigma}i_X\omega(\delta_1,\delta_2).
 \end{aligned}
 \tag{3.1}
 $$
 
-For $X=\partial_t$ or $\partial_z$, the last line is a generic nonzero
-bilinear form at $S_+$ and $S_-$.  Neither translation is tangent to both
-outer endpoints of the finite cross.  The fixed outer generator frames remove
-frame variations but do not set the physical Maxwell flux variations to zero,
-so they do not remove (3.1).
-
-In field-space Cartan form,
+For $X=\partial_t,\partial_z$ the final expression is generically nonzero at
+the two physical outer cuts. Fixed outer frames remove frame variations; they
+do not set the physical Maxwell flux variations to zero. Hence
 
 $$
-d_{\mathrm{field}}
-\bigl(\iota_{\delta_X^X}\Omega_X\bigr)
-=\mathcal L_{\delta_X^X}\Omega_X.
+d_{\rm field}(\iota_{\delta_X}\Omega_X)
+=\mathcal L_{\delta_X}\Omega_X\ne0.
 \tag{3.2}
 $$
 
-Equation (3.1) therefore proves that the proposed Hamiltonian one-form is not
-closed.  Adding a scalar endpoint term to a putative $H_X$ cannot repair a
-nonclosed one-form; the two-form or the allowed tangent space must change.
+No scalar counterterm added to a putative Hamiltonian can make a nonclosed
+one-form exact. Equation (3.1) is precisely the flux balance law for a moving
+open region.
 
-## 4. Finite on-shell regression
+## 4. Finite regression
 
-`scripts/hamiltonian_test_checks.wl` uses six exact on-shell directions for one
-master.  It constructs the finite incoming-cross matrix and the literal
-$\partial_t,\partial_z$ coefficient actions.  The symplecticity residuals
+`scripts/hamiltonian_test_checks.wl` uses six exact on-shell directions for
+one master. It finds
 
 $$
-A_X^T\Omega_X+\Omega_XA_X
+\operatorname{rank}(A_t^T\Omega_X+\Omega_XA_t)=2,
+\qquad
+\operatorname{rank}(A_z^T\Omega_X+\Omega_XA_z)=4,
 \tag{4.1}
 $$
 
-have ranks
+while the rotational residual has rank zero. The nonsymmetric finite
+translation Hamiltonian candidates are a regression witness for (3.2), not a
+continuum tail theorem.
+
+The separate global packet regression in
+`scripts/global_horizon_exhaustion_checks.py` restricts Schwartz massive wave
+packets to $X_T$ and checks that the two residuals decay as $T$ grows. The
+analytic reason is the $L^2$ massive-tail theorem used in calculation 14.
+
+## 5. Rotations and cut gauge
+
+Every $SO(3)$ generator is tangent to the sphere cuts and preserves the round
+metric, harmonic decomposition, and endpoint section. Since $S^2$ has no
+boundary,
 
 $$
-\operatorname{rank}\mathcal A_t=2,
+\mathcal L_{\delta_J}\Omega_X=0,
 \qquad
-\operatorname{rank}\mathcal A_z=4.
-\tag{4.2}
-$$
-
-The corresponding quadratic Hamiltonian matrices are nonsymmetric, which is
-the finite-dimensional version of (3.2).  The result is a regression witness;
-the analytic obstruction is (3.1).
-
-## 5. Rotations
-
-Every $SO(3)$ generator is tangent to the sphere cuts, preserves the round
-metric, the harmonic decomposition, and the anchored endpoint policy.  Since
-$S^2$ has no boundary, (3.1) has no rotational endpoint term.  Thus
-
-$$
-\mathcal L_{\delta_J^X}\Omega_X=0.
+H_J^X=\frac12\Omega_X(\Phi,\delta_J\Phi),
+\qquad
+\iota_{\delta_J}\Omega_X=-\delta H_J^X.
 \tag{5.1}
 $$
 
-On the smooth-generator domain the differentiable Hamiltonian is
-
-$$
-H_J^X[\Phi]
-=\frac12\Omega_X(\Phi,\delta_J^X\Phi),
-\qquad
-\iota_{\delta_J^X}\Omega_X=-\delta H_J^X.
-\tag{5.2}
-$$
-
-The $\mathfrak{so}(3)$ commutator closes on every fixed-$\ell$ multiplet.  The
-additive constant in the moment map is set to zero at the zero field, so no
-central term appears.  Internal interface contributions cancel, making (5.2)
-additive under the T-F composition.
-
-The Wolfram regression uses two real $m$ copies, finds rotation anomaly rank
-zero, and verifies that the Hamiltonian matrix is symmetric.
-
-## 6. Cut gauge generators
+The $\mathfrak{so}(3)$ algebra closes on finite harmonic sums and on its dense
+angular-generator domain. The moment map is fixed to vanish at the zero field,
+so no corner central term occurs.
 
 Before reduction, sheet-proper and diagonal generators are exactly the kernel
-directions proved in calculations 03 and 05.  Proper generators have zero
-Hamiltonian.  The diagonal generator's moment map is the oriented electric
-matching constraint; on its zero level and after quotient it acts trivially.
-Charged cut gauges with nonzero external values are excluded by the anchored
-policy and are not silently called proper.
+directions of calculations 03 and 05. Proper generators have zero Hamiltonian;
+the diagonal moment map is the oriented electric matching constraint and acts
+trivially after zero-level reduction.
 
-## 7. Repair alternatives
+## 6. Theorem L-H-trans
 
-At least one of the following material changes is required before $K$ and $Z$
-can be Hamiltonian:
-
-1. impose outer boundary conditions that make the endpoint flux in (3.1)
-   vanish;
-2. enlarge the phase space by the missing endpoint/charged-frame variables and
-   their symplectic terms;
-3. replace the finite cross by the complete half-cross finite-energy phase
-   space, where the read-only massive-tail theorem makes the flux at infinity
-   vanish.
-
-These are different theorems.  The present project does not choose among them
-without an explicit endpoint-policy change.
-
-## 8. Theorem T-H
-
-| Generator | Verdict | Exact condition |
+| Generator | Verdict | Precise condition |
 |---|---|---|
-| $\partial_t$ | `false` | finite cross with freely varying physical outer data |
-| $\partial_z$ | `false` | same |
-| $SO(3)$ | `proved` | smooth-generator domain, round $S^2$, anchored policy |
-| proper cut gauge | `proved` | zero Hamiltonian kernel |
+| $\partial_t$ | `proved` | obstruction: not an internal Hamiltonian symmetry of a fixed finite cross with variable physical outer data |
+| $\partial_z$ | `proved` | obstruction: same; its endpoint bilinear differs from the time case |
+| $SO(3)$ | `proved` | smooth angular-generator domain, round $S^2$ |
+| proper cut gauge | `proved` | zero-Hamiltonian kernel |
 | diagonal cut gauge | `proved` | electric zero level, then quotient |
 
-Because the requested test set includes both translations, T-H as a whole is
-`false` for the current phase space.  Phase IV stops here; T-I is not promoted
-through a failed gate.
+The authoritative status word is `proved`; “obstruction” describes the claim,
+not a second status vocabulary. No statement in this table blocks the algebraic Weyl
+functor of calculation 10 or the global Hamiltonian theorem of calculation 15.
 
-## Verified
+## Evidence boundary
 
-- nonzero translation symplecticity residuals and nonsymmetric Hamiltonian
-  candidates;
-- zero rotational residual and symmetric rotational Hamiltonian;
-- exact finite characteristic nondegeneracy on the test basis.
+**Verified:** the exact moving-boundary identity, nonzero finite translation
+residuals, zero rotation residual, and the proper/diagonal moment-map behavior.
 
-## Assumptions
+**Assumptions:** finite fixed cross, varying physical outer data, smooth
+generator domain, trivial bundle, $Q_E=n=0$, $\ell\geq1$.
 
-- the finite anchored cross with variable physical endpoint data;
-- smooth-generator domain for Killing derivatives;
-- T-D through T-G.
-
-## Not verified
-
-- any of the three repaired endpoint policies in Section 7;
-- translation Hamiltonians on an enlarged or complete-half-cross phase space.
+**Not claimed:** that translations are Hamiltonian on the finite region, that
+an endpoint scalar repairs them, or that local Goursat completeness fails.

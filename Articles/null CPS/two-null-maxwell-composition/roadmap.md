@@ -1,71 +1,59 @@
 # Roadmap
 
-## Phase I — Gauge-theoretic finite-harmonic kill test
+## Layer L — finite-cross local composition
 
-- [x] Create an independent project and freeze the two sibling projects as
-  read-only lemma banks.
-- [x] Fix action, metric, orientation, sector, endpoint policy, gauge groups,
-  function-space layers, and claim vocabulary.
-- [x] Derive the raw and generator-dressed null sheet potentials without gauge
-  fixing the Maxwell action.
-- [x] Separate electric moment-map matching from magnetic and
-  connection/transition compatibility.
-- [x] Compute the finite-harmonic compatibility-matrix rank, including the one
-  $S^2$ redundancy between curvature and full connection matching.
-- [x] Identify the unanchored relative-frame/outer-anchor obstruction.
-- [x] Repair the main theorem by fixing the outer exact dressed-connection
-  anchors and deriving $\lambda_{\mathrm{rel}}[r^E,p^E]$.
-- [x] Verify the anchored dimension identity and the kernel
-  $\mathfrak g_{+,\mathrm{proper}}\oplus
-  \mathfrak g_{-,\mathrm{proper}}\oplus\mathfrak g_{\mathrm{diag}}$
-  at finite cutoff.
-- [x] Prove the finite-cutoff field-strength/master dictionary is invertible and
-  that Maxwell corner matching is equivalent to matched master corner values.
-- [x] Execute the Python and Wolfram regressions.
+- [x] L-A: derive the complete sheet constraint datum $(r,p;E_0,b^0)$.
+- [x] L-B: separate electric moment-map reduction from magnetic and full
+  connection compatibility; prove the anchored reduction and the unanchored
+  charged-frame obstruction.
+- [x] L-C: prove the full-Maxwell/(E/B)-master commuting dictionary.
+- [x] L-D: lift local matched-$H^1$ Goursat reconstruction to the anchored
+  rapid Maxwell quotient.
+- [x] L-E: prove the finite Stokes/Lee--Wald identity with endpoint and
+  representative ambiguities audited.
+- [x] L-F--L-G: prove complete-interface two-cell composition and three-cell
+  associativity.
+- [x] L-H-trans: restate the finite translation result as a moving-boundary
+  obstruction. A fixed finite cross is an open-region chart, so translations
+  need not be internal Hamiltonian symmetries.
+- [x] L-Weyl: apply the Weyl functor directly to the proved symplectic
+  composition map.
 
-## Phase II — Bulk Goursat lift and Lee--Wald equivalence
+## Layer G — complete future bifurcate horizon
 
-- [x] Lift the read-only matched-$H^1$ master Goursat theorem to the full
-  Maxwell proper-gauge quotient under the fixed-anchor policy.
-- [x] Prove continuity on the rapid-angular Fréchet core with explicit adjacent
-  angular seminorms.
-- [x] Prove the full finite-diamond Stokes identity including outer endpoints.
-- [x] Audit $\theta\mapsto\theta+dY+\delta B$ and endpoint polarization.
-- [x] Prove rapid-core closedness, continuous gauge complement, and Hausdorff
-  quotient independently.
-- [ ] Complete a stronger shifted Sobolev/graph range theorem.  The current
-  matched-$H^1$ graph is closed; no same-order theorem is inferred.
+- [x] G-A: define the intrinsic graph-fixed-point Maxwell characteristic
+  energy space and prove restriction/reconstruction through the explicit
+  full-Maxwell dictionary.
+- [x] G-B: prove the fixed-asymptotic-frame potential quotient on the smooth
+  Schwartz core; keep the energy potential completion conditional.
+- [x] G-C: lift the massive half-cross tail theorem to the full Maxwell tower
+  and prove the global Lee--Wald symplectomorphism.
+- [x] G-D: construct $H_t$, $P_z$, and $J_i$ on dense generator domains;
+  prove symplecticity and algebra closure with no corner central term.
+- [x] G-E: connect the global characteristic inverse to the bulk Maxwell
+  Peierls bracket and prove Poisson compatibility with local composition.
+- [x] G-F: prove the B1 Weyl isomorphism independently of finite translations
+  and its covariance under the global Hamiltonian automorphisms.
+- [x] G-G: prove finite restriction, composition, and exhaustion compatibility
+  on the globally extendable fixed-point subspace.
 
-## Phase III — Full Maxwell cell composition
+## Remaining analytic extensions
 
-- [x] Define the complete null-interface trace object, not only a master
-  profile.
-- [x] Prove two-cell reconstruction and internal null-flux cancellation.
-- [x] Upgrade the read-only three-cell regression to independent Maxwell
-  potentials/frames, two diagonal groups, and all compatibility equations.
-- [x] Prove reduction by stages and connection-compatibility transitivity.
-
-## Phase IV — Hamiltonian and B1 quantization tests
-
-- [x] Define induced characteristic Killing actions through the proved
-  restriction inverse.
-- [x] Execute differentiability and endpoint tests.  Result: $\partial_t$ and
-  $\partial_z$ fail on the current finite cross; $SO(3)$ and cut gauge pass.
-- [ ] Choose and prove one endpoint repair: flux-killing boundary conditions,
-  endpoint-inclusive extension, or complete-half-cross finite-energy space.
-- [ ] Prove the Peierls/symplectic relation and Weyl-algebra isomorphism.
-- [ ] Keep Hilbert factorization, partial trace, Fock implementability, and B2
-  cross covariance outside scope.
+- [ ] Select and prove an energy Sobolev topology for the potential quotient;
+  do not transport the norm from restriction.
+- [ ] Determine the sharp angular graph weights needed for a same-scale
+  full-tower potential statement.
+- [ ] Treat $\ell=0$ flux/frame sectors, nontrivial bundles, and charged
+  asymptotic frames separately.
+- [ ] Complete the primary-source novelty comparison before making a negative
+  literature claim.
 
 ## Stop rules
 
-- Do not enter Phase II if the fixed-anchor kernel or dimension identity fails.
-- Do not identify an unanchored extended frame space with intrinsic
-  field-strength data.
-- Do not infer bulk surjectivity from sheet transport integration.
-- Do not define a completion by the desired inverse and call the result an onto
-  theorem.
-- Do not enter Hamiltonian, Peierls, Weyl, or BRST work before Phases II--III
-  close.
-- Do not promote T-H or T-I while the finite-cross translation endpoint anomaly
-  is nonzero.
+- Do not identify arbitrary matched $H^1\oplus H^1$ half-ray profiles with the
+  global range; impose the nonlocal fixed-point condition.
+- Do not call a finite outer anchor ordinary bulk gauge fixing.
+- Do not infer global translation symmetry for a fixed finite region.
+- Do not use numerical tail decay as a substitute for the $L^2$ tail theorem.
+- Do not extend the result to zero modes, topology, charged infinity, curved
+  backgrounds, Yang--Mills, or gravity without new proofs.

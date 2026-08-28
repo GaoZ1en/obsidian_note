@@ -1,5 +1,9 @@
 # Extended Sheet Prephase Spaces
 
+This note describes the Layer-L finite-cross polarization. The anchored and
+unanchored constructions are different open-region phase spaces; neither is
+used to define the global energy topology of $X_\infty$.
+
 ## 1. Raw sheet variables
 
 The raw potential variables on each sheet are

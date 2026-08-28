@@ -1,5 +1,8 @@
 # Maxwell/Master Commuting Diagram
 
+This finite-cross dictionary is theorem L-C. Calculation 13 applies the same
+literal coefficient map to the nonlocal global fixed-point range.
+
 ## 1. Imported lemma boundary
 
 The read-only file
@@ -255,7 +258,7 @@ Here $\mathfrak M$ is (3.1)--(3.2) and $\mathfrak D_X$ is
 (4.1)--(4.4) together with the anchored representative.  Equality of the two
 paths follows coefficient by coefficient from the displayed formulas.
 
-The top horizontal bijection is T-D and is `proved` on the anchored rapid
+The top horizontal bijection is L-D and is `proved` on the anchored rapid
 matched-$H^1$ core in calculation 05.  The vertical maps and the lower
 characteristic dictionary are `proved`; the shifted Sobolev/graph completion
 remains `conditional`.

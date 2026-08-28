@@ -3,14 +3,15 @@
 ## Direct verdict
 
 **Status: conditional.** The candidate contribution is not any individual
-ingredient below.  If the remaining theorem chain closes, the defensible
-candidate is the integrated result
+ingredient below. The local/global theorem chain is now closed under its
+declared sector and domain assumptions, but the negative novelty screen is not
+complete. The defensible candidate is the integrated result
 
 $$
 \text{action-derived Maxwell double-null Goursat reconstruction}
 +\text{corner-complete gauge reduction}
 +\text{associative symplectic composition}
-+\text{Hamiltonian test algebra}.
++\text{complete-future-cross Hamiltonian and B1 representation}.
 $$
 
 This preliminary screen does not prove novelty.  It identifies precedents and
@@ -45,15 +46,18 @@ the exact comparison still required.
 
 ## Candidate integrated claim
 
-The candidate may be stated only after T-D--T-I close:
+The candidate may be stated with the precise Layer-L/Layer-G boundaries:
 
 > On the fixed product background and radiative $Q_E=n=0$ sector, the
-> action-derived, corner-complete Maxwell characteristic relation on two
-> intersecting null hypersurfaces admits a gauge-compatible Goursat inverse,
-> is Lee--Wald symplectic, composes associatively across complete null-interface
-> traces, and passes the induced Hamiltonian-generator tests.
+> action-derived, corner-complete Maxwell characteristic relation on finite
+> intersecting null cells composes associatively across complete interface
+> traces, while the complete future bifurcate cross gives the intrinsic global
+> finite-energy characteristic space, Hamiltonian translation/rotation
+> representation, Peierls bracket, and B1 Weyl representation.
 
-The fixed outer exact-anchor policy is part of the theorem.  The unanchored
+The finite fixed outer exact-anchor policy is an endpoint section of the local
+polarization, not ordinary bulk gauge fixing. The global potential corollary
+instead fixes asymptotic frames on the Schwartz core. The unanchored
 extended-frame space is a distinct charged-boundary extension, not an
 equivalent presentation of intrinsic field-strength data.
 

@@ -1,52 +1,51 @@
 # TODO
 
-## Closed in the current round
+## Closed in the local/global architecture round
 
-- [x] Fixed-anchor Maxwell Goursat lift on the rapid-angular matched-$H^1$
-  core, including both inverse composites and the canonical potential slice.
-- [x] Closed compatibility locus, closed proper-plus-diagonal gauge image, and
-  Hausdorff rapid quotient.
-- [x] Finite Stokes/Lee--Wald equivalence with every endpoint and
-  $dY,\delta B$ ambiguity term audited.
-- [x] Complete null-interface trace, distributional Maxwell gluing, two-cell
-  composition, and internal flux cancellation.
-- [x] Full-Maxwell three-cell associativity and reduction-by-stages regression.
-- [x] Hamiltonian kill test for $\partial_t,\partial_z,SO(3)$, and cut gauge.
+- [x] Restate the finite cross as a local Goursat/composition object and the
+  finite translation anomaly as a moving-boundary obstruction.
+- [x] Define $X_\infty=H_L^+\cup_{S_0}H_R^+$ and its finite exhaustions $X_T$.
+- [x] Translate the nonlocal master fixed-point range into intrinsic complete
+  Maxwell data $(r,p;E_0,b^0)$.
+- [x] Prove the gauge-invariant global restriction and Lee--Wald theorem by
+  combining the explicit Maxwell dictionary with the massive tail lemma.
+- [x] Separate the Schwartz fixed-asymptotic-frame potential corollary from
+  the conditional energy-completed potential quotient.
+- [x] Construct global $H_t$, $P_z$, and $J_i$ with the project sign
+  $\iota_{\delta_X}\Omega=-\delta H_X$.
+- [x] Promote Peierls and algebraic Weyl composition independently of the
+  finite translation test.
+- [x] Add the finite-to-global exhaustion and spectral-packet regressions.
 
-## Immediate decision gate
+## Next executable analytic work
 
-- [ ] Action: choose the translation-Hamiltonian endpoint policy.
-  Context: on the present finite cross, $\partial_t$ and $\partial_z$ have
-  nonzero outer-cut symplectic anomalies.  T-H is `false`; a scalar boundary
-  correction to $H$ cannot repair a nonclosed Hamiltonian one-form.
-  Check: select exactly one of the following and restate the theorem before
-  calculation:
-  1. flux-killing outer boundary conditions;
-  2. endpoint-inclusive charged-frame extension;
-  3. complete-half-cross finite-energy space with vanishing massive tails.
+- [ ] Action: specify a non-transported potential Sobolev/graph norm.
+  Context: the primary field-strength theorem is closed, but G-B at energy
+  completion is conditional.
+  Check: prove closed proper-gauge image, asymptotic trace continuity, and a
+  bounded canonical slice in that norm.
 
-- [ ] Action: rerun T-H after the selected endpoint repair.
-  Context: $SO(3)$ and cut gauge already pass; only the two translations block
-  the requested test algebra.
-  Check: verify
-  $A_X^T\Omega+\Omega A_X=0$, differentiability, composition additivity, and
-  algebra closure on the declared domain.
+- [ ] Action: sharpen the full angular-tower generator domains.
+  Context: G-D is proved on the dense domain defined by spectral $\omega$/$k$
+  and angular-generator weights.
+  Check: state the maximal closed domains only after proving equality with the
+  closures of the finite-harmonic Schwartz core.
 
-## Blocked by the T-H failure
+- [ ] Action: prepare the manuscript outline from `global-closure-audit.md`.
+  Context: the core classical/B1 chain is closed; topology and potential
+  completion remain explicit boundaries.
+  Check: keep finite composition and global representation in separate
+  theorem sections and do not present a finite cross as a global subsystem.
 
-- [ ] Integrated Peierls/Weyl T-I theorem.
-- [ ] Manuscript outline and novelty claim.
-- [ ] Optional $\ell=0$ flux-frame representation and BRST appendix.
+## Deferred by user instruction
 
-## Analytic extension not needed for the present rapid theorem
+- [ ] GitHub repository-wide index and packaging.
+- [ ] Research Radar update.
 
-- [ ] Prove an independently characterized stronger shifted Sobolev/graph
-  range theorem; do not define its norm through the desired inverse.
+## Outside this round
 
-## Literature work
-
-- [ ] Inspect the full primary texts for Wódkiewicz, Yan, and Casher rather than
-  relying on metadata/abstracts.
-- [ ] Compare the exact anchored/unanchored distinction with Riello's flux
-  superselection and extended-edge alternatives.
-- [ ] Complete the 2026 null-gravity gluing scan before making a novelty claim.
+- [ ] $\ell=0$ flux-frame representation and nontrivial bundles.
+- [ ] Charged large gauge/asymptotic-edge dynamics.
+- [ ] Hilbert tensor factorization, partial trace, Fock implementability, and
+  B2 cross covariance.
+- [ ] Curved backgrounds, Yang--Mills theory, and gravity.

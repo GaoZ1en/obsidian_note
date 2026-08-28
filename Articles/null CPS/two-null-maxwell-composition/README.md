@@ -2,183 +2,177 @@
 
 ## Direct verdict
 
-This is an independent action-first project for source-free $U(1)$ Maxwell
-theory on two intersecting null hypersurfaces.  The first-round finite-harmonic
-kill test has the following precise outcome.
+The project now has two distinct theorem layers.
 
-1. The sheet-constraint map
-
-   $$
-   (r_A,p_A;E_0,b^0_{AB})\longleftrightarrow
-   (r_A,p_A;E_\pm,b^\pm_{AB})
-   $$
-
-   is proved on finite segments and on the rapid-angular smooth core.  It is
-   only a sheet theorem.
-2. With fixed outer exact dressed-connection anchors, connection compatibility
-   determines the relative corner frame from $r^E,p^E$.  At every finite
-   harmonic and finite generator-basis cutoff, the compatible split-frame space modulo
-   sheet-proper and diagonal gauge has the same dimension as the intrinsic
-   field-strength data, and the finite presymplectic kernel is exactly
+1. **Layer L (finite cross)** treats a finite null cross as a local Goursat
+   chart and an open-region composition object. L-A--L-G are `proved` on the
+   fixed-endpoint-section rapid-angular matched-$H^1$ core. On a fixed finite
+   cross with varying physical outer data, translations do not preserve the
+   outer cuts and are not internal Hamiltonian symmetries. L-H-trans is a
+   `proved` moving-boundary obstruction, not evidence that the local Goursat
+   chart is incomplete.
+2. **Layer G (complete future cross)** uses
 
    $$
-   \mathfrak g_{+,\mathrm{proper}}\oplus
-   \mathfrak g_{-,\mathrm{proper}}\oplus
-   \mathfrak g_{\mathrm{diag}}.
+   X_\infty=H_L^+\cup_{S_0}H_R^+,
+   \qquad
+   H_L^+=\{v=0,u\geq0\},\quad
+   H_R^+=\{u=0,v\geq0\}.
    $$
-3. If the outer longitudinal anchors are allowed to vary independently, the
-   claimed equivalence with field-strength data is false.  Diagonal reduction
-   leaves charged frame/anchor data; in the minimal corner block it leaves
-   $\delta E_0\wedge\delta\lambda_{\mathrm{rel}}$, and the forgetful map to
-   $\mathcal X_F$ is not injective.
-4. In the fixed-anchor policy, the Maxwell characteristic dictionary commutes
-   exactly with the matched (E/B) master dictionary for every
-   $\ell\geq1$.  The shared $E_0,B_0$ coefficients are common master values,
-   not extra oscillators.
-5. The matched-$H^1$ Goursat inverse lifts continuously to the anchored Maxwell
-   quotient on the rapid-angular core, and the quotient is Hausdorff with the
-   exact proper-plus-diagonal kernel.
-6. Lee--Wald equivalence, complete two-cell Maxwell composition, and
-   three-cell associativity are proved on that core.  The interface trace keeps
-   $i^*F$, $i^*(*F)$, endpoints, and connection/frame transitions.
-7. The finite-cross Hamiltonian kill test fails for $\partial_t$ and
-   $\partial_z$: freely varying physical outer data produce nonzero endpoint
-   symplectic anomalies.  $SO(3)$ and cut-gauge tests pass, but T-H as a whole
-   is `false` and T-I remains gated.
 
-Thus Phases I--III close only under the fixed outer longitudinal-anchor policy.
-The project is not manuscript-ready because the finite-cross translation
-Hamiltonians require a changed endpoint policy.  The unanchored extended-frame
-version remains a false comparison, not an implicit repair.
+   This is the global characteristic phase space. G-A, G-C--G-G are `proved`
+   for the gauge-invariant finite-energy radiative Maxwell space in the
+   trivial-bundle $Q_E=n=0$, $\ell\geq1$ sector. G-B is `proved` for the
+   fixed-asymptotic-frame Schwartz potential core and `conditional` for an
+   energy-completed potential quotient.
 
-## Model and sector
-
-The first version fixes
-
-$$
-D=[0,U]_u\times[0,V]_v\times S^2_R,
-\qquad
-ds^2=-2\,du\,dv+R^2d\Omega_2^2,
-$$
-
-$$
-N_+=\{u=0\},\qquad N_-=\{v=0\},\qquad
-S_0=N_+\cap N_-.
-$$
-
-The main sector is a trivial $U(1)$ bundle with
-
-$$
-Q_E=0,\qquad n=\frac1{2\pi}\int_{S^2}F=0,
-\qquad \ell\geq1.
-$$
-
-The $\ell=0$ variable flux-frame extension is optional and cannot block the
-radiative theorem.  No nontrivial bundle, harmonic one-form, non-Abelian, or
-gravitational theorem is inferred from the $S^2$ result.
-
-## Characteristic data
-
-The complete gauge-invariant sheet-constraint datum is
+The main characteristic datum in both layers is
 
 $$
 \boxed{\mathcal X_F=(r_A,p_A;E_0,b^0_{AB})},
 $$
 
-$$
-r_A=F_{vA}|_{N_+},\qquad p_A=F_{uA}|_{N_-},\qquad
-E_0=F_{uv}|_{S_0},\qquad b^0_{AB}=F_{AB}|_{S_0}.
-$$
+not only $(r,p)$. The shared $E_0,b^0$ are the common electric and magnetic
+master corner values and are not extra oscillators.
 
-The pair $(r,p)$ alone is not complete.  The shared corner data are
-characteristic integration data, not additional radiative oscillators.
+## Geometry and conventions
 
-In the split potential polarization the project retains
-$\chi_\pm,\bar a^0_\pm$, and
-$\lambda_{\mathrm{rel}}=\chi_--\chi_+$, with
+On
 
 $$
-\bar a_-^0-\bar a_+^0+d_S\lambda_{\mathrm{rel}}=0,
+M=\mathbb R_t\times\mathbb R_z\times S^2_R,
 \qquad
-d_S\bar a_+^0=d_S\bar a_-^0=b^0.
+u=\frac{t-z}{\sqrt2},\quad v=\frac{t+z}{\sqrt2},
 $$
 
-Electric matching is the moment map for the diagonal cut gauge action.
-Magnetic matching and connection/transition compatibility are fiber-product
-conditions.  On $S^2$, curvature matching becomes algebraically redundant
-after both sheet-curvature equations and full connection matching are imposed;
-it is still not the electric moment map.
+the global future surface is
 
-## Endpoint policy for the main first-round theorem
+$$
+X_\infty=H_L^+\cup_{S_0}H_R^+,
+\quad S_0=\{u=v=0\}.
+$$
 
-- Incoming orientations are fixed in `calculations/01-oriented-null-segments-and-endpoints.md`.
-- Outer charged variables are not discarded.  For the main intrinsic theorem,
-  the exact part of each outer dressed connection is anchored to zero; this is
-  a longitudinal representative choice and does not constrain its curvature.
-- Sheet-proper gauge parameters vanish at $S_0$ and at the corresponding
-  outer cut.
-- The diagonal cut parameter has a common value at $S_0$ and is extended to
-  vanish at the outer cuts.
-- An unanchored endpoint-inclusive extended phase space is a different object.
-  It is not equivalent to $\mathcal X_F$.
+Finite exhaustions are
 
-## Function-space layers
+$$
+X_T=\{H_L^+:0\leq u\leq\sqrt2T\}
+\cup\{H_R^+:0\leq v\leq\sqrt2T\}.
+$$
 
-1. **Finite harmonic and generator-basis cutoff.** Exact rank, kernel, and
-   compatibility regressions use $K$ Darboux/on-shell pairs per master;
-   separate finite jets test the characteristic dictionary.
-2. **Rapid-angular matched-$H^1$ Fréchet core.** The first full classical
-   target, with a dense smooth-generator domain for Killing actions; angular
-   losses are controlled by neighboring seminorms.
-3. **Shifted Sobolev/graph completion.** Conditional until closedness,
-   Hausdorff quotient, and reconstruction estimates are proved without defining
-   the target topology by the reconstruction map.
+Legacy symbols $N_\pm$ remain only in finite calculations where changing them
+would obscure earlier orientation formulae. Global statements use
+$H_L^+,H_R^+$ exclusively.
 
-## Current theorem status
+The action and Lee--Wald convention are
 
-- T-A sheet constraint: `proved`.
-- T-B anchored finite-cutoff corner reduction: `proved`.
-- T-B unanchored equivalence to intrinsic field-strength data: `false`.
-- T-C Maxwell/master commuting diagram: `proved`.
-- T-D rapid-core Maxwell Goursat lift: `proved`.
-- T-E Lee--Wald symplectomorphism: `proved`.
-- T-F two-cell full-Maxwell composition: `proved`.
-- T-G three-cell full-Maxwell associativity: `proved`.
-- T-H finite-cross Hamiltonian test algebra: `false` because the translation
-  subtests fail; $SO(3)$ and cut gauge subtests are `proved`.
-- T-I Peierls/Weyl composition: `conditional`, blocked by the declared T-H
-  gate.
+$$
+S[A]=-\frac12\int F\wedge *F,
+\qquad
+\theta=-\delta A\wedge *F,
+$$
 
-Only the status words `proved / checked symbolically / conditional /
-conjectural / false` are used in the authoritative ledger.
+$$
+\iota_{\delta_X}\Omega=-\delta H_X.
+$$
+
+The radiative theorem fixes a trivial $U(1)$ bundle and
+
+$$
+Q_E=0,\qquad n=\frac1{2\pi}\int_{S^2}F=0,\qquad \ell\geq1.
+$$
+
+Zero modes, nontrivial bundles, and charged asymptotic frames are separate
+sectors.
+
+## Layer L — finite-cross composition
+
+The finite cross is a local solution/restriction space for a triangle or
+rectangle. Its exact dressed-connection outer coefficient is fixed as an
+**endpoint section / boundary-polarization choice**. It is not ordinary bulk
+gauge fixing. If the two outer anchors vary independently, the charged
+relative-frame pair survives; in split-frame variables its derived corner
+term is $\delta E_0\wedge\delta\lambda_{\rm rel}$. That unanchored theory is a
+different phase space.
+
+- L-A sheet constraints: `proved`.
+- L-B anchored corner reduction: `proved`; unanchored equivalence: `false`.
+- L-C full-Maxwell/master commuting dictionary: `proved`.
+- L-D local Maxwell Goursat lift: `proved` on the rapid core.
+- L-E finite Lee--Wald symplectomorphism: `proved`.
+- L-F full-interface two-cell composition: `proved`.
+- L-G three-cell associativity: `proved`.
+- L-H-trans fixed-cut translations: `proved` as an obstruction statement.
+  $SO(3)$ and proper/diagonal cut gauge remain Hamiltonian.
+- L-Weyl algebraic composition: `proved`; it needs the symplectic map, not a
+  translation Hamiltonian on a finite open region.
+
+The complete interface trace retains $i^*F$, $i^*(*F)$, endpoints, and
+connection/frame transitions. Equality in the matched-$H^1$ graph excludes
+both electric surface current and magnetic distributional defect.
+
+## Layer G — complete-future-cross representation
+
+For each polarization and harmonic, $\mu_\ell^2=\lambda_\ell>0$ and the bulk
+Cauchy data lie in
+
+$$
+H^1(\mathbb R_z)\oplus L^2(\mathbb R_z),
+\qquad
+\sum_{P,\ell,m}\int_{\mathbb R}\omega_{k\ell}
+|a^P_{k\ell m}|^2dk<\infty.
+$$
+
+The intrinsic characteristic target is not arbitrary
+$H^1(\mathbb R_+)\oplus H^1(\mathbb R_+)$. It is the graph-closed fixed-point
+space of the explicit two-sheet analysis--synthesis projector, translated to
+full Maxwell data by the literal dictionary in calculation 13. Thus the
+target topology is not defined by declaring restriction unitary.
+
+The global chain is:
+
+- G-A complete-future restriction/reconstruction: `proved` on the
+  gauge-invariant energy space.
+- G-B asymptotic frame theorem: `proved` on the Schwartz potential core;
+  energy-completed potential quotient `conditional`.
+- G-C global Lee--Wald symplectomorphism: `proved` by finite exhaustion and
+  massive tail estimates.
+- G-D time/space translations, $SO(3)$ and proper gauge: `proved` on their
+  declared dense generator domains, with no corner central term.
+- G-E1 Peierls equality and G-E2 Poisson composition/exhaustion: `proved` for
+  compact gauge-invariant field-strength smearings and classical energy data.
+- G-F-Weyl algebraic representation: `proved`; G-F-dyn: `proved` on the G-D
+  automorphism domains. No tensor factorization or implementability claim.
+- G-G finite exhaustion/local-to-global compatibility: `proved` on the
+  globally extendable fixed-point subspace. Finite restriction is not
+  surjective onto every local matched pair.
 
 ## File map
 
-- `roadmap.md`: phase gates and stop rules.
-- `TODO.md`: executable next work.
-- `calculations/00-scope-spaces-and-theorem-ledger.md`: conventions, spaces,
-  gauge groups, and theorem targets.
-- `calculations/01-oriented-null-segments-and-endpoints.md`: orientations and
-  endpoint ledger.
-- `calculations/02-extended-sheet-prephase-spaces.md`: raw and dressed sheet
-  variables.
-- `calculations/03-corner-compatibility-and-diagonal-reduction.md`: first-round
-  kill test and repaired theorem.
-- `calculations/04-maxwell-master-commuting-diagram.md`: exact (E/B) data
-  dictionary and commuting square.
-- `calculations/05`--`08`: rapid Goursat/Lee--Wald and full-Maxwell composition
-  proofs.
-- `calculations/09`: Hamiltonian kill-test result and endpoint repair branches.
-- `calculations/10`--`11`: gated B1 and optional sectors.
-- `verification/CLAIM_LEDGER.md`: authoritative claim ledger.
-- `scripts/`: independent finite-cutoff and symbolic regressions.
-- `literature/literature-comparison.md`: preliminary precedent/novelty matrix.
-- `closure-audit.md`: current closure and manuscript-readiness verdict.
+- `calculations/00`--`10`: Layer-L conventions, reduction, local composition,
+  finite-cut obstruction, Peierls and algebraic Weyl result.
+- `calculations/11-zero-modes-topology-and-optional-brst.md`: separated
+  non-radiative/topological sectors; none blocks the main chain.
+- `calculations/12-complete-future-horizon-geometry-and-spaces.md`: global
+  geometry and intrinsic energy target.
+- `calculations/13-global-maxwell-characteristic-restriction.md`: full-Maxwell
+  dictionary, restriction/reconstruction, and asymptotic-frame theorem.
+- `calculations/14-global-lee-wald-and-tail-limit.md`: Maxwell tail lift,
+  ambiguity audit, and G-C.
+- `calculations/15-global-hamiltonians.md`: global generator domains,
+  Hamiltonians, signs, and algebra.
+- `calculations/16-global-peierls-weyl-and-exhaustion.md`: G-E--G-G.
+- `verification/CLAIM_LEDGER.md`: authoritative local/global status table.
+- `closure-audit.md`: Layer-L closure.
+- `global-closure-audit.md`: global closure and manuscript-readiness verdict.
+- `scripts/`: exact finite regressions and global spectral-packet regressions.
 
-## Read-only lemma bank
+## Read-only lemma bank and excluded work
 
 The sibling projects `null-characteristic-cps` and
-`static-patch-characteristic-maxwell` are read-only sources.  No file from
-either project is copied, migrated, rewritten, or assigned a stronger status
-here.  Imported lemmas are cited by exact source file and are reconnected to
-the present gauge-theoretic diagram rather than treated as new proofs.
+`static-patch-characteristic-maxwell` are read-only lemma banks. Their
+analytic master results are reconnected here through the full-Maxwell
+dictionary; no sibling file is modified and no mode regression is presented
+as a Maxwell continuum proof.
+
+This round does not modify the GitHub repository index or Research Radar and
+does not enter curved backgrounds, Yang--Mills theory, or gravity.

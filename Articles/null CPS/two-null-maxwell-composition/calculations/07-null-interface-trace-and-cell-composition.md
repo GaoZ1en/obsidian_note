@@ -1,5 +1,8 @@
 # Null-Interface Trace and Cell Composition
 
+This is the Layer-L composition theorem. It retains the complete Maxwell trace
+and applies unchanged to adjacent cells inside any finite exhaustion.
+
 ## 1. Direct verdict
 
 **Status: proved** for the anchored $Q_E=n=0$, $\ell\geq1$ Maxwell theory on
@@ -212,12 +215,12 @@ G_{12}^*\Omega_{D_1\cup_ND_2}
 \tag{7.2}
 $$
 
-after the diagonal quotient.  T-E and weak nondegeneracy of the two master
+after the diagonal quotient. L-E and weak nondegeneracy of the two master
 blocks show that no physical kernel remains.
 
-## 8. Theorem T-F
+## 8. Theorem L-F
 
-Equations (6.1)--(7.2) prove T-F on the anchored rapid-angular matched-$H^1$
+Equations (6.1)--(7.2) prove L-F on the anchored rapid-angular matched-$H^1$
 core.  The complete trace, distributional Maxwell test, potential transition,
 Goursat uniqueness, and internal-flux cancellation all enter the proof.
 
@@ -234,7 +237,7 @@ nontrivial topology, charged outer frames, and $\ell=0$ remain `conditional`.
 
 - trivial bundle and $H^1(N)=0$;
 - anchored outer frames, rapid angular decay, matched-$H^1$ generators;
-- the T-D and T-E theorems.
+- the L-D and L-E theorems.
 
 ## Not verified
 

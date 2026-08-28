@@ -1,9 +1,13 @@
 # Three-Cell Associativity
 
+This is theorem L-G for finite local cells. Calculation 16 proves that the
+same reduction-by-stages maps commute with restriction from $X_\infty$ and
+with exhaustion.
+
 ## 1. Direct verdict
 
 **Status: proved** for the same anchored rapid-angular matched-$H^1$ Maxwell
-sector as T-F:
+sector as L-F:
 
 $$
 \boxed{
@@ -162,9 +166,9 @@ ALL FULL-MAXWELL COMPOSITION CHECKS PASSED
 This is regression evidence for the full gauge/corner bookkeeping.  The
 analytic associativity proof is Sections 2--6.
 
-## 8. Theorem T-G
+## 8. Theorem L-G
 
-T-G is `proved` on the anchored rapid-angular matched-$H^1$ core.  The theorem
+L-G is `proved` on the anchored rapid-angular matched-$H^1$ core. The theorem
 does not include charged outer frames, $\ell=0$, nontrivial bundle topology,
 or a stronger Sobolev completion.
 
@@ -177,7 +181,7 @@ or a stronger Sobolev completion.
 
 ## Assumptions
 
-- T-D through T-F;
+- L-D through L-F;
 - commuting Abelian interface groups and the anchored continuous slice;
 - trivial topology with no harmonic cut one-forms.
 
