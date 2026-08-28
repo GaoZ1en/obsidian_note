@@ -80,9 +80,9 @@ J^{aA}=J^{AB}=0.
 $$
 
 Equation (4.7) of `06` gives $D_E^\dagger\eta=s^E$.  Written as a two-form,
-the apparent $a^2$ in (3.2) is exactly the polar-coordinate density factor;
-the declared regular center jet makes the Cartesian two-form smooth.  Its
-support is the support of $s^E$.
+the factor $a^2$ in (3.2) converts the contravariant coefficient to the polar
+density used in `06`.  Smoothness at the center is the separate Cartesian
+statement proved in Lemma 3.2 below.  The support is the support of $s^E$.
 
 For the magnetic source use electromagnetic duality: apply the electric lift
 to $s^B$ and take its four-dimensional Hodge dual, with the sign fixed by
@@ -94,6 +94,68 @@ The lift contains $1/\sqrt{\lambda_j}$, while $D^\dagger$ contains at most
 one angular derivative.  Hence rapid angular decay is preserved.  At fixed
 Sobolev order the maps shift one angular derivative; the precise bookkeeping
 is the same as section 8 of `10`, not a same-order isomorphism. $\square$
+
+### Lemma 3.2 — center-Cartesian smoothness of the lift
+
+Let one regular reduced source have the center jet
+
+$$
+s_{jm}(\tau,\rho)
+=\rho^{j+1}\widetilde s_{jm}(\tau,\rho^2)
+\tag{3.3}
+$$
+
+near $\rho=0$, with $\widetilde s_{jm}$ smooth.  Then the electric lift (3.2)
+defines a smooth compact Maxwell two-form at the Cartesian center.
+
+#### Proof
+
+The density convention in `06` is
+
+$$
+J^{\mu\nu}=a^2\eta_{\widehat g}^{\mu\nu},
+\qquad a=\sinh\rho.
+\tag{3.4}
+$$
+
+Thus (3.2) gives
+
+$$
+\eta^{\tau\rho}
+=-\frac{s_{jm}}{\sqrt{\lambda_j}}Y_{jm},
+\qquad
+\eta_{\tau\rho}
+=\frac{s_{jm}}{\sqrt{\lambda_j}}Y_{jm}.
+\tag{3.5}
+$$
+
+No singular $a^{-2}$ remains.  The remaining issue is that $d\rho$ is polar,
+not Cartesian.  Let
+
+$$
+H_{jm}(x):=\rho^jY_{jm}(x/\rho)
+\tag{3.6}
+$$
+
+be the solid harmonic polynomial and use
+$d\rho=\rho^{-1}x_i dx^i$.  Equations (3.3) and (3.6) give
+
+$$
+s_{jm}Y_{jm}\,d\rho
+=\widetilde s_{jm}(\tau,|x|^2)
+H_{jm}(x)x_i dx^i.
+\tag{3.7}
+$$
+
+The right-hand side is a smooth Cartesian one-form.  Hence
+$\eta=(s_{jm}Y_{jm}/\sqrt{\lambda_j})d\tau\wedge d\rho$ is smooth.  The
+finite angular sum is smooth term by term, and the rapid-angular completion
+follows from its declared tensor-harmonic seminorms.  Compact support is
+unchanged by (3.2).  The magnetic lift is the smooth four-dimensional Hodge
+dual of the electric lift. $\square$
+
+The power and parity in (3.3), rather than the statement ``$s$ is smooth on
+the closed half-line'', are the center hypothesis used by Lemma 3.1.
 
 ## 4. Master causal exactness and the annihilator
 
@@ -229,29 +291,76 @@ Uniqueness of each retarded/advanced master problem then identifies them.
 This verifies the static-patch and center hypotheses that a general
 CPS/Peierls theorem would otherwise leave implicit.
 
-## 7. Gauge independence
+## 7. Gauge-response uniqueness
 
-The Lorenz representative in (6.3) is a proof device.  For a covariant gauge
-operator
+The Lorenz representative in (6.3) is a proof device.  The following lemma
+proves gauge independence without assuming curvature equality in advance.
+
+### Lemma 7.1 — `T3-gauge-uniq`
+
+Let $j\in\Omega_c^1(M)$ obey $\delta j=0$.  Let $G_1^\pm$ be the unique
+retarded/advanced Green operators of
+$\Box_1=d\delta+\delta d$, and put
 
 $$
-P_\xi=\delta d+\xi^{-1}d\delta,
+A_1^\pm:=G_1^\pm j.
 \tag{7.1}
 $$
 
-the source is co-closed by (6.1).  Any two causal potential responses have
-the same curvature; their difference is a source-free closed one-form.  On
-$M\simeq\mathbb R^4$ it is exact,
+For every constant $\xi>0$ for which
 
 $$
-A_\xi-A_{\xi'}=d\chi,
-\qquad d(A_\xi-A_{\xi'})=0.
+P_\xi:=\delta d+\xi^{-1}d\delta
 \tag{7.2}
 $$
 
-The causal support condition fixes the irrelevant homogeneous ambiguity.
-Therefore $F_\eta^{\rm cov}$ and its Peierls pairing depend neither on
-$\xi$ nor on a potential representative.
+has unique retarded/advanced Green operators $G_\xi^\pm$ on compact smooth
+one-form sources with the standard causal support, one has
+
+$$
+\boxed{G_\xi^\pm j=G_1^\pm j.}
+\tag{7.3}
+$$
+
+Consequently all these gauge-fixed causal responses have the same curvature.
+
+#### Proof
+
+The Hodge Green operators commute with $\delta$ on compact tests, so
+
+$$
+\delta A_1^\pm
+=\delta G_1^\pm j
+=G_0^\pm\delta j=0.
+\tag{7.4}
+$$
+
+Since $\Box_1A_1^\pm=j$, equation (7.4) gives
+
+$$
+P_\xi A_1^\pm
+=\delta dA_1^\pm+\xi^{-1}d\delta A_1^\pm
+=j.
+\tag{7.5}
+$$
+
+The support of $A_1^\pm$ is retarded/advanced.  Thus $A_1^\pm$ is a causal
+solution of the $P_\xi$ problem with source $j$.  Uniqueness in the stated
+Green class gives (7.3). $\square$
+
+The hypotheses used here are: the globally hyperbolic open static patch with
+no physical timelike boundary; compact smooth co-closed source; constant
+$\xi>0$ in the standard covariant-gauge Green-hyperbolic class; identical
+causal support convention; and no extra boundary condition at the horizon.
+The last condition matters because the horizon is not part of the local
+Green problem.  More generally, if a formulation has uniqueness only modulo
+residual gauge, the same proof gives
+$G_\xi^\pm j-G_1^\pm j=d\chi^\pm$, which is already enough after applying
+$d$.  In the present unique causal class the stronger equality (7.3) holds.
+
+Applying the lemma to $j_\eta=\delta\eta$ proves that
+$F_\eta^{\rm cov}=dE_1j_\eta$ and its Peierls pairing are independent of
+$\xi$ and of the potential representative.
 
 ## 8. Local Peierls theorem
 
@@ -279,8 +388,9 @@ form `T2-log` on the source-induced horizon vectors.
 
 Lemma 3.1 gives all compact reduced sources a Maxwell representative.
 Equations (4.2)--(4.5) identify exactly the quotient on which (8.2) is
-nondegenerate.  Section 5 removes topological kernels, and (6.4)--(7.2)
-identify the lift with the covariant, gauge-independent Maxwell response.
+nondegenerate.  Section 5 removes topological kernels, and (6.4) together
+with Lemma 7.1 identifies the lift with the covariant, gauge-independent
+Maxwell response.
 Finally, compact sources produce CPS vectors by section 3 of `06`, so
 `T2-log` transports the bulk Green identity to the characteristic inverse.
 The spectral normalization and sign are equations (5.4)--(6.7) of `06`.
@@ -299,10 +409,12 @@ the already-fixed Lee--Wald representative and endpoint policy of `04`.
 | statement | status | boundary |
 |---|---|---|
 | compact reduced sources have compact Maxwell two-form representatives | `proved` | Lemma 3.1; regular center and rapid angular core |
+| center-Cartesian smoothness of the compact lift | `proved` | Lemma 3.2 and the solid-harmonic identity (3.7) |
 | master on-shell annihilator is (4.5) | `proved` | causal exactness (4.2) |
 | compact-support/topological kernel is absent | `proved` | trivial bundle on $M\simeq\mathbb R^4$ |
 | Lorenz/master diagram commutes | `proved` | compact tests, unique causal solutions |
-| field-strength response is gauge independent | `proved` | fixed bundle, compact causal response |
+| `T3-gauge-uniq` | `proved` | Lemma 7.1; co-closed compact sources and unique causal Green problems |
+| field-strength response is gauge independent | `proved` | apply $d$ after Lemma 7.1 |
 | `T3-local` | `proved` | compact field-strength quotient (8.1) |
 | `T3-sharp` for endpoint/memory observables | `conditional` | not compact, not continuous in the log CPS topology |
 

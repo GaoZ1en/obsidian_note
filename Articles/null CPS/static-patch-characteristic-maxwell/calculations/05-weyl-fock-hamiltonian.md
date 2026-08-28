@@ -257,7 +257,7 @@ This is an algebraic automorphism group, not a point-norm continuous
 $C^*$-dynamics on the full abstract Weyl algebra: for generic nonzero
 $T_sc-c$, $\|W(T_sc)-W(c)\|=2$.  Strong continuity holds after passing to the
 regular static or BD GNS representations.  The distinction is used in the
-split `T5-W*`/`T5-C*` statement of `07`.
+split `T5-W*`/`T5-alg` statement of `07`.
 
 On the one-particle space,
 

@@ -525,9 +525,8 @@ The existence of a free massless all-spin de Sitter horizon S-matrix, a radiativ
 - “this is the first horizon symplectic quantization of the photon in de Sitter”;
 - “the finite product (1.2) alone is a publishable novelty.”
 
-The only viable article-level contribution would be a genuine affine
-bulk-range theorem rather than the already-known hard-frequency scattering
-chain.  `10` finds a nontrivial two-ended Mellin/Hardy compatibility involving
-$S_j$, but only at finite differentiability and on the finite-harmonic or
-rapid-angular smooth core.  The maximal `T1-aff/T4-bulk` gate remains
-`conditional`; all other expansion is frozen until that gate is decided.
+The only possible article-level contribution would have been a genuine
+affine bulk-range theorem rather than the already-known hard-frequency
+scattering chain.  `10`--`12` retain a fixed-$j$ two-ended pole/moment theorem,
+but the compatible full tower and maximal `T1-aff/T4-bulk` range remain
+`conditional`.  The final kill test therefore freezes the static-patch lane.

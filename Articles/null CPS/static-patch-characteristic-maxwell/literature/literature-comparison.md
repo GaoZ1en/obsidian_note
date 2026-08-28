@@ -13,12 +13,13 @@ The repaired technical conjunction is split:
 4. a proved compact-observable Maxwell Peierls theorem `T3-local`, including
    the explicit static-patch test-complex hypotheses;
 5. a proved kinematic trace classification `T4-kin`;
-6. a finite-order affine criterion `T1-aff(k)` whose range includes a
-   two-ended $S_j$-dependent Mellin/Hardy compatibility;
+6. a fixed-$j$ affine criterion `T1-aff(k,fixed-j)` with the exact
+   incoming-only $S_j$ pole/moment/corner compatibility;
 7. exact stretched-horizon DtN/cut coefficient results without a completed
    phase-space limit theorem.
 
-The maximal affine range `T1-aff/T4-bulk`, endpoint-extended `T2-aff`, sharp
+The compatible `T1-aff(k,full tower)`, maximal affine range
+`T1-aff/T4-bulk`, endpoint-extended `T2-aff`, sharp
 Peierls theorem, and completed DEM limit remain conditional.  The novelty
 verdict is therefore negative for the present article: every closed
 conceptual component has close prior art, and the potentially new affine
@@ -558,12 +559,12 @@ the novelty gate.  The decisive reasons are:
 6. the exact $S_j$, Legendre-$Q_j$ kernel, and endpoint coefficient maps are
    useful regressions/refinements but not a sufficient standalone novelty.
 
-Do not pivot yet.  `10` identifies a nontrivial two-ended affine compatibility
-involving the exact $S_j$ multiplier, so one narrow kill test remains open.
-Freeze every other static-patch extension.  If that condition cannot be
-upgraded to a maximal completed Mellin--Hardy range theorem, retain this
-directory as calibration and pivot to Schwarzschild--de Sitter Maxwell, then
-Nariai $dS_2\times S^2$.
+The kill test is now complete.  `12` shows an exact fixed-$j$ pole/moment
+compatibility and a polynomial fixed-strip $S_j$ bound, but no compatible
+full-tower interior theorem or established analytic angular obstruction.  Freeze this
+directory as calibration.  The next research move is the action-first
+composition of Maxwell data on two intersecting null hypersurfaces, not
+Schwarzschild--de Sitter or Nariai.
 
 ## 11. Current claim, blockers, and reopening condition
 
@@ -573,13 +574,14 @@ On the declared logarithmic CPS, source-free $dS_4$ Maxwell admits an
 action-first bulk/radiation reconstruction whose Lee--Wald form and
 compact-observable Peierls bracket agree, with exact scattering and normal
 BD-GNS KMS compatibility.  Separately, the project proves `T4-kin`, the
-finite-order `T1-aff(k)` criterion, and exact DEM DtN/finite-mode cut
+finite-order `T1-aff(k,fixed-j)` criterion, and exact DEM DtN/finite-mode cut
 identities.  It does not prove a maximal affine endpoint phase space or DEM
 phase-space limit.
 
 ### Remaining blockers
 
-- `T1-aff/T2-aff/T4-bulk`: characterize the maximal bulk-compatible affine
+- `T1-aff(k,full tower)` and `T1-aff/T2-aff/T4-bulk`: the compatible
+  interior estimate and maximal bulk-compatible affine
   subspace of the raw trace completion;
 - `T3-sharp`: decide whether sharp memory/cut functionals admit a controlled
   Peierls extension;
@@ -590,7 +592,6 @@ phase-space limit.
 
 ### Reopening/submission condition
 
-Reconsider a $dS_4$ paper only if the two-ended affine condition becomes a
-maximal completed range theorem not already implied by the cited global
-horizon results.  If it reduces to a direct restatement, freeze the static
-patch and only then start the separate Schwarzschild--de Sitter project.
+No active reopening condition remains.  Revisit this directory only if an
+independent two-null-surface composition theorem later supplies a uniform
+compatible affine range not manufactured from the static restriction map.

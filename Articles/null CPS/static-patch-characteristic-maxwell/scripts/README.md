@@ -25,6 +25,7 @@ wolframscript -file scripts/kms_mellin_checks.wl
 python3 scripts/memory_sector_checks.py
 python3 scripts/stretched_horizon_checks.py
 python3 scripts/affine_horizon_checks.py
+python3 scripts/incoming_affine_kernel_checks.py
 ```
 
 Every script exits nonzero if a declared check fails.
@@ -218,12 +219,36 @@ Success marker:
 ALL AFFINE-HORIZON CHECKS PASSED
 ```
 
+## `incoming_affine_kernel_checks.py`
+
+Coverage:
+
+- exact rational partial fractions of $S_j$ and the constant-map identity;
+- the time-tail Fourier multiplier by independent numerical integration;
+- nonresonant exponential identities and direct-convolution moment samples;
+- nonzero pole-resonance coefficients and the $u e^{pu}$ kernel for finite $j$;
+- the exact highest coefficient
+  $A_{jj}=(-1)^j j\binom{2j}{j}$ and its central-binomial asymptotic;
+- a finite unrestricted $I_0$ Goursat stress test;
+- fixed-strip polynomial scaling samples for the compatible multiplier.
+
+Success marker:
+
+```text
+ALL INCOMING-AFFINE KERNEL CHECKS PASSED
+```
+
+The exact finite identities support calculation `12`.  The large-$j$
+samples do not prove the strip bound, a cancellation theorem in a common
+Kruskal interior, or `T1-aff(k,full tower)`.
+
 ## Claim boundary
 
 These scripts check only their listed algebraic identities and finite numerical
 samples. In particular, the symplectic script does not prove Stokes limits,
 density, or the proper-gauge kernel; those are the written arguments in `04`.
-The suite does not by itself prove a maximal Goursat/affine range theorem,
+The suite does not by itself prove a compatible full-tower or maximal
+Goursat/affine range theorem,
 operator self-adjointness, Maxwell test-complex exactness, Peierls equality,
 KMS, the DEM phase-space limit, or novelty.
 

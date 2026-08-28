@@ -27,7 +27,7 @@ Exit evidence:
 - horizon and corner orientations;
 - smooth-center, energy, infrared, endpoint, and gauge policies;
 - scoped `T1-log/T1-aff`, `T2-log/T2-aff`, `T3-local/T3-sharp`,
-  `T4-kin/T4-bulk`, and `T5-W*/T5-C*` targets.
+  `T4-kin/T4-bulk`, and `T5-W*/T5-alg` targets.
 
 ### A1 Raw horizon CPS — closed in the fixed trivial-bundle sector
 
@@ -55,7 +55,7 @@ Exit evidence:
 - complete $F\leftrightarrow\Psi^{E/B}$, potential, symplectic, Hamiltonian, and duality dictionaries;
 - exact $j=1,2,3$ regression.
 
-### A3 Half-line scattering and reconstruction — `T1-log` closed, `T1-aff` open
+### A3 Half-line scattering and reconstruction — `T1-log` closed, affine split
 
 Deliverable: `calculations/03-half-line-scattering-and-reconstruction.md`.
 
@@ -64,7 +64,11 @@ Exit evidence:
 - Friedrichs domain, spectrum, and zero-energy classification;
 - Darboux regular modes and exact $S_j(\omega)$;
 - `T1-log` on the smooth core and infrared-controlled completion;
-- `T1-aff(k)` finite-order two-ended criterion in `10`;
+- `T1-aff(k,fixed-j)` finite-order two-ended criterion in `10` and
+  incoming-only moment form in `12`;
+- `T1-aff(k,full tower)` `conditional`: unrestricted rapid-angular Goursat
+  data are false, while the $S_j$-compatible boundary loss is polynomial but
+  the common interior estimate is missing;
 - maximal completed `T1-aff` remains `conditional`;
 - phase, Wronskian, reconstruction, and normalization regressions.
 
@@ -97,13 +101,14 @@ positive self-adjoint $H_{\partial t}$, vanishing anomalous terms, and a unitary
 Fock scattering implementer. This constructs the static representation; it
 does not select Bunch--Davies.
 
-### B1.3 Peierls equality — `T3-local` closed
+### B1.3 Peierls equality — `T3-gauge-uniq` and `T3-local` closed
 
 Deliverable: `calculations/06-peierls-and-causal-propagator.md`.
 
 Exit evidence: normalized master retarded/advanced kernels, explicit compact
 field-strength test quotient and adjoint dictionary, the compact-source/test-
-complex exactness lemma of `11`, covariant gauge-independent Maxwell lift,
+complex and center-Cartesian lemmas of `11`, explicit gauge-response
+uniqueness for co-closed sources, covariant gauge-independent Maxwell lift,
 characteristic inverse equality, and passing spacelike-vanishing regression.
 `T3-sharp` endpoint-memory observables remain conditional.
 
@@ -116,7 +121,7 @@ Deliverable: `calculations/07-bunch-davies-kms.md`.
 Exit evidence: global Euclidean/affine-horizon definition on the local
 gauge-invariant characteristic algebra, exact Mellin normalization,
 $\beta_t=2\pi L$ strip/detailed-balance proof, `T5-W*` on the normal BD GNS
-von Neumann algebra, the dense analytic `T5-C*` boundary relation, and an
+von Neumann algebra, the dense analytic `T5-alg` boundary relation, and an
 explicit demonstration that the larger CPS completion needs extra infrared
 control.  Point-norm continuous abstract Weyl dynamics is false.  No density
 matrix or sharp tensor factor is used.
@@ -126,7 +131,8 @@ matrix or sharp tensor factor is used.
 Deliverable: `calculations/08-zero-modes-memory-and-topology.md`.
 
 Exit evidence for `T4-kin`: unique fixed-switch radiative/$\widehat a$/memory
-trace decomposition with finite symplectic pairing and explicit switch shear;
+decomposition on the logarithmic endpoint-value profile core, with finite
+symplectic pairing and explicit switch shear;
 exact separation from $j=0$ flux, large gauge, relative
 frames, soft radiative families, and generic energy-only infrared data; and a
 coordinate-level reconciliation with the 2025 complete-horizon zero-memory
@@ -157,10 +163,31 @@ coefficient form.  The completed phase-space comparison `E-limit` remains
 conditional until a common ambient topology, symplectic/reduction convergence,
 affine bulk range, and global-versus-linearized $U(1)$ frame are supplied.
 
+## Phase D — final affine kill test — closed with freeze verdict
+
+Deliverables: `calculations/10-affine-horizon-range.md`,
+`calculations/12-incoming-only-affine-range.md`, and `kill-test-audit.md`.
+
+Exit evidence:
+
+- exact $S_j$ partial fractions and incoming-only tail kernel;
+- pole-resonance cancellation, exponential-moment future jets, and corner
+  relation for fixed $j$;
+- $A_{jj}\sim(-1)^j4^j\sqrt{j/\pi}$;
+- genuine $I_0(cj)$ growth for unrestricted Goursat data;
+- sharp fixed-strip $S_j$ bound $O(j^{2\sigma})$ after compatibility;
+- precise `Mellin-nec` and `Mellin-Sobolev-suff`, with
+  `Mellin-Ckalph-suff` downgraded;
+- no completed compatible interior estimate and no article-level novelty
+  gate.
+
+Verdict: freeze this static-patch lane.  Do not proceed to SdS/Nariai from
+it.  Return instead to two-intersecting-null-surfaces Maxwell composition.
+
 ## Publication gate
 
-The logarithmic chain, `T3-local`, `T4-kin`, and `T5-W*` are proved at their
-scoped levels, but the maximal affine chain is not.  Continue only the
-`T1-aff/T4-bulk` kill test.  If the two-ended $S_j$-dependent condition does
-not become a nontrivial completed Mellin--Hardy range theorem, preserve this
-as calibration and pivot according to the README stop rule.
+The logarithmic chain, `T3-gauge-uniq`, `T3-local`, `T4-kin`, `T5-W*`,
+`T5-alg`, and `T1-aff(k,fixed-j)` are proved at their scoped levels.  The
+compatible full tower and maximal affine chain are not.  The final kill test
+does not clear the article gate; preserve this directory as calibration and
+follow the README freeze rule.

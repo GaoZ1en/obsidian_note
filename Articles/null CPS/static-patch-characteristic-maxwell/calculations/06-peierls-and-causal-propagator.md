@@ -330,11 +330,14 @@ sources (4.7)--(4.8), have the same causal support, and obey the same regular
 center condition. Uniqueness of the retarded/advanced master problems gives
 exactly (5.1).
 
-The full commuting diagram is proved in `11`, section 6.  A change of
-covariant gauge changes the potential response by an exact one-form on
-$\mathbb R\times B^3$; applying $d$ removes it. Hence (5.1) is the covariant
-Maxwell advanced-minus-retarded propagator on $\mathscr T_F$, not a
-gauge-fixed potential bracket presented as an observable.
+The full commuting diagram is proved in `11`, section 6.  Lemma 7.1 there
+shows directly that, for co-closed compact sources and the unique causal
+Green problems of the declared covariant gauges, the Lorenz response already
+solves every $P_\xi$ problem and the potential responses agree.  In a
+formulation unique only modulo residual gauge their difference is $d\chi$,
+which is still killed by $d$.  Hence (5.1) is the covariant Maxwell
+advanced-minus-retarded propagator on $\mathscr T_F$, not a gauge-fixed
+potential bracket presented as an observable.
 
 The Peierls convention used here is
 

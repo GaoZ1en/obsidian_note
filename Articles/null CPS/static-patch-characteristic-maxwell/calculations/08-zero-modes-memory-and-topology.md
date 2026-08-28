@@ -7,7 +7,8 @@ separating three different spaces which must not be identified:
 
 1. the smooth source-free bulk phase space on the static spatial ball;
 2. the infrared-controlled CPS completion used in `03`--`07`;
-3. a smooth endpoint-trace extension of the raw half-horizon data.
+3. a kinematic two-ended logarithmic profile core for the raw half-horizon
+   endpoint values.
 
 On the first space the electric and magnetic $j=0$ fluxes vanish.  On the
 second space there is no zero-frequency vector and generic pointwise endpoint
@@ -148,7 +149,7 @@ sector requires patchwise connections and transition functions; its integer
 label is not a linear tangent direction and is not added to the phase space
 studied here.
 
-## 4. A finite endpoint-trace symplectic space
+## 4. A finite logarithmic endpoint-value profile space
 
 The endpoint classification is most transparent mode by mode.  Fix one real
 polarization/harmonic label $(P,j,m)$, choose once and for all
@@ -159,7 +160,7 @@ h(-\infty)=0,\quad h(+\infty)=1,\quad h'\in\mathscr S(\mathbb R),
 \tag{4.1}
 $$
 
-and define the smooth trace core
+and define the logarithmic endpoint-value core
 
 $$
 \boxed{
@@ -579,12 +580,12 @@ distinction between:
 
 ## 11. Theorem `T4-kin`
 
-### Theorem 11.1 — `T4-kin`, stratified trace classification
+### Theorem 11.1 — `T4-kin`, stratified logarithmic profile classification
 
 For source-free $U(1)$ Maxwell on the smooth static spatial ball $B^3$:
 
 1. $Q_E=Q_B=0$, and there is no flat-holonomy sector.
-2. Every curvature datum in the smooth past-half trace core has a unique
+2. Every curvature datum in the kinematic past-half profile core has a unique
    decomposition (4.9) into radiative, cut-constant, and electric/magnetic
    memory coordinates.
 3. The trace form is finite and weakly nondegenerate and has the canonical
@@ -629,10 +630,12 @@ following stronger trace-range statements remain `conditional`:
 - an endpoint frame survives the stretched-horizon null limit.
 
 The omitted energy-only trace and continuity statements are `false` without
-extra hypotheses.  `10`, Theorem 6.1 proves the finite-order, finite-harmonic
-or rapid-angular smooth subrange by testing both the incoming affine end and
-the opposite end of $S_jc$.  The arbitrary Schwartz trace core is larger, so
-the maximal `T4-bulk` theorem remains `conditional`.  The second item is
+extra hypotheses.  `10`, Theorem 6.1 and `12`, Theorem 4.1 prove the
+finite-order fixed-$j$/finite-harmonic subrange by testing both the incoming
+affine end and the incoming-only pole/moment form of the opposite end.
+`T1-aff(k,full tower)` remains conditional, and the arbitrary logarithmic
+profile core is larger, so the maximal `T4-bulk` theorem remains
+`conditional`.  The second item is
 `T3-sharp`; the last also depends on the conditional phase-space limit in
 `09`.
 
@@ -659,7 +662,7 @@ only.  They do not prove the topological, trace-space, or spectral theorems.
 | statement | status | location |
 |---|---|---|
 | smooth source-free $B^3$ has $Q_E=Q_B=0$ and no holonomy | `proved` | section 3; `02`, section 14 |
-| trace-core decomposition and finite canonical pairing | `proved` | section 4 |
+| logarithmic endpoint-value profile decomposition and finite canonical pairing | `proved` | section 4 |
 | electric/magnetic half-memory transport laws | `proved` | section 5 |
 | electric memory generates half-horizon large gauge | `proved` | section 6 |
 | universal independent edge oscillator on every null sheet | `false` | section 6 |
@@ -667,9 +670,10 @@ only.  They do not prove the topological, trace-space, or spectral theorems.
 | finite energy implies the CPS infrared condition | `false` | section 7 |
 | a generic CPS vector has an affine endpoint trace | `false` | sections 2 and 9 |
 | complete-horizon zero memory forces each static-half memory to vanish | `false` | section 10 |
-| `T4-kin` on the declared stratified trace spaces | `proved` | Theorem 11.1 |
+| `T4-kin` on the declared stratified profile spaces | `proved` | Theorem 11.1 |
 | the coordinate conjugate to memory is the raw $a$ independent of $h$ | `false` | (4.7)--(4.8b) |
-| finite-order smooth-bulk subrange | `proved` | `10`, Theorem 6.1 |
-| maximal completed `T4-bulk` range | `conditional` | section 12; `10` |
+| finite-order fixed-$j$ smooth-bulk subrange | `proved` | `10`, Theorem 6.1; `12`, Theorem 4.1 |
+| finite-order compatible full angular tower | `conditional` | `12`, sections 5--7 |
+| maximal completed `T4-bulk` range | `conditional` | section 12; `10`--`12` |
 | universal energy-only point-trace reconstruction/symplectic equivalence | `false` | sections 2, 7, 9, and 12 |
 | maximal smooth-across-$B$ bulk range inside the declared trace topology | `conditional` | section 12 |

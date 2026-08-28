@@ -418,17 +418,19 @@ $$
 
 is not identified merely by declaring it to be an image.  `10` gives an
 independent finite-order description using weighted affine limits of the
-incoming trace and the opposite-end limits of $S_jc$.  That description is
-proved for finite harmonics/rapid-angular smooth data; the maximal completed
-space remains `T1-aff`, status `conditional`.
+incoming trace and the opposite-end limits of $S_jc$; `12` rewrites the
+latter as incoming pole/moment conditions.  The description is proved for
+fixed $j$/finite harmonics.  The compatible full tower and maximal completed
+space remain `conditional`.
 
 ## 10. What has and has not been established
 
 - Raw action, pullback, relative signs, and Hodge map: `checked symbolically`.
 - Intrinsic constraint hierarchy and corner integrations: `proved`.
 - $\mathfrak r_A=F_{vA}$-only completeness on `T1-log`: `proved` in `03`.
-- affine $r_A^{\rm aff}=F_{VA}$ range: `T1-aff(k)` proved in `10` on the
-  finite-order smooth core; maximal completion `conditional`.
+- affine $r_A^{\rm aff}=F_{VA}$ range:
+  `T1-aff(k,fixed-j)` proved in `10`--`12`;
+  `T1-aff(k,full tower)` and maximal completion `conditional`.
 - arbitrary nonzero magnetic Chern mean within the global-potential tangent
   space: `false`.
 - $A_A$-only completeness without a generator frame: `false`.

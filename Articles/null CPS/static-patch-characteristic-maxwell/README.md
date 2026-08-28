@@ -2,9 +2,9 @@
 
 ## Current verdict
 
-**The zero-trace logarithmic radiation-field chain is closed; the affine
-horizon/corner range is not.**  Calculations `00`--`09` are therefore not all
-closed under their former theorem names.
+**The logarithmic chain and the fixed-$j$ affine kill test are closed; the
+full angular affine range is not, and the static-patch project is frozen.**
+Calculations `00`--`12` do not support a maximal affine phase-space theorem.
 
 Closed in the repaired scope:
 
@@ -14,30 +14,37 @@ Closed in the repaired scope:
   $S_j(\omega)$, static Weyl/Fock/Hamiltonian chain;
 - `T1-log`, the spectral radiation-field restriction theorem for
   $\mathfrak r_A=F_{vA}$, and `T2-log`, its zero-trace Lee--Wald theorem;
-- `T3-local`, after the compact Maxwell test-complex/exactness lemma in `11`;
-- `T4-kin`, the chosen trace-space canonical decomposition, with memory
+- `T3-gauge-uniq` and `T3-local`, after the compact Maxwell
+  test-complex/exactness and center-Cartesian lemmas in `11`;
+- `T4-kin`, the chosen logarithmic endpoint-value profile decomposition, with memory
   conjugate to $\widehat a=a+2\ell_h(x)$ rather than to an unexplained raw
   endpoint constant;
 - `T5-W*`, the normal BD KMS theorem in the GNS von Neumann algebra, plus the
-  dense analytic `T5-C*` boundary relation;
+  dense analytic `T5-alg` boundary relation;
+- `T1-aff(k,fixed-j)`, the incoming-only pole-cancellation/exponential-moment
+  theorem of `12`, together with `Mellin-nec` and
+  `Mellin-Sobolev-suff`;
 - the exact DEM DtN kernel, edge scaling, strong-resolvent radiative limit,
   and finite-harmonic cut-form identity.
 
 Still conditional:
 
-- the maximal `T1-aff` range of bulk solutions smooth across $B$;
+- `T1-aff(k,full tower)` on the $S_j$-compatible candidate range and the
+  maximal `T1-aff` range of bulk solutions smooth across $B$;
+- `Mellin-Ckalph-suff`;
 - `T2-aff`, including genuine affine endpoint traces, memory, frames, and the
   choice of symplectic-potential representative/boundary action;
 - `T3-sharp` endpoint-memory observables and the maximal `T4-bulk` range;
 - `E-limit`, the completed stretched-horizon reduction/null-limit theorem.
 
-Calculation `10` does obtain a nontrivial partial result: finite-order affine
-regularity has an exact weighted-derivative/Mellin criterion, and smoothness
-through $B$ requires both the incoming $v\to+\infty$ condition and the
-opposite-end $u\to-\infty$ condition after multiplication by $S_j$.  This
-keeps a narrow `T1-aff/T4-bulk` research lane open.  All other static-patch
-extensions are frozen, and Schwarzschild--de Sitter must not start until this
-kill test is resolved.
+Calculations `10` and `12` resolve the last kill test.  Unrestricted
+full-tower Goursat evolution on a fixed Kruskal rectangle has genuine
+$I_0(cj)$ growth, but the exact $S_j$-compatible boundary multiplier has only
+fixed-strip polynomial loss.  The poles yield fixed-$j$ resonance and moment
+conditions, not a forced analytic/Gevrey angular topology or a completed new
+CPS range.  This is useful calibration but not enough article-level content;
+further static-patch mode work and a Schwarzschild--de Sitter expansion are
+both frozen.
 
 The existing product-background benchmark at `../null-characteristic-cps/` is read-only. Its closed claims are not reopened.
 
@@ -76,15 +83,17 @@ supplemented by normal-electric and magnetic corner integration data.
 - `calculations/04-symplectic-restriction-and-normalization.md` — finite-region Stokes proof, raw Maxwell/master normalization, endpoint term, proper-gauge kernel, `T2-log`, and the `T2-aff` ambiguity boundary.
 - `calculations/05-weyl-fock-hamiltonian.md` — Weyl algebra, static complex structure, Fock representation, Hamiltonian, anomalous-term audit.
 - `calculations/06-peierls-and-causal-propagator.md` — master causal kernel, Maxwell field-strength lift, characteristic inverse, `T3-local`.
-- `calculations/07-bunch-davies-kms.md` — affine/Euclidean BD restriction, Mellin normalization, `T5-W*`/`T5-C*`, and the IR boundary.
+- `calculations/07-bunch-davies-kms.md` — affine/Euclidean BD restriction, Mellin normalization, `T5-W*`/`T5-alg`, and the IR boundary.
 - `calculations/08-zero-modes-memory-and-topology.md` — `T4-kin`, switch shear, conditional `T4-bulk`, and the complete-horizon memory comparison.
 - `calculations/09-stretched-horizon-comparison.md` — proved DtN/cut coefficients and conditional `E-limit`.
-- `calculations/10-affine-horizon-range.md` — affine/log distinction, finite-order/Mellin criteria, counterexample, and the two-ended `T1-aff(k)` range.
-- `calculations/11-maxwell-test-complex-exactness.md` — compact source lift, exactness/cohomology lemma, Lorenz diagram, and gauge independence.
+- `calculations/10-affine-horizon-range.md` — affine/log distinction, precise Mellin tiers, counterexample, and fixed-$j$/full-tower theorem split.
+- `calculations/11-maxwell-test-complex-exactness.md` — compact source lift, Cartesian-center lemma, exactness/cohomology, Lorenz diagram, and gauge-response uniqueness.
+- `calculations/12-incoming-only-affine-range.md` — exact $S_j$ partial fractions, time kernel, moments/resonances, large-$j$ estimate, and kill verdict.
 - `verification/CLAIM_LEDGER.md` — authoritative claim status and proof locations.
 - `literature/literature-comparison.md` — known/new/cannot-say audit.
 - `scripts/` — exact and numerical regressions with reproducible thresholds.
 - `repair-audit.md` — old claim to repaired claim/status/proof-location audit.
+- `kill-test-audit.md` — final continue/freeze decision and evidence boundary.
 - `roadmap.md` — dependency graph and publication gates.
 - `TODO.md` — executable next steps.
 
@@ -103,9 +112,10 @@ wolframscript -file scripts/kms_mellin_checks.wl
 python3 scripts/memory_sector_checks.py
 python3 scripts/stretched_horizon_checks.py
 python3 scripts/affine_horizon_checks.py
+python3 scripts/incoming_affine_kernel_checks.py
 ```
 
-The repaired suite contains ten scripts.  See `scripts/README.md` for coverage,
+The repaired suite contains eleven scripts.  See `scripts/README.md` for coverage,
 expected terminal markers, environments, and numerical thresholds.  Passing
 scripts establish only their finite identities and samples, never the affine
 range, exactness, KMS, or phase-space limit theorems.
@@ -114,9 +124,10 @@ range, exactness, KMS, or phase-space limit theorems.
 
 Current defensible technical claim: an action-first logarithmic
 radiation-field/Lee--Wald/Peierls chain for source-free $dS_4$ Maxwell, plus a
-finite-order two-ended affine range criterion and a kinematic endpoint
-classification.  This is not yet a maximal affine phase-space theorem and is
-not presently a defensible first-in-literature claim.
+fixed-$j$ incoming-only affine pole/moment theorem and a kinematic endpoint
+classification.  The full angular compatible range, affine Hölder converse,
+and maximal affine phase space remain conditional.  This is not a defensible
+first-in-literature paper core.
 
 Current blockers:
 
@@ -126,17 +137,17 @@ Current blockers:
 4. `E-limit` lacks a common ambient topology and convergence of symplectic reduction;
 5. the exact conjunction was not located in one paper, but search absence is not novelty evidence.
 
-Next research step: work only on the maximal `T1-aff/T4-bulk` range.  If the
-finite-order two-ended condition extends to a genuine completed
-Mellin--Hardy theorem with nontrivial corner compatibility, retain it as a
-possible paper core.  If it collapses to a direct restatement of the known
-global-horizon theorem, freeze this project and only then pivot to
-Schwarzschild--de Sitter Maxwell; Nariai remains second choice.
+Next research step: return to the action-first composition problem for
+Maxwell data on two intersecting null hypersurfaces.  Reuse the present
+fixed-mode kernel and corner lessons only as checks.  Do not continue static
+patch mode calculations and do not open a Schwarzschild--de Sitter main
+project from this directory.
 
 ## Stop/pivot rule
 
-The kill test is `T1-aff/T4-bulk`, not the already-closed logarithmic chain.
-Continue only if the two-ended $S_j$-dependent affine compatibility becomes a
-maximal completed range theorem.  Otherwise freeze this directory as an
-internal calibration note and pivot first to Schwarzschild--de Sitter
-Maxwell, second to Nariai $dS_2\times S^2$.
+The `T1-aff/T4-bulk` kill test is complete.  The incoming-only pole/moment
+theorem survives at fixed $j$, but the full compatible interior estimate and
+completed range do not close, and the exact $S_j$ boundary estimate does not
+establish an analytic/Gevrey angular obstruction.  Freeze this directory as an internal
+calibration note.  The next live question is two-intersecting-null-surfaces
+Maxwell composition, not Schwarzschild--de Sitter or Nariai.

@@ -1,39 +1,35 @@
 # TODO
 
-## Reopened by the affine/log repair
+## Final kill-test repair — closed and frozen
 
-- [ ] `T1-aff`: construct the maximal fixed-Sobolev/Mellin--Hardy range of
-  center-regular Maxwell solutions smooth across $B$.
-  Context: `10` proves finite-order modewise/rapid-angular criteria, but not a
-  completed full-tower range.
-  Check: both incoming $v\to+\infty$ limits and outgoing
-  $u\to-\infty$ limits of $S_jc$, with corner matching.
-- [ ] `T2-aff`: prove Lee--Wald equality on that affine range after fixing
-  $\theta\mapsto\theta+dY+\delta B$, boundary action, boundary conditions,
-  and endpoint polarization.
-  Check: continuity of the total cut form and the exact proper-gauge kernel.
-- [x] `T3 exactness lemma`: verify compact Maxwell representatives, causal
-  exactness, compact-support cohomology, the Lorenz/master Green diagram, and
-  gauge independence.
-  Evidence: `calculations/11-maxwell-test-complex-exactness.md`.
-- [ ] `T4-bulk`: identify the maximal subset of the kinematic trace/memory
-  core realized by smooth-across-$B$ bulk solutions.
-  Check: arbitrary $x\in\mathscr S$ must not be admitted unless it satisfies
-  the affine criteria of `10`.
-- [ ] `E-limit`: define a common ambient topology/direct system and prove
-  symplectic and reduction convergence; until then retain only finite-mode
-  coefficient identities.
-- [ ] Bundle formulation: either keep the present global-potential trivial
-  Chern sector (current default) or build a separate patchwise-connection
-  superselection extension.  Do not mix the two tangent spaces.
-- [x] Fixed-$s$ angular bookkeeping: record
-  $F_{vA}\in H^s$ but $\mathcal E,\mathcal B\in H^{s-1}$ for an $H^s$
-  master tower.
-  Evidence: `00`, `02`, `03`, and `10`, section 8.
-- [ ] Decide the kill test: upgrade the two-ended affine condition to a
-  completed nontrivial theorem, or freeze the static patch.
-- [ ] Do **not** start the Schwarzschild--de Sitter main project before the
-  preceding kill test is decided.
+- [x] Split `T1-aff(k,fixed-j)` from `T1-aff(k,full tower)`.
+  Evidence: `10`, Theorem 6.1; `12`, sections 4--7.
+- [x] Derive the exact partial fractions, incoming-only tail kernel,
+  pole-resonance cancellations, exponential moments, corner condition, and
+  highest-pole asymptotic.
+  Evidence: `12`; `scripts/incoming_affine_kernel_checks.py`.
+- [x] Prove unrestricted fixed-rectangle Goursat growth is exponential in
+  $j$, and prove the $S_j$-compatible boundary multiplier has only
+  fixed-strip polynomial loss.
+  Result: unrestricted rapid-angular data are `false`; the compatible
+  full-tower interior theorem is `conditional`, not an analytic/Gevrey
+  theorem.
+- [x] Split `Mellin-nec`, `Mellin-Sobolev-suff`, and
+  `Mellin-Ckalph-suff` and remove the unspecified converse.
+- [x] Close the center-Cartesian source-lift lemma and `T3-gauge-uniq`, then
+  retain `T3-local` as `proved`.
+- [x] Fix the two-sided-extension, KMS reconstruction, `T5-alg`, and
+  `T4-kin` terminology.
+- [x] Decide the kill test: freeze static-patch mode work and do not start an
+  SdS project from this lane.
+
+Frozen conditional boundaries, not active tasks in this directory:
+
+- maximal completed `T1-aff`, `T2-aff`, and `T4-bulk`;
+- compatible `T1-aff(k,full tower)` interior continuity;
+- `Mellin-Ckalph-suff` and `T3-sharp`;
+- completed stretched-horizon `E-limit`;
+- a patchwise nontrivial-bundle extension.
 
 ## Historical checks retained from the first round
 
@@ -85,13 +81,13 @@
 - [x] Define Bunch--Davies by global Euclidean restriction/affine-horizon positive frequency.
 - [x] Pull the state through the gauge-invariant characteristic map.
 - [x] Derive the exact Mellin/Bogoliubov normalization and Planck factor.
-- [x] Prove the dense analytic `T5-C*` boundary relation and normal GNS `T5-W*` theorem at $\beta_t=2\pi L$.
+- [x] Prove the dense analytic `T5-alg` boundary relation and normal GNS `T5-W*` theorem at $\beta_t=2\pi L$.
 - [x] Prove the full CPS completion is too infrared-large for a regular BD covariance.
 - [x] Add and pass `scripts/kms_mellin_checks.wl`.
 
 ## Historical checks retained from calculation 08
 
-- [x] Prove `T4-kin`, the switch-dependent radiative/$\widehat a$/memory decomposition on a finite trace core.
+- [x] Prove `T4-kin`, the switch-dependent radiative/$\widehat a$/memory decomposition on a finite logarithmic endpoint-value profile core.
 - [x] Separate Coulomb/monopole flux, $j\geq1$ cut fields, large gauge, relative frames, and soft radiative sequences.
 - [x] Classify finite-energy non-CPS profiles and affine traces versus weak logarithmic data.
 - [x] Reconcile the half-horizon cut with the complete-horizon theorem of arXiv:2503.19957.
@@ -117,5 +113,8 @@
 
 ## Recommended follow-on
 
-- [ ] After the `T1-aff/T4-bulk` kill test only, start a separate Schwarzschild--de Sitter Maxwell project; do not reuse this directory as its draft.
-- [ ] Use Nariai $dS_2\times S^2$ only if the two-horizon SdS route fails its first operator/range gate.
+- [ ] Return to the action-first composition of Maxwell data on two
+  intersecting null hypersurfaces, using this project only as a checked
+  fixed-mode/corner comparator.
+- [x] Do not continue static-patch mode calculations and do not start
+  Schwarzschild--de Sitter or Nariai from this project.

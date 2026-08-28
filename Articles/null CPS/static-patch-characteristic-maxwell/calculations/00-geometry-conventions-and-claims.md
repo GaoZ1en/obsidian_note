@@ -2,22 +2,25 @@
 
 ## 1. Direct verdict and scope
 
-The zero-trace logarithmic radiation-field chain is closed; the affine
-horizon/corner range is not.  More precisely:
+The zero-trace logarithmic radiation-field chain and the fixed-$j$ affine
+kill test are closed; the full angular affine range is not, and the project
+is frozen.  More precisely:
 
 - the background, orientations, bundle sector, and gauge policy are fixed below;
 - the action-derived Maxwell system reduces to two regular half-line master fields for every $j\geq1$;
 - `T1-log` is a restriction/reconstruction bijection on the declared
   logarithmic spectral core and its infrared-controlled CPS completion;
 - `T2-log` is the corresponding Lee--Wald theorem with zero endpoint traces;
-- `10` proves a finite-order, modewise/rapid-angular affine criterion
-  `T1-aff(k)`, including a two-ended scattering compatibility condition, but
-  the maximal fixed-Sobolev affine Maxwell range `T1-aff` remains
-  `conditional`;
+- `10` and `12` prove the finite-order modewise criterion
+  `T1-aff(k,fixed-j)`, including its incoming-only pole/moment form;
+  `T1-aff(k,full tower)` and the maximal affine range remain `conditional`;
+- `Mellin-nec` and `Mellin-Sobolev-suff` are proved, while
+  `Mellin-Ckalph-suff` is conditional;
 - `T2-aff` and `T4-bulk` remain `conditional` because endpoint traces,
   memory, relative frames, and the Lee--Wald representative must be matched
   on that still-incomplete range;
-- `T3-local` is proved only after the Maxwell test-complex lemma in `11`;
+- `T3-gauge-uniq` and `T3-local` are proved after the Maxwell test-complex
+  and center-Cartesian lemmas in `11`;
   `T3-sharp` remains conditional;
 - `T5-W*` is the normal KMS theorem in the BD GNS representation; the
   abstract Weyl algebra has only a dense analytic boundary relation, not a
@@ -25,7 +28,8 @@ horizon/corner range is not.  More precisely:
 - the DEM DtN and modewise cut identities are proved, while a full
   phase-space null-limit is conditional.
 
-Therefore calculations `00`--`09` are not all closed.  The former names T1,
+Therefore calculations `00`--`12` do not form a closed maximal affine
+theorem.  The former names T1,
 T2, T4, T5, and the boxed phase-space statement in `09` are split below and
 in the claim ledger.  This project is not a new static-coordinate mode
 expansion: the logical order is
@@ -389,13 +393,19 @@ $r_A^{\rm aff}=F_{VA}$.
 ### T1-aff — affine horizon/corner range
 
 For fixed differentiability order $k$, `10`, Theorem 6.1 proves the exact
-modewise and rapid-angular condition: the incoming master trace must satisfy
+fixed-$j$ condition: the incoming master trace must satisfy
 the $v\to+\infty$ affine limits, the scattered trace $S_jc$ must satisfy the
 $u\to-\infty$ affine limits, and the two corner values must agree.
 
-Status: `proved` as `T1-aff(k)` on that finite-order smooth core;
-`conditional` for the maximal fixed-Sobolev affine Maxwell range and its
-completed endpoint topology.
+Calculation `12` rewrites the outgoing condition as incoming pole
+cancellations, exponential moments, and the endpoint relation.  The
+unrestricted full-tower rapid-angular claim is `false` because its Goursat
+norm grows like $I_0(cj)$; on the $S_j$-compatible candidate range the
+boundary loss is only polynomial, but the uniform interior estimate is
+missing.
+
+Status: `T1-aff(k,fixed-j)` is `proved`;
+`T1-aff(k,full tower)` and maximal `T1-aff` are `conditional`.
 
 ### T2-log — logarithmic Lee--Wald restriction and scattering
 
@@ -424,9 +434,10 @@ Status: `conditional`.
 
 The inverse of the complete horizon two-form, lifted through the field-strength dictionary, must equal the bulk advanced-minus-retarded Maxwell propagator on gauge-invariant smearings.
 
-Status: `proved` as `T3-local` on the compact gauge-invariant field-strength
-test quotient $\Omega_c^2/\mathcal N_F$, by `06`, Theorem 8.1 together with
-the test-complex lemma `11`.  `T3-sharp` for endpoint-memory functionals
+Status: `T3-gauge-uniq` is `proved` by `11`, Lemma 7.1.  `T3-local` is
+`proved` on the compact gauge-invariant field-strength test quotient
+$\Omega_c^2/\mathcal N_F$, by `06`, Theorem 8.1 together with the
+test-complex and center-Cartesian lemmas in `11`.  `T3-sharp` for endpoint-memory functionals
 outside the CPS topology remains `conditional`.
 
 ### T4-kin / T4-bulk — trace decomposition versus bulk range
@@ -440,19 +451,20 @@ The target is a disjoint classification of:
 5. the $\omega\to0$ limit of radiative states;
 6. discrete bundle topology.
 
-Status: `T4-kin` is `proved` in `08`: the chosen trace core has a unique
+Status: `T4-kin` is `proved` in `08`: the chosen logarithmic endpoint-value
+profile core has a unique
 splitting and canonical form, with memory conjugate to the shifted coordinate
 $\widehat a=a+2\ell_h(x)$.  `T4-bulk` is `conditional`: `10` gives necessary
 and sufficient finite-mode $C^k$ conditions, but not the maximal completed
 full-tower range.  `02` proves $Q_E=Q_B=0$ and no flat holonomy in the fixed
 smooth trivial-bundle sector.
 
-### T5-W* / T5-C* — Bunch--Davies KMS restriction
+### T5-W* / T5-alg — Bunch--Davies KMS restriction
 
 The Bunch--Davies state, defined globally by Euclidean analyticity or equivalently by affine-horizon positive frequency on the gauge-invariant algebra, restricts to a $\beta=2\pi L$ KMS state for static time translations.
 
 Status: `T5-W*` is `proved` on the BD GNS von Neumann algebra, where static
-time is a normal, weak-* continuous dynamics.  `T5-C*` denotes only the KMS
+time is a normal, weak-* continuous dynamics.  `T5-alg` denotes only the KMS
 boundary relation on a dense analytic *-algebra of the abstract Weyl algebra;
 the claim that the Weyl automorphisms are point-norm strongly continuous is
 `false`.  A regular BD extension to every vector of the larger CPS completion
