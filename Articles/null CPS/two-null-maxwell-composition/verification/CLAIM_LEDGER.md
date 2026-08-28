@@ -26,23 +26,27 @@ Allowed status vocabulary:
 
 | ID | Claim | Status | Assumptions | Evidence | Remaining boundary |
 |---|---|---|---|---|---|
-| G-A-space | $\mathcal X_\infty^{\rm Max}$ is intrinsically the full-Maxwell preimage of the graph-fixed-point two-sheet energy space | proved | explicit closed $T_\mu,S_\mu$; $\ell\geq1$ | calculation 12 and read-only closed-transform lemma | arbitrary matched pairs excluded |
+| G-A-space | $\mathcal X_\infty^{\rm Max}$ is the stationary-spectral intrinsic full-Maxwell preimage of the graph-fixed-point two-sheet energy space | proved | product background, explicit closed $T_\mu,S_\mu$; $\ell\geq1$ | calculation 12 and read-only closed-transform lemma | arbitrary matched pairs and background-independent meaning excluded |
 | G-A | $R_\infty$ is a continuous bijection from radiative Maxwell energy solutions to $\mathcal X_\infty^{\rm Max}$ | proved | trivial bundle, $Q_E=n=0$, energy direct sum | literal Maxwell dictionary, both inverse composites, Plancherel | zero modes/topology excluded |
 | G-A-corner | the complete global data retain shared $E_0,b^0$ | proved | $H^1$ master traces | $c^E=-E_0/s_\ell$, $c^B=-B_0/s_\ell$ | no extra oscillator |
 | G-B-core | fixed-asymptotic-frame potential quotient equals the field-strength space | proved | Schwartz potential/gauge coefficients; two frame limits fixed | massive smooth tails, global exactness, selected primitive | only smooth core |
 | G-B-energy | the same potential quotient is closed at energy completion | conditional | potential Sobolev/asymptotic trace topology not selected | field-strength theorem does not supply it | prove closed gauge image and slice |
 | G-B-unanch | unanchored charged-frame theory equals the intrinsic field-strength space | false | independent asymptotic frame limits | surviving charged pair | different phase space |
 | G-C | $R_\infty^*\Omega_{X_\infty}=\Omega_{\rm bulk}$ | proved | Maxwell energy space, $\ell\geq1$ | exact finite Stokes, massive tails, tower dominated convergence, Maxwell pullback | uncontrolled boundary representative excluded |
-| G-C-amb | common $dY+\delta B$ changes have the same global limit | proved | cut functional energy-continuous and vanishing on Schwartz core | finite endpoint identity plus density | arbitrary asymptotic $Y$ conditional |
+| G-C-amb-uniform | common $dY+\delta B$ changes have the same global limit | proved | $Y\in\mathscr Y_{\rm tr}^0$: zeroth-order $H^1$ traces and uniformly bounded angular cut operators | uniform trace estimate (5.4), bound (5.5), core density | arbitrary asymptotic or derivative-trace $Y$ conditional |
 | G-D-t | time translations are Hamiltonian with $H_t=\sum\int\omega|a|^2$ | proved | $A_t$ on $\omega^3$ graph | spectral contraction and separate tail limit | unbounded generator |
-| G-D-z | active spatial translations are Hamiltonian with $P_z=-\sum\int k|a|^2$ | proved | $A_z$ on $\omega k^2$ graph; stated sign convention | spectral contraction and separate tail limit | opposite momentum sign generates $-\partial_z$ |
+| G-D-z | active spatial translations are Hamiltonian with $H_{\partial_z}=-\sum\int k|a|^2$ | proved | $A_z$ on $\omega k^2$ graph; stated sign convention | spectral contraction and separate tail limit | standard passive $P_z^{\rm std}=H_{-\partial_z}$ |
 | G-D-rot | rotations have $J_i=i\sum\int\bar a^T L_i a$ and close $\mathfrak{so}(3)$ | proved | angular graph domain | anti-Hermitian multiplet action | no charged asymptotic rotations |
 | G-D-alg | translation/rotation Hamiltonians close without a corner central term | proved | common invariant core, moment maps zero at origin | coefficient commutators and vanishing tails | zero modes excluded |
-| G-E1 | characteristic inverse equals bulk Maxwell Peierls on compact field-strength smearings | proved | radiative projected smearings | Green identity and Maxwell differential lift | potential propagator excluded |
-| G-E2 | finite-cell composition is Poisson and compatible with exhaustion | proved | L-F core and global fixed-point restrictions | symplectic composition, interface cancellation, G-G square | sharp endpoints conditional |
+| G-E1-rad-test | characteristic inverse equals bulk Maxwell Peierls on $\mathcal T_F^{\rm rad}=\Omega_c^2/\mathcal N_F^{\rm rad}$ | proved | $Q_E=n=0$, $\ell\geq1$; rapid-angular compact tests | $H_c^2(M)\simeq\mathbb R$ identifies the excluded $\ell=0$ class; master on-shell quotient; Green identity | unprojected compact two-forms excluded |
+| G-E2a-Poisson | finite-cell symplectic composition map is Poisson | proved | L-F reduced symplectic core | symplectic functoriality and interface cancellation | no Green claim needed |
+| G-E2b-finite-Peierls | autonomous regional Peierls equals restricted global bracket | proved | compact radiative smearings in the open rectangle/triangle | monotone $u,v$, causal convexity, global hyperbolicity, support plus Green uniqueness | including a dynamical physical cut needs a separate boundary Green problem |
 | G-F-Weyl | global and composed characteristic spaces have canonical Weyl $*$-isomorphisms | proved | G-C/L-F symplectic isomorphisms | Weyl functor | no tensor factorization |
-| G-F-dyn | G-D symplectic groups induce Weyl automorphism groups | proved | declared classical/one-particle generator domains | $W(x)\mapsto W(e^{sA_X}x)$ | implementability not claimed |
-| G-G | finite restriction/gluing commutes with global restriction and $T\to\infty$ symplectic exhaustion | proved | globally extendable fixed-point subspace | literal restriction diagram, L-G, tail limit | finite restriction not onto all local data |
+| G-F-alg-dyn | G-D symplectic groups induce algebraic Weyl automorphism groups | proved | global classical symplectic group | $W(x)\mapsto W(T_sx)$ preserves Weyl relations | no norm-continuity inference |
+| G-F-Cstar-norm-cont | the universal Weyl automorphism group is point-norm continuous on nontrivial orbits | false | weakly nondegenerate Weyl space | $\|W(T_sx)-W(x)\|=2$ whenever $T_sx\neq x$ | fixed points are trivial exceptions |
+| G-F-rep-dyn | stationary Fock/GNS dynamics is strongly/weakly continuously implemented | proved | complex-linear stationary one-particle unitaries; domains (6.4), $\mathcal D(d\Gamma(h_X))$ | bosonic second quantization $\Gamma(u_X(s))$ | not implementability of composition |
+| G-G-F | finite field-strength restriction/gluing commutes with global restriction and symplectic exhaustion | proved | globally extendable fixed-point subspace | literal restriction diagram, L-G, tail limit | finite restriction not onto all local data |
+| G-G-A(reanchored) | finite anchored potential representatives form a compatible exhaustion under $r_{T_2,T_1}$ | proved | rapid-angular Schwartz potential core, fixed frames | explicit constant-generator shifts, preservation of $F$, cocycle, vanishing asymptotic correction | energy-potential version conditional; not literal representative equality |
 
 ## Regression ledger
 
@@ -56,13 +60,14 @@ The `Evidence type` column is not a claim-status column.
 | V4 | full-Maxwell three-cell reduction by stages | exact rational regression | finite trace basis only |
 | V5 | finite translation residual ranks $(2,4)$ and zero rotation residual | symbolic Wolfram regression | regression witness for L-H-trans |
 | V6 | Schwartz packet exhaustion, global generator matrices/algebra, Weyl and Maxwell dictionary | numerical/deterministic spectral regression | not a tail or range theorem |
+| V7 | radiative projection, sampled causal monotonicity, trace-bound sample, re-anchoring cocycle, finite Weyl witness | exact/finite numerical regression | not cohomology, Green uniqueness, uniform-boundedness, or universal $C^*$ proof |
 
-## Manuscript and novelty
+## Readiness audit (not mathematical claim status)
 
-| ID | Claim | Status | Precise condition |
-|---|---|---|---|
-| M0 | the core Layer-L + Layer-G classical/B1 chain is manuscript-ready | proved | only with all sector, domain, potential, topology, and B2 boundaries stated in `global-closure-audit.md` |
-| N0 | the integrated theorem chain is absent from prior literature | conditional | primary-source novelty screen remains incomplete |
+| ID | Assessment | Precise condition |
+|---|---|---|
+| M-theorem-draft | yes; closed core chain | theorem drafting may begin with every sector, domain, potential, topology, Green, and B2 boundary stated in `global-closure-audit.md` |
+| M-submission-ready | conditional | complete the primary-source novelty audit and integrate every imported read-only analytic proof into the manuscript or replace the internal path by a public citable theorem |
 
 ## Executed check contract
 
@@ -75,8 +80,10 @@ wolframscript -file scripts/phase_ii_goursat_lee_wald_checks.wl
 python3 scripts/full_maxwell_composition_checks.py
 wolframscript -file scripts/hamiltonian_test_checks.wl
 python3 scripts/global_horizon_exhaustion_checks.py
+python3 scripts/global_repair_regressions.py
 ```
 
 Passing scripts are regression evidence only. Analytic closure of G-A--G-G
-rests on the displayed fixed-point, tail, Green-identity, and symplectic
-arguments, not on finite matrices or sampled packets.
+rests on the displayed fixed-point, tail, cohomology, Green-identity,
+causal-convexity, uniform-bound, and symplectic arguments, not on finite
+matrices or sampled packets.

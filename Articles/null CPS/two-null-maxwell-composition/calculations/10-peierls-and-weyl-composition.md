@@ -51,15 +51,19 @@ $$
 \tag{3.1}
 $$
 
-For compact field-strength smearings whose support stays away from the
-physical outer cuts, the local inverse is the restriction of the bulk Maxwell
-Peierls bracket. Calculation 16 proves the complete-cross version and its
-compatibility with exhaustion.
+This statement is G-E2a-Poisson and is `proved` without invoking a regional
+Green operator. For compact radiative test classes supported in the open
+rectangle/triangle away from the physical outer cuts, calculation 16 proves
+causal convexity, global hyperbolicity, and Green uniqueness. The autonomous
+regional Peierls bracket then equals the restriction of the global bracket;
+this is G-E2b-finite-Peierls. If the outer cut itself is included as a
+dynamical boundary, boundary conditions are additional data and that enlarged
+claim remains `conditional`.
 
 ## 4. Boundaries
 
-**Proved:** L-Weyl and the Poisson property (3.1) on the L-F reduced
-symplectic core.
+**Proved:** L-Weyl, G-E2a-Poisson on the L-F reduced symplectic core, and the
+open causally convex version of G-E2b-finite-Peierls.
 
 **Conditional:** sharp outer-cut charges, endpoint/memory observables, and any
 extension in which asymptotic charged frames are dynamical.

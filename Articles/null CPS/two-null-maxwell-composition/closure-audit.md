@@ -56,4 +56,6 @@ Goursat existence; those are the analytic arguments in calculations 05--09.
 - sharp endpoint/memory observables;
 - nonlinear/non-Abelian or singular reductions.
 
-The global theorem chain is audited separately in `global-closure-audit.md`.
+The global theorem chain is audited separately in `global-closure-audit.md`,
+including the radiative Peierls test quotient, G-E2a/G-E2b split, uniform
+ambiguity class, potential re-anchoring, and the three Weyl-dynamics levels.

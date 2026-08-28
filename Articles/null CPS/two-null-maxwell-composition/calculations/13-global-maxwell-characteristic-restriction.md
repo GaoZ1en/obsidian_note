@@ -3,7 +3,7 @@
 ## 1. Direct verdict
 
 **G-A is proved** for the gauge-invariant finite-energy radiative Maxwell
-space and the intrinsic target (4.4) of calculation 12.
+space and the stationary-spectral intrinsic range (4.4) of calculation 12.
 
 **G-B is proved** for the fixed-asymptotic-frame smooth Schwartz potential
 core. An energy-completed potential quotient remains `conditional` because no
@@ -65,7 +65,8 @@ $$
 The trace estimate in the read-only global-completion lemma gives two
 $H^1(\mathbb R_+)$ master profiles for every energy solution. The derivative
 dictionary (2.1) then gives $(r,p)$ and the common $H^1$ corner traces give
-$E_0,b^0$. Thus (3.2) lands continuously in the intrinsic space (4.4).
+$E_0,b^0$. Thus (3.2) lands continuously in the stationary-spectral
+intrinsic space (4.4).
 
 ## 4. Reconstruction and both inverse composites
 

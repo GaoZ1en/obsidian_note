@@ -123,7 +123,7 @@ $$
 or by G-A and Cauchy weak nondegeneracy. Thus $R_\infty$ is a global
 Lee--Wald symplectomorphism.
 
-## 5. Outer endpoints and representative ambiguity
+## 5. Outer endpoints and a uniform ambiguity class
 
 The raw finite Maxwell calculation contains the physical outer-cut terms and,
 in a split potential presentation, exact frame/connection endpoint terms.
@@ -145,11 +145,84 @@ $$
 $$
 
 $\delta B$ drops from $\omega$ and $dY$ changes each finite form by its
-oriented cut integral. For representative changes whose cut functional is
-continuous in the energy graph topology and vanishes on the Schwartz core,
-density makes the limit zero. An arbitrary $Y$ with uncontrolled asymptotic
-trace, or a genuinely dynamical boundary action, defines another boundary
-theory and is not included.
+oriented cut integral. Denote the resulting antisymmetric bilinear by
+
+$$
+C_T^Y(x_1,x_2)
+=\int_{\partial X_T}
+\bigl(\delta_1Y[\delta_2]-\delta_2Y[\delta_1]\bigr).
+\tag{5.2}
+$$
+
+Pointwise continuity of each $C_T^Y$ is not enough for a density argument.
+The allowed class $\mathscr Y_{\rm tr}^0$ is therefore restricted as follows.
+After harmonic reduction and the fixed-frame Maxwell/master dictionary, its
+outer-cut bilinear must factor as
+
+$$
+C_T^Y(x_1,x_2)
+=\langle\Gamma_Tx_1,B_T\Gamma_Tx_2\rangle
+-\langle\Gamma_Tx_2,B_T\Gamma_Tx_1\rangle,
+\qquad \sup_T\|B_T\|\leq b_Y,
+\tag{5.3}
+$$
+
+where $\Gamma_T$ contains only zeroth-order master traces
+$f^P_{\ell m}(\sqrt2T),g^P_{\ell m}(\sqrt2T)$, with the angular weights used
+in the energy direct sum. Generator-derivative point traces and an
+energy-level asymptotic potential trace are not included.
+
+For $q\in H^1(\mathbb R_+)$, its continuous representative obeys the uniform
+trace estimate
+
+$$
+|q(L)|^2
+\leq 2\|q\|_{L^2(L,\infty)}\|q'\|_{L^2(L,\infty)}
+\leq \|q\|_{H^1(\mathbb R_+)}^2.
+\tag{5.4}
+$$
+
+The massive estimate (2.1), together with
+$\lambda_\ell\geq\lambda_1>0$, therefore gives one $T$-independent constant
+$c_{\rm tr}$ such that
+
+$$
+\|\Gamma_Tx\|\leq c_{\rm tr}\|x\|_E,
+\qquad
+\boxed{\sup_T|C_T^Y(x_1,x_2)|
+\leq 2b_Yc_{\rm tr}^2\|x_1\|_E\|x_2\|_E.}
+\tag{5.5}
+$$
+
+This includes zeroth-order local cut functionals whose reduced angular
+coefficient matrices are uniformly bounded in the displayed trace norm. It
+does not include arbitrary asymptotic $Y$.
+
+On the finite-harmonic Schwartz core, every entry of $\Gamma_Tx$ tends to
+zero, hence $C_T^Y(x_1,x_2)\to0$. For general energy data choose core
+sequences $x_{i,n}\to x_i$. From (5.5), uniformly in $T$,
+
+$$
+\begin{aligned}
+|C_T^Y(x_1,x_2)-C_T^Y(x_{1,n},x_{2,n})|
+\leq C_Y\bigl(&\|x_1-x_{1,n}\|_E\|x_2\|_E\\
+&+\|x_{1,n}\|_E\|x_2-x_{2,n}\|_E\bigr).
+\end{aligned}
+\tag{5.6}
+$$
+
+Take $\limsup_{T\to\infty}$ and then $n\to\infty$ to obtain
+$C_T^Y(x_1,x_2)\to0$ for all energy data. Equivalently, if pointwise
+boundedness of the family $\{C_T^Y\}_T$ is established for every pair, the
+bilinear Uniform Boundedness Principle supplies the uniform operator bound
+used in (5.5).
+
+Thus **G-C-amb-uniform is proved only for $Y\in\mathscr Y_{\rm tr}^0$**.
+An arbitrary local representative with derivative traces, an uncontrolled
+asymptotic potential, or a genuinely dynamical boundary action remains
+`conditional` and may define another boundary theory. The fixed Maxwell
+Lee--Wald representative and G-C itself remain `proved` independently of this
+restricted ambiguity theorem.
 
 ## 6. Zero-mode boundary
 
@@ -160,11 +233,19 @@ separate finite-dimensional sectors.
 
 ## 7. Evidence boundary
 
-**Proved:** full-Maxwell finite exhaustion, vanishing physical tails, the
-fixed-frame ambiguity limit on the declared core, and (4.2).
+**Proved:** full-Maxwell finite exhaustion, vanishing physical tails, (4.2),
+and G-C-amb-uniform for the uniformly trace-bounded class
+$\mathscr Y_{\rm tr}^0$.
+
+**Assumptions for G-C-amb-uniform:** zeroth-order $H^1$ master traces,
+uniformly bounded angular cut operators, fixed radiative sector, and no
+dynamical boundary action.
 
 **Checked numerically:** Schwartz packet exhaustion and translation residual
 decay in `global_horizon_exhaustion_checks.py`.
 
+**Not verified/proved here:** a uniform bound for arbitrary asymptotic $Y$,
+generator-derivative point traces, or the energy potential completion.
+
 **Not inferred from the script:** $L^2$ tail convergence, dominated convergence
-of the angular tower, or potential Sobolev completion.
+of the angular tower, the ambiguity theorem, or potential Sobolev completion.

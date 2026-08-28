@@ -10,7 +10,7 @@ M=\mathbb R_t\times\mathbb R_z\times S^2_R,
 u=\frac{t-z}{\sqrt2},\quad v=\frac{t+z}{\sqrt2},
 $$
 
-with $ds^2=-2,du,dv+R^2d\Omega_2^2$. The complete future bifurcate
+with $ds^2=-2\,du\,dv+R^2d\Omega_2^2$. The complete future bifurcate
 characteristic surface is
 
 $$
@@ -91,7 +91,7 @@ $$
 This is an independently specified Cauchy-energy space. The trivial bundle,
 $Q_E=0$, $n=0$ and $\ell\geq1$ are fixed throughout.
 
-## 3. Intrinsic two-sheet master range
+## 3. Stationary-spectral intrinsic two-sheet master range
 
 For one mass define
 
@@ -129,7 +129,7 @@ $$
 \tag{3.4}
 $$
 
-The intrinsic master energy space is
+The stationary-spectral intrinsic master energy space is
 
 $$
 \boxed{
@@ -141,15 +141,18 @@ $$
 
 All conditions in (3.5) are expressed by the half-ray transforms
 (3.2)--(3.4). This is not the circular definition “the image of bulk
-restriction.” A generic matched $H^1\oplus H^1$ pair fails the nonlocal
-fixed-point condition.
+restriction.” It is nevertheless background dependent: $T_\mu$ and $S_\mu$
+use the product metric, the stationary mass shell, and its Fourier spectral
+transform. Thus “intrinsic” here always means **stationary-spectral
+intrinsic**, not generally covariant or background independent. A generic
+matched $H^1\oplus H^1$ pair fails the nonlocal fixed-point condition.
 
 The read-only analytic proofs of closedness, $T_\mu S_\mu=1$, and graph
 boundedness are in
 `../../null-characteristic-cps/calculations/13-characteristic-complex-structure.md`
 and `15-closed-characteristic-transform.md`.
 
-## 4. Intrinsic full-Maxwell data space
+## 4. Stationary-spectral intrinsic full-Maxwell data space
 
 For $-D^2Y_{\ell m}=\lambda_\ell Y_{\ell m}$ set
 
@@ -182,7 +185,7 @@ g^B(v)&=c^B+\int_0^v r^B(s)ds,
 \tag{4.3}
 $$
 
-The global intrinsic Maxwell characteristic space is
+The global stationary-spectral intrinsic Maxwell characteristic range is
 
 $$
 \boxed{
@@ -194,9 +197,10 @@ $$
 \tag{4.4}
 $$
 
-The norm in (4.4) is intrinsic because $T_{s_\ell}$ is the explicit closed
-half-ray transform (3.2), not the bulk restriction map. Formula (4.3) displays
-the one angular derivative/division by $s_\ell$ explicitly; no same-order
+The norm in (4.4) is stationary-spectral intrinsic because $T_{s_\ell}$ is
+the explicit closed half-ray transform (3.2), not the bulk restriction map.
+It depends on the product-background mass shell. Formula (4.3) displays the
+one angular derivative/division by $s_\ell$ explicitly; no same-order
 potential Sobolev theorem is inferred.
 
 The inverse dictionary is
@@ -216,14 +220,28 @@ master values. Two independent “news functions” are not the complete space.
 2. The Schwartz spectral and rapid-angular smooth core is dense and supports
    pointwise tails, potential representatives, and every generator.
 3. The graph-closed energy space (4.4) is the primary classical global space.
-   Its field-strength topology is intrinsic; the potential completion is not
-   defined here.
+   Its field-strength topology is stationary-spectral intrinsic; the
+   potential completion is not defined here.
 
-## 6. Status
+## 6. Goursat surface versus causal Cauchy surface
 
-**Proved:** the intrinsic definition (4.4), its explicit inverse Maxwell/master
-dictionary, and the separation between local matched data and the global
-fixed-point range.
+$X_\infty$ is not an ordinary spacelike Cauchy hypersurface in causal theory.
+It is a bifurcate characteristic surface. Two statements must not be merged:
+
+1. arbitrary sufficiently regular half-ray data with the shared corner value
+   determine a Goursat solution in the local future quadrant;
+2. only the fixed-point range (3.5), summed with (4.4), represents a global
+   finite-energy solution on all of $\mathbb R^{1,1}\times S^2_R$.
+
+The first statement is local characteristic well-posedness. The second is the
+stationary-spectral global range theorem. Calling $X_\infty$ a “Cauchy
+hypersurface” would hide the nonlocal fixed-point condition.
+
+## 7. Status
+
+**Proved:** the stationary-spectral intrinsic definition (4.4), its explicit
+inverse Maxwell/master dictionary, and the separation between local matched
+data and the global fixed-point range.
 
 **Imported read-only analytic lemmas:** closed analysis/synthesis, half-ray
 $H^1$ trace estimate, and the master energy isometry.

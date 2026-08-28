@@ -20,11 +20,12 @@ The project now has two distinct theorem layers.
    H_R^+=\{u=0,v\geq0\}.
    $$
 
-   This is the global characteristic phase space. G-A, G-C--G-G are `proved`
-   for the gauge-invariant finite-energy radiative Maxwell space in the
-   trivial-bundle $Q_E=n=0$, $\ell\geq1$ sector. G-B is `proved` for the
-   fixed-asymptotic-frame Schwartz potential core and `conditional` for an
-   energy-completed potential quotient.
+   This is the global characteristic representation surface, not an ordinary
+   causal-theory Cauchy hypersurface. The primary field-strength chain is
+   `proved` for the gauge-invariant finite-energy radiative Maxwell space in
+   the trivial-bundle $Q_E=n=0$, $\ell\geq1$ sector. G-B and potential
+   exhaustion are `proved` on the fixed-asymptotic-frame Schwartz core and
+   `conditional` at energy-potential completion.
 
 The main characteristic datum in both layers is
 
@@ -122,11 +123,15 @@ H^1(\mathbb R_z)\oplus L^2(\mathbb R_z),
 |a^P_{k\ell m}|^2dk<\infty.
 $$
 
-The intrinsic characteristic target is not arbitrary
+The stationary-spectral intrinsic characteristic range is not arbitrary
 $H^1(\mathbb R_+)\oplus H^1(\mathbb R_+)$. It is the graph-closed fixed-point
 space of the explicit two-sheet analysis--synthesis projector, translated to
 full Maxwell data by the literal dictionary in calculation 13. Thus the
-target topology is not defined by declaring restriction unitary.
+target topology is not defined by declaring restriction unitary, although it
+does depend on the product background and mass-shell spectral transform.
+Arbitrary matched half-ray data determine a local future-quadrant Goursat
+solution; only the fixed-point range represents a global finite-energy
+solution.
 
 The global chain is:
 
@@ -138,13 +143,18 @@ The global chain is:
   massive tail estimates.
 - G-D time/space translations, $SO(3)$ and proper gauge: `proved` on their
   declared dense generator domains, with no corner central term.
-- G-E1 Peierls equality and G-E2 Poisson composition/exhaustion: `proved` for
-  compact gauge-invariant field-strength smearings and classical energy data.
-- G-F-Weyl algebraic representation: `proved`; G-F-dyn: `proved` on the G-D
-  automorphism domains. No tensor factorization or implementability claim.
-- G-G finite exhaustion/local-to-global compatibility: `proved` on the
-  globally extendable fixed-point subspace. Finite restriction is not
-  surjective onto every local matched pair.
+- G-E1-rad-test: `proved` on the explicit radiative on-shell test quotient;
+  the spherical compact-support $\ell=0$ class is excluded, not ignored.
+- G-E2a-Poisson: `proved`; G-E2b-finite-Peierls: `proved` for compact tests in
+  the open causally convex rectangle/triangle. A dynamical physical-cut Green
+  theory remains `conditional`.
+- G-F-Weyl and G-F-alg-dyn: `proved`; universal point-norm continuity is
+  `false` on nontrivial orbits; stationary Fock/GNS implementation is `proved`
+  on the stated second-quantized domains. This is not composition
+  implementability.
+- G-G-F literal field-strength exhaustion: `proved`; G-G-A(reanchored):
+  `proved` on the Schwartz core with frame-shift transition maps and
+  `conditional` at energy-potential completion.
 
 ## File map
 
@@ -163,7 +173,8 @@ The global chain is:
 - `calculations/16-global-peierls-weyl-and-exhaustion.md`: G-E--G-G.
 - `verification/CLAIM_LEDGER.md`: authoritative local/global status table.
 - `closure-audit.md`: Layer-L closure.
-- `global-closure-audit.md`: global closure and manuscript-readiness verdict.
+- `global-closure-audit.md`: final repair audit and separate theorem-draft /
+  submission-readiness assessments.
 - `scripts/`: exact finite regressions and global spectral-packet regressions.
 
 ## Read-only lemma bank and excluded work

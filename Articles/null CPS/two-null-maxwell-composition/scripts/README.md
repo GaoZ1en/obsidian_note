@@ -9,6 +9,7 @@ wolframscript -file scripts/phase_ii_goursat_lee_wald_checks.wl
 python3 scripts/full_maxwell_composition_checks.py
 wolframscript -file scripts/hamiltonian_test_checks.wl
 python3 scripts/global_horizon_exhaustion_checks.py
+python3 scripts/global_repair_regressions.py
 ```
 
 ## `finite_harmonic_reduction.py`
@@ -108,3 +109,28 @@ ALL GLOBAL HORIZON EXHAUSTION CHECKS PASSED
 The packet calculation is a regression only. It does not prove the massive
 $L^2$ tail theorem, the graph-fixed-point range, direct-sum dominated
 convergence, or the potential quotient.
+
+## `global_repair_regressions.py`
+
+Uses exact finite arithmetic and small deterministic samples to check:
+
+- finite harmonic projection removes $\ell=0$ and retains an additional
+  master-adjoint kernel witness;
+- sampled future-causal increments have monotone $u,v$ and remain in the
+  endpoint rectangle/triangle;
+- a finite trace bilinear obeys its displayed operator-norm bound;
+- plus/minus potential re-anchoring maps satisfy the cocycle and reproduce the
+  smaller-cut anchored section;
+- an even finite Weyl clock witness has norm distance two from the identity.
+
+Expected final line:
+
+```text
+ALL GLOBAL REPAIR REGRESSIONS PASSED
+```
+
+These are regressions only. They do not prove compact-support Kunneth,
+continuum on-shell quotient exactness, causal convexity or global
+hyperbolicity, regional/global Green uniqueness, the Uniform Boundedness
+Principle hypothesis, Schwartz/energy endpoint limits, or the universal Weyl
+$C^*$ theorem.

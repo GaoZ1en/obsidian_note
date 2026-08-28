@@ -21,9 +21,12 @@ $SO(3)$ action on the $m$ multiplet. We use
 $[L_i,L_j]=-\epsilon_{ij}{}^kL_k$; the minus sign is the standard
 anti-homomorphism from a left group action to its fundamental vector fields.
 With the Poisson convention $\delta_HF=\{F,H\}$, the corresponding moment maps
-then obey $\{J_i,J_j\}=\epsilon_{ij}{}^kJ_k$. The spatial Hamiltonian carrying the name
-$P_z=H_{\partial_z}$ therefore has a minus sign in the spectral formula below.
-The opposite convention $+\int k|a|^2$ generates $-\partial_z$.
+then obey $\{J_i,J_j\}=\epsilon_{ij}{}^kJ_k$. We write the spatial generator
+as $H_{\partial_z}$ throughout. In the active convention (1.2) it has a minus
+sign in the spectral formula below. If one defines the standard passive
+momentum by $P_z^{\rm std}=+\int k|a|^2$, then
+$P_z^{\rm std}=H_{-\partial_z}=-H_{\partial_z}$; the two names must not be
+interchanged.
 
 ## 2. Dense generator domains
 
@@ -116,7 +119,7 @@ This is the global Maxwell energy. With the active convention (1.2),
 
 $$
 \boxed{
-P_z^{X_\infty}[x]=H_{\partial_z}[x]
+H_{\partial_z}^{X_\infty}[x]
 =-\sum_{P,\ell,m}\int dk\,
 k|a^P_{k\ell m}|^2.}
 \tag{4.2}
@@ -136,12 +139,12 @@ All three are real. Direct variation using (3.1) gives
 
 $$
 \iota_{A_t}\Omega=-\delta H_t,\qquad
-\iota_{A_z}\Omega=-\delta P_z,\qquad
+\iota_{A_z}\Omega=-\delta H_{\partial_z},\qquad
 \iota_{A_{J_i}}\Omega=-\delta J_i.
 \tag{4.4}
 $$
 
-$H_t$ and $P_z$ are finite on the energy space, while their Hamiltonian vector
+$H_t$ and $H_{\partial_z}$ are finite on the energy space, while their Hamiltonian vector
 fields are defined on (2.1). Rotation differentiability is asserted on the
 angular graph domain. No bounded-generator claim is made.
 
@@ -158,9 +161,9 @@ $$
 Therefore, on the common invariant core,
 
 $$
-\{H_t,P_z\}=0,\qquad
+\{H_t,H_{\partial_z}\}=0,\qquad
 \{J_i,J_j\}=\epsilon_{ij}{}^kJ_k,\qquad
-\{H_t,J_i\}=\{P_z,J_i\}=0.
+\{H_t,J_i\}=\{H_{\partial_z},J_i\}=0.
 \tag{5.2}
 $$
 

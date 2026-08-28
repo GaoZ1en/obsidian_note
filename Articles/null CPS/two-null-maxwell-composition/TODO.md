@@ -11,11 +11,22 @@
   combining the explicit Maxwell dictionary with the massive tail lemma.
 - [x] Separate the Schwartz fixed-asymptotic-frame potential corollary from
   the conditional energy-completed potential quotient.
-- [x] Construct global $H_t$, $P_z$, and $J_i$ with the project sign
-  $\iota_{\delta_X}\Omega=-\delta H_X$.
+- [x] Construct global $H_t$, $H_{\partial_z}$, and $J_i$ with the project
+  sign $\iota_{\delta_X}\Omega=-\delta H_X$; keep the standard passive
+  $P_z^{\rm std}=H_{-\partial_z}$ distinct.
 - [x] Promote Peierls and algebraic Weyl composition independently of the
   finite translation test.
 - [x] Add the finite-to-global exhaustion and spectral-packet regressions.
+- [x] Replace arbitrary compact Maxwell tests by the radiative on-shell test
+  quotient and isolate the spherical $H_c^2$ $\ell=0$ class.
+- [x] Split G-E2 into symplectic Poisson composition and the autonomous open
+  regional Peierls theorem; prove causal convexity and Green uniqueness.
+- [x] Restrict the Lee--Wald ambiguity theorem to the uniformly trace-bounded
+  class $\mathscr Y_{\rm tr}^0$ and prove the density extension.
+- [x] Replace literal potential restriction by the re-anchoring transition
+  maps and prove their cocycle on the Schwartz core.
+- [x] Split Weyl dynamics into algebraic, universal $C^*$ point-norm, and
+  stationary representation levels.
 
 ## Next executable analytic work
 
@@ -31,11 +42,25 @@
   Check: state the maximal closed domains only after proving equality with the
   closures of the finite-harmonic Schwartz core.
 
+- [ ] Action: integrate imported read-only analytic lemmas into the manuscript
+  body/appendices or replace them by public primary-source citations.
+  Context: M-theorem-draft is yes, but internal sibling paths are not final
+  proof for submission.
+  Check: every invoked closed-transform, tail, and Green kernel theorem has a
+  self-contained manuscript proof or a public citable source.
+
+- [ ] Action: complete the primary-source novelty audit.
+  Context: M-submission-ready remains conditional even though the scoped core
+  mathematical chain is closed.
+  Check: compare the integrated Layer-L/Layer-G theorem chain against primary
+  sources and record claim-level novelty boundaries.
+
 - [ ] Action: prepare the manuscript outline from `global-closure-audit.md`.
-  Context: the core classical/B1 chain is closed; topology and potential
-  completion remain explicit boundaries.
+  Context: M-theorem-draft is yes; topology and potential completion remain
+  explicit secondary boundaries.
   Check: keep finite composition and global representation in separate
-  theorem sections and do not present a finite cross as a global subsystem.
+  theorem sections; call $X_\infty$ characteristic, not an ordinary Cauchy
+  hypersurface.
 
 ## Deferred by user instruction
 
