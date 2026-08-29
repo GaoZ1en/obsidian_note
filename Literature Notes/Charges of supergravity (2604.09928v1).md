@@ -10,11 +10,11 @@ url: https://arxiv.org/abs/2604.09928v1
 tags: []
 ---
 
-# definition of the theory
+# Definition of the Theory
 
-## connection, curvature
+## Connection, Curvature
 
-a gauge field $\displaystyle{\mathbb{A}}$ takes value in the $\displaystyle{\mathrm{Osp}(1|4)}$ superalgebra, which decomposes into the Lorentz connection $\displaystyle{\omega ^{ab}}$ associated with Lorentz generators, the tetrad $\displaystyle{e^{a}}$ associated with translations, and the gravitino $\displaystyle{\psi}$ associated with the S generators as
+A gauge field $\displaystyle{\mathbb{A}}$ takes value in the $\displaystyle{\mathrm{Osp}(1|4)}$ superalgebra, which decomposes into the Lorentz connection $\displaystyle{\omega ^{ab}}$ associated with Lorentz generators, the tetrad $\displaystyle{e^{a}}$ associated with translations, and the gravitino $\displaystyle{\psi}$ associated with the S generators as
 
 $$\begin{align}
 \mathbb{A} & =\frac{1}{2}A^{IJ}M_{IJ}+\kappa \bar{\psi}^{\alpha}Q_{\alpha} \\
@@ -41,7 +41,7 @@ $$\begin{align}
   & =\frac{1}{2}F^{(s)ab}M_{ab}+F^{(s)a}P_{a}+\mathscr{\bar{F}}^{\alpha}Q_{\alpha}
 \end{align}$$
 
-where $\displaystyle{\left[\left[\star\overset{\wedge}{,}\star\right]\right]}$ is the bracket of the $\displaystyle{\mathrm{Osp}(1|4)}$ superalgebra. the bosonic components of the supercurvature are given by
+where $\displaystyle{\left[\left[\star\overset{\wedge}{,}\star\right]\right]}$ is the bracket of the $\displaystyle{\mathrm{Osp}(1|4)}$ superalgebra. The bosonic components of the supercurvature are given by
 
 $$\begin{align}
 F^{(s)ab} & =F^{ab}-\frac{\kappa ^{2}}{2}\bar{\psi}\wedge \gamma ^{ab}\psi, \\
@@ -78,8 +78,7 @@ $$\begin{align}
  & =\kappa\left(\mathscr{D}^{\omega}\bar{\psi}-\frac{1}{2\ell}e^{a}\wedge \bar{\psi}\gamma _{a}\right)
 \end{align}$$
 
-(what does the superscript $\displaystyle{4}$ in $\displaystyle{F^{(s)a4}}$ mean?)
-it is convenient to introcude the complete covariant differential that acts on superalgebra-valued $\displaystyle{n}$-forms
+(what does the superscript $\displaystyle{4}$ in $\displaystyle{F^{(s)a4}}$ mean?) It is convenient to introcude the complete covariant differential that acts on superalgebra-valued $\displaystyle{n}$-forms
 
 $$\begin{align}
 \mathbb{D}^{\mathbb{A}}(\cdot) & =\mathrm{d}(\cdot)-i\left[\left[\mathbb{A}\overset{\wedge}{,}\cdot\right]\right]
@@ -115,15 +114,15 @@ $$\begin{align}
 \mathscr{D}^{\omega}\mathscr{D}^{\omega}\psi & =\frac{1}{4}R^{ab}(\omega)\wedge \gamma _{ab}\psi
 \end{align}$$
 
-## super BF theory
+## Super BF Theory
 
-the bosonic constrained BF theory action is given by
+The bosonic constrained BF theory action is given by
 
 $$\begin{align}
 16\pi S(A,B) & =\int F^{IJ}\wedge B_{IJ}-\frac{\beta}{2}B^{IJ}\wedge B_{IJ}-\frac{\alpha}{4}\epsilon ^{abcd4}B_{ab}\wedge B_{cd}
 \end{align}$$
 
-where $\displaystyle{B_{IJ}}$ is the $\displaystyle{\mathfrak{so}(2,3)}$-algebra-valued $\displaystyle{2}$-form. solving the eom for $\displaystyle{B}$ field gives dimensionless parameters
+where $\displaystyle{B_{IJ}}$ is the $\displaystyle{\mathfrak{so}(2,3)}$-algebra-valued $\displaystyle{2}$-form. Solving the eom for $\displaystyle{B}$ field gives dimensionless parameters
 
 $$\begin{align}
 \alpha & =\frac{G\Lambda}{3(1+\gamma ^{2})} \\
@@ -159,9 +158,9 @@ $$\begin{align}
 \braket{ \mathbb{B\wedge F} }  & =B^{(s)IJ}\wedge F_{IJ}^{(s)}+4\mathscr{\bar{B}}\wedge \mathscr{F}
 \end{align}$$
 
-# formalism
+# Formalism
 
-take a variation of the action
+Take a variation of the action
 
 $$\begin{align}
 16\pi \delta S & =\int \delta \mathbb{B}\wedge\left(\mathbb{F}-\beta \mathbb{B-\frac{\alpha}{2}\star \mathbb{B}}\right)+\mathbb{B\wedge\left(\mathbb{D^{A}\delta A}\right)}
@@ -185,9 +184,9 @@ $$\begin{align}
 D^{A}B^{(s)IJ}+\kappa \bar{\psi}\wedge \gamma ^{IJ}\mathscr{B} & =0
 \end{align}$$
 
-## symmetries
+## Symmetries
 
-consider the gauge transformation of the superconnection $\displaystyle{\mathbb{A}}$ with the gauge parameter $\displaystyle{\Upsilon}$ taking value in the $\displaystyle{\mathrm{Osp}(1|4)}$ superalgebra
+Consider the gauge transformation of the superconnection $\displaystyle{\mathbb{A}}$ with the gauge parameter $\displaystyle{\Upsilon}$ taking value in the $\displaystyle{\mathrm{Osp}(1|4)}$ superalgebra
 
 $$\begin{align}
 \delta _{\Upsilon}\mathbb{A}_{\mu} & =\partial _{\mu}\Upsilon-i[\mathbb{A}_{\mu},\Upsilon]\equiv \mathbb{D}_{\mu}^{\mathbb{A}}\Upsilon
@@ -200,7 +199,7 @@ $$\begin{align}
  & =\frac{1}{2}\lambda ^{ab}M_{ab}+\zeta ^{a}P_{a}+\bar{\varepsilon}^{\alpha}Q_{\alpha}
 \end{align}$$
 
-### supersymmetry
+### Supersymmetry
 
 $$\begin{align}
 \delta _{\epsilon}e^{a} & =-\ell \kappa \bar{\epsilon}\gamma ^{a}\psi \\
@@ -208,7 +207,7 @@ $$\begin{align}
 \delta _{\epsilon}\bar{\psi} & =\frac{1}{\kappa}\left(\mathscr{D}^{\omega}\bar{\epsilon}-\frac{1}{2\ell}e^{a}\bar{\epsilon}\gamma _{a}\right)
 \end{align}$$
 
-where $\displaystyle{\mathscr{D}^{\omega}\bar{\epsilon}=\mathrm{d}\bar{\epsilon}-\frac{1}{4}\omega ^{ab}\bar{\epsilon}\gamma _{ab}}$. the supersymmetry transformation of the supercurvature is given by
+where $\displaystyle{\mathscr{D}^{\omega}\bar{\epsilon}=\mathrm{d}\bar{\epsilon}-\frac{1}{4}\omega ^{ab}\bar{\epsilon}\gamma _{ab}}$. The supersymmetry transformation of the supercurvature is given by
 
 $$\begin{align}
 \delta _{\epsilon} \mathbb{F}_{\mu \nu} & =\mathbb{D}_{\mu}\delta _{\epsilon} \mathbb{A}_{\nu}-\mathbb{D}_{\nu}\delta _{\varepsilon}\mathbb{A}_{\mu} \\
@@ -238,15 +237,15 @@ $$\begin{align}
 -\frac{\alpha}{4}\epsilon _{abcd}B^{(s)ab}\wedge B^{(s)cd} & -\alpha \mathscr{\bar{B}}\wedge \gamma ^{5}\mathscr{B}
 \end{align}$$
 
-is not invariant under the above supersymmetry transformation. its variation is
+is not invariant under the above supersymmetry transformation. Its variation is
 
 $$\begin{align}
 2\alpha B^{(s)a}\wedge \bar{\epsilon}\gamma _{a}\gamma ^{5}\mathscr{B}
 \end{align}$$
 
-and does not vanish offshell. however, notice that the gauge breaking term is proportional to supertorsion, which vanishes as a result of the field equation for the Lorentz connection $\displaystyle{\omega}$. so the action is invariant under the local supersymmetry transformation on-shell.
+and does not vanish offshell. However, notice that the gauge breaking term is proportional to supertorsion, which vanishes as a result of the field equation for the Lorentz connection $\displaystyle{\omega}$. So the action is invariant under the local supersymmetry transformation on-shell.
 
-### translations and Lorentz transformations
+### Translations and Lorentz Transformations
 
 Lorentz transformations and translations are as follows
 
@@ -272,9 +271,9 @@ $$\begin{align}
 \delta _{\zeta}B^{(s)ab} & =(B^{(s)a}\zeta ^{b}-B^{(s)b}\zeta ^{a}), & \delta _{\zeta}B^{(s)a} & =B^{(s)ab}\zeta _{b}, & \delta _{\zeta}\mathscr{\bar{B}} & =\frac{1}{2}\mathscr{\bar{B}}\gamma _{a}\zeta ^{a}
 \end{align}$$
 
-### diffeomorphsim
+### Diffeomorphsim
 
-consider a diffeomorphism generated by a vector field $\displaystyle{\xi}$, the transformation of the superconnection is given by the Lie derivative
+Consider a diffeomorphism generated by a vector field $\displaystyle{\xi}$, the transformation of the superconnection is given by the Lie derivative
 
 $$\begin{align}
 \delta _{\xi}A_{\mu}^{IJ} & =\mathcal{L}_{\xi}A_{\mu}^{IJ} \\
@@ -291,9 +290,9 @@ $$\begin{align}
 \delta _{\xi}\psi _{\mu} & =\xi ^{\nu}\partial _{\nu}\psi _{\mu}+\psi _{\nu}\partial _{\mu}\xi ^{\nu}
 \end{align}$$
 
-## symplectic form
+## Symplectic Form
 
-we read out
+We read out
 
 $$\begin{align}
 16\pi \theta & =\int _{\Sigma}\mathbb{B}\wedge \delta \mathbb{A} \\
@@ -319,16 +318,16 @@ $$\begin{align}
  & =\int _{\Sigma}\delta B_{IJ}^{(s)}\wedge \delta A^{IJ}+4\kappa \delta \mathscr{\bar{B}}\wedge \delta \psi
 \end{align}$$
 
-## charges
+## Charges
 
-the corresponding Noether charge is defined by
+The corresponding Noether charge is defined by
 
 $$\begin{align}
 \delta \mathscr{H}[*] & =-\iota _{*}\Omega \\
  & =-\frac{1}{16\pi}\int _{\Sigma}\delta _{*}\mathbb{B}\wedge \delta \mathbb{A}+\delta \mathbb{B}\wedge \delta _{*}\mathbb{A}
 \end{align}$$
 
-### gauge charges
+### Gauge Charges
 
 $$\begin{align}
 \delta \mathscr{H}[\Upsilon] & =-\frac{1}{16\pi}\int _{\Sigma}\delta _{\Upsilon}\mathbb{B}\wedge \delta \mathbb{A}+\delta \mathbb{B}\wedge \delta _{\Upsilon}\mathbb{A} \\
@@ -340,7 +339,7 @@ $$\begin{align}
  & \approx -\frac{1}{16\pi}\int _{\partial\Sigma}\mathbb{B}\Upsilon
 \end{align}$$
 
-the second term in the last line vanishes on-shell as a result of the eom for $\displaystyle{\mathbb{A}}$. then we have
+the second term in the last line vanishes on-shell as a result of the eom for $\displaystyle{\mathbb{A}}$. Then we have
 
 $$\begin{align}
 \mathscr{H}_{L}[\lambda] & =-\frac{1}{16\pi}\int _{S}B_{ab}^{(s)}\lambda ^{ab} \\
@@ -348,9 +347,9 @@ $$\begin{align}
 \mathscr{H}_{S}[\epsilon] & =-\frac{1}{4\pi}\int _{S}\mathscr{\bar{B}}\epsilon
 \end{align}$$
 
-## diffeomorphism charges
+## Diffeomorphism Charges
 
-here we assume the parameter $\displaystyle{\xi}$ is field-independent
+Here we assume the parameter $\displaystyle{\xi}$ is field-independent
 
 $$\begin{align}
 \delta\mathscr{H}[\xi] & =\frac{1}{16\pi G}\int \delta B_{IJ}^{(s)}\wedge \mathcal{L}_{\xi}A^{IJ}-\mathcal{L}_{\xi}B_{IJ}^{(s)}\wedge \delta A^{IJ}+4\kappa \delta \mathscr{\bar{B}}\wedge \mathcal{L}_{\xi}\psi-4\kappa \mathcal{L}_{\xi}\mathscr{\bar{B}}\wedge \delta \psi \\
@@ -358,7 +357,7 @@ $$\begin{align}
  & +\frac{\kappa}{4\pi}\delta\left(\int _{\Sigma}\mathscr{\bar{B}}\wedge \mathcal{L}_{\xi}\psi\right)-\frac{\kappa}{4\pi}\int _{\partial \Sigma}\iota _{\xi}\left(\mathscr{\bar{B}}\wedge \mathcal{L}_{\xi}\psi\right)
 \end{align}$$
 
-and we assume the only non-vanishing components of the vector field $\displaystyle{\xi}$ at $\displaystyle{\partial \Sigma}$ are those tangent to $\displaystyle{\partial \Sigma}$, thus the second term in both lines vanishes identically. therefore we have
+and we assume the only non-vanishing components of the vector field $\displaystyle{\xi}$ at $\displaystyle{\partial \Sigma}$ are those tangent to $\displaystyle{\partial \Sigma}$, thus the second term in both lines vanishes identically. Therefore we have
 
 $$\begin{align}
 \mathscr{H}[\xi] & =\frac{1}{16\pi}\int _{\Sigma}B_{IJ}^{(s)}\wedge \mathcal{L}_{\xi}A^{IJ}+\frac{\kappa}{4\pi}\int _{\Sigma}\mathscr{\bar{B}}\wedge \mathcal{L}_{\xi}\psi
@@ -384,17 +383,17 @@ $$\begin{align}
 
 in the case of $\displaystyle{\xi}$ being tangential to the $\displaystyle{\Sigma}$ the bulk contribution to the charge vanishes.
 
-## algebra of charges
+## Algebra of Charges
 
-the Poisson bracket of two charges is defined as
+The Poisson bracket of two charges is defined as
 
 $$\begin{align}
 \left\{\mathscr{H}[\Xi_{1}],\mathscr{H}[\Xi_{2}]\right\} & =\frac{1}{2}\left(\delta _{\Xi_{1}}\mathscr{H}[\Xi_{2}]-\delta _{\Xi_{2}}\mathscr{H}[\Xi_{1}]\right)
 \end{align}$$
 
-### gauge algebra
+### Gauge Algebra
 
-we will consider the algebra of charges associated with local gauge symmetries.
+We will consider the algebra of charges associated with local gauge symmetries.
 
 $$\begin{align}
 \mathscr{H}_{L}[\lambda] & =-\frac{1}{16\pi}\int _{\partial \Sigma}B_{ab}^{(s)}\lambda ^{ab} \\
@@ -441,9 +440,9 @@ $$\begin{align}
 B_{a}^{(s)} & =\frac{1}{\beta}F_{a}^{(s)}
 \end{align}$$
 
-vanishes. and the translation charge $\displaystyle{\mathscr{H}_{T}[\zeta]}$ vanishes identically. therefore the algebra of charges reduces to the $\displaystyle{\mathrm{Osp}(1|4)}$ superalgebra without central extension.
+vanishes. And the translation charge $\displaystyle{\mathscr{H}_{T}[\zeta]}$ vanishes identically. Therefore the algebra of charges reduces to the $\displaystyle{\mathrm{Osp}(1|4)}$ superalgebra without central extension.
 
-### diffeomorphism algebra
+### Diffeomorphism Algebra
 
 $$\begin{align}
 \mathscr{H}_{D}[\xi] & =\frac{1}{16\pi}\int _{\partial \Sigma}B_{IJ}^{(s)}\iota _{\xi}A^{IJ}+\frac{\kappa}{4\pi}\int _{\partial \Sigma}\mathscr{\bar{B}}\iota _{\xi}\psi
@@ -461,7 +460,7 @@ $$\begin{align}
 \xi _{12} & =[\xi _{1},\xi _{2}]
 \end{align}$$
 
-as expected. and the algebra of diffeomorphism charges with gauge charges is given by
+as expected. And the algebra of diffeomorphism charges with gauge charges is given by
 
 $$\begin{align}
 \left\{\mathscr{H}_{D}[\xi],\mathscr{H}_{L}[\lambda]\right\} & =-\mathscr{H}_{L}[\mathcal{L}_{\xi}\lambda] \\
@@ -469,9 +468,9 @@ $$\begin{align}
 \left\{\mathscr{H}_{D}[\xi],\mathscr{H}_{S}[\epsilon]\right\} & =\mathscr{H}_{S}[\mathcal{L}_{\xi}\epsilon]
 \end{align}$$
 
-# $\displaystyle{\mathrm{Osp}(1|4)}$ super algebra
+# $\displaystyle{\mathrm{Osp}(1|4)}$ Super Algebra
 
-the bosonic subalgebra of $\displaystyle{\mathrm{Osp}(1|4)}$ is $\displaystyle{\mathrm{SO}(2,3)}$, which is the isometry group of $\displaystyle{\mathrm{AdS}_{4}}$. the generators of $\displaystyle{\mathrm{SO}(2,3)}$ are denoted by $\displaystyle{M_{IJ}}$ with $\displaystyle{I,J=0,1,2,3,4}$ and satisfy the following commutation relation
+The bosonic subalgebra of $\displaystyle{\mathrm{Osp}(1|4)}$ is $\displaystyle{\mathrm{SO}(2,3)}$, which is the isometry group of $\displaystyle{\mathrm{AdS}_{4}}$. The generators of $\displaystyle{\mathrm{SO}(2,3)}$ are denoted by $\displaystyle{M_{IJ}}$ with $\displaystyle{I,J=0,1,2,3,4}$ and satisfy the following commutation relation
 
 $$\begin{align}
 [M_{IJ},M_{KL}] & =i\left(\eta _{IL}M_{JK}+\eta _{JK}M_{IL}-\eta _{IK}M_{JL}-\eta _{JL}M_{IK}\right) \\
@@ -516,9 +515,9 @@ $$\begin{align}
 
 here $\displaystyle{C}$ is the charge-conjugation matrix.
 
-## possible extensions
+## Possible Extensions
 
-the present work already establishes the full covariant phase space analysis for $\mathcal{N}=1$ AdS supergravity in the constrained BF formulation, including the bulk and boundary symplectic structures, the charges associated with Lorentz symmetry, supersymmetry, translations, and diffeomorphisms, and the resulting boundary charge algebra. this makes the next natural questions rather sharp: which parts of the structure are special to $\mathrm{OSp}(1|4)$, and which persist in more general supergravity theories.
+The present work already establishes the full covariant phase space analysis for $\mathcal{N}=1$ AdS supergravity in the constrained BF formulation, including the bulk and boundary symplectic structures, the charges associated with Lorentz symmetry, supersymmetry, translations, and diffeomorphisms, and the resulting boundary charge algebra. This makes the next natural questions rather sharp: which parts of the structure are special to $\mathrm{OSp}(1|4)$, and which persist in more general supergravity theories.
 
 the most direct extension is to move from $\mathcal{N}=1$ to extended supersymmetry, replacing $\mathrm{OSp}(1|4)$ by $\mathrm{OSp}(\mathcal{N}|4)$. this is the cleanest first step because the basic logic of the construction should remain the same:
 
@@ -526,7 +525,7 @@ the most direct extension is to move from $\mathcal{N}=1$ to extended supersymme
 - the supercurvature, constrained BF action, covariant presymplectic potential, and boundary charge expressions should all admit a parallel decomposition.
 - the main nontrivial checks are whether the translation charge still vanishes on-shell, how the supertorsion constraint is modified, and whether the boundary algebra acquires nontrivial $R$-symmetry generators or central extensions.
 
-from the point of view of actual calculation, the first tasks in this direction are:
+From the point of view of actual calculation, the first tasks in this direction are:
 
 1. write down the $\mathrm{OSp}(\mathcal{N}|4)$ superalgebra in the same conventions as the present note, including the bosonic $\mathfrak{so}(2,3)\oplus \mathfrak{so}(\mathcal{N})$ sector and the anticommutator of supercharges.
 1. construct the corresponding superconnection and supercurvature, keeping the $R$-symmetry gauge field explicit.
@@ -535,16 +534,16 @@ from the point of view of actual calculation, the first tasks in this direction 
 1. derive the Lorentz, supersymmetry, $R$-symmetry, translation, and diffeomorphism charges and check their on-shell reduction.
 1. compute the full boundary charge algebra and compare it with the expected $\mathrm{OSp}(\mathcal{N}|4)$ structure.
 
-besides higher supersymmetry, there are several other worthwhile extensions.
+Besides higher supersymmetry, there are several other worthwhile extensions.
 
-one direction is to impose explicit asymptotically AdS boundary conditions and study finiteness, integrability, and nontrivial asymptotic symmetry generators. the present formulas are formal covariant phase space expressions; to extract physical content one still has to determine for which boundary data the charges are finite and integrable, and which symmetries remain nontrivial after quotienting by pure gauge directions.
+One direction is to impose explicit asymptotically AdS boundary conditions and study finiteness, integrability, and nontrivial asymptotic symmetry generators. The present formulas are formal covariant phase space expressions; to extract physical content one still has to determine for which boundary data the charges are finite and integrable, and which symmetries remain nontrivial after quotienting by pure gauge directions.
 
-another direction is to evaluate the charges on concrete classical solutions, such as AdS$_4$ vacuum, supersymmetric black holes, BPS backgrounds, or geometries with nontrivial gravitino profiles. this would clarify how the formal boundary generators act in examples and whether one can read off BPS bounds or supersymmetric shortening conditions directly from the charge algebra.
+Another direction is to evaluate the charges on concrete classical solutions, such as AdS$_4$ vacuum, supersymmetric black holes, BPS backgrounds, or geometries with nontrivial gravitino profiles. This would clarify how the formal boundary generators act in examples and whether one can read off BPS bounds or supersymmetric shortening conditions directly from the charge algebra.
 
-it is also important to understand more conceptually why the translation charge vanishes on-shell. one should check whether this is merely a consequence of the supertorsion constraint in the present formulation, or whether translations are in fact reducible to a combination of diffeomorphisms, Lorentz transformations, and supersymmetry once the equations of motion and boundary conditions are imposed.
+It is also important to understand more conceptually why the translation charge vanishes on-shell. One should check whether this is merely a consequence of the supertorsion constraint in the present formulation, or whether translations are in fact reducible to a combination of diffeomorphisms, Lorentz transformations, and supersymmetry once the equations of motion and boundary conditions are imposed.
 
-another natural extension is to compare the present covariant phase space construction directly with the Noether-Wald charge formalism in ordinary supergravity variables. if the two methods agree exactly, that gives a strong consistency check on the constrained BF formulation. if they differ by boundary improvements or topological contributions, that difference itself is structurally interesting.
+Another natural extension is to compare the present covariant phase space construction directly with the Noether-Wald charge formalism in ordinary supergravity variables. If the two methods agree exactly, that gives a strong consistency check on the constrained BF formulation. If they differ by boundary improvements or topological contributions, that difference itself is structurally interesting.
 
-one should also examine more carefully the role of the topological terms, such as the Holst, Euler, Pontryagin, and Nieh-Yan contributions. although such terms do not change the local equations of motion, they can still modify the presymplectic potential, the boundary symplectic form, and the representative of conserved charges, so it is not automatic that they are invisible in the covariant phase space analysis.
+One should also examine more carefully the role of the topological terms, such as the Holst, Euler, Pontryagin, and Nieh-Yan contributions. Although such terms do not change the local equations of motion, they can still modify the presymplectic potential, the boundary symplectic form, and the representative of conserved charges, so it is not automatic that they are invisible in the covariant phase space analysis.
 
-if the goal is to begin with the most direct project, then the extended supersymmetry direction is the right place to start. the main reason is that it changes the algebraic input while preserving the overall logic of the paper, so any new effect in the charge algebra, integrability conditions, or on-shell vanishing of translation generators can be traced cleanly to the enlarged superalgebra rather than to a completely different formalism.
+If the goal is to begin with the most direct project, then the extended supersymmetry direction is the right place to start. The main reason is that it changes the algebraic input while preserving the overall logic of the paper, so any new effect in the charge algebra, integrability conditions, or on-shell vanishing of translation generators can be traced cleanly to the enlarged superalgebra rather than to a completely different formalism.
