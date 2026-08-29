@@ -1,12 +1,27 @@
-# Maxwell Theory on a Cut Interval
-
-This note follows the quantize-first-then-glue order of `formalism.md` for compact $U(1)$ Maxwell theory on
+Cut the interval $\displaystyle{[-L,L]}$ at $\displaystyle{x=0}$ and use
 
 $$\begin{align}
-M&=\mathbb R_t\times[-L,L], &L&>0.
+y_{1} & =x+L, & y_{2} & =L-x
 \end{align}$$
 
-There is no local oscillator in this model. The purpose is to solve the constraint, regional quantum mechanics, gluing condition, and connected quantum mechanics without introducing any unnamed boundary degrees of freedom.
+write
+
+$$\begin{align}
+A_{i} & =A_{t,i}\mathrm{d}t+A_{y,i}\mathrm{d}y_{i}, & E_{i} & =F_{ty_{i}}=\dot{A}_{y,i}-\partial _{y_{i}}A_{t,i}
+\end{align}$$
+
+the action is given by
+
+$$\begin{align}
+S_{i} & =-\dfrac{1}{4}\int _{t_{i}}^{t_{f}}\mathrm{d}t\int _{0}^{L}\mathrm{d}y_{i} F_{i,\mu \nu}F^{i,\mu \nu} \\
+ & =\dfrac{1}{2}\int _{t_{i}}^{t_{f}}\mathrm{d}t\int _{0}^{L}\mathrm{d}y_{i} E_{i}^{2}
+\end{align}$$
+
+at the physical endpoint we fix $\displaystyle{A_{t,i}(t,0)=0}$, and at the artificial endpoint prescribe
+
+$$\begin{align}
+A_{t,i}(t,L) & =\alpha _{i}(t), & \delta \alpha _{i}(t)=0
+\end{align}$$
 
 ## Regional Actions and Prescribed Histories
 

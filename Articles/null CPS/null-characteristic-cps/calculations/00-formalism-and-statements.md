@@ -113,81 +113,42 @@ A gauge transformation is proper only relative to a declared endpoint phase spac
 
 **Status: proved for every fixed benchmark master sector.** For $a_\ell=\lambda_\ell/2>0$, let
 
-$$
-\mathcal G^1_{U,V}
-=\{(f,g)\in H^1(0,U)\oplus H^1(0,V):f(0)=g(0)\}
-$$
+$$\begin{align}
+\mathcal G^1_{U,V} =\{(f,g)\in H^1(0,U)\oplus H^1(0,V):f(0)=g(0)\}
+\end{align}$$
 
 with the sum $H^1$ norm, and let $\mathcal E^1_{U,V}(a_\ell)$ be the distributional solution graph space with the $C^0+L^\infty L^2+L^2$ mixed-derivative norm of calculation 07. Then
 
-$$
-\boxed{
-\operatorname{Res}_{U,V}:\mathcal E^1_{U,V}(a_\ell)
-\overset{\sim}{\longrightarrow}\mathcal G^1_{U,V}}
-$$
+$$\begin{align}
+\boxed{ \operatorname{Res}_{U,V}:\mathcal E^1_{U,V}(a_\ell) \overset{\sim}{\longrightarrow}\mathcal G^1_{U,V}}
+\end{align}$$
 
-is a bounded isomorphism. Its inverse is the exact Bessel/Riemann formula
-(2.5) of calculation 07, with explicit reconstruction and trace estimates
-(3.4), (3.11). This is a pure local PDE/characteristic-coordinate theorem.
-The finite profiles coordinatize the local solution germ/restriction space on
-\(D_{U,V}\); they do not coordinatize the global solution space.  The patch is
-not an autonomous finite-region gauge phase space, does not select a vacuum,
-and does not determine global annihilation coefficients.
+is a bounded isomorphism. Its inverse is the exact Bessel/Riemann formula (2.5) of calculation 07, with explicit reconstruction and trace estimates (3.4), (3.11). This is a pure local PDE/characteristic-coordinate theorem. The finite profiles coordinatize the local solution germ/restriction space on $D_{U,V}$; they do not coordinatize the global solution space.  The patch is not an autonomous finite-region gauge phase space, does not select a vacuum, and does not determine global annihilation coefficients.
 
 ### Theorem II — Global Characteristic Representation
 
 **Status: proved for the radiative benchmark in the zero-flux/zero-Chern
-sector.** On
-$M=\mathbb R_t\times\mathbb R_z\times S^2_R$, take $Q_E=n=0$ and let
-$\mathcal S_E^{\mathrm{rad}}$ be the direct sum of the two $\ell\geq1$ master
-energy spaces $H^1(\mathbb R_z)\oplus L^2(\mathbb R_z)$. For the complete
-half-cross
+sector.** On $M=\mathbb R_t\times\mathbb R_z\times S^2_R$, take $Q_E=n=0$ and let $\mathcal S_E^{\mathrm{rad}}$ be the direct sum of the two $\ell\geq1$ master energy spaces $H^1(\mathbb R_z)\oplus L^2(\mathbb R_z)$. For the complete half-cross
 
-$$
+$$\begin{align}
 X=\{v=0,u\geq0\}\cup_{S_0}\{u=0,v\geq0\},
-$$
+\end{align}$$
 
 restriction is an injective symplectic isomorphism
 
-$$
-\boxed{
-R_X:\mathcal S_E^{\mathrm{rad}}
-\overset{\sim}{\longrightarrow}
-\widehat\bigoplus_{P,\ell,m}\mathfrak X_{E,\sqrt{\lambda_\ell}},
-\qquad
-\Omega_\Sigma=\Omega_X\circ(R_X\times R_X).}
-$$
+$$\begin{align}
+\boxed{ R_X:\mathcal S_E^{\mathrm{rad}} \overset{\sim}{\longrightarrow} \widehat\bigoplus_{P,\ell,m}\mathfrak X_{E,\sqrt{\lambda_\ell}}, \qquad \Omega_\Sigma=\Omega_X\circ(R_X\times R_X).}
+\end{align}$$
 
-The intrinsic target is not defined as $R_X\mathcal S_E$.  Sectorwise it is
-the graph-closed fixed-point space
-\(\ker_{\mathcal D_E(T_\ell)}(1-S_\ell T_\ell)\) of the closed two-sheet
-analysis operator, with
+The intrinsic target is not defined as $R_X\mathcal S_E$.  Sectorwise it is the graph-closed fixed-point space $\ker_{\mathcal D_E(T_\ell)}(1-S_\ell T_\ell)$ of the closed two-sheet analysis operator, with
 $\int\omega_{k\ell}|a_{k\ell}[f,g]|^2dk<\infty$.  The two-sheet formula,
-closed domain, inverse, exact core one-particle/energy norms, and explicit
-classical-energy $J_{X,E}$ kernel are in calculations 12--15.  The abstract
-one-particle completion and its bounded transported $J_{X,1}$ are stated
-separately: generic completed vectors need not have ordinary
-distribution-valued individual sheet profiles or pointwise corner traces.
+Closed domain, inverse, exact core one-particle/energy norms, and explicit classical-energy $J_{X,E}$ kernel are in calculations 12--15.  The abstract one-particle completion and its bounded transported $J_{X,1}$ are stated separately: generic completed vectors need not have ordinary distribution-valued individual sheet profiles or pointwise corner traces.
 
-The analytic bridge is the massive half-cross lemma: the null trace estimate
-puts both profiles and tangential derivatives in $L^2(\mathbb R_+)$, their
-symplectic tails vanish, Schwartz wave packets decay rapidly at null infinity,
-and density extends the vanishing exterior Cauchy flux to the full energy
-space. Hence the finite-cross Stokes identity converges to
-$\Omega_X=\Omega_\Sigma$ and injectivity follows from Cauchy
-nondegeneracy.
+The analytic bridge is the massive half-cross lemma: the null trace estimate puts both profiles and tangential derivatives in $L^2(\mathbb R_+)$, their symplectic tails vanish, Schwartz wave packets decay rapidly at null infinity, and density extends the vanishing exterior Cauchy flux to the full energy space. Hence the finite-cross Stokes identity converges to $\Omega_X=\Omega_\Sigma$ and injectivity follows from Cauchy nondegeneracy.
 
 ### General Reconstruction Boundary
 
-The primary global theorem is on the gauge-invariant master/field-strength
-space.  Its proper-gauge potential-quotient corollary uses the explicit
-fixed-asymptotic-frame policy of calculation 16.  For an arbitrary
-product/curved double-null background, potential-level
-compatible data give a bulk proper-gauge quotient only after a separate
-Goursat existence, uniqueness, continuous-dependence, bundle/holonomy, and
-endpoint theorem.  That general theorem remains conditional.  Theorems I--II
-close only the stated $\mathbb R^{1,1}\times S^2_R$ radiative benchmark and do
-not turn integrated sheet transport into generic Maxwell surjectivity.
+The primary global theorem is on the gauge-invariant master/field-strength space.  Its proper-gauge potential-quotient corollary uses the explicit fixed-asymptotic-frame policy of calculation 16.  For an arbitrary product/curved double-null background, potential-level compatible data give a bulk proper-gauge quotient only after a separate Goursat existence, uniqueness, continuous-dependence, bundle/holonomy, and endpoint theorem.  That general theorem remains conditional.  Theorems I--II close only the stated $\mathbb R^{1,1}\times S^2_R$ radiative benchmark and do not turn integrated sheet transport into generic Maxwell surjectivity.
 
 ### Proposition F — Relative-Frame Polarization
 
