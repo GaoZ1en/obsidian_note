@@ -639,9 +639,7 @@ The Python script ends with both an exact-finite status and the explicit evidenc
 The B2 partial-trace layer is now explicit:
 
 $$\begin{align}
-\boxed{ \text{finite global vacuum} \xrightarrow{\operatorname{Tr}_L}
-\rho_R^{(\Lambda)} \xrightarrow{\text{fixed smeared/Weyl limit}}
-\omega_G|_{\mathfrak A(R)} \xrightarrow{\text{existing theorem}} \beta_{\mathrm{boost}}=2\pi\ \mathrm{KMS}.} \tag{13.1}
+\boxed{ \text{finite global vacuum} \xrightarrow{\operatorname{Tr}_L} \rho_R^{(\Lambda)} \xrightarrow{\text{fixed smeared/Weyl limit}} \omega_G|_{\mathfrak A(R)} \xrightarrow{\text{existing theorem}} \beta_{\mathrm{boost}}=2\pi\ \mathrm{KMS}.} \tag{13.1}
 \end{align}$$
 
 At finite cutoff, $\rho_R^{(\Lambda)}$ is a genuine normalized density operator with exact Williamson and modular data. In the continuum, the durable object is the algebraic state restriction, not a trace-class density matrix. The full global regulator also retains a nonzero $LR$ covariance converging to $G_{RL}^+$; partial trace discards it. This makes precise why a thermal regional marginal does not determine the global B2 state.
