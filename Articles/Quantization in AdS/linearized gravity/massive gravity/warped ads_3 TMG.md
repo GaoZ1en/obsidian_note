@@ -946,3 +946,201 @@ The smallest calculation that could change this verdict is:
 3. If and only if that residual vanishes, repeat the construction at $k=0$ directly in three dimensions and compute one exact Einstein+CS symplectic flux/norm under the relaxed boundary conditions.
 
 Passing step 2 would upgrade the local problem toward “conditionally feasible.” Passing only the highest-weight check does not.
+
+## 15. Actual central extensions of the Compère--Detournay phase space
+
+### 15.1 Result and algebra convention
+
+This subsection concerns the boundary/large-gauge phase space of section 10.1, not the excluded local massive-graviton sector. Let $\Phi\sim\Phi+2\pi$ be the black-hole angular coordinate and let $T$ be the Compère--Detournay time coordinate. Denote by $L_n$ the Virasoro charges and first use the **dimensionless current normalization**
+
+$$
+P_n\equiv \ell T_n,
+\qquad
+t_n^{\rm(dimless)}\sim \ell e^{in\Phi}\partial_T.
+$$
+
+Here $T_n$ on the right-hand side is the charge associated with the literal Compère--Detournay choice $t_n\sim e^{in\Phi}\partial_T$ and $N'=1$. The symbol $k_{\rm KM}$ below is not the fibre momentum $k$ used in sections 6--11. With the standard zero-mode shifts that replace $m^3$ by $m(m^2-1)$ and remove linear mixed coboundaries, the quantum algebra is
+
+$$
+\boxed{
+\begin{aligned}
+[L_m,L_n]
+&=(m-n)L_{m+n}
++\frac{c}{12}m(m^2-1)\delta_{m+n,0},\\
+[L_m,P_n]
+&=-nP_{m+n},\\
+[P_m,P_n]
+&=k_{\rm KM}\,m\delta_{m+n,0},
+\end{aligned}}
+$$
+
+where
+
+$$
+\boxed{
+c=\frac{(5\nu^2+3)\ell}{G\nu(\nu^2+3)},
+\qquad
+k_{\rm KM}=-\frac{(\nu^2+3)\ell}{12G\nu},
+\qquad
+\kappa_{LI}=0.
+}
+$$
+
+Thus for the spacelike-stretched branch $\nu>1$, $G>0$, the Virasoro central charge is positive and the real $U(1)$ level is negative. The latter sign is invariant under a real rescaling of the current.
+
+These values are the two nonzero central coefficients actually realized by this TMG phase space. They should not be confused with the two thermodynamic numbers often denoted $c_R,c_L$: the asymptotic symmetry analysis directly realizes
+
+$$
+c=c_R=\frac{(5\nu^2+3)\ell}{G\nu(\nu^2+3)},
+$$
+
+but it does not produce a second commuting Virasoro algebra with
+
+$$
+c_L=\frac{4\nu\ell}{G(\nu^2+3)}.
+$$
+
+The latter entered the original entropy proposal and was conjectured to be related to, or encoded by, the current sector.
+
+### 15.2 Charge-algebra cross-check and current normalization
+
+> **Known from literature.** Compère--Detournay, [arXiv:0808.1911](https://arxiv.org/abs/0808.1911), evaluate the TMG surface-charge cocycle
+
+$$
+\{Q_\xi,Q_\eta\}
+=Q_{[\xi,\eta]}+K_{\xi,\eta}[\bar g],
+\qquad
+K_{\xi,\eta}[\bar g]
+=\oint_{S^1}k_\xi[\mathcal L_\eta\bar g;\bar g].
+$$
+
+For asymptotic vectors normalized by $N$ and $N'$ in the $L_n$ and $T_n$ sectors, respectively, their equations (17)--(18) give
+
+$$
+\begin{aligned}
+i\{L_m,L_n\}
+&=(m-n)L_{m+n}
++\frac{c}{12}m(m^2-\bar\beta)\delta_{m+n,0},\\
+i\{L_m,T_n\}
+&=-nT_{m+n}
+-A NN'\,m\delta_{m+n,0},\\
+i\{T_m,T_n\}
+&=-A(N')^2m\delta_{m+n,0},
+\end{aligned}
+\qquad
+A\equiv\frac{\nu^2+3}{12G\nu\ell}.
+$$
+
+The $\bar\beta m$ term in the Virasoro bracket and the displayed linear mixed term are coboundaries. The current cocycle is not: with the literal choice $N'=1$,
+
+$$
+\boxed{
+i\{T_m,T_n\}
+=-\frac{\nu^2+3}{12G\nu\ell}\,
+m\delta_{m+n,0}.
+}
+$$
+
+Rescaling to $P_n=\ell T_n$ multiplies this coefficient by $\ell^2$ and gives the $k_{\rm KM}$ quoted in section 15.1. If instead the convention is
+
+$$
+[P_m,P_n]=\frac{K}{2}m\delta_{m+n,0},
+$$
+
+then
+
+$$
+K=2k_{\rm KM}
+=-\frac{(\nu^2+3)\ell}{6G\nu}.
+$$
+
+Some WCFT papers write $[P_m,P_n]=-(K_+/2)m\delta_{m+n,0}$ with the positive parameter $K_+=(\nu^2+3)\ell/(6G\nu)$. These are the same algebra.
+
+Compère--Detournay [arXiv:0906.1243](https://arxiv.org/abs/0906.1243) set $G=1$, $N'=1$ and write the last coefficient as $-1/(3\bar c)$ with $\bar c=4\nu\ell/(\nu^2+3)$. One must not restore $G$ by inserting $\bar c=4\nu\ell/[G(\nu^2+3)]$ into that shorthand while keeping $T_n$ fixed: the correct $G$ dependence follows from the charge formula above and is proportional to $G^{-1}$. This is the main normalization trap in quoting the level.
+
+> **Re-derived here.** The two papers agree after the current rescaling above. In addition,
+
+$$
+c\big|_{\nu=1}=\frac{2\ell}{G}
+=\frac{3\ell}{2G}\left(1+\frac1{\mu\ell}\right)_{\mu\ell=3},
+$$
+
+which is precisely the corresponding TMG Brown--Henneaux central charge in the AdS$_3$ limit. This checks the Virasoro normalization and identifies the displayed sector as the conventionally named right-moving one.
+
+### 15.3 Abstract $H^2$ versus the TMG realization
+
+For the centerless algebra
+
+$$
+[L_m,L_n]=(m-n)L_{m+n},
+\qquad
+[L_m,P_n]=-nP_{m+n},
+\qquad
+[P_m,P_n]=0,
+$$
+
+the ordinary scalar cohomology has three independent classes,
+
+$$
+H^2_{\rm CE}(\mathrm{Witt}\ltimes L\mathfrak u(1),\mathbb R)
+\simeq
+\mathbb R[LL]\oplus\mathbb R[LI]\oplus\mathbb R[II].
+$$
+
+Representatives may be chosen proportional to
+
+$$
+(m^3-m)\delta_{m+n,0},
+\qquad
+m^2\delta_{m+n,0}\quad\text{modulo a linear coboundary},
+\qquad
+m\delta_{m+n,0}.
+$$
+
+The TMG surface-charge calculation selects the cohomology vector
+
+$$
+\boxed{
+(c,\kappa_{LI},k_{\rm KM})
+=\left(
+\frac{(5\nu^2+3)\ell}{G\nu(\nu^2+3)},
+0,
+-\frac{(\nu^2+3)\ell}{12G\nu}
+\right)
+}
+$$
+
+in the dimensionless-current basis. In particular, equation (1.20) of arXiv:0906.1243 contains
+
+$$
+i\{L_m,T_n\}
+=-n\big(T_{m+n}-T_0\delta_{m,-n}\big).
+$$
+
+Since $T_0$ is fixed on each phase-space component, defining
+
+$$
+\widehat T_p=T_p-T_0\delta_{p,0}
+$$
+
+turns this into $i\{L_m,\widehat T_n\}=-n\widehat T_{m+n}$. The term linear in the mode number is therefore an exact cocycle, not the nontrivial quadratic $LI$ class. The standard charge basis has
+
+$$
+\boxed{\kappa_{LI}=0.}
+$$
+
+### 15.4 Sign and left/right convention dictionary
+
+The numerical signs above use the Compère--Detournay charge orientation transported to the AEG branch used in section 3, with $\mu\ell=3\nu>0$ and the mode convention $e^{in\Phi}$. Section 3.1 already notes that AEG and `TMG.md` display opposite signs for the gravitational-CS density. A comparison must keep fixed the combination of the CS sign, the epsilon orientation and $\mu$ that enters the field equation; changing only one of them changes the theory or relabels its helicity.
+
+More explicitly:
+
+1. At fixed epsilon orientation, reversing the displayed CS sign is $\mu\mapsto-\mu$, hence $\nu\mapsto-\nu$. Both $c$ and $k_{\rm KM}$ are odd in $\nu$ and change sign.
+2. Reversing the angular orientation and relabelling modes by $L_n\mapsto-L_{-n}$, $P_n\mapsto P_{-n}$ also flips the displayed signs of both central coefficients and exchanges the conventional left/right label.
+3. A real current rescaling $P_n\mapsto\alpha P_n$ preserves $[L_m,P_n]=-nP_{m+n}$ but sends $k_{\rm KM}\mapsto\alpha^2k_{\rm KM}$. Therefore the magnitude of an abelian level is meaningless until the $U(1)$ generator is normalized; its sign is invariant under real normalization changes.
+
+**Verified.** The displayed $c$, the arbitrary-$N'$ current cocycle, the $P_n=\ell T_n$ rescaling, the factor-of-two WCFT convention, and the $\nu=1$ Brown--Henneaux limit were checked algebraically against equations (17)--(18) of arXiv:0808.1911 and equation (1.20) of arXiv:0906.1243.
+
+**Assumptions.** $G>0$, $\ell>0$, the spacelike-stretched branch $\nu>1$, a real current algebra, $\Phi\sim\Phi+2\pi$, and the standard fixed-$T_0$ Compère--Detournay phase-space component.
+
+**Not independently re-derived here.** The full TMG Barnich--Brandt/Iyer--Wald surface-charge two-form was not recomputed component by component from the action. The cross-check uses the primary-literature charge cocycle, its general generator-normalization dependence, the later full-boundary-condition algebra, and the AdS$_3$ limit.
