@@ -46,6 +46,88 @@ casimirChecks = FullSimplify[
   casimir[deltaMinus[m]] == m^2 - 3/2
 ];
 
+(* Section 01 -> angular separation -> unrotated radial matrix.  The ordered
+   harmonic basis is {Omega_kappa, Omega_-kappa}; sigma.rhat exchanges the
+   two entries and K = 1 + sigma.L has eigenvalues {kappa, -kappa}. *)
+angularKMatrix[kap_] := DiagonalMatrix[{kap, -kap}];
+radialHarmonicExchange = PauliMatrix[1];
+
+angularConventionChecks = FullSimplify[
+  radialHarmonicExchange.radialHarmonicExchange == IdentityMatrix[2] &&
+  radialHarmonicExchange.angularKMatrix[kap] +
+      angularKMatrix[kap].radialHarmonicExchange == ConstantArray[0, {2, 2}] &&
+  angularKMatrix[kap].UnitVector[2, 1] == kap UnitVector[2, 1] &&
+  angularKMatrix[kap].radialHarmonicExchange.UnitVector[2, 1] ==
+    -kap radialHarmonicExchange.UnitVector[2, 1],
+  Assumptions -> kap != 0
+];
+
+unrotatedRadialMatrix[energy_, mass_, kap_, rho_] := {
+  {kap Csc[rho], -(energy + mass Sec[rho])},
+  {energy - mass Sec[rho], -kap Csc[rho]}
+};
+
+(* With the Section 01 gamma matrices and the ansatz
+   (i G Omega_-kappa, F Omega_kappa)^T, these are the actual upper/lower
+   coefficients of (slash nabla - m) psi after the common rescaling. *)
+section01SeparatedResidual = {
+  (-energy - mass Sec[rho]) I g -
+    I (fPrime - kap Csc[rho] f),
+  I*I (gPrime + kap Csc[rho] g) +
+    (energy - mass Sec[rho]) f
+};
+
+section01DerivativeSolution = First[Solve[
+  Thread[section01SeparatedResidual == {0, 0}],
+  {fPrime, gPrime}
+]];
+
+section01ToRadialMatrixCheck = FullSimplify[
+  ({fPrime, gPrime} /. section01DerivativeSolution) ==
+    unrotatedRadialMatrix[energy, mass, kap, rho].{f, g},
+  Assumptions ->
+    0 < rho < Pi/2 && Element[{energy, mass, kap}, Reals] && kap != 0
+];
+
+kappaSignBranchGuardCheck = FullSimplify[
+  unrotatedRadialMatrix[energy, mass, -kap, rho] -
+    unrotatedRadialMatrix[energy, mass, kap, rho] ==
+      {{-2 kap Csc[rho], 0}, {0, 2 kap Csc[rho]}},
+  Assumptions -> 0 < rho < Pi/2 && kap != 0
+];
+
+radialRotation[rho_] := {
+  {Cos[rho/2], Sin[rho/2]},
+  {-Sin[rho/2], Cos[rho/2]}
+};
+
+rotationDerivativeCheck = FullSimplify[
+  D[radialRotation[rho], rho].Inverse[radialRotation[rho]] ==
+    {{0, 1/2}, {-1/2, 0}},
+  Assumptions -> 0 < rho < Pi/2
+];
+
+rotatedRadialMatrix = FullSimplify[
+  radialRotation[rho].unrotatedRadialMatrix[energy, mass, kap, rho].
+      Inverse[radialRotation[rho]] +
+    D[radialRotation[rho], rho].Inverse[radialRotation[rho]],
+  Assumptions ->
+    0 < rho < Pi/2 && Element[{energy, mass, kap}, Reals]
+];
+
+expectedRotatedRadialMatrix = {
+  {kap Cot[rho] - mass Tan[rho],
+    -(energy - 1/2 + mass + kap)},
+  {energy - 1/2 - mass - kap,
+    -kap Cot[rho] + mass Tan[rho]}
+};
+
+exactSymbolicRadialRotationCheck = FullSimplify[
+  rotatedRadialMatrix == expectedRotatedRadialMatrix,
+  Assumptions ->
+    0 < rho < Pi/2 && Element[{energy, mass, kap}, Reals]
+];
+
 (* Cotăescu's unitary radial reduction, L=1, positive kappa branch. *)
 radialNormalization[nr_, mass_, kap_] := Sqrt[
   2 Factorial[nr] Gamma[nr + mass + kap + 1]/
@@ -318,6 +400,15 @@ checks = <|
   "SpectrumAlgebraAlternativeDeltaMinus" -> TrueQ[alternativeSpectrumChecks],
   "LevelDegeneracyAlgebra" -> TrueQ[degeneracyChecks],
   "CasimirAlgebraBothRoots" -> TrueQ[casimirChecks],
+  "AngularKappaEigenvalueAndExchangeConvention" ->
+    TrueQ[angularConventionChecks],
+  "Section01DiracBlocksToUnrotatedRadialMatrix" ->
+    TrueQ[section01ToRadialMatrixCheck],
+  "KappaSignBranchCannotBeSilentlyMixed" ->
+    TrueQ[kappaSignBranchGuardCheck],
+  "RadialRotationDerivativeTerm" -> TrueQ[rotationDerivativeCheck],
+  "ExactSymbolicUnrotatedToRotatedRadialMatrix" ->
+    TrueQ[exactSymbolicRadialRotationCheck],
   "PositiveKappaFirstOrderResidualsZero" ->
     TrueQ[positiveKappaFirstOrderChecks],
   "NegativeKappaFirstOrderResidualsZero" ->

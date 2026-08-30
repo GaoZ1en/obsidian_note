@@ -16,6 +16,8 @@ The radial coordinate in that paper is the conformal coordinate $\rho$, while it
 
 The regular formulas are related by a local spin-frame rotation to the diagonal tetrad used in Section 01. The radial rotation is unitary, so the one-dimensional norm is unchanged.
 
+For $d=3$ this project fixes $K=1+\boldsymbol\sigma\cdot\mathbf L$, $K\Omega_\kappa=\kappa\Omega_\kappa$, and $(\boldsymbol\sigma\cdot\hat r)\Omega_\kappa=\Omega_{-\kappa}$. After the local diagonal-to-Cartesian spin-frame rotation and the Section 01 component ordering, Cotăescu's Eq. (46) is exactly the displayed $H_\kappa$ in Section 06; no additional $\kappa\mapsto-\kappa$ relabelling is made before Eqs. (47)--(50).
+
 ## Limits
 
 The paper primarily writes the regular/standard family. Alternative quantization here is not quoted from it: it follows from the $m\mapsto-m$, $\gamma_5$ map and is independently checked in the radial equations.

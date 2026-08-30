@@ -16,6 +16,9 @@
 
 ## Completed closure audit
 
+- [x] **Action:** repair the global-mode $\kappa$ convention bridge from Section 01 to the Jacobi system.
+  **Check:** Section 06 now fixes $K\Omega_\kappa=\kappa\Omega_\kappa$ and the parity-harmonic phase, derives the unrotated radial Hamiltonian through the local diagonal-to-Cartesian spin-frame map, and verifies $UA_\kappa U^{-1}+U'U^{-1}$ exactly for symbolic $\kappa,m,E,\rho$ before reusing the existing intertwining tests.
+
 - [x] **Action:** make the finite-cutoff Noether wall term and Hamiltonian remainder explicit.
   **Check:** Section 05 now displays $\beta_{\xi,R}^s$, $\mathcal R_{\xi,R}^{\rm emb}$, the full radial form $\mathfrak b_R^s$, and their pure-BC limits.
 
