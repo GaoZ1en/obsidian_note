@@ -13,6 +13,8 @@ $$\begin{align}
 A_t|_{x=\pm L}&=0, &A_s|_{x=\pm L}&=0.
 \end{align}$$
 
+The gauge frames at these physical walls are fixed. During each regional problem the quotient is only by transformations equal to the identity both at the physical wall and in the chosen artificial-interface frame. A transformation with nonzero interface value is boundary-frame covariance, not regional proper gauge. This is the compact-Abelian realization of the three-layer policy in gauge-covariant sewing and reduction.md.
+
 The calculation follows the order of `formalism.md`: prescribe the pullback on each regional interface, solve and quantize each regional Maxwell problem, identify the two prescribed histories, vary their common value, reconstruct the connected vector potential, and only then define the connected annihilation operators.
 
 ## Regional Variational Problem
@@ -39,7 +41,7 @@ A_{t,i}(t,L,s)&=\alpha_i(t,s), &
 A_{s,i}(t,L,s)&=q_i(t,s),
 \end{align}$$
 
-and hold \((\alpha_i,q_i)\) fixed during regional quantization. The interface part of the variation is
+The pair \(a_i=\alpha_i\,\mathrm dt+q_i\,\mathrm ds\) is the pullback of the \(U(1)\) connection, hence an affine connection history rather than two unrelated scalar ports. Hold \((\alpha_i,q_i)\) fixed during regional quantization. The interface part of the variation is
 
 $$\begin{align}
 \left.\delta S_i\right|_\Gamma
@@ -261,6 +263,12 @@ This exhausts the \(\ell=0\) regional solutions.
 
 ## Gluing and the Connected Spectrum
 
+The calculation below uses a common interface frame, \(h=1\). In another fixed sewing chart \(h=e^{i\varphi(t,s)}\), connection descent is \(a_2=a_1+\mathrm d_\Gamma\varphi\); this is transition data and no new edge oscillator is introduced. Releasing the full common connection history gives the two transmission equations below. On a Cauchy cut, by contrast, the boundary-gauge moment map uses only the normal electric component \(E_{y,1}+E_{y,2}\). Thus this higher-dimensional Abelian example explicitly obeys
+
+$$\begin{align}
+\text{full connection sewing}\neq\text{Gauss moment-map reduction}.
+\end{align}$$
+
 Identify
 
 $$\begin{align}
@@ -480,5 +488,7 @@ Derived here:
 - the connected oscillator algebra and the integer spectrum of the spatially constant normal variable.
 
 Assumptions: flat cylinder, compact \(U(1)\), no charged matter, fixed \(A_t=A_s=0\) at the physical walls, topologically trivial bundle for the oscillatory modes, and Coulomb gauge imposed only after the variational equations and Gauss law have been obtained.
+
+Gauge-language check: the construction quotients only based regional proper gauge, treats nonzero interface transformations as frame covariance, performs sewing in the common-frame chart, and interprets the result as the Abelian specialization of gauge-covariant sewing and reduction.md. The transition function is fixed sewing data, not an added canonical oscillator.
 
 Not proved here: cutoff-uniform convergence of the finite vector-potential regulator, equivalence of independently chosen regional Fock representations, interacting charged matter, or a different physical wall condition.

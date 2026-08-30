@@ -14,7 +14,7 @@ $$\begin{align}
 A_t&=0, &A_a&=0.
 \end{align}$$
 
-This choice makes the tangential pullback of the connection the prescribed regional history. The calculation below solves every regional and connected polarization explicitly.
+The gauge frames at the physical walls are fixed. During a regional problem the proper gauge quotient contains only transformations equal to the identity at both the physical wall and the chosen artificial-interface frame. Transformations with nonzero interface value are boundary-frame covariance. This choice makes the tangential pullback of the connection the prescribed regional history, in the compact-Abelian specialization of gauge-covariant sewing and reduction.md. The calculation below solves every regional and connected polarization explicitly.
 
 ## Action, Constraint, and Interface Variation
 
@@ -31,7 +31,7 @@ A_{t,i}(t,L,z)&=\alpha_i(t,z), &
 A_{a,i}(t,L,z)&=q_{i,a}(t,z),
 \end{align}$$
 
-and hold these functions fixed during regional quantization. Variation gives the interface term
+The affine connection history is \(a_i=\alpha_i\,\mathrm dt+q_{i,a}\,\mathrm dz^a\). Hold these functions fixed during regional quantization. Variation gives the interface term
 
 $$\begin{align}
 \left.\delta S_i\right|_\Gamma
@@ -331,6 +331,8 @@ These modes complete the regional solution space.
 
 ## Glue the Quantized Regions
 
+Use the common interface frame \(h=1\). In a different fixed \(U(1)\) sewing chart, \(h=e^{i\varphi(t,z)}\) and connection descent reads \(a_2=a_1+\mathrm d_\Gamma\varphi\); no independent edge oscillator is added. Varying the complete common connection history gives both the normal-electric and tangential-conormal transmission equations below. The Cauchy-cut gauge moment map contains only \(E_{y,1}+E_{y,2}\), so full timelike sewing is not identical to gauge reduction.
+
 Identify
 
 $$\begin{align}
@@ -590,5 +592,7 @@ Derived here:
 - the connected oscillator algebra.
 
 Assumptions: flat slab times a rectangular two-torus, compact \(U(1)\), no charged matter, fixed tangential potential at the physical walls, topologically trivial bundle for oscillatory modes, and Coulomb gauge imposed after the action and Gauss constraint are fixed.
+
+Gauge-language check: based regional proper gauge, boundary-frame covariance, fixed transition sewing, and the glued diagonal proper gauge are kept distinct. The displayed Maxwell equations are the Abelian realization of the general relation-level policy; they do not add an uncomputed edge variable.
 
 Not proved here: cutoff-uniform convergence of the vector Galerkin sequence, other wall conditions, charged matter, nontrivial magnetic bundles, or any equivalence between independently declared regional Fock representations.
