@@ -15,6 +15,7 @@ This directory contains the active symbolic and numerical regressions:
 - `noncentral_cut_checks.wl`: arbitrary-cut scalar determinant, unequal-length lifting, Schur form, residual inertia, and positivity.
 - `associativity_checks.wl`: scalar two-port Gram, Schur, symplectic, and Hamiltonian associator.
 - `maxwell_quantize_first_gluing_checks.wl`: \(1+1\) reduced Hamiltonian; \(2+1/3+1\) divergence, curl--curl, gluing determinants, mode normalizations, and Neumann-lifting coefficients.
+- `yang_mills_1p1_checks.py`: deterministic \(SU(2)\) transition-function and prescribed-history Hamiltonian covariance, two-cell moment-map/one-form reduction, connected Hamiltonian normalization, Peter--Weyl singlet and Casimir data through highest weight \(n=8\), three-cell cotangent reduction, and finite representation-space Haar-projector witnesses.
 - `ads2_rindler_null_reconstruction_checks.wl`: AdS$_2$ null lowest weight, characteristic ladder, reconstructed KG modes, direct null-Hamiltonian variation, corner cancellation, KMS/reflection phase, and finite-link sensitivity checks supporting `../ads2-rindler global reconstruction.md`.
 - `ads2_rindler_finite_zn_source_audit.py`: read-only parser for the original `ads2_rindler_gluing.zip`, verifying the distinct wall-position $Z$ and mode-count $N$ regulators, projected global Noether energy, wall-value vector, and rank-one link.
 
@@ -33,11 +34,12 @@ wolframscript -file port_product_fock_checks.wl
 wolframscript -file noncentral_cut_checks.wl
 wolframscript -file associativity_checks.wl
 wolframscript -file maxwell_quantize_first_gluing_checks.wl
+python3 yang_mills_1p1_checks.py
 wolframscript -file ads2_rindler_null_reconstruction_checks.wl
 python3 ads2_rindler_finite_zn_source_audit.py /path/to/ads2_rindler_gluing.zip
 ```
 
-Verified exactly in the active suite: the displayed scalar finite-matrix, port, feedback, reduced-state/open-system, continuum-mode, arbitrary-cut, associativity, and optional product-reference identities; the Maxwell transverse and longitudinal-normal polarization equations; both Maxwell gluing determinants; the connected-mode normalizations; the Neumann-lifting coefficients; the \(1+1\) reduced Hamiltonian; and the AdS$_2$ null lowest-weight/ladder, KG, Hamiltonian-variation, corner, reflection-phase, and KMS residuals. The finite-$(Z,N)$ source facts are separately checked by the archive parser.
+Verified exactly in the active suite: the displayed scalar finite-matrix, port, feedback, reduced-state/open-system, continuum-mode, arbitrary-cut, associativity, and optional product-reference identities; the Maxwell transverse and longitudinal-normal polarization equations; both Maxwell gluing determinants; the connected-mode normalizations; the Neumann-lifting coefficients; the \(1+1\) reduced Hamiltonian; and the AdS$_2$ null lowest-weight/ladder, KG, Hamiltonian-variation, corner, reflection-phase, and KMS residuals. The Yang--Mills script separately supplies finite \(SU(2)\) matrix and representation-space witnesses; the general compact-\(G\) statements remain the analytic proofs in the note. The finite-$(Z,N)$ source facts are separately checked by the archive parser.
 
 The AdS$_2$ partial-trace suite separately verifies the finite Hamiltonian/covariance/Williamson/density-matrix identities, the boost Killing vector and charge normalization, and records rather than hides the cutoff-dependent covariance, entropy, modular-kernel, and boost-flow errors.
 

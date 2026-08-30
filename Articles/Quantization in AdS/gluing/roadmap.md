@@ -95,7 +95,7 @@ The concrete form of "complete" is this table, filled with `proved`, `counterexa
 | Layer | scalar | gauge | gravity |
 |---|---|---|---|
 | L0 | proved for the fixed outer-Dirichlet timelike scalar benchmark and the declared flat/AdS null-characteristic scalar domains; other cut conditions and a general null data theorem open | partial: exact after based Gauss reduction for the framed \(1+1\) compact Yang--Mills/Maxwell interval; a full regional gauge IBVP statement, higher-dimensional non-Abelian timelike data, and two-null-surface data remain open | Euclidean Dirichlet generally non-elliptic; Lorentzian Dirichlet conditional; conformal--mean-curvature partial/open |
-| L1 | proved for the bounded massive interval scalar with prescribed cut histories and every fixed finite partition; null characteristic composition proved on the stated scalar matched/cyclic domains | partial: exact \(1+1\) compact-\(G\) reduction and Abelian \(2+1/3+1\) timelike mode sewing; the general gauge note is conditional relation-level, and null gauge composition remains open | open |
+| L1 | proved for the bounded massive interval scalar with prescribed cut histories and every fixed finite partition; null characteristic composition proved on the stated scalar matched/cyclic domains | partial: exact \(1+1\) compact-\(G\) reduction, including repaired fixed-/variable-\(h\) presentations and three-cell cotangent reduction by stages, plus Abelian \(2+1/3+1\) timelike mode sewing; the general gauge note remains conditional relation-level, and null gauge composition remains open | open |
 | L2 | proved for every fixed finite partition of the bounded massive interval scalar | open | open |
 | L3 | open | open | open |
 | L4 | partial: intrinsic smeared connected-vacuum state converges; the optional port-complete sharp regional-product map is a counterexample; AdS$_2$ fixed-label wedge restriction and smeared KMS are proved, while full modular-group convergence and type classification are open | partial only for the exact \(1+1\) compact-group Haar/Peter--Weyl Hilbert reduction; continuum field-valued interface representations and states open | open |
@@ -115,7 +115,7 @@ Ordered by which obstruction each rung isolates, not by difficulty. The last col
 | 3 | chiral CFT with a specified overlap, collar, defect, or boundary condition | algebra fusion $\circledast$ and sector fusion $\boxtimes$ are separately testable; modular data may be computable | the proposed algebraic realization |
 | 4 | cylinder $[-L,L]\times S^1_R$ | interface datum is a field $q(t,\theta)$; transverse locality and the second UV sum become essential | the extension from point-valued to field-valued ports |
 | 5 | Chern--Simons on a cut with chosen boundary polarization | distinguish finite-dimensional global conformal blocks from the WZW/current-algebra edge sector and categorical interface data | the proposed topological/gauge realization |
-| 6 | compact Yang--Mills/Maxwell, \(1+1\) then higher-dimensional Abelian/non-Abelian cavities | non-Abelian transition data, Gauss moment map versus full transmission, choice of center, field-valued boundary group | the gauge layer |
+| 6 | compact Yang--Mills/Maxwell: \(1+1\) timelike benchmark repaired/closed in scope; higher-dimensional non-Abelian cavity parked | non-Abelian transition data, Gauss moment map versus full transmission, choice of center, field-valued boundary group | the gauge layer |
 | 7 | $2+1$ scalar, cut surface with nonempty boundary | genuine corner divergences, codimension-2 data | higher-dimensional extension |
 | 8 | bosonic JT gravity coupled to matter | boundary mode as an operator-valued port; crossed-product comparison; type II$_\infty$ target | the gravity layer |
 | 9 | de Sitter static patch | observer crossed product, finite maximum entropy — known answer | — this rung is a benchmark |
@@ -167,6 +167,8 @@ Completeness is the scope table of Section 4, not a global theorem. This standar
 - *Kill criterion.* If the half-line rung has no natural conservative replacement, restrict the boundary-history canonical formalism to finite cavities and use an open-system or algebraic formulation for radiating exteriors. This test is cheap and should be completed inside year one.
 
 ### Phase 2, Years 4--6: Gauge Theory and Corners
+
+- **D-timelike. Closed in the declared scope.** The general compact-internal-gauge note now separates the fixed-\(h\) twisted-diagonal quotient from the variable-\(h\) product-frame presentation and keeps finite Haar projection distinct from a quantization-commutes-with-reduction theorem. The compact \(1+1\) benchmark proves prescribed-history covariance, two-cell symplectic/Haar reduction, and the three-cell canonical map \([(W_r,J_r)]\mapsto(W_3W_2W_1,J_1)\). Higher-dimensional non-Abelian timelike Yang--Mills is parked as a future stress test, not the next project.
 
 - **D-null. Maxwell is the next null stress test.** Upgrade `../../null hypersurface/finite boundary/Maxwell.md` from one finite null boundary to two intersecting characteristic surfaces. Work directly in Maxwell variables and retain radiative data, Gauss law, proper/charged cut gauge transformations, edge/charge data and corner compatibility; the (2+1) dual scalar is only a check. [[Literature Notes/arxiv/2026/08/17/The Phase Space of Gravity on Null Hypersurfaces (2608.14449v1)|2608.14449]] and [[Literature Notes/arxiv/2026/08/25/Perturbative Reconstruction of Self-Adjoint Generators from Bosonic Canonical Commutation Relations - Application to the Null-Surface Formulation (2608.21947v1)|2608.21947]] are external comparisons, not project results.
 - **D.** Chern--Simons: choose a boundary polarization and determine whether the cut is represented by finite-dimensional conformal blocks, a WZW/current-algebra edge sector, a category, or a combination of these.
@@ -221,6 +223,7 @@ One-time investment, decade-long return.
 - Witten's modular crossed product is type II$_\infty$ (arXiv:2112.12828), ordinary bosonic JT coupled to matter likewise gives type II$_\infty$ boundary algebras (arXiv:2301.07257, arXiv:2303.04701), and the de Sitter observer algebra is type II$_1$ (arXiv:2206.10780).
 - For the declared sharp-cut scalar comparison, a fixed odd Bogoliubov row is analytically not in $\ell^2$, so that map is not Fock-unitarily implementable.
 - In the scalar null branch, direct action/CPS characteristic composition is proved on the stated matched/cyclic domains; the AdS$_2$ construction derives (\omega_n=\Delta+n), the global state/correlators and smeared (\beta=2\pi) wedge KMS, while the factorizing regulator converges on fixed smooth/Weyl label families to the algebraic wedge restriction.
+- In the compact \(1+1\) Yang--Mills benchmark, action reduction, prescribed boundary-history covariance, \((T^*G\times T^*G)//G_\Delta\simeq T^*G\), normalized-Haar invariant-subspace reduction, the connected Casimir spectrum, and the three-cell cotangent reduction-by-stages map are proved. The general gauge note remains conditional on its IBVP, descent, reconstruction, and quotient hypotheses.
 
 ## Assumptions
 
@@ -234,5 +237,6 @@ One-time investment, decade-long return.
 - The candidate answer in Gap C. The identification of oriented flux matching with mutually opposite interface module structures is a conjecture with a stated reason, and is labelled as such.
 - The uniform two-index estimate needed to prove the displayed $(\log N)^2/(2\pi^2)$ square-cutoff asymptotic; the present evidence for that coefficient is numerical.
 - The general null-CPS abstraction, Maxwell two-null-surface gauge reduction, and every gravity/holography milestone; the completed scalar examples do not prove these extensions.
+- A higher-dimensional non-Abelian timelike Yang--Mills IBVP/reconstruction theorem, a universal quantization-commutes-with-reduction theorem, or continuum normalized-Haar reduction for a field-valued boundary group.
 - Unrestricted horizon completion onto, sharp wedge tensor factorization, Type III classification, full modular-kernel/group convergence, or an entropy-coefficient theorem.
 - That the JT comparison closes or that a chiral CFT admits either fusion statement in the precise realization still to be chosen.

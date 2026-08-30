@@ -83,9 +83,9 @@ a_i\longmapsto a_i^{k_i}
 
 Before sewing, this is generally a charged Hamiltonian boundary symmetry or covariance between different fixed-history fibers. It is not automatically a regional proper gauge transformation and must not be quotiented merely because it is a gauge transformation in the bulk.
 
-### Glued Diagonal Proper Gauge
+### Glued Proper Gauge in a Sewing Chart
 
-After connection descent and flux matching, the frame changes which are restrictions of a continuous global transformation act diagonally, with the transition function inserted when the two regional frames differ. On the Gauss moment-map locus this action becomes global proper gauge and is quotiented.
+After connection descent and flux matching, the frame changes which are restrictions of one continuous global transformation preserve the chosen sewing chart. For \(h=1\) they act diagonally. For a fixed nontrivial \(h\), they act by the twisted diagonal subgroup defined below. On the Gauss moment-map locus this action becomes global proper gauge and is quotiented. If \(h\) is instead retained as a variable chart coordinate, the larger product frame group acts on the extended presentation; this is not the same quotient written in different notation.
 
 The policy is therefore
 
@@ -93,7 +93,7 @@ $$\begin{align}
 \boxed{
 \text{regional proper gauge}
 \neq\text{boundary-frame symmetry}
-\neq\text{glued diagonal proper gauge}.}
+\neq\text{glued chart-preserving proper gauge}.}
 \end{align}$$
 
 ## Non-Abelian Transition-Function Sewing
@@ -160,7 +160,15 @@ $$\begin{align}
 +D_{a_2}(h^{-1}\delta h),
 \end{align}$$
 
-and integration by parts along \(\Gamma\) produces the corresponding Gauss/corner contribution. The temporal endpoint term conjugate to \(h\) must be kept. Only after this completed variation may one identify the chart redundancy or a genuine interface phase space. Introducing \(h\) and then discarding its canonical/corner term would change the variational theory. The \(1+1\) Yang--Mills benchmark gives the explicit finite-dimensional version.
+and integration by parts along \(\Gamma\) produces the corresponding Gauss/corner contribution. The temporal endpoint term conjugate to \(h\) must be kept. With the conventions above, the Cauchy-cut representative contains
+
+$$\begin{align}
+\Theta_{S,\mathrm{ext}}
+=\Theta_{S,1}+\Theta_{S,2}
+-\langle E_2^\perp,h^{-1}\delta h\rangle_S,
+\end{align}$$
+
+up to the already declared polarization/corner representative. Only after this completed variation may one identify the chart redundancy or a genuine interface phase space. Introducing \(h\) and then discarding its canonical/corner term would change the variational theory. The \(1+1\) Yang--Mills benchmark derives this term without adding an interface oscillator.
 
 ## Full Sewing Relation Is Not Gauge Reduction
 
@@ -189,35 +197,103 @@ $$\begin{align}
 
 The two are compatible by the Gauss/Noether identity. They coincide in the compact \(1+1\) zero-mode example because there is only the normal electric datum at the interface; that coincidence is not a general theorem.
 
-## Conditional Classical Reconstruction Statement
+## Conditional Classical Reconstruction Statements
 
-Let \(\widehat{\mathcal P}_i\) denote regional solution data after quotienting only \(\mathcal G_i^0\), with the chosen fixed-history polarization and trace class. Define the matched relation
+Let \(\widehat{\mathcal P}_i\) denote regional solution data after quotienting only \(\mathcal G_i^0\), with the chosen fixed-history polarization and trace class. There are two distinct presentations. Write \(\mathcal G_{\Gamma,i}\) for the copy of \(\operatorname{Map}(\Gamma,G)\) acting in the \(i\)-th regional frame.
+
+### Fixed-\(h\) Sewing Chart
+
+For a prescribed transition function \(h:\Gamma\to G\), define
 
 $$\begin{aligned}
-\mathcal C_G:=\{(\Phi_1,\Phi_2,h):\;&a_2=a_1^h,\\
+\mathcal C_{G,h}:=\{(\Phi_1,\Phi_2)\in
+\widehat{\mathcal P}_1\times\widehat{\mathcal P}_2:\;&
+a_2=a_1^h,\\
 &\Pi_1+\operatorname{Ad}_h^*\Pi_2=0,\\
 &\text{the regional constraints and corner conditions hold}\}.
 \end{aligned}$$
 
-**Conditional relation-level theorem.** Suppose:
-
-1. both regional IBVPs and the connected IBVP are well posed in one declared regularity class;
-2. the bundle and connection traces descend across the collar through \(h\);
-3. the Green-dual traces and corner representatives are compatible and the summed action is exactly the restriction of the connected action;
-4. matched piecewise weak solutions satisfy a transmission/regularity theorem giving a connected solution;
-5. the residual diagonal frame action has a regular moment-map locus and a well-defined quotient.
-
-Then restriction and assembly identify connected solutions modulo global proper gauge with matched regional data modulo regional frame changes. On the smooth nondegenerate tier, the identification preserves the reduced symplectic form.
-
-Schematically one may write
+The residual frame group inside this fixed chart is the pointwise twisted diagonal
 
 $$\begin{align}
-\mathcal P_M
-\simeq
-\mathcal C_G/\mathcal G_{\Gamma,\mathrm{diag}},
+\boxed{
+\mathcal G_{\Gamma,h}
+:=\{(k_1,k_2)\in\mathcal G_{\Gamma,1}\times\mathcal G_{\Gamma,2}
+\mid k_2=h^{-1}k_1h\}.}
 \end{align}$$
 
-but this is shorthand for the displayed relation, reconstruction, and quotient hypotheses. The note does not assert for an arbitrary gauge theory that
+Indeed \(k_1^{-1}hk_2=h\), so \(h\) is fixed, and
+
+$$\begin{align}
+(a_1^{k_1})^h=(a_1^h)^{k_2},
+\qquad
+\Pi_1^{k_1}+\operatorname{Ad}_h^*\Pi_2^{k_2}
+&=\operatorname{Ad}_{k_1^{-1}}^*
+\left(\Pi_1+\operatorname{Ad}_h^*\Pi_2\right)=0,\\
+\Pi_i^{k_i}&:=\operatorname{Ad}_{k_i^{-1}}^*\Pi_i
+\end{align}$$
+
+whenever the original sewing equations hold. The second equation uses the induced coadjoint transformations and the same pointwise relation between \(k_1\) and \(k_2\). For \(h=1\), \(\mathcal G_{\Gamma,h}=\mathcal G_{\Gamma,\mathrm{diag}}\).
+
+Suppose:
+
+1. both regional IBVPs and the connected IBVP are well posed in one declared regularity class;
+2. the declared bundle identifications and connection traces descend across the collar through this \(h\);
+3. the Green-dual traces and corner representatives are compatible and the summed action is exactly the restriction of the connected action;
+4. matched piecewise weak solutions satisfy a transmission/regularity and reconstruction theorem giving a unique connected solution modulo global proper gauge;
+5. the residual twisted-diagonal action has a regular moment-map locus and a smooth, or otherwise explicitly controlled, quotient.
+
+Only under these hypotheses do restriction and assembly give the conditional identification
+
+$$\begin{align}
+\boxed{
+\mathcal P_M\simeq
+\mathcal C_{G,h}/\mathcal G_{\Gamma,h}.}
+\end{align}$$
+
+On the smooth nondegenerate tier this identification preserves the reduced symplectic form.
+
+### Variable-\(h\) Extended Sewing Chart
+
+If \(h\) is retained as a sewing-chart variable, define instead
+
+$$\begin{aligned}
+\widetilde{\mathcal C}_G:=\{(\Phi_1,\Phi_2,h):\;&
+a_2=a_1^h,\\
+&\Pi_1+\operatorname{Ad}_h^*\Pi_2=0,\\
+&\text{the regional constraints and completed corner conditions hold}\}.
+\end{aligned}$$
+
+Independent interface frame changes act by
+
+$$\begin{align}
+a_i&\longmapsto a_i^{k_i}, &
+h&\longmapsto k_1^{-1}hk_2,
+\end{align}$$
+
+and the extended presentation is quotiented by the product group:
+
+$$\begin{align}
+\boxed{
+\mathcal P_M\simeq
+\widetilde{\mathcal C}_G/
+(\mathcal G_{\Gamma,1}\times\mathcal G_{\Gamma,2})}
+\end{align}$$
+
+under the same IBVP, descent, regularity, reconstruction, and regular-quotient hypotheses, now applied to the extended action. This is chart redundancy/descent data; it does not automatically add a physical edge oscillator. In symplectic language the \(h\)-dependent canonical/corner term displayed above is part of \(\widetilde{\mathcal C}_G\) and cannot be discarded before quotienting.
+
+On every frame-change orbit for which the slice \(h=h_0\) is reachable with the declared corner conditions, its stabilizer is exactly \(\mathcal G_{\Gamma,h_0}\). Consequently the two presentations are related by the slice isomorphism
+
+$$\begin{align}
+\widetilde{\mathcal C}_G/
+(\mathcal G_{\Gamma,1}\times\mathcal G_{\Gamma,2})
+\simeq
+\mathcal C_{G,h_0}/\mathcal G_{\Gamma,h_0}.
+\end{align}$$
+
+The common-frame \(h_0=1\) chart is the special case with ordinary diagonal stabilizer. No expression of the form \(\mathcal C_G/\mathcal G_{\Gamma,\mathrm{diag}}\) is used for both presentations.
+
+The note does not assert for an arbitrary gauge theory that
 
 $$\begin{align}
 \mathcal P_M=(\mathcal P_1\times\mathcal P_2)//\mathcal G_\Gamma.
@@ -236,7 +312,15 @@ P_{N_S}=\int_{G^{N_S}}\mathrm d\boldsymbol g\,
 U_{N_S}(\boldsymbol g).
 \end{align}$$
 
-Classical reduction and quantum group averaging are exact finite-regulator statements. Reduction by stages is exact for commuting internal-vertex actions, or under the usual normal-subgroup hypotheses with the updated second-stage action.
+The normalized Haar operator is exactly the orthogonal projector onto the invariant subspace for every unitary regulated representation. Separately, finite-dimensional classical symplectic reduction is exact when zero is a regular moment-map value and the relevant action gives a smooth controlled quotient.
+
+These two facts do **not** by themselves prove
+
+$$\begin{align}
+Q(\mathcal P//G)\cong Q(\mathcal P)^G.
+\end{align}$$
+
+Such an identification still requires a compatible polarization and inner product, control of the reduced measure and any half-form or orbit-volume correction, and absence of a projective/anomalous obstruction. In this project it is proved explicitly only for `Yang-Mills 1+1.md`, by constructing both sides and an isometric intertwiner.
 
 ### Continuum Classical
 
@@ -252,7 +336,7 @@ For the infinite-dimensional group \(\operatorname{Map}(S,G)\), this note does n
 
 ## Associativity and Reduction by Stages
 
-At finite regulator, a chain of cells has one compact \(G\) action at each internal vertex. These actions commute when they belong to distinct vertices, their normalized Haar projectors commute, and one-shot averaging equals averaging by stages. Classical group multiplication and cotangent reduction obey the same parenthesization-independent identity.
+At finite regulator, a chain of cells has one compact \(G\) action at each internal vertex. When the vertex actions commute, their normalized Haar projectors commute and one-shot averaging equals averaging by stages. Classical reduction by stages additionally requires the regularity and quotient hypotheses at every intermediate stage. The complete three-cell cotangent calculation, including both moment maps and the reduced canonical one-form, is proved in `Yang-Mills 1+1.md`; group multiplication alone would not establish that result.
 
 For continuum Yang--Mills-type fields, associativity remains a theorem target unless each intermediate union satisfies the same bundle descent, corner compatibility, clean relation composition, quotient regularity, and reconstruction hypotheses. Category or stack language does not replace these checks.
 
@@ -269,10 +353,10 @@ Also excluded here are charged matter, nontrivial bundle descent beyond the assu
 
 ## Verification Boundary
 
-Derived here: the fixed-\(h\) non-Abelian variation, the coadjoint oriented-flux equation, the three gauge roles, and the distinction between the full timelike transmission relation and the Cauchy-cut Gauss moment map.
+Derived here: the fixed-\(h\) non-Abelian variation, the coadjoint oriented-flux equation, the fixed-\(h\) twisted-diagonal quotient, the variable-\(h\) product-frame quotient with its required corner term, the relation between the two presentations, the three gauge roles, and the distinction between the full timelike transmission relation and the Cauchy-cut Gauss moment map.
 
 Assumptions: compact internal \(G\), fixed globally hyperbolic background, fixed physical outer frames, trivializable sewing collar, declared trace polarization, regional and connected well-posedness, constraint propagation, and the reconstruction/quotient hypotheses displayed above.
 
-Checked in `Yang-Mills 1+1.md`: transition-function covariance, left/right action and orientation, the moment-map sign, reduction to \(T^*G\), connected Hamiltonian normalization, compact Haar averaging, Peter--Weyl spectrum, and finite three-cell reduction by stages.
+Checked in `Yang-Mills 1+1.md`: transition-function covariance, left/right action and orientation, the moment-map sign, reduction to \(T^*G\), prescribed-history Hamiltonian covariance, connected Hamiltonian normalization, compact Haar averaging, Peter--Weyl spectrum, and finite three-cell cotangent reduction by stages.
 
-Not proved here: a universal gauge IBVP theorem; a smooth continuum quotient for \(\operatorname{Map}(S,G)\); continuum normalized-Haar group averaging; charged matter; nontrivial bundles or topology change; Chern--Simons/BF quantum sewing; anomalies; gravity; or null-characteristic gauge composition.
+Not proved here: a universal gauge IBVP theorem; a universal quantization-commutes-with-reduction theorem; a smooth continuum quotient for \(\operatorname{Map}(S,G)\); continuum normalized-Haar group averaging; charged matter; nontrivial bundles or topology change; Chern--Simons/BF quantum sewing; anomalies; gravity; or null-characteristic gauge composition.
