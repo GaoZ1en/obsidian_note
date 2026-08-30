@@ -2,28 +2,36 @@
 
 ## Direct verdict
 
-**Correct under the declared finite-cell port policy:** Stage 1 now has an
-endpoint/corner-complete spin-0 form.  The proposed full finite-cross data
+**Correct under the declared finite-cell port policy and fixed-generator
+gauge:** Stage 1.1 is repaired, and the coupled Stage-2 affine pullback has
+been derived for the selected HF/LMPS representative.  The proposed
+finite-cross data
 
 $$
 (\bar q^+_{AB}(u,x),\bar q^-_{AB}(v,x);
 \Omega_0,\theta_{+0},\theta_{-0},\omega_{A0},m_0)
 $$
 
-still do **not** carry a proved reduced covariant phase space, because Stages 2
-and 3 remain open.  The finite-length spin-0 sheet terms are now interpreted as
-outer-port structure rather than an obstruction.  Keeping area/boost ports at
-$S_+$ and $S_-$ gives a pointwise rank-six form in the truncated sector;
-fixing the outer areas and reducing their source momenta leaves the single
-initial area/relative-boost pair.
+now carry an explicit reduced spin-0+spin-2 two-form in affine profile
+variables, with $r_\pm=\sqrt{\Omega_\pm}$ reconstructed by a Green map from
+$\bar q^\pm$.  This is not yet a representative-independent full
+gravitational CPS: the concrete closing-boundary polarization, the complete
+Reisenberger reparametrization, the spin-1/embedding block, and the full gauge
+quotient remain open.
 
 What is established is precise:
 
 - the normalization, projector, boost, action-representative, and spin-1
   dictionaries are fixed in `calculations/00-conventions-action-and-unreduced-potential.md`;
-- the exact shear-free Raychaudhuri reconstruction and the pullback of the
-  complete two-sheet spin-0 potential are derived in
+- the exact shear-free Raychaudhuri reconstruction, Damour transport, and the
+  endpoint-complete two-sheet spin-0 pullback are derived in
   `calculations/01-spin0-raychaudhuri-and-corner-reduction.md`;
+- $\omega_A$ is not set to zero: in the shear-free affine sector it is
+  transported as
+  $[\omega_{A0}+\lambda D_A\theta_0/2]/(1+\lambda\theta_0/2)^2$;
+- sheet composition requires area plus dynamical slope/expansion matching;
+  matching the geometric boost port $b$ does not impose continuity of
+  $p_\Omega=-(\kappa+\theta/2)$;
 - the combined two-sheet endpoint variation plus the single initial joint
   cancels the $\Omega_0\delta a_0$ normalization terms and proves one pair
   $-C_G\delta m_0\wedge\delta\Omega_0$;
@@ -32,9 +40,15 @@ What is established is precise:
   are no longer independent variations;
 - $\kappa$ and $\kappa+\theta$ representatives give the same reduced spin-0
   form when both endpoint shifts are kept;
-- the missing $\Omega$ in the bare-measure spin-2 density is repaired in
-  `calculations/02-spin2-conformal-metric-kinematics.md`; Stage 2 remains
-  kinematical until a real constraint pullback is performed.
+- the full coupled Raychaudhuri reconstruction, linearized Green map, reduced
+  one-form, field-space curl, shared corner, and induced outer-port terms are
+  derived in `calculations/02-coupled-spin0-spin2-reduction.md`;
+- the conformal bulk coefficient agrees with Reisenberger, but his
+  area-parameter tangents satisfy $n_s=B_s\ell_s$; the transformed corner has
+  an unresolved relative sign and extra conformal endpoint terms, so full
+  equivalence remains open;
+- Stage 3 is ready only as a controlled Damour-transport/embedding-policy
+  calculation, not as a closed spin-1 CPS.
 
 ## Fixed scope
 
@@ -51,8 +65,9 @@ post-CIVP construction belongs here.
   dictionary.
 - `calculations/01-spin0-raychaudhuri-and-corner-reduction.md`: decisive
   Stage-1 pullback, outer-port policies, rank/kernel, and sheetwise gluing.
-- `calculations/02-spin2-conformal-metric-kinematics.md`: kinematic spin-2
-  density convention and chart regression only.
+- `calculations/02-coupled-spin0-spin2-reduction.md`: coupled Stage-2
+  Raychaudhuri/Green reconstruction, complete reduced form, double-null
+  corner/ports, and Reisenberger regression.
 - `verification/STAGE1_AUDIT_SUMMARY.md`: concise proved/conditional/open
   verdict.
 - `verification/CLAIM_LEDGER.md`: authoritative claim status.

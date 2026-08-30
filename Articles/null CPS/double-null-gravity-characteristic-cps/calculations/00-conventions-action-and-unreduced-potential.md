@@ -146,6 +146,12 @@ $$
 \tag{2.4}
 $$
 
+This symbol denotes the geometric combination used by HF/CK.  Since (5.1)
+contains $-\Pi_\Omega\delta\log\Omega$, the coefficient canonically
+conjugate to $\Omega$ is $p_\Omega=-\Pi_\Omega$.  The latter is the
+dynamical area momentum to be matched in characteristic composition; it must
+not be confused with an outer logarithmic normal/boost port $b$.
+
 ## 3. Normal connection, boosts, and the HF spin-1 momentum
 
 Normalize an auxiliary null on $N_+$ by
@@ -491,8 +497,10 @@ policy.
 and embeddings; fixed affine parameters in Stage 1; no boundary
 reparametrization counterterm; common corner metric imposed once.
 
-**Not verified here:** a unique outer closing geometry; preservation of the
-shear-free/twist-free truncation under transverse vacuum evolution; the Damour
-transport; the full spin-2 constraint pullback; nondegeneracy after all gauge
-quotients; or existence of a local reduced action in the full characteristic
-data.
+**Not verified here:** a unique outer closing geometry; a spin-1 reduction
+with varying embeddings; nondegeneracy after all gauge quotients; or existence
+of a local reduced action in the full characteristic data.  Calculation 01
+now embeds the shear-free block into Damour without imposing
+$\omega_A=0$, and calculation 02 performs the coupled affine spin-0+2
+Raychaudhuri pullback.  Those later results do not remove the stated outer-port
+and embedding-policy boundaries.

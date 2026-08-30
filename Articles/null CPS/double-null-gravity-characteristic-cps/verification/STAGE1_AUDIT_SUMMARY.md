@@ -2,10 +2,11 @@
 
 ## Direct verdict
 
-**Correct under the declared area/boost outer-port policy:** the classical
-affine, shear-free, twist-free spin-0 sector is endpoint/corner complete on a
-finite double-null cell.  This is not yet the full reduced gravitational
-characteristic CPS.
+**Correct under the declared area/boost outer-port policy and
+fixed-generator pullback:** the classical affine, shear-free spin-0 block is
+endpoint/corner complete and consistently embedded in the Raychaudhuri--Damour
+constraints.  It is not a generic twist-free truncation and is not by itself
+the full reduced gravitational characteristic CPS.
 
 ## What is proved
 
@@ -30,6 +31,25 @@ $$
 {2\sqrt{\Omega_0\Omega_{\pm L}}}.
 $$
 
+The 4D affine, shear-free Damour equation and its exact solution are
+
+$$
+(\partial_{\lambda_\pm}+\theta_\pm)\omega_A^\pm
+=\frac12D_A\theta_\pm,
+$$
+
+$$
+\boxed{
+\omega_A^\pm(\lambda_\pm)
+=\frac{\omega_{A0}+\lambda_\pm D_A\theta_{\pm0}/2}
+{(1+\lambda_\pm\theta_{\pm0}/2)^2}.}
+$$
+
+The spin-0 block survives because $\delta\ell_\pm^A=0$ makes the spin-1
+potential vanish, not because $\omega_A=0$.  Global $\omega_A=0$ in this
+gauge requires the extra restrictions
+$\omega_{A0}=0=D_A\theta_{\pm0}$ and is not generic CIVP data.
+
 At $S_0$, the two sheet endpoint variations sum to
 $-C_G\Omega_0\delta a_0$.  Adding
 $\delta I_{S_0}=C_G(\Omega_0\delta a_0+a_0\delta\Omega_0)$ cancels the normal-
@@ -51,8 +71,21 @@ Pointwise this form has rank six and zero kernel in the declared truncated,
 fixed-gauge phase space.  Each $\theta_{\pm0}$ obtains a partner through its
 own outer port.  If the outer areas are fixed, the pulled-back rank is two;
 the unused $b_\pm$ directions are kernel source directions until fixed or
-quotiented, after which only $(\Omega_0,-m_0)$ remains.  Two consecutive affine
-sheet segments compose after the middle area/boost port is matched once.
+quotiented, after which only $(\Omega_0,-m_0)$ remains.  For consecutive
+affine segments, area matching alone leaves
+
+$$
+2C_G\,\delta(r_1-r_0)\wedge\delta(r_2-r_1).
+$$
+
+Composition holds only after the additional dynamical condition
+
+$$
+\frac{r_1-r_0}{L_1}=\frac{r_2-r_1}{L_2},
+$$
+
+equivalently expansion/canonical-area-momentum continuity.  The geometric
+closing boost $b_1$ does not impose this condition.
 
 The $\kappa$ and $\kappa+\theta$ null-boundary representatives give the same
 spin-0 form when their initial and outer endpoint shifts are both included.
@@ -71,7 +104,7 @@ representative-dependent answer.  A concrete outer closing geometry is still
 needed to express $b_\pm$ in terms of specified wall normals or embeddings,
 but not to retain the ports abstractly.
 
-## What remains open before Stage 2 is reduced
+## Stage-2 handoff
 
 The spin-2 density convention is repaired: with
 $\widetilde\sigma^{AB}=\Omega\sigma^{AB}$ and bare measure
@@ -79,10 +112,11 @@ $d\lambda d^2x$, the potential contains the remaining factor
 $\Omega\widetilde\sigma^{AB}\delta\bar q_{AB}/2$.  The diagonal conformal chart
 checks only this kinematics.
 
-Stage 2 still requires the actual conformal-metric constraint pullback,
-matching $\bar q^+_{AB}|_{S_0}=\bar q^-_{AB}|_{S_0}$ once, retaining all cut
-terms, and computing the resulting rank/kernel.  Damour/spin-1 reduction and
-the full gauge quotient remain open.  Cross-focusing is not an extra algebraic
-compatibility condition on generic CK/Sachs data; it is only a test of whether
-the special shear-free/twist-free truncation used here is preserved by
-transverse vacuum evolution.
+Calculation 02 now performs the actual coupled conformal-metric/Raychaudhuri
+pullback, imposes
+$\bar q^+_{AB}|_{S_0}=\bar q^-_{AB}|_{S_0}$ once, and retains the induced
+outer-area port response.  Full gauge nondegeneracy, a concrete closing wall,
+the complete affine-to-area Reisenberger transformation, and the spin-1
+embedding block remain open.  Cross-focusing is not an extra algebraic
+compatibility condition on generic CK/Sachs data; it would only test an
+additional angularly restricted twist-free truncation.

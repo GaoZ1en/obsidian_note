@@ -1,4 +1,4 @@
-(* Exact checks for the endpoint-complete finite double-null spin-0 cell. *)
+(* Exact checks for Stage 1.1 and the coupled finite double-null spin-0+2 pullback. *)
 
 ClearAll[assertZero, assertTrue];
 assertZero[label_, expr_] := Module[{r = FullSimplify[expr]},
@@ -14,7 +14,7 @@ assertTrue[label_, expr_] := Module[{r = FullSimplify[expr]},
   ]
 ];
 
-Print["Finite double-null gravity: exact identity checks"];
+Print["Finite double-null gravity Stage 1.1/2: exact identity checks"];
 
 (* V0: exact matrix realization of the corrected projector. *)
 Clear[mu];
@@ -184,7 +184,157 @@ assertZero["V7 pure densitized-shear contraction",
 assertZero["V7 full bare-measure spin-2 density",
   Omega pureSpin2Contraction - 2 Omega phiDot deltaPhi];
 
+(* V8: shear-free Damour transport on the exact Raychaudhuri background. *)
+Clear[omega0, dTheta0];
+omegaDamour[lambda_] := (omega0 + lambda dTheta0/2)/F[lambda]^2;
+dTheta[lambda_] := dTheta0/F[lambda]^2;
+assertZero["V8 Damour solution",
+  D[omegaDamour[lambda], lambda] + theta[lambda] omegaDamour[lambda] -
+    dTheta[lambda]/2];
+assertZero["V8 twist-free restriction",
+  omegaDamour[lambda] /. {omega0 -> 0, dTheta0 -> 0}];
+
+(* V9: unrestricted composition mismatch and slope-matched pullback. *)
+directEmbeddedMatrix = {
+  {0, 0, 2},
+  {0, 0, 0},
+  {-2, 0, 0}
+};
+uSlopeLeft = {-1, 1, 0};
+uSlopeRight = {0, -1, 1};
+mismatchMatrix = compositionMatrix - directEmbeddedMatrix;
+expectedMismatchMatrix = 2 (Outer[Times, uSlopeLeft, uSlopeRight] -
+    Outer[Times, uSlopeRight, uSlopeLeft]);
+assertZero["V9 composition mismatch identity",
+  mismatchMatrix - expectedMismatchMatrix];
+assertTrue["V9 area matching alone leaves a rank-two mismatch",
+  MatrixRank[mismatchMatrix] === 2];
+assertZero["V9 slope matching kills the composition mismatch",
+  FullSimplify[
+    Transpose[compositionJacobian] . mismatchMatrix . compositionJacobian,
+    Assumptions -> {L1 > 0, L2 > 0}]];
+
+(* V10: a non-diagonal unimodular chart checks sigma^2 and V=Tr[A^2]/8. *)
+Clear[chi, chiDot];
+barqND = {
+  {Exp[2 phi], Exp[2 phi] chi},
+  {Exp[2 phi] chi, Exp[-2 phi] + Exp[2 phi] chi^2}
+};
+barqNDInv = FullSimplify[Inverse[barqND]];
+barqNDDot = D[barqND, phi] phiDot + D[barqND, chi] chiDot;
+qND = Omega barqND;
+qNDInv = FullSimplify[Inverse[qND]];
+qNDDot = OmegaDot barqND + Omega barqNDDot;
+BcovND = qNDDot/2;
+thetaND = FullSimplify[Tr[qNDInv . BcovND]];
+sigmaCovND = FullSimplify[BcovND - thetaND qND/2];
+sigmaContraND = FullSimplify[qNDInv . sigmaCovND . qNDInv];
+sigmaSquaredND = FullSimplify[Tr[sigmaCovND . sigmaContraND]];
+AND = FullSimplify[barqNDInv . barqNDDot];
+assertZero["V10 non-diagonal chart determinant",
+  Det[barqND] - 1];
+assertZero["V10 non-diagonal shear norm",
+  sigmaSquaredND - Tr[AND . AND]/4];
+assertZero["V10 Raychaudhuri potential coefficient",
+  sigmaSquaredND/2 - Tr[AND . AND]/8];
+
+(* V11: constant-potential finite mode checks the linearized Green map. *)
+Clear[amp, rInit, pInit, tau];
+rMode[t_] := rInit Cos[amp t] + pInit Sin[amp t]/amp;
+chiAmp[t_] := D[rMode[t], amp];
+assertZero["V11 linearized focusing residual",
+  FullSimplify[D[chiAmp[lambda], {lambda, 2}] +
+    amp^2 chiAmp[lambda] + 2 amp rMode[lambda],
+    Assumptions -> amp > 0]];
+greenAmp = FullSimplify[
+  -Integrate[(Sin[amp (lambda - tau)]/amp) rMode[tau] 2 amp,
+    {tau, 0, lambda}], Assumptions -> amp > 0];
+assertZero["V11 retarded Green identity",
+  FullSimplify[chiAmp[lambda] - greenAmp, Assumptions -> amp > 0]];
+
+(* V12: finite-dimensional curl of the complete diagonal-chart one-form. *)
+params = {rInit, pInit, amp};
+phiMode[t_] := amp t;
+thetaComponent[param_] := FullSimplify[
+  2 rMode[lambda]^2 D[phiMode[lambda], lambda]
+      D[phiMode[lambda], param] -
+    2 D[rMode[lambda], lambda] D[rMode[lambda], param]];
+expectedCurl[pi_, pj_] := FullSimplify[
+  2 (D[rMode[lambda], pi] D[D[rMode[lambda], lambda], pj] -
+      D[rMode[lambda], pj] D[D[rMode[lambda], lambda], pi]) +
+  4 rMode[lambda] D[phiMode[lambda], lambda]
+    (D[rMode[lambda], pi] D[phiMode[lambda], pj] -
+      D[rMode[lambda], pj] D[phiMode[lambda], pi]) +
+  2 rMode[lambda]^2
+    (D[D[phiMode[lambda], lambda], pi] D[phiMode[lambda], pj] -
+      D[D[phiMode[lambda], lambda], pj] D[phiMode[lambda], pi])];
+Do[
+  assertZero[
+    "V12 full reduced curl pair " <> ToString[i] <> "," <> ToString[j],
+    FullSimplify[
+      D[thetaComponent[params[[j]]], params[[i]]] -
+      D[thetaComponent[params[[i]]], params[[j]]] -
+      expectedCurl[params[[i]], params[[j]]],
+      Assumptions -> amp > 0]],
+  {i, 1, Length[params] - 1}, {j, i + 1, Length[params]}];
+
+(* V12b: non-diagonal profile checks the A B wedge B matrix term. *)
+Clear[ampND, skewND];
+qProfileND = barqND /. {phi -> ampND lambda, chi -> skewND lambda};
+qProfileNDInv = FullSimplify[Inverse[qProfileND]];
+AProfileND = FullSimplify[qProfileNDInv . D[qProfileND, lambda]];
+rProfileND = rInit + pInit lambda;
+paramsND = {rInit, pInit, ampND, skewND};
+BProfileND[param_] := FullSimplify[qProfileNDInv . D[qProfileND, param]];
+thetaComponentND[param_] := FullSimplify[
+  rProfileND^2 Tr[AProfileND . BProfileND[param]]/4 -
+    2 D[rProfileND, lambda] D[rProfileND, param]];
+expectedCurlND[pi_, pj_] := Module[
+  {ri, rj, bi, bj},
+  ri = D[rProfileND, pi];
+  rj = D[rProfileND, pj];
+  bi = BProfileND[pi];
+  bj = BProfileND[pj];
+  FullSimplify[
+    2 (ri D[rj, lambda] - rj D[ri, lambda]) +
+    rProfileND (ri Tr[AProfileND . bj] -
+        rj Tr[AProfileND . bi])/2 +
+    rProfileND^2 Tr[
+      D[bi, lambda] . bj - D[bj, lambda] . bi +
+      AProfileND . (bi . bj - bj . bi)]/4]
+  ];
+Do[
+  assertZero[
+    "V12b non-diagonal curl pair " <> ToString[i] <> "," <> ToString[j],
+    FullSimplify[
+      D[thetaComponentND[paramsND[[j]]], paramsND[[i]]] -
+      D[thetaComponentND[paramsND[[i]]], paramsND[[j]]] -
+      expectedCurlND[paramsND[[i]], paramsND[[j]]]]],
+  {i, 1, Length[paramsND] - 1}, {j, i + 1, Length[paramsND]}];
+Do[
+  assertZero[
+    "V12b physical commutator trace pair " <>
+      ToString[i] <> "," <> ToString[j],
+    FullSimplify[Tr[AProfileND .
+      (BProfileND[paramsND[[i]]] . BProfileND[paramsND[[j]]] -
+       BProfileND[paramsND[[j]]] . BProfileND[paramsND[[i]]])]]],
+  {i, 1, Length[paramsND] - 1}, {j, i + 1, Length[paramsND]}];
+
+(* V13: shared-corner diagonal pullback has one conformal coordinate. *)
+sharedConformalJacobian = {{1}, {1}};
+cornerDifference = {{1, -1}};
+assertZero["V13 shared conformal corner constraint",
+  cornerDifference . sharedConformalJacobian];
+assertZero["V13 shared conformal corner has rank one",
+  MatrixRank[sharedConformalJacobian] - 1];
+
+(* V14: representative endpoint identity is independent of shear. *)
+Clear[rr];
+assertZero["V14 generic Omega theta endpoint derivative",
+  D[rr[lambda]^2, lambda] -
+    2 rr[lambda] D[rr[lambda], lambda]];
+
 Print["PASS all declared identities"];
-Print["NOT PROVED: preservation of the spin-0 truncation, vacuum development,"];
-Print["NOT PROVED: Stage-2 reduction, full gauge nondegeneracy, completeness,"];
-Print["NOT PROVED: surjectivity, continuum topology, or a reduced action."];
+Print["NOT PROVED: full gauge nondegeneracy, a concrete closing wall,"];
+Print["NOT PROVED: full Reisenberger equivalence, spin-1 reduction,"];
+Print["NOT PROVED: completeness, surjectivity, or continuum topology."];

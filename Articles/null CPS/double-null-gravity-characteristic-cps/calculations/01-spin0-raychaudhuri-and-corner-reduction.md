@@ -1,13 +1,16 @@
-# 01 — Endpoint-complete spin-0 finite cell and outer ports
+# 01 — Endpoint-complete spin-0 finite cell, Damour embedding, and outer ports
 
 ## 1. Decisive verdict
 
-**Correct under the declared area/boost outer-port policy:** the affine,
-shear-free, twist-free spin-0 finite cell has an endpoint-complete
-presymplectic form.  With both outer ports retained it is pointwise rank six
-and has no kernel in this truncated fixed-gauge sector.  With fixed outer
-areas and the associated port momenta quotiented, it reduces to the single
-initial pair $(\Omega_0,-m_0)$.
+**Correct under the declared area/boost outer-port policy and fixed-generator
+pullback:** the affine, shear-free spin-0 block has an endpoint-complete
+presymplectic form and embeds consistently into the Raychaudhuri--Damour null
+constraints.  It is not a generic twist-free truncation: $\omega_A$ is carried
+as dependent Damour data and may be nonzero.  With both outer ports retained
+the displayed spin-0 block is pointwise rank six and has no kernel in this
+truncated fixed-gauge sector.  With fixed outer areas and the associated port
+momenta quotiented, it reduces to the single initial pair
+$(\Omega_0,-m_0)$.
 
 The finite-length terms proportional to
 $L_\pm\delta\Omega_0\wedge\delta\theta_{\pm0}$ are outer-port structure, not
@@ -15,16 +18,16 @@ an obstruction to generic characteristic data.  The result remains tied to
 the selected null-potential representative until the port variables are
 transformed together with any $dY$ shift.
 
-## 2. Shear-free affine constraint
+## 2. Shear-free affine constraints: Raychaudhuri and Damour
 
 On each branch impose
 
 $$
-\sigma^\pm_{AB}=0,\qquad \omega_A=0,\qquad \kappa_\pm=0,
+\sigma^\pm_{AB}=0,\qquad \kappa_\pm=0,
 $$
 
-but do not linearize the vacuum Raychaudhuri equation.  With the definitions
-of calculation 00,
+but do **not** impose $\omega_A=0$ along the sheet.  Do not linearize the
+vacuum Raychaudhuri equation.  With the definitions of calculation 00,
 
 $$
 \partial_{\lambda_\pm}\theta_\pm
@@ -56,6 +59,73 @@ $$
 The $F_\pm>0$ condition is the finite caustic-free domain.  Direct
 differentiation verifies both equations and the initial values.  No
 small-$\theta$ or small-length expansion is used.
+
+The second null constraint must also be respected.  In the conventions of
+Ciambelli--Klinger, arXiv:2607.07785v1, eq. (18), the four-dimensional vacuum
+Damour equation is
+
+$$
+(\mathcal L_{\ell_\pm}+\theta_\pm)\omega^\pm_A
+=D_A\!\left(\kappa_\pm+\frac12\theta_\pm\right)
+-D_B\sigma^{\pm B}{}_A.
+\tag{2.4}
+$$
+
+Here their horizontal H\'aj\'i\v{c}ek form $\pi_A$ is the present $\omega_A$
+after the normal frame declared in calculation 00 is chosen.  Thus the affine,
+shear-free equation is
+
+$$
+\boxed{
+(\partial_{\lambda_\pm}+\theta_\pm)\omega^\pm_A
+=\frac12D_A\theta_\pm.}
+\tag{2.5}
+$$
+
+The sign and factor in (2.5) follow from the positive $D_A\mu$ term in the
+source, with $\mu=\kappa+\theta/2$ in two transverse dimensions.  On the
+Raychaudhuri solution (2.3), generator labels are fixed and
+
+$$
+D_A\theta_\pm
+=\frac{D_A\theta_{\pm0}}{F_\pm^2}.
+\tag{2.6}
+$$
+
+Since the integrating factor for (2.5) is $F_\pm^2$, the exact solution is
+
+$$
+\boxed{
+\omega^\pm_A(\lambda_\pm,x)
+=\frac{\omega_{A0}(x)
++\frac12\lambda_\pm D_A\theta_{\pm0}(x)}
+{F_\pm(\lambda_\pm,x)^2}.}
+\tag{2.7}
+$$
+
+At the common corner $\omega_{A0}$ is specified once; (2.7) transports it
+separately along the two sheets.  The current pullback fixes generator labels
+and embeddings, $\delta\ell_\pm^A=0$.  Consequently the spin-1 term
+$-\bar\eta_{\pm A}\delta\ell_\pm^A$ in calculation 00 vanishes even when
+$\omega_A\neq0$.  Equations (3.1)--(9.2) below therefore remain the extracted
+spin-0 block, but they are no longer described as a globally twist-free
+sector.
+
+In particular,
+
+$$
+\omega_A(\lambda)=0\quad\hbox{for every }\lambda
+$$
+
+requires at least
+
+$$
+\omega_{A0}=0,\qquad D_A\theta_0=0
+\tag{2.8}
+$$
+
+in this affine, zero-shift, fixed-generator gauge.  These angular restrictions
+are not generic CIVP data.
 
 ## 3. Pullback of the sheet bulk potential
 
@@ -357,26 +427,65 @@ $$
 \tag{8.1}
 $$
 
-The common affine Raychaudhuri solution makes $r$ linear, hence
+Matching the middle area identifies $r_1$ but is not sufficient.  Before any
+slope condition is imposed, the difference from the direct segment is
 
 $$
-r_1=\frac{L_2r_0+L_1r_2}{L_1+L_2}.
+\boxed{
+(\Omega_{01}^{(0)}+\Omega_{12}^{(0)})-\Omega_{02}^{(0)}
+=2C_G\,\delta(r_1-r_0)\wedge\delta(r_2-r_1).}
 \tag{8.2}
 $$
 
-Pulling (8.1) to (8.2) gives
+The common affine Raychaudhuri solution makes $r$ linear.  Smooth dynamical
+matching at the middle cut therefore requires
+
+$$
+\boxed{
+\frac{r_1-r_0}{L_1}=\frac{r_2-r_1}{L_2},}
+\tag{8.3}
+$$
+
+equivalently continuity of $r'$ and, because $r_1$ is already matched and
+positive, continuity of $\theta=2r'/r$.  Only on (8.3) does one have
+
+$$
+r_1=\frac{L_2r_0+L_1r_2}{L_1+L_2}.
+\tag{8.4}
+$$
+
+Pulling (8.1) to (8.4) gives
 
 $$
 \Omega_{01}^{(0)}+\Omega_{12}^{(0)}
 =2C_G\delta r_0\wedge\delta r_2
 =\Omega_{02}^{(0)}.
-\tag{8.3}
+\tag{8.5}
 $$
 
 The outgoing port potential of the first segment and the incoming port
 potential of the second carry opposite incidence signs; they cancel after
-matching $(\Omega_1,b_1)$ once.  This proves sheetwise affine composition for
-the present truncation.  It is not a full nonlinear double-null spacetime-cell
+matching $(\Omega_1,b_1)$ once.  That geometric port cancellation does not
+impose (8.3).  The signed boost $b_1$ records the relative normals of the null
+sheet and its closing boundary.  By contrast, the project defines
+
+$$
+\Pi_{\Omega}:=\kappa+\frac12\theta,
+\qquad
+\Theta_N^{(0)}=-C_G\int\Pi_\Omega\,\delta\Omega,
+\tag{8.6}
+$$
+
+so the canonical coefficient conjugate to $\Omega$ is
+$p_\Omega=-\Pi_\Omega$.  In affine gauge
+$\Pi_\Omega=r'/r$, and it is this dynamical momentum, not $b$, whose
+continuity implements (8.3).  One may therefore use a richer characteristic
+port containing both $(\Omega,p_\Omega)$ and the geometric boost $b$, but no
+uniqueness of that port completion is claimed.
+
+Thus composition is proved only after area plus dynamical
+slope/expansion-momentum matching.  It is not proved by area/boost-port
+matching alone, and it is not a full nonlinear double-null spacetime-cell
 composition theorem.
 
 ## 9. Representative and corner ambiguity checks
@@ -410,24 +519,27 @@ $$
 
 Their sum vanishes on each sheet before or after the Raychaudhuri pullback.
 Consequently both representatives give exactly the same (5.3), (7.2), and
-(8.3) when all endpoint and joint shifts are made consistently.
+(8.5) when all endpoint and joint shifts are made consistently.
 
 ## 10. Verification and claim boundary
 
-**Verified:** exact Raychaudhuri and area solutions; isolated sheet pullback;
-conversion to initial/outer areas; initial endpoint plus joint cancellation;
-the rank-six extended matrix and rank-two fixed-area pullback; sheetwise
-composition; and complete $\kappa$ versus $\kappa+\theta$ representative
-equivalence.
+**Verified:** exact Raychaudhuri and area solutions; the shear-free Damour
+transport and solution; isolated sheet pullback; conversion to initial/outer
+areas; initial endpoint plus joint cancellation; the rank-six extended matrix
+and rank-two fixed-area pullback; the unrestricted composition mismatch and
+composition after slope matching; and complete $\kappa$ versus
+$\kappa+\theta$ representative equivalence.
 
 **Assumptions:** four-dimensional vacuum sheet equations; fixed generator
 labels, embeddings, affine parameters, and lengths; $\sigma^\pm_{AB}=0$,
-$\omega_A=0$; $F_\pm>0$; area/boost outer-port polarization.
+$F_\pm>0$; area/boost outer-port polarization.  The transported $\omega_A$
+is allowed to be nonzero, while $\delta\ell_\pm^A=0$ removes its spin-1
+potential from the displayed block.
 
-**Not verified:** that the shear-free/twist-free truncation is preserved by
-transverse vacuum evolution; the Damour sector; a specified geometric closing
-boundary at $S_\pm$; or the full gravitational gauge quotient.  In the generic
-CK/Sachs characteristic initial-value problem, cross-focusing is not an extra
-algebraic compatibility condition on otherwise free initial data.  Here it is
-only a future check of whether this special spin-0 truncation closes under
+**Not verified:** a specified geometric closing boundary at $S_\pm$; a
+spin-1 symplectic reduction with varying embeddings; or the full
+gravitational gauge quotient.  In the generic CK/Sachs characteristic
+initial-value problem, cross-focusing is not an extra algebraic compatibility
+condition on otherwise free initial data.  Here it would only test whether an
+additional angularly restricted twist-free truncation is preserved under
 transverse evolution.

@@ -1,5 +1,70 @@
 # Verification Run Log
 
+## 2026-08-30 — Stage-1.1 repair and coupled Stage-2 pullback
+
+Working directory:
+
+```text
+Articles/null CPS/double-null-gravity-characteristic-cps
+```
+
+Command:
+
+```text
+wolframscript -file scripts/spin0_and_spin2_checks.wl
+```
+
+Result: exit code `0`; every declared V0--V14 check passed.
+
+New decisive checks:
+
+- V8 verifies
+  $\omega_A=(\omega_{A0}+\lambda D_A\theta_0/2)/F^2$ against
+  $(\partial_\lambda+\theta)\omega_A=D_A\theta/2$ and records the
+  angular restriction needed for a globally vanishing $\omega_A$;
+- V9 verifies the unrestricted composition mismatch
+  $2C_G\delta(r_1-r_0)\wedge\delta(r_2-r_1)$, shows that it has rank two
+  before dynamical matching, and shows that affine slope matching kills it;
+- V10 verifies $\sigma^2=\operatorname{tr}(A^2)/4$ and
+  $V=\operatorname{tr}(A^2)/8$ in a non-diagonal two-function unimodular
+  chart;
+- V11 verifies the linearized focusing residual and the retarded Green formula
+  for the finite mode $\phi=a\lambda$, $V=a^2$;
+- V12 verifies the field-space curl of the complete one-form
+  $2r^2\phi'\delta\phi-2r'\delta r$ for every pair among three independent
+  truncation parameters;
+- V12b verifies the general matrix curl, including the matrix
+  $A\,B\wedge B$ term, in a four-parameter non-diagonal conformal profile,
+  and separately verifies that its commutator trace vanishes on the physical
+  symmetric-metric variations;
+- V13 verifies that the diagonal pullback of two endpoint conformal values has
+  one shared corner direction;
+- V14 verifies the generic identity $\Omega\theta=(r^2)'$, so the
+  $\kappa$ versus $\kappa+\theta$ endpoint shift is not tied to the
+  shear-free solution.
+
+Analytic source check: Ciambelli--Klinger arXiv:2607.07785v1 eq. (18) gives
+$(\mathcal L_\ell+\theta)\omega_A
+=D_A(\kappa+\theta/2)-D_B\sigma^B{}_A$ in two transverse dimensions, fixing
+the positive sign and factor used by V8.  Reisenberger arXiv:1211.3880
+eqs. (100), (105), and (117)--(118) were used only after the project pullback.
+They confirm the conformal coefficient but show that
+$n_s=(d\lambda_s/dv_s)\ell_s$, that the isolated corner blocks have an
+unresolved relative sign, and that the field-dependent transformation also
+produces a shared-corner conformal endpoint term.  Full equivalence is
+therefore kept open.
+
+Assumptions: four-dimensional vacuum; smooth positive unimodular conformal
+profiles; finite caustic-free intervals; affine zero-shift generators; fixed
+labels, embeddings, lengths, and normal frame; selected HF/LMPS
+representative; Stage-1 abstract area/boost outer ports.
+
+Not verified by this run: functional-analytic continuity on a completed
+profile space; a concrete closing wall or traceless wall momentum; full
+field-dependent equivalence with Reisenberger's area gauge; the spin-1
+embedding pullback; full gravitational gauge nondegeneracy; completeness,
+surjectivity, or continuum topology.
+
 ## 2026-08-30 — endpoint-complete Stage-1 repair
 
 Working directory:
