@@ -142,42 +142,46 @@ $$
 
 ## Stage-3 gate
 
-The nonredundant Stage-3 extended coordinates are
+The corrected nonredundant Stage-3 extended coordinates are
 
 $$
-(s_+^A,s_-^A,\widetilde\tau_{+A},\widetilde\tau_{-A};
+(s_+^A,s_-^A,\pi_+,\pi_-;
 \Omega_0,\lambda_R,\bar h_{AB}),
 $$
 
 with
 
 $$
-\widetilde\tau_{+A}=\Omega_0(D_A\lambda_R-\tau_{vA}),
+\pi_{+i}\partial_A s_+^i
+=\Omega_0(D_A\lambda_R-\tau_{vA}),
 \qquad
-\widetilde\tau_{-A}=\Omega_0(D_A\lambda_R+\tau_{vA}),
+\pi_{-i}\partial_A s_-^i
+=\Omega_0(D_A\lambda_R+\tau_{vA}),
 $$
 
 and
 
 $$
-\tau_{vA}=\frac{(s_-^*\widetilde\tau_-)_A
--(s_+^*\widetilde\tau_+)_A}{2\Omega_0},
+\tau_{vA}=\frac{p_{-A}-p_{+A}}{2\Omega_0},
 \qquad
 \widehat\omega_A=\frac12\left[
 \tau_{vA}-D_A\log|\mathcal B_+/\mathcal B_-|\right].
 $$
 
+$\pi_s$ has type
+$\Gamma(s_s^*T^*S_{sL}\otimes\operatorname{Dens}(S_0))$ and
+$p_{sA}=\pi_{s i}\partial_A s_s^i$ contains no additional determinant.
 $\widehat\omega_A$ is derived, not an additional coordinate.  The constraint
-is the one-form equation
+is the source one-form-density equation
 
 $$
-(s_+^*\widetilde\tau_+)_A+(s_-^*\widetilde\tau_-)_A
+p_{+A}+p_{-A}
 =2\Omega_0D_A\lambda_R.
 $$
 
-Calculation 05 has now derived its diagonal moment-map role and selected the
-opposite-boost quotient; those are Stage-3.0 results, not assumptions of this
-cleanup.
+Calculation 05 and the Stage-3.1 audit derive its full constrained
+bulk-plus-corner moment-map role.  Opposite boosts are a declared quotient
+policy rather than a proved closing-wall kernel.
 
 ## Verification boundary
 

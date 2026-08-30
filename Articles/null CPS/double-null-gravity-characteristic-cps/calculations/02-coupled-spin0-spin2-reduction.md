@@ -695,7 +695,8 @@ while the moving lower limit generates the shared-corner conformal term in
 Reisenberger equations (106), (116), and (118).  Fixing endpoint maps does not
 remove that term.  Thus there is no remaining corner-sign discrepancy.
 
-Reisenberger's endpoint maps $s_A^i$ pair with twist combinations
+Reisenberger's endpoint maps $s_A^i$ pair with the source-density/target-
+covector coefficients $\pi_{Ai}$, printed there as
 $\widetilde\tau_{Ai}$.  They are absent from (6.3) because the project fixes
 generator and endpoint embeddings.  This is a gauge/polarization restriction,
 not evidence that $\widehat\omega_A=0$.  Conversely the abstract closing-normal
@@ -769,9 +770,11 @@ $$
 
 Thus $(\bar q^\pm,\Omega_0,\theta_{\pm0},m_0,\widehat\omega_A)$ determine the
 transported branch-adapted $\omega_A^\pm$.  Calculation 04 fixes the gate:
-retain Reisenberger's endpoint maps $s_\pm^A$ and use
-$\widetilde\tau_{\pm A}$ as their conjugates, subject to the generator-chart
-constraint.  CK's $\pi_A$ remains rigging-convention dependent and is not
+retain Reisenberger's endpoint maps $s_\pm^A$ and use the canonical source
+densities $\pi_\pm$ as their conjugates, subject to the generator-chart
+constraint.  These $\pi_\pm$ are Reisenberger's printed
+$\widetilde\tau_{\pm A}$ coefficients, not target-cut densities.  CK's
+$\pi_A$ remains rigging-convention dependent and is not
 used as an unqualified synonym for $\widehat\omega_A$.
 
 A short Stage-3 program is therefore:
@@ -783,6 +786,6 @@ A short Stage-3 program is therefore:
    $\delta\ell_s^A\neq0$;
 3. pull back $-\bar\eta_{sA}\delta\ell_s^A$ and compare the resulting
    endpoint-map/twist block with Reisenberger's
-   $(s_A^i,\widetilde\tau_{Ai})$ sector.
+   $(s_A^i,\pi_{Ai})$ source-density sector.
 
 No quantum or operator-algebraic construction enters this gate.

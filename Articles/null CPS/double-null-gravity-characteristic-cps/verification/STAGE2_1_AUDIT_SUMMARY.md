@@ -159,7 +159,9 @@ metric.  They are closing-wall/polarization dependent.
 
 **Stage 3 is ready only in the controlled polarization fixed by Stage 2.2:**
 retain $\widehat\omega_A=\tau_{\ell A}/2$, endpoint maps $s_\pm^A$, and their
-Reisenberger momenta $\widetilde\tau_{\pm A}$.  It has not been started.
+canonical source-density momenta $\pi_\pm$ (Reisenberger's printed
+$\widetilde\tau_{\pm A}$ coefficients).  It has not been started at the
+Stage-2.1 boundary; Stage 3.1 now supersedes this historical gate.
 
 ## Verification
 

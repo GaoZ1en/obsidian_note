@@ -36,8 +36,10 @@ assertZero[
   "V26 dimensionless Jacobian integral shift",
   Integrate[-cRef v, {v, 1, vEnd}] + cRef (vEnd^2 - 1)/2];
 
-(* V27: pullback of a covector density is functorial for invertible linear
-   endpoint maps. *)
+(* V27: the ordinary tensor pullback of an optional target-side covector
+   density to a common-cut one-form density is functorial for
+   orientation-preserving invertible linear endpoint maps.  This is p, not
+   the source-density/target-covector canonical momentum pi. *)
 Clear[a, b, c, d, e, f, g, h, t1, t2];
 mapOne = {{a, b}, {c, d}};
 mapTwo = {{e, f}, {g, h}};
@@ -46,7 +48,8 @@ directPullback = Det[mapTwo . mapOne] Transpose[mapTwo . mapOne] .
   targetCovector;
 iteratedPullback = Det[mapOne] Transpose[mapOne] .
   (Det[mapTwo] Transpose[mapTwo] . targetCovector);
-assertZero["V27 endpoint-map pullbacks compose", directPullback - iteratedPullback];
+assertZero["V27 optional target covector-density pullbacks compose",
+  directPullback - iteratedPullback];
 assertZero["V27 pullback determinant is multiplicative",
   Det[mapTwo . mapOne] - Det[mapTwo] Det[mapOne]];
 
@@ -161,7 +164,7 @@ boostTau = 2 hatW + logRatioGradient;
 boostTheta = {0, 0, -boostTau/2, boostTau/2};
 boostMatrix = curlMatrix[boostTheta, boostVars];
 boostVector = {boostGradient, -2 boostGradient, 0, 0};
-assertZero["V31 opposite boost is a kernel of invariant reconstruction",
+assertZero["V31 opposite boost is invisible in the reconstructed corner block",
   boostVector . boostMatrix];
 
 (* V32: opposite interface incidences cancel after diagonal cotangent

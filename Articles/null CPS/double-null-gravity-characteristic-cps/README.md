@@ -3,12 +3,11 @@
 ## Direct verdict
 
 **Correct under the classical, caustic-free, selected-HF-representative
-conditions stated in calculations 04--05:** Stage 2.2 closes the
-fixed-endpoint affine-to-area transformation and independent spin-$0+2$ bulk
-reduction.  Stage 3.0 derives the varying-endpoint spin-1 cut block, proves
-the generator-chart moment map after the Stage-2 Damour bulk restriction,
-chooses the opposite-boost quotient, and checks abstract spin-1 interface
-composition.  The fixed-affine bulk data are
+conditions stated in calculations 04--05:** Stage 3.1 closes the endpoint
+momentum type, fixed smooth invertible $f,g$ interface composition, and the
+diagonal generator-chart moment map on the Raychaudhuri-reconstructed,
+Damour-restricted full retained characteristic form.  The fixed-affine bulk
+data are
 
 $$
 (\bar q^+_{AB}(u,x),\bar q^-_{AB}(v,x);
@@ -20,16 +19,20 @@ variables, with $r_\pm=\sqrt{\Omega_\pm}$ reconstructed by a Green map from
 $\bar q^\pm$.  The nonredundant extended corner coordinates are
 
 $$
-(s_+^A,s_-^A,\widetilde\tau_{+A},\widetilde\tau_{-A};
+(s_+^A,s_-^A,\pi_{+},\pi_{-};
 \Omega_0,\lambda_R,\bar h_{AB}),
 $$
 
-with $\widehat\omega_A$ reconstructed rather than counted again.  This is not
-yet a representative-independent full gravitational CPS: the area chart does
-not cross $\theta_s=0$, the physical closing-wall port has not been derived,
-and the full functional gauge quotient/nondegeneracy remain open.  A variable
-outer conformal metric does **not** by itself require an independent shape
-port; such a pair is closing-wall/polarization dependent.
+where
+$\pi_s\in\Gamma(s_s^*T^*S_{sL}\otimes\operatorname{Dens}(S_0))$ and
+$p_{sA}=\pi_{s i}\partial_A s_s^i$ with no extra determinant.
+$\widehat\omega_A$ is reconstructed rather than counted again.  This is not a
+representative-independent full gravitational CPS: the area chart does not
+cross $\theta_s=0$, the physical closing-wall port has not been derived, and
+the full functional gauge quotient/nondegeneracy remain open.  Opposite
+boosts are a declared normal-frame gauge policy, not a proved kernel of the
+unspecified closing-wall form.  The classical calculation chain is now
+frozen pending a novelty/manuscript decision or a genuinely new obstruction.
 
 What is established is precise:
 
@@ -73,20 +76,27 @@ What is established is precise:
 - `calculations/05-stage3.0-endpoint-maps-twist-and-corner-reduction.md`
   derives
   $\Theta^{(1)}_{S_0}=(C_G/2)\sum_s\int
-  \widetilde\tau_{s i}\boldsymbol\delta s_s^i$ from the HF null potential and
-  Damour constraint;
-- after the Stage-2 Damour bulk restriction, the generator-chart constraint
-  is the moment map for diagonal $\mathrm{Diff}(S_0)$ of the remaining corner
-  block; quotienting it leaves two transverse relative endpoint-map pairs;
-- opposite boosts are quotiented as proper normal-frame gauge, and the
-  abstract spin-1 interface potential cancels under diagonal cotangent
-  matching.
+  \langle\pi_s,\boldsymbol\delta s_s\rangle$ from the HF null potential and
+  Damour constraint, including the HF cut-term and compensator-independence
+  lemmas;
+- on the reconstructed and Damour-restricted characteristic surface, the
+  combined bulk, corner, and matched-port contraction is
+  $\iota_{X_\xi}\Omega_{\rm total}=\boldsymbol\delta H_\xi$ with
+  $H_\xi=(C_G/2)\int\xi^A
+  (p_{+A}+p_{-A}-2\Omega_0D_A\lambda_R)$;
+- fixed invertible incidence maps obey
+  $s_2\circ g=f\circ s_1$ and
+  $\pi_1=(Df)^*g^*\pi_2$, which cancels both oriented endpoint Liouville
+  forms and their curls and is functorial under composition;
+- after the declared diagonal reduction, two relative
+  endpoint-map/embedding/port pairs remain.  They are not asserted to be
+  diffeomorphism-invariant physical pairs.
 
 ## Fixed scope
 
 The project is classical.  It concerns a caustic-free finite double-null cross
 $X=N_+\cup N_-$ in four-dimensional vacuum Einstein gravity.  Generator
-labels and embeddings are fixed in the Stage-2 bulk chart; Stage 3.0 varies
+labels and embeddings are fixed in the Stage-2 bulk chart; Stage 3.1 varies
 their endpoint maps in the corner sector.  Affine Damour transport has
 $\kappa_\pm=0$.  No quantization, Weyl algebra, channel, Stinespring, or
 post-CIVP construction belongs here.
@@ -108,24 +118,34 @@ post-CIVP construction belongs here.
   transformation, outer-endpoint audit, independent-data reduction, CK
   dictionary, and Stage-3 gate.
 - `calculations/05-stage3.0-endpoint-maps-twist-and-corner-reduction.md`:
-  HF-to-endpoint derivation, Damour transport, moment map, boost quotient,
-  rank/kernel, interface composition, and Reisenberger regression.
+  Stage-3.0/3.1 HF-to-endpoint derivation, Damour transport, full constrained
+  moment map, boost policy, rank/kernel, general interface composition, and
+  Reisenberger regression.
 - `verification/STAGE1_AUDIT_SUMMARY.md`: concise proved/conditional/open
   verdict.
 - `verification/STAGE2_1_AUDIT_SUMMARY.md`: concise Stage-2.1 answer sheet and
   record of the superseded Stage-2.1 boundary.
 - `verification/STAGE2_2_AUDIT_SUMMARY.md`: authoritative Stage-2.2 answer
   sheet and Stage-3 gate.
-- `verification/STAGE3_0_AUDIT_SUMMARY.md`: authoritative Stage-3.0 verdict
-  and remaining claim boundary.
+- `verification/STAGE3_0_AUDIT_SUMMARY.md`: historical Stage-3.0 verdict as
+  superseded by the Stage-3.1 repairs.
+- `verification/STAGE3_1_AUDIT_SUMMARY.md`: Stage-3.1 closure verdict and
+  assumptions.
+- `verification/FINAL_CLASSICAL_THEOREM_LEDGER.md`: frozen authoritative
+  classical theorem, composition, gauge, and open-item ledger.
+- `verification/CLASSICAL_NOVELTY_AUDIT.md`: component-by-component focused
+  literature and manuscript-direction audit.
 - `verification/CLAIM_LEDGER.md`: authoritative claim status.
 - `verification/RUN_LOG.md`: executed command, assumptions, result, and
   evidence boundary.
 - `scripts/spin0_and_spin2_checks.wl`,
   `scripts/stage21_corner_area_composition_checks.wl`,
   `scripts/stage22_hardening_checks.wl`, and
-  `scripts/stage30_endpoint_twist_checks.wl`: executable exact finite-mode
-  checks.
+  `scripts/stage30_endpoint_twist_checks.wl`,
+  `scripts/stage31_classical_closure_checks.wl`: executable exact finite-mode
+  checks V0--V41.
+- `scripts/stage31_xact_residuals.wl`: independent xAct residual check for
+  the tracefree Lie and cut integration-by-parts identities.
 - `scripts/README.md`: command and evidence boundary.
 
 ## Source discipline

@@ -1,132 +1,119 @@
 # Stage-3.0 endpoint-map/twist audit summary
 
-## Direct verdict
+## Superseded verdict
 
-**Correct under the declared classical, caustic-free, selected-HF-representative
-conditions:** the endpoint-map/twist potential is derived from the
-gravitational null potential; after the Stage-2 bulk is restricted by the
-Damour Ward identity, the generator-chart constraint is the moment map for
-diagonal relabelling of the remaining corner block; and two transverse
-relative endpoint-map pairs survive the declared reductions.  The opposite
-normal boost is quotiented as proper gauge.  The abstract spin-1 interface
-block composes under diagonal cotangent matching.
+**Stage 3.0 by itself was not closed.**  Its HF endpoint reduction, Damour
+transport, and local corner rank calculation were valid, but three claims
+required Stage-3.1 repair:
 
-This is not a full reduced gravitational characteristic CPS.  A concrete
-closing-wall action, the complete functional diffeomorphism quotient, and
-full spin-$0+1+2$ nondegeneracy remain open.
+1. one symbol ambiguously denoted both a source density and a target density;
+2. interface cancellation had only been checked in the identity incidence
+   chart;
+3. the diagonal moment map had only been stated for the remaining corner
+   block, not for the combined retained bulk-plus-corner characteristic form.
 
-## Endpoint potential
+`verification/STAGE3_1_AUDIT_SUMMARY.md` and
+`verification/FINAL_CLASSICAL_THEOREM_LEDGER.md` are authoritative.  This
+file records the corrected disposition of the Stage-3.0 claims.
 
-For each branch the HF term is
+## Claims retained after correction
 
-$$
--C_G\int_{N_s}\Omega\bar\eta_A
-\boldsymbol\delta L^A.
-$$
-
-Straightening the perturbed generator with a tangential compensator gives
-$\boldsymbol\delta L^A=-\partial_\lambda\xi^A$.  Integration by parts leaves
-an initial-cut term and a bulk term.  The latter cancels the tangential
-spin-$0+2$ variation by the Damour constraint.  With
+The selected HF representative and a tangential compensator give
 
 $$
-\bar\eta_{sA0}=-\frac{(s_s^*\widetilde\tau_s)_A}{2\Omega_0},
-$$
-
-the surviving cut potential is
-
-$$
-\boxed{
 \Theta_{S_0}^{\rm ext}
-=C_G\int_{S_0}\left[-\Omega_0\boldsymbol\delta\lambda_R
-+\frac12\sum_s\widetilde\tau_{s i}
-\boldsymbol\delta s_s^i\right]d^2x.}
+=C_G\int_{S_0}\left[
+-\Omega_0\boldsymbol\delta\lambda_R
++\frac12\sum_{s=\pm}
+\langle\pi_s,\boldsymbol\delta s_s\rangle
+\right],
 $$
 
-Here $\widetilde\tau_{s i}d^2x$ is the source-density representative
-$\pi_{s i}d^2x$.  In invariant common-cut variables the same term is
-$(C_G/2)\int_{S_0}p_{sA}v_s^A d^2x$, with
-$p_s=s_s^*\widetilde\tau_s$ and
-$v_s=(ds_s)^{-1}\boldsymbol\delta s_s$.
-
-Thus the sign and coefficient $+C_G/2=1/(16\pi G)$ are derived from HF,
-endpoint incidence, and the normal/twist dictionary.  Reisenberger is only a
-regression target.
-
-## Constraint and surviving pairs
-
-Writing $p_{sA}=(s_s^*\widetilde\tau_s)_A$,
+where the canonical object is
 
 $$
-\mathcal C_A=p_{+A}+p_{-A}-2\Omega_0D_A\lambda_R=0.
-$$
-
-For the active diagonal relabelling convention used in calculation 05,
-
-$$
-\iota_{X_\xi}\Omega_{S_0}^{\rm ext}
-=\boldsymbol\delta\left[
-\frac{C_G}{2}\int_{S_0}\xi^A\mathcal C_A\right].
-$$
-
-Therefore, on the Damour-restricted Stage-2 bulk, $\mathcal C_A$ is the
-moment map of the remaining corner block.  This is not an off-shell bulk
-moment-map theorem.  The local extended block has rank ten.  On the
-two-component constraint surface it has rank six and two diagonal-relabelling
-kernel directions; quotienting them leaves the area/normal pair and two
-transverse relative spin-1 pairs.
-
-## Twist, Damour transport, and boost policy
-
-The nonredundant reconstruction is
-
-$$
-\tau_{vA}=\frac{p_{-A}-p_{+A}}{2\Omega_0},
+\pi_s\in\Gamma\!\left(
+s_s^*T^*S_{sL}\otimes\operatorname{Dens}(S_0)
+\right),
 \qquad
-\widehat\omega_A=\frac12\left[
-\tau_{vA}-D_A\log|\mathcal B_+/\mathcal B_-|\right].
+p_{sA}=\pi_{s i}\partial_A s_s^i.
 $$
 
-Each affine branch obeys
+Reisenberger's printed $\widetilde\tau_{Ai}$ is identified with this source
+coefficient $\pi_{Ai}$.  A target covector density, if wanted, is the distinct
+$\widehat\tau_s$ and obeys locally
+$\pi_{s i}=|\det Ds_s|\widehat\tau_{s i}\circ s_s$.
+
+The Damour transport remains
 
 $$
 \omega_A^{(s)}(\lambda_s)
 =\frac{\Omega_0\omega_{A0}^{(s)}
-+\int_0^{\lambda_s}\Omega_sJ_A^{(s)}d\tau}
-{\Omega_s(\lambda_s)},
-\qquad
-J_A^{(s)}=D_A(\theta_s/2)-D_B\sigma_s^B{}_A.
++\int_0^{\lambda_s}\Omega_s
+[D_A(\theta_s/2)-D_B\sigma_s{}^B{}_A],d\tau}
+{\Omega_s(\lambda_s)}.
 $$
 
-Under the opposite boost,
-$\widehat\omega_A\mapsto\widehat\omega_A+D_Ab$ and
-$\log|\mathcal B_+/\mathcal B_-|\mapsto
-\log|\mathcal B_+/\mathcal B_-|-2b$, so $\tau_v$ and the endpoint momenta
-are invariant.
+The local corner block has rank ten before constraints and rank six after
+pullback to the two generator-chart constraints, with two diagonal
+relabelling kernel directions.  The surviving variables are described only
+as relative endpoint-map/embedding/port pairs under the declared extended
+reduction, not as diffeomorphism-invariant physical pairs.
 
-**Declared policy:** quotient this combined direction as proper normal-frame
-gauge.  No extra corner-frame variable is introduced in Stage 3.0.
+## Claims upgraded by Stage 3.1
 
-## Composition and regression
+For fixed smooth invertible incidence maps
 
-At a shared interface, match endpoint maps through the incidence
-diffeomorphism and match momenta by cotangent pullback.  The two oriented
-potentials then cancel, so the abstract spin-1 interface block composes.
-This does not derive a physical closing-wall port.
+$$
+g:S_0^{(1)}\to S_0^{(2)},
+\qquad f:I_1\to I_2,
+\qquad s_2\circ g=f\circ s_1,
+$$
 
-The resulting endpoint block agrees with Reisenberger after accounting for
-branch assignment, density weight, explicit pullback, fixed reference
-normalization, and normal-frame policy.  No genuine mismatch remains in this
-block.
+the derived matching law is
 
-## Verification boundary
+$$
+\pi_1=(Df)^*g^*\pi_2.
+$$
 
-**Verified:** analytic HF-to-endpoint derivation; Damour integrating factor;
-twist reconstruction; moment-map contraction; local rank/kernel; boost
-kernel; abstract interface cancellation; exact finite checks V26--V32; xAct
-tracefree-Lie and integration-by-parts identities V33.
+It cancels the oppositely oriented endpoint Liouville forms and two-forms and
+is functorial.  V32 is only its identity-chart special case; V35--V36 test
+nontrivial $f,g$ and composition.
 
-**Not verified:** a physical closing-wall action; the full functional gauge
-quotient; nondegeneracy of the completed spin-$0+1+2$ form; a chart through
-$\theta_s=0$; completeness, surjectivity, positivity, or continuum topology.
-No quantization is included.
+On the Raychaudhuri-reconstructed and Damour-restricted characteristic
+surface, with closed cuts or tangent/no-flux fields and matched abstract
+ports,
+
+$$
+\iota_{X_\xi}\Omega_{\rm total}
+=\boldsymbol\delta H_\xi,
+\qquad
+H_\xi=\frac{C_G}{2}\int_{S_0}\xi^A
+(p_{+A}+p_{-A}-2\Omega_0D_A\lambda_R).
+$$
+
+This is the full retained reduced characteristic moment-map theorem.  It is
+not an unreduced off-shell spacetime theorem.  Equivariance holds for
+field-independent smearings under the stated boundary assumptions; an open
+cut carries a field-dependent boundary charge rather than a central term.
+
+## Lemmas and boost-policy correction
+
+The HF term $h\,\delta L^a d_aS/2$ vanishes for constant-$\lambda$ cuts and
+the retained cut-tangential endpoint variation.  Two compensator
+interpolations with equal endpoint values differ only by the bulk Damour
+residual and therefore agree on the characteristic constraint surface.
+
+Opposite boosts satisfying $\ell_+[b]=0=\ell_-[b]$ preserve affine gauge and
+act covariantly on the reconstructed profiles.  Because the closing-wall
+momentum has no action-derived boost law, the quotient is a declared
+normal-frame gauge policy.  The former phrase “boost kernel” applies only to
+the reconstructed corner block and is not a theorem for the full retained
+form.
+
+## Final boundary
+
+V26--V41 and the xAct residuals verify the finite algebra and local tensor
+identities stated in the claim ledger.  They do not prove a physical
+closing-wall action, functional nondegeneracy/completion, a chart through
+$\theta_s=0$, a full spacetime quotient, or any quantum claim.

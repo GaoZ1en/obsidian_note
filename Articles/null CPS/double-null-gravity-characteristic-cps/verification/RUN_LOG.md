@@ -1,6 +1,87 @@
 # Verification Run Log
 
+## 2026-08-31 — Stage-3.1 classical hardening and freeze
+
+Working directory:
+
+```text
+Articles/null CPS/double-null-gravity-characteristic-cps
+```
+
+Commands:
+
+```text
+wolframscript -file scripts/spin0_and_spin2_checks.wl
+wolframscript -file scripts/stage21_corner_area_composition_checks.wl
+wolframscript -file scripts/stage22_hardening_checks.wl
+wolframscript -file scripts/stage30_endpoint_twist_checks.wl
+wolframscript -file scripts/stage31_classical_closure_checks.wl
+```
+
+Result: all five commands exited with code `0`.  Every declared finite check
+V0--V32 and V34--V41 passed.  The fresh xAct `core` run of
+`scripts/stage31_xact_residuals.wl` returned `ok=true`, with no load errors or
+messages; the independent `canonical_contract` residual run returned
+`allZero=true` for both V33 identities.
+
+Stage-3.1 additions and exact evidence boundaries:
+
+- V34 checks that converting an optional target covector density to the
+  canonical source-density/target-covector momentum uses the source Jacobian
+  exactly once, and that $p_{sA}=\pi_{s i}\partial_A s_s^i$ adds no second
+  determinant.
+- V35 uses nontrivial invertible linear $f,g$ and checks the commuting square,
+  Liouville cancellation, and two-form cancellation with
+  $|\det Dg|(Df)^T$.
+- V36 checks functorial composition of the matching law and source-density
+  Jacobians.
+- V37 checks compensator interpolation independence modulo the Damour
+  residual.
+- V38 checks that HF's $h\,\delta L^a d_aS/2$ term vanishes for a
+  constant-affine-parameter cut and tangential endpoint variation, while a
+  normal variation restores it.
+- V39 checks the finite bulk-Ward-plus-corner contraction and its reduction to
+  $\delta H_\xi$ on the Damour surface.
+- V40 checks equivariance of a nonabelian finite cotangent truncation.
+- V41 checks affine boost weights, reference-Jacobian and reconstructed-twist
+  invariance, and the condition $\ell_\pm[b]=0$.  It is explicitly not a
+  closing-wall kernel check.
+
+Analytic results, not inferred from the finite checks:
+
+- $\pi_s\in\Gamma(s_s^*T^*S_{sL}\otimes\operatorname{Dens}(S_0))$ is the
+  sole canonical endpoint type; $\widehat\tau_s$ is reserved for an optional
+  target covector density.
+- For fixed smooth invertible incidence maps,
+  $s_2\circ g=f\circ s_1$ and
+  $\pi_1=(Df)^*g^*\pi_2$ cancel the paired endpoint one-forms and two-forms
+  and compose functorially.
+- The HF cut-term and compensator-independence lemmas close the action-first
+  endpoint derivation on the Damour surface.
+- On the Raychaudhuri-reconstructed, Damour-restricted characteristic surface
+  with the declared boundary/port assumptions,
+  $\iota_{X_\xi}\Omega_{\rm total}=\delta H_\xi$ and
+  $\{H_\xi,H_\eta\}=H_{[\xi,\eta]}$ for field-independent smearings.
+- Opposite boosts are retained as a declared affine normal-frame gauge policy;
+  no full closing-wall kernel theorem is claimed.
+
+The focused novelty audit found close antecedents for every major ingredient
+but not the entire exact product in one inspected construction.  This is not
+evidence of novelty.  The classification is known/re-derived ingredients,
+project-specific integration, and at most a potentially new combination.
+
+Not verified: a physical closing-wall action or its port momenta; functional
+nondegeneracy/completion; a chart through $\theta_s=0$; an unreduced off-shell
+spacetime moment map; a boost kernel including the wall; completeness,
+surjectivity, positivity, continuum topology, or any quantum statement.
+The classical calculation chain is frozen at this boundary.
+
 ## 2026-08-30 — Stage-2.2 cleanup and Stage-3.0 endpoint/twist reduction
+
+Superseded boundary: Stage 3.1 corrects the endpoint density type, upgrades
+identity-incidence cancellation to general fixed $f,g$, combines bulk and
+corner in the constrained characteristic moment-map theorem, and downgrades
+the opposite-boost kernel language to a gauge policy.
 
 Working directory:
 
@@ -33,12 +114,13 @@ Decisive analytic additions:
 - the HF term $-\Omega\bar\eta_A\delta L^A$ is integrated by parts under the
   endpoint compensator; the bulk remainder cancels by the Damour constraint,
   leaving
-  $(C_G/2)\sum_s\int\widetilde\tau_{s i}\delta s_s^i$;
-- after the Damour bulk restriction, the generator-chart constraint is the
-  moment map for diagonal relabelling of the remaining corner block;
-- Stage 3.0 quotients opposite boosts as proper normal-frame gauge;
-- the reduced local corner block contains two relative spin-1 pairs, and the
-  abstract interface endpoint potentials cancel under cotangent matching.
+  $(C_G/2)\sum_s\int\langle\pi_s,\delta s_s\rangle$;
+- the Stage-3.0 check established the remaining-corner contraction; the full
+  constrained characteristic theorem is the Stage-3.1 result;
+- Stage 3.0 declared opposite boosts to be proper normal-frame gauge;
+- the reduced local corner block contains two relative
+  endpoint-map/embedding/port pairs, and V32 checks only identity-incidence
+  endpoint cancellation.
 
 Decisive finite checks:
 
@@ -47,9 +129,10 @@ Decisive finite checks:
 - V28 checks the Damour integrating factor with a nonzero shear source;
 - V29 checks twist and both branch initial-value reconstructions;
 - V30 checks the endpoint curl and moment-map contraction;
-- V31 checks rank/kernel before and after the constraint/quotient and the
-  opposite-boost kernel;
-- V32 checks two-cell endpoint-potential and two-form cancellation.
+- V31 checks rank/kernel before and after the constraint/quotient and boost
+  invisibility in the reconstructed corner block;
+- V32 checks identity-incidence two-cell endpoint-potential and two-form
+  cancellation.
 - V33 checks the tracefree conformal Lie contraction and the tangential
   integration-by-parts identity that produces the Damour coefficient.
 

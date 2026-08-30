@@ -1,5 +1,9 @@
 # Immediate Research Tasks
 
+**Frozen after Stage 3.1.**  The unchecked items below are reopening
+conditions, not an active extension plan.  Do not add further formalism unless
+a novelty/manuscript decision or a genuinely new obstruction requires it.
+
 - [x] Action: retain $S_+$ and $S_-$ as area/boost ports and compute the
   endpoint-complete Stage-1 rank/kernel.
   Context: the abstract signed port variables $b_\pm$ keep the closing normal
@@ -62,34 +66,51 @@
   eight-parameter product form and the rank-four matching Jacobian; V25 tests
   three independent cells.  V21 is retained only as subdivision consistency.
 
-- [ ] Action: realize the abstract $b_\pm$ ports with one concrete oriented
-  closing geometry if a geometric boundary action is needed.
+- [ ] Deferred reopening condition: realize the abstract $b_\pm$ ports with
+  one concrete oriented closing geometry if a manuscript needs a geometric
+  boundary action.
   Context: the null reduction forces no independent outer shape port.  A
   concrete closing action must derive its area/normal port and determine
   whether that wall polarization also adds a traceless shape pair.
   Check: reproduce calculation 04 equation (3.11) for the area port and
   derive any additional wall term directly from the selected action.
 
-- [x] Action: complete Stage 3.0 in the controlled classical transport lane.
-  Context: Stage-2 data now determine
-  $D_A(\theta/2)-D_B\sigma^B{}_A$.  Calculation 05 derives the HF
-  endpoint-map potential, solves Damour, proves the diagonal moment map of the
-  remaining corner block after the Damour bulk restriction, quotients
-  opposite boosts, and checks rank and abstract interface composition.
-  Check: analytic equations (2.4)--(8.3) and V27--V32; no quantum data were
-  introduced.
+- [x] Action: close Stage 3.1 in the controlled classical transport lane.
+  Context: calculation 05 now types
+  $\pi_s\in\Gamma(s_s^*T^*S_{sL}\otimes\operatorname{Dens}(S_0))$,
+  separates any target density $\widehat\tau_s$, proves general fixed
+  invertible $f,g$ cotangent composition, and includes the HF cut-term and
+  compensator-interpolation lemmas.
+  Check: analytic equations (1.1)--(9.1), V27--V41, and the independent xAct
+  residuals; no quantum data were introduced.
 
-- [ ] Action: combine the Stage-2 bulk and Stage-3 corner blocks in a full
-  functional gauge audit.
-  Context: the local corner quotient leaves two relative spin-1 pairs, but a
-  pointwise rank calculation does not prove nondegeneracy of the completed
-  spin-$0+1+2$ profile space.
-  Check: characterize every bulk-plus-corner diffeomorphism kernel and prove
-  the quotient on a declared function space.
+- [x] Action: combine the Stage-2 bulk and Stage-3 corner blocks in the
+  constrained reduced characteristic moment-map audit.
+  Context: after Raychaudhuri reconstruction and the Damour restriction,
+  calculation 05 proves
+  $\iota_{X_\xi}\Omega_{\rm total}=\boldsymbol\delta H_\xi$ including the
+  retained corner and matched abstract ports, and verifies equivariance for
+  closed cuts or tangent/no-flux fields.
+  Check: equations (5.7)--(5.10), finite truncations V39--V40, and explicit
+  boundary assumptions.  This is not an unreduced off-shell theorem.
 
-- [ ] Action: derive one concrete oriented closing-wall action and its full
-  area, normal, and spin-1 interface ports.
+- [ ] Action: prove functional nondegeneracy only if the project is reopened.
+  Context: the local corner quotient leaves two relative
+  endpoint-map/embedding/port pairs, but a pointwise rank calculation does not
+  prove nondegeneracy of the completed spin-$0+1+2$ profile space.
+  Check: characterize every bulk-plus-corner kernel on a declared function
+  space and include the physical wall ports.
+
+- [ ] Deferred reopening condition: derive one concrete oriented closing-wall
+  action and its full area, normal, and spin-1 interface ports.
   Context: the abstract endpoint cotangent block composes, but this does not
   identify the port supplied by a physical closing wall.
   Check: reproduce the area-port and endpoint-map incidence terms from that
   action and rerun two-cell composition with its actual boundary data.
+
+- [x] Action: consolidate and freeze the classical calculation chain.
+  Context: `verification/FINAL_CLASSICAL_THEOREM_LEDGER.md` is the
+  authoritative theorem/gauge/open-item ledger, and
+  `verification/CLASSICAL_NOVELTY_AUDIT.md` classifies the literature overlap.
+  Check: reopen only for a genuinely new obstruction, a concrete
+  closing-wall theorem, or a positive novelty/manuscript decision.

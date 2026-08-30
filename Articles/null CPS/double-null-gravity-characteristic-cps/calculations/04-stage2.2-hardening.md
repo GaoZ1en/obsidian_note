@@ -797,27 +797,70 @@ $$
 \tag{6.8}
 $$
 
-With the project assignment $+=R$ and $-=L$, Reisenberger's endpoint-map
-momenta are
+With the project assignment $+=R$ and $-=L$, first define the common-cut
+one-form densities
 
 $$
 \boxed{
-\widetilde\tau_{+A}
+p_{+A}
 =\Omega_0(D_A\lambda_R-\tau_{vA}),
 \qquad
-\widetilde\tau_{-A}
-=\Omega_0(D_A\lambda_R+\tau_{vA}),}
+p_{-A}
+=\Omega_0(D_A\lambda_R+\tau_{vA}).}
 \tag{6.9}
 $$
 
 The references in $\lambda_R$ are fixed, while their ratio drops from the
-derivative in $\tau_v$.  Let $s_s:S_0\to S_{sL}$ be the endpoint maps and
-write
+derivative in $\tau_v$.  Let $s_s:S_0\to S_{sL}$ be the endpoint maps.  The
+canonical endpoint momentum has the single invariant type
 
 $$
-p_{sA}:=(s_s^*\widetilde\tau_s)_A.
+\boxed{
+\pi_s\in\Gamma\!\left(
+s_s^*T^*S_{sL}\otimes\operatorname{Dens}(S_0)
+\right).}
 \tag{6.9a}
 $$
+
+It pairs directly with
+$\boldsymbol\delta s_s\in\Gamma(s_s^*TS_{sL})$.  Its common-cut one-form
+density is
+
+$$
+\boxed{p_{sA}=\pi_{s i}\,\partial_A s_s^i.}
+\tag{6.9b}
+$$
+
+There is no extra determinant in (6.9b): the density weight already belongs
+to $\pi_s$ on the source.  If a target-side covector density is useful,
+introduce a different symbol
+
+$$
+\widehat\tau_s\in
+\Gamma\!\left(T^*S_{sL}\otimes\operatorname{Dens}(S_{sL})\right),
+\qquad
+\boxed{\pi_s=s_s^{\sharp_{\rm dens}}\widehat\tau_s,}
+\tag{6.9c}
+$$
+
+where
+$s_s^{\sharp_{\rm dens}}:=\mathrm{id}_{s_s^*T^*S_{sL}}
+\otimes\operatorname{Dens}(Ds_s)^*$ pulls back the density factor and leaves
+the target covector fiber available to pair with $\delta s_s$.  This is not
+the ordinary tensor pullback, which would also apply $Ds_s^T$ to the covector
+index.  In oriented local coordinates,
+
+$$
+\pi_{s i}(x)=
+\left|\det Ds_s(x)\right|
+\widehat\tau_{s i}(s_s(x)).
+\tag{6.9d}
+$$
+
+Reisenberger's printed $\widetilde\tau_{Ai}$ is the coefficient of
+$\delta s_A^i$ under the common $d^2\theta$ integral.  It therefore
+corresponds to the source-density object $\pi_{Ai}$ in (6.9a), not to the
+optional target density $\widehat\tau_A$ in (6.9c).
 
 Then the twist and shared affine normal connection are reconstructed, rather
 than added as independent variables:
@@ -829,17 +872,14 @@ $$
 \widehat\omega_A=\frac12\left[
 \tau_{vA}-D_A\log|\mathcal B_+/\mathcal B_-|
 \right].}
-\tag{6.9b}
+\tag{6.9e}
 $$
 
 The endpoint momenta obey the one-form constraint on the common abstract
 corner
 
 $$
-\boxed{
-(s_+^*\widetilde\tau_+)_A
-+(s_-^*\widetilde\tau_-)_A
-=2\Omega_0D_A\lambda_R.}
+\boxed{p_{+A}+p_{-A}=2\Omega_0D_A\lambda_R.}
 \tag{6.10}
 $$
 
@@ -856,7 +896,7 @@ The nonredundant Stage-3 corner coordinates are therefore
 $$
 \boxed{
 \Gamma_{\rm ext}=\{
-s_+^A,s_-^A,\widetilde\tau_{+A},\widetilde\tau_{-A};
+s_+^A,s_-^A,\pi_+,\pi_-;
 \Omega_0,\lambda_R,\bar h_{AB}\}.}
 \tag{6.11}
 $$
@@ -876,7 +916,7 @@ $$
 \tag{6.12}
 $$
 
-Thus $\tau_v$, $\lambda_R$, and $\widetilde\tau_{\pm A}$ are invariant.
+Thus $\tau_v$, $\lambda_R$, $p_{\pm A}$, and $\pi_\pm$ are invariant.
 Stage 2.2 does not use this fact to claim nondegeneracy: Stage 3.0 must either
 quotient the combined direction as proper normal-frame gauge or add a
 corner-frame variable that makes it Hamiltonian.
