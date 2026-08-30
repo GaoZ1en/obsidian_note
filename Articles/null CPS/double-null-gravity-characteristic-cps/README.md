@@ -2,39 +2,39 @@
 
 ## Direct verdict
 
-**Not proven by the present calculation:** the proposed finite-cross data
+**Correct under the declared finite-cell port policy:** Stage 1 now has an
+endpoint/corner-complete spin-0 form.  The proposed full finite-cross data
 
 $$
 (\bar q^+_{AB}(u,x),\bar q^-_{AB}(v,x);
 \Omega_0,\theta_{+0},\theta_{-0},\omega_{A0},m_0)
 $$
 
-do not yet carry a proved, endpoint-independent reduced covariant phase space.
-Stage 0 is fixed, and the nonlinear affine spin-0 constraint has been pulled
-back explicitly.  The pullback leaves a nonzero finite-length sheet term and
-outer-cut terms whose value depends on the normal/embedding polarization at
-the two outer cuts.  Those outer data are absent from the displayed target.
-Dropping them would manufacture the desired corner answer rather than derive
-it.
+still do **not** carry a proved reduced covariant phase space, because Stages 2
+and 3 remain open.  The finite-length spin-0 sheet terms are now interpreted as
+outer-port structure rather than an obstruction.  Keeping area/boost ports at
+$S_+$ and $S_-$ gives a pointwise rank-six form in the truncated sector;
+fixing the outer areas and reducing their source momenta leaves the single
+initial area/relative-boost pair.
 
-What is established in the first round is narrower:
+What is established is precise:
 
 - the normalization, projector, boost, action-representative, and spin-1
   dictionaries are fixed in `calculations/00-conventions-action-and-unreduced-potential.md`;
 - the exact shear-free Raychaudhuri reconstruction and the pullback of the
-  sheet spin-0 potential are derived in
+  complete two-sheet spin-0 potential are derived in
   `calculations/01-spin0-raychaudhuri-and-corner-reduction.md`;
-- the shared initial area is imposed once, and the standard null--null joint
-  supplies one area/boost pair, proportional in this convention to
-  $-\delta m_0\wedge\delta\Omega_0$;
-- neither $\theta_{+0}$ nor $\theta_{-0}$ has been shown to possess its own
-  independent partner.  With fixed affine lengths the sheet bulk term pairs
-  $\Omega_0$ with only the weighted combination
-  $L_+\theta_{+0}+L_-\theta_{-0}$; allowing the outer cuts to vary moves this
-  information into outer-cut area/normal data;
-- a first spin-2 kinematic identity is recorded in
-  `calculations/02-spin2-conformal-metric-kinematics.md`, but Stage 2 reduction
-  has not been upgraded while Stage 1 remains open.
+- the combined two-sheet endpoint variation plus the single initial joint
+  cancels the $\Omega_0\delta a_0$ normalization terms and proves one pair
+  $-C_G\delta m_0\wedge\delta\Omega_0$;
+- with outer area/boost ports retained, $\theta_{+0}$ and $\theta_{-0}$ acquire
+  partners through $\Omega_{+L}$ and $\Omega_{-L}$; with fixed outer areas they
+  are no longer independent variations;
+- $\kappa$ and $\kappa+\theta$ representatives give the same reduced spin-0
+  form when both endpoint shifts are kept;
+- the missing $\Omega$ in the bare-measure spin-2 density is repaired in
+  `calculations/02-spin2-conformal-metric-kinematics.md`; Stage 2 remains
+  kinematical until a real constraint pullback is performed.
 
 ## Fixed scope
 
@@ -50,9 +50,11 @@ post-CIVP construction belongs here.
   including action and joint representatives and the HF/user spin-1
   dictionary.
 - `calculations/01-spin0-raychaudhuri-and-corner-reduction.md`: decisive
-  Stage-1 pullback and the minimal outer-corner obstruction.
+  Stage-1 pullback, outer-port policies, rank/kernel, and sheetwise gluing.
 - `calculations/02-spin2-conformal-metric-kinematics.md`: kinematic spin-2
-  regression only.
+  density convention and chart regression only.
+- `verification/STAGE1_AUDIT_SUMMARY.md`: concise proved/conditional/open
+  verdict.
 - `verification/CLAIM_LEDGER.md`: authoritative claim status.
 - `verification/RUN_LOG.md`: executed command, assumptions, result, and
   evidence boundary.

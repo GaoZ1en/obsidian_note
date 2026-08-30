@@ -1,16 +1,19 @@
-# 01 — Spin-0 Raychaudhuri pullback and finite-corner kill test
+# 01 — Endpoint-complete spin-0 finite cell and outer ports
 
 ## 1. Decisive verdict
 
-**The statement “the reduced spin-0 sector is only
-$\delta m_0\wedge\delta\Omega_0$” is not proven and is false for the isolated
-sheet-bulk pullback at finite affine length.**  The exact sheet pullback has a
-nonzero $\delta\Omega_0\wedge\delta\theta_{\pm0}$ term.  Endpoint-complete
-reduction can move or cancel it only through the retained outer-cut
-normal/area sector.  Because the target data do not specify that sector, the
-finite reduced CPS does not close on the proposed variables in this round.
+**Correct under the declared area/boost outer-port policy:** the affine,
+shear-free, twist-free spin-0 finite cell has an endpoint-complete
+presymplectic form.  With both outer ports retained it is pointwise rank six
+and has no kernel in this truncated fixed-gauge sector.  With fixed outer
+areas and the associated port momenta quotiented, it reduces to the single
+initial pair $(\Omega_0,-m_0)$.
 
-This is the Stage-1 kill-test result, not a roadmap.
+The finite-length terms proportional to
+$L_\pm\delta\Omega_0\wedge\delta\theta_{\pm0}$ are outer-port structure, not
+an obstruction to generic characteristic data.  The result remains tied to
+the selected null-potential representative until the port variables are
+transformed together with any $dY$ shift.
 
 ## 2. Shear-free affine constraint
 
@@ -112,6 +115,40 @@ There are not two copies $\Omega_{0+},\Omega_{0-}$.  Equation (3.4) is two
 sheet fluxes evaluated on one matched corner coordinate, not double counting
 of the corner area.
 
+The outer area is
+
+$$
+\Omega_{\pm L}=\Omega_0F_{\pm L}^2,
+\qquad
+F_{\pm L}:=1+\frac12L_\pm\theta_{\pm0}>0.
+\tag{3.5}
+$$
+
+Its differential obeys
+
+$$
+\delta\Omega_0\wedge\delta\Omega_{\pm L}
+=\Omega_0F_{\pm L}L_\pm
+\delta\Omega_0\wedge\delta\theta_{\pm0}.
+\tag{3.6}
+$$
+
+Therefore the same sheet two-form can be written without an expansion
+coordinate as
+
+$$
+\boxed{
+\Omega_{N_\pm}^{(0),\rm bulk}
+=\frac{C_G}{2\sqrt{\Omega_0\Omega_{\pm L}}}
+\delta\Omega_0\wedge\delta\Omega_{\pm L}
+=2C_G\,\delta\sqrt{\Omega_0}\wedge
+\delta\sqrt{\Omega_{\pm L}}.}
+\tag{3.7}
+$$
+
+This is valid pointwise wherever $\Omega_0>0$ and $F_{\pm L}>0$.  It displays
+the finite sheet as a relation between its two area ports.
+
 ## 4. Initial null--null joint
 
 The single initial joint has
@@ -120,10 +157,28 @@ $$
 a_0=-m_0-\log2.
 $$
 
-In the area-Dirichlet corner polarization its potential is
+Calculation 00, equations (6.1)--(6.4), starts from the two null endpoint
+normalization variations and the variation of the joint action.  In the fixed
+outward-convex orientation it finds
 
 $$
-\Theta_{S_0}=C_G\int_{S_0}a_0\,\delta\Omega_0\,d^2x,
+\left.\Theta_{\partial N_+}\right|_{S_0}
++\left.\Theta_{\partial N_-}\right|_{S_0}
+=-C_G\int_{S_0}\Omega_0\delta a_0\,d^2x,
+$$
+
+whereas
+
+$$
+\delta I_{S_0}=C_G\int_{S_0}
+(\Omega_0\delta a_0+a_0\delta\Omega_0)\,d^2x.
+$$
+
+The relative-normal-normalization terms cancel in the sum, leaving
+
+$$
+\Theta_{S_0}^{\rm residual}
+=C_G\int_{S_0}a_0\delta\Omega_0\,d^2x,
 $$
 
 so
@@ -140,107 +195,239 @@ $a_0=-m_0-\log2$.  Reversing the total hypersurface orientation reverses the
 whole symplectic form, not the identification of the pair.  The constant
 $-\log2$ changes the potential representative but not (4.1).
 
-This is one corner pair.  Adding one copy per sheet would double count $S_0$.
+This proves one corner pair for the selected representative.  It is not an
+assumption about $\delta I_{S_0}$ by itself.  Adding one copy per sheet would
+double count $S_0$.
 Reisenberger gr-qc/0703134 and its expanded derivation arXiv:1211.3880 are used
 only as regression checks.  In the latter, eqs. (182), (187), and (194)--(195)
 contain a single area/relative-normal sector and pair twist with endpoint maps.
-They are not used to delete (3.4), to fix an outer polarization, or to import a
-completeness claim.
+They are not used to delete (3.4), to choose an outer polarization, or to
+import a completeness claim.
 
-## 5. Why the outer cuts are decisive
+## 5. Selected outer-port policy and complete potential
 
-The outer areas are not independent of the proposed initial data:
+The finite cell retains $S_+$ and $S_-$ as ports.  Use the area polarization
+of calculation 00: $\Omega_{\pm L}$ are port coordinates and $b_\pm$ are the
+signed logarithmic normal/boost momenta obtained after combining each null
+endpoint variation with the action of the boundary piece that closes the
+port.  No value of $b_\pm$ is fixed in the extended phase space.
+
+On the constraint surface, the selected HF/LMPS representative gives
 
 $$
-\Omega_{\pm L}=\Omega_0
-\left(1+\frac12L_\pm\theta_{\pm0}\right)^2.
+\begin{aligned}
+\Theta_{\rm cell}^{(0)}={}&
+\sum_{s=\pm}\Theta_{N_s}^{(0),\rm bulk}
++C_G\int_{S_0}a_0\delta\Omega_0\,d^2x\\
+&+C_G\int_{S_+}b_+\delta\Omega_{+L}\,d^2x
++C_G\int_{S_-}b_-\delta\Omega_{-L}\,d^2x,
+\end{aligned}
 \tag{5.1}
 $$
 
-The action-derived cut potential contains, schematically but with fixed
-normalization from calculation 00,
+where, pointwise on the matched generator labels,
 
 $$
-\Theta_{S_\pm}^{(0)}
-=\frac{C_G}{2}(1+h_{\pm L})\delta\Omega_{\pm L},
+\Theta_{N_s}^{(0),\rm bulk}
+=-\frac{C_G}{2}\int d^2x\left[
+\left(\theta_{s0}L_s+\frac14\theta_{s0}^2L_s^2\right)
+\delta\Omega_0
++\frac12\Omega_0\theta_{s0}L_s^2\delta\theta_{s0}
+\right].
 \tag{5.2}
 $$
 
-and the null--other LMPS joint contains $a_\pm$ from (4.3).  Therefore
+Taking the field-space exterior derivative and using (3.7) yields the complete
+spin-0 two-form
 
 $$
-\delta\Theta_{S_\pm}^{(0)}
-=\frac{C_G}{2}\delta h_{\pm L}\wedge\delta\Omega_{\pm L},
+\boxed{
+\begin{aligned}
+\Omega_{\rm cell}^{(0)}=C_G\int d^2x\Bigg[&
+-\delta m_0\wedge\delta\Omega_0\\
+&+\sum_{s=\pm}\left(
+\frac{\delta\Omega_0\wedge\delta\Omega_{sL}}
+{2\sqrt{\Omega_0\Omega_{sL}}}
++\delta b_s\wedge\delta\Omega_{sL}
+\right)\Bigg].
+\end{aligned}}
 \tag{5.3}
 $$
 
-with the corresponding $a_\pm$ version after the endpoint canonical
-transformation.  Because $\delta\Omega_{\pm L}$ contains both
-$\delta\Omega_0$ and $\delta\theta_{\pm0}$, (5.3) can change the rank and the
-canonical partner of $\theta_{\pm0}$.
+This is endpoint/corner complete under the declared policy.  The terms in the
+first fraction are not deleted: they are the sheet contribution between the
+initial and outer area ports.
 
-The minimum missing input is thus explicit:
+## 6. Extended phase-space rank and partners of the expansions
 
-1. the type and oriented normal of each boundary piece meeting $S_\pm$;
-2. whether $h_{\pm L}$ or $a_\pm$ is fixed, varied, or paired with an outer
-   embedding variable;
-3. whether $L_\pm$ themselves are fixed affine lengths or endpoint-location
-   variables;
-4. the residual affine rescaling/boost condition at both outer cuts.
-
-Without these data one may neither set (5.3) to zero nor prove that it cancels
-(3.3).  “Finite interval” is essential: no appeal to infinity or vanishing
-endpoint variations is made.
-
-## 6. What can be decided about the expansions
-
-With fixed affine lengths and frozen outer normal variables, the displayed
-bulk-plus-initial-corner form is
+Rank is local in the generator label $x$, so suppress the integral and $C_G$.
+In coordinates
 
 $$
-\Omega_{\rm displayed}^{(0)}
-=\frac{C_G}{2}\delta\Omega_0\wedge
-(L_+\delta\theta_{+0}+L_-\delta\theta_{-0})
--C_G\delta m_0\wedge\delta\Omega_0.
+z=(\Omega_0,m_0,\Omega_{+L},b_+,\Omega_{-L},b_-),
+$$
+
+write $c_\pm=(2\sqrt{\Omega_0\Omega_{\pm L}})^{-1}$.  The antisymmetric matrix
+of (5.3) is
+
+$$
+M_{\rm ext}=
+\begin{pmatrix}
+0&1&c_+&0&c_-&0\\
+-1&0&0&0&0&0\\
+-c_+&0&0&-1&0&0\\
+0&0&1&0&0&0\\
+-c_-&0&0&0&0&-1\\
+0&0&0&0&1&0
+\end{pmatrix}.
 \tag{6.1}
 $$
 
-Thus neither expansion has its own independent coordinate partner.  Only one
-weighted combination couples to the shared area; the orthogonal combination
-is a kernel direction within this restricted spin-0 truncation.  If outer cut
-variables are allowed, the expansions enter through $\Omega_{\pm L}$ and can
-acquire outer partners.  Consequently:
-
-- **proved:** the initial joint area/boost pair survives once;
-- **false:** the isolated sheet-bulk pullback vanishes;
-- **not proven:** that endpoint-complete reduction leaves only the joint pair;
-- **not proven:** independent canonical partners for both expansions;
-- **open:** the final rank after an explicit outer-cut polarization and all
-  gauge quotients.
-
-## 7. Representative check
-
-On (2.3),
+Exact symbolic algebra gives
 
 $$
-\int_0^L\Omega\theta\,d\lambda=\Omega_L-\Omega_0.
+\det M_{\rm ext}=1,
+\qquad
+\operatorname{rank}M_{\rm ext}=6,
+\qquad
+\ker M_{\rm ext}=0.
+\tag{6.2}
 $$
 
-The $\kappa+\theta$ sheet representative therefore adds
-$C_G(\Omega_L-\Omega_0)$.  The endpoint shift (4.6) subtracts precisely the
-same functional.  Its field-space variation cancels at both endpoints, so the
-complete presymplectic two-form is unchanged.  Omitting either $S_0$ or $S_L$
-would make the two action representatives spuriously inequivalent.
+This is nondegeneracy only inside the six-variable, fixed-label, fixed-affine,
+spin-0 truncation; it is not a statement about the full gravitational gauge
+quotient.  Since
 
-## 8. Verification boundary
+$$
+\theta_{\pm0}=\frac{2}{L_\pm}
+\left(\sqrt{\frac{\Omega_{\pm L}}{\Omega_0}}-1\right),
+\tag{6.3}
+$$
 
-**Verified:** exact Raychaudhuri solution, area reconstruction, sheet
-pullback integral, field-space curl, outer-area differential, and the complete
-representative shift.
+each expansion acquires a partner through its own outer port.  The partner is
+a shifted version of $b_\pm$ because the sheet cross-term in (5.3) also mixes
+$\Omega_{\pm L}$ with $\Omega_0$.  Neither expansion is a kernel direction on
+the extended phase space.
 
-**Assumptions:** vacuum, four dimensions, affine fixed generators, zero shear
-and twist, caustic-free $F_\pm>0$, fixed $L_\pm$ for (3.3).
+## 7. Fixed outer ports
 
-**Not verified:** cross-focusing and Damour constraints, existence of a vacuum
-development for arbitrary angular dependence in this truncation, complete
-outer-boundary gluing, nondegeneracy, or a reduced action.
+For the fixed-area outer policy impose
+
+$$
+\delta\Omega_{+L}=0=\delta\Omega_{-L}.
+\tag{7.1}
+$$
+
+The pullback of (5.3) is
+
+$$
+\left.\Omega_{\rm cell}^{(0)}\right|_{\rm fixed\ area}
+=-C_G\int_{S_0}\delta m_0\wedge\delta\Omega_0\,d^2x.
+\tag{7.2}
+$$
+
+If $b_\pm$ are left as unused source momenta, the pointwise pulled-back matrix
+on $(\Omega_0,m_0,b_+,b_-)$ has rank two and kernel
+$\operatorname{span}\{\partial_{b_+},\partial_{b_-}\}$.  Quotienting these
+fixed-source directions, or fixing both members of each outer port, leaves the
+rank-two corner phase space $(\Omega_0,m_0)$ with no kernel.
+
+The expansions have not become degeneracies.  They cease to be independent
+coordinates because (6.3) with fixed $\Omega_{\pm L}$ gives
+
+$$
+\delta\theta_{\pm0}
+=-\frac{F_{\pm L}}{L_\pm\Omega_0}\delta\Omega_0.
+\tag{7.3}
+$$
+
+Freezing $b_\pm$ while still varying $\Omega_{\pm L}$ would be a different
+boundary condition and would not justify (7.2).
+
+## 8. Sheetwise gluing to a subsequent affine cell
+
+A clean composition statement is available for this spin-0 sheet sector.  Put
+$r_i:=\sqrt{\Omega_i}$ on three consecutive cuts.  For segments of affine
+lengths $L_1,L_2$, (3.7) gives
+
+$$
+\Omega_{01}^{(0)}+\Omega_{12}^{(0)}
+=2C_G(\delta r_0\wedge\delta r_1
++\delta r_1\wedge\delta r_2).
+\tag{8.1}
+$$
+
+The common affine Raychaudhuri solution makes $r$ linear, hence
+
+$$
+r_1=\frac{L_2r_0+L_1r_2}{L_1+L_2}.
+\tag{8.2}
+$$
+
+Pulling (8.1) to (8.2) gives
+
+$$
+\Omega_{01}^{(0)}+\Omega_{12}^{(0)}
+=2C_G\delta r_0\wedge\delta r_2
+=\Omega_{02}^{(0)}.
+\tag{8.3}
+$$
+
+The outgoing port potential of the first segment and the incoming port
+potential of the second carry opposite incidence signs; they cancel after
+matching $(\Omega_1,b_1)$ once.  This proves sheetwise affine composition for
+the present truncation.  It is not a full nonlinear double-null spacetime-cell
+composition theorem.
+
+## 9. Representative and corner ambiguity checks
+
+Under $\boldsymbol\theta_N\to\boldsymbol\theta_N+d\boldsymbol Y$, calculation
+00 gives
+
+$$
+\Delta\Omega_N=C_G\left[
+\delta y_L\wedge\delta\Omega_L
+-\delta y_0\wedge\delta\Omega_0\right]
+\tag{9.1}
+$$
+
+for $\boldsymbol Y=C_Gy\delta\Omega\,d^2x$.  Equation (5.3) is therefore a
+statement about the selected representative plus the declared area/boost port
+policy.  On the extended phase space, shifting
+$b_L\mapsto b_L+y_L$ and the common initial boost by the two initial $y$'s is
+a canonical relabeling.  Deleting a cut without this shift would change the
+answer.
+
+For the specific $\kappa$ versus $\kappa+\theta$ representatives,
+
+$$
+\Delta\Theta_N=C_G\delta(\Omega_L-\Omega_0),
+\qquad
+\Delta\Theta_{\rm endpoints}
+=-C_G\delta\Omega_L+C_G\delta\Omega_0.
+\tag{9.2}
+$$
+
+Their sum vanishes on each sheet before or after the Raychaudhuri pullback.
+Consequently both representatives give exactly the same (5.3), (7.2), and
+(8.3) when all endpoint and joint shifts are made consistently.
+
+## 10. Verification and claim boundary
+
+**Verified:** exact Raychaudhuri and area solutions; isolated sheet pullback;
+conversion to initial/outer areas; initial endpoint plus joint cancellation;
+the rank-six extended matrix and rank-two fixed-area pullback; sheetwise
+composition; and complete $\kappa$ versus $\kappa+\theta$ representative
+equivalence.
+
+**Assumptions:** four-dimensional vacuum sheet equations; fixed generator
+labels, embeddings, affine parameters, and lengths; $\sigma^\pm_{AB}=0$,
+$\omega_A=0$; $F_\pm>0$; area/boost outer-port polarization.
+
+**Not verified:** that the shear-free/twist-free truncation is preserved by
+transverse vacuum evolution; the Damour sector; a specified geometric closing
+boundary at $S_\pm$; or the full gravitational gauge quotient.  In the generic
+CK/Sachs characteristic initial-value problem, cross-focusing is not an extra
+algebraic compatibility condition on otherwise free initial data.  Here it is
+only a future check of whether this special spin-0 truncation closes under
+transverse evolution.

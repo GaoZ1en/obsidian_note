@@ -2,11 +2,13 @@
 
 ## 0. Status and separation of provenance
 
-**Stage-0 verdict: proved within the declared gauge and representative.**  The
-projector, rescaling laws, Raychaudhuri conventions, action-representative
-shift, and spin-1 dictionary below follow from the displayed definitions.
-The exact gluing of the two *outer* joints to unspecified non-null boundary
-pieces is not fixed; their joint variables are retained rather than discarded.
+**Stage-0 verdict: the kinematic conventions and one unreduced action
+representative are fixed.**  The projector, rescaling laws, Raychaudhuri
+conventions, action-representative shift, and spin-1 dictionary below follow
+from the displayed definitions.  The initial null--null normalization
+cancellation is derived in section 6 rather than assumed.  The exact geometry
+closing the two *outer* cuts is not fixed; its signed joint variables are kept
+as finite-cell ports rather than discarded.
 
 **Known from literature.**  The $\kappa$ null term and logarithmic joint rules
 are the Dirichlet representative of Lehner--Myers--Poisson--Sorkin (LMPS),
@@ -261,12 +263,24 @@ meeting $N_\pm$.  Equations (4.2)--(4.3) are precisely where the outer
 embedding and normalization polarization enters.  An additive constant in
 $a_J$ is not discarded when $\Omega$ varies.
 
+After the characteristic-orientation conversion, fix the initial joint sign
+by
+
+$$
+I_{S_0}=C_G\int_{S_0}\Omega_0a_0\,d^2x.
+\tag{4.4}
+$$
+
+This fixes the convention used below.  It does **not** yet identify the corner
+potential with $a_0\delta\Omega_0$: that result follows only after combining
+the two sheet endpoint variations with $\delta I_{S_0}$ in section 6.
+
 The Parattu representative is
 
 $$
 I_N^{(\kappa+\theta)}
 =C_G\int_N\Omega(\kappa+\theta)\,d\lambda d^2x.
-\tag{4.4}
+\tag{4.5}
 $$
 
 Using $\partial_\lambda\Omega=\Omega\theta$,
@@ -274,7 +288,7 @@ Using $\partial_\lambda\Omega=\Omega\theta$,
 $$
 I_N^{(\kappa+\theta)}-I_N^{(\kappa)}
 =C_G[\Omega]_0^L.
-\tag{4.5}
+\tag{4.6}
 $$
 
 It is safest to shift the **signed** joint densities
@@ -286,13 +300,13 @@ $$
 j_L^{(\kappa+\theta)}=j_L^{(\kappa)}-1,
 \qquad
 j_0^{(\kappa+\theta)}=j_0^{(\kappa)}+1.
-\tag{4.6}
+\tag{4.7}
 $$
 
 Then the signed joint change is $-C_G[\Omega]_0^L$, so the complete action and its
 variation are unchanged.  Thus the two representatives differ only by an
 endpoint canonical transformation when *both* endpoints are kept.  The
-Wolfram script verifies (4.5)--(4.6) on the exact Stage-1 solution.
+Wolfram script verifies (4.6)--(4.7) on the exact Stage-1 solution.
 
 ## 5. Unreduced potential used for the pullback
 
@@ -309,6 +323,22 @@ $$
 \tag{5.1}
 $$
 
+Here
+
+$$
+\widetilde\sigma_\pm^{AB}:=\Omega\sigma_\pm^{AB},
+\qquad
+dB_\pm=d\lambda_\pm\,dS
+=\Omega\,d\lambda_\pm d^2x.
+\tag{5.2}
+$$
+
+Thus $\widetilde\sigma^{AB}$ is the conformal shear tensor appearing in the HF
+contraction, while the **full coefficient with respect to the bare coordinate
+measure** is $\Omega\widetilde\sigma^{AB}$.  The outer $\Omega$ in (5.1) must
+not be dropped.  Calculation 02 separates this tensor identity from the
+density-valued potential explicitly.
+
 Overall characteristic orientation is the positive one described after
 (1.3).  In the gauge $\bar\alpha_\pm=0$, the spin-1 term is
 $-\omega_{\pm A}\delta\ell_\pm^A$ and vanishes for fixed generator
@@ -321,22 +351,148 @@ $$
 \Theta_{\partial N}^{(0)}
 =\frac{C_G}{2}\left[(1+h_L)\delta\Omega_L
 -(1+h_0)\delta\Omega_0\right],
-\tag{5.2}
+\tag{5.3}
 $$
 
 up to the already declared orientation conversion.  The $h$ variables encode
 the normal/rigging choice at a cut.  At $S_0$ the two sheet terms and the
 single null--null joint must be combined before replacing the result by the
-relative boost $m_0$.  At $S_\pm$, $h_{\pm L}$ is fixed only after specifying
-the closing boundary normal in (4.3).  These terms are therefore retained in
-Stage 1.
+relative boost $m_0$.  The $h$-split in (5.3) and the logarithmic-joint split
+below are related by cut and total-field-space variations; neither split may
+be used while silently dropping a cut.
 
-## 6. Assumptions and non-results
+## 6. Initial null--null joint from the combined variation
+
+This subsection fixes the missing Stage-1 input.  Let $\alpha_\pm$ denote the
+normal-normalization variations contributed at the initial endpoint by
+$N_\pm$.  For the outward-convex joint at which both positive generators begin,
+the Jubb--Samuel--Sorkin--Surya matching calculation gives, in the present
+normalization,
+
+$$
+\alpha_+=\alpha_-
+=-\delta\log|\ell_+\!\cdot\ell_-|
+=-\delta a_0.
+\tag{6.1}
+$$
+
+The fixed tangential labels remove the tangential endpoint variation.  With
+the characteristic orientation already chosen in section 1, the two null
+endpoint contributions are therefore
+
+$$
+\left.\Theta_{\partial N_+}\right|_{S_0}
+=\frac{C_G}{2}\int_{S_0}\Omega_0\alpha_+\,d^2x
+=-\frac{C_G}{2}\int_{S_0}\Omega_0\delta a_0\,d^2x,
+\tag{6.2a}
+$$
+
+$$
+\left.\Theta_{\partial N_-}\right|_{S_0}
+=\frac{C_G}{2}\int_{S_0}\Omega_0\alpha_-\,d^2x
+=-\frac{C_G}{2}\int_{S_0}\Omega_0\delta a_0\,d^2x.
+\tag{6.2b}
+$$
+
+The variation of the **single** joint action (4.4) is
+
+$$
+\delta I_{S_0}
+=C_G\int_{S_0}
+\left(\Omega_0\delta a_0+a_0\delta\Omega_0\right)d^2x.
+\tag{6.3}
+$$
+
+Combining (6.2a), (6.2b), and (6.3), without discarding either term in
+$\delta I_{S_0}$, gives
+
+$$
+\boxed{
+\left.\Theta_{\partial N_+}\right|_{S_0}
++\left.\Theta_{\partial N_-}\right|_{S_0}
++\delta I_{S_0}
+=C_G\int_{S_0}a_0\delta\Omega_0\,d^2x.}
+\tag{6.4}
+$$
+
+The $\Omega_0\delta a_0$ terms cancel exactly.  Since
+$a_0=-m_0-\log2$, the residual corner two-form is
+
+$$
+\boxed{
+\Omega_{S_0}
+=C_G\int_{S_0}\delta a_0\wedge\delta\Omega_0\,d^2x
+=-C_G\int_{S_0}\delta m_0\wedge\delta\Omega_0\,d^2x.}
+\tag{6.5}
+$$
+
+Thus $(\Omega_0,-m_0)$, up to $C_G$ and the fixed overall orientation, is
+proved for this representative.  It is not an assumed variation of the joint
+action alone.
+
+## 7. Outer ports and the $dY$ ambiguity
+
+At an outer cut, combine the endpoint normalization variation from the null
+sheet, the corresponding variation from the closing boundary, and the signed
+joint action exactly as in section 6.  Denote the resulting signed logarithmic
+normal variable by $b_\pm$; it contains the $a_\pm$ of (4.3) and the incidence
+sign.  The area polarization used in Stage 1 is
+
+$$
+\Theta_{S_\pm}^{\rm port}
+=C_G\int_{S_\pm}b_\pm\delta\Omega_{\pm L}\,d^2x,
+\qquad
+\Omega_{S_\pm}^{\rm port}
+=C_G\int_{S_\pm}\delta b_\pm\wedge
+\delta\Omega_{\pm L}\,d^2x.
+\tag{7.1}
+$$
+
+This is a retained port, not a choice of closing geometry.  The boost
+polarization is obtained by subtracting
+$\delta(C_G\int b_\pm\Omega_{\pm L})$, giving
+$-C_G\int\Omega_{\pm L}\delta b_\pm$ and the same two-form.
+
+For a general null-potential ambiguity
+
+$$
+\boldsymbol\theta_N\longmapsto
+\boldsymbol\theta_N+d\boldsymbol Y,
+$$
+
+Stokes' theorem gives
+
+$$
+\Delta\Theta_N=\int_{S_L}\boldsymbol Y_L-
+\int_{S_0}\boldsymbol Y_0.
+\tag{7.2}
+$$
+
+In the spin-0 sector, take
+$\boldsymbol Y=C_Gy\,\delta\Omega\,d^2x$.  Then
+
+$$
+\Delta\Omega_N=C_G\left[
+\delta y_L\wedge\delta\Omega_L
+-\delta y_0\wedge\delta\Omega_0\right].
+\tag{7.3}
+$$
+
+On the extended phase space this is absorbed by the port canonical
+transformation $b_L\mapsto b_L+y_L$ and, at the common initial corner,
+$a_0\mapsto a_0-y_{+0}-y_{-0}$.  If a cut is frozen or deleted without
+transforming its port policy, the result is representative-dependent.  Stage
+1 therefore always states both the selected representative and the port
+policy.
+
+## 8. Assumptions and non-results
 
 **Assumptions:** smooth caustic-free segments; vacuum; fixed generator labels
 and embeddings; fixed affine parameters in Stage 1; no boundary
 reparametrization counterterm; common corner metric imposed once.
 
-**Not verified here:** a unique outer closing geometry; the Damour transport;
-the full spin-2 constraint pullback; nondegeneracy after all gauge quotients;
-or existence of a local reduced action in the proposed data.
+**Not verified here:** a unique outer closing geometry; preservation of the
+shear-free/twist-free truncation under transverse vacuum evolution; the Damour
+transport; the full spin-2 constraint pullback; nondegeneracy after all gauge
+quotients; or existence of a local reduced action in the full characteristic
+data.

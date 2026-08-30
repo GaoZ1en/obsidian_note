@@ -1,4 +1,4 @@
-(* Exact regression checks for the first finite double-null gravity round. *)
+(* Exact checks for the endpoint-complete finite double-null spin-0 cell. *)
 
 ClearAll[assertZero, assertTrue];
 assertZero[label_, expr_] := Module[{r = FullSimplify[expr]},
@@ -61,28 +61,103 @@ assertZero["V2 nonlinear curl collapses to -L", curlBare + L];
 assertZero["V2 physical curl coefficient is C_G L/2",
   (-cG/2) curlBare - cG L/2];
 
-(* Outer area differential used in the obstruction. *)
+(* Outer area differential and initial/outer-area form of the sheet two-form. *)
 outerArea = area[L];
 outerDifferential = D[outerArea, Omega0] dOmega0 +
   D[outerArea, theta0] dTheta0;
 expectedOuterDifferential = F[L]^2 dOmega0 + Omega0 F[L] L dTheta0;
 assertZero["V2 outer-cut area differential", outerDifferential - expectedOuterDifferential];
 
-(* V3: kappa versus kappa+theta, including both endpoint shifts. *)
+areaWedgeCoefficient = FullSimplify[
+  (cG L/2)/D[outerArea, theta0],
+  Assumptions -> {Omega0 > 0, F[L] > 0}];
+expectedAreaWedgeCoefficient = FullSimplify[
+  cG/(2 Sqrt[Omega0 outerArea]),
+  Assumptions -> {Omega0 > 0, F[L] > 0}];
+assertZero["V2 sheet form in initial/outer areas",
+  areaWedgeCoefficient - expectedAreaWedgeCoefficient];
+assertZero["V2 square-root area coefficient is 2 C_G",
+  FullSimplify[4 Sqrt[Omega0 outerArea] areaWedgeCoefficient - 2 cG,
+    Assumptions -> {Omega0 > 0, F[L] > 0}]];
+
+(* V3: initial null-null endpoint plus joint cancellation. *)
+Clear[a0, da0];
+initialPlusEndpoint = -cG Omega0 da0/2;
+initialMinusEndpoint = -cG Omega0 da0/2;
+initialJointVariation = cG (Omega0 da0 + a0 dOmega0);
+initialCombined = Expand[
+  initialPlusEndpoint + initialMinusEndpoint + initialJointVariation];
+assertZero["V3 initial normalization variation cancels",
+  Coefficient[initialCombined, da0]];
+assertZero["V3 residual initial corner potential",
+  initialCombined - cG a0 dOmega0];
+
+(* V4: kappa versus kappa+theta, including both endpoint shifts. *)
 thetaBoundaryIntegral = FullSimplify[Integrate[area[lambda] theta[lambda],
     {lambda, 0, L}], Assumptions -> L > 0];
-assertZero["V3 integral Omega theta is outer minus initial area",
+assertZero["V4 integral Omega theta is outer minus initial area",
   thetaBoundaryIntegral - (area[L] - area[0])];
 sheetRepresentativeShift = thetaBoundaryIntegral;
 jointRepresentativeShift = -area[L] + area[0];
-assertZero["V3 sheet plus both joint shifts cancel",
+assertZero["V4 sheet plus both joint shifts cancel",
   sheetRepresentativeShift + jointRepresentativeShift];
-assertZero["V3 variation in Omega0 also cancels",
+assertZero["V4 variation in Omega0 also cancels",
   D[sheetRepresentativeShift + jointRepresentativeShift, Omega0]];
-assertZero["V3 variation in theta0 also cancels",
+assertZero["V4 variation in theta0 also cancels",
   D[sheetRepresentativeShift + jointRepresentativeShift, theta0]];
 
-(* V4: a local unimodular conformal-metric chart. *)
+(* V5: extended-port rank and fixed-area kernel. *)
+Clear[OmegaP, OmegaM, cP, cM];
+cP = 1/(2 Sqrt[Omega0 OmegaP]);
+cM = 1/(2 Sqrt[Omega0 OmegaM]);
+extendedMatrix = {
+  {0, 1, cP, 0, cM, 0},
+  {-1, 0, 0, 0, 0, 0},
+  {-cP, 0, 0, -1, 0, 0},
+  {0, 0, 1, 0, 0, 0},
+  {-cM, 0, 0, 0, 0, -1},
+  {0, 0, 0, 0, 1, 0}
+};
+assertZero["V5 extended-port determinant is one", Det[extendedMatrix] - 1];
+assertZero["V5 extended-port rank is six", MatrixRank[extendedMatrix] - 6];
+assertTrue["V5 extended-port kernel is empty", NullSpace[extendedMatrix] === {}];
+
+fixedAreaJacobian = {
+  {1, 0, 0, 0},
+  {0, 1, 0, 0},
+  {0, 0, 0, 0},
+  {0, 0, 1, 0},
+  {0, 0, 0, 0},
+  {0, 0, 0, 1}
+};
+fixedAreaMatrix = FullSimplify[
+  Transpose[fixedAreaJacobian] . extendedMatrix . fixedAreaJacobian];
+assertZero["V5 fixed-area rank is two", MatrixRank[fixedAreaMatrix] - 2];
+assertZero["V5 b_+ is a fixed-source kernel direction",
+  fixedAreaMatrix . {0, 0, 1, 0}];
+assertZero["V5 b_- is a fixed-source kernel direction",
+  fixedAreaMatrix . {0, 0, 0, 1}];
+
+(* V6: composition of two affine spin-0 sheet segments. *)
+Clear[L1, L2];
+compositionMatrix = {
+  {0, 2, 0},
+  {-2, 0, 2},
+  {0, -2, 0}
+};
+compositionJacobian = {
+  {1, 0},
+  {L2/(L1 + L2), L1/(L1 + L2)},
+  {0, 1}
+};
+directMatrix = {{0, 2}, {-2, 0}};
+assertZero["V6 two sheet segments compose",
+  FullSimplify[
+    Transpose[compositionJacobian] . compositionMatrix . compositionJacobian -
+      directMatrix,
+    Assumptions -> {L1 > 0, L2 > 0}]];
+
+(* V7: local unimodular spin-2 chart and the remaining area density. *)
 Clear[phi, phiDot, deltaPhi, Omega, OmegaDot];
 barq = DiagonalMatrix[{Exp[2 phi], Exp[-2 phi]}];
 barqInv = Inverse[barq];
@@ -96,16 +171,20 @@ thetaFromMetric = FullSimplify[Tr[qInv . Bcov]];
 sigmaCov = FullSimplify[Bcov - thetaFromMetric q/2];
 sigmaContra = FullSimplify[qInv . sigmaCov . qInv];
 sigmaTilde = FullSimplify[Omega sigmaContra];
-assertZero["V4 det bar q is one", Det[barq] - 1];
-assertZero["V4 conformal velocity is tracefree", Tr[barqInv . barqDot]];
-assertZero["V4 expansion is OmegaDot/Omega",
+assertZero["V7 det bar q is one", Det[barq] - 1];
+assertZero["V7 conformal velocity is tracefree", Tr[barqInv . barqDot]];
+assertZero["V7 expansion is OmegaDot/Omega",
   thetaFromMetric - OmegaDot/Omega];
-assertZero["V4 shear is Omega barqDot/2",
+assertZero["V7 shear is Omega barqDot/2",
   sigmaCov - Omega barqDot/2];
-assertZero["V4 densitized shear contraction",
-  Tr[Transpose[sigmaTilde] . deltaBarq]/2 - 2 phiDot deltaPhi];
+pureSpin2Contraction = FullSimplify[
+  Tr[Transpose[sigmaTilde] . deltaBarq]/2];
+assertZero["V7 pure densitized-shear contraction",
+  pureSpin2Contraction - 2 phiDot deltaPhi];
+assertZero["V7 full bare-measure spin-2 density",
+  Omega pureSpin2Contraction - 2 Omega phiDot deltaPhi];
 
 Print["PASS all declared identities"];
-Print["NOT PROVED: outer-joint polarization or cancellation, vacuum development,"];
-Print["NOT PROVED: Stage-2 reduction, nondegeneracy, completeness, positivity,"];
+Print["NOT PROVED: preservation of the spin-0 truncation, vacuum development,"];
+Print["NOT PROVED: Stage-2 reduction, full gauge nondegeneracy, completeness,"];
 Print["NOT PROVED: surjectivity, continuum topology, or a reduced action."];
