@@ -12,6 +12,7 @@ Research notes on quantization and perturbative field theory in AdS, including A
 | `Proca-Chern-Simons/` | Proca-Chern-Simons theory: formalism, Dirac fermions, Green functions |
 | `ads4 linearized gravity/` | AdS4 linearized gravity, positive-energy modules, symplectic norms, characters, and thermal partition functions |
 | `electric field/` | Maxwell field quantization in AdS3: modes, asymptotic behavior, large gauge transformations, and article drafts |
+| `fermion/` | Complex Dirac field on global AdS4: standard/alternative polarizations, graded CPS, boundary-complete charges, global modes, CAR, and $D(\Delta_\pm,\tfrac12)$ modules |
 | `gravitational energy/` | Perturbative bulk-boundary charge matching and gravitational energy in AdS |
 | `gluing/` | Boundary-data and CPS gluing: regional solution spaces over interface data, flux-balance reduction, and a canonical/metaplectic quantum-gluing programme; earlier penalty, lattice, gauge, AdS--Rindler, and article tracks are preserved under `gluing/deprecated/` |
 | `Killing horizon/` | Scalar quantization on non-rotating BTZ: CPS, continuous modes, HHI states, horizon charges, and tadpoles |
@@ -28,6 +29,7 @@ Research notes on quantization and perturbative field theory in AdS, including A
 1. See `Proca-Chern-Simons/` for the Chern-Simons coupling extension
 1. Consult `Chern-Simons/` for the U(1) Chern-Simons boundary conditions and charge algebra
 1. Use `BRST/` and `electric field/` for gauge-redundancy and Maxwell-sector constructions
+1. Use `scalar/` and `fermion/` for boundary-complete free-field quantization with ordinary and graded symplectic structures
 1. Consult `linearized gravity/`, `ads4 linearized gravity/`, and `gravitational energy/` for gravity, module, and charge-matching tracks
 1. Use `perturbation/` for CPS perturbation theory and pAQFT formalism notes
 1. See `thermodynamics of scalar in ads/` for thermodynamic quantities and heat kernel results
