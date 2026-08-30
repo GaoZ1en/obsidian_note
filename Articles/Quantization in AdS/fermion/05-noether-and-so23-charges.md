@@ -64,17 +64,75 @@ Strictly, spinors furnish a representation of the universal cover $\mathrm{Spin}
 
 ## 3. Off-shell boundary-complete Noether identity
 
-Let $L_D$ denote the bulk four-form and
+Write the bulk and wall forms as
 
 $$
-\ell_s=s\frac{i}{2}\bar\psi\psi\,\mathrm{vol}_{\Gamma_R},
+L_D=\mathcal L_D\,\mathrm{vol}_{M_R},
 \qquad
+\ell_s=q_s\,\mathrm{vol}_{\Gamma_R},
+\qquad
+q_s=s\frac{i}{2}\bar\psi\psi,
+$$
+
+$$
 s=+1\ \text{(standard)},
 \qquad
 s=-1\ \text{(alternative)}.
 $$
 
-The regulator embedding is included among the external sources. This is needed because a generic AdS Killing field has a nonzero normal component at $r=R$. The source-extended transformation gives, off shell,
+The regulator is the embedding $X_R:\Gamma\hookrightarrow M$ with image $r=R$, not a scalar condition that is silently held invariant. Decompose the Killing field at the wall as
+
+$$
+\xi^\mu=\xi_\parallel^\mu+\chi_\xi n^\mu,
+\qquad
+\chi_\xi=n_\mu\xi^\mu=\frac{\xi^r}{\sqrt{1+R^2}}.
+$$
+
+The source-extended pullback variation has normal displacement $\delta_\xi X_R^\mu=\chi_\xi n^\mu$; its tangential part is a reparametrization of $\Gamma_R$. This is one Lie-dragged pullback variation, not a separate displacement added on top of a second field variation. The compensating Lorentz transformation makes the exact Killing action on the chosen tetrad vanish, while its action on the spinors is the Kosmann derivative.
+
+For the cylinder $r=R$,
+
+$$
+K_R=\gamma^{ab}\nabla_a n_b
+=\frac{2\sqrt{1+R^2}}{R}
++\frac{R}{\sqrt{1+R^2}}.
+$$
+
+Because the Lorentz pieces cancel in the scalar bilinear,
+
+$$
+X_\xi(\bar\psi\psi)
+=(\mathcal L_\xi^K\bar\psi)\psi
++\bar\psi\mathcal L_\xi^K\psi
+=\xi^\mu\nabla_\mu(\bar\psi\psi).
+$$
+
+For an exact Killing field, $D_a\xi_\parallel^a=-K_R\chi_\xi$. Therefore the wall density has the explicit shape decomposition
+
+$$
+X_\xi(q_s\,\mathrm{vol}_{\Gamma_R})
+=D_a(q_s\xi_\parallel^a)\,\mathrm{vol}_{\Gamma_R}
++\chi_\xi(\nabla_nq_s+K_Rq_s)\,\mathrm{vol}_{\Gamma_R}.
+$$
+
+The first term is the difference of the two $S_R^2$ corner integrals. Bulk covariance supplies $\iota_\xi L_D$ on every component of $\partial M_R$. Consequently the source-extended transformation gives, off shell,
+
+$$
+\begin{aligned}
+X_\xi\mathbin{\cdot}\delta S_R^s
+={}&i\int_{M_R}\sqrt{-g}\left[
+(\mathcal L_\xi^K\bar\psi)(\not\!\nabla-m)\psi
+-\bar\psi(\overleftarrow{\not\!\nabla}+m)
+\mathcal L_\xi^K\psi
+\right]\\
+&+\theta_R(X_\xi)\big|_{\Sigma_f}
+-\theta_R(X_\xi)\big|_{\Sigma_i}
++\int_{\Gamma_R}\sqrt{-\gamma}\,
+\mathfrak b_R^s(X_\xi).
+\end{aligned}
+$$
+
+This is the direct bulk / $\Sigma_f$ / $\Sigma_i$ / $\Gamma_R$ decomposition obtained from the complete variation; $\mathfrak b_R^s$ is written explicitly in subsection 5 below. The same off-shell expression, rearranged by diffeomorphism covariance and the wall shape identity, is
 
 $$
 X_\xi\mathbin{\cdot}\delta S_R^s
@@ -93,7 +151,74 @@ $$
 }
 $$
 
-The second term is a genuine corner term: it is the time-slice endpoint of the timelike polarization action. The finite-$R$ radial term $\beta_{\xi,R}^s$ includes the displacement of $\Gamma_R$. It is retained until the limit. For an exact Killing field and either source-free pure boundary condition,
+Equivalently, before the tangential wall divergence is assigned to the two time caps,
+
+$$
+\beta_{\xi,R}^s
+=\int_{\Gamma_R}\iota_\xi L_D
++X_\xi\int_{\Gamma_R}\ell_s
+-\left(
+\int_{S_{f,R}^2}\iota_\xi\ell_s
+-\int_{S_{i,R}^2}\iota_\xi\ell_s
+\right).
+$$
+
+Using the shape decomposition above, the finite-wall term is no longer left implicit:
+
+$$
+\boxed{
+\beta_{\xi,R}^s
+=\int_{\Gamma_R}d^3y\sqrt{-\gamma}\,
+\chi_\xi
+\left[
+\mathcal L_D+\nabla_n q_s+K_Rq_s
+\right].
+}
+$$
+
+In the coordinates of Section 01 this is
+
+$$
+\boxed{
+\beta_{\xi,R}^s
+=\int_{t_i}^{t_f}dt\int_0^\pi d\vartheta
+\int_0^{2\pi}d\varphi\,
+R^2\sin\vartheta\,\xi^r
+\left[
+\mathcal L_D
++s\frac{i}{2}
+\left(
+\sqrt{1+R^2}\,\partial_R
++\frac{2\sqrt{1+R^2}}{R}
++\frac{R}{\sqrt{1+R^2}}
+\right)(\bar\psi\psi)
+\right]_{r=R}.
+}
+$$
+
+This formula displays separately the bulk radial displacement, the normal derivative of the polarization density, and the change of the induced wall volume. The second term in $\alpha_{\xi,R}^s$ is the tangential endpoint of the same wall action; it is not optional corner notation.
+
+On shell $\mathcal L_D=0$. For source-free standard data,
+
+$$
+\bar\psi\psi=O(R^{-4-2m}),
+$$
+
+whereas for source-free alternative data,
+
+$$
+\bar\psi\psi=O(R^{-4+2m}).
+$$
+
+Exact AdS Killing fields have $\chi_\xi=O(1)$. Hence
+
+$$
+\beta_{\xi,R}^{+}=O(R^{-1-2m}),
+\qquad
+\beta_{\xi,R}^{-}=O(R^{-1+2m}),
+$$
+
+and therefore, for $0<m<1/2$,
 
 $$
 \lim_{R\to\infty}\beta_{\xi,R}^s=0.
@@ -146,7 +271,55 @@ and both vanish for $0<m<1/2$.
 
 ## 5. Conservation
 
-The off-shell Noether identity implies
+The complete radial variational form at the wall is
+
+$$
+\mathfrak b_R^s(\delta)
+=n_\mu\theta_D^\mu(\delta)+\delta q_s,
+$$
+
+or explicitly
+
+$$
+\boxed{
+\mathfrak b_R^s(\delta)
+=\frac{i}{2}
+\left[
+\bar\psi(\gamma^{\hat r}+s)\delta\psi
++\delta\bar\psi(s-\gamma^{\hat r})\psi
+\right].
+}
+$$
+
+Thus
+
+$$
+\mathfrak b_R^+(\delta)
+=i\left(
+\bar\psi P_+\delta\psi+\delta\bar\psi P_-\psi
+\right),
+$$
+
+$$
+\mathfrak b_R^-(\delta)
+=-i\left(
+\bar\psi P_-\delta\psi+\delta\bar\psi P_+\psi
+\right).
+$$
+
+Contracting the complete finite-$R$ variation with $X_\xi$ and comparing it with the explicit off-shell identity gives, on shell,
+
+$$
+\boxed{
+Q_{\xi,R}^s\big|_{\Sigma_f}
+-Q_{\xi,R}^s\big|_{\Sigma_i}
+=\beta_{\xi,R}^s
+-\int_{\Gamma_R}d^3y\sqrt{-\gamma}\,
+\mathfrak b_R^s(X_\xi).
+}
+$$
+
+This is the conservation statement read directly from the completed action. Equivalently, using the canonical current,
 
 $$
 \nabla_\mu J_\xi^\mu
@@ -156,39 +329,86 @@ $$
 \right].
 $$
 
-It vanishes on the pre-phase space. Stokes' theorem then gives
+It vanishes on the pre-phase space. The two descriptions agree because the tangential divergence of $q_s\xi_\parallel^a$ supplies the polarization corners already subtracted in $Q_{\xi,R}^s$.
+
+For a pure source-free solution, $X_\xi$ obeys the same boundary condition as $\psi$. Therefore both terms on the right side of the boxed finite-$R$ identity scale as $R^{-1-2m}$ in the standard theory and $R^{-1+2m}$ in the alternative theory. Taking the limit gives
 
 $$
 Q_{\xi,\Sigma_f}^s-Q_{\xi,\Sigma_i}^s
 =-\lim_{R\to\infty}\int_{\Gamma_R}\sqrt{-\gamma}\,n_\mu J_\xi^\mu=0,
 $$
 
-where the final equality uses the same source-free asymptotic estimates as above. This conservation proof is logically separate from charge finiteness.
+with the limiting polarization-corner difference included in the equality. This conservation proof is logically separate from charge finiteness.
 
 ## 6. Hamiltonian identity
 
-Varying the complete finite-$R$ Noether current, without dropping the corner, gives
+Here $\delta$ is an allowed tangent variation of the dynamical spinors with the vielbein and regulator sources held fixed; $X_\xi$ is the separate source-extended symmetry variation. Let $\tau^\mu$ be the future normal to $\Sigma_R$; at the orthogonal joint it is tangent to $\Gamma_R$. With the orientations of Section 01, the two corner contractions are
 
 $$
-\iota_{X_\xi}\Omega_R+\delta Q_{\xi,R}^s
-=-\int_{S_R^2}
+\int_{S_R^2}\iota_\xi\theta_D(\delta)
+=-\int_{S_R^2}d^2x\sqrt h
 \left[
-\iota_\xi\theta_D(\delta\psi)
+(\tau\mathbin{\cdot}\xi)n_\mu\theta_D^\mu(\delta)
+-(n\mathbin{\cdot}\xi)\tau_\mu\theta_D^\mu(\delta)
+\right],
+$$
+
+$$
+\int_{S_R^2}\delta(\iota_\xi\ell_s)
+=-\int_{S_R^2}d^2x\sqrt h\,
+(\tau\mathbin{\cdot}\xi)\delta q_s.
+$$
+
+The normal displacement of the regulator also moves the endpoint of $\Sigma_R$. Its explicit contribution to the variation of the integrated time-slice potential is
+
+$$
+\boxed{
+\mathcal R_{\xi,R}^{\rm emb}(\delta)
+=\int_{S_R^2}d^2x\sqrt h\,
+(n\mathbin{\cdot}\xi)\tau_\mu\theta_D^\mu(\delta).
+}
+$$
+
+There is no uncomputed object hidden in this notation. Varying the complete finite-$R$ charge gives
+
+$$
+\begin{aligned}
+\iota_{X_\xi}\Omega_R+\delta Q_{\xi,R}^s
+={}&-\int_{S_R^2}
+\left[
+\iota_\xi\theta_D(\delta)
 +\delta(\iota_\xi\ell_s)
 \right]
-+\mathcal R_{\xi,R}^s.
++\mathcal R_{\xi,R}^{\rm emb}(\delta)\\
+={}&\boxed{
+\int_{S_R^2}d^2x\sqrt h\,
+(\tau\mathbin{\cdot}\xi)\,
+\mathfrak b_R^s(\delta)
+}.
+\end{aligned}
 $$
 
-Here $\mathcal R_{\xi,R}^s$ is precisely the contraction of the finite-cutoff radial variational form with the source-extended displacement. The term $\delta(\iota_\xi\ell_s)$ cancels the polarization contribution contained in $\mathcal R_{\xi,R}^s$. What remains is proportional to the free boundary variation:
+The cancellation is now term by term:
+
+1. the $(n\mathbin{\cdot}\xi)\tau\mathbin{\cdot}\theta_D$ piece of $\iota_\xi\theta_D$ is cancelled by the moving-endpoint term $\mathcal R_{\xi,R}^{\rm emb}$;
+2. $\delta(\iota_\xi\ell_s)$ supplies $(\tau\mathbin{\cdot}\xi)\delta q_s$ and combines with $(\tau\mathbin{\cdot}\xi)n\mathbin{\cdot}\theta_D$;
+3. their sum is exactly the complete radial variational form $\mathfrak b_R^s$, including the polarization sign.
+
+In terms of the asymptotic data, the leading finite-wall forms are
 
 $$
-\begin{array}{ll}
-\delta\alpha=\delta\bar\alpha=0,&\text{standard},\\
-\delta\beta=\delta\bar\beta=0,&\text{alternative},
-\end{array}
+\mathfrak b_R^+
+=i\left(\bar\beta\,\delta\alpha+\delta\bar\alpha\,\beta\right)
++O(R^{-4-2m}),
 $$
 
-plus the decaying $R^{-1\mp2m}$ remainders. Therefore
+$$
+\mathfrak b_R^-
+=-i\left(\bar\alpha\,\delta\beta+\delta\bar\beta\,\alpha\right)
++O(R^{-4+2m}),
+$$
+
+where the displayed $\alpha,\beta$ include their radial powers. Standard tangent variations have $\delta\alpha=\delta\bar\alpha=0$, and alternative tangent variations have $\delta\beta=\delta\bar\beta=0$. After multiplication by $\sqrt h(\tau\mathbin{\cdot}\xi)$, the remainders are respectively $O(R^{-1-2m})$ and $O(R^{-1+2m})$. Therefore
 
 $$
 \boxed{
@@ -196,9 +416,89 @@ $$
 }
 $$
 
-for both source-free theories. The sign agrees with the workspace convention $Q=X\mathbin{\cdot}\theta-\alpha$.
+for both source-free theories. This proves the Hamiltonian identity from the complete action; it does not postulate a stress-tensor Hamiltonian. The sign agrees with the workspace convention $Q=X\mathbin{\cdot}\theta-\alpha$.
 
-## 7. Charge algebra
+## 7. Time translation and the one-particle operator
+
+For $\xi=\partial_t$, the tetrad is time independent but $\nabla_t$ contains a spin connection. In the conventions of Section 01,
+
+$$
+\frac14\omega_{t\hat a\hat b}\gamma^{\hat a\hat b}
+=-\frac r2\gamma^{\hat0\hat r},
+$$
+
+while the Kosmann term is
+
+$$
+\frac14(\nabla_{\hat a}\xi_{\hat b})
+\gamma^{\hat a\hat b}
+=+\frac r2\gamma^{\hat0\hat r}.
+$$
+
+Hence the two matrices cancel exactly:
+
+$$
+\boxed{
+\mathcal L_{\partial_t}^K\psi=\partial_t\psi,
+\qquad
+\mathcal L_{\partial_t}^K\bar\psi=\partial_t\bar\psi.
+}
+$$
+
+On shell $\mathcal L_D=0$, and the source-free polarization corner vanishes as $R\to\infty$. The action-derived time-translation charge is therefore
+
+$$
+\boxed{
+Q_{\partial_t}
+=\frac{i}{2}\int_\Sigma d^3x\sqrt\sigma\,\tau_\mu
+\left[
+\bar\psi\gamma^\mu\partial_t\psi
+-(\partial_t\bar\psi)\gamma^\mu\psi
+\right].
+}
+$$
+
+For a normalized positive-frequency mode $U_I\propto e^{-iE_It}$,
+
+$$
+Q_{\partial_t}[U_I]=E_I(U_I,U_I)_\Sigma=E_I.
+$$
+
+For a normalized negative-frequency mode $V_I\propto e^{+iE_It}$,
+
+$$
+Q_{\partial_t}[V_I]=-E_I(V_I,V_I)_\Sigma=-E_I.
+$$
+
+Thus the one-particle Kosmann operator
+
+$$
+h_{\partial_t}=i\mathcal L_{\partial_t}^K
+$$
+
+has eigenvalue $+E_I$ on $U_I$ and $-E_I$ on $V_I$. The latter sign is converted to positive antiparticle energy by Grassmann ordering in Section 07.
+
+For comparison, choose the global phase convention
+
+$$
+X_{U(1)}\psi=-i\psi,
+\qquad
+X_{U(1)}\bar\psi=+i\bar\psi.
+$$
+
+The completed action is strictly invariant and gives
+
+$$
+\boxed{
+Q_{U(1)}
+=X_{U(1)}\mathbin{\cdot}\theta
+=\int_\Sigma d^3x\sqrt\sigma\,\psi^\dagger\psi.
+}
+$$
+
+The mode-space forms of both charges and their graded quantization are derived, with ordering displayed, in Section 07.
+
+## 8. Charge algebra
 
 For field-independent exact Killing vectors,
 
@@ -210,6 +510,6 @@ The possible $K$ is configuration-independent. Evaluating on the zero solution g
 
 ## Verification
 
-- **Verified:** tangency, finite-cutoff corner bookkeeping, asymptotic finiteness, zero radial charge flux, and the limiting Hamiltonian identity for the two pure source-free conditions.
+- **Verified:** the finite-wall $\beta_{\xi,R}^s$, the normal-displacement contribution, the two corner contractions, the complete radial form $\mathfrak b_R^s$, asymptotic finiteness, zero limiting radial charge flux, and the limiting Hamiltonian identity for the two pure source-free conditions are displayed above. `verification/noether-time-translation.wl` independently checks the $\partial_t$ spin-connection/Kosmann cancellation and the one-mode energy and $U(1)$ generator signs.
 - **Assumptions:** exact AdS Killing fields, source-extended regulator embedding, fixed torsion-free vielbein, and derivative-controlled asymptotics.
 - **Not verified:** asymptotic non-Killing transformations, fluctuating gravity, and quantum anomalies are outside scope.

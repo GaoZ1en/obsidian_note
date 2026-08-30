@@ -32,9 +32,56 @@ $$
 
 This is a first-order pair. Squaring before imposing this coupling would introduce spurious independent solutions.
 
-## 2. Decoupled Pöschl--Teller equations
+## 2. Rotated first-order system and its square
 
-A $\rho/2$ unitary rotation produces $\widehat f_\kappa^\pm$ satisfying
+Use the unitary rotation
+
+$$
+\binom{\widehat f_\kappa^+}{\widehat f_\kappa^-}
+=U(\rho)\binom{F_\kappa}{G_\kappa},
+\qquad
+U(\rho)=
+\begin{pmatrix}
+\cos\frac{\rho}{2}&\sin\frac{\rho}{2}\\
+-\sin\frac{\rho}{2}&\cos\frac{\rho}{2}
+\end{pmatrix}.
+$$
+
+Define
+
+$$
+\varepsilon=E-\frac12,
+\qquad
+\nu_\kappa=m+\kappa,
+\qquad
+W_\kappa(\rho)=\kappa\cot\rho-m\tan\rho.
+$$
+
+The rotated equation is still a first-order equation:
+
+$$
+\boxed{
+\begin{pmatrix}
+\nu_\kappa&\partial_\rho+W_\kappa\\
+-\partial_\rho+W_\kappa&-\nu_\kappa
+\end{pmatrix}
+\binom{\widehat f_\kappa^+}{\widehat f_\kappa^-}
+=\varepsilon
+\binom{\widehat f_\kappa^+}{\widehat f_\kappa^-}.
+}
+$$
+
+Equivalently, the two intertwining relations are
+
+$$
+(\partial_\rho+W_\kappa)\widehat f_\kappa^-
+=(\varepsilon-\nu_\kappa)\widehat f_\kappa^+,
+\qquad
+(-\partial_\rho+W_\kappa)\widehat f_\kappa^+
+=(\varepsilon+\nu_\kappa)\widehat f_\kappa^-.
+$$
+
+Only after retaining these relations may one square the system. They imply
 
 $$
 \left[-\frac{d^2}{d\rho^2}
@@ -44,7 +91,25 @@ $$
 =(E-\tfrac12)^2\widehat f_\kappa^\pm.
 $$
 
-Regularity at the origin selects the positive powers of $\sin\rho$. For $\kappa>0$, the standard solutions may be written
+Regularity at the origin selects the positive powers of $\sin\rho$. For $\kappa>0$, the standard energy below gives
+
+$$
+\varepsilon=2n+m+\kappa,
+$$
+
+so the first-order equations become
+
+$$
+\boxed{
+(\partial_\rho+W_\kappa)\widehat f^-_{n\kappa}
+=2n\widehat f^+_{n\kappa},
+\qquad
+(-\partial_\rho+W_\kappa)\widehat f^+_{n\kappa}
+=2(n+m+\kappa)\widehat f^-_{n\kappa}.
+}
+$$
+
+The standard solutions with the relative coefficient already fixed by this pair are
 
 $$
 \widehat f^+_{n\kappa}
@@ -60,9 +125,42 @@ $$
 P_{n-1}^{(\kappa+1/2,m+1/2)}(\cos2\rho),
 $$
 
-with the second line understood as zero for $n=0$. The first-order equation fixes their relative coefficient.
+with the second line understood as zero for $n=0$. This convention uses the same overall $\mathcal N_{n\kappa}(m)$ in both lines. At $n=0$ the first equation is $0=0$, while
 
-For $\kappa<0$, write $k=|\kappa|$. A convenient pair is
+$$
+(-\partial_\rho+W_\kappa)
+\left[(\sin\rho)^\kappa(\cos\rho)^m\right]=0,
+$$
+
+so the absent component is required by, and not merely compatible with, the first-order Dirac equation.
+
+For $\kappa<0$, write $k=|\kappa|$. Now
+
+$$
+\varepsilon=2n+m+k+1,
+\qquad
+\nu_{-k}=m-k,
+\qquad
+W_{-k}=-k\cot\rho-m\tan\rho,
+$$
+
+and hence
+
+$$
+\boxed{
+(\partial_\rho+W_{-k})\widehat f^-_{n,-k}
+=2\left(n+k+\frac12\right)\widehat f^+_{n,-k},
+}
+$$
+
+$$
+\boxed{
+(-\partial_\rho+W_{-k})\widehat f^+_{n,-k}
+=2\left(n+m+\frac12\right)\widehat f^-_{n,-k}.
+}
+$$
+
+A convenient pair with exactly these relative coefficients is
 
 $$
 \widehat f^+_{n,-k}
@@ -80,7 +178,7 @@ $$
 P_n^{(k-1/2,m+1/2)}(\cos2\rho).
 $$
 
-The inverse unitary rotation reconstructs $(F,G)$, and the angular ansatz reconstructs the four-component spinor in the tetrad of Section 01.
+The inverse unitary rotation reconstructs $(F,G)$, and the angular ansatz reconstructs the four-component spinor in the tetrad of Section 01. Thus the displayed Jacobi pairs solve the original first-order Dirac system; the partner equations are consequences, not the defining check.
 
 ## 3. Standard spectrum
 
@@ -115,7 +213,22 @@ The lowest state has $n=0,\kappa=1,j=1/2$ and $E_0=\Delta_+$.
 
 ## 4. Alternative spectrum
 
-In four dimensions $\gamma_5$ anticommutes with $\not\!\nabla$. Multiplication by $\gamma_5$ maps a mass-$m$ solution to a mass-$(-m)$ solution and exchanges the radial chiral data. Consequently the alternative modes for $m>0$ are obtained from the regular formulas by $m\mapsto-m$, followed by a harmless relabelling of the parity sign $\kappa$. Their spectrum is
+In four dimensions $\gamma_5$ anticommutes with $\not\!\nabla$. Let $U_I^{\rm reg}(\mu)$ denote the four-component mode reconstructed from the Jacobi pair above with the mass parameter everywhere replaced by $\mu$. The physical mass-$m$ alternative mode is defined by
+
+$$
+\boxed{
+U_I^{\rm alt}(m)=\gamma_5U_I^{\rm reg}(-m).
+}
+$$
+
+Indeed,
+
+$$
+(\not\!\nabla-m)U_I^{\rm alt}(m)
+=-\gamma_5(\not\!\nabla+m)U_I^{\rm reg}(-m)=0.
+$$
+
+The $\gamma_5$ action exchanges the radial chiral data and relabels the parity harmonic; it does not change the norm. Before that algebraic map, the Jacobi pair with $\mu=-m$ obeys the same two first-order intertwining equations with $m$ replaced by $-m$. Consequently the alternative spectrum is
 
 $$
 E^{\rm alt}_{n\kappa}
@@ -139,6 +252,6 @@ If $U_I\propto e^{-iE_It}$ is a positive-frequency particle mode, charge conjuga
 
 ## Verification
 
-- **Verified:** `verification/modes-and-representation.wl` substitutes twelve exact Jacobi examples, covering both signs of $\kappa$ and $m\mapsto-m$, into both decoupled ODEs and obtains zero residual. It also checks both branch spectra against $E=\Delta_\pm+N$.
+- **Verified:** `verification/modes-and-representation.wl` substitutes exact Jacobi pairs with $n=0,1,2$, both signs of $\kappa$, and both $m$ and $-m$ directly into the two first-order intertwining relations and obtains zero residual. It separately retains the squared-ODE checks as regressions and checks the algebraic rewriting of both branch spectra as $E=\Delta_\pm+N$. The $\gamma_5$ anticommutator used in the alternative map is checked in `verification/noether-time-translation.wl`.
 - **Assumptions:** the first-order radial coupling and standard regular spin structure; completeness of the resulting eigenbasis uses the positive self-adjoint extension result cited in the literature notes.
 - **Not verified:** no mixed boundary condition or endpoint logarithmic mode is included.

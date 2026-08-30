@@ -100,6 +100,73 @@ fHatMinusNegativeKappa[rho_, nr_, mass_, k_] :=
     Sin[rho]^k Cos[rho]^(mass + 1) *
     JacobiP[nr, k - 1/2, mass + 1/2, Cos[2 rho]];
 
+(* Direct first-order Dirac checks.  The ODE residuals below are retained only
+   as regressions of the squared system. *)
+firstOrderResidualsPositiveKappa[rho_, nr_, mass_, kap_] := Module[
+  {eps = 2 nr + mass + kap, nu = mass + kap,
+   superpotential = kap Cot[rho] - mass Tan[rho]},
+  {
+    FullSimplify[
+      D[fHatMinus[rho, nr, mass, kap], rho] +
+        superpotential fHatMinus[rho, nr, mass, kap] -
+        (eps - nu) fHatPlus[rho, nr, mass, kap],
+      Assumptions -> 0 < rho < Pi/2
+    ],
+    FullSimplify[
+      -D[fHatPlus[rho, nr, mass, kap], rho] +
+        superpotential fHatPlus[rho, nr, mass, kap] -
+        (eps + nu) fHatMinus[rho, nr, mass, kap],
+      Assumptions -> 0 < rho < Pi/2
+    ]
+  }
+];
+
+firstOrderResidualsNegativeKappa[rho_, nr_, mass_, k_] := Module[
+  {eps = 2 nr + mass + k + 1, nu = mass - k,
+   superpotential = -k Cot[rho] - mass Tan[rho]},
+  {
+    FullSimplify[
+      D[fHatMinusNegativeKappa[rho, nr, mass, k], rho] +
+        superpotential fHatMinusNegativeKappa[rho, nr, mass, k] -
+        (eps - nu) fHatPlusNegativeKappa[rho, nr, mass, k],
+      Assumptions -> 0 < rho < Pi/2
+    ],
+    FullSimplify[
+      -D[fHatPlusNegativeKappa[rho, nr, mass, k], rho] +
+        superpotential fHatPlusNegativeKappa[rho, nr, mass, k] -
+        (eps + nu) fHatMinusNegativeKappa[rho, nr, mass, k],
+      Assumptions -> 0 < rho < Pi/2
+    ]
+  }
+];
+
+firstOrderSamples = Flatten[
+  Table[{nr, mass, k}, {mass, {1/4, -1/4}}, {k, {1, 2}}, {nr, 0, 2}],
+  2
+];
+
+positiveKappaFirstOrderChecks = And @@ Table[
+  firstOrderResidualsPositiveKappa[
+    rho, q[[1]], q[[2]], q[[3]]
+  ] === {0, 0},
+  {q, firstOrderSamples}
+];
+
+negativeKappaFirstOrderChecks = And @@ Table[
+  firstOrderResidualsNegativeKappa[
+    rho, q[[1]], q[[2]], q[[3]]
+  ] === {0, 0},
+  {q, firstOrderSamples}
+];
+
+positiveKappaMissingComponentCheck =
+  fHatMinus[rho, 0, mass, 1] === 0 &&
+  FullSimplify[
+    -D[fHatPlus[rho, 0, mass, 1], rho] +
+      (Cot[rho] - mass Tan[rho]) fHatPlus[rho, 0, mass, 1],
+    Assumptions -> 0 < rho < Pi/2
+  ] === 0;
+
 negativeKappaODEResiduals[rho_, nr_, mass_, k_] := {
   FullSimplify[
     -D[fHatPlusNegativeKappa[rho, nr, mass, k], {rho, 2}] +
@@ -154,23 +221,128 @@ negativeKappaNormalizationChecks = And @@ Table[
   {q, negativeKappaSamples}
 ];
 
+(* Independent exact sample integrals.  The general normalization proof remains
+   the analytic Jacobi-orthogonality calculation in Section 07. *)
+directNormalizationSamples = {
+  {0, 1/4, 1}, {1, 1/4, 1}, {2, 1/4, 2},
+  {0, -1/4, 1}, {1, -1/4, 1}, {2, -1/4, 2}
+};
+
+directPositiveKappaNorm[nr_, mass_, kap_] := FullSimplify[
+  Integrate[
+    fHatPlus[rho, nr, mass, kap]^2 +
+      fHatMinus[rho, nr, mass, kap]^2,
+    {rho, 0, Pi/2},
+    GenerateConditions -> False
+  ]
+];
+
+directNegativeKappaNorm[nr_, mass_, k_] := FullSimplify[
+  Integrate[
+    fHatPlusNegativeKappa[rho, nr, mass, k]^2 +
+      fHatMinusNegativeKappa[rho, nr, mass, k]^2,
+    {rho, 0, Pi/2},
+    GenerateConditions -> False
+  ]
+];
+
+directPositiveKappaNormalizationChecks = And @@ Table[
+  directPositiveKappaNorm[q[[1]], q[[2]], q[[3]]] === 1,
+  {q, directNormalizationSamples}
+];
+
+directNegativeKappaNormalizationChecks = And @@ Table[
+  directNegativeKappaNorm[q[[1]], q[[2]], q[[3]]] === 1,
+  {q, directNormalizationSamples}
+];
+
 normalizabilityChecks = FullSimplify[
   (-2 + 2 m < -1) && (-2 - 2 m < -1) && (2 m < 1),
   Assumptions -> 0 < m < 1/2
 ];
 
+(* Level-one compact-basis boost regression.  On the lowest spin doublet,
+   [M_i^-,M_j^+]=2 delta_ij H-2 I epsilon_ijk J_k. *)
+leviCivita = Normal[LeviCivitaTensor[3]];
+spinOneGenerators = Table[
+  Table[-I leviCivita[[k, i, j]], {i, 3}, {j, 3}],
+  {k, 3}
+];
+spinHalfGenerators = Table[PauliMatrix[k]/2, {k, 3}];
+spinOrbit = FullSimplify[
+  Sum[
+    KroneckerProduct[spinOneGenerators[[k]], spinHalfGenerators[[k]]],
+    {k, 3}
+  ]
+];
+boostGram[delta_] := FullSimplify[
+  2 delta IdentityMatrix[6] + 2 spinOrbit
+];
+
+boostGramCharacteristicCheck = FullSimplify[
+  Factor[CharacteristicPolynomial[boostGram[delta], lambda]] ==
+    (2 (delta - 1) - lambda)^2 (2 delta + 1 - lambda)^4
+];
+
+projectorSpinHalf = FullSimplify[(IdentityMatrix[6] - 2 spinOrbit)/3];
+projectorSpinThreeHalf = FullSimplify[IdentityMatrix[6] - projectorSpinHalf];
+zUp = UnitVector[6, 5];
+
+boostSelectionProjectorChecks =
+  FullSimplify[projectorSpinHalf.projectorSpinHalf == projectorSpinHalf] &&
+  FullSimplify[
+    projectorSpinThreeHalf.projectorSpinThreeHalf == projectorSpinThreeHalf
+  ] &&
+  FullSimplify[projectorSpinHalf.projectorSpinThreeHalf ==
+    ConstantArray[0, {6, 6}]];
+
+spinHalfClebschWeightCheck = FullSimplify[
+  Conjugate[zUp].projectorSpinHalf.zUp == 1/3
+];
+
+lowestToLevelOneMatrixElementSquaredCheck = FullSimplify[
+  Conjugate[zUp].projectorSpinHalf.boostGram[delta].
+      projectorSpinHalf.zUp == 2 (delta - 1)/3,
+  Assumptions -> delta > 1
+];
+
+boostAdjointAndPositivityCheck = FullSimplify[
+  Sqrt[2 (delta - 1)/3] ==
+    Conjugate[Sqrt[2 (delta - 1)/3]] &&
+  2 (delta - 1)/3 > 0,
+  Assumptions -> delta > 1
+];
+
 checks = <|
-  "StandardSpectrumMatchesDeltaPlus" -> TrueQ[standardSpectrumChecks],
-  "AlternativeSpectrumMatchesDeltaMinus" -> TrueQ[alternativeSpectrumChecks],
-  "LevelDegeneracyMatchesSpinorDescendants" -> TrueQ[degeneracyChecks],
-  "CasimirMatchesBothRoots" -> TrueQ[casimirChecks],
-  "RadialODEExamplesZero" -> TrueQ[odeChecks],
-  "NegativeKappaRadialODEExamplesZero" -> TrueQ[negativeKappaODEChecks],
-  "JacobiNormalizationExamplesUnity" -> TrueQ[normalizationChecks],
-  "NegativeKappaNormalizationExamplesUnity" ->
+  "SpectrumAlgebraStandardDeltaPlus" -> TrueQ[standardSpectrumChecks],
+  "SpectrumAlgebraAlternativeDeltaMinus" -> TrueQ[alternativeSpectrumChecks],
+  "LevelDegeneracyAlgebra" -> TrueQ[degeneracyChecks],
+  "CasimirAlgebraBothRoots" -> TrueQ[casimirChecks],
+  "PositiveKappaFirstOrderResidualsZero" ->
+    TrueQ[positiveKappaFirstOrderChecks],
+  "NegativeKappaFirstOrderResidualsZero" ->
+    TrueQ[negativeKappaFirstOrderChecks],
+  "NZeroMissingComponentFirstOrderCompatible" ->
+    TrueQ[positiveKappaMissingComponentCheck],
+  "SquaredODEPositiveKappaRegression" -> TrueQ[odeChecks],
+  "SquaredODENegativeKappaRegression" -> TrueQ[negativeKappaODEChecks],
+  "JacobiNormFractionAlgebraPositiveKappa" -> TrueQ[normalizationChecks],
+  "JacobiNormFractionAlgebraNegativeKappa" ->
     TrueQ[negativeKappaNormalizationChecks],
-  "MassWindowPowerCounting" -> TrueQ[normalizabilityChecks]
+  "DirectExactNormIntegralsPositiveKappa" ->
+    TrueQ[directPositiveKappaNormalizationChecks],
+  "DirectExactNormIntegralsNegativeKappa" ->
+    TrueQ[directNegativeKappaNormalizationChecks],
+  "MassWindowPowerCounting" -> TrueQ[normalizabilityChecks],
+  "LevelOneBoostGramEigenvalues" -> TrueQ[boostGramCharacteristicCheck],
+  "LevelOneBoostSelectionProjectors" -> TrueQ[boostSelectionProjectorChecks],
+  "LevelOneBoostCGWeight" -> TrueQ[spinHalfClebschWeightCheck],
+  "LowestToLevelOneBoostMatrixElement" ->
+    TrueQ[lowestToLevelOneMatrixElementSquaredCheck],
+  "BoostAdjointAndPositivity" -> TrueQ[boostAdjointAndPositivityCheck]
 |>;
 
 Print[checks];
-If[And @@ Values[checks], Exit[0], Exit[1]];
+allPassed = TrueQ[And @@ Values[checks]];
+Print[If[allPassed, "OVERALL: PASS", "OVERALL: FAIL"]];
+If[allPassed, Exit[0], Exit[1]];

@@ -63,10 +63,11 @@ Amsel--Marolf use the inward normal associated with a defining function. Their l
 - [05-noether-and-so23-charges.md](05-noether-and-so23-charges.md): source-extended Kosmann symmetry and boundary-complete charges.
 - [06-global-modes.md](06-global-modes.md): spinor harmonics, radial equations, regular solutions, and both spectra.
 - [07-symplectic-normalization-and-CAR.md](07-symplectic-normalization-and-CAR.md): Jacobi normalization, graded brackets, CAR, particles and antiparticles.
-- [08-so23-representation.md](08-so23-representation.md): lowest weights, level multiplicities, Casimir, and second quantization.
+- [08-so23-representation.md](08-so23-representation.md): lowest weights, level multiplicities, Casimir, level-one boost matrix element, and second quantization.
 - [09-special-points.md](09-special-points.md): $m=0$ and the $m\to1/2$ Di endpoint.
 - [10-comparison-with-scalar.md](10-comparison-with-scalar.md): precise comparison with the uploaded scalar manuscript.
 - [verification/CLAIM_LEDGER.md](verification/CLAIM_LEDGER.md): claim-by-claim status and evidence.
+- [verification/noether-time-translation.wl](verification/noether-time-translation.wl): time-Kosmann cancellation, one-mode Noether eigenvalues, particle/antiparticle ordering, and Hamiltonian/$U(1)$ generator signs.
 - [literature/README.md](literature/README.md): provenance map and limits of each source.
 - [TODO.md](TODO.md): remaining calculations, with explicit checks.
 
@@ -90,12 +91,14 @@ Q_\xi
 D(\Delta_\pm,\tfrac12).
 $$
 
-Here “closed” means that the action variation, falloff powers, flux, mode ODEs, spectra, normalization formula, CAR inversion, lowest weight, $SO(3)$ content, level degeneracies, and quadratic Casimir agree within one convention set. It does **not** mean that every functional-analytic domain theorem has been re-proved from first principles.
+Here “closed” means that the action variation, explicit finite-cutoff Noether wall/corner identity, limiting Hamiltonian identity, direct first-order Dirac mode equations, spectra, analytic normalization formula, action-derived mode Hamiltonian, CAR inversion, lowest weight, $SO(3)$ content, level degeneracies, quadratic Casimir, and one level-one boost matrix element agree within one convention set. It does **not** mean that every functional-analytic domain theorem has been re-proved from first principles.
+
+There is no remaining non-endpoint, non-functional-analysis blocker in this main line. The module names $D(\Delta_\pm,\tfrac12)$ use the standard unitary positive-energy classification theorem; the project directly supplies its lowest-weight, $K$-type, Casimir, and level-one boost inputs.
 
 The principal limitations are:
 
 - positivity and self-adjointness of the two pure extensions are literature-supported by the standard Dirac inner product and extension analysis, not independently reconstructed as a full operator-domain theorem here;
-- the finite-cutoff Noether identity is derived for the fixed AdS vielbein treated as a source and for exact Killing fields; fluctuating gravity and asymptotic, non-Killing transformations are outside scope;
+- the finite-cutoff Noether identity is derived for the fixed AdS vielbein and regulator embedding treated as sources and for exact Killing fields; fluctuating gravity and asymptotic, non-Killing transformations are outside scope;
 - the $m=0$ mixed-polarization classification and the renormalized $m=1/2$ singleton limit remain open;
 - no interacting CAR representation, backreaction, supersymmetry, or holographic correlator is claimed.
 
@@ -105,6 +108,6 @@ The best next calculation is the $m\uparrow1/2$ endpoint audit: compute the loga
 
 ## Verification summary
 
-- **Verified:** explicit Clifford representation, spin connection contraction, Dirac operator, indicial roots, subleading denominators, radial Pöschl--Teller equations in twelve exact samples covering both signs of $\kappa$, standard/alternative spectra, Jacobi normalization identities, level degeneracies, Casimir, polarization signs, graded inverse, and one-mode CAR generators.
+- **Verified:** explicit Clifford representation, spin connection contraction, Dirac operator, indicial roots, subleading denominators, finite-wall Noether and corner formulas, $\partial_t$ Kosmann cancellation, first-order Jacobi residuals for $n=0,1,2$ and both signs of $\kappa$ in the standard and $m\mapsto-m$ branches, squared-ODE regressions, analytic Jacobi normalization with independent exact sample integrals, action-derived Hamiltonian/$U(1)$ signs, level degeneracies, Casimir, level-one boost Gram matrix and matrix element, polarization signs, graded inverse, and particle/antiparticle CAR generators.
 - **Assumptions:** smooth derivative-controlled power-law expansions; fixed spin structure and global AdS background; source-free pure standard or alternative boundary conditions; exact AdS Killing vectors; $0<m<1/2$.
 - **Not verified:** an independent deficiency-index classification of all self-adjoint extensions; a renormalized endpoint symplectic form; mixed $m=0$ representation theory; interacting or gravitational completion.

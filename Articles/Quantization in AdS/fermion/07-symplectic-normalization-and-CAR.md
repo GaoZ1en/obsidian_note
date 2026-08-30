@@ -102,7 +102,104 @@ $$
 
 The remaining elementary anticommutators vanish.
 
-## 4. Algebra versus representation
+## 4. Charges in mode space
+
+Section 05 derived the time-translation charge from the completed action and established
+
+$$
+Q_{\partial_t}[U_I]=+E_I,
+\qquad
+Q_{\partial_t}[V_I]=-E_I.
+$$
+
+The positive- and negative-frequency eigenspaces are orthogonal for the self-adjoint one-particle time-translation operator. Substituting the mode expansion into the classical Noether charge therefore gives
+
+$$
+\begin{aligned}
+Q_{\partial_t}
+&=\sum_I\left(
+E_I a_I^*a_I-E_I b_Ib_I^*
+\right)\\
+&=\boxed{
+\sum_IE_I\left(a_I^*a_I+b_I^*b_I\right)
+}.
+\end{aligned}
+$$
+
+The second equality uses the Grassmann ordering $b_Ib_I^*=-b_I^*b_I$. This minus sign is essential: the negative one-particle eigenvalue of $V_I$ and the odd reordering combine to give positive classical antiparticle energy.
+
+For the phase convention $X_{U(1)}\psi=-i\psi$ used in Section 05, the action-derived classical charge is
+
+$$
+\begin{aligned}
+Q_{U(1)}
+&=\sum_I\left(a_I^*a_I+b_Ib_I^*\right)\\
+&=\boxed{
+\sum_I\left(a_I^*a_I-b_I^*b_I\right)
+}.
+\end{aligned}
+$$
+
+Inverting the even symplectic form as in Section 03 makes these two functionals the generators of time translation and global phase rotation. In particular, after quantization the CAR give
+
+$$
+[\widehat H,\widehat a_I]=-E_I\widehat a_I,
+\qquad
+[\widehat H,\widehat b_I^\dagger]=+E_I\widehat b_I^\dagger,
+$$
+
+$$
+[\widehat Q_{U(1)},\widehat a_I]=-\widehat a_I,
+\qquad
+[\widehat Q_{U(1)},\widehat b_I^\dagger]=-\widehat b_I^\dagger.
+$$
+
+If the negative-frequency term is quantized before normal ordering, it is
+
+$$
+-E_I\widehat b_I\widehat b_I^\dagger
+=E_I\widehat b_I^\dagger\widehat b_I-E_I.
+$$
+
+Dropping the field-independent vacuum constant gives
+
+$$
+\boxed{
+\widehat H
+=\sum_IE_I\left(
+\widehat a_I^\dagger\widehat a_I
++\widehat b_I^\dagger\widehat b_I
+\right).
+}
+$$
+
+Likewise, fermionic normal ordering of
+$\widehat b_I\widehat b_I^\dagger$ gives
+$-\widehat b_I^\dagger\widehat b_I$, so
+
+$$
+\boxed{
+\widehat Q_{U(1)}
+=\sum_I\left(
+\widehat a_I^\dagger\widehat a_I
+-\widehat b_I^\dagger\widehat b_I
+\right).
+}
+$$
+
+This supplies the continuous chain
+
+$$
+\boxed{
+\text{completed action}
+\longrightarrow Q_{\partial_t},Q_{U(1)}
+\longrightarrow\Omega^{-1}_{\rm graded}
+\longrightarrow\mathrm{CAR}
+\longrightarrow\widehat H,\widehat Q_{U(1)}.
+}
+$$
+
+## 5. Algebra versus representation
 
 The CAR algebra follows from the inverse graded symplectic structure. A Fock representation additionally requires a complex structure/positive-energy splitting. Global time translation and the spectra in Section 06 supply that choice.
 
@@ -114,25 +211,7 @@ $$
 \widehat b_I|0\rangle=0.
 $$
 
-The normal-ordered Hamiltonian and global $U(1)$ charge are
-
-$$
-\widehat H
-=\sum_IE_I\left(
-\widehat a_I^\dagger\widehat a_I
-+\widehat b_I^\dagger\widehat b_I
-\right),
-$$
-
-$$
-\widehat Q_{U(1)}
-=\sum_I\left(
-\widehat a_I^\dagger\widehat a_I
--\widehat b_I^\dagger\widehat b_I
-\right).
-$$
-
-They obey
+The action-derived, normal-ordered operators above obey
 
 $$
 [\widehat Q_{U(1)},\widehat\psi]=-\widehat\psi,
@@ -144,6 +223,6 @@ $$
 
 ## Verification
 
-- **Verified:** the Jacobi norms reduce analytically to the two fractions above; Mathematica checks representative standard and $m\mapsto-m$ cases. `verification/polarization-and-car.wl` inverts the graded mode block and checks the one-mode CAR and number-generator commutators.
+- **Verified:** the general normalization proof is the analytic Jacobi-orthogonality reduction to the two component fractions above. `verification/modes-and-representation.wl` separately performs exact direct integrals in representative standard and $m\mapsto-m$ cases; those samples are regressions, not the general proof. `verification/polarization-and-car.wl` inverts the graded mode block. `verification/noether-time-translation.wl` checks the $\partial_t$ Kosmann cancellation, the $\pm E$ one-mode Noether eigenvalues, a two-mode particle/antiparticle CAR representation, the Hamiltonian and $U(1)$ commutators, and the antiparticle normal-ordering constant.
 - **Assumptions:** orthonormal completeness of the pure-extension modes and the global positive-energy splitting.
 - **Not verified:** uniqueness of the Fock representation in an infinite-dimensional setting is not claimed.

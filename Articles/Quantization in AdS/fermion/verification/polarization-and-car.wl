@@ -35,4 +35,6 @@ checks = <|
 |>;
 
 Print[checks];
-If[And @@ Values[checks], Exit[0], Exit[1]];
+allPassed = TrueQ[And @@ Values[checks]];
+Print[If[allPassed, "OVERALL: PASS", "OVERALL: FAIL"]];
+If[allPassed, Exit[0], Exit[1]];

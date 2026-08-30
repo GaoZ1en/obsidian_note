@@ -14,6 +14,16 @@
   **Context:** this project uses the Amsel--Marolf/Ishibashi--Wald extension result as literature support.
   **Check:** compute the boundary form, deficiency spaces, and positivity for each $\kappa$, then prove completeness of the Jacobi basis.
 
-- [ ] **Action:** evaluate one nontrivial boost charge on normalized modes.
-  **Context:** the module identification already follows from the lowest state, all $K$-types, and Casimir, but an explicit matrix element would be a useful regression test.
-  **Check:** verify the $E\mapsto E+1$ selection rule and adjoint relation with the mode inner product.
+## Completed closure audit
+
+- [x] **Action:** make the finite-cutoff Noether wall term and Hamiltonian remainder explicit.
+  **Check:** Section 05 now displays $\beta_{\xi,R}^s$, $\mathcal R_{\xi,R}^{\rm emb}$, the full radial form $\mathfrak b_R^s$, and their pure-BC limits.
+
+- [x] **Action:** substitute the Jacobi modes into the first-order Dirac system.
+  **Check:** exact residuals vanish for $n=0,1,2$, $\kappa>0$, $\kappa<0$, and both $m$ and $-m$ samples; the $n=0$ missing component is checked separately.
+
+- [x] **Action:** connect the action-derived time charge to the classical and quantum mode Hamiltonians.
+  **Check:** the Kosmann cancellation, $\pm E$ one-mode action, Grassmann ordering, CAR commutators, normal-ordering constant, and $U(1)$ charge signs pass in the Noether time-translation verification script.
+
+- [x] **Action:** evaluate a nontrivial lowest-level boost matrix element.
+  **Check:** the level-one Gram matrix gives $g_{3/2}=2\Delta+1$, $g_{1/2}=2(\Delta-1)$ and $\langle1;\frac12,\frac12|M_0^+|0;\frac12,\frac12\rangle=\sqrt{2(\Delta-1)/3}$ with the matching adjoint.

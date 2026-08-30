@@ -122,9 +122,11 @@ checks = <|
 |>;
 
 Print[checks];
+allPassed = TrueQ[And @@ Values[checks]];
+Print[If[allPassed, "OVERALL: PASS", "OVERALL: FAIL"]];
 If[! TrueQ[checks["DiracConnectionResidualZero"]],
   Print["ComputedConnection=", MatrixForm[contractedSpinConnection]];
   Print["ExpectedConnection=", MatrixForm[expectedContractedSpinConnection]];
   Print["ConnectionResidual=", MatrixForm[diracConnectionResidual]];
 ];
-If[And @@ Values[checks], Exit[0], Exit[1]];
+If[allPassed, Exit[0], Exit[1]];
