@@ -1,4 +1,4 @@
-(* Exact checks for Stage 1.1 and the coupled finite double-null spin-0+2 pullback. *)
+(* Exact checks for Stage 1.1/2 and the Stage-2.1 corner repair. *)
 
 ClearAll[assertZero, assertTrue];
 assertZero[label_, expr_] := Module[{r = FullSimplify[expr]},
@@ -14,7 +14,7 @@ assertTrue[label_, expr_] := Module[{r = FullSimplify[expr]},
   ]
 ];
 
-Print["Finite double-null gravity Stage 1.1/2: exact identity checks"];
+Print["Finite double-null gravity Stage 1.1/2.1: exact identity checks"];
 
 (* V0: exact matrix realization of the corrected projector. *)
 Clear[mu];
@@ -80,17 +80,23 @@ assertZero["V2 square-root area coefficient is 2 C_G",
   FullSimplify[4 Sqrt[Omega0 outerArea] areaWedgeCoefficient - 2 cG,
     Assumptions -> {Omega0 > 0, F[L] > 0}]];
 
-(* V3: initial null-null endpoint plus joint cancellation. *)
-Clear[a0, da0];
-initialPlusEndpoint = -cG Omega0 da0/2;
-initialMinusEndpoint = -cG Omega0 da0/2;
-initialJointVariation = cG (Omega0 da0 + a0 dOmega0);
-initialCombined = Expand[
-  initialPlusEndpoint + initialMinusEndpoint + initialJointVariation];
-assertZero["V3 initial normalization variation cancels",
-  Coefficient[initialCombined, da0]];
-assertZero["V3 residual initial corner potential",
-  initialCombined - cG a0 dOmega0];
+(* V3: unified HF cut representative and positive initial corner curl. *)
+Clear[m, dm, h, dh];
+normalBlock = {{0, -Exp[-m]}, {-Exp[-m], 0}};
+assertZero["V3 HF normal scalar is h=-m",
+  FullSimplify[Log[Sqrt[-Det[normalBlock]]] + m,
+    Assumptions -> Element[m, Reals]]];
+initialPlusEndpointHF = -cG (1 - m) dOmega0/2;
+initialMinusEndpointHF = -cG (1 - m) dOmega0/2;
+initialCombinedHF = Expand[
+  initialPlusEndpointHF + initialMinusEndpointHF];
+assertZero["V3 unified HF initial potential",
+  initialCombinedHF - cG (m - 1) dOmega0];
+assertZero["V3 positive corner curl coefficient",
+  D[Coefficient[initialCombinedHF, dOmega0], m] - cG];
+cornerGeneratorDifferential = cG (Omega0 dm + (m - 1) dOmega0);
+assertZero["V3 boost-polarization canonical transformation",
+  Expand[initialCombinedHF - cornerGeneratorDifferential + cG Omega0 dm]];
 
 (* V4: kappa versus kappa+theta, including both endpoint shifts. *)
 thetaBoundaryIntegral = FullSimplify[Integrate[area[lambda] theta[lambda],
@@ -111,8 +117,8 @@ Clear[OmegaP, OmegaM, cP, cM];
 cP = 1/(2 Sqrt[Omega0 OmegaP]);
 cM = 1/(2 Sqrt[Omega0 OmegaM]);
 extendedMatrix = {
-  {0, 1, cP, 0, cM, 0},
-  {-1, 0, 0, 0, 0, 0},
+  {0, -1, cP, 0, cM, 0},
+  {1, 0, 0, 0, 0, 0},
   {-cP, 0, 0, -1, 0, 0},
   {0, 0, 1, 0, 0, 0},
   {-cM, 0, 0, 0, 0, -1},
@@ -336,5 +342,5 @@ assertZero["V14 generic Omega theta endpoint derivative",
 
 Print["PASS all declared identities"];
 Print["NOT PROVED: full gauge nondegeneracy, a concrete closing wall,"];
-Print["NOT PROVED: full Reisenberger equivalence, spin-1 reduction,"];
+Print["NOT PROVED: variable-shape closing-wall completion or spin-1 reduction,"];
 Print["NOT PROVED: completeness, surjectivity, or continuum topology."];

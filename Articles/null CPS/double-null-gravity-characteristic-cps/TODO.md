@@ -8,10 +8,11 @@
   with only the unused $b_\pm$ source directions in its kernel.
 
 - [x] Action: repair Stage 1.1 with the Damour constraint.
-  Context: $\omega_A$ is transported from the shared $\omega_{A0}$ and is not
-  assumed to vanish; fixed $\delta\ell^A=0$ still removes the spin-1 potential.
-  Check: V8 verifies the exact shear-free solution and records that global
-  $\omega_A=0$ needs $\omega_{A0}=0=D_A\theta_0$ in this gauge.
+  Context: the shared datum is $\widehat\omega_A$; it determines distinct
+  branch-adapted initial values $\omega_A^{(+)}$ and $\omega_A^{(-)}$.
+  Fixed $\delta\ell^A=0$ still removes the spin-1 potential.
+  Check: V8 verifies the exact shear-free transport and V16 verifies the
+  two-branch sum/difference dictionary.
 
 - [x] Action: repair the affine composition claim.
   Context: geometric boost $b$ and dynamical area momentum
@@ -26,24 +27,41 @@
   Check: V10--V14 verify the coefficients, finite-mode Green/curl identities,
   shared corner, and generic endpoint representative identity.
 
-- [ ] Action: complete the field-dependent affine-to-area transformation to
-  Reisenberger's full form.
-  Context: the conformal bulk coefficient agrees, but
-  $n_s=(d\lambda_s/dv_s)\ell_s$ makes the normal scalar and twist dictionary
-  field dependent.  The isolated corner blocks also have an unresolved
-  relative sign and a shared-corner conformal endpoint term.
-  Check: reproduce all surface terms and the corner sign without freezing or
-  deleting induced cut contributions.
+- [x] Action: close the Stage-2.1 initial corner and two-branch normal
+  connection in one HF representative.
+  Context: $h=-m$ follows directly from the normal block and gives
+  $+C_G\delta m_0\wedge\delta\Omega_0$; the former negative sign mixed
+  incompatible cut/joint splits.
+  Check: V15--V16 verify the determinant, corner curl, exact polarization
+  change, and $\widehat\omega_A$ dictionary.
+
+- [x] Action: complete the field-dependent affine-to-area transformation on
+  Reisenberger's declared fixed-map, fixed-outer-two-metric sector.
+  Context: $n_s=(d\lambda_s/dv_s)\ell_s$, the map is valid only where
+  $\theta_s\neq0$, and the moving lower limit produces the shared conformal
+  endpoint term.
+  Check: calculation 03 derives all fixed-sector surface terms; V17--V19
+  verify the Jacobians, endpoint coefficient, and corner-scale cancellation.
+
+- [x] Action: prove spin-0+spin-2 characteristic composition.
+  Context: match $(\Omega,\bar q_{AB},\theta,\sigma_{AB})$, equivalently
+  $(q_{AB},B_{AB})$, while keeping the geometric boost port distinct.
+  Check: the reduced density is additive; V20 checks the off-locus first-jet
+  obstruction and V21 checks two-/three-segment finite-mode regressions.
 
 - [ ] Action: realize the abstract $b_\pm$ ports with one concrete oriented
   closing geometry if a geometric boundary action is needed.
-  Context: Stage 1 is already closed as an extended port system; this step
-  identifies the port momenta with explicit outer normals/embeddings.
-  Check: reproduce (5.3) up to the declared endpoint canonical transformation.
+  Context: Stage 2.1 shows that variable outer conformal shape also requires a
+  traceless port $\pi_s^{AB}\delta\bar q_{AB,sL}$.  A concrete closing action
+  must identify both $b_s$ and $\pi_s^{AB}$.
+  Check: reproduce calculation 03 equations (3.16)--(3.17) up to the declared
+  endpoint canonical transformation.
 
 - [ ] Action: begin Stage 3 only in the controlled classical transport lane.
   Context: Stage-2 data now determine
-  $D_A(\theta/2)-D_B\sigma^B{}_A$, but the symplectic partner of $\omega_A$
-  depends on the generator/corner embedding policy.
+  $D_A(\theta/2)-D_B\sigma^B{}_A$, and Stage 2.1 fixes
+  $\widehat\omega_A$ unambiguously, but its symplectic partner depends on the
+  generator/corner embedding policy.  The Stage-3 gate is now open; no Stage-3
+  derivation has been started.
   Check: choose that policy, solve Damour, and compare the resulting
   endpoint-map/twist block with Reisenberger; do not introduce quantum data.

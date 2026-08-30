@@ -1,6 +1,68 @@
 # Verification Run Log
 
+## 2026-08-30 — Stage-2.1 corner, area-gauge, and composition closure
+
+Working directory:
+
+```text
+Articles/null CPS/double-null-gravity-characteristic-cps
+```
+
+Commands:
+
+```text
+wolframscript -file scripts/spin0_and_spin2_checks.wl
+wolframscript -file scripts/stage21_corner_area_composition_checks.wl
+```
+
+Result: both commands exited with code `0`; V0--V22 passed.
+
+Decisive new checks:
+
+- V15 verifies $h=-m$ from the exact normal $2\times2$ block, the positive
+  unified HF corner curl, and the exact area/boost polarization generator;
+- V16 verifies
+  $\omega_A^{(+)}+\omega_A^{(-)}=-D_A m$,
+  the $\widehat\omega_A$ dictionary, and
+  $\tau_{\ell A}=2\widehat\omega_A$;
+- V17 verifies
+  $\partial_v\log B=v\operatorname{tr}(K^2)/8$,
+  $B_0=2/\theta_0$, and the controlled field variations in a diagonal finite
+  mode;
+- V18 reproduces the coefficient of the shared-corner conformal endpoint term
+  in that mode;
+- V19 verifies that the two initial normal-scale terms cancel the
+  $m-\lambda_R$ part of the affine corner and leave the Reisenberger sign;
+- V20 verifies the first-jet mismatch norm
+  $\mathcal J^2=\Delta\sigma^2+(\Delta\theta)^2/2$ and its generic nonvanishing
+  before expansion/shear matching;
+- V21 verifies two-segment additivity and three-segment associativity for two
+  independent pairs in a diagonal coupled mode;
+- V22 verifies the diagonal focusing equation and the shear-free limit.
+
+Analytic source check: HF arXiv:1611.03096 equations (4.29)--(4.30) define the
+single bulk-plus-cut canonical split used for the repaired corner.  Its
+$e^h=\sqrt{|H|}$ definition gives $h=-m$ directly.  Reisenberger
+arXiv:1211.3880 equations (100), (105)--(118) were then used as regression
+targets for the fixed-map area form, including the moving-lower-limit surface
+term.  The project derivation is in calculation 03.
+
+Assumptions: four-dimensional vacuum; smooth positive conformal profiles;
+finite caustic-free affine intervals; fixed labels and endpoint maps;
+monotonic area on the area-chart sector; fixed outer two-metric for the direct
+Reisenberger equality; coherent full first-jet matching for composition.
+
+Not verified by this run: an area chart through $\theta=0$; a unique
+variable-shape closing-wall momentum; the varying endpoint-map/twist block;
+spin-1 reduction; full gravitational gauge nondegeneracy; functional
+completion, completeness, surjectivity, positivity, or continuum topology.
+
 ## 2026-08-30 — Stage-1.1 repair and coupled Stage-2 pullback
+
+Superseded boundary: the Stage-2.1 entry above resolves the corner sign and
+the fixed-map area-gauge comparison.  V8--V14 remain valid within their stated
+scope; the historical "unresolved relative sign" wording below records the
+earlier gate rather than the current project status.
 
 Working directory:
 

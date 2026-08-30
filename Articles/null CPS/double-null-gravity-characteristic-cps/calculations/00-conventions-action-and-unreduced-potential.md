@@ -5,18 +5,20 @@
 **Stage-0 verdict: the kinematic conventions and one unreduced action
 representative are fixed.**  The projector, rescaling laws, Raychaudhuri
 conventions, action-representative shift, and spin-1 dictionary below follow
-from the displayed definitions.  The initial null--null normalization
-cancellation is derived in section 6 rather than assumed.  The exact geometry
-closing the two *outer* cuts is not fixed; its signed joint variables are kept
-as finite-cell ports rather than discarded.
+from the displayed definitions.  Section 6 computes the initial cut entirely
+in the HF canonical representative; it does not mix that cut split with a
+separately normalized LMPS/Jubb joint split.  The exact geometry closing the
+two *outer* cuts is not fixed; its signed variables are kept as finite-cell
+ports rather than discarded.
 
 **Known from literature.**  The $\kappa$ null term and logarithmic joint rules
 are the Dirichlet representative of Lehner--Myers--Poisson--Sorkin (LMPS),
 arXiv:1609.00207, especially their action summary (1.2)--(1.3) and null-joint
 rule following it.  The alternative $\kappa+\theta$ representative is the
 Parattu--Chakraborty--Majhi--Padmanabhan boundary term, arXiv:1501.01053.  The
-unified endpoint bookkeeping is checked against Jubb--Samuel--Sorkin--Surya,
-arXiv:1612.00149.  The canonical null potential and the distinction between
+endpoint bookkeeping may be compared with Jubb--Samuel--Sorkin--Surya,
+arXiv:1612.00149 only after one canonical split is fixed.  The canonical null
+potential and the distinction between
 normal connection and twist use Hopfmüller--Freidel (HF), arXiv:1611.03096,
 eqs. (3.31), (A3), (4.29)--(4.30), and (5.4)--(5.5).  The Carrollian momentum
 interpretation is only a terminology check against
@@ -160,7 +162,7 @@ $$
 n_+^a=e^m\ell_-^a,\qquad \ell_+\!\cdot n_+=-1,
 $$
 
-and define the user's Hájíček/normal connection
+and define the $+$-branch Hájíček/normal connection
 
 $$
 \omega_A:=-q_A{}^a n_{+b}\nabla_a\ell_+^b
@@ -168,7 +170,39 @@ $$
 \tag{3.1}
 $$
 
-For comparison with HF set $L=\ell_+$ and $\bar L=-n_+$, so
+Write this form as $\omega_A^{(+)}$.  The other branch has its own adapted
+form
+
+$$
+\omega_A^{(-)}:=-e^m q_A{}^a\ell_{+b}\nabla_a\ell_-^b.
+\tag{3.1a}
+$$
+
+Differentiating $\ell_+\cdot\ell_-=-e^{-m}$ directly gives
+
+$$
+\boxed{
+\omega_A^{(+)}+\omega_A^{(-)}=-D_A m.}
+\tag{3.1b}
+$$
+
+The shared double-null datum is therefore
+
+$$
+\widehat\omega_A
+:=\frac12(\omega_A^{(+)}-\omega_A^{(-)}),
+\qquad
+\omega_A^{(+)}=\widehat\omega_A-\frac12D_A m,
+\qquad
+\omega_A^{(-)}=-\widehat\omega_A-\frac12D_A m.
+\tag{3.1c}
+$$
+
+Calculation 03 derives this dictionary and its relation to Reisenberger's
+twist.  A single branch-adapted $\omega_A$ must not be assigned unchanged to
+both sheets.
+
+For comparison with HF on $N_+$ set $L=\ell_+$ and $\bar L=-n_+$, so
 $L\cdot\bar L=+1$, which is HF's normal-frame convention.  Their normal
 connection is
 
@@ -269,17 +303,17 @@ meeting $N_\pm$.  Equations (4.2)--(4.3) are precisely where the outer
 embedding and normalization polarization enters.  An additive constant in
 $a_J$ is not discarded when $\Omega$ varies.
 
-After the characteristic-orientation conversion, fix the initial joint sign
-by
+For later comparison, one LMPS logarithmic-joint convention would write
 
 $$
-I_{S_0}=C_G\int_{S_0}\Omega_0a_0\,d^2x.
+I_{S_0}^{\rm LMPS}=C_G\int_{S_0}\Omega_0a_0\,d^2x.
 \tag{4.4}
 $$
 
-This fixes the convention used below.  It does **not** yet identify the corner
-potential with $a_0\delta\Omega_0$: that result follows only after combining
-the two sheet endpoint variations with $\delta I_{S_0}$ in section 6.
+This formula is not inserted independently into the HF cut decomposition of
+section 5.  The two decompositions differ by total field-space and cut
+variations.  Section 6 uses HF equations (4.29)--(4.30) consistently and only
+then compares the resulting two-form with the LMPS/Reisenberger variables.
 
 The Parattu representative is
 
@@ -361,80 +395,73 @@ $$
 $$
 
 up to the already declared orientation conversion.  The $h$ variables encode
-the normal/rigging choice at a cut.  At $S_0$ the two sheet terms and the
-single null--null joint must be combined before replacing the result by the
-relative boost $m_0$.  The $h$-split in (5.3) and the logarithmic-joint split
-below are related by cut and total-field-space variations; neither split may
-be used while silently dropping a cut.
+the normal metric at a cut.  At $S_0$ both branches see the same $2\times2$
+normal block.  The $h$-split in (5.3) and an LMPS logarithmic-joint split are
+related by cut and total-field-space variations; they must not be added as
+though they were independent terms.
 
-## 6. Initial null--null joint from the combined variation
+## 6. Initial cut in the unified HF representative
 
-This subsection fixes the missing Stage-1 input.  Let $\alpha_\pm$ denote the
-normal-normalization variations contributed at the initial endpoint by
-$N_\pm$.  For the outward-convex joint at which both positive generators begin,
-the Jubb--Samuel--Sorkin--Surya matching calculation gives, in the present
-normalization,
+HF define the logarithmic normal-volume scalar by
+$e^h=\sqrt{|H|}$.  In the project metric gauge,
 
 $$
-\alpha_+=\alpha_-
-=-\delta\log|\ell_+\!\cdot\ell_-|
-=-\delta a_0.
+H_{ij}=\begin{pmatrix}0&-e^{-m}\\-e^{-m}&0\end{pmatrix},
+\qquad
+\det H=-e^{-2m},
+\qquad
+\boxed{h=-m.}
 \tag{6.1}
 $$
 
-The fixed tangential labels remove the tangential endpoint variation.  With
-the characteristic orientation already chosen in section 1, the two null
-endpoint contributions are therefore
+There is no additive constant in this metric identity.  Constants in a
+logarithmic LMPS joint belong to its separate canonical split.
+
+For fixed generator embeddings, HF equation (4.30) gives the spin-0 cut
+potential
 
 $$
-\left.\Theta_{\partial N_+}\right|_{S_0}
-=\frac{C_G}{2}\int_{S_0}\Omega_0\alpha_+\,d^2x
-=-\frac{C_G}{2}\int_{S_0}\Omega_0\delta a_0\,d^2x,
-\tag{6.2a}
+\Theta_{\partial N}^{\rm HF}
+=\frac{C_G}{2}\int_{\partial N}
+(1+h)\delta\Omega\,d^2x.
+\tag{6.2}
 $$
 
-$$
-\left.\Theta_{\partial N_-}\right|_{S_0}
-=\frac{C_G}{2}\int_{S_0}\Omega_0\alpha_-\,d^2x
-=-\frac{C_G}{2}\int_{S_0}\Omega_0\delta a_0\,d^2x.
-\tag{6.2b}
-$$
-
-The variation of the **single** joint action (4.4) is
+The initial endpoint has negative incidence on both positively parametrized
+branches.  Using the one shared normal block and area,
 
 $$
-\delta I_{S_0}
-=C_G\int_{S_0}
-\left(\Omega_0\delta a_0+a_0\delta\Omega_0\right)d^2x.
+\boxed{
+\begin{aligned}
+\Theta_{S_0}^{\rm HF}
+&=-\frac{C_G}{2}\int_{S_0}(1+h_0)\delta\Omega_0\,d^2x
+-\frac{C_G}{2}\int_{S_0}(1+h_0)\delta\Omega_0\,d^2x\\
+&=C_G\int_{S_0}(m_0-1)\delta\Omega_0\,d^2x.
+\end{aligned}}
 \tag{6.3}
 $$
 
-Combining (6.2a), (6.2b), and (6.3), without discarding either term in
-$\delta I_{S_0}$, gives
+Its field-space curl is
 
 $$
 \boxed{
-\left.\Theta_{\partial N_+}\right|_{S_0}
-+\left.\Theta_{\partial N_-}\right|_{S_0}
-+\delta I_{S_0}
-=C_G\int_{S_0}a_0\delta\Omega_0\,d^2x.}
+\Omega_{S_0}^{\rm HF}
+=+C_G\int_{S_0}
+\delta m_0\wedge\delta\Omega_0\,d^2x.}
 \tag{6.4}
 $$
 
-The $\Omega_0\delta a_0$ terms cancel exactly.  Since
-$a_0=-m_0-\log2$, the residual corner two-form is
+Subtracting
+$\delta[C_G\int\Omega_0(m_0-1)d^2x]$ changes (6.3) to
+$-C_G\int\Omega_0\delta m_0d^2x$ and leaves (6.4) unchanged.  Thus the pair is
+$(\Omega_0,m_0)$ in the convention
+$\Omega=\delta p\wedge\delta q$.
 
-$$
-\boxed{
-\Omega_{S_0}
-=C_G\int_{S_0}\delta a_0\wedge\delta\Omega_0\,d^2x
-=-C_G\int_{S_0}\delta m_0\wedge\delta\Omega_0\,d^2x.}
-\tag{6.5}
-$$
-
-Thus $(\Omega_0,-m_0)$, up to $C_G$ and the fixed overall orientation, is
-proved for this representative.  It is not an assumed variation of the joint
-action alone.
+The former negative sign was obtained by adding a Jubb-style endpoint
+normalization split and an independently signed LMPS joint variation to the HF
+cut split.  That mixed calculation is not one representative and is withdrawn.
+Calculation 03 gives the area-normal transformation and the agreement with
+Reisenberger.
 
 ## 7. Outer ports and the $dY$ ambiguity
 
@@ -485,11 +512,10 @@ $$
 $$
 
 On the extended phase space this is absorbed by the port canonical
-transformation $b_L\mapsto b_L+y_L$ and, at the common initial corner,
-$a_0\mapsto a_0-y_{+0}-y_{-0}$.  If a cut is frozen or deleted without
-transforming its port policy, the result is representative-dependent.  Stage
-1 therefore always states both the selected representative and the port
-policy.
+transformation $b_L\mapsto b_L+y_L$ and the corresponding shift of the common
+initial HF cut momentum.  If a cut is frozen or deleted without transforming
+its port policy, the result is representative-dependent.  Stage 1 therefore
+always states both the selected representative and the port policy.
 
 ## 8. Assumptions and non-results
 
@@ -501,6 +527,7 @@ reparametrization counterterm; common corner metric imposed once.
 with varying embeddings; nondegeneracy after all gauge quotients; or existence
 of a local reduced action in the full characteristic data.  Calculation 01
 now embeds the shear-free block into Damour without imposing
-$\omega_A=0$, and calculation 02 performs the coupled affine spin-0+2
-Raychaudhuri pullback.  Those later results do not remove the stated outer-port
-and embedding-policy boundaries.
+$\omega_A=0$, calculation 02 performs the coupled affine spin-0+2
+Raychaudhuri pullback, and calculation 03 closes the corner/area/composition
+dictionary.  Those later results do not remove the stated outer-port and
+embedding-policy boundaries.

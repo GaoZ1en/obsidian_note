@@ -12,14 +12,13 @@ $$
 r_\pm=r_\pm[\bar q^\pm;\Omega_0,\theta_{\pm0}].
 $$
 
-This closes the analytic Stage-2 pullback at the level of the two null sheets,
-their shared initial corner, and the declared abstract area/boost outer ports.
-It does **not** prove a representative-independent full gravitational CPS, a
-concrete closing-boundary action, or the spin-1/embedding reduction.  Agreement
-with Reisenberger is established only for the conformal bulk coefficient.
-The affine/area normal dictionary is field dependent, and the isolated corner
-blocks have an unresolved relative sign; equivalence of the complete forms
-remains open.
+This closes the analytic Stage-2 affine pullback at the level of the two null
+sheets, their shared initial corner, and the declared abstract area/boost outer
+ports.  Calculation 03 repairs the former corner sign, fixes the two-branch
+normal-connection dictionary, proves fixed-outer-two-metric equivalence with
+Reisenberger on the monotonic-area sector, and proves full first-jet
+composition.  A concrete variable-shape closing-boundary action and the
+spin-1/embedding reduction remain outside this calculation.
 
 **Known from literature.**  The vacuum null constraints and the identification
 of $\bar q_{AB}$ as shear data are taken from the classical part of
@@ -74,14 +73,17 @@ $$
 The remaining corner integration data are specified once as
 
 $$
-(\Omega_0,\theta_{+0},\theta_{-0},m_0,\omega_{A0}).
+(\Omega_0,\theta_{+0},\theta_{-0},m_0,\widehat\omega_A).
 \tag{1.4}
 $$
 
 $\theta_{+0}$ and $\theta_{-0}$ are independent normal derivatives; they are
 not matched.  Likewise the two conformal velocities at $S_0$ are independent.
-$\omega_{A0}$ is shared normal-bundle data.  It is transported by Damour but
-does not enter the present potential because of (1.1).
+$\widehat\omega_A$ is the shared normal-bundle datum.  The branch-adapted
+initial values are
+$\omega^{(+)}_{A0}=\widehat\omega_A-D_A m_0/2$ and
+$\omega^{(-)}_{A0}=-\widehat\omega_A-D_A m_0/2$.  They are transported by
+Damour but do not enter the present potential because of (1.1).
 
 ## 2. Coupled Raychaudhuri reconstruction
 
@@ -393,14 +395,14 @@ $$
 \Theta_{X,\mathrm{red}}^{(0+2)}={}&
 \Theta_{N_+,\mathrm{red}}^{(0+2)}
 +\Theta_{N_-,\mathrm{red}}^{(0+2)}\\
-&+C_G\int_{S_0}a_0\boldsymbol\delta\Omega_0\,d^2x
+&+C_G\int_{S_0}(m_0-1)\boldsymbol\delta\Omega_0\,d^2x
 +C_G\sum_{s=\pm}\int_{S_s}
 b_s\boldsymbol\delta\Omega_{sL}\,d^2x,
 \end{aligned}}
 \tag{6.2}
 $$
 
-where $a_0=-m_0-\log2$.  Its curl is
+Its curl is
 
 $$
 \boxed{
@@ -408,7 +410,7 @@ $$
 \Omega_{X,\mathrm{red}}^{(0+2)}={}&
 \Omega_{N_+,\mathrm{red}}^{(0+2)}
 +\Omega_{N_-,\mathrm{red}}^{(0+2)}
--C_G\int_{S_0}
++C_G\int_{S_0}
 \boldsymbol\delta m_0\wedge\boldsymbol\delta\Omega_0\,d^2x\\
 &+C_G\sum_{s=\pm}\int_{S_s}
 \boldsymbol\delta b_s\wedge
@@ -417,11 +419,12 @@ $$
 \tag{6.3}
 $$
 
-The Stage-1 endpoint normalization cancellation is algebraic in
-$(a_0,\Omega_0)$ and is not changed by shear.  There is still one initial
-area/relative-boost pair.  No extra explicit conformal corner potential is
-generated in this representative with fixed embeddings.  Nevertheless the
-sheet terms depend on the single shared conformal variation
+The unified HF cut calculation is algebraic in $(m_0,\Omega_0)$ and is not
+changed by shear.  There is still one initial area/relative-boost pair.  No
+extra explicit conformal corner potential is generated in the fixed-affine
+chart with fixed embeddings.  The field-dependent area chart does generate
+the shared conformal endpoint term derived in calculation 03.  In the affine
+chart the sheet terms depend on the single shared conformal variation
 
 $$
 B_+(0)=B_-(0)=\bar h^{-1}\boldsymbol\delta\bar h,
@@ -442,11 +445,13 @@ $$
 
 and $\boldsymbol\delta r_s(L_s)$ contains the Green integral (3.8).  Thus the
 area/boost port term in (6.3) already contains induced spin-2/port cross
-couplings.  In the selected HF representative there is no separate traceless
-shape port while $\delta\ell_s^A=0$.  A $dY$ shift with conformal support, or
-the action of a concrete closing boundary whose traceless metric is allowed to
-vary, can add such a cut term.  This is retained as an explicit port-policy
-boundary rather than set to zero as a theorem.
+couplings.  The affine sheet pullback by itself does not fix a separate
+traceless shape momentum while $\delta\ell_s^A=0$.  Calculation 03 shows,
+however, that the field-dependent area map produces a traceless cut term when
+$\delta\bar q_{AB,sL}\neq0$; a differentiable extended port must then retain
+$\pi_s^{AB}\delta\bar q_{AB,sL}$.  Its unique geometric value depends on a
+$dY$ choice and the concrete closing-boundary action.  This is an explicit
+port-policy boundary, not a theorem that the shape momentum vanishes.
 
 Geometric and dynamical matching remain distinct:
 
@@ -563,7 +568,7 @@ $n_R=B_+\ell_+$ and $n_L=B_-\ell_-$, the corrected dictionary is
 | $\theta_s=2r_s'/r_s$ | $2\partial_{\eta_s}\log v_s$ | after identifying affine parameters up to a fixed affine transformation |
 | $\sigma^s_{AB}=\Omega_s\partial_{\eta_s}\bar q^s_{AB}/2$ | $\rho\partial_{\eta_A}e_{pq}/2$ | same shear convention |
 | $m=-\log(-\ell_+\!\cdot\ell_-)$ | $\lambda_R=-\log|n_L\!\cdot n_R|$ | $\lambda_R=m-\log|B_+B_-|$ |
-| $\omega_A$ | area-normal twist $\tau_v$ | $\omega_A=[\tau_v-D\lambda_R]/2-D\log|B_+|$ for the stated assignment |
+| $\widehat\omega_A$ | area-normal twist $\tau_v$ | $\tau_v=2\widehat\omega+D\log|B_+/B_-|$ |
 | $\sqrt{\Omega_{sL}/\Omega_0}$ | $\bar v_A$ | endpoint value of the area parameter |
 | fixed generator/endpoint embeddings | $\delta s_A^i=0$ | removes the endpoint-map/twist potential |
 
@@ -587,7 +592,8 @@ $$
 :=\frac{\ell_-\cdot\nabla_A\ell_+
 -\ell_+\cdot\nabla_A\ell_-}
 {\ell_-\cdot\ell_+}
-=2\omega_A+D_A m,
+=2\widehat\omega_A
+=2\omega_A^{(+)}+D_A m,
 \tag{8.4}
 $$
 
@@ -597,7 +603,17 @@ $$
 \tag{8.5}
 $$
 
-Combining (8.3)--(8.5) yields the table entry for $\omega_A$.  At $S_0$,
+Combining (8.3)--(8.5) yields the table entry for
+$\widehat\omega_A$.  The two branch-adapted forms are
+
+$$
+\omega_A^{(+)}=\widehat\omega_A-\frac12D_A m,
+\qquad
+\omega_A^{(-)}=-\widehat\omega_A-\frac12D_A m.
+\tag{8.5a}
+$$
+
+At $S_0$,
 
 $$
 \lambda_R
@@ -605,10 +621,11 @@ $$
 \tag{8.6}
 $$
 
-The simpler relation $\omega=(\tau_v-D\lambda_R)/2$ holds only after an
-additional normalization such as fixed $B_+=1$; it is not the generic affine
-dictionary.  Reversing the branch assignment changes the corresponding twist
-signs.
+Equivalently,
+$\omega_A^{(+)}=(\tau_{vA}-D_A\lambda_R)/2-D_A\log|B_+|$ and
+$\omega_A^{(-)}=-(\tau_{vA}+D_A\lambda_R)/2-D_A\log|B_-|$.
+The simpler single-$\omega$ relation is not the generic affine dictionary.
+Reversing the branch assignment changes the corresponding twist signs.
 
 ### 8.1 Conformal bulk coefficient
 
@@ -643,17 +660,15 @@ $\lambda_s\mapsto v_s$ is varied.
 ### 8.2 Corner and endpoint sectors
 
 The project internally has one $(\Omega_0,m_0)$ pair, proved in calculation
-00.  Reisenberger also uses one shared $\rho_0/\lambda_R$ sector, but the
-isolated two-form blocks do **not** yet agree.  With the conformal bulk signs
-aligned as in section 8.1, the displayed corner pieces are
+00.  In the unified HF representative its corner block is
 
 $$
 \Omega_{S_0}^{\rm project}
-=-C_G\,\delta m\wedge\delta\Omega_0,
+=+C_G\,\delta m\wedge\delta\Omega_0,
 \tag{8.9}
 $$
 
-whereas the sum of Reisenberger's two branch surface terms contains
+The sum of Reisenberger's two branch surface terms contains
 
 $$
 \Omega_{S_0}^{\rm Reis}
@@ -661,24 +676,18 @@ $$
 \tag{8.10}
 $$
 
-Equations (8.3) and (8.6) show that this is not a comparison at fixed normal
-scaling: $\delta\lambda_R$ also contains expansion variations.  Moreover the
-field-dependent affine-to-area transformation generates a shared-corner
-conformal endpoint term, represented in Reisenberger's eqs. (106), (116), and
-(118).  Fixing endpoint maps does not remove that term.  Therefore the sign
-difference between (8.9) and (8.10) cannot consistently be called a single
-overall hypersurface-orientation reversal while the bulk signs are kept
-aligned.
-
-The corner comparison is left **open** until an explicit transformation of
-the bulk, moving endpoint, $dY$/joint representative, and port variables
-reproduces all surface terms.  The additive $-\log2$ in the LMPS joint is an
-exact-potential shift, but by itself it does not resolve (8.9)--(8.10).
+Equations (8.3) and (8.6) show that the normal-scale terms in
+$\delta m=\delta\lambda_R+delta\log|B_+B_-|$ must be combined with the two
+transformed sheet terms.  Calculation 03 performs this combination.  The
+$\delta\log B_{s0}$ terms cancel and leave (8.10), while the moving lower
+limit generates the shared-corner conformal term in Reisenberger equations
+(106), (116), and (118).  Fixing endpoint maps does not remove that term.
+Thus there is no remaining corner-sign discrepancy.
 
 Reisenberger's endpoint maps $s_A^i$ pair with twist combinations
 $\widetilde\tau_{Ai}$.  They are absent from (6.3) because the project fixes
 generator and endpoint embeddings.  This is a gauge/polarization restriction,
-not evidence that $\omega_{A0}=0$.  Conversely the abstract closing-normal
+not evidence that $\widehat\omega_A=0$.  Conversely the abstract closing-normal
 boost $b_s$ in (6.3) has no unique counterpart in Reisenberger until a concrete
 closing geometry and endpoint polarization are selected.
 
@@ -690,25 +699,24 @@ limits and endpoint maps generate surface terms, including his eqs.
 (105)--(118).  The project instead fixes affine $\lambda_s$ and solves
 Raychaudhuri, which leaves the Green-nonlocal area and cross terms in (5.1).
 
-Therefore:
+Calculation 03 completes the comparison.  Therefore:
 
 - the conformal bulk normalization agrees;
 - the affine/area normal dictionary contains the nontrivial scale factors
   $B_s=d\lambda_s/dv_s$;
-- the project has one internally proved area/relative-normal pair, but its
-  equivalence to Reisenberger's corner and conformal endpoint terms is open,
-  with an unresolved relative sign in the isolated blocks;
+- the project area/relative-normal pair transforms to Reisenberger's pair
+  with the same sign, and the conformal endpoint term is reproduced;
 - the missing twist/endpoint-map sector is explained by
   $\delta\ell_s^A=\delta s_A^i=0$, but the shared-corner conformal endpoint
   term is not removed by that restriction;
-- full equality of (6.3) with Reisenberger's area-gauge form still requires an
-  explicit field-dependent change $\lambda_s\mapsto v_s$ together with its
-  moving-endpoint and outer-port transformation.
+- equality with Reisenberger's fixed-map form is proved on the monotonic-area,
+  fixed-outer-two-metric sector;
+- on the variable outer-metric extended port, a traceless shape port is
+  required and its unique geometric momentum remains conditional on a
+  selected closing action.
 
-The remaining difference is presently an unresolved combination of
-field-dependent gauge change, $dY$/joint representative, moving endpoints,
-and port policy.  It is neither a proved genuine mismatch nor a proof of full
-equivalence.
+The remaining qualification is therefore a chart and outer-port-policy
+boundary, not a corner mismatch.
 
 ## 9. Verification boundary
 
@@ -718,18 +726,19 @@ retarded Green identity in a constant-potential finite mode; the full
 one-form/two-form curl in a finite-dimensional diagonal profile; the
 non-abelian matrix curl in a non-diagonal four-parameter profile; the
 shear-free reduction to Stage 1; one shared corner metric under the diagonal
-pullback; and representative equivalence for a generic $r(\lambda)$ endpoint
-identity.
+pullback; representative equivalence for a generic $r(\lambda)$ endpoint
+identity; and, through calculation 03, the unified corner sign, area-gauge
+surface terms, and full first-jet composition.
 
 **Assumptions:** smooth positive-definite unimodular profiles; a finite interval
 on which $r_s>0$; fixed generator labels, embeddings, affine lengths, and
-normal frame; selected HF/LMPS representative; the Stage-1 area/boost outer
+normal frame; selected HF representative; the Stage-1 area/boost outer
 ports.
 
 **Not verified:** a functional-analytic theorem for the completed profile
 space; nondegeneracy after gravitational gauge reduction; a concrete closing
-wall and any traceless wall momentum; full equality with Reisenberger under
-field-dependent reparametrization; or a reduced spin-1 symplectic pair.
+wall and unique traceless wall momentum; an area chart through $\theta=0$; or
+a reduced spin-1 symplectic pair.
 
 ## 10. Stage-3 gate
 
@@ -747,15 +756,16 @@ J_A[\bar q,r]
 \tag{10.1}
 $$
 
-Thus $(\bar q^\pm,\Omega_0,\theta_{\pm0},\omega_{A0})$ determine the
-transported $\omega_A^\pm$.  What remains is mainly the policy for its
+Thus $(\bar q^\pm,\Omega_0,\theta_{\pm0},m_0,\widehat\omega_A)$ determine the
+transported branch-adapted $\omega_A^\pm$.  What remains is mainly the policy for its
 symplectic partner: generator/corner displacement can be treated as proper
 gauge, physical embedding data, or an extended port.
 
 A short Stage-3 program is therefore:
 
-1. solve $(\partial_{\lambda_s}+\theta_s)\omega^s_A=J^s_A$ with the shared
-   $\omega_{A0}$ and the already reconstructed $r_s,\bar q^s$;
+1. solve $(\partial_{\lambda_s}+\theta_s)\omega^s_A=J^s_A$ with the
+   branch-adapted initial values obtained from $(m_0,\widehat\omega_A)$ and the
+   already reconstructed $r_s,\bar q^s$;
 2. choose and state the embedding/endpoint-map polarization before allowing
    $\delta\ell_s^A\neq0$;
 3. pull back $-\bar\eta_{sA}\delta\ell_s^A$ and compare the resulting

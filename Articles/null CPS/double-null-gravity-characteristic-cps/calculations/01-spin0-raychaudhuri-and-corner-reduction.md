@@ -10,7 +10,7 @@ as dependent Damour data and may be nonzero.  With both outer ports retained
 the displayed spin-0 block is pointwise rank six and has no kernel in this
 truncated fixed-gauge sector.  With fixed outer areas and the associated port
 momenta quotiented, it reduces to the single initial pair
-$(\Omega_0,-m_0)$.
+$(\Omega_0,m_0)$ in the unified HF representative.
 
 The finite-length terms proportional to
 $L_\pm\delta\Omega_0\wedge\delta\theta_{\pm0}$ are outer-port structure, not
@@ -97,15 +97,25 @@ Since the integrating factor for (2.5) is $F_\pm^2$, the exact solution is
 $$
 \boxed{
 \omega^\pm_A(\lambda_\pm,x)
-=\frac{\omega_{A0}(x)
+=\frac{\omega^{(\pm)}_{A0}(x)
 +\frac12\lambda_\pm D_A\theta_{\pm0}(x)}
 {F_\pm(\lambda_\pm,x)^2}.}
 \tag{2.7}
 $$
 
-At the common corner $\omega_{A0}$ is specified once; (2.7) transports it
-separately along the two sheets.  The current pullback fixes generator labels
-and embeddings, $\delta\ell_\pm^A=0$.  Consequently the spin-1 term
+At the common corner the shared datum is $\widehat\omega_A$, while the two
+branch initial values are
+
+$$
+\omega^{(+)}_{A0}=\widehat\omega_A-\frac12D_A m_0,
+\qquad
+\omega^{(-)}_{A0}=-\widehat\omega_A-\frac12D_A m_0.
+\tag{2.7a}
+$$
+
+Equation (2.7) transports these distinct branch-adapted values.  The current
+pullback fixes generator labels and embeddings,
+$\delta\ell_\pm^A=0$.  Consequently the spin-1 term
 $-\bar\eta_{\pm A}\delta\ell_\pm^A$ in calculation 00 vanishes even when
 $\omega_A\neq0$.  Equations (3.1)--(9.2) below therefore remain the extracted
 spin-0 block, but they are no longer described as a globally twist-free
@@ -120,7 +130,7 @@ $$
 requires at least
 
 $$
-\omega_{A0}=0,\qquad D_A\theta_0=0
+\omega^{(\pm)}_{A0}=0,\qquad D_A\theta_0=0
 \tag{2.8}
 $$
 
@@ -219,60 +229,38 @@ $$
 This is valid pointwise wherever $\Omega_0>0$ and $F_{\pm L}>0$.  It displays
 the finite sheet as a relation between its two area ports.
 
-## 4. Initial null--null joint
+## 4. Initial cut in the unified HF representative
 
-The single initial joint has
-
-$$
-a_0=-m_0-\log2.
-$$
-
-Calculation 00, equations (6.1)--(6.4), starts from the two null endpoint
-normalization variations and the variation of the joint action.  In the fixed
-outward-convex orientation it finds
+Calculation 00 now uses HF equations (4.29)--(4.30) for both the bulk and the
+cut.  The normal block of
+$ds_\perp^2=-2e^{-m}du\,dv$ gives $h=-m$.  Each initial branch has negative
+cut incidence, hence
 
 $$
-\left.\Theta_{\partial N_+}\right|_{S_0}
-+\left.\Theta_{\partial N_-}\right|_{S_0}
-=-C_G\int_{S_0}\Omega_0\delta a_0\,d^2x,
+\Theta_{S_0}^{\rm HF}
+=C_G\int_{S_0}(m_0-1)\delta\Omega_0\,d^2x,
 $$
 
-whereas
-
-$$
-\delta I_{S_0}=C_G\int_{S_0}
-(\Omega_0\delta a_0+a_0\delta\Omega_0)\,d^2x.
-$$
-
-The relative-normal-normalization terms cancel in the sum, leaving
-
-$$
-\Theta_{S_0}^{\rm residual}
-=C_G\int_{S_0}a_0\delta\Omega_0\,d^2x,
-$$
-
-so
+and
 
 $$
 \boxed{
-\Omega_{S_0}=-C_G\int_{S_0}
+\Omega_{S_0}^{\rm HF}=+C_G\int_{S_0}
 \delta m_0\wedge\delta\Omega_0\,d^2x.}
 \tag{4.1}
 $$
 
-The sign in (4.1) follows from the positive characteristic orientation and
-$a_0=-m_0-\log2$.  Reversing the total hypersurface orientation reverses the
-whole symplectic form, not the identification of the pair.  The constant
-$-\log2$ changes the potential representative but not (4.1).
+Subtracting
+$\delta[C_G\int\Omega_0(m_0-1)d^2x]$ gives the equivalent boost
+polarization $-C_G\int\Omega_0\delta m_0d^2x$.  The old negative sign mixed
+this HF cut split with an independently chosen Jubb/LMPS joint split and is
+withdrawn.
 
-This proves one corner pair for the selected representative.  It is not an
-assumption about $\delta I_{S_0}$ by itself.  Adding one copy per sheet would
-double count $S_0$.
-Reisenberger gr-qc/0703134 and its expanded derivation arXiv:1211.3880 are used
-only as regression checks.  In the latter, eqs. (182), (187), and (194)--(195)
-contain a single area/relative-normal sector and pair twist with endpoint maps.
-They are not used to delete (3.4), to choose an outer polarization, or to
-import a completeness claim.
+There is one corner pair, not one per sheet.  Calculation 03 derives its
+field-dependent normal rescaling to Reisenberger's
+$+C_G\delta\lambda_R\wedge\delta\Omega_0$ sector and retains the shared
+conformal endpoint term.  Reisenberger remains a regression target rather
+than an input completeness theorem.
 
 ## 5. Selected outer-port policy and complete potential
 
@@ -282,13 +270,13 @@ signed logarithmic normal/boost momenta obtained after combining each null
 endpoint variation with the action of the boundary piece that closes the
 port.  No value of $b_\pm$ is fixed in the extended phase space.
 
-On the constraint surface, the selected HF/LMPS representative gives
+On the constraint surface, the selected HF representative gives
 
 $$
 \begin{aligned}
 \Theta_{\rm cell}^{(0)}={}&
 \sum_{s=\pm}\Theta_{N_s}^{(0),\rm bulk}
-+C_G\int_{S_0}a_0\delta\Omega_0\,d^2x\\
++C_G\int_{S_0}(m_0-1)\delta\Omega_0\,d^2x\\
 &+C_G\int_{S_+}b_+\delta\Omega_{+L}\,d^2x
 +C_G\int_{S_-}b_-\delta\Omega_{-L}\,d^2x,
 \end{aligned}
@@ -314,7 +302,7 @@ $$
 \boxed{
 \begin{aligned}
 \Omega_{\rm cell}^{(0)}=C_G\int d^2x\Bigg[&
--\delta m_0\wedge\delta\Omega_0\\
++\delta m_0\wedge\delta\Omega_0\\
 &+\sum_{s=\pm}\left(
 \frac{\delta\Omega_0\wedge\delta\Omega_{sL}}
 {2\sqrt{\Omega_0\Omega_{sL}}}
@@ -343,8 +331,8 @@ of (5.3) is
 $$
 M_{\rm ext}=
 \begin{pmatrix}
-0&1&c_+&0&c_-&0\\
--1&0&0&0&0&0\\
+0&-1&c_+&0&c_-&0\\
+1&0&0&0&0&0\\
 -c_+&0&0&-1&0&0\\
 0&0&1&0&0&0\\
 -c_-&0&0&0&0&-1\\
@@ -392,7 +380,7 @@ The pullback of (5.3) is
 
 $$
 \left.\Omega_{\rm cell}^{(0)}\right|_{\rm fixed\ area}
-=-C_G\int_{S_0}\delta m_0\wedge\delta\Omega_0\,d^2x.
+=+C_G\int_{S_0}\delta m_0\wedge\delta\Omega_0\,d^2x.
 \tag{7.2}
 $$
 
@@ -524,8 +512,9 @@ Consequently both representatives give exactly the same (5.3), (7.2), and
 ## 10. Verification and claim boundary
 
 **Verified:** exact Raychaudhuri and area solutions; the shear-free Damour
-transport and solution; isolated sheet pullback; conversion to initial/outer
-areas; initial endpoint plus joint cancellation; the rank-six extended matrix
+transport and solution with the branch-adapted initial values (2.7a); isolated
+sheet pullback; conversion to initial/outer areas; the unified HF normal-block
+and positive corner curl; the rank-six extended matrix
 and rank-two fixed-area pullback; the unrestricted composition mismatch and
 composition after slope matching; and complete $\kappa$ versus
 $\kappa+\theta$ representative equivalence.

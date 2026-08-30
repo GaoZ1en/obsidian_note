@@ -3,21 +3,22 @@
 ## Direct verdict
 
 **Correct under the declared finite-cell port policy and fixed-generator
-gauge:** Stage 1.1 is repaired, and the coupled Stage-2 affine pullback has
-been derived for the selected HF/LMPS representative.  The proposed
+gauge:** Stage 2.1 now closes the initial corner, the shared normal connection,
+the monotonic-area Reisenberger map, and spin-0+spin-2 first-jet composition in
+the selected HF representative.  The proposed
 finite-cross data
 
 $$
 (\bar q^+_{AB}(u,x),\bar q^-_{AB}(v,x);
-\Omega_0,\theta_{+0},\theta_{-0},\omega_{A0},m_0)
+\Omega_0,\theta_{+0},\theta_{-0},\widehat\omega_A,m_0)
 $$
 
 now carry an explicit reduced spin-0+spin-2 two-form in affine profile
 variables, with $r_\pm=\sqrt{\Omega_\pm}$ reconstructed by a Green map from
 $\bar q^\pm$.  This is not yet a representative-independent full
-gravitational CPS: the concrete closing-boundary polarization, the complete
-Reisenberger reparametrization, the spin-1/embedding block, and the full gauge
-quotient remain open.
+gravitational CPS: a variable-shape closing boundary needs a traceless shape
+port, the area chart does not cross $\theta_s=0$, and the spin-1/embedding
+block and full gauge quotient remain open.
 
 What is established is precise:
 
@@ -26,15 +27,16 @@ What is established is precise:
 - the exact shear-free Raychaudhuri reconstruction, Damour transport, and the
   endpoint-complete two-sheet spin-0 pullback are derived in
   `calculations/01-spin0-raychaudhuri-and-corner-reduction.md`;
-- $\omega_A$ is not set to zero: in the shear-free affine sector it is
-  transported as
-  $[\omega_{A0}+\lambda D_A\theta_0/2]/(1+\lambda\theta_0/2)^2$;
+- the two branch-adapted forms obey
+  $\omega_A^{(+)}+\omega_A^{(-)}=-D_A m$; the shared datum is
+  $\widehat\omega_A=(\omega_A^{(+)}-\omega_A^{(-)})/2$, and each branch is
+  transported by its own Damour equation;
 - sheet composition requires area plus dynamical slope/expansion matching;
   matching the geometric boost port $b$ does not impose continuity of
   $p_\Omega=-(\kappa+\theta/2)$;
-- the combined two-sheet endpoint variation plus the single initial joint
-  cancels the $\Omega_0\delta a_0$ normalization terms and proves one pair
-  $-C_G\delta m_0\wedge\delta\Omega_0$;
+- the unified HF cut representative has $h=-m$ and proves one initial pair
+  $+C_G\delta m_0\wedge\delta\Omega_0$; the former negative sign mixed two
+  different endpoint/joint splits and is withdrawn;
 - with outer area/boost ports retained, $\theta_{+0}$ and $\theta_{-0}$ acquire
   partners through $\Omega_{+L}$ and $\Omega_{-L}$; with fixed outer areas they
   are no longer independent variations;
@@ -43,12 +45,16 @@ What is established is precise:
 - the full coupled Raychaudhuri reconstruction, linearized Green map, reduced
   one-form, field-space curl, shared corner, and induced outer-port terms are
   derived in `calculations/02-coupled-spin0-spin2-reduction.md`;
-- the conformal bulk coefficient agrees with Reisenberger, but his
-  area-parameter tangents satisfy $n_s=B_s\ell_s$; the transformed corner has
-  an unresolved relative sign and extra conformal endpoint terms, so full
-  equivalence remains open;
-- Stage 3 is ready only as a controlled Damour-transport/embedding-policy
-  calculation, not as a closed spin-1 CPS.
+- `calculations/03-stage2.1-corner-area-and-composition-closure.md` derives
+  $n_s=B_s\ell_s$, $B_{s0}=2/\theta_{s0}$, the normal/twist dictionary, the
+  shared conformal endpoint term, and equality with Reisenberger's fixed-map
+  form on the monotonic-area, fixed-outer-two-metric sector;
+- spin-0+spin-2 composition holds under continuity of
+  $(\Omega,\bar q_{AB},\theta,\sigma_{AB})$, equivalently $(q_{AB},B_{AB})$;
+  the off-locus obstruction is $[B_{AB}]$ and three-segment composition is
+  associative;
+- Stage 3 is ready as a separate controlled classical
+  Damour-transport/embedding-policy calculation, not as a closed spin-1 CPS.
 
 ## Fixed scope
 
@@ -68,12 +74,18 @@ post-CIVP construction belongs here.
 - `calculations/02-coupled-spin0-spin2-reduction.md`: coupled Stage-2
   Raychaudhuri/Green reconstruction, complete reduced form, double-null
   corner/ports, and Reisenberger regression.
+- `calculations/03-stage2.1-corner-area-and-composition-closure.md`: unified
+  HF corner sign, shared normal connection, field-dependent area map,
+  Reisenberger surface structure, outer shape-port boundary, and composition.
 - `verification/STAGE1_AUDIT_SUMMARY.md`: concise proved/conditional/open
   verdict.
+- `verification/STAGE2_1_AUDIT_SUMMARY.md`: concise Stage-2.1 answer sheet and
+  Stage-3 gate.
 - `verification/CLAIM_LEDGER.md`: authoritative claim status.
 - `verification/RUN_LOG.md`: executed command, assumptions, result, and
   evidence boundary.
-- `scripts/spin0_and_spin2_checks.wl`: executable exact checks.
+- `scripts/spin0_and_spin2_checks.wl` and
+  `scripts/stage21_corner_area_composition_checks.wl`: executable exact checks.
 - `scripts/README.md`: command and evidence boundary.
 
 ## Source discipline
