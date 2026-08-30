@@ -70,27 +70,21 @@ assertZero["V18 inverse-metric endpoint contraction",
 assertZero["V18 Reisenberger endpoint coefficient per branch",
   cG endpointContraction/8 + cG a];
 
-(* V19: normal-scale terms cancel from the transformed corner. *)
-mAffineCorner = {
-  {0, -1, -1, -1},
-  {1, 0, 0, 0},
-  {1, 0, 0, 0},
-  {1, 0, 0, 0}
-};
-sheetScaleTerms = {
-  {0, 0, 1, 1},
-  {0, 0, 0, 0},
-  {-1, 0, 0, 0},
-  {-1, 0, 0, 0}
-};
-reisenCorner = {
-  {0, -1, 0, 0},
-  {1, 0, 0, 0},
-  {0, 0, 0, 0},
-  {0, 0, 0, 0}
-};
-assertZero["V19 affine corner plus sheet scales gives Reisenberger corner",
-  mAffineCorner + sheetScaleTerms - reisenCorner];
+(* V19: the corner-scale cancellation is checked at one-form level.  The
+   -log B_s0 dOmega0 terms are the lower-scale remainder derived in the
+   complete transformation in calculation 03; V23 independently obtains
+   their curl from the affine one-form in a moving-endpoint finite profile. *)
+Clear[lambdaR, bPlus0, bMinus0, dLambdaR, dBPlus0, dBMinus0];
+mFromAreaNormals = lambdaR + Log[bPlus0 bMinus0];
+affineCornerOneForm = cG (mFromAreaNormals - 1) dOmega;
+sheetLowerScaleOneForm = -cG Log[bPlus0 bMinus0] dOmega;
+reisenCornerOneForm = -cG Omega0 dLambdaR;
+cornerGeneratorDifferential = cG (
+  (lambdaR - 1) dOmega + Omega0 dLambdaR);
+assertZero[
+  "V19 one-form corner/normal-scale transformation",
+  Expand[affineCornerOneForm + sheetLowerScaleOneForm -
+    reisenCornerOneForm - cornerGeneratorDifferential]];
 
 (* V20: full first-jet mismatch decomposes into expansion and shear jumps. *)
 Clear[dTheta, dSigma];
@@ -132,13 +126,13 @@ threeSegmentResidual[density_] := FullSimplify[
   segmentIntegral[density, L1, L1 + L2] +
   segmentIntegral[density, L1 + L2, L1 + L2 + L3] -
   segmentIntegral[density, 0, L1 + L2 + L3] /. lengthRules];
-assertZero["V21 two-segment coupled additivity, area/shear pair",
+assertZero["V21 two-segment subdivision additivity, area/shear pair",
   twoSegmentResidual[densityRA]];
-assertZero["V21 two-segment coupled additivity, conformal pair",
+assertZero["V21 two-segment subdivision additivity, conformal pair",
   twoSegmentResidual[densityAPhi]];
-assertZero["V21 three-segment associativity, area/shear pair",
+assertZero["V21 three-segment subdivision associativity, area/shear pair",
   threeSegmentResidual[densityRA]];
-assertZero["V21 three-segment associativity, conformal pair",
+assertZero["V21 three-segment subdivision associativity, conformal pair",
   threeSegmentResidual[densityAPhi]];
 
 (* V22: diagonal focusing and shear-free limit remain unchanged. *)
@@ -148,6 +142,6 @@ assertZero["V22 shear-free area radius limit",
   FullSimplify[Limit[rMode[t], amp -> 0] - (rInit + pInit t)]];
 
 Print["PASS all Stage-2.1 focused identities"];
-Print["NOT PROVED: a unique variable-shape closing-wall momentum,"];
+Print["NOT PROVED: a closing-wall action or its port momenta,"];
 Print["NOT PROVED: a chart through theta=0, spin-1 reduction,"];
 Print["NOT PROVED: full gauge nondegeneracy or functional completion."];

@@ -14,10 +14,11 @@ $$
 
 This closes the analytic Stage-2 affine pullback at the level of the two null
 sheets, their shared initial corner, and the declared abstract area/boost outer
-ports.  Calculation 03 repairs the former corner sign, fixes the two-branch
-normal-connection dictionary, proves fixed-outer-two-metric equivalence with
-Reisenberger on the monotonic-area sector, and proves full first-jet
-composition.  A concrete variable-shape closing-boundary action and the
+ports.  Calculation 03 repairs the former corner sign and fixes the
+two-branch normal-connection dictionary.  Calculation 04 supersedes its
+area/composition claims: it gives the explicit affine-to-area generator and
+area-port shift, allows a variable outer conformal metric, and constructs the
+independent-data bulk reduction.  A concrete closing-boundary action and the
 spin-1/embedding reduction remain outside this calculation.
 
 **Known from literature.**  The vacuum null constraints and the identification
@@ -33,8 +34,8 @@ pullback are derived below in the project's notation.
 
 **Project-specific/conditional.**  Outer cuts retain the Stage-1 area/boost
 ports.  A different $dY$ representative or a specified closing wall can add
-canonically related cut terms, including traceless shape terms; no uniqueness
-of the abstract port completion is claimed.
+canonically related cut terms, including traceless shape terms.  The null
+branch reduction itself does not require an independent outer shape port.
 
 ## 1. Scope and independent data
 
@@ -435,7 +436,7 @@ so both normal directions couple to one corner metric rather than to two
 copies.  Similarly, (3.5) uses one $\boldsymbol\delta\Omega_0$ but two
 independent $\boldsymbol\delta\theta_{\pm0}$.
 
-Spin-2 backreaction reaches the existing outer ports through
+Spin-2 backreaction reaches the existing outer **area** ports through
 
 $$
 \boldsymbol\delta\Omega_{sL}
@@ -445,13 +446,11 @@ $$
 
 and $\boldsymbol\delta r_s(L_s)$ contains the Green integral (3.8).  Thus the
 area/boost port term in (6.3) already contains induced spin-2/port cross
-couplings.  The affine sheet pullback by itself does not fix a separate
-traceless shape momentum while $\delta\ell_s^A=0$.  Calculation 03 shows,
-however, that the field-dependent area map produces a traceless cut term when
-$\delta\bar q_{AB,sL}\neq0$; a differentiable extended port must then retain
-$\pi_s^{AB}\delta\bar q_{AB,sL}$.  Its unique geometric value depends on a
-$dY$ choice and the concrete closing-boundary action.  This is an explicit
-port-policy boundary, not a theorem that the shape momentum vanishes.
+couplings.  Calculation 04 recomputes the field-dependent map without fixing
+$\delta\bar q_{AB,sL}$ and finds no independent traceless endpoint term: the
+outer conformal value is already part of the bulk profile.  A concrete
+closing-boundary action may add a shape pair, but the null reduction does not
+force one.
 
 Geometric and dynamical matching remain distinct:
 
@@ -568,7 +567,7 @@ $n_R=B_+\ell_+$ and $n_L=B_-\ell_-$, the corrected dictionary is
 | $\theta_s=2r_s'/r_s$ | $2\partial_{\eta_s}\log v_s$ | after identifying affine parameters up to a fixed affine transformation |
 | $\sigma^s_{AB}=\Omega_s\partial_{\eta_s}\bar q^s_{AB}/2$ | $\rho\partial_{\eta_A}e_{pq}/2$ | same shear convention |
 | $m=-\log(-\ell_+\!\cdot\ell_-)$ | $\lambda_R=-\log|n_L\!\cdot n_R|$ | $\lambda_R=m-\log|B_+B_-|$ |
-| $\widehat\omega_A$ | area-normal twist $\tau_v$ | $\tau_v=2\widehat\omega+D\log|B_+/B_-|$ |
+| $\widehat\omega_A$ | area-normal twist $\tau_v$ after rescaling | $\tau_v=2\widehat\omega+D\log|B_+/B_-|$; they are not literally equal |
 | $\sqrt{\Omega_{sL}/\Omega_0}$ | $\bar v_A$ | endpoint value of the area parameter |
 | fixed generator/endpoint embeddings | $\delta s_A^i=0$ | removes the endpoint-map/twist potential |
 
@@ -677,12 +676,13 @@ $$
 $$
 
 Equations (8.3) and (8.6) show that the normal-scale terms in
-$\delta m=\delta\lambda_R+delta\log|B_+B_-|$ must be combined with the two
-transformed sheet terms.  Calculation 03 performs this combination.  The
-$\delta\log B_{s0}$ terms cancel and leave (8.10), while the moving lower
-limit generates the shared-corner conformal term in Reisenberger equations
-(106), (116), and (118).  Fixing endpoint maps does not remove that term.
-Thus there is no remaining corner-sign discrepancy.
+$\delta m=\delta\lambda_R+\delta\log|B_+B_-|$ must be combined with the two
+transformed sheet terms.  Calculation 04 performs this combination at the
+one-form level, imposes the fixed-affine-length common-domain constraint, and
+gives the explicit generator (3.10).  The $\delta\log B_{s0}$ terms cancel,
+while the moving lower limit generates the shared-corner conformal term in
+Reisenberger equations (106), (116), and (118).  Fixing endpoint maps does not
+remove that term.  Thus there is no remaining corner-sign discrepancy.
 
 Reisenberger's endpoint maps $s_A^i$ pair with twist combinations
 $\widetilde\tau_{Ai}$.  They are absent from (6.3) because the project fixes
@@ -699,7 +699,7 @@ limits and endpoint maps generate surface terms, including his eqs.
 (105)--(118).  The project instead fixes affine $\lambda_s$ and solves
 Raychaudhuri, which leaves the Green-nonlocal area and cross terms in (5.1).
 
-Calculation 03 completes the comparison.  Therefore:
+Calculation 04 completes the comparison.  Therefore:
 
 - the conformal bulk normalization agrees;
 - the affine/area normal dictionary contains the nontrivial scale factors
@@ -709,14 +709,14 @@ Calculation 03 completes the comparison.  Therefore:
 - the missing twist/endpoint-map sector is explained by
   $\delta\ell_s^A=\delta s_A^i=0$, but the shared-corner conformal endpoint
   term is not removed by that restriction;
-- equality with Reisenberger's fixed-map form is proved on the monotonic-area,
-  fixed-outer-two-metric sector;
-- on the variable outer-metric extended port, a traceless shape port is
-  required and its unique geometric momentum remains conditional on a
-  selected closing action.
+- equality with Reisenberger's fixed-map form is proved on the monotonic-area
+  common sector with the explicit generator and area-port transformation;
+- the outer conformal metric may vary and is already included in the bulk
+  profile; a traceless shape pair is closing-wall/polarization dependent, not
+  required by the null reduction.
 
-The remaining qualification is therefore a chart and outer-port-policy
-boundary, not a corner mismatch.
+The remaining qualification is therefore a chart and geometric
+closing-port-policy boundary, not a corner or outer-shape mismatch.
 
 ## 9. Verification boundary
 
@@ -727,8 +727,8 @@ one-form/two-form curl in a finite-dimensional diagonal profile; the
 non-abelian matrix curl in a non-diagonal four-parameter profile; the
 shear-free reduction to Stage 1; one shared corner metric under the diagonal
 pullback; representative equivalence for a generic $r(\lambda)$ endpoint
-identity; and, through calculation 03, the unified corner sign, area-gauge
-surface terms, and full first-jet composition.
+identity; and, through calculation 04, the complete area-gauge one-form
+transformation and independent-data bulk reduction.
 
 **Assumptions:** smooth positive-definite unimodular profiles; a finite interval
 on which $r_s>0$; fixed generator labels, embeddings, affine lengths, and
@@ -737,14 +737,14 @@ ports.
 
 **Not verified:** a functional-analytic theorem for the completed profile
 space; nondegeneracy after gravitational gauge reduction; a concrete closing
-wall and unique traceless wall momentum; an area chart through $\theta=0$; or
-a reduced spin-1 symplectic pair.
+wall and its port momenta; an area chart through $\theta=0$; or a reduced
+spin-1 symplectic pair.
 
 ## 10. Stage-3 gate
 
-**Ready for a controlled Stage-3 transport calculation, but not for a claim of
-a closed full spin-1 CPS.**  The affine Damour source is now a functional of
-the Stage-2 data:
+**Ready for a controlled Stage-3 endpoint-map/transport calculation, but not
+for a claim of a closed full spin-1 CPS.**  The affine Damour source is now a
+functional of the Stage-2 data:
 
 $$
 J_A[\bar q,r]
@@ -757,16 +757,18 @@ J_A[\bar q,r]
 $$
 
 Thus $(\bar q^\pm,\Omega_0,\theta_{\pm0},m_0,\widehat\omega_A)$ determine the
-transported branch-adapted $\omega_A^\pm$.  What remains is mainly the policy for its
-symplectic partner: generator/corner displacement can be treated as proper
-gauge, physical embedding data, or an extended port.
+transported branch-adapted $\omega_A^\pm$.  Calculation 04 fixes the gate:
+retain Reisenberger's endpoint maps $s_\pm^A$ and use
+$\widetilde\tau_{\pm A}$ as their conjugates, subject to the generator-chart
+constraint.  CK's $\pi_A$ remains rigging-convention dependent and is not
+used as an unqualified synonym for $\widehat\omega_A$.
 
 A short Stage-3 program is therefore:
 
 1. solve $(\partial_{\lambda_s}+\theta_s)\omega^s_A=J^s_A$ with the
    branch-adapted initial values obtained from $(m_0,\widehat\omega_A)$ and the
    already reconstructed $r_s,\bar q^s$;
-2. choose and state the embedding/endpoint-map polarization before allowing
+2. retain the endpoint-map polarization stated above before allowing
    $\delta\ell_s^A\neq0$;
 3. pull back $-\bar\eta_{sA}\delta\ell_s^A$ and compare the resulting
    endpoint-map/twist block with Reisenberger's

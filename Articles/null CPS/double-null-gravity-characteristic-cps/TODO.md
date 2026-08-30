@@ -36,32 +36,36 @@
   change, and $\widehat\omega_A$ dictionary.
 
 - [x] Action: complete the field-dependent affine-to-area transformation on
-  Reisenberger's declared fixed-map, fixed-outer-two-metric sector.
-  Context: $n_s=(d\lambda_s/dv_s)\ell_s$, the map is valid only where
-  $\theta_s\neq0$, and the moving lower limit produces the shared conformal
-  endpoint term.
-  Check: calculation 03 derives all fixed-sector surface terms; V17--V19
-  verify the Jacobians, endpoint coefficient, and corner-scale cancellation.
+  the common fixed-endpoint-map sector.
+  Context: fixed affine length imposes
+  $\int_1^{V_s}\Delta B_sdv+B_s(V_s)\delta V_s=0$; fixed-$v$ and fixed
+  $x=v/V_s$ variations differ.  Calculation 04 gives the explicit generator
+  $Y$ and area-port shift.  The outer conformal metric may vary.
+  Check: equations (3.1)--(3.13) prove the one-form identity; V23 derives the
+  two curls from the affine one-form for a moving-endpoint nontrivial profile.
 
-- [x] Action: prove spin-0+spin-2 characteristic composition.
-  Context: match $(\Omega,\bar q_{AB},\theta,\sigma_{AB})$, equivalently
-  $(q_{AB},B_{AB})$, while keeping the geometric boost port distinct.
-  Check: the reduced density is additive; V20 checks the off-locus first-jet
-  obstruction and V21 checks two-/three-segment finite-mode regressions.
+- [x] Action: prove independent-data spin-$0+2$ **bulk** reduction.
+  Context: construct $\mathcal P_1\times\mathcal P_2$ before matching
+  $(\Omega,\bar q_{AB},\theta,\sigma_{AB})$, equivalently
+  $(q_{AB},B_{AB})$, and keep the geometric port diagonal separate.
+  Check: calculation 04 defines $\iota$ and $\rho$; V24 builds the independent
+  eight-parameter product form and the rank-four matching Jacobian; V25 tests
+  three independent cells.  V21 is retained only as subdivision consistency.
 
 - [ ] Action: realize the abstract $b_\pm$ ports with one concrete oriented
   closing geometry if a geometric boundary action is needed.
-  Context: Stage 2.1 shows that variable outer conformal shape also requires a
-  traceless port $\pi_s^{AB}\delta\bar q_{AB,sL}$.  A concrete closing action
-  must identify both $b_s$ and $\pi_s^{AB}$.
-  Check: reproduce calculation 03 equations (3.16)--(3.17) up to the declared
-  endpoint canonical transformation.
+  Context: the null reduction forces no independent outer shape port.  A
+  concrete closing action must derive its area/normal port and determine
+  whether that wall polarization also adds a traceless shape pair.
+  Check: reproduce calculation 04 equation (3.11) for the area port and
+  derive any additional wall term directly from the selected action.
 
 - [ ] Action: begin Stage 3 only in the controlled classical transport lane.
   Context: Stage-2 data now determine
-  $D_A(\theta/2)-D_B\sigma^B{}_A$, and Stage 2.1 fixes
-  $\widehat\omega_A$ unambiguously, but its symplectic partner depends on the
-  generator/corner embedding policy.  The Stage-3 gate is now open; no Stage-3
-  derivation has been started.
-  Check: choose that policy, solve Damour, and compare the resulting
-  endpoint-map/twist block with Reisenberger; do not introduce quantum data.
+  $D_A(\theta/2)-D_B\sigma^B{}_A$.  Use
+  $\widehat\omega_A=\tau_{\ell A}/2$ as the project variable, retain
+  endpoint maps $s_\pm^A$, and use $\widetilde\tau_{\pm A}$ as their
+  conjugates.  CK's $\pi_A$ is rigging-convention dependent.
+  Check: solve Damour and pull back only the classical endpoint-map/twist
+  block subject to the generator-chart constraint; do not introduce quantum
+  data.

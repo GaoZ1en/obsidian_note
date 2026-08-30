@@ -2,10 +2,12 @@
 
 ## Direct verdict
 
-**Correct under the declared finite-cell port policy and fixed-generator
-gauge:** Stage 2.1 now closes the initial corner, the shared normal connection,
-the monotonic-area Reisenberger map, and spin-0+spin-2 first-jet composition in
-the selected HF representative.  The proposed
+**Correct under the fixed-generator, monotonic-area, common-endpoint
+conditions stated in calculation 04:** Stage 2.2 closes the
+affine-to-Reisenberger transformation at the one-form level, with an explicit
+field-space generator and outer area-port shift.  It also proves independent-
+data reduction of the spin-$0+2$ bulk form after full first-jet matching.  The
+proposed
 finite-cross data
 
 $$
@@ -16,9 +18,11 @@ $$
 now carry an explicit reduced spin-0+spin-2 two-form in affine profile
 variables, with $r_\pm=\sqrt{\Omega_\pm}$ reconstructed by a Green map from
 $\bar q^\pm$.  This is not yet a representative-independent full
-gravitational CPS: a variable-shape closing boundary needs a traceless shape
-port, the area chart does not cross $\theta_s=0$, and the spin-1/embedding
-block and full gauge quotient remain open.
+gravitational CPS: the area chart does not cross $\theta_s=0$, the physical
+closing-wall port has not been derived, and the spin-1/embedding block and
+full gauge quotient remain open.  A variable outer conformal metric does
+**not** by itself require an independent shape port; such a pair is
+closing-wall/polarization dependent.
 
 What is established is precise:
 
@@ -45,16 +49,22 @@ What is established is precise:
 - the full coupled Raychaudhuri reconstruction, linearized Green map, reduced
   one-form, field-space curl, shared corner, and induced outer-port terms are
   derived in `calculations/02-coupled-spin0-spin2-reduction.md`;
-- `calculations/03-stage2.1-corner-area-and-composition-closure.md` derives
-  $n_s=B_s\ell_s$, $B_{s0}=2/\theta_{s0}$, the normal/twist dictionary, the
-  shared conformal endpoint term, and equality with Reisenberger's fixed-map
-  form on the monotonic-area, fixed-outer-two-metric sector;
-- spin-0+spin-2 composition holds under continuity of
+- `calculations/03-stage2.1-corner-area-and-composition-closure.md` retains
+  the correct HF corner sign and normal/twist algebra, and marks its former
+  area/composition outline as superseded;
+- `calculations/04-stage2.2-hardening.md` distinguishes fixed affine, fixed
+  $v$, and fixed outer-normalized variations; derives the complete canonical
+  transformation; resolves the outer-shape question; constructs
+  $\iota:\mathcal C_{12}\hookrightarrow\mathcal P_1\times\mathcal P_2$ and
+  $\rho:\mathcal C_{12}\to\mathcal P_{12}$; and fixes the CK/Reisenberger
+  normal-data dictionaries;
+- independent spin-$0+2$ bulk reduction holds under continuity of
   $(\Omega,\bar q_{AB},\theta,\sigma_{AB})$, equivalently $(q_{AB},B_{AB})$;
-  the off-locus obstruction is $[B_{AB}]$ and three-segment composition is
-  associative;
-- Stage 3 is ready as a separate controlled classical
-  Damour-transport/embedding-policy calculation, not as a closed spin-1 CPS.
+  a full geometric finite-cell port theorem remains conditional on the
+  closing action;
+- Stage 3 is ready only in the controlled classical endpoint-map
+  polarization using $\widehat\omega_A=\tau_{\ell A}/2$ and
+  $(s_\pm^A,\widetilde\tau_{\pm A})$; Stage 3 has not been started.
 
 ## Fixed scope
 
@@ -75,17 +85,23 @@ post-CIVP construction belongs here.
   Raychaudhuri/Green reconstruction, complete reduced form, double-null
   corner/ports, and Reisenberger regression.
 - `calculations/03-stage2.1-corner-area-and-composition-closure.md`: unified
-  HF corner sign, shared normal connection, field-dependent area map,
-  Reisenberger surface structure, outer shape-port boundary, and composition.
+  HF corner sign, shared normal connection, and the superseded Stage-2.1
+  area/composition outline.
+- `calculations/04-stage2.2-hardening.md`: complete affine/area canonical
+  transformation, outer-endpoint audit, independent-data reduction, CK
+  dictionary, and Stage-3 gate.
 - `verification/STAGE1_AUDIT_SUMMARY.md`: concise proved/conditional/open
   verdict.
 - `verification/STAGE2_1_AUDIT_SUMMARY.md`: concise Stage-2.1 answer sheet and
-  Stage-3 gate.
+  record of the superseded Stage-2.1 boundary.
+- `verification/STAGE2_2_AUDIT_SUMMARY.md`: authoritative Stage-2.2 answer
+  sheet and Stage-3 gate.
 - `verification/CLAIM_LEDGER.md`: authoritative claim status.
 - `verification/RUN_LOG.md`: executed command, assumptions, result, and
   evidence boundary.
-- `scripts/spin0_and_spin2_checks.wl` and
-  `scripts/stage21_corner_area_composition_checks.wl`: executable exact checks.
+- `scripts/spin0_and_spin2_checks.wl`,
+  `scripts/stage21_corner_area_composition_checks.wl`, and
+  `scripts/stage22_hardening_checks.wl`: executable exact finite-mode checks.
 - `scripts/README.md`: command and evidence boundary.
 
 ## Source discipline

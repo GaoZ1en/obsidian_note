@@ -1,6 +1,87 @@
 # Verification Run Log
 
+## 2026-08-30 — Stage-2.2 hardening
+
+Working directory:
+
+```text
+Articles/null CPS/double-null-gravity-characteristic-cps
+```
+
+Commands:
+
+```text
+wolframscript -file scripts/spin0_and_spin2_checks.wl
+wolframscript -file scripts/stage21_corner_area_composition_checks.wl
+wolframscript -file scripts/stage22_hardening_checks.wl
+```
+
+Result: all three commands exited with code `0`; every declared check V0--V25
+passed after the final documentation update.
+
+Decisive new checks:
+
+- V19 no longer inserts three target antisymmetric matrices.  It checks the
+  corner/normal-scale transformation at the one-form level after
+  $m=\lambda_R+\log|B_{+0}B_{-0}|$;
+- V23 starts from the affine reduced one-form and uses
+  $\phi_s(v)=\phi_0+a_s\log v$ with nonzero conformal variation, moving
+  $V_s$, fixed outer areas, and fixed affine lengths.  It constructs the
+  affine and area one-forms, verifies their difference is the displayed
+  $\delta Y$, and obtains zero curl residual;
+- V24 builds left/right segment two-forms from eight independent parameters,
+  constructs the rank-four matching constraint Jacobian, pulls the product
+  form back to that locus, and verifies equality with the long form.  A
+  generic pre-matching point has nonzero matching residual;
+- V25 begins with three independent parameter sets, constructs both
+  parenthesized matching reductions, and verifies that both equal each other
+  and the long bulk form.
+
+Analytic checks added in calculation 04:
+
+- ordinary and fixed-$v$ variations are related by
+  $\delta_\lambda F=\Delta_vF-(\chi/B)\partial_vF$;
+- fixed affine length imposes
+  $\int_1^{V_s}\Delta B_sdv+B_s(V_s)\delta V_s=0$;
+- fixed outer-normalized variation obeys
+  $C_x=C_v+v\delta\log V_sK$;
+- the complete difference is
+  $\Theta_X^\lambda-\Theta_X^A
+  =C_G\delta Y+C_G\sum_s\gamma_s\delta\Omega_{sL}$, with $Y$ and
+  $\gamma_s$ displayed explicitly;
+- the outer conformal value is already contained in Reisenberger's bulk
+  integral, so no universal traceless shape port is generated;
+- the independent-data bulk theorem is
+  $\iota^*(\Omega_1^{\rm bulk}+\Omega_2^{\rm bulk})
+  =\rho^*\Omega_{12}^{\rm bulk}$.
+
+Primary-source check: Reisenberger arXiv:1211.3880 equations (98)--(117)
+distinguish variation at fixed outer-normalized chart from variation in the
+$v\theta$ chart and allow the outer conformal profile to vary while fixing
+the outer area density.  Ciambelli--Klinger arXiv:2607.07785v1 equations
+(6)--(18) define $\pi_A$ through the rigging connection but do not specify a
+double-null cross-rigging identification with $\widehat\omega_A$.  Contracting
+their definition with the natural cross riggings gives
+$\pi_A^{(\pm)}=\omega_A^{(\pm)}$.
+
+Assumptions: four-dimensional vacuum; smooth positive conformal profiles;
+finite caustic-free monotonic-area intervals; fixed generator labels,
+endpoint maps, and affine endpoints; selected HF representative; fixed outer
+areas or the explicit transformed abstract area ports.
+
+Not verified by this run: a chart through $\theta=0$; a closing-wall action
+or its port momenta; a complete geometric finite-cell quotient; the varying
+endpoint-map spin-1 pullback; full gravitational gauge nondegeneracy;
+functional completion, completeness, surjectivity, positivity, or continuum
+topology.
+
 ## 2026-08-30 — Stage-2.1 corner, area-gauge, and composition closure
+
+Superseded boundary: V15--V22 remain valid as the identities now stated in the
+claim ledger.  The former V19 hand-inserted matrix check has been replaced;
+V21 is subdivision consistency, not independent-data composition.  The
+authoritative area transformation and composition statuses are the Stage-2.2
+entry above.
 
 Working directory:
 
@@ -31,13 +112,14 @@ Decisive new checks:
   mode;
 - V18 reproduces the coefficient of the shared-corner conformal endpoint term
   in that mode;
-- V19 verifies that the two initial normal-scale terms cancel the
-  $m-\lambda_R$ part of the affine corner and leave the Reisenberger sign;
+- V19 verifies the one-form corner/normal-scale transformation after
+  $m=\lambda_R+\log|B_{+0}B_{-0}|$; the complete scale remainder is derived
+  in calculation 04 and exercised by V23;
 - V20 verifies the first-jet mismatch norm
   $\mathcal J^2=\Delta\sigma^2+(\Delta\theta)^2/2$ and its generic nonvanishing
   before expansion/shear matching;
-- V21 verifies two-segment additivity and three-segment associativity for two
-  independent pairs in a diagonal coupled mode;
+- V21 verifies two-segment subdivision additivity and three-segment
+  subdivision associativity in a diagonal coupled mode;
 - V22 verifies the diagonal focusing equation and the shear-free limit.
 
 Analytic source check: HF arXiv:1611.03096 equations (4.29)--(4.30) define the

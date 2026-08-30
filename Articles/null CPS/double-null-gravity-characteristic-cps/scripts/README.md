@@ -5,6 +5,7 @@ Run from the project root:
 ```text
 wolframscript -file scripts/spin0_and_spin2_checks.wl
 wolframscript -file scripts/stage21_corner_area_composition_checks.wl
+wolframscript -file scripts/stage22_hardening_checks.wl
 ```
 
 The script checks exact algebraic identities for the projector, nonlinear
@@ -20,13 +21,21 @@ cancellation), shared-corner diagonal matching, and the generic representative
 endpoint identity.  The Stage-2.1 script separately checks $h=-m$, the
 positive corner curl and exact polarization change, the two branch-adapted
 H\'aj\'i\v{c}ek forms and shared connection, affine-to-area Jacobians, the
-shared-corner conformal endpoint coefficient, normal-scale cancellation into
-Reisenberger's corner, the first-jet mismatch, two-segment spin-0+spin-2
-additivity, three-segment associativity, and the shear-free/diagonal limits.
+shared-corner conformal endpoint coefficient, one-form normal-scale
+transformation into Reisenberger's corner, the first-jet mismatch,
+subdivision additivity/associativity, and the shear-free/diagonal limits.
 
-A passing result is not evidence for a unique variable-shape closing-wall
-action, an area chart through $\theta=0$, a reduced spin-1 block, or a full
+The Stage-2.2 script derives the affine and area curls from the affine
+one-form for a nontrivial moving-endpoint profile; builds two segment forms
+from independent parameters before constructing the full first-jet matching
+Jacobian; checks the reduced equality and a generic off-locus residual; and
+repeats the independent-data reduction for three cells.
+
+A passing result is not evidence for a closing-wall action or its port
+momenta, an area chart through $\theta=0$, a reduced spin-1 block, or a full
 gravitational gauge quotient.  It also does not prove completeness,
 positivity, surjectivity, continuum topology, or a representative-independent
-reduced action.  The full first-jet composition theorem rests on analytic
-integral additivity; V21 is its finite-mode regression, not its proof.
+reduced action.  The affine/area functional proof and independent-data bulk
+theorem are the analytic identities in calculation 04; V23--V25 are their
+finite-mode regressions.  A complete geometric finite-cell port theorem
+remains conditional on the closing action.

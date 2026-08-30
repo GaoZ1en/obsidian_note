@@ -202,6 +202,14 @@ Calculation 03 derives this dictionary and its relation to Reisenberger's
 twist.  A single branch-adapted $\omega_A$ must not be assigned unchanged to
 both sheets.
 
+For CK's rigging connection, contraction of
+$D_A\ell^b=\theta_A{}^b+\pi_A\ell^b$ with the natural cross rigging gives
+$\pi_A^{(+)}=\omega_A^{(+)}$ or
+$\pi_A^{(-)}=\omega_A^{(-)}$ on the corresponding branch.  CK's single
+corner symbol does not by itself select the symmetric combination
+$\widehat\omega_A$; calculation 04 section 6 records the convention-dependent
+transition maps.
+
 For comparison with HF on $N_+$ set $L=\ell_+$ and $\bar L=-n_+$, so
 $L\cdot\bar L=+1$, which is HF's normal-frame convention.  Their normal
 connection is

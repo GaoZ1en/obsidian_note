@@ -2,20 +2,24 @@
 
 ## 0. Direct verdict and claim boundary
 
-**Correct under the following precise conditions:** in the affine,
-fixed-generator, fixed-endpoint-map sector, the spin-0+spin-2 pullback of
-calculation 02 has an internally consistent finite-cell corner and composes
-under full metric first-jet matching.  On the open set on which
-$v_s=r_s/r_0$ is monotonic, its fixed-outer-two-metric pullback is the
-fixed-endpoint-map restriction of Reisenberger's area-data form.
+**Stage-2.2 correction:** the initial HF corner and the algebraic
+branch-normal dictionary in sections 1--2 are correct.  The former section
+3.3 did not prove the claimed affine-to-area identity: it confused fixed-$v$
+and fixed-outer-normalized variations and did not impose the common-domain
+constraint relating $B_s$, the moving endpoint, and the fixed affine length.
+The former section 4 proved subdivision additivity, not yet an
+independent-data reduction theorem.  Calculation 04 supplies the corrected
+field-dependent one-form transformation, the explicit generator and port
+shift, and the independent-data inclusion/reconstruction maps.
 
 Three qualifications remain.
 
 1. The area chart does not cover a generator through a zero of $\theta_s$.
 2. Reisenberger's displayed form holds fixed the outer area density in the
-   adapted outer chart.  If the outer conformal metric is also allowed to
-   vary, a traceless shape port must be retained.  Its completion is not
-   unique until a closing boundary action is selected.
+   adapted outer chart but allows the conformal profile, including its outer
+   value, to vary.  No independent traceless shape port is forced by the null
+   reduction; one can arise only from a selected closing-wall action or a
+   different endpoint polarization.
 3. The spin-1 endpoint-map block is not part of Stage 2.1.  Fixed endpoint
    maps remove its variation, not the normal-bundle datum itself.
 
@@ -42,9 +46,9 @@ regression target.  Neither result is imported as a replacement for the
 project pullback.
 
 **Re-derived here.**  The normal-block dictionary, corner sign, two-branch
-normal-connection relation, affine-to-area Jacobians, fixed-map translation
-of Reisenberger's form, and two-/three-segment composition are derived below
-in the project notation.
+normal-connection relation, and elementary affine-to-area Jacobians are
+derived below.  Calculation 04 supersedes the former functional and
+composition claims.
 
 ## 1. One HF representative at the initial cut
 
@@ -368,112 +372,60 @@ shortcut $\lambda_R=m$ is false unless the product $B_+B_-$ is fixed to one.
 
 ### 3.3 Fixed-map area-data two-form
 
-Use one common transverse chart and fix the endpoint maps, so
-$\boldsymbol\delta s_s^A=0$.  For two commuting comoving variations, write
-$\Delta_i e_{AB}$ for the variation at fixed $v$.  Reisenberger's branch form,
-translated from equation (117), is
+The original version of this subsection was an outline, not a proof.  It used
+the fixed-$v$ variation inside an expression whose natural coordinate is the
+outer-normalized area variable $x=v/\bar v_s$, and it left the scale and
+moving-limit transformations unnamed.
+
+Calculation 04 corrects this.  In particular,
 
 $$
-\boxed{
-\begin{aligned}
-\Omega_s^{\rm area}[\delta_1,\delta_2]
-=\frac{C_G}{2}\int_{S_0}d^2x\Bigg\{&
-\delta_1\lambda_R\,\delta_2\Omega_0\\
-&+\frac14\delta_1\Omega_0
-(\partial_v e^{AB})\Delta_2e_{AB}\big|_{v=1}\\
-&+\frac12\Omega_0\int_1^{\bar v_s}v^2
-(\Delta_1e^{AB})\partial_v(\Delta_2e_{AB})\,dv
--(1\leftrightarrow2)\Bigg\}.
-\end{aligned}}
+e^{-1}\boldsymbol\Delta_xe
+=e^{-1}\boldsymbol\Delta_ve
++v\boldsymbol\delta\log\bar v_s\,
+e^{-1}\partial_ve,
 \tag{3.13}
 $$
 
-The full fixed-map double-null form is the sum of (3.13) over $s=\pm$,
-with the single shared $\lambda_R,\Omega_0$.  Consequently its normal corner
-sector is
+and fixed affine length requires
 
 $$
-+C_G\int_{S_0}
-\boldsymbol\delta\lambda_R\wedge
-\boldsymbol\delta\Omega_0\,d^2x.
+0=\int_1^{\bar v_s}\boldsymbol\Delta B_s\,dv
++B_s(\bar v_s)\boldsymbol\delta\bar v_s.
 \tag{3.14}
 $$
 
-The second line of (3.13) is the shared-corner conformal endpoint term.  In
-matrix notation it is
+With these relations retained, calculation 04 equations (3.9)--(3.13) give
+the explicit field-space generator $Y$ and the complete area-port shift.  On
+Reisenberger's fixed-outer-area pullback,
 
 $$
--\frac{C_G}{8}\int_{S_0}
-\boldsymbol\delta\Omega_0\wedge
-\operatorname{tr}(K_sC_s)\big|_{v=1}\,d^2x
+\Theta_X^\lambda-\Theta_X^A=C_G\boldsymbol\delta Y,
+\qquad
+\Phi^*\Omega_X^A=\Omega_X^\lambda.
 \tag{3.15}
 $$
 
-per branch.  It is not removed by fixing endpoint maps.
+The former formula
+$b_s^{(v)}=b_s^{(\lambda)}+\log|B_s(\bar v_s)|$ is incomplete and is
+withdrawn.  The correct shift is calculation 04 equation (3.11), which
+contains the bulk Jacobian functional and all moving-upper-limit terms.
 
-To derive (3.13) from the project form, rather than assume it, use the
-following chain.
+No independent traceless outer-shape momentum follows from this
+transformation.  Reisenberger permits arbitrary conformal data up to the
+outer cut, and the endpoint value is already contained in the conformal bulk
+integral.  A chosen closing-wall action may add a traceless endpoint pair, but
+that is a separate polarization choice.
 
-1. Substitute (3.3)--(3.5) into calculation 02 equation (4.4).  The conformal
-   coefficient becomes $C_G\Omega_0v^2/4$, with no untracked Jacobian.
-2. Use (3.7)--(3.8) to combine the affine spin-0 term with the variation of the
-   normal scale.  The initial scale terms
-   $\boldsymbol\delta\log B_{+0}$ and
-   $\boldsymbol\delta\log B_{-0}$ cancel the corresponding terms obtained by
-   substituting (3.9) into (0.1), leaving (3.14).
-3. Normalize the generator coordinate at the outer cut by
-   $\varrho=v/\bar v_s$.  Its moving lower limit
-   $\varrho_0=1/\bar v_s$ gives (3.15).  Under the fixed-outer-area policy,
-   $\boldsymbol\delta\log\varrho_0
-   =\boldsymbol\delta\log\Omega_0/2$; this is precisely the step from
-   Reisenberger equations (106) to (116).
-4. The remaining conformal bulk curl is the last two lines of (3.13).  The
-   inverse-metric variation supplies the sign already checked in calculation
-   02.
-
-This proves equality of the two-forms on the monotonic-area,
-fixed-outer-two-metric, fixed-endpoint-map sector.  It does not identify the
-two one-forms without their exact corner generators.  At the initial cut the
-explicit generator is (1.6); the remaining scale and moving-limit shifts are
-the endpoint canonical transformations in steps 2--3.
-
-For a variable outer area the normal port changes under
-$\ell_s\mapsto n_s=B_s\ell_s$ as
-
-$$
-b_s^{(v)}=b_s^{(\lambda)}+\log|B_s(\bar v_s)|
-\tag{3.16}
-$$
-
-with the project incidence convention.  Equation (3.6) must then be retained,
-and the moving upper-limit terms are part of the transformed outer port.
-
-If $\boldsymbol\delta\bar q_{AB,sL}\neq0$, those terms have a traceless
-component.  A differentiable extended port must therefore be enlarged to
-
-$$
-\Theta_{S_s}^{\rm port}
-=C_G\int_{S_s}\left[
-b_s^{(v)}\boldsymbol\delta\Omega_{sL}
-+\pi_s^{AB}\boldsymbol\delta\bar q_{AB,sL}
-\right]d^2x,
-\qquad
-\bar q_{AB,sL}\pi_s^{AB}=0.
-\tag{3.17}
-$$
-
-The field-dependent map determines the shift of this port relative to the
-affine chart, but a unique geometric $\pi_s^{AB}$ also depends on the action of
-the boundary that closes the cell.  Therefore (3.17), not $\pi_s^{AB}=0$, is
-the correct general outer policy.  In Reisenberger's fixed outer two-metric
-sector its pullback vanishes.
-
-## 4. Spin-0+spin-2 composition
+## 4. Historical subdivision statement
 
 ### 4.1 Matching locus
 
-Consider two consecutive segments with a common forward generator.  At their
-shared cut $S_1$ impose
+This section starts from two restrictions of one common forward profile.  It
+therefore proves subdivision consistency.  Calculation 04 section 5 replaces
+it with independently declared left/right data, the matching constraint
+surface, inclusion $\iota$, and reconstruction map $\rho$.  For the present
+subdivision, impose at $S_1$
 
 $$
 \boxed{
@@ -506,12 +458,12 @@ The geometric boost port $b_1$ is separate from (4.2).  Matching $b_1$ cancels
 the two closing-normal port contributions; it does not imply continuity of
 $B_{AB}$.
 
-### 4.2 Additivity of the reduced form
+### 4.2 Additivity of the subdivided reduced form
 
-On (4.1), uniqueness of the focusing ODE implies that the two regional
-reconstructions of $r$ and their linearized variations are the restrictions
-of the reconstruction on the combined interval.  The conformal profile and
-its first derivative are likewise the restrictions of one $C^1$ profile.
+Here the two regional reconstructions of $r$ and their linearized variations
+are assumed to be restrictions of the reconstruction on the combined
+interval.  The conformal profile and its first derivative are likewise
+restrictions of one $C^1$ profile.
 
 Calculation 02 equation (5.1) was deliberately left without integration by
 parts in $\lambda$.  Its density is therefore additive:
@@ -528,11 +480,11 @@ $$
 \tag{4.3}
 $$
 
-The two incidences of the intermediate area/boost port cancel.  If the shape
-port (3.17) is active, its two incidences cancel after matching its common cut
-data.  In area gauge, the conformal endpoint terms generated on the two sides
-also cancel.  No residual $dY$ transformation is required in the unified HF
-representative.
+Equation (4.3) alone does not derive an intermediate port cancellation from a
+closing action.  In the abstract diagonal port policy, opposite incidences
+cancel after the port coordinates and momenta are matched.  Calculation 04
+equations (5.7)--(5.9) state the independent-data bulk theorem and the
+remaining closing-action qualification.
 
 Before first-jet matching, the obstruction is
 
@@ -570,7 +522,7 @@ $$
 Equation (4.6) vanishes on the common-slope locus.  It must not be interpreted
 as a defect of (4.3) away from the domain on which the long solution exists.
 
-### 4.3 Associativity
+### 4.3 Subdivision associativity
 
 For three segments satisfying (4.1) at both intermediate cuts,
 
@@ -581,11 +533,10 @@ $$
 \tag{4.7}
 $$
 
-Thus associativity follows analytically from additivity and uniqueness of the
-reconstruction.  The Wolfram finite-mode regression checks (4.3) and (4.7) in
-a diagonal conformal profile.  That regression is evidence for the tested
-truncation; the functional statement is the direct integral identity (4.3),
-not an extrapolation from the finite mode.
+Thus subdivision associativity follows analytically from integral additivity.
+V21 checks precisely this statement.  Independent three-cell reduction is
+instead V25 and calculation 04 section 5.3; a geometrically realized port
+quotient remains conditional on a closing action.
 
 ## 5. Stage-2.1 answer sheet
 
@@ -596,17 +547,16 @@ not an extrapolation from the finite mode.
   $\widehat\omega_A=(\omega_A^{(+)}-\omega_A^{(-)})/2$, with
   $\omega_A^{(+)}+\omega_A^{(-)}=-D_A m$ and
   $\tau_{\ell A}=2\widehat\omega_A$.
-- **Area-gauge equivalence:** proved on the monotonic-area sector after fixing
-  endpoint maps and the outer two-metric; conditional on the enlarged port
-  (3.17) for variable outer shape; false as a global chart through
-  $\theta=0$.
-- **Composition:** proved under the full first-jet matching (4.1); the explicit
-  off-locus obstruction is (4.4).
-- **Outer shape port:** required when the outer traceless metric varies;
-  absent only after the corresponding Dirichlet pullback.
-- **Stage 3:** ready to begin as a separate controlled classical calculation.
-  Stage 2.1 has fixed the shared normal datum and made the corner/composition
-  structure internally consistent.  No Stage-3 derivation is performed here.
+- **Area-gauge equivalence:** the old outline is superseded by calculation 04,
+  which proves the monotonic-area, fixed-endpoint-map identity with an explicit
+  $Y$ and area-port shift.  It does not require a fixed outer conformal metric.
+- **Composition:** (4.3) is subdivision consistency.  Calculation 04 proves
+  independent-data bulk reduction under full first-jet matching; the full
+  finite-cell port theorem remains conditional on a closing action.
+- **Outer shape port:** not required by the null reduction.  It is
+  closing-wall/polarization dependent.
+- **Stage 3:** calculation 04 gives the precise controlled gate.  No Stage-3
+  derivation is performed here.
 
 ## 6. Verification boundary
 
@@ -614,8 +564,9 @@ not an extrapolation from the finite mode.
 exact polarization change; the branch connection sum/difference relations;
 the area Jacobian, focusing equation for $B$, initial $B_0$, and normal-scalar
 dictionary; the diagonal-profile coefficient of the conformal endpoint term;
-the first-jet jump norm; two-segment additivity; and three-segment
-associativity in the declared finite mode.
+the first-jet jump norm; two-segment subdivision additivity; and three-segment
+subdivision associativity in the declared finite mode.  V23--V25 and the
+analytic identities in calculation 04 supply the Stage-2.2 hardening.
 
 **Assumptions:** four-dimensional vacuum; smooth positive conformal metrics;
 caustic-free affine intervals; fixed generator labels and endpoint maps;
@@ -623,7 +574,7 @@ monotonic area for section 3; one common forward generator for section 4;
 the HF canonical representative; and either fixed outer two-metric or the
 extended port (3.17).
 
-**Not verified:** a unique closing-wall action or unique $\pi_s^{AB}$; a chart
-through $\theta_s=0$; varying endpoint-map/twist symplectic terms; full
-gravitational gauge nondegeneracy; a functional-analytic completion theorem;
-or any Stage-3 spin-1 pullback.
+**Not verified:** a closing-wall action; a chart through $\theta_s=0$;
+varying endpoint-map/twist symplectic terms; full gravitational gauge
+nondegeneracy; a functional-analytic completion theorem; or any Stage-3
+spin-1 pullback.

@@ -71,9 +71,11 @@ $$
 \tag{2.4}
 $$
 
-Here their horizontal H\'aj\'i\v{c}ek form $\pi_A$ is the present $\omega_A$
-after the normal frame declared in calculation 00 is chosen.  Thus the affine,
-shear-free equation is
+For a single sheet, their horizontal H\'aj\'i\v{c}ek form $\pi_A$ equals the
+branch-adapted $\omega_A^{(s)}$ after choosing the cross rigging
+$k_b^{(+)}=-e^m\ell_{-b}$ or $k_b^{(-)}=-e^m\ell_{+b}$.  It is not thereby
+identified with the shared $\widehat\omega_A$.  Calculation 04 section 6 gives
+the two-branch CK dictionary.  The affine, shear-free equation is
 
 $$
 \boxed{

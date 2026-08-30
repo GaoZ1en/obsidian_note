@@ -115,12 +115,13 @@ $\Omega\widetilde\sigma^{AB}\delta\bar q_{AB}/2$.  The diagonal conformal chart
 checks only this kinematics.
 
 Calculation 02 performs the coupled conformal-metric/Raychaudhuri pullback,
-and calculation 03 closes the Stage-2.1 corner/area/composition dictionary.
-The latter imposes
+calculation 03 closes the Stage-2.1 corner/normal dictionary, and calculation
+04 supplies the hardened area transformation and independent-data bulk
+reduction.  The construction imposes
 $\bar q^+_{AB}|_{S_0}=\bar q^-_{AB}|_{S_0}$ once, and retains the induced
-outer-area port response.  Full gauge nondegeneracy, a concrete
-variable-shape closing wall, and the spin-1 embedding block remain open.  The
-affine-to-area equivalence is proved only on the monotonic-area,
-fixed-outer-two-metric sector.  Cross-focusing is not an extra algebraic
+outer-area port response.  Full gauge nondegeneracy, a concrete closing wall,
+and the spin-1 embedding block remain open.  The affine-to-area equivalence is
+proved on the monotonic-area common fixed-endpoint-map sector with an explicit
+area-port transformation; the outer conformal metric may vary.  Cross-focusing is not an extra algebraic
 compatibility condition on generic CK/Sachs data; it would only test an
 additional angularly restricted twist-free truncation.

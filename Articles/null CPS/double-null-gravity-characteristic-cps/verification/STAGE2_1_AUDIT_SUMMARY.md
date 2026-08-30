@@ -1,13 +1,18 @@
 # Stage-2.1 finite-cell audit summary
 
+> **Superseded by Stage 2.2.**  The HF corner and algebraic branch-normal
+> dictionary below remain valid.  The former area-gauge proof omitted the
+> fixed-$v$ versus fixed-$x=v/\bar v$ variation and the common-domain
+> constraint; the former composition statement was subdivision consistency.
+> See `STAGE2_2_AUDIT_SUMMARY.md` and calculation 04 for the authoritative
+> claims.
+
 ## Direct verdict
 
-**Correct under the following precise conditions:** the classical
-spin-0+spin-2 finite double-null form is corner-consistent and compositional in
-the selected HF representative, affine fixed-generator gauge, and full
-first-jet matching locus.  Its Reisenberger area-data expression is equivalent
-on the monotonic-area, fixed-endpoint-map, fixed-outer-two-metric sector.  This
-is not a global area chart and not a unique variable-shape outer completion.
+**Historical Stage-2.1 verdict:** the corner was correct, while the area and
+composition evidence was incomplete.  Stage 2.2 now proves the area identity
+with an explicit generator and proves independent-data bulk reduction; a
+geometric closing-port theorem remains conditional.
 
 ## Initial corner
 
@@ -88,9 +93,9 @@ $$
 \lambda_R=m-\log|B_+B_-|.
 $$
 
-Using comoving variations at fixed $v_s$, the focusing identity for $B_s$,
-the normal-scale terms, and the moving lower limit reproduces Reisenberger
-equation (117), including, per branch, the shared-corner conformal term
+The fixed-$v$ calculation below was incomplete because Reisenberger's natural
+outer-normalized coordinate is $x=v/\bar v_s$.  Stage 2.2 instead derives,
+per branch, the shared-corner conformal term
 
 $$
 -\frac{C_G}{8}\int_{S_0}
@@ -98,20 +103,11 @@ $$
 \operatorname{tr}(K_sC_s)|_{v=1}\,d^2x.
 $$
 
-Thus the affine and area forms are equivalent on the declared fixed-map,
-fixed-outer-two-metric sector.  The statement is false as a global chart
-through $\theta_s=0$.  If the outer conformal metric varies, retain
-
-$$
-C_G\int_{S_s}\left[
-b_s\delta\Omega_{sL}
-+\pi_s^{AB}\delta\bar q_{AB,sL}
-\right]d^2x,
-\qquad
-\bar q_{AB,sL}\pi_s^{AB}=0.
-$$
-
-A unique $\pi_s^{AB}$ requires a concrete closing boundary action.
+The corrected identity is calculation 04 equation (3.12), with explicit
+$Y$ and area-port shift.  It allows the outer conformal metric to vary.  No
+independent traceless shape port is forced by the null reduction; one can be
+added only by a selected closing action or endpoint polarization.  The area
+chart remains invalid through $\theta_s=0$.
 
 ## Composition
 
@@ -128,11 +124,12 @@ $$
 $$
 
 Equivalently, $q_{AB}$ and
-$B_{AB}=\sigma_{AB}+\theta q_{AB}/2$ are continuous.  On this locus the two
-regional reconstructions are restrictions of the unique long reconstruction,
-and the non-integrated reduced density is additive.  Hence spin-0+spin-2
-composition holds exactly.  Three-segment associativity follows from the same
-integral additivity.
+$B_{AB}=\sigma_{AB}+\theta q_{AB}/2$ are continuous.  In this Stage-2.1
+calculation the two regional reconstructions were assumed to be restrictions
+of the unique long reconstruction.  This proves subdivision consistency.
+Calculation 04 starts with independent regional data, constructs $\iota$ and
+$\rho$, and proves the bulk reduction.  The complete geometric port quotient
+remains conditional on a closing action.
 
 Before first-jet matching the explicit obstruction is
 
@@ -156,26 +153,25 @@ two-form left over after composition.
 
 ## Outer ports and Stage-3 gate
 
-Additional outer shape ports are required precisely when the outer traceless
-metric is allowed to vary.  They vanish on the fixed-outer-two-metric
-pullback.  No uniqueness claim is made without a closing action.
+Additional outer shape ports are not required by a variable outer conformal
+metric.  They are closing-wall/polarization dependent.
 
-**Stage 3 is ready to begin, but has not been started.**  The shared
-$\widehat\omega_A$ and the Stage-2 corner/composition structure are now fixed.
-Stage 3 must still choose the endpoint-map/embedding polarization before
-pulling back the spin-1 term.
+**Stage 3 is ready only in the controlled polarization fixed by Stage 2.2:**
+retain $\widehat\omega_A=\tau_{\ell A}/2$, endpoint maps $s_\pm^A$, and their
+Reisenberger momenta $\widetilde\tau_{\pm A}$.  It has not been started.
 
 ## Verification
 
-**Verified:** V15--V22 check the normal determinant and corner sign, branch
-connection dictionary, affine-to-area Jacobians, conformal endpoint
-coefficient, normal-scale cancellation, first-jet mismatch, two-segment
-additivity, three-segment associativity, and shear-free/diagonal limits.
+**Verified at Stage 2.1:** V15--V22 check the normal determinant and corner
+sign, branch connection dictionary, affine-to-area Jacobians, conformal
+endpoint coefficient, normal-scale one-form algebra, first-jet mismatch,
+subdivision additivity/associativity, and shear-free/diagonal limits.  V23--V25
+are the Stage-2.2 moving-endpoint and independent-data checks.
 
 **Assumptions:** four-dimensional vacuum; caustic-free finite intervals;
 smooth positive conformal metric; affine zero-shift generators; fixed labels
 and endpoint maps; monotonic area for the area chart; coherent cut incidence.
 
-**Not verified:** a unique variable-shape closing-wall momentum; an area chart
+**Not verified:** a closing-wall action and its port momenta; an area chart
 through $\theta=0$; the varying endpoint-map/twist block; full gauge
 nondegeneracy; functional completion; or Stage 3.
