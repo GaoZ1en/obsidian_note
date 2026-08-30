@@ -1,3 +1,5 @@
+## Setup
+
 Cut the interval $\displaystyle{[-L,L]}$ at $\displaystyle{x=0}$ and use
 
 $$\begin{align}
@@ -23,193 +25,146 @@ $$\begin{align}
 A_{t,i}(t,L) & =\alpha _{i}(t), & \delta \alpha _{i}(t)=0
 \end{align}$$
 
-## Regional Actions and Prescribed Histories
+## CPS Analysis
 
-Cut the interval at $x=0$ and use
-
-$$\begin{align}
-y_1&=x+L, &y_2&=L-x,
-\end{align}$$
-
-so $y_i\in[0,L]$ increases from the physical outer endpoint to the cut. Write
+Take a variation of the action
 
 $$\begin{align}
-A_i&=A_{t,i}\,\mathrm dt+A_{y,i}\,\mathrm dy_i, & E_i&=F_{ty_i}=\dot A_{y,i}-\partial_{y_i}A_{t,i}.
+\delta S_{i} & = \int _{t_{i}}^{t_{f}} \mathrm{d}t \int _{0}^{L}\mathrm{d}y_{i} E_{i}(\delta \dot{A}_{y,i}-\partial _{y_{i}}\delta A_{t,i}) \\
+ & =\int \mathrm{d}t \int _{0}^{L}\mathrm{d}y_{i}\left(-\dot{E}_{i}\delta A_{y,i}+\partial _{y_{i}}E_{i}\delta A_{t,i}\right) \\
+ & +\left.\int _{0}^{L}\mathrm{d}y_{i} E_{i}\delta A_{y,i}\right|_{t_{i}}^{t_{f}}-\int _{t_{i}}^{t_{f}}\mathrm{d}tE_{i}(t,L)\delta \alpha _{i}(t)
 \end{align}$$
 
-The regional action is
+we read out the eoms
 
 $$\begin{align}
-S_i&=\frac1{2 }\int_{t_i}^{t_f}\mathrm dt\int_0^L\mathrm dy_i\,E_i^2.
+\dot{E}_{i} & =0 \\
+\partial _{y_{i}}E_{i} & =0
 \end{align}$$
 
-At the physical endpoint fix $A_{t,i}(t,0)=0$. At the artificial endpoint prescribe
+and the symplectic potential
 
 $$\begin{align}
-A_{t,i}(t,L)&=\alpha_i(t), & \delta\alpha_i(t)&=0
+\theta & =\int _{0}^{L}\mathrm{d}y_{i}E_{i}\delta A_{y,i} \\
+\implies \omega & =\int _{0}^{L}\mathrm{d}y_{i}\delta E_{i}\wedge \delta A_{y,i}
 \end{align}$$
 
-during regional quantization. Direct variation gives
+when quantizing subregions, we require $\displaystyle{\delta \alpha _{i}(t)=0}$. Gauge transformations that are identity at both endpoints remove the $y_i$-dependent part of $A_{y,i}$, leaving only the "zero mode"
 
 $$\begin{align}
-\delta S_i ={}&\frac1{ }\int\mathrm dt\int_0^L\mathrm dy_i \left[-\dot E_i\,\delta A_{y,i} +(\partial_{y_i}E_i)\delta A_{t,i}\right]\\
-&+\left.\frac1{ }\int_0^L\mathrm dy_i\,E_i\delta A_{y,i}\right|_{t_i}^{t_f} -\frac1{ }\int\mathrm dt\,E_i(t,L)\delta\alpha_i(t).
+a_{i}(t) & =\int _{0}^{L}\mathrm{d}y_{i}A_{y,i}(t,y_{i})
 \end{align}$$
 
-Thus
+which is compact (due to the compact gauge group $\displaystyle{\mathrm{U}(1)}$) with period $\displaystyle{2\pi}$
 
 $$\begin{align}
-\dot E_i&=0, &\partial_{y_i}E_i&=0,
+a_{i}\sim a_{i}+2\pi w, & w\in \mathbb{Z}
 \end{align}$$
 
-and the regional symplectic form is
+integrating the definition of $\displaystyle{E_{i}}$ along the interval gives
 
 $$\begin{align}
-\omega_i&=\frac1{ }\int_0^L\mathrm dy_i\, \delta E_i\wedge\delta A_{y,i}.
+E_{i} & =\dfrac{\dot{a}_{i}-\alpha _{i}}{L}
 \end{align}$$
 
-Gauge transformations equal to the identity at both endpoints remove every $y_i$-dependent part of $A_{y,i}$. The remaining coordinate is the explicit integral
+and the exact reduced regional action is therefore
 
 $$\begin{align}
-a_i(t)&:=\int_0^L\mathrm dy_i\,A_{y,i}(t,y_i).
+S_{i}[a_{i};\alpha _{i}] & = \dfrac{1}{2L}\int _{t_{i}}^{t_{f}} \mathrm{d}t(\dot{a}_{i}-\alpha _{i})^{2}
 \end{align}$$
 
-Compactness permits transformations whose lifted parameter changes by $2\pi w$ between the endpoints, so
+## Quantize Subregions
+
+We can do usual CPS analysis for the reduced regional action. Take a variation of the action
 
 $$\begin{align}
-a_i&\sim a_i+2\pi w, &w&\in\mathbb Z.
+\delta S_{i} & =\dfrac{1}{L} \int _{t_{i}}^{t_{f}} \mathrm{d}t(\dot{a}_{i}-\alpha _{i})\delta \dot{a}_{i} \\
+ & =-\dfrac{1}{L} \int _{t_{i}}^{t_{f}} \mathrm{d}t(\ddot{a}_{i}-\dot{\alpha}_{i})\delta a_{i}+E_{i}\delta a_{i}|^{t_{f}}_{t_{i}} \\
+\implies \mathcal{E}_{i} & =-\dfrac{1}{L}(\ddot{a}_{i}-\dot{\alpha}_{i}) \\
+\theta & =E_{i}\delta a_{i} \\
+\omega & =\delta E_{i}\wedge \delta a_{i}
 \end{align}$$
 
-Integrating the definition of $E_i$ along the interval gives
+the regional Hilbert space is then $\displaystyle{L^{2}\left( \mathrm{U}\left( 1 \right), \mathrm{d}a_{i} \right)}$, a complete orthonormal basis is
 
 $$\begin{align}
-E_i&=\frac{\dot a_i-\alpha_i}{L}.
+\psi _{i,n} & =\dfrac{e^{ina_{i}}}{\sqrt{ 2\pi }}, & E_{i}\psi _{i,n} & =n\psi _{i,n}, & n\in \mathbb{Z}
 \end{align}$$
 
-The exact reduced regional action is therefore
+for a prescribed history $\displaystyle{\alpha _{i}(t)}$, we have
 
 $$\begin{align}
-S_i[a_i;\alpha_i] &=\int\mathrm dt\,\frac{(\dot a_i-\alpha_i)^2}{2 L}.
+\psi _{i,n}(t) & =\exp\left(-i \dfrac{Ln^{2}}{2}(t-t_{i})-in\int _{t_{i}}^{t}\mathrm{d}t'\alpha _{i}(t')\right)\psi _{i,n}(t_{i})
 \end{align}$$
 
-No further classical modes remain.
-
-## Quantize Each Region
-
-The momentum and Hamiltonian are
+the corresponding states are denoted as $\displaystyle{\ket{n}_{i}}$, satisfying
 
 $$\begin{align}
-p_i&=\frac{\dot a_i-\alpha_i}{ L}=\frac{E_i}{ },\\
-H_i(t)&=\frac{ L}{2}p_i^2+\alpha_i(t)p_i,
+E_{i}\ket{n} _{i}=n\ket{n} _{i}
 \end{align}$$
 
-and
+consider time translation
 
 $$\begin{align}
-\omega_i&=\delta p_i\wedge\delta a_i, & [a_i,p_j]&=i\delta_{ij}.
+X_{t} & =\int \mathrm{d}t \dot{a}_{i} \dfrac{\delta}{\delta a_{i}}
 \end{align}$$
 
-The regional Hilbert space is $L^2(U(1),\mathrm da_i/2\pi)$. A complete orthonormal basis is
+act on the action
 
 $$\begin{align}
-\psi_{i,n}(a_i)&=\frac{e^{ina_i}}{\sqrt{2\pi}}, & p_i\psi_{i,n}&=n\psi_{i,n}, & n&\in\mathbb Z.
+\delta S_{i} & =\dfrac{1}{L} \int _{t_{i}}^{t_{f}} \mathrm{d}t(\dot{a}_{i}-\alpha _{i}) \dfrac{\mathrm{d}}{\mathrm{d}t}
 \end{align}$$
 
-For a prescribed history $\alpha_i(t)$, the exact evolution of this basis is
+## Gluing Quantized Regions
+
+Identify the two prescribed histories up to a gauge redundancy
 
 $$\begin{align}
-\psi_{i,n}(t) &=\exp\left[ -i\frac{ Ln^2}{2}(t-t_i) -in\int_{t_i}^{t}\mathrm dt'\,\alpha_i(t') \right]\psi_{i,n}(t_i).
+\alpha _{1}(t) & = \alpha(t), & \alpha _{2}(t) & =\alpha(t)+\dot{\varphi}(t)
 \end{align}$$
 
-The prescribed function changes only the phase. It is not an additional operator of the regional theory.
-
-## Glue the Quantized Regions
-
-Identify the two prescribed histories,
+here $\displaystyle{\varphi(t)}$ should not vary. the glued system satisfies the following gauge symmetry
 
 $$\begin{align}
-\alpha_1(t)&=\alpha_2(t)=\alpha(t),
+a_{i}\mapsto &  a_{i}+\lambda _{i,\Gamma} \\
+\alpha _{i}\mapsto & \alpha _{i}+\dot{\lambda}_{i,\Gamma} \\
+\varphi\mapsto & \varphi+\lambda _{2,\Gamma}-\lambda _{1,\Gamma}
 \end{align}$$
 
-and now vary the common $\alpha(t)$. The interface term in the variation is
+the interface part of the variation is then
 
 $$\begin{align}
-\left.\delta(S_1+S_2)\right|_\Gamma &=-\int\mathrm dt\,(p_1+p_2)\delta\alpha.
+\delta(S_{1}+S_{2})|_{\Gamma} & =- \int _{t_{i}}^{t_{f}} \mathrm{d}t(E_{1}+E_{2})\delta \alpha
 \end{align}$$
 
-Hence the gluing equation is
+which gives the gluing condition
 
 $$\begin{align}
-p_1+p_2&=0.
+E_{1}+E_{2}=0
 \end{align}$$
 
-The common endpoint gauge transformation shifts both regional coordinates by the same amount,
+upon quantization, this condition should be promoted to operator equality
 
 $$\begin{align}
-(a_1,a_2)&\longmapsto(a_1+\lambda_\Gamma,a_2+\lambda_\Gamma),
+(E_{1}+E_{2})\ket{\text{phys}} =0
 \end{align}$$
 
-and is generated by $p_1+p_2$. On the constraint surface set
+which gives
 
 $$\begin{align}
-p_1&=p, &p_2&=-p, &a&=a_1-a_2.
+\mathcal{H}_{\mathrm{phys}} & =\mathrm{span}\left\{\ket{n} _{1}\otimes \ket{-n} _{2},n\in \mathbb{Z}\right\}
 \end{align}$$
 
-Then
+the total symplectic form is then
 
 $$\begin{align}
-\omega_1+\omega_2 &=\delta p\wedge\delta a,\\
-H_1+H_2 &= Lp^2,
+\omega & =\sum _{i}\delta E_{i}\wedge \delta a_{i} \\
+ & =\delta E\wedge \delta a
 \end{align}$$
 
-while $a_1+a_2$ is the null direction removed by the common endpoint transformation.
-
-At the quantum level,
+here we choose $\displaystyle{E=E_{1}=-E_{2}}$, and
 
 $$\begin{align}
-(p_1+p_2)\Psi&=0
+a & =a_{1}-a_{2}+\varphi \\
+ & =\int _{-L}^{L} \mathrm{d}xA_{x}(t,x)+\varphi
 \end{align}$$
-
-selects exactly
-
-$$\begin{align}
-\ket{n,-n},\qquad n\in\mathbb Z.
-\end{align}$$
-
-Their wave functions depend only on
-
-$$\begin{align}
-a&=a_1-a_2 =\int_{-L}^{L}\mathrm dx\,A_x,
-\end{align}$$
-
-and form the connected basis
-
-$$\begin{align}
-\Psi_n(a)&=\frac{e^{ina}}{\sqrt{2\pi}}, & H\Psi_n&= Ln^2\Psi_n.
-\end{align}$$
-
-## Connected Classical Solutions
-
-Choose $A_t=0$. Every connected solution is gauge-equivalent to
-
-$$\begin{align}
-A_x(t,x)&=\frac{a(t)}{2L},\\
-a(t)&=a_0+2 Lpt,\\
-F_{tx}(t,x)&= p.
-\end{align}$$
-
-Thus the complete connected solution space consists of one periodic coordinate $a_0$ and its integer-quantized momentum $p$. There are no omitted positive-frequency oscillators.
-
-## Verification Boundary
-
-Derived here:
-
-- the complete solution of the regional Maxwell equations and Gauss constraint;
-- the exact time-dependent regional Hamiltonian for prescribed $\alpha_i(t)$;
-- the complete regional basis $\psi_{i,n}$;
-- the interface equation $p_1+p_2=0$;
-- the reduced symplectic form, connected basis, and connected energy $ Ln^2$.
-
-Assumptions: compact $U(1)$, unit minimal charge, gauge transformations equal to the identity at the physical outer endpoints, and no charged matter.
-
-Not included: a local photon oscillator, because none exists in $1+1$ Maxwell theory; theta angle, charged endpoints, nontrivial matter, or a sum over different principal bundles.
