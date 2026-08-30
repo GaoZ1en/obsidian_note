@@ -21,33 +21,36 @@ Print["Finite double-null gravity Stage 2.2: hardening checks"];
 
 (* V23: derive the affine-to-area pullback in a nontrivial diagonal profile.
    The outer areas and affine lengths are fixed.  Hence the area endpoints
-   V_s=sqrt[Omega_s/Omega0] move, while B_s is fixed by the common-domain
-   condition integral_1^V B_s dv=L_s. *)
+   V_s=sqrt[Omega_s/Omega0] move, while the Jacobian mathcal B_s is fixed by
+   the common-domain condition integral_1^V mathcal B_s dv=L_s. *)
 Clear[omega0, lambdaR, aP, aM, phi0, v];
 areaVars = {omega0, lambdaR, aP, aM, phi0};
 outerP = 4;
 outerM = 9;
 lengthP = 1;
 lengthM = 1;
+jacRefP = 2;
+jacRefM = 3;
+areaRef = 5;
 
-ClearAll[areaEndpoint, bInitial, bProfile, lambdaProfile, phiProfile,
+ClearAll[areaEndpoint, jacInitial, jacProfile, lambdaProfile, phiProfile,
   affineSheetIntegrand, areaSheetIntegrand, movingCurl];
 areaEndpoint[outer_] := Sqrt[outer/omega0];
-bInitial[a_, outer_, len_] :=
+jacInitial[a_, outer_, len_] :=
   len (a^2 + 1)/(areaEndpoint[outer]^(a^2 + 1) - 1);
-bProfile[a_, outer_, len_][v_] := bInitial[a, outer, len] v^(a^2);
+jacProfile[a_, outer_, len_][v_] := jacInitial[a, outer, len] v^(a^2);
 lambdaProfile[a_, outer_, len_][v_] :=
-  bInitial[a, outer, len] (v^(a^2 + 1) - 1)/(a^2 + 1);
+  jacInitial[a, outer, len] (v^(a^2 + 1) - 1)/(a^2 + 1);
 phiProfile[a_][v_] := phi0 + a Log[v];
 
 affineSheetIntegrand[a_, outer_, len_, param_] := Module[
-  {bNow, chi, dPhiFixedV, dOmega},
-  bNow = bProfile[a, outer, len][v];
+  {jacNow, chi, dPhiFixedV, dOmega},
+  jacNow = jacProfile[a, outer, len][v];
   chi = D[lambdaProfile[a, outer, len][v], param];
   dPhiFixedV = D[phiProfile[a][v], param];
   dOmega = D[omega0, param];
   2 omega0 a v dPhiFixedV - v dOmega
-    + 2 omega0 (1 - a^2) chi/bNow
+    + 2 omega0 (1 - a^2) chi/jacNow
   ];
 
 areaSheetIntegrand[a_, outer_, param_] := Module[
@@ -58,9 +61,9 @@ areaSheetIntegrand[a_, outer_, param_] := Module[
   2 omega0 a v (dPhiFixedV + a dLogV)
   ];
 
-b0P = bInitial[aP, outerP, lengthP];
-b0M = bInitial[aM, outerM, lengthM];
-mAffine = lambdaR + Log[b0P b0M];
+jac0P = jacInitial[aP, outerP, lengthP];
+jac0M = jacInitial[aM, outerM, lengthM];
+mAffine = lambdaR + Log[jac0P/jacRefP] + Log[jac0M/jacRefM];
 baseProfile = {omega0 -> 1, aP -> 1, aM -> 2, phi0 -> 0,
   lambdaR -> 0};
 movingCurl[integrand_, vEnd_] := Table[Module[
@@ -94,10 +97,13 @@ assertZero[
 
 ClearAll[integralIAtBase, integralIDerivativeAtBase];
 integralIAtBase[a_, outer_, len_] := FullSimplify[Integrate[
-  v Log[bProfile[a, outer, len][v]] /. baseProfile,
+  v Log[jacProfile[a, outer, len][v]/
+    If[outer === outerP, jacRefP, jacRefM]] /. baseProfile,
   {v, 1, areaEndpoint[outer] /. baseProfile}]];
 integralIDerivativeAtBase[a_, outer_, len_, param_] := Module[
-  {vEnd = areaEndpoint[outer], hNow = Log[bProfile[a, outer, len][v]]},
+  {vEnd = areaEndpoint[outer],
+   hNow = Log[jacProfile[a, outer, len][v]/
+     If[outer === outerP, jacRefP, jacRefM]]},
   FullSimplify[
     Integrate[(v D[hNow, param]) /. baseProfile,
       {v, 1, vEnd /. baseProfile}] +
@@ -117,7 +123,7 @@ yDerivativeAtBase = Table[FullSimplify[
     + (omega0 /. baseProfile) (
       integralIDerivativeAtBase[aP, outerP, lengthP, p] +
       integralIDerivativeAtBase[aM, outerM, lengthM, p]))
-  + (outerP + outerM) (D[Log[omega0], p] /. baseProfile)/2],
+  + (outerP + outerM) (D[Log[omega0/areaRef], p] /. baseProfile)/2],
   {p, areaVars}];
 assertZero[
   "V23 affine/area one-form difference equals the explicit dY",

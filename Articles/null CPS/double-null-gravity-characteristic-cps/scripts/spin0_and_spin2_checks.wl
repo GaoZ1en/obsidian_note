@@ -342,5 +342,5 @@ assertZero["V14 generic Omega theta endpoint derivative",
 
 Print["PASS all declared identities"];
 Print["NOT PROVED: full gauge nondegeneracy, a concrete closing wall,"];
-Print["NOT PROVED: variable-shape closing-wall completion or spin-1 reduction,"];
+Print["NOT PROVED BY THIS SCRIPT: variable-shape closing-wall completion or spin-1 reduction; see the Stage-3.0 checks,"];
 Print["NOT PROVED: completeness, surjectivity, or continuum topology."];

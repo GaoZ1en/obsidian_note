@@ -6,10 +6,11 @@
 spin-$0+2$ form and Reisenberger's fixed-endpoint-map area form are related by
 an explicit field-space canonical transformation on the common monotonic-area
 sector.  The common sector fixes the affine endpoint $L_s$ and uses the same
-outer cut as the area chart.  If the outer area $Omega_{sL}$ is allowed to
+outer cut as the area chart.  If the outer area $\Omega_{sL}$ is allowed to
 vary, the transformation also shifts the retained area-port momentum by the
-explicit functional in (3.17).  Reisenberger's original admissible fixed-outer-
-area pullback sets $deltaOmega_{sL}=0$ and therefore needs no outer port.
+explicit functional in (3.11).  Reisenberger's original admissible fixed-outer-
+area pullback sets $\boldsymbol\delta\Omega_{sL}=0$ and therefore needs no
+outer port.
 The outer conformal metric is allowed to vary in this statement.
 
 The independent-data result is more limited.  Two independently declared
@@ -44,7 +45,7 @@ v=\frac{r}{r_0},
 \qquad
 \lambda=\lambda(v;\text{fields}),
 \qquad
-B:=\frac{d\lambda}{dv},
+\mathcal B:=\frac{d\lambda}{dv},
 \qquad
 e_{AB}(v):=\bar q_{AB}(\lambda(v)).
 \tag{1.1}
@@ -68,9 +69,9 @@ $\alpha:=(\boldsymbol\delta v)_\lambda$, then variation of
 $\lambda(v)$ at fixed affine coordinate gives
 
 $$
-0=\chi+B\alpha,
+0=\chi+\mathcal B\alpha,
 \qquad
-\boxed{\alpha=-\frac\chi B.}
+\boxed{\alpha=-\frac\chi{\mathcal B}.}
 \tag{1.3}
 $$
 
@@ -80,7 +81,7 @@ the common generator chart,
 $$
 \boxed{
 \boldsymbol\delta_\lambda F
-=\boldsymbol\Delta F-\frac\chi B\partial_vF.}
+=\boldsymbol\Delta F-\frac\chi{\mathcal B}\partial_vF.}
 \tag{1.4}
 $$
 
@@ -90,18 +91,24 @@ $$
 \begin{aligned}
 \boldsymbol\Delta r&=v\,\boldsymbol\delta r_0,
 &\boldsymbol\delta_\lambda r
-&=v\,\boldsymbol\delta r_0-r_0\frac\chi B,\\
+&=v\,\boldsymbol\delta r_0-r_0\frac\chi{\mathcal B},\\
 e^{-1}\boldsymbol\delta_\lambda e
-&=C-\frac\chi B K,
-&\boldsymbol\Delta B&=\partial_v\chi,\\
-\boldsymbol\delta_\lambda B
-&=\partial_v\chi-\frac\chi B\partial_vB,
-&\boldsymbol\delta_\lambda\log|B|
-&=\frac{\partial_v\chi}{B}
--\frac{\chi\partial_vB}{B^2}.
+&=C-\frac\chi{\mathcal B} K,
+&\boldsymbol\Delta\mathcal B&=\partial_v\chi,\\
+\boldsymbol\delta_\lambda\mathcal B
+&=\partial_v\chi-\frac\chi{\mathcal B}\partial_v\mathcal B,
+&\boldsymbol\delta_\lambda\log|\mathcal B/\mathcal B_*|
+&=\frac{\partial_v\chi}{\mathcal B}
+-\frac{\chi\partial_v\mathcal B}{\mathcal B^2}.
 \end{aligned}
 \tag{1.5}
 $$
+
+Here $\mathcal B_*$ is a fixed nonzero reference with the same affine-length
+dimension as $\mathcal B$.  It is field independent, so it drops from every
+variation in (1.5).  A separate fixed $\mathcal B_{*s}$ may be chosen on each
+branch.  Also fix a positive field-independent density/area reference
+$\Omega_*$ in the chosen transverse chart.
 
 At the initial cut $v=1$ and $\chi(1)=0$.  Thus no transport correction is
 needed for $m_0$, and
@@ -110,10 +117,12 @@ $$
 \boxed{
 \boldsymbol\delta m_0
 =\boldsymbol\delta\lambda_R
-+\boldsymbol\delta\log|B_{+0}|
-+\boldsymbol\delta\log|B_{-0}|,}
++\boldsymbol\delta\log|\mathcal B_{+0}/\mathcal B_{*+}|
++\boldsymbol\delta\log|\mathcal B_{-0}/\mathcal B_{*-}|,}
 \qquad
-\lambda_R=m_0-\log|B_{+0}B_{-0}|.
+\lambda_R=m_0
+-\log|\mathcal B_{+0}/\mathcal B_{*+}|
+-\log|\mathcal B_{-0}/\mathcal B_{*-}|.
 \tag{1.6}
 $$
 
@@ -134,20 +143,21 @@ For a fixed affine endpoint $L$,
 $$
 \boxed{
 0=\boldsymbol\delta L
-=\chi(V)+B(V)\boldsymbol\delta V
-=\int_1^V\boldsymbol\Delta B\,dv+B(V)\boldsymbol\delta V.}
+=\chi(V)+\mathcal B(V)\boldsymbol\delta V
+=\int_1^V\boldsymbol\Delta\mathcal B\,dv
++\mathcal B(V)\boldsymbol\delta V.}
 \tag{1.8}
 $$
 
 This is the common-domain constraint omitted in calculation 03.  Fixed
 $L$, fixed endpoint maps, and arbitrary independent variations of
-$(B_0,e,\Omega_0,V)$ cannot all be imposed simultaneously.  If the outer
+$(\mathcal B_0,e,\Omega_0,V)$ cannot all be imposed simultaneously.  If the outer
 area is fixed as in Reisenberger's admissible variations, then additionally
 
 $$
 \boxed{
 \boldsymbol\delta\log V
-=-\frac12\boldsymbol\delta\log\Omega_0.}
+=-\frac12\boldsymbol\delta\log(\Omega_0/\Omega_*).}
 \tag{1.9}
 $$
 
@@ -161,13 +171,34 @@ $$
 
 Equations (1.8)--(1.10) retain every moving-upper-limit contribution.
 
+### 1.1 Endpoint-map pullbacks
+
+Let $S_{sL}$ be the outer cut of branch $s$ and
+$s_s:S_0\rightarrow S_{sL}$ the map that follows the generator labelled by
+$x\in S_0$ to its outer endpoint.  Whenever an outer-cut density or tensor is
+integrated with the common $S_0$ measure, the pullback is part of the formula:
+
+$$
+\int_{S_0}s_s^*\Omega_{sL},
+\qquad
+\int_{S_0}s_s^*\!\left(
+\Pi^{AB}_{sL}\boldsymbol\delta\bar q_{AB,sL}\right).
+\tag{1.11}
+$$
+
+Stage 2.2 fixes $s_s$ and uses one common generator chart, so the fixed-map
+identification trivializes these pullbacks componentwise.  Thus the shorter
+symbols $\Omega_{sL}$ and $\bar q_{AB,sL}$ below always mean their fixed
+$s_s^*$ pullbacks.  Stage 3.0 restores the maps and never uses this
+abbreviation.
+
 ## 2. Focusing equation and the two comoving area charts
 
 The focusing equation is
 
 $$
 \boxed{
-\partial_v\log|B|
+\partial_v\log|\mathcal B/\mathcal B_*|
 =\frac v8\operatorname{tr}(K^2).}
 \tag{2.1}
 $$
@@ -176,7 +207,7 @@ It follows either from the affine focusing equation or directly from
 $r=r_0v$.  Its fixed-$v$ variation is
 
 $$
-\partial_v\boldsymbol\Delta\log|B|
+\partial_v\boldsymbol\Delta\log|\mathcal B/\mathcal B_*|
 =\frac v4\operatorname{tr}(K\partial_vC).
 \tag{2.2}
 $$
@@ -221,7 +252,7 @@ $$
 \frac{\Omega_0v^2}{4}\operatorname{tr}(KC)
 -v\boldsymbol\delta\Omega_0\\
 &+2\Omega_0\chi\,
-\partial_v\!\left(\frac vB\right)
+\partial_v\!\left(\frac v{\mathcal B}\right)
 \Bigg].
 \end{aligned}}
 \tag{3.1}
@@ -274,14 +305,16 @@ rather than assumes, Reisenberger's shared conformal endpoint term.
 
 ### 3.3 Difference and explicit generator
 
-Set
+Using these fixed references, set
 
 $$
-H(v):=\log|B(v)|,
+H(v):=\log|\mathcal B(v)/\mathcal B_*|,
 \qquad
 I:=\int_1^VvH(v)\,dv,
 \qquad
-H_0:=H(1).
+H_0:=H(1),
+\qquad
+L_0:=\log(\Omega_0/\Omega_*).
 \tag{3.5}
 $$
 
@@ -297,9 +330,9 @@ $$
 ={}&\boldsymbol\delta Y_s-H_0\boldsymbol\delta\Omega_0
 +\gamma_s\boldsymbol\delta\Omega_L,\\
 Y_s:={}&-2\Omega_0I+\frac{\Omega_0}{2}
-+\frac{\Omega_L}{2}\log\Omega_0,\\
++\frac{\Omega_L}{2}L_0,\\
 \gamma_s:={}&-1+\frac{H_0+2I}{V^2}
--\frac12\log\Omega_0.
+-\frac12L_0.
 \end{aligned}}
 \tag{3.6}
 $$
@@ -308,7 +341,7 @@ For transparency, the only integration by parts used in (3.6) is
 
 $$
 2\Omega_0\int_1^V
-\chi\partial_v(v/B)dv
+\chi\partial_v(v/\mathcal B)dv
 =-2\Omega_0V\boldsymbol\delta V
 -2\Omega_0\int_1^Vv\boldsymbol\Delta H\,dv,
 \tag{3.7}
@@ -317,7 +350,9 @@ $$
 where $\chi(1)=0$ and (1.8) were used at the upper endpoint.  The total
 variation of $-2\Omega_0I$ supplies the second integral in (3.7) and all
 moving-upper-limit terms.  Separating
-$\delta\log V=(\delta\log\Omega_L-delta\log\Omega_0)/2$ then gives
+$\boldsymbol\delta\log V=
+(\boldsymbol\delta\log(\Omega_L/\Omega_*)-
+\boldsymbol\delta\log(\Omega_0/\Omega_*))/2$ then gives
 (3.6).
 
 The affine HF initial potential and the two area-normal surface potentials
@@ -340,7 +375,7 @@ Therefore the complete double-null identity is
 
 $$
 \boxed{
-\Theta^\lambda_X-Theta^A_X
+\Theta^\lambda_X-\Theta^A_X
 =C_G\boldsymbol\delta Y
 +C_G\sum_{s=\pm}\gamma_s
 \boldsymbol\delta\Omega_{sL},}
@@ -354,8 +389,10 @@ $$
 Y=\int_{S_0}d^2x\left[
 \Omega_0\lambda_R
 -2\Omega_0\sum_{s=\pm}
-\int_1^{V_s}v\log|B_s(v)|dv
-+\frac{\Omega_{+L}+\Omega_{-L}}2\log\Omega_0
+\int_1^{V_s}v
+\log|\mathcal B_s(v)/\mathcal B_{*s}|dv
++\frac{\Omega_{+L}+\Omega_{-L}}2
+\log(\Omega_0/\Omega_*)
 \right].}
 \tag{3.10}
 $$
@@ -396,8 +433,59 @@ $\boldsymbol\delta\Omega_{sL}=0$, so (3.9) already reduces to an exact
 canonical transformation and no outer port is active.
 
 Equations (3.10)--(3.11), rather than the former statement
-$b_s^A=b_s^\lambda+\log|B_s(V_s)|$, are the complete transformation.  The
+$b_s^A=b_s^\lambda+
+\log|\mathcal B_s(V_s)/\mathcal B_{*s}|$, are the complete transformation.  The
 latter omitted the bulk Jacobian functional and the moving-limit pieces.
+
+### 3.4 Independence of the reference scales
+
+Change only the fixed references by
+
+$$
+\mathcal B_{*s}'=e^{c_s}\mathcal B_{*s},
+\qquad
+\Omega_*'=e^{c_\Omega}\Omega_*.
+\tag{3.14}
+$$
+
+Then
+
+$$
+H_s'=H_s-c_s,
+\qquad
+I_s'=I_s-\frac{c_s}{2}(V_s^2-1),
+\qquad
+\lambda_R'=\lambda_R+c_++c_-,
+\tag{3.15}
+$$
+
+and direct substitution in (3.6), (3.10), and (3.11) gives
+
+$$
+\boxed{
+Y'=Y+\sum_{s=\pm}
+\left(c_s-\frac{c_\Omega}{2}\right)\Omega_{sL},
+\qquad
+\gamma_s'=\gamma_s-c_s+\frac{c_\Omega}{2}.}
+\tag{3.16}
+$$
+
+Therefore
+
+$$
+\boxed{
+\boldsymbol\delta Y'
++\sum_s\gamma_s'\boldsymbol\delta(s_s^*\Omega_{sL})
+=\boldsymbol\delta Y
++\sum_s\gamma_s\boldsymbol\delta(s_s^*\Omega_{sL}).}
+\tag{3.17}
+$$
+
+For fixed outer areas the change of $Y$ in (3.16) is itself field-space
+constant.  For variable outer areas it is exactly cancelled by the port shift.
+Thus changing either reference modifies only the generating functional and
+endpoint canonical representative; the two-form (3.13) is unchanged.  V26
+checks (3.15)--(3.17) algebraically.
 
 ## 4. Outer conformal shape
 
@@ -573,7 +661,7 @@ $$
 \boxed{
 \mathcal J_{AB}
 =B^2_{AB}(0)-B^1_{AB}(L_1)
-=\Delta\sigma_{AB}+rac12\Delta\theta\,q_{AB}.}
+=\Delta\sigma_{AB}+\frac12\Delta\theta\,q_{AB}.}
 \tag{5.10}
 $$
 
@@ -696,14 +784,16 @@ $$
 \tag{6.7}
 $$
 
-After $n_s=B_s\ell_s$,
+After $n_s=\mathcal B_s\ell_s$,
 
 $$
 \boxed{
-\lambda_R=m-\log|B_+B_-|,
+\lambda_R=m
+-\log|\mathcal B_+/\mathcal B_{*+}|
+-\log|\mathcal B_-/\mathcal B_{*-}|,
 \qquad
 \tau_{vA}=2\widehat\omega_A
-+D_A\log|B_+/B_-|.}
++D_A\log|\mathcal B_+/\mathcal B_-|.}
 \tag{6.8}
 $$
 
@@ -720,19 +810,76 @@ $$
 \tag{6.9}
 $$
 
-with the transverse indices pulled through the corresponding endpoint maps.
-They obey
+The references in $\lambda_R$ are fixed, while their ratio drops from the
+derivative in $\tau_v$.  Let $s_s:S_0\to S_{sL}$ be the endpoint maps and
+write
 
 $$
-\widetilde\tau_{+A}ds_+^A
-+\widetilde\tau_{-A}ds_-^A
-=2\Omega_0D_A\lambda_R,dx^A,
+p_{sA}:=(s_s^*\widetilde\tau_s)_A.
+\tag{6.9a}
+$$
+
+Then the twist and shared affine normal connection are reconstructed, rather
+than added as independent variables:
+
+$$
+\boxed{
+\tau_{vA}=\frac{p_{-A}-p_{+A}}{2\Omega_0},
+\qquad
+\widehat\omega_A=\frac12\left[
+\tau_{vA}-D_A\log|\mathcal B_+/\mathcal B_-|
+\right].}
+\tag{6.9b}
+$$
+
+The endpoint momenta obey the one-form constraint on the common abstract
+corner
+
+$$
+\boxed{
+(s_+^*\widetilde\tau_+)_A
++(s_-^*\widetilde\tau_-)_A
+=2\Omega_0D_A\lambda_R.}
 \tag{6.10}
 $$
 
-which is the generator-chart constraint in Reisenberger's extended phase
-space.  Reversing the branch assignment reverses the corresponding twist
+It says that the sum momentum conjugate to moving both generator charts is
+fixed by the area/normal pair; only the relative endpoint-map momentum is
+independent.  It is expected to generate diagonal relabelling of the common
+chart, but that is not assumed here.  Calculation 05 derives the contraction
+of the two-form and confirms the moment-map statement with a declared sign
+convention.  Reversing the branch assignment reverses the corresponding twist
 signs.
+
+The nonredundant Stage-3 corner coordinates are therefore
+
+$$
+\boxed{
+\Gamma_{\rm ext}=\{
+s_+^A,s_-^A,\widetilde\tau_{+A},\widetilde\tau_{-A};
+\Omega_0,\lambda_R,\bar h_{AB}\}.}
+\tag{6.11}
+$$
+
+$\widehat\omega_A$ remains a useful derived project variable through (6.9b),
+not an additional coordinate in this polarization.
+
+Under the residual opposite boost
+$\ell_+\mapsto e^b\ell_+$,
+$\ell_-\mapsto e^{-b}\ell_-$,
+
+$$
+\widehat\omega_A\mapsto\widehat\omega_A+D_Ab,
+\qquad
+\log|\mathcal B_+/\mathcal B_-|
+\mapsto\log|\mathcal B_+/\mathcal B_-|-2b.
+\tag{6.12}
+$$
+
+Thus $\tau_v$, $\lambda_R$, and $\widetilde\tau_{\pm A}$ are invariant.
+Stage 2.2 does not use this fact to claim nondegeneracy: Stage 3.0 must either
+quotient the combined direction as proper normal-frame gauge or add a
+corner-frame variable that makes it Hamiltonian.
 
 **Known from literature:** Reisenberger's outer-normalized potential,
 endpoint-map momenta, and generator-chart constraint; CK's rigging-connection
@@ -751,11 +898,10 @@ closing action.
 ## 7. Stage-3 gate
 
 **Stage 3 is ready only in the following controlled classical lane.**  Use
-$\widehat\omega_A=\tau_{\ell A}/2$ as the project's shared normal variable,
-retain the endpoint maps $s_\pm^A$ rather than fixing them, and use
-$\widetilde\tau_{\pm A}$ in (6.9) as their conjugate momenta, subject to
-(6.10) and a declared generator-chart quotient.  This choice removes the CK
-rigging ambiguity from the calculation.
+the nonredundant coordinates (6.11), reconstruct $\tau_v$ and
+$\widehat\omega_A$ from (6.9b), impose (6.10), and derive rather than assume
+its generator-chart moment-map role.  The relative-boost policy must be
+declared before any nondegeneracy claim.
 
 This gate does not claim a closed spin-1 CPS, and no Stage-3 pullback is
 performed here.  A claim about a complete finite cell with a physical closing

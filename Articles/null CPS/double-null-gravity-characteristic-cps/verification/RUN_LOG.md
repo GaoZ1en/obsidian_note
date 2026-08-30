@@ -1,5 +1,69 @@
 # Verification Run Log
 
+## 2026-08-30 — Stage-2.2 cleanup and Stage-3.0 endpoint/twist reduction
+
+Working directory:
+
+```text
+Articles/null CPS/double-null-gravity-characteristic-cps
+```
+
+Commands:
+
+```text
+wolframscript -file scripts/spin0_and_spin2_checks.wl
+wolframscript -file scripts/stage21_corner_area_composition_checks.wl
+wolframscript -file scripts/stage22_hardening_checks.wl
+wolframscript -file scripts/stage30_endpoint_twist_checks.wl
+```
+
+Result: all four commands exited with code `0`; every declared Wolfram check
+V0--V32 passed after the final formula, documentation, and notation updates.
+The separate xAct `canonical_contract` run returned `allZero=true` for V33,
+with no load errors or messages.
+
+Decisive analytic additions:
+
+- all Jacobian and area logarithms use the dimensionless ratios
+  $\log|\mathcal B_s/\mathcal B_{*s}|$ and
+  $\log(\Omega_0/\Omega_*)$;
+- changing the fixed references shifts $Y$ and $\gamma_s$ oppositely, leaving
+  $\delta Y+\sum_s\gamma_s\delta(s_s^*\Omega_{sL})$ invariant;
+- outer-cut fields integrated on $S_0$ carry explicit endpoint-map pullbacks;
+- the HF term $-\Omega\bar\eta_A\delta L^A$ is integrated by parts under the
+  endpoint compensator; the bulk remainder cancels by the Damour constraint,
+  leaving
+  $(C_G/2)\sum_s\int\widetilde\tau_{s i}\delta s_s^i$;
+- after the Damour bulk restriction, the generator-chart constraint is the
+  moment map for diagonal relabelling of the remaining corner block;
+- Stage 3.0 quotients opposite boosts as proper normal-frame gauge;
+- the reduced local corner block contains two relative spin-1 pairs, and the
+  abstract interface endpoint potentials cancel under cotangent matching.
+
+Decisive finite checks:
+
+- V26 checks reference-scale independence;
+- V27 checks functorial endpoint pullbacks;
+- V28 checks the Damour integrating factor with a nonzero shear source;
+- V29 checks twist and both branch initial-value reconstructions;
+- V30 checks the endpoint curl and moment-map contraction;
+- V31 checks rank/kernel before and after the constraint/quotient and the
+  opposite-boost kernel;
+- V32 checks two-cell endpoint-potential and two-form cancellation.
+- V33 checks the tracefree conformal Lie contraction and the tangential
+  integration-by-parts identity that produces the Damour coefficient.
+
+Assumptions: four-dimensional vacuum; smooth caustic-free branches; selected
+HF representative; fixed outer straightening of the endpoint compensator;
+invertible endpoint maps; closed common cut or tangent smearing fields;
+affine Damour transport; fixed nonzero reference scales; declared opposite-
+boost quotient.
+
+Not verified: a physical closing-wall action or its spin-1 port; the full
+functional diffeomorphism quotient; nondegeneracy of the completed
+spin-$0+1+2$ characteristic CPS; a chart through $\theta_s=0$; completeness,
+surjectivity, positivity, continuum topology, or any quantum statement.
+
 ## 2026-08-30 — Stage-2.2 hardening
 
 Working directory:
@@ -23,7 +87,8 @@ Decisive new checks:
 
 - V19 no longer inserts three target antisymmetric matrices.  It checks the
   corner/normal-scale transformation at the one-form level after
-  $m=\lambda_R+\log|B_{+0}B_{-0}|$;
+  $m=\lambda_R+
+  \sum_s\log|\mathcal B_{s0}/\mathcal B_{*s}|$;
 - V23 starts from the affine reduced one-form and uses
   $\phi_s(v)=\phi_0+a_s\log v$ with nonzero conformal variation, moving
   $V_s$, fixed outer areas, and fixed affine lengths.  It constructs the
@@ -42,7 +107,8 @@ Analytic checks added in calculation 04:
 - ordinary and fixed-$v$ variations are related by
   $\delta_\lambda F=\Delta_vF-(\chi/B)\partial_vF$;
 - fixed affine length imposes
-  $\int_1^{V_s}\Delta B_sdv+B_s(V_s)\delta V_s=0$;
+  $\int_1^{V_s}\Delta\mathcal B_s\,dv
+  +\mathcal B_s(V_s)\delta V_s=0$;
 - fixed outer-normalized variation obeys
   $C_x=C_v+v\delta\log V_sK$;
 - the complete difference is
@@ -107,13 +173,15 @@ Decisive new checks:
   the $\widehat\omega_A$ dictionary, and
   $\tau_{\ell A}=2\widehat\omega_A$;
 - V17 verifies
-  $\partial_v\log B=v\operatorname{tr}(K^2)/8$,
+  $\partial_v\log|\mathcal B/\mathcal B_*|
+  =v\operatorname{tr}(K^2)/8$,
   $B_0=2/\theta_0$, and the controlled field variations in a diagonal finite
   mode;
 - V18 reproduces the coefficient of the shared-corner conformal endpoint term
   in that mode;
 - V19 verifies the one-form corner/normal-scale transformation after
-  $m=\lambda_R+\log|B_{+0}B_{-0}|$; the complete scale remainder is derived
+  $m=\lambda_R+
+  \sum_s\log|\mathcal B_{s0}/\mathcal B_{*s}|$; the complete scale remainder is derived
   in calculation 04 and exercised by V23;
 - V20 verifies the first-jet mismatch norm
   $\mathcal J^2=\Delta\sigma^2+(\Delta\theta)^2/2$ and its generic nonvanishing
@@ -193,7 +261,8 @@ $(\mathcal L_\ell+\theta)\omega_A
 the positive sign and factor used by V8.  Reisenberger arXiv:1211.3880
 eqs. (100), (105), and (117)--(118) were used only after the project pullback.
 They confirm the conformal coefficient but show that
-$n_s=(d\lambda_s/dv_s)\ell_s$, that the isolated corner blocks have an
+$n_s=\mathcal B_s\ell_s$ with
+$\mathcal B_s=d\lambda_s/dv_s$, that the isolated corner blocks have an
 unresolved relative sign, and that the field-dependent transformation also
 produces a shared-corner conformal endpoint term.  Full equivalence is
 therefore kept open.

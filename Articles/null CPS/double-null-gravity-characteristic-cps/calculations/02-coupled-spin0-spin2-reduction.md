@@ -541,23 +541,26 @@ are area-parameter tangents, not the project's affine generators.  Write
 
 $$
 \boxed{
-n_s=B_s\ell_s,
+n_s=\mathcal B_s\ell_s,
 \qquad
-B_s:=\frac{d\lambda_s}{dv_s}.}
+\mathcal B_s:=\frac{d\lambda_s}{dv_s}.}
 \tag{8.1}
 $$
+
+Fix nonzero branch references $\mathcal B_{*s}$ with the same dimension as
+$\mathcal B_s$ before taking logarithms of these coordinate Jacobians.
 
 Since $v_s=r_s/r_0$, at the initial cut
 
 $$
 \frac{dv_s}{d\lambda_s}\bigg|_{S_0}=\frac12\theta_{s0},
 \qquad
-B_{s0}=\frac{2}{\theta_{s0}},
+\mathcal B_{s0}=\frac{2}{\theta_{s0}},
 \tag{8.2}
 $$
 
 whenever the area parameter is nonstationary.  For the assignment
-$n_R=B_+\ell_+$ and $n_L=B_-\ell_-$, the corrected dictionary is
+$n_R=\mathcal B_+\ell_+$ and $n_L=\mathcal B_-\ell_-$, the corrected dictionary is
 
 | Project | Reisenberger | Qualification |
 |---|---|---|
@@ -566,8 +569,8 @@ $n_R=B_+\ell_+$ and $n_L=B_-\ell_-$, the corrected dictionary is
 | $\bar q^s_{AB}$ | $e_{pq}$ | unimodular conformal two-metric |
 | $\theta_s=2r_s'/r_s$ | $2\partial_{\eta_s}\log v_s$ | after identifying affine parameters up to a fixed affine transformation |
 | $\sigma^s_{AB}=\Omega_s\partial_{\eta_s}\bar q^s_{AB}/2$ | $\rho\partial_{\eta_A}e_{pq}/2$ | same shear convention |
-| $m=-\log(-\ell_+\!\cdot\ell_-)$ | $\lambda_R=-\log|n_L\!\cdot n_R|$ | $\lambda_R=m-\log|B_+B_-|$ |
-| $\widehat\omega_A$ | area-normal twist $\tau_v$ after rescaling | $\tau_v=2\widehat\omega+D\log|B_+/B_-|$; they are not literally equal |
+| $m=-\log(-\ell_+\!\cdot\ell_-)$ | $\lambda_R=-\log(|n_L\!\cdot n_R|/|\mathcal B_{*+}\mathcal B_{*-}|)$ | $\lambda_R=m-\sum_s\log|\mathcal B_s/\mathcal B_{*s}|$ after fixing reference normalizations |
+| $\widehat\omega_A$ | area-normal twist $\tau_v$ after rescaling | $\tau_v=2\widehat\omega+D\log|\mathcal B_+/\mathcal B_-|$; they are not literally equal |
 | $\sqrt{\Omega_{sL}/\Omega_0}$ | $\bar v_A$ | endpoint value of the area parameter |
 | fixed generator/endpoint embeddings | $\delta s_A^i=0$ | removes the endpoint-map/twist potential |
 
@@ -579,8 +582,10 @@ The normal and twist entries follow from
 
 $$
 \boxed{
-\lambda_R=-\log|n_L\!\cdot n_R|
-=m-\log|B_+B_-|,}
+\lambda_R=-\log\frac{|n_L\!\cdot n_R|}
+{|\mathcal B_{*+}\mathcal B_{*-}|}
+=m-\log|\mathcal B_+/\mathcal B_{*+}|
+-\log|\mathcal B_-/\mathcal B_{*-}|,}
 \tag{8.3}
 $$
 
@@ -598,7 +603,7 @@ $$
 
 $$
 \boxed{
-\tau_v=\tau_\ell+D\log|B_+/B_-|.}
+\tau_v=\tau_\ell+D\log|\mathcal B_+/\mathcal B_-|.}
 \tag{8.5}
 $$
 
@@ -616,13 +621,17 @@ At $S_0$,
 
 $$
 \lambda_R
-=m+\log\left|\frac{\theta_{+0}\theta_{-0}}4\right|.
+=m+\log\left|
+\frac{\theta_{+0}\theta_{-0}
+\mathcal B_{*+}\mathcal B_{*-}}4\right|.
 \tag{8.6}
 $$
 
 Equivalently,
-$\omega_A^{(+)}=(\tau_{vA}-D_A\lambda_R)/2-D_A\log|B_+|$ and
-$\omega_A^{(-)}=-(\tau_{vA}+D_A\lambda_R)/2-D_A\log|B_-|$.
+$\omega_A^{(+)}=(\tau_{vA}-D_A\lambda_R)/2
+-D_A\log|\mathcal B_+/\mathcal B_{*+}|$ and
+$\omega_A^{(-)}=-(\tau_{vA}+D_A\lambda_R)/2
+-D_A\log|\mathcal B_-/\mathcal B_{*-}|$.
 The simpler single-$\omega$ relation is not the generic affine dictionary.
 Reversing the branch assignment changes the corresponding twist signs.
 
@@ -676,10 +685,12 @@ $$
 $$
 
 Equations (8.3) and (8.6) show that the normal-scale terms in
-$\delta m=\delta\lambda_R+\delta\log|B_+B_-|$ must be combined with the two
+$\delta m=\delta\lambda_R+
+\sum_s\delta\log|\mathcal B_s/\mathcal B_{*s}|$ must be combined with the two
 transformed sheet terms.  Calculation 04 performs this combination at the
 one-form level, imposes the fixed-affine-length common-domain constraint, and
-gives the explicit generator (3.10).  The $\delta\log B_{s0}$ terms cancel,
+gives the explicit generator (3.10).  The
+$\delta\log|\mathcal B_{s0}/\mathcal B_{*s}|$ terms cancel,
 while the moving lower limit generates the shared-corner conformal term in
 Reisenberger equations (106), (116), and (118).  Fixing endpoint maps does not
 remove that term.  Thus there is no remaining corner-sign discrepancy.
@@ -703,7 +714,7 @@ Calculation 04 completes the comparison.  Therefore:
 
 - the conformal bulk normalization agrees;
 - the affine/area normal dictionary contains the nontrivial scale factors
-  $B_s=d\lambda_s/dv_s$;
+  $\mathcal B_s=d\lambda_s/dv_s$;
 - the project area/relative-normal pair transforms to Reisenberger's pair
   with the same sign, and the conformal endpoint term is reproduced;
 - the missing twist/endpoint-map sector is explained by

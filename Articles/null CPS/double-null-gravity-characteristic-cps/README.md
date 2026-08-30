@@ -2,27 +2,34 @@
 
 ## Direct verdict
 
-**Correct under the fixed-generator, monotonic-area, common-endpoint
-conditions stated in calculation 04:** Stage 2.2 closes the
-affine-to-Reisenberger transformation at the one-form level, with an explicit
-field-space generator and outer area-port shift.  It also proves independent-
-data reduction of the spin-$0+2$ bulk form after full first-jet matching.  The
-proposed
-finite-cross data
+**Correct under the classical, caustic-free, selected-HF-representative
+conditions stated in calculations 04--05:** Stage 2.2 closes the
+fixed-endpoint affine-to-area transformation and independent spin-$0+2$ bulk
+reduction.  Stage 3.0 derives the varying-endpoint spin-1 cut block, proves
+the generator-chart moment map after the Stage-2 Damour bulk restriction,
+chooses the opposite-boost quotient, and checks abstract spin-1 interface
+composition.  The fixed-affine bulk data are
 
 $$
 (\bar q^+_{AB}(u,x),\bar q^-_{AB}(v,x);
 \Omega_0,\theta_{+0},\theta_{-0},\widehat\omega_A,m_0)
 $$
 
-now carry an explicit reduced spin-0+spin-2 two-form in affine profile
+and carry an explicit reduced spin-0+spin-2 two-form in affine profile
 variables, with $r_\pm=\sqrt{\Omega_\pm}$ reconstructed by a Green map from
-$\bar q^\pm$.  This is not yet a representative-independent full
-gravitational CPS: the area chart does not cross $\theta_s=0$, the physical
-closing-wall port has not been derived, and the spin-1/embedding block and
-full gauge quotient remain open.  A variable outer conformal metric does
-**not** by itself require an independent shape port; such a pair is
-closing-wall/polarization dependent.
+$\bar q^\pm$.  The nonredundant extended corner coordinates are
+
+$$
+(s_+^A,s_-^A,\widetilde\tau_{+A},\widetilde\tau_{-A};
+\Omega_0,\lambda_R,\bar h_{AB}),
+$$
+
+with $\widehat\omega_A$ reconstructed rather than counted again.  This is not
+yet a representative-independent full gravitational CPS: the area chart does
+not cross $\theta_s=0$, the physical closing-wall port has not been derived,
+and the full functional gauge quotient/nondegeneracy remain open.  A variable
+outer conformal metric does **not** by itself require an independent shape
+port; such a pair is closing-wall/polarization dependent.
 
 What is established is precise:
 
@@ -54,7 +61,8 @@ What is established is precise:
   area/composition outline as superseded;
 - `calculations/04-stage2.2-hardening.md` distinguishes fixed affine, fixed
   $v$, and fixed outer-normalized variations; derives the complete canonical
-  transformation; resolves the outer-shape question; constructs
+  transformation with dimensionless reference ratios and explicit endpoint
+  pullbacks; resolves the outer-shape question; constructs
   $\iota:\mathcal C_{12}\hookrightarrow\mathcal P_1\times\mathcal P_2$ and
   $\rho:\mathcal C_{12}\to\mathcal P_{12}$; and fixes the CK/Reisenberger
   normal-data dictionaries;
@@ -62,15 +70,24 @@ What is established is precise:
   $(\Omega,\bar q_{AB},\theta,\sigma_{AB})$, equivalently $(q_{AB},B_{AB})$;
   a full geometric finite-cell port theorem remains conditional on the
   closing action;
-- Stage 3 is ready only in the controlled classical endpoint-map
-  polarization using $\widehat\omega_A=\tau_{\ell A}/2$ and
-  $(s_\pm^A,\widetilde\tau_{\pm A})$; Stage 3 has not been started.
+- `calculations/05-stage3.0-endpoint-maps-twist-and-corner-reduction.md`
+  derives
+  $\Theta^{(1)}_{S_0}=(C_G/2)\sum_s\int
+  \widetilde\tau_{s i}\boldsymbol\delta s_s^i$ from the HF null potential and
+  Damour constraint;
+- after the Stage-2 Damour bulk restriction, the generator-chart constraint
+  is the moment map for diagonal $\mathrm{Diff}(S_0)$ of the remaining corner
+  block; quotienting it leaves two transverse relative endpoint-map pairs;
+- opposite boosts are quotiented as proper normal-frame gauge, and the
+  abstract spin-1 interface potential cancels under diagonal cotangent
+  matching.
 
 ## Fixed scope
 
 The project is classical.  It concerns a caustic-free finite double-null cross
 $X=N_+\cup N_-$ in four-dimensional vacuum Einstein gravity.  Generator
-labels and embeddings are fixed in the first pass, and
+labels and embeddings are fixed in the Stage-2 bulk chart; Stage 3.0 varies
+their endpoint maps in the corner sector.  Affine Damour transport has
 $\kappa_\pm=0$.  No quantization, Weyl algebra, channel, Stinespring, or
 post-CIVP construction belongs here.
 
@@ -90,18 +107,25 @@ post-CIVP construction belongs here.
 - `calculations/04-stage2.2-hardening.md`: complete affine/area canonical
   transformation, outer-endpoint audit, independent-data reduction, CK
   dictionary, and Stage-3 gate.
+- `calculations/05-stage3.0-endpoint-maps-twist-and-corner-reduction.md`:
+  HF-to-endpoint derivation, Damour transport, moment map, boost quotient,
+  rank/kernel, interface composition, and Reisenberger regression.
 - `verification/STAGE1_AUDIT_SUMMARY.md`: concise proved/conditional/open
   verdict.
 - `verification/STAGE2_1_AUDIT_SUMMARY.md`: concise Stage-2.1 answer sheet and
   record of the superseded Stage-2.1 boundary.
 - `verification/STAGE2_2_AUDIT_SUMMARY.md`: authoritative Stage-2.2 answer
   sheet and Stage-3 gate.
+- `verification/STAGE3_0_AUDIT_SUMMARY.md`: authoritative Stage-3.0 verdict
+  and remaining claim boundary.
 - `verification/CLAIM_LEDGER.md`: authoritative claim status.
 - `verification/RUN_LOG.md`: executed command, assumptions, result, and
   evidence boundary.
 - `scripts/spin0_and_spin2_checks.wl`,
-  `scripts/stage21_corner_area_composition_checks.wl`, and
-  `scripts/stage22_hardening_checks.wl`: executable exact finite-mode checks.
+  `scripts/stage21_corner_area_composition_checks.wl`,
+  `scripts/stage22_hardening_checks.wl`, and
+  `scripts/stage30_endpoint_twist_checks.wl`: executable exact finite-mode
+  checks.
 - `scripts/README.md`: command and evidence boundary.
 
 ## Source discipline

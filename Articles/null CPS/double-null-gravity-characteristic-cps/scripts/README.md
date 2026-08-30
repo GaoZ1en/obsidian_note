@@ -6,6 +6,7 @@ Run from the project root:
 wolframscript -file scripts/spin0_and_spin2_checks.wl
 wolframscript -file scripts/stage21_corner_area_composition_checks.wl
 wolframscript -file scripts/stage22_hardening_checks.wl
+wolframscript -file scripts/stage30_endpoint_twist_checks.wl
 ```
 
 The script checks exact algebraic identities for the projector, nonlinear
@@ -31,11 +32,21 @@ from independent parameters before constructing the full first-jet matching
 Jacobian; checks the reduced equality and a generic off-locus residual; and
 repeats the independent-data reduction for three cells.
 
+The Stage-3.0 script checks fixed reference-scale independence, endpoint-map
+pullback composition, the Damour integrating-factor solution with a nonzero
+shear source, reconstruction of $\tau_v$ and $\widehat\omega_A$, the curl of
+the endpoint-map potential, the diagonal moment-map contraction, local
+rank/kernel before and after the declared quotient, the opposite-boost
+kernel, and two-cell endpoint-port cancellation.
+
 A passing result is not evidence for a closing-wall action or its port
-momenta, an area chart through $\theta=0$, a reduced spin-1 block, or a full
-gravitational gauge quotient.  It also does not prove completeness,
+momenta, an area chart through $\theta=0$, or a full functional gravitational
+gauge quotient/nondegeneracy theorem.  It also does not prove completeness,
 positivity, surjectivity, continuum topology, or a representative-independent
 reduced action.  The affine/area functional proof and independent-data bulk
 theorem are the analytic identities in calculation 04; V23--V25 are their
-finite-mode regressions.  A complete geometric finite-cell port theorem
-remains conditional on the closing action.
+finite-mode regressions.  The HF-to-endpoint, moment-map, and abstract
+interface statements are analytic identities in calculation 05; V26--V32 are
+their finite regressions, while V33 is the separate xAct check of the local
+tracefree-Lie and integration-by-parts identities.  A complete geometric
+finite-cell port theorem remains conditional on the closing action.

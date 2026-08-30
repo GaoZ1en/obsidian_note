@@ -29,18 +29,19 @@ interface port from a closing action.
 Ordinary and comoving variations obey
 
 $$
-\delta_\lambda F=\Delta_vF-\frac\chi B\partial_vF,
+\delta_\lambda F=\Delta_vF-\frac\chi{\mathcal B}\partial_vF,
 \qquad
 \chi=(\delta\lambda)_v,
 \qquad
-\Delta_vB=\partial_v\chi.
+\Delta_v\mathcal B=\partial_v\chi.
 $$
 
 At the moving upper endpoint $V_s=r_s(L_s)/r_0$,
 
 $$
 0=\delta L_s
-=\int_1^{V_s}\Delta_vB_s,dv+B_s(V_s)\delta V_s.
+=\int_1^{V_s}\Delta_v\mathcal B_s\,dv
++\mathcal B_s(V_s)\delta V_s.
 $$
 
 Reisenberger's natural coordinate is $x=v/V_s$, so
@@ -54,7 +55,7 @@ $$
 Keeping these terms yields
 
 $$
-\Theta_X^\lambda-Theta_X^A
+\Theta_X^\lambda-\Theta_X^A
 =C_G\delta Y+C_G\sum_s\gamma_s\delta\Omega_{sL}.
 $$
 
@@ -62,6 +63,21 @@ For fixed outer areas the second term vanishes.  For variable outer areas it
 is absorbed by $b_s^A=b_s^\lambda+\gamma_s$.  Taking a curl proves the full
 fixed-map two-form identity.  V23 derives the two curls directly from the
 affine one-form for a nontrivial conformal profile with moving endpoints.
+
+All logarithms are dimensionless:
+$H_s=\log|\mathcal B_s/\mathcal B_{*s}|$ and
+$\log(\Omega_0/\Omega_*)$.  Changing the fixed references shifts
+
+$$
+Y\mapsto Y+\sum_s(c_s-c_\Omega/2)\Omega_{sL},
+\qquad
+\gamma_s\mapsto\gamma_s-c_s+c_\Omega/2,
+$$
+
+so $\delta Y+\sum_s\gamma_s\delta(s_s^*\Omega_{sL})$ and the two-form are
+unchanged.  Whenever an outer-cut field is integrated on $S_0$, its $s_s^*$
+pullback is explicit.  In the fixed-map Stage-2 sector this is trivialized by
+the common generator chart.
 
 ## Outer shape
 
@@ -115,19 +131,25 @@ $$
 =\frac12\tau_{\ell A}.
 $$
 
-After $n_s=B_s\ell_s$,
+After $n_s=\mathcal B_s\ell_s$,
 
 $$
-\lambda_R=m-\log|B_+B_-|,
+\lambda_R=m-\sum_s\log|\mathcal B_s/\mathcal B_{*s}|,
 \qquad
-\tau_{vA}=2\widehat\omega_A+D_A\log|B_+/B_-|.
+\tau_{vA}=2\widehat\omega_A
++D_A\log|\mathcal B_+/\mathcal B_-|.
 $$
 
 ## Stage-3 gate
 
-**Yes, Stage 3 is ready in one controlled classical polarization.**  Retain
-$\widehat\omega_A=\tau_{\ell A}/2$ as the shared normal variable, retain the
-endpoint maps $s_\pm^A$, and pair them with
+The nonredundant Stage-3 extended coordinates are
+
+$$
+(s_+^A,s_-^A,\widetilde\tau_{+A},\widetilde\tau_{-A};
+\Omega_0,\lambda_R,\bar h_{AB}),
+$$
+
+with
 
 $$
 \widetilde\tau_{+A}=\Omega_0(D_A\lambda_R-\tau_{vA}),
@@ -135,16 +157,36 @@ $$
 \widetilde\tau_{-A}=\Omega_0(D_A\lambda_R+\tau_{vA}),
 $$
 
-subject to Reisenberger's generator-chart constraint.  No Stage-3 spin-1
-pullback has been performed.
+and
+
+$$
+\tau_{vA}=\frac{(s_-^*\widetilde\tau_-)_A
+-(s_+^*\widetilde\tau_+)_A}{2\Omega_0},
+\qquad
+\widehat\omega_A=\frac12\left[
+\tau_{vA}-D_A\log|\mathcal B_+/\mathcal B_-|\right].
+$$
+
+$\widehat\omega_A$ is derived, not an additional coordinate.  The constraint
+is the one-form equation
+
+$$
+(s_+^*\widetilde\tau_+)_A+(s_-^*\widetilde\tau_-)_A
+=2\Omega_0D_A\lambda_R.
+$$
+
+Calculation 05 has now derived its diagonal moment-map role and selected the
+opposite-boost quotient; those are Stage-3.0 results, not assumptions of this
+cleanup.
 
 ## Verification boundary
 
 **Verified:** analytic one-form transformation and explicit generator/area-
 port shift; moving-lower-limit conformal term; independent-data bulk
 reduction; first-jet obstruction; three-cell bulk associativity; branch normal
-and twist dictionaries; V23--V25.
+and twist dictionaries; reference-scale independence V26; V23--V26.
 
-**Not verified:** a chart through $\theta_s=0$; a closing-wall action and its
-port momenta; a full finite-cell port quotient; functional completion; full
-gauge nondegeneracy; or any Stage-3 calculation.
+**Not verified by Stage 2.2:** a chart through $\theta_s=0$; a closing-wall
+action and its port momenta; a full finite-cell port quotient; functional
+completion; or full gauge nondegeneracy.  Stage-3.0 results are recorded in a
+separate audit summary.

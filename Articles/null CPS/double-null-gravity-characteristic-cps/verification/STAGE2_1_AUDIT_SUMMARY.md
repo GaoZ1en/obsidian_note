@@ -73,8 +73,9 @@ $$
 CK's sheetwise H\'aj\'i\v{c}ek datum is the appropriate branch value.
 Reisenberger's affine twist is
 $\tau_{\ell A}=2\widehat\omega_A$; after
-$n_s=B_s\ell_s$ it becomes
-$\tau_{vA}=2\widehat\omega_A+D_A\log|B_+/B_-|$.
+$n_s=\mathcal B_s\ell_s$ it becomes
+$\tau_{vA}=2\widehat\omega_A
++D_A\log|\mathcal B_+/\mathcal B_-|$.
 
 ## Area-gauge equivalence
 
@@ -82,15 +83,15 @@ On the open set where
 $v_s=r_s/r_0$ is monotonic,
 
 $$
-B_s=\frac{d\lambda_s}{dv_s}=\frac{2}{v_s\theta_s},
+\mathcal B_s=\frac{d\lambda_s}{dv_s}=\frac{2}{v_s\theta_s},
 \qquad
-B_{s0}=\frac2{\theta_{s0}},
+\mathcal B_{s0}=\frac2{\theta_{s0}},
 $$
 
 and
 
 $$
-\lambda_R=m-\log|B_+B_-|.
+\lambda_R=m-\sum_s\log|\mathcal B_s/\mathcal B_{*s}|.
 $$
 
 The fixed-$v$ calculation below was incomplete because Reisenberger's natural

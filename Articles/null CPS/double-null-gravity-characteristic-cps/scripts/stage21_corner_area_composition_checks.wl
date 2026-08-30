@@ -45,17 +45,17 @@ assertZero["V16 shared connection reproduces the sum",
 assertZero["V16 affine twist is twice the shared connection",
   Expand[(hatOmega - dM/2) - (-hatOmega - dM/2) - 2 hatOmega]];
 
-(* V17: affine-to-area focusing Jacobian in a diagonal finite mode. *)
-Clear[v, a, theta0, b0];
+(* V17: affine-to-area focusing Jacobian mathcal B in a diagonal mode. *)
+Clear[v, a, theta0, jac0];
 kMatrix = DiagonalMatrix[{2 a, -2 a}];
-bArea[v_] := (2/theta0) Exp[a^2 (v^2 - 1)/2];
+jacArea[v_] := (2/theta0) Exp[a^2 (v^2 - 1)/2];
 assertZero["V17 area focusing Jacobian",
-  D[Log[bArea[v]], v] - v Tr[kMatrix . kMatrix]/8];
-assertZero["V17 initial B is 2/theta0", bArea[1] - 2/theta0];
+  D[Log[jacArea[v]], v] - v Tr[kMatrix . kMatrix]/8];
+assertZero["V17 initial mathcal B is 2/theta0", jacArea[1] - 2/theta0];
 assertZero["V17 field variation with respect to shear amplitude",
-  D[Log[bArea[v]], a] - a (v^2 - 1)];
+  D[Log[jacArea[v]], a] - a (v^2 - 1)];
 assertZero["V17 field variation with respect to theta0",
-  D[Log[bArea[v]], theta0] + 1/theta0];
+  D[Log[jacArea[v]], theta0] + 1/theta0];
 
 (* V18: shared-corner conformal endpoint term. *)
 Clear[phi0, phi, dPhi0];
@@ -71,13 +71,16 @@ assertZero["V18 Reisenberger endpoint coefficient per branch",
   cG endpointContraction/8 + cG a];
 
 (* V19: the corner-scale cancellation is checked at one-form level.  The
-   -log B_s0 dOmega0 terms are the lower-scale remainder derived in the
+   -log(mathcal B_s0/mathcal B_*s) dOmega0 terms are the lower-scale remainder derived in the
    complete transformation in calculation 03; V23 independently obtains
    their curl from the affine one-form in a moving-endpoint finite profile. *)
-Clear[lambdaR, bPlus0, bMinus0, dLambdaR, dBPlus0, dBMinus0];
-mFromAreaNormals = lambdaR + Log[bPlus0 bMinus0];
+Clear[lambdaR, jacPlus0, jacMinus0, jacRefPlus, jacRefMinus,
+  dLambdaR, dJacPlus0, dJacMinus0];
+mFromAreaNormals = lambdaR + Log[jacPlus0/jacRefPlus] +
+  Log[jacMinus0/jacRefMinus];
 affineCornerOneForm = cG (mFromAreaNormals - 1) dOmega;
-sheetLowerScaleOneForm = -cG Log[bPlus0 bMinus0] dOmega;
+sheetLowerScaleOneForm = -cG (Log[jacPlus0/jacRefPlus] +
+  Log[jacMinus0/jacRefMinus]) dOmega;
 reisenCornerOneForm = -cG Omega0 dLambdaR;
 cornerGeneratorDifferential = cG (
   (lambdaR - 1) dOmega + Omega0 dLambdaR);
@@ -143,5 +146,5 @@ assertZero["V22 shear-free area radius limit",
 
 Print["PASS all Stage-2.1 focused identities"];
 Print["NOT PROVED: a closing-wall action or its port momenta,"];
-Print["NOT PROVED: a chart through theta=0, spin-1 reduction,"];
+Print["NOT PROVED BY THIS SCRIPT: a chart through theta=0 or spin-1 reduction; see the Stage-3.0 checks,"];
 Print["NOT PROVED: full gauge nondegeneracy or functional completion."];

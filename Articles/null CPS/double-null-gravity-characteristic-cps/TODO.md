@@ -38,11 +38,21 @@
 - [x] Action: complete the field-dependent affine-to-area transformation on
   the common fixed-endpoint-map sector.
   Context: fixed affine length imposes
-  $\int_1^{V_s}\Delta B_sdv+B_s(V_s)\delta V_s=0$; fixed-$v$ and fixed
+  $\int_1^{V_s}\Delta\mathcal B_s\,dv
+  +\mathcal B_s(V_s)\delta V_s=0$; fixed-$v$ and fixed
   $x=v/V_s$ variations differ.  Calculation 04 gives the explicit generator
   $Y$ and area-port shift.  The outer conformal metric may vary.
   Check: equations (3.1)--(3.13) prove the one-form identity; V23 derives the
   two curls from the affine one-form for a moving-endpoint nontrivial profile.
+
+- [x] Action: clean the Stage-2.2 reference, pullback, and variable-counting
+  ambiguities.
+  Context: all Jacobian and area logarithms now use fixed dimensionless
+  ratios; outer-cut fields carry explicit $s_s^*$ pullbacks; the area
+  Jacobian is $\mathcal B$ and never $B_{AB}$; $\widehat\omega_A$ is derived
+  rather than counted alongside both endpoint momenta.
+  Check: calculation 04 equations (3.14)--(3.17) and V26 prove reference-scale
+  independence of the exact-plus-port combination.
 
 - [x] Action: prove independent-data spin-$0+2$ **bulk** reduction.
   Context: construct $\mathcal P_1\times\mathcal P_2$ before matching
@@ -60,12 +70,26 @@
   Check: reproduce calculation 04 equation (3.11) for the area port and
   derive any additional wall term directly from the selected action.
 
-- [ ] Action: begin Stage 3 only in the controlled classical transport lane.
+- [x] Action: complete Stage 3.0 in the controlled classical transport lane.
   Context: Stage-2 data now determine
-  $D_A(\theta/2)-D_B\sigma^B{}_A$.  Use
-  $\widehat\omega_A=\tau_{\ell A}/2$ as the project variable, retain
-  endpoint maps $s_\pm^A$, and use $\widetilde\tau_{\pm A}$ as their
-  conjugates.  CK's $\pi_A$ is rigging-convention dependent.
-  Check: solve Damour and pull back only the classical endpoint-map/twist
-  block subject to the generator-chart constraint; do not introduce quantum
-  data.
+  $D_A(\theta/2)-D_B\sigma^B{}_A$.  Calculation 05 derives the HF
+  endpoint-map potential, solves Damour, proves the diagonal moment map of the
+  remaining corner block after the Damour bulk restriction, quotients
+  opposite boosts, and checks rank and abstract interface composition.
+  Check: analytic equations (2.4)--(8.3) and V27--V32; no quantum data were
+  introduced.
+
+- [ ] Action: combine the Stage-2 bulk and Stage-3 corner blocks in a full
+  functional gauge audit.
+  Context: the local corner quotient leaves two relative spin-1 pairs, but a
+  pointwise rank calculation does not prove nondegeneracy of the completed
+  spin-$0+1+2$ profile space.
+  Check: characterize every bulk-plus-corner diffeomorphism kernel and prove
+  the quotient on a declared function space.
+
+- [ ] Action: derive one concrete oriented closing-wall action and its full
+  area, normal, and spin-1 interface ports.
+  Context: the abstract endpoint cotangent block composes, but this does not
+  identify the port supplied by a physical closing wall.
+  Check: reproduce the area-port and endpoint-map incidence terms from that
+  action and rerun two-cell composition with its actual boundary data.

@@ -6,7 +6,8 @@
 branch-normal dictionary in sections 1--2 are correct.  The former section
 3.3 did not prove the claimed affine-to-area identity: it confused fixed-$v$
 and fixed-outer-normalized variations and did not impose the common-domain
-constraint relating $B_s$, the moving endpoint, and the fixed affine length.
+constraint relating $\mathcal B_s$, the moving endpoint, and the fixed affine
+length.
 The former section 4 proved subdivision additivity, not yet an
 independent-data reduction theorem.  Calculation 04 supplies the corrected
 field-dependent one-form transformation, the explicit generator and port
@@ -259,11 +260,11 @@ this open set.
 Let
 
 $$
-n:=\partial_v=B\ell,
+n:=\partial_v=\mathcal B\ell,
 \qquad
-B:=\frac{d\lambda}{dv}=\frac{2}{v\theta},
+\mathcal B:=\frac{d\lambda}{dv}=\frac{2}{v\theta},
 \qquad
-\boxed{B_0=\frac2{\theta_0}.}
+\boxed{\mathcal B_0=\frac2{\theta_0}.}
 \tag{3.3}
 $$
 
@@ -286,16 +287,16 @@ $$
 \boldsymbol\delta_\lambda F
 =\boldsymbol\Delta F+(\partial_vF)\alpha,
 \qquad
-\alpha=-\frac\chi B,
+\alpha=-\frac\chi{\mathcal B},
 \qquad
-\boldsymbol\Delta B=\partial_v\chi.}
+\boldsymbol\Delta\mathcal B=\partial_v\chi.}
 \tag{3.5}
 $$
 
 The fixed initial cut gives $\chi(1)=0$.  If the affine endpoint $L$ is fixed,
 
 $$
-\chi(\bar v)=-B(\bar v)\boldsymbol\delta\bar v,
+\chi(\bar v)=-\mathcal B(\bar v)\boldsymbol\delta\bar v,
 \qquad
 \boldsymbol\delta\log\bar v
 =\frac12\left(
@@ -306,9 +307,12 @@ $$
 
 The affine focusing equation becomes
 
+Fix nonzero branch references $\mathcal B_{*s}$ with the same dimension as
+$\mathcal B_s$, as made explicit in calculation 04.  Then
+
 $$
 \boxed{
-\partial_v\log|B|
+\partial_v\log|\mathcal B/\mathcal B_*|
 =\frac v8\operatorname{tr}(K^2).}
 \tag{3.7}
 $$
@@ -316,10 +320,10 @@ $$
 Its field variation is
 
 $$
-\partial_v\boldsymbol\Delta\log|B|
+\partial_v\boldsymbol\Delta\log|\mathcal B/\mathcal B_*|
 =\frac v4\operatorname{tr}(K C'),
 \qquad
-\boldsymbol\Delta\log|B_0|
+\boldsymbol\Delta\log|\mathcal B_0/\mathcal B_*|
 =-\frac{\boldsymbol\delta\theta_0}{\theta_0}.
 \tag{3.8}
 $$
@@ -329,20 +333,23 @@ $\boldsymbol\Delta K=C'+[K,C]$ drops out of (3.8) by cyclicity.
 
 ### 3.2 Normal scalar and twist
 
-Under $n_+=B_+\ell_+$ and $n_-=B_-\ell_-$,
+Under $n_+=\mathcal B_+\ell_+$ and $n_-=\mathcal B_-\ell_-$,
 
 $$
 \boxed{
-\lambda_R:=-\log|n_+\cdot n_-|
-=m-\log|B_+B_-|.}
+\lambda_R:=-\log\frac{|n_+\cdot n_-|}
+{|\mathcal B_{*+}\mathcal B_{*-}|}
+=m-\sum_{s=\pm}\log|\mathcal B_s/\mathcal B_{*s}|.}
 \tag{3.9}
 $$
 
-At $S_0$, where $B_{s0}=2/\theta_{s0}$,
+At $S_0$, where $\mathcal B_{s0}=2/\theta_{s0}$,
 
 $$
 \lambda_R
-=m+\log\left|\frac{\theta_{+0}\theta_{-0}}4\right|.
+=m+\log\left|
+\frac{\theta_{+0}\theta_{-0}
+\mathcal B_{*+}\mathcal B_{*-}}4\right|.
 \tag{3.10}
 $$
 
@@ -351,7 +358,7 @@ The area-normal twist is
 $$
 \boxed{
 \tau_{vA}
-=2\widehat\omega_A+D_A\log|B_+/B_-|.}
+=2\widehat\omega_A+D_A\log|\mathcal B_+/\mathcal B_-|.}
 \tag{3.11}
 $$
 
@@ -360,15 +367,18 @@ Equivalently,
 $$
 \begin{aligned}
 \omega_A^{(+)}
-&=\frac12(\tau_{vA}-D_A\lambda_R)-D_A\log|B_+|,\\
+&=\frac12(\tau_{vA}-D_A\lambda_R)
+-D_A\log|\mathcal B_+/\mathcal B_{*+}|,\\
 \omega_A^{(-)}
-&=-\frac12(\tau_{vA}+D_A\lambda_R)-D_A\log|B_-|.
+&=-\frac12(\tau_{vA}+D_A\lambda_R)
+-D_A\log|\mathcal B_-/\mathcal B_{*-}|.
 \end{aligned}
 \tag{3.12}
 $$
 
 Equations (3.9)--(3.12) are the complete fixed-label normal dictionary.  The
-shortcut $\lambda_R=m$ is false unless the product $B_+B_-$ is fixed to one.
+shortcut $\lambda_R=m$ is false unless both dimensionless Jacobians are fixed
+so that their product is one.
 
 ### 3.3 Fixed-map area-data two-form
 
@@ -390,8 +400,8 @@ $$
 and fixed affine length requires
 
 $$
-0=\int_1^{\bar v_s}\boldsymbol\Delta B_s\,dv
-+B_s(\bar v_s)\boldsymbol\delta\bar v_s.
+0=\int_1^{\bar v_s}\boldsymbol\Delta\mathcal B_s\,dv
++\mathcal B_s(\bar v_s)\boldsymbol\delta\bar v_s.
 \tag{3.14}
 $$
 
@@ -407,7 +417,8 @@ $$
 $$
 
 The former formula
-$b_s^{(v)}=b_s^{(\lambda)}+\log|B_s(\bar v_s)|$ is incomplete and is
+$b_s^{(v)}=b_s^{(\lambda)}+
+\log|\mathcal B_s(\bar v_s)/\mathcal B_{*s}|$ is incomplete and is
 withdrawn.  The correct shift is calculation 04 equation (3.11), which
 contains the bulk Jacobian functional and all moving-upper-limit terms.
 
