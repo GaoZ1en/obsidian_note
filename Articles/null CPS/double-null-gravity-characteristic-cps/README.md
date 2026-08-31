@@ -2,27 +2,23 @@
 
 ## Direct verdict
 
-**Correct on the following exact scope:** Stages 0--3 derive the
-selected-HF-representative characteristic form, endpoint polarization,
-moment map, and interface algebra.  Stage 4 now defines the framed data and
-solution spaces, proves the affine-to-Luk CIVP dictionary, and connects the
-smooth restricted germ data and smooth full-sheet data to actual vacuum
-developments on, respectively, a local germ and the long-by-thin neighborhood
-supplied by the cited theorems.  On the framed linearized local/collar
-solution spaces,
+**Established:** Stages 0--3 retain their classical characteristic-form and
+interface-algebra scope. Stage 4.1 repairs the smooth splitting prescription,
+global reference density and affine endpoint chart, preserves the original
+marked sheets in a Cabet gauge, and constructs a partial completion
+$C_{\rm pre}$ with explicit Volterra/Moser and linearized estimates.
 
-$$
-L_{\rm loc}^{*}\Omega_{\rm EH}^{\rm fr}=\Omega_{\rm char}.
-$$
+**Not proved:** the full $C_{\rm SH}$, project-data framed germ/collar
+bijection, full linearized tangent surjectivity, or $P_{\rm cell}^k$.
+The intrinsic EH identity holds for compatible existing variations and on
+the image of any actually constructed lift. Abstract extra outer ports are
+excluded unless $P_{\rm red}$ supplies their action-derived definitions.
 
-Writing this as the literal nonlinear pullback by $E_{\rm loc}^{\rm fr}$ on
-an entire Banach neighborhood still requires the $C^1$ estimate below.
-The finite-Sobolev Banach development map on one prescribed full rectangle is
-**conditional** on the single background-stability proposition
-$\mathbf P_{\rm rect}^{s,r}$, including openness and $C^1$ inverse restriction
-in an independently declared trace-regular solution topology.  The cited
-common-domain continuous-dependence and smooth continuation theorems do not
-by themselves prove it.
+The new PDE result is an angular-flux difference estimate for already
+existing reduced solutions, calculation 08.(4.3). The first missing
+estimate is $R_\perp^k$, the outgoing transverse-derivative/trace bound
+08.(6.4). The prescribed-rectangle $P_{\rm rect}^{s,r}$ remains conditional;
+no finite-grid induction or quantization is begun.
 
 The fixed-affine bulk data are
 
@@ -33,7 +29,7 @@ $$
 
 and carry an explicit reduced spin-0+spin-2 two-form in affine profile
 variables, with $r_\pm=\sqrt{\Omega_\pm}$ reconstructed by a Green map from
-$\bar q^\pm$.  The nonredundant extended corner coordinates are
+$\bar q^\pm$.  On the monotonic-area sector, the nonredundant corner coordinates are
 
 $$
 (s_+^A,s_-^A,\pi_{+},\pi_{-};
@@ -42,10 +38,10 @@ $$
 
 where
 $\pi_s\in\Gamma(s_s^*T^*S_{sL}\otimes\operatorname{Dens}(S_0))$ and
-$p_{sA}=\pi_{s i}\partial_A s_s^i$ with no extra determinant.
+$p_{sA}\nu_0=\pi_{s i}\partial_A s_s^i$ with no extra determinant.
 $\widehat\omega_A$ is reconstructed rather than counted again.  This is not a
 representative-independent full gravitational CPS: the area chart does not
-cross $\theta_s=0$, the physical closing-wall port has not been derived, and
+cross $\theta_s=0$ (the affine potential 06.(9.2) does), the physical closing-wall port has not been derived, and
 the full functional gauge quotient/nondegeneracy remain open.  Opposite
 boosts are a declared normal-frame gauge policy, not a proved kernel of the
 unspecified closing-wall form.  No quantization is included.
@@ -110,12 +106,15 @@ What is established is precise:
 - `calculations/06-rigorous-civp-dictionary.md` proves the exact
   $\gamma,\chi,\underline\chi,\zeta$ dictionary, including
   $\zeta=-\widehat\omega$ in the symmetric normalized frame, and separates
-  the Luk core theorem from the still-unwritten finite-Sobolev MSP
-  $Y_\pm$ completion;
+  the smooth core equivalence from full $C_{\rm SH}$ and MSP completion;
+  its new partial-completion estimates do not close those full maps;
 - `calculations/07-framed-development-map-and-solution-space.md` defines the
-  framed quotient, proves the germ/collar development and linearized
-  solution-space identity, and reduces the full fixed rectangle to
-  $\mathbf P_{\rm rect}^{s,r}$ without claiming arbitrary-data existence;
+  framed quotient and fixed-metric framing lemma, conditions project-data
+  germ/collar bijectivity, and proves the intrinsic restriction/image
+  identity without claiming full tangent surjectivity;
+- `calculations/08-uniform-one-cell-characteristic-stability.md` gives the
+  actual doubled Weyl system, angular-flux difference estimate, exact
+  remainder equation and the first unclosed restart estimate;
 - for every particular full-rectangle development that exists, the outgoing
   cross is geometric, EH current conservation equates the input/output
   forms under the stated side-boundary assumptions, and full-DND
@@ -155,8 +154,10 @@ post-CIVP construction belongs here.
 - `calculations/06-rigorous-civp-dictionary.md`: framed data spaces and the
   exact project/Luk/MSP/Cabet convention and scope dictionary.
 - `calculations/07-framed-development-map-and-solution-space.md`: framed
-  solution quotient, local/collar development, exact fixed-rectangle PDE
-  reduction, linearized solution-space identity, output, and composition.
+  solution quotient, conditional project-data development, intrinsic
+  restriction/image identity, output, and composition.
+- `calculations/08-uniform-one-cell-characteristic-stability.md`: exact
+  reduced-system splitting, flux stability and the $R_\perp^k$ stop line.
 - `verification/STAGE1_AUDIT_SUMMARY.md`: concise proved/conditional/open
   verdict.
 - `verification/STAGE2_1_AUDIT_SUMMARY.md`: concise Stage-2.1 answer sheet and
@@ -185,6 +186,8 @@ post-CIVP construction belongs here.
   checks V0--V44.
 - `scripts/stage31_xact_residuals.wl`: independent xAct residual check for
   the tracefree Lie and cut integration-by-parts identities.
+- `scripts/stage41_truth_boundary_checks.wl` and
+  `scripts/stage41_xact_checks.wl`: scoped Stage-4.1 regressions.
 - `scripts/README.md`: command and evidence boundary.
 
 ## Source discipline
@@ -194,3 +197,28 @@ pieces identified in the calculations.  In particular, the Reisenberger
 forms are regression checks, not input assumptions.  The existing literature
 note `Literature Notes/Quantization of Gravity on Null Hypersurfaces
 (2607.07785v1).md` was read as a convention audit and was not modified.
+
+## Stage-4.1 required verdict
+
+1. **Full marked-sheet project-to-PDE dictionary: not proved.** The smooth
+   core equivalence uses the fixed prescription $a_\pm[m]$; the direct
+   Cabet gauge preserves both original sheets and outer cuts. Full
+   connection/curvature completion is still open.
+2. **$C_{\rm SH}$: incomplete.** $C_{\rm pre}$ and $DC_{\rm pre}$ are
+   constructed with smooth/Lipschitz estimates for $3\le k\le s-3$.
+   The full map, its derivative loss and $DC_{\rm SH}$ are not proved.
+3. **Framed local/collar bijectivity: conditional.** Fixed-metric framing
+   uniqueness is proved before optical breakdown; complete project-to-PDE
+   initial data and finite-regularity gauge comparison remain required.
+4. **Presymplectic identity: restriction/constructed-image only.** It holds
+   for compatible existing variations and any actually constructed lift,
+   with $\Omega_{\rm char}^{\rm intr}$. Full tangent-space surjectivity is
+   not proved. Extended auxiliary ports require $P_{\rm red}$.
+5. **$P_{\rm cell}^k$: not proved.** Angular-flux stability for existing
+   reduced solutions is proved; the first missing estimate is $R_\perp^k$,
+   calculation 08.(6.4), controlling mixed sources (6.3) and outgoing traces.
+6. **$P_{\rm rect}^{s,r}$: still conditional.** No finite-grid proof or
+   unproved numerical regularity threshold is retained.
+7. **Next single PDE lemma:** prove $R_\perp^k$ from completed incoming
+   norms with a tracked finite derivative loss. The upstream initial-data
+   sublemma is $C_{\rm mix}$, calculation 06.(8.11).

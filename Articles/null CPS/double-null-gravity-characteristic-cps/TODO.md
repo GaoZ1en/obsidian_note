@@ -1,70 +1,43 @@
 # Immediate Research Tasks
 
-**Stage 4 theorem boundary.**  Stages 0--3 remain frozen at their established
-classical algebraic scope.  The smooth solution-space phase is closed for a
-local germ and long-by-thin collar, but the finite-Sobolev Banach chart and
-the prescribed full rectangle are conditional on one active PDE proposition
-$\mathbf P_{\rm rect}^{s,r}$.  Do not quantize.
+**Stage 4.1 theorem boundary.** Stages 0--3 remain classical and unchanged.
+Full project-data completion and framed germ/collar bijectivity are not
+closed. The first reduced-system flux estimate is proved; the full one-cell
+and prescribed-rectangle theorems remain conditional. Do not quantize.
 
-- [x] Action: define the framed characteristic and vacuum solution spaces.
-  Context: retain optical functions, affine null frame, generator labels,
-  corner embedding, and endpoint markings; quotient only
-  $\operatorname{Diff}_0$ that is trivial on this framing.
-  Check: calculation 07, Section 1.
-
-- [x] Action: prove the project-to-rigorous-CIVP core dictionary.
-  Context: calculation 06 derives
-  $\gamma_0=\Omega_0\bar h$, $\chi^+=a_+B^+$,
-  $\underline\chi^-=a_-B^-$, and
-  $\zeta=-\widehat\omega$ in the symmetric normalized frame.
-  Check: analytic inverse/equivariance theorem and V42--V44.
-
-- [x] Action: audit the exact domains of Rendall, Luk,
-  Mars--Sánchez-Pérez, Cabet--Chruściel--Tagne Wafo, Hilditch et al., and
-  Reisenberger.
-  Context: germ, full-sheet collar, and prescribed two-long-direction
-  rectangle are kept distinct.
-  Check: calculations 06--07 and
-  `verification/DEVELOPMENT_MAP_AUDIT.md`.
-
-- [x] Action: construct the framed germ/collar development map and inverse
-  restriction after the dictionary.
-  Context: this is an actual vacuum solution-space statement, modulo only
-  proper bulk diffeomorphisms.
-  Check: calculation 07, Section 3.
-
-- [x] Action: lift the selected characteristic form to the framed linearized
-  local/collar solution spaces.
-  Context:
-  $L_{\rm loc}^{*}\Omega_{\rm EH}^{\rm fr}=\Omega_{\rm char}$ follows from
-  linearized characteristic well-posedness plus the Stage-2/3 pullback.
-  A literal Banach-neighborhood pullback by $E_{\rm loc}^{\rm fr}$ remains
-  part of the $C^1$ PDE item below.
-  Check: calculation 07, Theorem 7.1.
-
-- [x] Action: state output conservation and solution-space composition at
-  the scope actually supported.
-  Context: both apply to developments already known to exist; a uniform
-  nearby-data evolution map on the full rectangle remains conditional.
-  Check: calculation 07, Sections 9--10.
-
-- [ ] Active PDE action:
-  prove $\mathbf P_{\rm rect}^{s,r}$.
-  Context: establish uniform finite-Sobolev cell estimates, output
-  trace/restart control, background-relative stability, double-null margin
-  persistence, and a quadratic remainder estimate giving Banach $C^1$
-  dependence on the same $\mathcal R_{U,V}$, plus openness and $C^1$ inverse
-  restriction in the independently declared trace-regular solution topology.
-  Check: close every clause (6.1)--(6.5) in calculation 07.  Cabet et al.
-  Theorems 3.13 and 3.15 do not already do this.
-
-- [ ] Optional dictionary completion: write and estimate every remaining MSP
-  $Y_\pm$ constraint transport if MSP DND are to replace Luk/Cabet data as
-  the primary Banach chart.
-  Context: MSP Theorem 7.15 assumes completed DND satisfying the abstract
-  constraints; it does not construct this free-data completion.
-  Check: produce a smooth locally invertible completion map with a stated
-  Sobolev loss, or retain the current Luk-core route.
+- [x] Replace fixed scale factors by $m\mapsto a_\pm[m]$ and restrict the
+  core equivalence to its fixed framing slice; remove the unsupported
+  lower-to-higher Sobolev inverse claim. Check: 06.4--6.
+- [x] Keep the original marked null sheets in the direct Cabet gauge;
+  do not assert a ragged-endpoint Luk theorem. Check: 06.4.1.
+- [x] Use $\nu_0,h_0,D^0$ globally and write the affine endpoint potential
+  through $\theta=0$. Check: 06.1, 06.9.
+- [x] Separate intrinsic HF cuts from auxiliary abstract ports and restrict
+  the solution identity to existing variations / constructed images.
+  Check: 07.7; extended equality remains under $P_{\rm red}$.
+- [x] Construct $C_{\rm pre},DC_{\rm pre}$ and prove their finite-scale
+  Volterra/Moser bounds. Check: 06.(8.1)--(8.10), $3\le k\le s-3$.
+- [x] Prove fixed-metric smooth framing uniqueness on a regular optical
+  neighborhood. Check: 07.3.1; no finite-Sobolev gauge estimate inferred.
+- [ ] Initial-data action: close $C_{\rm mix}$, the mixed connection
+  transport 06.(8.11), eliminating the curvature source with the actual
+  Gauss/normal-curvature constraints and matching corner data. Then finish
+  curvature/copy transports, $C_{\rm SH}$, inverse and $DC_{\rm SH}$.
+- [x] Fix the actual source principal splitting, including Weyl copies,
+  and derive angular commutators and flux difference bounds for already
+  existing solutions. Check: 08.(1.3)--(4.3), assumptions (3.1).
+- [ ] **Next single PDE lemma: $R_\perp^k$.** Derive and bound the coupled
+  transverse derivatives in 08.(6.2), especially mixed sources (6.3), from
+  completed incoming norms; prove (6.4) with a stated finite loss.
+- [ ] After that, iterate outgoing generator derivatives/corner jets to
+  the full source restart class; prove uniform data-dependent existence
+  width, linearized Einstein/copy constraint propagation and the quadratic
+  remainder bound. Only then mark $P_{\rm cell}^k$ proved.
+- [ ] Gated: finite-grid restart/gauge bookkeeping and $s(r,I,J)$ for
+  $P_{\rm rect}^{s,r}$. No numerical loss is guessed. Target openness and
+  inverse regularity remain separate proof obligations.
+- [ ] Full framed germ/collar bijection and tangent-space surjectivity:
+  promote only after the completion, PDE and gauge hypotheses are proved.
 
 - [x] Action: retain $S_+$ and $S_-$ as area/boost ports and compute the
   endpoint-complete Stage-1 rank/kernel.
@@ -175,6 +148,6 @@ $\mathbf P_{\rm rect}^{s,r}$.  Do not quantize.
   authoritative theorem/gauge/open-item ledger, and
   `verification/DEVELOPMENT_MAP_AUDIT.md` separates cited, in-project,
   conditional, and open development claims.
-  Check: the only active framed fixed-rectangle PDE target is
-  $\mathbf P_{\rm rect}^{s,r}$; the independent boundary target is
-  $\mathbf P_{\rm red}$.
+  Check: Stage 4.1 explicitly separates $C_{\rm SH}$, $R_\perp^k$,
+  $P_{\rm cell}^k$, the gated $P_{\rm rect}^{s,r}$, and the independent
+  boundary target $P_{\rm red}$.

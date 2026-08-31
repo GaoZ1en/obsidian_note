@@ -1,5 +1,78 @@
 # Verification Run Log
 
+## 2026-08-31 — Stage-4.1 truth-boundary repair and first PDE estimate
+
+This entry supersedes the earlier Stage-4 germ/collar bijection and full
+linearized-surjectivity verdicts below; earlier execution records are retained
+as history. Work continued in the existing clean `codex/double-null-gravity-cps`
+worktree, starting at `074490af`. No unrelated note or Stage-0--3 calculation
+was edited. No commit/push or quantization was performed.
+
+Edited: calculations 06--07, new 08, README/TODO, development audit, claim
+ledger and final theorem ledger. Added scoped Stage-4.1 Wolfram/xAct scripts
+and the structured xAct result.
+
+**Re-derived here:** smooth splitting and original-sheet gauge prescription;
+global reference-density and affine endpoint expressions; partial
+$C_{\rm pre},DC_{\rm pre}$ Volterra/Moser estimates for $3\le k\le s-3$;
+fixed-metric framing uniqueness; exact angular commutators, weighted flux
+difference estimate for two existing reduced solutions, linearized equation
+and exact quadratic-remainder equation.
+
+**Open:** full $C_{\rm SH}$ begins with the unclosed mixed connection
+transport $C_{\rm mix}$, 06.(8.11). The first PDE trace estimate still missing
+is $R_\perp^k$, 08.(6.4), with sources (6.3). No finite loss for these full
+maps is guessed. $P_{\rm cell}^k$, project-data framed collar bijectivity,
+full tangent surjectivity and $P_{\rm rect}^{s,r}$ remain conditional/open
+as individually classified in the authoritative ledgers. Stage H not begun.
+
+Primary source checked: arXiv:1406.3009v2, text extraction and rendered PDF
+pages 50--53, 67--68. In particular checked (5.3)--(5.14), the duplicated
+Weyl fields, Appendix differential-row splitting and principal matrices.
+Source Sections 2 and 3 were read for flux norms, coefficient divergence,
+angular commutators and the separate transverse derivative estimates. The
+printed (5.12)--(5.13) copy allocation is explicitly reconciled with the
+Appendix allocation by exchanging the circled/uncircled names; the notes
+use the differential rows, not incompatible labels. Page 55's indirect
+Einstein build-up proof is not re-described as direct constraint propagation.
+MSP source HTML was checked for the completed-data and local-uniqueness
+scope. Other existing source-scope entries were retained without deriving
+new finite-regularity claims from them.
+
+Executed:
+
+```text
+rtk proxy wolframscript -file scripts/development_dictionary_checks.wl
+rtk proxy wolframscript -file scripts/stage41_truth_boundary_checks.wl
+dedicated xAct core: V51--V52, canonical_contract, explicit SortCovDs
+rtk proxy git diff --check
+```
+
+Results: V42--V44 rerun passed; 13 labelled Wolfram residual checks covering
+V45--V50 and V53 passed, exit code 0. The final fresh xAct run returned
+`ok=true`, `allZero=true`, three zero residuals, no load/setup messages,
+errors or truncation. An earlier scalar Hessian check without `SortCovDs`
+was returned as `nonzero_normal_form`; it was an uncommuted expression,
+not evidence against the identity. The final explicit derivative-sorted
+check is the authoritative execution retained in the structured result.
+
+**Verified:** displayed algebra and the precise stated tensor residuals.
+Final scope/structure check: 9 modified tracked files and 4 new files, all
+inside this project; calculations 00--05 are byte-identical to HEAD.
+Display fences, equation tags, math braces, output-report file links and
+`git diff --check` passed. Branch remains `codex/double-null-gravity-cps`,
+HEAD `074490af`. Output affine parameters are now defined by transport;
+their generally variable endpoint lengths remain a separate restart/gauge
+obligation rather than being replaced by $U-u$ and $V-v$.
+
+**Assumptions:** fixed smooth incoming framing and HF representative,
+positive reference density/metric, positive geometric margins; the analytic
+flux estimate additionally assumes existing reduced solutions, a high
+angular bound and full null $W^{1,\infty}$ control.
+**Not verified:** full curvature/copy constraints, Einstein existence from
+project data, uniform restart width, finite-Sobolev gauge comparison, a
+quadratic remainder norm bound, C1, surjectivity or nondegeneracy.
+
 ## 2026-08-31 — Stage-4 framed CIVP and development-map audit
 
 Branch and working directory:

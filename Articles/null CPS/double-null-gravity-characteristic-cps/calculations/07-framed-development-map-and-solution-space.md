@@ -2,85 +2,38 @@
 
 ## 0. Direct verdict
 
-**The framed development-map gap is closed for a local germ and for the
-long-by-thin/full-sheet neighborhood supplied by the cited characteristic
-theorems.  It is not closed on a prescribed full finite rectangle in the
-declared finite-Sobolev category.**
+**Not proved by the current completion: a project-data framed germ/collar
+bijection, or a finite-Sobolev $C^1$ development map.** The earlier
+unconditional declarations are withdrawn. Cited metric existence for
+complete source data remains valid; it does not construct our missing
+$C_{\rm SH}$ or $DC_{\rm SH}$.
 
-More precisely, after the dictionary in calculation 06 there are rigorously
-defined framed maps
+Calculation 06 proves the core tensor dictionary on its fixed splitting
+slice, preserves original outer cuts using the Cabet gauge, and constructs
+the finite-scale partial completion $C_{\rm pre}$. Its full mixed
+connection/curvature completion is open. Section 3.1 below proves a
+fixed-metric framing uniqueness lemma, not the missing Einstein existence
+or finite-Sobolev gauge comparison theorem.
+
+The proved solution-space formula is a restriction identity for existing
+compatible linearized solutions. For any constructed lift $L_{\rm loc}$ on
+an admissible variation subspace $V_d$, it gives
 
 $$
-E_{\rm germ}^{\rm fr}:\mathcal U_{\rm germ,data}^{\infty}
-\longrightarrow
-\operatorname{Sol}_{\rm vac}^{\infty,{\rm fr}}(\mathcal U_{\rm germ}),
-\qquad
-E_{\rm col}^{\rm fr}:\mathcal U_{\rm col,data}^{\infty}
-\longrightarrow
-\operatorname{Sol}_{\rm vac}^{\infty,{\rm fr}}(\mathcal U_{\rm col}),
+L_{\rm loc}^*\Omega_{\rm EH}^{\rm fr}
+=\Omega_{\rm char}^{\rm intr}|_{V_d}.
 \tag{0.1}
 $$
 
-with inverse incoming restriction modulo the proper bulk diffeomorphisms
-defined below.  Here the germ datum is the restriction to
-$X_{\rm in}\cap\mathcal U_{\rm germ}$; only the collar datum contains the two
-complete truncated incoming sheets.
+It neither asserts that $V_d=T_d\mathcal D_{\rm char}$ nor that the lift is
+onto all framed linearized solutions. Abstract auxiliary outer ports do
+not occur in this formula. Their identification requires $P_{\rm red}$.
 
-These unconditional maps are stated in the smooth category used by the
-Einstein theorems cited below.  Their finite-order estimates control the
-collar width but do not, without additional loss bookkeeping, turn (0.1)
-into a finite-Sobolev Banach chart.
-
-The unconditional solution-space statement is the linearized one
-
-$$
-\boxed{
-L_{\rm loc}^*\Omega_{\rm EH}^{\rm fr}
-=\Omega_{\rm char},
-\qquad L_{\rm loc}\in
-\{L_{\rm germ},L_{\rm col}\}.}
-\tag{0.2}
-$$
-
-In the germ case both forms in (0.2) are evaluated on
-$X_{\rm in}\cap\mathcal U_{\rm germ}$; in the collar case they are evaluated
-on the two complete truncated incoming sheets.
-
-It becomes the literal nonlinear pullback
-$(E_{\rm loc}^{\rm fr})^*\Omega_{\rm EH}^{\rm fr}$ along any smooth family
-for which differentiability of the development has been established.  A
-Banach-neighborhood $C^1$ statement for all nearby data is part of the
-missing estimate below; it is not inferred from (0.2).
-
-The desired fixed-rectangle Banach theorem
-
-$$
-E_{U,V}^{\rm fr}:\mathcal U_{\rm data}^s
-\longrightarrow
-\operatorname{Sol}_{\rm vac}^{r,{\rm fr}}(\mathcal R_{U,V})
-\tag{0.3}
-$$
-
-is reduced in Section 6 to one explicit proposition
-$\mathbf P_{\rm rect}^{s,r}$.  That proposition includes existence on the
-common rectangle, a background-relative stability estimate, persistence of
-the double-null chart, trace/restart control, forward and inverse $C^1$
-regularity in the independently declared trace-regular solution topology,
-and openness of the image.
-It is **conditional**, not proved by the present source theorems or by the
-finite-dimensional regressions.
-
-This distinction is forced by the sources.  In arXiv:1406.3009 Theorem 3.13
-assumes that the compared solutions already exist on a common domain, while
-Theorem 3.15 proves a continuation criterion only for smooth solutions and
-explicitly says that finite-differentiability continuation was not
-established there.  A finite-cell sketch cannot silently fill that gap.
-
-On the local/collar domain, (0.2) is an actual linearized-solution
-presymplectic identification.  It is not promoted to a map-level
-presymplectomorphism without the $C^1$ estimate in Section 4, and in no case
-is it called a nondegenerate symplectomorphism: the complete physical
-four-face port/boost kernel remains open.  No quantization is used.
+Calculation 08 proves an angular-flux difference estimate for already
+existing reduced solutions. Its first unclosed restart estimate is
+$R_\perp^k$; $\mathbf P_{\rm cell}^k$ remains conditional. The prescribed
+rectangle $\mathbf P_{\rm rect}^{s,r}$ also remains conditional. No
+quantization or finite-grid proof is undertaken.
 
 ## 1. Framed geometric spaces
 
@@ -159,7 +112,8 @@ where:
    \tag{1.7}
    $$
 
-4. $x^A$ are marked generator labels transported along the rulings;
+4. $x^A$ represent a marked copy of $S$ in a fixed finite atlas, with labels
+   transported along the rulings; no global chart is assumed;
 5. $\iota_{00}:S\hookrightarrow\mathcal U$ marks the corner;
 6. $s_\pm$ mark the maps from $S_{00}$ to the outer cuts
    $S_{U0}$ and $S_{0V}$.
@@ -176,7 +130,7 @@ $$
 \varphi^*u=u,\qquad
 \varphi^*v=v,\qquad
 \varphi\circ\iota_{00}=\iota_{00}
-\quad\hbox{near }X_{\rm in},
+\quad\hbox{on }X_{\rm in},
 \tag{1.8}
 $$
 
@@ -188,8 +142,11 @@ $$
 \tag{1.9}
 $$
 
-These transformations may act in the bulk, but they preserve the complete
-boundary first jet and all retained markings.  Define
+These transformations may act in the bulk, but preserve the displayed
+incoming scalar values, tangential labels and normal-frame first jet. This
+is a boundary condition; they are not required to be the identity on an
+unspecified open collar. It does not assert that arbitrary transverse metric
+jets are fixed by the definition alone.  Define
 
 $$
 \boxed{
@@ -268,233 +225,113 @@ $\mathcal D_{\rm char}/\mathcal G\to\operatorname{Sol}/\operatorname{Diff}$.
 | Hilditch--Valiente Kroon--Zhao arXiv:1911.00047, Theorem 4 | a long-by-thin neighborhood in Stewart gauge with a null-structure bootstrap | background-relative persistence on a prescribed two-long-direction rectangle |
 | Reisenberger arXiv:1211.3880, Section 2.2 | Sachs/area free data and the data-space symplectic form | development of all of the double-null sheet; the paper labels that extension conjectural |
 
-The dictionary in calculation 06 is what permits these theorems to act on the
-project data.  No source-scope upgrade is inferred from notation alone.
+The completed data required by each theorem must first be constructed.
+Calculation 06 supplies a core dictionary and $C_{\rm pre}$, not the full
+$C_{\rm SH}$. No source-scope upgrade follows from the shared notation.
 
-## 3. Germ and full-sheet neighborhood maps
+## 3. Metric existence, completion and framing are separate
 
-Let $d_*$ be regular data in the sector of calculation 06 and let
-$\rho_{\rm germ}d_*$ denote its restriction to the portions of the two
-incoming sheets in a corner neighborhood.  Applying $T_{\rm Luk}$ to the
-restricted data and then the local Rendall/Luk theorem gives
+For complete smooth data in the source's hypotheses, the cited theorems
+supply a metric near the corner, or a neighborhood of the full initial
+hypersurfaces. These are **literature results**. A uniform project-data map
+requires the following additional steps, not yet all proved:
 
-$$
-E_{\rm germ}^{\rm fr}:
-\mathcal U_{\rm germ,data}^{\infty}
-\longrightarrow
-\operatorname{Sol}_{\rm vac}^{\infty,{\rm fr}}(\mathcal U_{\rm germ}).
-\tag{3.1}
-$$
+1. complete $C_{\rm SH}$, including corner curvature and copy constraints;
+2. use a source Einstein development theorem at its actual domain;
+3. attach the uniquely prescribed framing in the lemma below;
+4. estimate this construction in the declared topology;
+5. for tangent surjectivity, construct $DC_{\rm SH}$ and prove linearized
+   gauge/constraint propagation and exhaustion of the target tangent space.
 
-This is a map of germ data.  It does not, and cannot, recover values of a
-full-sheet datum outside $X_{\rm in}\cap\mathcal U_{\rm germ}$.
-The smooth data neighborhoods below are shrunk so that the finite list of
-norms controlling the local-existence width is uniformly bounded; this fixes
-one common germ or collar domain for every datum in the displayed map.
+Only after steps 1--3 are closed may one assert the smooth set-level maps
+$E_{\rm germ}^{\rm fr}$ and $E_{\rm col}^{\rm fr}$ from project data.
+A germ uses restricted incoming data and cannot recover omitted original
+outer cuts. The original-sheet collar route 06.(4.6) preserves them, but
+does not remove step 1. A uniform positive collar width over a data
+neighborhood additionally needs quantitative completion bounds.
 
-For $S\simeq S^2$, Luk's theorem gives the smooth local/collar statement with
-its width controlled by the displayed finite-order norms; his definition of
-regular data is nevertheless $C^\infty$.  For a general compact cut,
-Cabet--Chru\'sciel--Tagne Wafo and
-Chru\'sciel--Tagne Wafo--Gray state the Einstein neighborhood theorem in the
-smooth category; their reduced system has finite-Sobolev estimates, but the
-authors leave the full Einstein loss bookkeeping to be tracked.  Therefore
-the arbitrary-topology construction in this section is authoritative as a
-development map between smooth-data solution sets, not as the still-unproved
-Banach $C^1$ chart or as a theorem of smooth dependence.
+### 3.1 Framing-completion uniqueness for an existing metric
 
-Applying the Cabet--Chru\'sciel--Tagne Wafo neighborhood theorem after
-$T_{\rm SH}$ gives, for compact truncated sheets, an L-shaped neighborhood
+**Lemma (smooth, kinematic).** Let a smooth Lorentzian metric and the two
+embedded transverse incoming null sheets with their affine parameters,
+labels, corner and outer-cut markings be given. Fix the source gauge
+06.(4.6), the future branch of the optical construction, and a reference
+dyad prescription on $N_+$. On a common regular optical neighborhood reached
+by that construction, these choices have a unique extension. Two isometric
+metrics with the same incoming framing have extensions related by the
+isometry, which is in $\operatorname{Diff}_0$ in the displayed framed sense.
 
-$$
-\mathcal C_{\epsilon_+,\epsilon_-}
-=
-\big([0,U]\times[0,\epsilon_-]
-\ \cup\
-[0,\epsilon_+]\times[0,V]\big)\times S,
-\tag{3.2}
-$$
+**Proof.** Solve the eikonal equation for $\xi$ with its affine boundary
+values $v$ on $N_-$ and for $\eta$ with values $u$ on $N_+$. These are
+noncharacteristic eikonal initial problems: the prescribed differential is
+nonzero on the corresponding incoming generator, so its null metric dual
+is transverse to that initial sheet. The null equation fixes the remaining
+covector component and the chosen future branch fixes the sign. The
+Hamilton characteristic ODE has a unique smooth flow until its projection
+ceases to be invertible. This proves uniqueness on the stated regular
+neighborhood, not arbitrary-distance optical existence.
 
-where the positive widths depend on the data norms and may be unequal.  For
-$S\simeq S^2$, Luk supplies the same type of statement in his canonical
-double-null gauge.
+Set $e_4=-2\operatorname{grad}\xi$ and
+$e_3=\operatorname{grad}\eta/g(\operatorname{grad}\eta,\operatorname{grad}\xi)$.
+Then $e_3\xi=1$, $e_3\eta=e_4\xi=0$, $g(e_3,e_4)=-2$ and $e_4$ is affine.
+Transport the labels from $N_+$ along $e_3$; this gives $e_3=\partial_\xi$.
+The initial normal product fixes $e_4=2e^m\ell_+$ on $N_+$ and
+$e_3=\ell_-$ on $N_-$. They remain affine on the original incoming sheets.
+The general $e_3$ extension need not be affine away from $N_-$; (1.2) only
+required incoming affine normalization.
 
-On a common such neighborhood this defines
+If the retained project vectors are required to be affine also in the bulk,
+fix this further scalar prescription. Let
+$\nabla_{e_3}e_3=\kappa_3e_3$ and solve
+$e_3 f_-=-\kappa_3 f_-$ with $f_-|_{N_+}=1$, and
+$e_4 f_+=0$ with $f_+|_{N_-}=(2e^{m_0(x)})^{-1}$, where the corner scalar
+is transported along the marked incoming minus generators. Then
+$\ell_-=f_-e_3$, $\ell_+=f_+e_4$ are the unique affine extensions for this
+prescription: $\nabla_{f e}(f e)=(f e[f]+f^2\kappa_e)e$ vanishes.
+They agree with both prescribed incoming affine vectors. Their bulk
+normal-product scalar is $m=-\log(2f_+f_-)$; it agrees with $m_0$ at the
+corner. The PDE frame remains $e_3,e_4$, so this additional marking does
+not alter the Cabet principal system. Without a scalar prescription of this
+kind, arbitrary bulk rescalings would remain in the tuple (1.6).
 
-$$
-E_{\rm col}^{\rm fr}:
-\mathcal U_{\rm col,data}^{\infty}
-\longrightarrow
-\operatorname{Sol}_{\rm vac}^{\infty,{\rm fr}}
-(\mathcal C_{\epsilon_+,\epsilon_-}).
-\tag{3.2a}
-$$
+Choose the algebraic $q$-orthonormal dyad on $N_+$ using the fixed reference
+metric. Projected parallel transport $\not\nabla_3e_a=0$ uniquely fixes its
+rotation in the bulk and gives $\Gamma_3{}^a{}_b=0$. Local transition
+rotations are transported as well. The remaining gauge identities follow
+from torsion freedom and $e_a\xi=e_a\eta=0$. All these are covariant ODE
+or eikonal constructions, so an isometry preserving their initial values
+preserves their extensions. The original endpoint maps remain the given
+maps on the original sheets, without an independent bulk extension field.
+This proves the stated uniqueness modulo $\operatorname{Diff}_0$.
 
-The construction is:
+The lemma does not construct the metric, prove full first-jet compatibility
+of arbitrary project data, or give finite-Sobolev dependence of this gauge.
+Thus it does not prove framed development bijectivity by itself.
 
-1. apply the smooth dictionary $T_{\rm Luk}$ and the required gauge
-   completion;
-2. solve the reduced Einstein/symmetric-hyperbolic characteristic problem;
-3. propagate the constraints to obtain $\operatorname{Ric}(g)=0$;
-4. restore the marked affine factors, labels, and endpoint maps;
-5. quotient only by $\operatorname{Diff}_0$.
+## 4. One-cell PDE attack and exact stop line
 
-Restriction and uniqueness give
+The authoritative unknown vector, matrices, norms and estimates are now in
+`08-uniform-one-cell-characteristic-stability.md`. Its $X^k$ is the actual
+two-face angular flux norm, not the formerly asserted equivalent
+all-cut supremum/mixed-derivative norm.
 
-$$
-R_{\rm in}^{\rm germ}\circ E_{\rm germ}^{\rm fr}
-=\operatorname{id}_{\mathcal U_{\rm germ,data}^{\infty}},
-\qquad
-R_{\rm in}^{\rm col}\circ E_{\rm col}^{\rm fr}
-=\operatorname{id}_{\mathcal U_{\rm col,data}^{\infty}},
-\tag{3.3}
-$$
+- Proved under explicit bounds for two existing reduced solutions:
+  $\|F_1-F_2\|_{X^k}\le C\|d_1-d_2\|_{I^k}$, with one extra angular
+  derivative on the bounded backgrounds and no incoming loss at that flux
+  level. This is not a project-data estimate before $C_{\rm SH}$.
+- Not proved: $R_\perp^k$, the transverse derivative/outgoing trace bound
+  08.(6.4), with tracked loss from incoming norms. This is the first PDE
+  stop line; the full source restart class remains uncontrolled.
+- The linearized equation and the exact quadratic remainder 08.(5.2) are
+  derived. Linearized Einstein existence/surjectivity and the required
+  quadratic estimate are not proved.
+- Consequently $\mathbf P_{\rm cell}^k$ and the claimed Banach $C^1$
+  consequence remain conditional. The previous numerical losses $k+2$,
+  $k+4$ were not derived and are withdrawn.
 
-and
-
-$$
-E_{\rm germ}^{\rm fr}\circ R_{\rm in}^{\rm germ}
-=\operatorname{id},
-\qquad
-E_{\rm col}^{\rm fr}\circ R_{\rm in}^{\rm col}
-=\operatorname{id}
-\tag{3.4}
-$$
-
-on their framed solution images modulo $\operatorname{Diff}_0$.
-
-## 4. The finite-regularity estimate that is still needed
-
-### 4.1 Working evolution norm
-
-In the Cabet--Chru\'sciel--Tagne Wafo double-null frame, let
-
-$$
-F=(e_i{}^\mu,\Gamma_{ijk},\Psi)
-\tag{4.1}
-$$
-
-denote the tetrad, connection, and null curvature variables in their
-equations (5.12)--(5.14).  For a small cell $Q$ define
-
-$$
-\begin{aligned}
-\|F\|_{\mathcal X^k(Q)}
-:={}&
-\sup_{(u,v)\in Q}\sum_{j\leq k}
-\|\nabla^jF\|_{L^2(S_{u,v})}\\
-&+\sum_{j\leq k-1}\left(
-\|\nabla^jF\|_{L^2(H_u\cap Q)}
-+\|\nabla^jF\|_{L^2(\underline H_v\cap Q)}
-\right)\\
-&+\sum_{a+b\leq k-2}
-\|\partial_u^a\partial_v^bF\|_{L^\infty(Q;H^{k-2-a-b}(S))}.
-\end{aligned}
-\tag{4.2}
-$$
-
-Any equivalent high-order norm in equations (3.77), (3.88)--(3.95) of
-arXiv:1406.3009 may be used.  The norm (4.2) is not claimed sharp.
-
-### Proposition 4.1 - uniform cell estimate $\mathbf P_{\rm cell}^{k}$
-
-The missing finite-regularity input is the following uniform statement.  Let
-$F_1,F_2$ be two exact framed vacuum solutions on the same small cell,
-written in the same double-null frame gauge, and assume
-
-$$
-\|F_i\|_{\mathcal X^{k+2}(Q)}\leq M,\qquad
-\mathfrak m[F_i;Q]\geq\mu>0,
-\tag{4.3}
-$$
-
-where $\mathfrak m$ is the minimum hyperbolicity/geometric margin defined in
-Section 5.  Then
-
-$$
-\boxed{
-\|F_1-F_2\|_{\mathcal X^k(Q)}
-\leq C(M,\mu,Q)
-\|d_1-d_2\|_{\mathcal I^{k+2}(\partial_{\rm in}Q)}.}
-\tag{4.4}
-$$
-
-In addition, the constants and admissible cell widths must be uniform on the
-set (4.3), outgoing characteristic traces must lie in the next incoming data
-space without an uncontrolled loss, and the same estimate must hold for the
-linearized system and its quadratic remainder.
-
-**Status: conditional.**  Subtracting the symmetric-hyperbolic systems gives
-
-$$
-A^\alpha(F_i)\partial_\alpha F_i=G(F_i).
-\tag{4.5}
-$$
-
-For $W=F_1-F_2$, the coefficient and source differences are written by the
-fundamental theorem of calculus along
-$F_2+t(F_1-F_2)$.  Thus $W$ solves a linear symmetric-hyperbolic system with
-principal coefficients $A^\alpha(F_1)$ and lower-order coefficients bounded
-by (4.3).  Commute up to $k$ cut derivatives and the transport derivatives
-admitted by (4.2).  The commutators contain at most one top derivative and
-are controlled by the Sobolev algebra property and the two spare derivatives
-in (4.3).  Applying the characteristic energy identity (2.12), its
-high-order form (2.31), and Gronwall is the expected route to (4.4).
-Equations (3.78)--(3.82) implement the corresponding contraction estimate for
-the source paper's iterative sequence.  They do not, as stated, prove the
-full uniform exact-solution, trace/restart, and quadratic-remainder package
-above.  Writing those commuted estimates in the Einstein frame variables and
-closing their derivative bookkeeping is the missing work; this paragraph is
-a reduction, not a proof.
-
-### Proposition 4.2 - $C^1$ consequence of $\mathbf P_{\rm cell}^{k}$
-
-Assume $\mathbf P_{\rm cell}^{k+1}$, including its uniform quadratic
-remainder estimate.  Then on a common small cell the framed development map
-is $C^1$ from incoming data of order $k+4$ to $\mathcal X^k$, and its
-derivative is the unique framed linearized vacuum solution.
-
-**Conditional proof.**  For data $d+th$, set
-
-$$
-W_t=\frac{F[d+th]-F[d]}{t}.
-\tag{4.6}
-$$
-
-The averaged-coefficient equation in $\mathbf P_{\rm cell}^{k+1}$ gives a uniform
-$\mathcal X^{k+1}$ bound.  Its limit $W$ solves the differentiated
-symmetric-hyperbolic system with characteristic datum $h$.  Constraint
-propagation identifies $W$ with a linearized vacuum Einstein solution.
-
-For
-
-$$
-\rho_t=F[d+th]-F[d]-tW,
-\tag{4.7}
-$$
-
-Taylor's formula makes the source quadratic:
-
-$$
-\|\operatorname{Src}(\rho_t)\|_{\mathcal X^{k-1}}
-\leq C t^2\|h\|_{\mathcal I^{k+4}}^2.
-\tag{4.8}
-$$
-
-The same energy estimate gives
-
-$$
-\|\rho_t\|_{\mathcal X^k}
-\leq C t^2\|h\|_{\mathcal I^{k+4}}^2.
-\tag{4.9}
-$$
-
-Repeating (4.4) for the linearized coefficients proves continuity of
-$d\mapsto DE_d$.  Linear symmetric-hyperbolic uniqueness proves uniqueness
-of $W$ modulo infinitesimal $\operatorname{Diff}_0$.  The implication is
-complete once $\mathbf P_{\rm cell}^{k+1}$ is supplied; the cited
-continuous-dependence theorem does not itself supply this Banach $C^1$
-package.
+For the fixed-rectangle target below, $\mathcal X^r$ remains a placeholder
+for an independently declared **restart-controlling** solution norm. It
+must not be replaced by the weaker flux $X^r$ without a trace theorem.
 
 ## 5. Buffered background and quantitative margins
 
@@ -575,7 +412,7 @@ declared background neighborhood.
 
 ## 6. Exact reduction of the fixed-rectangle theorem
 
-### 6.1 The one missing PDE proposition
+### 6.1 Conditional full-rectangle target
 
 Fix $r\geq6$.  The required statement is the following.
 
@@ -654,41 +491,15 @@ finite-Sobolev gauge completion and the local $C^1$ lemma
 $\mathbf P_{\rm cell}^{k}$; the latter is a proposed route to the former, not
 a second independent final obstacle.
 
-### 6.2 Finite-cell reduction
+### 6.2 Finite-grid stage is gated
 
-Choose a finite rectangular grid
-
-$$
-\mathfrak C_*=\{Q_{ij}\}_{1\leq i\leq I,\,1\leq j\leq J}
-\tag{6.6}
-$$
-
-whose slightly enlarged cells lie in the buffered background domain.  The
-cells are partially ordered by $(i',j')\prec(i,j)$ when
-$i'\leq i$, $j'\leq j$, and $(i',j')\neq(i,j)$.  Hence the two past null
-faces of $Q_{ij}$ are either part of $X_{\rm in}$ or outgoing faces of
-already constructed cells.
-
-If $\mathbf P_{\rm cell}^{k}$ holds uniformly on the set
-$(2M_*',\mu_*/2)$, the following finite induction proves
-$\mathbf P_{\rm rect}^{s,r}$:
-
-1. solve $Q_{11}$ from the translated characteristic theorem;
-2. use the unique restrictions from cells below and to the left as the two
-   compatible incoming faces of $Q_{ij}$;
-3. apply the uniform cell estimate to keep those faces in the next admissible
-   ball and multiply the finitely many Lipschitz constants;
-4. use Sobolev embedding and (5.5) to preserve half the background
-   nondegeneracy margin;
-5. use local and geometric uniqueness on overlaps;
-6. iterate the linearized and quadratic-remainder estimates through the same
-   finite grid.
-
-A possible deliberately nonsharp bookkeeping choice is
-$s\geq r+4IJ+12$, but this inequality is **not a theorem** until the trace,
-gauge-completion, and commutator losses in
-$\mathbf P_{\rm cell}^{k}$ have been written down.  Thus the finite grid
-reduces the problem to one uniform estimate; it does not prove that estimate.
+No finite-grid continuation is begun while $C_{\rm SH}$ and
+$\mathbf P_{\rm cell}^k$ are open. After the one-cell theorem, one must
+still track output-to-input gauge resets, corner compatibility, derivative
+loss along every grid path, and the geometric/injectivity margins.
+Local a priori bounds do not establish image openness or a $C^1$ inverse.
+The formerly suggested $s\ge r+4IJ+12$ had no derived loss ledger and is
+withdrawn; $s(r,I,J)$ is unassigned.
 
 ### Theorem 6.1 - conditional framed fixed-rectangle theorem
 
@@ -729,91 +540,93 @@ The second and injectivity follow from geometric uniqueness with the complete
 framing restored.  Differentiating these identities gives (6.9).  No claim
 beyond the assumed proposition is used.
 
-## 7. Actual solution-space presymplectic theorem
+## 7. Intrinsic solution-space identity and extended ports
 
-For a development domain $\mathcal U$, let
-$X(\mathcal U):=X_{\rm in}\cap\mathcal U$.  Let
-$\Omega_{\rm EH}^{\rm fr}[X(\mathcal U)]$ be the Einstein--Hilbert covariant
-presymplectic form evaluated there with exactly the HF bulk-plus-cut
-representative and corner incidences fixed in calculations 00--05.  Let
-$\Omega_{\rm char}[X(\mathcal U)]$ be the corresponding retained
-characteristic form: the coupled Raychaudhuri spin-$0+2$ block, the shared
-area/normal block, the endpoint-map/twist block, and the declared matched
-ports, all restricted to the same cross.  Below the argument is suppressed
-when the cross is clear.
-
-### Theorem 7.1 - local/collar linearized solution-space identity
-
-Let $\mathcal U_{\rm loc}$ be either a common germ or a common collar supplied
-by Section 3, and put
-$X_{\rm loc}:=X_{\rm in}\cap\mathcal U_{\rm loc}$.  The linearized
-characteristic problem defines a bijection
+On the same incoming cross $X$ define
 
 $$
-L_{\rm loc}:T_d\mathcal D_{\rm char}^{\infty,{\rm fr}}(X_{\rm loc})
-\longrightarrow
-T^{\rm lin}_{E_{\rm loc}(d)}
-\operatorname{Sol}_{\rm vac}^{\infty,{\rm fr}}(\mathcal U_{\rm loc}),
+\Omega_{\rm char}^{\rm intr}
+=\Omega_{\rm bulk}^{(0+2)}+\Omega_{S_{00}}^{\rm aff}
++\Omega_{\rm actual\ HF\ outer\ cuts},
 \tag{7.1}
 $$
 
-where both sides are quotiented only by infinitesimal
-$\operatorname{Diff}_0$ and $T^{\rm lin}$ denotes the framed linearized
-vacuum solution space.  On all such pairs,
+where the shared corner/endpoint block is 06.(9.3) and all terms are
+restrictions of the metric, its marked framing and the fixed HF potential.
+The shared corner is counted once. The older superscript `ext` on the
+endpoint corner in calculation 05 means extension by endpoint labels; that
+action-derived block is included in the present intrinsic form. The
+separate auxiliary **outer-port** extension here is
 
 $$
-\boxed{
-L_{\rm loc}^{*}\Omega_{\rm EH}^{\rm fr}
-=\Omega_{\rm char}.}
+\Omega_{\rm char}^{\rm ext}=\Omega_{\rm char}^{\rm intr}
++C_G\sum_s\int_S\delta b_s\wedge\delta\Omega_{sL}\,\nu_0
++\Omega_{\rm other\ auxiliary\ ports}.
 \tag{7.2}
 $$
 
-If a smooth parameter family of nonlinear developments shares that
-local/collar domain **and is differentiable in the chosen solution
-topology**, then $L_{\rm loc}=DE_{\rm loc}^{\rm fr}$ along that family and
+Here $b_s$ denotes only the additional abstract port coordinate, not a
+second copy of a geometric HF cut field. No map from framed metric solutions
+to these auxiliary variables has been supplied. If a later closing action
+identifies/replaces them, double counting of the actual cut term must be
+removed in that action-derived comparison.
+
+### Theorem 7.1 - restriction identity and identity on a constructed image
+
+Let $g$ be an existing smooth framed vacuum solution on a domain containing
+$X$, and let $\mathcal V_g$ consist of existing framed linearized vacuum
+solutions whose restrictions satisfy the affine data/endpoint conditions
+of 06.(9.1)--(9.3). In the fixed representative,
 
 $$
-\boxed{
-(E_{\rm loc}^{\rm fr})^*\Omega_{\rm EH}^{\rm fr}
-=\Omega_{\rm char}.}
+\Omega_{\rm EH}^{\rm fr}(\delta_1g,\delta_2g)
+=\Omega_{\rm char}^{\rm intr}(R_{\rm lin}\delta_1g,
+R_{\rm lin}\delta_2g),\qquad \delta_i g\in\mathcal V_g.
 \tag{7.3}
 $$
 
-**Proof.**  The linearized Cabet/Rendall system is a linear characteristic
-symmetric-hyperbolic problem.  Its energy identity gives existence and
-uniqueness from the incoming variation on a possibly smaller common
-germ/collar.  Constraint propagation makes its solution a linearized vacuum
-metric, and geometric uniqueness removes precisely the infinitesimal
-$\operatorname{Diff}_0$ ambiguity.  Restriction is the inverse of
-$L_{\rm loc}$.
+**Proof.** Linearizing the vacuum null constraints gives the Raychaudhuri
+and Damour variation equations of 06.(8.8)--(8.10). Substitute them into
+the full HF bulk-plus-cut potential pulled back in calculations 02 and 05.
+The tangential compensator terms cancel by the linearized Damour equation;
+their remaining endpoint term is 06.(9.2). The original cuts and their HF
+terms are retained with the established incidences. Taking the field-space
+curl gives (7.3). This uses no area denominator and no auxiliary $b_s$.
+It is a local variational identity for existing solutions, not an existence
+or tangent-surjectivity argument.
 
-Calculations 02 and 05 pull the selected EH potential and its field-space
-curl through the Raychaudhuri and Damour reconstructions for every admissible
-characteristic variation.  The preceding paragraph identifies those
-variations with framed linearized vacuum solutions, and every such solution
-restricts uniquely back to one of them.  Substitution proves (7.2).  The HF
-cut terms, endpoint-map terms, and representative choice are unchanged.
-
-Thus (7.2) is an actual identity on the framed linearized solution space on
-the domains proved by the source CIVP results.  Equation (7.3) is a genuine
-map pullback only under its displayed differentiability hypothesis.  The
-source theorems audited here do not supply a finite-Sobolev $C^1$ theorem,
-and no nondegeneracy follows.
-
-### Corollary 7.2 - fixed rectangle, conditional
-
-If $\mathbf P_{\rm rect}^{s,r}$ holds, then $L_{U,V}=DE_{U,V}^{\rm fr}$
-on $\mathcal R_{U,V}$ and
+If a linear development lift has actually been constructed on a subspace
+$V_d\subset T_d\mathcal D_{\rm char}$, with
+$R_{\rm lin}L_{\rm loc}=\mathrm{id}_{V_d}$ and image in $\mathcal V_g$, then
 
 $$
-\boxed{
-(E_{U,V}^{\rm fr})^*\Omega_{\rm EH}^{\rm fr}
-=\Omega_{\rm char}.}
+\boxed{L_{\rm loc}^*\Omega_{\rm EH}^{\rm fr}
+=\Omega_{\rm char}^{\rm intr}|_{V_d}.}
 \tag{7.4}
 $$
 
-Thus the fixed-rectangle map is conditionally a local
-presymplectomorphism, still not a nondegenerate symplectomorphism.
+This implication is proved; a lift for every project tangent and
+surjectivity onto all framed linearized solutions are **conditional** on
+$DC_{\rm SH}$, linearized constraint propagation and gauge completeness.
+The present round constructs only $DC_{\rm pre}$, not a full such lift.
+For an independently differentiable family of actual developments,
+$L=DE$ and (7.4) is its nonlinear pullback. This does not assert
+differentiability on an entire data neighborhood.
+
+### Corollary 7.2 - rectangle and extended-sector gates
+
+If the full framed $C^1$ proposition $\mathbf P_{\rm rect}^{s,r}$ is proved,
+then
+
+$$
+(E_{U,V}^{\rm fr})^*\Omega_{\rm EH}^{\rm fr}
+=\Omega_{\rm char}^{\rm intr}.
+\tag{7.5}
+$$
+
+Any analogous equality with $\Omega_{\rm char}^{\rm ext}$ additionally
+requires the action-derived port identification in $\mathbf P_{\rm red}$.
+No nondegenerate reduced symplectomorphism follows from either identity.
 
 ## 8. Boundary Hamiltonian reduction
 
@@ -837,9 +650,11 @@ $$
 \tag{8.2}
 $$
 
-The dictionary, restriction, and local/collar development maps are
-equivariant.  Therefore, on a local slice where the action is regular, the
-linearized correspondence
+Equation (8.2) is restricted to the monotonic-area sector. In the affine
+sector replace $(p_s,\lambda_R)$ by $(p_s^{\rm aff},m)$ as in 06.(9.3).
+The core dictionary and restriction are equivariant. If the completed
+linearized lift exists and is equivariant, then on a regular slice the
+correspondence
 
 $$
 \boxed{
@@ -850,8 +665,8 @@ $$
 \tag{8.3}
 $$
 
-preserves the reduced linearized presymplectic forms on the proved
-germ/collar domain.
+preserves the intrinsic forms on its constructed image. Full tangent-space
+identification is conditional, even in the smooth germ/collar category.
 A Banach-manifold reduced presymplectomorphism, locally or on
 $\mathcal R_{U,V}$, requires the corresponding $C^1$ proposition.  The
 fixed-rectangle version is conditional on
@@ -870,8 +685,10 @@ $$
 $$
 
 separate.  One may choose the same smooth boost slice in the data and
-solution charts; equivariance of the dictionary then preserves (7.2), or
-(7.4) conditionally on the fixed rectangle.
+solution charts; the core equivariance is compatible with (7.4). A full PDE gauge comparison
+requires its own estimates. Boosts generally change the affine parameter
+domain of a marked cut; they are not internal actions on a fixed numerical
+interval unless that domain/marking change is retained.
 However, the abstract outer normal ports have not been derived from a
 complete four-face action, so the project has no full Hamiltonian/kernel
 theorem for (8.4).
@@ -910,19 +727,30 @@ X_{\rm out}
 $$
 
 Its induced metric, two null second fundamental forms, torsion, normal
-normalization, generator labels, and endpoint markings define framed output
-data by the same dictionary after fixing the output incidence.  An intrinsic
-chart based at the common output corner $S_{UV}$ is
+normalization, generator labels, and endpoint markings are smooth geometric
+output restrictions. To express them in an affine project chart based at
+$S_{UV}$, reverse the affine extensions from Section 3.1 and solve for their
+parameters and labels:
 
 $$
-\lambda_+^{\rm out}=U-u,\qquad
-\lambda_-^{\rm out}=V-v,\qquad
 \ell_+^{\rm out}=-\ell_+,\qquad
-\ell_-^{\rm out}=-\ell_-.
+\ell_-^{\rm out}=-\ell_-,\qquad
+\ell_s^{\rm out}[\lambda_s^{\rm out}]=1,\qquad
+\lambda_s^{\rm out}|_{S_{UV}}=0.
 \tag{9.1a}
 $$
 
-Thus $\ell_+^{\rm out}\!\cdot\ell_-^{\rm out}=-e^{-m}$, while the output
+In a general Cabet gauge these parameters are **not** $U-u$ and $V-v$:
+the optical coordinate speeds and angular shift need not be constant on the
+outgoing faces. The values at the original outer cuts are generally
+angle-dependent affine lengths $L_s^{\rm out}(x)$. Either retain these
+marked variable domains, or retain the optical parameters and the induced
+nonaffinity as source gauge data. A return to the fixed affine project
+interval class with uniform Sobolev control is part of the still-unproved
+restart/gauge theorem, not a consequence of smooth restriction.
+
+The reversed normal product satisfies
+$\ell_+^{\rm out}\!\cdot\ell_-^{\rm out}=-e^{-m}$, while the output
 expansions and shears are the negatives of the corresponding future-directed
 ones.  Its endpoint maps run from $S_{UV}$ to $S_{0V}$ and $S_{U0}$.  One may
 instead keep future-directed generators, but then the same reversal must be
@@ -938,6 +766,11 @@ R_{\rm out}^Q:
 \mathcal D_{\rm out}^{\rm fr}(X_{\rm out}).
 \tag{9.1b}
 $$
+
+Here $\mathcal D_{\rm out}^{\rm fr}$ is the marked geometric output class,
+including its parameter domain/nonaffinity information. It has not been
+identified with the fixed-interval incoming Banach class by a bounded
+restart map.
 
 Use the branch orientations
 
@@ -962,7 +795,7 @@ below.
 
 ### 9.2 Conservation
 
-For framed linearized solutions,
+For existing framed linearized solutions,
 
 $$
 d\boldsymbol\omega_{\rm EH}
@@ -971,7 +804,7 @@ d\boldsymbol\omega_{\rm EH}
 $$
 
 If $S$ is closed and the same HF cut representative is used on all four
-faces, Stokes' theorem gives
+faces, Stokes' theorem for the intrinsic action-derived forms gives
 
 $$
 0=\Omega_{X_{\rm in}}-\Omega_{X_{\rm out}},
@@ -1094,42 +927,27 @@ A uniform background-neighborhood version on the prescribed rectangles is
 conditional on $\mathbf P_{\rm rect}^{s,r}$, and a complete physical-port
 version remains conditional on $\mathbf P_{\rm red}$.
 
-## 11. Final seven-part verdict
+## 11. Stage-4.1 required verdict
 
-1. **Yes, locally in the smooth category.**  $E_{\rm germ}^{\rm fr}$ and
-   $E_{\rm col}^{\rm fr}$ are rigorously defined after fixing the double-null
-   frame, labels, endpoint markings, and proper bulk quotient.  The notation
-   $E_{U,V}^{\rm fr}$ on the prescribed full rectangle is conditional.
-2. The framed map is bijective onto its image for restricted smooth germ data
-   and for the smooth full-sheet neighborhood/long-by-thin collars supplied
-   by the cited theorems.  A corner germ does not recover the omitted part of
-   a full-sheet datum.  Entire-rectangle bijectivity is conditional on
-   $\mathbf P_{\rm rect}^{s,r}$.
-3. Entire-rectangle existence is **not proved** here.  The exact missing
-   background-stability/continuation statement is (6.1)--(6.5); arbitrary
-   smooth data on an arbitrary rectangle are not claimed.
-4. The linearized characteristic map on the proved local/collar domain gives
-   the unique framed linearized Einstein solution.  Identifying it with
-   $DE$ on an entire Banach neighborhood requires the still-conditional
-   $C^1:\mathcal D^s\to\mathcal X^r$ estimate, locally from
-   $\mathbf P_{\rm cell}^{k}$ and on the rectangle from
-   $\mathbf P_{\rm rect}^{s,r}$.
-5. Equation (7.2) is proved on the actual framed linearized local/collar
-   solution space with the selected HF representative.  A literal nonlinear
-   pullback (7.3) is proved only for families satisfying its differentiability
-   hypothesis; a Banach-neighborhood pullback, and in particular the
-   full-rectangle identity (7.4), is conditional on the corresponding
-   $C^1$ proposition.
-6. Diagonal generator relabelling gives a reduced presymplectic
-   identification at the linearized level on the proved domain.  A
-   Banach local reduced presymplectomorphism still needs the $C^1$ estimate,
-   and no nondegenerate reduced symplectomorphism is proved; the complete
-   boost/wall kernel remains conditional on $\mathbf P_{\rm red}$.
-7. The single remaining PDE obstacle to the strongest framed
-   fixed-rectangle development theorem is
-   $\mathbf P_{\rm rect}^{s,r}$: a finite-regularity, background-uniform
-   continuation/stability estimate together with the trace-regular $C^1$
-   chart and inverse.  After that PDE proposition is proved,
-   $\mathbf P_{\rm red}$ is the separate action/functional-kernel obstacle to
-   upgrading the result to a nondegenerate physical reduced
-   symplectomorphism.
+1. **Full marked-sheet project-to-PDE dictionary: not proved.** The core
+   equivalence is proved on the fixed smooth splitting slice. Original
+   sheets/outer cuts are preserved in the Cabet gauge 06.(4.6); no ragged
+   Luk theorem is assumed. The mixed first-jet/curvature completion is open.
+2. **$C_{\rm SH}$: not constructed in full.** $C_{\rm pre}$ and its
+   differential are smooth/Lipschitz at the conservative finite-scale loss
+   in 06.(8.7); no loss is assigned to the full map.
+3. **Framed germ/collar bijectivity: conditional.** Fixed-metric framing
+   uniqueness is proved on the regular optical neighborhood; full data
+   completion and the PDE/gauge steps remain required.
+4. **Presymplectic identity: restriction/image statement only.** Equation
+   (7.3) holds for compatible existing variations, and (7.4) for any actually
+   constructed lift. A lift on every project tangent and its surjectivity
+   are not proved. Abstract extended ports require $P_{\rm red}$.
+5. **$P_{\rm cell}^k$: not proved.** The angular-flux difference estimate
+   closes for already existing reduced solutions; the first missing
+   estimate is $R_\perp^k$, 08.(6.4), with controlled mixed sources (6.3).
+6. **$P_{\rm rect}^{s,r}$: still conditional.** No finite-grid stage or
+   unproved numerical regularity threshold is promoted.
+7. **Next single PDE lemma:** prove $R_\perp^k$ from completed incoming
+   norms with a specified derivative loss and uniform coefficient bounds.
+   The upstream initial-data sublemma is $C_{\rm mix}$, 06.(8.11).

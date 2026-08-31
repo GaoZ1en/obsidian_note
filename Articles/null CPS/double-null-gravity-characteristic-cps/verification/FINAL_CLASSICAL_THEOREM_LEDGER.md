@@ -9,21 +9,18 @@ initial area/relative-boost pair, the endpoint-map/twist block, the constrained
 diagonal generator-chart moment map, independent first-jet bulk composition,
 and general fixed-incidence endpoint cotangent composition.
 
-After the explicit rigorous-CIVP dictionary, smooth restricted germ data and
-smooth full-sheet data are now connected to actual framed vacuum solutions
-on, respectively, a local germ and the long-by-thin neighborhood supplied by
-the cited theorems.  On the corresponding framed linearized solution spaces,
+Stage 4.1 proves the core dictionary on a smooth splitting slice, a
+global reference-density affine chart, an endpoint potential through
+$\theta=0$, partial completion estimates and fixed-metric framing
+uniqueness. Full $C_{\rm SH}$ and project-data framed germ/collar
+bijectivity remain unproved. The intrinsic EH restriction identity is
+proved for compatible existing linearized variations, hence on any
+constructed lift image; full tangent surjectivity is not proved.
 
-$$
-L_{\rm loc}^{*}\Omega_{\rm EH}^{\rm fr}=\Omega_{\rm char}.
-$$
-
-The literal nonlinear pullback by $E_{\rm loc}^{\rm fr}$ on an entire Banach
-neighborhood still requires the $C^1$ estimate below.
-The stronger finite-Sobolev Banach theorem on one prescribed full
-$\mathcal R_{U,V}$ is **conditional** on
-$\mathbf P_{\rm rect}^{s,r}$, and its physical nondegenerate boundary
-reduction is independently open pending $\mathbf P_{\rm red}$.
+Calculation 08 proves an angular-flux difference estimate for existing
+reduced solutions. The first missing outgoing estimate is $R_\perp^k$.
+$P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional. Extended
+abstract ports still require the separate action-derived $P_{\rm red}$.
 
 This ledger is authoritative for the classical scope.  It is not a theorem
 of arbitrary-data fixed-rectangle existence, representative-independent
@@ -33,7 +30,7 @@ or an unreduced off-shell spacetime quotient.  No quantization is included.
 Throughout,
 
 $$
-q_{AB}=\Omega\bar q_{AB},\qquad \det\bar q=1,
+q_{AB}=\Omega\bar q_{AB},\qquad \epsilon_q=\Omega\nu_0,\quad\det_{\nu_0}\bar q=1,
 \qquad
 \ell_+\!\cdot\ell_-=-e^{-m},
 \qquad C_G=\frac1{8\pi G}.
@@ -54,8 +51,9 @@ $$
 \right),
 $$
 
-with one common initial conformal metric
-$\bar q^+_{AB}(0)=\bar q^-_{AB}(0)=\bar h_{AB}$.  In the varying-endpoint
+with fixed positive reference density $\nu_0$, metric $h_0$ and connection
+$D^0$ (all norms intrinsic), and one common initial conformal metric
+$\bar q^+_{AB}(0)=\bar q^-_{AB}(0)=\bar h_{AB}$.  On the monotonic-area sector, in the varying-endpoint
 polarization, the nonredundant corner variables are
 
 $$
@@ -69,7 +67,7 @@ $$
 s_s^*T^*S_{sL}\otimes\operatorname{Dens}(S_0)
 \right),
 \qquad
-p_{sA}=\pi_{s i}\partial_A s_s^i.
+p_{sA}\nu_0=\pi_{s i}\partial_A s_s^i.
 $$
 
 $\widehat\omega_A$ is reconstructed from $p_- -p_+$ and the reference
@@ -140,7 +138,7 @@ $B=\bar q^{-1}\boldsymbol\delta\bar q$, the reduced potential is
 $$
 \boxed{
 \Theta_{N,\mathrm{red}}^{(0+2)}
-=C_G\int_{S_0}\!d^2x\int_0^L\!d\lambda
+=C_G\int_{S_0}\!\nu_0\int_0^L\!d\lambda
 \left[
 \frac{r^2}{4}\operatorname{tr}(AB)
 -2r'\boldsymbol\delta r
@@ -153,7 +151,7 @@ $$
 \boxed{
 \begin{aligned}
 \Omega_{N,\mathrm{red}}^{(0+2)}
-=C_G\int d^2x\,d\lambda\Big[
+=C_G\int \nu_0\,d\lambda\Big[
 &2\boldsymbol\delta r\wedge\partial_\lambda\boldsymbol\delta r
 +\frac r2\boldsymbol\delta r\wedge\operatorname{tr}(AB)\\
 &+\frac{r^2}{4}\operatorname{tr}
@@ -171,19 +169,19 @@ The two sheets share exactly one initial area/relative-boost pair,
 
 $$
 C_G\int_{S_0}\boldsymbol\delta m
-\wedge\boldsymbol\delta\Omega_0,
+\wedge\boldsymbol\delta\Omega_0\,\nu_0,
 $$
 
 or, in the area-normalized polarization, the equivalent
 $C_G\boldsymbol\delta\lambda_R\wedge\boldsymbol\delta\Omega_0$ block with
 the reference and endpoint shifts retained.
 
-The action-derived endpoint block is
+On the monotonic-area sector, the action-derived endpoint block is
 
 $$
 \boxed{
-\Theta_{S_0}^{\mathrm{ext}}
-=C_G\int_{S_0}\left[-\Omega_0\boldsymbol\delta\lambda_R
+\Theta_{S_0}^{\mathrm{endpoint,area}}
+=C_G\int_{S_0}\left[-\Omega_0\boldsymbol\delta\lambda_R\,\nu_0
 +\frac12\sum_{s=\pm}
 \langle\pi_s,\boldsymbol\delta s_s\rangle\right],}
 $$
@@ -191,18 +189,33 @@ $$
 and
 
 $$
-\Omega_{S_0}^{\mathrm{ext}}
+\Omega_{S_0}^{\mathrm{endpoint,area}}
 =C_G\int_{S_0}\left[
-\boldsymbol\delta\lambda_R\wedge\boldsymbol\delta\Omega_0
+\boldsymbol\delta\lambda_R\wedge\boldsymbol\delta\Omega_0\,\nu_0
 +\frac12\sum_s
 \boldsymbol\delta\pi_{s i}\wedge\boldsymbol\delta s_s^i
 \right].
 $$
 
-The common-cut momentum is $p_{sA}=\pi_{s i}\partial_A s_s^i$ with no
+The common-cut momentum coefficient obeys $p_{sA}\nu_0=\pi_{s i}\partial_A s_s^i$ with no
 additional determinant.  If a distinct target density $\widehat\tau_s$ is
 introduced, then locally
 $\pi_{s i}=|\det Ds_s|\widehat\tau_{s i}\circ s_s$.
+
+For the primary affine chart use instead the globally defined
+$\pi_s^{\rm aff}\in\Gamma(s_s^*T^*S_{sL}\otimes\operatorname{Dens}S)$ and
+
+$$
+p_{sA}^{\rm aff}\nu_0=\pi_{si}^{\rm aff}\partial_A s_s^i,\quad
+p_s^{\rm aff}=-2\Omega_0\bar\eta_{s0},\quad
+\Theta_{S_{00}}^{\rm aff}=C_G\left[-\int_S\Omega_0\delta m\,\nu_0
++\tfrac12\sum_s\int_S\langle\pi_s^{\rm aff},\delta s_s\rangle\right].
+$$
+
+This is regular at $\theta_s=0$. The area transformation must retain the
+bulk and cut shifts in calculations 04--06; it is not an isolated corner
+substitution. With fixed reference density, every area/normal integral
+above and below carries $\nu_0$; density-valued $\pi$ is integrated directly.
 
 ### 2.3 Full retained characteristic moment map
 
@@ -215,7 +228,7 @@ $$
 -D_B\sigma_s{}^B{}_A\right]
 $$
 
-be the Damour residual and
+be the Damour residual relative to $\nu_0$, and
 
 $$
 \mathcal C_A=p_{+A}+p_{-A}-2\Omega_0D_A\lambda_R.
@@ -228,8 +241,8 @@ momenta, and matched abstract ports,
 $$
 \iota_{X_\xi}\Omega_{\mathrm{total}}
 =\boldsymbol\delta\left[
-\frac{C_G}{2}\int_{S_0}\xi^A\mathcal C_A
-+C_G\sum_s\int_{N_s}\xi^A\mathfrak D_{sA}
+\frac{C_G}{2}\int_{S_0}\xi^A\mathcal C_A\,\nu_0
++C_G\sum_s\int_{N_s}\xi^A\mathfrak D_{sA}\,d\lambda_s\nu_0
 +H_{\partial,\xi}
 \right].
 $$
@@ -242,7 +255,7 @@ $$
 \iota_{X_\xi}\Omega_{\mathrm{total}}
 =\boldsymbol\delta H_\xi,
 \qquad
-H_\xi=\frac{C_G}{2}\int_{S_0}\xi^A\mathcal C_A.}
+H_\xi=\frac{C_G}{2}\int_{S_0}\xi^A\mathcal C_A\,\nu_0.}
 $$
 
 For field-independent smearings,
@@ -252,132 +265,67 @@ boundary charge, not a central extension.  This is a theorem on the declared
 reduced characteristic constraint surface, not an unreduced off-shell
 spacetime theorem.
 
-## 3. Framed development and solution-space theorem
+## 3. Stage-4.1 development and solution-space truth boundary
 
-### 3.1 Framed spaces and exact dictionary
+The authoritative detailed statements are calculations 06--08 and
+`DEVELOPMENT_MAP_AUDIT.md`. The core map is an equivalence in the smooth
+category onto the slice $\mathcal F$ defined by $a_\pm[m]=\sqrt2e^{m/2}$
+and original markings. The PDE gauge uses $e_3=\ell_-$ and
+$e_4=2e^m\ell_+$ on their respective incoming sheets; it keeps original
+parameter endpoints and records the boost from the symmetric core frame.
 
-The framed characteristic chart retains
+$C_{\rm pre}$ reconstructs Raychaudhuri/Damour variables and the intrinsic
+connection with smooth/Lipschitz bounds into lower-order Sobolev spaces.
+It is not $C_{\rm SH}$. The first unfinished completion equation is the
+opposite-sheet second-fundamental-form transport 06.(8.11), $C_{\rm mix}$.
+Complete curvature/copy constraints and the full linearized completion are
+also unproved. Metric local/collar existence from complete source data
+remains a literature theorem, not a completed project-data construction.
 
-$$
-(\bar q^+,\bar q^-;\Omega_0,\theta_{+0},\theta_{-0},
-\widehat\omega,m;x^A,s_+,s_-),
-$$
-
-with one shared corner metric.  The framed solution space retains the
-double-null optical functions, marked null frame, generator labels, corner
-embedding, and endpoint markings, and quotients only
-$\operatorname{Diff}_0$, which is trivial on that framing.
-
-For
-
-$$
-e_4=a_+\ell_+,\qquad e_3=a_-\ell_-,
-\qquad a_+a_-e^{-m}=2,
-$$
-
-the regular Luk data are
+The framed solution-space identity is
 
 $$
-\gamma_0=\Omega_0\bar h,\qquad
-\chi^+=a_+\left(\sigma^++\frac{\theta_+}{2}q^+\right),\qquad
-\underline\chi^-=a_-\left(\sigma^-+\frac{\theta_-}{2}q^-\right),
+\Omega_{\rm EH}^{\rm fr}(\delta_1g,\delta_2g)
+=\Omega_{\rm char}^{\rm intr}(R_{\rm lin}\delta_1g,R_{\rm lin}\delta_2g)
 $$
 
-$$
-\zeta=-\omega^{(+)}-D\log a_+
-=\omega^{(-)}+D\log a_-.
-$$
+for compatible existing variations. Any actually constructed right inverse
+$L$ on $V_d$ therefore obeys
+$L^*\Omega_{\rm EH}^{\rm fr}=\Omega_{\rm char}^{\rm intr}|_{V_d}$.
+No full lift for all project tangents or full tangent surjectivity is proved.
+The intrinsic form contains the actual HF cuts and affine endpoint block;
+the independent abstract $b_s$ port pairs belong only to
+$\Omega_{\rm char}^{\rm ext}$, whose geometric identification needs
+$P_{\rm red}$. A nonlinear neighborhood pullback additionally needs $C^1$.
 
-In the symmetric frame, $\zeta=-\widehat\omega$.  Calculation 06 proves this
-map locally smooth and invertible on the positive-area/no-caustic sector.
-It does not claim a finite-Sobolev completion of every MSP $Y_\pm$ component.
+For existing full-rectangle solutions, coherent on-shell current conservation
+equates the intrinsic input/output forms under the stated side-flux policy.
+It does not establish a uniform solution map or any auxiliary port equality.
 
-### 3.2 Unconditional and conditional development domains
+### Required seven-part verdict
 
-After that dictionary:
-
-- a framed development/restriction bijection for restricted smooth
-  corner-germ data is proved by the cited Rendall/Luk local theorem; MSP's
-  theorem is not used here without the separately open completion of all
-  $Y_\pm$ fields;
-- a framed development/restriction bijection on an L-shaped neighborhood of
-  the complete truncated sheets is proved in the smooth category by Luk for
-  spherical cuts and by Cabet--Chru\'sciel--Tagne Wafo for general compact
-  cuts;
-- a common finite-Sobolev Banach neighborhood developing on the prescribed
-  full $\mathcal R_{U,V}$ is conditional on
-  $\mathbf P_{\rm rect}^{s,r}$.
-
-The exact missing proposition requires, simultaneously, common-domain
-existence, a background-relative $\mathcal X^r$ stability estimate,
-double-null margin preservation, finite-Sobolev output trace/restart
-control, forward $C^1$ dependence with derivative equal to the unique framed
-linearized Einstein evolution, and target openness/$C^1$ inverse restriction
-in the independently declared trace-regular solution topology.  Theorem 3.13
-of arXiv:1406.3009 assumes the common domain; Theorem 3.15 treats smooth
-continuation and explicitly leaves finite differentiability open.  Therefore
-the finite-cell reduction in calculation 07 is not marked as a proof of
-$\mathbf P_{\rm rect}^{s,r}$.
-
-### 3.3 Solution-space form, output, and reduction
-
-On the proved smooth germ/collar domains the linearized characteristic map
-
-$$
-L_{\rm loc}:T\mathcal D_{\rm char}^{\infty,{\rm fr}}(X_{\rm loc})
-\longrightarrow
-T^{\rm lin}\operatorname{Sol}_{\rm vac}^{\infty,{\rm fr}}(\mathcal U_{\rm loc})
-$$
-
-is bijective, and
-
-$$
-\boxed{L_{\rm loc}^{*}\Omega_{\rm EH}^{\rm fr}=\Omega_{\rm char}.}
-$$
-
-Along a smooth family for which differentiability of the nonlinear
-development has independently been established, this is its actual
-solution-space pullback.  A map-level Banach-manifold pullback on a whole
-local neighborhood requires $\mathbf P_{\rm cell}^{k}$, and on the full
-rectangle it requires $\mathbf P_{\rm rect}^{s,r}$.  Diagonal generator
-relabelling descends the linearized identity on a regular moment-map slice.
-A nondegenerate reduced symplectomorphism is not proved because the
-boost/four-face functional kernel is open.
-
-For every particular development that already exists on the full rectangle,
-on-shell current conservation gives
-
-$$
-\Omega_{X_{\rm in}}=\Omega_{X_{\rm out}}
-$$
-
-for closed $S$ and the same coherent HF representative, or with an explicit
-side no-flux condition.  This conservation law does not prove existence of a
-uniform evolution map.
-
-### 3.4 Required seven-part verdict
-
-1. A rigorously defined framed development map exists for restricted smooth
-   local-germ data and for smooth full-sheet data on a collar.
-2. It is bijective onto its framed image on those respective domains; a germ
-   does not recover the omitted part of a full-sheet datum, and
-   full-rectangle bijectivity is conditional.
-3. Entire-rectangle existence is conditional on
-   $\mathbf P_{\rm rect}^{s,r}$, not proved.
-4. The framed linearized characteristic problem is uniquely solvable, but
-   its identification with $DE$ on a Banach neighborhood, target openness,
-   and $C^1$ inverse restriction are conditional on the chart estimate.
-5. The EH/characteristic identity is proved on the framed linearized
-   local/collar solution spaces.  A literal nonlinear pullback holds along
-   independently differentiable families; the neighborhood-level and
-   full-rectangle Banach statements are conditional.
-6. Diagonal relabelling gives a linearized reduced
-   presymplectic identification.  No nondegenerate reduced
-   symplectomorphism is proved.
-7. The single PDE obstacle to the strongest framed fixed-rectangle
-   development theorem is $\mathbf P_{\rm rect}^{s,r}$.  After it is solved,
-   $\mathbf P_{\rm red}$ remains as the separate action/kernel obstacle to a
-   physical nondegenerate reduction.
+1. **Full marked-sheet project-to-PDE dictionary: not proved.** The smooth
+   core equivalence uses the fixed prescription $a_\pm[m]$; the direct
+   Cabet gauge preserves both original sheets and outer cuts. Full
+   connection/curvature completion is still open.
+2. **$C_{\rm SH}$: incomplete.** $C_{\rm pre}$ and $DC_{\rm pre}$ are
+   constructed with smooth/Lipschitz estimates for $3\le k\le s-3$.
+   The full map, its derivative loss and $DC_{\rm SH}$ are not proved.
+3. **Framed local/collar bijectivity: conditional.** Fixed-metric framing
+   uniqueness is proved before optical breakdown; complete project-to-PDE
+   initial data and finite-regularity gauge comparison remain required.
+4. **Presymplectic identity: restriction/constructed-image only.** It holds
+   for compatible existing variations and any actually constructed lift,
+   with $\Omega_{\rm char}^{\rm intr}$. Full tangent-space surjectivity is
+   not proved. Extended auxiliary ports require $P_{\rm red}$.
+5. **$P_{\rm cell}^k$: not proved.** Angular-flux stability for existing
+   reduced solutions is proved; the first missing estimate is $R_\perp^k$,
+   calculation 08.(6.4), controlling mixed sources (6.3) and outgoing traces.
+6. **$P_{\rm rect}^{s,r}$: still conditional.** No finite-grid proof or
+   unproved numerical regularity threshold is retained.
+7. **Next single PDE lemma:** prove $R_\perp^k$ from completed incoming
+   norms with a tracked finite derivative loss. The upstream initial-data
+   sublemma is $C_{\rm mix}$, calculation 06.(8.11).
 
 ## 4. Composition theorem
 
@@ -448,21 +396,21 @@ closing-wall action.
 
 ## 6. Open items and continuation rule
 
-The following remain open:
+1. $C_{\rm mix}$ and the full $C_{\rm SH}$/$DC_{\rm SH}$ completion,
+   constrained inverse and finite-Sobolev gauge comparison;
+2. $R_\perp^k$, then the complete restart, uniform existence, linearized
+   Einstein and quadratic-remainder package $P_{\rm cell}^k$;
+3. only then finite-grid/gauge/regularity bookkeeping for
+   $P_{\rm rect}^{s,r}$, including target openness and inverse regularity;
+4. $P_{\rm red}$: action-derived physical ports and their full functional
+   boundary/boost kernel;
+5. functional nondegeneracy, full spacetime gauge quotient and any global
+   completeness, positivity or continuum claim.
 
-1. $\mathbf P_{\rm rect}^{s,r}$: finite-Sobolev buffered-background
-   continuation/stability, trace/restart control, and the forward/inverse
-   Banach $C^1$ chart in the trace-regular solution topology;
-2. a finite-Sobolev completion from the Luk core to every MSP $Y_\pm$
-   component, if MSP rather than Luk/Cabet is to be used as the primary chart;
-3. $\mathbf P_{\rm red}$: a physical oriented four-face/closing-wall action
-   and the complete functional boost/boundary kernel;
-4. functional completion and nondegeneracy of the full profile space;
-5. a chart that crosses $\theta_s=0$;
-6. the full spacetime gauge quotient including the physical wall;
-7. completeness, positivity, surjectivity, and continuum-topology results.
+The affine endpoint chart now crosses zero expansion; the area/Reisenberger
+chart still does not. The chart repair is not a solution-space theorem.
 
-Stages 0--3 are frozen at their established algebraic boundary.  Stage 4 is
-closed only at the local/collar solution-space level; the next legitimate
-research step is the single PDE estimate
-$\mathbf P_{\rm rect}^{s,r}$, not a quantum extension.
+
+Stages 0--3 are frozen at their established algebraic boundary. Stage 4.1
+repairs the truth boundary and starts the one-cell analysis. It does not
+declare the smooth project-data collar, one-cell theorem or rectangle closed.

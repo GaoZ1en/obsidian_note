@@ -74,3 +74,16 @@ $\zeta_A=-\widehat\omega_A$ together with
 $a_+a_-e^{-m}=2$, and covariance under the residual opposite boost.  These
 checks do not establish a PDE existence, differentiability, continuation, or
 solution-space symplectic theorem.
+
+## Stage 4.1
+
+Run `rtk proxy wolframscript -file scripts/stage41_truth_boundary_checks.wl`.
+It verifies V45--V50 and V53 only. Run `stage41_xact_checks.wl` through the
+dedicated xAct `core` tool in a fresh kernel; V51--V52 require three zero
+residuals. The derivative commutator uses explicit `SortCovDs` before the
+`canonical_contract` pipeline. The structured result is retained in
+`verification/stage41_xact_results.md`.
+
+These checks do not prove the partial-completion Sobolev estimates (which
+have analytic proofs in calculation 06), full C_SH, a PDE restart estimate,
+a C1 solution map, tangent surjectivity or the finite rectangle theorem.

@@ -76,27 +76,37 @@ Allowed status vocabulary:
 | C3-Reis-regression | the derived endpoint block agrees with Reisenberger after branch, density, pullback, reference, and normal-frame dictionaries | proved | displayed dictionary in calculation 05 section 9 | project derivation followed by source regression | not a full equivalence through $\theta_s=0$ or a closing-wall theorem |
 | C3-target-CPS | the full reduced spin-$0+1+2$ gravitational characteristic CPS is nondegenerate | open | completed profile space, closing geometry, and all gauge quotients required | the constrained selected-representative form and moment map are derived | full functional kernel/quotient and wall ports remain open |
 
-## Stage 4 - framed development and solution-space scope
+## Stage 4 - Stage-4.1 truth boundary and first cell estimate
 
-| ID | Claim | Status | Assumptions | Evidence/provenance | Remaining boundary |
-|---|---|---|---|---|---|
-| C4-framed-spaces | $\mathcal D_{\rm char}^{s,{\rm fr}}$, $\operatorname{Sol}_{\rm vac}^{r,{\rm fr}}$, $R_{\rm in}$, and $\operatorname{Diff}_0$ retain the normal frame, generator labels, and endpoint markings | proved | positive-area/no-caustic framing chart | calculations 06--07, in-project definitions | boundary relabellings and boosts are deliberately separate |
-| C4-Luk-dictionary | the project affine data and framed regular Luk core data are locally smoothly invertible, with $\gamma_0=\Omega_0\bar h$, $\chi^+=a_+B^+$, $\underline\chi^-=a_-B^-$, and $\zeta=-\widehat\omega$ in the symmetric frame | proved | $a_+a_-e^{-m}=2$; fixed frame split; caustic-free positive area | calculation 06, in-project theorem; V42--V44 regressions | no arbitrary frame convention is hidden |
-| C4-MSP-completion | the four Luk core fields alone have been mapped with finite-Sobolev estimates to every component of the MSP $Y_\pm$ data | open | all abstract constraint transports would need to be solved and estimated | MSP Theorem 7.15 assumes completed DND satisfying its constraints | MSP remains a covariant full-first-jet and geometric-uniqueness comparison |
-| C4-germ-map | a framed development/restriction bijection exists near $S_{00}$ | proved | smooth source regularity, gauge completion, fixed framing | Rendall/Luk local theorem after the explicit core dictionary | restricted smooth germ data only; MSP requires the separately open $Y_\pm$ completion |
-| C4-collar-map | a framed development/restriction bijection exists on an L-shaped full-sheet neighborhood | proved | smooth spherical data for Luk, or smooth compact-cut data for Cabet--Chru\'sciel--Tagne Wafo | cited theorem after explicit dictionary | finite-order norms control width, but this is not a finite-Sobolev Banach chart or a prescribed two-long-direction rectangle |
-| C4-general-Sobolev-chart | the cited arbitrary-topology theorem directly supplies the project's exact finite-Sobolev Banach chart with all gauge-completion losses | false | none | arXiv:1406.3009 states its Einstein theorem for smooth data and leaves finite-loss tracking to the reader | reduced-system estimates are inputs to the conditional proposition |
-| C4-cell-estimate | the uniform exact-solution difference, output-trace/restart, and quadratic-remainder estimate $\mathbf P_{\rm cell}^{k}$ is established | conditional | uniform hyperbolicity and geometric margins | calculation 07 states the estimate and reduction to source energy identities | commuted Einstein-frame estimates and losses remain to be written |
-| C4-rectangle-map | all nearby data to a buffered background develop on the same full $\mathcal R_{U,V}$ with stability and margin preservation | conditional | $\mathbf P_{\rm rect}^{s,r}$ | calculation 07, Section 6 theorem reduction | single PDE obstacle to the framed fixed-rectangle theorem |
-| C4-C1 | the nonlinear finite-Sobolev framed development is a $C^1$ local chart in the independently declared trace-regular solution topology, with $DE$ equal to linearized Einstein evolution and $R_{\rm in}$ its $C^1$ inverse | conditional | $\mathbf P_{\rm cell}^{k}$ supplies the proposed forward route; clause 5 of $\mathbf P_{\rm rect}^{s,r}$ supplies openness/inverse regularity | calculation 07 difference-quotient and chart reduction | common-domain continuity alone is insufficient; the target topology is not transported through $E$ |
-| C4-linearized-local | incoming variations and framed linearized vacuum solutions are in bijection on the proved germ/collar domain | proved | common smooth local/collar domain | linear characteristic energy identity, constraint propagation, and geometric uniqueness | linearized solution-space statement, not identification with $DE$ on a Banach neighborhood |
-| C4-solution-pullback | $L_{\rm loc}^*\Omega_{\rm EH}^{\rm fr}=\Omega_{\rm char}$ on the framed linearized germ/collar solution spaces | proved | selected HF representative and the declared corner/port incidence | calculation 07 Theorem 7.1 plus calculations 02 and 05 | a literal nonlinear pullback by $E_{\rm loc}$ requires differentiability; no nondegeneracy claim |
-| C4-rectangle-pullback | $(E_{U,V}^{\rm fr})^*\Omega_{\rm EH}^{\rm fr}=\Omega_{\rm char}$ on a Banach neighborhood of the full rectangle | conditional | $\mathbf P_{\rm rect}^{s,r}$ | calculation 07 Corollary 7.2 | fixed-rectangle map is not otherwise available |
-| C4-boundary-reduction | diagonal relabelling descends the local linearized correspondence at $\mathcal C_A=0$ | proved | regular local slice; closed cut or tangent/no-flux fields | Stage-3 moment map plus development equivariance | Banach reduced presymplectomorphism needs $C^1$; full boost/wall kernel remains open |
-| C4-current | $\Omega_{X_{\rm in}}=\Omega_{X_{\rm out}}$ for every existing full-rectangle solution | proved | closed $S$ and coherent HF representative, or explicit side no-flux condition | on-shell EH current conservation and Stokes | does not create the missing solution |
-| C4-evolution | a uniform local finite-cell evolution graph exists for every datum near $d_*$ | conditional | $\mathbf P_{\rm rect}^{s,r}$ | calculation 07, Section 9 | otherwise only a relation for developments that already exist |
-| C4-solution-compose | existing adjacent framed developments compose and associate under full DND first-jet and endpoint cotangent matching | proved | common existence domain; fixed incidence maps | PDE uniqueness plus calculations 04--05 | uniform neighborhood version needs $\mathbf P_{\rm rect}^{s,r}$; physical ports need $\mathbf P_{\rm red}$ |
-| C4-global | arbitrary smooth data develop on an arbitrarily prescribed finite rectangle | false | none | focusing, coordinate breakdown, and exact source scope | no such theorem is claimed |
+| ID | Claim | Status | Evidence | Remaining boundary |
+|---|---|---|---|---|
+| C4-framed-spaces | Global reference-density affine framed chart and proper bulk quotient | proved | 06.1--2; 07.1 | fixed $\nu_0,h_0,D^0$, atlas labels; no global chart or dyad |
+| C4-Luk-dictionary | Core tensor equivalence onto the smooth fixed splitting slice $\mathcal F$ | proved | 06.4--6 | not all Luk gauges; no bounded inverse recovering a lost angular derivative |
+| C4-original-sheet | Original-sheet Cabet parameter prescription retains both outer cuts | proved | 06.(4.6)--(4.7) | kinematic domain/gauge prescription; not full PDE completion |
+| C4-dictionary-symbols | Normalization, torsion sign and affine endpoint algebra | checked symbolically | V42--V47, V50 | no existence or surjectivity conclusion |
+| C4-MSP-completion | Full MSP transverse $Y_\pm$ completion from project data | open | 06.6.2 | completed DND and Ricci compatibility are prerequisites of the cited theorem |
+| C4-SH-pre | $C_{\rm pre}$ and $DC_{\rm pre}$ with smooth/Lipschitz finite-scale estimates | proved | 06.(8.1)--(8.10) | $3\le k\le s-3$, uniform positive margins; partial fields only |
+| C4-SH-completion | Full $C_{\rm SH}$, inverse and linearized completion | open | 06.(8.11): $C_{\rm mix}$ | mixed connection, full frame/curvature constraints and loss still unclosed |
+| C4-affine-endpoint | Affine endpoint/corner potential valid through $\theta_s=0$ | proved | 06.(9.1)--(9.3); HF compensator derivation | fixed affine cuts, tangential endpoint variations, positive area |
+| C4-cited-metric | Metric local/neighborhood existence for complete smooth source data | proved | Cabet Theorem 5.3; Rendall/Luk; MSP for completed DND | known from literature; does not itself construct project $C_{\rm SH}$ |
+| C4-germ-map | Framed project-data development/restriction bijection near the corner | conditional | 07.3 | full completion, source constraints and framed PDE uniqueness required |
+| C4-collar-map | Framed project-data bijection on a full-sheet collar | conditional | 06.4.1; 07.3 | parameter domain retained, but full completion still missing |
+| C4-general-Sobolev-chart | Source Einstein theorem directly supplies the exact project finite-Sobolev chart | false | Cabet p.54--55 | finite-loss tracking and direct doubled-system constraint propagation not supplied there |
+| C4-framing-uniqueness | Unique framing extension of an existing metric in the fixed gauge | proved | 07.3.1 eikonal/transport lemma | common regular optical neighborhood; no finite-Sobolev gauge estimate |
+| C4-angular-flux | Angular $H^k$ flux difference estimate with zero reduced incoming loss | proved | 08.(3.1)--(4.3) | two already existing reduced solutions; $k\ge3$, high angular and full $W^{1,\infty}$ bounds |
+| C4-cell-estimate | Full uniform Einstein one-cell theorem $P_{\rm cell}^k$ | conditional | 08.6 | first unclosed $R_\perp^k$; no full restart, linearized existence or quadratic estimate |
+| C4-rectangle-map | Background-nearby project data develop on a prescribed full rectangle | conditional | 07.6; $P_{\rm rect}^{s,r}$ | completion, cell, restart/gauge and target-chart gates retained; grid not begun |
+| C4-linearized-local | All project tangents and all framed linearized metric solutions are in bijection | conditional | 07.7 | $DC_{\rm SH}$, linearized constraints and gauge exhaustion not proved |
+| C4-C1 | Nonlinear Banach $C^1$ chart with linearized Einstein derivative and inverse | conditional | 08.5--6; 07.6 | no assigned full derivative loss or target openness |
+| C4-solution-pullback | Intrinsic EH identity for restrictions / any constructed lift image | proved | 07.(7.3)--(7.4); 06.9 | no full tangent surjectivity; no full lift constructed in this round |
+| C4-rectangle-pullback | Full-rectangle nonlinear pullback equals $\Omega_{\rm char}^{\rm intr}$ | conditional | 07.(7.5) | requires full framed $P_{\rm rect}^{s,r}$ |
+| C4-extended-pullback | Pullback equality including auxiliary abstract outer ports | conditional | 07.(7.2); $P_{\rm red}$ | action-derived definitions/replacement without double counting required |
+| C4-boundary-reduction | Descent of a full local/collar solution-space correspondence | conditional | 07.8 | Stage-3 data moment map proved; full equivariant PDE lift not proved |
+| C4-port-kernel | Complete physical four-face/boost functional kernel | open | $P_{\rm red}$ | no chosen closing action or nondegeneracy theorem |
+| C4-current | Intrinsic input/output current conservation for existing solutions | proved | 07.9; on-shell EH current and Stokes | closed cuts/coherent HF representative or specified side flux |
+| C4-evolution | Uniform nearby-data finite-cell evolution graph | conditional | 07.9 | existing-solution relation only without the PDE theorem |
+| C4-solution-compose | Uniqueness/composition identities on an existing common smooth glued domain | proved | 07.10; full DND and fixed incidence matching | does not manufacture existence, restart regularity or a physical port sector |
+| C4-global | Arbitrary-data existence on an arbitrary prescribed finite rectangle | false | focusing and source scope | no such theorem is claimed |
 
 ## Verification ledger
 
@@ -149,9 +159,21 @@ Allowed status vocabulary:
 | V43 | the symmetric frame gives $\zeta_A=-\widehat\omega_A$ and $a_+a_-e^{-m}=2$ | exact Wolfram algebra | one-component symbolic realization of the frame identity |
 | V44 | the torsion dictionary is covariant under the residual opposite boost | exact Wolfram algebra | assumes the stated boost laws; not a Hamiltonian-kernel check |
 
-Passing V0--V44 proves only the identities stated.  It does not prove a
+Passing the listed checks proves only their stated algebraic identities.  It does not prove a
 closing-wall action or its port momenta, an area chart through $\theta=0$, a
 full functional gauge quotient/nondegeneracy, a boost kernel including the
 wall, the MSP $Y_\pm$ completion, finite-rectangle existence, finite-Sobolev
 $C^1$ dependence, completeness, surjectivity, positivity, or a continuum
 topology theorem.
+
+| New ID | Check | Evidence type | Boundary |
+|---|---|---|---|
+| V45 | smooth splitting and its variation | Wolfram | no gauge PDE estimate |
+| V46 | affine endpoint sum and twist inverse | Wolfram | fixed affine cut representative |
+| V47 | Cabet original-sheet corner normalization/torsion | Wolfram | no full frame completion |
+| V48 | two curvature principal matrices and positive time symbol | Wolfram | $c>0$; not a cell existence theorem |
+| V49 | exact matrix nonlinear remainder identity | Wolfram example | not a remainder norm estimate |
+| V50 | reference-density determinant | Wolfram | positive reference density and metric |
+| V51 | connection-variation trace; scalar Hessian sorting | xAct | tensor identities, no constraint propagation |
+| V52 | null-gradient geodesic identity | xAct | null eikonal gradient, smooth metric |
+| V53 | linearized Raychaudhuri/Damour algebra | Wolfram | partial completion only |
