@@ -9,10 +9,26 @@ initial area/relative-boost pair, the endpoint-map/twist block, the constrained
 diagonal generator-chart moment map, independent first-jet bulk composition,
 and general fixed-incidence endpoint cotangent composition.
 
-This ledger freezes the classical calculation chain.  It is not a theorem of
-representative-independent gravitational CPS, a physical closing-wall action,
-functional nondegeneracy, or an unreduced off-shell spacetime quotient.  No
-quantization is included.
+After the explicit rigorous-CIVP dictionary, smooth restricted germ data and
+smooth full-sheet data are now connected to actual framed vacuum solutions
+on, respectively, a local germ and the long-by-thin neighborhood supplied by
+the cited theorems.  On the corresponding framed linearized solution spaces,
+
+$$
+L_{\rm loc}^{*}\Omega_{\rm EH}^{\rm fr}=\Omega_{\rm char}.
+$$
+
+The literal nonlinear pullback by $E_{\rm loc}^{\rm fr}$ on an entire Banach
+neighborhood still requires the $C^1$ estimate below.
+The stronger finite-Sobolev Banach theorem on one prescribed full
+$\mathcal R_{U,V}$ is **conditional** on
+$\mathbf P_{\rm rect}^{s,r}$, and its physical nondegenerate boundary
+reduction is independently open pending $\mathbf P_{\rm red}$.
+
+This ledger is authoritative for the classical scope.  It is not a theorem
+of arbitrary-data fixed-rectangle existence, representative-independent
+gravitational CPS, a physical closing-wall action, functional nondegeneracy,
+or an unreduced off-shell spacetime quotient.  No quantization is included.
 
 Throughout,
 
@@ -236,9 +252,136 @@ boundary charge, not a central extension.  This is a theorem on the declared
 reduced characteristic constraint surface, not an unreduced off-shell
 spacetime theorem.
 
-## 3. Composition theorem
+## 3. Framed development and solution-space theorem
 
-### 3.1 Independent bulk composition
+### 3.1 Framed spaces and exact dictionary
+
+The framed characteristic chart retains
+
+$$
+(\bar q^+,\bar q^-;\Omega_0,\theta_{+0},\theta_{-0},
+\widehat\omega,m;x^A,s_+,s_-),
+$$
+
+with one shared corner metric.  The framed solution space retains the
+double-null optical functions, marked null frame, generator labels, corner
+embedding, and endpoint markings, and quotients only
+$\operatorname{Diff}_0$, which is trivial on that framing.
+
+For
+
+$$
+e_4=a_+\ell_+,\qquad e_3=a_-\ell_-,
+\qquad a_+a_-e^{-m}=2,
+$$
+
+the regular Luk data are
+
+$$
+\gamma_0=\Omega_0\bar h,\qquad
+\chi^+=a_+\left(\sigma^++\frac{\theta_+}{2}q^+\right),\qquad
+\underline\chi^-=a_-\left(\sigma^-+\frac{\theta_-}{2}q^-\right),
+$$
+
+$$
+\zeta=-\omega^{(+)}-D\log a_+
+=\omega^{(-)}+D\log a_-.
+$$
+
+In the symmetric frame, $\zeta=-\widehat\omega$.  Calculation 06 proves this
+map locally smooth and invertible on the positive-area/no-caustic sector.
+It does not claim a finite-Sobolev completion of every MSP $Y_\pm$ component.
+
+### 3.2 Unconditional and conditional development domains
+
+After that dictionary:
+
+- a framed development/restriction bijection for restricted smooth
+  corner-germ data is proved by the cited Rendall/Luk local theorem; MSP's
+  theorem is not used here without the separately open completion of all
+  $Y_\pm$ fields;
+- a framed development/restriction bijection on an L-shaped neighborhood of
+  the complete truncated sheets is proved in the smooth category by Luk for
+  spherical cuts and by Cabet--Chru\'sciel--Tagne Wafo for general compact
+  cuts;
+- a common finite-Sobolev Banach neighborhood developing on the prescribed
+  full $\mathcal R_{U,V}$ is conditional on
+  $\mathbf P_{\rm rect}^{s,r}$.
+
+The exact missing proposition requires, simultaneously, common-domain
+existence, a background-relative $\mathcal X^r$ stability estimate,
+double-null margin preservation, finite-Sobolev output trace/restart
+control, forward $C^1$ dependence with derivative equal to the unique framed
+linearized Einstein evolution, and target openness/$C^1$ inverse restriction
+in the independently declared trace-regular solution topology.  Theorem 3.13
+of arXiv:1406.3009 assumes the common domain; Theorem 3.15 treats smooth
+continuation and explicitly leaves finite differentiability open.  Therefore
+the finite-cell reduction in calculation 07 is not marked as a proof of
+$\mathbf P_{\rm rect}^{s,r}$.
+
+### 3.3 Solution-space form, output, and reduction
+
+On the proved smooth germ/collar domains the linearized characteristic map
+
+$$
+L_{\rm loc}:T\mathcal D_{\rm char}^{\infty,{\rm fr}}(X_{\rm loc})
+\longrightarrow
+T^{\rm lin}\operatorname{Sol}_{\rm vac}^{\infty,{\rm fr}}(\mathcal U_{\rm loc})
+$$
+
+is bijective, and
+
+$$
+\boxed{L_{\rm loc}^{*}\Omega_{\rm EH}^{\rm fr}=\Omega_{\rm char}.}
+$$
+
+Along a smooth family for which differentiability of the nonlinear
+development has independently been established, this is its actual
+solution-space pullback.  A map-level Banach-manifold pullback on a whole
+local neighborhood requires $\mathbf P_{\rm cell}^{k}$, and on the full
+rectangle it requires $\mathbf P_{\rm rect}^{s,r}$.  Diagonal generator
+relabelling descends the linearized identity on a regular moment-map slice.
+A nondegenerate reduced symplectomorphism is not proved because the
+boost/four-face functional kernel is open.
+
+For every particular development that already exists on the full rectangle,
+on-shell current conservation gives
+
+$$
+\Omega_{X_{\rm in}}=\Omega_{X_{\rm out}}
+$$
+
+for closed $S$ and the same coherent HF representative, or with an explicit
+side no-flux condition.  This conservation law does not prove existence of a
+uniform evolution map.
+
+### 3.4 Required seven-part verdict
+
+1. A rigorously defined framed development map exists for restricted smooth
+   local-germ data and for smooth full-sheet data on a collar.
+2. It is bijective onto its framed image on those respective domains; a germ
+   does not recover the omitted part of a full-sheet datum, and
+   full-rectangle bijectivity is conditional.
+3. Entire-rectangle existence is conditional on
+   $\mathbf P_{\rm rect}^{s,r}$, not proved.
+4. The framed linearized characteristic problem is uniquely solvable, but
+   its identification with $DE$ on a Banach neighborhood, target openness,
+   and $C^1$ inverse restriction are conditional on the chart estimate.
+5. The EH/characteristic identity is proved on the framed linearized
+   local/collar solution spaces.  A literal nonlinear pullback holds along
+   independently differentiable families; the neighborhood-level and
+   full-rectangle Banach statements are conditional.
+6. Diagonal relabelling gives a linearized reduced
+   presymplectic identification.  No nondegenerate reduced
+   symplectomorphism is proved.
+7. The single PDE obstacle to the strongest framed fixed-rectangle
+   development theorem is $\mathbf P_{\rm rect}^{s,r}$.  After it is solved,
+   $\mathbf P_{\rm red}$ remains as the separate action/kernel obstacle to a
+   physical nondegenerate reduction.
+
+## 4. Composition theorem
+
+### 4.1 Independent bulk composition
 
 Two independently constructed spin-$0+2$ sheet forms satisfy
 
@@ -253,7 +396,7 @@ $(\Omega,\bar q_{AB},\theta,\sigma_{AB})$.  Three-cell reduction is
 associative under the same matching at both cuts.  Off this locus the
 first-jet jump is the domain obstruction.
 
-### 3.2 General endpoint cotangent composition
+### 4.2 General endpoint cotangent composition
 
 For fixed smooth invertible maps
 
@@ -278,11 +421,16 @@ variables; taking $\boldsymbol\delta$ proves two-form cancellation.  The law
 is functorial under composition of $f$ and $g$.  Field-dependent incidence
 maps would add variation terms and are outside this theorem.
 
-The complete geometric finite-cell composition theorem remains conditional:
-the abstract area/normal and endpoint ports have not been derived from a
-specific physical closing-wall action.
+For developments that already exist, matching the full DND first jet and the
+endpoint cotangent data makes PDE uniqueness identify gluing with composition,
+and three-cell composition is associative on the common existence domain.
+A uniform fixed-rectangle neighborhood version is conditional on
+$\mathbf P_{\rm rect}^{s,r}$.  The complete physical-port composition theorem
+remains conditional on $\mathbf P_{\rm red}$ because the abstract
+area/normal and endpoint ports have not been derived from a specific physical
+closing-wall action.
 
-## 4. Gauge policy
+## 5. Gauge policy
 
 - **Diagonal generator relabelling:** Hamiltonian and quotiented by the
   moment map $\mathcal C_A=0$ on the declared characteristic constraint
@@ -298,18 +446,23 @@ specific physical closing-wall action.
   endpoint-map/embedding/port pairs.  They are not called
   diffeomorphism-invariant physical pairs.
 
-## 5. Open items and freeze rule
+## 6. Open items and continuation rule
 
 The following remain open:
 
-1. a physical oriented closing-wall action and its complete area, normal,
-   shape, and endpoint ports;
-2. functional completion and nondegeneracy of the full profile space;
-3. a chart that crosses $\theta_s=0$;
-4. the full spacetime gauge quotient and a boost-kernel theorem including the
-   physical wall;
-5. completeness, positivity, surjectivity, and continuum-topology results.
+1. $\mathbf P_{\rm rect}^{s,r}$: finite-Sobolev buffered-background
+   continuation/stability, trace/restart control, and the forward/inverse
+   Banach $C^1$ chart in the trace-regular solution topology;
+2. a finite-Sobolev completion from the Luk core to every MSP $Y_\pm$
+   component, if MSP rather than Luk/Cabet is to be used as the primary chart;
+3. $\mathbf P_{\rm red}$: a physical oriented four-face/closing-wall action
+   and the complete functional boost/boundary kernel;
+4. functional completion and nondegeneracy of the full profile space;
+5. a chart that crosses $\theta_s=0$;
+6. the full spacetime gauge quotient including the physical wall;
+7. completeness, positivity, surjectivity, and continuum-topology results.
 
-The calculation chain is frozen.  It should be reopened only if a concrete
-closing-wall realization exposes a genuinely new gravity-specific
-obstruction/theorem, or after a positive novelty/manuscript decision.
+Stages 0--3 are frozen at their established algebraic boundary.  Stage 4 is
+closed only at the local/collar solution-space level; the next legitimate
+research step is the single PDE estimate
+$\mathbf P_{\rm rect}^{s,r}$, not a quantum extension.

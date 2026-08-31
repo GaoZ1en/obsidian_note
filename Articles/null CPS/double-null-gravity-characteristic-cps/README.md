@@ -2,12 +2,29 @@
 
 ## Direct verdict
 
-**Correct under the classical, caustic-free, selected-HF-representative
-conditions stated in calculations 04--05:** Stage 3.1 closes the endpoint
-momentum type, fixed smooth invertible $f,g$ interface composition, and the
-diagonal generator-chart moment map on the Raychaudhuri-reconstructed,
-Damour-restricted full retained characteristic form.  The fixed-affine bulk
-data are
+**Correct on the following exact scope:** Stages 0--3 derive the
+selected-HF-representative characteristic form, endpoint polarization,
+moment map, and interface algebra.  Stage 4 now defines the framed data and
+solution spaces, proves the affine-to-Luk CIVP dictionary, and connects the
+smooth restricted germ data and smooth full-sheet data to actual vacuum
+developments on, respectively, a local germ and the long-by-thin neighborhood
+supplied by the cited theorems.  On the framed linearized local/collar
+solution spaces,
+
+$$
+L_{\rm loc}^{*}\Omega_{\rm EH}^{\rm fr}=\Omega_{\rm char}.
+$$
+
+Writing this as the literal nonlinear pullback by $E_{\rm loc}^{\rm fr}$ on
+an entire Banach neighborhood still requires the $C^1$ estimate below.
+The finite-Sobolev Banach development map on one prescribed full rectangle is
+**conditional** on the single background-stability proposition
+$\mathbf P_{\rm rect}^{s,r}$, including openness and $C^1$ inverse restriction
+in an independently declared trace-regular solution topology.  The cited
+common-domain continuous-dependence and smooth continuation theorems do not
+by themselves prove it.
+
+The fixed-affine bulk data are
 
 $$
 (\bar q^+_{AB}(u,x),\bar q^-_{AB}(v,x);
@@ -31,8 +48,7 @@ representative-independent full gravitational CPS: the area chart does not
 cross $\theta_s=0$, the physical closing-wall port has not been derived, and
 the full functional gauge quotient/nondegeneracy remain open.  Opposite
 boosts are a declared normal-frame gauge policy, not a proved kernel of the
-unspecified closing-wall form.  The classical calculation chain is now
-frozen pending a novelty/manuscript decision or a genuinely new obstruction.
+unspecified closing-wall form.  No quantization is included.
 
 What is established is precise:
 
@@ -91,13 +107,28 @@ What is established is precise:
 - after the declared diagonal reduction, two relative
   endpoint-map/embedding/port pairs remain.  They are not asserted to be
   diffeomorphism-invariant physical pairs.
+- `calculations/06-rigorous-civp-dictionary.md` proves the exact
+  $\gamma,\chi,\underline\chi,\zeta$ dictionary, including
+  $\zeta=-\widehat\omega$ in the symmetric normalized frame, and separates
+  the Luk core theorem from the still-unwritten finite-Sobolev MSP
+  $Y_\pm$ completion;
+- `calculations/07-framed-development-map-and-solution-space.md` defines the
+  framed quotient, proves the germ/collar development and linearized
+  solution-space identity, and reduces the full fixed rectangle to
+  $\mathbf P_{\rm rect}^{s,r}$ without claiming arbitrary-data existence;
+- for every particular full-rectangle development that exists, the outgoing
+  cross is geometric, EH current conservation equates the input/output
+  forms under the stated side-boundary assumptions, and full-DND
+  first-jet matching makes solution-space gluing agree with composition.
 
 ## Fixed scope
 
 The project is classical.  It concerns a caustic-free finite double-null cross
 $X=N_+\cup N_-$ in four-dimensional vacuum Einstein gravity.  Generator
 labels and embeddings are fixed in the Stage-2 bulk chart; Stage 3.1 varies
-their endpoint maps in the corner sector.  Affine Damour transport has
+their endpoint maps in the corner sector.  Stage 4 retains the optical
+functions, null frame, labels, and endpoint markings in the solution space
+and quotients only proper bulk diffeomorphisms.  Affine Damour transport has
 $\kappa_\pm=0$.  No quantization, Weyl algebra, channel, Stinespring, or
 post-CIVP construction belongs here.
 
@@ -121,6 +152,11 @@ post-CIVP construction belongs here.
   Stage-3.0/3.1 HF-to-endpoint derivation, Damour transport, full constrained
   moment map, boost policy, rank/kernel, general interface composition, and
   Reisenberger regression.
+- `calculations/06-rigorous-civp-dictionary.md`: framed data spaces and the
+  exact project/Luk/MSP/Cabet convention and scope dictionary.
+- `calculations/07-framed-development-map-and-solution-space.md`: framed
+  solution quotient, local/collar development, exact fixed-rectangle PDE
+  reduction, linearized solution-space identity, output, and composition.
 - `verification/STAGE1_AUDIT_SUMMARY.md`: concise proved/conditional/open
   verdict.
 - `verification/STAGE2_1_AUDIT_SUMMARY.md`: concise Stage-2.1 answer sheet and
@@ -131,8 +167,10 @@ post-CIVP construction belongs here.
   superseded by the Stage-3.1 repairs.
 - `verification/STAGE3_1_AUDIT_SUMMARY.md`: Stage-3.1 closure verdict and
   assumptions.
-- `verification/FINAL_CLASSICAL_THEOREM_LEDGER.md`: frozen authoritative
-  classical theorem, composition, gauge, and open-item ledger.
+- `verification/DEVELOPMENT_MAP_AUDIT.md`: authoritative Stage-4
+  proved/cited/conditional/open audit.
+- `verification/FINAL_CLASSICAL_THEOREM_LEDGER.md`: authoritative classical
+  theorem, development, composition, gauge, and open-item ledger.
 - `verification/CLASSICAL_NOVELTY_AUDIT.md`: component-by-component focused
   literature and manuscript-direction audit.
 - `verification/CLAIM_LEDGER.md`: authoritative claim status.
@@ -142,8 +180,9 @@ post-CIVP construction belongs here.
   `scripts/stage21_corner_area_composition_checks.wl`,
   `scripts/stage22_hardening_checks.wl`, and
   `scripts/stage30_endpoint_twist_checks.wl`,
-  `scripts/stage31_classical_closure_checks.wl`: executable exact finite-mode
-  checks V0--V41.
+  `scripts/stage31_classical_closure_checks.wl`, and
+  `scripts/development_dictionary_checks.wl`: executable exact finite-mode
+  checks V0--V44.
 - `scripts/stage31_xact_residuals.wl`: independent xAct residual check for
   the tracefree Lie and cut integration-by-parts identities.
 - `scripts/README.md`: command and evidence boundary.

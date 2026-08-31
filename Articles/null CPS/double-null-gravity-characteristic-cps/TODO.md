@@ -1,8 +1,70 @@
 # Immediate Research Tasks
 
-**Frozen after Stage 3.1.**  The unchecked items below are reopening
-conditions, not an active extension plan.  Do not add further formalism unless
-a novelty/manuscript decision or a genuinely new obstruction requires it.
+**Stage 4 theorem boundary.**  Stages 0--3 remain frozen at their established
+classical algebraic scope.  The smooth solution-space phase is closed for a
+local germ and long-by-thin collar, but the finite-Sobolev Banach chart and
+the prescribed full rectangle are conditional on one active PDE proposition
+$\mathbf P_{\rm rect}^{s,r}$.  Do not quantize.
+
+- [x] Action: define the framed characteristic and vacuum solution spaces.
+  Context: retain optical functions, affine null frame, generator labels,
+  corner embedding, and endpoint markings; quotient only
+  $\operatorname{Diff}_0$ that is trivial on this framing.
+  Check: calculation 07, Section 1.
+
+- [x] Action: prove the project-to-rigorous-CIVP core dictionary.
+  Context: calculation 06 derives
+  $\gamma_0=\Omega_0\bar h$, $\chi^+=a_+B^+$,
+  $\underline\chi^-=a_-B^-$, and
+  $\zeta=-\widehat\omega$ in the symmetric normalized frame.
+  Check: analytic inverse/equivariance theorem and V42--V44.
+
+- [x] Action: audit the exact domains of Rendall, Luk,
+  Mars--Sánchez-Pérez, Cabet--Chruściel--Tagne Wafo, Hilditch et al., and
+  Reisenberger.
+  Context: germ, full-sheet collar, and prescribed two-long-direction
+  rectangle are kept distinct.
+  Check: calculations 06--07 and
+  `verification/DEVELOPMENT_MAP_AUDIT.md`.
+
+- [x] Action: construct the framed germ/collar development map and inverse
+  restriction after the dictionary.
+  Context: this is an actual vacuum solution-space statement, modulo only
+  proper bulk diffeomorphisms.
+  Check: calculation 07, Section 3.
+
+- [x] Action: lift the selected characteristic form to the framed linearized
+  local/collar solution spaces.
+  Context:
+  $L_{\rm loc}^{*}\Omega_{\rm EH}^{\rm fr}=\Omega_{\rm char}$ follows from
+  linearized characteristic well-posedness plus the Stage-2/3 pullback.
+  A literal Banach-neighborhood pullback by $E_{\rm loc}^{\rm fr}$ remains
+  part of the $C^1$ PDE item below.
+  Check: calculation 07, Theorem 7.1.
+
+- [x] Action: state output conservation and solution-space composition at
+  the scope actually supported.
+  Context: both apply to developments already known to exist; a uniform
+  nearby-data evolution map on the full rectangle remains conditional.
+  Check: calculation 07, Sections 9--10.
+
+- [ ] Active PDE action:
+  prove $\mathbf P_{\rm rect}^{s,r}$.
+  Context: establish uniform finite-Sobolev cell estimates, output
+  trace/restart control, background-relative stability, double-null margin
+  persistence, and a quadratic remainder estimate giving Banach $C^1$
+  dependence on the same $\mathcal R_{U,V}$, plus openness and $C^1$ inverse
+  restriction in the independently declared trace-regular solution topology.
+  Check: close every clause (6.1)--(6.5) in calculation 07.  Cabet et al.
+  Theorems 3.13 and 3.15 do not already do this.
+
+- [ ] Optional dictionary completion: write and estimate every remaining MSP
+  $Y_\pm$ constraint transport if MSP DND are to replace Luk/Cabet data as
+  the primary Banach chart.
+  Context: MSP Theorem 7.15 assumes completed DND satisfying the abstract
+  constraints; it does not construct this free-data completion.
+  Check: produce a smooth locally invertible completion map with a stated
+  Sobolev loss, or retain the current Luk-core route.
 
 - [x] Action: retain $S_+$ and $S_-$ as area/boost ports and compute the
   endpoint-complete Stage-1 rank/kernel.
@@ -108,9 +170,11 @@ a novelty/manuscript decision or a genuinely new obstruction requires it.
   Check: reproduce the area-port and endpoint-map incidence terms from that
   action and rerun two-cell composition with its actual boundary data.
 
-- [x] Action: consolidate and freeze the classical calculation chain.
+- [x] Action: consolidate Stages 0--3 and the current Stage-4 theorem boundary.
   Context: `verification/FINAL_CLASSICAL_THEOREM_LEDGER.md` is the
   authoritative theorem/gauge/open-item ledger, and
-  `verification/CLASSICAL_NOVELTY_AUDIT.md` classifies the literature overlap.
-  Check: reopen only for a genuinely new obstruction, a concrete
-  closing-wall theorem, or a positive novelty/manuscript decision.
+  `verification/DEVELOPMENT_MAP_AUDIT.md` separates cited, in-project,
+  conditional, and open development claims.
+  Check: the only active framed fixed-rectangle PDE target is
+  $\mathbf P_{\rm rect}^{s,r}$; the independent boundary target is
+  $\mathbf P_{\rm red}$.

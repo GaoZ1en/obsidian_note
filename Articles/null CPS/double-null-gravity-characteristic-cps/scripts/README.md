@@ -8,6 +8,7 @@ wolframscript -file scripts/stage21_corner_area_composition_checks.wl
 wolframscript -file scripts/stage22_hardening_checks.wl
 wolframscript -file scripts/stage30_endpoint_twist_checks.wl
 wolframscript -file scripts/stage31_classical_closure_checks.wl
+wolframscript -file scripts/development_dictionary_checks.wl
 ```
 
 Run `scripts/stage31_xact_residuals.wl` in a fresh dedicated xAct `core`
@@ -65,3 +66,11 @@ V26--V41 are
 their finite regressions, while V33 is the separate xAct check of the local
 tracefree-Lie and integration-by-parts identities.  A complete geometric
 finite-cell port theorem remains conditional on the closing action.
+
+The development-dictionary script uses V42--V44.  It checks only the exact
+normalization and sign algebra in calculation 06: equality of the two branch
+formulas for the rigorous-CIVP torsion, the symmetric-frame identity
+$\zeta_A=-\widehat\omega_A$ together with
+$a_+a_-e^{-m}=2$, and covariance under the residual opposite boost.  These
+checks do not establish a PDE existence, differentiability, continuation, or
+solution-space symplectic theorem.

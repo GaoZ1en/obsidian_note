@@ -1,5 +1,95 @@
 # Verification Run Log
 
+## 2026-08-31 — Stage-4 framed CIVP and development-map audit
+
+Branch and working directory:
+
+```text
+codex/double-null-gravity-cps
+Articles/null CPS/double-null-gravity-characteristic-cps
+```
+
+Direct theorem verdict:
+
+- the framed data space, framed solution space, and proper bulk quotient are
+  defined;
+- the project/Luk core dictionary is proved in-project;
+- cited theorems give framed development/restriction bijections for
+  restricted smooth corner-germ data and for smooth data on the complete
+  truncated sheets in a long-by-thin/full-sheet neighborhood;
+- the fixed finite-Sobolev rectangle theorem and the forward/inverse Banach
+  $C^1$ chart in the independently declared trace-regular solution topology
+  are conditional on $\mathbf P_{\rm rect}^{s,r}$;
+- the selected EH/characteristic identity is proved on the framed linearized
+  local/collar solution spaces; a literal Banach-neighborhood pullback by the
+  nonlinear development map, locally or on the full rectangle, requires the
+  corresponding $C^1$ proposition;
+- the physical nondegenerate boundary reduction remains independently open
+  pending $\mathbf P_{\rm red}$.
+
+Primary-source scope checked:
+
+- Rendall 1990: local corner neighborhood;
+- Luk arXiv:1107.0898, Theorem 2: smooth regular spherical data give a
+  long-by-thin region with width controlled by displayed finite-order initial
+  norms; the theorem is not stated for merely $H^s$ data;
+- Mars--Sánchez-Pérez arXiv:2205.15267, Theorem 7.15: development of
+  completed abstract DND satisfying the abstract constraints, after
+  restriction if necessary;
+- Mars--Sánchez-Pérez arXiv:2301.02722, Theorems 4.17 and 5.5 and Remark
+  5.6: geometric existence/uniqueness near the intersection, with the
+  full-sheet translation explicitly not immediate;
+- Cabet--Chruściel--Tagne Wafo arXiv:1406.3009, Proposition 3.6 and Theorems
+  3.9, 3.13, 3.15, and 5.3: controlled reduced-system local width,
+  common-domain continuous dependence, smooth continuation, and smooth
+  Einstein full-sheet neighborhood; finite-differentiability continuation
+  is explicitly not established;
+- Chruściel--Tagne Wafo--Gray arXiv:2305.07306, Theorem 1.1: smooth
+  arbitrary-topology neighborhood, with Sobolev losses left to be tracked;
+- Hilditch--Valiente Kroon--Zhao arXiv:1911.00047, Theorem 4: another
+  long-by-thin null-structure theorem;
+- Reisenberger arXiv:1211.3880, Section 2.2: Sachs/area data and symplectic
+  variables, with all-sheet development explicitly not proved there.
+
+Commands:
+
+```text
+wolframscript -file scripts/spin0_and_spin2_checks.wl
+wolframscript -file scripts/stage21_corner_area_composition_checks.wl
+wolframscript -file scripts/stage22_hardening_checks.wl
+wolframscript -file scripts/stage30_endpoint_twist_checks.wl
+wolframscript -file scripts/stage31_classical_closure_checks.wl
+wolframscript -file scripts/development_dictionary_checks.wl
+python3 ../../../scripts/validate_vault_policy.py
+git diff --check
+```
+
+Result: all six Wolfram regression commands exited with code `0`; every
+declared check V0--V44 passed.  The dedicated fresh xAct `core` run returned
+`ok=true` and the two V33 canonical residuals `{0,0}`, with no package-load
+errors or messages.  The vault-policy audit and local referenced-path audit
+passed.
+
+A bare local `wolframscript -file scripts/stage31_xact_residuals.wl` run was
+also attempted and exited with code `1` because that runner does not preload
+the xAct core packages, leaving `ToCanonical` unevaluated.  It is not the
+documented execution path and is not used as evidence; the authoritative
+fresh xAct-core execution passed.
+
+Stage-4 symbolic additions:
+
+- V42 checks equality of the two branch torsion formulas;
+- V43 checks $\zeta=-\widehat\omega$ in the symmetric normalized frame and
+  $a_+a_-e^{-m}=2$;
+- V44 checks opposite-boost covariance.
+
+Evidence boundary: V42--V44 are sign/normalization regressions only.  No
+symbolic check proves a PDE existence, continuation, differentiability,
+solution-space surjectivity, current-conservation, functional-kernel, or
+nondegeneracy theorem.  The authoritative status split is in
+`verification/DEVELOPMENT_MAP_AUDIT.md` and
+`verification/FINAL_CLASSICAL_THEOREM_LEDGER.md`.
+
 ## 2026-08-31 — Stage-3.1 classical hardening and freeze
 
 Working directory:
