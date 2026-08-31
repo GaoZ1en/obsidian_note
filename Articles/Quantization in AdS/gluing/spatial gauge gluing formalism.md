@@ -325,7 +325,7 @@ $$\begin{aligned}
 :=\{u\in\mathcal C_{h,\mathrm{phys}}^\chi:\;&
 \exists\widetilde h, \widetilde h|_\Gamma=h,\\
 &\operatorname{Match}_{\chi_M}^{\mathrm{slice}}(u;\widetilde h),\quad
-\operatorname{Asm}_h(u)\in\operatorname{Sol}^{\chi_M}(M)\}.
+\widehat{\operatorname{Asm}}_h(u)\in\operatorname{Sol}^{\chi_M}(M)\}.
 \end{aligned}$$
 
 The last clause states the target property. A slice-patching theorem must give independent sufficient trace/driver conditions for it, rather than assume that clause as its proof. If assembly is a relation, the selected branch and collar choices must be specified in this definition. The inclusion can be strict, and no orbit-coverage statement for this smaller locus is assumed.
@@ -355,19 +355,28 @@ This is a formal Green-identity argument under explicit analytic inputs, not a s
 In addition to (A), assume separately proved compatibility conditions for $\widetilde h$, all gauge-driver/normal traces, and the chosen global reduced system. These conditions must imply
 
 $$\begin{align}
-\chi_M(\operatorname{Asm}_h u)&=0
+\chi_M(\widehat{\operatorname{Asm}}_h u)&=0
 \quad\text{and the global driver constraints hold distributionally}.
 \end{align}$$
 
 A separate regularity theorem is needed if the conclusion is strong rather than distributional. A jump or distributional defect of $\chi_M$ is **not** an original Euler--Lagrange surface source. It can obstruct this optional global slice while (A) still gives a valid original solution. Not every gauge operator even produces a delta defect from a jump; this must be checked for that operator.
 
-**Claim level:** two conditional schemas. Existing smooth Maxwell modes support both properties for those modes only; they do not establish either statement for arbitrary admissible histories.
+**Claim level:** two conditional general schemas. Existing mode calculations alone support only their modes. The separate cylinder dossier supplies a smooth finite-Fourier physical patching and collar regularity proof, while retaining the raw optional-slice counterexamples.
 
 ## 8. Assembly Relation and Restoration of Global Gauge Redundancy
 
-Let $\operatorname{Sol}(M)$ mean the original gauge-redundant **weak** solution space in one independently declared bundle, boundary and regularity sector. Use a stronger target only after a transmission regularity theorem. Let $\mathcal G_M^{\mathrm{prop}}$ preserve that sector and the fixed physical outer policy, with infinitesimal zero-charge gauge directions and explicitly declared allowed disconnected components. Vanishing charge accidentally at one field does not define properness. Physical outer/asymptotic large symmetries are excluded from this quotient; based large components can be proper as in the $1+1$ models.
+Let $\operatorname{Sol}(M)$ mean the original gauge-redundant solution space in one independently declared bundle, boundary and regularity sector. Weak and smooth categories are different theorem data; reaching a smooth target requires a transmission regularity proof. For the Maxwell $2+1$ dossier the physical target is fixed as $\operatorname{Sol}_{\rm sm}/\mathcal G_{\rm sm}^{\rm prop}$, and $\operatorname{Sol}_{\rm pw}$ is diagnostic only. Let $\mathcal G_M^{\mathrm{prop}}$ preserve that sector and the fixed physical outer policy, with infinitesimal zero-charge gauge directions and explicitly declared allowed disconnected components. Vanishing charge accidentally at one field does not define properness. Physical outer/asymptotic large symmetries are excluded from this quotient; based large components can be proper as in the $1+1$ models.
 
-Under Section 7(A), geometric assembly gives
+The master assembly is an **orbit-level geometric map on regional based classes**, once its choice independence is proved:
+
+$$\begin{align}
+\operatorname{Asm}_h:\mathcal B_h^{\rm geom}
+\longrightarrow\operatorname{Sol}(M)/\mathcal G_M^{\rm prop}.
+\end{align}$$
+
+Here $\mathcal B_h^{\rm geom}$ consists of original physically matched regional connections modulo a based equivalence justified in the chosen collar category. Further intrinsic cut arrows must still be quotiented for a two-sided orbit theorem. In a general theory an unrestricted based product is not automatically admissible. Raw piecewise concatenation is a diagnostic realization, not this definition. Gauge-fixed restoration may supply a section only after proving agreement with this independent map. Representative-valued formulas elsewhere in this note use $\widehat{\operatorname{Asm}}_h$ for a chosen lift; acting on it by a gauge map, imposing a slice, taking its saturation or pulling back an unreduced form refers to that lift.
+
+Under Section 7(A) and any required target-regularity proof, geometric assembly gives
 
 $$\begin{align}
 \mathscr A_h^\chi&\subset\mathcal C_{h,\mathrm{phys}}^\chi\times\operatorname{Sol}(M),\\
@@ -378,7 +387,7 @@ $$\begin{align}
 With fixed geometric identifications and auxiliary chart choices this can be represented by
 
 $$\begin{align}
-\operatorname{Asm}_h:\mathcal C_{h,\mathrm{phys}}^\chi\longrightarrow\operatorname{Sol}(M).
+\widehat{\operatorname{Asm}}_h:\mathcal C_{h,\mathrm{phys}}^\chi\longrightarrow\operatorname{Sol}(M).
 \end{align}$$
 
 If different allowed assemblies exist, prove they lie in one global proper orbit before using a single-valued orbit map. Their image need not lie in any global gauge slice. Forgetting auxiliary driver data can also make assembly noninjective without a physical ambiguity.
@@ -388,12 +397,12 @@ Bulk unfixing is the saturation
 $$\begin{align}
 \operatorname{Unfix}_h(\mathcal C_{h,\mathrm{phys}}^\chi)
 &:=\mathcal G_M^{\mathrm{prop}}\cdot
-\operatorname{Asm}_h(\mathcal C_{h,\mathrm{phys}}^\chi).
+\widehat{\operatorname{Asm}}_h(\mathcal C_{h,\mathrm{phys}}^\chi).
 \end{align}$$
 
 It restores proper gauge copies of the represented orbits, without identifying them and without adding missing orbits. Equality with the independently specified $\operatorname{Sol}(M)$ is a theorem target, not the definition of that target. The physical quotient is a later operation. No optional global slice from Section 6 is needed for this definition.
 
-**Claim level:** definitions; total weak assembly, independence of its choices, and orbit coverage remain separate proof obligations.
+**Claim level:** separate general proof obligations. In the Maxwell $2+1$ smooth finite-Fourier core, dossier Section 9 supplies original objects, based radial collar assembly, a smooth comparison lemma, complete intrinsic cut arrows and the two-sided orbit theorem. The full regional based product is legitimate there by the comparison proof, not because its independent jets patch as a raw global map.
 
 ## 9. Restriction, Assembly, Matched-Slice Equivalence, and CPS
 
@@ -416,7 +425,7 @@ $$\begin{align}
 \operatorname{Ob}(\mathcal R_h^\chi)&=\mathcal C_{h,\mathrm{phys}}^\chi,\\
 \operatorname{Hom}_{\mathcal R_h^\chi}(u,u')
 &:=\{g\in\mathcal G_M^{\mathrm{prop}}:
-\operatorname{Asm}_h(u')=(\operatorname{Asm}_h(u))^g\}.
+\widehat{\operatorname{Asm}}_h(u')=(\widehat{\operatorname{Asm}}_h(u))^g\}.
 \end{align}$$
 
 Both endpoints must satisfy the regional gauge/driver, boundary-domain and physical-matching conditions; intermediate fields along an active gauge path need not remain in a slice. Composition of $g:u\to u'$ and $g':u'\to u''$ is $gg'$, because $(A^g)^{g'}=A^{gg'}$; identity and inverse are $1$ and $g^{-1}$. Stabilizers are retained as automorphisms. Auxiliary realizations of the same physical field can be related even with $g=1$.
@@ -427,10 +436,12 @@ $$\begin{align}
 \boxed{u\sim_{\mathcal R_h^\chi}u'
 \ \Longleftrightarrow\
 \exists g\in\mathcal G_M^{\mathrm{prop}}:
-\operatorname{Asm}_h(u')=(\operatorname{Asm}_h(u))^g.}
+\widehat{\operatorname{Asm}}_h(u')=(\widehat{\operatorname{Asm}}_h(u))^g.}
 \end{align}$$
 
 This does not assume a fixed residual subgroup acts on the whole slice. Field-dependent residual transformations and multiple slice intersections are described by arrows with specified endpoints.
+
+For the cylinder, this induced description is now backed by the independent regional construction in dossier Section 9: objects are original based classes, and arrows are smooth wall-identity regional gauge pairs with equal group-valued cut traces, modulo based maps. Collar repair and the smooth comparison lemma give a global proper arrow; the converse is obtained by restricting a global arrow and undoing the two collar repairs. Thus faithfulness is proved in that core rather than inferred from the induced definition. The based-only object set is not the final orbit set.
 
 ### Two-Sided Master Theorem Schema
 
@@ -441,9 +452,9 @@ The following are independent requirements, not consequences of regional IBVP we
 3. **Two-sided compatibility.** The independently constructed relations satisfy, with nonempty compositions,
 
    $$\begin{align}
-   \operatorname{Asm}_h\circ\operatorname{Res}_h^\chi
+   \widehat{\operatorname{Asm}}_h\circ\operatorname{Res}_h^\chi
    &\sim_{\mathcal G_M^{\mathrm{prop}}}\operatorname{id}_{\operatorname{Sol}(M)},\\
-   \operatorname{Res}_h^\chi\circ\operatorname{Asm}_h
+   \operatorname{Res}_h^\chi\circ\widehat{\operatorname{Asm}}_h
    &\sim_{\mathcal R_h^\chi}\operatorname{id}_{\mathcal C_{h,\mathrm{phys}}^\chi}.
    \end{align}$$
 
@@ -451,7 +462,7 @@ The following are independent requirements, not consequences of regional IBVP we
 4. **Effective faithfulness.** The desired criterion is
 
    $$\begin{align}
-   \operatorname{Asm}_h(u)\sim_{\mathcal G_M^{\mathrm{prop}}}\operatorname{Asm}_h(u')
+   \widehat{\operatorname{Asm}}_h(u)\sim_{\mathcal G_M^{\mathrm{prop}}}\widehat{\operatorname{Asm}}_h(u')
    \quad\Longleftrightarrow\quad u\sim_{\mathcal R_h^\chi}u'.
    \end{align}$$
 
@@ -461,7 +472,7 @@ With (1)--(3), saturation and the equivalence-class quotient follow:
 
 $$\begin{align}
 \boxed{\mathcal G_M^{\mathrm{prop}}\cdot
-\operatorname{Asm}_h(\mathcal C_{h,\mathrm{phys}}^\chi)=\operatorname{Sol}(M)},\\
+\widehat{\operatorname{Asm}}_h(\mathcal C_{h,\mathrm{phys}}^\chi)=\operatorname{Sol}(M)},\\
 \boxed{\mathcal C_{h,\mathrm{phys}}^\chi/\mathcal R_h^\chi
 \simeq\operatorname{Sol}(M)/\mathcal G_M^{\mathrm{prop}}}.
 \end{align}$$
@@ -477,12 +488,14 @@ Only in a sector with a proved local slice theorem, invertible Faddeev--Popov op
 Allow variations of the admissible histories when restricting the completed original potentials to the physical matched locus. A fixed-history two-form alone omits those tangent directions. Under differentiability, exact action/potential additivity, compatible corner representatives and the physical outer flux policy, the target is
 
 $$\begin{align}
-\boxed{\operatorname{Asm}_h^*\Omega_M
+\boxed{\widehat{\operatorname{Asm}}_h^*\Omega_M
 =\left.(\Omega_1+\Omega_2+\Omega_{\mathrm{corner}}^h)
 \right|_{\mathcal C_{h,\mathrm{phys}}^\chi}}.
 \end{align}$$
 
 Each $\Omega_i$ here is the original completed regional form pulled back by $F_i^\chi$ on variable-history admissible families. Before a smooth-domain theorem, this line means equality evaluated on such differentiable families, not an unproved manifold pullback. The corner term includes $\delta[-\langle E_2^\perp,h^{-1}\delta h\rangle]$ for variable $h$, without double-counting terms already in $\Omega_i$. For fixed $h$, closed $S$ and compatible representatives it may vanish. Restricting further to $\mathcal C_{h,\chi_M}^{\chi,\mathrm{slice}}$ only selects representatives; it does not change the original CPS or introduce driver pairs.
+
+In the cylinder core, original Gauss and transmission make this form invariant and horizontal under both based equivalence and intrinsic common-cut arrows. The representative identity therefore descends to the geometric orbit map and is independent of differentiable collar choices. This is a two-form on admissible tangent classes, not a claim that the quotient is a Fréchet manifold. The smooth category and nondegenerate-mod-gauge tangent sector remain explicit theorem data.
 
 Infinitesimal matched directions which assemble to global proper gauge directions lie in the kernel:
 
@@ -494,7 +507,7 @@ $$\begin{align}
 
 Equality requires nondegeneracy modulo gauge, control of invisible auxiliary/assembly fibers, a regular sector and fixed physical outer policy. Disconnected proper transformations are equivalences, not tangent kernel vectors. A symplectomorphism of smooth quotients requires these further hypotheses. Hamiltonian intertwining likewise requires matching original boundary-work terms; it does not follow from mode normalization alone.
 
-**Claim levels:** framed Maxwell/Yang--Mills $1+1$ have exact reduced completeness, one-form and quotient results. Maxwell $3+1$ retains mode-level support only. The separate Maxwell $2+1$ kill test proves core weak patching and an explicit restored orbit/CPS construction, while disproving the unqualified raw smooth-gauge comparison. Identifying that restoration with geometric assembly remains conditional; the general master theorem is not upgraded.
+**Claim levels:** framed Maxwell/Yang--Mills $1+1$ have exact reduced completeness, one-form and quotient results. Maxwell $3+1$ retains mode-level support only. Dossier Section 9 proves the Maxwell $2+1$ geometric orbit theorem, complete regional arrows and original CPS on horizontal tangent classes, and identifies Coulomb restoration as a section modulo discrete proper copies. Its raw smooth-gauge counterexamples remain valid. General master-theorem and smooth quotient-manifold claims are not upgraded.
 
 ## 10. Active Cut Gauge Restoration as Reduction by Stages
 
@@ -541,7 +554,7 @@ Only abstract group exactness is tautological after these groups and restriction
 5. Spacetime regularity and required normal/mixed temporal jets for kernel patching. Identity on $\Gamma$ does not identify $\mathcal K_\Gamma$ with an unrestricted regional product.
 6. Compatibility with initial/final evaluations and sewn regional $\mathscr U_i^\chi$, including original constraints and boundary work. Equal-time quotient bijections do not establish evolution intertwining.
 
-No time-slab reduction theorem is asserted here. The cylinder test separately distinguishes smooth bulk extension from the smaller image represented by directly patchable regional Coulomb residuals.
+No general functional time-slab reduction theorem is asserted here. The cylinder dossier proves a smooth-core solution-history orbit correspondence and endpoint-compatible original CPS; it does not prove a general topological exact sequence or a completed evolution theorem. Its regional sequence with product based kernel is distinct from the global smooth restriction sequence above.
 
 For the framed $U(1)$ cylinder, an extendable cut map must have zero winding on $S^1$; on the slab its two $T^2$ winding classes must vanish. Necessity follows by restricting a bulk map to successive radial slices, a homotopy to the identity wall value. Under the smooth trivial product-collar policy these null-homotopic maps can be extended, but additional temporal, bundle or boundary restrictions can shrink the image. The $1+1$ point cut sees all of connected $G$ because a path joins every cut value to the identity.
 
@@ -710,7 +723,7 @@ The two trace layers and the two patching questions have different evidence:
 |---|---|---|---|---|
 | Maxwell $1+1$ | $E_1+E_2=0$ is the only transmission component | proved by based holonomy classification and direct connected representative | exact reduced benchmark, including declared based large components | Haar reduction and integer-flux Hamiltonian proved |
 | Yang--Mills $1+1$ | $\mu_1+\operatorname{Ad}_h^*\mu_2=0$ is the only component | proved in framed trivial-bundle/trivial-character sector | free diagonal reduction, canonical one-form and direct uncut agreement proved | exact Haar/Peter--Weyl and three-cell reduction; no field-valued continuum theorem |
-| Maxwell $2+1$ | Gauss: $E_{y,1}+E_{y,2}=0$; full adds $B_1+B_2=0$ | smooth restriction and weak reconstruction proved separately; raw smooth-orbit two-way claim fails | explicit restored core has orbit/CPS result; raw smooth-gauge quotient has extra kernel; geometric identification conditional | no cutoff-uniform gauge regulator or continuum algebra theorem |
+| Maxwell $2+1$ | Gauss: $E_{y,1}+E_{y,2}=0$; full adds $B_1+B_2=0$ | intrinsic collar assembly and original restriction give two-sided smooth-core orbit theorem | complete regional arrows and choice-independent CPS on horizontal tangents; Coulomb section identified; raw comparison still fails | no cutoff-uniform gauge regulator or continuum algebra theorem |
 | Maxwell $3+1$ | Gauss: $E_{y,1}+E_{y,2}=0$; full adds both $F_{ya,1}+F_{ya,2}=0$ | missing beyond separated-mode reconstruction | mode-level support only | same limitations; no independent regional-Fock equivalence |
 | YM-type second-order connection theory | distinct by original Green/Noether identities | conditional restriction and reconstruction schemas | conditional effective equivalence/CPS/kernel theorem | outlook only |
 
@@ -728,7 +741,7 @@ S_i^{\mathrm{inv}}&\longrightarrow
 \xrightarrow{\ (\rho_i^{\chi_i},P_{i,\mathrm{in}}^{\chi_i})\ }
 \mathcal Z_{i,\Gamma}^{\mathrm{inv}}\times\mathcal B_{i,\mathrm{in}}^{\chi_i},\\
 \prod_i\mathscr U_i^{\chi_i}&\longrightarrow\mathcal C_{h,\mathrm{phys}}^\chi
-\ \underset{\operatorname{Res}_h^\chi}{\overset{\operatorname{Asm}_h}{\rightleftarrows}}\
+\ \underset{\operatorname{Res}_h^\chi}{\overset{\widehat{\operatorname{Asm}}_h}{\rightleftarrows}}\
 \operatorname{Sol}(M),\\
 \mathcal C_{h,\chi_M}^{\chi,\mathrm{slice}}&\subseteq\mathcal C_{h,\mathrm{phys}}^\chi
 \quad\text{optional},\\
@@ -747,7 +760,7 @@ Restriction and assembly are relations until their choices are controlled. Passi
 
 **Conditional/open in the general theory or beyond the stated cylinder core:** actual enlarged trace domains and continuous $\rho$; regional constraint-preserving IBVP; physical weak patching and stronger regularity; optional global-slice patching; restriction coverage; effective regional arrow construction/extension; independence of assembly choices; CPS pullback and nondegeneracy modulo gauge; active restriction-kernel patching; gauge-fixing independence; continuum observable/center reconstruction and corners.
 
-**Not claimed:** a universal gauge IBVP, all-mapping-group extension, a universal residual group containing Gribov copies, a smooth continuum quotient, Maxwell regulator convergence, sharp regional-Fock factorization, automatic disappearance of an electric center, or a BRST/BV gluing theorem. The separately scoped Maxwell $2+1$ kill test remains `conditional`; no other model is started.
+**Not claimed:** a universal gauge IBVP, all-mapping-group extension, a universal residual group containing Gribov copies, a smooth continuum quotient, Maxwell regulator convergence, sharp regional-Fock factorization, automatic disappearance of an electric center, or a BRST/BV gluing theorem. The Maxwell $2+1$ smooth-core orbit/collar theorem is proved; its functional extensions and the general formalism remain conditional. No other model is started.
 
 ## Verification Boundary
 
@@ -758,3 +771,5 @@ Restriction and assembly are relations until their choices are controlled. Passi
 **Not verified:** general IBVP, enlarged trace-domain continuity/surjectivity, physical weak patching in a specified Sobolev class, optional global-slice patching, restriction completeness, effective regional groupoid faithfulness, gauge-kernel equality, or continuum observable/BRST/BV results. The separate cylinder dossier records its narrower passed/failed core claims; no general or completed-space theorem is inferred.
 
 **Verified (current cylinder test):** `maxwell-2p1-spatial-gluing-kill-test/verification/checks.wl` passed 30/30 exact witnesses; the existing Maxwell regression passed 20/20. The dossier supplies the analytical proofs and counterexamples. The earlier unretained local checks above are not counted in these totals.
+
+**Orbit/collar follow-up:** dossier Section 9 supplies the analytical choice-independence, intrinsic-arrow, restriction/assembly and CPS proofs. Nine added exact diagnostics passed; the original thirty were rerun separately. The preceding 20/20 mixed-model result belongs to the previous round. The cusp remains a smooth-category raw obstruction, although its parameter is Lipschitz; no Sobolev obstruction is inferred.

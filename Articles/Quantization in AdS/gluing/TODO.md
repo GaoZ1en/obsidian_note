@@ -90,11 +90,11 @@ Phases follow `roadmap.md`. Within a phase, items are ordered by what blocks wha
 
 ## Phase 2 — Gauge Theory and Corners
 
-The compact-\(1+1\) timelike benchmarks remain closed in their stated scope. The separately reopened Maxwell 2+1 spatial-gluing test is `conditional`; the unrelated null-characteristic branch in Phase 1 is unchanged.
+The compact-\(1+1\) timelike benchmarks remain closed in their stated scope. The Maxwell 2+1 smooth-core orbit/collar theorem is now proved, with functional extensions outside this task; the unrelated null-characteristic branch in Phase 1 is unchanged.
 
-- [ ] Action: identify a precise collar/geometric assembly on regional based classes with the explicit Coulomb-restored construction in `maxwell-2p1-spatial-gluing-kill-test/calculations.md`.
-  Context: physical distributional sewing and the smooth mixed realization pass; raw weak assembly modulo smooth global gauge fails stronger restriction/kernel claims. Smooth lift plus regional based re-fixing yields a separate positive core orbit/CPS result.
-  Check: prove assembly-choice independence and the map to the formalism's matched-slice relation in one declared functional category. Keep the cusp and piecewise-quadratic pure-gauge counterexamples; do not enlarge the gauge group or change target topology silently. No 3+1, high-dimensional non-Abelian, charged-matter or null test is part of this task.
+- [x] Action: identify intrinsic collar/geometric assembly on regional based classes with Coulomb restoration in `maxwell-2p1-spatial-gluing-kill-test/calculations.md`, Section 9.
+  Context: original solutions and based gauge define the objects; common-cut actions define intrinsic arrows. Radial collar integration and the smooth comparison lemma prove choice independence, both orbit directions and CPS on horizontal tangent classes.
+  Check: proved in the unchanged smooth finite-Fourier sector, including based large components and reachable fixed transitions. Both raw counterexamples remain. No quotient-manifold, Sobolev/energy, 3+1, high-dimensional non-Abelian, charged-matter or null theorem is included; no further branch is started.
 
 - [ ] Action: study the cylinder $[-L,L]\times S^1_R$ through its interface algebra rather than channel by channel.
   Context: reducing the cylinder to independent angular channels with effective mass $m_\ell^2=m^2+\ell^2/R^2$ discards its main new content. Its point is that the interface datum is a local field $q(t,\theta)$ and that radial and angular UV limits interact. A fixed-background scalar does not acquire a physical $\mathrm{Diff}(S^1)$ corner gauge group merely because its interface is a circle. The channel decomposition remains available as a computational device and cross-check.

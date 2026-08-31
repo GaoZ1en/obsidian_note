@@ -1,6 +1,6 @@
 # Spatial-Region Gauge Gluing Audit
 
-> Status: repaired A--Q audit plus a separately delimited Maxwell 2+1 core test; no general theorem upgrade. This file does not upgrade any conditional statement in the source notes to a theorem. It audits only a spatial partition of one spacelike Cauchy slice,
+> Status: repaired A--Q audit plus the proved Maxwell 2+1 smooth-core orbit/collar theorem; no general theorem upgrade. Model upgrades below refer to the explicit dossier proofs, not to formal definitions. This file audits only a spatial partition of one spacelike Cauchy slice,
 >
 > $$\begin{align}
 > \Sigma&=\Sigma_1\cup_S\Sigma_2,
@@ -11,7 +11,7 @@
 
 ## Executive Verdict
 
-**The action-first algebra and exact framed $1+1$ reductions remain supported; a general spatial gauge-gluing theorem remains unproved.** Maxwell $3+1$ still supplies mode-level support only. The separate Maxwell $2+1$ kill test now supplies distributional and smooth-core proofs, plus raw-assembly counterexamples; see the current kill-test section below. The repaired `spatial gauge gluing formalism.md` now separates two trace spaces, physical and optional slice patching, passive frames and active gauge, and restriction from assembly. These are definition repairs, not new PDE or quotient results.
+**The action-first algebra and exact framed $1+1$ reductions remain supported; a general spatial gauge-gluing theorem remains unproved.** Maxwell $3+1$ still supplies mode-level support only. The Maxwell $2+1$ dossier now proves intrinsic collar assembly, choice independence, complete regional arrows, the two-sided smooth-orbit theorem and CPS on horizontal tangent classes, while retaining both raw counterexamples. The general architecture repairs are definitions; this bounded model upgrade rests on the separate analytical proofs in dossier Section 9.
 
 The first draft had five structural defects: its incoming map was defined on the original variational trace; its physical matched locus required a global gauge slice; a single residual group purported to contain all Gribov intersections; its variable-transition quotient conflated passive presentation and active reduction; and its electric-center statement did not distinguish Abelian from non-Abelian flux. Those formulations are replaced below. An additional logical safeguard is explicit: defining matched-slice equivalence by global orbit equality makes the corresponding faithfulness criterion tautological; an effective regional construction of the arrows still needs proof.
 
@@ -201,7 +201,7 @@ Four operations must be separated:
 | Cauchy-data compatibility/spatial assembly | $S\subset\Sigma$ | connection descent of spatial trace plus distributional Gauss compatibility | exact after (1+1) holonomy reduction; implicit in higher-dimensional mode reconstruction, without a Sobolev theorem |
 | full timelike transmission | $\Gamma=I\times S$ | all components of $\Pi_1+\operatorname{Ad}_h^*\Pi_2=0$ | derived from the original action; mode-realized in Maxwell (2+1/3+1) |
 | Cauchy-cut Gauss moment map | $S\subset\Sigma$ | $E_1^\perp+\operatorname{Ad}_h^*E_2^\perp=0$ | exact in (1+1); explicitly distinguished in higher-dimensional Maxwell |
-| gauge reduction | Cauchy phase space | active global proper equivalence; matched-slice groupoid on realized data | exact finite-dimensional (1+1); only conditional/general in higher dimensions |
+| gauge reduction | Cauchy phase space | active global proper equivalence; matched-slice groupoid on realized data | exact (1+1), plus the declared (2+1) smooth tangent core; general/completed versions conditional |
 
 In (1+1), there is no independent tangential spatial connection component on the point (S). The full worldtube momentum is the normal electric datum, so timelike transmission and the Gauss moment map coincide. In Maxwell (2+1), full transmission is
 
@@ -306,7 +306,7 @@ A gauge-condition jump is not an original Euler--Lagrange source. Conversely, ab
 
 ## J. Restriction Completeness and Reconstruction Completeness
 
-**Verdict: the two directions are now explicitly formulated; outside the exact reduced $1+1$ benchmarks they remain missing.**
+**Verdict: both directions are proved for the exact reduced $1+1$ benchmarks and the Maxwell $2+1$ smooth-core orbit/collar theorem; general and completed-domain versions remain missing.**
 
 $\operatorname{Res}_h^\chi\subset\operatorname{Sol}(M)\times\mathcal C_{h,\mathrm{phys}}^\chi$ is a restriction/gauge-fix relation constructed from global proper representatives, restrictions, regional allowed transformations, induced transition data, auxiliary realizations and admissible domains. It is not defined as the inverse of assembly. Its proof obligations are:
 
@@ -321,7 +321,7 @@ $\operatorname{Res}_h^\chi\subset\operatorname{Sol}(M)\times\mathcal C_{h,\mathr
    &\sim_{\mathcal R_h^\chi}\operatorname{id}_{\mathcal C_{h,\mathrm{phys}}^\chi}.
    \end{align}$$
 
-Only then does the saturation equality summarize coverage; it cannot hide which analytic direction failed. A kinematic patching placeholder must be replaced by actual regularity/trace hypotheses, not by defining admissibility to mean “already reconstructible.” No optional global hyperbolic gauge is needed for these physical targets. Regional IBVP well-posedness alone proves neither direction, and no new test of either direction is performed in this repair.
+Only then does the saturation equality summarize coverage; it cannot hide which analytic direction failed. A kinematic patching placeholder must be replaced by actual regularity/trace hypotheses, not by defining admissibility to mean “already reconstructible.” No optional global hyperbolic gauge is needed for these physical targets. Dossier Section 9 restricts arbitrary original smooth representatives and constructs assembly by based radial collar integration. Its two-sided statement uses regional based classes **and** common-cut arrows. Regional IBVP well-posedness alone proves neither direction.
 
 ## K. Matched-Slice Equivalence, Stabilizers, and Gribov Intersections
 
@@ -339,13 +339,15 @@ Both endpoints obey the regional gauge, driver and boundary-domain conditions; a
 
 For this induced definition, “assemblies are gauge equivalent iff the regional objects are related” is a definition-level fact, **not a new faithfulness theorem**. Effective faithfulness requires independently constructing regional arrows, proving that they patch to global proper transformations, and proving that all global equivalences of assemblies are obtained. A boundary-value match alone may not patch the required normal jets.
 
+Dossier Section 9 supplies that independent construction for the cylinder. Regional wall-identity maps with equal cut phases define the arrows first; comparing the two smooth collar outputs proves that the resulting comparison maps patch smoothly. Conversely a global arrow restricts and can be conjugated by the collar repairs to recover a regional arrow. The based product used here is not asserted to patch in the raw frame.
+
 Only a proved local slice theorem, invertible FP operator modulo declared residual directions, absence of additional copies in the neighborhood, controlled auxiliary fibers and a fixed domain-preserving residual subgroup allow an ordinary $\mathcal G_{\mathrm{res},h}^\chi$ quotient. FP invertibility alone does not give global uniqueness. Reducible strata require separate treatment.
 
 The framed $1+1$ holonomy models independently prove free diagonal actions and unique representatives (Yang--Mills: $U_2=1$). Those exact group quotients remain valid; they do not prove the analogous slice claim for the higher-dimensional Maxwell representatives.
 
 ## L. Original CPS Compatibility and Kernel
 
-**Verdict: exact in the framed reduced $1+1$ models; conditional on admissible variations and regularity in general; higher-dimensional theorem missing.**
+**Verdict: exact in the framed reduced $1+1$ models and proved on horizontal tangent classes in the Maxwell $2+1$ smooth core; conditional on admissible variations and regularity in general.**
 
 The repaired target is
 
@@ -443,9 +445,9 @@ Variable-$h$ product-frame identification is first passive presentation redundan
 | G | $1+1$ exact reduced benchmark; higher-dimensional coverage missing | saturation of physical assemblies cannot create omitted orbits |
 | H | unrestricted mapping-group reduction false | use the actual proper restriction image and compatible bulk extension class |
 | I | two conditional patching schemas | gauge-condition defects are not original Euler--Lagrange surface sources |
-| J | two-sided schemas formulated; analytic theorem missing outside $1+1$ | restriction and reconstruction must be proved independently on fixed domains |
-| K | universal residual-group claim withdrawn | induced groupoid is defined; effective regional faithfulness is not proved by that definition |
-| L | $1+1$ one-forms exact; full higher-dimensional CPS missing | gauge directions lie in the kernel; equality needs nondegeneracy modulo gauge and no extra fibers |
+| J | two-sided theorem in $1+1$ and the $2+1$ smooth core; conditional generally | original restriction and non-Coulomb collar assembly proved independently on fixed domains |
+| K | intrinsic $2+1$ arrows proved complete; universal residual-group claim withdrawn | regional map/cut definition, smooth comparison lemma and converse; not induced orbit equality |
+| L | $1+1$ exact; $2+1$ CPS on horizontal tangent classes proved | choice independence and kernel equality only in the stated nondegenerate-mod-gauge sector; no smooth quotient manifold |
 | M | unrestricted non-Abelian electric-center claim false | raw flux generates the cut algebra; invariant sector labels depend on the chosen algebra |
 | N | outlook only | no BRST/BV complex or gluing theorem |
 | O | exact interval chain; general corners missing | original joint traces/physical patching first; unified gauge slice optional |
@@ -479,15 +481,17 @@ Defining a locus, relation, image or quotient does not change a missing analytic
 
 ## Minimal Kill Tests
 
-**Maxwell 2+1 was executed in this round; overall verdict `conditional`.** The independent dossier is `maxwell-2p1-spatial-gluing-kill-test/`, with calculations, claim ledger and reproducible checks. Maxwell 3+1 remains deferred. The following outcomes supersede the older cylinder-only missing/model-level entries above; general and completed-domain claims remain conditional.
+**Maxwell 2+1: proved for the bounded smooth finite-Fourier orbit/collar theorem.** The independent dossier is `maxwell-2p1-spatial-gluing-kill-test/`, especially Section 9. Maxwell 3+1 remains deferred. The following outcomes supersede the older cylinder-only missing/model-level entries above; general and completed-domain claims remain conditional.
 
 ### Kill Test 1: Maxwell $2+1$ Physical Restriction and Assembly
 
-Passed: explicit smooth mixed realization, full distributional sewing equivalence, smooth global restriction, weak raw reconstruction and original CPS additivity. Failed: unrestricted raw smooth-orbit reconstruction, direct global Coulomb membership and kernel equality with only smooth directly patching residuals. The flat pure-gauge cusp $A=d[\beta(1-|x|/L)]$ is an explicit witness. An independently constructed Coulomb-restored assembly has a set-level orbit/CPS/kernel result with smooth-lift plus regional based re-fixing arrows. It is not smoothly gauge equivalent to raw assembly on the whole piecewise target. Identifying it with geometric assembly, including choice independence, is the remaining gate; no target topology is changed.
+Passed: original smooth restriction and intrinsic based-class collar assembly, full admissible-choice independence, complete regional arrows, two-sided orbit theorem and original CPS on horizontal tangent classes. The collar definition uses radial integration, not Coulomb/DtN; restoration is proved to be its section modulo discrete proper copies. Failed and retained: raw smooth-orbit reconstruction, direct Coulomb membership and raw kernel equality, with both the cusp and piecewise-quadratic counterexamples. The physical target is only $\operatorname{Sol}_{\rm sm}/\mathcal G_{\rm sm}^{\rm prop}$; $\operatorname{Sol}_{\rm pw}$ is diagnostic. Neither topology nor gauge group is changed.
 
 ### Kill Test 2: Active Extension Image
 
-Cylinder result: the smooth proper image is exactly $\operatorname{Map}_0(S^1,U(1))$. Direct smooth Coulomb residuals instead give $\lambda_n=\pi n(x+L)/L$, with cut image $\{\pm1\}$. Full cut actions require a smooth lift followed by regional based re-fixing. The two arrow constructions are complete for their respective raw/restored assembly maps, but cannot be interchanged. Independent based regional normal jets do not automatically patch. The slab calculation remains deferred.
+Cylinder result: the smooth proper image is exactly $\operatorname{Map}_0(S^1,U(1))$, with smooth time histories and the finite-Fourier-preserving subgroup distinguished. Intrinsic regional arrows are wall-identity pairs with equal cut phases; their images and converse completeness are proved by the smooth comparison lemma. Active stabilizers are trivial. Direct smooth Coulomb residuals still give only $\lambda_n=\pi n(x+L)/L$, with cut image $\{\pm1\}$. The regional product based equivalence is valid after collar repair, but is not the global smooth restriction kernel. The separate Maxwell $3+1$ slab calculation remains deferred.
+
+The cusp parameter is Lipschitz/$W^{1,\infty}$ and removes the raw cusp in a category permitting that gauge. Its failure under globally smooth gauge is a representative/category obstruction, not a physical sewing failure; the theorem does not assert the same obstruction in Sobolev quotients. A bare integral change of the restoring real $f$ is not harmless unless the accompanying based re-fixing is retained.
 
 ### Kill Test 3: Maxwell $3+1$ Polarization Completeness
 
@@ -511,4 +515,4 @@ A failed restriction or reconstruction direction is a reason to narrow the claim
 
 **Not verified in the general theory:** a concrete enlarged hyperbolic IBVP theorem, completed-domain patching, restriction completeness, effective regional groupoid faithfulness, geometric assembly-choice independence, full CPS kernel equality, continuum observable/center or BRST/BV reconstruction. The cylinder dossier states its narrower core results and failures. Research Radar and the excluded model branches were not modified.
 
-**Verified (current cylinder test):** 30/30 new exact witnesses and 20/20 existing Maxwell checks passed. Analytical distributional, harmonic, extension and orbit arguments are in the dossier; symbolic success is not their proof. The current verdict remains `conditional`, not a completed Maxwell spatial-gluing theorem.
+**Verified:** the prior round's 30/30 exact witnesses were rerun; the orbit/collar follow-up adds 9/9 exact diagnostics. The earlier 20/20 mixed-model benchmark is historical to the prior round. Dossier Section 9 gives the analytical choice-independence, intrinsic-arrow, two-sided orbit and CPS arguments; symbolic success is not their proof. Verdict: proved in this smooth core; general functional and quotient-manifold claims remain conditional.

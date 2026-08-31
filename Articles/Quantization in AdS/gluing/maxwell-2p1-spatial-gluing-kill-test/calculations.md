@@ -12,7 +12,7 @@ Three different objects must remain distinct:
 2. $\operatorname{Sol}_{\rm pw}$: locally bounded piecewise smooth potentials in that same frame, with $F=dA$ locally square-integrable, the original Maxwell equations interpreted as distributions, and no interface action. The same smooth proper group acts here. This is an independent distributional diagnostic class, not the image definition of a target space.
 3. Regional Coulomb realizations with varying admissible histories. Their literal common-frame assembly is denoted $\operatorname{Asm}_{\rm raw}$. A separately constructed **Coulomb-restored assembly** $\operatorname{Asm}_{\rm C}$ appears in Section 5. It includes regional based re-fixing and is not identified with $\operatorname{Asm}_{\rm raw}$ modulo smooth global gauge.
 
-This distinction is decisive: a continuous piecewise smooth gauge function with a normal derivative jump is not a smooth global gauge transformation. A collar/trivialization construction might represent the same physics differently, but must be specified. We do not silently enlarge the gauge group to make either comparison onto.
+This distinction is decisive: a continuous piecewise smooth gauge function with a normal derivative jump is not a smooth global gauge transformation. Section 9 specifies the fourth object, intrinsic geometric assembly on regional based classes with cut arrows, and proves its agreement with restoration at orbit level. The physical target is only $\operatorname{Sol}_{\rm sm}/\mathcal G_{\rm sm}^{\rm prop}$; $\operatorname{Sol}_{\rm pw}$ and its smooth-gauge comparison remain diagnostics. We do not enlarge the gauge group to make either comparison onto.
 
 ## 1. B1: action, two traces, and a mixed realization
 
@@ -260,7 +260,7 @@ $$\begin{align}
 \simeq\operatorname{Sol}_{\rm sm}/\mathcal G_{\rm sm}^{\rm prop}
 \end{align}$$
 
-as sets of solution orbits on this slab. This proves an **explicit restored realization**, not the false raw smooth-orbit equivalence. It preserves the chosen smooth global gauge group and does not put a final topology on its image. It also does not prove that an unspecified collar assembly in the general formalism is choice-independent or agrees with this construction. That identification must be stated before importing this result into the master theorem.
+as sets of solution orbits on this slab. This proves an **explicit restored realization**, not the false raw smooth-orbit equivalence. It preserves the chosen smooth global gauge group and does not put a final topology on its image. Section 9 independently constructs a specific geometric collar assembly and proves its choice independence and agreement with this construction. An unspecified general-theory assembly still has no such theorem.
 
 ## 6. B6: original CPS and its kernel
 
@@ -348,6 +348,282 @@ The old regression is a sign/normalization cross-check only. In particular its f
 
 The physical distributional and core mixed-realization tests pass. The unqualified raw smooth-gauge assembly/quotient claim fails; its missing normal regularity also creates an extra CPS kernel. A concrete restored assembly, including smooth lift plus regional based re-fixing, has been constructed and proved to give a set-level orbit correspondence and CPS/kernel result in the declared smooth finite-Fourier sector.
 
-**Overall status: conditional; do not mark the general Maxwell spatial-gluing theorem complete.** To use the positive result as the general formalism's $\operatorname{Asm}_h$ and $\mathcal R_h^\chi$, explicitly identify this restored construction with a collar/geometric assembly on regional based classes, including assembly-choice independence and the chosen functional category. The raw and restored maps are not interchangeable under smooth proper gauge on $\operatorname{Sol}_{\rm pw}$. No weaker topology or enlarged gauge group was adopted to hide this difference.
+**Overall status: proved for the bounded smooth-core orbit theorem in Section 9; general/functional extensions remain conditional.** Regional based classes with independently defined common-cut arrows give intrinsic geometric assembly, choice independence, two-sided orbit correspondence and original CPS on horizontal tangent classes. Coulomb restoration is its section modulo the residual discrete proper copies. This closes the geometric-identification gate of commit 22e420be, not a smooth quotient-manifold or completed Maxwell theorem. The raw and restored maps remain noninterchangeable under smooth proper gauge on $\operatorname{Sol}_{\rm pw}$. No weaker topology or enlarged gauge group was adopted.
 
-The next bounded step is that identification, with the two counterexamples kept as regression obstructions. No Maxwell $3+1$, high-dimensional non-Abelian theory, energy completion, quantum quotient, or null composition is needed for it.
+The orbit-level identification is supplied in Section 9 below, without changing either counterexample or the global smooth gauge group. No Maxwell $3+1$, high-dimensional non-Abelian theory, energy completion, quantum quotient, or null composition is needed for it.
+
+## 9. Intrinsic collar assembly on regional based classes
+
+**Re-derived here; proved in the Section 0 smooth finite-Fourier sector.** The physical target is always
+$\mathcal Q_{\rm sm}:=\operatorname{Sol}_{\rm sm}/\mathcal G_{\rm sm}^{\rm prop}$.
+$\operatorname{Sol}_{\rm pw}$ is only a distributional diagnostic category. This section does not identify its smooth-gauge quotient with $\mathcal Q_{\rm sm}$.
+The result is a bijection of equivalence classes and an identity of original two-forms on admissible tangents modulo vertical directions, not a smooth quotient-manifold theorem.
+
+### 9.1. Original regional objects and the two distinct quotients
+
+Let $\mathcal M_h$ consist of pairs of original solutions $(A_1,A_2;h)$, not necessarily in any PDE gauge. Each is smooth as a one-form on its closed regional slab in the usual manifold-with-boundary sense, with finite angular Fourier support, all original equations, fixed $A_t=A_s=0$ physical-wall frames, and the same temporal endpoint policy as Section 0. In a fixed reachable chart $h=e^{i\varphi}$, impose
+
+$$\begin{align}
+a_2&=a_1+d_\Gamma\varphi,&
+E_{y,1}+E_{y,2}&=0,&B_1+B_2&=0.
+\end{align}$$
+
+These hold as smooth histories on the whole closed $\Gamma$, not just at one time. One-sided derivatives of every order exist; all original equations and their differentiated boundary identities hold up to the closures. No matching of the potential's normal jets is assumed. This is the sufficient trace/collar regularity. The bundle, wall frames and relative sector are unchanged. Reachability means zero angular winding and a smooth periodic real lift with finite-Fourier derivatives; Section 9.3 transfers the proof from $h=1$. Every physically matched pair of Coulomb realizations in Section 1 is an object; conversely Section 9.6 supplies a regional based Coulomb realization of every such original object.
+
+Write $\mathcal G_i^{\rm w}$ for smooth regional maps equal to $1$ at the physical wall, preserving the core, and
+
+$$\begin{align}
+\mathcal G_i^0&=\{g_i\in\mathcal G_i^{\rm w}:g_i|_\Gamma=1\},&
+\mathcal B_h&:=\mathcal M_h/(\mathcal G_1^0\times\mathcal G_2^0).
+\end{align}$$
+
+Each group is defined on its own closed region. A wall-normalized real logarithm has zero angular winding; for a based map its cut value is $2\pi m_i$, where $m_i\in\mathbb Z$ is constant in $(t,s)$. All these components are retained. There is **no assertion** that independent based maps patch in the original common frame. Section 9.3 proves that their product nevertheless acts as an equivalence on the geometric construction. It is not identified with the restriction kernel of the global smooth group.
+
+The based classes $\mathcal B_h$ still remember the active cut frame. Define the regional group
+
+$$\begin{align}
+\mathcal K_h&=\{(g_1,g_2)\in\mathcal G_1^{\rm w}\times\mathcal G_2^{\rm w}:
+g_1|_\Gamma=g_2|_\Gamma\},\\
+\mathcal H_\Gamma&=\{e^{if(t,s)}:\ f\text{ smooth, periodic, finite-Fourier}\}.
+\end{align}$$
+
+For Abelian fixed $h$, equality of cut phases is precisely its stabilizer condition. The group action preserves original descent, full transmission and the history family. Its definition refers only to regional fields/maps and cut values, with no reference to global orbit equality. There is an exact **regional** sequence
+
+$$\begin{align}
+1\longrightarrow\mathcal G_1^0\times\mathcal G_2^0
+\longrightarrow\mathcal K_h\longrightarrow\mathcal H_\Gamma\longrightarrow1.
+\end{align}$$
+
+Surjectivity follows by choosing $g_i=\exp(i b_i(y_i)f)$ with $b_i=0$ near the wall and $1$ near the cut. Two such choices differ by regional based maps, so $\mathcal H_\Gamma$ acts unambiguously on $\mathcal B_h$. Define $\mathcal C_{\rm reg}^{\rm geom}$ to be this action groupoid: its objects are $\mathcal B_h$ and an arrow is a cut map with its induced regional action. The final regional orbit set is
+
+$$\begin{align}
+\mathcal Q_{\rm reg}^{\rm geom}
+:=\pi_0\mathcal C_{\rm reg}^{\rm geom}
+=\mathcal B_h/\mathcal H_\Gamma
+=\mathcal M_h/\mathcal K_h.
+\end{align}$$
+
+**Necessary correction to the based-only formulation.** Restricting a global proper orbit does not select one element of $\mathcal B_h$: a smooth global $e^{ib(x)f(t,s)}$ can change its cut history, which based maps cannot change. Restriction is well defined into $\mathcal Q_{\rm reg}^{\rm geom}$. Assembly is defined already on $\mathcal B_h$, but is not injective there. These are two actual reductions, not two notations for the same quotient.
+
+The unrestricted smooth extension image remains $\operatorname{Map}_0(S^1,U(1))$ at each time; on the slab it consists of smooth zero-angular-winding histories, since $I$ is an interval and no endpoint-identity condition is imposed. $\mathcal H_\Gamma$ is its core-preserving subgroup. This does not shrink the global equivalence relation: if two finite-Fourier smooth potentials are related by a smooth proper $g$, then $-ig^{-1}dg$ is finite-Fourier. Integrating its $x$ component from the identity left wall gives a finite-Fourier logarithm of $g$. Thus the full smooth group gives the same equivalences between these objects.
+
+### 9.2. A geometric assembly defined without Coulomb or DtN
+
+First set $h=1$ and use common $x$ components. Descent implies $[E_s]=0$; full transmission implies $[E_x]=[B_x]=0$. Section 5's original first-order identities
+
+$$\begin{align}
+\partial_xE_x=-\partial_sE_s,\qquad
+\partial_xB_x=\partial_tE_s,\qquad
+\partial_xE_s=\partial_tB_x+\partial_sE_x
+\end{align}$$
+
+then imply matching of all normal jets of $F$. More explicitly, if the order-$r$ normal traces match as smooth $(t,s)$ functions, apply $\partial_x^r$ to these three equations and differentiate the equal traces tangentially to obtain order $r+1$. Induction starts at $r=0$. Piecewise smooth functions with all these matching jets glue to a smooth function; the same holds for all mixed derivatives and at $t_\pm$. Denote the resulting smooth two-form by $F$. It equals the original regional curvature everywhere, not just at the cut.
+
+Choose a product collar and a smooth cutoff $\chi(x)$ equal to $1$ near $0$ and $0$ outside a slightly larger interior collar. On each side set
+
+$$\begin{align}
+u_i&=e^{i\lambda_i},&
+\lambda_i(t,x,s)&=-\chi(x)\int_0^x A_{i,x}(t,\xi,s)\,d\xi,\\
+\bar A_i&=A_i+d\lambda_i.
+\end{align}$$
+
+Each $\lambda_i$ is smooth on its own closed region, zero at the cut and near the physical wall, and finite-Fourier. Thus $u_i\in\mathcal G_i^0$. No smoothness of the *piecewise* $\lambda_i$ is asserted. On the smaller collar, for $a=t,s$,
+
+$$\begin{align}
+\bar A_x&=0,&
+\bar A_a(t,x,s)&=a_a(t,s)+\int_0^x F_{xa}(t,\xi,s)\,d\xi.
+\end{align}$$
+
+Indeed $\partial_x\bar A_a=\partial_xA_a-\partial_aA_x=F_{xa}$ and $\bar A_a(0)=a_a$. In particular $F_{xt}=-E_x$; the temporal component is included. The right hand side is one smooth connection on a whole collar. Extend the two corrected charts over this common collar and use this same connection on their overlap. Away from it use $\bar A_i$. These agree, and define a global smooth $A_{\rm gl}$ in the retained global wall frame. The construction preserves finite angular support because all cutoffs depend only on $x$.
+
+On each region $d\bar A_i=dA_i$, so the global curvature is exactly $F$. Original Maxwell equations hold on both interiors and by smoothness also on the interface. Equivalently Section 2 removes every distributional source and the normal-jet argument upgrades the curvature/connection to smoothness. The walls are unchanged, and all statements hold on the original time slab. No extension of dynamical data outside that slab, approximation to $F$, or existence of a global Coulomb representative is used.
+
+For now this produces $A_{\rm gl}$ from choices. After the following independence proof it defines
+
+$$\begin{align}
+\operatorname{Asm}_{\rm geom}:\mathcal B_h\longrightarrow\mathcal Q_{\rm sm},
+\qquad [(A_1,A_2;h)]_{\rm based}\longmapsto[A_{\rm gl}]_{\rm proper}.
+\end{align}$$
+
+It is constant on the arrows of $\mathcal C_{\rm reg}^{\rm geom}$ and hence factors through $\mathcal Q_{\rm reg}^{\rm geom}$.
+
+### 9.3. Comparison lemma and assembly-choice independence
+
+**Smooth comparison lemma.** Suppose $C,D$ are globally smooth one-forms and $v_i$ are smooth regional $U(1)$ maps such that $D|_{M_i}=C|_{M_i}-iv_i^{-1}dv_i$. If $v_1|_\Gamma=v_2|_\Gamma$, their value-wise union is a smooth global map.
+
+**Proof.** Put $B=D-C$. In a collar both maps solve $\partial_xv_i=iB_xv_i$ with the same smooth initial value $k(t,s)$ at $x=0$. The unique solution is
+
+$$\begin{align}
+v(t,x,s)=k(t,s)\exp\!\left(i\int_0^x B_x(t,\xi,s)\,d\xi\right).
+\end{align}$$
+
+It is smooth in all variables and agrees with both one-sided maps. This proves all normal and mixed jet matching, not just continuity. Away from the collar they were smooth already. If the regional maps equal $1$ on their physical walls, the resulting global map is proper. $\square$
+
+An **admissible assembly choice** means smooth regional gauge changes, identity at the physical walls, which convert the given regional connections into one smooth connection across the cut. In the common chart their cut phases must agree; based choices are sufficient and were explicitly constructed above. More generally for $h=e^{i\varphi}$ their phases $u_i|_\Gamma$ must obey $u_2|_\Gamma=h^{-1}u_1|_\Gamma$. The connection must stay in the declared core. This is a local condition on representatives and frame transitions, not a definition by global orbit equality.
+
+In particular, interpolation is permitted for gauge/trivialization data only: on **each entire original region** the output must be a gauge transform of the input satisfying these conditions. An arbitrary interpolation of potentials or curvatures is not allowed. Merely requiring a smooth Maxwell field with the same cut traces would permit changing bulk data or a framed Wilson line and would not define assembly. The radial construction proves that the admissible-choice class is nonempty for every object; nonemptiness is not assumed in $\mathcal M_h$.
+
+If choices $u_i$ and $u_i'$ give smooth $C$ and $D$, their ratio $v_i=u_i^{-1}u_i'$ has equal cut phases (also for fixed nontrivial $h$) and is identity on the walls. Apply the lemma to obtain
+$D=C^v$ with $v\in\mathcal G_{\rm sm}^{\rm prop}$.
+This proves independence of collar widths, gauge cutoffs, smooth extensions of frames into the overlap, and every admissible interpolation, not only of the particular radial formula. Allowing a common nonbased cut value gives the same global orbit; it changes the intermediate based object by an intrinsic arrow.
+
+If the input representatives change by $b_i\in\mathcal G_i^0$, and the new outputs use $u_i'$, compare $u_i$ with $b_i u_i'$. Their cut phases still agree. The same lemma proves that assembly descends to the **full** product based quotient. Arbitrary incompatible based jets were never patched directly: smoothness of the two final connections proves smoothness of their comparison gauge. This does not alter the counterexamples or the actual global restriction kernel.
+
+For reachable fixed $h$, choose a smooth regional extension $\widetilde\varphi$ on region 2, zero at its wall and equal to $\varphi$ at the cut. Replace $A_2$ by $A_2-d\widetilde\varphi$ and use the common-frame construction. Such an extension is provided by $b_2(y_2)\varphi(t,s)$. Two extensions of the same lift differ by a based map. If $\varphi$ changes to $\varphi+2\pi m$, the two group-valued extensions still agree at the cut and the wall; their ratio is based, including a possibly nonzero large component. The preceding proof applies.
+
+More generally a reachable passive re-presentation is
+$(A_i,h)\mapsto(A_i^{r_i},r_1^{-1}hr_2)$, with specified regional smooth, wall-identity frame maps preserving the core. Composing its flattening/assembly maps with $r_i$ gives admissible choices for the original presentation. The lemma again supplies the same global proper orbit. This is invariance under presentation changes, not a charge assignment to passive frames.
+
+All comparison maps have zero angular winding because each is connected radially to an identity wall. For a common-frame pair choose logarithms zero at their respective walls and write their common cut lifts as $q(t,s)+2\pi m_i$. The integers are constant on the connected slab. A global logarithm is obtained by adding $2\pi(m_1-m_2)$ to the right regional logarithm. Its endpoint difference is $2\pi n$ with $n=m_1-m_2$. Thus the comparison can be a **global smooth proper large transformation**, which is already included in the target group. Time-dependent $q$ is allowed; there is no temporal-period winding or endpoint-identity requirement. Finite-Fourier preservation follows either from these logarithms or from the smooth difference $D-C$ as in Section 9.1.
+
+The framed radial Wilson phase supplies a useful independent sector check:
+
+$$\begin{align}
+W(t,s)=\exp i\!\left(\int_0^L A_{y,1}\,dy_1-\int_0^L A_{y,2}\,dy_2+\varphi(t,s)\right).
+\end{align}$$
+
+Common cut changes cancel, and based large changes shift the exponent by $2\pi(m_1-m_2)$. Reachable passive frame changes cancel against the change of $\varphi$. Assembly retains this phase. In particular no continuous flat Wilson mode has been discarded.
+
+### 9.4. Intrinsic arrows, their completeness and stabilizers
+
+Fix any based collar assembly choices for each original object, denoted $u_i(A)$ in the common chart. For fixed nontrivial $h$, include the same recorded flattening convention, so the total cut values are $1,h^{-1}$. A regional arrow $(g_1,g_2)\in\mathcal K_h$ with $A_i'=A_i^{g_i}$ compares the assembled fields by
+
+$$\begin{align}
+v_i=u_i(A)^{-1}g_i u_i(A').
+\end{align}$$
+
+The two $v_i$ agree at the cut. Since both assemblies are smooth, the comparison lemma glues them to one smooth proper global $v$. This proves that every independently defined regional arrow has a global image. Changing assembly choices changes this realization by the smooth comparison maps of Section 9.3; the orbit map is independent. Composition follows from multiplication of the regional maps and cancellation of the intermediate $u_i$.
+
+Conversely, suppose $A_{\rm gl}'=A_{\rm gl}^{v}$ for a smooth global proper $v$. Define solely on the two original regions
+
+$$\begin{align}
+g_i=u_i(A)\,v|_{M_i}\,u_i(A')^{-1}.
+\end{align}$$
+
+Then $A_i'=A_i^{g_i}$, the maps are wall-identity, and their cut phases agree. Hence $(g_1,g_2)\in\mathcal K_h$. They preserve the core by the logarithmic-derivative argument. This proves every global equivalence is captured, without defining $\mathcal K_h$ by that equivalence. Passing to based classes leaves exactly its cut arrow in $\mathcal H_\Gamma$.
+
+There are no active proper stabilizers here: $A_i^{g_i}=A_i$ implies $dg_i=0$, and its identity wall fixes the constant to $1$. If a cut map fixes a based class, divide its representatives by the based maps witnessing that equality; the same argument forces its cut value to $1$. Thus the action on $\mathcal B_h$ is free. Global proper stabilizers are also trivial. Integer changes of real logarithm are presentation redundancy, not new stabilizers or infinitesimal kernel vectors.
+
+On the regional Coulomb realization, an intrinsic arrow is represented after based re-fixing by
+$\lambda_i=H(f_0+2\pi m_i)$ as in Section 4. Indeed a smooth wall-proper lift with cut $e^{if_0}$ and its harmonic representative differ by a based map. These restored arrows are therefore the realization of the regional groupoid just defined. Directly patchable smooth harmonic pairs remain only the slice-preserving subgroup $\lambda_n$ of Section 4, with its restricted cut image. Their smaller image is not the intrinsic extension image.
+
+### 9.5. Restriction without global gauge fixing; two-sided orbit theorem
+
+For a smooth global representative $A$, restrict its original connection to the two closed regions in the fixed global frame and set $h=1$. It automatically lies in $\mathcal M_1$. A global proper change $A\mapsto A^g$ restricts to a pair in $\mathcal K_1$. Therefore
+
+$$\begin{align}
+\operatorname{Res}_{\rm geom}:\mathcal Q_{\rm sm}
+\longrightarrow\mathcal Q_{\rm reg}^{\rm geom},
+\qquad [A]\longmapsto[(A|_{M_1},A|_{M_2};1)]_{\mathcal K_1}
+\end{align}$$
+
+is well defined without any Coulomb or temporal fixing. A reachable fixed-$h$ presentation follows by the regional frame change already proved independent.
+
+For a global $A$, the identity maps are themselves admissible assembly choices for its restrictions. Choice independence gives
+$\operatorname{Asm}_{\rm geom}\operatorname{Res}_{\rm geom}[A]=[A]$.
+For regional data, restriction of the based radial assembly returns $A_i^{u_i}$; these are the **same based classes** as $A_i$. A different admissible common-cut assembly instead returns the same intrinsic arrow class. Consequently
+
+$$\begin{align}
+\boxed{\mathcal Q_{\rm reg}^{\rm geom}\simeq
+\operatorname{Sol}_{\rm sm}/\mathcal G_{\rm sm}^{\rm prop}},\qquad
+\operatorname{Asm}_{\rm geom}\circ\operatorname{Res}_{\rm geom}
+&=\operatorname{id},&
+\operatorname{Res}_{\rm geom}\circ\operatorname{Asm}_{\rm geom}
+&=\operatorname{id}.
+\end{align}$$
+
+These are equalities on the stated orbit sets. The proof does not define the global target as an image, change its topology, or use global gauge fixing for surjectivity. It is not a bijection between $\mathcal B_h$ alone and global orbits, and makes no claim about all of $\operatorname{Sol}_{\rm pw}/\mathcal G_{\rm sm}^{\rm prop}$.
+
+### 9.6. Coulomb restoration is a section of geometric assembly
+
+Every original regional field admits a based Coulomb fixing: solve, at each time,
+$\Delta\lambda_i=-\operatorname{div}\boldsymbol A_i$ with real Dirichlet value zero at its wall and at the cut. Each finite angular coefficient is an invertible smooth Dirichlet ODE. Thus the fixing is smooth in $(t,y_i)$ and remains in the same based class. Original Gauss then makes the transformed $A_t$ harmonic, with its unchanged cut value $\alpha_i$ and zero wall value, so it is precisely Section 1's mixed realization. All compatibility identities follow from that original smooth solution. Based large Coulomb copies are the displayed $2\pi m_i y_i/L$; no new quotient is introduced.
+
+For a physically matched Coulomb pair, Section 5 proves that adding $dHf$, $f=(2T)^{-1}J$, gives a smooth global temporal/Coulomb connection. Its regional gauge maps are wall-identity with equal cut phases. It is therefore an admissible assembly choice in Section 9.3, giving
+
+$$\begin{align}
+[\operatorname{Asm}_{\rm C}(A_1,A_2)]_{\rm proper}
+=\operatorname{Asm}_{\rm geom}([(A_1,A_2)]_{\rm based}).
+\end{align}$$
+
+This identifies the existing construction with the intrinsic assembly, rather than defining the latter by it. $T$ chooses a temporal/Coulomb representative from the geometric orbit. Strictly, this is a section **modulo the residual discrete global proper copies**, or a local section after choosing a Wilson-angle chart. A global single-valued smooth choice of a real Wilson angle is not asserted. Different smooth bulk lifts or based re-fixings give the same global orbit by Sections 9.3--9.4.
+
+The real solution of $2Tf=J$ is unique; it is not only a phase $e^{if}$. With the input fixed, replacing $f$ alone by $f+2\pi m$ generally destroys normal matching. A phase-lift change is harmless only when its accompanying based re-fixing is included. In the arrow description, $f_0\mapsto f_0+2\pi m$ and $m_i\mapsto m_i-m$ describe exactly the same regional maps. Different based components induce the already allowed global large identification $n=m_1-m_2$. No assertion that a bare lift shift preserves the Coulomb representative is used.
+
+For the cusp, the based radial construction gives $A_{\rm gl}=d\psi_{\rm sm}$ with $\psi_{\rm sm}=\beta$ near the cut and $0$ at both walls (use the interpolating profile supplied by the cutoff). Hence its global orbit is the vacuum orbit, also produced by $\operatorname{Asm}_{\rm C}$. Its regional based object generally differs from the zero based object by the common cut phase $e^{i\beta}$. Thus it has a smooth geometric assembly, while its **raw** representative still cannot be made smooth by a smooth global gauge. For the piecewise-quadratic example the two regional maps $1,e^{-i\psi}$ are already based and remove it exactly. The raw divergence-jump obstruction in Section 5 remains valid.
+
+### 9.7. Unequal-length naturality check, not a new model project
+
+For the same two regions of lengths $L_1,L_2>0$, the collar proof is unchanged. In the harmonic calculation put
+
+$$\begin{align}
+T_{i,\ell}&=|p_\ell|\coth(|p_\ell|L_i),&
+T_{i,0}&=1/L_i,\\
+J'&=J-(T_1+T_2)f,&
+f&=(T_1+T_2)^{-1}J,&
+\dot J&=-(T_1+T_2)\alpha.
+\end{align}$$
+
+All eigenvalues are positive and $\dot f=-\alpha$. A regional harmonic arrow with parameters $H_i(f_0+2\pi m_i)$ changes the restoring value by
+
+$$\begin{align}
+f'-f=-f_0-2\pi(T_1+T_2)^{-1}(T_1m_1+T_2m_2).
+\end{align}$$
+
+The integer terms have only the angular zero mode. Their net restored parameters are
+$2\pi(m_1-m_2)y_1/(L_1+L_2)$ on the left and
+$-2\pi(m_1-m_2)y_2/(L_1+L_2)$ on the right. As group-valued maps they are the restrictions of
+$\exp[2\pi i n(x+L_1)/(L_1+L_2)]$, $n=m_1-m_2$.
+This includes the equal-length result and checks that lift bookkeeping does not rely on reflection symmetry. No unequal-cut spectrum, completion or separate IBVP programme is undertaken.
+
+### 9.8. Original CPS on equivalence classes and horizontal tangents
+
+Use differentiable families of the original smooth solutions, with admissible histories varying, locally in a common finite angular support and in fixed integer components. No field-space quotient manifold is presumed. For a regional gauge change $A_i\mapsto A_i+d\lambda_i$, including field-dependent choices, Gauss gives at each Cauchy time
+
+$$\begin{align}
+\Theta_i[A_i+d\lambda_i]-\Theta_i[A_i]
+&=e^{-2}\int_S E_{y,i}\,\delta(\lambda_i|_\Gamma).
+\end{align}$$
+
+The omitted volume term is $-e^{-2}\int_{\Sigma_i}(\partial_jE_i^j)\delta\lambda_i=0$, and the wall term vanishes because the normalized wall lift is a fixed integral constant. For based maps the cut lift is also an integral constant, so this difference is zero. Infinitesimally, using linearized Gauss,
+
+$$\begin{align}
+\iota_{X_{\eta_i}}\Omega_i
+=-e^{-2}\int_S\eta_i\,\delta E_{y,i}=0
+\quad(\eta_i|_{\partial\Sigma_i}=0).
+\end{align}$$
+
+Thus the regional original forms are invariant and horizontal for based equivalence, including invariance under its disconnected components. They descend as bilinear forms on admissible tangents modulo based vertical directions.
+
+For a common cut value $f$, the change of the summed potential is
+$e^{-2}\int_S(E_{y,1}+E_{y,2})\delta f=0$.
+The infinitesimal contraction is
+$-e^{-2}\int_S f\,\delta(E_{y,1}+E_{y,2})=0$.
+Hence the sum is also invariant/horizontal for the intrinsic cut arrows on the matched tangent locus. This holds for the full time-dependent history action, not merely time-independent Coulomb residuals.
+
+Apply these identities to the based radial assembly and use additivity over the two Cauchy interiors. No cut-supported measure is added. For variable reachable $h$, first flatten region 2 by $-d\widetilde\varphi$ as above; the same integration by parts gives exactly Section 6's completion. Therefore, as identities on these differentiable families and then on their tangent equivalence classes,
+
+$$\begin{align}
+\operatorname{Asm}_{\rm geom}^*\Omega_{\rm sm}
+&=\Omega_{\rm reg}^h,\\
+\Omega_{\rm reg}^h
+&=\Omega_1+\Omega_2-e^{-2}\int_S\delta E_{y,2}\wedge\delta\varphi.
+\end{align}$$
+
+For fixed $h$ and closed $S$ the last term is zero. The variable-$h$ formula is on original Gauss and full transmission solutions; the worldtube derivation still uses the normal Euler equation from formalism Section 4. A change of flattening lift is based, so the formula is choice independent. More explicitly, under regional presentation changes with cut lifts $\kappa_i$,
+$\varphi'=\varphi+\kappa_2-\kappa_1$.
+The regional-potential change is $e^{-2}\int_S(E_{y,1}\delta\kappa_1+E_{y,2}\delta\kappa_2)$ and the corner change is $-e^{-2}\int_SE_{y,2}\delta(\kappa_2-\kappa_1)$; the sum vanishes by electric transmission. This verifies passive covariance without attributing it a charge.
+
+Two admissible differentiable assembly choices differ by a smooth proper gauge family from Section 9.3. The identical global Gauss calculation with zero wall variation makes their pulled-back forms equal. Pulling back further to the regional Coulomb realization reproduces B6, including its common harmonic correction and its calibrated corner sign. No new interface oscillator is present.
+
+For **kernel equality**, work in a fixed-$h$ presentation, or first identify the passive presentation redundancy of variable-$h$ data. Retain Section 6's nondegenerate-mod-gauge Cauchy sector, including the Wilson/electric pair and the fully compatible smooth tangents. A global temporal/Coulomb fixing is a proof device here: configuration and velocity tests in the same divergence-free wall-compatible class give nondegeneracy as in Section 6. The regional construction and restriction are linear on local real-lift coordinates, with explicit smooth-family right inverses. If an assembled tangent is global proper gauge, restrict its infinitesimal parameter and undo the variation of the based collar maps; this gives regional parameters with equal cut values. Hence the kernel before based reduction is exactly the infinitesimal $\mathcal K_h$ action, and after based reduction exactly the infinitesimal $\mathcal H_\Gamma$ action. On the Coulomb realization these are the common harmonic directions. Conversely every such direction is null by the preceding contraction calculation. On the unquotiented variable-$h$ presentation space there are also passive vertical directions with unequal cut parameters and $\delta\varphi=\eta_2-\eta_1$; the preceding corner cancellation makes them null. They must not be mislabeled as fixed-$h$ active arrows.
+
+This is a theorem about solution-orbit sets with original two-forms on admissible horizontal tangent classes. It neither constructs a Fréchet symplectic manifold nor promotes the kernel statement to other topological sectors or completed tangent spaces. Discrete large identifications are imposed separately and are never kernel vectors.
+
+### 9.9. Smooth versus Sobolev diagnosis and exact scope
+
+The cusp parameter $\beta(1-|x|/L)$ is Lipschitz and belongs to $W^{1,\infty}$ on the compact slab, but it is not globally smooth. Its exponential is a proper Lipschitz gauge map and removes the raw cusp in a category permitting that operation. Thus the failed raw statement is specifically about the retained **smooth** global gauge group and representative category; it is not an obstruction to original physical sewing. The piecewise-quadratic parameter similarly has lower global regularity than smoothness while being smooth on both regional closures.
+
+The smooth category is retained because it was independently fixed for the physical target, because all traces and normal-jet comparisons used here are pointwise meaningful, and because the original differentiable CPS core is already specified there. The theorem changes the assembly construction, not that target category or its gauge group. It asserts no identical raw obstruction for an $H^1$ or Sobolev gauge quotient, and proves no Sobolev trace, multiplication, manifold or energy-completion theorem.
+
+**Verified:** the analytic collar, comparison, regional-arrow completeness, two-sided orbit and CPS arguments above; nine exact algebraic diagnostics in $\texttt{verification/collar-checks.wl}$, separate from the earlier thirty witnesses. **Assumptions:** the original smooth finite-Fourier slab, full transmission histories, fixed physical-wall frames, trivial bundle/relative sector, all based large components, and the stated tangent core for kernel equality. **Not verified:** smooth quotient-manifold structure, Sobolev/energy extensions, other bundle sectors or any excluded theory. The raw cusp and quadratic failures remain regression obstructions. Within these assumptions the bounded orbit-level Maxwell $2+1$ kill test is **proved**, replacing its former geometric-identification gate; the general formalism remains conditional.
