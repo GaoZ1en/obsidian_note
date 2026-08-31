@@ -87,3 +87,26 @@ residuals. The derivative commutator uses explicit `SortCovDs` before the
 These checks do not prove the partial-completion Sobolev estimates (which
 have analytic proofs in calculation 06), full C_SH, a PDE restart estimate,
 a C1 solution map, tangent surjectivity or the finite rectangle theorem.
+
+## Stage 4.2
+
+Run the saved stage42_initial_transverse_checks.wl through the Mathematica
+MCP in a fresh kernel. All 12 labelled V54--V59 checks must pass;
+the unchanged-RHS diagnostic is intentionally nonzero (value -3).
+The four actual Appendix angular blocks and the copy-constraint ideal
+are checked under the explicit permutation.
+
+Run stage42_xact_checks.wl through the dedicated xAct core tool;
+V60--V62 use canonical_contract and must return three zero residuals.
+The executed structured result is in verification/stage42_xact_results.md.
+
+The differentiated-system check is a nonlinear scalar prototype. The
+full exact-system identities and analytic bounds are calculation 09.6--7.
+Neither these checks nor the proved free-slot estimate close C_Bianchi,
+the full constrained C_init, Einstein tangent surjectivity or P_cell.
+
+V64 adds two scalar Bianchi residual checks, for 14 Wolfram checks total.
+Run stage42_curvature_variation_xact.wl in another fresh xAct core kernel;
+V63 uses xPert and canonical_contract for a fourth zero tensor residual.
+Both minus-sheet scalar Bianchi rows are proved analytically in 09.5;
+the first remaining vector residual is 09.(5.4).

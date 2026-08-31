@@ -12,13 +12,16 @@ and general fixed-incidence endpoint cotangent composition.
 Stage 4.1 proves the core dictionary on a smooth splitting slice, a
 global reference-density affine chart, an endpoint potential through
 $\theta=0$, partial completion estimates and fixed-metric framing
-uniqueness. Full $C_{\rm SH}$ and project-data framed germ/collar
+uniqueness. Full $C_{\rm init}$ and project-data framed germ/collar
 bijectivity remain unproved. The intrinsic EH restriction identity is
 proved for compatible existing linearized variations, hence on any
 constructed lift image; full tangent surjectivity is not proved.
 
-Calculation 08 proves an angular-flux difference estimate for existing
-reduced solutions. The first missing outgoing estimate is $R_\perp^k$.
+Calculations 08--09 prove angular-flux stability and $R_\perp^k$ with
+loss three for existing reduced solutions under explicit background bounds.
+Stage 4.2 closes $C_{\rm mix}$ (loss four) and $C_{\rm free}$ (loss five),
+not the constrained $C_{\rm init}$. Its first remaining lemma is
+$C_{\rm Bianchi}$, 09.5. Full source restart jets and reset remain open.
 $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional. Extended
 abstract ports still require the separate action-derived $P_{\rm red}$.
 
@@ -265,7 +268,7 @@ boundary charge, not a central extension.  This is a theorem on the declared
 reduced characteristic constraint surface, not an unreduced off-shell
 spacetime theorem.
 
-## 3. Stage-4.1 development and solution-space truth boundary
+## 3. Stage-4.2 development and solution-space truth boundary
 
 The authoritative detailed statements are calculations 06--08 and
 `DEVELOPMENT_MAP_AUDIT.md`. The core map is an equivalence in the smooth
@@ -276,10 +279,11 @@ parameter endpoints and records the boost from the symmetric core frame.
 
 $C_{\rm pre}$ reconstructs Raychaudhuri/Damour variables and the intrinsic
 connection with smooth/Lipschitz bounds into lower-order Sobolev spaces.
-It is not $C_{\rm SH}$. The first unfinished completion equation is the
-opposite-sheet second-fundamental-form transport 06.(8.11), $C_{\rm mix}$.
-Complete curvature/copy constraints and the full linearized completion are
-also unproved. Metric local/collar existence from complete source data
+It is not $C_{\rm init}$. Stage 4.2 closes the opposite-sheet
+second-form transports in 09.3 and prepares the free slots in 09.4.
+The first unfinished completion is $C_{\rm Bianchi}$, starting with
+09.(5.4); full complementary curvature/gauge/copy compatibility and the
+constrained linearized completion remain unproved. Metric local/collar existence from complete source data
 remains a literature theorem, not a completed project-data construction.
 
 The framed solution-space identity is
@@ -302,30 +306,27 @@ For existing full-rectangle solutions, coherent on-shell current conservation
 equates the intrinsic input/output forms under the stated side-flux policy.
 It does not establish a uniform solution map or any auxiliary port equality.
 
-### Required seven-part verdict
+### Required Stage-4.2 verdict
 
-1. **Full marked-sheet project-to-PDE dictionary: not proved.** The smooth
-   core equivalence uses the fixed prescription $a_\pm[m]$; the direct
-   Cabet gauge preserves both original sheets and outer cuts. Full
-   connection/curvature completion is still open.
-2. **$C_{\rm SH}$: incomplete.** $C_{\rm pre}$ and $DC_{\rm pre}$ are
-   constructed with smooth/Lipschitz estimates for $3\le k\le s-3$.
-   The full map, its derivative loss and $DC_{\rm SH}$ are not proved.
-3. **Framed local/collar bijectivity: conditional.** Fixed-metric framing
-   uniqueness is proved before optical breakdown; complete project-to-PDE
-   initial data and finite-regularity gauge comparison remain required.
-4. **Presymplectic identity: restriction/constructed-image only.** It holds
-   for compatible existing variations and any actually constructed lift,
-   with $\Omega_{\rm char}^{\rm intr}$. Full tangent-space surjectivity is
-   not proved. Extended auxiliary ports require $P_{\rm red}$.
-5. **$P_{\rm cell}^k$: not proved.** Angular-flux stability for existing
-   reduced solutions is proved; the first missing estimate is $R_\perp^k$,
-   calculation 08.(6.4), controlling mixed sources (6.3) and outgoing traces.
-6. **$P_{\rm rect}^{s,r}$: still conditional.** No finite-grid proof or
-   unproved numerical regularity threshold is retained.
-7. **Next single PDE lemma:** prove $R_\perp^k$ from completed incoming
-   norms with a tracked finite derivative loss. The upstream initial-data
-   sublemma is $C_{\rm mix}$, calculation 06.(8.11).
+1. **Copy system:** a slot-only swap with unchanged RHS is false.
+   Calculation 08 now uses the printed allocation with the full conjugation
+   09.(1.4), exactly equivalent to the literal Appendix equations.
+2. **Fixed reference energy:** proved with the explicit metric, density,
+   connection and coefficient margins in 09.2.
+3. **$C_{\rm init}$:** not proved. $C_{\rm free}$, its differential and
+   quadratic remainder have conservative loss five, 09.(4.3); no full
+   initial-completion loss is assigned.
+4. **$C_{\rm mix}$:** proved by 09.(3.3),(3.5), with conservative loss four
+   and the same loss for its differential and quadratic remainder.
+5. **$R_\perp^k$:** proved for existing reduced solutions under 09.7,
+   with loss three. This is not a project-data Einstein existence theorem.
+6. **Outgoing traces:** first $C^0$ traces are controlled; full generator
+   jets, complementary constraints and bounded reset are not.
+7. **$P_{\rm cell}^k$:** not proved. The first remaining initial lemma is
+   $C_{\rm Bianchi}$, beginning with 09.(5.4); full restart, linearized
+   Einstein existence and the quadratic evolution remainder also remain.
+8. **$P_{\rm rect}^{s,r}$:** conditional; no finite-grid continuation,
+   guessed global threshold, or quantization.
 
 ## 4. Composition theorem
 
@@ -396,9 +397,9 @@ closing-wall action.
 
 ## 6. Open items and continuation rule
 
-1. $C_{\rm mix}$ and the full $C_{\rm SH}$/$DC_{\rm SH}$ completion,
+1. $C_{\rm Bianchi}$ and the full $C_{\rm init}$/$DC_{\rm init}$ completion,
    constrained inverse and finite-Sobolev gauge comparison;
-2. $R_\perp^k$, then the complete restart, uniform existence, linearized
+2. beyond the proved loss-three $R_\perp^k$, complete restart, uniform existence, linearized
    Einstein and quadratic-remainder package $P_{\rm cell}^k$;
 3. only then finite-grid/gauge/regularity bookkeeping for
    $P_{\rm rect}^{s,r}$, including target openness and inverse regularity;
@@ -411,6 +412,6 @@ The affine endpoint chart now crosses zero expansion; the area/Reisenberger
 chart still does not. The chart repair is not a solution-space theorem.
 
 
-Stages 0--3 are frozen at their established algebraic boundary. Stage 4.1
-repairs the truth boundary and starts the one-cell analysis. It does not
+Stages 0--3 are frozen at their established algebraic boundary. Stage 4.2
+closes the mixed transports and first transverse estimate. It does not
 declare the smooth project-data collar, one-cell theorem or rectangle closed.

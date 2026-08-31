@@ -76,7 +76,7 @@ Allowed status vocabulary:
 | C3-Reis-regression | the derived endpoint block agrees with Reisenberger after branch, density, pullback, reference, and normal-frame dictionaries | proved | displayed dictionary in calculation 05 section 9 | project derivation followed by source regression | not a full equivalence through $\theta_s=0$ or a closing-wall theorem |
 | C3-target-CPS | the full reduced spin-$0+1+2$ gravitational characteristic CPS is nondegenerate | open | completed profile space, closing geometry, and all gauge quotients required | the constrained selected-representative form and moment map are derived | full functional kernel/quotient and wall ports remain open |
 
-## Stage 4 - Stage-4.1 truth boundary and first cell estimate
+## Stage 4 - current development and one-cell boundary
 
 | ID | Claim | Status | Evidence | Remaining boundary |
 |---|---|---|---|---|
@@ -86,17 +86,17 @@ Allowed status vocabulary:
 | C4-dictionary-symbols | Normalization, torsion sign and affine endpoint algebra | checked symbolically | V42--V47, V50 | no existence or surjectivity conclusion |
 | C4-MSP-completion | Full MSP transverse $Y_\pm$ completion from project data | open | 06.6.2 | completed DND and Ricci compatibility are prerequisites of the cited theorem |
 | C4-SH-pre | $C_{\rm pre}$ and $DC_{\rm pre}$ with smooth/Lipschitz finite-scale estimates | proved | 06.(8.1)--(8.10) | $3\le k\le s-3$, uniform positive margins; partial fields only |
-| C4-SH-completion | Full $C_{\rm SH}$, inverse and linearized completion | open | 06.(8.11): $C_{\rm mix}$ | mixed connection, full frame/curvature constraints and loss still unclosed |
+| C4-SH-completion | Full constrained $C_{\rm init}$ and its differential | open | 09.5: $C_{\rm Bianchi}$ | mixed transport closed; complementary Bianchi/gauge/copy compatibility and full loss open |
 | C4-affine-endpoint | Affine endpoint/corner potential valid through $\theta_s=0$ | proved | 06.(9.1)--(9.3); HF compensator derivation | fixed affine cuts, tangential endpoint variations, positive area |
-| C4-cited-metric | Metric local/neighborhood existence for complete smooth source data | proved | Cabet Theorem 5.3; Rendall/Luk; MSP for completed DND | known from literature; does not itself construct project $C_{\rm SH}$ |
+| C4-cited-metric | Metric local/neighborhood existence for complete smooth source data | proved | Cabet Theorem 5.3; Rendall/Luk; MSP for completed DND | known from literature; does not itself construct project $C_{\rm init}$ |
 | C4-germ-map | Framed project-data development/restriction bijection near the corner | conditional | 07.3 | full completion, source constraints and framed PDE uniqueness required |
 | C4-collar-map | Framed project-data bijection on a full-sheet collar | conditional | 06.4.1; 07.3 | parameter domain retained, but full completion still missing |
 | C4-general-Sobolev-chart | Source Einstein theorem directly supplies the exact project finite-Sobolev chart | false | Cabet p.54--55 | finite-loss tracking and direct doubled-system constraint propagation not supplied there |
 | C4-framing-uniqueness | Unique framing extension of an existing metric in the fixed gauge | proved | 07.3.1 eikonal/transport lemma | common regular optical neighborhood; no finite-Sobolev gauge estimate |
 | C4-angular-flux | Angular $H^k$ flux difference estimate with zero reduced incoming loss | proved | 08.(3.1)--(4.3) | two already existing reduced solutions; $k\ge3$, high angular and full $W^{1,\infty}$ bounds |
-| C4-cell-estimate | Full uniform Einstein one-cell theorem $P_{\rm cell}^k$ | conditional | 08.6 | first unclosed $R_\perp^k$; no full restart, linearized existence or quadratic estimate |
+| C4-cell-estimate | Full uniform Einstein one-cell theorem $P_{\rm cell}^k$ | conditional | 08.6 | loss-three transverse bound proved in 09.7; full initial/restart, linearized existence and remainder open |
 | C4-rectangle-map | Background-nearby project data develop on a prescribed full rectangle | conditional | 07.6; $P_{\rm rect}^{s,r}$ | completion, cell, restart/gauge and target-chart gates retained; grid not begun |
-| C4-linearized-local | All project tangents and all framed linearized metric solutions are in bijection | conditional | 07.7 | $DC_{\rm SH}$, linearized constraints and gauge exhaustion not proved |
+| C4-linearized-local | All project tangents and all framed linearized metric solutions are in bijection | conditional | 07.7 | $DC_{\rm init}$, linearized constraints and gauge exhaustion not proved |
 | C4-C1 | Nonlinear Banach $C^1$ chart with linearized Einstein derivative and inverse | conditional | 08.5--6; 07.6 | no assigned full derivative loss or target openness |
 | C4-solution-pullback | Intrinsic EH identity for restrictions / any constructed lift image | proved | 07.(7.3)--(7.4); 06.9 | no full tangent surjectivity; no full lift constructed in this round |
 | C4-rectangle-pullback | Full-rectangle nonlinear pullback equals $\Omega_{\rm char}^{\rm intr}$ | conditional | 07.(7.5) | requires full framed $P_{\rm rect}^{s,r}$ |
@@ -107,6 +107,23 @@ Allowed status vocabulary:
 | C4-evolution | Uniform nearby-data finite-cell evolution graph | conditional | 07.9 | existing-solution relation only without the PDE theorem |
 | C4-solution-compose | Uniqueness/composition identities on an existing common smooth glued domain | proved | 07.10; full DND and fixed incidence matching | does not manufacture existence, restart regularity or a physical port sector |
 | C4-global | Arbitrary-data existence on an arbitrary prescribed finite rectangle | false | focusing and source scope | no such theorem is claimed |
+
+
+## Stage 4.2 additions
+
+| ID | Claim | Status | Evidence | Exact boundary |
+|---|---|---|---|---|
+| C42-copy-slot-only | Changing slot allocation while keeping RHS copies unchanged is conjugacy | false | 09.1; nonzero alpha-row counterexample | source literal printed lists and Appendix rows disagree |
+| C42-copy-full | Printed allocation with the full substitution $P$ is equivalent to the literal Appendix system | proved | 09.(1.1)--(1.6) | includes connection Weyl extractor; no copy-only propagation theorem |
+| C42-reference | Fixed-bundle/reference-density energy conversion | proved | 09.2 | all metric/density/connection derivatives and uniform margins retained |
+| C42-mix | Both mixed second-form transports, differential and quadratic remainder | proved | 09.3 | conservative loss four; prescribed finite sheets with regular coefficients |
+| C42-free | Free reduced incoming preparation, differential and quadratic remainder | proved | 09.4 | conservative loss five; not constrained $C_{\rm init}$ |
+| C42-scalars | Minus-sheet scalar Bianchi constraints A.37b--c | proved | 09.(5.1)--(5.3) | curvature variation, Codazzi and Cayley--Hamilton; remaining vector/opposite-sheet constraints open |
+| C42-init | Full constrained minimal $C_{\rm init}$ and its finite loss | open | 09.5 | first residual (5.4), then full complementary Bianchi/gauge/copy and corner jets |
+| C42-transverse | Exact reduced-solution $R_\perp^k$ with loss three | proved | 09.6--7 | existing solutions, high angular/coefficient and bounded incoming-background norms |
+| C42-trace | First outgoing $C^0$ free-slot traces | proved | 09.(7.7)--(7.8) | not full generator jets or source restart class |
+| C42-reset | Full bounded geometric reset into incoming class | open | 09.9 | scalar ODE estimate proved; flow/composition, jets and constraints remain |
+| C42-cell | One-cell Einstein $C^1$ map | conditional | 09.8 | initial completion, full restart, linearized existence and remainder not closed |
 
 ## Verification ledger
 
@@ -177,3 +194,9 @@ topology theorem.
 | V51 | connection-variation trace; scalar Hessian sorting | xAct | tensor identities, no constraint propagation |
 | V52 | null-gradient geodesic identity | xAct | null eikonal gradient, smooth metric |
 | V53 | linearized Raychaudhuri/Damour algebra | Wolfram | partial completion only |
+| V54--V55 | Mixed transport, Gauss matrix and normal-Ricci cancellation | Wolfram algebra | not full initial compatibility |
+| V56--V57 | Copy permutation, null allocation, copy ideal and unchanged-RHS counterexample | Wolfram algebra | not Einstein constraint propagation |
+| V58--V59 | Density/symmetrizer product rule and differentiated projected systems | Wolfram algebra / nonlinear scalar prototype | PDE estimate is analytic 09.7 |
+| V60--V62 | Gauss contraction, mixed Ricci and Codazzi contractions | xAct canonical_contract | three zero residuals; not $C_{\rm Bianchi}$ |
+| V63 | Gaussian curvature variation for qdot=2H | xAct/xPert canonical_contract | zero residual; not full C_init |
+| V64 | Both minus-sheet scalar Bianchi cancellations | Wolfram algebra after geometric substitution | two zero residuals; analytic proof in 09.5 |

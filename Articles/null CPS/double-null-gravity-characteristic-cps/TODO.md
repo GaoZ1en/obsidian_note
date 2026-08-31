@@ -1,43 +1,44 @@
 # Immediate Research Tasks
 
-**Stage 4.1 theorem boundary.** Stages 0--3 remain classical and unchanged.
-Full project-data completion and framed germ/collar bijectivity are not
-closed. The first reduced-system flux estimate is proved; the full one-cell
-and prescribed-rectangle theorems remain conditional. Do not quantize.
+**Stage 4.2 theorem boundary.** Stages 0--3 stay classical.
+The full constrained initial completion and $P_{\rm cell}^k$ remain
+unproved. No quantization or finite-grid continuation.
 
-- [x] Replace fixed scale factors by $m\mapsto a_\pm[m]$ and restrict the
-  core equivalence to its fixed framing slice; remove the unsupported
-  lower-to-higher Sobolev inverse claim. Check: 06.4--6.
-- [x] Keep the original marked null sheets in the direct Cabet gauge;
-  do not assert a ragged-endpoint Luk theorem. Check: 06.4.1.
-- [x] Use $\nu_0,h_0,D^0$ globally and write the affine endpoint potential
-  through $\theta=0$. Check: 06.1, 06.9.
-- [x] Separate intrinsic HF cuts from auxiliary abstract ports and restrict
-  the solution identity to existing variations / constructed images.
-  Check: 07.7; extended equality remains under $P_{\rm red}$.
-- [x] Construct $C_{\rm pre},DC_{\rm pre}$ and prove their finite-scale
-  Volterra/Moser bounds. Check: 06.(8.1)--(8.10), $3\le k\le s-3$.
-- [x] Prove fixed-metric smooth framing uniqueness on a regular optical
-  neighborhood. Check: 07.3.1; no finite-Sobolev gauge estimate inferred.
-- [ ] Initial-data action: close $C_{\rm mix}$, the mixed connection
-  transport 06.(8.11), eliminating the curvature source with the actual
-  Gauss/normal-curvature constraints and matching corner data. Then finish
-  curvature/copy transports, $C_{\rm SH}$, inverse and $DC_{\rm SH}$.
-- [x] Fix the actual source principal splitting, including Weyl copies,
-  and derive angular commutators and flux difference bounds for already
-  existing solutions. Check: 08.(1.3)--(4.3), assumptions (3.1).
-- [ ] **Next single PDE lemma: $R_\perp^k$.** Derive and bound the coupled
-  transverse derivatives in 08.(6.2), especially mixed sources (6.3), from
-  completed incoming norms; prove (6.4) with a stated finite loss.
-- [ ] After that, iterate outgoing generator derivatives/corner jets to
-  the full source restart class; prove uniform data-dependent existence
-  width, linearized Einstein/copy constraint propagation and the quadratic
-  remainder bound. Only then mark $P_{\rm cell}^k$ proved.
-- [ ] Gated: finite-grid restart/gauge bookkeeping and $s(r,I,J)$ for
-  $P_{\rm rect}^{s,r}$. No numerical loss is guessed. Target openness and
-  inverse regularity remain separate proof obligations.
-- [ ] Full framed germ/collar bijection and tangent-space surjectivity:
-  promote only after the completion, PDE and gauge hypotheses are proved.
+- [x] Resolve the printed/Appendix copy mismatch with full-equation $P$,
+  including every RHS copy and the connection-row Weyl extractor.
+  Check: 09.1. A slot-only swap is false.
+- [x] Derive fixed-reference frame/connection, density and symmetrizer
+  corrections. Check: 09.2 and corrected 08.4.
+- [x] Close $C_{\rm mix}$ on both initial sheets by Gauss/normal Ricci,
+  with differential and quadratic remainder, conservative loss four.
+  Check: 09.3; V54--V55, V60--V62 are regressions only.
+- [x] Prepare minimal free incoming slots, dependency table and corner
+  values; prove $C_{\rm free}$ estimates with loss five. Check: 09.4.
+  This is not a full constrained $C_{\rm init}$.
+- [x] Prove the two scalar Bianchi transports on the affine minus sheet.
+  Check: 09.(5.1)--(5.3); curvature variation and Codazzi cancellation.
+- [ ] **First remaining lemma: $C_{\rm Bianchi}$.** Substitute (3.1),(4.2)
+  and the mixed transports into 09.(5.4), prove that residual vanishes,
+  then close the remaining vector/opposite-sheet companions, opposite-extreme transports,
+  complementary lapse/shift/rotation identities and required corner jets.
+  Only then assign a quantitative loss to $C_{\rm init}$ and $DC_{\rm init}$.
+- [x] Prove exact-solution differentiated systems with projected second
+  null derivatives eliminated and all highest mixed terms exposed.
+  Check: 09.6; compare source (3.34),(3.66)--(3.68).
+- [x] Prove $R_\perp^k$ with loss three for existing reduced solutions
+  under 09.7's background/incoming bounds; prove first outgoing $C^0$
+  traces using the generator trace inequality.
+- [ ] Close the full outgoing source generator-jet/corner class and
+  complementary constraints. First transverse traces alone do not restart.
+- [x] Write re-affinization, variable affine length, label-flow and
+  normal/torsion reset equations. Check: 09.9; source $e_4$ is affine.
+- [ ] Derive bounded reset/composition in the required incoming class,
+  with endpoint/diffeomorphism margins and all generator jets.
+- [ ] After the initial and restart gates close, prove linearized Einstein
+  existence/constraint propagation and estimate every term of 08.(5.2).
+  Distinguish energy uniqueness from tangent surjectivity.
+- [ ] Only then consider $P_{\rm cell}^k$ and any later
+  $P_{\rm rect}^{s,r}$ work. No global threshold $s(r,I,J)$ is guessed.
 
 - [x] Action: retain $S_+$ and $S_-$ as area/boost ports and compute the
   endpoint-complete Stage-1 rank/kernel.
@@ -148,6 +149,6 @@ and prescribed-rectangle theorems remain conditional. Do not quantize.
   authoritative theorem/gauge/open-item ledger, and
   `verification/DEVELOPMENT_MAP_AUDIT.md` separates cited, in-project,
   conditional, and open development claims.
-  Check: Stage 4.1 explicitly separates $C_{\rm SH}$, $R_\perp^k$,
+  Check: Stage 4.1 explicitly separates $C_{\rm init}$, $R_\perp^k$,
   $P_{\rm cell}^k$, the gated $P_{\rm rect}^{s,r}$, and the independent
   boundary target $P_{\rm red}$.

@@ -6,12 +6,13 @@
 bijection, or a finite-Sobolev $C^1$ development map.** The earlier
 unconditional declarations are withdrawn. Cited metric existence for
 complete source data remains valid; it does not construct our missing
-$C_{\rm SH}$ or $DC_{\rm SH}$.
+$C_{\rm init}$ or $DC_{\rm init}$.
 
 Calculation 06 proves the core tensor dictionary on its fixed splitting
 slice, preserves original outer cuts using the Cabet gauge, and constructs
-the finite-scale partial completion $C_{\rm pre}$. Its full mixed
-connection/curvature completion is open. Section 3.1 below proves a
+the finite-scale partial completion $C_{\rm pre}$. Calculation 09
+closes $C_{\rm mix}$ and prepares the free reduced slots; compatibility
+with the complete Bianchi/gauge/copy transports remains open. Section 3.1 below proves a
 fixed-metric framing uniqueness lemma, not the missing Einstein existence
 or finite-Sobolev gauge comparison theorem.
 
@@ -30,8 +31,9 @@ onto all framed linearized solutions. Abstract auxiliary outer ports do
 not occur in this formula. Their identification requires $P_{\rm red}$.
 
 Calculation 08 proves an angular-flux difference estimate for already
-existing reduced solutions. Its first unclosed restart estimate is
-$R_\perp^k$; $\mathbf P_{\rm cell}^k$ remains conditional. The prescribed
+existing reduced solutions. Calculation 09 proves
+$R_\perp^k$ with loss three under bounded existing-background hypotheses;
+full restart and $\mathbf P_{\rm cell}^k$ remain conditional. The prescribed
 rectangle $\mathbf P_{\rm rect}^{s,r}$ also remains conditional. No
 quantization or finite-grid proof is undertaken.
 
@@ -227,7 +229,7 @@ $\mathcal D_{\rm char}/\mathcal G\to\operatorname{Sol}/\operatorname{Diff}$.
 
 The completed data required by each theorem must first be constructed.
 Calculation 06 supplies a core dictionary and $C_{\rm pre}$, not the full
-$C_{\rm SH}$. No source-scope upgrade follows from the shared notation.
+$C_{\rm init}$. No source-scope upgrade follows from the shared notation.
 
 ## 3. Metric existence, completion and framing are separate
 
@@ -236,11 +238,11 @@ supply a metric near the corner, or a neighborhood of the full initial
 hypersurfaces. These are **literature results**. A uniform project-data map
 requires the following additional steps, not yet all proved:
 
-1. complete $C_{\rm SH}$, including corner curvature and copy constraints;
+1. complete $C_{\rm init}$, including corner curvature and copy constraints;
 2. use a source Einstein development theorem at its actual domain;
 3. attach the uniquely prescribed framing in the lemma below;
 4. estimate this construction in the declared topology;
-5. for tangent surjectivity, construct $DC_{\rm SH}$ and prove linearized
+5. for tangent surjectivity, construct $DC_{\rm init}$ and prove linearized
    gauge/constraint propagation and exhaustion of the target tangent space.
 
 Only after steps 1--3 are closed may one assert the smooth set-level maps
@@ -318,10 +320,11 @@ all-cut supremum/mixed-derivative norm.
 - Proved under explicit bounds for two existing reduced solutions:
   $\|F_1-F_2\|_{X^k}\le C\|d_1-d_2\|_{I^k}$, with one extra angular
   derivative on the bounded backgrounds and no incoming loss at that flux
-  level. This is not a project-data estimate before $C_{\rm SH}$.
-- Not proved: $R_\perp^k$, the transverse derivative/outgoing trace bound
-  08.(6.4), with tracked loss from incoming norms. This is the first PDE
-  stop line; the full source restart class remains uncontrolled.
+  level. This is not a project-data estimate before $C_{\rm init}$.
+- Proved under 09.7's explicit existing-background and incoming bounds:
+  $R_\perp^k$, 08.(6.4), at output level $k-3$. First outgoing $C^0$
+  traces are controlled. Full source generator jets, complementary
+  constraints and the gauge reset remain open.
 - The linearized equation and the exact quadratic remainder 08.(5.2) are
   derived. Linearized Einstein existence/surjectivity and the required
   quadratic estimate are not proved.
@@ -493,7 +496,7 @@ a second independent final obstacle.
 
 ### 6.2 Finite-grid stage is gated
 
-No finite-grid continuation is begun while $C_{\rm SH}$ and
+No finite-grid continuation is begun while $C_{\rm init}$ and
 $\mathbf P_{\rm cell}^k$ are open. After the one-cell theorem, one must
 still track output-to-input gauge resets, corner compatibility, derivative
 loss along every grid path, and the geometric/injectivity margins.
@@ -607,8 +610,8 @@ $$
 
 This implication is proved; a lift for every project tangent and
 surjectivity onto all framed linearized solutions are **conditional** on
-$DC_{\rm SH}$, linearized constraint propagation and gauge completeness.
-The present round constructs only $DC_{\rm pre}$, not a full such lift.
+$DC_{\rm init}$, linearized constraint propagation and gauge completeness.
+The present work constructs $DC_{\rm pre},DC_{\rm mix},DC_{\rm free}$, not a full such lift.
 For an independently differentiable family of actual developments,
 $L=DE$ and (7.4) is its nonlinear pullback. This does not assert
 differentiability on an entire data neighborhood.
@@ -793,6 +796,13 @@ negatives of (9.3).  Equation (9.3), rather than
 $d\lambda_s^{\rm out}$ alone, fixes the output phase-space incidence used
 below.
 
+Stage 4.2 gives the explicit reset equations and normal/torsion
+transformations in 09.(9.1)--(9.4). Source $e_4$ is already affine.
+A generator-constant normalization can return variable affine lengths to
+fixed intervals only with the corresponding changed corner framing.
+The scalar reset estimate does not close the full flow/composition and
+incoming-constraint restart theorem.
+
 ### 9.2 Conservation
 
 For existing framed linearized solutions,
@@ -927,27 +937,24 @@ A uniform background-neighborhood version on the prescribed rectangles is
 conditional on $\mathbf P_{\rm rect}^{s,r}$, and a complete physical-port
 version remains conditional on $\mathbf P_{\rm red}$.
 
-## 11. Stage-4.1 required verdict
+## 11. Stage-4.2 required verdict
 
-1. **Full marked-sheet project-to-PDE dictionary: not proved.** The core
-   equivalence is proved on the fixed smooth splitting slice. Original
-   sheets/outer cuts are preserved in the Cabet gauge 06.(4.6); no ragged
-   Luk theorem is assumed. The mixed first-jet/curvature completion is open.
-2. **$C_{\rm SH}$: not constructed in full.** $C_{\rm pre}$ and its
-   differential are smooth/Lipschitz at the conservative finite-scale loss
-   in 06.(8.7); no loss is assigned to the full map.
-3. **Framed germ/collar bijectivity: conditional.** Fixed-metric framing
-   uniqueness is proved on the regular optical neighborhood; full data
-   completion and the PDE/gauge steps remain required.
-4. **Presymplectic identity: restriction/image statement only.** Equation
-   (7.3) holds for compatible existing variations, and (7.4) for any actually
-   constructed lift. A lift on every project tangent and its surjectivity
-   are not proved. Abstract extended ports require $P_{\rm red}$.
-5. **$P_{\rm cell}^k$: not proved.** The angular-flux difference estimate
-   closes for already existing reduced solutions; the first missing
-   estimate is $R_\perp^k$, 08.(6.4), with controlled mixed sources (6.3).
-6. **$P_{\rm rect}^{s,r}$: still conditional.** No finite-grid stage or
-   unproved numerical regularity threshold is promoted.
-7. **Next single PDE lemma:** prove $R_\perp^k$ from completed incoming
-   norms with a specified derivative loss and uniform coefficient bounds.
-   The upstream initial-data sublemma is $C_{\rm mix}$, 06.(8.11).
+1. **Copy system:** a slot-only swap with unchanged RHS is false.
+   Calculation 08 now uses the printed allocation with the full conjugation
+   09.(1.4), exactly equivalent to the literal Appendix equations.
+2. **Fixed reference energy:** proved with the explicit metric, density,
+   connection and coefficient margins in 09.2.
+3. **$C_{\rm init}$:** not proved. $C_{\rm free}$, its differential and
+   quadratic remainder have conservative loss five, 09.(4.3); no full
+   initial-completion loss is assigned.
+4. **$C_{\rm mix}$:** proved by 09.(3.3),(3.5), with conservative loss four
+   and the same loss for its differential and quadratic remainder.
+5. **$R_\perp^k$:** proved for existing reduced solutions under 09.7,
+   with loss three. This is not a project-data Einstein existence theorem.
+6. **Outgoing traces:** first $C^0$ traces are controlled; full generator
+   jets, complementary constraints and bounded reset are not.
+7. **$P_{\rm cell}^k$:** not proved. The first remaining initial lemma is
+   $C_{\rm Bianchi}$, beginning with 09.(5.4); full restart, linearized
+   Einstein existence and the quadratic evolution remainder also remain.
+8. **$P_{\rm rect}^{s,r}$:** conditional; no finite-grid continuation,
+   guessed global threshold, or quantization.

@@ -1,19 +1,21 @@
-# 08 - Uniform one-cell characteristic stability: first proved estimate and stop line
+# 08 - Uniform one-cell characteristic stability and Stage-4.2 transverse estimate
 
 ## 0. Direct verdict
 
-**Proved here:** a conditional-on-existing-solutions, angular $H^k$ difference
-estimate in the actual characteristic flux norm of the reduced Cabet system.
+**Proved here:** an angular $H^k$ difference estimate for existing reduced
+solutions. Calculation 09 adds the full copy-convention conjugation,
+fixed-reference energy lemma and $R_\perp^k$ at level $k-3$ under its
+explicit bounded-background assumptions.
 **Not proved:** $\mathbf P_{\rm cell}^k$, its uniform existence width from
-project data, the outgoing finite-Sobolev restart trace, linearized Einstein
+project data, the complete outgoing restart class, linearized Einstein
 existence/surjectivity, or a $C^1$ Einstein development map. No finite-grid
 argument is begun. $\mathbf P_{\rm rect}^{s,r}$ remains conditional.
 
-The first PDE estimate still missing is $R_\perp^k$ in Section 6: control of
-the transverse-to-evolution derivatives $\partial_\eta\phi$ and
-$\partial_\xi\psi$ and their outgoing characteristic traces from the
-source's incoming norm. The independent initial-data gap is $C_{\rm mix}$
-in calculation 06.(8.11). Neither gap is hidden inside "standard estimates".
+The first initial-data gap is now $C_{\rm Bianchi}$, calculation 09.5:
+compatibility of the prepared geometric incoming fields with the complete
+source transports. $C_{\rm mix}$ is closed in 09.3. First outgoing $C^0$
+traces are proved, but higher generator jets, complementary constraints
+and the full geometric reset remain open.
 
 ## 1. Source system and fixed gauge
 
@@ -57,41 +59,49 @@ The last $\sigma$ is a curvature scalar, not $\sigma^\pm_{AB}$.
 Introduce the four copies
 $\mathring\beta,\mathring{\underline\beta},\mathring\rho,\mathring\sigma$
 of (A.35). Equality to their physical partners is an additional constraint.
+These physical names refer to the copy diagonal. The off-diagonal
+curvature extractor after the printed-convention change is specified
+explicitly below; it must be transformed along with the equations.
 
-To make the splitting unambiguous, **define slots by their differential
-rows in (A.36)--(A.39)**:
+From Stage 4.2 onward use the paper's **printed (5.12)--(5.13)
+allocation**, with the full-equation relabelling specified below:
 
 $$
 \begin{aligned}
 \phi={}&(e_i{}^\mu,\Gamma_i{}^a{}_b,\Gamma_i{}^a{}_3;
-\underline\beta,\mathring\rho,\mathring\sigma,\beta,\alpha),\\
+\alpha,\mathring{\underline\beta},\rho,\sigma,\mathring\beta),\\
 \psi={}&(\Gamma_i{}^a{}_4,\Gamma_i{}^3{}_3;
-\underline\alpha,\mathring{\underline\beta},\rho,\sigma,\mathring\beta).
+\underline\beta,\mathring\sigma,\mathring\rho,\beta,\underline\alpha).
 \end{aligned}
 \tag{1.3}
 $$
 
 Algebraically zero/dependent connection components are eliminated using
 (1.2) and metric compatibility. These lists specify field types rather than
-counting dependent components twice. The printed lists (5.12)--(5.13) place
-the circles differently: exchanging every circled/uncircled copy pair in
-(1.3) gives those lists, up to ordering. Here all subsequent formulas use
-the Appendix A differential-row allocation (1.3). One cannot combine the
-printed lists with the Appendix rows without this explicit relabelling.
+counting dependent components twice. The source's printed lists and literal
+Appendix differential rows place the circles differently. Calculation
+09.(1.1)--(1.5) defines $P$, exchanging all four copy pairs, and applies it
+to **every occurrence on both sides**, including the Weyl extractor in
+connection rows. With $R$ denoting the literal Appendix system, use
+$A^\alpha(F)=P A_R^\alpha(PF)P$ and $G(F)=P G_R(PF)$.
+A slot-only exchange with unchanged RHS is false off the copy diagonal.
+This complete conjugation is exactly equivalent to the Appendix system;
+it does not invent a constraint-propagation theorem.
 
 In particular the four curvature pairs are
 
 | Appendix block | $e_3$ row ($\phi$) | $e_4$ row ($\psi$) |
 |---|---|---|
-| A.36 | $\underline\beta$ | $\underline\alpha$ |
-| A.37 | $(\mathring\rho,\mathring\sigma)$ | $\mathring{\underline\beta}$ |
-| A.38 | $\beta$ | $(\rho,\sigma)$ |
-| A.39 | $\alpha$ | $\mathring\beta$ |
+| A.36 after $P$ | $\mathring{\underline\beta}$ | $\underline\alpha$ |
+| A.37 after $P$ | $(\rho,\sigma)$ | $\underline\beta$ |
+| A.38 after $P$ | $\mathring\beta$ | $(\mathring\rho,\mathring\sigma)$ |
+| A.39 after $P$ | $\alpha$ | $\beta$ |
 
 ### 1.2 Actual principal matrices and lower-order terms
 
 In orders $(\underline\alpha_{11},\underline\alpha_{12},
-\underline\beta_1,\underline\beta_2)$ and $(\rho,\sigma,\beta_1,\beta_2)$,
+\mathring{\underline\beta}_1,\mathring{\underline\beta}_2)$ and
+$(\mathring\rho,\mathring\sigma,\mathring\beta_1,\mathring\beta_2)$,
 (A.41), (A.43) give
 
 $$
@@ -124,11 +134,13 @@ Use $p=3$ for $(i,j)=(a,b),(a,3)$ and $p=4$ for $(a,4),(3,3)$.
 The latter uses $\Gamma_4{}^3{}_3=-\Gamma_4{}^4{}_4=0$.
 For nonvanishing gauge components the term $e_q\Gamma_p{}^i{}_j$ must be
 restored, as in 06.(8.11). The curvature rows and their complete algebraic
-right sides are exactly (A.36)--(A.39) with $J=0$ and allocation (1.3).
-On duplicated data away from the Einstein constraint surface, fix their
-displayed choice of every undifferentiated copy; do not silently change it.
-These equations define $G$ precisely without asserting a new constraint
-propagation theorem. Absorb fixed-reference connection terms into $G$.
+right sides are (A.36)--(A.39) with $J=0$ after the full substitution $P$.
+In (1.6), $d=d_R(PF)$; off the copy diagonal its non-extreme physical
+components are therefore in the circled slots of (1.3).
+The author's displayed choice of every RHS copy is preserved by the
+substitution, not retained as an unchanged printed symbol.
+Calculation 09.2 identifies the fixed-reference connection terms in $G$
+and all symmetrizer/density terms in the energy identity.
 
 Thus, for $F=(\phi,\psi)$,
 
@@ -183,7 +195,7 @@ This is the finite-order shape (3.99). The source theorem also requires
 the complementary sheet constraints to have solutions; (2.2) alone does
 not supply them. Write $I^k_{\rm flux}$ for just the two incoming integrals
 in (2.1); $I^k_{\rm flux}\le C(a,b)I^k$. Neither $I^k$ nor its index is
-identified with the project $\mathcal D^s$ until $C_{\rm SH}$ is proved.
+identified with the project $\mathcal D^s$ until $C_{\rm init}$ is proved.
 
 ## 3. Exact difference equation and all angular principal commutators
 
@@ -257,8 +269,12 @@ derivative is on the bounded backgrounds in (3.1).
 
 ## 4. Proved angular-flux stability lemma and uniformity boundary
 
+The fixed bundle/measure conversion is proved in 09.2. All induced
+connection terms are included in $G$; use $\operatorname{div}_0$ below
+(the notation $\partial_\alpha J^\alpha$ includes reference divergence).
+For nonconstant symmetrizer/density use 09.(2.2)--(2.4).
 For $J^\alpha=\sum_I\langle P_IW,A_1^\alpha P_IW\rangle$, direct
-differentiation with the fixed product density gives
+differentiation with the fixed product density and fixed component metric gives
 
 $$
 \partial_\alpha J^\alpha
@@ -347,89 +363,68 @@ perturbation estimate; it does not follow from (4.3) at the same order.
 No value of $\ell'$ or $C^1$ conclusion is asserted.
 
 For reduced affine incoming paths the free incoming remainder is zero.
-For project paths completed by a nonlinear $C_{\rm SH}$ it would instead
-include $C_{\rm SH}(d+th)-C_{\rm SH}(d)-tDC_{\rm SH}h$; that map and its
+For project paths completed by a nonlinear $C_{\rm init}$ it would instead
+include $C_{\rm init}(d+th)-C_{\rm init}(d)-tDC_{\rm init}h$; that map and its
 bound are themselves open. Equation (5.2) is recorded as algebra, not as
 completion of the later stages after the stop line below.
 
-## 6. First missing outgoing trace estimate: $R_\perp^k$
+## 6. Stage-4.2 transverse estimate and remaining restart gate
 
-The flux estimate does supply the outgoing free slots in
-$L^2_\eta H^k$ at $\xi=a$ and $L^2_\xi H^k$ at $\eta=b$.
-Restarting source (3.99) instead needs $C^j$ in those generator variables,
-the corner compatibility jets, and the complementary constraint solutions.
-
-Already the first step requires bounds for
-
+The full derivation is calculation 09.6--7. For two exact reduced solutions,
 $$
-Z=\partial_\eta W_\phi,\qquad Y=\partial_\xi W_\psi.
-\tag{6.1}
+ Z=\partial_\eta W_\phi,\qquad Y=\partial_\xi W_\psi.       \tag{6.1}
 $$
-
-These are precisely the derivatives not solved algebraically by (3.4).
-Differentiating (3.2) gives, for $V=\partial_\eta W$,
-
+Writing the actual projected equations as 09.(6.1) eliminates
+$\partial_\eta^2F_\psi$ and $\partial_\xi^2F_\phi$ before differencing.
+The exact differentiated difference equations are
 $$
-L_1V=\mathcal B_{12}V+(\partial_\eta\mathcal B_{12})W
--(\partial_\eta c_1)P_\psi\partial_\eta W
--(\partial_\eta A_1^A)D_A^0W,
-\tag{6.2}
+ \partial_\xi Z=B_{z,1}Z+\Delta B_z z_2+\Delta f_z,\qquad
+ (\partial_\eta+v_1^AD_A^0)Y
+ =B_{y,1}Y+\Delta B_y y_2+\Delta f_y-\Delta v^AD_A^0y_2.  \tag{6.2}
 $$
-
-and a mirrored equation for $\partial_\xi W$.
-The first source term includes, after angular commutation to $k-1$,
-
+Every coefficient and source is expanded in 09.(6.3)--(6.6).
+The highest sources are now
 $$
-DA^A(F_\tau)[W]\,\partial_\eta D_A^0F_2,
-\qquad
-DA^\eta(F_\tau)[W]\,\partial_\eta^2(F_2)_\psi,
-\tag{6.3}
+ a_1D^{0,2}W,\quad\Delta a D^{0,2}F_2,\quad
+ D^0W D^0F_i,\quad \Delta v D^0y_2,                    \tag{6.3}
 $$
+not unestimated second null derivatives.
 
-as well as products of first derivatives. Estimate (3.1) controls neither
-$\partial_\eta F_2$ in $H^k$ nor the high mixed derivatives in (6.3).
-The source treats such derivatives separately in (3.34) and following;
-they cannot be absorbed by calling every commutator angular.
-
-The next single PDE lemma to prove is a uniform bound, from **completed
-incoming** $I^{k+\ell}$ data with a stated finite $\ell$, for
-
+Under (3.1), the reference-conversion margins of 09.2,
+$k\ge5$ and bounded background incoming $I^k$ norms, 09.7 proves
 $$
-\begin{aligned}
-\mathcal T_{k-1}(W):={}&
-\sup_\xi\|W_\phi(\xi,\cdot)\|_{C^0_\eta H^{k-1}}
-+\sup_\eta\|W_\psi(\cdot,\eta)\|_{C^0_\xi H^{k-1}}\\
-&+\sup_\xi\|\partial_\eta W_\phi(\xi,\cdot)\|_{L^2_\eta H^{k-1}}
-+\sup_\eta\|\partial_\xi W_\psi(\cdot,\eta)\|_{L^2_\xi H^{k-1}},\\
-\mathcal T_{k-1}(W)\le{}&C(K,M,\mu)\|d_1-d_2\|_{I^{k+\ell}}.
-\end{aligned}
-\tag{6.4}
+\begin{split}
+ \mathcal T_j(W):={}&
+ \sup_\xi\|W_\phi(\xi,\cdot)\|_{C^0_\eta H^j}
+ +\sup_\eta\|W_\psi(\cdot,\eta)\|_{C^0_\xi H^j}\\
+ &+\sup_\xi\|\partial_\eta W_\phi(\xi,\cdot)\|_{L^2_\eta H^j}
+ +\sup_\eta\|\partial_\xi W_\psi(\cdot,\eta)\|_{L^2_\xi H^j},\\
+ \boxed{\mathcal T_{k-3}(W)\le C\|d_1-d_2\|_{I^k}.}
+                                                               \tag{6.4}
+\end{split}
 $$
+This replaces the former unproved level $k-1$ target; the actual proved
+loss is three. Background transverse bounds are derived by the
+single-solution differentiated transports, not assumed for the difference.
+The proof first obtains $\sup_Q\|W\|_{H^{k-1}}\le C\|\Delta d\|_{I^k}$
+using the projected equations and angular flux. This is not a bare
+embedding of $X^k$ into a cut-supremum norm.
 
-The one-dimensional $H^1\to C^0$ trace inequality would give the first
-line after the second is proved. Higher generator derivatives and corner
-jets must then be iterated with their actual losses to regain the full
-restart class; (6.4) alone is not that full theorem. We have not established
-(6.4) from incoming bounds, so $\ell$ is explicitly **unassigned**.
+The Hilbert-valued generator trace inequality
+$\|f\|_{C^0H^j}^2\le2L^{-1}\|f\|_{L^2H^j}^2+
+2L\|f'\|_{L^2H^j}^2$ gives outgoing endpoint values.
+It does not give higher generator jets or the full source (3.99) class.
+The pulse example from Stage 4.1 still rules out a bare $X^k$ trace
+embedding; (6.4) also uses the stronger incoming norm and the PDE.
 
-There is also a subsequent geometric reset to estimate: outgoing optical
-coordinates are generally not affine parameters. Re-affinizing while
-keeping the marked outer cuts produces angle-dependent affine lengths;
-07.9.1 now records these instead of setting them to $U-u$ or $V-v$.
-Preservation of a fixed project input class cannot be inferred from (4.3).
-
-There is no direct embedding $X^k\hookrightarrow C^0_{\xi,\eta}H^{k-1}$:
-even the transport solution $\phi_\epsilon(\xi,\eta,x)
-=\epsilon\chi((\eta-\eta_0)/\epsilon)$, $\psi=0$, constant in $x$, has
-uniform $W^{1,\infty}$ bound, flux size $O(\epsilon^{3/2})$ and cut supremum
-$O(\epsilon)$. This refutes the attempted norm replacement, **not** (6.4),
-whose stronger incoming norm also detects this pulse.
-
-**Stop line:** F3 closes only at angular-flux level; F4 closes only for the
-a priori constants under (3.1); F5 does not close in the source restart
-class. F6 has an a priori estimate and uniqueness but not the required
-Einstein existence/completion theorem; F7 has (5.2) but no estimated
-remainder; F8 and the entire finite-grid Stage H are not entered.
+**Current stop line:** $C_{\rm mix}$ is closed but the constrained
+$C_{\rm init}$ is not. $C_{\rm Bianchi}$, 09.5, must identify the prepared
+geometric data with the complementary source constraints. After that,
+full outgoing generator regularity/corner jets and the reset in 09.9
+remain to be proved. The source $e_4$ is already affine; its optical
+coordinate-speed generator and $e_3$ generally are not. No full restart,
+linearized Einstein existence, quadratic evolution remainder, or
+$P_{\rm cell}^k$ conclusion is drawn.
 
 ## 7. Gauge and verification limits
 
@@ -439,7 +434,7 @@ for transporting differences between data-dependent gauges. The boost from
 the symmetric comparison frame to (1.1) is retained explicitly; it is not
 a proper bulk $\operatorname{Diff}_0$ transformation. Diagonal relabellings
 and opposite boosts remain separate boundary operations. Gauge comparison
-and $C_{\rm SH}$ must be estimated before (4.3) is a framed project-data
+and $C_{\rm init}$ must be estimated before (4.3) is a framed project-data
 estimate.
 
 **Verified:** principal symmetry/time positivity by direct matrix inspection
@@ -448,7 +443,7 @@ V49. The reference-connection commutator is retained, with V51 checking only
 its scalar special case. The angular commutator and weighted-energy proof
 are analytic, with the explicit hypotheses (3.1).
 
-**Not verified:** every Einstein/copy constraint, $C_{\rm SH}$,
-$R_\perp^k$, a uniform data-dependent existence width, a complete restart
+**Not verified:** every Einstein/copy constraint, $C_{\rm init}$,
+the full restart class, a uniform data-dependent existence width, a complete restart
 loss, linearized tangent surjectivity, $P_{\rm cell}^k$ or $P_{\rm rect}^{s,r}$.
 Symbolic checks do not establish any of these statements.

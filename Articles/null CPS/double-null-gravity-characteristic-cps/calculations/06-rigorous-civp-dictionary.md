@@ -27,6 +27,9 @@ Section 4.1 now retains the **original marked hypersurfaces** in the
 Cabet/Stewart gauge. It resolves the parameter-domain problem without
 discarding outer cuts. It does not supply the missing first-order constraint
 completion. Sections 6 and 8 separate that completion from the core map.
+Stage 4.2 closes the mixed second-form transports and constructs the
+free-slot preparation in calculation 09.3--4. The remaining constrained
+completion is $C_{\rm init}$, with the precise $C_{\rm Bianchi}$ gate in 09.5.
 The prescribed finite rectangle remains conditional; no quantization is used.
 
 **Known from literature.**
@@ -453,7 +456,7 @@ The asymmetric PDE frame is forced by $e_3^{\rm C}=\partial_\xi$ on the
 original affine minus interval; it does not replace the default symmetric
 core prescription. On an existing metric, Section 07.3.1 constructs this
 gauge by optical/geodesic transport. It preserves both incoming markings.
-The existence of such a metric **from project data** still needs $C_{\rm SH}$.
+The existence of such a metric **from project data** still needs $C_{\rm init}$.
 
 ## 5. Torsion and normal-frame normalization
 
@@ -581,12 +584,12 @@ the corresponding project core, in the gauge (4.6). This does not construct
 the missing $Y_\pm$ components or their Ricci compatibility. No equality
 between the two independent expansions or shears is imposed.
 
-### Proposed completion 6.3 - not a theorem
+### Proposed minimal initial completion 6.3 - not a theorem
 
 The required map is directly
 
 $$
-C_{\rm SH}:\mathcal D_{\rm char}^{s,\rm fr}
+C_{\rm init}:\mathcal D_{\rm char}^{s,\rm fr}
 \longrightarrow\mathcal I_{\rm Cabet}^{k},
 \tag{6.2}
 $$
@@ -594,8 +597,13 @@ $$
 where the target is the constrained $(e,\Gamma,\Psi)$ initial cross in
 calculation 08, with both sheet transports, common corner values and
 duplicated-Weyl constraints, in the original-sheet gauge (4.6).
-Its complete domain, finite loss, smoothness, inverse and differential have
-**not** been established. Section 8 constructs only $C_{\rm pre}$.
+The target is now the minimal class in 09.4: free incoming slots plus
+existence/compatibility of the source complementary transports, not an
+off-shell spacetime completion. The former name $C_{\rm SH}$ is retired.
+Its full finite loss and constrained differential have **not** been
+established. Section 8 gives $C_{\rm pre}$; 09.3--4 add $C_{\rm mix}$
+and $C_{\rm free}$ with losses four and five respectively. Neither number
+is a proved loss for the full $C_{\rm init}$.
 
 Cabet et al. p. 55 refer to initial fields obtained by a standard procedure.
 They explicitly avoid a direct proof that every solution of their doubled
@@ -672,9 +680,9 @@ yet satisfy the full spacetime transport gauge on both sheets.
 | $D[q_s]-D^0$, local orthonormal dyad | intrinsic metric differentiation, algebra | constructed |
 | $c|_{N_+}=2e^m$, $b|_{N_+}=0$, $e_3|_{N_-}=\ell_-$ | PDE gauge at the incoming cross | fixed |
 | $\chi_0=2e^m B^+_0$, $\underline\chi_0=B^-_0$, $\zeta_0^{\rm C}=\omega^-_0$ | corner frame conversion | constructed |
-| transverse second fundamental form on the opposite sheet | mixed Ricci/null transport | not constructed |
-| remaining $e_i{}^\mu,\Gamma_i{}^j{}_k$ | frame and connection transports | incomplete |
-| $\alpha,\underline\alpha,\beta,\underline\beta,\rho,\sigma$ and duplicated copies | curvature constraints/Bianchi transports | incomplete; source $\sigma$ here is Weyl curvature, not project shear |
+| transverse second fundamental form on the opposite sheet | mixed Ricci/null transport | constructed in 09.3 with loss four |
+| remaining $e_i{}^\mu,\Gamma_i{}^j{}_k$ | frame and connection transports | free slots prepared in 09.4; complementary compatibility open |
+| $\alpha,\underline\alpha,\beta,\underline\beta,\rho,\sigma$ and duplicated copies | curvature constraints/Bianchi transports | free slots prepared in 09.4; full Bianchi/copy compatibility open; source $\sigma$ is Weyl curvature |
 
 ### 8.2 Transport estimates without the word "standard"
 
@@ -751,7 +759,7 @@ $$
 The output norm uses $\mathfrak H^{k+1}$ for $(q,B,\theta,\sigma)$,
 $\mathfrak H^k$ for $(K,\omega)$, and their displayed corner norms.
 The conservative three-level gap includes the original half-order corner
-regularities; it is not a loss computed for $C_{\rm SH}$. The endpoint
+regularities; it is not a loss computed for $C_{\rm init}$. The endpoint
 markings are retained, not differentiated/composed as dynamical unknowns in
 this estimate. Fixed-chart algebraic dyad conversion is smooth at these
 levels by the positive-matrix square-root functional calculus.
@@ -806,7 +814,7 @@ $$
 These equations define $DC_{\rm pre}$ uniquely and give the linearized
 Raychaudhuri and Damour constraints and the derivative of the normal-product
 and corner matching identities. The same Volterra estimates prove (8.7)
-for the differential. They do **not** define $DC_{\rm SH}$.
+for the differential. They do **not** define $DC_{\rm init}$.
 
 On the constrained smooth image, recover $\Omega=\epsilon_q/\nu_0$,
 $\bar q=q/\Omega$, $\theta_{s0}=\operatorname{tr}_{q_0}B_{s0}$,
@@ -816,12 +824,12 @@ of the supplied output; it does not gain angular derivatives or establish
 a finite-Sobolev inverse theorem for the missing full map. It is intrinsic
 under incoming-framing-preserving diffeomorphisms.
 
-### 8.4 First unclosed full-completion sublemma
+### 8.4 Mixed transport starting equation and Stage-4.2 closure
 
 The common corner metric, normal product, both second fundamental forms and
 torsion match under (4.6)--(4.7). Their first variations match by (8.8)--(8.10).
 This verifies the displayed **core corner** conditions, not all curvature
-constraints. A concrete first missing transport is the transverse second
+constraints. A transport that was missing in Stage 4.1 is the transverse second
 fundamental form $\Gamma_A{}^a{}_4$ along $N_-$ (and its mirrored equation).
 With $\mathcal R_{pq}{}^i{}_j=d^i{}_{jpq}$ in vacuum, (5.3b) gives exactly
 
@@ -835,17 +843,23 @@ e_3(\Gamma_A{}^a{}_4)={}&e_A(\Gamma_3{}^a{}_4)+d^a{}_{4,3A}
 \tag{8.11}
 $$
 
-Here $A$ in a connection slot denotes a cut-frame index (not a coordinate
-derivative); $e_A$ is the corresponding frame vector. To obtain a closed
-initial-data ODE hierarchy one must eliminate $d^a{}_{4,3A}$ through the
-Gauss/normal-curvature constraints with the chosen signs, complete the lapse,
-shift and frame rotation transports, and show that the resulting Bianchi
-data (including the duplicated copies) have identical corner values and
-satisfy all tangential equations (5.3). We have **not** done this elimination
-and compatibility proof. This is sublemma $C_{\rm mix}$, the first missing
-part of $C_{\rm SH}$; assigning $d$ freely would change the project data.
-The remaining finite loss and $DC_{\rm SH}$ cannot be declared until it and
-the subsequent curvature transports close.
+Here $A$ in a connection slot denotes a cut-frame index; $e_A$ is
+the corresponding frame vector. Calculation 09.(3.1) now eliminates
+$d^a{}_{4,3A}$ with the source Gauss/normal-curvature identities:
+$d^a{}_{4,3b}=\rho\delta^a_b+\sigma\epsilon^a{}_b$,
+$\rho=-K_q-(\operatorname{tr}\chi\operatorname{tr}\underline\chi
+-\chi:\underline\chi)/2$. The normal Ricci identity cancels the
+antisymmetric part. Equations 09.(3.3),(3.5) are the resulting closed
+linear transports on both sheets. Their differential and quadratic
+remainder have the conservative loss-four estimate 09.(3.9)--(3.10).
+
+Thus $C_{\rm mix}$ is closed. The actual free reduced incoming slots,
+their Weyl reconstruction and dependency table are in 09.4.
+The loss-five $C_{\rm free}$ is not the full constrained $C_{\rm init}$.
+The first unclosed lemma is now $C_{\rm Bianchi}$, beginning with
+09.(5.4), and includes complementary gauge/copy transports and all
+required corner jets. No curvature component is assigned freely to bypass
+this condition. No full $\ell_{\rm init}$ or $DC_{\rm init}$ is declared.
 
 ## 9. Affine endpoint potential, including zero expansion
 
@@ -908,7 +922,7 @@ those checks.
 closed $S$ with fixed reference geometry, positive-area bounds, the selected
 HF cut representative and tangential endpoint variations.
 
-**Not verified/proved:** full $C_{\rm SH}$ or $DC_{\rm SH}$, all curvature
+**Not verified/proved:** full $C_{\rm init}$ or $DC_{\rm init}$, all curvature
 corner constraints, finite-Sobolev frame-gauge equivalence, project-data
 collar bijectivity, tangent surjectivity, $P_{\rm cell}^k$ or
 $P_{\rm rect}^{s,r}$. Source metric existence for complete source data remains

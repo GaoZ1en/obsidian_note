@@ -1,5 +1,86 @@
 # Verification Run Log
 
+## 2026-08-31 - Stage 4.2 initial completion and transverse restart
+
+Continued the existing clean branch codex/double-null-gravity-cps at
+1dd68552 in its existing b557 worktree. Only this project's calculations
+06--09, README/TODO, requested status ledgers and regression artifacts
+were edited. No Stage-0--3 calculation or unrelated note was changed.
+No commit/push, finite-grid continuation or quantization was performed.
+
+**Re-derived here:** full-equation printed/Appendix copy conjugation
+including the connection-row curvature extractor; source-to-reference
+connection/symmetrizer/density identity; both mixed second-form transports
+and loss-four differential/remainder bounds; free-slot preparation with
+loss five; exact transverse difference equations, projected elimination,
+loss-three estimate under 09.7's existing-background hypotheses and the
+one-dimensional outgoing trace estimate; explicit affine/gauge reset
+formulas with a scalar ODE estimate only.
+
+**Not proved:** the constrained C_init. The first remaining lemma is
+C_Bianchi, starting with the vector residual 09.(5.4), followed by its companion Bianchi,
+gauge/copy and corner-jet constraints. Loss five is for C_free only.
+Full restart/reset, Einstein linearized existence and the quadratic
+evolution remainder remain open; P_cell and P_rect remain conditional.
+
+Source evidence: downloaded arXiv:1406.3009v2 PDF and TeX source to the
+task's work/sources directory. Visually inspected PDF pages 52, 67 and 68,
+and checked the source text for Sec. 2, Sec. 5.1, Appendix A.1--A.4,
+(3.34)--(3.42), (3.66)--(3.74), and (3.98)--(3.104).
+The printed lists and literal Appendix rows are not mutually consistent
+off the copy diagonal. The repaired note uses the printed allocation with
+the complete substitution (09.1.4); retaining RHS names unchanged would
+give a different system. Copy equality alone has no closed homogeneous
+propagation law for arbitrary unconstrained reduced initial fields.
+The source p. 55 metric build-up argument remains distinguished from a
+direct finite-regularity Einstein subsidiary theorem.
+
+MSP 2205.15267v2 Definition 7.5 / (122)--(124), MSP 2301.02722
+Definition 4.6 / (69)--(72), Theorem 4.17 and Remark 5.6, and Luk
+1107.0898 Definition 1 / (8)--(11) were checked as comparisons only.
+They are not substitutes for the missing C_Bianchi calculation.
+No new claims were imported from the optional CTWG/HVKZ sources.
+
+Executed through the Mathematica MCP, reading the saved script:
+Get[".../scripts/stage42_initial_transverse_checks.wl"].
+Result: all 12 labelled V54--V59 checks passed; the two added V64 scalar residuals were zero (14 checks total). V54--V55 check the mixed
+matrix/Gauss/normal-Ricci identities; V56 checks P squared, the null
+allocation, copy ideal and all four angular blocks; V57 confirms the
+unchanged-RHS counterexample has value -3; V58 checks the variable
+density/symmetrizer product rule; V59 checks both differentiated
+projected systems in a nonlinear scalar prototype. That prototype
+checks algebra, not the full nonlinear Einstein compatibility hierarchy.
+
+Executed through the dedicated xAct core verify-residuals tool:
+V60 Gauss contraction, V61 mixed Ricci antisymmetric cancellation,
+V62 Codazzi beta contraction, and in a separate fresh kernel V63
+Gaussian curvature variation with xPert. Pipeline canonical_contract; all four
+final residuals were zero, with no load/setup/check messages or
+truncation. The structured result is in stage42_xact_results.md.
+This is not a PDE proof and does not verify C_Bianchi.
+
+Late analytic advancement: both minus-sheet scalar Bianchi constraints
+A.37b--c are proved in 09.(5.1)--(5.3) by curvature variation, Codazzi and
+Cayley--Hamilton cancellation. The actual first remaining identity is
+the A.38c vector residual (5.4), including generator variation of the
+cut connection and dyad. Opposite-sheet, full gauge/copy and corner-jet
+compatibility remain unproved.
+
+The analytic estimates are proved in calculation 09, independently of
+the regressions. They retain their actual coefficient, geometric,
+regularity and existing-solution assumptions. Historical entries below
+are preserved and superseded where Stage 4.2 explicitly changes status.
+
+
+Final audit: git diff --check passed. All 15 changed/untracked files
+are inside this project; the original RUN_LOG body is unchanged.
+Display-math delimiters are paired. Branch remains
+codex/double-null-gravity-cps; no commit or push was made.
+Source PDF SHA-256:
+04616cd19e4878bb3801bdaf40907a3a7bd879306a49e0272b8ad84c4ff41a13.
+Source TeX archive SHA-256:
+f876d4a4b2f782148f0a5116294ba4b439b77492f6428d33cb50f2a8ee6c52a4.
+
 ## 2026-08-31 — Stage-4.1 truth-boundary repair and first PDE estimate
 
 This entry supersedes the earlier Stage-4 germ/collar bijection and full

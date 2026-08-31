@@ -2,23 +2,23 @@
 
 ## Direct verdict
 
-**Established:** Stages 0--3 retain their classical characteristic-form and
-interface-algebra scope. Stage 4.1 repairs the smooth splitting prescription,
-global reference density and affine endpoint chart, preserves the original
-marked sheets in a Cabet gauge, and constructs a partial completion
-$C_{\rm pre}$ with explicit Volterra/Moser and linearized estimates.
+**Established:** Stages 0--3 retain their classical characteristic-form
+and interface-algebra scope. Stage 4.2 fixes the full copy convention,
+proves the fixed-reference energy conversion, closes $C_{\rm mix}$ with
+conservative loss four and constructs $C_{\rm free}$ with loss five.
+For already existing reduced solutions under the explicit bounds in 09.7,
+$R_\perp^k$ is proved with loss three, including first outgoing $C^0$ traces.
 
-**Not proved:** the full $C_{\rm SH}$, project-data framed germ/collar
-bijection, full linearized tangent surjectivity, or $P_{\rm cell}^k$.
-The intrinsic EH identity holds for compatible existing variations and on
-the image of any actually constructed lift. Abstract extra outer ports are
-excluded unless $P_{\rm red}$ supplies their action-derived definitions.
+**Not proved:** the constrained $C_{\rm init}$ or its derivative loss,
+full restart/gauge reset, project-data framed germ/collar bijection,
+Einstein tangent surjectivity, or $P_{\rm cell}^k$.
+The first remaining lemma is $C_{\rm Bianchi}$, 09.5, starting with
+the explicit residual (5.4). A free-slot estimate is not a completed
+Einstein initial-data theorem.
 
-The new PDE result is an angular-flux difference estimate for already
-existing reduced solutions, calculation 08.(4.3). The first missing
-estimate is $R_\perp^k$, the outgoing transverse-derivative/trace bound
-08.(6.4). The prescribed-rectangle $P_{\rm rect}^{s,r}$ remains conditional;
-no finite-grid induction or quantization is begun.
+The intrinsic EH identity retains its restriction/constructed-image scope.
+The prescribed-rectangle $P_{\rm rect}^{s,r}$ remains conditional.
+No finite-grid continuation or quantization is begun.
 
 The fixed-affine bulk data are
 
@@ -106,15 +106,18 @@ What is established is precise:
 - `calculations/06-rigorous-civp-dictionary.md` proves the exact
   $\gamma,\chi,\underline\chi,\zeta$ dictionary, including
   $\zeta=-\widehat\omega$ in the symmetric normalized frame, and separates
-  the smooth core equivalence from full $C_{\rm SH}$ and MSP completion;
-  its new partial-completion estimates do not close those full maps;
+  the smooth core equivalence from full $C_{\rm init}$ and MSP completion;
+  09.3 closes the mixed second-form part, while the full constrained map remains open;
 - `calculations/07-framed-development-map-and-solution-space.md` defines the
   framed quotient and fixed-metric framing lemma, conditions project-data
   germ/collar bijectivity, and proves the intrinsic restriction/image
   identity without claiming full tangent surjectivity;
 - `calculations/08-uniform-one-cell-characteristic-stability.md` gives the
-  actual doubled Weyl system, angular-flux difference estimate, exact
-  remainder equation and the first unclosed restart estimate;
+  printed-allocation doubled Weyl system, angular-flux difference estimate,
+  exact remainder equation and Stage-4.2 transverse estimate;
+- calculation 09 proves the full copy conjugation, reference energy lemma,
+  mixed transports, free-slot estimates and loss-three transverse bound,
+  and records the exact remaining Bianchi/restart/gauge gates;
 - for every particular full-rectangle development that exists, the outgoing
   cross is geometric, EH current conservation equates the input/output
   forms under the stated side-boundary assumptions, and full-DND
@@ -157,7 +160,10 @@ post-CIVP construction belongs here.
   solution quotient, conditional project-data development, intrinsic
   restriction/image identity, output, and composition.
 - `calculations/08-uniform-one-cell-characteristic-stability.md`: exact
-  reduced-system splitting, flux stability and the $R_\perp^k$ stop line.
+  reduced-system splitting, flux stability and the first transverse estimate.
+- `calculations/09-stage4.2-initial-completion-and-transverse-restart.md`:
+  full source conjugation, fixed-reference energy, $C_{\rm mix}$,
+  $C_{\rm free}$, $R_\perp^k$ and the $C_{\rm Bianchi}$ stop line.
 - `verification/STAGE1_AUDIT_SUMMARY.md`: concise proved/conditional/open
   verdict.
 - `verification/STAGE2_1_AUDIT_SUMMARY.md`: concise Stage-2.1 answer sheet and
@@ -188,6 +194,10 @@ post-CIVP construction belongs here.
   the tracefree Lie and cut integration-by-parts identities.
 - `scripts/stage41_truth_boundary_checks.wl` and
   `scripts/stage41_xact_checks.wl`: scoped Stage-4.1 regressions.
+- `scripts/stage42_initial_transverse_checks.wl` and
+  `scripts/stage42_xact_checks.wl`: V54--V64 regressions only.
+- `scripts/stage42_curvature_variation_xact.wl`:
+  independent curvature-variation regression V63.
 - `scripts/README.md`: command and evidence boundary.
 
 ## Source discipline
@@ -198,27 +208,24 @@ forms are regression checks, not input assumptions.  The existing literature
 note `Literature Notes/Quantization of Gravity on Null Hypersurfaces
 (2607.07785v1).md` was read as a convention audit and was not modified.
 
-## Stage-4.1 required verdict
+## Stage-4.2 required verdict
 
-1. **Full marked-sheet project-to-PDE dictionary: not proved.** The smooth
-   core equivalence uses the fixed prescription $a_\pm[m]$; the direct
-   Cabet gauge preserves both original sheets and outer cuts. Full
-   connection/curvature completion is still open.
-2. **$C_{\rm SH}$: incomplete.** $C_{\rm pre}$ and $DC_{\rm pre}$ are
-   constructed with smooth/Lipschitz estimates for $3\le k\le s-3$.
-   The full map, its derivative loss and $DC_{\rm SH}$ are not proved.
-3. **Framed local/collar bijectivity: conditional.** Fixed-metric framing
-   uniqueness is proved before optical breakdown; complete project-to-PDE
-   initial data and finite-regularity gauge comparison remain required.
-4. **Presymplectic identity: restriction/constructed-image only.** It holds
-   for compatible existing variations and any actually constructed lift,
-   with $\Omega_{\rm char}^{\rm intr}$. Full tangent-space surjectivity is
-   not proved. Extended auxiliary ports require $P_{\rm red}$.
-5. **$P_{\rm cell}^k$: not proved.** Angular-flux stability for existing
-   reduced solutions is proved; the first missing estimate is $R_\perp^k$,
-   calculation 08.(6.4), controlling mixed sources (6.3) and outgoing traces.
-6. **$P_{\rm rect}^{s,r}$: still conditional.** No finite-grid proof or
-   unproved numerical regularity threshold is retained.
-7. **Next single PDE lemma:** prove $R_\perp^k$ from completed incoming
-   norms with a tracked finite derivative loss. The upstream initial-data
-   sublemma is $C_{\rm mix}$, calculation 06.(8.11).
+1. **Copy system:** a slot-only swap with unchanged RHS is false.
+   Calculation 08 now uses the printed allocation with the full conjugation
+   09.(1.4), exactly equivalent to the literal Appendix equations.
+2. **Fixed reference energy:** proved with the explicit metric, density,
+   connection and coefficient margins in 09.2.
+3. **$C_{\rm init}$:** not proved. $C_{\rm free}$, its differential and
+   quadratic remainder have conservative loss five, 09.(4.3); no full
+   initial-completion loss is assigned.
+4. **$C_{\rm mix}$:** proved by 09.(3.3),(3.5), with conservative loss four
+   and the same loss for its differential and quadratic remainder.
+5. **$R_\perp^k$:** proved for existing reduced solutions under 09.7,
+   with loss three. This is not a project-data Einstein existence theorem.
+6. **Outgoing traces:** first $C^0$ traces are controlled; full generator
+   jets, complementary constraints and bounded reset are not.
+7. **$P_{\rm cell}^k$:** not proved. The first remaining initial lemma is
+   $C_{\rm Bianchi}$, beginning with 09.(5.4); full restart, linearized
+   Einstein existence and the quadratic evolution remainder also remain.
+8. **$P_{\rm rect}^{s,r}$:** conditional; no finite-grid continuation,
+   guessed global threshold, or quantization.
