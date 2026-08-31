@@ -1,5 +1,110 @@
 # Verification Run Log
 
+## 2026-08-31 - Stage 4.3 Bianchi completion and reduced restart hierarchy
+
+Continued the clean existing codex/double-null-gravity-cps branch at
+d19d2c8d in /Users/koishi/.codex/worktrees/b557/Note. The main Note
+checkout was on main with unrelated changes; it was inspected read-only
+and was not switched, edited, staged or committed. All repository edits
+in this run are within this double-null project. No commit or push.
+
+Added calculation 10, three scoped regression scripts and the final xAct
+structured result. Updated calculation 09's current-status notice and
+the exact closure of (5.4); calculations 06--08 received status notices
+only, preserving their derivations and the exact evolution remainder.
+Updated README/TODO and all three requested status ledgers. Earlier run
+entries below are preserved.
+
+**Re-derived here:** coordinate and parallel-frame tensor commutators,
+including inverse metric, epsilon, dyad rotation and lapse derivatives;
+the exact off-Gauss identity E_beta = -2 R_Gauss zeta; the own-vector
+Bianchi identity; the weighted mirror and all five plus Bianchi rows;
+opposite-extreme ODEs with fixed corner data; explicit frame, rotation,
+torsion and nonaffinity completion; an augmented homogeneous initial
+subsidiary system. C_init and its differential/completion remainder have
+sufficient loss five in the free-slot I^k norm, six in the fully filled
+J^k norm. These are not asserted optimal.
+
+The pure-generator exact reduced-solution hierarchy has the derived
+recurrence d_r = 2r+1 with the stated background bounds, not a guessed
+3r. Hilbert-valued traces supply every outgoing free jet required by
+the source class. Combined with the separately cited reduced Theorem 3.9,
+the local regular-neighborhood restart has sufficient input index 2k+8
+for output I^k. This is not a global regularity threshold or an Einstein
+range theorem.
+
+**Reset stop line:** the flow/inverse Jacobian and scalar affine-factor/
+length estimates are derived, together with the necessary refoliated
+normal and normal-connection formulas. The full moving-cut, inverse-graph,
+tensor-composition and all-generator-jet estimate 10.(7.6) is not proved.
+No full reset loss is assigned. Bulk Einstein/copy/metricity propagation
+is a separate unproved prerequisite for interpreting reduced output as
+geometric vacuum data. The direct finite-regularity subsidiary route is
+selected for the next Einstein-identification step; reduced uniqueness
+is not substituted for it. The evolution remainder was not reopened.
+P_cell and P_rect remain conditional. No finite grid, quantization,
+novelty claim or intrinsic/auxiliary-port identification.
+
+Primary source evidence:
+
+- Downloaded arXiv:1406.3009v2 PDF and TeX archive in the current task's
+  work/ directory, not in the Note vault.
+- Visually checked PDF pages 60, 61 and 67; checked the TeX for the
+  normal/coefficient conventions, the e3/e4 transformation law, A.36--A.39,
+  and (3.34), (3.66)--(3.74), (3.88)--(3.102).
+- PDF SHA-256:
+  04616cd19e4878bb3801bdaf40907a3a7bd879306a49e0272b8ad84c4ff41a13.
+- TeX archive SHA-256:
+  f876d4a4b2f782148f0a5116294ba4b439b77492f6428d33cb50f2a8ee6c52a4.
+
+Executed through the Mathematica MCP in fresh kernels:
+
+1. scripts/stage43_bianchi_jets.wl: **14/14 PASS**. Independent symmetric
+   X,H; arbitrary first DX,DH,Dz and tracefree A,DA; second Dz has only
+   the explicitly imposed cut-curvature commutator. No Bianchi equation
+   is a substitution rule. V66 retains rho independent first and gives
+   the stated off-Gauss residual before setting Gauss to zero. V68
+   checks the weighted mirror; V69 substitutes explicit 4x4 connection
+   matrices into source (5.3b), including the two zeta rows and nu/rotation.
+2. scripts/stage43_hierarchy_reset_checks.wl: **17/17 PASS**. Ten
+   principal checks at generator orders 1--3 in a nonlinear scalar
+   prototype, one triangular residual product rule, and six affine/
+   null-rotation identities. V71 is not a full tensor or PDE regression;
+   V72 is not a Sobolev reset proof.
+3. Existing scripts/stage42_initial_transverse_checks.wl: all 12 V54--V59
+   checks passed and both V64 scalar residuals were zero (14 checks).
+
+Executed through the dedicated xAct core tools:
+
+- scripts/stage43_commutators_xact.wl, then a fresh labelled
+  canonical_contract verification: **6/6 zero**, allZero=true, no load,
+  setup or check messages, no unknown heads or truncation. Exact
+  structured result: verification/stage43_xact_results.md.
+- Existing stage42_curvature_variation_xact.wl: result 0, no messages.
+
+Exploratory failures were not counted as evidence: one xAct call ended
+without a structured payload; the first vector test used the output
+connection slot in the wrong argument position and was corrected from
+the coordinate formula; the first Bianchi-script run had an extra
+parenthesis. The saved scripts were rerun after those repairs.
+
+The **37 new labelled checks are regressions only**. The analytic proofs
+and their hypotheses are calculation 10, not inferred from a pass count.
+Not verified by this run: full reset, bulk Einstein identification,
+Einstein tangent surjectivity, one-cell C1 or prescribed-rectangle existence.
+
+Pre-edit RUN_LOG SHA-256:
+246b1e2f105f84309b1b38b04fdbaf7c2f6391f855d90098b1fdc69137aaee7b.
+The pre-existing body is retained after this inserted entry.
+
+Final artifact audit: branch unchanged; all 16 changed/untracked repository
+paths are inside this project. The old RUN_LOG body and the entire old
+calculation 06--08 bodies are byte-preserved after their inserted notices.
+git diff --check passed. Pandoc parsed calculation 10 without warnings:
+60 display-math blocks, 425 total math nodes and 51 unique equation tags.
+The saved xAct JSON parsed with six zero checks and no messages.
+No TeX regeneration, commit or push was performed.
+
 ## 2026-08-31 - Stage 4.2 initial completion and transverse restart
 
 Continued the existing clean branch codex/double-null-gravity-cps at

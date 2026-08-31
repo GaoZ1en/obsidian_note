@@ -1,5 +1,13 @@
 # 06 - Rigorous CIVP dictionary and framed data spaces
 
+**Stage 4.3 status override:** the initial $C_{\rm Bianchi}$/$C_{\rm init}$
+obligations recorded below are closed by calculation 10.1--4, with loss
+five in the free-slot norm and six for all filled slots, including
+differentials/remainders. This does not complete MSP's full $Y_\pm$,
+the bulk Einstein-identification theorem, gauge reset, or a framed
+development bijection. The derivations and older stage-local status
+statements in this dictionary are otherwise preserved.
+
 ## 0. Direct verdict and provenance
 
 **Proved: the sheetwise core tensor dictionary and its smooth-category

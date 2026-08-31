@@ -1,5 +1,28 @@
 # Verification scripts
 
+## Stage 4.3
+
+Run stage43_bianchi_jets.wl and stage43_hierarchy_reset_checks.wl through
+the Mathematica MCP in separate fresh kernels. They contain respectively
+14 and 17 labelled checks. V66 checks the off-Gauss residual
+$\mathcal E_{\beta,-}=-2R_{\rm Gauss}\zeta$ before imposing Gauss;
+V67 uses independent $DH,DA$ jets. V68--V69 check the weighted mirror
+and direct source connection rows. V70 is the residual block product rule;
+V71 checks orders 1--3 in a nonlinear scalar prototype, not the full
+tensor/PDE hierarchy. V72 checks affine/null-rotation identities including
+the refoliated normal connection, not a Sobolev reset estimate.
+
+Run stage43_commutators_xact.wl through the dedicated xAct core tool,
+then verify its six labelled residuals with canonical_contract in a fresh
+kernel. Final structured output is in stage43_xact_results.md.
+
+The 37 new labelled checks are regressions only. Full initial compatibility
+and the pure-generator estimates have analytic proofs in calculation 10.
+No check proves bulk Einstein propagation, the full reset, $P_{\rm cell}$,
+or $P_{\rm rect}$.
+
+## Historical scripts
+
 Run from the project root:
 
 ```text

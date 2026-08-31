@@ -1,5 +1,14 @@
 # 07 - Framed development map and solution-space pullback
 
+**Stage 4.3 status override:** calculation 10 closes constrained initial
+completion and its differential/remainder, and proves a local reduced
+restart theorem. The corresponding earlier prerequisite statements below
+are now discharged in that precise scope. Bulk Einstein identification,
+the full affine reset, linearized Einstein existence and the evolution
+remainder are not discharged. All framed metric-bijection, full-tangent
+and $P_{\rm cell}^k$/$P_{\rm rect}^{s,r}$ conclusions remain conditional;
+the intrinsic/extended-port distinction is unchanged.
+
 ## 0. Direct verdict
 
 **Not proved by the current completion: a project-data framed germ/collar

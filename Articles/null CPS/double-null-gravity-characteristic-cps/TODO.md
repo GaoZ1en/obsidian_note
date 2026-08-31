@@ -1,8 +1,35 @@
 # Immediate Research Tasks
 
-**Stage 4.2 theorem boundary.** Stages 0--3 stay classical.
-The full constrained initial completion and $P_{\rm cell}^k$ remain
-unproved. No quantization or finite-grid continuation.
+**Stage 4.3 theorem boundary.** Stages 0--3 stay classical.
+Initial completion and local reduced restart are proved in calculation 10;
+full project reset and bulk Einstein identification are not.
+$P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional.
+No quantization or finite-grid continuation.
+
+- [x] Close 09.(5.4), its mirror, all initial Bianchi transports and the
+  augmented initial gauge/copy subsidiary system. Check: 10.1--4.
+- [x] Construct $C_{\rm init}$, differential and completion remainder:
+  loss five in $I^k$, six in the full-cross $J^k$ norm. Check: 10.4.3.
+- [x] Prove the pure-generator exact-difference hierarchy, loss $2r+1$,
+  all source-class endpoint traces, and the local reduced
+  $I^{2k+8}\to I^k$ restart theorem. Check: 10.5--6; not Einstein restart.
+- [ ] **First reset lemma:** prove 10.(7.6), the complete moving-cut,
+  inverse-graph and label-composition estimate for
+  $\zeta-HD f+\kappa Df+D_{\rm new}\log a$, with every required generator
+  jet and endpoint trace. Derive, do not assign, $\ell_{\rm reset}$.
+- [ ] **Independent Einstein gate:** derive a direct finite-regularity bulk
+  torsion/curvature/copy/gauge subsidiary theorem for 09.(1.4), using the
+  completed initial constraints. Initial-sheet ODE uniqueness is not this
+  theorem; reduced output cannot yet be called geometric vacuum data.
+- [ ] Only after these gates, construct the Einstein tangent lift and bound
+  every source in 08.(5.2). Do not identify the completion remainder with
+  the evolution remainder.
+
+## Historical Stage-4.2 checklist
+
+Open initial/reduced-jet items below record that stage; their current
+status is the Stage-4.3 checklist above. Unrelated deferred items remain
+unchanged.
 
 - [x] Resolve the printed/Appendix copy mismatch with full-equation $P$,
   including every RHS copy and the connection-row Weyl extractor.

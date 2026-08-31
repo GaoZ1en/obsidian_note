@@ -1,5 +1,13 @@
 # 09 - Stage 4.2: initial completion and transverse restart
 
+**Stage 4.3 update:** calculation 10 closes the Bianchi/initial subsidiary
+gate below, constructs $C_{\rm init}$ with loss five in the free-slot
+$I^k$ norm (six in the full-cross $J^k$ norm), and proves the pure-generator
+loss law $2r+1$ and local reduced restart. Its Sections 7--8 give the current
+reset/bulk-Einstein stop line. The Stage-4.2 status statements below are
+retained as a historical record, not the current verdict. No cell/rectangle
+upgrade follows.
+
 ## 0. Verdict and scope
 
 **Proved here:** the precise full-equation copy relabelling; the
@@ -536,7 +544,7 @@ V63 checks the curvature variation with xPert; V64 checks the final
 scalar cancellations. The written tensor/density argument supplies the
 analytic proof, not the regressions alone.
 
-The **first remaining unproved identity** is now the middle vector row
+The **first remaining unproved identity at the end of Stage 4.2** was the middle vector row
 A.38c on $N_-$:
 $$
  \boxed{\mathcal E_{\beta,-}:=
@@ -544,7 +552,11 @@ $$
        -2\widehat X\cdot\underline\beta
        -3(\zeta\rho+{}^\star\zeta\,\sigma)=0 .}         \tag{5.4}
 $$
-Here $\beta$ must be the Codazzi expression (4.2). One must expand its
+Calculation 10.(2.7) now proves this residual is $-2R_{\rm Gauss}\zeta$,
+hence zero for the prepared data, using (4.2) and the full tensor commutator.
+Calculation 10.3--4 closes its mirrored/gauge/copy companions.
+The original Stage-4.2 obligation was as follows:
+here $\beta$ must be the Codazzi expression (4.2). One must expand its
 generator derivative, including the derivative of the cut connection and
 dyad, and prove (5.4), then the remaining vector/opposite-sheet constraints,
 opposite-extreme transports and all gauge/corner jets. This round does

@@ -1,5 +1,14 @@
 # 08 - Uniform one-cell characteristic stability and Stage-4.2 transverse estimate
 
+**Stage 4.3 status override:** calculation 10 proves the initial
+completion/differential/remainder and extends the exact reduced-solution
+pure-generator estimates to loss $2r+1$, including a local
+$I_{\rm in}^{2k+8}\to I_{\rm out}^k$ reduced restart theorem.
+The earlier initial/full-source-jet gaps below are superseded in that
+scope. The exact evolution remainder (5.2) and all conditional Einstein
+one-cell/rectangle statements are unchanged: full reset and bulk Einstein
+identification still have to be proved.
+
 ## 0. Direct verdict
 
 **Proved here:** an angular $H^k$ difference estimate for existing reduced

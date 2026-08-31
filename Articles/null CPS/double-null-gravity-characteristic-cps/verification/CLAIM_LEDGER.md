@@ -6,6 +6,9 @@ Allowed status vocabulary:
 
 ## Stage 0
 
+Current development overrides are the Stage-4.3 rows below; Stage-4.2 rows
+retain their historical proof scope. No Stage-0--3 claim is upgraded.
+
 | ID | Claim | Status | Assumptions | Evidence | Remaining boundary |
 |---|---|---|---|---|---|
 | C0-projector | $q_{ab}=g_{ab}-\mu_{+-}^{-1}(\ell_{+a}\ell_{-b}+\ell_{-a}\ell_{+b})$ projects orthogonally to both null normals | proved | $\mu_{+-}=-e^{-m}\neq0$ | direct contractions; matrix regression V0 | none |
@@ -86,7 +89,7 @@ Allowed status vocabulary:
 | C4-dictionary-symbols | Normalization, torsion sign and affine endpoint algebra | checked symbolically | V42--V47, V50 | no existence or surjectivity conclusion |
 | C4-MSP-completion | Full MSP transverse $Y_\pm$ completion from project data | open | 06.6.2 | completed DND and Ricci compatibility are prerequisites of the cited theorem |
 | C4-SH-pre | $C_{\rm pre}$ and $DC_{\rm pre}$ with smooth/Lipschitz finite-scale estimates | proved | 06.(8.1)--(8.10) | $3\le k\le s-3$, uniform positive margins; partial fields only |
-| C4-SH-completion | Full constrained $C_{\rm init}$ and its differential | open | 09.5: $C_{\rm Bianchi}$ | mixed transport closed; complementary Bianchi/gauge/copy compatibility and full loss open |
+| C4-SH-completion | Constrained incoming $C_{\rm init}$, differential and remainder | proved | 10.1--4 | loss five in free-slot $I^k$, six in filled-cross $J^k$; not bulk Einstein propagation |
 | C4-affine-endpoint | Affine endpoint/corner potential valid through $\theta_s=0$ | proved | 06.(9.1)--(9.3); HF compensator derivation | fixed affine cuts, tangential endpoint variations, positive area |
 | C4-cited-metric | Metric local/neighborhood existence for complete smooth source data | proved | Cabet Theorem 5.3; Rendall/Luk; MSP for completed DND | known from literature; does not itself construct project $C_{\rm init}$ |
 | C4-germ-map | Framed project-data development/restriction bijection near the corner | conditional | 07.3 | full completion, source constraints and framed PDE uniqueness required |
@@ -94,9 +97,9 @@ Allowed status vocabulary:
 | C4-general-Sobolev-chart | Source Einstein theorem directly supplies the exact project finite-Sobolev chart | false | Cabet p.54--55 | finite-loss tracking and direct doubled-system constraint propagation not supplied there |
 | C4-framing-uniqueness | Unique framing extension of an existing metric in the fixed gauge | proved | 07.3.1 eikonal/transport lemma | common regular optical neighborhood; no finite-Sobolev gauge estimate |
 | C4-angular-flux | Angular $H^k$ flux difference estimate with zero reduced incoming loss | proved | 08.(3.1)--(4.3) | two already existing reduced solutions; $k\ge3$, high angular and full $W^{1,\infty}$ bounds |
-| C4-cell-estimate | Full uniform Einstein one-cell theorem $P_{\rm cell}^k$ | conditional | 08.6 | loss-three transverse bound proved in 09.7; full initial/restart, linearized existence and remainder open |
+| C4-cell-estimate | Full uniform Einstein one-cell theorem $P_{\rm cell}^k$ | conditional | 08.6; 10.7--8 | initial and reduced restart gates closed; project reset, bulk Einstein identification, tangent existence and evolution remainder open |
 | C4-rectangle-map | Background-nearby project data develop on a prescribed full rectangle | conditional | 07.6; $P_{\rm rect}^{s,r}$ | completion, cell, restart/gauge and target-chart gates retained; grid not begun |
-| C4-linearized-local | All project tangents and all framed linearized metric solutions are in bijection | conditional | 07.7 | $DC_{\rm init}$, linearized constraints and gauge exhaustion not proved |
+| C4-linearized-local | All project tangents and all framed linearized metric solutions are in bijection | conditional | 07.7; 10.4 | $DC_{\rm init}$ proved; bulk linearized constraints, existence and gauge exhaustion not proved |
 | C4-C1 | Nonlinear Banach $C^1$ chart with linearized Einstein derivative and inverse | conditional | 08.5--6; 07.6 | no assigned full derivative loss or target openness |
 | C4-solution-pullback | Intrinsic EH identity for restrictions / any constructed lift image | proved | 07.(7.3)--(7.4); 06.9 | no full tangent surjectivity; no full lift constructed in this round |
 | C4-rectangle-pullback | Full-rectangle nonlinear pullback equals $\Omega_{\rm char}^{\rm intr}$ | conditional | 07.(7.5) | requires full framed $P_{\rm rect}^{s,r}$ |
@@ -109,7 +112,7 @@ Allowed status vocabulary:
 | C4-global | Arbitrary-data existence on an arbitrary prescribed finite rectangle | false | focusing and source scope | no such theorem is claimed |
 
 
-## Stage 4.2 additions
+## Stage 4.2 additions (historical scope, superseded by Stage 4.3 below)
 
 | ID | Claim | Status | Evidence | Exact boundary |
 |---|---|---|---|---|
@@ -123,7 +126,26 @@ Allowed status vocabulary:
 | C42-transverse | Exact reduced-solution $R_\perp^k$ with loss three | proved | 09.6--7 | existing solutions, high angular/coefficient and bounded incoming-background norms |
 | C42-trace | First outgoing $C^0$ free-slot traces | proved | 09.(7.7)--(7.8) | not full generator jets or source restart class |
 | C42-reset | Full bounded geometric reset into incoming class | open | 09.9 | scalar ODE estimate proved; flow/composition, jets and constraints remain |
-| C42-cell | One-cell Einstein $C^1$ map | conditional | 09.8 | initial completion, full restart, linearized existence and remainder not closed |
+| C42-cell | One-cell Einstein $C^1$ map | conditional | 09.8 | Stage-4.2 boundary; current remaining gates are C43-reset/C43-Einstein and the evolution remainder |
+
+## Stage 4.3 current initial and restart status
+
+| ID | Claim | Status | Evidence | Exact boundary |
+|---|---|---|---|---|
+| C43-commutator | Full metric/frame/rotation/lapse tensor commutators | proved | 10.1 | fixed conventions and parallel or explicitly rotated cut frames |
+| C43-Bianchi | All initial Bianchi rows on both sheets | proved | 10.2--3; 09 scalar proof | identities for dependent curvatures; opposite extremes solved with fixed corner values |
+| C43-initial-subsidiary | Augmented homogeneous initial system for constraints/copies/gauge | proved | 10.(4.6)--(4.8) | entire supplied initial segments; not a bulk or copy-only propagation theorem |
+| C43-init | $C_{\rm init}$, $DC_{\rm init}$ and quadratic completion remainder | proved | 10.4.3 | sufficient loss five in $I^k$, six in $J^k$; fixed positive-margin framed chart |
+| C43-jets | Pure-generator exact reduced-solution difference hierarchy | proved | 10.5 | loss $2r+1$, specified high backgrounds, $N\ge2R+3$; not all mixed jets |
+| C43-traces | Every free outgoing $r\le k$ jet has continuous endpoints in $H^{k-r}$ | proved | 10.6 | uses one additional generator jet and Hilbert-valued trace estimates |
+| C43-restart | Local reduced $I_{\rm in}^{2k+8}\to I_{\rm out}^k$ map | proved | 10.(6.3)--(6.4), reduced Cabet Theorem 3.9 | regular neighborhood with bounded complementary transports and common local width; not Einstein output |
+| C43-reset-pieces | Label flow/inverse margins, scalar affine factor/length and null-rotation formulas | proved | 10.7.1--3 | supplied regular coefficients; not the full all-jets reset estimate |
+| C43-reset | Full $G_{\rm reset}$ into project affine data | open | first missing estimate 10.(7.6) | moving-cut tensor composition/all jets and geometric input; no full loss assigned |
+| C43-Einstein | Finite-regularity bulk Einstein/copy/gauge propagation | open | 10.8 | direct subsidiary route selected; initial-sheet uniqueness is insufficient |
+| C43-cell | One-cell Einstein $C^1$ theorem | conditional | 10.8 | reset, bulk identification, Einstein tangent existence and evolution remainder still open |
+
+No rectangle, finite-grid, novelty, quantization or auxiliary-port claim is
+promoted by the new derivative bookkeeping.
 
 ## Verification ledger
 

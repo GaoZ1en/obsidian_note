@@ -12,16 +12,19 @@ and general fixed-incidence endpoint cotangent composition.
 Stage 4.1 proves the core dictionary on a smooth splitting slice, a
 global reference-density affine chart, an endpoint potential through
 $\theta=0$, partial completion estimates and fixed-metric framing
-uniqueness. Full $C_{\rm init}$ and project-data framed germ/collar
-bijectivity remain unproved. The intrinsic EH restriction identity is
+uniqueness. Stage 4.3 constructs $C_{\rm init}$, while project-data framed
+germ/collar bijectivity remains unproved. The intrinsic EH restriction identity is
 proved for compatible existing linearized variations, hence on any
 constructed lift image; full tangent surjectivity is not proved.
 
 Calculations 08--09 prove angular-flux stability and $R_\perp^k$ with
 loss three for existing reduced solutions under explicit background bounds.
-Stage 4.2 closes $C_{\rm mix}$ (loss four) and $C_{\rm free}$ (loss five),
-not the constrained $C_{\rm init}$. Its first remaining lemma is
-$C_{\rm Bianchi}$, 09.5. Full source restart jets and reset remain open.
+Stage 4.3 closes both-sheet initial Bianchi/gauge/copy compatibility,
+$C_{\rm init}$ and its differential/completion remainder: loss five in
+free-slot $I^k$, six in filled-cross $J^k$. It proves the pure-generator
+reduced difference loss $2r+1$ and a local reduced
+$I^{2k+8}\to I^k$ restart theorem. Full affine reset and bulk Einstein
+constraint propagation remain open; the first reset estimate is 10.(7.6).
 $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional. Extended
 abstract ports still require the separate action-derived $P_{\rm red}$.
 
@@ -268,9 +271,15 @@ boundary charge, not a central extension.  This is a theorem on the declared
 reduced characteristic constraint surface, not an unreduced off-shell
 spacetime theorem.
 
-## 3. Stage-4.2 development and solution-space truth boundary
+## 3. Stage-4.3 development and solution-space truth boundary
 
-The authoritative detailed statements are calculations 06--08 and
+Calculation 10 supersedes the initial-completion and reduced-restart gaps
+in the Stage-4.2 record immediately below. The nine current answers are
+10.8. No bulk Einstein tangent or $C^1$ claim is promoted: initial
+homogeneous transport is not a bulk subsidiary theorem, and the full
+refoliated affine reset remains open.
+
+The authoritative detailed statements are calculations 06--10 and
 `DEVELOPMENT_MAP_AUDIT.md`. The core map is an equivalence in the smooth
 category onto the slice $\mathcal F$ defined by $a_\pm[m]=\sqrt2e^{m/2}$
 and original markings. The PDE gauge uses $e_3=\ell_-$ and
@@ -279,12 +288,13 @@ parameter endpoints and records the boost from the symmetric core frame.
 
 $C_{\rm pre}$ reconstructs Raychaudhuri/Damour variables and the intrinsic
 connection with smooth/Lipschitz bounds into lower-order Sobolev spaces.
-It is not $C_{\rm init}$. Stage 4.2 closes the opposite-sheet
-second-form transports in 09.3 and prepares the free slots in 09.4.
-The first unfinished completion is $C_{\rm Bianchi}$, starting with
-09.(5.4); full complementary curvature/gauge/copy compatibility and the
-constrained linearized completion remain unproved. Metric local/collar existence from complete source data
-remains a literature theorem, not a completed project-data construction.
+It is not by itself $C_{\rm init}$. Stage 4.2 closes the opposite-sheet
+second-form transports in 09.3 and prepares the free slots in 09.4;
+Stage 4.3 closes their full initial compatibility and constrained
+differential/remainder in 10.4. Metric local/collar existence from complete
+source data remains a literature theorem. The finite-regularity bulk
+Einstein identification, gauge reset and framed metric bijection still
+require their separate proofs.
 
 The framed solution-space identity is
 
@@ -306,7 +316,7 @@ For existing full-rectangle solutions, coherent on-shell current conservation
 equates the intrinsic input/output forms under the stated side-flux policy.
 It does not establish a uniform solution map or any auxiliary port equality.
 
-### Required Stage-4.2 verdict
+### Historical Stage-4.2 verdict
 
 1. **Copy system:** a slot-only swap with unchanged RHS is false.
    Calculation 08 now uses the printed allocation with the full conjugation
@@ -397,10 +407,13 @@ closing-wall action.
 
 ## 6. Open items and continuation rule
 
-1. $C_{\rm Bianchi}$ and the full $C_{\rm init}$/$DC_{\rm init}$ completion,
-   constrained inverse and finite-Sobolev gauge comparison;
-2. beyond the proved loss-three $R_\perp^k$, complete restart, uniform existence, linearized
-   Einstein and quadratic-remainder package $P_{\rm cell}^k$;
+1. Complete the refoliated affine-reset estimate 10.(7.6), its inverse
+   graph/label compositions and all endpoint jets; no full reset loss
+   has been assigned;
+2. Prove direct finite-regularity bulk Einstein/copy/gauge constraint
+   propagation, then linearized Einstein existence and the quadratic
+   evolution remainder for $P_{\rm cell}^k$. Initial completion and local
+   reduced restart are already proved in 10.4--6;
 3. only then finite-grid/gauge/regularity bookkeeping for
    $P_{\rm rect}^{s,r}$, including target openness and inverse regularity;
 4. $P_{\rm red}$: action-derived physical ports and their full functional
@@ -412,6 +425,20 @@ The affine endpoint chart now crosses zero expansion; the area/Reisenberger
 chart still does not. The chart repair is not a solution-space theorem.
 
 
-Stages 0--3 are frozen at their established algebraic boundary. Stage 4.2
-closes the mixed transports and first transverse estimate. It does not
-declare the smooth project-data collar, one-cell theorem or rectangle closed.
+Stages 0--3 are frozen at their established algebraic boundary. Stage 4.3
+closes initial compatibility/completion and the local reduced restart
+hierarchy. It does not declare the smooth project-data collar, Einstein
+one-cell theorem or rectangle closed.
+
+### Stage-4.3 current theorem list
+
+| Claim | Status | Precise scope |
+|---|---|---|
+| Initial $C_{\rm Bianchi}$ and homogeneous augmented subsidiary system | proved | both initial sheets, fixed corners, 10.1--4; not the bulk |
+| $C_{\rm init}$, differential, completion quadratic remainder | proved | sufficient losses five in free $I^k$, six in filled $J^k$ |
+| Pure-generator exact reduced difference hierarchy | proved | sufficient loss $2r+1$ with 10.5's high backgrounds |
+| Continuous outgoing source-jet endpoint traces | proved | $r\le k$ in $H^{k-r}$, 10.6 |
+| Local reduced $I^{2k+8}\to I^k$ restart | proved | regular source neighborhood and common local width; not an Einstein range theorem |
+| Label/inverse flow margins, scalar affine factor/length, null-rotation formulas | proved | supplied regular coefficients, 10.7; not the full reset map |
+| Full project affine reset and bulk Einstein identification | open | first reset estimate 10.(7.6); direct bulk subsidiary theorem still required |
+| $P_{\rm cell}^k$, $P_{\rm rect}^{s,r}$ | conditional | no finite grid, quantization, or intrinsic/extended-port identification |

@@ -3,18 +3,20 @@
 ## Direct verdict
 
 **Established:** Stages 0--3 retain their classical characteristic-form
-and interface-algebra scope. Stage 4.2 fixes the full copy convention,
-proves the fixed-reference energy conversion, closes $C_{\rm mix}$ with
-conservative loss four and constructs $C_{\rm free}$ with loss five.
-For already existing reduced solutions under the explicit bounds in 09.7,
-$R_\perp^k$ is proved with loss three, including first outgoing $C^0$ traces.
+and interface-algebra scope. Stage 4.3 closes the initial Bianchi,
+gauge/copy compatibility and constrained $C_{\rm init}$: sufficient loss
+five in the free-slot $I^k$ norm, six in the fully filled-cross $J^k$ norm,
+including differentials and quadratic completion remainders.
+The pure-generator reduced difference hierarchy has loss $2r+1$ under
+10.5's existing-background hypotheses. Calculation 10.6 proves a local
+reduced restart $I_{\rm in}^{2k+8}\to I_{\rm out}^k$ on its regular
+source neighborhood; this does not identify the output with Einstein data.
 
-**Not proved:** the constrained $C_{\rm init}$ or its derivative loss,
-full restart/gauge reset, project-data framed germ/collar bijection,
-Einstein tangent surjectivity, or $P_{\rm cell}^k$.
-The first remaining lemma is $C_{\rm Bianchi}$, 09.5, starting with
-the explicit residual (5.4). A free-slot estimate is not a completed
-Einstein initial-data theorem.
+**Not proved:** full affine gauge reset, bulk Einstein constraint/copy
+propagation, project-data framed germ/collar bijection, Einstein tangent
+surjectivity, or $P_{\rm cell}^k$. The exact first reset estimate is
+10.(7.6), including the refoliated normal connection and all moving-cut
+generator traces. No full reset loss is assigned.
 
 The intrinsic EH identity retains its restriction/constructed-image scope.
 The prescribed-rectangle $P_{\rm rect}^{s,r}$ remains conditional.
@@ -118,6 +120,9 @@ What is established is precise:
 - calculation 09 proves the full copy conjugation, reference energy lemma,
   mixed transports, free-slot estimates and loss-three transverse bound,
   and records the exact remaining Bianchi/restart/gauge gates;
+- calculation 10 discharges the initial Bianchi/gauge/copy gate, proves
+  constrained completion and the pure-generator reduced restart hierarchy,
+  and retains the affine-reset and bulk Einstein-identification gates;
 - for every particular full-rectangle development that exists, the outgoing
   cross is geometric, EH current conservation equates the input/output
   forms under the stated side-boundary assumptions, and full-DND
@@ -208,7 +213,24 @@ forms are regression checks, not input assumptions.  The existing literature
 note `Literature Notes/Quantization of Gravity on Null Hypersurfaces
 (2607.07785v1).md` was read as a convention audit and was not modified.
 
-## Stage-4.2 required verdict
+## Current Stage-4.3 verdict
+
+The nine required answers are in calculation 10.8. In short: both-sheet
+initial Bianchi and the augmented initial subsidiary system are closed;
+$C_{\rm init}$, its differential and completion remainder have the
+specified five/six losses; the pure-generator hierarchy and local reduced
+restart are proved. Full project reset and bulk Einstein identification
+remain open. The one-cell and rectangle theorems remain conditional.
+
+New files: calculations/10-stage4.3-bianchi-completion-and-restart-hierarchy.md,
+scripts/stage43_bianchi_jets.wl, scripts/stage43_commutators_xact.wl,
+scripts/stage43_hierarchy_reset_checks.wl, and
+verification/stage43_xact_results.md. V65--V72 are regressions only.
+
+## Historical Stage-4.2 required verdict
+
+The following records the previous stage and is superseded by 10.8
+where Stage 4.3 discharges an initial or reduced-restart gate.
 
 1. **Copy system:** a slot-only swap with unchanged RHS is false.
    Calculation 08 now uses the printed allocation with the full conjugation

@@ -2,15 +2,16 @@
 
 ## Direct verdict
 
-Stage 4.2 proves the full printed/Appendix copy conjugation and the
-fixed-reference energy conversion. It closes $C_{\rm mix}$ with
-conservative loss four and $C_{\rm free}$ with loss five, including
-their differentials and quadratic remainders. $C_{\rm init}$ remains
-unproved at the explicit $C_{\rm Bianchi}$ compatibility gate, 09.5.
+Stage 4.3 closes the initial Bianchi/gauge/copy compatibility and constructs
+$C_{\rm init}$, its differential and completion remainder: sufficient
+loss five in free-slot $I^k$, six in filled-cross $J^k$.
+The initial homogeneous system is 10.(4.6)--(4.8); it is not a bulk
+Einstein subsidiary theorem.
 
-For existing reduced solutions under 09.7's bounds, $R_\perp^k$ is
-proved with loss three and first outgoing $C^0$ traces. These do not
-supply the full restart/gauge class or linearized Einstein existence.
+The exact reduced pure-generator hierarchy has loss $2r+1$ under 10.5's
+background bounds, and 10.6 proves the local reduced restart
+$I_{\rm in}^{2k+8}\to I_{\rm out}^k$ on its regular source neighborhood.
+Full project reset and linearized Einstein existence are not supplied.
 $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional; no
 finite-grid continuation or quantization is begun.
 
@@ -28,7 +29,7 @@ Cited metric existence and in-project lemmas have distinct provenance.
 | D-B3 | Normalization, torsion sign and affine endpoint algebra | checked symbolically | V42--V47, V50 | no existence or surjectivity conclusion |
 | D-B4 | Full MSP transverse $Y_\pm$ completion from project data | open | 06.6.2 | completed DND and Ricci compatibility are prerequisites of the cited theorem |
 | D-B5 | $C_{\rm pre}$ and $DC_{\rm pre}$ with smooth/Lipschitz finite-scale estimates | proved | 06.(8.1)--(8.10) | $3\le k\le s-3$, uniform positive margins; partial fields only |
-| D-B6 | Full constrained $C_{\rm init}$ and its differential | open | 09.5: $C_{\rm Bianchi}$ | mixed transport closed; complementary Bianchi/gauge/copy compatibility and full loss open |
+| D-B6 | Constrained $C_{\rm init}$, differential and completion remainder | proved | 10.1--4 | loss five in $I^k$, six in $J^k$; no bulk constraint propagation inferred |
 | D-B7 | Affine endpoint/corner potential valid through $\theta_s=0$ | proved | 06.(9.1)--(9.3); HF compensator derivation | fixed affine cuts, tangential endpoint variations, positive area |
 | D-C0 | Metric local/neighborhood existence for complete smooth source data | proved | Cabet Theorem 5.3; Rendall/Luk; MSP for completed DND | known from literature; does not itself construct project $C_{\rm init}$ |
 | D-C1 | Framed project-data development/restriction bijection near the corner | conditional | 07.3 | full completion, source constraints and framed PDE uniqueness required |
@@ -36,9 +37,9 @@ Cited metric existence and in-project lemmas have distinct provenance.
 | D-C3 | Source Einstein theorem directly supplies the exact project finite-Sobolev chart | false | Cabet p.54--55 | finite-loss tracking and direct doubled-system constraint propagation not supplied there |
 | D-C4 | Unique framing extension of an existing metric in the fixed gauge | proved | 07.3.1 eikonal/transport lemma | common regular optical neighborhood; no finite-Sobolev gauge estimate |
 | D-D0 | Angular $H^k$ flux difference estimate with zero reduced incoming loss | proved | 08.(3.1)--(4.3) | two already existing reduced solutions; $k\ge3$, high angular and full $W^{1,\infty}$ bounds |
-| D-D1 | Full uniform Einstein one-cell theorem $P_{\rm cell}^k$ | conditional | 08.6 | loss-three transverse bound proved in 09.7; full initial/restart, linearized existence and remainder open |
+| D-D1 | Full uniform Einstein one-cell theorem $P_{\rm cell}^k$ | conditional | 08.6; 10.7--8 | full project reset, bulk Einstein identification, tangent existence and evolution remainder open |
 | D-D2 | Background-nearby project data develop on a prescribed full rectangle | conditional | 07.6; $P_{\rm rect}^{s,r}$ | completion, cell, restart/gauge and target-chart gates retained; grid not begun |
-| D-E1 | All project tangents and all framed linearized metric solutions are in bijection | conditional | 07.7 | $DC_{\rm init}$, linearized constraints and gauge exhaustion not proved |
+| D-E1 | All project tangents and all framed linearized metric solutions are in bijection | conditional | 07.7; 10.4 | $DC_{\rm init}$ proved; linearized bulk Einstein existence/constraints and gauge exhaustion not proved |
 | D-E2 | Nonlinear Banach $C^1$ chart with linearized Einstein derivative and inverse | conditional | 08.5--6; 07.6 | no assigned full derivative loss or target openness |
 | D-F1 | Intrinsic EH identity for restrictions / any constructed lift image | proved | 07.(7.3)--(7.4); 06.9 | no full tangent surjectivity; no full lift constructed in this round |
 | D-F2 | Full-rectangle nonlinear pullback equals $\Omega_{\rm char}^{\rm intr}$ | conditional | 07.(7.5) | requires full framed $P_{\rm rect}^{s,r}$ |
@@ -70,19 +71,25 @@ Cited metric existence and in-project lemmas have distinct provenance.
 
 ## Exact remaining propositions
 
-The first initial gate is $C_{\rm Bianchi}$, 09.5, beginning with
-the residual (5.4). The complete constrained $C_{\rm init}$ and its
-differential/finite loss remain unproved, despite the loss-five
-$C_{\rm free}$. After the proved loss-three $R_\perp^k$, the complete
-generator jets, corner constraints and geometric reset remain required.
-Uniform Einstein existence, linearized existence and the quadratic
-evolution remainder are independent remaining gates for $P_{\rm cell}^k$.
+The initial gate is now closed by 10.1--4. The reduced pure-generator
+hierarchy, all required source free-jet endpoints and local reduced
+restart are proved in 10.5--6. The first unfinished reset estimate is
+10.(7.6): moving-cut normal-connection composition, inverse graph and all
+generator jets in the fixed project chart. No full reset loss is assigned.
+The outgoing reduced data also require a bulk Einstein/copy/metricity
+propagation theorem before they can be used as geometric vacuum data.
+Linearized Einstein existence and the quadratic evolution remainder remain
+independent gates for $P_{\rm cell}^k$; completion remainder is not evolution
+remainder. The next Einstein-identification route is a direct
+finite-regularity bulk subsidiary theorem, not an appeal to reduced uniqueness.
 
 Only after these gates may a prescribed-rectangle argument be considered.
 No finite grid or numerical $s(r,I,J)$ is supplied. The separate
 $P_{\rm red}$ action/physical-port gate is unchanged.
 
-### Required Stage-4.2 verdict
+### Historical Stage-4.2 verdict
+
+The nine current answers are 10.8; the following records the earlier stage.
 
 1. **Copy system:** a slot-only swap with unchanged RHS is false.
    Calculation 08 now uses the printed allocation with the full conjugation
@@ -117,7 +124,7 @@ Stage 4.2 adds V54--V64. Their exact scope/results are in RUN_LOG.
 The analytic $C_{\rm mix}$ and $R_\perp^k$ proofs are in 09.3 and 09.7,
 not consequences of a zero symbolic residual.
 
-## Stage 4.2 additions
+## Stage 4.2 additions (historical proof scope)
 
 | ID | Claim | Status | Evidence | Exact boundary |
 |---|---|---|---|---|
@@ -132,3 +139,16 @@ not consequences of a zero symbolic residual.
 | C42-trace | First outgoing $C^0$ free-slot traces | proved | 09.(7.7)--(7.8) | not full generator jets or source restart class |
 | C42-reset | Full bounded geometric reset into incoming class | open | 09.9 | scalar ODE estimate proved; flow/composition, jets and constraints remain |
 | C42-cell | One-cell Einstein $C^1$ map | conditional | 09.8 | initial completion, full restart, linearized existence and remainder not closed |
+
+## Stage 4.3 current additions
+
+| ID | Claim | Status | Evidence | Boundary |
+|---|---|---|---|---|
+| D43-initial | Both-sheet Bianchi and augmented homogeneous initial subsidiary system | proved | 10.1--4 | complete initial segments and corner values, not bulk Einstein propagation |
+| D43-completion | $C_{\rm init}$, differential and quadratic remainder | proved | 10.4.3 | loss five in $I^k$, six in $J^k$; neither claimed optimal |
+| D43-jets | Pure-generator exact-solution differences and endpoint traces | proved | 10.5--6 | loss $2r+1$, specified regular backgrounds, $N\ge2R+3$ |
+| D43-restart | Local reduced $I^{2k+8}\to I^k$ restart | proved | 10.(6.4), reduced source Theorem 3.9 | bounded regular incoming neighborhood and common local width; no Einstein range assertion |
+| D43-reset | Full project affine reset | open | first estimate 10.(7.6) | flow/scalar pieces and null rotation derived; all-jets composition and geometric input remain |
+| D43-bulk | Finite-regularity Einstein/copy/gauge propagation in the cell | open | 10.8 | must not conflate initial subsidiary uniqueness with bulk constraint propagation |
+
+V65--V72 are regressions only. See RUN_LOG for exact executed scope.
