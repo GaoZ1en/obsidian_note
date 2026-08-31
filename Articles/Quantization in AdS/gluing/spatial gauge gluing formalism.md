@@ -1,6 +1,6 @@
 # Spatial-Region Gauge Gluing Formalism
 
-> Status: repaired draft for criticism and iteration; formalism repair only. This note adds a gauge layer to the spatial-partition/timelike-worldtube architecture of `gluing formalism.md`; it does not modify that manuscript and does not claim a new general PDE, quotient, or quantum theorem. Every theorem schema below is labelled by its current claim level.
+> Status: repaired draft for criticism and iteration; with a separately scoped Maxwell 2+1 kill test. This note adds a gauge layer to the spatial-partition/timelike-worldtube architecture of `gluing formalism.md`; it does not modify that manuscript and does not claim a new general PDE, quotient, or quantum theorem. Every theorem schema below is labelled by its current claim level.
 
 ## 0. Scope and Dependence on the General Gluing Formalism
 
@@ -34,7 +34,7 @@ This draft treats:
 - smooth or sufficiently regular fields in one declared bundle/topological sector;
 - equivalence relations before any smooth quotient; smooth symplectic claims only on a controlled regular sector.
 
-It excludes from the main theorem charged matter, nontrivial bundle-sector changes, anomalies, gravity/diffeomorphism gauge, first-order Chern--Simons/BF theory, and null characteristic composition. These are future branches. Null hypersurfaces require characteristic data, direct null CPS flux, shared-cut compatibility, and a Goursat problem; they are not a limiting case of the construction below.
+This round is restricted to **Yang--Mills-type second-order connection theories on a fixed background**, with Maxwell as the Abelian benchmark. Charged matter, nontrivial bundle-sector changes, anomalies, gravity/diffeomorphism gauge, first-order Chern--Simons/BF, higher-form/higher gauge, and null characteristic composition are excluded. No result below is extended to those theories.
 
 This note reuses the following objects and logic from `gluing formalism.md`:
 
@@ -173,7 +173,7 @@ In particular, there is **no assumed factorization** $P_{i,\mathrm{in}}^{\chi_i}
 
 The original $\mathcal Z$ in `gluing formalism.md` remains its Green-identity trace space. This repair does not enlarge that manuscript's physical phase space: it adds a realization layer above it. Polarization changes act on $\mathcal Z^{\mathrm{inv}}$ and its sewing/corner representative. A compatible change of $\widehat{\mathcal Z}^{\chi}$ and $P_{\mathrm{in}}^\chi$ requires its own IBVP check; an arbitrary physical canonical transformation need not lift to an admissible incoming prescription.
 
-The Maxwell $2+1/3+1$ notes provide the original connection/flux pairing and Fourier master-field Dirichlet, Neumann-type and zero-mode histories. They do not specify the full enlarged trace space, its $\rho$, or an incoming map on a common constraint-preserving function-space domain. Thus neither “variational trace = incoming trace” nor “all $a_i$ are freely prescribable causal data” follows from those calculations.
+The Maxwell $2+1/3+1$ notes provide the original connection/flux pairing and Fourier master-field Dirichlet, Neumann-type and zero-mode histories. They do not specify the full enlarged trace space, its $\rho$, or an incoming map on a common constraint-preserving function-space domain. Thus neither “variational trace = incoming trace” nor “all $a_i$ are freely prescribable causal data” follows from those calculations. The separate `maxwell-2p1-spatial-gluing-kill-test/calculations.md` now supplies explicit maps and a smooth finite-Fourier mixed Coulomb realization; this is not a general hyperbolic IBVP theorem.
 
 **Claim level:** repaired architecture/definitions; realization-specific existence and admissibility remain conditional.
 
@@ -221,16 +221,48 @@ The variable-$h$ presentation consists of $(\widehat A_1,\widehat A_2,h)$ togeth
 
 ### Variable-$h$ Canonical Term
 
-For field-dependent presentation variations,
+For field-dependent presentation variations set $\eta=h^{-1}\delta h$. On the descent locus, before imposing the equations of motion,
 
 $$\begin{align}
-\delta(a_1^h)&=\operatorname{Ad}_{h^{-1}}\delta a_1+D_{a_2}(h^{-1}\delta h),\\
-\Theta_{S,\mathrm{ext}}
-&=\Theta_{S,1}+\Theta_{S,2}
+\delta(a_1^h)&=\operatorname{Ad}_{h^{-1}}\delta a_1+D_{a_2}\eta,\\
+\left.\delta(S_1+S_2)\right|_\Gamma
+&=\langle\Pi_1+\operatorname{Ad}_h^*\Pi_2,\delta a_1\rangle_\Gamma
++\int_\Gamma\langle\Pi_2^\alpha,D_\alpha\eta\rangle.
+\end{align}$$
+
+Here $\Pi^\alpha$ is a tangential vector **density** valued in the dual Lie algebra. Its divergence includes the density and dual gauge connection; do not insert a second volume density. Equivalently, use the induced measure and its covariant divergence everywhere. Invariance of the pairing gives the complete worldtube identity
+
+$$\begin{align}
+\boxed{\int_\Gamma\langle\Pi_2^\alpha,D_\alpha\eta\rangle
+=-\int_\Gamma\langle D_\alpha\Pi_2^\alpha,\eta\rangle
++\int_{\partial\Gamma}\langle n_\alpha^\Gamma\Pi_2^\alpha,\eta\rangle.}
+\end{align}$$
+
+The boundary integral is oriented Stokes flux; the outward conormal and induced boundary measure include its orientation, without another Lorentzian unit-normal sign. Since $\Pi_2^t=-E_2^\perp$, for $\Gamma=I\times S$ this becomes
+
+$$\begin{align}
+\int_\Gamma\langle\Pi_2^\alpha,D_\alpha\eta\rangle
+={}&-\int_\Gamma\langle D_\alpha\Pi_2^\alpha,\eta\rangle
+-\left[\langle E_2^\perp,\eta\rangle_S\right]_{t_-}^{t_+}
++\int_{I\times\partial S}\langle n_A^S\Pi_2^A,\eta\rangle.
+\end{align}$$
+
+For $S=-\frac1{4e^2}\int\sqrt{-g}\langle F_{\mu\nu},F^{\mu\nu}\rangle$, an adapted unit-normal collar gives $\Pi^\alpha=-e^{-2}\sqrt{|\gamma|}F^{n\alpha}$ and $D_\alpha\Pi^\alpha=\sqrt{|\gamma|}\mathcal E^n$, where $\mathcal E^\nu=e^{-2}D_\mu F^{\mu\nu}$ is the Euler expression without volume density. The symmetric extrinsic-curvature contraction with antisymmetric $F$ vanishes. In the flat Maxwell cylinder,
+
+$$\begin{align}
+D_\alpha\Pi^\alpha=-e^{-2}(\dot E_y+\partial_s B)=\mathcal E^y.
+\end{align}$$
+
+The bulk term therefore vanishes on the original equations, including their normal component. The off-shell Noether identity $D_\nu\mathcal E^\nu=0$ relates equations; it does **not** set $\mathcal E^n=0$. Cauchy Gauss law alone does not remove $\dot E_y+\partial_s B$. A propagated original constraint/evolution system may supply this equation; unconstrained gauge-fixed data may not. A more general second-order constitutive connection action uses its actual Green dual and boundary Noether identity, including any declared boundary contributions, before the divergence may be discarded.
+
+Only on the original constraint/on-shell locus, after this full integration by parts and with the $I\times\partial S$ terms retained or removed by the declared boundary policy, the Cauchy representative is
+
+$$\begin{align}
+\Theta_{S,\mathrm{ext}}=\Theta_{S,1}+\Theta_{S,2}
 -\langle E_2^\perp,h^{-1}\delta h\rangle_S.
 \end{align}$$
 
-The last term follows by integrating the temporal component $-\langle E_2^\perp,\delta a_{2,t}\rangle$ along $\Gamma$; retain all further declared corner terms. This is a coordinate completion of the original potential, not a new physical interface action. In Maxwell $1+1$ it is $-E_2\delta\varphi$, and on $E_2=-E_1=-E$ the potential is $E\delta(a_1-a_2+\varphi)$. A canonical term in an enlarged presentation does not make $h$ an independent oscillator or give a passive arrow a charge.
+This is not a universal off-shell identity. It is a coordinate completion of the original potential, not a new interface action. In Maxwell $1+1$ it gives $-E_2\delta\varphi$, and on $E_2=-E_1=-E$ the potential is $E\delta(a_1-a_2+\varphi)$. This term neither makes $h$ an independent oscillator nor gives a passive frame change a physical charge.
 
 ### Active Extendable Boundary Transformations
 
@@ -462,7 +494,7 @@ $$\begin{align}
 
 Equality requires nondegeneracy modulo gauge, control of invisible auxiliary/assembly fibers, a regular sector and fixed physical outer policy. Disconnected proper transformations are equivalences, not tangent kernel vectors. A symplectomorphism of smooth quotients requires these further hypotheses. Hamiltonian intertwining likewise requires matching original boundary-work terms; it does not follow from mode normalization alone.
 
-**Claim levels:** framed Maxwell/Yang--Mills $1+1$ have exact reduced completeness, one-form and quotient results. Maxwell $2+1/3+1$ have mode-level reconstruction/normalization support only. The two-sided analytic relation, effective regional faithfulness and full CPS/kernel theorem remain conditional there and in the general theory.
+**Claim levels:** framed Maxwell/Yang--Mills $1+1$ have exact reduced completeness, one-form and quotient results. Maxwell $3+1$ retains mode-level support only. The separate Maxwell $2+1$ kill test proves core weak patching and an explicit restored orbit/CPS construction, while disproving the unqualified raw smooth-gauge comparison. Identifying that restoration with geometric assembly remains conditional; the general master theorem is not upgraded.
 
 ## 10. Active Cut Gauge Restoration as Reduction by Stages
 
@@ -486,7 +518,30 @@ $$\begin{align}
 /\mathcal G_{S,h}^{\mathrm{ext}}.
 \end{align}$$
 
-This is not an ordinary residual-group theorem on $\mathcal C_{h,\mathrm{phys}}^\chi$; a regional slice brings back the equivalence relation of Section 9. Passive frame identifications have already been separated. A time-slab version replaces $S$ by $\Gamma$ and adds temporal/history compatibility.
+This is not an ordinary residual-group theorem on $\mathcal C_{h,\mathrm{phys}}^\chi$; a regional slice brings back the equivalence relation of Section 9. Passive frame identifications have already been separated.
+
+### Time-Slab Restriction: Theorem Target Only
+
+After specifying a spacetime proper group preserving the physical-wall and temporal policies, set
+
+$$\begin{align}
+\mathcal K_\Gamma&:=\ker\operatorname{res}_{\Gamma,h},\\
+1\longrightarrow\mathcal K_\Gamma\longrightarrow\mathcal G_{M^I}^{\mathrm{prop}}
+&\xrightarrow{\operatorname{res}_{\Gamma,h}}\mathcal G_{\Gamma,h}^{\mathrm{ext}}
+\longrightarrow1,\\
+\mathcal G_{\Gamma,h}^{\mathrm{ext}}&:=\operatorname{Im}\operatorname{res}_{\Gamma,h}.
+\end{align}$$
+
+Only abstract group exactness is tautological after these groups and restriction are defined. A functional sequence, an action on regional realizations, and reduction by stages **intertwining time-slab evolution relations** are theorem targets. They require:
+
+1. The action at $t=t_\pm$ on Cauchy data. Arbitrary proper endpoint transformations, fixed endpoint representatives, and endpoint-identity transformations give different images.
+2. Temporal-corner/frame policy, including the variable-$h$ endpoint potential above; endpoint charges and frame changes cannot silently be dropped.
+3. Preservation of the prescribed-history **family** and initial-boundary compatibility domain $\mathfrak D_i^\chi$. One fixed history fiber generally is not preserved.
+4. The time-dependent active action on gauge drivers/auxiliary variables, or an explicit re-fixing relation with admissible endpoints. Transforming only $a_i$ is insufficient.
+5. Spacetime regularity and required normal/mixed temporal jets for kernel patching. Identity on $\Gamma$ does not identify $\mathcal K_\Gamma$ with an unrestricted regional product.
+6. Compatibility with initial/final evaluations and sewn regional $\mathscr U_i^\chi$, including original constraints and boundary work. Equal-time quotient bijections do not establish evolution intertwining.
+
+No time-slab reduction theorem is asserted here. The cylinder test separately distinguishes smooth bulk extension from the smaller image represented by directly patchable regional Coulomb residuals.
 
 For the framed $U(1)$ cylinder, an extendable cut map must have zero winding on $S^1$; on the slab its two $T^2$ winding classes must vanish. Necessity follows by restricting a bulk map to successive radial slices, a homotopy to the identity wall value. Under the smooth trivial product-collar policy these null-homotopic maps can be extended, but additional temporal, bundle or boundary restrictions can shrink the image. The $1+1$ point cut sees all of connected $G$ because a path joins every cut value to the identity.
 
@@ -647,7 +702,7 @@ The two trace layers and the two patching questions have different evidence:
 |---|---|---|---|---|
 | scalar comparison | configuration/Green-dual flux plus declared corners | no gauge enlargement; admissibility still separately required | proved only in the declared scalar classes of `gluing formalism.md` | n/a |
 | Maxwell $1+1$ | $\delta S|_\Gamma=-\int E_i\delta\alpha_i$; reduced Cauchy pair $(a_i,E_i)$ | exact Gauss-reduced mechanics with frame history $\alpha_i$; no enlarged hyperbolic driver problem is solved | exact framed holonomy/flux assembly and direct uncut reduction | bypassed by exact reduction; no general collar/Gribov theorem |
-| Maxwell $2+1$ cylinder | $(\alpha,q)$ with Green pairing $-e^{-2}(E_y\delta\alpha+B\delta q)$ and original CPS | Fourier master Neumann/Dirichlet/compact-source histories only; full $\widehat{\mathcal Z}^{\chi},\rho,P_{\mathrm{in}}$ domain missing | mode-level support only, not arbitrary-history weak patching | displayed modes divergence-free; no arbitrary-history slice patching |
+| Maxwell $2+1$ cylinder | $(\alpha,q)$ with Green pairing $-e^{-2}(E_y\delta\alpha+B\delta q)$ and original CPS | separate kill test gives explicit enlarged traces/maps and smooth finite-Fourier mixed realization | direct distributional equivalence proved in the piecewise smooth core | raw global Coulomb claim false; explicit regional harmonic restoration derived |
 | Maxwell $3+1$ slab | $(\alpha,q_a)$ with $-e^{-2}(E_y\delta\alpha+F_{ya}\delta q^a)$ and original CPS | transverse Dirichlet, longitudinal-normal Neumann and zero-mode histories; full enlarged trace/domain missing | mode-level support only | mode-level support only; drivers/normal compatibility not proved |
 | Yang--Mills $1+1$ | $-\langle\mu_i,\delta\alpha_i\rangle$, $\mu_i=-\operatorname{Ad}_{U_i}J_i$; $T^*G$ Cauchy form | exact based Gauss reduction with history $\alpha_i$; bypasses enlarged hyperbolic trace | exact framed reduced connection/holonomy assembly | bypasses high-dimensional slice/collar/Gribov problem |
 
@@ -655,11 +710,11 @@ The two trace layers and the two patching questions have different evidence:
 |---|---|---|---|---|
 | Maxwell $1+1$ | $E_1+E_2=0$ is the only transmission component | proved by based holonomy classification and direct connected representative | exact reduced benchmark, including declared based large components | Haar reduction and integer-flux Hamiltonian proved |
 | Yang--Mills $1+1$ | $\mu_1+\operatorname{Ad}_h^*\mu_2=0$ is the only component | proved in framed trivial-bundle/trivial-character sector | free diagonal reduction, canonical one-form and direct uncut agreement proved | exact Haar/Peter--Weyl and three-cell reduction; no field-valued continuum theorem |
-| Maxwell $2+1$ | Gauss: $E_{y,1}+E_{y,2}=0$; full adds $B_1+B_2=0$ | missing beyond separated-mode reconstruction | mode normalization/CCR only; full relation, kernel and quotient missing | no cutoff-uniform gauge regulator or continuum algebra theorem |
+| Maxwell $2+1$ | Gauss: $E_{y,1}+E_{y,2}=0$; full adds $B_1+B_2=0$ | smooth restriction and weak reconstruction proved separately; raw smooth-orbit two-way claim fails | explicit restored core has orbit/CPS result; raw smooth-gauge quotient has extra kernel; geometric identification conditional | no cutoff-uniform gauge regulator or continuum algebra theorem |
 | Maxwell $3+1$ | Gauss: $E_{y,1}+E_{y,2}=0$; full adds both $F_{ya,1}+F_{ya,2}=0$ | missing beyond separated-mode reconstruction | mode-level support only | same limitations; no independent regional-Fock equivalence |
-| general second-order gauge theory | distinct by original Green/Noether identities | conditional restriction and reconstruction schemas | conditional effective equivalence/CPS/kernel theorem | outlook only |
+| YM-type second-order connection theory | distinct by original Green/Noether identities | conditional restriction and reconstruction schemas | conditional effective equivalence/CPS/kernel theorem | outlook only |
 
-The $1+1$ results prove their exact reduced models, not the analytic hypotheses they avoid. No model or claim level is upgraded by the present repair.
+The $1+1$ results prove their exact reduced models, not the analytic hypotheses they avoid. The separate cylinder dossier supplies only the core-specific positive and negative results stated in these tables.
 
 ## Master Architecture
 
@@ -686,18 +741,20 @@ Restriction and assembly are relations until their choices are controlled. Passi
 
 ## Repair Claim Ledger
 
-**Established within the source/model assumptions:** original action signs; fixed-$h$ descent and coadjoint transmission; the variable-$h$ canonical term; full transmission versus Gauss; exact framed $1+1$ Maxwell/Yang--Mills reduction and compact Haar/Peter--Weyl benchmarks; displayed higher-dimensional Maxwell modes and normalizations. Non-Abelian raw flux is not a general central observable.
+**Established within the source/model assumptions:** original action signs; fixed-$h$ descent and coadjoint transmission; the variable-$h$ canonical term on the original constraint/on-shell locus after full worldtube integration by parts; full transmission versus Gauss; exact framed $1+1$ Maxwell/Yang--Mills reduction and compact Haar/Peter--Weyl benchmarks; displayed higher-dimensional Maxwell modes and normalizations. Non-Abelian raw flux is not a general central observable.
 
 **Definitions repaired, not new analytic results:** two trace spaces and their distinct maps; physical and optional global-slice loci; passive frame arrows versus active extendable gauge; matched-slice groupoid; separate restriction and assembly relations; equivalence-class quotient before any ordinary residual-group simplification.
 
-**Conditional/open:** actual enlarged trace domains and continuous $\rho$; regional constraint-preserving IBVP; physical weak patching and stronger regularity; optional global-slice patching; restriction coverage; effective regional arrow construction/extension; independence of assembly choices; CPS pullback and nondegeneracy modulo gauge; active restriction-kernel patching; gauge-fixing independence; continuum observable/center reconstruction and corners.
+**Conditional/open in the general theory or beyond the stated cylinder core:** actual enlarged trace domains and continuous $\rho$; regional constraint-preserving IBVP; physical weak patching and stronger regularity; optional global-slice patching; restriction coverage; effective regional arrow construction/extension; independence of assembly choices; CPS pullback and nondegeneracy modulo gauge; active restriction-kernel patching; gauge-fixing independence; continuum observable/center reconstruction and corners.
 
-**Not claimed:** a universal gauge IBVP, all-mapping-group extension, a universal residual group containing Gribov copies, a smooth continuum quotient, Maxwell regulator convergence, sharp regional-Fock factorization, automatic disappearance of an electric center, or a BRST/BV gluing theorem. No kill test or new physical model is started by this repair.
+**Not claimed:** a universal gauge IBVP, all-mapping-group extension, a universal residual group containing Gribov copies, a smooth continuum quotient, Maxwell regulator convergence, sharp regional-Fock factorization, automatic disappearance of an electric center, or a BRST/BV gluing theorem. The separately scoped Maxwell $2+1$ kill test remains `conditional`; no other model is started.
 
 ## Verification Boundary
 
-**Verified (this repair):** xAct with xTras/full simplification returned zero for the antisymmetric original Maxwell action variation and its covariant Green identity (2 checks). Mathematica returned true for 13 action/coadjoint/corner checks: the $2+1/3+1$ outward coefficients, $3+1$ Cauchy coefficients, $1+1$ source and transition endpoint signs, reduced one-form and Hamiltonian, variable-$h$ connection variation (including a componentwise residual), dual pairing, a nonzero non-Abelian charge variation, the Yang--Mills reduced corner one-form and the $U(1)$ moment-map contraction. Matrix checks are exact finite $SU(2)$ witnesses with symbolic tangent data; the general identities use the displayed invariant-pairing algebra. They do not prove a field-space theorem. The source notes' previous 8/20 regressions remain historical evidence; they were not rerun as a new model test in this repair.
+**Locally checked (previous repair; its cited local scripts were not retained in the repository):** xAct with xTras/full simplification returned zero for the antisymmetric original Maxwell action variation and its covariant Green identity (2 checks). Mathematica returned true for 13 action/coadjoint/corner checks: the $2+1/3+1$ outward coefficients, $3+1$ Cauchy coefficients, $1+1$ source and transition endpoint signs, reduced one-form and Hamiltonian, variable-$h$ connection variation (including a componentwise residual), dual pairing, a nonzero non-Abelian charge variation, the Yang--Mills reduced corner one-form and the $U(1)$ moment-map contraction. Matrix checks are exact finite $SU(2)$ witnesses with symbolic tangent data; the general identities use the displayed invariant-pairing algebra. They do not prove a field-space theorem. The source notes' previous 8/20 regressions remain historical evidence; they were not rerun in that earlier repair.
 
 **Assumptions:** original signature and action/CPS signs; fixed physical outer frames/policy; one declared bundle and weak regularity class; defined nonlinear products and traces; compatible corner representatives. Each smooth, strong-solution or ordinary-quotient claim requires its additional hypotheses explicitly stated above.
 
-**Not verified:** general IBVP, enlarged trace-domain continuity/surjectivity, physical weak patching in a specified Sobolev class, optional global-slice patching, restriction completeness, effective regional groupoid faithfulness, gauge-kernel equality, or continuum observable/BRST/BV results. This round repairs the formalism only and does not execute or authorize the deferred Maxwell kill tests.
+**Not verified:** general IBVP, enlarged trace-domain continuity/surjectivity, physical weak patching in a specified Sobolev class, optional global-slice patching, restriction completeness, effective regional groupoid faithfulness, gauge-kernel equality, or continuum observable/BRST/BV results. The separate cylinder dossier records its narrower passed/failed core claims; no general or completed-space theorem is inferred.
+
+**Verified (current cylinder test):** `maxwell-2p1-spatial-gluing-kill-test/verification/checks.wl` passed 30/30 exact witnesses; the existing Maxwell regression passed 20/20. The dossier supplies the analytical proofs and counterexamples. The earlier unretained local checks above are not counted in these totals.
