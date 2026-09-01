@@ -1,5 +1,32 @@
 # Verification scripts
 
+## Stage 4.5
+
+Run the exact SymPy component generator through the available Sage Python:
+
+```text
+rtk proxy sage -python scripts/stage45_extended_curvature_hodge_checks.py
+```
+
+It performs 37 labelled V80--V91 checks and fixes every basis ordering.  It
+constructs the full $J$, Bianchi projector, $H_B$, $S$, four
+$A_C^i$, all twenty-four Cartan rows, all four $24\times24$ F1 matrices
+and all four $40\times40$ F2 matrices.  Pass `--dump-full` to print the
+large matrices.  The decisive exact results are $\det A_t=2$ for F1, a
+radial $-1$ eigenspace of dimension ten versus algebraic multiplicity
+twelve, and sixteen zero Bianchi derivative columns for F2.
+
+Run `stage45_bianchi_bundle_xact.wl` in a fresh dedicated xAct `core`
+kernel, then verify its three V92 residuals with `canonical_contract`.
+The expected result is 3/3 zero; the retained structured summary is
+`verification/stage45_xact_results.md`.
+
+These regressions prove exact finite component identities and the frozen
+Jordan/rank obstruction only.  They do not prove the selected quantitative
+Cabet comparison pivot, a second-order wave system, finite-regularity
+uniqueness, $\ell_{\rm sub}$, Einstein identification, reset,
+$P_{\rm cell}$ or $P_{\rm rect}$.
+
 ## Stage 4.4
 
 Run `stage44_cleanup_subsidiary_checks.wl` through the Mathematica MCP in a

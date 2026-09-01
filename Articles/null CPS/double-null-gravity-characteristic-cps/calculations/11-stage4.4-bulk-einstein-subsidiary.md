@@ -1,5 +1,21 @@
 # 11 - Stage 4.4: bulk Einstein subsidiary audit
 
+**Stage 4.5 correction.**  Calculation 12 supersedes the proposed
+$40$-component closure in Sections 2--5 below.  The second Cartan equation
+has twenty-four, not eighteen, independent rows.  The missing rows are
+$(124;I)$ for $I\in\{12,13,23\}$ and $(123;I)$ for
+$I\in\{14,24,34\}$.  Calculation 12 also separates the connection-row
+extractor $d_{\rm src}$ from the copy-diagonal extractor $d_{\rm phys}$,
+constructs $d_{\rm src}-d_{\rm phys}=J\mathcal C_{\rm copy}$ and the full
+sixteen-row Hodge incidence, and generates the corrected square
+$24\times24$ symbol.  That symbol has an invertible timelike matrix but a
+defective radial $-1$ eigenspace, so no positive first-order symmetrizer
+exists.  The current pivot is a quantitative Cabet build-up/comparison
+theorem.  The historical audit below is retained to show how the corrected
+problem arose; its phrases suggesting that eighteen Cartan rows could be
+combined with sixteen source rows into a square forty-variable evolution
+are withdrawn.
+
 ## 0. Direct verdict and stop line
 
 **Established in this calculation:** an exhaustive separation of algebraic
@@ -110,19 +126,20 @@ $$
  :=C_{ij}{}^k-(\Gamma_i{}^k{}_j-\Gamma_j{}^k{}_i).
  \tag{2.1}
 $$
-For exact agreement with the source connection row, define first
+For exact agreement with the source connection row, let $d_{\rm src}$ be
+the extractor defined in 12.(3.2) and define first
 $$
 \begin{split}
  \Xi_{ij}{}^k{}_l:={}&e_i\Gamma_j{}^k{}_l-e_j\Gamma_i{}^k{}_l
  -(\Gamma_i{}^m{}_j-\Gamma_j{}^m{}_i)\Gamma_m{}^k{}_l\\
  &+\Gamma_i{}^k{}_m\Gamma_j{}^m{}_l
- -\Gamma_j{}^k{}_m\Gamma_i{}^m{}_l-d^k{}_{lij}.
+ -\Gamma_j{}^k{}_m\Gamma_i{}^m{}_l-(d_{\rm src})^k{}_{lij}.
 \end{split}\tag{2.2}
 $$
 The genuine curvature-definition residual, using the actual bracket, is
 $$
- \mathcal K_{ij}{}^k{}_l
- :=R(\Gamma)_{ij}{}^k{}_l-d^k{}_{lij}
+ \mathcal K_{{\rm src},ij}{}^k{}_l
+ :=R(\Gamma)_{ij}{}^k{}_l-(d_{\rm src})^k{}_{lij}
  =\Xi_{ij}{}^k{}_l-\mathcal T_{ij}{}^m\Gamma_m{}^k{}_l.
  \tag{2.3}
 $$
@@ -131,23 +148,23 @@ $\mathcal T=0=\Xi$ is equivalent to torsion-free curvature definition.
 Using $\mathcal K$ without the correction in (2.3) would silently assume
 the result being propagated.
 
-Because $d$ is algebraically Weyl, all vacuum Ricci, scalar trace, pair
+Because $d_{\rm src}$ is algebraically Weyl, all vacuum Ricci, scalar trace, pair
 exchange and algebraic-curvature obligations are already projections of
-$\mathcal K$.  For example
+$\mathcal K_{\rm src}$.  For example
 $$
- R(\Gamma)_{jl}=g^{ik}\mathcal K_{ij,kl},
+ R(\Gamma)_{jl}=g^{ik}\mathcal K_{{\rm src},ij,kl},
  \tag{2.4}
 $$
 with the corresponding source sign convention.  No separate Ricci or Weyl
-trace variable is needed.  If $\mathcal K=0$, every one of these residuals
+trace variable is needed.  If $\mathcal K_{\rm src}=0$, every one of these residuals
 vanishes.
 
 ### 2.3 Differential Bianchi and copy residuals
 
-Let $d(F)$ mean the physical ten-component Weyl extractor fixed by
-09.(1.4), not an arbitrary choice of an uncircled RHS.  Define
+Let $d_{\rm phys}(F)$ mean the physical ten-component copy-diagonal Weyl
+extractor, distinct from the connection-row $d_{\rm src}$.  Define
 $$
- \mathcal B_{jkl}:=\nabla^i d(F)_{ijkl},
+ \mathcal B_{jkl}:=\nabla^i(d_{\rm phys})_{ijkl},
  \tag{2.5}
 $$
 with its sixteen independent real components, and
@@ -161,9 +178,10 @@ $$
 $$
 The four tensor entries in (2.6) have $2+2+1+1=6$ real components.
 On the copy diagonal, A.36--A.39 are precisely the component form of
-$\mathcal B=0$.  Off the diagonal they are a square system for sixteen
-duplicated fields and must not be identified with (2.5) without the
-derivatives of (2.6).
+$\mathcal B=0$.  Off the diagonal they have the hybrid placement proved in
+12.5: A.36 and A.38 carry copy derivatives while A.37 and A.39 do not.
+They must not be identified either with $D d_{\rm phys}=0$ or with
+$D d_{\rm src}=0$.
 
 ### 2.4 Complete independent residual vector
 
@@ -197,7 +215,7 @@ Here $a=1,2$ and the internal indices on $\Xi$ are those in (2.7).
 The component counts are $12+18+16+6$.  The vector is complete but not
 minimal: after the main equations, $\mathcal B$ is a differential
 combination of $\mathcal C_{\rm copy}$, while the second Cartan identity
-relates it to derivatives of $\mathcal K$.  It is retained because it is
+relates it to derivatives of $\widehat{\mathcal K}$.  It is retained because it is
 the precise block needed to display homogeneity; it is not an unrelated
 constraint.
 
@@ -227,10 +245,11 @@ $$
  D\mathcal R^i{}_j=0.
  \tag{3.2}
 $$
-Write $\mathcal R=d+\mathcal K$.  The algebraic Weyl first Bianchi
-identity is $d^i{}_j\wedge\theta^j=0$.  Hence
+Write
+$\mathcal R=d_{\rm phys}+\widehat{\mathcal K}$.  The algebraic Weyl first Bianchi
+identity is $(d_{\rm phys})^i{}_j\wedge\theta^j=0$.  Hence
 $$
- \boxed{D\mathcal T^i=-\mathcal K^i{}_j\wedge\theta^j.}
+ \boxed{D\mathcal T^i=-\widehat{\mathcal K}^i{}_j\wedge\theta^j.}
  \tag{3.3}
 $$
 Because the connection is metric, it preserves the frame Hodge operator.
@@ -238,7 +257,7 @@ For a Weyl-type tensor in four dimensions, the alternated covariant
 derivative is an invertible algebraic Hodge transform $\mathscr H$ of its
 divergence; fix its sign by
 $$
- 3\nabla_{[i}d_{jk]}{}^l{}_m
+ 3\nabla_{[i}(d_{\rm phys})_{jk]}{}^l{}_m
  =\mathscr H(\mathcal B)_{ijk}{}^l{}_m.
  \tag{3.4}
 $$
@@ -246,48 +265,45 @@ Exterior covariant differentiation also contains the torsion insertion.
 Since the conventional torsion is $-\mathcal T$, the exact component
 identity is
 $$
- (Dd)_{ijk}{}^l{}_m
+ (Dd_{\rm phys})_{ijk}{}^l{}_m
  =\mathscr H(\mathcal B)_{ijk}{}^l{}_m
-  -3\mathcal T_{[ij}{}^p d_{|p|k]}{}^l{}_m.
+  -3\mathcal T_{[ij}{}^p(d_{\rm phys})_{|p|k]}{}^l{}_m.
  \tag{3.5}
 $$
 Therefore the second Cartan identity gives
 $$
- \boxed{D\mathcal K^i{}_j=-Dd^i{}_j
+ \boxed{D\widehat{\mathcal K}^i{}_j=-D(d_{\rm phys})^i{}_j
        =-\mathscr H(\mathcal B)^i{}_j
-        +3\mathcal T\mathbin{\lrcorner}d^i{}_j.}
+        +3\mathcal T\mathbin{\lrcorner}(d_{\rm phys})^i{}_j.}
  \tag{3.6}
 $$
-Here $(\mathcal T\mathbin{\lrcorner}d)_{ijk}
-=\mathcal T_{[ij}{}^p d_{|p|k]}$; the displayed factor $3$ is outside
+Here $(\mathcal T\mathbin{\lrcorner}d_{\rm phys})_{ijk}
+=\mathcal T_{[ij}{}^p(d_{\rm phys})_{|p|k]}$; the displayed factor $3$ is outside
 this normalized bracket.  Equations (3.3)--(3.6) contain no source
-independent of $\mathcal R_{\rm bulk}$.  Substituting (2.3) converts them
-to equations for $\Xi$ with terms linear in
-$\mathcal T,D\mathcal T$ and coefficients $\Gamma,D\Gamma$.
+independent of $\mathcal R_{\rm bulk}$.  Substituting
+$\widehat{\mathcal K}=\mathcal K_{\rm src}+J\mathcal C_{\rm copy}$ and
+(2.3) converts them to equations for $\Xi$ with terms linear in
+$\mathcal T,D\mathcal T,\mathcal C_{\rm copy},D\mathcal C_{\rm copy}$
+and coefficients $\Gamma,D\Gamma$.
 
-The characteristic incidence is triangular at principal order.  Since
-$\mathcal T_{3i}=0$, the $(3,4,a)$ and $(3,1,2)$ components of (3.3)
-transport $\mathcal T_{4a}$ and $\mathcal T_{12}$ along $e_3$.
-For internal pair $\mathcal P$, the same components of (3.6) transport
-$\mathcal K_{4a}^{\mathcal P},\mathcal K_{12}^{\mathcal P}$ along
-$e_3$, because the $3q$ components are main rows.  For internal pair
-$\mathcal Q$, use $(4,3,a)$ and $(4,1,2)$ to transport
-$\mathcal K_{3a}^{\mathcal Q},\mathcal K_{12}^{\mathcal Q}$ along
-$e_4$.  All terms not displayed are lower-order residuals or the
-$\mathscr H(\mathcal B)$ source; the $\mathcal T\mathbin{\lrcorner}d$
-term is lower order and homogeneous.
+The torsion part of the historical characteristic incidence remains
+triangular: since $\mathcal T_{3i}=0$, the $(3,4,a)$ and $(3,1,2)$
+components of (3.3) transport $\mathcal T_{4a}$ and
+$\mathcal T_{12}$ along $e_3$.  The analogous curvature paragraph in the
+original Stage-4.4 text treated the selected main rows as zero and retained
+only the eighteen generator components.  Both steps require the
+$J\mathcal C_{\rm copy}$ correction and the six extra rows supplied in
+calculation 12.  The torsion insertion itself remains lower order and
+homogeneous.
 
-This proves a block-triangular transport statement:
-$$
- \mathcal B=0
- \quad\Longrightarrow\quad
- (\mathcal T,\mathcal K)\text{ obey homogeneous generator transports}.
- \tag{3.7}
-$$
-It does **not** prove $\mathcal B=0$ or copy equality.  V76--V78 check the
-source-versus-geometric curvature correction and representative frozen
-principal components of (3.3) and (3.6); the analytic identities are
-(3.2) and (3.5).
+The following Stage-4.4 characteristic selection is incomplete and is
+withdrawn: using only the eighteen rows containing $e_3$ in the
+$\mathcal P$ sector and $e_4$ in the $\mathcal Q$ sector omits
+12.(2.3) and 12.(2.5).  Moreover
+$\widehat{\mathcal K}_{\rm main}=J_{\rm main}\mathcal C_{\rm copy}$ rather
+than zero off the copy diagonal.  Calculation 12 retains all twenty-four
+rows and performs the complete Hodge coupling.  V76--V78 remain valid only
+for the representative Cartan coefficients they explicitly test.
 
 ## 4. The unresolved coupled Bianchi/copy principal block
 
@@ -317,36 +333,35 @@ of $\mathcal C_{\rm copy}$.  Through (3.6) it is a derivative of the
 curvature-definition residual.  Therefore neither a copy-only Gronwall
 argument nor the initial ODE system 10.(4.8) can propagate (2.6).
 
-To close (0.1), one must now perform all of the following in the fixed
-printed convention:
-
-1. expand all sixteen versions of (4.1), not only (4.2);
-2. use the eighteen characteristic components of (3.6) to replace every
-   spatial Bianchi residual by the matching derivative of $\mathcal K$;
-3. assemble the joint principal matrices for
-   $(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$ and show that
-   no derivative outside (2.9) remains;
-4. construct a positive symmetrizer with nonnegative complementary
-   $\xi$/$\eta$ fluxes.
+The second item in the original Stage-4.4 proposal was structurally
+incomplete: (3.6) has twenty-four independent Cartan components.  The six
+omitted components are exactly 12.(2.3) and 12.(2.5).  Calculation 12 now
+expands all sixteen versions of (4.1), fixes the irreducible Bianchi bundle
+and retains all twenty-four Cartan rows.  It constructs a square
+$24\times24$ curvature-only symbol and the algebraically square
+$40\times40$ mixed symbol.  The former has a defective radial Jordan block;
+the latter has sixteen zero $\mathcal B$ derivative columns.  Thus the
+requested positive symmetrizer does not exist for either proposed
+first-order formulation.
 
 The source's A.41/A.43 symmetrize the **field** Bianchi system.  They do
 not, without the row calculation above, symmetrize this residual coupling.
 No such joint matrix or symmetrizer is present in calculations 08--10 or
-in the cited source.  This calculation therefore stops here rather than
-writing
+in the cited source.  Stage 4.5 has now defined and checked the matrices,
+but its negative result still forbids writing
 $$
  A_{\rm sub}^\xi\partial_\xi\mathcal R
  +A_{\rm sub}^\eta\partial_\eta\mathcal R
  +A_{\rm sub}^A D_A^0\mathcal R=M\mathcal R
  \tag{4.3}
 $$
-without having defined and checked its matrices.
+as a symmetric-hyperbolic system.
 
 **No nonhomogeneous lower-order obstruction has been found.**  The Cartan
 identities show that all such terms belong to the ideal generated by
-(2.9).  The current stop is the unproved first-order principal closure and
-positive-flux statement, which is essential for finite-regularity
-uniqueness.
+(2.9).  The current stop is instead the proved frozen principal Jordan
+obstruction 12.9.  The selected replacement obligation is the quantitative
+Cabet build-up/comparison theorem 12.10.
 
 ## 5. Fixed-reference and finite-regularity boundary
 
@@ -419,8 +434,8 @@ $$
 is the unique Lorentz metric for which the given frame has the prescribed
 constant inner products.  The connection $\Gamma$ is its Levi-Civita
 connection.  If in addition $\Gamma$ has one weak derivative,
-$d\in L^1_{\rm loc}$ and $\mathcal K=0$, then
-$R(g)=d$ distributionally; since $d$ is tracefree Weyl type,
+$d_{\rm src}\in L^1_{\rm loc}$ and $\mathcal K_{\rm src}=0$, then
+$R(g)=d_{\rm src}$ distributionally; since $d_{\rm src}$ is tracefree Weyl type,
 $\operatorname{Ric}(g)=0$ distributionally.  With $C^2$ frame/$C^1$
 connection regularity this is a classical vacuum metric.
 
@@ -428,8 +443,9 @@ connection regularity this is a classical vacuum metric.
 so existence and uniqueness need no further Frobenius integration.
 Metric antisymmetry gives $\nabla g=0$.  Equation $\mathcal T=0$ gives
 zero torsion; uniqueness of the metric-compatible torsion-free connection
-identifies $\Gamma$ with Levi-Civita.  Equation $\mathcal K=0$ then gives
-$R(g)=d$, and contraction gives zero Ricci because the Weyl type was imposed
+identifies $\Gamma$ with Levi-Civita.  Equation
+$\mathcal K_{\rm src}=0$ then gives $R(g)=d_{\rm src}$, and contraction
+gives zero Ricci because the Weyl type was imposed
 algebraically.  The fixed coordinate/gauge entries identify the declared
 framing. $\square$
 

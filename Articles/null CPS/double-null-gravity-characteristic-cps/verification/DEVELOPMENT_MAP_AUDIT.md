@@ -17,9 +17,13 @@ finite-grid continuation or quantization is begun.
 
 Stage 4.4 closes the source-row exhaustiveness and direct plus-sheet audit.
 It defines the full bulk residual and derives the homogeneous Cartan
-torsion/curvature identities, but it does not construct the joint
-curvature/Bianchi/copy principal matrices or a positive symmetrizer.
-Therefore no bulk uniqueness theorem or $\ell_{\rm sub}$ is available.
+torsion/curvature identities.  Stage 4.5 constructs the repaired joint
+symbols with all twenty-four Cartan rows.  The $24\times24$ F1 symbol has
+a defective radial Jordan block and the $40\times40$ F2 symbol has sixteen
+zero Bianchi-derivative columns, so no positive first-order symmetrizer
+exists for either.  The selected next gate is a quantitative Cabet
+build-up/comparison theorem.  Therefore no bulk uniqueness theorem or
+$\ell_{\rm sub}$ is available.
 
 ## Authoritative status table
 
@@ -86,11 +90,12 @@ The outgoing reduced data also require a bulk Einstein/copy/metricity
 propagation theorem before they can be used as geometric vacuum data.
 Linearized Einstein existence and the quadratic evolution remainder remain
 independent gates for $P_{\rm cell}^k$; completion remainder is not evolution
-remainder. Calculation 11 reduces the next Einstein-identification step to
-$P_{\rm sub}^m$: the joint symmetrizable characteristic principal system for
-$(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$, followed by its
-fixed-reference finite-regularity energy theorem.  The residual vector and
-Cartan identities alone are not that theorem, and reduced uniqueness is not
+remainder. Calculation 12 proves that the proposed F1/F2 positive
+first-order symmetrizers do not exist.  The next Einstein-identification
+step is therefore the quantitative fixed-reference Cabet
+build-up/comparison theorem in 12.10 (or a separately proved second-order
+wave subsidiary system).  The residual vector, Cartan identities and frozen
+regressions alone are not that theorem, and reduced uniqueness is not
 substituted for it.
 
 Only after these gates may a prescribed-rectangle argument be considered.
@@ -171,10 +176,29 @@ V65--V72 are regressions only. See RUN_LOG for exact executed scope.
 | D44-plus | Direct A.36a/A.37a/A.38a--b/A.39a substitutions agree with the mirror | proved | 10.(3.4)--(3.8); V73--V74 | includes $D\log c$, $O_4$, lapse and raw/covariant conversion; initial sheet only |
 | D44-residual | Complete bulk residual vector with algebraic/propagated separation | proved | 11.2 | definition and typing theorem; does not imply propagation |
 | D44-Cartan | Homogeneous universal torsion/curvature identities and characteristic incidence | proved | 11.(3.3)--(3.7); V76--V79 | conditional source is the Bianchi residual; the torsion insertion is lower order; not the joint residual PDE |
-| D44-principal | Closed symmetrizable $(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$ system | open | 11.4, $P_{\rm sub}^m$ | all sixteen copy-transformed rows and positive complementary flux still required |
+| D44-principal | Closed symmetrizable $(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$ system | false as proposed | superseded by 12.7--9 | six Cartan rows were omitted; repaired F1/F2 have Jordan/rank obstructions |
 | D44-energy | Finite-regularity bulk subsidiary uniqueness and loss | open | 11.5 | no $\ell_{\rm sub}$ assigned before D44-principal |
 | D44-Einstein | Every reduced solution/tangent from $C_{\rm init}$ is bulk (linearized) Einstein | open | 11.6--8 | incoming residuals vanish; bulk uniqueness and tangent gauge exhaustion remain |
 
 V73--V79 are scoped regressions only.  The three xAct zeros concern standard
 torsion-free Riemann/Bianchi identities and do not check the doubled residual
 principal matrix.
+
+## Stage 4.5 extended-curvature/Hodge audit
+
+| ID | Claim | Status | Evidence | Boundary |
+|---|---|---|---|---|
+| D45-count | The complete second-Cartan system has 24 rows, with six omitted by the Stage-4.4 characteristic selection | proved | 12.1--2; V80--V81 | omitted rows are $(124;12,13,23)$ and $(123;14,24,34)$ |
+| D45-extractors | $d_{\rm src}-d_{\rm phys}=J\mathcal C_{\rm copy}$ and $\widehat{\mathcal K}=\mathcal K_{\rm src}+J\mathcal C_{\rm copy}$ | proved | 12.3; V86--V87 | all 36 pair-pair components generated; rank six, not a count-only assertion |
+| D45-B-bundle | $\mathcal B$ is the 16-dimensional trace-free Young $(2,1)$ bundle and $H_B$ is invertible onto the allowed alternated-derivative image | proved | 12.4; V82--V84, V92 | exact component basis, incidence matrix and inverse on the image |
+| D45-source | All 16 source rows have explicit $S,A_C^i,M_C$ | proved | 12.5; V84--V85 | hybrid copy placement: A.36/A.38 derivatives copied, A.37/A.39 physical |
+| D45-F1 | The curvature-only subsidiary principal system is square $24\times24$ and has invertible $A_t$ | proved | 12.7--8; V88--V89 | principal closure only; $\det A_t=2$ at Minkowski |
+| D45-sym | F1 admits a positive first-order symmetrizer | false | 12.9; V89 | $-1$ radial eigenspace dimension 10 versus algebraic multiplicity 12 |
+| D45-F2 | The mixed 40-component formulation is symmetric hyperbolic | false | 12.7, 12.9; V90 | 16 zero $\mathcal B$ derivative columns; differential-algebraic only |
+| D45-pivot | Quantitative fixed-reference Cabet build-up/comparison theorem | open | 12.10 | selected G.4 replacement; no regularity loss assigned yet |
+| D45-Einstein | Reduced solution/tangent is bulk (linearized) Einstein | open | 12.10--11 | comparison or wave uniqueness absent; tangent surjectivity separately open |
+
+V80--V92 are exact finite-component and xAct regressions.  The negative
+Jordan/rank results rule out the proposed first-order symmetrizers; they do
+not prove the replacement comparison theorem.  No reset, one-cell,
+rectangle, finite-grid or quantum claim is promoted.

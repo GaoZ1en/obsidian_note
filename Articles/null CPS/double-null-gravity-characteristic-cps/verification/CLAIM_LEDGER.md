@@ -6,8 +6,8 @@ Allowed status vocabulary:
 
 ## Stage 0
 
-Current development overrides are the Stage-4.3 rows below; Stage-4.2 rows
-retain their historical proof scope. No Stage-0--3 claim is upgraded.
+Current development overrides are the Stage-4.5 rows below; earlier Stage-4
+rows retain their historical proof scope. No Stage-0--3 claim is upgraded.
 
 | ID | Claim | Status | Assumptions | Evidence | Remaining boundary |
 |---|---|---|---|---|---|
@@ -155,7 +155,7 @@ promoted by the new derivative bookkeeping.
 | C44-plus-direct | All five plus-sheet Bianchi rows agree by direct source substitution | proved | 10.(3.4)--(3.8); V73--V74 | retains $D\log c$, $O_4$, $c$ and raw/covariant conversion; no mirror used |
 | C44-residual | Complete nonduplicated bulk residual vector | proved | 11.(2.1)--(2.9) | definition/typing; metricity, Weyl type and hard gauge kept algebraic |
 | C44-Cartan | In the project sign convention, $D\mathcal T=-\mathcal K\wedge\theta$ and $D\mathcal K=-\mathscr H(\mathcal B)+3\mathcal T\mathbin{\lrcorner}d$ give homogeneous torsion/curvature transports | proved | 11.(3.1)--(3.7); V76--V79 | Bianchi/copy block is still an input to these transports |
-| C44-subsidiary-principal | Full joint $(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$ principal matrices close and are symmetrizable | open | $P_{\rm sub}^m$, 11.4 | all sixteen transformed Bianchi rows and positive complementary flux missing |
+| C44-subsidiary-principal | Full joint $(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$ principal matrices close and are symmetrizable | false as proposed | superseded by 12.7--9 | Stage 4.4 omitted six Cartan rows; repaired F1 has a radial Jordan block and F2 has zero B derivative columns |
 | C44-subsidiary-energy | Finite-regularity uniqueness with an explicit $\ell_{\rm sub}$ | open | 11.5 | no loss is guessed before C44-subsidiary-principal |
 | C44-incoming-zero | Incoming characteristic bulk residuals and linearized residuals vanish | proved | ledger; 10.1--4; 11.6, 11.8 | zero incoming flux does not imply zero in the cell without subsidiary uniqueness |
 | C44-Einstein | Every completed reduced solution/tangent is bulk (linearized) Einstein | open | 11.6--8 | reconstruction is conditional; tangent surjectivity additionally needs gauge exhaustion |
@@ -164,6 +164,21 @@ promoted by the new derivative bookkeeping.
 
 V73--V79 are exact algebraic regressions only.  V79 checks standard
 torsion-free Riemann/Bianchi identities, not the doubled residual PDE.
+
+## Stage 4.5 extended-curvature/Hodge audit
+
+| ID | Claim | Status | Evidence | Exact boundary |
+|---|---|---|---|---|
+| C45-six-Cartan | The six omitted Cartan rows are $(124;12,13,23)$ and $(123;14,24,34)$ | proved | 12.2; V81, V91 | all 24 rows retained in F1; principal constraint identities also checked |
+| C45-J | $d_{\rm src}-d_{\rm phys}=J\mathcal C_{\rm copy}$ and $\widehat{\mathcal K}=\mathcal K_{\rm src}+J\mathcal C_{\rm copy}$ | proved | 12.3; V86--V87 | component-by-component A.13 map, rank six |
+| C45-B | $\mathcal B$ is a 16-dimensional irreducible bundle and $H_B$ is invertible on it | proved | 12.4; V82--V84, V92 | cyclic plus trace constraints; explicit basis and incidence inverse |
+| C45-source | Every A.36--A.39 row has explicit $S,A_C^i,M_C$ | proved | 12.5; V84--V85 | no derivative outside $(\mathcal B,\mathcal C_{\rm copy})$ |
+| C45-F1-square | Curvature-only subsidiary principal system is square $24\times24$ with invertible time matrix | proved | 12.7--8; V88--V89 | frozen principal statement; $\det A_t=2$ |
+| C45-F1-sym | F1 has a positive first-order symmetrizer | false | 12.9; V89 | radial $-1$ algebraic/geometric multiplicities $12/10$ |
+| C45-F2-sym | Mixed $40\times40$ system has a positive first-order symmetrizer | false | 12.7, 12.9; V90 | 16 zero B derivative columns |
+| C45-comparison | Quantitative finite-regularity Cabet build-up/comparison theorem | open | 12.10 | selected G.4 pivot; no $\ell_{\rm sub}$ yet |
+| C45-Einstein | Reduced/completed tangent is bulk (linearized) Einstein | open | 12.10--11 | comparison/wave uniqueness and tangent exhaustion absent |
+| C45-cell | $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ | conditional | 12.11 | reset, Einstein identification and later $C^1$ gates remain |
 
 ## Verification ledger
 
@@ -247,3 +262,10 @@ topology theorem.
 | V75 | Source-row metadata checksum | Wolfram exact integer/list check | verifies ledger incidence counts, not mathematical independence or bulk propagation |
 | V76--V78 | Source/geometric curvature correction and representative Cartan principal coefficients | Wolfram algebra | representative blocks only; no complete residual matrix/symmetrizer |
 | V79 | Algebraic Riemann, contracted differential and Einstein Bianchi identities | xAct canonical_contract | torsion-free metric identities only; not the doubled-copy subsidiary system |
+| V80--V81 | $18+6=24$ counts and all six omitted Cartan labels | exact SymPy rational regression | component incidence; not a PDE theorem |
+| V82--V84 | Bianchi cyclic/trace projector, $H_B$ and exact invertible $S$ | exact SymPy rational regression | full finite component maps; analytic bundle statement is 12.4--5 |
+| V85--V88 | All copy-principal rows, $J$, extended-curvature decomposition and all 24 Cartan rows | exact SymPy rational regression | full printed convention; no variable-coefficient estimate |
+| V89 | Full F1 symbol, $\det A_t=2$ and defective radial $-1$ eigenspace | exact SymPy rational matrix regression | disproves positive F1 symmetrizer at Minkowski |
+| V90 | Full F2 matrices and 16 zero B derivative columns | exact SymPy rational matrix regression | disproves strict positive timelike F2 flux |
+| V91 | Six exterior-of-exterior Cartan constraint identities | exact SymPy rational regression | principal propagation only; lower-order analytic terms remain homogeneous |
+| V92 | B antisymmetry, Weyl cyclic identity and B trace | xAct canonical_contract | three zero tensor residuals; not dimension or PDE uniqueness |

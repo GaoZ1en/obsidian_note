@@ -1,12 +1,15 @@
 # Immediate Research Tasks
 
-**Stage 4.4 theorem boundary.** Stages 0--3 stay classical.
+**Stage 4.5 theorem boundary.** Stages 0--3 stay classical.
 Initial completion and local reduced restart are proved in calculation 10.
 The exhaustive source ledger and direct plus-sheet audit are closed.
-Calculation 11 defines the full bulk residual and closes its universal
-Cartan identities, but the joint curvature/Bianchi/copy characteristic
-principal matrix and positive symmetrizer are not proved.  No
-$\ell_{\rm sub}$ is assigned.  Full project reset and bulk Einstein
+Calculation 12 repairs the six missing Cartan rows and constructs the full
+$24\times24$ curvature-only and $40\times40$ mixed principal matrices.
+The first has a defective radial Jordan block and the second has sixteen
+zero Bianchi-derivative columns, so neither admits the required positive
+first-order symmetrizer.  No $\ell_{\rm sub}$ is assigned.  The selected
+replacement gate is a quantitative fixed-reference Cabet
+build-up/comparison theorem.  Full project reset and bulk Einstein
 identification remain open.
 $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional.
 No quantization or finite-grid continuation.
@@ -32,24 +35,27 @@ No quantization or finite-grid continuation.
   $D\mathcal K=-\mathscr H(\mathcal B)+3\mathcal T\mathbin{\lrcorner}d$
   and the resulting triangular
   torsion/curvature generator incidence. Check: 11.3, V76--V79.
-- [ ] **First bulk lemma $P_{\rm sub}^m$:** expand all sixteen transformed
-  A.36--A.39 rows into the joint
-  $(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$ residual
-  system; eliminate every derivative outside that vector and prove a
-  positive complementary double-null symmetrizer. Check: 11.4. Do not
-  assign $\ell_{\rm sub}$ before this closes.
-- [ ] After $P_{\rm sub}^m$, carry 09.2's fixed-reference connection,
-  symmetrizer and density derivatives through the residual energy estimate;
-  prove finite-regularity uniqueness and only then identify the reduced
-  bulk and completed tangents with Einstein fields.
+- [x] Repair $P_{\rm sub}^m$ at the algebraic/principal level: identify all
+  six omitted Cartan rows, prove $d_{\rm src}-d_{\rm phys}=JC$, fix the
+  sixteen-dimensional Bianchi/Hodge bundle, expand all sixteen source rows
+  and generate the complete F1/F2 symbols. Check: calculation 12; V80--V92.
+- [x] Test the positive first-order symmetrizer. **Negative result:** F1 has
+  two nontrivial radial Jordan directions and F2 has sixteen zero derivative
+  columns. Check: 12.8--9; V89--V90. Do not assign $\ell_{\rm sub}$.
+- [ ] **First bulk lemma after the G.4 pivot:** prove a quantitative
+  fixed-reference Cabet build-up/comparison theorem at finite regularity:
+  construct the geometric vacuum development, put it in the identical
+  source gauge/copy convention, and prove common-cell equality with explicit
+  Sobolev orders and coefficient/density margins.
 - [ ] **First reset lemma:** prove 10.(7.6), the complete moving-cut,
   inverse-graph and label-composition estimate for
   $\zeta-HD f+\kappa Df+D_{\rm new}\log a$, with every required generator
   jet and endpoint trace. Derive, do not assign, $\ell_{\rm reset}$.
-- [ ] **Independent Einstein gate:** complete the direct finite-regularity
-  theorem above.  Initial-sheet ODE uniqueness, the Cartan identities alone,
-  and the V73--V79 regressions are not this theorem; reduced output cannot
-  yet be called geometric vacuum data.
+- [ ] **Independent Einstein gate:** complete the quantitative comparison
+  theorem above (or a separately proved second-order wave subsidiary
+  system).  Initial-sheet ODE uniqueness, the Cartan identities, and
+  V73--V92 are not this theorem; reduced output cannot yet be called
+  geometric vacuum data.
 - [ ] Only after these gates, construct the Einstein tangent lift and bound
   every source in 08.(5.2). Do not identify the completion remainder with
   the evolution remainder.

@@ -18,14 +18,19 @@ surjectivity, or $P_{\rm cell}^k$. The exact first reset estimate is
 10.(7.6), including the refoliated normal connection and all moving-cut
 generator traces. No full reset loss is assigned.
 
-**Stage 4.4 audit:** `verification/SOURCE_ROW_LEDGER.md` exhausts all
+**Stage 4.4/4.5 audit:** `verification/SOURCE_ROW_LEDGER.md` exhausts all
 41 evolved source component rows, the hard gauge/type relations and all
 six copy constraints.  Calculation 10 now contains a direct, non-mirror
 substitution of all five plus-sheet Bianchi rows.  Calculation 11 defines
 the complete bulk residual vector and derives its Cartan homogeneous
-identities, but does not close the coupled curvature/Bianchi/copy principal
-matrix or a positive-flux symmetrizer.  Hence no bulk subsidiary loss is
-assigned and no Einstein/reset/$C^1$ claim is upgraded.
+identities.  Calculation 12 repairs the missing six Cartan rows, constructs
+the full $24\times24$ and $40\times40$ symbols, and proves a negative
+result: the curvature-only radial symbol has a defective $-1$ eigenspace,
+while the mixed symbol has sixteen zero Bianchi-derivative columns.  Hence
+no positive first-order symmetrizer exists for either formulation.  The
+project now pivots to a quantitative Cabet build-up/comparison theorem; no
+bulk subsidiary loss is assigned and no Einstein/reset/$C^1$ claim is
+upgraded.
 
 The intrinsic EH identity retains its restriction/constructed-image scope.
 The prescribed-rectangle $P_{\rm rect}^{s,r}$ remains conditional.
@@ -184,7 +189,11 @@ post-CIVP construction belongs here.
   pure-generator hierarchy and local reduced restart.
 - `calculations/11-stage4.4-bulk-einstein-subsidiary.md`: complete bulk
   zero-quantity inventory, Cartan transport identities and the exact
-  unclosed curvature/Bianchi/copy principal-system lemma.
+  historical curvature/Bianchi/copy principal-system lemma, corrected by
+  calculation 12.
+- `calculations/12-stage4.5-extended-curvature-hodge-subsidiary.md`: full
+  extended-curvature/Hodge component audit, all principal matrices and the
+  frozen Jordan obstruction to a positive first-order symmetrizer.
 - `verification/SOURCE_ROW_LEDGER.md`: every frame, connection, Bianchi,
   gauge/type and copy row with sheet incidence, corner value and evidence.
 - `verification/STAGE1_AUDIT_SUMMARY.md`: concise proved/conditional/open
@@ -224,6 +233,9 @@ post-CIVP construction belongs here.
 - `scripts/stage44_cleanup_subsidiary_checks.wl` and
   `scripts/stage44_subsidiary_identities_xact.wl`: V73--V79 cleanup and
   representative Cartan/Bianchi regressions; not a bulk PDE proof.
+- `scripts/stage45_extended_curvature_hodge_checks.py` and
+  `scripts/stage45_bianchi_bundle_xact.wl`: V80--V92 full exact component,
+  symbol, Jordan and Bianchi-bundle regressions.
 - `scripts/README.md`: command and evidence boundary.
 
 ## Source discipline
@@ -248,18 +260,34 @@ scripts/stage43_bianchi_jets.wl, scripts/stage43_commutators_xact.wl,
 scripts/stage43_hierarchy_reset_checks.wl, and
 verification/stage43_xact_results.md. V65--V72 are regressions only.
 
-## Current Stage-4.4 verdict
+## Historical Stage-4.4 verdict
 
-The initial ledger is exhaustive and the direct plus-sheet substitutions
+At the end of Stage 4.4, the initial ledger was exhaustive and the direct plus-sheet substitutions
 agree with the mirror.  The bulk vector
 $(\mathcal T,\Xi,\mathcal B,\mathcal C_{\rm copy})$ is completely typed,
 and the two Cartan identities make its torsion/curvature transports
-homogeneous after adjoining the Bianchi block.  The remaining lemma is the
+homogeneous after adjoining the Bianchi block.  The then-remaining lemma was the
 joint symmetrizable characteristic principal system for
 $(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$.
-It is not proved, so $\ell_{\rm sub}$, bulk Einstein identification,
+Stage 4.5 has since disproved the proposed positive symmetrizer, so
+$\ell_{\rm sub}$, bulk Einstein identification,
 linearized tangent identification, reset loss and one-cell $C^1$ remain
 unassigned.  $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional.
+
+## Current Stage-4.5 verdict
+
+The six formerly omitted rows are $(124;12,13,23)$ in the $\mathcal P$
+sector and $(123;14,24,34)$ in the $\mathcal Q$ sector.  The explicit
+source/physical map $d_{\rm src}-d_{\rm phys}=JC$, the sixteen-dimensional
+Bianchi bundle, $H_B$, the $16\times16$ row map $S$, every copy-principal
+row and all twenty-four Cartan rows are now fixed.  The resulting F1 system
+is square $24\times24$ and has $\det A_t=2$, but
+$A_t^{-1}A_r$ has algebraic/geometric multiplicities $12/10$ at eigenvalue
+$-1$.  Therefore no positive symmetrizer exists.  F2 is a
+$40\times40$ differential-algebraic system with sixteen zero derivative
+columns.  Stage 4.5 stops under G.4 and selects the quantitative Cabet
+comparison route.  No $\ell_{\rm sub}$, Einstein identification, reset,
+$C^1$, finite grid or quantization follows.
 
 ## Historical Stage-4.2 required verdict
 

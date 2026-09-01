@@ -24,7 +24,10 @@ $C_{\rm init}$ and its differential/completion remainder: loss five in
 free-slot $I^k$, six in filled-cross $J^k$. It proves the pure-generator
 reduced difference loss $2r+1$ and a local reduced
 $I^{2k+8}\to I^k$ restart theorem. Full affine reset and bulk Einstein
-constraint propagation remain open; the first reset estimate is 10.(7.6).
+constraint propagation remain open.  Stage 4.5 proves that the proposed
+first-order F1/F2 residual formulations have no positive symmetrizer and
+pivots to a quantitative Cabet comparison theorem; no
+$\ell_{\rm sub}$ is assigned.  The first reset estimate is 10.(7.6).
 $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional. Extended
 abstract ports still require the separate action-derived $P_{\rm red}$.
 
@@ -287,6 +290,17 @@ $(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$ principal
 system or a positive double-null symmetrizer.  No finite-regularity loss is
 therefore assigned and no reduced solution/tangent is promoted to Einstein.
 
+Stage 4.5 repairs that formulation rather than assuming it.  The complete
+second-Cartan system has twenty-four rows, including six omitted in
+Stage 4.4.  Calculation 12 fixes the source/physical extractor map, the
+sixteen-dimensional Bianchi/Hodge bundle, every source-copy row and the
+full F1/F2 matrices.  The repaired $24\times24$ F1 system has an invertible
+time matrix but a defective radial Jordan block; F2 has sixteen zero
+Bianchi-derivative columns.  Hence the proposed positive first-order
+symmetrizer does not exist.  The project pivots to a quantitative Cabet
+build-up/comparison theorem, which is still open.  No $\ell_{\rm sub}$ or
+Einstein identification is promoted.
+
 The authoritative detailed statements are calculations 06--10 and
 `DEVELOPMENT_MAP_AUDIT.md`. The core map is an equivalence in the smooth
 category onto the slice $\mathcal F$ defined by $a_\pm[m]=\sqrt2e^{m/2}$
@@ -415,11 +429,10 @@ closing-wall action.
 
 ## 6. Open items and continuation rule
 
-1. Complete $P_{\rm sub}^m$, the joint symmetrizable characteristic
-   principal system for
-   $(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$, then its
-   fixed-reference finite-regularity uniqueness estimate.  No
-   $\ell_{\rm sub}$ is assigned before this closes;
+1. Complete the quantitative fixed-reference Cabet build-up/comparison
+   theorem selected in 12.10 (or a separately proved second-order wave
+   subsidiary system).  The first-order F1/F2 symmetrizer route is false;
+   no $\ell_{\rm sub}$ is assigned before the replacement gate closes;
 2. Only after bulk Einstein identification, complete the refoliated
    affine-reset estimate 10.(7.6), its inverse graph/label compositions and
    all endpoint jets; no full reset loss has been assigned;
@@ -463,6 +476,21 @@ one-cell theorem or rectangle closed.
 | Direct plus A.36a/A.37a/A.38a--b/A.39a substitution | proved | includes $D\log c$, $O_4$, lapse and raw/covariant conversion; agrees with mirror |
 | Complete bulk residual vector | proved | $\mathcal R_{\rm bulk}=(\mathcal T,\Xi,\mathcal B,\mathcal C_{\rm copy})$ with algebraic identities removed |
 | Homogeneous Cartan torsion/curvature identities | proved | in the project sign convention, $D\mathcal T=-\mathcal K\wedge\theta$ and $D\mathcal K=-\mathscr H(\mathcal B)+3\mathcal T\mathbin{\lrcorner}d$; not the full residual PDE |
-| Joint residual principal matrices, symmetrizer and finite loss | open | exact lemma $P_{\rm sub}^m$ in 11.4; no $\ell_{\rm sub}$ |
+| Joint residual principal matrices and positive first-order symmetrizer | false as proposed | 12.7--9: repaired F1 Jordan obstruction; F2 zero derivative columns |
+| Quantitative comparison theorem and finite loss | open | selected G.4 pivot in 12.10; no $\ell_{\rm sub}$ |
 | Bulk/linearized Einstein identification and tangent surjectivity | open/conditional | incoming residuals vanish; bulk uniqueness and framed gauge exhaustion do not |
 | Reset, one-cell $C^1$, rectangle | open/conditional | gated; no reset loss, finite grid or quantization |
+
+### Stage-4.5 current theorem list
+
+| Claim | Status | Precise scope |
+|---|---|---|
+| Six missing Cartan rows and $18+6=24$ extended-curvature decomposition | proved | 12.1--3; full component map, not counting alone |
+| $d_{\rm src}-d_{\rm phys}=J\mathcal C_{\rm copy}$ | proved | all 36 pair-pair components, rank six |
+| Sixteen-dimensional Bianchi bundle, $H_B$, $S$, all source-copy rows | proved | 12.4--5; V82--V85, V92 |
+| Square curvature-only F1 symbol | proved | full $24\times24$ matrices, $\det A_t=2$ at Minkowski |
+| Positive F1 symmetrizer | false | radial eigenvalue $-1$ has algebraic/geometric multiplicities $12/10$ |
+| Positive mixed F2 symmetrizer | false | 16 zero B derivative columns; differential-algebraic |
+| Quantitative Cabet build-up/comparison pivot | open | fixed-reference finite regularity and loss not yet proved |
+| Bulk/linearized Einstein identification and tangent surjectivity | open/conditional | no comparison/wave uniqueness; exhaustion separately absent |
+| Reset, $P_{\rm cell}^k$, $P_{\rm rect}^{s,r}$ | open/conditional | no moving cut, nonlinear $C^1$, finite grid or quantization |

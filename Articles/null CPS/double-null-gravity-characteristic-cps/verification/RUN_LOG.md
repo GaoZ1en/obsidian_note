@@ -1,5 +1,63 @@
 # Verification Run Log
 
+## 2026-09-01 - Stage 4.5 extended-curvature/Hodge subsidiary audit
+
+Continued the clean `codex/double-null-gravity-cps` worktree at
+`c1136f58`.  The main Note checkout and all unrelated notes were left
+untouched.  No commit, push, moving-cut reset, nonlinear $C^1$ step,
+finite-grid continuation or quantization was performed.
+
+Reopened the arXiv:1406.3009v2 TeX source and Appendix A.13,
+A.36--A.39, A.41 and A.43.  Calculation 12 now corrects the Stage-4.4
+component count.  The six omitted second-Cartan rows are
+$(124;12,13,23)$ and $(123;14,24,34)$.  The calculation distinguishes
+$d_{\rm src}$ from $d_{\rm phys}$, gives every nonzero component of the
+rank-six injection $J$, constructs the $18+6=24$ extended curvature
+residual, fixes the 16-dimensional trace-free Young $(2,1)$ Bianchi bundle,
+and builds an exact invertible incidence/Hodge map.
+
+All sixteen conjugated source rows were expanded.  The copy-derivative
+placement is hybrid: A.36 and A.38 carry copy derivatives; A.37 and A.39
+carry physical derivatives.  The exact $16\times16$ matrix $S$ has
+$\det S=-16$.  All four $16\times6$ matrices $A_C^i$ and the lower-order
+$M_C$ operator are recorded in calculation 12.5.  No derivative outside
+$(\mathcal B,\mathcal C_{\rm copy})$ remains.
+
+The full curvature-only F1 matrices are
+$A^i=E^iQ-H_BS^{-1}A_C^iP_C$.  At the Minkowski freeze,
+$A_t=A^3+A^4$ has rank 24 and determinant 2.  However the normalized radial
+matrix has characteristic polynomial
+$(\lambda-1)^{12}(\lambda+1)^{12}$ while the $-1$ eigenspace has dimension
+10.  The two generalized eigenvectors rule out a positive first-order
+symmetrizer.  The algebraically square F2 system has sixteen identically
+zero Bianchi derivative columns and timelike rank 24.  Thus neither F1 nor
+F2 has the required positive flux.  This is a negative principal-symbol
+result, not an unfinished symmetrizer search.
+
+Executed the saved script with SymPy 1.14.0 through Sage Python:
+
+- `scripts/stage45_extended_curvature_hodge_checks.py`: **37/37 PASS**.
+  V80--V91 construct the complete component maps and matrices, the six
+  exterior-of-exterior constraint identities, the F1 Jordan obstruction
+  and the F2 rank obstruction.  The complete matrices can be emitted with
+  `--dump-full`.  Exact output summary:
+  `verification/stage45_component_results.md`.
+
+Executed through the dedicated xAct core tools:
+
+- `scripts/stage45_bianchi_bundle_xact.wl`: three zero exploratory
+  expressions, no messages;
+- fresh `canonical_contract` verification: **3/3 zero**, `allZero=true`,
+  no load/setup/check messages, unknown heads or truncation.  Exact result:
+  `verification/stage45_xact_results.md`.
+
+**G.4 stop and pivot:** selected a quantitative fixed-reference Cabet
+build-up/comparison theorem.  It is not proved in this run.  Consequently
+there is no variable-coefficient subsidiary estimate, no
+$\ell_{\rm sub}$, no reduced-to-Einstein or tangent-to-linearized-Einstein
+identification, and no tangent surjectivity.  $P_{\rm cell}^k$ and
+$P_{\rm rect}^{s,r}$ remain conditional.
+
 ## 2026-09-01 - Stage 4.4 bulk Einstein subsidiary audit
 
 Continued the clean existing `codex/double-null-gravity-cps` worktree at
