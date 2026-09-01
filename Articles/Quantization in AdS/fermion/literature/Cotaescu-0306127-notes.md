@@ -1,16 +1,16 @@
-# Cotăescu gr-qc/0306127: extraction notes
+# Cotăescu gr-qc/0306127: Extraction Notes
 
-## Supported statements
+## Supported Statements
 
 Cotăescu solves the regular global modes in a Cartesian tetrad gauge. For $AdS_{d+1}$ he finds
 
-$$
+$$\begin{align}
 E_N=m+N+\frac d2.
-$$
+\end{align}$$
 
 Setting $d=3$ gives $E_N=3/2+m+N$. The paper supplies the Jacobi radial functions, the two parity branches, the normalization constant, and charge-conjugate antiparticle modes.
 
-## Translation used here
+## Translation Used Here
 
 The radial coordinate in that paper is the conformal coordinate $\rho$, while its curvature scale is denoted by a symbol often used for frequency. This project sets that scale to one and reserves $E$ for mode energy.
 
