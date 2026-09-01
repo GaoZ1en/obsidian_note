@@ -1,4 +1,4 @@
-# 10. Comparison with the scalar construction
+# 10. Comparison with the Scalar Construction
 
 The uploaded scalar manuscript is used as a structural template, not as a source of spinor formulae.
 
@@ -19,47 +19,13 @@ The uploaded scalar manuscript is used as a structural template, not as a source
 | One-particle module | $D(\Delta,0)$ | $D(\Delta,\tfrac12)$ | spin changes $K$-types and Casimir |
 | Endpoint | scalar BF/upper-window endpoints | $m=0$ polarization degeneracy and $m=1/2$ Di endpoint | different exceptional structure |
 
-## What truly generalizes
+## What Truly Generalizes
 
 The transferable part of the scalar method is the logical order:
 
-$$
-\text{regulated action and field space}
-\to
-\text{complete variation}
-\to
-\text{pre-phase space}
-\to
-\Omega
-\to
-\text{zero flux}
-\to
-Q_\xi
-\to
+$$\begin{align}
+\text{regulated action and field space} \to \text{complete variation} \to \text{pre-phase space} \to \Omega \to \text{zero flux} \to Q_\xi \to
 \iota_X\Omega=-\delta Q.
-$$
+\end{align}$$
 
 In both theories, finiteness is an output of a specified off-shell field space and boundary completion, and conservation is a separate radial-flux statement.
-
-## What must not be copied
-
-The following scalar substitutions are invalid:
-
-- replacing $\mathcal L_\xi\phi$ by a componentwise $\mathcal L_\xi\psi$ without the Kosmann spin term;
-- treating the two spinor falloffs as two unconstrained copies of a scalar coefficient;
-- using an ordinary antisymmetric wedge rule on two odd mode directions;
-- deriving CCR and then changing brackets to braces by notation;
-- guessing the fermionic charge from a scalar improved stress tensor;
-- calling $m\to1/2$ a completed alternative quantization because $\Delta_-\to1$.
-
-## Boundary-complete Noether comparison
-
-The scalar manuscript makes the regulator and radial/corner cancellation visible. The fermion implementation preserves that feature in the formula
-
-$$
-\alpha_{\xi,R}^s
-=\int_{\Sigma_R}\iota_\xi L_D
-+\int_{S_R^2}\iota_\xi\ell_s,
-$$
-
-where the second term is the endpoint of the timelike polarization action. It vanishes for source-free pure data only after its role in the finite-cutoff Hamiltonian identity has been retained. This is the closest fermionic analogue of the scalar boundary subtraction, but its origin is polarization rather than a scalar improvement counterterm.

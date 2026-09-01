@@ -1,4 +1,4 @@
-# 09. Special points: audit only
+# 09. Special Points: Audit Only
 
 The main proofs assume $0<m<1/2$. This file records what changes at the excluded points without importing those changes into the open-interval conclusions.
 
@@ -6,26 +6,23 @@ The main proofs assume $0<m<1/2$. This file records what changes at the excluded
 
 At zero mass,
 
-$$
+$$\begin{align}
 \Delta_+=\Delta_-=\frac32.
-$$
+\end{align}$$
 
 The powers coincide, but the leading data remain distinguishable by the outward radial projectors:
 
-$$
-P_+\alpha=\alpha,
-\qquad
-P_-\beta=\beta.
-$$
+$$\begin{align}
+P_+\alpha=\alpha, \qquad P_-\beta=\beta.
+\end{align}$$
 
 Because the leading indicial matrix is diagonalizable on the two projector spaces, equality of powers does not by itself force a logarithmic solution. What degenerates is the distinction by scaling weight and, correspondingly, the naming of “standard” and “alternative” as two inequivalent conformal dimensions.
 
 Amsel--Marolf exhibit local linear mixed boundary conditions in even bulk dimension of the schematic form
 
-$$
-\beta=iq\gamma_5\alpha,
-\qquad q\in\mathbb R,
-$$
+$$\begin{align}
+\beta=iq\gamma_5\alpha, \qquad q\in\mathbb R,
+\end{align}$$
 
 after translating their inward-normal projectors to ours. Such a relation can define a Lagrangian subspace of the boundary super-phase space, but the following points require a dedicated calculation:
 
@@ -41,23 +38,23 @@ after translating their inward-normal projectors to ours. Such a relation can de
 
 At the upper endpoint,
 
-$$
+$$\begin{align}
 \Delta_-\longrightarrow1,
-$$
+\end{align}$$
 
 which saturates the CFT3 spinor unitarity bound. The slow Cauchy density becomes
 
-$$
+$$\begin{align}
 r^{-2+2m}\,dr\longrightarrow\frac{dr}{r},
-$$
+\end{align}$$
 
 and the off-shell tangential action density similarly becomes $d\Omega/\Omega$. Thus the ordinary alternative norm, symplectic form, and action develop logarithmic divergences. Amsel--Marolf's standard-inner-product analysis correspondingly gives a unique boundary condition for $|m|\geq1/2$.
 
 The formal representation label approaches
 
-$$
+$$\begin{align}
 D(\Delta_-,\tfrac12)\longrightarrow D(1,\tfrac12),
-$$
+\end{align}$$
 
 the Di singleton. But this formal limit is not a proof that the unrenormalized bulk alternative phase space exists at the endpoint. A controlled construction would need:
 
@@ -69,7 +66,7 @@ the Di singleton. But this formal limit is not a proof that the unrenormalized b
 
 **Status: OPEN.** The present work proves only that the ordinary alternative construction fails logarithmically as $m\to1/2$, while the representation labels approach the Di bound.
 
-## Claim discipline
+## Claim Discipline
 
 - **PROVED:** logarithmic failure of the unrenormalized slow norm by radial power counting.
 - **LITERATURE-SUPPORTED:** $D(1,\tfrac12)$ is the spinor singleton and $E_0=1$ is the spin-$1/2$ unitarity bound.

@@ -1,18 +1,18 @@
-# 02. Asymptotic Dirac data
+# 02. Asymptotic Dirac Data
 
-## 1. Direct indicial equation
+## 1. Direct Indicial Equation
 
 Use the large-$r$ operator from [01-geometry-spinor-conventions.md](01-geometry-spinor-conventions.md). For
 
-$$
-\psi\sim r^{-\Delta}u(t,\Omega),
-$$
+$$\begin{align}
+\psi \sim r^{-\Delta}u(t,\Omega)
+\end{align}$$
 
 the leading Dirac equation is
 
-$$
-\left[\left(\frac32-\Delta\right)\gamma^{\hat r}-m\right]u=0.
-$$
+$$\begin{align}
+\left( \left( \dfrac{3}{2}-\Delta \right)\gamma ^{\hat{r}}-m \right)u & =0
+\end{align}$$
 
 The two roots and projectors follow without importing a scalar formula:
 
@@ -24,89 +24,78 @@ $$
 \end{array}
 $$
 
-Thus, for $0<m<1/2$,
+Thus, for $\displaystyle{0<m<\dfrac{1}{2}}$,
 
-$$
-\psi=r^{-\Delta_-}\left(\alpha+r^{-1}\alpha_{(1)}+\cdots\right)
-+r^{-\Delta_+}\left(\beta+r^{-1}\beta_{(1)}+\cdots\right).
-$$
+$$\begin{align}
+\psi & =r^{-\Delta _{-}}(\alpha+r^{-1}\alpha _{(1)}+\dots)+r^{-\Delta _{+}}(\beta+r^{-1}\beta _{(1)}+\dots)
+\end{align}$$
 
 The first tangential recursion gives
 
-$$
-\alpha_{(1)}=-\frac{1}{1-2m}\not\!D_{\mathbb R\times S^2}\alpha,
-\qquad
-\beta_{(1)}=\frac{1}{1+2m}\not\!D_{\mathbb R\times S^2}\beta,
-$$
+$$\begin{align}
+\alpha _{(1)} & =\dfrac{1}{1-2m}\gamma ^{\mu} D_{\mu,\mathbb{R}\times S^{2}}\alpha \\
+\beta _{(1)} & =\dfrac{1}{1+2m}\gamma ^{\mu}D_{\mu,\mathbb{R}\times S^{2}}\beta
+\end{align}$$
 
-with $P_-\alpha_{(1)}=\alpha_{(1)}$ and $P_+\beta_{(1)}=\beta_{(1)}$. Tangential Clifford multiplication flips the radial projector because
+with $\displaystyle{P_{-}\alpha _{(1)}=\alpha _{(1)}}$ and $\displaystyle{P_{+}\beta _{(1)}=\beta _{(1)}}$. Tangential Clifford multiplication flips the radial projector because
 
-$$
-\{\gamma^{\hat r},\not\!D_{\mathbb R\times S^2}\}=0.
-$$
+$$\begin{align}
+\left\{\gamma ^{\hat{r}},\gamma ^{\mu}D_{\mu,\mathbb{R}\times S^{2}}\right\}=0
+\end{align}$$
 
-The pole at $1-2m=0$ is the first local indication that the endpoint needs a logarithmic/renormalized treatment.
+The pole at $1-2m=0$ is the first local indication that the endpoint needs a logarithmic/renormalized treatment, but it would not the case we will discuss here.
 
-## 2. Off-shell configuration space
+## 2. Off-Shell Configuration Space
 
 The regulated action is varied on histories with derivative-controlled expansions
 
-$$
-\psi=r^{-\Delta_-}\alpha+r^{-\Delta_+}\beta
-+O(r^{-\Delta_--1}),
-$$
+$$\begin{align}
+\psi=r^{-\Delta_-}\alpha+r^{-\Delta_+}\beta +O(r^{-\Delta_--1}),
+\end{align}$$
 
-and similarly for $\bar\psi$, uniformly under a finite number of $t$, angular, and radial derivatives. The leading $\alpha,\beta,\bar\alpha,\bar\beta$ are independent off shell, subject only to the radial projectors. In particular, no global regularity relation $\beta=\beta[\alpha]$ is imposed in the variational problem.
+and similarly for $\bar\psi$, uniformly under a finite number of $t$, angular, and radial derivatives. The leading $\alpha,\beta,\bar\alpha,\bar\beta$ are independent off shell, subject only to the radial projectors.
 
-On shell, regularity at $r=0$, the Dirac equation, and a chosen frequency prescription relate the two asymptotic coefficients for a generic solution. That relation is nonlocal along the boundary and is used only after the Euler--Lagrange equation has been imposed.
+On shell, regularity at $r=0$, the Dirac equation, and a chosen frequency prescription relate the two asymptotic coefficients for a generic solution. That relation is nonlocal along the boundary and is used only after the Euler-Lagrange equation has been imposed.
 
-This distinction is the Lorentzian global-AdS version of Henneaux's point: radial first-order evolution pairs the two projected data, but it does not identify them off shell.
-
-## 3. Normalizability window
+## 3. Normalizability Window
 
 On a constant-time slice,
 
-$$
-(u,u)_\Sigma
-=\int_0^\infty dr\,d\Omega_2\frac{r^2}{\sqrt{1+r^2}}u^\dagger u.
-$$
+$$\begin{align}
+(u,u)_{\Sigma} & =\int _{0}^{\infty}\mathrm{d}r \dfrac{r^{2}}{\sqrt{ 1+r^{2} }}\int _{S^{2}}\mathrm{d}\Omega _{2} u^{\dagger}u
+\end{align}$$
 
 For the slow branch the radial density behaves as
 
-$$
+$$\begin{align}
 r^{1-2\Delta_-}=r^{-2+2m},
-$$
+\end{align}$$
 
-which is integrable at infinity precisely when $m<1/2$. For the fast branch it behaves as $r^{-2-2m}$, which is integrable for $m>-1/2$. Therefore both branches lie in the standard Dirac Hilbert space exactly in the window
+which is integrable at infinity precisely when $\displaystyle{m< \dfrac{1}{2}}$. For the fast branch it behaves as $\displaystyle{r^{-2-2m}}$, which is integrable for $\displaystyle{m> -\dfrac{1}{2}}$. Therefore both branches lie in the standard Dirac Hilbert space exactly in the window
 
-$$
-|m|<\frac12.
-$$
+$$\begin{align}
+|m|< \dfrac{1}{2}
+\end{align}$$
 
-For this project $m>0$, so the displayed main interval is $0<m<1/2$.
+for this project $\displaystyle{m> 0}$, so the displayed main interval is $\displaystyle{0<m< \dfrac{1}{2}}$.
 
 This is a statement about the Cauchy inner product. It is not by itself a proof that a selected boundary condition defines a positive self-adjoint Hamiltonian domain; that additional operator statement is literature-supported and separately recorded in the claim ledger.
 
-## 4. Radial canonical pairing versus Cauchy CPS
+## 4. Radial Canonical Pairing Versus Cauchy CPS
 
 Henneaux's radial Hamiltonian statement treats $r$ (or a defining function) as the evolution parameter. The pairs are schematically
 
-$$
-(\bar\alpha,\beta),
-\qquad
-(\bar\beta,\alpha),
-$$
+$$\begin{align}
+(\bar\alpha,\beta), \qquad (\bar\beta,\alpha),
+\end{align}$$
 
 and a boundary term chooses which half is fixed. This is a **boundary super-phase-space polarization**.
 
 The Lorentzian Cauchy CPS instead integrates the conserved current over $t=\text{constant}$:
 
-$$
-\Omega_\Sigma(\delta_1,\delta_2)
-=i\int_\Sigma\sqrt\sigma\,\tau_\mu
-\left(\delta_1\bar\psi\gamma^\mu\delta_2\psi
--(-1)^{\epsilon_1\epsilon_2}\delta_2\bar\psi\gamma^\mu\delta_1\psi\right).
-$$
+$$\begin{align}
+\Omega_\Sigma(\delta_1,\delta_2) =i\int_\Sigma\sqrt\sigma\,\tau_\mu \left(\delta_1\bar\psi\gamma^\mu\delta_2\psi -(-1)^{\epsilon_1\epsilon_2}\delta_2\bar\psi\gamma^\mu\delta_1\psi\right).
+\end{align}$$
 
 The first structure selects admissible boundary conditions; the second is the physical even symplectic form used for CAR quantization. They are related by the radial flux, but they are not the same object.
 
