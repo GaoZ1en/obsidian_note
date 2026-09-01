@@ -1,6 +1,6 @@
 # Maxwell 2+1 spatial-gluing kill test
 
-**Verdict: proved for the smooth finite-Fourier orbit-level collar theorem.** Section 9 of `calculations.md` constructs intrinsic geometric assembly independently of Coulomb/DtN, proves choice independence and two-sided orbit correspondence, and descends the original CPS to horizontal tangent classes. Coulomb restoration is its section modulo discrete proper copies. No smooth quotient-manifold or completed-space theorem is claimed.
+**Verdict: proved for the smooth finite-Fourier orbit-level collar theorem and time-slab evolution-relation composition.** Section 9 of `calculations.md` constructs intrinsic geometric assembly independently of Coulomb/DtN, proves choice independence and two-sided orbit correspondence, and descends the original CPS to horizontal tangent classes. Section 10 separately defines the regional mixed evolution relations and cut-history action, proves their matched relation is equivalent to the global solution-history relation modulo proper gauge, and derives exact on-shell-action, symplectic-flux and power/Hamiltonian composition. Coulomb restoration is a section at both orbit and relation level. No smooth quotient-manifold, Lagrangian-maximality or completed-space theorem is claimed.
 
 The physical target is **only** $\operatorname{Sol}_{\rm sm}/\mathcal G_{\rm sm}^{\rm prop}$. $\operatorname{Sol}_{\rm pw}$ remains a distributional diagnostic category. Its raw smooth-gauge restriction/kernel claims still fail: both the cusp and the piecewise-quadratic pure gauge are retained. These are representative/category obstructions, not failures of physical sewing.
 
@@ -8,10 +8,11 @@ The scope is classical Maxwell on $I\times[-L,L]\times S^1_R$, fixed $A_t=A_s=0$
 
 Files:
 
-- `calculations.md`: B1--B7 derivations and both counterexamples; Section 9 gives original regional based objects, collar assembly, comparison lemma, intrinsic arrows, two-sided orbit theorem, Coulomb section, CPS and regularity boundaries.
+- `calculations.md`: B1--B7 derivations and both counterexamples; Section 9 gives original regional based objects, collar assembly, comparison lemma, intrinsic arrows, two-sided orbit theorem, Coulomb section, CPS and regularity boundaries; Section 10 gives the time-slab relation theorem, Hamilton--Jacobi identity, exact-isotropic composition and balance laws.
 - `CLAIM_LEDGER.md`: each test's result and what it does not prove.
 - `verification/checks.wl`: small exact sign/identity witnesses.
 - `verification/collar-checks.wl`: nine exact collar/lift/CPS diagnostics; no symbolic substitute for the analytical theorem.
+- `verification/time-slab-checks.wl`: twelve exact history-action, endpoint-sign, HJ/flux, Hamiltonian and zero-mode diagnostics.
 - `verification/README.md`: reproduction commands, results, and computational limits.
 
 The main formulas are
@@ -35,6 +36,6 @@ The intrinsic construction uses $\lambda_i=-\chi(x)\int_0^x A_{i,x}\,d\xi$, base
 
 The objects of $\mathcal C_{\rm reg}^{\rm geom}$ are $\mathcal B_h=\mathcal M_h/(\mathcal G_1^0\times\mathcal G_2^0)$; arrows are the independently defined common zero-winding cut actions. The actual bijection is $\pi_0\mathcal C_{\rm reg}^{\rm geom}\simeq\operatorname{Sol}_{\rm sm}/\mathcal G_{\rm sm}^{\rm prop}$. A based-only quotient is insufficient. The product based equivalence is valid geometrically, but is not the global smooth restriction kernel.
 
-**What is established:** choice-independent assembly, complete intrinsic regional arrows, restriction without prior gauge fixing, the two-sided orbit theorem, Coulomb-section agreement, and original CPS/kernel compatibility on the declared tangent core. Fixed $h$ on closed $S$ has zero corner; variable reachable $h$ retains the calibrated term. Unequal lengths supply only an algebraic naturality check. A bare $f\mapsto f+2\pi m$ with fixed input is not a valid restoring choice without compensating based re-fixing.
+**What is established:** choice-independent assembly, complete intrinsic regional arrows, restriction without prior gauge fixing, the two-sided orbit theorem, Coulomb-section agreement, and original CPS/kernel compatibility on the declared tangent core. Independently, the regional $\mathscr U_i^\chi$ relations, their family-preserving cut-history action, matched composition, reduction by stages, original on-shell-action additivity, exact-isotropic relation, symplectic/power cancellation and connected Hamiltonian are proved on the same core. Fixed $h$ on closed $S$ has zero corner; variable reachable $h$ retains the calibrated term. Unequal lengths supply only an algebraic naturality check. A bare $f\mapsto f+2\pi m$ with fixed input is not a valid restoring choice without compensating based re-fixing.
 
-**Boundary:** the cusp parameter is Lipschitz/$W^{1,\infty}$; its raw obstruction is specific to globally smooth gauge. No identical Sobolev obstruction, functional quotient smoothness, energy completion, other-sector, or quantum theorem is claimed. The bounded geometric gate is closed; the general spatial-gauge formalism remains conditional. Preserve this scope and both regression obstructions in any subsequent review.
+**Boundary:** the cusp parameter is Lipschitz/$W^{1,\infty}$; its raw obstruction is specific to globally smooth gauge. The time-slab relation is exact isotropic on admissible differentiable families, not proved Lagrangian/maximal or a smooth infinite-dimensional canonical relation. No identical Sobolev obstruction, functional quotient smoothness, energy completion, other-sector, or quantum theorem is claimed. The bounded spatial branch is closed; the general spatial-gauge formalism remains conditional. Preserve this scope and both regression obstructions in any subsequent review.

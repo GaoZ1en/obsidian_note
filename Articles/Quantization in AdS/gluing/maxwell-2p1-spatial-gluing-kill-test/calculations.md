@@ -627,3 +627,332 @@ The cusp parameter $\beta(1-|x|/L)$ is Lipschitz and belongs to $W^{1,\infty}$ o
 The smooth category is retained because it was independently fixed for the physical target, because all traces and normal-jet comparisons used here are pointwise meaningful, and because the original differentiable CPS core is already specified there. The theorem changes the assembly construction, not that target category or its gauge group. It asserts no identical raw obstruction for an $H^1$ or Sobolev gauge quotient, and proves no Sobolev trace, multiplication, manifold or energy-completion theorem.
 
 **Verified:** the analytic collar, comparison, regional-arrow completeness, two-sided orbit and CPS arguments above; nine exact algebraic diagnostics in $\texttt{verification/collar-checks.wl}$, separate from the earlier thirty witnesses. **Assumptions:** the original smooth finite-Fourier slab, full transmission histories, fixed physical-wall frames, trivial bundle/relative sector, all based large components, and the stated tangent core for kernel equality. **Not verified:** smooth quotient-manifold structure, Sobolev/energy extensions, other bundle sectors or any excluded theory. The raw cusp and quadratic failures remain regression obstructions. Within these assumptions the bounded orbit-level Maxwell $2+1$ kill test is **proved**, replacing its former geometric-identification gate; the general formalism remains conditional.
+
+## 10. Time-slab evolution-relation composition
+
+**Re-derived here; proved on the same Section 0 core.** This section does not promote the orbit theorem to a manifold theorem. It decorates the original regional and global solution histories by their initial/final Cauchy evaluations, keeps the mixed Coulomb realization as one presentation, and proves composition as an equality of equivalence-class relations. The whole-slab orbit bijection of Section 9 is an input only through its already proved collar and arrow lemmas; the evolution relation, its history action, Hamilton--Jacobi identity and balance laws are specified independently below.
+
+### 10.1. Regional mixed evolution relation
+
+Let $\Xi_i^{\chi,\pm}$ consist of the original Cauchy data
+
+$$\begin{align}
+\xi_i^\pm=(\boldsymbol A_i^\pm,\boldsymbol E_i^\pm)
+\end{align}$$
+
+in regional Coulomb gauge, with the wall conditions, Gauss law, finite angular support and all corner compatibility identities inherited from Section 1. This includes the compact normal coordinate and its electric momentum. It does not include $A_t$ as a Cauchy canonical coordinate. Put
+
+$$\begin{align}
+b_i&=(\alpha_i,q_i),&
+\widehat z_i&=(\alpha_i,q_i,r_i;u_i,v_i,w_i;E_{y,i},E_{s,i};\mathcal J_i),\\
+z_i&=\rho_i^\chi(\widehat z_i)
+=(\alpha_i,q_i;-e^{-2}E_{y,i},-e^{-2}B_i),
+&B_i&=v_i-\partial_sr_i.
+\end{align}$$
+
+The compatibility domain $\mathfrak D_i^\chi\subset\Xi_i^{\chi,-}\times\mathcal B_i^\chi$ is exactly the domain in Section 1: $b_i$ is the prescribed mixed input history, its jets and $\xi_i^-$ obey the displayed $V_m/W_m$ recursions, and reality and wall conditions hold. The variables $(r,u,v,w,E_y,E_s,\mathcal J)$ are realized output, constraint and jet data. They are not additional freely prescribed inputs. The final datum $\xi_i^+$ is also an output.
+
+Define
+
+$$\begin{aligned}
+\mathscr U_i^\chi:=\{(\xi_i^-,\xi_i^+;b_i,\widehat z_i):\;&
+(\xi_i^-,b_i)\in\mathfrak D_i^\chi,\\
+&A_i\text{ is the Section 1 mixed Coulomb solution},\\
+&\xi_i^+=\operatorname{ev}_{t_+}(\boldsymbol A_i,\boldsymbol E_i),
+\quad \widehat z_i=\widehat{\operatorname{Tr}}_{i,\Gamma}^\chi A_i\}.
+\end{aligned}$$
+
+For each fixed finite angular set this is the graph of
+
+$$\begin{align}
+(\xi_i^-,b_i)\longmapsto(\xi_i^+,\widehat z_i)
+\end{align}$$
+
+on $\mathfrak D_i^\chi$. Existence and uniqueness follow from the finite collection of homogeneous Neumann Klein--Gordon, homogeneous Dirichlet wave and compact ODE problems used in Section 1. Their Duhamel formulas are linear/continuous in every fixed compatible $C^k$ seminorm and differentiate smoothly along admissible finite-parameter families. Gauss holds initially by definition and propagates because its time derivative is the divergence of the spatial Maxwell equations. The reduced master equations were derived from the original equations, so all original constraints and the final compatibility jets hold. This is a smooth-core family statement, not a completed trace or Fréchet-domain theorem.
+
+### 10.2. Active cut histories and endpoint action
+
+Let $\mathcal H_\Gamma^{\rm core}$ be the core-preserving zero-angular-winding cut histories $e^{if(t,s)}$, represented by smooth periodic finite-Fourier real lifts. Put $H_0=y/L$ and use the $H_k$ of Section 1 for nonzero angular modes. The slice-preserving representative of an active cut history is
+
+$$\begin{align}
+\lambda_i=H(f+2\pi m_i),\qquad m_i\in\mathbb Z.
+\end{align}$$
+
+The integers are constant on the connected slab. They are the based large components; the common group-valued cut phase is $e^{if}$. Write $F_i=f+2\pi m_i$. On the enlarged trace the action is
+
+$$\begin{aligned}
+\alpha_i&\mapsto\alpha_i+\dot f,&
+q_i&\mapsto q_i+\partial_sf,&
+r_i&\mapsto r_i+TF_i,\\
+u_i&\mapsto u_i-\partial_s^2f,&
+v_i&\mapsto v_i+T\partial_sf,&
+w_i&\mapsto w_i+T\dot f,\\
+(E_{y,i},E_{s,i},B_i)&\mapsto(E_{y,i},E_{s,i},B_i),&
+\mathcal J_i&\mapsto\mathcal J_i+\operatorname{jet}(dHF_i).
+\end{aligned}$$
+
+Thus
+
+$$\begin{align}
+z_i\mapsto(\alpha_i+\dot f,q_i+\partial_sf;-e^{-2}E_{y,i},-e^{-2}B_i).
+\end{align}$$
+
+The formulas preserve $u+\partial_sq=0$, $E_y=\dot r-w$, $E_s=\dot q-\partial_s\alpha$, harmonicity of $A_t$, every differentiated original equation and every initial-boundary compatibility jet. At the temporal endpoints,
+
+$$\begin{align}
+(\boldsymbol A_i^\pm,\boldsymbol E_i^\pm)
+\mapsto
+(\boldsymbol A_i^\pm+\nabla HF_i(t_\pm),\boldsymbol E_i^\pm).
+\end{align}$$
+
+No condition $f(t_\pm)=0$ is imposed. For $p\ne0$ this is equivalently $v_\ell\mapsto v_\ell+H_k'f_\ell/(ip_\ell)$; in the angular zero sector $a_i\mapsto a_i+\bar f+2\pi m_i$. Therefore the action preserves the **family** of domains and satisfies the equivariance identity
+
+$$\begin{align}
+\mathscr U_i^\chi(\xi_i^{-,f},b_i^f)
+=\bigl(\mathscr U_i^\chi(\xi_i^-,b_i)\bigr)^f,
+\end{align}$$
+
+including the transformed final endpoint and all realized jets. It generally moves between history fibers. A full regional based transformation need not preserve Coulomb gauge; its action on this realization means original based gauge followed by the Dirichlet Coulomb re-fixing in a chosen based large component. Within the Coulomb slice the displayed discrete based copies remain. Passive frame changes instead re-express $(A_i,b_i,\widehat z_i,h)$ together and carry no active charge.
+
+For $h=1$, the same $e^{if}$ acts on both sides. A reachable fixed $h=e^{i\varphi}$ is reduced to this chart by the Section 9.3 regional extension of $\varphi$; covariance then transports every formula back. No free cut action or Abelian harmonic formula is asserted for a general connection theory.
+
+### 10.3. The matched time-slab relation
+
+Define
+
+$$\begin{aligned}
+\mathscr U_{12}^{\chi,\mathrm{match}}
+:=\{(U_1,U_2)\in\mathscr U_1^\chi\times\mathscr U_2^\chi:\;&
+\alpha_1=\alpha_2=: \alpha,\quad q_1=q_2=:q,\\
+&E_{y,1}+E_{y,2}=0,\quad B_1+B_2=0
+\text{ on }I\times S^1,\\
+&\text{the original Gauss, wall, initial/final corner and}\\
+&\text{all compatibility identities hold}\}.
+\end{aligned}$$
+
+Equivalently, $(z_1,z_2)$ lies in the original fixed-$h$ full-trace sewing relation. Only $(\alpha,q)$ is identified as the common connection history; the momentum/normal traces and $\mathcal J_i$ are outputs constrained by transmission and smooth compatibility. No global Coulomb condition or equality of $A_y$ normal traces is included in physical matching.
+
+Let $\mathcal G_i^0$ be the full original regional wall-and-cut based group, with all components, and let $\mathcal K_h$ be the intrinsic equal-cut-phase group of Section 9.1. On the mixed realization, the first quotient is understood through based re-fixing as above. The precise regional relation object is
+
+$$\begin{align}
+\mathscr Q_{12}^{I,\chi}
+&:=\left[\mathscr U_{12}^{\chi,\mathrm{match}}/
+(\mathcal G_1^0\times\mathcal G_2^0)\right]/\mathcal H_\Gamma^{\rm core}\\
+&\cong\mathscr U_{12}^{\chi,\mathrm{match}}/\mathcal K_h.
+\end{align}$$
+
+These are orbit sets/equivalence-class relations. The first line deliberately displays the two reductions; a based-only quotient still remembers the active cut frame.
+
+### 10.4. Relation-level geometric assembly
+
+Let $\mathscr U_M$ be the original globally smooth finite-Fourier solution-history relation, decorated by its evaluations $(\xi^-,\xi^+)$ and with the same wall and temporal policies. The based radial collar construction of Section 9.2 applies to every member of $\mathscr U_{12}^{\chi,\mathrm{match}}$ as a smooth function of $(t,s)$ on the **closed** slab. It preserves the regional curvatures, and hence the original equations, while making one global smooth connection. Evaluation commutes with this construction:
+
+$$\begin{align}
+\operatorname{ev}_{t_\pm}A_{\rm gl}
+=\operatorname{Asm}_{\Sigma}\bigl(\xi_1^\pm,\xi_2^\pm\bigr),
+\end{align}$$
+
+where the right side uses the restrictions of the same collar maps at $t_\pm$. Thus no endpoint datum is replaced by an independently chosen one.
+
+The comparison ODE in Section 9.3 has $t$ as a smooth parameter and proves equality of all normal and mixed time jets. Consequently collar width, cutoff, transition extension, based representative and any other admissible smooth family of assembly choices change the entire history, including its endpoints, by one smooth global proper map. Conversely, a global solution history restricts to a member of the matched relation; its original traces obey descent and full transmission, and Section 9.6 supplies the mixed Coulomb presentation. Restricting a global proper equivalence gives intrinsic regional arrows, and Section 9.4 proves the converse after undoing the two collar repairs.
+
+Therefore restriction and assembly give the two-sided relation theorem
+
+$$\begin{align}
+\boxed{
+\mathscr Q_{12}^{I,\chi}
+\ \simeq\ 
+\mathscr U_M/\mathcal G_M^{\rm prop}}
+\end{align}$$
+
+with initial and final evaluation maps intertwined. This is a bijection of solution-history equivalence classes, not a diffeomorphism of quotient manifolds. It is stronger than merely reusing a whole-slab solution-orbit notation because the regional inputs, outputs, compatibility domain, endpoint actions and relation maps have now been specified and shown equivariant.
+
+### 10.5. Reduction by stages and evolution intertwining
+
+The regional exact sequence
+
+$$\begin{align}
+1\longrightarrow\mathcal G_1^0\times\mathcal G_2^0
+\longrightarrow\mathcal K_h
+\longrightarrow\mathcal H_\Gamma^{\rm core}\longrightarrow1
+\end{align}$$
+
+acts on the family of matched time-slab relations. Section 10.2 proves domain and endpoint equivariance, so ordinary orbit algebra gives
+
+$$\begin{align}
+\boxed{
+(\mathscr U_{12}^{\chi,\mathrm{match}}/
+(\mathcal G_1^0\times\mathcal G_2^0))/\mathcal H_\Gamma^{\rm core}
+\simeq
+\mathscr U_{12}^{\chi,\mathrm{match}}/\mathcal K_h
+\simeq
+\mathscr U_M/\mathcal G_M^{\rm prop}.}
+\end{align}$$
+
+The first equivalence is reduction by stages for this regional groupoid; the second is the collar/arrow theorem with endpoint evaluations. It does **not** identify the independent regional based product with the kernel of restriction of the global smooth group. Instead the smooth comparison lemma sends every intrinsic arrow to a global proper arrow and captures every global arrow conversely. This is the required model-specific replacement for that generally false kernel identification.
+
+Time-dependent $f(t,s)$ and arbitrary endpoint values are included. The based integers $m_i$ cannot vary in time, and their difference is the allowed global radial large transformation. Reachable fixed-$h$ charts are related by the recorded passive covariance. No physical outer transformation is divided out. These statements prove evolution intertwining in this core and no general Yang--Mills time-slab reduction theorem.
+
+### 10.6. Original on-shell action and Hamilton--Jacobi identity
+
+Use only the original Maxwell action of Section 1. For $U_i\in\mathscr U_i^\chi$, define
+
+$$\begin{align}
+S_{i,\mathrm{on}}(\xi_i^-,b_i):=S_i[A_i(\xi_i^-,b_i)].
+\end{align}$$
+
+There is no gauge-fixing action. Since the original first variation contains no tangential derivative of $\delta\alpha$ or $\delta q$, no additional $\boldsymbol\beta$ corner is hidden in the following fixed-$h$ formula:
+
+$$\begin{align}
+\boxed{
+\delta S_{i,\mathrm{on}}
+=\Theta_i^+-\Theta_i^-
++\int_I\!dt\int_S\!ds\,
+(\Pi_i^t\delta\alpha_i+\Pi_i^s\delta q_i),}
+\qquad
+(\Pi_i^t,\Pi_i^s)=-e^{-2}(E_{y,i},B_i).
+\end{align}$$
+
+This is the regional Hamilton--Jacobi identity on admissible differentiable families. In a variable reachable-$h$ presentation the summed endpoint potential includes, once,
+$-e^{-2}\int_SE_{y,2}\delta\varphi$ at each temporal endpoint, exactly as in Sections 6 and 9.8. For fixed reachable $h$, $\delta\varphi=0$ and it vanishes.
+
+On $\mathscr U_{12}^{\chi,\mathrm{match}}$, the common history variation is arbitrary and
+
+$$\begin{align}
+\int_{I\times S}
+\bigl[(\Pi_1^t+\Pi_2^t)\delta\alpha
++(\Pi_1^s+\Pi_2^s)\delta q\bigr]=0.
+\end{align}$$
+
+Hence
+
+$$\begin{align}
+\delta(S_{1,\mathrm{on}}+S_{2,\mathrm{on}})
+=\Theta_{12}^+-\Theta_{12}^-.
+\end{align}$$
+
+The collar maps do not change $F$, and the artificial cut has zero measure and no action. With the fixed original action representative used throughout,
+
+$$\begin{align}
+\boxed{S_{M,\mathrm{on}}[A_{\rm gl}]
+=S_{1,\mathrm{on}}[A_1]+S_{2,\mathrm{on}}[A_2]}
+\end{align}$$
+
+exactly: the additive constant is zero. Proper gauge and all admissible collar choices leave both sides unchanged. A future coherent JKM/polarization change would push forward the endpoint/corner primitives on both sides; it would give a canonical-equivalence statement, not license dropping an unmatched constant. No such ambiguity is used here.
+
+### 10.7. Exact-isotropic claim level
+
+On the ambient endpoint-plus-history data use
+
+$$\begin{align}
+-\Omega_i^-+\Omega_i^+
++\int_{I\times S}
+(\delta\Pi_i^t\wedge\delta\alpha_i
++\delta\Pi_i^s\wedge\delta q_i).
+\end{align}$$
+
+Taking one more field-space derivative of the regional Hamilton--Jacobi identity shows that its pullback to $\mathscr U_i^\chi$ vanishes. Its canonical one-form pulls back to $\delta S_{i,\mathrm{on}}$. Thus each regional relation is **exact isotropic** on admissible families, with primitive $S_{i,\mathrm{on}}$.
+
+After matching, the two interface one-forms cancel and the primitive becomes $S_{M,\mathrm{on}}$. Therefore the composed global relation, before or after the horizontal gauge identifications, is exact isotropic. This does not prove maximal isotropy. Radial directions remain infinite-dimensional even at fixed angular support, no strong ambient symplectic topology or split complement has been supplied, and no half-dimensional count is available. The claim is not upgraded to “Lagrangian.”
+
+### 10.8. Symplectic flux, power and the connected Hamiltonian
+
+The original current gives the regional balance
+
+$$\begin{align}
+\boxed{\Omega_i^+-\Omega_i^-+\operatorname{Flux}_{\Gamma,i}=0},\qquad
+\operatorname{Flux}_{\Gamma,i}
+:=-e^{-2}\int_{I\times S}
+(\delta E_{y,i}\wedge\delta\alpha_i
++\delta B_i\wedge\delta q_i).
+\end{align}$$
+
+The physical walls contribute no flux. On the matched tangent locus,
+
+$$\begin{align}
+\operatorname{Flux}_{\Gamma,1}+\operatorname{Flux}_{\Gamma,2}=0,
+\end{align}$$
+
+so the assembled original form is conserved and agrees with the global form of Sections 6 and 9.8.
+
+For power, first keep the stress-energy energy
+
+$$\begin{align}
+H_i^{\rm raw}:={1\over2e^2}\int_{\Sigma_i}
+(E_{y,i}^2+E_{s,i}^2+B_i^2)\,dy\,ds.
+\end{align}$$
+
+Using the original Maxwell equations, the closed $s$-circle and the fixed physical wall,
+
+$$\begin{align}
+{dH_i^{\rm raw}\over dt}
+&=e^{-2}\int_S B_iE_{s,i}\,ds\\
+&=e^{-2}\int_S(B_i\dot q_i-\alpha_i\dot E_{y,i})\,ds.
+\end{align}$$
+
+Because $A_t|_\Gamma=\alpha$ is a boundary Lagrange-multiplier history, the Hamiltonian adapted to the displayed connection polarization is
+
+$$\begin{align}
+H_i^{\rm pol}
+&:=H_i^{\rm raw}+e^{-2}\int_S\alpha_iE_{y,i}\,ds
+=H_i^{\rm raw}-\int_S\alpha_i\Pi_i^t\,ds,\\
+\boxed{{dH_i^{\rm pol}\over dt}
+&=e^{-2}\int_S(E_{y,i}\dot\alpha_i+B_i\dot q_i)\,ds
+=-\langle\Pi_i,\dot a_i\rangle_S.}
+\end{align}$$
+
+This is not the fixed-history oscillator Hamiltonian naively added across the cut. On the matched locus,
+
+$$\begin{align}
+H_1^{\rm pol}+H_2^{\rm pol}
+&=H_1^{\rm raw}+H_2^{\rm raw}
+=H_M,\\
+{dH_M\over dt}&=0,
+\end{align}$$
+
+because $\alpha_1=\alpha_2$ and $E_{y,1}+E_{y,2}=0$. Thus the internal work cancels and $H_M$ is the Hamiltonian of the original connected Maxwell theory. In the compact angular zero sector,
+
+$$\begin{align}
+H_i^{\rm pol}&={e^2L\over2C}\nu_i^2+\bar\alpha\nu_i,
+&\nu_1+\nu_2&=0,\\
+H_M&={e^2L\over C}\nu^2,&
+(a,\nu)&=(a_1-a_2,\nu_1).
+\end{align}$$
+
+This explicitly retains the Wilson/electric pair. The oscillatory sectors are already included in the spatial integrals. No interface oscillator or outer work is present.
+
+### 10.9. Coulomb restoration as a relation section
+
+For a matched mixed history define, as before,
+
+$$\begin{align}
+J=-A_{y,1}(L)-A_{y,2}(L),\qquad
+f=(2T)^{-1}J.
+\end{align}$$
+
+Full history transmission gives $\dot J=-2T\alpha$, hence $\dot f=-\alpha$. The common transformation $dHf$ therefore sends $\alpha$ to zero and $J$ to zero on the whole slab. At the endpoints it sends
+
+$$\begin{align}
+\xi_i^\pm\mapsto(\boldsymbol A_i^\pm+\nabla Hf(t_\pm),\boldsymbol E_i^\pm),
+\end{align}$$
+
+which is precisely the allowed endpoint action of Section 10.2; no endpoint identity is required. The transformed histories assemble to a global temporal/Coulomb member of the same relation class.
+
+If a global smooth temporal/Coulomb history is first restricted, then $J=0$, so $f=0$ and restoration changes nothing. For an arbitrary matched regional history, restoration gives the same global class as intrinsic collar assembly by Section 9.6, now with the endpoint evaluations intertwined. Consequently Coulomb restoration is a section/retraction presentation of the matched time-slab relation, locally after choosing the Wilson-angle chart and modulo the residual discrete global proper copies. A bare real-lift shift of $f$ without its compensating based re-fixing is still invalid. The Coulomb section is not the definition of relation composition.
+
+### 10.10. Final theorem and exact boundary
+
+**Maxwell $2+1$ smooth finite-Fourier time-slab composition theorem.** Under the Section 0 geometry, wall frames, trivial relative sector, smooth finite angular support, full compatibility jets and original smooth proper gauge group:
+
+1. the mixed regional relations $\mathscr U_i^\chi$ are well defined and unique on $\mathfrak D_i^\chi$;
+2. the core-preserving zero-winding cut-history action, including endpoint actions and based large components, preserves the domain family and intertwines evolution;
+3. original descent and full transmission define $\mathscr U_{12}^{\chi,\mathrm{match}}$, whose based-plus-cut classes biject with global smooth solution-history orbits;
+4. based reduction followed by cut-history reduction agrees with intrinsic $\mathcal K_h$ reduction and with global proper orbit reduction;
+5. the original on-shell actions add exactly and generate the regional and composed exact-isotropic relations;
+6. interface symplectic flux and physical work cancel, while the summed polarization Hamiltonian is the original connected Hamiltonian, including the Wilson/electric sector;
+7. Coulomb restoration is a time-slab section of the intrinsic composition; and
+8. the orbit-level CPS theorem of Section 9 is the equal-time/horizontal-tangent restriction of the same original current identities.
+
+**Claim boundary.** “Exact isotropic” is proved as an identity on admissible differentiable families. No Lagrangian maximality, Fréchet manifold, density/completion, Sobolev quotient, energy topology, quantum statement or general Yang--Mills theorem is included. The Abelian harmonic action, free cut action and trivial stabilizers are model-specific. The cusp and piecewise-quadratic examples remain raw-representative diagnostics and do not obstruct the intrinsic relation theorem.
+
+**Verified:** the analytical construction and identities in Sections 10.1--10.9; the exact sign/action diagnostics in `verification/time-slab-checks.wl`. **Assumptions:** precisely the preceding smooth core and fixed/reachable transition policy. **Not verified:** every excluded completion, model and maximality statement just listed. Within this boundary the Maxwell $2+1$ spatial branch is closed and can be frozen.

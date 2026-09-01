@@ -37,3 +37,15 @@ An auxiliary local xAct/xTras exploration returned zero for the covariant scalar
 Assumptions: real $L,e>0$, real angular momentum, $k=|p|>0$ for the hyperbolic-function formulas with the $p=0$ limit treated separately; original signature/action and $y_i$ orientations; smooth finite-Fourier data and full compatibility jets. No numerical approximation is used in the new script.
 
 During check development, the restored radial-winding equality initially remained symbolic under a raw list equality test (`29/30`, exit 1). Its explicit component residual was zero; the script now checks that residual and exits successfully only when every result is exact `True`. No physics formula was changed to obtain the passing result.
+
+## Time-slab relation follow-up
+
+Run:
+
+```sh
+rtk proxy wolframscript -file maxwell-2p1-spatial-gluing-kill-test/verification/time-slab-checks.wl
+```
+
+Executed on 2026-09-01: **12/12 PASS**, process exit 0. The script checks covariance of the Coulomb boundary constraint and electric/magnetic realized traces under history action, HJ interface cancellation, symplectic-flux cancellation, the stress-energy versus port-power endpoint term, the matched zero-mode Hamiltonian, Coulomb restoration and Wilson-coordinate invariance.
+
+The first development run returned 9/12 because three replacement-rule lists were parsed with the equality inside the replacement expression. Parenthesizing those exact residuals gave 12/12; no physics formula or note claim was changed. These checks do not prove evolution existence, compatibility-domain completeness, collar choice independence, arrow completeness, reduction by stages or Lagrangian maximality. Those claim levels are analytical in Sections 10.1--10.10.

@@ -5,7 +5,7 @@ Labels refer to the hypotheses in `calculations.md`, not to an unrestricted Maxw
 | Test | Verdict | Evidence and exact boundary |
 |---|---|---|
 | A1 worldtube identity | passed | Full covariant integration by parts with density/outward signs. Endpoint-only representative requires original normal Euler equation, Cauchy constraints and corner policy. Gauss alone is insufficient. |
-| A2 time-slab sequence | conditional | Abstract exactness follows from defining the image. Endpoint actions, history/driver compatibility, spacetime kernel jets and evolution intertwining remain explicit general theorem targets. |
+| A2 time-slab sequence | passed model-specifically in Section 10; conditional generally | The cylinder core has explicit endpoint actions, history-domain covariance, spacetime arrows and evolution intertwining. Abstract image exactness alone still proves none of these statements for a general gauge theory. |
 | A3 fixed transition | passed | Existing $h=r_1^{-1}h_0r_2$ retained; follows from $(A^g)^r=A^{gr}$. |
 | A4 provenance | passed | Old unretained local checks labelled `locally checked`; new witnesses retained separately. No commit or push is claimed. |
 | B1 dual traces / realization | passed in smooth finite-Fourier mixed core | Explicit $\widehat z,\rho,P_{\rm in}$, Coulomb/Gauss, harmonic $A_t$, forced master equations, zero mode and all compatibility jets; 1D energy/Duhamel argument. Not a raw-potential hyperbolic or completed Sobolev theorem. |
@@ -40,10 +40,29 @@ Labels refer to the hypotheses in `calculations.md`, not to an unrestricted Maxw
 | Smooth versus Sobolev obstruction | category-specific, Section 9.9 | Cusp parameter is Lipschitz/$W^{1,\infty}$ and removable by that lower-regularity gauge. No claim of the same obstruction in $H^1$/Sobolev quotients. Smooth category unchanged. |
 | Smooth quotient manifold / completion | not proved; outside this round | Set/equivalence classes and two-forms on admissible horizontal tangents only; no Fréchet symplectomorphism. |
 
+## Time-slab evolution-relation theorem
+
+| Claim | Verdict | Exact evidence and boundary |
+|---|---|---|
+| Regional $\mathscr U_i^\chi$ | proved, Section 10.1 | Inputs are $(\xi_i^-,\alpha_i,q_i)$ on $\mathfrak D_i^\chi$; $\xi_i^+$ and the normal/gauge/jet entries of $\widehat z_i$ are outputs/constraints. The Section 1 one-dimensional KG/wave/ODE construction gives existence, uniqueness and seminorm/family dependence on the finite-Fourier smooth core. |
+| Cut-history action/domain invariance | proved, Section 10.2 | Zero-winding finite-Fourier lifts act on both endpoints, histories and all enlarged jets; they preserve the family of compatibility domains and intertwine evolution. They need not preserve a fixed history fiber or be identity at $t_\pm$. |
+| Matched relation | proved, Section 10.3 | Original connection descent and full $E_y/B$ transmission are imposed on the whole worldtube, with Gauss and corner compatibility. Global Coulomb matching is excluded from the physical locus. |
+| Relation-level two-sided theorem | proved as an orbit-set relation, Section 10.4 | Smooth family collar assembly intertwines both endpoint evaluations; global histories restrict conversely; intrinsic regional arrows capture exactly global proper equivalences. No quotient manifold is asserted. |
+| Reduction by stages | proved model-specifically, Section 10.5 | Regional based reduction followed by common cut-history reduction equals intrinsic $\mathcal K_h$ reduction and the global proper orbit relation. The based product is not identified with the global restriction kernel. |
+| Regional Hamilton--Jacobi identity | proved, Section 10.6 | Original action only: $\delta S_{i,\rm on}=\Theta_i^+-\Theta_i^-+\langle\Pi_i,\delta a_i\rangle_\Gamma$. Fixed $h$ has no extra term; variable reachable $h$ retains the calibrated endpoint corner once. |
+| On-shell action additivity | proved exactly, Section 10.6 | Collar maps preserve $F$, the cut has no action, and the same original representative is used. Hence $S_{M,\rm on}=S_{1,\rm on}+S_{2,\rm on}$ with constant zero. Coherent future JKM changes must transform all primitives together. |
+| Exact-isotropic composition | proved on admissible differentiable families, Section 10.7 | Regional primitives are $S_{i,\rm on}$; matching cancels the port one-forms and gives primitive $S_{M,\rm on}$. Lagrangian maximality/split range is not proved. |
+| Symplectic and power balance | proved, Section 10.8 | Original current gives pairwise flux cancellation. $H_i^{\rm pol}=H_i^{\rm raw}+e^{-2}\int\alpha_iE_{y,i}$ obeys pure port power; on matching its sum is the connected Maxwell Hamiltonian. |
+| Wilson/electric zero sector | retained and checked | $\nu_1+\nu_2=0$, $(a,\nu)=(a_1-a_2,\nu_1)$ and $H_M=e^2L\nu^2/C$. No discrete large identification is treated as a kernel vector. |
+| Coulomb relation section | proved, Section 10.9 | $f=(2T)^{-1}J$, $\dot f=-\alpha$ act consistently on both endpoints; global temporal/Coulomb restrictions are fixed and arbitrary matched histories map to the same intrinsic class. Section is local in a Wilson-angle chart modulo discrete copies. |
+| General YM-type time-slab theorem | not proved | The Abelian harmonic action, free cut action, trivial stabilizers and one-dimensional mixed realization are model-specific. |
+
 ## No claim inflation
 
 - The bulk theory is only Maxwell here; the formalism repair is only for second-order connection theories on a fixed background.
 - No low-regularity trace surjectivity, completed phase space, continuum Hilbert reduction, regulator convergence, or quantum equivalence follows.
 - No unrestricted product of based regional smooth maps is identified with the smooth global restriction kernel. Its distinct intrinsic equivalence is justified by the collar comparison proof.
 - No passive frame change is assigned a Hamiltonian charge.
+- The time-slab result is not inferred from the Section 9 orbit notation: its inputs/outputs, endpoint action, domain invariance, HJ primitive and balance laws are separately proved in Section 10.
+- The model-specific cylinder theorem validates the general relation architecture but does not prove the general Yang--Mills-type rows.
 - No target topology or global gauge group was changed after a failed test. Raw and restored constructions are named separately throughout.

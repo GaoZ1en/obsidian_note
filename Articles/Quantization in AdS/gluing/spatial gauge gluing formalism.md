@@ -1,6 +1,6 @@
 # Spatial-Region Gauge Gluing Formalism
 
-> Status: repaired draft for criticism and iteration; with a separately scoped Maxwell 2+1 kill test. This note adds a gauge layer to the spatial-partition/timelike-worldtube architecture of `gluing formalism.md`; it does not modify that manuscript and does not claim a new general PDE, quotient, or quantum theorem. Every theorem schema below is labelled by its current claim level.
+> Status: repaired draft for criticism and iteration; with separately scoped Maxwell 2+1 orbit/collar and time-slab relation theorems. This note adds a gauge layer to the spatial-partition/timelike-worldtube architecture of `gluing formalism.md`; it does not modify that manuscript and does not claim a new general PDE, quotient, or quantum theorem. Every theorem schema below is labelled by its current claim level.
 
 ## 0. Scope and Dependence on the General Gluing Formalism
 
@@ -150,7 +150,7 @@ $$\begin{align}
 
 Calling it a well-posed causal evolution, or a graph, requires existence, uniqueness at the declared equivalence level, constraint propagation, energy estimates and continuous/smooth dependence. Physical CPS on this realization is the pullback of the original $\Omega_i$ by $F_i^\chi$, never the extra symplectic form of a gauge-fixed action.
 
-**Claim level:** definitions and theorem inputs. Maxwell $2+1/3+1$ supply separated temporal/Coulomb realizations, not this full IBVP theorem.
+**Claim level:** definitions and theorem inputs. The separate Maxwell $2+1$ dossier proves this relation and its graph property on one smooth finite-Fourier mixed Coulomb core. Maxwell $3+1$ and the general connection theory still supply no full IBVP theorem.
 
 ## 3. Two Trace Spaces and Two Different Maps
 
@@ -173,7 +173,7 @@ In particular, there is **no assumed factorization** $P_{i,\mathrm{in}}^{\chi_i}
 
 The original $\mathcal Z$ in `gluing formalism.md` remains its Green-identity trace space. This repair does not enlarge that manuscript's physical phase space: it adds a realization layer above it. Polarization changes act on $\mathcal Z^{\mathrm{inv}}$ and its sewing/corner representative. A compatible change of $\widehat{\mathcal Z}^{\chi}$ and $P_{\mathrm{in}}^\chi$ requires its own IBVP check; an arbitrary physical canonical transformation need not lift to an admissible incoming prescription.
 
-The Maxwell $2+1/3+1$ notes provide the original connection/flux pairing and Fourier master-field Dirichlet, Neumann-type and zero-mode histories. They do not specify the full enlarged trace space, its $\rho$, or an incoming map on a common constraint-preserving function-space domain. Thus neither “variational trace = incoming trace” nor “all $a_i$ are freely prescribable causal data” follows from those calculations. The separate `maxwell-2p1-spatial-gluing-kill-test/calculations.md` now supplies explicit maps and a smooth finite-Fourier mixed Coulomb realization; this is not a general hyperbolic IBVP theorem.
+The Maxwell $2+1/3+1$ mode notes provide the original connection/flux pairing and Fourier master-field Dirichlet, Neumann-type and zero-mode histories. They do not by themselves specify the full enlarged trace space, its $\rho$, or an incoming map on a common constraint-preserving function-space domain. Thus neither “variational trace = incoming trace” nor “all $a_i$ are freely prescribable causal data” follows from those calculations. The separate `maxwell-2p1-spatial-gluing-kill-test/calculations.md` supplies explicit maps, the smooth finite-Fourier mixed Coulomb realization and its time-slab graph; this is not a general hyperbolic IBVP theorem.
 
 **Claim level:** repaired architecture/definitions; realization-specific existence and admissibility remain conditional.
 
@@ -533,7 +533,7 @@ $$\begin{align}
 
 This is not an ordinary residual-group theorem on $\mathcal C_{h,\mathrm{phys}}^\chi$; a regional slice brings back the equivalence relation of Section 9. Passive frame identifications have already been separated.
 
-### Time-Slab Restriction: Theorem Target Only
+### Time-Slab Restriction: General Target and Cylinder Theorem
 
 After specifying a spacetime proper group preserving the physical-wall and temporal policies, set
 
@@ -545,7 +545,7 @@ $$\begin{align}
 \mathcal G_{\Gamma,h}^{\mathrm{ext}}&:=\operatorname{Im}\operatorname{res}_{\Gamma,h}.
 \end{align}$$
 
-Only abstract group exactness is tautological after these groups and restriction are defined. A functional sequence, an action on regional realizations, and reduction by stages **intertwining time-slab evolution relations** are theorem targets. They require:
+Only abstract group exactness is tautological after these groups and restriction are defined. In the general theory, a functional sequence, an action on regional realizations, and reduction by stages **intertwining time-slab evolution relations** are theorem targets. They require:
 
 1. The action at $t=t_\pm$ on Cauchy data. Arbitrary proper endpoint transformations, fixed endpoint representatives, and endpoint-identity transformations give different images.
 2. Temporal-corner/frame policy, including the variable-$h$ endpoint potential above; endpoint charges and frame changes cannot silently be dropped.
@@ -554,11 +554,11 @@ Only abstract group exactness is tautological after these groups and restriction
 5. Spacetime regularity and required normal/mixed temporal jets for kernel patching. Identity on $\Gamma$ does not identify $\mathcal K_\Gamma$ with an unrestricted regional product.
 6. Compatibility with initial/final evaluations and sewn regional $\mathscr U_i^\chi$, including original constraints and boundary work. Equal-time quotient bijections do not establish evolution intertwining.
 
-No general functional time-slab reduction theorem is asserted here. The cylinder dossier proves a smooth-core solution-history orbit correspondence and endpoint-compatible original CPS; it does not prove a general topological exact sequence or a completed evolution theorem. Its regional sequence with product based kernel is distinct from the global smooth restriction sequence above.
+No general functional time-slab reduction theorem is asserted here. Cylinder dossier Section 10 now proves, on its smooth finite-Fourier core, the regional mixed evolution graphs, the full cut-history action on endpoints/histories/jets, preservation of the compatibility-domain family, relation-level two-sided assembly and model-specific reduction by stages. Its regional sequence with product based kernel is distinct from the global smooth restriction sequence above; the proof uses the intrinsic comparison groupoid rather than identifying those kernels. It proves no general topological exact sequence or completed evolution theorem.
 
-For the framed $U(1)$ cylinder, an extendable cut map must have zero winding on $S^1$; on the slab its two $T^2$ winding classes must vanish. Necessity follows by restricting a bulk map to successive radial slices, a homotopy to the identity wall value. Under the smooth trivial product-collar policy these null-homotopic maps can be extended, but additional temporal, bundle or boundary restrictions can shrink the image. The $1+1$ point cut sees all of connected $G$ because a path joins every cut value to the identity.
+For the framed $U(1)$ cylinder, an extendable history on $I\times S^1$ must have zero angular winding; the interval $I$ adds no second winding class. For the separate Maxwell $3+1$ spatial cut $T^2$, both $T^2$ winding classes must vanish. Necessity follows by restricting a bulk map to successive radial slices, a homotopy to the identity wall value. Under the smooth trivial product-collar policy these null-homotopic maps can be extended, but additional temporal, bundle or boundary restrictions can shrink the image. The $1+1$ point cut sees all of connected $G$ because a path joins every cut value to the identity.
 
-**Claim level:** conditional functional reduction; exact compact $1+1$ two/three-cell reductions remain model benchmarks. Neither all mapping-group extension nor quotient smoothness is asserted.
+**Claim level:** conditional functional reduction in general; proved for the declared Maxwell $2+1$ smooth core and for the separate exact compact $1+1$ two/three-cell benchmarks. Neither all mapping-group extension nor quotient smoothness is asserted.
 
 ## 11. Gauge-Fixing Independence Square
 
@@ -715,7 +715,7 @@ The two trace layers and the two patching questions have different evidence:
 |---|---|---|---|---|
 | scalar comparison | configuration/Green-dual flux plus declared corners | no gauge enlargement; admissibility still separately required | proved only in the declared scalar classes of `gluing formalism.md` | n/a |
 | Maxwell $1+1$ | $\delta S|_\Gamma=-\int E_i\delta\alpha_i$; reduced Cauchy pair $(a_i,E_i)$ | exact Gauss-reduced mechanics with frame history $\alpha_i$; no enlarged hyperbolic driver problem is solved | exact framed holonomy/flux assembly and direct uncut reduction | bypassed by exact reduction; no general collar/Gribov theorem |
-| Maxwell $2+1$ cylinder | $(\alpha,q)$ with Green pairing $-e^{-2}(E_y\delta\alpha+B\delta q)$ and original CPS | separate kill test gives explicit enlarged traces/maps and smooth finite-Fourier mixed realization | direct distributional equivalence proved in the piecewise smooth core | raw global Coulomb claim false; explicit regional harmonic restoration derived |
+| Maxwell $2+1$ cylinder | $(\alpha,q)$ with Green pairing $-e^{-2}(E_y\delta\alpha+B\delta q)$ and original CPS | dossier gives explicit enlarged traces/maps, compatibility domain and smooth finite-Fourier mixed time-slab evolution graph | direct distributional equivalence plus intrinsic time-slab collar reconstruction proved in the smooth core | raw global Coulomb claim false; harmonic restoration is an orbit/relation section |
 | Maxwell $3+1$ slab | $(\alpha,q_a)$ with $-e^{-2}(E_y\delta\alpha+F_{ya}\delta q^a)$ and original CPS | transverse Dirichlet, longitudinal-normal Neumann and zero-mode histories; full enlarged trace/domain missing | mode-level support only | mode-level support only; drivers/normal compatibility not proved |
 | Yang--Mills $1+1$ | $-\langle\mu_i,\delta\alpha_i\rangle$, $\mu_i=-\operatorname{Ad}_{U_i}J_i$; $T^*G$ Cauchy form | exact based Gauss reduction with history $\alpha_i$; bypasses enlarged hyperbolic trace | exact framed reduced connection/holonomy assembly | bypasses high-dimensional slice/collar/Gribov problem |
 
@@ -723,7 +723,7 @@ The two trace layers and the two patching questions have different evidence:
 |---|---|---|---|---|
 | Maxwell $1+1$ | $E_1+E_2=0$ is the only transmission component | proved by based holonomy classification and direct connected representative | exact reduced benchmark, including declared based large components | Haar reduction and integer-flux Hamiltonian proved |
 | Yang--Mills $1+1$ | $\mu_1+\operatorname{Ad}_h^*\mu_2=0$ is the only component | proved in framed trivial-bundle/trivial-character sector | free diagonal reduction, canonical one-form and direct uncut agreement proved | exact Haar/Peter--Weyl and three-cell reduction; no field-valued continuum theorem |
-| Maxwell $2+1$ | Gauss: $E_{y,1}+E_{y,2}=0$; full adds $B_1+B_2=0$ | intrinsic collar assembly and original restriction give two-sided smooth-core orbit theorem | complete regional arrows and choice-independent CPS on horizontal tangents; Coulomb section identified; raw comparison still fails | no cutoff-uniform gauge regulator or continuum algebra theorem |
+| Maxwell $2+1$ | Gauss: $E_{y,1}+E_{y,2}=0$; full adds $B_1+B_2=0$ | intrinsic collar assembly and original restriction give two-sided smooth-core solution-history orbit theorem | complete arrows, model-specific time-slab reduction by stages, exact-isotropic composition and choice-independent CPS on horizontal tangents; raw comparison still fails | no Lagrangian maximality, cutoff-uniform gauge regulator or continuum algebra theorem |
 | Maxwell $3+1$ | Gauss: $E_{y,1}+E_{y,2}=0$; full adds both $F_{ya,1}+F_{ya,2}=0$ | missing beyond separated-mode reconstruction | mode-level support only | same limitations; no independent regional-Fock equivalence |
 | YM-type second-order connection theory | distinct by original Green/Noether identities | conditional restriction and reconstruction schemas | conditional effective equivalence/CPS/kernel theorem | outlook only |
 
@@ -754,13 +754,13 @@ Restriction and assembly are relations until their choices are controlled. Passi
 
 ## Repair Claim Ledger
 
-**Established within the source/model assumptions:** original action signs; fixed-$h$ descent and coadjoint transmission; the variable-$h$ canonical term on the original constraint/on-shell locus after full worldtube integration by parts; full transmission versus Gauss; exact framed $1+1$ Maxwell/Yang--Mills reduction and compact Haar/Peter--Weyl benchmarks; displayed higher-dimensional Maxwell modes and normalizations. Non-Abelian raw flux is not a general central observable.
+**Established within the source/model assumptions:** original action signs; fixed-$h$ descent and coadjoint transmission; the variable-$h$ canonical term on the original constraint/on-shell locus after full worldtube integration by parts; full transmission versus Gauss; exact framed $1+1$ Maxwell/Yang--Mills reduction and compact Haar/Peter--Weyl benchmarks; displayed higher-dimensional Maxwell modes and normalizations; and the Maxwell $2+1$ smooth-core orbit/collar plus time-slab exact-isotropic relation theorem. Non-Abelian raw flux is not a general central observable.
 
 **Definitions repaired, not new analytic results:** two trace spaces and their distinct maps; physical and optional global-slice loci; passive frame arrows versus active extendable gauge; matched-slice groupoid; separate restriction and assembly relations; equivalence-class quotient before any ordinary residual-group simplification.
 
-**Conditional/open in the general theory or beyond the stated cylinder core:** actual enlarged trace domains and continuous $\rho$; regional constraint-preserving IBVP; physical weak patching and stronger regularity; optional global-slice patching; restriction coverage; effective regional arrow construction/extension; independence of assembly choices; CPS pullback and nondegeneracy modulo gauge; active restriction-kernel patching; gauge-fixing independence; continuum observable/center reconstruction and corners.
+**Conditional/open in the general theory or beyond the stated cylinder core:** actual enlarged trace domains and continuous $\rho$; regional constraint-preserving IBVP; physical weak patching and stronger regularity; optional global-slice patching; restriction coverage; effective regional arrow construction/extension; independence of assembly choices; time-slab reduction/evolution intertwining; on-shell exact-isotropic composition; CPS pullback and nondegeneracy modulo gauge; active restriction-kernel patching; gauge-fixing independence; continuum observable/center reconstruction and corners.
 
-**Not claimed:** a universal gauge IBVP, all-mapping-group extension, a universal residual group containing Gribov copies, a smooth continuum quotient, Maxwell regulator convergence, sharp regional-Fock factorization, automatic disappearance of an electric center, or a BRST/BV gluing theorem. The Maxwell $2+1$ smooth-core orbit/collar theorem is proved; its functional extensions and the general formalism remain conditional. No other model is started.
+**Not claimed:** a universal gauge IBVP, all-mapping-group extension, a universal residual group containing Gribov copies, a smooth continuum quotient, Lagrangian maximality for the radial infinite-dimensional relation, Maxwell regulator convergence, sharp regional-Fock factorization, automatic disappearance of an electric center, or a BRST/BV gluing theorem. The Maxwell $2+1$ smooth-core orbit/collar and time-slab relation theorems are proved; their functional extensions and the general formalism remain conditional. No other model is started.
 
 ## Verification Boundary
 
@@ -770,6 +770,6 @@ Restriction and assembly are relations until their choices are controlled. Passi
 
 **Not verified:** general IBVP, enlarged trace-domain continuity/surjectivity, physical weak patching in a specified Sobolev class, optional global-slice patching, restriction completeness, effective regional groupoid faithfulness, gauge-kernel equality, or continuum observable/BRST/BV results. The separate cylinder dossier records its narrower passed/failed core claims; no general or completed-space theorem is inferred.
 
-**Verified (current cylinder test):** `maxwell-2p1-spatial-gluing-kill-test/verification/checks.wl` passed 30/30 exact witnesses; the existing Maxwell regression passed 20/20. The dossier supplies the analytical proofs and counterexamples. The earlier unretained local checks above are not counted in these totals.
+**Verified (current cylinder test):** `maxwell-2p1-spatial-gluing-kill-test/verification/checks.wl` passed 30/30 exact witnesses; the collar follow-up passed 9/9; the time-slab sign/action follow-up passed 12/12. The existing 20/20 mixed Maxwell regression belongs to the earlier mode round. The dossier supplies the analytical proofs and counterexamples; exact checks are not completeness evidence. The earlier unretained local checks above are not counted in these totals.
 
 **Orbit/collar follow-up:** dossier Section 9 supplies the analytical choice-independence, intrinsic-arrow, restriction/assembly and CPS proofs. Nine added exact diagnostics passed; the original thirty were rerun separately. The preceding 20/20 mixed-model result belongs to the previous round. The cusp remains a smooth-category raw obstruction, although its parameter is Lipschitz; no Sobolev obstruction is inferred.

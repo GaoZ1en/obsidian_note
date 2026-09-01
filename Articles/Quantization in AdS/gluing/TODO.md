@@ -90,11 +90,15 @@ Phases follow `roadmap.md`. Within a phase, items are ordered by what blocks wha
 
 ## Phase 2 — Gauge Theory and Corners
 
-The compact-\(1+1\) timelike benchmarks remain closed in their stated scope. The Maxwell 2+1 smooth-core orbit/collar theorem is now proved, with functional extensions outside this task; the unrelated null-characteristic branch in Phase 1 is unchanged.
+The compact-\(1+1\) timelike benchmarks remain closed in their stated scope. The Maxwell 2+1 smooth-core orbit/collar and time-slab relation theorems are now proved, with maximality and functional extensions outside this task; the unrelated null-characteristic branch in Phase 1 is unchanged.
 
 - [x] Action: identify intrinsic collar/geometric assembly on regional based classes with Coulomb restoration in `maxwell-2p1-spatial-gluing-kill-test/calculations.md`, Section 9.
   Context: original solutions and based gauge define the objects; common-cut actions define intrinsic arrows. Radial collar integration and the smooth comparison lemma prove choice independence, both orbit directions and CPS on horizontal tangent classes.
   Check: proved in the unchanged smooth finite-Fourier sector, including based large components and reachable fixed transitions. Both raw counterexamples remain. No quotient-manifold, Sobolev/energy, 3+1, high-dimensional non-Abelian, charged-matter or null theorem is included; no further branch is started.
+
+- [x] Action: close Maxwell $2+1$ time-slab evolution-relation composition on the same smooth core in dossier Section 10.
+  Context: the mixed regional $\mathscr U_i^\chi$ graphs retain $(\alpha_i,q_i)$ as prescribed inputs and all normal/gauge/jet entries as outputs or constraints. The zero-winding cut-history action moves between compatible history fibers and acts on both temporal endpoints. Original descent plus full transmission defines the matched relation.
+  Check: relation-level collar assembly and intrinsic arrows give the two-sided global solution-history orbit theorem and staged reduction; original on-shell actions add exactly and generate an exact-isotropic composition; symplectic flux, interface work and the regional polarization-Hamiltonian boundary terms cancel to the connected Hamiltonian, including the Wilson/electric pair. Coulomb restoration is a relation section. Lagrangian maximality, smooth quotients and every completion/generalization remain open, so the bounded classical spatial branch is frozen at this claim level.
 
 - [ ] Action: study the cylinder $[-L,L]\times S^1_R$ through its interface algebra rather than channel by channel.
   Context: reducing the cylinder to independent angular channels with effective mass $m_\ell^2=m^2+\ell^2/R^2$ discards its main new content. Its point is that the interface datum is a local field $q(t,\theta)$ and that radial and angular UV limits interact. A fixed-background scalar does not acquire a physical $\mathrm{Diff}(S^1)$ corner gauge group merely because its interface is a circle. The channel decomposition remains available as a computational device and cross-check.
