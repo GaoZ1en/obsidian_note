@@ -1,5 +1,24 @@
 # Verification scripts
 
+## Stage 4.4
+
+Run `stage44_cleanup_subsidiary_checks.wl` through the Mathematica MCP in a
+fresh kernel.  It contains 29 labelled V73--V78 checks: the five direct
+plus-sheet source-row coefficients, raw/covariant $O_4$ and lapse
+conversion, the 41-row ledger checksum, the source/geometric curvature
+correction, the project/Cartan torsion sign, the torsion insertion in
+$Dd$, and four representative frozen Cartan principal coefficients.
+
+Run `stage44_subsidiary_identities_xact.wl` first with `xact_run` and then
+verify its three V79 residuals with `canonical_contract` in a fresh core
+kernel.  The structured result is `verification/stage44_xact_results.md`.
+
+These 32 checks are regressions only.  In particular they do not assemble
+the sixteen transformed A.36--A.39 residual rows, close the joint
+$(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$ principal
+matrix, prove a positive symmetrizer, assign $\ell_{\rm sub}$, identify a
+reduced solution with Einstein, or prove reset/$C^1$.
+
 ## Stage 4.3
 
 Run stage43_bianchi_jets.wl and stage43_hierarchy_reset_checks.wl through

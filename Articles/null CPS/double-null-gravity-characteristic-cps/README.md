@@ -18,6 +18,15 @@ surjectivity, or $P_{\rm cell}^k$. The exact first reset estimate is
 10.(7.6), including the refoliated normal connection and all moving-cut
 generator traces. No full reset loss is assigned.
 
+**Stage 4.4 audit:** `verification/SOURCE_ROW_LEDGER.md` exhausts all
+41 evolved source component rows, the hard gauge/type relations and all
+six copy constraints.  Calculation 10 now contains a direct, non-mirror
+substitution of all five plus-sheet Bianchi rows.  Calculation 11 defines
+the complete bulk residual vector and derives its Cartan homogeneous
+identities, but does not close the coupled curvature/Bianchi/copy principal
+matrix or a positive-flux symmetrizer.  Hence no bulk subsidiary loss is
+assigned and no Einstein/reset/$C^1$ claim is upgraded.
+
 The intrinsic EH identity retains its restriction/constructed-image scope.
 The prescribed-rectangle $P_{\rm rect}^{s,r}$ remains conditional.
 No finite-grid continuation or quantization is begun.
@@ -109,7 +118,8 @@ What is established is precise:
   $\gamma,\chi,\underline\chi,\zeta$ dictionary, including
   $\zeta=-\widehat\omega$ in the symmetric normalized frame, and separates
   the smooth core equivalence from full $C_{\rm init}$ and MSP completion;
-  09.3 closes the mixed second-form part, while the full constrained map remains open;
+  09.3 closes the mixed second-form part and calculation 10 closes the
+  constrained initial map with its stated five/six losses;
 - `calculations/07-framed-development-map-and-solution-space.md` defines the
   framed quotient and fixed-metric framing lemma, conditions project-data
   germ/collar bijectivity, and proves the intrinsic restriction/image
@@ -169,6 +179,14 @@ post-CIVP construction belongs here.
 - `calculations/09-stage4.2-initial-completion-and-transverse-restart.md`:
   full source conjugation, fixed-reference energy, $C_{\rm mix}$,
   $C_{\rm free}$, $R_\perp^k$ and the $C_{\rm Bianchi}$ stop line.
+- `calculations/10-stage4.3-bianchi-completion-and-restart-hierarchy.md`:
+  exhaustive initial completion, direct both-sheet Bianchi audit,
+  pure-generator hierarchy and local reduced restart.
+- `calculations/11-stage4.4-bulk-einstein-subsidiary.md`: complete bulk
+  zero-quantity inventory, Cartan transport identities and the exact
+  unclosed curvature/Bianchi/copy principal-system lemma.
+- `verification/SOURCE_ROW_LEDGER.md`: every frame, connection, Bianchi,
+  gauge/type and copy row with sheet incidence, corner value and evidence.
 - `verification/STAGE1_AUDIT_SUMMARY.md`: concise proved/conditional/open
   verdict.
 - `verification/STAGE2_1_AUDIT_SUMMARY.md`: concise Stage-2.1 answer sheet and
@@ -203,6 +221,9 @@ post-CIVP construction belongs here.
   `scripts/stage42_xact_checks.wl`: V54--V64 regressions only.
 - `scripts/stage42_curvature_variation_xact.wl`:
   independent curvature-variation regression V63.
+- `scripts/stage44_cleanup_subsidiary_checks.wl` and
+  `scripts/stage44_subsidiary_identities_xact.wl`: V73--V79 cleanup and
+  representative Cartan/Bianchi regressions; not a bulk PDE proof.
 - `scripts/README.md`: command and evidence boundary.
 
 ## Source discipline
@@ -226,6 +247,19 @@ New files: calculations/10-stage4.3-bianchi-completion-and-restart-hierarchy.md,
 scripts/stage43_bianchi_jets.wl, scripts/stage43_commutators_xact.wl,
 scripts/stage43_hierarchy_reset_checks.wl, and
 verification/stage43_xact_results.md. V65--V72 are regressions only.
+
+## Current Stage-4.4 verdict
+
+The initial ledger is exhaustive and the direct plus-sheet substitutions
+agree with the mirror.  The bulk vector
+$(\mathcal T,\Xi,\mathcal B,\mathcal C_{\rm copy})$ is completely typed,
+and the two Cartan identities make its torsion/curvature transports
+homogeneous after adjoining the Bianchi block.  The remaining lemma is the
+joint symmetrizable characteristic principal system for
+$(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$.
+It is not proved, so $\ell_{\rm sub}$, bulk Einstein identification,
+linearized tangent identification, reset loss and one-cell $C^1$ remain
+unassigned.  $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional.
 
 ## Historical Stage-4.2 required verdict
 

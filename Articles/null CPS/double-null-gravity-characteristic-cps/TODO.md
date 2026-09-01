@@ -1,8 +1,13 @@
 # Immediate Research Tasks
 
-**Stage 4.3 theorem boundary.** Stages 0--3 stay classical.
-Initial completion and local reduced restart are proved in calculation 10;
-full project reset and bulk Einstein identification are not.
+**Stage 4.4 theorem boundary.** Stages 0--3 stay classical.
+Initial completion and local reduced restart are proved in calculation 10.
+The exhaustive source ledger and direct plus-sheet audit are closed.
+Calculation 11 defines the full bulk residual and closes its universal
+Cartan identities, but the joint curvature/Bianchi/copy characteristic
+principal matrix and positive symmetrizer are not proved.  No
+$\ell_{\rm sub}$ is assigned.  Full project reset and bulk Einstein
+identification remain open.
 $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional.
 No quantization or finite-grid continuation.
 
@@ -13,14 +18,38 @@ No quantization or finite-grid continuation.
 - [x] Prove the pure-generator exact-difference hierarchy, loss $2r+1$,
   all source-class endpoint traces, and the local reduced
   $I^{2k+8}\to I^k$ restart theorem. Check: 10.5--6; not Einstein restart.
+- [x] Add an exhaustive source-row ledger: 7 frame, 18 connection and
+  16 doubled-Weyl evolved scalar rows, plus every hard gauge/type relation
+  and six copy constraints. Check: `verification/SOURCE_ROW_LEDGER.md`, V75.
+- [x] Substitute A.36a, A.37a, A.38a--b and A.39a directly on $N_+$,
+  independent of the mirror, retaining $D\log c$, $O_4$, $c$ and raw versus
+  covariant derivatives. Check: 10.(3.4)--(3.8), V73--V74.
+- [x] Define the complete independent bulk residual vector and separate
+  algebraic identities from propagated zero-quantities. Check: 11.2;
+  $\mathcal K=\Xi-\mathcal T\Gamma$ is essential.
+- [x] Derive the universal homogeneous Cartan identities
+  $D\mathcal T=-\mathcal K\wedge\theta$ and
+  $D\mathcal K=-\mathscr H(\mathcal B)+3\mathcal T\mathbin{\lrcorner}d$
+  and the resulting triangular
+  torsion/curvature generator incidence. Check: 11.3, V76--V79.
+- [ ] **First bulk lemma $P_{\rm sub}^m$:** expand all sixteen transformed
+  A.36--A.39 rows into the joint
+  $(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$ residual
+  system; eliminate every derivative outside that vector and prove a
+  positive complementary double-null symmetrizer. Check: 11.4. Do not
+  assign $\ell_{\rm sub}$ before this closes.
+- [ ] After $P_{\rm sub}^m$, carry 09.2's fixed-reference connection,
+  symmetrizer and density derivatives through the residual energy estimate;
+  prove finite-regularity uniqueness and only then identify the reduced
+  bulk and completed tangents with Einstein fields.
 - [ ] **First reset lemma:** prove 10.(7.6), the complete moving-cut,
   inverse-graph and label-composition estimate for
   $\zeta-HD f+\kappa Df+D_{\rm new}\log a$, with every required generator
   jet and endpoint trace. Derive, do not assign, $\ell_{\rm reset}$.
-- [ ] **Independent Einstein gate:** derive a direct finite-regularity bulk
-  torsion/curvature/copy/gauge subsidiary theorem for 09.(1.4), using the
-  completed initial constraints. Initial-sheet ODE uniqueness is not this
-  theorem; reduced output cannot yet be called geometric vacuum data.
+- [ ] **Independent Einstein gate:** complete the direct finite-regularity
+  theorem above.  Initial-sheet ODE uniqueness, the Cartan identities alone,
+  and the V73--V79 regressions are not this theorem; reduced output cannot
+  yet be called geometric vacuum data.
 - [ ] Only after these gates, construct the Einstein tangent lift and bound
   every source in 08.(5.2). Do not identify the completion remainder with
   the evolution remainder.

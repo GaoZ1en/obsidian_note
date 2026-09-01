@@ -271,13 +271,21 @@ boundary charge, not a central extension.  This is a theorem on the declared
 reduced characteristic constraint surface, not an unreduced off-shell
 spacetime theorem.
 
-## 3. Stage-4.3 development and solution-space truth boundary
+## 3. Stage-4.4 development and solution-space truth boundary
 
 Calculation 10 supersedes the initial-completion and reduced-restart gaps
 in the Stage-4.2 record immediately below. The nine current answers are
 10.8. No bulk Einstein tangent or $C^1$ claim is promoted: initial
 homogeneous transport is not a bulk subsidiary theorem, and the full
 refoliated affine reset remains open.
+
+Stage 4.4 additionally proves source-row exhaustiveness and an independent
+direct plus-sheet substitution.  Calculation 11 defines the complete bulk
+zero-quantity vector and proves the universal homogeneous Cartan
+torsion/curvature identities.  It does **not** close the joint
+$(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$ principal
+system or a positive double-null symmetrizer.  No finite-regularity loss is
+therefore assigned and no reduced solution/tangent is promoted to Einstein.
 
 The authoritative detailed statements are calculations 06--10 and
 `DEVELOPMENT_MAP_AUDIT.md`. The core map is an equivalence in the smooth
@@ -407,18 +415,22 @@ closing-wall action.
 
 ## 6. Open items and continuation rule
 
-1. Complete the refoliated affine-reset estimate 10.(7.6), its inverse
-   graph/label compositions and all endpoint jets; no full reset loss
-   has been assigned;
-2. Prove direct finite-regularity bulk Einstein/copy/gauge constraint
-   propagation, then linearized Einstein existence and the quadratic
-   evolution remainder for $P_{\rm cell}^k$. Initial completion and local
-   reduced restart are already proved in 10.4--6;
-3. only then finite-grid/gauge/regularity bookkeeping for
+1. Complete $P_{\rm sub}^m$, the joint symmetrizable characteristic
+   principal system for
+   $(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$, then its
+   fixed-reference finite-regularity uniqueness estimate.  No
+   $\ell_{\rm sub}$ is assigned before this closes;
+2. Only after bulk Einstein identification, complete the refoliated
+   affine-reset estimate 10.(7.6), its inverse graph/label compositions and
+   all endpoint jets; no full reset loss has been assigned;
+3. Then prove linearized Einstein existence/gauge exhaustion and the
+   quadratic evolution remainder for $P_{\rm cell}^k$. Initial completion
+   and local reduced restart are already proved in 10.4--6;
+4. only then finite-grid/gauge/regularity bookkeeping for
    $P_{\rm rect}^{s,r}$, including target openness and inverse regularity;
-4. $P_{\rm red}$: action-derived physical ports and their full functional
+5. $P_{\rm red}$: action-derived physical ports and their full functional
    boundary/boost kernel;
-5. functional nondegeneracy, full spacetime gauge quotient and any global
+6. functional nondegeneracy, full spacetime gauge quotient and any global
    completeness, positivity or continuum claim.
 
 The affine endpoint chart now crosses zero expansion; the area/Reisenberger
@@ -442,3 +454,15 @@ one-cell theorem or rectangle closed.
 | Label/inverse flow margins, scalar affine factor/length, null-rotation formulas | proved | supplied regular coefficients, 10.7; not the full reset map |
 | Full project affine reset and bulk Einstein identification | open | first reset estimate 10.(7.6); direct bulk subsidiary theorem still required |
 | $P_{\rm cell}^k$, $P_{\rm rect}^{s,r}$ | conditional | no finite grid, quantization, or intrinsic/extended-port identification |
+
+### Stage-4.4 current theorem list
+
+| Claim | Status | Precise scope |
+|---|---|---|
+| Exhaustive source-row ledger | proved | 7 frame + 18 connection + 16 doubled-Weyl evolved scalar rows, hard gauge/type relations and six copy constraints |
+| Direct plus A.36a/A.37a/A.38a--b/A.39a substitution | proved | includes $D\log c$, $O_4$, lapse and raw/covariant conversion; agrees with mirror |
+| Complete bulk residual vector | proved | $\mathcal R_{\rm bulk}=(\mathcal T,\Xi,\mathcal B,\mathcal C_{\rm copy})$ with algebraic identities removed |
+| Homogeneous Cartan torsion/curvature identities | proved | in the project sign convention, $D\mathcal T=-\mathcal K\wedge\theta$ and $D\mathcal K=-\mathscr H(\mathcal B)+3\mathcal T\mathbin{\lrcorner}d$; not the full residual PDE |
+| Joint residual principal matrices, symmetrizer and finite loss | open | exact lemma $P_{\rm sub}^m$ in 11.4; no $\ell_{\rm sub}$ |
+| Bulk/linearized Einstein identification and tangent surjectivity | open/conditional | incoming residuals vanish; bulk uniqueness and framed gauge exhaustion do not |
+| Reset, one-cell $C^1$, rectangle | open/conditional | gated; no reset loss, finite grid or quantization |

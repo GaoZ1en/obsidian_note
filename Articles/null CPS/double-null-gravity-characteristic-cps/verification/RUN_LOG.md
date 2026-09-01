@@ -1,5 +1,77 @@
 # Verification Run Log
 
+## 2026-09-01 - Stage 4.4 bulk Einstein subsidiary audit
+
+Continued the clean existing `codex/double-null-gravity-cps` worktree at
+`5c71921b`.  All edits in this run are within this project.  No commit,
+push, finite-grid continuation or quantization was performed.
+
+Added the exhaustive `SOURCE_ROW_LEDGER`, direct plus-sheet cleanup in
+calculation 10, and calculation 11.  The ledger accounts for 7 frame,
+18 connection and 16 doubled-Weyl evolved scalar component rows, every
+hard gauge/type relation and all six A.35 copy constraints.  The five
+plus rows A.36a, A.37a, A.38a--b and A.39a were substituted directly,
+without using the mirror, and agree with 10.(3.2) after retaining
+$D\log c$, $O_4$, $c$ and raw/covariant derivatives.
+
+Calculation 11 separates algebraic types from propagated residuals and
+defines
+$\mathcal R_{\rm bulk}=(\mathcal T,\Xi,\mathcal B,
+\mathcal C_{\rm copy})$, with the essential correction
+$\mathcal K=\Xi-\mathcal T\Gamma$.  In the project torsion convention,
+the exact Cartan identities give
+$D\mathcal T=-\mathcal K\wedge\theta$ and
+$D\mathcal K=-\mathscr H(\mathcal B)+3\mathcal T\mathbin{\lrcorner}d$,
+so no residual-independent
+lower-order source remains after adjoining the Bianchi block.
+
+**Stop line:** the complete sixteen-row conversion has not been assembled
+into a joint characteristic principal system for
+$(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$, and no
+positive complementary-flux symmetrizer has been proved.  Therefore the
+bulk subsidiary system is not declared well posed, no
+$\ell_{\rm sub}$ is assigned, and reduced solutions/tangents are not
+promoted to (linearized) Einstein fields.  Reset and the evolution
+remainder remain gated.  This preserves the precise p.55 source boundary:
+Cabet--Chru\'sciel--Tagne Wafo use build-up rather than the direct
+propagation theorem attempted here.
+
+Primary-source review:
+
+- downloaded arXiv:1406.3009v2 PDF and TeX source to the task-local
+  `work/` directory, outside the Note vault;
+- visually checked PDF pages 50--56 and 65--67, including (5.3),
+  (5.12)--(5.14), the p.55--56 build-up paragraph and A.34--A.39;
+- checked the corresponding TeX source for the exact field allocation,
+  gauge and Bianchi rows.
+
+Executed through the Mathematica MCP in a fresh kernel:
+
+- `scripts/stage44_cleanup_subsidiary_checks.wl`: **29/29 PASS**.
+  V73 checks every direct plus-row coefficient; V74 checks the lapse and
+  raw/covariant rotation conversion; V75 checks the ledger metadata;
+  V76 checks $\mathcal K=\Xi-\mathcal T\Gamma$, the project/Cartan
+  torsion sign and the $Dd$ torsion insertion; V77--V78 check four
+  representative frozen Cartan principal coefficients.  These are not a
+  full residual-system regression.
+
+Executed through the dedicated xAct core tools:
+
+- exploratory saved-script run: three zero expressions, no messages;
+- fresh `canonical_contract` verification of V79: **3/3 zero**,
+  `allZero=true`, no load/setup/check messages, unknown heads or truncation.
+  Exact structured result: `verification/stage44_xact_results.md`.
+  The checks are the algebraic Riemann Bianchi, a contracted differential
+  Bianchi and the contracted Einstein Bianchi identity for a torsion-free
+  metric connection.  They do not test the torsionful doubled-copy
+  subsidiary system.
+
+The **29 new checks are regressions only**.  The analytic row audit and
+Cartan derivation are calculations 10--11.  Not verified: the joint
+principal matrix/symmetrizer, finite-regularity uniqueness/loss, bulk or
+linearized Einstein identification, tangent surjectivity, reset, one-cell
+$C^1$ or any rectangle theorem.
+
 ## 2026-08-31 - Stage 4.3 Bianchi completion and reduced restart hierarchy
 
 Continued the clean existing codex/double-null-gravity-cps branch at

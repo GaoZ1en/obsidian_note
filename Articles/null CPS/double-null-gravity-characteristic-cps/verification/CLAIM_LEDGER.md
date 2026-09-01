@@ -92,8 +92,8 @@ retain their historical proof scope. No Stage-0--3 claim is upgraded.
 | C4-SH-completion | Constrained incoming $C_{\rm init}$, differential and remainder | proved | 10.1--4 | loss five in free-slot $I^k$, six in filled-cross $J^k$; not bulk Einstein propagation |
 | C4-affine-endpoint | Affine endpoint/corner potential valid through $\theta_s=0$ | proved | 06.(9.1)--(9.3); HF compensator derivation | fixed affine cuts, tangential endpoint variations, positive area |
 | C4-cited-metric | Metric local/neighborhood existence for complete smooth source data | proved | Cabet Theorem 5.3; Rendall/Luk; MSP for completed DND | known from literature; does not itself construct project $C_{\rm init}$ |
-| C4-germ-map | Framed project-data development/restriction bijection near the corner | conditional | 07.3 | full completion, source constraints and framed PDE uniqueness required |
-| C4-collar-map | Framed project-data bijection on a full-sheet collar | conditional | 06.4.1; 07.3 | parameter domain retained, but full completion still missing |
+| C4-germ-map | Framed project-data development/restriction bijection near the corner | conditional | 07.3; 10.4 | initial completion is proved; bulk Einstein identification and framed PDE uniqueness remain |
+| C4-collar-map | Framed project-data bijection on a full-sheet collar | conditional | 06.4.1; 07.3; 10.4 | parameter domain and initial completion are retained; bulk subsidiary/gauge uniqueness remain |
 | C4-general-Sobolev-chart | Source Einstein theorem directly supplies the exact project finite-Sobolev chart | false | Cabet p.54--55 | finite-loss tracking and direct doubled-system constraint propagation not supplied there |
 | C4-framing-uniqueness | Unique framing extension of an existing metric in the fixed gauge | proved | 07.3.1 eikonal/transport lemma | common regular optical neighborhood; no finite-Sobolev gauge estimate |
 | C4-angular-flux | Angular $H^k$ flux difference estimate with zero reduced incoming loss | proved | 08.(3.1)--(4.3) | two already existing reduced solutions; $k\ge3$, high angular and full $W^{1,\infty}$ bounds |
@@ -146,6 +146,24 @@ retain their historical proof scope. No Stage-0--3 claim is upgraded.
 
 No rectangle, finite-grid, novelty, quantization or auxiliary-port claim is
 promoted by the new derivative bookkeeping.
+
+## Stage 4.4 bulk subsidiary audit
+
+| ID | Claim | Status | Evidence | Exact boundary |
+|---|---|---|---|---|
+| C44-ledger | `SOURCE_ROW_LEDGER` exhausts the fixed gauge/source operator | proved | source (5.3), (5.12)--(5.14), A.35--A.39; ledger; V75 | 41 evolved scalar component rows plus constraints; not bulk propagation |
+| C44-plus-direct | All five plus-sheet Bianchi rows agree by direct source substitution | proved | 10.(3.4)--(3.8); V73--V74 | retains $D\log c$, $O_4$, $c$ and raw/covariant conversion; no mirror used |
+| C44-residual | Complete nonduplicated bulk residual vector | proved | 11.(2.1)--(2.9) | definition/typing; metricity, Weyl type and hard gauge kept algebraic |
+| C44-Cartan | In the project sign convention, $D\mathcal T=-\mathcal K\wedge\theta$ and $D\mathcal K=-\mathscr H(\mathcal B)+3\mathcal T\mathbin{\lrcorner}d$ give homogeneous torsion/curvature transports | proved | 11.(3.1)--(3.7); V76--V79 | Bianchi/copy block is still an input to these transports |
+| C44-subsidiary-principal | Full joint $(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$ principal matrices close and are symmetrizable | open | $P_{\rm sub}^m$, 11.4 | all sixteen transformed Bianchi rows and positive complementary flux missing |
+| C44-subsidiary-energy | Finite-regularity uniqueness with an explicit $\ell_{\rm sub}$ | open | 11.5 | no loss is guessed before C44-subsidiary-principal |
+| C44-incoming-zero | Incoming characteristic bulk residuals and linearized residuals vanish | proved | ledger; 10.1--4; 11.6, 11.8 | zero incoming flux does not imply zero in the cell without subsidiary uniqueness |
+| C44-Einstein | Every completed reduced solution/tangent is bulk (linearized) Einstein | open | 11.6--8 | reconstruction is conditional; tangent surjectivity additionally needs gauge exhaustion |
+| C44-reset | Full moving-cut project reset and loss | open | gated at 11.9; first formula 10.(7.6) | not attempted before bulk Einstein identification |
+| C44-cell | $P_{\rm cell}^k$ is a $C^1$ project-to-Einstein map | conditional | 11.10 | $P_{\rm sub}^m$, energy, reset, tangent and evolution remainder remain |
+
+V73--V79 are exact algebraic regressions only.  V79 checks standard
+torsion-free Riemann/Bianchi identities, not the doubled residual PDE.
 
 ## Verification ledger
 
@@ -222,3 +240,10 @@ topology theorem.
 | V60--V62 | Gauss contraction, mixed Ricci and Codazzi contractions | xAct canonical_contract | three zero residuals; not $C_{\rm Bianchi}$ |
 | V63 | Gaussian curvature variation for qdot=2H | xAct/xPert canonical_contract | zero residual; not full C_init |
 | V64 | Both minus-sheet scalar Bianchi cancellations | Wolfram algebra after geometric substitution | two zero residuals; analytic proof in 09.5 |
+| V65 | Cut connection/frame/lapse commutators | xAct canonical_contract | six zero residuals; initial tensor bookkeeping only |
+| V66--V69 | Minus Bianchi, weighted mirror and source connection rows | Wolfram unrestricted-jet/matrix algebra | analytic initial proof is calculation 10; no bulk propagation |
+| V70--V72 | Initial residual product rule, pure-jet prototype and affine/null-rotation identities | Wolfram algebra | not a tensor hierarchy, reset Sobolev estimate or one-cell theorem |
+| V73--V74 | Direct plus-sheet source coefficients and raw/covariant lapse/rotation conversion | Wolfram algebra | supplements the analytic A.36--A.39 substitution; initial sheet only |
+| V75 | Source-row metadata checksum | Wolfram exact integer/list check | verifies ledger incidence counts, not mathematical independence or bulk propagation |
+| V76--V78 | Source/geometric curvature correction and representative Cartan principal coefficients | Wolfram algebra | representative blocks only; no complete residual matrix/symmetrizer |
+| V79 | Algebraic Riemann, contracted differential and Einstein Bianchi identities | xAct canonical_contract | torsion-free metric identities only; not the doubled-copy subsidiary system |

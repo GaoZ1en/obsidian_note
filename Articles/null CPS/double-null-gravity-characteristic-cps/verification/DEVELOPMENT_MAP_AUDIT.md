@@ -15,6 +15,12 @@ Full project reset and linearized Einstein existence are not supplied.
 $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional; no
 finite-grid continuation or quantization is begun.
 
+Stage 4.4 closes the source-row exhaustiveness and direct plus-sheet audit.
+It defines the full bulk residual and derives the homogeneous Cartan
+torsion/curvature identities, but it does not construct the joint
+curvature/Bianchi/copy principal matrices or a positive symmetrizer.
+Therefore no bulk uniqueness theorem or $\ell_{\rm sub}$ is available.
+
 ## Authoritative status table
 
 Allowed statuses: proved / checked symbolically / conditional / open / false.
@@ -80,8 +86,12 @@ The outgoing reduced data also require a bulk Einstein/copy/metricity
 propagation theorem before they can be used as geometric vacuum data.
 Linearized Einstein existence and the quadratic evolution remainder remain
 independent gates for $P_{\rm cell}^k$; completion remainder is not evolution
-remainder. The next Einstein-identification route is a direct
-finite-regularity bulk subsidiary theorem, not an appeal to reduced uniqueness.
+remainder. Calculation 11 reduces the next Einstein-identification step to
+$P_{\rm sub}^m$: the joint symmetrizable characteristic principal system for
+$(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$, followed by its
+fixed-reference finite-regularity energy theorem.  The residual vector and
+Cartan identities alone are not that theorem, and reduced uniqueness is not
+substituted for it.
 
 Only after these gates may a prescribed-rectangle argument be considered.
 No finite grid or numerical $s(r,I,J)$ is supplied. The separate
@@ -152,3 +162,19 @@ not consequences of a zero symbolic residual.
 | D43-bulk | Finite-regularity Einstein/copy/gauge propagation in the cell | open | 10.8 | must not conflate initial subsidiary uniqueness with bulk constraint propagation |
 
 V65--V72 are regressions only. See RUN_LOG for exact executed scope.
+
+## Stage 4.4 current additions
+
+| ID | Claim | Status | Evidence | Boundary |
+|---|---|---|---|---|
+| D44-ledger | All source frame, connection and A.36--A.39 evolved rows, hard gauge/type relations and A.35 copies are exhausted | proved | `SOURCE_ROW_LEDGER.md`; 7+18+16=41; V75 metadata | exhaustiveness is relative to the fixed full operator 09.(1.4), not bulk propagation |
+| D44-plus | Direct A.36a/A.37a/A.38a--b/A.39a substitutions agree with the mirror | proved | 10.(3.4)--(3.8); V73--V74 | includes $D\log c$, $O_4$, lapse and raw/covariant conversion; initial sheet only |
+| D44-residual | Complete bulk residual vector with algebraic/propagated separation | proved | 11.2 | definition and typing theorem; does not imply propagation |
+| D44-Cartan | Homogeneous universal torsion/curvature identities and characteristic incidence | proved | 11.(3.3)--(3.7); V76--V79 | conditional source is the Bianchi residual; the torsion insertion is lower order; not the joint residual PDE |
+| D44-principal | Closed symmetrizable $(\mathcal K_{\rm con},\mathcal B,\mathcal C_{\rm copy})$ system | open | 11.4, $P_{\rm sub}^m$ | all sixteen copy-transformed rows and positive complementary flux still required |
+| D44-energy | Finite-regularity bulk subsidiary uniqueness and loss | open | 11.5 | no $\ell_{\rm sub}$ assigned before D44-principal |
+| D44-Einstein | Every reduced solution/tangent from $C_{\rm init}$ is bulk (linearized) Einstein | open | 11.6--8 | incoming residuals vanish; bulk uniqueness and tangent gauge exhaustion remain |
+
+V73--V79 are scoped regressions only.  The three xAct zeros concern standard
+torsion-free Riemann/Bianchi identities and do not check the doubled residual
+principal matrix.

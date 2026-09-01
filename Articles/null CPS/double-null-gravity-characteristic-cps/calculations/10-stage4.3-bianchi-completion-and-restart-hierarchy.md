@@ -1,5 +1,12 @@
 # 10 - Stage 4.3: Bianchi completion and the reduced restart hierarchy
 
+**Stage 4.4 cleanup:** the row incidence is now audited in
+`verification/SOURCE_ROW_LEDGER.md`.  Section 3.1 below substitutes the
+five plus-sheet rows directly into A.36--A.39, independently of the
+mirror derivation, including the lapse, $D\log c$, $O_4$ and raw-component
+terms.  This closes the two Stage-4.3 audit gaps; it does not supply the
+bulk subsidiary theorem attempted in calculation 11.
+
 ## 0. Verdict, domains and provenance
 
 **Proved here:** initial-sheet Bianchi compatibility on both sheets,
@@ -319,6 +326,78 @@ the middle-vector RHS has $-2\nu\beta$, and the opposite-extreme
 RHS has $-4\nu\alpha$. Dropping them off the affine minus sheet
 would be wrong. This paper's $\sigma$ is Weyl curvature, not shear.
 
+### 3.1 Direct plus-sheet substitution, without using the mirror
+
+The mirror above is not used in this subsection.  Start instead with the
+literal source rows A.36a, A.37a, A.38a--b and A.39a, set $J=0$, and
+substitute only
+$$
+ \xi=\underline\xi=0,\quad \eta=\zeta,\quad
+ \underline\zeta=-\zeta,\quad
+ \omega=\underline\upsilon=0,\quad \underline\eta=t.
+ \tag{3.4}
+$$
+The five right sides become, in source order,
+$$
+\begin{array}{c|l}
+\text{row}&\text{directly substituted right side}\\ \hline
+\mathrm{A.36a}&
+ -D\widehat\otimes\underline\beta
+ -3(\widehat H\rho-{}^\star\widehat H\sigma)
+ -(4t-\zeta)\widehat\otimes\underline\beta,\\
+\mathrm{A.37a}&
+ -D\rho+{}^\star D\sigma+2\widehat H\beta
+ +3(-t\rho+{}^\star t\sigma),\\
+\mathrm{A.38a}&
+ \operatorname{div}\beta-\tfrac12\widehat H:\alpha
+ +(\zeta+2t)\cdot\beta,\\
+\mathrm{A.38b}&
+ -\operatorname{div}{}^\star\beta+\tfrac12H:{}^\star\alpha
+ -(\zeta+2t)\cdot{}^\star\beta,\\
+\mathrm{A.39a}&
+ \operatorname{div}\alpha+\alpha(t+2\zeta).
+\end{array}\tag{3.5}
+$$
+These are exactly the five covariant equations in (3.2), including the
+opposite-extreme row A.36a.  No interchange of $e_3,e_4$, curvature
+components or underlines has entered this check.
+
+To expose every term which (3.5) packages covariantly, put
+$$
+ w=D\log c,\qquad t=-\zeta-w,qquad
+ O^a{}_b=\Gamma_4{}^a{}_b,qquad e_4=c\partial_\eta.
+ \tag{3.6}
+$$
+For a covector and a symmetric two-tensor,
+$$
+ (\not\nabla_4v)_a=c\partial_\eta v_a-O^b{}_av_b,qquad
+ (\not\nabla_4S)_{ab}=c\partial_\eta S_{ab}
+ -O^c{}_aS_{cb}-O^c{}_bS_{ac}.
+ \tag{3.7}
+$$
+Thus the two vector rows and the opposite-extreme row contain respectively
+the raw rotation terms $-O\underline\beta$, $-O\beta$ and
+$-O_a{}^c\underline\alpha_{cb}-O_b{}^c\underline\alpha_{ac}$.
+The three lapse-sensitive coefficients are, without suppression,
+$$
+ \zeta+2t=-\zeta-2w,qquad
+ t+2\zeta=\zeta-w,qquad
+ 4t-\zeta=-5\zeta-4w.
+ \tag{3.8}
+$$
+Dividing a row by $c$ replaces every $e_4$ derivative by
+$\partial_\eta$ and every other displayed term by $c^{-1}$ times that
+term; $c$ is positive and $e_4c=0$ on $N_+$.  The cut $D$ and
+$\operatorname{div}$ in (3.5) are the covariant cut operators.  If they
+are expanded in a rotating dyad, their intrinsic connection terms must be
+kept in addition to (3.7); there is no legitimate raw derivative formula
+which drops either contribution.
+
+Equations (3.4)--(3.8) give a second, direct source-row derivation of all
+five plus equations.  The substitutions agree with (3.2).  V73--V74
+regress the coefficient and raw/covariant conversion algebra only; the
+row proof is the displayed substitution itself.
+
 ## 4. Actual initial completion and its subsidiary system
 
 ### 4.1 The remaining frame/connection equations
@@ -407,6 +486,14 @@ lapse corrections in (1.5).
 The independent *tangential* Cartan constraints are exhausted as follows.
 This table concerns pullback to a sheet, not unprescribed transverse jets
 of a bulk metric.
+
+The exhaustive source-row incidence, including raw component counts,
+free/complementary status on both sheets, corner values and check status,
+is `verification/SOURCE_ROW_LEDGER.md`.  Its checksum is 7 frame rows,
+18 connection rows and 16 doubled-Bianchi rows, for all 41 evolved scalar
+component rows of the gauge-fixed source system.  Gauge identities and the
+six A.35 copy equalities are listed separately because they are constraints,
+not additional evolved slots.
 
 | Equation type | Minus-sheet realization | Plus-sheet realization |
 |---|---|---|
