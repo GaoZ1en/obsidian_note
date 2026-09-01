@@ -31,6 +31,10 @@ check["T10: restoration removes the normal jump", j-2 tt (j/(2 tt))==0];
 check["T11: restoration removes the temporal history", al+(-al)==0];
 check["T12: common zero-mode cut action retains the Wilson coordinate",
  (a1+ff)-(a2+ff)==a1-a2];
+check["T13: boundary-polarized regional energy cut-frame shift",
+ ((hraw+(al+fdot) ey/e2)-(hraw+al ey/e2))==ey fdot/e2];
+check["T14: matched cut-frame energy shifts cancel",
+ ((ey1+ey2) fdot/e2/.ey2->-ey1)==0];
 
 Scan[Print[If[#[[2]],"PASS ","FAIL "]<>#[[1]]]&,checks];
 Print["RESULT ",Count[checks,{_,True}],"/",Length[checks]];

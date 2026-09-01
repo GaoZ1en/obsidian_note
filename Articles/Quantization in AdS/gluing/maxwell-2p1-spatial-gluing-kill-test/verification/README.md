@@ -46,6 +46,8 @@ Run:
 rtk proxy wolframscript -file maxwell-2p1-spatial-gluing-kill-test/verification/time-slab-checks.wl
 ```
 
-Executed on 2026-09-01: **12/12 PASS**, process exit 0. The script checks covariance of the Coulomb boundary constraint and electric/magnetic realized traces under history action, HJ interface cancellation, symplectic-flux cancellation, the stress-energy versus port-power endpoint term, the matched zero-mode Hamiltonian, Coulomb restoration and Wilson-coordinate invariance.
+Executed on 2026-09-01 before the claim-boundary follow-up: **12/12 PASS**, process exit 0. After adding two exact checks for the boundary-polarized regional-energy cut-frame shift and its cancellation on the transmission locus, the script returned **14/14 PASS**, process exit 0. It checks covariance of the Coulomb boundary constraint and electric/magnetic realized traces under history action, HJ interface cancellation, symplectic-flux cancellation, the stress-energy versus port-power endpoint term, the matched zero-mode Hamiltonian, Coulomb restoration and Wilson-coordinate invariance.
+
+Final scoped revalidation on 2026-09-01 returned **30/30**, **9/9**, and **14/14** for `checks.wl`, `collar-checks.wl`, and `time-slab-checks.wl`, respectively, all with process exit 0.
 
 The first development run returned 9/12 because three replacement-rule lists were parsed with the equality inside the replacement expression. Parenthesizing those exact residuals gave 12/12; no physics formula or note claim was changed. These checks do not prove evolution existence, compatibility-domain completeness, collar choice independence, arrow completeness, reduction by stages or Lagrangian maximality. Those claim levels are analytical in Sections 10.1--10.10.

@@ -4,7 +4,7 @@
 
 **Re-derived here.** This is classical compact $U(1)$ Maxwell theory, with no matter, on $I\times[-L,L]\times S^1_R$, $I=[t_-,t_+]$. Set $C=2\pi R$, $s\sim s+C$, signature $(-,+,+)$, and use the real convention $A\mapsto A+d\lambda$, $g=e^{i\lambda}$. The physical walls have $A_t=A_s=0$ and fixed frames. Proper transformations equal $1$ on both walls; they are not required to be $1$ on the initial/final Cauchy surfaces. All based large components are retained. The bundle and relative wall trivialization are those of the original benchmark. We work in $h=1$; a reachable fixed $h=e^{i\varphi}$ is handled with a periodic real lift and an explicitly recorded regional frame change. Nonzero winding of $h$ is outside this relative sector.
 
-Fix any finite symmetric angular set $|\ell|\le N$. Coefficients are $C^\infty$ in $(t,x)$ up to the two regional closures. Radial functions are **not truncated**. Data and histories obey every initial-boundary compatibility identity below. The union over finite $N$ is the finite-Fourier smooth core; no topology is defined by assembly and no energy completion is attempted. Gauge maps preserving this core have finite-Fourier *logarithmic derivatives/lifts*, not necessarily finite-Fourier $e^{i\lambda}$. The full smooth gauge group is also used for the independent extension-image calculation.
+Fix any finite symmetric angular set $|\ell|\le N$. Coefficients are $C^\infty$ in $(t,x)$ up to the two regional closures. Radial functions are **not truncated**. Data and histories obey every initial-boundary compatibility identity below. The union over finite $N$ is the finite-Fourier smooth inductive core; no topology is defined by assembly and no energy completion is attempted. Existence and uniqueness may be proved on each fixed-support subspace, but an arbitrary finite-Fourier cut history can enlarge angular support. Equivariance therefore belongs to the union over finite supports, not to each fixed-$N$ subspace. Gauge maps preserving this core have finite-Fourier *logarithmic derivatives/lifts*, not necessarily finite-Fourier $e^{i\lambda}$. The full smooth gauge group is also used for the independent extension-image calculation.
 
 Three different objects must remain distinct:
 
@@ -616,7 +616,7 @@ The regional-potential change is $e^{-2}\int_S(E_{y,1}\delta\kappa_1+E_{y,2}\del
 
 Two admissible differentiable assembly choices differ by a smooth proper gauge family from Section 9.3. The identical global Gauss calculation with zero wall variation makes their pulled-back forms equal. Pulling back further to the regional Coulomb realization reproduces B6, including its common harmonic correction and its calibrated corner sign. No new interface oscillator is present.
 
-For **kernel equality**, work in a fixed-$h$ presentation, or first identify the passive presentation redundancy of variable-$h$ data. Retain Section 6's nondegenerate-mod-gauge Cauchy sector, including the Wilson/electric pair and the fully compatible smooth tangents. A global temporal/Coulomb fixing is a proof device here: configuration and velocity tests in the same divergence-free wall-compatible class give nondegeneracy as in Section 6. The regional construction and restriction are linear on local real-lift coordinates, with explicit smooth-family right inverses. If an assembled tangent is global proper gauge, restrict its infinitesimal parameter and undo the variation of the based collar maps; this gives regional parameters with equal cut values. Hence the kernel before based reduction is exactly the infinitesimal $\mathcal K_h$ action, and after based reduction exactly the infinitesimal $\mathcal H_\Gamma$ action. On the Coulomb realization these are the common harmonic directions. Conversely every such direction is null by the preceding contraction calculation. On the unquotiented variable-$h$ presentation space there are also passive vertical directions with unequal cut parameters and $\delta\varphi=\eta_2-\eta_1$; the preceding corner cancellation makes them null. They must not be mislabeled as fixed-$h$ active arrows.
+For **kernel equality**, work in a fixed-$h$ presentation, or first identify the passive presentation redundancy of variable-$h$ data. Retain Section 6's nondegenerate-mod-gauge Cauchy sector, including the Wilson/electric pair and the fully compatible smooth tangents. A global temporal/Coulomb fixing and its divergence-free wall-compatible configuration/velocity tests are only a proof device for nondegeneracy; they neither define the tangent core nor establish completeness or density of a global test space. The regional construction and restriction are linear on local real-lift coordinates, with explicit smooth-family right inverses. If an assembled tangent is global proper gauge, restrict its infinitesimal parameter and undo the variation of the based collar maps; this gives regional parameters with equal cut values. Hence the kernel before based reduction is exactly the infinitesimal $\mathcal K_h$ action, and after based reduction exactly the infinitesimal $\mathcal H_\Gamma$ action. On the Coulomb realization these are the common harmonic directions. Conversely every such direction is null by the preceding contraction calculation. On the unquotiented variable-$h$ presentation space there are also passive vertical directions with unequal cut parameters and $\delta\varphi=\eta_2-\eta_1$; the preceding corner cancellation makes them null. They must not be mislabeled as fixed-$h$ active arrows.
 
 This is a theorem about solution-orbit sets with original two-forms on admissible horizontal tangent classes. It neither constructs a Fréchet symplectic manifold nor promotes the kernel statement to other topological sectors or completed tangent spaces. Discrete large identifications are imposed separately and are never kernel vectors.
 
@@ -670,6 +670,8 @@ $$\begin{align}
 
 on $\mathfrak D_i^\chi$. Existence and uniqueness follow from the finite collection of homogeneous Neumann Klein--Gordon, homogeneous Dirichlet wave and compact ODE problems used in Section 1. Their Duhamel formulas are linear/continuous in every fixed compatible $C^k$ seminorm and differentiate smoothly along admissible finite-parameter families. Gauss holds initially by definition and propagates because its time derivative is the divergence of the spatial Maxwell equations. The reduced master equations were derived from the original equations, so all original constraints and the final compatibility jets hold. This is a smooth-core family statement, not a completed trace or Fréchet-domain theorem.
 
+The graph statement is supportwise. It does not say that the subspace $|\ell|\le N$ is invariant under every finite-Fourier cut action: adding $dHf$ can enlarge the support to a larger finite set. The equivariant regional relation is the smooth inductive family $\bigcup_{N<\infty}\mathscr U_{i,N}^\chi$, with no inductive-limit topology or density theorem asserted.
+
 ### 10.2. Active cut histories and endpoint action
 
 Let $\mathcal H_\Gamma^{\rm core}$ be the core-preserving zero-angular-winding cut histories $e^{if(t,s)}$, represented by smooth periodic finite-Fourier real lifts. Put $H_0=y/L$ and use the $H_k$ of Section 1 for nonzero angular modes. The slice-preserving representative of an active cut history is
@@ -713,6 +715,8 @@ $$\begin{align}
 \end{align}$$
 
 including the transformed final endpoint and all realized jets. It generally moves between history fibers. A full regional based transformation need not preserve Coulomb gauge; its action on this realization means original based gauge followed by the Dirichlet Coulomb re-fixing in a chosen based large component. Within the Coulomb slice the displayed discrete based copies remain. Passive frame changes instead re-express $(A_i,b_i,\widehat z_i,h)$ together and carry no active charge.
+
+This equivariance is an identity on the finite-Fourier smooth inductive family. If the initial/history data lie in one fixed angular support and $f$ has a different finite support, the transformed solution generally lies in a larger fixed-support graph. No arbitrary finite-Fourier action is claimed to preserve each $N$-subspace.
 
 For $h=1$, the same $e^{if}$ acts on both sides. A reachable fixed $h=e^{i\varphi}$ is reduced to this chart by the Section 9.3 regional extension of $\varphi$; covariance then transports every formula back. No free cut action or Abelian harmonic formula is asserted for a general connection theory.
 
@@ -890,7 +894,7 @@ $$\begin{align}
 &=e^{-2}\int_S(B_i\dot q_i-\alpha_i\dot E_{y,i})\,ds.
 \end{align}$$
 
-Because $A_t|_\Gamma=\alpha$ is a boundary Lagrange-multiplier history, the Hamiltonian adapted to the displayed connection polarization is
+Because $A_t|_\Gamma=\alpha$ is a boundary Lagrange-multiplier history, define the **boundary-polarized regional energy**
 
 $$\begin{align}
 H_i^{\rm pol}
@@ -901,7 +905,17 @@ H_i^{\rm pol}
 =-\langle\Pi_i,\dot a_i\rangle_S.}
 \end{align}$$
 
-This is not the fixed-history oscillator Hamiltonian naively added across the cut. On the matched locus,
+This is the proved regional boundary-work/instantaneous canonical-energy balance. For a fixed prescribed history, $H_i^{\rm pol}$ is a fixed-history-fiber Hamiltonian representative. If $(\alpha_i(t),q_i(t))$ is time dependent, no single fixed regional phase space has been chosen across those fibers; without an additional lifting that identifies them, $H_i^{\rm pol}$ is not claimed to generate the complete regional Hamiltonian vector field on one fixed phase space.
+
+Under an active common cut history $f(t,s)$,
+
+$$\begin{align}
+\alpha_i&\longmapsto\alpha_i+\dot f,&
+H_i^{\rm pol}&\longmapsto
+H_i^{\rm pol}+e^{-2}\int_SE_{y,i}\dot f\,ds.
+\end{align}$$
+
+The shift records the frame/history dependence of the regional representative. On the transmission locus the same $f$ acts on both sides and $E_{y,1}+E_{y,2}=0$, so the two shifts cancel. On that locus,
 
 $$\begin{align}
 H_1^{\rm pol}+H_2^{\rm pol}
@@ -910,7 +924,7 @@ H_1^{\rm pol}+H_2^{\rm pol}
 {dH_M\over dt}&=0,
 \end{align}$$
 
-because $\alpha_1=\alpha_2$ and $E_{y,1}+E_{y,2}=0$. Thus the internal work cancels and $H_M$ is the Hamiltonian of the original connected Maxwell theory. In the compact angular zero sector,
+because $\alpha_1=\alpha_2$ and $E_{y,1}+E_{y,2}=0$. Only this matched sum descends to the intrinsic connected Hamiltonian. Thus the internal work cancels and $H_M$ is the Hamiltonian of the original connected Maxwell theory. In the compact angular zero sector,
 
 $$\begin{align}
 H_i^{\rm pol}&={e^2L\over2C}\nu_i^2+\bar\alpha\nu_i,
@@ -944,12 +958,12 @@ If a global smooth temporal/Coulomb history is first restricted, then $J=0$, so 
 
 **Maxwell $2+1$ smooth finite-Fourier time-slab composition theorem.** Under the Section 0 geometry, wall frames, trivial relative sector, smooth finite angular support, full compatibility jets and original smooth proper gauge group:
 
-1. the mixed regional relations $\mathscr U_i^\chi$ are well defined and unique on $\mathfrak D_i^\chi$;
-2. the core-preserving zero-winding cut-history action, including endpoint actions and based large components, preserves the domain family and intertwines evolution;
+1. the mixed regional relations $\mathscr U_i^\chi$ are well defined and unique supportwise on $\mathfrak D_i^\chi$;
+2. on the finite-Fourier smooth inductive family, the core-preserving zero-winding cut-history action, including endpoint actions and based large components, preserves the domain family and intertwines evolution, without preserving every fixed-$N$ subspace;
 3. original descent and full transmission define $\mathscr U_{12}^{\chi,\mathrm{match}}$, whose based-plus-cut classes biject with global smooth solution-history orbits;
 4. based reduction followed by cut-history reduction agrees with intrinsic $\mathcal K_h$ reduction and with global proper orbit reduction;
 5. the original on-shell actions add exactly and generate the regional and composed exact-isotropic relations;
-6. interface symplectic flux and physical work cancel, while the summed polarization Hamiltonian is the original connected Hamiltonian, including the Wilson/electric sector;
+6. interface symplectic flux and physical work cancel; the history-dependent boundary-polarized regional energies have cancelling cut-frame shifts, and only their matched sum is the original connected Hamiltonian, including the Wilson/electric sector;
 7. Coulomb restoration is a time-slab section of the intrinsic composition; and
 8. the orbit-level CPS theorem of Section 9 is the equal-time/horizontal-tangent restriction of the same original current identities.
 
