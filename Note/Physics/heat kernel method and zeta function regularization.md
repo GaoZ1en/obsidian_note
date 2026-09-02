@@ -1,6 +1,6 @@
-# heat kernel method
+# Heat Kernel Method
 
-let $\displaystyle{\Delta}$ be a Hermitian, positive, semi-definite operator with a well-posed eigenvalue problem
+Let $\displaystyle{\Delta}$ be a Hermitian, positive, semi-definite operator with a well-posed eigenvalue problem
 
 $$\begin{align}
 \Delta \varphi _{n}(x) & =\lambda _{n} \varphi _{n}(x)
@@ -13,13 +13,13 @@ $$\begin{align}
 \sum _{m}\varphi _{n}(x)\varphi _{n}^{*}(x) & =\delta(x-y)
 \end{align}$$
 
-and the eigenvalues $\displaystyle{\lambda _{n}}$ are real. define $\displaystyle{f(\Delta)}$ as
+and the eigenvalues $\displaystyle{\lambda _{n}}$ are real. Define $\displaystyle{f(\Delta)}$ as
 
 $$\begin{align}
 f(\Delta) & =\frac{1}{2\pi i}\int _{C} \frac{f(\lambda)}{\lambda-\Delta}\mathrm{d}\lambda
 \end{align}$$
 
-where the contour $\displaystyle{C}$ in the complex $\displaystyle{\lambda}$-plane encloses all eigenvalues $\displaystyle{\left\{\lambda _{n}\right\}}$ and origin. specifically, we have
+where the contour $\displaystyle{C}$ in the complex $\displaystyle{\lambda}$-plane encloses all eigenvalues $\displaystyle{\left\{\lambda _{n}\right\}}$ and origin. Specifically, we have
 
 $$\begin{align}
 e^{-\tau \Delta} & =\frac{1}{2\pi i}\int \frac{e^{-\tau \lambda}}{\lambda-\Delta}\mathrm{d}\lambda
@@ -57,7 +57,7 @@ $$\begin{align}
 \Delta & =-D^{2}+X, & D_{\mu} & =\partial _{\mu}+A_{\mu}
 \end{align}$$
 
-and $\displaystyle{X}$ some matrix valued $\displaystyle{C^{\infty}}$ function, which is positive Hermitian. the heat kernel has the asymptotic expansion
+and $\displaystyle{X}$ some matrix valued $\displaystyle{C^{\infty}}$ function, which is positive Hermitian. The heat kernel has the asymptotic expansion
 
 $$\begin{align}
 G_{\Delta}(x,y;\tau) & \overset{\tau\to 0}{=}G_{-\partial ^{2}}(x,y,\tau)\sum _{n}a_{n}(x,y)\tau ^{n} \\
@@ -79,7 +79,7 @@ $$\begin{align}
 
 *example*
 
-consider
+Consider
 
 $$\begin{align}
 -\ln J[\beta] & =2i \int \mathrm{d}x\beta(x)\sum _{n}\varphi _{n}^{\dagger}(x)\gamma_{5}\varphi _{n}(x) \\
@@ -88,7 +88,7 @@ $$\begin{align}
  & =\lim_{ \tau \to 0 } 2i \mathrm{Tr}\beta \gamma _{5}G_{\Delta}(\tau)
 \end{align}$$
 
-where $\displaystyle{\Delta=D\!\!\!\!/^{2}}$. in 2d, the trace is dominated by $\displaystyle{a_{1}(x,x)}$ term, then
+where $\displaystyle{\Delta=D\!\!\!\!/^{2}}$. In 2d, the trace is dominated by $\displaystyle{a_{1}(x,x)}$ term, then
 
 $$\begin{align}
 -\ln J[\beta] & =2i \int \mathrm{d}x \beta(x) \frac{1}{4\pi}\mathrm{tr}\gamma _{5}a_{1}(x,x)
@@ -115,9 +115,9 @@ $$\begin{align}
 
 which is exactly the chiral anomaly in 2d.
 
-# zeta function regularization
+# Zeta Function Regularization
 
-consider the determinant of some Hermitian, positive, semi-definite operator $\displaystyle{\Delta}$ with eigenvalues $\displaystyle{\left\{\lambda _{n}\right\}}$. formally we have
+Consider the determinant of some Hermitian, positive, semi-definite operator $\displaystyle{\Delta}$ with eigenvalues $\displaystyle{\left\{\lambda _{n}\right\}}$. Formally we have
 
 $$\begin{align}
 \det \Delta & =\prod _{n}\lambda _{n}
@@ -129,7 +129,7 @@ $$\begin{align}
 \zeta _{\Delta}(s) & =\sum _{n} \frac{1}{\lambda _{n}^{s}}
 \end{align}$$
 
-and annalytically continue it to the complex $\displaystyle{s}$-plane. we have
+and annalytically continue it to the complex $\displaystyle{s}$-plane. We have
 
 $$\begin{align}
 -\zeta'_{\Delta}(0) & =\sum _{n}\ln \lambda _{n}=\ln \det \Delta
@@ -171,7 +171,7 @@ $$\begin{align}
 
 *example*
 
-consider the thermal function of a harmonic oscillator with frequency $\displaystyle{\omega}$. the Euclidean action is
+Consider the thermal function of a harmonic oscillator with frequency $\displaystyle{\omega}$. The Euclidean action is
 
 $$\begin{align}
 S_{E} & =\int ^{\beta}_{0}\mathrm{d}\tau \left( \frac{1}{2}m\dot{x}^{2}+\frac{1}{2}m\omega ^{2}x^{2} \right)

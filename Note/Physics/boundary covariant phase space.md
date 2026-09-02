@@ -12,11 +12,9 @@ Finite-boundary covariant phase space treats the action, boundary term, symplect
 
 For an action on a region $M$ with boundary $\Gamma$,
 
-$$
-\begin{align}
+$$\begin{align}
 S=\int_M L+\int_\Gamma \ell,
-\end{align}
-$$
+\end{align}$$
 
 the variation has a bulk equation-of-motion term and boundary terms. A boundary term $\ell$ is chosen together with boundary data so that the variational principle is well posed.
 
@@ -24,11 +22,9 @@ the variation has a bulk equation-of-motion term and boundary terms. A boundary 
 
 The symplectic potential on a Cauchy surface $\Sigma$ can receive a corner correction from $\partial\Sigma$:
 
-$$
-\begin{align}
+$$\begin{align}
 \theta_\Sigma=\int_\Sigma \Theta-\int_{\partial\Sigma} C.
-\end{align}
-$$
+\end{align}$$
 
 Here $\Theta$ is the bulk presymplectic potential current, while $C$ records the boundary correction induced by $\ell$.
 

@@ -21,23 +21,17 @@ Four-dimensional $\mathcal N=1$ supersymmetry is organized by:
 
 The super-Poincare algebra is
 
-$$
-\begin{align}
-\{Q_\alpha,\bar Q_{\dot\beta}\}=2(\sigma^\mu)_{\alpha\dot\beta}P_\mu,\qquad
-\{Q_\alpha,Q_\beta\}=0,\qquad
-\{\bar Q_{\dot\alpha},\bar Q_{\dot\beta}\}=0.
-\end{align}
-$$
+$$\begin{align}
+\{Q_\alpha,\bar Q_{\dot\beta}\}=2(\sigma^\mu)_{\alpha\dot\beta}P_\mu,\qquad \{Q_\alpha,Q_\beta\}=0,\qquad \{\bar Q_{\dot\alpha},\bar Q_{\dot\beta}\}=0.
+\end{align}$$
 
 For an off-shell chiral multiplet $(\phi,\psi_\alpha,F)$, a common convention is
 
-$$
-\begin{align}
+$$\begin{align}
 \delta\phi&=\sqrt2\,\epsilon^\alpha\psi_\alpha,\\
 \delta\psi_\alpha&=i\sqrt2(\sigma^\mu\bar\epsilon)_\alpha\partial_\mu\phi+\sqrt2\,\epsilon_\alpha F,\\
 \delta F&=i\sqrt2\,\bar\epsilon_{\dot\alpha}(\bar\sigma^\mu)^{\dot\alpha\beta}\partial_\mu\psi_\beta.
-\end{align}
-$$
+\end{align}$$
 
 ## Superspace And Wess-Zumino Models
 
@@ -79,27 +73,21 @@ This constrains the superpotential. The Kahler potential can still renormalize.
 
 Anomaly matching compares the same global anomaly in two descriptions of the infrared theory. The practical rule is:
 
-$$
-\begin{align}
+$$\begin{align}
 \text{sum over all left-handed Weyl fermions.}
-\end{align}
-$$
+\end{align}$$
 
 For a chiral superfield $\Phi=(\phi,\psi_\Phi,F)$,
 
-$$
-\begin{align}
+$$\begin{align}
 R_{\psi_\Phi}=R_\Phi-1.
-\end{align}
-$$
+\end{align}$$
 
 For $U(1)[SU(K)]^2$, a Weyl fermion in representation $r$ contributes $q\,T(r)$. For $SU(K)$,
 
-$$
-\begin{align}
+$$\begin{align}
 T(\square)=T(\bar\square)=\frac12.
-\end{align}
-$$
+\end{align}$$
 
 For $[SU(K)]^3$, the fundamental and anti-fundamental contribute with opposite signs.
 

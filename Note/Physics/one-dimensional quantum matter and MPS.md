@@ -38,19 +38,15 @@ AKLT model:
 
 An MPS has the form
 
-$$
-\begin{align}
+$$\begin{align}
 |\Psi\rangle=\sum_{\{s\}}\operatorname{Tr}(A^{s_1}A^{s_2}\cdots)|s_1s_2\cdots\rangle.
-\end{align}
-$$
+\end{align}$$
 
 The transfer matrix is
 
-$$
-\begin{align}
+$$\begin{align}
 T=\sum_s A^s\otimes (A^s)^*.
-\end{align}
-$$
+\end{align}$$
 
 It controls:
 
@@ -60,11 +56,9 @@ It controls:
 
 If a symmetry $U_g$ acts on physical indices,
 
-$$
-\begin{align}
+$$\begin{align}
 \sum_{s'}(U_g)_{ss'}A^{s'}=e^{i\theta_g}V_gA^sV_g^\dagger.
-\end{align}
-$$
+\end{align}$$
 
 The projective class of $V_g$ is the robust SPT datum.
 

@@ -1,4 +1,4 @@
-in this file we consider source-free $\displaystyle{\mathrm{U}(1)}$ Maxwell theory in a finite region with a null boundary component
+In this file we consider source-free $\displaystyle{\mathrm{U}(1)}$ Maxwell theory in a finite region with a null boundary component
 
 $$\begin{align}
 \mathcal{N} & \cong [u_i,u_f]\times S^1,& C_u & =\{u\}\times S^1 .
@@ -6,7 +6,7 @@ $$\begin{align}
 
 The goal is parallel to the Chern-Simons note: choose a local null collar, solve the equations of motion in that collar, write the symplectic form, normalize the modes, and identify the Noether charge balance law. The main difference is that Maxwell theory has a local radiative degree of freedom, so the null flux is physical rather than only an edge-source balance.
 
-## local null collar
+## Local Null Collar
 
 Choose Gaussian null coordinates near $\displaystyle{\mathcal{N}}$,
 
@@ -28,7 +28,7 @@ q_{ab}\mathrm{d}x^a\mathrm{d}x^b & =R_{\mathcal{N}}^2\mathrm{d}\phi^2,& q_{ab}\e
 
 This is a local collar model. Global regularity at the center of the disk may impose additional restrictions on the allowed radial representatives.
 
-## action and covariant phase space
+## Action and Covariant Phase Space
 
 The Maxwell action is
 
@@ -56,7 +56,7 @@ $$\begin{align}
 
 Therefore Maxwell theory has a genuine symplectic flux through the null boundary unless one imposes a flux-free boundary condition. This is already different from the Chern-Simons edge-mode model, where the bulk equation is flatness and the non-trivial modes are boundary gauge modes.
 
-## dual scalar form
+## Dual Scalar Form
 
 In three dimensions a source-free Maxwell field can be written locally as
 
@@ -90,7 +90,7 @@ $$\begin{align}
 
 Thus the radiative Maxwell data on $\displaystyle{\mathcal{N}}$ are carried by the gauge-invariant boundary value of $\displaystyle{\psi}$.
 
-## local modes
+## Local Modes
 
 Let
 
@@ -142,7 +142,7 @@ F_{u\phi}^{(n0)} & =-i\omega_n R_{\mathcal{N}}\psi_{n0},& F_{u\rho}^{(n0)} & =0,
 
 Its vector-potential representative depends on the global extension away from the null collar.
 
-## symplectic normalization
+## Symplectic Normalization
 
 The modes are normalized by the convention
 
@@ -170,7 +170,7 @@ $$\begin{align}
 
 This is the radiative oscillator phase space. It is not a Kac-Moody edge phase space.
 
-## gauge transformations and charges
+## Gauge Transformations and Charges
 
 Gauge transformations act by
 
@@ -204,7 +204,7 @@ Q_1[C_u] & =\int_{C_u}{*F}=0,
 
 unless charged matter or a puncture is added.
 
-## Noether balance law and null flux
+## Noether Balance Law and Null Flux
 
 On shell, the cut charge satisfies
 

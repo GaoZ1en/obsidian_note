@@ -1,4 +1,4 @@
-suppose we have a field theory action that couples to gravity (we do not consider the dynamics of gravity itself)
+Suppose we have a field theory action that couples to gravity (we do not consider the dynamics of gravity itself)
 
 $$\begin{align}
 S & =\int \mathrm{d}^{d}x\sqrt{ -g }\mathcal{L}[\phi,g_{\mu \nu}]

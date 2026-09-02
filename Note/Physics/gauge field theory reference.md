@@ -10,37 +10,27 @@ summary: "Reference note on gauge-theory conventions, BPHZ renormalization, BRST
 
 With Hermitian generators $t^a$,
 
-$$
-\begin{align}
-[t^a,t^b]=if^{abc}t^c,\qquad
-\operatorname{Tr}_r(t^at^b)=T(r)\delta^{ab},\qquad
-t^at^a=C_2(r)\mathbf{1}_r.
-\end{align}
-$$
+$$\begin{align}
+[t^a,t^b]=if^{abc}t^c,\qquad \operatorname{Tr}_r(t^at^b)=T(r)\delta^{ab},\qquad t^at^a=C_2(r)\mathbf{1}_r.
+\end{align}$$
 
 For $SU(N)$ in the fundamental representation,
 
-$$
-\begin{align}
+$$\begin{align}
 T(F)=\frac12,\qquad C_2(F)=\frac{N^2-1}{2N},\qquad C_2(G)=N.
-\end{align}
-$$
+\end{align}$$
 
 If
 
-$$
-\begin{align}
+$$\begin{align}
 D_\mu=\partial_\mu-igA_\mu,
-\end{align}
-$$
+\end{align}$$
 
 then
 
-$$
-\begin{align}
+$$\begin{align}
 F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu-ig[A_\mu,A_\nu].
-\end{align}
-$$
+\end{align}$$
 
 Changing the sign in $D_\mu$ changes several downstream signs.
 
@@ -55,19 +45,15 @@ The useful BPHZ statement is:
 
 Canonical dimensions in four dimensions:
 
-$$
-\begin{align}
+$$\begin{align}
 [\phi]=1,\qquad [A_\mu]=1,\qquad [\psi]=\frac32,\qquad [\partial_\mu]=1.
-\end{align}
-$$
+\end{align}$$
 
 For an operator $\mathcal O$,
 
-$$
-\begin{align}
+$$\begin{align}
 [g_\mathcal O]=4-d_\mathcal O.
-\end{align}
-$$
+\end{align}$$
 
 ## Product Groups And Spontaneous Symmetry Breaking
 

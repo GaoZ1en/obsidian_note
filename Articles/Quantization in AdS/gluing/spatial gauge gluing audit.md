@@ -7,7 +7,7 @@
 > &\Gamma&=I\times S,
 > \end{align}$$
 >
-> where the artificial spatial interface $S$ sweeps out a timelike worldtube $\Gamma$. Null characteristic/Goursat composition is outside the scope of every claim below.
+> Where the artificial spatial interface $S$ sweeps out a timelike worldtube $\Gamma$. Null characteristic/Goursat composition is outside the scope of every claim below.
 
 ## Executive Verdict
 
@@ -44,15 +44,13 @@ The previous draft records eight passing finite (SU(2)) Yang--Mills witnesses an
 The gauge convention is
 
 $$\begin{align}
-A^g&=g^{-1}Ag+g^{-1}\mathrm dg,
-&F^g&=g^{-1}Fg.
+A^g&=g^{-1}Ag+g^{-1}\mathrm dg, &F^g&=g^{-1}Fg.
 \end{align}$$
 
 The transition convention is
 
 $$\begin{align}
-\boxed{a_2=a_1^h=h^{-1}a_1h+h^{-1}\mathrm d_\Gamma h},
-&h&\longmapsto k_1^{-1}hk_2.
+\boxed{a_2=a_1^h=h^{-1}a_1h+h^{-1}\mathrm d_\Gamma h}, &h&\longmapsto k_1^{-1}hk_2.
 \end{align}$$
 
 For fixed $h$, linearized descent gives
@@ -76,16 +74,13 @@ $$\begin{align}
 For Maxwell in the $y_i$-coordinates that both increase toward the cut,
 
 $$\begin{align}
-\left.\delta S_i\right|_\Gamma
-=-\frac1{e^2}\int_\Gamma
-\left(E_{y,i}\delta\alpha_i+F_{ya,i}\delta q_i^a\right),
+\left.\delta S_i\right|_\Gamma =-\frac1{e^2}\int_\Gamma \left(E_{y,i}\delta\alpha_i+F_{ya,i}\delta q_i^a\right),
 \end{align}$$
 
 with $F_{ys}=B$ in $2+1$. Thus the source notes' equations
 
 $$\begin{align}
-E_{y,1}+E_{y,2}&=0,
-&F_{ya,1}+F_{ya,2}&=0
+E_{y,1}+E_{y,2}&=0, &F_{ya,1}+F_{ya,2}&=0
 \end{align}$$
 
 are the Abelian component form of the same coadjoint transmission convention. No sign change is introduced in this audit.
@@ -98,22 +93,21 @@ Evidence:
 
 - `Maxwell 1+1.md`, “Regional Action and CPS,” explicitly varies
 
-  $$\begin{align}
+$$\begin{align}
   S_i=\frac12\int E_i^2
-  \end{align}$$
+\end{align}$$
 
   before solving Gauss law or choosing a representative, and reads off
 
-  $$\begin{align}
-  \Theta_i&=\int E_i\delta A_{y,i},
-  &\Omega_i&=\int\delta E_i\wedge\delta A_{y,i}.
-  \end{align}$$
+$$\begin{align}
+  \Theta_i&=\int E_i\delta A_{y,i}, &\Omega_i&=\int\delta E_i\wedge\delta A_{y,i}.
+\end{align}$$
 
 - `Yang-Mills 1+1.md`, “Action First,” varies the original second/first-order Yang--Mills action before the based quotient and derives
 
-  $$\begin{align}
+$$\begin{align}
   \Theta_i=\int\langle\mathcal E_i,\delta A_{y,i}\rangle.
-  \end{align}$$
+\end{align}$$
 
 - `Maxwell 2+1 cylinder.md` and `Maxwell 3+1 slab.md` first derive the complete interface variation, then set $A_t=0$ and impose Coulomb gauge.
 - `gauge-covariant sewing and reduction.md` defines $\Pi_i$, transition sewing, and the moment map from the complete original action and declares the IBVP and constraint propagation to be separate inputs.
@@ -131,8 +125,7 @@ The general notes are careful. `gluing formalism.md` states that a variational p
 The Maxwell realizations use:
 
 $$\begin{align}
-A_t&=0,
-&\partial_yA_y+\partial_aA^a&=0,
+A_t&=0, &\partial_yA_y+\partial_aA^a&=0,
 \end{align}$$
 
 followed by Fourier decomposition and solution of Gauss law. Coulomb gauge is spatially elliptic/nonlocal; it is not itself a local hyperbolic reduction. The reduced master fields obey wave/Klein--Gordon equations, which is enough for the displayed separated-mode calculation, but the notes do not specify the full Sobolev compatibility domain or prove an energy estimate for the original constrained boundary system.
@@ -156,9 +149,7 @@ The correct audit statement is therefore: the Maxwell notes exhibit dynamically 
 There is no general identity
 
 $$\begin{align}
-\operatorname{Res}\circ\operatorname{Fix}_{\chi_M}
-=
-(\operatorname{Fix}_{\chi_1}\times\operatorname{Fix}_{\chi_2})\circ\operatorname{Res}.
+\operatorname{Res}\circ\operatorname{Fix}_{\chi_M} = (\operatorname{Fix}_{\chi_1}\times\operatorname{Fix}_{\chi_2})\circ\operatorname{Res}.
 \end{align}$$
 
 For Coulomb gauge, the global fixing parameter solves a spatial elliptic problem on all of $\Sigma$, whereas separate regional fixing parameters solve two elliptic problems with extra artificial-boundary conditions. Their difference is generally a nonzero harmonic gauge transformation controlled by data at $S$. Therefore the two representatives need not agree even when they lie on the same global gauge orbit.
@@ -182,10 +173,8 @@ Only the optional subset $\mathcal C_{h,\chi_M}^{\chi,\mathrm{slice}}$ adds a co
 With $\eta=h^{-1}\delta h$, the off-shell worldtube identity is
 
 $$\begin{align}
-\int_\Gamma\langle\Pi_2^\alpha,D_\alpha\eta\rangle
-=-\int_\Gamma\langle D_\alpha\Pi_2^\alpha,\eta\rangle
--[\langle E_2^\perp,\eta\rangle_S]_{t_-}^{t_+}
-+\int_{I\times\partial S}\langle n_A^S\Pi_2^A,\eta\rangle.
+\int_\Gamma\langle\Pi_2^\alpha,D_\alpha\eta\rangle =-\int_\Gamma\langle D_\alpha\Pi_2^\alpha,\eta\rangle
+-[\langle E_2^\perp,\eta\rangle_S]_{t_-}^{t_+} +\int_{I\times\partial S}\langle n_A^S\Pi_2^A,\eta\rangle.
 \end{align}$$
 
 The endpoint representative $-\langle E_2^\perp,\eta\rangle_S$ alone is valid only after this full integration by parts, on the original constraint/on-shell locus and with spatial corners treated. In Maxwell $2+1$, $D_\alpha\Pi^\alpha=-e^{-2}(\dot E_y+\partial_sB)$ is the normal Euler equation; Gauss law alone and the off-shell Noether identity do not set it to zero. A universal off-shell endpoint-only formula is **false**. Density and outward-Stokes conventions are specified in formalism Section 4. Passive chart changes still carry no physical charge; see Q.
@@ -206,8 +195,7 @@ Four operations must be separated:
 In (1+1), there is no independent tangential spatial connection component on the point (S). The full worldtube momentum is the normal electric datum, so timelike transmission and the Gauss moment map coincide. In Maxwell (2+1), full transmission is
 
 $$\begin{align}
-E_{y,1}+E_{y,2}&=0,
-&B_1+B_2&=0,
+E_{y,1}+E_{y,2}&=0, &B_1+B_2&=0,
 \end{align}$$
 
 whereas the moment map contains only the first equation. In Maxwell (3+1), the second equation is the two-component condition
@@ -225,8 +213,7 @@ Thus the higher-dimensional notes correctly refute “moment-map reduction alone
 Regional based proper gauge is identity at the physical boundary and the cut. Active allowed transformations with nonzero cut value act on original solutions/CPS, sometimes between different fixed-history domains. Their cut group is the restriction image
 
 $$\begin{align}
-\mathcal G_{\Gamma,i}^{\mathrm{act,ext}}
-=\operatorname{Im}[\mathcal G_i^{\mathrm{allowed}}\to\operatorname{Map}(\Gamma,G)].
+\mathcal G_{\Gamma,i}^{\mathrm{act,ext}} =\operatorname{Im}[\mathcal G_i^{\mathrm{allowed}}\to\operatorname{Map}(\Gamma,G)].
 \end{align}$$
 
 Only restrictions of **global proper** gauge are eventually reduced at the glued cut. Preserving a fixed transition requires $k_2=h^{-1}k_1h$, but this algebraic condition neither proves extendability nor identifies a residual action on a gauge slice. A map on the cut alone also needs a bulk lift, or a previously justified based quotient, to act on regional fields.
@@ -242,10 +229,8 @@ Physical outer/asymptotic large symmetries are not quotiented. Based disconnecte
 The repaired target is based on the physical locus:
 
 $$\begin{align}
-\mathcal G_M^{\mathrm{prop}}\cdot\operatorname{Asm}_h(\mathcal C_{h,\mathrm{phys}}^\chi)
-&=\operatorname{Sol}(M),\\
-\mathcal C_{h,\mathrm{phys}}^\chi/\mathcal R_h^\chi
-&\simeq\operatorname{Sol}(M)/\mathcal G_M^{\mathrm{prop}}.
+\mathcal G_M^{\mathrm{prop}}\cdot\operatorname{Asm}_h(\mathcal C_{h,\mathrm{phys}}^\chi) &=\operatorname{Sol}(M),\\
+\mathcal C_{h,\mathrm{phys}}^\chi/\mathcal R_h^\chi &\simeq\operatorname{Sol}(M)/\mathcal G_M^{\mathrm{prop}}.
 \end{align}$$
 
 Neither line requires the optional global-slice locus. The first adds proper gauge copies without creating omitted orbits; the second identifies copies. Completeness must therefore be proved from the two directions in J, not defined through saturation. Assembly choices also need independence up to global proper gauge.
@@ -259,20 +244,13 @@ The old conditional formula after regional based reduction does not supply these
 At equal time the correct group is
 
 $$\begin{align}
-\boxed{
-\mathcal G_{S,h}^{\mathrm{ext}}
-:=\operatorname{Im}\!\left[
-\mathcal G_\Sigma^{\mathrm{prop}}
-\xrightarrow{\operatorname{res}_{S,h}}
-\mathcal G_{S,1}\times\mathcal G_{S,2}
-\right].}
+\boxed{ \mathcal G_{S,h}^{\mathrm{ext}} :=\operatorname{Im}\!\left[ \mathcal G_\Sigma^{\mathrm{prop}} \xrightarrow{\operatorname{res}_{S,h}} \mathcal G_{S,1}\times\mathcal G_{S,2} \right].}
 \end{align}$$
 
 Here $\mathcal G_{S,i}$ denotes the coordinate cut-mapping space; the active group is the displayed image. Its elements obey $k_2=h^{-1}k_1h$ in a fixed-$h$ chart. The time-slab analogue is the **theorem target**
 
 $$\begin{align}
-1\longrightarrow\mathcal K_\Gamma\longrightarrow\mathcal G_{M^I}^{\mathrm{prop}}
-\xrightarrow{\operatorname{res}_{\Gamma,h}}\mathcal G_{\Gamma,h}^{\mathrm{ext}}
+1\longrightarrow\mathcal K_\Gamma\longrightarrow\mathcal G_{M^I}^{\mathrm{prop}} \xrightarrow{\operatorname{res}_{\Gamma,h}}\mathcal G_{\Gamma,h}^{\mathrm{ext}}
 \longrightarrow1.
 \end{align}$$
 
@@ -318,12 +296,10 @@ $\operatorname{Res}_h^\chi\subset\operatorname{Sol}(M)\times\mathcal C_{h,\mathr
 2. **Reconstruction:** every physically matched regional realization assembles into the independently declared global weak solution space, with controlled assembly choices. Stronger global regularity requires an additional theorem.
 3. **Two-sided compatibility:** with nonempty compositions and all outputs in the indicated equivalence class,
 
-   $$\begin{align}
-   \operatorname{Asm}_h\circ\operatorname{Res}_h^\chi
-   &\sim_{\mathcal G_M^{\mathrm{prop}}}\operatorname{id}_{\operatorname{Sol}(M)},\\
-   \operatorname{Res}_h^\chi\circ\operatorname{Asm}_h
-   &\sim_{\mathcal R_h^\chi}\operatorname{id}_{\mathcal C_{h,\mathrm{phys}}^\chi}.
-   \end{align}$$
+$$\begin{align}
+   \operatorname{Asm}_h\circ\operatorname{Res}_h^\chi &\sim_{\mathcal G_M^{\mathrm{prop}}}\operatorname{id}_{\operatorname{Sol}(M)},\\
+   \operatorname{Res}_h^\chi\circ\operatorname{Asm}_h &\sim_{\mathcal R_h^\chi}\operatorname{id}_{\mathcal C_{h,\mathrm{phys}}^\chi}.
+\end{align}$$
 
 Only then does the saturation equality summarize coverage; it cannot hide which analytic direction failed. A kinematic patching placeholder must be replaced by actual regularity/trace hypotheses, not by defining admissibility to mean “already reconstructible.” No optional global hyperbolic gauge is needed for these physical targets. Dossier Section 9 restricts arbitrary original smooth representatives and constructs assembly by based radial collar integration. Its two-sided statement uses regional based classes **and** common-cut arrows. Regional IBVP well-posedness alone proves neither direction.
 
@@ -336,9 +312,7 @@ For the local non-Abelian collar, restriction is literal restriction of a smooth
 For controlled assembly choices, the repaired groupoid has objects $u\in\mathcal C_{h,\mathrm{phys}}^\chi$ and arrows
 
 $$\begin{align}
-g:u\to u'\quad\Longleftrightarrow\quad
-g\in\mathcal G_M^{\mathrm{prop}},\qquad
-\operatorname{Asm}_h(u')=(\operatorname{Asm}_h(u))^g.
+g:u\to u'\quad\Longleftrightarrow\quad g\in\mathcal G_M^{\mathrm{prop}},\qquad \operatorname{Asm}_h(u')=(\operatorname{Asm}_h(u))^g.
 \end{align}$$
 
 Both endpoints obey the regional gauge, driver and boundary-domain conditions; an arrow need not preserve every point of the slice. Composition is $gg'$, inverses are $g^{-1}$ and automorphisms record stabilizers. Auxiliary copies of the same physical field can be related by an identity global transformation. This accommodates field-dependent arrows without pretending they form a single field-independent subgroup action.
@@ -350,9 +324,7 @@ Dossier Section 9 supplies that independent construction for the cylinder. Regio
 The non-Abelian collar dossier defines wall-identity regional maps with twisted cut values $u_2|_\Gamma=h^{-1}u_1|_\Gamma h$. If two repaired global connections satisfy $D=C^v$, then
 
 $$\begin{align}
-\partial_xv=vD_x-C_xv,
-\qquad
-v=U_CkU_D^{-1},
+\partial_xv=vD_x-C_xv, \qquad v=U_CkU_D^{-1},
 \end{align}$$
 
 with path-ordered radial transports. The common/twisted cut value, wall anchor and declared relative topological component make $v$ a global smooth proper comparison; conversely every global proper comparison restricts to such an arrow. Infinitesimal stabilizers obey $D_A\epsilon=0$ and vanish when $\epsilon$ is fixed to zero at a physical wall on a connected region; finite stabilizers vanish by the same parallel-transport argument. Without the wall anchor, holonomy centralizers must be retained.
@@ -368,8 +340,7 @@ The framed $1+1$ holonomy models independently prove free diagonal actions and u
 The repaired target is
 
 $$\begin{align}
-\operatorname{Asm}_h^*\Omega_M
-=\left.(\Omega_1+\Omega_2+\Omega_{\mathrm{corner}}^h)\right|_{\mathcal C_{h,\mathrm{phys}}^\chi}.
+\operatorname{Asm}_h^*\Omega_M =\left.(\Omega_1+\Omega_2+\Omega_{\mathrm{corner}}^h)\right|_{\mathcal C_{h,\mathrm{phys}}^\chi}.
 \end{align}$$
 
 Each regional form is pulled from the original action and evaluated on variable-history admissible families, not only the tangent space of a fixed-source fiber. The $h$-corner term is included once. Before a smooth-domain theorem this is a bilinear identity on differentiable admissible families. An optional global-slice restriction further pulls back this identity and does not replace it with the gauge-fixed action's symplectic form.
@@ -383,9 +354,7 @@ For the smooth local Yang--Mills collar, contraction with a regional gauge varia
 For the cylinder time slab, existence/uniqueness is proved supportwise, while the full cut-history action is equivariant only on the finite-Fourier smooth inductive family; arbitrary finite-Fourier histories need not preserve a fixed-$N$ subspace. The original on-shell identity is
 
 $$\begin{align}
-\delta S_{i,\mathrm{on}}
-=\Theta_i^+-\Theta_i^-+
-\langle\Pi_i,\delta a_i\rangle_\Gamma.
+\delta S_{i,\mathrm{on}} =\Theta_i^+-\Theta_i^-+ \langle\Pi_i,\delta a_i\rangle_\Gamma.
 \end{align}$$
 
 On descent and full transmission the interface primitives cancel and the original actions add exactly, so the composed relation is exact isotropic with primitive $S_{M,\mathrm{on}}$. Original symplectic flux and port power cancel pairwise. The quantity $H_i^{\rm raw}+e^{-2}\int_S\alpha_iE_{y,i}$ is a boundary-polarized regional energy/fixed-history-fiber representative: for time-dependent histories it is not asserted to generate complete evolution on one fixed regional phase space without a chosen lifting between fibers. Under $\alpha_i\mapsto\alpha_i+\dot f$ it shifts by $e^{-2}\int_SE_{y,i}\dot f$; full transmission cancels the two shifts, and only the matched sum is the connected Maxwell Hamiltonian, including the Wilson/electric zero mode. No maximal-isotropic/Lagrangian theorem is inferred in the radially infinite-dimensional core.
@@ -425,8 +394,7 @@ It is not a triple-junction theorem. The spatial chain has distinct point interf
 With the source convention $(A^g)^h=A^{gh}$, transition data on a triple overlap obey
 
 $$\begin{align}
-h_{ik}&=h_{ij}h_{jk},
-&\boxed{h_{ij}h_{jk}h_{ki}=1}.
+h_{ik}&=h_{ij}h_{jk}, &\boxed{h_{ij}h_{jk}h_{ki}=1}.
 \end{align}$$
 
 No active higher-dimensional note proves joint original-trace/corner patching with this cocycle. Enlarged realization traces require separate compatibility; a unified global gauge slice is an optional additional theorem.
@@ -438,10 +406,8 @@ No active higher-dimensional note proves joint original-trace/corner patching wi
 The original $\mathcal Z_{i,\Gamma}^{\mathrm{inv}}$ is defined by the gauge-invariant action/Green identity and physical corners. It need not consist of gauge-invariant observables and has not automatically been quotiented. The enlarged $\widehat{\mathcal Z}_{i,\Gamma}^{\chi_i}$ contains the additional normal, constraint, gauge-driver or boundary-jet data required by the chosen realization. Its two maps are
 
 $$\begin{align}
-\rho_i^{\chi_i}:\widehat{\mathcal Z}_{i,\Gamma}^{\chi_i}
-&\to\mathcal Z_{i,\Gamma}^{\mathrm{inv}},\\
-P_{i,\mathrm{in}}^{\chi_i}:\widehat{\mathcal Z}_{i,\Gamma}^{\chi_i}
-&\to\mathcal B_{i,\mathrm{in}}^{\chi_i}.
+\rho_i^{\chi_i}:\widehat{\mathcal Z}_{i,\Gamma}^{\chi_i} &\to\mathcal Z_{i,\Gamma}^{\mathrm{inv}},\\
+P_{i,\mathrm{in}}^{\chi_i}:\widehat{\mathcal Z}_{i,\Gamma}^{\chi_i} &\to\mathcal B_{i,\mathrm{in}}^{\chi_i}.
 \end{align}$$
 
 No factorization $P_{\mathrm{in}}=\overline P\circ\rho$, surjectivity of $\rho$, or canonical section is assumed. Original sewing uses $\rho\widehat z$, whereas gauge/driver compatibility can use the remaining enlarged components. The displayed commutative trace identity in formalism Section 3 is a requirement to verify, not a constructed map for Maxwell.

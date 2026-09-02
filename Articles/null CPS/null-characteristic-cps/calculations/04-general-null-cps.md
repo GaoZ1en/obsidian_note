@@ -12,14 +12,9 @@ Every arrow requires a declared endpoint and function-space policy.
 
 The data lesson extracted from Maxwell is
 
-$$
-\boxed{
-\text{characteristic null data}
-=\text{sheetwise radiative data}
-+\text{lower-dimensional corner integration/constraint data}
-+\text{compatibility}.}
-\tag{1.2}
-$$
+$$\begin{align}
+\boxed{ \text{characteristic null data} =\text{sheetwise radiative data} +\text{lower-dimensional corner integration/constraint data} +\text{compatibility}.} \tag{1.2}
+\end{align}$$
 
 This is a structural template, not a claim that every theory has the same Maxwell variables.
 

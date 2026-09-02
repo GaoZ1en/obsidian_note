@@ -27,11 +27,9 @@ Durable structures:
 
 In four dimensions with $\hbar=c=1$,
 
-$$
-\begin{align}
+$$\begin{align}
 [\phi]=1,\qquad [\psi]=\frac32,\qquad [A_\mu]=1,\qquad [\partial_\mu]=1.
-\end{align}
-$$
+\end{align}$$
 
 This agrees with the gauge-theory power-counting note.
 

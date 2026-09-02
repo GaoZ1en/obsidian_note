@@ -264,11 +264,11 @@ $$\begin{align}
 \bar{q}^{\pm}|_{S}=\bar{h}
 \end{align}$$
 
-## compatible boundary action on $\displaystyle{N^{\pm}}$ and $\displaystyle{S}$
+## Compatible Boundary Action on $\displaystyle{N^{\pm}}$ and $\displaystyle{S}$
 
 ---
 
-### Classical action-polarization audit
+### Classical Action-Polarization Audit
 
 This subsection is **purely classical**.  Its purpose is not to quantize the corner data, but to ask which variational polarization of the Einstein--Hilbert action is compatible with the double-null CIVP data used above.  Three logically distinct questions must be kept separate:
 
@@ -278,141 +278,110 @@ This subsection is **purely classical**.  Its purpose is not to quantize the cor
 
 The standard null-action literature answers the first two questions before the full double-null constraint reduction.  It does **not** by itself prove that the resulting action has already descended to the reduced CIVP data listed above.
 
-#### 1. Convention ledger: the Dirichlet representative
+#### 1. Convention Ledger: the Dirichlet Representative
 
 Let the spacetime region have two null boundary pieces $N_+$ and $N_-$ meeting at $S$, with generators $\ell_+$ and $\ell_-$, and
 
-$$
+$$\begin{align}
 \ell_+\!\cdot\ell_-=-e^{-m}.
-$$
+\end{align}$$
 
 Introduce orientation signs $\epsilon_\pm$ for the two null sheets and $\epsilon_S$ for the joint.  A common Dirichlet representative of the action is schematically
 
-$$
-\begin{aligned}
-I_{\mathrm D}[M]
-={}&\frac{1}{16\pi G}\int_M (R-2\Lambda)\,\epsilon
-+\frac{1}{8\pi G}\sum_{\pm}\epsilon_\pm
-\int_{N_\pm}\! d\lambda_\pm d^2x\,\sqrt q\,\kappa_\pm \\
-&+\frac{\epsilon_S}{8\pi G}\int_S d^2x\,\sqrt q\,a_{+-}
-+\text{terms on the other endpoints}.
-\end{aligned}
-$$
+$$\begin{aligned}
+I_{\mathrm D}[M] ={}&\frac{1}{16\pi G}\int_M (R-2\Lambda)\,\epsilon +\frac{1}{8\pi G}\sum_{\pm}\epsilon_\pm \int_{N_\pm}\! d\lambda_\pm d^2x\,\sqrt q\,\kappa_\pm \\
+&+\frac{\epsilon_S}{8\pi G}\int_S d^2x\,\sqrt q\,a_{+-} +\text{terms on the other endpoints}.
+\end{aligned}$$
 
 Here $\ell_\pm^a\nabla_a\ell_\pm^b=\kappa_\pm\ell_\pm^b$.  In the convention of [Lehner--Myers--Poisson--Sorkin](https://arxiv.org/abs/1609.00207),
 
-$$
-a_{+-}=\log\left|\frac{\ell_+\!\cdot\ell_-}{2}\right|
-=-m-\log 2.
-$$
+$$\begin{align}
+a_{+-}=\log\left|\frac{\ell_+\!\cdot\ell_-}{2}\right| =-m-\log 2.
+\end{align}$$
 
 If the factor $1/2$ is omitted from the logarithm, then $a_{+-}=-m$.  The additive constant is not automatically irrelevant when $q_{AB}$ is varied: it multiplies the area of $S$ and therefore changes the corner representative.  The overall signs are also not universal; they depend on whether a sheet is a future or past boundary, on the direction chosen for its generator, and on whether the joint is convex or concave.  Thus the displayed formula is a convention ledger, not a sign-free identity.
 
 [Parattu--Chakraborty--Majhi--Padmanabhan](https://arxiv.org/abs/1501.01053) use the equally standard null analogue
 
-$$
-I_{N_\pm}^{(\kappa+\theta)}
-=\frac{\epsilon_\pm}{8\pi G}
-\int_{N_\pm}\sqrt q\,(\kappa_\pm+\theta_\pm),
-$$
+$$\begin{align}
+I_{N_\pm}^{(\kappa+\theta)} =\frac{\epsilon_\pm}{8\pi G} \int_{N_\pm}\sqrt q\,(\kappa_\pm+\theta_\pm),
+\end{align}$$
 
 whereas the representative above contains only $\kappa_\pm$.  These differ by
 
-$$
-\int_{N_\pm}d\lambda_\pm d^2x\,\sqrt q\,\theta_\pm
-=\int_{N_\pm}d\lambda_\pm d^2x\,\partial_{\lambda_\pm}\sqrt q
-=A(S_{\mathrm f})-A(S_{\mathrm i}).
-$$
+$$\begin{align}
+\int_{N_\pm}d\lambda_\pm d^2x\,\sqrt q\,\theta_\pm =\int_{N_\pm}d\lambda_\pm d^2x\,\partial_{\lambda_\pm}\sqrt q =A(S_{\mathrm f})-A(S_{\mathrm i}).
+\end{align}$$
 
 **Re-derived here:** the $\theta_\pm$ term is a generator-direction total derivative, so it can be moved between a null-boundary term and its endpoint/corner terms.  Two formulas that differ by this term represent the same bulk variational problem only after all endpoint terms and their signs have been shifted consistently.  The unified treatments of [Jubb--Samuel--Sorkin--Surya](https://arxiv.org/abs/1612.00149) and [Lehner et al.](https://arxiv.org/abs/1609.00207) make precisely this corner bookkeeping explicit.
 
 There is a second, independent convention choice.  Under a reparametrization $\ell_\pm\mapsto e^{\beta_\pm}\ell_\pm$, the $\kappa_\pm$ term and the logarithmic joints transform.  One may either regard the normalization/parameter of $\ell_\pm$ as fixed boundary structure, or add the Lehner et al. intrinsic counterterm, schematically
 
-$$
-I_{\mathrm{rep},\pm}
-\sim \frac{1}{8\pi G}\int_{N_\pm}\sqrt q\,\theta_\pm
-\log\!\bigl(\ell_{\mathrm{ct}}|\theta_\pm|\bigr),
-$$
+$$\begin{align}
+I_{\mathrm{rep},\pm} \sim \frac{1}{8\pi G}\int_{N_\pm}\sqrt q\,\theta_\pm \log\!\bigl(\ell_{\mathrm{ct}}|\theta_\pm|\bigr),
+\end{align}$$
 
 with the sign correlated with the orientation convention.  This restores generator-reparametrization invariance, but it is not the same issue as making the Dirichlet variation well posed.  It also changes the representative of the boundary potential.  In what follows, the cleaner choice is to regard $\ell_\pm$ and its parametrization as fixed unless stated otherwise.
 
-#### 2. What the Dirichlet variation says are canonical pairs
+#### 2. What the Dirichlet Variation Says Are Canonical Pairs
 
 For a four-dimensional null sheet, the intrinsic metric can be decomposed as
 
-$$
-q_{AB}=\Omega\,\bar q_{AB},
-\qquad \det\bar q=1,
-\qquad \Omega=\sqrt{\det q}.
-$$
+$$\begin{align}
+q_{AB}=\Omega\,\bar q_{AB}, \qquad \det\bar q=1, \qquad \Omega=\sqrt{\det q}.
+\end{align}$$
 
 Up to orientation signs, choices of auxiliary null normal, and $\delta$-exact and sheet-exact terms, the bulk part of the null presymplectic potential obtained by [Hopfmüller--Freidel](https://arxiv.org/abs/1611.03096) has the structure
 
-$$
-\Theta_{N_\pm}^{\mathrm{bulk}}
-\widehat{=}
-\frac{1}{8\pi G}\int_{N_\pm}\epsilon_{N_\pm}
-\left[
-\frac12\widetilde\sigma_\pm^{AB}\,\delta\bar q^\pm_{AB}
--\omega_A^{(\pm)}\,\delta\ell_\pm^A
--\left(\kappa_\pm+\frac12\theta_\pm\right)\delta\log\Omega
-\right].
-$$
+$$\begin{align}
+\Theta_{N_\pm}^{\mathrm{bulk}} \widehat{=} \frac{1}{8\pi G}\int_{N_\pm}\epsilon_{N_\pm} \left[ \frac12\widetilde\sigma_\pm^{AB}\,\delta\bar q^\pm_{AB} -\omega_A^{(\pm)}\,\delta\ell_\pm^A -\left(\kappa_\pm+\frac12\theta_\pm\right)\delta\log\Omega \right].
+\end{align}$$
 
 Here $\widetilde\sigma^{AB}_\pm$ denotes the appropriately densitized conformal shear.  The symbol $\widehat{=}$ is essential: the precise signs and density powers depend on conventions.  Moreover, the Hájíček/twist momentum appearing in a canonical decomposition equals the present $\omega_A$ only after the rigging, normal-frame boost, and pullback conventions have been fixed; under a boost it can shift by a gradient.
 
 Thus the unreduced sheetwise canonical pairs are, schematically,
 
-$$
-\boxed{
-(\bar q^\pm_{AB},\,\widetilde\sigma_\pm^{AB}),
-\qquad
-(\ell_\pm^A,\,-\omega_A^{(\pm)}),
-\qquad
-(\log\Omega,\,-\mu_\pm),
-}
-$$
+$$\begin{align}
+\boxed{ (\bar q^\pm_{AB},\,\widetilde\sigma_\pm^{AB}), \qquad (\ell_\pm^A,\,-\omega_A^{(\pm)}), \qquad (\log\Omega,\,-\mu_\pm), }
+\end{align}$$
 
 with
 
-$$
+$$\begin{align}
 \mu_\pm:=\kappa_\pm+\frac12\theta_\pm
-$$
+\end{align}$$
 
 in four spacetime dimensions.  This agrees with the single-null potential used in the present paper, whose spin-0 momentum is $\kappa+(d-1)\theta/d$ for a $d$-dimensional cut, hence $\kappa+\theta/2$ when $d=2$.  [Chandrasekaran--Flanagan--Shehzad--Speranza](https://arxiv.org/abs/2109.11567) give the same content in Carrollian variables: fixing the intrinsic null-boundary structure $(q_{ij},\ell^i)$ leaves a Brown--York-type momentum built from the null extrinsic curvature, expansion, inaffinity, and Hájíček form.
 
 At a null--null joint, varying $\sqrt q\,a_{+-}$ gives
 
-$$
-\delta(\sqrt q\,a_{+-})
-=\sqrt q\,\delta a_{+-}+a_{+-}\,\delta\sqrt q.
-$$
+$$\begin{align}
+\delta(\sqrt q\,a_{+-}) =\sqrt q\,\delta a_{+-}+a_{+-}\,\delta\sqrt q.
+\end{align}$$
 
 The first term cancels the relative-normal-normalization variation supplied by the two null segments.  The residual corner potential is therefore of the form
 
-$$
-\Theta_S\widehat{=}
-\frac{\epsilon_S}{8\pi G}\int_S a_{+-}\,\delta\sqrt q,
-$$
+$$\begin{align}
+\Theta_S\widehat{=} \frac{\epsilon_S}{8\pi G}\int_S a_{+-}\,\delta\sqrt q,
+\end{align}$$
 
 so the area density and the boost angle are a corner canonical pair:
 
-$$
+$$\begin{align}
 \boxed{(\sqrt q,\,a_{+-})\simeq(\sqrt q,\,-m+\text{constant}).}
-$$
+\end{align}$$
 
 This is also what the explicit double-null symplectic form of [Reisenberger](https://arxiv.org/abs/1211.3880) finds: its corner sector contains $\delta m\wedge\delta\rho_0$, with $\rho_0$ the area density, while the twist is paired with endpoint-label/embedding variables.  Consequently, $\omega_A$ is **not** universally conjugate to $m$ or to $q_{AB}$; its partner depends on whether tangential generator labels and corner embeddings are retained as edge variables or quotiented out.
 
 One may exchange the corner polarization by the elementary Legendre identity
 
-$$
-a_{+-}\,\delta\sqrt q
-=-\sqrt q\,\delta a_{+-}+\delta(a_{+-}\sqrt q).
-$$
+$$\begin{align}
+a_{+-}\,\delta\sqrt q =-\sqrt q\,\delta a_{+-}+\delta(a_{+-}\sqrt q).
+\end{align}$$
 
 Adding or subtracting the last total variation switches between fixing the area density and fixing $m$ (up to the convention-dependent constant).  It is not consistent to declare both members of this canonical pair to be independently fixed Dirichlet sources merely because both occur in a list of initial phase-space data.
 
-#### 3. Polarization A: shear profiles on $N_\pm$
+#### 3. Polarization A: Shear Profiles on $N_\pm$
 
 Consider
 
@@ -428,30 +397,29 @@ $$
 
 The $\kappa_\pm$ null-boundary term and logarithmic null--null joint remain the natural starting terms because they remove the transverse-derivative variation of the Einstein--Hilbert action.  They do not, however, make the shear itself a Dirichlet coordinate.  In the spin-2 sector the Dirichlet potential is
 
-$$
+$$\begin{align}
 P_I^\pm\,\delta Q_\pm^I,
-$$
+\end{align}$$
 
 where $Q_\pm^I$ are local coordinates on the space of unit-determinant conformal metrics and $P_I^\pm$ is the corresponding densitized shear.  Fixing $P_I^\pm$ instead requires a boundary Legendre transform
 
-$$
-P_I^\pm\delta Q_\pm^I
-=-Q_\pm^I\delta P_I^\pm+\delta(P_I^\pm Q_\pm^I),
-$$
+$$\begin{align}
+P_I^\pm\delta Q_\pm^I =-Q_\pm^I\delta P_I^\pm+\delta(P_I^\pm Q_\pm^I),
+\end{align}$$
 
 so locally one would add
 
-$$
+$$\begin{align}
 I_{\mathrm{Leg},\pm}^{(2)}=-\int_{N_\pm}P_I^\pm Q_\pm^I
-$$
+\end{align}$$
 
 with the overall normalization and orientation inherited from $\Theta_{N_\pm}$.  A tempting covariant expression $\int\widetilde\sigma^{AB}\bar q_{AB}$ vanishes identically because the shear is tracefree.  Therefore the cited second-order null-GHY literature does **not** supply a globally defined, manifestly covariant pure-shear Legendre functional for free.  One must use a coordinate patch on conformal-metric space, a first-order formulation, or an explicitly constructed generating functional.
 
 The spin-0 issue is more serious.  The data above give $q_{AB}$ and $\theta_{\pm0}$ only at $S$; the area profile $\Omega(\lambda_\pm,x)$ is then reconstructed by the null constraint/Raychaudhuri transport equation.  Off shell, however, the standard Einstein--Hilbert variation contains
 
-$$
+$$\begin{align}
 -\mu_\pm\,\delta\log\Omega
-$$
+\end{align}$$
 
 all along $N_\pm$.  An equation of motion cannot be used to set this off-shell variation to zero.  Hence a local action whose boundary sources are literally “shear profile plus only corner spin-0 integration constants” requires one of the following additional constructions:
 
@@ -466,7 +434,7 @@ At $S$, the standard joint naturally treats $q_{AB}$, hence $\sqrt q$, as the co
 
 **Verdict for polarization A:** it is natural for solving the classical constraints in “momentum-like” shear variables, but it is the least direct local polarization of the second-order Einstein--Hilbert action.  A spin-2 boundary Legendre transform and a genuine characteristic constraint reduction remain to be constructed.
 
-#### 4. Polarization B: conformal-metric profiles on $N_\pm$
+#### 4. Polarization B: Conformal-Metric Profiles on $N_\pm$
 
 Now take
 
@@ -494,17 +462,15 @@ At the corner, retaining the ordinary joint means using the area polarization $(
 
 **Verdict for polarization B:** among the three choices considered here, this is the best match to an action-first formulation of the classical CIVP.  It agrees with the natural spin-2 Dirichlet coordinate, needs no spin-2 Legendre transform, and leaves the genuinely relational datum $m$ in the standard logarithmic joint.  Its remaining nontrivial step is constraint reduction, not a change of spin-2 polarization.
 
-#### 5. Polarization C: full induced-metric/Dirichlet null data
+#### 5. Polarization C: Full induced-metric/Dirichlet Null Data
 
 The null-GHY literature usually fixes the full intrinsic null-boundary geometry: equivalently, a degenerate induced metric together with its null generator/Carrollian structure.  In the present variables this amounts, after gauge choices, to fixing $q_{AB}(\lambda,x)$ and $\ell^a(\lambda,x)$ on each $N_\pm$, including both $\Omega$ and $\bar q_{AB}$, and fixing the induced $q_{AB}$ at joints.
 
 For this polarization the standard answer is the cleanest:
 
-$$
-I_{N_\pm}=\frac{\epsilon_\pm}{8\pi G}\int_{N_\pm}\sqrt q\,\kappa_\pm,
-\qquad
-I_S=\frac{\epsilon_S}{8\pi G}\int_S\sqrt q\,a_{+-},
-$$
+$$\begin{align}
+I_{N_\pm}=\frac{\epsilon_\pm}{8\pi G}\int_{N_\pm}\sqrt q\,\kappa_\pm, \qquad I_S=\frac{\epsilon_S}{8\pi G}\int_S\sqrt q\,a_{+-},
+\end{align}$$
 
 or the $\kappa_\pm+\theta_\pm$ representative with the compensating endpoint shift.  No boundary Legendre transform is needed.  The variation identifies the shear/extrinsic-curvature tensor as momentum conjugate to the conformal metric, $\mu_\pm=\kappa_\pm+\theta_\pm/2$ as momentum conjugate to the area variable, and the Hájíček/twist form as momentum conjugate to the generator/Carrollian direction.  This is the local off-shell variational problem treated by Parattu et al., Hopfmüller--Freidel, Jubb et al., and Chandrasekaran et al.
 
@@ -518,17 +484,13 @@ Its disadvantage for the CIVP is equally precise: fixing the entire $q_{AB}(\lam
 | $\bar q^\pm_{AB}$ profiles plus the same corner integration constants | same | same | no spin-2 transform; corner transform only if fixing $m$ rather than area | closest to the natural action polarization; still requires pullback to the characteristic constraint surface |
 | full induced $q_{AB}(\lambda,x)$ and null generator on each sheet | same | same | no | standard local off-shell null Dirichlet problem, but overcomplete relative to reduced free CIVP data |
 
-#### 7. Project-specific conclusion and open derivation
+#### 7. Project-Specific Conclusion and Open Derivation
 
 **Project-specific inference, not a theorem from the cited papers:** the most economical action polarization for the classical double-null CIVP is a mixed one:
 
-$$
-\boxed{
-\text{conformal-metric Dirichlet on }N_\pm
-+\text{ area Dirichlet at }S
-+\text{ the logarithmic }m\text{-joint},
-}
-$$
+$$\begin{align}
+\boxed{ \text{conformal-metric Dirichlet on }N_\pm +\text{ area Dirichlet at }S +\text{ the logarithmic }m\text{-joint}, }
+\end{align}$$
 
 with $\ell_\pm$ and their parametrizations fixed at the first pass.  The variables $\theta_{\pm0}$ and $\omega_{A0}$ should initially be regarded as characteristic integration/momentum data, not as additional Dirichlet fields along the whole sheets.  The shear description may be obtained later by a genuine boundary canonical transformation, but that transformation should not be assumed merely from the kinematical relation between $\sigma^\pm_{AB}$ and $\mathcal L_{\ell_\pm}\bar q^\pm_{AB}$.
 

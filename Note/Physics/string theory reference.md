@@ -12,19 +12,15 @@ The Polyakov action organizes the bosonic string as a two-dimensional worldsheet
 
 For the bosonic string, quantum consistency requires
 
-$$
-\begin{align}
+$$\begin{align}
 D=26.
-\end{align}
-$$
+\end{align}$$
 
 Equivalently, the matter central charge cancels the $bc$ ghost central charge:
 
-$$
-\begin{align}
+$$\begin{align}
 c_X+c_{bc}=D-26=0.
-\end{align}
-$$
+\end{align}$$
 
 ## Physical-State Logic
 
@@ -72,11 +68,9 @@ Covariant quantization contains:
 
 For a closed string on a circle, momenta and winding are exchanged under T-duality:
 
-$$
-\begin{align}
+$$\begin{align}
 R\longleftrightarrow \frac{\alpha'}{R}.
-\end{align}
-$$
+\end{align}$$
 
 For open strings, T-duality changes Neumann and Dirichlet boundary conditions and gives the D-brane interpretation.
 

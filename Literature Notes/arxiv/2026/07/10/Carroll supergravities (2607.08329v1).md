@@ -14,11 +14,11 @@ tags: []
 
 Daily screening: [[2026_07_10_overview]]
 
-## Why this is useful
+## Why This Is Useful
 
 The paper gives a compact testbed for taking Carroll limits without losing the gauge structure of a gravitational theory. Its reusable point is methodological: prepare the theory in Hamiltonian form, scale the Lagrange multipliers rather than the canonical variables, and take the contraction directly on the first-class constraints. The electric and magnetic theories then retain the same local supersymmetry algebra while preserving complementary pieces of the Lorentzian dynamics.
 
-## Lorentzian supergravity before the contraction
+## Lorentzian Supergravity Before the Contraction
 
 The starting theory is $N=1$, $D=4$ supergravity with tetrad ${h^{(\alpha)}}_\mu$, Rarita-Schwinger field $\psi_\mu$, and
 
@@ -65,7 +65,7 @@ The first-class constraints have distinct roles:
 
 The time gauge is especially convenient because the residual local group is $SO(3)$ both before and after the Carroll contraction.
 
-## Electric Carroll supergravity
+## Electric Carroll Supergravity
 
 The electric limit rescales the lapse and fermionic multiplier as
 
@@ -90,7 +90,7 @@ All spatial derivatives disappear from $\mathcal H^E$ and $\mathcal S^E$; only $
 
 This limit is the supergravity counterpart of the electric Carroll limit of Einstein gravity: the momentum-squared part of the Hamiltonian constraint is retained, and the supersymmetry constraint remains its fermionic square root.
 
-## Magnetic Carroll supergravity
+## Magnetic Carroll Supergravity
 
 The magnetic limit instead uses
 
@@ -112,7 +112,7 @@ $$\begin{align}
 
 The spatial curvature and gravitino gradients survive, while momentum-quadratic and quartic-fermion terms disappear. Varying the conjugate momentum no longer solves for that momentum; it imposes vanishing extrinsic curvature. Thus the magnetic limit keeps the spatial geometry that underlies positive-energy arguments but freezes normal evolution.
 
-## The common Carroll supersymmetry algebra
+## The Common Carroll Supersymmetry Algebra
 
 Despite retaining different terms, both limits have the same characteristic local constraint algebra:
 
@@ -136,7 +136,7 @@ so Carroll spinors and supercharges are inert under Carroll boosts.
 
 For the magnetic theory, the derivative constraints can yield nonzero on-shell surface charges for energy and supersymmetry. In the electric theory the corresponding surface integrals vanish because the dynamical constraints are ultralocal.
 
-## Covariant electric action and the magnetic obstruction
+## Covariant Electric Action and the Magnetic Obstruction
 
 The electric gravitational action can be written without time gauge as
 
@@ -155,7 +155,7 @@ G^{(\gamma)(\delta)(\alpha)(\beta)}K^E_{(\alpha)(\beta)} +L^{\rm quartic}
 
 The magnetic theory does not admit the same direct off-shell covariantization. Its spatial connection is well defined only after the equation $K_{\alpha\beta}=0$ is used, and the naive contracted supersymmetry transformations diverge off shell. A covariant magnetic action therefore requires either adding on-shell-trivial improvements to the transformations or gauging the super-Carroll algebra directly.
 
-## Transfer to current boundary and phase-space work
+## Transfer to Current Boundary and Phase-Space Work
 
 This is not a covariant phase-space charge construction, but it isolates three useful lessons:
 
@@ -163,7 +163,7 @@ This is not a covariant phase-space charge construction, but it isolates three u
 2. Electric and magnetic contractions can share a constraint algebra while carrying inequivalent local dynamics and inequivalent surface-charge content.
 3. Off-shell covariance can fail even when the on-shell contracted algebra is regular; this distinction matters when importing a Carroll action into CPS or boundary-charge calculations.
 
-## Verification note
+## Verification Note
 
 - Checked with Mathematica: inserting $N=N^E/(2\kappa^2)$ into the Lorentzian Hamiltonian and taking $\kappa^2\to\infty$ retains the momentum, mixed gravitino-momentum, and quartic pieces shown in $\mathcal H^E$ while suppressing curvature and spatial-gradient pieces.
 - Checked with Mathematica: inserting $N=2\kappa^2N^M$ and taking $\kappa^2\to0$ leaves only $-N^M\sqrt g\,R$ in the Hamiltonian constraint.
