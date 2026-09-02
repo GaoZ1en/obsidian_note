@@ -6,13 +6,12 @@ summary: "Derivation notes for the extrapolate dictionary, including scalar fiel
 
 # Extrapolate Dictionary
 
-## Scalar field
+## Scalar Field
 
 This section gives the scalar-field calculation in the pre-boundary extrapolate convention. The result is the standard scalar primary two-point function with conformal dimension
 
 $$\begin{align}
-\Delta_+=\frac{d}{2}+\nu, \qquad
-\nu=\sqrt{\frac{d^2}{4}+m^2}.
+\Delta_+=\frac{d}{2}+\nu, \qquad \nu=\sqrt{\frac{d^2}{4}+m^2}.
 \end{align}$$
 
 The AdS radius is set to $L=1$.
@@ -43,7 +42,7 @@ $$\begin{align}
 O(x,z_0)=c\,\Omega(z_0)^{-\Delta}\phi(x,z_0) =c\,z_0^{-\Delta}\phi(x,z_0).
 \end{align}$$
 
-### Equation of motion
+### Equation of Motion
 
 Varying the action gives
 
@@ -60,8 +59,7 @@ $$\begin{align}
 After Fourier transformation,
 
 $$\begin{align}
-\phi(x,z) = \int\frac{d^d k}{(2\pi)^d}e^{ik\cdot x}\phi(k,z), \qquad
-k=\sqrt{\delta^{ij}k_ik_j},
+\phi(x,z) = \int\frac{d^d k}{(2\pi)^d}e^{ik\cdot x}\phi(k,z), \qquad k=\sqrt{\delta^{ij}k_ik_j},
 \end{align}$$
 
 the homogeneous radial equation is
@@ -73,8 +71,7 @@ $$\begin{align}
 The independent radial solutions are
 
 $$\begin{align}
-u_1(k,z)=z^{d/2}I_\nu(kz), \qquad
-u_2(k,z)=z^{d/2}K_\nu(kz),
+u_1(k,z)=z^{d/2}I_\nu(kz), \qquad u_2(k,z)=z^{d/2}K_\nu(kz),
 \end{align}$$
 
 where
@@ -91,7 +88,7 @@ m^2\ge -\frac{d^2}{4},
 
 so that $\nu$ is real.
 
-### Bulk Green function
+### Bulk Green Function
 
 The scalar Green function is defined by
 
@@ -108,8 +105,7 @@ G(k;z,z_1) = (z_>z_<)^{d/2}K_\nu(kz_>)I_\nu(kz_<),
 where
 
 $$\begin{align}
-z_>=\max(z,z_1), \qquad
-z_<=\min(z,z_1).
+z_>=\max(z,z_1), \qquad z_<=\min(z,z_1).
 \end{align}$$
 
 The classical field sourced at $z=z_0$ is therefore
@@ -118,7 +114,7 @@ $$\begin{align}
 \phi(k,z) = c\,z_0^{-\Delta}G(k;z,z_0)j(k).
 \end{align}$$
 
-### On-shell generating function
+### On-Shell Generating Function
 
 Using the equation of motion, the source-dependent part of the on-shell action is obtained as follows.
 
@@ -131,8 +127,7 @@ J(k,z)=j(k)z_0^{d+1}\delta(z-z_0),
 the volume factor $\sqrt g=z^{-d-1}$ cancels $z_0^{d+1}$ at the support of the delta function, so
 
 $$\begin{align}
-\int_M\epsilon_M J c z^{-\Delta}\phi = \int\frac{d^d k}{(2\pi)^d}
-j(k)c z_0^{-\Delta}\phi(-k,z_0).
+\int_M\epsilon_M J c z^{-\Delta}\phi = \int\frac{d^d k}{(2\pi)^d} j(k)c z_0^{-\Delta}\phi(-k,z_0).
 \end{align}$$
 
 For a quadratic Euclidean action $S_E=\frac{1}{2}\phi K\phi-J_{\mathrm{eff}}\phi$, the classical solution obeys $K\phi_{\mathrm{cl}}=J_{\mathrm{eff}}$ and
@@ -144,9 +139,7 @@ S_{E,\mathrm{cl}} = -\frac{1}{2}J_{\mathrm{eff}}K^{-1}J_{\mathrm{eff}}.
 Therefore $\ln Z=-S_{E,\mathrm{cl}}$ gives
 
 $$\begin{align}
-\ln Z[j]\simeq -S_{E,\mathrm{cl}}[j] = \frac{1}{2}\int\frac{d^d k}{(2\pi)^d}
-j(k) \left[ c^2z_0^{-2\Delta}G(k;z_0,z_0) \right]
-j(-k) +\text{contact terms}.
+\ln Z[j]\simeq -S_{E,\mathrm{cl}}[j] = \frac{1}{2}\int\frac{d^d k}{(2\pi)^d} j(k) \left[ c^2z_0^{-2\Delta}G(k;z_0,z_0) \right] j(-k) +\text{contact terms}.
 \end{align}$$
 
 At coincident radial position,
@@ -205,13 +198,12 @@ $$\begin{align}
 C_{\Delta} = \frac{1}{\pi^{d/2}} \frac{\Gamma(\Delta)}{\Gamma(\Delta-d/2)}.
 \end{align}$$
 
-### Integer $\nu$ and logarithmic terms
+### Integer $\nu$ and Logarithmic Terms
 
 When $\nu=n\in\mathbb N$, the nonlocal part is obtained from the logarithmic branch of $K_n$:
 
 $$\begin{align}
-\langle O(k)O(-k)\rangle_{\mathrm{nonlocal}} \propto
-k^{2n}\log k.
+\langle O(k)O(-k)\rangle_{\mathrm{nonlocal}} \propto k^{2n}\log k.
 \end{align}$$
 
 More explicitly, after removing local counterterms,
@@ -226,7 +218,7 @@ $$\begin{align}
 \langle O(x)O(0)\rangle = \frac{C_{\Delta_+}}{|x|^{2\Delta_+}}.
 \end{align}$$
 
-### Alternate quantization
+### Alternate Quantization
 
 For
 
@@ -264,7 +256,7 @@ $$\begin{align}
 
 The power $k^{-2\nu}$ Fourier transforms to a position-space two-point function with dimension $\Delta_-=d/2-\nu$.
 
-### Interaction vertex
+### Interaction Vertex
 
 For a weak scalar interaction
 
@@ -275,8 +267,7 @@ S_{\mathrm{int}} = \frac{\lambda}{n!}\int_M\epsilon_M\phi^n,
 the first correction to the generating functional is the contact Witten diagram
 
 $$\begin{align}
-\ln Z[j]\big|_{O(\lambda)} = -\frac{\lambda}{n!}
-\int_0^\infty\frac{dz}{z^{d+1}}
+\ln Z[j]\big|_{O(\lambda)} = -\frac{\lambda}{n!} \int_0^\infty\frac{dz}{z^{d+1}}
 \int\prod_{a=1}^n\frac{d^d k_a}{(2\pi)^d}
 (2\pi)^d\delta^{(d)}\left(\sum_{a=1}^n k_a\right)
 \prod_{a=1}^n K_{\Delta_+}(k_a,z;z_0)j(k_a),
@@ -290,15 +281,14 @@ K_{\Delta_+}(k,z;z_0) = c\,z_0^{-\Delta_+}G(k;z,z_0).
 
 Taking $z_0\to0$ gives the usual bulk-to-boundary propagator representation of the scalar $n$-point contact diagram. Higher orders in $\lambda$ insert additional bulk vertices connected by the bulk-bulk propagator $G(k;z,z_1)$.
 
-### Holographic rule for scalar fields
+### Holographic Rule for Scalar Fields
 
 For standard scalar quantization:
 
 1. Use the pre-boundary field
 
 $$\begin{align}
-\widetilde\phi(x,z_0)=c\,z_0^{-\Delta_+}\phi(x,z_0), \qquad
-   \Delta_+=\frac{d}{2}+\sqrt{\frac{d^2}{4}+m^2}.
+\widetilde\phi(x,z_0)=c\,z_0^{-\Delta_+}\phi(x,z_0), \qquad \Delta_+=\frac{d}{2}+\sqrt{\frac{d^2}{4}+m^2}.
 \end{align}$$
 
 1. Use the bulk propagator
@@ -315,11 +305,11 @@ $$\begin{align}
 \langle\widetilde\phi(x)\widetilde\phi(0)\rangle = \langle O(x)O(0)\rangle = \frac{C_{\Delta_+}}{|x|^{2\Delta_+}}.
 \end{align}$$
 
-## Electromagnetic field
+## Electromagnetic Field
 
 This section gives the complete Maxwell calculation in the same pre-boundary extrapolate convention. The main point is that the direct vector coupling computes the standard conserved-current two-point function, while a field-strength coupling computes a different operator.
 
-### Direct coupling to $A_i$
+### Direct Coupling to $A_i$
 
 Work in Euclidean AdS$_{d+1}$ with
 
@@ -342,8 +332,7 @@ J^i(x,z)=j^i(x)z_0^{d+1}\delta(z-z_0).
 The physical transverse sector can be described in radial gauge:
 
 $$\begin{align}
-A_z=0, \qquad
-\partial_iA_i=0.
+A_z=0, \qquad \partial_iA_i=0.
 \end{align}$$
 
 The Maxwell equation for tangent components is
@@ -361,8 +350,7 @@ z^2\partial_z^2A_i+(3-d)z\partial_zA_i +z^2\delta^{mn}\partial_m\partial_nA_i=0.
 After Fourier transformation,
 
 $$\begin{align}
-A_i(x,z)=\int\frac{d^d k}{(2\pi)^d}e^{ik\cdot x}A_i(k,z), \qquad
-k=\sqrt{\delta^{ij}k_ik_j},
+A_i(x,z)=\int\frac{d^d k}{(2\pi)^d}e^{ik\cdot x}A_i(k,z), \qquad k=\sqrt{\delta^{ij}k_ik_j},
 \end{align}$$
 
 the radial equation is
@@ -374,19 +362,17 @@ $$\begin{align}
 Its independent radial solutions are
 
 $$\begin{align}
-u_1(k,z)=z^{d/2-1}I_{d/2-1}(kz), \qquad
-u_2(k,z)=z^{d/2-1}K_{d/2-1}(kz).
+u_1(k,z)=z^{d/2-1}I_{d/2-1}(kz), \qquad u_2(k,z)=z^{d/2-1}K_{d/2-1}(kz).
 \end{align}$$
 
 The $K$ branch is regular in the interior $z\to\infty$.
 
-### Transverse source and propagator
+### Transverse Source and Propagator
 
 Gauge invariance implies that only the transverse part of the source is physical. In momentum space,
 
 $$\begin{align}
-j_i(k)\quad\mapsto\quad \pi_{ij}(k)j_j(k), \qquad
-\pi_{ij}(k)=\delta_{ij}-\frac{k_ik_j}{k^2}.
+j_i(k)\quad\mapsto\quad \pi_{ij}(k)j_j(k), \qquad \pi_{ij}(k)=\delta_{ij}-\frac{k_ik_j}{k^2}.
 \end{align}$$
 
 Equivalently, one may choose a transverse representative satisfying
@@ -398,8 +384,7 @@ k_ij_i(k)=0.
 The Green function in the transverse sector is
 
 $$\begin{align}
-\left[ z^{d+1}\partial_z\left(z^{3-d}\partial_z\right)-z^4k^2 \right]
-G_T(k;z,z_1) =-z_1^{d+1}\delta(z-z_1),
+\left[ z^{d+1}\partial_z\left(z^{3-d}\partial_z\right)-z^4k^2 \right] G_T(k;z,z_1) =-z_1^{d+1}\delta(z-z_1),
 \end{align}$$
 
 with
@@ -417,7 +402,7 @@ $$\begin{align}
 
 This is the vector analogue of the scalar bulk propagator, with the scalar kernel replaced by the Maxwell radial kernel and multiplied by the transverse projector.
 
-### Pre-boundary operator and on-shell action
+### Pre-Boundary Operator and On-Shell Action
 
 For a covariant vector field, the extrapolated field has Weyl factor
 
@@ -440,24 +425,19 @@ O_i(x,z_0)=c\,z_0^{2-d}A_i(x,z_0).
 The classical solution induced by the source is
 
 $$\begin{align}
-A_i(k,z) = g_{d+1}^2c\,z_0^{2-d}
-\pi_{ij}(k)G_T(k;z,z_0)j_j(k).
+A_i(k,z) = g_{d+1}^2c\,z_0^{2-d} \pi_{ij}(k)G_T(k;z,z_0)j_j(k).
 \end{align}$$
 
 Substituting into the on-shell action gives the quadratic generating functional
 
 $$\begin{align}
-\ln Z[j] = \frac{1}{2}\int\frac{d^d k}{(2\pi)^d}
-j_i(k) \left[ c^2g_{d+1}^2z_0^{4-2d}
-\pi_{ij}(k)G_T(k;z_0,z_0) \right]
-j_j(-k) +\text{contact terms}.
+\ln Z[j] = \frac{1}{2}\int\frac{d^d k}{(2\pi)^d} j_i(k) \left[ c^2g_{d+1}^2z_0^{4-2d} \pi_{ij}(k)G_T(k;z_0,z_0) \right] j_j(-k) +\text{contact terms}.
 \end{align}$$
 
 Since
 
 $$\begin{align}
-G_T(k;z_0,z_0) = z_0^{d-2}K_\nu(kz_0)I_\nu(kz_0), \qquad
-\nu=\frac{d}{2}-1,
+G_T(k;z_0,z_0) = z_0^{d-2}K_\nu(kz_0)I_\nu(kz_0), \qquad \nu=\frac{d}{2}-1,
 \end{align}$$
 
 the kernel entering $\ln Z[j]$ is
@@ -467,7 +447,7 @@ c^2g_{d+1}^2z_0^{2-d}
 K_\nu(kz_0)I_\nu(kz_0)\pi_{ij}(k).
 \end{align}$$
 
-### Odd-dimensional boundary
+### Odd-Dimensional Boundary
 
 When $\nu\notin\mathbb Z$, equivalently when $d$ is odd,
 
@@ -484,8 +464,7 @@ $$\begin{align}
 where
 
 $$\begin{align}
-C_J^{(k)} = c^2g_{d+1}^2 \frac{\Gamma(1-d/2)}{2\Gamma(d/2)}
-2^{2-d}
+C_J^{(k)} = c^2g_{d+1}^2 \frac{\Gamma(1-d/2)}{2\Gamma(d/2)} 2^{2-d}
 \end{align}$$
 
 up to the sign convention used for $S_E$ and $\ln Z$.
@@ -493,35 +472,30 @@ up to the sign convention used for $S_E$ and $\ln Z$.
 Fourier transforming gives the conformal current two-point function
 
 $$\begin{align}
-\langle J_i(x)J_j(0)\rangle = C_J\frac{I_{ij}(x)}{|x|^{2(d-1)}}, \qquad
-I_{ij}(x)=\delta_{ij}-2\frac{x_ix_j}{x^2}.
+\langle J_i(x)J_j(0)\rangle = C_J\frac{I_{ij}(x)}{|x|^{2(d-1)}}, \qquad I_{ij}(x)=\delta_{ij}-2\frac{x_ix_j}{x^2}.
 \end{align}$$
 
 Here $C_J$ is the position-space normalization corresponding to $C_J^{(k)}$. With the Fourier convention used here,
 
 $$\begin{align}
-\int\frac{d^d k}{(2\pi)^d}
-e^{ik\cdot x}
-\pi_{ij}(k)k^{d-2} = \mathcal A_J \frac{I_{ij}(x)}{|x|^{2(d-1)}},
+\int\frac{d^d k}{(2\pi)^d} e^{ik\cdot x} \pi_{ij}(k)k^{d-2} = \mathcal A_J \frac{I_{ij}(x)}{|x|^{2(d-1)}},
 \end{align}$$
 
 where analytic continuation gives
 
 $$\begin{align}
-\mathcal A_J = \frac{2^{d-2}(d-1)\Gamma(d-2)}
-{\pi^{d/2}\Gamma(1-d/2)}.
+\mathcal A_J = \frac{2^{d-2}(d-1)\Gamma(d-2)} {\pi^{d/2}\Gamma(1-d/2)}.
 \end{align}$$
 
 Thus $C_J=C_J^{(k)}\mathcal A_J$, namely
 
 $$\begin{align}
-C_J = c^2g_{d+1}^2 \frac{(d-1)\Gamma(d-2)}
-{2\pi^{d/2}\Gamma(d/2)},
+C_J = c^2g_{d+1}^2 \frac{(d-1)\Gamma(d-2)} {2\pi^{d/2}\Gamma(d/2)},
 \end{align}$$
 
 up to the same overall sign convention in the Euclidean source term.
 
-### Even-dimensional boundary
+### Even-Dimensional Boundary
 
 When $d$ is even, $\nu=d/2-1$ is an integer. The nonlocal branch of $K_\nu$ becomes logarithmic:
 
@@ -532,15 +506,13 @@ K_\nu(x)I_\nu(x) = \text{local terms} + (-1)^{\nu+1}\frac{1}{\Gamma(\nu+1)^2} \l
 Since $\log(kz_0)=\log z_0+\log k$, the $\log z_0$ term is local in momentum space and is absorbed by a logarithmic counterterm. After removing local counterterms, the momentum-space correlator is
 
 $$\begin{align}
-\langle J_i(k)J_j(-k)\rangle_{\mathrm{nonlocal}} \propto
-\pi_{ij}(k)k^{d-2}\log k.
+\langle J_i(k)J_j(-k)\rangle_{\mathrm{nonlocal}} \propto \pi_{ij}(k)k^{d-2}\log k.
 \end{align}$$
 
 This is the standard holographic result in even boundary dimension. For example, in $d=4$,
 
 $$\begin{align}
-\langle J_i(k)J_j(-k)\rangle_{\mathrm{nonlocal}} \propto
-\pi_{ij}(k)k^2\log k.
+\langle J_i(k)J_j(-k)\rangle_{\mathrm{nonlocal}} \propto \pi_{ij}(k)k^2\log k.
 \end{align}$$
 
 The position-space answer is still fixed by conformal symmetry:
@@ -551,7 +523,7 @@ $$\begin{align}
 
 The logarithm is a momentum-space feature of the renormalized distribution.
 
-### The special case $d=2$
+### The Special Case $d=2$
 
 For $d=2$ one has $\nu=0$ and
 
@@ -562,11 +534,10 @@ K_0(kz)I_0(kz) = -\log z-\log\frac{k}{2}-\gamma+O(z^2\log z).
 The normalization choice $c=\sqrt{d-2}$ is not meaningful in this case. The Maxwell field in AdS$_3$ requires a separate logarithmic renormalization. The nonlocal kernel is logarithmic rather than zero:
 
 $$\begin{align}
-\langle J_i(k)J_j(-k)\rangle_{\mathrm{nonlocal}} \propto
-\pi_{ij}(k)\log k.
+\langle J_i(k)J_j(-k)\rangle_{\mathrm{nonlocal}} \propto \pi_{ij}(k)\log k.
 \end{align}$$
 
-### Field-strength coupling
+### Field-Strength Coupling
 
 One can instead couple the source to a field-strength operator
 
@@ -585,9 +556,7 @@ Therefore the source is not constrained in the same way as the direct $j^iA_i$ c
 The two-point function is obtained by differentiating the vector propagator:
 
 $$\begin{align}
-\langle O_i^{(\xi)}(k_1)O_j^{(\xi)}(k_2)\rangle = \int\frac{d^d q}{(2\pi)^d}
-\Xi_{ij}(k_1,k_2;q;\xi) \left[ c^2g_{d+1}^2z_0^{2-d}
-K_\nu(qz_0)I_\nu(qz_0) \right],
+\langle O_i^{(\xi)}(k_1)O_j^{(\xi)}(k_2)\rangle = \int\frac{d^d q}{(2\pi)^d} \Xi_{ij}(k_1,k_2;q;\xi) \left[ c^2g_{d+1}^2z_0^{2-d} K_\nu(qz_0)I_\nu(qz_0) \right],
 \end{align}$$
 
 where $\Xi_{ij}$ contains the two derivative factors from $F_{ij}$ and the two factors of $\xi$. If $\xi$ is not constant, the result is not diagonal in momentum space because the background $\xi(x)$ breaks translation invariance.
@@ -595,8 +564,7 @@ where $\Xi_{ij}$ contains the two derivative factors from $F_{ij}$ and the two f
 If $\xi$ is constant, the schematic tensor structure reduces to
 
 $$\begin{align}
-\langle O_i^{(\xi)}(k)O_j^{(\xi)}(-k)\rangle \propto \left(k_i\delta_m{}^a-k_m\delta_i{}^a\right) \left(k_j\delta_n{}^b-k_n\delta_j{}^b\right)
-\xi_a\xi_b\,\pi_{mn}(k)\,\mathcal K(k),
+\langle O_i^{(\xi)}(k)O_j^{(\xi)}(-k)\rangle \propto \left(k_i\delta_m{}^a-k_m\delta_i{}^a\right) \left(k_j\delta_n{}^b-k_n\delta_j{}^b\right) \xi_a\xi_b\,\pi_{mn}(k)\,\mathcal K(k),
 \end{align}$$
 
 where
@@ -620,7 +588,7 @@ K^2\xi_\perp^2\,\delta_i{}^1\delta_j{}^1\,\mathcal K(K).
 
 This is not proportional to the conserved-current tensor $I_{ij}(x)$ after Fourier transformation; it is the two-point function of the projected field strength operator.
 
-### Holographic rule for Maxwell fields
+### Holographic Rule for Maxwell Fields
 
 For the direct vector extrapolate dictionary:
 
@@ -652,7 +620,7 @@ $$\begin{align}
 
 For the field-strength coupling, replace $\widetilde A_i$ by $c\Omega^{1-\Delta}F_{ij}\xi^j$ and differentiate the transverse propagator. The result is not the same as the direct conserved-current correlator.
 
-## Linearized gravity
+## Linearized Gravity
 
 This section completes the linear-gravity part of `note.pdf`. The gravity section in the PDF starts from the Einstein-Hilbert action, but the subsequent calculation reuses Maxwell variables such as $A_i$ and $F_{\mu\nu}$. The correct linearized-gravity calculation should instead use a metric perturbation and its transverse-traceless propagator.
 
@@ -685,8 +653,7 @@ g_{\mu\nu}=\bar g_{\mu\nu}+h_{\mu\nu}.
 Use Fefferman-Graham gauge and transverse-traceless gauge:
 
 $$\begin{align}
-h_{z\mu}=0,\qquad \partial^i H_{ij}=0,\qquad
-H^i{}_i=0,
+h_{z\mu}=0,\qquad \partial^i H_{ij}=0,\qquad H^i{}_i=0,
 \end{align}$$
 
 where the mixed boundary fluctuation is
@@ -725,7 +692,7 @@ $$\begin{align}
 T_{ij}(x)=\lim_{z_0\to0}c\,z_0^{-d}H_{ij}(x,z_0).
 \end{align}$$
 
-### Linearized equation of motion
+### Linearized Equation of Motion
 
 In the TT sector, the linearized Einstein equation around EAdS reduces to the massless scalar radial equation for each polarization of $H_{ij}$:
 
@@ -736,8 +703,7 @@ $$\begin{align}
 After Fourier transformation,
 
 $$\begin{align}
-H_{ij}(x,z)=\int\frac{d^d k}{(2\pi)^d}e^{ik\cdot x}H_{ij}(k,z), \qquad
-k=\sqrt{\delta^{ij}k_i k_j},
+H_{ij}(x,z)=\int\frac{d^d k}{(2\pi)^d}e^{ik\cdot x}H_{ij}(k,z), \qquad k=\sqrt{\delta^{ij}k_i k_j},
 \end{align}$$
 
 the equation becomes
@@ -749,13 +715,12 @@ $$\begin{align}
 The basis of radial solutions is
 
 $$\begin{align}
-u_1(k,z)=z^{d/2}I_{d/2}(kz), \qquad
-u_2(k,z)=z^{d/2}K_{d/2}(kz).
+u_1(k,z)=z^{d/2}I_{d/2}(kz), \qquad u_2(k,z)=z^{d/2}K_{d/2}(kz).
 \end{align}$$
 
 The mode $u_2$ is regular in the interior $z\to\infty$, while $u_1$ is the regular branch near the boundary for the Green-function construction.
 
-### TT projector
+### TT Projector
 
 Define the transverse projector
 
@@ -772,25 +737,21 @@ $$\begin{align}
 It satisfies
 
 $$\begin{align}
-k^i\Pi_{ij,kl}=0,\qquad
-\delta^{ij}\Pi_{ij,kl}=0, \qquad
-\Pi_{ij}{}^{mn}\Pi_{mn,kl}=\Pi_{ij,kl}.
+k^i\Pi_{ij,kl}=0,\qquad \delta^{ij}\Pi_{ij,kl}=0, \qquad \Pi_{ij}{}^{mn}\Pi_{mn,kl}=\Pi_{ij,kl}.
 \end{align}$$
 
-### Bulk two-point function
+### Bulk Two-Point Function
 
 The Schwinger-Dyson equation for the TT propagator has the form
 
 $$\begin{align}
-\left[ z^{d+1}\partial_z\left(z^{1-d}\partial_z\right)-z^2k^2 \right]
-\langle H_{ij}(k,z)H_{kl}(-k,z_1)\rangle =-\mathcal N_g^{-1}z_1^{d+1}\delta(z-z_1)\Pi_{ij,kl}(k),
+\left[ z^{d+1}\partial_z\left(z^{1-d}\partial_z\right)-z^2k^2 \right] \langle H_{ij}(k,z)H_{kl}(-k,z_1)\rangle =-\mathcal N_g^{-1}z_1^{d+1}\delta(z-z_1)\Pi_{ij,kl}(k),
 \end{align}$$
 
 where $\mathcal N_g$ is the quadratic-action normalization. With the convention
 
 $$\begin{align}
-S_E^{(2)} =\frac{1}{64\pi G_N}\int dz\frac{d^d k}{(2\pi)^d}
-z^{1-d} \left[ \partial_z H_{ij}(k,z)\partial_z H_{ij}(-k,z) +k^2H_{ij}(k,z)H_{ij}(-k,z) \right],
+S_E^{(2)} =\frac{1}{64\pi G_N}\int dz\frac{d^d k}{(2\pi)^d} z^{1-d} \left[ \partial_z H_{ij}(k,z)\partial_z H_{ij}(-k,z) +k^2H_{ij}(k,z)H_{ij}(-k,z) \right],
 \end{align}$$
 
 one has
@@ -802,9 +763,7 @@ $$\begin{align}
 The factor of two comes from writing the quadratic action in the canonical form
 
 $$\begin{align}
-S_E^{(2)} = \frac{1}{2}\mathcal N_g
-\int dz\frac{d^d k}{(2\pi)^d}
-z^{1-d} \left[ \partial_z H_{ij}(k,z)\partial_z H_{ij}(-k,z) +k^2H_{ij}(k,z)H_{ij}(-k,z) \right].
+S_E^{(2)} = \frac{1}{2}\mathcal N_g \int dz\frac{d^d k}{(2\pi)^d} z^{1-d} \left[ \partial_z H_{ij}(k,z)\partial_z H_{ij}(-k,z) +k^2H_{ij}(k,z)H_{ij}(-k,z) \right].
 \end{align}$$
 
 Varying this action gives the Sturm-Liouville operator
@@ -825,20 +784,17 @@ $$\begin{align}
 where
 
 $$\begin{align}
-z_>=\max(z_1,z_2), \qquad
-z_<=\min(z_1,z_2).
+z_>=\max(z_1,z_2), \qquad z_<=\min(z_1,z_2).
 \end{align}$$
 
 This is the direct spin-two analogue of the massless scalar propagator, with the scalar kernel multiplied by the TT projector.
 
-### Generating function
+### Generating Function
 
 The localized source produces the classical field
 
 $$\begin{align}
-H_{ij}(k,z) =c\,z_0^{-d}
-j^{kl}(k)
-\langle H_{kl}(k,z_0)H_{ij}(-k,z)\rangle.
+H_{ij}(k,z) =c\,z_0^{-d} j^{kl}(k) \langle H_{kl}(k,z_0)H_{ij}(-k,z)\rangle.
 \end{align}$$
 
 At the saddle point,
@@ -850,10 +806,7 @@ $$\begin{align}
 The part quadratic in the source is
 
 $$\begin{align}
-\ln Z[j] =\frac{1}{2}\int\frac{d^d k}{(2\pi)^d}
-j^{ij}(k) \left[ c^2 z_0^{-2d}
-\langle H_{ij}(k,z_0)H_{kl}(-k,z_0)\rangle \right]
-j^{kl}(-k) +\text{contact terms}.
+\ln Z[j] =\frac{1}{2}\int\frac{d^d k}{(2\pi)^d} j^{ij}(k) \left[ c^2 z_0^{-2d} \langle H_{ij}(k,z_0)H_{kl}(-k,z_0)\rangle \right] j^{kl}(-k) +\text{contact terms}.
 \end{align}$$
 
 Using the propagator at coincident radial position,
@@ -876,10 +829,7 @@ z_0^dK_{d/2}(kz_0)I_{d/2}(kz_0) =\text{contact terms} +z_0^{2d} \frac{1}{d} \fra
 Therefore
 
 $$\begin{align}
-\ln Z[j] =\frac{1}{2}\int\frac{d^d k}{(2\pi)^d}
-j^{ij}(k) \left[ \mathcal C_g
-\Pi_{ij,kl}(k) \left(\frac{k}{2}\right)^d \right]
-j^{kl}(-k) +\text{contact terms},
+\ln Z[j] =\frac{1}{2}\int\frac{d^d k}{(2\pi)^d} j^{ij}(k) \left[ \mathcal C_g \Pi_{ij,kl}(k) \left(\frac{k}{2}\right)^d \right] j^{kl}(-k) +\text{contact terms},
 \end{align}$$
 
 with
@@ -900,7 +850,7 @@ $$\begin{align}
 \frac{\Gamma(-d/2)}{\Gamma(d/2)} \left(\frac{k}{2}\right)^d \quad\longrightarrow\quad \frac{2(-1)^{d/2+1}}{(d/2)\Gamma(d/2)^2} \left(\frac{k}{2}\right)^d\log k.
 \end{align}$$
 
-### Boundary stress-tensor two-point function
+### Boundary Stress-Tensor Two-Point Function
 
 By definition,
 
@@ -912,8 +862,7 @@ $$\begin{align}
 Thus in momentum space,
 
 $$\begin{align}
-\langle T_{ij}(k)T_{kl}(-k)\rangle = \mathcal C_g
-\Pi_{ij,kl}(k) \left(\frac{k}{2}\right)^d
+\langle T_{ij}(k)T_{kl}(-k)\rangle = \mathcal C_g \Pi_{ij,kl}(k) \left(\frac{k}{2}\right)^d
 \end{align}$$
 
 for odd $d$, up to contact terms. For even $d$, the nonlocal part is instead proportional to
@@ -960,7 +909,7 @@ $$\begin{align}
 
 is first Fourier transformed together with the TT projector to the conformal tensor structure $\mathcal I_{ij,kl}(x)/|x|^{2d}$; the remaining scalar coefficient is then identified with $C_T$. This note keeps $c$ explicit until that final matching.
 
-### Holographic rule for linear gravity
+### Holographic Rule for Linear Gravity
 
 For the TT sector of linearized gravity:
 
@@ -973,8 +922,7 @@ $$\begin{align}
 1. The bulk TT field propagates as
 
 $$\begin{align}
-\langle H_{ij}(k,z_1)H_{kl}(-k,z_2)\rangle = 32\pi G_N
-   \Pi_{ij,kl}(k)
+\langle H_{ij}(k,z_1)H_{kl}(-k,z_2)\rangle = 32\pi G_N \Pi_{ij,kl}(k)
    (z_>z_<)^{d/2}
    K_{d/2}(kz_>)I_{d/2}(kz_<).
 \end{align}$$
@@ -991,7 +939,7 @@ $$\begin{align}
 \langle \widetilde H_{ij}(x)\widetilde H_{kl}(0)\rangle = \langle T_{ij}(x)T_{kl}(0)\rangle = C_T\frac{\mathcal I_{ij,kl}(x)}{|x|^{2d}}.
 \end{align}$$
 
-### What was missing in the PDF
+### What Was Missing in the PDF
 
 The gravity derivation should not use the Maxwell projector alone. The necessary replacements are:
 
@@ -1001,11 +949,11 @@ The gravity derivation should not use the Maxwell projector alone. The necessary
 - obtain the boundary correlator of $T_{ij}$, not of a vector operator;
 - keep track of the Einstein-Hilbert normalization, which fixes $C_T$ through $G_N$.
 
-## Vector-field checks and corrections
+## Vector-Field Checks and Corrections
 
 This section records the corrected reading of the Maxwell parts of `note.pdf`. The radial equation and the transverse propagator in the direct Maxwell coupling are essentially correct, but several conclusions about boundary dimensions, logarithmic terms, and the second Maxwell coupling need to be sharpened.
 
-### Direct Maxwell coupling
+### Direct Maxwell Coupling
 
 Start from the Euclidean Maxwell action with a pre-boundary source,
 
@@ -1034,8 +982,7 @@ z^2\partial_z^2A_i+(3-d)z\partial_zA_i-z^2k^2A_i=0.
 The correct radial basis is
 
 $$\begin{align}
-u_1(k,z)=z^{d/2-1}I_{d/2-1}(kz), \qquad
-u_2(k,z)=z^{d/2-1}K_{d/2-1}(kz).
+u_1(k,z)=z^{d/2-1}I_{d/2-1}(kz), \qquad u_2(k,z)=z^{d/2-1}K_{d/2-1}(kz).
 \end{align}$$
 
 The transverse projector is
@@ -1054,13 +1001,12 @@ K_{d/2-1}(kz_>)I_{d/2-1}(kz_<).
 
 The PDF's propagator has the same kernel, effectively in the convention $g_{d+1}^2=1$.
 
-### Near-boundary behavior
+### Near-Boundary Behavior
 
 The coincident radial kernel is
 
 $$\begin{align}
-G_T(k;z_0,z_0) = z_0^{d-2}K_{\nu}(kz_0)I_{\nu}(kz_0), \qquad
-\nu=\frac{d}{2}-1.
+G_T(k;z_0,z_0) = z_0^{d-2}K_{\nu}(kz_0)I_{\nu}(kz_0), \qquad \nu=\frac{d}{2}-1.
 \end{align}$$
 
 For non-integer $\nu$,
@@ -1084,33 +1030,29 @@ O_i(x,z_0)=c\,z_0^{2-d}A_i(x,z_0).
 Choosing $c$ to absorb the leading normalization gives the nonlocal part
 
 $$\begin{align}
-\langle J_i(k)J_j(-k)\rangle_{\mathrm{nonlocal}} \propto
-\pi_{ij}(k)k^{d-2}.
+\langle J_i(k)J_j(-k)\rangle_{\mathrm{nonlocal}} \propto \pi_{ij}(k)k^{d-2}.
 \end{align}$$
 
 In position space this is the standard conserved-current two-point function:
 
 $$\begin{align}
-\langle J_i(x)J_j(0)\rangle = C_J\frac{I_{ij}(x)}{|x|^{2(d-1)}}, \qquad
-I_{ij}(x)=\delta_{ij}-2\frac{x_ix_j}{x^2}.
+\langle J_i(x)J_j(0)\rangle = C_J\frac{I_{ij}(x)}{|x|^{2(d-1)}}, \qquad I_{ij}(x)=\delta_{ij}-2\frac{x_ix_j}{x^2}.
 \end{align}$$
 
 Thus the vector result is not zero outside odd $d$. Odd $d$ is only the simplest case because the nonlocal term is a pure power in momentum space.
 
-### Even-dimensional and logarithmic cases
+### Even-Dimensional and Logarithmic Cases
 
 When $\nu=d/2-1$ is an integer, the nonlocal term appears through the logarithmic branch of $K_\nu$:
 
 $$\begin{align}
-\langle J_i(k)J_j(-k)\rangle_{\mathrm{nonlocal}} \propto
-\pi_{ij}(k)k^{d-2}\log k.
+\langle J_i(k)J_j(-k)\rangle_{\mathrm{nonlocal}} \propto \pi_{ij}(k)k^{d-2}\log k.
 \end{align}$$
 
 This is the expected result in even boundary dimension. For example, in AdS$_5$/CFT$_4$ one obtains
 
 $$\begin{align}
-\langle J_i(k)J_j(-k)\rangle_{\mathrm{nonlocal}} \propto
-\pi_{ij}(k)k^2\log k.
+\langle J_i(k)J_j(-k)\rangle_{\mathrm{nonlocal}} \propto \pi_{ij}(k)k^2\log k.
 \end{align}$$
 
 The case $d=2$ is also special. Since $\nu=0$,
@@ -1121,7 +1063,7 @@ K_0(kz)I_0(kz) =-\log z-\log\frac{k}{2}-\gamma+O(z^2\log z).
 
 The formula $c=\sqrt{d-2}$ degenerates at $d=2$, so the $d=2$ case must be renormalized separately. It should not be interpreted as a vanishing correlator.
 
-### Source conservation
+### Source Conservation
 
 The PDF states the source restriction as
 
@@ -1143,7 +1085,7 @@ k^i\langle J_i(k)J_j(-k)\rangle=0.
 
 For $d\ge3$, the coefficient called $b_1$ in the PDF should be fixed by the boundary condition. The $u_2$ branch contains the non-normalizable near-boundary piece, while the extrapolated field $z^{2-d}A_i$ should have a finite boundary limit after counterterms. Setting $b_1=0$ is therefore a boundary-condition choice, not an arbitrary simplification.
 
-### Field-strength coupling
+### Field-Strength Coupling
 
 The second Maxwell construction in the PDF couples the source to
 
@@ -1162,16 +1104,13 @@ so the source does not need to satisfy the same conservation condition as in the
 For a general $\xi(x)$, translation invariance is not diagonal in momentum space; the correlator contains a convolution:
 
 $$\begin{align}
-\langle O_i(k_1)O_j(k_2)\rangle = \int\frac{d^d q}{(2\pi)^d}
-\Xi_{ij}(k_1,k_2;q;\xi)
-G_T(q;z_0,z_0),
+\langle O_i(k_1)O_j(k_2)\rangle = \int\frac{d^d q}{(2\pi)^d} \Xi_{ij}(k_1,k_2;q;\xi) G_T(q;z_0,z_0),
 \end{align}$$
 
 where $\Xi_{ij}$ contains two powers of the internal momentum and two factors of $\xi$. Even when $\xi$ is constant, the tensor structure is schematically
 
 $$\begin{align}
-\langle O_i(k)O_j(-k)\rangle \propto \left(k_i\delta_m{}^a-k_m\delta_i{}^a\right) \left(k_j\delta_n{}^b-k_n\delta_j{}^b\right)
-\xi_a\xi_b\, \pi_{mn}(k)k^{d-2}.
+\langle O_i(k)O_j(-k)\rangle \propto \left(k_i\delta_m{}^a-k_m\delta_i{}^a\right) \left(k_j\delta_n{}^b-k_n\delta_j{}^b\right) \xi_a\xi_b\, \pi_{mn}(k)k^{d-2}.
 \end{align}$$
 
 This has additional momentum factors compared with the direct current correlator. Therefore the conclusion

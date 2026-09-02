@@ -50,7 +50,7 @@ $$\begin{align}
 
 ### Kruskal Regions
 
-Introduce the turtoise coordinate
+Introduce the tortoise coordinate
 
 $$\begin{align}
 r_{*} & := \int ^{r} \dfrac{\mathrm{d}r}{r^{2}-1}=\dfrac{1}{2} \log \dfrac{r-1}{r+1}\in(-\infty,0)

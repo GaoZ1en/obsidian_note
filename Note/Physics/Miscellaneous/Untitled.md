@@ -48,7 +48,7 @@ where $$\Lambda = -\frac{3}{\ell^2}$$ and $$F = dA$$.
 The outer horizon $$r_+$$ satisfies $$\Delta_r(r_+) = 0$$:
 
 $$\begin{align}
-r_+^4 + a^2r_+^2 + \frac{r_+^2(r_+^2+a^2)}{\ell^2} - 2Mr_+ + Q^2 = 0$$ ^cite{Hawking1999}
+r_+^4 + a^2r_+^2 + \frac{r_+^2(r_+^2+a^2)}{\ell^2} - 2Mr_+ + Q^2 = 0
 \end{align}$$
 
 The horizon area is:
