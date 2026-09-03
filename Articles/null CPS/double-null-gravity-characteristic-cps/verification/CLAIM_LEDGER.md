@@ -6,7 +6,7 @@ Allowed status vocabulary:
 
 ## Stage 0
 
-Current development overrides are the Stage-4.5 rows below; earlier Stage-4
+Current development overrides are the Stage-4.6 rows below; earlier Stage-4
 rows retain their historical proof scope. No Stage-0--3 claim is upgraded.
 
 | ID | Claim | Status | Assumptions | Evidence | Remaining boundary |
@@ -180,6 +180,22 @@ torsion-free Riemann/Bianchi identities, not the doubled residual PDE.
 | C45-Einstein | Reduced/completed tangent is bulk (linearized) Einstein | open | 12.10--11 | comparison/wave uniqueness and tangent exhaustion absent |
 | C45-cell | $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ | conditional | 12.11 | reset, Einstein identification and later $C^1$ gates remain |
 
+## Stage 4.6 characteristic split and decisive stop
+
+| ID | Claim | Status | Evidence | Exact boundary |
+|---|---|---|---|---|
+| C46-rows | All eighteen selected Cartan equations and six withheld constraints are explicit in the unchanged $U$ basis | proved | 13.1--3; V93 | lower-order terms retained by 13.(1.5); no closed PDE inferred |
+| C46-source-pivots | Six natural source rows have invertible copy time block and ten complementary rows remain | proved | 13.4; V94 | complementary rows leave six independent Bianchi coordinates free |
+| C46-copy-block | Those six source rows supply six additional local first-order copy evolution equations after Bianchi elimination | false | 13.(4.6)--(5.2); V95 | exact local elimination leaves eighteen equations, with every copy time jet free |
+| C46-evolution | The specified 18+6 route is a genuine 24-component evolution system | false | 13.5; V95 | no valid $A_{\rm evol}$; full zero-row certificate has time rank eighteen |
+| C46-addition | A constant addition of the six Cartan constraints repairs the specified route | false | 13.6; V96--V97 | eighteen rows stay underdetermined; square completion only recombines defective F1 |
+| C46-full-identity | Full eliminated exterior compatibility is $M(\partial_3\partial_4-\partial_1^2-\partial_2^2)C$ | proved | 13.(7.2); V98 | exact frozen polynomial identity, $M$ invertible; not a wave uniqueness theorem |
+| C46-transport | Bare exterior identity implies homogeneous transport of all six full constraints from the eighteen equations alone | false | 13.(7.3) and explicit counterexample; V98 | six copy-wave forcings remain; correctly placed Stage-4.3 incoming zeros are insufficient alone |
+| C46-matrix-checks | All full rational matrices, elimination, Jordan comparator and compatibility identities reproduce | checked symbolically | Python/SymPy 34/34; independent Mathematica 15/15 | same Stage-4.5 input construction, independent arithmetic; not variable-coefficient PDE evidence |
+| C46-comparison | Quantitative fixed-reference Cabet build-up/comparison identifies reduced developments as Einstein | open | selected next theorem, 13.8 | tested first-order program exhausted for this project; no further first-order variants or assigned loss |
+| C46-Einstein | Bulk/tangent Einstein identification and full reset | open | 13.8 and prior individual open gates | finite-regularity uniqueness and the reset estimate remain absent |
+| C46-later | $P_{\rm cell}^k$, $P_{\rm rect}^{s,r}$ | conditional | 13.8 | no nonlinear $C^1$, moving cut, finite-grid continuation or quantization |
+
 ## Verification ledger
 
 | ID | Check | Evidence type | Evidence boundary |
@@ -267,5 +283,8 @@ topology theorem.
 | V85--V88 | All copy-principal rows, $J$, extended-curvature decomposition and all 24 Cartan rows | exact SymPy rational regression | full printed convention; no variable-coefficient estimate |
 | V89 | Full F1 symbol, $\det A_t=2$ and defective radial $-1$ eigenspace | exact SymPy rational matrix regression | disproves positive F1 symmetrizer at Minkowski |
 | V90 | Full F2 matrices and 16 zero B derivative columns | exact SymPy rational matrix regression | disproves strict positive timelike F2 flux |
-| V91 | Six exterior-of-exterior Cartan constraint identities | exact SymPy rational regression | principal propagation only; lower-order analytic terms remain homogeneous |
+| V91 | Six bare exterior-of-exterior Cartan identities | exact SymPy rational regression | does not include differentiated $H_B\mathbf B$; full eliminated propagation is corrected in 13.7 |
 | V92 | B antisymmetry, Weyl cyclic identity and B trace | xAct canonical_contract | three zero tensor residuals; not dimension or PDE uniqueness |
+| V93--V95 | Full characteristic rows, source 6+10 decomposition, exact Schur elimination and time-rank obstruction | exact SymPy rational regression, independently checked with Mathematica | no independent local six-row copy block; no genuine evolution matrix |
+| V96--V97 | Inherited F1 Jordan data and one arbitrary constant constraint-addition family | exact rational/symbolic matrix identities | normalized F1 symbol unchanged by invertible square recombination; no parameter sampling |
+| V98 | Bare exterior identity, full copy-wave compatibility and evolution-shell counterexample | exact polynomial identity, independently checked with Mathematica | does not prove a closed wave subsidiary system or bulk uniqueness |

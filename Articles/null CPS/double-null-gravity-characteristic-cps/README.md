@@ -28,7 +28,16 @@ the full $24\times24$ and $40\times40$ symbols, and proves a negative
 result: the curvature-only radial symbol has a defective $-1$ eigenspace,
 while the mixed symbol has sixteen zero Bianchi-derivative columns.  Hence
 no positive first-order symmetrizer exists for either formulation.  The
-project now pivots to a quantitative Cabet build-up/comparison theorem; no
+Stage-4.5 conclusions apply specifically to F1/F2. Stage 4.6 tests the
+remaining specified eighteen-row characteristic selection: the six source
+candidates still contain six free Bianchi components, and exact elimination
+leaves time rank eighteen, not a twenty-four-component evolution system.
+The full constraint identity contains six copy-wave forcings; the bare
+exterior identity alone does not propagate the full constraints. One
+constant constraint-addition family cannot restore the missing rank, and
+appending the constraints only restores the defective F1 symbol. The tested
+direct first-order routes are now exhausted for this project. The selected
+next route is quantitative fixed-reference Cabet build-up/comparison; no
 bulk subsidiary loss is assigned and no Einstein/reset/$C^1$ claim is
 upgraded.
 
@@ -194,6 +203,13 @@ post-CIVP construction belongs here.
 - `calculations/12-stage4.5-extended-curvature-hodge-subsidiary.md`: full
   extended-curvature/Hodge component audit, all principal matrices and the
   frozen Jordan obstruction to a positive first-order symmetrizer.
+- `calculations/13-stage4.6-characteristic-subsidiary-split.md`: all eighteen
+  selected equations, six constraints, exact source 6+10 elimination,
+  rank-eighteen obstruction and corrected full constraint identity.
+- `scripts/stage46_characteristic_split_checks.py` and
+  `scripts/stage46_characteristic_split_crosscheck.wl`: full rational
+  matrices and independent Mathematica arithmetic; results in
+  `verification/stage46_component_results.md`.
 - `verification/SOURCE_ROW_LEDGER.md`: every frame, connection, Bianchi,
   gauge/type and copy row with sheet incidence, corner value and evidence.
 - `verification/STAGE1_AUDIT_SUMMARY.md`: concise proved/conditional/open
@@ -274,7 +290,7 @@ $\ell_{\rm sub}$, bulk Einstein identification,
 linearized tangent identification, reset loss and one-cell $C^1$ remain
 unassigned.  $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional.
 
-## Current Stage-4.5 verdict
+## Historical Stage-4.5 verdict
 
 The six formerly omitted rows are $(124;12,13,23)$ in the $\mathcal P$
 sector and $(123;14,24,34)$ in the $\mathcal Q$ sector.  The explicit
@@ -288,6 +304,24 @@ $40\times40$ differential-algebraic system with sixteen zero derivative
 columns.  Stage 4.5 stops under G.4 and selects the quantitative Cabet
 comparison route.  No $\ell_{\rm sub}$, Einstein identification, reset,
 $C^1$, finite grid or quantization follows.
+
+## Current Stage-4.6 verdict
+
+The prescribed 18+6 route fails at Part B. The time-pivot source rows are
+A.36b$_{1,2}$ and A.38a--b/c$_{1,2}$, but the ten complementary rows
+leave six Bianchi coordinates free. Eliminating all sixteen Bianchi
+coordinates gives only eighteen independent equations for $(K_{\rm src,con},C)$.
+Every copy time jet remains free; no genuine $24\times24$ evolution matrix
+is obtained. One constant addition of the six withheld constraints cannot
+repair the rank; using all six as additional equations is row-equivalent
+to F1 and preserves its Jordan obstruction. Calculation 13.8 contains all
+nine required verdicts. Exact checks: Python/SymPy 34/34, independent
+Mathematica 15/15. These are algebraic checks, not a finite-regularity PDE
+theorem. The direct first-order program is closed for this project;
+quantitative fixed-reference Cabet build-up/comparison is the next selected
+gate. No further first-order variants, reset, nonlinear $C^1$, finite grid
+or quantization are started, and both $P_{\rm cell}^k$ and
+$P_{\rm rect}^{s,r}$ remain conditional.
 
 ## Historical Stage-4.2 required verdict
 

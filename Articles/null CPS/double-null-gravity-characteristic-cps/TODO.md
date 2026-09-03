@@ -1,13 +1,19 @@
 # Immediate Research Tasks
 
-**Stage 4.5 theorem boundary.** Stages 0--3 stay classical.
+**Stage 4.6 theorem boundary.** Stages 0--3 stay classical.
 Initial completion and local reduced restart are proved in calculation 10.
 The exhaustive source ledger and direct plus-sheet audit are closed.
 Calculation 12 repairs the six missing Cartan rows and constructs the full
 $24\times24$ curvature-only and $40\times40$ mixed principal matrices.
 The first has a defective radial Jordan block and the second has sixteen
 zero Bianchi-derivative columns, so neither admits the required positive
-first-order symmetrizer.  No $\ell_{\rm sub}$ is assigned.  The selected
+first-order symmetrizer. Calculation 13 additionally rejects the specified
+18+6 characteristic route at Part B: source elimination leaves time rank
+eighteen, and the full constraint identity retains six copy-wave forcings.
+One constant constraint-addition family does not repair the rank; a square
+completion using the constraints only returns F1. The tested direct
+first-order routes are exhausted for this project; do not propose Stage-4.7
+first-order variants. No $\ell_{\rm sub}$ is assigned. The selected
 replacement gate is a quantitative fixed-reference Cabet
 build-up/comparison theorem.  Full project reset and bulk Einstein
 identification remain open.
@@ -42,19 +48,27 @@ No quantization or finite-grid continuation.
 - [x] Test the positive first-order symmetrizer. **Negative result:** F1 has
   two nontrivial radial Jordan directions and F2 has sixteen zero derivative
   columns. Check: 12.8--9; V89--V90. Do not assign $\ell_{\rm sub}$.
-- [ ] **First bulk lemma after the G.4 pivot:** prove a quantitative
+- [x] Perform one bounded Stage-4.6 characteristic 18+6 diagnostic.
+  **Negative result:** no independent six-equation copy block after local
+  Bianchi elimination; time rank eighteen. Record all rows, full matrices,
+  the one constant constraint family and the full copy-wave compatibility
+  identity. Check: calculation 13; V93--V98, 34/34 Python and 15/15
+  Mathematica checks. Bare exterior identities do not prove full constraint
+  transport. Close the tested direct first-order program for this project.
+- [ ] **Next selected bulk lemma after Stage 4.6:** prove a quantitative
   fixed-reference Cabet build-up/comparison theorem at finite regularity:
   construct the geometric vacuum development, put it in the identical
   source gauge/copy convention, and prove common-cell equality with explicit
   Sobolev orders and coefficient/density margins.
-- [ ] **First reset lemma:** prove 10.(7.6), the complete moving-cut,
+- [ ] **Deferred until bulk identification and a later user request:** the
+  first reset lemma is 10.(7.6), the complete moving-cut,
   inverse-graph and label-composition estimate for
   $\zeta-HD f+\kappa Df+D_{\rm new}\log a$, with every required generator
   jet and endpoint trace. Derive, do not assign, $\ell_{\rm reset}$.
 - [ ] **Independent Einstein gate:** complete the quantitative comparison
   theorem above (or a separately proved second-order wave subsidiary
   system).  Initial-sheet ODE uniqueness, the Cartan identities, and
-  V73--V92 are not this theorem; reduced output cannot yet be called
+  V73--V98 are not this theorem; reduced output cannot yet be called
   geometric vacuum data.
 - [ ] Only after these gates, construct the Einstein tangent lift and bound
   every source in 08.(5.2). Do not identify the completion remainder with

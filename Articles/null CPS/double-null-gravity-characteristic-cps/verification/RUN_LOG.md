@@ -1,5 +1,68 @@
 # Verification Run Log
 
+## 2026-09-03 - Stage 4.6 characteristic subsidiary split
+
+Continued the clean existing `codex/double-null-gravity-cps` worktree at
+`cb0c55f3bb96a406c673f66967e0d84ce7b0222c`. Changes are confined to this
+project. The unrelated main Note worktree was not edited. No commit or
+push was performed in this run.
+
+Read calculations 10--12, the Stage-4.5 exact constructors and the current
+claim/development ledgers. Preserved the source copy convention and the
+24-component unknown order. Calculation 13 records every selected Cartan
+row, every withheld constraint, the exact source 6+10 rank decomposition,
+retained lower-order residual terms and the decisive local elimination
+argument. Calculation 12 now limits its negative verdict to F1/F2 and
+distinguishes its bare exterior identity from full source-coupled
+constraint propagation.
+
+Executed with SymPy through Sage Python:
+
+```sh
+rtk proxy sage -python scripts/stage46_characteristic_split_checks.py
+```
+
+Result: **34/34 PASS**, V93--V98. The full source, Hodge, Cartan and
+eliminated matrices are constructed exactly. The `--json` and `--wolfram`
+exports were generated in the task's `work/` directory. The selected source
+time pivots have rank six, but their complementary ten rows leave six
+Bianchi coordinates free. The mixed time matrix has rank 34 in 40 columns;
+exact Schur elimination leaves a rank-eighteen evolution time matrix with
+all six copy time jets free. The full square zero-row certificate is
+singular. These are the Part-B5 failure, not a new evolution formulation.
+
+Executed the saved `scripts/stage46_characteristic_split_crosscheck.wl`
+through the Mathematica MCP on the exported full rational matrices:
+**15/15 PASS**, with no error messages in returned output. This independently
+checks the arithmetic, not the source transcription. The one constant
+constraint-addition family is checked symbolically for all its entries;
+no parameter hunt was made. Any square completion using the six withheld
+constraints only recombines F1, preserving its radial Jordan obstruction.
+
+The bare six exterior-of-exterior identities vanish, but the full
+eliminated identity is $M(\partial_3\partial_4-\partial_1^2-\partial_2^2)C$
+with invertible $M$. An explicit time-only evolution-shell example shows
+zero constraints at $t=0$ with nonzero time derivative. Thus the eighteen
+rows alone do not propagate the full constraints homogeneously. Stage-4.3
+zero tangential/corner data are correctly placed on $N_+$ for the
+$124;\mathcal P$ constraints and on $N_-$ for $123;\mathcal Q$; those data
+do not supply the missing bulk equation. Details and development-time
+failed-check correction are in `stage46_component_results.md`.
+
+Final checks: the full `--dump-full` run also passed 34/34; the unchanged
+Stage-4.5 script passed 37/37. All eighteen manuscript principal equations
+and six displayed constraint formulas were parsed and compared with the
+generated full matrices: 24/24 matched. Scoped whitespace checks passed.
+
+**Decision:** the tested direct first-order program (F1, F2 and this
+specified characteristic split) is exhausted for this project. The next
+selected route is quantitative fixed-reference Cabet build-up/comparison;
+second-order wave subsidiary is only an alternative. No Stage-4.7
+first-order variants are introduced. No variable-coefficient theorem,
+subsidiary loss, bulk/tangent Einstein identification, reset, nonlinear
+$C^1$, finite-grid continuation or quantization follows.
+$P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional.
+
 ## 2026-09-01 - Stage 4.5 extended-curvature/Hodge subsidiary audit
 
 Continued the clean `codex/double-null-gravity-cps` worktree at

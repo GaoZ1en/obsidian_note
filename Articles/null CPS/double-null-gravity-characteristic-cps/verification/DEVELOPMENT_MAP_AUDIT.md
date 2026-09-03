@@ -25,6 +25,17 @@ exists for either.  The selected next gate is a quantitative Cabet
 build-up/comparison theorem.  Therefore no bulk uniqueness theorem or
 $\ell_{\rm sub}$ is available.
 
+Stage 4.6 performs the remaining specified characteristic 18+6 diagnostic
+in calculation 13. It fails at Part B: the six source time pivots still
+contain six independent Bianchi components after the ten complementary
+relations. Full local elimination leaves time rank eighteen. The one
+constant constraint-addition family cannot repair this; reinstating six
+constraints returns the defective F1 symbol. The full constraint identity
+has six copy-wave forcings, so the bare exterior identity does not close
+bulk transport. The tested direct first-order program is exhausted for this
+project. Quantitative fixed-reference Cabet comparison remains the selected
+next theorem; no Stage-4.7 first-order variants are proposed.
+
 ## Authoritative status table
 
 Allowed statuses: proved / checked symbolically / conditional / open / false.
@@ -90,12 +101,13 @@ The outgoing reduced data also require a bulk Einstein/copy/metricity
 propagation theorem before they can be used as geometric vacuum data.
 Linearized Einstein existence and the quadratic evolution remainder remain
 independent gates for $P_{\rm cell}^k$; completion remainder is not evolution
-remainder. Calculation 12 proves that the proposed F1/F2 positive
-first-order symmetrizers do not exist.  The next Einstein-identification
-step is therefore the quantitative fixed-reference Cabet
-build-up/comparison theorem in 12.10 (or a separately proved second-order
-wave subsidiary system).  The residual vector, Cartan identities and frozen
-regressions alone are not that theorem, and reduced uniqueness is not
+remainder. Calculation 12 proves specifically that the F1/F2 positive
+first-order symmetrizers do not exist. Calculation 13 separately rules out
+the prescribed characteristic 18+6 split by local elimination. The next
+Einstein-identification step is the quantitative fixed-reference Cabet
+build-up/comparison theorem in 13.8; a separately proved second-order
+wave subsidiary system remains only an alternative. The residual vector,
+Cartan identities and frozen regressions alone are not that theorem, and reduced uniqueness is not
 substituted for it.
 
 Only after these gates may a prescribed-rectangle argument be considered.
@@ -202,3 +214,18 @@ V80--V92 are exact finite-component and xAct regressions.  The negative
 Jordan/rank results rule out the proposed first-order symmetrizers; they do
 not prove the replacement comparison theorem.  No reset, one-cell,
 rectangle, finite-grid or quantum claim is promoted.
+
+## Stage 4.6 characteristic evolution/constraint diagnostic
+
+| ID | Claim | Status | Evidence | Boundary |
+|---|---|---|---|---|
+| D46-selection | All eighteen selected rows and six constraints in the exact Stage-4.5 basis | proved | 13.1--3; V93 | full lower-order residual terms retained separately |
+| D46-source | Source 6+10 decomposition gives an independent local six-equation copy evolution block | false | 13.4; V94--V95 | six Bianchi coordinates survive the ten relations; algebraic elimination leaves only eighteen equations |
+| D46-time | The specified split has an invertible 24-component time matrix | false | 13.5; V95 | no genuine matrix obtained; full zero-row certificate has rank eighteen |
+| D46-addition | Constant Cartan-constraint addition repairs the split | false | 13.6; V96--V97 | eighteen rows remain; appending constraints is row-equivalent to F1, defective at real radial covector |
+| D46-identity | Full constraint propagation follows homogeneously from eighteen evolution equations | false | 13.7; V98 | copy-wave terms survive; bare $d^2=0$ is insufficient |
+| D46-incoming | Stage-4.3 supplies zero incoming/corner tangential constraints on the appropriate sheets | proved | 10.4; 13.7 | $124;\mathcal P$ starts on $N_+$, $123;\mathcal Q$ on $N_-$; no bulk theorem inferred |
+| D46-checks | Full rational matrix, elimination and compatibility checks | checked symbolically | 34/34 Python, 15/15 Mathematica; `stage46_component_results.md` | exact component statements only |
+| D46-comparison | Quantitative fixed-reference Cabet build-up/comparison | open | next selected route, 13.8 | current tested first-order program exhausted; no universal no-go for all reductions |
+| D46-Einstein | Bulk/linearized Einstein identification | open | 13.8 | finite-regularity uniqueness and tangent/gauge gates remain unproved |
+| D46-later | $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ | conditional | 13.8 | bulk, reset and later nonlinear $C^1$ gates remain |

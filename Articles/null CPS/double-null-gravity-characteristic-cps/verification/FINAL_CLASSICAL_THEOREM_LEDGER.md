@@ -26,7 +26,13 @@ reduced difference loss $2r+1$ and a local reduced
 $I^{2k+8}\to I^k$ restart theorem. Full affine reset and bulk Einstein
 constraint propagation remain open.  Stage 4.5 proves that the proposed
 first-order F1/F2 residual formulations have no positive symmetrizer and
-pivots to a quantitative Cabet comparison theorem; no
+pivots to a quantitative Cabet comparison theorem. Stage 4.6 separately
+rejects the specified characteristic 18+6 split at Part B: local Bianchi
+elimination leaves eighteen equations with six free copy time jets.
+The one constant constraint-addition family cannot repair this, and full
+constraint transport retains copy-wave forcing. The tested direct
+first-order program is exhausted for this project; quantitative
+fixed-reference Cabet comparison is the next selected gate. No
 $\ell_{\rm sub}$ is assigned.  The first reset estimate is 10.(7.6).
 $P_{\rm cell}^k$ and $P_{\rm rect}^{s,r}$ remain conditional. Extended
 abstract ports still require the separate action-derived $P_{\rm red}$.
@@ -301,6 +307,16 @@ symmetrizer does not exist.  The project pivots to a quantitative Cabet
 build-up/comparison theorem, which is still open.  No $\ell_{\rm sub}$ or
 Einstein identification is promoted.
 
+Calculation 13 gives the bounded Stage-4.6 diagnostic in the unchanged
+24-component basis. The six natural source pivots leave six independent
+Bianchi coordinates after the ten complementary relations; exact local
+elimination supplies only eighteen evolution equations. Reinstating the
+six Cartan constraints is a row-equivalent F1 system and retains its Jordan
+obstruction. The bare exterior identity must be distinguished from the
+full constraint identity, whose forcing is an invertible map of six copy
+wave operators. This is a negative local first-order result, not a proved
+wave system or quantitative comparison theorem.
+
 The authoritative detailed statements are calculations 06--10 and
 `DEVELOPMENT_MAP_AUDIT.md`. The core map is an equivalence in the smooth
 category onto the slice $\mathcal F$ defined by $a_\pm[m]=\sqrt2e^{m/2}$
@@ -430,8 +446,10 @@ closing-wall action.
 ## 6. Open items and continuation rule
 
 1. Complete the quantitative fixed-reference Cabet build-up/comparison
-   theorem selected in 12.10 (or a separately proved second-order wave
-   subsidiary system).  The first-order F1/F2 symmetrizer route is false;
+   theorem selected in 13.8. A second-order wave subsidiary theorem is only
+   an alternative. The tested first-order routes F1, F2 and the specified
+   Stage-4.6 characteristic split are exhausted for this project; do not
+   propose Stage-4.7 first-order variants. In particular,
    no $\ell_{\rm sub}$ is assigned before the replacement gate closes;
 2. Only after bulk Einstein identification, complete the refoliated
    affine-reset estimate 10.(7.6), its inverse graph/label compositions and
@@ -494,3 +512,16 @@ one-cell theorem or rectangle closed.
 | Quantitative Cabet build-up/comparison pivot | open | fixed-reference finite regularity and loss not yet proved |
 | Bulk/linearized Einstein identification and tangent surjectivity | open/conditional | no comparison/wave uniqueness; exhaustion separately absent |
 | Reset, $P_{\rm cell}^k$, $P_{\rm rect}^{s,r}$ | open/conditional | no moving cut, nonlinear $C^1$, finite grid or quantization |
+
+### Stage-4.6 current theorem list
+
+| Claim | Status | Precise scope |
+|---|---|---|
+| Exact eighteen evolution rows, six constraints and source 6+10 rank decomposition | proved | 13.1--4; unchanged Stage-4.5 basis and source copy convention |
+| Independent local six-equation copy block completing those eighteen rows | false | full elimination leaves time rank eighteen; six arbitrary copy time jets |
+| Genuine 24-component characteristic evolution and positive time energy | false | no valid square evolution matrix; the documented zero-row certificate is singular |
+| One constant constraint addition repairs the obstruction | false | 13.6; rank bound or row-equivalent defective F1, for the entire constant family |
+| Six full constraints propagate homogeneously from the eighteen equations alone | false | 13.(7.3); copy-wave forcing survives; explicit evolution-shell counterexample |
+| Full rational matrix and compatibility checks | checked symbolically | Python 34/34, Mathematica 15/15; exact algebra only |
+| Quantitative fixed-reference Cabet comparison and finite-regularity uniqueness | open | next selected route; no further first-order variants in this project |
+| Bulk/tangent Einstein identification, reset, $P_{\rm cell}^k$, $P_{\rm rect}^{s,r}$ | open/conditional | no theorem upgrade, derivative-loss assignment, nonlinear $C^1$, finite grid or quantization |

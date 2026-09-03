@@ -1,5 +1,27 @@
 # Verification scripts
 
+## Stage 4.6
+
+Run `rtk proxy sage -python scripts/stage46_characteristic_split_checks.py`.
+V93--V98 give 34 exact checks of the full 18+6 Cartan split, the source
+6+10 decomposition, the local rank obstruction, the inherited F1 Jordan
+data, one constant constraint-addition family and the full copy-wave
+compatibility identity. All unknowns and row orderings are printed.
+
+`--dump-full` prints every rational matrix. `--json PATH` saves them with
+metadata, and `--wolfram PATH` exports all matrices for independent exact
+arithmetic. After the Wolfram export, run
+`rtk proxy wolframscript -file scripts/stage46_characteristic_split_crosscheck.wl PATH`.
+The Mathematica MCP can also execute the saved check after setting
+`stage46MatrixFile` to the exported path. All 15 checks must pass.
+
+The Part-B5 stop means no genuine new $24\times24$ evolution matrix exists:
+the documented square padding has six zero rows and time rank eighteen.
+F1 matrices are retained only as the inherited comparator. Full constraint
+transport contains six copy-wave forcings; bare exterior identities alone
+do not close it. These are algebraic results, not a wave or comparison PDE
+theorem. See `verification/stage46_component_results.md` and calculation 13.
+
 ## Stage 4.5
 
 Run the exact SymPy component generator through the available Sage Python:

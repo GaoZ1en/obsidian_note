@@ -28,10 +28,12 @@ $40\times40$ formulation has sixteen identically zero derivative columns,
 one for every independent $\mathcal B$ component, and its timelike matrix
 has rank only twenty-four.
 
-Therefore the first-order Hodge-Dirac route is **false in this formulation**.
-Part G.4 is triggered.  The selected pivot is a quantitative,
-fixed-reference Cabet build-up/comparison theorem, not a forced
-symmetrizer.  No variable-coefficient subsidiary theorem, no
+These negative results concern **F1 and F2 only**. Stage 4.5 does not
+exclude an eighteen-row characteristic selection supplemented by an
+independent six-row copy evolution block. Calculation 13 performs that
+separate Stage-4.6 diagnostic and records its Part-B elimination obstruction.
+The historical G.4 pivot selects a quantitative, fixed-reference Cabet
+build-up/comparison theorem. No variable-coefficient subsidiary theorem, no
 $\ell_{\rm sub}$, and no nonlinear or linearized Einstein identification
 are claimed here.  Moving-cut reset, nonlinear $C^1$, finite-grid
 continuation and quantization remain gated.  Both $P_{\rm cell}^k$ and
@@ -156,12 +158,14 @@ $$
  E_{ijk}:=(D\mathcal K)_{ijk}.
  \tag{2.7}
 $$
-Thus an eighteen-row characteristic subsystem would propagate the three
-$\mathcal P$ constraints along $e_3$ and the three $\mathcal Q$
-constraints along $e_4$, with curvature/connection commutators as
-homogeneous lower-order terms.  V91 checks all six principal identities.
-The formulation actually tested below instead retains all twenty-four
-rows simultaneously.
+For the bare exterior operator, vanishing of the eighteen selected rows
+would propagate the three $\mathcal P$ rows along $e_3$ and the three
+$\mathcal Q$ rows along $e_4$. V91 checks only this bare identity. The
+actual equations also contain $H_B\mathbf B$; differentiating it is not a
+lower-order commutator. Calculation 13.7 shows that, after source elimination,
+six copy-wave terms remain, so (2.7) alone does not establish homogeneous
+propagation for the full eighteen-row subsystem. The formulation tested
+below retains all twenty-four rows simultaneously.
 
 ## 3. Source and physical Weyl extractors
 
@@ -625,7 +629,9 @@ regression and not yet proved here.  A second-order wave residual system
 remains an alternative, but is not mixed into the selected comparison
 route.
 
-Because (9.4) stops the first-order route, Parts H and I are not entered:
+Because (9.4) stops F1 and F2 already fails the time-rank test, Stage-4.5
+Parts H and I are not entered. This does not preempt the distinct
+characteristic diagnostic in calculation 13:
 
 - no fixed-reference subsidiary energy estimate is asserted;
 - $\ell_{\rm sub}$ is unassigned;
@@ -640,9 +646,9 @@ Because (9.4) stops the first-order route, Parts H and I are not entered:
 ## 11. Required Stage-4.5 verdicts
 
 1. **Six omitted components:** (2.3) and (2.5).  They are retained in the
-   full twenty-four-row spacelike-time system; (2.7) also gives their
-   homogeneous principal propagation identities if one uses the
-   eighteen-row characteristic subsystem.
+   full twenty-four-row spacelike-time system; (2.7) gives the bare
+   exterior identities. Full source-coupled constraint propagation requires
+   the additional compatibility terms identified in calculation 13.7.
 2. **$d_{\rm src}-d_{\rm phys}=JC$:** explicitly proved component by
    component in (3.5)--(3.6), with full rank-six machine comparison.
 3. **Bianchi bundle/Hodge map:** explicitly fixed by (4.2)--(4.7);
