@@ -6,13 +6,13 @@ Phases follow `roadmap.md`. Within a phase, items are ordered by what blocks wha
 
 ### History-Indexed Observable Algebra Track
 
-- [x] Action: close enriched boundary-response CCR composition in the two/three-interval benchmark in `history-indexed observable algebra gluing.md`.
-  Context: Sections 2–6 define the affine source quotient/local net, source/history transports and response sections, recover all four regional response blocks from scalar derivatives, and define sewing by causal relation elimination followed by universal CCR reconstruction. The full-energy extension has a separate interval proof.
-  Check: Sections 7.1–7.2 recover cross-interface and same-side CCR corrections; Sections 7.3–7.6 retain the middle region's two ports, prove equality of staged/simultaneous causal relations and all response blocks, and define the intrinsic associator on regional source generators. Mathematica checks the corresponding algebraic identities, not the analytic domains.
+- [x] Action: prove smooth enriched boundary-response CCR partial composition in the two/three-interval benchmark in `history-indexed observable algebra gluing.md`.
+  Context: Sections 2–6 distinguish control sources from observable smearings, give the affine Weyl trivialization, and reconstruct response as an equivalent encoding of specified causal transports/response sections. Bare Weyl multiplication alone does not determine Green/response data.
+  Check: Sections 7.3–7.6 prove smooth enriched-system associativity; the final full-energy CCR associator is proved separately after unique bulk-source extension. Neither result proves rough-history full-energy enriched-category closure. Symbolic phase/Schur identities do not prove analytic domains.
 
-- [ ] Action: if extending this track, prove the new boundary-control and partial-composition domains before claiming the interval theorem in higher dimensions or rough-history categories.
-  Context: bare field-preserving fusion of fixed-history on-shell algebras is already excluded by K1 and same-side correction. The positive target is enriched CCR composition/deformation. Crossed-product, cotensor and Connes-fusion realizations, and Gap B/C's module interpretations, remain separate representation theorem candidates.
-  Check: state source/history dualities, conormal estimates, causal graph existence/uniqueness and closure under partial elimination; alternatively provide an explicit representation with physical field generators reproducing the established cross/same-side corrections. Do not replace the current composition definition by a candidate product name.
+- [ ] Action: keep the remaining enriched-composition gates explicitly open until separately constructed and proved.
+  Context: rough-history full-energy enriched-category closure, a sewing identity/cylinder object, naturality, 4-cell coherence/pentagon and a general finite-graph domain theorem are not established by the three-interval result. This audit does not advance these gates.
+  Check: require the corresponding control spaces, response maps, intermediate domain closure and structural diagrams before changing their labels. Bare field-preserving fusion is already excluded; crossed-product/cotensor/Connes realizations and Gap B/C's module interpretations remain separate representation theorem candidates.
 
 ### Foundation
 

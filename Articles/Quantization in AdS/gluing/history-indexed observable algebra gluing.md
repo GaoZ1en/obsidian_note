@@ -2,18 +2,20 @@
 
 研究起点：2026-09-03。本文独立于 `Weyl algebra factorization.md`；先定义对象、实施 kill tests，再给出有明确输入的 continuum theorem。
 
-**结论先行。** 本文在 free massive scalar 的两段及三段 interval 范畴中证明以下闭合链：
+**结论先行。** 本文在 free massive scalar 的两段及三段 interval 模型中构造 **boundary-controlled affine CCR system** 的 partial compositional structure。以下第一步是 enriched quantum structure 中因果响应的 **response tomography / equivalent encoding**，并非 bare Weyl multiplication 单独决定 Green/response：
 
 $$
 \boxed{
 (\text{affine CCR fibers}+\Phi+T^{R/A}+R+\text{local net})
-\ \Longrightarrow\ (G,H,\rho,D)^{R/A}
+\ \xrightarrow{\text{response tomography}}\ (G,H,\rho,D)^{R/A}
 \ \Longrightarrow\ \text{causal interface elimination}
 \ \Longrightarrow\ \mathfrak A_{\rm sew}
 \ \xrightarrow[\cong]{\operatorname{Ass}_*}\ \mathfrak A_M.}
 $$
 
-三段中间区域保留两个 ports，逐次消元与 simultaneous relation 相同，由 regional source flattening 定义 intrinsic CCR associator。这里的正目标是 **enriched boundary-response CCR composition/deformation**。bare fixed-history on-shell algebras 的 ordinary field-preserving fusion 已被 same-side/cross-interface CCR correction 排除，列为 negative/no-go；crossed product、cotensor 和 Connes fusion 仅是未来 representation theorem candidates。smooth transport/response 与 full-energy Weyl 层分别声明，后者依赖本 interval 的解析延拓证明。
+三段中间区域保留两个 ports，逐次消元与 simultaneous relation 相同，由 observable-smearing flattening 定义 intrinsic CCR associator。结论分三层：**smooth enriched-system associativity proved**；**final full-energy CCR associator after unique bulk-source extension proved**；**rough-history full-energy enriched-category closure open**。第二层先完成 smooth sewing，再唯一延拓最终 bulk kernels，不要求第一次 sewing 已输出一个可接受任意 rough history 的 enriched system。
+
+这里的正目标是 **enriched boundary-response CCR composition/deformation**。指定 causal transports 与 action-derived response sections 是输入的一部分；在固定模型、测试配对和支撑/定义域约定下，它们与 regional causal response matrix 等价地编码线性响应。bare fixed-history on-shell algebras 的 ordinary field-preserving fusion 已被 same-side/cross-interface CCR correction 排除，列为 negative/no-go；crossed product、cotensor 和 Connes fusion 仅是未来 representation theorem candidates。本文尚未构成完整 monoidal/category formalism：sewing identity object、naturality、4-cell coherence/pentagon、一般有限图 domain theorem 均为 open。
 
 本文用 **proved** 表示在逐条声明的模型和范畴内有下文证明；**conditional** 表示蕴含关系成立而应用所需的解析或结构前提未完成；**open** 表示尚无构造或证明；**false** 表示给出反例。**Checked symbolically** 只指末节列出的恒等式，不能代替这些等级。
 
@@ -70,10 +72,25 @@ $L_i=-P=\partial_t^2-\partial_y^2+m^2$，并用 **$L_i\phi=j$** 定义 bulk sour
 先声明一张可计算的 smooth chart。单元为空间闭区间 $\overline\Sigma_i$；人工端点集合为 $B_i$，物理端点固定为零。取
 
 $$
-\mathscr T_i=C_c^\infty(\mathbb R;C^\infty(\overline\Sigma_i;\mathbb R)),\qquad
-\mathscr H_{i,c}=C_c^\infty(\mathbb R;\mathbb R^{B_i}),\qquad
-\mathscr B_{i,c}=\mathscr T_i\oplus\mathscr H_{i,c}.
+\begin{aligned}
+\mathscr J_i&=C_c^\infty(\mathbb R;C^\infty(\overline\Sigma_i;\mathbb R))_{\rm control},\\
+\mathscr F_i&=C_c^\infty(\mathbb R;C^\infty(\overline\Sigma_i;\mathbb R))_{\rm observable},\\
+\mathscr H_{i,c}&=C_c^\infty(\mathbb R;\mathbb R^{B_i}),\qquad
+\mathscr B_{i,c}=\mathscr J_i\oplus\mathscr H_{i,c}.
+\end{aligned}
 $$
+
+$j,k\in\mathscr J_i$ 是 background/control source 及其变化方向，改变方程与 fiber；$f,g\in\mathscr F_i$ 是 observable smearings，标记同一 fiber 上的函数。两者是不同角色的空间。本实 scalar 模型已固定 $dt\,dy$ 与实纤维度量，因此有保持同一函数系数的 canonical pairing identification
+
+$$
+\iota_i:\mathscr J_i\xrightarrow{\cong}\mathscr F_i,\qquad
+\langle\iota_i j,\phi\rangle_i=\int dt\,dy\,j\phi.
+$$
+
+它相对于上述体积元/标量配对 canonical，不把 $\mathscr F_i$ 称作 $\mathscr J_i$ 的整个拓扑对偶，也不把 $j$ 量子化。$G^{R/A},\rho^{R/A}$ 的控制输入属于 $\mathscr J_i$；在 observable/Green pairing 中约定
+$G^\epsilon f:=G^\epsilon\iota_i^{-1}f$、$\rho^\epsilon f:=\rho^\epsilon\iota_i^{-1}f$，因而
+$E_{i,D}f=(G_{i,D}^A-G_{i,D}^R)\iota_i^{-1}f$。
+pc/fc 与下文 energy 层分别使用同样 identification，direct sums 逐分量使用它。写 $\langle j,u\rangle_i$ 时只是 $\langle\iota_i j,u\rangle_i$ 的配对简写；field map 的参数始终在 $\mathscr F_i$。
 
 这里 compact 指统一的紧时间支撑；bulk sources 可触及空间端点。内部局域 observables 另以 compact spacetime support 定义，不把两类支撑混同。为容纳消元后持续传播的 interface histories，也声明 $\mathscr B_{i,\mathrm{pc}}$、$\mathscr B_{i,\mathrm{fc}}$：同样 smooth，分别在某一整段过去、未来恒为零，不要求另一方向 compact。$\mathrm{pc}/\mathrm{fc}$ 在这里仅指时间单侧支撑。各有限时间 slab 上使用通常 smooth seminorms，不声称 rough-history bundle theorem。
 
@@ -108,18 +125,18 @@ $\partial_t^2\phi=(\partial_y^2-m^2)\phi+j$
 
 ### 2.2 Affine source quotient and regional local net
 
-本文指定的 physical source-labelled affine space 是
+本文指定的 observable-smearing-labelled affine space（沿用 source quotient 的名称）是
 
 $$
 \begin{aligned}
 F_{c,f}(\phi)&=c+\langle f,\phi\rangle_i,\qquad
 \langle f,\phi\rangle_i=\int_{\mathbb R}dt\int_{\Sigma_i}dy\,f\phi,\\
 \mathcal N_i[b]&=\{(c,f):F_{c,f}(\phi)=0\ \forall\phi\in\mathcal P_i[b]\},\\
-\mathcal E_i^{\mathrm{aff}}[b]&=(\mathbb R\oplus\mathscr T_i)/\mathcal N_i[b].
+\mathcal E_i^{\mathrm{aff}}[b]&=(\mathbb R\oplus\mathscr F_i)/\mathcal N_i[b].
 \end{aligned}
 $$
 
-因此等价关系恰好是“在所有 allowed regional solutions 上给出同一 affine functional”。并非先假设 $\mathscr T_i/P C_c^\infty$ 已编码 timelike wall。
+因此等价关系恰好是“在所有 allowed regional solutions 上给出同一 affine functional”。并非先假设 $\mathscr F_i/P C_c^\infty$ 已编码 timelike wall。
 
 **命题（proved，smooth interval chart）。** 对任意 origin $s_i[b]$，
 
@@ -141,7 +158,7 @@ $$
 $$
 
 它与代表无关，radical 恰为常数方向。其 Hamiltonian vectors 属于指定 smooth class。反向给定 $\psi\in\mathcal S_{i,D}^{\infty}$，取 $\chi$ 从 0 变到 1、$\chi'$ compact，令
-$f_\psi=\chi''\psi+2\chi'\dot\psi$，则 $E_{i,D}f_\psi=-\psi$。故这里没有依赖未指定的“任选 admissible dual”；source quotient 已固定全部 smooth Hamiltonian linear labels。更大的 continuous affine dual 未被纳入。
+$f_\psi=\iota_i(\chi''\psi+2\chi'\dot\psi)$，则 $E_{i,D}f_\psi=-\psi$。括号内是辅助 control forcing，$f_\psi$ 是其对应 observable label，并不改变正在讨论的 background $j$。故这里没有依赖未指定的“任选 admissible dual”；source quotient 已固定全部 smooth Hamiltonian linear labels。更大的 continuous affine dual 未被纳入。
 
 **Polynomial 定义。** $\mathfrak A_i^{\mathrm{aff,pol}}[b]$ 是由 $\widehat F$（$F\in\mathcal E_i^{\mathrm{aff}}[b]$）生成的 unital complex $*$-algebra，施加实线性、$\widehat F^*=\widehat F$、$\widehat c=c\mathbf1$ 和
 $[\widehat F,\widehat G]=i\hbar\sigma_i(F,G)\mathbf1$。
@@ -156,7 +173,43 @@ U_b(F)U_b(G)=e^{-i\hbar\sigma_i(F,G)/2}U_b(F+G),\quad
 U_b(F)^*=U_b(-F),\quad U_b(c)=e^{ic}\mathbf1
 $$
 
-的 universal $C^*$-algebra。选 origin 后等同通常 smooth-label Weyl algebra，因而存在且非零；$\widehat F$ 本身不是其 bounded element。只有在 regular representation 的适当共同域上才把 $U_b(F)$ 解释为 $\exp(i\widehat F)$。
+的 universal $C^*$-algebra。$\widehat F$ 本身不是其 bounded element。只有在 regular representation 的适当共同域上才把 $U_b(F)$ 解释为 $\exp(i\widehat F)$。
+
+**Origin-dependent trivialization lemma（proved，smooth interval chart）。** 令
+$\mathcal V_i=\mathscr F_i/\ker E_{i,D}$，
+$\bar\sigma_i([f],[g])=\langle f,E_{i,D}g\rangle_i$，并令 $W_i([f])$ 为使用同一 $\hbar$ 和 Weyl phase 的 $\mathfrak W(\mathcal V_i,\bar\sigma_i)$ 生成元。对任意 $s=s_i[b]\in\mathcal P_i[b]$，有 $*$-isomorphism
+
+$$
+\boxed{\Theta_s:U_b([(c,f)])\longmapsto
+\exp\!\bigl(i(c+\langle f,s_i[b]\rangle_i)\bigr)W_i([f]).}
+$$
+
+证明：若代表改变为 $(c+a,f+h)$，则 §2.2 的判据给
+$E_{i,D}h=0$、$a+\langle h,s\rangle_i=0$。因此 $[f+h]=[f]$ 且总相位不变，证明 representative independence。$c+\langle f,s\rangle_i$ 实线性，$\bar\sigma_i$ 与 $\sigma_i$ 相同；故上式保持 Weyl multiplication、$*$ 和 $U_b(c)=e^{ic}\mathbf1$。
+
+通常 Weyl relations 有显式非零表示：在
+$\ell^2((\mathcal V_i)_{\rm discrete})$ 上令
+
+$$
+W_i(v)\delta_w=e^{-i\hbar\bar\sigma_i(v,w)/2}\delta_{v+w}.
+$$
+
+双线性保证 Weyl 关系，且各生成元 unitary。由 $\Theta_s$ 的公式亦得 affine relations 的非零表示；其 universal norm 有限，因为每个有限 Weyl 和的表示范数不超过系数绝对值之和。反向 universal map 为
+
+$$
+W_i([f])\longmapsto U_b([(-\langle f,s\rangle_i,f)]).
+$$
+
+若 $f$ 改变一个 $\ker E_{i,D}$ 元素，上式的差属于 $\mathcal N_i[b]$，故反向也与代表无关。两个 maps 在生成元上互逆，从而得到同构并证明 universal algebra 非零。常数 radical 通过指定 character $c\mapsto e^{ic}$ 实现，不是把每个常数生成元都设为 $\mathbf1$。
+
+若 $s'=s+u$，其中 $u\in\mathcal S_{i,D}^{\infty}$，则
+
+$$
+\Theta_{s'}\Theta_s^{-1}(W_i([f]))
+=e^{i\langle f,u\rangle_i}W_i([f]).
+$$
+
+$E_{i,D}h=0$ 蕴含 $\langle h,u\rangle_i=0$，所以该 character 在 $\mathcal V_i$ 上良定义；可加性保持 Weyl 关系，$-u$ 给 inverse。这是 phase automorphism。故 affine algebra 的定义不依赖 origin，而具体 trivialization 依赖 origin；此处没有声称任一指定 Fock representation 中的 unitary implementability。$\square$
 
 对开放 $O\subset\mathbb R\times\operatorname{int}\Sigma_i$，正式定义
 
@@ -170,16 +223,18 @@ $$
 \end{aligned}
 $$
 
-其中 $f$ 延零视为 $\mathscr T_i$ 元素。isotony 由生成集包含成立；regional causal-disjoint 支撑由有限速度给 commuting subalgebras。bulk source maps、local net 和 base labels 是对象的一部分，不能从抽象 Weyl algebra 反推。此处不声称该 net 对任意 global timelike embedding 给 field-preserving homomorphism，K1 正好否定那种推广。
+其中 $f$ 延零视为 $\mathscr F_i$ 元素。isotony 由生成集包含成立；regional causal-disjoint 支撑由有限速度给 commuting subalgebras。designated observable field maps、local net 和 background/control base labels 是对象的一部分，不能从抽象 Weyl algebra 反推。此处不声称该 net 对任意 global timelike embedding 给 field-preserving homomorphism，K1 正好否定那种推广。
 
 ### 2.3 Smooth affine 与 full-energy 层的比较
 
-另记 $V_{i,D}=H_0^1(\Sigma_i)$，取 $\mathscr T_i^{\mathrm{en}}=L_c^1(\mathbb R;L^2(\Sigma_i))$、
-$\mathcal S_{i,D}^{\mathrm{en}}$ 的 Cauchy space
+另记 $V_{i,D}=H_0^1(\Sigma_i)$，取两个带角色标记的副本
+$\mathscr J_i^{\mathrm{en}}=L_c^1(\mathbb R;L^2(\Sigma_i))_{\rm control}$、
+$\mathscr F_i^{\mathrm{en}}=L_c^1(\mathbb R;L^2(\Sigma_i))_{\rm observable}$，由同一系数映射 $\iota_i^{\mathrm{en}}$ 认同；
+$\mathcal S_{i,D}^{\mathrm{en}}$ 的 Cauchy space 为
 $H_0^1(\Sigma_i)\oplus L^2(\Sigma_i)$。在已有 smooth $b$ 上定义
 $\mathcal P_i^{\mathrm{en}}[b]=s_i[b]+\mathcal S_{i,D}^{\mathrm{en}}$，用同一个“所有解上为零”的关系定义其 energy affine source quotient 和 Weyl algebra。
 
-$\mathscr T_i\hookrightarrow\mathscr T_i^{\mathrm{en}}$ 给 injective symplectic affine-label map：若 smooth label 在 energy fiber 上为零则在 smooth fiber 上为零；反向由其 energy continuity 和 smooth Cauchy density 成立。因此有 polynomial injection 和 universal Weyl injection（常数固定后为 symplectic-subspace Weyl inclusion）。该比较不涉及任意 rough $q$ 的解算子或 sharp response。
+$\mathscr F_i\hookrightarrow\mathscr F_i^{\mathrm{en}}$ 给 injective symplectic affine-label map：若 smooth label 在 energy fiber 上为零则在 smooth fiber 上为零；反向由其 energy continuity 和 smooth Cauchy density 成立。因此有 polynomial injection 和 universal Weyl injection（常数固定后为 symplectic-subspace Weyl inclusion）。该比较不涉及任意 rough $q$ 的解算子或 sharp response。
 
 这两个 algebra **不以 Weyl norm density 认同**。全能量 onto 在 §6.4 用允许的 $L_c^1(H)$ labels 精确证明。smooth source category 在 composite 中保留逐单元至边界 smooth labels；它不必等于跨人工切口也全局 smooth 的另一种 test category。每种 local net 都随其 source category 明确声明。
 
@@ -330,7 +385,7 @@ $$
 
 这是 phase differentiation，Weyl polynomial span 属于其 dense derivation domain；不承诺全 $C^*$-algebra norm 可微，也不以移动 solution label 的连续性代替它。
 
-## 5. Quantum reconstruction of the regional response matrix
+## 5. Response tomography：enriched quantum structure 的等价编码
 
 ### 5.1 Smeared response 是指定 source quotient 内的 polynomial section
 
@@ -352,7 +407,7 @@ $$
 R_{i,\eta;0}(\psi)=\Omega_i(k_\eta,\psi).
 $$
 
-时间积分下端放在 driving 前、上端放在 driving 后；上端 advanced solution 为零。取 §2 的 $f_\eta=\chi''k_\eta+2\chi'\dot k_\eta$，则
+时间积分下端放在 driving 前、上端放在 driving 后；上端 advanced solution 为零。取 §2 的 $f_\eta=\iota_i(\chi''k_\eta+2\chi'\dot k_\eta)$，则
 $E_{i,D}f_\eta=-k_\eta$，从而
 $\langle f_\eta,\psi\rangle_i=\Omega_i(k_\eta,\psi)$。在一般 fiber 中，
 
@@ -397,7 +452,9 @@ $\nabla_{(k,0)}^\epsilon R_\eta$、
 $-\nabla_{(0,h)}^\epsilon R_\eta$ 的 scalar coefficients。
 bulk 和 boundary tests 分别分离 distributions；故各 block 唯一。连续性来自 §2 的 smooth solution estimates，双线性 scalar pairing 因而确实确定 operator/distribution，不是只给有限个矩阵元素。base-independent derivatives 使恢复结果不依赖 $b$ 或 origin。对 pc/fc controls，在任意有限观测时间前/后作 smooth cutoff，causal support 保证所得局部值与 cutoff 无关，故 compact-chart 数据唯一决定所用单侧延拓。
 
-仅知道 CCR 得到的是 causal difference，不能拆出 $R/A$；指定的 causal transports 正是必须保留的额外 quantum structure。
+准确地说，只有在指定 field/response generators 和测试配对后，CCR 才给相应 causal difference；bare Weyl multiplication 的抽象同构类甚至没有这些标记。它不能单独拆出 $R/A$ 或恢复边界响应。指定 causal transports 和 action-derived response sections 正是必须保留的 enrichment。
+
+反向，在固定 §2 的模型、source/history spaces、测试配对和 causal domains 后，矩阵给 $r^\epsilon[k,h]=G^\epsilon k+H^\epsilon h$，从而给 §4 的 affine transports；$\rho^\epsilon k-D^\epsilon h$ 给 response 的 scalar variation，§5.1 的 action-derived normalization 固定 response section。故这里是线性因果响应数据的双向等价编码，不能进一步声称矩阵单独恢复任意额外结构，或称 bare algebra 自己产生了 Green operators。
 
 同一 Green identity 与 observable/CPS dual sign 给 polynomial commutators
 
@@ -420,7 +477,7 @@ $\Pi_i(k_\zeta)=-(D_i^R-D_i^A)\zeta$，固定了最后一式的符号。
 所以 joint commutator matrix 恰是
 $\mathbb E_i=\mathbb G_i^A-\mathbb G_i^R$。
 
-对 $B_d=\widehat\Phi_i(k)+\widehat R_{i,h}$，在上述 field/response sections 及其 polynomial products 上，
+对 $B_d=\widehat\Phi_i(\iota_i k)+\widehat R_{i,h}$，在上述 field/response sections 及其 polynomial products 上，
 
 $$
 (\nabla_d^R-\nabla_d^A)A
@@ -477,7 +534,7 @@ $$
 
 这解释 $D_i^R$ 本身并非 symmetric action Hessian。第 K4 的限制完整保留。
 
-对 energy sources $\mathscr T_i^{\mathrm{en}}=L_c^1(\mathbb R;H_i)$，bulk reciprocity 精确意为
+对 energy observable smearings $f,g\in\mathscr F_i^{\mathrm{en}}$，通过 $\iota_i^{\mathrm{en}}$ 输入 Green maps 后，bulk reciprocity 精确意为
 $\int(f,G^Rg)\,dt=\int(G^Af,g)\,dt$：
 $G^\epsilon g\in C_{\rm loc}(V_{i,D})\subset L^\infty_{\rm loc}(H_i)$，积分有限，先由 compact smooth tests 证明，再用有限 slab energy estimate 延拓。这里绝不写成 $L_c^1$ 上的 Hilbert adjoint。boundary blocks 的 rough 延拓没有随此 bulk identity 自动得到。
 
@@ -485,12 +542,12 @@ $G^\epsilon g\in C_{\rm loc}(V_{i,D})\subset L^\infty_{\rm loc}(H_i)$，积分�
 
 ### 6.1 正式对象、恢复接口及 composition definition
 
-**对象。** 在本文 smooth、实线性、有限 ports 的范畴中，一个 boundary-controlled affine CCR system 为
+**对象。** 在本文 smooth、实线性 interval 系统类中，一个 boundary-controlled affine CCR system 为
 
 $$
 \mathbb Q_i=
 \bigl(
-\mathscr B_{i,c},\mathscr B_{i,\mathrm{pc/fc}},\mathscr T_i,
+\mathscr B_{i,c},\mathscr B_{i,\mathrm{pc/fc}},\mathscr J_i,\mathscr F_i,\iota_i,
 \langle\, ,\,\rangle_i,\langle\, ,\,\rangle_{B_i};
 \{\mathcal E_i^{\rm aff}[b],\mathfrak A_i^{\rm aff,pol/W}[b]\}_b,
 \Phi_i,T_i^{R/A},R_i,\{\mathfrak A_i[b](O)\}_O;
@@ -502,7 +559,9 @@ $$
 
 **Derived，不另作 primitive：** $\nabla^{R/A}$ 是 transport derivative；local subalgebras 由指定 tests 生成；$G,H,\rho,D$ 由 §5.2 唯一恢复；$\mathbb E_i$ 既是恢复 blocks 的 $A-R$ 差，也是 polynomial CCR；weak energy extension 要在 §6.2–6.4 证明存在唯一连续延拓，不能直接塞进对象。regional action/trace 是构造对象和验证 Green balance 的模型依据，不是在 sewing 时另收一套独立 Green matrices。
 
-本节仅需 **structure-preserving isomorphisms**：base/source/history 的连续线性双射、支撑保持的 spacetime/port identification 及保持上述测试配对的 dual maps，配以各 fiber 的 polynomial/Weyl isomorphisms；它们须把指定 $\Phi,R$ 映到对应 maps，intertwine $T^{R/A}$、compatible evolution 和 CPS。local generators 因而对应，所有 derived blocks 自然 intertwine。恒等和复合逐分量定义，构成一个明确 groupoid。不声称任意 timelike inclusion 都给此类 morphism；bare field-preserving inclusion 仍受 K1 排除。
+本节仅需 **structure-preserving isomorphisms**：base/control-source/observable-smearing/history 的连续线性双射（与 $\iota_i$ 相容）、支撑保持的 spacetime/port identification 及保持上述测试配对的 dual maps，配以各 fiber 的 polynomial/Weyl isomorphisms；它们须把指定 $\Phi,R$ 映到对应 maps，intertwine $T^{R/A}$、compatible evolution 和 CPS。local generators 因而对应，所有 derived blocks 自然 intertwine。恒等和复合逐分量定义，构成对象同构的 groupoid；§4 的 translation groupoid 则描述单区域的跨 base transports。这两种已定义的 identity arrows 都不是 sewing 的 identity/cylinder object。不声称任意 timelike inclusion 都给此类 morphism；bare field-preserving inclusion 仍受 K1 排除。
+
+**结构范围。** 下述 sewing 只在已证明的 causal graph domains 上定义，构成 **partial compositional structure**：本文给 smooth interval binary sewing 与三段 associator，以及最终 full-energy CCR 的单独延拓。尚未定义或证明 sewing identity/cylinder object、sewing 对所有声明同构的 naturality、四段的 4-cell coherence/pentagon、一般有限图上的 partial-composition domain theorem。这些均为 **open**；derived blocks 对单个同构的 intertwining 不等于已完成 sewing naturality，更不是完整 monoidal/category formalism。
 
 **从对象恢复 causal relation。** 对 $\epsilon=R,A$，将 §5 恢复的 pairings 视为其唯一 distributions，定义
 
@@ -513,7 +572,7 @@ $$
 \pi_i=\rho_i^\epsilon j_i-D_i^\epsilon q_i\}.
 $$
 
-定义域为 smooth pc/zero-past（$R$）或 fc/zero-future（$A$）inputs，全部操作在有限 slab 上可检验。$\mathcal L_i^\epsilon$ 是从 quantum structure 导出的 relation；不是额外 primitive。
+定义域为 smooth pc/zero-past（$R$）或 fc/zero-future（$A$）inputs，全部操作在有限 slab 上可检验。$\mathcal L_i^\epsilon$ 是从 enriched quantum structure 等价读出的 relation；不是 bare algebra 的不变量，也不是 sewing 时新增的独立 primitive。
 
 **Sewing 定义。** 沿 action-derived
 
@@ -536,13 +595,13 @@ $$
 先定义 relation，**只有在其 unique causal graph domain 上**才记
 $j\mapsto G_{\rm sew}^\epsilon j$。若 relation 不 single-valued 或未满足 reciprocity/causality，本文不把它叫作已构成的 composite CCR system。interval 的这些 gates 在 §6.2–6.3、§7 证明。
 
-在已证 graph 上令 $E_{\rm sew}=G_{\rm sew}^A-G_{\rm sew}^R$，取 **原始 regional source generators**
-$\mathscr T^{\rm dup}=\mathscr T_1\oplus\mathscr T_2$（尚未取旧 on-shell quotients），并定义
+在已证 graph 上令 $E_{\rm sew}=G_{\rm sew}^A-G_{\rm sew}^R$，取 **原始 regional observable-smearing generators**
+$\mathscr F^{\rm dup}=\mathscr F_1\oplus\mathscr F_2$（尚未取旧 on-shell quotients），并定义
 
 $$
 \operatorname{Sew}_{\rm CCR}^{\rm pol/W}(\mathbb Q_1,\mathbb Q_2;\mathsf S_e)
 =\operatorname{CCR}_{\rm pol/W}
-\left(\mathscr T^{\rm dup}/\ker E_{\rm sew},
+\left(\mathscr F^{\rm dup}/\ker E_{\rm sew},
 \ ([f],[g])\mapsto\langle f,E_{\rm sew}g\rangle_{\rm dup}\right).
 $$
 
@@ -550,14 +609,14 @@ energy version 使用另行证明的唯一延拓与
 $L_c^1(\mathbb R;H^{\rm dup})$；§6.4 明确其 label category。
 有剩余外部 history $q_{\rm ext}$ 或 background source $j$ 时，取相应非空 composite solution torsor 的 affine source quotient，像 §2 一样保留常数，而非只写 homogeneous 商。
 
-这是 **interface-response induced deformation/reconstruction of CCR on regional source generators**。它不是 ordinary tensor product、pushout、balanced product、cotensor product 或 crossed product；旧 $\mathcal N_i[b]$ 和旧同侧 CCR 都不得先强制到新 presentation。否则 same-side correction 已使定义矛盾。
+这是 **interface-response induced deformation/reconstruction of CCR on regional observable-smearing generators**。它不是 ordinary tensor product、pushout、balanced product、cotensor product 或 crossed product；旧 $\mathcal N_i[b]$ 和旧同侧 CCR 都不得先强制到新 presentation。否则 same-side correction 已使定义矛盾。
 
-**剩余 ports 的输出结构。** 对只粘一个 interface 的 composite，必须同时保留外部 $q_{\rm ext},\pi_{\rm ext}$ 和其 causal relation。新的 fibers、field maps、response sections、transports、CPS 和 local net 由该 relation 的 solution torsors 按 §2–5 的同一构造定义。§7.3 的 block formulas 证明外部 $G,H,\rho,D$ 正是新 sections 的 derivatives。中间步骤不遗忘 port，不重新投影 source space，也不沿旧 fiber algebra 作 quotient。这使 binary output 能继续作为下一次 sewing 的输入。
+**剩余 ports 的输出结构。** 对只粘一个 interface 的 composite，必须同时保留外部 $q_{\rm ext},\pi_{\rm ext}$ 和其 causal relation。新的 fibers、field maps、response sections、transports、CPS 和 local net 由该 relation 的 solution torsors 按 §2–5 的同一构造定义。§7.3 的 block formulas 证明外部 $G,H,\rho,D$ 正是新 sections 的 derivatives。中间步骤不遗忘 port，不重新投影 source space，也不沿旧 fiber algebra 作 quotient。在已证 smooth compact/pc/fc domains 内，这使 binary output 能继续作为下一次 sewing 的输入；不声称 rough-history full-energy enriched closure。
 
 为避免把“solution torsor”又当成额外输入，输出可完全按如下方式构造。记消元后仍带外部 ports 的四块为 $G',H',\rho',D'$，令
 
 $$
-\mathcal S'=\operatorname{Ran}(G'^A-G'^R)|_{\mathscr T^{\rm dup}},
+\mathcal S'=\operatorname{Ran}(G'^A-G'^R)|_{\mathscr F^{\rm dup}},
 \qquad
 \mathcal P'[j,q_{\rm ext}]
 =G'^Rj+H'^Rq_{\rm ext}+\mathcal S'.
@@ -571,7 +630,7 @@ $$
 +(\rho'^A-\rho'^R)f.
 $$
 
-在 interval 上，$E'f=0$ 意味着 homogeneous 场为零，因而其外部 weak flux 为零；这是 §6.2–6.3 的 trace/solution realization，保证该式无代表歧义。剩余 histories 的 $R/A$ arrows 是 $G'^\epsilon k+H'^\epsilon h$；同一 Green balance 证明 response admissibility 与 CCR。CPS 取逐段积分之和，内部 flux 抵消。任意 smooth compatible homogeneous composite solution $\psi$ 都由 $f=\chi''\psi+2\chi'\dot\psi\in\mathscr T^{\rm dup}$ 实现 $E'f=-\psi$，所以 $\mathcal S'$ 恰好覆盖该 smooth phase space。这样 binary output 的 quantum fibers 和剩余 response 都由消元结果构造出来，闭合于声明的 interval system 类。
+在 interval 上，$E'f=0$ 意味着 homogeneous 场为零，因而其外部 weak flux 为零；这是 §6.2–6.3 的 trace/solution realization，保证该式无代表歧义。剩余 histories 的 $R/A$ arrows 是 $G'^\epsilon k+H'^\epsilon h$；同一 Green balance 证明 response admissibility 与 CCR。CPS 取逐段积分之和，内部 flux 抵消。任意 smooth compatible homogeneous composite solution $\psi$ 都由 $f=(\bigoplus_i\iota_i)(\chi''\psi+2\chi'\dot\psi)\in\mathscr F^{\rm dup}$ 实现 $E'f=-\psi$，所以 $\mathcal S'$ 恰好覆盖该 smooth phase space。这样 binary output 的 quantum fibers 和剩余 response 都由消元结果构造出来，闭合于声明的 smooth interval system 类。
 
 下文的 restricted regional form 是该 relation 在 interval 上存在、唯一、有 energy extension 的**证明工具**；不是替代上述定义的第二套 Green-data 输入，更不是从已知 global algebra 共轭回来。
 
@@ -628,9 +687,9 @@ $$
 
 ### 6.4 Causal relation 的 full-energy extension 与 CCR presentation
 
-取实 source space $\mathscr T=L_c^1(\mathbb R;H^{\rm dup})$，可先在 smooth time sources 上计算再用 energy estimate 延拓。这个较大的 label category 是刻意声明的，目的是覆盖全部 energy solutions，不把 smooth spatial smearings 的 norm closure 当作全能量 Weyl algebra。
+取控制空间 $\mathscr J^{\mathrm{en}}=L_c^1(\mathbb R;H^{\rm dup})_{\rm control}$ 和 observable label space $\mathscr F=L_c^1(\mathbb R;H^{\rm dup})_{\rm observable}$，以 $\iota^{\mathrm{en}}=\bigoplus_i\iota_i^{\mathrm{en}}$ 认同系数。可先在 smooth time controls 上计算，再用 energy estimate 延拓 bulk Green maps；以下 $G^\epsilon f$ 仍表示 $G^\epsilon(\iota^{\mathrm{en}})^{-1}f$。这个较大的 label category 是刻意声明的，目的是覆盖全部 energy solutions，不把 smooth spatial smearings 的 norm closure 当作全能量 Weyl algebra。
 
-由 relation 唯一性，§6.1 的图算子在 smooth sources 上等于下列 functional-calculus expressions；有限 slab energy estimate 给它们在 $\mathscr T$ 上的唯一连续延拓。故这些等式是 relation 的实现与延拓，不是另一套输入定义：
+由 relation 唯一性，§6.1 的图算子在 smooth sources 上等于下列 functional-calculus expressions；有限 slab energy estimate 给它们在 $\mathscr F$ 上的唯一连续延拓。故这些等式是 relation 的实现与延拓，不是另一套输入定义：
 
 $$
 \begin{aligned}
@@ -639,7 +698,7 @@ K_{\rm sew}^{-1/2}\sin((t-s)\sqrt{K_{\rm sew}})f(s)\,ds,\\
 G_{\rm sew}^{\rm adv}f(t)&=-\int_t^{\infty}
 K_{\rm sew}^{-1/2}\sin((t-s)\sqrt{K_{\rm sew}})f(s)\,ds,\\
 E_{\rm sew}&=G_{\rm sew}^{\rm adv}-G_{\rm sew}^{\rm ret},\\
-\mathcal E_{\rm sew}&=\mathscr T/\ker E_{\rm sew},\qquad
+\mathcal E_{\rm sew}&=\mathscr F/\ker E_{\rm sew},\qquad
 \sigma_{\rm sew}([f],[g])=\int_{\mathbb R}(f,E_{\rm sew}g)_{H^{\rm dup}}dt,\\
 \mathfrak A_{\rm sew}^{\rm pol}&=\operatorname{CCR}_{\rm pol}(\mathcal E_{\rm sew},\sigma_{\rm sew}),\qquad
 \mathfrak A_{\rm sew}^{W}=\mathfrak W(\mathcal E_{\rm sew},\sigma_{\rm sew}).
@@ -651,10 +710,10 @@ antisymmetry 来自 Green duality $\int(f,G^{\rm ret}g)\,dt=\int(G^{\rm adv}f,g)
 **完整 label onto proof。** 给任何 homogeneous energy solution $\phi$，取光滑 $\chi$ 从 0 变到 1，$\chi'$ compact support，令
 
 $$
-f=\chi''\phi+2\chi'\dot\phi\in\mathscr T.
+f=\iota^{\mathrm{en}}(\chi''\phi+2\chi'\dot\phi)\in\mathscr F.
 $$
 
-distributionally $(\partial_t^2+K_{\rm sew})(\chi\phi)=f$；retarded inverse 为 $\chi\phi$，advanced inverse 为 $(\chi-1)\phi$。所以 $E_{\rm sew}f=-\phi$。因此 $\mathcal E_{\rm sew}$ 与全部 energy solution space 双射，且
+distributionally $(\partial_t^2+K_{\rm sew})(\chi\phi)=(\iota^{\mathrm{en}})^{-1}f$；对该辅助 forcing，retarded inverse 为 $\chi\phi$，advanced inverse 为 $(\chi-1)\phi$。所以 $E_{\rm sew}f=-\phi$。因此 $\mathcal E_{\rm sew}$ 与全部 energy solution space 双射，且
 
 $$
 \sigma_{\rm sew}([f],[g])=-\Omega_{\rm sew}(E_{\rm sew}f,E_{\rm sew}g).
@@ -686,7 +745,7 @@ $$
 \operatorname{Ass}_*(W_{\rm sew}([f]))=W_M([\operatorname{Ass}f])
 $$
 
-分别给 polynomial 与 universal Weyl $*$-isomorphism。其逆将 global test/source restriction 到两侧。此处 full-energy category 两侧均为 $L_c^1(H)$；smooth comparison 的目标 source category 明确取 $\operatorname{Ass}(\mathscr T_1\oplus\mathscr T_2)$，允许切口处 source 分段 smooth。usual $C_c^\infty$ local core 是另行指定的子 net，不能把不光滑的零延拓冒充全局 smooth test。
+分别给 polynomial 与 universal Weyl $*$-isomorphism。其逆将 global test/source restriction 到两侧。此处 full-energy category 两侧均为 $L_c^1(H)$；smooth comparison 的目标 source category 明确取 $\operatorname{Ass}(\mathscr F_1\oplus\mathscr F_2)$，允许切口处 source 分段 smooth。usual $C_c^\infty$ local core 是另行指定的子 net，不能把不光滑的零延拓冒充全局 smooth test。
 
 **证明。** $E$ intertwining 使 source kernels 对应，所以 map well-defined；分区积分使 $\sigma$ preserved；逆 restriction 保持同一关系。因此两个 universal maps 在每个 generator 上互逆。无需通过某个指定 representation、simplicity 或 Fock unitary 来证明 injectivity。所有 $H$ sources 均可逐段限制，故 surjectivity 是 exact algebraic statement；不是 dense-range argument。$K$ intertwining 给 energy evolution 与 induced algebra dynamics covariance。这里的 dynamics 为 algebra automorphisms，不声称 universal Weyl point-norm continuous group。$\square$
 
@@ -699,7 +758,7 @@ functional calculus 和 source pairing 随之 intertwine，以上 generator maps
 
 ### 6.6 Support/locality 的精确范围
 
-对开放 $O\subset\mathbb R\times(-L,L)$，local subalgebra 由具有 compact essential support 于 $O$ 的 $f\in\mathscr T$ 生成；另可取 smooth compact spacetime tests 的 usual local core。其 regional presentation 使用 **在物理坐标中同一支撑集** 的 piecewise sources，故 assembly 在两方向保持这些 local subalgebras。它不把 $E f$ 的 solution support 与 $f$ 的 test support 混同。
+对开放 $O\subset\mathbb R\times(-L,L)$，local subalgebra 由具有 compact essential support 于 $O$ 的 $f\in\mathscr F$ 生成；另可取 smooth compact spacetime tests 的 usual local core。其 regional presentation 使用 **在物理坐标中同一支撑集** 的 piecewise sources，故 assembly 在两方向保持这些 local subalgebras。它不把 $E f$ 的 solution support 与 $f$ 的 test support 混同。
 
 有限传播速度由局部能量恒等式证明：在 shrinking backward light-cone sections 上积分 $e=(\dot\phi^2+|\phi'|^2+m^2\phi^2)/2$，外侧 null flux 非负；经过切口时两侧 flux 因 continuity 和 derivative matching 抵消；物理 Dirichlet wall 的 work 为零。零过去数据与 causal past 内零源遂给零解。强数据证明后由 energy estimate 延拓。因此 causally disjoint tests 满足 $\sigma=0$，对应 Weyl/polynomial observables commute。反射 causal curves 也不能比速度 1 的 direct path 更快。
 
@@ -709,18 +768,18 @@ functional calculus 和 source pairing 随之 intertwine，以上 generator maps
 
 ### 7.1 Retarded response 的 Schur construction
 
-先取 smooth pc bulk source $f_i$，零过去数据。以下每个 $G,H,\rho,D$ 都按 §5 的 transport derivatives 读取；§2 的 IBVP 实现证明它们等于下列 solution/normal-response operators，不另提供 classical matrix。于是恢复的 relation 为
+先取 smooth pc bulk control source $j_i$，零过去数据。以下每个 $G,H,\rho,D$ 都按 §5 的 transport derivatives 读取；§2 的 IBVP 实现证明它们等于下列 solution/normal-response operators，不另提供 classical matrix。于是恢复的 relation 为
 
 $$
-\phi_i=G_{i,D}^{\rm ret}f_i+H_i^{\rm ret}q,
-\qquad \rho_i^{\rm ret}f_i=-\partial_{n_i}G_{i,D}^{\rm ret}f_i,
+\phi_i=G_{i,D}^{\rm ret}j_i+H_i^{\rm ret}q,
+\qquad \rho_i^{\rm ret}j_i=-\partial_{n_i}G_{i,D}^{\rm ret}j_i,
 \qquad D_i^{\rm ret}q=\partial_{n_i}H_i^{\rm ret}q.
 $$
 
 这里 $H_i^{\rm ret}$ 是由 $\nabla_{(0,h)}^R\Phi(f)$ 的所有 scalar coefficients 恢复的 map，$D_i$ 是 $-\nabla_{(0,h)}^R R_\eta$ 恢复的 map；source directions 同样恢复 $G_{i,D}^R,\rho_i^R$。因此 §2–5 不可在保持当前输入接口的同时删除。共同 action variation 给
 
 $$
-(D_1^{\rm ret}+D_2^{\rm ret})q=\rho_1^{\rm ret}f_1+\rho_2^{\rm ret}f_2.
+(D_1^{\rm ret}+D_2^{\rm ret})q=\rho_1^{\rm ret}j_1+\rho_2^{\rm ret}j_2.
 $$
 
 inverse 必须限定为零过去 smooth pc histories 上的 causal inverse，不是所有 rough histories 上的有界 everywhere inverse。对实际 source-response range，以下论证已经足够；任意 smooth pc interface forcing 的 lifting 证明见 §7.4。存在性由第 6 节独立 constructed $K_{\rm sew}$ 的 retarded solution 给出；其 trace 解该式。若两个 $q$ 解同一个 retarded problem，差组装成零过去、零源的 form wave solution，所以为零。这证明 inverse 在所用 range 上存在且唯一，没有使用 global target 来定义它。
@@ -780,7 +839,7 @@ G_{11}(s;y,z)
 {\kappa\sinh(2\kappa L)}.
 $$
 
-另一顺序由 symmetry，另一段由反射坐标得到。这是所有 same-side source generators 上的精确 correction。
+另一顺序由 symmetry，另一段由反射坐标得到。这是所有 same-side observable-smearing generators 上的精确 correction。
 
 该 cross kernel 非零；取严格内部 $y,z$，传播到/跨越接口的路程为正，retarded 与 advanced corrections 分别支撑在严格正/负 time difference，不能仅以一个 $t=s$ contact term 相互抵消。所以 causal difference 也不恒零。可选择 timelike-separated smooth bulk smearings 检测它，证成 K1 的 CCR obstruction。对同侧 correction 同理；它说明 isolated Dirichlet commutator 也会改变。
 
@@ -946,13 +1005,13 @@ Laplace 恒等式是显式代数校验；time-domain 的因果存在、唯一性
 
 ### 7.6 Intrinsic CCR associator
 
-**定理（proved，三段、声明的 smooth 及 full-energy label categories）。**
-令 $(12)3$ 和 $1(23)$ 都使用 §6.1 的 binary operation，第一次输出保留未粘 port 的全部结构。两者有不借助 global algebra 的 canonical associator。
+**定理 A（proved，三段 smooth enriched-system associativity）。**
+令 $(12)3$ 和 $1(23)$ 都使用 §6.1 的 binary operation，第一次输出保留未粘 port 的全部结构。smooth 层两者有不借助 global algebra 的 canonical enriched-system associator；最终 full-energy CCR 的结论由下述单独的 bulk-source extension 得到。
 
-证明：将嵌套 source direct sums 用显式 flattening
+证明：将嵌套 observable-smearing direct sums 用显式 flattening（控制空间的 flattening 经 $\iota_i$ 与之相容）
 
 $$
-\alpha_{\mathscr T}:((f_1,f_2),f_3)\longmapsto(f_1,(f_2,f_3))
+\alpha_{\mathscr F}:((f_1,f_2),f_3)\longmapsto(f_1,(f_2,f_3))
 $$
 
 认同。§7.5 证明该 map 下 $G^R,G^A$ 相同，从而 $E$、$\ker E$ 与 $\sigma$ 都相同。它因此降到 source quotients，universal property 给
@@ -968,11 +1027,13 @@ $$
 
 反向 flattening 给 inverse，故 polynomial 与 universal Weyl 层皆为 exact isomorphism，且 source 支撑未动，保持对应 local nets。Cauchy solution relation 与演化也未动，故 dynamics-covariant。若保留外 ports/background，relation equality 还给相同 affine torsor 和常数 functional，intertwine $T^{R/A},R$，成为 enriched-system associator。
 
-full-energy 版本取同一个
+**定理 B（proved，final full-energy CCR associator after unique bulk-source extension）。** 先完成定理 A 的 smooth partial compositions，随后仅将其最终 bulk Green kernels 延拓。两边取同一个
 $L_c^1(\mathbb R;H_1\oplus H_2\oplus H_3)$。
-共同 transmission form 的 energy estimate 使 smooth source kernels 唯一连续延拓，故两种 $E$ 在全部 energy sources 上相等；随后是 **exact quotient map**，不是 Weyl norm closure。任一全能量 solution 的 source-on-to proof 仍是 §6.4 的时间 cutoff 公式。这不要求在所有 rough controls 上逐项定义 $D^{-1}$。
+共同 transmission form 的 energy estimate 使 smooth source kernels 唯一连续延拓，故两种 $E$ 在全部 energy sources 上相等；随后是 **exact quotient map**，不是 Weyl norm closure。任一全能量 solution 的 source-on-to proof 仍是 §6.4 的时间 cutoff 公式。该延拓定理没有定义任意 rough boundary controls 上的 $H,\rho,D$ 或 $D^{-1}$，也未把第一次 partial sewing 的输出升级为 rough-history full-energy enriched system。因此不能把定理 B 读作在这种 enriched category 内逐次执行两次 binary sewing。
 
-associator 的定义完全在 regional generators、causal relations 与 universal CCR presentation 内完成；§6.5 的 global assembly 只是另外的 comparison theorem。三段定理没有声称一般几何或任意 abstract system 的 graph gates 总成立；更多段的 coherence 需要对应 domains 保持闭合后才可沿同一 flattening 论证。
+**Open：rough-history full-energy enriched-category closure。** §6.2 的实际 energy trace range 与 weak flux 可定义 sewn energy solutions，但尚未给可自由输入的 rough history 类、全部 response blocks 的连续延拓及 intermediate outputs 的闭合定理。最终 CCR 的 exact associator 不填补这些缺项。
+
+associator 的定义完全在 regional generators、causal relations 与 universal CCR presentation 内完成；§6.5 的 global assembly 只是另外的 comparison theorem。三段定理没有声称一般几何或任意 abstract system 的 graph gates 总成立。sewing identity object、naturality、四段 coherence/pentagon、一般有限图 domain theorem 均保持 open；source flattening 的形式恒等式不能替代对这些 domains 和结构图的证明。
 
 ## 8. 后续 representation theorem candidates
 
@@ -986,7 +1047,7 @@ associator 的定义完全在 regional generators、causal relations 与 univers
 | Crossed product | 一个单代数上的具体 group action、拓扑、covariant universal representation | transport groupoid 并不自动给这个 action。无限维 smooth history group非局部紧，不能默认 Haar；把它离散化可造 algebraic crossed product，但不因此恢复物理 response/locality，Gap B open |
 | Connes fusion | 指定 von Neumann algebras、normal left/right actions、Hilbert correspondences | 当前没有提供这些；是 sector composition 候选，不是本文 observable algebra 定义 |
 | Factorization algebra / descent | open-set assignment、disjoint structure maps、locality/descent axioms及必要 derived structures | timelike closed-cell histories 本身不是这样的数据；本稿没有此定理 |
-| $\operatorname{Sew}_{\rm CCR}$ | $\mathbb Q_i$、指定 $\Phi,T^{R/A},R$ 与 action-derived $\mathsf S_e$；Green blocks 由 derivatives 恢复 | 本文两/三段 interval composition、assembly 与 intrinsic associator proved；它重构 CCR，不保留旧 field multiplication |
+| $\operatorname{Sew}_{\rm CCR}$ | $\mathbb Q_i$、指定 $\Phi,T^{R/A},R$ 与 action-derived $\mathsf S_e$；Green blocks 由 derivatives 恢复 | smooth interval composition/associator 及唯一 bulk-source extension 后的最终 full-energy CCR associator、assembly proved；rough-history enriched closure open；它重构 CCR |
 
 本节仅讨论已定义 composition 的后续 representation theorem candidates，不再承担当前 gluing 的定义。一个可检验的后续目标是：构造某个具体 realization，并证明其重新识别的 physical generators、关系与 $\operatorname{Sew}_{\rm CCR}$ 的 presentation 一致。至少须产生第 7 节的 cross block、改变同侧 Dirichlet CCR、处理 initial compatibility 与 pole sector。没有这些验证，不能称为完成。
 
@@ -1041,8 +1102,11 @@ $$
 | Surjectivity | 所有目标 labels 可实现，含 compatibility、pole/zero sectors、全部 energy category | proved：source restriction 与 cutoff-in-time exact onto argument |
 | Dynamics covariance | independently defined regional sewing evolution，与 global uniqueness/Green operators相容 | proved：closed form、operator domain、functional calculus |
 | Support/locality preservation | local test assignment 双向对应，causal Green support / finite speed | proved：第 6.6 节；不是 sharp boundary locality |
-| Cross-history covariance | arrows 的域、composition、与 evolution 交换 | proved：smooth compatible affine translations；一般 rough chart conditional |
-| Associativity of enriched sewing | 三段 two-port relation、全部剩余 response、causal domains 和 source quotient | proved：§7.3–7.6；一般几何仍 conditional |
+| Cross-history covariance | arrows 的域、composition、与 evolution 交换 | proved：smooth compatible affine translations；一般 rough chart 的构造/闭合 open |
+| Smooth enriched-system associativity | 三段 two-port relation、全部剩余 response、smooth causal domains 和 source quotient | proved：§7.3–7.6 定理 A |
+| Final full-energy CCR associator | smooth 最终 bulk kernels 的唯一连续延拓与 exact quotient map | proved：§7.6 定理 B；不是 rough-history enriched closure |
+| Rough-history full-energy enriched closure | rough controls、全部 response blocks 和 intermediate domains 的闭合 | open |
+| Full compositional formalism | sewing identity、naturality、4-cell coherence/pentagon、一般有限图 domain theorem | open |
 | Bare field-preserving fusion | 同时保持旧同侧及新 physical CCR | false/no-go：K1 与 §7.2 |
 
 一般 linear bosonic extension 是 **conditional**：若上述前四类解析数据和 support 条件已给出，则同一个 universal-generator proof 给 algebra isomorphism。它不是 nonlinear Peierls deformation、gauge/BRST quantization、任意 AdS timelike IBVP 或 null Goursat theorem。尤其不允许把“defined as global restriction image”当作 unrestricted regional onto 的证明。
@@ -1051,25 +1115,46 @@ $$
 
 | ID | Claim | Tier |
 |---|---|---|
-| H1 | 指定 affine source quotient、polynomial/Weyl fibers、regional local net，origin independence | proved，§2 的 smooth category |
+| H1 | 指定 observable-smearing affine quotient、polynomial/Weyl fibers、regional local net；origin-dependent trivialization、代表无关、非零性、origin change 为 phase automorphism | proved，§2 的 smooth chart；algebra intrinsic，trivialization 依赖 origin |
 | H2 | $(j,q)$ translation groupoid、$R/A$ transport、cocycle、causal/evolution covariance | proved，§4 的 compact 与单侧 smooth domains |
-| H3 | smeared response 在指定 source quotient 内；四块 response 由 quantum section derivatives 唯一恢复，commutators 与 Green duality 相容 | proved，§5 |
+| H3 | smeared response 在指定 quotient 内；四块 response 由指定 transports/sections 的 scalar derivatives 唯一读取，是 enriched quantum structure 的等价响应编码，commutators 与 Green duality 相容 | proved，§5 的固定模型/配对/domains；bare Weyl multiplication 单独决定 Green/response 为 false |
 | H4 | retarded connection 就是 response inner derivation，或 connection 平衡自动等于 flux sewing | 无条件等同为 false；具体 Ward/module realization open |
 | H5 | enriched causal relation elimination 定义复合 CCR，产生 cross 与 same-side correction | proved，两段 interval，§6–7.2 |
 | H6 | full-energy polynomial/Weyl assembly，exact onto、evolution、local net | proved，§6；使用明确 energy source category |
 | H7a | bare fixed-history on-shell algebras 的 ordinary field-preserving fusion | false/no-go：K1 + same-side correction；不是待完成目标 |
-| H7b | enriched boundary-response CCR composition/deformation | proved，当前 interval model；不是普通 algebra amalgamation |
-| H8 | 三段中间 two-port 的 simultaneous/逐次 causal relation equality 及 intrinsic CCR associator | proved，§7.3–7.6；不由 global target 定义 |
+| H7b | enriched boundary-response CCR 的 partial composition/deformation | proved，当前 smooth interval model；最终 full-energy CCR 另由 bulk-source extension 得到 |
+| H8a | smooth enriched-system associativity：三段 two-port 的 simultaneous/逐次 causal relation equality，完整剩余 response 与 intrinsic associator | proved，§7.3–7.6 定理 A；不由 global target 定义 |
+| H8b | final full-energy CCR associator after unique bulk-source extension | proved，§7.6 定理 B；先 smooth sewing，再延拓最终 kernels 并取 exact quotient |
+| H8c | rough-history full-energy enriched-category closure | open；尚未构造任意 rough external controls 下的全部 blocks 或证明 intermediate closure |
+| H8d | sewing identity/cylinder object、naturality、4-cell coherence/pentagon、一般有限图 domain theorem | open；当前仅 partial compositional structure |
 | H9 | crossed product/cotensor/Connes fusion realization，flux 的 opposite-module interpretation | open，仅 representation theorem candidates；Gap B/C 的候选识别未证明 |
 | H10 | general rough-history smooth bundle、一般高维/非线性/gauge/null theorem、sharp response operators、Fock factorization | open / not claimed |
 
 **Checked symbolically** 单独记录在 §12，不是上述 functional-analysis claims 的证据等级。
 
-下一步只剩独立扩展 gates：明确高维 source/history trace spaces 和 conormal estimates；证明相应 causal graph、partial composition 的 domain closure 及 energy extension；或另选具体 representation 模型，检验其 physical generators 是否实现已知 correction。不能再把 H7a 当成未解决的正目标，也不能用一个候选术语替换已定义的 H7b。
+当前审计边界是 H8a/H8b proved、H8c/H8d open。后两项和 H9/H10 是独立 gates，本次不推进。不能再把 H7a 当成未解决的正目标，也不能用一个候选术语替换已定义的 H7b；§4 的 identity arrow 不补上 H8d 的 sewing identity object。
 
 ## 12. Verification 与来源边界
 
-**本轮新增 checked symbolically:** Mathematica 的 15 个命名检查组全部为零，包括 two-port ODE/DtN、两个 Schur 顺序、剩余 port 的 DtN、两段 cross/same-side kernels、source/response Green 符号，以及三段全部九个 Green blocks 在两种消元顺序下的相等。以下代码只验证这些代数恒等式；causal inverse domains、energy extension、source quotient onto 与 universal CCR theorem 的依据仍是正文证明。
+**本次审计修补 checked symbolically（2026-09-04）：** Mathematica 检查 Weyl product phase、representative phase cancellation、origin character、origin composition、$*$ phase 五个 residual，全部严格为零。代码中的 $fs,gs$ 表示 $\langle f,s\rangle,\langle g,s\rangle$，$huS$ 表示 $\langle h,s\rangle$，$cu=-huS$ 是零 functional 的常数条件，$fu,gu,fv$ 是 origin-change pairings。它们只核查相位代数；quotient 上的良定义性、非零表示和 universal inverse 的证明在 §2.2，不由有限符号检查代替。本次未重跑下列前轮 response/Schur 检查，也未将其扩张为 rough-history 或 coherence 的证据。
+
+```wolfram
+Clear[c,d,fs,gs,cu,huS,hbar,sig,fu,gu,fv];
+assumptions=Element[{c,d,fs,gs,cu,huS,hbar,sig,fu,gu,fv},Reals];
+checks=<|
+"weylProductPhase"->FullSimplify[
+  Exp[I(c+fs)] Exp[I(d+gs)] Exp[-I hbar sig/2]
+  -Exp[-I hbar sig/2] Exp[I(c+d+fs+gs)],assumptions],
+"representativePhase"->FullSimplify[(c+cu+fs+huS)-(c+fs)/.cu->-huS],
+"originCharacter"->FullSimplify[Exp[I(fu+gu)]-Exp[I fu]Exp[I gu],assumptions],
+"originComposition"->FullSimplify[Exp[I fu]Exp[I fv]-Exp[I(fu+fv)],assumptions],
+"starPhase"->FullSimplify[Conjugate[Exp[I(c+fs)]]-Exp[-I(c+fs)],assumptions]
+|>;
+Print[checks];
+Print[And@@(SameQ[#,0]& /@ Values[checks])];
+```
+
+**前轮记录的 checked symbolically:** Mathematica 的 15 个命名检查组全部为零，包括 two-port ODE/DtN、两个 Schur 顺序、剩余 port 的 DtN、两段 cross/same-side kernels、source/response Green 符号，以及三段全部九个 Green blocks 在两种消元顺序下的相等。以下代码只验证这些代数恒等式；causal inverse domains、energy extension、source quotient onto 与 universal CCR theorem 的依据仍是正文证明。
 
 ```wolfram
 ClearAll["Global`*"];
@@ -1121,9 +1206,9 @@ Print[checks];Print["allZero=",And@@(TrueQ[#==0]&/@Flatten[Values[checks]])];
 ```
 
 
-**Verified:** 本文给出 affine source quotient/local net、source/history transport、smeared response 的 source代表、四块响应恢复与 Green reciprocity、causal relation elimination、两段 cross/same-side correction、三段 two-port intrinsic associator、interval energy extension 和 assembly inverse 的证明。使用的标准分析输入为 interval Sobolev trace/patching、positive closed-form representation、self-adjoint wave functional calculus 及局部 energy estimate；相应应用的 domain 已逐项写出。
+**Verified:** 本文给出 affine observable quotient/local net、source/history transport、smeared response 的 observable 代表、enriched 响应等价编码与 Green reciprocity、causal relation elimination、两段 cross/same-side correction、三段 smooth enriched-system associator、唯一 bulk-source extension 后的最终 full-energy CCR associator 和 assembly inverse 的证明。本次补写 origin-dependent trivialization 的双向 universal maps、representative independence、显式非零表示与 origin-change phase automorphism，并审查 H1–H10 标签；旧解析论证的适用范围未扩张。使用的标准分析输入为 interval Sobolev trace/patching、positive closed-form representation、self-adjoint wave functional calculus 及局部 energy estimate；相应应用的 domain 已逐项写出。
 
-**既有检查，本轮已重跑:** 原 11 个 Mathematica residual 仍全部为零：scalar first variation、observable/CPS dual sign、oscillator Peierls sign、Poisson-kernel ODE、normal derivative、cross-interface resolvent、完整三振幅 determinant、Weyl cocycle、response Green identity、interface-action sign、inverse summed DtN 恒等式。这些只检查局部公式，未机器验证 functional analysis、surjectivity 或 universal $C^*$ theorem。
+**前轮既有检查记录:** 原 11 个 Mathematica residual 全部为零：scalar first variation、observable/CPS dual sign、oscillator Peierls sign、Poisson-kernel ODE、normal derivative、cross-interface resolvent、完整三振幅 determinant、Weyl cocycle、response Green identity、interface-action sign、inverse summed DtN 恒等式。这些只检查局部公式，未机器验证 functional analysis、surjectivity 或 universal $C^*$ theorem。
 
 下面是同一批检查的可复现合并版本；所有除式仅在分母非零的声明域使用，Laplace application 取 $\operatorname{Re}s>0$：
 
@@ -1166,8 +1251,8 @@ Print[checks];
 Print[And @@ (SameQ[#, 0]& /@ Values[checks])];
 ```
 
-**Assumptions:** real free scalar、$m>0$、两段或三段长度正的一维区间、homogeneous physical Dirichlet、无额外 interface/corner action。$L=-P$，$L\phi=j$；$\Pi=-\partial_n\phi$，$D=+\partial_nH$，$E=G^A-G^R$。smooth compact/pc/fc response charts 与 full-energy $L_c^1(\mathbb R;L^2)$ labels 分开；部分消元保留全部未粘 ports 和 source generators。所有 Weyl statements 指 universal algebra；不先选择 state 或 Fock representation。
+**Assumptions:** real free scalar、$m>0$、两段或三段长度正的一维区间、homogeneous physical Dirichlet、无额外 interface/corner action。$L=-P$，$L\phi=j$；$\Pi=-\partial_n\phi$，$D=+\partial_nH$，$E=G^A-G^R$，作用于 observable labels 时预合成 $\iota^{-1}$。smooth compact/pc/fc response charts 与 full-energy $L_c^1(\mathbb R;L^2)$ labels 分开；部分消元保留全部未粘 ports、control inputs 和 observable-smearing generators。所有 Weyl statements 指 universal algebra；不先选择 state 或 Fock representation。
 
-**Not verified:** general history topology 的光滑 bundle theorem、rough boundary response 的普遍连续延拓、crossed-product/cotensor/Connes realization、跨模型 associativity、gauge/nonlinear/AdS/null extensions，以及 sharp-boundary/Fock/无限维测度主张。bare field-preserving fusion 已有 no-go，不能再归入“尚未验证”。
+**Not verified / open:** rough-history full-energy enriched-category closure、sewing identity/cylinder object、naturality、4-cell coherence/pentagon、一般有限图 domain theorem、general history topology 的光滑 bundle theorem、rough boundary response 的普遍连续延拓、crossed-product/cotensor/Connes realization、跨模型 associativity、gauge/nonlinear/AdS/null extensions，以及 sharp-boundary/Fock/无限维测度主张。bare field-preserving fusion 已有 no-go，不能再归入“尚未验证”。
 
 本地概念与符号来源是 `formalism.md`、`gluing formalism.md` Part I/II/IV/V、`roadmap.md` Gap B/C，以及 `perturbation/formalism.md` 的 CPS/Peierls convention；旧 Weyl note 只用作第 9 节对照。外部文献 [Benini–Dappiaggi–Schenkel, Quantum field theory on affine bundles](https://arxiv.org/abs/1210.3457) 提供 affine quantization 的相关先例；其 globally hyperbolic affine-bundle framework **不自动证明本文人工 timelike boundary IBVP 或 history fusion**。这里的 interval construction 与证明已在正文给出，不把文献的 abstract 当成该扩展的 theorem citation。
