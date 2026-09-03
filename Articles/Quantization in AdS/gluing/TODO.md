@@ -4,6 +4,12 @@ Phases follow `roadmap.md`. Within a phase, items are ordered by what blocks wha
 
 ## Phase 1 — Scalar and Algebraic Core
 
+### History-Indexed Observable Algebra Track
+
+- [ ] Action: construct the additional quantum structure needed to sew prescribed-history affine algebras, starting from `history-indexed observable algebra gluing.md`.
+  Context: the new note defines the fibers, compatible transports and smooth smeared response, and proves a continuum interval benchmark with regional action/response data. It does not construct fusion internal to the quantum fibers or close Gap B/C.
+  Check: reproduce both the cross-interface Green block and the change of the same-region Dirichlet CCR; retain endpoint terms and all history/pole sectors. Exhibit actual algebra maps, actions or coactions before using a balanced product, crossed product or cotensor description, then prove the three-region associator on its causal domain.
+
 ### Foundation
 
 - [ ] Action: keep the physical outer Dirichlet condition fixed and parameterize only the artificial scalar cut when a new example requires it.
