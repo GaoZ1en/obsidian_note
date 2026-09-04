@@ -2,6 +2,32 @@
 
 Phases follow `roadmap.md`. Within a phase, items are ordered by what blocks what. `archived/formalism_audit.md` records the historical audit that changed the finite regulator and model order.
 
+## Regional Gauge Operator Algebra Track — P0
+
+- [ ] **P0:** define the framed gauge operator algebra assigned to a region with an artificial cut.
+  Context: quotient based regional proper gauge, but retain the active cut action and its charge sectors. Distinguish explicitly (i) the framed/cut-charged algebra $\mathfrak A_i^{\rm fr}$, which may contain open Wilson endpoints; (ii) the fully cut-invariant subalgebra $\mathfrak A_i^{\rm inv}$; and (iii) an extended presentation $\mathfrak A_i^{\rm ext}$ with explicit frame/transition variables. Do not call these three objects equivalent by definition. The scalar response benchmark warns that generators and multiplication may still require dynamical response, Peierls or transport data.
+  Check: specify generators, relations, domains, the based-proper quotient, active-cut action, endpoint representation sectors and the maps among the three levels. State which electric, magnetic or mixed center is chosen and which superselection labels it creates.
+
+- [ ] **P0:** upgrade compact $1+1$ Yang--Mills from Hilbert-space reduction to an operator-intertwining algebra theorem.
+  Context: start on a declared algebraic core, for example Peter--Weyl matrix coefficients and electric generators organized as $\mathcal O(G)\rtimes U(\mathfrak g)$ or a precisely defined equivalent. The existing normalized-Haar/Peter--Weyl result proves the Hilbert reduction and spectrum, not yet an isomorphism of the full regional operator algebra with the uncut algebra.
+  Check: prove that two-cell reduction/composition intertwines multiplication, adjoint, holonomy multiplication and left/right electric generators with the single-region/global operator algebra. Prove three-cell associativity/reduction by stages on the same core before choosing a completion.
+
+- [ ] **P0:** construct crossing Wilson-line sewing at generator level.
+  Context: regional half-Wilson operators carry open interface representation indices and transform in mutually compatible cut-charge sectors. Their pairing must recover
+  $$
+  U_\gamma=U_2(\gamma_2)h^{-1}U_1(\gamma_1).
+  $$
+  This is a generator-level handle, not a complete formalism. Test the diagonal cut action, Gauss/moment-map reduction, transition-frame convention, and electric, magnetic or mixed center. Do not assume $(\mathfrak A_1\otimes\mathfrak A_2)^G$ is the answer; treat it as the lowest candidate and determine whether a dynamical/sewing ideal is missing.
+  Check: write the endpoint index contraction and its covariance explicitly; reproduce crossing holonomies and the holonomy--electric-flux commutators in the compact benchmark; identify every surviving superselection sector.
+
+- [ ] **P0:** define the sewing map to the global algebra and prove or refute its exact properties.
+  Context: the domain must be the declared response-enriched regional structure after the chosen charge pairing/reduction, not an unspecified tensor product. Classical solution sewing supplies constraints and transport data but does not prove quantum algebra sewing.
+  Check: determine the kernel and image; prove or disprove injectivity and surjectivity; prove two/three-cell associativity or exhibit its obstruction. The minimum acceptance test is recovery of crossing Wilson operators and the global holonomy--electric-flux algebra.
+
+- [ ] Downstream/optional: state sewing and Unruh reliability.
+  Context: only after the quantum algebra composition is known, determine what extra B2 state/cross-covariance data are needed to construct or recognize a global state. Ask when restriction to a regional algebra is KMS/Unruh and which part of the answer depends on the algebra, representation or state. The completed AdS$_2$--Rindler scalar result is the benchmark; do not continue numerical or general-null expansion by default.
+  Check: formulate positivity/normality and reconstruction conditions for a declared algebraic model, and separate global-state restriction from a tensor-factor partial trace.
+
 ## Phase 1 — Scalar and Algebraic Core
 
 ### History-Indexed Observable Algebra Track
@@ -10,9 +36,9 @@ Phases follow `roadmap.md`. Within a phase, items are ordered by what blocks wha
   Context: Sections 2–6 distinguish control sources from observable smearings, give the affine Weyl trivialization, and reconstruct response as an equivalent encoding of specified causal transports/response sections. Bare Weyl multiplication alone does not determine Green/response data.
   Check: Sections 7.3–7.6 prove smooth enriched-system associativity; the final full-energy CCR associator is proved separately after unique bulk-source extension. Neither result proves rough-history full-energy enriched-category closure. Symbolic phase/Schur identities do not prove analytic domains.
 
-- [ ] Action: keep the remaining enriched-composition gates explicitly open until separately constructed and proved.
+- [ ] Optional generalization: keep the remaining enriched-composition gates explicitly open until separately constructed and proved.
   Context: rough-history full-energy enriched-category closure, a sewing identity/cylinder object, naturality, 4-cell coherence/pentagon and a general finite-graph domain theorem are not established by the three-interval result. This audit does not advance these gates.
-  Check: require the corresponding control spaces, response maps, intermediate domain closure and structural diagrams before changing their labels. Bare field-preserving fusion is already excluded; crossed-product/cotensor/Connes realizations and Gap B/C's module interpretations remain separate representation theorem candidates.
+  Check: require the corresponding control spaces, response maps, intermediate domain closure and structural diagrams before changing their labels. Bare field-preserving fusion is already excluded; crossed-product/cotensor/relative-tensor/Connes realizations remain separate representation theorem candidates.
 
 ### Foundation
 
@@ -28,19 +54,19 @@ Phases follow `roadmap.md`. Within a phase, items are ordered by what blocks wha
   Context: in the strong-flux elimination the feedback functional is a normal-derivative trace and is discontinuous in the $\ell^2$ coefficient norm. The exact port normal form in `port-canonical-normal-form.md` instead selects the global form domain $H_0^1([-L,L])$ for configurations and $H_0^1\oplus L^2$ for finite-energy Cauchy data. The point trace $q$ is continuous on the configuration form domain, while velocity and normal-derivative traces require a stronger operator graph core. Fixed-window spectral improvement is not this statement; both tested pencils show it while being different finite systems. This closes layer L2 for the scalar.
   Check: completed in `continuum-closure-theorem.md`. The restricted connected forms Mosco-converge by weak lower semicontinuity and form-density; the Galerkin resolvents converge directly by Galerkin orthogonality; energy-compatible wave solutions, symplectic forms, and configuration traces converge uniformly on compact time intervals. Normal derivatives are confined to $H^2\cap H_0^1$ or the weak interface identity. The quantum limit is formulated intrinsically through smeared functional calculus rather than a regional product one-particle comparison.
 
-### Null-Characteristic Branch — Current Immediate Direction
+### Null-Characteristic Branch — Completed/Parked Benchmark Cluster
 
 - [x] Action: close the scalar Rindler/null-characteristic benchmark and its state-restriction layer.
   Context: `rindler scalar.md`, `ads-rindler scalar.md`, and `ads2-rindler global reconstruction.md` establish the flat and AdS matched-domain characteristic mechanism. In AdS$_2$, the exact-null chain runs from action/CPS and two compatible profiles through $\Omega_{\rm null}$, the global-time Hamiltonian, the $\mathfrak{sl}(2,\mathbb R)$ lowest-weight tower $\omega_n=\Delta+n$, Goursat modes, CCR/Pauli--Jordan, the global vacuum, $RR/RL/RF$ correlators, and smeared right-wedge $\beta=2\pi$ KMS. `ads2-rindler regulated partial trace.md` proves the finite Gaussian partial trace and its fixed-label continuum algebraic restriction.
   Check: completed only on the declared matched/cyclic and fixed smooth/Weyl label scopes. No unrestricted horizon onto theorem, sharp wedge Hilbert tensor factorization, Type III classification, full modular-group convergence, or entropy-coefficient theorem is included.
 
-- [ ] Action: extract the general null CPS from the completed scalar examples.
-  Context: this is the highest-priority immediate direction. Abstract characteristic profile/data rather than a timelike trace pair; the role conversion from an outgoing/flux null surface to a characteristic-input surface; shared-cut/corner compatibility on intersecting null surfaces; direct action/CPS null symplectic flux; transverse reconstruction or a moving-cross treatment when an ambient Killing flow is not tangent to the chosen null cross; and the separation of B1 dynamics/algebra reconstruction from B2 state/cross-covariance data. [[Literature Notes/arxiv/2026/08/17/The Phase Space of Gravity on Null Hypersurfaces (2608.14449v1)|2608.14449]] and [[Literature Notes/arxiv/2026/08/25/Perturbative Reconstruction of Self-Adjoint Generators from Bosonic Canonical Commutation Relations - Application to the Null-Surface Formulation (2608.21947v1)|2608.21947]] are external comparisons, not completion evidence.
-  Check: formulate a domain-controlled characteristic phase space, corner tangent space and direct null two-form; prove local Goursat composition as a symplectic relation and its associativity on a declared class; state the Hamiltonian test algebra and the additional datum needed for B2 without assuming unrestricted horizon completion.
+- [ ] Parked benchmark-generalization open: extract a general curved null CPS from the completed scalar/product-background examples.
+  Context: characteristic data, role conversion, corners, direct null flux, caustics and B1/B2 separation remain genuine open questions, but they are not an immediate dependency of the regional gauge-algebra programme.
+  Reopening gate: a quantum algebra or state-composition theorem must require a null-specific input not already supplied by the completed benchmarks. Only then formulate the needed domain-controlled phase space and Goursat composition theorem at the minimum required scope.
 
-- [ ] Action: upgrade finite-null-boundary Maxwell to two-intersecting-null-surfaces characteristic composition.
-  Context: `../../null hypersurface/finite boundary/Maxwell.md` already contains a local null collar, Maxwell CPS, gauge charges, energy/symplectic flux and a (2+1) dual-scalar benchmark. Do not restart from scalarized modes. Work directly in Maxwell variables, reduce gauge symmetry and Gauss law, and identify radiative data, cut charge/edge data and corner compatibility on the two characteristic inputs. The dual scalar is a check, not a replacement for the gauge structure.
-  Check: derive the two-surface action/CPS pullback, the Gauss and corner constraints, proper versus charged cut gauge transformations, the reduced characteristic relation and its B1 algebra. Keep state/cross-covariance reconstruction as a separate B2 step.
+- [x] Action: complete Maxwell composition on two intersecting null surfaces in the declared product-background/radiative sector.
+  Context: `../../null CPS/two-null-maxwell-composition/README.md` records proved finite-cross composition and the complete-future-cross field-strength chain on the fixed product background, with explicit bundle, charge, harmonic, regularity and potential-completion boundaries.
+  Check: completed in that declared scope. General curved backgrounds, caustics, non-Abelian Yang--Mills and gravity are parked; the conditional energy-potential completion is not promoted by this status label.
 
 - [x] Action: validate the scalar glue-first-then-trace principle.
   Context: the finite glued Gaussian partial trace and continuum algebraic state restriction are complete in `reduced-state-open-system-scalar.md` and `ads2-rindler regulated partial trace.md` for their stated regulators and fixed observable families.
@@ -88,15 +114,15 @@ Phases follow `roadmap.md`. Within a phase, items are ordered by what blocks wha
   Context: associativity is logically independent of noncentral-cut independence. Both parenthesizations retain the same two ports and restrict the same summed action to one common multi-port Galerkin space.
   Check: completed in `non-central cut and associativity.md` and `numerics/associativity_checks.wl`. The two coefficient presentations are related by a permutation whose phase-space lift is symplectic and exactly intertwines the Hamiltonians. The same form-density argument gives the identical continuum operator, intrinsic state, and smeared correlators. No intermediate reprojection or port deletion is allowed.
 
-### Algebraic Layer
+### Secondary Representation Candidates
 
-- [ ] Action: construct the interface algebra and the gluing statement for a chiral conformal model.
+- [ ] Secondary comparator: construct the interface algebra and the gluing statement for a chiral conformal model.
   Context: conformal-net literature distinguishes fusion/fiber product of von Neumann algebras from Connes fusion of Hilbert bimodules or sectors, and performs fusion along nonzero intervals or specified defects under hypotheses such as finite index. Merely cutting a circle into intervals that touch at a point does not supply a nontrivial point-interface algebra. See `roadmap.md` Sections 3.2 and 5.
-  Check: first specify a collar, overlap interval, defect, or boundary-CFT realization and identify $\mathcal B$. Then formulate the algebra statement as $\mathcal A_L\circledast_{\mathcal B}\mathcal A_R$ and the sector statement as $H_L\boxtimes_{\mathcal B}H_R$, proving only the operation relevant to the chosen model and recording every finite-index or representation-theoretic hypothesis. Keep both statements separate from the interval scalar.
+  Check: first specify a collar, overlap interval, defect, or boundary-CFT realization and identify $\mathcal B$. Then formulate the algebra statement as $\mathcal A_L\circledast_{\mathcal B}\mathcal A_R$ and the sector statement as $H_L\boxtimes_{\mathcal B}H_R$, proving only the operation relevant to the chosen model and recording every finite-index or representation-theoretic hypothesis. Keep both statements separate from the interval scalar and do not let them delay the gauge generator-level theorem.
 
-- [ ] Action: identify the quantum counterpart of oriented flux matching.
-  Context: continuity makes the two regional descriptions modules over the same interface algebra. The candidate statement is that oriented flux matching $\pi_1=-\pi_2$ is the classical shadow of the two module structures being mutually opposite, so that the sign in $\pi_i:=-f_i$ is orientation rather than convention. This is `roadmap.md` Gap C and is a conjecture with a stated reason.
-  Check: prove or refute the identification for the chiral model above, and determine whether the same statement accounts for associativity holding only up to canonical isomorphism. Do not use it in any other item until it is proved.
+- [ ] Secondary realization test: compare the proved gauge sewing relations, once available, with opposite modules, balanced/relative tensor products, Connes fusion and crossed products.
+  Context: these constructions may encode charge pairing, covariance or representation composition, but none is assumed to generate the action-derived sewing ideal. Crossed-product identification additionally requires an explicit automorphism group, implementing unitaries and covariance relation.
+  Check: test each candidate against the compact $1+1$ algebra theorem, crossing Wilson generators, holonomy--flux commutators and three-cell associativity. Reject any candidate that forgets required response/transport data or adds unsupported sectors.
 
 ## Phase 2 — Gauge Theory and Corners
 
