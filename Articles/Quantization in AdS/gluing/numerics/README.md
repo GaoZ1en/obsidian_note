@@ -18,6 +18,9 @@ This directory contains the active symbolic and numerical regressions:
 - `yang_mills_1p1_checks.py`: deterministic \(SU(2)\) transition-function and prescribed-history Hamiltonian covariance, two-cell moment-map/one-form reduction, connected Hamiltonian normalization, Peter--Weyl singlet and Casimir data through highest weight \(n=8\), three-cell cotangent reduction, and finite representation-space Haar-projector witnesses.
 - `ads2_rindler_null_reconstruction_checks.wl`: AdS$_2$ null lowest weight, characteristic ladder, reconstructed KG modes, direct null-Hamiltonian variation, corner cancellation, KMS/reflection phase, and finite-link sensitivity checks supporting `../ads2-rindler global reconstruction.md`.
 - `ads2_rindler_finite_zn_source_audit.py`: read-only parser for the original `ads2_rindler_gluing.zip`, verifying the distinct wall-position $Z$ and mode-count $N$ regulators, projected global Noether energy, wall-value vector, and rank-one link.
+- `ads2_rindler_discrete_spectral.wl`: exact finite spectral-DVR/Jacobi consistency regression for the arbitrary-precision $\Delta=2$ semi-analytic global--Rindler kernels. Its matched-cutoff CCR, thermal and KMS closures are algebraically forced by the common Ritz realization and are not independent continuum evidence.
+- `ads2_rindler_independent_spectral_bins.wl`: independent normalized top-hat spectral bins with preassigned Gauss--Legendre integration, direct bin-integrated thermal targets, joint-$R+L$ inverse checks, and exact projected boost multiplication for the full complex-strip KMS diagnostic. It records the presently nonzero truncation/projection errors without fitting the weights to the kernels.
+- `ads2_rindler_overlap_quadrature_audit.wl`: independent Abel-damped spatial-integration and working-precision audit of four selected $\Delta=2$ semi-analytic overlap kernels.
 
 The smearing, collar, smooth-interface, and earlier incomplete regional comparison scripts are preserved under `../deprecated/numerics/`.
 
@@ -37,11 +40,16 @@ wolframscript -file maxwell_quantize_first_gluing_checks.wl
 python3 yang_mills_1p1_checks.py
 wolframscript -file ads2_rindler_null_reconstruction_checks.wl
 python3 ads2_rindler_finite_zn_source_audit.py /path/to/ads2_rindler_gluing.zip
+wolframscript -file ads2_rindler_discrete_spectral.wl 64 64 32 90 12
+wolframscript -file ads2_rindler_independent_spectral_bins.wl 64 4 0.2 4 16 80 8
+wolframscript -file ads2_rindler_overlap_quadrature_audit.wl 60
 ```
 
 Verified exactly in the active suite: the displayed scalar finite-matrix, port, feedback, reduced-state/open-system, continuum-mode, arbitrary-cut, associativity, and optional product-reference identities; the Maxwell transverse and longitudinal-normal polarization equations; both Maxwell gluing determinants; the connected-mode normalizations; the Neumann-lifting coefficients; the \(1+1\) reduced Hamiltonian; and the AdS$_2$ null lowest-weight/ladder, KG, Hamiltonian-variation, corner, reflection-phase, and KMS residuals. The Yang--Mills script separately supplies finite \(SU(2)\) matrix and representation-space witnesses; the general compact-\(G\) statements remain the analytic proofs in the note. The finite-$(Z,N)$ source facts are separately checked by the archive parser.
 
 The AdS$_2$ partial-trace suite separately verifies the finite Hamiltonian/covariance/Williamson/density-matrix identities, the boost Killing vector and charge normalization, and records rather than hides the cutoff-dependent covariance, entropy, modular-kernel, and boost-flow errors.
+
+The $\Delta=2$ exact DVR suite verifies the elementary standing-wave overlap reduction, boost-Jacobi recurrence, phase-locked thermal relation, and its algebraically forced finite Gaussian identities. The independent-bin suite separately exposes genuine global, spectral-range, bin-resolution, quadrature and precision errors. Its current full-strip KMS residual is not converged and is recorded as such. Neither suite proves a general-$\Delta$ continuum theorem or a sharp Fock-factorization result.
 
 Numerically reproduced in the scalar suite: fixed-window spectral convergence, the recorded matrix conditioning, finite-regulator symplectic and Hamiltonian residuals, covariance scaling, and the optional product-reference tables. These remain at their stated numerical claim tier.
 

@@ -6,20 +6,16 @@
 
 The direct verdict is
 
-$$
-\boxed{
-\text{there is no generic theorem }T\circ R_\Gamma\simeq R_\Gamma\circ T.
+$$\begin{align}
+\boxed{ \text{there is no generic theorem }T\circ R_\Gamma\simeq R_\Gamma\circ T.
 }
-$$
+\end{align}$$
 
 Partial trace is not classical sewing, coisotropic reduction, or second-class reduction. What is true in the finite split-adapted setting is a more precise pair of statements:
 
 $$\begin{align}
-\mathcal D_2\mathcal R_\Gamma(\mathfrak A^{\mathrm{dup}})
-&=\mathcal R_\Gamma\mathcal D_2(\mathfrak A^{\mathrm{dup}})
-=\mathfrak A_{1\Gamma}, \tag{0.1}\\
-\omega_{1\Gamma}
-&=\omega_{\mathrm{gl}}|_{\mathfrak A_{1\Gamma}}, \tag{0.2}
+\mathcal D_2\mathcal R_\Gamma(\mathfrak A^{\mathrm{dup}}) &=\mathcal R_\Gamma\mathcal D_2(\mathfrak A^{\mathrm{dup}}) =\mathfrak A_{1\Gamma}, \tag{0.1}\\
+\omega_{1\Gamma} &=\omega_{\mathrm{gl}}|_{\mathfrak A_{1\Gamma}}, \tag{0.2}
 \end{align}$$
 
 where $\mathcal D_2$ is retained-subalgebra selection, not a state map. Only in a chosen finite regular Type-I representation does (0.2) become
@@ -36,14 +32,12 @@ Here “spacelike subregion” means a subsystem of the canonical data on one Ca
 
 The notation and logical order follow [[Articles/Quantization in AdS/gluing/gluing formalism|gluing formalism]]. In particular, covariant sewing, its equal-time realization, Weyl quantization, and the state/representation layer are not interchangeable descriptions of one operation.
 
-### 1.1 Covariant sewing and equal-time reduction
+### 1.1 Covariant Sewing and Equal-Time Reduction
 
 For a cotangent-polarized artificial interface, the covariant full-trace sewing relation is
 
 $$\begin{align}
-L_{\mathrm{sew}}
-=N^*\Delta
-=\{q_1=q_2,\ \Pi_1^{\mathrm{out}}+\Pi_2^{\mathrm{out}}=0\}
+L_{\mathrm{sew}} =N^*\Delta =\{q_1=q_2,\ \Pi_1^{\mathrm{out}}+\Pi_2^{\mathrm{out}}=0\}
 \subset \overline{\mathcal Z_1}\times\mathcal Z_2. \tag{1.1}
 \end{align}$$
 
@@ -73,7 +67,7 @@ The symbol $R_\Gamma$ will mean the appropriate sewing reduction at the layer un
 - at finite equal time, the canonical coisotropic quotient or its $M$-dependent regular second-class slice;
 - quantum algebraically, the corresponding physical Weyl algebra selected inside the finite duplicate-port parent.
 
-### 1.2 Quantization, observables, states, and dynamics
+### 1.2 Quantization, Observables, States, and Dynamics
 
 The following objects are distinct.
 
@@ -97,10 +91,7 @@ Thus the intrinsic finite regional state is always first defined as a restrictio
 Fix a finite linear regulator. For each region require a nondegenerate symplectic direct sum
 
 $$\begin{align}
-\boxed{
-\mathcal S_i^{\mathrm{ext}}
-=\mathcal B_i\oplus^\sigma\mathcal Z_i,
-} \tag{2.1}
+\boxed{ \mathcal S_i^{\mathrm{ext}} =\mathcal B_i\oplus^\sigma\mathcal Z_i, } \tag{2.1}
 \end{align}$$
 
 where
@@ -113,30 +104,20 @@ where
 For two regions this gives
 
 $$\begin{align}
-\mathcal S^{\mathrm{dup}}
-=\mathcal B_1\oplus^\sigma\mathcal B_2
-\oplus^\sigma\mathcal Z_1\oplus^\sigma\mathcal Z_2. \tag{2.2}
+\mathcal S^{\mathrm{dup}} =\mathcal B_1\oplus^\sigma\mathcal B_2 \oplus^\sigma\mathcal Z_1\oplus^\sigma\mathcal Z_2. \tag{2.2}
 \end{align}$$
 
 Require in addition a canonical port transformation
 
 $$\begin{align}
-\mathcal Z_1\oplus^\sigma\mathcal Z_2
-&=\mathcal Z_\Delta\oplus^\sigma\mathcal N_\Gamma, \tag{2.3}
+\mathcal Z_1\oplus^\sigma\mathcal Z_2 &=\mathcal Z_\Delta\oplus^\sigma\mathcal N_\Gamma, \tag{2.3}
 \end{align}$$
 
 such that the second-class constraint surface sets the relative normal sector $\mathcal N_\Gamma$ to zero and leaves the diagonal/common port sector $\mathcal Z_\Delta$. Then
 
 $$\begin{align}
-\boxed{
-\mathcal S^{\mathrm{dup}}
-=\mathcal B_1\oplus^\sigma\mathcal B_2
-\oplus^\sigma\mathcal Z_\Delta\oplus^\sigma\mathcal N_\Gamma,
-} \tag{2.4}\\
-\boxed{
-\mathcal S^{\mathrm{gl}}
-=\mathcal B_1\oplus^\sigma\mathcal B_2
-\oplus^\sigma\mathcal Z_\Delta.
+\boxed{ \mathcal S^{\mathrm{dup}} =\mathcal B_1\oplus^\sigma\mathcal B_2 \oplus^\sigma\mathcal Z_\Delta\oplus^\sigma\mathcal N_\Gamma, } \tag{2.4}\\
+\boxed{ \mathcal S^{\mathrm{gl}} =\mathcal B_1\oplus^\sigma\mathcal B_2 \oplus^\sigma\mathcal Z_\Delta.
 } \tag{2.5}
 \end{align}$$
 
@@ -148,7 +129,7 @@ $$\begin{align}
 
 and likewise on the left. It ensures that removing the right exclusive bulk does not remove or deform the sewing normal data.
 
-### 2.2 Why this is not automatic
+### 2.2 Why This Is Not Automatic
 
 Suppose regional configuration variables are naively written as $(c_i,q_i)$ with kinetic matrix
 
@@ -176,15 +157,13 @@ Stiffness/Hamiltonian cross terms between $\mathcal B_i$ and $\mathcal Z_i$ are 
 
 This section proves the split-adapted hypothesis for the centered finite scalar regulator used in [[Articles/Quantization in AdS/gluing/formalism|formalism]] and [[Articles/Quantization in AdS/gluing/reduced-state-open-system-scalar|reduced-state-open-system-scalar]]. It is a benchmark, not a theorem for arbitrary port regulators.
 
-### 3.1 Duplicate regional variables and the port Schur complement
+### 3.1 Duplicate Regional Variables and the Port Schur Complement
 
 On each half interval $y\in[0,L]$, take
 
 $$\begin{align}
-h(y)&=\frac yL,&
-u_n(y)&=\sqrt{\frac2L}\sin\frac{n\pi y}{L},\\
-A_n&=(-1)^{n+1}\frac{\sqrt{2L}}{n\pi},&
-k_n&=\frac{n\pi}{L}. \tag{3.1}
+h(y)&=\frac yL,& u_n(y)&=\sqrt{\frac2L}\sin\frac{n\pi y}{L},\\
+A_n&=(-1)^{n+1}\frac{\sqrt{2L}}{n\pi},& k_n&=\frac{n\pi}{L}. \tag{3.1}
 \end{align}$$
 
 Let $\boldsymbol A=(A_1,\ldots,A_N)^{\mathrm T}$. Before sewing, region $i$ has independent variables $(\boldsymbol c_i,q_i)$ and kinetic matrix
@@ -200,34 +179,27 @@ M_i=
 The port Schur complement is
 
 $$\begin{align}
-r_N
-&:=\frac L3-\boldsymbol A^{\mathrm T}\boldsymbol A\\
-&=\frac{2L}{\pi^2}\sum_{n>N}\frac1{n^2}
-=\frac{\rho_N}{2}>0, \tag{3.3}\\
+r_N &:=\frac L3-\boldsymbol A^{\mathrm T}\boldsymbol A\\
+&=\frac{2L}{\pi^2}\sum_{n>N}\frac1{n^2} =\frac{\rho_N}{2}>0, \tag{3.3}\\
 \rho_N&=\frac{4L}{\pi^2}\sum_{n>N}\frac1{n^2}. \tag{3.4}
 \end{align}$$
 
 The equality uses $\sum_{n\ge1}A_n^2=L/3$. Positivity of $r_N$ proves that every finite regional mass matrix is nondegenerate.
 
-### 3.2 Region-wise canonical shear
+### 3.2 Region-Wise Canonical Shear
 
 Define, before imposing $q_1=q_2$,
 
 $$\begin{align}
-\boldsymbol C_i&=\boldsymbol c_i+\boldsymbol A q_i,&
-\boldsymbol V_i&=p_{\boldsymbol c_i},\\
+\boldsymbol C_i&=\boldsymbol c_i+\boldsymbol A q_i,& \boldsymbol V_i&=p_{\boldsymbol c_i},\\
 \pi_i&=p_{q_i}-\boldsymbol A^{\mathrm T}p_{\boldsymbol c_i}. \tag{3.5}
 \end{align}$$
 
 The original momenta obey
 
 $$\begin{align}
-p_{\boldsymbol c_i}
-&=\dot{\boldsymbol c}_i+\boldsymbol A\dot q_i
-=\dot{\boldsymbol C}_i=\boldsymbol V_i,\\
-p_{q_i}
-&=\boldsymbol A^{\mathrm T}\dot{\boldsymbol c}_i+\frac L3\dot q_i
-=\boldsymbol A^{\mathrm T}\boldsymbol V_i+r_N\dot q_i,\\
+p_{\boldsymbol c_i} &=\dot{\boldsymbol c}_i+\boldsymbol A\dot q_i =\dot{\boldsymbol C}_i=\boldsymbol V_i,\\
+p_{q_i} &=\boldsymbol A^{\mathrm T}\dot{\boldsymbol c}_i+\frac L3\dot q_i =\boldsymbol A^{\mathrm T}\boldsymbol V_i+r_N\dot q_i,\\
 &\boxed{\pi_i=r_N\dot q_i.} \tag{3.6}
 \end{align}$$
 
@@ -253,53 +225,38 @@ M_i
 More importantly, the canonical one-form is preserved:
 
 $$\begin{align}
-p_{\boldsymbol c_i}^{\mathrm T}\delta\boldsymbol c_i
-+p_{q_i}\delta q_i
-=\boldsymbol V_i^{\mathrm T}\delta\boldsymbol C_i
-+\pi_i\delta q_i. \tag{3.8}
+p_{\boldsymbol c_i}^{\mathrm T}\delta\boldsymbol c_i +p_{q_i}\delta q_i =\boldsymbol V_i^{\mathrm T}\delta\boldsymbol C_i +\pi_i\delta q_i. \tag{3.8}
 \end{align}$$
 
 Therefore
 
 $$\begin{align}
-\mathcal B_{i,N}
-&:=\operatorname{span}(\boldsymbol C_i,\boldsymbol V_i),&
-\mathcal Z_{i,N}
-&:=\operatorname{span}(q_i,\pi_i),\\
-\mathcal S_{i,N}^{\mathrm{ext}}
-&=\mathcal B_{i,N}\oplus^\sigma\mathcal Z_{i,N}. \tag{3.9}
+\mathcal B_{i,N} &:=\operatorname{span}(\boldsymbol C_i,\boldsymbol V_i),& \mathcal Z_{i,N} &:=\operatorname{span}(q_i,\pi_i),\\
+\mathcal S_{i,N}^{\mathrm{ext}} &=\mathcal B_{i,N}\oplus^\sigma\mathcal Z_{i,N}. \tag{3.9}
 \end{align}$$
 
 The regional Hamiltonian still contains a stiffness coupling. With
 
 $$\begin{align}
-b_n&=A_nk_n^2,&
-D_0&=\operatorname{diag}(k_n^2+m^2),\\
+b_n&=A_nk_n^2,& D_0&=\operatorname{diag}(k_n^2+m^2),\\
 \kappa_{R,N}&=\frac{2N+1}{L}+m^2r_N,
 \end{align}$$
 
 one has
 
 $$\begin{align}
-H_i
-=\frac12\boldsymbol V_i^{\mathrm T}\boldsymbol V_i
-+\frac{\pi_i^2}{2r_N}
-+\frac12\boldsymbol C_i^{\mathrm T}D_0\boldsymbol C_i
--q_i\boldsymbol b^{\mathrm T}\boldsymbol C_i
-+\frac12\kappa_{R,N}q_i^2. \tag{3.10}
+H_i =\frac12\boldsymbol V_i^{\mathrm T}\boldsymbol V_i +\frac{\pi_i^2}{2r_N} +\frac12\boldsymbol C_i^{\mathrm T}D_0\boldsymbol C_i -q_i\boldsymbol b^{\mathrm T}\boldsymbol C_i +\frac12\kappa_{R,N}q_i^2. \tag{3.10}
 \end{align}$$
 
 Thus (3.9) is an exact symplectic factorization while the parent dynamics generally couples its factors. This is precisely why no parent-ground-state factorization follows from the kinematics.
 
-### 3.3 Common and relative port variables
+### 3.3 Common and Relative Port Variables
 
 Define
 
 $$\begin{align}
-q&=\frac{q_1+q_2}{2},&
-\xi&=q_1-q_2,\\
-\pi&=\pi_1+\pi_2,&
-\eta&=\frac{\pi_1-\pi_2}{2}. \tag{3.11}
+q&=\frac{q_1+q_2}{2},& \xi&=q_1-q_2,\\
+\pi&=\pi_1+\pi_2,& \eta&=\frac{\pi_1-\pi_2}{2}. \tag{3.11}
 \end{align}$$
 
 The inverse transformation is
@@ -312,19 +269,14 @@ q_1&=q+\frac\xi2,&q_2&=q-\frac\xi2,\\
 It is canonical because
 
 $$\begin{align}
-\boxed{
-\pi_1\delta q_1+\pi_2\delta q_2
-=\pi\delta q+\eta\delta\xi.
+\boxed{ \pi_1\delta q_1+\pi_2\delta q_2 =\pi\delta q+\eta\delta\xi.
 } \tag{3.12}
 \end{align}$$
 
 The parent stiffness coupling in these variables contains
 
 $$\begin{align}
--q_1\boldsymbol b^{\mathrm T}\boldsymbol C_1
--q_2\boldsymbol b^{\mathrm T}\boldsymbol C_2
-=-q\,\boldsymbol b^{\mathrm T}(\boldsymbol C_1+\boldsymbol C_2)
--\frac\xi2\boldsymbol b^{\mathrm T}(\boldsymbol C_1-\boldsymbol C_2). \tag{3.13}
+-q_1\boldsymbol b^{\mathrm T}\boldsymbol C_1 -q_2\boldsymbol b^{\mathrm T}\boldsymbol C_2 =-q\,\boldsymbol b^{\mathrm T}(\boldsymbol C_1+\boldsymbol C_2) -\frac\xi2\boldsymbol b^{\mathrm T}(\boldsymbol C_1-\boldsymbol C_2). \tag{3.13}
 \end{align}$$
 
 Thus the normal coordinate $\xi$ is kinematically orthogonal to the physical sector but is coupled by the unconstrained parent Hamiltonian to the relative bulk combination. This exhibits directly why the kinematic factorization does not imply parent-dynamical or parent-ground-state factorization.
@@ -333,9 +285,7 @@ Continuity and its Hamiltonian preservation are
 
 $$\begin{align}
 \chi&=\xi=0,\\
-\psi&=\dot q_1-\dot q_2
-=\frac{\pi_1-\pi_2}{r_N}
-=\frac{2\eta}{r_N}=0. \tag{3.14}
+\psi&=\dot q_1-\dot q_2 =\frac{\pi_1-\pi_2}{r_N} =\frac{2\eta}{r_N}=0. \tag{3.14}
 \end{align}$$
 
 Consequently $\psi=0$ is equivalent to $\eta=0$, and
@@ -354,70 +304,53 @@ $$\begin{align}
 The full parent and reduced spaces take the split-adapted form
 
 $$\begin{align}
-\mathcal S_N^{\mathrm{dup}}
-&=\mathcal B_{1,N}\oplus^\sigma\mathcal B_{2,N}
-\oplus^\sigma\mathcal Z_{\Delta,N}
-\oplus^\sigma\mathcal N_{\Gamma,N}, \tag{3.17}\\
-\mathcal S_N^{\mathrm{gl}}
-&=\mathcal B_{1,N}\oplus^\sigma\mathcal B_{2,N}
-\oplus^\sigma\mathcal Z_{\Delta,N}. \tag{3.18}
+\mathcal S_N^{\mathrm{dup}} &=\mathcal B_{1,N}\oplus^\sigma\mathcal B_{2,N} \oplus^\sigma\mathcal Z_{\Delta,N} \oplus^\sigma\mathcal N_{\Gamma,N}, \tag{3.17}\\
+\mathcal S_N^{\mathrm{gl}} &=\mathcal B_{1,N}\oplus^\sigma\mathcal B_{2,N} \oplus^\sigma\mathcal Z_{\Delta,N}. \tag{3.18}
 \end{align}$$
 
 On the constraint surface, $q_1=q_2=q$ and $\pi_1=\pi_2=r_N\dot q$. Hence the surviving common-port momentum is
 
 $$\begin{align}
-\boxed{
-\pi=\pi_1+\pi_2=2r_N\dot q=\rho_N\dot q.
+\boxed{ \pi=\pi_1+\pi_2=2r_N\dot q=\rho_N\dot q.
 } \tag{3.19}
 \end{align}$$
 
 This is exactly the $(q,\pi_q)$ pair used by the conforming Hamiltonian and the reduced-state note. It is not an additional continuum oscillator.
 
-### 3.4 Benchmark boundary
+### 3.4 Benchmark Boundary
 
 Equations (3.3), (3.7), (3.8), (3.12), (3.15), and (3.19) are exact finite identities. They establish the split-adapted hypothesis for this centered scalar regulator. They do not establish it for noncentral or nonconforming regulators, field-valued ports, constrained systems, gauge theory, gravity, or interactions.
 
 ## 4. Algebraic Discard and the Finite Commuting Square
 
-### 4.1 Physical and retained algebras
+### 4.1 Physical and Retained Algebras
 
 Let
 
 $$\begin{align}
-\mathfrak A^{\mathrm{dup}}
-&:=\mathfrak W(\mathcal S^{\mathrm{dup}}),\\
-\mathfrak B_i
-&:=\mathfrak W(\mathcal B_i),\\
-\mathfrak Z_\Delta
-&:=\mathfrak W(\mathcal Z_\Delta),\\
-\mathfrak N_\Gamma
-&:=\mathfrak W(\mathcal N_\Gamma). \tag{4.1}
+\mathfrak A^{\mathrm{dup}} &:=\mathfrak W(\mathcal S^{\mathrm{dup}}),\\
+\mathfrak B_i &:=\mathfrak W(\mathcal B_i),\\
+\mathfrak Z_\Delta &:=\mathfrak W(\mathcal Z_\Delta),\\
+\mathfrak N_\Gamma &:=\mathfrak W(\mathcal N_\Gamma). \tag{4.1}
 \end{align}$$
 
 All commutants in this section are taken inside the displayed universal finite parent Weyl algebra. By the nondegenerate symplectic direct sum (2.4),
 
 $$\begin{align}
-\mathfrak A^{\mathrm{dup}}
-\simeq
-\mathfrak B_1\otimes_{\min}\mathfrak B_2
-\otimes_{\min}\mathfrak Z_\Delta
-\otimes_{\min}\mathfrak N_\Gamma. \tag{4.2}
+\mathfrak A^{\mathrm{dup}} \simeq \mathfrak B_1\otimes_{\min}\mathfrak B_2 \otimes_{\min}\mathfrak Z_\Delta \otimes_{\min}\mathfrak N_\Gamma. \tag{4.2}
 \end{align}$$
 
 For every ambient subalgebra $\mathfrak A\subseteq\mathfrak A^{\mathrm{dup}}$ occurring below, define the finite second-class physical selection by
 
 $$\begin{align}
-\boxed{
-\mathcal R_\Gamma(\mathfrak A)
-:=\mathfrak N_\Gamma'\cap\mathfrak A.
+\boxed{ \mathcal R_\Gamma(\mathfrak A) :=\mathfrak N_\Gamma'\cap\mathfrak A.
 } \tag{4.3}
 \end{align}$$
 
 In particular,
 
 $$\begin{align}
-\mathcal R_\Gamma(\mathfrak A^{\mathrm{dup}})
-=\mathfrak W(\mathcal S^{\mathrm{gl}}). \tag{4.3a}
+\mathcal R_\Gamma(\mathfrak A^{\mathrm{dup}}) =\mathfrak W(\mathcal S^{\mathrm{gl}}). \tag{4.3a}
 \end{align}$$
 
 This is the embedded physical Weyl factor of `gluing formalism.md`. It is canonically isomorphic to the Weyl algebra obtained by first reducing the classical phase space. The physical dynamics is the reduced/Dirac-projected dynamics; the unconstrained parent flow need not preserve (4.3a).
@@ -425,41 +358,30 @@ This is the embedded physical Weyl factor of `gluing formalism.md`. It is canoni
 Define discard of the right exclusive bulk as the retained-observable selection
 
 $$\begin{align}
-\boxed{
-\mathcal D_2(\mathfrak A)
-:=\mathfrak B_2'\cap\mathfrak A,
-} \tag{4.4}
+\boxed{ \mathcal D_2(\mathfrak A) :=\mathfrak B_2'\cap\mathfrak A, } \tag{4.4}
 \end{align}$$
 
 for each ambient subalgebra $\mathfrak A\subseteq\mathfrak A^{\mathrm{dup}}$ occurring below. This is not a state map. It keeps all parent observables which are symplectically independent of the right exclusive bulk.
 
-### 4.2 The theorem
+### 4.2 The Theorem
 
 **Theorem (finite discard--sewing algebraic square).** Under the finite split-adapted hypothesis,
 
 $$\begin{align}
-\boxed{
-\mathcal D_2\mathcal R_\Gamma(\mathfrak A^{\mathrm{dup}})
-=\mathcal R_\Gamma\mathcal D_2(\mathfrak A^{\mathrm{dup}})
-=\mathfrak A_{1\Gamma},
-} \tag{4.5}
+\boxed{ \mathcal D_2\mathcal R_\Gamma(\mathfrak A^{\mathrm{dup}}) =\mathcal R_\Gamma\mathcal D_2(\mathfrak A^{\mathrm{dup}}) =\mathfrak A_{1\Gamma}, } \tag{4.5}
 \end{align}$$
 
 where
 
 $$\begin{align}
-\boxed{
-\mathfrak A_{1\Gamma}
-:=\mathfrak W(\mathcal B_1\oplus^\sigma\mathcal Z_\Delta)
-=\mathfrak B_2'\cap\mathfrak W(\mathcal S^{\mathrm{gl}}).
+\boxed{ \mathfrak A_{1\Gamma} :=\mathfrak W(\mathcal B_1\oplus^\sigma\mathcal Z_\Delta) =\mathfrak B_2'\cap\mathfrak W(\mathcal S^{\mathrm{gl}}).
 } \tag{4.6}
 \end{align}$$
 
 **Proof.** Equation (4.2) identifies the two relative commutants exactly. Hence
 
 $$\begin{align}
-\mathcal D_2\mathcal R_\Gamma(\mathfrak A^{\mathrm{dup}})
-&=\mathfrak B_2'\cap\mathfrak N_\Gamma'\cap\mathfrak A^{\mathrm{dup}}\\
+\mathcal D_2\mathcal R_\Gamma(\mathfrak A^{\mathrm{dup}}) &=\mathfrak B_2'\cap\mathfrak N_\Gamma'\cap\mathfrak A^{\mathrm{dup}}\\
 &=\mathfrak N_\Gamma'\cap\mathfrak B_2'\cap\mathfrak A^{\mathrm{dup}}\\
 &=\mathcal R_\Gamma\mathcal D_2(\mathfrak A^{\mathrm{dup}})\\
 &=\mathfrak W(\mathcal B_1\oplus^\sigma\mathcal Z_\Delta).
@@ -470,10 +392,7 @@ The formal interchange of intersections is elementary. The substantive content i
 Before sewing,
 
 $$\begin{align}
-\mathcal D_2(\mathfrak A^{\mathrm{dup}})
-=\mathfrak W(
-\mathcal B_1\oplus^\sigma
-\mathcal Z_1\oplus^\sigma\mathcal Z_2), \tag{4.7}
+\mathcal D_2(\mathfrak A^{\mathrm{dup}}) =\mathfrak W( \mathcal B_1\oplus^\sigma \mathcal Z_1\oplus^\sigma\mathcal Z_2), \tag{4.7}
 \end{align}$$
 
 because $\mathcal Z_1\oplus^\sigma\mathcal Z_2=\mathcal Z_\Delta\oplus^\sigma\mathcal N_\Gamma$. Thus “discard the right side before sewing” means discard only $\mathcal B_2$ and retain both incidence ports. If one discards $\mathcal Z_2$ as well, $q_1-q_2=0$ can no longer be imposed: the required sewing datum has been deleted and the second route is not defined.
@@ -482,33 +401,24 @@ Equation (4.5) is not a theorem that states commute, that ground states commute 
 
 ## 5. Regional States and Finite Partial Trace
 
-### 5.1 Intrinsic definition
+### 5.1 Intrinsic Definition
 
 Let $\iota_{1\Gamma}:\mathfrak A_{1\Gamma}\hookrightarrow\mathfrak A_{\mathrm{gl}}$ denote the inclusion. For any glued state $\omega_{\mathrm{gl}}$ define
 
 $$\begin{align}
-\boxed{
-\omega_{1\Gamma}
-:=\operatorname{res}_{1\Gamma}(\omega_{\mathrm{gl}})
-=\omega_{\mathrm{gl}}\circ\iota_{1\Gamma}
-=\omega_{\mathrm{gl}}|_{\mathfrak A_{1\Gamma}}.
+\boxed{ \omega_{1\Gamma} :=\operatorname{res}_{1\Gamma}(\omega_{\mathrm{gl}}) =\omega_{\mathrm{gl}}\circ\iota_{1\Gamma} =\omega_{\mathrm{gl}}|_{\mathfrak A_{1\Gamma}}.
 } \tag{5.1}
 \end{align}$$
 
 This definition uses only the algebra inclusion. It remains meaningful when no density matrix or Hilbert tensor product exists.
 
-### 5.2 Finite regular Type-I realization
+### 5.2 Finite Regular Type-I Realization
 
 Only now choose the finite regular Schrödinger representation. Stone--von Neumann uniqueness and (2.5) give
 
 $$\begin{align}
-\mathcal H_{\mathrm{gl}}
-&\simeq
-\mathcal H_1^{\mathrm{int}}
-\otimes\mathcal H_2^{\mathrm{int}}
-\otimes\mathcal H_\Gamma, \tag{5.2}\\
-\pi(\mathfrak A_{1\Gamma})''
-&=B(\mathcal H_1^{\mathrm{int}})
+\mathcal H_{\mathrm{gl}} &\simeq \mathcal H_1^{\mathrm{int}} \otimes\mathcal H_2^{\mathrm{int}} \otimes\mathcal H_\Gamma, \tag{5.2}\\
+\pi(\mathfrak A_{1\Gamma})'' &=B(\mathcal H_1^{\mathrm{int}})
 \,\bar\otimes\,\mathbf1_2
 \,\bar\otimes\,B(\mathcal H_\Gamma). \tag{5.3}
 \end{align}$$
@@ -516,8 +426,7 @@ $$\begin{align}
 If $\omega_{\mathrm{gl}}$ is normal with density matrix $\rho_{\mathrm{gl}}$, (5.1) is represented by
 
 $$\begin{align}
-\boxed{
-\rho_{1\Gamma}=\operatorname{Tr}_{\mathcal H_2^{\mathrm{int}}}\rho_{\mathrm{gl}}.
+\boxed{ \rho_{1\Gamma}=\operatorname{Tr}_{\mathcal H_2^{\mathrm{int}}}\rho_{\mathrm{gl}}.
 } \tag{5.4}
 \end{align}$$
 
@@ -526,17 +435,14 @@ This is exactly the port-complete finite reduction in `reduced-state-open-system
 It does not assign ownership of the common port to region 1. Define similarly
 
 $$\begin{align}
-\mathfrak A_{2\Gamma}
-&=\mathfrak W(\mathcal B_2\oplus^\sigma\mathcal Z_\Delta),\\
-\mathfrak A_\Gamma
-&=\mathfrak W(\mathcal Z_\Delta). \tag{5.5}
+\mathfrak A_{2\Gamma} &=\mathfrak W(\mathcal B_2\oplus^\sigma\mathcal Z_\Delta),\\
+\mathfrak A_\Gamma &=\mathfrak W(\mathcal Z_\Delta). \tag{5.5}
 \end{align}$$
 
 Then in the finite regular representation
 
 $$\begin{align}
-\mathfrak A_{1\Gamma}\cap\mathfrak A_{2\Gamma}
-=\mathfrak A_\Gamma. \tag{5.6}
+\mathfrak A_{1\Gamma}\cap\mathfrak A_{2\Gamma} =\mathfrak A_\Gamma. \tag{5.6}
 \end{align}$$
 
 The port-complete regional algebras overlap and generally do not commute because $[q,\pi]=\mathrm i$. The common interface algebra belongs to the overlap, not exclusively to either region.
@@ -544,15 +450,13 @@ The port-complete regional algebras overlap and generally do not commute because
 There is a distinct subsystem choice after sewing:
 
 $$\begin{align}
-\boxed{
-\rho_1^{\mathrm{int}}
-=\operatorname{Tr}_{2,\Gamma}\rho_{\mathrm{gl}}.
+\boxed{ \rho_1^{\mathrm{int}} =\operatorname{Tr}_{2,\Gamma}\rho_{\mathrm{gl}}.
 } \tag{5.7}
 \end{align}$$
 
 It represents restriction to $\mathfrak W(\mathcal B_1)$ and corresponds to the complementary split $1\,|\,(2+\Gamma)$. It is not the same subsystem as $(1+\Gamma)\,|\,2$, and it should not be described as assigning the interface to region 2 before sewing.
 
-### 5.3 Partial trace, elimination, and a channel
+### 5.3 Partial Trace, Elimination, and a Channel
 
 For a Gaussian state, (5.4) selects the principal covariance block for $(\mathcal B_1,\mathcal Z_\Delta)$. It is not a Schur complement. A Schur complement arises in conditioning or operator elimination.
 
@@ -565,23 +469,14 @@ A CPTP map on arbitrary retained density matrices requires an assignment $\mathc
 In the finite regular parent representation, (2.4) may also be realized as
 
 $$\begin{align}
-\mathcal H_{\mathrm{dup}}
-\simeq
-\mathcal H_1^{\mathrm{int}}
-\otimes\mathcal H_2^{\mathrm{int}}
-\otimes\mathcal H_\Gamma
-\otimes\mathcal H_{\mathcal N}. \tag{6.1}
+\mathcal H_{\mathrm{dup}} \simeq \mathcal H_1^{\mathrm{int}} \otimes\mathcal H_2^{\mathrm{int}} \otimes\mathcal H_\Gamma \otimes\mathcal H_{\mathcal N}. \tag{6.1}
 \end{align}$$
 
 For a chosen parent state extension $\widetilde\rho$ whose physical marginal is $\rho_{\mathrm{gl}}$,
 
 $$\begin{align}
-\operatorname{Tr}_{\mathcal N}\widetilde\rho
-&=\rho_{\mathrm{gl}},\\
-\rho_{1\Gamma}
-&=\operatorname{Tr}_{2,\mathcal N}\widetilde\rho
-=\operatorname{Tr}_2\operatorname{Tr}_{\mathcal N}\widetilde\rho
-=\operatorname{Tr}_{\mathcal N}\operatorname{Tr}_2\widetilde\rho. \tag{6.2}
+\operatorname{Tr}_{\mathcal N}\widetilde\rho &=\rho_{\mathrm{gl}},\\
+\rho_{1\Gamma} &=\operatorname{Tr}_{2,\mathcal N}\widetilde\rho =\operatorname{Tr}_2\operatorname{Tr}_{\mathcal N}\widetilde\rho =\operatorname{Tr}_{\mathcal N}\operatorname{Tr}_2\widetilde\rho. \tag{6.2}
 \end{align}$$
 
 Equation (6.2) is only the representation-level realization of restrictions from one common parent state. It does not define second-class reduction as a partial trace. The parent extension is not canonical: for example, $\rho_{\mathrm{gl}}\otimes\tau_{\mathcal N}$ gives one extension for every normal state $\tau_{\mathcal N}$, and correlated extensions can have the same physical marginal.
@@ -592,7 +487,7 @@ The physical algebra is therefore defined by the relative commutant (4.3), or eq
 
 ## 7. Doubled Density Kernels: Trace Cap Versus Sewing Kernel
 
-### 7.1 The two kernels
+### 7.1 The Two Kernels
 
 Choose the finite regular Schrödinger configuration polarization. Let $b_i^\pm$ denote the region-$i$ exclusive-bulk configuration variables on the ket/bra branches and let $q_i^\pm$ denote duplicated port variables. A finite density kernel has the form
 
@@ -605,24 +500,20 @@ b_1^-,b_2^-,q_1^-,q_2^-). \tag{7.1}
 The right-bulk partial trace is the diagonal cap
 
 $$\begin{align}
-K_{\mathrm{cap},2}(b_2^+,b_2^-)
-=\delta^{(d_2)}(b_2^+-b_2^-)
+K_{\mathrm{cap},2}(b_2^+,b_2^-) =\delta^{(d_2)}(b_2^+-b_2^-)
 |\mathrm db_2^+|^{1/2}|\mathrm db_2^-|^{1/2}, \tag{7.2}
 \end{align}$$
 
 so that
 
 $$\begin{align}
-(\operatorname{Cap}_2\rho)(b_1^+,q^+;b_1^-,q^-)
-=\int\mathrm d^{d_2}b_2\,
-\rho(b_1^+,b_2,q^+;b_1^-,b_2,q^-). \tag{7.3}
+(\operatorname{Cap}_2\rho)(b_1^+,q^+;b_1^-,q^-) =\int\mathrm d^{d_2}b_2\, \rho(b_1^+,b_2,q^+;b_1^-,b_2,q^-). \tag{7.3}
 \end{align}$$
 
 Spatial sewing on each branch is instead the diagonal/conormal kernel
 
 $$\begin{align}
-K_{\mathrm{sew}}(q_2,q_1)
-=\delta(q_2-q_1)
+K_{\mathrm{sew}}(q_2,q_1) =\delta(q_2-q_1)
 |\mathrm dq_2|^{1/2}|\mathrm dq_1|^{1/2}. \tag{7.4}
 \end{align}$$
 
@@ -631,9 +522,7 @@ Its conormal relation is $q_1=q_2$ with oppositely oriented port covectors. On t
 For time-sliced finite quadratic dynamics, (7.4) is used with the same normalized Faddeev--Senjanović/coarea half-density as in `gluing formalism.md`. At each branch and internal time slice,
 
 $$\begin{align}
-(2\pi\mathrm i\varepsilon)^{r/2}
-\sqrt{\det G}\,\delta(Ax)
-=\nu_\varepsilon\delta_{A,I}(x), \tag{7.5}
+(2\pi\mathrm i\varepsilon)^{r/2} \sqrt{\det G}\,\delta(Ax) =\nu_\varepsilon\delta_{A,I}(x), \tag{7.5}
 \end{align}$$
 
 where $G=AM^{-1}A^{\mathrm T}$. The bra branch carries the conjugate Lorentzian factor; in Euclidean time both square roots are chosen positive. For the centered scalar,
@@ -641,13 +530,12 @@ where $G=AM^{-1}A^{\mathrm T}$. The bra branch carries the conjugate Lorentzian 
 $$\begin{align}
 \delta_{A,I}(x)&=\delta(q_1-q_2),\\
 G_N&=\frac4{\rho_N},\\
-\nu_{\varepsilon,N}
-&=2\left(\frac{2\pi\mathrm i\varepsilon}{\rho_N}\right)^{1/2}. \tag{7.6}
+\nu_{\varepsilon,N} &=2\left(\frac{2\pi\mathrm i\varepsilon}{\rho_N}\right)^{1/2}. \tag{7.6}
 \end{align}$$
 
 The cap (7.2) has unit identity-kernel normalization. It introduces no Faddeev--Senjanović determinant because it is not a constraint reduction.
 
-### 7.2 Finite Gaussian interchange theorem
+### 7.2 Finite Gaussian Interchange Theorem
 
 **Theorem (trace-cap and sewing-kernel interchange).** Assume:
 
@@ -659,12 +547,7 @@ The cap (7.2) has unit identity-kernel normalization. It introduces no Faddeev--
 Then
 
 $$\begin{align}
-\boxed{
-\operatorname{Cap}_2\circ
-(\operatorname{Sew}_\Gamma^+\otimes\overline{\operatorname{Sew}_\Gamma^-})
-=
-(\operatorname{Sew}_\Gamma^+\otimes\overline{\operatorname{Sew}_\Gamma^-})
-\circ\operatorname{Cap}_2
+\boxed{ \operatorname{Cap}_2\circ (\operatorname{Sew}_\Gamma^+\otimes\overline{\operatorname{Sew}_\Gamma^-}) = (\operatorname{Sew}_\Gamma^+\otimes\overline{\operatorname{Sew}_\Gamma^-}) \circ\operatorname{Cap}_2
 } \tag{7.7}
 \end{align}$$
 
@@ -672,14 +555,12 @@ on this finite Gaussian kernel class. Both sides yield the port-complete regiona
 
 **Proof.** In the centered one-port notation, both sides reduce to the same expression
 
-$$\begin{aligned}
-\mathcal N_{\mathrm{FS}}^+
-\overline{\mathcal N_{\mathrm{FS}}^-}
-\int\mathrm d^{d_2}b_2\,
-\widetilde\rho^{\mathrm{dup}}
+$$\begin{align}
+\mathcal N_{\mathrm{FS}}^+ \overline{\mathcal N_{\mathrm{FS}}^-}
+\int\mathrm d^{d_2}b_2\, \widetilde\rho^{\mathrm{dup}}
 (&b_1^+,b_2,q^+,q^+;\\
  &b_1^-,b_2,q^-,q^-), \tag{7.8}
-\end{aligned}$$
+\end{align}$$
 
 where $\mathcal N_{\mathrm{FS}}^\pm$ denotes the product of the already fixed branchwise factors (7.5) over the relevant slices. If the cap is composed first, the $b_2^+=b_2^-$ delta is integrated before the port deltas. If sewing is composed first, $q_1^\pm=q_2^\pm=q^\pm$ is imposed before the $b_2$ integral. Absolute integrability gives finite-dimensional Tonelli/Fubini, and the determinant/half-density factors are identical constants in the two orders. Equivalently, the cap conormal and sewing conormals are transverse because they involve disjoint split-adapted coordinate sectors. $\square$
 
@@ -689,47 +570,41 @@ Equation (7.7) is the kernel-composition realization of the algebraic square (4.
 
 ## 8. Continuum Endpoint
 
-### 8.1 The finite port does not become a continuum tensor factor
+### 8.1 The Finite Port Does Not Become a Continuum Tensor Factor
 
 For the centered scalar, the reconstructed regional field is
 
 $$\begin{align}
-\phi_{1,N}(y)
-=\sum_{n=1}^NC_{1,n}u_n(y)+q\,e_N(y), \tag{8.1}
+\phi_{1,N}(y) =\sum_{n=1}^NC_{1,n}u_n(y)+q\,e_N(y), \tag{8.1}
 \end{align}$$
 
 with
 
 $$\begin{align}
-e_N&=h-P_N^0h,&
-2\|e_N\|_{L^2(0,L)}^2&=\rho_N\longrightarrow0. \tag{8.2}
+e_N&=h-P_N^0h,& 2\|e_N\|_{L^2(0,L)}^2&=\rho_N\longrightarrow0. \tag{8.2}
 \end{align}$$
 
 For every fixed $L^2$ bulk smearing $f$, $(f,e_N)\to0$. The regulator-dependent residual direction can isolate $(q,\pi)$ at each finite $N$, but it does not converge to a continuum point oscillator or a normal boundary tensor factor. The point-field variance at the cut is ultraviolet divergent, and the continuum velocity has no point trace on the full energy space.
 
-### 8.2 The durable continuum object
+### 8.2 The Durable Continuum Object
 
 Under the Mosco/strong-resolvent/functional-calculus and fixed-label hypotheses already proved in the existing scalar notes, the finite regional expectations converge on each fixed finite family of bulk/Weyl labels to
 
 $$\begin{align}
-\boxed{
-\omega_1
-=\omega_{\mathrm{conn}}|_{\mathfrak A_1^{\mathrm{bulk}}}.
+\boxed{ \omega_1 =\omega_{\mathrm{conn}}|_{\mathfrak A_1^{\mathrm{bulk}}}.
 } \tag{8.3}
 \end{align}$$
 
 This is algebraic state restriction. The finite density matrix is only a convenient representative at each cutoff. No claim is made of
 
 $$\begin{align}
-\rho_{1,N}\to\rho_1
-\quad\text{in trace norm}, \tag{8.4}
+\rho_{1,N}\to\rho_1 \quad\text{in trace norm}, \tag{8.4}
 \end{align}$$
 
 or of a sharp factorization
 
 $$\begin{align}
-\mathcal H_{\mathrm{conn}}
-\simeq\mathcal H_1\otimes\mathcal H_2, \tag{8.5}
+\mathcal H_{\mathrm{conn}} \simeq\mathcal H_1\otimes\mathcal H_2, \tag{8.5}
 \end{align}$$
 
 or of a generic continuum map $\operatorname{Tr}_2$.
@@ -737,10 +612,7 @@ or of a generic continuum map $\operatorname{Tr}_2$.
 The AdS$_2$--Rindler regulated partial-trace note reaches the analogous endpoint from a different finite regulator:
 
 $$\begin{align}
-\rho_R^{(\Lambda)}
-=\operatorname{Tr}_L\rho_G^{(\Lambda)}
-\quad\longrightarrow\quad
-\omega_G|_{\mathfrak A(R)} \tag{8.6}
+\rho_R^{(\Lambda)} =\operatorname{Tr}_L\rho_G^{(\Lambda)} \quad\longrightarrow\quad \omega_G|_{\mathfrak A(R)} \tag{8.6}
 \end{align}$$
 
 on fixed smooth right-wedge observables. Its lattice factorization is a global-Cauchy regulator statement and contains no duplicate-port sewing reduction. This independent example confirms the separation between finite Type-I partial trace and continuum algebraic restriction.
@@ -770,7 +642,8 @@ The present notes do not prove a Type-III classification. Type-III local-algebra
 
 The rigorous chain is
 
-$$\begin{gathered}
+$$
+\begin{gathered}
 \text{regional actions and covariant full-trace sewing relation}\\
 \Downarrow\ \text{finite split-adapted duplicate-port realization}\\
 \mathcal S^{\mathrm{dup}}
@@ -789,7 +662,8 @@ $$\begin{gathered}
 \rho_{1\Gamma}=\operatorname{Tr}_2\rho_{\mathrm{gl}}\\
 \Downarrow\ N\to\infty\ \text{on fixed bulk labels only}\\
 \omega_{\mathrm{conn}}|_{\mathfrak A_1^{\mathrm{bulk}}}.
-\end{gathered} \tag{10.1}$$
+\end{gathered} \tag{10.1}
+$$
 
 Cross-checks used in this note:
 

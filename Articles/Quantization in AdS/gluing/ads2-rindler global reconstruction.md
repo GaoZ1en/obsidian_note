@@ -880,7 +880,7 @@ $$\begin{align}
 \sum_n(\alpha_{\omega n}\beta_{\omega'n} -\beta_{\omega n}\alpha_{\omega'n})=0. \tag{8.12}
 \end{align}$$
 
-The left kernels follow from $\rho\mapsto-\rho$ and the future-time sign in (2.5). The inverse Bogoliubov identities require the sum of the left and right overlap integrals; one half-slice alone is not a complete global Cauchy surface. No sharp endpoint integral or product-Fock unitary is inferred. The formulas and measures have been audited analytically, but an independent high-precision wave-packet quadrature for general $\Delta$ has not been added; this is recorded in the claim ledger rather than hidden.
+The left kernels follow from $\rho\mapsto-\rho$ and the future-time sign in (2.5). The inverse Bogoliubov identities require the sum of the left and right overlap integrals; one half-slice alone is not a complete global Cauchy surface. No sharp endpoint integral or product-Fock unitary is inferred. At $\Delta=2$, `ads2-rindler discrete spectral Bogoliubov.md` now supplies an independent arbitrary-precision Gaussian boost-spectral quadrature, including forward CCR, joint-$R+L$ inverse identities, Planck/anomalous/detailed-balance covariances and a smooth-observable strip-KMS scan. General-$\Delta$ high-precision quadrature has not been added.
 
 ### 8.3 Analytic Continuation, Thermal Factor, and B2
 
@@ -940,125 +940,14 @@ $$\begin{align}
 The two routes give the same $e^{-\pi\omega}$ and $\beta=2\pi$. The theorem is algebraic and smeared. Equations (8.13)--(8.17) are its phase-audited wave-packet spectral realization, not a sharp factorization theorem
 $\mathcal H_G\cong\mathcal H_L\otimes\mathcal H_R$.
 
-## 9. Task J: Corrected Verdict on the Finite-$(Z,N)$ Project
-
-This section was rederived from the original uploaded archive `ads2_rindler_gluing.zip`, including both numerical logs and both Python sources. The old result had interchanged the two regulators. The correct meanings are
-
-$$\begin{align}
-\boxed{Z=\text{near-horizon tortoise-wall position}, \qquad N=\text{retained wedge-mode count per side}.} \tag{9.1}
-\end{align}$$
-
-### 9.1 Geometry and Self-Adjoint Wall Problem
-
-Each regulated wedge is
-
-$$\begin{align}
-ds^2=\frac{-d\tau^2+dz^2}{\sinh^2z}, \qquad 0<z<Z. \tag{9.2}
-\end{align}$$
-
-The AdS boundary is $z=0$ and the Killing horizon is $z\to\infty$. Thus finite $Z$ removes the near-horizon region $z>Z$. At $t=0$ the two wall points lie at
-
-$$\begin{align}
-\rho=\pm a_Z, \qquad a_Z:=\arctan(\operatorname{csch}Z), \tag{9.3}
-\end{align}$$
-
-so the two regulated exterior slices omit the central interval $|\rho|<a_Z$ around the bifurcation point. The worldline $z=Z$ has induced metric $ds^2=-d\tau^2/\sinh^2Z$ and is timelike.
-
-On each finite interval the code solves
-
-$$\begin{align}
-\left[-\frac{d^2}{dz^2}+\frac{m^2L^2}{\sinh^2z}\right]u_p^{(Z)} =\omega_p(Z)^2u_p^{(Z)}, \qquad u_p'(Z)=0, \tag{9.4}
-\end{align}$$
-
-with standard falloff at $z=0$. The Neumann condition is the natural reflecting boundary condition of this finite-interval variational problem and defines a self-adjoint discrete wedge operator. It is an auxiliary timelike-wall problem, not an exact horizon condition. For $m=0$,
-
-$$\begin{align}
-u_p^{(Z)}=\sqrt{\frac2Z}\sin\frac{(p+\tfrac12)\pi z}{Z}, \qquad p=0,1,\ldots. \tag{9.5}
-\end{align}$$
-
-The second regulator retains $p=0,\ldots,N-1$ on each side, giving $2N$ canonical oscillator pairs. At fixed $Z$, $N$ controls the wedge ultraviolet cutoff, approximately $(N-\tfrac12)\pi/Z$ in the massless benchmark. At fixed sufficiently large $N$, $Z$ controls the geometric wall/omitted-central-region error. The massive benchmark in the archive is $m=1$, $Z=10$, $N=64$.
-
-### 9.2 What Is Projected and Why the Link Is Rank One
-
-The finite Hamiltonian is not the sum of two Rindler Hamiltonians. The source explicitly **projects the global-time Noether energy** onto the retained Rindler modes. Its outside matrices contain the weight $\cosh z$:
-
-$$\begin{align}
-A_{pq}^{(Z,N)}=\int_0^Z\cosh z\,u_pu_q\,dz,
-\end{align}$$
-
-$$\begin{align}
-B_{pq}^{(Z,N)}=\int_0^Z\cosh z \left(u_p'u_q'+\frac{m^2L^2}{\sinh^2z}u_pu_q\right)dz. \tag{9.6}
-\end{align}$$
-
-Let $b_p=u_p^{(Z)}(Z)$. Linear interpolation across the omitted interval gives
-
-$$\begin{align}
-H_{\rm link}^{(Z,N)} =\frac{\left[\boldsymbol b\cdot\boldsymbol q_R- \boldsymbol b\cdot\boldsymbol q_L\right]^2}{4a_Z}. \tag{9.7}
-\end{align}$$
-
-Thus the projected variable is the finite wall value $\phi_{R,L}(Z)=\boldsymbol b\cdot\boldsymbol q_{R,L}$. In the odd parity sector (9.7) is the rank-one stiffness update $\boldsymbol b\boldsymbol b^{\mathsf T}/a_Z$; it vanishes in the even sector. The leading central gradient energy is retained, while the central kinetic and massive terms are omitted. No central canonical momentum is added, because that would change the finite symplectic form.
-
-### 9.3 No Canonical Exact-Null Projection Has Been Constructed
-
-An exact regulator relation would require maps such as
-
-$$\begin{align}
-P_{Z,N}:\mathscr D_{\mathcal N}^{\rm adm}\longrightarrow
-\mathbb R^{4N}, \qquad I_{Z,N}:\mathbb R^{4N}\longrightarrow\mathscr D_{\mathcal N}^{\rm adm}, \tag{9.8}
-\end{align}$$
-
-with, at minimum,
-
-$$\begin{align}
-P_{Z,N}^*\Omega_{Z,N}\to\Omega_{\rm null}, \qquad P_{Z,N}X_0^{\rm null}\simeq X_0^{(Z,N)}P_{Z,N}, \tag{9.9}
-\end{align}$$
-
-plus mode, state, and smeared-correlator convergence. The archive supplies none of these maps. Its coefficients are spatial projections on the $t=0$ regulated wedge, after a Neumann self-adjoint extension has been chosen; exact characteristic profiles live on the true null horizons. Passing between them already requires bulk reconstruction and a choice of finite timelike slice. Moreover, $X_0^{(Z,N)}$ is built from the projected global Noether energy, whereas $X_0^{\rm null}$ was derived from the characteristic action.
-
-The structural comparison is therefore:
-
-| object | intrinsic null theory | finite-$(Z,N)$ project |
-|---|---|---|
-| geometry | true intersecting horizons and Goursat diamonds | two wedges cut by timelike walls $z=Z$ plus an omitted central interval |
-| variables | two compatible profiles $(f,g)$ with a shared corner | first $N$ Neumann-wall coefficients on each side |
-| symplectic form | direct null flux $\Omega_{\rm null}$ | canonical form on $2N$ oscillator pairs; no central pair |
-| Hamiltonian | (3.8d), derived by $\iota_X\Omega_{\rm null}=\delta H$ | global Noether energy projected into the wall basis plus (9.7) |
-| modes | null $\mathfrak{sl}(2,\mathbb R)$ ladder and Goursat reconstruction | Neumann-wall eigenmodes followed by finite symplectic diagonalization |
-| state/correlator | null-derived positive split, $RR/RL/RF$, smeared KMS | neither TFD/global state nor correlators constructed in the archive |
-| established approximation | exact on $\mathcal H_{\mathcal N}^{\rm cyc}$; global equality by comparison theorem | fixed-window spectral convergence only |
-
-### 9.4 Regulator Sensitivity and Verdict
-
-The archived tables show the two errors separately. At $Z=10$, increasing $N$ eventually reaches a finite-$Z$ plateau; for the massive first-ten window the maximum error changes from $2.11\times10^{-4}$ at $N=48$ to $5.75\times10^{-5}$ at $N=64$ and then does not improve at $N=80$. At $N=64$, moving the wall from $Z=6$ to $8$ to $10$ changes the first-twelve maximum error from $3.15\times10^{-3}$ to $4.26\times10^{-4}$ to $5.78\times10^{-5}$.
-
-The coupling choice is also material. Re-evaluating the massless source matrices at $(Z,N)=(10,24)$ gives the first three odd-sector frequencies
-
-$$\begin{align}
-\gamma=0:\ (1.00006,3.00032,5.01883), \qquad \gamma=1:\ (2.00001,4.00224,6.09405), \tag{9.10}
-\end{align}$$
-
-where $\gamma$ multiplies the source's rank-one link. Removing the link leaves the wrong parity tower. Intermediate link coefficients give different finite matrices. Likewise, replacing the Neumann wall by Robin/Dirichlet data would change the wedge basis and every projected matrix; no wall-condition independence was tested. The precise $\gamma=1$ coefficient follows from the chosen linear central interpolation, not from a regulator-independence theorem.
-
-The corrected verdict is
-
-$$
-\boxed{
-\begin{gathered}
-\texttt{global-Noether-energy Galerkin approximation in a timelike-wall}\\
-\texttt{Rindler basis; no exact-null canonical projection, intertwiner,}\\
-\texttt{state/correlator convergence, or Rindler-gluing theorem proved.}
-\end{gathered}}
-\tag{9.11}
-$$
-
-This does not negate the observed spectral accuracy. It identifies exactly what has and has not been approximated and keeps $Z\to\infty$ distinct from $N\to\infty$.
-
 ## 10. Task K: Reproducible Checks
 
-Two durable verification files accompany this note.
+Four durable verification files accompany this note.
 
 1. \`numerics/ads2_rindler_null_reconstruction_checks.wl\` is self-contained and was run in a fresh Wolfram Engine 14.3.0 kernel. It checks the $\mathfrak{sl}(2,\mathbb R)$ signs, both lowest-weight profiles, the characteristic mass relation, the null ladder for $n=0,\ldots,4$, the reconstructed Kruskal KG residual, corner compatibility, the direct null-Hamiltonian density and variation identities, the endpoint cancellation, the later Gegenbauer identification, the KMS/reflection-phase algebra, the universal-cover $2\pi$ phase, and the finite-link rank/sensitivity.
 2. \`numerics/ads2_rindler_finite_zn_source_audit.py\` reads the original archive without modifying it. It parses the two logs and two source files, verifies the meanings of $Z$ and $N$, identifies the Neumann wall, the projected global Noether energy, the wall-value vector, and the rank-one link, and verifies that no state/correlator is constructed.
+3. \`numerics/ads2_rindler_discrete_spectral.wl\` evaluates the $\Delta=2$ overlap kernel as a finite sum of $\operatorname{sech}^p x$ Fourier transforms, constructs Gaussian nodes and Christoffel weights from the boost Jacobi matrix, and checks the forward and joint-$R+L$ inverse Bogoliubov identities, Planck occupation, anomalous covariance, detailed balance and the full smooth-observable KMS strip.
+4. \`numerics/ads2_rindler_overlap_quadrature_audit.wl\` independently compares selected semi-analytic kernels with Abel-damped direct spatial integration and scans working precision.
 
 The exact Mathematica run returned
 
@@ -1068,7 +957,7 @@ The source audit returned
 
 \`\`\`Text archive_members: True Z_is_wall_position: True wall_is_neumann: True N_is_retained_mode_count: True massive_benchmark_Z10_N64: True global_noether_energy_is_input: True rank_one_link_definition: True projected_variable_is_wall_value: True Z_and_N_control_distinct_errors: True state_and_correlator_not_constructed: True AllChecksPassed \`\`\`
 
-These checks establish exact algebraic residuals and the stated source facts. They do not by themselves prove global characteristic surjectivity, exponentiation on an unrestricted horizon completion, the analytic Friedrichs/completeness theorem, or general-$\Delta$ high-precision wave-packet quadrature for (8.10)--(8.12). Those scopes remain analytic comparison statements or explicit open items below.
+The matched $\Delta=2$ Gaussian runs at $(N_G,M_\omega)=(32,32),(64,64),(128,128),(256,256)$ close the forward CCR, anomalous, Planck and strip-KMS residuals to the stated working precision. Raising $\omega_{\max}$ reduces the joint-$R+L$ inverse residual from $6.98\times10^{-1}$ at $\omega_{\max}=4$ to $6.76\times10^{-5}$ at $\omega_{\max}=16$ for $(32,32)$, while the right-only control remains $6.98\times10^{-1}$ even with every node. The independent Abel extrapolation agrees with the semi-analytic kernel at $6.78\times10^{-6}$ and $2.00\times10^{-5}$ in the two audited cases. These checks do not by themselves prove global characteristic surjectivity, exponentiation on an unrestricted horizon completion, the analytic Friedrichs/completeness theorem, or general-$\Delta$ high-precision quadrature for (8.10)--(8.12). Those scopes remain analytic comparison statements or explicit open items below.
 
 ## 11. Final Claim Ledger
 
@@ -1091,7 +980,7 @@ These checks establish exact algebraic residuals and the stated source facts. Th
 | H1 | null-derived vacuum and $RR,RL,RF$ correlators | proved after smearing | positive split of $H_0^{\rm null}$, A3 for universal cover | Section 7 | no separate boundary-Hadamard wavefront theorem |
 | H2 | $Q_{\Delta-1}$ closed form and noninteger-$\Delta$ universal-cover sheet | derived after mode sum | continuous $i\epsilon$ sheet | (7.5)--(7.10) | principal-branch reset is invalid |
 | I1 | self-adjoint standing-wave Rindler basis with both scattering branches | proved using standard half-line Jost theory | $\omega>0$, wave packets at threshold | (8.2)--(8.8b) | zero frequency handled only by completion |
-| I2 | overlap kernels and Bogoliubov identities | conditional/distributional theorem | endpoint cutoff, $\omega$-wave packets, both left and right kernels for inverse identities | (8.10)--(8.12) | no independent general-$\Delta$ high-precision quadrature |
+| I2 | overlap kernels and Bogoliubov identities | conditional/distributional theorem; $\Delta=2$ finite spectral quadrature verified | endpoint cutoff, $\omega$-wave packets, phase-locked standing waves, both left and right kernels for inverse identities | (8.10)--(8.12), `ads2-rindler discrete spectral Bogoliubov.md`, two numerical scripts | no independent general-$\Delta$ high-precision quadrature |
 | I3 | reflection-phase audit of Unruh combinations | proved on the phase-locked real standing-wave basis | (8.6), lower-half-plane continuation | (8.8a)--(8.17), exact symbolic check | independent wedge rephasings insert the stated compensating phase |
 | I4 | right-wedge KMS at $\beta=2\pi$ | proved as a smeared algebraic theorem | null-derived global state and boost normalization $\kappa=1$ | both routes in Section 8.3 | no sharp continuum tensor-factor theorem |
 | J1 | $Z$ wall versus $N$ mode-count diagnosis | proved from original archive source/logs | uploaded archive inspected read-only | Sections 9.1--9.2 and source audit | none |
@@ -1117,17 +1006,12 @@ e^{-i(\Delta+n)t}(\cos\rho)^\Delta C_n^\Delta(\sin\rho).
 
 The global Friedrichs Sturm--Liouville/Darboux theorem independently proves compact-resolvent exhaustiveness and equality of the cyclic null theory with the standard full global free scalar. The global energy integral, $A_\Delta$-complex structure, KG normalization integral, and invariant $Q_{\Delta-1}$ kernel are checks or closed-form identifications. They are not inputs to $\Omega_{\rm null}$, $H_0^{\rm null}$, the lowest weight, or the frequency ladder.
 
-### 12.3 Finite-$(Z,N)$ Spectral Approximation
-
-The original finite project cuts each wedge at the timelike wall $z=Z$, imposes Neumann data there, keeps the first $N$ wall modes, projects the global-time Noether energy into that basis, and adds a rank-one wall-value link from a linear interpolation across the omitted central interval. $Z$ controls the near-horizon geometric error floor; $N$ controls the retained boost-frequency window. The observed spectral convergence is real but regulator-dependent.
-
-No canonical projection from exact null profiles to the finite variables, symplectic/Hamiltonian intertwiner, strong-resolvent theorem, mode convergence, or state/correlator convergence has been constructed. Its current status is therefore a useful global-Hamiltonian Galerkin approximation, not a proved realization of exact Rindler characteristic gluing.
-
 ## Verified
 
 - Exact Mathematica residuals vanish for the null lowest-weight equations, $h(h-1)=m^2L^2$, the $n=0,\ldots,4$ ladder, reconstructed bulk KG equation, $\mathfrak{sl}(2,\mathbb R)$ signs, null Hamiltonian density/variation, endpoint cancellation, later Gegenbauer identification, reflection-phase cancellation, and KMS factors.
 - The original archive source confirms $Z$ is the timelike near-horizon wall, $N$ is the retained mode count, the link is rank one in the wall-value vector, and the projected Hamiltonian uses global-time Noether energy.
 - The null-derived normalization agrees with the later global KG integral, and the global Darboux theorem independently exhausts the same tower.
+- At $\Delta=2$, arbitrary-precision Gaussian boost quadrature verifies the semi-analytic overlap kernel, phase-locked thermal relation, forward CCR, joint-$R+L$ inverse identities, Planck/anomalous/detailed-balance covariances and the smooth-observable KMS strip. Direct Abel-damped spatial integration independently agrees with two selected kernels at the $10^{-5}$ level.
 
 ## Assumptions
 
@@ -1141,7 +1025,7 @@ No canonical projection from exact null profiles to the finite variables, symple
 - An onto theorem from an unrestricted product of independently completed half-horizon spaces to the global energy space.
 - Common-domain exponentiation of all three Killing generators on such an unrestricted completion.
 - A sharp regional Hilbert-space tensor factorization or a unitary map to two Fulling Fock spaces.
-- A general-$\Delta$ numerical wave-packet quadrature of every Bogoliubov identity, beyond the analytic distributional proof and exact phase checks.
+- A general-$\Delta$ numerical quadrature of every Bogoliubov identity; the new numerical check is restricted to $\Delta=2$.
 - A canonical exact-null to finite-$(Z,N)$ projection, convergence theorem, or state/correlator comparison.
 - Regulator independence under Robin/Dirichlet wall conditions or alternative central finite elements.
 
