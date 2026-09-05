@@ -12,7 +12,7 @@ $$\begin{align}
 } \tag{1}
 \end{align}$$
 
-满射由每个 $G$ 的实际 extension $G\circ\mathsf B$ 证明。任意实际 smooth symplectomorphism 保持 $\mathcal H(X)$；区域 family 上还须验证微分的 density-valued transpose。物理对称性另须保持作用量、边界条件、响应与指定的局域代表。
+满射由每个 $G$ 的实际 extension $G\circ\mathsf B$ 证明。任意实际 smooth symplectomorphism 的固定 pullback 是 $\mathcal H(X)$ 的连续 Poisson automorphism；区域 family 上还须验证微分的 density-valued transpose。有限维群在 §7.1 的联合 smoothness 与统一支撑条件下联合 Bastiani smooth 地作用，但整个自然 Fréchet solution-translation 群在本文 graph topology 下的联合作用不连续。物理对称性另须保持作用量、边界条件、响应与指定的局域代表。
 
 ## 1. 区域作用量、变量与微分学
 
@@ -142,7 +142,15 @@ U_{\{F,G\}_{\mathsf P}}
 &=DU_F[\mathsf P U_G]-DU_G[\mathsf P U_F]. \tag{5}
 \end{align}$$
 
-证明最后一式时，先对 $\beta(U_F,\mathsf P U_G)$ 求导，再分别用第一式和 $\beta$-skewness。由于 $(y,h)\mapsto DU_F(y)[h]$ 自身 Bastiani smooth，代入 $h=\mathsf P U_G(y)$ 合法；输出在 $Z_{K_F\cup K_G}$，不是只得到逐点标量导数。对 (5) 再求导，Jacobi 的 Hessian 项成对抵消；Leibniz 是乘法的 chain rule。这证明整个 (3) 的 Poisson closure。
+证明最后一式时，先对 $\beta(U_F,\mathsf P U_G)$ 求导，再分别用第一式和 $\beta$-skewness。由于 $(y,h)\mapsto DU_F(y)[h]$ 自身 Bastiani smooth，代入 $h=\mathsf P U_G(y)$ 合法；输出在 $Z_{K_F\cup K_G}$，不是只得到逐点标量导数。明确记 $H_F(h,k)=\beta(DU_F[h],k)=D^2F[h,k]$，则
+
+$$\begin{align}
+\{F,\{G,H\}_{\mathsf P}\}_{\mathsf P}
+=-H_G(\mathsf P U_H,\mathsf P U_F)
++H_H(\mathsf P U_G,\mathsf P U_F).
+\end{align}$$
+
+循环求和后，六项由 Hessian 对称性逐对抵消。Leibniz 是乘法的 chain rule。这证明整个 (3) 的 Poisson closure，不要求 Hamiltonian vector fields 已有 flows。
 
 固定 history bracket 是 $\mathsf P_0(V,A)=(V,0)$。独立系统用直接和 pairing、独立 histories 和相同的 joint-gradient rule；其双方 cross bracket 为零。这里没有宣称 $\mathcal H_\beta(Y_1\oplus Y_2)$ 是已完成因子的 projective tensor product，或每个 joint function 都是有限多个因子函数的组合。
 
@@ -197,6 +205,8 @@ $\mathcal F(\phi_i)=\int f(t,y_i)h(j^d\phi_i)\,dt\,dy_i$，
 $d<\infty$，$h\in C^\infty(\mathbb R^N)$。$f$ 时间支撑 compactly contained in $I^\circ$，空间上 smooth 至 cell endpoints；也允许相同条件的 boundary-jet densities。
 
 映射 $y\mapsto j^d(\psi_z+\mathsf S_iq)$ 在任意固定 compact 时间窗的 ordinary smooth jets 中连续线性。[N, §23.1] 的 forward estimates 给这一点。有限维 smooth composition 在这些 jet spaces 上 Bastiani smooth：在每个背景的足够小邻域中 jets 的值落在一个 compact subset of $\mathbb R^N$，每个所需 $h$ 的导数在那里有界。其 $k$ 阶导数是 $h^{(k)}$ 与 $k$ 份 jet variations 的有限乘积，Sobolev/Leibniz estimates 给联合连续性。
+
+同一论证允许一般 smooth density $a(t,y_i,j^d\phi_i)$，只要其 spacetime 支撑固定且时间上 compactly contained in $I^\circ$：将 $(t,y_i)$ 作为固定的有限维参数，所需 mixed derivatives 仍在 compact spacetime/jet sets 上有界。下述变分与 transpose 证明逐项适用；§5.4 的完整 density matching 使用这一形式。
 
 先在未固定 history 的物理 fields 上变分并分部积分：
 
@@ -413,7 +423,24 @@ $\mathsf R_a\mathsf P_{0,\mathrm{cl}}\mathsf R_a^\flat$，
 
 有限次组合的 cut maps 复合，transposes 逆序复合，sections 逆序复合；这些公式保持 smoothness 和固定 compact support。不同 parenthesizations 的最终字段满足同一个由区域 action/response 定义的 transmission problem，因果唯一性给同一最终 $E$ 与 source flattening。因此有限切割的 associativity 和 cutting inverse 在整个所选类成立。这里没有无限切分的一致估计。
 
-局域 net 另由支撑于 $O$ 的物理 linear/smooth finite-jet representatives 及其有限 smooth functional calculus、Poisson operations 指定；不将 $\mathcal H$ 的任意元素自动称为 local。sewn 与独立 global 侧的这些代表通过逐 cell 积分、完整 boundary variations 和 test-jet patching 双向对应。它们生成的 net 因而 exact intertwine，因果分离的两份 net 对易。若再取这些子代数在 $\mathcal H(X)$ 中的闭包，两边使用 §6 的同一 graph topology；assembly 是 homeomorphism，括号分别连续，故对应与因果对易性均延至闭包。不将此闭包与 [N] 的系数分层 local closures 自动认同。
+局域 net 采用 **商后 matched smooth-bulk/finite-jet generators**，明确限定生成类。对相对开集 $O\subset I^\circ\times\Sigma$，先在区域几何中取有限阶 jet densities
+$a_i(t,y_i,j^d\phi_i)$，其 spacetime support compactly contained in $O$（允许接触物理端点时取相对支撑）。在每个人工 cut 处，将场的空间 jets 按
+$\partial_x=\partial_{y_1}=-\partial_{y_2}$ 换为同一方向，要求两侧的**整个 density** 作为 spacetime 与有限 jet variables 的 smooth function 匹配全部 jets。对 $a_i=f_i h_i$，只匹配 $f_i$ 而允许任意不同的 $h_i$ 不够；例如一侧为 $f\phi^2$、另一侧为零，在 cut 附近 $f\ne0$ 时并不匹配。
+
+以这些区域积分之和的 released classes 为生成元，作有限加法、乘法、smooth functional calculus 和 Poisson operations，得到 $\mathscr H_{\mathrm{bulk,sew}}(O)$。线性 bulk smearings 是其中的特殊情形。独立 uncut 侧以普通 smooth bulk/finite-jet densities 定义 $\mathscr H_{\mathrm{bulk},M}(O)$。光滑 patching 给整个 densities 的双向对应，逐 cell 积分给相同的实际函数；完整 boundary variation 中的内部项在 matching variations 上相消。因此 (1) 的同构 $\alpha$ 满足
+
+$$\begin{align}
+\alpha\bigl(\mathscr H_{\mathrm{bulk,sew}}(O)\bigr)
+&=\mathscr H_{\mathrm{bulk},M}(O),\\
+\mathcal H_{\mathrm{sew}}(O)
+&:=\overline{\mathscr H_{\mathrm{bulk,sew}}(O)},\qquad
+\mathcal H_M(O):=\overline{\mathscr H_{\mathrm{bulk},M}(O)},\\
+\alpha\bigl(\mathcal H_{\mathrm{sew}}(O)\bigr)&=\mathcal H_M(O).
+\end{align}$$
+
+闭包取 §6 的 graph topology，sewn quotient 使用其中的 split identification。assembly 是 homeomorphism，故最后一式是实际双向对应。有限传播先给 causally disjoint generators 的零括号，Leibniz、Jacobi 和 smooth chain rule 将其推广到两个 cores；括号分别连续，再依次对两侧取极限，将因果对易性延至闭包。乘法的连续性和括号的分别连续性也保证这些闭包仍为 Poisson 子代数。不将此闭包与 [N] 的系数分层 local closures 自动认同。§8 的 $\mathcal H(O)$ 使用本段指定的 net。
+
+此生成类没有另加入独立的 timelike-line/history generators。比如 $\int\eta q^2\in\mathcal H_\beta$ 释放为 $\int\eta(t)\phi(t,\Gamma)^2dt\in\mathcal H(X_M)$，但全代数 membership 不证明它由上述 bulk generators 的有限 operations 生成，也不证明它已落在相应 graph closure。本文不声称这两项 membership 为假；含独立 line/boundary generators 的 net 需要两侧另行采用同一生成类。本段对 bulk densities 变分产生的边界项则始终保留。
 
 这仍不证明任意独立定义的严格局域 family prequotient 都有保持 $O$ 的 section。式 (14) 的历史支撑可扩大到 $K_\chi$；全类满射与严格局域提升是两个命题。
 
@@ -491,9 +518,59 @@ Dg_Y(y)\mathsf P\,Dg_Y(y)^\flat=\mathsf P'
 
 （同一 presentation 时 $\mathsf P'=\mathsf P$）。代入 (9) 即给 Poisson 性。这些固定 pullbacks 在 §6 graph topologies 上也连续：对 compact 参数集，$DT^\flat$ 的各阶导数关于 covector 的线性部分 equicontinuous，chain rule 控制每个所需 seminorm。inverse 给 homeomorphism。
 
-这只定义 canonical automorphism。物理对称性还要从 off-shell action identity 检验，不以 field equation 代替该检验；它应运输 physical boundary conditions、source/field pairing、history/response 和指定的局域代表。若群参数也变化，要求 $(g,y,U)\mapsto Dg_Y(y)^\flat U$ 及其 inverse 共同 smooth，并在 compact group-parameter sets 上有同一个 compact support enlargement；逐群元素的存在不自动证明这一参数结论。
+这只定义 canonical automorphism。物理对称性还要从 off-shell action identity 检验，不以 field equation 代替该检验；它应运输 physical boundary conditions、source/field pairing、history/response 和指定的局域代表。固定 pullback、固定 observable 的 smooth orbit map、群与整个代数的联合连续作用是三个不同命题。
 
 采用 $(gh)^*=h^*g^*$。若需要通常的左作用，取 $\alpha_g=(g^{-1})^*$，其无穷小生成元与 $g_t^*$ 的相反。
+
+**整个 solution-translation 群的反例。** 给 $X$ 自然 Fréchet topology，令
+$\tau_b^*F(z)=F(z+b)$。每个固定 $b$ 的 pullback 满足 (15)，而
+
+$$\begin{align}
+\mathcal T:X\times\mathcal H(X)&\longrightarrow\mathcal H(X),\qquad
+(b,F)\longmapsto\tau_b^*F
+\end{align}$$
+
+在 $(0,0)$ 不连续。证明取 canonical modes，$w_n=(1+\lambda_n)^{1/2}\to\infty$，
+$\|z\|_s^2=\sum_n(w_n^{2s+2}|Q_n|^2+w_n^{2s}|P_n|^2)$，以及连续输出 seminorm $p_0(F)=\|X_F(0)\|_0$。任给输入零邻域 $U\subset X$、$V\subset\mathcal H(X)$，选有限 $S,\epsilon>0$ 使 $\{\|b\|_S<2\epsilon\}\subset U$，并令
+
+$$\begin{align}
+b_n&=(0,\epsilon w_n^{-S}e_n)\in U,&
+G_n(z)&=\frac{w_n^S}{2\epsilon}P_n(z)^2,\\
+X_{G_n}(z)&=(\epsilon^{-1}w_n^SP_n(z)e_n,0),&
+X_{\tau_{b_n}^*G_n}(0)&=(e_n,0). \tag{15a}
+\end{align}$$
+
+对任意 compact $C\subset X$ 与输出阶 $s$，
+
+$$\begin{align}
+\sup_{z\in C}\|X_{G_n}(z)\|_s
+\le\frac{\sup_{z\in C}\|z\|_{s+S+2}}{\epsilon w_n}\longrightarrow0.
+\end{align}$$
+
+$DX_{G_n}[h]=X_{G_n}(h)$ 有同一 compact-direction 估计，更高导数为零。对 $G_n,DG_n,D^2G_n$，用 $|P_n(z)|\le w_n^{-M}\|z\|_M$ 并取 $M>S$，亦得所有 scalar compact seminorms 趋零。因此 $G_n\to0$ 于 graph topology，最终在 $V$ 内；但 $p_0(\tau_{b_n}^*G_n)=w_n\to\infty$。任意 $U\times V$ 都不能送入 $\{p_0<1\}$，证毕。这是 neighborhood proof，没有声称 $b_n\to0$。
+
+对每个固定 $F$，$b\mapsto\tau_b^*F$ 仍 Bastiani smooth：其第 $k$ 阶方向导数是 $D^kF(\,\cdot+b)[c_1,\ldots,c_k]$，Hamiltonian vector 为相同代入下的 $D^kX_F$。Bastiani 联合连续性在每个 compact input set 上由有限覆盖给局部一致控制，沿参数线段的积分余项给 graph topology 中的微分。这不需要 $b$ 的邻域 compact，故与上述联合不连续性相容。
+
+regional translation $g_b^Y(y)=y+\mathsf Rb$ 的 derivative transpose 为恒等，并满足 (17)。若其在 $X\times\mathcal H_\beta$ 上的联合作用连续，则由
+$\mathsf R^*(g_b^Y)^*\mathsf B^*F=\tau_b^*F$
+及连续 section/release 得到矛盾。因而即使 phase-space 参数作用联合 smooth、transpose 的支撑一致，也不足以给任意无限维参数群的连续表示。
+
+**有限维参数定理。** 设 $G$ 为有限维 Lie group，$(g,z)\mapsto g_Xz$ 是实际 jointly Bastiani smooth symplectic action。则 $(g,F)\mapsto g_X^*F$ 在 $\mathcal H(X)$ 上联合 Bastiani smooth。对于 $\mathcal H_\beta$，还要求群确实作用于同一 family system；每个输入 $Z_K$ 在每个群参数的相对紧坐标邻域内有固定输出 $Z_{K'}$，phase/history map 与 $(g,y,U)\mapsto Dg_Y(y)^\flat U$ 在这些固定层中联合 smooth。inverse 满足同样条件，且逐元素保持所用 Poisson operator。
+
+证明在 $g_0$ 的有限维坐标图中取 compact 邻域 $C_G$。对任一输出 graph seminorm $p$ 及有限群参数多重指标 $\nu$，chain rule 中的 base/direction tuples 是 $C_G$ 与 compact input tuples 的连续像，仍 compact。固定变换的各阶导数关于 covector/vector slot 线性；compact 参数上的联合连续性和有限覆盖给 equicontinuous bounds。因此有有限个输入 graph seminorms $q_j$，使
+
+$$\begin{align}
+\sup_{g\in C_G}p\bigl(\partial_g^\nu(g^*F)\bigr)
+\le C_\nu\sum_jq_j(F). \tag{15b}
+\end{align}$$
+
+固定 $F$ 的 orbit 及全部参数导数由同一 compact-input 论证连续；(15b) 给局部 equicontinuity，从而 $(g,F)$ 联合连续。对参数再次求导得到同类估计，对 $F$ 的依赖线性，因此所有 mixed derivatives 联合连续，证明 Bastiani smoothness。
+
+family 的每个支撑层先使用相同证明。对整个 support inductive limit，给定连续输出 seminorm $p$，
+$q_\nu(F)=\sup_{g\in C_G}p(\partial_g^\nu(g^*F))$
+在每个源层连续，故由 locally convex inductive-limit topology 的定义在并集上连续。固定 orbit 在该参数窗内落入一个固定输出层，故上述微分与联合连续性论证仍成立。
+
+时间平移在 connected $X$ 上、有限 sign/reflection 群，以及任意固定有限维子空间的 solution translations 满足相应定理。对 histories 的时间平移，有限 slab 的适用范围仍按 §8.1 处理；这里没有为相容 slab system 另定义一个 all-time completion。
 
 ### 7.2 从作用量与响应得到 affine symmetry theorem
 
@@ -628,12 +705,42 @@ local-net 的方向须同时声明 spacetime 与 field conventions。若 spaceti
 
 ### 8.2 移动 history 的无穷小作用与能量 sewing
 
-无穷小 family vector $\xi=(Z_\xi,\zeta_\xi)$ 作用为
+先要求 $\xi=(Z_\xi,\zeta_\xi):Y\to Y$ Bastiani smooth，并对每个 $K$ 有固定 $K'\Subset I^\circ$ 及 jointly smooth map
+$D\xi^\flat:Y\times Z_K\to Z_{K'}$，对 covector slot 线性，满足
+
+$$\begin{align}
+\beta(U,D\xi(y)h)=\beta(D\xi(y)^\flat U,h).
+\end{align}$$
+
+在此准入条件下，无穷小 family 作用为
 
 $$\begin{align}
 \delta_\xi F=-\sum_i\Omega_i(V_{F,i},Z_{\xi,i})
 +\langle A_F,\zeta_\xi\rangle . \tag{22}
 \end{align}$$
+
+对 $DF[\xi]=\beta(U_F,\xi)$ 求导，Hessian 对称性处理第一项，transpose 处理第二项，得到
+
+$$\begin{align}
+U_{\delta_\xi F}
+=DU_F[\xi]+D\xi^\flat U_F
+\in C_B^\infty(Y,Z_{K\cup K'}). \tag{22a}
+\end{align}$$
+
+因此 $\delta_\xi$ 确实在代数内取值，并由 scalar chain rule 满足乘法 Leibniz。对于 §2.3 的常 $\mathsf P$，完整 Poisson defect 为
+
+$$\begin{align}
+\delta_\xi\{F,G\}_{\mathsf P}
+-\{\delta_\xi F,G\}_{\mathsf P}-\{F,\delta_\xi G\}_{\mathsf P}
+&=-\beta\bigl(U_F,(D\xi\mathsf P+\mathsf P D\xi^\flat)U_G\bigr). \tag{22b}
+\end{align}$$
+
+故 $D\xi\mathsf P+\mathsf P D\xi^\flat=0$ 是 Poisson derivation 的充分条件。若还有
+$\xi_Y(\mathsf Rz)=\mathsf R\xi_X(z)$，则 chain rule 给
+$\mathsf R^*\delta_{\xi_Y}=\delta_{\xi_X}\mathsf R^*$；matching ideal 稳定，作用下降到商。
+
+只要求 $\xi$ smooth 不够。$\xi(z,q)=(u_0q(t_*),0)$ 有实际全局 smooth flow，但对合法 $F(z,q)=\ell(z)$、$\ell(u_0)\ne0$，
+$\delta_\xi F=\ell(u_0)q(t_*)\notin\mathcal H_\beta$。缺失的正是产生 delta 的 $D\xi^\flat$ 准入条件。式 (22a) 的第二项不能省略；从满足 §7.1 参数定理的实际作用微分，则这项及其固定支撑正则性自动保留。
 
 只要 $\zeta_\xi$ 在物理 $I^\circ$ 内非零，这不是旧 vertical bracket 的 inner derivation：合法的
 $C_\eta(q)=\int\eta q$
@@ -688,6 +795,15 @@ Q_b(z)=-\Omega(b,z),\qquad X_{Q_b}=b,\qquad
 
 这不是 massive Dirichlet scalar 的 constant-field shift；常数场一般不满足方程和物理边界。时间平移把 $b$ 送到 $U_tb$，并不逐个与所有 solution translations 交换。
 
+式 (24) 使用参考 slice 的标签 $b$。在时刻 $t$ 的 Cauchy 变量 $z$ 上，同一 spacetime solution shift 的 charge 为
+
+$$\begin{align}
+Q_b(t,z)&=-\Omega(U_tb,z),\\
+\partial_tQ_b(t,z)+\{Q_b(t,\cdot),H\}(z)&=0. \tag{24a}
+\end{align}$$
+
+第二式由 $X_H=Dz$ 和 $\Omega(Dv,z)+\Omega(v,Dz)=0$ 得到；沿 $z(t)=U_tz_0$，charge 等于 $-\Omega(b,z_0)$。因此 Noether conservation 包含显式时间导数，不是对固定标签声称 $\{Q_b,H\}=0$。
+
 更一般地，若连续线性 $A:X\to X$ 满足
 $\Omega(Az,w)+\Omega(z,Aw)=0$，$b\in X$，则
 
@@ -701,6 +817,19 @@ X_{Q_{A,b}}&=Az+b,\\
 这里 $[A,B]=AB-BA$。对任意 $h$ 求导，$\Omega$-skewness 将两个 quadratic terms 合并，证明第二行；展开两份向量的 $-\Omega$ 配对，分别比较 quadratic、linear、constant terms，证明第三行。此证明适用于整个 smooth phase space。若 $A$ 还有统一 loss $d$，则 charge 同时属于 [N] 的 $\mathcal A_d$；本节的 $\mathcal H$ membership 只需 $A$ 连续。
 
 translations 的 Lie algebra 虽为 abelian，(24) 的常数 cocycle 可以非零；给 charges 加常数不能消去它。实际区域 charges 的 integrability、flux 和 finite flows 仍各需验证，不能由一个可下降的 algebra automorphism 自动推出。
+
+在本文**整个线性 connected CPS $X$** 上，还能直接证明 smooth symplectic vector fields 的 Hamiltonian integrability。设 $\xi:X\to X$ smooth，且
+$\Omega(D\xi(z)h,k)+\Omega(h,D\xi(z)k)=0$。定义
+
+$$\begin{align}
+Q_\xi(z)&=-\int_0^1\Omega(\xi(tz),z)\,dt,\qquad
+DQ_\xi(z)[h]=-\Omega(\xi(z),h),\qquad X_{Q_\xi}=\xi. \tag{25a}
+\end{align}$$
+
+为证明中间一式，令 $\alpha_z(h)=-\Omega(\xi(z),h)$。symplectic 条件给
+$(D\alpha)_z[h](k)=(D\alpha)_z[k](h)$，所以 $DQ_\xi(z)[h]$ 的 integrand 是
+$t(D\alpha)_{tz}[z](h)+\alpha_{tz}(h)=\partial_t[t\alpha_{tz}(h)]$。
+积分给 $\alpha_z(h)$；compact 参数积分及其各阶导数的局部一致控制给 Bastiani smoothness。故 $Q_\xi\in\mathcal H(X)$，且 $\xi=Az+b$ 时恢复 (25)。这利用整个线性 domain，不能直接套在只有局部定义的向量场上；也不证明 flow 存在、charge 局域、守恒，或该变换满足 physical action 的 Noether 条件。
 
 ### 8.4 原类的有限作用反例与本类的改进
 
@@ -726,11 +855,18 @@ $\sqrt{(2n)!}|t|^nR^{2n}/n!$，相邻项比值趋于 $2|t|R^2$，对大 $R$ 发�
 | 已证明 | 全类 exact sewing、独立 global 同构、有限次 partial release | (10)–(14) 的实际双向 maps、sections 和区域 PDE 唯一性。 |
 | 已证明 | 固定 $K$ graph spaces 和 $\mathcal H(X)$ 完备；重建为连续 split quotient | §6 的导数极限、闭 graph 条件和连续 section。 |
 | 已证明 | 任意 actual smooth symplectomorphism 保持 $\mathcal H$；有明确 admissible off-matching extension | (15)、(19)–(21)。 |
+| 已证明 | matched smooth-bulk/finite-jet quotient cores 及其 graph closures 的 local-net 同构 | §5.4 的完整 density-jet patching、assembly homeomorphism 与分别连续性。 |
+| 条件成立 | 有限维 Lie group 在代数上的联合 Bastiani smooth 作用 | §7.1 的实际参数作用、固定层 transpose 和局部统一支撑；(15b) 给局部 equicontinuity。 |
+| 条件成立 | 无穷小 family 作用在代数内闭合、保持 Poisson bracket 并下降 | (22a) 的 density-transpose 准入、(22b) 的零 defect 条件及 cut equivariance。 |
+| 已证明 | 整个线性 connected CPS 上 smooth symplectic vector field 的 Hamiltonian integrability | (25a) 的径向积分；不蕴涵 flow、locality 或 Noether conservation。 |
 | 条件成立 | regional physical symmetries 与局域 net、history release 相容 | 逐项满足 action/response covariance、map/transpose、cut 与 support 条件；本 scalar 的明确例子见 §8。 |
 | 反例否定 | 原 entire 类包含全部 smooth detector responses，或保持任意 complete canonical flow | Gaussian 和 polynomial shear，§§3.1、8.4。 |
 | 反例否定 | fiberwise smooth 或 arbitrary smooth history-coordinate change 足以释放 | $q(t_*)$ 与 delta transpose，§§2.2、4。 |
 | 反例否定 | nonlinear cut equivariance 自动给整个 presentation 的 Poisson automorphism | $g_Y(q,p,n)=(e^nq,e^np,n)$，§7.3。 |
 | 反例否定 | 所选 graph topology 上 $\mathcal H(X)$ 的 Poisson 括号联合连续 | §6 的无限高频 neighborhood 反例。 |
+| 反例否定 | 整个自然 Fréchet solution-translation 群在当前代数拓扑上联合连续作用 | (15a)；固定 pullbacks 连续且固定 observable 的 orbit smooth，仍不足够。 |
+| 反例否定 | 任意 smooth family vector 自动给代数内 infinitesimal action | §8.2 的 $\xi(z,q)=(u_0q(t_*),0)$ 与 delta transpose。 |
+| 未证明 / 未声称 | 全代数中 admitted line/boundary observables 自动属于本 smooth-bulk local core 或其 graph closure | §5.4 仅选定 matched bulk generators，不由全类 membership 推出 local-net membership。 |
 | 仍开放 / 未声称 | 整个 support inductive limit 完备、新 tensor identity、全类 cylinder density、strict-local prequotient 的 onto、无限切割一致控制 | 不作为 (1) 的前提；旧 factorial LF theorem 不能自动移植。 |
 
 这个对象仍依赖 smooth classical domain。point fields、sharp corner evaluations 或一般 distributions 可以另作 field maps/部分定义的 pairing，但不能在没有 smooth Hamiltonian vector 时加入 everywhere-defined scalar Poisson algebra。高阶 jets 在 $X^\infty$ 上合法，不意味着它们都延拓到有限能量 $X_0$。本文没有分类全部物理 observables，也没有开展量子化、非线性动力学或 gauge sewing。
@@ -739,15 +875,17 @@ $\sqrt{(2n)!}|t|^nR^{2n}/n!$，相邻项比值趋于 $2|t|R^2$，对大 $R$ 发�
 
 三份输入稿为 [01_audit_and_repairs](../../../01_audit_and_repairs.md)、[02_symmetries_and_sewing](../../../02_symmetries_and_sewing.md)、[03_which_observables_and_a_larger_algebra](../../../03_which_observables_and_a_larger_algebra.md)。它们的主要正定理在上述明确条件下成立；新增的证明细节是 (4)、(20)、§6 的 graph topology，以及 (23) 的区域 boundary-functional 限定。三个输入文件保留原样，复核结论写入 [N, §27] 和本笔记。
 
+2026-09-06 再复核固定在 `667e62f3b1ce12e55c9fa1ceca918fc37f7f03df` 的 [第二轮审计](../../../audit_smooth_algebra_and_symmetries.md) 及其 [bundle 副本](../../../smooth_regional_audit_667e62f/audit_smooth_algebra_and_symmetries.md)，两份文本逐字相同。**审查结论：其主同构、固定对称性及新增反例的 claims 在各自声明的条件下成立。** 参数作用须采用 §7.1 的固定层联合 smoothness 和统一支撑量词；局域 net 采用 §5.4 的 matched 整个 densities，而不将所有 boundary families 自动纳入同一 bulk core。本轮补入这些证明、(22a)–(22b) 的无穷小准入与 defect、(24a) 的时间依赖守恒以及 (25a) 的 connected integrability；(10)–(14) 的全类 exact-onto 机制保留。
+
 [Neeb–Sahlmann–Thiemann](https://arxiv.org/abs/1402.6818) 提供以选定 smooth functions 和 Hamiltonian vectors 定义 weak Poisson 结构的背景；本文的 closure 与 sewing 由上述公式直接证明。其微分分离条件不能在本辅助 $Y$ 的 $I$ 外 history directions 上直接套用。
 
 [Hawkins–Rejzner–Visser, v3](https://arxiv.org/abs/2312.15203v3) 确实给出通常 microcausal class 的 Peierls closure 反例和 equicausal 修补；这支持外部稿关于“逐背景条件不够”的限定。本文不借用其 theorem 证明 timelike-boundary release，也不对该文的函数类作进一步认同。
 
-**Verified:** 本文的全类 closure、compact-support transpose、exact onto、symmetry equivariance 和 graph-topology 命题分别有上述解析证明。下列 fresh-kernel Mathematica 程序的 25 个命名 residual groups 全零，独立检查 convention、smooth mixed-gradient bracket、release/section 配对、nonlinear symmetry extension、Gaussian coefficient ratio、affine charge cocycle，以及 off-shell/energy boundary currents。另输出非零的 off-matching Poisson defect；零 residual 是对该反例公式的核验，不把该 map 误判为 Poisson。
+**Verified:** 本文的全类 closure、compact-support transpose、exact onto、symmetry equivariance 和 graph-topology 命题分别有上述解析证明。下列 fresh-kernel Mathematica 程序的 34 个命名 residual groups 全零：保留原有 25 组 convention、mixed-gradient、release/section、nonlinear lift、charge/current 检查，新增 9 组检查完整 infinitesimal gradient/defect、translation 反例系数、时间依赖 charge、径向积分、Sobolev energy vector 和 Jacobi。另输出非零的 off-matching Poisson defect；零 residual 是对该反例公式的核验，不把该 map 误判为 Poisson。本轮也在仓库外使用 Sage 自带的 Python/SymPy 重跑所提供的 `checks.py`，31 组全部通过；审计输入文件未改动。
 
-**Assumptions:** $m>0$、固定有限个正长度 intervals、物理外端 Dirichlet、无真实 interface action、物理 $j=0$；smooth Cauchy data、histories 和 fixed compact-time smooth densities；有限次 composition。symplectomorphisms 须有 actual smooth inverses，不能用形式 Lie series 代替 flows。
+**Assumptions:** $m>0$、固定有限个正长度 intervals、物理外端 Dirichlet、无真实 interface action、物理 $j=0$；smooth Cauchy data、histories 和 fixed compact-time smooth densities；有限次 composition。symplectomorphisms 须有 actual smooth inverses，不能用形式 Lie series 代替 flows。联合群作用、infinitesimal derivations 和 local nets 分别保留 §§7.1、8.2、5.4 的参数、transpose 与生成类条件。
 
-**Not verified by finite checks:** 无限维 PDE/trace bounds、Bastiani smoothness、完备性、全类满射与非联合连续性均不是有限矩阵 residuals 的推论；证明分别在 [N] 的解析引理和本文正文。输入稿引用的外部 Python script 与 JSON results 未随这三个文件提供，本次没有把其“22 checks passed”当作证据。
+**Not verified by finite checks:** 无限维 PDE/trace bounds、Bastiani smoothness、完备性、全类满射、群作用的联合 smoothness 与非联合连续性均不是有限矩阵 residuals 的推论；证据分别是 [N] 的解析引理和本文正文。前轮三份输入稿所称的“22 checks”仍不作为本轮证据；第二轮 bundle 原未附 `checks_results.json`，本次的“31 组通过”来自重跑实际提供的脚本。strict-local prequotient onto、line observables 的 bulk-net membership 及 §9 列明的额外 completion/tensor 性质未由本轮补证。
 
 
 可独立重跑的有限符号检查：
@@ -831,6 +969,42 @@ AppendTo[raw,"smoothGraphBracketCounterexampleNorm"->
  {{0,ww^loss/(2ee)},{0,0}}.
  Inverse[DiagonalMatrix[{ww^(ss+loss+3),ww^(ss+loss+2)}]]-
  {{0,1/(2ee ww)},{0,0}})];
+
+xi={q1 h,p1^2,q2 p2,Sin[q1],h p1};
+dxi=jac[xi,vars]; dxif=Inverse[Transpose[be]].Transpose[dxi].Transpose[be];
+deltaF=grad[ff,vars].xi; deltaG=grad[gg,vars].xi;
+AppendTo[raw,"infinitesimalFullGradient"->
+ (ug[deltaF]-jac[ug[ff],vars].xi-dxif.ug[ff])];
+AppendTo[raw,"infinitesimalPoissonDefect"->
+ (grad[familyBracket[ff,gg,pps],vars].xi-
+ familyBracket[deltaF,gg,pps]-familyBracket[ff,deltaG,pps]+
+ ug[ff].be.(dxi.pps+pps.dxif).ug[gg])];
+gn=ww^loss p^2/(2ee); bn={0,ee ww^(-loss)};
+AppendTo[raw,"jointTranslationOutputVector"->
+ ((j.grad[gn,x]/.Thread[x->bn])-{1,0})];
+AppendTo[raw,"jointTranslationGradientScale"->
+ (DiagonalMatrix[{ww^(ss+1),ww^ss}].jac[j.grad[gn,x],x].
+ Inverse[DiagonalMatrix[{ww^(ss+loss+3),ww^(ss+loss+2)}]]-
+ {{0,1/(ee ww)},{0,0}})];
+AppendTo[raw,"jointTranslationParameterScale"->(ww^loss bn[[2]]-ee)];
+waveU={{Cos[omega t],Sin[omega t]/omega},
+ {-omega Sin[omega t],Cos[omega t]}};
+qt=-(waveU.bv).om.x; enMode=(p^2+omega^2 q^2)/2;
+AppendTo[raw,"timeDependentSolutionCharge"->(D[qt,t]+pb[qt,enMode])];
+homH=q^3 p+p^2/2+q+3;
+homV=j.grad[homH,x];
+radialQ=-Integrate[(homV/.Thread[x->lam x]).om.x,{lam,0,1}];
+AppendTo[raw,"radialHamiltonianHomotopy"->
+ {radialQ-homH+(homH/.Thread[x->{0,0}]),j.grad[radialQ,x]-homV}];
+metricEnergy=(ww^(2ss+2)q^2+ww^(2ss)p^2)/2;
+AppendTo[raw,"sobolevEnergyHamiltonianVector"->
+ (j.grad[metricEnergy,x]-{ww^(2ss)p,-ww^(2ss+2)q})];
+fa=q1^2 h+p2^3; ga=p1 q2+h^2; ha=q1 p1+p2 h;
+AppendTo[raw,"fullFamilyJacobi"->Table[
+ familyBracket[fa,familyBracket[ga,ha,po],po]+
+ familyBracket[ga,familyBracket[ha,fa,po],po]+
+ familyBracket[ha,familyBracket[fa,ga,po],po],{po,{pp0,pps}}]];
+
 checks=Map[FullSimplify[Flatten[{#}],Assumptions->ww>0&&ee>0]&,raw];
 <|"residualGroups"->checks,
 "allResidualsZero"->And@@(TrueQ[#==0]&/@Flatten[Values[checks]]),
