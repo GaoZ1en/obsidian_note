@@ -16,6 +16,12 @@ This project studies how independently defined regional observable algebras comp
 ## Scalar Observable Algebra
 
 - [Classical gluing formalism](<classical_gluing_formalism.md>): action-derived matching, full regional observable families, an admissible extension, and exact Poisson reconstruction.
+- [Observable algebra gluing formalism](<observable algebra gluing formalism.md>): independent classical/quantum objects, exact reconstruction, regular gauge reduction, coherent interacting comparison, and precise quantization/sewing and specialization theorems.
 - [Free renormalized quantum sewing](<free scalar renormalized quantum observable algebra gluing.md>): interior equicausal/Wick algebras, response-derived contractions, exact global comparison, and a polynomial-core extension containing the total free energy.
 - [Interacting phi-n quantum sewing](<phin renormalized quantum observable algebra gluing.md>): off-shell polynomial insertions, coherent renormalized time ordering, quantum Møller compatibility, and the formal interacting isomorphism.
 - [Scalar sewing audit](<renormalized scalar sewing audit.md>): the imported classical and quantum claims, their repairs and no-go statements, and the remaining history/boundary regularity limits.
+
+## Classical Gauge Benchmark
+
+- [1+1 Yang–Mills classical observable algebra gluing](<models/1+1 Yang-Mills classical observable algebra gluing.md>): continuum action to framed cotangent phase space, full smooth observable algebras, diagonal cut reduction, crossing Wilson lines, electric insertions, exact global dynamics, and finite associativity.
+- [Current imported-draft audit](<../../../01_commit_audit_and_repairs.md>): the three September 6 drafts, repaired proof inputs and Noether flux, with links to the reproducible checks.

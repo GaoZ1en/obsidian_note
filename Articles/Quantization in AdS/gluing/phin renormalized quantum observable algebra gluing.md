@@ -64,7 +64,19 @@ W_F=W_0-iG_0^A,\qquad L_0W_F=-i\delta.
 
 **这个 interval 模型中的构造范围。** [Q0] 的 reflected kernel 在内部局部 diagonal 附近有普通 Hadamard singularity。所有顶点位于避开真正边界的 compact set。对互异顶点，反射光线仍严格按时间定向；Feynman graph 的乘积可按 causal factorization 构造，反射不会产生零时间长度的内部返回光线。Partial diagonals 上先使用已经构造的较低阶 products；剩下的 total diagonal 位于普通内部邻域。每个 fixed polynomial graph 有有限 scaling degree，因此可逐阶作局域分布延拓。所有 finite counterterms 也支撑在这些内部 diagonals。
 
-这给 compact interior polynomial insertions 的 Epstein–Glaser construction；它没有证明 boundary-supported vertices 的版本。采用同一局域 extension rule、相同有限常数及相同 contact-term conventions，才有后面的 comparison。标准局域延拓输入见 [Brunetti–Fredenhagen](https://arxiv.org/abs/math-ph/9903028) 和 [Hollands–Wald](https://arxiv.org/abs/gr-qc/0111108)；反射奇性和内部支撑的处理是本节另外检查的模型条件。
+这里还须证明值域属于 $\mathcal P_\mu$；单有 finite scaling degree 只给 distribution extension，不能代替 wavefront 控制。对该静态模型可以补上如下证明。在未 smearing 的 graph kernel 中，每条反射 edge 的两个时间 covectors 之和为零。互异点的产品因此满足总时间 covector 守恒。发生完全 cancellation 的 singular subgraph 若非空，取其最大时间 vertex，该 vertex 的非零 incident Feynman covectors 同号，矛盾；内部互异同时间点之间没有 singular edge。
+
+在 total diagonal 附近，反射项 smooth，奇异部分由通常的内部 Hadamard distributions 给出。使用保留对角方向 smooth parameter dependence 的 microlocal extension：局部以共同时间与 relative coordinates 表达，在 relative coordinates 中延拓，允许的 counterterms 为 smooth coefficients 乘 diagonal delta 的有限导数。故延拓后的 graph 仍满足
+
+$$\begin{align}
+\operatorname{WF}(t_{\mathcal G,R})
+\subset\{(z_1,\zeta_1;\ldots;z_k,\zeta_k):
+\sum_{a=1}^k\zeta_a(\partial_t)=0\}.
+\end{align}$$
+
+Partial diagonals 按 causal factorization 和较低阶 products 归纳。Smooth switching、finite derivatives 不增大 wavefront set；把各 field slots 置于其 vertex 并积分没有外腿的 vertices 时，时间 covectors 在保留的 slots 上仍求和为零。非零的全同向 causal tuple 的时间分量和不可能为零，因而输出 polynomial coefficients 满足 $\mathcal P_\mu$ 条件。所有外腿位于有限个 compact vertex supports。这也说明必须采用上述 smooth-parameter microlocal extension，而不是任意 distribution extension。
+
+这给 compact interior polynomial insertions 的 Epstein–Glaser construction；它没有证明 boundary-supported vertices 的版本。采用同一局域 extension rule、相同有限常数及相同 contact-term conventions，才有后面的 comparison。标准局域延拓输入见 [Brunetti–Fredenhagen](https://arxiv.org/abs/math-ph/9903028) 和 [Hollands–Wald](https://arxiv.org/abs/gr-qc/0111108)；反射奇性、总时间 covector 条件及内部支撑是本节另外核查的静态模型输入。这里的 symmetry 首先指插入的置换对称性；一般 Noether/stress-tensor Ward identities 必须分别核查 anomaly 与 normalization，不能从 graph existence 自动推出。
 
 ## 3. 为什么必须保留 Off-Shell 数据
 
@@ -123,7 +135,7 @@ F\in\mathcal P_{\mathrm{loc}}\right\}.
 }
 \end{align}$$
 
-这里取 formal coupling completion：每个系数由有限代数运算构成。任意 polynomial local composite 和内部 spacetime-smeared energy/stress tensor 都可作为 $F$；有限个 $\lambda,\hbar$-dependent local counterterm insertions 逐系数加入同样合法。其乘积闭合于 [Q0] 的 Wick class。
+这里精确定义为 ambient $\mathfrak Q_0[[\lambda]]$ 中所生成的 $\mathbb C[[\lambda,\hbar]]$-subalgebra 的 $(\lambda,\hbar)$-adic closure：每个有限阶截断来自有限 words，不对 spacetime coefficients 再取未经指定的 smooth/distribution closure。任意 polynomial local composite 和内部 spacetime-smeared energy/stress tensor 都可作为 $F$；形式 local counterterm labels 按同一阶数规则加入。其乘积闭合于 [Q0] 的 Wick class。
 
 可另加入 [Q0, §6] 的 $H_{\mathrm{in}}$ 及其所需谱权重，得到含总 incoming free energy 的扩张。$H_{\mathrm{in}}$ 是早期自由窗中的实际总能量；在这里不把它送入尚未定义的 $T_R(H_{\mathrm{in}},\ldots)$。
 
@@ -194,7 +206,13 @@ $$\begin{align}
 F_M\in\mathcal P_{\mathrm{loc},M}\}.
 \end{align}$$
 
-这个定义不使用 regional restriction image。自由比较 $\alpha_0$ 由 [Q0] 的 independent operator assembly theorem 给出。
+这个定义不使用 regional restriction image。自由比较由 [Q0] 的 independent operator assembly theorem 给出。以下作用于 $T_R,S_R,\mathcal R_V^q$ 的 $\alpha_0$ 均指其先已定义的 off-shell lift $\alpha_{\mathrm{off}}$；作用于自由物理 algebra 的 $\alpha_0$ 是诱导的 on-shell map，二者满足
+
+$$\begin{align}
+\alpha_0\sigma_{0,s}=\sigma_{0,M}\alpha_{\mathrm{off}}.
+\end{align}$$
+
+因此这些式子不让 $T_R$ 作用于 on-shell equivalence classes。
 
 Local density patching 给 $\alpha_0V=V_M$。在互异点，$\alpha_0W_F=W_{F,M}$ 逐 graph intertwine；在 diagonals，相同几何、相同 distribution-extension rule 和相同有限 constants 给相同 counterterms。对 vertex number 归纳，得到
 
@@ -266,6 +284,22 @@ Q_0\mathcal R_{V_Y}^q=\mathcal R_V^qQ_0,\qquad
 \alpha_0\mathcal R_V^q=\mathcal R_{V_M}^q\alpha_0.
 }
 \end{align}$$
+
+生成元的 tree symbols 不等于整个代数已经有忠实 classical specialization。若记上述 image algebra 为 $\mathcal A_q\subset\mathcal B_q=\mathfrak Q_0[[\lambda]]$，则指定经典目标 $\mathcal A_{\mathrm{cl}}$ 还须满足
+
+$$\begin{align}
+\mathcal A_q\cap\hbar\mathcal B_q=\hbar\mathcal A_q,\qquad
+\sigma_\hbar(\mathcal A_q)=\mathcal A_{\mathrm{cl}}.
+\end{align}$$
+
+一个始终有定义的扩张是：在该 torsion-free ambient 中取包含全部指定 generators 的最小 adically closed、$\hbar$-saturated unital $\star$-subalgebra $\mathcal A_q^{\mathrm{sat}}$，并令 $\mathcal A_{\mathrm{cl}}^{\mathrm{sat}}=\sigma_\hbar(\mathcal A_q^{\mathrm{sat}})$。它存在，因为满足条件的子代数族非空，且交保持这两项性质。Saturation 使 ambient 中的 $[F,G]_\star/(i\hbar)$ 仍在子代数中，并给
+
+$$\begin{align}
+\mathcal A_q^{\mathrm{sat}}/\hbar\mathcal A_q^{\mathrm{sat}}
+\cong\mathcal A_{\mathrm{cl}}^{\mathrm{sat}}.
+\end{align}$$
+
+所以实际 symbol image 是 Poisson algebra，至少包含所有 tree insertion symbols。Ambient assembly isomorphism 双向保持 generators、topology 和 saturation，故该扩张同样 sewn/global 同构。若需要 central presentation，在扩张后重新取相同逐阶 $\mathcal C$-parameter extension，evaluation 与 constant section 仍给 exact quotient。这不把 actual symbol image 未经证明地认作全部 $\mathcal H$ 或原先最小 insertion algebra。
 
 证明见 §§5、6：free Wick sewing 使 contractions 一致，coherent $T_R$ 使每个 renormalized graph 一致，Bogoliubov formula 随后交换，最后的 on-shell restriction 也一致。故对本文已经指定 transparent response 的 regional presentation，先作 quantum Møller construction 再 release，与先 release 插入标签再作该 construction，得到相同 observable；随后与 independently quantized global algebra exact 同构。$\hbar^0$ generators 恢复经典 $\mathsf R_\lambda$ 的 released fields。
 

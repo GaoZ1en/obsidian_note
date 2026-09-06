@@ -21,7 +21,7 @@ $$\begin{align}
 \Gamma_{ij}&=I\times\Sigma_{ij}, & \Gamma_{i0}&=I\times\Sigma_{i0},
 \end{align}$$
 
-where $\displaystyle{I=[t_-,t_+]}$, and let $\displaystyle{M_i=I\times\Sigma_i}$. The interfaces are smooth, pairwise, and timelike, with no triple junctions or corners.
+where $\displaystyle{I=[t_-,t_+]}$, and let $\displaystyle{M_i=I\times\Sigma_i}$. The spatial interfaces are smooth and pairwise, with no spatial triple junctions. Their intersections with the temporal end faces are treated by the corner terms in the full action.
 
 For each side $\displaystyle{(i,e)}$ of an interface $\displaystyle{e=\{i,j\}}$, let
 
@@ -52,6 +52,8 @@ An identification of the boundary coordinates on the two copies of the same inte
 $$\begin{align}
 J_{ij}:\mathcal B_{ij}\longrightarrow\mathcal B_{ji}.
 \end{align}$$
+
+In the formulas below, $\displaystyle{J_{ij}}$ is fixed and linear (or affine with the displayed linear part acting on variations). For a nonlinear identification, replace it on variations by $\displaystyle{DJ_{ij}(q)}$ and use its cotangent lift, including the background derivative in the linearized flux equation. Gauge connection histories transform affinely and require the retained frame/transition data.
 
 Define
 
@@ -259,7 +261,7 @@ The regional fluxes remain present as internal exchanges, while their sum is con
 
 ### Global Reconstruction
 
-Let $\displaystyle{\mathcal P_M}$ be the solution space of the global theory with the same physical boundary conditions. Assume that the regional and global problems use the same regularity class, that the complete action is additive across artificial interfaces, and that the continuity and flux conditions are the transmission conditions of the global equations.
+Let $\displaystyle{\mathcal P_M}$ be the independently defined solution space of the global theory with the same physical boundary conditions. Assume that the complete action is additive across artificial interfaces and that the continuity and flux conditions are the transmission conditions of the global equations. Also require a transmission regularity theorem: every matched piecewise solution belongs to the declared global solution class, and assembly and restriction are smooth in both directions. Equality of the names of the regularity classes alone does not prove this assertion.
 
 Define the restriction map by
 
@@ -274,7 +276,7 @@ $$\begin{align}
 &=0.
 \end{align}$$
 
-The reconstructed field therefore solves the global equations. Restriction is bijective, and additivity of the symplectic potential gives
+The reconstructed field therefore solves the global equations weakly. The transmission regularity assumption places it in the specified global class. Restriction and assembly are then smooth inverses, and additivity of the complete symplectic potential gives
 
 $$\begin{align}
 \operatorname{Res}^*\Omega_{\mathrm{glued}}=\Omega_M.
@@ -290,36 +292,57 @@ Since every complete order of gluing imposes the same interface conditions and r
 
 ### Symmetries, Charges, and Flux Balance
 
-Assume that the complete action and the fixed physical boundary conditions are invariant under an infinitesimal transformation $\displaystyle{X_\lambda}$, with the symmetry defined off shell. A prescribed interface history generally changes under this transformation and acts as an external source for the regional problem. The corresponding regional Noether charge satisfies
+Define the symmetry off shell, including quasi-invariance of the Lagrangian and the boundary/corner action. Write the bulk identity and its complete, consistently improved Noether current as
 
 $$\begin{align}
-H_{i,\lambda}(t_+)-H_{i,\lambda}(t_-) =-\braket{\Pi_i,\delta_\lambda q_i} +\text{physical-boundary flux}.
+\delta_\lambda\mathscr L_i&=d b_{i,\lambda},&
+j_{i,\lambda}&=\theta_i(\delta_\lambda\Phi_i)-b_{i,\lambda}.
 \end{align}$$
 
-The symmetry preserves the interface identification,
+The corresponding charge includes the corner contribution fixed by the full action. On shell, Stokes' theorem gives
+
+$$\begin{align}
+H_{i,\lambda}(t_+)-H_{i,\lambda}(t_-)
+&=-\int_{\Gamma_i^{\mathrm{art}}}
+\left(\Pi_i\delta_\lambda q_i-b_{i,\lambda}^{\mathrm{out}}\right)
++\mathcal F_{i,\lambda}^{\mathrm{phys/corner}}.
+\end{align}$$
+
+Here $\displaystyle{b_{i,\lambda}^{\mathrm{out}}}$ uses the same polarization/improvement as the normal component of $\displaystyle{\theta_i}$. The final term denotes the remaining oriented physical-boundary and corner contributions. The shorter formula containing only $\displaystyle{-\braket{\Pi_i,\delta_\lambda q_i}}$ requires a vanishing normal quasi-invariance term and no omitted improvement contribution.
+
+The symmetry must preserve the interface identification,
 
 $$\begin{align}
 \delta_\lambda q_{ji}=J_{ij}\delta_\lambda q_{ij}.
 \end{align}$$
 
-Using the gluing conditions, the two internal contributions cancel,
+For a single global symmetry of the additive full action, require the complete currents to match. In this polarization, this includes $\displaystyle{b_{i,\lambda}^{\mathrm{out}}+b_{j,\lambda}^{\mathrm{out}}=0}$, up to the already included corner terms. Then
 
 $$\begin{align}
-&-\braket{\Pi_{ij},\delta_\lambda q_{ij}} -\braket{\Pi_{ji},\delta_\lambda q_{ji}}\\
-&\qquad =-\braket{\Pi_{ij}+J_{ij}^*\Pi_{ji}, \delta_\lambda q_{ij}}=0.
+&-\int_{\Gamma_e}\left[
+\Pi_{ij}\delta_\lambda q_{ij}+\Pi_{ji}\delta_\lambda q_{ji}
+-b_{i,\lambda}^{\mathrm{out}}-b_{j,\lambda}^{\mathrm{out}}\right]=0.
 \end{align}$$
 
-Hence the sum of regional charges is driven only by the physical boundaries.
+Hence the sum of regional charges is driven only by the retained physical-boundary/corner terms. Flux matching of $\displaystyle{\Pi}$ alone does not establish this statement for arbitrary quasi-symmetries.
 
-### classical regional observable algebras
+For example, a free scalar solution shift $\displaystyle{\delta_s\phi=s}$ has
+
+$$\begin{align}
+H_s&=\int(s\dot\phi-\dot s\phi)\,dx,&
+\dot H_s&=[s\phi'-s'\phi]_a^b.
+\end{align}$$
+
+At an artificial right endpoint this is $\displaystyle{-\Pi_\phi s+q\Pi_s}$. For $\displaystyle{\phi=s=\sinh(mx)}$ both terms cancel; omitting the second term gives a nonzero answer for an identically zero charge.
+
+### Classical Regional Observable Algebras
 
 Choose regional coordinates $\displaystyle{(z_i,q_i)}$ on the admissible part of $\displaystyle{\widehat{\mathcal P}_i}$, where $\displaystyle{z_i\in X_i}$ labels the solution at fixed history. In these coordinates the fixed-history symplectic form is $\displaystyle{\Omega_i}$. The following construction applies on charts where these forms are constant and the regional solution and response maps are smooth.
 
 For a fixed history, define the regional observable algebra by
 
 $$\begin{align}
-\mathcal H(X_i)
-&=\left\{F\in C^\infty(X_i):
+\mathcal H(X_i) &=\left\{F\in C^\infty(X_i):
 dF=-\Omega_i(X_F,\cdot),\
 X_F\in C^\infty(X_i,X_i)\right\},\\
 \{F,G\}_i&=dF(X_G)=-\Omega_i(X_F,X_G).
@@ -330,8 +353,7 @@ The condition on $\displaystyle{X_F}$ selects the functions whose Hamiltonian ve
 To compare different prescribed histories, use joint functions $\displaystyle{F(z_i,q_i)}$. Their full differential must have the form
 
 $$\begin{align}
-dF&=-\Omega_i(V_F,\delta z_i)
-+\sum_{j\in N(i)}\braket{A_{F,ij},\delta q_{ij}},
+dF&=-\Omega_i(V_F,\delta z_i) +\sum_{j\in N(i)}\braket{A_{F,ij},\delta q_{ij}},
 \end{align}$$
 
 where $\displaystyle{V_F}$ is a smooth regional phase-space vector and each $\displaystyle{A_{F,ij}}$ is a smooth interface density with compact support away from the temporal endpoints. The density and all its mixed derivatives use one fixed compact support for each observable. Physical histories are restriction classes on the declared time window; auxiliary extensions outside that window are identified.
@@ -339,11 +361,8 @@ where $\displaystyle{V_F}$ is a smooth regional phase-space vector and each $\di
 For a product of regions, write $\displaystyle{y=(z_i,q_i)_i}$ and use the pairing
 
 $$\begin{align}
-\beta((V,A),(\delta z,\delta q))
-&=-\sum_i\Omega_i(V_i,\delta z_i)
-+\sum_{i,j}\braket{A_{ij},\delta q_{ij}},\\
-\mathcal H_\beta(Y)
-&=\left\{F\in C^\infty(Y):
+\beta((V,A),(\delta z,\delta q)) &=-\sum_i\Omega_i(V_i,\delta z_i) +\sum_{i,j}\braket{A_{ij},\delta q_{ij}},\\
+\mathcal H_\beta(Y) &=\left\{F\in C^\infty(Y):
 dF=\beta(U_F,\cdot),\
 U_F=(V_F,A_F)\text{ is smooth with the stated support}\right\}.
 \end{align}$$
@@ -351,8 +370,7 @@ U_F=(V_F,A_F)\text{ is smooth with the stated support}\right\}.
 This defines the regional family algebra from regional data. Its fixed-history bracket is
 
 $$\begin{align}
-\{F,G\}_{\mathrm{reg}}
-&=-\sum_i\Omega_i(V_{F,i},V_{G,i}).
+\{F,G\}_{\mathrm{reg}} &=-\sum_i\Omega_i(V_{F,i},V_{G,i}).
 \end{align}$$
 
 Histories are prescribed parameters at this stage. Their derivatives are nevertheless retained because releasing a history changes the physical field. Point evaluation of a history has a delta-function derivative and does not belong to this family class.
@@ -361,15 +379,13 @@ The product and finite smooth functional calculus preserve the class:
 
 $$\begin{align}
 U_{FG}&=F\,U_G+G\,U_F,\\
-U_{h(F_1,\ldots,F_k)}
-&=\sum_a(\partial_a h)(F_1,\ldots,F_k)\,U_{F_a}.
+U_{h(F_1,\ldots,F_k)} &=\sum_a(\partial_a h)(F_1,\ldots,F_k)\,U_{F_a}.
 \end{align}$$
 
 For a constant skew operator $\displaystyle{\mathsf P}$ relative to $\displaystyle{\beta}$, the bracket $\displaystyle{\beta(U_F,\mathsf P U_G)}$ has gradient
 
 $$\begin{align}
-U_{\{F,G\}}
-&=DU_F[\mathsf P U_G]-DU_G[\mathsf P U_F].
+U_{\{F,G\}} &=DU_F[\mathsf P U_G]-DU_G[\mathsf P U_F].
 \end{align}$$
 
 Hessian symmetry proves this formula and cancels the six Hessian terms in the Jacobi identity. Taking $\displaystyle{\mathsf P(V,A)=(V,0)}$ gives the regional bracket above.
@@ -389,11 +405,8 @@ by taking the regional coordinates and common histories of a matched solution. I
 For exact reconstruction of the whole chosen function class, require an extension map and the two regular transposes
 
 $$\begin{align}
-\mathsf B:Y&\longrightarrow X,&
-\mathsf B\mathsf R&=1,\\
-\beta(U,D\mathsf R(x)h)
-&=-\Omega(D\mathsf R(x)^\flat U,h),&
--\Omega(v,\mathsf B y)&=\beta(\mathsf B^\flat v,y).
+\mathsf B:Y&\longrightarrow X,& \mathsf B\mathsf R&=1,\\
+\beta(U,D\mathsf R(x)h) &=-\Omega(D\mathsf R(x)^\flat U,h),& -\Omega(v,\mathsf B y)&=\beta(\mathsf B^\flat v,y).
 \end{align}$$
 
 Here $\displaystyle{\mathsf B}$ is linear, $\displaystyle{D\mathsf R^\flat}$ is smooth in the background, and both transposes preserve the allowed vectors and history densities, including their fixed-support condition under background differentiation. On an actual local existence domain, all maps are restricted to open sets containing the matching locus and $\displaystyle{\mathsf B(Y)=X}$. These are model inputs: a bijection of solution spaces alone does not supply such an extension. In the scalar construction, $\displaystyle{\mathsf B}$ is obtained by extracting Cauchy data in the reference time strip.
@@ -401,17 +414,14 @@ Here $\displaystyle{\mathsf B}$ is linear, $\displaystyle{D\mathsf R^\flat}$ is 
 Differentiating $\displaystyle{\mathsf B\mathsf R=1}$ and using the two pairings gives
 
 $$\begin{align}
-\mathsf B D\mathsf R(x)=1,\qquad
-D\mathsf R(x)^\flat\mathsf B^\flat=1.
+\mathsf B D\mathsf R(x)=1,\qquad D\mathsf R(x)^\flat\mathsf B^\flat=1.
 \end{align}$$
 
 Define the sewn bracket on the family space by
 
 $$\begin{align}
-\mathsf P_{\mathrm{sew}}(y)
-&=D\mathsf R(\mathsf B y)D\mathsf R(\mathsf B y)^\flat,\\
-\{F,G\}_{\mathrm{sew}}(y)
-&=\beta\bigl(U_F(y),\mathsf P_{\mathrm{sew}}(y)U_G(y)\bigr).
+\mathsf P_{\mathrm{sew}}(y) &=D\mathsf R(\mathsf B y)D\mathsf R(\mathsf B y)^\flat,\\
+\{F,G\}_{\mathrm{sew}}(y) &=\beta\bigl(U_F(y),\mathsf P_{\mathrm{sew}}(y)U_G(y)\bigr).
 \end{align}$$
 
 For a linear cut this reduces to $\displaystyle{\mathsf P_{\mathrm{sew}}=\mathsf R\mathsf R^\flat}$. It generally changes both the brackets within a region and the brackets between regions.
@@ -422,38 +432,40 @@ $$\begin{align}
 y=\mathsf R x+w,\qquad x=\mathsf B y,\qquad \mathsf B w=0.
 \end{align}$$
 
-At fixed $\displaystyle{w}$, the bracket is precisely the bracket of $\displaystyle{F(\mathsf R x+w)}$ and $\displaystyle{G(\mathsf R x+w)}$ on $\displaystyle{(X,\Omega)}$. Thus Jacobi follows from the symplectic bracket on each such leaf. The transpose conditions ensure that differentiating this expression gives another allowed full gradient. When $\displaystyle{\mathsf R}$ is nonlinear, this differentiation includes the derivative of $\displaystyle{\mathsf P_{\mathrm{sew}}}$; the constant-operator formula above cannot be used without that term.
+At fixed $\displaystyle{w}$, the bracket is precisely the bracket of $\displaystyle{F(\mathsf R x+w)}$ and $\displaystyle{G(\mathsf R x+w)}$ on $\displaystyle{(X,\Omega)}$. Thus Jacobi follows from the symplectic bracket on each such leaf. To prove closure of the full function class, put $\displaystyle{A(x)=D\mathsf R(x)^\flat}$. Differentiation and Hessian symmetry give the actual gradient
+
+$$\begin{align}
+U_{\{F,G\}_{\mathrm{sew}}}
+={}&DU_F[\mathsf P_{\mathrm{sew}}U_G]-DU_G[\mathsf P_{\mathrm{sew}}U_F]\\
+&+\mathsf B^\flat\left(
+DA(x)[A(x)U_G]U_F-DA(x)[A(x)U_F]U_G\right),
+\qquad x=\mathsf B y.
+\end{align}$$
+
+The first two terms retain the fixed supports of the input gradients; the last lies in the fixed support allowed for $\displaystyle{\mathsf B^\flat}$. Joint smoothness of the transposes and their background derivatives therefore proves full-gradient closure. The last term must not be dropped for nonlinear $\displaystyle{\mathsf R}$.
 
 Release is the pullback
 
 $$\begin{align}
-\mathsf R^*F&=F\circ\mathsf R,&
-X_{\mathsf R^*F}(x)&=D\mathsf R(x)^\flat U_F(\mathsf R x).
+\mathsf R^*F&=F\circ\mathsf R,& X_{\mathsf R^*F}(x)&=D\mathsf R(x)^\flat U_F(\mathsf R x).
 \end{align}$$
 
 It includes the history contribution to the gradient and satisfies
 
 $$\begin{align}
-\mathsf R^*\{F,G\}_{\mathrm{sew}}
-&=\{\mathsf R^*F,\mathsf R^*G\}_X.
+\mathsf R^*\{F,G\}_{\mathrm{sew}} &=\{\mathsf R^*F,\mathsf R^*G\}_X.
 \end{align}$$
 
 Surjectivity follows for each observable individually. Given $\displaystyle{G\in\mathcal H(X)}$, define
 
 $$\begin{align}
-\widetilde G&=G\circ\mathsf B,&
-U_{\widetilde G}&=\mathsf B^\flat X_G\circ\mathsf B,&
-\mathsf R^*\widetilde G&=G.
+\widetilde G&=G\circ\mathsf B,& U_{\widetilde G}&=\mathsf B^\flat X_G\circ\mathsf B,& \mathsf R^*\widetilde G&=G.
 \end{align}$$
 
 Hence the sewn observable algebra is
 
 $$\begin{align}
-\boxed{
-\mathcal H_{\mathrm{sew}}
-:=\frac{(\mathcal H_\beta(Y),\{\ ,\ \}_{\mathrm{sew}})}
-{\ker\mathsf R^*}
-\simeq\mathcal H(X).
+\boxed{ \mathcal H_{\mathrm{sew}} :=\frac{(\mathcal H_\beta(Y),\{\ ,\ \}_{\mathrm{sew}})} {\ker\mathsf R^*} \simeq\mathcal H(X).
 }
 \end{align}$$
 
@@ -464,10 +476,7 @@ The kernel consists exactly of families that vanish on physical matching data. I
 The independent global reconstruction above gives a symplectic assembly map $\displaystyle{\operatorname{Ass}:X\to\mathcal P_M}$ on the same admissible solution domain. Therefore
 
 $$\begin{align}
-\boxed{
-\mathcal H_{\mathrm{sew}}
-\longrightarrow\mathcal H(\mathcal P_M),\qquad
-[F]\longmapsto F\circ\mathsf R\circ\operatorname{Ass}^{-1}
+\boxed{ \mathcal H_{\mathrm{sew}} \longrightarrow\mathcal H(\mathcal P_M),\qquad [F]\longmapsto F\circ\mathsf R\circ\operatorname{Ass}^{-1}
 }
 \end{align}$$
 
@@ -490,3 +499,5 @@ $$\begin{align}
 The kernel is invariant and the reconstructed physical algebra carries the same Poisson symmetry as the global theory. A symmetry between different existence domains gives an isomorphism between those algebras; an automorphism of one local algebra requires an invariant domain. Equivariance on matching data alone does not assert that the chosen bracket away from matching is invariant.
 
 Finally, finite successive sewing gives the same observable isomorphism whenever every intermediate cluster retains its external histories and the corresponding transpose and extension maps. The cut maps compose, their transposes compose in reverse order, and the final matching solution is independent of the order by uniqueness of the transmission problem. This establishes associativity on the physical quotient under the same hypotheses as the classical solution reconstruction.
+
+It does not identify arbitrary extensions away from the matching locus. Such an identification additionally requires coherent choices of the extension maps. Causal commutativity of local nets likewise requires the CPS/Peierls identification and a causally supported propagator; a symplectic assembly theorem by itself supplies neither property.

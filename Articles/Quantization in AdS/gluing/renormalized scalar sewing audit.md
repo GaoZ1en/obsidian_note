@@ -2,6 +2,8 @@
 
 日期：2026-09-06。审计对象是本次工作区中的导入文件与当前模型笔记；导入稿所引用的历史基准为 commit 7298e8073f3689d9c6ac19cfebb9d4f001d6856d。本次不将旧对话中的“已证明”或脚本通过标签作为证明。
 
+本文件 §§1–10 保留上一轮针对旧导入稿的审计范围与运行记录。当前修订后的结论和本地复验见末尾 §11；旧稿的否定判定不直接适用于已按本文修补的 Q0/Qn。
+
 **判定：经典两处修补正确；两份 renormalized quantum 稿的整体无条件判定不成立。** 前者补清实际域与 history 代表即可保留原模型的核心 classical sewing。后者除了尚未证明的高阶 microlocal regularity，还存在 off-shell/on-shell 对象混用、相互作用符号、time-ordering 值域和 quantum release map 未定义等问题。下面给出可保留的结论、反例与已经落实的修补。
 
 ## 1. 文件范围与结论
@@ -244,3 +246,17 @@ H_r\star_WH_s=H_rH_s+\hbar H_{r+s}.
 **Assumptions:** 每个 theorem 使用其正文的 model、support、domain、Wick 与 renormalization hypotheses；strong-coupling theorem 只针对指定实际 classical model。
 
 **Not verified:** 任意 smooth history families 的全阶 microlocal stability、量子强耦合、一般 boundary composites、无限切分和 state/representation theorem。运行成功不能证明这些命题。
+
+## 11. Observable formalism 与 YM 提取时的后续复审
+
+**判定：在其声明的静态内部支撑和 coherent quantum inputs 下，修订后的 Q0/Qn 主定理成立。** 本轮还补入以下证明与准确边界：
+
+- Q0 §2 给有限 Dirichlet mode sums 的 normal-topology Fourier-tail 估计，因而 on-shell Wick ideal 的极限论证不再只写成“bisolution 所以成立”。
+- Qn §2 给 reflected graphs 的总时间 covector 约束和 smooth-parameter diagonal extension，补足输出属于 polynomial microcausal class 的论证；finite scaling degree 本身不代替这一点。
+- Qn 区分 off-shell comparison 与 induced on-shell map，精确指定 ambient adic closure；新增 saturation/actual-symbol-image 的 quantum 扩张，但不将它认作整个 classical smooth-Hamiltonian class。
+- Classical formalism 的 Noether flux 已加入 quasi-invariance current，并补明 weak-to-smooth patching input 和完整 nonlinear-gradient formula。
+- 一般 locality 使用独立 causal support 输入；有限结合性针对 physical quotients，任意 off-matching extensions 不由 transmission 唯一性固定。
+
+新 [general observable formalism](<observable algebra gluing formalism.md>) 给模型无关的充分条件与证明；[1+1 YM classical model](<models/1+1 Yang-Mills classical observable algebra gluing.md>) 给含 framed Wilson operators 的全 smooth exact quotient。详细逐文件审计在 [当前三稿审计](<../../../01_commit_audit_and_repairs.md>)。
+
+本轮实际复现 [scalar 30 组](<numerics/observable_sewing_scalar_recheck_results.json>)，新增 [23 组 finite identities](<numerics/observable_sewing_ym_audit_results.json>)，另得 [两个 xAct/xTras Noether residuals](<numerics/observable_sewing_noether_xact_results.json>) 为零。这里没有重新运行本文件上一轮记录的全部外部 Python checks，也不把这些有限结果称为 microlocal/PDE theorem。

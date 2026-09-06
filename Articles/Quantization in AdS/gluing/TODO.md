@@ -4,6 +4,7 @@ The active route is regional/global observable algebra and its composition. Stat
 
 ## General Formalism
 
+- [x] Extract the general observable-algebra reconstruction theorems into an active note, with explicit classical, Wick, insertion, and semiclassical domains; keep model-dependent existence hypotheses explicit.
 - [ ] Consolidate the root formalism notes into one compatible chain of definitions: regional action/CPS, admissible interface data, regional observable algebra, sewing relation, and global reconstruction.
 - [ ] Define the regional and global observable algebras independently; remove any circular definition obtained by restricting or transporting the global algebra.
 - [ ] State exactly which boundary response, history transport, Peierls, charge, or transition data must accompany a regional algebra for sewing.
@@ -20,12 +21,13 @@ The active route is regional/global observable algebra and its composition. Stat
 
 ## Gauge Benchmark
 
-- [ ] Define the framed or cut-charged regional observable algebra after quotienting based proper gauge while retaining the active cut action and charge sectors.
+- [x] Define the framed regional classical algebra for pure 1+1 YM after quotienting based proper gauge; retain the active cut action, endpoint charges, and prescribed-history transport.
 - [ ] Specify electric, magnetic, or mixed center choices and their effect on regional observables and superselection sectors.
 - [ ] Upgrade compact $1+1$ Yang--Mills to an operator-algebra sewing theorem on a declared algebraic core.
-- [ ] Construct crossing Wilson-line sewing, including endpoint-index pairing, transition data, and holonomy--electric-flux commutators.
-- [ ] Determine whether diagonal invariants suffice or whether an additional dynamical sewing ideal or response structure is required.
-- [ ] Prove the global-algebra map and three-region reduction by stages in the compact benchmark before attempting higher-dimensional completion.
+- [x] Construct classical crossing Wilson-line sewing in 1+1 YM, including endpoint indices, transition data, electric insertions, and holonomy/flux Poisson brackets.
+- [x] Prove that joint invariants plus the zero cut-moment constraint give the full smooth classical global algebra in the framed 1+1 YM benchmark.
+- [x] Prove the classical global-algebra map, actual global dynamics, and finite reduction by stages in that benchmark.
+- [ ] Establish an operator-algebra core and quantum reduction theorem beyond the separate Haar representation benchmark; do not treat the classical full-smooth theorem as a quantization of that whole class.
 
 ## Project Organization
 

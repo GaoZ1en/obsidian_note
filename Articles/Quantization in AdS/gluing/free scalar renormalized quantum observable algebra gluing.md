@@ -28,6 +28,8 @@ E=G^A-G^R,\qquad
 \{F,G\}=-\Omega(X_F,X_G).
 \end{align}$$
 
+这里 $G^{R/A}$ 是 $L_0=\partial_t^2+K$ 的 inverses。作用量 Hessian 是 $-L_0$，故若采用 Hessian Green functions，则 $G_{S_0}^{R/A}=-G^{R/A}$，且 $E=G_{S_0}^R-G_{S_0}^A$；这给与 CPS convention 的明确符号对照。
+
 量子 observable multiplication 是 $\star_W$；相互作用插入所需的 renormalized time ordering 是另一组 maps $T_{R,k}$。自由 Wick algebra 的定义不需要在所有 observables 上定义 $T_R$。
 
 ## 2. 一个实际闭合的 Wick function class
@@ -98,7 +100,33 @@ $$\begin{align}
 \mathfrak Q_i[q_i]=\mathfrak Q_i^{\mathrm{off}}[q_i]/\mathcal I_i[[\hbar]].
 \end{align}$$
 
-这是 $\star$-ideal：在解空间上恒为零的函数，其沿齐次解方向的所有导数都为零，而 $W_i$ 在两槽均是齐次 bisolution。可先对 $W_i$ 作正频谱平滑，逐槽使用此恒等式，再按上述 wavefront 配对取极限。这个论证只用于 $\star$，不用于 Feynman time ordering。
+这是 $\star$-ideal，但单说 bisolution 还不足以合法地与分布导数收缩。下面给出所用的极限证明。若 $F$ 在 prescribed-history 解空间上为零，则在任一物理解处，沿任意有限组 smooth homogeneous Dirichlet solution directions 的所有导数均为零；复模态按这些实方向的复线性延拓解释。
+
+对长度 $\ell$ 的 interval，令 $k_j=\pi j/\ell$、$\omega_j=(k_j^2+m^2)^{1/2}$，取实际有限秩 bisolutions
+
+$$\begin{align}
+W_N(t,x;t',x')=\sum_{j=1}^N
+\frac{\sin(k_jx)\sin(k_jx')}{\ell\omega_j}
+e^{-i\omega_j(t-t')}.
+\end{align}$$
+
+在每个内部 compact 上，它们在 normal distribution topology 中收敛到 $W_D$。一个足够大的闭锥可取
+
+$$\begin{align}
+\Lambda=\{(\zeta_1,\zeta_2):\zeta_1\in\overline V_+,\quad
+\zeta_2\in\overline V_-,\
+\zeta_1(\partial_t)+\zeta_2(\partial_{t'})=0\}\setminus0.
+\end{align}$$
+
+此锥没有单侧零 covector。证明如下：展开两个 sine 后，每项是四个 plane waves 之和，频率
+$(-\omega_j,\pm k_j;\omega_j,\pm k_j)$ 均在 $\Lambda$ 中，系数为 $O(j^{-1})$。用 compact cutoff 局部化后，在与 $\Lambda$ 不相交的闭锥上，频率距离至少为 $c(|\zeta|+j)$。Cutoff 的 Fourier 快速衰减给
+
+$$\begin{align}
+|\widehat{\chi(W_D-W_N)}(\zeta)|
+\le C_s\sum_{j>N}j^{-1}(1+|\zeta|+j)^{-s}.
+\end{align}$$
+
+对任意所需 Fourier seminorm，取足够大的 $s$，右端的加权上确界趋于零；对有界 smooth test families 也同样收敛。这同时控制 normal topology 的两类 seminorms。有限 tensor powers 由 tensor product 的 hypocontinuity 收敛，且保持左右 causal orientation。Polynomial/microcausal 导数和下节 equicausal 导数均在相应允许锥上有连续配对。每个有限 $N$ 的 contraction 为零，取极限给 $F\star_WG$ 与 $G\star_WF$ 在解上仍为零。这个证明不把普通弱分布收敛当作乘积连续性，也不适用于作为 inverse 的 Feynman kernel。
 
 History 改变时，物理场作 smooth affine shift。把 smooth shift 插入多项式核保持上述 wavefront 条件，给不同 affine fibers 间的 $*$-isomorphism。区域对象保留这些 fibers 及其 response/transport 数据；不把全部经典 history-dependent smooth functions 都自动列为量子元素。
 
@@ -119,7 +147,7 @@ $$\begin{align}
 \text{ 是闭合的 formal }*\text{-algebra}.}
 \end{align}$$
 
-先前的 polynomial ideal argument 对该类逐个固定 $\hbar$ 阶仍成立：沿任意 smooth homogeneous solutions 的导数为零，正频平滑 kernels 是这些方向的极限，microlocal contraction continuity 给同样的零值。故除去在 physical solution space 上恒为零的 ideal，得到 free on-shell equicausal algebra。这里以函数的实际 restriction 定义该 ideal；不额外声称它由有限个 equation-of-motion generators 代数生成。
+先前的 polynomial ideal argument 对该类逐个固定 $\hbar$ 阶仍成立：使用 §2 的有限秩 $W_N$ 及其 normal-topology convergence，equicausal 导数的连续延拓给同样的零值。故除去在 physical solution space 上恒为零的 ideal，得到 free on-shell equicausal algebra。这里以函数的实际 restriction 定义该 ideal；不额外声称它由有限个 equation-of-motion generators 代数生成，也不移用无边界的 time-slice theorem。
 
 后面的 assembly 是 smooth spacetime identification，它双向保持 $\Gamma_k$、compact supports 和 compact-background equicontinuity。因此 §§3–5 同时适用于这个更大的 free algebra：在相应式中把 $\mathcal P_\mu$ 及其 on-shell ideal 换成 $\mathcal E_{\mathrm{eq}}$ 及其 ideal，central presentation 仍只使用有限 polynomial mismatch parameters。
 
