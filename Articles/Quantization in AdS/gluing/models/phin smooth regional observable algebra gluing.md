@@ -112,6 +112,8 @@ $$
 
 使用 [P4, §2] 独立定义的 $\mathcal H_\beta(Y)$、$\mathcal H(X)$，形式版本逐系数取 $[[\lambda]]$。区域输入仍为 action、history、response 和完整梯度结构；不是只有抽象区域代数的乘法/括号。
 
+History 采用 [P4, §2] 的物理 restriction classes；若保留 $\mathcal Q$ 的辅助代表，则域在 $\mathcal N_I=\{h:h|_I=0\}$ 方向饱和，函数全局 basic。Matching 等于 cut 的像是在此物理商中说的；代表空间中的 matching 另包含 $(0,0,\mathcal N_I)$。因果唯一性和固定内部支撑使这一处理对每个 $n$ 都有效，不改变 $\mathsf B\mathsf R_\lambda=1$ 或逐函数 section。
+
 **完整转置。** 令
 
 $$
@@ -233,7 +235,7 @@ S_\lambda^{(n)}[-\phi]
 =S_{(-1)^n\lambda}^{(n)}[\phi].
 $$
 
-故奇数 $n$ 的变号可以作为连同 $\lambda g\mapsto-\lambda g$ 的 covariance，但不是固定模型的 $\mathbb Z_2$ symmetry。对同步 sign/reflection 真正保 action 的情形，解唯一性、CPS 和 cut transposes 给 [P4, §10] 的 Poisson 等变重建。一般 canonical symplectomorphism 与物理 action symmetry 仍须区别。
+故奇数 $n$ 的变号可以作为连同 $\lambda g\mapsto-\lambda g$ 的 covariance，但不是固定模型的 $\mathbb Z_2$ symmetry。对同步 sign/reflection 真正保 action 的情形，解唯一性、CPS 和 cut transposes 给 [P4, §10] 的 Poisson 等变重建。实际小域上先表述为 $U\to sU$、$Y_\lambda\to sY_\lambda$ 的域间同构；只有这些域不变时才是同一局部代数的 automorphism。偶次 sign 或有限 reflection 群可按 [P4, §10] 取有限不变域，同时保留同一局部存在证明。一般 canonical symplectomorphism 与物理 action symmetry 仍须区别。
 
 能量及 work balance 改为
 
@@ -294,6 +296,8 @@ $$
 **Verified:** 通过有限乘积、能量估计和完整转置，逐项证明固定整数 $n\ge3$ 对 [P4] 主定理的推广；显式给出递归、小耦合条件、symmetry parity 与能量无下界检验。二次势的常 Poisson operator 是另外给出的线性特殊结果。
 
 **Assumptions:** [P4] 的一维有限区间、smooth data、外端 Dirichlet、固定 compact-time switching、cut 全 jets matching、早期自由窗；$n$ 为固定整数。真实版本的耦合半径和局部数据域可依赖 $n$、几何、时间窗与开关。奇偶性结论中的“非零系数”及符号条件按 §4 使用。
+
+物理 history 商／饱和 basic presentation 与实际对称性的域条件按 §3、§4 使用。本轮 Mathematica 复核 $n=3,\ldots,10$ 的两个归一化和前三阶递归；一般 $n$ 的结论仍来自有限乘积和阶乘恒等式。具体核验及量子结论的独立边界见 [本轮审计](<../renormalized scalar sewing audit.md>)。
 
 **Not verified:** 对次数 $n$ 的一致控制、高维相同能量范数、非整数幂、任意真实耦合的非线性全空间存在、无开关的同一 incoming section、严格局域 prequotient onto、无限多项式、形式级数收敛和量子重整化。这里没有将 $\phi^4$ 的经典重建结论理解为其特殊量子可重整化性质。
 

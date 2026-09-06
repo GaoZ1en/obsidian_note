@@ -1,8 +1,8 @@
 # Spacelike-Subregion State Restriction and Finite Partial Trace in the Gluing Formalism
 
-> **Status.** This note supplies the missing bridge between the finite duplicate-port reduction in [[Articles/Quantization in AdS/gluing/gluing formalism|gluing formalism]] and the post-sewing reduced-state construction in [[Articles/Quantization in AdS/gluing/reduced-state-open-system-scalar|reduced-state-open-system-scalar]]. The abstract finite commuting statement is proved only under the split-adapted port hypothesis below. The centered bounded scalar satisfies that hypothesis and is worked out explicitly. The continuum endpoint is algebraic state restriction on fixed bulk-smeared observables, not a partial trace of a continuum density matrix.
+> **Status.** This note supplies the missing bridge between the finite duplicate-port reduction in [[Articles/Quantization in AdS/gluing/archived/gluing formalism|gluing formalism]] and the post-sewing reduced-state construction in [[Articles/Quantization in AdS/gluing/state and representation/reduced-state-open-system-scalar|reduced-state-open-system-scalar]]. The abstract finite commuting statement is proved only under the split-adapted port hypothesis below. The centered bounded scalar satisfies that hypothesis and is worked out explicitly. The continuum endpoint is algebraic state restriction on fixed bulk-smeared observables, not a partial trace of a continuum density matrix.
 >
-> [[Articles/Quantization in AdS/gluing/ads2-rindler regulated partial trace|ads2-rindler regulated partial trace]] is an independent factorizing-global-regulator benchmark: it verifies the same finite-partial-trace to continuum-state-restriction logic, but it is not a duplicate-port sewing construction.
+> [[Articles/Quantization in AdS/gluing/models/null regions/ads2-rindler regulated partial trace|ads2-rindler regulated partial trace]] is an independent factorizing-global-regulator benchmark: it verifies the same finite-partial-trace to continuum-state-restriction logic, but it is not a duplicate-port sewing construction.
 
 The direct verdict is
 
@@ -30,7 +30,7 @@ Here “spacelike subregion” means a subsystem of the canonical data on one Ca
 
 ## 1. The Layers That Must Be Kept Separate
 
-The notation and logical order follow [[Articles/Quantization in AdS/gluing/gluing formalism|gluing formalism]]. In particular, covariant sewing, its equal-time realization, Weyl quantization, and the state/representation layer are not interchangeable descriptions of one operation.
+The notation and logical order follow [[Articles/Quantization in AdS/gluing/archived/gluing formalism|gluing formalism]]. In particular, covariant sewing, its equal-time realization, Weyl quantization, and the state/representation layer are not interchangeable descriptions of one operation.
 
 ### 1.1 Covariant Sewing and Equal-Time Reduction
 
@@ -155,7 +155,7 @@ Stiffness/Hamiltonian cross terms between $\mathcal B_i$ and $\mathcal Z_i$ are 
 
 ## 3. Centered Scalar Benchmark
 
-This section proves the split-adapted hypothesis for the centered finite scalar regulator used in [[Articles/Quantization in AdS/gluing/formalism|formalism]] and [[Articles/Quantization in AdS/gluing/reduced-state-open-system-scalar|reduced-state-open-system-scalar]]. It is a benchmark, not a theorem for arbitrary port regulators.
+This section proves the split-adapted hypothesis for the centered finite scalar regulator used in [[Articles/Quantization in AdS/gluing/models/spacelike regions/1+1 scalar|1+1 scalar]] and [[Articles/Quantization in AdS/gluing/state and representation/reduced-state-open-system-scalar|reduced-state-open-system-scalar]]. It is a benchmark, not a theorem for arbitrary port regulators.
 
 ### 3.1 Duplicate Regional Variables and the Port Schur Complement
 

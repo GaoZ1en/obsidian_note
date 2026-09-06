@@ -2269,7 +2269,7 @@ $$\begin{align}
 
 在 abstract physical algebra 之后才选择 state $\omega$ 并作 GNS construction。Part V 的 finite theorem给一个正结果：positive quadratic regulator的 physical ground state在 B1.1 isomorphism下 **正好**是 conforming Hamiltonian ground state，其 bulk-smeared correlators沿既定 schedule收敛到 connected vacuum。这个 statement不以 regional strict-Dirichlet product vacuum为 reference。
 
-现有 [sharp product-Fock diagnostic](<Articles/Quantization in AdS/gluing/Fock failure.md>) 给另一个、表示层的问题一个明确 negative answer。每个 finite $N$ 保留 port column 后，完整 Bogoliubov matrix满足 CCR，有限维 squeezed vector正常存在；然而 strict-Dirichlet continuum regional creation block有固定 row
+现有 [sharp product-Fock diagnostic](<Articles/Quantization in AdS/gluing/state and representation/Fock failure.md>) 给另一个、表示层的问题一个明确 negative answer。每个 finite $N$ 保留 port column 后，完整 Bogoliubov matrix满足 CCR，有限维 squeezed vector正常存在；然而 strict-Dirichlet continuum regional creation block有固定 row
 
 $$\begin{align}
 \sum_{n=1}^N|\beta_{pn}^{\mathrm D}|^2 &=\frac{1}{\pi L\Omega_p}\log N+O(1),
@@ -4997,11 +4997,11 @@ Classical 与 quantum statements 必须分开：
 
 下面的既有结果是本 general formalism 的 checks，不是一般 theorem 的替代：
 
-1. [1D scalar construction](<Articles/Quantization in AdS/gluing/formalism.md>) 从 summed action 导出 $\phi_1'(L)+\phi_2'(L)=0$。其中 $D(k)=k\cot(kL)=+\phi_i'(L)/q$ 是 conventional outward-derivative ratio，而本文 $\Pi_i=-\phi_i'(L)$，故 boundary-triple Weyl response 是 $M(k^2)=-D(k)$。$D(k)$ 的 zeros 给出 nonzero-trace common sector；regional Dirichlet poles 必须回到 original amplitude/Cauchy-data relation，恢复 $q=0$ relative sector。两支合并为完整 global Dirichlet spectrum $k_r=r\pi/(2L)$。
-2. [Lifting-operator realization](<Articles/Quantization in AdS/gluing/lifting operator formalism.md>) 验证 $h(y)=y/L$、$A_n=(-1)^{n+1}\sqrt{2L}/(n\pi)$ 与 driven equation $\ddot c_{i,n}+\omega_n^2c_{i,n}=-A_n(\ddot q_i+m^2q_i)$。其中 $h=\sum_nA_nu_n$ 只在 $L^2$ 中成立，不能当作 boundary-trace identity。
-3. 同一 [1D scalar construction](<Articles/Quantization in AdS/gluing/formalism.md>) 的 finite truncation 验证上面的 $\rho_N$ equation、完整 $(2N+1)$-pair canonical system 与 generalized normal-mode map。
-4. [Continuum closure theorem](<Articles/Quantization in AdS/gluing/functional analysis proof of well-definedness of finite truncation.md>) 证明 conforming port spaces 在 $H_0^1\oplus L^2$ energy topology 中的 form density、Mosco/strong-resolvent convergence、wave/symplectic/1D trace convergence，以及 spatially smeared Gaussian correlator convergence。它不证明 $\dot q_N$ 的 pointwise convergence、unsmeared cut covariance、pointwise flux 或 continuum Fock-space unitary equivalence。
-5. [Sharp product-Fock diagnostic](<Articles/Quantization in AdS/gluing/Fock failure.md>) 是另一个可选问题：它证明指定的 sharp regional product representation 与 connected representation 在 continuum 中不满足 Hilbert--Schmidt criterion。这个结果不阻碍 intrinsic connected quantization，也不是 classical gluing 的成立条件。
+1. [1D scalar construction](<Articles/Quantization in AdS/gluing/models/spacelike regions/1+1 scalar.md>) 从 summed action 导出 $\phi_1'(L)+\phi_2'(L)=0$。其中 $D(k)=k\cot(kL)=+\phi_i'(L)/q$ 是 conventional outward-derivative ratio，而本文 $\Pi_i=-\phi_i'(L)$，故 boundary-triple Weyl response 是 $M(k^2)=-D(k)$。$D(k)$ 的 zeros 给出 nonzero-trace common sector；regional Dirichlet poles 必须回到 original amplitude/Cauchy-data relation，恢复 $q=0$ relative sector。两支合并为完整 global Dirichlet spectrum $k_r=r\pi/(2L)$。
+2. [Lifting-operator realization](<Articles/Quantization in AdS/gluing/state and representation/lifting operator formalism.md>) 验证 $h(y)=y/L$、$A_n=(-1)^{n+1}\sqrt{2L}/(n\pi)$ 与 driven equation $\ddot c_{i,n}+\omega_n^2c_{i,n}=-A_n(\ddot q_i+m^2q_i)$。其中 $h=\sum_nA_nu_n$ 只在 $L^2$ 中成立，不能当作 boundary-trace identity。
+3. 同一 [1D scalar construction](<Articles/Quantization in AdS/gluing/models/spacelike regions/1+1 scalar.md>) 的 finite truncation 验证上面的 $\rho_N$ equation、完整 $(2N+1)$-pair canonical system 与 generalized normal-mode map。
+4. [Continuum closure theorem](<Articles/Quantization in AdS/gluing/state and representation/functional analysis proof of well-definedness of finite truncation.md>) 证明 conforming port spaces 在 $H_0^1\oplus L^2$ energy topology 中的 form density、Mosco/strong-resolvent convergence、wave/symplectic/1D trace convergence，以及 spatially smeared Gaussian correlator convergence。它不证明 $\dot q_N$ 的 pointwise convergence、unsmeared cut covariance、pointwise flux 或 continuum Fock-space unitary equivalence。
+5. [Sharp product-Fock diagnostic](<Articles/Quantization in AdS/gluing/state and representation/Fock failure.md>) 是另一个可选问题：它证明指定的 sharp regional product representation 与 connected representation 在 continuum 中不满足 Hilbert--Schmidt criterion。这个结果不阻碍 intrinsic connected quantization，也不是 classical gluing 的成立条件。
 6. [Higher-dimensional sharp-Fock comparison](<Articles/Quantization in AdS/gluing/archived/higher-dimensional-sharp-fock-comparison.md>) 的 $\ell=0$ channel 已证明同一 fixed-row obstruction 在每个 dimension 都存在；其 accumulated cutoff rate 只是 regulator-dependent power counting。该 archived note本身没有证明 field-valued port closure；本文 Part V 的 product-cylinder theorem现在另行证明 $K_\perp(N)=N$ schedule下的 classical/Mosco与 bulk-smeared covariance convergence，并明确不触及这个 Fock obstruction。
 
 ### Claim Boundary and Open Problems

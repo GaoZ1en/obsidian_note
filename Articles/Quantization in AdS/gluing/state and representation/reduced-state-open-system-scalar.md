@@ -1,6 +1,6 @@
 # Finite-Port Reduced State and Open-System Reduction
 
-Consider the centered massive scalar and its conforming shared-port Galerkin action in [[Articles/Quantization in AdS/gluing/formalism|formalism]]. At finite $N$, we first construct the exact glued ground state, then restrict it to the regional factors, and finally eliminate region 2 from the Heisenberg equations. We do not use a sharp regional product-Fock representation as the definition, and we do not introduce a gauge field.
+Consider the centered massive scalar and its conforming shared-port Galerkin action in [[Articles/Quantization in AdS/gluing/models/spacelike regions/1+1 scalar|1+1 scalar]]. At finite $N$, we first construct the exact glued ground state, then restrict it to the regional factors, and finally eliminate region 2 from the Heisenberg equations. We do not use a sharp regional product-Fock representation as the definition, and we do not introduce a gauge field.
 
 The calculation follows
 
@@ -12,7 +12,7 @@ $$\begin{align}
 &\longrightarrow \text{continuum connected-vacuum state restriction on fixed bulk smearings}.
 \end{align}$$
 
-For the last arrow, we use the Mosco, strong-resolvent, and functional-calculus results in [[Articles/Quantization in AdS/gluing/functional analysis proof of well-definedness of finite truncation|functional analysis proof of well-definedness of finite truncation]], together with the fixed-smeared-observable ground-state theorem in [[Articles/Quantization in AdS/gluing/gluing formalism|gluing formalism]]. This arrow gives a state restriction on fixed bulk smearings, not a trace-class limit of regional density matrices.
+For the last arrow, we use the Mosco, strong-resolvent, and functional-calculus results in [[Articles/Quantization in AdS/gluing/state and representation/functional analysis proof of well-definedness of finite truncation|functional analysis proof of well-definedness of finite truncation]], together with the fixed-smeared-observable ground-state theorem in [[Articles/Quantization in AdS/gluing/archived/gluing formalism|gluing formalism]]. This arrow gives a state restriction on fixed bulk smearings, not a trace-class limit of regional density matrices.
 
 ## Setup
 

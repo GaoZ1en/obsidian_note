@@ -1,6 +1,6 @@
 # From Operator Feedback to the Finite Port System
 
-The quantize-first construction in [[Articles/Quantization in AdS/gluing/formalism|formalism]] begins with regional oscillators driven by a prescribed boundary history. After gluing, that history becomes operator-valued. This note proves that, at finite cutoff, the correctly regulated feedback equations are exactly the Euler--Lagrange equations of the conforming port Galerkin action.
+The quantize-first construction in [[Articles/Quantization in AdS/gluing/models/spacelike regions/1+1 scalar|1+1 scalar]] begins with regional oscillators driven by a prescribed boundary history. After gluing, that history becomes operator-valued. This note proves that, at finite cutoff, the correctly regulated feedback equations are exactly the Euler--Lagrange equations of the conforming port Galerkin action.
 
 The conclusion is
 
@@ -177,7 +177,7 @@ Omitting the $q$ and $\pi_q$ terms leaves an order-one CCR defect. The finite po
 
 At finite $N$, $(q,\pi_q)$ is retained. In the energy-space limit, $q(t)$ becomes the trace $\phi(t,0)$ of the connected weak solution, while the velocity has no generic point trace. The disappearance of an independent port pair is therefore a continuum completion statement, not a finite symplectic reduction.
 
-The convergence theorem is [[Articles/Quantization in AdS/gluing/functional analysis proof of well-definedness of finite truncation|functional analysis proof of well-definedness of finite truncation]]. It proves convergence of energy-compatible reconstructed fields, traces, symplectic forms, and spatially smeared Gaussian correlators. It does not assert convergence of $\dot q_N$ as a point observable or unitary equivalence to a regional product Fock representation.
+The convergence theorem is [[Articles/Quantization in AdS/gluing/state and representation/functional analysis proof of well-definedness of finite truncation|functional analysis proof of well-definedness of finite truncation]]. It proves convergence of energy-compatible reconstructed fields, traces, symplectic forms, and spatially smeared Gaussian correlators. It does not assert convergence of $\dot q_N$ as a point observable or unitary equivalence to a regional product Fock representation.
 
 ## Verification Boundary
 

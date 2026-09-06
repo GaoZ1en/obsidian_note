@@ -18,7 +18,7 @@ $$\begin{align}
 (I_1\mathbin{\#_{q_1}}I_2)\mathbin{\#_{q_2}}I_3, \qquad I_1\mathbin{\#_{q_1}}(I_2\mathbin{\#_{q_2}}I_3)
 \end{align}$$
 
-give the same connected theory. Here $\#_{q_a}$ means: identify the two traces at $x_a$, then vary their common value to derive the signed flux equation. At finite cutoff both common ports and their canonical momenta are retained, as in [[Articles/Quantization in AdS/gluing/formalism|formalism]].
+give the same connected theory. Here $\#_{q_a}$ means: identify the two traces at $x_a$, then vary their common value to derive the signed flux equation. At finite cutoff both common ports and their canonical momenta are retained, as in [[Articles/Quantization in AdS/gluing/models/spacelike regions/1+1 scalar|1+1 scalar]].
 
 On $I_j$ introduce the local coordinate $s=x-x_{j-1}\in[0,\ell_j]$, where
 
@@ -64,7 +64,7 @@ $$\begin{align}
 \omega_j=\int_0^{\ell_j}\mathrm ds\,\delta\dot\phi_j\wedge\delta\phi_j
 \end{align}$$
 
-is conserved because the endpoint histories are fixed under regional variations. As in [[Articles/Quantization in AdS/gluing/formalism|formalism]], a nonconstant prescribed history is changed by time translation, so a region is driven and its regional energy satisfies the boundary-work law
+is conserved because the endpoint histories are fixed under regional variations. As in [[Articles/Quantization in AdS/gluing/models/spacelike regions/1+1 scalar|1+1 scalar]], a nonconstant prescribed history is changed by time translation, so a region is driven and its regional energy satisfies the boundary-work law
 
 $$\begin{align}
 \frac{\mathrm dH_j}{\mathrm dt} =\left.(\partial_s\phi_j)\dot\phi_j\right|_{s=\ell_j} -\left.(\partial_s\phi_j)\dot\phi_j\right|_{s=0}.
@@ -74,7 +74,7 @@ After gluing, the work terms cancel pairwise by continuity and signed flux match
 
 ## Quantize the Regions with Prescribed Histories
 
-Following [[Articles/Quantization in AdS/gluing/formalism|formalism]], first keep the endpoint histories prescribed and distinct. Write
+Following [[Articles/Quantization in AdS/gluing/models/spacelike regions/1+1 scalar|1+1 scalar]], first keep the endpoint histories prescribed and distinct. Write
 
 $$\begin{align}
 p_1^{\mathrm L}&=0, &p_1^{\mathrm R}&=\alpha, &p_2^{\mathrm L}&=\beta, &p_2^{\mathrm R}&=\gamma, &p_3^{\mathrm L}&=\delta, &p_3^{\mathrm R}&=0.
@@ -409,4 +409,4 @@ $$\begin{align}
 A=-\partial_x^2+m^2, & D(A)=H^2(x_0,x_3)\cap H_0^1(x_0,x_3).
 \end{align}$$
 
-For each fixed finite partition, the sequential port-Galerkin spaces are the same final conforming spaces and are form-dense in $H_0^1(x_0,x_3)$. The Mosco, strong-resolvent, energy-space wave, trace, symplectic and spatially smeared correlator convergence therefore follows by the argument of [[Articles/Quantization in AdS/gluing/functional analysis proof of well-definedness of finite truncation|functional analysis proof of well-definedness of finite truncation]]. This establishes associativity of the intrinsic connected continuum theory. It does not assert unitary equivalence between separately chosen regional product Fock representations.
+For each fixed finite partition, the sequential port-Galerkin spaces are the same final conforming spaces and are form-dense in $H_0^1(x_0,x_3)$. The Mosco, strong-resolvent, energy-space wave, trace, symplectic and spatially smeared correlator convergence therefore follows by the argument of [[Articles/Quantization in AdS/gluing/state and representation/functional analysis proof of well-definedness of finite truncation|functional analysis proof of well-definedness of finite truncation]]. This establishes associativity of the intrinsic connected continuum theory. It does not assert unitary equivalence between separately chosen regional product Fock representations.

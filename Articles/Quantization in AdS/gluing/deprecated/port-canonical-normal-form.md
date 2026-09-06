@@ -1,6 +1,6 @@
 # Canonical Structure of the Finite Port Regulator
 
-This note studies one finite system: the conforming $(2N+1)$-variable port Galerkin truncation of the centered interval scalar in [[Articles/Quantization in AdS/gluing/formalism|formalism]]. It proves that the port pair is nondegenerate at every finite $N$, constructs the exact canonical normal modes, and identifies the topology in which the port ceases to be an independent coordinate as $N\to\infty$.
+This note studies one finite system: the conforming $(2N+1)$-variable port Galerkin truncation of the centered interval scalar in [[Articles/Quantization in AdS/gluing/models/spacelike regions/1+1 scalar|1+1 scalar]]. It proves that the port pair is nondegenerate at every finite $N$, constructs the exact canonical normal modes, and identifies the topology in which the port ceases to be an independent coordinate as $N\to\infty$.
 
 The operator-feedback interpretation is derived separately in [[Articles/Quantization in AdS/gluing/archived/feedback-port-canonical-bridge|feedback-port-canonical-bridge]]. No regional product state is assumed here.
 
@@ -165,7 +165,7 @@ $$\begin{align}
 H_0^1([-L,L])\oplus L^2([-L,L]),
 \end{align}$$
 
-whose velocity component has no point trace. Thus neither $\dot q$ nor $\pi_q=\rho_N\dot q$ survives as an independent continuum point observable. The full convergence statement is proved in [[Articles/Quantization in AdS/gluing/functional analysis proof of well-definedness of finite truncation|functional analysis proof of well-definedness of finite truncation]].
+whose velocity component has no point trace. Thus neither $\dot q$ nor $\pi_q=\rho_N\dot q$ survives as an independent continuum point observable. The full convergence statement is proved in [[Articles/Quantization in AdS/gluing/state and representation/functional analysis proof of well-definedness of finite truncation|functional analysis proof of well-definedness of finite truncation]].
 
 The finite ground-state covariance is consistent numerically with
 

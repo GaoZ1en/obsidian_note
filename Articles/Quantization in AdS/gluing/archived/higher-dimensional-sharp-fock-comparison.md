@@ -1,6 +1,6 @@
 # Higher-Dimensional Extension of the Optional Sharp-Fock Comparison
 
-This note extends one result of [[Articles/Quantization in AdS/gluing/Fock failure|Fock failure]]: the declared sharp tensor product of strict-Dirichlet regional Fock representations is not unitarily equivalent to the connected representation.
+This note extends one result of [[Articles/Quantization in AdS/gluing/state and representation/Fock failure|Fock failure]]: the declared sharp tensor product of strict-Dirichlet regional Fock representations is not unitarily equivalent to the connected representation.
 
 It does not construct the higher-dimensional continuum canonical gluing theory. In particular, it does not prove continuum closure for a field-valued port or control the full radial/transverse Galerkin limit.
 
