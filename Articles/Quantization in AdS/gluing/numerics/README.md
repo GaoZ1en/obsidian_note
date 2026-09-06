@@ -2,6 +2,7 @@
 
 This directory contains the active symbolic and numerical regressions:
 
+- [renormalized_scalar_sewing_checks.wl](<renormalized_scalar_sewing_checks.wl>): 30 exact groups checking polynomial normalizations, classical sewing identities, lifted energy, the Feynman contact sign, and Wick energy products. [Saved results](<renormalized_scalar_sewing_check_results.json>) also record the 48-group reproduction of the imported audit script. These checks do not prove PDE existence or microlocal closure.
 - ads2_rindler_partial_trace_gaussian.py: two factorizing global-Cauchy lattices, finite global Gaussian vacuum, exact right reduction, Williamson/modular reconstruction, entropy, $RR/LR$/Weyl/collar convergence tables, and real boost-flow comparisons supporting the new regulated-partial-trace note.
 - ads2_rindler_partial_trace_checks.wl: exact boost-charge and Gaussian thermal identities plus high-precision modular-kernel/boost-kernel pairings for the new regulated-partial-trace note.
 
@@ -27,6 +28,7 @@ The smearing, collar, smooth-interface, and earlier incomplete regional comparis
 Run the checks from this directory with:
 
 ```sh
+wolframscript -file renormalized_scalar_sewing_checks.wl
 wolframscript -file natural_method_feedback_spectrum.wl
 wolframscript -file regulator_audit_checks.wl
 wolframscript -file port_canonical_normal_form_checks.wl

@@ -311,37 +311,182 @@ $$\begin{align}
 
 Hence the sum of regional charges is driven only by the physical boundaries.
 
-### Classical Observable Algebra and Reconstruction
+### classical regional observable algebras
 
-For the global phase space $\displaystyle{(\mathcal P_M,\Omega_M)}$, define the Hamiltonian observable algebra by
+Choose regional coordinates $\displaystyle{(z_i,q_i)}$ on the admissible part of $\displaystyle{\widehat{\mathcal P}_i}$, where $\displaystyle{z_i\in X_i}$ labels the solution at fixed history. In these coordinates the fixed-history symplectic form is $\displaystyle{\Omega_i}$. The following construction applies on charts where these forms are constant and the regional solution and response maps are smooth.
 
-$$\begin{align}
-\mathcal A(\mathcal P_M) =\left\{F\in C^\infty(\mathcal P_M):
-\exists X_F\text{ with }X_F\cdot\Omega_M=-\delta F\right\}.
-\end{align}$$
-
-For $\displaystyle{F,G\in\mathcal A(\mathcal P_M)}$, the Poisson bracket is
+For a fixed history, define the regional observable algebra by
 
 $$\begin{align}
-\{F,G\}_M=X_F\cdot X_G\cdot\Omega_M.
+\mathcal H(X_i)
+&=\left\{F\in C^\infty(X_i):
+dF=-\Omega_i(X_F,\cdot),\
+X_F\in C^\infty(X_i,X_i)\right\},\\
+\{F,G\}_i&=dF(X_G)=-\Omega_i(X_F,X_G).
 \end{align}$$
 
-Every global observable has a representative on the gluing locus,
+The condition on $\displaystyle{X_F}$ selects the functions whose Hamiltonian vectors belong to the chosen phase space. It does not include every smooth scalar function. The global observable algebra $\displaystyle{\mathcal H(\mathcal P_M)}$ is defined independently by the same condition using $\displaystyle{\Omega_M}$.
+
+To compare different prescribed histories, use joint functions $\displaystyle{F(z_i,q_i)}$. Their full differential must have the form
 
 $$\begin{align}
-F_{\mathcal C}&=(\operatorname{Res}^{-1})^*F, & \mathcal A(\mathcal C)&=\left\{F_{\mathcal C}:F\in\mathcal A(\mathcal P_M)\right\}.
+dF&=-\Omega_i(V_F,\delta z_i)
++\sum_{j\in N(i)}\braket{A_{F,ij},\delta q_{ij}},
 \end{align}$$
 
-Since $\displaystyle{\operatorname{Res}}$ is a symplectomorphism,
+where $\displaystyle{V_F}$ is a smooth regional phase-space vector and each $\displaystyle{A_{F,ij}}$ is a smooth interface density with compact support away from the temporal endpoints. The density and all its mixed derivatives use one fixed compact support for each observable. Physical histories are restriction classes on the declared time window; auxiliary extensions outside that window are identified.
+
+For a product of regions, write $\displaystyle{y=(z_i,q_i)_i}$ and use the pairing
 
 $$\begin{align}
-\{F_{\mathcal C},G_{\mathcal C}\}_{\mathcal C} =(\operatorname{Res}^{-1})^*\{F,G\}_M.
+\beta((V,A),(\delta z,\delta q))
+&=-\sum_i\Omega_i(V_i,\delta z_i)
++\sum_{i,j}\braket{A_{ij},\delta q_{ij}},\\
+\mathcal H_\beta(Y)
+&=\left\{F\in C^\infty(Y):
+dF=\beta(U_F,\cdot),\
+U_F=(V_F,A_F)\text{ is smooth with the stated support}\right\}.
 \end{align}$$
 
-Therefore reconstruction induces the Poisson-algebra isomorphism
+This defines the regional family algebra from regional data. Its fixed-history bracket is
 
 $$\begin{align}
-\mathcal A(\mathcal P_M)\simeq\mathcal A(\mathcal C).
+\{F,G\}_{\mathrm{reg}}
+&=-\sum_i\Omega_i(V_{F,i},V_{G,i}).
 \end{align}$$
 
-Associativity and refinement invariance identify these observable algebras for every finite artificial partition.
+Histories are prescribed parameters at this stage. Their derivatives are nevertheless retained because releasing a history changes the physical field. Point evaluation of a history has a delta-function derivative and does not belong to this family class.
+
+The product and finite smooth functional calculus preserve the class:
+
+$$\begin{align}
+U_{FG}&=F\,U_G+G\,U_F,\\
+U_{h(F_1,\ldots,F_k)}
+&=\sum_a(\partial_a h)(F_1,\ldots,F_k)\,U_{F_a}.
+\end{align}$$
+
+For a constant skew operator $\displaystyle{\mathsf P}$ relative to $\displaystyle{\beta}$, the bracket $\displaystyle{\beta(U_F,\mathsf P U_G)}$ has gradient
+
+$$\begin{align}
+U_{\{F,G\}}
+&=DU_F[\mathsf P U_G]-DU_G[\mathsf P U_F].
+\end{align}$$
+
+Hessian symmetry proves this formula and cancels the six Hessian terms in the Jacobi identity. Taking $\displaystyle{\mathsf P(V,A)=(V,0)}$ gives the regional bracket above.
+
+### Release and the Sewn Observable Algebra
+
+First substitute the common histories $\displaystyle{q_{ji}=J_{ij}q_{ij}}$. The chain rule adds the two history densities with the appropriate transpose of $\displaystyle{J_{ij}}$. Continue to denote the resulting family space by $\displaystyle{Y}$ and its pairing by $\displaystyle{\beta}$.
+
+Use the regional evolution and response maps to solve the transmission conditions derived above. Let $\displaystyle{X}$ be coordinates on the resulting matched phase space, with symplectic form $\displaystyle{\Omega}$. Define the cut map
+
+$$\begin{align}
+\mathsf R:X\longrightarrow Y
+\end{align}$$
+
+by taking the regional coordinates and common histories of a matched solution. Its image is the physical matching locus. This construction uses the regional transmission problem; it does not use the independently defined global observable algebra.
+
+For exact reconstruction of the whole chosen function class, require an extension map and the two regular transposes
+
+$$\begin{align}
+\mathsf B:Y&\longrightarrow X,&
+\mathsf B\mathsf R&=1,\\
+\beta(U,D\mathsf R(x)h)
+&=-\Omega(D\mathsf R(x)^\flat U,h),&
+-\Omega(v,\mathsf B y)&=\beta(\mathsf B^\flat v,y).
+\end{align}$$
+
+Here $\displaystyle{\mathsf B}$ is linear, $\displaystyle{D\mathsf R^\flat}$ is smooth in the background, and both transposes preserve the allowed vectors and history densities, including their fixed-support condition under background differentiation. On an actual local existence domain, all maps are restricted to open sets containing the matching locus and $\displaystyle{\mathsf B(Y)=X}$. These are model inputs: a bijection of solution spaces alone does not supply such an extension. In the scalar construction, $\displaystyle{\mathsf B}$ is obtained by extracting Cauchy data in the reference time strip.
+
+Differentiating $\displaystyle{\mathsf B\mathsf R=1}$ and using the two pairings gives
+
+$$\begin{align}
+\mathsf B D\mathsf R(x)=1,\qquad
+D\mathsf R(x)^\flat\mathsf B^\flat=1.
+\end{align}$$
+
+Define the sewn bracket on the family space by
+
+$$\begin{align}
+\mathsf P_{\mathrm{sew}}(y)
+&=D\mathsf R(\mathsf B y)D\mathsf R(\mathsf B y)^\flat,\\
+\{F,G\}_{\mathrm{sew}}(y)
+&=\beta\bigl(U_F(y),\mathsf P_{\mathrm{sew}}(y)U_G(y)\bigr).
+\end{align}$$
+
+For a linear cut this reduces to $\displaystyle{\mathsf P_{\mathrm{sew}}=\mathsf R\mathsf R^\flat}$. It generally changes both the brackets within a region and the brackets between regions.
+
+To see its meaning, write
+
+$$\begin{align}
+y=\mathsf R x+w,\qquad x=\mathsf B y,\qquad \mathsf B w=0.
+\end{align}$$
+
+At fixed $\displaystyle{w}$, the bracket is precisely the bracket of $\displaystyle{F(\mathsf R x+w)}$ and $\displaystyle{G(\mathsf R x+w)}$ on $\displaystyle{(X,\Omega)}$. Thus Jacobi follows from the symplectic bracket on each such leaf. The transpose conditions ensure that differentiating this expression gives another allowed full gradient. When $\displaystyle{\mathsf R}$ is nonlinear, this differentiation includes the derivative of $\displaystyle{\mathsf P_{\mathrm{sew}}}$; the constant-operator formula above cannot be used without that term.
+
+Release is the pullback
+
+$$\begin{align}
+\mathsf R^*F&=F\circ\mathsf R,&
+X_{\mathsf R^*F}(x)&=D\mathsf R(x)^\flat U_F(\mathsf R x).
+\end{align}$$
+
+It includes the history contribution to the gradient and satisfies
+
+$$\begin{align}
+\mathsf R^*\{F,G\}_{\mathrm{sew}}
+&=\{\mathsf R^*F,\mathsf R^*G\}_X.
+\end{align}$$
+
+Surjectivity follows for each observable individually. Given $\displaystyle{G\in\mathcal H(X)}$, define
+
+$$\begin{align}
+\widetilde G&=G\circ\mathsf B,&
+U_{\widetilde G}&=\mathsf B^\flat X_G\circ\mathsf B,&
+\mathsf R^*\widetilde G&=G.
+\end{align}$$
+
+Hence the sewn observable algebra is
+
+$$\begin{align}
+\boxed{
+\mathcal H_{\mathrm{sew}}
+:=\frac{(\mathcal H_\beta(Y),\{\ ,\ \}_{\mathrm{sew}})}
+{\ker\mathsf R^*}
+\simeq\mathcal H(X).
+}
+\end{align}$$
+
+The kernel consists exactly of families that vanish on physical matching data. It is an ideal for both multiplication and the sewn bracket. The inverse sends $\displaystyle{G}$ to $\displaystyle{[G\circ\mathsf B]}$. This proves exact surjectivity without an approximation or completion argument. The old fixed-history bracket does not, in general, descend through this kernel.
+
+### Global Observables and Symmetry Equivariance
+
+The independent global reconstruction above gives a symplectic assembly map $\displaystyle{\operatorname{Ass}:X\to\mathcal P_M}$ on the same admissible solution domain. Therefore
+
+$$\begin{align}
+\boxed{
+\mathcal H_{\mathrm{sew}}
+\longrightarrow\mathcal H(\mathcal P_M),\qquad
+[F]\longmapsto F\circ\mathsf R\circ\operatorname{Ass}^{-1}
+}
+\end{align}$$
+
+is a Poisson isomorphism. Its inverse is the explicit extension of the pulled-back global observable. Both the regional and global function classes were defined before this comparison.
+
+For local observables, specify the same smooth finite-jet densities on both sides. Regional densities must match as functions of the spacetime point and field jets across each artificial interface. Their integrals then assemble to the global integral, and the boundary terms in their full variations cancel on matching variations. The resulting generated local algebras correspond exactly. The extension $\displaystyle{\mathsf B^*}$ need not preserve the original spacetime support, so this statement does not assert a strictly local lift of every regional family.
+
+Let a physical symmetry preserve the action, physical boundary conditions, interface identification, and the chosen observable densities. If its regional and matched actions satisfy
+
+$$\begin{align}
+g_Y\mathsf R=\mathsf R g_X,
+\end{align}$$
+
+with $\displaystyle{g_X}$ symplectic and $\displaystyle{g_Y^{\pm1}}$ preserving the full-gradient class, then
+
+$$\begin{align}
+\mathsf R^*g_Y^*=g_X^*\mathsf R^*.
+\end{align}$$
+
+The kernel is invariant and the reconstructed physical algebra carries the same Poisson symmetry as the global theory. A symmetry between different existence domains gives an isomorphism between those algebras; an automorphism of one local algebra requires an invariant domain. Equivariance on matching data alone does not assert that the chosen bracket away from matching is invariant.
+
+Finally, finite successive sewing gives the same observable isomorphism whenever every intermediate cluster retains its external histories and the corresponding transpose and extension maps. The cut maps compose, their transposes compose in reverse order, and the final matching solution is independent of the order by uniqueness of the transmission problem. This establishes associativity on the physical quotient under the same hypotheses as the classical solution reconstruction.

@@ -1321,10 +1321,8 @@ $$\begin{align}
 §24 的 section 还需直接使用低空间正则性的界。固定 $J\Subset I^\circ$，有
 
 $$\begin{align}
-\sup_{t\in J}\|\partial_t^j\mathsf S_iq(t)\|_{L^2_y}
-&\le C_{j,J}\|q\|_{H^{j+3}(\mathbb R)}, \tag{23.2a}\\
-\|\operatorname{Cau}E_i a\|_{X_s}
-&\le C_s\sum_{\nu=0}^s\|\partial_t^\nu a\|_{L_t^1L_y^2}. \tag{23.2b}
+\sup_{t\in J}\|\partial_t^j\mathsf S_iq(t)\|_{L^2_y} &\le C_{j,J}\|q\|_{H^{j+3}(\mathbb R)}, \tag{23.2a}\\
+\|\operatorname{Cau}E_i a\|_{X_s} &\le C_s\sum_{\nu=0}^s\|\partial_t^\nu a\|_{L_t^1L_y^2}. \tag{23.2b}
 \end{align}$$
 
 在 (23.2a) 的证明中，将固定 $\kappa$ 计入 history。Duhamel 的 $K_D^{-1/2}\sin$ 核在有限时间窗上有界，给 $\partial_t^jH_i^R(\kappa q)$ 的 $C_tL_y^2$ bound，输入至多 $H^{j+2}$；normalization 项 $E_iA_\chi H_i^R(\kappa q)$ 由 (23.2b) 至多再使用一个时间导数，得到 $j+3$。式 (23.2b) 则把 $K^{s/2}$ 通过 functional calculus 移至 sine/cosine 核，作 $s$ 次时间分部积分；紧支撑消去端点项，$K\ge m^2$ 控制低 modes，位置分量的 $K^{-1/2}$ 补足 $X_s$ 的额外空间阶。这些估计只要求 source 空间上为 $L^2$。
@@ -1341,8 +1339,7 @@ $$\begin{align}
 Green identity 给 $(H_i^R)^*=\rho_i^A$；$E_i^*=-E_i$、$A_\chi^*=-A_\chi$ 给 $\mathcal P_i^*=-A_\chi E_i$，从而证明第二式，包括其正号。更具体地，§4 的时间分部积分公式将 $G^\epsilon a$ 写成 $K_D^{-1}$ 作用于 $a$ 和 $a'$ 的余弦积分。由 $K_D^{-1}:L^2\to H^2\cap H_0^1$ 及 normal trace，在固定观察窗 $J$ 上有
 
 $$\begin{align}
-\|\partial_t^k\rho_i^\epsilon a\|_{L^2(J)}
-\le C_{k,J}\sum_{\nu=0}^{k+1}\|\partial_t^\nu a\|_{L_t^2L_y^2}.
+\|\partial_t^k\rho_i^\epsilon a\|_{L^2(J)} \le C_{k,J}\sum_{\nu=0}^{k+1}\|\partial_t^\nu a\|_{L_t^2L_y^2}.
 \end{align}$$
 
 先取 $k\le s+3$，再对 $A_\chi E_i a$ 使用 (23.2b) 及齐次波演化的时间导数界，输入至多 $s+5$ 阶，得到 (23.3)。此处没有给一般 $L^2$ momentum 取边界 trace。
@@ -1602,8 +1599,7 @@ Support/locality 仍按原始 bulk/boundary representatives 指定。局域 poly
 **Local-net 同构的准确量词。** 先在 sewn quotient 中取物理支撑在 $O$ 的 raw linear/local-polynomial representatives 生成的 Poisson core $\mathscr P_{\mathrm{loc,sew}}(O)$，再定义
 
 $$\begin{align}
-\mathfrak A_{\mathrm{sew}}(O)
-=\bigcup_r\overline{\mathscr P_{\mathrm{loc,sew}}(O)\cap\mathcal C_r}^{\,\mathcal C_r}.
+\mathfrak A_{\mathrm{sew}}(O) =\bigcup_r\overline{\mathscr P_{\mathrm{loc,sew}}(O)\cap\mathcal C_r}^{\,\mathcal C_r}.
 \end{align}$$
 
 这里的 smooth tests 可直接在 regional 几何中定义：在人工 cut 处，按 $\partial_x=\partial_{y_1}=-\partial_{y_2}$ 匹配全部 test jets；独立的 uncut 侧使用普通 smooth tests。光滑 patching 给这些 cores 的双向对应，§19.2 的逐层等距给 closures 的双向对应。这证明指定 net 的同构，不以 global algebra 定义区域对象。
@@ -1886,12 +1882,10 @@ Print["omittedHistoryTermForF=h=",D[released[h],qq]];
 
 ### 27.2 本笔记的类不是所有 Smooth Hamiltonian Observables
 
-取非零 smooth Hamiltonian linear function $\ell=-\Omega(v,\cdot)$，选 smooth $e$ 使 $\ell(e)=1$。$F=e^{-\ell^2}$ 有 smooth Hamiltonian vector
-$X_F=-2\ell e^{-\ell^2}v$，但其 $2n$ 次 Hamiltonian coefficient 满足
+取非零 smooth Hamiltonian linear function $\ell=-\Omega(v,\cdot)$，选 smooth $e$ 使 $\ell(e)=1$。$F=e^{-\ell^2}$ 有 smooth Hamiltonian vector $X_F=-2\ell e^{-\ell^2}v$，但其 $2n$ 次 Hamiltonian coefficient 满足
 
 $$\begin{align}
-P_{0,r}(T_{2n})
-\ge\frac{\|v\|_0}{n!\|e\|_r^{2n-1}}.
+P_{0,r}(T_{2n}) \ge\frac{\|v\|_0}{n!\|e\|_r^{2n-1}}.
 \end{align}$$
 
 因此 $\mathcal A_r$ membership 至少要求所有 $R$ 下
@@ -1904,9 +1898,7 @@ $g_t(Q,P)=(Q,P+tQ^2)$
 $g_t^*e^{iP}=e^{i(P+tQ^2)}$
 在 $t\ne0$ 时不属于 $\mathfrak A_\mathbb C$：限制 $P=0$ 后出现同一个 weighted-degree 发散。因此 **infinitesimal Poisson closure 不蕴涵有限 canonical-flow invariance**。
 
-本笔记保留其 entire finite-loss completion theorem；不再将它表述为全部 classical observables 的唯一对象。更大的
-$\mathcal H_\beta(Y)$、$\mathcal H(X)$，
-其实际 Poisson closure、smooth local functional membership、允许的对称性、完整 history derivative 和全类重建同构，在独立笔记 [Smooth Regional Observable Algebras, Symmetries and Sewing](<smooth regional observable algebras and symmetries.md>) 中定义并证明。
+本笔记保留其 entire finite-loss completion theorem；不再将它表述为全部 classical observables 的唯一对象。更大的 $\mathcal H_\beta(Y)$、$\mathcal H(X)$， 其实际 Poisson closure、smooth local functional membership、允许的对称性、完整 history derivative 和全类重建同构，在独立笔记 [Smooth Regional Observable Algebras, Symmetries and Sewing](<smooth regional observable algebras and symmetries.md>) 中定义并证明。
 
 该新笔记还选择了明确的 derivative graph topology，证明固定 support strata 与 $\mathcal H(X)$ 的完备性和连续 split quotient；它不将这些图拓扑结论、原文的 factorial LF 完备性或任一 tensor identity 互相替代。严格局域提升、无限切分与更一般历史协向量仍是额外问题。
 

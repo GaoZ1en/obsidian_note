@@ -1,159 +1,21 @@
 # Gluing
 
-## Current Direction
+This project studies how independently defined regional observable algebras compose into a global observable algebra.
 
-The active programme is **regional quantum operator algebra and gauge-covariant composition**. Starting from the completed scalar boundary-response/algebra benchmarks and the gauge classical-assembly lemmas, the immediate problem is to determine what quantum operator structure belongs to a region with an artificial cut, what interface symmetry, charge-sector and dynamical response data it carries, and how two such regional structures sew to the global observable algebra using only regional input.
+## Directory Map
 
-Three layers are kept distinct:
+- `./`: general classical and gauge-covariant gluing formalisms, together with `README.md`, `TODO.md`, `AGENTS.md`, and the retired `roadmap.md` pointer.
+- `models/`: concrete scalar and gauge-theory models used to construct or test the general formalism.
+- `models/spacelike regions/`: interval, Maxwell, Yang--Mills, and spatial gauge-assembly models.
+- `models/null regions/`: flat and AdS Rindler characteristic-composition models.
+- `state and representation/`: mode expansions, finite regulators, canonical/Fock comparisons, state restriction, partial trace, and open-system analyses.
+- `numerics/`: symbolic and numerical checks supporting the model and representation notes.
+- `archived/`: superseded formulations, completed audits, and earlier project-state documents retained as history.
+- `deprecated/`: abandoned alternative approaches, old article material, and their historical calculations.
 
-$$
-\boxed{\text{classical solution sewing}\neq\text{quantum algebra sewing}\neq\text{state sewing or restriction}.}
-$$
+## Scalar Observable Algebra
 
-At the quantum-algebra layer, the regional object is not defined from the outset as the fully cut-invariant algebra. The working distinction is between (i) a framed/cut-charged algebra, invariant under based regional proper gauge but covariant under the active cut action and therefore containing open Wilson endpoints; (ii) its fully cut-invariant subalgebra; and (iii) an extended presentation carrying explicit frame/transition variables before reduction. Wilson endpoints are a generator-level sewing handle, not the whole formalism. The scalar benchmark already shows that bare algebra multiplication does not retain all Green/response information, so a gauge regional object may also require dynamical response, Peierls or transport data.
-
-`formalism.md` remains authoritative for the completed timelike scalar construction. `history-indexed observable algebra gluing.md` is now a completed scalar boundary-response/CCR benchmark: its open rough-history and higher categorical-coherence questions are not immediate blockers. `ym-radial-collar-assembly/` is a completed classical lemma bank; in particular its crossing-holonomy formula supplies input for the new generator-level Wilson sewing problem, but it is not itself a quantum-algebra theorem.
-
-Null, timelike and spacelike cuts retain their different geometric data and evolution problems. The Rindler/null projects are now a completed or parked causal-type benchmark and lemma bank rather than the programme's active spine. The AdS$_2$--Rindler KMS/Unruh result remains an important downstream state-level benchmark for Unruh reliability, not a reason to expand general null CPS before the algebra-composition problem is solved.
-
-## Active Files
-
-- `formalism.md`: authoritative scalar construction, from the regional actions and prescribed histories through gluing, spectrum recovery, finite port quantization, and continuum statement.
-- `gluing formalism.md`: final general boundary-polarized manuscript, covering relation-level classical reconstruction, Proca/Dirac model validation, finite duplicate-port reduction, and its declared continuum free-scalar algebra, dynamics, and state limits. It complements rather than replaces the scalar-authoritative `formalism.md`.
-- `Weyl algebra factorization.md`: direct continuum proof that sewing fixed points of the full regional energy Weyl tensor product are canonically isomorphic to the global free-scalar Weyl algebra, with explicit inverse, action-derived dynamics, and precise conditions for general linear reconstruction; no finite truncation is used.
-- `history-indexed observable algebra gluing.md`: completed scalar boundary-response/affine-CCR benchmark. It distinguishes control sources from observable smearings, proves smooth two/three-interval enriched sewing and the full-energy CCR associator, and shows that bare Weyl multiplication does not determine Green/response data. Rough-history closure, identity/naturality and higher coherence remain open optional generalizations, not immediate blockers. Crossed-product/cotensor/Connes realizations remain representation candidates.
-- `classical regional observable algebra gluing.md`: intrinsic classical observable definitions for static free scalar intervals. Uniform finite-loss entire history families have complete layers and a complete LF limit; full-derivative release has a continuous section onto the entire independently defined global class. The local-net theorem concerns supported-core completion after the quotient; strict-local prequotient lifting remains unproved. Joint operations on the LF limit and the enlarged independent projective tensor identity fail. Gaussian and polynomial-shear counterexamples delimit the function class; bare fixed-history fusion remains excluded.
-- `smooth regional observable algebras and symmetries.md`: larger Bastiani smooth Hamiltonian algebras and joint regional families with fixed compact-time smooth history densities. It proves smooth local-functional membership, full-gradient Poisson closure, exact sewing onto the independently defined global algebra, and symmetry equivariance with explicit derivative transposes. A derivative graph topology gives complete fixed-support spaces and a continuous split quotient; its Poisson bracket is not jointly continuous. Physical symmetries, history covariance and canonical automorphisms are kept distinct.
-- `phi4 smooth regional observable algebra gluing.md`: switched classical scalar interaction across an artificial cut, with full nonlinear history transposes, a strict early-time left inverse, a background-dependent sewn Poisson bracket, all-order formal exact sewing and a finite-time local result for small real coupling. The independent global comparison and symmetry conditions are proved within the stated smooth domains.
-- `phin smooth regional observable algebra gluing.md`: extension to each fixed integer polynomial degree, including the changed recursion and coupling estimates, retained exact-sewing mechanism, parity-dependent symmetries and energy bounds, and the quadratic special case.
-- `lifting operator formalism.md`: companion rewriting of the nonhomogeneous-boundary construction using trace maps and lifting operators, including field-valued interface histories and its interval specialization.
-- `DN boundary condition.md`: one-region Dirichlet-to-Neumann prototype illustrating the same prescribe-first, release-second logic.
-- `functional analysis proof of well-definedness of finite truncation.md`: proof of form density, Mosco and resolvent convergence, energy-space wave and trace convergence, weak flux matching, and intrinsic spatially smeared Gaussian convergence.
-- `reduced-state-open-system-scalar.md`: exact finite glued Gaussian state, distinct regional reductions, Williamson density matrices and entropy, region-2 memory/noise elimination, the precise KMS/FDR boundary, and the finite-partial-trace to continuum-state-restriction theorem.
-- `rindler scalar.md`: flat $1+1$-dimensional causal-complement benchmark, with two-profile Goursat composition, null CPS, corner-completed matched-domain B1, and explicit separation of B1 from B2.
-- `ads-rindler scalar.md`: $d\geq2$ AdS--Rindler characteristic composition on the canonical matched image; the stronger arbitrary-horizon onto theorem remains conditional and B2 remains extra state data.
-- `ads2-rindler global reconstruction.md`: exact AdS$_2$ characteristic reconstruction from action/CPS through $\Omega_{\rm null}$, the null global-time Hamiltonian, $\mathfrak{sl}(2,\mathbb R)$ lowest-weight spectrum $\omega_n=\Delta+n$, Goursat modes, CCR/Pauli--Jordan, $RR/RL/RF$ correlators, and smeared right-wedge $\beta=2\pi$ KMS.
-- `ads2-rindler regulated partial trace.md`: factorizing global-Cauchy regulator, exact finite wedge partial trace and modular data, and convergence on every fixed smooth/Weyl label family to the continuum algebraic right-wedge restriction. It is not a sharp continuum tensor factorization or a full modular-kernel convergence theorem.
-- `non-central cut.md`: quantize-first construction for an arbitrary single cut, including the unequal-length finite port regulator and continuum cut-position independence.
-- `associativity.md`: parenthesization independence for a fixed three-region partition, derived from independent endpoint histories and a common two-port regulator.
-- `Fock failure.md`: optional comparison with a declared sharp tensor product of strict-Dirichlet regional Fock representations. It is not needed for intrinsic canonical gluing.
-- `spatial gauge gluing audit.md`: repaired A--Q audit of the spatial-subregion gauge branch, including dual traces and passive versus active gauge roles. It records the Maxwell $2+1$ smooth-core orbit/time-slab upgrade and the smooth local non-Abelian collar-geometry upgrade while keeping the general gauge-slice, regional-IBVP, bulk-unfixing, CPS, observable-algebra, and BRST/BV theorems conditional.
-- `spatial gauge gluing formalism.md`: gauge layer built on the full-trace/relation/reconstruction language of `gluing formalism.md`, with distinct original/enlarged traces, physical/optional-slice loci, passive/active transformations, matched-slice equivalence, two-way restriction/assembly targets and model tables. Its Maxwell and local Yang--Mills theorems are separately scoped; general statements remain conditional.
-- [[Articles/Quantization in AdS/gluing/gauge-covariant sewing and reduction|gauge-covariant sewing and reduction]]: conditional timelike sewing/reduction layer for compact internal connection theories, with separate fixed-\(h\) twisted-diagonal and variable-\(h\) product-frame presentations, full transmission versus Gauss moment map, and finite/continuum quantum claim tiers.
-- `Maxwell 1+1.md`: exact compact-\(U(1)\) regional quantum mechanics, interface constraint, and connected integer spectrum on a cut interval.
-- [[Articles/Quantization in AdS/gluing/Yang-Mills 1+1|Yang-Mills 1+1]]: exact compact-\(G\) non-Abelian benchmark, including regional \(T^*G\), prescribed boundary-history covariance, transition-function sewing, diagonal reduction, Peter--Weyl group averaging, the Casimir spectrum, and classical/quantum three-cell reduction by stages.
-- `Maxwell 2+1 cylinder.md`: complete angular-momentum decomposition, prescribed-history regional oscillators, gluing equations, and connected vector modes on a flat cylinder.
-- `maxwell-2p1-spatial-gluing-kill-test/`: classical Maxwell smooth finite-Fourier orbit/collar and time-slab relation theorems proved: intrinsic assembly, choice independence, regional arrows, original restriction, staged evolution-relation reduction, on-shell exact-isotropic composition, symplectic/power balance and CPS on horizontal tangent classes; Coulomb restoration is a section. Raw smooth-gauge counterexamples remain; Lagrangian maximality and functional/quotient-manifold extensions are unproved.
-- `ym-radial-collar-assembly/`: completed classical lemma bank for smooth local compact Yang--Mills in an exact-product trivializable/reachable sector. Its covariant normal-jet recursion, strong collar patching, choice independence, twisted arrows and crossing formula $U_\gamma=U_2h^{-1}U_1$ provide classical input for Wilson-operator sewing. It is not a regional IBVP, gauge-fixing, time-slab, completed-quotient or quantum theorem.
-- `Maxwell 3+1 slab.md`: complete transverse, longitudinal-normal, and zero-transverse-momentum modes on a flat slab times \(T^2\).
-- `roadmap.md`: long-range scalar, algebraic, gauge-theory, and gravity programme, including the layered specification and kill criteria.
-- `TODO.md`: ordered unfinished work following the roadmap phases.
-- `numerics/README.md`: scope and status of the active regression scripts.
-
-## Logical Structure
-
-The completed scalar benchmark line is
-
-$$\begin{align}
-\text{regional actions with prescribed histories}
-&\longrightarrow \text{regional quantization}\\
-&\longrightarrow \text{identify histories and vary the common trace}\\
-&\longrightarrow \text{finite conforming port system}\\
-&\longrightarrow \text{reconstructed glued canonical variables}\\
-&\longrightarrow \text{continuum energy-space limit}.
-\end{align}$$
-
-The separate Rindler/null-characteristic line is
-
-$$\begin{align}
-\text{action and allowed characteristic data}
-&\longrightarrow \text{direct null symplectic flux and corner compatibility}\\
-&\longrightarrow \text{Goursat composition across intersecting null surfaces}\\
-&\longrightarrow \text{B1 dynamics/algebra reconstruction}\\
-&\longrightarrow \text{separately supplied B2 state and cross covariance}.
-\end{align}$$
-
-Neither line is a coordinate rewriting of the other. Spacelike cuts instead use Cauchy-data compatibility and spatial reconstruction.
-
-The active gauge-algebra line is
-
-$$
-\begin{align}
-\text{framed/cut-charged regional algebra plus response data}
-&\longrightarrow \text{endpoint-sector pairing and action-derived sewing relations}\\
-&\longrightarrow \text{map to the global operator algebra}\\
-&\longrightarrow \text{kernel, image and three-cell associativity tests}\\
-&\longrightarrow \text{separately supplied state/representation B2 data}.
-\end{align}
-$$
-
-Three statements remain separate:
-
-1. `non-central cut.md` proves independence of the position of one artificial cut.
-2. `associativity.md` proves independence of the order of gluing a fixed finite partition.
-3. `Fock failure.md` diagnoses a separately declared sharp product-Fock representation; it is not a condition for either of the first two statements.
-
-The gauge branch uses the same action-first order but solves Gauss law and quotients only based regional proper gauge before quantization. The conditional gauge-covariant note keeps boundary-frame symmetry and glued proper gauge distinct and does not identify a variable transition function with a fixed-\(h\) diagonal quotient. Compact \(1+1\) Yang--Mills reduces each region to \(T^*G\), derives the prescribed-history Hamiltonian covariance, and proves exact classical/Haar quantum reduction in this model; \(U(1)\) is its Abelian zero-mode specialization. In \(2+1\) and \(3+1\), each Maxwell transverse Fourier momentum is decomposed into explicit divergence-free regional modes; gluing the prescribed tangential connection and varying its common value recovers the normalized connected modes. Their full timelike transmission relation is kept distinct from the Cauchy-cut Gauss moment map.
-
-## Roadmap
-
-The long-range plan is in roadmap.md. Its immediate branch is the regional gauge operator algebra, its interface charge sectors and the sewing map to the global algebra. The scalar enriched CCR work is the completed response-data benchmark; compact $1+1$ Yang--Mills is the first operator-intertwining test; framed Wilson endpoints are the next generator-level gauge test; higher-dimensional continuum gauge algebra follows only after these close. State sewing, modular theory and Unruh reliability are downstream. Chiral conformal-net fusion, relative/Connes fusion and crossed products remain secondary comparison or realization candidates rather than the thesis spine.
-
-The phases are a scalar and algebraic core, then gauge theory and corners, then gravity. TODO.md follows that phase structure and carries the immediate tasks and kill criteria.
-
-## Archived Work
-
-`archived/` contains calculations from the current boundary-history/canonical formalism whose conclusions have been absorbed elsewhere:
-
-- `formalism_audit.md`: historical regulator audit;
-- `feedback-port-canonical-bridge.md`: detailed feedback/port equivalence and finite CCR expansion now covered by `formalism.md`;
-- `higher-dimensional-sharp-fock-comparison.md`: nonessential channelwise extension of the optional sharp-Fock diagnostic.
-
-These files are supporting history rather than current claim authorities.
-
-The top-level development snapshots are preserved outside the active subtree in `Attachments/gluing-formalism-mementos-20260823-232342/`. They are mementos, not current claim authorities.
-
-## Deprecated Work
-
-`deprecated/` preserves alternative formalisms, abandoned regulator or representation routes, and displaced standalone derivations. This includes the penalty, lattice, smearing, collar, smooth-interface, earlier Fock-diagnostic, gauge, earlier AdS--Rindler comparison, and stacky/CPS branches. The active Rindler/null-characteristic files listed above are not deprecated. The former standalone `port-canonical-normal-form.md` is also kept there; its active content has been absorbed into `formalism.md`.
-
-Verified calculations in deprecated files may still be used as historical checks, but they do not define the present gluing construction.
-
-## Claim Boundary
-
-Verified in the active centered scalar line:
-
-- recovery of the complete connected spectrum, including the exceptional zero-interface sector;
-- the variational finite port equation and nondegenerate finite canonical system;
-- the reconstructed finite-$N$ canonical normal-mode algebra;
-- the finite glued Gaussian covariance, the interior and port-complete regional partial traces, their Williamson spectra, and the exact operator-level region-2 memory/noise equation;
-- the isolated-region KMS fluctuation--dissipation relation together with the proof that the correlated glued vacuum does not by itself define a product-environment channel;
-- form, resolvent, energy-space wave, interface-trace, symplectic, and spatially smeared Gaussian convergence;
-- convergence of finite regional state restrictions on fixed bulk-smeared observables to the connected vacuum restricted to the region-1 algebra, without a trace-class continuum density-matrix claim;
-- arbitrary-cut spectrum recovery and continuum cut-position independence;
-- action-level, finite-regulator canonical, and continuum associativity for every fixed finite partition;
-- for the optional declared sharp regional product reference, a fixed-row proof that the continuum creation block is not Hilbert--Schmidt.
-
-Numerical regressions additionally reproduce the centered spectrum, Galerkin ordering and conditioning, residual port inertia, canonical identities, continuum mode restrictions, arbitrary-cut formulas, associativity identities, and the optional fixed-row ultraviolet diagnostic. Numerical rates and covariance asymptotics remain observations unless separately proved.
-
-Verified in the flat free-Maxwell line: the full \(1+1\) constraint reduction and connected integer spectrum; the regional driven oscillators in \(2+1\) and \(3+1\); the transverse and longitudinal-normal interface determinants; and the complete normalized connected vector-mode bases under the stated physical-wall conditions.
-
-The Maxwell 2+1 dossier closes its bounded classical spatial branch analytically. Based radial collar assembly is choice independent, intrinsic cut arrows give the two-sided smooth-orbit theorem, and original CPS descends to horizontal tangent classes. Independently defined mixed time-slab evolution relations compose to the global solution-history orbit relation; regional on-shell actions add exactly, the relation is exact isotropic, and internal symplectic flux/work cancels into the connected Hamiltonian, including the Wilson/electric sector. Coulomb restoration is a section modulo discrete proper copies. Raw cusp/quadratic obstructions under smooth gauge remain diagnostic; no identical Sobolev obstruction is inferred. The global target/gauge group are unchanged. Lagrangian maximality, smooth quotient manifolds, completed spaces and the general spatial-gauge theorem remain open; symbolic counts are not completeness evidence.
-
-The non-Abelian radial-collar dossier closes a different and smaller question. For smooth original Yang--Mills solutions on an exact-product collar in a declared trivializable/reachable fixed-$h$ sector, tangential descent and full coadjoint transmission determine the complete common-normal curvature data, the Yang--Mills/Bianchi recursion matches every normal jet, and based radial repair gives a choice-independent global smooth orbit. Twisted regional arrows are complete, fixed-wall frames remove stabilizers, crossing holonomy is preserved, and original CPS cut terms cancel. This does not establish regional constraint-preserving evolution, Lorenz/Coulomb gauge realization, a non-product or Sobolev collar extension, a Yang--Mills time-slab theorem, or any quantum result.
-
-Verified in the compact \(1+1\) Yang--Mills benchmark: regional reduction to \(T^*G\) from the action and symplectic potential; \(H_i[\alpha_i]=H_{i,0}+\langle\mu_i,\alpha_i\rangle\) and its quantum boundary-history covariance; the non-Abelian transition-function convention and interface moment map; the global symplectomorphism \((T^*G\times T^*G)//G_\Delta\simeq T^*G\) with fixed physical endpoint frames; normalized-Haar quantum reduction \((L^2(G)\otimes L^2(G))^{G_\Delta}\simeq L^2(G)\); the \(g_{\mathrm{YM}}^2L\,C_2(R)\) connected spectrum; and the full three-cell cotangent reduction-by-stages map \([(W_r,J_r)]\mapsto(W_3W_2W_1,J_1)\). Ordinary \(L^2(G)\) is the trivial character sector of the based gauge-group components. The accompanying general gauge-covariant note is a conditional relation-level architecture, not a universal gauge PDE, quantization-commutes-with-reduction, or continuum Hilbert-space theorem.
-
-Verified in the Rindler/null-characteristic scalar line, within each note's declared domains:
-
-- flat $1+1$ and $d\geq2$ AdS--Rindler matched-image characteristic composition, null symplectic reconstruction, smeared CCR, and abstract Weyl B1;
-- AdS$_2$ direct action/CPS construction of $\Omega_{\rm null}$, the global-time Hamiltonian on null data, the $\mathfrak{sl}(2,\mathbb R)$ lowest-weight tower $\omega_n=\Delta+n$, Goursat-reconstructed modes, Pauli--Jordan/CCR, the global vacuum and $RR/RL/RF$ correlators, and the smeared right-wedge $\beta=2\pi$ KMS theorem;
-- an exact finite Gaussian wedge partial trace and convergence, for every fixed finite family of smooth Cauchy/Weyl labels, to the global vacuum restricted to the right-wedge algebra. The $LR$ cross covariance is B2 data lost by the marginal.
-
-Comparison only: the finite-$(Z,N)$ senior/collaborator construction is a `global-Noether-energy Galerkin approximation in a timelike-wall Rindler basis`. Here $Z$ is the near-horizon tortoise-wall position and $N$ is the retained wedge-mode count; the Neumann wall basis, projected known global-time Noether energy, and rank-one wall-value link reproduce a spectrally accurate fixed window. No exact-null canonical projection/intertwiner, state/correlator convergence, or Rindler-gluing theorem is proved.
-
-Finite-dimensional canonical equivalence does not imply continuum product-Fock equivalence. Conversely, failure of the optional sharp product-Fock comparison does not obstruct the intrinsic connected quantization.
-
-The continuum target is not a unitary limit of sharp regional product-Fock representations. It is the intrinsic connected physical operator and energy dynamics, the Weyl algebra, and the spatially smeared quasifree state; once the limiting positive-frequency structure is fixed, its GNS representation supplies the connected Fock construction. This is the target for the Maxwell regulators as well as the scalar regulator.
-
-Not yet verified: the framed/cut-charged gauge operator algebra and its sewing ideal; injectivity, surjectivity and associativity of the map to the global algebra; recovery of crossing Wilson operators together with holonomy--electric-flux commutators; whether diagonal invariants alone suffice; a universal or cut-uniform scalar Galerkin convergence rate; lifting independence at finite cutoff; an unsmeared point-field covariance; unrestricted horizon completion, sharp wedge factorization, Type III classification, full modular convergence or an entropy-coefficient theorem; cutoff-uniform closure of the separate timelike Maxwell regulators; a higher-dimensional non-Abelian Yang--Mills regional IBVP/time-slab theorem; a smooth continuum \(\operatorname{Map}(S,G)\) quotient or normalized-Haar Hilbert reduction; gauge theory with charged matter or nontrivial bundles; the Chern--Simons/BF branch; the independent half-line exterior problem; or any model-independent crossed-product/relative-tensor/Connes-fusion identification.
+- [Classical gluing formalism](<classical_gluing_formalism.md>): action-derived matching, full regional observable families, an admissible extension, and exact Poisson reconstruction.
+- [Free renormalized quantum sewing](<free scalar renormalized quantum observable algebra gluing.md>): interior equicausal/Wick algebras, response-derived contractions, exact global comparison, and a polynomial-core extension containing the total free energy.
+- [Interacting phi-n quantum sewing](<phin renormalized quantum observable algebra gluing.md>): off-shell polynomial insertions, coherent renormalized time ordering, quantum Møller compatibility, and the formal interacting isomorphism.
+- [Scalar sewing audit](<renormalized scalar sewing audit.md>): the imported classical and quantum claims, their repairs and no-go statements, and the remaining history/boundary regularity limits.
