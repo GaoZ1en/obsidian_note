@@ -1,6 +1,20 @@
 # 标量场区域拼接与局域结构研究路线
 
-日期：2026-09-07。状态：研究路线；以下新增阶段均待完成，不作为新的定理或验证记录。
+日期：2026-09-07。状态：模型实施稿与修复候选已落地，研究终点的 completion 待确定；A–C 已有模型证明和核验，D 的原有限插入类出现明确 time-slice 反例。下文保留原目标，不能据此把整条路线标为完成。
+
+当前成果及边界：
+
+| 阶段 | 已落地证据 | 状态 |
+|---|---|---|
+| A | [自由实现 §1](<scalar local structure implementation.md>)：输入、transpose、matching 与旧测试类复核 | 完成 |
+| B1–B4 | [自由实现 §§2–4、6](<scalar local structure implementation.md>)：因果传播、局部 kernel、time-slice inverse 与直接 refinement maps | 在所声明 torus／因果凸 GH 比较类上完成 |
+| C | [自由实现 §5](<scalar local structure implementation.md>)：全部 admissible compact polynomial kernels 的逐槽重定位 | 完成；不等于有限插入生成类 |
+| D1 | [弱耦合实现 §1](<scalar interacting local structure.md>)：对应的实际解域、背景 Peierls tensor、smooth-time response 重构 | 实际解／完整 regular 层成立；有限 insertion 层另行区分 |
+| D2 原目标 | [四波包反例](<scalar insertion time-slice obstruction.md>) | 仅 formal completion 的有限插入类 time-slice 为 false |
+| D3–D4 | [弱耦合实现 §§2–5](<scalar interacting local structure.md>)：全阶因果／refinement、二阶树及一回路、choices 与 switching 功项 | 已完成所列范围；不是全量子 stress Ward 定理 |
+| D2 修复候选 | [完成的 relative-S 类](<scalar completed relative-S local structure.md>)：受控分布核极限、多插入与显式 hbar saturation | 已给 compact-torus inverse 及一般因果凸 GH 开集的 cutoff／逐阶 inverse；这是扩大目标，原类的 no-go 保留 |
+
+检查记录见 [local-structure verification](<numerics/scalar local structure verification.md>)。仍须明确研究终点采用哪一份 observable completion；不能静默用修复候选替换原类，也不能把原类的 no-go 改记为正面完成。
 
 ## 1. 研究问题与范围
 
@@ -177,4 +191,4 @@ Time-slice 尤其需要构造允许的逆向表示，控制 coefficient class、
 
 实现时先写标量模型证明及检查记录，通过后再把可复用的条件命题加入 [general formalism §8](<observable algebra gluing formalism.md>)。不先把一般命题标成成立，再补模型输入。
 
-本路线由当前文件维护；README 只保留入口，TODO 记录阶段状态。数学检查随实际证明实施，本次规划不新增或替换既有定理的验证记录。
+本路线由当前文件维护；README 只保留入口，TODO 记录阶段状态。实施稿和验证记录分别保存；原有限插入类的反例与扩大 completion 的修复是不同结论，均不得反向覆盖旧笔记的作用域。

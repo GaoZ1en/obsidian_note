@@ -28,10 +28,12 @@ The active route is regional/global observable algebra and its composition. Stat
 - [x] Extend the revised trace-dual construction to fixed-n switched polynomial interactions in dimensions one and two on formal and finite-time local small-coupling domains, with complete background-dependent Poisson gradients.
 - [x] Give the polynomial quantum source by collar/chart labels, overlap and Wick relations, and an explicit on-shell Cauchy-coefficient kernel; give the formal interacting source's coefficient criterion without a central-mismatch substitution.
 - [x] Check the same declared local labels, free energy, switched energy balance, finite composition and compatible Wick/renormalization changes; preserve remaining cluster ports and mixed chart slots.
-- [ ] Execute phase A of [the scalar local-structure route](<scalar local structure research route.md>): audit the actual regional inputs and distinguish the existing test classes before extending claims.
-- [ ] Establish the response-derived free scalar local CCR net, inclusion maps, causality, time-slice and finite-cutting compatibility on the same torus benchmark; retain independent uncut comparison.
-- [ ] Extend those same maps to the declared Wick polynomial kernels, including mixed slots and a support-controlled time-slice construction.
-- [ ] Establish the fixed switched-phi4 interacting local structure and sewing diagrams coefficientwise, including causal factorization, time-slice and coherent renormalization; keep actual classical small-coupling domains separate.
+- [x] Execute phase A of [the scalar local-structure route](<scalar local structure research route.md>): record the actual regional inputs, transpose/matching dependencies and original test classes in the implementation note §1.
+- [x] Construct the response-derived torus local CCR net, independent causal-convex GH test quotient, causal support, Cauchy-neighbourhood inverse and direct finite-refinement maps.
+- [x] Extend those maps to all declared compact Wick polynomial kernels, including mixed slots, the complete coefficient kernel and support/wavefront-controlled time-slice.
+- [x] Establish the original switched-phi4 class's formal locality/refinement, corresponding actual classical solution-domain evolution, two-vertex tree/one-loop diagnostics, and compatible choices with switching work retained.
+- [x] Prove that time-slice fails for the original finite-insertion, formal-only completion: the four-wave-packet quartic counterexample already occurs at coupling/hbar order zero.
+- [ ] Resolve the completion used for the interacting endpoint: the separate completed relative-S construction gives compact-torus and causal-convex GH Cauchy inverses but explicitly enlarges the original class. Keep its theorem distinct from the finite-class no-go before marking the full route complete.
 - [ ] If retaining the original spatially smooth face-density class is required, prove its rectangle transpose/extension properties separately. The revised trace-dual theorem does not prove that old claim.
 - [ ] Before adding sharp true-boundary composites, establish their distribution/test class and renormalized products; they are not supplied by the bulk polynomial theorem.
 - Cone renormalization, strong coupling, state/representation sewing and infinite refinement are outside the present scalar closure scope.

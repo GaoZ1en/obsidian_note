@@ -349,6 +349,10 @@ $$
 
 两侧独立指定同一 matched local labels；assembly 双向对应它们及其完整 variations，则生成的 algebras 对应。因果对易另要求 CPS/Peierls identification 和该物理边界问题的 causal propagator；仅有 symplectic isomorphism 不够。对 interacting nets，按 insertion labels 的 support 定义局域 algebras，使用 causal factorization 及相同 comparison。
 
+**局部包含与 time-slice 的附加输入。** 对已经由区域 response 构造的 normally hyperbolic $L$，若在声明的因果凸 GH 开集上有 compact-source Green exactness，则同标签零延拓给 $C_c^\infty(O)/LC_c^\infty(O)$ 的单射及独立局部比较。若还证明 $h_\chi=(1-\chi)G^R+\chi G^A$ 紧支撑、$\tau_\chi=-[L,\chi]E$ 保持声明源类，且 $1-\tau_\chi=Lh_\chi$，则 Cauchy inclusion 有实际 inverse。Wick 层必须另外证明这些 maps 在每个 distribution slot 上保持 compact support／wavefront class及完整 coefficient kernel；有限乘积结果不足。满足这些条件时，同一响应的有限 refinement 与包含／time-slice squares 交换。模型实现与证明见 [scalar local structure §§2–6](<scalar local structure implementation.md>)；这是固定标量类别的补充，不加入任意时空／边界 embedding 定理。
+
+Local insertion 生成类不能自动继承上述 Wick time-slice。仅有限 words 与 $(\lambda,\hbar)$-adic completion 的 scalar 类已有 [quartic counterexample](<scalar insertion time-slice obstruction.md>)。若采用 [completed relative-S construction](<scalar completed relative-S local structure.md>)，其多插入、分布拓扑和 hbar saturation 必须作为新的输入声明，不能从原定理删除这些条件。
+
 若 $g_X$ smooth symplectic、$g_Y^{\pm1}$ 保持完整 covector class 且 $g_YR=Rg_X$，则
 $$
 R^*g_Y^*=g_X^*R^*
