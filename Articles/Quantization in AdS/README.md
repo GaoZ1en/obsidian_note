@@ -14,7 +14,7 @@ Research notes on quantization and perturbative field theory in AdS, including A
 | `electric field/` | Maxwell field quantization in AdS3: modes, asymptotic behavior, large gauge transformations, and article drafts |
 | `fermion/` | Complex Dirac field on global AdS4: standard/alternative polarizations, graded CPS, boundary-complete charges, global modes, CAR, and $D(\Delta_\pm,\tfrac12)$ modules |
 | `gravitational energy/` | Perturbative bulk-boundary charge matching and gravitational energy in AdS |
-| `gluing/` | Boundary-data and CPS gluing: regional solution spaces over interface data, flux-balance reduction, and a canonical/metaplectic quantum-gluing programme; earlier penalty, lattice, gauge, AdS--Rindler, and article tracks are preserved under `gluing/deprecated/` |
+| `gluing/` | Regional/global observable algebra gluing from action and CPS: typed theorem interfaces, scalar Wick/interacting comparison, framed 1+1 YM holonomy–flux reduction, and the two-puncture SU(2) current/holonomy and charged-net bridges; models, representation analyses, and historical approaches occupy separate subdirectories |
 | `Killing horizon/` | Scalar quantization on non-rotating BTZ: CPS, continuous modes, HHI states, horizon charges, and tadpoles |
 | `linearized gravity/` | AdS3 linearized gravity: modes, asymptotic Killing vectors, CPS formalism, charges, and massive-gravity extensions |
 | `perturbation/` | Perturbative CPS, pAQFT, and old-fashioned perturbation theory, including flat-space scalar checks and global-AdS spectral tests |

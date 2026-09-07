@@ -4,7 +4,7 @@
 
 ## 1. Action 和符号
 
-几何为 oriented disk $D=D_1\cup_\gamma D_2$，$\partial D_1=O_1+\gamma$、$\partial D_2=O_2-\gamma$，$\gamma=[P,Q]$。取平凡 $SU(2)$ bundle，无 Wilson sources，$\langle X,Y\rangle=-\operatorname{tr}_{\bf2}(XY)$，$v>0$。本笔记用
+几何为 oriented disk $D=D_1\cup_\gamma D_2$，$\partial D_1=O_1+\gamma$、$\partial D_2=O_2-\gamma$，$\gamma=[P,Q]$。取平凡 $SU(2)$ bundle，无 Wilson sources，$\langle X,Y\rangle=-\operatorname{tr}_{\mathbf{2}}(XY)$，$v>0$。本笔记用
 $$
 A^h=h^{-1}Ah+h^{-1}dh,\qquad F=dA+A\wedge A,
 $$
@@ -30,7 +30,7 @@ $$
 
 Flat disk 上 $a=g^{-1}dg$，$g:D\to SU(2)$ 唯一到 left constant multiplication。Proper gauge 在整条 physical boundary 为 identity；它右乘 $g$ 且不改 boundary loop。因此
 $$
-\mathcal P_D=C^\infty(S^1,SU(2))/SU(2)_{\rm left}.
+\mathcal P_D=C^\infty(S^1,SU(2))/SU(2)_{\mathrm{left}}.
 $$
 每个 smooth loop 都能延拓到 disk，因为 $\pi_1(SU(2))=0$；连续 null homotopy 可保持 boundary 不变地 smooth 化。取 boundary basepoint 后以 left constant 令 $g(P)=1$，给 based-loop presentation。Local smooth sections 由 Lie-group charts 和线性 boundary extension 构造；没有使用 global logarithm。
 
@@ -64,7 +64,7 @@ $$
 
 独立区域 phase space 为
 $$
-\mathcal P_i=\operatorname{Tr}_{\partial D_i}C^\infty(D_i,SU(2))/SU(2)_{\rm left}.
+\mathcal P_i=\operatorname{Tr}_{\partial D_i}C^\infty(D_i,SU(2))/SU(2)_{\mathrm{left}}.
 $$
 在横截角点，group-valued 两条 face traces 必须共享端点值；局部 group chart 中的两轴 extension 证明充分性，完整 boundary loop 的 extension 则使用 $\pi_1(SU(2))=0$。不能只用 Lie algebra currents 而省去这份 group data。
 
@@ -119,14 +119,14 @@ $Q[\mathfrak K]$ 是 Lie ideal，通常不是 central ideal：$[\alpha,\kappa]$ 
 $$
 E\cap\{g^{-1}cg:c\in\mathfrak{su}(2)\}=0.
 $$
-证明如下。取 $F=E+\mathfrak{su}(2)_{\rm const}$。可选任意足够小的 interval $J$，使 $F$ 中没有非零函数支撑在 $\overline J$：否则用嵌套缩小的 intervals，finite-dimensional descending subspaces 最终稳定，得到支撑在一点的非零 smooth function，矛盾。取 $g=1$ 于 $J$ 外，在 $J$ 内依次经过两个没有共同非零 fixed vector 的 adjoint rotations。若 $g^{-1}cg\in E$，它减去 $c$ 属于 $F$ 且支撑在 $\overline J$，故恒零；两个 rotations 随即迫使 $c=0$。
+证明如下。取 $F=E+\mathfrak{su}(2)_{\mathrm{const}}$。可选任意足够小的 interval $J$，使 $F$ 中没有非零函数支撑在 $\overline J$：否则用嵌套缩小的 intervals，finite-dimensional descending subspaces 最终稳定，得到支撑在一点的非零 smooth function，矛盾。取 $g=1$ 于 $J$ 外，在 $J$ 内依次经过两个没有共同非零 fixed vector 的 adjoint rotations。若 $g^{-1}cg\in E$，它减去 $c$ 属于 $F$ 且支撑在 $\overline J$，故恒零；两个 rotations 随即迫使 $c=0$。
 
 因此这些 finite currents 的不同ials 在该 phase point 线性独立。选有限多个 tangent directions 得到有限维 slice 上的 submersion，所以 current-coordinate image 含一个 open subset。任何在全部实际 disk data 上消失的 finite polynomial 都为零。相同论证逐区域成立；PBW/classical symmetric source 是实际 currents 的忠实 realization。
 
 于是 polynomial restriction 的完整 kernel 为 $\langle Q[\mathfrak K]\rangle$，且
 $$
-\mathcal A_C^{\rm cl,poly}/\langle Q[\mathfrak K]\rangle
-\cong\mathcal A_D^{\rm cl,poly}.
+\mathcal A_C^{\mathrm{cl,poly}}/\langle Q[\mathfrak K]\rangle
+\cong\mathcal A_D^{\mathrm{cl,poly}}.
 $$
 这不否定 monodromy 条件：该条件不是有限多个 smooth linear currents 的 polynomial relation。Polynomial algebra 与它的实际 phase-space realization 必须同时记录。
 
@@ -140,8 +140,8 @@ $$
 $$
 区域各自使用完整 boundary cocycle；PBW 使 $\mathfrak C$ 的 current algebra 嵌入 regional tensor product。Lie-algebra surjection 的 enveloping universal property 给
 $$
-\boxed{\mathscr A_{C,\hbar}/\mathscr J\cong\mathscr U_{k,\hbar}(L\mathfrak{su}(2)^{\rm op}),
-\qquad\mathscr J=\langle\widehat Q[\mathfrak K]\rangle_{\rm two\text{-}sided}.}
+\boxed{\mathscr A_{C,\hbar}/\mathscr J\cong\mathscr U_{k,\hbar}(L\mathfrak{su}(2)^{\mathrm{op}}),
+\qquad\mathscr J=\langle\widehat Q[\mathfrak K]\rangle_{\mathrm{two\text{-}sided}}.}
 $$
 完整 kernel 证明：取适配 vector-space basis，先排 $\mathfrak K$，再排 quotient labels；PBW 中所有含 kernel label 的 monomials 正好构成该 ideal。商中剩余 ordered monomials 是 independent target 的 PBW basis。故 onto、injectivity、$*$ 和 $\hbar$-torsion freedom 均成立。没有把非阿贝尔 extension 错写成 tensor product，也没有使用 infinite-dimensional Haar projector。Mod $\hbar$ 恢复上一节的实际 polynomial Poisson algebra。
 
@@ -308,4 +308,6 @@ Sewn smooth currents 定义为 sewn local one-parameter groups 的 Stone generat
 
 **Assumptions:** smooth trivial-bundle source-free SU(2) disk、物理 chiral boundary 与 actual compatible histories；quantum vacuum 部分固定 $\hbar=1$、正整数 $k$、affine normalization、boundary collar/coordinate choices、integrable vacuum net 和 Connes completion。
 
-**Not verified:** arbitrary non-vacuum Wilson/vertex intertwiner networks及其完整 fusion coefficients、一般 continuum CS quantize-before-reduction、任意 prescribed-history quantum Hamiltonian 的 domain theorem、其他 operator completions。Raw corner currents 全部保持 smooth-energy domain 的命题已被 §8.2 反驳，不能列为等待补证的 theorem。
+指定 $SU(2)_2$ 两个／四个 spin-$1/2$ punctures 的 non-vacuum maps、bounded primary domains、Wilson 和 $F$ comparison 已另见 [charged sewing](<SU(2) Chern-Simons charged sewing and channel maps.md>)；该扩展使用独立的 transport proof，不由本篇的 tensor-unit argument 推出。
+
+**Not verified:** 超出该指定模型的 arbitrary non-vacuum Wilson/vertex networks、一般 continuum CS quantize-before-reduction、任意 prescribed-history quantum Hamiltonian 的 domain theorem、其他 operator completions。Raw corner currents 全部保持 smooth-energy domain 的命题已被 §8.2 反驳，不能列为等待补证的 theorem。

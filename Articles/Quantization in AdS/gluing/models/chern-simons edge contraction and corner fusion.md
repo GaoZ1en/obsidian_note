@@ -56,7 +56,7 @@ $$
 u_n(x,y)=\frac{\sinh(n\pi(1-x))}{\sinh(n\pi)}\sin(n\pi y),
 \qquad n=1,2,\ldots.
 $$
-它满足 $\Delta u_n=0$，仅左边有非零 Dirichlet trace $q_n(y)=\sin(n\pi y)$，四个 corner values 全为零。但左边 outward response 是
+它满足 $\Delta u_n=0$，仅左边有非零 Dirichlet trace $q_n(y)=\sin(n\pi y)$，四个 corner values 全为零。但左边的正椭圆 DtN 是
 $$
 \Lambda q_n=-\partial_xu_n(0,y)
 =n\pi\coth(n\pi)\sin(n\pi y),
@@ -64,7 +64,7 @@ $$
 \langle q_n,\Lambda q_n\rangle
 =\frac{n\pi}{2}\coth(n\pi)>0.
 $$
-故用四个点值不能恢复边响应或能量。紧支撑于开边的 traces 还给出对任意有限 endpoint-jet 截断的同类反例；它们的非零 harmonic lift 具有正 Dirichlet energy。
+此处 $\Lambda=\Lambda_{\mathrm{DtN}}=\partial_n$；当前 scalar action 的 response convention 是 $\Pi=-\partial_nu$，所以 $\Pi=-\Lambda_{\mathrm{DtN}}q$。正的 $\langle q,\Lambda q\rangle$ 是 Dirichlet energy 配对，不是同号的 CPS response。故用四个点值不能恢复边响应或能量。紧支撑于开边的 traces 还给出对任意有限 endpoint-jet 截断的同类反例；它们的非零 harmonic lift 具有正 Dirichlet energy。
 
 这里 $\Lambda:H^{1/2}(\partial R)\to H^{-1/2}(\partial R)$ 是所选椭圆问题的弱 Dirichlet-to-Neumann map。**不能把它直接当作 hyperbolic theory 在每个时间的响应。** 后者还依赖初始数据、整个过去 history、时间正则性及相容条件；一般只有指定弱解和测试域之后才有 conormal response。参见 [rectangle 的实际 history 域与时间端点补偿](<rectangle scalar self-gluing.md>) §5.1。
 
@@ -97,13 +97,13 @@ A^h=h^{-1}Ah+h^{-1}dh,\qquad F=dA+A\wedge A.
 $$
 以 invariant trace 扩张理解三次项，
 $$
-S_{\rm CS}=\frac{k}{4\pi}\int_M
+S_{\mathrm{CS}}=\frac{k}{4\pi}\int_M
 \left[B(A\wedge dA)+\frac13 B(A\wedge[A,A])\right],
 \qquad k\neq0.
 $$
 其完整 bulk variation 是
 $$
-\delta S_{\rm CS}
+\delta S_{\mathrm{CS}}
 =\frac{k}{2\pi}\int_M B(\delta A\wedge F)
 -\frac{k}{4\pi}\int_{\partial M}B(A\wedge\delta A).
 $$
@@ -126,7 +126,7 @@ $$
 
 为避免辛符号混淆，§5 的 $\omega$ 专指 AMM 的 quasi-Hamiltonian form。其有向 Atiyah–Bott form 以同一 $B$ 归一化为 $\int_\Sigma B(\alpha\wedge\beta)$。当它表示同一个有向 reduced moduli leaf 时，本笔记的物理 CPS 是
 $$
-\boxed{\Omega_{\rm CPS}=-\frac{k}{2\pi}\,\omega_{\rm AMM,red}.}
+\boxed{\Omega_{\mathrm{CPS}}=-\frac{k}{2\pi}\,\omega_{\mathrm{AMM,red}}.}
 $$
 这不是把未约化 quasi-Hamiltonian form 当作闭辛形式。边界 loop orientation 的取逆还须独立处理；AMM §9 使用与 induced boundary orientation 相反的 traversal，其 holonomy labels 不能不经取逆就搬入另一 convention。
 
@@ -134,7 +134,7 @@ $$
 
 闭曲面上，以全部 smooth gauge transformations 约化，有
 $$
-\mathcal M_{\rm flat}(\Sigma,G)
+\mathcal M_{\mathrm{flat}}(\Sigma,G)
 =\operatorname{Hom}(\pi_1(\Sigma),G)/G.
 $$
 这里允许 stabilizers，故一般是奇异空间。若固定 bundle sector，应只取对应 representations；不能以一个 trivialization 排除其他允许 sector。对 $SU(2)$ 的二维底空间，bundle 平凡性没有额外障碍。带 punctures 并固定 conjugacy classes 时，在 peripheral loops 上再施加相应限制。
@@ -143,7 +143,7 @@ $$
 $$
 \mathcal P_D^{U(1)}=C^\infty(S^1,\mathbb R)/\mathbb R,
 \qquad
-\mathcal P_D^{SU(2)}=C^\infty(S^1,SU(2))/SU(2)_{\rm left}.
+\mathcal P_D^{SU(2)}=C^\infty(S^1,SU(2))/SU(2)_{\mathrm{left}}.
 $$
 第二式来自 $a=g^{-1}dg$、保留 boundary loop、仅除去不改变 $a$ 的 left constant；它包含非平凡的 current structure，尽管所有 contractible closed-loop holonomies 为 identity。第一式可直接代回上面的 CPS：
 $$
@@ -201,13 +201,13 @@ $$
 
 闭曲面上的辛性可直接检验。平坦 connection 的 tangent cohomology 为 $H^1(\Sigma;\operatorname{ad}\rho)$，其 pairing 为
 $$
-\omega_{\rm AB}([\alpha],[\beta])
+\omega_{\mathrm{AB}}([\alpha],[\beta])
 =\left\langle B_*([\alpha]\smile[\beta]),[\Sigma]\right\rangle.
 $$
 对于上述有向 equivalence $q$，cup product 的自然性与 $q_*[\Sigma]=[\Sigma']$ 给
 $$
-\omega_{\rm AB,\Sigma}(q^*[\alpha],q^*[\beta])
-=\omega_{\rm AB,\Sigma'}([\alpha],[\beta]).
+\omega_{\mathrm{AB,\Sigma}}(q^*[\alpha],q^*[\beta])
+=\omega_{\mathrm{AB,\Sigma'}}([\alpha],[\beta]).
 $$
 乘以 §3 的 $-k/(2\pi)$ 就得到物理 CPS 的保持。带固定 conjugacy boundaries 的版本使用相应 relative/parabolic pairing 或 AMM reduction，必须保留 orbit/boundary correction，不能直接删去边界后照抄闭曲面积分。所用 gauge-theoretic 与 finite-holonomy identification 可参见 [AMM §9](https://arxiv.org/pdf/dg-ga/9707021)。
 
@@ -243,7 +243,7 @@ $$
 
 在未共用 frame 时，若 $U$ 是从 $c_1$ 到 $c_2$ 的 transport，第二个 holonomy 在 $c_1$ frame 中是 $U^{-1}\mu_2U$，所以相应 ordered composite 为
 $$
-\mu_{\rm comp}=\mu_1\,U^{-1}\mu_2U.
+\mu_{\mathrm{comp}}=\mu_1\,U^{-1}\mu_2U.
 $$
 只有在 §4 的 relative gauge 确实允许并同时运输全部 charge variables 时，才可取 $U=1$。若 $U$ 本身是一条被插入的 Wilson line，设其 connection holonomy 为一也不删除其 representation label 或 endpoint intertwiner。
 
@@ -403,7 +403,7 @@ $$
 \cong
 \bigoplus_{j\in P_k}
 V_{j_1j_2}^{\,j}\otimes
-\mathcal H(\Sigma_{\rm outside};j,\ldots),
+\mathcal H(\Sigma_{\mathrm{outside}};j,\ldots),
 \qquad
 V_{j_1j_2}^{\,j}
 =\operatorname{Hom}_{\mathcal C_k}
@@ -419,7 +419,7 @@ Q(M_1\circledast M_2)=Q(M_1)\,Q(M_2).
 $$
 这里引用 [Meinrenken, Theorem 4.5(b)](https://arxiv.org/pdf/1008.1261)，其 multiplication 使用相容的 multiplicative prequantization。它是 index/fusion-ring 结论，不能单独推出任意 regional observable algebra 或 Hilbert representation 的同构。
 
-本项目现有 SU(2) draft 的 universal current/PBW quotient 也不提供上述 integrable quotient、Wilson intertwiners、null-state ideal 或 conformal-block factorization。本文没有证明从那个具体 regional current source 到 $\mathcal C_k$ 的完整映射和 kernel。将 sharp endpoints 在物理边界上真正碰撞，还需其 operator/distribution domain、OPE/renormalization 和 Wilson framing；不能把 finite-dimensional classical fusion 当成 sharp operator 极限的证明。
+本项目 SU(2) open-chord note §6 的 universal current/PBW quotient 本身不提供 integrable representation；该 note §§7–9 已另证指定 vacuum cyclic-module preimage、$H^1$ corner gauge inclusion 和独立 vacuum regions 的完整 local-net Connes sewing。其三种 kernel 分别为 cut two-sided ideal、vacuum left ideal 和 Gram radical。它们不自动给 non-vacuum Wilson intertwiners 或 charged-port comparison。将 sharp endpoints 在物理边界上真正碰撞，还需其 operator/distribution domain、OPE/renormalization 和 Wilson framing；不能把 finite-dimensional classical fusion 当成 sharp operator 极限的证明。
 
 ## 7. 与当前 sewing formalism 的关系
 
@@ -432,7 +432,7 @@ $$
 | [self-sewing topology and orientation](<../self-sewing topology and orientation.md>) | 保留 links、orientation、metric/domain 与 bundle descent 的分层。Diameter collapse 反例说明仅有 $\pi_1$ 等价不够 |
 | [gauge-covariant sewing](<../gauge-covariant sewing and reduction.md>)、[spatial gauge gluing](<../spatial gauge gluing formalism.md>) | proper gauge、active frames、transport 与完整 transmission 的区别。它们的 second-order YM theorem 不覆盖 CS |
 | [U(1) disk/open-chord](<U(1) Chern-Simons disk and open-chord sewing.md>) | physical current space 与完整 action 的负 CPS 符号直接重算；endpoint-zero cut group 不能删去 outer currents |
-| [SU(2) open-chord draft](<SU(2) Chern-Simons open-chord sewing.md>) | 检查了 flat disk 的 loop presentation、trivial monodromy 与 quantum claim boundary；没有把其 PBW 标签当成 WZW fusion 证明 |
+| [SU(2) open-chord](<SU(2) Chern-Simons open-chord sewing.md>) | Classical/current 与 universal quotient；另有完整 vacuum-module preimage 和 vacuum-net Connes theorem，仍与 charged intertwiner map 分开 |
 | [U(1) annulus draft](<U(1) Chern-Simons annulus sewing.md>) | cycle holonomy 与 framed radial transport 是不同数据；本文只用这一反例，不继承全部量子域结论 |
 | [U(1) junction draft](<U(1) Chern-Simons trivalent junction sewing.md>)、[Wilson/vertex draft](<U(1) Chern-Simons Wilson and vertex extension.md>) | junction gauge jets 与 dynamical sector 分开；sharp collision 需单独 prescription。本文没有审定其全部 extension/renormalization theorem |
 | [早期 U(1) CPS](<../../Chern-Simons/U(1) formalism.md>)、[SU(2) CPS](<../../Chern-Simons/SU(2) formalism.md>)、[particle as defect](<../../Chern-Simons/particle as defect.md>) | 保留 boundary polarization 与 source/holonomy 的物理动机；不采用“忽略 boundary terms”或 mode 标记来证明本题 |
@@ -459,10 +459,67 @@ $$
 1. **实际角点到有限 port 的箭头。** 给两条 physical boundary arcs 的具体 CS action、boundary fields 与 allowed gauge group，确定其 endpoint sector 是否、以及如何进入 $(M_i,\omega_i,\mu_i)$；证明 corrected CPS 的拉回公式。未做这一步时，本文只给 puncture/holonomy model。
 2. **真实 geometric collapse。** 对具体带角空间明确 $\Sigma_\varepsilon$、标记、boundary conditions 和极限对象，验证 links 与保留数据。若发生 pinch，应先定义 singular target theory，不能称为 ordinary surface CS。
 3. **带 Wilson edge 的收缩。** 固定 representation、orientation、framing 和 endpoint intertwiners，给出删除 subdivision、evaluation 与 fusion channel selection 的分别定义及相容映射。
-4. **当前 SU(2) current source 到 WZW sector。** 在一个 genus-zero、两个 punctures 的例子中，给 integrable quotient 与 intertwiners 的实际 source、kernel、image；先验收一个 $k=1$ 或 $k=2$ 通道，不扩展整个 gauge algebra programme。
+4. **Charged puncture bridge。** [Classical bridge](<SU(2) Chern-Simons two-puncture classical bridge.md>) 已给 regular two-puncture model 的 actual current/holonomy maps 与 corrected two-form；[charged sewing](<SU(2) Chern-Simons charged sewing and channel maps.md>) 已在指定 integrable prescription 下给 $k=2$ 的两个实际 channel maps、完整 Gram kernel、Wilson detector 和四点 $F$-move。它们仍不识别任意 physical geometric corners，也不从 classical residues 自动推出量子 labels。
 5. **有损压缩的准确内容。** 若只保存 $\mu_{12}$ 或单个输出 label，计算丢失的 fiber/channel 数据，并说明是否允许 coarse-graining。不得用“fusion”掩盖这项信息删除。
 
-最小已完成模型是 **无标记辅助树边的 exact presentation equivalence，加上两个指定 conjugacy sectors 的 q-Hamiltonian fusion 与 SU(2) 输出范围**。从真实 charged geometric corners 到这个 finite port model 的识别仍是第 1 项。
+最小已完成模型包括无标记辅助树边的 exact presentation equivalence、regular two-puncture current-to-port bridge，以及指定 $SU(2)_2$ 非真空 channel sewing。下面把它们在同一 auxiliary presentation 上接起来。从真实 charged geometric corners 到 puncture model 的识别仍是第 1 项。
+
+### 9.1 同一个 two-puncture model 的 commuting presentation maps
+
+取保持原 disk thickening 的 rooted ribbon tree：外 basepoint $b$ 到一个无标记辅助 vertex $v$ 的边 $e$，其 transport 为 $u$；从 $v$ 到两个 puncture collars 的 paths 为 $t_1,t_2$。两条 puncture loops、全部 physical outer current intervals、marks、ribbon order 和 framing 始终保留。只收缩 $e$，不收缩 puncture loop 或一个 physical interval。Gauge slice 在根取 $h_b=1$，在 $v$ 取 $h_v=u$，puncture frames 不动。因此
+$$
+u'=1,\qquad t_i'=t_i u,\qquad m_i'=m_i,\qquad
+\mu_i=(t_iu)^{-1}m_i(t_iu)=(t_i')^{-1}m_i't_i'.
+$$
+这里 $m_i=\exp(2\pi Q_i/k)$；若同时换 puncture frame，$m_i\mapsto h_i^{-1}m_i h_i$、$t_i u\mapsto h_i^{-1}t_i u$，同一个 $\mu_i$ 仍保持。只删 $u$ 而不运输两条 incident paths 会改变 $\mu_i$。收缩后 cyclic order 由原 vertex disks 加 band 的 thickening 继承，两个 punctures 没有被换成一个输出标记。
+
+记 $\mathcal C_K$ 为仍含 artificial seams 的实际 matching presentation，$S_K:\mathcal C_K\to N_K$ 为 release／proper-gauge sewing；$K/T$ 是收缩后的 presentation。$P_T$ 对对象使用以上 root normalization，对 gauge morphisms 使用相同 conjugation；补回 $u=1$ 是 inverse slice。Slice 之间的剩余 gauge 在整个树分量为同一个根值，故与 §4 一样得到 fully faithful、essentially surjective 的 groupoid equivalence，包括 stabilizers。它保持 seam constraints、各 puncture orbit 和外 current，因此
+$$
+\begin{array}{ccc}
+\mathcal C_K&\xrightarrow{\ S_K\ }&N_K\\
+\downarrow P_T&&\downarrow P_T\\
+\mathcal C_{K/T}&\xrightarrow{\ S_{K/T}\ }&N_{K/T}
+\end{array}
+\qquad
+(p_{K/T},\Phi_{K/T})P_T=(p_K,\Phi_K).
+$$
+等式首先是作用在 gauge classes 上的 equality；在未取商的 representatives 上有上面明确的 gauge natural transformation。实际 global target 仍为独立有源 disk 的 $N$。
+
+借 classical bridge 的双向字典，两份 $N$ 的 comparison 是 identity on $(\mu_1,\mu_2,\Phi)$。有限 port 两侧都是同一个 $X=\mathcal C_1\circledast\mathcal C_2$；base-path transport 与 ribbon order 保持，cross-term 不变。因此
+$$
+P_T^*p_{K/T}^*\omega_{12}=p_K^*\omega_{12},\qquad
+P_T^*\Phi_{K/T}^*\varpi=\Phi_K^*\varpi,\qquad
+P_T^*\Omega_{K/T}=\Omega_K.
+$$
+最后一个等式使用两项 correction 都保持，而非仅以 coarse holonomy orbit space 同胚推断 CPS。有限森林由这些单边步骤归纳；每个分量至多一个 fixed root，所有 physical puncture／boundary ports 不被消去。
+
+**Quantum source 与实际交换。** 使用 charged note §§2–4 的 independent $H_\sigma$ regions、同一 cut algebra 和 dense $\mathcal V_0=\mathcal X_0\odot\mathcal Y$。Auxiliary skeleton 是 paths／frame presentation，没有为它另加 $L^2(G)$ 或 oscillator factor。两份 source 的 underlying regional nets、argument tests、normalized primaries 和 physical collars 都不依赖 $e$。
+
+令 $\widehat P_T:\mathcal V_{0,K}\to\mathcal V_{0,K/T}$ 把每个 path word 中的 $t_i u$ 改写为 $t_i'$，并保持其 $x_i,y_i,F_i$。若 path frame 改变，使用实际 primary covariance
+$$
+\pi_a(h)\,a_{ab}(F)\,\pi_b(h)^*=a_{ab}(hF)
+$$
+同步运输 charge indices；内部 contracted indices 的两个矩阵互相抵消。这是 bounded operator identity。无标记 subdivision 的 map 是同一对象的 identity morphism，不是求和后挑选某个 fusion channel。
+
+于是 transport Gram form 逐项相同，$\widehat P_T$ 把完整 radical onto 对应 radical，并延成 Connes completions 的 unitary。Dense channel formula 给
+$$
+C_{a,K/T}^0\widehat P_Tz=C_{a,K}^0z,\qquad a=0,\psi,
+$$
+从而有类型明确的交换图
+$$
+\begin{array}{ccc}
+H_{\sigma,K}^{(1)}\boxtimes_M H_{\sigma,K}^{(2)}
+&\xrightarrow{\ U_K\ }&H_0\oplus H_\psi\\
+\downarrow\widehat P_T&&\downarrow 1\\
+H_{\sigma,K/T}^{(1)}\boxtimes_M H_{\sigma,K/T}^{(2)}
+&\xrightarrow{\ U_{K/T}\ }&H_0\oplus H_\psi .
+\end{array}
+$$
+该图同时 intertwine 每个 outer local algebra、Wilson detector 和两个 channel projections。四 punctures 时，先写相同 unassociated bounded-intertwiner word，再重新括号化，Connes associator 使图仍交换；投到 normalized trivalent bases 才出现 charged note 的 $F$ matrix。辅助树的删除与 $F$ basis change 是不同的 maps。
+
+在上述固定 marks、无 twist、无 braid、相同 physical coordinates 的 move 中，相位为一，因为 dense bounded-operator formulas literally coincide。若改了 trivalent phases，则相应矩阵为 $D_{\mathrm{out}}UD_{\mathrm{in}}^{-1}$；若增加 framing twist，则必须保留 $\theta_j=e^{2\pi i h_j}$；若交换 puncture order，则必须插入实际 braid。它们不属于本节的纯 auxiliary move。
+
+**明确失败条件。** 两个 fixed frames 间的 transport、一个 nontrivial loop、physical current interval、charge label 或一个 channel 若被删除，上述双向字典／unitary就不成立；在每条 auxiliary edge 上独立放置额外 quantum Hilbert factor的另一处方，也不由本图证明其消去。这里只证明现有 physical source 的 presentation invariance，不声称已证明新的 graph quantization 或 metric degeneration。
 
 ## 10. 验证记录
 
@@ -482,4 +539,4 @@ AMM 的 Definition 2.2、Proposition 3.1、Theorem 6.1 及其公式页经 PDF te
 
 **Assumptions:** 每项命题使用其所在节的 trace/domain、orientability、marking、gauge、bundle、level 与 prequantization 条件；静态空间操作；相同物理 action/CPS convention。
 
-**Not verified:** Scalar/YM 的一般 shrinking-domain 极限；有物理 currents 的任意 corner collapse；任意 singular CS target；任意 charged-corner 到 holonomy-port identification；当前 regional quantum source 的 integrable/Wilson kernel；sharp operator collision；state restriction、partial trace 或 entropy。未修改这些问题在其他 note 中的完成标签。
+**Not verified:** Scalar/YM 的一般 shrinking-domain 极限；有物理 currents 的任意 corner collapse；任意 singular CS target；任意 geometric charged-corner 到 puncture/holonomy-port identification；超出指定 fundamental integrable prescription 的 Wilson kernel；sharp operator collision；state restriction、partial trace 或 entropy。§9.1 的新增 classical/quantum maps 与检查范围另见 [charged bridge ledger](<../numerics/charged CS bridge claim ledger.md>)。

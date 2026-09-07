@@ -43,12 +43,12 @@ Normal ordering 乘回 $e^{\operatorname{Var}/2}$ 后，matrix elements 可有�
 
 选择 integer charges $n,q\in\mathbb Z$ 和
 $$
-\mathcal H_{\rm ch}=\bigoplus_{n\in\mathbb Z}\mathcal F_n,
+\mathcal H_{\mathrm{ch}}=\bigoplus_{n\in\mathbb Z}\mathcal F_n,
 \qquad p|\mathcal F_n=n,
 \qquad R_q:\mathcal F_n\to\mathcal F_{n+q},
 \qquad[p,R_q]=qR_q.
 $$
-$\mathcal F_n$ 的 oscillator algebra 与 $\mathcal F_0$ 相同；$L_0=p^2/(2k)+\sum_{m>0}J_{-m}J_m/k$。Dense domain $\mathcal D_{\rm fin}$ 是 finite charge、finite oscillator-energy vectors 的 span。$R_q$ 在此 direct sum 上 unitary。固定 radial ordering、logarithm branch，以及 $R_qR_r=R_{q+r}$ 的 charge convention。
+$\mathcal F_n$ 的 oscillator algebra 与 $\mathcal F_0$ 相同；$L_0=p^2/(2k)+\sum_{m>0}J_{-m}J_m/k$。Dense domain $\mathcal D_{\mathrm{fin}}$ 是 finite charge、finite oscillator-energy vectors 的 span。$R_q$ 在此 direct sum 上 unitary。固定 radial ordering、logarithm branch，以及 $R_qR_r=R_{q+r}$ 的 charge convention。
 
 定义 planar field
 $$
@@ -58,21 +58,56 @@ E_q^-(z)&=\exp\left(\frac qk\sum_{m>0}\frac{J_{-m}}m z^m\right),\\
 E_q^+(z)&=\exp\left(-\frac qk\sum_{m>0}\frac{J_m}m z^{-m}\right).
 \end{aligned}
 $$
-对于 $0<|z|<1$，它作用于 $\mathcal D_{\rm fin}$ 有定义：annihilation exponential 在每个 finite-energy vector 上截断，creation exponential 的 one-particle norm 为 $q^2\sum|z|^{2m}/(km)<\infty$。多个 fields 在 $1>|z_1|>\cdots>|z_N|>0$ 上的 ordered product 同样有定义，contractions 的级数绝对收敛。
+对于 $0<|z|<1$，它作用于 $\mathcal D_{\mathrm{fin}}$ 有定义：annihilation exponential 在每个 finite-energy vector 上截断，creation exponential 的 one-particle norm 为 $q^2\sum|z|^{2m}/(km)<\infty$。多个 fields 在 $1>|z_1|>\cdots>|z_N|>0$ 上的 ordered product 同样有定义，contractions 的级数绝对收敛。
 
-每个 formal Laurent coefficient $V_q[\nu]$ 把 finite-energy vector 送到一个固定 energy grade；这个 grade 只有有限个 oscillator partitions，故该 coefficient 是 $\mathcal D_{\rm fin}\to\mathcal D_{\rm fin}$ 的实际 operator。Exponents 可为 rational，按 charge sector 使用固定 branch/cover，不能不加说明地当作 integer-moded vacuum field。
+每个 formal Laurent coefficient $V_q[\nu]$ 把 finite-energy vector 送到一个固定 energy grade；这个 grade 只有有限个 oscillator partitions，故该 coefficient 是 $\mathcal D_{\mathrm{fin}}\to\mathcal D_{\mathrm{fin}}$ 的实际 operator。Exponents 可为 rational，按 charge sector 使用固定 branch/cover，不能不加说明地当作 integer-moded vacuum field。
 
 Adjoint identity 为
 $$
 V_q(z)^*=\bar z^{-q^2/k}V_{-q}(1/\bar z)
 $$
-（按 radial matrix elements 理解）。它使每个 mode 的 adjoint 包含另一个明确 mode 在 $\mathcal D_{\rm fin}$ 上的 restriction，所以 mode operators 可闭。Cylinder field $\Phi_q(s)=z^{q^2/(2k)}V_q(z)$、$z=e^{is}$ 满足 $\Phi_q(s)^*=\Phi_{-q}(s)$。有限 mode words 组成一份共同 invariant dense core 上的 $*$-algebra。
+（按 radial matrix elements 理解）。它使每个 mode 的 adjoint 包含另一个明确 mode 在 $\mathcal D_{\mathrm{fin}}$ 上的 restriction，所以 mode operators 可闭。Cylinder field $\Phi_q(s)=z^{q^2/(2k)}V_q(z)$、$z=e^{is}$ 满足 $\Phi_q(s)^*=\Phi_{-q}(s)$。有限 mode words 组成一份共同 invariant dense core 上的 $*$-algebra。
 
 但是 $V_q(e^{is})$ 本身不是该 domain 上的 point operator。对真空，
 $$
 \|V_q(r)|0\rangle\|^2=(1-r^2)^{-q^2/k}\longrightarrow\infty\quad(q\ne0).
 $$
-逐 finite-energy input 的 coefficients 有 polynomial energy growth：vacuum coefficients 的平方和由 $(1-x)^{-q^2/k}$ 的 binomial coefficients 给出；插入有限个 oscillators 只增加有限阶 polynomial factors。这给每个 $\mathcal D_{\rm fin}$ input 的 smooth angular smearing 一个 Hilbert vector，并给 $\mathcal D_{\rm fin}\times\mathcal D_{\rm fin}$ 上的 boundary distributions。它**不**单独证明任意 smeared products 保持一个共同 Sobolev domain。本文实际 algebra 使用 invariant mode core；ordered distribution products 则使用下面明示的 prescription。
+逐 finite-energy input 的 coefficients 有 polynomial energy growth：vacuum coefficients 的平方和由 $(1-x)^{-q^2/k}$ 的 binomial coefficients 给出；插入有限个 oscillators 只增加有限阶 polynomial factors。角向涂抹还必须指定 monodromy-compatible tests，不能只选择 logarithm branch。
+
+**实际测试域与收敛。** 固定带实 argument 的开弧 $\widetilde I\subset\mathbb R$，其投影为圆上的 proper interval，取 $f\in C_c^\infty(\widetilde I)$。规定涂抹不对 $f$ 取复共轭：
+$$
+V_q(f)v=\lim_{r\uparrow1}\int_{\widetilde I}\frac{d\theta}{2\pi}
+f(\theta)V_q(re^{i\theta})v,\qquad v\in\mathcal D_{\mathrm{fin}}.
+$$
+固定输入电荷 $n$，令 $\alpha=qn/k$。对任何 $M$，反复分部积分且所有端点项为零，给
+$$
+\left|\int_{\widetilde I}f(\theta)e^{i(N+\alpha)\theta}d\theta\right|
+\le C_{f,\alpha,M}(1+|N|)^{-M}.
+$$
+有限 oscillator 输入只有有限个 exponent shifts，coefficient norms 有依赖输入的 polynomial bound。取 $M$ 大于该增长次数加二，向量级数绝对收敛；对 $r$ 靠近一作同一支配估计，得实际 Hilbert limit。有限电荷和逐块处理。这给 $\mathcal D_{\mathrm{fin}}\times\mathcal D_{\mathrm{fin}}$ 上的局部 boundary distributions，没有证明 smeared operators 保持 $\mathcal D_{\mathrm{fin}}$ 或任意 smeared words 有共同 invariant domain。
+
+在同一 argument lift 上，radial adjoint 给
+$$
+V_q(f)^*\supset V_{-q}\!\left(e^{i q^2\theta/k}\overline f\right)
+\big|_{\mathcal D_{\mathrm{fin}}}.
+$$
+右边仍使用 $C_c^\infty(\widetilde I)$，故 $V_q(f)$ 可闭。Cylinder normalization 给 $\Phi_q(f)^*\supset\Phi_{-q}(\overline f)|_{\mathcal D_{\mathrm{fin}}}$。Planar 的正相位来自 $\bar z^{-q^2/k}=e^{i q^2\theta/k}$；在反向 charge block 的 exponent 为 $q^2/k-q(n+q)/k=-qn/k$，与 Hilbert adjoint 配对一致。
+
+若使用全圆测试，每个输入 charge block 的 planar test 须满足 $f(\theta+2\pi)=e^{-2\pi i qn/k}f(\theta)$，全部 jets 亦如此；adjoint test 的 twist 对应反向块。统一的另一选择是 planar period $2\pi k$、cylinder period $4\pi k$ 的 cover，并在完整 period 上积分。这分别使 $qn/k$ 和 $qn/k+q^2/(2k)$ 的 exponents 单值。局部 argument test 不依赖输入 charge，本文优先采用它。
+
+**普通周期 test 的反例。** 对 oscillator vacuum $|n\rangle$，置 $d=q^2/k$，有
+$$
+V_q(re^{i\theta})|n\rangle
+=r^\alpha e^{i\alpha\theta}\sum_{N\ge0}r^Ne^{iN\theta}v_N,
+\qquad \langle v_M,v_N\rangle=\delta_{MN}\frac{(d)_N}{N!}.
+$$
+固定 branch $[0,2\pi)$ 却取普通周期 $f=1$，当 $\alpha\notin\mathbb Z$ 时，
+$$
+\left\|\int_0^{2\pi}\frac{d\theta}{2\pi}V_q(re^{i\theta})|n\rangle\right\|^2
+=r^{2\alpha}\frac{|e^{2\pi i\alpha}-1|^2}{4\pi^2}
+\sum_{N\ge0}\frac{(d)_N}{N!}\frac{r^{2N}}{(N+\alpha)^2}.
+$$
+Gamma-ratio asymptotic 使极限级数的项为 $N^{d-3}/\Gamma(d)$ 阶，故 $d\ge2$ 时发散。允许的 $k=2,q=3,n=1$ 给 $\alpha=3/2,d=9/2$，其项按 $N^{3/2}$ 增长。Branch 接口导致 $1/N$ 衰减，普通圆上的 smoothness 不能修复该跳变。后文以 invariant mode core 定义 algebra，以声明的 argument/order 定义插入分布。
 
 原 disk 的 physical observable sector 是 charge-zero words 在 $\mathcal F_0$ 上的作用。单个 $V_q$ 是 $\mathcal F_n\to\mathcal F_{n+q}$ 的 intertwiner，不是 source-free disk vacuum algebra 内的算符；非零 $n$ 是扩大的 charged representation data，不能说原 smooth flat disk 已包含这些 classical sectors。偶整数 $k$ 时 charges $q\in k\mathbb Z$ 可组成通常 even-lattice local extension；全部 integer $q$ 的 charged fields 一般带 braid phases，不是一套共同 local bosonic fields。
 
@@ -107,20 +142,20 @@ $$
 
 ## 5. 与 corner-compatible current sewing 的比较
 
-先从 regional actions 得到 open-chord 的 $C,K,r$，或工作包 A 的 $C_Y,K_Y,r$；其定义只使用 regional traces、face identification 与 physical outer coordinate。以下实际 invariant mode algebra 使用 $r$ 下 finite Fourier labels 的原像，加上全部 central cut labels。任意 smooth current smearings 另按 insertion forms 理解，不声称它们保持 $\mathcal D_{\rm fin}$。固定一个已证明存在的连续 linear section $s$。对 Fourier label 定义 regional lifts
+先从 regional actions 得到 open-chord 的 $C,K,r$，或工作包 A 的 $C_Y,K_Y,r$；其定义只使用 regional traces、face identification 与 physical outer coordinate。以下实际 invariant mode algebra 使用 $r$ 下 finite Fourier labels 的原像，加上全部 central cut labels。任意 smooth current smearings 另按 insertion forms 理解，不声称它们保持 $\mathcal D_{\mathrm{fin}}$。固定一个已证明存在的连续 linear section $s$。对 Fourier label 定义 regional lifts
 $$
 J_n^C=Q_C[s(e^{ins})],\qquad n\ne0.
 $$
 它们的 commutators 正好为 $kn\delta_{n+m,0}$；cut currents 与它们对易。采用与第 3 节相同的 charge lattice、radial ordering 和 positive frequencies，从这些 regional lifted currents **构造** $E_q^{C,\pm}$、$V_q^C$。这里的额外 quantum input 是共同的 oscillator/charge prescription，不是任意两份 regional vacua。
 
-选定 source realization 保留 central cut currents 为 independent polynomial variables，vertex modes 用刚构造的 lifted oscillators 和 $R_q$ 作用。所有元素只有有限 cut-polynomial degree 和有限 mode-word length。PBW 给 oscillator 与 central cut factors 的分离；实际 mode relations 则由同一 explicit coefficient operators 决定。独立 target 在第 3 节的 global $\mathcal H_{\rm ch}$ 上预先定义。其 comparison 把 $J_n^C,R_q$ 送到 $J_n,R_q$，cut currents 送零。因 finite cut-polynomial coefficients 的唯一性，
+选定 source realization 保留 central cut currents 为 independent polynomial variables，vertex modes 用刚构造的 lifted oscillators 和 $R_q$ 作用。所有元素只有有限 cut-polynomial degree 和有限 mode-word length。PBW 给 oscillator 与 central cut factors 的分离；实际 mode relations 则由同一 explicit coefficient operators 决定。独立 target 在第 3 节的 global $\mathcal H_{\mathrm{ch}}$ 上预先定义。其 comparison 把 $J_n^C,R_q$ 送到 $J_n,R_q$，cut currents 送零。因 finite cut-polynomial coefficients 的唯一性，
 $$
 \ker\mathcal Q=\langle Q_C[K]\rangle,\qquad
-\operatorname{im}\mathcal Q=\mathcal A^{\rm vertex\ modes}_{\rm global}.
+\operatorname{im}\mathcal Q=\mathcal A^{\mathrm{vertex\ modes}}_{\mathrm{global}}.
 $$
 这是 **所选 common-prescription matched source** 的完整 kernel；不声称 raw universal vertex symbols 或任意 independent regional vertex tensor product 只有这一个 ideal。Charge-zero words 在 $\mathcal F_0$ 上也给同样的 comparison，双方均按实际 operator relations 取 realization。
 
-对每个 $r<1$，regularized fields 用 convergent oscillator series 构造，comparison 逐 coefficient 成立。在 strict radial domains，收敛的 BCH products 给相同 analytic functions；按固定 prescription 取 distributional boundary values，sewing identity 继续成立。改变 section 只增加 central cut labels，商后不改变每个 fixed mode 或已定义的 boundary distribution。这里没有要求在未约束的 central directions 上构造一个有界 Fock limit。
+对每个 $r<1$，regularized fields 用 convergent oscillator series 构造，comparison 逐 coefficient 成立。在 strict radial domains，收敛的 BCH products 给相同 analytic functions；按固定 prescription 取 distributional boundary values，sewing identity 继续成立。第 3 节同一 argument test 的快速衰减使逐 coefficient comparison 传到每个 finite-energy input 的 Hilbert smearing limit；adjoint 使用同一个 lifted interval。改变 section 只增加 central cut labels，商后不改变每个 fixed mode 或已定义的 boundary distribution。这里没有要求在未约束的 central directions 上构造一个有界 Fock limit。
 
 Cross-seam Wilson 的 endpoint cancellation 可以直接验收。把路径在 artificial point $Z$ 切成两段，中间 charges 为 $-q,+q$，则
 $$
@@ -134,7 +169,7 @@ $$
 
 ## 6. 验收范围
 
-**Verified:** smooth membership 与 Ward identity；未 renormalize Weyl 的 weak-zero/no-strong-limit 结论；charged mode domain 与 adjoint；radial products、OPE collision prescription；共同 prescription 下的 matched-source kernel/image 与 neutral endpoint sewing。有限 BCH、norm generating function 等由 [验算记录](<../numerics/CS and YM five work packages verification.md>) 核对。
+**Verified:** smooth membership 与 Ward identity；未 renormalize Weyl 的 weak-zero/no-strong-limit 结论；charged mode domain、argument-test Hilbert limit 与 adjoint；ordinary-periodic test 的明确反例；radial products、OPE collision prescription；共同 prescription 下的 matched-source kernel/image 与 neutral endpoint sewing。原 finite BCH/norm checks 见 [验算记录](<../numerics/CS and YM five work packages verification.md>)，本轮测试域证明及检查见 [claim ledger](<../numerics/charged CS bridge claim ledger.md>)。
 
 **Assumptions:** $\hbar=1$、偶整数 $k>0$、integer charge lattice、free current Fock modules、固定 radial branch/normal ordering、finite mode algebra 与声明的 insertion distributions。
 
