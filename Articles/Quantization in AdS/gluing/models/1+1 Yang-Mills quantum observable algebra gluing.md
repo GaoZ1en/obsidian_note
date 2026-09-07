@@ -410,6 +410,8 @@ D\in\mathscr D_{12}^{G_\Gamma},\ t\in\mathbb R\}.
 $$
 此处 $\mathscr D$ 指固定 $\hbar>0$ 的 actual specialization。$\operatorname{Alg}^{*}$ 仅取有限 sums/products，未取 operator-norm closure。源是由**已经 joint invariant 的 core operators** 的时间演化生成；它由 regional Hamiltonians 与 cut data 定义，不借 global algebra。没有把它未经证明地认同“先演化任意 charged regional words 再取全部 invariants”的更大对象。
 
+后续的 [covariant multitime network note §6](<1+1 Yang-Mills covariant multitime networks.md>) 已对这个更大 source 证明：在相同 finite-word/all-real-time Casimir prescription 下，其 physical image 也恰为独立的 $\mathfrak A_M^{\mathrm{dyn}}$，并有实际 section 与完整 constructive kernel。证明使用 charged representation blocks，不由本节 QY3 的 intertwining 自动推出。
+
 所有 generators 及其 adjoints 保持各自 Peter–Weyl domain，finite words 因而有共同定义域。$\widehat H_{12}$ 与 cut group 对易，使源中每个 operator 保持 invariant domain 及其正交补。在此定义
 $$
 Q_{\mathrm{dyn}}(A)=\mathcal K^{-1}A\mathcal K.
@@ -488,7 +490,7 @@ $$
 
 **Assumptions:** 本文 action、外端 framing、proper based quotient、无 charged matter/interface action、紧连通单连通 $G$、正定 invariant pairing；选定 representative/polynomial Rees class、Casimir ordering、normalized Haar realization；actual dynamical algebra 使用正文指定的共同 Peter–Weyl domain 和 joint-invariant generators。
 
-**Not verified:** 全 $C^\infty(T^*G)$ 的量子化、任意 charged multitime regional envelope 的 invariant algebra、所有 spacetime curves 的 Wilson construction、dynamical envelope 的 flat formal deformation、任意 bounded completion、一般群的 circle singular quantum reduction、高维 YM、CS、无限 refinement。这里已约化为有限维 $T^*G$ 后的 finite differential products 不需 scalar Epstein–Glaser extension；这不证明 continuum gauge quantization 与 proper-gauge reduction 交换，也不排除另外的量子化 prescription。
+**Not verified:** 全 $C^\infty(T^*G)$ 的量子化、超出后续 network note 所声明 finite-word prescription 的 charged multitime completions、所有 spacetime curves 的 Wilson construction、dynamical envelope 的 flat formal deformation、任意 bounded completion、一般群的 circle singular quantum reduction、高维 YM、CS、无限 refinement。这里已约化为有限维 $T^*G$ 后的 finite differential products 不需 scalar Epstein–Glaser extension；这不证明 continuum gauge quantization 与 proper-gauge reduction 交换，也不排除另外的量子化 prescription。
 
 ## 11. $SU(2)$ circle 的全局 quantum reduction
 

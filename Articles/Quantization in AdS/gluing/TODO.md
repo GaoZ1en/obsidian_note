@@ -40,9 +40,18 @@ The active route is regional/global observable algebra and its composition. Stat
 - [x] Construct SU(2) circle self-sewing with both singular strata, full smooth classical invariant quotient, the exact representative/Rees restriction kernel and independent radial image, classical specialization and the actual Haar/Casimir Hamiltonian domain.
 - [x] Replace unrestricted interface gauge maps by admissible joint trace images in the gauge template, including endpoint, winding and global-extension conditions.
 - [x] Complete the oriented source-free U(1) CS disk cut along an open chord: derive full regional actions and endpoint-compatible histories, reconstruct smooth outer traces, prove the regular classical/polynomial/Weyl current quotient and three-cell associativity.
-- [ ] Extend the CS observable class only after defining the sharp Wilson/vertex domains and their renormalization; for non-Abelian CS derive the actual endpoint/current structure from its own action.
+- [x] Construct the U(1) trivalent junction with its actual three-ray trace image, the full residual junction gauge kernel, current/Weyl quotient and order-independent complete reduction.
+- [x] Construct the framed U(1) annulus phase space, include disconnected radial proper-gauge components, retain the cycle/radial zero-mode pair and give a specified compact current/zero-mode quantization.
+- [x] Define smooth endpoint regularization, prove the sharp Weyl strong-limit obstruction, and construct integer-charge vertex modes, ordered collision renormalization and common-prescription matched-source sewing.
+- [x] Prove the annulus thin equal-time pullback threshold: nonzero charge q admits a closable spatially smeared operator on finite-energy inputs when q^2/k < 1/2; every nonzero spatial smearing fails the vacuum-domain test at or above the threshold.
+- [ ] Construct any further common domain for products of thin smeared vertices before enlarging the complete mode/ordered-distribution algebra; arbitrary independent regional Fock products remain a separate prescription.
+- [x] Derive the SU(2) CS open-chord action, corner/history conditions, trivial-monodromy classical reconstruction, faithful polynomial currents and universal fixed-level current quotient.
+- [x] For SU(2) CS at positive integer level, compute the cyclic vacuum-module kernel, include actual H1 corner gauge traces, and prove Connes sewing of independently chosen integrable vacuum regions onto the full global local net, including intervals crossing the chord endpoints.
+- [ ] Construct non-vacuum SU(2) Wilson/vertex intertwiner networks and their domains/fusion coefficients if extending beyond the proved source-free vacuum-net prescription. Raw corner currents do not all preserve the smooth-energy domain.
 - [ ] For nonorientable CS, specify a doubled/parity-twisted theory with its lattice, boundary and anomaly data; an ordinary single chiral level does not descend by the scalar rule.
-- [ ] Determine whether the invariant algebra of arbitrary charged regional multitime words equals the specified joint-invariant dynamical envelope; include the Wilson-loop ordering and marked-frame policy in this comparison.
+- [x] Construct temporally dressed finite marked YM networks, their common Peter–Weyl operator domain and independent global amplitude comparison; prove the compact-group single-zigzag identity and the complete U(1) dynamical normal form, kernel and image.
+- [x] Prove equality of the compact-group physical finite-network contour algebra and the old global dynamical envelope, including SU(2), by charged-block propagator factorization; construct an actual section and complete infinite kernel generators, and extend to finitely many cuts.
+- [ ] Simplify the non-Abelian dynamical kernel generators or obtain a terminating zero-test if needed. The complete constructive family is not claimed finite, and the static moment ideal is insufficient.
 
 ## Project Organization
 
