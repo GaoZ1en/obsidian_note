@@ -11,6 +11,8 @@ $$
 
 原版 [classical formalism](<../classical_gluing_formalism.md>) 和 [observable formalism](<../observable algebra gluing formalism.md>) 限于无空间 junctions 的 pairwise smooth cuts；当前修订已采用 joint trace/domain 与完整 response pullback 定义，并明确其 corner reconstruction 输入。本模型提供具体实现：**边的 transmission、顶点的 link/metric 条件、函数空间的角点域必须一起指定。**
 
+[Scalar closure §§1–4](<../scalar observable sewing closure.md>) 在本模型的 $m>0$ smooth torus/Klein sector 中另给完整 independent history-family 商：区域场为时间光滑的能量解，history covectors 为联合 $H^{1/2}$ trace 空间的对偶。该处证明实际 $R,B$、regular transposes 和逐函数满射；这不是本笔记原先待证的逐面空间光滑 density 类，也不扩大下文锥点量子范围。
+
 ## 1. 十二种整边配对
 
 逆时针标记

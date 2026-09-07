@@ -8,6 +8,8 @@
 
 ## 1. Action 与量子约定
 
+[Scalar closure §§5–7](<scalar observable sewing closure.md>) 将本文的 formal insertion-generated 目标写成区域 collar/insertion source 的商，并给逐图、逐阶 Cauchy-coefficient kernel 判据、相容 finite-renormalization 变换及有限组合。其新 trace-dual classical theorem 与本节的 quantum function class 分开；不因此宣称全 history-equicausal substitution 或独立 reflecting-wall renormalization 已完成。
+
 沿用 $1+1$ 维、有限 interval cells、$m>0$、物理外端 Dirichlet 和早期自由窗。$g_i$ 实且 smooth，时间支撑在固定 $J\Subset I^\circ$，在真正物理外端附近为零；人工 cut 上允许非零，全部 jets 按共同方向匹配。
 
 区分正势能 density 与相互作用作用量：

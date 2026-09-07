@@ -330,3 +330,19 @@ H_r\star_WH_s=H_rH_s+\hbar H_{r+s}.
 **Assumptions:** Rectangle 保持原能量域、$C^2$ joint histories 和指定 Friedrichs operator；Qn 保持 $m>0$ smooth torus/Klein、quotient kernels、合法 off-shell labels 及相容的局域 extension/contact/tree prescription。
 
 **Not verified:** 全矩形 independent history-family 的 $B,DR^\flat,B^\flat$、regular-dual/support 保持性及 independent-to-common extension；genuine cone 的 Wick/equicausal 或 interacting theory。这些仍保留原来的 conditional/open 等级。
+
+## 13. 新 trace-dual benchmark 与区域 quantum presentation（2026-09-07）
+
+[Scalar observable sewing closure](<scalar observable sewing closure.md>) 给出另外一个明确的函数类及其证明。该类使用 $C^\infty_tH^1$ 区域场、联合 trace 空间 $\mathcal B$ 和 $C_K^\infty(\mathcal B')$ 协向量；没有把旧空间光滑 face-density 假设改名继承。以上 §12 对旧类的未证边界保持有效。
+
+- Harmonic lift 加 cutoff normalization 给实际 regional chart；校正源 $\widetilde f=f+C_\chi E_Df$ 满足 $E_D\widetilde f=0$，故其 advanced/retarded 解相同并有紧时间支撑。这给归一化 lift 的实际 trace-dual transpose。
+- $R,B,R^\flat,B^\flat$ 连续、$BR=1$、$R^\flat B^\flat=1$；每个 $G$ 的 $G\circ B$ 属于新类，给 smooth torus/Klein 的 independent-family exact quotient。联合 Hilbert trace 投影另给 independent/common source 的 extension。
+- 固定 $n$、$d\le2$ 的 switched 非线性通过 $H^1\to L^{2(n-1)}$、能量估计、早期自由窗及完整背景梯度得到 formal／局部实际版本。
+- Quantum source 使用 collar/chart kernel labels，分别给 overlap、Wick 和 on-shell Cauchy-coefficient 关系。Interacting source 的 kernel 由逐图／逐阶 coefficient 判据给出；这不是任意全 history-equicausal family 的量子化。
+- 同一声明类上比较局域 labels、自由能量、switched energy balance、有限组合以及相容 Wick／finite-renormalization 变化。
+
+**Verified:** 新正文中的解析推导；保存的 Mathematica driver 25 组检查全部通过，另有 xAct/xTras 完整规范化的 scalar Green-current residual 为零，见 [核验记录](<numerics/scalar observable sewing closure verification.md>)。这是本轮作者的复核，没有新增独立 reviewer 的审计；有限恒等式不证明 PDE、Sobolev 或 microlocal theorem。
+
+**Assumptions:** 新文定义的 joint trace-dual 类、有限静态 $m>0$ 模型、smooth interval/torus/Klein 目标、固定非线性次数及小耦合实际域，量子部分的指定 polynomial／formal insertion 类和共同 prescriptions。
+
+**Not verified:** 旧空间光滑 face-density 类在矩形上的全部转置／延拓；任意 nonlinear equicausal stability；任意 sharp true-boundary composite。锥点、强耦合、态／表示及无限细分按本次约定排除。不存在将上述旧 open 项整体标为 proved 的升级。

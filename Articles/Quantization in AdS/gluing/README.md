@@ -15,6 +15,8 @@ This project studies how independently defined regional observable algebras comp
 
 ## Scalar Observable Algebra
 
+- [Scalar local-structure research route](<scalar local structure research route.md>): action-first milestones from regional response to local CCR, Wick and weakly interacting scalar algebras, with inclusion, causality, time-slice and finite-cutting acceptance criteria.
+- [Scalar observable sewing closure](<scalar observable sewing closure.md>): independent regional families in a time-smooth joint-trace-dual class, explicit sections/transposes, local switched nonlinear sewing, collar-label quantum presentations and kernels, finite composition and the exact distinction from the old spatially smooth density class.
 - [Rectangle scalar self-gluing](<models/rectangle scalar self-gluing.md>): twelve whole-edge pairings, corner links/angles, a concrete joint-history harmonic-lift and weak-response domain, exact energy/Friedrichs and CCR comparison, and geometric versus Cauchy-topology no-go statements.
 - [Self-sewing topology and orientation](<self-sewing topology and orientation.md>): arbitrary compact surface presentations, orientable and nonorientable topology, links, metric and bundle descent, and the obstruction for ordinary chiral CS on nonorientable spaces.
 - [Classical gluing formalism](<classical_gluing_formalism.md>): joint trace spaces, self-seams, full face/corner response release, tangent Hamiltonian algebras, and exact Poisson reconstruction under explicit chart/extension hypotheses.

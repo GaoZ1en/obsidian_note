@@ -23,11 +23,18 @@ The active route is regional/global observable algebra and its composition. Stat
 - [x] Incorporate side occurrences, joint trace topology, full corner response pullback, tangent Hamiltonian fields and precise independent/common-history quotient sources into the active classical/quantum definitions and proof statements.
 - [x] Establish the massive smooth torus/Klein Wick comparison and the coherent smooth-corner interacting comparison on their declared test/insertion domains; keep cone/Friedrichs CCR separate.
 - [x] Complete the adversarial corner-audit supplements: semibasic response typing and temporal endpoint separation, the rectangle release/form equivalence on the C2-history class, and independent-slot Klein distribution descent with order-by-order extension.
-- [ ] For rectangle self-sewing, determine whether an ambient regional history-family section and its transposes preserve the required smooth-density class, corner regularity and temporal support. Also prove the independent-to-common-family extension if claiming the independent family as the quotient source.
-- [ ] Before adding genuine corner/cone-supported Wick or interacting observables, construct the actual distribution/test class and renormalized extensions for the selected singular kernel and operator domain.
-- [ ] Reconcile `classical regional observable algebra gluing.md`, `classical_gluing_formalism.md`, and `smooth regional observable algebras and symmetries.md` into a single explicit benchmark hierarchy.
-- [ ] Record for each scalar observable class whether closure, regional construction, release, exact sewing, and completion are proved, conditional, or false.
-- [ ] Use the interacting scalar notes in `models/` to test which parts of the free construction survive nonlinear history dependence.
+- [x] Construct rectangle-to-smooth-torus/Klein full-family sewing in the explicitly revised time-smooth joint-trace-dual class, including actual charts, normalized lift transposes, BR=1, independent/common-source extension and exact onto; see `scalar observable sewing closure.md` §§1–3.
+- [x] Reconcile the scalar benchmark hierarchy and record the source, target, kernel/image, domain and completion of each result in the closure note §8; keep the original notes' narrower function classes distinct.
+- [x] Extend the revised trace-dual construction to fixed-n switched polynomial interactions in dimensions one and two on formal and finite-time local small-coupling domains, with complete background-dependent Poisson gradients.
+- [x] Give the polynomial quantum source by collar/chart labels, overlap and Wick relations, and an explicit on-shell Cauchy-coefficient kernel; give the formal interacting source's coefficient criterion without a central-mismatch substitution.
+- [x] Check the same declared local labels, free energy, switched energy balance, finite composition and compatible Wick/renormalization changes; preserve remaining cluster ports and mixed chart slots.
+- [ ] Execute phase A of [the scalar local-structure route](<scalar local structure research route.md>): audit the actual regional inputs and distinguish the existing test classes before extending claims.
+- [ ] Establish the response-derived free scalar local CCR net, inclusion maps, causality, time-slice and finite-cutting compatibility on the same torus benchmark; retain independent uncut comparison.
+- [ ] Extend those same maps to the declared Wick polynomial kernels, including mixed slots and a support-controlled time-slice construction.
+- [ ] Establish the fixed switched-phi4 interacting local structure and sewing diagrams coefficientwise, including causal factorization, time-slice and coherent renormalization; keep actual classical small-coupling domains separate.
+- [ ] If retaining the original spatially smooth face-density class is required, prove its rectangle transpose/extension properties separately. The revised trace-dual theorem does not prove that old claim.
+- [ ] Before adding sharp true-boundary composites, establish their distribution/test class and renormalized products; they are not supplied by the bulk polynomial theorem.
+- Cone renormalization, strong coupling, state/representation sewing and infinite refinement are outside the present scalar closure scope.
 
 ## Gauge Benchmark
 

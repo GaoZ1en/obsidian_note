@@ -6,6 +6,8 @@
 
 ## 1. 区域输入与两种乘积
 
+本文的 polynomial quantum algebra 另有 [scalar closure §5](<scalar observable sewing closure.md>) 的完整区域 collar-label 呈现：先给重叠／partition 和 Wick relations，再以实际 Cauchy-coefficient transform 给 on-shell kernel。它不使用 §3 的中央 mismatch 呈现来代表原始区域输入，也不把这份 polynomial presentation 认作整个 equicausal/history-family 的量子化。
+
 采用 signature $(-,+)$、$m>0$，物理外端 Dirichlet，无真实 interface action。区域作用量为
 
 $$\begin{align}

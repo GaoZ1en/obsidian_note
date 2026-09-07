@@ -16,6 +16,8 @@ $$\begin{align}
 
 ## 1. 区域作用量、变量与微分学
 
+本文的空间光滑 density 定义和 interval 证明保持原范围。[Scalar closure §§1–4](<scalar observable sewing closure.md>) 另以时间光滑的联合 trace-dual 类处理矩形：其实际域、协向量、转置和 section 在该文独立构造。它是明确的另一份函数类，不把本文 §2.4 的全部旧 corner hypotheses 自动标为成立。
+
 取 $\Sigma_i=[0,\ell_i]$，$y_i$ 朝共同 cut 增加，$\ell_i>0$。signature 为 $(-,+)$，$m>0$，无真实 interface action。先给区域作用量及变分：
 
 $$\begin{align}
