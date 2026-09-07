@@ -2,7 +2,7 @@
 
 **结论。** 对有限个 $1+1$ 维静态 massive scalar cells，regional action 与 response 决定 transparent transmission operator。用该算子的 Wick kernel 定义下述 polynomial core 及 §2.1 的 interior equicausal quantum algebra，sewed algebra 与独立 uncut algebra exact 同构，且在保留 response 和共同 Wick prescription 的增强对象上，quantization 与 sewing 交换。这一代数包含内部 local Wick composites 和 spacetime-smeared stress tensor；§6 另给总自由能量的正常序扩张。它不限于有限模态或线性 CCR。
 
-本文不将整个经典 $\mathcal H_\beta$ 直接量子化，也不假设经典 smooth transpose 已证明其 equicausal 量子版本。完整审计见 [renormalized scalar sewing audit](<renormalized scalar sewing audit.md>)；经典输入见 [smooth regional observable algebras and symmetries](<smooth regional observable algebras and symmetries.md>)。
+本文不将整个经典 $\mathcal H_\beta$ 直接量子化，也不假设经典 smooth transpose 已证明其 equicausal 量子版本。§1.1 将 corner 相容性纳入区域输入；§4.1 另证明平直矩形的 smooth torus/Klein 自粘合版本。锥点模型只继承已明确构造的 symplectic/CCR sector，不能直接继承本文的 Wick 定理。完整审计见 [renormalized scalar sewing audit](<renormalized scalar sewing audit.md>)；经典输入见 [smooth regional observable algebras and symmetries](<smooth regional observable algebras and symmetries.md>)。
 
 ## 1. 区域输入与两种乘积
 
@@ -31,6 +31,23 @@ E=G^A-G^R,\qquad
 这里 $G^{R/A}$ 是 $L_0=\partial_t^2+K$ 的 inverses。作用量 Hessian 是 $-L_0$，故若采用 Hessian Green functions，则 $G_{S_0}^{R/A}=-G^{R/A}$，且 $E=G_{S_0}^R-G_{S_0}^A$；这给与 CPS convention 的明确符号对照。
 
 量子 observable multiplication 是 $\star_W$；相互作用插入所需的 renormalized time ordering 是另一组 maps $T_{R,k}$。自由 Wick algebra 的定义不需要在所有 observables 上定义 $T_R$。
+
+### 1.1 Corner 相容的区域量子输入
+
+以下 interval 证明的 spatial interfaces 没有高维交角。推广到矩形 $R$ 时，区域对象必须先保留完整边界的 trace 空间，而不是每条边的独立 histories：
+
+$$\begin{align}
+\mathcal B_R&=\gamma H^1(R),&
+\|q\|_{\mathcal B_R}
+&=\inf_{\gamma u=q}\|u\|_{H^1(R)},&
+\mathcal B_R&\subsetneq\prod_{e\subset\partial R}H^{1/2}(e).
+\end{align}$$
+
+其像包含跨角点相容性；相邻边分别恒为 $0$ 和 $1$ 不属于此像。Smooth history sector 同样使用实际区域 trace 的像及其商拓扑，并加入声明的时间正则性、初始数据和物理边界相容条件。所有 history directions、response maps 及其转置都作用在这些空间上。固定时刻的 trace theorem 不等于任意 prescribed spacetime history 的可解性定理。任意历史族的量子闭合还须证明相容方向上的全部导数满足相应分布拓扑/equicontinuity 条件。
+
+自粘合仍只有一份区域 action、Cauchy data 和区域量子对象；复制的是待配对的 boundary slots。释放是在实际 trace 空间内进行，通量条件是与其允许 variations 的对偶配对为零。不能通过把四条边当独立变量，得到原本不存在的 corner variations 或额外 scalar canonical pairs。
+
+平滑 sewing 还保留 collar 坐标、全部匹配 jets 和相应的测试空间。Field、source、局域 density 与 coefficient distribution kernels 均通过这些坐标变换；后两者使用 density 的绝对 Jacobian，Klein 的反射不产生体积积分的负号。分布核未必具有逐面的 restriction，故不能以 sharp restriction 或乘 characteristic functions 代替此定义。区域增强对象保留构造这些坐标与局域 labels 的数据；允许的全体兼容 sewn labels 不等于已由各 isolated interior algebras 的有限乘积生成。
 
 ## 2. 一个实际闭合的 Wick function class
 
@@ -174,7 +191,7 @@ W_{\mathrm{sew}}(t,t')
 
 至此没有使用独立 global theory。人工 cut 在这个 operator 中是 transparent interface，不再是 reflecting boundary。
 
-Off-shell sewing 使用逐 cell smooth、在人工 cut 匹配全部空间／时间 jets 的 fields。这是光滑 assembled field 的配置空间；在 on-shell sector，经典方程把 continuity 与 flux matching 提升成这些 jet conditions。Quantum coefficient kernels 和 local densities 也按这个光滑拼接结构定义，不能把分布核逐侧作未经证明的 sharp multiplication。
+Off-shell sewing 使用逐 cell smooth、在人工 cut 匹配全部空间／时间 jets 的 fields。这是光滑 assembled field 的配置空间；在本节 interval 的 on-shell sector，经典方程把 continuity 与 flux matching 提升成这些 jet conditions。高维 corners 必须另外建立 smooth operator domain，不能仅从有限能量 weak transmission 作此推断。Quantum coefficient kernels 和 local densities 也按这个光滑拼接结构定义，不能把分布核逐侧作未经证明的 sharp multiplication。
 
 在这个 sewn geometry 的内部采用 §2 的同一 $\mathcal P_\mu$ 判据，形成 $\mathfrak Q_{\mathrm{sew}}^{\mathrm{off}}$，再除去自由 on-shell ideal，得到
 
@@ -185,7 +202,7 @@ $$\begin{align}
 
 这是本节定义的 quantum sewing。它从 regional action/response 重建 contractions，再对明确的 observable class 施加 dynamics。
 
-若需要与经典 $\mathsf R,\mathsf B$ 对应的显式 presentation，先在物理 history 商中取 mismatch space $\ker\mathsf B$。选其有限多个 regular linear smearings 的 polynomial algebra $\mathcal C$；它带有 evaluation $\varepsilon(c)=c(0)$。定义
+若需要与经典 $\mathsf R,\mathsf B$ 对应的显式 presentation，必须先在所声明的相容 history 空间上已有 $\mathsf B\mathsf R=1$，且相关 maps 和转置保持该空间与允许的 covectors；随后才在物理 history 商中取 mismatch space $\ker\mathsf B$。选其有限多个 regular linear smearings 的 polynomial algebra $\mathcal C$；它带有 evaluation $\varepsilon(c)=c(0)$。定义
 
 $$\begin{align}
 \widetilde{\mathfrak Q}_{Y}
@@ -206,6 +223,8 @@ QS=1,\qquad
 \end{align}$$
 
 在自由解上 $y=\mathsf R x+w$，故 $Q$ 就是 $w=0$ 的 release。该 tensor 只引入 central mismatch parameters；它不是两份旧 regional quantum algebras 的 tensor fusion，也不声称覆盖整个 $\mathcal H_\beta(Y)$。其 section 非局域，满射是对这份明确 presentation 的逐元素满射。
+
+若 corner 模型尚无上述 history splitting，仍可取一个明确的有限 polynomial parameter algebra 作形式增强，evaluation quotient 的代数证明不变；但这些 parameters 不能被称为实际 regional mismatch，也不能将这个人为的 section 作为原 history-family algebra exact onto 的证明。
 
 ## 4. 独立 Global Algebra 与 exact isomorphism
 
@@ -250,6 +269,55 @@ $$\begin{align}
 
 这是全部所声明 polynomial Wick class 的 exact isomorphism；按 §2.1 同样给 interior equicausal class 的同构。对指定 matched local generators 定义的局域子代数，支撑对应同样给双向同构；不依赖 density 或 mode cutoff。
 
+### 4.1 Smooth 矩形自粘合定理及锥点边界
+
+取 $R=[0,L_x]\times[0,L_y]$，$m>0$，按平移配边得到 $T^2$，或一组平移、一组反射配边得到 Klein bottle。每个顶点 link 是圆，总角度为 $2\pi$；gluing charts 的 corner cycle 一致。因此这些 charts 定义一个 smooth flat sewn surface。记配边数据为 $J$。在 $L^2(R,d\mu)$ 上从单份区域作用量定义
+
+$$\begin{align}
+V_J&=\{u\in H^1(R):\gamma u\text{ 按 }J\text{ 匹配}\},\\
+\mathfrak a_J(u,v)
+&=\int_R(\nabla u\cdot\nabla v+m^2uv)\,d\mu ,
+\end{align}$$
+
+及其正自伴算子 $K_J$。独立在相应 smooth quotient $\Sigma_Q$ 上用同一 metric density 和 action 定义 $K_Q=-\Delta_Q+m^2$。这里的标量是普通实标量，不是取向线丛中的 twisted field。
+
+**定理。** 使用 sewn atlas 的全部 smooth fields、compact spacetime-supported polynomial distribution labels 和 §2.1 的 equicausal 类，且全部 charts 包括 seam 与原顶点的邻域，所得自由 Wick algebras 与独立 $I^\circ\times\Sigma_Q$ 上同类 algebras exact $*$-同构。它保留这些 labels 的实际支撑、on-shell ideals 和 finite Wick contractions。此结论没有额外假设一个全部 prescribed-history 的参数化，也不推出原区域 history-family presentation 的 exact quotient。
+
+**证明。** Assembly $U$ 保持 $L^2$ density 配对。Sobolev patching 将 $V_J$ 双向对应到 $H^1(\Sigma_Q)$，且两边闭型相等。闭型所决定的算子因而满足
+
+$$\begin{align}
+UK_JU^{-1}=K_Q,\qquad
+U D(K_J^\infty)=C^\infty(\Sigma_Q),\qquad
+W_J(t,t')=\frac{e^{-i\sqrt{K_J}(t-t')}}{2\sqrt{K_J}} .
+\end{align}$$
+
+第二式使用 smooth compact quotient 上的 elliptic regularity；$D(K^\infty)$ 表示所有 operator powers 的域的交。它对应包括 corners 在内的全部 matched jets。Off shell 则直接用 sewn atlas 的 $C^\infty$ topology，不把空间 operator domain 误作 off-shell field equation。Functional calculus 给两点 kernel 的 intertwining；$m>0$ 保证常数空间模也有正频率。$m=0$ 的 CCR 仍可定义，但上式 $W$ 的零模需要另选处理，不能直接代入。
+
+这里还需核查分布与 on-shell ideal，单个 $L^2$ unitary 不够。Torus 的 kernel 为其二维 Fourier lattice sum；Klein 用 periods $(2L_x,L_y)$ 的 torus cover 和自由作用
+$\kappa(x,y)=(x+L_x,L_y-y)$，有
+
+$$\begin{align}
+W_Q(z,z')
+=W_{\widetilde T}(\widetilde z,\widetilde z')
++W_{\widetilde T}(\widetilde z,\kappa\widetilde z').
+\end{align}$$
+
+此处 $\kappa$ 保持时间，kernel 按 quotient volume density 归一化，故不是再乘 $1/2$ 的 averaged kernel：归一化 cover invariant modes 限制到 quotient 后乘 $\sqrt2$。这些是同一个正算子的 kernels；cover 只用于证明 kernel 性质，不是 sewing 的定义。
+
+取保持 $\kappa$ 的有限 spectral sums，它们是实际 smooth sewn bisolutions。在每个 flat chart 的 compact 上，§2 的 Fourier-tail 估计改成二维 lattice sum：系数为 $O((1+|k|)^{-1})$，cutoff Fourier transforms 快速衰减。在与 §2 的 $\Lambda$ 不交的闭锥上有下式，其中 $\Lambda$ 采用 $2+1$ 维的 future/past covectors，仍要求两个时间 covectors 之和为零：
+
+$$\begin{align}
+|\widehat{\chi(W_Q-W_{Q,N})}(\zeta)|
+\le C_s\sum_{|k|>N}(1+|k|)^{-1}
+(1+|\zeta|+|k|)^{-s}.
+\end{align}$$
+
+取足够大的 $s$ 同时控制任意给定 Fourier seminorm 与二维 lattice counting，得 normal-topology 收敛。有限 cover sum 保持这个估计、左右 causal orientation 和无单侧零 covector 条件。局部 Hadamard 性也可由同一 Fourier kernel 或静态基态的 microlocal theorem 得到；该步骤使用 smooth geometry，参见 [Sahlmann–Verch](https://arxiv.org/abs/math-ph/0002021)。因此 §2 的 contraction/ideal 极限论证与 §2.1 的 equicausal closure 都适用。
+
+最后，$U$ 在 sewn atlas 与 quotient atlas 之间是逐 chart 的实际 smooth isometry，诱导 smooth test densities、其分布对偶和允许 wavefront cones 的双向连续对应；它还双向对应 compact supports 与 compact sets of backgrounds。这证明全部 coefficient labels 与 equicontinuity 条件的对应，包含横跨 seam 和原 corners 的 labels，而不是只给远离 cut 的 dense 子类。Chain rule 对每个 Wick contraction 给 §4 的同态式；smooth free solutions 双向对应，故 on-shell ideals 同样对应。逆 map 逐 chart pullback 任意目标 label，给 exact onto。$\square$
+
+若保留矩形平直 metric 却使某顶点总角度不为 $2\pi$，上述 smooth-atlas 与 elliptic-domain 步骤不成立。闭型/Friedrichs construction 及其精确 symplectic comparison 仍可给相应 energy/test space 的 Weyl 或 polynomial CCR 同构；但它们没有证明锥点处的标准 Hadamard、microcausal/equicausal Wick closure 或 local renormalized insertions。$D(K_F^\infty)$ 也不能未经证明认作普通 quotient $C^\infty$。这不声称每个 cone 都有相同传播奇性或必须加入新 counterterms；须针对实际 cone kernel、测试空间和插入域另证。
+
 ## 5. Quantization 与 Sewing 的交换性
 
 记 $\mathrm Q_W$ 为 §2 的 formal Wick deformation；其定义域是带 action、field labels、response 和 Wick prescription 的增强 classical systems。定义 $\mathrm{Sew}_{q}$ 为 §3 的 response-derived contraction replacement 和 on-shell quotient。则
@@ -264,7 +332,7 @@ $$\begin{align}
 
 证明只需逐层比较：两条路径保留同一 regional responses，得到同一 transmission operator、同一 polynomial labels 和同一 $W_{\mathrm{sew}}$；每阶 Wick contractions 因而相同，最后施加同一 on-shell ideal。§4 再与独立 global quantization 比较。$\hbar=0$ 恢复所选 polynomial classical observables 及其 sewing map；首阶反对称部分恢复 CPS/Peierls bracket。
 
-此处“交换”是对上述增强对象及所选 deformation 的自然同构，不是对所有 Poisson algebras 的无选择 quantization functor。有限多 cuts 的不同顺序给相同 transmission problem；保留全部 intermediate ports 时，唯一性和同一 Wick rule 给物理 quotient 上的有限结合性。
+此处“交换”是对上述增强对象及所选 deformation 的自然同构，不是对所有 Poisson algebras 的无选择 quantization functor。有限多 cuts 的不同顺序给相同 transmission problem；保留全部 intermediate ports、corner incidence、joint trace 与 test-jet 条件时，唯一性和同一 Wick rule 给物理 quotient 上的有限结合性。含 corners 时还要求每个使用 Wick theorem 的中间 geometry 属于已验证的 smooth/kernel class；若中间阶段只建立闭型或 CCR，就只能在那个层次使用结合性。
 
 若改用 $W'=W+d$，仅当 $d$ 是同一 boundary problem 的 smooth symmetric difference、并在所选核支撑上可配对时，
 
@@ -325,8 +393,8 @@ $B$ 不可能 nilpotent：若 $B^n=0$ 的最小 $n$ 存在，上式的代数恒�
 
 ## 8. 核验范围
 
-**Verified:** polynomial Wick closure、§2.1 在明确 off-shell interior domain 上的 equicausal 扩张、response-derived kernel、on-shell $\star$-ideal、sewn/global 双向同构、增强对象上的交换性，以及上述 central presentation 和 polynomial core 的自由总能量扩张。Mathematica 检查正常序四次变换、flat-Moyal 能量反项及相关有限恒等式；这些检查只验证代数系数。
+**Verified:** interval 模型的 polynomial Wick closure、§2.1 在明确 off-shell interior domain 上的 equicausal 扩张、response-derived kernel、on-shell $\star$-ideal、sewn/global 双向同构、增强对象上的交换性，以及上述 central presentation 和 polynomial core 的自由总能量扩张。§4.1 给 smooth torus/Klein 的 test-domain、kernel、on-shell ideal 与 exact onto 证明。Mathematica 原检查覆盖正常序四次变换、flat-Moyal 能量反项；本轮 [11 组检查源码](<numerics/corner_quantum_checks.wl>)及其 [实际输出](<numerics/corner_quantum_check_results.json>)还核查 Klein 反射 jets 至 $(4,4)$ 阶、density/Laplacian、double-cover normalization、三阶 Wick contraction covariance、mass gap 和零模极限。有限符号检查不代替正文的 trace、elliptic 或 microlocal 论证。
 
-**Assumptions:** 有限静态 scalar intervals、$m>0$、smooth histories、物理 Dirichlet、无真实 interface action；bulk coefficients 在真正物理边界之外紧支撑；polynomial field degree 每个形式系数有限；所有 Wick choices 双向对应。总能量采用 §6 的独立 on-shell 正常序扩张。
+**Assumptions:** 原定理使用有限静态 scalar intervals、$m>0$、实际 admissible smooth histories、物理 Dirichlet、无真实 interface action；bulk coefficients 在真正物理边界之外紧支撑；polynomial field degree 每个形式系数有限；所有 Wick choices 双向对应。§4.1 单独使用 smooth flat torus/Klein、普通 scalar density、完整 matched charts/jets 及其测试拓扑。总能量采用 §6 的独立 on-shell 正常序扩张。真实 history mismatch presentation 还要求在相容域上已经证明 splitting 与 transpose regularity。
 
-**Not verified:** 整个经典 $\mathcal H_\beta$ 的量子化、任意非线性 history substitution 对同一 equicausal 类的稳定性、任意 sharp boundary composites、无限切分、Hilbert 表示或 state sewing。
+**Not verified:** 整个经典 $\mathcal H_\beta$ 的量子化、任意非线性 history substitution 对同一 equicausal 类的稳定性、矩形完整 regional history-family 的 exact quotient、锥点处的 Wick/renormalized 扩张、任意 sharp physical-boundary/corner composites、无限切分、Hilbert 表示或 state sewing。

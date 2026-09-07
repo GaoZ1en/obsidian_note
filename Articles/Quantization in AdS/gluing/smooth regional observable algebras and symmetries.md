@@ -12,6 +12,8 @@ $$\begin{align}
 
 满射由每个 $G$ 的实际 extension $G\circ\mathsf B$ 证明。任意实际 smooth symplectomorphism 的固定 pullback 是 $\mathcal H(X)$ 的连续 Poisson automorphism；区域 family 上还须验证微分的 density-valued transpose。有限维群在 §7.1 的联合 smoothness 与统一支撑条件下联合 Bastiani smooth 地作用，但整个自然 Fréchet solution-translation 群在本文 graph topology 下的联合作用不连续。物理对称性另须保持作用量、边界条件、响应与指定的局域代表。
 
+上述具体 maps 和全类定理属于无相交空间 faces 的 interval 模型。含 corners 的定义采用 §2.4 的实际 joint trace/covector 类；其 closure 和 exact sewing 只有在该节列出的 charts、regular transposes 和 sections 已证明时成立。矩形 energy 解空间或 CCR core 的重构不自动给 (1) 的完整区域-family 商。
+
 ## 1. 区域作用量、变量与微分学
 
 取 $\Sigma_i=[0,\ell_i]$，$y_i$ 朝共同 cut 增加，$\ell_i>0$。signature 为 $(-,+)$，$m>0$，无真实 interface action。先给区域作用量及变分：
@@ -23,7 +25,7 @@ q_i&=\phi_i(t,\ell_i),\qquad \Pi_i=-\phi_i'(t,\ell_i),\\
 \delta S_i&=-\langle L_i\phi_i,\delta\phi_i\rangle +\left[\int_0^{\ell_i}\dot\phi_i\delta\phi_i\,dy_i\right]_{t_-}^{t_+} +\langle\Pi_i,\delta q_i\rangle .
 \end{align}$$
 
-固定区域 history 时 $\delta q_i=0$。先保留 $q_1,q_2$ 的独立响应，再识别 $q_1=q_2=q$；共同 $\delta q$ 任意，才得到 $\Pi_1+\Pi_2=0$。本笔记的辅助 sources 只定义 $G^{R/A},H^{R/A},\rho^{R/A},D^{R/A}$ 和原始 field smearings，不是新的物理背景。
+固定区域 history 时 $\delta q_i=0$。先保留 $q_1,q_2$ 的独立响应，再识别 $q_1=q_2=q$；在时间内部任意 compactly supported 的共同 $\delta q$ 给 $\Pi_1+\Pi_2=0$。初末端项与 initial-history compatibility 由声明的 solution chart 处理，不将不相容的 Cauchy jets 另行自由指定。本笔记的辅助 sources 只定义 $G^{R/A},H^{R/A},\rho^{R/A},D^{R/A}$ 和原始 field smearings，不是新的物理背景。
 
 令 $K_{i,D}=-\partial_{y_i}^2+m^2$，域为 $H^2\cap H_0^1$，并定义
 
@@ -66,7 +68,7 @@ $$\begin{align}
 dF(z)[h]=-\Omega(X_F(z),h)\}. \tag{2}
 \end{align}$$
 
-$\Omega$ 弱非退化，故 $X_F$ 唯一。取 $X=X_i$ 得到固定 history 的区域代数；在物理解上通过 $\phi_i=\psi_{z_i}+\mathsf S_iq_i$ 实现。取独立构造的 $X_M$ 得到 global algebra。式 (2) 本身没有预设 global spacetime，也没有表达 history 之间的关系。
+$\Omega$ 弱非退化，故 $X_F$ 唯一。$X_F$ 须在整个声明的 phase-space domain 内；非线性域用 smooth section of $TX$ 表示，不能只要求形式 bulk Hamiltonian expression。取 $X=X_i$ 得到固定 history 的区域代数；在物理解上通过 $\phi_i=\psi_{z_i}+\mathsf S_iq_i$ 实现。取独立构造的 $X_M$ 得到 global algebra。式 (2) 本身没有预设 global spacetime，也没有表达 history 之间的关系。
 
 这是给定 smooth phase space 与 smooth Hamiltonian-vector 判据后的最大标量函数类，不是全部 $C_B^\infty(X)$。例如内部点的 $F(u,v)=u(x_*)$ 是 continuous linear function，但要求的 $X_F=(0,-\delta_{x_*})\notin X$，故不在 (2)。
 
@@ -140,6 +142,31 @@ U_{h(F_1,\ldots,F_k)} =\sum_a(\partial_a h)(F_1,\ldots,F_k)U_{F_a}. \tag{6}
 
 这也证明有限 smooth functional calculus 的闭合。取 $Y=X$、$\beta=-\Omega$、$\mathsf P=1$，上述证明给 (2) 的全部 Poisson-algebra 性质，尤其 $X_{\{F,G\}}=DX_F[X_G]-DX_G[X_F]$。通常 vector-field commutator 的符号为 $[X_F,X_G]=-X_{\{F,G\}}$。
 
+### 2.4 Joint Trace 与 Corner-Compatible 定义
+
+一般 cell 的区域 history 定义为 $\mathcal B_i=\gamma_i\mathcal F_i^{\mathrm{adm}}$，使用 joint trace/quotient topology，并在 $\mathfrak D_i\subset\Xi_i^-\times\mathcal B_i$ 中保留初始与 corner compatibility。矩形固定时刻的 $H^1$ trace 是 $H^{1/2}(\partial R)$，不是四个 face $H^{1/2}$ 空间的乘积；smooth histories 则满足来源于同一场的 corner jets。这个定义先于 global topology 的选择，随后由 face maps 加入 sewing 的 jet/trace 条件。[Joint trace norm](https://jschoeberl.github.io/iFEM/domaindecomposition/traces.html) 保留跨角点项，且并不允许一般 energy history 的 corner 点值。
+
+在一个**已经构造**的兼容 Banach/Fréchet chart $Y$ 上，选连续、常系数的 pairing $\beta:Z_K\times TY\to\mathbb R$，其中 field component 是 admissible tangent vectors，history component 是 joint-history regular covectors。若借用 ambient face/stratum densities 表示协向量，则先定义
+
+$$\begin{align}
+N_K&=\{A:A[h]=0\ \text{for every admissible history variation }h\},\\
+Z_{K,\mathrm{hist}}&=Z_{K,\mathrm{hist}}^{\mathrm{rep}}/N_K.
+\end{align}$$
+
+所选 quotient topology、smooth calculus 和配对必须实际存在并使 $\beta$ 在 covector 端 faithful。这里不宣称每个 joint-history 连续协向量都有一组光滑 face densities，也不把 $Z_K$ 认同为任意 Fréchet 空间的全部 cotangent。完整 differential 的定义仍为 (3)，但 $U_F$ 及其全部 derivatives 在这个 faithful compatible covector space 中取值；它不再是对每条 face 作独立偏导。
+
+**条件闭合定理。** 若 $Z_K$ 的支撑族对有限并和 smooth differentiation 封闭，$\mathsf P:Z_K\to TY$ 连续、常系数、$\beta$-skew，并把等价类送到合法 tangent directions，则 (3) 对乘法、有限 smooth calculus 与 $\{F,G\}_{\mathsf P}$ 封闭。证明在这个真实 chart 上对 $dF=\beta(U_F,\cdot)$ 求导；常 $\beta$ 给 Hessian symmetry，(5) 给实际 $Z_{K_F\cup K_G}$-valued gradient，六个 Hessian 项仍逐对抵消。代表元改变 $A\mapsto A+n$，$n\in N_K$，不改变 pairing，而 $\mathsf P$ 在 quotient 上 well defined 保证不改变 bracket。若兼容域或 pairing 随背景变化，必须保留相应 derivative terms，不能逐字套常系数证明。
+
+**条件 sewing 定理。** 用 side occurrences $s,\bar s$ 配对，允许两侧属于同一区域；每份 action 与 regional algebra 只计一次。共同-history inclusion $\iota_{\mathrm{sew}}$ 作用于这些 joint trace spaces。完整 action response $\lambda_i$ 通过
+
+$$\begin{align}
+\iota_{\mathrm{sew}}^*\!\left(\sum_i\lambda_i\right)=0
+\end{align}$$
+
+释放；$\lambda_i$ 保留 action 实际产生的 lower-stratum terms，不能由几何 corner 自动添加 canonical pairs。若共同-history 代入保持上述 regular-dual 类，并且作用量导出的线性 $\mathsf R,\mathsf B$ 与双向 transposes 在该类上连续、保持固定支撑，且 $\mathsf B\mathsf R=1$，则 §5.3 的 (12)–(14) 在这些实际空间上给 exact quotient onto $\mathcal H(X_{\mathrm{sew}})$。所有 maps 及背景求导须保持同一 regular-covector 和 admissible tangent 类。证明的核心是完整 chain rule 与每个 $G$ 的实际 extension $G\circ\mathsf B$；若声明从独立 regional families 出发，还须另证 $\iota_{\mathrm{sew}}^*$ 的全类 extension。非线性 cut 须使用 [classical gluing formalism](<classical_gluing_formalism.md>) 的背景依赖 operator 与完整梯度公式。
+
+因此 corners 不否定 (2) 的 Hamiltonian 定义或上述有条件的 closure/reconstruction 证明；它们改变了这些证明必须使用的域、协向量和解析输入。矩形 finite-energy histories 的存在及弱 response，即使已构造，也没有证明 (10) 的 smooth-gradient transposes、(14) 的全类 extension、(7) 的 corner-local functional membership，或整个 finite-loss/graph completion 的移植。
+
 ## 3. 包含哪些函数
 
 ### 3.1 与原 Entire 类的关系
@@ -195,6 +222,8 @@ E_i\gamma_{e,a'}^* &:C_c^\infty(I^\circ)\to X_i,\\
 对每个固定 input support，$K$ 取它与 $\operatorname{supp}\chi'$ 的 hull。先限定这一 support stratum，再使用这些 maps；因此 (7) 给实际 $C_B^\infty(Y,Z_K)$ gradient，证明 $F\in\mathcal H_{\beta,K}$。这包括 $\int f\sin\phi$、$\int f e^{-\phi^2}$ 和任意上述 smooth finite-jet detector density，不需要把它们表示成有限多个已知多项式观测量的 smooth function。
 
 对 pure-history $\int\eta q^n$，density 为 $n\eta q^{n-1}$；higher kernels 中的对角分布不构成障碍，因为定义要求 distinguished covector slot 的 density 光滑，而不是要求全部 multipoint kernels 都是普通 smooth functions。
+
+本段用的是 interval endpoint traces。对 polygonal cells 的 spatial-corner densities，先保留完整 face/lower-stratum variation，再验证其在 §2.4 joint dual 上的连续性及 transpose membership。时间涂抹本身不证明任意空间 corner distribution 释放后成为 admissible smooth Hamiltonian vector。
 
 ### 3.3 响应和能量
 
@@ -261,6 +290,8 @@ u_i(0)=0,\ u_1(\ell_1)=u_2(\ell_2)\},\\
 一维 trace 给闭性，内部 tests 给在 $H^{\mathrm{dup}}$ 中的稠密性，$m>0$ 给 coercivity。闭型表示得到 $K_{\mathrm{sew}}$；分部积分给其 piecewise $H^2$ domain 以及 $u_1'(\ell_1)+u_2'(\ell_2)=0$。functional calculus 得到 $G_{\mathrm{sew}}^{R/A},E_{\mathrm{sew}},X_{\mathrm{sew}}$。 它们也满足区域 $G,H,\rho,D$ 的同一个 causal feedback problem，因果唯一性给二者相等。没有在实频上无条件除以 DtN，也没有删去 $q=0$ modes。此时尚未定义或使用 $K_M,\mathcal H(X_M)$。
 
 独立 histories 上的 joint algebra 按 (3) 定义。代入 $q_1=q_2=q$，transpose 将两份 densities 相加。该 pullback onto 整个 common-history 类：$F(z_1,z_2,q)$ 延拓为 $F(z_1,z_2,q_1)$、忽略 $q_2$ 即给 section。这一步的全类覆盖不依赖 tensor identity。
+
+这条 section 使用本 interval 的 product history chart。含空间 corners 时，把一个 face 忽略并不自动给合法的 joint-history extension；§2.4 的独立到共同 family 覆盖是单独的假设，不能用下面 matched-phase extension $\mathsf B$ 代替。自粘合也只对一份区域 field/history object 施加两个 side-occurrence 条件，不复制整个区域因子。
 
 ### 5.2 实际 Cut、Extension 与双向 Transpose
 
@@ -345,6 +376,8 @@ $[F]\mapsto F\circ\mathsf R$
 [N, §24.4] 的内部 trace/lift-transpose 界和 (10) 给连续 $\mathsf R_a,\mathsf B_a$ 及固定 support 的 transposes，且 $\mathsf B_a\mathsf R_a=1$。将 (12)–(14) 的 $-\Omega$ 换为 cluster 的 $\beta_{\mathrm{cl}}$，将新 operator 换为 $\mathsf R_a\mathsf P_{0,\mathrm{cl}}\mathsf R_a^\flat$， 即逐函数证明 onto 整个 cluster family 类，包含 remaining-history derivatives。
 
 有限次组合的 cut maps 复合，transposes 逆序复合，sections 逆序复合；这些公式保持 smoothness 和固定 compact support。不同 parenthesizations 的最终字段满足同一个由区域 action/response 定义的 transmission problem，因果唯一性给同一最终 $E$ 与 source flattening。因此有限切割的 associativity 和 cutting inverse 在整个所选类成立。这里没有无限切分的一致估计。
+
+在 §2.4 的 corner 条件版本，每个中间 cluster 必须保留其 joint external trace/history space、继承的 corner matching 和实际 action terms，并有同类 transpose/section estimates。把中间 cluster 的外露 faces 当作独立 histories 会改变约束域；此时上述结合性证明不适用。
 
 局域 net 采用 **商后 matched smooth-bulk/finite-jet generators**，明确限定生成类。对相对开集 $O\subset I^\circ\times\Sigma$，先在区域几何中取有限阶 jet densities $a_i(t,y_i,j^d\phi_i)$，其 spacetime support compactly contained in $O$（允许接触物理端点时取相对支撑）。在每个人工 cut 处，将场的空间 jets 按 $\partial_x=\partial_{y_1}=-\partial_{y_2}$ 换为同一方向，要求两侧的**整个 density** 作为 spacetime 与有限 jet variables 的 smooth function 匹配全部 jets。对 $a_i=f_i h_i$，只匹配 $f_i$ 而允许任意不同的 $h_i$ 不够；例如一侧为 $f\phi^2$、另一侧为零，在 cut 附近 $f\ne0$ 时并不匹配。
 
@@ -698,7 +731,9 @@ $\sqrt{(2n)!}|t|^nR^{2n}/n!$，相邻项比值趋于 $2|t|R^2$，对大 $R$ 发�
 |---|---|---|
 | 已证明 | $\mathcal H(X)$、固定 compact density 的 $\mathcal H_\beta(Y)$ 及其有限 smooth calculus 为实际 Poisson 函数代数 | (2)–(6)，完整 Hessian 与 vector-valued smoothness。 |
 | 已证明 | 整个 smooth finite-jet bulk/boundary density 类、能量、smeared responses 的 membership | (7)–(8)，固定 support 的 forward/transpose maps。 |
-| 已证明 | 全类 exact sewing、独立 global 同构、有限次 partial release | (10)–(14) 的实际双向 maps、sections 和区域 PDE 唯一性。 |
+| 已证明 | interval 全类 exact sewing、独立 global 同构、有限次 partial release | (10)–(14) 的实际双向 maps、sections 和区域 PDE 唯一性。 |
+| 条件成立 | 含空间 corners 的 regional-family closure 与 exact sewing | §2.4 的实际 compatible chart、faithful regular dual、切向 Poisson operator，以及两类 extension 和 transpose/support 条件。 |
+| 未证明 / 未声称 | 从矩形 energy histories、弱 response 或 CCR comparison 推出整个 smooth-family 商 | 这些输入不提供 (7)、(10)、(14) 的 smooth/corner transpose 与 extension 定理。 |
 | 已证明 | 固定 $K$ graph spaces 和 $\mathcal H(X)$ 完备；重建为连续 split quotient | §6 的导数极限、闭 graph 条件和连续 section。 |
 | 已证明 | 任意 actual smooth symplectomorphism 保持 $\mathcal H$；有明确 admissible off-matching extension | (15)、(19)–(21)。 |
 | 已证明 | matched smooth-bulk/finite-jet quotient cores 及其 graph closures 的 local-net 同构 | §5.4 的完整 density-jet patching、assembly homeomorphism 与分别连续性。 |

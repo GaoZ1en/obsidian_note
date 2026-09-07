@@ -4,6 +4,8 @@
 
 **结论。** 对下文指定的 static free scalar interval，区域作用量、历史输运和响应给出不使用 global algebra 作输入的经典 sewing。允许的历史 families 由 §§22–23 的统一 mixed coefficients、smooth history-derivative densities 和有限 Sobolev loss 定义；它们包含平滑时间涂抹的 polynomial local composites、相应能量和 smeared boundary responses。§24 的连续 split quotient 覆盖独立 global algebra 的整个选定函数类别，保持乘法、括号与时间演化，并给出 cutting inverse。这里的 local-net 同构指 §24.4 的商后 supported-core 分层完成；不声称每个严格局域 family prequotient 都有保持原支撑的 section。
 
+这是一维空间、无相交空间 faces 的基准。它的 endpoint-history product、smooth density dual、mode-tail bounds 和 full-family section 不能直接移到矩形 corners。一般区域采用 §1.2 的 joint trace 域与完整 response release；§10.1 的推广是附带这些输入的条件定理，§24 的已证明范围仍为声明的 interval 类别。
+
 §§3–13 的小 regular completion 保留独立 tensor theorem。扩大后的 $\mathfrak A,\mathfrak B$ 具有每层及整个 LF 空间的完备性；乘法与括号分别连续，并有明确的层间联合估计。但是它们在整个并集上的联合连续性、扩大类别的 canonical independent completed projective tensor identity 均被 §25 的反例否定。本文的重建同构是保持分层 Poisson operations 的连续线性同构，不将扩大空间称为通常具有联合连续运算的 locally convex Poisson algebra。bare fixed-history fusion 仍为 **false**。
 
 **Proved** 指正文在声明模型/函数类别内的论证；**conditional** 指尚须满足列出的具体前提；**checked symbolically** 只指 §§12、20、26 的有限恒等式检查。本轮审计与最终边界见 §§21–26；不开展量子化、非线性或 gauge 推广。
@@ -39,6 +41,28 @@ q_i&=\phi_i(\ell_i), & \Pi_i&=-\phi_i'(\ell_i),\\
 \end{align}$$
 
 固定历史时 $\delta q_i=0$，但每份区域理论保留历史变化的响应。先建立这些区域对象，再于 §6 认同共同历史并从其自由变分导出 flux matching；不事先把 transmission 作为孤立区域的边界条件。
+
+### 1.2 有 Corners 时的区域数据
+
+人工面以 side occurrence $s$ 标记，$r(s)$ 给所属区域；seam 为一对不同 occurrences $\{s,\bar s\}$，允许 $r(s)=r(\bar s)$。区域 action 和 algebra 因子各按区域计一次。定义
+
+$$\begin{align}
+\mathcal B_i&=\gamma_i\mathcal F_i^{\mathrm{adm}},&
+\mathfrak D_i&\subset\Xi_i^-\times\mathcal B_i, &
+\iota_{\mathrm{sew}}&:\mathcal B_{\mathrm{sew}}\longrightarrow\prod_i\mathcal B_i.
+\end{align}$$
+
+这里 $\mathcal F_i^{\mathrm{adm}}$ 为预先指定的区域 field class，$\gamma_i$ 是所有所需边界数据的 joint trace，$\mathcal B_i$ 使用其 trace/quotient topology；$\mathfrak D_i$ 保留 initial-history 与 corner compatibility。共同域要求 $q_{\bar s}=J_sq_s$ 及其诱导的 corner 条件。矩形的固定时刻 energy trace 是 $\gamma H^1(R)=H^{1/2}(\partial R)$，严格小于四个 $H^{1/2}(F_s)$ 的乘积；smooth class 则保留区域 corner jets 和 sewing 坐标变换下的 jet matching。[Joint trace norm](https://jschoeberl.github.io/iFEM/domaindecomposition/traces.html) 的跨面项不能省略；有限能量场没有可任意指定的顶点点值。
+
+完整 action variation 定义 response covector $\lambda_i$，包含实际 action 产生的 face 与 lower-stratum 项，而 release 定义为
+
+$$\begin{align}
+\left.\delta S_i^{\mathrm{full}}\right|_{\mathrm{on\ shell}}
+&=\Theta_i^+-\Theta_i^-+\lambda_i,
+& \iota_{\mathrm{sew}}^*\!\left(\sum_i\lambda_i\right)&=0.
+\end{align}$$
+
+两者均在 admissible variations 上取值。无额外界面作用量、光滑 seam 内部的自由 tests 给通常的 $\Pi_s+J_s^*\Pi_{\bar s}=0$；它不是丢弃 corner compatibility 后的定义。普通一阶 scalar action 不自动产生独立 corner canonical pair。选用光滑商度量还是 conic/Friedrichs domain 也属于模型输入，不由 scalar algebra 自行决定。
 
 ## 2. 静态线性理论的 Observable Labels
 
@@ -499,16 +523,17 @@ $k>0$ 时给出全部 $k_r=r\pi/(\ell_1+\ell_2)$。$k=0$ 单独用 $B_iy_i$ 解�
 本构造对满足下列条件的非规范 **线性** 边界控制系统成立：
 
 - 原始 observable/control spaces、测试配对、admissible initial/history domains 与 action response 独立给定，区域 $R/A$ 问题及中间 composite 问题唯一可解。
+- 有 corners 时，history/control spaces 使用 §1.2 的 joint trace topology，包含初值、相邻面和 sewing corner compatibility；response 是完整 action 的 covector。所有 linearized variations 在这个域内，ambient face densities 要按其 annihilator 取等价类。不能把无 corner 的 facewise lift、transpose 或任意 history 非空性作为隐含前提。
 - $E$ 连续，source quotient 有声明的 Hausdorff topology；用于 completed quotient presentation 时有连续线性 splitting，或另有证明 completion 与所需商相容的定理。
 - 指定的 labels 分离所讨论的解，且完成张量有 faithful functional evaluation；例如 §3.2 的有限 spectral projections 论证。一般空间不能仅凭线性 labels 分离性就省略这项完成后的检查。
 - 原始 source cutting/assembly 连续且闭合于同一测试类别；区域 transmission 的解具有正确 patching regularity，并与独立 uncut 方程的解双向对应。
 - 由作用量的线性化 Green identity 和因果唯一性得到两边 $E$ 的 intertwining；locality 来自该 IBVP 的 finite propagation。
 
-在这些输入下，§6 定义新 pairing 和 closed ideal，§7 的生成元、inverse 及 seminorm proof 给 completed Poisson algebra isomorphism。核性可由 smooth-vector compactness 输入保证，但 functorial isomorphism 本身只需连续 pairing 和实际连续 inverse。以上条件不包含“假设代数已经同构”，也不把 global restriction image 作为区域定义。static scalar interval 已逐项验证。
+在这些输入下，§6 定义新 pairing 和 closed ideal，§7 的生成元、inverse 及 seminorm proof 给指定 **regular label completion** 的 Poisson algebra isomorphism。核性可由 smooth-vector compactness 输入保证，但 functorial isomorphism 本身只需连续 pairing 和实际连续 inverse。以上条件不包含“假设代数已经同构”，也不把 global restriction image 作为区域定义。static scalar interval 已逐项验证。若要求 §§22–24 的整个 history-family 类，还须在实际 compatible charts/regular dual 上证明 $\mathsf B\mathsf R=1$、双向 transpose 的 density/loss/support bounds，以及 independent-to-common history restriction 的全类 extension；能量解空间的双射不提供这些更强输入。
 
 对一般非线性非规范系统，应从**预先声明的** admissible off-shell functional algebra $\mathcal F^{\mathrm{adm}}$ 开始，以在实际区域解上消失的泛函取商。其 bracket 必须使用背景解 $\phi$ 处线性化算子的 Peierls kernel $E_\phi$。若此函数类对乘法、$\langle F^{(1)},E_\phi G^{(1)}\rangle$、cutting 以及 history-dependent transport 闭合，且这些操作连续，以下条件性证明成立：
 
-1. 直接从区域 nonlinear equations 与 action transmission 定义 matched solution locus；不赋予它旧逐纤维 product bracket。
+1. 直接从区域 nonlinear equations、joint trace/corner domain 与完整 action response release 定义 matched solution locus；不赋予它旧逐纤维 product bracket。确认所用实际 charts 与 tangent/regular-covector bundles，不能对一组不相容的 face histories 作形式偏导。
 2. 在每个 matched solution 处，线性化这些区域方程和 transmission，以零过去/零未来解定义 $E_{\mathrm{sew},\phi}$。假设所需线性化 IBVP 唯一可解并对背景具有该函数类要求的正则依赖。
 3. 用原始 cutting presentation 上的新 Peierls bracket 和 vanishing ideal 定义 $\mathcal A_{\mathrm{sew}}$。切割原始泛函的映射若连续、可逆并保持所选函数类，solution patching 双射使两边 vanishing ideals 对应。
 4. 线性化方程的相同 transmission 与唯一性给 $E_{\mathrm{sew},\phi}$ 与独立 $E_{M,\operatorname{Ass}\phi}$ 的 intertwining；chain rule 于是证明商上的 Poisson 性。两份实际连续 inverse 给完成后的同构。
@@ -1155,6 +1180,8 @@ $$\begin{align}
 
 作历史的辅助代表空间。任意在 $\overline I$ 邻域光滑的物理历史都可延拓成其中的 compact-support 元素。下面的 observables 只依赖 $I^\circ$ 内一段 compact history，因此不依赖延拓；这没有给物理历史施加周期或时间 Dirichlet 条件。
 
+这个有限分量 $\mathcal Q$ 描述 interval 的分离 endpoints。它不宣称空间相交 faces 的 histories 独立：矩形等模型须先构造 §1.2 的 joint trace/history chart，再选其 regular covector spaces；§22 的 Hilbert direct-sum estimates 与后面的 completion 定理不能仅通过形式替换 $\mathcal Q$ 就得到。
+
 ### 22.1 Mixed Hamiltonian Coefficients 与历史协向量
 
 取 $K\Subset I^\circ$，并令
@@ -1192,6 +1219,8 @@ dF(z,q)[w,h] &=-\sum_i\Omega_i(V_{F,i}(z,q),w_i) +\int A_F(z,q;t)h(t)\,dt. \tag{
 \end{align}$$
 
 这里 $V_F$ 是固定历史的 Hamiltonian vector，$A_F$ 是历史导数的 **smooth density**。正则性要求施加于包括历史 slots 的全部 $U_n$，而非只施加于 $F_q$ 的场方向系数。
+
+在含 corner 的推广中，$V_F$ 必须切于全部 admissible phase-space 条件，$A_F$ 是 joint-history covector，而非一组唯一的任意 face densities。若使用 density representatives，先按 annihilator 取商以使 $\beta$ 在 covector 端 faithful，并证明所选商的微分学和层间估计。没有这些输入，(22.1) 只是形式表达，后面的 closure proof 尚不能适用。
 
 **每层完成与函数实现。** $H^{s+3}_K$ 在 $H^{s+3}(\mathbb R)$ 中闭；不同 $s$ 的 operator extensions 相容、$B_n$ 的对称性、输出 support 条件均为闭条件。§21.1 的 Banach-operator 与加权 $\ell^1$ 论证因此逐字适用：$\mathcal B_{r,K}$ 是 Fréchet 完备空间，函数级数及任意有限阶 mixed derivatives 在所需 scale balls 上一致收敛。协向量端的分离性和 polarization 保证 faithful realization。若 $h$ 在 $K$ 邻域为零，则 $D_qF[h]=0$；沿直线积分说明 $F$ 只依赖 $q|_K$。
 
@@ -1457,6 +1486,8 @@ $$\begin{align}
 
 两个待粘合端口先取各自的 $q_1,q_2$，再代入 $q_1=q_2=q$。history diagonal 的 transpose 是 densities 相加，故 (22.7) 给一个 loss-zero map，输出是共同历史空间 $Y=(X_1\oplus X_2)\oplus\mathcal Q$ 上的 $\mathfrak B_{\mathrm{com}}$。 它 onto 整个共同-history 类：把任意 $F(z_1,z_2,q)$ 延拓为 $F(z_1,z_2,q_1)$，便得到同样具有 loss-zero transpose 的连续 section；忽略 $q_2$ 不损失任何共同-history family。 作用量在共同 $\delta q$ 下的变分给 $\Pi_1+\Pi_2=0$；§6 的 retarded/advanced response problem 与正闭 quadratic form 随后给 $E_{\mathrm{sew}}$、$K_{\mathrm{sew}}$。下列 maps 只使用这些已由区域数据构造的算子。
 
+这里“忽略 $q_2$”使用的是本 interval 的真实 product history chart。若两条 face 在 corner 相交，这个 extension 未必把 compatible inputs 送到允许的域；必须另证 $\iota_{\mathrm{sew}}^*$ 保持 regular covectors 并覆盖所选 common-history 函数类。之后的 $\mathsf B^*$ 是另一项 extension，不能替代这一前置步骤。自粘合只有一份区域 action/field 因子，不能把同一区域的两条 face 当成两份独立 bulk theories 来套此公式。
+
 定义实际 cut map（历史用一个 compact extension 表示）
 
 $$\begin{align}
@@ -1593,6 +1624,8 @@ $$\begin{align}
 于是 (22.7) 和 (24.5)–(24.8) 的证明再次适用：部分释放后的 observable 是同一声明类别中的 **整个** cluster family，而非只在固定剩余历史下合法。其 bracket 使用 $\mathsf R_a\mathsf P_{0,{\mathrm{cl}}}\mathsf R_a^\flat$； remaining histories 仍为 prescribed parameters。部分释放的 operator 可以有有限 loss $d_a$，括号相应落在 $r+r'+d_a$ 层。不得把本段的有限-loss statement 加强为所有 maps 均 loss-zero。
 
 有限次组合时 cut maps 复合，transposes 逆序复合，mixed derivatives 按 (22.7) 完整传递。区域作用量的共同-history 变分和全套 response 消元给同一个最终 transmission problem；其因果唯一性使各顺序得到相同 $E_{\mathrm{sew}}$。因此组合后仍属于同一个 $\mathfrak B/\mathfrak A$ 类，并得到与 source flattening 一致的 associativity。各次 loss 和 support enlargement 只累加有限次；不声称无限 cut refinement 的 uniform bounds。
+
+有空间 junction 的版本须在每个中间 cluster 保留其 joint external trace domain、继承的 corner identifications 与完整 action terms，并重新验证同类 maps、transposes 和 sections。若把中间 exposed faces 重置为独立 histories，便改变了最终 transmission problem，本段的 associativity 证明不成立。
 
 Support/locality 仍按原始 bulk/boundary representatives 指定。局域 polynomial density 的 cutting 是逐 cell 积分及完整 boundary variation；(23.7)、(24.2) 和层间连续性把它延到指定的 local closures。对 causally disjoint supports，新的 $E_{\mathrm{sew}}$ 给零括号。任意 $\mathfrak B$ 元素可以非局域，不能仅因其叫作 regional family 就给它一个额外的最小局域支撑。
 

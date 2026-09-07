@@ -1,0 +1,27 @@
+ClearAll["Global`*"];
+checks=<||>; put[k_,v_]:=AssociateTo[checks,k->TrueQ[FullSimplify[v]]];
+j={{1,0},{1,0},{0,1},{0,1}};
+lam={a1,a2,a3,a4}; dq={v1,v2};
+put["joint_response_pullback",lam.j.dq==(a1+a2)v1+(a3+a4)v2];
+put["annihilator_equivalence",Transpose[j].{a,-a,b,-b}=={0,0}];
+put["isolated_corner_variation_rejected",MatrixRank[Append[Transpose[j],{1,0,0,0}]]>MatrixRank[j]];
+put["spatial_boundary_term_retained",D[q[s],s]D[h[s],s]==-D[q[s],{s,2}]h[s]+D[D[q[s],s]h[s],s]];
+om={{0,-1},{1,0}};
+put["hamiltonian_tangency_sign",{f,0}.om.{du,dp}==-f dp];
+put["nonperiodic_label_rejected",((1-x/lx)/.x->0)-((1-x/lx)/.x->lx)==1];
+(* Use an explicit bracket, avoiding iterator conventions. *)
+br[ff_,gg_]:=D[ff,q1]D[gg,p1]-D[ff,p1]D[gg,q1]+D[ff,q2]D[gg,p2]-D[ff,p2]D[gg,q2];
+put["ordinary_matching_ideal_not_Poisson",br[q1-q2,p1]==1];
+trans={{2,0},{0,1/2}}; z={z1,z2}; w={w1,w2}; v={v1,v2};
+put["CCR_symplectic_comparison",Transpose[trans].om.trans==om];
+sig[a_,b_]:=-a.om.b;
+put["Weyl_cocycle",sig[z,w]+sig[z+w,v]==sig[w,v]+sig[z,w+v]];
+j2={{1},{-1}};
+put["release_by_stages",Transpose[j.j2].lam==Transpose[j2].Transpose[j].lam];
+put["self_action_single_copy",2om!=om];
+cornerInt=Integrate[1/(r+s)^2,{r,eps,dd},{s,eps,dd},Assumptions->0<eps<dd];
+put["joint_trace_logarithm",FullSimplify[cornerInt==Log[(dd+eps)^2/(4 dd eps)],Assumptions->0<eps<dd]];
+put["joint_trace_jump_excluded",Limit[cornerInt,eps->0,Direction->"FromAbove",Assumptions->dd>0]===Infinity];
+kg[ff_]:=D[ff,{t,2}]-D[ff,{x,2}]-D[ff,{y,2}]+m^2 ff;
+put["harmonic_history_lift_forcing",kg[v[t,x,y]+h[t,x,y]]-(kg[v[t,x,y]]+D[h[t,x,y],{t,2}]+m^2 h[t,x,y])==-D[h[t,x,y],{x,2}]-D[h[t,x,y],{y,2}]];
+Print[ExportString[<|"checks"->checks,"allPassed"->And@@Values[checks],"count"->Length[checks]|>,"RawJSON"]];

@@ -2,7 +2,7 @@
 
 日期：2026-09-06。审计对象是本次工作区中的导入文件与当前模型笔记；导入稿所引用的历史基准为 commit 7298e8073f3689d9c6ac19cfebb9d4f001d6856d。本次不将旧对话中的“已证明”或脚本通过标签作为证明。
 
-本文件 §§1–10 保留上一轮针对旧导入稿的审计范围与运行记录。当前修订后的结论和本地复验见末尾 §11；旧稿的否定判定不直接适用于已按本文修补的 Q0/Qn。
+本文件 §§1–10 保留上一轮针对旧导入稿的审计范围与运行记录。随后修订的结论和复验见 §§11–12；§12 是 2026-09-07 的 corner 修订。旧稿的否定判定不直接适用于已按本文修补的 Q0/Qn。
 
 **判定：经典两处修补正确；两份 renormalized quantum 稿的整体无条件判定不成立。** 前者补清实际域与 history 代表即可保留原模型的核心 classical sewing。后者除了尚未证明的高阶 microlocal regularity，还存在 off-shell/on-shell 对象混用、相互作用符号、time-ordering 值域和 quantum release map 未定义等问题。下面给出可保留的结论、反例与已经落实的修补。
 
@@ -260,3 +260,59 @@ H_r\star_WH_s=H_rH_s+\hbar H_{r+s}.
 新 [general observable formalism](<observable algebra gluing formalism.md>) 给模型无关的充分条件与证明；[1+1 YM classical model](<models/1+1 Yang-Mills classical observable algebra gluing.md>) 给含 framed Wilson operators 的全 smooth exact quotient。详细逐文件审计在 [当前三稿审计](<../../../01_commit_audit_and_repairs.md>)。
 
 本轮实际复现 [scalar 30 组](<numerics/observable_sewing_scalar_recheck_results.json>)，新增 [23 组 finite identities](<numerics/observable_sewing_ym_audit_results.json>)，另得 [两个 xAct/xTras Noether residuals](<numerics/observable_sewing_noether_xact_results.json>) 为零。这里没有重新运行本文件上一轮记录的全部外部 Python checks，也不把这些有限结果称为 microlocal/PDE theorem。
+
+## 12. Corner 修订与独立审查（2026-09-07）
+
+本轮检查实际工作区中的 classical/quantum definitions、sewing maps、theorems 和 proofs。原来的 interval 模型结论按其原维数与边界假设保留；含空间角点的扩展必须提供额外的 joint-domain 输入。有限符号回归和独立文本审查分别记录，不互相代替。
+
+### 12.1 文件与修改
+
+| 文件 | 本轮修改 |
+|---|---|
+| [classical_gluing_formalism](<classical_gluing_formalism.md>) | 以 side occurrences 处理多个接口和 self-seams；joint trace topology；完整 face/corner response pullback；真实相容 chart、regular dual、extension 与 source-specific quotient theorem。 |
+| [observable algebra gluing formalism](<observable algebra gluing formalism.md>) | 同步 classical/CCR/Wick/interacting 定义、证明及有限组合；区分 independent/common-family、matched-space 和 quantum presentation 三种 source。 |
+| [classical regional observable algebra gluing](<classical regional observable algebra gluing.md>) | 明确原 interval proofs 的范围，加入 corner-aware definition/reconstruction 输入，保留有限 Sobolev-loss 与 exact-on-to 的原证明边界。 |
+| [smooth regional observable algebras and symmetries](<smooth regional observable algebras and symmetries.md>) | 切向 Hamiltonian fields、联合 covector 域、corner response 与 symmetry/extension 条件。 |
+| [Q0](<free scalar renormalized quantum observable algebra gluing.md>) | 实际 matched test/dual spaces；massive smooth torus/Klein Wick/equicausal theorem、normal-topology ideal proof；cone CCR 与 genuine corner insertions 的边界。 |
+| [Qn](<phin renormalized quantum observable algebra gluing.md>) | smooth corner atlas 上的 density/insertion/renormalization 数据、deck-equivariant extension 与 exact interacting comparison；不从能量定理推断 singular-stratum renormalization。 |
+| [rectangle model](<models/rectangle scalar self-gluing.md>) | 具体 joint-history harmonic-lift/energy IVP 与 lift-independent weak response；切向 observable 反例；CCR proof 与更强 family theorem 的明确区分。 |
+
+本轮没有改写 archived/deprecated formulations，也未把上述 scalar 结果推广成一般 gauge/gravity corner theorem。
+
+### 12.2 修补后的命题等级
+
+| 命题 | 判定与证据 |
+|---|---|
+| 四条边的任意独立 $H^{1/2}$ histories 都可作矩形有限能量 trace | **False.** 相邻常数跳变的跨角点 seminorm 对数发散。 |
+| 在真实弱辛 $P$ 上，以切向 Hamiltonian field 定义 $\mathcal H(P)$ | **Proved under the declared smooth weak-symplectic hypotheses.** Lie bracket/Cartan proof 保留全部域条件。 |
+| 只令每条开边 flux 匹配就足以处理任意 corner | **False as a general reconstruction assertion.** 必须保留 joint-domain、完整 lower-stratum response、几何和 operator-domain 输入。 |
+| 完整 release | **Proved variational identity.** 在允许共同 variations 上，总 response 的 pullback 为零；每份区域 action 只计一次。 |
+| 矩形 $C^2(I;H^{1/2}(\partial R))$ 控制的区域 energy IVP 与弱 response | **Proved in rectangle §5.1.** Harmonic lift、Dirichlet Duhamel/energy estimate 与弱 Green identity；不是任意连续 history 的光滑 IBVP。 |
+| 矩形 smooth-vector Hamiltonian 与 CCR 比较 | **Proved in the specified model.** 闭型重构、实际 graph-domain unitary、双向 algebra maps。 |
+| 完整 independent regional history-family quotient | **Conditional.** 还需 common-history extension（若使用该中间 source）、$B,DR^\flat,B^\flat$ 和全部 corner/regular-dual/support 保持性。弱响应的存在不提供这些条件。 |
+| Massive smooth torus/Klein 的 free Wick/equicausal 比较 | **Proved in Q0 §4.1.** Smooth quotient charts、正谱、normal-topology finite-bisolution approximation 和双向 test/dual maps；包含原 corners 的 neighborhoods。 |
+| Smooth torus/Klein 的 interacting comparison | **Proved with declared coherent renormalization data.** Qn §2.1 的局域 extension 与 chart/deck compatibility；formal insertion-generated algebra 的逐生成子逆像。 |
+| Cone/Friedrichs energy 或 CCR 同构推出 cone Wick/renormalized sewing | **Not established.** 需实际 singular kernel、distribution/test domain 和 extension 输入；不把缺少输入称为普遍 no-go。 |
+
+### 12.3 独立审查与复核
+
+独立审查由未参与上述实现的 reviewer 读取修改后的七份证明笔记，并检查实际域、response、quotient sources、rectangle IVP 和 quantum contraction arguments。审查发现并修复：
+
+1. Rectangle introduction 仍把已经修订的两份 formalism 描述为“无空间 junction”；改为明确原版限制与当前定义。
+2. Classical formalism 把 point-history evaluation 的排除写成无条件结论，与允许一般 joint regular dual 的新定义冲突；改为仅在原 smooth-temporal-density 类中排除，在更一般类中按真实 continuity、trace 和 regular-dual/transpose 条件判断。
+3. 通用 Wick theorem 仅写 smooth off-shell assembly，却用 tensor-kernel identity 推导全部高阶 contractions；修正为连续线性或具有固定线性部分 $L$ 的仿射 map，kernel identity 明确使用 $L\otimes L$。证明保留高阶 chain rule 的适用条件；实际 interval/torus/Klein assemblies 都满足该条件。
+
+**最终独立复审判定：三项 P2 均已修正；在当前明确声明的模型和假设内，未发现剩余可操作漏洞。** Reviewer 对修订后的七份证明笔记复核了 joint trace、完整 response、self-action 计数、Hamiltonian 切向性、非线性梯度、exact quotient 条件、矩形区域 IVP 及 smooth torus/Klein 的 quantum comparison，并另写、执行独立检查。
+
+以上审查记录针对实际修订文本；没有把审查未发现反例当作任意 PDE/microlocal 输入的证明。
+
+### 12.4 Computational checks
+
+- [通用 corner/algebra checks](<numerics/corner_algebra_checks.wl>)：14 组 exact checks 全通过，含 joint response pullback、annihilator、禁止的孤立 corner variation、真实边界项、切向性、普通 Poisson ideal 反例、CCR、组合顺序及 harmonic forcing。[实际输出](<numerics/corner_algebra_check_results.json>)。
+- [Classical checks](<numerics/corner_classical_checks.wl>)：8 组 exact checks 全通过，含 compatible chain rule、covector representatives、corner 发散及 self-action 计数。[结果](<numerics/corner_classical_check_results.json>)。
+- [Quantum checks](<numerics/corner_quantum_checks.wl>)：11 组 exact checks 全通过，含 reflection jets 至 $(4,4)$、density/Laplacian、double-cover normalization、有限 Wick contractions 和零模边界。[结果](<numerics/corner_quantum_check_results.json>)。
+- [独立审查 checks](<numerics/corner_independent_review_checks.wl>)：7 组 exact checks 全通过，使用独立的四维 nonlinear graph 验证完整梯度与 Jacobi，并以 nonlinear canonical shear 的非零 Wick/Moyal 差异说明只要求辛性不足以推出 bare pullback comparison。[实际输出](<numerics/corner_independent_review_results.json>)。
+- 本轮共 **33 组实现检查 + 7 组独立检查 = 40 组**。矩形原有 12 种配对和 19 组符号计算保留在其 [原检查记录](<numerics/rectangle_self_sewing_results.json>)，与这 40 组分别记录。
+- 最终修订后的七份证明笔记 Pandoc-to-LaTeX parsing 无警告，相对链接、公式环境与 whitespace 检查通过；本审计新增 §12 的链接与解析也通过。历史 §§1–11 中原有的导入源文件链接未纳入本轮修订。
+
+**Assumptions:** 每份定理明列的几何/trace/operator domain、smooth chart、完整 action、regular covector maps、实际 quantum label class 和 coherent renormalization rule。**Not verified:** 未列入本轮 scope 的任意 corner IBVP、完整 rectangular smooth-density family extension、genuine cone/corner renormalization、一般 gauge/gravity corner theorem。

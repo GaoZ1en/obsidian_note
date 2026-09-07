@@ -2,6 +2,8 @@
 
 **结论。** 对固定整数 $n\ge3$ 的 switched scalar model，存在一个由 off-shell local polynomial insertions、renormalized time ordering 和 quantum Møller images 构造的 formal interacting algebra。在同一 transparent free response 和相同 renormalization rule 下，regional sewing 与 quantum Møller maps 相容，sewed algebra 与独立 global interacting algebra exact 同构。其 classical limit 在所选 local polynomial generators 上恢复已有的 $\phi^n$ sewing。
 
+原证明针对 $1+1$ 维 interval cells。§2.1 补入 smooth torus/Klein 矩形自粘合的定义与 comparison theorem；真实角点/锥点上的 renormalized insertions 不由此获得。与自由理论一样，完整相容 history-family 的量子闭合和 exact quotient 仍是独立于这里的 bulk insertion theorem 的问题。
+
 这里的 quantum regional object 保留 action、histories、response 和插入标签。它不等于两个已在 artificial reflecting walls 上独立重整化的 algebras；也不声称整个经典 $\mathcal H_\beta$ 或整个 equicausal class 都被 $\Psi_\lambda^{\pm *}$ 保持。自由输入和 polynomial Wick class 见 [free scalar renormalized quantum observable algebra gluing](<free scalar renormalized quantum observable algebra gluing.md>)，下称 [Q0]；经典 maps 见 [phin smooth regional observable algebra gluing](<models/phin smooth regional observable algebra gluing.md>)。
 
 ## 1. Action 与量子约定
@@ -25,6 +27,8 @@ L_0=\partial_t^2+K.
 在 $S_R(V)=\exp_{T_R}(iV/\hbar)$ 的 convention 中，$V$ 必须取上式的负号。全部级数在 $\lambda,\hbar$ 中形式解释。
 
 每个 isolated regional fiber 的 free quantum algebra 先由其自身 $K_{i,D}$ 定义。Regional interacting package 还保留局域 action density $-g_i\phi_i^n/n!$、其插入标签、完整 history transport 和 response。若 $g_i$ 接触 artificial reflecting wall，不能仅凭 bulk Epstein–Glaser theorem 宣称该 isolated wall theory 已有包含全部这些插入的 $T_{R,i}$；本构造在 transparent response sewing 后处理跨 cut 插入。
+
+有 corners 时，“完整 history”按 [Q0, §1.1] 指实际区域 joint trace 及时间/初始数据的相容域；不指各 face histories 的直积。其变化、response 和转置也必须在该域上定义。自粘合只把同一区域的若干 boundary slots 配对，$S_0$ 与 $V_\lambda$ 各计一次。Field、$g$、所有有限 jet 插入及有限 counterterm coefficients 均须按 sewing charts 匹配，Klein 的 orientation reversal 使用 scalar/tensor 的坐标变换与正 density。
 
 ## 2. Free Sewing 后的 Off-Shell Insertions
 
@@ -66,7 +70,20 @@ W_F=W_0-iG_0^A,\qquad L_0W_F=-i\delta.
 
 这里还须证明值域属于 $\mathcal P_\mu$；单有 finite scaling degree 只给 distribution extension，不能代替 wavefront 控制。对该静态模型可以补上如下证明。在未 smearing 的 graph kernel 中，每条反射 edge 的两个时间 covectors 之和为零。互异点的产品因此满足总时间 covector 守恒。发生完全 cancellation 的 singular subgraph 若非空，取其最大时间 vertex，该 vertex 的非零 incident Feynman covectors 同号，矛盾；内部互异同时间点之间没有 singular edge。
 
-在 total diagonal 附近，反射项 smooth，奇异部分由通常的内部 Hadamard distributions 给出。使用保留对角方向 smooth parameter dependence 的 microlocal extension：局部以共同时间与 relative coordinates 表达，在 relative coordinates 中延拓，允许的 counterterms 为 smooth coefficients 乘 diagonal delta 的有限导数。故延拓后的 graph 仍满足
+这里固定一个明确的 stationary extension prescription。先不乘 switching 或局部分区函数；静态自由 kernel 使每个未涂抹 graph 在同时时间平移下不变。取共同时间 $T=t_k$、相对时间 $s_a=t_a-t_k$ 及空间坐标，局部写成
+
+$$\begin{align}
+t_{\mathcal G}=1_T\otimes u_{\mathcal G}.
+\end{align}$$
+
+在 total diagonal 附近，非平凡反射项 smooth，奇异部分由通常的内部 Hadamard distributions 给出。对 relative/transverse variables 作有限 scaling-degree extension，subtraction functions、Taylor subtractions 和有限 normalization constants 均取为不依赖 $T$；空间对角坐标仍作为局部参数处理。先前各阶采用同一选择，causal splitting 的区域与分区也可选为仅依赖相对时间和空间坐标，因此 partial-diagonal induction 保持此性质。得到
+
+$$\begin{align}
+t_{\mathcal G,R}=1_T\otimes u_{\mathcal G,R},\qquad
+\left(\sum_{a=1}^k\partial_{t_a}\right)t_{\mathcal G,R}=0.
+\end{align}$$
+
+该一阶算子的 characteristic set 是总时间 covector 为零的集合。Microlocal elliptic regularity 因而给
 
 $$\begin{align}
 \operatorname{WF}(t_{\mathcal G,R})
@@ -74,9 +91,38 @@ $$\begin{align}
 \sum_{a=1}^k\zeta_a(\partial_t)=0\}.
 \end{align}$$
 
-Partial diagonals 按 causal factorization 和较低阶 products 归纳。Smooth switching、finite derivatives 不增大 wavefront set；把各 field slots 置于其 vertex 并积分没有外腿的 vertices 时，时间 covectors 在保留的 slots 上仍求和为零。非零的全同向 causal tuple 的时间分量和不可能为零，因而输出 polynomial coefficients 满足 $\mathcal P_\mu$ 条件。所有外腿位于有限个 compact vertex supports。这也说明必须采用上述 smooth-parameter microlocal extension，而不是任意 distribution extension。
+随后乘 smooth switching 或局部分区函数，或者取有限导数，都不增大 wavefront set；此时不再要求涂抹后的 kernel 本身平移不变。允许的局域有限 counterterms 是 smooth coefficients 乘 diagonal delta 的有限导数，其 conormal covectors 也满足总时间分量为零。把各 field slots 置于其 vertex，并对没有外腿的 vertices 作 compact-support pushforward 时，被积分的 vertex covectors 必须为零，保留的 slots 上时间分量仍求和为零。非零的全同向 causal tuple 的时间分量和不可能为零，因而输出 polynomial coefficients 满足 $\mathcal P_\mu$ 条件。所有外腿位于有限个 compact vertex supports。
+
+**普通参数光滑性不足的 no-go。** $T\mapsto\delta(r-T)$ 是 $\mathcal D'(\mathbb R_r)$-valued smooth map，但其联合分布的 wavefront set 为 $\{r=T;\ (\tau,\xi)=(-\xi,\xi),\ \xi\ne0\}$。因此 distribution-valued smoothness 本身不蕴含共同时间 covector 为零。上面的结论使用 stationary kernel 与 $T$-independent extension；非静态背景必须另外证明相应 microlocal estimate。
 
 这给 compact interior polynomial insertions 的 Epstein–Glaser construction；它没有证明 boundary-supported vertices 的版本。采用同一局域 extension rule、相同有限常数及相同 contact-term conventions，才有后面的 comparison。标准局域延拓输入见 [Brunetti–Fredenhagen](https://arxiv.org/abs/math-ph/9903028) 和 [Hollands–Wald](https://arxiv.org/abs/gr-qc/0111108)；反射奇性、总时间 covector 条件及内部支撑是本节另外核查的静态模型输入。这里的 symmetry 首先指插入的置换对称性；一般 Noether/stress-tensor Ward identities 必须分别核查 anomaly 与 normalization，不能从 graph existence 自动推出。
+
+### 2.1 Smooth 自粘合的插入域与 Corner Comparison
+
+采用 [Q0, §4.1] 的 $m>0$ smooth flat torus/Klein 模型。Sewn off-shell fields 在包含原顶点邻域的完整 atlas 上 smooth；插入标签是这个 atlas 上 compact-time、smooth finite-jet polynomial densities。坐标系下的 smearings 可到达并跨过所有 seams 和原 corners。它们是整体 density 的兼容 chart 表示，不能由逐面 sharp cutoff 定义。独立 global 侧使用其自身 smooth quotient atlas 定义同类 labels；$g$ 及其全部 jets 同样在这些 charts 中 smooth，早期自由窗与实 switching 条件保持。
+
+**定义。** Corner 相容的 renormalization data 包括上述 field/test-density domain、[Q0] 已证明的 $W_0,W_F$ kernels、off-shell local labels，以及在每个普通内部 chart（包括原 corner chart）使用的相同 distribution-extension rule、finite coefficients 和 contact-term normalization。Klein 的规则还须在 orientation-reversing overlap 上按 scalar density 与 tensor indices 变换；等价地可在 torus double cover 上采用 deck-equivariant 的局域规则。只在每条开边核对数值相等，不足以核对这些数据。
+
+这一 smooth 模型的存在性输入仍是局域 Epstein–Glaser extension；原顶点现在是普通内部点。Klein 上可在 diagonal extension 的归纳步骤选择有限 deck group 不变的 extensions：低阶 products 已不变时，待延拓分布在 diagonal 外不变，对 extension 作有限群平均保持其 restriction、scaling bound 和线性的 covariance/contact normalization；先固定的 tree prescription 也不变。这里平均的是该步的线性 extension，不能平均两个完成的 $T_R$ 后无条件宣称保留非线性 causal factorization。相同规则在两侧分别实施。固定有限 $n$ 的形式理论允许其 power counting 所需的局域 counterterm labels；本文不声称任意 $n$ 只需有限个 renormalization parameters。
+
+自由 kernel 的 Hadamard/normal-topology 输入已在 [Q0, §4.1] 核查。各 chart 的 graph extension 是 smooth-spacetime 问题；kernel stationary，故 §2 的总时间 covector 证明仍给 $\mathcal P_\mu$ 值域。时间保持的 Klein transition 不改变 causal orientation，smooth chart changes 和 density factors 保持所需 wavefront 条件。因而 §§3、4 的 off-shell/contact-term 和 image-generated interacting algebra 定义适用于这一明确模型。
+
+**定理。** 在上述 labels 和共同 renormalization data 下，§6 的 assembly $*$-isomorphism 以及
+
+$$\begin{align}
+\alpha_{\mathrm{off}}T_{R,k}^{J}
+&=T_{R,k}^{Q}\alpha_{\mathrm{off}}^{\otimes k},&
+\alpha_{\mathrm{off}}\mathcal R_V^q
+&=\mathcal R_{V_Q}^q\alpha_{\mathrm{off}}
+\end{align}$$
+
+对所有声明的插入成立，并诱导 §6 的 image-generated interacting algebras 的 exact sewn/global isomorphism。这里 $\alpha_{\mathrm{off}}$ 是实际 matched configuration/test-density spaces 上的 off-shell map；不是先取 on-shell 商再定义 time ordering。
+
+**证明。** [Q0, §4.1] 给包括所有 corner neighborhoods 的 off-shell fields、distribution labels、kernels、wavefront/test topologies 与 free on-shell ideals 的双向对应。在 diagonal 外，每条 contraction 因而对应。在 diagonal 上，两侧是同一普通 smooth chart 的坐标表达，所选相同 extension 与兼容 finite terms 给相同局部分布；corner chart 也包含在这个核对中。按 vertex number 归纳得第一式。将它和 Wick intertwining 代入 Bogoliubov formula 得第二式。随后施加相同 free on-shell restriction；每个 global local label 都有实际 chart pullback，因此每个 interacting generator、有限 word 和逐形式系数都有逆像。这个证明给 exact onto，不依赖稠密像论证或 quantum Møller inverse。$\square$
+
+此定理允许在原 corner 附近的 smooth bulk insertions；它没有把某条边或顶点上的 delta-supported interaction 加入 $\mathcal P_{\mathrm{loc}}$。若区域作用量本来含真实 boundary/corner interaction，则需另给相应 insertion space、kernel pairings、stratum-supported extension/finite terms 和 Ward normalization，并证明它们在 sewing 下相容。当前 theorem 不证明这些输入，也不说明每个 corner 必须产生 anomaly 或新的 counterterm。
+
+若矩形 quotient 保留锥点，则 [Q0, §4.1] 的 smooth test-domain/Hadamard 前提尚未建立，不能从 Friedrichs energy 或 CCR 同构推出本节。即使 insertion supports 避开锥点，也须核查所用两点核与全部相关 graph 的 microlocal/extension 条件；仅有各支撑点的局部平滑性不能代替这一步。
 
 ## 3. 为什么必须保留 Off-Shell 数据
 
@@ -143,7 +189,7 @@ F\in\mathcal P_{\mathrm{loc}}\right\}.
 
 ## 5. Regional Presentation、Release 与 Quantum Møller Compatibility
 
-取 [Q0] 的 central polynomial mismatch algebra $\mathcal C$。先在 off shell 上使用
+取 [Q0] 的 central polynomial parameter algebra $\mathcal C$。只有在实际相容 history 域上的 splitting、response/covector regularity 已证明时，才把它的变量称为 regional mismatch；否则以下是明确的有限参数 presentation，不是旧区域 history-family 的取商定理。先在 off shell 上使用
 
 $$\begin{align}
 \widetilde{\mathcal P}_\mu
@@ -305,7 +351,7 @@ $$\begin{align}
 
 这给增强 presentation 上的明确交换性。它还不是从两个各自独立完成重整化的 interacting regional algebras $\mathfrak Q_i^{\mathrm{int}}[q_i]$ 出发的交换定理：当 interaction 接触人工边界时，本稿没有构造那些 algebras 的全部 boundary insertions，也没有给出把其旧 contractions 换成 transparent contractions 的 interacting comparison map。因此不能把上面的等式扩写成这一更强的先分别量子化、再粘合的结论。只保留旧乘积的普通 tensor quotient 已被 [Q0, §7] 的 commutator no-go 排除；更充分的 response-enriched interacting construction 仍需额外证明。
 
-有限多 cells 的全部中间 external ports 和同一 renormalization rule 都保留时，同一个 transmission solution 与同一 graph extension rule 给物理 quotient 上的有限结合性。这个论证不声称任意 off-matching extensions 逐点相等。
+有限多 cells 的全部中间 external ports、corner incidence、joint histories、matched test jets 和同一 renormalization rule 都保留，且每一步属于已验证的 smooth/kernel/insertion class 时，同一个 transmission solution 与同一 graph extension rule 给物理 quotient 上的有限结合性。某个中间阶段只建立能量域或 CCR 时，不能据此调用 interacting Wick 定理。这个论证不声称任意 off-matching extensions 逐点相等。
 
 ## 8. Renormalization 不相容的 No-go
 
@@ -324,13 +370,15 @@ $$\begin{align}
 | 总 incoming free energy | 可按 [Q0, §6] 另行加入，同构保持 |
 | 任意时刻的完整总 interacting energy | 还需指定 stress-tensor Ward normalization 与真正物理边界的积分域；不能由内部 smearings 自动推出 |
 | 有限 regular central history/mismatch parameters | §§2、5 的明确类中成立 |
+| Smooth torus/Klein 自粘合的 bulk local insertions | §2.1 的完整 matched charts 与共同 scalar-density scheme 下，comparison exact |
+| 真实 boundary/corner-supported 或锥点 insertions | 本文未构造其 renormalized extension；不能由能量或 CCR sewing 推出 |
 | 整个旧 history-uniform equicausal 类被 $\Psi_\lambda^{\pm *}$ 保持 | 未证明；本文不使用此命题 |
 | Quantum Møller 与 release/global comparison | 在声明的 off-shell domain 与 coherent scheme 上严格成立 |
 | 先独立量子化各 interacting region，再粘合 | 未证明；不能由已经使用 transparent response 的 presentation 推出 |
 | 强耦合实际 quantum theory、形式级数收敛 | 未证明；经典强耦合能量界不证明这些命题 |
 
-**Verified:** 以上 off-shell/contact-term 修补、Møller 符号、polynomial insertion construction、两个 intertwining identities、exact quotient 和独立 global isomorphism；Mathematica 检查 Feynman 接触项符号、有序 Green identity 和 $\phi^n$ normalization。一般 graph/分布延拓论证在正文，不是符号程序的结论。
+**Verified:** 以上 interval 模型的 off-shell/contact-term 修补、Møller 符号、polynomial insertion construction、两个 intertwining identities、exact parameter quotient 和独立 global isomorphism；§2.1 在声明的 smooth torus/Klein matched domains 与共同 scheme 下的 extension/comparison 证明。Mathematica 检查 Feynman 接触项符号、有序 Green identity 和 $\phi^n$ normalization；本轮 [Q0] 的 11 组检查包括 reflection density、jets、kernel normalization 和 finite Wick covariance。一般 graph/分布延拓论证在正文，不是符号程序的结论。
 
-**Assumptions:** [Q0] 的静态 scalar interval、固定有限 $n$、compact-time smooth switching、外端附近 $g=0$、cut 全 jets matching、early free strip；局域 polynomial insertions 的支撑避开真正物理边界；共同 Wick、Epstein–Glaser extension 和 finite-normalization choices，以及同一个 classical tree normalization。
+**Assumptions:** 原定理采用 [Q0] 的静态 scalar interval、固定有限 $n$、compact-time smooth switching、外端附近 $g=0$、cut 全 jets matching、early free strip；局域 polynomial insertions 的支撑避开真正物理边界；共同 Wick、Epstein–Glaser extension 和 finite-normalization choices，以及同一个 classical tree normalization。§2.1 单独采用 $m>0$ smooth flat torus/Klein、完整 corner charts/test-density topology 和 orientation-reversal-compatible scheme；真实 history mismatch 解释另需相容域上的 splitting/transpose 定理。
 
-**Not verified:** 六项旧量子声明对整个原始 equicausal/history 类同时成立、任意 sharp boundary operators、任意 scheme 的逐场相容性、full smooth-Hamiltonian quantization、非微扰 quantum existence、无限切分或 state/representation sewing。
+**Not verified:** 六项旧量子声明对整个原始 equicausal/history 类同时成立、矩形完整 history-family 的 exact quotient、任意 sharp boundary/corner operators、锥点处的 renormalized quantum extension、任意 scheme 的逐场相容性、full smooth-Hamiltonian quantization、非微扰 quantum existence、无限切分或 state/representation sewing。
