@@ -1,0 +1,23 @@
+(* Run in a fresh xAct kernel. The Cartan check assumes invariant pairing and MC equations. *)
+Needs["xAct`xTensor`"];
+Needs["xAct`xTras`"];
+DefManifold[EdgeAuditM,3,{a,b,c,d,e,f}];
+DefMetric[-1,met[-a,-b],CD,{";","D"}];
+DefTensor[avec[-a],EdgeAuditM];
+DefTensor[variation[-a],EdgeAuditM];
+densityVariation=epsilonmet[a,b,c](variation[-a] CD[-b][avec[-c]]+avec[-a] CD[-b][variation[-c]]);
+expected=2 epsilonmet[a,b,c] variation[-a] CD[-b][avec[-c]]-CD[-a][epsilonmet[a,b,c]avec[-b]variation[-c]];
+rVariation=FullSimplification[][ToCanonical[ContractMetric[ToCanonical[Expand[densityVariation-expected]]]]];
+Print["CS first variation residual: ",rVariation];
+DefManifold[BaseFusion,6,{aa,bb,cc,dd,ee,ff}];
+DefManifold[LieIndices,3,{ii,jj,ll,mm,nn,pp}];
+DefTensor[alternating[aa,bb,cc],BaseFusion,Antisymmetric[{aa,bb,cc}]];
+DefTensor[structure[ii,jj,ll],LieIndices,Antisymmetric[{ii,jj,ll}]];
+DefTensor[leftMC[-aa,-ii],{BaseFusion,LieIndices}];
+DefTensor[rightMC[-aa,-ii],{BaseFusion,LieIndices}];
+chiProduct=alternating[aa,bb,cc]structure[ii,jj,ll](leftMC[-aa,-ii]+rightMC[-aa,-ii])(leftMC[-bb,-jj]+rightMC[-bb,-jj])(leftMC[-cc,-ll]+rightMC[-cc,-ll])/12;
+chiSeparate=alternating[aa,bb,cc]structure[ii,jj,ll](leftMC[-aa,-ii]leftMC[-bb,-jj]leftMC[-cc,-ll]+rightMC[-aa,-ii]rightMC[-bb,-jj]rightMC[-cc,-ll])/12;
+dCross=-alternating[aa,bb,cc]structure[ii,jj,ll](leftMC[-aa,-ii]leftMC[-bb,-jj]rightMC[-cc,-ll]+leftMC[-aa,-ii]rightMC[-bb,-jj]rightMC[-cc,-ll])/4;
+rCartan=FullSimplification[][ToCanonical[ContractMetric[ToCanonical[Expand[chiProduct-chiSeparate+dCross]]]]];
+Print["Cartan multiplication residual: ",rCartan];
+If[!SameQ[rVariation,0] || !SameQ[rCartan,0],Exit[1]];

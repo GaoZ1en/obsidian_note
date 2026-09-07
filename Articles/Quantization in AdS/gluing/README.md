@@ -25,6 +25,7 @@ This project studies how independently defined regional observable algebras comp
 
 ## Gauge Benchmark
 
+- [Chern–Simons edge contraction and corner fusion](<models/chern-simons edge contraction and corner fusion.md>): audited tree-edge presentation equivalence, scalar/YM trace obstructions, charged-port quasi-Hamiltonian fusion, and the precise boundary between geometric corners, physical currents, and quantum fusion channels.
 - [1+1 Yang–Mills classical observable algebra gluing](<models/1+1 Yang-Mills classical observable algebra gluing.md>): continuum action to framed cotangent phase space, full smooth interval sewing, and SU(2) circle self-sewing with all singular strata and a full smooth invariant quotient.
 - [1+1 Yang–Mills quantum observable algebra gluing](<models/1+1 Yang-Mills quantum observable algebra gluing.md>): interval holonomy–flux Rees sewing and its dynamical scope; SU(2) circle restriction with a principal moment-Casimir kernel, independent global radial image, classical specialization, and the Haar/Casimir Hamiltonian domain.
 - [U(1) Chern–Simons disk and open-chord sewing](<models/U(1) Chern-Simons disk and open-chord sewing.md>): complete regional actions, joint gauge/history endpoints, exact smooth current-algebra and polynomial/Weyl sewing, physical chiral evolution and three-cell associativity.
