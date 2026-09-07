@@ -34,6 +34,18 @@ $$
 $$
 (\xi_i^-,q_i)\longmapsto(\phi_i,\xi_i^+,\lambda_i).
 $$
+准确地，令 $\pi_{q_i}:\mathfrak D_i\to\mathcal B_i$ 为 history projection，则
+$$
+\lambda_i\in\Gamma(\pi_{q_i}^*T^*_{\mathrm{reg}}\mathcal B_i),\qquad
+\Lambda_i|_{d_i}(v)=\lambda_i(d_i)[D\pi_{q_i}(d_i)v].
+$$
+$\lambda_i(d_i)$ 的 covector base 是 $q_i$，但其系数仍依赖初值和解；$\Lambda_i$ 是 $\mathfrak D_i$ 上消灭 vertical variations 的 semibasic form，不必下降为 $\mathcal B_i$ 上的一形式。因此
+$$
+dS_{i,\mathrm{on}}=\Theta_i^+-\Theta_i^-+\Lambda_i,\qquad
+\Omega_i^+-\Omega_i^-=-d\Lambda_i
+$$
+在真实 control domain 上成立，包含初值/history 的混合导数。$T^*_{\mathrm{reg}}$ 只表示实际选定的 continuous/regular dual；必要时先除去 trace tangent range 的 annihilator。若弱响应最初仅定义于 compact-time tests，它尚不是整个 history tangent 上的 endpoint-separated covector；[rectangle §5.1](<models/rectangle scalar self-gluing.md>) 给出带时间端点补偿的实际延拓及证明。
+
 规范理论先除去 proper based gauge，保留 active cut group、charges、frames/transition data。下面非规范部分的 $\mathcal P_i[q_i]$ 指所声明 smooth class 上的弱辛 phase space。若暂时只有弱 solution relation，则保留该 relation；未建立 smooth phase space 前不调用 $\mathcal H(P)$ 定理。
 
 在任意声明的 smooth phase space $P$ 上，取
@@ -59,11 +71,13 @@ $$
 $$
 \iota_{\mathrm{sew}}:\mathcal B_{\mathrm{sew}}\longrightarrow\prod_i\mathcal B_i.
 $$
-在固定 temporal endpoint variations 下，对共同 history 的所有**允许切向量**释放总 action，得到完整的 sewing 定义
+先以固定 temporal endpoints 的 variations 导出弱 release，再在所声明切向类上使用完整 endpoint-separated response。其 sewing 定义为
 $$
 \boxed{q\in\mathcal B_{\mathrm{sew}},\qquad
-(D\iota_{\mathrm{sew}}(q))^*(\lambda_i)_i=0.}
+(D\iota_{\mathrm{sew}}(q))^*(\lambda_i(d_i))_i=0.}
 $$
+这里在每个相容 solution/control tuple $(d_i)_i$ 处取 fiberwise cotangent pullback，未假设 response 只依赖 $q$。若允许 phase-space tangent 的时间端点非零，还须证明 compact-time release 蕴含其完整响应为零；双向证明见 rectangle §5.2，不能仅凭 compact tests 在较强 history topology 中“稠密”来推断。沿 matching locus，$\sum_i\Lambda_i$ 因而为零，$d$ 与 pullback 交换才给完整 CPS flux cancellation。
+
 无独立 interface action 时总 action 是 $\sum_iS_i^{\mathrm{full}}$；若另有实际 interface/corner interaction，则其 variation 一并加到上述 covector。等价地，总响应消灭所有 admissible common variations。它不是要求 ambient face/corner covector 的每个代表分量分别为零。
 
 在光滑 face 内部取避开 corners 的 test variations，上式恢复熟悉的局部条件

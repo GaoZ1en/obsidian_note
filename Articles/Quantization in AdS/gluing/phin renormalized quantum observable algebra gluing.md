@@ -101,9 +101,65 @@ $$\begin{align}
 
 采用 [Q0, §4.1] 的 $m>0$ smooth flat torus/Klein 模型。Sewn off-shell fields 在包含原顶点邻域的完整 atlas 上 smooth；插入标签是这个 atlas 上 compact-time、smooth finite-jet polynomial densities。坐标系下的 smearings 可到达并跨过所有 seams 和原 corners。它们是整体 density 的兼容 chart 表示，不能由逐面 sharp cutoff 定义。独立 global 侧使用其自身 smooth quotient atlas 定义同类 labels；$g$ 及其全部 jets 同样在这些 charts 中 smooth，早期自由窗与实 switching 条件保持。
 
-**定义。** Corner 相容的 renormalization data 包括上述 field/test-density domain、[Q0] 已证明的 $W_0,W_F$ kernels、off-shell local labels，以及在每个普通内部 chart（包括原 corner chart）使用的相同 distribution-extension rule、finite coefficients 和 contact-term normalization。Klein 的规则还须在 orientation-reversing overlap 上按 scalar density 与 tensor indices 变换；等价地可在 torus double cover 上采用 deck-equivariant 的局域规则。只在每条开边核对数值相等，不足以核对这些数据。
+**定义。** Corner 相容的 renormalization data 包括上述 field/test-density domain、[Q0] 已证明的 $W_0,W_F$ kernels、off-shell local labels，以及在每个普通内部 chart（包括原 corner chart）使用的相同 distribution-extension rule、finite coefficients 和 contact-term normalization。主定义直接使用 quotient atlas。Klein 的规则在 orientation-reversing overlap 上按 scalar density 与 tensor indices 变换；cover 表达必须是这些 quotient kernels/contact distributions 和局域规则的提升。对多点核，这要求各槽独立的 deck descent，不能只要求同时变换全部 arguments 的不变性。
 
-这一 smooth 模型的存在性输入仍是局域 Epstein–Glaser extension；原顶点现在是普通内部点。Klein 上可在 diagonal extension 的归纳步骤选择有限 deck group 不变的 extensions：低阶 products 已不变时，待延拓分布在 diagonal 外不变，对 extension 作有限群平均保持其 restriction、scaling bound 和线性的 covariance/contact normalization；先固定的 tree prescription 也不变。这里平均的是该步的线性 extension，不能平均两个完成的 $T_R$ 后无条件宣称保留非线性 causal factorization。相同规则在两侧分别实施。固定有限 $n$ 的形式理论允许其 power counting 所需的局域 counterterm labels；本文不声称任意 $n$ 只需有限个 renormalization parameters。
+**多点下降引理。** 记 $Q=I^\circ\times K$，$\widetilde Q=I^\circ\times\widetilde T$，$\pi:\widetilde Q\to Q$ 为二重 cover，$G=\{1,\kappa\}$ 保持时间和正 metric density。对 scalar distribution coefficients，
+$$
+\pi_k^*:\mathcal D'(Q^k)\xrightarrow{\cong}
+\mathcal D'(\widetilde Q^k)^{G^k},\qquad
+\pi_k=\pi^{\times k}.
+$$
+右侧是不变子空间，$G^k$ 独立作用于每个 slot。因为 $\pi_k$ 是局部微分同胚，pullback 对所有分布有定义；其 inverse 在 compact test density $f$ 上为
+$$
+t[f]=2^{-k}\widetilde t[\pi_k^*f].
+$$
+**证明。** 有限 cover 的 density pushforward 将各 sheets 求和，故 $\pi_{k*}\pi_k^*f=2^k f$。对任意 cover test density $\psi$，
+$$
+\pi_k^*\pi_{k*}\psi=\sum_{g\in G^k}g^*\psi.
+$$
+若 $\widetilde t$ 在独立 slots 下不变，代入 inverse formula 即得 $(\pi_k^*t)[\psi]=\widetilde t[\psi]$。另一方向直接由 $\pi_k\circ g=\pi_k$ 得到；pullback 的 injectivity 也由第一式给出。逐个 evenly covered chart 上是微分同胚的标准 distribution pullback，有限个 sheet maps 给连续逆，并按其 cotangent maps 保持实际 wavefront cones 与允许的 normal test topology。Tensor coefficients 另带各 slot 的 index transformation；density 始终取绝对 Jacobian。$\square$
+
+只在对角子群下不变的反例为
+$$
+(\kappa\times\kappa)^*\delta_{\Delta_{\widetilde Q}}
+=\delta_{\Delta_{\widetilde Q}},\qquad
+(\kappa\times1)^*\delta_{\Delta_{\widetilde Q}}
+=\delta_{\Delta_\kappa}\ne\delta_{\Delta_{\widetilde Q}}.
+$$
+自由 deck action 使两条 diagonals 不交，故这确实否定该较弱下降条件。第 $k$ 阶 quotient total diagonal 的全部提升为
+$$
+D_k=\pi_k^{-1}\Delta_{Q,k}
+=\bigsqcup_{\epsilon_2,\ldots,\epsilon_k\in\{0,1\}}
+\{(\widetilde z,\kappa^{\epsilon_2}\widetilde z,\ldots,
+\kappa^{\epsilon_k}\widetilde z)\}.
+$$
+因此必须将同一局域 extension 运输到这 $2^{k-1}$ 个 components；partial diagonals 按每个 vertex block 作同样处理。特别地，按各自 metric volume density 定义 contact kernels 时
+$$
+(\pi\times\pi)^*\delta_{\Delta_Q}
+=\delta_{\Delta_{\widetilde Q}}+\delta_{\Delta_\kappa}.
+$$
+这里没有额外 $1/2$。把单个 cover diagonal 作平均会得到上述和的一半，已经改变 contact normalization。Inverse distribution pairing 的 $2^{-k}$ 是积分遍历全部 sheets 的补偿，不能挪到 [Q0] 的两项 $W_Q$ kernel 前面。
+
+**逐阶 extension 与有限平均。** 此 smooth 模型的存在性输入仍是普通内部 chart 上的局域 Epstein–Glaser extension，带 §2 声明的 contact/tree normalization；原顶点现在是普通内部点。固定所有低阶 products 后，causal factorization 在 $Q^k\setminus\Delta_{Q,k}$ 唯一固定待延拓 datum，包括已处理的 partial diagonals。在 cover 上使用其 pullback，因果关系也从 quotient 拉回；这是 $G^k$-invariant 的 datum，定义域为 $\widetilde Q^k\setminus D_k$，不是 ordinary covering-torus theory 的另一份 $T_R$。
+
+在第 $k$ 阶，把相互关联的 Wick coefficients 与 contact identities 一起作 extension。满足固定 off-diagonal datum、scaling/WF bounds 和所选 normalization 的 extensions 构成非空实 affine space；其非空性使用本节的局域存在性输入。插入置换与各 slot 的 deck maps 给有限群
+$$
+\Gamma_k=G^k\rtimes S_k.
+$$
+群也运输 insertion labels、tensor indices 与所有 lifted contact diagonals。它保持度量、因果方向、已固定低阶 products 及 normalization 右端，因此保持这个 affine space。对一个允许的 extension $t_k$，定义
+$$
+\overline t_k=\frac1{|\Gamma_k|}\sum_{g\in\Gamma_k}g\cdot t_k.
+$$
+每一项在 $D_k$ 外都等于同一个 datum，故平均不改变 causal factorization 已固定的部分。有限和保持 scaling upper bound，其 wavefront set 包含于各项 wavefront sets 的并；使用群不变的允许 cone 即保留所需界。Contact/field identities 是本阶 coefficients 的线性关系，有限平均保留它们。Unitarity 也没有要求平均非线性函数：固定低阶后，
+$$
+T_{R,k}^*-(-1)^{k+1}T_{R,k}
+=B_k(T_{R,1},\ldots,T_{R,k-1}),
+$$
+右侧只含至少两个 proper vertex blocks 的低阶 products。它是对本阶未知量的实 affine-linear 条件，群保持右侧且与 $*$ 相容，故实平均保留此关系。这里的 $*$ 包含对输入 labels 的共轭。这种固定低阶后处理 symmetry/unitarity 的做法与 [Hollands–Wald, §3.1](https://arxiv.org/html/gr-qc/0111108#S3.SS1) 的归纳步骤相同；上述独立-slot 下降则由本引理另证。
+
+所有 lifted diagonals 的 transports 保持时间，共同时间无关的 subtraction 和预先固定的 classical tree terms 均被保留。由下降引理，$\overline t_k$ 唯一下降到 quotient；归纳继续到所有有限阶。若插入 labels 不同，平均作用于随置换一起运输的整组 coefficients，不能只平均一个固定 label 的单独分量。此证明保留已指定且相容的 normalization，不声称群平均能消去另外的 Ward anomaly，也不能用它平均两套已经完成的 $T_R$ families 后自动保留非线性 causal factorization。
+
+相同 quotient 局域规则在 sewn/global 两侧分别实施。固定有限 $n$ 的形式理论允许其 power counting 所需的局域 counterterm labels；本文不声称任意 $n$ 只需有限个 renormalization parameters。
 
 自由 kernel 的 Hadamard/normal-topology 输入已在 [Q0, §4.1] 核查。各 chart 的 graph extension 是 smooth-spacetime 问题；kernel stationary，故 §2 的总时间 covector 证明仍给 $\mathcal P_\mu$ 值域。时间保持的 Klein transition 不改变 causal orientation，smooth chart changes 和 density factors 保持所需 wavefront 条件。因而 §§3、4 的 off-shell/contact-term 和 image-generated interacting algebra 定义适用于这一明确模型。
 
@@ -377,7 +433,7 @@ $$\begin{align}
 | 先独立量子化各 interacting region，再粘合 | 未证明；不能由已经使用 transparent response 的 presentation 推出 |
 | 强耦合实际 quantum theory、形式级数收敛 | 未证明；经典强耦合能量界不证明这些命题 |
 
-**Verified:** 以上 interval 模型的 off-shell/contact-term 修补、Møller 符号、polynomial insertion construction、两个 intertwining identities、exact parameter quotient 和独立 global isomorphism；§2.1 在声明的 smooth torus/Klein matched domains 与共同 scheme 下的 extension/comparison 证明。Mathematica 检查 Feynman 接触项符号、有序 Green identity 和 $\phi^n$ normalization；本轮 [Q0] 的 11 组检查包括 reflection density、jets、kernel normalization 和 finite Wick covariance。一般 graph/分布延拓论证在正文，不是符号程序的结论。
+**Verified:** 以上 interval 模型的 off-shell/contact-term 修补、Møller 符号、polynomial insertion construction、两个 intertwining identities、exact parameter quotient 和独立 global isomorphism；§2.1 在声明的 smooth torus/Klein matched domains 与共同 scheme 下的 extension/comparison 证明，包括逐槽 distribution descent、全部 lifted diagonals 与固定低阶后的 affine averaging。Mathematica 检查 Feynman 接触项符号、有序 Green identity 和 $\phi^n$ normalization；本轮 [Q0] 的 11 组检查包括 reflection density、jets、kernel normalization 和 finite Wick covariance。一般 graph/分布延拓论证在正文，不是符号程序的结论。
 
 **Assumptions:** 原定理采用 [Q0] 的静态 scalar interval、固定有限 $n$、compact-time smooth switching、外端附近 $g=0$、cut 全 jets matching、early free strip；局域 polynomial insertions 的支撑避开真正物理边界；共同 Wick、Epstein–Glaser extension 和 finite-normalization choices，以及同一个 classical tree normalization。§2.1 单独采用 $m>0$ smooth flat torus/Klein、完整 corner charts/test-density topology 和 orientation-reversal-compatible scheme；真实 history mismatch 解释另需相容域上的 splitting/transpose 定理。
 

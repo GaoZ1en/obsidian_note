@@ -54,15 +54,15 @@ $$\begin{align}
 
 这里 $\mathcal F_i^{\mathrm{adm}}$ 为预先指定的区域 field class，$\gamma_i$ 是所有所需边界数据的 joint trace，$\mathcal B_i$ 使用其 trace/quotient topology；$\mathfrak D_i$ 保留 initial-history 与 corner compatibility。共同域要求 $q_{\bar s}=J_sq_s$ 及其诱导的 corner 条件。矩形的固定时刻 energy trace 是 $\gamma H^1(R)=H^{1/2}(\partial R)$，严格小于四个 $H^{1/2}(F_s)$ 的乘积；smooth class 则保留区域 corner jets 和 sewing 坐标变换下的 jet matching。[Joint trace norm](https://jschoeberl.github.io/iFEM/domaindecomposition/traces.html) 的跨面项不能省略；有限能量场没有可任意指定的顶点点值。
 
-完整 action variation 定义 response covector $\lambda_i$，包含实际 action 产生的 face 与 lower-stratum 项，而 release 定义为
+完整 action variation 定义 response covector $\lambda_i(d_i)\in T^*_{\mathrm{reg},q_i}\mathcal B_i$，$d_i=(\xi_i^-,q_i)\in\mathfrak D_i$。它是 history cotangent 的 pullback section；总空间上的 semibasic form 为 $\Lambda_i(v)=\lambda_i(d_i)[D\pi_{q_i}v]$，不假定只依赖 $q_i$。包含实际 action 产生的 face 与 lower-stratum 项后，release 定义为
 
 $$\begin{align}
 \left.\delta S_i^{\mathrm{full}}\right|_{\mathrm{on\ shell}}
-&=\Theta_i^+-\Theta_i^-+\lambda_i,
+&=\Theta_i^+-\Theta_i^-+\Lambda_i,
 & \iota_{\mathrm{sew}}^*\!\left(\sum_i\lambda_i\right)&=0.
 \end{align}$$
 
-两者均在 admissible variations 上取值。无额外界面作用量、光滑 seam 内部的自由 tests 给通常的 $\Pi_s+J_s^*\Pi_{\bar s}=0$；它不是丢弃 corner compatibility 后的定义。普通一阶 scalar action 不自动产生独立 corner canonical pair。选用光滑商度量还是 conic/Friedrichs domain 也属于模型输入，不由 scalar algebra 自行决定。
+两者均在 admissible variations 上取值；第二式是在每个区域解处对 covectors 作 fiberwise pullback。$\lambda_i$ 已分离完整 temporal CPS terms，不能把仅对 compact-time tests 成立的弱积分未经端点补偿用到全 history tangent；矩形的延拓及 release/form 等价证明见 [rectangle §§5.1–5.2](<models/rectangle scalar self-gluing.md>)。无额外界面作用量、光滑 seam 内部的自由 tests 给通常的 $\Pi_s+J_s^*\Pi_{\bar s}=0$；它不是丢弃 corner compatibility 后的定义。普通一阶 scalar action 不自动产生独立 corner canonical pair。选用光滑商度量还是 conic/Friedrichs domain 也属于模型输入，不由 scalar algebra 自行决定。
 
 ## 2. 静态线性理论的 Observable Labels
 

@@ -304,6 +304,8 @@ W_Q(z,z')
 
 此处 $\kappa$ 保持时间，kernel 按 quotient volume density 归一化，故不是再乘 $1/2$ 的 averaged kernel：归一化 cover invariant modes 限制到 quotient 后乘 $\sqrt2$。这些是同一个正算子的 kernels；cover 只用于证明 kernel 性质，不是 sewing 的定义。
 
+写作 cover 上的分布时，等式左边准确指 $(\pi\times\pi)^*W_Q$。Cover kernel 的 simultaneous deck invariance 与右边的两项和使该和在任一 slot 单独作用 $\kappa$ 时均不变，所以具有真正的双点下降。$W_{\widetilde T}$ 单独的 simultaneous invariance 不足以替代它。相应 quotient contact kernel 的提升为 $\delta_{\Delta_{\widetilde Q}}+\delta_{\Delta_\kappa}$，两项同样各带系数 $1$。一般多点下降及全部 lifted diagonal 上的 extension 证明见 [interacting quantum note, §2.1](<phin renormalized quantum observable algebra gluing.md>)。
+
 取保持 $\kappa$ 的有限 spectral sums，它们是实际 smooth sewn bisolutions。在每个 flat chart 的 compact 上，§2 的 Fourier-tail 估计改成二维 lattice sum：系数为 $O((1+|k|)^{-1})$，cutoff Fourier transforms 快速衰减。在与 §2 的 $\Lambda$ 不交的闭锥上有下式，其中 $\Lambda$ 采用 $2+1$ 维的 future/past covectors，仍要求两个时间 covectors 之和为零：
 
 $$\begin{align}

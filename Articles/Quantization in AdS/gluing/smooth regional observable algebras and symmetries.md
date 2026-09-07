@@ -157,13 +157,15 @@ Z_{K,\mathrm{hist}}&=Z_{K,\mathrm{hist}}^{\mathrm{rep}}/N_K.
 
 **条件闭合定理。** 若 $Z_K$ 的支撑族对有限并和 smooth differentiation 封闭，$\mathsf P:Z_K\to TY$ 连续、常系数、$\beta$-skew，并把等价类送到合法 tangent directions，则 (3) 对乘法、有限 smooth calculus 与 $\{F,G\}_{\mathsf P}$ 封闭。证明在这个真实 chart 上对 $dF=\beta(U_F,\cdot)$ 求导；常 $\beta$ 给 Hessian symmetry，(5) 给实际 $Z_{K_F\cup K_G}$-valued gradient，六个 Hessian 项仍逐对抵消。代表元改变 $A\mapsto A+n$，$n\in N_K$，不改变 pairing，而 $\mathsf P$ 在 quotient 上 well defined 保证不改变 bracket。若兼容域或 pairing 随背景变化，必须保留相应 derivative terms，不能逐字套常系数证明。
 
-**条件 sewing 定理。** 用 side occurrences $s,\bar s$ 配对，允许两侧属于同一区域；每份 action 与 regional algebra 只计一次。共同-history inclusion $\iota_{\mathrm{sew}}$ 作用于这些 joint trace spaces。完整 action response $\lambda_i$ 通过
+**条件 sewing 定理。** 用 side occurrences $s,\bar s$ 配对，允许两侧属于同一区域；每份 action 与 regional algebra 只计一次。共同-history inclusion $\iota_{\mathrm{sew}}$ 作用于这些 joint trace spaces。完整 action response $\lambda_i$ 的释放方程为
 
 $$\begin{align}
 \iota_{\mathrm{sew}}^*\!\left(\sum_i\lambda_i\right)=0
 \end{align}$$
 
-释放；$\lambda_i$ 保留 action 实际产生的 lower-stratum terms，不能由几何 corner 自动添加 canonical pairs。若共同-history 代入保持上述 regular-dual 类，并且作用量导出的线性 $\mathsf R,\mathsf B$ 与双向 transposes 在该类上连续、保持固定支撑，且 $\mathsf B\mathsf R=1$，则 §5.3 的 (12)–(14) 在这些实际空间上给 exact quotient onto $\mathcal H(X_{\mathrm{sew}})$。所有 maps 及背景求导须保持同一 regular-covector 和 admissible tangent 类。证明的核心是完整 chain rule 与每个 $G$ 的实际 extension $G\circ\mathsf B$；若声明从独立 regional families 出发，还须另证 $\iota_{\mathrm{sew}}^*$ 的全类 extension。非线性 cut 须使用 [classical gluing formalism](<classical_gluing_formalism.md>) 的背景依赖 operator 与完整梯度公式。
+此处 $\lambda_i(d_i)\in T^*_{\mathrm{reg},q_i}\mathcal B_i$ 仍依赖初值/区域解；它属于 $\pi_{q_i}^*T^*_{\mathrm{reg}}\mathcal B_i$ 的 section，式中是在给定解处取 fiberwise pullback。用于 $dS_{\mathrm{on}}$ 与 CPS balance 的是一形式 $\Lambda_i(v)=\lambda_i(d_i)[D\pi_{q_i}v]$。先分离完整 temporal potentials；compact-time weak response 的存在不能自动给整个 history tangent 上的同一公式，矩形的端点补偿与双向 release/form 证明见 [rectangle §§5.1–5.2](<models/rectangle scalar self-gluing.md>)。
+
+$\lambda_i$ 保留 action 实际产生的 lower-stratum terms，不能由几何 corner 自动添加 canonical pairs。若共同-history 代入保持上述 regular-dual 类，并且作用量导出的线性 $\mathsf R,\mathsf B$ 与双向 transposes 在该类上连续、保持固定支撑，且 $\mathsf B\mathsf R=1$，则 §5.3 的 (12)–(14) 在这些实际空间上给 exact quotient onto $\mathcal H(X_{\mathrm{sew}})$。所有 maps 及背景求导须保持同一 regular-covector 和 admissible tangent 类。证明的核心是完整 chain rule 与每个 $G$ 的实际 extension $G\circ\mathsf B$；若声明从独立 regional families 出发，还须另证 $\iota_{\mathrm{sew}}^*$ 的全类 extension。非线性 cut 须使用 [classical gluing formalism](<classical_gluing_formalism.md>) 的背景依赖 operator 与完整梯度公式。
 
 因此 corners 不否定 (2) 的 Hamiltonian 定义或上述有条件的 closure/reconstruction 证明；它们改变了这些证明必须使用的域、协向量和解析输入。矩形 finite-energy histories 的存在及弱 response，即使已构造，也没有证明 (10) 的 smooth-gradient transposes、(14) 的全类 extension、(7) 的 corner-local functional membership，或整个 finite-loss/graph completion 的移植。
 

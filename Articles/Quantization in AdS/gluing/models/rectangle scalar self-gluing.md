@@ -314,17 +314,101 @@ $$
 $$
 且对 $(z_0,z_1,q)$ 的 solution/transport map 连续线性，因而在这些 Banach spaces 上 smooth。此处 $q$ 是整个边界的一个元素，不允许独立指定不相容的角点边值。固定 $q$ 后，初始 variations 为 $H_0^1(R)\oplus L^2(R)$，其 $\int_R\delta p\wedge\delta\phi$ 连续且弱非退化，故可以按 $\mathcal H(P[q])$ 定义这个具体 regional algebra。
 
-对 $\eta\in C_c^\infty(I^\circ;\mathcal B_R^{\mathrm{sp}})$，定义完整弱响应
+**弱响应与时间端点。** 先对 $\eta\in C_c^\infty(I^\circ;\mathcal B_R^{\mathrm{sp}})$ 定义弱响应
 $$
 \lambda_\phi[\eta]
 =\int_I\left(\langle p,E\dot\eta\rangle_{L^2}
 -\mathfrak a_R(\phi,E\eta)\right)\,dt .
 $$
-由 $E$ 的有界性，该 functional 对 $\eta$ 的一阶时间 seminorm 连续，并连续线性依赖区域数据。换用另一有界 lift 时，两种 test extensions 的差属于 $C_c^\infty(I^\circ;H_0^1(R))$，区域弱 KG 方程使上式之差为零。因此响应与辅助 lift 无关；若存在 classical normal trace，则它正是 $\int_{I\times\partial R}(-\partial_n\phi)\eta$。
+这里 $\mathfrak a_R$ 的同一积分表达作用于 $H^1(R)\times H^1(R)$，不要求此时已匹配。全 history space 为 $\mathcal B_R=C^2(I;\mathcal B_R^{\mathrm{sp}})$。在其全部 tangent directions 上，分离 temporal CPS potentials 后的响应是
+$$
+\boxed{\lambda_\phi^{\mathrm{bdry}}[\eta]
+=\int_I\left(\langle p,E\dot\eta\rangle_{L^2}
+-\mathfrak a_R(\phi,E\eta)\right)\,dt
+-\left[\langle p,E\eta\rangle_{L^2}\right]_{t_i}^{t_f}.}
+$$
+它在 compact-time tests 上限制为 $\lambda_\phi$；非零时间端点时不能省略最后一项。取 $m=0$、$\phi=t$ 与空间常数 $\eta(t)$，真实法向响应为零，但未补偿积分为 $|R|[\eta]_{t_i}^{t_f}$。端点补偿恰好消去它；此项来自 $\Theta_R$，没有新增 spatial-corner canonical pair。
 
-自粘合时，把全部配对和 corner compatibility 记入共同 history inclusion $\iota_{\mathrm{sew}}$，释放定义为 $\iota_{\mathrm{sew}}^*\lambda_\phi=0$。这给出了一个实际的 history space、区域 evolution 和弱 response；没有使用四条独立边的 formal cotangent product。
+**时间 Green identity。** 令 $V_0=H_0^1(R)$、$H=L^2(R)$。区域弱方程给
+$$
+p\in C(I;H),\qquad
+\dot p\in C(I;V_0'),\qquad
+\langle\dot p,w\rangle_{V_0',V_0}=-\mathfrak a_R(\phi,w).
+$$
+因此对 $w\in C(I;V_0)\cap C^1(I;H)$，
+$$
+\int_I\left(\langle p,\dot w\rangle_H-\mathfrak a_R(\phi,w)\right)\,dt
+=\left[\langle p,w\rangle_H\right]_{t_i}^{t_f}.
+$$
+这里的分部积分不要求 $p$ 有空间 trace。具体可将 $w$ 投影到 $A_D$ 的前 $N$ 个特征向量：投影在 $V_0,H$ 上一致有界，分别在 $C(I;V_0)$ 与 $C^1(I;H)$ 中收敛。每个标量系数 $(p,e_j)$ 的导数由弱方程给出，故有限和满足上式；连续配对、有限时间区间及端点的 $H$ 收敛允许取极限。这是能量域的 Green identity 证明，不是把有限模检查当作 PDE 定理。
+
+若 $E'$ 是另一有界线性 trace right inverse，在比较同一解 $\phi$ 时令 $w=(E'-E)\eta\in C^2(I;V_0)$。上式表明两个未补偿积分的差恰为 $[(p,w)]_{t_i}^{t_f}$，被各自的端点项消去。因此 $\lambda_\phi^{\mathrm{bdry}}$ 与 lift 无关。所有端点配对只用 $p(t_\pm)\in L^2$ 与 $E\eta(t_\pm)\in H^1\subset L^2$。
+
+由 $E$ 有界与 Cauchy–Schwarz，
+$$
+\begin{split}
+|\lambda_\phi^{\mathrm{bdry}}[\eta]|
+\le C_{E,m}\bigl(&\|p\|_{C(I;L^2)}\|\dot\eta\|_{L^1(I;\mathcal B_R^{\mathrm{sp}})}
++\|\phi\|_{C(I;H^1)}\|\eta\|_{L^1(I;\mathcal B_R^{\mathrm{sp}})}\\
+&+\|p\|_{C(I;L^2)}
+(\|\eta(t_i)\|_{\mathcal B_R^{\mathrm{sp}}}+\|\eta(t_f)\|_{\mathcal B_R^{\mathrm{sp}}})\bigr).
+\end{split}
+$$
+故它甚至在 $C^1(I;\mathcal B_R^{\mathrm{sp}})$ 上连续，对区域数据 $(z_0,z_1,q)$ 连续线性。限制到 $T_q\mathcal B_R$ 后得到 smooth pullback-cotangent section；其 base 为 $q$，系数仍依赖整个区域解。
+
+对 $h\in C(I;H^1(R))\cap C^1(I;L^2(R))$ 且 $\eta=\gamma h\in\mathcal B_R$ 的允许 variation，分解 $h=(h-E\eta)+E\eta$ 并将时间 Green identity 用于第一项，得到
+$$
+\left.\delta S_R[h]\right|_{\mathrm{regional\ solution}}
+=\left[(p,h)\right]_{t_i}^{t_f}+\lambda_\phi^{\mathrm{bdry}}[\gamma h].
+$$
+这证明该公式恰是分离完整 $\Theta_R(t_f)-\Theta_R(t_i)$ 后的 response。若解光滑到边界，空间 Green identity 再给
+$$
+\lambda_\phi^{\mathrm{bdry}}[\eta]
+=\int_{I\times\partial R}(-\partial_n\phi)\eta .
+$$
+因此能量定义保留第 2 节的 outward sign；弱域中仍不将它认同为逐面 smooth density。
+
+自粘合时，把全部配对和 corner compatibility 记入共同 history inclusion $\iota_{\mathrm{sew}}$。Compact-time release 使用 $\iota_{\mathrm{sew}}^*\lambda_\phi=0$；全 history tangent 的 release 使用 $\iota_{\mathrm{sew}}^*\lambda_\phi^{\mathrm{bdry}}=0$。下面证明两者在本声明域中等价。
 
 此实现的 $C^2$ 时间控制是声明的域，不涵盖所有能量解的任意连续 boundary history；第 5 节的闭二次型构造才处理完整能量 Cauchy space。所有 sewn smooth-vector 解的 traces 属于此 $C^2$ 域。弱响应属于 joint-history distributional dual，不能因此声称它是旧 family 定理要求的 smooth face density，也没有由此构造该定理的 $B,DR^\flat,B^\flat$。
+
+### 5.2 Release 与闭型弱方程的双向等价
+
+从同一区域 joint trace 空间定义闭子空间
+$$
+\mathcal B_{\mathrm{sew}}^{\mathrm{sp}}
+=\{q\in\mathcal B_R^{\mathrm{sp}}:q_{e'}=Jq_e\text{ 对全部配边成立}\}.
+$$
+由 $\gamma E=1$，
+$$
+\gamma V_{\mathrm{sew}}=\mathcal B_{\mathrm{sew}}^{\mathrm{sp}},\qquad
+E\mathcal B_{\mathrm{sew}}^{\mathrm{sp}}\subset V_{\mathrm{sew}},\qquad
+h=(h-E\gamma h)+E\gamma h,\quad h-E\gamma h\in V_0.
+$$
+特别地，此分解连续，完全由区域 trace/lift 给出。
+
+**命题。** 对 §5.1 构造的区域能量解，若 $q\in C^2(I;\mathcal B_{\mathrm{sew}}^{\mathrm{sp}})$，下列三项等价：
+
+1. 对每个 $\eta\in C_c^\infty(I^\circ;\mathcal B_{\mathrm{sew}}^{\mathrm{sp}})$，$\lambda_\phi[\eta]=0$。
+2. $\phi\in C(I;V_{\mathrm{sew}})\cap C^1(I;H)$ 满足
+   $$
+   \int_I\left[(p,\dot h)_H-\mathfrak a_R(\phi,h)\right]dt=0
+   \quad\text{对所有 }h\in C_c^\infty(I^\circ;V_{\mathrm{sew}}).
+   $$
+3. 对每个 $\eta\in C^2(I;\mathcal B_{\mathrm{sew}}^{\mathrm{sp}})$，$\lambda_\phi^{\mathrm{bdry}}[\eta]=0$。
+
+**证明。** $q$ 匹配已经保证 $\phi(t)\in V_{\mathrm{sew}}$。给定第 2 项的 test $h$，分解为 $h-E\gamma h$ 与 $E\gamma h$；前者的弱积分由区域方程为零，后者由第 1 项为零，故 $1\Rightarrow2$。反向取 $h=E\eta$ 得 $2\Rightarrow1$。
+
+第 2 项给 $\dot p=-\mathfrak a_R(\phi,\cdot)\in C(I;V_{\mathrm{sew}}')$。在 Gelfand triple $V_{\mathrm{sew}}\subset H\subset V_{\mathrm{sew}}'$ 中，§5.1 的时间 Green argument 同样成立；此时可用 $1+A_{\mathrm{sew}}$ 的谱投影，其 form norm 与 $H^1$ norm 等价，包含 $m=0$ 的零模。令 $h=E\eta\in C^2(I;V_{\mathrm{sew}})$ 即得补偿后的 response 为零，所以 $2\Rightarrow3$；限制到 compact-time tests 得 $3\Rightarrow1$。$\square$
+
+第 2 项恰是第 5 节自伴算子 $A_{\mathrm{sew}}$ 的 form wave equation，能量唯一性把该解识别为先前的谱演化。反过来，任一该谱演化的能量解，只要 $q=\gamma\phi$ 属于上述 $C^2$ 类，就以
+$$
+z_0=\phi(t_i)-Eq(t_i)\in H_0^1(R),\qquad
+z_1=p(t_i)-E\dot q(t_i)\in L^2(R)
+$$
+进入 §5.1 的区域构造；Dirichlet 能量唯一性给同一解。故 regional controls 加 release 与 closed-form evolution 在其共同的 $C^2$-trace 子类上双向对应，再由 $U$ 对应独立 global evolution。
+
+这也证明 compact-time release 足以在本模型中恢复允许非零时间端点的完整响应抵消，因而可用于总 CPS balance。证明依赖弱方程和时间 Green identity，未使用 compact-time tests 在 $C^2(I;\mathcal B_R^{\mathrm{sp}})$ 中稠密这一错误说法。它不把任意连续 energy history 升级为 $C^2$，也不提供全 history-family algebra 的 regular section/transposes。
 
 ## 6. 可观测代数与粘合顺序
 
@@ -391,7 +475,7 @@ $$
 
 - **Verified:** Sage 完整穷举 12 种配对，检查每个顶点 link、整数 chain complex/homology、orientation、Euler 数和全部角亏损；Mathematica 的 19 组 exact checks 检查 off-shell variation、能量散度、CPS 符号、反射能量、Klein 群关系、sphere 相邻边 collar、双反向不动点、21 个复模的 transmission/eigenvalue 和低阶 seam 反例。输入与实际输出见 [Sage](<../numerics/rectangle_self_sewing_checks.sage>)、[Mathematica](<../numerics/rectangle_self_sewing_checks.wl>)、[results](<../numerics/rectangle_self_sewing_results.json>)。
 - **Assumptions:** 自由普通实 scalar；$m^2\geq0$；time-independent whole-edge pairing；固定平直 cell；等距配对；无边/点作用量；cones 取 Friedrichs 域；algebra 精确性限于第 6 节声明的 Hamiltonian class 和 CCR core。
-- **Proved analytically here:** 指定等距模型的闭型与能量重构、smooth-vector CPS/algebra comparison、保留所有约束时的配对次序独立；这些依赖标准 trace patching、闭型表示和谱定理，有限符号检查不证明它们。
+- **Proved analytically here:** 指定等距模型的闭型与能量重构、§5.1 的 endpoint-separated response、能量域时间 Green identity 与 lift independence、§5.2 在 $C^2$-trace 子类中的三项等价、smooth-vector CPS/algebra comparison、保留所有约束时的配对次序独立；这些依赖标准 trace patching、闭型表示和谱定理，有限符号检查不证明它们。
 - **Not verified / open:** 超出 §5.1 的任意 prescribed histories 光滑矩形 IBVP 与旧 smooth-density 类的全部 response derivatives；比 matched-space algebra 更强的 ambient history-family quotient/section；其他点扩张与非等距 seams；cone 的 Wick/renormalized sewing；含 gravity 的 topology restriction。
 
 当前模型把“corner 怎么配”落实为 link、角度、transition jets、joint history dual 与 closed form domain。§5.1 已给一个实际的 $C^2$ history/弱 response 实现；进一步把它接到全 smooth history-family quotient，仍须构造所需的 regular section/transposes。这一更强目标不混入已经完成的能量与 CCR benchmark。

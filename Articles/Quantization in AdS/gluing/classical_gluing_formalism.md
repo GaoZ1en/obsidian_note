@@ -102,7 +102,17 @@ $$\begin{align}
 +\lambda_i[\delta q_i]+\Theta_i(t_+)-\Theta_i(t_-).
 \end{align}$$
 
-This equation defines the full response one-form $\displaystyle{\lambda_i}$ on admissible history variations. The complete temporal potentials $\displaystyle{\Theta_i}$ retain their corner terms. Where a face/stratum density presentation exists, write
+This equation defines the response covector after separating the complete temporal potentials $\displaystyle{\Theta_i}$, including their corner terms. On the solution/control domain let $\displaystyle{\pi_{q_i}:\mathfrak D_i\to\mathcal B_i}$ be the history projection. The precise on-shell type and its associated one-form are
+
+$$\begin{align}
+\lambda_i&\in\Gamma\!\left(\pi_{q_i}^*T^*_{\mathrm{reg}}\mathcal B_i\right),&
+\Lambda_i|_{d_i}(v)&=\lambda_i(d_i)\!\left[D\pi_{q_i}(d_i)v\right],
+\qquad d_i=(\xi_i^-,q_i).
+\end{align}$$
+
+Here $\displaystyle{T^*_{\mathrm{reg}}}$ denotes the explicitly chosen continuous/regular covectors, not an automatically available full Fréchet cotangent bundle. If only a smaller trace tangent range is available, covector representatives are identified modulo its annihilator. The form $\displaystyle{\Lambda_i}$ is semibasic: it vanishes when $\displaystyle{D\pi_{q_i}v=0}$. It need not descend to a one-form on $\displaystyle{\mathcal B_i}$, since $\displaystyle{\lambda_i(d_i)}$ generally depends on the initial data as well as the history. Consequently its exterior derivative below is taken on $\displaystyle{\mathfrak D_i}$ and retains mixed initial-data/history derivatives.
+
+An energy-space Green identity tested only on compact-time variations initially defines only that restricted response. To use nonzero temporal-endpoint variations one must establish an endpoint-separated extension; the temporal CPS term cannot be included again in $\displaystyle{\lambda_i}$. The rectangle construction and its lift-independent extension are proved in [rectangle §5.1](<models/rectangle scalar self-gluing.md>). Where a face/stratum density presentation exists, write
 
 $$\begin{align}
 \lambda_i[\delta q_i]
@@ -161,13 +171,13 @@ This is the complete regional action evaluated on the unique solution selected b
 Its variation is
 
 $$\begin{align}
-\delta S_{i,\mathrm{on}} =\Theta_i(t_+)-\Theta_i(t_-)+\lambda_i.
+\delta S_{i,\mathrm{on}} =\Theta_i(t_+)-\Theta_i(t_-)+\Lambda_i.
 \end{align}$$
 
 Writing $\displaystyle{\Omega_i^\pm=\delta\Theta_i(t_\pm)}$, another field-space variation gives the regional symplectic balance law
 
 $$\begin{align}
-\Omega_i^+-\Omega_i^-=-\delta\lambda_i,
+\Omega_i^+-\Omega_i^-=-\delta\Lambda_i,
 \end{align}$$
 
 so the regional input-output relation is exact isotropic, with $\displaystyle{S_{i,\mathrm{on}}}$ as its generating functional.
@@ -184,7 +194,14 @@ $$\begin{align}
 \qquad q_{\bar s}=J_sq_s.
 \end{align}$$
 
-Use the admissible variation directions of this domain, with endpoint data controlled by the chosen variational principle. Each region enters the sum of actions once, even when both sides of a seam belong to that region. On regional solutions the released interface variation is
+Use the admissible variation directions of this domain, with endpoint data controlled by the chosen variational principle. At a tuple of regional solutions $\displaystyle{d=(d_i)_i}$ with histories $\displaystyle{\iota_{\mathrm{sew}}(q)}$, the notation below means the fiberwise cotangent pullback
+
+$$\begin{align}
+\left(\iota_{\mathrm{sew}}^*\sum_i\lambda_i\right)_d[\eta]
+:=\sum_i\lambda_i(d_i)\!\left[D(\operatorname{pr}_i\circ\iota_{\mathrm{sew}})(q)\eta\right].
+\end{align}$$
+
+It is not a de Rham pullback of a response already defined on history space alone. Each region enters the sum of actions once, even when both sides of a seam belong to that region. On regional solutions the released interface variation is
 
 $$\begin{align}
 \delta\!\left(\sum_iS_i^{\mathrm{full}}\right)_{\mathrm{interface}}
@@ -198,7 +215,7 @@ $$\begin{align}
 \iota_{\mathrm{sew}}^*\!\left(\sum_i\lambda_i\right)=0.\quad}
 \end{align}$$
 
-The second equation means zero as a covector on all admissible common-history variations, not zero for every component of an ambient facewise dual. On a smooth seam interior, when compactly supported variations there are freely available and no additional interface action is present, it reduces to
+The second equation means zero as a covector on all admissible common-history variations, not zero for every component of an ambient facewise dual. Compact-time stationarity first gives this equation on compact-time tests. If later phase-space variations have nonzero temporal endpoints, one must prove that the endpoint-separated response also vanishes on their traces; this is proved in rectangle §5.2, and is part of the full-response hypothesis in the general reconstruction theorem. On a smooth seam interior, when compactly supported variations there are freely available and no additional interface action is present, it reduces to
 
 $$\begin{align}
 q_{\bar s}=J_sq_s,\qquad \Pi_s+J_s^*\Pi_{\bar s}=0.
@@ -266,10 +283,10 @@ Assume this locus has the smooth structure used for variations. Pullback commute
 
 $$\begin{align}
 \left.\sum_i(\Omega_i^+-\Omega_i^-)\right|_{\mathcal C}
-=-\delta\left[\left.\sum_i\lambda_i\right|_{\mathcal C}\right]=0.
+=-\delta\left[\left.\sum_i\Lambda_i\right|_{\mathcal C}\right]=0.
 \end{align}$$
 
-This uses the zero full response one-form on the matching locus; it includes the variation of the history inclusion when that inclusion is nonlinear. On smooth face interiors with fixed linear identifications, the familiar component calculation is
+Indeed, the trace of every tangent vector to $\displaystyle{\mathcal C}$ is an admissible common-history tangent, so the released covector annihilates it and $\displaystyle{\left.\sum_i\Lambda_i\right|_{\mathcal C}=0}$. Pullback then commutes with the exterior derivative. This uses the full endpoint-separated response on that tangent class; it includes the initial-data dependence and the variation of the history inclusion when that inclusion is nonlinear. On smooth face interiors with fixed linear identifications, the familiar component calculation is
 
 $$\begin{align}
 \delta\Pi_s\wedge\delta q_s +\delta\Pi_{\bar s}\wedge\delta q_{\bar s} &=(\delta\Pi_s+J_s^*\delta\Pi_{\bar s}) \wedge\delta q_s\\

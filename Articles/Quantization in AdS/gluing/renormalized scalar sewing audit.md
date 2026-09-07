@@ -274,8 +274,8 @@ H_r\star_WH_s=H_rH_s+\hbar H_{r+s}.
 | [classical regional observable algebra gluing](<classical regional observable algebra gluing.md>) | 明确原 interval proofs 的范围，加入 corner-aware definition/reconstruction 输入，保留有限 Sobolev-loss 与 exact-on-to 的原证明边界。 |
 | [smooth regional observable algebras and symmetries](<smooth regional observable algebras and symmetries.md>) | 切向 Hamiltonian fields、联合 covector 域、corner response 与 symmetry/extension 条件。 |
 | [Q0](<free scalar renormalized quantum observable algebra gluing.md>) | 实际 matched test/dual spaces；massive smooth torus/Klein Wick/equicausal theorem、normal-topology ideal proof；cone CCR 与 genuine corner insertions 的边界。 |
-| [Qn](<phin renormalized quantum observable algebra gluing.md>) | smooth corner atlas 上的 density/insertion/renormalization 数据、deck-equivariant extension 与 exact interacting comparison；不从能量定理推断 singular-stratum renormalization。 |
-| [rectangle model](<models/rectangle scalar self-gluing.md>) | 具体 joint-history harmonic-lift/energy IVP 与 lift-independent weak response；切向 observable 反例；CCR proof 与更强 family theorem 的明确区分。 |
+| [Qn](<phin renormalized quantum observable algebra gluing.md>) | smooth corner atlas 上的 density/insertion/renormalization 数据、独立-slot deck descent 与逐阶 extension、exact interacting comparison；不从能量定理推断 singular-stratum renormalization。 |
+| [rectangle model](<models/rectangle scalar self-gluing.md>) | 具体 joint-history harmonic-lift/energy IVP、endpoint-separated lift-independent response 及 release/form 双向证明；切向 observable 反例；CCR proof 与更强 family theorem 的明确区分。 |
 
 本轮没有改写 archived/deprecated formulations，也未把上述 scalar 结果推广成一般 gauge/gravity corner theorem。
 
@@ -287,11 +287,11 @@ H_r\star_WH_s=H_rH_s+\hbar H_{r+s}.
 | 在真实弱辛 $P$ 上，以切向 Hamiltonian field 定义 $\mathcal H(P)$ | **Proved under the declared smooth weak-symplectic hypotheses.** Lie bracket/Cartan proof 保留全部域条件。 |
 | 只令每条开边 flux 匹配就足以处理任意 corner | **False as a general reconstruction assertion.** 必须保留 joint-domain、完整 lower-stratum response、几何和 operator-domain 输入。 |
 | 完整 release | **Proved variational identity.** 在允许共同 variations 上，总 response 的 pullback 为零；每份区域 action 只计一次。 |
-| 矩形 $C^2(I;H^{1/2}(\partial R))$ 控制的区域 energy IVP 与弱 response | **Proved in rectangle §5.1.** Harmonic lift、Dirichlet Duhamel/energy estimate 与弱 Green identity；不是任意连续 history 的光滑 IBVP。 |
+| 矩形 $C^2(I;H^{1/2}(\partial R))$ 控制的区域 energy IVP 与弱 response | **Proved in rectangle §§5.1–5.2.** Harmonic lift、能量域时间 Green identity、全端点 response 及与 sewn form wave equation 的双向等价；不是任意连续 history 的光滑 IBVP。 |
 | 矩形 smooth-vector Hamiltonian 与 CCR 比较 | **Proved in the specified model.** 闭型重构、实际 graph-domain unitary、双向 algebra maps。 |
 | 完整 independent regional history-family quotient | **Conditional.** 还需 common-history extension（若使用该中间 source）、$B,DR^\flat,B^\flat$ 和全部 corner/regular-dual/support 保持性。弱响应的存在不提供这些条件。 |
 | Massive smooth torus/Klein 的 free Wick/equicausal 比较 | **Proved in Q0 §4.1.** Smooth quotient charts、正谱、normal-topology finite-bisolution approximation 和双向 test/dual maps；包含原 corners 的 neighborhoods。 |
-| Smooth torus/Klein 的 interacting comparison | **Proved with declared coherent renormalization data.** Qn §2.1 的局域 extension 与 chart/deck compatibility；formal insertion-generated algebra 的逐生成子逆像。 |
+| Smooth torus/Klein 的 interacting comparison | **Proved with declared coherent renormalization data.** Qn §2.1 的 quotient-atlas construction、$G^k$ 多点下降、全部 lifted diagonals 与固定低阶后的 affine averaging；formal insertion-generated algebra 的逐生成子逆像。 |
 | Cone/Friedrichs energy 或 CCR 同构推出 cone Wick/renormalized sewing | **Not established.** 需实际 singular kernel、distribution/test domain 和 extension 输入；不把缺少输入称为普遍 no-go。 |
 
 ### 12.3 独立审查与复核
@@ -316,3 +316,17 @@ H_r\star_WH_s=H_rH_s+\hbar H_{r+s}.
 - 最终修订后的七份证明笔记 Pandoc-to-LaTeX parsing 无警告，相对链接、公式环境与 whitespace 检查通过；本审计新增 §12 的链接与解析也通过。历史 §§1–11 中原有的导入源文件链接未纳入本轮修订。
 
 **Assumptions:** 每份定理明列的几何/trace/operator domain、smooth chart、完整 action、regular covector maps、实际 quantum label class 和 coherent renormalization rule。**Not verified:** 未列入本轮 scope 的任意 corner IBVP、完整 rectangular smooth-density family extension、genuine cone/corner renormalization、一般 gauge/gravity corner theorem。
+
+### 12.5 后续 adversarial audit 的证明补充（2026-09-07）
+
+根目录 [corner_adversarial_audit.md](<../../../corner_adversarial_audit.md>) 审查提交 0f1e3618402f07fabed86dbcf5d8eb35d83b85de，另指出两项 P2 和一个可补成显式引理的 proof junction。本节记录对其具体问题的补充，不以该报告的判定或 §12.3 的历史复审结论代替证明。
+
+1. **Response typing 与时间端点。** Classical formalism 的 Regional Action and Dynamics 及 observable formalism §§1–2 区分 $\lambda_i\in\Gamma(\pi_{q_i}^*T^*_{\mathrm{reg}}\mathcal B_i)$ 与总空间 semibasic form $\Lambda_i$；on-shell variation 和 CPS balance 使用 $\Lambda_i$ 的完整 exterior derivative。Rectangle §5.1 给出减去 $[(p,E\eta)]_{t_i}^{t_f}$ 的响应、连续性估计与能量域 Green proof，证明它对全部 $C^2$ histories 定义且与 lift 无关。$\phi=t$ 的反例说明原 compact-test 公式不能直接延用到非零端点。
+2. **Release/form 双向桥梁。** Rectangle §5.2 用 $h=(h-E\gamma h)+E\gamma h$ 证明 compact-time release、sewn form wave equation、全端点 release 三项等价；能量唯一性给与独立 closed-form evolution 的双向对应，准确限于 $C^2$-trace 子类。没有假定 compact-time tests 在全 $C^2$ topology 中稠密。
+3. **Klein 多点下降与重整化归纳。** Qn §2.1 构造 $\mathcal D'(Q^k)\cong\mathcal D'(\widetilde Q^k)^{G^k}$ 的实际 inverse，保留全部 lifted contact diagonals 及其 normalization；再于固定低阶的 affine extension space 中平均，逐项核查 restriction、causal factorization、scaling/WF bounds、contact normalization 和 unitarity。Q0 §4.1 同步解释两项 kernel 的独立-slot invariance。
+
+**Verified:** 上述解析证明已写入对应正文；另行执行 [Mathematica](<numerics/corner_audit_supplement_checks.wl>) 的 13 组有限恒等式与 [Sage](<numerics/corner_audit_supplement_checks.sage>) 的 17 组有限群/normalization checks，30 组全部通过，实际输出见 [结果](<numerics/corner_audit_supplement_results.json>)。这些是端点反例、outward sign、lift cancellation、deck descent 条件及 unitarity 本阶系数（1–6 阶）的有限核验，不证明无限维 PDE 或分布延拓存在性。
+
+**Assumptions:** Rectangle 保持原能量域、$C^2$ joint histories 和指定 Friedrichs operator；Qn 保持 $m>0$ smooth torus/Klein、quotient kernels、合法 off-shell labels 及相容的局域 extension/contact/tree prescription。
+
+**Not verified:** 全矩形 independent history-family 的 $B,DR^\flat,B^\flat$、regular-dual/support 保持性及 independent-to-common extension；genuine cone 的 Wick/equicausal 或 interacting theory。这些仍保留原来的 conditional/open 等级。
