@@ -16,6 +16,7 @@ This project studies how independently defined regional observable algebras comp
 ## Scalar Observable Algebra
 
 - [Rectangle scalar self-gluing](<models/rectangle scalar self-gluing.md>): twelve whole-edge pairings, corner links/angles, a concrete joint-history harmonic-lift and weak-response domain, exact energy/Friedrichs and CCR comparison, and geometric versus Cauchy-topology no-go statements.
+- [Self-sewing topology and orientation](<self-sewing topology and orientation.md>): arbitrary compact surface presentations, orientable and nonorientable topology, links, metric and bundle descent, and the obstruction for ordinary chiral CS on nonorientable spaces.
 - [Classical gluing formalism](<classical_gluing_formalism.md>): joint trace spaces, self-seams, full face/corner response release, tangent Hamiltonian algebras, and exact Poisson reconstruction under explicit chart/extension hypotheses.
 - [Observable algebra gluing formalism](<observable algebra gluing formalism.md>): corner-aware classical/quantum definitions and proof inputs, independent/common-history source distinction, CCR versus Wick/renormalized reconstruction, gauge reduction and finite composition.
 - [Free renormalized quantum sewing](<free scalar renormalized quantum observable algebra gluing.md>): interval and massive smooth torus/Klein Wick/equicausal comparison on actual matched test domains, with cone CCR kept separate.
@@ -24,6 +25,8 @@ This project studies how independently defined regional observable algebras comp
 
 ## Gauge Benchmark
 
-- [1+1 Yang–Mills classical observable algebra gluing](<models/1+1 Yang-Mills classical observable algebra gluing.md>): continuum action to framed cotangent phase space, full smooth observable algebras, diagonal cut reduction, crossing Wilson lines, electric insertions, exact global dynamics, and finite associativity.
-- [1+1 Yang–Mills quantum observable algebra gluing](<models/1+1 Yang-Mills quantum observable algebra gluing.md>): holonomy–flux Rees core, explicit invariant-operator kernel and section, exact quantum reduction and classical specialization, Casimir/history intertwining, and a specified finite-time dynamical algebra with two no-go results.
+- [1+1 Yang–Mills classical observable algebra gluing](<models/1+1 Yang-Mills classical observable algebra gluing.md>): continuum action to framed cotangent phase space, full smooth interval sewing, and SU(2) circle self-sewing with all singular strata and a full smooth invariant quotient.
+- [1+1 Yang–Mills quantum observable algebra gluing](<models/1+1 Yang-Mills quantum observable algebra gluing.md>): interval holonomy–flux Rees sewing and its dynamical scope; SU(2) circle restriction with a principal moment-Casimir kernel, independent global radial image, classical specialization, and the Haar/Casimir Hamiltonian domain.
+- [U(1) Chern–Simons disk and open-chord sewing](<models/U(1) Chern-Simons disk and open-chord sewing.md>): complete regional actions, joint gauge/history endpoints, exact smooth current-algebra and polynomial/Weyl sewing, physical chiral evolution and three-cell associativity.
+- [YM circle and CS corner verification](<numerics/ym circle and CS corner verification.md>): executed symbolic checks and the separate scope of the functional, invariant-theory and operator-domain proofs.
 - [Current imported-draft audit](<../../../01_commit_audit_and_repairs.md>): the three September 6 drafts, repaired proof inputs and Noether flux, with links to the reproducible checks.

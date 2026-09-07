@@ -603,10 +603,94 @@ $$
 
 因此 endpoint framing／fixed-source policy 是可观测对象的定义输入，不是证明末尾可以任意补选的 convention。
 
-## 12. 核验范围
+## 12. $SU(2)$ interval-to-circle 自粘合
+
+本节改变外端 policy：把同一个长度 $\ell$ 的 interval 的两端识别，并释放共同 frame。Action 只使用一次；共同 $q=A_t(a)=A_t(b)$ 的 response 为 $J_a+J_b$，因此
+$$
+\mu_{\circlearrowleft}=\operatorname{Ad}_Up-p,
+\qquad
+k:(U,p)\mapsto(kUk^{-1},\operatorname{Ad}_kp).
+$$
+从独立的圆周 continuum theory 定义 global object：周期 smooth $(A_x,E)$ 满足 Gauss law，除去全部 smooth periodic gauge transformations，再以其局部 smooth invariant observables 定义约化 differential structure。Holonomy 与平行 electric field 给
+$$
+\mathcal P_{S^1}=\mu_{\circlearrowleft}^{-1}(0)/SU(2).
+$$
+逆向构造可选从 $1$ 到 $U$、在两端平坦的 path $u$；$A=-u'u^{-1}$ 在切口两侧为零，$E=-upu^{-1}$ 因 $\operatorname{Ad}_Up=p$ 而周期光滑。相同 holonomy/conjugate momentum 的周期代表之间，transporters 给周期 gauge transformation。局部 holonomy sections 给与有限维约化一致的 quotient charts。这证明此目标来自圆周 theory；没有用随后 algebra map 的像定义它。
+
+### 12.1 全部 strata 与 smooth observable quotient
+
+取 $T_j=i\sigma_j/2$、$\langle X,Y\rangle=-2\operatorname{tr}(XY)$。写
+$$
+U=x1+i\boldsymbol y\cdot\boldsymbol\sigma,
+\quad x^2+|\boldsymbol y|^2=1,
+\quad p=\sum_jp_jT_j.
+$$
+约束等价于 $\boldsymbol y\times\boldsymbol p=0$。同时对角化给
+$$
+\boxed{\mathcal P_{S^1}\cong(T\times\mathfrak t)/W,
+\quad (\theta,\varpi)\sim(-\theta,-\varpi),\quad W=\mathbb Z_2.}
+$$
+这里 $\theta\in\mathbb R/2\pi\mathbb Z$，$U=e^{i\theta\sigma_3}$，$p=(\varpi/2)T_3$，故 $\Theta=\varpi\,d\theta$。该参数化对非中心 $U$ 来自其唯一 maximal torus；中心 $U$ 时再对角化 $p$。唯一残余识别仍是 Weyl 反射。
+
+除 $(U,p)=(1,0),(-1,0)$ 外，stabilizer 共轭于 $U(1)$；这两点的 stabilizer 是整个 $SU(2)$，且 $D\mu=0$。它们是零维 symplectic strata，其余为二维 stratum。在 $U=\pm1,p\ne0$ 处仍属于二维 stratum。这里的奇点来自 gauge reduction，不是时空中的 spatial corner；目标不是普通 $T^*[0,\pi]$。
+
+用全局 invariants
+$$
+x=\tfrac12\operatorname{tr}U,
+\qquad v=2\boldsymbol y\cdot\boldsymbol p,
+\qquad w=4|\boldsymbol p|^2
+$$
+描述全部约化点：
+$$
+x=\cos\theta,\quad v=\sin\theta\,\varpi,\quad w=\varpi^2,
+\qquad
+\boxed{|x|\le1,\quad w\ge0,\quad v^2=(1-x^2)w.}
+$$
+此映射是 proper 的轨道分离映射，给 quotient topology。定义域的 smooth structure 是限制 smooth functions 的结构，不能把每个 stratum 上独立光滑的函数都纳入。
+
+**全 smooth 满射。** 任意 $f\in C^\infty(T\times\mathbb R)^W$ 先从嵌入圆柱 $x^2+s^2=1$ 作 tubular extension，再对 $(s,\varpi)\mapsto(-s,-\varpi)$ 平均。该有限群的 polynomial invariants 为 $x,s^2,s\varpi,\varpi^2$。[Schwarz 的 smooth invariant theorem](https://doi.org/10.1016/0040-9383(75)90036-1) 于是给实际 smooth $F$，使
+$$
+f(\theta,\varpi)=F(\cos\theta,\sin\theta\,\varpi,\varpi^2).
+$$
+把同一个 $F$ 作用于 ambient $(x,v,w)$，得到 $C^\infty(T^*SU(2))^{SU(2)}$ 中的全局 extension。因此
+$$
+\boxed{
+\frac{C^\infty(T^*SU(2))^{SU(2)}}
+{I(\mu_{\circlearrowleft}^{-1}(0))\cap C^\infty(T^*SU(2))^{SU(2)}}
+\cong C^\infty(T\times\mathbb R)^W.}
+$$
+Kernel 恰为 constraint locus 上消失的 invariant functions。Invariant Hamiltonian flows 保持 moment level，故 kernel 为 Poisson ideal。正则部分上 potential 的直接 pullback 给 Poisson 同构；两端零维 strata 上的延拓由 ambient smooth structure 固定。没有使用自由作用、全局 gauge slice 或仅在 $0<\theta<\pi$ 的局部 argument。
+
+### 12.2 Polynomial core 与动力学
+
+对两个三维向量，$SO(3)$ invariant polynomials 由 Gram entries 生成；没有第三个向量产生独立 determinant invariant。消去 $|\boldsymbol y|^2=1-x^2$ 后，ambient invariant polynomial ring 是 $\mathbb C[x,v,w]$。约束后的 ring 是
+$$
+\boxed{\mathscr P_{S^1}
+=\mathbb C[x,v,w]/\big((1-x^2)w-v^2\big).}
+$$
+严格核的计算也可在 $x=\cos\theta,v=\sin\theta\varpi,w=\varpi^2$ 上作：反射不变 monomials 由这三个量生成，唯一 relation 为上式；其不可约性排除额外分量或仅在 regular locus 的定义。真实点集还保留前述不等式，polynomial ring 不替代 full smooth algebra。
+
+由 $\{\theta,\varpi\}=1$ 得
+$$
+\{x,v\}=x^2-1,\qquad
+\{x,w\}=-2v,\qquad
+\{v,w\}=2xw,
+\qquad H_{S^1}=\frac{e^2\ell}{8}w.
+$$
+这些公式在两个 singular points 也有定义。实际演化为
+$$
+\varpi(t)=\varpi_0,\qquad
+\theta(t)=\theta_0+\frac{e^2\ell}{4}t\varpi_0
+\quad\bmod 2\pi,
+$$
+与 Weyl identification 相容。带共同 $q$ 的 interval Hamiltonian 是 $H-\langle\mu_{\circlearrowleft},q\rangle$；约化后 $q$ 只改变 gauge representative。量子 kernel、全局 image 与由 Haar/Casimir 固定的 operator domain 见 [quantum note §11](<1+1 Yang-Mills quantum observable algebra gluing.md>)。
+
+## 13. 核验范围
 
 **Verified:** continuum Gauss quotient 的双向 maps、约化 potential 与 symplectic form、全部 smooth observables 的 kernel/image/section、Wilson/electric insertion sewing、真实 global dynamics 和有限 reduction by stages 均在正文给出证明。[Mathematica 检查](<../numerics/observable_sewing_ym_audit_checks.wl>) 的 [23 组结果](<../numerics/observable_sewing_ym_audit_results.json>) 同时包含本模型与一般 split bracket 的有限恒等式。
 
 **Assumptions:** 正文的 pure 1+1 YM、紧连通单连通群、正定 Ad-invariant pairing、smooth connections、保留真实端点 frames、外端 A_t=0、无 matter/interface charge。
 
 **Not verified:** 本文只证明 classical algebra sewing；没有把全部 smooth observables 量子化，也不将这个有限维约化推广为高维 YM 或 CS 的定理。一般群的结论来自正文 Ad-invariance、Gauss ODE 和实际 inverse maps，不由 SU(2) 的有限检查外推。
+
+**Verified (circle):** §12 给 continuum reconstruction、全 strata、smooth extension 与 Poisson quotient；[新增检查](<../numerics/ym_circle_cs_corner_checks.wl>) 核对径向 brackets，[Sage 检查](<../numerics/ym_circle_self_sewing_topology_checks.sage>) 核对 polynomial elimination。**Assumptions:** circle 部分专取上述 $SU(2)$、全 periodic gauge quotient、零 moment、无带电插入，smooth extension 使用已声明的 Schwarz theorem。**Not verified:** 此处没有把 circle 结论外推到任意紧群的 singular reduction。

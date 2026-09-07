@@ -473,7 +473,7 @@ $$
 $$
 Finite-time words 随之满足同样的 comparison。外端 group actions 与所有内部 cut reductions 对易，故 endpoint covariance 保留。若保留额外 marked interior frames，得到相应 finite-marked observable system；释放这些 frames 时仍须先形成 joint invariant contractions。
 
-此有限 cut theorem 不包含 circle 自粘合。Circle 的 conjugation action 有 stabilizers，不能再使用本节的自由 vertical group coordinates。
+此有限 cut theorem 本身不包含 circle 自粘合。Circle 的 conjugation action 有 stabilizers，不能再使用本节的自由 vertical group coordinates；$SU(2)$ 的独立计算见第 11 节。
 
 ## 10. Haar compression 的 no-go 与证明范围
 
@@ -488,4 +488,157 @@ $$
 
 **Assumptions:** 本文 action、外端 framing、proper based quotient、无 charged matter/interface action、紧连通单连通 $G$、正定 invariant pairing；选定 representative/polynomial Rees class、Casimir ordering、normalized Haar realization；actual dynamical algebra 使用正文指定的共同 Peter–Weyl domain 和 joint-invariant generators。
 
-**Not verified:** 全 $C^\infty(T^*G)$ 的量子化、任意 charged multitime regional envelope 的 invariant algebra、所有 spacetime curves 的 Wilson construction、dynamical envelope 的 flat formal deformation、任意 bounded completion、circle singular quantum reduction、高维 YM、CS、无限 refinement。这里已约化为有限维 $T^*G$ 后的 finite differential products 不需 scalar Epstein–Glaser extension；这不证明 continuum gauge quantization 与 proper-gauge reduction 交换，也不排除另外的量子化 prescription。
+**Not verified:** 全 $C^\infty(T^*G)$ 的量子化、任意 charged multitime regional envelope 的 invariant algebra、所有 spacetime curves 的 Wilson construction、dynamical envelope 的 flat formal deformation、任意 bounded completion、一般群的 circle singular quantum reduction、高维 YM、CS、无限 refinement。这里已约化为有限维 $T^*G$ 后的 finite differential products 不需 scalar Epstein–Glaser extension；这不证明 continuum gauge quantization 与 proper-gauge reduction 交换，也不排除另外的量子化 prescription。
+
+## 11. $SU(2)$ circle 的全局 quantum reduction
+
+使用 [classical note §12](<1+1 Yang-Mills classical observable algebra gluing.md>) 的圆周模型与 normalization $C_2(j)=j(j+1)$。自粘合只释放同一个 interval 的共同端点 frame；其量子约束为
+$$
+\widehat\mu_j=-i\hbar(R_{T_j}-L_{T_j}),\qquad
+\mathscr A_\hbar=\mathscr D_{SU(2),\hbar}^{\operatorname{Ad}SU(2)},
+\qquad
+\rho_\hbar:\mathscr A_\hbar\longrightarrow
+\operatorname{End}_{\mathbb C[\hbar]}(\mathbb C[x][\hbar]).
+$$
+这里 $x=\tfrac{1}{2}\operatorname{tr}U$，$\mathscr R(SU(2))^{SU(2)}=\mathbb C[x]$，$\rho$ 是在 class functions 上的实际 restriction。下一步独立给出 target 与完整 kernel；不把 $\operatorname{im}\rho$ 当作 target 的定义。
+
+### 11.1 独立的 torus algebra 与 Weyl-denominator representation
+
+在 $T=S^1$ 上取 Laurent coefficients、$P=-i\hbar\partial_\theta$，定义其 differential Rees algebra $\mathscr D_{T,\hbar}$。Weyl 作用是
+$$
+\theta\mapsto-\theta,\qquad P\mapsto-P.
+$$
+独立定义
+$$
+\mathscr B_\hbar=\mathscr D_{T,\hbar}^W.
+$$
+它作用于 anti-invariant Laurent polynomials。设 $s=\sin\theta$，则
+$$
+\mathbb C[e^{i\theta},e^{-i\theta}]^{-W}=s\,\mathbb C[x].
+$$
+因为每个反不变 monomial 是 $z^n-z^{-n}$，可被 $z-z^{-1}$ 整除。于是
+$$
+\boxed{\mathscr B_\hbar^{\mathrm{class}}
+=\{s^{-1}Bs:B\in\mathscr B_\hbar\}
+\subset\operatorname{End}(\mathbb C[x][\hbar])}
+$$
+是一个全局定义的 class-function algebra。$s^{-1}$ 只表示上述整除映射，未在 $\theta=0,\pi$ 删除点或允许任意 poles。它是对圆周 classical target $(T\times\mathfrak t)/W$ 的固定 Rees prescription，附带从原 $SU(2)$ Haar 理论选择的 anti-invariant realization。
+
+与文献对照时须运输 conventions：[Ginzburg §1.1, (1.2)–(1.4)](https://arxiv.org/html/2103.13594#S1.SS1) 使用 dot Weyl action 和 $\delta=\prod_{\alpha>0}(e^{-\alpha}-1)$。对 $SL_2$，再共轭 $e^\rho$ 后 $e^\rho\delta$ 是 $s$ 的非零常数倍，才得到这里的 ordinary Weyl action。下述 rank-one kernel 与 filtration 另外直接证明，不把未分级的文献同构自动升级为 Rees flatness。
+
+### 11.2 生成元、全局 image 与严格 kernel
+
+在 source 中定义
+$$
+X=M_x,\qquad K=4\sum_j\widehat p_j^2,
+\qquad W=K+\hbar^2,
+\qquad V=\frac{[K,X]}{2i\hbar},
+\qquad Z=\sum_j\widehat\mu_j^2.
+$$
+Commutator 可在 Rees algebra 内被 $\hbar$ 整除，故 $V$ 的定义没有 localization。$W$ 的移位用来表示径向 algebra generator；物理 Hamiltonian 仍是 $e^2\ell K/8$。
+
+在 class functions 上，先作 $s$ 共轭，得到
+$$
+\begin{aligned}
+\mathcal R_\hbar(X)&=\cos\theta,\\
+\mathcal R_\hbar(V)&=\tfrac12(sP+Ps)
+=-i\hbar(s\partial_\theta+x/2),\\
+\mathcal R_\hbar(W)&=P^2.
+\end{aligned}
+$$
+这是普通 Weyl 不变的三个全局 finite-order operators。其 symbols 是
+$$
+x=\cos\theta,\qquad v=s\varpi,\qquad w=\varpi^2,
+\qquad F=(1-x^2)w-v^2.
+$$
+
+**Symbol 与 filtered-generation 引理。** 在 source，compact averaging 与 differential-order filtration 交换。两个 $SO(3)$ 向量的 Gram invariant calculation 给
+$$
+\operatorname{gr}_{\mathrm{ord}}\mathscr A
+=\mathbb C[x,v,w],\qquad \deg(x,v,w)=(0,1,2).
+$$
+右端的三个 symbols 分别由 $X,V,W$ lift。逐 differential order 消去最高 symbol，证明它们生成全部 invariant differential operators。相同论证对 Laurent monomials 的 Weyl invariants 给
+$$
+\operatorname{gr}_{\mathrm{ord}}\mathscr B
+=\mathbb C[x,v,w]/(F).
+$$
+这里可直接看 monomials：偶数 momentum degree 的 Weyl invariants 使用 $z^n+z^{-n}$，它是 $x$ 的 polynomial；奇数 degree 使用 $z^n-z^{-n}$，除以 $z-z^{-1}$ 后也是 $x$ 的 polynomial。因此目标 symbols 由 $x,v,w$ 生成且只有 relation $F$。目标的三个同名 operators 因而生成整个 $\mathscr B_\hbar$。每一步保留 coefficients 中的 $\hbar$ 多项式，且 lower-order terms 具有相应 $\hbar$ 因子；所以这是 filtered/Rees 满射，并未通过除以 $\hbar$ 才取得 onto。
+
+**全局 moment-Casimir 恒等式。** 在 source 中有
+$$
+\boxed{
+Z=(1-X^2)W-V^2-2i\hbar XV
++\hbar^2\left(\tfrac12+\tfrac14X^2\right).}
+$$
+其 symbol 是 $\|\mu\|^2=F$。直接用 $L,R$ 算子展开即可核对；这是全部二阶 differential coefficients 的恒等式，不只是 character eigenvalue 检查。$Z$ 与整个 $\mathscr A_\hbar$ 对易，因为每个 invariant operator 都与全部 $\widehat\mu_j$ 对易。右式经过径向映射为零。
+
+**Kernel 证明。** 若 invariant $D$ 消去全部 class polynomials，在 $-1<x<1$ 上以这些 polynomials 检测任意有限阶 transverse jet，其最高 symbol 在 commuting locus 上消失。Gram invariant ring 中这个 locus 的理想是不可约多项式 $(F)$；故最高 symbol 是 $F b$。用上一引理把 invariant $b$ lift 为 $B$，减去 $ZB$，严格降低 differential order。反复操作，零阶剩余只能为零。对 $\hbar$ 多项式逐系数实行同一消去；全过程不除 $\hbar$。因此
+$$
+\ker\rho_\hbar=(Z)\subset\mathscr A_\hbar.
+$$
+令 $\mathscr L=\sum_j\mathscr D_{SU(2),\hbar}\widehat\mu_j$。它消去 class functions，而 $Z\in\mathscr L$，所以两边夹逼给
+$$
+\boxed{
+\ker\rho_\hbar
+=\mathscr A_\hbar\cap\mathscr L
+=(Z),\qquad
+\mathscr A_\hbar/(Z)\xrightarrow{\cong}\mathscr B_\hbar^{\mathrm{class}}.}
+$$
+目标 algebra 的 onto 是三个生成元的显式 lifts，加上 filtered induction。Kernel 的证明覆盖 Weyl divisor；没有从 regular-torus 公式推断 singular points 可忽略。$\mathscr L$ 仍只是 raw algebra 的左理想，$(Z)$ 才是 invariant algebra 内的 two-sided $*$-ideal。
+
+### 11.3 Relations、involution 与 classical specialization
+
+在 quotient 中，同名 $X,V,W$ 满足
+$$
+\begin{aligned}
+[X,V]&=i\hbar(X^2-1),\\
+[X,W]&=-2i\hbar V,\\
+[V,W]&=i\hbar(XW+WX-\hbar^2X/2),\\
+(1-X^2)W-V^2-2i\hbar XV
++\hbar^2(\tfrac12+X^2/4)&=0.
+\end{aligned}
+$$
+$X,V,W$ 都为 formal self-adjoint；class realization 用 Haar weight，torus anti-invariant realization 用 flat measure，$s$ 共轭运输二者的 $*$。这个结论关于共同 polynomial domain，不宣称任意 symmetric word 都 essentially self-adjoint。
+
+Rees construction 与 finite Weyl averaging 给
+$$
+\boxed{
+(\mathscr A_\hbar/(Z))/\hbar(\mathscr A_\hbar/(Z))
+\cong\mathbb C[x,v,w]/(F)=\mathscr P_{S^1}.}
+$$
+特别地 $(Z)$ 对 $\hbar$ saturated：商同构于 torsion-free $\mathscr B_\hbar$。$[\ ,\ ]/(i\hbar)$ 在 $\hbar=0$ 恢复 classical note §12 的三个 brackets。这里证明的是指定 polynomial Rees core 的 quantization/reduction compatibility；它不量子化整个 singular smooth algebra。
+
+### 11.4 实际 Hamiltonian domain 由原理论固定
+
+固定 $\hbar>0$。独立的圆周 Hilbert realization 是 $L^2(SU(2))^{\operatorname{Ad}SU(2)}$，由 Weyl integration 得
+$$
+\mathcal H_{S^1}
+=L^2\left([0,\pi],\frac2\pi\sin^2\theta\,d\theta\right).
+$$
+Class functions 的完整 orthonormal character basis 为
+$$
+\chi_{n/2}(\theta)=\frac{\sin((n+1)\theta)}{\sin\theta},\qquad n=0,1,\ldots.
+$$
+原 interval Casimir restriction 是
+$$
+\widehat H_{S^1}
+=-\frac{e^2\ell\hbar^2}{8}
+(\partial_\theta^2+2\cot\theta\,\partial_\theta).
+$$
+Unitary map $\mathcal{J}f=\sqrt{2/\pi}\sin\theta\,f$ 把它变为
+$$
+\boxed{
+\mathcal J\widehat H_{S^1}\mathcal J^{-1}
+=-\frac{e^2\ell\hbar^2}{8}(\partial_\theta^2+1),
+\qquad
+\mathcal D=H^2(0,\pi)\cap H_0^1(0,\pi).}
+$$
+证明不是只比较几个 eigenvalues：完整 characters 被 $\mathcal J$ 送到完整正弦基，有限 span 上 Casimir 非负且 essentially self-adjoint；closure 的 graph norm 要求 $\sum_{n\ge0}[n(n+2)]^2|c_n|^2<\infty$，正好是所列 Dirichlet domain。能量为
+$$
+E_j=\frac{e^2\ell\hbar^2}{2}j(j+1).
+$$
+常数 character 的能量仍为零。径向式中的常数项来自 Haar/Casimir 运输，不是另选的 quantum shift。$\theta=0,\pi$ 是 conjugacy-space singular endpoints；任意另选 Robin/self-adjoint extension 会改变原圆周 YM，不能称为同一个 sewing。
+
+共同 history Hamiltonian $\widehat H[q]=\widehat H-\widehat\mu(q)$ 与 Casimir 对易；在每个 finite Peter–Weyl block 中其 propagator 是 Casimir phase 乘 conjugation transport。在 class block 后者为恒等，故 restriction 与全部实际时间的 Casimir evolution intertwine。Character finite span 被三个径向 core generators 及演化保持为共同 domain；每个算符的 finite-time conjugate 仍可在此域定义，但一般不再是 finite-order differential operator。仍须保留第 8 节的 dynamical-envelope 范围区分。
+
+**Verified:** 全局 rank-one invariant-symbol/kernel/image 证明、moment-Casimir identity、Rees specialization 和完整谱域论证如上；[Mathematica](<../numerics/ym_circle_cs_corner_checks.wl>) 与 [Sage](<../numerics/ym_circle_self_sewing_topology_checks.sage>) 核验可计算恒等式及 elimination，结果见 [verification record](<../numerics/ym circle and CS corner verification.md>)。**Assumptions:** $SU(2)$、全部 periodic gauge quotient、零 moment、原 Casimir ordering、representative/polynomial coefficients 与有限 order，smooth classical extension 使用 classical note 的明确 theorem 输入。**Not verified:** 任意紧群的此项 kernel 证明、全 smooth quantum algebra、任意 charged multitime invariants、vertex insertions、任意 operator completion 或完整 continuum quantize-before-proper-reduction。

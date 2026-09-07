@@ -64,11 +64,17 @@ It is quotiented before regional quantization. Its infinitesimal directions are 
 
 ### Boundary-Frame Group
 
-The interface frame group is
+Let $\mathcal G_i^{\mathrm{allow}}$ be regional gauge transformations in the declared field regularity, equal to $1$ on the fixed physical outer boundary. The interface frame group is the actual trace image
 
 $$\begin{align}
-\mathcal G_\Gamma:=\operatorname{Map}(\Gamma,G).
+\mathcal G_{\Gamma,i}^{\mathrm{adm}}
+:=\operatorname{Tr}_{\Gamma_i}\mathcal G_i^{\mathrm{allow}}
+\cong\mathcal G_i^{\mathrm{allow}}/\mathcal G_i^0.
 \end{align}$$
+
+Use its quotient/trace topology. With several incident faces, take the **joint** trace before projecting to any one face. Field histories, gauge parameters and transition functions all belong to their respective joint images. Writing this group as $\operatorname{Map}(\Gamma,G)$ is justified only after proving the relevant extension statement.
+
+For an open seam ending at a fixed physical boundary vertex $v$, continuity forces $k(v)=1$. For a disk and $G=U(1)$, a seam path with both endpoints $1$ must additionally have zero winding when closed by the constant outer-boundary path; otherwise it does not extend over the disk. In the smooth, transverse-corner model its unique real lift satisfies $\kappa(P)=\kappa(Q)=0$. For general regularity, retain the joint-image definition rather than adding undefined point values. Independent corner frames would change the declared variables and action; they are not an extension of a forbidden bulk gauge transformation.
 
 A regional transformation with nontrivial interface value changes
 
@@ -92,7 +98,7 @@ $$\begin{align}
 
 ## Non-Abelian Transition-Function Sewing
 
-Let the two interface frames be related by $h:\Gamma\to G$, with the convention
+Let the two interface frames be related by an admissible bundle transition $h:\Gamma\to G$, with its joint corner/cocycle data fixed, and use the convention
 
 $$\begin{align}
 \boxed{a_2=h^{-1}a_1h+h^{-1}\mathrm d_\Gamma h=:a_1^h.}
@@ -182,7 +188,7 @@ The two are compatible by the Gauss/Noether identity. They coincide in the compa
 
 ## Conditional Classical Reconstruction Statements
 
-Let $\widehat{\mathcal P}_i$ denote regional solution data after quotienting only $\mathcal G_i^0$, with the chosen fixed-history polarization and trace class. There are two distinct presentations. Write $\mathcal G_{\Gamma,i}$ for the copy of $\operatorname{Map}(\Gamma,G)$ acting in the $i$-th regional frame.
+Let $\widehat{\mathcal P}_i$ denote regional solution data after quotienting only $\mathcal G_i^0$, with the chosen fixed-history polarization and trace class. There are two distinct presentations. Write $\mathcal G_{\Gamma,i}$ for the admissible trace image $\mathcal G_{\Gamma,i}^{\mathrm{adm}}$ acting in the $i$-th regional frame.
 
 ### Fixed-$h$ Sewing Chart
 
@@ -217,6 +223,7 @@ Suppose:
 3. the Green-dual traces and corner representatives are compatible and the summed action is exactly the restriction of the connected action;
 4. matched piecewise weak solutions satisfy a transmission/regularity and reconstruction theorem giving a unique connected solution modulo global proper gauge;
 5. the residual twisted-diagonal action has a regular moment-map locus and a smooth, or otherwise explicitly controlled, quotient.
+6. every twisted-diagonal trace used in this quotient extends to an allowed global proper transformation, and every allowed global transformation restricts to this group; joint corner conditions and bundle sectors are included in this assertion.
 
 Only under these hypotheses do restriction and assembly give the conditional identification
 
@@ -250,7 +257,7 @@ $$\begin{align}
 
 under the same IBVP, descent, regularity, reconstruction, and regular-quotient hypotheses, now applied to the extended action. This is chart redundancy/descent data; it does not automatically add a physical edge oscillator. In symplectic language the $h$-dependent canonical/corner term displayed above is part of $\widetilde{\mathcal C}_G$ and cannot be discarded before quotienting.
 
-On every frame-change orbit for which the slice $h=h_0$ is reachable with the declared corner conditions, its stabilizer is exactly $\mathcal G_{\Gamma,h_0}$. Consequently the two presentations are related by the slice isomorphism
+On every frame-change orbit for which the slice $h=h_0$ is reachable with the declared corner conditions, its stabilizer inside the admissible product group is exactly $\mathcal G_{\Gamma,h_0}$. Under hypothesis 6 this is also the released global proper group. Consequently the two presentations are related by the slice isomorphism
 
 $$\begin{align}
 \widetilde{\mathcal C}_G/ (\mathcal G_{\Gamma,1}\times\mathcal G_{\Gamma,2}) \simeq \mathcal C_{G,h_0}/\mathcal G_{\Gamma,h_0}.
@@ -270,7 +277,7 @@ In particular, the full connection transmission condition, bundle descent, and P
 
 ### Finite Regulator
 
-For a finite spatial interface regulator with $N_S$ sites or cells, the boundary group is the compact finite-dimensional group $G^{N_S}$. Its normalized Haar measure exists. Once the regulated boundary action and constraint representation have been derived, the exact projector is
+For a finite spatial interface regulator with $N_S$ independent free sites or cells after the endpoint/joint admissibility conditions have been imposed, the boundary group is the compact finite-dimensional group $G^{N_S}$. If those conditions leave a subgroup instead, use that actual regulated group. Its normalized Haar measure exists when it is compact. Once the regulated boundary action and constraint representation have been derived, in the product case the exact projector is
 
 $$\begin{align}
 P_{N_S}=\int_{G^{N_S}}\mathrm d\boldsymbol g\, U_{N_S}(\boldsymbol g).
@@ -319,7 +326,7 @@ Also excluded here are charged matter, nontrivial bundle descent beyond the assu
 
 Derived here: the fixed-$h$ non-Abelian variation, the coadjoint oriented-flux equation, the fixed-$h$ twisted-diagonal quotient, the variable-$h$ product-frame quotient with its required corner term, the relation between the two presentations, the three gauge roles, and the distinction between the full timelike transmission relation and the Cauchy-cut Gauss moment map.
 
-Assumptions: compact internal $G$, fixed globally hyperbolic background, fixed physical outer frames, trivializable sewing collar, declared trace polarization, regional and connected well-posedness, constraint propagation, and the reconstruction/quotient hypotheses displayed above.
+Assumptions: compact internal $G$, fixed globally hyperbolic background, fixed physical outer frames, trivializable sewing collar, declared joint trace polarization and gauge-group trace images, regional and connected well-posedness, constraint propagation, and the reconstruction/quotient hypotheses displayed above. The open-seam endpoint and winding restrictions follow from continuity and extension over a disk; they are not consequences of a finite regulator.
 
 Checked in `Yang-Mills 1+1.md`: transition-function covariance, left/right action and orientation, the moment-map sign, reduction to $T^*G$, prescribed-history Hamiltonian covariance, connected Hamiltonian normalization, compact Haar averaging, Peter--Weyl spectrum, and finite three-cell cotangent reduction by stages.
 

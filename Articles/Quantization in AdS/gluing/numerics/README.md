@@ -2,6 +2,7 @@
 
 This directory contains the active symbolic and numerical regressions:
 
+- [ym_circle_cs_corner_checks.wl](<ym_circle_cs_corner_checks.wl>) and [ym_circle_self_sewing_topology_checks.sage](<ym_circle_self_sewing_topology_checks.sage>): 18 Mathematica and 16 Sage checks for the SU(2) circle kernel/radial formulas, CS endpoint and orientation identities, and compact-surface polygon links/homology. [Verification record](<ym circle and CS corner verification.md>) also contains the xAct first-variation residual and the separate proof boundaries.
 - [corner_algebra_checks.wl](<corner_algebra_checks.wl>): 14 exact checks for joint response pullback, annihilator representatives, forbidden corner variations, retained boundary terms, tangent Hamiltonians, the false ordinary Poisson quotient, CCR relations, finite pullback composition, and harmonic history lifting. [Executed output](<corner_algebra_check_results.json>).
 - [corner_classical_checks.wl](<corner_classical_checks.wl>): 8 exact groups for compatible variations/annihilators, joint release, self-action counting, corner trace divergence, Hamiltonian domain failure. [Results](<corner_classical_check_results.json>).
 - [corner_quantum_checks.wl](<corner_quantum_checks.wl>): 11 exact groups for reflection jets/densities, the Klein cover normalization, finite Wick covariance and the massive versus zero-mode distinction. [Results](<corner_quantum_check_results.json>). These algebraic checks do not replace the joint-domain, PDE or microlocal proofs.
