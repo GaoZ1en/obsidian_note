@@ -2,6 +2,10 @@
 
 This directory contains the active symbolic and numerical regressions:
 
+- [phi4_classical_sewing_checks.wl](<phi4_classical_sewing_checks.wl>): 27 groups for the direct constant-coupling classical phi4 note, including regional responses, the actual mismatch section, ordered response inverses, complete first/second field brackets, classical energy work and a finite canonical time-ordering diagnostic. [Verification](<phi4 classical sewing verification.md>) records the coefficientwise proof and its scope.
+
+- [phi4_two_loop_sewing_checks.wl](<phi4_two_loop_sewing_checks.wl>): 38 groups for complete one/two-vertex Wick coefficients, finite image terms, continuum energy/current contacts, the spatial-stress correction and its dressing, regional/global derivative kernels and finite-convention transport. [Verification](<phi4 quantum sewing verification.md>) distinguishes these executed checks from the explicit integral-coefficient sewing and energy proofs through $\lambda^2$ and two loops.
+
 - [cs_ym_analytic_completion_checks.wl](<cs_ym_analytic_completion_checks.wl>) and [cs_ym_analytic_completion_checks.sage](<cs_ym_analytic_completion_checks.sage>): 10 Mathematica and three Sage groups for the annulus pullback threshold, SU(2) corner-domain/null-vector counterexamples, and the YM charged-Casimir factorization (35 finite representation pairs). The actual all-spin, Hilbert-domain and Connes-fusion proofs and primary-source inputs are recorded in the [five-package verification](<CS and YM five work packages verification.md>).
 
 - [cs_ym_five_packages_checks.wl](<cs_ym_five_packages_checks.wl>) and [cs_ym_five_packages_checks.sage](<cs_ym_five_packages_checks.sage>): 26 Mathematica and five Sage checks for the trivalent trace extension, annulus harmonic CPS term, vertex BCH/domain coefficients, non-Abelian CS variation/current signs, and YM dynamical kernels. [Five-package verification](<CS and YM five work packages verification.md>) records one additional xAct variation and distinguishes analytic proofs, prescribed operator realizations and their scope.

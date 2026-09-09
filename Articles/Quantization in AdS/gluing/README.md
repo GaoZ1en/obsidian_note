@@ -13,6 +13,11 @@ This project studies how independently defined regional observable algebras comp
 - `archived/`: superseded formulations, completed audits, and earlier project-state documents retained as history.
 - `deprecated/`: abandoned alternative approaches, old article material, and their historical calculations.
 
+## Explicit Non-Gauge Examples
+
+- [1+1 phi4 classical observable algebra gluing](<models/spacelike regions/non-gauge/1+1 phi4 classical observable algebra gluing.md>): direct constant-coupling regional Poisson construction, interacting history response, mismatch ideal and independent global comparison, with complete field/bracket and stress-energy coefficients through $\lambda^2$.
+- [1+1 phi4 quantum observable algebra gluing](<models/spacelike regions/non-gauge/1+1 phi4 quantum observable algebra gluing.md>): completed coefficientwise matching through coupling order $\lambda^2$ and two loops with stationary interaction, finite image terms, corrected spatial stress, interface current and total stress energy. Independent supplied finite conventions are transported with their insertion contacts; no all-order stress result is claimed.
+
 ## Scalar Observable Algebra
 
 - [Scalar local-structure research route](<scalar local structure research route.md>): action-first milestones from regional response to local CCR, Wick and weakly interacting scalar algebras, with inclusion, causality, time-slice and finite-cutting acceptance criteria.
