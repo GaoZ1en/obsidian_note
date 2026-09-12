@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-12",
+  "source_conversation": "6aa4eafe-2958-83e9-8f8b-d060aaefc371",
+  "files": [
+    {
+      "name": "paper.tex",
+      "sha256": "86b159c1129f2810f0e5ab02b1248edf5c460e3d3c112f4ea068c32a6486a6e1",
+      "bytes": 64337
+    },
+    {
+      "name": "paper.pdf",
+      "sha256": "d402e9a9075bce1a97e3149b7a4b39d2afe113f8c985e93beebd98520d55ee34",
+      "bytes": 453655
+    },
+    {
+      "name": "proof_audit.md",
+      "sha256": "9aef459073a496c2d1f343bbafde123b1c5c1a0d490cafd35d0a60132e43d341",
+      "bytes": 9013
+    },
+    {
+      "name": "closure_note_zh.md",
+      "sha256": "31bf8c1735cab7bf88056f5cd7b3d6078b7f975b1c8da7466083cbf5943d9109",
+      "bytes": 3536
+    }
+  ],
+  "missing_from_delivery": [
+    "verify_collapse.py",
+    "verify_lie_casimir.py",
+    "verify_contact.py",
+    "verify_primary_branch.py",
+    "verify_noncircular.py",
+    "verify_noncircular_mass.py"
+  ],
+  "originals_modified": false
+}

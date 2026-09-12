@@ -1,0 +1,1015 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm,mathrsfs}
+\usepackage[margin=25mm]{geometry}
+\usepackage{microtype,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\hypersetup{pdftitle={The tree-level two-scalar spectrum in global AdS3},pdfsubject={Low-spin completion from local form factors and a crossed Casimir equation}}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{14pt}
+\allowdisplaybreaks[2]
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\AdS}{\mathrm{AdS}}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\Boxop}{\Box}
+\newcommand{\kap}{\kappa}
+\newcommand{\calC}{\mathscr C}
+\newcommand{\calL}{\mathcal L}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\bra}[1]{\langle#1|}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\poch}[2]{(#1)_{#2}}
+\newcommand{\arxiv}[1]{\href{https://arxiv.org/abs/#1}{arXiv:#1}}
+\title{The tree-level two-scalar spectrum in global $\AdS_3$\\[5pt]
+\large Low-spin completion from local form factors and a crossed Casimir equation}
+\author{}
+\date{Research draft, locally audited revision 2 --- 12 September 2026}
+\begin{document}
+\maketitle
+\vspace{-15pt}
+\begin{abstract}
+We derive closed leading gravitational binding coefficients for every radial level and every allowed spin of two identical, minimally coupled real scalars in global $\AdS_3$. The physical one-scalar mass is held fixed; no independent four-scalar contact interaction is included. The known spin-independent high-spin result is completed by explicit spin-zero and spin-two terms. The proof separates crossed exchange from annihilation. Normalized local primary form factors determine the annihilation contribution, which vanishes above spin two. Acting on crossed exchange with the graviton Casimir collapses it to a local interaction and produces a three-term difference equation for its primary coefficients. A positive, explicit $2\times2$ determinant proves that the known high-spin tail and this equation uniquely fix all lower spins. The exchange identity is established with explicit Green currents, vanishing centre and radial fluxes, resonant time endpoints and four-leg normalization. Independent circular data and a directly integrated noncircular matrix element agree with the result. Virasoro Gram projection separates structural boundary-graviton degeneracies from new scalar-primary branches. The energy interpretation assumes no genuine collision with an additional matter primary; the connected tree coefficients remain defined at such parameters. No bare one-particle self-energy or higher-loop correction is computed.
+\end{abstract}
+
+\section{Introduction and scope}
+
+The leading gravitational binding energy of two particles is a dynamical quantity even when the one-particle spectrum has been fixed by a mass-renormalization condition. In global anti-de Sitter space, this distinction can be made directly in canonical perturbation theory: an interacting primary energy is a shifted lowest weight, while its symmetry descendants retain integer level spacings. The use of binding energies to extract anomalous dimensions is developed, for example, in Ref.~\cite{FS}.
+
+For $\AdS_3$ graviton exchange, the high-spin double-trace anomalous dimensions are already known. Inverting crossed-channel stress-tensor exchange gives a result depending on the smaller chiral level, but not on the spin \cite{KSS,CH}. This does not license an unqualified extrapolation to the spins at or below the exchanged spin. Low-spin terms depend on the actual bulk interaction and its contact prescription. The more general need to complete large-spin exchange data at finite spin is illustrated in a different dimension in Ref.~\cite{ABP}; that reference is not a source for the $\AdS_3$ coefficients derived here.
+
+The purpose of this paper is to complete the minimal Einstein--real-scalar answer at spins zero and two, for arbitrary radial excitation. There are two useful structural facts. First, the annihilation-channel stress tensor of a normalized two-scalar primary can be obtained from its value at the centre and the global highest-weight equations. Second, the crossed-channel Casimir equation has a unique low-spin completion once its source and its high-spin tail are specified. Neither statement requires extrapolating a finite table of energies.
+
+We use ``spectrum'' below in the following precise perturbative sense. The computed quantity is the connected tree-level energy-shift operator in the scalar two-particle representation, equivalently the double-trace logarithmic data of the minimal four-scalar exchange amplitude. For a rank-one scalar-primary branch, it is the leading physical binding energy. Structural degeneracies with Virasoro descendants, including physical boundary gravitons, are resolved by the Gram projector and logarithmic-order argument in Section~\ref{sec:branches}; they are not excluded by a generic-mass assumption. Genuine collisions with a different matter primary still require a projected primary mixing matrix. We do not construct that additional matrix. The results are formal, fixed-level perturbation theory around the vacuum orbit, not a nonperturbative Hilbert-space construction.
+
+\section{Theory, canonical normalization, and the result}
+\label{sec:result}
+
+Set the AdS radius to one, choose signature $(-,+,+)$, and write
+\begin{equation}
+ \kap^2=16\pi G,\qquad \mu=m^2=\Delta(\Delta-2),\qquad \Delta>1.
+\end{equation}
+The regulated action and its boundary prescription are
+\begin{align}
+ S_R={}&\frac1{\kap^2}\int_{M_R}\!\sqrt{-g}\,(R+2)
+ -\frac12\int_{M_R}\!\sqrt{-g}\,\bigl((\nabla\phi)^2+\mu\phi^2\bigr)
+ +\frac2{\kap^2}\int_{\Gamma_R}\!\sqrt{-\gamma}\,(K-1).
+ \label{eq:action}
+\end{align}
+We keep a smooth centre, a fixed boundary-cylinder metric, Brown--Henneaux metric falloffs, and the source-free standard scalar condition $\phi=O(r^{-\Delta})$. The boundary time is the global coordinate in
+\begin{equation}
+ \dd s_0^2=-f\dd t^2+\frac{\dd r^2}{f}+r^2\dd\varphi^2,
+ \qquad f=1+r^2,\qquad \varphi\sim\varphi+2\pi.
+\end{equation}
+The boundary action and canonical endpoint terms are retained in taking the covariant phase-space reduction; see Ref.~\cite{HW} for the general boundary framework. There is no independent $O(G)\phi^4$ or higher-derivative four-scalar coupling in \eqref{eq:action}.
+
+All energies are gaps above the interacting vacuum. We define the physical mass by the lowest scalar gap, $E^{(1)}_{00}=\Delta$. AdS symmetry then gives
+\begin{equation}
+ E^{(1)}_{nj}=\Delta+2n+|j|.
+ \label{eq:oneparticle}
+\end{equation}
+This is not a computation of a bare-to-renormalized mass relation. The one-body self-energy and its finite mass counterterm have been absorbed into the specified physical $\Delta$.
+
+Introduce
+\begin{equation}
+ h=\Delta+n,\qquad C=h(h-1),\qquad
+ U_n=4(\mu-2C)=-4\bigl[\Delta^2+2n(2\Delta+n-1)\bigr].
+ \label{eq:U}
+\end{equation}
+A two-scalar primary has free energy $2\Delta+2n+|\ell|$. For identical real bosons, $\ell$ is even.
+
+\begin{theorem}[Connected tree-level scalar-primary coefficients]
+\label{thm:main}
+For the minimal theory \eqref{eq:action}, with the paired regular reflecting exchange prescription and physical mass convention above, the connected coefficients are defined by the order-$G$ logarithmic four-scalar data. When the Virasoro-primary projector of Section~\ref{sec:branches} has rank one, they are physical branch-energy shifts. In that case write
+\begin{equation}
+ E^{(2)}_{n\ell}=2\Delta+2n+|\ell|+Gg_{n\ell}+O(G^2).
+\end{equation}
+The connected coefficients for $n\geq0$ and even $\ell$ are
+\begin{align}
+ g_{n0}&=U_n+
+ \frac{2\left[15C^2-(12+10\mu)C-\mu^2+6\mu\right]}
+ {(2h-3)(2h-1)(2h+1)},\label{eq:full0}\\
+ g_{n,\pm2}&=U_n+
+ \frac{(n+1)(n+2)(2\Delta+n-1)(2\Delta+n)}
+ {(2h-1)(2h+1)(2h+3)},\label{eq:full2}\\
+ g_{n\ell}&=U_n,\qquad |\ell|\geq4.\label{eq:fullhigh}
+\end{align}
+At $n=0$, $\Delta=3/2$, the uncontracted form of \eqref{eq:full0} has a removable $0/0$; its continuous value is $g_{00}=-9/2$. These formulas are fixed-level perturbative coefficients, not a statement of uniform validity as the level tends to infinity.
+\end{theorem}
+
+The proof uses the established high-spin stress-tensor result in Ref.~\cite{KSS}, restricted conservatively to spin strictly above two. The derivation below determines the low-spin completion from the minimal bulk action, rather than extending the inversion formula outside its stated domain.
+
+It is useful to record a more diagnostic channel decomposition:
+\begin{align}
+ g^{\mathrm x}_{n0}&=U_n\frac{2h-2}{2h-1},&
+ g^{\mathrm x}_{n\ell}&=U_n\quad (|\ell|\geq1),\label{eq:crossanswer}\\
+ g^{\mathrm s}_{n0}&=-\frac{2(C+\mu)^2}{(2h-3)(2h-1)(2h+1)},&
+ g^{\mathrm s}_{n,\pm2}&=\frac{(n+1)(n+2)(2\Delta+n-1)(2\Delta+n)}{(2h-1)(2h+1)(2h+3)},\label{eq:sanswer}\\
+ g^{\mathrm s}_{n\ell}&=0\quad(|\ell|>2),&g_{n\ell}&=g^{\mathrm x}_{n\ell}+g^{\mathrm s}_{n\ell}.
+\end{align}
+Here $\mathrm x$ denotes the combined crossed contribution in the identical-boson matrix element. Equivalently, it is the exchange energy for two distinguishable equal-mass species, which provides auxiliary odd-spin data used in the proof. No odd-spin identical-boson primary is being added to the physical spectrum. Notice especially that the spin-zero crossed answer itself differs from $U_n$.
+
+\section{Tree exchange and normalized local primary form factors}
+\label{sec:formfactors}
+
+\subsection{Integrating the metric response}
+
+For a free scalar configuration let $q$ solve
+\begin{equation}
+ \mathcal E^{(1)}[q]=\frac12T,\qquad
+ T_{\mu\nu}=\partial_\mu\phi\partial_\nu\phi
+ -\frac12g_{\mu\nu}\bigl((\partial\phi)^2+\mu\phi^2\bigr),
+ \qquad g=g_0+\kap^2q+\cdots.
+\end{equation}
+Quadratic homogeneity of the Einstein action yields
+\begin{equation}
+ S_{\mathrm{eff},4}=\frac{\kap^2}{4}\int\dd V\,q_{\mu\nu}T^{\mu\nu}.
+ \label{eq:effaction}
+\end{equation}
+The factor $1/4$ includes the on-shell quadratic Einstein term; retaining only the matter coupling would double the answer. In canonical normal form the resonant quartic Hamiltonian is minus the time-averaged interaction Lagrangian. For a normalized annihilation form factor
+$\tau_{\mu\nu}=\bra0:T_{\mu\nu}:\ket{P}$, this gives
+\begin{equation}
+ \gamma^{\mathrm s}=-\frac{\kap^2}{2}
+ \int_\Sigma r\,\dd r\,\dd\varphi\,
+ q[\tau]_{\mu\nu}\tau^{*\mu\nu}.
+ \label{eq:annpairing}
+\end{equation}
+The factor of two combines the positive--positive and negative--negative source pairings. Normal ordering here specifies the connected tree interaction, not the unrenormalized one-body self-energy.
+
+The pairing is unchanged by a bounded pure-diffeomorphism addition with vanishing radial flux: conservation turns the change into endpoints, whose time average vanishes. This fact is used for the particular response, not to quotient independent physical Brown--Henneaux excitations.
+
+\subsection{Chiral primary coefficients and centre values}
+
+Let a normalized scalar mode have chiral levels $(p,q)$, energy $\Delta+p+q$, and angular momentum $p-q$. The normalized coefficients of a chiral two-particle primary at level $K$ can be chosen real:
+\begin{equation}
+ v_p^{(K)}=(-1)^p
+ \sqrt{\frac{\binom Kp(\Delta)_K^2}
+ {(\Delta)_p(\Delta)_{K-p}(2\Delta+K-1)_K}},\qquad 0\leq p\leq K.
+ \label{eq:CG}
+\end{equation}
+Their norm is one by the terminating Vandermonde identity. A distinguishable two-scalar primary at chiral levels $(K,L)$ has product coefficients $v_p^{(K)}v_q^{(L)}$. Identical-boson symmetrization retains $K+L$ even and multiplies a local vacuum-to-pair form factor by $\sqrt2$.
+
+For $j\geq0$, the scalar modes have the centre expansion
+\begin{equation}
+ u_{q+j,q}(0,r,\varphi)=
+ \frac{(-1)^q}{\sqrt{2\pi}\,j!}
+ \sqrt{\frac{(q+j)!}{q!}(\Delta+q)_j}
+ r^je^{ij\varphi}+O(r^{j+2}).
+ \label{eq:centremode}
+\end{equation}
+In particular, a distinguishable spin-zero primary with $K=L=n$ obeys
+\begin{equation}
+ F_n=\bra0\phi_1\phi_2\ket{P_{n0}}
+ =\frac{(-1)^n}{2\pi}f^{-h}e^{-2iht},\qquad
+ \Box F_n=4C F_n.
+ \label{eq:F}
+\end{equation}
+The coefficient at the centre is just $(-1)^n\sum_p(v_p^{(n)})^2/(2\pi)$. The identical-boson form factor is $F_n^{\mathrm{id}}=\sqrt2F_n$.
+
+For later use, a spin-$s$ covariant primary tensor can be written
+\begin{align}
+ W^{(E,s)}&=e^{-iEt+is\varphi}r^sf^{-E/2}v^{\otimes s},&
+ v&=\dd t-\dd\varphi+\frac{i\dd r}{rf},\qquad s=1,2.\label{eq:W}
+\end{align}
+Direct differentiation gives
+\begin{equation}
+ \nabla\cdot W^{(E,s)}=0,\qquad
+ \Box W^{(E,s)}=[E(E-2)-s]W^{(E,s)}.
+ \label{eq:Weigen}
+\end{equation}
+The rank-two tensor is traceless. Both global lowering Lie derivatives annihilate it. Its apparent polar-coordinate singularities cancel in Cartesian components. Moreover,
+\begin{equation}
+ \int_\Sigma r\,\dd r\,\dd\varphi\,
+ W^{(E,s)}\cdot W^{(E,s)*}
+ =\frac{\pi 2^s}{E+s-1}.
+ \label{eq:Wnorm}
+\end{equation}
+This is a tensor contraction in the exchange pairing, not a Hilbert-space norm for arbitrary off-shell tensors.
+
+For the distinguishable current $J_\mu=\phi_1\nabla_\mu\phi_2-\phi_2\nabla_\mu\phi_1$, only a spin-one primary form factor survives. At $(K,L)=(n+1,n)$ it has the form
+\begin{equation}
+ J_n=A_1 W^{(2h+1,1)},\qquad
+ |A_1|^2=\frac{h(n+1)(2\Delta+n-1)}{2\pi^2(2h-1)}.
+ \label{eq:Jnorm}
+\end{equation}
+For the identical scalar stress tensor at spin two,
+\begin{equation}
+ \tau_{n2}=A_2W^{(2h+2,2)},\qquad
+ |A_2|^2=\frac{h(h+1)(n+1)(n+2)(2\Delta+n-1)(2\Delta+n)}
+ {8\pi^2(2h-1)(2h+1)}.
+ \label{eq:taunorm}
+\end{equation}
+The elementary coefficient ratios proving these expressions at arbitrary $n$ are given in Appendix~\ref{app:normalization}.
+
+\subsection{Why the local form factors have finite spin support}
+
+These are primary form factors, not arbitrary tensor waves of fixed angular momentum. They obey both first-order global lowering equations. Their analytic regular solution is determined by the tensor value at the centre: the two lowering vectors span the complexified spatial tangent space there, so their equations determine all Taylor derivatives recursively from that value. A zero centre value forces every Taylor coefficient to vanish. The finite mode sums used here are analytic. A scalar fibre has only spin zero; a covector fibre has spins $0,\pm1$; a symmetric rank-two fibre has spins from $-2$ to $2$. A primary with spin outside the corresponding range has zero centre value and therefore zero form factor. Exchange antisymmetry restricts $J$ to odd spin, while exchange symmetry restricts $T$ to even spin. Thus $F$ has only spin zero, $J$ only spin $\pm1$, and the two-identical-scalar stress tensor only spin $0,\pm2$.
+
+Equivalently, this follows by solving the lowering equations with the regular Cartesian centre data. The explicit solutions are \eqref{eq:F}, \eqref{eq:W}, and the conserved scalar-derived tensor used below. A descendant with nonzero orbital angular momentum is not a counterexample: it is not annihilated by both lowering generators.
+
+\section{The annihilation channel}
+\label{sec:annihilation}
+
+\subsection{Spin zero}
+
+On free scalar legs the trace identity is
+\begin{equation}
+ \tau^\mu{}_{\mu}=-\left(\frac14\Box+\mu\right)F_n^{\mathrm{id}}
+ =-(C+\mu)F_n^{\mathrm{id}}.
+\end{equation}
+Define the conserved scalar-to-tensor operator
+\begin{equation}
+ (\mathscr D S)_{\mu\nu}=
+ \nabla_\mu\nabla_\nu S-g_{\mu\nu}(\Box-2)S.
+\end{equation}
+It obeys $\nabla^\mu(\mathscr D S)_{\mu\nu}=0$ and
+$\tr\mathscr D S=-2(\Box-3)S$. Consequently, in the spin-zero primary representation,
+\begin{equation}
+ \tau_{n0}=\mathscr D S_n,\qquad
+ S_n=\frac{C+\mu}{2(4C-3)}F_n^{\mathrm{id}}.
+ \label{eq:scalarstress}
+\end{equation}
+The identity $\mathcal E^{(1)}[g\psi]=-\mathscr D\psi/2$ gives an especially simple response,
+\begin{equation}
+ q[\tau_{n0}]=-gS_n.
+\end{equation}
+This computational representative need not be de Donder. Since
+\begin{equation}
+ \int_\Sigma r\,\dd r\,\dd\varphi\,|F_n^{\mathrm{id}}|^2
+ =\frac1{2\pi(2h-1)},
+\end{equation}
+substitution into \eqref{eq:annpairing} gives
+\begin{equation}
+ \frac{\gamma^{\mathrm s}_{n0}}G
+ =-\frac{2(C+\mu)^2}{(4C-3)(2h-1)}.
+\end{equation}
+At $n=0,\Delta=3/2$, the ratio in \eqref{eq:scalarstress} is regular after cancellation and the annihilation energy tends to zero. No physical pole is present there.
+
+\subsection{Spin two and higher spin}
+
+The tensor \eqref{eq:taunorm} is transverse and traceless. In that sector
+\begin{equation}
+ \mathcal E^{(1)}q=-\frac12(\Box+2)q,\qquad
+ (\Box+2)\tau_{n2}=4h(h+1)\tau_{n2}.
+\end{equation}
+Hence $q[\tau_{n2}]=-\tau_{n2}/[4h(h+1)]$. Equations \eqref{eq:annpairing}, \eqref{eq:Wnorm}, and \eqref{eq:taunorm} give
+\begin{equation}
+ \frac{\gamma^{\mathrm s}_{n2}}G
+ =\frac{(n+1)(n+2)(2\Delta+n-1)(2\Delta+n)}
+ {(2h-1)(2h+1)(2h+3)}.
+\end{equation}
+The negative-spin answer is its parity image. Above spin two the primary stress form factor vanishes, so the annihilation-channel coefficient vanishes identically. This is an all-level representation statement, not a truncation of a radial integral.
+
+\section{The crossed-channel Casimir equation}
+\label{sec:cross}
+
+\subsection{The paired exchange identity, including its boundary terms}
+\label{sec:pairedcollapse}
+
+The collapse is most cleanly proved without postulating an inverse of the graviton Casimir. For a symmetric tensor define
+\begin{equation}
+ (Pq)_{\mu\nu}=q_{\mu\nu}-\frac12g_{\mu\nu}q,
+ \quad (P^{-1}q)_{\mu\nu}=q_{\mu\nu}-g_{\mu\nu}q,
+ \quad C_\nu[q]=\nabla^\mu q_{\mu\nu}-\frac12\nabla_\nu q.
+\end{equation}
+Here the inverse formula uses spacetime dimension three. Define
+\begin{equation}
+ (\calC q)_{\mu\nu}=\frac12(\Box+6)q_{\mu\nu}-g_{\mu\nu}\tr q,
+ \qquad A=\calC-2.
+ \label{eq:tensorcasimir}
+\end{equation}
+Direct linearization gives the \emph{off-shell} identity
+\begin{equation}
+ \boxed{\mathcal E^{(1)}[q]=-P A q+P\nabla_{(\mu}C_{\nu)}[q].}
+ \label{eq:offshellcollapse}
+\end{equation}
+Indeed,
+\begin{align}
+ \mathcal E^{(1)}_{\mu\nu}[q]
+ ={}&-\frac12(\Box+2)q_{\mu\nu}+\frac14g_{\mu\nu}\Box q
+ +\nabla_{(\mu}C_{\nu)}-\frac12g_{\mu\nu}\nabla\cdot C.
+\end{align}
+Thus $\mathcal E^{(1)}q=T/2$ implies
+\begin{equation}
+ \boxed{Aq=-\frac12(T-g\tr T)+\nabla_{(\mu}C_{\nu)}[q].}
+ \label{eq:collapsewithgauge}
+\end{equation}
+The second term is retained until it is paired with a conserved source. No existence claim for $A^{-1}$ on arbitrary histories is required.
+
+For completeness, the tensor Casimir can be identified directly with the external isometry generators. If $q$ has harmonic dependence $e^{-i\omega t+ij\varphi}$, the sum of the two chiral Lie-derivative Casimirs is
+\begin{equation}
+ \left[\frac{\omega^2+j^2}{2}-\omega\right]q
+ -\sum_{\sigma=\pm1}\mathcal L_{R_\sigma}\mathcal L_{D_\sigma}q
+ =\frac12\Box q+3q-g\tr q.
+ \label{eq:liecasimir}
+\end{equation}
+The local xAct/xPert check verifies \eqref{eq:offshellcollapse} for an arbitrary symmetric tensor, without imposing its field equation or a gauge condition. A separate xCoba check verifies \eqref{eq:liecasimir} on each of the six independent tensor components with an arbitrary radial function and symbolic $\omega,j$. By linearity this tests the full radial differential operator, not selected solutions. The tensor identity also follows from the spin-two and spin-zero isotropy Casimirs, six and zero.
+
+\paragraph{Domain and resonant pairing.}
+Work at a fixed finite mode level. Sources are finite sums of conserved polarized stresses of standard, normalizable free modes. Responses are smooth at the centre, satisfy Brown--Henneaux falloffs with differentiated expansions, and admit bounded harmonic representatives. The resonant pairing is
+\begin{equation}
+ \langle T,q\rangle_{\rm res}
+ =\lim_{\mathcal T\to\infty}\frac1{2\mathcal T}
+ \int_{-\mathcal T}^{\mathcal T}\!\dd t
+ \lim_{\epsilon\to0,\,R\to\infty}
+ \int_\epsilon^R\!r\dd r\int_0^{2\pi}\!\dd\varphi\,
+ T^{\mu\nu}q_{\mu\nu}.
+ \label{eq:respair}
+\end{equation}
+It is a complex bilinear pairing; conjugation is included in the chosen outgoing scalar legs. A secular response is not inserted into this average: an actual physical resonance must be retained in the projected Hamiltonian. Pure auxiliary gauge resonances do not require using a secular gauge representative in the paired identity \eqref{eq:collapsewithgauge}.
+
+
+\paragraph{Bounded representatives for the finite scalar source class.}
+Their availability need not be assumed from a universal Lorentzian inverse. For an opposite-frequency pair, start with the regular static seed \eqref{eq:seednoncirc}. The scalar Leibniz and ladder identities generate every polarized source $T[u_{pq},u_{kl}^*]$ in finitely many steps. Applying the same Killing derivatives to the seed and the already generated responses solves their Einstein equations by covariance; all resulting time dependence is harmonic. This is the finite source construction in the pinned notes \cite{notes}, and the paired identity is insensitive to dependent-source choices that differ by a homogeneous response.
+
+For same-sign pairs, the positive-energy two-scalar representation at fixed total chiral levels decomposes into finitely many global primaries and descendants. The local stress form factor has only primary spins zero and two, as proved in Section~\ref{sec:formfactors}. The spin-zero conformal response and spin-two TT response in Section~\ref{sec:annihilation}, followed by finitely many Killing derivatives, therefore supply responses to all such products. Their only apparent spin-zero pole, $n=0,\Delta=3/2$, cancels explicitly; $4h(h+1)$ never vanishes in the spin-two response. Conjugation supplies the negative-frequency sector. These constructions establish the bounded representatives used in \eqref{eq:respair} throughout the finite normalizable scalar source class. They do not supply bounded responses for arbitrary conserved tensors or resolve genuine matter-primary resonances in a larger quantum Hamiltonian.
+
+\paragraph{Green currents and radial limits.}
+The Casimir Green identity is
+\begin{align}
+ T^{\mu\nu}(Aq)_{\mu\nu}-(AT)^{\mu\nu}q_{\mu\nu}
+ &=\nabla_\rho J_A^\rho,\nonumber\\
+ J_A^\rho&=\frac12\left(T^{\mu\nu}\nabla^\rho q_{\mu\nu}
+              -q^{\mu\nu}\nabla^\rho T_{\mu\nu}\right).
+ \label{eq:casimircurrent}
+\end{align}
+The algebraic curvature and trace terms are symmetric and contribute no current. Reciprocity of the Einstein response follows from the independent current
+\begin{align}
+ k^{\mu\nu}\mathcal E^{(1)}_{\mu\nu}[q]
+ -q^{\mu\nu}\mathcal E^{(1)}_{\mu\nu}[k]
+ &=\nabla_\rho J_E^\rho(k,q),\nonumber\\
+ J_E^\rho={}&-\frac12(k^{\mu\nu}\nabla^\rho q_{\mu\nu}
+                  -q^{\mu\nu}\nabla^\rho k_{\mu\nu})
+ +\frac14(k\nabla^\rho q-q\nabla^\rho k)\nonumber\\
+ &+(Pk)^{\rho\nu}C_\nu[q]-(Pq)^{\rho\nu}C_\nu[k].
+ \label{eq:einsteincurrent}
+\end{align}
+In the orthonormal asymptotic frame,
+\begin{equation}
+ T_{\hat\mu\hat\nu}=O(r^{-2\Delta}),\quad
+ q_{\hat\mu\hat\nu}=O(r^{-2}),\quad
+ \nabla_{\hat r}T=O(r^{-2\Delta}),\quad
+ \nabla_{\hat r}q=O(r^{-2}).
+\end{equation}
+In particular the actual coordinate radial surface terms, with $\sqrt{-g}=r$, satisfy
+\begin{equation}
+ rJ_A^r=O(r^{-2\Delta}),\qquad
+ rJ_E^r=O(r^{-2}).
+ \label{eq:radialbounds}
+\end{equation}
+Both vanish. Centre regularity makes the small-circle flux vanish as $\epsilon\to0$. The integrated time currents are finite and bounded; after division by $2\mathcal T$, their endpoint differences vanish. These estimates also hold after finitely many global isometry derivatives. The fixed-boundary-metric GHY/counterterm completion in \eqref{eq:action} contributes no surviving radial variation on these normalizable directions. Canonical time endpoints are retained until taking the resonant coefficient.
+
+For a conserved $T$ the gauge remainder is an explicit divergence,
+\begin{equation}
+ T^{\mu\nu}\nabla_{(\mu}C_{\nu)}
+ =\nabla_\mu(T^{\mu\nu}C_\nu).
+\end{equation}
+Brown--Henneaux falloffs give $C_a=O(r^{-2})$, $C_r=O(r^{-3})$, so its radial surface term is $O(r^{-2\Delta})$. More generally a smooth bounded Brown--Henneaux vector $\zeta^a=O(1)$, $\zeta^r=O(r)$ gives
+\begin{equation}
+ r\zeta_\nu T^{r\nu}=O(r^{2-2\Delta})\longrightarrow0.
+ \label{eq:largegaugepair}
+\end{equation}
+Here one uses the stronger mixed-source falloff $T_{\hat r\hat a}=O(r^{-2\Delta-1})$. Thus a smooth homogeneous vacuum response changes this \emph{on-shell four-scalar pairing} only by vanishing averaged endpoints. This does not quotient a physical Brown--Henneaux state; no external graviton is present in this amplitude. On the simply connected smooth vacuum patch such a homogeneous linearized metric is a diffeomorphism of the background. A singular conical-defect mass addition is not admissible.
+
+It follows from \eqref{eq:einsteincurrent} that
+\begin{equation}
+ \langle T_1,q[T_2]\rangle_{\rm res}
+ =\langle q[T_1],T_2\rangle_{\rm res}.
+ \label{eq:reciprocity}
+\end{equation}
+The paired Ward identity is
+$\langle\mathcal L_XT,q\rangle+\langle T,\mathcal L_Xq\rangle=0$.
+Moreover $\mathcal L_Xq[T]-q[\mathcal L_XT]$ is a homogeneous response and is invisible in this pairing. Hence the bilinear exchange is equivariant even if a finite-source basis prescription is not itself an equivariant choice of representative. This is the precise passage from an external crossed Casimir to \eqref{eq:liecasimir} acting on the response.
+
+\paragraph{Four-leg combinatorics and the collapse.}
+Quadratic homogeneity, including the fixed boundary prescription, gives
+$S_{\rm eff,4}=\kap^2\langle q[T],T\rangle/4$; the resonant Hamiltonian has the opposite sign. Temporarily distinguish two equal-mass scalars. In the interspecies part there are two reciprocal terms, and in each species the incoming/outgoing coefficient of the polarized stress is $2T[a,c]$. Therefore the normalized crossed four-leg symbol is
+\begin{equation}
+ \mathscr X(a,b;c,d)=-2\kap^2
+ \langle T[a,c],q[T[b,d]]\rangle_{\rm res},
+ \label{eq:crossnormalization}
+\end{equation}
+where
+\begin{equation}
+ T[a,c]_{\mu\nu}=\nabla_{(\mu}a\nabla_{\nu)}c
+ -\frac12g_{\mu\nu}(\nabla a\cdot\nabla c+\mu ac).
+\end{equation}
+Explicitly the factor is $-(\kap^2/4)\times2\times2\times2=-2\kap^2$.
+For four distinct identical-scalar legs, one sums the three unordered partitions with this same coefficient; identical pair-state normalizations are then imposed separately.
+Using \eqref{eq:collapsewithgauge} and the vanishing currents proves
+\begin{equation}
+ \boxed{(\calC_{\rm crossed}-2)\mathscr X
+ =\kap^2\langle\mathcal K(a,b;c,d)\rangle_{\rm res},\quad
+ \mathcal K=T[a,c]^{\mu\nu}T[b,d]_{\mu\nu}
+ -\tr T[a,c]\tr T[b,d].}
+ \label{eq:contactK}
+\end{equation}
+There is no adjustable contact coefficient. This is a paired finite-mode identity, not a claim of a universal inverse on all eternal sources. Casimir equations for exchange diagrams have a broader differential-representation interpretation; see Ref.~\cite{LM}. The present derivation fixes the Lorentzian normalizable-state boundary terms and normalization needed here.
+
+\subsection{The contact source in a primary basis}
+
+For a normalized incoming primary, set $F=\bra0\phi_1\phi_2\ket P$,
+$J=\bra0\phi_1\dd\phi_2-\phi_2\dd\phi_1\ket P$, and
+$K_F=\frac12(\Box-2\mu)F$. Expanding \eqref{eq:contactK} and pairing incoming and outgoing primary wavefunctions gives
+\begin{align}
+ \int_\Sigma\mathcal K
+ =\int_\Sigma\left\{
+ \frac12|K_F|^2-\frac1{16}|\dd J|^2
+ -\frac\mu4\bigl(\nabla F\cdot\nabla F^*+J\cdot J^*\bigr)
+ -\frac32\mu^2|F|^2\right\}.
+ \label{eq:Kdecomp}
+\end{align}
+Here and below $\int_\Sigma$ includes the measure $r\dd r\dd\varphi$ and the resonant time average. Integration by parts is legitimate for these normalizable primary form factors; the time endpoint terms cancel in the pairing.
+
+For spin zero, \eqref{eq:Kdecomp} reduces to
+$(C-\mu)(2C+\mu)\int|F_n|^2$. For spin one, $F=0$ and
+$\nabla^\mu(\dd J)_{\mu\nu}=4h^2J_\nu$, so it reduces to
+$(2h^2-\mu)\int J_n\cdot J_n^*/4$. The form-factor norms are
+\begin{equation}
+ \int|F_n|^2=\frac1{4\pi(2h-1)},\qquad
+ \int J_n\cdot J_n^*=\frac{h(n+1)(2\Delta+n-1)}{\pi(2h-1)(2h+1)}.
+\end{equation}
+Thus the collapsed contact coefficients are
+\begin{align}
+ S_{nn}&=\frac{4(C-\mu)(2C+\mu)}{2h-1},\label{eq:S0}\\
+ S_{n+1,n}=S_{n,n+1}
+ &=\frac{4h(n+1)(2\Delta+n-1)(2h^2-\mu)}{(2h-1)(2h+1)},\label{eq:S1}\\
+ S_{kl}&=0,\qquad |k-l|\geq2.\label{eq:Shigh}
+\end{align}
+The finite support of this contact source is particularly useful. It is not the same spin support as the annihilation contribution.
+
+\subsection{From normalized matrix elements to the block equation}
+\label{sec:lognormalization}
+
+The contact source normalization can be fixed without guessing a four-point-function prefactor. The decomposition \eqref{eq:Kdecomp} is a pointwise polarized identity: for separable incoming data $F=ab$, $J=a\dd b-b\dd a$ one has $\dd J=2\dd a\wedge\dd b$, and similarly for outgoing data. Substitution reduces the identity to a polynomial in four field values and twelve independent gradient components. The independent xAct check gives zero for four arbitrary scalar fields without imposing their equations; summing the primary coefficients preserves the identity.
+
+The remaining integrations by parts are explicit. For spin zero,
+$\int\nabla F\cdot\nabla F^*=-4C\int|F|^2$; its radial boundary term is $O(r^{2-4h})$. For spin one,
+$\int|\dd J|^2=-8h^2\int J\cdot J^*$, using the Proca equation of the normalized form factor; its boundary term decays as $O(r^{2-2E})$, with $E=2h+1$. The averaged time endpoints vanish as in \eqref{eq:respair}. Therefore the normalized contact energy coefficient, divided by $G$, is exactly
+\begin{equation}
+ S_{kl}=16\pi\int_\Sigma\mathcal K_{kl},
+ \label{eq:sourceunits}
+\end{equation}
+which yields \eqref{eq:S0}--\eqref{eq:Shigh}. The scalar and vector norms in that calculation are those of the distinguishable problem, not the identical-boson norms with an extra factor of two.
+
+To relate this energy coefficient to a logarithmic block coefficient, let $V$ denote the connected order-$G$ effective perturbation obtained from the tree exchange reduction, and let $P_{E_0}$ project onto a complete free degenerate block. In particular $V$ includes the exchange generated by two order-$\sqrt G$ cubic vertices; it is not just a bare quartic vertex. Euclidean spectral evolution to first order in this effective perturbation gives
+\begin{equation}
+ P_{E_0}\delta e^{-H\tau}P_{E_0}
+ =-\tau e^{-E_0\tau}P_{E_0}VP_{E_0}.
+ \label{eq:duhamel}
+\end{equation}
+This is a finite-state Duhamel formula; it does not Wick-rotate a Green inverse or impose a retarded quantum loop prescription. With $z=e^{-\tau+i\theta}$, $\bar z=e^{-\tau-i\theta}$,
+$-\tau=\log(z\bar z)/2$. Thus a gap shift $Gx_{kl}$ contributes
+\begin{equation}
+ \frac G2\,p_kp_l x_{kl}\,
+ k_{\Delta+k}(z)k_{\Delta+l}(\bar z)\log(z\bar z).
+ \label{eq:logfactor}
+\end{equation}
+The free preparation weights $p_kp_l$ follow from normalized chiral two-particle states and the free block expansion below. An overall external-operator normalization multiplies the exchange and contact preparations identically and cancels from the gap shift. The contact diagram has precisely the same logarithmic factor with $x_{kl}$ replaced by $S_{kl}$. Consequently applying the external Casimir to \eqref{eq:contactK} gives the stated difference equation with no additional factor of two. Derivatives acting on the logarithm generate only nonlogarithmic terms.
+
+Canonical endpoint redefinitions similarly cannot shift the answer: they change the first-order Hamiltonian by a commutator with $H_0$, whose projection $P_{E_0}[H_0,F]P_{E_0}$ vanishes. Section~\ref{sec:branches} explains why the logarithmic coefficients identify the desired primary branches despite structural boundary-graviton degeneracies.
+
+\subsection{A three-term Casimir action}
+
+Use the chiral blocks and free coefficients
+\begin{equation}
+ k_h(z)=z^h\,{}_2F_1(h,h;2h;z),\qquad
+ p_k=\frac{(\Delta)_k^2}{k!(2\Delta+k-1)_k}.
+\end{equation}
+The free distinguishable two-particle kernel is
+\begin{equation}
+ \left(\frac{z\bar z}{(1-z)(1-\bar z)}\right)^\Delta
+ =\sum_{k,l\geq0}p_kp_l\,k_{\Delta+k}(z)k_{\Delta+l}(\bar z).
+\end{equation}
+At first order the coefficient of $\log(z\bar z)$ is
+$\frac G2\sum p_kp_l x_{kl}k_{\Delta+k}k_{\Delta+l}$. The crossed chiral Casimir is
+\begin{equation}
+ D_t=z(1-z)^2\partial_z^2+(z-1)(2\Delta+z-1)\partial_z
+ +\frac{\Delta^2}{z}-\Delta.
+\end{equation}
+It acts tridiagonally:
+\begin{align}
+ D_tk_h={}&(\Delta-h)^2k_{h-1}
+ +\frac{\mu-h(h-1)}2k_h
+ +\frac{h^2(\Delta+h-1)^2}{4(2h-1)(2h+1)}k_{h+1}.
+ \label{eq:threeblock}
+\end{align}
+Appendix~\ref{app:certificate} proves this identity by comparing the coefficient with an arbitrary hypergeometric series index, not just the first few coefficients.
+
+After including the weights $p_k$, define
+\begin{align}
+ a_k&=\frac{(k+1)(\Delta+k)(2\Delta+k-1)}{2(2\Delta+2k-1)},&
+ c_k&=\frac{k(\Delta+k-1)(2\Delta+k-2)}{2(2\Delta+2k-1)},\\
+ b_k&=\frac{\mu-(\Delta+k)(\Delta+k-1)}2=-a_k-c_k,&
+ (\mathcal L f)_k&=a_kf_{k+1}+b_kf_k+c_kf_{k-1}.
+ \label{eq:abc}
+\end{align}
+Since $c_0=0$, no negative-level datum is required. Taking the logarithmic coefficient of the collapsed exchange identity gives the exact equation
+\begin{equation}
+ \boxed{(\mathcal L_k+\mathcal L_l-2)x_{kl}=S_{kl}.}
+ \label{eq:crossrec}
+\end{equation}
+Differentiating the logarithm produces nonlogarithmic terms, which do not enter this equation. This is the usual AdS representation/block relation; it can be used as a harmonic-analysis device without assuming a separately constructed nonperturbative boundary CFT.
+
+\subsection{A solution and the required high-spin input}
+
+The known crossed stress-tensor exchange gives, for $|k-l|>2$,
+\begin{equation}
+ x_{kl}=-\frac{12}{cG}\left[
+ C_2\bigl(\Delta+\min(k,l)\bigr)-2C_2(\Delta/2)\right]
+ =U_{\min(k,l)},\qquad c=\frac3{2G}+O(1).
+ \label{eq:tail}
+\end{equation}
+We use Ref.~\cite{KSS}, Section 4.2, only in this above-exchanged-spin range. In particular, \eqref{eq:tail} is not an assumed formula for spin zero, one, or two.
+
+The following extension solves \eqref{eq:crossrec} at every level:
+\begin{equation}
+ x_{kl}=
+ \begin{cases}
+ U_n\dfrac{2\Delta+2n-2}{2\Delta+2n-1},&k=l=n,\\[6pt]
+ U_{\min(k,l)},&k\ne l.
+ \end{cases}
+ \label{eq:xsolution}
+\end{equation}
+For $|k-l|\geq2$, verification reduces to $\mathcal L1=0$ and $\mathcal LU=2U$. On the two remaining bands, direct rational substitution gives precisely \eqref{eq:S0} and \eqref{eq:S1}. This proves existence for arbitrary $\Delta,n$; uniqueness is a separate issue addressed next.
+
+\subsection{All-level uniqueness of the low-spin completion}
+\label{sec:uniqueness}
+
+Suppose $e_{kl}=e_{lk}$ is the difference of two solutions with the same contact source and the same tail \eqref{eq:tail}. Then $e_{kl}=0$ for $|k-l|\geq3$ and
+$(\mathcal L_k+\mathcal L_l-2)e_{kl}=0$. Denote its three possibly nonzero bands by
+\begin{equation}
+ X_n=e_{n+2,n},\qquad Y_n=e_{n+1,n},\qquad Z_n=e_{n,n}.
+\end{equation}
+The equations on gaps three, two, and zero give
+\begin{align}
+ X_{n+1}&=-\frac{c_{n+3}}{a_n}X_n,\label{eq:uniqueX}\\
+ Y_{n+1}&=-\frac{c_{n+2}Y_n+(b_{n+2}+b_n-2)X_n}{a_n},\label{eq:uniqueY}\\
+ Z_n&=\frac{a_nY_n+c_nY_{n-1}}{1-b_n}.\label{eq:uniqueZ}
+\end{align}
+At $n=0$ the term with $c_0$ is omitted. All denominators are nonzero for $\Delta>1$. Every coefficient is therefore determined by just two numbers, $(Y_0,X_0)$.
+
+The remaining gap-one equations are
+\begin{equation}
+ R_n=c_{n+1}Z_n+a_nZ_{n+1}+(b_{n+1}+b_n-2)Y_n
+ +a_{n+1}X_n+c_nX_{n-1}=0.
+ \label{eq:uniqueR}
+\end{equation}
+Substituting \eqref{eq:uniqueX}--\eqref{eq:uniqueZ} into $R_0,R_1$ yields a $2\times2$ homogeneous system $M(\Delta)(Y_0,X_0)^T=0$. Its determinant is
+\begin{equation}
+ \boxed{\det M(\Delta)=
+ \frac{960(\Delta+1)^2
+ (3\Delta^5+24\Delta^4+63\Delta^3+68\Delta^2+33\Delta+6)}
+ {\Delta(2\Delta+3)(2\Delta+5)(3\Delta+2)(5\Delta+4)}>0.}
+ \label{eq:det}
+\end{equation}
+Thus $X_0=Y_0=0$ and all three bands vanish. This proves uniqueness for every $n$; no growth assumption, finite-level fit, or infinite-mode completion is needed for this finite-band argument. Restriction of \eqref{eq:xsolution} to the even-spin identical-boson sector proves \eqref{eq:crossanswer}. Adding Section~\ref{sec:annihilation} proves Theorem~\ref{thm:main}.
+
+\section{Independent canonical check from circular data}
+\label{sec:circular}
+
+The preceding proof bypasses the difficult direct summation of general radial Hahn-polynomial compressions. Those compressions provide an independent check because they start from the exact circular Einstein constraints, rather than the crossed-channel equation.
+
+In polar areal gauge, put
+\begin{equation}
+ \dd s^2=-Fe^{-2D}\dd t^2+\frac{\dd r^2}{F}+r^2\dd\varphi^2,
+ \qquad F=f-\kap^2M,\qquad \Pi=\frac{e^D}{F}\dot\phi.
+\end{equation}
+The reduced form, mass constraint, and lapse equation are
+\begin{align}
+ \Omega_{\mathrm{red}}&=2\pi\int_0^\infty r\,\delta\Pi\wedge\delta\phi\,\dd r,\\
+ M'&=\frac r2\left[F(\Pi^2+\phi'^2)+\mu\phi^2\right],&
+ D'&=-\frac{\kap^2r}{2}(\Pi^2+\phi'^2).
+\end{align}
+Regularity and boundary time fix $M(0)=0$ and $D(\infty)=0$. The vacuum-subtracted Hamiltonian is $H=2\pi M(\infty)$. With $X=\Pi^2+\phi'^2$,
+\begin{align}
+ H&=\pi\int_0^\infty\!r(fX+\mu\phi^2)
+ \exp\!\left[-\frac{\kap^2}{2}\int_r^\infty\!sX(s)\dd s\right]\dd r,\\
+ H&=H_0+\kap^2H_4+O(\kap^4),&
+ H_4&=-\pi\int_0^\infty rX(r)M_0(r)\dd r,\label{eq:H4}\\
+ M_0(r)&=\frac12\int_0^r s\,[f(s)X(s)+\mu\phi(s)^2]\dd s.
+\end{align}
+The gravitational momentum term vanishes in this circular reduction: $K_{\varphi\varphi}=0$ implies $p^{rr}=0$, while $\delta\gamma_{\varphi\varphi}=0$. Thus the stated scalar Cauchy coordinates are canonical without an extra perturbative Darboux correction.
+
+For the lowest mode $u=f^{-\Delta/2}/\sqrt{2\pi}$, the coefficient of $b^2\bar b^2$ in $H_4$ is
+\begin{equation}
+ C_{00}=\frac{\Delta^2(7+2\Delta-8\Delta^2)}{16\pi(4\Delta^2-1)}.
+\end{equation}
+The normalized two-boson expectation is $2\kap^2C_{00}$, agreeing with \eqref{eq:full0}. The nonresonant quartic monomials do not shift this isolated level at first order. Adding a separate exchange term to \eqref{eq:H4} would double count the constraints already integrated out.
+
+At general circular level $N$, use normalized unordered pairs
+$b^\dagger_{r,0}b^\dagger_{N-r,0}\ket0/\sqrt{1+\delta_{2r,N}}$ and
+\begin{equation}
+ P_i(x)=P_i^{(\Delta-1,0)}(1-2x),\qquad x=f^{-1}.
+\end{equation}
+The six four-leg pairings in \eqref{eq:H4} reduce to finite Mellin moments of Jacobi polynomials. Same-sign pairings isolate the annihilation channel, and mixed-sign pairings isolate crossed exchange. Their compression is not a closed angular-momentum Hamiltonian block. To extract primary coefficients, use the orthogonal chiral coupling matrix $U^{(N)}$ obtained from Hahn polynomials:
+\begin{equation}
+ R^{(N)}_{rs}=\sum_{\substack{0\leq k,l\leq N\\k+l\text{ even}}}
+ s_rs_sU_{rk}^{(N)}U_{rl}^{(N)}U_{sk}^{(N)}U_{sl}^{(N)}
+ \gamma_{\min(k,l),|k-l|},\quad
+ s_r=\sqrt{\frac2{1+\delta_{2r,N}}}.
+ \label{eq:compression}
+\end{equation}
+The top Hahn column never vanishes for $\Delta>1$. Subtracting all earlier levels leaves an invertible finite reconstruction problem. The supplied implementation tests the unused off-diagonal residuals rather than discarding them. The detailed finite-sum implementation and its provenance are included with this draft \cite{notes}.
+
+For $N=n+|\ell|\leq12$, the independent exact-rational calculation evaluates 49 primary coefficients for each of
+$\Delta=21/20,3/2,2,7/3$. All three channel choices (total, crossed, annihilation) agree with \eqref{eq:crossanswer}--\eqref{eq:sanswer}, giving 588 exact coefficient comparisons. Orthogonality and unused off-diagonal residuals vanish in every run. This is finite computational evidence distinct from the all-level analytic argument in Sections~\ref{sec:annihilation} and \ref{sec:cross}.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrr}
+\toprule
+$n$ & $|\ell|$ & $E_0$ at $\Delta=2$ & $g^{\mathrm x}_{n\ell}$ & $g_{n\ell}$\\
+\midrule
+0&0&4&$-32/3$&$-56/5$\\
+1&0&6&$-192/5$&$-1368/35$\\
+0&2&6&$-16$&$-552/35$\\
+2&0&8&$-576/7$&$-416/5$\\
+1&2&8&$-48$&$-1000/21$\\
+0&4&8&$-16$&$-16$\\
+3&0&10&$-1280/9$&$-11040/77$\\
+2&2&10&$-96$&$-7352/77$\\
+1&4&10&$-48$&$-48$\\
+0&6&10&$-16$&$-16$\\
+\bottomrule
+\end{tabular}
+\caption{Selected coefficients. Each positive spin has an equal-energy parity partner. Circular product-state eigenvalues alone would not produce this primary table.}
+\label{tab:spectrum}
+\end{table}
+
+\section{A direct noncircular matrix element at arbitrary mass}
+\label{sec:noncircular}
+
+An independent bulk test uses
+\begin{equation}
+ |A\rangle=b_{00}^\dagger b_{10}^\dagger|0\rangle,
+ \qquad |B\rangle=b_{0,1}^\dagger b_{0,-1}^\dagger|0\rangle.
+ \label{eq:ABstates}
+\end{equation}
+Both states have $E_0=2\Delta+2$, $J=0$. Although the total angular momentum is zero, the crossed sources and their responses are noncircular. The following computation uses their local Einstein equations and direct four-leg integrals; no primary energy or Hahn reconstruction is used to obtain the matrix element.
+
+Use $x=f^{-1}$ and coordinates $(t,x,\varphi)$, in which
+\begin{equation}
+ g_0=\operatorname{diag}\left(-x^{-1},\frac1{4x^2(1-x)},\frac{1-x}{x}\right),
+ \qquad \dd V=\frac{\dd t\dd x\dd\varphi}{2x^2}.
+\end{equation}
+The normalized scalar modes needed are
+\begin{align}
+ a_0&=\frac{x^{\Delta/2}}{\sqrt{2\pi}}e^{-i\Delta t},\nonumber\\
+ a_1&=\frac{x^{\Delta/2}}{\sqrt{2\pi}}
+       [\Delta-(\Delta+1)x]e^{-i(\Delta+2)t},\nonumber\\
+ a_\pm&=\frac{\sqrt\Delta\,x^{\Delta/2}\sqrt{1-x}}{\sqrt{2\pi}}
+       e^{-i(\Delta+1)t\pm i\varphi}.
+ \label{eq:ABmodes}
+\end{align}
+Let $p_0$ solve $\mathcal E^{(1)}p_0=T[a_0,a_0^*]/2$. An explicit polar-areal seed is
+\begin{equation}
+ p_0=\operatorname{diag}\left(
+ \frac\Delta{4\pi},\frac{\Delta(1-x^{\Delta-1})}{16\pi x(1-x)},0\right).
+ \label{eq:seednoncirc}
+\end{equation}
+The Killing generator has components
+\begin{equation}
+ R_+=e^{-it+i\varphi}\left(
+ \frac{i\sqrt{1-x}}2\partial_t+x\sqrt{1-x}\partial_x
+ -\frac{i}{2\sqrt{1-x}}\partial_\varphi\right).
+\end{equation}
+Since $\mathcal L_{R_+}a_0=\sqrt\Delta\,a_+$ and
+$\mathcal L_{R_+}a_0^*=0$, the \emph{field-equation} covariance gives
+$q_+=\mathcal L_{R_+}p_0/\sqrt\Delta$ as a response to $T[a_0^*,a_+]$.
+Explicitly, with $y=\sqrt{1-x}$,
+\begin{equation}
+ q_+=\frac{\sqrt\Delta}{16\pi}e^{-it+i\varphi}
+ \begin{pmatrix}
+ 4y&-i(2x-x^\Delta)/(xy)&-2y\\
+ -i(2x-x^\Delta)/(xy)&(x-\Delta x^\Delta)/(x^2y)&i(x-x^\Delta)/(xy)\\
+ -2y&i(x-x^\Delta)/(xy)&0
+ \end{pmatrix}.
+ \label{eq:qplus}
+\end{equation}
+The parity transform gives $q_-$, a response to $T[a_0^*,a_-]$. Their $J=\pm1$ source harmonics are genuinely noncircular. A response to the same-sign pair $T[a_0^*,a_1^*]$ is
+\begin{equation}
+ q_{\rm s}=e^{i(2\Delta+2)t}\operatorname{diag}\left(
+ \frac{\Delta^2x^\Delta(x-1)}{4\pi},
+ \frac{\Delta x^{\Delta-2}[(\Delta+2)x-\Delta]}{16\pi},0\right).
+ \label{eq:qABsame}
+\end{equation}
+It follows either from the circular constraints or by direct substitution. These responses obey $\mathcal E^{(1)}q=T/2$, regularity at the centre and Brown--Henneaux falloffs. The apparent square roots in \eqref{eq:qplus} are coordinate singularities: $p_0$ and $R_+$ are smooth in Cartesian coordinates at the centre. No de Donder representative is necessary, by Section~\ref{sec:pairedcollapse}.
+
+Define the three fully normalized, zero-frequency pairings
+\begin{align}
+ I_+&=\int_\Sigma q_+^{\mu\nu}T[a_1^*,a_-]_{\mu\nu},&
+ I_-&=\int_\Sigma q_-^{\mu\nu}T[a_1^*,a_+]_{\mu\nu},\nonumber\\
+ I_{\rm s}&=\int_\Sigma q_{\rm s}^{\mu\nu}T[a_+,a_-]_{\mu\nu}.
+\end{align}
+Angular integration gives $\pi\int_0^1\dd x/x^2$ times the tensor contraction. Expansion into powers of $x$ and use of $\int_0^1x^{a-1}\dd x=1/a$ yield
+\begin{align}
+ I_+=I_-&=-\frac{\Delta^2(8\Delta-3)}{16\pi(2\Delta-1)(2\Delta+1)},\nonumber\\
+ I_{\rm s}&=\frac{\Delta^2(2\Delta-5)}{16\pi(2\Delta-1)(2\Delta+1)(2\Delta+3)}.
+ \label{eq:ABintegrals}
+\end{align}
+All integrals converge for $\Delta>1$. The three-partition coefficient in \eqref{eq:crossnormalization} gives the independently calculated answer
+\begin{equation}
+ \boxed{\frac{V_{AB}}G=-32\pi(I_++I_-+I_{\rm s})
+ =\frac{2\Delta^2(32\Delta^2+34\Delta-13)}
+ {(2\Delta-1)(2\Delta+1)(2\Delta+3)}.}
+ \label{eq:VAB}
+\end{equation}
+Only \emph{after} integrating do we compare with the spectral prediction
+$V_{AB}=(\gamma_{00}-\gamma_{10})/2$; the two expressions agree identically. The separate crossed and same-sign integrals agree with the corresponding channel differences as well.
+
+For a transparent rational check, at $\Delta=2$ the radial integrands including $2\pi r$ are
+\begin{align}
+ \mathcal I_+(r)=\mathcal I_-(r)
+ &=\frac{r(4r^6-r^4-4r^2-2)}{\pi(1+r^2)^6},\nonumber\\
+ \mathcal I_{\rm s}(r)
+ &=-\frac{2r^3(2r^2-1)(r^4-3r^2-1)}{\pi(1+r^2)^8}.
+\end{align}
+Their integrals are $-13/(60\pi)$, $-13/(60\pi)$ and $-1/(420\pi)$, respectively. Thus
+\begin{equation}
+ \left.\frac{V_{AB}}G\right|_{\Delta=2}
+ =\frac{104}{15}+\frac{104}{15}+\frac8{105}=\frac{488}{35}.
+\end{equation}
+In addition to the symbolic-mass integrations, the local xCoba implementation verifies every Einstein component for all three responses at arbitrary $\Delta>1$. It uses the background connection computed by xCoba and the independently verified off-shell Einstein identity. The seed and same-sign response are thus checked directly; the angular response also follows from the separately checked scalar ladder and Killing covariance. The mass is left symbolic throughout these checks.
+
+\section{Interpretation and remaining physical scope}
+
+\subsection{Binding, low-spin effects, and special masses}
+
+The ground coefficient simplifies to
+\begin{equation}
+ g_{00}=\frac{2\Delta^2(7+2\Delta-8\Delta^2)}{4\Delta^2-1}.
+\end{equation}
+It is positive for $1<\Delta<(1+\sqrt{57})/8$ and negative above that interval. This does not follow from a universal attractive-potential argument: when $1<\Delta<2$, $\mu<0$ and the finite-radius mass $M_0(r)$ in \eqref{eq:H4} is not pointwise positive. Positivity of the total energy does not make every partial radial mass positive. The correct statement is a positive connected shift of this particular two-particle state in the specified theory, not a general claim that gravity becomes repulsive.
+
+At fixed $n$ and large $\Delta$ the leading shift is attractive. At large radial level with fixed $\Delta$, the universal term grows quadratically while the low-spin corrections grow linearly. These asymptotics describe the coefficients; perturbation theory still requires the retained states to remain in the weak-backreaction regime.
+
+The auxiliary no-log de Donder construction in the source notes excludes
+$\Delta_*=(1+\sqrt5)/2$. No denominator in the physical coefficient formulas vanishes there. The conformal response used in the spin-zero calculation and the canonical reduction show why a gauge-indicial restriction should not be identified with a singular energy. The formulas extend there by continuity at each fixed level. The only apparent denominator zero inside $\Delta>1$ is the removable $n=0,\Delta=3/2$ point already discussed.
+
+\subsection{Structural degeneracies and the scalar-primary branch}
+\label{sec:branches}
+
+Boundary gravitons are physical. They cannot be removed by declaring a scalar-only compression to be the complete Hilbert space, or by calling every coincident free energy accidental. We use the standard positive-energy Brown--Henneaux representation, with
+\begin{equation}
+ [L_m,L_n]=(m-n)L_{m+n}+\frac c{12}m(m^2-1)\delta_{m+n,0},
+ \quad L_m^\dagger=L_{-m},\quad c=\frac3{2G}+O(1),
+\end{equation}
+and a commuting barred copy. The vacuum gap and physical one-scalar weight are fixed as above. At each fixed level $c$ is large while the scalar weights stay finite. The existence of this perturbative charge representation is an input of Brown--Henneaux quantization, not a nonperturbative construction of quantum gravity in this paper.
+
+\paragraph{Counting the primary branches.}
+At $G=0$ a normalized boundary-graviton oscillator is proportional to
+$L_{-m}/\sqrt{c\,m(m^2-1)/12}$, $m\geq2$. Let $u,v$ be formal character variables. The scalar-only symmetric two-particle space has the multiplicity-one global decomposition
+\begin{equation}
+ \chi_{2\phi}^{\rm global}(u,v)=
+ \sum_{\substack{n\geq0\\\ell\in2\mathbb Z}}
+ \frac{u^{\Delta+n+\ell_+}v^{\Delta+n+\ell_-}}{(1-u)(1-v)},
+ \qquad \ell_\pm=\max(\pm\ell,0).
+\end{equation}
+Multiplying by the independent vacuum-orbit oscillators gives
+\begin{align}
+ \chi_{2\phi}^{\rm global}(u,v)
+ \prod_{m\geq2}\frac1{(1-u^m)(1-v^m)}
+ =\sum_{\substack{n\geq0\\\ell\in2\mathbb Z}}
+ u^{\Delta+n+\ell_+}v^{\Delta+n+\ell_-}
+ \prod_{m\geq1}\frac1{(1-u^m)(1-v^m)}.
+ \label{eq:characterbranches}
+\end{align}
+Thus in the two-scalar sector there is exactly one non-null Virasoro-primary branch per free scalar global primary; boundary gravitons fill out the descendants, rather than adding a new primary at each of their global quasiprimary levels. This is a coefficientwise finite-level character identity, so it does not require summing an infinite thermal trace.
+
+\paragraph{A projector, not an inverse energy denominator.}
+Take a complete formal perturbative spectral cluster continuing a given free $(E_0,J)$. Denote its projector by $P_{\rm cl}$. Let the columns of $D$ be a linearly independent list of all proper Virasoro descendants of lower primaries lying in that cluster, and let $\mathsf G=D^\dagger D$. At non-null generic parameters define
+\begin{equation}
+ \Pi_{\rm prim}=P_{\rm cl}-D\mathsf G^{-1}D^\dagger.
+ \label{eq:primaryprojector}
+\end{equation}
+The columns are actual perturbative descendants in the complete cluster, not a list of free scalar states. Rescaling any column by a nonzero factor leaves $D\mathsf G^{-1}D^\dagger$ unchanged. We may therefore use the normalized large-$c$ oscillator basis when taking the free limit, rather than invert an unrescaled Gram matrix at $c=\infty$. This prescription defines the branch in a supplied perturbative charge representation; it is not a constructive determination of all its dressing coefficients.
+The descendant subspace is invariant under $H$ and $J$, so its orthogonal complement is invariant. For a vector in that complement, orthogonality to every $L_{-m}|v\rangle$ and $\bar L_{-m}|v\rangle$ implies
+\begin{equation}
+ L_{m>0}|P\rangle=\bar L_{m>0}|P\rangle=0.
+\end{equation}
+The projector therefore selects primaries. By \eqref{eq:characterbranches} its leading scalar-two-particle rank is one for fixed $(n,\ell)$, provided no \emph{other primary} is genuinely degenerate there. Its normalized image on the free global primary defines
+\begin{equation}
+ |P_{n\ell}(G)\rangle=
+ \frac{\Pi_{\rm prim}(G)|p^{(0)}_{n\ell}\rangle}
+ {\|\Pi_{\rm prim}(G)|p^{(0)}_{n\ell}\rangle\|},
+ \quad |P_{n\ell}(G)\rangle=|p^{(0)}_{n\ell}\rangle+O(c^{-1/2}).
+ \label{eq:branchdefinition}
+\end{equation}
+Nonvanishing of the leading norm and rank stability follow at every fixed finite grade from the non-null Gram form and the large-$c$ oscillator basis. The one-dimensional invariant image is an energy branch. Importantly, \eqref{eq:primaryprojector} inverts a Gram matrix, not $(E_0-H_0)$ on structurally degenerate states. It is not equivalent to simply projecting out free boundary-graviton excitations before perturbing.
+
+\paragraph{The first structural degeneracy explicitly.}
+For a chiral primary $|h\rangle$, the level-two Gram matrix in the ordered basis
+$(L_{-2}|h\rangle,L_{-1}^2|h\rangle)$ is
+\begin{equation}
+ \mathsf G_2=
+ \begin{pmatrix}
+ c/2+4h&6h\\ 6h&4h(2h+1)
+ \end{pmatrix}.
+ \label{eq:Gram2}
+\end{equation}
+The extra global quasiprimary is
+\begin{equation}
+ |Q_2\rangle=\left(L_{-2}-\frac3{2(2h+1)}L_{-1}^2\right)|h\rangle,
+ \quad L_1|Q_2\rangle=0,
+\end{equation}
+with
+\begin{equation}
+ \nu_2=\langle Q_2|Q_2\rangle
+ =\frac c2+\frac{h(8h-5)}{2h+1}
+ =\frac{c-1}{2}+\frac{(4h-1)^2}{2(2h+1)}>0
+ \quad(c>1,h>0).
+ \label{eq:nu2}
+\end{equation}
+But $L_2|Q_2\rangle=\nu_2|h\rangle$, so it is not a Virasoro primary. A candidate global primary $|v\rangle$ at this level is made orthogonal to this descendant by subtracting
+$|Q_2\rangle\langle Q_2|v\rangle/\nu_2$; this is the simplest term in \eqref{eq:primaryprojector}.
+
+In the two-scalar problem, $L_{-2}|P_{00}\rangle$, $L_{-1}^2|P_{00}\rangle$ and the new $|P_{0,2}\rangle$ all have free $(E,J)=(2\Delta+2,2)$. In the interacting theory the first two gaps are
+$2\Delta+2+Gg_{00}+O(G^2)$, while the primary gap is
+$2\Delta+2+Gg_{02}+O(G^2)$. This degeneracy exists at generic $\Delta$; choosing a generic scalar mass does not remove it.
+
+\paragraph{Why the order-$G$ logarithm selects this primary branch.}
+At fixed light weights, the non-global quasiprimary pieces of a Virasoro block have coefficients $O(1/c)$. One sees this directly at level two: for equal external chiral weights $a$, the Ward overlap relative to the primary three-point coefficient is
+\begin{equation}
+ \rho_2=h+a-\frac{3h(h+1)}{2(2h+1)},\qquad
+ \frac{\rho_2^2}{\nu_2}=O(c^{-1}).
+ \label{eq:rho2}
+\end{equation}
+At higher fixed levels, orthogonalization against global descendants and central-term counting in the Gram form give the same suppression for every additional global quasiprimary. Equivalently, the light-weight Virasoro block has the global expansion \cite{Perlmutter}
+\begin{equation}
+ \mathcal V_h(z)=k_h(z)+\frac1c\sum_{q\geq2}v_q(h,a)k_{h+q}(z)+O(c^{-2}),
+ \label{eq:Virglobal}
+\end{equation}
+up to the common external kinematic factor. At fixed $h$ the bracketed power series at $z=0$ contains no $\log z$. Only shifting a weight produces that logarithm. Since $\delta h=Gg/2=O(c^{-1})$, shifting a non-global descendant term in \eqref{eq:Virglobal} produces an additional logarithm only at $O(G^2)$, not $O(G)$. Corrections to OPE coefficients likewise do not produce an order-$G$ logarithm.
+
+Consequently the coefficient \eqref{eq:logfactor}, after the ordinary global descendant resummation, measures the energy of the scalar-primary branch \eqref{eq:branchdefinition}. The structural boundary-graviton states affect nonlogarithmic four-point data already at this order and affect state multiplicities; they are neither absent nor being counted as additional primary energy shifts. This argument closes the primary-energy interpretation without requiring every bare Fock-space dressing coefficient.
+
+\paragraph{Genuine primary degeneracies remain a separate condition.}
+The above rank-one statement assumes no coincident primary from a different matter sector. This is more precise than excluding boundary-graviton descendants. In the real-scalar even sector, a $2s$-scalar primary, $s\geq2$, has free chiral weights of the form $s\Delta+K_L,s\Delta+K_R$. Coincidence with a two-scalar primary requires $(s-1)\Delta\in\mathbb Z$ as well as nonnegative matching levels. Irrational $\Delta>1$ is a sufficient all-level exclusion; at a fixed energy only finitely many candidates need be excluded. At a genuine collision \eqref{eq:primaryprojector} can have rank greater than one and an additional \emph{primary} mixing matrix is needed. For example $\Delta=2$ allows a double-scalar $(n,\ell)=(2,0)$ and the four-scalar ground primary at free energy eight. This observation does not assert that their mixing is nonzero. It states exactly where the present scalar-connected coefficient is not, by itself, a full diagonalization result. The direct test \eqref{eq:VAB} lies at energy six when $\Delta=2$ and does not require this higher matter block. Formulas at such special parameters retain their meaning as fixed-channel analytic tree coefficients.
+
+\subsection{What is and is not established}
+
+The theorem gives a closed all-$n$ completion of the minimal connected tree result, using a known high-spin tail, explicitly normalized primary form factors, and an all-level uniqueness argument. It does not follow merely from fitting the previous finite radial data. Conversely, finite exact checks of the radial recursion do not establish a theorem about infinite sums of modes. The paired boundary identity and an arbitrary-mass noncircular integral are supplied explicitly. The primary-energy interpretation uses a non-null positive-energy Virasoro charge representation and excludes genuine additional-primary collisions, but includes structural boundary-graviton descendants. No UV regulator-specific self-energy, independent contact coupling, higher-loop term, nonstandard scalar quantization, or infinite-mode convergence statement has been included.
+
+\appendix
+\section{Normalization of the local form factors}
+\label{app:normalization}
+
+The norm identity underlying \eqref{eq:CG} is
+\begin{equation}
+ \sum_{p=0}^K\frac{\binom Kp}{(\Delta)_p(\Delta)_{K-p}}
+ =\frac{(2\Delta+K-1)_K}{(\Delta)_K^2}.
+\end{equation}
+At the centre only scalar modes of angular momentum zero contribute to $F$, and only angular momentum one contributes to a first spatial derivative. With $w=x+iy$ a regular complex Cartesian coordinate, \eqref{eq:centremode} gives
+\begin{equation}
+ \dd u_{r+1,r}\big|_0=\frac{(-1)^r}{\sqrt{2\pi}}
+ \sqrt{(r+1)(\Delta+r)}\,\dd w.
+\end{equation}
+Set
+\begin{align}
+ R_1^2&=\frac{h(n+1)(2\Delta+n-1)}{2(2h-1)},\\
+ R_2^2&=\frac{h(h+1)(n+1)(n+2)(2\Delta+n-1)(2\Delta+n)}{4(2h-1)(2h+1)}.
+\end{align}
+The coefficient formula \eqref{eq:CG} immediately gives the $r$-independent ratios
+\begin{align}
+ \frac{v_r^{(n+1)}}{v_r^{(n)}}
+ \sqrt{(n-r+1)(\Delta+n-r)}&=R_1,\\
+ \frac{v_{r+1}^{(n+1)}}{v_r^{(n)}}
+ \sqrt{(r+1)(\Delta+r)}&=-R_1,\\
+ \frac{v_{r+1}^{(n+2)}}{v_r^{(n)}}
+ \sqrt{(r+1)(\Delta+r)(n-r+1)(\Delta+n-r)}&=-R_2.
+\end{align}
+Consequently the current centre sum is $(-1)^nR_1\dd w/\pi$, while the identical stress centre sum is
+$(-1)^{n+1}R_2\dd w^2/(\sqrt2\pi)$.
+Since $W^{(E,1)}|_0=i\dd w$ and
+$W^{(E,2)}|_0=-\dd w^2$, this proves
+$|A_1|^2=R_1^2/\pi^2$ and $|A_2|^2=R_2^2/(2\pi^2)$.
+
+The elementary contraction
+\begin{equation}
+ v\cdot v=0,\qquad v\cdot v^*=\frac2{r^2f}
+\end{equation}
+gives \eqref{eq:Wnorm} by integrating
+$2\pi 2^s\int_0^\infty r f^{-E-s}\dd r$.
+For completeness, the two lowering vectors used to check the primary equations are
+\begin{equation}
+ D_\sigma=\frac12 e^{it-i\sigma\varphi}
+ \left(\frac{ir}{\sqrt f}\partial_t+\sqrt f\partial_r
+ -\frac{i\sigma\sqrt f}{r}\partial_\varphi\right),\qquad \sigma=\pm1.
+\end{equation}
+The supplied tensor script checks $\mathcal L_{D_\sigma}W=0$, transversality, tracelessness where appropriate, and every component of \eqref{eq:Weigen}, with symbolic $E$ and $r$.
+
+\section{Block identities and arbitrary-index certificates}
+\label{app:certificate}
+
+A useful check on the all-level high-spin coefficient extraction is the identity
+\begin{equation}
+ \sum_{n\geq0}p_n U_n k_{\Delta+n}(z)
+ =-4\Delta^2\frac{1+z}{1-z}\left(\frac{z}{1-z}\right)^\Delta.
+ \label{eq:tailidentity}
+\end{equation}
+Indeed, the direct-channel chiral Casimir
+$D_s=z^2(1-z)\partial_z^2-z^2\partial_z$ has eigenvalue $h(h-1)$ on $k_h$.
+Acting with $4\mu-8D_s$ on the free expansion of
+$F(z)=[z/(1-z)]^\Delta$ proves \eqref{eq:tailidentity}, since
+$D_sF=[\Delta^2/(1-z)-\Delta]F$.
+The rational factor on the right is precisely the logarithmic factor in crossed stress-tensor exchange. The use of inversion above spin two remains the input specified in Section~\ref{sec:cross}; this identity does not extend inversion to spin zero by itself.
+
+Write $k_h(z)=z^h\sum_{j\geq0}f_j(h)z^j$, where
+$f_j(h)=(h)_j^2/[(2h)_j j!]$. For $j\geq2$, define
+\begin{align}
+ r_1&=\frac{f_{j-1}(h)}{f_j(h)}
+ =\frac{j(2h+j-1)}{(h+j-1)^2},\\
+ r_2&=\frac{f_{j-2}(h)}{f_j(h)}
+ =\frac{j(j-1)(2h+j-1)(2h+j-2)}{(h+j-1)^2(h+j-2)^2},\\
+ r_-&=\frac{f_j(h-1)}{f_j(h)}
+ =\frac{(h-1)^2(2h+j-2)(2h+j-1)}{(h+j-1)^2(2h-2)(2h-1)},\\
+ r_+&=\frac{f_{j-2}(h+1)}{f_j(h)}
+ =\frac{j(j-1)(2h)(2h+1)}{h^2(h+j-1)^2}.
+\end{align}
+The coefficient of $z^{h-1+j}$ in the left side of \eqref{eq:threeblock}, divided by $f_j(h)$, is
+\begin{equation}
+ (h+j-\Delta)^2+r_1[-2(h+j-1)(h+j-1-\Delta)-\Delta]
+ +r_2(h+j-2)^2.
+\end{equation}
+The right side, divided by the same coefficient, is
+\begin{equation}
+ (\Delta-h)^2r_-+\frac{\mu-h(h-1)}2r_1
+ +\frac{h^2(\Delta+h-1)^2}{4(2h-1)(2h+1)}r_+.
+\end{equation}
+Clearing denominators gives an identically zero polynomial in $j,h,\Delta$. The $j=0,1$ coefficients agree directly. This proves the entire three-term identity. The symbolic script includes this arbitrary-$j$ certificate and the determinant calculation \eqref{eq:det}; its checks do not replace the field-theoretic derivation of the contact source.
+
+\section{Reproducibility and provenance}
+
+The canonical reduction and radial reconstruction are recorded at the pinned repository commit \cite{notes}. The imported first and second drafts are preserved unchanged under \texttt{imported/}; this editable manuscript is under \texttt{article/}. The second draft's accompanying proof audit and Chinese closure note are retained as provenance. The present review incorporates the paired collapse, boundary estimates, normalization, primary-branch argument and noncircular integral, without changing the closed coefficients.
+
+Independent checks live in the adjacent \texttt{scripts/} directory. With Wolfram Language, xAct and SageMath installed, run there:
+\begin{verbatim}
+wolframscript -file closed_form_spectrum_audit.wl
+wolframscript -file exchange_contact_audit.wl
+wolframscript -file revision2_tensor_audit.wl
+wolframscript -file revision2_component_audit.wl
+wolframscript -file revision2_noncircular_audit.wl
+sage revision2_branch_audit.sage
+\end{verbatim}
+Each audit saves a separate JSON report; the revision-2 audits fail if a tested residual is nonzero. The tensor audit uses xPert/xTras for the arbitrary off-shell Einstein identity and checks both Green currents. The component audit uses xCoba to test the full six-component radial Lie-Casimir operator and all Einstein equations for the three displayed responses at symbolic mass. The integration audit contracts the explicit tensors and evaluates the noncircular matrix element before comparing it with the spectrum. The Sage audit derives the level-two Gram matrix from Virasoro commutators, tests the norm and projector, and compares all 81 symmetric-two-scalar character coefficients with chiral grades at most eight. Those finite character checks support the coefficientwise argument; they do not replace it or construct the interacting Brown--Henneaux charges.
+
+The earlier local audit checked the 25 saved symbolic spectrum coefficients, the arbitrary-index recurrence and the uniqueness determinant. It also reproduced the imported first package's 21 symbolic identities, explicit primary tensor checks and 588 exact radial channel comparisons at $N\leq12$, at four rational masses. Those records remain separate from the new checks; unchanged tests are not represented as freshly rerun. The imported second draft referred to additional Python scripts that were not present in the supplied files. The independently executed checks above supply the local verification evidence instead.
+
+Boundary estimates and the finite-source construction are analytic arguments on the domain of Section~\ref{sec:pairedcollapse}. The primary interpretation additionally assumes the perturbative positive-energy, non-null charge representation and absence of another degenerate matter primary. The local review record \texttt{revision 2 audit.md} distinguishes these inputs from symbolic residual checks. No infinite-mode theorem, full bare Fock-space dressing map, extra-primary mixing matrix, higher-loop result or exhaustive novelty assessment is claimed. To rebuild the article, run \texttt{latexmk -pdf paper.tex} in \texttt{article/}.
+
+\begin{thebibliography}{9}
+\bibitem{FS}
+A.~L.~Fitzpatrick and D.~Shih,
+\emph{Anomalous Dimensions of Non-Chiral Operators from AdS/CFT},
+\arxiv{1104.5013}.
+
+\bibitem{KSS}
+P.~Kraus, A.~Sivaramakrishnan and R.~Snively,
+\emph{Late time Wilson lines},
+\arxiv{1810.01439}, especially Section 4.2.
+
+\bibitem{CH}
+S.~Caron-Huot,
+\emph{Analyticity in Spin in Conformal Theories},
+\arxiv{1703.00278}.
+
+\bibitem{ABP}
+L.~F.~Alday, A.~Bissi and E.~Perlmutter,
+\emph{Holographic Reconstruction of AdS Exchanges from Crossing Symmetry},
+\arxiv{1705.02318}.
+
+\bibitem{HW}
+D.~Harlow and J.-q.~Wu,
+\emph{Covariant phase space with boundaries},
+\arxiv{1906.08616}.
+
+\bibitem{Perlmutter}
+E.~Perlmutter,
+\emph{Virasoro conformal blocks in closed form},
+\arxiv{1502.07742}, especially the global-block decomposition.
+
+\bibitem{LM}
+Y.-Z.~Li and J.~Mei,
+\emph{Bootstrapping Witten diagrams via differential representation in Mellin space},
+\arxiv{2304.12757}.
+
+\bibitem{notes}
+\begingroup\raggedright
+GaoZ1en, \emph{Einstein--scalar response and particle-spectrum research notes},
+\texttt{obsidian\_note}, commit
+\href{https://github.com/GaoZ1en/obsidian_note/commit/3ea676ef5a43cd11a18f551b0adcac222abc8b9a}{\texttt{3ea676e}} (12 September 2026),
+\texttt{Articles/Quantization in AdS/linearized gravity/}.
+In particular, \emph{gravity scalar one and two particle spectrum.md} and
+\texttt{scripts/gravity\_scalar\_radial\_blocks.wl}.
+\par\endgroup
+\end{thebibliography}
+\end{document}

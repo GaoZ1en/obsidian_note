@@ -1,0 +1,19 @@
+{
+  "source_conversation": "6aa4eafe-2958-83e9-8f8b-d060aaefc371",
+  "files": {
+    "paper.tex": {
+      "sha256": "f2e346ca44a879ffe90a9af5b26569a23eeb89a365a7d7a18b9418c1d8572c01",
+      "bytes": 38725
+    },
+    "ads3_tree_spectrum_draft.pdf": {
+      "sha256": "6dad06e8d9a5e1583fb329ce6bcceab1eff1fed2b536ce7405f4df372a10dc4e",
+      "bytes": 366043
+    },
+    "ads3_tree_spectrum_source.zip": {
+      "sha256": "173bd456eb13a50e449e9d81c6e83c054c3b28a0e661b5ece0673db2e4d47bd9",
+      "bytes": 389879
+    }
+  },
+  "standalone_tex_matches_archive": true,
+  "standalone_pdf_matches_archive": true
+}

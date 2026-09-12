@@ -1,0 +1,17 @@
+{
+	"engine":"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)",
+	"packages":[
+		"xCoba",
+		"xTras"
+	],
+	"assumptions":"unit AdS3; six arbitrary HH(x) tensor inputs with symbolic frequency and angular harmonic; all source equations symbolic Delta>1",
+	"residuals":{
+		"xCoba_background_Ricci_scalar":"0",
+		"six_component_radial_Casimir_operator":"{{{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}}",
+		"scalar_KG_equations":"{0, 0, 0}",
+		"seed_Einstein_equation":"{{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}",
+		"noncircular_Einstein_equation":"{{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}",
+		"same_sign_Einstein_equation":"{{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}"
+	},
+	"allPassed":true
+}

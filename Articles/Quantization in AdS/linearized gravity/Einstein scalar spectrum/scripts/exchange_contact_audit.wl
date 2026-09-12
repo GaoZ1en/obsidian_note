@@ -1,0 +1,28 @@
+Needs["xAct`xTensor`"];
+Needs["xAct`xPert`"];
+Needs["xAct`xTras`"];
+DefManifold[MM,3,{a,b,c,d,e,i,j}];
+DefMetric[-1,gg[-a,-b],CD];
+DefTensor[aa[],MM];DefTensor[bb[],MM];DefTensor[cc[],MM];DefTensor[dd[],MM];
+DefTensor[ss[],MM];DefConstantSymbol[mu];
+norm[ex_]:=FullSimplification[][ToCanonical[ContractMetric[Expand[ex]]]];
+stress[u_,v_,i_,j_]:=(CD[i][u]CD[j][v]+CD[j][u]CD[i][v])/2-gg[i,j](Scalar[CD[a][u]CD[-a][v]]+mu u v)/2;
+trace[u_,v_]:=-Scalar[CD[a][u]CD[-a][v]]/2-3mu u v/2;
+jform[u_,v_,i_]:=u CD[i][v]-v CD[i][u];
+djform[u_,v_,i_,j_]:=2(CD[i][u]CD[j][v]-CD[j][u]CD[i][v]);
+lhs=stress[aa[],cc[],i,j]stress[bb[],dd[],-i,-j]-trace[aa[],cc[]]trace[bb[],dd[]];
+rhs=(CD[i][aa[]]CD[-i][bb[]])(CD[j][cc[]]CD[-j][dd[]])/2-djform[aa[],bb[],i,j]djform[cc[],dd[],-i,-j]/16-mu (CD[i][aa[]bb[]]CD[-i][cc[]dd[]]+jform[aa[],bb[],i]jform[cc[],dd[],-i])/4-3mu^2 aa[]bb[]cc[]dd[]/2;
+checks=<|"contact_decomposition_off_shell"->norm[lhs-rhs]|>;
+DefMetricPerturbation[gg,hh,eps];
+ads={RicciCD[x_,y_]:>-2gg[x,y],RicciScalarCD[]->-6};
+ein=RicciCD[-i,-j]-gg[-i,-j]RicciScalarCD[]/2-gg[-i,-j];
+lin=ExpandPerturbation[Perturbation[ein,1]]/.hh[LI[1],x_,y_]:>gg[x,y]ss[];
+ds=CD[-i][CD[-j][ss[]]]-gg[-i,-j](CD[a][CD[-a][ss[]]]-2ss[]);
+AppendTo[checks,"conformal_Einstein_response"->norm[(lin+ds/2)/.ads]];
+AppendTo[checks,"scalar_tensor_trace"->norm[gg[i,j]ds+2(CD[a][CD[-a][ss[]]]-3ss[])]];
+Print["RESIDUALS: ",checks];
+Print["ALL_ZERO: ",AllTrue[Values[checks],SameQ[#,0]&]];
+
+ok=AllTrue[Values[checks],SameQ[#,0]&];
+Export[FileNameJoin[{DirectoryName[$InputFileName],"exchange_contact_audit_results.json"}],<|"engine"->$Version,"packages"->{"xTensor","xPert","xTras"},"assumptions"->"dimension 3, signature -++, unit-radius AdS for conformal Einstein variation", "residuals"->Map[ToString[#,InputForm]&,checks],"allPassed"->ok|>,"RawJSON"];
+If[!ok,Exit[1]];

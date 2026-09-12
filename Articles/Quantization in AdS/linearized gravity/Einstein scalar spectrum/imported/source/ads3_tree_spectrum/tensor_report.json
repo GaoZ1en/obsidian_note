@@ -1,0 +1,14 @@
+[
+  {
+    "spin": 1,
+    "divergence_zero": true,
+    "laplacian_eigenvalue": "E*(E - 2) - 1",
+    "tensor_components_checked": 3
+  },
+  {
+    "spin": 2,
+    "divergence_zero": true,
+    "laplacian_eigenvalue": "E*(E - 2) - 2",
+    "tensor_components_checked": 9
+  }
+]

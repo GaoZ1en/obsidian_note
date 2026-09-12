@@ -1,0 +1,20 @@
+{
+	"engine":"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)",
+	"assumptions":"Delta>1, source-free normalized modes; metric response field equations checked in the companion geometric audit",
+	"crossed_integrand":"-1\/8*(del*x^(-2 + del)*(del*x^2*(-1 + 4*x - 2*x^del) - 2*x^2*(-2*x + x^del) + del^3*(-1 + x)^2*(-x + x^del) + del^2*(-1 + x)*x*(-x + x^del)))\/Pi",
+	"same_sign_integrand":"-1\/8*(del^2*(-1 + x)*x^(-2 + 2*del)*(del*(-1 + x) + x)*(del + 2*del*(-2 + x)*x + 2*(-1 + x)*x))\/Pi",
+	"crossed_integral":"(del^2*(-3 + 8*del))\/(8*(2 - 8*del^2)*Pi)",
+	"same_sign_integral":"(del^2*(-5 + 2*del))\/(16*(-3 - 2*del + 12*del^2 + 8*del^3)*Pi)",
+	"VAB_over_G":"(2*del^2*(-13 + 34*del + 32*del^2))\/((3 + 2*del)*(-1 + 4*del^2))",
+	"residuals":{
+		"Killing_response":"{{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}",
+		"scalar_ladder":"0",
+		"conjugate_ladder":"0",
+		"crossed_integral":"0",
+		"same_sign_integral":"0",
+		"independent_spectral_comparison":"0",
+		"Delta2":"0",
+		"three_KG_norms":"{0, 0, 0}"
+	},
+	"allPassed":true
+}

@@ -1,0 +1,15 @@
+{
+	"engine":"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)",
+	"packages":[
+		"xTensor",
+		"xPert",
+		"xTras"
+	],
+	"assumptions":"unit-radius AdS3; q and k arbitrary symmetric tensors; no gauge\/source equations",
+	"residuals":{
+		"off_shell_Einstein_identity":"0",
+		"Casimir_Green_current":"0",
+		"Einstein_Green_current":"0"
+	},
+	"allPassed":true
+}

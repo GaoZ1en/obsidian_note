@@ -1,0 +1,18 @@
+{
+  "engine": "SageMath exact rational functions",
+  "character_max_chiral_grade": 8,
+  "assumptions": "fixed finite grade; non-null large-c light-weight representation is an input",
+  "checks": {
+    "Gram_from_Virasoro_commutators": true,
+    "Q2_L1_zero": true,
+    "Q2_L2_norm": true,
+    "Q2_norm": true,
+    "positive_norm_decomposition": true,
+    "projector_idempotent": true,
+    "projector_Gram_self_adjoint": true,
+    "projector_removes_Q2": true,
+    "Ward_Q2_overlap": true,
+    "81_symmetric_two_scalar_character_coefficients": true
+  },
+  "allPassed": true
+}

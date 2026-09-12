@@ -1,0 +1,34 @@
+(* Direct tensor contractions and integrals, independent of the primary-spectrum reconstruction. *)
+ClearAll["Global`*"];
+$Assumptions=del>1&&0<x<1&&Element[{t,ang},Reals];
+coords={t,x,ang};
+metric=DiagonalMatrix[{-1/x,1/(4x^2(1-x)),(1-x)/x}];
+inv=Inverse[metric];
+mu=del(del-2);
+stress[u_,v_]:=Table[(D[u,coords[[i]]]D[v,coords[[j]]]+D[v,coords[[i]]]D[u,coords[[j]]])/2-metric[[i,j]](Sum[inv[[k,l]]D[u,coords[[k]]]D[v,coords[[l]]],{k,3},{l,3}]+mu u v)/2,{i,3},{j,3}];
+mode0=x^(del/2)Exp[-I del t]/Sqrt[2Pi];
+mode1=x^(del/2)(del-(del+1)x)Exp[-I(del+2)t]/Sqrt[2Pi];
+modep=Sqrt[del]x^(del/2)Sqrt[1-x]Exp[-I(del+1)t+I ang]/Sqrt[2Pi];
+modem=modep/.ang->-ang;
+cc[u_]:=ComplexExpand[Conjugate[u]]//FullSimplify;
+seed=DiagonalMatrix[{del/(4Pi),del(1-x^(del-1))/(16Pi x(1-x)),0}];
+rv=Exp[-I t+I ang]{I Sqrt[1-x]/2,x Sqrt[1-x],-I/(2Sqrt[1-x])};
+lie[v_,q_]:=Table[Sum[v[[k]]D[q[[i,j]],coords[[k]]]+q[[k,j]]D[v[[k]],coords[[i]]]+q[[i,k]]D[v[[k]],coords[[j]]],{k,3}],{i,3},{j,3}];
+qp=Sqrt[del]Exp[-I t+I ang]/(16Pi){{4Sqrt[1-x],-I(2x-x^del)/(x Sqrt[1-x]),-2Sqrt[1-x]},{-I(2x-x^del)/(x Sqrt[1-x]),(x-del x^del)/(x^2 Sqrt[1-x]),I(x-x^del)/(x Sqrt[1-x])},{-2Sqrt[1-x],I(x-x^del)/(x Sqrt[1-x]),0}};
+qs=Exp[I(2del+2)t]DiagonalMatrix[{del^2 x^del(x-1)/(4Pi),del x^(del-2)((del+2)x-del)/(16Pi),0}];
+contract[q_,s_]:=FullSimplify[Tr[inv.q.inv.s]];
+ip=FullSimplify[Pi contract[qp,stress[cc[mode1],modem]]/x^2];
+is=FullSimplify[Pi contract[qs,stress[modep,modem]]/x^2];
+vp=Integrate[ip,{x,0,1},Assumptions->del>1,GenerateConditions->False]//FullSimplify;
+vs=Integrate[is,{x,0,1},Assumptions->del>1,GenerateConditions->False]//FullSimplify;
+checks=<|"Killing_response"->FullSimplify[qp-lie[rv,seed]/Sqrt[del]],"scalar_ladder"->FullSimplify[Sum[rv[[i]]D[mode0,coords[[i]]],{i,3}]-Sqrt[del]modep],"conjugate_ladder"->FullSimplify[Sum[rv[[i]]D[cc[mode0],coords[[i]]],{i,3}]],"crossed_integral"->FullSimplify[vp+del^2(8del-3)/(16Pi(2del-1)(2del+1))],"same_sign_integral"->FullSimplify[vs-del^2(2del-5)/(16Pi(2del-1)(2del+1)(2del+3))]|>;
+vab=FullSimplify[-32Pi(2vp+vs)];
+g00=2del^2(7+2del-8del^2)/(4del^2-1);
+g10=-2del^2(8del^2+46del+47)/((2del+1)(2del+3));
+AppendTo[checks,"independent_spectral_comparison"->FullSimplify[vab-(g00-g10)/2]];
+AppendTo[checks,"Delta2"->FullSimplify[(vab/.del->2)-488/35]];
+AppendTo[checks,"three_KG_norms"->MapThread[FullSimplify[2Pi #1 Integrate[(#2/.{t->0,ang->0})^2/x,{x,0,1},Assumptions->del>1]-1]& ,{{del,del+2,del+1},{mode0,mode1,modep}}]];
+report=<|"engine"->$Version,"assumptions"->"Delta>1, source-free normalized modes; metric response field equations checked in the companion geometric audit", "crossed_integrand"->ToString[ip,InputForm],"same_sign_integrand"->ToString[is,InputForm],"crossed_integral"->ToString[vp,InputForm],"same_sign_integral"->ToString[vs,InputForm],"VAB_over_G"->ToString[vab,InputForm],"residuals"->Map[ToString[#,InputForm]&,checks],"allPassed"->AllTrue[Flatten[Values[checks]],SameQ[#,0]&]|>;
+Export[FileNameJoin[{DirectoryName[$InputFileName],"revision2_noncircular_audit_results.json"}],report,"RawJSON"];
+If[!TrueQ[report["allPassed"]],Print[report];Exit[1]];
+report

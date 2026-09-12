@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "symbolic_identity_count": 21,
+  "identities": [
+    "crossed Casimir: arbitrary hypergeometric coefficient j>=2",
+    "crossed Casimir: coefficient j=0",
+    "crossed Casimir: coefficient j=1",
+    "Markov row sum a+b+c",
+    "crossed universal recurrence L U=2 U",
+    "crossed recurrence: diagonal source",
+    "crossed recurrence: adjacent source",
+    "crossed recurrence: gap at least two",
+    "lower endpoint c_0",
+    "finite-band uniqueness determinant",
+    "spin-one centre sum, first term",
+    "spin-one centre sum, second term",
+    "spin-two centre sum",
+    "contact diagonal normalization",
+    "contact adjacent normalization",
+    "annihilation spin-two normalization",
+    "total spin-zero formula",
+    "ground state agrees with exact circular integral",
+    "first radial excitation",
+    "lowest spin-two primary",
+    "removable Delta=3/2 scalar point"
+  ],
+  "uniqueness_determinant": "960*(Delta + 1)**2*(3*Delta**5 + 24*Delta**4 + 63*Delta**3 + 68*Delta**2 + 33*Delta + 6)/(Delta*(2*Delta + 3)*(2*Delta + 5)*(3*Delta + 2)*(5*Delta + 4))"
+}

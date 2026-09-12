@@ -192,7 +192,7 @@ N_{nj}^2&=\frac{n!\,\Gamma(n+\Delta+|j|)}
 Here $P_n^{(\alpha,\beta)}$ is a Jacobi polynomial. The normalization follows from Jacobi orthogonality with the Klein–Gordon product
 $i\int dr\,d\varphi\,(r/f)(u^*\partial_t v-v\partial_tu^*)$.
 
-For the gravitational modes, use the smooth Brown–Henneaux vacuum-orbit representatives $\zeta_{A,n}$ and their normalization in [higher perturbations of linearized gravity modes](higher%20perturbations%20of%20linearized%20gravity%20modes.md):
+For the gravitational modes, use the smooth Brown–Henneaux vacuum-orbit representatives $\zeta_{A,n}$ and their normalization in [higher perturbations of linearized gravity modes](../higher%20perturbations%20of%20linearized%20gravity%20modes.md):
 
 $$\begin{align}
 \zeta&=\sum_{A=L,R}\sum_{n\geq0}
@@ -338,4 +338,4 @@ Next evaluate the prescribed finite kernel for the selected cutoff, then pull ba
 - **Verified:** 15 additional residual groups pass in [the solution check script](scripts/gravitation_scalar_solution_checks.wl): scalar/vacuum covariance identities, the circular Einstein constraints and their propagation, every Einstein component of the explicit lowest-mode response, the general Jacobi radial equation, lowest-mode KG normalization, and the displayed center/boundary limits. Tensor calculations use xAct/xTras and xCoba; scalar checks use Mathematica.
 - **Assumptions:** the solution construction uses smooth vacuum-orbit gravitational data and the stated homogeneous-data convention. The radial matter solution is circularly symmetric, regular at the center, and uses fixed boundary time. The metric expansion applies where its corrections remain perturbatively small.
 - **Verified:** the de Donder operator, on-shell boundary constraints, radial response matrices, and the closed non-circular pair are checked in [the on-shell response script](scripts/de_donder_onshell_response_checks.wl). The finite-time accessibility proof also uses the explicitly stated analytic energy-domain and asymptotic arguments.
-- **Not computed:** a table of evaluated responses for all mode pairs, the interacting Hamiltonian matrix, and the quantum spectrum. The boundary/corner identity remains source-derived. The finite-order solutions do not establish long-time validity of the nonlinear evolution.
+- **Not computed:** a table of evaluated responses for all mode pairs or the full interacting Hamiltonian matrix. The subsequent leading scalar-primary spectral calculation is in [the spectrum note](gravity%20scalar%20one%20and%20two%20particle%20spectrum.md), with its updated verification and scope in [the audit](closed%20form%20spectrum%20audit.md). The boundary/corner identity remains source-derived. The finite-order solutions do not establish long-time validity of the nonlinear evolution.

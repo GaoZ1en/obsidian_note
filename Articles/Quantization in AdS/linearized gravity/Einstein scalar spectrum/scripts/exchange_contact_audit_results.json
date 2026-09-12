@@ -1,0 +1,22 @@
+{
+	"engine":[
+		"1.4.2",
+		[
+			2014,
+			10,
+			30
+		]
+	],
+	"packages":[
+		"xTensor",
+		"xPert",
+		"xTras"
+	],
+	"assumptions":"dimension 3, signature -++, unit-radius AdS for conformal Einstein variation",
+	"residuals":{
+		"contact_decomposition_off_shell":"0",
+		"conformal_Einstein_response":"0",
+		"scalar_tensor_trace":"0"
+	},
+	"allPassed":true
+}
