@@ -182,7 +182,8 @@ Exit evidence:
   gate.
 
 Verdict: freeze this static-patch lane.  Do not proceed to SdS/Nariai from
-it.  Return instead to two-intersecting-null-surfaces Maxwell composition.
+it.  Reopen only for a demonstrated null-specific input to the active regional
+operator-algebra or downstream state-composition problem.
 
 ## Publication gate
 

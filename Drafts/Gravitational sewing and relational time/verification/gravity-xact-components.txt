@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "profile": "components",
+  "result": "{{{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{(ggn*mg)/Sqrt[rad^3*(-2*ggn*mg + rad)], 0, 0}, {0, Sqrt[(-2*ggn*mg + rad)/rad^3], 0}, {0, 0, Sqrt[(-2*ggn*mg + rad)/rad^3]}}, (2*ggn*mg - rad + Sqrt[rad*(-2*ggn*mg + rad)])/(ggn*Sqrt[1 - (2*ggn*mg)/rad]), (-(ggn*mg) + rad - Sqrt[rad*(-2*ggn*mg + rad)])/(8*ggn*Pi*Sqrt[rad^3*(-2*ggn*mg + rad)])}",
+  "resultSha256": "225aea8da5eb1a9e5a86acaea4d328d04622229527d2fca32f981c20d9d47886",
+  "truncated": false,
+  "messages": [],
+  "loadedPackages": [
+    "xAct`xTensor`",
+    "xAct`xPert`",
+    "xAct`xTras`",
+    "xAct`xCoba`"
+  ],
+  "loadErrors": [],
+  "loadMessages": [],
+  "elapsedMs": 4687,
+  "transportStderr": []
+}

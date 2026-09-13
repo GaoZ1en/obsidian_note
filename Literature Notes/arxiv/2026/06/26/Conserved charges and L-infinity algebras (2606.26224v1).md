@@ -16,7 +16,7 @@ tags: []
 
 Back to [[2026_06_26_overview]].
 
-# Paper structure and conventions
+# Paper Structure and Conventions
 
 The paper starts from the cyclic $L_\infty$ packaging of a Lagrangian field theory and uses a sigmoid operator $\sigma$ as the algebraic representative of a Cauchy cut. Its main point is that an action symmetry $\xi_\Phi$ becomes a Hamiltonian vector field on covariant phase space because the cut operator fails to commute with the deformed BRST/kinetic operator $Q_\Phi$ and with the symmetry operator $\Xi_\Phi$.
 
@@ -62,7 +62,7 @@ The notation dictionary is:
 - $f_\Phi,F_\Phi$: observable characteristic and its linearization.
 - $M,\xi,f$: tensor-coalgebra coderivations; $\pi_1$ projects to the one-field component.
 
-# Cyclic $L_\infty$ action and equations
+# Cyclic $L_\infty$ Action and Equations
 
 The action is written as
 
@@ -96,7 +96,7 @@ Q_\Phi q_\Phi=0.
 
 The presymplectic phase space is the solution locus $q_\Phi=0$ modulo the gauge vectors $Q_\Phi\lambda_\Phi$.
 
-# Sigmoid-cut covariant phase space
+# Sigmoid-Cut Covariant Phase Space
 
 The phase-space two-form is
 
@@ -108,7 +108,7 @@ The operator $\sigma$ is the replacement for choosing a Cauchy surface. In local
 
 The formula is close to local CPS language but not identical to a Wald current. The current has been algebraically integrated into $\omega$ and the cut dependence is placed in $[Q_\Phi,\sigma]$. For the vault's finite-boundary and null-boundary notes, the transferable lesson is to keep the cut regulator explicit before deciding which corner terms vanish.
 
-# Conserved charge from a symmetry
+# Conserved Charge from a Symmetry
 
 An action symmetry is not only a vector field whose action variation vanishes on shell. The source uses the stronger algebraic condition
 
@@ -151,7 +151,7 @@ Q_\Phi f_\Phi=0,
 
 so the charge is an on-shell observable. Appendix B emphasizes that this does not make it a known off-shell deformation, because the corresponding coderivation does not generally commute with $M$ off shell.
 
-# Coalgebra form
+# Coalgebra Form
 
 In the tensor-coalgebra language, the action coderivation is $M$ and the symmetry coderivation is $\xi$. The charge is controlled by the obstruction
 
@@ -169,7 +169,7 @@ Expanding this expression gives the $L_n,\Xi_n$ product ledger. The normalizatio
 
 This is the algebraic heart of the paper: the symmetry and dynamics commute before a cut is inserted, but the cut turns their commutator into a finite charge.
 
-# Scalar stress tensor check
+# Scalar Stress Tensor Check
 
 For the scalar field
 
@@ -207,7 +207,7 @@ $$\begin{align}
 T^{\mu\nu}=\partial^\mu\phi\partial^\nu\phi -\eta^{\mu\nu}\left(\frac12\partial^\lambda\phi\partial_\lambda\phi+V(\phi)\right).
 \end{align}$$
 
-# Boundary charge examples
+# Boundary Charge Examples
 
 For Yang--Mills theory with spatial boundary $\Gamma$, the gauge surface charge takes the form
 
@@ -227,7 +227,7 @@ $$\begin{align}
 
 which is a useful warning for null-boundary work: a spacetime symmetry can carry a gauge-potential boundary correction even when the bulk expression resembles a stress-tensor charge.
 
-# Local CPS translation
+# Local CPS Translation
 
 In the vault's CPS vocabulary:
 
@@ -241,7 +241,7 @@ In the vault's CPS vocabulary:
 
 The formula is promising for nonlocal or string-field-theory examples where a standard derivative-local variational current is unavailable. For the vault's null-boundary notes, it should first be translated with an explicit cut regulator and only then compared to Wald/Iyer-Wald or Barnich-Brandt currents.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

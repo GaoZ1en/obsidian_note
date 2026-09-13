@@ -1,0 +1,93 @@
+{
+  "ok": true,
+  "allZero": true,
+  "profile": "components",
+  "pipeline": "none",
+  "pipelineSteps": [],
+  "assumptions": "ggn>0 && mg>0 && rr[]>2 ggn mg && 0<th[]<Pi",
+  "loadedPackages": [
+    "xAct`xTensor`",
+    "xAct`xPert`",
+    "xAct`xTras`",
+    "xAct`xCoba`"
+  ],
+  "loadErrors": [],
+  "loadMessages": [],
+  "setupMessages": [],
+  "checks": [
+    {
+      "label": "Schwarzschild vacuum Ricci tensor",
+      "status": "zero",
+      "canonicalResidual": "0",
+      "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "canonicalResidualTruncated": false,
+      "finalResidual": "0",
+      "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "finalResidualTruncated": false,
+      "unknownHeads": [],
+      "messages": []
+    },
+    {
+      "label": "outward timelike extrinsic curvature mixed components",
+      "status": "zero",
+      "canonicalResidual": "0",
+      "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "canonicalResidualTruncated": false,
+      "finalResidual": "0",
+      "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "finalResidualTruncated": false,
+      "unknownHeads": [],
+      "messages": []
+    },
+    {
+      "label": "finite sphere Brown-York energy including reference subtraction",
+      "status": "zero",
+      "canonicalResidual": "0",
+      "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "canonicalResidualTruncated": false,
+      "finalResidual": "0",
+      "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "finalResidualTruncated": false,
+      "unknownHeads": [],
+      "messages": []
+    },
+    {
+      "label": "finite wall Brown-York angular pressure",
+      "status": "zero",
+      "canonicalResidual": "0",
+      "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "canonicalResidualTruncated": false,
+      "finalResidual": "0",
+      "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "finalResidualTruncated": false,
+      "unknownHeads": [],
+      "messages": []
+    },
+    {
+      "label": "inward oriented curvature and energy reverse sign",
+      "status": "zero",
+      "canonicalResidual": "0",
+      "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "canonicalResidualTruncated": false,
+      "finalResidual": "0",
+      "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "finalResidualTruncated": false,
+      "unknownHeads": [],
+      "messages": []
+    },
+    {
+      "label": "Schwarzschild curvature invariant and regular-center obstruction",
+      "status": "zero",
+      "canonicalResidual": "0",
+      "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "canonicalResidualTruncated": false,
+      "finalResidual": "0",
+      "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "finalResidualTruncated": false,
+      "unknownHeads": [],
+      "messages": []
+    }
+  ],
+  "elapsedMs": 4957,
+  "transportStderr": []
+}

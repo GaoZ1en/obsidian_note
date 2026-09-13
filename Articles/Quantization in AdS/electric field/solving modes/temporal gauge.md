@@ -4,7 +4,7 @@ date: 2026-04-15
 summary: ""
 ---
 
-the equations of motion are
+The equations of motion are
 
 $$\begin{align}
 (1+r^{2})\partial _{r}^{2}A^{t}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{1+5r^{2}}{r}\partial _{r}A^{t}+4A^{t}+\frac{1}{1+r^{2}}\partial _{t}\partial _{r}A^{r}+\frac{1-r^{2}}{r(1+r^{2})^{2}}\partial _{t}A^{r}+\frac{1}{1+r^{2}}\partial _{t}\partial _{\phi}A^{\phi} & =0 \\
@@ -19,7 +19,7 @@ A^{t} & =\mathcal{O}(r^{-2}), & A^{r} & =o(r^{1}), & A^{\phi} & =\mathcal{O}(r^{
 A_{t} & =\mathcal{O}(r^{0}), & A_{r} & =o(r^{-1}), & A_{\phi} & =\mathcal{O}(r^{0})
 \end{align}$$
 
-now we choose the temporal gauge $A_{t}=0$, the asymptotic behavior of $\displaystyle{A^{r}}$ and $\displaystyle{A^{\phi}}$ remains unchanged. the equations of motion become
+now we choose the temporal gauge $A_{t}=0$, the asymptotic behavior of $\displaystyle{A^{r}}$ and $\displaystyle{A^{\phi}}$ remains unchanged. The equations of motion become
 
 $$\begin{align}
 \frac{1}{1+r^{2}}\partial _{t}\partial _{r}A^{r}+\frac{1-r^{2}}{r(1+r^{2})^{2}}\partial _{t}A^{r}+\frac{1}{1+r^{2}}\partial _{t}\partial _{\phi}A^{\phi} & =0 \\
@@ -29,7 +29,7 @@ $$\begin{align}
 
 ---
 
-the temporal gauge can always be imposed for a general offshell configuration $\displaystyle{A_{\mu}}$. consider the gauge parameter
+The temporal gauge can always be imposed for a general offshell configuration $\displaystyle{A_{\mu}}$. Consider the gauge parameter
 
 $$\begin{align}
 \Lambda & =-\int ^{t}\mathrm{d}tA_{t}
@@ -50,7 +50,7 @@ the asymptotic behavior remains unchanged.
 
 ---
 
-by introduce a scalar function $\displaystyle{\Psi}$ as
+By introduce a scalar function $\displaystyle{\Psi}$ as
 
 $$\begin{align}
 A^t=0,\qquad A^r=\frac{1+r^2}{r}\partial_\phi \Psi,\qquad A^\phi=-\frac{1+r^2}{r}\partial_r\Psi
@@ -58,7 +58,7 @@ A^t=0,\qquad A^r=\frac{1+r^2}{r}\partial_\phi \Psi,\qquad A^\phi=-\frac{1+r^2}{r
 
 ---
 
-this choice fixes the residual gauge redundancies. in other words, we have impose the gauge condition *at a fixed time*
+This choice fixes the residual gauge redundancies. In other words, we have impose the gauge condition *at a fixed time*
 
 $$\begin{align}
 \mathcal{C}[A]=\partial _{r}A^{r}+\frac{1-r^{2}}{r(1+r^{2})}A^{r}+\partial _{\phi}A^{\phi} & =0 \\
@@ -68,7 +68,7 @@ $$\begin{align}
 
 and by time evolution this gauge choice holds for arbitrary time.
 
-for a general offshell configuration $\displaystyle{A_{\mu}}$ that satisfies the temporal gauge $\displaystyle{A_{t}=0}$. consider a gauge parameter $\displaystyle{\Lambda(r,\phi)}$
+For a general offshell configuration $\displaystyle{A_{\mu}}$ that satisfies the temporal gauge $\displaystyle{A_{t}=0}$. Consider a gauge parameter $\displaystyle{\Lambda(r,\phi)}$
 
 $$\begin{align}
 \left[ (1+r^2)\partial_r^2+\frac{1+r^{2}}{r}\partial_r+\frac1{r^2}\partial_\phi^2 \right]\Lambda(r,\phi) & =-\mathcal{C}[A]
@@ -91,7 +91,7 @@ this equation is always solvable, and $\displaystyle{\Lambda}$ will not change t
 
 ---
 
-the eoms can be rewritten as
+The eoms can be rewritten as
 
 $$\begin{align}
 \frac{1+r^{2}}{r}\partial _{\phi}(\mathcal{D}\Psi) & =0 \\
@@ -101,7 +101,7 @@ $$\begin{align}
 
 ---
 
-in fact the second equation only implies
+In fact the second equation only implies
 
 $$\begin{align}
 \mathcal{D}\Psi & =\frac{C(t)}{1+r^{2}}
@@ -128,7 +128,7 @@ $$\begin{align}
 
 ---
 
-where
+Where
 
 $$\begin{align}
 \mathcal{D}\Psi & =(1+r^{2})\partial _{r}^{2}\Psi+\frac{1+3r^{2}}{r}\partial _{r}\Psi-\frac{1}{1+r^{2}}\partial _{t}^{2}\Psi+\frac{1}{r^{2}}\partial _{\phi}^{2}\Psi
@@ -168,9 +168,9 @@ A^{t} & =\mathcal{O}(r^{-2}), & A^{r} & =\mathcal{O}(r^{-1}), & A^{\phi} & =\mat
 A_{t} & =\mathcal{O}(r^{0}), & A_{r} & =\mathcal{O}(r^{-3}), & A_{\phi} & =\mathcal{O}(r^{0})
 \end{align}$$
 
-## zero energy modes
+## Zero Energy Modes
 
-after the gauge fixing, the eom can be written as
+After the gauge fixing, the eom can be written as
 
 $$\begin{align}
 \frac{1}{1+r^{2}}\partial _{t}\partial _{r}A^{r}+\frac{1-r^{2}}{r(1+r^{2})^{2}}\partial _{t}A^{r}+\frac{1}{1+r^{2}}\partial _{t}\partial _{\phi}A^{\phi} & =0 \\
@@ -256,4 +256,4 @@ $$\begin{align}
 
 ---
 
-now we want change to the covariant gauge. however the inverse process is simpler to achieve.
+Now we want change to the covariant gauge. However the inverse process is simpler to achieve.

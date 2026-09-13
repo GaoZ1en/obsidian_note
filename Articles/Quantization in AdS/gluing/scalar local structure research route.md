@@ -48,8 +48,8 @@
 | 已有笔记中的结果 | 本路线中的用途 | 尚不能直接推出 |
 |---|---|---|
 | [Scalar closure §§1–4](<scalar observable sewing closure.md>)：joint trace chart、section／transposes、exact classical quotient、局部 switched nonlinear extension | 区域对象、匹配解与整体 Hamiltonian 对象的基准 | 任意支撑保持的 section；全部局域函数类的 time-slice |
-| [Classical note §§2.2、4.3](<classical regional observable algebra gluing.md>)：线性标签的时间带重构、指定生成类的 isotony／因果性 | 复用 cutoff 与有限传播方法，准确记录旧测试类 | 自动迁移到严格内部 tests、所有 Wick kernels 或所有边界问题 |
-| [Smooth note §5.4](<smooth regional observable algebras and symmetries.md>)：matched bulk local nets、有限组合和整体比较 | 以实际 regional density labels 定义定位 | 独立严格局域 family prequotient 的满射；全部背景上的包含态射 |
+| [Classical note §§2.2、4.3](<Articles/Quantization in AdS/gluing/archived/classical regional observable algebra gluing.md>)：线性标签的时间带重构、指定生成类的 isotony／因果性 | 复用 cutoff 与有限传播方法，准确记录旧测试类 | 自动迁移到严格内部 tests、所有 Wick kernels 或所有边界问题 |
+| [Smooth note §5.4](<Articles/Quantization in AdS/gluing/archived/smooth regional observable algebras and symmetries.md>)：matched bulk local nets、有限组合和整体比较 | 以实际 regional density labels 定义定位 | 独立严格局域 family prequotient 的满射；全部背景上的包含态射 |
 | [Free quantum note](<free scalar renormalized quantum observable algebra gluing.md>) 与 closure §§5、7 | 自由核、Wick 类、区域 collar labels、on-shell kernel 与有限组合 | 从 CCR 的 time-slice 自动得到整个分布核类的 time-slice |
 | [Interacting quantum note](<phin renormalized quantum observable algebra gluing.md>) 与 closure §6 | 固定相互作用及 coherent scheme 的逐阶整体比较、完整 coefficient kernel 判据 | 任意局部 coupling 变化的直接识别；interacting local-net 的完整 time-slice |
 | [General formalism §8](<observable algebra gluing formalism.md>) | 既有数据保持同构与有限组合 | 一般非可逆区域包含；不加输入的任意时空范畴定理 |

@@ -155,7 +155,7 @@ Stiffness/Hamiltonian cross terms between $\mathcal B_i$ and $\mathcal Z_i$ are 
 
 ## 3. Centered Scalar Benchmark
 
-This section proves the split-adapted hypothesis for the centered finite scalar regulator used in [[Articles/Quantization in AdS/gluing/models/spacelike regions/1+1 scalar|1+1 scalar]] and [[Articles/Quantization in AdS/gluing/state and representation/reduced-state-open-system-scalar|reduced-state-open-system-scalar]]. It is a benchmark, not a theorem for arbitrary port regulators.
+This section proves the split-adapted hypothesis for the centered finite scalar regulator used in [[Articles/Quantization in AdS/gluing/models/spacelike regions/non-gauge/1+1 scalar|1+1 scalar]] and [[Articles/Quantization in AdS/gluing/state and representation/reduced-state-open-system-scalar|reduced-state-open-system-scalar]]. It is a benchmark, not a theorem for arbitrary port regulators.
 
 ### 3.1 Duplicate Regional Variables and the Port Schur Complement
 

@@ -4,7 +4,7 @@
 
 几何使用 [classical gluing formalism](<classical_gluing_formalism.md>) 的有限区域与 timelike cuts，并允许分片光滑边界在空间 corners/junctions 相交。接口以边界侧的 occurrence $a=(i,\alpha)$ 标号；配对 $a\leftrightarrow b$ 可以有 $i(a)=i(b)$，不同接口也可以连接同一对区域。每个 regional action 和 CPS form 始终只计一次。先给 regional cells、全部 strata 的 collar/transition data、真实边界条件与作用量；商时空及其全局理论另行从这些几何数据定义。二维商须检查顶点 link，光滑度量须另检查角度和 transition jets；若有锥点，指定 singular operator domain，不能当成光滑背景。
 
-原来的无空间 junction 情形及静态 interval 证明是本定义的特例。自由与相互作用的 interval 实现见 [free quantum note](<free scalar renormalized quantum observable algebra gluing.md>) 和 [interacting quantum note](<phin renormalized quantum observable algebra gluing.md>)；含空间角点的有限能量与 CCR 实现见 [rectangle self-sewing](<models/rectangle scalar self-gluing.md>)。真实边界、polarization、空间 strata 及 temporal endpoints 上实际产生的项均属于完整 action。
+原来的无空间 junction 情形及静态 interval 证明是本定义的特例。自由与相互作用的 interval 实现见 [free quantum note](<free scalar renormalized quantum observable algebra gluing.md>) 和 [interacting quantum note](<phin renormalized quantum observable algebra gluing.md>)；含空间角点的有限能量与 CCR 实现见 [rectangle self-sewing](<Articles/Quantization in AdS/gluing/models/spacelike regions/non-gauge/rectangle scalar self-gluing.md>)。真实边界、polarization、空间 strata 及 temporal endpoints 上实际产生的项均属于完整 action。
 
 ## 1. 独立的 regional/global objects
 
@@ -44,7 +44,7 @@ $$
 dS_{i,\mathrm{on}}=\Theta_i^+-\Theta_i^-+\Lambda_i,\qquad
 \Omega_i^+-\Omega_i^-=-d\Lambda_i
 $$
-在真实 control domain 上成立，包含初值/history 的混合导数。$T^*_{\mathrm{reg}}$ 只表示实际选定的 continuous/regular dual；必要时先除去 trace tangent range 的 annihilator。若弱响应最初仅定义于 compact-time tests，它尚不是整个 history tangent 上的 endpoint-separated covector；[rectangle §5.1](<models/rectangle scalar self-gluing.md>) 给出带时间端点补偿的实际延拓及证明。
+在真实 control domain 上成立，包含初值/history 的混合导数。$T^*_{\mathrm{reg}}$ 只表示实际选定的 continuous/regular dual；必要时先除去 trace tangent range 的 annihilator。若弱响应最初仅定义于 compact-time tests，它尚不是整个 history tangent 上的 endpoint-separated covector；[rectangle §5.1](<Articles/Quantization in AdS/gluing/models/spacelike regions/non-gauge/rectangle scalar self-gluing.md>) 给出带时间端点补偿的实际延拓及证明。
 
 规范理论先除去 proper based gauge，保留 active cut group、charges、frames/transition data。下面非规范部分的 $\mathcal P_i[q_i]$ 指所声明 smooth class 上的弱辛 phase space。若暂时只有弱 solution relation，则保留该 relation；未建立 smooth phase space 前不调用 $\mathcal H(P)$ 定理。
 

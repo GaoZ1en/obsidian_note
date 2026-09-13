@@ -1,0 +1,126 @@
+[
+  {
+    "name": "tensor",
+    "request": {
+      "setup": "DefManifold[MM,4,{a,b,c,d,e,f,i,j}];\nDefMetric[-1,met[-a,-b],CD,{\";\",\"D\"}];\nDefTensor[nn[-a],MM];DefTensor[av[-a],MM];\nDefTensor[jj[-a,-b],MM,Symmetric[{-a,-b}]];\nss[aa_,bb_,cc_,dd_]:=(nn[bb]nn[cc]jj[aa,dd]+nn[aa]nn[dd]jj[bb,cc]-nn[aa]nn[cc]jj[bb,dd]-nn[bb]nn[dd]jj[aa,cc])/2;",
+      "profile": "core",
+      "pipeline": "canonical_contract",
+      "checks": [
+        {
+          "label": "antisym_first_pair",
+          "residual": "ss[-a,-b,-c,-d]+ss[-b,-a,-c,-d]"
+        },
+        {
+          "label": "pair_exchange",
+          "residual": "ss[-a,-b,-c,-d]-ss[-c,-d,-a,-b]"
+        },
+        {
+          "label": "algebraic_Bianchi",
+          "residual": "ss[-a,-b,-c,-d]+ss[-a,-c,-d,-b]+ss[-a,-d,-b,-c]"
+        },
+        {
+          "label": "singular_Ricci_contraction",
+          "residual": "met[a,c]ss[-a,-b,-c,-d]-(nn[a]jj[-a,-b]nn[-d]+nn[a]jj[-a,-d]nn[-b]-nn[a]nn[-a]jj[-b,-d]-met[a,c]jj[-a,-c]nn[-b]nn[-d])/2"
+        },
+        {
+          "label": "pure_normal_jump_has_zero_Riemann",
+          "residual": "ss[-a,-b,-c,-d]/.jj[aa_,bb_]:>nn[aa]av[bb]+nn[bb]av[aa]"
+        }
+      ],
+      "timeoutMs": 120000,
+      "maxOutputChars": 10000
+    }
+  },
+  {
+    "name": "pp-wave",
+    "request": {
+      "setup": "DefManifold[MM,4,{a,b,c,d,e,f}];\nDefChart[ch,MM,{0,1,2,3},{uu[],vv[],xx[],yy[]}];\nDefMetric[-1,met[-a,-b],CD,{\";\",\"D\"}];\nDefScalarFunction[amp];\nhh=2 xx[] yy[] amp[uu[]];\nMetricInBasis[met,-ch,{{hh,-1,0,0},{-1,0,0,0},{0,0,1,0},{0,0,0,1}}];\nMetricCompute[met,ch,All];\nric=Table[ToValues[RicciCD[{i,-ch},{j,-ch}]],{i,0,3},{j,0,3}];\nrup=ToValues[RiemannCD[{0,-ch},{2,-ch},{0,-ch},{3,-ch}]];\ninds={0,1,3};\nkk=Table[-ToValues[Christoffel[CD,PDch][{2,ch},{i,-ch},{j,-ch}]],{i,inds},{j,inds}]/.xx[]->0;\nred[ex_]:=Total[(Abs[FullSimplify[#]]^2&)/@Flatten[{ex}]];",
+      "profile": "components",
+      "pipeline": "none",
+      "checks": [
+        {
+          "label": "pp_exact_vacuum_all_Ricci",
+          "residual": "red[ric]"
+        },
+        {
+          "label": "pp_radiative_Weyl_component",
+          "residual": "red[rup+amp[uu[]]]"
+        },
+        {
+          "label": "pp_interface_full_extrinsic_curvature",
+          "residual": "red[kk-{{amp[uu[]] yy[],0,0},{0,0,0},{0,0,0}}]"
+        }
+      ],
+      "timeoutMs": 120000,
+      "maxOutputChars": 10000
+    }
+  },
+  {
+    "name": "rosen-wave",
+    "request": {
+      "setup": "DefManifold[MM,4,{a,b,c,d,e,f}];\nDefChart[ch,MM,{0,1,2,3},{uu[],vv[],xx[],yy[]}];\nDefMetric[-1,met[-a,-b],CD,{\";\",\"D\"}];\nDefScalarFunction[aa];DefScalarFunction[bb];\nMetricInBasis[met,-ch,{{0,-1,0,0},{-1,0,0,0},{0,0,aa[uu[]]^2,0},{0,0,0,bb[uu[]]^2}}];\nMetricCompute[met,ch,All];\nric=Table[ToValues[RicciCD[{i,-ch},{j,-ch}]],{i,0,3},{j,0,3}];\nrux=ToValues[RiemannCD[{0,-ch},{2,-ch},{0,-ch},{2,-ch}]];\nruy=ToValues[RiemannCD[{0,-ch},{3,-ch},{0,-ch},{3,-ch}]];\nred[ex_]:=Total[(Abs[FullSimplify[#]]^2&)/@Flatten[{ex}]]; expected=ConstantArray[0,{4,4}];expected[[1,1]]=-aa''[uu[]]/aa[uu[]]-bb''[uu[]]/bb[uu[]];",
+      "profile": "components",
+      "pipeline": "none",
+      "checks": [
+        {
+          "label": "Rosen_exact_Ricci_all_components",
+          "residual": "red[ric-expected]"
+        },
+        {
+          "label": "Rosen_transverse_Riemann_x",
+          "residual": "red[rux+aa[uu[]]aa''[uu[]]]"
+        },
+        {
+          "label": "Rosen_transverse_Riemann_y",
+          "residual": "red[ruy+bb[uu[]]bb''[uu[]]]"
+        }
+      ],
+      "timeoutMs": 120000,
+      "maxOutputChars": 10000
+    }
+  },
+  {
+    "name": "gaussian",
+    "request": {
+      "setup": "DefManifold[MM,4,{a,b,c,d,e,f}];\nDefChart[ch,MM,{0,1,2,3},{rr[],tt[],xx[],yy[]}];\nDefMetric[-1,met[-a,-b],CD,{\";\",\"D\"}];\nDefConstantSymbol[ee];\nDefScalarFunction[aa];DefScalarFunction[bb];DefScalarFunction[cc];\nMetricInBasis[met,-ch,DiagonalMatrix[{ee,-ee aa[rr[]]^2,bb[rr[]]^2,cc[rr[]]^2}]];\nMetricCompute[met,ch,All];\nric=Table[ToValues[RicciCD[{i,-ch},{j,-ch}]],{i,0,3},{j,0,3}];\nhm=DiagonalMatrix[{-ee aa[z]^2,bb[z]^2,cc[z]^2}];\nkm=D[hm,z]/2;ki=Inverse[hm].km;kt=Tr[ki];\npred=-ee (D[km,z]+kt km-2 km.Inverse[hm].km);\npredrr=-D[kt,z]-Tr[ki.ki];\nred[ex_]:=Total[Flatten[Table[(Abs[FullSimplify[#/.{rr[]->z,ee->sg}]]^2&)/@Flatten[{ex}],{sg,{-1,1}}]]];",
+      "profile": "components",
+      "pipeline": "none",
+      "checks": [
+        {
+          "label": "Gaussian_tangential_Ricci_both_signatures",
+          "residual": "red[ric[[2;;4,2;;4]]-pred]"
+        },
+        {
+          "label": "Gaussian_normal_Ricci_both_signatures",
+          "residual": "red[ric[[1,1]]-predrr]"
+        },
+        {
+          "label": "Gaussian_mixed_Ricci_homogeneous_collars",
+          "residual": "red[ric[[1,2;;4]]]"
+        }
+      ],
+      "timeoutMs": 120000,
+      "maxOutputChars": 10000
+    }
+  },
+  {
+    "name": "TT-perturbation",
+    "request": {
+      "setup": "DefManifold[MM,4,{a,b,c,d,e,f}];\nDefChart[ch,MM,{0,1,2,3},{tt[],xx[],yy[],zz[]}];\nDefMetric[-1,met[-a,-b],CD,{\";\",\"D\"}];\nDefConstantSymbol[ep];DefScalarFunction[qq];\nMetricInBasis[met,-ch,DiagonalMatrix[{-1,1+ep qq[tt[],zz[]],1-ep qq[tt[],zz[]],1}]];\nMetricCompute[met,ch,All];\nric=Table[ToValues[RicciCD[{i,-ch},{j,-ch}]],{i,0,3},{j,0,3}];\nsc=ToValues[RicciScalarCD[]];\nr1=Map[FullSimplify[Coefficient[Normal[Series[#,{ep,0,1}]],ep,1]]&,ric,{2}];\nden2=FullSimplify[Coefficient[Normal[Series[Sqrt[1-ep^2 qq[tt[],zz[]]^2] sc,{ep,0,2}]],ep,2]];\nex1=ConstantArray[0,{4,4}];ex1[[2,2]]=(Derivative[2,0][qq][tt[],zz[]]-Derivative[0,2][qq][tt[],zz[]])/2;ex1[[3,3]]=-ex1[[2,2]];\ncanon=(Derivative[1,0][qq][tt[],zz[]]^2-Derivative[0,1][qq][tt[],zz[]]^2)/2;\ndiv=2(D[qq[t,z]D[qq[t,z],z],z]-D[qq[t,z]D[qq[t,z],t],t])/.{t->tt[],z->zz[]};\nred[ex_]:=Total[(Abs[FullSimplify[#]]^2&)/@Flatten[{ex}]];",
+      "profile": "components",
+      "pipeline": "none",
+      "checks": [
+        {
+          "label": "TT_linearized_Ricci_all_components",
+          "residual": "red[r1-ex1]"
+        },
+        {
+          "label": "TT_EH_quadratic_density_up_to_explicit_divergence",
+          "residual": "red[den2-canon-div]"
+        }
+      ],
+      "timeoutMs": 120000,
+      "maxOutputChars": 10000
+    }
+  }
+]

@@ -137,11 +137,11 @@ Current blockers:
 4. `E-limit` lacks a common ambient topology and convergence of symplectic reduction;
 5. the exact conjunction was not located in one paper, but search absence is not novelty evidence.
 
-Next research step: return to the action-first composition problem for
-Maxwell data on two intersecting null hypersurfaces.  Reuse the present
-fixed-mode kernel and corner lessons only as checks.  Do not continue static
-patch mode calculations and do not open a Schwarzschild--de Sitter main
-project from this directory.
+Programme role: keep this directory frozen as an internal null/state
+calibration.  Its fixed-mode kernel and corner lessons may be reused only when
+the active regional quantum-algebra or downstream state-composition problem
+requires them.  Do not continue static-patch mode calculations and do not open
+a Schwarzschild--de Sitter main project from this directory.
 
 ## Stop/pivot rule
 
@@ -149,5 +149,6 @@ The `T1-aff/T4-bulk` kill test is complete.  The incoming-only pole/moment
 theorem survives at fixed $j$, but the full compatible interior estimate and
 completed range do not close, and the exact $S_j$ boundary estimate does not
 establish an analytic/Gevrey angular obstruction.  Freeze this directory as an internal
-calibration note.  The next live question is two-intersecting-null-surfaces
-Maxwell composition, not Schwarzschild--de Sitter or Nariai.
+calibration note.  Reopen only for a demonstrated null-specific input to
+regional algebra composition or state/Unruh reliability, not for further
+static-patch, Schwarzschild--de Sitter or Nariai expansion.

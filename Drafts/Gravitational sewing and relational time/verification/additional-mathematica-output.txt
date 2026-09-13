@@ -1,0 +1,52 @@
+{
+	"dimensionlessConvention":"hbar=1; x=omega t; tau also measured in 1\/omega",
+	"checkCount":11,
+	"allPassed":true,
+	"checks":[
+		{
+			"label":"arbitrary product seed produces the claimed energy filter",
+			"passed":true
+		},
+		{
+			"label":"seed projection norm",
+			"passed":true
+		},
+		{
+			"label":"matching rank-one clock seed cancels all preparation phases",
+			"passed":true
+		},
+		{
+			"label":"external boundary time shifts the conditional history",
+			"passed":true
+		},
+		{
+			"label":"external stationarity is equivalent to absence of energy coherence",
+			"passed":true
+		},
+		{
+			"label":"full relational operator multiplication",
+			"passed":true
+		},
+		{
+			"label":"two ordered measurements reduce to the usual propagator amplitude",
+			"passed":true
+		},
+		{
+			"label":"two nested seams have commuting constraints and order-independent projection",
+			"passed":true
+		},
+		{
+			"label":"reading both complementary clock factors gives the sum of their readings",
+			"passed":true
+		},
+		{
+			"label":"discarding the unmeasured complementary energy record removes the relational coherence",
+			"passed":true
+		},
+		{
+			"label":"generic small spectral detuning removes the excited physical state",
+			"passed":true
+		}
+	]
+}
+Null

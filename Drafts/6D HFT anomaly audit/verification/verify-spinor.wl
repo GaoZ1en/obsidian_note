@@ -1,0 +1,24 @@
+ClearAll["Global`*"];
+id2=IdentityMatrix[2];
+z2=ConstantArray[0,{2,2}];
+ps=Table[PauliMatrix[k],{k,3}];
+g0=ArrayFlatten[{{z2,id2},{id2,z2}}];
+gi=Table[ArrayFlatten[{{z2,ps[[k]]},{-ps[[k]],z2}}],{k,3}];
+g5=I g0.gi[[1]].gi[[2]].gi[[3]];
+gg=Join[KroneckerProduct[id2,#]& /@ Prepend[gi,g0],{I KroneckerProduct[ps[[1]],g5],I KroneckerProduct[ps[[2]],g5]}];
+g7=KroneckerProduct[ps[[3]],g5];
+cc=I gi[[2]].g0;
+c6=KroneckerProduct[ps[[2]],cc];
+b6=c6.Transpose[gg[[1]]];
+eps={{0,-1},{1,0}};
+bm=KroneckerProduct[eps,b6];
+pminus=(IdentityMatrix[8]-g7)/2;
+zer[m_]:=And@@Thread[Flatten[Simplify[m]]==0];
+checks=<|"Clifford_1_5"->And@@Flatten[Table[zer[gg[[a]].gg[[b]]+gg[[b]].gg[[a]]-2 DiagonalMatrix[{1,-1,-1,-1,-1,-1}][[a,b]] IdentityMatrix[8]],{a,6},{b,6}]],"chirality_squared"->zer[g7.g7-IdentityMatrix[8]],"chirality_anticommutes"->And@@(zer[g7.# + #.g7]& /@ gg),"weyl_complex_rank_4"->(MatrixRank[pminus]==4),"C6_transpose_relation"->And@@(zer[c6.#.Inverse[c6]+Transpose[#]]& /@ gg),"J_squared_minus_one"->zer[b6.Conjugate[b6]+IdentityMatrix[8]],"J_preserves_chirality"->zer[g7.b6-b6.Conjugate[g7]],"SMW_involution"->zer[bm.Conjugate[bm]-IdentityMatrix[16]],"SU2_reality_generators"->And@@(zer[#.eps+eps.Conjugate[#]]& /@ ps)|>;
+vv=Array[vEntry,8];
+pair=Join[vv,b6.Conjugate[vv]];
+checks=Join[checks,<|"pair_fixed_by_epsilon_J"->zer[bm.Conjugate[pair]-pair],"printed_sigma2_J_eigenphase_i"->zer[KroneckerProduct[ps[[2]],b6].Conjugate[pair]-I pair]|>];
+report = <|"checks"->checks,"allPassed"->And@@Values[checks],"gamma5"->g5|>;
+Print[report];
+If[!TrueQ[report["allPassed"]], Exit[1]];
+

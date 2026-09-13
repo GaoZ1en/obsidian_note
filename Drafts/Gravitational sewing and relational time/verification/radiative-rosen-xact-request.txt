@@ -1,0 +1,25 @@
+{
+  "profile": "components",
+  "pipeline": "none",
+  "setup": "DefManifold[MR,4,{a,b,c,d,e,f}];\nDefChart[ch,MR,{0,1,2,3},{tt[],xx[],yy[],zz[]}];\nDefMetric[-1,met[-a,-b],CD,{\";\",\"D\"}];\nDefScalarFunction[aa];DefScalarFunction[bb];\nuu=tt[]+zz[];\nMetricInBasis[met,-ch,DiagonalMatrix[{-1,aa[uu]^2,bb[uu]^2,1}]];\nMetricCompute[met,ch,All];\nric=Table[FullSimplify[ToValues[RicciCD[{i,-ch},{j,-ch}]]],{i,0,3},{j,0,3}];\nnv={1,0,0,1};\nexpected=-(aa''[uu]/aa[uu]+bb''[uu]/bb[uu])Outer[Times,nv,nv];\nrx=FullSimplify[ToValues[RiemannCD[{0,-ch},{1,-ch},{0,-ch},{1,-ch}]]];\nry=FullSimplify[ToValues[RiemannCD[{0,-ch},{2,-ch},{0,-ch},{2,-ch}]]];\ngamtt=Table[FullSimplify[ToValues[Christoffel[CD,PDch][{i,ch},{0,-ch},{0,-ch}]]],{i,0,3}];\nred[ex_]:=Total[(Abs[FullSimplify[#]]^2&)/@Flatten[{ex}]];\n",
+  "checks": [
+    {
+      "label": "exact_Rosen_Ricci_all_components",
+      "residual": "red[ric-expected]"
+    },
+    {
+      "label": "exact_Rosen_vacuum_after_ODE",
+      "residual": "red[ric/.Derivative[2][bb][uu]->-Derivative[2][aa][uu]bb[uu]/aa[uu]]"
+    },
+    {
+      "label": "exact_Rosen_tidal_curvatures",
+      "residual": "red[{rx+aa[uu]aa''[uu],ry+bb[uu]bb''[uu]}]"
+    },
+    {
+      "label": "Rosen_coordinate_observers_are_geodesic",
+      "residual": "red[gamtt]"
+    }
+  ],
+  "timeoutMs": 60000,
+  "maxOutputChars": 5500
+}

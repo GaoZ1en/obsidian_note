@@ -1,6 +1,6 @@
 # From Operator Feedback to the Finite Port System
 
-The quantize-first construction in [[Articles/Quantization in AdS/gluing/models/spacelike regions/1+1 scalar|1+1 scalar]] begins with regional oscillators driven by a prescribed boundary history. After gluing, that history becomes operator-valued. This note proves that, at finite cutoff, the correctly regulated feedback equations are exactly the Euler--Lagrange equations of the conforming port Galerkin action.
+The quantize-first construction in [[Articles/Quantization in AdS/gluing/models/spacelike regions/non-gauge/1+1 scalar|1+1 scalar]] begins with regional oscillators driven by a prescribed boundary history. After gluing, that history becomes operator-valued. This note proves that, at finite cutoff, the correctly regulated feedback equations are exactly the Euler--Lagrange equations of the conforming port Galerkin action.
 
 The conclusion is
 

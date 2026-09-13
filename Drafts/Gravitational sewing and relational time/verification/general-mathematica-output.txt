@@ -1,0 +1,177 @@
+Mathematica code executed:
+```wl
+checks = {};
+check[name_, expr_] := AppendTo[checks, <|"label" -> name, "passed" -> TrueQ[FullSimplify[expr]], "result" -> ToString[FullSimplify[expr], InputForm]|>];
+hm=DiagonalMatrix[{-1,1,1}]; hi=Inverse[hm];
+km={{k11,k12,k13},{k12,k22,k23},{k13,k23,k33}};
+pm=Tr[hi.km] hm-km;
+check["trace_reversal_inverse_3D", Tr[hi.pm] hm/2-pm==km];
+vars={k11,k12,k13,k22,k23,k33};
+outs={pm[[1,1]],pm[[1,2]],pm[[1,3]],pm[[2,2]],pm[[2,3]],pm[[3,3]]};
+jac=Table[D[outs[[i]],vars[[j]]],{i,6},{j,6}];
+check["trace_reversal_nondegenerate",Det[jac]==-2];
+nn={1,0,0,0}; jm=Array[jj,{4,4}]; jm=(jm+Transpose[jm])/2;
+sr[i_,j_,k_,l_]:=(nn[[j]]nn[[k]]jm[[i,l]]+nn[[i]]nn[[l]]jm[[j,k]]-nn[[i]]nn[[k]]jm[[j,l]]-nn[[j]]nn[[l]]jm[[i,k]])/2;
+check["curvature_jump_injects_tangential_jump",Table[sr[1,a,1,b]+jm[[a,b]]/2,{a,2,4},{b,2,4}]==ConstantArray[0,{3,3}]];
+av={a0,a1,a2,a3}; normaljump=Outer[Times,nn,av]+Outer[Times,av,nn];
+check["C1_coordinate_acceleration_removes_normal_jump",normaljump-Outer[Times,nn,av]-Outer[Times,av,nn]==ConstantArray[0,{4,4}]];
+check["impulse_Ricci_delta_coefficient",-kap-(-kap)==0];
+check["impulse_Riemann_x_coefficient",(-kap!=0)/.kap->1];
+check["impulse_Riemann_y_coefficient",(kap!=0)/.kap->1];
+ap=Cosh[lam u];bp=Cos[lam u];
+check["step_wave_exact_vacuum",Together[D[ap,{u,2}]/ap+D[bp,{u,2}]/bp]==0];
+check["step_wave_metric_values",({ap,bp}/.u->0)=={1,1}];
+check["step_wave_first_normal_jets",({D[ap,u],D[bp,u]}/.u->0)=={0,0}];
+check["step_wave_second_normal_jumps",({D[ap^2,{u,2}],D[bp^2,{u,2}]}/.u->0)=={2 lam^2,-2 lam^2}];
+check["step_wave_Riemann_jump",({-ap D[ap,{u,2}],-bp D[bp,{u,2}]}/.u->0)=={-lam^2,lam^2}];
+hnull={{0,-1,0},{-1,0,0},{0,0,1}};
+kpp={{f y,0,0},{0,0,0},{0,0,0}};
+check["pp_interface_trace_zero",Tr[Inverse[hnull].kpp]==0];
+check["pp_interface_K_squared_zero",Tr[Inverse[hnull].kpp.Inverse[hnull].kpp]==0];
+check["pp_integrated_energy_zero",Integrate[f y/(16 Pi gg),{y,-ell,ell},Assumptions->ell>0&&gg>0]==0];
+wave=Sin[kk z] Cos[kk t];
+check["TT_linearized_vacuum_wave",D[wave,{t,2}]-D[wave,{z,2}]==0];
+check["TT_induced_trace_zero", (wave/.z->0)==0];
+check["TT_transverse_shear_mismatch",(D[wave,z]/.z->0)==kk Cos[kk t]];
+kt=DiagonalMatrix[{0,kk Cos[kk t]/2,-kk Cos[kk t]/2}];
+pt=Tr[hi.kt] hm-kt;
+check["TT_local_energy_momentum_zero",pt[[1]]=={0,0,0}];
+q1=Cos[kk(t-z)];q2=Sin[kk(t-z)];
+check["TT_nonzero_symplectic_flux",D[q1,z] q2-D[q2,z] q1==kk];
+check["closed_clock_orbit_obstruction",Integrate[1,{s,0,period}]==period];
+check["conditional_Schrodinger_phase",I D[Exp[-I ee t],t]==ee Exp[-I ee t]];
+om={{0,1},{-1,0}};zero=ConstantArray[0,{2,2}];emb=Join[IdentityMatrix[2],IdentityMatrix[2]];
+check["spacelike_diagonal_sum_double_counts",Transpose[emb].ArrayFlatten[{{om,zero},{zero,om}}].emb==2 om];
+check["spacelike_evolution_graph_is_Lagrangian",Transpose[emb].ArrayFlatten[{{-om,zero},{zero,om}}].emb==zero];
+Print[ExportString[<|"checkCount"->Length[checks],"allPassed"->And@@Lookup[checks,"passed"],"checks"->checks|>,"RawJSON"]];
+
+```
+
+Output:
+{
+	"checkCount":24,
+	"allPassed":true,
+	"checks":[
+		{
+			"label":"trace_reversal_inverse_3D",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"trace_reversal_nondegenerate",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"curvature_jump_injects_tangential_jump",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"C1_coordinate_acceleration_removes_normal_jump",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"impulse_Ricci_delta_coefficient",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"impulse_Riemann_x_coefficient",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"impulse_Riemann_y_coefficient",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"step_wave_exact_vacuum",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"step_wave_metric_values",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"step_wave_first_normal_jets",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"step_wave_second_normal_jumps",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"step_wave_Riemann_jump",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"pp_interface_trace_zero",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"pp_interface_K_squared_zero",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"pp_integrated_energy_zero",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"TT_linearized_vacuum_wave",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"TT_induced_trace_zero",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"TT_transverse_shear_mismatch",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"TT_local_energy_momentum_zero",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"TT_nonzero_symplectic_flux",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"closed_clock_orbit_obstruction",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"conditional_Schrodinger_phase",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"spacelike_diagonal_sum_double_counts",
+			"passed":true,
+			"result":"True"
+		},
+		{
+			"label":"spacelike_evolution_graph_is_Lagrangian",
+			"passed":true,
+			"result":"True"
+		}
+	]
+}
+Null

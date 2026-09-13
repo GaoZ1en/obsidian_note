@@ -56,15 +56,13 @@ Its projections to individual faces do not make those faces independent. For exa
 
 $$\begin{align}
 \gamma H^1(R)&\simeq H^{1/2}(\partial R)
-\subsetneq\prod_{s=1}^{4}H^{1/2}(F_s),&
-\|q\|_{\mathrm{tr}}&=\inf_{\gamma u=q}\|u\|_{H^1(R)}.
+\subsetneq\prod_{s=1}^{4}H^{1/2}(F_s),& \|q\|_{\mathrm{tr}}&=\inf_{\gamma u=q}\|u\|_{H^1(R)}.
 \end{align}$$
 
 Near two adjacent edges, parameterized by distance $\displaystyle{a,b}$ from their common vertex, this trace norm includes the cross term
 
 $$\begin{align}
-\int_0^\varepsilon\!\int_0^\varepsilon
-\frac{|q_s(a)-q_{s'}(b)|^2}{a^2+b^2}\,da\,db<\infty.
+\int_0^\varepsilon\!\int_0^\varepsilon \frac{|q_s(a)-q_{s'}(b)|^2}{a^2+b^2}\,da\,db<\infty.
 \end{align}$$
 
 In particular, constants $0$ and $1$ on these two edges fail the condition, although each edge datum is smooth. There is no corner point value for a generic $H^1$ field. Smooth classes instead retain the corner jets that are traces of one regional field; sewing transforms the full jets by the face maps, including reflection signs. The trace-image norm is the definition; the displayed cross term illustrates one rectangle condition, not a spacetime history well-posedness theorem. See [the joint trace norm and its nonadditivity](https://jschoeberl.github.io/iFEM/domaindecomposition/traces.html).
@@ -98,26 +96,21 @@ Here $\displaystyle{\ell_{i0}}$ implements the physical boundary condition, $\di
 After imposing the physical boundary conditions, its first variation is
 
 $$\begin{align}
-\delta S_i^{\mathrm{full}} &=\int_{M_i}\mathcal E_i[\Phi_i]\delta\Phi_i
-+\lambda_i[\delta q_i]+\Theta_i(t_+)-\Theta_i(t_-).
+\delta S_i^{\mathrm{full}} &=\int_{M_i}\mathcal E_i[\Phi_i]\delta\Phi_i +\lambda_i[\delta q_i]+\Theta_i(t_+)-\Theta_i(t_-).
 \end{align}$$
 
 This equation defines the response covector after separating the complete temporal potentials $\displaystyle{\Theta_i}$, including their corner terms. On the solution/control domain let $\displaystyle{\pi_{q_i}:\mathfrak D_i\to\mathcal B_i}$ be the history projection. The precise on-shell type and its associated one-form are
 
 $$\begin{align}
-\lambda_i&\in\Gamma\!\left(\pi_{q_i}^*T^*_{\mathrm{reg}}\mathcal B_i\right),&
-\Lambda_i|_{d_i}(v)&=\lambda_i(d_i)\!\left[D\pi_{q_i}(d_i)v\right],
-\qquad d_i=(\xi_i^-,q_i).
+\lambda_i&\in\Gamma\!\left(\pi_{q_i}^*T^*_{\mathrm{reg}}\mathcal B_i\right),& \Lambda_i|_{d_i}(v)&=\lambda_i(d_i)\!\left[D\pi_{q_i}(d_i)v\right], \qquad d_i=(\xi_i^-,q_i).
 \end{align}$$
 
 Here $\displaystyle{T^*_{\mathrm{reg}}}$ denotes the explicitly chosen continuous/regular covectors, not an automatically available full Fréchet cotangent bundle. If only a smaller trace tangent range is available, covector representatives are identified modulo its annihilator. The form $\displaystyle{\Lambda_i}$ is semibasic: it vanishes when $\displaystyle{D\pi_{q_i}v=0}$. It need not descend to a one-form on $\displaystyle{\mathcal B_i}$, since $\displaystyle{\lambda_i(d_i)}$ generally depends on the initial data as well as the history. Consequently its exterior derivative below is taken on $\displaystyle{\mathfrak D_i}$ and retains mixed initial-data/history derivatives.
 
-An energy-space Green identity tested only on compact-time variations initially defines only that restricted response. To use nonzero temporal-endpoint variations one must establish an endpoint-separated extension; the temporal CPS term cannot be included again in $\displaystyle{\lambda_i}$. The rectangle construction and its lift-independent extension are proved in [rectangle §5.1](<models/rectangle scalar self-gluing.md>). Where a face/stratum density presentation exists, write
+An energy-space Green identity tested only on compact-time variations initially defines only that restricted response. To use nonzero temporal-endpoint variations one must establish an endpoint-separated extension; the temporal CPS term cannot be included again in $\displaystyle{\lambda_i}$. The rectangle construction and its lift-independent extension are proved in [rectangle §5.1](<Articles/Quantization in AdS/gluing/models/spacelike regions/non-gauge/rectangle scalar self-gluing.md>). Where a face/stratum density presentation exists, write
 
 $$\begin{align}
-\lambda_i[\delta q_i]
-&=\sum_{s\in\mathcal S_i}\braket{\Pi_s,\delta q_s}
-+\lambda_i^{\mathrm{corner}}[\delta q_i].
+\lambda_i[\delta q_i] &=\sum_{s\in\mathcal S_i}\braket{\Pi_s,\delta q_s} +\lambda_i^{\mathrm{corner}}[\delta q_i].
 \end{align}$$
 
 The last term is the actual remaining lower-stratum variation, if any; it is zero for the stated elementary scalar action. The equality is a pairing on the joint trace domain. Ambient face densities that differ by its annihilator represent the same covector. At energy regularity, a response belongs to the trace dual only when the Green identity defines such a functional; normal or corner point values must not be assumed.
@@ -189,30 +182,25 @@ The right-hand side is the symplectic flux produced by the prescribed boundary h
 Define the common-history domain by the identifications on the actual regional trace images, together with all induced corner compatibility, and denote its inclusion by
 
 $$\begin{align}
-\iota_{\mathrm{sew}}:\mathcal B_{\mathrm{sew}}
-\longrightarrow\prod_i\mathcal B_i,
-\qquad q_{\bar s}=J_sq_s.
+\iota_{\mathrm{sew}}:\mathcal B_{\mathrm{sew}} \longrightarrow\prod_i\mathcal B_i, \qquad q_{\bar s}=J_sq_s.
 \end{align}$$
 
 Use the admissible variation directions of this domain, with endpoint data controlled by the chosen variational principle. At a tuple of regional solutions $\displaystyle{d=(d_i)_i}$ with histories $\displaystyle{\iota_{\mathrm{sew}}(q)}$, the notation below means the fiberwise cotangent pullback
 
 $$\begin{align}
-\left(\iota_{\mathrm{sew}}^*\sum_i\lambda_i\right)_d[\eta]
-:=\sum_i\lambda_i(d_i)\!\left[D(\operatorname{pr}_i\circ\iota_{\mathrm{sew}})(q)\eta\right].
+\left(\iota_{\mathrm{sew}}^*\sum_i\lambda_i\right)_d[\eta] :=\sum_i\lambda_i(d_i)\!\left[D(\operatorname{pr}_i\circ\iota_{\mathrm{sew}})(q)\eta\right].
 \end{align}$$
 
 It is not a de Rham pullback of a response already defined on history space alone. Each region enters the sum of actions once, even when both sides of a seam belong to that region. On regional solutions the released interface variation is
 
 $$\begin{align}
-\delta\!\left(\sum_iS_i^{\mathrm{full}}\right)_{\mathrm{interface}}
-=\left(\iota_{\mathrm{sew}}^*\sum_i\lambda_i\right)[\delta q].
+\delta\!\left(\sum_iS_i^{\mathrm{full}}\right)_{\mathrm{interface}} =\left(\iota_{\mathrm{sew}}^*\sum_i\lambda_i\right)[\delta q].
 \end{align}$$
 
 Consequently the general release equation is
 
 $$\begin{align}
-\boxed{\quad q\in\mathcal B_{\mathrm{sew}},\qquad
-\iota_{\mathrm{sew}}^*\!\left(\sum_i\lambda_i\right)=0.\quad}
+\boxed{\quad q\in\mathcal B_{\mathrm{sew}},\qquad \iota_{\mathrm{sew}}^*\!\left(\sum_i\lambda_i\right)=0.\quad}
 \end{align}$$
 
 The second equation means zero as a covector on all admissible common-history variations, not zero for every component of an ambient facewise dual. Compact-time stationarity first gives this equation on compact-time tests. If later phase-space variations have nonzero temporal endpoints, one must prove that the endpoint-separated response also vanishes on their traces; this is proved in rectangle §5.2, and is part of the full-response hypothesis in the general reconstruction theorem. On a smooth seam interior, when compactly supported variations there are freely available and no additional interface action is present, it reduces to
@@ -282,8 +270,7 @@ $$\begin{align}
 Assume this locus has the smooth structure used for variations. Pullback commutes with the field-space exterior derivative, so the complete flux identity is
 
 $$\begin{align}
-\left.\sum_i(\Omega_i^+-\Omega_i^-)\right|_{\mathcal C}
-=-\delta\left[\left.\sum_i\Lambda_i\right|_{\mathcal C}\right]=0.
+\left.\sum_i(\Omega_i^+-\Omega_i^-)\right|_{\mathcal C} =-\delta\left[\left.\sum_i\Lambda_i\right|_{\mathcal C}\right]=0.
 \end{align}$$
 
 Indeed, the trace of every tangent vector to $\displaystyle{\mathcal C}$ is an admissible common-history tangent, so the released covector annihilates it and $\displaystyle{\left.\sum_i\Lambda_i\right|_{\mathcal C}=0}$. Pullback then commutes with the exterior derivative. This uses the full endpoint-separated response on that tangent class; it includes the initial-data dependence and the variation of the history inclusion when that inclusion is nonlinear. On smooth face interiors with fixed linear identifications, the familiar component calculation is
@@ -316,8 +303,7 @@ $$\begin{align}
 A global solution restricts to regional solutions satisfying the gluing conditions. Conversely, regional solutions in $\displaystyle{\mathcal C}$ define a global field. For every global test variation $\displaystyle{\eta}$, the regional Green identities give
 
 $$\begin{align}
-\braket{\mathcal E_M(\Phi),\eta} &=\sum_i\braket{\mathcal E_i(\Phi_i),\eta_i}
-+\left(\iota_{\mathrm{sew}}^*\sum_i\lambda_i\right)[\gamma\eta]\\
+\braket{\mathcal E_M(\Phi),\eta} &=\sum_i\braket{\mathcal E_i(\Phi_i),\eta_i} +\left(\iota_{\mathrm{sew}}^*\sum_i\lambda_i\right)[\gamma\eta]\\
 &=0.
 \end{align}$$
 
@@ -340,17 +326,13 @@ Finite sewing is associative provided every intermediate cluster retains its act
 Define the symmetry off shell, including quasi-invariance of the Lagrangian and the boundary/corner action. Write the bulk identity and its complete, consistently improved Noether current as
 
 $$\begin{align}
-\delta_\lambda\mathscr L_i&=d b_{i,\lambda},&
-j_{i,\lambda}&=\theta_i(\delta_\lambda\Phi_i)-b_{i,\lambda}.
+\delta_\lambda\mathscr L_i&=d b_{i,\lambda},& j_{i,\lambda}&=\theta_i(\delta_\lambda\Phi_i)-b_{i,\lambda}.
 \end{align}$$
 
 The corresponding charge includes the corner contribution fixed by the full action. On shell, Stokes' theorem gives
 
 $$\begin{align}
-H_{i,\lambda}(t_+)-H_{i,\lambda}(t_-)
-&=-\int_{\Gamma_i^{\mathrm{art}}}
-\left(\Pi_i\delta_\lambda q_i-b_{i,\lambda}^{\mathrm{out}}\right)
-+\mathcal F_{i,\lambda}^{\mathrm{phys/corner}}.
+H_{i,\lambda}(t_+)-H_{i,\lambda}(t_-) &=-\int_{\Gamma_i^{\mathrm{art}}} \left(\Pi_i\delta_\lambda q_i-b_{i,\lambda}^{\mathrm{out}}\right) +\mathcal F_{i,\lambda}^{\mathrm{phys/corner}}.
 \end{align}$$
 
 Here the integral is a facewise density presentation: $\displaystyle{b_{i,\lambda}^{\mathrm{out}}}$ uses the same polarization/improvement as the normal component of $\displaystyle{\theta_i}$. The final term denotes the remaining oriented physical-boundary and actual corner contributions. If this presentation is unavailable, use the full response pairing $\displaystyle{\lambda_i[\delta_\lambda q_i]}$ and the complete quasi-invariance functional. The shorter formula containing only $\displaystyle{-\braket{\Pi_i,\delta_\lambda q_i}}$ requires a vanishing normal quasi-invariance term and no omitted improvement contribution.
@@ -364,9 +346,7 @@ $$\begin{align}
 and be tangent to the full common-history and corner domain. For a single global symmetry of the additive full action, require the complete currents to match. On a smooth face this includes $\displaystyle{b_{s,\lambda}^{\mathrm{out}}+b_{\bar s,\lambda}^{\mathrm{out}}=0}$, up to the already included corner terms. Then
 
 $$\begin{align}
-&-\int_{\Gamma_e}\left[
-\Pi_s\delta_\lambda q_s+\Pi_{\bar s}\delta_\lambda q_{\bar s}
--b_{s,\lambda}^{\mathrm{out}}-b_{\bar s,\lambda}^{\mathrm{out}}\right]=0.
+&-\int_{\Gamma_e}\left[ \Pi_s\delta_\lambda q_s+\Pi_{\bar s}\delta_\lambda q_{\bar s} -b_{s,\lambda}^{\mathrm{out}}-b_{\bar s,\lambda}^{\mathrm{out}}\right]=0.
 \end{align}$$
 
 Hence the sum of regional charges is driven only by the retained physical-boundary/corner terms. Flux matching of $\displaystyle{\Pi}$ alone does not establish this statement for arbitrary quasi-symmetries.
@@ -374,8 +354,7 @@ Hence the sum of regional charges is driven only by the retained physical-bounda
 For example, a free scalar solution shift $\displaystyle{\delta_s\phi=s}$ has
 
 $$\begin{align}
-H_s&=\int(s\dot\phi-\dot s\phi)\,dx,&
-\dot H_s&=[s\phi'-s'\phi]_a^b.
+H_s&=\int(s\dot\phi-\dot s\phi)\,dx,& \dot H_s&=[s\phi'-s'\phi]_a^b.
 \end{align}$$
 
 At an artificial right endpoint this is $\displaystyle{-\Pi_\phi s+q\Pi_s}$. For $\displaystyle{\phi=s=\sinh(mx)}$ both terms cancel; omitting the second term gives a nonzero answer for an identically zero charge.
@@ -480,11 +459,8 @@ y=\mathsf R x+w,\qquad x=\mathsf B y,\qquad \mathsf B w=0.
 At fixed $\displaystyle{w}$, the bracket is precisely the bracket of $\displaystyle{F(\mathsf R x+w)}$ and $\displaystyle{G(\mathsf R x+w)}$ on $\displaystyle{(X,\Omega)}$. Thus Jacobi follows from the symplectic bracket on each such leaf. To prove closure of the full function class, put $\displaystyle{A(x)=D\mathsf R(x)^\flat}$. Differentiation and Hessian symmetry give the actual gradient
 
 $$\begin{align}
-U_{\{F,G\}_{\mathrm{sew}}}
-={}&DU_F[\mathsf P_{\mathrm{sew}}U_G]-DU_G[\mathsf P_{\mathrm{sew}}U_F]\\
-&+\mathsf B^\flat\left(
-DA(x)[A(x)U_G]U_F-DA(x)[A(x)U_F]U_G\right),
-\qquad x=\mathsf B y.
+U_{\{F,G\}_{\mathrm{sew}}} ={}&DU_F[\mathsf P_{\mathrm{sew}}U_G]-DU_G[\mathsf P_{\mathrm{sew}}U_F]\\
+&+\mathsf B^\flat\left( DA(x)[A(x)U_G]U_F-DA(x)[A(x)U_F]U_G\right), \qquad x=\mathsf B y.
 \end{align}$$
 
 The first two terms retain the fixed supports of the input gradients; the last lies in the fixed support allowed for $\displaystyle{\mathsf B^\flat}$. Joint smoothness of the transposes and their background derivatives therefore proves full-gradient closure. The last term must not be dropped for nonlinear $\displaystyle{\mathsf R}$.

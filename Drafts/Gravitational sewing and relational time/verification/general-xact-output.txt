@@ -1,0 +1,317 @@
+[
+  {
+    "name": "tensor",
+    "result": {
+      "ok": true,
+      "allZero": true,
+      "profile": "core",
+      "pipeline": "canonical_contract",
+      "pipelineSteps": [
+        "ToCanonical",
+        "ContractMetric",
+        "ToCanonical"
+      ],
+      "assumptions": "",
+      "loadedPackages": [
+        "xAct`xTensor`",
+        "xAct`xPert`",
+        "xAct`xTras`"
+      ],
+      "loadErrors": [],
+      "loadMessages": [],
+      "setupMessages": [],
+      "checks": [
+        {
+          "label": "antisym_first_pair",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "pair_exchange",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "algebraic_Bianchi",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "singular_Ricci_contraction",
+          "status": "zero",
+          "canonicalResidual": "(jj[-b, -d]*nn[-a]*nn[a])/2 - (jj[-d, -a]*nn[a]*nn[-b])/2 + (jj[-d, c]*met[-a, -c]*nn[a]*nn[-b])/2 - (jj[-b, -d]*met[-a, -c]*nn[a]*nn[c])/2 - (jj[-b, -a]*nn[a]*nn[-d])/2 + (jj[-b, c]*met[-a, -c]*nn[a]*nn[-d])/2",
+          "canonicalResidualSha256": "afc96face706763909e0268ce98c532f0f8dd1273467d3b35abd51314fe1ddad",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "pure_normal_jump_has_zero_Riemann",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        }
+      ],
+      "elapsedMs": 4633,
+      "transportStderr": []
+    }
+  },
+  {
+    "name": "pp-wave",
+    "result": {
+      "ok": true,
+      "allZero": true,
+      "profile": "components",
+      "pipeline": "none",
+      "pipelineSteps": [],
+      "assumptions": "",
+      "loadedPackages": [
+        "xAct`xTensor`",
+        "xAct`xPert`",
+        "xAct`xTras`",
+        "xAct`xCoba`"
+      ],
+      "loadErrors": [],
+      "loadMessages": [],
+      "setupMessages": [],
+      "checks": [
+        {
+          "label": "pp_exact_vacuum_all_Ricci",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "pp_radiative_Weyl_component",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "pp_interface_full_extrinsic_curvature",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        }
+      ],
+      "elapsedMs": 4548,
+      "transportStderr": []
+    }
+  },
+  {
+    "name": "rosen-wave",
+    "result": {
+      "ok": true,
+      "allZero": true,
+      "profile": "components",
+      "pipeline": "none",
+      "pipelineSteps": [],
+      "assumptions": "",
+      "loadedPackages": [
+        "xAct`xTensor`",
+        "xAct`xPert`",
+        "xAct`xTras`",
+        "xAct`xCoba`"
+      ],
+      "loadErrors": [],
+      "loadMessages": [],
+      "setupMessages": [],
+      "checks": [
+        {
+          "label": "Rosen_exact_Ricci_all_components",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "Rosen_transverse_Riemann_x",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "Rosen_transverse_Riemann_y",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        }
+      ],
+      "elapsedMs": 4653,
+      "transportStderr": []
+    }
+  },
+  {
+    "name": "gaussian",
+    "result": {
+      "ok": true,
+      "allZero": true,
+      "profile": "components",
+      "pipeline": "none",
+      "pipelineSteps": [],
+      "assumptions": "",
+      "loadedPackages": [
+        "xAct`xTensor`",
+        "xAct`xPert`",
+        "xAct`xTras`",
+        "xAct`xCoba`"
+      ],
+      "loadErrors": [],
+      "loadMessages": [],
+      "setupMessages": [],
+      "checks": [
+        {
+          "label": "Gaussian_tangential_Ricci_both_signatures",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "Gaussian_normal_Ricci_both_signatures",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "Gaussian_mixed_Ricci_homogeneous_collars",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        }
+      ],
+      "elapsedMs": 4935,
+      "transportStderr": []
+    }
+  },
+  {
+    "name": "TT-perturbation",
+    "result": {
+      "ok": true,
+      "allZero": true,
+      "profile": "components",
+      "pipeline": "none",
+      "pipelineSteps": [],
+      "assumptions": "",
+      "loadedPackages": [
+        "xAct`xTensor`",
+        "xAct`xPert`",
+        "xAct`xTras`",
+        "xAct`xCoba`"
+      ],
+      "loadErrors": [],
+      "loadMessages": [],
+      "setupMessages": [],
+      "checks": [
+        {
+          "label": "TT_linearized_Ricci_all_components",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "TT_EH_quadratic_density_up_to_explicit_divergence",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        }
+      ],
+      "elapsedMs": 4893,
+      "transportStderr": []
+    }
+  }
+]

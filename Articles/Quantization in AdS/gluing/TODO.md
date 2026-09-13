@@ -37,9 +37,6 @@ The active route is regional/global observable algebra and its composition. Stat
 - [x] Establish the original switched-phi4 class's formal locality/refinement, corresponding actual classical solution-domain evolution, two-vertex tree/one-loop diagnostics, and compatible choices with switching work retained.
 - [x] Prove that time-slice fails for the original finite-insertion, formal-only completion: the four-wave-packet quartic counterexample already occurs at coupling/hbar order zero.
 - [ ] Resolve the completion used for the interacting endpoint: the separate completed relative-S construction gives compact-torus and causal-convex GH Cauchy inverses but explicitly enlarges the original class. Keep its theorem distinct from the finite-class no-go before marking the full route complete.
-- [ ] If retaining the original spatially smooth face-density class is required, prove its rectangle transpose/extension properties separately. The revised trace-dual theorem does not prove that old claim.
-- [ ] Before adding sharp true-boundary composites, establish their distribution/test class and renormalized products; they are not supplied by the bulk polynomial theorem.
-- Cone renormalization, strong coupling, state/representation sewing and infinite refinement are outside the present scalar closure scope.
 
 ## Gauge Benchmark
 

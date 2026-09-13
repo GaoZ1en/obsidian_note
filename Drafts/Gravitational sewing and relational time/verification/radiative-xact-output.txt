@@ -1,0 +1,121 @@
+{
+  "conformal": {
+    "content": [],
+    "structuredContent": {
+      "ok": true,
+      "allZero": true,
+      "profile": "core",
+      "pipeline": "none",
+      "pipelineSteps": [],
+      "assumptions": "",
+      "loadedPackages": [
+        "xAct`xTensor`",
+        "xAct`xPert`",
+        "xAct`xTras`"
+      ],
+      "loadErrors": [],
+      "loadMessages": [],
+      "setupMessages": [],
+      "checks": [
+        {
+          "label": "conformal_scalar_curvature_3D",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "conformal_scalar_Laplacian_3D",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "TT_conformal_divergence_trace_term",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        }
+      ],
+      "elapsedMs": 5313,
+      "transportStderr": []
+    }
+  },
+  "TT": {
+    "content": [],
+    "structuredContent": {
+      "ok": true,
+      "allZero": true,
+      "profile": "components",
+      "pipeline": "none",
+      "pipelineSteps": [],
+      "assumptions": "",
+      "loadedPackages": [
+        "xAct`xTensor`",
+        "xAct`xPert`",
+        "xAct`xTras`",
+        "xAct`xCoba`"
+      ],
+      "loadErrors": [],
+      "loadMessages": [],
+      "setupMessages": [],
+      "checks": [
+        {
+          "label": "TT_Ricci_all_components",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "TT_gauge_invariant_linear_curvature",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        },
+        {
+          "label": "TT_quadratic_EH_density_explicit_divergence",
+          "status": "zero",
+          "canonicalResidual": "0",
+          "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "canonicalResidualTruncated": false,
+          "finalResidual": "0",
+          "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "finalResidualTruncated": false,
+          "unknownHeads": [],
+          "messages": []
+        }
+      ],
+      "elapsedMs": 5394,
+      "transportStderr": []
+    }
+  }
+}

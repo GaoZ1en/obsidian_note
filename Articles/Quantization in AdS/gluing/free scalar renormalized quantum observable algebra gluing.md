@@ -2,7 +2,7 @@
 
 **结论。** 对有限个 $1+1$ 维静态 massive scalar cells，regional action 与 response 决定 transparent transmission operator。用该算子的 Wick kernel 定义下述 polynomial core 及 §2.1 的 interior equicausal quantum algebra，sewed algebra 与独立 uncut algebra exact 同构，且在保留 response 和共同 Wick prescription 的增强对象上，quantization 与 sewing 交换。这一代数包含内部 local Wick composites 和 spacetime-smeared stress tensor；§6 另给总自由能量的正常序扩张。它不限于有限模态或线性 CCR。
 
-本文不将整个经典 $\mathcal H_\beta$ 直接量子化，也不假设经典 smooth transpose 已证明其 equicausal 量子版本。§1.1 将 corner 相容性纳入区域输入；§4.1 另证明平直矩形的 smooth torus/Klein 自粘合版本。锥点模型只继承已明确构造的 symplectic/CCR sector，不能直接继承本文的 Wick 定理。完整审计见 [renormalized scalar sewing audit](<renormalized scalar sewing audit.md>)；经典输入见 [smooth regional observable algebras and symmetries](<smooth regional observable algebras and symmetries.md>)。
+本文不将整个经典 $\mathcal H_\beta$ 直接量子化，也不假设经典 smooth transpose 已证明其 equicausal 量子版本。§1.1 将 corner 相容性纳入区域输入；§4.1 另证明平直矩形的 smooth torus/Klein 自粘合版本。锥点模型只继承已明确构造的 symplectic/CCR sector，不能直接继承本文的 Wick 定理。完整审计见 [renormalized scalar sewing audit](<renormalized scalar sewing audit.md>)；经典输入见 [smooth regional observable algebras and symmetries](<Articles/Quantization in AdS/gluing/archived/smooth regional observable algebras and symmetries.md>)。
 
 ## 1. 区域输入与两种乘积
 

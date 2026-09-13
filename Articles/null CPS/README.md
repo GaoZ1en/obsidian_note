@@ -2,10 +2,15 @@
 
 ## Current Direction
 
-The scalar null-characteristic benchmarks are complete in their stated scopes: [[Articles/Quantization in AdS/gluing/rindler scalar|flat Rindler scalar]] closes the matched-domain classical, symplectic, smeared-CCR, and abstract B1 mechanism, while [[Articles/Quantization in AdS/gluing/ads2-rindler global reconstruction|AdS$_2$--Rindler global reconstruction]] adds the action-derived null CPS, global-time Hamiltonian, lowest-weight spectrum, global state/correlators, and smeared right-wedge KMS theorem. [[Articles/Quantization in AdS/gluing/ads2-rindler regulated partial trace|AdS$_2$--Rindler regulated partial trace]] closes the finite-partial-trace to fixed-label continuum algebraic state-restriction step.
+This directory is a **completed/parked benchmark cluster**, not the active spine of the gluing programme.
 
-The active task is to extract a general null CPS from the scalar benchmarks and then upgrade Maxwell directly in Maxwell variables to two-intersecting-null-surfaces characteristic composition, with radiative data, Gauss constraint, cut charge/edge data, gauge reduction, and corner compatibility kept explicit. Gravity null phase space is later. [[Literature Notes/arxiv/2026/08/17/The Phase Space of Gravity on Null Hypersurfaces (2608.14449v1)|The Phase Space of Gravity on Null Hypersurfaces]] and [[Literature Notes/arxiv/2026/08/25/Perturbative Reconstruction of Self-Adjoint Generators from Bosonic Canonical Commutation Relations - Application to the Null-Surface Formulation (2608.21947v1)|Perturbative Reconstruction from Null-Surface CCR]] are relevant external comparisons, not evidence that this project has completed the Maxwell or gravity steps.
+- The scalar Rindler and AdS$_2$--Rindler notes close their declared matched/cyclic B1 and fixed-label B2 scopes, including the action-derived null CPS, global reconstruction, correlators and smeared wedge KMS benchmark.
+- `null-characteristic-cps/` closes the product-background radiative Maxwell theorem in its declared sector.
+- `two-null-maxwell-composition/` closes the finite-cross and complete-future-cross theorems in its declared product-background, trivial-bundle, radiative-sector scope.
+- `static-patch-characteristic-maxwell/` is frozen as an internal calibration with a closed logarithmic chain and fixed-$j$ affine kill test, not a live generalization route.
+
+General curved null CPS, caustics, non-Abelian characteristic theory and gravity remain open but parked. They reopen only if the active regional quantum-algebra or downstream state-composition problem genuinely requires a null-specific input that the completed benchmarks do not supply. AdS$_2$--Rindler KMS/Unruh remains a downstream state-level reliability test, not a reason for further null-CPS expansion by itself.
 
 ## Claim Boundary
 
-No unrestricted horizon-completion onto theorem, sharp left/right Hilbert tensor factorization, Type III classification, full modular-group convergence, Maxwell two-surface gauge reduction, or gravity null-composition theorem is claimed here.
+No unrestricted horizon-completion onto theorem, sharp left/right Hilbert tensor factorization, Type III classification, full modular-group convergence, curved/non-Abelian two-null theorem, or gravity null-composition theorem is claimed here. Completion labels above apply only to each project's declared domains and sectors.

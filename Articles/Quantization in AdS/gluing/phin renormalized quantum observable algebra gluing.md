@@ -4,7 +4,7 @@
 
 原证明针对 $1+1$ 维 interval cells。§2.1 补入 smooth torus/Klein 矩形自粘合的定义与 comparison theorem；真实角点/锥点上的 renormalized insertions 不由此获得。与自由理论一样，完整相容 history-family 的量子闭合和 exact quotient 仍是独立于这里的 bulk insertion theorem 的问题。
 
-这里的 quantum regional object 保留 action、histories、response 和插入标签。它不等于两个已在 artificial reflecting walls 上独立重整化的 algebras；也不声称整个经典 $\mathcal H_\beta$ 或整个 equicausal class 都被 $\Psi_\lambda^{\pm *}$ 保持。自由输入和 polynomial Wick class 见 [free scalar renormalized quantum observable algebra gluing](<free scalar renormalized quantum observable algebra gluing.md>)，下称 [Q0]；经典 maps 见 [phin smooth regional observable algebra gluing](<models/phin smooth regional observable algebra gluing.md>)。
+这里的 quantum regional object 保留 action、histories、response 和插入标签。它不等于两个已在 artificial reflecting walls 上独立重整化的 algebras；也不声称整个经典 $\mathcal H_\beta$ 或整个 equicausal class 都被 $\Psi_\lambda^{\pm *}$ 保持。自由输入和 polynomial Wick class 见 [free scalar renormalized quantum observable algebra gluing](<free scalar renormalized quantum observable algebra gluing.md>)，下称 [Q0]；经典 maps 见 [phin smooth regional observable algebra gluing](<Articles/Quantization in AdS/gluing/models/spacelike regions/non-gauge/phin smooth regional observable algebra gluing.md>)。
 
 ## 1. Action 与量子约定
 

@@ -12,6 +12,10 @@ Research workspace for AdS quantization projects, including AdS3 gauge and gravi
 - Keep exploratory calculations in topic folders and preserve each manuscript subtree's existing file structure.
 - Avoid shorthand that merely renames one simple expression or already-labelled object. Introduce notation only when it names an independently meaningful object or materially clarifies a repeated derivation.
 
+## Formulation Discipline
+
+- Audit the formulation when a problem accumulates ad hoc repairs, model-specific exceptions, or circular definitions. Test whether the question or basic object is wrong before adding machinery, and prefer the least structured formulation that resolves the concrete obstruction; do not escalate abstraction for novelty or generality alone.
+
 ## Symbolic Verification
 
 - Follow the root formula-verification contract and use `note-math-verify` when available before editing mathematical claims.

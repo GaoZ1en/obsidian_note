@@ -4,13 +4,13 @@ This vault is mainly organized as follows.
 
 >[!Note]
 >This module contains my permanent notes and topic notes.
->	submodules:
+>	Submodules:
 >		Mathematics: mathematics notes and calculations
 >		Physics: physics notes and technical summaries
 >		Code: coding notes and software-related references
 >		Reading: reading notes organized by topic
->		useful results: reusable formulas and derived results
->		arxiv: periodic arXiv screening notes
+>		Useful results: reusable formulas and derived results
+>		Arxiv: periodic arXiv screening notes
 
 >[!Literature]
 >This module contains literature notes for papers, mostly organized as reading records and paper summaries.

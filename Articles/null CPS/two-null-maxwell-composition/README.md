@@ -1,5 +1,9 @@
 # Two-Null Maxwell Composition
 
+## Programme status
+
+**Completed in the declared product-background and radiative-sector scope; parked as a benchmark.** The finite-cross and complete-future-cross theorem layers below remain authoritative within their stated regularity, topology, bundle and charge assumptions. Curved backgrounds, caustics, non-Abelian Yang--Mills and gravity are not continuations currently active in this directory. Reopen only if the regional quantum-algebra or downstream state-composition programme requires a null-specific input not already supplied here.
+
 ## Direct verdict
 
 The project now has two distinct theorem layers.
@@ -185,5 +189,5 @@ analytic master results are reconnected here through the full-Maxwell
 dictionary; no sibling file is modified and no mode regression is presented
 as a Maxwell continuum proof.
 
-This round does not modify the GitHub repository index or Research Radar and
-does not enter curved backgrounds, Yang--Mills theory, or gravity.
+Curved backgrounds, Yang--Mills theory and gravity remain outside the declared
+theorem scope and are parked rather than inferred from these results.

@@ -1,6 +1,6 @@
 # Finite-Port Reduced State and Open-System Reduction
 
-Consider the centered massive scalar and its conforming shared-port Galerkin action in [[Articles/Quantization in AdS/gluing/models/spacelike regions/1+1 scalar|1+1 scalar]]. At finite $N$, we first construct the exact glued ground state, then restrict it to the regional factors, and finally eliminate region 2 from the Heisenberg equations. We do not use a sharp regional product-Fock representation as the definition, and we do not introduce a gauge field.
+Consider the centered massive scalar and its conforming shared-port Galerkin action in [[Articles/Quantization in AdS/gluing/models/spacelike regions/non-gauge/1+1 scalar|1+1 scalar]]. At finite $N$, we first construct the exact glued ground state, then restrict it to the regional factors, and finally eliminate region 2 from the Heisenberg equations. We do not use a sharp regional product-Fock representation as the definition, and we do not introduce a gauge field.
 
 The calculation follows
 

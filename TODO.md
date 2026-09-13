@@ -1,24 +1,12 @@
 ## TODO
 
-- JLMS公式
-	- see Guanda Lin, Penington,
-- linearized gravity的Noether charge完全放到bulk内
-	- impossible in the sense of writing the Noether charge in terms of $$\begin{align}H_{\xi} & =\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\xi _{\nu}\tilde{T}^{\mu \nu}\end{align}$$
-- 一般ads标量慢衰减支
-	- nothing special
-	- read the mathematica code and write an draft
-		- see [[Articles/Quantization in AdS/scalar/scalar off-shell mode truncation|scalar off-shell mode truncation]]?
-- 谐振子+高阶导数耦合做微扰论
-	- consider the following action$$\begin{align}L & =\dfrac{1}{2}m\dot{x}^{2}-\dfrac{1}{2}m\omega ^{2}x^{2}+\dfrac{1}{4}\lambda x^{2}\dot{x}^{2}\end{align}$$
-		- see [[Articles/Quantization in AdS/perturbation/path-integral of worldline non-linear sigma model|path-integral of worldline non-linear sigma model]], [[Articles/Quantization in AdS/perturbation/CPS perturbation of harmonic oscillator|CPS perturbation of harmonic oscillator]]
-- 引力微扰论
-	- see [[Articles/Quantization in AdS/linearized gravity/higher perturbations of linearized gravity modes|higher perturbations of linearized gravity modes]]
-- gluing system
-	- AdS$_2$--Rindler scalar benchmark complete on the stated characteristic/cyclic and fixed-label state-restriction scopes
-	- general null CPS extraction active
-	- Maxwell two-intersecting-null-surface characteristic composition next
-	- read [[Literature Notes/Chandrasekaran/Subregion algebras in classical and quantum gravity (2601.07915v1)|Subregion algebras in classical and quantum gravity (2601.07915v1)]]
-	-
+1. consider how to do canonical quantization in CPS without explicit mode expansion.
+	1. motivations
+		1. linear mode decomposition cannot be the intrinsic definition of the exact interacting phase space
+		2. Cauchy data and charctertis data are different representations of the same evolution problem
+		3. a more natural formalism for gluing
+		4. fock space factorization fails generally
+		5. generic spacetime has no preferred positive-frequency decomposition
 
 #### 常用prompts
 

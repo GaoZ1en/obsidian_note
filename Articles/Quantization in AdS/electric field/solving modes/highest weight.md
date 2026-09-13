@@ -1,12 +1,12 @@
-in [[Articles/Quantization in AdS/electric field/solving modes/Proca-Chern-Simons|Proca-Chern-Simons]] we have already known that the normal modes form $\displaystyle{(0,0)}$(trivial vacuum), $\displaystyle{(1,0)}$, $\displaystyle{(0,1)}$ and $\displaystyle{(1,1)}$ representation of $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ of global $\displaystyle{\mathrm{AdS}_{3}}$. in this file we will derive the explicit form of these states, at least the highest weight modes $\displaystyle{\psi _{(1,0)}^{\mu}}$, $\displaystyle{\psi _{(0,1)}^{\mu}}$ and $\displaystyle{\psi _{(1,1)}^{\mu}}$. normalization constants are ommited here for simplicity
+In [[Articles/Quantization in AdS/electric field/solving modes/Proca-Chern-Simons|Proca-Chern-Simons]] we have already known that the normal modes form $\displaystyle{(0,0)}$(trivial vacuum), $\displaystyle{(1,0)}$, $\displaystyle{(0,1)}$ and $\displaystyle{(1,1)}$ representation of $\displaystyle{\mathrm{SL}(2,\mathbb{R})\times \mathrm{SL}(2,\mathbb{R})}$ of global $\displaystyle{\mathrm{AdS}_{3}}$. In this file we will derive the explicit form of these states, at least the highest weight modes $\displaystyle{\psi _{(1,0)}^{\mu}}$, $\displaystyle{\psi _{(0,1)}^{\mu}}$ and $\displaystyle{\psi _{(1,1)}^{\mu}}$. Normalization constants are ommited here for simplicity
 
 $$\begin{align}
 \mathcal{C}A^{\mu} & =\mathcal{\bar{C}}A^{\mu}=0\implies (h,\bar{h})=(0,0),(1,0),(0,1),(1,1)
 \end{align}$$
 
-## solving the primaries
+## Solving the Primaries
 
-we first write down the Killing vectors
+We first write down the Killing vectors
 
 $$\begin{align}
 \xi _{1} & =\frac{1}{2}e^{i(t-\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}-i(1+r^{2})^{1/2} \frac{\partial}{\partial r}-r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right) \\
@@ -48,7 +48,7 @@ $$\begin{align}
 \mathcal{L}_{\bar{\xi}_{-1}}\psi ^{\phi} & =\frac{i}{2}e^{-i(\omega+1)t}e^{i(m-1)\phi}(1+r^{2})^{1/2}\left(\frac{1}{r}f^{t}-\frac{i}{r^{2}(1+r^{2})}f^{r}+\partial _{r}f^{\phi}-\frac{(\omega-m-1)r^{2}-(m+1)}{r(1+r^{2})}f^{\phi}\right)
 \end{align}$$
 
-first we consider the $\displaystyle{(0,0)}$ sector. the highest weight conditions are
+first we consider the $\displaystyle{(0,0)}$ sector. The highest weight conditions are
 
 $$\begin{align}
 \mathcal{L}_{\xi _{0}}\psi _{(0,0)}^{\mu} & =0 \\
@@ -59,7 +59,7 @@ $$\begin{align}
 
 which leads to the trivial solution $\displaystyle{\psi _{(0,0)}^{\mu}=0}$
 
-for $\displaystyle{(1,0)}$ sector, we have the following highest weight conditions:
+For $\displaystyle{(1,0)}$ sector, we have the following highest weight conditions:
 
 $$\begin{align}
 \mathcal{L}_{\xi _{0}}\psi _{(1,0)}^{\mu} & =-i\psi _{(1,0)}^{\mu} \\
@@ -80,7 +80,7 @@ $$\begin{align}
 \psi ^{\mu}_{n,(1,0)}=\mathcal{L}^{n}_{\xi _{-1}}\psi _{(1,0)}^{\mu}
 \end{align}$$
 
-they are related to large gauge transformations that do not vanish at infinity. so they play a role as topologically non-trivial vacuum configurations. the corresponding gauge parameter is
+they are related to large gauge transformations that do not vanish at infinity. So they play a role as topologically non-trivial vacuum configurations. The corresponding gauge parameter is
 
 $$\begin{align}
 \Lambda _{n,(1,0)} & =\mathcal{L}_{\xi _{-1}}^{n}\Lambda _{(1,0)} \\
@@ -141,18 +141,18 @@ $$\begin{align}
 
 > The propagating Maxwell modes are not represented by strictly highest-weight vector potentials. Instead, the highest-weight condition should be imposed on gauge equivalence classes, or equivalently on the gauge-invariant field strength. A strictly highest-weight potential in the (1,1) sector is pure gauge.
 
-## quantization and partition function
+## Quantization and Partition Function
 
-*discussion*. the Hilbert space of this theory can be decomposed into $\displaystyle{(1,1)}$ excitations that acting on a sequence of $\displaystyle{(0,0)}$, $\displaystyle{(1,0)}$ and $\displaystyle{(0,1)}$ vacua. denote the $\displaystyle{(0,0)}$ vacuum as the 0-th level, the primary of $\displaystyle{(1,0)/(0,1)}$ as the 1/-1-st level, and the $\displaystyle{n}$-th descendant of $\displaystyle{(1,0)/(0,1)}$ as the $\displaystyle{n+1/-(n+1)}$-th level, then the full Hilbert space can be written as
+*Discussion*. The Hilbert space of this theory can be decomposed into $\displaystyle{(1,1)}$ excitations that acting on a sequence of $\displaystyle{(0,0)}$, $\displaystyle{(1,0)}$ and $\displaystyle{(0,1)}$ vacua. Denote the $\displaystyle{(0,0)}$ vacuum as the 0-th level, the primary of $\displaystyle{(1,0)/(0,1)}$ as the 1/-1-st level, and the $\displaystyle{n}$-th descendant of $\displaystyle{(1,0)/(0,1)}$ as the $\displaystyle{n+1/-(n+1)}$-th level, then the full Hilbert space can be written as
 
 $$\begin{align}
 \mathcal{H} & =\bigoplus _{n=-\infty}^{\infty}\mathcal{H}_{n} \\
 \mathcal{H}_{n} & =\prod _{k,\bar{k}} \frac{1}{\sqrt{ n_{k}!n_{\bar{k}}! }}(a^{\dagger}_{k,\bar{k}})^{n_{k}}\ket{\Omega _{n}}
 \end{align}$$
 
-here $\displaystyle{\ket{\Omega _{n}}}$ is the vacuum at level $\displaystyle{n}$, and $\displaystyle{a^{\dagger}_{k,\bar{k}}}$ is the creation operator of $\displaystyle{(1,1)}$ excitations with mode numbers $\displaystyle{(k,\bar{k})}$ acting on the vacuum $\displaystyle{\ket{\Omega _{n}}}$. the inner product between different levels vanishes, i.e., $\displaystyle{\braket{\Omega _{n}|\Omega _{m}}=0}$ for $\displaystyle{n\neq m}$, since they belong to different superselection sectors characterized by different boundary conditions at infinity. within each level, the inner product is defined as usual.
+here $\displaystyle{\ket{\Omega _{n}}}$ is the vacuum at level $\displaystyle{n}$, and $\displaystyle{a^{\dagger}_{k,\bar{k}}}$ is the creation operator of $\displaystyle{(1,1)}$ excitations with mode numbers $\displaystyle{(k,\bar{k})}$ acting on the vacuum $\displaystyle{\ket{\Omega _{n}}}$. The inner product between different levels vanishes, i.e., $\displaystyle{\braket{\Omega _{n}|\Omega _{m}}=0}$ for $\displaystyle{n\neq m}$, since they belong to different superselection sectors characterized by different boundary conditions at infinity. Within each level, the inner product is defined as usual.
 
-we write the mode expansion of the field operator as
+We write the mode expansion of the field operator as
 
 $$\begin{align}
 A^{\mu} & =\sum ^{\infty}_{n=-\infty}\sum ^{\infty}_{k,\bar{k}=0}a_{n,k,\bar{k}}\psi ^{\mu}_{(n,k,\bar{k})}+a^{\dagger}_{n,k,\bar{k}}\psi ^{*\mu} _{(n,k,\bar{k})} \\
@@ -178,11 +178,11 @@ Z[\beta,\Omega] & =\mathrm{Tr}e^{-\beta H+i\alpha J} \\
  & =\prod ^{\infty}_{\ell,\bar{\ell}=0} \frac{1-q^{\ell+1}\bar{q}^{\bar{\ell}+1}}{(1-q^{\ell+1}\bar{q}^{\bar{\ell}})(1-q^{\ell}\bar{q}^{\bar{\ell}+1})}
 \end{align}$$
 
-here $\displaystyle{q=e^{-\beta +i\alpha}}$ and $\displaystyle{\bar{q}=e^{-\beta -i\alpha}}$. this result is consistent with Xi Yin's result.
+here $\displaystyle{q=e^{-\beta +i\alpha}}$ and $\displaystyle{\bar{q}=e^{-\beta -i\alpha}}$. This result is consistent with Xi Yin's result.
 
-## equivariance condition
+## Equivariance Condition
 
-in the above discussion, we solve the highest weight conditions for $\displaystyle{(1,1)}$ branch
+In the above discussion, we solve the highest weight conditions for $\displaystyle{(1,1)}$ branch
 
 $$\begin{align}
 \mathcal{L}_{\xi _{0}}\psi _{(1,1)}^{\mu} & =-i\psi _{(1,1)}^{\mu} \\
@@ -191,7 +191,7 @@ $$\begin{align}
 \mathcal{L}_{\bar{\xi}_{1}}\psi _{(1,1)}^{\mu} & =0
 \end{align}$$
 
-and only pure gauge modes are solved out. for a gauge field, the highest-weight condition must be imposed equivariantly on the gauge-equivalence class rather than on a chosen representative. therefore the raising generators are required to annihilate the potential only modulo a gauge transformation:
+and only pure gauge modes are solved out. For a gauge field, the highest-weight condition must be imposed equivariantly on the gauge-equivalence class rather than on a chosen representative. Therefore the raising generators are required to annihilate the potential only modulo a gauge transformation:
 
 $$\begin{align}
 \mathcal{L}_{\xi _{0}}\psi _{(1,1)}^{\mu} & =-i\psi _{(1,1)}^{\mu} \\
@@ -206,39 +206,39 @@ $$\begin{align}
 \omega & =2, & m & =0 .
 \end{align}$$
 
-in the covariant gauge representative, the condition $\nabla_\mu A^\mu=0$ is automatically satisfied by the $m=0$ ansatz below. the field equations reduce to
+In the covariant gauge representative, the condition $\nabla_\mu A^\mu=0$ is automatically satisfied by the $m=0$ ansatz below. The field equations reduce to
 
 $$\begin{align}
 f^r & =0, \\
 (1+r^{2})\partial _{r}^{2}f^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}f^{\phi}+\left(4+\frac{4}{1+r^{2}}\right)f^{\phi} & =0 .
 \end{align}$$
 
-the solution is
+The solution is
 
 $$\begin{align}
 f^{\phi}(r)& =\frac{C_1}{1+r^2}+ C_2\frac{-1+2r^2\log r}{2r^2(1+r^2)} .
 \end{align}$$
 
-the second solution is singular at the origin, so the regular normalizable mode is
+The second solution is singular at the origin, so the regular normalizable mode is
 
 $$\begin{align}
 \psi_{(1,1)}^t & =0, &\psi_{(1,1)}^r & =0, &\psi_{(1,1)}^\phi & =\frac{C e^{-2it}}{1+r^2}.
 \end{align}$$
 
-the relaxed highest weight condition is also satisfied. one finds
+The relaxed highest weight condition is also satisfied. One finds
 
 $$\begin{align}
 \mathcal{L}_{\xi_1}\psi_{(1,1)}^\mu& =\nabla^\mu\left(\frac{C}{2}\frac{r}{\sqrt{1+r^2}}e^{-i(t+\phi)}\right)\propto \psi _{(0,1)}^{\mu} \\
 \mathcal{L}_{\bar{\xi}_1}\psi_{(1,1)}^\mu& =\nabla^\mu\left(-\frac{C}{2}\frac{r}{\sqrt{1+r^2}}e^{-i(t-\phi)}\right)\propto \psi _{(1,0)}^{\mu}
 \end{align}$$
 
-this mode is not pure gauge. equivalently, this mode can be written in terms of the Killing vectors as
+this mode is not pure gauge. Equivalently, this mode can be written in terms of the Killing vectors as
 
 $$\begin{align}
 \psi_{(1,1)}^\mu& =C\frac{r e^{-3it}}{(1+r^2)^{3/2}}\left(e^{-i\phi}\bar{\xi}_1^\mu-e^{i\phi}\xi_1^\mu\right).
 \end{align}$$
 
-the normalization constant is determined by the symplectic form
+The normalization constant is determined by the symplectic form
 
 $$\begin{align}
 \omega[A,A^{*}] & =-i \\
@@ -252,29 +252,29 @@ $$\begin{align}
 \implies C_{n,\bar{n}}& =\frac{1}{\sqrt{n!(n+1)!\bar{n}!(\bar{n}+1)!}} .
 \end{align}$$
 
-here $\psi_{(1,1)}^\mu$ already includes the primary normalization $C=1/\sqrt{2\pi}$.
+Here $\psi_{(1,1)}^\mu$ already includes the primary normalization $C=1/\sqrt{2\pi}$.
 
-### modes summary for the $\displaystyle{(1,1)}$ branch
+### Modes Summary for the $\displaystyle{(1,1)}$ Branch
 
-the normalized primary can be chosen as
+The normalized primary can be chosen as
 
 $$\begin{align}
 \psi_{(1,1)}^t & =0, &\psi_{(1,1)}^r & =0, &\psi_{(1,1)}^\phi& =\frac{1}{\sqrt{2\pi}}\frac{e^{-2it}}{1+r^2}.
 \end{align}$$
 
-equivalently,
+Equivalently,
 
 $$\begin{align}
 \psi_{(1,1)}^\mu& =\frac{1}{\sqrt{2\pi}}\frac{r e^{-3it}}{(1+r^2)^{3/2}}\left(e^{-i\phi}\bar{\xi}_1^\mu-e^{i\phi}\xi_1^\mu\right).
 \end{align}$$
 
-the normalized descendants are
+The normalized descendants are
 
 $$\begin{align}
 \psi_{(1,1),n,\bar{n}}^\mu& =\frac{\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\psi_{(1,1)}^\mu}{\sqrt{n!(n+1)!\bar{n}!(\bar{n}+1)!}},&n,\bar{n} & \geq 0 .
 \end{align}$$
 
-for reference, the unnormalized descendants have the closed form
+For reference, the unnormalized descendants have the closed form
 
 $$\begin{align}
 \widetilde{\psi}_{n,\bar{n}}^\mu &=\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\psi_{(1,1)}^\mu \\
@@ -287,13 +287,13 @@ $$\begin{align}
 \omega_{n,\bar n}&=2+n+\bar n, & m_{n,\bar n}&=n-\bar n, & p&=\min(n,\bar n), & q&=|n-\bar n|.
 \end{align}$$
 
-define
+Define
 
 $$\begin{align}
 s_{n,\bar n}(r) &=-iC(-i)^q p!(p+q+1)! \frac{r^q}{(1+r^2)^{1+q/2}} P_p^{(q,1)}\left(\frac{1-r^2}{1+r^2}\right).
 \end{align}$$
 
-for $m_{n,\bar n}\neq0$, the radial functions are
+For $m_{n,\bar n}\neq0$, the radial functions are
 
 $$\begin{align}
 f^r_{n,\bar n} &=\frac{m_{n,\bar n}\left(\omega_{n,\bar n}s_{n,\bar n}-r(1+r^2)\partial_rs_{n,\bar n}\right)} {(m_{n,\bar n}^2-\omega_{n,\bar n}^2)r}, \\
@@ -301,16 +301,16 @@ f^t_{n,\bar n} &=-\frac{ir}{1+r^2}f^r_{n,\bar n}, \\
 f^\phi_{n,\bar n} &=\frac{(1+r^2)\partial_rs_{n,\bar n}+m_{n,\bar n}f^r_{n,\bar n}} {i\omega_{n,\bar n}r}.
 \end{align}$$
 
-the normalized modes are then
+The normalized modes are then
 
 $$\begin{align}
 \psi_{(1,1),n,\bar n}^\mu &=\frac{\widetilde{\psi}_{n,\bar n}^\mu} {\sqrt{n!(n+1)!\bar n!(\bar n+1)!}}.
 \end{align}$$
 
-they carry
+They carry
 
 $$\begin{align}
 h & =1+n, &\bar{h} & =1+\bar{n}, &\omega_{n,\bar{n}} & =2+n+\bar{n}, &m_{n,\bar{n}} & =n-\bar{n}.
 \end{align}$$
 
-the primary is a representative satisfying the relaxed highest weight condition on the gauge equivalence class, while the descendants are obtained by the usual lowering operations.
+The primary is a representative satisfying the relaxed highest weight condition on the gauge equivalence class, while the descendants are obtained by the usual lowering operations.

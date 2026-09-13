@@ -4,7 +4,7 @@ date: 2026-04-15
 summary: ""
 ---
 
-the eom of $\displaystyle{\mathrm{U}(1)}$ gauge theory is
+The eom of $\displaystyle{\mathrm{U}(1)}$ gauge theory is
 
 $$\begin{align}
 (1+r^{2})\partial _{r}^{2}A^{t}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{1+5r^{2}}{r}\partial _{r}A^{t}+4A^{t}+\frac{1}{1+r^{2}}\partial _{t}\partial _{r}A^{r}+\frac{1-r^{2}}{r(1+r^{2})^{2}}\partial _{t}A^{r}+\frac{1}{1+r^{2}}\partial _{t}\partial _{\phi}A^{\phi} & =0 \\
@@ -19,7 +19,7 @@ $$\begin{align}
 \implies\partial _{t}A^{t}+\partial _{r}A^{r}+\frac{1}{r}A^{r}+\partial _{\phi}A^{\phi} & =0
 \end{align}$$
 
-## accessibility of the covariant gauge
+## Accessibility of the Covariant Gauge
 
 The covariant gauge condition should be understood as a choice of representative in the gauge-orbit decomposition, not as a prescription that starts from an arbitrary written representative and then performs a gauge transformation while keeping the same naive falloff at every intermediate step. Under
 
@@ -62,7 +62,7 @@ $$\begin{align}
 
 This is the Maxwell analogue of using square-integrable diffeomorphisms in the gravity gauge-fixing problem: the gauge condition defines the transverse representative in the chosen decomposition, while boundary-violating longitudinal branches are simply not part of the proper gauge sector.
 
-take the following ansatz
+Take the following ansatz
 
 $$\begin{align}
 A^{\mu}(x) & =e^{-i\omega t+im\phi}f^{\mu}(r)
@@ -89,7 +89,7 @@ $$\begin{align}
 
 here $\displaystyle{m_{\pm}^{2}=(m\mp 1)^{2}}$
 
-the asymptotic boundary conditions of $\displaystyle{\Phi _{\pm}}$ are
+The asymptotic boundary conditions of $\displaystyle{\Phi _{\pm}}$ are
 
 $$\begin{align}
 \Phi _{\pm} & =\mathcal{O}(r^{-1}) & \text{ as } & r\to \infty \\
@@ -120,7 +120,7 @@ $$\begin{align}
 \omega[A,A^{*}]=-i
 \end{align}$$
 
-which agrees with the spectrum obtained in the Proca field case by setting $\displaystyle{\mu\to 0}$. the normalized solutions are
+which agrees with the spectrum obtained in the Proca field case by setting $\displaystyle{\mu\to 0}$. The normalized solutions are
 
 $$\begin{align}
 h_{+,m\geqslant 1,n}^{t} & =e^{-i(m+2n)t}e^{im\phi} \sqrt{ \frac{1}{8\pi n(n+m)} }\left[mr^{m}(1+r^{2})^{-(m+2)/2}P_{n}^{(n,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m-1}(1+r^{2})^{-(m+4)/2}P_{n}^{(0,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
@@ -170,9 +170,9 @@ h^{\phi}_{-,m\leqslant -1,n} & =-e^{-i(-m+2n)t}e^{im\phi}\sqrt{ \frac{(2n-m)^{2}
 
 with conformal weights $\displaystyle{(h,\bar{h})=(n,n-m)}$
 
-# gauge redundancy
+# Gauge Redundancy
 
-actually there are still residual guage redundancy left in the solutions above. solutions with conformal weight $\displaystyle{(h,\bar{h})=(k,\bar{k}),k,\bar{k}=\mathbb{Z}^{+}}$ in both sectors correspond to the same physical state. the conformal weight is defined as
+Actually there are still residual guage redundancy left in the solutions above. Solutions with conformal weight $\displaystyle{(h,\bar{h})=(k,\bar{k}),k,\bar{k}=\mathbb{Z}^{+}}$ in both sectors correspond to the same physical state. The conformal weight is defined as
 
 $$\begin{align}
 \mathcal{L}_{\xi _{0}}A^{\mu} & =-ihA^{\mu} \\
@@ -194,7 +194,7 @@ then we have to show
 
 ## $\displaystyle{h_{+,m=0,n}^{\mu},h^{\mu}_{-,m=0,n}}$
 
-we first write down these two solutions explicitly
+We first write down these two solutions explicitly
 
 $$\begin{align}
 h^{t}_{+,m=0,n} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{8\pi(n+1)^{2}} }\left[(r^{2}-2)(1+r^{2})^{-2}P_{n}^{(0,1)}\left( \frac{r^{2}-1}{r^{2}+1} \right)-4r^{2}(1+r^{2})^{-3}P_{n}^{(0,1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
@@ -219,7 +219,7 @@ i\Omega[h_{m=0,n},h_{m=0,n}] & =\begin{pmatrix}
 
 the eigenvalues of this matrix are $\displaystyle{0,2}$, thus there is one null direction, which means these two modes differ by a gauge transformation.
 
-write
+Write
 
 $$\begin{align}
 f_{m=0,n}^{\mu} & =\frac{1}{2}(h_{+,m=0,n}^{\mu}+h_{-,m=0,n}^{\mu}) \\
@@ -232,7 +232,7 @@ g_{m=0,n}^{r} & =0 \\
 g_{m=0,n}^{\phi} & =e^{-i(2+2n)t}\sqrt{ \frac{1}{2\pi} }(1+r^{2})^{-1}P_{n}^{(0,1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-the $\displaystyle{f}$ modes are pure gauge, and the $\displaystyle{g}$ modes are physical modes, which is exactly the same as the normalizable modes in the temporal gauge case. the asymptotic behavior of the $\displaystyle{f}$ modes is
+the $\displaystyle{f}$ modes are pure gauge, and the $\displaystyle{g}$ modes are physical modes, which is exactly the same as the normalizable modes in the temporal gauge case. The asymptotic behavior of the $\displaystyle{f}$ modes is
 
 $$\begin{align}
 f_{m=0,n}^{t} & =\mathcal{O}(r^{-2}) \\
@@ -257,7 +257,7 @@ so the radial component satisfies $\displaystyle{\partial _{r}\Lambda=A^{r}/(1+r
 
 ## $\displaystyle{h^{\mu}_{+,m\geqslant 1,n+1}}$ and $\displaystyle{h^{\mu}_{-,m\geqslant1,n}}$
 
-we write these two modes explicitly
+We write these two modes explicitly
 
 $$\begin{align}
 h_{+,m\geqslant 1,n+1}^{t} & =e^{-i(2+m+2n)t}e^{im\phi} \sqrt{ \frac{1}{8\pi (1+n)(1+n+m)} }\left[mr^{m}(1+r^{2})^{-(m+2)/2}P_{n+1}^{(0,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m-1}(1+r^{2})^{-(m+4)/2}P_{n+1}^{(0,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\
@@ -310,7 +310,7 @@ Thus these $\displaystyle{N\geq1}$ null modes are proper gauge transformations. 
 
 ## $\displaystyle{h^{\mu}_{+,m\leqslant -1,n}}$ and $\displaystyle{h^{\mu}_{-,m\leqslant -1,n+1}}$
 
-similarly, for $\displaystyle{h^{\mu}_{+,m\leqslant -1,n}}$ and $\displaystyle{h^{\mu}_{-,m\leqslant -1,n+1}}$, consider the symplectic matrix between these two modes
+Similarly, for $\displaystyle{h^{\mu}_{+,m\leqslant -1,n}}$ and $\displaystyle{h^{\mu}_{-,m\leqslant -1,n+1}}$, consider the symplectic matrix between these two modes
 
 $$\begin{align}
 i\Omega[h_{m\leqslant -1,n_{1}},h_{m\leqslant -1,n_{2}}] & =\begin{pmatrix}
@@ -329,9 +329,9 @@ $$\begin{align}
 
 so this null direction is also a proper gauge transformation rather than a large gauge transformation.
 
-# edge mode
+# Edge Mode
 
-besides the normalizable modes solved above, the following modes are not discussed
+Besides the normalizable modes solved above, the following modes are not discussed
 
 $$\begin{align}
 h_{+,m\geqslant 1,n=0}^{t} & =e^{-im(t-\phi)}r^{m}(1+r^{2})^{-(m+2)/2} \\
@@ -347,9 +347,9 @@ h^{r}_{-,m\leqslant -1,n=0} & =-ie^{im(t+\phi)}r^{-m-1}(1+r^{2})^{m/2} \\
 h^{\phi}_{-,m\leqslant -1,n=0} & =-e^{im(t+\phi)}r^{-m-2}(1+r^{2})^{m/2}
 \end{align}$$
 
-with conformal weights $\displaystyle{(h,\bar{h})=(0,-m)}$. these modes are not normalizable under the usual inner product (since the $\displaystyle{0}$ factor in the denominator, so we drop them in the following analysis).
+with conformal weights $\displaystyle{(h,\bar{h})=(0,-m)}$. These modes are not normalizable under the usual inner product (since the $\displaystyle{0}$ factor in the denominator, so we drop them in the following analysis).
 
-the field strength of these modes vanishes identically, thus they are pure gauge configurations. More explicitly, for $\displaystyle{m\geq 1}$,
+The field strength of these modes vanishes identically, thus they are pure gauge configurations. More explicitly, for $\displaystyle{m\geq 1}$,
 
 $$\begin{align}
 \Lambda _{+,m}&=\frac{1}{im}e^{-im(t-\phi)}\left(\frac{r}{\sqrt{1+r^{2}}}\right)^{m}, &h^{\mu}_{+,m,n=0}&=\nabla ^{\mu}\Lambda _{+,m},
@@ -363,9 +363,9 @@ $$\begin{align}
 
 These are large gauge transformations because the gauge parameters approach nonzero functions on the boundary. This is the distinction between the $\displaystyle{n=0}$ edge modes and the $\displaystyle{N\geq1}$ null modes above: both are pure gauge in the bulk, but only the $\displaystyle{n=0}$ edge modes have nonvanishing boundary gauge parameters.
 
-# zero energy modes
+# Zero Energy Modes
 
-for modes with $\displaystyle{\omega =0}$, we start from the eom and the gauge condition with all time derivatives dropped
+For modes with $\displaystyle{\omega =0}$, we start from the eom and the gauge condition with all time derivatives dropped
 
 $$\begin{align}
 (1+r^{2})\partial _{r}^{2}A^{t}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{t}+\frac{1+5r^{2}}{r}\partial _{r}A^{t}+4A^{t} & =0 \\
@@ -382,7 +382,7 @@ $$\begin{align}
 (1+r^{2})\partial _{r}^{2}A^{\phi}+\frac{3+5r^{2}}{r}\partial _{r}A^{\phi}+4A^{\phi}+\frac{1}{r^{2}}\partial _{\phi}^{2}A^{\phi} & =-\frac{2}{r^{3}}\partial _{\phi}A^{r}
 \end{align}$$
 
-here $\displaystyle{A^{t}}$ decouples from other components, and the equation for $\displaystyle{A^{r}}$ and $\displaystyle{A^{\phi}}$ are the same as before with $\displaystyle{\omega =0}$. we can still introduce
+here $\displaystyle{A^{t}}$ decouples from other components, and the equation for $\displaystyle{A^{r}}$ and $\displaystyle{A^{\phi}}$ are the same as before with $\displaystyle{\omega =0}$. We can still introduce
 
 $$\begin{align}
 \Phi _{\pm} & =\frac{i}{2}A^{r}\pm \frac{1}{2}rA^{\phi}
@@ -398,7 +398,7 @@ $$\begin{align}
 
 the solutions of these equations are not regular at $\displaystyle{r=0}$, so there is no zero energy modes.
 
-# alternative boundary condition
+# Alternative Boundary Condition
 
 $$\begin{align}
 (1+r^{2})\partial _{r}^{2}\Phi_{\pm}+\frac{1+3r^{2}}{r}\partial _{r}\Phi _{\pm}+\left(1+\frac{\omega ^{2}}{1+r^{2}}-\frac{m_{\pm}^{2}}{r^{2}}\right)\Phi _{\pm} & =0 \\
@@ -439,11 +439,11 @@ $$\begin{align}
 
 regularity at $\displaystyle{r=0}$ requires us to discard the second solution.
 
-actually the solutions around $\displaystyle{z=1}$ does not necessarily match solutions around $\displaystyle{z=0}$...
+Actually the solutions around $\displaystyle{z=1}$ does not necessarily match solutions around $\displaystyle{z=0}$...
 
 ---
 
-as a summary, the normalized solutions are
+As a summary, the normalized solutions are
 
 $$\begin{align}
 h_{+,m\geqslant 1,n}^{t} & =e^{-i(m+2n)t}e^{im\phi} \sqrt{ \frac{1}{8\pi n(n+m)} }\left[mr^{m}(1+r^{2})^{-(m+2)/2}P_{n}^{(n,m-1)}\left(\frac{r^{2}-1}{r^{2}+1}\right)-4r^{m-1}(1+r^{2})^{-(m+4)/2}P_{n}^{(0,m-1)'}\left(\frac{r^{2}-1}{r^{2}+1}\right)\right] \\

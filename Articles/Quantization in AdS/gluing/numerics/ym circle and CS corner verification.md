@@ -2,7 +2,7 @@
 
 Date: 2026-09-07. Base revision inspected: 5947eb4b2a7d5c10e5f389bf0c8d887c5dd2911c.
 
-The work extends the two interval YM notes, repairs the gauge template's trace-group domain, and adds the [open-chord CS model](<../models/U(1) Chern-Simons disk and open-chord sewing.md>) and [self-sewing topology note](<../self-sewing topology and orientation.md>). Prior conversation verdicts and old “Verified” labels were treated as claims, not evidence.
+The work extends the two interval YM notes, repairs the gauge template's trace-group domain, and adds the [open-chord CS model](<Articles/Quantization in AdS/gluing/models/spacelike regions/gauge/U(1) Chern-Simons disk and open-chord sewing.md>) and [self-sewing topology note](<../self-sewing topology and orientation.md>). Prior conversation verdicts and old “Verified” labels were treated as claims, not evidence.
 
 ## Executed exact checks
 

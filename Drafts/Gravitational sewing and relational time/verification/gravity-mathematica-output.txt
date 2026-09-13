@@ -1,0 +1,140 @@
+{
+	"conventions":"G=c=hbar=1; Omega=-delta Theta; i_X Omega=delta H; static exterior and fixed areal radii",
+	"checkCount":33,
+	"allPassed":true,
+	"checks":[
+		{
+			"label":"off-shell radial mass identity",
+			"passed":true
+		},
+		{
+			"label":"transformed radial momentum is the stated combination of constraints",
+			"passed":true
+		},
+		{
+			"label":"full local Liouville identity including spatial boundary variation",
+			"passed":true
+		},
+		{
+			"label":"constraint transformation is nonsingular in the exterior chart",
+			"passed":true
+		},
+		{
+			"label":"inverse mass-variable chart restores F",
+			"passed":true
+		},
+		{
+			"label":"inverse chart restores P_M",
+			"passed":true
+		},
+		{
+			"label":"fixed boundary radius removes the Liouville corner one-form",
+			"passed":true
+		},
+		{
+			"label":"Brown-York energy derivative is the local redshift",
+			"passed":true
+		},
+		{
+			"label":"monotonicity on the declared mass interval",
+			"passed":true
+		},
+		{
+			"label":"exact energy-to-mass inverse",
+			"passed":true
+		},
+		{
+			"label":"inverse mass derivative and rigging Jacobian",
+			"passed":true
+		},
+		{
+			"label":"common lapse variation yields the oriented energy sum",
+			"passed":true
+		},
+		{
+			"label":"clock parametrization keeps the zero-mode endpoint variation",
+			"passed":true
+		},
+		{
+			"label":"fixed induced metric lapse variation has sign minus energy",
+			"passed":true
+		},
+		{
+			"label":"equal mass matches both independent components of extrinsic curvature",
+			"passed":true
+		},
+		{
+			"label":"diagonal interface action has moment map E_A-E_B",
+			"passed":true
+		},
+		{
+			"label":"zero-level presymplectic form has complete one-dimensional kernel",
+			"passed":true
+		},
+		{
+			"label":"explicit quotient map pulls back the global symplectic form",
+			"passed":true
+		},
+		{
+			"label":"interface generator preserves the quotient coordinates",
+			"passed":true
+		},
+		{
+			"label":"interface energy polarization is canonical",
+			"passed":true
+		},
+		{
+			"label":"boundary-source parametrization gives the framed reduced two-form",
+			"passed":true
+		},
+		{
+			"label":"common internal clock contribution cancels under sewing",
+			"passed":true
+		},
+		{
+			"label":"outer boundary generator commutes with seam constraint",
+			"passed":true
+		},
+		{
+			"label":"state-dependent outer\/interface clock redshift",
+			"passed":true
+		},
+		{
+			"label":"Brown-York energy is not equal to mass away from infinity",
+			"passed":true
+		},
+		{
+			"label":"regular vacuum center forces zero mass through curvature invariant",
+			"passed":true
+		},
+		{
+			"label":"two consecutive interface moment maps commute",
+			"passed":true
+		},
+		{
+			"label":"three-region quotient coordinate is associative",
+			"passed":true
+		},
+		{
+			"label":"energy-polarized gauge-fixing determinant is one",
+			"passed":true
+		},
+		{
+			"label":"mass-polarized gauge-fixing determinant equals E prime",
+			"passed":true
+		},
+		{
+			"label":"continuous-band clock overlap",
+			"passed":true
+		},
+		{
+			"label":"continuous-band relational Schrodinger equation",
+			"passed":true
+		},
+		{
+			"label":"two-time relational propagator",
+			"passed":true
+		}
+	]
+}
+Null

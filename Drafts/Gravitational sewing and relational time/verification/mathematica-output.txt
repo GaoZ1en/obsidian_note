@@ -1,0 +1,311 @@
+{
+	"dimensionlessConvention":"hbar=1; x=omega t; omega>0",
+	"dimensionsChecked":[
+		2,
+		3,
+		4,
+		5,
+		6
+	],
+	"checkCount":74,
+	"allPassed":true,
+	"checks":[
+		{
+			"label":"classical local gauge invariance",
+			"passed":true
+		},
+		{
+			"label":"classical lapse equation gives charge matching",
+			"passed":true
+		},
+		{
+			"label":"classical reduced action",
+			"passed":true
+		},
+		{
+			"label":"classical gauge flow has opposite interface signs",
+			"passed":true
+		},
+		{
+			"label":"d=2 continuous Haar projection",
+			"passed":true
+		},
+		{
+			"label":"d=2 exact d-point projection without aliasing",
+			"passed":true
+		},
+		{
+			"label":"d=2 projector and full physical dimension",
+			"passed":true
+		},
+		{
+			"label":"d=2 isometric encoding",
+			"passed":true
+		},
+		{
+			"label":"d=2 group-averaged seed normalization",
+			"passed":true
+		},
+		{
+			"label":"d=2 conditional state and reduction",
+			"passed":true
+		},
+		{
+			"label":"d=2 Schrodinger equation",
+			"passed":true
+		},
+		{
+			"label":"d=2 covariant clock POVM normalization",
+			"passed":true
+		},
+		{
+			"label":"d=2 d orthogonal clock ticks",
+			"passed":true
+		},
+		{
+			"label":"d=2 surviving outer Hamiltonian",
+			"passed":true
+		},
+		{
+			"label":"d=2 two-time propagator",
+			"passed":true
+		},
+		{
+			"label":"d=3 continuous Haar projection",
+			"passed":true
+		},
+		{
+			"label":"d=3 exact d-point projection without aliasing",
+			"passed":true
+		},
+		{
+			"label":"d=3 projector and full physical dimension",
+			"passed":true
+		},
+		{
+			"label":"d=3 isometric encoding",
+			"passed":true
+		},
+		{
+			"label":"d=3 group-averaged seed normalization",
+			"passed":true
+		},
+		{
+			"label":"d=3 conditional state and reduction",
+			"passed":true
+		},
+		{
+			"label":"d=3 Schrodinger equation",
+			"passed":true
+		},
+		{
+			"label":"d=3 covariant clock POVM normalization",
+			"passed":true
+		},
+		{
+			"label":"d=3 d orthogonal clock ticks",
+			"passed":true
+		},
+		{
+			"label":"d=3 surviving outer Hamiltonian",
+			"passed":true
+		},
+		{
+			"label":"d=3 two-time propagator",
+			"passed":true
+		},
+		{
+			"label":"d=4 continuous Haar projection",
+			"passed":true
+		},
+		{
+			"label":"d=4 exact d-point projection without aliasing",
+			"passed":true
+		},
+		{
+			"label":"d=4 projector and full physical dimension",
+			"passed":true
+		},
+		{
+			"label":"d=4 isometric encoding",
+			"passed":true
+		},
+		{
+			"label":"d=4 group-averaged seed normalization",
+			"passed":true
+		},
+		{
+			"label":"d=4 conditional state and reduction",
+			"passed":true
+		},
+		{
+			"label":"d=4 Schrodinger equation",
+			"passed":true
+		},
+		{
+			"label":"d=4 covariant clock POVM normalization",
+			"passed":true
+		},
+		{
+			"label":"d=4 d orthogonal clock ticks",
+			"passed":true
+		},
+		{
+			"label":"d=4 surviving outer Hamiltonian",
+			"passed":true
+		},
+		{
+			"label":"d=4 two-time propagator",
+			"passed":true
+		},
+		{
+			"label":"d=5 continuous Haar projection",
+			"passed":true
+		},
+		{
+			"label":"d=5 exact d-point projection without aliasing",
+			"passed":true
+		},
+		{
+			"label":"d=5 projector and full physical dimension",
+			"passed":true
+		},
+		{
+			"label":"d=5 isometric encoding",
+			"passed":true
+		},
+		{
+			"label":"d=5 group-averaged seed normalization",
+			"passed":true
+		},
+		{
+			"label":"d=5 conditional state and reduction",
+			"passed":true
+		},
+		{
+			"label":"d=5 Schrodinger equation",
+			"passed":true
+		},
+		{
+			"label":"d=5 covariant clock POVM normalization",
+			"passed":true
+		},
+		{
+			"label":"d=5 d orthogonal clock ticks",
+			"passed":true
+		},
+		{
+			"label":"d=5 surviving outer Hamiltonian",
+			"passed":true
+		},
+		{
+			"label":"d=5 two-time propagator",
+			"passed":true
+		},
+		{
+			"label":"d=6 continuous Haar projection",
+			"passed":true
+		},
+		{
+			"label":"d=6 exact d-point projection without aliasing",
+			"passed":true
+		},
+		{
+			"label":"d=6 projector and full physical dimension",
+			"passed":true
+		},
+		{
+			"label":"d=6 isometric encoding",
+			"passed":true
+		},
+		{
+			"label":"d=6 group-averaged seed normalization",
+			"passed":true
+		},
+		{
+			"label":"d=6 conditional state and reduction",
+			"passed":true
+		},
+		{
+			"label":"d=6 Schrodinger equation",
+			"passed":true
+		},
+		{
+			"label":"d=6 covariant clock POVM normalization",
+			"passed":true
+		},
+		{
+			"label":"d=6 d orthogonal clock ticks",
+			"passed":true
+		},
+		{
+			"label":"d=6 surviving outer Hamiltonian",
+			"passed":true
+		},
+		{
+			"label":"d=6 two-time propagator",
+			"passed":true
+		},
+		{
+			"label":"general covariant POVM is a fixed Schur filter followed by unitary evolution",
+			"passed":true
+		},
+		{
+			"label":"uniform clock outcome density",
+			"passed":true
+		},
+		{
+			"label":"von Neumann equation for every covariant seed",
+			"passed":true
+		},
+		{
+			"label":"Dirac observable matches conditional observable",
+			"passed":true
+		},
+		{
+			"label":"relational observable preserves multiplication",
+			"passed":true
+		},
+		{
+			"label":"partial-transpose spectrum and entanglement witness",
+			"passed":true
+		},
+		{
+			"label":"twirling has nonzero weight outside the constraint kernel",
+			"passed":true
+		},
+		{
+			"label":"coherent projection of the product state yields the Bell history",
+			"passed":true
+		},
+		{
+			"label":"twirling remains PPT in this separable example",
+			"passed":true
+		},
+		{
+			"label":"qubit interference signal",
+			"passed":true
+		},
+		{
+			"label":"finite clock overlap",
+			"passed":true
+		},
+		{
+			"label":"wrong positive-positive charge convention kills the excited history",
+			"passed":true
+		},
+		{
+			"label":"uniform timing bin Fourier multiplier",
+			"passed":true
+		},
+		{
+			"label":"a one-period integral is not a projector for an unmatched frequency",
+			"passed":true
+		},
+		{
+			"label":"cyclic sampling aliases an extra charge equal to d",
+			"passed":true
+		}
+	]
+}
+Null

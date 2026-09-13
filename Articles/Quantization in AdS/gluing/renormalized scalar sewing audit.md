@@ -17,7 +17,7 @@
 | [01_renormalized_quantum_algebra_expansion.md](<../../../01_renormalized_quantum_algebra_expansion.md>) | Wick/equicausal 扩张方向正确。其 boundary/history 类与 $R^*,B^*$ 的全类 mapping properties 尚未证明；§5 与 §6 的“physical slots”须区分。 |
 | [02_phin_renormalized_interacting_quantum_sewing.md](<../../../02_phin_renormalized_interacting_quantum_sewing.md>) | 六项条件并未全部建立。§§3、5–9、11 的对象或推理有下述缺口；Møller identity 在正确的 off-shell domain 和 coherent products 上可严格证明。 |
 
-[phi4_phin_audit_and_nonperturbative_sewing_7298e80](<../../../phi4_phin_audit_and_nonperturbative_sewing_7298e80/README.md>) 中三份 Markdown 与根目录副本逐字节相同；其 README、checks.py 和保存的结果也纳入检查。较早对话对应的 classical 修补已在当前 [smooth regional observable algebras and symmetries](<smooth regional observable algebras and symmetries.md>) 与旧 classical note 中记录，没有发现另一份遗漏的根目录审计正文需要复制。
+[phi4_phin_audit_and_nonperturbative_sewing_7298e80](<../../../phi4_phin_audit_and_nonperturbative_sewing_7298e80/README.md>) 中三份 Markdown 与根目录副本逐字节相同；其 README、checks.py 和保存的结果也纳入检查。较早对话对应的 classical 修补已在当前 [smooth regional observable algebras and symmetries](<Articles/Quantization in AdS/gluing/archived/smooth regional observable algebras and symmetries.md>) 与旧 classical note 中记录，没有发现另一份遗漏的根目录审计正文需要复制。
 
 ## 2. 经典修补的证明
 
@@ -34,7 +34,7 @@ X_{s^*F}(x)=Ds(x)^{-1}X_F(sx).
 
 偶次势的 sign 与满足几何／coupling symmetry 的有限 reflection 群，可把存在域作有限 saturation；低阶 bound 取有限最大值，允许耦合半径取有限最小值。Mismatch 邻域取有限个变换后的交，再在辅助 history 方向饱和。存在证明和逐函数 section 均保留。奇次势的 sign 则还改变 $\lambda g$，属于模型间 covariance。
 
-这已分别写入 [phi4](<models/phi4 smooth regional observable algebra gluing.md>) 的 §10 和 [phin](<models/phin smooth regional observable algebra gluing.md>) 的 §4。
+这已分别写入 [phi4](<Articles/Quantization in AdS/gluing/models/spacelike regions/non-gauge/phi4 smooth regional observable algebra gluing.md>) 的 §10 和 [phin](<Articles/Quantization in AdS/gluing/models/spacelike regions/non-gauge/phin smooth regional observable algebra gluing.md>) 的 §4。
 
 ### 2.2 物理 History 的辅助代表
 
@@ -257,7 +257,7 @@ H_r\star_WH_s=H_rH_s+\hbar H_{r+s}.
 - Classical formalism 的 Noether flux 已加入 quasi-invariance current，并补明 weak-to-smooth patching input 和完整 nonlinear-gradient formula。
 - 一般 locality 使用独立 causal support 输入；有限结合性针对 physical quotients，任意 off-matching extensions 不由 transmission 唯一性固定。
 
-新 [general observable formalism](<observable algebra gluing formalism.md>) 给模型无关的充分条件与证明；[1+1 YM classical model](<models/1+1 Yang-Mills classical observable algebra gluing.md>) 给含 framed Wilson operators 的全 smooth exact quotient。详细逐文件审计在 [当前三稿审计](<../../../01_commit_audit_and_repairs.md>)。
+新 [general observable formalism](<observable algebra gluing formalism.md>) 给模型无关的充分条件与证明；[1+1 YM classical model](<Articles/Quantization in AdS/gluing/models/spacelike regions/gauge/1+1 Yang-Mills classical observable algebra gluing.md>) 给含 framed Wilson operators 的全 smooth exact quotient。详细逐文件审计在 [当前三稿审计](<../../../01_commit_audit_and_repairs.md>)。
 
 本轮实际复现 [scalar 30 组](<numerics/observable_sewing_scalar_recheck_results.json>)，新增 [23 组 finite identities](<numerics/observable_sewing_ym_audit_results.json>)，另得 [两个 xAct/xTras Noether residuals](<numerics/observable_sewing_noether_xact_results.json>) 为零。这里没有重新运行本文件上一轮记录的全部外部 Python checks，也不把这些有限结果称为 microlocal/PDE theorem。
 
@@ -271,11 +271,11 @@ H_r\star_WH_s=H_rH_s+\hbar H_{r+s}.
 |---|---|
 | [classical_gluing_formalism](<classical_gluing_formalism.md>) | 以 side occurrences 处理多个接口和 self-seams；joint trace topology；完整 face/corner response pullback；真实相容 chart、regular dual、extension 与 source-specific quotient theorem。 |
 | [observable algebra gluing formalism](<observable algebra gluing formalism.md>) | 同步 classical/CCR/Wick/interacting 定义、证明及有限组合；区分 independent/common-family、matched-space 和 quantum presentation 三种 source。 |
-| [classical regional observable algebra gluing](<classical regional observable algebra gluing.md>) | 明确原 interval proofs 的范围，加入 corner-aware definition/reconstruction 输入，保留有限 Sobolev-loss 与 exact-on-to 的原证明边界。 |
-| [smooth regional observable algebras and symmetries](<smooth regional observable algebras and symmetries.md>) | 切向 Hamiltonian fields、联合 covector 域、corner response 与 symmetry/extension 条件。 |
+| [classical regional observable algebra gluing](<Articles/Quantization in AdS/gluing/archived/classical regional observable algebra gluing.md>) | 明确原 interval proofs 的范围，加入 corner-aware definition/reconstruction 输入，保留有限 Sobolev-loss 与 exact-on-to 的原证明边界。 |
+| [smooth regional observable algebras and symmetries](<Articles/Quantization in AdS/gluing/archived/smooth regional observable algebras and symmetries.md>) | 切向 Hamiltonian fields、联合 covector 域、corner response 与 symmetry/extension 条件。 |
 | [Q0](<free scalar renormalized quantum observable algebra gluing.md>) | 实际 matched test/dual spaces；massive smooth torus/Klein Wick/equicausal theorem、normal-topology ideal proof；cone CCR 与 genuine corner insertions 的边界。 |
 | [Qn](<phin renormalized quantum observable algebra gluing.md>) | smooth corner atlas 上的 density/insertion/renormalization 数据、独立-slot deck descent 与逐阶 extension、exact interacting comparison；不从能量定理推断 singular-stratum renormalization。 |
-| [rectangle model](<models/rectangle scalar self-gluing.md>) | 具体 joint-history harmonic-lift/energy IVP、endpoint-separated lift-independent response 及 release/form 双向证明；切向 observable 反例；CCR proof 与更强 family theorem 的明确区分。 |
+| [rectangle model](<Articles/Quantization in AdS/gluing/models/spacelike regions/non-gauge/rectangle scalar self-gluing.md>) | 具体 joint-history harmonic-lift/energy IVP、endpoint-separated lift-independent response 及 release/form 双向证明；切向 observable 反例；CCR proof 与更强 family theorem 的明确区分。 |
 
 本轮没有改写 archived/deprecated formulations，也未把上述 scalar 结果推广成一般 gauge/gravity corner theorem。
 

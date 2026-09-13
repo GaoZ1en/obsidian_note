@@ -1,0 +1,44 @@
+{
+  "conformal": {
+    "profile": "core",
+    "pipeline": "none",
+    "setup": "DefManifold[MS,3,{a,b,c,d,e,f,i,j,k,l}];\nDefMetric[1,bg[-a,-b],BD,{\";\",\"D\"}];\nDefTensor[ph[],MS];DefTensor[uu[],MS];\nDefTensor[ss[a,b],MS,Symmetric[{a,b}]];\nconn[ia_,ib_,ic_]:=2/ph[] (delta[ia,ib] BD[ic][ph[]]+delta[ia,ic] BD[ib][ph[]]-bg[ib,ic] BD[ia][ph[]]);\nnorm[ex_]:=ToCanonical[ContractMetric[Expand[ex]]];\nrchange=BD[-c][conn[c,-a,-b]]-BD[-b][conn[c,-a,-c]]+conn[c,-c,-d]conn[d,-a,-b]-conn[c,-b,-d]conn[d,-a,-c];\nlap=ph[]^-4 bg[a,b](BD[-a][BD[-b][uu[]]]-conn[c,-a,-b]BD[-c][uu[]]);",
+    "checks": [
+      {
+        "label": "conformal_scalar_curvature_3D",
+        "residual": "norm[ph[]^-4 bg[a,b]rchange+8 ph[]^-5 BD[-a][BD[a][ph[]]]]"
+      },
+      {
+        "label": "conformal_scalar_Laplacian_3D",
+        "residual": "norm[lap-ph[]^-4 (BD[-a][BD[a][uu[]]]+2/ph[] BD[a][ph[]]BD[-a][uu[]])]"
+      },
+      {
+        "label": "TT_conformal_divergence_trace_term",
+        "residual": "norm[-10/ph[] ss[a,b]BD[-b][ph[]]+conn[a,-b,-c]ss[b,c]+conn[b,-b,-c]ss[a,c]+2/ph[] bg[-b,-c]ss[b,c]BD[a][ph[]]]"
+      }
+    ],
+    "maxOutputChars": 5000,
+    "timeoutMs": 60000
+  },
+  "TT": {
+    "profile": "components",
+    "pipeline": "none",
+    "setup": "DefManifold[MM,4,{a,b,c,d,e,f}];\nDefChart[ch,MM,{0,1,2,3},{tt[],xx[],yy[],zz[]}];\nDefMetric[-1,met[-a,-b],CD,{\";\",\"D\"}];\nDefConstantSymbol[ep];DefScalarFunction[qq];\nMetricInBasis[met,-ch,DiagonalMatrix[{-1,1+ep qq[tt[],zz[]],1-ep qq[tt[],zz[]],1}]];\nMetricCompute[met,ch,All];\nlin[ex_]:=FullSimplify[Coefficient[Normal[Series[ex,{ep,0,1}]],ep,1]];\nric=Table[lin[ToValues[RicciCD[{i,-ch},{j,-ch}]]],{i,0,3},{j,0,3}];\nexric=ConstantArray[0,{4,4}];exric[[2,2]]=(Derivative[2,0][qq][tt[],zz[]]-Derivative[0,2][qq][tt[],zz[]])/2;exric[[3,3]]=-exric[[2,2]];\nrxtx=lin[ToValues[RiemannCD[{0,-ch},{1,-ch},{0,-ch},{1,-ch}]]];\nsc=ToValues[RicciScalarCD[]];\nden2=FullSimplify[Coefficient[Normal[Series[Sqrt[1-ep^2 qq[tt[],zz[]]^2] sc,{ep,0,2}]],ep,2]];\ncanon=(Derivative[1,0][qq][tt[],zz[]]^2-Derivative[0,1][qq][tt[],zz[]]^2)/2;\ndiv=2(D[qq[t,z]D[qq[t,z],z],z]-D[qq[t,z]D[qq[t,z],t],t])/.{t->tt[],z->zz[]};\nred[ex_]:=Total[(Abs[FullSimplify[#]]^2&)/@Flatten[{ex}]];\n",
+    "checks": [
+      {
+        "label": "TT_Ricci_all_components",
+        "residual": "red[ric-exric]"
+      },
+      {
+        "label": "TT_gauge_invariant_linear_curvature",
+        "residual": "red[rxtx+Derivative[2,0][qq][tt[],zz[]]/2]"
+      },
+      {
+        "label": "TT_quadratic_EH_density_explicit_divergence",
+        "residual": "red[den2-canon-div]"
+      }
+    ],
+    "timeoutMs": 60000,
+    "maxOutputChars": 5000
+  }
+}
