@@ -15,6 +15,8 @@ This is the research workspace for the minimal Einstein–real-scalar system, se
 | File | Description |
 |---|---|
 | `gravitation scalar interaction.md` | Minimally coupled Einstein–scalar theory in global AdS3: action/CPS expansion, free-mode perturbation theory, and explicit circular scalar backreaction before computing spectra. |
+| `graviton scalar interaction vertices.md` | Time-translation Hamiltonian from the full CPS boundary/corner prescription; perturbative cubic and four-scalar energy kernels, with the canonical-coordinate step kept explicit. |
+| `scripts/graviton_scalar_vertices_checks.wl` | Tensor/covariance identities, linear constraint flux, boundary-energy limit, TT seed energy normalization, and coefficient checks for the Hamiltonian note. |
 | `gravity scalar one and two particle spectrum.md` | Physical-mass single-particle spectrum and algebraic two-scalar primary reconstruction: 25 symbolic coefficients through level eight, low-spin shifts, and the universal higher-spin result. |
 | `scripts/gravity_scalar_spectrum_checks.wl` | Exact circular constraints, canonical and response-action binding coefficients, resonant scalar frequency, and first degenerate-block checks. |
 | `scripts/gravity_scalar_radial_blocks.wl` | Exact radial matrix elements and Hahn-polynomial reconstruction of the general two-scalar primary shifts. |

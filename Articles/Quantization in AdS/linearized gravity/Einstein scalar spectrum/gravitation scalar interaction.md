@@ -1,35 +1,42 @@
-# Minimally Coupled Gravity and a Scalar in Global AdS3
-
-The aim is to obtain the one-particle and two-particle spectrum using canonical quantization. Here we keep the equations for $h,k,\phi^{(0)},\phi^{(1)}$, together with the action and pre-symplectic structure through $O(\kappa)$.
-
-## Action and Asymptotic Boundary Conditions
-
-Set the AdS radius to one and use signature $(-,+,+)$, $\kappa^2=16\pi G>0$, and $R^{(0)}_{\mu\nu}=-2g^{(0)}_{\mu\nu}$. For a real minimally coupled scalar, the action is
+Set the AdS radius to one and use signature $\displaystyle{(-,+,+),\kappa ^{2}=16\pi G>0}$. For a real minimally coupled scalar, the action is
 
 $$\begin{align}
-S_R[g,\phi] &=\frac{1}{\kappa^2}\int_{M_R}d^3x\sqrt{-g}(R[g]+2) -\frac12\int_{M_R}d^3x\sqrt{-g}\left(g^{\mu\nu}\partial_\mu\phi\partial_\nu\phi+m^2\phi^2\right)\\
-&\quad+\frac{2}{\kappa^2}\int_{\Gamma_R}d^2x\sqrt{-\gamma}(K-1), & S_{\rm ren}&=\lim_{R\to\infty}S_R.
+S_{R}[g,\phi] & =\dfrac{1}{\kappa ^{2}} \int _{M_{R}}\mathrm{d}^{3}x\sqrt{ -g }\left(R+2\right)+\dfrac{2}{\kappa ^{2}}\int _{\Gamma _{R}}\mathrm{d}^{2}x\sqrt{ -\gamma }(K-1) \\
+ & -\dfrac{1}{2} \int _{M_{R}}\mathrm{d}^{3}x\sqrt{ -g }\left(\nabla _{\mu}\phi \nabla ^{\mu}\phi+m^{2}\phi ^{2}\right) \\
+S & =\lim_{ R \to \infty } S_{R}
 \end{align}$$
 
-Here $M_R=\{r\leq R\}$, $\Gamma_R$ is its timelike radial boundary, $n^\mu$ is the outward unit spacelike normal, $\gamma_{\mu\nu}=g_{\mu\nu}-n_\mu n_\nu$, and $K_{\mu\nu}=\gamma_\mu{}^\rho\gamma_\nu{}^\sigma\nabla_\rho n_\sigma$. The boundary action contains GHY and the AdS counterterm. Initial/final Cauchy-surface variations are retained as canonical endpoint terms.
+here $\displaystyle{M_{R}=\left\{r\leqslant R\right\}}$, $\displaystyle{\Gamma _{R}}$ is its timelike radial boundary, $\displaystyle{n^{\mu}}$ is the outward unit spacelike normal, $\displaystyle{\gamma _{\mu \nu}=g_{\mu \nu}-n_{\mu}n_{\nu}}$, and $\displaystyle{K_{\mu \nu}=\gamma _{\mu}^{~\rho}\gamma _{\nu}^{~\sigma}\nabla _{\rho}n_{\sigma}}$. The boundary action contains GHY and the AdS counterterm.
 
-Use global coordinates $(t,r,\varphi)$, with $t\in\mathbb R$, $r\geq0$ and $\varphi\sim\varphi+2\pi$:
+Use global coordinates $\displaystyle{(t,r,\varphi)}$, with $\displaystyle{t\in \mathbb{R},r\geqslant 0}$ and $\displaystyle{\varphi \sim \varphi+2\pi}$
 
 $$\begin{align}
-g^{(0)}_{\mu\nu}dx^\mu dx^\nu &=-(1+r^2)dt^2+\frac{dr^2}{1+r^2}+r^2d\varphi^2.
+g^{(0)}_{\mu \nu}\mathrm{d}x^{\mu}\mathrm{d}x^{\nu} & =-(1+r^{2})\mathrm{d}t^{2}+\dfrac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\varphi ^{2}
 \end{align}$$
 
-Fix the boundary cylinder representative to $-dt^2+d\varphi^2$. The metric perturbations and allowed variations obey Brown–Henneaux falloffs,
+the metric perturbations and allowed variations obey the Brown-Henneaux falloffs
 
 $$\begin{align}
-h_{tt},h_{t\varphi},h_{\varphi\varphi}&=O(1),& h_{rr}&=O(r^{-4}),& h_{rt},h_{r\varphi}&=O(r^{-3}),
+h_{tt},h_{t\varphi},h_{\varphi \varphi} & =\mathcal{O}(r^{0}), & h_{rr} & =\mathcal{O}(r^{-4}), & h_{rt},h_{r\varphi} & =\mathcal{O}(r^{-3})
 \end{align}$$
 
-and likewise for $k_{\mu\nu}$. Require smoothness at the centre in regular coordinates. For the scalar, choose the source-free standard boundary condition,
+and likewise for $\displaystyle{k _{\mu \nu}}$. Regularity at the center is imposed. Here $\displaystyle{f(r)=\mathcal{O}(r^{k})}$ means
 
 $$\begin{align}
-m^2&>-1,& \Delta&=1+\sqrt{1+m^2}>1,\\
-\phi&=r^{-(2-\Delta)}\alpha(t,\varphi)+r^{-\Delta}\beta(t,\varphi) +\text{subleading terms},& \alpha&=\delta\alpha=0.
+\limsup_{r\to\infty}\left|f(r)r^{-k}\right| & <\infty
+\end{align}$$
+
+and we should notice that $\displaystyle{g(r)=o(r^{k})}$ means
+
+$$\begin{align}
+\lim_{ r \to \infty } g(r)r^{-k} & =0
+\end{align}$$
+
+no logarithmic or oscillatory terms are included in the falloffs. For the scalar, we choose the source-free standard boundary conditions
+
+$$\begin{align}
+m^{2} & >-1, &\Delta & =1+\sqrt{ 1+m^{2} }> 1 \\
+\phi & =r^{-\Delta}\alpha(t,\varphi)+r^{-(2-\Delta)}\beta(t,\varphi)+\dots, & \beta & =\delta \beta=0
 \end{align}$$
 
 Both scalar coefficients below have the fast falloff and its differentiated falloffs. The scalar action is finite and its boundary variation is $O(R^{2-2\Delta})\to0$, so no scalar boundary term is required in this sector. The boundary prescription here is restricted to these conditions.
@@ -39,225 +46,156 @@ Both scalar coefficients below have the fast falloff and its differentiated fall
 Expand
 
 $$\begin{align}
-g_{\mu\nu}&=g^{(0)}_{\mu\nu}+\kappa h_{\mu\nu} +\kappa^2k_{\mu\nu}+O(\kappa^3),\\
-\phi&=\phi^{(0)}+\kappa\phi^{(1)}+O(\kappa^2).
+g_{\mu \nu} & =g^{(0)}_{\mu \nu}+\kappa h_{\mu \nu}+\kappa ^{2}k _{\mu \nu}+\mathcal{O}(\kappa ^{3}) \\
+\phi & =\phi ^{(0)}+\kappa \phi ^{(1)}+\mathcal{O}(\kappa ^{2})
 \end{align}$$
 
-All perturbative indices are raised with $g^{(0)}$; $\nabla^{(0)}$ is its connection, $h=g^{(0)\mu\nu}h_{\mu\nu}$ and $k=g^{(0)\mu\nu}k_{\mu\nu}$. The leading scalar $\phi^{(0)}$ is dynamical, and the vacuum for the eventual particle construction is $(g^{(0)},0)$.
-
-Define the gravitational functional without its coupling prefactor,
+all perturbative indices are raised with $\displaystyle{g^{(0)}}$; $\displaystyle{\nabla ^{(0)}}$ is its connection, $\displaystyle{h=g^{(0)\mu \nu}h_{\mu \nu}}$ and $\displaystyle{k=g^{(0)\mu \nu}k _{\mu \nu}}$. The bulk action coefficients are as follows; $S_{\mathrm{dyn}}$ omits the field-independent background action, and $\simeq$ suppresses the boundary and endpoint terms inherited from $S_R$.
 
 $$\begin{align}
-I[g]&=\lim_{R\to\infty}\left[ \int_{M_R}d^3x\sqrt{-g}(R[g]+2) +2\int_{\Gamma_R}d^2x\sqrt{-\gamma}(K-1)\right],\\
-I_n[H]&=\left.\frac1{n!}\frac{d^n}{dz^n}I[g^{(0)}+zH]\right|_{z=0}, \qquad n=2,3.
+S_{\mathrm{dyn}} & \simeq S^{(0)}+\kappa S^{(1)}+\mathcal{O}(\kappa ^{2}) \\
+S^{(0)} & =-\dfrac{1}{2}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\left(\dfrac{1}{2}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}-\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\nu}h^{\mu \rho}\right. \\
+ & \left.+\nabla ^{(0)}_{\mu}h^{\mu \nu}\nabla ^{(0)}_{\nu}h-\dfrac{1}{2}\nabla ^{(0)}_{\mu}h\nabla ^{(0)\mu}h-h^{2}+2h_{\mu \nu}h^{\mu \nu}\right) \\
+ & -\dfrac{1}{2}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\left(\nabla ^{(0)}_{\mu}\phi ^{(0)}\nabla ^{(0)\mu}\phi ^{(0)}+m^{2}(\phi ^{(0)})^{2}\right) \\
+S^{(1)} & =\dfrac{1}{4}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\left(\left(\dfrac{h}{2}g^{(0)\mu \nu}g^{(0)\rho \alpha}g^{(0)\sigma \beta}-h^{\mu \nu}g^{(0)\rho \alpha}g^{(0)\sigma \beta}-g^{(0)\mu \nu}h^{\rho \alpha}g^{(0)\sigma \beta}-g^{(0)\mu \nu}g^{(0)\rho \alpha}h^{\sigma \beta}\right)\right. \\
+& \times\left((\nabla _{\mu}^{(0)}h_{\sigma \alpha}+\nabla ^{(0)}_{\sigma}h_{\mu \alpha}-\nabla ^{(0)}_{\alpha}h_{\mu \sigma})(\nabla ^{(0)}_{\nu}h_{\rho \beta}+\nabla ^{(0)}_{\rho}h_{\nu \beta}-\nabla ^{(0)}_{\beta}h_{\nu \rho})\right. \\
+& \left.-(\nabla _{\mu}^{(0)}h_{\nu \alpha}+\nabla ^{(0)}_{\nu}h_{\mu \alpha}-\nabla ^{(0)}_{\alpha}h_{\mu \nu})(\nabla ^{(0)}_{\rho}h_{\sigma \beta}+\nabla ^{(0)}_{\sigma}h_{\rho \beta}-\nabla ^{(0)}_{\beta}h_{\rho \sigma})\right) \\
+& \left. +\dfrac{2}{3}h^{3}-4hh_{\mu \nu}h^{\mu \nu}+\dfrac{16}{3}h^{\mu}_{~\nu}h^{\nu}_{~\rho}h^{\rho}_{~\mu} \right)-\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\left(\nabla ^{(0)}_{\mu}\phi ^{(0)}\nabla ^{(0)\mu}\phi ^{(1)}+m^{2}\phi ^{(0)}\phi ^{(1)}\right) \\
+ & +\dfrac{1}{2}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }h_{\mu \nu}T^{\mu \nu}_{(0)}+\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\left(-\dfrac{1}{2}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}k^{\mu \nu}+\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\nu}k^{\mu \rho}\right. \\
+ & \left. -\dfrac{1}{2}\nabla ^{(0)}_{\mu}h^{\mu \nu}\nabla ^{(0)}_{\nu}k-\dfrac{1}{2}\nabla ^{(0)}_{\mu}k^{\mu \nu}\nabla ^{(0)}_{\nu}h+\dfrac{1}{2}\nabla ^{(0)}_{\mu}h\nabla ^{(0)\mu}k+hk-2h_{\mu \nu}k^{\mu \nu} \right) \\
+T^{\mu \nu}_{(0)} & =\nabla ^{(0)\mu}\phi ^{(0)}\nabla ^{(0)\nu}\phi ^{(0)}-\dfrac{1}{2}g^{(0)\mu \nu}(\nabla ^{(0)}_{\rho}\phi ^{(0)}\nabla ^{(0)\rho}\phi ^{(0)}+m^{2}\phi ^{(0)2})
 \end{align}$$
-
-The derivatives include the boundary action and are taken at finite cutoff before the limit. Subtract the background constant and the linear gravitational endpoint term to define $S_{\rm dyn}$. For the unexpanded field $H=(g-g^{(0)})/\kappa$, the retained action is
-
-$$\begin{align}
-S_{\rm dyn}[H,\phi] &=I_2[H]-\frac12\int_Md^3x\sqrt{-g^{(0)}} \left((\nabla^{(0)}\phi)^2+m^2\phi^2\right)\\
-&\quad+\kappa\left(I_3[H] +\frac12\int_Md^3x\sqrt{-g^{(0)}}H_{\mu\nu}T_{(0)}^{\mu\nu}[\phi]\right) +O(\kappa^2),\\
-T_{(0)\mu\nu}[\phi] &=\partial_\mu\phi\partial_\nu\phi -\frac12g^{(0)}_{\mu\nu}\left((\nabla^{(0)}\phi)^2+m^2\phi^2\right).
-\end{align}$$
-
-The cubic Einstein term $I_3$ is needed at this order because the gravitational action carries $1/\kappa^2$.
-
-Substituting $H=h+\kappa k+O(\kappa^2)$ and the scalar expansion gives
-
-$$\begin{align}
-S_{\rm dyn}&=S^{(0)}+\kappa S^{(1)}+O(\kappa^2),\\
-S^{(0)} &=I_2[h]-\frac12\int_Md^3x\sqrt{-g^{(0)}} \left((\nabla^{(0)}\phi^{(0)})^2+m^2(\phi^{(0)})^2\right),\\
-S^{(1)} &=\mathrm DI_2[h](k)+I_3[h]\\
-&\quad-\int_Md^3x\sqrt{-g^{(0)}} \left(\nabla^{(0)}\phi^{(0)}\cdot\nabla^{(0)}\phi^{(1)} +m^2\phi^{(0)}\phi^{(1)}\right)\\
-&\quad+\frac12\int_Md^3x\sqrt{-g^{(0)}}
-h_{\mu\nu}T_{(0)}^{\mu\nu}[\phi^{(0)}].
-\end{align}$$
-
-Here $\mathrm DI_2[h](k)=\left.\partial_sI_2[h+sk]\right|_{s=0}$, including its endpoint terms. The equations are obtained by varying the action in the unexpanded fields and then substituting their series.
 
 ## Equations of Motion
 
-Define the Einstein coefficients by
+The unperturbed eom is given by
 
 $$\begin{align}
-\mathcal E_{\mu\nu}[g]&=R_{\mu\nu}[g]-\frac12g_{\mu\nu}R[g]-g_{\mu\nu},\\
-\mathcal E_{\mu\nu}[g^{(0)}+zh] &=z\mathcal E^{(1)}_{\mu\nu}[h] +z^2\mathcal E^{(2)}_{\mu\nu}[h,h]+O(z^3),\\
-\Box_0&=-\frac1{1+r^2}\partial_t^2 +\frac1r\partial_r\left(r(1+r^2)\partial_r\right) +\frac1{r^2}\partial_\varphi^2.
+\mathcal{E}_{\mu \nu} & =R_{\mu \nu}-\dfrac{1}{2}g_{\mu \nu}R-g_{\mu \nu}=\dfrac{1}{2}\kappa ^{2}T_{\mu \nu} \\
+\mathcal{E}_{\phi} & =\nabla ^{2}\phi-m^{2}\phi=0
 \end{align}$$
 
-There is no factorial hidden in $\mathcal E^{(2)}$. The retained equations are
+expand the eoms, we have
 
 $$\begin{align}
-(\Box_0-m^2)\phi^{(0)}&=0,\\
-(\Box_0-m^2)\phi^{(1)} &=h^{\mu\nu}\nabla^{(0)}_\mu\nabla^{(0)}_\nu\phi^{(0)} +\left(\nabla^{(0)}_\mu h^{\mu\nu} -\frac12\nabla^{(0)\nu}h\right)\partial_\nu\phi^{(0)},\\
-O(\kappa):\qquad \mathcal E^{(1)}_{\mu\nu}[h]&=0,\\
-O(\kappa^2):\qquad \mathcal E^{(1)}_{\mu\nu}[k]+\mathcal E^{(2)}_{\mu\nu}[h,h] &=\frac12T_{(0)\mu\nu}[\phi^{(0)}].
+(\nabla ^{(0)2}-m^{2})\phi ^{(0)} & =0 \\
+(\nabla ^{(0)2}-m^{2})\phi ^{(1)} & =h^{\mu \nu}\nabla _{\mu}^{(0)}\nabla _{\nu}^{(0)}\phi ^{(0)}+\left( \nabla _{\mu}^{(0)}h^{\mu \nu}-\dfrac{1}{2}\nabla ^{(0)\nu}h \right)\nabla ^{(0)}_{\nu}\phi ^{(0)} \\
+\mathcal{E}_{\mu \nu}^{(1)}[h] & =0 \\
+\mathcal{E}^{(1)}_{\mu \nu}[k]+\mathcal{E}_{\mu \nu}^{(2)}[h,h] & =\dfrac{1}{2}T_{(0)\mu \nu}
 \end{align}$$
-
-Thus the scalar backreaction first appears in $k_{\mu\nu}$. No TT condition is imposed on this sourced coefficient.
 
 ## Pre-Symplectic Potential and Form
 
-### Boundary and Endpoint Convention
-
-Choose orientation $dt\wedge dr\wedge d\varphi$ and$(d^2x)_\mu=\iota_{\partial_\mu}(dt\wedge dr\wedge d\varphi)$. The exact bulk potential and radial corner term are
+The unperturbed pre-symplectic potential and form are given by
 
 $$\begin{align}
-\boldsymbol\Theta&=\Theta^\mu(d^2x)_\mu,\\
-\Theta^\mu&=\frac{\sqrt{-g}}{\kappa^2} \left(g^{\alpha\beta}\delta\Gamma^\mu_{\alpha\beta} -g^{\mu\alpha}\delta\Gamma^\beta_{\alpha\beta}\right) -\sqrt{-g}\,g^{\mu\nu}\partial_\nu\phi\,\delta\phi,\\
-\boldsymbol C&=\iota_c\epsilon_\Gamma,& c^\mu&=-\frac1{\kappa^2}\gamma^{\mu\nu}n^\alpha\delta g_{\nu\alpha}.
+\theta & =-\dfrac{1}{\kappa ^{2}}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}g^{\mu \alpha}g^{\nu \beta}(\nabla _{\beta}\delta g_{\nu \alpha}-\nabla _{\alpha}\delta g_{\nu \beta})+\dfrac{1}{\kappa ^{2}}\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h }\tau _{\mu}\gamma ^{\mu \nu}n^{\alpha}\delta g_{\nu \alpha} \\
+ & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}\nabla ^{\mu}\phi \delta \phi \\
+\omega & =\delta \theta
 \end{align}$$
 
-With the stated boundary conditions, the non-corner terms in $(\boldsymbol\Theta+\delta\boldsymbol\ell)|_\Gamma$ vanish in the asymptotic limit. Following [Harlow–Wu, section 3.5](https://arxiv.org/html/1906.08616v3#S3.SS5),
+Expand the pre-symplectic potential/form, with $\delta g^{(0)}=0$, future-directed $\tau$, and the radial collar gauge stated below. Here $\ell_{\mu\nu}$ denotes the $\kappa^3$ coefficient in $g_{\mu\nu}$, and all $\Sigma$ integrals mean $\lim_{R\to\infty}\int_{\Sigma_R}$. We have
 
 $$\begin{align}
-\theta_\Sigma&=\lim_{R\to\infty}\left[ \int_{\Sigma_R}\boldsymbol\Theta-\int_{\partial\Sigma_R}\boldsymbol C\right],\\
-\omega_\Sigma&=\delta\theta_\Sigma.
+\theta & =\kappa ^{-1}\theta ^{(-1)}+\theta ^{(0)}+\kappa \theta ^{(1)}+\mathcal{O}(\kappa ^{2}) \\
+\omega & =\omega ^{(0)}+\kappa \omega ^{(1)}+\mathcal{O}(\kappa ^{2})
 \end{align}$$
 
-For the explicit expansion below, choose $g_{ra}=\delta g_{ra}=0$ in a boundary collar, so the pullbacks of $\boldsymbol C$ and $\delta\boldsymbol C$ vanish there. This fixes the mixed radial components near the boundary; it does not quotient physical Brown–Henneaux transformations.
-
-Use the bilinear contraction
+where
 
 $$\begin{align}
-\mathcal T^\mu(p,b)&=p^{\alpha\beta}b^\mu_{\alpha\beta} -p^{\mu\alpha}b^\beta_{\alpha\beta}.
+\theta ^{(-1)} & =-\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}^{(0)}(\nabla ^{(0)}_{\nu}\delta h^{\mu \nu}-\nabla ^{(0)\mu}\delta h) \\
+\theta ^{(0)} & =-\dfrac{1}{2}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau ^{(0)}_{\mu}(\delta ^{\mu}_{\rho}\delta ^{\beta}_{\nu}-\delta ^{\mu}_{\nu}\delta ^{\beta}_{\rho})g^{(0)\alpha \nu}\left(g^{(0)\rho \lambda}(\nabla ^{(0)}_{\alpha}\delta k _{\beta \lambda}+\nabla ^{(0)}_{\beta}\delta k _{\alpha \lambda}-\nabla ^{(0)}_{\lambda}\delta k _{\alpha \beta})\right. \\
+ & \left.-\delta h^{\rho \lambda}\left(\nabla ^{(0)}_{\alpha}h_{\beta \lambda}+\nabla ^{(0)}_{\beta}h_{\alpha \lambda}-\nabla ^{(0)}_{\lambda}h_{\alpha \beta}\right)-h^{\rho \lambda}\left(\nabla ^{(0)}_{\alpha}\delta h_{\beta \lambda}+\nabla ^{(0)}_{\beta}\delta h_{\alpha \lambda}-\nabla ^{(0)}_{\lambda}\delta h_{\alpha \beta}\right)\right) \\
+ & -\dfrac{1}{2}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau ^{(0)}_{\mu}\left(\delta ^{\mu}_{\rho}\delta ^{\beta}_{\nu}-\delta ^{\mu}_{\nu}\delta ^{\beta}_{\rho}\right)\left(\dfrac{h}{2}g^{(0)\alpha \nu}-h^{\alpha \nu}\right)g^{(0)\rho \lambda}(\nabla ^{(0)}_{\alpha}\delta h_{\beta \lambda}+\nabla ^{(0)}_{\beta}\delta h_{\alpha \lambda}-\nabla ^{(0)}_{\lambda}\delta h_{\alpha \beta}) \\
+ & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau ^{(0)}_{\mu}\nabla ^{(0)\mu}\phi ^{(0)}\delta \phi ^{(0)} \\
+\theta ^{(1)} & =-\dfrac{1}{2}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau ^{(0)}_{\mu}\left(\delta ^{\mu}_{\rho}\delta ^{\beta}_{\nu}-\delta ^{\mu}_{\nu}\delta ^{\beta}_{\rho}\right)g^{(0)\alpha \nu}\left(g^{(0)\rho \lambda}(\nabla ^{(0)}_{\alpha}\delta \ell _{\beta \lambda}+\nabla ^{(0)}_{\beta}\delta \ell _{\alpha \lambda}-\nabla ^{(0)}_{\lambda}\delta \ell _{\alpha \beta})\right. \\
+ & -\delta h^{\rho \lambda}(\nabla ^{(0)}_{\alpha}k _{\beta \lambda}+\nabla ^{(0)}_{\beta}k _{\alpha \lambda}-\nabla ^{(0)}_{\lambda}k _{\alpha \beta})-h^{\rho \lambda}(\nabla ^{(0)}_{\alpha}\delta k _{\beta \lambda}+\nabla ^{(0)}_{\beta}\delta k _{\alpha \lambda}-\nabla ^{(0)}_{\lambda}\delta k _{\alpha \beta}) \\
+ & \left.+\left(\delta h^{\rho}_{\eta}h^{\eta \lambda}+h^{\rho}_{\eta}\delta h^{\eta \lambda}-\delta k ^{\rho \lambda}\right)(\nabla ^{(0)}_{\alpha}h_{\beta \lambda}+\nabla ^{(0)}_{\beta}h_{\alpha \lambda}-\nabla ^{(0)}_{\lambda}h_{\alpha \beta})+(h^{\rho}_{\eta}h^{\eta \lambda}-k^{\rho \lambda})\left(\nabla ^{(0)}_{\alpha}\delta h_{\beta \lambda}+\nabla ^{(0)}_{\beta}\delta h_{\alpha \lambda}-\nabla ^{(0)}_{\lambda}\delta h_{\alpha \beta}\right)\right) \\
+ & -\dfrac{1}{2}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}^{(0)}(\delta ^{\mu}_{\rho}\delta ^{\beta}_{\nu}-\delta ^{\mu}_{\nu}\delta ^{\beta}_{\rho})\left(\left( \dfrac{h}{2}g^{(0)\alpha \nu}-h^{\alpha \nu} \right)\left(g^{(0)\rho \lambda}(\nabla ^{(0)}_{\alpha}\delta k _{\beta \lambda}+\nabla ^{(0)}_{\beta}\delta k _{\alpha \lambda}-\nabla ^{(0)}_{\lambda}\delta k _{\alpha \beta})\right.\right. \\
+ & \left.-\delta h^{\rho \lambda}(\nabla ^{(0)}_{\alpha}h_{\beta \lambda}+\nabla ^{(0)}_{\beta}h_{\alpha \lambda}-\nabla ^{(0)}_{\lambda}h_{\alpha \beta})-h^{\rho \lambda}(\nabla ^{(0)}_{\alpha}\delta h_{\beta \lambda}+\nabla ^{(0)}_{\beta}\delta h_{\alpha \lambda}-\nabla ^{(0)}_{\lambda}\delta h_{\alpha \beta})\right) \\
+ & \left.+\left( \left( \dfrac{k}{2}+\dfrac{h^{2}}{8}-\dfrac{h_{\eta \xi}h^{\eta \xi}}{4} \right)g^{(0)\alpha \nu}-k^{\alpha \nu}-\dfrac{h}{2}h^{\alpha \nu}+h^{\alpha}_{\eta}h^{\eta \nu} \right)g^{(0)\rho \lambda}(\nabla ^{(0)}_{\alpha}\delta h_{\beta \lambda}+\nabla ^{(0)}_{\beta}\delta h_{\alpha \lambda}-\nabla ^{(0)}_{\lambda}\delta h_{\alpha \beta})\right) \\
+ & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}^{(0)}\left(\nabla ^{(0)\mu}\phi ^{(0)}\delta \phi ^{(1)}+\left( \nabla ^{(0)\mu}\phi ^{(1)}+\left( \dfrac{h}{2}g^{(0)\mu \nu}-h^{\mu \nu} \right)\nabla ^{(0)}_{\nu}\phi ^{(0)} \right)\delta \phi ^{(0)}\right)
 \end{align}$$
 
-We choose the finite potential representative $\widehat\Theta^\mu=\Theta^\mu-\delta B^\mu$, where
+and
 
 $$\begin{align}
-B^\mu&=\frac{\sqrt{-g^{(0)}}}{\kappa^2} \mathcal T^\mu\left(g^{(0)-1},\Gamma-\Gamma^{(0)}\right).
+\omega ^{(0)} & =-\dfrac{1}{2}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}^{(0)}(\delta ^{\mu}_{\rho}\delta ^{\beta}_{\nu}-\delta ^{\mu}_{\nu}\delta ^{\beta}_{\rho})\left(\dfrac{\delta h}{2}g^{(0)\alpha \nu}-\delta h^{\alpha \nu}\right)g^{(0)\rho \lambda} \\
+ & \wedge(\nabla ^{(0)}_{\alpha}\delta h_{\beta \lambda}+\nabla ^{(0)}_{\beta}\delta h_{\alpha \lambda}-\nabla ^{(0)}_{\lambda}\delta h_{\alpha \beta})+\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}^{(0)}\nabla ^{(0)\mu}\delta \phi ^{(0)}\wedge \delta \phi ^{(0)} \\
+\omega ^{(1)} & =-\dfrac{1}{2}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}^{(0)}(\delta ^{\mu}_{\rho}\delta ^{\beta}_{\nu}-\delta ^{\mu}_{\nu}\delta ^{\beta}_{\rho})\left(\left( \dfrac{\delta h}{2}g^{(0)\alpha \nu}-\delta h^{\alpha \nu} \right)\wedge\left(g^{(0)\rho \lambda}(\nabla ^{(0)}_{\alpha}\delta k _{\beta \lambda}+\nabla ^{(0)}_{\beta}\delta k _{\alpha \lambda}-\nabla ^{(0)}_{\lambda}\delta k _{\alpha \beta})\right.\right. \\
+ & \left.-\delta h^{\rho \lambda}(\nabla ^{(0)}_{\alpha}h_{\beta \lambda}+\nabla ^{(0)}_{\beta}h_{\alpha \lambda}-\nabla ^{(0)}_{\lambda}h_{\alpha \beta})-h^{\rho \lambda}(\nabla ^{(0)}_{\alpha}\delta h_{\beta \lambda}+\nabla ^{(0)}_{\beta}\delta h_{\alpha \lambda}-\nabla ^{(0)}_{\lambda}\delta h_{\alpha \beta})\right) \\
+ & \left.+\left( \left( \dfrac{\delta k}{2}+\dfrac{h\delta h}{4}-\dfrac{h_{\eta \xi}\delta h^{\eta \xi}}{2} \right)g^{(0)\alpha \nu}-\delta k^{\alpha \nu}-\dfrac{\delta h}{2}h^{\alpha \nu}-\dfrac{h}{2}\delta h^{\alpha \nu}+\delta h^{\alpha}_{\eta}h^{\eta \nu}+h^{\alpha}_{\eta}\delta h^{\eta \nu} \right)g^{(0)\rho \lambda}\wedge(\nabla ^{(0)}_{\alpha}\delta h_{\beta \lambda}+\nabla ^{(0)}_{\beta}\delta h_{\alpha \lambda}-\nabla ^{(0)}_{\lambda}\delta h_{\alpha \beta})\right) \\
+ & +\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma ^{(0)} }\tau _{\mu}^{(0)}\left(\nabla ^{(0)\mu}\delta \phi ^{(0)}\wedge \delta \phi ^{(1)}+\left( \nabla ^{(0)\mu}\delta \phi ^{(1)}+\left( \dfrac{\delta h}{2}g^{(0)\mu \nu}-\delta h^{\mu \nu} \right)\nabla ^{(0)}_{\nu}\phi ^{(0)} +\left( \dfrac{h}{2}g^{(0)\mu \nu}-h^{\mu \nu} \right)\nabla ^{(0)}_{\nu}\delta \phi ^{(0)}\right)\wedge \delta \phi ^{(0)}\right)
 \end{align}$$
-
-This is an endpoint convention: $\delta^2B^\mu=0$, so it leaves the pre-symplectic form unchanged.
-
-### Retained Coefficients
-
-The coefficients needed for the first-order potential and form are
-
-$$\begin{align}
-p_1^{\mu\nu} &=\frac h2g^{(0)\mu\nu}-h^{\mu\nu},\\
-p_2^{\mu\nu} &=\left(\frac k2+\frac{h^2}{8}-\frac{h_{\rho\sigma}h^{\rho\sigma}}4\right) g^{(0)\mu\nu}-k^{\mu\nu}-\frac h2h^{\mu\nu}+h^\mu{}_\rho h^{\rho\nu},\\
-c_1{}^\rho_{\mu\nu}[s] &=\frac12g^{(0)\rho\sigma} \left(\nabla^{(0)}_\mu s_{\nu\sigma} +\nabla^{(0)}_\nu s_{\mu\sigma} -\nabla^{(0)}_\sigma s_{\mu\nu}\right),\\
-b_1{}^\rho_{\mu\nu}&=c_1{}^\rho_{\mu\nu}[h],\\
-b_2{}^\rho_{\mu\nu}&=c_1{}^\rho_{\mu\nu}[k] -h^\rho{}_\sigma c_1{}^\sigma_{\mu\nu}[h],\\
-J_0^\mu&=\nabla^{(0)\mu}\phi^{(0)},\\
-J_1^\mu&=\nabla^{(0)\mu}\phi^{(1)} +p_1^{\mu\nu}\partial_\nu\phi^{(0)}.
-\end{align}$$
-
-Here $p_1,p_2$ are the coefficients of the inverse metric density $\sqrt{-g}\,g^{\mu\nu}/\sqrt{-g^{(0)}}$, and $b_1,b_2$ those of $\Gamma-\Gamma^{(0)}$, at orders $\kappa,\kappa^2$ respectively.
-
-The potential through first order is
-
-$$\begin{align}
-\widehat\Theta^\mu &=\sqrt{-g^{(0)}}\left(\vartheta_0^\mu+\kappa\vartheta_1^\mu\right) +O(\kappa^2),\\
-\vartheta_0^\mu &=\mathcal T^\mu(p_1,\delta b_1)-J_0^\mu\delta\phi^{(0)},\\
-\vartheta_1^\mu &=\mathcal T^\mu(p_1,\delta b_2)+\mathcal T^\mu(p_2,\delta b_1) -J_0^\mu\delta\phi^{(1)}-J_1^\mu\delta\phi^{(0)}.
-\end{align}$$
-
-Taking a field-space derivative gives
-
-$$\begin{align}
-\delta\widehat\Theta^\mu &=\sqrt{-g^{(0)}}\left(w_0^\mu+\kappa w_1^\mu\right)+O(\kappa^2),\\
-w_0^\mu &=\mathcal T^\mu(\delta p_1\wedge\delta b_1) -\delta J_0^\mu\wedge\delta\phi^{(0)},\\
-w_1^\mu &=\mathcal T^\mu(\delta p_1\wedge\delta b_2) +\mathcal T^\mu(\delta p_2\wedge\delta b_1) -\delta J_0^\mu\wedge\delta\phi^{(1)} -\delta J_1^\mu\wedge\delta\phi^{(0)}.
-\end{align}$$
-
-The wedge contraction means $\mathcal T^\mu(\delta p\wedge\delta b)=\delta p^{\alpha\beta}\wedge\delta b^\mu_{\alpha\beta}-\delta p^{\mu\alpha}\wedge\delta b^\beta_{\alpha\beta}$. On the boundary gauge slice above,
-
-$$\begin{align}
-\widehat\theta_\Sigma &=\widehat\theta_\Sigma^{(0)}+\kappa\widehat\theta_\Sigma^{(1)}+O(\kappa^2),& \widehat\theta_\Sigma^{(j)} &=\lim_{R\to\infty}\int_{\Sigma_R}(d^2x)_\mu \sqrt{-g^{(0)}}\,\vartheta_j^\mu,\\
-\omega_\Sigma &=\omega_\Sigma^{(0)}+\kappa\omega_\Sigma^{(1)}+O(\kappa^2),& \omega_\Sigma^{(j)} &=\lim_{R\to\infty}\int_{\Sigma_R}(d^2x)_\mu \sqrt{-g^{(0)}}\,w_j^\mu,\qquad j=0,1.
-\end{align}$$
-
-The variations act on $k,\phi^{(1)}$ as functions of the chosen solution data once the sourced equations and their homogeneous data are fixed. The mixed scalar–metric contributions through $\delta p_1$ are retained. The form is conserved for admissible solutions and tangent variations and remains pre-symplectic until proper gauge degeneracies are quotiented.
 
 ## Perturbation Theory on the Solution Space
 
 ### Free Modes
 
-We first choose the free solution amplitudes as coordinates, then solve the sourced equations for $k$ and $\phi^{(1)}$ as functions of those amplitudes. Put $f(r)=1+r^2$. The regular, normalizable scalar modes are
+We first choose the free solution coefficients as coordinates, then solve the sourced equation for $\displaystyle{k}$ and $\displaystyle{\phi ^{(1)}}$ as functions of those coefficients. Put $\displaystyle{f(r)=1+r^{2}}$, the regular, normalizable scalar modes are
 
 $$\begin{align}
-u_{nj}(t,r,\varphi)&=N_{nj}e^{-iE_{nj}t+ij\varphi}
-r^{|j|}f^{-(\Delta+|j|)/2}
-P_n^{(\Delta-1,|j|)}\!\left(\frac{r^2-1}{r^2+1}\right),\\
-E_{nj}&=\Delta+2n+|j|,&
-N_{nj}^2&=\frac{n!\,\Gamma(n+\Delta+|j|)}
-{2\pi\,\Gamma(n+\Delta)\Gamma(n+|j|+1)},\\
-\phi^{(0)}&=\sum_{n\geq0,\ j\in\mathbb Z}
-\left(b_{nj}u_{nj}+b_{nj}^*u_{nj}^*\right).
+\phi _{nm}(t,r,\varphi) & =\sqrt{ \dfrac{n!\Gamma(n+\Delta+|m|)}{2\pi \Gamma(n+\Delta)\Gamma(n+1+|m|)} }e^{-i\omega _{nm}t+im\varphi}r^{|m|}f^{-(\Delta+|m|)/2}P_{n}^{(\Delta-1,|m|)}\left(\dfrac{r^{2}-1}{r^{2}+1}\right) \\
+\omega _{nm} & =\Delta+2n+|m| \\
+\phi ^{(0)} & =\sum _{n\geqslant 0, m\in \mathbb{Z}}(b_{nm}\phi_{nm}+b^{\dagger}_{nm}\phi _{nm}^{*})
 \end{align}$$
 
-Here $P_n^{(\alpha,\beta)}$ is a Jacobi polynomial. The normalization follows from Jacobi orthogonality with the Klein–Gordon product
-$i\int dr\,d\varphi\,(r/f)(u^*\partial_t v-v\partial_tu^*)$.
-
-For the gravitational modes, use the smooth Brown–Henneaux vacuum-orbit representatives $\zeta_{A,n}$ and their normalization in [higher perturbations of linearized gravity modes](../higher%20perturbations%20of%20linearized%20gravity%20modes.md):
+here $\displaystyle{P_{n}^{(\alpha,\beta)}}$ is the Jacobi polynomial. The normlization constant is determined by the symplectic form as
 
 $$\begin{align}
-\zeta&=\sum_{A=L,R}\sum_{n\geq0}
-\left(a_{A,n}\zeta_{A,n}+a_{A,n}^*\zeta_{A,n}^*\right),&
-h&=\mathcal L_\zeta g^{(0)}.
+\omega ^{(0)}[\phi _{nm},\phi ^{*}_{n'm'}] & =i\delta _{nn'}\delta _{mm'}
 \end{align}$$
 
-The descendant index here starts at $n=0$, with frequency $n+2$. Work initially with finite mode superpositions. This describes the smooth vacuum orbit near global AdS, excluding independent conical-defect or black-hole sectors. A Brown–Henneaux vector with nonzero boundary charge is not a proper gauge degeneracy, even though its bulk metric perturbation is a Lie derivative.
+for the gravitational modes, use the representatives $\displaystyle{\zeta _{A,n}}$ in [[Articles/Quantization in AdS/linearized gravity/higher perturbations of linearized gravity modes|higher perturbations of linearized gravity modes]]
+
+$$\begin{align}
+\zeta & =\sum _{A=L,R}\sum _{n\geqslant 0}(a_{A,n}\zeta _{A,n}+a^{\dagger}_{A,n}\zeta ^{*}_{A,n}), & h=\mathcal{L}_{\zeta}g^{(0)}
+\end{align}$$
+
+the frequency of $\displaystyle{\zeta _{A,n}}$ is $\displaystyle{n+2}$.
 
 ### Next-Order Solutions from Covariance
 
 In this sector, covariance solves the vacuum-driven terms directly:
 
 $$\begin{align}
-(\Box_0-m^2)\mathcal L_\zeta\phi^{(0)}
-&=-\delta_h\Box\,\phi^{(0)},\\
-\mathcal E^{(1)}\!\left[\frac12\mathcal L_\zeta^2g^{(0)}\right]
-+\mathcal E^{(2)}[h,h]&=0.
+(\nabla ^{(0)2}-m^{2})\mathcal{L}_{\zeta}\phi ^{(0)} & =h^{\mu \nu}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}\phi ^{(0)}+\left( \nabla ^{(0)}_{\mu}h^{\mu \nu}-\dfrac{1}{2}\nabla ^{(0)\nu}h \right)\nabla ^{(0)}_{\nu}\phi ^{(0)} \\
+\mathcal{E}\left[\dfrac{1}{2}\mathcal{L}^{2}_{\zeta}g^{(0)}\right]+\mathcal{E}^{(2)}[h,h] & =0
 \end{align}$$
 
-Consequently, a solution of the retained equations is
+consequently, a solution of the retained equation is
 
 $$\begin{align}
-\phi^{(1)}&=\mathcal L_\zeta\phi^{(0)},\\
-k&=\frac12\mathcal L_\zeta^2g^{(0)}+k_\phi,&
-\mathcal E^{(1)}[k_\phi]&=\frac12T_{(0)}[\phi^{(0)}].
+\phi ^{(1)} & =\mathcal{L}_{\zeta}\phi ^{(0)} \\
+k & =\dfrac{1}{2}\mathcal{L}^{2}_{\zeta}g^{(0)}+k _{\phi}, & \mathcal{E}^{(1)}[k _{\phi}] & =\dfrac{1}{2}T_{(0)}
 \end{align}$$
 
-Additional homogeneous solutions may be added to $\phi^{(1)}$ and $k$. We set their independent amplitudes to zero, assigning free homogeneous data to the leading amplitudes $a,b$. This is a coordinate convention on the perturbative solution space. If instead $\phi^{(1)}$ must have zero Cauchy data at a specified time, add the free scalar solution that cancels the Cauchy data of $\mathcal L_\zeta\phi^{(0)}$. The metric initial data must still satisfy the matter constraints.
+the remaining calculation is $\displaystyle{k _{\phi}}$.
 
-For finite harmonic mode sums, $\mathcal L_\zeta\phi^{(0)}$ supplies a bounded particular solution. Thus resonant projections of this specific scalar source vanish when the regular, source-free radial boundary conditions are imposed; one should use the covariance identity before dividing by mode-frequency denominators. This observation does not determine an interacting energy shift.
-
-The remaining calculation is the matter response $k_\phi$, which cannot in general be represented by a vacuum diffeomorphism. Before inserting these solutions into the explicit symplectic formulas above, choose representatives satisfying the stated radial collar gauge, or retain the corner term for the original representatives.
+Before inserting these solutions into the explicit symplectic formulas above, choose representatives satisfying the stated radial collar gauge, or retain the corner term for the original representatives.
 
 ### Circularly Symmetric Scalar Backreaction
 
 For any circular free scalar $\phi^{(0)}(t,r)$, use polar areal gauge for the matter response:
 
 $$\begin{align}
-(k_\phi)_{tt}&=M+2fD,&
-(k_\phi)_{rr}&=\frac{M}{f^2},&
-(k_\phi)_{tr}&=(k_\phi)_{\mu\varphi}=0.
+(k_\phi)_{tt}&=M+2fD,& (k_\phi)_{rr}&=\frac{M}{f^2},& (k_\phi)_{tr}&=(k_\phi)_{\mu\varphi}=0.
 \end{align}$$
 
 The independent Einstein constraints become
 
 $$\begin{align}
-\partial_r M&=\frac r2\left[
-\frac{(\partial_t\phi^{(0)})^2}{f}
-+f(\partial_r\phi^{(0)})^2+m^2(\phi^{(0)})^2\right],\\
-\partial_r D&=-\frac r2\left[
-(\partial_r\phi^{(0)})^2+\frac{(\partial_t\phi^{(0)})^2}{f^2}\right],\\
+\partial_r M&=\frac r2\left[ \frac{(\partial_t\phi^{(0)})^2}{f} +f(\partial_r\phi^{(0)})^2+m^2(\phi^{(0)})^2\right],\\
+\partial_r D&=-\frac r2\left[ (\partial_r\phi^{(0)})^2+\frac{(\partial_t\phi^{(0)})^2}{f^2}\right],\\
 \partial_t M&=rf\,\partial_t\phi^{(0)}\partial_r\phi^{(0)}.
 \end{align}$$
 
 Regularity fixes $M(t,0)=0$; keeping $t$ as the prescribed boundary time fixes $D(t,\infty)=0$. Therefore
 
 $$\begin{align}
-M(t,r)&=\frac12\int_0^r ds\,s\left[
-\frac{(\partial_t\phi^{(0)}(t,s))^2}{1+s^2}
-+(1+s^2)(\partial_s\phi^{(0)}(t,s))^2
-+m^2(\phi^{(0)}(t,s))^2\right],\\
-D(t,r)&=\frac12\int_r^\infty ds\,s\left[
-(\partial_s\phi^{(0)}(t,s))^2
-+\frac{(\partial_t\phi^{(0)}(t,s))^2}{(1+s^2)^2}\right].
+M(t,r)&=\frac12\int_0^r ds\,s\left[ \frac{(\partial_t\phi^{(0)}(t,s))^2}{1+s^2} +(1+s^2)(\partial_s\phi^{(0)}(t,s))^2 +m^2(\phi^{(0)}(t,s))^2\right],\\
+D(t,r)&=\frac12\int_r^\infty ds\,s\left[ (\partial_s\phi^{(0)}(t,s))^2 +\frac{(\partial_t\phi^{(0)}(t,s))^2}{(1+s^2)^2}\right].
 \end{align}$$
 
 The free Klein–Gordon equation implies
@@ -271,46 +209,34 @@ This use of radial constraints parallels the massless circular Einstein–scalar
 For the real lowest scalar mode, take
 
 $$\begin{align}
-\phi^{(0)}&=A f^{-\Delta/2}\cos(\Delta t),&
-m^2&=\Delta(\Delta-2),\qquad \Delta>1.
+\phi^{(0)}&=A f^{-\Delta/2}\cos(\Delta t),& m^2&=\Delta(\Delta-2),\qquad \Delta>1.
 \end{align}$$
 
 The radial integrals give
 
 $$\begin{align}
-M&=\frac{A^2\Delta}{4}
-\left[1-f^{1-\Delta}-r^2f^{-\Delta}\cos(2\Delta t)\right],\\
-D&=\frac{A^2\Delta}{4}f^{-\Delta}\cos^2(\Delta t)
--\frac{A^2\Delta^2}{4(\Delta+1)}f^{-\Delta-1}\cos(2\Delta t),\\
-(k_\phi)_{tt}&=\frac{A^2\Delta}{4}
-\left[1-\frac{\Delta-1}{\Delta+1}f^{-\Delta}\cos(2\Delta t)\right],\\
-(k_\phi)_{rr}&=\frac{A^2\Delta}{4f^2}
-\left[1-f^{1-\Delta}-r^2f^{-\Delta}\cos(2\Delta t)\right].
+M&=\frac{A^2\Delta}{4} \left[1-f^{1-\Delta}-r^2f^{-\Delta}\cos(2\Delta t)\right],\\
+D&=\frac{A^2\Delta}{4}f^{-\Delta}\cos^2(\Delta t) -\frac{A^2\Delta^2}{4(\Delta+1)}f^{-\Delta-1}\cos(2\Delta t),\\
+(k_\phi)_{tt}&=\frac{A^2\Delta}{4} \left[1-\frac{\Delta-1}{\Delta+1}f^{-\Delta}\cos(2\Delta t)\right],\\
+(k_\phi)_{rr}&=\frac{A^2\Delta}{4f^2} \left[1-f^{1-\Delta}-r^2f^{-\Delta}\cos(2\Delta t)\right].
 \end{align}$$
 
 This is regular at the center and obeys Brown–Henneaux falloffs:
 $(k_\phi)_{tt}=O(1)$ and $(k_\phi)_{rr}=O(r^{-4})$.
-Moreover $M(t,\infty)=A^2\Delta/4$ is constant and $D(t,\infty)=0$.
-The free scalar energy is $H_\phi^{(0)}=2\pi M(t,\infty)=\pi A^2\Delta/2$; this is a classical energy, not a quantum spectral correction.
+Moreover $M(t,\infty)=A^2\Delta/4$ is constant and $D(t,\infty)=0$. The free scalar energy is $H_\phi^{(0)}=2\pi M(t,\infty)=\pi A^2\Delta/2$; this is a classical energy, not a quantum spectral correction.
 
 With $h=0$, our homogeneous-data convention gives $\phi^{(1)}=0$ while $k=k_\phi\neq0$. Arbitrary vacuum-graviton mode data can be added through the covariance formulas above, at the same retained orders.
 
-## General Response in de Donder Gauge
+## General Response in De Donder Gauge
 
 For generic $\Delta>1$, with $\Delta\ne(1+\sqrt5)/2$, the [independent accessibility proof](de%20Donder%20gauge%20accessibility.md) gives the stated finite-time on-shell construction within the differentiable no-log expansion class. The exceptional-$\Delta$ limit remains deferred.
 
 Use the [Einstein response kernel](Einstein%20response%20in%20de%20Donder%20gauge.md) to write the matter correction as
 
 $$\begin{align}
-q_{\mu\nu}&=(k_\phi)_{\mu\nu}
-=\mathcal B_{\mu\nu}[\phi^{(0)},\phi^{(0)}],\\
-\mathcal B_{\mu\nu}[u,v](x)
-&=\frac12\int dV_{x'}\,
-G_{\mu\nu}{}^{\rho\sigma}(x,x')T_{\rho\sigma}[u,v](x'),\\
-T_{\rho\sigma}[u,v]
-&=\nabla^{(0)}_{(\rho}u\,\nabla^{(0)}_{\sigma)}v
--\frac12g^{(0)}_{\rho\sigma}
-\left(\nabla^{(0)}u\cdot\nabla^{(0)}v+m^2uv\right).
+q_{\mu\nu}&=(k_\phi)_{\mu\nu} =\mathcal B_{\mu\nu}[\phi^{(0)},\phi^{(0)}],\\
+\mathcal B_{\mu\nu}[u,v](x) &=\frac12\int dV_{x'}\, G_{\mu\nu}{}^{\rho\sigma}(x,x')T_{\rho\sigma}[u,v](x'),\\
+T_{\rho\sigma}[u,v] &=\nabla^{(0)}_{(\rho}u\,\nabla^{(0)}_{\sigma)}v -\frac12g^{(0)}_{\rho\sigma} \left(\nabla^{(0)}u\cdot\nabla^{(0)}v+m^2uv\right).
 \end{align}$$
 
 For an admissible conserved source $S$, the kernel is normalized by $\mathcal E^{(1)}[GS]=S$ and $C[GS]=0$. The [explicit kernel calculation](Einstein%20response%20kernel%20construction.md) supplies the auxiliary Euclidean coefficients. For a finite scalar-mode set, take $G=G_{\mathcal V}$ from the [scalar-source prescription](Einstein%20scalar%20response%20prescription.md): an explicit static seed and isometry recursion treat opposite-frequency pairs, a conserved Abel prescription treats same-sign pairs, and a finite source Gram matrix fixes the kernel's action on their real span $\mathcal V$. Its solutions obey the stated no-log boundary conditions and all Einstein constraints in the analytic domain specified there. Initial metric data are obtained by restricting these solutions, rather than set to zero. This does not assert a universal retarded convolution on arbitrary eternal histories.
@@ -322,9 +248,7 @@ The expression above uses our existing convention of assigning independent free 
 First retain a finite set of normalized scalar and physical boundary-graviton modes with free energies
 
 $$\begin{align}
-E_{nj}=\Delta+2n+|j|&<E_{\mathrm{cut}},&
-E^{g}_{A,n}=n+2&<E_{\mathrm{cut}},
-\qquad A=L,R.
+E_{nj}=\Delta+2n+|j|&<E_{\mathrm{cut}},& E^{g}_{A,n}=n+2&<E_{\mathrm{cut}}, \qquad A=L,R.
 \end{align}$$
 
 The value of $E_{\mathrm{cut}}$ remains to be chosen. Insert these finite leading-mode sums into the bilinear kernel response and the covariance formulas. Keep the full response generated by their products, including sum/difference frequencies outside the retained free-mode band; truncating the independent input amplitudes does not justify discarding parts of the sourced Einstein constraints.
@@ -334,7 +258,7 @@ Next evaluate the prescribed finite kernel for the selected cutoff, then pull ba
 ## Verification Scope
 
 - **Verified:** the retained 8 xAct checks pass, including the first/second Ricci coefficients, scalar wave-operator variation, stress conservation, minimal-coupling sign, quadratic/cubic Einstein densities with total derivatives, and Einstein potential. See [the check script](scripts/gravitation_scalar_interaction_checks.wl).
-- **Assumptions:** unit AdS radius, positive Einstein coefficient, $m^2>-1$, source-free standard scalar condition and Brown–Henneaux falloffs. The explicit symplectic expansion uses the stated boundary gauge and endpoint convention.
+- **Assumptions:** unit AdS radius, positive Einstein coefficient, $m^2>-1$, source-free standard scalar condition and Brown–Henneaux falloffs. The explicit symplectic expansion uses the stated boundary gauge and the original potential without endpoint subtraction.
 - **Verified:** 15 additional residual groups pass in [the solution check script](scripts/gravitation_scalar_solution_checks.wl): scalar/vacuum covariance identities, the circular Einstein constraints and their propagation, every Einstein component of the explicit lowest-mode response, the general Jacobi radial equation, lowest-mode KG normalization, and the displayed center/boundary limits. Tensor calculations use xAct/xTras and xCoba; scalar checks use Mathematica.
 - **Assumptions:** the solution construction uses smooth vacuum-orbit gravitational data and the stated homogeneous-data convention. The radial matter solution is circularly symmetric, regular at the center, and uses fixed boundary time. The metric expansion applies where its corrections remain perturbatively small.
 - **Verified:** the de Donder operator, on-shell boundary constraints, radial response matrices, and the closed non-circular pair are checked in [the on-shell response script](scripts/de_donder_onshell_response_checks.wl). The finite-time accessibility proof also uses the explicitly stated analytic energy-domain and asymptotic arguments.
