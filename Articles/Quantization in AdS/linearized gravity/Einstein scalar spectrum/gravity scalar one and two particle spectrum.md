@@ -346,7 +346,7 @@ where
 $$\begin{align}
 \gamma _{n\ell} & =\begin{cases}
 -4G(\Delta ^{2}+2n(2\Delta+n-1)) \dfrac{2\Delta+2n-2}{2\Delta+2n-1}-G\dfrac{2((\Delta+n)(\Delta+n-1)+\Delta(\Delta-2))^{2}}{(2\Delta+2n-3)(2\Delta+2n-1)(2\Delta+2n+1)}, & \ell=0 \\
--4G(\Delta ^{2}+2n(2\Delta+n-1))+\dfrac{(n+1)(n+2)(2\Delta+n-1)(2\Delta+n)}{(2\Delta+2n-1)(2\Delta+2n+1)(2\Delta+2n+3)}, & \ell=2 \\
+-4G(\Delta ^{2}+2n(2\Delta+n-1))+G\dfrac{(n+1)(n+2)(2\Delta+n-1)(2\Delta+n)}{(2\Delta+2n-1)(2\Delta+2n+1)(2\Delta+2n+3)}, & \ell=2 \\
 -4G(\Delta ^{2}+2n(2\Delta+n-1)), & \ell\geqslant 4
 \end{cases}
 \end{align}$$
