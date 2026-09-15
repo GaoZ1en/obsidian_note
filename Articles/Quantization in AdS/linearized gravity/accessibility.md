@@ -54,7 +54,7 @@ $$\begin{align}
 (h+\mathcal{L}_{\eta}g^{(0)})_{rr} & =(h+\mathcal{L}_{\eta}g^{(0)})_{ra}=0
 \end{align}$$
 
-in sufficiently large $\displaystyle{r}$. this radial gauge is only needed near the boundary in the following proof, without concerning regularity at the center. we can multiply $\displaystyle{\eta}$ by a smooth cutoff which equal to 1 near infinity and zero near the center, and continue to call the resulting global vector $\eta$.
+in sufficiently large $\displaystyle{r}$. This radial gauge is only needed near the boundary in the following proof, without concerning regularity at the center. We can multiply $\displaystyle{\eta}$ by a smooth cutoff which equal to 1 near infinity and zero near the center, and continue to call the resulting global vector $\eta$.
 
 Expand
 
@@ -78,7 +78,7 @@ C_{\nu}[h+\mathcal{L}_{\xi}g^{(0)}] & =C_{\nu}[h]+Q\xi _{\nu}, & Q\xi _{\nu} & =
 
 to prove the existence of the gauge transformation, we solve the equation $\displaystyle{Q\xi=-C[h_{\mathrm{c}}]}$ for $\displaystyle{\xi}$.
 
-in the radial collar, we have
+In the radial collar, we have
 
 $$\begin{align}
 C_{a}[h_{\mathrm{c}}] & =\mathcal{O}(r^{-4}), & C_{r}[h_{\mathrm{c}}] & =\mathcal{O}(r^{-5})
@@ -112,13 +112,13 @@ a_{r,s} & =\dfrac{F_{r,s}}{s^{2}-2s-4} \\
 a_{a,s} & =\dfrac{F_{a,s}-2\partial _{a}a_{r,s}}{s^{2}-4}
 \end{align}$$
 
-we impose the same smooth cutoff for $\displaystyle{\xi _{\mu}}$ as for $\eta$, so that $\xi_\mu$ is smooth and compactly supported away from the center. we need another gauge transformation to remove the residual error
+we impose the same smooth cutoff for $\displaystyle{\xi _{\mu}}$ as for $\eta$, so that $\xi_\mu$ is smooth and compactly supported away from the center. We need another gauge transformation to remove the residual error
 
 $$\begin{align}
 F_{\nu} & =-C_{\nu}[h_{\mathrm{c}}]-Q\xi _{\nu}
 \end{align}$$
 
-which compactly supported near the center. we solve the equation
+which compactly supported near the center. We solve the equation
 
 $$\begin{align}
 Q\zeta & =F
@@ -142,10 +142,10 @@ $$\begin{align}
 \implies \zeta & =v+\dfrac{1}{4}\nabla ^{(0)}u
 \end{align}$$
 
-by well-posedness of IBVP problem of massive vector, $\displaystyle{v}$ and $\displaystyle{u}$ are smooth and compactly supported away from the boundary, so that $\zeta$ is as well-defined. hence de Donder gauge is imposed
+by well-posedness of IBVP problem of massive vector, $\displaystyle{v}$ and $\displaystyle{u}$ are smooth and compactly supported away from the boundary, so that $\zeta$ is as well-defined. Hence de Donder gauge is imposed
 
 $$\begin{align}
-h^{\mathrm{dD}} & =h+\mathcal{L}_{\zeta}g^{(0)}
+h^{\mathrm{dD}} & =h_{\mathrm{c}}+\mathcal{L}_{\xi+\zeta}g^{(0)}
 \end{align}$$
 
 finally consider the following vector
