@@ -1,132 +1,82 @@
 The unperturbed normal modes in [[Articles/Quantization in AdS/linearized gravity/solving modes|solving modes]] can be written, after the canonical rescaling used below, as
 
 $$\begin{align}
-h^{[0]}_{L/R,n,\mu \nu} & =\mathcal{L}_{\zeta _{L/R,n}}g^{(0)}_{\mu \nu}
+h^{[0]}_{\mu \nu} & =\mathcal{L}_{\zeta}g^{(0)}_{\mu \nu}
 \end{align}$$
 
 with
 
 $$\begin{align}
-\zeta _{L,n} & =\sqrt{ \dfrac{6}{n!(n+3)!} }\mathcal{L}_{\xi _{-1}}^{n}\zeta _{L,0} \\
-\zeta _{R,n} & =\sqrt{ \dfrac{6}{n!(n+3)!} }\mathcal{L}_{\bar{\xi}_{-1}}^{n}\zeta _{R,0} \\
+\zeta[a] & =\sum _{A=L,R}\sum ^{\infty}_{n=0}(a_{A,n}\zeta _{A,n}+a^{\dagger}_{A,n}\zeta ^{*}_{A,n})
+\end{align}$$
+
+with
+
+$$\begin{align}
+\zeta _{L,n} & =\sqrt{ \dfrac{6}{n!(n+3)!} }\mathcal{L}_{\xi _{-1}}^{n}\zeta _{L,0} \qquad\zeta _{R,n} =\sqrt{ \dfrac{6}{n!(n+3)!} }\mathcal{L}_{\bar{\xi}_{-1}}^{n}\zeta _{R,0} \\
 \zeta _{L,0} & =\left( i \dfrac{e^{-2i(t-\phi)}}{4\sqrt{ 3\pi }} \dfrac{r^{4}}{(1+r^{2})^{2}},-\dfrac{e^{-2i(t-\phi)}}{4\sqrt{ 3\pi }} \dfrac{r(3+2r^{2})}{1+r^{2}}, -i \dfrac{e^{-2i(t-\phi)}}{4\sqrt{ 3\pi }} \dfrac{3+r^{2}}{1+r^{2}}\right) \\
 \zeta _{R,0} & =\left(i \dfrac{e^{-2i(t+\phi)}}{4\sqrt{ 3\pi }} \dfrac{r^{4}}{(1+r^{2})^{2}},-\dfrac{e^{-2i(t+\phi)}}{4\sqrt{ 3\pi }} \dfrac{r(3+2r^{2})}{1+r^{2}},i \dfrac{e^{-2i(t+\phi)}}{4\sqrt{ 3\pi }} \dfrac{3+r^{2}}{1+r^{2}}\right)
 \end{align}$$
 
-here we choose $\displaystyle{\kappa ^{2}=16\pi G}$. For one mode, the finite-diffeomorphism continuation truncated at relative order $\displaystyle{\kappa ^{p}}$ is
+here we choose $\displaystyle{\kappa ^{2}=16\pi G}$. A general solution around the vacuum $\displaystyle{g^{(0)}}$ can be written as
 
 $$\begin{align}
-h ^{[p]}_{A,n} & =\sum ^{p}_{j=0} \dfrac{\kappa ^{j}}{(j+1)!}\mathcal{L}^{j+1}_{\zeta _{A,n}}g^{(0)}, & A=L,R
+g[a] & =e^{\kappa \mathcal{L}_{\zeta[a]}}g^{(0)}
 \end{align}$$
 
-and hence
-
-$$\begin{align}
-h_{A,n} & =\dfrac{e^{\kappa \mathcal{L}_{\zeta _{A,n}}}-1}{\kappa}g^{(0)} \\
- & =\mathcal{L}_{\zeta _{A,n}}g^{(0)}+\dfrac{\kappa}{2}\mathcal{L}^{2}_{\zeta _{A,n}}g^{(0)}+\mathcal{O}(\kappa ^{2})
-\end{align}$$
-
-A convenient exact nonlinear continuation of a general linearized mode superposition is obtained by expanding
-
-$$\begin{align}
-\zeta[a] & =\sum _{A=L,R}\sum_{n=0}^{\infty} \left(a_{A,n}\zeta _{A,n}+a^{\dagger}_{A,n}\zeta _{A,n}^{*}\right)
-\end{align}$$
-
-then
-
-$$\begin{align}
-h[a] & = \dfrac{e^{\kappa \mathcal{L}_{\zeta[a]}}-1}{\kappa} g^{(0)}.
-\end{align}$$
-
-This fixed-generator exponential contains every linear Brown--Henneaux mode as a tangent direction and generates the cross terms of the chosen autonomous flow. A time-dependent product of flows is needed to reach a general smooth point of the global-AdS vacuum orbit; the fixed-generator chart below is used locally near the vacuum.
+here we choose $\displaystyle{\kappa ^{2}=16\pi G}$. Here $\displaystyle{a}$ may get $\displaystyle{\kappa}$ corrections.
 
 ## A Simple Argument
 
-Consider the bulk action
+For the bulk action and its Einstein equation, write
 
 $$\begin{align}
-S_{\text{bulk}} & =\dfrac{1}{\kappa ^{2}} \int _{M}\mathrm{d}^{3}x\sqrt{ -g }(R+2), & \kappa ^{2}=16\pi G
+S_{\mathrm{bulk}} & =\dfrac{1}{\kappa^2}\int_M\mathrm{d}^3x\sqrt{-g}(R+2), & \kappa^2&=16\pi G,\\
+\mathcal E_{\mu\nu}[g] & :=R_{\mu\nu}[g]-\dfrac12g_{\mu\nu}R[g]-g_{\mu\nu}=0.
 \end{align}$$
 
-and Brown-Henneaux boundary conditions. We expand
+Diffeomorphism covariance gives
 
 $$\begin{align}
-g_{\mu \nu} & =g^{(0)}_{\mu \nu}+\kappa h_{\mu \nu}
+\mathcal E[e^{\kappa\mathcal L_\zeta}g^{(0)}]
+&=e^{\kappa\mathcal L_\zeta}\mathcal E[g^{(0)}]=0.
 \end{align}$$
 
-and no higher expansions. The action can be expanded as
+thus the exponential supplies a nonlinear solution for every allowed generator $\displaystyle{\zeta[a]}$. to see how it includes the homogeneous data arising at successive perturbative orders. first consider
 
 $$\begin{align}
-S[h] & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\mathcal{L}^{(2)}[h,h] \\
- & +\kappa \int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\mathcal{L}^{(3)}[h,h,h]+\mathcal{O}(\kappa ^{2})
+g & =g^{(0)}+\kappa \mathcal{L}_{\zeta[a^{(0)}]}g^{(0)}+\kappa ^{2}u_{1}+\mathcal{O}(\kappa ^{3})
 \end{align}$$
 
-let the AdS-Einstein tensor be
+at $\displaystyle{\kappa ^{2}}$-order, the eom is
 
 $$\begin{align}
-\mathcal{E}_{\mu \nu}[g] & :=R_{\mu \nu}[g]-\dfrac{1}{2}g_{\mu \nu}R[g]-g_{\mu \nu}
+\mathcal{E}^{(1)}[u_{1}]+\mathcal{E}^{(2)}[\mathcal{L}_{\zeta[a^{(0)}]}g^{(0)},\mathcal{L}_{\zeta[a^{(0)}]}g^{(0)}]=0
 \end{align}$$
 
-expanding $\displaystyle{\mathcal{E}_{\mu \nu}[g]}$ in the order of $\displaystyle{\kappa}$, we have
+the general solution for $\displaystyle{u_{1}}$ is
 
 $$\begin{align}
-\kappa\mathcal{E}^{(1)}_{\mu \nu}[h]+\kappa ^{2}\mathcal{E}_{\mu \nu}^{(2)}[h,h]+\mathcal{O}(\kappa ^{3})=0
+u_{1} & =\dfrac{1}{2}\mathcal{L}_{\zeta[a^{(0)}]}^{2}g^{(0)}+\mathcal{L}_{\zeta[a^{(1)}]}g^{(0)}+\mathcal{L}_{\xi _{1}}g^{(0)}
 \end{align}$$
 
-at $\displaystyle{\mathcal{O}(\kappa)}$ order, we have
+where $\displaystyle{\xi_{1}}$ is proper gauge. remove its contribution by a proper diffeomorphism generated at order $\displaystyle{\kappa ^{2}}$ and set
 
 $$\begin{align}
-\mathcal{E}_{\mu \nu}^{(1)}[h]=0
+a(\kappa) & =a^{(0)}+\kappa a^{(1)}+\mathcal{O}(\kappa ^{2})
 \end{align}$$
 
-and solve the unperturbed solutions $\displaystyle{h^{[0]}_{L/R,n}}$ as [[Articles/Quantization in AdS/linearized gravity/solving modes|solving modes]]. To do classical perturbation theory, we expand
+then $\displaystyle{g=g[a(\kappa)]+\mathcal{O}(\kappa ^{3})}$ in this gauge. the additional BH data have been absorbed into $\displaystyle{a}$. The same argument works inductively.
+
+For the calculations below, $\displaystyle{a}$ denotes the complete coordinate after the absorption. At fixed $\displaystyle{a}$, define
 
 $$\begin{align}
-h_{\mu \nu} & =h^{[0]}_{\mu \nu}+\kappa h_{\mu \nu}^{[1]}+\mathcal{O}(\kappa ^{2})
+g[a]&=g^{(0)}+\kappa h[a],\\
+h[a]&=\sum_{n=0}^{\infty}\kappa^n h^{[n]}[a],&
+h^{[n]}[a]&=\dfrac{1}{(n+1)!}\mathcal L_{\zeta[a]}^{n+1}g^{(0)}.
 \end{align}$$
 
-and insert it into the expansion of $\displaystyle{\mathcal{E}_{\mu \nu}}$, we have
-
-$$\begin{align}
-\mathcal{E}^{(1)}[h^{[1]}] +\mathcal{E}^{(2)}[h^{[0]},h^{[0]}] & =0
-\end{align}$$
-
-notice that covariance under the finite diffeomorphism flow gives
-
-$$\begin{align}
-\mathcal{E}[e^{\varepsilon \mathcal{L}_{\xi}}g] & =e^{\varepsilon \mathcal{L}_{\xi}}\mathcal{E}[g] \\
-\implies \left.D\mathcal{E}\right|_{g}[\mathcal{L}_{\xi}g] & =\mathcal{L}_{\xi}\mathcal{E}[g]
-\end{align}$$
-
-Since $\displaystyle{\mathcal{E}[g^{(0)}]=0}$, expanding this identity means
-
-$$\begin{align}
-\mathcal{E}^{(1)}[h_{A,n}^{[0]}] & =0 \\
-\mathcal{E}^{(1)}\left[ \dfrac{1}{2}\mathcal{L}^{2}_{\zeta _{A,n}}g^{(0)} \right]+\mathcal{E}^{(2)}[h^{[0]}_{A,n},h^{[0]}_{A,n}] & =0 \\
-\dots
-\end{align}$$
-
-We now restrict to the nonlinear continuation determined by the selected linear solution mode $\displaystyle{h^{[0]}_{A,n}}$. Any additional homogeneous solution carrying independent Brown--Henneaux mode data is assigned to another solution mode and is not included in $\displaystyle{h^{[1]}_{A,n}}$. Within this restricted sector, we have
-
-$$\begin{align}
-h^{[1]}_{A,n,\mu \nu} & =\dfrac{1}{2}\mathcal{L}^{2}_{\zeta _{A,n}}g^{(0)}_{\mu \nu}+\mathcal{L}_{\xi}g^{(0)}_{\mu \nu}
-\end{align}$$
-
-Here $\displaystyle{\xi}$ generates the remaining proper-gauge freedom, so we may set $\displaystyle{\xi=0}$ by a gauge transformation $\displaystyle{h_{\mu \nu}\to h_{\mu \nu}-\kappa\mathcal{L}_{\xi}g^{(0)}_{\mu \nu}}$. Higher perturbations can be constructed by a similar argument, but we will only need the first-order perturbative solution for the moment.
-
-Expand
-
-$$\begin{align}
-\zeta & =\sum _{A,n}(a_{A,n}\zeta _{A,n}+a^{\dagger}_{A,n}\zeta ^{*}_{A,n}) \\
-h_{\mu \nu}^{[0]} & =\mathcal{L}_{\zeta}g^{(0)}_{\mu \nu} \\
- & =\sum _{A,n}a_{A,n}\mathcal{L}_{\zeta _{A,n}}g^{(0)}+a_{A,n}^{\dagger}\mathcal{L}_{\zeta ^{*}_{A,n}}g^{(0)}
-\end{align}$$
-
-the first order perturbation can be represented as
-
-$$\begin{align}
-h_{\mu \nu}^{[1]} & =\dfrac{1}{2}\mathcal{L}_{\zeta}^{2}g^{(0)}_{\mu \nu}
-\end{align}$$
+In particular, $\displaystyle{h^{[0]}[a]=\mathcal L_{\zeta[a]}g^{(0)}}$ and $\displaystyle{h^{[1]}[a]=\frac12\mathcal L_{\zeta[a]}^2g^{(0)}}$, with all multimode cross terms included. Along a chosen family $\displaystyle{a(\kappa)}$, its Taylor coefficients contribute to the expansion of the metric as above.
 
 ## Perturbed Symplectic Form
 
@@ -137,12 +87,17 @@ $$\begin{align}
 q_{N} & =-\dfrac{(-i)^{N-1}}{\sqrt{ 2\pi N(N^{2}-1) }}
 \end{align}$$
 
-here $\displaystyle{\xi _{N},\bar{\xi}_{N}}$ are asymptotic Killing vectors and satisfy
+here $\displaystyle{\xi _{N},\bar{\xi}_{N}}$ are asymptotic Killing vectors and satisfy the Witt algebra together with isometry generators $\displaystyle{\xi _{-1,0,1}}$ and $\displaystyle{\bar{\xi}_{-1,0,1}}$
+
+$$\begin{align}
+[\xi _{n},\xi _{m}] & =-i(n-m)\xi _{n+m}+\mathcal{O}(r^{-\dots}) \\
+[\bar{\xi}_{n},\bar{\xi}_{m}] & =-i(n-m)\bar{\xi}_{n+m}+\mathcal{O}(r^{-\dots})
+\end{align}$$
 
 Inserting the solution
 
 $$\begin{align}
-g[a] & =e^{\kappa \mathcal{L}_{\zeta}}g^{(0)}
+g[a] & =e^{\kappa \mathcal{L}_{\zeta[a]}}g^{(0)}
 \end{align}$$
 
 to the symplectic form
