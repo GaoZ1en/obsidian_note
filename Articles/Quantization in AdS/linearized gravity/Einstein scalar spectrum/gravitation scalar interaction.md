@@ -171,61 +171,49 @@ $$\begin{align}
 k & =\dfrac{1}{2}\mathcal{L}^{2}_{\zeta}g^{(0)}+k _{\phi}, & \mathcal{E}^{(1)}[k _{\phi}] & =\dfrac{1}{2}T_{(0)}
 \end{align}$$
 
-the remaining calculation is $\displaystyle{k _{\phi}}$.
-
-Before inserting these solutions into the explicit symplectic formulas above, choose representatives satisfying the stated radial collar gauge, or retain the corner term for the original representatives.
-
-### Circularly Symmetric Scalar Backreaction
-
-For any circular free scalar $\phi^{(0)}(t,r)$, use polar areal gauge for the matter response:
+the remaining calculation is $\displaystyle{k _{\phi}}$. For circular free scalar $\displaystyle{\phi ^{(0)}(t,r)}$, use polar areal gauge for $\displaystyle{k _{\phi}}$:
 
 $$\begin{align}
-(k_\phi)_{tt}&=M+2fD,& (k_\phi)_{rr}&=\frac{M}{f^2},& (k_\phi)_{tr}&=(k_\phi)_{\mu\varphi}=0.
+(k _{\phi})_{tt} & =M+2fD, & (k _{\phi})_{rr} & =\dfrac{M}{f^{2}}, & (k _{\phi})_{tr}=(k _{\phi})_{\mu \varphi}=0
 \end{align}$$
 
-The independent Einstein constraints become
+The independent Einstein constraints() become
 
 $$\begin{align}
 \partial_r M&=\frac r2\left[ \frac{(\partial_t\phi^{(0)})^2}{f} +f(\partial_r\phi^{(0)})^2+m^2(\phi^{(0)})^2\right],\\
 \partial_r D&=-\frac r2\left[ (\partial_r\phi^{(0)})^2+\frac{(\partial_t\phi^{(0)})^2}{f^2}\right],\\
-\partial_t M&=rf\,\partial_t\phi^{(0)}\partial_r\phi^{(0)}.
+\partial_t M&=rf\,\partial_t\phi^{(0)}\partial_r\phi^{(0)}. \\
+\implies M(t,r) & =\dfrac{1}{2}\int _{0}^{r}\mathrm{d}ss\left(\dfrac{(\partial _{t}\phi ^{(0)}(t,s))^{2}}{1+s^{2}}+(1+s^{2})(\partial _{s}\phi ^{(0)}(t,s))^{2}+m^{2}(\phi ^{(0)}(t,s))^{2}\right) \\
+D(t,r) & =\dfrac{1}{2}\int _{r}^{\infty}\mathrm{d}ss\left((\partial _{s}\phi ^{(0)}(t,s))^{2}+\dfrac{(\partial _{t}\phi ^{(0)}(t,s))^{2}}{(1+s^{2})^{2}}\right)
 \end{align}$$
-
-Regularity fixes $M(t,0)=0$; keeping $t$ as the prescribed boundary time fixes $D(t,\infty)=0$. Therefore
-
-$$\begin{align}
-M(t,r)&=\frac12\int_0^r ds\,s\left[ \frac{(\partial_t\phi^{(0)}(t,s))^2}{1+s^2} +(1+s^2)(\partial_s\phi^{(0)}(t,s))^2 +m^2(\phi^{(0)}(t,s))^2\right],\\
-D(t,r)&=\frac12\int_r^\infty ds\,s\left[ (\partial_s\phi^{(0)}(t,s))^2 +\frac{(\partial_t\phi^{(0)}(t,s))^2}{(1+s^2)^2}\right].
-\end{align}$$
-
-The free Klein–Gordon equation implies
-$\partial_t(\partial_rM)=\partial_r(rf\,\partial_t\phi^{(0)}\partial_r\phi^{(0)})$,
-so the momentum constraint follows with the regular-center condition. The remaining angular Einstein equation follows from stress conservation and the linearized Bianchi identity. These integrals include all cross terms in a circular scalar mode superposition.
-
-This use of radial constraints parallels the massless circular Einstein–scalar system of [Bizoń and Jałmużna](https://arxiv.org/html/1306.0317); the expressions here retain our mass term, coupling normalization, and boundary-time convention.
-
-### Explicit Lowest-Mode Solution
 
 For the real lowest scalar mode, take
 
 $$\begin{align}
-\phi^{(0)}&=A f^{-\Delta/2}\cos(\Delta t),& m^2&=\Delta(\Delta-2),\qquad \Delta>1.
+\phi^{(0)}&=\dfrac{1}{\sqrt{ 2\pi }} f^{-\Delta/2}\cos(\Delta t),& m^2&=\Delta(\Delta-2),\qquad \Delta>1.
 \end{align}$$
 
 The radial integrals give
 
 $$\begin{align}
-M&=\frac{A^2\Delta}{4} \left[1-f^{1-\Delta}-r^2f^{-\Delta}\cos(2\Delta t)\right],\\
-D&=\frac{A^2\Delta}{4}f^{-\Delta}\cos^2(\Delta t) -\frac{A^2\Delta^2}{4(\Delta+1)}f^{-\Delta-1}\cos(2\Delta t),\\
-(k_\phi)_{tt}&=\frac{A^2\Delta}{4} \left[1-\frac{\Delta-1}{\Delta+1}f^{-\Delta}\cos(2\Delta t)\right],\\
-(k_\phi)_{rr}&=\frac{A^2\Delta}{4f^2} \left[1-f^{1-\Delta}-r^2f^{-\Delta}\cos(2\Delta t)\right].
+M & =\dfrac{\Delta}{8\pi}(1-f^{1-\Delta}-r^{2}f^{-\Delta}\cos(2\Delta t)) \\
+D & =\dfrac{\Delta}{8\pi}f^{-\Delta}\cos ^{2}(\Delta t)-\dfrac{\Delta ^{2}}{8\pi(\Delta+1)}f^{-\Delta-1}\cos(2\Delta t) \\
+(k _{\phi})_{tt} & =\dfrac{\Delta}{8\pi}\left( 1-\dfrac{\Delta-1}{\Delta+1}f^{-\Delta}\cos(2\Delta t) \right) \\
+(k _{\phi})_{rr} & =\dfrac{\Delta}{8\pi f^{2}}(1-f^{1-\Delta}-r^{2}f^{-\Delta}\cos(2\Delta t))
 \end{align}$$
 
-This is regular at the center and obeys Brown–Henneaux falloffs:
-$(k_\phi)_{tt}=O(1)$ and $(k_\phi)_{rr}=O(r^{-4})$.
-Moreover $M(t,\infty)=A^2\Delta/4$ is constant and $D(t,\infty)=0$. The free scalar energy is $H_\phi^{(0)}=2\pi M(t,\infty)=\pi A^2\Delta/2$; this is a classical energy, not a quantum spectral correction.
-
 With $h=0$, our homogeneous-data convention gives $\phi^{(1)}=0$ while $k=k_\phi\neq0$. Arbitrary vacuum-graviton mode data can be added through the covariance formulas above, at the same retained orders.
+
+Our goal is to calculate the two particle energy correction under $\displaystyle{h=0}$, which implies $\displaystyle{\phi ^{(1)}=0}$, and then the effective coupling action is
+
+$$\begin{align}
+S_{\mathrm{\text{eff}}} & \simeq S_{\text{eff}}^{(0)}+\kappa S_{\text{eff}}^{(1)}+\kappa ^{2}S_{\text{eff}}^{(2)}+\mathcal{O}(\kappa ^{3}) \\
+S^{(0)}_{\text{eff}} & =-\dfrac{1}{2}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\left(\nabla ^{(0)}_{\mu}\phi ^{(0)}\nabla ^{(0)\mu}\phi ^{(0)}+m^{2}(\phi ^{(0)})^{2}\right) \\
+S^{(1)}_{\text{eff}} & =0 \\
+S^{(2)}_{\text{eff}} & =\dfrac{1}{4}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }k _{\phi,\mu \nu}[\phi]T_{(0)}^{\mu \nu}
+\end{align}$$
+
+---
 
 ## General Response in De Donder Gauge
 
@@ -242,18 +230,6 @@ T_{\rho\sigma}[u,v] &=\nabla^{(0)}_{(\rho}u\,\nabla^{(0)}_{\sigma)}v -\frac12g^{
 For an admissible conserved source $S$, the kernel is normalized by $\mathcal E^{(1)}[GS]=S$ and $C[GS]=0$. The [explicit kernel calculation](Einstein%20response%20kernel%20construction.md) supplies the auxiliary Euclidean coefficients. For a finite scalar-mode set, take $G=G_{\mathcal V}$ from the [scalar-source prescription](Einstein%20scalar%20response%20prescription.md): an explicit static seed and isometry recursion treat opposite-frequency pairs, a conserved Abel prescription treats same-sign pairs, and a finite source Gram matrix fixes the kernel's action on their real span $\mathcal V$. Its solutions obey the stated no-log boundary conditions and all Einstein constraints in the analytic domain specified there. Initial metric data are obtained by restricting these solutions, rather than set to zero. This does not assert a universal retarded convolution on arbitrary eternal histories.
 
 The expression above uses our existing convention of assigning independent free data to $a,b$ and adding no independent higher-order homogeneous amplitudes. Pure-gauge homogeneous terms can be removed by proper residual transformations; physical boundary gravitons cannot. Hence writing $q^{\mathrm h}=0$ is a homogeneous-data convention together with a gauge choice, not a consequence of de Donder gauge alone. The leading physical gravitational modes remain in $h=\mathcal L_\zeta g^{(0)}$, and the complete retained response is $k=\tfrac12\mathcal L_\zeta^2g^{(0)}+q$.
-
-## Where to Continue Toward the Spectrum
-
-First retain a finite set of normalized scalar and physical boundary-graviton modes with free energies
-
-$$\begin{align}
-E_{nj}=\Delta+2n+|j|&<E_{\mathrm{cut}},& E^{g}_{A,n}=n+2&<E_{\mathrm{cut}}, \qquad A=L,R.
-\end{align}$$
-
-The value of $E_{\mathrm{cut}}$ remains to be chosen. Insert these finite leading-mode sums into the bilinear kernel response and the covariance formulas. Keep the full response generated by their products, including sum/difference frequencies outside the retained free-mode band; truncating the independent input amplitudes does not justify discarding parts of the sourced Einstein constraints.
-
-Next evaluate the prescribed finite kernel for the selected cutoff, then pull back $\omega_\Sigma$ and $H_{\partial_t}=X_{\partial_t}\cdot\theta-\alpha_{\partial_t}$ to the finite amplitudes, retaining the required boundary/corner terms. Find canonical coordinates before forming the one-/two-particle Hamiltonian matrices. The free-mode cutoff, a later cutoff on total Fock-state energy, and the perturbative order are separate choices. No cutoff-dependent spectrum has yet been computed.
 
 ## Verification Scope
 

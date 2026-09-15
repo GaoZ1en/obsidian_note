@@ -1,424 +1,358 @@
-# One- and Two-Particle Energies of the Einstein–Scalar System in Global AdS3
-
-This note computes the leading connected gravitational two-scalar spectrum, with the physical single-scalar mass as input. Circular matrix elements and the free AdS representation decomposition give a finite algebraic recursion for every two-scalar primary shift. The recursion has been evaluated symbolically through $n+|\ell|\leq8$, giving 25 coefficients for general $\Delta$ and covering every primary with free energy at most $2\Delta+8$. The response-kernel formulation is retained as an alternative construction and a normalization check.
-
-**Subsequent audits:** the [first closed-form audit](closed%20form%20spectrum%20audit.md) checks the all-radial-level formulas and channel calculations through level twelve. The [revision-2 audit](revision%202%20audit.md) closes the paired-exchange bridge and structural boundary-graviton branch argument under the stated non-null representation and no-extra-primary-collision assumptions, and independently verifies a general-mass noncircular entry. See the [current article](article/paper.tex) for the combined result. The table and calculation history below retain this note's original level-eight scope.
-
-Use the real, minimally coupled scalar and conventions of [gravitation scalar interaction](gravitation%20scalar%20interaction.md): AdS radius one, signature $(-,+,+)$, $\kappa^2=16\pi G$, $m^2=\Delta(\Delta-2)$, and $\Delta>1$. Keep the fixed boundary cylinder, smooth centre, source-free scalar boundary condition and Brown–Henneaux metric falloffs. Work perturbatively near the vacuum orbit, with no independent scalar four-point contact coupling. The generic-parameter/no-radial-log domain of the response notes is understood. Infinite-mode convergence is outside this calculation.
-
-All energies below are gaps above the interacting vacuum. An interacting particle label means continuation from the indicated free state or representation; particle number is not an exact symmetry of a real interacting scalar.
-
-## Results and Mass Convention
-
 Use the lowest physical single-scalar gap as the mass-renormalization condition:
 
 $$\begin{align}
-E^{(1)}_{00}=\Delta_{\mathrm R},\qquad m_{\mathrm R}^2=\Delta_{\mathrm R}(\Delta_{\mathrm R}-2).
+E^{(1)}_{00}&=\Delta_{\mathrm R}, & m_{\mathrm R}^2&=\Delta_{\mathrm R}(\Delta_{\mathrm R}-2).
 \end{align}$$
 
-For the scalar representation, AdS symmetry then gives
+AdS symmetry fixes the other gaps in this scalar representation:
 
 $$\begin{align}
-\boxed{E^{(1)}_{nj}=\Delta_{\mathrm R}+2n+|j|.}
+E^{(1)}_{nj}=\Delta_{\mathrm R}+2n+|j|, \qquad n\in\mathbb Z_{\geq0},\quad j\in\mathbb Z.
 \end{align}$$
 
-Thus a bare-to-physical shift obeys $\delta m^2=2(\Delta-1)\delta\Delta$ to first order. At a regulator scale $\Lambda$, the condition fixes the sum of the one-particle self-energy and the mass counterterm. It does not assert that the unrenormalized self-energy vanishes. A bare-mass shift cannot be quoted independently of a regulator and a finite renormalization prescription. Below, write $\Delta=\Delta_{\mathrm R}$ in every $O(G)$ coefficient; the distinction from the bare value there affects only higher orders.
-
-The lowest two-scalar level is
+Write $\Delta=\Delta_{\mathrm R}$ below. The quadratic scalar action gives the free KG modes. Normalize their positive-frequency solutions with the integrated free symplectic form before expanding the field:
 
 $$\begin{align}
-\boxed{ E^{(2)}_{00}=2\Delta+\gamma_{00}+O(G^2),\qquad \gamma_{00}=\frac{2G\Delta^2(7+2\Delta-8\Delta^2)}{4\Delta^2-1}.
-}
+\phi ^{(0)} & =\sum _{I}(b_{I}u_{I}+b^{\dagger}_{I}u^{*}_{I}), & [b_{I},b^{\dagger}_{J}] & =\delta _{IJ} \\
+u_{I} & \propto e^{-i\omega _{I}t+ij_{I}\varphi}, & \omega _{I} & =\Delta+2n_{I}+|j_{I}| \\
+H_{0} & =\sum _{I}\omega _{I}b^{\dagger}_{I}b_{I}
 \end{align}$$
 
-The first radially excited spin-zero two-scalar primary has
+here $\displaystyle{I=(n_{I},j_{I})}$ is a complete mode label. The symbol $\displaystyle{\delta _{IJ}=\delta _{n_{I}n_{J}}\delta _{j_{I}j_{J}}}$ is the ordinart Kronecker delta. The normalized double particle state is
 
 $$\begin{align}
-\boxed{ E^{(2),\mathrm{primary}}_{10}=2\Delta+2+\gamma_{10}+O(G^2),\qquad \gamma_{10}=-\frac{2G\Delta^2(8\Delta^2+46\Delta+47)}{(2\Delta+1)(2\Delta+3)}.
-}
+\ket{IJ}  & =\dfrac{b^{\dagger}_{I}b^{\dagger}_{J}\ket{0} }{\sqrt{ 1+\delta _{IJ} }}, & E^{(0)}_{IJ} & =\omega _{I}+\omega _{J}
 \end{align}$$
 
-The other spin-zero level at the same free energy is a global descendant of the lowest pair. Its energy is $2\Delta+2+\gamma_{00}+O(G^2)$, not $2\Delta+2+\gamma_{10}$.
+here $\displaystyle{IJ}$ is unordered pair labels, so that there is no double counting.
 
-The lowest nonzero-spin primary has $\ell=\pm2$:
+On the sourced branch with $\displaystyle{h=0}$ and the stated homogeneous-data convention, $\displaystyle{\phi ^{(1)}=0}$ but $\displaystyle{k=k _{\phi}}$ remains nonzero. The starting action is
 
 $$\begin{align}
-\boxed{ E^{(2),\mathrm{primary}}_{0,\pm2}=2\Delta+2+\gamma_{02}+O(G^2),\qquad \gamma_{02}=-\frac{4G\Delta(\Delta+1)(4\Delta^2+4\Delta-1)}{(2\Delta+1)(2\Delta+3)}.
-}
+S_{\text{eff}} & =S^{(0)}_{\text{eff}}+\kappa ^{2}S^{(2)}_{\text{eff}}+\mathcal{O}(\kappa ^{3}), & S_{\text{eff}}^{(1)}=0 \\
+S^{(0)}_{\text{eff}} & =-\dfrac{1}{2}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\left(\nabla ^{(0)}_{\mu}\phi ^{(0)}\nabla ^{(0)\mu}\phi ^{(0)}+m^{2}\phi ^{(0)2}\right) \\
+S^{(2)}_{\text{eff}} & =\dfrac{1}{4}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }(k _{\phi})_{\mu \nu}T_{(0)}^{\mu \nu}[\phi ^{(0)}]
 \end{align}$$
 
-For all even $|\ell|\geq4$, the universal tree graviton-exchange answer is
+where $\displaystyle{k _{\phi}}$ is determined by
 
 $$\begin{align}
-\boxed{\gamma_{n\ell}=-4G\left[\Delta^2+2n(2\Delta+n-1)\right],\qquad |\ell|\geq4.}
+\mathcal{E}^{(1)}[k _{\phi}] & =\dfrac{1}{2}T_{(0)}[\phi ^{(0)}] \\
+\implies k _{\phi,\mu \nu}(x) & =\dfrac{1}{2}\int _{M}\mathrm{d}^{3}x'\sqrt{ -g^{(0)}(x') }G_{\mu \nu,\mu'\nu'}(x,x')T^{\mu'\nu'}_{(0)}(x')
 \end{align}$$
 
-The radial recursion below independently reproduces this formula on every computed higher-spin primary. Its all-spin extension follows from the crossed-channel stress-tensor result of [Kraus–Sivaramakrishnan–Snively, section 4.2, equation (4.35)](https://arxiv.org/html/1810.01439#S4.SS2): set $h_1=h_2=\Delta/2$ and $c=3/(2G)$ in $-12[c^{-1}][C_2(\Delta+n)-2C_2(\Delta/2)]$. The inversion result applies above the exchanged spin, so it must not be used to replace the separately computed $\ell=0,2$ answers. No additional higher-derivative scalar contact coupling is included here.
-
-For example:
-
-| $\Delta$ | $\gamma_{00}/G$ | $\gamma_{10}/G$ |
-|---|---:|---:|
-| $3/2$ | $-9/2$ | $-201/8$ |
-| $2$ | $-56/5$ | $-1368/35$ |
-| $3$ | $-1062/35$ | $-514/7$ |
-| $4$ | $-3616/63$ | $-11488/99$ |
-
-These entries evaluate the displayed tree coefficients; additional accidental degeneracies, if present in a larger chosen sector, must still be treated as a block.
-
-The sign of the lowest shift is not uniformly negative:
-
-$$
-\gamma_{00}\begin{cases}
->0,&1<\Delta<(1+\sqrt{57})/8,\\
-=0,&\Delta=(1+\sqrt{57})/8,\\
-<0,&\Delta>(1+\sqrt{57})/8.
-\end{cases}
-$$
-
-The zero near $1.069$ is a zero of the interaction coefficient, not the exceptional de Donder value $(1+\sqrt5)/2$. At large $\Delta$, $\gamma_{00}=-4G\Delta^2+G\Delta+O(G)$, with the expected attractive leading term. The expansion requires the corrections to remain small on the retained states.
-
-## Exact Circular Reduction and the Quartic Hamiltonian
-
-The circular reduction suffices to compute the lowest pair and a diagonal entry needed for the first degenerate block. It is used as a computational gauge; the spectrum refers to the same prescribed boundary time as the de Donder construction.
-
-Write
+then
 
 $$\begin{align}
-ds^2=-F e^{-2D}dt^2+\frac{dr^2}{F}+r^2d\varphi^2, \qquad F=1+r^2-\kappa^2 M, \qquad \Pi=\frac{e^D}{F}\dot\phi.
+S_{\text{eff}} & =\dfrac{\kappa ^{2}}{8}\int _{M}\mathrm{d}^{3}x\mathrm{d}^{3}x'\sqrt{ -g^{(0)}(x) }\sqrt{ -g^{(0)}(x') }T^{\mu \nu}_{(0)}(x)G_{\mu \nu,\mu'\nu'}(x,x')T^{\mu'\nu'}_{(0)}(x')
 \end{align}$$
 
-Here $D$ denotes the full lapse exponent; in the earlier perturbative solution it was written as $\kappa^2$ times the leading lapse response. The canonical scalar momentum after angular integration is $p=2\pi r\Pi$. In polar areal gauge the gravitational contribution $p^{ij}\delta\gamma_{ij}$ vanishes in the circular sector: $K_{\varphi\varphi}=0$ implies $p^{rr}=0$, and $\delta\gamma_{\varphi\varphi}=0$. With the fixed boundary-time prescription, the reduced potential and form are
+the interaction Hamiltonian is
 
 $$\begin{align}
-\theta_{\mathrm{red}}=2\pi\int_0^\infty dr\,r\Pi\,\delta\phi, \qquad \Omega_{\mathrm{red}}=2\pi\int_0^\infty dr\,r\delta\Pi\wedge\delta\phi.
+H^{(2)}(b,b^{\dagger}) & =-\dfrac{\kappa ^{2}}{4}\left<\int _{\Sigma}\mathrm{d}r\mathrm{d}\varphi r(k _{\phi})_{\mu \nu}T^{\mu \nu}_{(0)}\right>_{t}
 \end{align}$$
 
-No perturbative Darboux correction is needed for these Cauchy-data coordinates. The exact constraints are
-
-$$\begin{aligned}
-M'&=\frac r2\left[F(\Pi^2+\phi'^2)+m^2\phi^2\right],\\
-D'&=-\frac{\kappa^2r}{2}(\Pi^2+\phi'^2),\\
-\dot M&=rF\dot\phi\,\phi'.
-\end{aligned}$$
-
-Regularity and the prescribed boundary clock fix $M(0)=0$ and $D(\infty)=0$. The vacuum-subtracted asymptotic mass is $H=2\pi M(\infty)$, consistently with $8GH=\kappa^2M(\infty)$ in the asymptotic BTZ parameter.
-
-Put $f=1+r^2$ and $X=\Pi^2+\phi'^2$. Solving the first-order mass constraint gives the exact reduced Hamiltonian
+here $\displaystyle{\left<\right>_{t}}$ means time average, which extracts the zero-frequency term. For instance, $\displaystyle{b^{\dagger}_{I}b^{\dagger}_{J}b_{K}b_{L}}$ gives
 
 $$\begin{align}
-H=\pi\int_0^\infty dr\,r\bigl[fX+m^2\phi^2\bigr] \exp\!\left[-\frac{\kappa^2}{2}\int_r^\infty ds\,sX(s)\right].
+\omega _{I}+\omega _{J} & =\omega _{K}+\omega _{L}
 \end{align}$$
 
-For example, varying the constraint gives
+angular integration likewise requires
 
 $$\begin{align}
-\delta H=2\pi\int_0^\infty dr\,r e^{-D} \left[F\Pi\delta\Pi+F\phi'\delta\phi'+m^2\phi\delta\phi\right].
+j_{I}+j_{J} & =j_{K}+j_{L}
 \end{align}$$
 
-Together with $\Omega_{\mathrm{red}}$, this reproduces $\dot\phi=e^{-D}F\Pi$ and
-$\dot\Pi=r^{-1}\partial_r(re^{-D}F\phi')-e^{-D}m^2\phi$.
-Thus the lapse and the energy normalization have not been chosen independently.
-
-Expansion now supplies the required $O(\kappa^2)$ interaction directly:
-
-$$\begin{aligned}
-H&=H_0+\kappa^2 H_4+O(\kappa^4),\\
-H_0&=\pi\int_0^\infty dr\,r\bigl[fX+m^2\phi^2\bigr],\\
-M_0(r)&=\frac12\int_0^r ds\,s\bigl[f(s)X(s)+m^2\phi(s)^2\bigr],\\
-\boxed{H_4&=-\pi\int_0^\infty dr\,r X(r)M_0(r).}
-\end{aligned}$$
-
-This quartic Hamiltonian includes the circular gravitational constraints already. Adding a second exchange contribution to it would double count. It is not obtained by identifying the leading classical mass $2\pi M_0(\infty)$ with a spectral shift.
-
-## Lowest-Mode Integral and Quantization
-
-At a reference time, use the canonically normalized free mode
+for normalized states $\displaystyle{\ket{IJ}}$, the finite matrix is explicitly
 
 $$\begin{align}
-u(r)=\frac{f^{-\Delta/2}}{\sqrt{2\pi}},\qquad \phi=u(b+b^*),\qquad \Pi=-\frac{i\Delta}{f}u(b-b^*).
+V_{IJ,KL} & =\dfrac{\partial _{b^{\dagger}_{I}}\partial _{b^{\dagger}_{J}}\partial _{b_{K}}\partial _{b_{L}}H^{(2)}}{\sqrt{ (1+\delta _{IJ})(1+\delta _{KL}) }}{\Big|}_{b=b^{\dagger}=0}.
 \end{align}$$
 
-The integrated free symplectic form is $i\delta b^*\wedge\delta b$, so $[b,b^\dagger]=1$. In these variables,
+Restrict to $\displaystyle{\omega _{I}+\omega _{J}=\omega _{K}+\omega _{L}=E_{0}}$ and $\displaystyle{j_{I}+j_{J}=j_{K}+j_{L}=J}$. The leading energy gaps are
 
 $$\begin{align}
-M_0=\frac{\Delta}{4\pi} \left[2bb^*(1-f^{1-\Delta})-r^2f^{-\Delta}(b^2+b^{*2})\right].
+E^{(2)}_{E_{0},J,\alpha} & =E_{0}+\lambda _{\alpha}(V_{E_{0},J})+\mathcal{O}(G^{2})
 \end{align}$$
 
-Taking the coefficient of $b^2b^{*2}$ in $H_4$ gives
+here $\displaystyle{\alpha}$ labels different degenerate blocks.
 
-$$\begin{aligned}
-C_{00} &=\int_0^\infty dr\, \frac{\Delta^3 r\,[2+3r^2+3r^4-2f^{1+\Delta}]}{4\pi f^{2+2\Delta}}\\
-&=\boxed{\frac{\Delta^2(7+2\Delta-8\Delta^2)}{16\pi(4\Delta^2-1)}}.
-\end{aligned}$$
+## Direct Calculation
 
-The other quartic monomials have nonzero free frequency and do not contribute at first order to this isolated level. Use normal ordering for the connected tree interaction, with the separate one-body renormalization condition specified above. Then
+Conisder only the lowest pair
 
 $$\begin{align}
-H_{\mathrm{eff}}-E_{\mathrm{vac}} =\Delta N+\kappa^2 C_{00}N(N-1)+\cdots, \qquad N=b^\dagger b.
+\phi(t,r) & =\dfrac{f^{-\Delta/2}}{\sqrt{ 2\pi }}(b_{0,0}e^{-i\Delta t}+b^{\dagger}_{0,0}e^{i\Delta t})
 \end{align}$$
 
-Consequently the interaction vanishes on $N=1$, while
-$\langle 2|(b^\dagger)^2b^2|2\rangle=2$ gives
-$\gamma_{00}=2\kappa^2C_{00}$. This separation removes the one-body contribution by a stated renormalization condition, not by interpreting a classical coherent field as a one-particle state.
-
-There are two useful independent checks.
-
-First, the on-shell gravitational response gives the same coefficient from
+which gives
 
 $$\begin{align}
-H_{4,\mathrm{res}}=-\frac14\left\langle\int_\Sigma dr\,d\varphi\,r\, q_{\mu\nu}[\phi,\phi]T^{\mu\nu}[\phi]\right\rangle_t.
+H^{(2)} & =\kappa ^{2} \dfrac{\Delta ^{2}(7+2\Delta-8\Delta ^{2})}{16\pi(4\Delta ^{2}-1)} (b^{\dagger}_{0,0})^{2}b_{0,0}^{2}
 \end{align}$$
 
-For the lowest mode the mixed-frequency and same-sign contributions to $C_{00}$ are respectively
+upon normal ordering
 
 $$\begin{align}
-C_{00}^{+-}=-\frac{\Delta^2(\Delta-1)}{4\pi(2\Delta-1)},\qquad C_{00}^{\mathrm{same}}=-\frac{\Delta^2(2\Delta-3)}{16\pi(4\Delta^2-1)}.
+(b^{\dagger}_{0,0})^{2}b_{0,0}^{2} & =N(N-1), \\
+ & =2 & N=b^{\dagger}_{0,0}b_{0,0}=2
 \end{align}$$
 
-The second term must be retained for the real scalar in this model. It explains why keeping only the static stress tensor gives a different answer, especially near the BF bound.
-
-Second, insert the known real-mode response into the scalar equation at $O(\kappa^2)$. For $\phi^{(0)}=A f^{-\Delta/2}\cos(\Delta t)$, cancellation of the resonant forcing gives
+consequently
 
 $$\begin{align}
-\omega(A)=\Delta+ \kappa^2 A^2\frac{\Delta^2(7+2\Delta-8\Delta^2)}{16(4\Delta^2-1)}+O(\kappa^4 A^4).
+E^{(2)}_{00} & =2\Delta+\gamma _{00}+\mathcal{O}(G^{2}) \\
+ & =2\Delta+\kappa ^{2} \dfrac{\Delta ^{2}(7+2\Delta-8\Delta ^{2})}{8\pi(4\Delta ^{2}-1)}+\mathcal{O}(G^{2})
 \end{align}$$
 
-Since the leading action variable is $I=|b|^2=\pi A^2/2$, this agrees with $\partial_I(\Delta I+\kappa^2C_{00}I^2)$. This amplitude-dependent classical frequency is a check of the quartic interaction, not a calculation of a quantum one-particle self-energy.
-
-## First Degenerate Spin-Zero Block
-
-At free energy $2\Delta+2$ and total angular momentum zero, the two scalar product states are
+at free energy $\displaystyle{2\Delta+2}$ and vanishing angular momentum, the two scalar product states are
 
 $$\begin{align}
-|A\rangle=b^\dagger_{00}b^\dagger_{10}|0\rangle, \qquad |B\rangle=b^\dagger_{0,1}b^\dagger_{0,-1}|0\rangle.
+\ket{A}  & =b^{\dagger}_{0,0}b^{\dagger}_{1,0}\ket{0} , & \ket{B}  & =b^{\dagger}_{0,1}b^{\dagger}_{0,-1}\ket{0}
 \end{align}$$
 
-The subscripts on $b$ are the radial and angular labels $(n,j)$. After resolving nonresonant dressing and imposing AdS symmetry, their resonant interaction matrix is
-
-$$
-\boxed{
-V_{J=0,\,E_0=2\Delta+2}
-=\frac12
-\begin{pmatrix}
-\gamma_{00}+\gamma_{10}&\gamma_{00}-\gamma_{10}\\
-\gamma_{00}-\gamma_{10}&\gamma_{00}+\gamma_{10}
-\end{pmatrix}.
-}
-$$
-
-To derive it, the two global raising operators applied to the lowest pair produce $|A\rangle+|B\rangle$. The difference $|A\rangle-|B\rangle$ is annihilated by both lowering operators. Therefore the normalized eigenvectors are
+we have
 
 $$\begin{align}
-|D\rangle=\frac{|A\rangle+|B\rangle}{\sqrt2},\qquad |P\rangle=\frac{|A\rangle-|B\rangle}{\sqrt2}.
+H^{(2)}_{E_{0}=2\Delta+2,J=0} & =\dfrac{\kappa ^{2}}{2}\begin{pmatrix}
+\gamma _{00}+\gamma _{10} & \gamma _{00}-\gamma _{10} \\
+\gamma _{00}-\gamma _{10} & \gamma _{00}+\gamma _{10}
+\end{pmatrix}
 \end{align}$$
 
-The descendant must inherit $\gamma_{00}$. The remaining eigenvalue follows by evaluating the $A$ diagonal directly with the circular Hamiltonian. In $x=1/f$ coordinates,
+direct calculation gives
 
 $$\begin{align}
-u_{10}=\frac{x^{\Delta/2}}{\sqrt{2\pi}}[\Delta-(\Delta+1)x],
+\braket{ A|H^{(2)}|A }  & =-\dfrac{\Delta ^{2}(8\Delta ^{3}+26\Delta ^{2}+7\Delta-17)}{4\pi(2\Delta-1)(2\Delta+1)(2\Delta+3)} \\
+\implies \gamma _{10} & =2\kappa ^{2}\braket{ A|H^{(2)}|A } -\gamma _{00}
 \end{align}$$
 
-and coefficient extraction gives
-
-$$\begin{align}
-\langle A|H_4|A\rangle =-\frac{\Delta^2(8\Delta^3+26\Delta^2+7\Delta-17)} {4\pi(2\Delta-1)(2\Delta+1)(2\Delta+3)}.
-\end{align}$$
-
-Thus $\gamma_{10}=2\kappa^2\langle A|H_4|A\rangle-\gamma_{00}$, yielding the result above. The angular entries of this block are fixed here by the global symmetry argument; they have not been independently integrated using a noncircular metric response. The circular calculation alone, without this argument, would give a product-state expectation value rather than an eigenvalue.
+---
 
 ## Algebraic Reconstruction of the General Primary Spectrum
 
-The circular Hilbert subspace is not a closed two-particle angular-momentum block. Instead, its matrix elements are a compression of the full resonant interaction. The multiplicity-one decomposition of the free scalar tensor product lets us recover the primary eigenvalues from these compressed entries. This extends the symmetry argument used for the first spin-zero block.
+The general recursion repeats the preceding subtraction with several new primaries at each level. The dynamical input is a circular matrix $\mathsf R^{(N)}$. Free representation theory fixes its overlaps with all primary descendants; these overlaps allow the unknown primary shifts to be recovered without treating the circular subspace as a closed physical block.
 
-Label a single scalar by its two chiral descendant levels $(p,q)$, so $E=\Delta+p+q$ and $j=p-q$. At total chiral levels $(N,N)$, the circular pair states are
+### Single-Particle Labels and Two-Particle Primary Labels
+
+For a single scalar, replace the radial/angular labels $(n,j)$ by left and right descendant levels $(p,q)$:
+
+$$\begin{aligned}
+p&=n+\max(j,0), & q&=n+\max(-j,0),\\
+E&=\Delta+p+q, & j&=p-q.
+\end{aligned}$$
+
+Each single-particle chiral representation has lowest weight $\Delta/2$. A circular mode has $j=0$ and hence $p=q=n$.
+
+Now couple the two particles on the left and on the right separately. Label the resulting chiral primaries by $k,l\geq0$. Their weights and global primary labels are
+
+$$\begin{aligned}
+(h_P,\bar h_P)&=(\Delta+k,\Delta+l),\\
+E_P^{(0)}&=2\Delta+k+l, & \ell&=k-l,\\
+n&=\min(k,l), & |\ell|&=|k-l|.
+\end{aligned}$$
+
+Thus $k,l$ label a two-particle primary, whereas $p,q$ label a single-particle descendant. Identical bosons require $k+l$ even, as follows from exchange parity below. The theory is parity invariant, so the two signs of spin have the same $\gamma_{n\ell}$.
+
+At total left/right levels $(N,N)$, every primary with $k,l\leq N$ contributes a descendant obtained by raising it $N-k$ times on the left and $N-l$ times on the right. That descendant has free energy $2\Delta+2N$ and total spin zero, but inherits the shift $\gamma_{\min(k,l),|k-l|}$. In particular, a spinning primary can contribute to a spin-zero matrix through its descendants. For $(k,l)=(2,0)$, two right raisings produce such a descendant.
+
+### The Circular Matrix Is the Dynamical Input
+
+At these total levels, choose the normalized circular pair states
 
 $$\begin{align}
-|r;N\rangle= \frac{b^\dagger_{r,0}b^\dagger_{N-r,0}|0\rangle}{\sqrt{1+\delta_{2r,N}}}, \qquad 0\leq r\leq\lfloor N/2\rfloor.
+|r;N\rangle= \frac{b^\dagger_{r,0}b^\dagger_{N-r,0}|0\rangle}{\sqrt{1+\delta_{2r,N}}}, \qquad r=0,\ldots,\lfloor N/2\rfloor.
 \end{align}$$
 
-Their common free energy is $2\Delta+2N$. Define the energy-shift compression
-$\mathsf R^{(N)}_{rs}=\kappa^2\langle r;N|H_4|s;N\rangle$.
-Its eigenvalues alone are not the spectrum: the omitted noncircular states matter.
-
-### All Radial Integrals Reduce to Finite Sums
-
-Set $x=(1+r^2)^{-1}$, and use the radial Jacobi polynomials
+Here $r$ is an integer mode index, not the radial coordinate. The subscripts on $b$ still denote $(n,j)$. Compute
 
 $$\begin{align}
-P_i(x)=P_i^{(\Delta-1,0)}(1-2x),\qquad E_i=\Delta+2i.
+\mathsf R^{(N)}_{rs}=\kappa^2\langle r;N|H_4|s;N\rangle.
 \end{align}$$
 
-For two signed scalar legs, define the kinetic polynomial
+The exact circular Hamiltonian and finite radial sums below supply these entries. This is a compression of the full resonant interaction: omitted states include pairs of opposite nonzero single-particle angular momenta. Its eigenvalues alone are not the spectrum.
+
+### Constructing the Chiral Change of Basis
+
+Consider just the left sector, with orthonormal product basis $|p,N-p\rangle$ at total level $N$. Define
 
 $$\begin{align}
-A_{ij}^{\sigma\tau}(x) =4(1-x)\left(\frac\Delta2P_i+xP_i'\right) \left(\frac\Delta2P_j+xP_j'\right) -\sigma\tau E_iE_jxP_iP_j.
+|k;N\rangle_L=\sum_{p=0}^N U^{(N)}_{pk}|p,N-p\rangle.
 \end{align}$$
 
-If $A_{ij}^{\sigma\tau}+m^2P_iP_j=\sum_k c_kx^k$, the integrated mass polynomial is
+The column $k$ is the normalized level-$(N-k)$ descendant of the chiral primary of weight $\Delta+k$. The row $p$ specifies how the level is distributed between the two particles. These are two orthonormal bases of the same chiral tensor-product level, so real phases give $(U^{(N)})^TU^{(N)}=1$.
+
+To compute $U$, first construct the primary at level $k$:
 
 $$\begin{align}
-B_{ij}^{\sigma\tau}(x)=\sum_k\frac{c_kx^k}{\Delta-1+k},\qquad M_{ij}^{\sigma\tau}(x)=\frac{B_{ij}^{\sigma\tau}(1)-x^{\Delta-1}B_{ij}^{\sigma\tau}(x)}{8\pi}.
+|k;k\rangle_L=\sum_{p=0}^k c_p|p,k-p\rangle, \qquad (L_1^{(1)}+L_1^{(2)})|k;k\rangle_L=0.
 \end{align}$$
 
-For any polynomial $P(x)=\sum_k P_kx^k$, its Mellin moment is the finite sum
+The normalized single-particle ladders are
 
 $$\begin{align}
-\mathcal I_a[P]=\int_0^1 dx\,x^{a-1}P(x)=\sum_k\frac{P_k}{a+k}.
+L_1|p\rangle=\sqrt{p(\Delta+p-1)}|p-1\rangle, \qquad L_{-1}|p\rangle=\sqrt{(p+1)(\Delta+p)}|p+1\rangle.
 \end{align}$$
 
-Take four labelled legs $(i,-),(j,-),(k,+),(l,+)$. For each of the six two-element subsets $ab$ of these four legs, let $cd$ be its complement, and use the mode indices and signs of those legs in $A_{ab},B_{cd}$. The normalized circular matrix element is
+Equating the coefficient of each $|p,k-1-p\rangle$ to zero gives
 
 $$\begin{align}
-\boxed{ \kappa^2\langle ij|H_4|kl\rangle =-\frac{\kappa^2}{8\pi\sqrt{(1+\delta_{ij})(1+\delta_{kl})}} \sum_{ab}\left[ B_{cd}(1)\mathcal I_\Delta[A_{ab}] -\mathcal I_{2\Delta-1}[A_{ab}B_{cd}] \right].
+\frac{c_{p+1}}{c_p} =-\sqrt{\frac{(k-p)(\Delta+k-p-1)}{(p+1)(\Delta+p)}}, \qquad 0\leq p<k.
+\end{align}$$
+
+Normalize $\sum_p|c_p|^2=1$ and choose $c_0>0$. Raise this primary to the required level:
+
+$$\begin{align}
+|k;N\rangle_L= \frac{(L_{-1}^{(1)}+L_{-1}^{(2)})^{N-k}} {\sqrt{(N-k)!(2\Delta+2k)_{N-k}}}|k;k\rangle_L.
+\end{align}$$
+
+Here $(a)_s=a(a+1)\cdots(a+s-1)$ and $(a)_0=1$. Reading its product-basis coefficients gives the column $U^{(N)}_{pk}$. This construction uses only the free representation; no energy-shift coefficient enters it. The finite Hahn-polynomial formula below is an equivalent direct evaluation of these same coefficients.
+
+Particle exchange acts as
+
+$$\begin{align}
+U^{(N)}_{N-p,k}=(-1)^kU^{(N)}_{pk}.
+\end{align}$$
+
+For the left/right product, the exchange sign is $(-1)^{k+l}$, which gives the bosonic restriction $k+l$ even.
+
+### Resolving the Circular Matrix into Primary Contributions
+
+Set
+
+$$\begin{align}
+s_r=\sqrt{\frac{2}{1+\delta_{2r,N}}}, \qquad C_{r;kl}=s_rU^{(N)}_{rk}U^{(N)}_{rl}.
+\end{align}$$
+
+The two factors of $U$ come from coupling the left and right sectors. The factor $s_r$ comes from symmetrizing the two particle labels: it is $\sqrt2$ for distinct circular modes and $1$ for coincident modes. Thus $C_{r;kl}$ is the overlap of $|r;N\rangle$ with the normalized descendant of primary $(k,l)$ at total levels $(N,N)$.
+
+The connected resonant Hamiltonian is used after the stated mass and nonresonant dressing conventions, in a form respecting the AdS representation decomposition. Each irreducible global representation appears once in the free two-scalar product. Its descendants inherit one primary shift. Consequently
+
+$$\begin{align}
+\boxed{ \mathsf R^{(N)}_{rs}= \sum_{\substack{0\leq k,l\leq N\\
+k+l\ \mathrm{even}}} C_{r;kl}C_{s;kl}\,\gamma_{\min(k,l),|k-l|}.
 }
 \end{align}$$
 
-Use $i+j=k+l=N$ for $\mathsf R^{(N)}$. The six subsets are retained even when mode indices coincide: they are the Wick/derivative combinatorics of four labelled legs. This formula comes directly from the exact circular $H_4$ and leaves no radial differential equation or integral to solve.
+This is a linear equation for the primary shifts: $\mathsf R$ is the calculated dynamical input and all $C$ are known representation coefficients. Multiplicity one here concerns the free two-scalar product. It does not establish multiplicity one in the full gravity–matter Hilbert space; the physical branch assumptions are discussed below.
 
-### Chiral Decomposition and Invertible Recursion
+### Subtracting Known Descendants and Solving for New Shifts
 
-Let $U^{(N)}_{pk}$ be the real orthogonal matrix that decomposes two chiral scalar representations at total level $N$. The column $k$ is the level-$(N-k)$ descendant of the chiral two-particle primary of weight $\Delta+k$. An explicit finite expression is
-
-$$\begin{aligned}
-Q_k^{(N)}(p)&=\sum_{a=0}^{\min(k,p)} \frac{(-k)_a(k+2\Delta-1)_a(-p)_a}{(\Delta)_a(-N)_a\,a!},\\
-w_p^{(N)}&=\binom Np\frac{(\Delta)_p(\Delta)_{N-p}}{(2\Delta)_N},\\
-\nu_k^{(N)}&=\sum_{p=0}^Nw_p^{(N)}[Q_k^{(N)}(p)]^2,\\
-U^{(N)}_{pk}&=\sqrt{w_p^{(N)}/\nu_k^{(N)}}\,Q_k^{(N)}(p).
-\end{aligned}$$
-
-These are finite Hahn polynomials. Their weighted orthogonality gives $U^TU=1$, and particle exchange gives $U_{N-p,k}=(-1)^kU_{pk}$. Thus identical bosons retain $k+l$ even in the product of the two chiral decompositions. The corresponding global primary has labels $(n,|\ell|)=(\min(k,l),|k-l|)$.
-
-Set $s_r=\sqrt{2/(1+\delta_{2r,N})}$ and $C_{r;kl}=s_rU_{rk}^{(N)}U_{rl}^{(N)}$. The full compression identity is
+At level $N$, any term with $k,l<N$ has already appeared at level $\max(k,l)<N$. Subtract these known terms:
 
 $$\begin{align}
-\mathsf R^{(N)}_{rs} =\sum_{\substack{0\leq k,l\leq N\\
+(\mathsf R_{\mathrm{new}}^{(N)})_{rs} =\mathsf R^{(N)}_{rs} -\sum_{\substack{0\leq k,l<N\\
 k+l\ \mathrm{even}}} C_{r;kl}C_{s;kl}\,\gamma_{\min(k,l),|k-l|}.
 \end{align}$$
 
-At recursion level $N$, all terms with $k,l<N$ were determined at earlier levels. Subtract their contribution and call the remainder $\mathsf R_{\mathrm{new}}^{(N)}$. Only pairs with one index equal to $N$ remain. Define
+Only pairs with one label equal to $N$ remain. Combining the two opposite-spin terms gives
 
 $$\begin{align}
-\mathsf D_N=\operatorname{diag}_{r=0}^{\lfloor N/2\rfloor}(U_{rN}^{(N)}), \qquad (\mathsf O_N)_{rk}=s_rU_{rk}^{(N)}, \quad k=N,N-2,\ldots.
+\mathsf R_{\mathrm{new}}^{(N)} =\sum_{k=N,N-2,\ldots} (2-\delta_{kN})\,C_{;kN}C_{;kN}^{T}\,\gamma_{k,N-k}.
 \end{align}$$
 
-The restricted parity basis obeys $\mathsf O_N^T\mathsf O_N=1$. Also
+The notation $C_{;kN}$ means the column vector with entries $C_{r;kN}$. For $k<N$, $(k,N)$ and $(N,k)$ contribute equally and produce the factor two. For $k=N$ there is one spin-zero primary.
+
+Define
 
 $$\begin{align}
-Q_N^{(N)}(r)=(-1)^r\frac{(\Delta)_N}{(\Delta)_r(\Delta)_{N-r}}
+\mathsf D_N=\operatorname{diag}_{r=0}^{\lfloor N/2\rfloor}(U^{(N)}_{rN}), \qquad (\mathsf O_N)_{rk}=s_rU^{(N)}_{rk},\quad k=N,N-2,\ldots.
 \end{align}$$
 
-never vanishes for $\Delta>1$, so $\mathsf D_N$ is invertible at every finite $N$. Therefore
+Since $C_{;kN}=\mathsf D_N(\mathsf O_N)_{;k}$, the previous equation factors as
+
+$$\begin{align}
+\mathsf R_{\mathrm{new}}^{(N)} =\mathsf D_N\mathsf O_N \operatorname{diag}_{k=N,N-2,\ldots} \left[(2-\delta_{kN})\gamma_{k,N-k}\right] \mathsf O_N^T\mathsf D_N.
+\end{align}$$
+
+Both inversions are justified. For columns of parity $(-1)^N$, the paired rows $r,N-r$ give equal products; the weights $s_r^2$ therefore turn the half-range sum into the full orthogonality sum. Hence $\mathsf O_N^T\mathsf O_N=1$. Also, $U^{(N)}_{rN}$ is a coefficient of the level-$N$ chiral primary. The lowering recursion gives
+
+$$\begin{align}
+U^{(N)}_{rN}\propto (-1)^r\sqrt{\binom Nr\frac{(\Delta+N-r)_r}{(\Delta)_r}},
+\end{align}$$
+
+with one nonzero common normalization. For $\Delta>1$ every displayed factor is finite and positive before the sign, so no diagonal entry of $\mathsf D_N$ vanishes. Thus
 
 $$\begin{align}
 \boxed{ \mathsf O_N^T\mathsf D_N^{-1}\mathsf R_{\mathrm{new}}^{(N)} \mathsf D_N^{-1}\mathsf O_N =\operatorname{diag}_{k=N,N-2,\ldots} \left[(2-\delta_{kN})\gamma_{k,N-k}\right].
 }
 \end{align}$$
 
-This supplies each new primary shift by finite sums and matrix multiplication; there is no eigenvalue search or fitted functional ansatz. The factor of two counts the two opposite-spin primaries when $k<N$. Starting at $N=0$ determines every $(n,\ell)$ with even $|\ell|$ at level $N=n+|\ell|$.
+The diagonal entries determine the new shifts. Every off-diagonal entry must vanish and is an additional consistency check on the circular calculation and the assumed invariant form. The implementation returns a failure if one does not vanish. This is an all-finite-$N$ inversion argument; it is separate from the finite list of explicitly evaluated coefficients.
 
-The reconstruction uses the AdS-invariant connected resonant Hamiltonian after the mass and dressing conventions already stated. Its diagonal form follows from the multiplicity-one global representation decomposition. The algebraic invertibility above is an all-$N$ argument; the explicit evaluations and residual checks reported below stop at $N=8$. Every unused off-diagonal element of the displayed transformed matrix is a consistency check. The implementation returns a failure rather than a spectrum if one of these residuals is nonzero.
+### First Recursion Levels
 
-### Evaluated Spectrum and Executable Calculation
+| Recursion level $N$ | Circular states | Newly determined shifts |
+|---:|---:|---|
+| $0$ | $1$ | $\gamma_{00}$ |
+| $1$ | $1$ | $\gamma_{10}$ |
+| $2$ | $2$ | $\gamma_{20},\gamma_{02}$ |
+| $3$ | $2$ | $\gamma_{30},\gamma_{12}$ |
+| $4$ | $3$ | $\gamma_{40},\gamma_{22},\gamma_{04}$ |
 
-The [radial-block implementation](scripts/gravity_scalar_radial_blocks.wl) evaluates all sums exactly. In Mathematica, after loading that file, run
-
-```wl
-TwoScalarPrimarySpectrum[8, 2]
-```
-
-to obtain all primary energy gaps through $2\Delta+8$ at $\Delta=2$, or use a symbolic parameter instead of `2`. `ReconstructPrimaryShifts[8, del]` returns the 25 coefficients with $n+|\ell|\leq8$ and their residuals. Exact rational or symbolic input is intended. The [saved symbolic coefficients](scripts/gravity_scalar_primary_spectrum_data.wl) contain those 25 results without requiring another calculation.
-
-For the complete primary set with $2n+|\ell|\leq8$, the following table displays $\Delta=2$. Each positive spin has a parity partner with the same energy. Descendants are obtained by adding integer levels to the shifted primary energy, not by diagonalizing the circular compression alone.
-
-| $n$ | $|\ell|$ | Free energy | $\gamma_{n\ell}/G$ at $\Delta=2$ |
-|---:|---:|---:|---:|
-| 0 | 0 | 4 | $-56/5$ |
-| 1 | 0 | 6 | $-1368/35$ |
-| 0 | 2 | 6 | $-552/35$ |
-| 2 | 0 | 8 | $-416/5$ |
-| 1 | 2 | 8 | $-1000/21$ |
-| 0 | 4 | 8 | $-16$ |
-| 3 | 0 | 10 | $-11040/77$ |
-| 2 | 2 | 10 | $-7352/77$ |
-| 1 | 4 | 10 | $-48$ |
-| 0 | 6 | 10 | $-16$ |
-| 4 | 0 | 12 | $-31400/143$ |
-| 3 | 2 | 12 | $-68360/429$ |
-| 2 | 4 | 12 | $-96$ |
-| 1 | 6 | 12 | $-48$ |
-| 0 | 8 | 12 | $-16$ |
-
-The auxiliary circular states used to reconstruct a spin-$\ell$ primary can have higher free energy than that primary. This is a symmetry-based extraction in the full leading-order theory, not a claim that a hard cutoff retaining only circular modes preserves AdS symmetry. Ordinary accidental mixing with other physical sectors, if present, must still be treated with the full projected Hamiltonian.
-
-## General Finite-Mode Spectrum from the Response Kernel
-
-The following is an alternative finite-matrix answer for arbitrary retained scalar modes, useful for checking or extending the primary reconstruction above.
-
-At tree order with four external scalars and no external free graviton, write the full metric response as $g=g^{(0)}+\kappa^2q+\cdots$. The terms of the action at order $\kappa^2$ that can contribute are
+At $N=0$, $\mathsf R^{(0)}=\gamma_{00}$. At $N=1$, $\mathsf R^{(1)}=(\gamma_{00}+\gamma_{10})/2$, reproducing the first spin-zero block. A primary $(n,|\ell|)$ is first recovered at
 
 $$\begin{align}
-\kappa^2\left(I_2[q]+\frac12\int dV\,q_{\mu\nu}T^{\mu\nu}\right).
+N=\max(k,l)=n+|\ell|,
 \end{align}$$
 
-Because $\mathcal E^{(1)}[q]=T/2$ and $\delta I_2[q]=-\int dV\,\mathcal E^{(1)\mu\nu}[q]\delta q_{\mu\nu}$, quadratic homogeneity gives $I_2[q]=-\frac14\int qT$, up to the retained canonical endpoints. Consequently
+not at its own free excitation energy $2n+|\ell|$. The recursion can use higher-energy descendants to extract a lower-energy primary shift.
+
+For a concrete two-dimensional step, take $N=2$ and $\Delta=2$. In the circular basis
 
 $$\begin{align}
-S_{\mathrm{eff},4}=\frac{\kappa^2}{4}\int dV\,qT =\frac{\kappa^2}{8}\int dV_xdV_{x'}\,T(x)G(x,x')T(x').
+|0;2\rangle=b_{0,0}^\dagger b_{2,0}^\dagger|0\rangle, \qquad |1;2\rangle=\frac{(b_{1,0}^\dagger)^2}{\sqrt2}|0\rangle,
 \end{align}$$
 
-This derives the factor of one half relative to inserting $q$ into the matter coupling alone. The Einstein cubic term and the $h^2\phi^2$ matter term start at higher order on this sourced branch. One need not expand every coefficient of the unreduced CPS to obtain this connected four-scalar interaction: circular canonical reduction and the on-shell resonant effective interaction provide the needed $O(G)$ information. This does not discard the one-body loop problem; that is accounted for separately by the physical-mass condition.
-
-Use $q=\mathcal B[\phi,\phi]$ from the [scalar response prescription](Einstein%20scalar%20response%20prescription.md), with its analytic assumptions. The time average below means extraction of the zero-frequency coefficient from a finite harmonic sum. For bounded harmonic responses and matched reflecting boundary conditions, the Einstein Green identity makes the resonant source pairing reciprocal. Pure-gauge additions change it by endpoints; a smooth homogeneous vacuum response $\mathcal L_\zeta g^{(0)}$ also has
+the radial calculation gives
 
 $$\begin{align}
-\int dV\,(\mathcal L_\zeta g^{(0)})_{\mu\nu}T^{\mu\nu} =2\int dV\,\nabla_\mu(\zeta_\nu T^{\mu\nu}),
+\frac{\mathsf R^{(2)}}G=
+\begin{pmatrix}-32&-264\sqrt2/35\\
+-264\sqrt2/35&-1376/35\end{pmatrix}.
 \end{align}$$
 
-whose radial term vanishes for these scalar falloffs and whose bounded time endpoint has zero average. This is the relevant on-shell pairing statement; it does not claim that the finite source-space kernel is a symmetric distribution on arbitrary histories. At a genuine resonance requiring unbounded responses, keep the resonant degrees of freedom in the Hamiltonian block instead of time-averaging a secular term.
-
-Introduce independent commuting symbols $z_I,\bar z_I$ and put
+The already known contributions are precisely $\gamma_{00}C_{;00}C_{;00}^T+\gamma_{10}C_{;11}C_{;11}^T$. After subtracting them, the known matrices are
 
 $$\begin{align}
-\phi_z=\sum_I(z_Iu_I+\bar z_Iu_I^*),\qquad \mathscr V(z,\bar z) =-\frac{\kappa^2}{4}\left\langle \int_\Sigma dr\,d\varphi\,r\, T^{\mu\nu}[\phi_z]\mathcal B_{\mu\nu}[\phi_z,\phi_z] \right\rangle_t.
+\mathsf D_2&=\operatorname{diag}(1/\sqrt5,-\sqrt{3/5}),\\
+\mathsf O_2&=\begin{pmatrix}\sqrt{2/5}&\sqrt{3/5}\\
+-\sqrt{3/5}&\sqrt{2/5}\end{pmatrix},
+\qquad (k=2,0).
 \end{align}$$
 
-This is the connected resonant quartic Hamiltonian symbol in canonical normal form. The sign follows from the first perturbative Legendre transform: terms from correcting the free velocities cancel, leaving minus the effective interaction Lagrangian evaluated on free canonical modes. Canonical endpoint changes do not alter the resonant eigenvalues.
-
-For normalized unordered pair states $|IJ\rangle=b_I^\dagger b_J^\dagger|0\rangle/\sqrt{1+\delta_{IJ}}$, the finite matrix is explicitly
+They give
 
 $$\begin{align}
-\boxed{ V_{IJ,KL} =\left. \frac{\partial_{\bar z_I}\partial_{\bar z_J}\partial_{z_K}\partial_{z_L}\mathscr V} {\sqrt{(1+\delta_{IJ})(1+\delta_{KL})}} \right|_{z=\bar z=0}.
-}
+\frac1G\mathsf O_2^T\mathsf D_2^{-1}\mathsf R_{\mathrm{new}}^{(2)} \mathsf D_2^{-1}\mathsf O_2 =\operatorname{diag}\left(-\frac{416}{5},-\frac{1104}{35}\right) =\frac1G\operatorname{diag}(\gamma_{20},2\gamma_{02}).
 \end{align}$$
 
-Restrict to $E_I+E_J=E_K+E_L=E_0$ and $j_I+j_J=j_K+j_L=J$. The leading energy gaps are
+Therefore $\gamma_{20}/G=-416/5$ and $\gamma_{02}/G=-552/35$. These are evaluations of the connected coefficients; the use of a special numerical mass does not remove possible extra matter-primary collisions in a larger physical sector.
+
+---
+
+## Results and Mass Convention
+
+The final result is
 
 $$\begin{align}
-\boxed{E^{(2)}_{E_0,J,\alpha}=E_0+\lambda_\alpha(V_{E_0,J})+O(G^2).}
+E^{(2),\text{primary}}_{n,\ell} & =2\Delta+2n+|\ell|+\gamma _{n|\ell|}+\mathcal{O}(G^{2})
 \end{align}$$
 
-The matrix includes the same-sign and both crossed source pairings automatically. There is no additional mass-renormalization contribution to subtract after expressing $E_0$ in terms of $\Delta_{\mathrm R}$. This is an explicit quadrature-and-eigenvalue prescription using the previously constructed responses, not a numerical evaluation of all those quadratures.
+where
 
-Choose independent input modes with $E_I<E_{\mathrm{cut}}$ and retain complete degenerate blocks for spectral interpretation. Do not truncate the frequencies or radial tails produced by their products. A cutoff on free input modes and a cutoff on total Fock energy are different operations. If other particle sectors are degenerate and coupled, the projected block must contain them as well.
+$$\begin{align}
+\gamma _{n\ell} & =\begin{cases}
+-4G(\Delta ^{2}+2n(2\Delta+n-1)) \dfrac{2\Delta+2n-2}{2\Delta+2n-1}-G\dfrac{2((\Delta+n)(\Delta+n-1)+\Delta(\Delta-2))^{2}}{(2\Delta+2n-3)(2\Delta+2n-1)(2\Delta+2n+1)}, & \ell=0 \\
+-4G(\Delta ^{2}+2n(2\Delta+n-1))+\dfrac{(n+1)(n+2)(2\Delta+n-1)(2\Delta+n)}{(2\Delta+2n-1)(2\Delta+2n+1)(2\Delta+2n+3)}, & \ell=2 \\
+-4G(\Delta ^{2}+2n(2\Delta+n-1)), & \ell\geqslant 4
+\end{cases}
+\end{align}$$
 
-In the unreduced description, the same matrix combines direct $O(\kappa^2)$ terms with the second-order $O(\kappa)$ interaction. Once exchange has been incorporated into $\mathscr V$, adding the old-fashioned intermediate-state exchange sum again would double count it. A classical retarded response alone is not a prescription for quantum self-energy loops.
+and all the descendants share the same correction with their primaries
 
-## Boundary Gravitons and Descendants
-
-Physical boundary gravitons remain in the theory. Their vacuum-module energy gaps are the integer Virasoro levels; a change of the physical central charge changes norms and the vacuum reference, not those level spacings. For a scalar or two-scalar primary of energy $E_P$, a non-null descendant has energy $E_P+N_L+N_R$. Thus scalar–boundary-graviton and pure-boundary-graviton states should be organized into the corresponding modules when interpreting a truncated Fock calculation.
-
-For example, above the lowest pair, $L_{-2}|P_{00}\rangle$ and $L_{-1}^2|P_{00}\rangle$ are two independent states with $J=2$ and energy $2\Delta+2+\gamma_{00}+O(G^2)$. The first includes the physical boundary-graviton excitation. The new $\ell=2$ primary instead has energy $2\Delta+2+\gamma_{02}+O(G^2)$. Thus, when this boundary-graviton sector is included, the first positive-spin block contains two levels with shift $\gamma_{00}$ and one with shift $\gamma_{02}$; the negative-spin block is its parity image. The level-two Gram matrix is nonsingular for the generic large-$c$, positive-weight representations used here. Keeping the boundary graviton changes the multiplicity, while descendant energy spacings remain fixed by the Virasoro algebra.
-
-At zero coupling, the global two-scalar primaries have energies $2\Delta+2n+|\ell|$, with even $\ell$ for identical real bosons. Their interacting primary energies take the form $2\Delta+2n+|\ell|+\gamma_{n\ell}$. The algebraic recursion above gives these leading coefficients and the computed table covers the stated finite range. A source-dependent homogeneous redefinition is a choice of perturbative coordinates; it does not remove the physical modules.
-
-## Verification and Remaining Scope
-
-- **Verified:** xAct/xTras/xCoba give zero residuals for the exact circular $tt,tr,rr$ Einstein constraints. The exact integrating-factor solution and its variation yield the reduced Hamiltonian and scalar Hamilton equations.
-- **Verified:** Mathematica evaluates $C_{00}$ from the canonical mass constraint and independently from $-\frac14\langle qT\rangle$, and checks the scalar resonant frequency against it. The KG normalization, two-boson factor, channel split, sign-change root, radial product-state integral and free global raising/lowering relations also pass. See [the verification script](scripts/gravity_scalar_spectrum_checks.wl), with cases `constraints`, `ground`, `resonance`, and `mixing`. These contain 25 labelled scalar checks when the three Einstein components are counted separately.
-- **Verified:** [the radial-block checks](scripts/gravity_scalar_radial_block_checks.wl) evaluate 25 primary coefficients at symbolic $\Delta$ through $N=8$. All 755 scalar residual entries vanish, including orthogonality, exchange parity, Hermiticity, off-diagonal reconstruction residuals, the earlier low-level coefficients and every computed $|\ell|\geq4$ comparison with the universal result. This is finite symbolic evidence, not an infinite-level numerical test.
-- **Verified:** an independent [Sage representation check](scripts/gravity_scalar_representation_checks.sage) uses exact rational arithmetic at $\Delta=3/2,2,7/3$ and $N=0,\ldots,8$, checking positive orthogonal norms, exchange parity, the two-particle Casimir and reconstruction invertibility. The general inversion argument is given in the text. A direct symbolic-radical implementation exceeded the Mathematica connector's time limit; a local run was stopped after the equivalent rational Hahn implementation eliminated that bottleneck.
-- **Assumptions:** symmetry-preserving on-shell mass renormalization; the minimal Einstein–real-scalar action with no independent $O(G)$ scalar contact interaction; regular centre and the fixed reflecting boundary conditions; the generic analytic domain of the response construction. The first mixed block uses AdS symmetry to infer its noncircular entries.
-- **Not computed:** a regulator-specific bare one-particle self-energy or explicit coefficient tables beyond $n+|\ell|=8$. The algorithm applies at any finite level under the stated symmetry assumptions, and the high-spin formula has independent analytic support. The single-particle spectrum is given in a physical-mass scheme, not as a prediction of the bare-to-renormalized mass relation. Higher-loop corrections, exceptional-parameter limits and infinite-mode convergence are not included. General noncircular response integrals have been bypassed by representation reconstruction rather than independently evaluated.
-
-The interpretation of connected two-particle shifts as binding energies follows the canonical approach of [Fitzpatrick–Shih](https://arxiv.org/abs/1104.5013). For a related explicit separation of one-body and tree binding contributions see [Andriolo–Michel–Palti](https://arxiv.org/abs/2211.04477), which studies AdS4/AdS5 and a charged scalar. Neither reference is used as a source for the AdS3 real-scalar coefficients derived here.
+$$\begin{align}
+E^{(2)}_{n,\ell;r_{L},r_{R}} & =2\Delta+2n+|\ell|+r_{L}+r_{R}+\gamma _{n|\ell|}+\mathcal{O}(G^{2})
+\end{align}$$

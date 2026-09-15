@@ -1,13 +1,11 @@
-# de Donder Gauge Accessibility
+# De Donder Gauge Accessibility
 
 ## Scope of the On-Shell Claim
 
 For the gravity–scalar calculation, the required statement is accessibility **on the perturbative solution space**, rather than on every off-shell metric perturbation. The relevant on-shell conditions are
 
 $$\begin{align}
-(\Box_0-m^2)\phi^{(0)}&=0,&
-\mathcal E^{(1)}[q]&=\frac12T_{(0)}[\phi^{(0)}],&
-q_{\mu\nu}&=(k_\phi)_{\mu\nu}.
+(\Box_0-m^2)\phi^{(0)}&=0,& \mathcal E^{(1)}[q]&=\frac12T_{(0)}[\phi^{(0)}],& q_{\mu\nu}&=(k_\phi)_{\mu\nu}.
 \end{align}$$
 
 Here the AdS radius is one, $R^{(0)}_{\mu\nu}=-2g^{(0)}_{\mu\nu}$, and the center is smooth. Keep the fixed boundary cylinder, standard source-free scalar condition, and Brown–Henneaux falloffs of [gravitation scalar interaction](gravitation%20scalar%20interaction.md). All allowed metric representatives and proper gauge transformations must have asymptotic expansions without logarithmic terms; noninteger powers are allowed.
@@ -23,18 +21,14 @@ Proper gauge vectors obey $\xi^r=O(r^{-1})$ and $\xi^t,\xi^\varphi=O(r^{-4})$, w
 Define the linear gauge functional and gauge transformation by
 
 $$\begin{align}
-C_\nu[q]&=\nabla^\mu q_{\mu\nu}-\frac12\nabla_\nu q,&
-q&=g^{\mu\nu}q_{\mu\nu},\\
-q'_{\mu\nu}&=q_{\mu\nu}+2\nabla_{(\mu}\xi_{\nu)},&
-C_\nu[q']&=C_\nu[q]+\Box\xi_\nu+R_\nu{}^\rho\xi_\rho.
+C_\nu[q]&=\nabla^\mu q_{\mu\nu}-\frac12\nabla_\nu q,& q&=g^{\mu\nu}q_{\mu\nu},\\
+q'_{\mu\nu}&=q_{\mu\nu}+2\nabla_{(\mu}\xi_{\nu)},& C_\nu[q']&=C_\nu[q]+\Box\xi_\nu+R_\nu{}^\rho\xi_\rho.
 \end{align}$$
 
 This identity holds on a general smooth background and does not use a field equation for $q$. The operator $Q_\nu{}^\rho=\Box\delta_\nu{}^\rho+R_\nu{}^\rho$ is normally hyperbolic. On a globally hyperbolic region without a timelike boundary, solve
 
 $$\begin{align}
-Q\xi&=-C[q],&
-\xi|_{\Sigma}&=0,&
-\nabla_n\xi|_{\Sigma}&=0.
+Q\xi&=-C[q],& \xi|_{\Sigma}&=0,& \nabla_n\xi|_{\Sigma}&=0.
 \end{align}$$
 
 The Cauchy theorem gives a unique smooth solution and hence $C[q']=0$. For compactly supported source and initial data this follows from [Bär–Ginoux–Pfäffle, Theorem 3.2.11, printed p. 85](https://arxiv.org/pdf/0806.1036#page=91). Arbitrary smooth data are handled locally by cutoffs on compact causal domains; uniqueness makes the local solutions agree on overlaps. In particular every smooth $q$ is locally accessible.
@@ -46,8 +40,7 @@ This proof does not impose a final-time condition on $\xi$, and it does not esta
 Let $F(t)$ be a smooth function with $F'\not\equiv0$, and let $\chi(r)$ vanish near the center and equal one for sufficiently large $r$. Set
 
 $$\begin{align}
-q_{t\varphi}&=F(t)\chi(r),&
-q_{\mu\nu}&=0\quad\text{for the other independent components}.
+q_{t\varphi}&=F(t)\chi(r),& q_{\mu\nu}&=0\quad\text{for the other independent components}.
 \end{align}$$
 
 This configuration is smooth, has no logarithmic terms, and satisfies Brown–Henneaux falloffs. Its only nonzero gauge functional is
@@ -59,10 +52,7 @@ C_\varphi[q]&=-\frac{F'(t)\chi(r)}{1+r^2}.
 Average any proposed gauge vector over $\varphi$. Its axial covector component $a(t,r)=\langle\xi_\varphi\rangle$ must satisfy, for large $r$,
 
 $$\begin{align}
-(1+r^2)\partial_r^2a+
-\left(r-\frac1r\right)\partial_ra
--\frac{\partial_t^2a}{1+r^2}-4a
-&=\frac{F'(t)}{1+r^2}.
+(1+r^2)\partial_r^2a+ \left(r-\frac1r\right)\partial_ra -\frac{\partial_t^2a}{1+r^2}-4a &=\frac{F'(t)}{1+r^2}.
 \end{align}$$
 
 For an allowed proper vector, $a=O(r^{-2})$. In a logarithm-free asymptotic expansion its possible leading term $a_2(t)r^{-2}$ has zero $r^{-2}$ coefficient under the operator on the left: the radial indicial coefficient is $s^2-4$ on $r^{-s}$. All faster powers contribute at faster orders, and the time derivative is suppressed by two radial powers. The right side has nonzero coefficient $F'(t)$ at $r^{-2}$. This contradiction proves failure within the stated asymptotic class. No logarithmic gauge transformation is admitted or used as a solution.
@@ -86,11 +76,8 @@ Finite superpositions of the free scalar modes have the required scalar expansio
 Write $f=1+r^2$. In a sufficiently large-$r$ collar define a contravariant vector $\eta$ by
 
 $$\begin{align}
-\eta^r(r,x)&=\frac{\sqrt{f(r)}}2
-\int_r^\infty ds\,\sqrt{f(s)}\,q_{rr}(s,x),\\
-\eta^a(r,x)&=\int_r^\infty ds\,g^{(0)ab}(s)
-\left[q_{sb}(s,x)+\frac1{f(s)}\partial_b\eta^r(s,x)\right],
-\qquad a,b=t,\varphi .
+\eta^r(r,x)&=\frac{\sqrt{f(r)}}2 \int_r^\infty ds\,\sqrt{f(s)}\,q_{rr}(s,x),\\
+\eta^a(r,x)&=\int_r^\infty ds\,g^{(0)ab}(s) \left[q_{sb}(s,x)+\frac1{f(s)}\partial_b\eta^r(s,x)\right], \qquad a,b=t,\varphi .
 \end{align}$$
 
 Then $(q+\mathcal L_\eta g^{(0)})_{rr}=(q+\mathcal L_\eta g^{(0)})_{ra}=0$ in the collar. The integrals give $\eta^r=O(r^{-1})$, $\eta^a=O(r^{-4})$ without logarithms. Extend $\eta$ smoothly with a cutoff that vanishes near the center. This does not require a radial coordinate gauge covering the center.
@@ -102,9 +89,7 @@ Call the resulting tensor $q_{\mathrm c}$. Gauge invariance of the linear Einste
 In this collar,
 
 $$\begin{align}
-(q_{\mathrm c})_{ab}&=b_{ab}(t,\varphi)
-+\sum_{n\ge1}r^{-2n}b^{[n]}_{ab}
-+\sum_{n\ge0}r^{2-2\Delta-2n}d^{[n]}_{ab}.
+(q_{\mathrm c})_{ab}&=b_{ab}(t,\varphi) +\sum_{n\ge1}r^{-2n}b^{[n]}_{ab} +\sum_{n\ge0}r^{2-2\Delta-2n}d^{[n]}_{ab}.
 \end{align}$$
 
 Coincident powers are combined. This is the radial Einstein expansion for a standard scalar source: its vacuum powers are even, and the matter powers are shifted by $2\Delta-2$. Its radial recursion has no matter resonance at the vacuum leading powers for $\Delta>1$.
@@ -112,25 +97,20 @@ Coincident powers are combined. This is the radial Einstein expansion for a stan
 The source has $T_{rr}=O(r^{-2\Delta-2})$ and $T_{ra}=O(r^{-2\Delta-1})$. The leading radial Einstein equations therefore imply
 
 $$\begin{align}
-b_{tt}&=b_{\varphi\varphi},&
-\partial_t b_{\varphi\varphi}&=\partial_\varphi b_{t\varphi},&
-\partial_t b_{t\varphi}&=\partial_\varphi b_{tt}.
+b_{tt}&=b_{\varphi\varphi},& \partial_t b_{\varphi\varphi}&=\partial_\varphi b_{t\varphi},& \partial_t b_{t\varphi}&=\partial_\varphi b_{tt}.
 \end{align}$$
 
 Thus the boundary tensor is traceless and conserved on the fixed flat cylinder. Explicitly, the coefficients of $r^{-2}$ in $C_t,C_\varphi$ are
 
 $$\begin{align}
-[C_t]_{r^{-2}}&=\partial_\varphi b_{t\varphi}
--\frac12\partial_t(b_{tt}+b_{\varphi\varphi}),\\
-[C_\varphi]_{r^{-2}}&=\frac12\partial_\varphi(b_{tt}+b_{\varphi\varphi})
--\partial_t b_{t\varphi},
+[C_t]_{r^{-2}}&=\partial_\varphi b_{t\varphi} -\frac12\partial_t(b_{tt}+b_{\varphi\varphi}),\\
+[C_\varphi]_{r^{-2}}&=\frac12\partial_\varphi(b_{tt}+b_{\varphi\varphi}) -\partial_t b_{t\varphi},
 \end{align}$$
 
 and both vanish. Also $[C_r]_{r^{-3}}=0$ in this radial collar. Consequently the remaining source for the gauge equation has exponents
 
 $$\begin{align}
--C_a[q_{\mathrm c}]&\sim\sum_{s\in\mathcal S}F_{a,s}r^{-s},&
--C_r[q_{\mathrm c}]&\sim\sum_{s\in\mathcal S}F_{r,s}r^{-s-1},\\
+-C_a[q_{\mathrm c}]&\sim\sum_{s\in\mathcal S}F_{a,s}r^{-s},& -C_r[q_{\mathrm c}]&\sim\sum_{s\in\mathcal S}F_{r,s}r^{-s-1},\\
 \mathcal S&=\{4+2n:n\ge0\}\cup\{2\Delta+2n:n\ge0\}.
 \end{align}$$
 
@@ -160,8 +140,7 @@ to vanish faster than every power of $r^{-1}$, including differentiated remainde
 For a one-form $A$, let
 
 $$\begin{align}
-(\mathcal P A)_\nu
-&=\nabla^\mu(\nabla_\mu A_\nu-\nabla_\nu A_\mu)-4A_\nu .
+(\mathcal P A)_\nu &=\nabla^\mu(\nabla_\mu A_\nu-\nabla_\nu A_\mu)-4A_\nu .
 \end{align}$$
 
 This is the Proca operator with positive squared mass $4$. The exact identities
@@ -175,8 +154,7 @@ Q\nabla u&=\nabla(\Box_0-4)u
 give the following right inverse on smooth rapidly decaying forcing:
 
 $$\begin{align}
-G_QF&=G_{\mathcal P}F+\frac14\nabla G_4(\nabla\cdot F),&
-QG_QF&=F.
+G_QF&=G_{\mathcal P}F+\frac14\nabla G_4(\nabla\cdot F),& QG_QF&=F.
 \end{align}$$
 
 Here $G_4$ and $G_{\mathcal P}$ use the same causal initial prescription and the normalizable reflecting boundary realization. A smooth extension of $F$ to an earlier time, vanishing before that time, supplies compatible initial data. Only its agreement with $F$ on the interval of interest is required.
@@ -184,10 +162,7 @@ Here $G_4$ and $G_{\mathcal P}$ use the same causal initial prescription and the
 For completeness, this realization is fixed by the positive energy form. On the spatial hyperbolic disk, with lapse $N=\sqrt f$, spatial metric $\gamma$, and electric momentum $e^i$, the source-free Proca energy after eliminating $A_t$ is
 
 $$\begin{align}
-H_{\mathcal P}
-=\frac12\int_\Sigma N\sqrt\gamma\,
-\left[e_i e^i+\frac12F_{ij}F^{ij}
-+4A_iA^i+\frac14(D_i e^i)^2\right].
+H_{\mathcal P} =\frac12\int_\Sigma N\sqrt\gamma\, \left[e_i e^i+\frac12F_{ij}F^{ij} +4A_iA^i+\frac14(D_i e^i)^2\right].
 \end{align}$$
 
 Start from smooth compactly supported spatial data and take the positive Friedrichs realization. In canonical variables its quadratic form has positive kinetic and potential operators $B,C$; the transformation $a=B^{-1/2}A$ puts the evolution in the form $\ddot a+\mathsf A a=\text{source}$, with $\mathsf A$ the positive realization of $B^{1/2}CB^{1/2}$. Spectral calculus and Duhamel's formula give finite-time energy solutions. Smooth compatible data give smooth solutions; the center condition is imposed in regular Cartesian coordinates. The scalar operator with squared mass $4$ is treated in the same way. This uses the positive-extension construction for static backgrounds, rather than treating AdS as globally hyperbolic without a boundary; see [Ishibashi–Wald's framework](https://arxiv.org/abs/gr-qc/0305012).
@@ -197,14 +172,12 @@ For rapidly decaying forcing the admitted homogeneous boundary branches are the 
 Finally set
 
 $$\begin{align}
-\xi&=\eta+\xi_{\mathrm{as}}+G_QF,&
-q_{\mathrm{dD}}&=q+\mathcal L_\xi g^{(0)}.
+\xi&=\eta+\xi_{\mathrm{as}}+G_QF,& q_{\mathrm{dD}}&=q+\mathcal L_\xi g^{(0)}.
 \end{align}$$
 
 Linearity and the defining equations give $C[q_{\mathrm{dD}}]=0$ exactly. Each vector is smooth at the center and proper at infinity, so the construction preserves the boundary charges. Different choices of lift or initial data differ by a proper residual solution $Q\xi_{\mathrm{res}}=0$. This proves the proposition within the stated expansion and reflecting-domain assumptions.
 
 For a general conserved source, the same argument applies when its collar expansion induces an exponent set $\mathcal S\subset(2,\infty)$, closed under adding $2$, that avoids $1+\sqrt5$. Conservation alone is not a replacement for these boundary hypotheses.
-
 
 ## Deferred Check of the Resonant Limit
 
@@ -213,25 +186,21 @@ This section records a limit to check after the generic-$\Delta$ construction. I
 For a sourced solution in de Donder gauge, the equations and their trace are
 
 $$\begin{align}
--\frac12(\Box_0+2)q_{\mu\nu}
-+\frac14g^{(0)}_{\mu\nu}\Box_0q&=\frac12T_{(0)\mu\nu},\\
+-\frac12(\Box_0+2)q_{\mu\nu} +\frac14g^{(0)}_{\mu\nu}\Box_0q&=\frac12T_{(0)\mu\nu},\\
 (\Box_0-4)q&=2T_{(0)}.
 \end{align}$$
 
 If $\phi^{(0)}=r^{-\Delta}\beta(t,\varphi)+\cdots$ is a real free scalar with $m^2=\Delta(\Delta-2)$, its stress trace has leading coefficient
 
 $$\begin{align}
-T_{(0)}
-&=-\frac12(\nabla\phi^{(0)})^2-\frac32m^2(\phi^{(0)})^2\\
+T_{(0)} &=-\frac12(\nabla\phi^{(0)})^2-\frac32m^2(\phi^{(0)})^2\\
 &=-\Delta(2\Delta-3)\beta^2r^{-2\Delta}+\cdots.
 \end{align}$$
 
 The trace operator has radial indicial coefficient $s(s-2)-4$ on $r^{-s}$. At
 
 $$\begin{align}
-\Delta_*&=\frac{1+\sqrt5}{2},&
-m_*^2&=\frac{1-\sqrt5}{2},&
-2\Delta_*&=1+\sqrt5,
+\Delta_*&=\frac{1+\sqrt5}{2},& m_*^2&=\frac{1-\sqrt5}{2},& 2\Delta_*&=1+\sqrt5,
 \end{align}$$
 
 the source exponent is a root, while its coefficient $-\Delta_*(2\Delta_*-3)=(\sqrt5-3)/2$ is nonzero. A logarithm-free trace cannot match this source when $\beta\not\equiv0$. Slower terms allowed by Brown–Henneaux cannot repair the mismatch: their nonzero indicial coefficients force their coefficients to vanish before the source order is reached.
