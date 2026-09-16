@@ -10,6 +10,7 @@ python -m pip install sympy==1.14.0
 python verify_classical.py
 python verify_hill.py
 python verify_gauge.py
+python verify_moser.py
 python verify_quantum.py --level 10 --u 0
 python verify_quantum.py --level 10 --u 1
 python audit_quantum.py
@@ -22,6 +23,7 @@ The quantum script writes exact rational coefficient tables, coefficientwise exp
 - 180 exact rational Hamiltonian-identity checks through kappa^3, including p=-1,0,1. All intermediate Witt modes are retained. X_0 is exactly linear to the checked order.
 - 16 Hill/Schur checks through epsilon^4 for a two-harmonic finite diffeomorphism, plus the single-high-pair quartic coefficient.
 - Covector gauge identity, radial/tangential indicial coefficients, and the full axial equation by independent component calculation.
+- Four noncommutative time-ordering identities, four radial coordinate checks, and five radial volume coefficients through kappa^4.
 - 1020 comparisons with the previous c^-1 and c^-2 normal-symbol kernels; all match.
 - 154 exact PBW commutator tests on input levels through 8, retaining intermediate grades.
 - Exact normal coefficients: H_0 has 299 nonzero terms through input level 10; H_1 has 196 through input level 10; the adjoint H_-1 table has 196 through output level 10 (input level at most 9).
