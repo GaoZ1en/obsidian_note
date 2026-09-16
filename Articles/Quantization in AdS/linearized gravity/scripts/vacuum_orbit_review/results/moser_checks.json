@@ -1,0 +1,7 @@
+{
+  "noncommuting_time_ordered_coefficient_identities": 4,
+  "radial_coordinate_consistency_checks": 4,
+  "radial_volume_identity_coefficients_through_kappa4": 5,
+  "formal_order": 4,
+  "convergence_claim": false
+}
