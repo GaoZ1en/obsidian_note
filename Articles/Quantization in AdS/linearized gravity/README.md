@@ -33,7 +33,9 @@ This directory contains the AdS$_3$ linearized-gravity notes, the nonlinear Brow
 
 | File | Description |
 |---|---|
-| `higher perturbations of linearized gravity modes.md` | Active metric/CPS derivation: nonlinear continuation, exact orbit pullback, higher charges, $\Omega_2$, equivariant Darboux map, exactly free reduced $H_0$, Wick-reference quantization, and the finite moment-map ambiguity. |
+| `higher perturbations of linearized gravity modes.md` | Formal vacuum-orbit continuation, exact CPS and charge formulas, low-mode Hill reconstruction, and fixed-central-charge quantum reconstruction, with the remaining CPS/Wick moment-map question stated separately. |
+| `Moser coordinate map through fourth order.md` | Time-ordered radial Moser map through fourth order, with noncommutative and radial consistency checks. |
+| `scripts/vacuum_orbit_review/README.md` | Reproduction commands and scope of the classical, Hill, gauge, Moser, and finite-level quantum checks. |
 | `scripts/finite_diffeomorphism_green_kernel.wl` | Exact Green kernel for the exceptional orbit at finite circle diffeomorphism. |
 | `scripts/hill_monodromy_low_mode_reconstruction.wl` | Implicit reconstruction of $H_{-1,0,1}$ from exceptional-orbit Hill monodromy. |
 | `scripts/higher_charge_coordinate_domain_scan.wl` | Numerical transversality and coordinate-domain diagnostics for the higher-charge chart. |
@@ -71,6 +73,7 @@ This directory contains the AdS$_3$ linearized-gravity notes, the nonlinear Brow
 | Path | Contents |
 |---|---|
 | `archived/backup.md` | Legacy higher-charge and quantization snapshot; historical $C+13$ statements are explicitly scoped to the CJ/reference representative. |
+| `archived/higher perturbations before 2026-09-16.md` | Byte-for-byte main-note snapshot before the vacuum-orbit review. |
 | `archived/one-loop-central-charge-audits/` | Five long CPS, measure, canonical-Wick, and scheme-dependence audit reports. |
 | `archived/verification-scripts/` | Conditional Virasoro/normal-symbol/determinant programs and the Python/Sage checks used by the one-loop audits. |
 

@@ -1,774 +1,347 @@
-The unperturbed normal modes in [[Articles/Quantization in AdS/linearized gravity/solving modes|solving modes]] can be written, after the canonical rescaling used below, as
+# Nonlinear vacuum modes and the CPS moment map
 
-$$\begin{align}
-h^{[0]}_{\mu \nu} & =\mathcal{L}_{\zeta}g^{(0)}_{\mu \nu}
-\end{align}$$
+Review base: `4fb3d286505cec4503e6901d133f5402d434b345` (2026-09-16, 01:32 Beijing time).
+The pre-review version is retained, byte for byte, in `archived/higher perturbations before 2026-09-16.md` in this review branch. This replacement distinguishes an exact formula, a formal chart, an analytic local inverse, and a representation-theoretic quantization.
 
-with
+## Scope and the precise question
 
-$$\begin{align}
-\zeta[a] & =\sum _{A=L,R}\sum ^{\infty}_{n=0}(a_{A,n}\zeta _{A,n}+a^{\dagger}_{A,n}\zeta ^{*}_{A,n})
-\end{align}$$
+Work with pure Einstein gravity on the smooth global-AdS3 solid cylinder, unit AdS radius, Brown--Henneaux boundary conditions, a fixed boundary clock, and the global-AdS vacuum subtraction. Quotient only proper diffeomorphisms. Do not include BTZ, conical defects, changed holonomy, other topologies, matter, or logarithmic sectors in the vacuum phase space discussed here.
 
-with
+The constructive question is:
 
-$$\begin{align}
-\zeta _{L,n} & =\sqrt{ \dfrac{6}{n!(n+3)!} }\mathcal{L}_{\xi _{-1}}^{n}\zeta _{L,0} \qquad\zeta _{R,n} =\sqrt{ \dfrac{6}{n!(n+3)!} }\mathcal{L}_{\bar{\xi}_{-1}}^{n}\zeta _{R,0} \\
-\zeta _{L,0} & =\left( i \dfrac{e^{-2i(t-\phi)}}{4\sqrt{ 3\pi }} \dfrac{r^{4}}{(1+r^{2})^{2}},-\dfrac{e^{-2i(t-\phi)}}{4\sqrt{ 3\pi }} \dfrac{r(3+2r^{2})}{1+r^{2}}, -i \dfrac{e^{-2i(t-\phi)}}{4\sqrt{ 3\pi }} \dfrac{3+r^{2}}{1+r^{2}}\right) \\
-\zeta _{R,0} & =\left(i \dfrac{e^{-2i(t+\phi)}}{4\sqrt{ 3\pi }} \dfrac{r^{4}}{(1+r^{2})^{2}},-\dfrac{e^{-2i(t+\phi)}}{4\sqrt{ 3\pi }} \dfrac{r(3+2r^{2})}{1+r^{2}},i \dfrac{e^{-2i(t+\phi)}}{4\sqrt{ 3\pi }} \dfrac{3+r^{2}}{1+r^{2}}\right)
-\end{align}$$
+> Can the normalized linearized boundary-graviton modes be promoted to a formally complete canonical chart on the smooth global-AdS3 vacuum phase space, with an explicit all-order Brown--Henneaux moment map, and can that specific CPS construction be quantized to an intertwining quantum moment map on the Virasoro vacuum module?
 
-here we choose $\displaystyle{\kappa ^{2}=16\pi G}$. A general solution around the vacuum $\displaystyle{g^{(0)}}$ can be written as
+The existence of finite diffeomorphism solutions alone does not answer this question. Nor does postulating a Virasoro module prove that a particular Wick prescription for the original nonlinear CPS charges gives that module.
 
-$$\begin{align}
-g[a] & =e^{\kappa \mathcal{L}_{\zeta[a]}}g^{(0)}
-\end{align}$$
+## Conventions and formal completeness
 
-here we choose $\displaystyle{\kappa ^{2}=16\pi G}$. Here $\displaystyle{a}$ may get $\displaystyle{\kappa}$ corrections.
+Use one chirality below; the other is an independent copy. Set
 
-## A Simple Argument
+$$
+\kappa^2=16\pi G,\qquad c_{\rm cl}=\frac{24\pi}{\kappa^2},\qquad
+[\xi_m,\xi_n]=-i(m-n)\xi_{m+n},\qquad D_m=2\pi m(m^2-1).
+$$
 
-For the bulk action and its Einstein equation, write
+The Witt relation is a relation modulo proper vectors. With descendant label $N=n+2\ge2$, retain the normalized modes of [[Articles/Quantization in AdS/linearized gravity/solving modes|solving modes]]:
 
-$$\begin{align}
-S_{\mathrm{bulk}} & =\dfrac{1}{\kappa^2}\int_M\mathrm{d}^3x\sqrt{-g}(R+2), & \kappa^2&=16\pi G,\\
-\mathcal E_{\mu\nu}[g] & :=R_{\mu\nu}[g]-\dfrac12g_{\mu\nu}R[g]-g_{\mu\nu}=0.
-\end{align}$$
+$$
+\zeta=\sum_{N\ge2}(q_Na_N\xi_{-N}+q_N^*a_N^*\xi_N)
+=\sum_{|k|\ge2}z_k\xi_k,\qquad
+q_N=-\frac{(-i)^{N-1}}{\sqrt{D_N}}.
+$$
 
-Diffeomorphism covariance gives
+Classically $a_N^*$ is complex conjugation, not yet an operator adjoint. Thus $z_{-N}=q_Na_N$, $z_N=q_N^*a_N^*$. Let $P_>$ remove the final $-1,0,1$ components. Never insert this projection inside a nested Witt bracket unless it is explicitly displayed.
 
-$$\begin{align}
-\mathcal E[e^{\kappa\mathcal L_\zeta}g^{(0)}]
-&=e^{\kappa\mathcal L_\zeta}\mathcal E[g^{(0)}]=0.
-\end{align}$$
+The selected representative and its complete fixed-coordinate expansion are
 
-thus the exponential supplies a nonlinear solution for every allowed generator $\displaystyle{\zeta[a]}$. to see how it includes the homogeneous data arising at successive perturbative orders. first consider
+$$
+g[a]=e^{\kappa\mathcal L_{\zeta[a]}}g^{(0)},\qquad
+g=g^{(0)}+\kappa\sum_{r\ge0}\kappa^rh^{[r]},\qquad
+h^{[r]}=\frac{\mathcal L_\zeta^{r+1}g^{(0)}}{(r+1)!}.
+$$
 
-$$\begin{align}
-g & =g^{(0)}+\kappa \mathcal{L}_{\zeta[a^{(0)}]}g^{(0)}+\kappa ^{2}u_{1}+\mathcal{O}(\kappa ^{3})
-\end{align}$$
+Diffeomorphism covariance proves the exact field equation for every genuine allowed flow. Formal completeness additionally uses completeness of the smooth linearized BH vacuum modes modulo proper gauge: at each order subtract the already constructed particular solution; the remainder is a homogeneous linearized solution and can be absorbed into the next coefficient of $a(\kappa)$ and a proper transformation. This induction proves formal surjectivity within the stated vacuum sector. It does not prove convergence, a global chart on Diff$(S^1)$, or autonomous-flow embeddability of every nearby smooth diffeomorphism.
 
-at $\displaystyle{\kappa ^{2}}$-order, the eom is
+For reference, the next two metric coefficients are
 
-$$\begin{align}
-\mathcal{E}^{(1)}[u_{1}]+\mathcal{E}^{(2)}[\mathcal{L}_{\zeta[a^{(0)}]}g^{(0)},\mathcal{L}_{\zeta[a^{(0)}]}g^{(0)}]=0
-\end{align}$$
+$$h^{[3]}=\frac1{24}\mathcal L_\zeta^4g^{(0)},\qquad
+h^{[4]}=\frac1{120}\mathcal L_\zeta^5g^{(0)}.$$
 
-the general solution for $\displaystyle{u_{1}}$ is
+## Exact CPS form, charges, and the stabilizer correction
 
-$$\begin{align}
-u_{1} & =\dfrac{1}{2}\mathcal{L}_{\zeta[a^{(0)}]}^{2}g^{(0)}+\mathcal{L}_{\zeta[a^{(1)}]}g^{(0)}+\mathcal{L}_{\xi _{1}}g^{(0)}
-\end{align}$$
+The renormalized bulk/boundary/corner CPS form gives the vacuum cocycle
 
-where $\displaystyle{\xi_{1}}$ is proper gauge. remove its contribution by a proper diffeomorphism generated at order $\displaystyle{\kappa ^{2}}$ and set
+$$B(\xi_m,\xi_n)=iD_m\delta_{m+n,0}.$$
 
-$$\begin{align}
-a(\kappa) & =a^{(0)}+\kappa a^{(1)}+\mathcal{O}(\kappa ^{2})
-\end{align}$$
+Define $A=\operatorname{ad}_\zeta$ and the entire function
 
-then $\displaystyle{g=g[a(\kappa)]+\mathcal{O}(\kappa ^{3})}$ in this gauge. the additional BH data have been absorbed into $\displaystyle{a}$. The same argument works inductively.
+$$F(w)=\frac{1-e^{-w}}w,\qquad F(0)=1.$$
 
-For the calculations below, $\displaystyle{a}$ denotes the complete coordinate after the absorption. At fixed $\displaystyle{a}$, define
+On the formal high-mode section the closed expressions are
 
-$$\begin{align}
-g[a]&=g^{(0)}+\kappa h[a],\\
-h[a]&=\sum_{n=0}^{\infty}\kappa^n h^{[n]}[a],&
-h^{[n]}[a]&=\dfrac{1}{(n+1)!}\mathcal L_{\zeta[a]}^{n+1}g^{(0)}.
-\end{align}$$
+$$
+\Theta=F(\kappa A)\delta\zeta,\qquad
+\Omega_\zeta(u,v)=B(\Theta(u),\Theta(v)),\qquad
+H_p(\zeta)=\frac1\kappa B\bigl(\zeta,F(\kappa A)\xi_p\bigr).
+$$
 
-In particular, $\displaystyle{h^{[0]}[a]=\mathcal L_{\zeta[a]}g^{(0)}}$ and $\displaystyle{h^{[1]}[a]=\frac12\mathcal L_{\zeta[a]}^2g^{(0)}}$, with all multimode cross terms included. Along a chosen family $\displaystyle{a(\kappa)}$, its Taylor coefficients contribute to the expansion of the metric as above.
+$B$ annihilates its final stabilizer arguments, so final $P_>$ projections are optional in the first formula. At the origin $\Omega_0=i\sum_{N\ge2}\delta a_N^*\wedge\delta a_N$. The charge formula applies to **every** integer $p$, including $0,\pm1$, and gives
 
-## Perturbed Symplectic Form
+$$
+H_p=\sum_{n\ge1}\frac{(-1)^{n-1}\kappa^{n-2}}{n!}
+B(\zeta,A^{n-1}\xi_p).
+$$
 
-First we relabel the descendant number by $\displaystyle{N=n+2\geqslant 2}$ and the normalized generators obey
+Its first three terms reproduce the previous signed-mode charge sums. The next two are
 
-$$\begin{align}
-\zeta _{L,N-2} & =q_{N}\xi _{-N}, & \zeta _{R,N-2} & =q_{N}\bar{\xi}_{-N} \\
-q_{N} & =-\dfrac{(-i)^{N-1}}{\sqrt{ 2\pi N(N^{2}-1) }}
-\end{align}$$
+$$H_{p,2}=-\frac1{24}B(\zeta,A^3\xi_p),\qquad
+H_{p,3}=\frac1{120}B(\zeta,A^4\xi_p),$$
 
-here $\displaystyle{\xi _{N},\bar{\xi}_{N}}$ are asymptotic Killing vectors and satisfy the Witt algebra together with isometry generators $\displaystyle{\xi _{-1,0,1}}$ and $\displaystyle{\bar{\xi}_{-1,0,1}}$
+where $H_p=\kappa^{-1}H_{p,-1}+H_{p,0}+\kappa H_{p,1}+\kappa^2H_{p,2}+\kappa^3H_{p,3}+\cdots$.
 
-$$\begin{align}
-[\xi _{n},\xi _{m}] & =-i(n-m)\xi _{n+m}+\mathcal{O}(r^{-\dots}) \\
-[\bar{\xi}_{n},\bar{\xi}_{m}] & =-i(n-m)\bar{\xi}_{n+m}+\mathcal{O}(r^{-\dots})
-\end{align}$$
+### Correction to the previous $X_p$ expansion
 
-Inserting the solution
+The previously printed expansion with the term $-\tfrac12P_>[\zeta,\xi_p]$ is valid only when $|p|\ge2$. Using it at $p=0$ incorrectly gives half the exact rotation vector field. The compensator must be solved before expanding. In the present section it is eliminated by
 
-$$\begin{align}
-g[a] & =e^{\kappa \mathcal{L}_{\zeta[a]}}g^{(0)}
-\end{align}$$
+$$
+\boxed{X_p\zeta=\frac1\kappa
+\bigl(P_>F(\kappa A)|_>\bigr)^{-1}P_>e^{-\kappa A}\xi_p.}
+$$
 
-to the symplectic form
+Indeed, the unprojected tangent equation is
+$\kappa F(\kappa A)X_p\zeta=e^{-\kappa A}\xi_p+\sigma_p$ with $\sigma_p$ in the vacuum stabilizer. This gives, without an expansion,
 
-$$\begin{align}
-\omega & =\delta \theta \\
-\theta & =\dfrac{1}{\kappa ^{2}}\int _{\Sigma}\mathrm{d}^{2}x\sqrt{ \sigma }\tau _{\mu}(g^{\mu \alpha}\nabla ^{\nu}\delta g_{\alpha \nu}-g^{\alpha \beta}\nabla ^{\mu}\delta g_{\alpha \beta})-\dfrac{1}{\kappa ^{2}}\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h }\tau _{\mu}\gamma ^{\mu \nu}n^{\alpha}\delta g_{\nu \alpha}
-\end{align}$$
+$$X_0z_k=ikz_k.$$
 
-and expand to order $\displaystyle{\mathcal{O}(\kappa ^{1})}$, we get
+For a low $u\in\{-1,0,1\}$ its leading high-mode action is
+$X_u\zeta=-P_>[\zeta,\xi_u]+O(\kappa)$, not half this value. In particular $H_u$ has no $\kappa^{-1}$ term, but is not zero away from the vacuum.
 
-$$\begin{align}
-\omega & =\omega ^{(0)}+\kappa \sum _{A}\omega _{A} ^{(1)}+\mathcal{O}(\kappa ^{2})
-\end{align}$$
+An explicit two-extra-order formula is obtained by setting
 
-with
+$$M_j=\frac{(-1)^j}{(j+1)!}P_>A^j|_>,\qquad
+v_j=\frac{(-1)^j}{j!}P_>A^j\xi_p,\qquad
+X_p\zeta=\sum_{r\ge0}\kappa^{r-1}x_r.$$
 
-$$\begin{align}
-\omega ^{(0)} & =i\sum _{A,N}\delta a^{\dagger}_{A,N}\wedge \delta a_{A,N} \\
-\omega ^{(1)}_{A} & =-\dfrac{i}{4}\sum _{N,M\geqslant 2}\lambda _{NM}a^{\dagger}_{A,N+M}\delta a_{A,N}\wedge \delta a_{A,M} \\
- & +\dfrac{i}{4}\sum _{N,M\geqslant 2}\lambda _{NM}a_{A,N+M}\delta a^{\dagger}_{A,N}\wedge \delta a^{\dagger}_{A,M} \\
- & +i\sum _{N,M\geqslant 2,|N-M| \geqslant 2} \mu _{NM}\mathfrak{a}_{A,M-N}\delta a_{A,N}\wedge \delta a^{\dagger}_{A,M}
-\end{align}$$
+Then
 
-where
+$$
+\begin{aligned}
+x_0&=v_0,\\
+x_1&=v_1-M_1v_0,\\
+x_2&=v_2-M_1v_1+(M_1^2-M_2)v_0,\\
+x_3&=v_3-M_1v_2+(M_1^2-M_2)v_1+(-M_1^3+M_1M_2+M_2M_1-M_3)v_0,\\
+x_4&=v_4-M_1v_3+(M_1^2-M_2)v_2+(-M_1^3+M_1M_2+M_2M_1-M_3)v_1\\
+&\quad+(M_1^4-M_1^2M_2-M_1M_2M_1-M_2M_1^2+M_2^2+M_1M_3+M_3M_1-M_4)v_0.
+\end{aligned}
+$$
 
-$$\begin{align}
-\lambda _{NM} & := (N-M) \sqrt{ \dfrac{D_{N+M}}{D_{N}D_{M}} } \\
-\mu _{NM} & := \dfrac{N+M}{2} \sqrt{ \dfrac{D_{|N-M|}}{D_{N}D_{M}} } \\
-D_{N} & := 2\pi N(N^{2}-1) \\
-\mathfrak{a}_{A,k} & =\begin{cases}
-a_{A,k}, & k\geqslant 2 \\
-a^{\dagger}_{A,-k}, & k\leqslant -2 \\
-0, & |k|\leqslant 1
-\end{cases}
-\end{align}$$
+### Two further CPS coefficients
 
-here we take the $\displaystyle{\mathcal{L}^{(1)}[h]}$ and boundary terms into consideration.
+Every coefficient is fixed by
 
-## Perturbed Noether Charges and Poisson Brackets
+$$\Omega_r(u,v)=(-1)^r\sum_{j=0}^r
+\frac{B(A^ju,A^{r-j}v)}{(j+1)!(r-j+1)!}.$$
 
-Consider diffeomorphisms generated by (asymptotic) Killing vectors $\displaystyle{\xi _{n},\bar{\xi}_{n}}$ and $\displaystyle{\zeta _{A,n},\zeta _{A,n}^{*}}$ (up to a constant factor). By CPS formalism, we have
+In particular
 
-$$\begin{align}
-H_{\xi} & =-\dfrac{2}{\kappa ^{2}}\int _{\partial\Sigma}\mathrm{d}x\sqrt{ h }\tau ^{\alpha}\xi ^{\beta}(-K_{\alpha \beta}+K\gamma _{\alpha \beta}-\gamma _{\alpha \beta})
-\end{align}$$
+$$
+\begin{aligned}
+\Omega_3(u,v)&=-\frac{B(A^3u,v)+B(u,A^3v)}{24}
+-\frac{B(A^2u,Av)+B(Au,A^2v)}{12},\\
+\Omega_4(u,v)&=\frac{B(A^4u,v)+B(u,A^4v)}{120}
++\frac{B(A^3u,Av)+B(Au,A^3v)}{48}
++\frac{B(A^2u,A^2v)}{36}.
+\end{aligned}
+$$
 
-we expand
+These formulas obey $\iota_{X_p}\Omega=-\delta H_p$. Independent exact rational tests verify the coefficients through $\kappa^3$ for 180 combinations of charges, variations and orders, including all three low modes, without discarding intermediate Witt modes.
 
-$$\begin{align}
-\zeta _{A} & =\sum _{N\geqslant 2}(q_{N}a_{A,N}\xi _{-n}+q^{*}_{N}a^{\dagger}_{A,N}\xi _{N})
-\end{align}$$
+## Darboux completion and its boundary
 
-for compectness, define
+Let $\mathcal E$ be the Euler vector field in $z$. The all-order radial Moser primitive and equation are
 
-$$\begin{align}
-\rho _{k} & :=\begin{cases}
-q^{*}_{k}, & k\geqslant 2 \\
-q_{-k}, & k\leqslant -2 \\
-0, & |k|\leqslant 1 &
-\end{cases}, & \rho _{-N}\mathfrak{a}_{A,N} & =q_{N}a_{A,N}, & \rho _{N}\mathfrak{a}_{A,-N} & =q^{*}_{N}a^{\dagger}_{A,N}
-\end{align}$$
+$$\alpha=\sum_{r\ge1}\frac{\kappa^r}{r+2}\iota_{\mathcal E}\Omega_r,
+\quad \Omega_t=\Omega_0+t(\Omega-\Omega_0),
+\quad\iota_{Y_t}\Omega_t=-\alpha.$$
 
-we denote the Noether charge corresponding to $\displaystyle{\xi _{p}}$ as $\displaystyle{H_{p}}$, we have
+If $\Phi_t$ is the formal flow of $Y_t$, then $\Phi_1^*\Omega=\Omega_0$. This is a closed flow prescription, not an elementary coordinate formula. Its rotation-equivariant choice gives exactly
 
-$$\begin{align}
-H_{p} & =-\dfrac{2\pi i}{\kappa}p(p^{2}-1)\rho _{-p}\mathfrak{a}_{L,p} \\
- & -\pi \sum _{\substack{k+l+p=0,\\
-|k|,|l| \geqslant 2}}\rho _{k}\rho _{l}\mathfrak{a}_{L,-k}\mathfrak{a}_{L,-l}(l-p)k(k^{2}-1) \\
- & -\dfrac{i\pi \kappa}{3}\sum _{\substack{k+l+m+p=0, \\
-|k|,|l|,|m|\geqslant2}}\rho _{k}\rho _{l}\rho _{m}\mathfrak{a}_{L,-k}\mathfrak{a}_{L,-l}\mathfrak{a}_{L,-m}(m-p)(l-m-p)k(k^{2}-1)+\mathcal{O}(\kappa ^{2})
-\end{align}$$
+$$H_0^D=\sum_{N\ge2}N b_N^*b_N.$$
 
-barred charges takes the similar expression. On the other hand, we write
+At finite dimension this is the local equivariant Darboux result. Here the infinite-mode statement is formal, coefficientwise on finite-support configurations. A common analytic topology and convergence of the full Moser map are not established. Retain the distinction between a Lie-flow coefficient and a direct-coordinate coefficient: $Y_2^{\rm coord}=Z_2+\frac12(Y_1\cdot\partial)Y_1$.
 
-$$\begin{align}
-X_{p} & =\int \mathrm{d}^{3}x\mathcal{L}_{\xi _{p}}g_{\mu \nu} \dfrac{\delta}{\delta g_{\mu \nu}}
-\end{align}$$
+## A finite reparametrization formula for every classical charge
 
-then we have
+Choose $\xi_n=e^{inx}\partial_x$ at the boundary and write $f(x+2\pi)=f(x)+2\pi$, $f'>0$. In a compatible finite-flow representative,
 
-$$\begin{align}
-X_{p}\cdot \delta \mathfrak{a}_{L,-k} & =\dfrac{1}{\rho _{k}}\left\{\dfrac{1}{\kappa}\delta _{k,p}-\dfrac{i}{2}(2p-k)\rho _{k-p}\mathfrak{a}_{L,p-k}\right. \\
- & -\dfrac{\kappa}{12}\sum _{\substack{r+s+p=k \\
-|r|,|s| \geqslant 2}}\rho _{r}\rho _{s}\mathfrak{a}_{L,-r}\mathfrak{a}_{L,-s}(s-p)(r-s-p) \\
- & \left.+\dfrac{\kappa}{4}\sum _{\substack{u=-1,0,1 \\
-|u-p|,|k-u|\geqslant 2}}\rho _{u-p}\rho _{k-u}\mathfrak{a}_{L,p-u}\mathfrak{a}_{L,u-k}(2p-u)(k-2u)+\mathcal{O}(\kappa ^{2})\right\}, & |k|\geqslant 2
-\end{align}$$
+$$
+T[f](x)=\frac{c_{\rm cl}}{24}(1-f'^2)
+-\frac{c_{\rm cl}}{12}\{f,x\},\qquad
+H_p[f]=\frac1{2\pi}\int_0^{2\pi}e^{ipx}T[f](x)\,dx.
+$$
 
-then by massive calculation, we can verify that
+Here $T=\sum_nH_ne^{-inx}$ and $\{f,x\}=f'''/f'-\tfrac32(f''/f')^2$. The sign and vacuum shift agree with the cocycle formulas above. Let $w=f''/f'$ and $\langle\cdot\rangle=(2\pi)^{-1}\int dx$. Integration by parts yields
 
-$$\begin{align}
-X_{\xi}\cdot \omega & =-\delta H_{\xi}
-\end{align}$$
+$$H_0=\frac{c_{\rm cl}}{24}\langle1-f'^2+w^2\rangle,$$
 
-is correct up to $\displaystyle{\mathcal{O}(\kappa ^{0})}$.
+$$H_{\pm1}=\frac{c_{\rm cl}}{24}
+\left\langle e^{\pm ix}(-f'^2+w^2\pm2iw)\right\rangle.$$
 
-The Poisson brackets between $\displaystyle{H_{\xi}}$ and $\displaystyle{H_{\xi'}}$ is defined as
+These are explicit functionals of $f$, not yet expressions using only the high charges. The stress transformation and vacuum orbit are standard coadjoint-orbit structures; see Cotler--Jensen, arXiv:1808.03263, sections 2--3. The purpose here is their normalization and constructive matching to the original bulk modes.
 
-$$\begin{align}
-\left\{H_{\xi},H_{\xi'}\right\} & =X_{\xi}\cdot X_{\xi'}\cdot \omega
-\end{align}$$
+## Closed implicit low charges as functions of the high charges
 
-the result is
+Set $\lambda=6/c_{\rm cl}=\kappa^2/(4\pi)$. The vacuum Hill equation is
 
-$$\begin{align}
-\{H_{p},H_{q}\} & =-i(p-q)H_{p+q} -\dfrac{2\pi i}{\kappa ^{2}}p(p^{2}-1)\delta _{p+q,0}, \\
-\{\bar{H}_{p},\bar{H}_{q}\} & =-i(p-q)\bar{H}_{p+q} -\dfrac{2\pi i}{\kappa ^{2}}p(p^{2}-1)\delta _{p+q,0}, \\
-\{H_{p},\bar{H}_{q}\} & =0.
-\end{align}$$
+$$\psi''+\left(\frac14-\lambda T\right)\psi=0.$$
 
-Thus the perturbative charges realize two commuting Virasoro algebras with
+For the vacuum orbit it has two independent antiperiodic solutions and monodromy $-\mathbf1$, with winding one. Explicit solutions are proportional to $\cos(f/2)/\sqrt{f'}$ and $\sin(f/2)/\sqrt{f'}$. The winding condition matters away from the local vacuum neighborhood.
 
-$$\begin{align}
-c & =\dfrac{24\pi}{\kappa ^{2}}=\dfrac{3}{2G}.
-\end{align}$$
+Use the antiperiodic Fourier basis $e^{-ikx}$, $k\in\mathbb Z+\tfrac12$. Define $D=-\partial_x^2-1/4$, let $P$ project to $k=+1/2,-1/2$ in this order, and put $Q=1-P$. Multiplication by $T$ has entries $T_{kl}=H_{k-l}$. Its vacuum condition is the exact Schur equation
 
----
+$$
+\boxed{\begin{pmatrix}H_0&H_1\\H_{-1}&H_0\end{pmatrix}
+=\lambda PTQ\,[Q(D+\lambda T)Q]^{-1}\,QTP.}
+$$
 
-Introduce
+The low modes on the right are to be solved self-consistently, not set to zero. The two diagonal equations coincide: multiplication and the scalar differential operator are symmetric under the bilinear Fourier transpose, which interchanges the two $P$ modes. With reality, the off-diagonal equations are conjugates. Thus there are exactly three real equations.
 
-$$\begin{align}
-\mathcal{D}_{p} & =2\pi p(p^{2}-1), & x_{p} & := \rho _{-p}\mathfrak{a}_{L,p}, & |p| \geqslant 2
-\end{align}$$
+For a real $H^s$ stress with $s>1/2$, sufficiently small in norm, $QD Q$ has a bounded inverse (its smallest eigenvalue is 2) and the multiplication perturbation is bounded. At the vacuum the derivative of these three equations with respect to the three low charges is the identity. The analytic implicit-function theorem therefore gives a unique local analytic $H_{0,\pm1}(H_>)$. The Schur condition gives two antiperiodic solutions; near the vacuum these reconstruct the winding-one projective coordinate, hence the vacuum orbit. This is an implicit resolvent closed form, not a finite polynomial in $H_>$.
 
-we can represent $\displaystyle{a_{p}}$ (actually the related $\displaystyle{x_{p}}$) in terms of $\displaystyle{H_{p}}$ as
+### Two additional classical orders with all ordered kernels retained
 
-$$\begin{align}
-x_{p} & =\dfrac{i\kappa}{\mathcal{D}_{p}}H_{p}-\dfrac{i\kappa ^{3}}{2\mathcal{D}_{p}} \sum _{\substack{r+s=p \\
-|r|+|s| \geqslant 2}} \dfrac{r+2s}{\mathcal{D}_{s}} H_{r}H_{s} +\mathcal{O}(\kappa ^{5}H^{3}), & |p| \geqslant 2
-\end{align}$$
+Let $V=\sum_{|n|\ge2}H_ne^{-inx}$ be multiplication by the high stress, let $R=(QDQ)^{-1}$ on $Q$, and define ordered $2\times2$ kernels
 
-insert into the symplectic form, we have
+$$K_j(A_1,\ldots,A_j)=PA_1Q R Q A_2Q R\cdots R Q A_jP,\qquad j\ge2.$$
 
-$$\begin{align}
-\omega & =-\dfrac{i\kappa ^{2}}{2}\sum _{|p|,|q| \geqslant 2} \dfrac{\delta _{p+q,0}}{\mathcal{D}_{p}} \delta H_{p}\wedge \delta H_{q} \\
- & -\dfrac{i\kappa ^{4}}{2}\sum _{\substack{|p|,|q| \geqslant 2 \\
-|p+q|\geqslant 2}} \dfrac{p-q}{\mathcal{D}_{p}\mathcal{D}_{q}}H_{-p-q}\delta H_{p}\wedge \delta H_{q}+\mathcal{O}(\kappa ^{6}H^{2}\delta H\wedge \delta H)
-\end{align}$$
+For a matrix with equal diagonals, $\ell(S)$ denotes multiplication by
+$S_{++}+S_{+-}e^{-ix}+S_{-+}e^{ix}$. Put
 
----
+$$T=V+\lambda U_1+\lambda^2U_2+\lambda^3U_3+O(\lambda^4),$$
 
-Denote the Virasoro algebra as
+where the $U_r$ contain only low Fourier modes. Then
 
-$$\begin{align}
-P_{pq}[H] &:= \left\{H_{p},H_{q}\right\} \\
- & =-i(p-q)H_{p+q}-\dfrac{i}{\kappa ^{2}}\mathcal{D}_{p}\delta _{p+q,0}, & |p|,|q|\geqslant 2 \\
-\mathcal{D}_{p} &=2\pi p(p^{2}-1)
-\end{align}$$
+$$
+\begin{aligned}
+U_1&=\ell K_2(V,V),\\
+U_2&=\ell\{K_2(U_1,V)+K_2(V,U_1)-K_3(V,V,V)\},\\
+U_3&=\ell\{K_2(U_2,V)+K_2(V,U_2)+K_2(U_1,U_1)\\
+&\quad-K_3(U_1,V,V)-K_3(V,U_1,V)-K_3(V,V,U_1)+K_4(V,V,V,V)\}.
+\end{aligned}
+$$
 
-in principle we can represent the sympelctic form as
+These are respectively quadratic, cubic and quartic in the independent high charges. They are explicit all-mode finite-depth sums, with diagonal denominators $k^2-1/4$ and all intermediate $k\ne\pm1/2$. The first line reproduces
 
-$$\begin{align}
-\omega & =\dfrac{1}{2}\sum _{|p|,|q|\geqslant 2}(P^{-1})_{pq}\delta H_{p}\wedge \delta H_{q}
-\end{align}$$
+$$
+\begin{aligned}
+H_0&=\frac{12}{c_{\rm cl}}\sum_{n\ge2}\frac{H_nH_{-n}}{n^2-1}+O(c_{\rm cl}^{-2}H^3),\\
+H_1&=\frac{12}{c_{\rm cl}}\sum_{n\ge3}\frac{H_nH_{1-n}}{n(n-1)}+O(c_{\rm cl}^{-2}H^3),\\
+H_{-1}&=\frac{12}{c_{\rm cl}}\sum_{n\ge2}\frac{H_nH_{-1-n}}{n(n+1)}+O(c_{\rm cl}^{-2}H^3).
+\end{aligned}
+$$
 
-split
+For the slice with only $H_2=a,H_{-2}=b$ independent,
 
-$$\begin{align}
-P & =C+L \\
-C_{pq} & := -\dfrac{i}{\kappa ^{2}}\mathcal{D}_{p}\delta _{p+q,0}, & L_{pq} & := -i(p-q)H_{p+q}, & |p|,|q| \geqslant 2
-\end{align}$$
+$$H_1=H_{-1}=0,\qquad H_0=\frac{4ab}{c_{\rm cl}}
+-\frac{176a^2b^2}{5c_{\rm cl}^3}+O(c_{\rm cl}^{-5}).$$
 
-then write $\displaystyle{P^{-1}=\sum ^{\infty}_{r=0}(P^{-1})^{(r)}}$, and we have the Neumann recursion relation
+A separate Fourier calculation verifies the Schur equation through fourth order for $f=x+\epsilon[\sin(2x)/5+\cos(3x)/7]$.
 
-$$\begin{align}
-(P^{-1})_{pq}^{(0)} & =-\dfrac{i\kappa ^{2}}{\mathcal{D}_{p}}\delta _{p+q,0} \\
-(P^{-1})^{(r+1)}_{pq} & =-\dfrac{\kappa ^{2}}{\mathcal{D_{p}}}\sum _{|s| \geqslant 2} (p+s)H_{s-p}\times(P^{-1})^{(r)}_{sq}
-\end{align}$$
+### Charge coordinates and inverse reconstruction
 
-then the first two entries are
+On the above local branch the high-charge Poisson matrix and symplectic form are
 
-$$\begin{align}
-(P^{-1})^{(1)}_{pq} & =-\dfrac{i\kappa ^{4}(p-q)}{\mathcal{D}_{p}\mathcal{D}_{q}}H_{-p-q} \\
-(P^{-1})^{(2)}_{pq} & =\dfrac{i\kappa ^{6}}{\mathcal{D}_{p}\mathcal{D}_{q}}\sum _{|s|\geqslant 2} \dfrac{(p+s)(s-q)}{\mathcal{D}_{s}} H_{s-p}H_{-s-q}
-\end{align}$$
+$$\mathsf P_{pq}=-i(p-q)H_{p+q}-\frac{i}{\kappa^2}D_p\delta_{p+q,0},
+\qquad \Omega=\frac12(\mathsf P^{-1})_{pq}\delta H_p\wedge\delta H_q,
+\qquad |p|,|q|\ge2.$$
 
-at every occurrence of an index $\displaystyle{0,\pm 1}$, the corresponding charge is replaced by
+The former Neumann series is the expansion of this inverse, after the low charges have been replaced by their vacuum branch. To reconstruct the original coordinates, solve the Hill equation, reconstruct $f$ from its solution ratio, fix the projective redundancy, and take the formal logarithm in the selected high-mode section. This specifies the inverse functional, but does not supply a globally convergent autonomous logarithm.
 
-$$\begin{align}
-H_{0} & =\dfrac{\kappa ^{2}}{2\pi}\sum ^{\infty}_{n=2} \dfrac{H_{n}H_{-n}}{n^{2}-1}+\mathcal{O}(\kappa ^{4}H^{3}) \\
-H_{1} & =\dfrac{\kappa ^{2}}{2\pi}\sum ^{\infty}_{n=3} \dfrac{H_{n}H_{1-n}}{n(n-1)}+\mathcal{O}(\kappa ^{4}H^{4}) \\
-H_{-1} & =\dfrac{\kappa ^{2}}{2\pi}\sum ^{\infty}_{n=2} \dfrac{H_{n}H_{-1-n}}{n(n+1)}+\mathcal{O}(\kappa ^{4}H^{3})
-\end{align}$$
+Two transcription fixes in the previous inverse-coordinate display are important: a denominator $D_s$ requires $|r|,|s|\ge2$, not $|r|+|s|\ge2$; the next remainder in $H_1$ is cubic, not quartic, in high charges. Also the generator in the $N$ sum is $\xi_{-N}$, not $\xi_{-n}$.
 
-(we can use monodromy or other method to find the precise implicit expression for $\displaystyle{H_{-1,0,+1}}$). Iterating the recursion gives the formal all-order sum
+## Quantum low charges: exact formulas at fixed physical central charge
 
-$$\begin{align}
-(P^{-1})^{(r)}_{pq} & =(-i)^{2r+1}\kappa ^{2r+2}\sum _{|p_{1}|,\dots,|p_{r}| \geqslant 2} \dfrac{\delta _{p_{r}+q,0}}{\prod ^{r}_{j=0}\mathcal{D}_{p_{j}}} \prod ^{r-1}_{j=0}[(p_{j}+p_{j+1})H_{p_{j+1}-p_{j}}], & p_{0}:= p
-\end{align}$$
+Fix $c>1$ and the positive-energy unitary vacuum representation, with $\widehat H_n^\dagger=\widehat H_{-n}$,
 
-## Next CPS Order and the Darboux Completion
+$$[\widehat H_m,\widehat H_n]=(m-n)\widehat H_{m+n}
++\frac c{12}m(m^2-1)\delta_{m+n,0},\qquad
+\widehat H_n|0\rangle=0\quad(n\ge-1).$$
 
-The first nonlinear continuation is sufficient for $\Omega _1$, but the one-loop composite-charge question requires the next classical coefficient. For the same fixed generator $\zeta[a]$,
+Here $c$ is the physical quantum central charge, not an unqualified identification with the coefficient of a bare classical action. The finite commutator identities
 
-$$\begin{align}
-h^{[0]}&=\mathcal L_{\zeta}g^{(0)}, & h^{[1]}&=\dfrac12\mathcal L_{\zeta}^{2}g^{(0)}, & h^{[2]}&=\dfrac16\mathcal L_{\zeta}^{3}g^{(0)}.
-\end{align}$$
+$$\widehat H_0=\frac14[\widehat H_2,\widehat H_{-2}]-\frac c8,
+\quad\widehat H_1=\frac15[\widehat H_3,\widehat H_{-2}],
+\quad\widehat H_{-1}=\frac15[\widehat H_2,\widehat H_{-3}]$$
 
-The ordered multimode sums are retained. This is the selected autonomous-flow chart near the global-AdS vacuum; it is not a claim that a single exponential is a global chart on every smooth Virasoro orbit.
+are exact, but alone do not fix a normal symbol or prove a CPS quantization theorem.
 
-Define the vacuum bilinear from the full renormalized bulk-plus-boundary-plus-corner CPS form by
+### A nonrecursive projector closed form
 
-$$\begin{align}
-B(\xi_m,\xi_n)&:=\kappa^2\Omega_{g^{(0)}}(X_m,X_n) =iD_m\delta_{m+n,0}, & D_m&=2\pi m(m^2-1).
-\end{align}$$
+Let $\mathcal P_{\ge2}(N)$ be the descending partitions of $N$ with parts at least 2. Use
 
-With
+$$|I\rangle=\widehat H_{-i_1}\cdots\widehat H_{-i_r}|0\rangle,
+\quad\widehat H_J^{(+)}=\widehat H_{j_s}\cdots\widehat H_{j_1},
+\quad G_N(I,J)=\langle I|J\rangle,\quad\Pi_0=|0\rangle\langle0|.$$
 
-$$\begin{align}
-\Theta &=\dfrac{1-e^{-\kappa\operatorname{ad}_{\zeta}}} {\kappa\operatorname{ad}_{\zeta}}\,\delta\zeta,
-\end{align}$$
+Write $A_u^{(N)}$ for the coefficient matrix of $\widehat H_u:\mathcal V_N\to\mathcal V_{N-u}$ in this PBW basis, not its matrix of inner products. It is explicitly obtained by commuting $\widehat H_u$ through the negative word. In particular $A_0^{(N)}=N\mathbf1$, while
 
-the exact pullback on the selected high-mode section is
+$$[\widehat H_1,\widehat H_{-n}]=(n+1)\widehat H_{1-n},\qquad
+[\widehat H_{-1},\widehat H_{-n}]=(n-1)\widehat H_{-(n+1)}.$$
 
-$$\begin{align}
-\Omega_{\zeta}(u,v)&=B(P_{>}\Theta(u),P_{>}\Theta(v)) =\dfrac{i}{2}\sum_{|k|\geqslant2}D_k\Theta_k\wedge\Theta_{-k}.
-\end{align}$$
+Thus the $A_u^{(N)}$ require only finite word manipulation. On the algebraic vacuum module,
 
-Here $P_{>}$ removes only the final $-1,0,1$ stabilizer components; it is not inserted between nested brackets. Expanding $\Omega=\Omega_0+\kappa\Omega_1+\kappa^2\Omega_2+O(\kappa^3)$ gives
+$$
+\boxed{\widehat H_u=\sum_{N\ge2}\sum_{I\in\mathcal P_{\ge2}(N-u),\,J\in\mathcal P_{\ge2}(N)}
+(A_u^{(N)}G_N^{-1})_{IJ}\,
+\widehat H_{-I}\Pi_0\widehat H_J^{(+)},\qquad u=-1,0,1.}
+$$
 
-$$\begin{align}
-\Omega_2(u,v) ={}&\dfrac16B([\zeta,[\zeta,u]],v) +\dfrac16B(u,[\zeta,[\zeta,v]]) +\dfrac14B([\zeta,u],[\zeta,v]).
-\end{align}$$
+This is a representation-dependent, exact Gram/projector closed expression. It does not claim to be a finite element of the uncompleted enveloping algebra with $\Pi_0$ eliminated. The inverse-Gram/completeness method is standard; compare Fortin--Quintavalle--Skiba, arXiv:2409.12224. Here the level-one vacuum null module has already been quotiented out, so the restricted $G_N$ is the relevant matrix.
 
-This formula contains all multimode cross terms, is closed, and supplies the missing Hamiltonian identity
+### Eliminating the vacuum projector: a finite chain formula
 
-$$\begin{align}
-X_{p,1}\mathbin{\lrcorner}\Omega_0 +X_{p,0}\mathbin{\lrcorner}\Omega_1 +X_{p,-1}\mathbin{\lrcorner}\Omega_2 &=-\delta H_{p,1}.
-\end{align}$$
+Define the normal block
 
-The explicit signed-mode coefficient and the finite-cutoff edge analysis are recorded in [[Articles/Quantization in AdS/linearized gravity/archived/one-loop-central-charge-audits/CPS one-loop central charge from next-order perturbation|CPS one-loop central charge from next-order perturbation]].
+$$E_N^u(C)=\sum_{I\in\mathcal P_{\ge2}(N-u),J\in\mathcal P_{\ge2}(N)}
+C_{IJ}\widehat H_{-I}\widehat H_J^{(+)}.$$
 
-For the radial Moser construction, let $\mathcal E$ be the mode-space Euler vector field. The first primitive and vector field obey
+For $M<N$, let $\mathcal T_{NM}(C)$ be the PBW action matrix of $E_M^u(C)$ on level $N$, multiplied on the right by $G_N^{-1}$; set $S_N=A_u^{(N)}G_N^{-1}$. Empty level spaces contribute zero. The exact coefficient is the nonrecursive finite chain sum
 
-$$\begin{align}
-\alpha_1&=\dfrac13\iota_{\mathcal E}\Omega_1, & \iota_{Y_1}\Omega_0&=-\alpha_1.
-\end{align}$$
+$$\boxed{C_N=\sum_{r=0}^{N-2}(-1)^r
+\sum_{N>N_1>\cdots>N_r\ge2}
+\mathcal T_{NN_1}\cdots\mathcal T_{N_{r-1}N_r}S_{N_r},}$$
 
-In the Lie-flow convention the second residual is
+with the $r=0$ term equal to $S_N$. Equivalently $C_N=S_N-\sum_{M<N}\mathcal T_{NM}C_M$, the previous triangular recursion. This fixes every coefficient at every level without an ordering ambiguity after the PBW prescription is chosen.
 
-$$\begin{align}
-R_2&=\Omega_2+\dfrac12\mathcal L_{Y_1}\Omega_1, & \alpha_2&=\dfrac14\iota_{\mathcal E}R_2, & \iota_{Z_2}\Omega_0&=-\alpha_2.
-\end{align}$$
+**Domain correction.** The sum $\sum_NE_N^u(C_N)$ is locally finite on
+$\mathcal D_{\rm alg}=\bigoplus_{N\ge0}^{\rm alg}\mathcal V_N$: its $N$th block kills every state below level $N$. Hence it defines the exact low operator on this common invariant dense domain. No infinite-series convergence argument is needed there. Uniform/operator-norm convergence and common domains after closure are separate questions; the old wording that no common dense domain was established was unnecessarily weak. This does not turn a formal expansion in $1/c$ into a convergent operator expansion.
 
-Thus the direct coordinate map is
+### Two additional orders in $1/c$
 
-$$\begin{align}
-a&=b+\kappa Y_1(b)+\kappa^2Y_2(b)+O(\kappa^3), & Y_2&=Z_2+\dfrac12(Y_1\cdot\partial)Y_1,
-\end{align}$$
+The independent Python reconstruction gives exact rational coefficients and their expansion through $c^{-4}$ (two orders beyond the previous $c^{-2}$). It gives 299 nonzero $H_0$ normal coefficients through positive level 10, 196 $H_1$ coefficients through positive level 10, and the 196 adjoint coefficients of $H_{-1}$ with output level at most 10. The last table has input level at most 9; an edge-truncated table is not an exact representation on the truncated space.
 
-and
+Representative newly evaluated coefficients are:
 
-$$\begin{align}
-H^D_{p,1} &=H_{p,1}+\mathrm dH_{p,0}[Y_1]+\mathrm dH_{p,-1}[Y_2].
-\end{align}$$
+| Normal monomial | Operator | coefficient of $c^{-3}$ | coefficient of $c^{-4}$ |
+|---|---|---:|---:|
+| $H_{-4}H_4$ | $H_0$ | $-1584/125$ | $34848/625$ |
+| $H_{-4}H_2^2$ and its adjoint | $H_0$ | $528/25$ | $-11616/125$ |
+| $H_{-2}^2H_2^2$ | $H_0$ | $-176/5$ | $3872/25$ |
+| $H_{-4}H_5$ | $H_1$ | $-528/125$ | $11616/625$ |
+| $H_{-4}H_2H_3$ | $H_1$ | $264/25$ | $-5808/125$ |
+| $H_{-2}^2H_5$ | $H_1$ | $176/25$ | $-3872/125$ |
+| $H_{-2}^2H_2H_3$ | $H_1$ | $-88/5$ | $1936/25$ |
 
-The distinction between $Z_2$ and the direct-coordinate coefficient $Y_2$ is essential. Exact finite-cutoff checks verify the Darboux residual through $O(\kappa^2)$ and the interior Hamiltonian identity; hard cutoffs retain the expected upper-edge obstruction because a finite mode window is not invariant under the Witt action.
+For example the first three exact coefficients are
+$4(c+8)/[c(5c+22)]$, $-24/[c(5c+22)]$, and $-176/[c^2(5c+22)]$. The quartic leading coefficient $-176/5$ agrees with the classical single-high-pair calculation. There is no claim here of a single simplified all-index scalar kernel for the whole $c^{-3}$ or $c^{-4}$ symbol; the chain formula supplies the all-level exact construction and the tables supply the executed finite-level extension.
 
-## Exact Reduced Hamiltonian
+### Exact quadratic global generators in an adapted Fock basis
 
-The global generator acts exactly linearly on the exponential chart,
+There is also an exact but coordinate-dependent alternative. On a bosonic Fock space with $[d_n,d_m^\dagger]=\delta_{nm}$, $n\ge2$, put
 
-$$\begin{align}
-X_0z_k&=ikz_k,
-\end{align}$$
+$$J_0=\sum_{n\ge2}n d_n^\dagger d_n,\qquad
+J_{-1}=\sum_{n\ge2}\sqrt{(n-1)(n+2)}\,d_{n+1}^\dagger d_n,
+\qquad J_1=J_{-1}^\dagger.$$
 
-because left multiplication by the vacuum stabilizer is equivalent to its adjoint action on $\zeta$. The exact CPS form is $U(1)$ invariant, and the radial Moser construction can be chosen equivariantly. Therefore, in a local $U(1)$-equivariant Darboux chart,
+These obey $[J_1,J_{-1}]=2J_0$ and the other global commutators exactly on finite-energy algebraic vectors. At $c>1$ the vacuum Virasoro module and this Fock space have identical level dimensions; positive-energy unitary $sl(2)$ decomposition then gives identical lowest-weight multiplicities, and an intertwining unitary exists. Its choices are the orthonormal bases of quasiprimaries. Thus all three low quantum generators can be quadratic in an adapted basis.
 
-$$\begin{align}
-\boxed{H_0^D=\sum_{N\geqslant2}N b_N^{\dagger}b_N.}
-\end{align}$$
+This does **not** identify $d_n$ with the previously chosen radial-Moser $b_n$. Constructing a prescribed, semiclassically compatible intertwiner is additional work. One must not use this representation equivalence as an unproved simultaneous $SL(2,\mathbb R)$-equivariant Darboux theorem for the infinite-dimensional CPS chart.
 
-The additive constant vanishes by the same global-AdS vacuum subtraction used in the classical charge. Explicitly,
+## What this review does and does not establish
 
-$$\begin{align}
-H_{0,1}^D&=0, & H_{0,2}^D&=0.
-\end{align}$$
+The reference CPS/Wick prescription and a chosen finite renormalization remain distinct from the algebraic construction at fixed $c$. Zero vacuum identity terms in the first few commutators do not prove the full quantum moment-map relations at every order. Similarly, a finite linear counterterm that passes low-order tests is not by itself an all-order renormalized operator construction. Keep the discussion of $c_{\rm phys}=3\ell/[2G_R(\mathsf S)]+\Delta c(\mathsf S)$ separate from the fixed-$c$ module and from claims about a unique bare $+13$ or zero shift.
 
-At every finite mode cutoff this follows from the finite-dimensional equivariant Darboux theorem near the vacuum fixed point and has been checked through the displayed $Y_2$ order. With infinitely many modes, it is a local formal-power-series statement on finite-support configurations; convergence of an all-order Darboux map in a specified infinite-dimensional topology is not established. The full argument and checks are archived in [[Articles/Quantization in AdS/linearized gravity/archived/one-loop-central-charge-audits/CPS canonical quantum perturbation test of Brown-Henneaux one-loop central charge|CPS canonical quantum perturbation test of Brown-Henneaux one-loop central charge]].
+The remaining central target is the constructive compatibility diagram: bulk nonlinear vacuum solution and renormalized CPS form -> a specified canonical chart -> renormalized composite charges -> the fixed-$c$ vacuum representation, with the actual intertwining maps and Ward identities. The generic existence of the vacuum orbit and its quantization is not a novelty claim.
 
-Thus the reduced Brown--Henneaux dynamics on the selected smooth global-AdS vacuum orbit is exactly free in these coordinates. Quantum corrections within this reduced description arise from defining the nonlinear charges as composite observables, not from interaction vertices in $H_0^D$.
+The accompanying sourced de Donder note retains a conditional global statement. Independent component checks reproduce $Q=\Box-2$, the radial indicial polynomial $s^2-2s-4$, the tangential polynomial $s^2-4$ with mixing $2\partial_a a_r$, and the exact axial equation. At $\Delta_*=(1+\sqrt5)/2$ its trace obstruction has the explicit coefficient
 
-## CPS/Wick Quantization of the Nonlinear Charges
+$$q^{\rm dD}_{\log}=\frac{3-\sqrt5}{2\sqrt5}\,\beta^2
+r^{-(1+\sqrt5)}\log r+\cdots.$$
 
-Quantize the Darboux modes with
+This is a log-free-class obstruction, not a failure of unconstrained de Donder gauge. Smooth reflecting Proca/scalar evolution with the claimed asymptotic regularity remains an analytic input; the symbolic checks do not prove it.
 
-$$\begin{align}
-[b_N,b_M^{\dagger}]&=\delta_{NM}, & b_N|0\rangle&=0.
-\end{align}$$
+## Reproduction
 
-The practical reference prescription is to define every nonlinear charge insertion by Wick subtraction with respect to this free CPS vacuum, while retaining a regulator until the mode sums are meaningful. For the low tests $p=2,3$, the quadratic charges contain only number-conserving bilinears. Their hard-cutoff and energy-damped commutators contain no identity term, and the Wick cubic cross-contractions have zero vacuum expectation. Hence the natural reference prescription gives
+The repository scripts are in `scripts/vacuum_orbit_review/`. The downloadable review package contains `verify_classical.py`, `verify_hill.py`, `verify_gauge.py`, `verify_quantum.py`, and `audit_quantum.py`, together with exact JSON coefficient tables and machine-readable results. Only Python and SymPy are required. `verify_quantum.py --level 10 --u 0` and `--u 1` generate the exact tables; `audit_quantum.py` checks the previous all-index $c^{-1},c^{-2}$ kernels against them and generates the adjoint table. The independent comparisons give 1020 matching old coefficients and 154 exact PBW commutator tests, in addition to the classical and Hill tests. No independent xAct or Mathematica run is claimed.
 
-$$\begin{align}
-\Delta c_{\mathrm{CPS/Wick}}^{\mathrm{bare}}&=0.
-\end{align}$$
-
-This zero is the value of the chosen reference composite prescription, not a separately scheme-independent observable. Wick subtraction does not exclude a finite Hermitian linear renormalization of the composite moment map. In the signed variables it is
-
-$$\begin{align}
-\delta H_{p,1}^{\mathrm{fin}} &=-i\gamma_p z_{-p}, & \gamma_p&=\dfrac{\Delta c}{24}p(p^2-1),
-\end{align}$$
-
-or, after the oscillator rephasing used in the archived checks,
-
-$$\begin{align}
-r_p^{\mathrm{fin}}&=\dfrac{\Delta c}{48\pi}\sqrt{D_p}.
-\end{align}$$
-
-Hermiticity, vacuum subtraction, the $p=2$/$p=3$ comparison, mixed commutators, and Jacobi constrain the $p(p^2-1)$ dependence but do not fix the one real coefficient $\Delta c$. The reduced Liouville/Pfaffian-Darboux Jacobian and symmetric Fujikawa-style tests likewise give no nonzero cocycle in the reference prescription; their precise finite-cutoff and regulator boundaries are recorded in [[Articles/Quantization in AdS/linearized gravity/archived/one-loop-central-charge-audits/CPS reduced measure and Virasoro anomaly test|CPS reduced measure and Virasoro anomaly test]].
-
-Therefore no principle internal to the present pure-gravity CPS/Wick construction forces a nonzero $\Delta c$. The convention used in this note is
-
-$$\begin{align}
-\Delta c_{\mathrm{ref}}&=0,
-\end{align}$$
-
-while the invariant quantum central charge is written
-
-$$\begin{align}
-\boxed{ c_{\mathrm{phys}} =\dfrac{3\ell}{2G_R(\mathsf S)}+\Delta c(\mathsf S), }
-\end{align}$$
-
-with only $c_{\mathrm{phys}}$ invariant under a finite change of renormalization scheme $\mathsf S$. External $+13$ representatives, their Chern--Simons/WZW/orbit derivation, and the corresponding finite Einstein-coupling redefinition are separated in [[Articles/Quantization in AdS/linearized gravity/one-loop central charge normalization and scheme dependence|one-loop central charge normalization and scheme dependence]].
-
-## Algebraic Consequences at Fixed Central Charge
-
-Once a central parameter $c$ is fixed, the quantum algebra is
-
-$$\begin{align}
-[H_m,H_n]&=(m-n)H_{m+n}+\dfrac{c}{12}m(m^2-1)\delta_{m+n,0}, & H_n^{\dagger}&=H_{-n}.
-\end{align}$$
-
-The presentation, low-mode reconstruction, and vacuum-module consequences below are conditional on this chosen $c$; algebraic closure does not determine the finite split between $3\ell/(2G_R)$ and $\Delta c$.
-
----
-
-For $\displaystyle{n=-1,0,1}$, we require the quantum Virasoro algebra is also valid
-
-$$\begin{align}
-[H_{m},H_{n}] & =(m-n)H_{m+n}+\dfrac{c}{12}m(m^{2}-1)\delta _{m+n,0}, & \forall m,n\in \mathbb{Z}
-\end{align}$$
-
-and therefore
-
-$$\begin{align}
-H_{0} & =\dfrac{1}{2n}[H_{n},H_{-n}]-\dfrac{c}{24}(n^{2}-1) \\
-H_{1} & =\dfrac{1}{2n+1}[H_{n+1},H_{-n}] \\
-H_{-1} & =\dfrac{1}{2n+1}[H_{n},H_{-(n+1)}]
-\end{align}$$
-
-(we have, to some extent, bypassed the issue of operator ordering). The vacuum $\displaystyle{\ket{0}}$ is defined as
-
-$$\begin{align}
-H_{n}\ket{0}  & =0, & n\geqslant 2 \\
-H_{-1}\ket{0}=H_{0}\ket{0}=H_{1}\ket{0}  & =0
-\end{align}$$
-
-the second line imposes invariance under the $\displaystyle{\mathrm{PSL}(2,\mathbb{R})}$ stabilizer of the global-AdS vacuum. The left-moving Hilbert space is generated algebraically by the negative modes
-
-$$\begin{align}
-H_{-n_{1}}H_{-n_{2}}\dots H_{-n_{k}}\ket{0} ,  & & n_{1}\geqslant n_{2}\geqslant\dots\geqslant n_{k}\geqslant 2
-\end{align}$$
-
-moreover
-
-$$\begin{align}
-[H_{0},H_{-n}] & =nH_{-n}
-\end{align}$$
-
-and hence
-
-$$\begin{align}
-H_{0}H_{-n_{1}}\dots H_{-n_{k}}\ket{0}  & =\left(\sum ^{k}_{j=1}n_{j}\right)H_{-n_{1}}\dots H_{-n_{k}}\ket{0}
-\end{align}$$
-
-then the chiral character is
-
-$$\begin{align}
-\chi _{\mathrm{vac}}(q) & =\mathrm{Tr}q^{H_{0}-c/24}=q^{-c/24}\prod ^{\infty}_{n=2} \dfrac{1}{1-q^{n}}
-\end{align}$$
-
-the right-moving construction is identical and the vacuum-orbit Hilbert space is
-
-$$\begin{align}
-\mathcal{H}_{\mathrm{vac}} & =\mathcal{V}_{\mathrm{vac}}\otimes \overline{\mathcal{V}}_{\mathrm{vac}}
-\end{align}$$
-
----
-
-*Tldr: this part provides the isomorphism between the commutator definition and the composition definition of $\displaystyle{H_{-1,0,1}}$, and the composition constructiono f $\displaystyle{H_{-1,0,1}}$ in some recursion algorithm.*
-
-The finite commutator reconstruction can be promoted from an operator identity to a presentation of the complete quantum algebra. Fix the scalar $\displaystyle{c}$ and let $\displaystyle{\mathfrak A_{>}(c)}$ be the unital star algebra generated by
-
-$$\begin{align}
-\mathsf h_p, & & p&\in I_{>}, & \mathsf h_p^{\dagger}&=\mathsf h_{-p}.
-\end{align}$$
-
-Inside the free associative algebra define
-
-$$\begin{align}
-\mathsf f_0 &:=\dfrac14[\mathsf h_2,\mathsf h_{-2}] -\dfrac{c}8\mathbf1, \\
-\mathsf f_1 &:=\dfrac15[\mathsf h_3,\mathsf h_{-2}], & \mathsf f_{-1} &:=\dfrac15[\mathsf h_2,\mathsf h_{-3}], \\
-\mathsf x_r
-&:=\begin{cases}
-\mathsf h_r, & |r|\geqslant2,\\
-\mathsf f_r, & r=-1,0,1.
-\end{cases}
-\end{align}$$
-
-The defining higher-generator relations are
-
-$$\begin{align}
-\boxed{ [\mathsf h_p,\mathsf h_q] =(p-q)\mathsf x_{p+q} +\dfrac{c}{12}p(p^2-1) \delta _{p+q,0}\mathbf1}, & &p,q&\in I_{>}.
-\end{align}$$
-
-For sums $\displaystyle{p+q=0,\pm1}$, these relations both define the missing mode and require that every possible high-mode representative agree. Explicitly, for every $\displaystyle{n\geqslant2}$ they imply
-
-$$\begin{align}
-\mathsf f_0 &=\dfrac{1}{2n}[\mathsf h_n,\mathsf h_{-n}] -\dfrac{c}{24}(n^2-1)\mathbf1, \\
-\mathsf f_1 &=\dfrac{1}{2n+1}[\mathsf h_{n+1},\mathsf h_{-n}], \\
-\mathsf f_{-1} &=\dfrac{1}{2n+1}[\mathsf h_n,\mathsf h_{-(n+1)}].
-\end{align}$$
-
-The nontrivial overlap conditions are precisely
-
-$$\begin{align}
-[\mathsf f_u,\mathsf h_p] &=(u-p)\mathsf x_{u+p}, & u&=-1,0,1, & p&\in I_{>}, \\
-[\mathsf f_u,\mathsf f_v] &=(u-v)\mathsf f_{u+v}, & u,v&=-1,0,1,
-\end{align}$$
-
-where the second line is understood only for the automatically allowed $\displaystyle{u+v\in\{-1,0,1\}}$; the antisymmetric cases with $\displaystyle{u=v}$ vanish. These equations may be added as rewriting relations in a computational presentation. Algebraically, they follow by inserting the commutator definitions into the associative Jacobi identity and using the high-high relations. Once they hold, every $\displaystyle{\mathsf x_r}$ satisfies
-
-$$\begin{align}
-[\mathsf x_m,\mathsf x_n] &=(m-n)\mathsf x_{m+n} +\dfrac{c}{12}m(m^2-1) \delta _{m+n,0}\mathbf1
-\end{align}$$
-
-for arbitrary integers $\displaystyle{m,n}$.
-
-This proves that the presentation is exactly Virasoro rather than merely a quotient resembling it. Indeed, there is a homomorphism
-
-$$\begin{align}
-\Phi:\mathfrak A_{>}(c)&\longrightarrow U(\operatorname{Vir}_{c}), & \Phi(\mathsf h_p)&=\widehat H_p.
-\end{align}$$
-
-It is surjective because $\displaystyle{\widehat H_{0,\pm1}}$ are the displayed composites. Conversely, the full Virasoro relations for the $\displaystyle{\mathsf x_r}$ define
-
-$$\begin{align}
-\Psi:U(\operatorname{Vir}_{c})&\longrightarrow\mathfrak A_{>}(c), & \Psi(\widehat H_r)&=\mathsf x_r.
-\end{align}$$
-
-Both compositions are the identity on their respective generating sets. Hence
-
-$$\begin{align}
-\boxed{\mathfrak A_{>}(c)\simeq U(\operatorname{Vir}_{c})}.
-\end{align}$$
-
-The corresponding vacuum representation can be defined without taking any low mode as primitive. Let $\displaystyle{|0\rangle_{>}}$ obey
-
-$$\begin{align}
-\mathsf h_p|0\rangle_{>}&=0, & p&\geqslant2, \\
-\mathsf f_{-1}|0\rangle_{>} =\mathsf f_0|0\rangle_{>} =\mathsf f_1|0\rangle_{>}&=0.
-\end{align}$$
-
-The algebra isomorphism maps this cyclic module to the usual Virasoro vacuum module. A PBW spanning basis is therefore
-
-$$\begin{align}
-\mathsf h_{-n_1}\cdots\mathsf h_{-n_k}|0\rangle_{>}, & & n_1&\geqslant\cdots\geqslant n_k\geqslant2,
-\end{align}$$
-
-and its graded dimensions are $\displaystyle{1,0,1,1,2,2,4,4,7,8,12,14,21,24,34,\ldots}$ through level fourteen, agreeing with
-
-$$\begin{align}
-\prod_{n=2}^{\infty}\dfrac{1}{1-q^n}.
-\end{align}$$
-
-Thus using the higher modes as primitive quantum observables loses neither the global generators nor any vacuum descendant. The representative independence, translated high-high relations, covariance, $\displaystyle{\mathfrak{sl}(2)}$ closure, star structure, thousands of high-mode Jacobi overlaps and the character through level fourteen are checked in `Articles/Quantization in AdS/linearized gravity/archived/verification-scripts/higher_mode_virasoro_presentation.wl`.
-
-The finite commutator formulas determine the operators without choosing a symbol map. One can nevertheless construct a unique vacuum-normal symbol level by level after fixing the following triangular prescription. Let $\displaystyle{\mathcal{P}_{\geqslant2}(N)}$ be the partitions $\displaystyle{I=(i_{1}\geqslant\cdots\geqslant i_{r}\geqslant2)}$ of $\displaystyle{N}$ and define
-
-$$\begin{align}
-|I\rangle &:=\widehat{H}_{-i_{1}}\cdots\widehat{H}_{-i_{r}}|0\rangle, \\
-\widehat{H}_{-I} &:=\widehat{H}_{-i_{1}}\cdots\widehat{H}_{-i_{r}}, & \widehat{H}_{I}^{(+)} &:=\widehat{H}_{i_{r}}\cdots\widehat{H}_{i_{1}}, \\
-G_{N}(I,J)&:=\langle I|J\rangle.
-\end{align}$$
-
-For $\displaystyle{u=-1,0,1}$, write the normal symbol as blocks of fixed positive-mode level,
-
-$$\begin{align}
-\widehat{F}_{u}^{\mathrm{normal}} &=\sum_{N\geqslant2}\widehat{F}_{u}^{[N]}, \\
-\widehat{F}_{u}^{[N]} &:=\sum_{\substack{I\in\mathcal{P}_{\geqslant2}(N-u),\\
-J\in\mathcal{P}_{\geqslant2}(N)}} C_{u}^{(N)}(I,J)\widehat{H}_{-I}\widehat{H}_{J}^{(+)}.
-\end{align}$$
-
-The $\displaystyle{N}$th block annihilates every state below level $\displaystyle{N}$. Suppose all blocks with $\displaystyle{M<N}$ have already been fixed, and denote the residual matrix elements from level $\displaystyle{N}$ to level $\displaystyle{N-u}$ by
-
-$$\begin{align}
-R_{u}^{(N)}(I,J) &:=\left\langle I\left|
-\widehat{H}_{u}-\sum_{M<N}\widehat{F}_{u}^{[M]} \right|J\right\rangle.
-\end{align}$$
-
-Then the unique next coefficient matrix is
-
-$$\begin{align}
-\boxed{C_{u}^{(N)} =G_{N-u}^{-1}R_{u}^{(N)}G_{N}^{-1}}.
-\end{align}$$
-
-Thus the normal-symbol ambiguity is removed by the triangular prescription whenever the two Gram matrices are nonsingular. For the unitary vacuum module with $\displaystyle{c>1}$ this holds after removing the $\displaystyle{SL(2,\mathbb{R})}$ null module. At a Kac zero the recursion correctly becomes singular and the symbol must instead be defined on the corresponding quotient.
-
-The first nontrivial blocks are
-
-$$\begin{align}
-\widehat{F}_{0}^{\mathrm{normal}} &=\dfrac{4}{c}\widehat{H}_{-2}\widehat{H}_{2} +\dfrac{3}{2c}\widehat{H}_{-3}\widehat{H}_{3} \\
-&\quad+\dfrac{4(c+8)}{c(5c+22)}
-\widehat{H}_{-4}\widehat{H}_{4} \\
-&\quad-\dfrac{24}{c(5c+22)} \left(\widehat{H}_{-4}\widehat{H}_{2}^{2} +\widehat{H}_{-2}^{2}\widehat{H}_{4}\right) \\
-&\quad-\dfrac{176}{c^{2}(5c+22)}
-\widehat{H}_{-2}^{2}\widehat{H}_{2}^{2} +\mathcal{O}_{\mathrm{level}}(5), \\
-\widehat{F}_{1}^{\mathrm{normal}} &=\dfrac{2}{c}\widehat{H}_{-2}\widehat{H}_{3} +\dfrac{1}{c}\widehat{H}_{-3}\widehat{H}_{4} +\mathcal{O}_{\mathrm{level}}(5), \\
-\widehat{F}_{-1}^{\mathrm{normal}} &=\dfrac{2}{c}\widehat{H}_{-3}\widehat{H}_{2} +\dfrac{1}{c}\widehat{H}_{-4}\widehat{H}_{3} +\mathcal{O}_{\mathrm{level}}(4).
-\end{align}$$
-
-Here $\displaystyle{\mathcal{O}_{\mathrm{level}}(N)}$ means terms whose positive-mode factors have total level at least $\displaystyle{N}$; it is not an expansion only in the polynomial degree. The large-$\displaystyle{c}$ quadratic coefficient tends to $\displaystyle{12/[c(n^{2}-1)]}$, agreeing with the classical symbol after $\displaystyle{c\to c_{\mathrm{cl}}}$ at leading order. Starting at level four, mixing with multiparticle descendants forces the displayed cubic and quartic terms.
-
-The recursion has been implemented through level eight for all three $\displaystyle{u=-1,0,1}$ operators in `Articles/Quantization in AdS/linearized gravity/archived/verification-scripts/vacuum_normal_symbol_reconstruction.wl`. It reproduces their exact Virasoro action on every vacuum descendant through that cutoff. This is an exact finite-level statement and a formal all-level recursion; convergence of the resulting infinite normal series in an operator topology is not established.
-
----
-
-Or we can expand the $\displaystyle{H_{u},u=-1,0,1}$ in $\displaystyle{c}$. Write
-
-$$\begin{align}
-H_{u} & =\dfrac{1}{c}\mathcal{N}_{u}^{(1)} +\dfrac{1}{c^{2}}\mathcal{N}_{u}^{(2)}+\mathcal{O}(c^{-3}), & u=-1,0,1
-\end{align}$$
-
-### $\displaystyle{u=0}$
-
-For $\displaystyle{u=0}$, we write
-
-$$\begin{align}
-\mathcal{N}_{0}^{(1)} & =\sum _{n\geqslant 2}A_{n}^{(0)}H_{-n}H_{n}
-\end{align}$$
-
-and require it to satisfy
-
-$$\begin{align}
-[H_{0},H_{-p}] & =pH_{-p} \\
-\implies A^{(0)}_{p} & =\dfrac{12}{p^{2}-1}
-\end{align}$$
-
-The superscript in $\displaystyle{\mathcal{N}_{u}^{(r)}}$ denotes the order in $\displaystyle{1/c}$, not the positive-mode level used in the triangular blocks above. Define
-
-$$\begin{align}
-d_{n} & :=\dfrac{n(n^{2}-1)}{12}, & \mathcal{P}_{N} & :=\left\{(a,b):a\geqslant b\geqslant2,\ a+b=N\right\},
-\end{align}$$
-
-and take every sum over an empty range or an empty $\displaystyle{\mathcal{P}_{N}}$ to vanish.
-
-### The $\displaystyle{u=0}$ Kernel
-
-Set
-
-$$\begin{align}
-A_{n}^{(0)} & :=\dfrac{n}{d_{n}}=\dfrac{12}{n^{2}-1}.
-\end{align}$$
-
-The leading term is
-
-$$\begin{align}
-\mathcal{N}_{0}^{(1)} & =\sum_{n=2}^{\infty}A_{n}^{(0)}\widehat{H}_{-n}\widehat{H}_{n}.
-\end{align}$$
-
-For $\displaystyle{a\geqslant b\geqslant2}$, define the cubic kernel
-
-$$\begin{align}
-\Gamma_{ab}^{(0)} & :=-\dfrac{ A_{a}^{(0)}(2a+b)+A_{b}^{(0)}(a+2b)
-}{(1+\delta_{ab})d_{a+b}},
-\end{align}$$
-
-and the subleading quadratic kernel
-
-$$\begin{align}
-B_{n}^{(0)} & :=-\dfrac{1}{d_{n}^{2}}\left[ \sum_{m=2}^{n-2}A_{m}^{(0)}(n+m)^{2}d_{n-m} +2d_{n}\sum_{(a,b)\in\mathcal{P}_{n}} \Gamma_{ab}^{(0)}(2a+b)d_{b} \right].
-\end{align}$$
-
-Then the complete vacuum-normal symbol through $\displaystyle{\mathcal{O}(c^{-2})}$ is determined by
-
-$$\begin{align}
-\mathcal{N}_{0}^{(2)} & =\sum_{n=2}^{\infty}B_{n}^{(0)}\widehat{H}_{-n}\widehat{H}_{n} \\
-&\quad+\sum_{a\geqslant b\geqslant2}\Gamma_{ab}^{(0)}\left( \widehat{H}_{-(a+b)}\widehat{H}_{b}\widehat{H}_{a} +\widehat{H}_{-a}\widehat{H}_{-b}\widehat{H}_{a+b} \right).
-\end{align}$$
-
-For example,
-
-$$\begin{align}
-\Gamma_{22}^{(0)}&=-\dfrac{24}{5}, & \Gamma_{32}^{(0)}&=-4, & B_{4}^{(0)}&=\dfrac{72}{25}, & B_{5}^{(0)}&=-\dfrac{6}{5},
-\end{align}$$
-
-which reproduce the large-$\displaystyle{c}$ expansion of the displayed level-four block and its level-five continuation.
-
-### The $\displaystyle{u=1}$ Kernel
-
-Set
-
-$$\begin{align}
-A_{n}^{(1)}
-& :=\begin{cases}
-\dfrac{n+1}{d_{n}}=\dfrac{12}{n(n-1)}, & n\geqslant3,\\
-0, & n=2.
-\end{cases}
-\end{align}$$
-
-The leading term is
-
-$$\begin{align}
-\mathcal{N}_{1}^{(1)} & =\sum_{n=3}^{\infty}A_{n}^{(1)}\widehat{H}_{1-n}\widehat{H}_{n}.
-\end{align}$$
-
-There are two independent cubic normal-ordering kernels. The one-negative--two-positive kernel is
-
-$$\begin{align}
-\Gamma_{ab}^{(1)} & :=-\dfrac{ A_{b}^{(1)}(a+1-b)+A_{a+b}^{(1)}(2a+b)
-}{(1+\delta_{ab})d_{a}}, & (a,b)&\neq(2,2),\\
-\Gamma_{22}^{(1)}&:=0,
-\end{align}$$
-
-where the exceptional value follows from the vacuum $\displaystyle{SL(2,\mathbb{R})}$ null relation. The two-negative--one-positive kernel is
-
-$$\begin{align}
-\widetilde{\Gamma}_{ab}^{(1)} & :=-\dfrac{ A_{a+1}^{(1)}(2a+b+2)+A_{b+1}^{(1)}(a+2b+2)
-}{(1+\delta_{ab})d_{a+b+1}}.
-\end{align}$$
-
-The subleading quadratic kernel is
-
-$$\begin{align}
-B_{n}^{(1)} & :=-\dfrac{1}{d_{n}d_{n-1}}\left[ \sum_{m=3}^{n-2}A_{m}^{(1)}(n+m)(n+m-2)d_{n-m}\right.\\
-&\qquad\left. +d_{n-1}\sum_{(a,b)\in\mathcal{P}_{n}} \Gamma_{ab}^{(1)}(2a+b)d_{b} +d_{n}\sum_{(a,b)\in\mathcal{P}_{n-1}} \widetilde{\Gamma}_{ab}^{(1)}(2a+b)d_{b} \right].
-\end{align}$$
-
-Therefore
-
-$$\begin{align}
-\mathcal{N}_{1}^{(2)} & =\sum_{n=3}^{\infty}B_{n}^{(1)}\widehat{H}_{1-n}\widehat{H}_{n} \\
-&\quad+\sum_{a\geqslant b\geqslant2}
-\Gamma_{ab}^{(1)}\widehat{H}_{1-a-b}\widehat{H}_{b}\widehat{H}_{a} \\
-&\quad+\sum_{a\geqslant b\geqslant2}
-\widetilde{\Gamma}_{ab}^{(1)}\widehat{H}_{-a}\widehat{H}_{-b}\widehat{H}_{a+b+1}.
-\end{align}$$
-
-The first nonzero subleading coefficients include
-
-$$\begin{align}
-\Gamma_{32}^{(1)}&=-\dfrac{12}{5}, & \widetilde{\Gamma}_{22}^{(1)}&=-\dfrac{8}{5}, & B_{5}^{(1)}&=\dfrac{24}{25}.
-\end{align}$$
-
-### The $\displaystyle{u=-1}$ Kernel and Verification Boundary
-
-The star structure fixes the remaining symbol without an independent calculation:
-
-$$\begin{align}
-\mathcal{N}_{-1}^{(r)}&=\left(\mathcal{N}_{1}^{(r)}\right)^{\dagger}, & r&=1,2.
-\end{align}$$
-
-In particular,
-
-$$\begin{align}
-\mathcal{N}_{-1}^{(2)} & =\sum_{n=3}^{\infty}B_{n}^{(1)}\widehat{H}_{-n}\widehat{H}_{n-1} \\
-&\quad+\sum_{a\geqslant b\geqslant2}
-\Gamma_{ab}^{(1)}\widehat{H}_{-a}\widehat{H}_{-b}\widehat{H}_{a+b-1} \\
-&\quad+\sum_{a\geqslant b\geqslant2}
-\widetilde{\Gamma}_{ab}^{(1)}\widehat{H}_{-(a+b+1)}\widehat{H}_{b}\widehat{H}_{a}.
-\end{align}$$
-
-The leading kernels follow from the central contractions in the Virasoro commutators. Cancelling the remaining quadratic commutator residuals fixes $\displaystyle{\Gamma_{ab}^{(0)}}$, $\displaystyle{\Gamma_{ab}^{(1)}}$, and $\displaystyle{\widetilde{\Gamma}_{ab}^{(1)}}$; matching the one-particle matrix elements then fixes $\displaystyle{B_{n}^{(0)}}$ and $\displaystyle{B_{n}^{(1)}}$. Expanding the exact triangular Gram recursion and comparing every coefficient through $\displaystyle{\mathcal{O}(c^{-2})}$ gives zero residual for $\displaystyle{\widehat{F}_{0}^{\mathrm{normal}}}$ at levels two through eight and for $\displaystyle{\widehat{F}_{1}^{\mathrm{normal}}}$ at levels three through eight. This is a formal all-level large-central-charge construction; convergence of the infinite sums on a common dense operator domain is not established.
+**Audit boundary:** the all-order CPS checks start from the vacuum cocycle $B$ specified in the original note. They are not a new component-by-component evaluation of the full bulk/boundary/corner symplectic integral, nor a new proof of linearized mode completeness. The formal-completeness induction uses that linearized completeness as an input. The $1/c$ tables expand coefficients at fixed algebra generators; they are not uniform large-$c$ operator estimates.

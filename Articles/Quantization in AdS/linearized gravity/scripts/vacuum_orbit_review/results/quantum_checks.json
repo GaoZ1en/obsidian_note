@@ -1,0 +1,10 @@
+{
+  "original_c^-1_c^-2_coefficient_comparisons": 1020,
+  "exact_PBW_commutator_tests_through_input_level8": 154,
+  "H0_exact_normal_terms_positive_level_le10": 299,
+  "H1_exact_normal_terms_positive_level_le10": 196,
+  "Hminus1_terms_by_adjoint": 196,
+  "inverse_c_expansion": "through c^-4, remainder O(c^-5) for each coefficient",
+  "domain": "algebraic direct sum of finite-energy vacuum levels; c>1",
+  "full_CPS_quantum_moment_map_not_proved": true
+}
