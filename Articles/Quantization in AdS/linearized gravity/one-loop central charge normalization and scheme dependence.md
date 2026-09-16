@@ -1,6 +1,6 @@
 # One-Loop Central Charge Normalization and Scheme Dependence
 
-This note separates external one-loop quantization prescriptions from the metric/CPS derivation in [[Articles/Quantization in AdS/linearized gravity/higher perturbations of linearized gravity modes|higher perturbations of linearized gravity modes]]. The conclusions below have three different statuses:
+This note separates external one-loop quantization prescriptions from the metric/CPS derivation in [[Articles/Quantization in AdS/linearized gravity/archived/higher perturbations of linearized gravity modes|higher perturbations of linearized gravity modes]]. The conclusions below have three different statuses:
 
 1. the Giombi--Maloney--Yin and Cotler--Jensen formulas are source-derived statements in their specified prescriptions;
 2. the finite coupling transformation is the project's scheme-dependence inference from the complete renormalized Einstein variational problem;

@@ -1,5 +1,5 @@
 > [!archive]
-> Legacy project snapshot. Statements that set $c_{\mathrm q}=C+13$ record the Cotler--Jensen/reference zeta representative used at the time; they do not establish a scheme-independent residual shift relative to a separately physical Newton coupling. The active synthesis is [[Articles/Quantization in AdS/linearized gravity/higher perturbations of linearized gravity modes|higher perturbations of linearized gravity modes]].
+> Legacy project snapshot. Statements that set $c_{\mathrm q}=C+13$ record the Cotler--Jensen/reference zeta representative used at the time; they do not establish a scheme-independent residual shift relative to a separately physical Newton coupling. The active synthesis is [[Articles/Quantization in AdS/linearized gravity/all order perturbation result|all order perturbation result]].
 
 ## Higher Virasoro Charges as Local Phase-Space Coordinates
 

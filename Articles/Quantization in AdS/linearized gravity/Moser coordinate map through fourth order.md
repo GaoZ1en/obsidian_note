@@ -1,6 +1,6 @@
 # Moser coordinate map through fourth order
 
-Companion to [[higher perturbations of linearized gravity modes]]. This supplies two further **direct-coordinate** orders beyond the second-order Darboux map. It is a formal calculation, not a convergence theorem.
+Companion to [[Articles/Quantization in AdS/linearized gravity/archived/higher perturbations of linearized gravity modes]]. This supplies two further **direct-coordinate** orders beyond the second-order Darboux map. It is a formal calculation, not a convergence theorem.
 
 Write $\Omega=\Omega_0+\sum_{r\ge1}\kappa^r\Omega_r$, with homogeneous mode-space degree $r$ in the coefficients of $\Omega_r$. For the Euler vector field $\mathcal E$ put
 

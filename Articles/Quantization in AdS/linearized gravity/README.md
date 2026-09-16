@@ -29,11 +29,11 @@ This directory contains the AdS$_3$ linearized-gravity notes, the nonlinear Brow
 | `Kac-Moody algebra.md` | Large-gauge mode charges and their Kac--Moody-type brackets. |
 | `Euclidean correlation function of boundary stress tensor.md` | Euclidean boundary stress-tensor two-point function from Brown--York images of the normalized modes. |
 
-## Nonlinear Brown--Henneaux and Higher Perturbations
+## Nonlinear Brown--Henneaux Vacuum Sector
 
 | File | Description |
 |---|---|
-| `higher perturbations of linearized gravity modes.md` | Formal vacuum-orbit continuation, exact CPS and charge formulas, low-mode Hill reconstruction, and fixed-central-charge quantum reconstruction, with the remaining CPS/Wick moment-map question stated separately. |
+| `all order perturbation result.md` | Main note: vacuum-mode continuation, exact symplectic form and Noether charges from finite diffeomorphism covariance, and algebraic vacuum quantization at fixed central charge. |
 | `Moser coordinate map through fourth order.md` | Time-ordered radial Moser map through fourth order, with noncommutative and radial consistency checks. |
 | `scripts/vacuum_orbit_review/README.md` | Reproduction commands and scope of the classical, Hill, gauge, Moser, and finite-level quantum checks. |
 | `scripts/finite_diffeomorphism_green_kernel.wl` | Exact Green kernel for the exceptional orbit at finite circle diffeomorphism. |
@@ -73,8 +73,8 @@ This directory contains the AdS$_3$ linearized-gravity notes, the nonlinear Brow
 | Path | Contents |
 |---|---|
 | `archived/backup.md` | Legacy higher-charge and quantization snapshot; historical $C+13$ statements are explicitly scoped to the CJ/reference representative. |
-| `archived/higher perturbations before 2026-09-16.md` | Byte-for-byte main-note snapshot before the vacuum-orbit review. |
+| `archived/higher perturbations of linearized gravity modes.md` | Previous extended treatment: Hill reconstruction, Moser/Darboux construction, quantum low-mode reconstruction, and verification boundaries. |
 | `archived/one-loop-central-charge-audits/` | Five long CPS, measure, canonical-Wick, and scheme-dependence audit reports. |
 | `archived/verification-scripts/` | Conditional Virasoro/normal-symbol/determinant programs and the Python/Sage checks used by the one-loop audits. |
 
-The archive preserves derivations, failed branches, regulator diagnostics, and finite-cutoff evidence. Active claims are controlled by the two active synthesis notes above.
+The archive preserves derivations, failed branches, regulator diagnostics, and finite-cutoff evidence. The vacuum-sector project is organized around `all order perturbation result.md`. Moser calculations, reconstruction scripts, and the archived extended treatment supply supporting material; the external one-loop normalization note remains a separate reference.

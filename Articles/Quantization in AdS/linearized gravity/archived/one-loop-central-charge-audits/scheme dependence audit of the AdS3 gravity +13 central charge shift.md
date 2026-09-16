@@ -606,7 +606,7 @@ The CJ/GYM analytic-continuation scheme is the representative $\Delta c=13$ rela
 
 ## Local project inputs
 
-- [[Articles/Quantization in AdS/linearized gravity/higher perturbations of linearized gravity modes|higher perturbations of linearized gravity modes]]
+- [[Articles/Quantization in AdS/linearized gravity/archived/higher perturbations of linearized gravity modes|higher perturbations of linearized gravity modes]]
 - [[Articles/Quantization in AdS/linearized gravity/archived/one-loop-central-charge-audits/CPS one-loop central charge from next-order perturbation|CPS one-loop central charge from next-order perturbation]]
 - [[Articles/Quantization in AdS/linearized gravity/archived/one-loop-central-charge-audits/CPS canonical quantum perturbation test of Brown-Henneaux one-loop central charge|CPS canonical quantum perturbation test of Brown-Henneaux one-loop central charge]]
 - [[Articles/Quantization in AdS/linearized gravity/archived/one-loop-central-charge-audits/CPS reduced measure and Virasoro anomaly test|CPS reduced measure and Virasoro anomaly test]]

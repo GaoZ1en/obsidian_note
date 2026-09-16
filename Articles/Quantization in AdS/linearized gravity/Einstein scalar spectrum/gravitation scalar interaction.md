@@ -147,7 +147,7 @@ $$\begin{align}
 \omega ^{(0)}[\phi _{nm},\phi ^{*}_{n'm'}] & =i\delta _{nn'}\delta _{mm'}
 \end{align}$$
 
-for the gravitational modes, use the representatives $\displaystyle{\zeta _{A,n}}$ in [[Articles/Quantization in AdS/linearized gravity/higher perturbations of linearized gravity modes|higher perturbations of linearized gravity modes]]
+for the gravitational modes, use the representatives $\displaystyle{\zeta _{A,n}}$ in [[Articles/Quantization in AdS/linearized gravity/all order perturbation result|all order perturbation result]]
 
 $$\begin{align}
 \zeta & =\sum _{A=L,R}\sum _{n\geqslant 0}(a_{A,n}\zeta _{A,n}+a^{\dagger}_{A,n}\zeta ^{*}_{A,n}), & h=\mathcal{L}_{\zeta}g^{(0)}
