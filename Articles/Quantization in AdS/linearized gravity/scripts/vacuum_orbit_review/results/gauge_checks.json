@@ -1,0 +1,7 @@
+{
+  "radial_indicial": "(s**2 - 2*s - 4)*A(t)",
+  "tangential_indicial": "s**2*B(t) - 4*B(t) + 2*Derivative(A(t), t)",
+  "axial_Q_exact": true,
+  "gauge_identity_components": 3,
+  "analytic_reflecting_IBVP": "assumption, not certified by these symbolic tests"
+}

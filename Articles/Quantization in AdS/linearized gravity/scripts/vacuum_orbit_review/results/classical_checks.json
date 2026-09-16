@@ -1,0 +1,6 @@
+{
+  "hamiltonian_identity_checks_through_kappa3": 180,
+  "X0_exact_through_kappa3": true,
+  "exceptional_trace_log_coefficient": "-1/2 + 3*sqrt(5)/10",
+  "intermediate_mode_truncation": false
+}

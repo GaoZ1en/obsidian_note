@@ -1,0 +1,5 @@
+{
+  "exact_diffeomorphism_Hill_Schur_checks_to_epsilon4": 16,
+  "single_pair_H0_coefficients_lambda1_to_lambda3": ["2*a*b/3", "0", "-22*a**2*b**2/135"],
+  "warning": "H0 physical is potential constant divided by lambda; pair H+-2 held fixed."
+}
