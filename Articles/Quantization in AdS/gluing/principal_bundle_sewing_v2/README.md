@@ -12,6 +12,12 @@
 
 [2026-09-18 逐条反例审查](counterexample_audit_2026-09-18.md) 记录原 31 项 claim 索引与正文攻击；[输入删减审查](input_necessity_audit_2026-09-18.md) 涉及 38 组输入。两份 audit 本身也接受本次复核，其历史执行记录未改写。每项删减的重建方法、条件和层级见[输入依赖表](../audit_repair_2026-09-18/input_dependencies.md)。
 
+后续两项计算单独保存，不改写原合稿的历史验收范围：
+
+- [传播 SU(2) 的首个非线性阶](nonabelian_propagating_sewing_2026-09-18.md)：真正三维 Cauchy fields、完整 gauge fibers、dressed electric/平滑跨缝 transport、显式混合括号与声明代数的 coefficient kernel/image。无真实外墙，有限平行 cuts，结果模 $\kappa^2$；量子层仅模 $\hbar^2$。
+- [辅助选择独立性](auxiliary_choice_independence_2026-09-18.md)：有限 refinement、D/N 临时 closure、实际 collar arrows 的构造性比较；另给 $\kappa\hbar^2$ 的 naive Moyal 反例及 finite-dimensional 修复，完整 YM quantum transport 仍开放。
+- [验证记录](checks/nonabelian_sewing_verification_2026-09-18.md)：42 项 Mathematica 与 2 项 xAct 检查；有限检查和正文解析证明分开。
+
 | 文件 | 内容 |
 |---|---|
 | [00](notes/00_problem_and_contract.md) | 研究问题，独立 target，理论/代数/最小性三层，派生缓存与完整场对象 |

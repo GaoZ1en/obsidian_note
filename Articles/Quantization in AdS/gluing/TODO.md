@@ -40,6 +40,12 @@ The active route is regional/global observable algebra and its composition. Stat
 
 ## Gauge Benchmark
 
+Current regional construction and sewing retain the full fields, actual gauge action, stabilizers, and presymplectic null directions. Earlier quotient entries below record historical derived benchmarks; they are not the current field-space prescription.
+
+- [x] Construct the first nonlinear coefficient of propagating four-dimensional SU(2) sewing without reducing the field space: dressed electric/transport probes, Hamiltonian lifts, source reconstruction and the declared single-vertex algebra's coefficient kernel/image. See [the follow-up model](principal_bundle_sewing_v2/nonabelian_propagating_sewing_2026-09-18.md); the finite-time, decaying, parallel-cut result is formal modulo $\kappa^2$.
+- [x] Compare finite refinement, temporary D/N closures and actual collar choices in that model; verify the corresponding semiclassical product modulo $\hbar^2$, and exhibit/repair the finite-dimensional $\kappa\hbar^2$ Moyal obstruction. See [auxiliary choices](principal_bundle_sewing_v2/auxiliary_choice_independence_2026-09-18.md).
+- [ ] Construct higher-order quantum prescription transport for that propagating model, with actual boundary/corner Ward and coincident-line extensions; the single canonical-shear correction does not complete Yang–Mills renormalization.
+
 - [x] Define the framed regional classical algebra for pure 1+1 YM after quotienting based proper gauge; retain the active cut action, endpoint charges, and prescribed-history transport.
 - [ ] Specify electric, magnetic, or mixed center choices and their effect on regional observables and superselection sectors.
 - [x] Upgrade compact $1+1$ Yang--Mills to an operator-algebra sewing theorem on the representative-coefficient holonomy–flux Rees core, with explicit PBW kernel, section, involution and classical specialization.
