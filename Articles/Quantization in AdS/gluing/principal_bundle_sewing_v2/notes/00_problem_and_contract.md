@@ -36,7 +36,7 @@
 
 \[
 \mathfrak T_B(R)=\big(R,P,G,S_R,B,\mathcal G_{\rm prop},Q_\partial,u;
-\mathscr O,\mathcal A_B,\mathfrak R,\mathsf q\big).
+\mathscr O,\mathsf q\big).
 \]
 
 这些符号的物理含义如下。
@@ -47,7 +47,9 @@
 - \(\mathscr O\) 指定测试函数、Wilson/network 标签、flux、sector-changing insertions 和完成方式；\(\mathcal A_B\) 是在该 prescription 下的经典或量子代数。
 - \(\mathfrak R\) 是由 action/domain 重新产生选中边界的**完整源关系**的规则；它不是仍在传播的一套隐藏端口变量。\(\mathsf q\) 是量子化、重整化、global sector、framing 等额外数据。
 
-暂时不用的 boundary source 不属于当前动力学自由度；保存它的构造规则不违反 closed-intermediate 要求。
+$\mathcal A_B$ 与 $\mathfrak R$ 由上述 action/domain/source/observable rules 生成，不再是独立输入或预先给好的成功证书。相应 source 存在、约束传播、kernel、image 与量子乘法仍按模型证明。完整 fields、proper 的实际作用和预辛退化方向在区域构造及 sewing 全程保留；不能用 gauge slice 或 coarse quotient 替代。第 05–07 篇的 quotient/PBW/Haar 只用于派生 observable/representation 的验收，完整未约化 source constructors 和比较见[修订证明 R3–R4](../../audit_repair_2026-09-18/repair_proofs.md)。
+
+暂时不用的 boundary source 不属于当前动力学自由度；保存其生成规则不违反 closed-intermediate 要求。由 PDE 决定的 non-characteristic jets、响应缓存、stabilizer 列表、Gram 矩阵等在条件满足时重算，具体依赖见[输入表](../../audit_repair_2026-09-18/input_dependencies.md)。
 
 ## 0.4 不存在从一份裸闭合代数出发的无条件 reopening
 
