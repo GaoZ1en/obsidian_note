@@ -3,10 +3,10 @@
 This is the spectral companion to [Einstein scalar solutions on the vacuum orbit](Einstein%20scalar%20solutions%20on%20the%20vacuum%20orbit.md). It extends the connected scalar-primary calculation in [two particle spectrum](two%20particle%20spectrum.md), with its physical-mass and homogeneous-response conventions, to every admissible background
 
 $$
- \bar g[a]=\Phi_a^*g^{(0)},\qquad \kappa^2=16\pi G,\qquad L_{\rm AdS}=1.
+ \bar g[a]=\Phi_a^*g^{(0)},\qquad \kappa^2=16\pi G,\qquad L_{\mathrm{AdS}}=1.
 $$
 
-The answer depends on what is meant by energy. With the transported Killing clock $K_a=\Phi_a^*\partial_t$, **the complete order-$G$ scalar-primary spectrum is isospectral to the reference spectrum, including both low-spin corrections**. With the original boundary time, a generic background is not stationary: its transported states have calculable energy expectation values, not new stationary eigenvalues labelled by $a$. For periodic representatives the fixed-time evolution also has a complete set of Floquet phases. Sections 5–8 give these three results separately.
+The answer depends on what is meant by energy. With the transported Killing clock $K_a=\Phi_a^*\partial_t$, **the connected order-$G$ scalar-primary spectrum is isospectral to the reference spectrum, including both low-spin corrections**, under the same reference-branch and all-index input assumptions. With the original boundary time, a generic background is not stationary: its transported states have calculable energy expectation values, not new stationary eigenvalues labelled by $a$. For periodic representatives admitting the Cauchy foliation specified in section 8, the fixed-period evolution has the stated Floquet eigenphases on this branch. Sections 5–8 give these three results separately.
 
 ## 1. The action, boundary conditions, and perturbative counting
 
@@ -31,20 +31,20 @@ $$
  \tag{1.2}
 $$
 
-The scalar $\varphi$ is kept as the unexpanded variational field in this action expansion; its order-$\kappa^2$ solution correction is constructed in the companion. Substituting that correction off shell would also produce $\delta S_{\rm KG}[\psi_1]$, which cannot simply be dropped. The metric counting above counts scalar-induced backreaction, not the already resummed vacuum graviton. The order-$G$ formulas below are exact in an admitted finite $\Phi_a$. Expanding instead at fixed canonically normalized $a$ produces powers of $\kappa$ from $\Phi_a=e^{\kappa\zeta[a]}$; section 7.3 explicitly performs that different expansion.
+The scalar $\varphi$ is kept as the unexpanded variational field in this action expansion; its order-$\kappa^2$ solution correction is constructed in the companion. Substituting that correction off shell would also produce $\delta S_{\mathrm{KG}}[\psi_1]$, which cannot simply be dropped. The metric counting above counts scalar-induced backreaction, not the already resummed vacuum graviton. The order-$G$ formulas below are exact in an admitted finite $\Phi_a$. Expanding instead at fixed canonically normalized $a$ produces powers of $\kappa$ from $\Phi_a=e^{\kappa\zeta[a]}$; section 7.3 explicitly performs that different expansion.
 
 Define the pairing $\langle k,J\rangle_a=\int d^3x\sqrt{-\bar g[a]}\,k_{\mu\nu}J^{\mu\nu}$ and the linearized Einstein operator $\mathcal L_a=D\mathcal E|_{\bar g[a]}$. After subtracting the pure-background action, its quadratic expansion is
 
 $$
  S_R-S_R[\bar g[a],0]
- =S_{\rm KG}[\bar g[a],\varphi]
+ =S_{\mathrm{KG}}[\bar g[a],\varphi]
  +\kappa^2\left[-\frac12\mathfrak B_a(k,k)
                        +\frac12\langle k,T_a[\varphi]\rangle_a\right]
  +O(\kappa^4).
  \tag{1.3}
 $$
 
-Here $\mathfrak B_a$ is the **boundary-completed gravitational Hessian**. Its bulk expression is $\langle k,\mathcal L_a k\rangle_a$; the surface/endpoint terms are the ones inherited from (1.1), not a new freely chosen boundary prescription. The sign follows from $\delta S_{\rm grav}=-\kappa^{-2}\langle\delta g,\mathcal E\rangle$ for a covariant metric variation, while $\delta S_{\rm KG}=\tfrac12\langle\delta g,T\rangle$. Equation (1.3) is an off-shell action expansion in $k,\varphi$ before eliminating $k$.
+Here $\mathfrak B_a$ is the **boundary-completed gravitational Hessian**. Its bulk expression is $\langle k,\mathcal L_a k\rangle_a$; the surface/endpoint terms are the ones inherited from (1.1), not a new freely chosen boundary prescription. The bulk signs follow from $\delta S_{\mathrm{grav}}=-\kappa^{-2}\langle\delta g,\mathcal E\rangle$ and $\delta S_{\mathrm{KG}}=\tfrac12\langle\delta g,T\rangle$ for a covariant metric variation. Equation (1.3) is an off-shell expansion in $k,\varphi$ within the stationary background variational problem: its allowed endpoint data must make the first gravitational variation vanish. For arbitrary endpoint histories an additional linear surface variation remains and (1.3) cannot be used as written. Transport the endpoint prescription with the fields, and retain its contributions when extracting the Hamiltonian.
 
 For the spectral exchange calculation, evaluate its quartic coefficient on free on-shell scalar modes. Their polarized stresses are conserved, so the chosen Einstein response obeys all constraints:
 
@@ -58,11 +58,11 @@ Elimination in the reciprocal quadratic pairing gives
 
 $$
  \boxed{\quad
- S_{\rm eff}[a;\varphi]
- =S_{\rm KG}[\bar g[a],\varphi]
+ S_{\mathrm{eff}}[a;\varphi]
+ =S_{\mathrm{KG}}[\bar g[a],\varphi]
  +\frac{\kappa^2}{4}\langle k_{\varphi,a},T_a[\varphi]\rangle_a
  +O(G^2)
- =S_{\rm KG}+\frac{\kappa^2}{8}\langle T_a,G_aT_a\rangle_a+O(G^2).
+ =S_{\mathrm{KG}}+\frac{\kappa^2}{8}\langle T_a,G_aT_a\rangle_a+O(G^2).
  \quad}
  \tag{1.5}
 $$
@@ -94,8 +94,8 @@ The same change-of-variables identity holds for the GHY and counterterm terms at
 
 $$
  \boxed{\quad
- S_{\rm eff}[a;\mathscr U_a v]-S_{\rm eff}[a;0]
- =S_{\rm eff}[0;v]-S_{\rm eff}[0;0]+O(G^2).
+ S_{\mathrm{eff}}[a;\mathscr U_a v]-S_{\mathrm{eff}}[a;0]
+ =S_{\mathrm{eff}}[0;v]-S_{\mathrm{eff}}[0;0]+O(G^2).
  \quad}
  \tag{2.3}
 $$
@@ -141,7 +141,7 @@ has the same normalization as at $a=0$. No new Bogoliubov prescription or state 
 For a transported constant-$\tau_a$ slice, the lapse times its volume element is $R_a\,dR_a\,d\theta_a$. The resonant interaction Hamiltonian in the reference convention is
 
 $$
- H_{{\rm res},a}^{(G)}
+ H_{{\mathrm{res}},a}^{(G)}
  =-\frac{\kappa^2}{4}
  \left\langle\int R_a\,dR_a\,d\theta_a\,
        k_{\varphi,a\,\mu\nu}T_a^{\mu\nu}[\varphi]\right\rangle_{\tau_a}.
@@ -259,7 +259,7 @@ For example, at $\Delta=2$ the complete coefficients $\gamma/G$ are the followin
 | 1 | $-1368/35$ | $-1000/21$ | $-48$ |
 | 2 | $-416/5$ | $-7352/77$ | $-96$ |
 
-The reference coefficients in (5.1) are inherited from the existing scalar calculation; this note proves their all-background transport. The executable appendix independently checks all 25 saved generic-mass coefficients, but does not claim to derive an all-$n$ formula from 25 samples.
+The reference coefficients in (5.1) are inherited from the existing scalar calculation; this note proves their all-background transport. The executable appendix checks all 25 saved generic-mass coefficients, but does not derive an all-$n$ formula from those samples. The current [OFPT note, section 9](OFPT%20two%20particle%20energy%20shifts.md#9-analytic-completion-for-arbitrary-radial-level-and-spin) gives an all-index completion conditional on the reciprocal response and the high-spin Lorentzian inversion input. Those conditions are inherited here. The conjugation theorem is valid for the reference matrix itself and does not independently establish its proposed closed eigenvalues. All perturbative remainders refer to fixed finite quantum numbers and an admitted fixed profile; uniform control at quantum numbers scaling with $G^{-1}$ is not asserted.
 
 ## 6. An action-normalization check which does not use the final spectrum
 
@@ -331,7 +331,7 @@ This convention is the one for which the vacuum density is $-c/24$. A reference 
 
 $$
  \langle\mathscr T_A^{[a]}(x)\rangle_P
- -\langle\mathscr T_A^{[a]}(x)\rangle_{\rm vac}
+ -\langle\mathscr T_A^{[a]}(x)\rangle_{\mathrm{vac}}
  =(f_A')^2w_A.
 $$
 
@@ -346,9 +346,9 @@ For the states just specified, the complete fixed-boundary-frame mean gaps, thro
 
 $$
  \boxed{\begin{aligned}
- \langle E_t\rangle_{P,a}-\langle E_t\rangle_{{\rm vac},a}
+ \langle E_t\rangle_{P,a}-\langle E_t\rangle_{{\mathrm{vac}},a}
    &=\mathcal A_Lw_L+\mathcal A_Rw_R+O(G^2),\\
- \langle J_t\rangle_{P,a}-\langle J_t\rangle_{{\rm vac},a}
+ \langle J_t\rangle_{P,a}-\langle J_t\rangle_{{\mathrm{vac}},a}
    &=\mathcal A_Lw_L-\mathcal A_Rw_R+O(G^2).
  \end{aligned}}
  \tag{7.3}
@@ -372,7 +372,7 @@ These states generally are not eigenstates of the original energy or spin. A non
 For reference the transformed-vacuum energy above empty AdS is, at classical central charge,
 
 $$
- E_{\rm vac}[a]=\frac c{24}\sum_{A=L,R}
+ E_{\mathrm{vac}}[a]=\frac c{24}\sum_{A=L,R}
  \left[\left\langle\left(\frac{f_A''}{f_A'}\right)^2\right\rangle
                   -\mathcal A_A+1\right],
  \tag{7.5}
@@ -450,7 +450,7 @@ $$
  \delta E_{K_a}^{(G)}=Gg_{n|\ell|},\qquad
  \delta\langle E_t\rangle^{(G)}
    =\frac{1+\cosh(N\eta)}2Gg_{n|\ell|},\qquad
- E_{\rm vac}=\frac{c(N^2-1)}{24}\big[\cosh(N\eta)-1\big].
+ E_{\mathrm{vac}}=\frac{c(N^2-1)}{24}\big[\cosh(N\eta)-1\big].
  \tag{7.8}
 $$
 
@@ -462,10 +462,23 @@ The mode generators of the vacuum note are $2\pi$-periodic in $t$. Their admissi
 
 $$
  \tau_a(t+2\pi,r,\varphi)=\tau_a(t,r,\varphi)+2\pi,
- \qquad R_a,\theta_a\ \hbox{are periodic modulo }\theta_a\sim\theta_a+2\pi.
+ \qquad R_a,\theta_a\ \text{are periodic modulo }\theta_a\sim\theta_a+2\pi.
 $$
 
-For such representatives the transported evolution over one period is conjugate to the reference evolution. Divide out the transported-vacuum phase, consistently with the energy gaps used throughout this note, and denote the resulting monodromy by $\mathcal M_a(2\pi)$. Its eigenphases on the chosen scalar-primary branches are
+To define fixed-boundary-time evolution, assume in addition a smooth family of spacelike Cauchy surfaces $\widehat\Sigma_t$ anchored at boundary time $t$, with vanishing allowed boundary flux, such that $\widehat\Sigma_{t+2\pi}$ is the image of $\widehat\Sigma_t$ under the period map. The transported solution map then identifies Cauchy data on these surfaces with reference data, and the identification is periodic. Coordinate surfaces $t=\mathrm{const}$ may be used only if they satisfy these conditions.
+
+This is an additional foliation condition, not a consequence of a smooth periodic diffeomorphism. For example, the proper diffeomorphism
+
+$$\begin{aligned}
+(T,R,\Theta)&=\left(t+\frac{5r^2}{(1+r^2)^3},r,\varphi\right),\\
+\bar g^{tt}&=-\frac1{1+r^2}
++(1+r^2)\left[\frac{d}{dr}\frac{5r^2}{(1+r^2)^3}\right]^2,\qquad
+\bar g^{tt}\big|_{r=1/2}=\frac{1596}{3125}>0
+\end{aligned}$$
+
+is smooth at the center, preserves Brown–Henneaux falloffs, and commutes with the period map. Nevertheless $dt$ is spacelike near $r=1/2$, so its constant-$t$ surfaces are not spacelike there. A suitable Cauchy foliation must be selected instead; the adapted Killing-clock construction remains valid.
+
+Under the stated foliation condition, evolution over one period is conjugate to reference evolution. Divide out the transported-vacuum phase, consistently with the energy gaps used throughout this note, and denote the resulting monodromy by $\mathcal M_a(2\pi)$. Its eigenphases on the chosen scalar-primary branches are
 
 $$
  \boxed{
@@ -477,7 +490,7 @@ $$
  \tag{8.1}
 $$
 
-Thus the quasienergies modulo integers are $2\Delta+Gg_{n|\ell|}+O(G^2)$. This supplies a fixed-period spectral observable even though there is no stationary fixed-$a$ $\partial_t$ eigenproblem. A representative with nonperiodic time dependence need not admit this Floquet statement.
+Thus the quasienergies modulo integers are $2\Delta+Gg_{n|\ell|}+O(G^2)$. This supplies a fixed-period spectral observable even though there is no stationary fixed-$a$ $\partial_t$ eigenproblem. A representative with nonperiodic time dependence, or without the stated period-compatible Cauchy evolution, is outside this Floquet statement.
 
 ## 9. Scope and executed checks
 
@@ -485,7 +498,26 @@ The new result is a transport theorem, with complete order-$G$ coefficients, eig
 
 The code below was executed with Python, SymPy 1.14.0, NumPy 2.3.5 and SciPy 1.17.0. It ran **65 grouped assertions**, all passing. They comprise four symbolic spectrum identities, the 25 saved generic-mass coefficients, three Schur-complement checks, one freshly evaluated lowest-mode exchange integral, four coefficient identities in an off-shell KG covariance check for the actual complex Brown–Henneaux seed, five scalar-mode equations, five KG normalization integrals, four finite-flow Schwarzian checks, four finite-flow clock integrals, two boundary-mode normalization identities, and eight tensor-density pullback checks. Maximum finite-flow residual: $8.89\times10^{-15}$; maximum tensor-density residual: $1.78\times10^{-15}$.
 
-The off-shell covariance test leaves the radial scalar function arbitrary; the tensor-density test uses random nonsingular coordinate Jacobians. These are checks of the expressions, not numerical evidence replacing the tensorial all-background proof. Existing Wolfram/xAct or Sage suites were not rerun here. The 25 stored coefficients are verification inputs, not independently recomputed radial blocks.
+The off-shell covariance test leaves the radial scalar function arbitrary; the tensor-density test uses random nonsingular coordinate Jacobians. These are checks of the expressions, not numerical evidence replacing the tensorial all-background proof. The original 2026-09-18 run did not rerun the Wolfram/xAct or Sage suites. The 25 stored coefficients are verification inputs, not independently recomputed radial blocks.
+
+### Review verification, 2026-09-19
+
+The embedded Python script was rerun unchanged in the Sage 10.9 Python environment: all 65 grouped assertions pass, with the same residual bounds. This remains a Python/SymPy reproduction, not an independent Sage representation-theory proof.
+
+Independent checks appropriate to the formulas were also run:
+
+| Check | Executed result |
+|---|---|
+| [Vacuum-orbit review script](scripts/vacuum_orbit_transport_checks.wl), case `clock`, Mathematica 14.3 | Ten check groups pass: the general finite-flow Schwarzian and clock average, negative-flow symmetry, the small-amplitude expansion modulo a periodic derivative, Schur-complement equations and coefficient, both mode normalizations, and a fresh lowest-mode stress integral and pair factor. |
+| Same script, case `foliation`, xAct/xCoba with xTras | Three residuals vanish, verifying the inverse-metric expression and the positive value $1596/3125$ in the counterexample above. |
+| [Existing solution checks](scripts/gravitation_scalar_solution_checks.wl), case `covariance`, xAct/xPert/xTras | The arbitrary-scalar diffeomorphism identity and first/second-order vacuum Einstein residuals vanish. |
+| Same solution checks, case `axisymmetric`, xAct/xCoba/xTras | All lowest-mode Einstein components, radial and momentum constraints, and constraint-propagation checks vanish. |
+
+Run each case in a fresh kernel, for example `verificationCase="clock"; Get["scripts/vacuum_orbit_transport_checks.wl"]` from this note's directory. The two xCoba cases require the components profile when using the xAct MCP. Both notes also pass Pandoc LaTeX/MathML conversion; the scoped whitespace and vault-policy checks pass.
+
+- **Verified:** the checks above, exact transport by covariance with transported data, and the clock formulas under their stated conditions.
+- **Assumptions:** the admitted smooth vacuum orbit, the reference connected scalar-primary branch and its all-index inputs, stationary endpoint prescription, reciprocal response, and a period-compatible Cauchy evolution for the Floquet result.
+- **Not verified:** a complete graviton–matter mixing calculation, a direct all-index OFPT summation, nonlinear convergence, or existence of the required Cauchy foliation for every possible bulk representative.
 
 ### References and reproducibility
 
@@ -499,7 +531,7 @@ Pinned repository snapshot: `6940ab5243b7d8f74bcfc2f2cf0138eeed50b240`.
 - Compère–Mao–Seraj–Sheikh-Jabbari, [1511.06079](https://arxiv.org/abs/1511.06079), section 2.4: finite Virasoro coadjoint transformations. Equations (7.2)–(7.8) are the resulting energy calculations in the present normalization.
 - Harlow–Wu, [1906.08616](https://arxiv.org/abs/1906.08616): the boundary-completed variational/CPS framework used when comparing actions, slices and charges.
 
-The self-contained script is embedded rather than added as a third repository file. Save the following block as `check_vacuum_orbit.py` and run it with the packages above; it reads no repository files and prints its result as JSON.
+The original self-contained Python reproduction remains embedded; the supplementary Mathematica/xAct review checks are linked above. Save the following block as `check_vacuum_orbit.py` and run it with the packages above; it reads no repository files and prints its result as JSON.
 
 ```python
 """Checks accompanying the two vacuum-orbit notes.
