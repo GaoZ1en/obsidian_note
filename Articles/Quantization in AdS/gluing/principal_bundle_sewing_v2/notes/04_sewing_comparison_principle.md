@@ -18,16 +18,16 @@ cut arrow 标为 proper 当且仅当 $g_{\rm as}\in\mathcal G_{\rm prop}$，不�
 
 **前提。** 有限普通 collar-compatible 几何与实际 principal bundles/cocycle 给定，呈现预先固定的 output sector。fields/variations 各自在声明域光滑到 face；connection、source、typed transmission 和共同 corner atlas 满足所列匹配。非特征 on-shell 高阶 jets 可由共同 PDE 与最低阶 matching 递推时，不另作输入；null 保留未由其余数据决定的 seeds。真实保留项与所移除 closing 由 action 标签固定，arrows 使用 §4.1 的实际 global proper 标记。
 
-**关系结论。** matched 区域源关系与独立未切分源关系通过 restriction/assembly 双向对应，连同实际 arrows 和 stabilizers。两边可以为空或多值；本关系定理不假设或证明一般 IBVP 的非空、唯一、连续性。具体模型另由自身 source constructor 完成这些义务，不把未证明的“well posed”写入输入后宣称完成。
+**关系结论。** matched 区域源关系与独立未切分源关系在实际 bundle presentations、arrows 和 stabilizers 层通过 restriction/assembly 比较。固定同一 presentation 后，场的限制与装配互逆；改变 presentation 则使用明确的 bundle map，不宣称所有 frame choices 的 raw fields 与固定 target 一一对应。两边可以为空或多值；本关系定理不假设或证明一般 IBVP 的非空、唯一、连续性。具体模型另由自身 source constructor 完成这些义务，不把未证明的“well posed”写入输入后宣称完成。
 
 **预辛结论。** 对已作实际 action/corner transport 计算的模型，在完整未约化 matched space 上有
 \[
  J^*\Omega_{\rm out}=\Omega_{\rm sew}.
 \tag{4.2}
 \]
-YM/Maxwell 的证明是将 (2.7) 代入 canonical potential 并用 Gauss 积分分部；U(1) CS 是 (7.3a) 的实际差式。具体未约化 constructors、保留的 gauge fibers 与 seam signs 见[修订证明 R4](../../audit_repair_2026-09-18/repair_proofs.md)。一般 action 未完成相应运输计算时，本式仍是待证事项而非新增成功假设。$J$、$dJ$ 的 onto 及 Hamiltonian tangent lifts 必须另证；仅有 pullback 式不保证它们，也不假定商光滑。对 Maxwell 的 real chain，$\lambda=0$ restriction 给显式线性 section。对已经提升的合法 $X_F$，(3.1) 直接给相同括号。
+YM/Maxwell 的证明是将 (2.7) 代入 canonical potential 并用 Gauss 积分分部；U(1) CS 是 (7.3a) 的实际差式。具体未约化 constructors、保留的 gauge fibers 与 seam signs 见[修订证明 R4](../../audit_repair_2026-09-18/repair_proofs.md)。一般 action 未完成相应运输计算时，本式仍是待证事项而非新增成功假设。$J$、$dJ$ 的 onto 及 Hamiltonian tangent lifts 必须另证；仅有 pullback 式不保证它们，也不假定商光滑。对 Maxwell 的 real chain，R4.3 在实际 smooth collar representatives 和固定 cutoffs 上构造连续线性 $J$，$\lambda=0$ restriction 给显式线性 section；不从抽象无限 jets 的可延拓性推出 smooth section。对已经提升的合法 $X_F$，(3.1) 直接给相同括号。
 
-**关系部分的证明。** 实际 $h$ 识别 collars 上的 fields；cocycle 给三重一致性，typed matching/PDE jet recursion 给所需光滑性。local EOM 与 variational balance 消去 seam sources。反向限制独立 global 解，给每片自身的 actual sources，而非旧 homogeneous B 的解。两过程互逆。普通 bundle-map descent 先构造箭头；§4.1 的成员检查保证其属于原 proper 群。反向限制任意 global proper map，代回装配公式恢复原 map，stabilizers 同理。全程不作 coarse quotient。证毕。
+**关系部分的证明。** 实际 $h$ 识别 collars 上的 fields；cocycle 给三重一致性，typed matching/PDE jet recursion 给所需光滑性。local EOM 与 variational balance 消去 seam sources。反向限制独立 global 解，给每片自身的 actual sources，而非旧 homogeneous B 的解。在固定 bundle presentation 内两过程互逆；换 presentation 时保留 §4.1 的 $\kappa$ 比较。普通 bundle-map descent 先构造箭头；§4.1 的成员检查保证其属于原 proper 群。反向限制任意 global proper map，代回装配公式恢复原 map，stabilizers 同理。全程不作 coarse quotient。证毕。
 
 该定理不是裸 $\mathcal A_{B_1}\otimes\mathcal A_{B_2}$ 的定理。它将几何关系比较、模型 source 存在性、预辛计算与 algebra presentation 分开；任何未完成层保留为开放问题。
 

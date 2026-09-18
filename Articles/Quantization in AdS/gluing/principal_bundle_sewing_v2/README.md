@@ -8,7 +8,7 @@
 
 ## 直接阅读
 
-当前入口为下列 `notes/` 分篇以及[修订材料总览](../audit_repair_2026-09-18/README.md)。[历史完整合稿](COMPLETE_NOTES.md) 仍保存修订前的 12 篇正文，**本次未同步，不能当作当前正文**。原[模型与缺口矩阵](notes/10_adversarial_review_and_model_matrix.md) 可用于定位原模型，修订后的证明状态和未证影响以[回测与状态表](../audit_repair_2026-09-18/regression_and_status.md)为准。原包 `claims.json` 不在本次固定 GitHub 目录中；没有用编号不同的旧 ledger 替代，也没有伪造恢复其状态字段。
+当前入口为下列 `notes/` 分篇以及[修订材料总览](../audit_repair_2026-09-18/README.md)。[完整合稿](COMPLETE_NOTES.md) 已在 PR 复核时同步当前 12 篇正文，修订前版本保留于 Git 基线。原[模型与缺口矩阵](notes/10_adversarial_review_and_model_matrix.md) 可用于定位原模型，修订后的证明状态和未证影响以[回测与状态表](../audit_repair_2026-09-18/regression_and_status.md)及 [PR 复核记录](../audit_repair_2026-09-18/pr_review_2026-09-18.md)为准。原包 `claims.json` 不在本次固定 GitHub 目录中；没有用编号不同的旧 ledger 替代，也没有伪造恢复其状态字段。
 
 [2026-09-18 逐条反例审查](counterexample_audit_2026-09-18.md) 记录原 31 项 claim 索引与正文攻击；[输入删减审查](input_necessity_audit_2026-09-18.md) 涉及 38 组输入。两份 audit 本身也接受本次复核，其历史执行记录未改写。每项删减的重建方法、条件和层级见[输入依赖表](../audit_repair_2026-09-18/input_dependencies.md)。
 
@@ -39,6 +39,6 @@ YM2 在实际适配坐标中算出 classical/quantum vertical kernel，给出 on
 
 本次实际运行的 SymPy 回测见[脚本](../audit_repair_2026-09-18/verify_repair.py)与[63 项结果](../audit_repair_2026-09-18/checks_result.json)。新攻击包括 source 跳跃、corner 全 jets 仍不能替代完整 characteristic trace、等价通道对角嵌入非满、projective lift 和 coefficient overlap kernel。有限检查不证明无限维 PDE 或全部 ribbon coherence。
 
-原包的运行方法是 `python checks/run_checks.py`，依赖及环境曾记录于 `checks/requirements.txt` 和 `results/`。原稿 **56/56** 属历史执行，本次没有重跑；当前未跟踪的日志/manifest 不能因 README 中命名就视为已取得。
+原包的运行方法是 `python checks/run_checks.py`，依赖及环境曾记录于 `checks/requirements.txt` 和 `results/`。PR 本地复核已独立重跑并通过 **56/56**，具体环境见复核记录；原 manifest 和历史日志没有改写，未跟踪的附件不能因 README 中命名就视为已取得。
 
-[REFERENCES.md](REFERENCES.md) 固定原外部文献、Research Radar 和仓库使用范围。历史 audits、原 manifest/ZIP 未重写。可用本次默认 dry-run 的[精确合稿同步工具](../audit_repair_2026-09-18/sync_reading_copies.py)检查更新计划；PB 完整合稿的运行未记为本次验证，详细已执行／建议执行边界见回测表。
+[REFERENCES.md](REFERENCES.md) 固定原外部文献、Research Radar 和仓库使用范围。历史 audits、原 manifest/ZIP 未重写。默认 dry-run 的[精确合稿同步工具](../audit_repair_2026-09-18/sync_reading_copies.py)已修复链接重定位与追加式更新的重复写入问题，两包实际同步后的第二次运行均为零块变更；详细范围见 PR 复核记录。

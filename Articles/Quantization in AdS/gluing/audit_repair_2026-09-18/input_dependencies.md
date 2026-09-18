@@ -21,7 +21,7 @@ I＝独立信息；D＝派生结构；C＝实现选择；X＝下游扩张。作�
 | Gram 矩阵缓存 | 已给实际 C 时计算 $G(v,w)=\langle Cv,Cw\rangle$ | 若 G 是独立 source pairing 而 C 尚未构造，不能倒过来假定 C 存在 |
 | 已由 quantum realization 给出的 F/R/cups | 用实际 normalized intertwiners/inner products 计算 overlap/composition | 全 realization 已固定；只知 fusion dimensions 不足；basis change 全部 maps 同步 |
 | 某份 particular solution | 换 representative 并同步平移 affine labels/常数项 | 完整 source tuple 与 fluctuation theory 相同；不同物理 source 不当作 choice |
-| 某份 off-shell lift/collar extension | 换另一合法 lift；R1 右逆恒等式消去解差，规范模型保留实际 comparison arrows | lift 必须实现全部原数据；raw global field 可能只由 proper 联系，不称逐点相同 |
+| 某份 off-shell lift/collar extension | 换另一合法 lift；R1 右逆恒等式消去解差，规范模型保留实际 comparison arrows | lift 必须实现全部原数据；raw global field 可能只由 proper 联系，不称逐点相同。R4.3 的 smooth map 使用实际 smooth collar representatives；不从抽象无限 jets 的可延拓性推出连续线性 section |
 | 特定模基/reference connection | 完整基变换或 $a'=a+A_0-A'_0$，同步运输 labels | 不截断、不丢 harmonic/gauge directions；不声称全局 gauge section 存在 |
 | 已关闭 seam 的永久 ports/全部 binary 历史 | 从完整输出 action、B、bundle、gauge policy 重新 opening | 输出的 global twist/branch/retained defect 必須还在；不是只存 reduced algebra |
 | 每条纯 regrouping 的 associator 缓存 | actual comparison maps 已构造后计算 $\Theta_Q^{-1}\Theta_P$ | 不以该公式假设 maps 存在；physical braid/twist 与同几何 regrouping 分开 |

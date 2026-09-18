@@ -24,7 +24,7 @@
 
 [2026-09-18 输入删减审查](input_necessity_audit_2026-09-18.md) 将 32 组输入逐项列出；本次修订进一步给出[依赖分类与重建条件](../audit_repair_2026-09-18/input_dependencies.md)，不将原审计中的“必留”都视为独立最小输入。
 
-[历史单文件阅读版](COMPLETE_NOTE.md) 汇集修订前的六篇。**此文件本次未同步，不能替代当前分篇正文。** 精确同步工具及已执行／未执行范围见修订入口。
+[单文件阅读版](COMPLETE_NOTE.md) 已在 PR 复核时同步当前六篇正文，修订前版本保留于 Git 基线。同步范围、链接检查与实际回测见 [PR 复核记录](../audit_repair_2026-09-18/pr_review_2026-09-18.md)。
 
 ## 可重复检查
 
@@ -34,9 +34,9 @@
 python checks/verify.py
 ```
 
-原包依赖见 `checks/requirements.txt`；原环境记录为 `results/environment.json`。历史包记载 **86 项检查全部通过**，包括九种 D/N/R combinations、完整 exterior source-response blocks、真正 closed intermediates、连续 T→N 核、Cauchy/Goursat 对照、junction/反例、Wick contractions、stress contacts 和 finite partitions。**这不是本次修订重跑的结果；这些未跟踪的原包附件不能由链接本身认证存在。**
+原包依赖见 `checks/requirements.txt`；原环境记录为 `results/environment.json`。历史包记载 **86 项检查全部通过**，包括九种 D/N/R combinations、完整 exterior source-response blocks、真正 closed intermediates、连续 T→N 核、Cauchy/Goursat 对照、junction/反例、Wick contractions、stress contacts 和 finite partitions。PR 复核另行重跑了原脚本，得到 **86/86 通过**；实际环境见 [PR 复核记录](../audit_repair_2026-09-18/pr_review_2026-09-18.md)。该次重跑与历史附件分开记录，不由链接本身认证未跟踪附件存在。
 
-原包的 `results/checks.json`、`results/final_run.log` 是历史记录。本次实际执行的 **63 项独立符号回测**、环境与脚本校验值见[新结果](../audit_repair_2026-09-18/checks_result.json)及[执行范围](../audit_repair_2026-09-18/regression_and_status.md)。两套检查都不替代连续分析证明。
+原包的 `results/checks.json`、`results/final_run.log` 是历史记录。初次修订执行的 **63 项独立符号回测**、环境与脚本校验值见[新结果](../audit_repair_2026-09-18/checks_result.json)及[执行范围](../audit_repair_2026-09-18/regression_and_status.md)；后续原套件重跑另见 PR 复核记录。各套检查都不替代连续分析证明。
 
 ## 证明状态与来源
 

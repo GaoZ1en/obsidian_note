@@ -130,7 +130,9 @@ $$\Theta=\int E_T\delta a_T,\quad \Omega=\sum_\nu\delta p_\nu\wedge\delta q_\nu,
 
 $\delta\chi$ 仍在 tangent space 中。反向用每个 transverse mode 的独立 field/electric variation 测试，零方向必须 transverse components 为零；因此该线性 cover 的 kernel 恰是 Dirichlet gauge directions/相应时空 histories。不是先 quotient。
 
-opening 使用原 joint-source construction，不保持旧人工 homogeneous spectral domain。interval chain 的 real $\lambda_i$ 可用避开真外壁的 smooth collar extensions 运输到共同 frame。选一份 extension rule 得到 actual $J$，同时保留改变规则的 proper arrows；$\lambda=0$ 的 restriction 给线性 section，所以 $J,dJ$ onto。不同规则可给不同 raw representative，而由原 proper 联系，不宣称 full-field map 逐点无选择。
+opening 使用原 joint-source construction，不保持旧人工 homogeneous spectral domain。为定义 smooth 的 actual $J$，在有限 interval chain 上固定互不相交、避开真外壁的 collars，并使用匹配数据的实际 smooth real transition representatives，而不只给抽象无限 jets。每条 seam 在右侧取固定 cutoff $\zeta_i$，在 seam 邻域为 1、在 collar 外为 0，用 $\epsilon_{i+1}=-\zeta_i\lambda_i$ 运输该侧 fields。collar 的共同 jets 保证运输后光滑装配；各 cut 的 supports 可分开。乘固定 cutoff、求导和装配在这些实际 $C^\infty$ collar 数据的拓扑下是连续线性的，故此实现的 $J$ 可微。
+
+$\lambda=0$ 的 global restriction 给线性 section $s$，满足 $J s=1$，所以此实现的 $J,dJ$ onto。保留全部输入 fields、transition representatives 及改变实现的 proper arrows，不对它们作商。不同 collar choices 可给不同 raw representative，而由原 proper 联系，不宣称 full-field map 逐点无选择。若只保留抽象无限 jet 序列而没有这种实际 collar 实现，不由 Borel 存在性推出连续线性 extension 或 $dJ$；该拓扑下的 smooth-map 结论仍须另证。
 
 原 (6.12)、(6.13) 在完整 matched space 上为
 
@@ -235,8 +237,8 @@ $|\psi_\pm\rangle=(4/5)\sum_{n\ge0}(\pm3/5)^n|n,n\rangle$ 有同 marginals，却
 6. 一般 state、representation、amplitude sewing 保留开放，不从 marginals、Haar benchmark 或代数同构推出。
 7. 基线 PB 原 claims.json 未跟踪；本修订状态说明是新记录，不冒称恢复旧 JSON 或认证其 hash。旧 audits 的历史执行记录保持历史性质。
 
-Verified: 解析证明见 R1–R5；实际符号回测见 `verify_repair.py` 及 `checks_result.json`，不以有限数值替代证明。
+Verified: 解析论证及其适用域见 R1–R5；初次符号回测见 `verify_repair.py` 及 `checks_result.json`，后续本地重跑和 Mathematica/Sage 交叉检查见 [PR 复核记录](pr_review_2026-09-18.md)。不以有限数值替代证明。
 
 Assumptions: 原模型、符号、真实 B 与 sector 保持；本次精确化条件及弱化见表。
 
-Not verified: 上述开放目标。Mathematica/xAct/Sage 没有在本环境执行；实际使用 SymPy，其他工具建议不记为通过。
+Not verified: 上述开放目标；一般无限维分析、任意 gauge 理论的协变变分和完整高阶 coherence 不由所列计算认证。本次未执行 xAct 通用张量验证。

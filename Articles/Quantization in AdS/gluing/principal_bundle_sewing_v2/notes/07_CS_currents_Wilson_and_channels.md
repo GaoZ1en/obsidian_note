@@ -2,6 +2,8 @@
 
 **必须区分三个 quantum targets：带物理 timelike wall 的 current algebra、闭曲面的有限 Wilson algebra、有 punctures 的 charged-channel operator algebra。它们可由同一 CS action 引导，却不是不经选择就相同的代数。** 本篇给第一者的一个完整线性 sewing，第二者的独立精确 presentation，第三者的指定 unitary realization 与实际非对角 operators。后两者的 topological quantization 是额外输入，不冒充从任意 Lorentzian wall PDE 推导而来。[R9,R10,U2,U3]
 
+区域 disk 对象保留全部 flat bulk fields 及内部 proper directions；boundary currents、下文 reduced action 和 channel operators 是派生描述。[修订证明 R4.5](../../audit_repair_2026-09-18/repair_proofs.md) 用全部 smooth bulk extensions 实现 current 解，不在区域构造或 sewing 时把这些 extensions quotient 掉。
+
 本篇 quantum CS 的公式取 ℏ=1；k 是所采用 realization 的 integer level。
 
 ## 7.1 一个真正独立的 source-free disk 理论
@@ -62,7 +64,7 @@ reduced action、symplectic form 与 Hamiltonian 为
  \int_{t_0}^t\partial_s b(u,s+v(t-u))du.
 \tag{7.5}
 \]
-所有 derivatives 的估计直接由平移与积分给出；没有高频增长难题。平均值保持零。给定 j，用 boundary primitive 再作 smooth disk extension，可构造 flat bulk connection；bulk proper gauge 消除 extension choice。marked corners 的 boundary values/derivatives 必须与同一 periodic smooth function 相容。
+所有 derivatives 的估计直接由平移与积分给出；没有高频增长难题。平均值保持零。给定 j，用 boundary primitive 再作 smooth disk extension，可构造 flat bulk connection；不同 extensions 由实际 bulk proper maps 联系，全部保留在完整场对象中。current observables 不依赖这种 choice。marked corners 的 boundary values/derivatives 必须与同一 periodic smooth function 相容。
 
 这是一份每个 disk 都能独立运行的 timelike source rule。人工 chord 两侧先各自有完整 closed boundary circles 与自己的 (7.1)；opening 时撤去两侧 chord 的 closure，允许该面的完整 trace/transition relation，而非要求旧 chiral homogeneous solutions 已经透明匹配。输出仍以其整个真实 outer circle 的 (7.1)、(7.5) 闭合，故可再次 opening。
 
